@@ -159,22 +159,25 @@
     "provider": "Georgia Aquarium",
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "UNKNOWN",
+    "health": "HEALTHY",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.georgiaaquarium.org/webcam/ocean-voyager/",
     "officialUrl": "https://www.georgiaaquarium.org/",
     "embedUrl": null,
-    "quality": 0,
-    "freshness": 0,
-    "moment": 0,
+    "quality": 92,
+    "freshness": 96,
+    "moment": 96,
     "categories": [
       "Zoos & Wildlife"
     ],
-    "story": "Check current animal activity, then decide whether you want to see them in person.",
+    "story": "Watch current marine-animal activity through Georgia Aquarium's official webcam network before planning a visit.",
     "check": "Whale sharks · belugas · otters · jellies",
-    "rightsBasis": "Recovered from ERN v0.10 official destination/current-view catalog. Link-only unless current explicit embed permission is documented.",
+    "rightsBasis": "Current official Georgia Aquarium site exposes multiple animal webcams/current live views; retained LINK_ONLY because no embed permission is inferred.",
     "recoveredFrom": "earth-right-now-live-v0.10.html",
-    "historicalVerification": "2026-09-13"
+    "historicalVerification": "2026-09-13",
+    "checkedAt": "2026-09-19",
+    "lastSuccessfulCheck": "2026-09-19",
+    "failureReason": null
   },
   {
     "id": "farm-tomita-recovered",
@@ -191,9 +194,9 @@
     "sourceUrl": "https://www.farm-tomita.co.jp/en/",
     "officialUrl": "https://www.farm-tomita.co.jp/en/",
     "embedUrl": null,
-    "quality": 0,
-    "freshness": 0,
-    "moment": 0,
+    "quality": 82,
+    "freshness": 20,
+    "moment": 86,
     "categories": [
       "Farms & Seasonal"
     ],
@@ -201,7 +204,10 @@
     "check": "Flowers · seasonal color · weather",
     "rightsBasis": "Recovered from ERN v0.10 official destination/current-view catalog. Link-only unless current explicit embed permission is documented.",
     "recoveredFrom": "earth-right-now-live-v0.10.html",
-    "historicalVerification": "2026-09-13"
+    "historicalVerification": "2026-09-13",
+    "checkedAt": "2026-09-19",
+    "lastSuccessfulCheck": null,
+    "failureReason": "Official English site is current and exposes live-camera navigation, but the camera payload was not sufficiently verified in this pass to make a current-live claim."
   },
   {
     "id": "zermatt-matterhorn-recovered",
@@ -273,22 +279,25 @@
     "provider": "Whistler Blackcomb",
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "UNKNOWN",
+    "health": "HEALTHY",
     "playback": "EXTERNAL",
-    "sourceUrl": "https://www.whistlerblackcomb.com/en",
+    "sourceUrl": "https://www.whistlerblackcomb.com/the-mountain/mountain-conditions/mountain-cams.aspx",
     "officialUrl": "https://www.whistlerblackcomb.com/en",
     "embedUrl": null,
-    "quality": 0,
-    "freshness": 0,
-    "moment": 0,
+    "quality": 90,
+    "freshness": 95,
+    "moment": 92,
     "categories": [
       "Mountains & Snow"
     ],
-    "story": "See mountain conditions and operational information before committing to the trip up.",
+    "story": "See current mountain camera views and conditions before choosing whether and where to head up.",
     "check": "Mountain cams · weather · lifts · terrain",
-    "rightsBasis": "Recovered from ERN v0.10 official destination/current-view catalog. Link-only unless current explicit embed permission is documented.",
+    "rightsBasis": "Current official Whistler Blackcomb mountain-cams surface is available; retained LINK_ONLY because no embed permission is inferred.",
     "recoveredFrom": "earth-right-now-live-v0.10.html",
-    "historicalVerification": "2026-09-13"
+    "historicalVerification": "2026-09-13",
+    "checkedAt": "2026-09-19",
+    "lastSuccessfulCheck": "2026-09-19",
+    "failureReason": null
   },
   {
     "id": "waikiki-beach-recovered",
@@ -305,9 +314,9 @@
     "sourceUrl": "https://www.hilton.com/en/hotels/hnlwahf-hilton-waikiki-beach-resort-and-spa/resort/webcam/",
     "officialUrl": "https://www.hilton.com/en/hotels/hnlwahf-hilton-waikiki-beach-resort-and-spa/",
     "embedUrl": null,
-    "quality": 0,
-    "freshness": 0,
-    "moment": 0,
+    "quality": 80,
+    "freshness": 15,
+    "moment": 88,
     "categories": [
       "Beaches & Water"
     ],
@@ -315,7 +324,10 @@
     "check": "Beach · sky · surf impression · activity",
     "rightsBasis": "Recovered from ERN v0.10 official destination/current-view catalog. Link-only unless current explicit embed permission is documented.",
     "recoveredFrom": "earth-right-now-live-v0.10.html",
-    "historicalVerification": "2026-09-13"
+    "historicalVerification": "2026-09-13",
+    "checkedAt": "2026-09-19",
+    "lastSuccessfulCheck": null,
+    "failureReason": "The recovered Hilton webcam route was not strong enough in this pass to support a current-live promotion."
   },
   {
     "id": "florida-now-recovered",
@@ -327,22 +339,25 @@
     "provider": "VISIT FLORIDA",
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "UNKNOWN",
+    "health": "HEALTHY",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.visitflorida.com/more/florida-now/",
     "officialUrl": "https://www.visitflorida.com/",
     "embedUrl": null,
-    "quality": 0,
-    "freshness": 0,
-    "moment": 0,
+    "quality": 87,
+    "freshness": 94,
+    "moment": 90,
     "categories": [
       "Beaches & Water"
     ],
-    "story": "Compare multiple Florida destinations before deciding where to go.",
+    "story": "Compare current Florida beach and destination webcam views before choosing where to go.",
     "check": "Beaches · marinas · piers · destination conditions",
-    "rightsBasis": "Recovered from ERN v0.10 official destination/current-view catalog. Link-only unless current explicit embed permission is documented.",
+    "rightsBasis": "Current official VISIT FLORIDA Florida Now property provides destination webcam/current-condition views; retained LINK_ONLY.",
     "recoveredFrom": "earth-right-now-live-v0.10.html",
-    "historicalVerification": "2026-09-13"
+    "historicalVerification": "2026-09-13",
+    "checkedAt": "2026-09-19",
+    "lastSuccessfulCheck": "2026-09-19",
+    "failureReason": null
   },
   {
     "id": "boston-harbor-islands-recovered",
@@ -359,9 +374,9 @@
     "sourceUrl": "https://www.nps.gov/boha/learn/photosmultimedia/webcams.htm",
     "officialUrl": "https://www.nps.gov/boha/index.htm",
     "embedUrl": null,
-    "quality": 0,
-    "freshness": 0,
-    "moment": 0,
+    "quality": 78,
+    "freshness": 15,
+    "moment": 78,
     "categories": [
       "Beaches & Water"
     ],
@@ -369,6 +384,9 @@
     "check": "Harbor visibility · island conditions",
     "rightsBasis": "Recovered from ERN v0.10 official destination/current-view catalog. Link-only unless current explicit embed permission is documented.",
     "recoveredFrom": "earth-right-now-live-v0.10.html",
-    "historicalVerification": "2026-09-13"
+    "historicalVerification": "2026-09-13",
+    "checkedAt": "2026-09-19",
+    "lastSuccessfulCheck": null,
+    "failureReason": "Recovered NPS webcam route could not be verified strongly enough as a current active camera surface in this pass."
   }
 ]
