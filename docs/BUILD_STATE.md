@@ -16,6 +16,13 @@ Completed:
 - Responsive horizontal camera browsing on mobile.
 - Watch Earth now selects through the shared registry/selection engine.
 
+Additional completed stages:
+- Destination/place grouping foundation for multiple windows per place.
+- ERN AI intent-ranking foundation connected to shared registry.
+- Living Atlas schematic spatial pins connected directly to shared playback.
+- Data migration rules explicitly ban screenshots as production imagery and stale verification as current health.
+- Playback non-regression smoke checks committed.
+
 In progress:
 - Recover larger source catalog from mature ERN lineage with provenance.
 - Revalidate embeddable sources before promotion to primary live inventory.
