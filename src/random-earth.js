@@ -1,0 +1,1 @@
+import { playbackCapability } from "./playback-capability.js";export function surprisePool(sources){return sources.filter(s=>s.health!=="OFFLINE"&&playbackCapability(s).action!=="UNAVAILABLE")}export function surpriseSource(sources,random=Math.random){const pool=surprisePool(sources);return pool.length?pool[Math.floor(random()*pool.length)]:null}
