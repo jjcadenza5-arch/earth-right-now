@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Accent-insensitive Earth search across destination, region, country, provider, category, story and aliases.
+- Search connected to both Explore and Living Atlas.
+- Destination window chooser now ranks healthy/embeddable/high-quality choices while preserving alternatives.
+- Shareable destination deep links added with native Share/clipboard fallback.
+- Safe recovered-catalog normalization/deduplication pipeline committed; imported operational health is always UNKNOWN.
+- Search and catalog-import regression smoke checks added.
 - Place-first destination ranking layer added above individual camera sources.
 - Explore now exposes destination cards and Choose a Window while retaining source-level discovery.
 - Daylight preference utility added for Earth sequencing without hiding truthful night views.
