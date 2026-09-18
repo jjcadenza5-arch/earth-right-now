@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Dedicated Hero controller added so Hero sequencing is independent from Watch Earth/player history while still using the shared playback engine.
+- Source recency model added with current/stale/expired check states.
+- Prioritized revalidation queue added for UNKNOWN, video-platform, embed and high-value sources.
+- Private operations-report layer added for catalog statistics and revalidation workload.
+- Visitor-vs-operations separation documented so maintenance diagnostics do not clutter the Earth experience.
+- Recency and revalidation regression smoke checks added.
 - Mature home-experience contract committed: compact navigation, immediate Earth Hero, horizontal windows, secondary systems as focused surfaces.
 - Hero now explains source trust/status instead of implying UNKNOWN sources are live.
 - Restrained generated poster fallbacks added for sources lacking legitimate current imagery; old interface screenshots remain banned from production.
