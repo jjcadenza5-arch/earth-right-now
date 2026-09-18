@@ -1,0 +1,1 @@
+export function safeHttpUrl(value){try{const u=new URL(value,location.href);return ["http:","https:"].includes(u.protocol)?u.toString():null}catch{return null}}export function externalAttrs(){return {target:"_blank",rel:"noopener noreferrer"}}
