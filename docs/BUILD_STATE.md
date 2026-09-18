@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Unified fallback-chain policy with canonical playback capability, embed-host allowlisting and safe HTTP navigation; fallback can no longer reintroduce an OFFLINE source, unapproved embed host or unsafe URL.
+- Preserved the honest fallback terminal state: UNAVAILABLE; no false claim of automatic cross-origin iframe failure detection.
+- Hardened media teardown: video/audio nested source URLs are cleared, iframes blanked, images detached, then the shared mount is emptied before handoff.
+- Hardened Ambience preference against storage-denied/privacy browser modes without introducing autoplay/audio behavior.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Hardened My Earth/local state against malformed JSON, storage-denied privacy modes and invalid ID collections through shared safe-storage helpers.
 - Favorites, favorite places and recents now normalize/bound persisted IDs and fail gracefully instead of allowing localStorage exceptions to break the app.
 - Session state uses the same safe storage boundary; language preference also degrades to English safely when localStorage is unavailable.
