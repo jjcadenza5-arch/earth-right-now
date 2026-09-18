@@ -1,0 +1,1 @@
+import { createWatchEarthSession } from "../src/watch-earth-session.js";const calls=[];const player={play:(id,o)=>calls.push([id,o.surface])};const j=createWatchEarthSession({sources:[{id:"a"},{id:"b"}],player});j.show(0);j.next();console.assert(calls[0][0]==="a"&&calls[1][0]==="b"&&calls.every(x=>x[1]==="watch-earth"));console.log("ERN Watch Earth session smoke checks passed");
