@@ -136,6 +136,32 @@
         "string",
         "null"
       ]
+    },
+    "timeZone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "moment": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "rightsBasis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "officialUrl": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   }
 }
