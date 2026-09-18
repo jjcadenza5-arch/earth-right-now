@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Moments and Surprise Me now use the same capability-aware source action as Hero, Windows, cards and Atlas.
+- Keyboard shortcuts now invoke canonical viewer controls, preventing hidden player state when Escape closes playback.
+- Surprise Me can choose legitimate external current sources without incorrectly sending them into ERN iframe playback.
+- Safe DOM construction utility and catalog-content rendering policy added; legacy interpolated card templates are explicitly tracked for migration before release.
+- Action-consistency regression smoke check added.
 - Playback capability now explicitly separates in-ERN PLAY, provider EXTERNAL and UNAVAILABLE actions.
 - Hero, Choose a Window, cards and Atlas single pins now route through capability-aware source actions.
 - LINK_ONLY / EXTERNAL sources open the official/provider page instead of entering a fake or empty ERN iframe.
