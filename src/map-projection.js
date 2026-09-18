@@ -1,0 +1,1 @@
+export function projectEquirectangular(lat,lon,width=100,height=50){if(!Number.isFinite(lat)||!Number.isFinite(lon))return null;return {x:((lon+180)/360)*width,y:((90-lat)/180)*height}}export function unprojectEquirectangular(x,y,width=100,height=50){return {lon:(x/width)*360-180,lat:90-(y/height)*180}}
