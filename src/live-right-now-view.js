@@ -1,0 +1,1 @@
+import { liveInventory } from "./live-inventory.js";export function liveRightNowModel(sources,{limit=8}={}){const items=liveInventory(sources).slice(0,limit);return {items,empty:items.length===0,copy:items.length?"Verified current windows":"No verified current windows right now"}}
