@@ -1,0 +1,1 @@
+export function journeyCopy(state){if(!state?.source)return {counter:"",action:"Watch Earth"};return {counter:`${state.index+1} / ${state.total}`,action:state.playing?"Pause journey":"Continue journey",title:state.source.title}}
