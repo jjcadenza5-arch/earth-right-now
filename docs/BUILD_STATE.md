@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Truthful source badges now expose SOURCE CHECK / LIVE state / external-source / partner / degraded information on cards and viewer.
+- Playback fallback-chain policy committed: embed → truthful live image where applicable → official external source → unavailable.
+- Offline/network resilience layer added without destroying saved local Earth data.
+- Living Atlas clustering/filter foundation added for scaling broad catalog without hundreds of media nodes.
+- Atlas clustering regression smoke check added.
 - Accent-insensitive Earth search across destination, region, country, provider, category, story and aliases.
 - Search connected to both Explore and Living Atlas.
 - Destination window chooser now ranks healthy/embeddable/high-quality choices while preserving alternatives.
