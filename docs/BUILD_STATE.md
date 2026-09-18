@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Returned recovery focus to the catalog's biggest structural weakness: high-quality inside-ERN playback rather than adding more external-only destinations.
+- Revalidated and promoted Lajes do Pico Harbour and Roque de los Muchachos Observatory as HEALTHY EMBED_ALLOWED CouchTourist windows, using current provider embed/attribution controls and recovered mature-ERN embed routes.
+- Public catalog grows to 27 sources and inside-ERN EMBED windows from 2 to 4.
+- Embedded/current-image playback now carries quiet persistent provider attribution linking back to the source; ERN never presents third-party media as anonymous ERN-owned imagery.
+- Static post-promotion audit reports no duplicate/embed/link invariant issues; app integration remains zero missing mounts.
 - Completed tranche-02 batch B: Georgia Aquarium, Whistler Blackcomb and Florida Now promoted after current official-source verification.
 - Farm Tomita, Waikiki/Hilton and Boston Harbor Islands remain quarantined because current evidence was not strong enough; ambiguous recovery records are not converted into live claims.
 - Public catalog now contains 25 sources, 18 HEALTHY and 7 UNKNOWN; static invariant audit reports no duplicate/source/playback issues.
