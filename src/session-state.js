@@ -1,0 +1,1 @@
+const KEY="ern:session:v1";export function loadSession(){try{return JSON.parse(sessionStorage.getItem(KEY)||"{}")}catch{return {}}}export function saveSession(patch){const next={...loadSession(),...patch,updatedAt:new Date().toISOString()};sessionStorage.setItem(KEY,JSON.stringify(next));return next}export function clearSession(){sessionStorage.removeItem(KEY)}
