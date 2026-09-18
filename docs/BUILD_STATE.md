@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Recovered mature-ERN tranche 04 into quarantine: Coogee & Randwick Beaches, Chidori-ga-fuchi Sakura, Diano Marina, and Sottomarina–Chioggia.
+- This tranche deliberately broadens recovery toward coast/water and seasonal travel decisions instead of continuing to overfill mountain webcams.
+- Historical GREEN/link/verified labels were treated as evidence only: all tranche-04 records remain UNKNOWN until current revalidation and none leaked into the public catalog.
+- Added recovery-priority scoring that favors explicit legal inside-ERN playback, underrepresented high-value categories, and geographic breadth.
+- Public catalog remains 27 while quarantine expands safely; static app integration remains zero missing mounts.
 - Hardened historical catalog recovery: missing URLs now remain quarantined/null instead of becoming fake about:blank sources.
 - Added canonical recovery-to-public promotion that strips recovery-only fields and normalizes recovered IDs before public catalog insertion.
 - Unified catalog release recency with the same source-recency policy used by visitor-facing live inventory.
