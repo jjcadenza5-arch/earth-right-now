@@ -9,20 +9,21 @@
     "provider": "Webcam La Palma",
     "truth": "LIVE_VIDEO",
     "permission": "UNKNOWN",
-    "health": "UNKNOWN",
+    "health": "HEALTHY",
     "playback": "EXTERNAL",
     "sourceUrl": "https://webcam-lapalma.de/webcam-einbetten/",
     "officialUrl": "https://webcam-lapalma.de/webcam-einbetten/",
     "embedUrl": null,
-    "quality": 0,
-    "freshness": 0,
+    "quality": 86,
+    "freshness": 90,
     "moment": 0,
     "categories": [
       "Volcanoes & Earth"
     ],
-    "rightsBasis": "Recovered legacy ERN embed candidate; permission and current playback require revalidation.",
+    "rightsBasis": "Current provider site confirms its own HD live streams and says embedding third-party webcams requires operator consent. Legacy embed retained only as evidence; permission remains UNKNOWN and playback stays EXTERNAL.",
     "recoveredFrom": "earth-right-now-live-v16.05.html",
-    "historicalEmbedUrl": "https://webcam-lapalma.de/embed/vulkan/"
+    "historicalEmbedUrl": "https://webcam-lapalma.de/embed/vulkan/",
+    "lastSuccessfulCheck": "2026-09-18"
   },
   {
     "id": "mount-vesuvius-recovered",
@@ -83,21 +84,22 @@
     "timeZone": "Africa/Nairobi",
     "provider": "CouchTourist",
     "truth": "LIVE_VIDEO",
-    "permission": "UNKNOWN",
-    "health": "UNKNOWN",
-    "playback": "EXTERNAL",
+    "permission": "EMBED_ALLOWED",
+    "health": "HEALTHY",
+    "playback": "EMBED",
     "sourceUrl": "https://couchtourist.com/cams/kenya/laikipia-county/mpala-research-centre-watering-hole-2/",
     "officialUrl": "https://couchtourist.com/cams/kenya/laikipia-county/mpala-research-centre-watering-hole-2/",
-    "embedUrl": null,
-    "quality": 0,
-    "freshness": 0,
+    "embedUrl": "https://couchtourist.com/embed/cam/604/",
+    "quality": 82,
+    "freshness": 90,
     "moment": 0,
     "categories": [
       "Wildlife"
     ],
-    "rightsBasis": "Recovered legacy ERN embed candidate; provider rights/current playback require revalidation.",
+    "rightsBasis": "Current CouchTourist page exposes an Embed this cam iframe and asks users to retain CouchTourist attribution.",
     "recoveredFrom": "earth-right-now-live-v16.05.html",
-    "historicalEmbedUrl": "https://couchtourist.com/embed/cam/604/"
+    "historicalEmbedUrl": "https://couchtourist.com/embed/cam/604/",
+    "lastSuccessfulCheck": "2026-09-18"
   },
   {
     "id": "roque-observatory-recovered",
@@ -134,21 +136,22 @@
     "timeZone": "Asia/Tokyo",
     "provider": "CouchTourist",
     "truth": "LIVE_VIDEO",
-    "permission": "UNKNOWN",
-    "health": "UNKNOWN",
-    "playback": "EXTERNAL",
+    "permission": "EMBED_ALLOWED",
+    "health": "HEALTHY",
+    "playback": "EMBED",
     "sourceUrl": "https://couchtourist.com/cams/japan/hokkaido/kijihiki-plateau-hokkaido-japan/",
     "officialUrl": "https://couchtourist.com/cams/japan/hokkaido/kijihiki-plateau-hokkaido-japan/",
-    "embedUrl": null,
-    "quality": 0,
-    "freshness": 0,
+    "embedUrl": "https://couchtourist.com/embed/cam/8657/",
+    "quality": 82,
+    "freshness": 90,
     "moment": 0,
     "categories": [
       "Mountains",
       "Beautiful Earth"
     ],
-    "rightsBasis": "Recovered legacy ERN embed candidate; provider rights/current playback require revalidation.",
+    "rightsBasis": "Current CouchTourist page exposes an Embed this cam iframe and asks users to retain CouchTourist attribution.",
     "recoveredFrom": "earth-right-now-live-v16.05.html",
-    "historicalEmbedUrl": "https://couchtourist.com/embed/cam/8657/"
+    "historicalEmbedUrl": "https://couchtourist.com/embed/cam/8657/",
+    "lastSuccessfulCheck": "2026-09-18"
   }
 ]
