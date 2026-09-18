@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Completed tranche-02 batch B: Georgia Aquarium, Whistler Blackcomb and Florida Now promoted after current official-source verification.
+- Farm Tomita, Waikiki/Hilton and Boston Harbor Islands remain quarantined because current evidence was not strong enough; ambiguous recovery records are not converted into live claims.
+- Public catalog now contains 25 sources, 18 HEALTHY and 7 UNKNOWN; static invariant audit reports no duplicate/source/playback issues.
+- Added catalog coverage/balance analysis so recovery can optimize country/category/truth/playback diversity instead of raw camera count.
+- Coverage model explicitly flags the current need for more inside-ERN playable sources, reinforcing the next recovery priority: high-quality EMBED_ALLOWED/PARTNER cameras and underrepresented categories.
+- App integration audit remains zero missing mounts.
 - Tranche-02 current verification promoted seven official destinations: Grand Canyon, Yellowstone, Mount Rainier, Glacier, San Diego Zoo, Zermatt–Matterhorn and Chamonix–Mont-Blanc.
 - National-park refreshed cameras are represented as LIVE_IMAGE where appropriate rather than being mislabeled continuous live video; Yellowstone retains EXTERNAL_LIVE because its official page includes the Old Faithful livestream.
 - San Diego Zoo promotion explicitly excludes its pre-recorded Red Panda item from live semantics.
