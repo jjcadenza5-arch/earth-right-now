@@ -1,0 +1,1 @@
+import { placeChoice } from "../src/place-choice.js";const x=placeChoice({id:"p"},[{id:"a",health:"UNKNOWN",quality:90},{id:"b",health:"HEALTHY",quality:60}]);console.assert(x.preferred.id==="b"&&x.health.current);console.log("ERN place choice smoke checks passed");
