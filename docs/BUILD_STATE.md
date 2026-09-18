@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Repository-wide integration inspection found and repaired missing DOM mounts that had made newer modules appear complete while remaining disconnected.
+- Restored Hero trust line, strict Live Right Now mount/empty state, My Earth favorite/recent place mounts, Atlas controls, destination favorite control, Earth/home return control and Watch Earth journey bar.
+- Opening a destination now records the place in durable recent-place memory so My Earth Recent Places actually works.
+- Hero now applies truthful trust copy, capability-aware action labels/disabled state and non-fake generated poster class.
+- Atlas coordinate rendering corrected to a direct 100×100 percentage projection and invalid-coordinate sources are skipped safely.
+- Static app-to-markup audit now reports zero missing #id mounts used by app.js.
 - Live Right Now is now a separate strict visitor surface backed only by liveInventory policy; UNKNOWN recovery sources can no longer populate it.
 - Honest Live Right Now empty state routes visitors to the broader Living Atlas rather than fabricating a populated live row.
 - Verified-current Live Right Now cards use safe DOM rendering and the canonical capability-aware action path.
