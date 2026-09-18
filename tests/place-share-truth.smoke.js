@@ -1,0 +1,1 @@
+import fs from "node:fs";const x=fs.readFileSync(new URL("../src/place-share.js",import.meta.url),"utf8");console.assert(!x.includes("see current Earth windows"));console.assert(x.includes("current-source status"));console.log("ERN place share truth smoke checks passed");
