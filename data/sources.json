@@ -25,7 +25,12 @@
     "quality": 90,
     "freshness": null,
     "moment": 85,
-    "story": "Harbour light, boats, ferries and Auckland city movement."
+    "story": "Harbour light, boats, ferries and Auckland city movement.",
+    "lat": -36.8446,
+    "lon": 174.7633,
+    "timeZone": "Pacific/Auckland",
+    "rightsBasis": "Recovered ERN documented explicit iframe permission; current embed still requires revalidation.",
+    "officialUrl": "https://aucklandviaductview.co.nz/"
   },
   {
     "id": "kilauea-summit",
@@ -53,7 +58,12 @@
     "quality": 92,
     "freshness": null,
     "moment": 95,
-    "story": "Official summit cameras and current volcanic conditions."
+    "story": "Official summit cameras and current volcanic conditions.",
+    "lat": 19.421,
+    "lon": -155.287,
+    "timeZone": "Pacific/Honolulu",
+    "rightsBasis": "Official USGS current-view source; link-only in recovered ERN.",
+    "officialUrl": "https://www.usgs.gov/volcanoes/kilauea/summit-webcams"
   },
   {
     "id": "pattaya-city-live",
@@ -81,7 +91,12 @@
     "quality": 82,
     "freshness": null,
     "moment": 78,
-    "story": "A municipal window onto Pattaya beachfront and city activity."
+    "story": "A municipal window onto Pattaya beachfront and city activity.",
+    "lat": 12.9236,
+    "lon": 100.8825,
+    "timeZone": "Asia/Bangkok",
+    "rightsBasis": "Official Pattaya City CCTV portal; recovered ERN specified link-only/no restreaming.",
+    "officialUrl": "https://livestream.pattaya.go.th/"
   },
   {
     "id": "nossob-kgalagadi",
@@ -109,7 +124,12 @@
     "quality": 86,
     "freshness": null,
     "moment": 88,
-    "story": "Kalahari landscape, waterhole conditions and wildlife activity."
+    "story": "Kalahari landscape, waterhole conditions and wildlife activity.",
+    "lat": -25.418,
+    "lon": 20.596,
+    "timeZone": "Africa/Johannesburg",
+    "rightsBasis": "Official SANParks webcam page; display permission not documented, so link-only.",
+    "officialUrl": "https://www.sanparks.org/travel/webcams"
   },
   {
     "id": "kaikoura-coast",
@@ -137,7 +157,12 @@
     "quality": 84,
     "freshness": null,
     "moment": 80,
-    "story": "Current coastal conditions around dramatic Kaikōura."
+    "story": "Current coastal conditions around dramatic Kaikōura.",
+    "lat": -42.4008,
+    "lon": 173.681,
+    "timeZone": "Pacific/Auckland",
+    "rightsBasis": "Official Environment Canterbury webcam page; link-only until display permission documented.",
+    "officialUrl": "https://www.ecan.govt.nz/webcams"
   },
   {
     "id": "glenelg-sa",
@@ -167,7 +192,10 @@
     "quality": 88,
     "freshness": null,
     "moment": 82,
-    "story": "Beach, sea and current coastal conditions from South Australia's official marine camera network."
+    "story": "Beach, sea and current coastal conditions from South Australia's official marine camera network.",
+    "timeZone": "Australia/Adelaide",
+    "rightsBasis": "Official South Australia Marine Safety webcam network; link-only.",
+    "officialUrl": "https://marinesafety.sa.gov.au/web-cameras"
   },
   {
     "id": "brighton-sa",
@@ -197,6 +225,9 @@
     "quality": 86,
     "freshness": null,
     "moment": 80,
-    "story": "A current government-provided look at Brighton Beach on Adelaide's coast."
+    "story": "A current government-provided look at Brighton Beach on Adelaide's coast.",
+    "timeZone": "Australia/Adelaide",
+    "rightsBasis": "Official South Australia Marine Safety webcam network; link-only.",
+    "officialUrl": "https://marinesafety.sa.gov.au/web-cameras"
   }
 ]
