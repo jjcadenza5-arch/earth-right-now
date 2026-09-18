@@ -33,6 +33,17 @@ Additional completed stages:
 - Data migration rules explicitly ban screenshots as production imagery and stale verification as current health.
 - Playback non-regression smoke checks committed.
 
+More completed stages:
+- Source validator and runtime registry audit.
+- Strict Watch Earth builder excludes UNKNOWN/OFFLINE/non-permitted records from true curated live journey.
+- Safe fallback journey remains truthfully labeled while current live inventory is being revalidated.
+- Recovered unrevalidated EMBED record demoted to EXTERNAL playback until embed URL is proven.
+- Surprise Me restored using the shared player.
+- Viewer now shows region/country/local-time context.
+- Source health state transition/staleness utilities added.
+- Travel Bridge data contract and Earth-first monetization rule committed.
+- Deployment/release plan committed.
+
 In progress:
 - Recover larger source catalog from mature ERN lineage with provenance.
 - Revalidate embeddable sources before promotion to primary live inventory.
