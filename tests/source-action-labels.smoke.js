@@ -1,0 +1,1 @@
+import { sourceActionMeta } from "../src/source-action-labels.js";const x=sourceActionMeta({title:"A",health:"HEALTHY",permission:"LINK_ONLY",playback:"EXTERNAL"});console.assert(x.external&&x.aria.includes("opens provider"));console.log("ERN source action label smoke checks passed");
