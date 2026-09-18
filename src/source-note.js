@@ -1,0 +1,1 @@
+import { recencyState } from "./source-recency.js";export function operationalNote(s){const r=recencyState(s);if(s.health==="UNKNOWN")return "Awaiting current source validation";if(s.health==="OFFLINE")return "Offline at last check";if(r==="STALE_CHECK")return "Source check is aging";if(r==="EXPIRED_CHECK")return "Source needs revalidation";return null}
