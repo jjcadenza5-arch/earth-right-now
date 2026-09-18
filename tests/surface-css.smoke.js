@@ -1,0 +1,1 @@
+import fs from "node:fs";const c=fs.readFileSync(new URL("../src/styles.css",import.meta.url),"utf8");for(const x of ["#windows","#live",".ai-bar","#my-earth"])console.assert(c.includes("[data-active-surface]")&&c.includes(x));console.assert(c.includes(".atlas-pin{transform:translate(-50%,-50%)}"));console.log("ERN focused-surface CSS smoke checks passed");
