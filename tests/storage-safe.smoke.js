@@ -1,0 +1,1 @@
+import { stringArray } from "../src/storage-safe.js";console.assert(JSON.stringify(stringArray(["a","a",3," ","b"]))===JSON.stringify(["a","b"]));console.assert(stringArray({bad:true}).length===0);console.log("ERN storage safety smoke checks passed");
