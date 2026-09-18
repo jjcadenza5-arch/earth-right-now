@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Watch Earth is now a real curated journey session on the shared player with Previous / Next / Pause / Continue controls.
+- Watch Earth sequencing stops when the viewer closes and does not introduce autoplay audio.
+- Empty Watch Earth routes truthfully to Living Atlas rather than inventing a journey.
+- My Earth durability expanded from exact camera IDs toward place-level favorites/history so destinations survive camera replacement.
+- Destination visits now record recent-place history.
+- Watch Earth session and place-memory regression smoke checks added.
 - Live Right Now now uses a strict current-check inventory; unverified recovered sources are no longer used as fallback live cards.
 - Honest no-live state routes visitors toward Living Atlas while sources are rechecked.
 - Provider-independent map projection/viewport foundation added so a real map can replace the schematic without changing ERN data/playback.
