@@ -17,3 +17,9 @@
 - Fixed a critical initialization regression where Watch Earth was constructed before the shared player.
 - Removed duplicate keyboard handling and forced-scroll Hero actions.
 - Consolidated source favorites onto the versioned favorites module.
+
+### Mature interaction restoration
+- Connected Living Atlas clustering/filtering and cluster window chooser.
+- Restored My Earth place/window/recent layers.
+- Restored Choose a Window as a horizontal strip with local immersive playback.
+- Added capability-aware Hero action model for embedded vs external current sources.
