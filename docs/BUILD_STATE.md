@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Featured Earth Moments sequencer added with editorial rotation across Happening Now / Beautiful / Interesting / Useful families.
+- Moment session continuity remembers the visitor's current editorial Earth window during the browser session.
+- Optional telemetry hook designed privacy-first and disabled by default.
+- Business camera submission validation/data-contract foundation added; partner/payment status can never bypass truth/permission/health review.
+- Business submission regression smoke check added.
 - Truthful source badges now expose SOURCE CHECK / LIVE state / external-source / partner / degraded information on cards and viewer.
 - Playback fallback-chain policy committed: embed → truthful live image where applicable → official external source → unavailable.
 - Offline/network resilience layer added without destroying saved local Earth data.
