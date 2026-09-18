@@ -1,0 +1,1 @@
+export const CATALOG_VERSION=1;export function catalogEnvelope(sources){return {version:CATALOG_VERSION,generatedAt:new Date().toISOString(),count:sources.length,sources}}export function compatibleCatalog(data){return data&&data.version===CATALOG_VERSION&&Array.isArray(data.sources)}
