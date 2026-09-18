@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Hardened My Earth/local state against malformed JSON, storage-denied privacy modes and invalid ID collections through shared safe-storage helpers.
+- Favorites, favorite places and recents now normalize/bound persisted IDs and fail gracefully instead of allowing localStorage exceptions to break the app.
+- Session state uses the same safe storage boundary; language preference also degrades to English safely when localStorage is unavailable.
+- Repaired place sharing semantics: a durable place link no longer promises `current Earth windows` forever; currentness is evaluated when the recipient opens ERN.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Tightened Watch Earth into a genuinely current journey: HEALTHY + permission-known + CURRENT_CHECK + actionable live/current truth are now required, with no stale/UNKNOWN fallback masquerading as Earth-now content.
 - Curation now supports explicit currentness and canonical playback eligibility, with a modest legal inside-ERN playback preference.
 - Repaired editorial semantics: `Earth Happening Now` now has a currentness gate, while Beautiful / Interesting / Useful Earth remain broader editorial families with truthful badges.
