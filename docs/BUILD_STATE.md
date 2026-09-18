@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Tightened Hero truth: the primary Earth Right Now window must now be HEALTHY, CURRENT_CHECK, genuinely current/live, permitted and actionable; UNKNOWN/stale sources can no longer become the Hero.
+- Hero candidate ordering now prefers inside-ERN playable windows before external handoffs, while retaining daylight-aware rotation.
+- Added safe legitimate Hero poster support from catalog thumbnailUrl only; browser screenshots/fabricated live imagery remain prohibited and generated category atmosphere remains the fallback.
+- Hero Watch action now follows playback capability: Watch live, View current image, or Open current source.
+- Static Hero/navigation integration audit remains zero missing mounts and zero forced scroll calls.
 - Repaired My Earth routing: Hero My Earth now opens the durable My Earth surface (favorite places, favorite windows, recently visited places) instead of the redundant legacy source-history surface.
 - Retired the legacy history surface from surface-manager, markup and focused-surface CSS.
 - Removed old navigation scroll-position save/restore utilities, closing another path for the original forced-Hero-scroll regression to return.
