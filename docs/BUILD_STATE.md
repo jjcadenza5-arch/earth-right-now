@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Choose a Window restored as a compact horizontal Earth strip instead of another stacked Explore grid.
+- Window tiles connect directly to the shared player and never scroll back to Hero.
+- Window strip preserves truthful source state and ranks stronger/current choices first without hiding alternatives.
+- Hero action capability model added so LINK_ONLY sources can say Open current source rather than pretending embedded playback exists.
+- Hero interaction contract documented: Next changes Hero selection; Hero never owns the player.
+- Window-strip and Hero-action regression smoke checks added.
 - Living Atlas clustering is now connected to the rendered map rather than remaining an unused foundation.
 - Atlas filters for live/current-capable, daylight and checked-healthy sources are connected with reset behavior.
 - Multi-source Atlas clusters open a window chooser; single pins open through the one shared player.
