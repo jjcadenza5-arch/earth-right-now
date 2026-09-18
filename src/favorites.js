@@ -1,0 +1,1 @@
+const KEY="ern:favorites:v1";export function loadFavorites(){try{return new Set(JSON.parse(localStorage.getItem(KEY)||"[]"))}catch{return new Set()}}export function saveFavorites(set){localStorage.setItem(KEY,JSON.stringify([...set]))}export function toggleFavorite(set,id){set.has(id)?set.delete(id):set.add(id);saveFavorites(set);return set.has(id)}
