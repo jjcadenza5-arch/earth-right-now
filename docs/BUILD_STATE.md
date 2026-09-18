@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Unified PlaybackController with the canonical playback-capability policy, eliminating a parallel mode resolver that could have bypassed the new embed-provider allowlist.
+- Unified current-window language: Live Right Now cards and Choose a Window now label each source by actual delivery (LIVE WINDOW, CURRENT IMAGE, CURRENT AT SOURCE, PARTNER LIVE) rather than stamping every source generically live.
+- Hardened Watch Earth session construction so unavailable sources are excluded under the same canonical capability policy used by Hero, Atlas, cards and player history.
+- Added explicit Watch Earth destroy lifecycle for timer/source cleanup and future catalog reload safety.
+- Static integration audit remains zero missing mounts, zero forced scroll calls, and no generic per-card LIVE RIGHT NOW stamp.
 - Tightened Hero truth: the primary Earth Right Now window must now be HEALTHY, CURRENT_CHECK, genuinely current/live, permitted and actionable; UNKNOWN/stale sources can no longer become the Hero.
 - Hero candidate ordering now prefers inside-ERN playable windows before external handoffs, while retaining daylight-aware rotation.
 - Added safe legitimate Hero poster support from catalog thumbnailUrl only; browser screenshots/fabricated live imagery remain prohibited and generated category atmosphere remains the fallback.
