@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Tightened Watch Earth into a genuinely current journey: HEALTHY + permission-known + CURRENT_CHECK + actionable live/current truth are now required, with no stale/UNKNOWN fallback masquerading as Earth-now content.
+- Curation now supports explicit currentness and canonical playback eligibility, with a modest legal inside-ERN playback preference.
+- Repaired editorial semantics: `Earth Happening Now` now has a currentness gate, while Beautiful / Interesting / Useful Earth remain broader editorial families with truthful badges.
+- Moment captions cannot inherit `HAPPENING NOW` from a stale historical category tag.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Unified Search, Surprise Me and ERN AI-style discovery around canonical source eligibility instead of letting each surface interpret catalog rows independently.
 - Search now excludes OFFLINE/unactionable sources and ranks empty/general results by ERN source score rather than raw catalog order.
 - `currentSource` now requires HEALTHY + known permission + CURRENT_CHECK; Surprise Me prefers that current pool and legal inside-ERN playback when available.
