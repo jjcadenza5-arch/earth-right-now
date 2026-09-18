@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- My Earth now has visible durable layers for Favorite places, Favorite windows and Recently visited destinations.
+- Destination drawer now supports Save place, so a destination survives individual camera replacement.
+- Living Atlas model now composes existing filter and clustering foundations without altering source truth.
+- Atlas state/model regression smoke checks added.
 - Watch Earth is now a real curated journey session on the shared player with Previous / Next / Pause / Continue controls.
 - Watch Earth sequencing stops when the viewer closes and does not introduce autoplay audio.
 - Empty Watch Earth routes truthfully to Living Atlas rather than inventing a journey.
