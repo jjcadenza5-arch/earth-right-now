@@ -1,0 +1,1 @@
+import { rankWindows } from "./window-choice.js";import { placeHealth } from "./place-health.js";export function placeChoice(place,sources){const windows=rankWindows(sources);return {place,windows,health:placeHealth(windows),preferred:windows[0]||null,alternates:windows.slice(1)}}
