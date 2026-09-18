@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Repaired destination window counts so places advertise actionable windows, not raw historical camera rows; one working + one offline camera no longer becomes a false `2 windows · choose your view` claim.
+- Destination actions now become Open window / Choose a window / Unavailable according to actual actionable choices, and inside-ERN playback gets a modest destination-ranking preference.
+- Hardened Choose a Window controller so unavailable rows cannot remain selectable or become its default selection.
+- Hardened durable place deep links: malformed encoding fails closed and unknown place IDs cannot invent destinations; share identity remains placeId rather than camera ID.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Repaired a real Living Atlas contract bug: clusterSources returned `items` while the renderer consumed `cluster.sources`, which could silently erase valid clusters/pins. Model and renderer now share `{id,sources,lat,lon,count}`.
 - Atlas now explicitly separates mapped and unmapped sources; missing coordinates do not create fake pins and do not remove sources from searchable results.
 - Tightened Atlas `Live/current capable` so it requires HEALTHY + CURRENT_CHECK + actionable playback, not merely a live-looking truth enum.
