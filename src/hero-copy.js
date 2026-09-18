@@ -1,0 +1,1 @@
+export function heroIdentity(source){if(!source)return {title:"Earth Right Now",meta:"See before you go."};const location=[source.region,source.country].filter(Boolean).join(", ");return {title:source.title,location,story:source.story||"",provider:source.provider||""}}
