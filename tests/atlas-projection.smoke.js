@@ -1,0 +1,1 @@
+import { projectEquirectangular } from "../src/map-projection.js";const n=projectEquirectangular(90,0,100,100),e=projectEquirectangular(0,180,100,100),s=projectEquirectangular(-90,0,100,100);console.assert(n.y===0&&e.x===100&&e.y===50&&s.y===100);console.log("ERN atlas projection smoke checks passed");
