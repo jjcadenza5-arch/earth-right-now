@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Began real legacy catalog recovery from mature ERN v16.05 instead of inventing replacement camera records.
+- Recovery tranche 01 preserves six historical live/embed candidates in a quarantine dataset with historical embed evidence separated from current truth.
+- Current web revalidation confirmed explicit CouchTourist embed availability for Mpala Watering Hole and Kijihiki Plateau; both were promoted to the public registry as HEALTHY / EMBED_ALLOWED / EMBED.
+- Current Webcam La Palma evidence confirms active HD live streams but does not justify automatic embed permission for the recovered path, so Tajogaite remains held/external pending exact permission validation.
+- Mount Vesuvius, Lajes do Pico Harbour and Roque Observatory remain held for revalidation.
+- Recovery promotion gate and regression smoke check added.
 - Source cards and destination cards migrated from catalog HTML interpolation to text-safe DOM construction.
 - Choose a Window tiles and My Earth place cards also migrated to text-safe DOM construction.
 - Safe-rendering regression checks include markup-shaped catalog strings to ensure they remain text, not executable elements.
