@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Repaired a real Living Atlas contract bug: clusterSources returned `items` while the renderer consumed `cluster.sources`, which could silently erase valid clusters/pins. Model and renderer now share `{id,sources,lat,lon,count}`.
+- Atlas now explicitly separates mapped and unmapped sources; missing coordinates do not create fake pins and do not remove sources from searchable results.
+- Tightened Atlas `Live/current capable` so it requires HEALTHY + CURRENT_CHECK + actionable playback, not merely a live-looking truth enum.
+- Expanded the Atlas map from a small schematic strip into a substantial responsive discovery surface while keeping it lightweight/static.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Recovered mature-ERN tranche 04 into quarantine: Coogee & Randwick Beaches, Chidori-ga-fuchi Sakura, Diano Marina, and Sottomarina–Chioggia.
 - This tranche deliberately broadens recovery toward coast/water and seasonal travel decisions instead of continuing to overfill mountain webcams.
 - Historical GREEN/link/verified labels were treated as evidence only: all tranche-04 records remain UNKNOWN until current revalidation and none leaked into the public catalog.
