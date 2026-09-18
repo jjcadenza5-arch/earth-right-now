@@ -1,0 +1,1 @@
+import { truthDetail,truthNote } from "../src/truth-detail.js";console.assert(truthDetail({truth:"LIVE_IMAGE"}).includes("Current image"));console.assert(truthNote({truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",health:"HEALTHY"}).includes("opens official source"));console.log("ERN truth detail smoke checks passed");
