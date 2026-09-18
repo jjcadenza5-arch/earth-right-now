@@ -1,0 +1,1 @@
+import { placeHref } from "./place-routing.js";export function placeShareUrl(placeId,{origin=location.origin,pathname=location.pathname}={}){return origin+pathname+placeHref(placeId)}export function placeShareText(place){return`${place.title} — see current Earth windows on Earth Right Now`}
