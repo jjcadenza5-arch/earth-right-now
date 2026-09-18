@@ -1,0 +1,1 @@
+import { safeHttpUrl,externalAttrs } from "./url-safety.js";export function openExternal(value,{documentRef=document}={}){const url=safeHttpUrl(value);if(!url)return false;const a=documentRef.createElement("a");a.href=url;Object.assign(a,externalAttrs());a.setAttribute("aria-hidden","true");a.style.display="none";documentRef.body?.append(a);a.click();a.remove();return true}
