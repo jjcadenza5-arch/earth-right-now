@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Source cards and destination cards migrated from catalog HTML interpolation to text-safe DOM construction.
+- Choose a Window tiles and My Earth place cards also migrated to text-safe DOM construction.
+- Safe-rendering regression checks include markup-shaped catalog strings to ensure they remain text, not executable elements.
+- Catalog guard added to separate malformed records from valid OFFLINE/UNKNOWN operational states before future large-catalog migration.
 - Moments and Surprise Me now use the same capability-aware source action as Hero, Windows, cards and Atlas.
 - Keyboard shortcuts now invoke canonical viewer controls, preventing hidden player state when Escape closes playback.
 - Surprise Me can choose legitimate external current sources without incorrectly sending them into ERN iframe playback.
