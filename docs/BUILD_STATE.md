@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Hardened historical catalog recovery: missing URLs now remain quarantined/null instead of becoming fake about:blank sources.
+- Added canonical recovery-to-public promotion that strips recovery-only fields and normalizes recovered IDs before public catalog insertion.
+- Unified catalog release recency with the same source-recency policy used by visitor-facing live inventory.
+- Aligned JSON schema with runtime validation: nullable coordinates, coordinate ranges, HTTP(S) URL patterns, HTTPS embed requirement, and core permission/truth/playback invariants.
+- Static current-catalog audit after schema alignment: zero duplicate, URL, embed, link-only, image-truth or coordinate issues; app integration remains zero missing mounts.
 - Unified PlaybackController with the canonical playback-capability policy, eliminating a parallel mode resolver that could have bypassed the new embed-provider allowlist.
 - Unified current-window language: Live Right Now cards and Choose a Window now label each source by actual delivery (LIVE WINDOW, CURRENT IMAGE, CURRENT AT SOURCE, PARTNER LIVE) rather than stamping every source generically live.
 - Hardened Watch Earth session construction so unavailable sources are excluded under the same canonical capability policy used by Hero, Atlas, cards and player history.
