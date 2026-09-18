@@ -1,0 +1,1 @@
+import { dedupeRecovery } from "../src/recovery-dedupe.js";const rows=[{placeId:"a",sourceUrl:"https://example.test/cam/"},{placeId:"a",sourceUrl:"https://example.test/cam"}];const x=dedupeRecovery(rows);console.assert(x.accepted.length===1&&x.duplicates.length===1);console.log("ERN recovery dedupe smoke checks passed");
