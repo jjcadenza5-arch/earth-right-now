@@ -1,0 +1,1 @@
+export function placeHref(placeId){return "#place="+encodeURIComponent(placeId)}export function parsePlaceHash(hash=location.hash){const m=hash.match(/^#place=(.+)$/);return m?decodeURIComponent(m[1]):null}export function sourcesForPlace(registry,placeId){return [...registry.values()].filter(s=>(s.placeId||s.id)===placeId)}
