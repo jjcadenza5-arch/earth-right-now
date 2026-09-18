@@ -1,0 +1,1 @@
+import { playerStateView,viewerAnnouncement } from "../src/player-state-view.js";const v=playerStateView({open:true,mode:"EXTERNAL",history:["a"],surface:"atlas"},{title:"A"});console.assert(viewerAnnouncement(v).includes("provider"));console.log("ERN player state view smoke checks passed");
