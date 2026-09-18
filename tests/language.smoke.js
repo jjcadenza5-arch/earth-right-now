@@ -1,0 +1,1 @@
+import { t } from "../src/language.js";console.assert(t("explore","en")==="Explore");console.assert(t("explore","th")==="สำรวจ");console.log("ERN language smoke checks passed");
