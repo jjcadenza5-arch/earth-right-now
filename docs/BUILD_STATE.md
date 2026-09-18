@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Repaired immersive viewer Previous/Next state: buttons now reflect the real playback-history cursor instead of both appearing available whenever history had more than one item.
+- Removed viewer Next's unrelated fallback into the global ranked catalog; reaching the end of history now means end of history rather than silently jumping to a different browsing model.
+- Scoped left/right keyboard shortcuts to the immersive viewer only; normal page browsing no longer has arrow keys globally hijacked by the player.
+- Editable fields are protected from ERN shortcuts; outside the viewer, R and / retain Surprise/Search behavior.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Repaired destination window counts so places advertise actionable windows, not raw historical camera rows; one working + one offline camera no longer becomes a false `2 windows · choose your view` claim.
 - Destination actions now become Open window / Choose a window / Unavailable according to actual actionable choices, and inside-ERN playback gets a modest destination-ranking preference.
 - Hardened Choose a Window controller so unavailable rows cannot remain selectable or become its default selection.
