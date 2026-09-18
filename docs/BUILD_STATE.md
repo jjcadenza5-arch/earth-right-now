@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Provider-specific validation policy foundation; HTTP success is explicitly not treated as proof of live video.
+- Catalog statistics utility for total/place/truth/health/permission/playback/promotion counts.
+- Wander My Earth / recently-opened history restored with local persistence.
+- My Earth empty/saved state improved.
+- Accessibility baseline and immersive viewer focus containment added.
+- Provider-policy smoke checks added.
 - Source validator and runtime registry audit.
 - Strict Watch Earth builder excludes UNKNOWN/OFFLINE/non-permitted records from true curated live journey.
 - Safe fallback journey remains truthfully labeled while current live inventory is being revalidated.
