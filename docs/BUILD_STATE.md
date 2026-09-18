@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Live Right Now now uses a strict current-check inventory; unverified recovered sources are no longer used as fallback live cards.
+- Honest no-live state routes visitors toward Living Atlas while sources are rechecked.
+- Provider-independent map projection/viewport foundation added so a real map can replace the schematic without changing ERN data/playback.
+- Offline/cache policy added: shell/preferences may persist, but cached third-party media never becomes evidence of current conditions.
+- Live-inventory and map-projection regression smoke checks added.
 - Dedicated Hero controller added so Hero sequencing is independent from Watch Earth/player history while still using the shared playback engine.
 - Source recency model added with current/stale/expired check states.
 - Prioritized revalidation queue added for UNKNOWN, video-platform, embed and high-value sources.
