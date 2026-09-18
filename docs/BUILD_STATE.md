@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Unified general discovery eligibility across window ranking, journey selection, nearby discovery and ERN AI; OFFLINE/unactionable records are no longer recommended by one surface while disabled by another.
+- Catalog guard now rejects duplicate source IDs instead of allowing silent Map overwrite as recovery scale grows.
+- Added stricter truth/playback invariants for EXTERNAL_LIVE and PREVIEW plus finite coordinate validation.
+- General source ranking now incorporates health, playback capability and check recency alongside quality/freshness/moment, preventing unchecked historical records from outranking equally strong current sources.
+- Strict Live Right Now remains independently narrower than general discovery.
+- App integration audit remains zero missing mounts and zero forced-scroll calls.
 - Catalog guard is now in the actual registry loading path; malformed records are quarantined before runtime discovery/playback rather than merely audited afterward.
 - Source validation strengthened for URL schemes, embed permission, LINK_ONLY/EXTERNAL consistency, IMAGE_REFRESH truth, coordinates and scoring ranges.
 - URL validation made deterministic in both browser and non-browser test environments.
