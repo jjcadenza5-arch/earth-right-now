@@ -1,0 +1,1 @@
+import { clusterSources } from "../src/atlas-cluster.js";const c=clusterSources([{id:"a",lat:10,lon:10},{id:"b",lat:11,lon:11},{id:"c",lat:-40,lon:170}]);console.assert(c.reduce((n,x)=>n+x.count,0)===3);console.assert(c.length===2);console.log("ERN atlas clustering smoke checks passed");
