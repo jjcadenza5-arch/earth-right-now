@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- External-live navigation hardened through one temporary-anchor helper with HTTP/HTTPS validation and noopener/noreferrer behavior.
+- Playback adapters now validate embed/image/provider URLs and no longer use innerHTML for status panels.
+- Invalid media URLs fall to truthful unavailable behavior instead of creating broken media mounts.
+- Focused Explore/Atlas/History/Moments/Submit surfaces now hide home-only layers rather than producing a giant stacked page.
+- Atlas single pins now share centered coordinate positioning with clusters; mobile verified-live cards gain horizontal snap browsing.
+- Integration audit remains zero missing app mounts and zero forced-scroll calls.
 - Watch Earth journey repaired to use the canonical capability-aware source action, so EXTERNAL sources no longer get forced into ERN immersive playback.
 - Watch Earth session state API corrected; Pause/Continue now reads state().playing instead of a nonexistent property.
 - Viewer Previous/Next now follows the curated Watch Earth sequence while the journey owns the viewer.
