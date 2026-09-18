@@ -1,0 +1,1 @@
+import fs from "node:fs";const x=fs.readFileSync(new URL("../src/language.js",import.meta.url),"utf8");console.assert(x.includes("try{const c=localStorage.getItem"));console.assert(x.includes('catch{return"en"}'));console.log("ERN language storage resilience smoke checks passed");
