@@ -1,0 +1,1 @@
+import { placeMemoryView } from "../src/place-memory-view.js";const x=placeMemoryView({title:"<script>x</script>",country:"X"});console.assert(!x.querySelector("script")&&x.textContent.includes("<script>"));console.log("ERN safe place memory smoke checks passed");
