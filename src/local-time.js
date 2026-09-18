@@ -1,0 +1,2 @@
+export function localTime(timeZone,now=new Date()){try{return new Intl.DateTimeFormat(undefined,{timeZone,hour:"numeric",minute:"2-digit",hour12:false}).format(now)}catch{return null}}
+export function daylightBand(timeZone){const t=localTime(timeZone);if(!t)return "unknown";const h=Number(t.split(":")[0]);if(h>=6&&h<10)return "morning";if(h>=10&&h<17)return "daylight";if(h>=17&&h<20)return "golden-hour";return "night"}
