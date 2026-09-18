@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Completed tranche-03 revalidation for Kitzbühel/KitzSki and Ski Arlberg using current official livecam surfaces; both promoted as HEALTHY LINK_ONLY external destinations with no inferred embed permission.
+- Public catalog now contains 15 sources; post-promotion static invariant audit reports no duplicate/source/playback issues.
+- Added catalog health summary and a structural catalog release-gate foundation so future deployment/recovery can measure usable/current coverage instead of catalog size alone.
+- App integration audit remains zero missing mounts.
 - Recovery tranche 03 restored St. Moritz, Verbier, Jungfrau Region, Dolomiti Superski, Queenstown Airport & Alps, Kitzbühel and Ski Arlberg from mature ERN lineage.
 - Recovery normalization now preserves historical LINK_ONLY restrictions while still resetting health and historical embed permission; conservative rights knowledge is no longer discarded.
 - Current official-source revalidation promoted St. Moritz, Verbier, Dolomiti Superski and Queenstown Airport & Alps as HEALTHY external official views; public catalog grows from 9 to 13 sources.
