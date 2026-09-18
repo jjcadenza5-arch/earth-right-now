@@ -1,0 +1,1 @@
+import { attributionModel } from "../src/embed-attribution.js";const x=attributionModel({provider:"Provider",permission:"EMBED_ALLOWED",sourceUrl:"https://example.test"});console.assert(x.required&&x.provider==="Provider"&&x.href.startsWith("https://"));console.log("ERN embed attribution smoke checks passed");
