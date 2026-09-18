@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Recovered a second catalog tranche from ERN v0.10: 13 official destination/current-view candidates across parks, wildlife, farms, mountains and beaches.
+- Historical 2026-09-13 verification is retained only as provenance; tranche 02 is reset to UNKNOWN and remains outside the public catalog until current revalidation.
+- Recovery deduplication now normalizes source/official URLs before candidate acceptance, preventing duplicate legacy rows from contaminating the clean catalog.
+- Recovery prioritization/reporting added: historical embed candidates are checked first, then official link-only destinations in batches.
+- Large-catalog restoration now explicitly follows recover-fast / promote-slow operations.
 - Began real legacy catalog recovery from mature ERN v16.05 instead of inventing replacement camera records.
 - Recovery tranche 01 preserves six historical live/embed candidates in a quarantine dataset with historical embed evidence separated from current truth.
 - Current web revalidation confirmed explicit CouchTourist embed availability for Mpala Watering Hole and Kijihiki Plateau; both were promoted to the public registry as HEALTHY / EMBED_ALLOWED / EMBED.
