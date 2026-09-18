@@ -1,0 +1,1 @@
+import { sourceStatus } from "./health-policy.js";export function sourceBadges(s){const out=[sourceStatus(s).label];if(s.permission==="LINK_ONLY")out.push("OPENS AT SOURCE");if(s.permission==="PARTNER_PERMISSION")out.push("PARTNER");if(s.health==="DEGRADED")out.push("DEGRADED");if(s.health==="UNKNOWN")out.push("VERIFYING");return [...new Set(out)]}
