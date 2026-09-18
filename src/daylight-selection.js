@@ -1,0 +1,1 @@
+import { daylightBand } from "./local-time.js";export function daylightEligible(source){const band=source.timeZone?daylightBand(source.timeZone):"unknown";return {source,band,daylight:["morning","daylight","golden-hour"].includes(band)}}export function preferDaylight(sources){return sources.map(daylightEligible).sort((a,b)=>Number(b.daylight)-Number(a.daylight)).map(x=>x.source)}
