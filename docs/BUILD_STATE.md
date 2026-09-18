@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Unified Search, Surprise Me and ERN AI-style discovery around canonical source eligibility instead of letting each surface interpret catalog rows independently.
+- Search now excludes OFFLINE/unactionable sources and ranks empty/general results by ERN source score rather than raw catalog order.
+- `currentSource` now requires HEALTHY + known permission + CURRENT_CHECK; Surprise Me prefers that current pool and legal inside-ERN playback when available.
+- ERN AI natural-language requests containing live/current/now/today are truth-gated to current verified sources; semantic matching cannot upgrade an UNKNOWN/stale source into a live answer.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Repaired immersive viewer Previous/Next state: buttons now reflect the real playback-history cursor instead of both appearing available whenever history had more than one item.
 - Removed viewer Next's unrelated fallback into the global ranked catalog; reaching the end of history now means end of history rather than silently jumping to a different browsing model.
 - Scoped left/right keyboard shortcuts to the immersive viewer only; normal page browsing no longer has arrow keys globally hijacked by the player.
