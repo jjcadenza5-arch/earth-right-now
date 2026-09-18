@@ -1,0 +1,1 @@
+import { validateSource } from "./source-validator.js";export function promotableRecoveryCandidate(row){return row.health==="HEALTHY"&&row.permission!=="UNKNOWN"&&validateSource(row).length===0}export function splitRecoveryCandidates(rows){return {promotable:rows.filter(promotableRecoveryCandidate),hold:rows.filter(x=>!promotableRecoveryCandidate(x))}}
