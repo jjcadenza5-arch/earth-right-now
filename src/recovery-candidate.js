@@ -1,0 +1,1 @@
+export function normalizeRecoveryCandidate(row){return {...row,health:"UNKNOWN",permission:"UNKNOWN",playback:"EXTERNAL",embedUrl:null,lastSuccessfulCheck:null,failureReason:"Recovered candidate awaiting current health and permission revalidation."}}export function candidateEligibleForPublicRegistry(row){return row.health!=="UNKNOWN"&&row.permission!=="UNKNOWN"&&!!row.sourceUrl}
