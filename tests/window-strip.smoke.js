@@ -1,0 +1,1 @@
+import { windowStrip } from "../src/window-strip.js";const x=windowStrip([{id:"a",health:"UNKNOWN",quality:90},{id:"b",health:"HEALTHY",quality:60}],{limit:1});console.assert(x.length===1&&x[0].id==="b");console.log("ERN window strip smoke checks passed");
