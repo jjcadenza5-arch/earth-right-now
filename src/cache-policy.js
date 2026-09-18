@@ -1,0 +1,1 @@
+export const cachePolicy={shell:"cache-first-versioned",catalog:"network-first-no-store-fallback",media:"provider-controlled",favorites:"local-only",history:"local-only"};export function shouldCacheUrl(url){try{const u=new URL(url,location.href);return u.origin===location.origin&&!/\/data\/sources\.json$/.test(u.pathname)}catch{return false}}
