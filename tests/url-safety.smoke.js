@@ -1,0 +1,1 @@
+import { safeHttpUrl } from "../src/url-safety.js";console.assert(safeHttpUrl("https://example.test/cam"));console.assert(safeHttpUrl("javascript:alert(1)")===null);console.log("ERN URL safety smoke checks passed");
