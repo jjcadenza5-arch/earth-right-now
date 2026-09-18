@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ERN Source",
+  "type": "object",
+  "required": [
+    "id",
+    "placeId",
+    "title",
+    "truth",
+    "permission",
+    "health",
+    "playback",
+    "sourceUrl"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "placeId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "number"
+    },
+    "lon": {
+      "type": "number"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "truth": {
+      "enum": [
+        "LIVE_VIDEO",
+        "LIVE_IMAGE",
+        "EXTERNAL_LIVE",
+        "PARTNER",
+        "PREVIEW"
+      ]
+    },
+    "permission": {
+      "enum": [
+        "EMBED_ALLOWED",
+        "LINK_ONLY",
+        "PARTNER_PERMISSION",
+        "UNKNOWN"
+      ]
+    },
+    "health": {
+      "enum": [
+        "HEALTHY",
+        "DEGRADED",
+        "OFFLINE",
+        "UNKNOWN"
+      ]
+    },
+    "playback": {
+      "enum": [
+        "EMBED",
+        "IMAGE_REFRESH",
+        "EXTERNAL",
+        "PREVIEW"
+      ]
+    },
+    "sourceUrl": {
+      "type": "string"
+    },
+    "embedUrl": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "thumbnailUrl": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attribution": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "checkedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lastSuccessfulCheck": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "failureReason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "quality": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "freshness": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "story": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
