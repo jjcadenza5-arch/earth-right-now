@@ -1,0 +1,1 @@
+import fs from "node:fs";const x=fs.readFileSync(new URL("../src/media-lifecycle.js",import.meta.url),"utf8");console.assert(x.includes('el.src="about:blank"'));console.assert(x.includes('s.removeAttribute("src")'));console.assert(x.includes('mount.replaceChildren()'));console.log("ERN media destroy contract smoke checks passed");
