@@ -1,0 +1,1 @@
+import fs from "node:fs";const c=fs.readFileSync(new URL("../src/app.js",import.meta.url),"utf8");console.assert(!c.includes("scrollIntoView"));console.assert(!c.includes("scrollTo({top:0"));console.log("ERN no-forced-scroll smoke checks passed");
