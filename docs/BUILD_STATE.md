@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Recovery tranche 03 restored St. Moritz, Verbier, Jungfrau Region, Dolomiti Superski, Queenstown Airport & Alps, Kitzbühel and Ski Arlberg from mature ERN lineage.
+- Recovery normalization now preserves historical LINK_ONLY restrictions while still resetting health and historical embed permission; conservative rights knowledge is no longer discarded.
+- Current official-source revalidation promoted St. Moritz, Verbier, Dolomiti Superski and Queenstown Airport & Alps as HEALTHY external official views; public catalog grows from 9 to 13 sources.
+- Jungfrau official webcam page was current but reported its listed camera connections offline during verification, so it remains quarantined as DEGRADED rather than being promoted.
+- Kitzbühel and Ski Arlberg remain UNKNOWN pending successful current verification; no status was invented.
+- Static public-catalog invariant audit after promotion reports no duplicate/source/playback issues; app integration remains zero missing mounts.
 - Unified general discovery eligibility across window ranking, journey selection, nearby discovery and ERN AI; OFFLINE/unactionable records are no longer recommended by one surface while disabled by another.
 - Catalog guard now rejects duplicate source IDs instead of allowing silent Map overwrite as recovery scale grows.
 - Added stricter truth/playback invariants for EXTERNAL_LIVE and PREVIEW plus finite coordinate validation.
