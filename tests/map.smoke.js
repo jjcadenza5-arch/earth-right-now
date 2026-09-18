@@ -1,0 +1,1 @@
+import { projectEquirectangular,unprojectEquirectangular } from "../src/map-projection.js";const p=projectEquirectangular(0,0);console.assert(p.x===50&&p.y===25);const q=unprojectEquirectangular(p.x,p.y);console.assert(q.lat===0&&q.lon===0);console.log("ERN map projection smoke checks passed");
