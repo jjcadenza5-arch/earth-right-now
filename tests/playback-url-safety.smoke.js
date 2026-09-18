@@ -1,0 +1,1 @@
+import fs from "node:fs";const c=fs.readFileSync(new URL("../src/playback-adapters.js",import.meta.url),"utf8");console.assert(c.includes("safeHttpUrl(source.embedUrl)"));console.assert(c.includes("safeHttpUrl(source.sourceUrl)"));console.assert(!c.includes("innerHTML"));console.log("ERN playback URL/content safety smoke checks passed");
