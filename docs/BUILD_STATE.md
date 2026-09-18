@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Living Atlas clustering is now connected to the rendered map rather than remaining an unused foundation.
+- Atlas filters for live/current-capable, daylight and checked-healthy sources are connected with reset behavior.
+- Multi-source Atlas clusters open a window chooser; single pins open through the one shared player.
+- Destination drawer now summarizes place-level source availability while still showing every ranked camera choice.
+- Preferred destination window remains a convenience, never a claim that one view is best for every visitor.
+- Atlas-renderer and destination-choice regression smoke checks added.
 - My Earth now has visible durable layers for Favorite places, Favorite windows and Recently visited destinations.
 - Destination drawer now supports Save place, so a destination survives individual camera replacement.
 - Living Atlas model now composes existing filter and clustering foundations without altering source truth.
