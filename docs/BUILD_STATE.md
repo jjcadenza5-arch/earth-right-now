@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Playback capability now explicitly separates in-ERN PLAY, provider EXTERNAL and UNAVAILABLE actions.
+- Hero, Choose a Window, cards and Atlas single pins now route through capability-aware source actions.
+- LINK_ONLY / EXTERNAL sources open the official/provider page instead of entering a fake or empty ERN iframe.
+- Accessible source-action wording now announces provider handoff where relevant.
+- Viewer-state contract documented so only actual in-app playback enters the immersive viewer.
+- Playback-capability, source-action-label and viewer-state regression smoke checks added.
 - Choose a Window restored as a compact horizontal Earth strip instead of another stacked Explore grid.
 - Window tiles connect directly to the shared player and never scroll back to Hero.
 - Window strip preserves truthful source state and ranks stronger/current choices first without hiding alternatives.
