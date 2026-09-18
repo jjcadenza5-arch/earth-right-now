@@ -1,0 +1,28 @@
+[
+  {
+    "id":"recovery-placeholder",
+    "placeId":"recovery-placeholder",
+    "title":"Recovered catalog import pending",
+    "provider":"ERN Recovery",
+    "country":"Global",
+    "region":"Recovery",
+    "lat":0,
+    "lon":0,
+    "categories":["recovery"],
+    "truth":"PREVIEW",
+    "permission":"UNKNOWN",
+    "health":"UNKNOWN",
+    "playback":"PREVIEW",
+    "sourceUrl":"about:blank",
+    "embedUrl":null,
+    "thumbnailUrl":null,
+    "attribution":"Placeholder only — never promoted as live",
+    "checkedAt":null,
+    "lastSuccessfulCheck":null,
+    "failureReason":"Mature catalog extraction in progress",
+    "quality":null,
+    "freshness":null,
+    "moment":null,
+    "story":"This record exists only so the clean registry has a valid initial dataset."
+  }
+]
