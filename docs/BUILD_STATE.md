@@ -1,26 +1,29 @@
 # ERN Build State
 
 ## CURRENT STATE — 2026-09-18
-**Phase: Recovery → Clean Master foundation**
+**Phase: Recovery → Clean Master engine**
 
 Completed:
 - Recovered mature ERN lineage from prior artifacts.
-- Confirmed v16.x contains broad source/photo/catalog and later playback behavior.
-- Diagnosed accumulated duplicate playback generations as a core source of regressions.
-- Created permanent private GitHub repository.
-- Locked continuity, principles, truth model and architecture.
+- Confirmed v16.x retains mature discovery/editorial/source behavior.
+- Diagnosed duplicate Hero/modal/floating playback generations as a core regression source.
+- Created permanent private GitHub repository and continuity system.
+- Locked principles, source truth model and architecture.
+- Added non-regression mature feature inventory.
+- Added first shared PlaybackController with history, previous/next, health/truth/permission routing and no scroll behavior.
+- Added structured source registry loader/ranking layer.
+- Added safe PREVIEW-only placeholder dataset so nothing unverified is promoted as LIVE.
 
 In progress:
-- Extract mature ERN catalog/source data into structured registry.
-- Inventory mature feature surfaces so nothing disappears during rebuild.
-- Replace Hero/modal/floating duplicate playback paths with one controller.
+- Extract mature ERN catalog/source data into structured registry with provenance.
+- Map recovered source fields to truth / permission / health / freshness / quality.
+- Build playback adapters for embed, refreshed image, external live and preview.
 
 Next:
-- Commit structured source schema and recovered catalog.
+- Import first verified recovered source tranche.
 - Build lightweight shell matching mature ERN visual/product language.
-- Restore local playback from every discovery surface.
-- Restore Watch Earth, Explore, Living Atlas/map, My Earth and Moments.
-- Add health/fallback logic before expanding visible live inventory.
+- Connect Hero, Watch Earth, Explore, Living Atlas/map, My Earth and Moments to the same controller.
+- Add graceful unavailable/source fallback and health checks.
 
 Blockers:
 - None at repository/continuity level.
