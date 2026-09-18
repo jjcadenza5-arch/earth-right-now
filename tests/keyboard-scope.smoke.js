@@ -1,0 +1,1 @@
+import fs from "node:fs";const x=fs.readFileSync(new URL("../src/keyboard-shortcuts.js",import.meta.url),"utf8");console.assert(x.includes("isViewerOpen()&&e.key===\"ArrowLeft\""));console.assert(x.includes("!isViewerOpen()&&e.key===\"/\""));console.assert(x.includes("contenteditable"));console.log("ERN keyboard scope smoke checks passed");
