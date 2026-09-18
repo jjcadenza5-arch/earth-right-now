@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Repaired My Earth routing: Hero My Earth now opens the durable My Earth surface (favorite places, favorite windows, recently visited places) instead of the redundant legacy source-history surface.
+- Retired the legacy history surface from surface-manager, markup and focused-surface CSS.
+- Removed old navigation scroll-position save/restore utilities, closing another path for the original forced-Hero-scroll regression to return.
+- My Earth is focusable and focused-surface CSS now shows it correctly instead of globally hiding it whenever any surface is active.
+- Static navigation audit: zero missing app mounts, no history surface/CSS route, and no forced scroll calls in app/navigation state.
 - Hardened inside-ERN playback with an explicit HTTPS embed-provider allowlist; arbitrary catalog iframe URLs can no longer become player embeds without a provider-policy code change.
 - Added provider-specific iframe sandboxing for CouchTourist and YouTube-family embeds.
 - Added player-session cleanup lifecycle and wired it into the shared immersive viewer so refreshed-image timers and future adapter cleanup cannot accumulate across source handoffs.
