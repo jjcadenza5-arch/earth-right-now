@@ -1,0 +1,1 @@
+import { loadFavoritePlaces,saveFavoritePlaces } from "./place-favorites.js";export function favoritePlace(id){const s=loadFavoritePlaces();const saved=!s.has(id);saved?s.add(id):s.delete(id);saveFavoritePlaces(s);return saved}export function isFavoritePlace(id){return loadFavoritePlaces().has(id)}
