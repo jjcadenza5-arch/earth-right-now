@@ -1,0 +1,1 @@
+export function createWindowStripController({sources,onSelect}){let selected=sources[0]?.id||null;return {select(id){const s=sources.find(x=>x.id===id);if(!s)return null;selected=id;onSelect?.(s);return s},selected:()=>selected,items:()=>[...sources]}}
