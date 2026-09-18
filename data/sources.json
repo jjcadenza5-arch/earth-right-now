@@ -729,5 +729,58 @@
     "checkedAt": "2026-09-19",
     "lastSuccessfulCheck": "2026-09-19",
     "failureReason": null
+  },
+  {
+    "id": "lajes-pico-harbour",
+    "placeId": "lajes-pico-harbour",
+    "title": "Lajes do Pico Harbour",
+    "region": "Pico Island",
+    "country": "Portugal",
+    "timeZone": "Atlantic/Azores",
+    "provider": "CouchTourist",
+    "truth": "LIVE_VIDEO",
+    "permission": "EMBED_ALLOWED",
+    "health": "HEALTHY",
+    "playback": "EMBED",
+    "sourceUrl": "https://couchtourist.com/cams/portugal/azores/espaco-talassa-harbour-view-lajes-do-pico/",
+    "officialUrl": "https://couchtourist.com/cams/portugal/azores/espaco-talassa-harbour-view-lajes-do-pico/",
+    "embedUrl": "https://couchtourist.com/embed/cam/4199/",
+    "quality": 84,
+    "freshness": 94,
+    "moment": 88,
+    "categories": [
+      "Beaches & Water"
+    ],
+    "rightsBasis": "Current CouchTourist destination page exposes an Embed this cam control and attribution guidance. ERN retains provider attribution.",
+    "checkedAt": "2026-09-19",
+    "lastSuccessfulCheck": "2026-09-19",
+    "failureReason": null
+  },
+  {
+    "id": "roque-observatory",
+    "placeId": "roque-observatory",
+    "title": "Roque de los Muchachos Observatory",
+    "region": "La Palma",
+    "country": "Spain",
+    "timeZone": "Atlantic/Canary",
+    "provider": "CouchTourist",
+    "truth": "LIVE_VIDEO",
+    "permission": "EMBED_ALLOWED",
+    "health": "HEALTHY",
+    "playback": "EMBED",
+    "sourceUrl": "https://couchtourist.com/cams/spain/canary-islands/nordic-optical-telescope-observatory-view/",
+    "officialUrl": "https://couchtourist.com/cams/spain/canary-islands/nordic-optical-telescope-observatory-view/",
+    "embedUrl": "https://couchtourist.com/embed/cam/7784/",
+    "quality": 86,
+    "freshness": 94,
+    "moment": 90,
+    "categories": [
+      "Beautiful Earth",
+      "Interesting Earth"
+    ],
+    "rightsBasis": "Current CouchTourist destination page exposes an Embed this cam control and attribution guidance. ERN retains provider attribution.",
+    "checkedAt": "2026-09-19",
+    "lastSuccessfulCheck": "2026-09-19",
+    "failureReason": null
   }
 ]
