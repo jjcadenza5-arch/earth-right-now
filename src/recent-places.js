@@ -1,0 +1,1 @@
+const KEY="ern:recent-places:v1";export function recordRecentPlace(id,limit=20){let x=[];try{x=JSON.parse(localStorage.getItem(KEY)||"[]")}catch{}x=[id,...x.filter(v=>v!==id)].slice(0,limit);localStorage.setItem(KEY,JSON.stringify(x));return x}export function loadRecentPlaces(){try{return JSON.parse(localStorage.getItem(KEY)||"[]")}catch{return []}}
