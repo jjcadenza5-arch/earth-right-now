@@ -1,3 +1,4 @@
+import { destroyMedia } from "./media-lifecycle.js";
 export const playbackAdapters = {
   EMBED: {
     render(source, mount) {
@@ -50,6 +51,6 @@ export const playbackAdapters = {
   }
 };
 
-export function renderPlayback(mode,source,mount){
+export function renderPlayback(mode,source,mount){destroyMedia(mount);
   return (playbackAdapters[mode]||playbackAdapters.EXTERNAL).render(source,mount);
 }
