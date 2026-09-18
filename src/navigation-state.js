@@ -1,0 +1,1 @@
+export function rememberPosition(surface){sessionStorage.setItem("ern:return:"+surface,String(scrollY))}export function restorePosition(surface){const raw=sessionStorage.getItem("ern:return:"+surface);if(raw!==null)requestAnimationFrame(()=>scrollTo({top:Number(raw)||0,behavior:"auto"}))}export function surfaceFromElement(el){return el?.closest("section,header")?.id||"home"}
