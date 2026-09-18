@@ -1,0 +1,1 @@
+import { rankWindows } from "../src/window-choice.js";const x=rankWindows([{id:"unknown",health:"UNKNOWN",playback:"EMBED",quality:100},{id:"healthy",health:"HEALTHY",playback:"EXTERNAL",quality:70}]);console.assert(x[0].id==="healthy");console.log("ERN window choice smoke checks passed");
