@@ -17,6 +17,12 @@ Completed:
 - Watch Earth now selects through the shared registry/selection engine.
 
 Additional completed stages:
+- Multi-window destination drawer: visitors can choose among cameras without leaving browsing context.
+- Deep-linkable place routing foundation (#place=...).
+- Ranked Beautiful/Interesting/Useful/Happening Now moments engine.
+- Hero local-time display restored from source timezone.
+- Recovered source records enriched with coordinates, timezone and rights provenance.
+- Release gates committed for product, playback, truth, quality and data.
 - Destination/place grouping foundation for multiple windows per place.
 - Watch Earth journey controller foundation with timed sequencing and shared playback.
 - Local-time/daylight utility restored as a first-class Earth signal.
