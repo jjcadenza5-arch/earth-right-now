@@ -1,0 +1,1 @@
+import { ageHours,recencyState } from "../src/source-recency.js";const now=Date.parse("2026-09-18T12:00:00Z");console.assert(ageHours("2026-09-18T11:00:00Z",now)===1);console.assert(recencyState({checkedAt:"2026-09-10T00:00:00Z",playback:"EMBED"},{healthyMaxHours:24})==="EXPIRED_CHECK");console.log("ERN recency smoke checks passed");
