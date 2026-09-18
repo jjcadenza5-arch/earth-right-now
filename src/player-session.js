@@ -1,0 +1,1 @@
+export function createPlayerSession(){let cleanup=null,current=null;function begin(source,render){end();current=source?.id||null;cleanup=render?.()||null;return current}function end(){if(typeof cleanup==="function"){try{cleanup()}catch{}}cleanup=null;current=null}function state(){return{sourceId:current,active:!!current}}return{begin,end,state}}
