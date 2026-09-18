@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Live Right Now is now a separate strict visitor surface backed only by liveInventory policy; UNKNOWN recovery sources can no longer populate it.
+- Honest Live Right Now empty state routes visitors to the broader Living Atlas rather than fabricating a populated live row.
+- Verified-current Live Right Now cards use safe DOM rendering and the canonical capability-aware action path.
+- Hero source policy now prefers verified current sources whenever available, while retaining truthful SOURCE CHECK fallback behavior when necessary.
+- Live Right Now and Hero eligibility regression smoke checks added.
 - Recovered a second catalog tranche from ERN v0.10: 13 official destination/current-view candidates across parks, wildlife, farms, mountains and beaches.
 - Historical 2026-09-13 verification is retained only as provenance; tranche 02 is reset to UNKNOWN and remains outside the public catalog until current revalidation.
 - Recovery deduplication now normalizes source/official URLs before candidate acceptance, preventing duplicate legacy rows from contaminating the clean catalog.
