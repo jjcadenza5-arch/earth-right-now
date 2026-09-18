@@ -1,0 +1,1 @@
+let opener=null;export function rememberOpener(el=document.activeElement){opener=el instanceof HTMLElement?el:null}export function restoreOpener(){if(opener?.isConnected)requestAnimationFrame(()=>opener.focus({preventScroll:true}));opener=null}export function setViewerOpen(open){document.body.dataset.viewerOpen=open?"true":"false";if(open)rememberOpener()}
