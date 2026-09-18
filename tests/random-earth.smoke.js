@@ -1,0 +1,1 @@
+import { surprisePool,surpriseSource } from "../src/random-earth.js";const rows=[{id:"a",health:"OFFLINE"},{id:"b",health:"HEALTHY",permission:"LINK_ONLY",playback:"EXTERNAL",sourceUrl:"https://example.test"}];console.assert(surprisePool(rows).length===1&&surpriseSource(rows,()=>0).id==="b");console.log("ERN Surprise Earth smoke checks passed");
