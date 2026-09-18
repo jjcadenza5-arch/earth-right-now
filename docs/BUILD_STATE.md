@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Watch Earth journey repaired to use the canonical capability-aware source action, so EXTERNAL sources no longer get forced into ERN immersive playback.
+- Watch Earth session state API corrected; Pause/Continue now reads state().playing instead of a nonexistent property.
+- Viewer Previous/Next now follows the curated Watch Earth sequence while the journey owns the viewer.
+- Removed remaining forced scroll-to-top navigation; focused surfaces receive focus without throwing visitors back to Hero/top.
+- Added no-forced-scroll and Watch Earth state regression checks; app-to-markup audit remains at zero missing mounts.
 - Repository-wide integration inspection found and repaired missing DOM mounts that had made newer modules appear complete while remaining disconnected.
 - Restored Hero trust line, strict Live Right Now mount/empty state, My Earth favorite/recent place mounts, Atlas controls, destination favorite control, Earth/home return control and Watch Earth journey bar.
 - Opening a destination now records the place in durable recent-place memory so My Earth Recent Places actually works.
