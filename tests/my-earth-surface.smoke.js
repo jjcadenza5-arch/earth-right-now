@@ -1,0 +1,1 @@
+import { SURFACES } from "../src/surface-manager.js";console.assert(SURFACES.includes("my-earth"));console.assert(!SURFACES.includes("history"));console.log("ERN My Earth surface smoke checks passed");
