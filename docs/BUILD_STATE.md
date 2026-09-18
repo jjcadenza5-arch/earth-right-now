@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Hardened inside-ERN playback with an explicit HTTPS embed-provider allowlist; arbitrary catalog iframe URLs can no longer become player embeds without a provider-policy code change.
+- Added provider-specific iframe sandboxing for CouchTourist and YouTube-family embeds.
+- Added player-session cleanup lifecycle and wired it into the shared immersive viewer so refreshed-image timers and future adapter cleanup cannot accumulate across source handoffs.
+- Viewer Source link now passes through ERN URL safety and receives noopener/noreferrer external attributes instead of trusting raw catalog URLs.
+- Static embed-policy/catalog audit reports no duplicate/permission/HTTPS/host issues across current EMBED records; app integration remains zero missing mounts.
 - Returned recovery focus to the catalog's biggest structural weakness: high-quality inside-ERN playback rather than adding more external-only destinations.
 - Revalidated and promoted Lajes do Pico Harbour and Roque de los Muchachos Observatory as HEALTHY EMBED_ALLOWED CouchTourist windows, using current provider embed/attribution controls and recovered mature-ERN embed routes.
 - Public catalog grows to 27 sources and inside-ERN EMBED windows from 2 to 4.
