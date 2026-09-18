@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Major Explore / Atlas / Submit destinations now use a surface manager instead of remaining a giant stacked homepage.
+- Hero and Live Right Now remain the immediate home experience; mature destinations open as focused surfaces.
+- Playback media lifecycle now destroys prior iframe/video/audio before every handoff, preventing hidden duplicate players/audio.
+- Viewer context remembers/restores invoking focus without scrolling back to Hero.
+- Player invariants documented and media-lifecycle regression smoke check added.
 - Featured Earth Moments sequencer added with editorial rotation across Happening Now / Beautiful / Interesting / Useful families.
 - Moment session continuity remembers the visitor's current editorial Earth window during the browser session.
 - Optional telemetry hook designed privacy-first and disabled by default.
