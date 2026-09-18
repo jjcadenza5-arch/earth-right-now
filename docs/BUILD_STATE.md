@@ -18,6 +18,10 @@ Completed:
 
 Additional completed stages:
 - Destination/place grouping foundation for multiple windows per place.
+- Watch Earth journey controller foundation with timed sequencing and shared playback.
+- Local-time/daylight utility restored as a first-class Earth signal.
+- Recovered additional official South Australia coastal camera records with conservative UNKNOWN health.
+- Source schema expanded for timezone, moment score and provenance.
 - ERN AI intent-ranking foundation connected to shared registry.
 - Living Atlas schematic spatial pins connected directly to shared playback.
 - Data migration rules explicitly ban screenshots as production imagery and stale verification as current health.
