@@ -1,0 +1,1 @@
+export function externalNotice(source){return {title:"Opening the source",body:`This view is provided by ${source.provider||"the source provider"}. ERN links you there because this source is not permitted or configured for in-page playback.`}}
