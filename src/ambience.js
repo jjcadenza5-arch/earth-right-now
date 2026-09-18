@@ -1,0 +1,1 @@
+const KEY="ern:ambience";export function ambienceEnabled(){return localStorage.getItem(KEY)==="on"}export function setAmbience(on){localStorage.setItem(KEY,on?"on":"off");document.documentElement.dataset.ambience=on?"on":"off";return on}export function toggleAmbience(){return setAmbience(!ambienceEnabled())}export function initAmbience(){setAmbience(ambienceEnabled())}
