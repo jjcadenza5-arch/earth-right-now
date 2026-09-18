@@ -1,0 +1,1 @@
+const defaults={family:"All",health:"All",daylight:false,live:false};export function createAtlasState(seed={}){let state={...defaults,...seed};return {get:()=>({...state}),set(patch){state={...state,...patch};return this.get()},reset(){state={...defaults};return this.get()}}}
