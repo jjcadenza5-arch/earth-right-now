@@ -1,0 +1,3 @@
+export function destinationSummary(place){const windows=place.sources||[];const healthy=windows.filter(s=>s.health==="HEALTHY").length;const current=windows.filter(s=>["LIVE_VIDEO","LIVE_IMAGE","EXTERNAL_LIVE","PARTNER"].includes(s.truth)).length;return {windows:windows.length,healthy,current,hasChoice:windows.length>1}}
+export function destinationRank(place){const scores=(place.sources||[]).map(s=>(s.quality||0)*.5+(s.moment||0)*.35+(s.freshness||0)*.15);return scores.length?Math.max(...scores):0}
+export function rankedDestinations(places){return [...places].sort((a,b)=>destinationRank(b)-destinationRank(a))}
