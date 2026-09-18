@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Catalog guard is now in the actual registry loading path; malformed records are quarantined before runtime discovery/playback rather than merely audited afterward.
+- Source validation strengthened for URL schemes, embed permission, LINK_ONLY/EXTERNAL consistency, IMAGE_REFRESH truth, coordinates and scoring ranges.
+- URL validation made deterministic in both browser and non-browser test environments.
+- Current nine-row public catalog passes the guard invariants in static audit; integration audit remains zero missing app mounts.
 - External-live navigation hardened through one temporary-anchor helper with HTTP/HTTPS validation and noopener/noreferrer behavior.
 - Playback adapters now validate embed/image/provider URLs and no longer use innerHTML for status panels.
 - Invalid media URLs fall to truthful unavailable behavior instead of creating broken media mounts.
