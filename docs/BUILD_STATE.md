@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Tranche-02 current verification promoted seven official destinations: Grand Canyon, Yellowstone, Mount Rainier, Glacier, San Diego Zoo, Zermatt–Matterhorn and Chamonix–Mont-Blanc.
+- National-park refreshed cameras are represented as LIVE_IMAGE where appropriate rather than being mislabeled continuous live video; Yellowstone retains EXTERNAL_LIVE because its official page includes the Old Faithful livestream.
+- San Diego Zoo promotion explicitly excludes its pre-recorded Red Panda item from live semantics.
+- Added truth-detail semantics and a REFRESHED VIEW badge so visitors can distinguish continuous video, current images and official-provider live pages.
+- Public catalog now contains 22 sources; static post-promotion audit reports no duplicate/source/playback invariant issues.
+- App integration audit remains zero missing mounts.
 - Completed tranche-03 revalidation for Kitzbühel/KitzSki and Ski Arlberg using current official livecam surfaces; both promoted as HEALTHY LINK_ONLY external destinations with no inferred embed permission.
 - Public catalog now contains 15 sources; post-promotion static invariant audit reports no duplicate/source/playback issues.
 - Added catalog health summary and a structural catalog release-gate foundation so future deployment/recovery can measure usable/current coverage instead of catalog size alone.
