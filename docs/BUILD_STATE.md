@@ -1,29 +1,38 @@
 # ERN Build State
 
 ## CURRENT STATE — 2026-09-18
-**Phase: Recovery → Clean Master engine**
+**Phase: Clean Master foundation → experience restoration**
 
 Completed:
-- Recovered mature ERN lineage from prior artifacts.
-- Confirmed v16.x retains mature discovery/editorial/source behavior.
-- Diagnosed duplicate Hero/modal/floating playback generations as a core regression source.
-- Created permanent private GitHub repository and continuity system.
-- Locked principles, source truth model and architecture.
-- Added non-regression mature feature inventory.
-- Added first shared PlaybackController with history, previous/next, health/truth/permission routing and no scroll behavior.
-- Added structured source registry loader/ranking layer.
-- Added safe PREVIEW-only placeholder dataset so nothing unverified is promoted as LIVE.
+- Permanent repository, continuity, principles, architecture and source truth model.
+- Mature feature inventory and UX non-regression checklist.
+- Shared PlaybackController: history, Previous/Next, no Hero-scroll dependency.
+- Playback adapters: EMBED, IMAGE_REFRESH, EXTERNAL, PREVIEW, UNAVAILABLE.
+- Structured source registry and first conservative recovered source tranche.
+- Health/promotion policy: UNKNOWN/OFFLINE cannot be presented as live primary inventory.
+- Selection engine foundation for curated Watch Earth and spatial/nearby discovery.
+- Lightweight mature-ERN shell: Hero, Choose a Window, Explore, Moments, My Earth, Living Atlas and immersive viewer.
+- Favorites localStorage persistence, keyboard navigation and fullscreen.
+- Responsive horizontal camera browsing on mobile.
+- Watch Earth now selects through the shared registry/selection engine.
 
 In progress:
-- Extract mature ERN catalog/source data into structured registry with provenance.
-- Map recovered source fields to truth / permission / health / freshness / quality.
-- Build playback adapters for embed, refreshed image, external live and preview.
+- Recover larger source catalog from mature ERN lineage with provenance.
+- Revalidate embeddable sources before promotion to primary live inventory.
+- Replace placeholder visual surfaces with legitimate current-source imagery.
+- Add destination grouping so multiple windows belong to one place.
 
 Next:
-- Import first verified recovered source tranche.
-- Build lightweight shell matching mature ERN visual/product language.
-- Connect Hero, Watch Earth, Explore, Living Atlas/map, My Earth and Moments to the same controller.
-- Add graceful unavailable/source fallback and health checks.
+- Expand recovered catalog in tranches.
+- Add Living Atlas map layer over registry.
+- Restore richer Watch Earth journey/moment sequencing.
+- Add ERN AI intent routing over registry/search.
+- Add automated/provider-specific health checks.
+- Browser test and deploy only after live-source promotion is trustworthy.
+
+Important:
+The current GitHub master is an engineering foundation, not yet the public ERN release. Do not publish until source health and visual fidelity are validated.
 
 Blockers:
-- None at repository/continuity level.
+- No repository blocker.
+- Current source health must be revalidated before recovered historical records can be promoted as LIVE.
