@@ -1,0 +1,1 @@
+import { playbackCapability } from "./playback-capability.js";export function sourceActionMeta(source){const cap=playbackCapability(source);return {label:cap.label,external:cap.action==="EXTERNAL",disabled:cap.action==="UNAVAILABLE",aria:cap.action==="EXTERNAL"?`${cap.label} for ${source.title} (opens provider)`:`${cap.label} for ${source.title}`}}
