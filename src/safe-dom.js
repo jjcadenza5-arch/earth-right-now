@@ -1,0 +1,1 @@
+export function setText(el,value){if(el)el.textContent=value??"";return el}export function element(tag,{className,text,attrs={}}={}){const el=document.createElement(tag);if(className)el.className=className;if(text!==undefined)el.textContent=text;for(const [k,v] of Object.entries(attrs))el.setAttribute(k,String(v));return el}
