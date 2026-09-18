@@ -229,5 +229,56 @@
     "timeZone": "Australia/Adelaide",
     "rightsBasis": "Official South Australia Marine Safety webcam network; link-only.",
     "officialUrl": "https://marinesafety.sa.gov.au/web-cameras"
+  },
+  {
+    "id": "mpala-watering-hole",
+    "placeId": "mpala-watering-hole",
+    "title": "Mpala Watering Hole",
+    "region": "Laikipia",
+    "country": "Kenya",
+    "timeZone": "Africa/Nairobi",
+    "provider": "CouchTourist",
+    "truth": "LIVE_VIDEO",
+    "permission": "EMBED_ALLOWED",
+    "health": "HEALTHY",
+    "playback": "EMBED",
+    "sourceUrl": "https://couchtourist.com/cams/kenya/laikipia-county/mpala-research-centre-watering-hole-2/",
+    "officialUrl": "https://couchtourist.com/cams/kenya/laikipia-county/mpala-research-centre-watering-hole-2/",
+    "embedUrl": "https://couchtourist.com/embed/cam/604/",
+    "quality": 82,
+    "freshness": 90,
+    "moment": 0,
+    "categories": [
+      "Wildlife"
+    ],
+    "rightsBasis": "Current CouchTourist page exposes an Embed this cam iframe and asks users to retain CouchTourist attribution.",
+    "recoveredFrom": "earth-right-now-live-v16.05.html",
+    "lastSuccessfulCheck": "2026-09-18"
+  },
+  {
+    "id": "kijihiki-plateau",
+    "placeId": "kijihiki-plateau",
+    "title": "Kijihiki Plateau",
+    "region": "Hokkaido",
+    "country": "Japan",
+    "timeZone": "Asia/Tokyo",
+    "provider": "CouchTourist",
+    "truth": "LIVE_VIDEO",
+    "permission": "EMBED_ALLOWED",
+    "health": "HEALTHY",
+    "playback": "EMBED",
+    "sourceUrl": "https://couchtourist.com/cams/japan/hokkaido/kijihiki-plateau-hokkaido-japan/",
+    "officialUrl": "https://couchtourist.com/cams/japan/hokkaido/kijihiki-plateau-hokkaido-japan/",
+    "embedUrl": "https://couchtourist.com/embed/cam/8657/",
+    "quality": 82,
+    "freshness": 90,
+    "moment": 0,
+    "categories": [
+      "Mountains",
+      "Beautiful Earth"
+    ],
+    "rightsBasis": "Current CouchTourist page exposes an Embed this cam iframe and asks users to retain CouchTourist attribution.",
+    "recoveredFrom": "earth-right-now-live-v16.05.html",
+    "lastSuccessfulCheck": "2026-09-18"
   }
 ]
