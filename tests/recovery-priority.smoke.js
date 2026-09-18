@@ -1,0 +1,1 @@
+import { prioritizeRecovery } from "../src/recovery-priority.js";const x=prioritizeRecovery([{id:"a",title:"A",health:"UNKNOWN",truth:"EXTERNAL_LIVE",permission:"LINK_ONLY"},{id:"b",title:"B",health:"UNKNOWN",truth:"LIVE_VIDEO",permission:"UNKNOWN",historicalEmbedUrl:"x"}]);console.assert(x[0].id==="b");console.log("ERN recovery priority smoke checks passed");
