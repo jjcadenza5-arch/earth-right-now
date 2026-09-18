@@ -1,0 +1,1 @@
+import { heroActionState } from "../src/hero-actions.js";const x=heroActionState({health:"HEALTHY",permission:"LINK_ONLY"},{watchEarthCount:0});console.assert(x.watchLive.label==="Open current source"&&!x.watchEarth.enabled);console.log("ERN Hero actions smoke checks passed");
