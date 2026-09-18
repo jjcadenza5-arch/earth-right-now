@@ -1,0 +1,1 @@
+export function attribution(source){return {provider:source.provider||"Source",label:source.attribution||source.provider||"Source",url:source.sourceUrl||source.officialUrl||null,officialUrl:source.officialUrl||null}}export function sourceActionLabel(source){return source.permission==="LINK_ONLY"?"Open official live source":"Source"}
