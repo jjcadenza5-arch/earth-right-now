@@ -1,0 +1,1 @@
+import { createPlayerSession } from "../src/player-session.js";let cleaned=0;const x=createPlayerSession();x.begin({id:"a"},()=>()=>cleaned++);x.begin({id:"b"},()=>()=>cleaned++);console.assert(cleaned===1&&x.state().sourceId==="b");x.end();console.assert(cleaned===2&&!x.state().active);console.log("ERN player session smoke checks passed");
