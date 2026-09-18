@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Mature home-experience contract committed: compact navigation, immediate Earth Hero, horizontal windows, secondary systems as focused surfaces.
+- Hero now explains source trust/status instead of implying UNKNOWN sources are live.
+- Restrained generated poster fallbacks added for sources lacking legitimate current imagery; old interface screenshots remain banned from production.
+- Explicit Earth/home return added from focused surfaces.
+- External source URL safety and attribution utilities added; non-HTTP schemes rejected and LINK_ONLY wording remains explicit.
+- URL-safety regression smoke check added.
 - Major Explore / Atlas / Submit destinations now use a surface manager instead of remaining a giant stacked homepage.
 - Hero and Live Right Now remain the immediate home experience; mature destinations open as focused surfaces.
 - Playback media lifecycle now destroys prior iframe/video/audio before every handoff, preventing hidden duplicate players/audio.
