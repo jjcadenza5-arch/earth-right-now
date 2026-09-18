@@ -34,6 +34,13 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Place-first destination ranking layer added above individual camera sources.
+- Explore now exposes destination cards and Choose a Window while retaining source-level discovery.
+- Daylight preference utility added for Earth sequencing without hiding truthful night views.
+- Ambience preference restored as a local, accessible UI state.
+- Destination-model regression smoke checks added.
+- Performance budget committed: only active shared player loads media; broad catalog stays lightweight.
+- Local-first privacy baseline documented for favorites, recent history and ambience.
 - Provider-specific validation policy foundation; HTTP success is explicitly not treated as proof of live video.
 - Catalog statistics utility for total/place/truth/health/permission/playback/promotion counts.
 - Wander My Earth / recently-opened history restored with local persistence.
