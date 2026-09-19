@@ -1,0 +1,10 @@
+import "./test-browser-env.mjs";
+import { mediaInvariant,assertMediaInvariant } from "../src/media-invariant.js";
+const root=document.createElement("div");
+console.assert(mediaInvariant(root).ok&&mediaInvariant(root).count===0);
+root.innerHTML="<iframe></iframe>";
+console.assert(mediaInvariant(root).ok&&mediaInvariant(root).count===1,"one media element is allowed");
+root.innerHTML="<iframe></iframe><video></video>";
+console.assert(!mediaInvariant(root).ok&&mediaInvariant(root).code==="MULTIPLE_ACTIVE_MEDIA","multiple players must violate ERN runtime invariant");
+let threw=false;try{assertMediaInvariant(root)}catch{threw=true}console.assert(threw,"strict invariant helper must fail closed");
+console.log("ERN one-player invariant smoke checks passed");
