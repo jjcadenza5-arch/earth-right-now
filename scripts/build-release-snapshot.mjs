@@ -5,6 +5,8 @@ await mkdir(dist,{recursive:true});
 await cp(new URL("../index.html",import.meta.url),new URL("index.html",dist));
 await cp(new URL("../src/",import.meta.url),new URL("src/",dist),{recursive:true});
 await cp(new URL("../data/",import.meta.url),new URL("data/",dist),{recursive:true});
+await cp(new URL("../deploy/_headers",import.meta.url),new URL("_headers",dist));
+await cp(new URL("../deploy/_redirects",import.meta.url),new URL("_redirects",dist));
 const files=["index.html","data/sources.json","data/release-evidence.json"];
 const hashes={};for(const p of files){const b=await readFile(new URL(p,dist));hashes[p]=createHash("sha256").update(b).digest("hex")}
 const pkg=JSON.parse(await readFile(new URL("../package.json",import.meta.url),"utf8"));
