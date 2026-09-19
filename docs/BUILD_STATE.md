@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Source revalidation batch completed for the final three UNKNOWN public records using current official provider pages: Pattaya City Live, Glenelg Beach and Brighton Beach are now HEALTHY with 2026-09-19 checks.
+- Pattaya remains strictly LINK_ONLY/EXTERNAL because current city terms permit general viewing but prohibit commercial use and republication without written authorization; ERN will not embed/restream the imagery.
+- South Australia Marine Safety currently lists Glenelg and Brighton in its live coastal webcam network; ERN conservatively retains LINK_ONLY/EXTERNAL rather than inferring embed permission.
+- Public catalog is now 27 HEALTHY / 0 UNKNOWN at this check date. Recency expiration and publication evidence remain independent gates; this is not a permanent health guarantee.
 - Large release-control pass: catalog readiness now delegates strict currentness to the same shared currentSource gate used by visitor-facing surfaces, eliminating a separate HEALTHY+recency interpretation.
 - Publication readiness no longer accepts legacy true/false claims as evidence. Browser/mobile/provider/accessibility/performance/rollback checks require dated notes and expire after 14 days, so old tests cannot certify current provider behavior.
 - Operations report now exposes catalog readiness and publication readiness separately, including the evidence state that blocks release.
