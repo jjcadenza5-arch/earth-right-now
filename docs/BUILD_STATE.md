@@ -668,3 +668,9 @@ Current release posture:
 - Personalization is now a bounded bonus layered over ERN's verified-current / beautiful-now base order instead of a wholesale taste-score sort.
 - The final slots deliberately preserve discovery from the neutral Earth ranking, reducing filter-bubble behavior while still letting favorites/recent behavior gently shape the visitor's ERN.
 - Truth, permission, health, freshness and the balanced live candidate pool remain upstream gates; taste cannot promote an ineligible source.
+
+
+## Watch Earth journey variety hardening — 2026-09-20
+- Added a second non-repetition boundary after immersive playback eligibility: a Watch Earth journey cannot contain the same underlying media URL twice and cannot repeat the same destination in one rotation.
+- The candidate pool is widened before deduplication so ERN can still fill up to 20 genuinely different playable destinations when inventory permits.
+- This complements the earlier counter/media synchronization fix: sequence positions now represent distinct visible media and distinct places, not merely distinct source records.

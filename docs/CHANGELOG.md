@@ -579,3 +579,9 @@
 - Fixed false personalized state for visitors with no My Earth signals.
 - Bounded taste influence on Live Right Now and reserved discovery capacity from the neutral Earth ranking.
 - Added regression coverage for neutral visitors, taste influence and continued exploration.
+
+
+## 2026-09-20 — Harden Watch Earth against repeated windows
+- Deduplicate immersive journeys by actual media URL and destination.
+- Widen candidate selection before deduplication to preserve journey breadth.
+- Added regression coverage for duplicate media and duplicate-place records.
