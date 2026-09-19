@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Provider-failure recovery pass: external fallback language is now strict-current aware and no longer says a stale/recheck-due provider window has verified current status.
+- Added conservative runtime provider-failure classification and deterministic legal fallback selection; client playback failure is kept separate from catalog health/truth mutation.
+- One-player controller now supports runtime fallback transitions without spawning a second player, adding duplicate history entries or forcing navigation back to Hero: EMBED → EXTERNAL → UNAVAILABLE (and equivalent image fallback).
+- Viewer state exposes runtime fallback context so ERN can explain an embed/provider failure without falsely declaring the source offline.
+- Added regression contracts for external wording, provider failure classification, fallback ordering and one-player runtime recovery.
 - Catalog observability stage: added a snapshot model that separately reports total network size, destination count, health, strict-current inventory, all legal inside-ERN playback, strict-current inside-ERN playback, external-only inventory and truth/permission distributions.
 - Inside-ERN expansion guard hardened: provider policy now has an explicit permission-escalation boundary, so public agencies, generic video platforms and unknown providers cannot become EMBED_ALLOWED merely because an iframe technically works.
 - CouchTourist is recorded as a reviewed embed provider, but each individual source must still explicitly carry EMBED_ALLOWED; current public catalog contains four such inside-ERN sources.
