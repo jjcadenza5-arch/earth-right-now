@@ -1,10 +1,11 @@
-import { safePlaceFromHash } from "./place-routing.js";
-export function navigationState({hash="",places=[]}={}){
- const place=safePlaceFromHash(hash,places);
- return{placeId:place?.id||null,hasPlace:Boolean(place)};
+import { safePlaceFromHash,parseWindowHash } from "./place-routing.js";
+export function navigationState({hash="",places=[],registry=null}={}){
+ const place=safePlaceFromHash(hash,places),windowId=parseWindowHash(hash),source=windowId&&registry?.get?.(windowId);
+ return{placeId:place?.id||null,windowId:source?.id||null,hasPlace:Boolean(place),hasWindow:Boolean(source)};
 }
-export function syncPlaceNavigation({hash="",places=[],openPlace=()=>false,closePlace=()=>false}={}){
- const state=navigationState({hash,places});
+export function syncPlaceNavigation({hash="",places=[],registry=null,openPlace=()=>false,openWindow=()=>false,closePlace=()=>false}={}){
+ const state=navigationState({hash,places,registry});
+ if(state.windowId){if(state.placeId)openPlace(state.placeId,{writeHistory:false,recordRecent:false});return Boolean(openWindow(registry.get(state.windowId),{surface:"shared-window"}))}
  if(state.placeId)return Boolean(openPlace(state.placeId,{writeHistory:false,recordRecent:false}));
  closePlace({writeHistory:false});return false;
 }
