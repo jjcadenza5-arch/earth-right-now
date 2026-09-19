@@ -1,0 +1,4 @@
+import "./test-browser-env.mjs";
+import { installPosterFallback,posterFailureState } from "../src/poster-fallback.js";
+const container=document.createElement("div"),img=document.createElement("img");container.classList.add("has-poster");container.append(img);installPosterFallback(img,container,{id:"x"},{fallbackClass:"poster-water"});img.dispatchEvent(new Event("error"));console.assert(!img.isConnected&&container.classList.contains("poster-water")&&!container.classList.contains("has-poster"));console.assert(container.getAttribute("data-poster-kind")==="generated"&&container.getAttribute("data-poster-fallback")==="true");const x=posterFailureState({id:"x"},{hadRemoteImage:true});console.assert(x.fallback&&x.reason==="REMOTE_POSTER_FAILED");
+console.log("ERN poster fallback smoke checks passed");
