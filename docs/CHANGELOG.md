@@ -60,3 +60,12 @@
 - Added prominent keyboard focus-visible styling, disabled-control affordance and a higher-contrast preference response.
 - Added smoke coverage for the release validation plan and accessibility surface.
 - CI remains green; these engineering/accessibility preflight improvements do not self-certify the pending real-world accessibility evidence gate.
+
+
+## 2026-09-19 — Runtime media invariant and rollback preflight
+- Promoted ERN's one-player architecture from a design assumption to an explicit runtime invariant.
+- After a viewer playback transition, ERN now checks the document for multiple active iframe/video/audio elements. A violation fails closed through the existing runtime playback failure path instead of allowing duplicate media to continue.
+- Added isolated regression coverage for zero, one and multiple active-media states.
+- Added a fail-closed rollback record model tying a candidate commit to a previous known-good commit, a concrete procedure, verification state and timestamp.
+- Rollback structure alone does not satisfy publication evidence; the real procedure still has to be verified for the eventual hosting environment.
+- CI remains green.
