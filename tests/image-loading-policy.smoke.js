@@ -1,0 +1,10 @@
+import "./test-browser-env.mjs";
+import { loadingPriority,posterLoadingAttrs } from "../src/image-loading-policy.js";
+import { applyPoster } from "../src/source-poster.js";
+console.assert(loadingPriority({surface:"hero"}).eager&&loadingPriority({surface:"hero"}).priority==="high");
+console.assert(posterLoadingAttrs({surface:"discovery",index:8}).loading==="lazy");
+const el=document.createElement("div"),source={title:"Beach",thumbnailUrl:"https://example.test/beach.jpg",categories:["Beaches & Water"]};const p=applyPoster(el,source,{label:false,surface:"discovery",index:8});
+console.assert(p.kind==="image"&&el.children.length===1,"real thumbnail should use an image element rather than CSS background");
+const img=el.children[0];console.assert(img.loading==="lazy"&&img.decoding==="async"&&img.getAttribute("fetchpriority")==="low");
+const generated=document.createElement("div");applyPoster(generated,{title:"No image",categories:["Wildlife"]},{label:false});console.assert(generated.getAttribute("data-poster-kind")==="generated"&&generated.children.length===0);
+console.log("ERN poster loading policy smoke checks passed");
