@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Hardened immersive-viewer accessibility without changing the mature visual baseline: viewer is now a modal dialog, focusable for empty-control fallback, and exposes source/state context to assistive technology.
+- Previous/Next synchronize native disabled state with `aria-disabled`; favorite synchronizes accessible name and `aria-pressed`; Full screen and Share have explicit accessible names.
+- Existing keyboard model verified: Escape uses the canonical Close path, Arrow Left/Right are viewer-scoped, shortcuts do not hijack editable fields, and reduced-motion CSS already disables transitions/animations.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Added player-session generations: every source handoff invalidates the previous generation before the new adapter mounts, preventing late callbacks from an old source from affecting the current viewer.
 - Refreshed-image playback is generation-aware as well as visibility-aware; superseded refresh callbacks become no-ops and cleanup remains centralized.
 - Hardened canonical playback capability so EXTERNAL/LINK_ONLY and IMAGE_REFRESH are actionable only with safe HTTP(S) URLs; EMBED remains restricted to reviewed allowlisted providers.
