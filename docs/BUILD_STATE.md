@@ -34,6 +34,8 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Health automation coverage hardened: checker batches now surface unknown observation IDs and unobserved catalog sources instead of silently accepting typoed/stale/partial inventories; safe health patches remain narrow and cannot mutate truth/rights/playback fields.
+- Added health-observation coverage documentation and regression coverage; partial batches can produce proposals but cannot masquerade as a complete catalog check.
 - Journey-continuity pass: Watch Earth now uses sequential timeout scheduling rather than an always-running interval, suspends advancement while the tab is hidden, and resumes with the same configured pace.
 - Watch Earth stores its current index/source in session memory and resumes the visitor's journey position instead of always restarting at the first camera.
 - Hero rotation now explicitly keeps strict-current inventory ahead of stale inventory and only then prefers legal inside-ERN playback; daylight remains presentation preference rather than a truth override.
