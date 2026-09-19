@@ -184,3 +184,13 @@
 - This does not create extra live media players and preserves the one-player invariant.
 - Added regression coverage for lazy/async/priority attributes and generated-poster no-image behavior.
 - Full CI is green.
+
+
+## 2026-09-19 — My Earth local restore
+- Completed the second half of private My Earth portability: visitors can now import an ERN JSON export into another browser/device.
+- Restore is merge-first rather than destructive: existing local favorite places/windows are retained while imported IDs are added; imported recent order is preserved within bounded history limits.
+- Import remains entirely local with no account, cloud profile or server upload.
+- Files are version-validated, JSON-validated and capped at 128 KB before restore; unsupported/malformed exports fail closed with a user-visible status message.
+- Added bounded storage writers for recent places/windows so restore uses the same safe localStorage layer as ordinary ERN activity.
+- Added regression coverage for merge-not-erase behavior, recent restore, malformed JSON and oversized files.
+- Full CI is green.
