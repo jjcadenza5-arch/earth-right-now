@@ -1,10 +1,11 @@
-# Catalog identity
+# Catalog identity and deduplication
 
-Source IDs are runtime identity. Duplicate IDs are therefore rejected by the catalog guard instead of silently allowing a later row to overwrite an earlier Map entry.
+ERN treats source identity as more than a display title.
 
-Additional truth/playback invariants now enforced:
-- EXTERNAL_LIVE must use EXTERNAL playback;
-- PREVIEW must use PREVIEW playback;
-- coordinates, when supplied, must be finite and in range.
+Promotion/recovery guards compare source IDs, canonical source URLs, official/embed URLs during recovery, repeated recovery URLs, and repeated recovery IDs.
 
-This becomes increasingly important as the recovered catalog grows from tens to hundreds of candidate records.
+Canonical comparison normalizes host/default ports. Recovery comparison also removes query strings because legacy candidates often carried transient tracking/player parameters; the public catalog guard is more conservative and preserves query strings because some providers use them as real resource identifiers.
+
+Duplicate recovery candidates are rejected with a reason code rather than silently merged. The public catalog rejects duplicate canonical sourceUrl records so one physical/provider camera cannot masquerade as multiple independent windows and distort counts, ranking, favorites, or Watch Earth diversity.
+
+Deduplication never decides permission, truth, or health. A unique source still requires normal verification.
