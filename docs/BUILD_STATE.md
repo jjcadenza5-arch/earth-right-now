@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Quality pipeline stage: added a dependency-free Node smoke-test runner plus GitHub Actions CI on main pushes and pull requests, converting the accumulated smoke files from documentation-only artifacts into an executable regression suite.
+- CI remains distinct from release readiness: browser/mobile/provider-playback/accessibility/performance/rollback evidence still requires real-world validation and cannot be auto-certified by smoke tests.
+- Health automation foundation advanced to a report-only proposal pipeline. HTTP reachability alone cannot promote HEALTHY; provider/current-media confirmation is required, and the reporter never mutates truth, permission, rights basis or playback mode.
+- Added regression coverage for health proposals and explicit CI/health-pipeline operating contracts.
 - Catalog identity follow-up: public source/place IDs are now validated as normalized lowercase stable identifiers because they are durable keys for favorites, recents, share hashes, deep links and player history.
 - Duplicate source IDs are now protected case-insensitively in the catalog guard, closing a subtle collision path that URL deduplication alone cannot cover.
 - Added stable-identifier documentation and regression coverage; display titles remain multilingual and independent from machine IDs.
