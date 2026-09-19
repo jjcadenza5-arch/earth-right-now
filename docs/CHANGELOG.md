@@ -41,3 +41,13 @@
 - Atlas Current and inside-ERN filters now use the same strict currentness and playback policy as the rest of ERN rather than approximate health/permission checks.
 - Added regression coverage for destination grouping, search deduplication, strict-current filtering and current inside-ERN playback.
 - Full CI remains green after the Atlas integration.
+
+
+## 2026-09-19 — My Earth continuity and catalog release cleanup
+- My Earth now restores recently watched windows in addition to favorite places, favorite windows and recently visited destinations.
+- Recent-window rendering is fail-safe: remembered offline/unavailable windows remain memory data but are not presented as actionable playback.
+- Release diagnostics now expose the exact catalog gate and malformed-record reasons instead of reducing catalog failure to a generic blocker.
+- Found and resolved the remaining catalog-integrity blocker: Brighton Beach and Glenelg Beach were distinct official Marine Safety SA cameras but both pointed to the same network landing page. Each now uses its distinct official camera page.
+- The catalog gate is now clean: 27 valid records, 0 rejected records.
+- Revalidated the Mpala Watering Hole CouchTourist page, embed URL and required attribution against the current provider page.
+- CI remains green. Publication remains intentionally blocked only by remaining source recheck(s) and the real-world browser/mobile/provider/accessibility/performance/rollback evidence gate.
