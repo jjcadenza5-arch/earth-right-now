@@ -586,3 +586,10 @@ Current release posture:
 - Expanded intent coverage from stay/eat/transport/tickets to six visitor needs: places to stay, food nearby, getting there & around, things to do, culture & places, and useful nearby services.
 - Preserved fail-closed commercial behavior: empty categories do not invent businesses or links; verified offers remain the only offers eligible for display.
 - The camera/Earth experience remains primary. Travel intent is visitor-triggered rather than an advertising wall.
+
+
+## Privacy-first local taste foundation — 2026-09-19
+- Added a deterministic local preference model that can learn from Favorite Windows, Favorite Places, Recent Windows and Recent Places already stored in the visitor's browser.
+- Preference signals are behavioral/contextual: place, country and Earth categories. ERN does not infer age, generation, gender or other demographic identity.
+- Favorites carry more weight than recency; similar categories/places/countries can be ranked higher without sending a profile to a server.
+- This module is deliberately a ranking foundation only. It does not override truth, permission, health or freshness eligibility and is not yet used to silently reorder every public surface.
