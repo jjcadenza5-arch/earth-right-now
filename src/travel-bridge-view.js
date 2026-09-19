@@ -1,11 +1,11 @@
 import { element } from "./safe-dom.js";
-import { bridgeReady,travelContext,travelDisclosure,visibleTravelOffer } from "./travel-bridge.js";
-import { safeHttpUrl,externalAttrs } from "./url-safety.js";import { currentTravelOffer } from "./travel-offer-verification.js";
+import { bridgeReady,travelContext } from "./travel-bridge.js";
+import { safeHttpUrl,externalAttrs } from "./url-safety.js";import { currentTravelOffer } from "./travel-offer-verification.js";import { travelOfferDisclosureText } from "./travel-offer-action.js";
 
 const LABELS={stay:"Places to stay",eat:"Food nearby",transport:"Getting around",tickets:"Tickets & activities"};
 export function travelOfferView(offer){
  if(!currentTravelOffer(offer))return null;const href=safeHttpUrl(offer.url);if(!href)return null;
- const card=element("article",{className:"travel-offer"}),title=element("strong",{text:offer.title}),provider=element("span",{className:"travel-provider",text:offer.provider}),disclosure=element("small",{className:"travel-disclosure",text:travelDisclosure(offer)}),link=element("a",{text:"Open option",attrs:{"aria-label":`Open ${offer.title} from ${offer.provider}`}});
+ const card=element("article",{className:"travel-offer"}),title=element("strong",{text:offer.title}),provider=element("span",{className:"travel-provider",text:offer.provider}),disclosure=element("small",{className:"travel-disclosure",text:travelOfferDisclosureText(offer)}),link=element("a",{text:"Open option",attrs:{"aria-label":`Open ${offer.title} from ${offer.provider}`}});
  link.href=href;Object.assign(link,externalAttrs());card.append(title,provider,disclosure,link);return card;
 }
 export function travelBridgeView(place,{onIntent,offers=[]}={}){
