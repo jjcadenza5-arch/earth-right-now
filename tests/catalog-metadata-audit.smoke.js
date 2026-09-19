@@ -1,0 +1,3 @@
+import { sourceMetadataCompleteness,catalogMetadataAudit } from "../src/catalog-metadata-audit.js";
+const full={id:"x",provider:"p",country:"c",region:"r",timeZone:"UTC",categories:["City"],rightsBasis:"basis",checkedAt:"2026-09-19",lastSuccessfulCheck:"2026-09-19",quality:80,story:"story"};console.assert(sourceMetadataCompleteness(full).complete&&sourceMetadataCompleteness(full).score===100);const a=catalogMetadataAudit([full,{...full,id:"y",story:"",quality:null}]);console.assert(a.total===2&&a.incomplete===1&&a.rows[0].missing.includes("story"));
+console.log("ERN catalog metadata audit smoke checks passed");
