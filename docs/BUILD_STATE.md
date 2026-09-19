@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Hardened client network-state handling for non-window/test contexts and clean listener teardown; browser offline status remains a client-connectivity signal and never mutates source health/truth.
+- Corrected offline copy so ERN no longer promises saved Earth content without an actual service-worker/offline cache implementation.
+- Clarified cache boundary: source catalog is no-store/network truth, third-party media remains provider-controlled, and no service worker is introduced casually.
+- Added non-empty accessibility fallbacks for embedded-frame titles and refreshed-image alt text.
+- Removed the dead storage-helper import from language handling.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Replaced raw recent-window localStorage access in the playback callback with safe, versioned recent-window storage; legacy valid history migrates opportunistically.
 - Storage-denied/privacy modes and malformed legacy recent history can no longer crash playback when a viewer opens.
 - Keyboard shortcuts now respect Cmd/Ctrl/Alt browser/OS combinations and already-prevented events; `/` focuses Earth search with preventScroll.
