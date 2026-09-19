@@ -1,0 +1,1 @@
+import { heroActionState } from "../src/hero-actions.js";const stale={id:"s",health:"HEALTHY",truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",playback:"EXTERNAL",sourceUrl:"https://example.test",lastSuccessfulCheck:"2020-01-01"};const a=heroActionState(stale);console.assert(!a.watchLive.enabled&&!a.next.enabled);console.log("ERN Hero action currentness smoke checks passed");
