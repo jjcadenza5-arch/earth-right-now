@@ -69,3 +69,11 @@
 - Added a fail-closed rollback record model tying a candidate commit to a previous known-good commit, a concrete procedure, verification state and timestamp.
 - Rollback structure alone does not satisfy publication evidence; the real procedure still has to be verified for the eventual hosting environment.
 - CI remains green.
+
+
+## 2026-09-19 — Performance budget and assistive status feedback
+- Added an explicit runtime performance budget anchored to ERN's one-player rule, with reusable snapshots and fail-closed budget results.
+- Added regression coverage showing one active media element is acceptable while simultaneous media is a performance/runtime blocker.
+- Network connectivity messages and camera-submission status are now polite atomic live regions so important asynchronous feedback is exposed to assistive technology.
+- Added a reusable deduplicating live-region announcer for future dynamic ERN surfaces.
+- CI remains green. The performance and accessibility publication gates still require real deployed/browser validation; these changes prepare measurable checks rather than self-certifying them.
