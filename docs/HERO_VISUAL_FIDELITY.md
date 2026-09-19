@@ -1,14 +1,16 @@
 # Hero visual fidelity
 
-The mature ERN Hero remains the dominant first experience. Fresh architecture must not turn it into a generic stacked landing page.
+Canonical target: the mature ERN 4:23 PM experience, combined with the later immersive viewer behavior and the Fresh truth/reliability architecture underneath.
 
-Rules:
-- use a source thumbnail only when it is a safe HTTP(S) URL;
-- otherwise use ERN's generated landscape-family background, never a broken image;
-- source truth, health and permission determine Hero eligibility independently from imagery;
-- an attractive thumbnail can never promote a stale or unverified source;
-- the Hero retains the mature location identity, truth pill, local context and Watch/Explore actions;
-- focus visibility is strengthened without changing the visual hierarchy;
-- no browser screenshot or prototype screenshot is production imagery.
+The Hero is Earth-first:
+- small **EARTH RIGHT NOW** identity;
+- welcoming editorial line: **Welcome to Earth — see what is happening now.**
+- truthful current/source-state pill;
+- the selected destination/location is the dominant headline;
+- place/local-time/story context follows;
+- source trust stays visible but secondary;
+- Watch live / Watch Earth / My Earth / Explore / Next live remain immediate actions.
 
-Target remains the mature 4:23 PM ERN experience with the later immersive viewer behavior and Fresh truth architecture underneath.
+The slogan **See before you go** remains ERN's product principle/title language; it does not replace the destination as the visual Hero.
+
+Prototype/browser screenshots are forbidden as production imagery. Legitimate source imagery may be used only through the safe poster path and never changes source truth or eligibility.
