@@ -469,3 +469,14 @@
 - Added release-candidate reporting to CI and modernized the CI runtime.
 - Repaired an intermediate workflow-formatting regression; the corrected pull-request CI completed successfully before merge.
 - Current planning indicators: beta 71%, business activation 71%. Formal publication remains blocked by the six real-world evidence checks.
+
+
+## 2026-09-19 — Release handoff hardening
+- Preview artifacts are now reproducible static release snapshots with SHA-256 fingerprints and rollback identity.
+- Static-host portability controls and a host contract are included without selecting or exposing a public host.
+- Explicit shared #place/#window routes take precedence over private resume state.
+- CI now rejects unsafe embedded-provider catalog entries and requires legal external fallback chains for every inside-ERN embed.
+- Real-world evidence has an exact candidate identity contract (Git commit + manifest + HTTPS origin), preventing evidence from silently carrying across builds.
+- GitHub-built release manifests now stamp the candidate commit SHA directly.
+- Business activation has provider-neutral submission/affiliate adapter contracts and a source-first review workflow, while real transmission and affiliate inventory remain disabled.
+- Publication remains fail-closed pending the six real-world checks; no CI result has been converted into browser/provider evidence.
