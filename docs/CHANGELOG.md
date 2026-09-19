@@ -387,3 +387,12 @@
 - Added a formal submission boundary model that distinguishes prepared, transmitted and published states, preserving ERN's review-first architecture for the future backend.
 - Added regression coverage for Watch Earth diversity, destination coverage and local-only submission boundaries.
 - Full CI is green.
+
+
+## 2026-09-19 — Catalog metadata audit and release-blocker clarity
+- Added a catalog metadata completeness audit covering provider, geography, timezone, categories, rights basis, verification timestamps, quality and visitor story fields. This is separate from source validity: a source can remain structurally valid while still being flagged for editorial metadata improvement.
+- Added a repository command for metadata status plus review-severity output, allowing future source expansion to preserve ERN's quality-over-quantity standard instead of accumulating thin records.
+- Added a concise release-blocker summary model that keeps publication state fail-closed and identifies exactly which real-world evidence classes remain missing without converting smoke/CI success into publication evidence.
+- No release evidence was fabricated or promoted; publication remains blocked until the existing real-browser/mobile/provider/accessibility/performance/rollback evidence requirements are genuinely satisfied.
+- Added regression coverage for metadata completeness and release blocker summaries.
+- Full CI is green.
