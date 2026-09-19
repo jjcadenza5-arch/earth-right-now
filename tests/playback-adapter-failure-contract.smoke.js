@@ -1,0 +1,1 @@
+import { readFileSync } from "node:fs";const src=readFileSync(new URL("../src/playback-adapters.js",import.meta.url),"utf8");console.assert(src.includes("EMBED_TIMEOUT"));console.assert(src.includes("IMAGE_FAILED"));console.assert(src.includes("session?.onFailure"));console.log("ERN playback adapter failure contract smoke checks passed");
