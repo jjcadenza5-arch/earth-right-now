@@ -314,3 +314,13 @@
 - BUILD_STATE has been synchronized with the major September 19 reliability, discovery, sharing, partner-verification, My Earth and imagery stages so repository continuity matches the implementation.
 - Added regression coverage for hour/day freshness formatting.
 - Full CI is green.
+
+
+## 2026-09-19 — My Earth controls, drawer continuity and long-session truth
+- Restored the actual My Earth export/import control wiring: export creates the local portability file; import validates, merges rather than erases, reloads in-memory favorites/recents and reports a stable result to the visitor.
+- Import-result messaging now has explicit precedence over availability notices and clears on the visitor's next My Earth edit, preventing status text from being accidentally overwritten or becoming permanent.
+- Nearby destination replacement inside an already-open Choose a Window drawer now preserves the original dialog lifecycle while safely moving focus after the clicked card is replaced; Escape still returns to the original opener.
+- Added a visibility-aware freshness clock. Long-lived ERN tabs now periodically rerender truth-sensitive browsing surfaces and viewer freshness, and refresh immediately when a hidden tab becomes visible again.
+- The freshness clock does no presentation work while the tab is hidden and does not create media players.
+- Added regression coverage for My Earth status precedence, repeated drawer lifecycle/refocus and long-session freshness behavior.
+- A temporary CI failure exposed a DOM-shim assumption in the new My Earth status helper; the helper was hardened to use explicit data attributes and the full suite returned green.
