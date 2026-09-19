@@ -280,3 +280,11 @@
 - Destination cards gained an optional contextual label so future discovery surfaces can add meaningful context without forking the card component.
 - Added regression coverage for distance formatting, radius filtering and origin exclusion.
 - Full CI is green.
+
+
+## 2026-09-19 — Canonical share links
+- Destination and exact-window sharing now build from a canonical origin/path URL rather than concatenating raw browser location fragments.
+- Shared links preserve ERN's stable destination/window hashes while stripping transient query parameters and existing fragments, reducing accidental tracking leakage and malformed duplicate navigation state.
+- Exact-window links remain compatible with the existing destination-aware deep-link restoration path.
+- Added regression coverage for canonical base URLs, exact-window sharing and query-string stripping.
+- Full CI is green.
