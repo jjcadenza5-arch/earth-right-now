@@ -1,0 +1,1 @@
+import { heroRotationCopy } from "../src/hero-rotation-copy.js";console.assert(heroRotationCopy().includes("30 seconds"));console.assert(heroRotationCopy({enabled:false}).includes("paused"));console.log("ERN hero rotation copy smoke checks passed");
