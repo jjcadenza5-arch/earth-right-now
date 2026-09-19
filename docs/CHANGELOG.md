@@ -94,3 +94,12 @@
 - Malformed/unknown shared window IDs fail closed rather than inventing a source.
 - Added regression coverage for encoding, parsing, generated URLs and exact-window navigation restoration.
 - CI remains green.
+
+
+## 2026-09-19 — Destination-first Atlas clusters
+- Living Atlas cluster drawers now group nearby map windows by destination instead of repeating one card per camera.
+- A destination with several cameras appears once and retains all of its views behind Choose a Window.
+- Cluster summaries distinguish destination count from underlying window count, preserving the breadth of the live network without visual duplication.
+- Ranking favors destinations with strict-current and inside-ERN options while retaining truthful source availability.
+- Added regression coverage for multi-window destinations inside map clusters.
+- CI remains green.
