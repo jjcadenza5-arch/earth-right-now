@@ -6,9 +6,10 @@ for(const file of files){
   const r=spawnSync(process.execPath,[new URL(file,import.meta.url).pathname],{encoding:"utf8"});
   if(r.stdout)process.stdout.write(r.stdout);
   if(r.stderr)process.stderr.write(r.stderr);
-  if(r.status!==0){
+  const assertionFailure=/Assertion failed(?::|\b)/.test(r.stderr||"");
+  if(r.status!==0||assertionFailure){
     failed++;
-    console.error(`FAILED: ${file} (exit ${r.status})`);
+    console.error(`FAILED: ${file} (${assertionFailure?"console assertion":`exit ${r.status}`})`);
   }
 }
 if(!files.length){console.error("No smoke tests found");process.exit(1)}
