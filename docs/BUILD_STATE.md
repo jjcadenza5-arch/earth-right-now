@@ -484,3 +484,12 @@ Current release posture:
 - Engineering smoke baseline: GREEN.
 - Publication: still gated by fresh real-world evidence and current source verification.
 - No release gate has been bypassed or weakened.
+
+
+### 2026-09-19 — Catalog fully current
+- All 27 catalog records are now current under ERN's recency policy.
+- Current inside-ERN playback inventory increased from 2 to 4 after the two CouchTourist embed records were refreshed.
+- Source recheck queue is now 0.
+- Catalog release gate: READY (27 valid, 0 rejected, no catalog blockers).
+- Engineering CI remains GREEN.
+- Publication remains deliberately BLOCKED only by the six real-world evidence dimensions: browser, mobile, provider playback, accessibility, performance, and rollback.
