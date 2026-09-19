@@ -520,3 +520,16 @@ Current release posture:
 - Dismissal clears the offer, and ERN never auto-plays a window or auto-opens a destination from continuity state.
 - Added UI regression coverage for the privacy and catalog-validity contract.
 - Pull-request CI passed before merge; stable main was updated only after the green check.
+
+
+### 2026-09-19 — Release candidate and business activation preflight
+- Catalog expanded to 30 current healthy source records across 16 countries and 20 providers.
+- Current inside-ERN playback inventory increased to 7; 23 additional current sources remain official-provider/external experiences.
+- Added three explicitly embeddable, currently checked live-video windows: Cijin Beach (Taiwan), Manhattan Skyline (United States), and Cancún Caribbean Beach (Mexico).
+- Catalog release gate remains READY: 30 valid, 0 rejected, 0 source rechecks pending.
+- Beta planning indicator is 71%. This is not publication certification; browser, mobile, provider playback, accessibility, performance and rollback evidence remain required.
+- Business activation indicator is 71%. The Travel Bridge, disclosures, offer verification, submission validation and source-first partner review workflow are built. Submission transport and real affiliate inventory remain intentionally unconnected.
+- Partner/commercial status cannot bypass truth, permission or health review.
+- Added a machine-readable release-candidate report combining catalog breadth, formal release blockers and business posture.
+- CI now reports release, beta, business and candidate posture and runs successfully on Node 22 with current checkout/setup-node actions.
+- Publication remains blocked until ERN is deployed to a real candidate origin and the six dated real-world evidence checks are performed.
