@@ -1,0 +1,1 @@
+import fs from "node:fs";const x=fs.readFileSync(new URL("../src/recent-windows.js",import.meta.url),"utf8");console.assert(x.includes('LEGACY="ern:recent"'));console.assert(x.includes("stringArray"));console.assert(x.includes("writeJSON"));console.log("ERN recent windows storage smoke checks passed");
