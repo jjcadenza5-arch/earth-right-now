@@ -17,7 +17,7 @@ jobs:
           node-version: 20
       - name: Run ERN smoke suite
         id: smoke
-        run: npm test 2>&1 | tee smoke-output.txt
+        run: |\n          set -o pipefail\n          npm test 2>&1 | tee smoke-output.txt
       - name: Upload smoke diagnostics
         if: always()
         uses: actions/upload-artifact@v4
