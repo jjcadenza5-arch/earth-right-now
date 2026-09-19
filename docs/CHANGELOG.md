@@ -352,3 +352,12 @@
 - Publication inventory now exposes its recheck IDs in priority order while preserving the same fail-closed currentness rules.
 - Added regression coverage for playback feedback and recheck prioritization.
 - Full CI is green.
+
+
+## 2026-09-19 — Local persistence truth and commercial-link boundaries
+- My Earth now detects whether browser-local persistence is actually writable. If private browsing, browser policy or storage restrictions prevent persistence, ERN warns that favorites/recent places may not survive the session instead of silently implying they were saved.
+- Added a bounded 24-hour session-resume data model for future continuity work; it is deliberately not auto-restoring UI yet, avoiding surprise navigation until browser validation is available.
+- Travel option cards now use explicit commercial disclosure language: Sponsored, Affiliate link or External travel link. This disclosure remains separate from camera/source truth and cannot turn a camera into a partner source.
+- Added a privacy-minimized travel-option event model for future optional telemetry; it contains offer/place/intent and commercial flags, not visitor identity or precise location.
+- Added regression coverage for blocked local storage, session-resume validation and commercial travel disclosure.
+- Full CI is green.
