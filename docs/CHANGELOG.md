@@ -130,3 +130,12 @@
 - Playback-specific surfaces remain window-first; this change is intentionally limited to discovery surfaces.
 - Added regression coverage for duplicate-window collapse and intent-ranked destination results.
 - Full CI is green.
+
+
+## 2026-09-19 — Private My Earth portability
+- Added a versioned, privacy-preserving My Earth export format containing only ERN place/window IDs and ordering for favorites/recents; no account, profile, precise location or camera media is exported.
+- My Earth now exposes an Export My Earth action that downloads the visitor's local state as JSON without requiring a server account.
+- Added strict import-validation/merge primitives for future restore or cross-device support: unknown versions fail closed, malformed IDs are discarded, duplicates are removed, and imported state is designed to merge rather than silently erase local favorites.
+- Import UI is intentionally not exposed yet; restore behavior can be added after browser validation of the export path.
+- Added regression coverage for versioning, sanitization, deduplication and non-destructive merge semantics.
+- Full CI is green.
