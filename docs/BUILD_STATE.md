@@ -646,3 +646,11 @@ Current release posture:
 - Sitemap is generated from the same catalog, so it contains the homepage plus every real destination instead of fabricated SEO pages.
 - GitHub Pages release build now includes robots.txt, sitemap.xml and generated /places/ pages.
 - Destination pages do not claim that weather is visible, do not upgrade source truth, and do not claim ownership of provider streams.
+
+
+## Earth Guide actions — 2026-09-19
+- Earth Guide follow-ups now have explicit action semantics instead of pretending every conversational phrase is a catalog search.
+- “Surprise me” opens a real catalog window through the shared playback/source-action path.
+- “Show me somewhere completely different” deliberately shifts away from the current place/country/region when possible.
+- Generic “Show me what is live right now” now returns the verified-current pool instead of failing because words like “show” are not catalog metadata.
+- Explicit place/landscape queries still use ERN AI ranking with My Earth taste as a bounded preference; action handling never bypasses source truth/currentness for current requests.
