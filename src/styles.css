@@ -77,3 +77,5 @@ button:disabled{cursor:not-allowed;opacity:.55}
 .travel-intents button{white-space:nowrap;flex:0 0 auto}
 .source-poster-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}.source-poster>*:not(.source-poster-image){position:relative;z-index:1}
 .destination-context{display:block;margin-top:8px;font-size:10px;letter-spacing:.08em;color:var(--accent)}
+
+.hero-media{position:relative;overflow:hidden}.hero-poster-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}.hero-shade,.hero-copy{position:relative;z-index:1}
