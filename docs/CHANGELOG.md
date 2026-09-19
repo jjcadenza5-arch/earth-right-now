@@ -288,3 +288,12 @@
 - Exact-window links remain compatible with the existing destination-aware deep-link restoration path.
 - Added regression coverage for canonical base URLs, exact-window sharing and query-string stripping.
 - Full CI is green.
+
+
+## 2026-09-19 — Hero poster loading and failure lifecycle
+- The Hero's legitimate remote poster is now a real eager, high-priority image instead of a CSS background request, aligning the most important above-the-fold visual with ERN's explicit image-loading policy.
+- Hero imagery remains decorative and aria-hidden; camera truth/currentness continues to come only from source metadata and verification policy.
+- A failed Hero poster now falls back to ERN's generated destination visual rather than leaving a broken or blank first impression.
+- Discovery imagery remains lazy, preserving the earlier performance split: Hero first, browsing imagery later.
+- Added regression coverage for eager/high-priority Hero loading and failure fallback.
+- Full CI is green.
