@@ -47,3 +47,11 @@ linear-gradient(160deg,#0d3129,#061b17);background-size:auto,auto,auto,25% 25%,2
 .window-tile{min-height:224px}
 .destination-card{min-height:310px}
 @media(max-width:760px){.card-visual{height:150px}.window-visual{height:86px}.window-tile{min-height:238px}.destination-card{min-height:300px}}
+
+/* Live Right Now shares the poster system but remains a strict-current inventory surface. */
+.live-window-visual{display:block;position:relative;overflow:hidden;height:78px;border-radius:11px;margin:-5px -5px 12px;background:#0b2b24;border:1px solid rgba(255,255,255,.06)}
+.live-window-visual.has-poster{background-size:cover;background-position:center}
+.live-window-visual.has-poster:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,14,12,.3),transparent 72%);pointer-events:none}
+.live-window-visual.poster-earth:before,.live-window-visual.poster-water:before,.live-window-visual.poster-wildlife:before,.live-window-visual.poster-mountain:before,.live-window-visual.poster-city:before{position:absolute;inset:0}
+.live-window-card{min-height:212px}
+@media(max-width:760px){.live-window-visual{height:92px}.live-window-card{min-height:228px}}
