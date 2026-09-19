@@ -13,6 +13,7 @@ export function buildReleaseCandidate(rows,evidence={},options={}){
     publication:{
       ready:publication.ready,
       catalogReady:publication.catalogReady,
+      catalog:publication.catalog,
       passed:publication.passed,
       remaining:publication.remaining,
       blockers:publication.blockers
