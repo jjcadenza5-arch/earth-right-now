@@ -12,7 +12,8 @@
     "catalog:balance": "node scripts/catalog-balance-status.mjs",
     "release:readiness": "node scripts/beta-readiness-status.mjs",
     "business:status": "node scripts/business-readiness-status.mjs",
-    "release:candidate": "node scripts/release-candidate.mjs"
+    "release:candidate": "node scripts/release-candidate.mjs",
+    "release:record": "node scripts/record-release-evidence.mjs"
   },
   "engines": {
     "node": ">=20"
