@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Runtime playback recovery is now connected end-to-end rather than only modeled: media adapter → generation-safe player session → PlaybackController → legal fallback → same immersive viewer.
+- Allowed iframe playback now has bounded load/error signaling; repeated refreshed-image failures also signal the session. Stale callbacks from destroyed media generations cannot alter the current player.
+- App-level player session routes a failure only when both source ID and playback mode still match, preventing a late provider event from knocking a newer source into fallback.
+- Provider fallback/unavailable states were visually integrated into the immersive viewer so recovery feels continuous rather than like a separate error page.
+- Explicit limitation retained: iframe load is not proof that a provider's internal live video is actually playing; real provider playback remains a release-evidence requirement.
 - Provider-failure recovery pass: external fallback language is now strict-current aware and no longer says a stale/recheck-due provider window has verified current status.
 - Added conservative runtime provider-failure classification and deterministic legal fallback selection; client playback failure is kept separate from catalog health/truth mutation.
 - One-player controller now supports runtime fallback transitions without spawning a second player, adding duplicate history entries or forcing navigation back to Hero: EMBED → EXTERNAL → UNAVAILABLE (and equivalent image fallback).
