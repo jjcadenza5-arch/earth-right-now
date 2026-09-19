@@ -615,3 +615,10 @@ Current release posture:
 - Guide language remains grounded in the actual discovery result. Empty current searches explicitly say no verified-current match rather than inventing one.
 - My Earth taste can be acknowledged when it contributed to ranking, while explicit visitor intent remains primary.
 - This is an on-device deterministic guide foundation, not a claim that a remote generative-AI service is connected.
+
+
+## Earth Light Right Now — 2026-09-19
+- Added a visible solar-aware discovery surface that follows sunrise, sunset, low morning/evening light, nighttime cities and daylight around Earth.
+- The engine only uses verified-current sources and ranks each light lane by Beautiful Right Now scoring.
+- Language is intentionally conservative: “Near sunrise locally” / “Near sunset locally” describe solar geometry only. ERN explicitly does not claim clear weather or that a sunrise/sunset is visible in the camera.
+- This turns the earlier hidden solar-ranking foundation into a visitor-facing living-Earth experience without compromising source truth.
