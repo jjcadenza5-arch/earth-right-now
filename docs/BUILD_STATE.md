@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Repaired Daylight discovery: the Atlas no longer relies on an unreliable private `_daylight` field; it computes a source-local approximate daylight state from its IANA timezone at filter time.
+- Hero daylight preference and Atlas Daylight-only filtering now share one model; invalid/missing timezones are `Daylight unknown` rather than silently included.
+- Daylight wording is explicitly approximate (`Likely daylight` / `Likely night`) because local clock alone is not sunrise/sunset and does not account for latitude, season, terrain or weather.
+- Local-time parsing now uses `Intl.DateTimeFormat.formatToParts` with h23 hour cycle rather than splitting locale-formatted strings, avoiding locale/midnight parsing errors.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Centralized immersive-viewer teardown into one lifecycle used by both the Close button and programmatic player closes: journey pause, adapter/session cleanup, media destruction, hide, viewer-state reset and focus restoration now happen together.
 - Removed the old split cleanup path where programmatic `player.close()` could leave viewer DOM/media state behind.
 - Preserved the original viewer opener across Previous/Next, Watch Earth and other in-viewer player handoffs; viewer controls cannot overwrite the return-focus target.
