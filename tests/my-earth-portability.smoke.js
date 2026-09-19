@@ -1,0 +1,10 @@
+import { myEarthSnapshot,validateMyEarthSnapshot,mergeMyEarthSnapshot } from "../src/my-earth-portability.js";
+const x=myEarthSnapshot({favoritePlaceIds:["p1","p1"],favoriteWindowIds:["w1"],recentPlaceIds:["p2","p1"],recentWindowIds:["w2"]});
+console.assert(x.favoritePlaceIds.length===1&&x.version===1);
+console.assert(validateMyEarthSnapshot({...x,version:2}).ok===false,"unknown export versions must fail closed");
+const dirty={version:1,favoritePlaceIds:[" p1 ","",4],favoriteWindowIds:["w1"],recentPlaceIds:["p2","p2"],recentWindowIds:["w2"]};
+const v=validateMyEarthSnapshot(dirty);console.assert(v.ok&&v.data.favoritePlaceIds.join(",")==="p1"&&v.data.recentPlaceIds.join(",")==="p2");
+const m=mergeMyEarthSnapshot({favoritePlaceIds:["local"],recentWindowIds:["local-w"]},x);
+console.assert(m.ok&&m.data.favoritePlaceIds.includes("local")&&m.data.favoritePlaceIds.includes("p1"),"import should merge rather than erase local favorites");
+console.assert(m.data.recentWindowIds[0]==="w2","imported recency should remain ordered");
+console.log("ERN My Earth portability smoke checks passed");
