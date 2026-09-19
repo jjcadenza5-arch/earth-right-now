@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Large playback/lifecycle pass: playback capability and external-player copy now use currentness-aware language; stale/rechecking sources cannot inherit present-tense live wording from historical truth type.
+- Watch Earth now rechecks strict current-source eligibility again at the session boundary, protecting the automatic journey even if an upstream selector regresses.
+- Viewer open/close lifecycle is idempotent while teardown remains centralized through player-session/media-lifecycle, reinforcing one-player architecture and avoiding duplicate media after repeated interactions.
+- My Earth now explicitly separates visitor memory from source truth: saved windows remain visible when a provider later becomes unavailable, but their actions/status immediately reflect current capability instead of preserving an outdated live claim.
+- Favorite source controls now expose aria-pressed state; recent/favorite local IDs remain safely resolved against the current catalog.
 - Large mature-experience pass: restored the canonical Hero hierarchy so the Earth destination/location is the dominant headline and “Welcome to Earth — see what is happening now.” is the supporting editorial line; the discarded generic Fresh slogan-led Hero is no longer the visual structure.
 - Unified destination currentness with the strict source gate: HEALTHY alone no longer makes a place “current”; known permission, CURRENT_CHECK and actionable playback are required.
 - Destination ranking now prefers genuinely current places before broad quality scoring, while Living Atlas can still retain broader actionable destinations.
