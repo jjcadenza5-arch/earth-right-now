@@ -8,7 +8,8 @@
     "release:status": "node scripts/release-status.mjs",
     "release:evidence": "node scripts/evidence-status.mjs",
     "release:checklist": "node scripts/release-checklist.mjs",
-    "catalog:metadata": "node scripts/catalog-metadata-status.mjs"
+    "catalog:metadata": "node scripts/catalog-metadata-status.mjs",
+    "catalog:balance": "node scripts/catalog-balance-status.mjs"
   },
   "engines": {
     "node": ">=20"
