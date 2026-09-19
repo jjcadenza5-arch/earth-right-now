@@ -1,0 +1,1 @@
+import { promotionFor,PROMOTION } from "../src/health-policy.js";const base={health:"HEALTHY",truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",playback:"EXTERNAL",quality:90};console.assert(promotionFor({...base,lastSuccessfulCheck:"2020-01-01T00:00:00Z"})===PROMOTION.ATLAS);console.log("ERN promotion recency smoke checks passed");
