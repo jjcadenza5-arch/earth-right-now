@@ -1,0 +1,10 @@
+import "./test-browser-env.mjs";
+import { performanceBudget,performanceSnapshot,performanceBudgetResult } from "../src/performance-budget.js";
+const root=document.createElement("div"),budget=performanceBudget();
+console.assert(budget.activeMediaMax===1,"ERN performance budget must preserve one-player architecture");
+root.innerHTML="<iframe></iframe>";
+console.assert(performanceBudgetResult(performanceSnapshot({root,now:()=>1})).ok);
+root.innerHTML="<iframe></iframe><video></video>";
+const bad=performanceBudgetResult(performanceSnapshot({root,now:()=>2}));
+console.assert(!bad.ok&&bad.blockers.includes("MULTIPLE_ACTIVE_MEDIA"));
+console.log("ERN performance budget smoke checks passed");
