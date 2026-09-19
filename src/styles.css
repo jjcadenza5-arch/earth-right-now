@@ -36,3 +36,14 @@ linear-gradient(160deg,#0d3129,#061b17);background-size:auto,auto,auto,25% 25%,2
 .ern-external-live strong,.ern-unavailable strong{display:block;font-family:Georgia,serif;font-size:clamp(26px,4vw,44px);font-weight:500;margin-bottom:10px}
 .ern-external-live p,.ern-unavailable p{color:var(--muted);line-height:1.55}
 .ern-external-live a,.ern-unavailable a{display:inline-block;margin-top:10px;padding:10px 15px;border:1px solid rgba(255,255,255,.28);border-radius:999px;color:var(--ink);text-decoration:none}
+
+/* Lightweight visual surfaces: imagery is decorative and never creates extra media players. */
+.card-visual,.window-visual{display:block;position:relative;overflow:hidden;background:#0b2b24;border:1px solid rgba(255,255,255,.06)}
+.card-visual{height:clamp(112px,14vw,180px);border-radius:14px;margin:-8px -8px 14px}
+.window-visual{height:72px;border-radius:12px;margin:-7px -7px 12px}
+.card-visual.has-poster,.window-visual.has-poster{background-size:cover;background-position:center}
+.card-visual.has-poster:after,.window-visual.has-poster:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,14,12,.32),transparent 70%);pointer-events:none}
+.card-visual.poster-earth:before,.card-visual.poster-water:before,.card-visual.poster-wildlife:before,.card-visual.poster-mountain:before,.card-visual.poster-city:before,.window-visual.poster-earth:before,.window-visual.poster-water:before,.window-visual.poster-wildlife:before,.window-visual.poster-mountain:before,.window-visual.poster-city:before{position:absolute;inset:0}
+.window-tile{min-height:224px}
+.destination-card{min-height:310px}
+@media(max-width:760px){.card-visual{height:150px}.window-visual{height:86px}.window-tile{min-height:238px}.destination-card{min-height:300px}}
