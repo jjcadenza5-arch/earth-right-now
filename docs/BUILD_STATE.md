@@ -34,6 +34,8 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- CI follow-up fixed a real destination-model construction bug: preferred-window selection had been evaluated against the pre-normalized place object during object creation. The grouped place is now constructed first, then its current-first preferred window is derived from the completed source list.
+- Preferred-window regression now fails diagnostically rather than through silent console assertions, protecting destination preview wiring from future model-ordering regressions.
 - Destination visual wiring corrected end-to-end: grouped place models now explicitly expose their current-first preferred window, so destination cards can actually inherit the intended safe poster rather than relying on an absent property.
 - Live Right Now now shares the lightweight poster system while retaining its strict-current inventory gate; visual richness cannot admit stale/non-current sources.
 - Added preferred-destination regression coverage to protect current-first selection as the catalog and multi-window destinations expand.
