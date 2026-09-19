@@ -165,3 +165,12 @@
 - History-driven drawer closure can suppress opener focus restoration, avoiding stale focus jumps during browser Back/Forward navigation while normal user-initiated closes still restore focus.
 - Added regression coverage for window-only startup links and mismatched window/place hashes.
 - Full CI is green.
+
+
+## 2026-09-19 — Slow-network and data-saving awareness
+- ERN now distinguishes normal, offline and constrained connections using browser online state plus supported Save-Data/effective-connection signals.
+- Visitors on a very slow or data-saving connection receive a truthful lightweight notice instead of ERN treating every online connection as equivalent.
+- Added a conservative playback-network policy primitive for future provider loading: heavy embedded video can be withheld on constrained connections while ordinary external provider navigation remains available.
+- The current player behavior is not silently changed yet; the policy is staged separately so real-device validation can determine the least surprising UX before it gates playback.
+- Added regression coverage for offline, 2G/slow-2G, Save-Data and normal connections.
+- Full CI is green.
