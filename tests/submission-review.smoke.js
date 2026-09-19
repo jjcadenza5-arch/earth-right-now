@@ -1,0 +1,10 @@
+import { reviewSubmission,submissionCanPublish } from "../src/submission-review.js";
+const pending={status:"PENDING_REVIEW",rightsConfirmed:true,sourceUrl:"https://example.test/cam"};
+console.assert(!submissionCanPublish(pending),"pending submission must never publish");
+console.assert(!reviewSubmission(pending,{decision:"AUTO_APPROVE"}).ok,"automatic/unknown review decisions must fail closed");
+const approved=reviewSubmission(pending,{decision:"APPROVED",reviewedAt:"2026-09-19T06:00:00Z",note:"Rights and source reviewed."});
+console.assert(approved.ok&&submissionCanPublish(approved.record),"human-approved rights-confirmed record can proceed to catalog review");
+const rejected=reviewSubmission(pending,{decision:"REJECTED"});
+console.assert(rejected.ok&&!submissionCanPublish(rejected.record));
+console.assert(!submissionCanPublish({...approved.record,rightsConfirmed:false}),"approval cannot bypass rights confirmation");
+console.log("ERN submission review gate smoke checks passed");
