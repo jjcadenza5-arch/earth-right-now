@@ -674,3 +674,11 @@ Current release posture:
 - Added a second non-repetition boundary after immersive playback eligibility: a Watch Earth journey cannot contain the same underlying media URL twice and cannot repeat the same destination in one rotation.
 - The candidate pool is widened before deduplication so ERN can still fill up to 20 genuinely different playable destinations when inventory permits.
 - This complements the earlier counter/media synchronization fix: sequence positions now represent distinct visible media and distinct places, not merely distinct source records.
+
+
+## Cross-surface visible-window variety — 2026-09-20
+- Generalized the Watch Earth non-repetition lesson into a shared visible-window variety guard.
+- Hero rotation now avoids repeating the same underlying media and rotates one representative window per place, so automatic/Next Live movement feels geographically meaningful.
+- Choose a Window removes duplicate media while still allowing genuinely different camera angles from the same destination.
+- Surprise Me now draws from distinct visible media and distinct places before random selection.
+- Place drawers remain intentionally exempt: multiple genuinely different views of one destination are a core ERN feature.

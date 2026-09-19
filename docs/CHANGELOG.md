@@ -585,3 +585,9 @@
 - Deduplicate immersive journeys by actual media URL and destination.
 - Widen candidate selection before deduplication to preserve journey breadth.
 - Added regression coverage for duplicate media and duplicate-place records.
+
+
+## 2026-09-20 — Extend non-repetition beyond Watch Earth
+- Added shared visible-media deduplication utility.
+- Applied destination-level variety to Hero rotation and Surprise Me.
+- Applied media-level deduplication to Choose a Window while preserving real multi-camera destination choices.
