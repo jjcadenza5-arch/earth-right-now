@@ -500,3 +500,9 @@
 - Added 10 verified provider-hosted live windows across Caribbean beaches, Florida, Dublin, Chicago, Tbilisi and low Earth orbit.
 - Preserved LINK_ONLY for all new EarthCam sources.
 - Did not add Yosemite pending explicit review/acceptance of its webcam usage terms.
+
+
+## 2026-09-19 — Official tourism scenic sources
+- Added five high-trust official tourism/operator destinations across Norway and Switzerland.
+- Conservatively separated real-time live feeds from current/live images; no embed permission inferred.
+- Catalog now contains 49 healthy sources.
