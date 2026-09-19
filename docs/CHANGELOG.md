@@ -252,3 +252,12 @@
 - Added regression coverage for remote-poster failure and generated fallback state.
 - Initial fixture exposed a limitation in the minimal CI DOM shim; the test was corrected to use a portable DOM contract without weakening production behavior.
 - Full CI is green again.
+
+
+## 2026-09-19 — My Earth availability safety + truthful network notice
+- My Earth now preserves unavailable favorite/recent window IDs as private local memory while rendering only currently discoverable windows as actionable cards.
+- Visitors get a concise availability note when saved/recent windows are temporarily unavailable instead of being offered dead playback actions or silently losing their memories.
+- This prepares My Earth for a changing long-lived catalog: source outages/removals do not erase personal history, and personal history does not override current catalog safety.
+- Corrected constrained-network messaging to match current behavior. ERN now warns that embedded live video may use significant data; it no longer claims heavy embeds are automatically withheld before that behavior is actually enabled and real-device validated.
+- Added regression coverage for unavailable My Earth memories and updated the connection-copy contract.
+- Full CI is green.
