@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Large truth-language pass: sourceStatus and trust copy now require strict currentness before present-tense LIVE/CURRENT claims; HEALTHY-but-stale records receive RECHECK DUE instead of a live badge.
+- Destination cards distinguish actionable/available sources from genuinely current windows, so broad Atlas availability cannot masquerade as current conditions.
+- Viewer accessibility announcements now state whether current verification is confirmed; stale external sources announce neutral provider opening rather than current/live language.
+- Media attribution no longer says Live view unconditionally: provider credit is independent from currentness and uses Current source only through the strict gate.
+- External-navigation browser boundary hardened while preserving safe HTTP(S), noopener/noreferrer and cleanup behavior.
+- Added a shared truth-language matrix and regression checks covering stale trust/status, destination semantics and attribution currentness.
 - Large discovery-surface pass: Living Atlas default ordering now prefers strict-current sources, then legal inside-ERN playback, then shared source quality, while retaining its broader actionable-network role.
 - Ordinary Explore search now interprets live/current/now/today as truth filters; current-intent searches cannot return stale matches merely because destination text matches.
 - Atlas renderer hardened for missing mounts/empty clusters and explicit button semantics; Atlas remains actionable without becoming a second Watch Earth.
