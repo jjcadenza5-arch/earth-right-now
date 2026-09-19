@@ -450,3 +450,12 @@
 - A regression-fixture syntax error briefly failed CI during this stage; it was corrected and the full suite returned green.
 - Added/expanded regression coverage for translation fallback masking, precise hygiene counts, local limits and catalog-aware restore.
 - Full CI is green.
+
+
+### 2026-09-19 — Visitor-controlled private continuity
+- Wired the existing bounded session-resume model into My Earth as an explicit visitor-controlled offer.
+- Resume state is recorded only after visitor-activated playable/external windows or an intentionally opened place.
+- Resume offers are freshness-checked and reconciled against current place/source IDs before they appear; retired or expired references fail closed.
+- Dismissal clears the offer, and ERN never auto-plays a window or auto-opens a destination from continuity state.
+- Added UI regression coverage for the privacy and catalog-validity contract.
+- Pull-request CI passed before merge; stable main was updated only after the green check.
