@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "node tests/run-smoke.mjs",
-    "release:status": "node scripts/release-status.mjs"
+    "release:status": "node scripts/release-status.mjs",
+    "release:evidence": "node scripts/evidence-status.mjs"
   },
   "engines": {
     "node": ">=20"
