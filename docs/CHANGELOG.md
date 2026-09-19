@@ -205,3 +205,13 @@
 - No real commercial partner data has been added and no affiliate relationship is implied.
 - Added regression coverage for hidden unverified offers, disclosure, counts and destination filtering.
 - Full CI is green.
+
+
+## 2026-09-19 — Destination-relative nearby discovery
+- Destination drawers now include a Nearby on Earth continuation when the catalog contains other destinations within 300 km.
+- Nearby ranking uses only the selected destination/source coordinates already present in ERN's public catalog; it does not request or infer the visitor's device location.
+- Multi-window destinations use a centroid of their mappable windows, keeping nearby discovery destination-first rather than duplicating camera records.
+- The selected destination is excluded, distant places are bounded out and missing coordinates fail closed with no empty fake recommendations.
+- Nearby cards reuse the existing destination model and open Choose a Window, preserving the destination-first → window-choice flow.
+- Added regression coverage for centroid calculation, distance ordering, radius filtering and no-location behavior.
+- Full CI is green.
