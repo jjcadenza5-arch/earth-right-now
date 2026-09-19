@@ -32,3 +32,14 @@ Use:
 - `npm run release:status` to combine the ledger with the current catalog and print the publication candidate posture.
 
 Only record `ok: true` after the named real-world check has actually been performed. Notes should identify the environment/provider/check performed clearly enough that another maintainer can understand what was validated. Do not convert CI, source-health checks, or inferred behavior into browser/mobile/provider evidence.
+
+
+## Recording a completed real-world check
+
+After actually performing a check, record it with:
+
+`npm run release:record -- <key> <pass|fail> "<what was checked, where, and the result>"`
+
+Example keys are `browser`, `mobile`, `providerPlayback`, `accessibility`, `performance`, and `rollback`.
+
+The command writes a dated evidence object to the ledger. Then run `npm run release:evidence` and `npm run release:status` before committing it. This command is only a recorder; it does not perform or infer the check.
