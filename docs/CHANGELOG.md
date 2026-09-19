@@ -404,3 +404,12 @@
 - Rotation reuses the existing daylight/currentness/playback-aware Hero ordering and the existing Next live path; it does not weaken truth, permission or recency gates.
 - Added isolated rotation policy/controller/copy models and regression coverage.
 - Full CI is green.
+
+
+## 2026-09-19 — Balanced Live Right Now curation
+- Live Right Now now balances verified-current windows across destinations and countries instead of allowing several high-ranked windows from one place to dominate the shelf.
+- The default live shelf permits at most one window per destination and two per country while retaining quality ordering inside those constraints. Choose a Window remains the place for multiple views of the same destination.
+- Added a reusable source-variety health model covering place, country, provider and inside/external mix so future curation can detect concentration without treating diversity as source truth.
+- A test-fixture syntax error briefly failed CI during this stage; it was corrected and the full suite returned green.
+- Added regression coverage for balanced live curation and variety health.
+- Full CI is green.
