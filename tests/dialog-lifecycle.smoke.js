@@ -1,0 +1,10 @@
+import "./test-browser-env.mjs";
+import { createDialogLifecycle } from "../src/dialog-lifecycle.js";
+const dialog=document.createElement("section"),close=document.createElement("button"),next=document.createElement("button");dialog.append(close,next);dialog.hidden=true;
+let restored=0,closed=0;const opener={focus(){restored++}};
+const life=createDialogLifecycle({dialog,initialFocus:close,onClose:()=>{closed++;life.close()}});
+console.assert(life.open({opener})&&dialog.hidden===false&&life.state().open);
+life.onKey({key:"Escape",preventDefault(){}});
+console.assert(closed===1&&dialog.hidden===true&&restored===1,"Escape must close drawer and restore opener");
+life.open({opener});life.close({restoreFocus:false});console.assert(restored===1,"history-driven close can suppress focus restoration when needed");
+console.log("ERN dialog lifecycle smoke checks passed");
