@@ -591,3 +591,9 @@
 - Added shared visible-media deduplication utility.
 - Applied destination-level variety to Hero rotation and Surprise Me.
 - Applied media-level deduplication to Choose a Window while preserving real multi-camera destination choices.
+
+
+## 2026-09-20 — Remember transient playback failures locally
+- Added six-hour browser-local playback failure memory.
+- Recent failed sources are excluded from immersive Watch Earth on the next load, reducing repeated dead windows.
+- Successful playback can clear the local mark; canonical catalog health remains unchanged.

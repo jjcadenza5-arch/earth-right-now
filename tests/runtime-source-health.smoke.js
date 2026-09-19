@@ -1,0 +1,1 @@
+import {runtimeHealthySources} from "../src/runtime-source-health.js";console.assert(runtimeHealthySources([{id:"a"},{id:"b"}]).length===2,"server/test environment without browser storage must fail open");console.log("ERN runtime source health smoke checks passed");

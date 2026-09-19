@@ -682,3 +682,10 @@ Current release posture:
 - Choose a Window removes duplicate media while still allowing genuinely different camera angles from the same destination.
 - Surprise Me now draws from distinct visible media and distinct places before random selection.
 - Place drawers remain intentionally exempt: multiple genuinely different views of one destination are a core ERN feature.
+
+
+## Runtime playback resilience — 2026-09-20
+- Added browser-local short-lived playback failure memory. When an embedded/current-image source actually fails for a visitor, ERN remembers that source locally for up to six hours instead of repeatedly putting it back into the immersive Watch Earth journey on reload.
+- The runtime failure memory stores only source ID, timestamp and failure kind; it is local browser state, not analytics or user profiling.
+- Watch Earth is built from the catalog minus recent local runtime failures. Catalog truth is not rewritten from one visitor's transient failure.
+- A source that remains successfully open clears its local failure mark, allowing recovery without permanent quarantine.
