@@ -1,9 +1,12 @@
 import { placeHref,windowHref,parsePlaceHash,parseWindowHash } from "../src/place-routing.js";
-import { windowShareUrl } from "../src/place-share.js";
+import { windowShareUrl,placeShareUrl } from "../src/place-share.js";
+import { canonicalBase } from "../src/canonical-url.js";
 console.assert(placeHref("a b")==="#place=a%20b");
 console.assert(windowHref("cam 1","beach")==="#window=cam%201&place=beach");
 console.assert(parseWindowHash("#window=cam%201&place=beach")==="cam 1");
 console.assert(parsePlaceHash("#window=cam%201&place=beach")==="beach");
 console.assert(windowShareUrl("cam","p",{origin:"https://ern.test",pathname:"/app"})==="https://ern.test/app#window=cam&place=p");
+console.assert(canonicalBase({origin:"https://ern.test",pathname:"/app"})==="https://ern.test/app");
+console.assert(placeShareUrl("beach",{origin:"https://ern.test",pathname:"/app?utm_source=x"})==="https://ern.test/app#place=beach","share links must not inherit transient query tracking");
 console.assert(parseWindowHash("#window=%E0%A4%A")===null,"malformed encoding must fail closed");
 console.log("ERN window sharing smoke checks passed");
