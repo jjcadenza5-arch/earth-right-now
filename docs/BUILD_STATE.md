@@ -34,6 +34,9 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Added a separate production release-readiness model so a green catalog can never be mistaken for permission to publish.
+- Production readiness now requires explicit evidence for desktop browser, mobile, real provider playback/iframe behavior, accessibility, performance, and rollback readiness in addition to the machine catalog gate.
+- Integration checks default to false and cannot become green through static inspection alone.
 - Revalidated four recovered UNKNOWN sources against current official pages on 2026-09-19: Auckland Viaduct Harbour, Kīlauea Summit, Nossob/Kgalagadi, and Kaikōura Coast.
 - Promoted current health without promoting unproven rights: all remain EXTERNAL/LINK_ONLY unless current embed/display permission is documented.
 - Corrected Kaikōura truth to LIVE_IMAGE because its official operator describes static images updating every five minutes.
