@@ -7,6 +7,6 @@ console.assert(connectionState({online:true,effectiveType:"4g"}).mode==="NORMAL"
 console.assert(!playbackNetworkDecision({playback:"EMBED"},connectionState({online:false})).allow);
 console.assert(!playbackNetworkDecision({playback:"EMBED"},connectionState({online:true,saveData:true})).allow);
 console.assert(playbackNetworkDecision({playback:"EXTERNAL"},connectionState({online:true,saveData:true})).allow);
-console.assert(networkMessage(connectionState({online:true,saveData:true})).includes("avoid starting heavy embedded video"));
+console.assert(networkMessage(connectionState({online:true,saveData:true})).includes("may use significant data"));
 const fake={onLine:true,connection:{effectiveType:"slow-2g",saveData:false}};console.assert(browserConnection({navigatorRef:fake}).constrained);
 console.log("ERN connection policy smoke checks passed");
