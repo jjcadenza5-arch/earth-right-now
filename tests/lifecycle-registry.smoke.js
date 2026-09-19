@@ -1,0 +1,1 @@
+import { lifecycleRegistry } from "../src/lifecycle-registry.js";let n=0;const r=lifecycleRegistry();r.add(()=>n++);const remove=r.add(()=>n+=10);remove();console.assert(r.size()===1);r.stopAll();console.assert(n===1&&r.size()===0);r.stopAll();console.assert(n===1);console.log("ERN lifecycle registry smoke checks passed");
