@@ -15,7 +15,7 @@ export function travelBridgeView(place,{onIntent,offers=[]}={}){
  const actions=element("div",{className:"travel-intents"});
  for(const intent of context.intents){const count=offers.filter(o=>visibleTravelOffer(o)&&o.intent===intent).length,b=element("button",{text:LABELS[intent]+(count?` (${count})`:""),attrs:{"data-travel-intent":intent}});b.onclick=()=>onIntent?.(intent,context);actions.append(b)}
  section.append(actions);
- const visible=offers.map(travelOfferView).filter(Boolean);if(visible.length)section.append(element("div",{className:"travel-offers",attrs:{"aria-label":"Verified travel options"}}),...[]);
+ const visible=offers.map(travelOfferView).filter(Boolean);if(visible.length)section.append(element("div",{className:"travel-offers",attrs:{"aria-label":"Verified travel options"}}));
  const mount=section.querySelector?.(".travel-offers");if(mount)mount.replaceChildren(...visible);
  return section;
 }
