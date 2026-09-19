@@ -1,0 +1,1 @@
+import { continuityPrivacy } from "../src/continuity-privacy.js";const x=continuityPrivacy();console.assert(!x.automaticPlayback&&!x.automaticDrawer&&x.requiresVisitorAction&&x.maximumResumeAgeHours===24);console.log("ERN continuity privacy smoke checks passed");
