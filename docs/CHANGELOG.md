@@ -271,3 +271,12 @@
 - No real partner or affiliate relationship has been added or implied.
 - Added regression coverage for expired verified offers.
 - Full CI is green.
+
+
+## 2026-09-19 — Nearby discovery gains distance context
+- Nearby on Earth now tells visitors approximately how far each suggested destination is from the destination they are currently viewing.
+- Distance remains destination-to-destination catalog geometry; ERN does not request, infer or store the visitor's device location.
+- Human-readable labels adapt from metres to decimal kilometres to rounded longer-distance kilometres, keeping the discovery cards useful without false precision.
+- Destination cards gained an optional contextual label so future discovery surfaces can add meaningful context without forking the card component.
+- Added regression coverage for distance formatting, radius filtering and origin exclusion.
+- Full CI is green.
