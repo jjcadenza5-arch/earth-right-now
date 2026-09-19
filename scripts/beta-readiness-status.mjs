@@ -1,0 +1,10 @@
+import { readFile } from "node:fs/promises";
+import { betaReadiness } from "../src/beta-readiness.js";
+const rows=JSON.parse(await readFile(new URL("../data/sources.json",import.meta.url),"utf8"));
+const evidence=JSON.parse(await readFile(new URL("../data/release-evidence.json",import.meta.url),"utf8"));
+const r=betaReadiness(rows,evidence);
+console.log(`ERN beta readiness: ${r.score}%`);
+console.log(`Sources: ${r.metrics.sources} · Countries: ${r.metrics.countries} · Providers: ${r.metrics.providers} · Inside ERN: ${r.metrics.insideERN} · External: ${r.metrics.external}`);
+console.log(`Evidence passed: ${r.passedEvidence.join(", ")||"none"}`);
+console.log(`Evidence remaining: ${r.remainingEvidence.join(", ")||"none"}`);
+console.log(r.note);
