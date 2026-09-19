@@ -494,3 +494,9 @@
 - Hero and Live Right Now ordering now consider current light conditions after source truth/currentness gates.
 - Sunrise/sunset scoring is deliberately treated as a ranking signal, not a weather/visibility claim.
 - Added smoke coverage for equinox noon, sunrise, sunset and beautiful-now ranking.
+
+
+## 2026-09-19 — Scenic world expansion
+- Added 10 verified provider-hosted live windows across Caribbean beaches, Florida, Dublin, Chicago, Tbilisi and low Earth orbit.
+- Preserved LINK_ONLY for all new EarthCam sources.
+- Did not add Yosemite pending explicit review/acceptance of its webcam usage terms.
