@@ -15,4 +15,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm test
+      - name: Run ERN smoke suite
+        id: smoke
+        run: npm test
+      - name: Publish smoke failure summary
+        if: failure() && steps.smoke.outcome == 'failure'
+        run: |
+          echo "## ERN smoke suite failed" >> "$GITHUB_STEP_SUMMARY"
+          echo "The npm test step above reports each failing *.smoke.js filename and exit code." >> "$GITHUB_STEP_SUMMARY"
+          echo "Re-run locally with: npm test" >> "$GITHUB_STEP_SUMMARY"
