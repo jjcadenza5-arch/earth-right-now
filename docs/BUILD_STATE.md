@@ -622,3 +622,11 @@ Current release posture:
 - The engine only uses verified-current sources and ranks each light lane by Beautiful Right Now scoring.
 - Language is intentionally conservative: “Near sunrise locally” / “Near sunset locally” describe solar geometry only. ERN explicitly does not claim clear weather or that a sunrise/sunset is visible in the camera.
 - This turns the earlier hidden solar-ranking foundation into a visitor-facing living-Earth experience without compromising source truth.
+
+
+## AI/search discovery foundation — 2026-09-19
+- Added public robots.txt with explicit OAI-SearchBot access plus general crawl access, following current OpenAI publisher guidance.
+- Added sitemap.xml for the canonical public beta root. Hash-based UI states are intentionally not listed as fake crawlable pages.
+- Added canonical URL, crawlable description, Open Graph identity and JSON-LD WebSite metadata to the public shell.
+- Structured metadata describes ERN itself; it does not claim ownership of third-party camera feeds or invent live status.
+- This improves machine readability/discovery eligibility but does not guarantee inclusion or ranking in ChatGPT, Google or other search systems.
