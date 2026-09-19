@@ -34,6 +34,9 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Catalog identity follow-up: public source/place IDs are now validated as normalized lowercase stable identifiers because they are durable keys for favorites, recents, share hashes, deep links and player history.
+- Duplicate source IDs are now protected case-insensitively in the catalog guard, closing a subtle collision path that URL deduplication alone cannot cover.
+- Added stable-identifier documentation and regression coverage; display titles remain multilingual and independent from machine IDs.
 - Large curation-consistency pass: Choose a Window now ranks strict-current sources before inside-ERN playback and shared source score, preventing high-quality stale windows from occupying the first choice.
 - Hero primary action copy now delegates to unified playback capability instead of maintaining separate live/current wording logic.
 - Earth Happening Now now delegates currentness to the shared currentSource gate; editorial moment ranking prefers current eligible sources before moment/quality scoring.
