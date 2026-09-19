@@ -421,3 +421,13 @@
 - Added a small lifecycle registry and wired the long-session freshness clock, Hero rotation and network observer into page-exit cleanup. Long-lived tabs no longer leave these ERN-owned timers/listeners running after pagehide.
 - Added regression coverage for connection-aware labels and lifecycle cleanup.
 - Full CI is green.
+
+
+## 2026-09-19 — Private continuity foundation
+- Extended the staged session-resume work with a safe opt-in resume-offer model. A resume is offered only when the stored record is already valid/fresh and still points to a destination or source in the current catalog.
+- Retired catalog references fail closed instead of reopening stale destinations.
+- Added a bounded recent-continuity model for My Earth, keeping recent places/windows useful without turning history into an endless feed.
+- Formalized the continuity privacy boundary: ERN may offer a local resume action, but it must not auto-play media or automatically reopen a destination. Visitor action remains required.
+- Automatic resume is still intentionally not wired into the production UI; this stage prepares the contract without crossing the real-browser validation boundary.
+- Added regression coverage for resume offers, recent continuity and the privacy boundary.
+- Full CI is green.
