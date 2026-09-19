@@ -1,6 +1,6 @@
 import { buildReleaseCandidate,releaseCandidateText } from "../src/release-candidate.js";
 const now="2026-09-19T12:00:00.000Z";
-const base={id:"inside",placeId:"p",title:"Inside",truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",health:"HEALTHY",playback:"EMBED",sourceUrl:"https://example.test",embedUrl:"https://example.test/embed",checkedAt:now,lastSuccessfulCheck:now};
+const base={id:"inside",placeId:"p",title:"Inside",truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",health:"HEALTHY",playback:"EMBED",sourceUrl:"https://example.test",embedUrl:"https://www.youtube.com/embed/ern-test",checkedAt:now,lastSuccessfulCheck:now};
 const evidence=Object.fromEntries(["browser","mobile","providerPlayback","accessibility","performance","rollback"].map(key=>[key,{ok:true,note:key+" checked",checkedAt:now}]));
 const c=buildReleaseCandidate([base],evidence,{now:Date.parse(now)});
 console.assert(c.releasable===true,`fully current catalog plus fresh evidence should form a releasable candidate: ${JSON.stringify(c)}`);
