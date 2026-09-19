@@ -17,7 +17,14 @@ jobs:
           node-version: 20
       - name: Run ERN smoke suite
         id: smoke
-        run: npm test
+        run: npm test 2>&1 | tee smoke-output.txt
+      - name: Upload smoke diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ern-smoke-diagnostics
+          path: smoke-output.txt
+          retention-days: 3
       - name: Publish smoke failure summary
         if: failure() && steps.smoke.outcome == 'failure'
         run: |
