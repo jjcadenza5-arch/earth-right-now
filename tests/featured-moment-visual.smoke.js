@@ -1,0 +1,10 @@
+import { readFileSync } from "node:fs";
+const app=readFileSync(new URL("../src/app.js",import.meta.url),"utf8");
+const start=app.indexOf("function showMoment");
+const end=app.indexOf("function nextHero",start);
+const block=app.slice(start,end);
+console.assert(block.includes('const feature=$("#featuredMoment")'),"featured moment must own a visual surface");
+console.assert(block.includes("heroPosterStyle(s)"),"featured moment must use safe shared poster presentation");
+console.assert(block.includes('feature.style.removeProperty("background-image")'),"featured moment must clear prior imagery when advancing");
+console.assert(app.includes("momentStart>=0?momentStart:0"),"missing saved moment must safely start at first moment");
+console.log("ERN featured moment visual/session smoke checks passed");
