@@ -1,0 +1,12 @@
+import { evidenceExpiry,releaseEvidenceSummary } from "../src/release-evidence.js";
+const now=Date.parse("2026-09-19T12:00:00.000Z");
+const fresh=evidenceExpiry("2026-09-18T12:00:00.000Z",{now});
+console.assert(fresh.valid&&!fresh.expired&&fresh.remainingMs>0,"fresh evidence must expose remaining validity");
+const old=evidenceExpiry("2026-08-01T12:00:00.000Z",{now});
+console.assert(old.expired&&old.remainingMs===0,"expired evidence must not retain validity");
+const bad=evidenceExpiry("not-a-date",{now});
+console.assert(!bad.valid&&bad.expired&&bad.expiresAt===null,"invalid evidence timestamps must fail closed");
+const summary=releaseEvidenceSummary([],{},{now});
+console.assert(summary.ready===false&&summary.remaining.length===6,"empty real-world evidence must remain visibly incomplete");
+console.assert(summary.blockers.includes("catalog"),"catalog readiness remains an independent publication blocker");
+console.log("ERN release evidence expiry/summary smoke checks passed");
