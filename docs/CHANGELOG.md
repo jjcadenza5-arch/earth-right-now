@@ -121,3 +121,12 @@
 - Rights confirmation remains necessary but is not treated as proof of embed/republication permission; provider/source verification remains a separate catalog step.
 - Added regression coverage for private-network rejection, review decisions, rights preservation and no-auto-promotion behavior.
 - Full CI is green.
+
+
+## 2026-09-19 — Destination-first search and ERN AI
+- Explore search now returns destinations rather than duplicate camera/source cards. Multiple matching windows remain available behind Choose a Window.
+- ERN AI intent results now preserve its source-level relevance ranking internally but present the visitor with destination context first.
+- A query such as a beach/location intent can therefore identify one place once even when several cameras match, reducing visual repetition without discarding view choice.
+- Playback-specific surfaces remain window-first; this change is intentionally limited to discovery surfaces.
+- Added regression coverage for duplicate-window collapse and intent-ranked destination results.
+- Full CI is green.
