@@ -1,4 +1,4 @@
-export function businessReadiness({travelBridge=true,disclosures=true,offerVerification=true,submissionValidation=true,submissionTransport=false,affiliateInventory=false,partnerReviewWorkflow=false}={}){
+export function businessReadiness({travelBridge=true,disclosures=true,offerVerification=true,submissionValidation=true,submissionTransport=false,affiliateInventory=false,partnerReviewWorkflow=true}={}){
  const checks={travelBridge,disclosures,offerVerification,submissionValidation,submissionTransport,affiliateInventory,partnerReviewWorkflow};
  const foundational=["travelBridge","disclosures","offerVerification","submissionValidation"],activation=["submissionTransport","affiliateInventory","partnerReviewWorkflow"];
  const passed=Object.entries(checks).filter(([,v])=>v).map(([k])=>k);
