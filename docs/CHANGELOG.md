@@ -149,3 +149,11 @@
 - Corrected the immersive viewer Share accessible name to “Share this window,” matching the new exact-window share behavior.
 - Added regression coverage for unknown events, search-text exclusion and coordinate exclusion.
 - Full CI is green.
+
+
+## 2026-09-19 — Accessible destination and Atlas drawers
+- Destination Choose a Window and Living Atlas cluster drawers now have labelled modal-dialog semantics.
+- Added reusable drawer lifecycle handling for initial focus, Tab containment, Shift+Tab wrapping, Escape-to-close and opener focus restoration.
+- Discovery drawer lifecycle remains separate from the immersive player's media lifecycle, preserving ERN's one-player architecture.
+- Added regression coverage for opening, Escape closing, focus restoration and optional restoration suppression.
+- Full CI is green; deployed keyboard testing is still required before accessibility evidence can be marked passed.
