@@ -549,3 +549,10 @@ Current release posture:
 - GitHub-built release manifests now stamp the candidate commit SHA directly.
 - Business activation has provider-neutral submission/affiliate adapter contracts and a source-first review workflow, while real transmission and affiliate inventory remain disabled.
 - Publication remains fail-closed pending the six real-world checks; no CI result has been converted into browser/provider evidence.
+
+
+## Beautiful-now curation — 2026-09-19
+- Added a stronger New York Harbor destination set using provider-hosted EarthCam live views from Jersey City and the Statue of Liberty; all remain LINK_ONLY / EXTERNAL.
+- Added Hida-Takayama as a multi-window destination with a provider-hosted live stream plus refreshed current images.
+- Withheld the existing CouchTourist Manhattan skyline embed from HEALTHY promotion after beta feedback that it appeared unusually still; provider still labels it live, but ERN now requires a motion/currentness recheck before promoting it again.
+- This stage strengthens the future time-aware “beautiful right now” direction without weakening source truth or permission rules.
