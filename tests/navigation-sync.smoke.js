@@ -7,4 +7,5 @@ console.assert(syncPlaceNavigation({hash:"#place=chiang-mai",places,openPlace:(i
 console.assert(opened.id==="chiang-mai"&&opened.opts.writeHistory===false&&opened.opts.recordRecent===false,"history navigation must not create another history entry or recent visit");
 syncPlaceNavigation({hash:"",places,openPlace:()=>false,closePlace:opts=>{closed++;console.assert(opts.writeHistory===false);return true}});
 console.assert(closed===1,"clearing a place hash should close the drawer");
+const registry=new Map([["cam",{id:"cam",placeId:"wil"}]]);let windowOpened=null;console.assert(syncPlaceNavigation({hash:"#window=cam&place=wil",places,registry,openPlace:()=>true,openWindow:(s,opts)=>{windowOpened={s,opts};return true},closePlace:()=>true}));console.assert(windowOpened.s.id==="cam"&&windowOpened.opts.surface==="shared-window","shared window deep link must restore exact source");
 console.log("ERN navigation sync smoke checks passed");
