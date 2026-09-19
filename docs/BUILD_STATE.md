@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Continued mature-Hero visual fidelity: centralized safe poster selection/style, rejected unsafe thumbnail schemes before CSS use, preserved generated category fallbacks, and explicitly prevented imagery from affecting source truth/eligibility.
+- Strengthened the camera-first Hero hierarchy and keyboard focus visibility without reintroducing the discarded generic Fresh stacked-page redesign.
+- Documented the canonical target as the mature 4:23 PM experience + later immersive viewer behavior + Fresh truth architecture underneath; prototype/browser screenshots are forbidden as production imagery.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Hardened the catalog/cache boundary: runtime source-registry fetches now use the centralized `catalogRequestPolicy()` with `cache: no-store` and same-origin credentials instead of duplicating fetch policy.
 - Explicitly deferred service-worker installation: ERN source truth must not be hidden behind a stale application cache; any future service worker must keep `/data/sources.json` network-first/no-store and third-party media provider-controlled.
 - Added an injectable fetch reference to catalog loading for deterministic policy tests without changing production behavior.
