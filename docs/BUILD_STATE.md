@@ -34,6 +34,12 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Large release-control pass: catalog readiness now delegates strict currentness to the same shared currentSource gate used by visitor-facing surfaces, eliminating a separate HEALTHY+recency interpretation.
+- Publication readiness no longer accepts legacy true/false claims as evidence. Browser/mobile/provider/accessibility/performance/rollback checks require dated notes and expire after 14 days, so old tests cannot certify current provider behavior.
+- Operations report now exposes catalog readiness and publication readiness separately, including the evidence state that blocks release.
+- Catalog health summary now distinguishes all inside-ERN-capable sources from strict-current inside-ERN inventory.
+- Revalidation queue now surfaces multiple reasons and prioritizes UNKNOWN permission as an explicit rights/trust task; operations output includes permission alongside playback.
+- Added release-evidence and strict-current catalog regression checks plus an auditable release-evidence contract.
 - Large mature-UI fidelity pass: restored canonical Hero primary action sequence (Watch live → Watch Earth → My Earth → Explore → Next live), while retaining Surprise me as visually secondary discovery delight rather than interrupting the recovered 4:23 PM journey.
 - Immersive viewer layout refined toward the recovered later prototype behavior: media remains dominant, black letterboxing handles provider aspect ratios, story/place context is secondary, controls stay reachable, and mobile remains one-player rather than spawning local duplicate players.
 - Choose a Window / Live Right Now activation hardened so disabled/unavailable entries cannot invoke source actions through programmatic click handlers.
