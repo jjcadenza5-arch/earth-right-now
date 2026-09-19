@@ -34,6 +34,9 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Visual restoration continued into destination discovery: place cards now inherit a safe preferred-window poster when legitimate imagery exists, with the same generated fallback semantics used elsewhere.
+- Added actual lightweight visual geometry for source cards, destination cards and Choose a Window tiles; these remain decorative poster surfaces and never instantiate additional iframe/video/image-refresh players.
+- Mobile visual sizing and destination/window card proportions were refined while preserving horizontal browsing and one-player playback.
 - Visual-surface foundation advanced: Hero, source cards and Choose a Window can now share one safe poster presentation model instead of inventing separate imagery behavior.
 - Legitimate HTTP(S) thumbnail imagery is used when explicitly supplied; missing/unsafe imagery falls back to restrained category-generated Earth surfaces and is marked as generated rather than masquerading as current camera media.
 - Choose a Window tiles and source cards now have lightweight visual mounts without loading additional live players, preserving the one-player/performance rule; disabled source actions remain inert.
