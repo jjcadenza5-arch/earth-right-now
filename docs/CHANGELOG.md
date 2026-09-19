@@ -324,3 +324,11 @@
 - The freshness clock does no presentation work while the tab is hidden and does not create media players.
 - Added regression coverage for My Earth status precedence, repeated drawer lifecycle/refocus and long-session freshness behavior.
 - A temporary CI failure exposed a DOM-shim assumption in the new My Earth status helper; the helper was hardened to use explicit data attributes and the full suite returned green.
+
+
+## 2026-09-19 — Visitor-facing privacy disclosure
+- Added a quiet, collapsed Privacy by default disclosure in the site footer, generated from ERN's existing privacy policy model rather than duplicating policy copy in HTML.
+- Visitors can now see that My Earth remains browser-local unless exported, telemetry is off unless deliberately configured, sensitive fields are excluded from telemetry, and third-party providers may apply their own privacy policies.
+- The disclosure does not add a modal, tracking consent layer or navigation interruption; camera/Earth content remains the primary experience.
+- Added regression coverage for the visitor-facing privacy summary.
+- Full CI is green.
