@@ -33,3 +33,11 @@
 - Updated stale test fixtures to obey current provider allowlists, source currentness and Watch Earth eligibility.
 - Restored the complete 163-test smoke suite to green on main.
 - Added `npm run release:status` as a report-only publication-candidate check; real-world release evidence remains mandatory.
+
+
+## 2026-09-19 — Living Atlas destination-first discovery
+- Living Atlas search/results now group multiple camera windows under their destination instead of presenting duplicate source cards as separate places.
+- Atlas map pins remain source-aware, while the accompanying browse surface opens the existing destination drawer and Choose a Window journey.
+- Atlas Current and inside-ERN filters now use the same strict currentness and playback policy as the rest of ERN rather than approximate health/permission checks.
+- Added regression coverage for destination grouping, search deduplication, strict-current filtering and current inside-ERN playback.
+- Full CI remains green after the Atlas integration.
