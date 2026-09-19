@@ -567,3 +567,9 @@
 - Added structured SURPRISE, DIFFERENT, LIVE_NOW and SEARCH guide actions.
 - Fixed broad live-now requests so they return verified-current sources.
 - Connected surprise and different-place follow-ups to real ERN navigation/playback behavior.
+
+
+## 2026-09-20 — Fix repeated Watch Earth popup media
+- Fixed counter/media drift where external-only journey entries advanced 2/20, 12/20, etc. while the old embedded stream remained visible.
+- Immersive Watch Earth now sequences only sources that can actually replace the in-ERN player.
+- Added session guard and regression smoke coverage.
