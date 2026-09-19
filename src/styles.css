@@ -65,3 +65,7 @@ linear-gradient(160deg,#0d3129,#061b17);background-size:auto,auto,auto,25% 25%,2
 .featured-moment.has-poster:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,16,13,.82),rgba(3,16,13,.08) 72%);pointer-events:none}
 .featured-moment.has-poster>*{position:relative;z-index:1}
 @media(max-width:760px){.window-visual,.live-window-visual{height:112px}.featured-moment{min-height:360px}}
+
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+button:disabled{cursor:not-allowed;opacity:.55}
+@media(prefers-contrast:more){:root{--muted:#d8e2dc;--line:#78988d}.card,.atlas-stage,.place-drawer{border-color:rgba(255,255,255,.32)}}
