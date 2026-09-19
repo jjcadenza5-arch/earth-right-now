@@ -1,6 +1,6 @@
 # ERN Build State
 
-## CURRENT STATE — 2026-09-18
+## CURRENT STATE — 2026-09-19
 **Phase: Clean Master foundation → experience restoration**
 
 Completed:
@@ -17,6 +17,16 @@ Completed:
 - Watch Earth now selects through the shared registry/selection engine.
 
 Additional completed stages:
+- Visitor-facing verification freshness now extends into the immersive viewer, so the exact window being watched carries its latest ERN check age alongside truth/status badges.
+- Verification age copy switches from hours to days after 48 hours, reducing false precision while preserving recheck/expired warnings.
+- Hero remote imagery now uses an explicit eager/high-priority image lifecycle with generated fallback on load failure; discovery imagery remains lazy.
+- ERN AI has guided intent suggestions that feed the existing ranking pipeline and suppress current/live suggestions when no verified-current inventory exists.
+- Destination-relative Nearby on Earth cards now show approximate catalog-to-catalog distance without requesting visitor geolocation.
+- Destination and exact-window share links are canonicalized and strip transient query/tracking state.
+- Travel-partner offers now carry expiring verification; missing, unverified or expired commercial options fail closed and are not rendered.
+- My Earth renders only currently actionable saved/recent windows while retaining unavailable memories locally rather than presenting dead playback actions.
+- Slow/data-saving connection copy is conservative and no longer claims automatic heavy-media suppression before that policy is actually enforced.
+- Remote discovery poster failures recover to generated ERN artwork without changing source truth, health or playback status.
 - Multi-window destination drawer: visitors can choose among cameras without leaving browsing context.
 - Deep-linkable place routing foundation (#place=...).
 - Ranked Beautiful/Interesting/Useful/Happening Now moments engine.
