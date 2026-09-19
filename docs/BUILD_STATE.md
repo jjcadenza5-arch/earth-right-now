@@ -44,6 +44,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Watch Earth lifecycle pass: journey autoplay now uses one sequential timeout instead of interval ticks, suspends while the tab is hidden, and resumes without skipping ahead.
+- Closing the immersive viewer or manually choosing Previous/Next now pauses Watch Earth first, preventing the journey timer from changing the visitor's chosen window afterward.
+- Watch Earth stops cleanly when a source cannot be opened rather than racing through subsequent sources or advancing its index falsely.
+- Visibility listener is now registered in the shared lifecycle registry and removed during teardown, avoiding duplicate listeners in future app remount/test scenarios.
+- Added Watch Earth lifecycle regression contract and documented the calm guided-journey invariants.
 - CI returned green after the destination preferred-window/syntax repair: the full dependency-free smoke suite is passing again on main. Diagnostic artifact retention remains in place for future regressions.
 - CI follow-up fixed a real destination-model construction bug: preferred-window selection had been evaluated against the pre-normalized place object during object creation. The grouped place is now constructed first, then its current-first preferred window is derived from the completed source list.
 - Preferred-window regression now fails diagnostically rather than through silent console assertions, protecting destination preview wiring from future model-ordering regressions.
