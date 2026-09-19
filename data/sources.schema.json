@@ -14,13 +14,16 @@
   ],
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "placeId": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "provider": {
       "type": "string"
@@ -50,8 +53,10 @@
     "categories": {
       "type": "array",
       "items": {
-        "type": "string"
-      }
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
     },
     "truth": {
       "enum": [
@@ -114,13 +119,15 @@
       "type": [
         "string",
         "null"
-      ]
+      ],
+      "format": "date-time"
     },
     "lastSuccessfulCheck": {
       "type": [
         "string",
         "null"
-      ]
+      ],
+      "format": "date-time"
     },
     "failureReason": {
       "type": [
@@ -154,7 +161,8 @@
       "type": [
         "string",
         "null"
-      ]
+      ],
+      "minLength": 1
     },
     "moment": {
       "type": [
@@ -180,8 +188,10 @@
     "aliases": {
       "type": "array",
       "items": {
-        "type": "string"
-      }
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
     }
   },
   "additionalProperties": true,
