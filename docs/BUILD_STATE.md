@@ -34,6 +34,7 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- CI returned green after the destination preferred-window/syntax repair: the full dependency-free smoke suite is passing again on main. Diagnostic artifact retention remains in place for future regressions.
 - CI follow-up fixed a real destination-model construction bug: preferred-window selection had been evaluated against the pre-normalized place object during object creation. The grouped place is now constructed first, then its current-first preferred window is derived from the completed source list.
 - Preferred-window regression now fails diagnostically rather than through silent console assertions, protecting destination preview wiring from future model-ordering regressions.
 - Destination visual wiring corrected end-to-end: grouped place models now explicitly expose their current-first preferred window, so destination cards can actually inherit the intended safe poster rather than relying on an absent property.
