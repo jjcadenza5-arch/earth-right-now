@@ -6,6 +6,6 @@ const life=createDialogLifecycle({dialog,initialFocus:close,onClose:()=>{closed+
 console.assert(life.open({opener})&&dialog.hidden===false&&life.state().open);
 life.onKey({key:"Escape",preventDefault(){}});
 console.assert(closed===1&&dialog.hidden===true&&restored===1,"Escape must close drawer and restore opener");
-life.open({opener});console.assert(life.open({opener:{focus(){throw new Error("replacement must not steal original opener")}}})===false,"reusing an open destination drawer must preserve one dialog lifecycle");life.onKey({key:"Escape",preventDefault(){}});console.assert(restored===2&&closed===2,"same-dialog destination replacement must still close to original opener");
+life.open({opener});console.assert(life.open({opener:{focus(){throw new Error("replacement must not steal original opener")}}})===false,"reusing an open destination drawer must preserve one dialog lifecycle");console.assert(life.refocus()===true,"open drawer can safely refocus after replacing its content");life.onKey({key:"Escape",preventDefault(){}});console.assert(restored===2&&closed===2,"same-dialog destination replacement must still close to original opener");
 life.open({opener});life.close({restoreFocus:false});console.assert(restored===2,"history-driven close can suppress focus restoration when needed");
 console.log("ERN dialog lifecycle smoke checks passed");
