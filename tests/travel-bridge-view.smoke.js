@@ -2,7 +2,7 @@ import "./test-browser-env.mjs";
 import { travelBridgeView,travelIntentMessage } from "../src/travel-bridge-view.js";
 const place={id:"cm",title:"Chiang Mai",region:"Chiang Mai",country:"Thailand",lat:18.7,lon:98.9};
 let seen=null;const view=travelBridgeView(place,{onIntent:(intent,ctx)=>seen={intent,ctx}});
-console.assert(!view.hidden&&view.querySelectorAll("button").length===4,"ready destination should expose four planning intents");
+console.assert(!view.hidden&&view.querySelectorAll("button").length===6,"ready destination should expose six planning intents");
 view.querySelector("button").onclick();
 console.assert(seen.intent==="stay"&&seen.ctx.placeId==="cm","travel intent must preserve destination context");
 console.assert(travelIntentMessage("stay",place).includes("not connected yet"),"unconnected travel intent must be explicit");

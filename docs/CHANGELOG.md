@@ -506,3 +506,9 @@
 - Added five high-trust official tourism/operator destinations across Norway and Switzerland.
 - Conservatively separated real-time live feeds from current/live images; no embed permission inferred.
 - Catalog now contains 49 healthy sources.
+
+
+## 2026-09-19 — Around This Window
+- Expanded destination travel intents to stay, eat, transport, activities, culture and practical nearby services.
+- Updated visitor-facing copy to keep Earth first and commerce secondary.
+- Added smoke coverage ensuring unsupported commercial categories fail closed.
