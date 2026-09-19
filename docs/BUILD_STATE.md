@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Journey-continuity pass: Watch Earth now uses sequential timeout scheduling rather than an always-running interval, suspends advancement while the tab is hidden, and resumes with the same configured pace.
+- Watch Earth stores its current index/source in session memory and resumes the visitor's journey position instead of always restarting at the first camera.
+- Hero rotation now explicitly keeps strict-current inventory ahead of stale inventory and only then prefers legal inside-ERN playback; daylight remains presentation preference rather than a truth override.
+- Surprise Me retains current-first / inside-ERN preference and now bounds injected randomness so edge values cannot create invalid selection indexes.
+- Added journey continuity documentation and regression contracts for hidden-tab Watch Earth behavior, Hero currentness and Surprise boundaries.
 - Runtime playback recovery is now connected end-to-end rather than only modeled: media adapter → generation-safe player session → PlaybackController → legal fallback → same immersive viewer.
 - Allowed iframe playback now has bounded load/error signaling; repeated refreshed-image failures also signal the session. Stale callbacks from destroyed media generations cannot alter the current player.
 - App-level player session routes a failure only when both source ID and playback mode still match, preventing a late provider event from knocking a newer source into fallback.
