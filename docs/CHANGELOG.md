@@ -343,3 +343,12 @@
 - Watch Earth and shared-window/deep-link activation use the same connection-aware source-action path as cards and Hero controls.
 - Added regression coverage for destination result truth, current-aware empty states, constrained source actions and offline activation.
 - Full CI is green.
+
+
+## 2026-09-19 — Playback feedback and prioritized source maintenance
+- Visitor source activation now produces concise accessible feedback for inside-ERN playback, official-provider navigation, offline unavailability and data-saving fallback, reducing ambiguity when a click intentionally opens externally or cannot proceed.
+- Data-saving fallback explicitly explains that ERN is opening the official provider instead of embedded video; offline activation explicitly reports that the window cannot be opened.
+- Added a deterministic source-recheck priority model so maintenance work is ordered by verification age, degraded/unknown health, direct-live importance and high-value source quality rather than raw catalog order.
+- Publication inventory now exposes its recheck IDs in priority order while preserving the same fail-closed currentness rules.
+- Added regression coverage for playback feedback and recheck prioritization.
+- Full CI is green.
