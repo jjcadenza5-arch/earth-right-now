@@ -81,3 +81,5 @@ button:disabled{cursor:not-allowed;opacity:.55}
 .hero-media{position:relative;overflow:hidden}.hero-poster-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}.hero-shade,.hero-copy{position:relative;z-index:1}
 
 .ai-suggestions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.ai-suggestions button{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:7px 10px;cursor:pointer}.ai-suggestions button:hover,.ai-suggestions button:focus-visible{color:var(--ink);border-color:rgba(255,255,255,.42)}
+
+.viewer-freshness{font-size:10px;letter-spacing:.08em;opacity:.72;margin-left:auto;white-space:nowrap}@media(max-width:640px){.viewer-freshness{width:100%;margin-left:0}}
