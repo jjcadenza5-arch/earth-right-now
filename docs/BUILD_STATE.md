@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Hardened the catalog/cache boundary: runtime source-registry fetches now use the centralized `catalogRequestPolicy()` with `cache: no-store` and same-origin credentials instead of duplicating fetch policy.
+- Explicitly deferred service-worker installation: ERN source truth must not be hidden behind a stale application cache; any future service worker must keep `/data/sources.json` network-first/no-store and third-party media provider-controlled.
+- Added an injectable fetch reference to catalog loading for deterministic policy tests without changing production behavior.
+- Offline/browser connectivity remains separate from provider health; cached data may never silently upgrade source truth.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Hardened immersive-viewer accessibility without changing the mature visual baseline: viewer is now a modal dialog, focusable for empty-control fallback, and exposes source/state context to assistive technology.
 - Previous/Next synchronize native disabled state with `aria-disabled`; favorite synchronizes accessible name and `aria-pressed`; Full screen and Share have explicit accessible names.
 - Existing keyboard model verified: Escape uses the canonical Close path, Arrow Left/Right are viewer-scoped, shortcuts do not hijack editable fields, and reduced-motion CSS already disables transitions/animations.
