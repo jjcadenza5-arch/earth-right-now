@@ -1,5 +1,5 @@
 import { balancedLiveWindows } from "./balanced-live-windows.js";import { buildLocalTaste,tasteScore } from "./local-taste.js";import { loadFavorites } from "./favorites.js";import { loadFavoritePlaces } from "./place-favorites.js";import { loadRecentWindows } from "./recent-windows.js";import { loadRecentPlaces } from "./recent-places.js";
-export function currentLocalTaste(sources,places=[]){return buildLocalTaste({sources,places,favoriteWindowIds:[...loadFavorites()],favoritePlaceIds:[...loadFavoritePlaces()],recentWindowIds:loadRecentWindows(),recentPlaceIds:loadRecentPlaces()})}
+export function currentLocalTaste(sources,places=[]){if(typeof localStorage==="undefined")return{signals:0,categories:new Map(),countries:new Map(),places:new Map()};return buildLocalTaste({sources,places,favoriteWindowIds:[...loadFavorites()],favoritePlaceIds:[...loadFavoritePlaces()],recentWindowIds:loadRecentWindows(),recentPlaceIds:loadRecentPlaces()})}
 export function personalizedLiveItems(sources,{places=[],limit=8,now=new Date(),taste=null}={}){
  const base=balancedLiveWindows(sources,{limit:Math.max(limit*3,limit),now});if(!base.length)return[];
  const local=taste||currentLocalTaste(sources,places);if(!local.signals)return base.slice(0,limit);
