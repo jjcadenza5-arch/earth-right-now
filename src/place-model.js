@@ -10,7 +10,7 @@ export function groupByPlace(sources){
     if(!map.has(key))map.set(key,{id:key,title:s.title,country:s.country,region:s.region,lat:s.lat,lon:s.lon,categories:new Set(),sources:[]});
     const p=map.get(key);p.sources.push(s);for(const c of s.categories||[])p.categories.add(c);
   }
-  return[...map.values()].map(p=>({...p,categories:[...p.categories],preferred:bestWindow(p)}));
+  return[...map.values()].map(p=>{const place={...p,categories:[...p.categories]};return{...place,preferred:bestWindow(place)}});
 }
 
 export function bestWindow(place){
