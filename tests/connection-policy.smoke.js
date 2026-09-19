@@ -1,0 +1,12 @@
+import { connectionState,browserConnection,playbackNetworkDecision } from "../src/connection-policy.js";
+import { networkMessage } from "../src/network-resilience.js";
+console.assert(connectionState({online:false}).mode==="OFFLINE");
+console.assert(connectionState({online:true,effectiveType:"2g"}).mode==="CONSTRAINED");
+console.assert(connectionState({online:true,saveData:true}).constrained);
+console.assert(connectionState({online:true,effectiveType:"4g"}).mode==="NORMAL");
+console.assert(!playbackNetworkDecision({playback:"EMBED"},connectionState({online:false})).allow);
+console.assert(!playbackNetworkDecision({playback:"EMBED"},connectionState({online:true,saveData:true})).allow);
+console.assert(playbackNetworkDecision({playback:"EXTERNAL"},connectionState({online:true,saveData:true})).allow);
+console.assert(networkMessage(connectionState({online:true,saveData:true})).includes("avoid starting heavy embedded video"));
+const fake={onLine:true,connection:{effectiveType:"slow-2g",saveData:false}};console.assert(browserConnection({navigatorRef:fake}).constrained);
+console.log("ERN connection policy smoke checks passed");
