@@ -1,0 +1,1 @@
+import fs from "node:fs";const x=fs.readFileSync(new URL("../src/playback-adapters.js",import.meta.url),"utf8");console.assert(x.includes('source.title||"Earth Right Now live source"'));console.assert(x.includes('source.title||"Earth Right Now current view"'));console.log("ERN playback label smoke checks passed");
