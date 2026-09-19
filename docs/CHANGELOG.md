@@ -530,3 +530,9 @@
 - Added bounded local-taste affinity to ERN AI ranking and destination discovery.
 - Connected live browser favorites/recent activity to ERN AI at query time.
 - Added tests proving identical broad requests can personalize differently while explicit intent still wins.
+
+
+## 2026-09-19 — ERN Earth Guide
+- Added conversational response and follow-up suggestion model around ERN AI discovery.
+- Connected guide responses to the existing AI bar without adding a generic floating chatbot.
+- Empty/current responses preserve source-truth language.
