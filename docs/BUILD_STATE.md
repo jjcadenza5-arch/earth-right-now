@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Centralized immersive-viewer teardown into one lifecycle used by both the Close button and programmatic player closes: journey pause, adapter/session cleanup, media destruction, hide, viewer-state reset and focus restoration now happen together.
+- Removed the old split cleanup path where programmatic `player.close()` could leave viewer DOM/media state behind.
+- Preserved the original viewer opener across Previous/Next, Watch Earth and other in-viewer player handoffs; viewer controls cannot overwrite the return-focus target.
+- Viewer lifecycle has a close re-entry guard and retains preventScroll focus restoration.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Closed the Hero fallback regression: app startup now selects only from the strict Hero-eligible pool and never falls through to PRIMARY/raw catalog sources just to fill the Hero.
 - Added an honest Hero rechecking state for an empty verified-current pool; Watch live / Next live disable while Explore and My Earth remain usable.
 - Hero live controls now inherit canonical Hero eligibility, so a HEALTHY-but-stale source cannot enable Hero playback controls.
