@@ -4,6 +4,6 @@ localStorage.clear();localStorage.setItem("ern:favorites:v1",JSON.stringify(["lo
 const r=restoreMyEarthData({version:1,favoritePlaceIds:["import-place"],favoriteWindowIds:["import-window"],recentPlaceIds:["recent-place"],recentWindowIds:["recent-window"]});
 console.assert(r.ok&&r.data.favoriteWindowIds.includes("local-window")&&r.data.favoriteWindowIds.includes("import-window"),"restore must merge, not erase");
 console.assert(JSON.parse(localStorage.getItem("ern:recent-places:v1"))[0]==="recent-place");
-const bad=await importMyEarthFile({size:20,text:async()=>"{bad"});console.assert(!bad.ok);
+const clean=restoreMyEarthData({version:1,favoritePlaceIds:["gone"],favoriteWindowIds:["import-window"],recentPlaceIds:[],recentWindowIds:[]},{validPlaceIds:["local-place"],validWindowIds:["local-window","import-window"]});console.assert(clean.ok&&clean.retired===2&&!clean.data.favoritePlaceIds.includes("gone"),"catalog hygiene must remove retired imported and pre-existing refs");\nconst bad=await importMyEarthFile({size:20,text:async()=>"{bad"});console.assert(!bad.ok);
 const huge=await importMyEarthFile({size:200000,text:async()=>"{}"});console.assert(!huge.ok&&huge.error.includes("too large"));
 console.log("ERN My Earth import smoke checks passed");
