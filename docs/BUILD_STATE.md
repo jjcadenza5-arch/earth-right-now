@@ -538,3 +538,14 @@ Current release posture:
 - Added a machine-readable release-candidate report combining catalog breadth, formal release blockers and business posture.
 - CI now reports release, beta, business and candidate posture and runs successfully on Node 22 with current checkout/setup-node actions.
 - Publication remains blocked until ERN is deployed to a real candidate origin and the six dated real-world evidence checks are performed.
+
+
+## 2026-09-19 — Release handoff hardening
+- Preview artifacts are now reproducible static release snapshots with SHA-256 fingerprints and rollback identity.
+- Static-host portability controls and a host contract are included without selecting or exposing a public host.
+- Explicit shared #place/#window routes take precedence over private resume state.
+- CI now rejects unsafe embedded-provider catalog entries and requires legal external fallback chains for every inside-ERN embed.
+- Real-world evidence has an exact candidate identity contract (Git commit + manifest + HTTPS origin), preventing evidence from silently carrying across builds.
+- GitHub-built release manifests now stamp the candidate commit SHA directly.
+- Business activation has provider-neutral submission/affiliate adapter contracts and a source-first review workflow, while real transmission and affiliate inventory remain disabled.
+- Publication remains fail-closed pending the six real-world checks; no CI result has been converted into browser/provider evidence.
