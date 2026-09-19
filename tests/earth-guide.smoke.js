@@ -1,0 +1,2 @@
+import {earthGuideReply,earthGuideFollowUps} from "../src/earth-guide.js";
+let r=earthGuideReply({query:"beautiful mountains now",count:2,items:[{title:"Verbier"}]},{tasteSignals:3});console.assert(r.text.includes("Verbier")&&r.text.includes("My Earth"));console.assert(earthGuideFollowUps({query:"beautiful mountains now",count:2}).includes("Show me somewhere completely different"));r=earthGuideReply({query:"snow now",count:0,items:[],empty:true});console.assert(r.text.includes("verified-current"));console.log("ERN Earth Guide smoke checks passed");

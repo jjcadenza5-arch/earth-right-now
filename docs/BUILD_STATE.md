@@ -607,3 +607,11 @@ Current release posture:
 - The visitor's words remain primary; learned taste is a bounded secondary ranking signal. A beach preference cannot turn a snow request into a beach result.
 - The same broad request can therefore feel different for different visitors: “beautiful right now” can lean toward mountains for one person and beaches for another, while remaining inside the matching verified/discoverable pool.
 - No demographic identity, account or server-side profile is required.
+
+
+## ERN Earth Guide — 2026-09-19
+- ERN AI now has a lightweight conversational Earth Guide layer instead of behaving only like a search box.
+- The guide summarizes what it found, suggests where to start and offers contextual follow-up journeys such as current views, peaceful/beautiful alternatives or somewhere completely different.
+- Guide language remains grounded in the actual discovery result. Empty current searches explicitly say no verified-current match rather than inventing one.
+- My Earth taste can be acknowledged when it contributed to ranking, while explicit visitor intent remains primary.
+- This is an on-device deterministic guide foundation, not a claim that a remote generative-AI service is connected.
