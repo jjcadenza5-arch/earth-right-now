@@ -1,0 +1,14 @@
+import "./test-browser-env.mjs";
+import { travelOffer } from "../src/travel-bridge.js";
+import { travelOffersForPlace,travelOfferInventory } from "../src/travel-offer-registry.js";
+import { travelOfferView,travelBridgeView,travelIntentMessage } from "../src/travel-bridge-view.js";
+const place={id:"cm",title:"Chiang Mai",country:"Thailand",region:"Chiang Mai"};
+const verified=travelOffer({id:"hotel",intent:"stay",title:"Hotel option",provider:"Verified Partner",url:"https://example.test/stay",affiliate:true},{place,verified:true});
+const hidden=travelOffer({id:"food",intent:"eat",title:"Food",provider:"P",url:"https://example.test/eat"},{place,verified:false});
+console.assert(travelOffersForPlace([verified,hidden],"cm").length===1);
+const inv=travelOfferInventory([verified,hidden]);console.assert(inv.total===1&&inv.byIntent.stay===1&&inv.placeCount===1);
+const card=travelOfferView(verified);console.assert(card&&card.textContent.includes("Affiliate travel option"));
+console.assert(travelOfferView(hidden)===null,"unverified offer must never render");
+const bridge=travelBridgeView(place,{offers:[verified,hidden]});console.assert(bridge.textContent.includes("Places to stay (1)")&&!bridge.textContent.includes("Food (1)"));
+console.assert(travelIntentMessage("stay",place,1).startsWith("1 verified"));
+console.log("ERN verified travel offer smoke checks passed");
