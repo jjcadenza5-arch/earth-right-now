@@ -34,6 +34,9 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Visual-surface foundation advanced: Hero, source cards and Choose a Window can now share one safe poster presentation model instead of inventing separate imagery behavior.
+- Legitimate HTTP(S) thumbnail imagery is used when explicitly supplied; missing/unsafe imagery falls back to restrained category-generated Earth surfaces and is marked as generated rather than masquerading as current camera media.
+- Choose a Window tiles and source cards now have lightweight visual mounts without loading additional live players, preserving the one-player/performance rule; disabled source actions remain inert.
 - Operations truth-plane integration completed: the private operations report now carries a deterministic catalog snapshot plus optional health-automation coverage audit alongside catalog/release gates and the revalidation queue.
 - Health batches with unknown IDs or omitted catalog sources are visibly incomplete in operations output; absence of a batch remains neutral so reporting and checking can run independently.
 - Added operations health-audit integration regression coverage and documentation without exposing maintenance diagnostics in the visitor UI.
