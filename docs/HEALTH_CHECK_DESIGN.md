@@ -15,3 +15,7 @@ Rules:
 - Embed permission is independent from health.
 - Historical recovered verification never counts as a current check.
 - DEGRADED/UNKNOWN remain available to Living Atlas with truthful UI but are excluded from primary Live Right Now.
+
+## Transition contract
+
+Health mutations must go through the conservative transition model in `src/health-transition.js`. A reachable page without confirmed current media is DEGRADED, not HEALTHY. Only a confirmed current-media success advances `lastSuccessfulCheck`. Definitive provider/media failure may mark OFFLINE; inconclusive checks remain UNKNOWN. Health automation must never modify permission or truth.
