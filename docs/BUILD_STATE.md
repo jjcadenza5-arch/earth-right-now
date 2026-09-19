@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Integrated durable destination deep links with browser Back/Forward: opening a place pushes `#place=<id>`, closing returns to the clean URL, and popstate silently reconciles the drawer without creating history loops.
+- Initial malformed/unknown place hashes fail closed through the existing safe route model; Back/Forward navigation does not record fake recent-place visits.
+- Hardened immersive-viewer focus trapping for hidden/disabled controls and unexpected focus positions; focus remains non-scrolling.
+- Reduced-motion detection now degrades safely on browsers without `matchMedia`.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Unified fallback-chain policy with canonical playback capability, embed-host allowlisting and safe HTTP navigation; fallback can no longer reintroduce an OFFLINE source, unapproved embed host or unsafe URL.
 - Preserved the honest fallback terminal state: UNAVAILABLE; no false claim of automatic cross-origin iframe failure detection.
 - Hardened media teardown: video/audio nested source URLs are cleared, iframes blanked, images detached, then the shared mount is emptied before handoff.
