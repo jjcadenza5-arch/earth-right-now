@@ -1,1 +1,10 @@
-import { posterFor,posterClass,heroPosterStyle } from "../src/source-poster.js";console.assert(posterFor({thumbnailUrl:"javascript:alert(1)",title:"X"}).kind==="generated");console.assert(posterFor({thumbnailUrl:"https://example.com/a.jpg",title:"X"}).kind==="image");console.assert(posterClass({categories:["Sea & Coast"]})==="poster-water");console.assert(heroPosterStyle({thumbnailUrl:"https://example.com/a.jpg"}).className==="has-poster");console.log("ERN hero poster smoke checks passed");
+import { posterFor,posterClass,posterPresentation,heroPosterStyle } from "../src/source-poster.js";
+console.assert(posterFor({thumbnailUrl:"javascript:alert(1)",title:"X"}).kind==="generated");
+console.assert(posterFor({thumbnailUrl:"https://example.com/a.jpg",title:"X"}).kind==="image");
+console.assert(posterClass({categories:["Sea & Coast"]})==="poster-water");
+console.assert(heroPosterStyle({thumbnailUrl:"https://example.com/a.jpg"}).className==="has-poster");
+const fallback=posterPresentation({title:"Mountain",categories:["Volcanoes & Earth"]});
+console.assert(fallback.generated===true&&fallback.className==="poster-mountain","missing imagery must use a restrained generated poster");
+const image=posterPresentation({title:"View",thumbnailUrl:"https://example.com/current.jpg"});
+console.assert(image.generated===false&&image.backgroundImage.includes("https://example.com/current.jpg"),"safe supplied imagery should remain usable");
+console.log("ERN hero/poster smoke checks passed");
