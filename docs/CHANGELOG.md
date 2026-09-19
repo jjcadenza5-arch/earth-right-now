@@ -378,3 +378,12 @@
 - Destination cards now summarize the mix of available window types — inside ERN, at source and preview — before the visitor opens Choose a Window, making the destination-first experience more transparent about what each place actually offers.
 - Added regression coverage for shortcut help, English/Thai core-label completeness and destination choice summaries.
 - Full CI is green.
+
+
+## 2026-09-19 — Watch Earth context and submission-boundary clarity
+- Watch Earth now shows the breadth of the curated journey in the viewer — window, place and country counts — so visitors understand that it is a deliberate Earth journey rather than an opaque autoplay sequence.
+- Added a reusable destination-coverage model for future Atlas/network summaries without changing current map behavior.
+- The business-camera submission surface now explicitly explains that the current form only prepares a local review record: it does not publish a camera and does not transmit contact details until a real submission service is deliberately connected.
+- Added a formal submission boundary model that distinguishes prepared, transmitted and published states, preserving ERN's review-first architecture for the future backend.
+- Added regression coverage for Watch Earth diversity, destination coverage and local-only submission boundaries.
+- Full CI is green.
