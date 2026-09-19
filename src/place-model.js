@@ -1,1 +1,23 @@
-import { playbackCapability } from "./playback-capability.js";import { currentSource,discoverableSource } from "./discovery-eligibility.js";import { sourceScore } from "./source-score.js";export function groupByPlace(sources){const map=new Map();for(const s of sources){if(s.id==="recovery-placeholder")continue;const key=s.placeId||s.id;if(!map.has(key))map.set(key,{id:key,title:s.title,country:s.country,region:s.region,lat:s.lat,lon:s.lon,categories:new Set(),sources:[]});const p=map.get(key);p.sources.push(s);for(const c of s.categories||[])p.categories.add(c)}return[...map.values()].map(p=>({...p,categories:[...p.categories]}))}export function bestWindow(place){const sources=(place?.sources||[]).filter(discoverableSource);return[...sources].sort((a,b)=>{const ac=currentSource(a)?1:0,bc=currentSource(b)?1:0;if(ac!==bc)return bc-ac;const ap=playbackCapability(a).action==="PLAY"?1:0,bp=playbackCapability(b).action==="PLAY"?1:0;if(ap!==bp)return bp-ap;return sourceScore(b)-sourceScore(a)})[0]||null}
+import { playbackCapability } from "./playback-capability.js";
+import { currentSource,discoverableSource } from "./discovery-eligibility.js";
+import { sourceScore } from "./source-score.js";
+
+export function groupByPlace(sources){
+  const map=new Map();
+  for(const s of sources){
+    if(s.id==="recovery-placeholder")continue;
+    const key=s.placeId||s.id;
+    if(!map.has(key))map.set(key,{id:key,title:s.title,country:s.country,region:s.region,lat:s.lat,lon:s.lon,categories:new Set(),sources:[]});
+    const p=map.get(key);p.sources.push(s);for(const c of s.categories||[])p.categories.add(c);
+  }
+  return[...map.values()].map(p=>({...p,categories:[...p.categories],preferred:bestWindow(p)}));
+}
+
+export function bestWindow(place){
+  const sources=(place?.sources||[]).filter(discoverableSource);
+  return[...sources].sort((a,b)=>{
+    const ac=currentSource(a)?1:0,bc=currentSource(b)?1:0;if(ac!==bc)return bc-ac;
+    const ap=playbackCapability(a).action==="PLAY"?1:0,bp=playbackCapability(b).action==="PLAY"?1:0;if(ap!==bp)return bp-ap;
+    return sourceScore(b)-sourceScore(a);
+  })[0]||null;
+}
