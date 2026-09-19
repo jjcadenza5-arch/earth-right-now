@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Hardened ERN AI relevance: quality/source score can no longer make an unrelated camera appear for an unmatched query; unmatched intent returns no result instead of plausible-looking noise.
+- Current/live wording still gates through strict current-source eligibility before semantic ranking, so ERN AI cannot upgrade stale/unknown source truth.
+- Added alias-aware normalized matching and intent-token scoring while preserving empty-query discovery behavior.
+- Fixed the same relevance leak in ordinary Earth search: a positive base source score no longer causes every discoverable source to match arbitrary text.
 - Hardened the future business-camera submission boundary: intake remains PENDING_REVIEW and can never auto-publish or auto-upgrade a source.
 - Submission URLs are restricted to public HTTP(S) syntax with credentials/localhost/loopback rejected; text fields are normalized and bounded; optional contact is validated.
 - The submitter rights checkbox is explicitly treated as an assertion, not ERN verification. Truth, health, permission, playback, attribution and provenance still require independent review.
