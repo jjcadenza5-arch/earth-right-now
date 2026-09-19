@@ -468,3 +468,19 @@ The current GitHub master is an engineering foundation, not yet the public ERN r
 Blockers:
 - No repository blocker.
 - Current source health must be revalidated before recovered historical records can be promoted as LIVE.
+
+
+### 2026-09-19 — CI truth restoration and release operations
+- Restored a genuinely executable GitHub Actions smoke pipeline after escaped newline text had been embedded into the shell command.
+- GitHub job logs are now directly inspectable and smoke diagnostics are retained as an artifact and run-summary tail.
+- Fixed the discovery/playback currentness recursion so source discoverability is evaluated from primitive policy/URL viability rather than recursively re-entering playback capability.
+- Release inventory now correctly classifies current external sources using the EXTERNAL playback action.
+- Browser-dependent dependency-free smoke tests now use explicit local test browser primitives instead of assuming Node provides document/localStorage.
+- Legacy Hero, playback and Watch Earth fixtures were aligned with current source-recency and provider-allowlist policy rather than weakening production rules.
+- Full dependency-free smoke suite returned GREEN on main at commit 4cd86dd0cc6d75330551f7e06d6b6a5cd34acb64.
+- Added a report-only release status command. It deliberately leaves publication BLOCKED when real browser/mobile/provider/accessibility/performance/rollback evidence is absent; CI success alone cannot certify publication.
+
+Current release posture:
+- Engineering smoke baseline: GREEN.
+- Publication: still gated by fresh real-world evidence and current source verification.
+- No release gate has been bypassed or weakened.
