@@ -1,0 +1,10 @@
+import { navigationState,syncPlaceNavigation } from "../src/navigation-sync.js";
+const places=[{id:"chiang-mai"},{id:"wil"}];
+console.assert(navigationState({hash:"#place=wil",places}).placeId==="wil");
+console.assert(!navigationState({hash:"#place=missing",places}).hasPlace);
+let opened=null,closed=0;
+console.assert(syncPlaceNavigation({hash:"#place=chiang-mai",places,openPlace:(id,opts)=>{opened={id,opts};return true},closePlace:()=>{closed++;return true}}));
+console.assert(opened.id==="chiang-mai"&&opened.opts.writeHistory===false&&opened.opts.recordRecent===false,"history navigation must not create another history entry or recent visit");
+syncPlaceNavigation({hash:"",places,openPlace:()=>false,closePlace:opts=>{closed++;console.assert(opts.writeHistory===false);return true}});
+console.assert(closed===1,"clearing a place hash should close the drawer");
+console.log("ERN navigation sync smoke checks passed");
