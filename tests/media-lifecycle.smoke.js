@@ -1,1 +1,1 @@
-import { mediaCount } from "../src/media-lifecycle.js";const root=document.createElement("div");root.innerHTML="<iframe></iframe><video></video>";console.assert(mediaCount(root)===2);console.log("ERN media lifecycle smoke checks passed");
+import "./test-browser-env.mjs";import { mediaCount } from "../src/media-lifecycle.js";const root=document.createElement("div");root.innerHTML="<iframe></iframe><video></video>";console.assert(mediaCount(root)===2);console.log("ERN media lifecycle smoke checks passed");
