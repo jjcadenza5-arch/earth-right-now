@@ -261,3 +261,13 @@
 - Corrected constrained-network messaging to match current behavior. ERN now warns that embedded live video may use significant data; it no longer claims heavy embeds are automatically withheld before that behavior is actually enabled and real-device validated.
 - Added regression coverage for unavailable My Earth memories and updated the connection-copy contract.
 - Full CI is green.
+
+
+## 2026-09-19 — Expiring travel-partner verification
+- Verified travel options now carry a verification timestamp and automatically fail closed after the verification window instead of remaining trusted forever.
+- Travel offer registry counts, intent badges and rendered offer cards all use the same current-verification gate.
+- Offers missing a verification date, unverified offers and expired offers remain invisible to visitors even if their URLs still resolve.
+- This keeps future affiliate/partner monetization subordinate to ERN's trust model: commercial links must be deliberately verified and periodically rechecked rather than becoming permanent catalog assumptions.
+- No real partner or affiliate relationship has been added or implied.
+- Added regression coverage for expired verified offers.
+- Full CI is green.
