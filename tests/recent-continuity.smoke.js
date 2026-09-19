@@ -1,0 +1,1 @@
+import { recentContinuity } from "../src/recent-continuity.js";const x=recentContinuity({recentPlaces:[1,2],availableRecentWindows:["a","b","c"]},{limit:2});console.assert(x.windows.length===2&&x.places.length===2&&!x.empty&&x.summary==="2 recent playable windows");console.assert(recentContinuity({}).empty);console.log("ERN recent continuity smoke checks passed");
