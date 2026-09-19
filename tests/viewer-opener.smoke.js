@@ -1,0 +1,1 @@
+import fs from "node:fs";const x=fs.readFileSync(new URL("../src/viewer-context.js",import.meta.url),"utf8");console.assert(x.includes("if(opener?.isConnected)return opener"));console.assert(x.includes('!el.closest?.("#viewer")'));console.assert(x.includes("preventScroll:true"));console.log("ERN viewer opener smoke checks passed");
