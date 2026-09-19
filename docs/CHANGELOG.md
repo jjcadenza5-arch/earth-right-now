@@ -112,3 +112,12 @@
 - The existing verified-only travel-offer model remains the gate for future partner/affiliate links and disclosures.
 - Added regression coverage for destination context, intent routing and hidden incomplete contexts.
 - CI initially caught a fake-DOM test activation mismatch; the test was corrected without weakening product behavior and the subsequent full CI run is green.
+
+
+## 2026-09-19 — Business-camera review boundary
+- Hardened submitted camera URLs against localhost, loopback, link-local and private-network targets in addition to non-http(s) and credential-bearing URLs.
+- Added an explicit PENDING_REVIEW → APPROVED/REJECTED human review gate. A visitor submission can never become publishable merely because the form validated.
+- Added conservative catalog drafting for approved submissions: new drafts begin as PREVIEW / UNKNOWN permission / UNKNOWN health rather than being auto-labeled live, healthy or embeddable.
+- Rights confirmation remains necessary but is not treated as proof of embed/republication permission; provider/source verification remains a separate catalog step.
+- Added regression coverage for private-network rejection, review decisions, rights preservation and no-auto-promotion behavior.
+- Full CI is green.
