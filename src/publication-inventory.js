@@ -5,8 +5,8 @@ import { recencyState } from "./source-recency.js";
 export function publicationInventory(rows=[],options={}){
   const sources=(rows||[]).filter(Boolean);
   const current=sources.filter(source=>currentSource(source,options));
-  const inside=current.filter(source=>playbackCapability(source).action==="PLAY");
-  const external=current.filter(source=>playbackCapability(source).action==="OPEN");
+  const inside=current.filter(source=>playbackCapability(source,options).action==="PLAY");
+  const external=current.filter(source=>playbackCapability(source,options).action==="OPEN");
   const stale=sources.filter(source=>recencyState(source,options)==="STALE_CHECK");
   const expired=sources.filter(source=>recencyState(source,options)==="EXPIRED_CHECK");
   const unknown=sources.filter(source=>recencyState(source,options)==="UNKNOWN");
