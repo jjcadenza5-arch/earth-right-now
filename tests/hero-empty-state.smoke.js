@@ -1,0 +1,1 @@
+import { heroEmptyState,applyHeroEmptyActions } from "../src/hero-empty-state.js";const x=heroEmptyState(),a=applyHeroEmptyActions();console.assert(x.truth==="SOURCE CHECK");console.assert(!a.watchLive.enabled&&!a.next.enabled&&a.explore.enabled&&a.myEarth.enabled);console.log("ERN Hero empty-state smoke checks passed");
