@@ -579,3 +579,10 @@ Current release posture:
 - Diversifies ERN toward high-trust travel-intent sources that naturally connect current views with destination planning.
 - Where the provider describes “live images” without proving moving video, ERN conservatively uses LIVE_IMAGE rather than LIVE_VIDEO.
 - All remain LINK_ONLY unless explicit embedding permission is established.
+
+
+## Around This Window travel-intent expansion — 2026-09-19
+- Evolved the existing Travel Bridge into a quieter “Around This Window” layer that appears after a visitor opens a destination.
+- Expanded intent coverage from stay/eat/transport/tickets to six visitor needs: places to stay, food nearby, getting there & around, things to do, culture & places, and useful nearby services.
+- Preserved fail-closed commercial behavior: empty categories do not invent businesses or links; verified offers remain the only offers eligible for display.
+- The camera/Earth experience remains primary. Travel intent is visitor-triggered rather than an advertising wall.
