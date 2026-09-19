@@ -413,3 +413,11 @@
 - A test-fixture syntax error briefly failed CI during this stage; it was corrected and the full suite returned green.
 - Added regression coverage for balanced live curation and variety health.
 - Full CI is green.
+
+
+## 2026-09-19 — Network-label contract and runtime cleanup
+- Added a connection-aware source-label model so the UI can truthfully distinguish normal Watch live behavior from Offline and data-saving provider fallback before activation, matching the already enforced network action policy.
+- This model is deliberately separate from source truth: connection state changes the available action, never whether ERN calls a source live/current.
+- Added a small lifecycle registry and wired the long-session freshness clock, Hero rotation and network observer into page-exit cleanup. Long-lived tabs no longer leave these ERN-owned timers/listeners running after pagehide.
+- Added regression coverage for connection-aware labels and lifecycle cleanup.
+- Full CI is green.
