@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Large curation-consistency pass: Choose a Window now ranks strict-current sources before inside-ERN playback and shared source score, preventing high-quality stale windows from occupying the first choice.
+- Hero primary action copy now delegates to unified playback capability instead of maintaining separate live/current wording logic.
+- Earth Happening Now now delegates currentness to the shared currentSource gate; editorial moment ranking prefers current eligible sources before moment/quality scoring.
+- General curation now centralizes discoverable/current eligibility instead of duplicating partial health/recency checks, reducing semantic drift across Hero, Watch Earth, Moments and discovery surfaces.
+- Added curation-invariant documentation and regression smoke checks for window ordering and Happening Now currentness.
 - Large truth-language pass: sourceStatus and trust copy now require strict currentness before present-tense LIVE/CURRENT claims; HEALTHY-but-stale records receive RECHECK DUE instead of a live badge.
 - Destination cards distinguish actionable/available sources from genuinely current windows, so broad Atlas availability cannot masquerade as current conditions.
 - Viewer accessibility announcements now state whether current verification is confirmed; stale external sources announce neutral provider opening rather than current/live language.
