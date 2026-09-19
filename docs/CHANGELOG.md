@@ -536,3 +536,9 @@
 - Added conversational response and follow-up suggestion model around ERN AI discovery.
 - Connected guide responses to the existing AI bar without adding a generic floating chatbot.
 - Empty/current responses preserve source-truth language.
+
+
+## 2026-09-19 — Earth Light Right Now
+- Added solar-moment lanes for sunrise, sunset, morning/evening light, night and daylight.
+- Added visitor-facing Earth Light surface using current healthy sources.
+- Added explicit solar-geometry disclaimer and smoke coverage against weather overclaiming.
