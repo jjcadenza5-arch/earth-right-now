@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Large mature-experience pass: restored the canonical Hero hierarchy so the Earth destination/location is the dominant headline and “Welcome to Earth — see what is happening now.” is the supporting editorial line; the discarded generic Fresh slogan-led Hero is no longer the visual structure.
+- Unified destination currentness with the strict source gate: HEALTHY alone no longer makes a place “current”; known permission, CURRENT_CHECK and actionable playback are required.
+- Destination ranking now prefers genuinely current places before broad quality scoring, while Living Atlas can still retain broader actionable destinations.
+- Unified visitor action/eyebrow wording with currentness: stale/rechecking sources cannot say LIVE WINDOW, CURRENT AT SOURCE, Watch live or Open current source solely from historical truth type.
+- Added destination-currentness and visitor-wording regression coverage plus refreshed the canonical Hero visual-fidelity contract.
 - Added a private operations-report layer combining catalog health, release blockers and a deterministic revalidation queue without exposing maintenance diagnostics in the visitor UI.
 - Revalidation scheduling now carries explicit UNKNOWN / DEGRADED / RECHECK_DUE reasons and prioritizes deep-validation/embed/inside-ERN candidates without granting promotion.
 - Strengthened production readiness toward auditable dated evidence for browser, mobile, provider playback, accessibility, performance and rollback checks; catalog readiness remains separate from publication readiness.
