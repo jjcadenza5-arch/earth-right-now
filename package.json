@@ -7,7 +7,8 @@
     "test": "node tests/run-smoke.mjs",
     "release:status": "node scripts/release-status.mjs",
     "release:evidence": "node scripts/evidence-status.mjs",
-    "release:checklist": "node scripts/release-checklist.mjs"
+    "release:checklist": "node scripts/release-checklist.mjs",
+    "catalog:metadata": "node scripts/catalog-metadata-status.mjs"
   },
   "engines": {
     "node": ">=20"
