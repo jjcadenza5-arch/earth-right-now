@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Hardened the runtime catalog guard before further source recovery: source/official/embed/thumbnail URLs must be absolute HTTP(S), embeds must be HTTPS, timestamps parse correctly, timezones validate, and categories/aliases are string arrays.
+- Aligned the JSON source schema with stronger date-time, non-empty identity and unique string-array constraints.
+- Malformed recovered/submitted source data now fails closed before it can reach playback, Atlas local-time logic or discovery ranking.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Hardened refreshed-image playback lifecycle: background tabs no longer keep fetching frames, returning visible requests one fresh frame, refresh cadence has a safety floor, and cleanup removes both timer and visibility listener.
 - Kept local image-load behavior separate from catalog health: a client playback problem does not silently mark a provider globally offline.
 - Language preference setter now safely tolerates non-document/test contexts without changing browser behavior.
