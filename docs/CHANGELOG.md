@@ -139,3 +139,13 @@
 - Import UI is intentionally not exposed yet; restore behavior can be added after browser validation of the export path.
 - Added regression coverage for versioning, sanitization, deduplication and non-destructive merge semantics.
 - Full CI is green.
+
+
+## 2026-09-19 — Privacy-minimized telemetry boundary
+- Added a strict telemetry allowlist and data minimization layer. Unknown event types fail closed and only a narrow set of non-sensitive fields can leave the event boundary.
+- Telemetry remains off by default unless an ERN telemetry handler is deliberately configured.
+- Search telemetry records only query length, never search text. Precise coordinates, contact details, business-submission fields and My Earth favorites/recents are explicitly outside the telemetry contract.
+- Added a visitor-readable privacy summary model for a later About/Privacy surface, including the separate privacy responsibility of third-party camera providers.
+- Corrected the immersive viewer Share accessible name to “Share this window,” matching the new exact-window share behavior.
+- Added regression coverage for unknown events, search-text exclusion and coordinate exclusion.
+- Full CI is green.
