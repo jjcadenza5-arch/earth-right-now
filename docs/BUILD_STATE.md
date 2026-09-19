@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Replaced raw recent-window localStorage access in the playback callback with safe, versioned recent-window storage; legacy valid history migrates opportunistically.
+- Storage-denied/privacy modes and malformed legacy recent history can no longer crash playback when a viewer opens.
+- Keyboard shortcuts now respect Cmd/Ctrl/Alt browser/OS combinations and already-prevented events; `/` focuses Earth search with preventScroll.
+- Left/Right remain viewer-scoped and editable controls remain protected from navigation shortcuts.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Refined source verification recency by source class: inside-ERN embeds and live images 24h, external live/partner sources 72h, broader external pages 168h.
 - Explicitly separated `recently verified source` from `media frame proven live`; ERN does not claim cross-origin frame-level liveness it cannot observe.
 - PRIMARY catalog promotion now requires CURRENT_CHECK in addition to HEALTHY, known permission and quality; stale high-quality sources remain broader-Atlas material until reverified.
