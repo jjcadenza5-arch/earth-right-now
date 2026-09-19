@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Large discovery-surface pass: Living Atlas default ordering now prefers strict-current sources, then legal inside-ERN playback, then shared source quality, while retaining its broader actionable-network role.
+- Ordinary Explore search now interprets live/current/now/today as truth filters; current-intent searches cannot return stale matches merely because destination text matches.
+- Atlas renderer hardened for missing mounts/empty clusters and explicit button semantics; Atlas remains actionable without becoming a second Watch Earth.
+- Interaction stability pass: viewer keyboard navigation stays viewer-scoped, Escape no longer fires viewer close while no viewer is open, shortcut listener is removable/browser-safe, and surface management remains scroll-free.
+- Added discovery-surface and interaction-stability contracts plus regression smoke checks for current-intent search and Atlas ordering.
 - Large playback/lifecycle pass: playback capability and external-player copy now use currentness-aware language; stale/rechecking sources cannot inherit present-tense live wording from historical truth type.
 - Watch Earth now rechecks strict current-source eligibility again at the session boundary, protecting the automatic journey even if an upstream selector regresses.
 - Viewer open/close lifecycle is idempotent while teardown remains centralized through player-session/media-lifecycle, reinforcing one-player architecture and avoiding duplicate media after repeated interactions.
