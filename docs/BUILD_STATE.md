@@ -638,3 +638,11 @@ Current release posture:
 - No token, account or analytics relationship is invented in the repository. Enabling real counts requires one external setup step to obtain the site token.
 - Existing ERN product telemetry remains separate and default-off; My Earth favorites/recents and search text remain outside telemetry.
 - Search Console remains an external ownership/verification step; the repository already exposes robots.txt, sitemap.xml and canonical metadata for it.
+
+
+## Crawlable destination pages — 2026-09-19
+- Added deterministic static destination-page generation from the canonical source registry. Current catalog produces 44 real place URLs from 48 sources.
+- Each destination page has a unique title/description, canonical URL, crawlable place/current-window text, truthful source-type/provider labels, JSON-LD TouristDestination identity, and a route back into ERN's interactive place experience.
+- Sitemap is generated from the same catalog, so it contains the homepage plus every real destination instead of fabricated SEO pages.
+- GitHub Pages release build now includes robots.txt, sitemap.xml and generated /places/ pages.
+- Destination pages do not claim that weather is visible, do not upgrade source truth, and do not claim ownership of provider streams.
