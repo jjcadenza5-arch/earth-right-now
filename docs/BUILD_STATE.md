@@ -34,6 +34,9 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Hardened destination preferred-window selection: stale/unavailable sources can no longer win merely from high quality/moment metadata; strict currentness and actionable playback now precede source score.
+- Preferred place windows now favor current verified sources, then inside-ERN PLAY capability, then shared source scoring.
+- Hardened Living Atlas discovery so OFFLINE/UNAVAILABLE records are not exposed as actionable results; the Atlas Live/current filter also requires known permission.
 - Closed a Watch Earth currentness gap: the app-level diverse curation path now requires CURRENT_CHECK, so a HEALTHY-but-stale source cannot enter the curated journey before the strict fallback is considered.
 - Country diversity and quality/moment scoring now operate only after Watch Earth truth/currentness eligibility; diversity can never override source verification.
 - Hardened Live Right Now inventory to require actionable playback in addition to live truth, HEALTHY status, known permission and CURRENT_CHECK.
