@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Hardened refreshed-image playback lifecycle: background tabs no longer keep fetching frames, returning visible requests one fresh frame, refresh cadence has a safety floor, and cleanup removes both timer and visibility listener.
+- Kept local image-load behavior separate from catalog health: a client playback problem does not silently mark a provider globally offline.
+- Language preference setter now safely tolerates non-document/test contexts without changing browser behavior.
+- Network-resilience utility was inspected and is already environment-injected/testable; no noisy offline banner was added to the canonical mature visual baseline.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Hardened client network-state handling for non-window/test contexts and clean listener teardown; browser offline status remains a client-connectivity signal and never mutates source health/truth.
 - Corrected offline copy so ERN no longer promises saved Earth content without an actual service-worker/offline cache implementation.
 - Clarified cache boundary: source catalog is no-store/network truth, third-party media remains provider-controlled, and no service worker is introduced casually.
