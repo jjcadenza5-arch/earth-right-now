@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Catalog observability stage: added a snapshot model that separately reports total network size, destination count, health, strict-current inventory, all legal inside-ERN playback, strict-current inside-ERN playback, external-only inventory and truth/permission distributions.
+- Inside-ERN expansion guard hardened: provider policy now has an explicit permission-escalation boundary, so public agencies, generic video platforms and unknown providers cannot become EMBED_ALLOWED merely because an iframe technically works.
+- CouchTourist is recorded as a reviewed embed provider, but each individual source must still explicitly carry EMBED_ALLOWED; current public catalog contains four such inside-ERN sources.
+- Added permission-led expansion documentation and regression checks for provider escalation and inside-player inventory. EarthCam-style quality remains a UX target, never a shortcut around rights.
 - Source revalidation batch completed for the final three UNKNOWN public records using current official provider pages: Pattaya City Live, Glenelg Beach and Brighton Beach are now HEALTHY with 2026-09-19 checks.
 - Pattaya remains strictly LINK_ONLY/EXTERNAL because current city terms permit general viewing but prohibit commercial use and republication without written authorization; ERN will not embed/restream the imagery.
 - South Australia Marine Safety currently lists Glenelg and Brighton in its live coastal webcam network; ERN conservatively retains LINK_ONLY/EXTERNAL rather than inferring embed permission.
