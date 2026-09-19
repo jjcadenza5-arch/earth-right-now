@@ -243,3 +243,12 @@
 - This is verification freshness, not a claim that ERN continuously watches the underlying scene between checks.
 - Added regression coverage for current, stale and unverified freshness wording.
 - Full CI is green.
+
+
+## 2026-09-19 — Broken-poster resilience
+- Discovery poster images now fail gracefully: if a remote thumbnail disappears, blocks hotlinking or fails to decode, ERN removes the broken image and immediately falls back to the destination's generated Earth visual.
+- Poster failure does not alter camera truth, health, currentness or playback state; imagery remains presentation-only.
+- The fallback is explicitly marked as generated in DOM state, preserving the rule that decorative imagery must never masquerade as current camera media.
+- Added regression coverage for remote-poster failure and generated fallback state.
+- Initial fixture exposed a limitation in the minimal CI DOM shim; the test was corrected to use a portable DOM contract without weakening production behavior.
+- Full CI is green again.
