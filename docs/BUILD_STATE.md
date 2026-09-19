@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Revalidated four recovered UNKNOWN sources against current official pages on 2026-09-19: Auckland Viaduct Harbour, Kīlauea Summit, Nossob/Kgalagadi, and Kaikōura Coast.
+- Promoted current health without promoting unproven rights: all remain EXTERNAL/LINK_ONLY unless current embed/display permission is documented.
+- Corrected Kaikōura truth to LIVE_IMAGE because its official operator describes static images updating every five minutes.
+- Historical Auckland iframe permission remains untrusted until explicitly revalidated.
 - Continued mature-Hero visual fidelity: centralized safe poster selection/style, rejected unsafe thumbnail schemes before CSS use, preserved generated category fallbacks, and explicitly prevented imagery from affecting source truth/eligibility.
 - Strengthened the camera-first Hero hierarchy and keyboard focus visibility without reintroducing the discarded generic Fresh stacked-page redesign.
 - Documented the canonical target as the mature 4:23 PM experience + later immersive viewer behavior + Fresh truth architecture underneath; prototype/browser screenshots are forbidden as production imagery.
