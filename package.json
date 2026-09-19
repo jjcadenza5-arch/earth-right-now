@@ -10,7 +10,8 @@
     "release:checklist": "node scripts/release-checklist.mjs",
     "catalog:metadata": "node scripts/catalog-metadata-status.mjs",
     "catalog:balance": "node scripts/catalog-balance-status.mjs",
-    "release:readiness": "node scripts/beta-readiness-status.mjs"
+    "release:readiness": "node scripts/beta-readiness-status.mjs",
+    "business:status": "node scripts/business-readiness-status.mjs"
   },
   "engines": {
     "node": ">=20"
