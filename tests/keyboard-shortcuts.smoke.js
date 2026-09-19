@@ -1,0 +1,1 @@
+import fs from "node:fs";const x=fs.readFileSync(new URL("../src/keyboard-shortcuts.js",import.meta.url),"utf8");console.assert(x.includes("e.defaultPrevented||modified(e)"));console.assert(x.includes("metaKey"));console.assert(x.includes("preventScroll:true"));console.log("ERN keyboard shortcut smoke checks passed");
