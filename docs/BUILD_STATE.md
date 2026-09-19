@@ -493,3 +493,11 @@ Current release posture:
 - Catalog release gate: READY (27 valid, 0 rejected, no catalog blockers).
 - Engineering CI remains GREEN.
 - Publication remains deliberately BLOCKED only by the six real-world evidence dimensions: browser, mobile, provider playback, accessibility, performance, and rollback.
+
+
+### 2026-09-19 — Accessibility drawer lifecycle hardening
+- Destination and Living Atlas cluster drawers now expose dialog semantics with labelled modal regions.
+- Added reusable focus containment, Escape-to-close behavior and opener focus restoration for non-viewer drawers.
+- The immersive viewer retains its existing dedicated lifecycle; destination/Atlas drawers now follow the same accessibility direction without merging playback state into discovery state.
+- Engineering CI remains GREEN.
+- This is accessibility preflight only; the real-world accessibility evidence gate remains pending until keyboard/focus behavior is verified in a deployed browser.
