@@ -431,3 +431,12 @@
 - Automatic resume is still intentionally not wired into the production UI; this stage prepares the contract without crossing the real-browser validation boundary.
 - Added regression coverage for resume offers, recent continuity and the privacy boundary.
 - Full CI is green.
+
+
+## 2026-09-19 — Destination choice truth and accessible actions
+- Destination cards now summarize only discoverable/actionable windows. Offline, preview-only or otherwise non-discoverable records no longer inflate the “inside ERN / at source” choice mix shown to visitors.
+- The choice mix is derived from the same playback capability contract used for actual actions, reducing the chance that discovery copy promises an option the visitor cannot open.
+- Destination buttons now expose the destination name and its real window mix in their accessible action label, while retaining the concise visual label (“Choose a window”, “Open window”, or “Unavailable”).
+- Centralized destination action semantics so future discovery surfaces can reuse the same disabled/label/accessibility contract.
+- Added regression coverage for actionable choice summaries and destination action semantics.
+- Full CI is green.
