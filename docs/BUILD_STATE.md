@@ -34,6 +34,9 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Completed catalog identity hardening after the interrupted helper pass: recovery now deduplicates normalized public/recovery IDs plus source/official/embed URLs and records explicit duplicate reasons.
+- Public catalog guard rejects duplicate canonical sourceUrl records, preventing one camera from masquerading as multiple independent windows and distorting counts/ranking/favorites/journey diversity.
+- Added/updated catalog identity regression smoke checks and documentation; uniqueness remains independent from truth, health and permission verification.
 - Hardened destination preferred-window selection: stale/unavailable sources can no longer win merely from high quality/moment metadata; strict currentness and actionable playback now precede source score.
 - Preferred place windows now favor current verified sources, then inside-ERN PLAY capability, then shared source scoring.
 - Hardened Living Atlas discovery so OFFLINE/UNAVAILABLE records are not exposed as actionable results; the Atlas Live/current filter also requires known permission.
