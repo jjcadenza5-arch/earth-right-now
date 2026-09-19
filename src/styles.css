@@ -87,3 +87,5 @@ button:disabled{cursor:not-allowed;opacity:.55}
 .site-footer{max-width:1180px;margin:28px auto 0;padding:18px 22px 34px;color:var(--muted);font-size:12px}.site-footer>p{opacity:.65}.privacy-summary{max-width:760px}.privacy-summary summary{cursor:pointer;color:var(--ink);font-weight:600}.privacy-summary ul{padding-left:18px;line-height:1.6}
 
 .discovery-status{min-height:1.2em;margin:8px 0 2px;color:var(--muted);font-size:12px}.discovery-status:empty{min-height:0;margin:0}
+
+.playback-feedback{position:fixed;left:50%;bottom:18px;z-index:80;transform:translateX(-50%);max-width:min(92vw,620px);margin:0;padding:8px 12px;border-radius:999px;background:rgba(12,18,24,.88);color:var(--ink);font-size:12px;pointer-events:none}.playback-feedback:empty{display:none}@media(prefers-reduced-motion:reduce){.playback-feedback{scroll-behavior:auto}}
