@@ -4,7 +4,7 @@ import { releaseEvidenceSummary } from "./release-evidence.js";
 export function buildReleaseCandidate(rows,evidence={},options={}){
   const inventory=publicationInventory(rows);
   const sourceWarnings=inventoryPublicationWarnings(rows);
-  const publication=releaseEvidenceSummary(rows,evidence,options);
+  const publication=releaseEvidenceSummary(rows,evidence,{...options,catalogOptions:{...(options.catalogOptions||{}),minimumCurrentHealthy:options.catalogOptions?.minimumCurrentHealthy??1,minimumInsideERN:options.catalogOptions?.minimumInsideERN??1}});
   return{
     generatedAt:new Date(options.now||Date.now()).toISOString(),
     releasable:publication.ready&&sourceWarnings.ok,
