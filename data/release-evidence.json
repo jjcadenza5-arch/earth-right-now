@@ -1,0 +1,8 @@
+{
+  "browser": {"ok": false, "note": "", "checkedAt": ""},
+  "mobile": {"ok": false, "note": "", "checkedAt": ""},
+  "providerPlayback": {"ok": false, "note": "", "checkedAt": ""},
+  "accessibility": {"ok": false, "note": "", "checkedAt": ""},
+  "performance": {"ok": false, "note": "", "checkedAt": ""},
+  "rollback": {"ok": false, "note": "", "checkedAt": ""}
+}
