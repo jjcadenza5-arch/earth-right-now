@@ -564,3 +564,11 @@ Current release posture:
 - Hero rotation and Live Right Now ranking now reward high-quality sources when their location is in a visually interesting light window, while preserving currentness, health, playback and diversity gates.
 - Solar state is a curation signal only: it does not claim clear weather or guarantee a visible sunrise/sunset.
 - This creates the foundation for future Sunrise Right Now / Sunset Right Now experiences without profiling visitors or weakening camera truth.
+
+
+## Scenic world expansion — 2026-09-19
+- Expanded the verified public catalog from 34 to 44 sources with a deliberately small high-quality set: Anguilla, Aruba, Lauderdale-by-the-Sea, Marco Island, Dublin, Chicago, Sint Maarten, Tbilisi (two views), and the ISS Earth view.
+- All new EarthCam sources remain EXTERNAL_LIVE / LINK_ONLY; no embed rights are inferred.
+- Added more strong beach, skyline, culture, street-life, harbor and space moments for the solar-aware Beautiful Right Now engine.
+- The ISS source intentionally has no fixed coordinates/time zone because it moves; solar-location ranking therefore does not invent a terrestrial location for it.
+- Yosemite was reviewed but not added in this tranche because its operator explicitly requires agreement to a Webcam Usage Agreement before featuring its webcams. Permission review comes before catalog promotion.
