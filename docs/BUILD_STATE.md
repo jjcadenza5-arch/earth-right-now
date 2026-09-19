@@ -34,6 +34,9 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Destination visual wiring corrected end-to-end: grouped place models now explicitly expose their current-first preferred window, so destination cards can actually inherit the intended safe poster rather than relying on an absent property.
+- Live Right Now now shares the lightweight poster system while retaining its strict-current inventory gate; visual richness cannot admit stale/non-current sources.
+- Added preferred-destination regression coverage to protect current-first selection as the catalog and multi-window destinations expand.
 - Visual restoration continued into destination discovery: place cards now inherit a safe preferred-window poster when legitimate imagery exists, with the same generated fallback semantics used elsewhere.
 - Added actual lightweight visual geometry for source cards, destination cards and Choose a Window tiles; these remain decorative poster surfaces and never instantiate additional iframe/video/image-refresh players.
 - Mobile visual sizing and destination/window card proportions were refined while preserving horizontal browsing and one-player playback.
