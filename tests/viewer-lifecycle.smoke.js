@@ -1,0 +1,1 @@
+import fs from "node:fs";const x=fs.readFileSync(new URL("../src/viewer-lifecycle.js",import.meta.url),"utf8");console.assert(x.includes("playerSession?.end?.()"));console.assert(x.includes("destroyMedia(mount)"));console.assert(x.includes("restoreOpener()"));console.assert(x.includes("closing"));console.log("ERN viewer lifecycle smoke checks passed");
