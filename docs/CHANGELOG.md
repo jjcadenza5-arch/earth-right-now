@@ -332,3 +332,14 @@
 - The disclosure does not add a modal, tracking consent layer or navigation interruption; camera/Earth content remains the primary experience.
 - Added regression coverage for the visitor-facing privacy summary.
 - Full CI is green.
+
+
+## 2026-09-19 — Discovery feedback and connection-aware playback
+- Explore search and ERN AI now share a destination-level result model that reports destination/window counts and gives explicit empty-state guidance instead of silently returning a blank grid.
+- Current/live intent failures use stricter language: when no verified-current destination matches, ERN says so and suggests removing the live/now constraint rather than falling back to stale media.
+- Search result feedback is exposed through polite live regions for keyboard/screen-reader users without adding modal interruption.
+- Connection policy advanced from warning-only to visitor-action enforcement: offline activation cannot start inside media, and constrained/data-saving activation of embedded video falls back to the provider source when a safe official URL exists.
+- Normal connections retain the existing one-player inside-ERN experience; truth, permission and catalog health are unchanged by network state.
+- Watch Earth and shared-window/deep-link activation use the same connection-aware source-action path as cards and Hero controls.
+- Added regression coverage for destination result truth, current-aware empty states, constrained source actions and offline activation.
+- Full CI is green.
