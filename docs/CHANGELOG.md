@@ -370,3 +370,11 @@
 - Visitors receive a count when old catalog references were skipped during import.
 - Added regression coverage for runtime fallback copy and catalog-aware My Earth hygiene.
 - Full CI is green.
+
+
+## 2026-09-19 — Discoverability, bilingual guardrails and destination choice clarity
+- Keyboard shortcuts are now discoverable through a quiet footer disclosure instead of existing only as hidden power-user behavior. The help reflects the actual implemented shortcuts for search, Surprise, viewer navigation, Escape and Tab.
+- Added an automated bilingual core-label audit so ERN's existing English/Thai navigation vocabulary cannot silently lose required translations as the interface evolves. This is a completeness guardrail, not a claim that the full product is translated.
+- Destination cards now summarize the mix of available window types — inside ERN, at source and preview — before the visitor opens Choose a Window, making the destination-first experience more transparent about what each place actually offers.
+- Added regression coverage for shortcut help, English/Thai core-label completeness and destination choice summaries.
+- Full CI is green.
