@@ -6,7 +6,7 @@ import { applyPoster } from "./source-poster.js";
 export function sourceCardView(source,{favorite=false,onPlay,onPlace,onFavorite}={}){
   const card=element("article",{className:"card"});
   const visual=element("div",{className:"card-visual",attrs:{"aria-hidden":"true"}});
-  applyPoster(visual,source,{label:false});
+  applyPoster(visual,source,{label:false,surface:"discovery"});
   const copy=element("div"),meta=element("span",{className:"meta",text:[source.country,source.region].filter(Boolean).join(" · ")}),title=element("h3",{text:source.title}),story=element("p",{text:source.story||""}),badges=element("div",{className:"card-badges"});
   for(const badge of sourceBadges(source))badges.append(element("span",{text:badge}));
   copy.append(meta,title,story,badges);
