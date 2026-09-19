@@ -654,3 +654,10 @@ Current release posture:
 - “Show me somewhere completely different” deliberately shifts away from the current place/country/region when possible.
 - Generic “Show me what is live right now” now returns the verified-current pool instead of failing because words like “show” are not catalog metadata.
 - Explicit place/landscape queries still use ERN AI ranking with My Earth taste as a bounded preference; action handling never bypasses source truth/currentness for current requests.
+
+
+## Watch Earth visible-playback synchronization fix — 2026-09-20
+- Fixed a real immersive-viewer bug reported from public use: the Watch Earth counter could advance through LINK_ONLY / EXTERNAL sources while the popup still displayed the previous embedded live stream, creating apparent repeated video at different positions such as 2/20 and 12/20.
+- Root cause: the journey admitted external-provider sources as valid sequence entries even though source-action correctly opens those outside ERN and therefore cannot replace the popup media.
+- Immersive Watch Earth now contains only verified-current sources with playbackCapability.action === PLAY. External live sources remain discoverable elsewhere with truthful provider links; they no longer advance an in-ERN playback counter without changing the visible media.
+- Session-level guard also requires a PLAY result before advancing the sequence, preventing future counter/media drift.
