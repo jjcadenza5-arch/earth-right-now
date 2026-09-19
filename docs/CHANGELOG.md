@@ -561,3 +561,9 @@
 - Expanded sitemap automatically from one homepage URL to homepage + 44 destinations.
 - Added structured TouristDestination metadata and links into the interactive ERN place experience.
 - Updated release build to publish destination pages, sitemap and robots policy.
+
+
+## 2026-09-19 — Earth Guide becomes actionable
+- Added structured SURPRISE, DIFFERENT, LIVE_NOW and SEARCH guide actions.
+- Fixed broad live-now requests so they return verified-current sources.
+- Connected surprise and different-place follow-ups to real ERN navigation/playback behavior.
