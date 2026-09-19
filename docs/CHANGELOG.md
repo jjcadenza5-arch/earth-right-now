@@ -297,3 +297,12 @@
 - Discovery imagery remains lazy, preserving the earlier performance split: Hero first, browsing imagery later.
 - Added regression coverage for eager/high-priority Hero loading and failure fallback.
 - Full CI is green.
+
+
+## 2026-09-19 — Guided ERN AI discovery
+- ERN AI now offers lightweight intent suggestions such as Live beaches now, Peaceful scenic views, City life, Wildlife and Mountains.
+- Suggestions feed the same existing intent-ranking pipeline rather than creating a second search system.
+- Current/live suggestions are hidden automatically when ERN has no verified current windows, so the interface does not promise a live result the catalog cannot presently support.
+- Suggestions are intentionally transparent preset queries, not claims of broad conversational AI understanding.
+- Added regression coverage for current-aware suggestion availability and safe empty-intent fallback.
+- Full CI is green.
