@@ -1,4 +1,6 @@
-export function sourceChoiceSummary(place){
- const sources=place?.sources||[],inside=sources.filter(s=>["EMBED","IMAGE_REFRESH"].includes(s.playback)&&["LIVE_VIDEO","LIVE_IMAGE"].includes(s.truth)).length,external=sources.filter(s=>["EXTERNAL_LIVE","PARTNER"].includes(s.truth)||s.playback==="EXTERNAL").length,preview=sources.filter(s=>s.truth==="PREVIEW"||s.playback==="PREVIEW").length;
- const parts=[];if(inside)parts.push(inside+" inside ERN");if(external)parts.push(external+" at source");if(preview)parts.push(preview+" preview");return parts.join(" · ")||"No available windows";
+import { discoverableSource } from "./discovery-eligibility.js";import { playbackCapability } from "./playback-capability.js";
+export function sourceChoiceCounts(place){
+ const sources=(place?.sources||[]).filter(discoverableSource),inside=sources.filter(s=>playbackCapability(s).action==="PLAY").length,external=sources.filter(s=>playbackCapability(s).action==="EXTERNAL").length;
+ return{available:sources.length,inside,external};
 }
+export function sourceChoiceSummary(place){const x=sourceChoiceCounts(place),parts=[];if(x.inside)parts.push(x.inside+" inside ERN");if(x.external)parts.push(x.external+" at source");return parts.join(" · ")||"No available windows";}
