@@ -1,0 +1,1 @@
+export function heroRotationCopy({enabled=true,seconds=30}={}){return enabled?"Earth view changes about every "+seconds+" seconds when you are not watching a window.":"Automatic Earth view changes are paused."}
