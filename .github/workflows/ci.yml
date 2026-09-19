@@ -26,7 +26,13 @@ jobs:
       - name: Report release posture
         if: success()
         run: npm run release:status
-      - name: Report beta readiness\n        if: success()\n        run: npm run release:readiness\n      - name: Report business readiness\n        if: success()\n        run: npm run business:status\n      - name: Publish smoke output to summary
+      - name: Report beta readiness
+        if: success()
+        run: npm run release:readiness
+      - name: Report business readiness
+        if: success()
+        run: npm run business:status
+      - name: Publish smoke output to summary
         if: always()
         run: |
           echo "## ERN smoke output" >> "$GITHUB_STEP_SUMMARY"
