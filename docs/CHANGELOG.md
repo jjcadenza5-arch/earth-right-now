@@ -512,3 +512,9 @@
 - Expanded destination travel intents to stay, eat, transport, activities, culture and practical nearby services.
 - Updated visitor-facing copy to keep Earth first and commerce secondary.
 - Added smoke coverage ensuring unsupported commercial categories fail closed.
+
+
+## 2026-09-19 — Privacy-first local taste model
+- Added local behavioral taste scoring from existing My Earth favorites and recent activity.
+- No demographic profiling, account requirement or external tracking introduced.
+- Added smoke coverage for preference learning and neutral zero-history behavior.
