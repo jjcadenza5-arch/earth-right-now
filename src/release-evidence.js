@@ -21,3 +21,22 @@ export function publicationChecklist(rows,evidence={},options={}){
     fresh:readiness.evidence[key].fresh
   }));
 }
+
+export function evidenceExpiry(checkedAt,{now=Date.now(),maxAgeDays=14}={}){
+  const time=Date.parse(checkedAt),maxAgeMs=maxAgeDays*24*60*60*1000;
+  if(!Number.isFinite(time))return{valid:false,expired:true,expiresAt:null,remainingMs:0};
+  const expiresAt=time+maxAgeMs,remainingMs=Math.max(0,expiresAt-now);
+  return{valid:true,expired:now>expiresAt,expiresAt:new Date(expiresAt).toISOString(),remainingMs};
+}
+
+export function releaseEvidenceSummary(rows,evidence={},options={}){
+  const readiness=releaseReadiness(rows,{...options,...evidence}),checklist=publicationChecklist(rows,evidence,options);
+  return{
+    ready:readiness.ready,
+    catalogReady:readiness.checks.catalog,
+    passed:checklist.filter(x=>x.ok).map(x=>x.key),
+    remaining:checklist.filter(x=>!x.ok).map(x=>x.key),
+    blockers:readiness.blockers,
+    checklist
+  };
+}
