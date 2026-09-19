@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Added conservative source-health transition logic for future automated checks: HTTP success alone cannot mark a source HEALTHY; current media must also be confirmed.
+- Failed/inconclusive checks preserve the last known successful-media timestamp instead of falsely refreshing source recency.
+- Definitive provider/media failure can mark OFFLINE; ambiguous media verification becomes DEGRADED/UNKNOWN.
+- Health automation is explicitly forbidden from changing source truth or permission rights.
 - Added a separate production release-readiness model so a green catalog can never be mistaken for permission to publish.
 - Production readiness now requires explicit evidence for desktop browser, mobile, real provider playback/iframe behavior, accessibility, performance, and rollback readiness in addition to the machine catalog gate.
 - Integration checks default to false and cannot become green through static inspection alone.
