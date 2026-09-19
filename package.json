@@ -15,7 +15,8 @@
     "release:candidate": "node scripts/release-candidate.mjs",
     "release:record": "node scripts/record-release-evidence.mjs",
     "release:build": "node scripts/build-release-snapshot.mjs",
-    "catalog:embeds": "node scripts/embed-registry-status.mjs"
+    "catalog:embeds": "node scripts/embed-registry-status.mjs",
+    "catalog:fallbacks": "node scripts/provider-fallback-status.mjs"
   },
   "engines": {
     "node": ">=20"
