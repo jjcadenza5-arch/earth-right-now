@@ -630,3 +630,11 @@ Current release posture:
 - Added canonical URL, crawlable description, Open Graph identity and JSON-LD WebSite metadata to the public shell.
 - Structured metadata describes ERN itself; it does not claim ownership of third-party camera feeds or invent live status.
 - This improves machine readability/discovery eligibility but does not guarantee inclusion or ranking in ChatGPT, Google or other search systems.
+
+
+## Privacy-first visitor analytics readiness — 2026-09-19
+- Added a fail-closed analytics adapter and explicit configuration boundary. Analytics remains OFF in the public beta until a real provider/site token is deliberately configured.
+- Prepared Cloudflare Web Analytics as the first supported aggregate provider because its current documentation describes it as free/privacy-first and says it does not collect or use visitors' personal data.
+- No token, account or analytics relationship is invented in the repository. Enabling real counts requires one external setup step to obtain the site token.
+- Existing ERN product telemetry remains separate and default-off; My Earth favorites/recents and search text remain outside telemetry.
+- Search Console remains an external ownership/verification step; the repository already exposes robots.txt, sitemap.xml and canonical metadata for it.
