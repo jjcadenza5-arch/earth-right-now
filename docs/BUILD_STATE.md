@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Large mature-UI fidelity pass: restored canonical Hero primary action sequence (Watch live → Watch Earth → My Earth → Explore → Next live), while retaining Surprise me as visually secondary discovery delight rather than interrupting the recovered 4:23 PM journey.
+- Immersive viewer layout refined toward the recovered later prototype behavior: media remains dominant, black letterboxing handles provider aspect ratios, story/place context is secondary, controls stay reachable, and mobile remains one-player rather than spawning local duplicate players.
+- Choose a Window / Live Right Now activation hardened so disabled/unavailable entries cannot invoke source actions through programmatic click handlers.
+- Source badges now require strict currentness before saying REFRESHED VIEW, closing another present-tense wording edge case.
+- Added visual/action hierarchy and immersive-viewer contracts plus regression coverage.
 - Quality pipeline stage: added a dependency-free Node smoke-test runner plus GitHub Actions CI on main pushes and pull requests, converting the accumulated smoke files from documentation-only artifacts into an executable regression suite.
 - CI remains distinct from release readiness: browser/mobile/provider-playback/accessibility/performance/rollback evidence still requires real-world validation and cannot be auto-certified by smoke tests.
 - Health automation foundation advanced to a report-only proposal pipeline. HTTP reachability alone cannot promote HEALTHY; provider/current-media confirmation is required, and the reporter never mutates truth, permission, rights basis or playback mode.
