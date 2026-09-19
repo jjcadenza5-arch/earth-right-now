@@ -1,1 +1,2 @@
 import { readJSON,writeJSON,stringArray } from "./storage-safe.js";const KEY="ern:recent-places:v1";export function recordRecentPlace(id,limit=20){if(!id)return loadRecentPlaces();const old=stringArray(readJSON(localStorage,KEY,[]),{limit});const next=[id,...old.filter(v=>v!==id)].slice(0,limit);writeJSON(localStorage,KEY,next);return next}export function loadRecentPlaces(){return stringArray(readJSON(localStorage,KEY,[]),{limit:20})}
+export function saveRecentPlaces(ids,{limit=20}={}){const next=stringArray(ids,{limit});writeJSON(localStorage,KEY,next);return next}
