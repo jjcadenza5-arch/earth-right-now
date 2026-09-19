@@ -34,6 +34,9 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Hardened durable destination routing: malformed, empty, overlong, compound, or unknown `#place=` hashes fail closed and cannot open arbitrary state.
+- Hardened sharing: missing IDs/browser APIs fail safely; native-share cancellation stays quiet; clipboard fallback is conditional; share copy does not imply every place is currently live.
+- Routing/share helpers now tolerate non-browser test contexts without depending on global `location`/`navigator` at module evaluation.
 - Added conservative source-health transition logic for future automated checks: HTTP success alone cannot mark a source HEALTHY; current media must also be confirmed.
 - Failed/inconclusive checks preserve the last known successful-media timestamp instead of falsely refreshing source recency.
 - Definitive provider/media failure can mark OFFLINE; ambiguous media verification becomes DEGRADED/UNKNOWN.
