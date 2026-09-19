@@ -1,10 +1,10 @@
 import { publicationInventory,inventoryPublicationWarnings } from "../src/publication-inventory.js";
-const now=new Date().toISOString(),base={placeId:"p",title:"x",truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",health:"HEALTHY",playback:"EXTERNAL",sourceUrl:"https://example.test",checkedAt:now,lastSuccessfulCheck:now};
+const now=Date.parse("2026-09-19T12:00:00.000Z"),stamp=new Date(now).toISOString(),base={placeId:"p",title:"x",truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",health:"HEALTHY",playback:"EXTERNAL",sourceUrl:"https://example.test",checkedAt:stamp,lastSuccessfulCheck:stamp};
 const current={...base,id:"current"};
-const stale={...base,id:"stale",checkedAt:"2026-09-01T00:00:00.000Z",lastSuccessfulCheck:"2026-09-01T00:00:00.000Z"};
-const x=publicationInventory([current,stale]);
+const stale={...base,id:"stale",checkedAt:"2026-09-15T12:00:00.000Z",lastSuccessfulCheck:"2026-09-15T12:00:00.000Z"};
+const x=publicationInventory([current,stale],{now});
 console.assert(x.currentIds.includes("current"),"current source must be visible in publication inventory");
 console.assert(x.recheckIds.includes("stale"),"stale source must be queued for recheck");
-const w=inventoryPublicationWarnings([stale]);
+const w=inventoryPublicationWarnings([stale],{now});
 console.assert(!w.ok&&w.warnings.includes("NO_CURRENT_INVENTORY"),"stale-only inventory must fail closed");
 console.log("ERN publication inventory smoke checks passed");
