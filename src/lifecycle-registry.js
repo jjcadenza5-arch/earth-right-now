@@ -1,0 +1,1 @@
+export function lifecycleRegistry(){const stops=new Set();return{add(stop){if(typeof stop==="function")stops.add(stop);return()=>stops.delete(stop)},stopAll(){for(const stop of [...stops]){try{stop()}catch{}stops.delete(stop)}return true},size(){return stops.size}}}
