@@ -361,3 +361,12 @@
 - Added a privacy-minimized travel-option event model for future optional telemetry; it contains offer/place/intent and commercial flags, not visitor identity or precise location.
 - Added regression coverage for blocked local storage, session-resume validation and commercial travel disclosure.
 - Full CI is green.
+
+
+## 2026-09-19 — Runtime recovery transparency and My Earth import hygiene
+- When an embedded provider, refreshed image or renderer fails at runtime, ERN now explains that it switched to a safer fallback instead of silently changing playback mode.
+- Runtime fallback messaging is specific enough to distinguish provider timeout, provider load failure, repeated current-image failure and render failure while avoiding claims about source truth that runtime errors cannot establish.
+- My Earth imports can now be reconciled against the current ERN place/window catalog. Retired or unknown catalog IDs are skipped during import instead of creating invisible stale state, while valid favorites and recents still merge rather than erase local data.
+- Visitors receive a count when old catalog references were skipped during import.
+- Added regression coverage for runtime fallback copy and catalog-aware My Earth hygiene.
+- Full CI is green.
