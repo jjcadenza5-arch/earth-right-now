@@ -174,3 +174,13 @@
 - The current player behavior is not silently changed yet; the policy is staged separately so real-device validation can determine the least surprising UX before it gates playback.
 - Added regression coverage for offline, 2G/slow-2G, Save-Data and normal connections.
 - Full CI is green.
+
+
+## 2026-09-19 — Lazy discovery imagery
+- Legitimate remote thumbnails on discovery cards/windows now render as real image elements with async decoding and lazy loading rather than CSS background images that browsers may fetch eagerly.
+- Discovery imagery receives low fetch priority by default; the loading policy retains an explicit high-priority path for future true Hero image elements.
+- Generated category posters remain CSS-only and require no network request.
+- Live Right Now and Choose a Window carry surface/index hints so image loading can remain intentional as those strips grow.
+- This does not create extra live media players and preserves the one-player invariant.
+- Added regression coverage for lazy/async/priority attributes and generated-poster no-image behavior.
+- Full CI is green.
