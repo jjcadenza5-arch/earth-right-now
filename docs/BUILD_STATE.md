@@ -34,6 +34,9 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Operations truth-plane integration completed: the private operations report now carries a deterministic catalog snapshot plus optional health-automation coverage audit alongside catalog/release gates and the revalidation queue.
+- Health batches with unknown IDs or omitted catalog sources are visibly incomplete in operations output; absence of a batch remains neutral so reporting and checking can run independently.
+- Added operations health-audit integration regression coverage and documentation without exposing maintenance diagnostics in the visitor UI.
 - Health automation coverage hardened: checker batches now surface unknown observation IDs and unobserved catalog sources instead of silently accepting typoed/stale/partial inventories; safe health patches remain narrow and cannot mutate truth/rights/playback fields.
 - Added health-observation coverage documentation and regression coverage; partial batches can produce proposals but cannot masquerade as a complete catalog check.
 - Journey-continuity pass: Watch Earth now uses sequential timeout scheduling rather than an always-running interval, suspends advancement while the tab is hidden, and resumes with the same configured pace.
