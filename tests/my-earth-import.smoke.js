@@ -1,0 +1,9 @@
+import "./test-browser-env.mjs";
+import { restoreMyEarthData,importMyEarthFile } from "../src/my-earth-import.js";
+localStorage.clear();localStorage.setItem("ern:favorites:v1",JSON.stringify(["local-window"]));localStorage.setItem("ern:favorite-places:v1",JSON.stringify(["local-place"]));
+const r=restoreMyEarthData({version:1,favoritePlaceIds:["import-place"],favoriteWindowIds:["import-window"],recentPlaceIds:["recent-place"],recentWindowIds:["recent-window"]});
+console.assert(r.ok&&r.data.favoriteWindowIds.includes("local-window")&&r.data.favoriteWindowIds.includes("import-window"),"restore must merge, not erase");
+console.assert(JSON.parse(localStorage.getItem("ern:recent-places:v1"))[0]==="recent-place");
+const bad=await importMyEarthFile({size:20,text:async()=>"{bad"});console.assert(!bad.ok);
+const huge=await importMyEarthFile({size:200000,text:async()=>"{}"});console.assert(!huge.ok&&huge.error.includes("too large"));
+console.log("ERN My Earth import smoke checks passed");
