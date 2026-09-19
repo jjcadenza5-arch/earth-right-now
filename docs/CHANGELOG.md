@@ -77,3 +77,11 @@
 - Network connectivity messages and camera-submission status are now polite atomic live regions so important asynchronous feedback is exposed to assistive technology.
 - Added a reusable deduplicating live-region announcer for future dynamic ERN surfaces.
 - CI remains green. The performance and accessibility publication gates still require real deployed/browser validation; these changes prepare measurable checks rather than self-certifying them.
+
+
+## 2026-09-19 — Deep-link navigation resilience
+- Centralized destination hash synchronization so shared `#place=...` links, browser Back/Forward, and direct hash changes all use the same fail-safe path.
+- History-driven destination restores no longer create duplicate history entries or falsely record a new recent visit.
+- Clearing or navigating away from a place hash closes the destination drawer without mutating browser history again.
+- Added regression coverage for valid, missing, opening and closing deep-link states.
+- CI remains green.
