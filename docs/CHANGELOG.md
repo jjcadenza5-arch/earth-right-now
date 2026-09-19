@@ -396,3 +396,11 @@
 - No release evidence was fabricated or promoted; publication remains blocked until the existing real-browser/mobile/provider/accessibility/performance/rollback evidence requirements are genuinely satisfied.
 - Added regression coverage for metadata completeness and release blocker summaries.
 - Full CI is green.
+
+
+## 2026-09-19 — Gentle living Hero
+- The Hero can now evolve on its own through the verified-current Hero pool, reinforcing ERN's “alive and adaptable” character without autoplaying media.
+- Automatic Hero changes are deliberately conservative: they pause when the tab is hidden, when reduced-motion is requested, or while a viewer/destination drawer is active, so the changing Earth view does not interrupt an active decision or accessibility preference.
+- Rotation reuses the existing daylight/currentness/playback-aware Hero ordering and the existing Next live path; it does not weaken truth, permission or recency gates.
+- Added isolated rotation policy/controller/copy models and regression coverage.
+- Full CI is green.
