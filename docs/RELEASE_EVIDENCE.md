@@ -21,3 +21,14 @@ CI/smoke success is useful engineering evidence but does not automatically satis
 Use the release-evidence helpers to keep publication checks fail-closed. Each check can be recorded independently, and the readiness summary exposes what has passed and what remains. Evidence expires after 14 days, so an old browser or provider-playback check cannot silently certify a later release.
 
 A green CI run does not populate these fields. Browser, mobile and provider playback require current real-world checks; accessibility, performance and rollback likewise require a dated note describing the actual validation performed.
+
+
+## Evidence ledger
+
+The checked-in fail-closed ledger lives at `data/release-evidence.json`. A missing or pending record never counts as a pass.
+
+Use:
+- `npm run release:evidence` to audit the ledger and reject any `ok: true` record that lacks a note, valid timestamp, or freshness.
+- `npm run release:status` to combine the ledger with the current catalog and print the publication candidate posture.
+
+Only record `ok: true` after the named real-world check has actually been performed. Notes should identify the environment/provider/check performed clearly enough that another maintainer can understand what was validated. Do not convert CI, source-health checks, or inferred behavior into browser/mobile/provider evidence.
