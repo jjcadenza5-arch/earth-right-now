@@ -85,3 +85,12 @@
 - Clearing or navigating away from a place hash closes the destination drawer without mutating browser history again.
 - Added regression coverage for valid, missing, opening and closing deep-link states.
 - CI remains green.
+
+
+## 2026-09-19 — Exact-window sharing
+- Viewer Share now targets the exact selected ERN window rather than collapsing every share to its destination.
+- Added safe `#window=...&place=...` deep links while retaining destination-only `#place=...` links.
+- Opening a shared window restores the destination context and then routes the exact source through ERN's normal source-action/playback policy, so external-only and unavailable states keep their truthful behavior.
+- Malformed/unknown shared window IDs fail closed rather than inventing a source.
+- Added regression coverage for encoding, parsing, generated URLs and exact-window navigation restoration.
+- CI remains green.
