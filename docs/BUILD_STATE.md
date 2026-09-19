@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Refined source verification recency by source class: inside-ERN embeds and live images 24h, external live/partner sources 72h, broader external pages 168h.
+- Explicitly separated `recently verified source` from `media frame proven live`; ERN does not claim cross-origin frame-level liveness it cannot observe.
+- PRIMARY catalog promotion now requires CURRENT_CHECK in addition to HEALTHY, known permission and quality; stale high-quality sources remain broader-Atlas material until reverified.
+- Recency evaluation accepts an explicit audit time for deterministic tests and tooling.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Repaired Daylight discovery: the Atlas no longer relies on an unreliable private `_daylight` field; it computes a source-local approximate daylight state from its IANA timezone at filter time.
 - Hero daylight preference and Atlas Daylight-only filtering now share one model; invalid/missing timezones are `Daylight unknown` rather than silently included.
 - Daylight wording is explicitly approximate (`Likely daylight` / `Likely night`) because local clock alone is not sunrise/sunset and does not account for latitude, season, terrain or weather.
