@@ -554,3 +554,10 @@
 - Added fail-closed analytics configuration and Cloudflare Web Analytics adapter.
 - Public beta injects no analytics script until an actual site token is configured.
 - Updated privacy copy and added smoke coverage for disabled-by-default behavior.
+
+
+## 2026-09-19 — Indexable destination layer
+- Added static crawlable pages for every real ERN place, generated from the truth catalog.
+- Expanded sitemap automatically from one homepage URL to homepage + 44 destinations.
+- Added structured TouristDestination metadata and links into the interactive ERN place experience.
+- Updated release build to publish destination pages, sitemap and robots policy.
