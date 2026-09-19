@@ -157,3 +157,11 @@
 - Discovery drawer lifecycle remains separate from the immersive player's media lifecycle, preserving ERN's one-player architecture.
 - Added regression coverage for opening, Escape closing, focus restoration and optional restoration suppression.
 - Full CI is green; deployed keyboard testing is still required before accessibility evidence can be marked passed.
+
+
+## 2026-09-19 — Shared-link routing hardening
+- Exact-window deep links now restore on initial page load even when a valid shared URL contains only a window ID and no destination component.
+- Window+destination links now verify that the requested source actually belongs to the requested destination before opening it. A mismatched/tampered pair falls back to the valid destination rather than presenting the wrong camera in that place context.
+- History-driven drawer closure can suppress opener focus restoration, avoiding stale focus jumps during browser Back/Forward navigation while normal user-initiated closes still restore focus.
+- Added regression coverage for window-only startup links and mismatched window/place hashes.
+- Full CI is green.
