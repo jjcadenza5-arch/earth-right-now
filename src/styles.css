@@ -55,3 +55,13 @@ linear-gradient(160deg,#0d3129,#061b17);background-size:auto,auto,auto,25% 25%,2
 .live-window-visual.poster-earth:before,.live-window-visual.poster-water:before,.live-window-visual.poster-wildlife:before,.live-window-visual.poster-mountain:before,.live-window-visual.poster-city:before{position:absolute;inset:0}
 .live-window-card{min-height:212px}
 @media(max-width:760px){.live-window-visual{height:92px}.live-window-card{min-height:228px}}
+
+/* Visual window fidelity: imagery is context, never a second player. */
+.window-visual,.live-window-visual{display:block;position:relative;width:100%;height:86px;border-radius:13px;margin:0 0 12px;overflow:hidden;background:#0b2922;background-size:cover;background-position:center}
+.window-visual:after,.live-window-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,16,13,.42),transparent 70%);pointer-events:none}
+.window-tile,.live-window-card{overflow:hidden}
+.window-tile .window-state,.live-window-state{margin-bottom:7px}
+.featured-moment.has-poster{background-size:cover;background-position:center;position:relative;overflow:hidden}
+.featured-moment.has-poster:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,16,13,.82),rgba(3,16,13,.08) 72%);pointer-events:none}
+.featured-moment.has-poster>*{position:relative;z-index:1}
+@media(max-width:760px){.window-visual,.live-window-visual{height:112px}.featured-moment{min-height:360px}}
