@@ -34,6 +34,7 @@ export function releaseEvidenceSummary(rows,evidence={},options={}){
   return{
     ready:readiness.ready,
     catalogReady:readiness.checks.catalog,
+    catalog:readiness.catalog,
     passed:checklist.filter(x=>x.ok).map(x=>x.key),
     remaining:checklist.filter(x=>!x.ok).map(x=>x.key),
     blockers:readiness.blockers,
