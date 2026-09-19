@@ -542,3 +542,9 @@
 - Added solar-moment lanes for sunrise, sunset, morning/evening light, night and daylight.
 - Added visitor-facing Earth Light surface using current healthy sources.
 - Added explicit solar-geometry disclaimer and smoke coverage against weather overclaiming.
+
+
+## 2026-09-19 — Public AI/search discovery
+- Added robots.txt explicitly allowing OAI-SearchBot and public crawlers.
+- Added canonical sitemap root, metadata and JSON-LD WebSite identity.
+- Added smoke coverage for crawler access and canonical machine-readable identity.

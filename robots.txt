@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://jjcadenza5-arch.github.io/earth-right-now/sitemap.xml
