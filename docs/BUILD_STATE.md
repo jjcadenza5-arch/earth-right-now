@@ -34,6 +34,10 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Hardened the future business-camera submission boundary: intake remains PENDING_REVIEW and can never auto-publish or auto-upgrade a source.
+- Submission URLs are restricted to public HTTP(S) syntax with credentials/localhost/loopback rejected; text fields are normalized and bounded; optional contact is validated.
+- The submitter rights checkbox is explicitly treated as an assertion, not ERN verification. Truth, health, permission, playback, attribution and provenance still require independent review.
+- Documented that any future server-side fetcher must repeat validation and add SSRF/private-network protections; browser validation is not a server security boundary.
 - Hardened durable destination routing: malformed, empty, overlong, compound, or unknown `#place=` hashes fail closed and cannot open arbitrary state.
 - Hardened sharing: missing IDs/browser APIs fail safely; native-share cancellation stays quiet; clipboard fallback is conditional; share copy does not imply every place is currently live.
 - Routing/share helpers now tolerate non-browser test contexts without depending on global `location`/`navigator` at module evaluation.
