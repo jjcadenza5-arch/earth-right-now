@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Closed the Hero fallback regression: app startup now selects only from the strict Hero-eligible pool and never falls through to PRIMARY/raw catalog sources just to fill the Hero.
+- Added an honest Hero rechecking state for an empty verified-current pool; Watch live / Next live disable while Explore and My Earth remain usable.
+- Hero live controls now inherit canonical Hero eligibility, so a HEALTHY-but-stale source cannot enable Hero playback controls.
+- Next Hero is a no-op when the verified-current pool is empty rather than cycling into broader catalog data.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Integrated durable destination deep links with browser Back/Forward: opening a place pushes `#place=<id>`, closing returns to the clean URL, and popstate silently reconciles the drawer without creating history loops.
 - Initial malformed/unknown place hashes fail closed through the existing safe route model; Back/Forward navigation does not record fake recent-place visits.
 - Hardened immersive-viewer focus trapping for hidden/disabled controls and unexpected focus positions; focus remains non-scrolling.
