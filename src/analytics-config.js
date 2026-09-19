@@ -1,0 +1,1 @@
+export const analyticsConfig={provider:"NONE",enabled:false,siteToken:"",privacyMode:"AGGREGATE_ONLY"};export function analyticsReady(c=analyticsConfig){return Boolean(c.enabled&&c.provider!=="NONE"&&c.siteToken)};
