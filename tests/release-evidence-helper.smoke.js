@@ -1,0 +1,11 @@
+import { blankReleaseEvidence,releaseEvidenceRecord,publicationChecklist,RELEASE_EVIDENCE_KEYS } from "../src/release-evidence.js";
+const blank=blankReleaseEvidence();
+console.assert(RELEASE_EVIDENCE_KEYS.every(k=>blank[k]?.ok===false),"blank evidence must never certify publication");
+const stamp="2026-09-19T04:00:00.000Z";
+const browser=releaseEvidenceRecord("browser",{ok:true,note:"Chrome desktop manual pass",checkedAt:stamp});
+console.assert(browser.ok&&browser.note&&browser.checkedAt===stamp);
+let rejected=false;try{releaseEvidenceRecord("madeUp",{ok:true,note:"x",checkedAt:stamp})}catch{rejected=true}console.assert(rejected,"unknown evidence categories must be rejected");
+const checklist=publicationChecklist([],{browser},{now:Date.parse(stamp)});
+console.assert(checklist.length===6&&checklist.find(x=>x.key==="browser")?.ok===true,"checklist must expose validated browser evidence");
+console.assert(checklist.find(x=>x.key==="mobile")?.ok===false,"missing evidence must remain blocked");
+console.log("ERN release evidence helper smoke checks passed");
