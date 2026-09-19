@@ -20,6 +20,8 @@ jobs:
         run: |
           set -o pipefail
           npm test 2>&1 | tee smoke-output.txt
+      - name: Audit embed registry
+        run: npm run catalog:embeds
       - name: Audit release evidence ledger
         if: success()
         run: npm run release:evidence
