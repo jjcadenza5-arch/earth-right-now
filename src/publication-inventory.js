@@ -2,14 +2,14 @@ import { currentSource } from "./discovery-eligibility.js";
 import { playbackCapability } from "./playback-capability.js";
 import { recencyState } from "./source-recency.js";
 
-export function publicationInventory(rows=[]){
+export function publicationInventory(rows=[],options={}){
   const sources=(rows||[]).filter(Boolean);
   const current=sources.filter(currentSource);
   const inside=current.filter(source=>playbackCapability(source).action==="PLAY");
   const external=current.filter(source=>playbackCapability(source).action==="OPEN");
-  const stale=sources.filter(source=>recencyState(source)==="STALE_CHECK");
-  const expired=sources.filter(source=>recencyState(source)==="EXPIRED_CHECK");
-  const unknown=sources.filter(source=>recencyState(source)==="UNKNOWN");
+  const stale=sources.filter(source=>recencyState(source,options)==="STALE_CHECK");
+  const expired=sources.filter(source=>recencyState(source,options)==="EXPIRED_CHECK");
+  const unknown=sources.filter(source=>recencyState(source,options)==="UNKNOWN");
   return{
     total:sources.length,
     current:current.length,
