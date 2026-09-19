@@ -20,6 +20,9 @@ jobs:
         run: |
           set -o pipefail
           npm test 2>&1 | tee smoke-output.txt
+      - name: Report release posture
+        if: success()
+        run: npm run release:status
       - name: Publish smoke output to summary
         if: always()
         run: |
