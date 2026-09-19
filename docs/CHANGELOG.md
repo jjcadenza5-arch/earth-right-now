@@ -459,3 +459,13 @@
 - Dismissal clears the offer, and ERN never auto-plays a window or auto-opens a destination from continuity state.
 - Added UI regression coverage for the privacy and catalog-validity contract.
 - Pull-request CI passed before merge; stable main was updated only after the green check.
+
+
+## 2026-09-19 — Camera breadth, business review and release-candidate reporting
+- Expanded the current catalog from 27 to 30 healthy records and the verified inside-ERN inventory from 4 to 7.
+- Added current embeddable live-video windows for Taiwan, New York and Cancún with provider attribution and dated rights/health notes.
+- Added an auditable business-readiness model; foundation and commercial activation are reported separately.
+- Added a source-first partner review workflow so commercial status never bypasses ERN truth, permission or health requirements.
+- Added release-candidate reporting to CI and modernized the CI runtime.
+- Repaired an intermediate workflow-formatting regression; the corrected pull-request CI completed successfully before merge.
+- Current planning indicators: beta 71%, business activation 71%. Formal publication remains blocked by the six real-world evidence checks.
