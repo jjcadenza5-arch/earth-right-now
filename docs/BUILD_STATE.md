@@ -17,7 +17,7 @@ Completed:
 - Watch Earth now selects through the shared registry/selection engine.
 
 Additional completed stages:
-- Visitor-facing verification freshness now extends into the immersive viewer, so the exact window being watched carries its latest ERN check age alongside truth/status badges.
+- My Earth portability controls are fully wired end-to-end: local export, validated merge import, in-memory reload and stable visitor status messaging.\n- Replacing a destination inside the already-open Choose a Window drawer preserves one dialog lifecycle, refocuses safely after DOM replacement and retains the original opener for Escape/close.\n- Long-lived sessions now use a visibility-aware freshness clock so currentness-sensitive surfaces and viewer verification age cannot remain frozen indefinitely after source checks age out.\n- Visitor-facing verification freshness now extends into the immersive viewer, so the exact window being watched carries its latest ERN check age alongside truth/status badges.
 - Verification age copy switches from hours to days after 48 hours, reducing false precision while preserving recheck/expired warnings.
 - Hero remote imagery now uses an explicit eager/high-priority image lifecycle with generated fallback on load failure; discovery imagery remains lazy.
 - ERN AI has guided intent suggestions that feed the existing ranking pipeline and suppress current/live suggestions when no verified-current inventory exists.
