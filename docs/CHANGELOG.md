@@ -548,3 +548,9 @@
 - Added robots.txt explicitly allowing OAI-SearchBot and public crawlers.
 - Added canonical sitemap root, metadata and JSON-LD WebSite identity.
 - Added smoke coverage for crawler access and canonical machine-readable identity.
+
+
+## 2026-09-19 — Analytics-ready, still private by default
+- Added fail-closed analytics configuration and Cloudflare Web Analytics adapter.
+- Public beta injects no analytics script until an actual site token is configured.
+- Updated privacy copy and added smoke coverage for disabled-by-default behavior.
