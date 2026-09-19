@@ -23,3 +23,13 @@
 - Restored My Earth place/window/recent layers.
 - Restored Choose a Window as a horizontal strip with local immersive playback.
 - Added capability-aware Hero action model for embedded vs external current sources.
+
+
+## 2026-09-19 — CI truth restoration and release-control hardening
+- Repaired GitHub Actions smoke execution and made failure output observable through job logs, summaries and retained diagnostics.
+- Removed a discovery/playback recursion exposed by stricter currentness checks.
+- Corrected external-current publication inventory classification.
+- Added dependency-free browser primitives for DOM/storage smoke tests instead of pretending Node has browser globals.
+- Updated stale test fixtures to obey current provider allowlists, source currentness and Watch Earth eligibility.
+- Restored the complete 163-test smoke suite to green on main.
+- Added `npm run release:status` as a report-only publication-candidate check; real-world release evidence remains mandatory.
