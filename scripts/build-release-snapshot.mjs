@@ -2,9 +2,14 @@ import { readFile,writeFile,mkdir,cp } from "node:fs/promises";
 import { createHash } from "node:crypto";
 const root=new URL("../",import.meta.url),dist=new URL("../dist/",import.meta.url);
 await mkdir(dist,{recursive:true});
+// Generate crawlable destination pages and sitemap from the same truth catalog used by the app.
+await import("./build-destination-pages.mjs");
 await cp(new URL("../index.html",import.meta.url),new URL("index.html",dist));
 await cp(new URL("../src/",import.meta.url),new URL("src/",dist),{recursive:true});
 await cp(new URL("../data/",import.meta.url),new URL("data/",dist),{recursive:true});
+await cp(new URL("../places/",import.meta.url),new URL("places/",dist),{recursive:true});
+await cp(new URL("../sitemap.xml",import.meta.url),new URL("sitemap.xml",dist));
+await cp(new URL("../robots.txt",import.meta.url),new URL("robots.txt",dist));
 await cp(new URL("../deploy/_headers",import.meta.url),new URL("_headers",dist));
 await cp(new URL("../deploy/_redirects",import.meta.url),new URL("_redirects",dist));
 const files=["index.html","data/sources.json","data/release-evidence.json"];

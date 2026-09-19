@@ -16,7 +16,8 @@
     "release:record": "node scripts/record-release-evidence.mjs",
     "release:build": "node scripts/build-release-snapshot.mjs",
     "catalog:embeds": "node scripts/embed-registry-status.mjs",
-    "catalog:fallbacks": "node scripts/provider-fallback-status.mjs"
+    "catalog:fallbacks": "node scripts/provider-fallback-status.mjs",
+    "build:destinations": "node scripts/build-destination-pages.mjs"
   },
   "engines": {
     "node": ">=20"
