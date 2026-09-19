@@ -32,7 +32,10 @@ jobs:
       - name: Report business readiness
         if: success()
         run: npm run business:status
-      - name: Report release candidate\n        if: success()\n        run: npm run release:candidate\n      - name: Publish smoke output to summary
+      - name: Report release candidate
+        if: success()
+        run: npm run release:candidate
+      - name: Publish smoke output to summary
         if: always()
         run: |
           echo "## ERN smoke output" >> "$GITHUB_STEP_SUMMARY"
