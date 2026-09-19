@@ -19,7 +19,7 @@ jobs:
         id: smoke
         run: |
           set -o pipefail
-          npm test 2>&1 | tee smoke-output.txt\n          status=${PIPESTATUS[0]}\n          echo "SMOKE_EXIT=$status" >> "$GITHUB_STEP_SUMMARY"\n          exit "$status"
+          npm test 2>&1 | tee smoke-output.txt
       - name: Publish smoke output to summary
         if: always()
         run: |
