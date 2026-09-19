@@ -480,3 +480,10 @@
 - GitHub-built release manifests now stamp the candidate commit SHA directly.
 - Business activation has provider-neutral submission/affiliate adapter contracts and a source-first review workflow, while real transmission and affiliate inventory remain disabled.
 - Publication remains fail-closed pending the six real-world checks; no CI result has been converted into browser/provider evidence.
+
+
+## 2026-09-19 — Beautiful-now New York and Takayama curation
+- Added three EarthCam New York Harbor windows as EXTERNAL_LIVE / LINK_ONLY, including the Jersey City skyline view and two Statue of Liberty perspectives.
+- Added Takayama live-stream and refreshed-image windows as separate truthful source types under one destination.
+- Changed the existing Manhattan CouchTourist source health from HEALTHY to UNKNOWN pending revalidation after real beta feedback that the picture appeared unusually still.
+- No third-party embed rights were inferred for EarthCam or Takayama.
