@@ -600,3 +600,10 @@ Current release posture:
 - Two visitors can now gradually receive different ordering based on their own Favorite Windows, Favorite Places, Recent Windows and Recent Places, while ERN still starts from the same verified-current/diverse candidate pool.
 - Personalization reorders discovery; it does not remove truth/health/currentness/permission gates and it does not collapse the feed to only familiar categories.
 - With no local history, behavior remains the neutral global curation.
+
+
+## ERN AI + My Earth taste — 2026-09-19
+- ERN AI now combines explicit visitor language with the browser-local taste model.
+- The visitor's words remain primary; learned taste is a bounded secondary ranking signal. A beach preference cannot turn a snow request into a beach result.
+- The same broad request can therefore feel different for different visitors: “beautiful right now” can lean toward mountains for one person and beaches for another, while remaining inside the matching verified/discoverable pool.
+- No demographic identity, account or server-side profile is required.

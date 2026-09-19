@@ -524,3 +524,9 @@
 - Live Right Now now uses local My Earth behavior as a secondary ranking layer over verified current diverse sources.
 - No account, demographic profile or external tracking is required.
 - Added smoke coverage ensuring a learned preference can change ordering without reducing available discovery choices.
+
+
+## 2026-09-19 — ERN AI meets My Earth
+- Added bounded local-taste affinity to ERN AI ranking and destination discovery.
+- Connected live browser favorites/recent activity to ERN AI at query time.
+- Added tests proving identical broad requests can personalize differently while explicit intent still wins.
