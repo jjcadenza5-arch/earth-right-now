@@ -572,3 +572,10 @@ Current release posture:
 - Added more strong beach, skyline, culture, street-life, harbor and space moments for the solar-aware Beautiful Right Now engine.
 - The ISS source intentionally has no fixed coordinates/time zone because it moves; solar-location ranking therefore does not invent a terrestrial location for it.
 - Yosemite was reviewed but not added in this tranche because its operator explicitly requires agreement to a Webcam Usage Agreement before featuring its webcams. Permission review comes before catalog promotion.
+
+
+## Official tourism scenic expansion — 2026-09-19
+- Expanded the public catalog from 44 to 49 sources using official destination/operator pages rather than webcam aggregators: Flåm/Aurland, Verbier, Amden/Weesen/Walensee, Oeschinensee and Lake Lucerne.
+- Diversifies ERN toward high-trust travel-intent sources that naturally connect current views with destination planning.
+- Where the provider describes “live images” without proving moving video, ERN conservatively uses LIVE_IMAGE rather than LIVE_VIDEO.
+- All remain LINK_ONLY unless explicit embedding permission is established.
