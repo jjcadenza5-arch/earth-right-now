@@ -1,0 +1,10 @@
+import { interpretEarthIntent } from "./earth-intent.js";
+const norm=q=>String(q||"").toLowerCase().trim();
+export function earthGuideAction(query){
+ const q=norm(query),intent=interpretEarthIntent(q);
+ if(/surprise me|somewhere random|random window/.test(q))return{type:"SURPRISE"};
+ if(/completely different|somewhere different|something different/.test(q))return{type:"DIFFERENT"};
+ if(intent.wantsCurrent&&intent.intents.length===0&&/^(show me )?(what is |what's )?(live|current|right now|live right now|current right now)/.test(q))return{type:"LIVE_NOW"};
+ return{type:"SEARCH"};
+}
+export function differentFrom(items,current,{limit=8}={}){const country=current?.country,region=current?.region,place=current?.placeId||current?.id;const far=(items||[]).filter(s=>(s.placeId||s.id)!==place&&s.country!==country&&s.region!==region);return(far.length?far:items||[]).slice(0,limit)}
