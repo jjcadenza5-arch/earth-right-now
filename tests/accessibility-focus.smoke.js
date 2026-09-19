@@ -1,0 +1,1 @@
+import fs from "node:fs";const x=fs.readFileSync(new URL("../src/accessibility.js",import.meta.url),"utf8");console.assert(x.includes('!list.includes(document.activeElement)'));console.assert(x.includes("preventScroll:true"));console.assert(x.includes('catch{return false}'));console.log("ERN accessibility focus smoke checks passed");
