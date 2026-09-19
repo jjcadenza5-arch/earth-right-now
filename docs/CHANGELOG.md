@@ -440,3 +440,13 @@
 - Centralized destination action semantics so future discovery surfaces can reuse the same disabled/label/accessibility contract.
 - Added regression coverage for actionable choice summaries and destination action semantics.
 - Full CI is green.
+
+
+## 2026-09-19 — Translation audit integrity and My Earth cleanup truth
+- Fixed the core bilingual audit so English fallback can no longer hide a missing Thai translation. The language layer now exposes raw translation presence separately from visitor-facing fallback behavior.
+- Restored catalog-aware hygiene to the My Earth import pipeline and made cleanup accounting explicit: retired catalog references, duplicates and items over local limits are counted separately.
+- Import feedback now reports what was actually cleaned instead of describing every removed item as an old catalog reference.
+- Existing local My Earth data is still merged rather than erased; catalog-aware import then removes references that are no longer valid in the current ERN catalog.
+- A regression-fixture syntax error briefly failed CI during this stage; it was corrected and the full suite returned green.
+- Added/expanded regression coverage for translation fallback masking, precise hygiene counts, local limits and catalog-aware restore.
+- Full CI is green.
