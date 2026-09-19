@@ -661,3 +661,10 @@ Current release posture:
 - Root cause: the journey admitted external-provider sources as valid sequence entries even though source-action correctly opens those outside ERN and therefore cannot replace the popup media.
 - Immersive Watch Earth now contains only verified-current sources with playbackCapability.action === PLAY. External live sources remain discoverable elsewhere with truthful provider links; they no longer advance an in-ERN playback counter without changing the visible media.
 - Session-level guard also requires a PLAY result before advancing the sequence, preventing future counter/media drift.
+
+
+## Bounded My Earth personalization — 2026-09-20
+- Corrected Live Right Now's personalized-state flag: a new visitor with zero local taste signals is now explicitly neutral rather than being marked personalized merely because live items exist.
+- Personalization is now a bounded bonus layered over ERN's verified-current / beautiful-now base order instead of a wholesale taste-score sort.
+- The final slots deliberately preserve discovery from the neutral Earth ranking, reducing filter-bubble behavior while still letting favorites/recent behavior gently shape the visitor's ERN.
+- Truth, permission, health, freshness and the balanced live candidate pool remain upstream gates; taste cannot promote an ineligible source.

@@ -573,3 +573,9 @@
 - Fixed counter/media drift where external-only journey entries advanced 2/20, 12/20, etc. while the old embedded stream remained visible.
 - Immersive Watch Earth now sequences only sources that can actually replace the in-ERN player.
 - Added session guard and regression smoke coverage.
+
+
+## 2026-09-20 — Make personalization gentle, not dominant
+- Fixed false personalized state for visitors with no My Earth signals.
+- Bounded taste influence on Live Right Now and reserved discovery capacity from the neutral Earth ranking.
+- Added regression coverage for neutral visitors, taste influence and continued exploration.
