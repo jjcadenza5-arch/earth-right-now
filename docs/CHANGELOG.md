@@ -103,3 +103,12 @@
 - Ranking favors destinations with strict-current and inside-ERN options while retaining truthful source availability.
 - Added regression coverage for multi-window destinations inside map clusters.
 - CI remains green.
+
+
+## 2026-09-19 — Destination travel bridge foundation
+- Added a lightweight Plan From Here surface to destination drawers for stays, food, transport and tickets/activities.
+- The bridge preserves ERN's camera truth model: travel planning is visually and semantically separate from source status/playback.
+- No unverified provider, affiliate or sponsored offer is shown. Until verified integrations exist, visitor intent receives an explicit not-connected-yet message rather than a fabricated recommendation.
+- The existing verified-only travel-offer model remains the gate for future partner/affiliate links and disclosures.
+- Added regression coverage for destination context, intent routing and hidden incomplete contexts.
+- CI initially caught a fake-DOM test activation mismatch; the test was corrected without weakening product behavior and the subsequent full CI run is green.
