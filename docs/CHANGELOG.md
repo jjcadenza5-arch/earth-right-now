@@ -194,3 +194,14 @@
 - Added bounded storage writers for recent places/windows so restore uses the same safe localStorage layer as ordinary ERN activity.
 - Added regression coverage for merge-not-erase behavior, recent restore, malformed JSON and oversized files.
 - Full CI is green.
+
+
+## 2026-09-19 — Verified travel-offer rendering boundary
+- Advanced the destination travel bridge from placeholder intent buttons to a real verified-offer rendering model without adding fabricated partners.
+- Only offers that pass the existing verified-offer gate can appear; unverified records remain invisible even if they contain valid-looking provider URLs.
+- Verified offers render provider identity, a safe external link and explicit Sponsored / Affiliate / Travel option disclosure.
+- Destination intent buttons can show counts only from verified offers, preserving truthful zero-state messaging until actual integrations are connected.
+- Added inventory/selectors for verified offers by destination and intent so future Booking/Agoda/ticket/transport adapters can feed one consistent boundary.
+- No real commercial partner data has been added and no affiliate relationship is implied.
+- Added regression coverage for hidden unverified offers, disclosure, counts and destination filtering.
+- Full CI is green.
