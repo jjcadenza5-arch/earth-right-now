@@ -34,6 +34,9 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Added a private operations-report layer combining catalog health, release blockers and a deterministic revalidation queue without exposing maintenance diagnostics in the visitor UI.
+- Revalidation scheduling now carries explicit UNKNOWN / DEGRADED / RECHECK_DUE reasons and prioritizes deep-validation/embed/inside-ERN candidates without granting promotion.
+- Strengthened production readiness toward auditable dated evidence for browser, mobile, provider playback, accessibility, performance and rollback checks; catalog readiness remains separate from publication readiness.
 - Completed catalog identity hardening after the interrupted helper pass: recovery now deduplicates normalized public/recovery IDs plus source/official/embed URLs and records explicit duplicate reasons.
 - Public catalog guard rejects duplicate canonical sourceUrl records, preventing one camera from masquerading as multiple independent windows and distorting counts/ranking/favorites/journey diversity.
 - Added/updated catalog identity regression smoke checks and documentation; uniqueness remains independent from truth, health and permission verification.
