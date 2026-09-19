@@ -3,7 +3,7 @@ const now="2026-09-19T12:00:00.000Z",base={id:"inside",placeId:"p",title:"Inside
 const evidence=Object.fromEntries(["browser","mobile","providerPlayback","accessibility","performance","rollback"].map(key=>[key,{ok:true,note:key+" checked",checkedAt:now}]));
 const c=buildReleaseCandidate([base],evidence,{now:Date.parse(now)});
 console.assert(c.releasable===true,"fully current catalog plus fresh evidence should form a releasable candidate");
-console.assert(c.inventory.insideERN===1&&c.recheckIds.length===0);
+console.assert(c.inventory.insideERN===1&&c.recheckIds.length===0);\nconsole.assert(c.inventory.currentIds.includes("inside"),"candidate inventory must use the same audit clock as release evidence");
 console.assert(releaseCandidateText(c).includes("READY"));
 const blocked=buildReleaseCandidate([base],{},{now:Date.parse(now)});
 console.assert(!blocked.releasable&&blocked.publication.remaining.length===6,"missing real-world evidence must block candidate");
