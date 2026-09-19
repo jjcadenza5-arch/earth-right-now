@@ -1,0 +1,7 @@
+import { affiliatePartner,activeAffiliatePartner,partnerDisclosure } from "../src/affiliate-partners.js";
+const p=affiliatePartner({id:"hotel-x",name:"Hotel X",intent:"stay",baseUrl:"https://example.com/",affiliate:true,enabled:true,verifiedAt:"2026-09-01",expiresAt:"2026-10-01"});
+console.assert(activeAffiliatePartner(p,{now:Date.parse("2026-09-19")}));
+console.assert(partnerDisclosure(p)==="Affiliate");
+console.assert(!activeAffiliatePartner({...p,expiresAt:"2026-09-10"},{now:Date.parse("2026-09-19")}));
+console.assert(affiliatePartner({...p,baseUrl:"javascript:alert(1)"})===null);
+console.log("ERN affiliate partner smoke checks passed");
