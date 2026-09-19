@@ -51,3 +51,12 @@
 - The catalog gate is now clean: 27 valid records, 0 rejected records.
 - Revalidated the Mpala Watering Hole CouchTourist page, embed URL and required attribution against the current provider page.
 - CI remains green. Publication remains intentionally blocked only by remaining source recheck(s) and the real-world browser/mobile/provider/accessibility/performance/rollback evidence gate.
+
+
+## 2026-09-19 — Real-world validation kit and accessibility preflight
+- Codified the six publication evidence dimensions into a concrete real-world validation plan with steps and explicit pass conditions.
+- Added `npm run release:checklist` to generate a human/browser validation checklist without converting automation into false real-world evidence.
+- Strengthened accessible names for ERN AI search, Explore search, Atlas search and business-camera submission fields.
+- Added prominent keyboard focus-visible styling, disabled-control affordance and a higher-contrast preference response.
+- Added smoke coverage for the release validation plan and accessibility surface.
+- CI remains green; these engineering/accessibility preflight improvements do not self-certify the pending real-world accessibility evidence gate.
