@@ -556,3 +556,11 @@ Current release posture:
 - Added Hida-Takayama as a multi-window destination with a provider-hosted live stream plus refreshed current images.
 - Withheld the existing CouchTourist Manhattan skyline embed from HEALTHY promotion after beta feedback that it appeared unusually still; provider still labels it live, but ERN now requires a motion/currentness recheck before promoting it again.
 - This stage strengthens the future time-aware “beautiful right now” direction without weakening source truth or permission rules.
+
+
+## Solar-aware “Beautiful Right Now” foundation — 2026-09-19
+- Added a dependency-free solar-position model using each source's coordinates and the current UTC time.
+- ERN can now identify approximate sunrise, sunset, morning light, evening light, daylight and night without a weather/API dependency.
+- Hero rotation and Live Right Now ranking now reward high-quality sources when their location is in a visually interesting light window, while preserving currentness, health, playback and diversity gates.
+- Solar state is a curation signal only: it does not claim clear weather or guarantee a visible sunrise/sunset.
+- This creates the foundation for future Sunrise Right Now / Sunset Right Now experiences without profiling visitors or weakening camera truth.

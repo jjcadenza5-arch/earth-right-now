@@ -487,3 +487,10 @@
 - Added Takayama live-stream and refreshed-image windows as separate truthful source types under one destination.
 - Changed the existing Manhattan CouchTourist source health from HEALTHY to UNKNOWN pending revalidation after real beta feedback that the picture appeared unusually still.
 - No third-party embed rights were inferred for EarthCam or Takayama.
+
+
+## 2026-09-19 — Solar-aware Beautiful Right Now curation
+- Added coordinate-based solar elevation and sunrise/sunset direction detection with no third-party API.
+- Hero and Live Right Now ordering now consider current light conditions after source truth/currentness gates.
+- Sunrise/sunset scoring is deliberately treated as a ranking signal, not a weather/visibility claim.
+- Added smoke coverage for equinox noon, sunrise, sunset and beautiful-now ranking.
