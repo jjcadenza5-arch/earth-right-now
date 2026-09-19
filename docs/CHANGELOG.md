@@ -306,3 +306,11 @@
 - Suggestions are intentionally transparent preset queries, not claims of broad conversational AI understanding.
 - Added regression coverage for current-aware suggestion availability and safe empty-intent fallback.
 - Full CI is green.
+
+
+## 2026-09-19 — Viewer verification freshness and build-state sync
+- The immersive viewer now carries the same source-verification freshness context already used on Live Right Now and Choose a Window, making trust information visible at the moment a visitor actually watches or opens a source.
+- Verification ages switch to day-level wording after 48 hours to avoid unnecessary hour-level precision on older checks while retaining explicit recheck/expired language.
+- BUILD_STATE has been synchronized with the major September 19 reliability, discovery, sharing, partner-verification, My Earth and imagery stages so repository continuity matches the implementation.
+- Added regression coverage for hour/day freshness formatting.
+- Full CI is green.
