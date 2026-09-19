@@ -518,3 +518,9 @@
 - Added local behavioral taste scoring from existing My Earth favorites and recent activity.
 - No demographic profiling, account requirement or external tracking introduced.
 - Added smoke coverage for preference learning and neutral zero-history behavior.
+
+
+## 2026-09-19 — Personalized Live Right Now
+- Live Right Now now uses local My Earth behavior as a secondary ranking layer over verified current diverse sources.
+- No account, demographic profile or external tracking is required.
+- Added smoke coverage ensuring a learned preference can change ordering without reducing available discovery choices.

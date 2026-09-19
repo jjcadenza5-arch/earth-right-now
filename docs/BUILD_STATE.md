@@ -593,3 +593,10 @@ Current release posture:
 - Preference signals are behavioral/contextual: place, country and Earth categories. ERN does not infer age, generation, gender or other demographic identity.
 - Favorites carry more weight than recency; similar categories/places/countries can be ranked higher without sending a profile to a server.
 - This module is deliberately a ranking foundation only. It does not override truth, permission, health or freshness eligibility and is not yet used to silently reorder every public surface.
+
+
+## My Live Right Now — 2026-09-19
+- Connected the privacy-first local taste model to the Live Right Now surface.
+- Two visitors can now gradually receive different ordering based on their own Favorite Windows, Favorite Places, Recent Windows and Recent Places, while ERN still starts from the same verified-current/diverse candidate pool.
+- Personalization reorders discovery; it does not remove truth/health/currentness/permission gates and it does not collapse the feed to only familiar categories.
+- With no local history, behavior remains the neutral global curation.
