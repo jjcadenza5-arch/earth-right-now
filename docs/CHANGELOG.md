@@ -215,3 +215,12 @@
 - Nearby cards reuse the existing destination model and open Choose a Window, preserving the destination-first → window-choice flow.
 - Added regression coverage for centroid calculation, distance ordering, radius filtering and no-location behavior.
 - Full CI is green.
+
+
+## 2026-09-19 — Single active modal context
+- Opening a destination from a Living Atlas cluster now closes the cluster drawer without a stale focus jump before opening Choose a Window.
+- When the immersive viewer opens over an existing destination drawer, the underlying drawer is temporarily inert and hidden from assistive technology rather than remaining a second active aria-modal context.
+- Closing the viewer restores the drawer's exact prior aria-hidden/inert state, preserving the visitor's destination context and return path.
+- Added a reusable modal coordinator so future overlays can follow the same single-active-modal rule instead of accumulating ad-hoc fixes.
+- Added regression coverage for hidden-modal exclusion, suspension, exact restoration and coordinator cleanup.
+- Full CI is green.
