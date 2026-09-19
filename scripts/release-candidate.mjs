@@ -9,7 +9,7 @@ const release=releaseReadiness(rows,evidence);
 const business=businessReadiness();
 console.log(JSON.stringify({
  generatedAt:new Date().toISOString(),
- candidate:{sources:stats.total,countries:stats.countries,providers:stats.providers,currentInsideERN:release.catalog.currentInsideERN},
+ candidate:{sources:stats.total,countries:new Set(rows.map(x=>x.country).filter(Boolean)).size,providers:new Set(rows.map(x=>x.provider).filter(Boolean)).size,currentInsideERN:release.catalog.currentInsideERN},
  catalogReady:release.checks.catalog,
  publicationReady:release.ready,
  releaseBlockers:release.blockers,
