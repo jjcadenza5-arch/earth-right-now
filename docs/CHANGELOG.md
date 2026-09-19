@@ -234,3 +234,12 @@
 - ERN AI now consumes the shared parser while retaining source-quality scoring and destination-first result grouping.
 - Added regression coverage for combined intents, currentness, Thai current wording and broad/empty query hints.
 - Full CI is green.
+
+
+## 2026-09-19 — Visitor-visible verification freshness
+- Live Right Now and Choose a Window now expose concise verification age such as “Checked 2h ago” instead of asking visitors to infer freshness from a generic LIVE/CURRENT badge.
+- Freshness copy delegates to the same source-recency windows that control ERN's strict currentness gate, preventing UI wording from drifting away from catalog policy.
+- Stale sources say Recheck due and expired sources say Verification expired; sources without a valid check say Not yet verified.
+- This is verification freshness, not a claim that ERN continuously watches the underlying scene between checks.
+- Added regression coverage for current, stale and unverified freshness wording.
+- Full CI is green.
