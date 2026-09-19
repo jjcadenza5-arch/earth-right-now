@@ -34,6 +34,9 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Closed a Watch Earth currentness gap: the app-level diverse curation path now requires CURRENT_CHECK, so a HEALTHY-but-stale source cannot enter the curated journey before the strict fallback is considered.
+- Country diversity and quality/moment scoring now operate only after Watch Earth truth/currentness eligibility; diversity can never override source verification.
+- Hardened Live Right Now inventory to require actionable playback in addition to live truth, HEALTHY status, known permission and CURRENT_CHECK.
 - Hardened ERN AI relevance: quality/source score can no longer make an unrelated camera appear for an unmatched query; unmatched intent returns no result instead of plausible-looking noise.
 - Current/live wording still gates through strict current-source eligibility before semantic ranking, so ERN AI cannot upgrade stale/unknown source truth.
 - Added alias-aware normalized matching and intent-token scoring while preserving empty-query discovery behavior.
