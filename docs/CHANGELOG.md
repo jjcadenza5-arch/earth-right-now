@@ -224,3 +224,13 @@
 - Added a reusable modal coordinator so future overlays can follow the same single-active-modal rule instead of accumulating ad-hoc fixes.
 - Added regression coverage for hidden-modal exclusion, suspension, exact restoration and coordinator cleanup.
 - Full CI is green.
+
+
+## 2026-09-19 — ERN AI intent vocabulary foundation
+- Centralized natural-language Earth intent parsing so discovery behavior can expand without duplicating keyword logic across ERN.
+- Expanded intent understanding for wildlife/nature, beaches/ocean/coasts, mountains/alpine/volcanoes, cities/streets/squares, scenic/calm views and active/crowded places.
+- Currentness intent remains strict: asking for live/current/now narrows the candidate pool through ERN's existing current-source policy rather than merely boosting a stale source.
+- Added initial Thai recognition for explicit live/current wording (`สด`, `ตอนนี้`) while deliberately avoiding claims of full Thai semantic search before broader multilingual coverage exists.
+- ERN AI now consumes the shared parser while retaining source-quality scoring and destination-first result grouping.
+- Added regression coverage for combined intents, currentness, Thai current wording and broad/empty query hints.
+- Full CI is green.
