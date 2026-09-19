@@ -14,7 +14,8 @@
     "business:status": "node scripts/business-readiness-status.mjs",
     "release:candidate": "node scripts/release-candidate.mjs",
     "release:record": "node scripts/record-release-evidence.mjs",
-    "release:build": "node scripts/build-release-snapshot.mjs"
+    "release:build": "node scripts/build-release-snapshot.mjs",
+    "catalog:embeds": "node scripts/embed-registry-status.mjs"
   },
   "engines": {
     "node": ">=20"
