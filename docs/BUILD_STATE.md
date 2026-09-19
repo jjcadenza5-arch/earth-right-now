@@ -34,6 +34,11 @@ Additional completed stages:
 - Playback non-regression smoke checks committed.
 
 More completed stages:
+- Added player-session generations: every source handoff invalidates the previous generation before the new adapter mounts, preventing late callbacks from an old source from affecting the current viewer.
+- Refreshed-image playback is generation-aware as well as visibility-aware; superseded refresh callbacks become no-ops and cleanup remains centralized.
+- Hardened canonical playback capability so EXTERNAL/LINK_ONLY and IMAGE_REFRESH are actionable only with safe HTTP(S) URLs; EMBED remains restricted to reviewed allowlisted providers.
+- Cards, Hero, Atlas eligibility and playback therefore share the same safe action boundary rather than discovering URL failure only after a click.
+- Static integration audit remains zero missing mounts and zero forced scroll calls.
 - Hardened the runtime catalog guard before further source recovery: source/official/embed/thumbnail URLs must be absolute HTTP(S), embeds must be HTTPS, timestamps parse correctly, timezones validate, and categories/aliases are string arrays.
 - Aligned the JSON source schema with stronger date-time, non-empty identity and unique string-array constraints.
 - Malformed recovered/submitted source data now fails closed before it can reach playback, Atlas local-time logic or discovery ranking.
