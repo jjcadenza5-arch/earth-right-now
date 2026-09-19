@@ -22,6 +22,8 @@ jobs:
           npm test 2>&1 | tee smoke-output.txt
       - name: Audit embed registry
         run: npm run catalog:embeds
+      - name: Audit provider fallback chains
+        run: npm run catalog:fallbacks
       - name: Audit release evidence ledger
         if: success()
         run: npm run release:evidence
