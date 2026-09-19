@@ -1,6 +1,6 @@
 import { currentSource } from "./discovery-eligibility.js";
 import { playbackCapability } from "./playback-capability.js";
-import { recencyState } from "./source-recency.js";
+import { recencyState } from "./source-recency.js";import { prioritizedRechecks } from "./recheck-priority.js";
 
 export function publicationInventory(rows=[],options={}){
   const sources=(rows||[]).filter(Boolean);
@@ -20,7 +20,7 @@ export function publicationInventory(rows=[],options={}){
     unknownRecency:unknown.length,
     currentIds:current.map(source=>source.id),
     insideERNIds:inside.map(source=>source.id),
-    recheckIds:[...new Set([...stale,...expired,...unknown].map(source=>source.id))]
+    recheckIds:prioritizedRechecks([...stale,...expired,...unknown],options).map(x=>x.sourceId)
   };
 }
 
