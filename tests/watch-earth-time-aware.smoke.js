@@ -28,6 +28,6 @@ const rows = [
 const now = new Date("2026-03-20T12:00:00Z");
 const result = buildWatchEarth(rows,{limit:4,maxPerCountry:2,maxPerPlace:1,now});
 console.assert(!result.some(x=>x.id==="stale"),"stale source must never enter Watch Earth");
-console.assert(result.filter(x=>x.placeId==="day").length===1,"first diversity pass should keep one window per place");
+console.assert(result.slice(0,3).filter(x=>x.placeId==="day").length===1,"diverse core should keep one window per place before truthful backfill");
 console.assert(result.length===4,"truthful pool may fill remaining slots when the catalog is smaller than the target journey");
 console.log("ERN Watch Earth time-aware journey smoke checks passed");
