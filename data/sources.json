@@ -1680,7 +1680,7 @@
     "officialUrl": "https://couchtourist.com/cams/united-states/hawaii/hale-pau-hana-surf-break-maui-hawaii/",
     "embedUrl": "https://couchtourist.com/embed/cam/3885/",
     "quality": 91,
-    "moment": 92,
+    "moment": 0,
     "categories": [
       "Beaches & Water",
       "Beautiful Earth"
@@ -1688,13 +1688,14 @@
     "provider": "CouchTourist",
     "truth": "LIVE_VIDEO",
     "permission": "EMBED_ALLOWED",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EMBED",
     "freshness": 96,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": "VISITOR_PLAYBACK_REJECTED_2026-09-20",
+    "lastFailedCheck": "2026-09-20T12:34:00+07:00"
   },
   {
     "id": "bergen-ulriken",
@@ -1735,7 +1736,7 @@
     "officialUrl": "https://couchtourist.com/cams/united-states/hawaii/waikiki-beach-south-shore-view-honolulu/",
     "embedUrl": "https://couchtourist.com/embed/cam/1285/",
     "quality": 92,
-    "moment": 93,
+    "moment": 0,
     "categories": [
       "Beaches & Water",
       "Beautiful Earth",
@@ -1744,13 +1745,14 @@
     "provider": "CouchTourist",
     "truth": "LIVE_VIDEO",
     "permission": "EMBED_ALLOWED",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EMBED",
     "freshness": 96,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": "VISITOR_PLAYBACK_REJECTED_2026-09-20",
+    "lastFailedCheck": "2026-09-20T12:34:00+07:00"
   },
   {
     "id": "cold-lake-marina",
@@ -1769,15 +1771,16 @@
     "provider": "CouchTourist",
     "truth": "LIVE_VIDEO",
     "permission": "EMBED_ALLOWED",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EMBED",
     "quality": 86,
     "freshness": 96,
-    "moment": 86,
+    "moment": 0,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": "VISITOR_PLAYBACK_REJECTED_2026-09-20",
+    "lastFailedCheck": "2026-09-20T12:34:00+07:00"
   },
   {
     "id": "st-johns-harbour",
