@@ -1,0 +1,1 @@
+import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Product polish pass 17","#explore,#earthLight,#moments,#my-earth,#atlas",".my-earth-tools",".atlas-toolbar"])console.assert(css.includes(token),token);console.log("lower homepage polish smoke passed");
