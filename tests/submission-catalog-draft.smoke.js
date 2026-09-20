@@ -4,4 +4,6 @@ console.assert(!submissionCatalogDraft({...approved,status:"PENDING_REVIEW"},{id
 const x=submissionCatalogDraft(approved,{id:"beach-cam",placeId:"beach",title:"Beach camera",country:"Thailand"});
 console.assert(x.ok,"approved submission should create schema-valid conservative draft");
 console.assert(x.draft.truth==="PREVIEW"&&x.draft.permission==="UNKNOWN"&&x.draft.health==="UNKNOWN"&&x.draft.playback==="PREVIEW","submission must not auto-promote to live/embed/healthy");
+console.assert(!("contact" in x.draft)&&!("businessName" in x.draft),"private submitter identity/contact must never leak into public catalog draft");
+console.assert(!JSON.stringify(x.draft).includes("owner@example"),"catalog draft must exclude submitter email");
 console.log("ERN submission catalog draft smoke checks passed");
