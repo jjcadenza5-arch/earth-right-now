@@ -1,3 +1,8 @@
+## 2026-09-20 — Living Atlas truth alignment
+- Place grouping and preferred-view selection now use the same active moment as search and destination cards.
+- Living Atlas ranking, current/inside filters and cluster destination ordering now share that moment, preventing stale views from appearing current on the map.
+- Atlas cluster language now says “views” rather than “windows” where reference-image fallbacks may coexist with live sources.
+
 ## 2026-09-20 — Destination evidence hierarchy
 - Destination cards now choose their headline evidence from the best truthful current view rather than blindly trusting a preferred/poster source.
 - Choose-a-view summaries can include an honest reference image alongside live/refreshed/provider windows instead of hiding the fallback or calling it live.
