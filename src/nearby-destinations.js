@@ -1,7 +1,7 @@
 import { discoverableSource } from "./discovery-eligibility.js";
 function finite(n){return Number.isFinite(n)}
 export function destinationCentroid(place){
- const sources=(place?.sources||[]).filter(s=>discoverableSource(s)&&finite(s.lat)&&finite(s.lon));
+ const sources=(place?.sources||[]).filter(s=>finite(s.lat)&&finite(s.lon));
  if(sources.length){return{lat:sources.reduce((n,s)=>n+s.lat,0)/sources.length,lon:sources.reduce((n,s)=>n+s.lon,0)/sources.length}}
  return finite(place?.lat)&&finite(place?.lon)?{lat:place.lat,lon:place.lon}:null;
 }
@@ -10,5 +10,5 @@ export function distanceKm(a,b){
 }
 export function nearbyDestinations(origin,places,{limit=6,maxKm=250}={}){
  const from=destinationCentroid(origin);if(!from)return[];
- return places.filter(p=>p?.id!==origin?.id&&(p?.sources||[]).some(discoverableSource)).map(place=>({place,distanceKm:distanceKm(from,destinationCentroid(place))})).filter(x=>Number.isFinite(x.distanceKm)&&x.distanceKm<=maxKm).sort((a,b)=>a.distanceKm-b.distanceKm).slice(0,Math.max(0,limit));
+ return places.filter(p=>p?.id!==origin?.id&&(!(p?.sources?.length)||(p.sources||[]).some(discoverableSource))).map(place=>({place,distanceKm:distanceKm(from,destinationCentroid(place))})).filter(x=>Number.isFinite(x.distanceKm)&&x.distanceKm<=maxKm).sort((a,b)=>a.distanceKm-b.distanceKm).slice(0,Math.max(0,limit));
 }
