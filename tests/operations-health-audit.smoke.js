@@ -13,3 +13,7 @@ console.assert(partial.healthAutomation?.complete===false,"mismatched health bat
 console.assert(partial.healthAutomation.issues.includes("UNKNOWN_OBSERVATION_IDS"),"unknown observation IDs should reach operations output");
 console.assert(partial.healthAutomation.issues.includes("UNOBSERVED_SOURCES"),"unobserved catalog sources should reach operations output");
 console.log("ERN operations health-audit smoke checks passed");
+
+const stale=operationsReport([source],{checkedAt:now,healthObservations:{"camera-a":{httpOk:true,providerConfirmed:true,observedAt:"2026-09-17T00:00:00Z"}}});
+console.assert(stale.healthAutomation?.complete===false,"stale observation batch must fail audit");
+console.assert(stale.healthAutomation?.invalidObservations?.[0]?.reason==="STALE_OBSERVATION","operations output must expose invalid observation reason");
