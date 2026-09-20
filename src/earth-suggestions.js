@@ -6,7 +6,6 @@ const SUGGESTIONS=[
  {label:"City lights now",query:"live city lights at night now",intents:["human","night"],current:true},
  
  {label:"City life",query:"busy city",intents:["human","happening"],current:false},
- {label:"Search a destination",query:"",intents:[],current:false,placeholder:true},
  {label:"Wildlife",query:"wildlife nature",intents:["wildlife"],current:false},
  {label:"Mountains",query:"mountains scenic",intents:["mountains","beautiful"],current:false},
  {label:"Golden light now",query:"sunrise sunset golden hour now",intents:["golden"],current:true}
