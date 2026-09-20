@@ -9,7 +9,7 @@ const dictionaries={
  ko:{home:"홈",explore:"탐색",atlas:"세계 지도",ambience:"분위기",submit:"카메라 등록",watchLive:"라이브 보기",watchEarth:"지구 보기",myEarth:"나의 지구",nextLive:"다음 라이브",chooseWindow:"화면 선택",search:"지구 검색…",surprise:"랜덤 보기",close:"닫기",previous:"이전",next:"다음",source:"출처",share:"공유"},
  zh:{home:"首页",explore:"探索",atlas:"世界地图",ambience:"环境氛围",submit:"提交摄像头",watchLive:"观看直播",watchEarth:"观看地球",myEarth:"我的地球",nextLive:"下一个直播",chooseWindow:"选择视角",search:"搜索地球…",surprise:"随机看看",close:"关闭",previous:"上一个",next:"下一个",source:"来源",share:"分享"}
 };
-export const supportedLanguages=Object.freeze([{code:"en",label:"English"},{code:"th",label:"ไทย"},{code:"de",label:"Deutsch"},{code:"fr",label:"Français"},{code:"es",label:"Español"},{code:"it",label:"Italiano"},{code:"ja",label:"日本語"},{code:"ko",label:"한국어"},{code:"zh",label:"中文"}]);
+export const supportedLanguages=Object.freeze([{code:"en",label:"English"},{code:"th",label:"ไทย"}]);
 const KEY="ern:language";const supported=c=>Boolean(dictionaries[c]);const normalizeCode=c=>{const x=String(c||"").toLowerCase().replace("_","-").split("-")[0];return supported(x)?x:"en"};
 export function preferredLanguage(){try{if(typeof location!=="undefined"){const requested=new URLSearchParams(location.search).get("lang");if(requested&&supported(normalizeCode(requested)))return normalizeCode(requested)}const saved=localStorage.getItem(KEY);if(saved&&supported(saved))return saved}catch{}const langs=globalThis.navigator?.languages||[globalThis.navigator?.language];for(const l of langs||[]){const c=normalizeCode(l);if(c!=="en"||String(l||"").toLowerCase().startsWith("en"))return c}return"en"}
 export function language(){return preferredLanguage()}
