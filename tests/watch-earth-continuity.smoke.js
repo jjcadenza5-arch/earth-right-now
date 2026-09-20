@@ -1,0 +1,10 @@
+import { reconcileWatchEarthJourney } from "../src/watch-earth-continuity.js";
+const s=id=>({id});
+const previous=["a","b","c","d","e"].map(s),fresh=["f","b","c","g","a"].map(s);
+let out=reconcileWatchEarthJourney(previous,fresh,{limit:5,currentId:"b",maxCarryRatio:.6});
+console.assert(out.map(x=>x.id).join(",")==="b,a,c,f,g","current window and bounded eligible continuity should survive before fresh replacements");
+out=reconcileWatchEarthJourney(previous,[s("x"),s("y")],{limit:5,currentId:"b"});
+console.assert(out.map(x=>x.id).join(",")==="x,y","expired current and old windows must disappear cleanly");
+out=reconcileWatchEarthJourney(previous,fresh,{limit:3,currentId:"b",maxCarryRatio:0});
+console.assert(out[0].id==="b"&&out.length===3,"active current window remains stable even when ordinary carry is disabled");
+console.log("ERN Watch Earth continuity smoke checks passed");
