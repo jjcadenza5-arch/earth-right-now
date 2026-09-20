@@ -1,3 +1,8 @@
+## 2026-09-20 — Search Earth local-history hygiene
+- Browser-local recent searches now fail closed on malformed storage, normalize repeated whitespace, cap stored query length and keep case-insensitive deduplication.
+- Search suggestions no longer repeat a recent query when the same query is already one of ERN’s curated default prompts.
+- Distinct recent destination searches remain available, preserving lightweight personalization without overwhelming fresh discovery choices.
+
 ## 2026-09-20 — Destination action language
 - Destination cards now say “Choose a view” / “Open view” rather than assuming every available destination asset is a live window.
 - This keeps the destination-first interaction compatible with live video, refreshed images, external current sources and clearly labeled reference images.
