@@ -635,3 +635,8 @@
 ## 2026-09-20 — Make Watch Earth beautiful-now aware
 - Replaced simple daylight-first Watch Earth ordering with destination-local moment scoring.
 - Sunrise, sunset and golden hour are promoted; night city/harbour/skyline views remain desirable; ordinary dark scenic views are demoted.
+
+
+## 2026-09-20 — First cinematic visual-fidelity pass
+- Brought the approved mockup direction into the production ERN shell: stronger branded header, cinematic full-width hero, direct Watch Earth navigation, bolder live section and richer window cards.
+- Preserved the working ERN architecture and truth/currentness behavior beneath the visual upgrade.
