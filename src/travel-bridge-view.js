@@ -11,7 +11,7 @@ export function travelOfferView(offer,{now=Date.now()}={}){
 export function travelBridgeView(place,{onIntent,offers=[],now=Date.now()}={}){
  const section=element("section",{className:"travel-bridge"}),context=travelContext(place);
  if(!context||!bridgeReady(place)){section.hidden=true;return section}
- section.append(element("span",{className:"eyebrow",text:"AROUND THIS WINDOW"}),element("h3",{text:"Beautiful enough to visit?"}),element("p",{className:"travel-bridge-copy",text:"Start with the place, then explore what a real visit could include. ERN keeps the Earth view first and only connects verified travel options when you ask."}));
+ section.append(element("span",{className:"eyebrow",text:"AROUND THIS PLACE"}),element("h3",{text:"Thinking about going?"}),element("p",{className:"travel-bridge-copy",text:"See the place first, then explore what a real visit could include. ERN keeps the Earth view first and only connects verified travel options when you ask."}));
  const actions=element("div",{className:"travel-intents"});
  for(const intent of context.intents){const count=offers.filter(o=>currentTravelOffer(o,{now})&&o.intent===intent).length,b=element("button",{text:LABELS[intent]+(count?` (${count})`:""),attrs:{"data-travel-intent":intent}});b.onclick=()=>onIntent?.(intent,context);actions.append(b)}
  section.append(actions);
