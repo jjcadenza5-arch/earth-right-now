@@ -1,3 +1,8 @@
+## 2026-09-20 — Verification-clock hardening
+- ERN recency now accepts both numeric timestamps and Date objects, allowing Watch Earth, Hero, Live Right Now and tests to share an explicit moment safely.
+- Source health/promotion policy now accepts the same moment context, closing a hidden wall-clock path that could disagree with playback and discovery eligibility.
+- Hero/live inventory pass that moment through the policy layer; deterministic regression coverage protects the boundary.
+
 ## 2026-09-20 — Hero + journey moment coherence
 - Hero eligibility, live inventory, hero rotation and Live Right Now fallback now use explicit moment-aware currentness rather than silently falling back to the machine clock.
 - Watch Earth journey controls now surface the destination’s local light context (for example Daylight now, Night lights, sunrise/sunset windows) beside the journey counter.
