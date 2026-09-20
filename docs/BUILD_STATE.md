@@ -1,3 +1,8 @@
+## 2026-09-20 — Simple homepage product model
+- Homepage now states the core ERN idea directly: Watch Earth for beautiful moments happening now, or search any place before you go.
+- “Find Your Earth” is now “Search Earth,” with the truthful evidence hierarchy explained in one line: live/current first, clearly labeled reference image when needed.
+- Explore/Atlas language is neutral where currentness is not guaranteed, keeping “live/current” reserved for surfaces that actually verify it.
+
 ## 2026-09-20 — End-to-end search fallback contract
 - Generic destination search is now regression-protected to retain a legal reference-image fallback when no live/current view exists.
 - Adding “live” or “now” to the same destination request must exclude that reference image rather than mislabel it as current.
