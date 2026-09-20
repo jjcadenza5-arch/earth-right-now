@@ -1,3 +1,8 @@
+## 2026-09-20 — Destination-first fallback language
+- Generated destination pages now use neutral “available views” language instead of assuming every place has a current camera.
+- Any future reference-image record on a static destination page is explicitly rendered as “REFERENCE IMAGE · NOT LIVE,” with matching disclosure text.
+- Empty states now speak in terms of places/views where live status is not guaranteed, while live-specific surfaces remain explicit about verification.
+
 ## 2026-09-20 — Search personalization boundary
 - ERN AI destination grouping now chooses its preferred view using the same moment as the query itself.
 - Explicit destination intent remains stronger than My Earth taste: personalization may gently reorder relevant choices, but cannot redirect a direct place request to an unrelated favorite.
