@@ -16,6 +16,8 @@ export function buildMyEarth({sources,places},{now=new Date()}={}){
   recentPlaces:recent.map(id=>placeMap.get(id)).filter(Boolean),
   recentWindows:visitedWindows,
   availableRecentWindows:visitedWindows.filter(discoverableSource),
+  unavailableRecentWindows:visitedWindows.filter(s=>!discoverableSource(s)),
+  currentRecentWindows:visitedWindows.filter(s=>currentSource(s,{now})),
   currentFavoriteWindows:favoriteWindows.filter(s=>currentSource(s,{now})),
   generatedAt:now instanceof Date?now.toISOString():new Date(now).toISOString()
  };
