@@ -12,5 +12,5 @@ export function providerHostIntegrity(source){
  const sourceHost=sourceUrl?.hostname||null,embedHost=embedUrl?.hostname||null,officialHost=officialUrl?.hostname||null;
  const roots=[sourceHost,embedHost,officialHost].filter(Boolean).map(rootHost);
  const crossProvider=roots.length>1&&new Set(roots).size>1;
- return{ok:issues.length===0,issues,sourceHost,embedHost,officialHost,crossProvider};
+ const reviewRequired=issues.length>0||crossProvider;\n return{ok:issues.length===0,reviewRequired,issues,sourceHost,embedHost,officialHost,crossProvider};
 }
