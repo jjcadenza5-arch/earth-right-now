@@ -665,3 +665,7 @@
 ## 2026-09-20 — Best available window hierarchy
 - Added a formal evidence hierarchy for ERN place search: verified live video first, refreshed live image next, current external live, other honest available sources, then preview/reference fallback.
 - Added visible evidence badges so fallback imagery cannot be mistaken for live content.
+
+
+## 2026-09-20 — ERN place answers
+- Search destination cards now state the best available visual evidence and current-check status directly, turning results into concise place answers rather than generic listings.
