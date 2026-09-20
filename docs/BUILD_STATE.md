@@ -1,3 +1,8 @@
+## 2026-09-20 — My Earth UI + business review contract
+- My Earth now renders saved-view currentness from one snapshot and shows a separate current-status note without hiding saved memories when media is unavailable.
+- Business camera review now has one shared six-check contract used by both the operator checklist and approval gate, preventing those two truth boundaries from drifting apart.
+- Business readiness now explicitly requires the manual source-review gate; commercial activation still remains separate from foundation readiness.
+
 ## 2026-09-20 — My Earth destination-first memory
 - Saved places now open with “View place” rather than implying every saved destination always has a live window.
 - My Earth keeps saved/recent memories even when media is unavailable, while separately classifying saved views that are verified current using ERN’s canonical currentness rules.
