@@ -328,3 +328,23 @@ main>[data-surface="home"] .section-head p{font-size:12px;line-height:1.45;margi
 .window-truth-line{line-height:1.35;opacity:.86}
 @media(max-width:760px){.window-visual,.live-window-visual{height:104px}.window-tile,.live-window-card{scroll-snap-align:start}}
 @media(prefers-reduced-motion:reduce){.window-visual .source-poster-image,.live-window-visual .source-poster-image{transition:none}.window-tile:hover .source-poster-image,.window-tile:focus-visible .source-poster-image,.live-window-card:hover .source-poster-image,.live-window-card:focus-visible .source-poster-image{transform:none}}
+
+/* Homepage polish pass 10: quieter chrome, clearer primary journey. */
+.topbar{box-shadow:0 8px 30px rgba(0,0,0,.08)}
+.topbar nav a,.topbar nav button{opacity:.76;transition:opacity .16s ease,background .16s ease}
+.topbar nav a:hover,.topbar nav a:focus-visible,.topbar nav button:hover,.topbar nav button:focus-visible{opacity:1}
+#topWatchEarth{opacity:1!important;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:7px 11px;background:rgba(255,255,255,.055)}
+.hero .actions{align-items:center}
+.hero .actions .hero-primary-action{padding-inline:20px;min-height:42px}
+.hero .actions .hero-secondary-action{background:rgba(3,20,17,.48)}
+.hero .actions .hero-tertiary-action{border-color:transparent;background:transparent;color:rgba(255,255,255,.78)}
+.hero .actions .hero-tertiary-action:hover,.hero .actions .hero-tertiary-action:focus-visible{border-color:rgba(255,255,255,.18);color:#fff}
+@media(max-width:760px){
+ .topbar nav{gap:5px}
+ .topbar nav a,.topbar nav button{font-size:12px}
+ #topWatchEarth{padding:6px 9px}
+ .hero .actions{display:grid;grid-template-columns:1fr 1fr 1fr;width:100%}
+ .hero .actions button{min-width:0;padding:9px 8px;font-size:11px}
+ .hero .actions .hero-primary-action{grid-column:span 2}
+ .hero .actions .hero-tertiary-action{display:none}
+}
