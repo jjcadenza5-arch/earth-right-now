@@ -3,6 +3,12 @@ const now=new Date().toISOString(),calls=[],player={play:(id,o)=>calls.push([id,
 const base={health:"HEALTHY",truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",playback:"EXTERNAL",sourceUrl:"https://example.test/live",checkedAt:now,lastSuccessfulCheck:now};
 const j=createWatchEarthSession({sources:[{...base,id:"a"},{...base,id:"b"}],player});
 j.show(0);j.next();
+const before=j.state();
+j.replaceSources([{...base,id:"b"},{...base,id:"c"}]);
+const refreshed=j.state();
+console.assert(before.source?.id==="b"&&refreshed.source?.id==="b"&&refreshed.total===2,"Watch Earth refresh must preserve the current window when it remains eligible");
+j.replaceSources([{...base,id:"c"}]);
+console.assert(j.state().source?.id==="c"&&j.state().total===1,"Watch Earth refresh must move cleanly when the current window expires");
 console.assert(calls[0]?.[0]==="a"&&calls[1]?.[0]==="b"&&calls.every(x=>x[1]==="watch-earth"),"Watch Earth must preserve valid journey sources and surface context");
 j.destroy();
 console.log("ERN Watch Earth session smoke checks passed");
