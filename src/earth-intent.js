@@ -11,6 +11,13 @@ const SYNONYMS={
  reference:["photo","photos","image","images","reference","picture","pictures"]
 };
 const CURRENT=["right now","live now","live jetzt","en direct","en vivo","dal vivo","now","live","current","today","tonight","ตอนนี้","สด","jetzt","maintenant","ahora","adesso","今","ライブ","지금","라이브","现在","直播"];
-export function normalizeEarthText(x){return(x||"").toString().normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{M}\p{N}\s-]/gu," ").replace(/\s+/g," ").trim()}
+export function normalizeEarthText(x){return(x||"").toString().normalize("NFKC").toLowerCase().replace(/[^\\p{L}\\p{M}\\p{N}\\s-]/gu," ").replace(/\\s+/g," ").trim()}
 function phrasePresent(text,tokens,phrase){if(phrase.includes(" "))return text===phrase||text.startsWith(phrase+" ")||text.endsWith(" "+phrase)||text.includes(" "+phrase+" ");return tokens.includes(phrase)}
 export function foldEarthSearchText(x){const clean=normalizeEarthText(x);return clean.split(/(\\s+)/).map(token=>{if(!/[A-Za-zÀ-ž]/.test(token))return token;return token.normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").normalize("NFC")}).join("")}
+export function interpretEarthIntent(q){
+ const text=normalizeEarthText(q),tokens=text.split(" ").filter(Boolean),intents=[];
+ for(const [intent,words] of Object.entries(SYNONYMS))if(words.some(w=>phrasePresent(text,tokens,w)))intents.push(intent);
+ const currentTerms=CURRENT.filter(w=>phrasePresent(text,tokens,w)),wantsCurrent=currentTerms.length>0;
+ return{text,tokens,intents:[...new Set(intents)],wantsCurrent,currentTerms};
+}
+export function earthIntentHints(q){const x=interpretEarthIntent(q);return{...x,empty:!x.text,broad:x.tokens.length<=1&&x.intents.length===0}}
