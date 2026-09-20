@@ -3,7 +3,7 @@ import { allowedEmbedUrl } from "./embed-policy.js";
 import { safeHttpUrl } from "./url-safety.js";
 
 export function discoverableSource(source){
- if(!source||source.id==="recovery-placeholder"||source.health==="OFFLINE")return false;
+ if(!source||source.id==="recovery-placeholder"||source.health==="OFFLINE"||source.health==="DEGRADED")return false;
  const external=safeHttpUrl(source.sourceUrl||source.officialUrl);
  if(source.permission==="LINK_ONLY"||source.playback==="EXTERNAL")return!!external;
  if(source.truth==="PREVIEW"||source.playback==="PREVIEW")return!!external;
