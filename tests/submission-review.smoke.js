@@ -2,8 +2,10 @@ import { reviewSubmission,submissionCanPublish } from "../src/submission-review.
 const pending={status:"PENDING_REVIEW",rightsConfirmed:true,sourceUrl:"https://example.test/cam"};
 console.assert(!submissionCanPublish(pending),"pending submission must never publish");
 console.assert(!reviewSubmission(pending,{decision:"AUTO_APPROVE"}).ok,"automatic/unknown review decisions must fail closed");
-const approved=reviewSubmission(pending,{decision:"APPROVED",reviewedAt:"2026-09-19T06:00:00Z",note:"Rights and source reviewed."});
+const approved=reviewSubmission(pending,{decision:"APPROVED",reviewedAt:"2026-09-19T06:00:00Z",note:"Rights and source reviewed.",checks:{rights:true,public:true,truth:true,quality:true,embed:true,currentness:true}});
 console.assert(approved.ok&&submissionCanPublish(approved.record),"human-approved rights-confirmed record can proceed to catalog review");
+const incomplete=reviewSubmission(pending,{decision:"APPROVED",checks:{rights:true}});console.assert(!incomplete.ok&&incomplete.missing.includes("currentness"),"approval must fail until every required source review is complete");
+const needsInfo=reviewSubmission(pending,{decision:"NEEDS_INFO",note:"Need embed permission details."});console.assert(needsInfo.ok&&!submissionCanPublish(needsInfo.record),"needs-info state must remain non-publishable");
 const rejected=reviewSubmission(pending,{decision:"REJECTED"});
 console.assert(rejected.ok&&!submissionCanPublish(rejected.record));
 console.assert(!submissionCanPublish({...approved.record,rightsConfirmed:false}),"approval cannot bypass rights confirmation");
