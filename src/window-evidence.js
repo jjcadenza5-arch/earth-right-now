@@ -7,7 +7,7 @@ export function windowEvidenceTier(s,{now=new Date()}={}){
  if(currentSource(s,{now})&&s.truth==="LIVE_VIDEO")return{rank:5,label:"LIVE VIDEO",copy:"Verified-current moving view."};
  if(currentSource(s,{now})&&s.truth==="LIVE_IMAGE")return{rank:4,label:"LIVE IMAGE",copy:"Verified-current refreshed view."};
  if(currentSource(s,{now})&&(s.truth==="EXTERNAL_LIVE"||s.playback==="EXTERNAL"))return{rank:3,label:"EXTERNAL LIVE",copy:"Current view opens at its provider."};
- if(s.truth==="PREVIEW")return{rank:1,label:"PREVIEW",copy:"Reference view — not live."};
+ if(s.truth==="PREVIEW")return{rank:1,label:"REFERENCE IMAGE",copy:"Reference view — not live."};
  return{rank:2,label:"CURRENT SOURCE",copy:"Available source with its status shown honestly."};
 }
 export function bestAvailableWindows(sources,{limit=12,now=new Date()}={}){
