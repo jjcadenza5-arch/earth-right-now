@@ -735,3 +735,11 @@ Current release posture:
 - Sunrise/sunset and golden-hour windows receive priority; ordinary daylight remains strong.
 - Night is no longer treated as universally undesirable: city/harbour/skyline/landmark/culture windows can receive a night-light boost, while ordinary dark scenic cameras are strongly demoted.
 - Visitors in different countries at the exact same instant can therefore begin from the same globally beautiful-now ranking, while their local favorites/recent behavior can still make their wider ERN experience differ. Search remains unrestricted by this presentation ranking.
+
+
+## Cinematic visual fidelity stage — 2026-09-20
+- Began translating the approved mockup's visual language onto the existing mature ERN architecture rather than replacing the product.
+- Header now foregrounds the Earth-window identity and Watch Earth; Atlas is presented to visitors as World Map while preserving the same underlying surface.
+- Hero messaging now leads with “A more connected world.” and the permanent “See before you go.” proposition while retaining dynamic truthful source title/status/trust metadata.
+- Watch Earth presentation is reframed as “Beautiful Earth, happening now,” matching the new global moment-aware selection engine.
+- Cards, spacing, hero scale, navigation and live section received a cinematic fidelity layer without weakening source truth, playback, accessibility or personalization systems.
