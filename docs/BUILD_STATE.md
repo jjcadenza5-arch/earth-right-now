@@ -1,3 +1,8 @@
+## 2026-09-20 — Search-time coherence
+- Plain destination search, current/live intent filtering, evidence tiers, destination grouping and ERN AI destination tie-breaks now propagate one explicit moment through the full result pipeline.
+- A query such as “Chiang Mai live now” can no longer accept a stale match in one layer while another layer labels it current.
+- Destination cards can receive the same discovery moment, keeping visible current-window counts aligned with the search that produced them.
+
 ## 2026-09-20 — Destination-time coherence
 - Surprise Me now prefers verified-current views at the same explicit moment used by the rest of ERN, while retaining honest discoverable fallbacks when nothing is current.
 - Choose a Window, source scoring, destination summaries and destination ranking now share moment-aware currentness end to end.
