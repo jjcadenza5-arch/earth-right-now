@@ -2,6 +2,7 @@ import { immersiveWatchEarthSources } from "./immersive-watch-earth.js";
 import { uniquePlayableJourney } from "./journey-variety.js";
 import { runtimeHealthySources } from "./runtime-source-health.js";
 import { buildWatchEarth } from "./watch-earth.js";
+import { balanceWatchEarthMoments } from "./watch-earth-mix.js";
 
 export function buildDynamicWatchEarth(sources,{limit=20,now=new Date()}={}){
   const healthy=runtimeHealthySources(sources,now);
@@ -13,5 +14,6 @@ export function buildDynamicWatchEarth(sources,{limit=20,now=new Date()}={}){
     maxPerPlace:1,
     now
   });
-  return uniquePlayableJourney(ranked,{limit});
+  const unique=uniquePlayableJourney(ranked,{limit:Math.max(limit*2,40)});
+  return balanceWatchEarthMoments(unique,{limit,now});
 }
