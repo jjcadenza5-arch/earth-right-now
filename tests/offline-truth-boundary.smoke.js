@@ -9,5 +9,5 @@ assert.doesNotMatch(sw,/sources\.json|data\/sources/);
 assert.match(offline,/does not show cached camera views as if they were current/i);
 assert.match(index,/serviceWorker\.register\(["']\/service-worker\.js["']/);
 assert.match(build,/service-worker\.js/);
-assert.match(build,/offline\.html/);
+assert.match(build,/offline\.html/);\nassert.match(sw,/status:503/);\nassert.match(sw,/Reconnect to see current Earth views/);\nassert.match(sw,/Cache-Control.*no-store/);
 console.log("offline truth boundary smoke passed");
