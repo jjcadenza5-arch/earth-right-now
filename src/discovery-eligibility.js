@@ -6,6 +6,7 @@ export function discoverableSource(source){
  if(!source||source.id==="recovery-placeholder"||source.health==="OFFLINE")return false;
  const external=safeHttpUrl(source.sourceUrl||source.officialUrl);
  if(source.permission==="LINK_ONLY"||source.playback==="EXTERNAL")return!!external;
+ if(source.truth==="PREVIEW"||source.playback==="PREVIEW")return!!external;
  if(source.playback==="EMBED")return!!(source.embedUrl&&allowedEmbedUrl(source.embedUrl));
  if(source.playback==="IMAGE_REFRESH")return!!safeHttpUrl(source.sourceUrl);
  return!!external;
