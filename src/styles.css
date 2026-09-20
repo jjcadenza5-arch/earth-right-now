@@ -309,3 +309,12 @@ main>[data-surface="home"] .section-head p{font-size:12px;line-height:1.45;margi
  #earthLightLanes .light-lane+.light-lane{margin-top:22px}
  .live-right-now{margin-top:8px}
 }
+
+/* Homepage polish pass 8: keep the opening experience focused; defer heavy lower-page rendering. */
+.secondary-home-section{content-visibility:auto;contain-intrinsic-size:1px 760px}
+#explore{background:linear-gradient(180deg,rgba(255,255,255,.012),transparent)}
+#earthLight{background:linear-gradient(180deg,transparent,rgba(255,255,255,.012),transparent)}
+#moments{background:linear-gradient(180deg,rgba(255,255,255,.012),transparent)}
+#explore .explore-tools{position:relative}
+#explore .explore-tools>input{width:min(100%,520px)}
+@media(max-width:760px){.secondary-home-section{contain-intrinsic-size:1px 620px}#explore .explore-tools>input{width:100%}}
