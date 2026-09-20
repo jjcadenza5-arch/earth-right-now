@@ -1,3 +1,8 @@
+## 2026-09-20 — Search evidence guidance
+- Earth Guide now states the verified-current view count explicitly even when the visitor asked specifically for live/now, rather than relying only on the word “current” in the destination count.
+- Generic place searches continue to distinguish verified-current views, available-but-unconfirmed views and reference images as separate evidence levels.
+- An empty live/now search now suggests removing the live qualifier to see truthful available/reference destination evidence instead of making the destination feel absent from ERN.
+
 ## 2026-09-20 — Watch Earth visitor recovery
 - Runtime playback failures remain quarantined automatically so Watch Earth does not repeatedly hammer a broken provider during normal rotation.
 - If a journey has lost windows, the viewer now reveals a quiet “Retry unavailable views” control; it stays hidden when the journey is healthy.
