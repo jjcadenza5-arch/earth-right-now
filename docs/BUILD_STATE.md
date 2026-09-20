@@ -1,3 +1,8 @@
+## 2026-09-20 — Watch Earth beauty audit + hero truth ordering
+- Watch Earth representative-time diagnostics now expose daylight, golden-hour, night-city and unknown-light composition without imposing fake quotas when the truthful catalog cannot support them.
+- Hero rotation now filters verified-current candidates before visible-window/place deduplication, preventing an older duplicate from hiding a current view of the same place.
+- Truth/currentness remains the gate; beauty and diversity only rank candidates after that gate.
+
 ## 2026-09-20 — Business camera privacy + non-bypass
 - Public catalog drafts now have regression protection ensuring submitter contact and business identity metadata do not leak into source records.
 - Submission transport now serializes an explicit allowlist instead of arbitrary record state, reducing accidental disclosure of future internal fields.
