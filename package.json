@@ -18,7 +18,8 @@
     "catalog:embeds": "node scripts/embed-registry-status.mjs",
     "catalog:fallbacks": "node scripts/provider-fallback-status.mjs",
     "build:destinations": "node scripts/build-destination-pages.mjs",
-    "watch-earth:audit": "node scripts/watch-earth-audit.mjs"
+    "watch-earth:audit": "node scripts/watch-earth-audit.mjs",
+    "operations:status": "node scripts/operations-status.mjs"
   },
   "engines": {
     "node": ">=20"
