@@ -290,11 +290,11 @@ body{background:radial-gradient(circle at 50% -20%,#12483d 0,transparent 34%),va
 @media(max-width:760px){.hero-media.has-poster .hero-poster-image{animation:none}.poster-earth:before,.poster-water:before,.poster-wildlife:before,.poster-mountain:before,.poster-city:before,.poster-nature:before{transform:none}}
 
 /* Homepage polish pass 7: calm editorial rhythm and less scroll fatigue. */
-main>[data-surface="home"] .strip{padding-top:clamp(30px,4vw,50px);padding-bottom:clamp(30px,4vw,50px)}
-main>[data-surface="home"] .strip+.strip{border-top:1px solid rgba(255,255,255,.045)}
-main>[data-surface="home"] .section-head{margin-bottom:16px}
-main>[data-surface="home"] .section-head h2{font-size:clamp(27px,3.4vw,46px);line-height:1.02}
-main>[data-surface="home"] .section-head p{font-size:12px;line-height:1.45;margin-bottom:5px}
+#home>.strip{padding-top:clamp(30px,4vw,50px);padding-bottom:clamp(30px,4vw,50px)}
+#home>.strip+.strip{border-top:1px solid rgba(255,255,255,.045)}
+#home>.strip .section-head{margin-bottom:16px}
+#home>.strip .section-head h2{font-size:clamp(27px,3.4vw,46px);line-height:1.02}
+#home>.strip .section-head p{font-size:12px;line-height:1.45;margin-bottom:5px}
 #earthLightLanes .light-lane+.light-lane{margin-top:28px}
 #earthLightLanes .light-lane .section-head{margin-bottom:12px}
 #earthLightLanes .light-lane .section-head h3{font-family:Georgia,serif;font-size:clamp(22px,2.4vw,32px);font-weight:500;margin:4px 0}
@@ -302,10 +302,10 @@ main>[data-surface="home"] .section-head p{font-size:12px;line-height:1.45;margi
 .live-window-strip::-webkit-scrollbar,.window-row::-webkit-scrollbar{height:5px}
 .live-window-strip::-webkit-scrollbar-thumb,.window-row::-webkit-scrollbar-thumb{background:rgba(255,255,255,.18);border-radius:999px}
 @media(max-width:760px){
- main>[data-surface="home"] .strip{padding:28px 16px}
- main>[data-surface="home"] .section-head{align-items:start;flex-direction:column;gap:4px;margin-bottom:13px}
- main>[data-surface="home"] .section-head h2{font-size:30px;margin:3px 0}
- main>[data-surface="home"] .section-head p{font-size:11px;margin:0;max-width:92%}
+ #home>.strip{padding:28px 16px}
+ #home>.strip .section-head{align-items:start;flex-direction:column;gap:4px;margin-bottom:13px}
+ #home>.strip .section-head h2{font-size:30px;margin:3px 0}
+ #home>.strip .section-head p{font-size:11px;margin:0;max-width:92%}
  #earthLightLanes .light-lane+.light-lane{margin-top:22px}
  .live-right-now{margin-top:8px}
 }
