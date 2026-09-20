@@ -750,3 +750,9 @@ Current release posture:
 - Night-light labeling is restricted to city/harbour/skyline/landmark/urban/culture windows; an ordinary dark landscape is not marketed as desirable night lights.
 - This makes the global rotation philosophy legible to visitors: ERN is following the moving light and worthwhile night scenes around Earth, not merely presenting a static camera directory.
 - Existing source truth/currentness/freshness copy remains visible alongside the moment label.
+
+
+## Dynamic Watch Earth journey — 2026-09-20
+- Consolidated Watch Earth's truth/currentness, runtime-health, diversity, media-identity and beautiful-now ranking into one reusable journey builder.
+- Added four-times-of-day regression coverage to ensure the global journey stays broad while its ordering changes as daylight/golden-hour/night-light conditions move around Earth.
+- This prepares Watch Earth for a larger source pool without scattering selection rules through the app shell.

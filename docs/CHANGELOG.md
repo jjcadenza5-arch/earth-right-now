@@ -645,3 +645,8 @@
 ## 2026-09-20 — Show Earth's moving moment on live cards
 - Added destination-local moment badges to Choose a Window cards so visitors can see why a view is timely: sunrise, daylight, golden hour, sunset or city night lights.
 - Preserved conservative night labeling for ordinary dark landscapes and retained source freshness/truth information.
+
+
+## 2026-09-20 — Centralize the moving Watch Earth journey
+- Added one dynamic Watch Earth builder combining current-source qualification, local playback health, geographic/media variety and destination-local beauty timing.
+- Added 00:00/06:00/12:00/18:00 UTC coverage to verify the journey remains broad and actually changes with Earth's light.
