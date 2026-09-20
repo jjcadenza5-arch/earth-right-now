@@ -6,8 +6,8 @@ const SUGGESTIONS=[
  
  {label:"City life",query:"busy city",intents:["human","happening"],current:false},
  {label:"Wildlife",query:"wildlife nature",intents:["wildlife"],current:false},
- {label:"Mountains",query:"mountains scenic",intents:["mountains","beautiful"],current:false},
  {label:"See Chiang Mai",query:"Chiang Mai",intents:[],current:false},
+ {label:"Mountains",query:"mountains scenic",intents:["mountains","beautiful"],current:false},
  {label:"Golden light now",query:"sunrise sunset golden hour now",intents:["golden"],current:true}
 ];
 export function earthSuggestions({currentAvailable=true,limit=5,includeRecent=true}={}){
