@@ -2,11 +2,12 @@ import { destinationSearchSummary } from "./destination-search.js";
 import { rankDestinationsForIntent } from "./ern-ai-destinations.js";
 import { currentSource } from "./discovery-eligibility.js";
 import { interpretEarthIntent } from "./earth-intent.js";
+import { nearNowEvidence } from "./now-evidence.js";
 export function discoveryResult(sources,query,{limit=12,mode="search",taste=null,now=new Date()}={}){
  const q=String(query||"").trim();if(!q)return{query:q,items:[],count:0,windowCount:0,empty:false,currentIntent:false};
  const intent=interpretEarthIntent(q),items=(mode==="ai"?rankDestinationsForIntent(sources,q,{taste,now}):destinationSearchSummary(sources,q,{now}).destinations).slice(0,Math.max(0,limit));
- const windowCount=items.reduce((n,p)=>n+(p.sources?.length||0),0),referenceCount=items.reduce((n,p)=>n+(p.sources||[]).filter(s=>s.truth==="PREVIEW"||s.playback==="PREVIEW").length,0),liveLikeCount=Math.max(0,windowCount-referenceCount),currentCount=items.reduce((n,p)=>n+(p.sources||[]).filter(s=>currentSource(s,{now})&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW").length,0),availableNonCurrentCount=Math.max(0,liveLikeCount-currentCount);
- return{query:q,items,count:items.length,windowCount,liveLikeCount,currentCount,availableNonCurrentCount,referenceCount,empty:items.length===0,currentIntent:intent.wantsCurrent};
+ const windowCount=items.reduce((n,p)=>n+(p.sources?.length||0),0),referenceCount=items.reduce((n,p)=>n+(p.sources||[]).filter(s=>s.truth==="PREVIEW"||s.playback==="PREVIEW").length,0),liveLikeCount=Math.max(0,windowCount-referenceCount),currentCount=items.reduce((n,p)=>n+(p.sources||[]).filter(s=>currentSource(s,{now})&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW").length,0),nearNowCount=items.reduce((n,p)=>n+(p.sources||[]).filter(s=>nearNowEvidence(s,{now})).length,0),availableNonCurrentCount=Math.max(0,liveLikeCount-currentCount);
+ return{query:q,items,count:items.length,windowCount,liveLikeCount,currentCount,nearNowCount,availableNonCurrentCount,referenceCount,empty:items.length===0,currentIntent:intent.wantsCurrent};
 }
 export function discoveryStatus(result={}){
  if(!result.query)return"";
