@@ -4,11 +4,13 @@ import { catalogReleaseGate } from "./catalog-release-gate.js";
 import { releaseReadiness } from "./release-readiness.js";
 import { catalogSnapshot } from "./catalog-snapshot.js";
 import { healthCheckReport,healthReportAudit } from "./health-report.js";
+import { providerHostIntegrity } from "./provider-host-integrity.js";
 
 export function operationsReport(sources,{queueLimit=20,catalogOptions={},releaseEvidence={},healthObservations=null,checkedAt=null}={}){
   const health=catalogHealthSummary(sources),queue=buildRevalidationQueue(sources),gate=catalogReleaseGate(sources,catalogOptions);
   const release=releaseReadiness(sources,{...releaseEvidence,catalogOptions});
   const snapshot=catalogSnapshot(sources,{checkedAt});
+  const providerReview=(sources||[]).map(source=>({id:source.id,...providerHostIntegrity(source)})).filter(x=>!x.ok||x.crossProvider);
   const healthAutomation=healthObservations===null?null:(()=>{
     const report=healthCheckReport(sources,healthObservations,{checkedAt:checkedAt||undefined});
     const audit=healthReportAudit(report);
