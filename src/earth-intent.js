@@ -7,7 +7,8 @@ const SYNONYMS={
  happening:["happening","active","event","busy","crowd","crowds"],
  night:["night","nighttime","lights","after dark"],
  daylight:["daylight","sunny","daytime"],
- golden:["sunrise","sunset","golden hour","dawn","dusk"]
+ golden:["sunrise","sunset","golden hour","dawn","dusk"],
+ reference:["photo","photos","image","images","reference","picture","pictures"]
 };
 const CURRENT=["now","live","current","today","right now","ตอนนี้","สด"];
 function norm(x){return(x||"").toString().normalize("NFKD").toLowerCase().replace(/[\u0300-\u036f]/g,"").replace(/[^\p{L}\p{N}\s-]/gu," ").replace(/\s+/g," ").trim()}
