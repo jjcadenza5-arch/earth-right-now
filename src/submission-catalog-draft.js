@@ -6,7 +6,7 @@ export function submissionCatalogDraft(reviewed,{id,placeId,title,country="",reg
  const draft={
   id:String(id||"").trim(),placeId:String(placeId||"").trim(),title:String(title||reviewed.placeName||"").trim(),
   country:String(country||"").trim(),region:String(region||"").trim(),
-  truth:"PREVIEW",permission:"UNKNOWN",health:"UNKNOWN",playback:"PREVIEW",
+  truth:"PREVIEW",permission:"LINK_ONLY",health:"UNKNOWN",playback:"PREVIEW",
   sourceUrl:reviewed.sourceUrl,rightsBasis:"Submitted by claimed authorized representative; ERN verification pending.",
   checkedAt:"",lastSuccessfulCheck:"",categories:[]
  };
