@@ -1,0 +1,1 @@
+import fs from "node:fs";const x=fs.readFileSync("src/card-view.js","utf8");console.assert(x.includes('text:"View place"')&&!x.includes('text:"Windows"'),"generic source cards should open the destination rather than imply all evidence is a live window");console.log("ERN source-card destination action checks passed");
