@@ -259,3 +259,16 @@ body{background:radial-gradient(circle at 50% -20%,#12483d 0,transparent 34%),va
  .viewer-controls button,.viewer-controls a{padding:8px 5px;text-align:center;font-size:11px;min-width:0}.viewer-controls #closeViewer{grid-column:1}.viewer-controls #sourceViewer{display:grid;place-items:center}
  .place-drawer{width:calc(100vw - 12px);bottom:6px;border-radius:22px;max-height:78vh;padding:18px}
 }
+
+/* Homepage polish pass 4: destination-first Search Earth and place continuity. */
+.search-earth-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:14px}
+.search-earth-head h2{font-family:Georgia,serif;font-size:clamp(26px,3.2vw,44px);font-weight:500;margin:4px 0 0}
+.search-earth-head p{margin:0;color:var(--muted);font-size:12px}
+.ai-row{min-height:48px}.ai-row input{font-size:15px}.ai-row button{min-width:116px}
+.ai-suggestions{display:flex;gap:7px;overflow-x:auto;padding:9px 0 2px;scrollbar-width:thin}
+.ai-suggestions button{flex:0 0 auto;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:7px 10px;font-size:11px}
+.earth-guide-reply{max-width:880px;line-height:1.55;color:var(--muted);font-size:13px}
+.place-drawer #placeTitle{max-width:760px;margin-bottom:4px}.place-drawer #placeMeta{margin-top:0}.place-drawer #placeFavorite{margin:2px 0 4px}
+.nearby-places{margin-top:24px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08)}
+.nearby-places h3{font-family:Georgia,serif;font-size:26px;font-weight:500;margin:5px 0 14px}
+@media(max-width:760px){.search-earth-head{align-items:start;flex-direction:column;gap:5px}.search-earth-head p{font-size:11px}.ai-bar{padding:15px}.ai-row{display:grid;grid-template-columns:1fr auto}.ai-row input{min-width:0}.ai-row button{min-width:86px}.earth-guide-reply{font-size:12px}.ai-suggestions{margin-inline:-2px}.nearby-places .results{grid-template-columns:1fr}}
