@@ -8,8 +8,14 @@ export function releaseEvidencePlan(){
   {key:"rollback",title:"Rollback",steps:["Identify the exact candidate commit SHA before publication.","Confirm the previous known-good commit or deployment is identifiable.","Document the concrete rollback/redeploy procedure for the chosen host.","Verify the procedure can restore the prior build without changing source truth data accidentally."],pass:"A specific tested or operationally verified rollback path exists for this candidate."}
  ];
 }
-export function releaseEvidenceMarkdown(){
- const lines=["# ERN real-world release check","","> CI does not complete these checks. Record evidence only after the described real-world validation.",""];
- for(const x of releaseEvidencePlan()){lines.push(`## ${x.title} (${x.key})`,"",...x.steps.map(s=>"- [ ] "+s),"",`**Pass condition:** ${x.pass}`,"", "**Evidence note:**","","**Checked at:**","")}
+export function releaseEvidenceMarkdown({candidateCommit=""}={}){
+ const candidate=String(candidateCommit||"").trim().toLowerCase();
+ const valid=/^[0-9a-f]{40}$/.test(candidate);
+ const candidateLine=valid?"**Candidate commit:** "+candidate:"**Candidate commit:** record the exact 40-character SHA before passing evidence";
+ const command=valid?"npm run release:record -- <key> <pass|fail> "+candidate+" <evidence note>":"npm run release:record -- <key> <pass|fail> <40-char candidate commit> <evidence note>";
+ const lines=["# ERN real-world release check","",candidateLine,"","> CI does not complete these checks. Record evidence only after the described real-world validation.","Record each result with: "+command,""];
+ for(const x of releaseEvidencePlan()){
+  lines.push("## "+x.title+" ("+x.key+")","",...x.steps.map(s=>"- [ ] "+s),"","**Pass condition:** "+x.pass,"","**Evidence note:**","","**Checked at:**","");
+ }
  return lines.join("\n");
 }
