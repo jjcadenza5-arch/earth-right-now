@@ -1,0 +1,3 @@
+import { broadenWatchEarthRegions,watchEarthRegion } from "../src/watch-earth-region-breadth.js";
+const mk=(id,lat,lon)=>({id,lat,lon});const rows=[...Array(10)].map((_,i)=>mk("na"+i,40,-100+i)).concat([mk("eu",48,8),mk("asia",35,139),mk("oceania",-33,151),mk("sa",-23,-46)]);
+const out=broadenWatchEarthRegions(rows,{limit:8,maxPerRegion:4}),regions=out.map(watchEarthRegion);console.assert(regions.filter(x=>x==="north-america").length<=4,"one region must not crowd out the world while alternatives exist");console.assert(new Set(regions).size>=4,"available global breadth should surface in the journey");console.assert(out.length===8,"breadth policy must still fill the requested journey");console.log("ERN Watch Earth region-breadth checks passed");
