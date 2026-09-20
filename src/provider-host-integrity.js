@@ -5,26 +5,20 @@ function safeUrl(value){
   }catch{return null}
 }
 
-function rootHost(host){
-  const h=String(host||"").toLowerCase().replace(/^www\./,"");
-  const parts=h.split(".");
-  return parts.length>2?parts.slice(-2).join("."):h;
+function sameHostFamily(a,b){
+  const x=String(a||"").toLowerCase().replace(/^www\./,""),y=String(b||"").toLowerCase().replace(/^www\./,"");
+  return Boolean(x&&y&&(x===y||x.endsWith("."+y)||y.endsWith("."+x)));
 }
 
 export function providerHostIntegrity(source){
-  const sourceUrl=safeUrl(source?.sourceUrl);
-  const embedUrl=safeUrl(source?.embedUrl);
-  const officialUrl=safeUrl(source?.officialUrl);
-  const issues=[];
+  const sourceUrl=safeUrl(source?.sourceUrl),embedUrl=safeUrl(source?.embedUrl),officialUrl=safeUrl(source?.officialUrl),issues=[];
   if(source?.sourceUrl&&!sourceUrl)issues.push("UNSAFE_SOURCE_URL");
   if(source?.embedUrl&&!embedUrl)issues.push("UNSAFE_EMBED_URL");
   if(source?.officialUrl&&!officialUrl)issues.push("UNSAFE_OFFICIAL_URL");
   if(source?.playback==="EMBED"&&!embedUrl)issues.push("MISSING_SAFE_EMBED_URL");
-  const sourceHost=sourceUrl?.hostname||null;
-  const embedHost=embedUrl?.hostname||null;
-  const officialHost=officialUrl?.hostname||null;
-  const roots=[sourceHost,embedHost,officialHost].filter(Boolean).map(rootHost);
-  const crossProvider=roots.length>1&&new Set(roots).size>1;
+  const sourceHost=sourceUrl?.hostname||null,embedHost=embedUrl?.hostname||null,officialHost=officialUrl?.hostname||null;
+  const hosts=[sourceHost,embedHost,officialHost].filter(Boolean);
+  const crossProvider=hosts.length>1&&hosts.some((host,i)=>hosts.slice(i+1).some(other=>!sameHostFamily(host,other)));
   const reviewRequired=issues.length>0||crossProvider;
   return{ok:issues.length===0,reviewRequired,issues,sourceHost,embedHost,officialHost,crossProvider};
 }
