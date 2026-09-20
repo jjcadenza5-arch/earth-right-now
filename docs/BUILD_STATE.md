@@ -1,3 +1,8 @@
+## 2026-09-20 — Earth Guide fallback truth
+- Earth Guide now explains ERN’s destination-search hierarchy in visitor language: current views when available, clearly labeled reference views when they are not.
+- Generic searches disclose reference-image fallback when present; live/now searches remain strict and never use a reference image as a live substitute.
+- This keeps the search-engine experience broad without weakening ERN’s live/current truth boundary.
+
 ## 2026-09-20 — Simple homepage product model
 - Homepage now states the core ERN idea directly: Watch Earth for beautiful moments happening now, or search any place before you go.
 - “Find Your Earth” is now “Search Earth,” with the truthful evidence hierarchy explained in one line: live/current first, clearly labeled reference image when needed.
