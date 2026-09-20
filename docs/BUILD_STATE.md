@@ -1,3 +1,8 @@
+## 2026-09-20 — Living Atlas discoverability boundary
+- The Living Atlas map and its destination list now share ERN’s canonical discoverability gate before grouping, ranking or mapping evidence.
+- Invalid/undiscoverable source records therefore cannot leak onto the map merely because they contain coordinates.
+- Legal reference-image evidence remains eligible for destination discovery, while current-only Atlas filters remain strict.
+
 ## 2026-09-20 — Explicit reference-image search intent
 - Earth intent now recognizes explicit requests for photos/images/reference views.
 - ERN AI can rank legal PREVIEW evidence for that explicit intent while live/current queries remain strict and exclude PREVIEW records.
