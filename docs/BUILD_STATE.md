@@ -1,3 +1,8 @@
+## 2026-09-20 — My Earth destination-first memory
+- Saved places now open with “View place” rather than implying every saved destination always has a live window.
+- My Earth keeps saved/recent memories even when media is unavailable, while separately classifying saved views that are verified current using ERN’s canonical currentness rules.
+- This preserves personalization without allowing preference or memory to overstate source truth.
+
 ## 2026-09-20 — Search + hero interaction coherence
 - Search Earth and Earth Guide now capture one moment per query, including runtime-health filtering for “somewhere different,” so a source cannot change freshness status halfway through one result set.
 - Hero rotation now evaluates source selection and action availability from the same moment; initial Earth Moments rendering also shares the startup clock.
