@@ -5,5 +5,5 @@ export function placeAnswer(place,{now=new Date()}={}){
  if(!best)return{headline:"No visual view yet",detail:"ERN does not have a usable view for this place yet.",tier:"UNAVAILABLE"};
  const evidence=windowEvidenceTier(best,{now}),choice=x.hasChoice?" "+x.windows+" views are available to choose from.":"";
  const current=x.current?(x.current+" current/live "+(x.current===1?"view":"views")+" checked by ERN."):"No current check is confirmed for this place.";
- return{headline:evidence.label,detail:(current+choice).trim(),tier:evidence.label};
+ const qualifier=evidence.label==="PREVIEW"?"Reference only · not live. ":evidence.label==="EXTERNAL LIVE"?"Opens at the source. ":"";return{headline:evidence.label,detail:(qualifier+current+choice).trim(),tier:evidence.label};
 }
