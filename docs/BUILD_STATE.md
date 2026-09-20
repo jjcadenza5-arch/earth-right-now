@@ -1,3 +1,8 @@
+## 2026-09-20 — Destination-time coherence
+- Surprise Me now prefers verified-current views at the same explicit moment used by the rest of ERN, while retaining honest discoverable fallbacks when nothing is current.
+- Choose a Window, source scoring, destination summaries and destination ranking now share moment-aware currentness end to end.
+- A stale but high-quality camera can no longer outrank a verified-current destination window simply because one ranking layer silently used a different clock.
+
 ## 2026-09-20 — Verification-clock hardening
 - ERN recency now accepts both numeric timestamps and Date objects, allowing Watch Earth, Hero, Live Right Now and tests to share an explicit moment safely.
 - Source health/promotion policy now accepts the same moment context, closing a hidden wall-clock path that could disagree with playback and discovery eligibility.
