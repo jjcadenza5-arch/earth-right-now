@@ -1,0 +1,6 @@
+import { searchEarth } from "../src/search-engine.js";import { discoveryResult } from "../src/discovery-result.js";import { windowEvidenceTier } from "../src/window-evidence.js";
+const now=new Date("2026-03-20T12:00:00Z"),base={title:"Chiang Mai Gate",placeId:"cm",country:"Thailand",region:"Chiang Mai",truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",health:"HEALTHY",playback:"EXTERNAL",sourceUrl:"https://example.com",quality:80,freshness:80,moment:80,categories:["Cities & Streets"]},fresh={...base,id:"fresh",checkedAt:now.toISOString(),lastSuccessfulCheck:now.toISOString()},old={...base,id:"old",quality:99,checkedAt:"2026-01-01T00:00:00Z",lastSuccessfulCheck:"2026-01-01T00:00:00Z"};
+console.assert(searchEarth([old,fresh],"Chiang Mai live now",{now}).map(x=>x.id).join(",")==="fresh","live/now search must exclude stale matches at supplied moment");
+console.assert(windowEvidenceTier(fresh,{now}).label==="EXTERNAL LIVE"&&windowEvidenceTier(old,{now}).label!=="EXTERNAL LIVE","evidence labels must share search currentness clock");
+const r=discoveryResult([old,fresh],"Chiang Mai live now",{now});console.assert(r.count===1&&r.currentIntent,"destination discovery should preserve current intent and verified match");
+console.log("ERN search moment-coherence checks passed");
