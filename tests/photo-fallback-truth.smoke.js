@@ -5,7 +5,7 @@ const preview={id:"p",placeId:"x",title:"Reference",truth:"PREVIEW",permission:"
 console.assert(discoverableSource(preview),"a legal reference image should remain discoverable");
 console.assert(!currentSource(preview),"a preview must never become current/live");
 console.assert(playbackCapability(preview).label==="View reference image","preview action must say reference image");
-console.assert(windowEvidenceTier(preview).copy.includes("not live"),"preview evidence must explicitly say not live");
+console.assert(windowEvidenceTier(preview).copy.includes("not current"),"preview evidence must explicitly say not current");
 const live={...preview,id:"l",truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",health:"HEALTHY",playback:"EXTERNAL",checkedAt:new Date().toISOString(),lastSuccessfulCheck:new Date().toISOString()};
 console.assert(bestAvailableWindows([preview,live])[0].id==="l","live/current evidence must outrank photo fallback");
 console.log("ERN honest photo fallback checks passed");
