@@ -5,6 +5,7 @@ import { buildWatchEarth } from "./watch-earth.js";
 import { balanceWatchEarthMoments } from "./watch-earth-mix.js";
 import { broadenWatchEarthRegions } from "./watch-earth-region-breadth.js";
 import { diversifyDeliveryHosts } from "./watch-earth-delivery-diversity.js";
+import { arrangeWatchEarthJourney } from "./watch-earth-story-flow.js";
 
 export function buildDynamicWatchEarth(sources,{limit=20,now=new Date()}={}){
   const healthy=runtimeWatchEarthSources(sources,now);
@@ -19,5 +20,5 @@ export function buildDynamicWatchEarth(sources,{limit=20,now=new Date()}={}){
   const unique=uniquePlayableJourney(ranked,{limit:Math.max(limit*2,40)});
   const broad=broadenWatchEarthRegions(unique,{limit:Math.max(limit*2,40),maxPerRegion:6});
   const delivery=diversifyDeliveryHosts(broad,{limit:Math.max(limit*2,40),maxPerHost:4});
-  return balanceWatchEarthMoments(delivery,{limit,now});
+  return arrangeWatchEarthJourney(balanceWatchEarthMoments(delivery,{limit,now}),{now});
 }
