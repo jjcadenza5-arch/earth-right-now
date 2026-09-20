@@ -9,7 +9,7 @@ const stats=catalogStats(rows);
 const release=releaseReadiness(rows,evidence);
 const business=businessReadiness();
 const candidateCommit=String(process.env.GITHUB_SHA||process.env.ERN_COMMIT_SHA||"").trim();
-const evidenceBinding=candidateEvidenceStatus(evidence,candidateCommit);
+const evidenceBinding=candidateEvidenceStatus(evidence,candidateCommit);\nconst publicationReadyForCandidate=release.ready&&evidenceBinding.allBound;\nconst candidateBlockers=[...release.blockers,...(evidenceBinding.allBound?[]:[`Release evidence is not bound to candidate ${candidateCommit||"(missing commit)"}`])];
 console.log(JSON.stringify({
  generatedAt:new Date().toISOString(),
  candidate:{sources:stats.total,countries:new Set(rows.map(x=>x.country).filter(Boolean)).size,providers:new Set(rows.map(x=>x.provider).filter(Boolean)).size,currentInsideERN:release.catalog.currentInsideERN},
