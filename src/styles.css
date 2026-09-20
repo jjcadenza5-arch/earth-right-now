@@ -434,3 +434,23 @@ button:disabled{cursor:not-allowed;opacity:.5}
  .language-picker{display:none}
  .network-note{top:66px}
 }
+
+/* Product polish pass 16: unify discovery cards into a calmer editorial system. */
+.results{gap:14px}
+.card{min-height:176px;padding:19px;border-radius:22px;background:linear-gradient(150deg,rgba(18,59,50,.92),rgba(7,31,26,.98));box-shadow:0 12px 34px rgba(0,0,0,.08)}
+.card h3{font-size:clamp(20px,2vw,25px);line-height:1.05;margin:8px 0}
+.card p{line-height:1.48}
+.card .meta{color:rgba(222,235,226,.74)}
+.card-badges{margin-top:10px}
+.card-badges span{background:rgba(2,18,15,.22)}
+.card-actions{margin-top:16px;flex-wrap:wrap}
+.card-actions button{min-height:36px}
+.destination-card{min-height:210px}
+.destination-card .count{margin-top:8px}
+.source-results{padding-top:4px}
+@media(max-width:760px){
+ .results{grid-template-columns:1fr;gap:10px}
+ .card{min-height:0;padding:17px}
+ .destination-card{min-height:0}
+ .card-actions button{flex:1 1 auto}
+}
