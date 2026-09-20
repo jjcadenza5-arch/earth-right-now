@@ -1,7 +1,7 @@
 import { buildDynamicWatchEarth } from "../src/dynamic-watch-earth.js";
 
 const checkedAt=new Date().toISOString();
-const base={truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",health:"HEALTHY",playback:"EMBED",embedUrl:"https://example.com/embed",sourceUrl:"https://example.com",checkedAt,lastSuccessfulCheck:checkedAt,quality:80,freshness:80,moment:70,categories:["Cities"],lat:0};
+const base={truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",health:"HEALTHY",playback:"EMBED",embedUrl:"https://www.youtube.com/embed/test",sourceUrl:"https://example.com",checkedAt,lastSuccessfulCheck:checkedAt,quality:80,freshness:80,moment:70,categories:["Cities"],lat:0};
 const rows=[
  {...base,id:"day",placeId:"day",country:"A",lon:0},
  {...base,id:"sunset",placeId:"sunset",country:"B",lon:90},
