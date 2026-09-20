@@ -640,3 +640,8 @@
 ## 2026-09-20 — First cinematic visual-fidelity pass
 - Brought the approved mockup direction into the production ERN shell: stronger branded header, cinematic full-width hero, direct Watch Earth navigation, bolder live section and richer window cards.
 - Preserved the working ERN architecture and truth/currentness behavior beneath the visual upgrade.
+
+
+## 2026-09-20 — Show Earth's moving moment on live cards
+- Added destination-local moment badges to Choose a Window cards so visitors can see why a view is timely: sunrise, daylight, golden hour, sunset or city night lights.
+- Preserved conservative night labeling for ordinary dark landscapes and retained source freshness/truth information.
