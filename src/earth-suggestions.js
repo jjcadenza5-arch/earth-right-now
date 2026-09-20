@@ -3,6 +3,7 @@ const SUGGESTIONS=[
  {label:"Live beaches now",query:"live beach now",intents:["water"],current:true},
  {label:"Peaceful scenic views",query:"peaceful scenic views",intents:["beautiful"],current:false},
  {label:"City lights now",query:"live city lights at night now",intents:["human","night"],current:true},
+ {label:"Golden light now",query:"sunrise sunset golden hour now",intents:["golden"],current:true},
  {label:"City life",query:"busy city",intents:["human","happening"],current:false},
  {label:"Wildlife",query:"wildlife nature",intents:["wildlife"],current:false},
  {label:"Mountains",query:"mountains scenic",intents:["mountains","beautiful"],current:false}
