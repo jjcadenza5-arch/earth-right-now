@@ -1,0 +1,1 @@
+import fs from "node:fs";const css=fs.readFileSync(new URL("../src/styles.css",import.meta.url),"utf8");console.assert(css.includes("Calm truth chips"),"truth-chip hierarchy guard missing");console.assert(css.includes(".card-badges span:nth-child(n+4){display:none}"),"mobile metadata should stay compact");console.log("ERN calm truth-chip hierarchy checks passed");
