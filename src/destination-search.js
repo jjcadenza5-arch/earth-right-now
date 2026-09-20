@@ -1,9 +1,10 @@
 import { searchEarth } from "./search-engine.js";
 import { groupByPlace } from "./place-model.js";
 import { destinationRank } from "./destination-engine.js";
+import { bestAvailableWindows } from "./window-evidence.js";
 
 export function destinationSearch(sources,query=""){
- const matches=searchEarth(sources,query),places=groupByPlace(matches);
+ const matches=bestAvailableWindows(searchEarth(sources,query),{limit:200}),places=groupByPlace(matches);
  return places.sort((a,b)=>destinationRank(b)-destinationRank(a));
 }
 export function destinationSearchSummary(sources,query=""){

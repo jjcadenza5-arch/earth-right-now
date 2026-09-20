@@ -770,3 +770,10 @@ Current release posture:
 - Recent Earth searches are now remembered locally in the visitor's browser, bounded to eight entries, and surfaced as quick “Again:” suggestions.
 - Search memory does not require an account, name, age, email or server-side profile and is not allowed to override explicit search intent or source truth/currentness.
 - This extends My Earth from favorites/recent places/windows into lightweight search continuity while preserving the shared global Watch Earth moment.
+
+
+## Best available window search hierarchy — 2026-09-20
+- Formalized the ERN search-engine principle: when a visitor asks for a place, rank the strongest truthful visual evidence available rather than returning an undifferentiated camera list.
+- Evidence tiers now distinguish LIVE VIDEO, LIVE IMAGE, EXTERNAL LIVE, CURRENT SOURCE and PREVIEW. Preview/reference material is explicitly non-live and remains fallback rather than being promoted as current.
+- Destination search applies the hierarchy before grouping results by place, while existing intent matching and destination ranking remain intact.
+- Visual live cards expose the evidence tier alongside local-moment and freshness information.
