@@ -1,3 +1,8 @@
+## 2026-09-20 — Earth Light diversity + single-moment rendering
+- Earth Light lanes now prefer distinct places and cap country concentration when truthful current alternatives exist, then relax only as needed to fill the lane.
+- Night remains a positive city/skyline lane rather than being treated as inferior to daylight.
+- Each Earth Light render now captures one clock moment and passes it through both lane selection and visible view labels, preventing boundary-time disagreement.
+
 ## 2026-09-20 — Business submission activation boundary
 - The camera form now says “Prepare for review” while submission transport is not connected; it explicitly says preparation does not send or publish a camera.
 - The six-check review gate is visible in the visitor-facing explanation without implying automatic acceptance.
