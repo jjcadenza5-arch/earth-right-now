@@ -743,3 +743,10 @@ Current release posture:
 - Hero messaging now leads with “A more connected world.” and the permanent “See before you go.” proposition while retaining dynamic truthful source title/status/trust metadata.
 - Watch Earth presentation is reframed as “Beautiful Earth, happening now,” matching the new global moment-aware selection engine.
 - Cards, spacing, hero scale, navigation and live section received a cinematic fidelity layer without weakening source truth, playback, accessibility or personalization systems.
+
+
+## Watch Earth visual moment storytelling — 2026-09-20
+- Window cards now expose the destination-local Earth moment directly: Sunrise now, Morning light, Daylight now, Golden hour, Sunset now, Night lights, or Night now.
+- Night-light labeling is restricted to city/harbour/skyline/landmark/urban/culture windows; an ordinary dark landscape is not marketed as desirable night lights.
+- This makes the global rotation philosophy legible to visitors: ERN is following the moving light and worthwhile night scenes around Earth, not merely presenting a static camera directory.
+- Existing source truth/currentness/freshness copy remains visible alongside the moment label.
