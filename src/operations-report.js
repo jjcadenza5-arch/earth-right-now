@@ -32,6 +32,7 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
     gate:{ready:gate.ready,blockers:gate.blockers,currentHealthy:gate.currentHealthy,currentInsideERN:gate.currentInsideERN,unknown:gate.unknown,rejected:gate.rejected},
     release:{ready:release.ready,blockers:release.blockers,checks:release.checks,evidence:release.evidence},
     healthAutomation,
+    providerReview:{total:providerReview.length,unsafe:providerReview.filter(x=>!x.ok),crossProvider:providerReview.filter(x=>x.crossProvider)},
     revalidation:{total:queue.length,next:queue.slice(0,queueLimit).map(x=>({id:x.source.id,title:x.source.title,priority:x.priority,reason:x.reason,health:x.source.health,playback:x.source.playback,permission:x.source.permission}))}
   };
 }
