@@ -1,0 +1,1 @@
+import { interpretEarthIntent } from "../src/earth-intent.js";for(const [q,term] of [["Chiang Mai live","live"],["เชียงใหม่ สด","สด"],["เชียงใหม่ ตอนนี้","ตอนนี้"]]){const x=interpretEarthIntent(q);console.assert(x.wantsCurrent&&x.currentTerms.includes(term),q+" should expose its current-intent modifier")}console.log("ERN shared current-intent parser checks passed");
