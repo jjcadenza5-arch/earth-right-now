@@ -115,3 +115,17 @@ body{background:radial-gradient(circle at 50% -20%,#12483d 0,transparent 34%),va
 
 /* Search-answer layer: ERN responds with the best truthful window, not a generic result card. */
 .place-answer-tier{display:inline-flex;width:max-content;margin:8px 0 5px;padding:5px 8px;border-radius:999px;background:rgba(223,241,207,.12);border:1px solid rgba(223,241,207,.24);font-size:9px;font-weight:850;letter-spacing:.1em}.place-answer-detail{display:block;color:#d2ded8;line-height:1.4;margin-bottom:6px}.destination-card .count{display:block;color:var(--muted);font-size:11px}
+
+
+/* Cinematic home composition: preserve the approved mockup's calm, image-first rhythm. */
+#home:not([data-active-surface]) .hero{isolation:isolate}
+#home:not([data-active-surface]) #windows{position:relative;margin-top:-34px;padding-top:54px;background:linear-gradient(180deg,rgba(3,27,24,.96),var(--bg) 82%);z-index:3}
+#home:not([data-active-surface]) #windows .section-head,#home:not([data-active-surface]) #live .section-head{max-width:1180px;margin-left:auto;margin-right:auto}
+#home:not([data-active-surface]) #windowRow,#home:not([data-active-surface]) #liveRightNowResults{max-width:1180px;margin-left:auto;margin-right:auto}
+#home:not([data-active-surface]) .ai-bar{max-width:1180px;margin:34px auto;padding:24px 26px;background:linear-gradient(145deg,rgba(10,46,39,.9),rgba(5,30,26,.94));box-shadow:0 24px 70px rgba(0,0,0,.13)}
+#home:not([data-active-surface]) .ai-bar .eyebrow{color:#dff1cf}
+#home:not([data-active-surface]) .ai-row input{font-size:16px;min-height:50px}
+#home:not([data-active-surface]) .ai-row button{min-width:130px}
+.hero-copy .actions{max-width:650px}.hero-copy .actions button{transition:transform .18s ease,background .18s ease,border-color .18s ease}.hero-copy .actions button:hover{transform:translateY(-1px)}
+@media(min-width:900px){#home:not([data-active-surface]) #windows .window-row{grid-template-columns:repeat(4,minmax(0,1fr))}#home:not([data-active-surface]) #windows .window-tile:nth-child(n+9){display:none}}
+@media(max-width:760px){#home:not([data-active-surface]) #windows{margin-top:-18px;padding-top:38px}#home:not([data-active-surface]) .ai-bar{margin:20px 10px;padding:18px}.hero-copy .actions button[data-action="my-earth"],.hero-copy .actions button[data-action="explore"]{background:rgba(3,24,21,.76)}}
