@@ -709,3 +709,10 @@ Current release posture:
 - “Something/completely different” now selects from verified-current, discoverable sources that have not recently failed in the visitor's browser, before using a broader healthy fallback.
 - The current place is never returned by the different-place fallback.
 - Removed a duplicate runtime-health import in the app module while touching this path.
+
+
+## Normalized media identity — 2026-09-20
+- Variety controls now compare the actual playable media identity rather than raw URL strings or thumbnails.
+- YouTube watch, embed, live, Shorts and youtu.be forms for the same video ID collapse to one window, preventing URL-format variants from masquerading as different cameras.
+- URL fragments and a small conservative set of known cache-buster parameters are ignored for identity.
+- Thumbnail URLs no longer drive deduplication, so two genuinely distinct live streams that happen to share promotional artwork are not incorrectly collapsed.
