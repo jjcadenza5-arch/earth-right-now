@@ -1,3 +1,9 @@
+## 2026-09-20 — Search-engine fallback semantics
+- ERN destination discovery can now retain an explicitly marked PREVIEW/reference image when no live or refreshed view is available.
+- Preview references remain non-current and are never promoted into Watch Earth or described as live.
+- Their action says “View reference image,” and verified-current live/refreshed evidence continues to rank above them.
+- This establishes the intended search hierarchy: quality live window → refreshed/current image → honest reference image when necessary.
+
 
 ## 2026-09-20 — Living Earth ranking hardening
 - Missing coordinates now remain solar-unknown instead of being accidentally interpreted as 0°,0°.
