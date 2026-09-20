@@ -41,3 +41,9 @@ export function releaseEvidenceSummary(rows,evidence={},options={}){
     checklist
   };
 }
+
+export function candidateEvidenceStatus(evidence={},candidateCommit=""){
+ const expected=String(candidateCommit||"").trim().toLowerCase();
+ const rows=RELEASE_EVIDENCE_KEYS.map(key=>{const row=evidence[key]||{},commit=String(row.commit||"").trim().toLowerCase();return{key,commit,matches:Boolean(expected&&commit===expected)}});
+ return{candidateCommit:expected||null,allBound:rows.every(x=>x.matches),unbound:rows.filter(x=>!x.matches).map(x=>x.key),rows};
+}
