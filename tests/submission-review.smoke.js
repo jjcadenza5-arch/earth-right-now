@@ -6,6 +6,7 @@ const approved=reviewSubmission(pending,{decision:"APPROVED",reviewedAt:"2026-09
 console.assert(approved.ok&&submissionCanPublish(approved.record),"human-approved rights-confirmed record can proceed to catalog review");
 const incomplete=reviewSubmission(pending,{decision:"APPROVED",checks:{rights:true}});console.assert(!incomplete.ok&&incomplete.missing.includes("currentness"),"approval must fail until every required source review is complete");
 const needsInfo=reviewSubmission(pending,{decision:"NEEDS_INFO",note:"Need embed permission details."});console.assert(needsInfo.ok&&!submissionCanPublish(needsInfo.record),"needs-info state must remain non-publishable");
+const resumed=reviewSubmission(needsInfo.record,{decision:"APPROVED",checks:{rights:true,public:true,truth:true,quality:true,embed:true,currentness:true}});console.assert(resumed.ok&&submissionCanPublish(resumed.record),"needs-info submission can resume once required evidence is complete");
 const rejected=reviewSubmission(pending,{decision:"REJECTED"});
 console.assert(rejected.ok&&!submissionCanPublish(rejected.record));
 console.assert(!submissionCanPublish({...approved.record,rightsConfirmed:false}),"approval cannot bypass rights confirmation");
