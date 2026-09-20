@@ -1,0 +1,1 @@
+import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Homepage polish pass 12",".place-drawer>h2","#placeTravel",".nearby-places","max-height:92svh"])console.assert(css.includes(token),token);console.log("place drawer polish smoke passed");
