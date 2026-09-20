@@ -603,3 +603,9 @@
 - Added crawlable source verification dates, provider links, time zones and coordinates to generated place pages.
 - Changed universal TouristDestination schema to conservative Place schema.
 - Removed unsupported homepage SearchAction metadata rather than advertising a nonexistent query-URL feature.
+
+
+## 2026-09-20 — Put the ERN identity on the website
+- Added the approved Earth-window brand mark to the header.
+- Added “See before you go.” to the persistent brand lockup.
+- Wired the mark as SVG favicon and structured Organization logo metadata.
