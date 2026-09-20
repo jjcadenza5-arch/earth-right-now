@@ -763,3 +763,10 @@ Current release posture:
 - No trademark symbol is included.
 - Watch Earth / Live Right Now cards now use the same photographic visual hierarchy as Choose a Window, including destination-local moment badges and source truth/freshness beneath the image.
 - The underlying source poster fallback remains intact when a provider has no safe thumbnail.
+
+
+## Find Your Earth / private search memory — 2026-09-20
+- Clarified ERN's two complementary modes: Watch Earth is the shared curated beautiful-now experience; Find Your Earth is visitor-directed discovery before travel or for curiosity.
+- Recent Earth searches are now remembered locally in the visitor's browser, bounded to eight entries, and surfaced as quick “Again:” suggestions.
+- Search memory does not require an account, name, age, email or server-side profile and is not allowed to override explicit search intent or source truth/currentness.
+- This extends My Earth from favorites/recent places/windows into lightweight search continuity while preserving the shared global Watch Earth moment.
