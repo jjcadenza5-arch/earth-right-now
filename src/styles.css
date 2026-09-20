@@ -454,3 +454,21 @@ button:disabled{cursor:not-allowed;opacity:.5}
  .destination-card{min-height:0}
  .card-actions button{flex:1 1 auto}
 }
+
+/* Product polish pass 17: turn lower homepage modules into a calm second chapter. */
+#explore,#earthLight,#moments,#my-earth,#atlas{max-width:1500px;margin-inline:auto}
+#explore,#earthLight,#moments{padding-top:clamp(34px,5vw,62px);padding-bottom:clamp(34px,5vw,62px)}
+#my-earth,#atlas{border-top:1px solid rgba(255,255,255,.05)}
+#my-earth .surface-subhead{font-family:Georgia,serif;font-size:clamp(20px,2.2vw,28px);font-weight:500;margin:28px 0 12px}
+#my-earth .surface-subhead:first-of-type{margin-top:18px}
+.my-earth-tools{display:flex;gap:7px;flex-wrap:wrap}
+.my-earth-tools button{border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:8px 11px}
+.atlas-stage{border-color:rgba(255,255,255,.09);background:radial-gradient(circle at 15% 15%,rgba(23,74,62,.8),#071d18 55%);box-shadow:0 18px 50px rgba(0,0,0,.1)}
+.atlas-toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px;color:var(--muted);font-size:12px}
+.atlas-toolbar button{border:1px solid rgba(255,255,255,.12);border-radius:999px;background:transparent;color:var(--ink);padding:7px 10px}
+@media(max-width:760px){
+ #explore,#earthLight,#moments{padding-top:30px;padding-bottom:30px}
+ #my-earth .surface-subhead{margin-top:22px}
+ .atlas-stage{padding:15px;border-radius:22px}
+ .atlas-toolbar{gap:8px}
+}
