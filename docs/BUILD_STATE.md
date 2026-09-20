@@ -777,3 +777,9 @@ Current release posture:
 - Evidence tiers now distinguish LIVE VIDEO, LIVE IMAGE, EXTERNAL LIVE, CURRENT SOURCE and PREVIEW. Preview/reference material is explicitly non-live and remains fallback rather than being promoted as current.
 - Destination search applies the hierarchy before grouping results by place, while existing intent matching and destination ranking remain intact.
 - Visual live cards expose the evidence tier alongside local-moment and freshness information.
+
+
+## Place-answer search layer — 2026-09-20
+- Destination results now answer the visitor's core question immediately: what is the best truthful visual window ERN has for this place?
+- Result cards surface the evidence tier (LIVE VIDEO, LIVE IMAGE, EXTERNAL LIVE, CURRENT SOURCE or PREVIEW), current-check count, and whether multiple views can be chosen before asking the visitor to open the destination.
+- This shifts Find Your Earth from a generic result directory toward an ERN-style visual search engine while preserving source truth and choice.
