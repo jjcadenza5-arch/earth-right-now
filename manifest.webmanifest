@@ -14,5 +14,28 @@
       "type": "image/svg+xml",
       "purpose": "any"
     }
+  ],
+  "id": "/",
+  "orientation": "any",
+  "categories": [
+    "travel",
+    "lifestyle"
+  ],
+  "lang": "en",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Watch Earth",
+      "short_name": "Watch Earth",
+      "description": "Open Earth Right Now and start with the shared live-Earth experience.",
+      "url": "/#live"
+    },
+    {
+      "name": "Explore Earth",
+      "short_name": "Explore",
+      "description": "Search and explore destinations on Earth Right Now.",
+      "url": "/#explore"
+    }
   ]
 }
