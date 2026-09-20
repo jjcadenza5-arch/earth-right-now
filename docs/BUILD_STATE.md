@@ -1,3 +1,8 @@
+## 2026-09-20 — Place-level fallback truth
+- Place health now evaluates currentness at the active ERN moment and distinguishes photo-only destinations with “Reference image available” rather than “No current window.”
+- Curated journeys now propagate that same moment through currentness and playback scoring.
+- This keeps the hierarchy intact at destination level: verified live/current first, honest reference image when that is all ERN has, never a prerecorded/reference asset presented as live.
+
 ## 2026-09-20 — Watch Earth single-clock closure
 - Watch Earth eligibility, health, recency, playback ranking and diagnostics now use the same explicit moment as solar beauty scoring.
 - Earth Moments sequence/captions now propagate that moment as well, so an expired source cannot retain an “Earth Happening Now” identity through a separate clock path.
