@@ -5,3 +5,6 @@ const night=lanes.find(x=>x.phase==="NIGHT");
 console.assert(night?.items.some(x=>x.id==="city"),"night lane should retain city night scenes");
 console.assert(!night?.items.some(x=>x.id==="nature"),"night lane should not promote dark nature merely because it is night");
 console.log("ERN Earth light lane night-quality checks passed");
+
+const expired={...city,id:"expired",checkedAt:"2026-01-01T00:00:00Z",lastSuccessfulCheck:"2026-01-01T00:00:00Z"};
+console.assert(earthLightLanes([expired],{now}).length===0,"light lanes must evaluate currentness at the same requested moment");
