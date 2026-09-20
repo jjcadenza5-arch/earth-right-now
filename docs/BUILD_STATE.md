@@ -1,3 +1,8 @@
+## 2026-09-20 — Business camera privacy + non-bypass
+- Public catalog drafts now have regression protection ensuring submitter contact and business identity metadata do not leak into source records.
+- Submission transport now serializes an explicit allowlist instead of arbitrary record state, reducing accidental disclosure of future internal fields.
+- Paid/partner review can consume the same six-check source-review contract as ordinary business submissions; commercial status still cannot bypass truth, permission, quality, playback or currentness review.
+
 ## 2026-09-20 — My Earth UI + business review contract
 - My Earth now renders saved-view currentness from one snapshot and shows a separate current-status note without hiding saved memories when media is unavailable.
 - Business camera review now has one shared six-check contract used by both the operator checklist and approval gate, preventing those two truth boundaries from drifting apart.
