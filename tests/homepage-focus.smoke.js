@@ -1,0 +1,1 @@
+import fs from "node:fs";const html=fs.readFileSync("index.html","utf8"),css=fs.readFileSync("src/styles.css","utf8");console.assert((html.match(/secondary-home-section/g)||[]).length===3);console.assert(css.includes("content-visibility:auto"));console.assert(css.includes("contain-intrinsic-size"));console.log("homepage focus smoke passed");
