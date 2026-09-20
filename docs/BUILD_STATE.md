@@ -1,3 +1,8 @@
+## 2026-09-20 — Search personalization boundary
+- ERN AI destination grouping now chooses its preferred view using the same moment as the query itself.
+- Explicit destination intent remains stronger than My Earth taste: personalization may gently reorder relevant choices, but cannot redirect a direct place request to an unrelated favorite.
+- This preserves the core ERN model: visitor asks for a place first; personalization helps within that intent rather than replacing it.
+
 ## 2026-09-20 — Place-level fallback truth
 - Place health now evaluates currentness at the active ERN moment and distinguishes photo-only destinations with “Reference image available” rather than “No current window.”
 - Curated journeys now propagate that same moment through currentness and playback scoring.
