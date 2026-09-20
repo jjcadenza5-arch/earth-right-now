@@ -1,3 +1,8 @@
+## 2026-09-20 — Place-to-travel bridge coherence
+- Place views and travel offers now share one captured render moment, so expiring verification cannot produce contradictory counts and cards within the same render.
+- Nearby destination UI now delegates selection and distance ordering to the canonical nearby-destination engine rather than duplicating that logic.
+- Regression checks protect both boundaries while keeping travel options secondary to ERN’s Earth view.
+
 ## 2026-09-20 — Earth Guide fallback truth
 - Earth Guide now explains ERN’s destination-search hierarchy in visitor language: current views when available, clearly labeled reference views when they are not.
 - Generic searches disclose reference-image fallback when present; live/now searches remain strict and never use a reference image as a live substitute.
