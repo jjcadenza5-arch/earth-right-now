@@ -1,3 +1,9 @@
+## 2026-09-20 — Watch Earth visitor recovery
+- Runtime playback failures remain quarantined automatically so Watch Earth does not repeatedly hammer a broken provider during normal rotation.
+- If a journey has lost windows, the viewer now reveals a quiet “Retry unavailable views” control; it stays hidden when the journey is healthy.
+- Explicit retry clears both the current session quarantine and the short-lived browser runtime-failure memory, then retries from the current journey position.
+- The journey counter discloses reduced availability after failures instead of silently pretending every starting window remains usable.
+
 ## 2026-09-20 — App render-clock + submission-state truth
 - Hero truth labels now use the same captured moment as hero actions, preventing a freshness boundary from producing contradictory labels and controls.
 - Living Atlas map clusters and destination results now share one captured moment per render, keeping the map/list view coherent at recency boundaries.
