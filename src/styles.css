@@ -318,3 +318,13 @@ main>[data-surface="home"] .section-head p{font-size:12px;line-height:1.45;margi
 #explore .explore-tools{position:relative}
 #explore .explore-tools>input{width:min(100%,520px)}
 @media(max-width:760px){.secondary-home-section{contain-intrinsic-size:1px 620px}#explore .explore-tools>input{width:100%}}
+
+/* Homepage polish pass 9: make camera choices read as visual windows, not text cards. */
+.window-tile,.live-window-card{overflow:hidden;isolation:isolate}
+.window-visual,.live-window-visual{display:block;position:relative;height:112px;margin:-16px -16px 12px;overflow:hidden;background:#0a2923}
+.window-visual .source-poster-image,.live-window-visual .source-poster-image{transition:transform .45s ease}
+.window-tile:hover .source-poster-image,.window-tile:focus-visible .source-poster-image,.live-window-card:hover .source-poster-image,.live-window-card:focus-visible .source-poster-image{transform:scale(1.025)}
+.window-moment,.live-window-moment{position:relative;z-index:2;display:inline-flex!important;width:max-content;max-width:100%;align-items:center;min-height:22px;padding:4px 8px;border:1px solid rgba(255,255,255,.16);border-radius:999px;background:rgba(3,18,15,.62);backdrop-filter:blur(8px);font-size:9px!important;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.9)!important;margin:-24px 0 9px!important}
+.window-truth-line{line-height:1.35;opacity:.86}
+@media(max-width:760px){.window-visual,.live-window-visual{height:104px}.window-tile,.live-window-card{scroll-snap-align:start}}
+@media(prefers-reduced-motion:reduce){.window-visual .source-poster-image,.live-window-visual .source-poster-image{transition:none}.window-tile:hover .source-poster-image,.window-tile:focus-visible .source-poster-image,.live-window-card:hover .source-poster-image,.live-window-card:focus-visible .source-poster-image{transform:none}}
