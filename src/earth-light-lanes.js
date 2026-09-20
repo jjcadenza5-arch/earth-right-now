@@ -4,6 +4,6 @@ const META={SUNRISE:["Near sunrise locally","The sun is near the horizon and ris
 export function earthLightLanes(sources,{now=new Date(),limitPerLane=4}={}){
  const groups=new Map(ORDER.map(x=>[x,[]]));
  for(const s of sources||[]){if(!currentSource(s,{now}))continue;const m=solarMoment(s,now);if(m.phase==="NIGHT"&&!/(Cities|Harbour|Skyline|Urban|Streets|Landmarks)/i.test((s.categories||[]).join(" ")))continue;if(groups.has(m.phase))groups.get(m.phase).push({...s,solar:m})}
- return ORDER.map(phase=>{const items=groups.get(phase).sort((a,b)=>beautifulNowScore(b,now)-beautifulNowScore(a,now)).slice(0,limitPerLane);return{phase,title:META[phase][0],note:META[phase][1],items}}).filter(x=>x.items.length);
+ return ORDER.map(phase=>{const ranked=groups.get(phase).sort((a,b)=>beautifulNowScore(b,now)-beautifulNowScore(a,now)),items=[],places=new Set(),countries=new Map();for(const s of ranked){const place=s.placeId||s.id,country=s.country||"Unknown";if(places.has(place)||(countries.get(country)||0)>=2)continue;items.push(s);places.add(place);countries.set(country,(countries.get(country)||0)+1);if(items.length>=limitPerLane)break}for(const s of ranked){if(items.length>=limitPerLane)break;if(items.includes(s))continue;const place=s.placeId||s.id;if(places.has(place))continue;items.push(s);places.add(place)}return{phase,title:META[phase][0],note:META[phase][1],items}}).filter(x=>x.items.length);
 }
 export function lightLaneDisclaimer(){return"Light timing is based on solar geometry, not a claim about cloud cover or what the camera can see."}
