@@ -7,7 +7,10 @@ function safeUrl(value){
 
 function sameHostFamily(a,b){
   const x=String(a||"").toLowerCase().replace(/^www\./,""),y=String(b||"").toLowerCase().replace(/^www\./,"");
-  return Boolean(x&&y&&(x===y||x.endsWith("."+y)||y.endsWith("."+x)));
+  if(!x||!y)return false;
+  if(x===y)return true;
+  const parent=(child,base)=>child.endsWith("."+base)&&base.includes(".")&&!/^(com|co|org|net|gov|ac)\.[a-z]{2}$/.test(base);
+  return parent(x,y)||parent(y,x);
 }
 
 export function providerHostIntegrity(source){
