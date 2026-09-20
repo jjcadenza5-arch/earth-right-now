@@ -1,3 +1,8 @@
+## 2026-09-20 — Destination evidence hierarchy
+- Destination cards now choose their headline evidence from the best truthful current view rather than blindly trusting a preferred/poster source.
+- Choose-a-view summaries can include an honest reference image alongside live/refreshed/provider windows instead of hiding the fallback or calling it live.
+- Window labels, actions and strip ranking now accept the same active moment, so expired sources stop saying “current” consistently across the destination experience.
+
 ## 2026-09-20 — Search-time coherence
 - Plain destination search, current/live intent filtering, evidence tiers, destination grouping and ERN AI destination tie-breaks now propagate one explicit moment through the full result pipeline.
 - A query such as “Chiang Mai live now” can no longer accept a stale match in one layer while another layer labels it current.
