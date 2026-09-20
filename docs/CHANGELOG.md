@@ -614,3 +614,8 @@
 ## 2026-09-20 — Ground Earth Guide different requests
 - Different-place guidance now prefers current, discoverable, locally healthy windows and never falls back to the place already being viewed.
 - Removed duplicate runtime-health import.
+
+
+## 2026-09-20 — Normalize live-media identity
+- Added shared media identity normalization for Watch Earth, Hero/Next Live, Surprise Me and Choose a Window variety guards.
+- Dedupe now recognizes equivalent YouTube URL forms and conservative cache-buster variants while avoiding thumbnail-based false matches.
