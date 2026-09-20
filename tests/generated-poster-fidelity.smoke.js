@@ -1,0 +1,10 @@
+import { posterClass,posterSceneMeta,posterFor } from "../src/source-poster.js";
+console.assert(posterFor({title:"x"}).kind==="generated","missing thumbnails must remain explicitly generated");
+console.assert(posterClass({categories:["Cities & Harbours"]})==="poster-water","harbour scenes should keep water identity");
+console.assert(posterClass({categories:["Alps"]})==="poster-mountain","alpine scenes should read as mountain windows");
+console.assert(posterClass({categories:["Parks"]})==="poster-nature","parks should receive nature scenery");
+const a=posterSceneMeta({id:"chiang-mai"}),b=posterSceneMeta({id:"chiang-mai"}),c=posterSceneMeta({id:"zurich"});
+console.assert(JSON.stringify(a)===JSON.stringify(b),"generated scene identity must be stable");
+console.assert(a.positionX>=18&&a.positionX<=82&&a.positionY>=18&&a.positionY<=75,"scene focal points must stay usable");
+console.assert(JSON.stringify(a)!==JSON.stringify(c),"different places should not all render the same generated scene");
+console.log("ERN generated poster fidelity checks passed");
