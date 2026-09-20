@@ -2,7 +2,7 @@ import { loadFavorites } from "./favorites.js";
 import { loadFavoritePlaces } from "./place-favorites.js";
 import { loadRecentPlaces } from "./recent-places.js";
 import { loadRecentWindows } from "./recent-windows.js";
-import { discoverableSource } from "./discovery-eligibility.js";
+import { discoverableSource,currentSource } from "./discovery-eligibility.js";
 
 export function buildMyEarth({sources,places},{now=new Date()}={}){
  const sourceFav=loadFavorites(),placeFav=loadFavoritePlaces(),recent=loadRecentPlaces(),recentWindows=loadRecentWindows(),placeMap=new Map((places||[]).map(p=>[p.id,p])),sourceMap=new Map((sources||[]).map(s=>[s.id,s]));
@@ -16,7 +16,7 @@ export function buildMyEarth({sources,places},{now=new Date()}={}){
   recentPlaces:recent.map(id=>placeMap.get(id)).filter(Boolean),
   recentWindows:visitedWindows,
   availableRecentWindows:visitedWindows.filter(discoverableSource),
-  currentFavoriteWindows:favoriteWindows.filter(s=>discoverableSource(s)&&s.health==="HEALTHY"),
+  currentFavoriteWindows:favoriteWindows.filter(s=>currentSource(s,{now})),
   generatedAt:now instanceof Date?now.toISOString():new Date(now).toISOString()
  };
 }
