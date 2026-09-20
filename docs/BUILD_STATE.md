@@ -703,3 +703,9 @@ Current release posture:
 - Added a lightweight vector Earth-window mark to the production site, with Earth Right Now + “See before you go.” in the persistent header.
 - Added the mark as the site's favicon candidate for browser/search presentation and as the Organization logo in structured metadata.
 - Kept the brand compact on mobile so it does not compete with the live-Earth experience.
+
+
+## Earth Guide current-difference grounding — 2026-09-20
+- “Something/completely different” now selects from verified-current, discoverable sources that have not recently failed in the visitor's browser, before using a broader healthy fallback.
+- The current place is never returned by the different-place fallback.
+- Removed a duplicate runtime-health import in the app module while touching this path.

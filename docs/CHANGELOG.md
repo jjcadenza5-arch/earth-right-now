@@ -609,3 +609,8 @@
 - Added the approved Earth-window brand mark to the header.
 - Added “See before you go.” to the persistent brand lockup.
 - Wired the mark as SVG favicon and structured Organization logo metadata.
+
+
+## 2026-09-20 — Ground Earth Guide different requests
+- Different-place guidance now prefers current, discoverable, locally healthy windows and never falls back to the place already being viewed.
+- Removed duplicate runtime-health import.

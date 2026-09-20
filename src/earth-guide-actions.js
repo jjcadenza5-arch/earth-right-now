@@ -7,4 +7,4 @@ export function earthGuideAction(query){
  if(intent.wantsCurrent&&intent.intents.length===0&&/^(show me )?(what is |what's )?(live|current|right now|live right now|current right now)/.test(q))return{type:"LIVE_NOW"};
  return{type:"SEARCH"};
 }
-export function differentFrom(items,current,{limit=8}={}){const country=current?.country,region=current?.region,place=current?.placeId||current?.id;const far=(items||[]).filter(s=>(s.placeId||s.id)!==place&&s.country!==country&&s.region!==region);return(far.length?far:items||[]).slice(0,limit)}
+export function differentFrom(items,current,{limit=8}={}){const country=current?.country,region=current?.region,place=current?.placeId||current?.id;const far=(items||[]).filter(s=>(s.placeId||s.id)!==place&&s.country!==country&&s.region!==region);const near=(items||[]).filter(s=>(s.placeId||s.id)!==place);return(far.length?far:near).slice(0,limit)}
