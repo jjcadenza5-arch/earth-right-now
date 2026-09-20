@@ -1,0 +1,1 @@
+import { foldEarthSearchText } from "../src/earth-intent.js";console.assert(foldEarthSearchText("Kaikōura")==="kaikoura");console.assert(foldEarthSearchText("Kīlauea")==="kilauea");console.assert(foldEarthSearchText("เชียงใหม่ ตอนนี้")==="เชียงใหม่ ตอนนี้");console.assert(foldEarthSearchText("서울 지금")==="서울 지금");console.log("ERN regex-portability checks passed");
