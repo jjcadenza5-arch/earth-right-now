@@ -41,7 +41,13 @@ jobs:
       - name: Report release candidate
         if: success()
         run: npm run release:candidate
-      - name: Build immutable release artifact\n        if: success()\n        run: npm run release:build\n      - name: Verify release artifact manifest\n        if: success()\n        run: node scripts/verify-release-snapshot.mjs\n      - name: Publish smoke output to summary
+      - name: Build immutable release artifact
+        if: success()
+        run: npm run release:build
+      - name: Verify release artifact manifest
+        if: success()
+        run: node scripts/verify-release-snapshot.mjs
+      - name: Publish smoke output to summary
         if: always()
         run: |
           echo "## ERN smoke output" >> "$GITHUB_STEP_SUMMARY"
