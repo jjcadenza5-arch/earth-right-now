@@ -17,7 +17,9 @@ console.log(JSON.stringify({
  candidate:{sources:stats.total,countries:new Set(rows.map(x=>x.country).filter(Boolean)).size,providers:new Set(rows.map(x=>x.provider).filter(Boolean)).size,currentInsideERN:release.catalog.currentInsideERN},
  catalogReady:release.checks.catalog,
  publicationReady:release.ready,
+ publicationReadyForCandidate,
  releaseBlockers:release.blockers,
+ candidateBlockers,
  evidenceBinding,
  business:{score:business.score,foundationReady:business.foundationReady,commerciallyActive:business.commerciallyActive,remaining:business.remaining}
 },null,2));
