@@ -70,7 +70,7 @@ export function watchEarthFallback(sources, { limit = 20, now = new Date() } = {
 
 export function watchEarthSnapshot(sources,{limit=20,now=new Date()}={}){
  const items=buildWatchEarth(sources,{limit,now});
- const phases=new Map();let inside=0,nightCities=0;
- for(const s of items){const phase=solarMoment(s,now).phase;phases.set(phase,(phases.get(phase)||0)+1);if(playbackCapability(s,{now}).action==="PLAY")inside++;if(phase==="NIGHT"&&/(Cities|Harbour|Skyline|Urban|Streets|Landmarks)/i.test((s.categories||[]).join(" ")))nightCities++}
- return{count:items.length,places:new Set(items.map(s=>s.placeId||s.id)).size,countries:new Set(items.map(s=>s.country||"Unknown")).size,inside,nightCities,phases:Object.fromEntries(phases)};
+ const phases=new Map();let inside=0,nightCities=0,daylight=0,golden=0,unknownLight=0;
+ for(const s of items){const phase=solarMoment(s,now).phase;phases.set(phase,(phases.get(phase)||0)+1);if(playbackCapability(s,{now}).action==="PLAY")inside++;if(phase==="NIGHT"&&/(Cities|Harbour|Skyline|Urban|Streets|Landmarks)/i.test((s.categories||[]).join(" ")))nightCities++;if(phase==="DAY")daylight++;if(["SUNRISE","SUNSET","MORNING_GOLDEN","EVENING_GOLDEN"].includes(phase))golden++;if(phase==="UNKNOWN")unknownLight++}
+ return{count:items.length,places:new Set(items.map(s=>s.placeId||s.id)).size,countries:new Set(items.map(s=>s.country||"Unknown")).size,inside,nightCities,daylight,golden,unknownLight,knownLight:items.length-unknownLight,phases:Object.fromEntries(phases)};
 }
