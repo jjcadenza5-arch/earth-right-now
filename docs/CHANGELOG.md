@@ -630,3 +630,8 @@
 - Added 14 currently checked, explicitly embeddable CouchTourist scenic cameras to accelerate the live public beta.
 - Watch Earth now prefers likely daylight among its qualified current windows, improving the rotation as Earth's day/night boundary moves.
 - Added a smoke guard for 20+ embeddable places and timezone diversity.
+
+
+## 2026-09-20 — Make Watch Earth beautiful-now aware
+- Replaced simple daylight-first Watch Earth ordering with destination-local moment scoring.
+- Sunrise, sunset and golden hour are promoted; night city/harbour/skyline views remain desirable; ordinary dark scenic views are demoted.
