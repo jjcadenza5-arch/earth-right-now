@@ -1,3 +1,8 @@
+## 2026-09-20 — Earth Moments clock alignment
+- Earth Moments and “Earth Happening Now” eligibility now use the same explicit currentness moment as Watch Earth, search, Hero and destination discovery.
+- ERN intent ranking now passes that moment into source scoring for ordinary, current-only and themed queries.
+- Regression coverage confirms stale high-quality sources cannot outrank verified-current evidence merely through a hidden wall-clock path.
+
 ## 2026-09-20 — Source-surface truth
 - Discovery source cards, source badges, operational notes and network-aware source actions now share the active ERN moment instead of independently consulting wall-clock currentness.
 - Reference-image fallbacks are explicitly labeled “REFERENCE · NOT LIVE” / “Reference image — not live” across source-facing metadata.
