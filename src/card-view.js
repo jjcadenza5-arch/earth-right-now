@@ -10,7 +10,7 @@ export function sourceCardView(source,{favorite=false,onPlay,onPlace,onFavorite,
   const copy=element("div"),meta=element("span",{className:"meta",text:[source.country,source.region].filter(Boolean).join(" · ")}),title=element("h3",{text:source.title}),story=element("p",{text:source.story||""}),badges=element("div",{className:"card-badges"});
   for(const badge of sourceBadges(source,{now}))badges.append(element("span",{text:badge}));
   copy.append(meta,title,story,badges);
-  const actions=element("div",{className:"card-actions"}),action=sourceActionMeta(source,{now}),play=element("button",{text:action.label,attrs:{"aria-label":action.aria}}),place=element("button",{text:"Windows"}),fav=element("button",{text:favorite?"♥":"♡",attrs:{"aria-label":favorite?"Remove favorite window":"Save favorite window","aria-pressed":String(favorite)}});
+  const actions=element("div",{className:"card-actions"}),action=sourceActionMeta(source,{now}),play=element("button",{text:action.label,attrs:{"aria-label":action.aria}}),place=element("button",{text:"View place",attrs:{"aria-label":"View place for "+source.title}}),fav=element("button",{text:favorite?"♥":"♡",attrs:{"aria-label":favorite?"Remove favorite window":"Save favorite window","aria-pressed":String(favorite)}});
   play.disabled=action.disabled;
   play.onclick=()=>{if(!play.disabled)onPlay?.(source)};
   place.onclick=()=>onPlace?.(source);
