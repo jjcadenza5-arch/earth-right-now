@@ -18,7 +18,8 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
       proposals:report.proposals.length,
       changes:report.changes,
       unobserved:report.unobserved,
-      unknownObservationIds:report.unknownObservationIds
+      unknownObservationIds:report.unknownObservationIds,
+      invalidObservations:report.invalidObservations
     };
   })();
 
