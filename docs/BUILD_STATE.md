@@ -1,3 +1,9 @@
+## 2026-09-20 — Single-moment truth + mixed-view discovery
+- Watch Earth, immersive eligibility, Watch Earth sessions, Earth light lanes and light-aware search now evaluate currentness against the same supplied moment rather than accidentally mixing the requested time with the machine wall clock.
+- This protects the core “beautiful somewhere on Earth right now” behavior from stale/current inconsistencies.
+- Destination/search coverage now distinguishes live-like windows from reference-image fallbacks and uses neutral “views” wording for mixed catalogs.
+- Search status can explicitly report reference images without calling them windows or live media.
+
 ## 2026-09-20 — Personal Earth + light-aware discovery
 - My Earth now has a visitor-facing explanation of its bounded local personalization: broad taste signals can gently shape discovery while live truth/currentness remain first.
 - Find Your Earth understands light-moment requests such as night city lights, daylight, sunrise, sunset and golden hour, using destination solar geometry rather than pretending every camera is in the same moment.
