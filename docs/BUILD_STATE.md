@@ -1,3 +1,8 @@
+## 2026-09-20 — Watch Earth manual recovery path
+- A failed Watch Earth source remains quarantined during automatic rotation so ERN does not repeatedly reopen a broken provider.
+- The session now supports an explicit retry that clears only session quarantine and permits a fresh attempt when the visitor chooses to try again.
+- Runtime-health storage also has an explicit reset path for deliberate recovery; neither reset changes catalog truth, permissions or verification timestamps.
+
 ## 2026-09-20 — My Earth recent-view truth
 - My Earth now snapshots currentness for recent views as well as saved favorites using the same captured moment.
 - Recent windows that become undiscoverable are retained as memory state and counted as unavailable rather than silently disappearing or being shown as playable.
