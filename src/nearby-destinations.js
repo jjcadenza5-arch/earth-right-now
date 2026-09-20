@@ -1,4 +1,5 @@
 import { discoverableSource,currentSource } from "./discovery-eligibility.js";
+import { nearNowEvidence } from "./now-evidence.js";
 function finite(n){return Number.isFinite(n)}
 export function destinationCentroid(place){
  const sources=(place?.sources||[]).filter(s=>finite(s.lat)&&finite(s.lon));
@@ -10,5 +11,5 @@ export function distanceKm(a,b){
 }
 export function nearbyDestinations(origin,places,{limit=6,maxKm=250}={}){
  const from=destinationCentroid(origin);if(!from)return[];
- return places.filter(p=>p?.id!==origin?.id&&(!(p?.sources?.length)||(p.sources||[]).some(discoverableSource))).map(place=>{const sources=(place.sources||[]).filter(discoverableSource),current=sources.some(s=>currentSource(s)),healthy=sources.some(s=>s.health==="HEALTHY");return{place,distanceKm:distanceKm(from,destinationCentroid(place)),current,healthy}}).filter(x=>Number.isFinite(x.distanceKm)&&x.distanceKm<=maxKm).sort((a,b)=>Number(b.current)-Number(a.current)||Number(b.healthy)-Number(a.healthy)||a.distanceKm-b.distanceKm).slice(0,Math.max(0,limit));
+ return places.filter(p=>p?.id!==origin?.id&&(!(p?.sources?.length)||(p.sources||[]).some(discoverableSource))).map(place=>{const sources=(place.sources||[]).filter(discoverableSource),nearNow=sources.some(s=>nearNowEvidence(s)),current=sources.some(s=>currentSource(s)),healthy=sources.some(s=>s.health==="HEALTHY");return{place,distanceKm:distanceKm(from,destinationCentroid(place)),current,healthy}}).filter(x=>Number.isFinite(x.distanceKm)&&x.distanceKm<=maxKm).sort((a,b)=>Number(b.nearNow)-Number(a.nearNow)||Number(b.current)-Number(a.current)||Number(b.healthy)-Number(a.healthy)||a.distanceKm-b.distanceKm).slice(0,Math.max(0,limit));
 }
