@@ -1,3 +1,12 @@
+## 2026-09-20 — Watch Earth visitor-quality milestone
+- Three visitor-observed poor experiences (unavailable embed, visibly non-live feed, and weak destination presentation) are quarantined from the curated Watch Earth journey while remaining auditable in the catalog.
+- Watch Earth now requires a strong visitor-experience floor in addition to truthful/current playback; technically available is no longer sufficient for the curated 20.
+- Degraded sources remain lower-tier destination/Atlas evidence and are labeled “limited source” rather than being presented as current.
+- The journey balances daylight, golden-hour and worthwhile night-city moments when the truthful catalog supports them, while continuity prevents needless reshuffling during freshness updates.
+- Runtime playback quality can now adapt during a visit: one transient failure is tolerated, while repeated failures temporarily remove that window from subsequent Watch Earth refreshes.
+- Search Earth understands natural travel intent such as beaches, wildlife, mountains, city lights and local solar-time requests without weakening current/live evidence rules.
+- The cinematic homepage direction is preserved, including the Earth-first hero, Choose a Window transition, integrated Search Earth and truthful generated scenery when no real thumbnail is available.
+
 ## 2026-09-20 — Search Earth local-history hygiene
 - Browser-local recent searches now fail closed on malformed storage, normalize repeated whitespace, cap stored query length and keep case-insensitive deduplication.
 - Search suggestions no longer repeat a recent query when the same query is already one of ERN’s curated default prompts.
