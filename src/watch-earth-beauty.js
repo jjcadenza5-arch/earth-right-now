@@ -1,5 +1,5 @@
 import { solarMoment,beautifulNowScore } from "./solar-moment.js";
-const CITY=/Cities|Harbour|Skyline|Landmark|Urban|Culture/i;
+const CITY=/Cities|Harbour|Skyline|Urban|Streets|Landmarks/i;
 export function nightCityEligible(s,now=new Date()){
  const sun=solarMoment(s,now);
  return sun.phase==="NIGHT"&&(s.categories||[]).some(x=>CITY.test(x));
