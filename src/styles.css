@@ -190,3 +190,9 @@ body{background:radial-gradient(circle at 50% -20%,#12483d 0,transparent 34%),va
 .live-window-card .window-evidence{top:12px;right:12px}.live-window-card .live-window-state{opacity:.78}
 .live-window-card .source-freshness,.window-tile .source-freshness{font-size:9px;opacity:.64}
 @media(max-width:760px){.live-window-card .source-freshness,.window-tile .source-freshness{display:none}.live-window-card{min-height:205px}}
+
+
+/* Hero focus: the first decision is watching Earth; utilities recede. */
+.hero .hero-tertiary-action{background:transparent;border-color:transparent;color:rgba(255,255,255,.7);padding-left:9px;padding-right:9px}
+.hero .hero-tertiary-action:hover,.hero .hero-tertiary-action:focus-visible{color:#fff;border-color:rgba(255,255,255,.18)}
+@media(max-width:760px){.hero .hero-tertiary-action{display:none}}
