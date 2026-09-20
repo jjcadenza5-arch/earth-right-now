@@ -1,3 +1,8 @@
+## 2026-09-20 — My Earth recent-view truth
+- My Earth now snapshots currentness for recent views as well as saved favorites using the same captured moment.
+- Recent windows that become undiscoverable are retained as memory state and counted as unavailable rather than silently disappearing or being shown as playable.
+- The current-status note can now distinguish saved and recent views that are genuinely verified current right now.
+
 ## 2026-09-20 — Living Atlas discoverability boundary
 - The Living Atlas map and its destination list now share ERN’s canonical discoverability gate before grouping, ranking or mapping evidence.
 - Invalid/undiscoverable source records therefore cannot leak onto the map merely because they contain coordinates.
