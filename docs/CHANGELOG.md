@@ -619,3 +619,8 @@
 ## 2026-09-20 — Normalize live-media identity
 - Added shared media identity normalization for Watch Earth, Hero/Next Live, Surprise Me and Choose a Window variety guards.
 - Dedupe now recognizes equivalent YouTube URL forms and conservative cache-buster variants while avoiding thumbnail-based false matches.
+
+
+## 2026-09-20 — Fix missing public logo
+- Added assets/ to the immutable Pages release snapshot. The ERN header mark and favicon are now shipped with the deployed site instead of existing only in the source repository.
+- Added a deployment regression smoke check.

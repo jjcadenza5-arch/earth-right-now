@@ -7,6 +7,7 @@ await import("./build-destination-pages.mjs");
 await cp(new URL("../index.html",import.meta.url),new URL("index.html",dist));
 await cp(new URL("../src/",import.meta.url),new URL("src/",dist),{recursive:true});
 await cp(new URL("../data/",import.meta.url),new URL("data/",dist),{recursive:true});
+await cp(new URL("../assets/",import.meta.url),new URL("assets/",dist),{recursive:true});
 await cp(new URL("../places/",import.meta.url),new URL("places/",dist),{recursive:true});
 await cp(new URL("../sitemap.xml",import.meta.url),new URL("sitemap.xml",dist));
 await cp(new URL("../robots.txt",import.meta.url),new URL("robots.txt",dist));
