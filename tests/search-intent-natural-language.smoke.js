@@ -1,5 +1,5 @@
 import { searchEarth } from "../src/search-engine.js";
-const now=new Date("2026-03-20T12:00:00Z"),base={health:"HEALTHY",permission:"PUBLIC",checkedAt:"2026-03-20T11:00:00Z",truth:"LIVE_VIDEO",playback:"EMBED",provider:"x",quality:5,moment:5,freshness:5};
+const now=new Date("2026-03-20T12:00:00Z"),base={health:"HEALTHY",permission:"LINK_ONLY",checkedAt:"2026-03-20T11:00:00Z",lastSuccessfulCheck:"2026-03-20T11:00:00Z",truth:"EXTERNAL_LIVE",playback:"EXTERNAL",sourceUrl:"https://example.com/live",provider:"x",quality:75,moment:75,freshness:75};
 const sources=[
  {...base,id:"beach",title:"Blue Coast",categories:["Beaches"],lat:0,lon:0},
  {...base,id:"city-night",title:"Night City",categories:["Cities"],lat:0,lon:180},
