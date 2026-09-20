@@ -4,7 +4,10 @@ const SYNONYMS={
  mountains:["mountain","mountains","volcano","volcanoes","snow","summit","alpine"],
  human:["city","cities","street","streets","people","urban","square","harbour","harbor"],
  beautiful:["beautiful","scenic","view","views","relax","relaxing","calm","peaceful"],
- happening:["happening","active","event","busy","crowd","crowds"]
+ happening:["happening","active","event","busy","crowd","crowds"],
+ night:["night","nighttime","lights","after dark"],
+ daylight:["daylight","sunny","daytime"],
+ golden:["sunrise","sunset","golden hour","dawn","dusk"]
 };
 const CURRENT=["now","live","current","today","right now","ตอนนี้","สด"];
 function norm(x){return(x||"").toString().normalize("NFKD").toLowerCase().replace(/[\u0300-\u036f]/g,"").replace(/[^\p{L}\p{N}\s-]/gu," ").replace(/\s+/g," ").trim()}
