@@ -9,6 +9,7 @@ export function windowEvidenceTier(s,{now=new Date()}={}){
  if(near.label==="LIVE VIDEO")return{rank:5,label:"LIVE VIDEO",copy:"Verified-current moving view."};
  if(near.label==="REFRESHED IMAGE")return{rank:4,label:"REFRESHED IMAGE",copy:"Frequently refreshed near-now image."};
  if(near.label==="EXTERNAL LIVE")return{rank:3,label:"EXTERNAL LIVE",copy:"Current view opens at its provider."};
+ if(near.label==="IMAGE SOURCE")return{rank:2,label:"IMAGE SOURCE",copy:"Camera image source; frame freshness is not yet independently verified."};
  if(s.truth==="PREVIEW")return{rank:1,label:"REFERENCE IMAGE",copy:"Reference view — not live."};
  return{rank:2,label:"CURRENT SOURCE",copy:"Available source with its status shown honestly."};
 }
