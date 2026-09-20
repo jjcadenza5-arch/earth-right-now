@@ -655,3 +655,8 @@
 ## 2026-09-20 — Brand and cinematic live-card polish
 - Refined the production ERN mark toward the approved dimensional Earth-window identity instead of the earlier flat approximation; omitted the accidental trademark symbol.
 - Upgraded Watch Earth cards to full photographic treatment with destination-local moment badges while retaining truth and freshness metadata.
+
+
+## 2026-09-20 — Find Your Earth personalization
+- Promoted Earth search into a clearer “Find Your Earth” experience alongside the shared Watch Earth journey.
+- Added bounded browser-local recent-search memory and quick return suggestions; no account or server profile required.
