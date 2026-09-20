@@ -381,3 +381,26 @@ main>[data-surface="home"] .section-head p{font-size:12px;line-height:1.45;margi
 .nearby-places h3{font-family:Georgia,serif;font-size:clamp(22px,3vw,30px);font-weight:500;margin:6px 0 14px}
 .place-close{position:sticky;top:0;z-index:4;float:right;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(3,18,15,.78);backdrop-filter:blur(10px)}
 @media(max-width:760px){.place-drawer{width:100vw;max-height:92svh;padding:22px 16px 30px;border-radius:24px 24px 0 0}.place-drawer>h2{font-size:38px;padding-right:58px}.nearby-places{margin-top:18px}}
+
+/* Product polish pass 13: make the immersive viewer feel like ERN's quiet cinema mode. */
+.viewer{background:radial-gradient(circle at 50% 36%,#12372f 0,#071f1b 46%,#03110f 100%);padding:clamp(14px,2vw,24px)}
+.viewer-top{min-height:34px;gap:10px;padding:0 2px 10px;border-bottom:1px solid rgba(255,255,255,.07)}
+.viewer-mount{border-radius:22px;overflow:hidden;background:#020b09;box-shadow:0 24px 80px rgba(0,0,0,.34)}
+.viewer-story{max-width:1100px;margin:0 auto;padding:18px 4px 14px;border-bottom:1px solid rgba(255,255,255,.07)}
+.viewer-story strong{font-family:Georgia,serif;font-size:clamp(25px,3vw,38px);font-weight:500;line-height:1}
+.viewer-place{margin-top:6px;color:var(--muted);font-size:12px}
+.viewer-controls{max-width:1100px;margin:0 auto;padding-top:13px;gap:8px}
+.viewer-controls #nextViewer{background:var(--accent);border-color:var(--accent);color:#09241e;font-weight:800}
+.viewer-controls #sourceViewer{margin-left:auto}
+.journey-bar{max-width:1100px;margin:0 auto;border-bottom:1px solid rgba(255,255,255,.06);padding:10px 2px}
+@media(max-width:760px){
+ .viewer{padding:8px}
+ .viewer-top{overflow-x:auto;white-space:nowrap}
+ .viewer-mount{border-radius:17px}
+ .viewer-story{padding:14px 4px 12px}
+ .viewer-story strong{font-size:27px}
+ .viewer-controls{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+ .viewer-controls button,.viewer-controls a{min-width:0;padding:9px 6px;text-align:center;font-size:10px}
+ .viewer-controls #sourceViewer{margin-left:0}
+ .viewer-controls #nextViewer{grid-column:span 2}
+}
