@@ -1,3 +1,8 @@
+## 2026-09-20 — Destination action language
+- Destination cards now say “Choose a view” / “Open view” rather than assuming every available destination asset is a live window.
+- This keeps the destination-first interaction compatible with live video, refreshed images, external current sources and clearly labeled reference images.
+- Regression tests were aligned with the new visitor-facing evidence language while internal PREVIEW remains the conservative catalog truth type.
+
 ## 2026-09-20 — Destination evidence language
 - The internal PREVIEW truth type is now presented to visitors as “REFERENCE IMAGE” in the destination evidence hierarchy, with an explicit “not live” explanation.
 - Destination choice summaries now separate verified-current views, available views whose current check is unconfirmed, and reference images instead of mixing those evidence levels together.
