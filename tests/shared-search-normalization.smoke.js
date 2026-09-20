@@ -1,0 +1,1 @@
+import { normalizeEarthText } from "../src/earth-intent.js";console.assert(normalizeEarthText("เชียงใหม่ ตอนนี้")==="เชียงใหม่ ตอนนี้","shared normalizer must preserve Thai");console.assert(normalizeEarthText("  PARIS!!  ")==="paris","shared normalizer should retain ordinary search cleanup");console.log("ERN shared search normalization checks passed");
