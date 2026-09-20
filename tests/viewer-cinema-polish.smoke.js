@@ -1,0 +1,1 @@
+import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Product polish pass 13",".viewer-mount{border-radius:22px","#nextViewer","grid-template-columns:repeat(4,1fr)"])console.assert(css.includes(token),token);console.log("viewer cinema polish smoke passed");
