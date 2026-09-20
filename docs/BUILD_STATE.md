@@ -1,3 +1,8 @@
+## 2026-09-20 — Watch Earth truth + runtime resilience
+- Representative-time audit now verifies every selected item is Watch Earth eligible at the audited moment, source IDs are unique, and PREVIEW/reference images never enter the live/current journey.
+- Watch Earth session now skips a source that fails at runtime and continues to the next current candidate instead of immediately ending the journey.
+- This strengthens the central promise: beautiful moments around Earth without weakening truth when a provider fails unexpectedly.
+
 ## 2026-09-20 — Place-to-travel bridge coherence
 - Place views and travel offers now share one captured render moment, so expiring verification cannot produce contradictory counts and cards within the same render.
 - Nearby destination UI now delegates selection and distance ordering to the canonical nearby-destination engine rather than duplicating that logic.
