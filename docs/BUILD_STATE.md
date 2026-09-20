@@ -1,3 +1,8 @@
+## 2026-09-20 — Business submission activation boundary
+- The camera form now says “Prepare for review” while submission transport is not connected; it explicitly says preparation does not send or publish a camera.
+- The six-check review gate is visible in the visitor-facing explanation without implying automatic acceptance.
+- Business readiness now exposes FOUNDATION_INCOMPLETE, FOUNDATION_READY and ACTIVE stages; ACTIVE requires both real submission transport and real affiliate inventory.
+
 ## 2026-09-20 — Watch Earth manual recovery path
 - A failed Watch Earth source remains quarantined during automatic rotation so ERN does not repeatedly reopen a broken provider.
 - The session now supports an explicit retry that clears only session quarantine and permits a fresh attempt when the visitor chooses to try again.
