@@ -1,3 +1,8 @@
+## 2026-09-20 — Search Earth evidence clarity
+- Search result status now distinguishes current/live views from reference images instead of using the generic word “windows” for mixed evidence.
+- Search suggestions retain ERN’s moment discovery while adding a direct destination-search example, reinforcing the two-part product model: Watch Earth for what is beautiful now; Search Earth for where you want to go.
+- Regression coverage preserves reference-only truth and keeps suggestion chips actionable.
+
 ## 2026-09-20 — ERN boot-time coherence
 - Initial place grouping, destination ranking, primary promotion, Earth Moments, runtime-health filtering, Watch Earth curation and hero selection now share one captured startup moment.
 - Runtime source-health accepts either Date or numeric clocks and dynamic Watch Earth evaluates its quarantine state at the same moment as source currentness.
