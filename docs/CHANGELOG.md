@@ -660,3 +660,8 @@
 ## 2026-09-20 — Find Your Earth personalization
 - Promoted Earth search into a clearer “Find Your Earth” experience alongside the shared Watch Earth journey.
 - Added bounded browser-local recent-search memory and quick return suggestions; no account or server profile required.
+
+
+## 2026-09-20 — Best available window hierarchy
+- Added a formal evidence hierarchy for ERN place search: verified live video first, refreshed live image next, current external live, other honest available sources, then preview/reference fallback.
+- Added visible evidence badges so fallback imagery cannot be mistaken for live content.
