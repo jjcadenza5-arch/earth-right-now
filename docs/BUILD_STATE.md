@@ -1,3 +1,8 @@
+## 2026-09-20 — End-to-end search fallback contract
+- Generic destination search is now regression-protected to retain a legal reference-image fallback when no live/current view exists.
+- Adding “live” or “now” to the same destination request must exclude that reference image rather than mislabel it as current.
+- Search status explicitly counts reference images separately from live/current windows, preserving ERN’s simple rule: show the best truthful evidence available for the visitor’s actual request.
+
 ## 2026-09-20 — Destination-first fallback language
 - Generated destination pages now use neutral “available views” language instead of assuming every place has a current camera.
 - Any future reference-image record on a static destination page is explicitly rendered as “REFERENCE IMAGE · NOT LIVE,” with matching disclosure text.
