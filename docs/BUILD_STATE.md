@@ -1,3 +1,9 @@
+## 2026-09-20 — Personal Earth + light-aware discovery
+- My Earth now has a visitor-facing explanation of its bounded local personalization: broad taste signals can gently shape discovery while live truth/currentness remain first.
+- Find Your Earth understands light-moment requests such as night city lights, daylight, sunrise, sunset and golden hour, using destination solar geometry rather than pretending every camera is in the same moment.
+- A live night-city suggestion makes the “beautiful somewhere on Earth right now” idea directly discoverable.
+- Static destination pages now say “See [place] before you go” and “Available views,” so future reference-photo fallbacks cannot inherit false “right now/current windows” language.
+
 ## 2026-09-20 — Search-engine fallback semantics
 - ERN destination discovery can now retain an explicitly marked PREVIEW/reference image when no live or refreshed view is available.
 - Preview references remain non-current and are never promoted into Watch Earth or described as live.
