@@ -728,3 +728,10 @@ Current release posture:
 - New coverage deliberately spans Asia, Africa, Europe, Australia/Oceania and North America across many time zones so Watch Earth has alternatives when one part of Earth is dark or visually poor.
 - Watch Earth now orders its qualified journey with likely-daylight windows first while retaining night windows as valid choices; runtime failure memory and one-place/media variety remain active.
 - Added an inventory guard requiring >=20 healthy embeddable windows, >=20 places and broad timezone diversity.
+
+
+## Beautiful Watch Earth — 2026-09-20
+- Watch Earth now ranks its qualified global live pool by what should be visually compelling at the destination's local moment, not by the visitor's timezone.
+- Sunrise/sunset and golden-hour windows receive priority; ordinary daylight remains strong.
+- Night is no longer treated as universally undesirable: city/harbour/skyline/landmark/culture windows can receive a night-light boost, while ordinary dark scenic cameras are strongly demoted.
+- Visitors in different countries at the exact same instant can therefore begin from the same globally beautiful-now ranking, while their local favorites/recent behavior can still make their wider ERN experience differ. Search remains unrestricted by this presentation ranking.
