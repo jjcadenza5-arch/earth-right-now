@@ -1,0 +1,12 @@
+import assert from "node:assert/strict";
+import { operationsReport } from "../src/operations-report.js";
+const now="2026-09-20T12:00:00Z";
+const source={id:"cam-a",placeId:"p",title:"A",provider:"P",country:"T",truth:"LIVE_VIDEO",permission:"LINK_ONLY",health:"UNKNOWN",playback:"EXTERNAL",sourceUrl:"https://example.com/live",checkedAt:now};
+let r=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200}]});
+assert.equal(r.healthAutomation.providerInput.accepted,1);
+assert.equal(r.healthAutomation.proposals,1);
+assert.equal(r.healthAutomation.changes[0]?.proposed,undefined);
+r=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200,confirmation:"MEDIA_ENDPOINT"}]});
+assert.equal(r.healthAutomation.proposals,1);
+assert.equal(r.healthAutomation.complete,true);
+console.log("provider observations operations integration passed");
