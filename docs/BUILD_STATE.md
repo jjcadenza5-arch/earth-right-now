@@ -689,3 +689,10 @@ Current release posture:
 - The runtime failure memory stores only source ID, timestamp and failure kind; it is local browser state, not analytics or user profiling.
 - Watch Earth is built from the catalog minus recent local runtime failures. Catalog truth is not rewritten from one visitor's transient failure.
 - A source that remains successfully open clears its local failure mark, allowing recovery without permanent quarantine.
+
+
+## Machine-readable destination truth refinement — 2026-09-20
+- Crawlable destination pages now expose coordinates when known, time zone in visible text, provider navigation, and each source's latest available ERN verification timestamp.
+- Structured data uses conservative schema.org Place rather than claiming every catalog record is a TouristDestination (important for orbit, wildlife, city-view and institutional windows).
+- Freshness wording explicitly says a source check confirms ERN verification at that time and does not promise weather, visibility or uninterrupted provider availability.
+- Removed the homepage SearchAction structured-data claim because the public app does not implement the advertised ?q= search URL contract. ERN will not publish machine-readable capabilities it does not actually support.

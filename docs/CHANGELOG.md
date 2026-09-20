@@ -597,3 +597,9 @@
 - Added six-hour browser-local playback failure memory.
 - Recent failed sources are excluded from immersive Watch Earth on the next load, reducing repeated dead windows.
 - Successful playback can clear the local mark; canonical catalog health remains unchanged.
+
+
+## 2026-09-20 — Strengthen destination truth for search and AI discovery
+- Added crawlable source verification dates, provider links, time zones and coordinates to generated place pages.
+- Changed universal TouristDestination schema to conservative Place schema.
+- Removed unsupported homepage SearchAction metadata rather than advertising a nonexistent query-URL feature.
