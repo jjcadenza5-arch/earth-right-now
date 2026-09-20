@@ -1,3 +1,8 @@
+## 2026-09-20 — ERN boot-time coherence
+- Initial place grouping, destination ranking, primary promotion, Earth Moments, runtime-health filtering, Watch Earth curation and hero selection now share one captured startup moment.
+- Runtime source-health accepts either Date or numeric clocks and dynamic Watch Earth evaluates its quarantine state at the same moment as source currentness.
+- This removes edge cases where a source could cross a freshness boundary between initial surfaces during one page load.
+
 ## 2026-09-20 — Watch Earth truth + runtime resilience
 - Representative-time audit now verifies every selected item is Watch Earth eligible at the audited moment, source IDs are unique, and PREVIEW/reference images never enter the live/current journey.
 - Watch Earth session now skips a source that fails at runtime and continues to the next current candidate instead of immediately ending the journey.
