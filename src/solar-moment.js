@@ -12,9 +12,12 @@ export function solarElevation(lat,lon,now=new Date()){
  return Math.asin(Math.max(-1,Math.min(1,sinEl)))/RAD;
 }
 export function solarMoment(source,now=new Date()){
- const elevation=solarElevation(Number(source?.lat),Number(source?.lon),now);
+ const rawLat=source?.lat,rawLon=source?.lon;
+ if(rawLat===null||rawLat===undefined||rawLat===""||rawLon===null||rawLon===undefined||rawLon==="")return{phase:"UNKNOWN",elevation:null,score:0,label:"Light unknown"};
+ const lat=Number(rawLat),lon=Number(rawLon);
+ const elevation=solarElevation(lat,lon,now);
  if(elevation===null)return{phase:"UNKNOWN",elevation:null,score:0,label:"Light unknown"};
- const later=solarElevation(Number(source.lat),Number(source.lon),new Date(now.getTime()+10*60000));
+ const later=solarElevation(lat,lon,new Date(now.getTime()+10*60000));
  const rising=later!==null&&later>elevation;
  if(elevation>=-6&&elevation<=6)return{phase:rising?"SUNRISE":"SUNSET",elevation,score:24,label:rising?"Sunrise window":"Sunset window"};
  if(elevation>6&&elevation<18)return{phase:rising?"MORNING_GOLDEN":"EVENING_GOLDEN",elevation,score:14,label:rising?"Morning light":"Evening light"};
