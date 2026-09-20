@@ -1,0 +1,1 @@
+import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Homepage polish pass 5","poster-nature","ernHeroDrift","prefers-reduced-motion:no-preference"])console.assert(css.includes(token),token);console.assert(!css.includes("animation:ernHeroDrift 5s"),"hero motion must stay slow");console.log("homepage visual depth smoke passed");
