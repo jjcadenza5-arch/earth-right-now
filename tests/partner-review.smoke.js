@@ -4,6 +4,7 @@ const blocked=partnerReview(paid,{decision:"APPROVED"});
 console.assert(!blocked.ok&&!partnerPublishable(blocked),"payment must never bypass source review");
 const ready=partnerReview({...paid,truthReviewed:true,permissionReviewed:true,healthReviewed:true},{decision:"APPROVED",reviewNote:"All source checks complete"});
 console.assert(ready.ok&&partnerPublishable(ready));
+const contractReady=partnerReview({...paid,reviewChecks:{rights:true,public:true,truth:true,quality:true,embed:true,currentness:true}},{decision:"APPROVED"});console.assert(contractReady.ok&&partnerPublishable(contractReady),"partner review should accept the shared six-check source review contract");
 const rejected=partnerReview({...paid,truthReviewed:true,permissionReviewed:true,healthReviewed:true},{decision:"REJECTED"});
 console.assert(!partnerPublishable(rejected));
 console.log("ERN partner review smoke checks passed");
