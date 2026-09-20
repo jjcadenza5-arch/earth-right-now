@@ -5,7 +5,7 @@ export function submissionTransportConfig({endpoint="",enabled=false}={}){
 export function submissionEnvelope(record,{consent=false}={}){
  if(!record||record.status!=="PENDING_REVIEW")return{ok:false,reason:"INVALID_RECORD"};
  if(consent!==true)return{ok:false,reason:"CONSENT_REQUIRED"};
- return{ok:true,payload:{version:1,type:"CAMERA_SUBMISSION",record}};
+ const payloadRecord={businessName:record.businessName,placeName:record.placeName,sourceUrl:record.sourceUrl,contact:record.contact||null,rightsConfirmed:record.rightsConfirmed===true,status:record.status,submittedAt:record.submittedAt};return{ok:true,payload:{version:1,type:"CAMERA_SUBMISSION",record:payloadRecord}};
 }
 export function submissionDeliveryState(record,config,{consent=false}={}){
  const envelope=submissionEnvelope(record,{consent});
