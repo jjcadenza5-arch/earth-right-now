@@ -1,3 +1,8 @@
+## 2026-09-20 — Visible-window regression hardening
+- Hero beauty and personalized Live Right Now fixtures now use distinct media identities, matching ERN’s production deduplication rules instead of accidentally collapsing different test destinations onto one URL.
+- The tests also carry explicit current timestamps and distinct place geometry, so they isolate the intended ranking behavior cleanly.
+- This protects the invariant that ERN ranks distinct visible windows, not duplicate representations of the same media source.
+
 ## 2026-09-20 — Search suggestion balance + fixture hardening
 - Search Earth keeps a direct destination prompt visible alongside intent prompts, reinforcing ERN as a place-search experience rather than only a themed camera browser.
 - Currentness-sensitive hero and personalization regression fixtures now use exact timestamps aligned to their test moments so they validate product behavior instead of accidentally testing stale evidence.
