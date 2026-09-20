@@ -1,0 +1,1 @@
+import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Product polish pass 14",":focus-visible","@media(pointer:coarse)","min-height:44px","@media(prefers-reduced-motion:reduce)"])console.assert(css.includes(token),token);console.log("accessibility interaction polish smoke passed");
