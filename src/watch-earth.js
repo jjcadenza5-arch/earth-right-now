@@ -4,10 +4,12 @@ import { playbackCapability } from "./playback-capability.js";
 import { watchEarthBeautyScore } from "./watch-earth-beauty.js";
 import { solarMoment } from "./solar-moment.js";
 import { watchEarthExperienceEligible,watchEarthExperienceScore } from "./watch-earth-experience.js";
+import { nearNowEvidence } from "./now-evidence.js";
 
 export function watchEarthEligible(s,{now=new Date()}={}) {
   return !!s &&
     sourceStatus(s,{now}).live &&
+    nearNowEvidence(s,{now}) &&
     s.health === "HEALTHY" &&
     s.permission !== "UNKNOWN" &&
     recencyState(s,{now}) === "CURRENT_CHECK" &&
