@@ -43,8 +43,18 @@ export function buildWatchEarth(
     if (out.length >= limit) return out;
   }
 
-  // If the catalog is still small, fill remaining slots from the same truthful,
-  // current pool. Diversity is a presentation preference, never an eligibility bypass.
+  // First relax country concentration while preserving distinct places.
+  for (const source of pool) {
+    if (out.includes(source)) continue;
+    const place = source.placeId || source.id;
+    if ((places.get(place) || 0) >= maxPerPlace) continue;
+    out.push(source);
+    places.set(place, (places.get(place) || 0) + 1);
+    if (out.length >= limit) return out;
+  }
+
+  // Only if the truthful current catalog is still smaller than the journey do we
+  // allow another window from an already represented place.
   for (const source of pool) {
     if (out.includes(source)) continue;
     out.push(source);
