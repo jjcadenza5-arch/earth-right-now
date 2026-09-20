@@ -1,0 +1,11 @@
+import { interpretEarthIntent } from "../src/earth-intent.js";
+import { rankForIntent } from "../src/ern-ai.js";
+const now=new Date("2026-03-20T12:00:00Z"),checkedAt=now.toISOString(),base={truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",health:"HEALTHY",playback:"EXTERNAL",sourceUrl:"https://example.com",checkedAt,lastSuccessfulCheck:checkedAt,quality:80,freshness:80,moment:80,lat:0,categories:["Cities & Streets"]};
+console.assert(interpretEarthIntent("show me beautiful city lights at night").intents.includes("night"),"night language should become a light-moment intent");
+console.assert(interpretEarthIntent("sunset somewhere now").intents.includes("golden"),"sunset language should become a golden-light intent");
+const night={...base,id:"night",title:"Night City",country:"Nightland",lon:180},day={...base,id:"day",title:"Day City",country:"Dayland",lon:0};
+const ranked=rankForIntent([day,night],"city lights at night now",{now});
+console.assert(ranked[0]?.id==="night","night-city search should prefer a city currently in local night");
+const daylight=rankForIntent([night,day],"city in daylight now",{now});
+console.assert(daylight[0]?.id==="day","daylight search should prefer a destination currently in daylight");
+console.log("ERN light-moment search checks passed");
