@@ -17,6 +17,9 @@ jobs:
       - name: Verify candidate
         run: |
           npm test
+          npm run catalog:embeds
+          npm run catalog:fallbacks
+          npm run watch-earth:audit
           npm run release:evidence
           npm run release:status
           npm run release:candidate
