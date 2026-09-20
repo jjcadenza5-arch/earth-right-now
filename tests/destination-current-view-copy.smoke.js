@@ -1,0 +1,1 @@
+import fs from "node:fs";for(const path of ["src/destination-card-view.js","src/place-answer.js","src/place-health.js"]){const x=fs.readFileSync(path,"utf8");console.assert(!/current (window|windows)/.test(x),"destination surfaces should say current/live view rather than generic current window: "+path)}console.log("ERN destination current-live wording checks passed");
