@@ -1,4 +1,12 @@
 
+## 2026-09-20 — Living Earth ranking hardening
+- Missing coordinates now remain solar-unknown instead of being accidentally interpreted as 0°,0°.
+- Watch Earth relaxes country concentration before place diversity when filling its journey, keeping more distinct destinations on screen.
+- Night-time promotion is focused on city/street/harbour/skyline-style contexts rather than generic culture or dark nature.
+- Generated destination pages now carry ERN visual identity, social metadata and a stronger “See before you go” route back into the live app.
+- CI and the previous GitHub Pages deployment were green before this batch; new regression checks cover the ranking changes.
+
+
 ## 2026-09-20 — Watch Earth + personal discovery integration
 - Watch Earth now ranks verified-current windows by the moment happening on Earth, with daylight/golden-hour preference and strong night-city allowance after truth gates.
 - The dynamic Watch Earth journey feeds the same time-aware pool into Live Right Now, while My Earth taste remains a bounded influence so discovery is preserved.
