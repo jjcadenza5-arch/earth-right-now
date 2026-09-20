@@ -17,6 +17,7 @@ export function bestWindow(place,{now=new Date()}={}){
   const sources=(place?.sources||[]).filter(discoverableSource);
   return[...sources].sort((a,b)=>{
     const ac=currentSource(a,{now})?1:0,bc=currentSource(b,{now})?1:0;if(ac!==bc)return bc-ac;
+    const ah=a.health==="HEALTHY"?1:0,bh=b.health==="HEALTHY"?1:0;if(ah!==bh)return bh-ah;
     const ap=playbackCapability(a,{now}).action==="PLAY"?1:0,bp=playbackCapability(b,{now}).action==="PLAY"?1:0;if(ap!==bp)return bp-ap;
     return sourceScore(b,{now})-sourceScore(a,{now});
   })[0]||null;
