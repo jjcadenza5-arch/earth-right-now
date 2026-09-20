@@ -8,5 +8,5 @@ const sources=[
 const destinations=atlasClusterDestinations({sources}),summary=atlasClusterSummary({sources});
 console.assert(destinations.length===2,"cluster drawer must collapse duplicate windows into destinations");
 console.assert(destinations.find(x=>x.id==="p").sources.length===2,"destination must retain all Choose a Window options");
-console.assert(summary.destinationCount===2&&summary.windows===3&&summary.title.includes("2 destinations · 3 windows"));
+console.assert(summary.destinationCount===2&&summary.windows===3&&summary.title.includes("2 destinations · 3 views"));
 console.log("ERN Atlas cluster destination smoke checks passed");
