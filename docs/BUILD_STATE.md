@@ -1,3 +1,8 @@
+## 2026-09-20 — Hero night-city beauty
+- Hero rotation now uses the same beauty model as Watch Earth after truth/currentness and playback capability are satisfied.
+- A genuinely current night city/skyline can therefore outrank a dark non-city scene instead of night being treated as automatically inferior.
+- This supports ERN’s “beautiful somewhere on Earth right now” idea while preserving currentness and source truth as higher-priority gates.
+
 ## 2026-09-20 — Nearby destination evidence boundary
 - Nearby exploration now excludes source-backed destinations when none of their evidence is discoverable, preventing invalid media records from leaking into the travel path.
 - Pure coordinate-only place models remain supported for geometry and tests; discoverability gating applies when a place actually carries source evidence.
