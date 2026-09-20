@@ -3,6 +3,7 @@ import { recencyState } from "./source-recency.js";
 import { playbackCapability } from "./playback-capability.js";
 import { watchEarthBeautyScore } from "./watch-earth-beauty.js";
 import { solarMoment } from "./solar-moment.js";
+import { watchEarthExperienceEligible,watchEarthExperienceScore } from "./watch-earth-experience.js";
 
 export function watchEarthEligible(s,{now=new Date()}={}) {
   return !!s &&
@@ -10,7 +11,8 @@ export function watchEarthEligible(s,{now=new Date()}={}) {
     s.health === "HEALTHY" &&
     s.permission !== "UNKNOWN" &&
     recencyState(s,{now}) === "CURRENT_CHECK" &&
-    playbackCapability(s,{now}).action !== "UNAVAILABLE";
+    playbackCapability(s,{now}).action !== "UNAVAILABLE" &&
+    watchEarthExperienceEligible(s);
 }
 
 function rankedPool(sources, now) {
@@ -19,8 +21,8 @@ function rankedPool(sources, now) {
     .sort((a, b) => {
       const insideA = playbackCapability(a,{now}).action === "PLAY" ? 6 : 0;
       const insideB = playbackCapability(b,{now}).action === "PLAY" ? 6 : 0;
-      return (watchEarthBeautyScore(b, now) + insideB) -
-        (watchEarthBeautyScore(a, now) + insideA);
+      return (watchEarthBeautyScore(b, now) + watchEarthExperienceScore(b)*.35 + insideB) -
+        (watchEarthBeautyScore(a, now) + watchEarthExperienceScore(a)*.35 + insideA);
     });
 }
 
