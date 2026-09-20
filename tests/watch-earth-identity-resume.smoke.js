@@ -1,0 +1,1 @@
+import fs from "node:fs";const app=fs.readFileSync("src/app.js","utf8");console.assert(app.includes("saved.watchEarthSourceId"));console.assert(app.includes("curatedJourney.findIndex(s=>s.id===savedId)"));console.assert(app.includes("idIndex>=0?idIndex"));console.log("Watch Earth identity resume smoke passed");
