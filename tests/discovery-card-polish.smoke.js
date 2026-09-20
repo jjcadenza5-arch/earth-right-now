@@ -1,0 +1,1 @@
+import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Product polish pass 16",".destination-card{min-height:210px",".card-actions{margin-top:16px",".results{grid-template-columns:1fr"])console.assert(css.includes(token),token);console.log("discovery card polish smoke passed");
