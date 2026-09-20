@@ -1,3 +1,8 @@
+## 2026-09-20 — Hero + journey moment coherence
+- Hero eligibility, live inventory, hero rotation and Live Right Now fallback now use explicit moment-aware currentness rather than silently falling back to the machine clock.
+- Watch Earth journey controls now surface the destination’s local light context (for example Daylight now, Night lights, sunrise/sunset windows) beside the journey counter.
+- Find Your Earth preserves core exploration prompts while reserving room for current golden-light discovery and limiting recent-search crowd-out.
+
 ## 2026-09-20 — Fresh discovery balance
 - Find Your Earth now reserves suggestion space for fresh exploration instead of allowing recent searches to consume the entire suggestion row.
 - Current city-light and golden-light discovery remain available alongside core beach/scenic/wildlife/mountain intents.
