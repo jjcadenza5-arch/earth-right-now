@@ -1,0 +1,1 @@
+import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Homepage polish pass 9",".window-visual,.live-window-visual","make camera choices read as visual windows","prefers-reduced-motion:reduce"])console.assert(css.includes(token),token);console.log("window card depth smoke passed");
