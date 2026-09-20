@@ -3,7 +3,8 @@ const STATUS={PENDING_REVIEW:"PENDING_REVIEW",NEEDS_INFO:"NEEDS_INFO",APPROVED:"
 export function reviewSubmission(record,{decision,reviewedAt=new Date().toISOString(),note="",checks={}}={}){
  if(!record||![STATUS.PENDING_REVIEW,STATUS.NEEDS_INFO].includes(record.status))return{ok:false,error:"Submission is not pending review"};
  if(!["NEEDS_INFO","APPROVED","REJECTED"].includes(decision))return{ok:false,error:"Review decision must be NEEDS_INFO, APPROVED or REJECTED"};
- const required=SUBMISSION_REVIEW_CHECK_IDS,missing=required.filter(k=>checks?.[k]!==true),cleanNote=String(note||"").trim().slice(0,500),reviewTime=Date.parse(reviewedAt);\n if(!Number.isFinite(reviewTime))return{ok:false,error:"Review timestamp must be valid"};
+ const required=SUBMISSION_REVIEW_CHECK_IDS,missing=required.filter(k=>checks?.[k]!==true),cleanNote=String(note||"").trim().slice(0,500),reviewTime=Date.parse(reviewedAt);
+ if(!Number.isFinite(reviewTime))return{ok:false,error:"Review timestamp must be valid"};
  if(decision==="APPROVED"&&missing.length)return{ok:false,error:"Required source review checks are incomplete",missing};
  return{ok:true,record:{...record,status:decision,reviewedAt:new Date(reviewTime).toISOString(),note:cleanNote||null,reviewChecks:Object.fromEntries(required.map(k=>[k,checks?.[k]===true]))}};
 }
