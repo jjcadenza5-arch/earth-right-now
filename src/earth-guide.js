@@ -1,5 +1,5 @@
 import { interpretEarthIntent } from "./earth-intent.js";
-const label=i=>({water:"water and coast",mountains:"mountains and snow",wildlife:"wildlife",human:"city life",beautiful:"beautiful scenery",happening:"places with activity",night:"city lights at night",daylight:"daylight",golden:"sunrise, sunset or golden light"}[i]||i);
+const label=i=>({water:"water and coast",mountains:"mountains and snow",wildlife:"wildlife",human:"city life",beautiful:"beautiful scenery",happening:"places with activity",night:"city lights at night",daylight:"daylight",golden:"sunrise, sunset or golden light",reference:"reference images"}[i]||i);
 export function earthGuideReply(result,{tasteSignals=0}={}){
  const q=String(result?.query||"").trim();if(!q)return{tone:"WELCOME",text:"Tell me where you want to go or what you want to see. I’ll show current views when available, and clearly labeled reference views when they’re not."};
  const intent=interpretEarthIntent(q);
