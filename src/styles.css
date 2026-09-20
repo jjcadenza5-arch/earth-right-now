@@ -221,3 +221,16 @@ body{background:radial-gradient(circle at 50% -20%,#12483d 0,transparent 34%),va
 .site-footer{display:grid;gap:12px;padding:28px 4vw 38px;border-top:1px solid rgba(255,255,255,.08);color:var(--muted);font-size:12px}
 .footer-links{display:flex;gap:18px;flex-wrap:wrap}.site-footer a{color:var(--ink);text-decoration:none}.site-footer a:hover,.site-footer a:focus-visible{text-decoration:underline}
 @media(max-width:760px){.hero-media{min-height:76vh}.hero-copy{bottom:6%}.hero-deck{display:none}.hero-nowline{margin-bottom:12px}.hero-nowline span:nth-child(3){display:none}#windows{padding-top:26px}.site-footer{padding-inline:18px}}
+
+/* Homepage polish pass 2: make discovery surfaces feel like one visual system. */
+#windowRow,.live-window-strip{padding-bottom:16px}
+.window-tile,.live-window-card,.card{transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.window-tile:hover,.live-window-card:hover,.card:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.24);box-shadow:0 16px 42px rgba(0,0,0,.16)}
+.window-moment,.live-window-moment{display:inline-block;width:max-content;max-width:100%;font-size:9px;letter-spacing:.12em;color:#dce9df;margin:0 0 7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.window-truth-line{margin-top:9px!important;font-size:9px!important;line-height:1.35;color:rgba(218,232,222,.72)!important}
+.destination-card .place-answer-tier{display:block;margin-top:8px;font-size:11px;font-weight:750;color:#dce9df}
+.destination-card .place-answer-detail,.destination-choice-summary,.destination-context{display:block;margin-top:6px;color:var(--muted);font-size:11px;line-height:1.4}
+.card-actions{margin-top:14px}.card-actions button:first-child{background:rgba(245,240,223,.94);color:#08221c;border-color:transparent;font-weight:750}
+#earthSearchStatus,#ernAiStatus{min-height:18px;color:var(--muted);font-size:12px}
+#liveRightNowCopy{line-height:1.45}
+@media(max-width:760px){.window-tile,.live-window-card{flex-basis:82vw}.window-tile:hover,.live-window-card:hover,.card:hover{transform:none}.window-row,.live-window-strip{scroll-padding-inline:2px}.card-actions{flex-wrap:wrap}}

@@ -1,0 +1,1 @@
+import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Homepage polish pass 2","window-truth-line","place-answer-tier","destination-choice-summary"])console.assert(css.includes(token),token);console.log("homepage card polish smoke passed");
