@@ -1,8 +1,8 @@
 import { discoverableSource,currentSource } from "./discovery-eligibility.js";
 import { sourceScore } from "./source-score.js";
 const norm=x=>(x||"").toString().normalize("NFKD").toLowerCase().replace(/[\u0300-\u036f]/g,"").replace(/[^\p{L}\p{N}\s-]/gu," ").replace(/\s+/g," ").trim();
-const currentWords=new Set(["now","live","current","today"]);
-const stopWords=new Set(["show","me","find","see","watch","look","at","in","on","the","a","an","of","for","please","i","want","to","go","going","visit","before"]);
+const currentWords=new Set(["now","live","current","today","tonight"]);
+const stopWords=new Set(["show","me","find","see","watch","look","at","in","on","the","a","an","of","for","please","i","want","to","go","going","visit","before","what","is","like","there","can","you"]);
 export function searchEarth(sources,q){
  const terms=norm(q).split(/\s+/).filter(Boolean),wantsCurrent=terms.some(t=>currentWords.has(t)),semanticTerms=terms.filter(t=>!currentWords.has(t)&&!stopWords.has(t)),pool=sources.filter(s=>wantsCurrent?currentSource(s):discoverableSource(s));
  if(!terms.length)return[...pool].sort((a,b)=>sourceScore(b)-sourceScore(a));
