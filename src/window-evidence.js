@@ -11,5 +11,5 @@ export function windowEvidenceTier(s,{now=new Date()}={}){
  return{rank:2,label:"CURRENT SOURCE",copy:"Available source with its status shown honestly."};
 }
 export function bestAvailableWindows(sources,{limit=12,now=new Date()}={}){
- return [...(sources||[])].filter(discoverableSource).sort((a,b)=>{const ea=windowEvidenceTier(a,{now}),eb=windowEvidenceTier(b,{now});return eb.rank-ea.rank||(truthRank[b.truth]||0)-(truthRank[a.truth]||0)||(playbackRank[b.playback]||0)-(playbackRank[a.playback]||0)||editorial(b)-editorial(a)}).slice(0,limit);
+ return [...(sources||[])].filter(discoverableSource).sort((a,b)=>{const ea=windowEvidenceTier(a,{now}),eb=windowEvidenceTier(b,{now});const ha=a.health==="HEALTHY"?1:0,hb=b.health==="HEALTHY"?1:0;return eb.rank-ea.rank||hb-ha||(truthRank[b.truth]||0)-(truthRank[a.truth]||0)||(playbackRank[b.playback]||0)-(playbackRank[a.playback]||0)||editorial(b)-editorial(a)}).slice(0,limit);
 }
