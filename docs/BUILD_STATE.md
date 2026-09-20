@@ -1,3 +1,8 @@
+## 2026-09-20 — Watch Earth sparse-embed resilience
+- Watch Earth still prefers current views that can play inside ERN, but it no longer collapses when the verified embed pool is too small.
+- When needed, the journey is supplemented with truthful current external-live views, preserving their external playback semantics rather than pretending they play inside ERN.
+- This gives the global journey a better chance of reaching its intended breadth while keeping truth/currentness ahead of quantity.
+
 ## 2026-09-20 — Hero night-city beauty
 - Hero rotation now uses the same beauty model as Watch Earth after truth/currentness and playback capability are satisfied.
 - A genuinely current night city/skyline can therefore outrank a dark non-city scene instead of night being treated as automatically inferior.
