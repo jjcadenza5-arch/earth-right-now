@@ -1,6 +1,6 @@
 const STATUS={PENDING_REVIEW:"PENDING_REVIEW",NEEDS_INFO:"NEEDS_INFO",APPROVED:"APPROVED",REJECTED:"REJECTED"};
 export function reviewSubmission(record,{decision,reviewedAt=new Date().toISOString(),note="",checks={}}={}){
- if(!record||record.status!==STATUS.PENDING_REVIEW)return{ok:false,error:"Submission is not pending review"};
+ if(!record||![STATUS.PENDING_REVIEW,STATUS.NEEDS_INFO].includes(record.status))return{ok:false,error:"Submission is not pending review"};
  if(!["NEEDS_INFO","APPROVED","REJECTED"].includes(decision))return{ok:false,error:"Review decision must be NEEDS_INFO, APPROVED or REJECTED"};
  const required=["rights","public","truth","quality","embed","currentness"],missing=required.filter(k=>checks?.[k]!==true),cleanNote=String(note||"").trim().slice(0,500);
  if(decision==="APPROVED"&&missing.length)return{ok:false,error:"Required source review checks are incomplete",missing};
