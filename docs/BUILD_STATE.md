@@ -1,3 +1,8 @@
+## 2026-09-20 — Nearby destination evidence boundary
+- Nearby exploration now excludes source-backed destinations when none of their evidence is discoverable, preventing invalid media records from leaking into the travel path.
+- Pure coordinate-only place models remain supported for geometry and tests; discoverability gating applies when a place actually carries source evidence.
+- Nearby rendering remains destination-first and does not request or depend on the visitor’s precise location.
+
 ## 2026-09-20 — Earth Light diversity + single-moment rendering
 - Earth Light lanes now prefer distinct places and cap country concentration when truthful current alternatives exist, then relax only as needed to fill the lane.
 - Night remains a positive city/skyline lane rather than being treated as inferior to daylight.
