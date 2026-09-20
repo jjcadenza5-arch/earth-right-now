@@ -12,3 +12,6 @@ Watch Earth is a curated journey, not another independent player.
 
 ## Journey diagnostics
 ERN can summarize each curated Watch Earth journey internally by window count, distinct places, distinct countries, inside-ERN playback, solar phases and useful night-city presence. These are regression/curation signals rather than promises shown to visitors. They help protect the simple product goal: a varied set of truthful, beautiful current windows rather than twenty versions of the same place or time of day.
+
+## Representative-time audit
+Curators can run `npm run watch-earth:audit` to inspect the same catalog at 00:00, 06:00, 12:00 and 18:00 UTC on the catalog's latest verification day. The output reports journey size, distinct places/countries, inside-ERN playback, night-city count, solar-phase distribution and selected titles. These are internal curation/regression signals, not visitor promises or proof of weather/camera visibility.
