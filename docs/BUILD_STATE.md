@@ -1,3 +1,8 @@
+## 2026-09-20 — Explicit reference-image search intent
+- Earth intent now recognizes explicit requests for photos/images/reference views.
+- ERN AI can rank legal PREVIEW evidence for that explicit intent while live/current queries remain strict and exclude PREVIEW records.
+- Earth Guide can describe reference-image intent without ever upgrading it to live/current evidence.
+
 ## 2026-09-20 — Destination-first source cards + Guide evidence
 - Generic source cards now use “View place” for destination navigation instead of a generic “Windows” action; window-specific surfaces still keep ERN’s Choose a Window metaphor where it is accurate.
 - Earth Guide replies for ordinary destination searches now explain verified-current views, additional available-but-unconfirmed views, and reference-image fallbacks as separate evidence levels.
