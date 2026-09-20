@@ -10,12 +10,13 @@ const SYNONYMS={
  golden:["sunrise","sunset","golden hour","dawn","dusk"],
  reference:["photo","photos","image","images","reference","picture","pictures"]
 };
-const CURRENT=["now","live","current","today","right now","ตอนนี้","สด","jetzt","live jetzt","maintenant","en direct","ahora","en vivo","adesso","dal vivo","今","ライブ","지금","라이브","现在","直播"];
+const CURRENT=["right now","live now","live jetzt","en direct","en vivo","dal vivo","now","live","current","today","tonight","ตอนนี้","สด","jetzt","maintenant","ahora","adesso","今","ライブ","지금","라이브","现在","直播"];
 function norm(x){return(x||"").toString().normalize("NFKD").toLowerCase().replace(/[\u0300-\u036f]/g,"").replace(/[^\p{L}\p{N}\s-]/gu," ").replace(/\s+/g," ").trim()}
+function phrasePresent(text,tokens,phrase){return phrase.includes(" ")?text===phrase||text.startsWith(phrase+" ")||text.endsWith(" "+phrase)||text.includes(" "+phrase+" "):tokens.includes(phrase)}
 export function interpretEarthIntent(q){
  const text=norm(q),tokens=text.split(" ").filter(Boolean),intents=[];
- for(const [intent,words] of Object.entries(SYNONYMS))if(words.some(w=>tokens.includes(w)||text.includes(w)))intents.push(intent);
- const wantsCurrent=CURRENT.some(w=>text===w||text.includes(w));
- const currentTerms=CURRENT.filter(w=>text===w||text.includes(w));return{text,tokens,intents:[...new Set(intents)],wantsCurrent,currentTerms};
+ for(const [intent,words] of Object.entries(SYNONYMS))if(words.some(w=>phrasePresent(text,tokens,w)))intents.push(intent);
+ const currentTerms=CURRENT.filter(w=>phrasePresent(text,tokens,w)),wantsCurrent=currentTerms.length>0;
+ return{text,tokens,intents:[...new Set(intents)],wantsCurrent,currentTerms};
 }
 export function earthIntentHints(q){const x=interpretEarthIntent(q);return{...x,empty:!x.text,broad:x.tokens.length<=1&&x.intents.length===0}}
