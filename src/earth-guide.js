@@ -1,5 +1,5 @@
 import { interpretEarthIntent } from "./earth-intent.js";
-const label=i=>({water:"water and coast",mountains:"mountains and snow",wildlife:"wildlife",human:"city life",beautiful:"beautiful scenery",happening:"places with activity"}[i]||i);
+const label=i=>({water:"water and coast",mountains:"mountains and snow",wildlife:"wildlife",human:"city life",beautiful:"beautiful scenery",happening:"places with activity",night:"city lights at night",daylight:"daylight",golden:"sunrise, sunset or golden light"}[i]||i);
 export function earthGuideReply(result,{tasteSignals=0}={}){
  const q=String(result?.query||"").trim();if(!q)return{tone:"WELCOME",text:"Tell me what you feel like seeing. I can guide you to current windows around Earth."};
  const intent=interpretEarthIntent(q);
