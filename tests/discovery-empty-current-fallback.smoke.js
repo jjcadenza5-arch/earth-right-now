@@ -1,0 +1,1 @@
+import { discoveryStatus } from "../src/discovery-result.js";const s=discoveryStatus({query:"live Kyoto now",empty:true,currentIntent:true});console.assert(s.includes("without “live/now”")&&s.includes("reference views"),"empty current search should offer truthful non-live destination fallback");console.log("ERN empty current-search fallback checks passed");
