@@ -21,6 +21,7 @@ jobs:
       - run: npm test
       - run: npm run catalog:embeds
       - run: npm run catalog:fallbacks
+      - run: npm run watch-earth:audit
       - run: npm run release:evidence
       - run: npm run release:status
       - name: Build immutable Pages artifact
