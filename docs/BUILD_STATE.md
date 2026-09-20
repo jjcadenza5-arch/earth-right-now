@@ -696,3 +696,10 @@ Current release posture:
 - Structured data uses conservative schema.org Place rather than claiming every catalog record is a TouristDestination (important for orbit, wildlife, city-view and institutional windows).
 - Freshness wording explicitly says a source check confirms ERN verification at that time and does not promise weather, visibility or uninterrupted provider availability.
 - Removed the homepage SearchAction structured-data claim because the public app does not implement the advertised ?q= search URL contract. ERN will not publish machine-readable capabilities it does not actually support.
+
+
+## Official ERN identity — 2026-09-20
+- Adopted the approved Earth-through-a-window visual identity as ERN's official brand direction.
+- Added a lightweight vector Earth-window mark to the production site, with Earth Right Now + “See before you go.” in the persistent header.
+- Added the mark as the site's favicon candidate for browser/search presentation and as the Organization logo in structured metadata.
+- Kept the brand compact on mobile so it does not compete with the live-Earth experience.
