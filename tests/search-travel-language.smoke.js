@@ -6,4 +6,5 @@ const sources=[
 ];
 console.assert(searchEarth(sources,"I want to see Chiang Mai before I go")[0]?.id==="chiang-mai","travel phrasing should resolve the destination rather than matching filler words");
 console.assert(searchEarth(sources,"show me live Zürich")[0]?.id==="zurich","current-intent travel phrasing should preserve place matching");
+console.assert(searchEarth(sources,"what is Chiang Mai like right now")[0]?.id==="chiang-mai","conversational condition questions should resolve the destination");
 console.log("ERN natural travel search smoke checks passed");
