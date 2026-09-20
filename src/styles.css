@@ -157,3 +157,22 @@ body{background:radial-gradient(circle at 50% -20%,#12483d 0,transparent 34%),va
  radial-gradient(ellipse at 84% 110%,#28513b 0 38%,transparent 39%),
  linear-gradient(160deg,#54735e,#173d31 62%,#071e19)}
 .source-poster:not(.has-poster):after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.035),transparent 34%);pointer-events:none}
+
+
+/* Calm home hierarchy: keep the approved cinematic mockup clean as ERN grows. */
+@media(min-width:900px){
+  .topbar nav{gap:18px}.topbar nav .quiet{opacity:.72}
+  .hero-copy{max-width:700px}.hero-copy .actions button[data-action="my-earth"],.hero-copy .actions button[data-action="explore"],.hero-copy .actions .hero-secondary-action{background:rgba(3,24,21,.52);border-color:rgba(255,255,255,.16)}
+  #home:not([data-active-surface]) #windows,#home:not([data-active-surface]) #live{padding-left:4.5vw;padding-right:4.5vw}
+  #home:not([data-active-surface]) #windows .section-head p,#home:not([data-active-surface]) #live .section-head p{font-size:13px;line-height:1.5;opacity:.86}
+}
+.card-badges{row-gap:4px}.card-badges span{background:rgba(2,18,16,.38)}
+.destination-card .destination-choice-summary{display:block;margin-top:7px;color:var(--muted);line-height:1.35}
+.ai-bar{overflow:hidden}.earth-guide-reply{max-width:760px;color:var(--muted);line-height:1.5}
+@media(max-width:760px){
+  .topbar nav #languageBtn,.topbar nav #ambienceBtn,.topbar nav [data-open-surface="submit"]{display:none}
+  .hero-copy .actions button[data-action="my-earth"],.hero-copy .actions button[data-action="explore"],.hero-copy .actions .hero-secondary-action{display:none}
+  .hero-copy .actions{flex-wrap:nowrap}.hero-copy .actions button{flex:1}
+  .section-head p{font-size:13px;line-height:1.45}
+  .ai-suggestions{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}
+}
