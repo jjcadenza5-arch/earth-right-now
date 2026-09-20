@@ -196,3 +196,5 @@ body{background:radial-gradient(circle at 50% -20%,#12483d 0,transparent 34%),va
 .hero .hero-tertiary-action{background:transparent;border-color:transparent;color:rgba(255,255,255,.7);padding-left:9px;padding-right:9px}
 .hero .hero-tertiary-action:hover,.hero .hero-tertiary-action:focus-visible{color:#fff;border-color:rgba(255,255,255,.18)}
 @media(max-width:760px){.hero .hero-tertiary-action{display:none}}
+
+.language-picker{display:inline-flex;align-items:center;gap:.35rem}.language-picker select{max-width:8.5rem;background:transparent;color:inherit;border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:.42rem .7rem;font:inherit}.language-picker option{color:#111;background:#fff}@media(max-width:720px){.language-picker select{max-width:6.8rem}}
