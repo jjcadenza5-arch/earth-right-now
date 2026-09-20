@@ -19,7 +19,7 @@ export function foldEarthSearchText(x){return normalizeEarthText(x).split(/(\s+)
 export function interpretEarthIntent(q){
  const text=normalizeEarthText(q),tokens=text.split(" ").filter(Boolean),intents=[];
  for(const [intent,words] of Object.entries(SYNONYMS))if(words.some(w=>phrasePresent(text,tokens,w)))intents.push(intent);
- const currentTerms=CURRENT.filter(w=>phrasePresent(text,tokens,w)),wantsCurrent=currentTerms.length>0;
+ const currentTerms=CURRENT.filter(w=>phrasePresent(text,tokens,w)||(w==="ตอนนี้"&&text.includes(w))),wantsCurrent=currentTerms.length>0;
  return{text,tokens,intents:[...new Set(intents)],wantsCurrent,currentTerms};
 }
 export function earthIntentHints(q){const x=interpretEarthIntent(q);return{...x,empty:!x.text,broad:x.tokens.length<=1&&x.intents.length===0}}
