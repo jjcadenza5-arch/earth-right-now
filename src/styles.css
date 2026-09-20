@@ -112,3 +112,6 @@ body{background:radial-gradient(circle at 50% -20%,#12483d 0,transparent 34%),va
 
 /* Best-available-window hierarchy: search-engine truth made visible. */
 .window-evidence{position:absolute!important;z-index:3!important;top:12px;right:12px;margin:0!important;padding:6px 9px;border-radius:999px;background:rgba(2,18,16,.72);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(8px);font-size:9px;font-weight:850;letter-spacing:.08em;color:#fff}.source-freshness{opacity:.78}
+
+/* Search-answer layer: ERN responds with the best truthful window, not a generic result card. */
+.place-answer-tier{display:inline-flex;width:max-content;margin:8px 0 5px;padding:5px 8px;border-radius:999px;background:rgba(223,241,207,.12);border:1px solid rgba(223,241,207,.24);font-size:9px;font-weight:850;letter-spacing:.1em}.place-answer-detail{display:block;color:#d2ded8;line-height:1.4;margin-bottom:6px}.destination-card .count{display:block;color:var(--muted);font-size:11px}
