@@ -1,3 +1,8 @@
+## 2026-09-20 — Destination evidence wording
+- Destination cards, place answers and place-health copy now say “current/live view” rather than the ambiguous “current window.”
+- This keeps “window” as ERN’s friendly choice metaphor while making the factual status explicit wherever currentness is being claimed.
+- Destination choice accounting now also tracks verified-current live-like choices separately from reference images.
+
 ## 2026-09-20 — Watch Earth runtime quarantine
 - A window that fails to open during a Watch Earth journey is now quarantined for that session instead of being retried on every rotation.
 - The session continues through remaining verified-current windows and reports its remaining available count; a fresh session can try the provider again later.
