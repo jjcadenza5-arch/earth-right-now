@@ -1,3 +1,8 @@
+## 2026-09-20 — Fresh discovery balance
+- Find Your Earth now reserves suggestion space for fresh exploration instead of allowing recent searches to consume the entire suggestion row.
+- Current city-light and golden-light discovery remain available alongside core beach/scenic/wildlife/mountain intents.
+- Live Right Now fallback selection now shares the same supplied moment clock as Watch Earth, preventing recency decisions from drifting between layers.
+
 ## 2026-09-20 — Single-moment truth + mixed-view discovery
 - Watch Earth, immersive eligibility, Watch Earth sessions, Earth light lanes and light-aware search now evaluate currentness against the same supplied moment rather than accidentally mixing the requested time with the machine wall clock.
 - This protects the core “beautiful somewhere on Earth right now” behavior from stale/current inconsistencies.
