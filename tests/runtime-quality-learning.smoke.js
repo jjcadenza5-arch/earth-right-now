@@ -1,0 +1,10 @@
+import { rememberRuntimeFailure,runtimeHealthySources,runtimeFailureState,clearAllRuntimeFailures } from "../src/runtime-source-health.js";
+const mem=new Map();globalThis.localStorage={getItem:k=>mem.get(k)||null,setItem:(k,v)=>mem.set(k,v),removeItem:k=>mem.delete(k)};
+const s={id:"window"},now=Date.now();clearAllRuntimeFailures();
+rememberRuntimeFailure(s,{kind:"EMBED_FAILED"},now);
+console.assert(runtimeHealthySources([s],now+1).length===1,"one transient failure should not evict a window");
+console.assert(runtimeFailureState("window",now+1)?.quarantined===false);
+rememberRuntimeFailure(s,{kind:"EMBED_FAILED"},now+1000);
+console.assert(runtimeHealthySources([s],now+1001).length===0,"repeated failure should quarantine the window for this visitor");
+console.assert(runtimeFailureState("window",now+1001)?.quarantined===true);
+console.log("ERN runtime quality learning checks passed");
