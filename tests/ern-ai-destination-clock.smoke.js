@@ -1,0 +1,4 @@
+import { rankDestinationsForIntent } from "../src/ern-ai-destinations.js";
+const now=new Date("2026-03-20T12:00:00Z"),base={title:"Chiang Mai",placeId:"cm",country:"Thailand",region:"Chiang Mai",truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",health:"HEALTHY",playback:"EXTERNAL",sourceUrl:"https://example.com",quality:80,freshness:80,moment:80,categories:["Cities & Streets"]},fresh={...base,id:"fresh",checkedAt:now.toISOString(),lastSuccessfulCheck:now.toISOString()},old={...base,id:"old",quality:99,checkedAt:"2026-01-01T00:00:00Z",lastSuccessfulCheck:"2026-01-01T00:00:00Z"};
+const p=rankDestinationsForIntent([old,fresh],"Chiang Mai",{now})[0];console.assert(p?.preferred?.id==="fresh","AI destination grouping must choose preferred view at the same query moment");
+console.log("ERN AI destination preferred-view clock check passed");
