@@ -2,8 +2,8 @@ import { healthCheckReport,healthReportAudit,safeHealthPatch } from "../src/heal
 
 const source={id:"camera-a",health:"HEALTHY",truth:"LIVE_VIDEO",permission:"LINK_ONLY",playback:"EXTERNAL",lastSuccessfulCheck:"2026-09-19T00:00:00.000Z"};
 const report=healthCheckReport([source],{
-  "camera-a":{httpOk:true,providerConfirmed:true},
-  "typo-camera":{httpOk:true,providerConfirmed:true}
+  "camera-a":{httpOk:true,providerConfirmed:true,observedAt:"2026-09-19T04:25:00.000Z"},
+  "typo-camera":{httpOk:true,providerConfirmed:true,observedAt:"2026-09-19T04:25:00.000Z"}
 },{checkedAt:"2026-09-19T04:30:00.000Z"});
 
 console.assert(report.proposals.length===1,"known source should receive one proposal");
