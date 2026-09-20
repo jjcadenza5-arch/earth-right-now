@@ -1,0 +1,1 @@
+import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Homepage polish pass 3","100svh","grid-template-columns:repeat(3","grid-template-columns:repeat(4"])console.assert(css.includes(token),token);console.log("viewer mobile polish smoke passed");
