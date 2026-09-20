@@ -1,3 +1,8 @@
+## 2026-09-20 — App render-clock + submission-state truth
+- Hero truth labels now use the same captured moment as hero actions, preventing a freshness boundary from producing contradictory labels and controls.
+- Living Atlas map clusters and destination results now share one captured moment per render, keeping the map/list view coherent at recency boundaries.
+- Preparing a business-camera submission now explicitly says it was prepared locally and has not been sent or published while transport remains disconnected.
+
 ## 2026-09-20 — Visible-window regression hardening
 - Hero beauty and personalized Live Right Now fixtures now use distinct media identities, matching ERN’s production deduplication rules instead of accidentally collapsing different test destinations onto one URL.
 - The tests also carry explicit current timestamps and distinct place geometry, so they isolate the intended ranking behavior cleanly.
