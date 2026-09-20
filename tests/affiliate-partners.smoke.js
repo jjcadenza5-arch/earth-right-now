@@ -10,3 +10,7 @@ console.assert(affiliatePartner({...p,id:""})===null);
 console.assert(affiliatePartner({...p,name:""})===null);
 console.assert(!activeAffiliatePartner({...p,verifiedAt:"2026-10-02",expiresAt:"2026-10-01"},{now:Date.parse("2026-09-19")}));
 console.assert(affiliatePartner({...p,baseUrl:"https://user:pass@example.com/"})===null);
+
+const now=Date.parse("2026-09-19T12:00:00Z");
+console.assert(activeAffiliatePartner({...p,verifiedAt:"2026-09-19T12:04:00Z",expiresAt:"2026-10-01"},{now}));
+console.assert(!activeAffiliatePartner({...p,verifiedAt:"2026-09-19T12:06:00Z",expiresAt:"2026-10-01"},{now}));
