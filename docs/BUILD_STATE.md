@@ -1,3 +1,8 @@
+## 2026-09-20 — Search suggestion balance + fixture hardening
+- Search Earth keeps a direct destination prompt visible alongside intent prompts, reinforcing ERN as a place-search experience rather than only a themed camera browser.
+- Currentness-sensitive hero and personalization regression fixtures now use exact timestamps aligned to their test moments so they validate product behavior instead of accidentally testing stale evidence.
+- My Earth taste remains a gentle ranking influence after the broader Watch Earth journey expansion; it does not override truth/currentness eligibility.
+
 ## 2026-09-20 — Watch Earth sparse-embed resilience
 - Watch Earth still prefers current views that can play inside ERN, but it no longer collapses when the verified embed pool is too small.
 - When needed, the journey is supplemented with truthful current external-live views, preserving their external playback semantics rather than pretending they play inside ERN.
