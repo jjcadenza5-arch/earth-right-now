@@ -417,3 +417,20 @@ button:disabled{cursor:not-allowed;opacity:.5}
  html{scroll-behavior:auto}
  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+
+/* Product polish pass 15: make the ERN shell feel like a finished travel product. */
+.brand-button{border:0;background:transparent;color:var(--ink);cursor:pointer;padding:4px 6px 4px 0;border-radius:14px}
+.brand-copy strong{white-space:nowrap}
+.topbar nav>button{border:0;background:transparent;padding:8px 7px;border-radius:999px;cursor:pointer}
+.language-picker{display:inline-flex;align-items:center;gap:4px;opacity:.78}
+.language-picker select{border:0;background:transparent;color:var(--ink);font:inherit;max-width:92px}
+.network-note{position:fixed;left:50%;top:82px;z-index:45;transform:translateX(-50%);width:max-content;max-width:calc(100vw - 28px);padding:8px 12px;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:rgba(3,24,21,.94);backdrop-filter:blur(12px);box-shadow:0 12px 40px rgba(0,0,0,.22);font-size:11px;color:var(--ink)}
+.playback-feedback:not(:empty){position:fixed;left:50%;bottom:18px;z-index:60;transform:translateX(-50%);max-width:min(620px,calc(100vw - 28px));margin:0;padding:9px 13px;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:rgba(3,24,21,.94);backdrop-filter:blur(12px);font-size:11px;box-shadow:0 12px 40px rgba(0,0,0,.25)}
+@media(max-width:760px){
+ .topbar{padding-inline:12px}
+ .brand-mark{width:34px;height:34px;border-radius:10px}
+ .brand-copy strong{font-size:16px}
+ .topbar nav>button:not(#topWatchEarth){display:none}
+ .language-picker{display:none}
+ .network-note{top:66px}
+}
