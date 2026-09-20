@@ -4,21 +4,21 @@ import { playbackCapability } from "./playback-capability.js";
 import { watchEarthBeautyScore } from "./watch-earth-beauty.js";
 import { solarMoment } from "./solar-moment.js";
 
-export function watchEarthEligible(s) {
+export function watchEarthEligible(s,{now=new Date()}={}) {
   return !!s &&
-    sourceStatus(s).live &&
+    sourceStatus(s,{now}).live &&
     s.health === "HEALTHY" &&
     s.permission !== "UNKNOWN" &&
-    recencyState(s) === "CURRENT_CHECK" &&
-    playbackCapability(s).action !== "UNAVAILABLE";
+    recencyState(s,{now}) === "CURRENT_CHECK" &&
+    playbackCapability(s,{now}).action !== "UNAVAILABLE";
 }
 
 function rankedPool(sources, now) {
   return (sources || [])
-    .filter(watchEarthEligible)
+    .filter(s=>watchEarthEligible(s,{now}))
     .sort((a, b) => {
-      const insideA = playbackCapability(a).action === "PLAY" ? 6 : 0;
-      const insideB = playbackCapability(b).action === "PLAY" ? 6 : 0;
+      const insideA = playbackCapability(a,{now}).action === "PLAY" ? 6 : 0;
+      const insideB = playbackCapability(b,{now}).action === "PLAY" ? 6 : 0;
       return (watchEarthBeautyScore(b, now) + insideB) -
         (watchEarthBeautyScore(a, now) + insideA);
     });
@@ -71,6 +71,6 @@ export function watchEarthFallback(sources, { limit = 20, now = new Date() } = {
 export function watchEarthSnapshot(sources,{limit=20,now=new Date()}={}){
  const items=buildWatchEarth(sources,{limit,now});
  const phases=new Map();let inside=0,nightCities=0;
- for(const s of items){const phase=solarMoment(s,now).phase;phases.set(phase,(phases.get(phase)||0)+1);if(playbackCapability(s).action==="PLAY")inside++;if(phase==="NIGHT"&&/(Cities|Harbour|Skyline|Urban|Streets|Landmarks)/i.test((s.categories||[]).join(" ")))nightCities++}
+ for(const s of items){const phase=solarMoment(s,now).phase;phases.set(phase,(phases.get(phase)||0)+1);if(playbackCapability(s,{now}).action==="PLAY")inside++;if(phase==="NIGHT"&&/(Cities|Harbour|Skyline|Urban|Streets|Landmarks)/i.test((s.categories||[]).join(" ")))nightCities++}
  return{count:items.length,places:new Set(items.map(s=>s.placeId||s.id)).size,countries:new Set(items.map(s=>s.country||"Unknown")).size,inside,nightCities,phases:Object.fromEntries(phases)};
 }
