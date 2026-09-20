@@ -16,6 +16,6 @@ export function interpretEarthIntent(q){
  const text=norm(q),tokens=text.split(" ").filter(Boolean),intents=[];
  for(const [intent,words] of Object.entries(SYNONYMS))if(words.some(w=>tokens.includes(w)||text.includes(w)))intents.push(intent);
  const wantsCurrent=CURRENT.some(w=>text===w||text.includes(w));
- return{text,tokens,intents:[...new Set(intents)],wantsCurrent};
+ const currentTerms=CURRENT.filter(w=>text===w||text.includes(w));return{text,tokens,intents:[...new Set(intents)],wantsCurrent,currentTerms};
 }
 export function earthIntentHints(q){const x=interpretEarthIntent(q);return{...x,empty:!x.text,broad:x.tokens.length<=1&&x.intents.length===0}}
