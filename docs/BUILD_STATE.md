@@ -1,3 +1,8 @@
+## 2026-09-20 — Watch Earth single-clock closure
+- Watch Earth eligibility, health, recency, playback ranking and diagnostics now use the same explicit moment as solar beauty scoring.
+- Earth Moments sequence/captions now propagate that moment as well, so an expired source cannot retain an “Earth Happening Now” identity through a separate clock path.
+- Regression coverage protects the Watch Earth + Earth Moments boundary as one coherent “right now” system.
+
 ## 2026-09-20 — Earth Moments clock alignment
 - Earth Moments and “Earth Happening Now” eligibility now use the same explicit currentness moment as Watch Earth, search, Hero and destination discovery.
 - ERN intent ranking now passes that moment into source scoring for ordinary, current-only and themed queries.
