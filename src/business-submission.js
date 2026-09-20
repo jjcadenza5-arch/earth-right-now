@@ -1,13 +1,7 @@
+import { SUBMISSION_REVIEW_CHECKS } from "./submission-review-contract.js";
 function privateHost(host){const h=String(host||"").toLowerCase().replace(/^\[|\]$/g,"");if(h==="localhost"||h.endsWith(".localhost")||h==="0.0.0.0"||h==="127.0.0.1"||h==="::1"||h==="::")return true;if(/^127\./.test(h)||/^10\./.test(h)||/^192\.168\./.test(h)||/^169\.254\./.test(h))return true;const m=h.match(/^172\.(\d+)\./);if(m&&Number(m[1])>=16&&Number(m[1])<=31)return true;if(/^fc|^fd|^fe8|^fe9|^fea|^feb/.test(h))return true;return false}
 function safePublicHttpUrl(value){try{const u=new URL(String(value||"").trim());if(!["http:","https:"].includes(u.protocol))return null;if(!u.hostname||u.username||u.password||privateHost(u.hostname))return null;return u.toString()}catch{return null}}
 function clean(value,max){return String(value||"").trim().replace(/[\u0000-\u001f\u007f]/g," ").replace(/\s+/g," ").slice(0,max)}
 export function validateSubmission(x){const errors=[];const businessName=clean(x?.businessName,120),placeName=clean(x?.placeName,160),sourceUrl=safePublicHttpUrl(x?.sourceUrl),contact=clean(x?.contact,200);if(!businessName)errors.push("Business name required");if(!placeName)errors.push("Place name required");if(!sourceUrl)errors.push("Valid public http/https camera/source URL required");if(contact&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact))errors.push("Valid contact email required");if(!x?.rightsConfirmed)errors.push("Submitter must confirm authority/permission to submit the camera");return errors}
-export function submissionReviewChecklist(record){if(!record)return[];return[
- {id:"rights",label:"Authority / permission confirmed",required:true},
- {id:"public",label:"Source is publicly reachable without private-network access",required:true},
- {id:"truth",label:"Classify as LIVE VIDEO, LIVE IMAGE, EXTERNAL LIVE, PARTNER or PREVIEW before publication",required:true},
- {id:"quality",label:"Review visual quality and travel usefulness",required:true},
- {id:"embed",label:"Confirm whether ERN may embed or must link to the provider",required:true},
- {id:"currentness",label:"Record a successful source check before any live/current promotion",required:true}
-]}
+export function submissionReviewChecklist(record){if(!record)return[];return SUBMISSION_REVIEW_CHECKS.map(x=>({...x,required:true}))}
 export function submissionRecord(x,{now=()=>new Date().toISOString()}={}){const errors=validateSubmission(x);if(errors.length)return{ok:false,errors};return{ok:true,record:{businessName:clean(x.businessName,120),placeName:clean(x.placeName,160),sourceUrl:safePublicHttpUrl(x.sourceUrl),contact:clean(x.contact,200)||null,rightsConfirmed:true,status:"PENDING_REVIEW",submittedAt:now()}}}
