@@ -1,0 +1,10 @@
+import { buildLocalTaste,tasteSummary } from "../src/local-taste.js";
+import { liveRightNowModel } from "../src/live-right-now-view.js";
+const sources=[{id:"a",placeId:"p1",country:"Thailand",categories:["Mountains"]}],places=[{id:"p1",country:"Thailand",categories:["Mountains"]}];
+const taste=buildLocalTaste({sources,places,favoriteWindowIds:["a"],favoritePlaceIds:["p1"]}),summary=tasteSummary(taste);
+console.assert(summary.signals===2,"taste summary should expose signal count without personal identity");
+console.assert(summary.categories[0].name==="Mountains"&&summary.countries[0].name==="Thailand","taste summary should explain broad local preferences");
+console.assert(!JSON.stringify(summary).includes("favoriteWindowIds"),"summary must not expose raw browser-history identifiers");
+const empty=liveRightNowModel([],{taste});
+console.assert(empty.taste.signals===2,"live model should carry transparent taste summary even when no windows are current");
+console.log("ERN transparent My Earth taste checks passed");
