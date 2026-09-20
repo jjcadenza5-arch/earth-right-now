@@ -8,4 +8,4 @@ export function personalizedLiveItems(sources,{places=[],limit=8,now=new Date(),
  for(const s of base){if(chosen.length>=limit)break;if(!ids.has(s.id)){chosen.push(s);ids.add(s.id)}}
  return chosen;
 }
-export function liveRightNowModel(sources,{places=[],limit=8,now=new Date(),taste=null}={}){const local=taste||currentLocalTaste(sources,places),items=personalizedLiveItems(sources,{places,limit,now,taste:local});const summary=tasteSummary(local);return{items,empty:items.length===0,personalized:Boolean(local.signals),taste:summary,copy:items.length?(local.signals?"Live Right Now · shaped gently by My Earth":"Verified current windows"):"No verified current windows right now"}}
+export function liveRightNowModel(sources,{places=[],limit=8,now=new Date(),taste=null}={}){const local=taste||currentLocalTaste(sources,places),items=personalizedLiveItems(sources,{places,limit,now,taste:local});const summary=tasteSummary(local);return{items,empty:items.length===0,personalized:Boolean(local.signals),taste:summary,copy:items.length?(local.signals?"Live Right Now · shaped gently by My Earth":"Verified near-now windows"):"No verified near-now windows right now"}}
