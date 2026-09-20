@@ -12,7 +12,7 @@ const SYNONYMS={
 };
 const CURRENT=["right now","live now","live jetzt","en direct","en vivo","dal vivo","now","live","current","today","tonight","ตอนนี้","สด","jetzt","maintenant","ahora","adesso","今","ライブ","지금","라이브","现在","直播"];
 function norm(x){return(x||"").toString().normalize("NFKD").toLowerCase().replace(/[\u0300-\u036f]/g,"").replace(/[^\p{L}\p{N}\s-]/gu," ").replace(/\s+/g," ").trim()}
-function phrasePresent(text,tokens,phrase){return phrase.includes(" ")?text===phrase||text.startsWith(phrase+" ")||text.endsWith(" "+phrase)||text.includes(" "+phrase+" "):tokens.includes(phrase)}
+function phrasePresent(text,tokens,phrase){if(phrase.includes(" "))return text===phrase||text.startsWith(phrase+" ")||text.endsWith(" "+phrase)||text.includes(" "+phrase+" ");if(tokens.includes(phrase))return true;if(/[^\\x00-\\x7F]/.test(phrase)){const escaped=phrase.replace(/[.*+?^${}()|[\\]\\]/g,"\\function phrasePresent(text,tokens,phrase){return phrase.includes(" ")?text===phrase||text.startsWith(phrase+" ")||text.endsWith(" "+phrase)||text.includes(" "+phrase+" "):tokens.includes(phrase)}");return new RegExp("(^|\\\\s)"+escaped+"($|\\\\s)","u").test(text)}return false}
 export function interpretEarthIntent(q){
  const text=norm(q),tokens=text.split(" ").filter(Boolean),intents=[];
  for(const [intent,words] of Object.entries(SYNONYMS))if(words.some(w=>phrasePresent(text,tokens,w)))intents.push(intent);
