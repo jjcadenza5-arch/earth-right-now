@@ -716,3 +716,8 @@ Current release posture:
 - YouTube watch, embed, live, Shorts and youtu.be forms for the same video ID collapse to one window, preventing URL-format variants from masquerading as different cameras.
 - URL fragments and a small conservative set of known cache-buster parameters are ignored for identity.
 - Thumbnail URLs no longer drive deduplication, so two genuinely distinct live streams that happen to share promotional artwork are not incorrectly collapsed.
+
+
+## Brand asset deployment repair — 2026-09-20
+- Fixed the reason the ERN mark did not display on the public Pages beta: the release snapshot copied index/src/data/places but omitted the new assets directory, so the deployed header and favicon pointed at a file that was not in the artifact.
+- Release builds now copy assets/ into dist/assets/ and a smoke guard prevents this regression.
