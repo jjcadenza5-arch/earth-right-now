@@ -1,3 +1,8 @@
+## 2026-09-20 — Source-surface truth
+- Discovery source cards, source badges, operational notes and network-aware source actions now share the active ERN moment instead of independently consulting wall-clock currentness.
+- Reference-image fallbacks are explicitly labeled “REFERENCE · NOT LIVE” / “Reference image — not live” across source-facing metadata.
+- Truth detail no longer uses the ambiguous generic “Preview” wording for a non-live fallback.
+
 ## 2026-09-20 — Living Atlas truth alignment
 - Place grouping and preferred-view selection now use the same active moment as search and destination cards.
 - Living Atlas ranking, current/inside filters and cluster destination ordering now share that moment, preventing stale views from appearing current on the map.
