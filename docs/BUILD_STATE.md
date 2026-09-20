@@ -1,3 +1,10 @@
+
+## 2026-09-20 — Watch Earth + personal discovery integration
+- Watch Earth now ranks verified-current windows by the moment happening on Earth, with daylight/golden-hour preference and strong night-city allowance after truth gates.
+- The dynamic Watch Earth journey feeds the same time-aware pool into Live Right Now, while My Earth taste remains a bounded influence so discovery is preserved.
+- Natural travel phrasing such as “I want to see Chiang Mai before I go” is normalized for destination search without weakening current/live intent.
+- Regression coverage protects currentness, unique media/place variety, personalization boundaries, and travel-language search.
+
 # ERN Build State
 
 ## CURRENT STATE — 2026-09-19
