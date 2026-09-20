@@ -3,5 +3,5 @@ const now=new Date("2026-03-20T12:00:00Z"),live={id:"l",title:"Live",truth:"EXTE
 const place={id:"x",sources:[preview,live],preferred:preview};
 console.assert(sourceChoiceSummary(place,{now})==="1 at source · 1 reference image","destination choice summary should include honest photo fallback");
 const answer=placeAnswer(place,{now});console.assert(answer.headline==="EXTERNAL LIVE","place answer must not let a preferred reference photo outrank verified-current live evidence");
-console.assert(answer.detail.includes("1 current window")&&answer.detail.includes("2 views"),"place answer should explain currentness and choice breadth");
+console.assert(answer.detail.includes("1 current/live view")&&answer.detail.includes("2 views"),"place answer should explain currentness and choice breadth");
 console.log("ERN destination evidence-choice checks passed");
