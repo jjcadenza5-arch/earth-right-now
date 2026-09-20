@@ -1,0 +1,1 @@
+import { interpretEarthIntent } from "../src/earth-intent.js";for(const q of ["Berlin jetzt","Paris en direct","Madrid ahora","Roma dal vivo","東京 今","서울 지금","上海 直播"]){console.assert(interpretEarthIntent(q).wantsCurrent,q+" should request near-now evidence")}console.log("ERN global current-intent checks passed");
