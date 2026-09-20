@@ -1,0 +1,1 @@
+import { truthDetail } from "../src/truth-detail.js";const image={truth:"LIVE_IMAGE"};console.assert(truthDetail(image)==="Camera image source — frame freshness unverified");console.assert(truthDetail({...image,freshnessEvidence:"Provider documents refreshed camera imagery"})==="Frequently refreshed near-now image");console.log("ERN detailed image truth checks passed");
