@@ -1,0 +1,13 @@
+import fs from "node:fs";
+import assert from "node:assert/strict";
+const sw=fs.readFileSync(new URL("../service-worker.js",import.meta.url),"utf8");
+const offline=fs.readFileSync(new URL("../offline.html",import.meta.url),"utf8");
+const index=fs.readFileSync(new URL("../index.html",import.meta.url),"utf8");
+const build=fs.readFileSync(new URL("../scripts/build-release-snapshot.mjs",import.meta.url),"utf8");
+assert.match(sw,/request\.mode!==["']navigate["']/);
+assert.doesNotMatch(sw,/sources\.json|data\/sources/);
+assert.match(offline,/does not show cached camera views as if they were current/i);
+assert.match(index,/serviceWorker\.register\(["']\/service-worker\.js["']/);
+assert.match(build,/service-worker\.js/);
+assert.match(build,/offline\.html/);
+console.log("offline truth boundary smoke passed");
