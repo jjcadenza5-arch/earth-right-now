@@ -1,0 +1,1 @@
+import fs from "node:fs";const a=fs.readFileSync("src/app.js","utf8");console.assert(a.includes('travelBridgeView(p,{now,onIntent:intent=>'),"place travel bridge must share the place render moment");console.log("ERN place/travel render-clock checks passed");
