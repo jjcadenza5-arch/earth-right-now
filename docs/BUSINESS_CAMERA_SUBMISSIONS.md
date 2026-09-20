@@ -10,4 +10,4 @@ Required review before approval:
 - embed permission is determined; when not established, ERN defaults to link-only rather than assuming embed rights;
 - a successful source check is recorded before any live/current promotion.
 
-A submission may be marked NEEDS_INFO or REJECTED. Approval only means it may enter catalog drafting; the draft begins conservatively as PREVIEW + LINK_ONLY + UNKNOWN health until catalog verification supplies stronger evidence. Accepted sources use the same registry, currentness and playback architecture as every other ERN view.
+A submission may be marked NEEDS_INFO or REJECTED. Approval only means it may enter catalog drafting; the draft begins conservatively as PREVIEW + UNKNOWN permission + UNKNOWN health until catalog verification determines whether ERN may embed, must link externally, or should keep the source as reference-only. Accepted sources use the same registry, currentness and playback architecture as every other ERN view.
