@@ -5,7 +5,7 @@ import { buildWatchEarth } from "./watch-earth.js";
 
 export function buildDynamicWatchEarth(sources,{limit=20,now=new Date()}={}){
   const healthy=runtimeHealthySources(sources);
-  const immersive=immersiveWatchEarthSources(healthy);
+  const immersive=immersiveWatchEarthSources(healthy,{now});
   const ranked=buildWatchEarth(immersive,{
     limit:Math.max(limit*2,40),
     maxPerCountry:3,
