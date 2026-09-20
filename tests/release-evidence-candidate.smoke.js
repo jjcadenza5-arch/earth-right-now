@@ -1,6 +1,10 @@
-import assert from "node:assert/strict";import{candidateEvidenceStatus,RELEASE_EVIDENCE_KEYS}from"../src/release-evidence.js";
-const sha="abc123";const evidence=Object.fromEntries(RELEASE_EVIDENCE_KEYS.map(key=>[key,{commit:sha}]));
-assert.equal(candidateEvidenceStatus(evidence,sha).allBound,true);
-evidence.mobile.commit="older";const report=candidateEvidenceStatus(evidence,sha);assert.equal(report.allBound,false);assert.deepEqual(report.unbound,["mobile"]);
+import assert from "node:assert/strict";
+import { candidateEvidenceStatus,RELEASE_EVIDENCE_KEYS } from "../src/release-evidence.js";
+const sha="a".repeat(40),evidence=Object.fromEntries(RELEASE_EVIDENCE_KEYS.map(key=>[key,{commit:sha}]));
+let report=candidateEvidenceStatus(evidence,sha);
+assert.equal(report.candidateValid,true);assert.equal(report.allBound,true);
+evidence.mobile.commit="b".repeat(40);report=candidateEvidenceStatus(evidence,sha);assert.equal(report.allBound,false);assert.deepEqual(report.unbound,["mobile"]);
+assert.equal(candidateEvidenceStatus(evidence,"abc123").candidateValid,false);
+assert.equal(candidateEvidenceStatus(evidence,"abc123").allBound,false);
 assert.equal(candidateEvidenceStatus(evidence,"").allBound,false);
 console.log("release evidence candidate binding passed");
