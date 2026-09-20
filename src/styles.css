@@ -129,3 +129,31 @@ body{background:radial-gradient(circle at 50% -20%,#12483d 0,transparent 34%),va
 .hero-copy .actions{max-width:650px}.hero-copy .actions button{transition:transform .18s ease,background .18s ease,border-color .18s ease}.hero-copy .actions button:hover{transform:translateY(-1px)}
 @media(min-width:900px){#home:not([data-active-surface]) #windows .window-row{grid-template-columns:repeat(4,minmax(0,1fr))}#home:not([data-active-surface]) #windows .window-tile:nth-child(n+9){display:none}}
 @media(max-width:760px){#home:not([data-active-surface]) #windows{margin-top:-18px;padding-top:38px}#home:not([data-active-surface]) .ai-bar{margin:20px 10px;padding:18px}.hero-copy .actions button[data-action="my-earth"],.hero-copy .actions button[data-action="explore"]{background:rgba(3,24,21,.76)}}
+
+
+/* Truthful generated scenery: visual richness without pretending a generic illustration is the camera feed. */
+.source-poster:not(.has-poster),.hero-media:not(.has-poster){--poster-x:68%;--poster-y:28%;background:
+ radial-gradient(circle at var(--poster-x) var(--poster-y),rgba(255,238,179,.22) 0 5%,transparent 6%),
+ radial-gradient(ellipse at 72% 112%,rgba(58,121,101,.44) 0 33%,transparent 34%),
+ linear-gradient(155deg,#315f58 0,#0b3029 46%,#061b18 100%)}
+.poster-water:not(.has-poster){background:
+ radial-gradient(circle at var(--poster-x) var(--poster-y),rgba(255,229,166,.34) 0 4%,transparent 5%),
+ linear-gradient(176deg,transparent 0 48%,rgba(210,239,232,.16) 49% 50%,transparent 51%),
+ linear-gradient(165deg,#557b78 0 44%,#1b5556 45% 64%,#082d30 65% 100%)}
+.poster-mountain:not(.has-poster){background:
+ radial-gradient(circle at var(--poster-x) var(--poster-y),rgba(255,225,166,.28) 0 4%,transparent 5%),
+ linear-gradient(145deg,transparent 0 42%,rgba(193,207,188,.2) 43% 44%,transparent 45%),
+ linear-gradient(35deg,#17342c 0 32%,transparent 33%),
+ linear-gradient(-35deg,#31564b 0 38%,transparent 39%),
+ linear-gradient(160deg,#657b70,#193a32 62%,#071e1a)}
+.poster-city:not(.has-poster){background:
+ radial-gradient(circle at var(--poster-x) var(--poster-y),rgba(255,214,137,.42) 0 2%,transparent 3%),
+ repeating-linear-gradient(90deg,transparent 0 7%,rgba(225,245,224,.09) 7.4% 8%,transparent 8.4% 12%),
+ linear-gradient(0deg,#061a18 0 37%,transparent 38%),
+ linear-gradient(165deg,#345d5a,#102f2b 58%,#071d1a)}
+.poster-wildlife:not(.has-poster),.poster-nature:not(.has-poster){background:
+ radial-gradient(circle at var(--poster-x) var(--poster-y),rgba(224,239,184,.2) 0 7%,transparent 8%),
+ radial-gradient(ellipse at 20% 110%,#173d2e 0 42%,transparent 43%),
+ radial-gradient(ellipse at 84% 110%,#28513b 0 38%,transparent 39%),
+ linear-gradient(160deg,#54735e,#173d31 62%,#071e19)}
+.source-poster:not(.has-poster):after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.035),transparent 34%);pointer-events:none}
