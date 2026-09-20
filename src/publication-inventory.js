@@ -24,8 +24,8 @@ export function publicationInventory(rows=[],options={}){
   };
 }
 
-export function inventoryPublicationWarnings(rows=[]){
-  const x=publicationInventory(rows),warnings=[];
+export function inventoryPublicationWarnings(rows=[],options={}){
+  const x=publicationInventory(rows,options),warnings=[];
   if(!x.current)warnings.push("NO_CURRENT_INVENTORY");
   if(!x.insideERN)warnings.push("NO_CURRENT_INSIDE_ERN_PLAYBACK");
   if(x.expired)warnings.push("EXPIRED_SOURCE_CHECKS");
