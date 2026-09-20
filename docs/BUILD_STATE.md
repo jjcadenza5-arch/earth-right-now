@@ -1,3 +1,8 @@
+## 2026-09-20 — Watch Earth runtime quarantine
+- A window that fails to open during a Watch Earth journey is now quarantined for that session instead of being retried on every rotation.
+- The session continues through remaining verified-current windows and reports its remaining available count; a fresh session can try the provider again later.
+- Hero current-before-dedupe regression coverage now uses the catalog’s real 72-hour external-live verification window.
+
 ## 2026-09-20 — Watch Earth beauty audit + hero truth ordering
 - Watch Earth representative-time diagnostics now expose daylight, golden-hour, night-city and unknown-light composition without imposing fake quotas when the truthful catalog cannot support them.
 - Hero rotation now filters verified-current candidates before visible-window/place deduplication, preventing an older duplicate from hiding a current view of the same place.
