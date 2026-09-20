@@ -24,6 +24,8 @@ jobs:
         run: npm run catalog:embeds
       - name: Audit provider fallback chains
         run: npm run catalog:fallbacks
+      - name: Audit Watch Earth across global dayparts
+        run: npm run watch-earth:audit
       - name: Audit release evidence ledger
         if: success()
         run: npm run release:evidence
