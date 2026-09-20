@@ -1,7 +1,8 @@
 import { safeHttpUrl } from "./url-safety.js";
 import { posterLoadingAttrs } from "./image-loading-policy.js";import { installPosterFallback } from "./poster-fallback.js";
 
-export function posterFor(source){const url=safeHttpUrl(source?.thumbnailUrl);if(url)return{kind:"image",url,alt:source?.title||"Earth Right Now"};return{kind:"generated",url:null,alt:source?.title||"Earth Right Now"}}
+export function posterFor(source){const url=safeHttpUrl(source?.thumbnailUrl);if(url)return{kind:"image",url,alt:source?.title||"Earth Right Now",current:false};return{kind:"generated",url:null,alt:source?.title||"Earth Right Now",current:false}}
+export function posterTruth(poster){return poster?.current?{label:"CURRENT VISUAL",current:true}:{label:"ILLUSTRATIVE VISUAL",current:false}}
 export function posterClass(source){const cats=(source?.categories||[]).join(" ").toLowerCase();if(/sea|coast|harbour|beach|water/.test(cats))return"poster-water";if(/wildlife|animal|zoo/.test(cats))return"poster-wildlife";if(/mountain|volcano|alps|ski/.test(cats))return"poster-mountain";if(/city|urban|street|skyline|landmark/.test(cats))return"poster-city";if(/forest|park|garden|farm|nature/.test(cats))return"poster-nature";return"poster-earth"}
 export function posterSceneMeta(source){const seed=String(source?.id||source?.title||"earth");let hash=0;for(const ch of seed)hash=(hash*31+ch.charCodeAt(0))>>>0;return{positionX:18+(hash%65),positionY:18+((hash>>>7)%58),variant:hash%4}}
 function applyGeneratedScene(el,source){if(!el?.style)return;const x=posterSceneMeta(source);el.style.setProperty?.("--poster-x",x.positionX+"%");el.style.setProperty?.("--poster-y",x.positionY+"%");el.setAttribute?.("data-poster-variant",String(x.variant))}
