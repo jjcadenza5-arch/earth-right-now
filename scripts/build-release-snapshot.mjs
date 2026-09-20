@@ -13,6 +13,8 @@ await cp(new URL("../sitemap.xml",import.meta.url),new URL("sitemap.xml",dist));
 await cp(new URL("../robots.txt",import.meta.url),new URL("robots.txt",dist));
 await cp(new URL("../CNAME",import.meta.url),new URL("CNAME",dist));
 await cp(new URL("../manifest.webmanifest",import.meta.url),new URL("manifest.webmanifest",dist));
+await cp(new URL("../privacy.html",import.meta.url),new URL("privacy.html",dist));
+await cp(new URL("../about.html",import.meta.url),new URL("about.html",dist));
 await cp(new URL("../deploy/_headers",import.meta.url),new URL("_headers",dist));
 await cp(new URL("../deploy/_redirects",import.meta.url),new URL("_redirects",dist));
 const files=["index.html","data/sources.json","data/release-evidence.json"];
