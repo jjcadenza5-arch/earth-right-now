@@ -11,7 +11,7 @@ const dictionaries={
 };
 export const supportedLanguages=Object.freeze([{code:"en",label:"English"},{code:"th",label:"ไทย"},{code:"de",label:"Deutsch"},{code:"fr",label:"Français"},{code:"es",label:"Español"},{code:"it",label:"Italiano"},{code:"ja",label:"日本語"},{code:"ko",label:"한국어"},{code:"zh",label:"中文"}]);
 const KEY="ern:language";const supported=c=>Boolean(dictionaries[c]);const normalizeCode=c=>{const x=String(c||"").toLowerCase().replace("_","-").split("-")[0];return supported(x)?x:"en"};
-export function preferredLanguage(){try{const saved=localStorage.getItem(KEY);if(saved&&supported(saved))return saved}catch{}const langs=globalThis.navigator?.languages||[globalThis.navigator?.language];for(const l of langs||[]){const c=normalizeCode(l);if(c!=="en"||String(l||"").toLowerCase().startsWith("en"))return c}return"en"}
+export function preferredLanguage(){try{if(typeof location!=="undefined"){const requested=new URLSearchParams(location.search).get("lang");if(requested&&supported(normalizeCode(requested)))return normalizeCode(requested)}const saved=localStorage.getItem(KEY);if(saved&&supported(saved))return saved}catch{}const langs=globalThis.navigator?.languages||[globalThis.navigator?.language];for(const l of langs||[]){const c=normalizeCode(l);if(c!=="en"||String(l||"").toLowerCase().startsWith("en"))return c}return"en"}
 export function language(){return preferredLanguage()}
 export function setLanguage(code){const c=normalizeCode(code);try{localStorage.setItem(KEY,c)}catch{}if(typeof document!=="undefined")document.documentElement.lang=c;return c}
 export function hasTranslation(key,code){return Boolean(dictionaries[code]&&Object.prototype.hasOwnProperty.call(dictionaries[code],key)&&String(dictionaries[code][key]||"").trim())}
