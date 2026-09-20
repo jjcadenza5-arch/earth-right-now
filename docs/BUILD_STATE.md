@@ -1,3 +1,8 @@
+## 2026-09-20 — Search evidence + destination-first travel bridge
+- Search Earth now distinguishes verified-current/live views from available live-like sources whose current check is not confirmed, instead of counting every non-reference source as current.
+- Reference images remain separately counted and clearly labeled.
+- The travel bridge now starts from “Around this place / Thinking about going?” rather than “Around this window,” so travel discovery still makes sense when a destination is represented by refreshed or reference evidence instead of live video.
+
 ## 2026-09-20 — Destination evidence wording
 - Destination cards, place answers and place-health copy now say “current/live view” rather than the ambiguous “current window.”
 - This keeps “window” as ERN’s friendly choice metaphor while making the factual status explicit wherever currentness is being claimed.
