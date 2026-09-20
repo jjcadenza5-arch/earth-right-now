@@ -1,3 +1,8 @@
+## 2026-09-20 — Search + hero interaction coherence
+- Search Earth and Earth Guide now capture one moment per query, including runtime-health filtering for “somewhere different,” so a source cannot change freshness status halfway through one result set.
+- Hero rotation now evaluates source selection and action availability from the same moment; initial Earth Moments rendering also shares the startup clock.
+- Direct destination suggestions remain visible alongside right-now discovery without weakening reference-image truth labels.
+
 ## 2026-09-20 — Search Earth evidence clarity
 - Search result status now distinguishes current/live views from reference images instead of using the generic word “windows” for mixed evidence.
 - Search suggestions retain ERN’s moment discovery while adding a direct destination-search example, reinforcing the two-part product model: Watch Earth for what is beautiful now; Search Earth for where you want to go.
