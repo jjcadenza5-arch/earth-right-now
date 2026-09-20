@@ -650,3 +650,8 @@
 ## 2026-09-20 — Centralize the moving Watch Earth journey
 - Added one dynamic Watch Earth builder combining current-source qualification, local playback health, geographic/media variety and destination-local beauty timing.
 - Added 00:00/06:00/12:00/18:00 UTC coverage to verify the journey remains broad and actually changes with Earth's light.
+
+
+## 2026-09-20 — Brand and cinematic live-card polish
+- Refined the production ERN mark toward the approved dimensional Earth-window identity instead of the earlier flat approximation; omitted the accidental trademark symbol.
+- Upgraded Watch Earth cards to full photographic treatment with destination-local moment badges while retaining truth and freshness metadata.

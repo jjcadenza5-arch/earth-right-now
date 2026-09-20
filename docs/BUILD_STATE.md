@@ -756,3 +756,10 @@ Current release posture:
 - Consolidated Watch Earth's truth/currentness, runtime-health, diversity, media-identity and beautiful-now ranking into one reusable journey builder.
 - Added four-times-of-day regression coverage to ensure the global journey stays broad while its ordering changes as daylight/golden-hour/night-light conditions move around Earth.
 - This prepares Watch Earth for a larger source pool without scattering selection rules through the app shell.
+
+
+## Brand and live-window fidelity — 2026-09-20
+- Replaced the earlier flat placeholder-like ERN mark with a substantially more dimensional Earth-through-window SVG: metallic frame, dark space, curved ocean Earth, atmosphere, land and horizon sunlight. This is an implementation refinement toward the already approved identity, not a new logo direction.
+- No trademark symbol is included.
+- Watch Earth / Live Right Now cards now use the same photographic visual hierarchy as Choose a Window, including destination-local moment badges and source truth/freshness beneath the image.
+- The underlying source poster fallback remains intact when a provider has no safe thumbnail.
