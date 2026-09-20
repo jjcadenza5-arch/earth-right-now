@@ -404,3 +404,16 @@ main>[data-surface="home"] .section-head p{font-size:12px;line-height:1.45;margi
  .viewer-controls #sourceViewer{margin-left:0}
  .viewer-controls #nextViewer{grid-column:span 2}
 }
+
+/* Product polish pass 14: visible keyboard focus and touch-safe interaction without visual clutter. */
+:where(a,button,input,[tabindex]):focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+:where(button,a){-webkit-tap-highlight-color:rgba(232,245,199,.14)}
+button:disabled{cursor:not-allowed;opacity:.5}
+@media(pointer:coarse){
+ button,.actions button,.viewer-controls button,.viewer-controls a,.card button{min-height:44px}
+ .window-tile,.live-window-card{min-height:44px}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
