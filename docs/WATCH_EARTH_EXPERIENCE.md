@@ -15,3 +15,7 @@ ERN can summarize each curated Watch Earth journey internally by window count, d
 
 ## Representative-time audit
 Curators can run `npm run watch-earth:audit` to inspect the same catalog at 00:00, 06:00, 12:00 and 18:00 UTC on the catalog's latest verification day. The output reports journey size, distinct places/countries, inside-ERN playback, night-city count, solar-phase distribution and selected titles. These are internal curation/regression signals, not visitor promises or proof of weather/camera visibility.
+
+
+## Runtime resilience
+A Watch Earth journey should not end because one provider window fails at open/play time. The session skips that failed source and tries the next truthful current candidate; it stops only when no source in the current journey can be opened. Representative-time audit also verifies that selected entries are eligible, unique, and never PREVIEW/reference images.
