@@ -1,7 +1,7 @@
 import { playbackNetworkDecision } from "./connection-policy.js";
 import { playbackCapability } from "./playback-capability.js";
-export function sourceActionForNetwork(source,networkState){
- const capability=playbackCapability(source),decision=playbackNetworkDecision(source,networkState);
+export function sourceActionForNetwork(source,networkState,{now=new Date()}={}){
+ const capability=playbackCapability(source,{now}),decision=playbackNetworkDecision(source,networkState);
  if(capability.action!=="PLAY"||decision.allow)return{...capability,networkReason:null};
  if(decision.reason==="OFFLINE")return{action:"UNAVAILABLE",label:"Offline",networkReason:decision.reason};
  if(decision.reason==="CONSTRAINED_EMBED"){
