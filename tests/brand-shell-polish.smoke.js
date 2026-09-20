@@ -1,0 +1,1 @@
+import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Product polish pass 15",".brand-button{border:0",".network-note{position:fixed",".playback-feedback:not(:empty)",":not(#topWatchEarth)"])console.assert(css.includes(token),token);console.log("brand shell polish smoke passed");
