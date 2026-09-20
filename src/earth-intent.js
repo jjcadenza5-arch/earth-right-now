@@ -10,7 +10,7 @@ const SYNONYMS={
  golden:["sunrise","sunset","golden hour","dawn","dusk"],
  reference:["photo","photos","image","images","reference","picture","pictures"]
 };
-const CURRENT=["now","live","current","today","right now","ตอนนี้","สด"];
+const CURRENT=["now","live","current","today","right now","ตอนนี้","สด","jetzt","live jetzt","maintenant","en direct","ahora","en vivo","adesso","dal vivo","今","ライブ","지금","라이브","现在","直播"];
 function norm(x){return(x||"").toString().normalize("NFKD").toLowerCase().replace(/[\u0300-\u036f]/g,"").replace(/[^\p{L}\p{N}\s-]/gu," ").replace(/\s+/g," ").trim()}
 export function interpretEarthIntent(q){
  const text=norm(q),tokens=text.split(" ").filter(Boolean),intents=[];
