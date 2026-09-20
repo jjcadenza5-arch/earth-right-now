@@ -1,0 +1,1 @@
+import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Homepage polish pass 11",".search-earth-head",".ai-row{display:grid","scroll-snap-type:x proximity"])console.assert(css.includes(token),token);console.log("search bridge polish smoke passed");
