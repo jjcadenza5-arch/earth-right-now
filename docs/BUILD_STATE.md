@@ -1,3 +1,8 @@
+## 2026-09-20 — Destination-first source cards + Guide evidence
+- Generic source cards now use “View place” for destination navigation instead of a generic “Windows” action; window-specific surfaces still keep ERN’s Choose a Window metaphor where it is accurate.
+- Earth Guide replies for ordinary destination searches now explain verified-current views, additional available-but-unconfirmed views, and reference-image fallbacks as separate evidence levels.
+- This reinforces ERN’s search-engine model: ask for a place first, then see the best truthful evidence ERN currently has for it.
+
 ## 2026-09-20 — Search evidence + destination-first travel bridge
 - Search Earth now distinguishes verified-current/live views from available live-like sources whose current check is not confirmed, instead of counting every non-reference source as current.
 - Reference images remain separately counted and clearly labeled.
