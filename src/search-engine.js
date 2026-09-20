@@ -1,9 +1,9 @@
 import { discoverableSource } from "./discovery-eligibility.js";
 import { sourceScore } from "./source-score.js";
-import { interpretEarthIntent } from "./earth-intent.js";
+import { interpretEarthIntent,normalizeEarthText } from "./earth-intent.js";
 import { sourceMatchesEarthIntents } from "./earth-intent-match.js";
 import { nearNowEvidence } from "./now-evidence.js";
-const norm=x=>(x||"").toString().normalize("NFKD").toLowerCase().replace(/[\u0300-\u036f]/g,"").replace(/[^\p{L}\p{N}\s-]/gu," ").replace(/\s+/g," ").trim();
+const norm=normalizeEarthText;
 
 const stopWords=new Set(["show","me","find","see","watch","look","at","in","on","the","a","an","of","for","please","i","want","to","go","going","visit","before","what","is","like","there","can","you","right"]);
 export function searchEarth(sources,q,{now=new Date()}={}){
