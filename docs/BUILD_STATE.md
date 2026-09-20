@@ -721,3 +721,10 @@ Current release posture:
 ## Brand asset deployment repair — 2026-09-20
 - Fixed the reason the ERN mark did not display on the public Pages beta: the release snapshot copied index/src/data/places but omitted the new assets directory, so the deployed header and favicon pointed at a file that was not in the artifact.
 - Release builds now copy assets/ into dist/assets/ and a smoke guard prevents this regression.
+
+
+## Watch Earth 20-window acceleration — 2026-09-20
+- Expanded the embeddable, healthy CouchTourist live-video inventory by 14 scenic windows, bringing the verified embeddable CouchTourist pool to at least 20 distinct places.
+- New coverage deliberately spans Asia, Africa, Europe, Australia/Oceania and North America across many time zones so Watch Earth has alternatives when one part of Earth is dark or visually poor.
+- Watch Earth now orders its qualified journey with likely-daylight windows first while retaining night windows as valid choices; runtime failure memory and one-place/media variety remain active.
+- Added an inventory guard requiring >=20 healthy embeddable windows, >=20 places and broad timezone diversity.

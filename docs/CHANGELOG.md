@@ -624,3 +624,9 @@
 ## 2026-09-20 — Fix missing public logo
 - Added assets/ to the immutable Pages release snapshot. The ERN header mark and favicon are now shipped with the deployed site instead of existing only in the source repository.
 - Added a deployment regression smoke check.
+
+
+## 2026-09-20 — Expand Watch Earth to 20 rotating live windows
+- Added 14 currently checked, explicitly embeddable CouchTourist scenic cameras to accelerate the live public beta.
+- Watch Earth now prefers likely daylight among its qualified current windows, improving the rotation as Earth's day/night boundary moves.
+- Added a smoke guard for 20+ embeddable places and timezone diversity.
