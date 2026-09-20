@@ -9,7 +9,7 @@ export function windowTileView(source,index,{onOpen,now=new Date()}={}){
   b.disabled=action.disabled;
   const visual=element("span",{className:"window-visual",attrs:{"aria-hidden":"true"}});
   applyPoster(visual,source,{label:false,surface:"windows",index});
-  b.append(visual,element("span",{className:"window-moment",text:watchEarthMomentLabel(source,now)}),element("span",{className:"window-state",text:x.eyebrow}),element("strong",{text:x.title}),element("small",{text:x.meta}),element("small",{className:"source-freshness",text:freshnessCopy(source)}));
+  b.append(visual,element("span",{className:"window-moment",text:watchEarthMomentLabel(source,now)}),element("span",{className:"window-state",text:x.eyebrow}),element("strong",{text:x.title}),element("small",{text:x.meta}),element("small",{className:"source-freshness",text:freshnessCopy(source,{now})}));
   b.onclick=()=>{if(!b.disabled)onOpen?.(source)};
   return b;
 }
