@@ -1,9 +1,9 @@
 import { discoverableSource } from "./discovery-eligibility.js";
 import { sourceScore } from "./source-score.js";
-import { interpretEarthIntent,normalizeEarthText } from "./earth-intent.js";
+import { interpretEarthIntent,foldEarthSearchText } from "./earth-intent.js";
 import { sourceMatchesEarthIntents } from "./earth-intent-match.js";
 import { nearNowEvidence } from "./now-evidence.js";
-const norm=normalizeEarthText;
+const norm=foldEarthSearchText;
 
 const stopWords=new Set(["show","me","find","see","watch","look","at","in","on","the","a","an","of","for","please","i","want","to","go","going","visit","before","what","is","like","there","can","you","right"]);
 export function searchEarth(sources,q,{now=new Date()}={}){
