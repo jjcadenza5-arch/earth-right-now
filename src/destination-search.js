@@ -4,7 +4,7 @@ import { destinationRank } from "./destination-engine.js";
 import { bestAvailableWindows } from "./window-evidence.js";
 
 export function destinationSearch(sources,query="",{now=new Date()}={}){
- const matches=bestAvailableWindows(searchEarth(sources,query,{now}),{limit:200,now}),places=groupByPlace(matches,{now});
+ const matches=searchEarth(sources,query,{now}),places=groupByPlace(matches,{now}).map(p=>({...p,sources:bestAvailableWindows(p.sources||[],{limit:12,now})}));
  return places.sort((a,b)=>destinationRank(b,{now})-destinationRank(a,{now}));
 }
 export function destinationSearchSummary(sources,query="",options={}){
