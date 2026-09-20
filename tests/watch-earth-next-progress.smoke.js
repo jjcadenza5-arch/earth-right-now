@@ -1,5 +1,5 @@
 import fs from "node:fs";
 const s=fs.readFileSync("src/watch-earth-session.js","utf8");
-console.assert(s.includes("attempted.add(list[index]?.id)"),"next/previous should exclude the currently displayed window before scanning");
-console.assert(s.includes("if(list.length>1)"),"single-window journeys must remain playable");
+console.assert(s.includes("function next(){return show(index+1)}"),"next should advance from the following journey index");
+console.assert(s.includes("failed.has(s.id)||attempted.has(s.id)"),"journey scan must preserve failed/attempted quarantine");
 console.log("ERN Watch Earth next-progress smoke checks passed");
