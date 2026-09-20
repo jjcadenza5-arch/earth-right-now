@@ -1,3 +1,8 @@
+## 2026-09-20 — Destination evidence language
+- The internal PREVIEW truth type is now presented to visitors as “REFERENCE IMAGE” in the destination evidence hierarchy, with an explicit “not live” explanation.
+- Destination choice summaries now separate verified-current views, available views whose current check is unconfirmed, and reference images instead of mixing those evidence levels together.
+- Playback location (“inside ERN” versus “at source”) remains a separate choice dimension from currentness, so convenience never masquerades as freshness.
+
 ## 2026-09-20 — Search evidence guidance
 - Earth Guide now states the verified-current view count explicitly even when the visitor asked specifically for live/now, rather than relying only on the word “current” in the destination count.
 - Generic place searches continue to distinguish verified-current views, available-but-unconfirmed views and reference images as separate evidence levels.
