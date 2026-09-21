@@ -12,7 +12,7 @@ const SYNONYMS={
  rain:["rain","raining","rainy"],
  reference:["photo","photos","image","images","reference","picture","pictures"]
 };
-const CURRENT=["right now","live now","now","live","current","today","tonight","ตอนนี้","สด"];
+const CURRENT=["right now","live now","now","live","current","currently","today","tonight","at the moment","at this moment","ตอนนี้","สด"];
 const marks=/[\u0300-\u036f]/g;
 function cleanPunctuation(s){return s.replace(/[!-/:-@[-`{-~]/g," ")}
 export function normalizeEarthText(x){return cleanPunctuation((x||"").toString().normalize("NFC").toLowerCase()).replace(/\s+/g," ").trim()}
