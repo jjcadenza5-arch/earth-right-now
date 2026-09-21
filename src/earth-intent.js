@@ -2,7 +2,7 @@ const SYNONYMS={
  wildlife:["wildlife","animal","animals","elephant","bird","birds","zoo","nature"],
  water:["beach","beaches","sea","ocean","coast","coastal","water","surf","harbour","harbor"],
  mountains:["mountain","mountains","volcano","volcanoes","snow","summit","alpine"],
- human:["city","cities","street","streets","people","urban","square","harbour","harbor"],
+ human:["city","cities","street","streets","people","urban","square","harbour","harbor","market","markets","promenade","walking street"],
  beautiful:["beautiful","scenic","view","views","relax","relaxing","calm","peaceful"],
  happening:["happening","active","event","busy","crowd","crowds"],
  night:["night","nighttime","lights","after dark"],
