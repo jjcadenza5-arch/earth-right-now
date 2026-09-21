@@ -5,6 +5,7 @@ assert.equal(all[0].label,"✨ What’s good on Earth right now?");
 assert.ok(all.some(x=>x.intents.includes("snow")));
 assert.ok(all.some(x=>x.intents.includes("golden")));
 assert.ok(all.some(x=>x.query==="surprise me"));
+assert.ok(all.some(x=>x.query==="life happening now"),"default Guide starters should expose ERN’s local-life/current identity");
 const noCurrent=earthSuggestions({currentAvailable:false,limit:5,includeRecent:false});
 assert.ok(noCurrent.every(x=>!x.current));
 assert.ok(noCurrent.some(x=>x.intents.includes("snow")));
