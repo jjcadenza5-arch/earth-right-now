@@ -1,1 +1,1 @@
-import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Homepage polish pass 7","less scroll fatigue","main>[data-surface=\"home\"] .strip","scrollbar-width:thin"])console.assert(css.includes(token),token);console.log("homepage density polish smoke passed");
+import fs from "node:fs";const css=fs.readFileSync("src/styles.css","utf8");for(const token of ["Homepage polish pass 7","less scroll fatigue","#home>.strip","scrollbar-width:thin"])console.assert(css.includes(token),token);console.log("homepage density polish smoke passed");
