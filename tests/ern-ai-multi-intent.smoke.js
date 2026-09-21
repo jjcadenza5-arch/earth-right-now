@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";import {rankForIntent} from "../src/ern-ai.js";
-const now=new Date("2026-09-21T12:00:00Z"),base={health:"UNKNOWN",truth:"EXTERNAL LIVE",playback:"EXTERNAL",checkedAt:"2026-09-21T11:00:00Z",lat:18.7,lon:98.9};
+const now=new Date("2026-09-21T12:00:00Z"),base={health:"HEALTHY",truth:"EXTERNAL LIVE",playback:"EXTERNAL",checkedAt:"2026-09-21T11:00:00Z",lastSuccessfulCheck:"2026-09-21T11:00:00Z",lat:18.7,lon:98.9};
 const sources=[
  {...base,id:"city",title:"Busy city square",categories:["City","Busy"]},
  {...base,id:"market",title:"Local walking market",categories:["Market","Active"]},
