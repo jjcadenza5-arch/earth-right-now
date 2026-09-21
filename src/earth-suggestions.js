@@ -1,8 +1,10 @@
 import { recentEarthSearches } from "./recent-earth-searches.js";
 const SUGGESTIONS=[
+ {label:"✨ What’s good on Earth right now?",query:"what is good on Earth right now",intents:["beautiful","happening"],current:true},
  {label:"Live beaches now",query:"live beach now",intents:["water"],current:true},
  {label:"Peaceful scenic views",query:"peaceful scenic views",intents:["beautiful"],current:false},
  {label:"See Chiang Mai",query:"Chiang Mai",intents:[],current:false},
+ {label:"🎲 Somewhere I’ve never heard of",query:"surprise me",intents:[],current:false},
  {label:"City lights now",query:"live city lights at night now",intents:["human","night"],current:true},
  {label:"City life",query:"busy city",intents:["human","happening"],current:false},
  {label:"Wildlife",query:"wildlife nature",intents:["wildlife"],current:false},
