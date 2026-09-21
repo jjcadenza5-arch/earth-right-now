@@ -8,6 +8,8 @@ const SYNONYMS={
  night:["night","nighttime","lights","after dark"],
  daylight:["daylight","sunny","daytime"],
  golden:["sunrise","sunset","golden hour","dawn","dusk"],
+ snow:["snow","snowing","snowfall","snowy"],
+ rain:["rain","raining","rainy"],
  reference:["photo","photos","image","images","reference","picture","pictures"]
 };
 const CURRENT=["right now","live now","now","live","current","today","tonight","ตอนนี้","สด"];
