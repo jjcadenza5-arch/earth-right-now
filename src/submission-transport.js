@@ -1,5 +1,6 @@
+function privateHost(host){const h=String(host||"").toLowerCase().replace(/^\[|\]$/g,"");if(h==="localhost"||h.endsWith(".localhost")||h==="0.0.0.0"||h==="127.0.0.1"||h==="::1"||h==="::")return true;if(/^127\./.test(h)||/^10\./.test(h)||/^192\.168\./.test(h)||/^169\.254\./.test(h))return true;const m=h.match(/^172\.(\d+)\./);if(m&&Number(m[1])>=16&&Number(m[1])<=31)return true;if(/^fc|^fd|^fe8|^fe9|^fea|^feb/.test(h))return true;return false}
 export function submissionTransportConfig({endpoint="",enabled=false}={}){
- let url=null;try{const u=new URL(String(endpoint||""));if(u.protocol==="https:"&&!u.username&&!u.password)url=u.toString()}catch{}
+ let url=null;try{const u=new URL(String(endpoint||""));if(u.protocol==="https:"&&!u.username&&!u.password&&u.hostname&&!privateHost(u.hostname))url=u.toString()}catch{}
  return{enabled:Boolean(enabled&&url),endpoint:url};
 }
 export function submissionEnvelope(record,{consent=false}={}){
