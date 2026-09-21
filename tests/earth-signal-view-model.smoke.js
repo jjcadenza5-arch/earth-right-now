@@ -1,0 +1,10 @@
+import {earthSignalViewModel,earthSignalSummary} from "../src/earth-signal-view-model.js";
+const now=new Date("2026-09-21T12:00:00Z"),fresh={type:"BEAUTIFUL_LIGHT",createdAt:"2026-09-21T11:53:00Z",placeId:"cape",locationEvidence:"NEAR_PLACE"};
+const view=earthSignalViewModel(fresh,{now});
+console.assert(view.ageLabel==="7 min ago");
+console.assert(view.expiryLabel==="Expires in 38 min");
+console.assert(view.evidenceLabel==="EARTH SIGNAL");
+console.assert(view.locationLabel==="Near this place ✓");
+console.assert(earthSignalViewModel({...fresh,createdAt:"2026-09-21T10:00:00Z"},{now})===null);
+console.assert(earthSignalSummary([fresh],{now}).text.startsWith("1 visitor signal right now"));
+console.log("Earth Signal presentation checks passed");
