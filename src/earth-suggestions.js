@@ -19,7 +19,7 @@ export function earthSuggestions({currentAvailable=true,limit=5,includeRecent=tr
  let fresh=eligible.slice(0,freshCap);
  if(currentAvailable&&freshCap>0&&!fresh.some(signature)){const x=eligible.find(signature);if(x)fresh[0]=x}
  if(freshCap>=4&&!fresh.some(surprise)){const x=eligible.find(surprise);if(x)fresh[fresh.length-1]=x}
- if(currentAvailable&&freshCap>=5&&!fresh.some(localLife)){const x=eligible.find(localLife);if(x)fresh[Math.max(0,fresh.length-2)]=x}
+ if(currentAvailable&&freshCap===5&&!fresh.some(localLife)){const x=eligible.find(localLife);if(x)fresh[Math.max(0,fresh.length-2)]=x}
  return [...fresh,...recent.slice(0,recentCap)].slice(0,Math.max(0,limit)).map(x=>({...x,intents:[...x.intents]}));
 }
 export function suggestionForEmptyIntent(options={}){return earthSuggestions(options)[0]||null}
