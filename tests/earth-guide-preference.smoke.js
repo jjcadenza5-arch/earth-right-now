@@ -1,0 +1,9 @@
+import assert from "node:assert/strict";import {earthGuidePreferenceAction,earthGuidePreferenceReply} from "../src/earth-guide-preference.js";
+assert.equal(earthGuidePreferenceAction("Something less expensive?",{placeId:"z"}).type,"PRICE");
+assert.equal(earthGuidePreferenceAction("Is there a quieter place?",{placeId:"z"}).type,"QUIET");
+assert.equal(earthGuidePreferenceReply({type:"PRICE"}).canAnswer,false);
+assert.match(earthGuidePreferenceReply({type:"PRICE"}).text,/won’t guess/);
+assert.equal(earthGuidePreferenceReply({type:"QUIET"}).canAnswer,false);
+assert.equal(earthGuidePreferenceReply({type:"PRICE"},{hasVerifiedPriceData:true}).canAnswer,true);
+assert.equal(earthGuidePreferenceAction("Show me now"),null);
+console.log("ERN Guide preference truth checks passed");
