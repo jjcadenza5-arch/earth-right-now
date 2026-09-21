@@ -1,11 +1,11 @@
-import {EARTH_SIGNAL_INPUT_POLICY,earthSignalDraft,earthSignalSubmissionReady} from "../src/earth-signal-input-policy.js";
-console.assert(EARTH_SIGNAL_INPUT_POLICY.freeText===false);
-console.assert(EARTH_SIGNAL_INPUT_POLICY.preciseLocationPublic===false);
+import assert from "node:assert/strict";import {EARTH_SIGNAL_INPUT_POLICY,earthSignalDraft,earthSignalSubmissionReady} from "../src/earth-signal-input-policy.js";
+assert.ok(EARTH_SIGNAL_INPUT_POLICY.freeText===false);
+assert.ok(EARTH_SIGNAL_INPUT_POLICY.preciseLocationPublic===false);
 let d=earthSignalDraft({type:"BUSY",placeId:"market",locationPermission:true,nearPlace:true,createdAt:"2026-09-21T12:00:00Z"});
-console.assert(d.ok&&d.signal.locationEvidence==="NEAR_PLACE");
+assert.ok(d.ok&&d.signal.locationEvidence==="NEAR_PLACE");
 d=earthSignalDraft({type:"BUSY",placeId:"market",nearPlace:true,createdAt:"2026-09-21T12:00:00Z"});
-console.assert(d.signal.locationEvidence==="UNVERIFIED","proximity alone cannot imply location permission");
-console.assert(!earthSignalDraft({type:"COMMENT",placeId:"market"}).ok,"free-form/comment type must not enter signal contract");
+assert.ok(d.signal.locationEvidence==="UNVERIFIED","proximity alone cannot imply location permission");
+assert.ok(!earthSignalDraft({type:"COMMENT",placeId:"market"}).ok,"free-form/comment type must not enter signal contract");
 const ready=earthSignalSubmissionReady({type:"PEACEFUL",placeId:"market"});
-console.assert(!ready.ok&&ready.reason==="TRANSPORT_DISABLED","no backend means no fake submission");
+assert.ok(!ready.ok&&ready.reason==="TRANSPORT_DISABLED","no backend means no fake submission");
 console.log("Earth Signal input contract checks passed");
