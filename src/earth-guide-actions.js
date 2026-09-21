@@ -4,6 +4,7 @@ export function earthGuideAction(query){
  const q=norm(query),intent=interpretEarthIntent(q);
  if(/surprise me|somewhere random|random window|never heard of|unexpected/.test(q))return{type:"SURPRISE"};
  if(/completely different|somewhere different|something different/.test(q))return{type:"DIFFERENT"};
+ if(/what(?: is|[’\']s) good on earth right now/.test(q))return{type:"LIVE_NOW"};
  if(intent.wantsCurrent&&intent.intents.length===0&&/^(show me )?(what is |what's )?(live|current|right now|live right now|current right now)/.test(q))return{type:"LIVE_NOW"};
  return{type:"SEARCH"};
 }
