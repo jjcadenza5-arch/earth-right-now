@@ -5,9 +5,9 @@ export function smallPlaceSignals(source={}){
  const famous=FAME_WORDS.some(x=>hay.includes(x));
  return{local,famous,discoveryWorth:local&&!famous};
 }
-export function discoveryMix(items,{limit=6}={}){
+export function discoveryMix(items,{limit=6,promote=false}={}){
  const rows=[...(items||[])],local=rows.filter(x=>smallPlaceSignals(x).discoveryWorth),rest=rows.filter(x=>!smallPlaceSignals(x).discoveryWorth);
- if(!local.length)return rows.slice(0,limit);
+ if(!local.length||!promote)return rows.slice(0,limit);
  const out=[],target=Math.min(Math.max(1,Math.floor(limit/3)),local.length);
  for(let i=0;i<target;i++)out.push(local[i]);
  for(const x of rest)if(out.length<limit)out.push(x);
