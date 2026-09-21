@@ -4,7 +4,7 @@ const SYNONYMS={
  mountains:["mountain","mountains","volcano","volcanoes","snow","summit","alpine"],
  human:["city","cities","street","streets","people","urban","square","harbour","harbor","market","markets","promenade","walking street"],
  beautiful:["beautiful","scenic","view","views","relax","relaxing","calm","peaceful"],
- happening:["happening","active","event","busy","crowd","crowds"],
+ happening:["happening","active","event","busy","crowd","crowds","street life","local life"],
  night:["night","nighttime","lights","after dark"],
  daylight:["daylight","sunny","daytime"],
  golden:["sunrise","sunset","golden hour","dawn","dusk"],
