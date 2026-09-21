@@ -16,3 +16,5 @@ assert.equal(suffix.crossProvider,false);
 const unrelatedSuffix=providerHostIntegrity({sourceUrl:"https://one.co.uk/live",officialUrl:"https://two.co.uk/"});
 assert.equal(unrelatedSuffix.crossProvider,true);
 console.log("provider host integrity passed");
+
+for(const sourceUrl of ["https://localhost/live","https://127.0.0.1/live","https://10.0.0.4/live","https://192.168.1.8/live","https://172.16.0.2/live","https://[::1]/live"]){const r=providerHostIntegrity({sourceUrl});assert.equal(r.ok,false);assert.ok(r.issues.includes("UNSAFE_SOURCE_URL"));}

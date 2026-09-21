@@ -1,7 +1,8 @@
+function privateHost(host){const h=String(host||"").toLowerCase().replace(/^\[|\]$/g,"");if(h==="localhost"||h.endsWith(".localhost")||h==="0.0.0.0"||h==="127.0.0.1"||h==="::1"||h==="::")return true;if(/^127\./.test(h)||/^10\./.test(h)||/^192\.168\./.test(h)||/^169\.254\./.test(h))return true;const m=h.match(/^172\.(\d+)\./);if(m&&Number(m[1])>=16&&Number(m[1])<=31)return true;if(/^fc|^fd|^fe8|^fe9|^fea|^feb/.test(h))return true;return false}
 function safeUrl(value){
   try{
     const u=new URL(String(value||""));
-    return u.protocol==="https:"&&!u.username&&!u.password?u:null;
+    return u.protocol==="https:"&&!u.username&&!u.password&&u.hostname&&!privateHost(u.hostname)?u:null;
   }catch{return null}
 }
 
