@@ -1,11 +1,11 @@
-import {EARTH_SIGNAL_TTL_MINUTES,earthSignalState,publicEarthSignal,earthSignalGuideEvidence} from "../src/earth-signals.js";
+import assert from "node:assert/strict";import {EARTH_SIGNAL_TTL_MINUTES,earthSignalState,publicEarthSignal,earthSignalGuideEvidence} from "../src/earth-signals.js";
 const now=new Date("2026-09-21T12:00:00Z");
 const fresh={type:"BUSY",createdAt:"2026-09-21T11:53:00Z",placeId:"market",placeLabel:"Old Town Market",locationEvidence:"NEAR_PLACE",lat:1,lon:2};
-console.assert(EARTH_SIGNAL_TTL_MINUTES===45,"signals must expire");
-console.assert(earthSignalState(fresh,{now}).visible,"fresh signal should show");
-console.assert(!earthSignalState({...fresh,createdAt:"2026-09-21T11:00:00Z"},{now}).visible,"old signal should disappear");
+assert.ok(EARTH_SIGNAL_TTL_MINUTES===45,"signals must expire");
+assert.ok(earthSignalState(fresh,{now}).visible,"fresh signal should show");
+assert.ok(!earthSignalState({...fresh,createdAt:"2026-09-21T11:00:00Z"},{now}).visible,"old signal should disappear");
 const pub=publicEarthSignal(fresh);
-console.assert(!("lat" in pub)&&!("lon" in pub),"public signal must omit precise coordinates");
-console.assert(pub.nearPlaceVerified,"near-place verification may be shown");
-console.assert(earthSignalGuideEvidence(fresh,{now}).wording==="Visitors are reporting","Guide must preserve visitor provenance");
+assert.ok(!("lat" in pub)&&!("lon" in pub),"public signal must omit precise coordinates");
+assert.ok(pub.nearPlaceVerified,"near-place verification may be shown");
+assert.ok(earthSignalGuideEvidence(fresh,{now}).wording==="Visitors are reporting","Guide must preserve visitor provenance");
 console.log("Earth Signal contract checks passed");
