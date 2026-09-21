@@ -2,5 +2,8 @@ import assert from "node:assert/strict";import {guideTransientState} from "../sr
 assert.deepEqual(guideTransientState({type:"MISSING_CONTEXT"}),{clearResults:true,clearStatus:true,clearFollowUps:true});
 assert.deepEqual(guideTransientState({type:"PRICE"},{hasPlace:true}),{clearResults:false,clearStatus:true,clearFollowUps:false});
 assert.equal(guideTransientState({type:"QUIET"},{hasPlace:false}).clearResults,true);
+assert.deepEqual(guideTransientState({type:"NEARBY"},{hasPlace:true}),{clearResults:true,clearStatus:true,clearFollowUps:false});
+assert.deepEqual(guideTransientState({type:"STAY"},{hasPlace:true}),{clearResults:true,clearStatus:true,clearFollowUps:false});
+assert.deepEqual(guideTransientState({type:"SEE_NOW"},{hasPlace:true}),{clearResults:true,clearStatus:true,clearFollowUps:false});
 assert.equal(guideTransientState(null).clearResults,false);
 console.log("ERN Guide transient UI state checks passed");
