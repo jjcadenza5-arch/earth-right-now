@@ -1,0 +1,3 @@
+import fs from "node:fs";import {supportedLanguages,t} from "../src/language.js";
+for(const {code} of supportedLanguages){console.assert(t("guideSearch",code)!=="guideSearch",code+" Guide prompt missing");console.assert(t("guideSearch",code)!==t("search",code),code+" Guide prompt must remain conversational")}
+const app=fs.readFileSync("src/app.js","utf8");console.assert(app.includes('$("#ernAiInput").placeholder=t("guideSearch",code)'),"language application must preserve Guide prompt");console.assert(!app.includes('$("#ernAiInput").placeholder=t("search",code)'),"generic Search Earth placeholder must not overwrite Guide");console.log("ERN Guide language identity checks passed");
