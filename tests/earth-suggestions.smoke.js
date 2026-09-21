@@ -1,7 +1,15 @@
-import { earthSuggestions,suggestionForEmptyIntent } from "../src/earth-suggestions.js";
-const all=earthSuggestions({currentAvailable:true});console.assert(all.some(x=>x.current)&&all.some(x=>x.intents.includes("golden")));
-const noCurrent=earthSuggestions({currentAvailable:false});console.assert(noCurrent.every(x=>!x.current),"must not suggest a current-only prompt when no current windows exist");
-console.assert(suggestionForEmptyIntent({currentAvailable:false})?.query==="peaceful scenic views");
-console.log("ERN Earth suggestions smoke checks passed");
-
-globalThis.localStorage={getItem:k=>k==="ern:recent-searches:v1"?JSON.stringify(["one","two","three","four"]):null,setItem:()=>{}};const mixed=earthSuggestions({currentAvailable:true,limit:5});console.assert(mixed.filter(x=>x.recent).length<=2,"recent searches must not crowd out fresh Earth discovery");console.assert(mixed.some(x=>x.label==="Live beaches now"),"fresh current discovery should remain visible");console.assert(earthSuggestions({currentAvailable:true,limit:5,includeRecent:false}).some(x=>x.label==="See Chiang Mai"),"direct destination discovery should remain visible alongside intent prompts");console.assert(mixed.some(x=>x.intents.includes("golden")),"golden-light discovery should remain visible when current views exist");
+import assert from "node:assert/strict";import {earthSuggestions,suggestionForEmptyIntent} from "../src/earth-suggestions.js";
+globalThis.localStorage={getItem:k=>k==="ern:recent-searches:v1"?JSON.stringify(["one","two","three","four"]):null,setItem:()=>{}};
+const all=earthSuggestions({currentAvailable:true,limit:5,includeRecent:false});
+assert.equal(all[0].label,"✨ What’s good on Earth right now?");
+assert.ok(all.some(x=>x.intents.includes("snow")));
+assert.ok(all.some(x=>x.intents.includes("golden")));
+assert.ok(all.some(x=>x.query==="surprise me"));
+const noCurrent=earthSuggestions({currentAvailable:false,limit:5,includeRecent:false});
+assert.ok(noCurrent.every(x=>!x.current));
+assert.ok(noCurrent.some(x=>x.intents.includes("snow")));
+assert.equal(suggestionForEmptyIntent({currentAvailable:false,includeRecent:false})?.query,"where can I see snow");
+const mixed=earthSuggestions({currentAvailable:true,limit:5});
+assert.ok(mixed.filter(x=>x.recent).length<=2);
+assert.equal(mixed[0].label,"✨ What’s good on Earth right now?");
+console.log("ERN Guide starter balance checks passed");
