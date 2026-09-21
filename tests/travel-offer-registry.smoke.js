@@ -14,3 +14,5 @@ const expired={...verified,verifiedAt:"2020-01-01T00:00:00Z"};console.assert(tra
 const otherPlaceOffer={...verified,id:"other-hotel",placeId:"bkk",title:"Bangkok hotel"};const bridge=travelBridgeView(place,{offers:[verified,hidden,otherPlaceOffer]});console.assert(bridge.textContent.includes("Places to stay (1)")&&!bridge.textContent.includes("Food (1)"),"travel counts must only include the selected place");console.assert(!bridge.textContent.includes("Bangkok hotel"),"travel bridge must never render an offer from another place");
 console.assert(travelIntentMessage("stay",place,1).startsWith("1 verified"));
 console.log("ERN verified travel offer smoke checks passed");
+
+for(const url of ["https://localhost/stay","https://127.0.0.1/stay","https://10.0.0.4/stay","https://192.168.1.8/stay","https://172.16.0.2/stay","https://[::1]/stay"])console.assert(travelOffer({id:"unsafe",intent:"stay",title:"Unsafe",provider:"P",url},{place,verified:true})===null,`private travel URL must be rejected: ${url}`);
