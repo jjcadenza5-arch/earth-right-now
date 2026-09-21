@@ -8,7 +8,7 @@ const SYNONYMS={
  night:["night","nighttime","lights","after dark"],
  daylight:["daylight","sunny","daytime"],
  golden:["sunrise","sunset","golden hour","dawn","dusk"],
- snow:["snowing","snowfall","snowy"],
+ snow:["snow","snowing","snowfall","snowy"],
  rain:["rain","raining","rainy"],
  reference:["photo","photos","image","images","reference","picture","pictures"]
 };
