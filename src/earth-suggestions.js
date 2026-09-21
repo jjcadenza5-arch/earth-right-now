@@ -6,7 +6,7 @@ const SUGGESTIONS=[
  {label:"Live beaches now",query:"live beach now",intents:["water"],current:true},
  {label:"Peaceful scenic views",query:"peaceful scenic views",intents:["beautiful"],current:false},
  {label:"See Chiang Mai",query:"Chiang Mai",intents:[],current:false},
- {label:"🎲 Take me somewhere unexpected",query:"surprise me",intents:[],current:false},
+ {label:"🎲 Somewhere I’ve never heard of",query:"surprise me",intents:[],current:false},
  {label:"Life happening now",query:"life happening now",intents:["human","happening"],current:true},
  {label:"Local markets & streets",query:"local market street life",intents:["human","happening"],current:false},
  {label:"City lights now",query:"live city lights at night now",intents:["human","night"],current:true},
