@@ -14,3 +14,5 @@ console.assert(affiliatePartner({...p,baseUrl:"https://user:pass@example.com/"})
 const now=Date.parse("2026-09-19T12:00:00Z");
 console.assert(activeAffiliatePartner({...p,verifiedAt:"2026-09-19T12:04:00Z",expiresAt:"2026-10-01"},{now}));
 console.assert(!activeAffiliatePartner({...p,verifiedAt:"2026-09-19T12:06:00Z",expiresAt:"2026-10-01"},{now}));
+
+for(const baseUrl of ["https://localhost/","https://127.0.0.1/","https://10.0.0.4/","https://192.168.1.8/","https://172.16.0.2/","https://[::1]/"])console.assert(affiliatePartner({...p,baseUrl})===null,`private affiliate URL must be rejected: ${baseUrl}`);
