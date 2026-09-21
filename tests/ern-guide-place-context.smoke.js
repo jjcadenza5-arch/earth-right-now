@@ -4,4 +4,4 @@ console.assert(earthGuidePlaceAction("What's nearby?",{placeId:"zermatt"}).type=
 console.assert(earthGuidePlaceAction("Where could I stay?",{placeId:"zermatt"}).type==="STAY");
 console.assert(earthGuidePlaceAction("What's nearby?",{placeId:null})===null,"no invented place context");
 console.assert(earthGuidePlaceFollowUps({id:"zermatt"}).includes("Show me now"));
-const app=fs.readFileSync("src/app.js","utf8");console.assert(app.includes("guidePlaceId=result.items?.[0]?.id||null"),"Guide must bind follow-ups to an actual result");console.assert(app.includes("current and verified"),"stay follow-up must preserve travel verification boundary");console.log("ERN Guide place-context checks passed");
+const app=fs.readFileSync("src/app.js","utf8");console.assert(app.includes("const guidePlace=earthGuideContextPlace(query,result.items);guidePlaceId=guidePlace?.id||null"),"Guide must bind follow-ups only to a clear result");console.assert(app.includes("current and verified"),"stay follow-up must preserve travel verification boundary");console.log("ERN Guide place-context checks passed");
