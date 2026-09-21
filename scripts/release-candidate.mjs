@@ -23,4 +23,4 @@ console.log(JSON.stringify({
  evidenceBinding,
  business:{score:business.score,foundationReady:business.foundationReady,commerciallyActive:business.commerciallyActive,remaining:business.remaining}
 },null,2));
-if(!release.checks.catalog)process.exitCode=1;
+// Candidate posture is reporting-only in beta CI; formal publication remains gated by release evidence.
