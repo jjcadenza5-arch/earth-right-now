@@ -2,8 +2,8 @@ const PLACE_CONTEXT_PATTERNS=[
  {re:/^(?:what(?:['’]s| is)|show me|anything|what else is) nearby\??$/i,type:"NEARBY"},
  {re:/^(?:what(?:['’]s| is)|show me|anything|what else is) around here\??$/i,type:"NEARBY"},
  {re:/^what(?:['’]s| is) close by\??$/i,type:"NEARBY"},
- {re:/^(?:where (?:could|can|should) (?:i|we) stay|places? to stay|hotels? nearby|show me (?:places? to stay|hotels?)|anywhere (?:good )?to stay|where should we sleep)\??$/i,type:"STAY"},
- {re:/^(?:what does it look like(?: (?:right )?now)?|show me (?:this|it|here) (?:right )?now|show me (?:right )?now|what can i see (?:here|now)|can i see (?:this|it|here) (?:right )?now|is there a current view)\??$/i,type:"SEE_NOW"}
+ {re:/^(?:where (?:could|can|should) (?:i|we) stay|places? to stay|hotels? nearby|show me (?:places? to stay|hotels?)|anywhere (?:good )?to stay|where should we sleep|can (?:i|we) stay (?:here|there))\??$/i,type:"STAY"},
+ {re:/^(?:what does (?:this|it) look like(?: (?:right )?now)?|what does it look like(?: (?:right )?now)?|show me (?:this|it|here|there) (?:right )?now|show me (?:right )?now|what can i see (?:here|there|now)|can i see (?:this|it|here|there) (?:right )?now|is there a current view|is (?:this|it) live(?: right now)?)\??$/i,type:"SEE_NOW"}
 ];
 const norm=x=>String(x||"").toLowerCase().normalize("NFKD").replace(/[^a-z0-9\s]/g," ").replace(/\s+/g," ").trim();
 export function earthGuidePlaceAction(query,{placeId=null}={}){
