@@ -3,6 +3,9 @@ assert.equal(interpretEarthIntent("Where can I see snow?").intents.includes("sno
 assert.equal(interpretEarthIntent("Show me somewhere raining now").intents.includes("rain"),true);
 assert.equal(earthGuideWeatherBoundary("Where can I see snow?",{nearNowCount:0}).canClaimCurrent,false);
 assert.match(earthGuideWeatherBoundary("Where can I see snow?",{nearNowCount:0}).text,/won’t claim/);
-assert.equal(earthGuideWeatherBoundary("Show me snow now",{nearNowCount:2}).canClaimCurrent,true);
+assert.equal(earthGuideWeatherBoundary("Show me snow now",{nearNowCount:2}).canClaimCurrent,false);
+assert.match(earthGuideWeatherBoundary("Show me snow now",{nearNowCount:2}).text,/does not by itself prove/);
+assert.equal(earthGuideWeatherBoundary("Show me snow now",{nearNowCount:2,verifiedWeatherCount:1}).canClaimCurrent,true);
+assert.match(earthGuideWeatherBoundary("Show me snow now",{nearNowCount:2,verifiedWeatherCount:1}).text,/explicit weather evidence/);
 assert.equal(earthGuideWeatherBoundary("beautiful beach",{}),null);
 console.log("ERN Guide weather truth checks passed");
