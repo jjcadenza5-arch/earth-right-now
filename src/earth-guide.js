@@ -1,7 +1,7 @@
 import { interpretEarthIntent } from "./earth-intent.js";
 const label=i=>({water:"water and coast",mountains:"mountains and snow",wildlife:"wildlife",human:"city life",beautiful:"beautiful scenery",happening:"places with activity",night:"city lights at night",daylight:"daylight",golden:"sunrise, sunset or golden light",reference:"reference images"}[i]||i);
 export function earthGuideReply(result,{tasteSignals=0}={}){
- const q=String(result?.query||"").trim();if(!q)return{tone:"WELCOME",text:"Ask me about a place, a mood, weather, scenery or something happening on Earth. I’ll help you see the best truthful window ERN has — current when we can verify it, clearly labeled when we can’t."};
+ const q=String(result?.query||"").trim();if(!q)return{tone:"WELCOME",text:"Ask me about a place, a mood, weather, scenery or something happening on Earth. I’ll help you see the best truthful window ERN has — current views when available, or clearly labeled reference views when they’re not."};
  const intent=interpretEarthIntent(q);
  if(result?.empty)return{tone:"EMPTY",text:intent.wantsCurrent?"I couldn't find a verified-current match for that yet. Try the same place without “live” to see other available views or clearly labeled reference images.":"I don't have a good match for that yet. Try a place, landscape, city, coast, mountain or wildlife view."};
  const first=result.items?.[0],where=first?.title||first?.region||first?.country||"somewhere on Earth",theme=intent.intents.map(label).slice(0,2).join(" and ");
