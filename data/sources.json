@@ -487,8 +487,8 @@
     ],
     "story": "See current canyon visibility, entrance traffic and road/weather conditions before committing to the drive.",
     "rightsBasis": "Current NPS webcam page provides refreshed current views; retained LINK_ONLY because ERN does not infer display permission.",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-21T21:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-21T21:40:00+07:00",
     "failureReason": null
   },
   {
@@ -541,8 +541,8 @@
     ],
     "story": "Check whether the mountain is visible and see current Paradise, Longmire and seasonal Sunrise conditions before the drive.",
     "rightsBasis": "Current NPS page lists live/current webcams, including year-round and seasonal views; retained LINK_ONLY.",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-21T21:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-21T21:40:00+07:00",
     "failureReason": null
   },
   {
@@ -1401,8 +1401,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Amden & Weesen Tourism",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-21T21:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-21T21:40:00+07:00",
     "failureReason": null,
     "quality": 96,
     "freshness": 95,
@@ -1434,8 +1434,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Oeschinensee",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-21T21:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-21T21:40:00+07:00",
     "failureReason": null,
     "quality": 97,
     "freshness": 95,
