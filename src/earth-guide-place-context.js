@@ -1,7 +1,7 @@
 const PLACE_CONTEXT_PATTERNS=[
- {re:/^(?:what(?:'s| is)|show me) nearby\??$/i,type:"NEARBY"},
- {re:/^(?:where (?:could|can|should) i stay|places? to stay|hotels? nearby)\??$/i,type:"STAY"},
- {re:/^(?:what does it look like|show me (?:this|it) now|show me now)\??$/i,type:"SEE_NOW"}
+ {re:/^(?:what(?:'s| is)|show me|anything) nearby\??$/i,type:"NEARBY"},
+ {re:/^(?:where (?:could|can|should) (?:i|we) stay|places? to stay|hotels? nearby|show me (?:places? to stay|hotels?))\??$/i,type:"STAY"},
+ {re:/^(?:what does it look like(?: now)?|show me (?:this|it) now|show me now|what can i see (?:here|now))\??$/i,type:"SEE_NOW"}
 ];
 const norm=x=>String(x||"").toLowerCase().normalize("NFKD").replace(/[^a-z0-9\s]/g," ").replace(/\s+/g," ").trim();
 export function earthGuidePlaceAction(query,{placeId=null}={}){
