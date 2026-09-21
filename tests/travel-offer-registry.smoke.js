@@ -11,6 +11,6 @@ const inv=travelOfferInventory([verified,hidden]);console.assert(inv.total===1&&
 const card=travelOfferView(verified);console.assert(card&&card.textContent.includes("Affiliate link"));console.assert(travelOfferDisclosureText({...verified,sponsored:true})==="Sponsored");console.assert(travelOfferTelemetry(verified)?.event==="travel_option_opened");
 console.assert(travelOfferView(hidden)===null,"unverified offer must never render");
 const expired={...verified,verifiedAt:"2020-01-01T00:00:00Z"};console.assert(travelOffersForPlace([expired],"cm").length===0&&travelOfferView(expired)===null,"expired partner verification must fail closed");
-const bridge=travelBridgeView(place,{offers:[verified,hidden]});console.assert(bridge.textContent.includes("Places to stay (1)")&&!bridge.textContent.includes("Food (1)"));
+const otherPlaceOffer={...verified,id:"other-hotel",placeId:"bkk",title:"Bangkok hotel"};const bridge=travelBridgeView(place,{offers:[verified,hidden,otherPlaceOffer]});console.assert(bridge.textContent.includes("Places to stay (1)")&&!bridge.textContent.includes("Food (1)"),"travel counts must only include the selected place");console.assert(!bridge.textContent.includes("Bangkok hotel"),"travel bridge must never render an offer from another place");
 console.assert(travelIntentMessage("stay",place,1).startsWith("1 verified"));
 console.log("ERN verified travel offer smoke checks passed");
