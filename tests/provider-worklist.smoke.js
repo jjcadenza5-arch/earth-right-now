@@ -4,4 +4,5 @@ console.assert(s.includes("evidenceDebtSummary"),"worklist must expose evidence 
 console.assert(s.includes("staleObservationIds"),"worklist must expose stale observation ids");
 console.assert(s.includes("evidenceDebt"),"worklist must use the operations evidence debt contract");
 console.assert(s.includes("provider:record"),"worklist must include evidence recording guidance");
+console.assert(s.includes("HTTP-only page reachability"),"worklist must warn that page reachability is not playback proof");
 console.log("provider worklist smoke passed");
