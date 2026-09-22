@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { operationsReport } from "../src/operations-report.js";
 const now="2026-09-20T12:00:00Z";
-const source={id:"cam-a",placeId:"p",title:"A",provider:"P",country:"T",truth:"LIVE_VIDEO",permission:"LINK_ONLY",health:"UNKNOWN",playback:"EMBED",sourceUrl:"https://example.com/live",checkedAt:now};
+const source={id:"cam-a",placeId:"p",title:"A",provider:"P",country:"T",truth:"LIVE_VIDEO",permission:"LINK_ONLY",health:"UNKNOWN",playback:"EMBED",sourceUrl:"https://example.com/live",embedUrl:"https://provider.example/embed",checkedAt:now};
 let r=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200}]});
 assert.equal(r.healthAutomation.providerInput.accepted,1);
 assert.deepEqual(r.healthAutomation.providerInput.evidenceDebt,[]);
@@ -32,6 +32,7 @@ const degraded={...source,id:"degraded-a",health:"DEGRADED",checkedAt:"2026-09-1
 const prioritized=operationsReport([source,degraded],{checkedAt:now,providerObservations:[]});
 assert.equal(prioritized.healthAutomation.providerInput.evidenceDebt[0].id,"degraded-a");
 assert.equal(prioritized.healthAutomation.providerInput.evidenceDebt[0].priority,100);
+assert.equal(prioritized.healthAutomation.providerInput.evidenceDebt[0].embedUrl,"https://provider.example/embed");
 assert.equal(prioritized.healthAutomation.providerInput.evidenceDebtSummary.total,2);
 assert.equal(prioritized.healthAutomation.providerInput.evidenceDebtSummary.degraded,1);
 assert.equal(prioritized.healthAutomation.providerInput.evidenceDebt[0].action,"REPROVE_PLAYBACK");
