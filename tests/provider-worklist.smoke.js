@@ -6,4 +6,5 @@ console.assert(s.includes("evidenceDebt"),"worklist must use the operations evid
 console.assert(s.includes("provider:record"),"worklist must include evidence recording guidance");
 console.assert(s.includes("HTTP-only page reachability"),"worklist must warn that page reachability is not playback proof");
 console.assert(s.includes("blockedDegraded"),"worklist must surface degraded playback blockers");
+console.assert(s.match(/blockedDegraded:[\s\S]*recordCommand/),"degraded blockers must include the evidence recording command");
 console.log("provider worklist smoke passed");
