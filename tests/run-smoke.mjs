@@ -15,3 +15,4 @@ for(const file of files){
 if(!files.length){console.error("No smoke tests found");process.exit(1)}
 if(failed){console.error(`\n${failed} of ${files.length} smoke tests failed`);process.exit(1)}
 console.log(`\nAll ${files.length} ERN smoke tests passed`);
+\nawait import("./provider-worklist.smoke.js");\n
