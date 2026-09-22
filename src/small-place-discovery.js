@@ -15,10 +15,6 @@ export function smallPlaceSignals(source={}){
  const local=localScore>0;
  return{local,famous,localScore,signals:matched.map(([term])=>term),discoveryWorth:localScore>=2&&!famous};
 }
-function discoveryKey(item={}){
- const s=(item.sources||[])[0]||item;
- return String(item.id||item.placeId||item.title||s.id||s.title||"").toLowerCase();
-}
 export function discoveryMix(items,{limit=6,promote=false}={}){
  const rows=[...(items||[])];
  if(!promote||limit<=0)return rows.slice(0,Math.max(0,limit));
@@ -26,7 +22,7 @@ export function discoveryMix(items,{limit=6,promote=false}={}){
   const sources=item.sources?.length?item.sources:[item];
   const score=Math.max(...sources.map(s=>smallPlaceSignals(s).localScore));
   const worth=sources.some(s=>smallPlaceSignals(s).discoveryWorth);
-  return{item,index,score,worth,key:discoveryKey(item)};
+  return{item,index,score,worth};
  }).filter(x=>x.worth).sort((a,b)=>b.score-a.score||a.index-b.index);
  if(!local.length)return rows.slice(0,limit);
  const target=Math.min(Math.max(1,Math.floor(limit/3)),local.length);
