@@ -5,5 +5,5 @@ export function watchEarthSequenceDiagnostics(items=[]){
  const dominantCount=Math.max(0,...counts.values());
  const dominantProviderShare=rows.length?Number((dominantCount/rows.length).toFixed(3)):0,adjacentProviderRepeat=longestRun>1;
  const resilience=rows.length<3?"LIMITED":counts.size<3||dominantProviderShare>=.6||longestRun>2?"CONCENTRATED":"DIVERSE";
- return{count:rows.length,providers:counts.size,dominantProviderShare,longestProviderRun,adjacentProviderRepeat,resilience};
+ return{count:rows.length,providers:counts.size,dominantProviderShare,longestProviderRun:longestRun,adjacentProviderRepeat,resilience};
 }
