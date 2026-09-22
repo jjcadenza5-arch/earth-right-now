@@ -1,0 +1,2 @@
+import assert from "node:assert/strict";import fs from "node:fs";import { buildDynamicWatchEarth } from "../src/dynamic-watch-earth.js";
+const sources=JSON.parse(fs.readFileSync(new URL("../data/sources.json",import.meta.url),"utf8"));const now=new Date("2026-09-21T18:00:00Z");const a=buildDynamicWatchEarth(sources,{limit:20,now});const b=buildDynamicWatchEarth(sources,{limit:20,now});assert.deepEqual(a.map(x=>x.id),b.map(x=>x.id));console.log("ERN dynamic Watch Earth fixed-time determinism passed");
