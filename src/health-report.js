@@ -32,7 +32,7 @@ export function healthCheckReport(sources,observations={},options={}){
       observedAt:integrity.observedAt,
       before:source.health,
       proposed:next.health,
-      reason:result?.inconclusive===true?result.reason:(next.failureReason||null),
+      reason:next.failureReason||null,
       lastSuccessfulCheck:next.lastSuccessfulCheck||source.lastSuccessfulCheck||null,
       changed:next.health!==source.health,
       outcome:result?.inconclusive===true?"INCONCLUSIVE":result?.ok===true?"CONFIRMED_HEALTHY":result?.definitive===true?"DEFINITIVE_FAILURE":"FAILED_CHECK",
