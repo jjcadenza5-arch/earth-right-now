@@ -15,4 +15,6 @@ const stale=operationsReport([source],{checkedAt:now,providerObservations:[{id:"
 assert.ok(stale.healthAutomation.providerInput.staleObservationIds.includes("cam-a"));
 assert.equal(stale.healthAutomation.confirmedHealthy,0);
 assert.ok(stale.healthAutomation.unobserved.includes("cam-a"));
+assert.equal(stale.healthAutomation.complete,false);
+assert.ok(stale.healthAutomation.issues.includes("UNOBSERVED_SOURCES"));
 console.log("stale provider observation expiry passed");
