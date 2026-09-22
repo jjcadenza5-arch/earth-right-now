@@ -1,0 +1,4 @@
+import assert from "node:assert/strict";import { operationsReport } from "../src/operations-report.js";
+const base={placeId:"p",truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",health:"HEALTHY",playback:"EMBED",sourceUrl:"https://example.com",embedUrl:"https://www.youtube.com/embed/x",provider:"P"};
+const rows=[{...base,id:"newer",title:"Newer",checkedAt:"2026-09-20T00:00:00Z",lastSuccessfulCheck:"2026-09-20T00:00:00Z"},{...base,id:"older",title:"Older",checkedAt:"2026-09-01T00:00:00Z",lastSuccessfulCheck:"2026-09-01T00:00:00Z"},{...base,id:"degraded",title:"Degraded",health:"DEGRADED",checkedAt:"2026-09-20T00:00:00Z"}];
+const r=operationsReport(rows,{providerObservations:[],checkedAt:"2026-09-23T00:00:00Z"});assert.deepEqual(r.healthAutomation.providerInput.evidenceDebt.map(x=>x.id),["degraded","older","newer"]);console.log("ERN provider evidence debt priority passed");
