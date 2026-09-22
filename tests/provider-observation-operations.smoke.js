@@ -31,6 +31,8 @@ const degraded={...source,id:"degraded-a",health:"DEGRADED",checkedAt:"2026-09-1
 const prioritized=operationsReport([source,degraded],{checkedAt:now,providerObservations:[]});
 assert.equal(prioritized.healthAutomation.providerInput.evidenceDebt[0].id,"degraded-a");
 assert.equal(prioritized.healthAutomation.providerInput.evidenceDebt[0].priority,100);
+assert.equal(prioritized.healthAutomation.providerInput.evidenceDebtSummary.total,2);
+assert.equal(prioritized.healthAutomation.providerInput.evidenceDebtSummary.degraded,1);
 assert.equal(prioritized.healthAutomation.providerInput.evidenceDebt[0].action,"REPROVE_PLAYBACK");
 assert.deepEqual(prioritized.healthAutomation.providerInput.evidenceDebt[0].requiredEvidence,["MEDIA_ENDPOINT","HUMAN_PLAYBACK"]);
 console.log("provider evidence debt priority passed");
