@@ -9,6 +9,7 @@ console.log(JSON.stringify({
  health:report.health,
  catalogGate:report.gate,
  release:{ready:report.release.ready,blockers:report.release.blockers},
+ healthAutomation:report.healthAutomation,
  providerReview:{
   total:report.providerReview.total,
   unsafe:report.providerReview.unsafe.map(x=>({id:x.id,issues:x.issues})),
