@@ -14,9 +14,8 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
   const providerReview=(sources||[]).map(source=>({id:source.id,...providerHostIntegrity(source)})).filter(x=>!x.ok||x.crossProvider);
   const providerBatch=providerObservations===null?null:providerObservationBatch(providerObservations,{observedAt:checkedAt||undefined,knownSourceIds:(sources||[]).map(x=>x.id)});
   const effectiveHealthObservations=healthObservations??providerBatch?.observations??null;
-  const healthCheckedAt=checkedAt||new Date().toISOString();
   const healthAutomation=effectiveHealthObservations===null?null:(()=>{
-    const report=healthCheckReport(sources,effectiveHealthObservations,{checkedAt:healthCheckedAt});
+    const report=healthCheckReport(sources,effectiveHealthObservations,{checkedAt:checkedAt||undefined});
     const audit=healthReportAudit(report);
     return{
       complete:audit.ok,
