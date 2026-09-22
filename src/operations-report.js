@@ -38,7 +38,7 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
       unobserved:report.unobserved,
       unknownObservationIds:report.unknownObservationIds,
       invalidObservations:report.invalidObservations,
-      providerInput:providerBatch?{accepted:providerBatch.total,current:providerBatch.total-staleObservationIds.length,rejected:providerBatch.rejected,staleObservationIds,evidenceDebt:(sources||[]).filter(source=>!currentHealthObservations?.[source.id]).map(source=>source.id)}:null
+      providerInput:providerBatch?{accepted:providerBatch.total,current:providerBatch.total-staleObservationIds.length,rejected:providerBatch.rejected,staleObservationIds,evidenceDebt:(sources||[]).filter(source=>source.playback==="EMBED"&&!currentHealthObservations?.[source.id]).map(source=>source.id)}:null
     };
   })();
 
