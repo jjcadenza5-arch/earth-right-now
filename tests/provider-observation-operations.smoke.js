@@ -4,6 +4,7 @@ const now="2026-09-20T12:00:00Z";
 const source={id:"cam-a",placeId:"p",title:"A",provider:"P",country:"T",truth:"LIVE_VIDEO",permission:"LINK_ONLY",health:"UNKNOWN",playback:"EXTERNAL",sourceUrl:"https://example.com/live",checkedAt:now};
 let r=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200}]});
 assert.equal(r.healthAutomation.providerInput.accepted,1);
+assert.deepEqual(r.healthAutomation.providerInput.evidenceDebt,[]);
 assert.equal(r.healthAutomation.proposals,1);
 assert.equal(r.healthAutomation.changes,0);assert.equal(r.healthAutomation.inconclusive,1);assert.equal(r.healthAutomation.confirmedHealthy,0);assert.equal(r.healthAutomation.outcomeDetails.inconclusive.length,1);assert.equal(r.healthAutomation.outcomeDetails.inconclusive[0].id,"cam-a");assert.equal(r.revalidation.next[0].id,"cam-a");assert.match(r.revalidation.next[0].reason,/INCONCLUSIVE_MEDIA/);
 r=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200,confirmation:"MEDIA_ENDPOINT"}]});
@@ -13,6 +14,7 @@ console.log("provider observations operations integration passed");
 
 const stale=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-19T11:59:59.000Z"}]});
 assert.ok(stale.healthAutomation.providerInput.staleObservationIds.includes("cam-a"));
+assert.deepEqual(stale.healthAutomation.providerInput.evidenceDebt,["cam-a"]);
 assert.equal(stale.healthAutomation.confirmedHealthy,0);
 assert.ok(stale.healthAutomation.invalidObservations.some(x=>x.id==="cam-a"&&x.reason==="STALE_OBSERVATION"));
 assert.equal(stale.healthAutomation.complete,false);
