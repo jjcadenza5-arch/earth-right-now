@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import { operationsReport } from "../src/operations-report.js";
+const rows=JSON.parse(await readFile(new URL("../data/sources.json",import.meta.url),"utf8"));
+const checkedAt=rows.map(x=>x.checkedAt).filter(Boolean).sort().at(-1);
+const r=operationsReport(rows,{checkedAt});
+assert.ok(r.watchEarth.count>=0&&r.watchEarth.count<=20);
+assert.equal(r.watchEarth.target,20);
+assert.equal(r.watchEarth.shortfall,20-r.watchEarth.count);
+assert.ok(r.watchEarth.providers>=0);
+assert.ok(r.watchEarth.embedShare>=0&&r.watchEarth.embedShare<=1);
+assert.equal(typeof r.watchEarth.providerResilient,"boolean");
+console.log("ERN Watch Earth operations resilience checks passed");

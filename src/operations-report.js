@@ -1,3 +1,5 @@
+import { watchEarthSnapshot } from "./watch-earth.js";
+import { buildDynamicWatchEarth } from "./dynamic-watch-earth.js";
 import { catalogHealthSummary } from "./catalog-health-summary.js";
 import { buildRevalidationQueue } from "./revalidation-queue.js";
 import { catalogReleaseGate } from "./catalog-release-gate.js";
@@ -47,9 +49,14 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
   for(const x of healthAutomation?.outcomeDetails?.inconclusive||[])if(!observationPriority.has(x.id))observationPriority.set(x.id,{boost:60,reason:"INCONCLUSIVE_MEDIA"});
   const queue=buildRevalidationQueue(sources).map(x=>{const overlay=observationPriority.get(x.source.id);return overlay?{...x,priority:x.priority+overlay.boost,reason:[overlay.reason,x.reason].filter(Boolean).join("+")} : x}).sort((a,b)=>b.priority-a.priority||String(a.source.id).localeCompare(String(b.source.id)));
 
+  const watchNow=checkedAt?new Date(checkedAt):new Date();
+  const watchItems=buildDynamicWatchEarth(sources,{limit:20,now:watchNow});
+  const watchSnapshot=watchEarthSnapshot(watchItems,{limit:20,now:watchNow});
+
   return{
     generatedAt:checkedAt||new Date().toISOString(),
     snapshot,
+    watchEarth:{...watchSnapshot,target:20,shortfall:Math.max(0,20-watchSnapshot.count),providerResilient:watchSnapshot.providers>=3||watchSnapshot.count<3},
     health,
     gate:{ready:gate.ready,blockers:gate.blockers,currentHealthy:gate.currentHealthy,currentInsideERN:gate.currentInsideERN,unknown:gate.unknown,rejected:gate.rejected},
     release:{ready:release.ready,blockers:release.blockers,checks:release.checks,evidence:release.evidence},
