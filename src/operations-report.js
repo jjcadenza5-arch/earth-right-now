@@ -1,7 +1,5 @@
 import { watchEarthSnapshot } from "./watch-earth.js";
 import { buildDynamicWatchEarth } from "./dynamic-watch-earth.js";
-import { watchEarthSnapshot } from "./watch-earth.js";
-import { buildDynamicWatchEarth } from "./dynamic-watch-earth.js";
 import { catalogHealthSummary } from "./catalog-health-summary.js";
 import { buildRevalidationQueue } from "./revalidation-queue.js";
 import { catalogReleaseGate } from "./catalog-release-gate.js";
@@ -50,10 +48,6 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
   for(const x of healthAutomation?.outcomeDetails?.failedChecks||[])if(!observationPriority.has(x.id))observationPriority.set(x.id,{boost:80,reason:"FAILED_CHECK"});
   for(const x of healthAutomation?.outcomeDetails?.inconclusive||[])if(!observationPriority.has(x.id))observationPriority.set(x.id,{boost:60,reason:"INCONCLUSIVE_MEDIA"});
   const queue=buildRevalidationQueue(sources).map(x=>{const overlay=observationPriority.get(x.source.id);return overlay?{...x,priority:x.priority+overlay.boost,reason:[overlay.reason,x.reason].filter(Boolean).join("+")} : x}).sort((a,b)=>b.priority-a.priority||String(a.source.id).localeCompare(String(b.source.id)));
-
-  const watchNow=checkedAt?new Date(checkedAt):new Date();
-  const watchItems=buildDynamicWatchEarth(sources,{limit:20,now:watchNow});
-  const watchSnapshot=watchEarthSnapshot(watchItems,{limit:20,now:watchNow});
 
   const watchNow=checkedAt?new Date(checkedAt):new Date();
   const watchItems=buildDynamicWatchEarth(sources,{limit:20,now:watchNow});
