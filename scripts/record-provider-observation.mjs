@@ -7,6 +7,7 @@ const sources=JSON.parse(await readFile(new URL("../data/sources.json",import.me
 const file=new URL("../data/provider-observations.json",import.meta.url);
 let entries=[];try{entries=JSON.parse(await readFile(file,"utf8"));}catch(error){if(error?.code!=="ENOENT")throw error;}
 const httpStatus=Number(httpStatusRaw);
+if(!Number.isInteger(httpStatus)||httpStatus<100||httpStatus>599)throw new Error("HTTP status must be an integer from 100 to 599");
 const entry={id,httpStatus:Number.isInteger(httpStatus)?httpStatus:null,observedAt:new Date().toISOString()};
 if(confirmation)entry.confirmation=confirmation;
 if(failure)entry.failure=failure;
