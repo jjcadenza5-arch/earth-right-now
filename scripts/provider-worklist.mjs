@@ -13,6 +13,6 @@ console.log(JSON.stringify({
  generatedAt:report.generatedAt,
  summary:input?.evidenceDebtSummary||{total:0,degraded:0,unknown:0},
  staleObservationIds:input?.staleObservationIds||[],
- next:worklist.slice(0,20).map(item=>({...item,recordCommand:item.embedUrl?`npm run provider:record -- ${item.id} <http-status> <MEDIA_ENDPOINT|HUMAN_PLAYBACK> "" "<evidence note>"`:null}))
+ next:worklist.slice(0,20).map(item=>({...item,recordCommand:item.embedUrl?`npm run provider:record -- ${item.id} <http-status> <MEDIA_ENDPOINT|HUMAN_PLAYBACK> "" "<evidence note>"`:null,warning:"Do not record HTTP-only page reachability as playback proof."}))
 },null,2));
 if(input?.rejected?.length)process.exitCode=1;
