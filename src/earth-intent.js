@@ -10,10 +10,10 @@ const SYNONYMS={
  golden:["sunrise","sunset","golden hour","dawn","dusk"],
  snow:["snow","snowing","snowfall","snowy"],
  rain:["rain","raining","rainy"],
- local:["local","small place","small places","village","villages","hidden gem","hidden gems","lesser known","off the beaten path"],
+ local:["local","small place","small places","village","villages","hidden gem","hidden gems","lesser known","off the beaten path","ท้องถิ่น","หมู่บ้าน","ที่เล็กๆ","kleiner ort","kleine orte","dorf","dörfer","lokal","village local","petit village","petit endroit","local","pueblo","pueblos","lugar pequeño","local","小さな町","村","地元","小さな場所","小镇","小鎮","村庄","村莊","本地","当地","當地"],
  reference:["photo","photos","image","images","reference","picture","pictures"]
 };
-const CURRENT=["right now","live now","now","live","current","currently","today","tonight","at the moment","at this moment","ตอนนี้","สด"];
+const CURRENT=["right now","live now","now","live","current","currently","today","tonight","at the moment","at this moment","ตอนนี้","สด","jetzt","live jetzt","gerade","maintenant","en direct","ahora","en vivo","今","今すぐ","ライブ","现在","現在","直播"];
 const marks=/[\u0300-\u036f]/g;
 function cleanPunctuation(s){return s.replace(/[!-/:-@[-`{-~]/g," ")}
 export function normalizeEarthText(x){return cleanPunctuation((x||"").toString().normalize("NFC").toLowerCase()).replace(/\s+/g," ").trim()}
