@@ -58,7 +58,7 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
   return{
     generatedAt:checkedAt||new Date().toISOString(),
     snapshot,
-    watchEarth:{...watchSnapshot,...watchSequence,target:20,shortfall:Math.max(0,20-watchSnapshot.count),providerResilient:watchSnapshot.providers>=3||watchSnapshot.count<3},
+    watchEarth:{...watchSnapshot,...watchSequence,target:20,shortfall:Math.max(0,20-watchSnapshot.count),providerResilient:watchSequence.resilience==="DIVERSE"},
     health,
     gate:{ready:gate.ready,blockers:gate.blockers,currentHealthy:gate.currentHealthy,currentInsideERN:gate.currentInsideERN,unknown:gate.unknown,rejected:gate.rejected},
     release:{ready:release.ready,blockers:release.blockers,checks:release.checks,evidence:release.evidence},

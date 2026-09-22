@@ -10,4 +10,6 @@ assert.equal(r.watchEarth.shortfall,20-r.watchEarth.count);
 assert.ok(r.watchEarth.providers>=0);
 assert.ok(r.watchEarth.embedShare>=0&&r.watchEarth.embedShare<=1);
 assert.equal(typeof r.watchEarth.providerResilient,"boolean");
+assert.ok(["DIVERSE","CONCENTRATED","LIMITED"].includes(r.watchEarth.resilience));
+assert.equal(r.watchEarth.providerResilient,r.watchEarth.resilience==="DIVERSE");
 console.log("ERN Watch Earth operations resilience checks passed");
