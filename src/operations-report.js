@@ -26,7 +26,7 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
       definitiveFailures:report.proposals.filter(x=>x.outcome==="DEFINITIVE_FAILURE").length,
       failedChecks:report.proposals.filter(x=>x.outcome==="FAILED_CHECK").length,
       outcomeDetails:{
-        inconclusive:report.proposals.filter(x=>x.outcome==="INCONCLUSIVE").map(x=>({id:x.id,observedAt:x.observedAt,reason:x.reason})),
+        inconclusive:report.proposals.filter(x=>x.outcome==="INCONCLUSIVE").map(x=>({id:x.id,observedAt:x.observedAt,reason:effectiveHealthObservations?.[x.id]?.reason||"Current media not confirmed"})),
         definitiveFailures:report.proposals.filter(x=>x.outcome==="DEFINITIVE_FAILURE").map(x=>({id:x.id,observedAt:x.observedAt,reason:x.reason})),
         failedChecks:report.proposals.filter(x=>x.outcome==="FAILED_CHECK").map(x=>({id:x.id,observedAt:x.observedAt,reason:x.reason}))
       },
