@@ -10,3 +10,11 @@ r=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",htt
 assert.equal(r.healthAutomation.proposals,1);
 assert.equal(r.healthAutomation.complete,true);assert.equal(r.healthAutomation.confirmedHealthy,1);assert.equal(r.healthAutomation.inconclusive,0);assert.deepEqual(r.healthAutomation.outcomeDetails.inconclusive,[]);
 console.log("provider observations operations integration passed");
+
+const stale=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-19T11:59:59.000Z"}]});
+assert.ok(stale.healthAutomation.providerInput.staleObservationIds.includes("cam-a"));
+assert.equal(stale.healthAutomation.confirmedHealthy,0);
+assert.ok(stale.healthAutomation.invalidObservations.some(x=>x.id==="cam-a"&&x.reason==="STALE_OBSERVATION"));
+assert.equal(stale.healthAutomation.complete,false);
+assert.ok(stale.healthAutomation.issues.includes("INVALID_OBSERVATIONS"));
+console.log("stale provider observation expiry passed");
