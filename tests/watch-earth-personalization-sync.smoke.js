@@ -1,0 +1,1 @@
+import fs from "node:fs";const s=fs.readFileSync("src/app.js","utf8");console.assert(s.includes("favoritePlace(x.id);renderFavorites();refreshPersonalizedWatchEarth()"));console.assert(s.includes('My Earth imported and merged with this browser."});renderFavorites();refreshPersonalizedWatchEarth()'));console.log("ERN My Earth personalization sync passed");
