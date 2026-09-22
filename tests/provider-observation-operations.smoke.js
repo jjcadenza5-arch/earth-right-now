@@ -14,7 +14,7 @@ console.log("provider observations operations integration passed");
 
 const stale=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-19T11:59:59.000Z"}]});
 assert.ok(stale.healthAutomation.providerInput.staleObservationIds.includes("cam-a"));
-assert.deepEqual(stale.healthAutomation.providerInput.evidenceDebt,["cam-a"]);
+assert.equal(stale.healthAutomation.providerInput.evidenceDebt[0].id,"cam-a");
 assert.equal(stale.healthAutomation.confirmedHealthy,0);
 assert.ok(stale.healthAutomation.invalidObservations.some(x=>x.id==="cam-a"&&x.reason==="STALE_OBSERVATION"));
 assert.equal(stale.healthAutomation.complete,false);
@@ -23,5 +23,12 @@ console.log("stale provider observation expiry passed");
 
 const external={...source,id:"external-a",playback:"EXTERNAL"};
 const scoped=operationsReport([source,external],{checkedAt:now,providerObservations:[]});
-assert.deepEqual(scoped.healthAutomation.providerInput.evidenceDebt,["cam-a"]);
+assert.equal(scoped.healthAutomation.providerInput.evidenceDebt.length,1);
+assert.equal(scoped.healthAutomation.providerInput.evidenceDebt[0].id,"cam-a");
 console.log("provider evidence debt scope passed");
+
+const degraded={...source,id:"degraded-a",health:"DEGRADED",checkedAt:"2026-09-19T00:00:00Z"};
+const prioritized=operationsReport([source,degraded],{checkedAt:now,providerObservations:[]});
+assert.equal(prioritized.healthAutomation.providerInput.evidenceDebt[0].id,"degraded-a");
+assert.equal(prioritized.healthAutomation.providerInput.evidenceDebt[0].priority,100);
+console.log("provider evidence debt priority passed");
