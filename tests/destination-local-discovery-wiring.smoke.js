@@ -1,0 +1,1 @@
+import assert from "node:assert/strict";import fs from "node:fs";const s=fs.readFileSync("src/destination-search.js","utf8");assert.match(s,/promote:!String\(query\|\|""\)\.trim\(\)&&ranked\.length>=4/);assert.match(s,/discoveryMix\(ranked/);console.log("ERN broad destination discovery wiring passed");
