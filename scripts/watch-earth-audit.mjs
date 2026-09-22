@@ -26,6 +26,7 @@ for(const row of rows){
   if(row.duplicateIds)violations.push(`${row.utc}: ${row.duplicateIds} duplicate source id(s)`);
   if(row.previews)violations.push(`${row.utc}: ${row.previews} PREVIEW item(s) leaked into Watch Earth`);
   if(row.places!==row.count)violations.push(`${row.utc}: journey repeats a place before reaching its available breadth`);
+  if(row.count>=3&&row.resilience==="LIMITED")violations.push(`${row.utc}: provider resilience diagnostics unexpectedly limited for a full journey`);
 }
 console.log(JSON.stringify({anchorCheck:anchor.toISOString(),audits:rows,violations},null,2));
 if(violations.length){
