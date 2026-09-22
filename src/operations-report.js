@@ -14,8 +14,12 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
   const providerReview=(sources||[]).map(source=>({id:source.id,...providerHostIntegrity(source)})).filter(x=>!x.ok||x.crossProvider);
   const providerBatch=providerObservations===null?null:providerObservationBatch(providerObservations,{observedAt:checkedAt||undefined,knownSourceIds:(sources||[]).map(x=>x.id)});
   const effectiveHealthObservations=healthObservations??providerBatch?.observations??null;
+  const observationNow=Date.parse(checkedAt||new Date().toISOString());
+  const observationMaxAgeMs=72*60*60*1000;
+  const staleObservationIds=effectiveHealthObservations===null?[]:Object.entries(effectiveHealthObservations).filter(([,x])=>{const t=Date.parse(x?.observedAt||"");return !Number.isFinite(t)||observationNow-t>observationMaxAgeMs}).map(([id])=>id);
+  const currentHealthObservations=effectiveHealthObservations===null?null:Object.fromEntries(Object.entries(effectiveHealthObservations).filter(([id])=>!staleObservationIds.includes(id)));
   const healthAutomation=effectiveHealthObservations===null?null:(()=>{
-    const report=healthCheckReport(sources,effectiveHealthObservations,{checkedAt:checkedAt||undefined});
+    const report=healthCheckReport(sources,currentHealthObservations,{checkedAt:checkedAt||undefined});
     const audit=healthReportAudit(report);
     return{
       complete:audit.ok,
@@ -26,7 +30,7 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
       definitiveFailures:report.proposals.filter(x=>x.outcome==="DEFINITIVE_FAILURE").length,
       failedChecks:report.proposals.filter(x=>x.outcome==="FAILED_CHECK").length,
       outcomeDetails:{
-        inconclusive:report.proposals.filter(x=>x.outcome==="INCONCLUSIVE").map(x=>({id:x.id,observedAt:x.observedAt,reason:effectiveHealthObservations?.[x.id]?.reason||"Current media not confirmed"})),
+        inconclusive:report.proposals.filter(x=>x.outcome==="INCONCLUSIVE").map(x=>({id:x.id,observedAt:x.observedAt,reason:currentHealthObservations?.[x.id]?.reason||"Current media not confirmed"})),
         definitiveFailures:report.proposals.filter(x=>x.outcome==="DEFINITIVE_FAILURE").map(x=>({id:x.id,observedAt:x.observedAt,reason:x.reason})),
         failedChecks:report.proposals.filter(x=>x.outcome==="FAILED_CHECK").map(x=>({id:x.id,observedAt:x.observedAt,reason:x.reason}))
       },
@@ -34,7 +38,7 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
       unobserved:report.unobserved,
       unknownObservationIds:report.unknownObservationIds,
       invalidObservations:report.invalidObservations,
-      providerInput:providerBatch?{accepted:providerBatch.total,rejected:providerBatch.rejected}:null
+      providerInput:providerBatch?{accepted:providerBatch.total,rejected:providerBatch.rejected,staleObservationIds}:null
     };
   })();
 
