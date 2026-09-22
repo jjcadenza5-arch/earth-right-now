@@ -23,5 +23,5 @@ export function buildDynamicWatchEarth(sources,{limit=20,now=new Date()}={}){
   const broad=broadenWatchEarthRegions(unique,{limit:Math.max(limit*2,40),maxPerRegion:6});
   const delivery=diversifyDeliveryHosts(broad,{limit:Math.max(limit*2,40),maxPerHost:4});
   const providers=diversifyWatchEarthProviders(delivery,{limit:Math.max(limit*2,40),maxPerProvider:6});
-  return interleaveWatchEarthProviders(arrangeWatchEarthJourney(balanceWatchEarthMoments(providers,{limit,now}),{now}));
+  return interleaveWatchEarthProviders(arrangeWatchEarthJourney(balanceWatchEarthMoments(providers,{limit,now}),{now}),{now});
 }
