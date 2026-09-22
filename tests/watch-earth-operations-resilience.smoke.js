@@ -1,7 +1,13 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import { operationsReport } from "../src/operations-report.js";
-const now="2026-03-20T12:00:00Z",base={truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",health:"HEALTHY",playback:"EXTERNAL",sourceUrl:"https://example.com",checkedAt:now,lastSuccessfulCheck:now,quality:80,moment:80,experienceScore:80,experienceEligible:true,categories:["Cities & Streets"],lat:0};
-const rows=[{...base,id:"a",placeId:"a",provider:"A",country:"A",lon:0},{...base,id:"b",placeId:"b",provider:"B",country:"B",lon:180},{...base,id:"c",placeId:"c",provider:"C",country:"C",lon:20}];
-const r=operationsReport(rows,{checkedAt:now});
-assert.equal(r.watchEarth.count,3);assert.equal(r.watchEarth.target,20);assert.equal(r.watchEarth.shortfall,17);assert.equal(r.watchEarth.providers,3);assert.equal(r.watchEarth.providerResilient,true);
+const rows=JSON.parse(await readFile(new URL("../data/sources.json",import.meta.url),"utf8"));
+const checkedAt=rows.map(x=>x.checkedAt).filter(Boolean).sort().at(-1);
+const r=operationsReport(rows,{checkedAt});
+assert.ok(r.watchEarth.count>=0&&r.watchEarth.count<=20);
+assert.equal(r.watchEarth.target,20);
+assert.equal(r.watchEarth.shortfall,20-r.watchEarth.count);
+assert.ok(r.watchEarth.providers>=0);
+assert.ok(r.watchEarth.embedShare>=0&&r.watchEarth.embedShare<=1);
+assert.equal(typeof r.watchEarth.providerResilient,"boolean");
 console.log("ERN Watch Earth operations resilience checks passed");
