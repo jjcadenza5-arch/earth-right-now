@@ -5,7 +5,7 @@ const source={id:"cam-a",placeId:"p",title:"A",provider:"P",country:"T",truth:"L
 let r=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200}]});
 assert.equal(r.healthAutomation.providerInput.accepted,1);
 assert.equal(r.healthAutomation.proposals,1);
-assert.equal(r.healthAutomation.changes,0);assert.equal(r.healthAutomation.inconclusive,1);assert.equal(r.healthAutomation.confirmedHealthy,0);assert.deepEqual(r.healthAutomation.outcomeDetails.inconclusive,[{id:"cam-a",observedAt:now}]);
+assert.equal(r.healthAutomation.changes,0);assert.equal(r.healthAutomation.inconclusive,1);assert.equal(r.healthAutomation.confirmedHealthy,0);assert.deepEqual(r.healthAutomation.outcomeDetails.inconclusive,[{id:"cam-a",observedAt:now,reason:"Current media not confirmed"}]);
 r=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200,confirmation:"MEDIA_ENDPOINT"}]});
 assert.equal(r.healthAutomation.proposals,1);
 assert.equal(r.healthAutomation.complete,true);assert.equal(r.healthAutomation.confirmedHealthy,1);assert.equal(r.healthAutomation.inconclusive,0);assert.deepEqual(r.healthAutomation.outcomeDetails.inconclusive,[]);
