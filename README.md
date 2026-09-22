@@ -22,6 +22,6 @@ The smoke suite protects source truth, currentness, playback behavior, navigatio
 
 ## Publication
 
-A green CI run is necessary engineering evidence, but it is not permission to publish. ERN publication remains blocked until the catalog is current enough and dated real-world evidence exists for browser, mobile, provider playback, accessibility, performance and rollback checks.
+A green CI run is necessary engineering evidence and may deploy the existing public **beta verification environment**, but it is not production-release certification. Production/release promotion remains blocked until the catalog is current enough and dated real-world evidence exists for browser, mobile, provider playback, accessibility, performance and rollback checks for the exact candidate commit.
 
 See `docs/RELEASE_EVIDENCE.md`, `docs/BETA_DEPLOYMENT_HANDOFF.md` and `docs/BUILD_STATE.md` before release.

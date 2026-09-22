@@ -1,6 +1,6 @@
 # Beta deployment handoff
 
-ERN's engineering path to a browser-accessible beta is now deliberately narrow.
+ERN already has a GitHub Pages public beta verification path. The remaining release path is deliberately narrow: keep the beta deployable while collecting auditable real-world evidence for an exact candidate before any production/release promotion.
 
 ## What is already ready
 
@@ -17,9 +17,9 @@ ERN's engineering path to a browser-accessible beta is now deliberately narrow.
 
 A candidate host must not rewrite provider URLs, proxy third-party live media, inject affiliate identifiers, add tracking, or weaken ERN's source labels. Business-camera submission transport remains disabled until a real reviewed service is configured.
 
-## First browser-accessible candidate
+## Public beta candidate
 
-The first deployed candidate is a verification environment, not an automatic production launch. Record its HTTPS origin and exact release manifest. Then perform the six checks in `docs/RELEASE_EVIDENCE.md`.
+A deployed GitHub Pages build is a verification environment, not automatic production-release certification. Record the tested HTTPS origin and exact candidate commit/release manifest, then perform the six checks in `docs/RELEASE_EVIDENCE.md`. Do not infer provider playback from page reachability, and do not claim a custom domain is serving correctly until it has been independently verified.
 
 Recommended order:
 
@@ -34,4 +34,4 @@ Only evidence for the exact tested candidate should be recorded.
 
 ## Current human boundary
 
-Creating a public or externally reachable deployment changes ERN from a private repository artifact into a network-accessible application. Host/account selection and that exposure are therefore an explicit owner decision. Engineering preparation should stop short of silently enabling a public site.
+The public beta exposure decision has already been made. Engineering may keep the existing GitHub Pages beta deployable, but real browser/mobile/provider-playback/accessibility/performance/rollback evidence must still come from an actual tested candidate and must not be fabricated from CI or HTTP reachability. Any new host, commercial activation, account authorization, or materially different public exposure remains an explicit owner decision.
