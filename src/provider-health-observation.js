@@ -17,7 +17,7 @@ export function providerHealthObservation(input,{observedAt=new Date().toISOStri
   providerConfirmed,
   definitiveFailure,
   evidenceKind:confirmation||failure||(httpStatus!==null?"HTTP_ONLY":"INCONCLUSIVE"),
-  reason:definitiveFailure?String(input.reason||"Provider/media confirmed unavailable").trim():providerConfirmed?null:String(input.reason||(httpStatus!==null?"Page reachable but current media not confirmed":"Current media not confirmed")).trim()
+  reason:definitiveFailure?String(input.reason||"Provider/media confirmed unavailable").trim():providerConfirmed?null:String(input.reason||"Current media not confirmed").trim()
  };
 }
 
