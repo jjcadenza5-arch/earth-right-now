@@ -14,4 +14,5 @@ console.log("provider observations operations integration passed");
 const stale=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-18T12:00:00.000Z"}]});
 assert.ok(stale.healthAutomation.providerInput.staleObservationIds.includes("cam-a"));
 assert.equal(stale.healthAutomation.confirmedHealthy,0);
-assert.ok(stale.healthAutomation.unobserved.includes("cam-a"));\nconsole.log("stale provider observation expiry passed");
+assert.ok(stale.healthAutomation.unobserved.includes("cam-a"));
+console.log("stale provider observation expiry passed");
