@@ -1,1 +1,0 @@
-export function surfaceFromElement(el){return el?.closest("section,header")?.id||"home"}export function focusSurface(id){const el=document.getElementById(id);if(!el)return false;requestAnimationFrame(()=>el.focus?.({preventScroll:true}));return true}

@@ -1,1 +1,1 @@
-import fs from "node:fs";for(const p of ["../src/app.js","../src/navigation-state.js"]){const x=fs.readFileSync(new URL(p,import.meta.url),"utf8");console.assert(!x.includes("scrollIntoView"));console.assert(!x.includes("scrollTo("))}console.log("ERN navigation no-scroll smoke checks passed");
+import fs from "node:fs";const x=fs.readFileSync(new URL("../src/app.js",import.meta.url),"utf8");console.assert(!x.includes("scrollIntoView"));console.assert(!x.includes("scrollTo("));console.log("ERN navigation no-scroll smoke checks passed");
