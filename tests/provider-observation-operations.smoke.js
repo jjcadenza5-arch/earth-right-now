@@ -11,7 +11,7 @@ assert.equal(r.healthAutomation.proposals,1);
 assert.equal(r.healthAutomation.complete,true);assert.equal(r.healthAutomation.confirmedHealthy,1);assert.equal(r.healthAutomation.inconclusive,0);assert.deepEqual(r.healthAutomation.outcomeDetails.inconclusive,[]);
 console.log("provider observations operations integration passed");
 
-const stale=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-18T12:00:00.000Z"}]});
+const stale=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-18T11:59:59.000Z"}]});
 assert.ok(stale.healthAutomation.providerInput.staleObservationIds.includes("cam-a"));
 assert.equal(stale.healthAutomation.confirmedHealthy,0);
 assert.ok(stale.healthAutomation.unobserved.includes("cam-a"));
