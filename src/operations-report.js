@@ -8,7 +8,7 @@ import { providerHostIntegrity } from "./provider-host-integrity.js";
 import { providerObservationBatch } from "./provider-observation-batch.js";
 
 export function operationsReport(sources,{queueLimit=20,catalogOptions={},releaseEvidence={},healthObservations=null,providerObservations=null,checkedAt=null}={}){
-  const health=catalogHealthSummary(sources),queue=buildRevalidationQueue(sources),gate=catalogReleaseGate(sources,catalogOptions);
+  const health=catalogHealthSummary(sources),gate=catalogReleaseGate(sources,catalogOptions);
   const release=releaseReadiness(sources,{...releaseEvidence,catalogOptions});
   const snapshot=catalogSnapshot(sources,{checkedAt});
   const providerReview=(sources||[]).map(source=>({id:source.id,...providerHostIntegrity(source)})).filter(x=>!x.ok||x.crossProvider);
@@ -37,6 +37,11 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
       providerInput:providerBatch?{accepted:providerBatch.total,rejected:providerBatch.rejected}:null
     };
   })();
+
+  const observationPriority=new Map((healthAutomation?.outcomeDetails?.definitiveFailures||[]).map(x=>[x.id,{boost:100,reason:"DEFINITIVE_FAILURE"}]));
+  for(const x of healthAutomation?.outcomeDetails?.failedChecks||[])if(!observationPriority.has(x.id))observationPriority.set(x.id,{boost:80,reason:"FAILED_CHECK"});
+  for(const x of healthAutomation?.outcomeDetails?.inconclusive||[])if(!observationPriority.has(x.id))observationPriority.set(x.id,{boost:60,reason:"INCONCLUSIVE_MEDIA"});
+  const queue=buildRevalidationQueue(sources).map(x=>{const overlay=observationPriority.get(x.source.id);return overlay?{...x,priority:x.priority+overlay.boost,reason:[overlay.reason,x.reason].filter(Boolean).join("+")} : x}).sort((a,b)=>b.priority-a.priority||String(a.source.id).localeCompare(String(b.source.id)));
 
   return{
     generatedAt:checkedAt||new Date().toISOString(),
