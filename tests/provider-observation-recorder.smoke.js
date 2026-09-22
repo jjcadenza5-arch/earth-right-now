@@ -6,4 +6,5 @@ console.assert(s.includes("providerObservationBatch"));
 console.assert(s.includes("knownSourceIds"));
 console.assert(s.includes("Observation rejected"));
 console.assert(s.includes("entries.filter(x=>x.id!==id)"));
+console.assert(s.includes("httpStatus<100||httpStatus>599"),"recorder must reject impossible HTTP status values");
 console.log("provider observation recorder smoke passed");
