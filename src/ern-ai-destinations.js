@@ -8,5 +8,5 @@ export function rankDestinationsForIntent(sources,query="",options={}){
   const ai=Math.min(...(a.sources||[]).map(s=>sourcePosition.get(s.id)??Infinity)),bi=Math.min(...(b.sources||[]).map(s=>sourcePosition.get(s.id)??Infinity));
   return ai-bi||destinationRank(b,options)-destinationRank(a,options);
  });
- return discoveryMix(ordered,{limit:ordered.length});
+ return discoveryMix(ordered,{limit:ordered.length,promote:ordered.length>=4});
 }
