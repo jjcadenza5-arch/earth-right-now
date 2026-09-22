@@ -4,5 +4,8 @@ const s=fs.readFileSync("scripts/operations-status.mjs","utf8");
 console.assert(pkg.scripts["operations:status"]==="node scripts/operations-status.mjs");
 console.assert(s.includes("providerReview"));
 console.assert(s.includes("healthAutomation:report.healthAutomation"));
+console.assert(s.includes("provider-observations.json"));
+console.assert(s.includes("providerObservations"));
+console.assert(s.includes("providerInput?.rejected?.length"));
 console.assert(s.includes("report.providerReview.unsafe.length"));
 console.log("operations status CLI smoke passed");
