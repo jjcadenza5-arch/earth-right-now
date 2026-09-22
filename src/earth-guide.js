@@ -14,5 +14,5 @@ export function earthGuideFollowUps(result){
  if(!intent.wantsCurrent)out.push("Show me what is live right now");
  if(!intent.intents.includes("beautiful"))out.push("Make it peaceful and beautiful");
  if(!intent.intents.includes("night")&&!intent.intents.includes("golden"))out.push("Show me sunrise, sunset or golden hour now");
- out.push("Show me somewhere completely different");return out.slice(0,3);
+ out.push("Show me somewhere completely different");out.push("Take me somewhere small and local");return out.slice(0,3);
 }
