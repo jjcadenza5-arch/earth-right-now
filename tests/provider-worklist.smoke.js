@@ -3,4 +3,5 @@ const s=fs.readFileSync(new URL("../scripts/provider-worklist.mjs",import.meta.u
 console.assert(s.includes("evidenceDebtSummary"),"worklist must expose evidence debt summary");
 console.assert(s.includes("staleObservationIds"),"worklist must expose stale observation ids");
 console.assert(s.includes("evidenceDebt"),"worklist must use the operations evidence debt contract");
+console.assert(s.includes("provider:record"),"worklist must include evidence recording guidance");
 console.log("provider worklist smoke passed");
