@@ -15,6 +15,7 @@ console.log("provider observations operations integration passed");
 const stale=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-19T11:59:59.000Z"}]});
 assert.ok(stale.healthAutomation.providerInput.staleObservationIds.includes("cam-a"));
 assert.equal(stale.healthAutomation.providerInput.evidenceDebt[0].id,"cam-a");
+assert.equal(stale.healthAutomation.providerInput.evidenceDebt[0].reason,"STALE_EVIDENCE");
 assert.equal(stale.healthAutomation.confirmedHealthy,0);
 assert.ok(stale.healthAutomation.invalidObservations.some(x=>x.id==="cam-a"&&x.reason==="STALE_OBSERVATION"));
 assert.equal(stale.healthAutomation.complete,false);
@@ -34,5 +35,6 @@ assert.equal(prioritized.healthAutomation.providerInput.evidenceDebt[0].priority
 assert.equal(prioritized.healthAutomation.providerInput.evidenceDebtSummary.total,2);
 assert.equal(prioritized.healthAutomation.providerInput.evidenceDebtSummary.degraded,1);
 assert.equal(prioritized.healthAutomation.providerInput.evidenceDebt[0].action,"REPROVE_PLAYBACK");
+assert.equal(prioritized.healthAutomation.providerInput.evidenceDebt[0].reason,"DEGRADED_WITHOUT_CURRENT_EVIDENCE");
 assert.deepEqual(prioritized.healthAutomation.providerInput.evidenceDebt[0].requiredEvidence,["MEDIA_ENDPOINT","HUMAN_PLAYBACK"]);
 console.log("provider evidence debt priority passed");
