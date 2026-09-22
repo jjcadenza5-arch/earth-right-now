@@ -10,6 +10,7 @@ const SYNONYMS={
  golden:["sunrise","sunset","golden hour","dawn","dusk"],
  snow:["snow","snowing","snowfall","snowy"],
  rain:["rain","raining","rainy"],
+ local:["local","small place","small places","village","villages","hidden gem","hidden gems","lesser known","off the beaten path"],
  reference:["photo","photos","image","images","reference","picture","pictures"]
 };
 const CURRENT=["right now","live now","now","live","current","currently","today","tonight","at the moment","at this moment","ตอนนี้","สด"];
