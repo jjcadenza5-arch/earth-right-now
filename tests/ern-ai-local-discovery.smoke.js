@@ -5,6 +5,6 @@ const rows=[{title:"Iconic landmark",region:"Major city"},{title:"World famous s
 const mixed=discoveryMix(rows,{limit:6,promote:true});assert.equal(mixed.length,6);assert.match(mixed[0].title,/Local village market/);assert.match(mixed[1].title,/Quiet marina/);assert.deepEqual(discoveryMix(rows,{limit:3,promote:false}),rows.slice(0,3));
 const now=new Date("2026-09-22T12:00:00Z");
 const base={truth:"PREVIEW",playback:"PREVIEW",permission:"LINK_ONLY",health:"HEALTHY",sourceUrl:"https://example.test/reference.jpg",checkedAt:"2026-09-22T11:00:00Z"};
-const sources=[{...base,id:"generic",placeId:"generic-place",title:"Local beach",story:"beach"},{...base,id:"village",placeId:"village-place",title:"Riverside village market",region:"Small town",story:"local market waterfront",sourceUrl:"https://example.test/village.jpg"}];
+const sources=[{...base,id:"generic",placeId:"generic-place",title:"Quiet beach",story:"local beach"},{...base,id:"village",placeId:"village-place",title:"Riverside village market",region:"Small town",story:"local market waterfront",sourceUrl:"https://example.test/village.jpg"}];
 const rankedLocal=rankForIntent(sources,"somewhere local",{now});assert.equal(rankedLocal[0]?.id,"village","stronger local context should rank ahead of generic local wording");
 console.log("ERN local discovery relevance checks passed");
