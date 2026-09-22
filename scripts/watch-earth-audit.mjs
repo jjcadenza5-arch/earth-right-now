@@ -1,5 +1,6 @@
 import fs from "node:fs";
-import { watchEarthSnapshot,buildWatchEarth,watchEarthEligible } from "../src/watch-earth.js";
+import { watchEarthSnapshot,watchEarthEligible } from "../src/watch-earth.js";
+import { buildDynamicWatchEarth } from "../src/dynamic-watch-earth.js";
 
 const sources=JSON.parse(fs.readFileSync(new URL("../data/sources.json",import.meta.url),"utf8"));
 const checks=sources.flatMap(s=>[s.lastSuccessfulCheck,s.checkedAt]).map(Date.parse).filter(Number.isFinite);
@@ -11,10 +12,10 @@ const anchor=new Date(Math.max(...checks)),day=anchor.toISOString().slice(0,10);
 const hours=[0,6,12,18];
 const rows=hours.map(hour=>{
   const now=new Date(`${day}T${String(hour).padStart(2,"0")}:00:00Z`);
-  const items=buildWatchEarth(sources,{limit:20,now}),snap=watchEarthSnapshot(sources,{limit:20,now});
+  const items=buildDynamicWatchEarth(sources,{limit:20,now}),snap=watchEarthSnapshot(items,{limit:20,now});
   const ids=items.map(s=>s.id),uniqueIds=new Set(ids),eligible=items.filter(s=>watchEarthEligible(s,{now})).length;
   const previews=items.filter(s=>s.truth==="PREVIEW").length;
-  return{utc:now.toISOString(),...snap,eligible,duplicateIds:ids.length-uniqueIds.size,previews,titles:items.map(s=>s.title)};
+  return{utc:now.toISOString(),...snap,target:20,shortfall:Math.max(0,20-items.length),eligible,duplicateIds:ids.length-uniqueIds.size,previews,titles:items.map(s=>s.title)};
 });
 const violations=[];
 for(const row of rows){
