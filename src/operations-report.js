@@ -15,11 +15,11 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
   const providerBatch=providerObservations===null?null:providerObservationBatch(providerObservations,{observedAt:checkedAt||undefined,knownSourceIds:(sources||[]).map(x=>x.id)});
   const effectiveHealthObservations=healthObservations??providerBatch?.observations??null;
   const observationNow=Date.parse(checkedAt||new Date().toISOString());
-  const observationMaxAgeMs=72*60*60*1000;
+  const observationMaxAgeMs=24*60*60*1000;
   const staleObservationIds=effectiveHealthObservations===null?[]:Object.entries(effectiveHealthObservations).filter(([,x])=>{const t=Date.parse(x?.observedAt||"");return !Number.isFinite(t)||observationNow-t>observationMaxAgeMs}).map(([id])=>id);
   const currentHealthObservations=effectiveHealthObservations===null?null:Object.fromEntries(Object.entries(effectiveHealthObservations).filter(([id])=>!staleObservationIds.includes(id)));
   const healthAutomation=effectiveHealthObservations===null?null:(()=>{
-    const report=healthCheckReport(sources,currentHealthObservations,{checkedAt:checkedAt||undefined});
+    const report=healthCheckReport(sources,currentHealthObservations,{checkedAt:checkedAt||undefined,maxObservationAgeHours:24});
     const audit=healthReportAudit(report);
     return{
       complete:audit.ok,
