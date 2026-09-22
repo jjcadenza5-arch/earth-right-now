@@ -10,3 +10,8 @@ r=operationsReport([source],{checkedAt:now,providerObservations:[{id:"cam-a",htt
 assert.equal(r.healthAutomation.proposals,1);
 assert.equal(r.healthAutomation.complete,true);assert.equal(r.healthAutomation.confirmedHealthy,1);assert.equal(r.healthAutomation.inconclusive,0);assert.deepEqual(r.healthAutomation.outcomeDetails.inconclusive,[]);
 console.log("provider observations operations integration passed");
+
+const stale=operationsReport(sources,{checkedAt:now,providerObservations:[{id:"cam-a",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-18T00:00:00.000Z"}]});
+console.assert(stale.healthAutomation.providerInput.staleObservationIds.includes("cam-a"));
+console.assert(stale.healthAutomation.confirmedHealthy===0);
+console.assert(stale.healthAutomation.unobserved.includes("cam-a"));
