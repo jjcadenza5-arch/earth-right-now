@@ -1,0 +1,10 @@
+import assert from "node:assert/strict";
+import { diversifyWatchEarthProviders } from "../src/watch-earth-provider-diversity.js";
+const rows=[...Array.from({length:8},(_,i)=>({id:"a"+i,provider:"A"})),...Array.from({length:4},(_,i)=>({id:"b"+i,provider:"B"}))];
+const out=diversifyWatchEarthProviders(rows,{limit:8,maxPerProvider:4});
+assert.equal(out.length,8);
+assert.equal(out.filter(x=>x.provider==="A").length,4);
+assert.equal(out.filter(x=>x.provider==="B").length,4);
+const sparse=diversifyWatchEarthProviders(rows.slice(0,6),{limit:6,maxPerProvider:4});
+assert.equal(sparse.length,6,"provider cap must relax rather than shrink a truthful journey");
+console.log("ERN Watch Earth provider diversity checks passed");
