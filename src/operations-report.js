@@ -1,3 +1,4 @@
+import { watchEarthSequenceDiagnostics } from "./watch-earth-sequence-diagnostics.js";
 import { watchEarthSnapshot } from "./watch-earth.js";
 import { buildDynamicWatchEarth } from "./dynamic-watch-earth.js";
 import { catalogHealthSummary } from "./catalog-health-summary.js";
@@ -52,11 +53,12 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
   const watchNow=checkedAt?new Date(checkedAt):new Date();
   const watchItems=buildDynamicWatchEarth(sources,{limit:20,now:watchNow});
   const watchSnapshot=watchEarthSnapshot(watchItems,{limit:20,now:watchNow});
+  const watchSequence=watchEarthSequenceDiagnostics(watchItems);
 
   return{
     generatedAt:checkedAt||new Date().toISOString(),
     snapshot,
-    watchEarth:{...watchSnapshot,target:20,shortfall:Math.max(0,20-watchSnapshot.count),providerResilient:watchSnapshot.providers>=3||watchSnapshot.count<3},
+    watchEarth:{...watchSnapshot,...watchSequence,target:20,shortfall:Math.max(0,20-watchSnapshot.count),providerResilient:watchSnapshot.providers>=3||watchSnapshot.count<3},
     health,
     gate:{ready:gate.ready,blockers:gate.blockers,currentHealthy:gate.currentHealthy,currentInsideERN:gate.currentInsideERN,unknown:gate.unknown,rejected:gate.rejected},
     release:{ready:release.ready,blockers:release.blockers,checks:release.checks,evidence:release.evidence},
