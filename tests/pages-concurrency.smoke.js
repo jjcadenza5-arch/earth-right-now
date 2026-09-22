@@ -1,0 +1,1 @@
+import fs from "node:fs";const s=fs.readFileSync(".github/workflows/pages.yml","utf8");console.assert(/group: pages[\s\S]*cancel-in-progress: true/.test(s),"Pages must cancel superseded deployments");console.log("Pages deployment concurrency guard passed");
