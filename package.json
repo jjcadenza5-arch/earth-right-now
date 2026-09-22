@@ -19,7 +19,8 @@
     "catalog:fallbacks": "node scripts/provider-fallback-status.mjs",
     "build:destinations": "node scripts/build-destination-pages.mjs",
     "watch-earth:audit": "node scripts/watch-earth-audit.mjs",
-    "operations:status": "node scripts/operations-status.mjs"
+    "operations:status": "node scripts/operations-status.mjs",
+    "provider:record": "node scripts/record-provider-observation.mjs"
   },
   "engines": {
     "node": ">=20"
