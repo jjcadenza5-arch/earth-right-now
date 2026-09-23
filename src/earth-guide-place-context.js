@@ -1,3 +1,4 @@
+import { guideCopy } from "./earth-guide-l10n.js";
 const PLACE_CONTEXT_PATTERNS=[
  {re:/^(?:what(?:['’]s| is)|show me|anything|what else is) nearby\??$/i,type:"NEARBY"},
  {re:/^(?:what(?:['’]s| is)|show me|anything|what else is) around here\??$/i,type:"NEARBY"},
@@ -10,9 +11,7 @@ export function earthGuidePlaceAction(query,{placeId=null}={}){
  const q=String(query||"").trim();if(!placeId||!q)return null;
  const hit=PLACE_CONTEXT_PATTERNS.find(x=>x.re.test(q));return hit?{type:hit.type,placeId}:null;
 }
-export function earthGuidePlaceFollowUps(place){
- if(!place?.id)return[];return["Show me now","What’s nearby?","Where could I stay?"];
-}
+export function earthGuidePlaceFollowUps(place,{language="en"}={}){if(!place?.id)return[];return[...guideCopy(language).placeFollow]}
 export function earthGuideContextPlace(query,items=[]){
  const rows=(items||[]).filter(x=>x?.id);if(rows.length===1)return rows[0];
  const q=norm(query);if(!q)return null;
