@@ -1,3 +1,10 @@
+## 2026-09-23 — Atlas coordinate provenance tranche C
+- Added conservative coordinate provenance to 13 current/high-value destinations without changing their existing map positions.
+- EarthCam destination pins are explicitly PLACE_REFERENCE rather than CAMERA_EXACT; Kīlauea and Lake Lucerne are REGION_REFERENCE.
+- Kīlauea provenance now points to the official USGS Kīlauea page, whose quick facts publish the same reference latitude/longitude already used by ERN.
+- Zermatt and St. Moritz retain place-level provenance only; webcam hardware positions are not inferred.
+- Added regression coverage for every source in this tranche.
+
 ## 2026-09-23 — Consolidated maintenance debt
 - Operations status now carries one maintenance block combining source revalidation and Living Atlas coordinate/provenance debt.
 - Atlas maintenance distinguishes unmapped sources from mapped legacy positions that still lack authoritative provenance, with current sources prioritized first.
