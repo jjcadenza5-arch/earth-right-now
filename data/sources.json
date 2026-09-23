@@ -632,7 +632,12 @@
     "checkedAt": "2026-09-23T09:36:00+07:00",
     "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
     "failureReason": null,
-    "freshnessEvidence": "Current official San Diego Zoo Live Cameras page explicitly presents live wildlife cameras for the Zoo and Safari Park and separately labels prerecorded content where applicable."
+    "freshnessEvidence": "Current official San Diego Zoo Live Cameras page explicitly presents live wildlife cameras for the Zoo and Safari Park and separately labels prerecorded content where applicable.",
+    "lat": 32.7356967,
+    "lon": -117.1515722,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://de.wikipedia.org/wiki/San_Diego_Zoo",
+    "coordinateNote": "Zoo-site reference point for Atlas placement; not claimed as a specific camera position."
   },
   {
     "id": "zermatt-matterhorn",
@@ -690,7 +695,12 @@
     "checkedAt": "2026-09-23T09:36:00+07:00",
     "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
     "failureReason": null,
-    "freshnessEvidence": "Current official Chamonix-Mont-Blanc Webcams page exposes a broad active webcam collection across the valley, mountains, villages and lifts."
+    "freshnessEvidence": "Current official Chamonix-Mont-Blanc Webcams page exposes a broad active webcam collection across the valley, mountains, villages and lifts.",
+    "lat": 45.9230556,
+    "lon": 6.8697222,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://fr.wikipedia.org/wiki/Chamonix-Mont-Blanc",
+    "coordinateNote": "Chamonix town reference point for a multi-webcam destination; not a specific camera coordinate."
   },
   {
     "id": "georgia-aquarium",
@@ -746,7 +756,12 @@
     "checkedAt": "2026-09-23T09:36:00+07:00",
     "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
     "failureReason": null,
-    "freshnessEvidence": "Current official Whistler Blackcomb Mountain Cams page explicitly labels LIVE MOUNTAIN CAMS / Live Webcams and exposes multiple active camera players."
+    "freshnessEvidence": "Current official Whistler Blackcomb Mountain Cams page explicitly labels LIVE MOUNTAIN CAMS / Live Webcams and exposes multiple active camera players.",
+    "lat": 50.1163889,
+    "lon": -122.9541667,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://apps.gov.bc.ca/pub/bcgnws/names/34795.html",
+    "coordinateNote": "Official BC Geographical Names Whistler community reference point for the resort destination."
   },
   {
     "id": "florida-now",
@@ -1880,7 +1895,12 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": null,
-    "story": "A harbour-city window in St. John’s, Newfoundland and Labrador, for waterfront activity, sky and coastal atmosphere."
+    "story": "A harbour-city window in St. John’s, Newfoundland and Labrador, for waterfront activity, sky and coastal atmosphere.",
+    "lat": 47.565556,
+    "lon": -52.698056,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q111959894",
+    "coordinateNote": "St. John's Harbour reference point; not claimed as exact webcam position."
   },
   {
     "id": "metung-gippsland-lakes",
@@ -1936,7 +1956,12 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": null,
-    "story": "A mountain-resort view at Skeikampen for alpine conditions, landscape and seasonal snow."
+    "story": "A mountain-resort view at Skeikampen for alpine conditions, landscape and seasonal snow.",
+    "lat": 61.35,
+    "lon": 10.083333,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q2786332",
+    "coordinateNote": "Skeikampen mountain/destination reference point; not claimed as exact webcam position."
   },
   {
     "id": "coogee-randwick-beaches",
@@ -2052,7 +2077,12 @@
     "rightsBasis": "Current official Farm Tomita site exposes a live-webcam section with current field images. ERN keeps it LINK_ONLY and does not infer image reuse or embed permission.",
     "checkedAt": "2026-09-23T07:01:00+07:00",
     "lastSuccessfulCheck": "2026-09-23T07:01:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "lat": 43.41731,
+    "lon": 142.42447,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://mapcarta.com/W68744759",
+    "coordinateNote": "Farm Tomita site reference point based on mapped garden feature; official Farm Tomita address independently confirms Nakafurano location."
   },
   {
     "id": "waikiki-beach",
