@@ -13,7 +13,7 @@ Hero, immersive viewer, Watch Earth, Explore, Moments, My Earth, Living Atlas an
 Atlas and ERN AI are connected to the same registry/truth gates. High-value Earth intent now spans all seven supported interface languages, including compact-script natural sentences. Continue spatial UX and relevance refinement without creating a parallel truth source.
 
 ## Stage G — source health automation — ACTIVE
-Report-only health proposals, conservative provider-family policies, prioritized evidence debt, a provider-family evidence plan, and a daily operations watch now exist. Next: collect real media confirmation for inside-ERN playback; automation must not mutate rights/truth or convert HTTP reachability into playback proof.
+Report-only health proposals, conservative provider-family policies, prioritized evidence debt, a provider-family evidence plan, a daily operations watch, and a provider playback-evidence status report now exist. The report requires HUMAN_PLAYBACK on representative inside-ERN sources (including every degraded inside-ERN source) and refuses to treat HTTP reachability or provider metadata as playback proof. Next: collect the remaining real media confirmations on the deployed origin; automation must not mutate rights/truth.
 
 ## Stage H — travel bridge — FOUNDATION DONE
 Trust-isolated stay/eat/transport/ticket offer model exists. Add real verified partners only after Earth-first experience is stable.

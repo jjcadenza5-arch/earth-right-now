@@ -24,6 +24,7 @@
     "provider:worklist": "node scripts/provider-worklist.mjs",
     "recovery:ledger": "node scripts/recovery-ledger.mjs",
     "provider:evidence-plan": "node scripts/provider-evidence-plan.mjs",
+    "provider:playback-status": "node scripts/provider-playback-evidence-status.mjs",
     "accessibility:preflight": "node scripts/accessibility-preflight.mjs",
     "release:preflight": "node scripts/public-launch-preflight.mjs",
     "mobile:preflight": "node scripts/mobile-layout-preflight.mjs",
