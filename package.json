@@ -34,7 +34,8 @@
     "atlas:coordinates": "node scripts/atlas-coordinate-worklist.mjs",
     "release:packet": "node scripts/release-operator-packet.mjs",
     "watch-earth:now": "node scripts/watch-earth-live-now.mjs",
-    "product:status": "node scripts/whole-product-status.mjs"
+    "product:status": "node scripts/whole-product-status.mjs",
+    "earth-signals:status": "node scripts/earth-signal-status.mjs"
   },
   "engines": {
     "node": ">=20"

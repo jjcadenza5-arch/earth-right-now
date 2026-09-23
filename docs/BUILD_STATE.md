@@ -1,3 +1,9 @@
+## 2026-09-23 — Product activation operator visibility
+- Daily/interactive operations reporting now shows business activation and Earth Signals contribution readiness beside catalog, playback and release health.
+- Business remains FOUNDATION_READY but not commercially active until real submission transport and affiliate inventory exist.
+- Earth Signals remains READ_ONLY with its six real infrastructure requirements visible; architecture/tests cannot masquerade as a live contribution backend.
+- Added `npm run earth-signals:status` for a direct machine-readable operator check. No public contribution path was enabled.
+
 ## 2026-09-23 — Atlas provenance integrity hardening
 - Coordinate evidence is now symmetric: a provenance basis requires coordinates + an evidence URL, and an evidence URL cannot exist without a declared basis.
 - Coordinate evidence URLs must use HTTPS; the JSON schema now exposes the same provenance contract already enforced at runtime.
