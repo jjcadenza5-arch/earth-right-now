@@ -23,7 +23,8 @@
     "provider:record": "node scripts/record-provider-observation.mjs",
     "provider:worklist": "node scripts/provider-worklist.mjs",
     "recovery:ledger": "node scripts/recovery-ledger.mjs",
-    "provider:evidence-plan": "node scripts/provider-evidence-plan.mjs"
+    "provider:evidence-plan": "node scripts/provider-evidence-plan.mjs",
+    "accessibility:preflight": "node scripts/accessibility-preflight.mjs"
   },
   "engines": {
     "node": ">=20"
