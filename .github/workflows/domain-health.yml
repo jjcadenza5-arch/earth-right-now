@@ -16,11 +16,17 @@ jobs:
       - name: Diagnose apex domain
         id: apex
         continue-on-error: true
-        run: npm run domain:health -- earthrightnow.app | tee domain-apex.json
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run domain:health -- earthrightnow.app | tee domain-apex.json
       - name: Diagnose www domain
         id: www
         continue-on-error: true
-        run: npm run domain:health -- www.earthrightnow.app | tee domain-www.json
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run domain:health -- www.earthrightnow.app | tee domain-www.json
       - name: Publish diagnostics
         if: always()
         run: |
