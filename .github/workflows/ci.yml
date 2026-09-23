@@ -48,6 +48,9 @@ jobs:
       - name: Report release candidate
         if: success()
         run: npm run release:candidate
+      - name: Build release operator packet
+        if: success()
+        run: npm run release:packet -- "$GITHUB_SHA" > release-operator-packet.md
       - name: Build immutable release artifact
         if: success()
         run: npm run release:build
@@ -66,6 +69,13 @@ jobs:
           name: ern-smoke-diagnostics
           path: smoke-output.txt
           retention-days: 3
+      - name: Upload release operator packet
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ern-release-operator-packet
+          path: release-operator-packet.md
+          retention-days: 7
       - name: Publish smoke failure summary
         if: failure() && steps.smoke.outcome == 'failure'
         run: |

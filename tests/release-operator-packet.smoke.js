@@ -1,0 +1,14 @@
+import assert from "node:assert/strict";import { releaseOperatorPacket,releaseOperatorMarkdown } from "../src/release-operator-packet.js";
+const candidate="a".repeat(40),previous="b".repeat(40);
+const sources=[{id:"one",title:"One",provider:"P1",playback:"EMBED",permission:"EMBED_ALLOWED",health:"HEALTHY",quality:90},{id:"two",title:"Two",provider:"P1",playback:"EMBED",permission:"EMBED_ALLOWED",health:"DEGRADED",quality:80},{id:"external",title:"External",provider:"P2",playback:"EXTERNAL",permission:"LINK_ONLY",health:"HEALTHY",quality:99}];
+const evidence={browser:{ok:true,note:"checked",checkedAt:"2026-09-23T00:00:00Z",commit:candidate}};
+const observations=[{id:"two",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-23T00:00:00Z"}];
+const packet=releaseOperatorPacket({sources,providerObservations:observations,releaseEvidence:evidence,candidateCommit:candidate,previousCommit:previous,origin:"https://earthrightnow.app/"});
+assert.equal(packet.candidate.valid,true);assert.equal(packet.candidate.origin,"https://earthrightnow.app");assert.equal(packet.rollback.readyToVerify,true);
+assert.equal(packet.release.evidence.find(x=>x.key==="browser").status,"PASS");assert.equal(packet.release.remaining.includes("mobile"),true);
+assert.equal(packet.provider.providerFamilies,1);assert.equal(packet.provider.remaining.some(x=>x.id==="one"),true);assert.equal(packet.provider.remaining.some(x=>x.id==="two"),false);
+assert.match(packet.provider.remaining.find(x=>x.id==="one").url,/earthrightnow\.app\/#window=one/);
+const md=releaseOperatorMarkdown(packet);assert.match(md,/ERN release operator packet/);assert.match(md,/Provider playback representatives/);assert.match(md,new RegExp(candidate));
+const wrong=releaseOperatorPacket({sources,releaseEvidence:evidence,candidateCommit:"c".repeat(40),origin:"http://unsafe.example"});
+assert.equal(wrong.candidate.origin,null);assert.equal(wrong.release.evidence.find(x=>x.key==="browser").status,"WRONG_CANDIDATE");
+console.log("ERN release operator packet passed");

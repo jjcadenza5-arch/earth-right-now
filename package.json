@@ -31,7 +31,8 @@
     "release:operator-brief": "node scripts/release-operator-brief.mjs",
     "domain:health": "node scripts/domain-health.mjs",
     "sources:horizon": "node scripts/verification-horizon.mjs",
-    "atlas:coordinates": "node scripts/atlas-coordinate-worklist.mjs"
+    "atlas:coordinates": "node scripts/atlas-coordinate-worklist.mjs",
+    "release:packet": "node scripts/release-operator-packet.mjs"
   },
   "engines": {
     "node": ">=20"

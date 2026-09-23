@@ -1,3 +1,10 @@
+## 2026-09-23 — Candidate-specific release operator packet
+- Added one human-release packet bound to the exact candidate SHA instead of scattering browser, mobile, provider, accessibility, performance and rollback work across separate reports.
+- The packet carries the deployed ERN origin, previous commit, six evidence checks, candidate-bound recording commands and the exact representative inside-ERN provider windows still needing HUMAN_PLAYBACK proof.
+- CI now retains the packet as a short-lived artifact after all automated gates pass; this makes the next manual step obvious without pretending CI performed it.
+- Provider playback remains fail-closed: HTTP reachability, iframe loading and provider metadata do not count as visible media playback.
+- Added regression coverage for packet semantics and CI wiring.
+
 ## 2026-09-23 — Pages custom-domain failure isolation
 - GitHub Pages artifact deployment was succeeding while the post-deploy custom-domain check failed with a TLS hostname mismatch for earthrightnow.app.
 - The Pages workflow now runs ERN's DNS/TLS health diagnostic before origin certification and publishes the exact domain state to the workflow summary.
