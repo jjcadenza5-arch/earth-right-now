@@ -33,7 +33,8 @@
     "sources:horizon": "node scripts/verification-horizon.mjs",
     "atlas:coordinates": "node scripts/atlas-coordinate-worklist.mjs",
     "release:packet": "node scripts/release-operator-packet.mjs",
-    "watch-earth:now": "node scripts/watch-earth-live-now.mjs"
+    "watch-earth:now": "node scripts/watch-earth-live-now.mjs",
+    "product:status": "node scripts/whole-product-status.mjs"
   },
   "engines": {
     "node": ">=20"
