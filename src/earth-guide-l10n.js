@@ -23,3 +23,9 @@ const INTENT={
  zh:{water:"海水与海岸",mountains:"山地与雪景",wildlife:"野生动物",human:"城市生活",beautiful:"美丽风景",happening:"有活动的地方",night:"夜间城市灯光",daylight:"白天",golden:"日出、日落或黄金时刻",snow:"雪",rain:"雨",local:"小而本地的地方",reference:"参考图片"}
 };
 export function guideIntentLabel(intent,language="en"){return INTENT[code(language)]?.[intent]||intent}
+
+export function guideCanonicalQuery(label,language="en"){
+ const selected=guideCopy(language),english=guideCopy("en"),value=String(label||"");
+ for(const key of ["follow","followEmpty","placeFollow"]){const i=(selected[key]||[]).indexOf(value);if(i>=0)return english[key][i]||value}
+ return value;
+}
