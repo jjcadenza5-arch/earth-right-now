@@ -472,3 +472,5 @@ button:disabled{cursor:not-allowed;opacity:.5}
  .atlas-stage{padding:15px;border-radius:22px}
  .atlas-toolbar{gap:8px}
 }
+
+.atlas-coverage{color:var(--muted);font-size:12px;margin:-4px 0 12px}
