@@ -25,7 +25,9 @@
     "recovery:ledger": "node scripts/recovery-ledger.mjs",
     "provider:evidence-plan": "node scripts/provider-evidence-plan.mjs",
     "accessibility:preflight": "node scripts/accessibility-preflight.mjs",
-    "release:preflight": "node scripts/public-launch-preflight.mjs"
+    "release:preflight": "node scripts/public-launch-preflight.mjs",
+    "mobile:preflight": "node scripts/mobile-layout-preflight.mjs",
+    "release:operator-brief": "node scripts/release-operator-brief.mjs"
   },
   "engines": {
     "node": ">=20"
