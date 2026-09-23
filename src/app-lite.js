@@ -510,7 +510,7 @@ async function toggleViewerFullscreen(){
 }
 function syncFullscreenButton(){
  const active=!!(document.fullscreenElement||document.webkitFullscreenElement||$("#viewer").classList.contains("faux-fullscreen"));
- $("#fullViewer").textContent=active?"Exit full screen":t("fullscreen");$("#fullViewer").setAttribute("aria-pressed",active?"true":"false")
+ $("#fullViewer").textContent=active?"Exit full screen":t("fullscreen");$("#fullViewer").setAttribute("aria-pressed",active?"true":"false");$("#fullViewerTop").textContent=active?"×":"⛶";$("#fullViewerTop").setAttribute("aria-pressed",active?"true":"false")
 }
 function initEvents(){
  $("#homeBtn").onclick=()=>scrollToId("home");$("#homeNav").onclick=()=>scrollToId("home");$("#topSearch").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#topAtlas").onclick=()=>scrollToId("map");
@@ -527,7 +527,7 @@ $("#watchNav").onclick=()=>scrollToId("watch");$("#searchNav").onclick=()=>{scro
  document.querySelectorAll(".category").forEach(b=>b.onclick=()=>{stopHeroRotation();selectCategory(b.dataset.category,b);startHeroRotation()});
  $("#searchInput").oninput=e=>search(e.target.value,{updateUrl:true});$("#clearSearch").onclick=()=>{$("#searchInput").value="";search("",{updateUrl:true});$("#searchInput").focus()};
  /* quick-search handlers are rebuilt from current catalog in renderQuickSearches() */
- $("#closeViewer").onclick=()=>{closeViewer();startHeroRotation()};$("#prevViewer").onclick=()=>move(-1,true);$("#nextViewer").onclick=()=>move(1,true);$("#journeyToggle").onclick=()=>state.journeyTimer?stopJourney():startJourney();$("#fullViewer").onclick=toggleViewerFullscreen;document.addEventListener("fullscreenchange",syncFullscreenButton);document.addEventListener("webkitfullscreenchange",syncFullscreenButton);
+ $("#closeViewer").onclick=()=>{closeViewer();startHeroRotation()};$("#prevViewer").onclick=()=>move(-1,true);$("#nextViewer").onclick=()=>move(1,true);$("#journeyToggle").onclick=()=>state.journeyTimer?stopJourney():startJourney();$("#fullViewer").onclick=toggleViewerFullscreen;$("#fullViewerTop").onclick=toggleViewerFullscreen;document.addEventListener("fullscreenchange",syncFullscreenButton);document.addEventListener("webkitfullscreenchange",syncFullscreenButton);
  $("#shareViewer").onclick=async()=>{const s=state.selected;if(!s)return;const url=location.origin+location.pathname+viewHash(s.id);try{if(navigator.share)await navigator.share({title:s.title,text:"See this place on Earth Right Now",url});else{await navigator.clipboard.writeText(url);$("#shareViewer").textContent="Copied";setTimeout(()=>$("#shareViewer").textContent=t("share"),1200)}}catch{}};
  $("#favoriteViewer").onclick=()=>{const s=state.selected;if(!s)return;state.favorites.has(s.id)?state.favorites.delete(s.id):state.favorites.add(s.id);saveFavorites();$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";renderSaved();renderWatch()};
  $("#resetPersonal").onclick=()=>{writeSaved("ern-profile",JSON.stringify({countries:{},categories:{},views:0}));writeSaved("ern-recent","[]");state.mode="auto";writeSaved("ern-mode","auto");renderWatch();renderWander();renderSaved();};

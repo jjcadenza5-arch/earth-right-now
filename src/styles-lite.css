@@ -453,3 +453,15 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
     background:#03100e!important
   }
 }
+
+/* Top-bar fullscreen fallback: keep a tap target above embedded media on iPhone Safari */
+.viewer-bar{position:relative;z-index:60}
+.viewer-bar-actions{display:flex;align-items:center;gap:6px;flex:0 0 auto;position:relative;z-index:70}
+#fullViewerTop,#closeViewer{position:relative!important;z-index:72!important;pointer-events:auto!important;touch-action:manipulation}
+#fullViewerTop{display:none;width:38px;height:38px;border-radius:10px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);color:white;font-size:18px;line-height:1}
+@media (orientation:landscape) and (max-height:520px){
+  #fullViewerTop{display:grid;place-items:center}
+  #fullViewer{display:none!important}
+  .viewer-bar-actions{position:relative;z-index:80}
+  .viewer-bar{overflow:visible}
+}

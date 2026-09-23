@@ -19,6 +19,7 @@ must(css.includes("Landscape mobile viewer: keep the Earth window visible"),"lan
 must(css.includes("Landscape action dock: always reachable"),"landscape action controls are not protected");
 must(css.includes("Landscape fullscreen escape hatch"),"landscape Full screen control is not independently protected");
 must(app.includes("function toggleViewerFullscreen(")&&css.includes("iPhone faux fullscreen fallback"),"iPhone fullscreen fallback missing");
+must(index.includes('id="fullViewerTop"')&&app.includes('$("#fullViewerTop").onclick=toggleViewerFullscreen')&&css.includes("Top-bar fullscreen fallback"),"landscape top-bar fullscreen control missing");
 must(app.includes('$("#heroWatch").onclick=()=>{const target='),"Watch Earth Now no longer opens the active Earth window");
 must(css.includes(".local-earth-section"),"Local Earth styling missing");
 must(css.includes(".participate-section"),"places/cameras/moments participation surface missing");
