@@ -104,7 +104,27 @@ function card(s,compact=false){
  b.onclick=()=>openViewer(s);return b;
 }
 function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map(s=>card(s)));$("#watchCount").textContent=state.watch.length;state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(state.watch[0])}
-function search(q){const x=String(q||"").trim().toLowerCase();const items=!x?state.sources.slice().sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,12):state.sources.filter(s=>[s.title,s.region,s.country,...(s.categories||[])].filter(Boolean).join(" ").toLowerCase().includes(x)).sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,24);$("#searchResults").replaceChildren(...items.map(s=>card(s,true)));$("#searchStatus").textContent=x?`${items.length} result${items.length===1?"":"s"}`:""}
+function placeCard(group){
+ const best=[...group].sort((a,b)=>baseScore(b)-baseScore(a))[0];
+ const b=card(best,true);b.classList.add("place-card");
+ const count=group.length;
+ if(count>1){
+   const badge=document.createElement("span");badge.className="view-count";badge.textContent=`${count} views`;b.append(badge);
+   b.setAttribute("aria-label",`${best.title}, ${count} available views`);
+ }
+ b.onclick=()=>openViewer(best);return b;
+}
+function groupByPlace(items){
+ const m=new Map();for(const s of items){const key=s.placeId||s.id;if(!m.has(key))m.set(key,[]);m.get(key).push(s)}
+ return [...m.values()];
+}
+function search(q){
+ const x=String(q||"").trim().toLowerCase();
+ const matches=!x?state.sources:state.sources.filter(s=>[s.title,s.region,s.country,...(s.categories||[])].filter(Boolean).join(" ").toLowerCase().includes(x));
+ const groups=groupByPlace(matches).sort((a,b)=>Math.max(...b.map(baseScore))-Math.max(...a.map(baseScore))).slice(0,x?24:12);
+ $("#searchResults").replaceChildren(...groups.map(placeCard));
+ $("#searchStatus").textContent=x?`${groups.length} place${groups.length===1?"":"s"} · ${matches.length} current window${matches.length===1?"":"s"}`:"";
+}
 function renderMap(){const a=$("#atlas");a.replaceChildren();let count=0;for(const s of state.sources){const lat=Number(s.lat),lon=Number(s.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;const p=document.createElement("button");p.className="map-pin"+(isInside(s)?"":" external");p.type="button";p.title=`${s.title} — ${truthLabel(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s);a.append(p);count++}$("#mapNote").textContent=`${count} mapped current-window locations · green can play inside ERN · amber opens at the provider.`}
 function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}
 function renderSaved(){const items=state.sources.filter(s=>state.favorites.has(s.id));$("#savedResults").replaceChildren(...items.map(s=>card(s,true)));$("#savedEmpty").hidden=items.length>0}

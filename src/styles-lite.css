@@ -57,3 +57,8 @@ footer{display:flex;justify-content:space-between;gap:20px;align-items:center;pa
 .alt-view strong{font-size:10px;font-weight:700}.alt-view small{font-size:8px;color:#9fb7b1;letter-spacing:.06em}
 .alt-view:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.28)}
 @media(max-width:600px){.viewer-alternates{padding:7px 10px}.alt-label{display:none}.alt-view strong{max-width:145px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+
+/* Explore is destination-first: cameras become alternate views inside each place */
+.place-card{position:relative}
+.view-count{position:absolute;right:10px;top:10px;border:1px solid rgba(24,61,55,.13);background:rgba(246,249,247,.94);color:#365f58;border-radius:999px;padding:4px 7px;font-size:9px;font-weight:800;letter-spacing:.04em}
+.place-card:hover .view-count{background:white}
