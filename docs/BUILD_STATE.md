@@ -1,3 +1,10 @@
+## 2026-09-23 — Candidate-bound release verification console
+- Added an unlinked, no-index release verification page to the immutable deployment artifact.
+- The console reads the exact release manifest candidate SHA, exposes the deployed origin and browser environment, lays out all six real-world release gates, and shows the minimum inside-ERN provider representatives still needing HUMAN_PLAYBACK evidence.
+- The console can build candidate-bound recording commands from an operator-written observation note, but it cannot write the evidence ledger or mark a gate passed automatically.
+- Provider playback remains fail-closed: only an actual HUMAN_PLAYBACK observation counts; iframe/HTTP reachability is never upgraded into visible-media evidence.
+- Added regression coverage and included the console itself in the release artifact hash manifest.
+
 ## 2026-09-23 — Full ERN Guide multilingual interaction
 - Extended seven-language behavior beyond static interface text and one-off runtime sentences into the main Earth Guide response layer.
 - Welcome, empty-state, result summaries, current-evidence caveats, My Earth preference notes, weather caution, place follow-ups, price/quietness boundaries and starter suggestion labels now follow the selected language.
