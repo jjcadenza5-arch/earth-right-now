@@ -1,0 +1,36 @@
+import fs from "node:fs";
+const read=p=>fs.readFileSync(p,"utf8"),json=p=>JSON.parse(read(p));
+const index=read("index.html"),app=read("src/app-lite.js"),sources=json("data/sources.json"),local=json("data/local-directory.json"),evidence=json("data/release-evidence.json");
+const mapped=sources.filter(s=>Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))).length;
+const inside=sources.filter(s=>s.health==="HEALTHY"&&((s.playback==="EMBED"&&s.embedUrl)||(s.playback==="IMAGE_REFRESH"&&s.sourceUrl))).length;
+const fresh=sources.filter(s=>{const d=Date.parse(s.lastSuccessfulCheck||s.checkedAt||"");return s.health==="HEALTHY"&&Number.isFinite(d)&&(Date.now()-d)<=21*86400000}).length;
+const formalEvidence=["browser","mobile","providerPlayback","accessibility","performance","rollback"];
+const evidencePassed=formalEvidence.filter(k=>evidence?.[k]?.ok===true&&String(evidence[k].note||"").trim());
+const product={
+ watchEarth:index.includes('id="watch"'),
+ search:index.includes('id="search"')&&app.includes("localDirectoryMatch("),
+ atlas:index.includes('id="map"')&&index.includes('data-map-filter="local"'),
+ localEarth:index.includes('id="localEarth"'),
+ guide:index.includes('id="guidePanel"')&&app.includes("guidePlaceMatches("),
+ myEarth:index.includes('id="saved"'),
+ placesAndCameras:fs.existsSync("for-places.html"),
+ nowMoments:fs.existsSync("now-moments.html"),
+ destinationPages:fs.existsSync("scripts/build-destination-pages.mjs")
+};
+const external={
+ realAIBackend:false,
+ submissionTransport:false,
+ nowMomentUploadTransport:false,
+ moderationPipeline:false,
+ reviewedLocalBusinesses:local.filter(x=>x?.status==="APPROVED").length,
+ affiliateInventory:false
+};
+console.log(JSON.stringify({
+ generatedAt:new Date().toISOString(),
+ product,
+ catalog:{sources:sources.length,fresh,mapped,insideERN:inside,reviewedLocalPlaces:external.reviewedLocalBusinesses},
+ releaseEvidence:{passed:evidencePassed,remaining:formalEvidence.filter(k=>!evidencePassed.includes(k))},
+ externalActivation:external,
+ conclusion:Object.values(product).every(Boolean)?"CORE_PRODUCT_PRESENT":"CORE_PRODUCT_GAP",
+ note:"Core product presence is not the same as full interactive activation. AI, uploads, submissions, moderation and partner inventory require real external services or reviewed records; do not fake them."
+},null,2));
