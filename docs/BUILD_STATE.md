@@ -1,3 +1,10 @@
+## 2026-09-23 — Actionable GitHub Pages DNS diagnostics
+- Expanded the domain-health check from a generic DNS/TLS failure into an explicit GitHub Pages assessment.
+- The report now compares apex A/AAAA records with the documented Pages targets, checks the www CNAME target, inspects CAA for Let's Encrypt compatibility, preserves TLS/HTTPS tests, and emits a concrete next action.
+- DNS repair guidance is diagnostic only: the checker does not mutate DNS or weaken origin certification.
+- Updated the deployment plan to reflect the current Pages workflow, exact-commit verification, candidate-specific human evidence and rollback model.
+- Added regression coverage for correct, conflicting IPv4/IPv6, CAA-blocked and www-CNAME scenarios.
+
 ## 2026-09-23 — Candidate-specific release operator packet
 - Added one human-release packet bound to the exact candidate SHA instead of scattering browser, mobile, provider, accessibility, performance and rollback work across separate reports.
 - The packet carries the deployed ERN origin, previous commit, six evidence checks, candidate-bound recording commands and the exact representative inside-ERN provider windows still needing HUMAN_PLAYBACK proof.
