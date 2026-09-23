@@ -1,5 +1,5 @@
 import { execFileSync } from "node:child_process";
-import { pagesDnsAssessment,domainNextAction } from "../src/pages-domain-diagnostics.js";
+import { pagesDnsAssessment,domainNextAction,certificateCoverage } from "../src/pages-domain-diagnostics.js";
 
 const host=process.argv[2]||"earthrightnow.app";
 function run(cmd,args){try{return{ok:true,out:execFileSync(cmd,args,{encoding:"utf8",stdio:["ignore","pipe","pipe"]}).trim()}}catch(e){return{ok:false,out:String(e.stdout||"").trim(),err:String(e.stderr||e.message||"").trim()}}}
@@ -14,7 +14,7 @@ let state="OK";
 if(!a.length&&!aaaa.length&&!cname.length)state="DNS_UNRESOLVED";
 else if(dnsAssessment.dnsState!=="OK")state=dnsAssessment.dnsState;
 else if(!tls.ok)state="TLS_HANDSHAKE_FAILED";
-else if(!tls.out.includes(`DNS:${host}`)&&!tls.out.includes(`DNS:*.${host.split(".").slice(1).join(".")}`))state="TLS_HOSTNAME_MISMATCH";
+else if(certificateCoverage({host,certificate:tls.out,dnsState:dnsAssessment.dnsState})!=="OK")state=certificateCoverage({host,certificate:tls.out,dnsState:dnsAssessment.dnsState});
 else if(!curl.ok)state="HTTPS_REQUEST_FAILED";
 const report={
  host,state,
