@@ -23,5 +23,29 @@ ERN is not only Watch Earth's Top 20. The public product is a connected system:
 - Visitor contributions never upgrade a source to LIVE/current.
 - Monetization is not required for beta launch.
 
-## Unresolved historical phrase
-The user specifically referenced a prior **“crispy pork skin strategy.”** The exact historical wording/definition has not yet been recovered from searchable chat/repo context. Do not redefine or invent it. Preserve this placeholder until the original meaning is recovered from prior conversation history.
+## Core product principle — “Crispy Pork Skin Strategy”
+The phrase is the user's metaphor from a favorite noodle shop: the soup is already good, but the small addition of crispy pork skin changes the whole experience and can become the thing that makes the dish lovable and memorable.
+
+For ERN this is not one gimmick. It is the strategy of adding a few small, high-effect layers around the core Earth-view experience so ERN feels unlike a generic webcam or travel directory.
+
+The strategy includes, working together:
+- **ERN Guide** — not a generic chatbot. It is the friendly tour guide that breaks the ice, helps first-time visitors understand ERN, interprets what they want, explains what they are seeing, and moves naturally across Watch Earth, Search, Living Atlas, Local Earth, My Earth, Now Moments and the travel/business layer.
+- **Visitor expression / Now Moments** — temporary visitor observations first, then temporary photos and short clips only when moderation, privacy, expiry/deletion and abuse controls are real.
+- **Small-place and small-business discoverability** — villages, noodle shops, farms, markets, cafés, local attractions, neighbourhoods, harbours and other useful small places should be discoverable when visitors search, even when they are not globally famous.
+- **Multiple truthful window types** — quality livestreams, quasi-live/refreshed images and regularly updated current photos can all be useful, as long as the label accurately describes what the visitor is seeing.
+- **Serendipity and warmth** — small details, local context, well-timed suggestions and unexpected discoveries can create disproportionate emotional value without making ERN heavy.
+
+The test is not “can ERN add another feature?” It is: **does this small layer make the whole ERN experience more useful, memorable, human or lovable without compromising simplicity, speed or truth?**
+
+## ERN Guide role
+ERN Guide is a cross-product intelligence layer, not a chat box bolted onto the homepage. It should be able to:
+- break the ice for a first-time visitor;
+- understand natural requests such as “show me somewhere peaceful,” “what is good on Earth right now?”, “take me somewhere with evening light,” “show me a small local place,” or “what is near here?”;
+- explain why a view is being recommended now;
+- move the visitor into the relevant ERN surface rather than only returning text;
+- use the same truth/currentness gates as the rest of ERN;
+- surface local places and visitor moments when relevant;
+- connect place intent to useful travel actions without turning into an advertising agent;
+- remain warm, concise and guide-like rather than behaving as a generic assistant.
+
+The Guide, visitor expression, Local Earth/small-business discovery, truthful multi-type windows, Search, Atlas and the Top 20 are not separate products. **Together they become ERN.**

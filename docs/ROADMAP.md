@@ -9,8 +9,8 @@ Active catalog now contains 78 sources: 74 HEALTHY, 4 DEGRADED, and 0 UNKNOWN. H
 ## Stage E — experience restoration — ACTIVE
 Hero, immersive viewer, Watch Earth, Explore, Moments, My Earth, Living Atlas and Choose a Window use the shared truth/playback architecture. Continue browser-level fidelity validation against the mature ERN reference.
 
-## Stage F — map and ERN AI — ACTIVE
-Atlas and ERN AI are connected to the same registry/truth gates. High-value Earth intent now spans all seven supported interface languages, including compact-script natural sentences. Coordinate provenance now distinguishes exact camera positions from verified place/region reference points, and the first authoritative NPS mapping tranche is in place. Continue spatial coverage and relevance refinement without creating a parallel truth source or guessing pin precision.
+## Stage F — Living Atlas and ERN Guide — ACTIVE
+Atlas and ERN Guide are connected to the same registry/truth gates. ERN Guide is not a generic chatbot: it is the tour-guide doorway into the whole product, meant to break the ice, understand visitor intent, explain why a view matters now, and move naturally across Watch Earth, Search, Atlas, Local Earth, My Earth, Now Moments and later travel actions. High-value Earth intent spans all seven supported interface languages. Coordinate provenance distinguishes exact camera positions from verified place/region reference points. Continue spatial coverage, real-map fidelity and Guide relevance without creating a parallel truth source or guessing pin precision.
 
 ## Stage G — source health automation — ACTIVE
 Report-only health proposals, conservative provider-family policies, prioritized evidence debt, a provider-family evidence plan, a daily operations watch, and a provider playback-evidence status report now exist. The report requires HUMAN_PLAYBACK on representative inside-ERN sources (including every degraded inside-ERN source) and refuses to treat HTTP reachability or provider metadata as playback proof. Next: collect the remaining real media confirmations on the deployed origin; automation must not mutate rights/truth.
