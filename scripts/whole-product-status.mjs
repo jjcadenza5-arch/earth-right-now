@@ -7,6 +7,7 @@ const fresh=sources.filter(s=>{const d=Date.parse(s.lastSuccessfulCheck||s.check
 const formalEvidence=["browser","mobile","providerPlayback","accessibility","performance","rollback"];
 const automatedGates={accessibility:fs.existsSync("scripts/accessibility-preflight.mjs"),performance:fs.existsSync("scripts/performance-preflight.mjs"),rollback:fs.existsSync("scripts/rollback-preflight.mjs")&&rollback?.verified===true,participation:fs.existsSync("scripts/participation-preflight.mjs"),featuredCuration:fs.existsSync("scripts/featured-curation-preflight.mjs")};
 const evidencePassed=formalEvidence.filter(k=>evidence?.[k]?.ok===true&&String(evidence[k].note||"").trim());
+const productComplete=Object.values(product||{}).every(Boolean);
 const product={
  watchEarth:index.includes('id="watch"'),
  search:index.includes('id="search"')&&app.includes("localDirectoryMatch("),
@@ -26,6 +27,8 @@ const external={
  reviewedLocalBusinesses:local.filter(x=>x?.status==="APPROVED").length,
  affiliateInventory:false
 };
+const productReady=Object.values(product).every(Boolean),evidenceReady=formalEvidence.every(k=>evidencePassed.includes(k)),gatesReady=Object.values(automatedGates).every(Boolean);
+const conclusion=productReady&&evidenceReady&&gatesReady?"STABLE_BETA_READY":productReady?"CORE_PRODUCT_PRESENT":"CORE_PRODUCT_GAP";
 console.log(JSON.stringify({
  generatedAt:new Date().toISOString(),
  product,
@@ -33,6 +36,7 @@ console.log(JSON.stringify({
  releaseEvidence:{passed:evidencePassed,remaining:formalEvidence.filter(k=>!evidencePassed.includes(k))},
  automatedGates,
  externalActivation:external,
- conclusion:Object.values(product).every(Boolean)?"CORE_PRODUCT_PRESENT":"CORE_PRODUCT_GAP",
- note:"Core product presence is not the same as full interactive activation. AI, uploads, submissions, moderation and partner inventory require real external services or reviewed records; do not fake them."
+ readiness:{productReady,evidenceReady,gatesReady},
+ conclusion,
+ note:conclusion==="STABLE_BETA_READY"?"ERN core product, formal evidence and automated beta gates are complete. Heavy AI/upload/business activation remains intentionally separate.":"Core product presence is not the same as full interactive activation. AI, uploads, submissions, moderation and partner inventory require real external services or reviewed records; do not fake them."
 },null,2));

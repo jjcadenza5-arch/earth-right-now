@@ -41,3 +41,12 @@ Once the core product is present, further work should either close one of these 
 A non-destructive rollback rehearsal is now preserved at branch `rollback-proof-20260923`, pinned to known-good deployed commit `a41ad2e49755d31344e8c0f04ca7338867f05d57`. The live main branch is not deliberately rolled backward while healthy. The release pipeline validates the rollback proof and documented procedure on every relevant deployment.
 
 This closes the infrastructure question of “can ERN recover?” without intentionally breaking the production site to demonstrate it.
+
+
+## Stable-beta state
+The operational status script may report `STABLE_BETA_READY` only when all three are true:
+- every core ERN product surface is present,
+- every formal release-evidence item is explicitly passed with a note,
+- every automated release gate is present.
+
+This status does **not** activate the heavier backend roadmap. AI model service, real uploads, moderation, submission transport, reviewed local-business inventory and affiliate inventory remain separate post-beta activations.
