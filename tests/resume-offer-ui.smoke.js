@@ -5,6 +5,6 @@ for(const id of ["resumeOffer","resumeOfferAction","resumeOfferDismiss"])console
 console.assert(app.includes("validateSessionResume(saved.resume)"),"resume must be freshness validated");
 console.assert(app.includes("validPlaceIds:new Set(places.map(p=>p.id))"),"resume must validate place catalog");
 console.assert(app.includes("validSourceIds:new Set(all.map(s=>s.id))"),"resume must validate source catalog");
-console.assert(app.includes('if(result==="PLAY"||result==="EXTERNAL")saveSession({resume:sessionResume'),"only visitor-activated playable/external windows become resume state");
+console.assert(/if\(result==="PLAY"\|\|result==="EXTERNAL"\)\{[^}]*saveSession\(\{resume:sessionResume/.test(app),"only visitor-activated playable/external windows become resume state");
 console.assert(!app.includes("renderResumeOffer();sourceAction("),"resume must never auto-play");
 console.log("ERN resume offer UI smoke checks passed");
