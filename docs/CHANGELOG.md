@@ -676,3 +676,7 @@
 - Degraded inside-ERN sources remain mandatory checks, while healthy representatives are sampled conservatively to reduce repetitive manual validation.
 - Daily operations now reports the same playback evidence debt alongside source-health worklists.
 - Added `npm run provider:playback-status` and regression coverage. Release evidence remains fail-closed until observations are genuinely performed on the deployed ERN origin.
+
+## 2026-09-23 — Localize dynamic ERN Guide responses
+- Dynamic Guide replies for place windows, nearby discovery, stays, surprise and live-now now respect ERN’s selected language across English, Thai, German, French, Spanish, Japanese and Chinese.
+- Added a dedicated presentation-only runtime copy layer plus regression coverage; discovery ranking and source-truth gates are unchanged.
