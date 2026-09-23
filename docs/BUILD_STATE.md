@@ -1,3 +1,9 @@
+## 2026-09-23 — Atlas coordinate provenance tranche D
+- Added conservative provenance to six additional mapped sources from official provider pages: Addo, Orpen, Boulders, Nossob and two Takayama views.
+- Existing coordinates were preserved; none of these sources is promoted to CAMERA_EXACT.
+- SANParks destination pages identify the named park/camp/beach context, while Takayama's official live-camera site identifies the Miyagawa/Kaji Bridge destination.
+- Added regression coverage for all six records.
+
 ## 2026-09-23 — Atlas coordinate provenance tranche C
 - Added conservative coordinate provenance to 13 current/high-value destinations without changing their existing map positions.
 - EarthCam destination pins are explicitly PLACE_REFERENCE rather than CAMERA_EXACT; Kīlauea and Lake Lucerne are REGION_REFERENCE.

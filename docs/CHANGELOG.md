@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-23 — Atlas coordinate provenance tranche D
+- Added conservative official-provider provenance to six existing mapped sources.
+- Preserved all map positions and avoided CAMERA_EXACT claims.
+- Added regression coverage for the tranche.
+
 ## 2026-09-23 — Atlas coordinate provenance tranche C
 - Added conservative provenance to 13 existing mapped destinations without moving their pins.
 - Used PLACE_REFERENCE or REGION_REFERENCE rather than claiming exact camera coordinates.
