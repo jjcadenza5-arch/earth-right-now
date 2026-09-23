@@ -1,3 +1,9 @@
+## 2026-09-23 — ERN Guide runtime localization
+- Closed the gap between ERN’s seven-language interface and dynamic Guide responses.
+- Place-window, nearby-place, stay, surprise, live-now and no-current-view responses now follow the visitor’s selected language.
+- Runtime copy remains presentation-only and cannot alter source truth, health, permission, currentness or playback behavior.
+- Added smoke coverage for all seven supported languages and English fallback behavior.
+
 ## 2026-09-23 — Provider playback evidence closure
 - Added a provider-family playback evidence status model for ERN's inside-ERN EMBED_ALLOWED inventory.
 - Representative evidence deliberately requires HUMAN_PLAYBACK; HTTP success, provider-page metadata and media-endpoint reachability remain useful diagnostics but cannot certify visible browser playback.
