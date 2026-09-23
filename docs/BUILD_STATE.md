@@ -1,3 +1,10 @@
+## 2026-09-23 — Provider playback evidence closure
+- Added a provider-family playback evidence status model for ERN's inside-ERN EMBED_ALLOWED inventory.
+- Representative evidence deliberately requires HUMAN_PLAYBACK; HTTP success, provider-page metadata and media-endpoint reachability remain useful diagnostics but cannot certify visible browser playback.
+- Every degraded inside-ERN source remains a mandatory representative, while healthy sources are sampled by provider family to reduce duplicate manual work without weakening the evidence boundary.
+- Added `npm run provider:playback-status` to expose provider families ready, representative checks completed, exact missing source IDs and copy-ready recording commands.
+- This stage does not fabricate any provider evidence and does not mark release providerPlayback as passed; it only makes the remaining human verification debt explicit and auditable.
+
 ## 2026-09-23 — Official external recovery tranche
 - Seven historical destinations were re-evaluated against current official provider surfaces rather than promoted from legacy status.
 - Randwick/Coogee, Boston Harbor Islands, Diano Marina, Farm Tomita, Waikiki Beach and Sottomarina/Chioggia return as healthy LINK_ONLY external evidence.
