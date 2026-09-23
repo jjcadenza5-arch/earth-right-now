@@ -115,7 +115,8 @@ function setProfile(){
   beautiful:{id:"beautiful",label:"Beautiful Earth",reason:"Scenic daylight, strong views and visual calm.",boost:s=>(isScenic(s)&&isDay(s)?42:0)},
   cities:{id:"cities",label:"Earth in Motion",reason:"Cities, streets and harbours with visible life.",boost:s=>isCity(s)?46:0},
   calm:{id:"calm",label:"Nature & Calm",reason:"Mountains, water, wildlife and quieter windows.",boost:s=>(/mountain|beach|water|nature|park|wildlife|snow/.test(cats(s))?45:0)-(isCity(s)?12:0)},
-  night:{id:"night",label:"Night Lights",reason:"City and harbour windows that stay interesting after dark.",boost:s=>(!isDay(s)&&isCity(s)?60:0)-(!isDay(s)&&!isCity(s)?30:0)}
+  night:{id:"night",label:"Night Lights",reason:"City and harbour windows that stay interesting after dark.",boost:s=>(!isDay(s)&&isCity(s)?60:0)-(!isDay(s)&&!isCity(s)?30:0)},
+  golden:{id:"golden",label:"Golden Hour",reason:"Morning and evening light across scenic places.",boost:s=>{const h=localHour(s);return h!==null&&((h>=5&&h<8)||(h>=17&&h<20))&&isScenic(s)?70:0}}
  };
  return fixed[state.mode]||automatic;
 }
@@ -128,7 +129,8 @@ function buildWatch(sources){
      beautiful:s=>isScenic(s)&&isDay(s),
      cities:s=>isCity(s),
      calm:s=>/mountain|beach|water|nature|park|wildlife|snow/.test(cats(s)),
-     night:s=>!isDay(s)&&isCity(s)
+     night:s=>!isDay(s)&&isCity(s),
+     golden:s=>{const h=localHour(s);return h!==null&&((h>=5&&h<8)||(h>=17&&h<20))&&isScenic(s)}
    }[state.mode];
    if(strict){const narrowed=pool.filter(strict);if(narrowed.length>=8)pool=narrowed}
  }
@@ -279,6 +281,8 @@ function renderSaved(){
  const recentIds=readJSON("ern-recent",[]);const byId=new Map(state.sources.map(s=>[s.id,s]));const recent=recentIds.map(id=>byId.get(id)).filter(Boolean);
  $("#recentResults").replaceChildren(...recent.map(s=>card(s,true)));$("#recentEmpty").hidden=recent.length>0;
  const p=interactionProfile();$("#recentNote").textContent=Number(p.views||0)>=3?"Local suggestions are adapting to your exploration.":"Explore a few places and ERN will begin adapting locally.";
+ const excluded=new Set([...state.favorites,...recentIds]);const recs=state.sources.filter(s=>s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id)&&!excluded.has(s.id)&&verificationAgeDays(s)<=21).sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,6);
+ $("#recommendedResults").replaceChildren(...recs.map(s=>card(s,true)));
 }
 function stopImageTimer(){if(state.imageTimer){clearInterval(state.imageTimer);state.imageTimer=null}}
 let viewerLoadTimer=null;

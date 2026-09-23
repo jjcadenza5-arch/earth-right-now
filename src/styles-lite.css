@@ -178,3 +178,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .moment-summary{color:#d0e3de;font-size:9px;white-space:nowrap}
 .moment-why{margin-top:8px;padding:8px 10px;border-left:2px solid #5e9f92;background:rgba(255,255,255,.035);color:#c2d4cf;font-size:9px;line-height:1.45}
 @media(max-width:850px){.moment-summary{display:none}}
+
+/* Golden-hour discovery + local recommendation shelf */
+.mode-chip[data-mode="golden"]{border-color:rgba(255,210,132,.28)}
+.mode-chip[data-mode="golden"].active{background:#fff0cf;color:#58411b;border-color:#fff0cf}
+.recommend-head{margin-top:32px}
