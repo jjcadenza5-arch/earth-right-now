@@ -1,11 +1,14 @@
-import fs from "node:fs";const c=fs.readFileSync("src/styles.css","utf8"),h=fs.readFileSync("index.html","utf8"),fail=[];const a=(ok,msg)=>{if(!ok)fail.push(msg)};
-a(c.includes("@media(max-width:760px)"),"mobile breakpoint missing");
-a(c.includes(".window-row{display:flex;overflow:auto}"),"mobile Choose a Window horizontal browsing missing");
-a(c.includes(".window-row .card{min-width:78vw}"),"mobile window card width contract missing");
-a(c.includes("padding-bottom:max(14px,env(safe-area-inset-bottom))"),"viewer safe-area padding missing");
-a(c.includes(".place-drawer{bottom:8px;max-height:70vh}"),"mobile place drawer bounds missing");
-a(c.includes(".submit form{grid-template-columns:1fr}"),"mobile submission form must be single-column");
-a(c.includes(".viewer-mount{min-height:42vh}"),"mobile viewer media floor missing");
-a(c.includes(".topbar nav{gap:12px;overflow-x:auto;white-space:nowrap}"),"mobile top navigation overflow strategy missing");
+import fs from "node:fs";
+const c=fs.readFileSync("src/styles-lite.css","utf8"),h=fs.readFileSync("index.html","utf8"),fail=[];
+const a=(ok,msg)=>{if(!ok)fail.push(msg)};
+a(c.includes("@media(max-width:600px)"),"mobile breakpoint missing");
+a(c.includes(".mobile-dock"),"mobile navigation dock missing");
+a(c.includes(".window-grid{grid-template-columns:1fr 1fr"),"mobile Watch Earth two-column layout missing");
+a(c.includes(".viewer-bottom{padding:10px}"),"mobile viewer controls missing");
+a(c.includes(".atlas{min-height:330px}"),"mobile Atlas sizing missing");
+a(c.includes(".wander-grid{grid-template-columns:1fr}"),"mobile destination stack missing");
+a(c.includes(".viewer-context{grid-template-columns:1fr}"),"mobile viewer context stack missing");
 a(h.includes('name="viewport" content="width=device-width,initial-scale=1"'),"responsive viewport metadata missing");
-if(fail.length){console.error(JSON.stringify({ok:false,fail},null,2));process.exit(1)}console.log(JSON.stringify({ok:true,breakpoint:760,horizontalWindows:true,safeArea:true,drawerBounded:true,submissionSingleColumn:true},null,2));
+a(h.includes('class="mobile-dock"'),"mobile dock markup missing");
+if(fail.length){console.error(JSON.stringify({ok:false,fail},null,2));process.exit(1)}
+console.log(JSON.stringify({ok:true,breakpoint:600,mobileDock:true,watchGrid:true,atlas:true,viewer:true},null,2));

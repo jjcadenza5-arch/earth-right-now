@@ -21,6 +21,7 @@ await cp(new URL("../service-worker.js",import.meta.url),new URL("service-worker
 await cp(new URL("../offline.html",import.meta.url),new URL("offline.html",dist));
 await cp(new URL("../privacy.html",import.meta.url),new URL("privacy.html",dist));
 await cp(new URL("../release-verification.html",import.meta.url),new URL("release-verification.html",dist));
+await cp(new URL("../src/release-verification-console.js",import.meta.url),new URL("src/release-verification-console.js",dist));
 await cp(new URL("../about.html",import.meta.url),new URL("about.html",dist));
 await cp(new URL("../deploy/_headers",import.meta.url),new URL("_headers",dist));
 await cp(new URL("../deploy/_redirects",import.meta.url),new URL("_redirects",dist));

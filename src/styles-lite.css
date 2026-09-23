@@ -198,3 +198,12 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 /* One eligibility rule across featured discovery */
 .watch-empty{margin:8px 2.2vw 20px;padding:14px 16px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.035);color:#bfd1cc;font-size:11px}
 .watch-empty[hidden]{display:none}.source-confidence.stale{color:#d5a66c}
+
+/* Trust pages share the lean ERN identity */
+.trust-page{min-height:100vh;background:radial-gradient(circle at 80% 0,#0c4b43,#062f2b 45%,#041f1c);color:#edf6f2}
+.trust-page .compact{width:min(780px,calc(100% - 36px));margin:0 auto;padding:72px 0 90px}
+.trust-page .compact>a:first-child{display:inline-block;margin-bottom:34px;color:#b7d6cf;text-decoration:none}
+.trust-page .compact .eyebrow{display:block;color:#98b9b1;font-size:10px;letter-spacing:.15em;margin-bottom:8px}
+.trust-page .compact h1{font-family:Georgia,serif;font-size:clamp(42px,7vw,72px);line-height:.98;font-weight:500;letter-spacing:-.035em;margin:0 0 28px}
+.trust-page .compact h2{font-family:Georgia,serif;font-size:25px;font-weight:500;margin:38px 0 10px}
+.trust-page .compact p{color:#c9dad5;line-height:1.72;font-size:14px}.trust-page .compact a{color:#dff4ed}

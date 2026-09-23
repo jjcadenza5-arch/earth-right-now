@@ -19,6 +19,8 @@ on:
       - "sitemap.xml"
       - "CNAME"
       - "scripts/lean-preflight.mjs"
+      - "scripts/public-launch-preflight.mjs"
+      - "scripts/mobile-layout-preflight.mjs"
       - "scripts/build-release-snapshot.mjs"
       - "scripts/build-destination-pages.mjs"
       - ".github/workflows/pages.yml"
@@ -46,6 +48,10 @@ jobs:
           node-version: 22
       - name: Lean launch preflight
         run: node scripts/lean-preflight.mjs
+      - name: Public launch preflight
+        run: node scripts/public-launch-preflight.mjs
+      - name: Mobile layout preflight
+        run: node scripts/mobile-layout-preflight.mjs
       - name: Build static release
         run: npm run release:build
       - uses: actions/upload-pages-artifact@v4
