@@ -78,10 +78,25 @@
         <button id="refreshSet" class="surprise">⤨ Surprise Me</button>
       </div>
       <div class="set-note"><span id="setLabel">Featured now</span><span id="setReason">Chosen for quality, local light and variety.</span></div>
+      <div class="mode-switcher" id="modeSwitcher" aria-label="Featured sets">
+        <button class="mode-chip active" data-mode="auto">For this moment</button>
+        <button class="mode-chip" data-mode="beautiful">Beautiful Earth</button>
+        <button class="mode-chip" data-mode="cities">Earth in Motion</button>
+        <button class="mode-chip" data-mode="calm">Nature & Calm</button>
+        <button class="mode-chip" data-mode="night">Night Lights</button>
+      </div>
       <div class="window-grid" id="watchGrid" aria-live="polite"></div>
       <div class="watch-foot">
         <span>⌂ Real places</span><span>▣ Live & current views</span><span>● Global perspective</span><span>◒ A more connected world</span>
       </div>
+    </section>
+
+    <section class="wander-section" id="destinations">
+      <div class="wander-head">
+        <div><p class="eyebrow">KEEP WANDERING</p><h2>More places worth a look.</h2></div>
+        <button id="wanderRefresh">Another six →</button>
+      </div>
+      <div class="wander-grid" id="wanderGrid"></div>
     </section>
 
     <section class="section search-section" id="search">

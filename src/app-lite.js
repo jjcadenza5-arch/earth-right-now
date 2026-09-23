@@ -5,7 +5,7 @@ const FEATURED_HOLD=new Set(["maui-hale-pau-hana","perdido-key-beach","pleasant-
 function readSavedSet(key){try{return new Set(JSON.parse(localStorage.getItem(key)||"[]"))}catch{return new Set()}}
 function readSavedText(key,fallback){try{return localStorage.getItem(key)||fallback}catch{return fallback}}
 function writeSaved(key,value){try{localStorage.setItem(key,value)}catch{}}
-const state={sources:[],watch:[],selected:null,watchIndex:0,journeyTimer:null,imageTimer:null,heroTimer:null,setOffset:0,category:"all",favorites:readSavedSet("ern-favorites")};
+const state={sources:[],watch:[],selected:null,watchIndex:0,journeyTimer:null,imageTimer:null,heroTimer:null,setOffset:0,wanderOffset:0,mode:"auto",category:"all",favorites:readSavedSet("ern-favorites")};
 const translations={
  en:{playJourney:"Play journey",pauseJourney:"Pause journey"},
  th:{playJourney:"เล่นต่อเนื่อง",pauseJourney:"หยุดชั่วคราว"},
@@ -48,13 +48,21 @@ function heroPool(){
  return inside.length?inside:state.watch;
 }
 function setProfile(){
- const slot=(Math.floor(Date.now()/14400000)+state.setOffset)%4;
- return[
+ const autoSlot=(Math.floor(Date.now()/14400000)+state.setOffset)%4;
+ const automatic=[
   {id:"beautiful",label:"Beautiful Earth",reason:"Daylight, scenery and strong current windows.",boost:s=>isScenic(s)?28:0},
   {id:"live",label:"Live Around the World",reason:"A broad mix of strong live windows across regions.",boost:s=>isInside(s)?34:0},
   {id:"cities",label:"Earth in Motion",reason:"Cities, harbours and places with visible human activity.",boost:s=>isCity(s)?34:0},
   {id:"wander",label:"Keep Wandering",reason:"A varied route through places, nature and useful current views.",boost:s=>(/interesting|useful/.test(cats(s))?24:0)}
- ][slot];
+ ][autoSlot];
+ if(state.mode==="auto")return automatic;
+ const fixed={
+  beautiful:{id:"beautiful",label:"Beautiful Earth",reason:"Scenic daylight, strong views and visual calm.",boost:s=>(isScenic(s)&&isDay(s)?42:0)},
+  cities:{id:"cities",label:"Earth in Motion",reason:"Cities, streets and harbours with visible life.",boost:s=>isCity(s)?46:0},
+  calm:{id:"calm",label:"Nature & Calm",reason:"Mountains, water, wildlife and quieter windows.",boost:s=>(/mountain|beach|water|nature|park|wildlife|snow/.test(cats(s))?45:0)-(isCity(s)?12:0)},
+  night:{id:"night",label:"Night Lights",reason:"City and harbour windows that stay interesting after dark.",boost:s=>(!isDay(s)&&isCity(s)?60:0)-(!isDay(s)&&!isCity(s)?30:0)}
+ };
+ return fixed[state.mode]||automatic;
 }
 function buildWatch(sources){
  const profile=setProfile();
@@ -109,7 +117,8 @@ function card(s,compact=false){
  else{b.innerHTML=`<div class="card-visual"></div><div class="card-body"><div class="card-kicker"><span></span><span></span></div><strong></strong><small></small><span class="card-favorite" aria-hidden="true">${state.favorites.has(s.id)?"♥":"♡"}</span></div>`;const v=b.querySelector(".card-visual");v.style.background=generatedBackground(s);v.innerHTML=posterMarkup(s);b.querySelector(".card-kicker span:first-child").textContent=isInside(s)?"LIVE HERE":(s.truth==="EXTERNAL_LIVE"?"LIVE ↗":truthLabel(s));b.querySelector(".card-kicker span:last-child").textContent=localTime(s);b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(", ")}
  b.onclick=()=>openViewer(s);return b;
 }
-function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map(s=>card(s)));$("#watchCount").textContent=state.watch.length;state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(heroPool()[0]||state.watch[0])}
+function renderModeChips(){document.querySelectorAll(".mode-chip").forEach(b=>b.classList.toggle("active",b.dataset.mode===state.mode))}
+function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map(s=>card(s)));$("#watchCount").textContent=state.watch.length;renderModeChips();state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(heroPool()[0]||state.watch[0])}
 function placeCard(group){
  const best=[...group].sort((a,b)=>baseScore(b)-baseScore(a))[0];
  const b=card(best,true);b.classList.add("place-card");
@@ -130,6 +139,19 @@ function search(q){
  const groups=groupByPlace(matches).sort((a,b)=>Math.max(...b.map(baseScore))-Math.max(...a.map(baseScore))).slice(0,x?24:12);
  $("#searchResults").replaceChildren(...groups.map(placeCard));
  $("#searchStatus").textContent=x?`${groups.length} place${groups.length===1?"":"s"} · ${matches.length} current window${matches.length===1?"":"s"}`:"";
+}
+function wanderCard(s){
+ const b=document.createElement("button");b.type="button";b.className="wander-card";
+ const v=document.createElement("span");v.className="wander-visual";v.style.background=generatedBackground(s);const img=cleanUrl(s.thumbnailUrl);if(img){const el=document.createElement("img");el.src=img;el.alt="";el.loading="lazy";v.append(el)}
+ const copy=document.createElement("span");copy.className="wander-copy";const k=document.createElement("small");k.textContent=[truthLabel(s),localTime(s)].filter(Boolean).join(" · ");const strong=document.createElement("strong");strong.textContent=s.title;const meta=document.createElement("em");meta.textContent=[s.region,s.country].filter(Boolean).join(", ");copy.append(k,strong,meta);b.append(v,copy);b.onclick=()=>openViewer(s);return b;
+}
+function renderWander(){
+ const used=new Set(state.watch.map(s=>s.id));
+ const ranked=state.sources.filter(s=>s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id)&&!used.has(s.id)).sort((a,b)=>baseScore(b)-baseScore(a));
+ const diverse=[],countries=new Set();for(const s of ranked){if(countries.has(s.country)&&diverse.length<5)continue;diverse.push(s);countries.add(s.country);if(diverse.length>=18)break}
+ if(!diverse.length){$("#wanderGrid").replaceChildren();return}
+ const start=(state.wanderOffset*6)%diverse.length;const pick=[];for(let i=0;i<Math.min(6,diverse.length);i++)pick.push(diverse[(start+i)%diverse.length]);
+ $("#wanderGrid").replaceChildren(...pick.map(wanderCard));
 }
 function renderMap(){const a=$("#atlas");a.replaceChildren();let count=0;for(const s of state.sources){const lat=Number(s.lat),lon=Number(s.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;const p=document.createElement("button");p.className="map-pin"+(isInside(s)?"":" external");p.type="button";p.title=`${s.title} — ${truthLabel(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s);a.append(p);count++}$("#mapNote").textContent=`${count} mapped current-window locations · green can play inside ERN · amber opens at the provider.`}
 function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}
@@ -172,9 +194,11 @@ function scrollToId(id){document.getElementById(id)?.scrollIntoView({behavior:"s
 function applyLanguage(){document.documentElement.lang=lang;$("#languageSelect").value=lang;updateJourneyButton()}
 function selectCategory(cat,button){state.category=cat;document.querySelectorAll(".category").forEach(x=>x.classList.remove("active"));button?.classList.add("active");if(cat==="random")state.setOffset++;renderWatch();if(state.watch.length){state.watchIndex=0;renderHero(state.watch[0])}scrollToId("watch")}
 function initEvents(){
- $("#homeBtn").onclick=()=>scrollToId("home");$("#homeNav").onclick=()=>scrollToId("home");$("#watchNav").onclick=()=>scrollToId("watch");$("#searchNav").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#destinationsNav").onclick=()=>$("#searchNav").click();$("#mapNav").onclick=()=>scrollToId("map");$("#savedNav").onclick=()=>scrollToId("saved");
+ $("#homeBtn").onclick=()=>scrollToId("home");$("#homeNav").onclick=()=>scrollToId("home");$("#watchNav").onclick=()=>scrollToId("watch");$("#searchNav").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#destinationsNav").onclick=()=>scrollToId("destinations");$("#mapNav").onclick=()=>scrollToId("map");$("#savedNav").onclick=()=>scrollToId("saved");
  $("#heroWatch").onclick=()=>scrollToId("watch");$("#heroNext").onclick=()=>{const hp=heroPool();if(!hp.length)return;stopHeroRotation();const current=hp.findIndex(x=>x.id===state.selected?.id);const next=hp[(current+1+hp.length)%hp.length];state.watchIndex=Math.max(0,state.watch.findIndex(x=>x.id===next.id));renderHero(next);startHeroRotation()};
- $("#refreshSet").onclick=()=>{stopHeroRotation();state.setOffset++;renderWatch();if(state.watch.length){state.watchIndex=0;renderHero(state.watch[0])}startHeroRotation()};
+ $("#refreshSet").onclick=()=>{stopHeroRotation();state.mode="auto";state.setOffset++;renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}startHeroRotation()};
+ document.querySelectorAll(".mode-chip").forEach(b=>b.onclick=()=>{stopHeroRotation();state.mode=b.dataset.mode||"auto";renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}startHeroRotation()});
+ $("#wanderRefresh").onclick=()=>{state.wanderOffset++;renderWander()};
  document.querySelectorAll(".category").forEach(b=>b.onclick=()=>{stopHeroRotation();selectCategory(b.dataset.category,b);startHeroRotation()});
  $("#searchInput").oninput=e=>search(e.target.value);$("#clearSearch").onclick=()=>{$("#searchInput").value="";search("");$("#searchInput").focus()};
  $("#closeViewer").onclick=()=>{closeViewer();startHeroRotation()};$("#prevViewer").onclick=()=>move(-1);$("#nextViewer").onclick=()=>move(1);$("#journeyToggle").onclick=()=>state.journeyTimer?stopJourney():startJourney();$("#fullViewer").onclick=()=>$("#viewer").requestFullscreen?.();
@@ -183,6 +207,6 @@ function initEvents(){
  document.addEventListener("keydown",e=>{if($("#viewer").hidden)return;if(e.key==="Escape"){closeViewer();startHeroRotation()}if(e.key==="ArrowRight")move(1);if(e.key==="ArrowLeft")move(-1)});
  document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")startHeroRotation();else stopHeroRotation()});
 }
-async function boot(){applyLanguage();initEvents();try{const r=await fetch("./data/sources.json",{cache:"no-store"});if(!r.ok)throw new Error("source registry "+r.status);const rows=await r.json();state.sources=Array.isArray(rows)?rows.filter(s=>s&&s.id&&s.title):[];renderWatch();state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0]||state.sources[0]);search("");renderMap();renderSaved();startHeroRotation()}catch(err){console.error(err);$("#heroTitle").textContent="Earth will be back shortly";$("#heroMeta").textContent="ERN could not load its current-window catalog. Please refresh in a moment."}}
+async function boot(){applyLanguage();initEvents();try{const r=await fetch("./data/sources.json",{cache:"no-store"});if(!r.ok)throw new Error("source registry "+r.status);const rows=await r.json();state.sources=Array.isArray(rows)?rows.filter(s=>s&&s.id&&s.title):[];renderWatch();renderWander();state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0]||state.sources[0]);search("");renderMap();renderSaved();startHeroRotation()}catch(err){console.error(err);$("#heroTitle").textContent="Earth will be back shortly";$("#heroMeta").textContent="ERN could not load its current-window catalog. Please refresh in a moment."}}
 boot();
 })();
