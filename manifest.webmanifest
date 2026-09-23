@@ -6,7 +6,7 @@
   "scope": "/",
   "display": "standalone",
   "background_color": "#061c18",
-  "theme_color": "#071b30",
+  "theme_color": "#062f2b",
   "icons": [
     {
       "src": "/assets/ern-mark.svg",
@@ -28,14 +28,20 @@
     {
       "name": "Watch Earth",
       "short_name": "Watch Earth",
-      "description": "Open Earth Right Now and start with the shared live-Earth experience.",
-      "url": "/#live"
+      "description": "Open Earth Right Now at Watch Earth.",
+      "url": "/#watch"
     },
     {
       "name": "Explore Earth",
       "short_name": "Explore",
       "description": "Search and explore destinations on Earth Right Now.",
-      "url": "/#explore"
+      "url": "/#search"
+    },
+    {
+      "name": "Living Atlas",
+      "short_name": "Atlas",
+      "description": "Open the Living Atlas.",
+      "url": "/#map"
     }
   ]
 }
