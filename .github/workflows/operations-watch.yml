@@ -1,0 +1,43 @@
+name: ERN Daily Operations Watch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 0 * * *"
+permissions:
+  contents: read
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Source verification horizon
+        run: npm run sources:horizon | tee source-horizon.json
+      - name: Provider evidence worklist
+        run: npm run provider:worklist | tee provider-worklist.json
+      - name: Provider family sampling plan
+        run: npm run provider:evidence-plan | tee provider-evidence-plan.json
+      - name: Operations status
+        run: npm run operations:status | tee operations-status.json
+      - name: Publish operations summary
+        if: always()
+        run: |
+          echo "## ERN daily operations watch" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Verification horizon" >> "$GITHUB_STEP_SUMMARY"
+          cat source-horizon.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+          echo "### Provider worklist" >> "$GITHUB_STEP_SUMMARY"
+          cat provider-worklist.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+          echo "### Operations status" >> "$GITHUB_STEP_SUMMARY"
+          cat operations-status.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ern-daily-operations
+          path: |
+            source-horizon.json
+            provider-worklist.json
+            provider-evidence-plan.json
+            operations-status.json
+          retention-days: 14
