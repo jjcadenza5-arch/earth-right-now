@@ -192,6 +192,25 @@
         "minLength": 1
       },
       "uniqueItems": true
+    },
+    "coordinateBasis": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "CAMERA_EXACT",
+        "PLACE_REFERENCE",
+        "REGION_REFERENCE",
+        null
+      ]
+    },
+    "coordinateSourceUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^https://"
     }
   },
   "additionalProperties": true,
@@ -304,6 +323,44 @@
             }
           }
         }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "coordinateBasis"
+        ],
+        "properties": {
+          "coordinateBasis": {
+            "type": "string"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "lat",
+          "lon",
+          "coordinateSourceUrl"
+        ]
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "coordinateSourceUrl"
+        ],
+        "properties": {
+          "coordinateSourceUrl": {
+            "type": "string"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "lat",
+          "lon",
+          "coordinateBasis"
+        ]
       }
     }
   ]
