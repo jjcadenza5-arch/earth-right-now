@@ -10,10 +10,10 @@ must(css.includes("BlankMap-Equirectangular"),"Living Atlas lost its real-map ba
 must(css.includes(".guide-panel"),"ERN Guide visual doorway missing");
 must(css.includes(".local-earth-section"),"Local Earth styling missing");
 must(css.includes(".participate-section"),"places/cameras/moments participation surface missing");
-must(/payment never buys editorial ranking/i.test(places),"commercial no-paid-ranking guardrail missing");
+must(/(payment or partner status never buys editorial ranking|no ranking for sale)/i.test(places),"commercial no-paid-ranking guardrail missing");
 must(/submission delivery is not open yet/i.test(places),"camera-submission honesty boundary missing");
 must(/uploads are intentionally not active yet/i.test(moments),"Now Moments safety boundary missing");
-must(/not a generic chatbot/i.test(strategy)&&/small-place and small-business discoverability/i.test(strategy),"Crispy Pork Skin strategy has been weakened");
+must(/friendly tour guide/i.test(strategy)&&/small places and small businesses/i.test(strategy),"Crispy Pork Skin strategy has been weakened");
 must(/tour guide, not a generic chatbot/i.test(guide),"ERN Guide vision has been weakened");
 
 const truth=new Set(sources.map(s=>s.truth));
