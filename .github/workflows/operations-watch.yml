@@ -23,6 +23,8 @@ jobs:
         run: npm run provider:evidence-plan | tee provider-evidence-plan.json
       - name: Provider playback evidence status
         run: npm run provider:playback-status | tee provider-playback-status.json
+      - name: Watch Earth live-now coverage
+        run: npm run watch-earth:now | tee watch-earth-live-now.json
       - name: Operations status
         run: npm run operations:status | tee operations-status.json
       - name: Publish operations summary
@@ -35,6 +37,8 @@ jobs:
           cat provider-worklist.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
           echo "### Provider playback evidence" >> "$GITHUB_STEP_SUMMARY"
           cat provider-playback-status.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+          echo "### Watch Earth live-now coverage" >> "$GITHUB_STEP_SUMMARY"
+          cat watch-earth-live-now.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
           echo "### Operations status" >> "$GITHUB_STEP_SUMMARY"
           cat operations-status.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
       - uses: actions/upload-artifact@v4
@@ -46,5 +50,6 @@ jobs:
             atlas-coordinate-worklist.json
             provider-worklist.json
             provider-evidence-plan.json
+            watch-earth-live-now.json
             operations-status.json
           retention-days: 14
