@@ -226,6 +226,17 @@ function search(q,options={updateUrl:false}){
  $("#searchResults").replaceChildren(...groups.map(placeCard));
  $("#searchStatus").textContent=x?`${groups.length} place${groups.length===1?"":"s"} · ${matches.length} current window${matches.length===1?"":"s"}`:"";
 }
+function localPlaceSignals(s){
+ const hay=[s.title,s.region,s.story,...(s.categories||[])].filter(Boolean).join(" ").toLowerCase();
+ const terms=[["village",3],["small town",3],["neighbourhood",2],["neighborhood",2],["local",2],["market",1],["farm",2],["harbour",1],["harbor",1],["promenade",1],["square",1],["rest camp",2],["ski area",1],["beach",1],["pier",1],["marina",1],["waterfront",1]];
+ const famous=["iconic","world famous","famous","major city"].some(x=>hay.includes(x));
+ const score=terms.reduce((n,[term,w])=>n+(hay.includes(term)?w:0),0);return{score,worth:score>=2&&!famous};
+}
+function renderLocalEarth(){
+ const picks=state.sources.filter(featureEligible).map(s=>({s,...localPlaceSignals(s)})).filter(x=>x.worth).sort((a,b)=>b.score-a.score||baseScore(b.s)-baseScore(a.s)).slice(0,6).map(x=>x.s);
+ $("#localEarthGrid").replaceChildren(...picks.map(wanderCard));
+ $("#localEarth").hidden=picks.length===0;
+}
 function wanderCard(s){
  const b=document.createElement("button");b.type="button";b.className="wander-card";
  const v=document.createElement("span");v.className="wander-visual";v.style.background=generatedBackground(s);const img=cleanUrl(s.thumbnailUrl);if(img){const el=document.createElement("img");el.src=img;el.alt="";el.loading="lazy";v.append(el)}
@@ -381,6 +392,6 @@ function initEvents(){
  window.addEventListener("hashchange",()=>{const view=location.hash.match(/^#view=(.+)$/),place=location.hash.match(/^#place=(.+)$/);if(view){const target=state.sources.find(s=>s.id===decodeURIComponent(view[1]));if(target)openViewer(target,{record:false,updateHash:false})}else if(place){openPlace(decodeURIComponent(place[1]))}else if(!$("#viewer").hidden)closeViewer({clearHash:false,restoreFocus:false})});
  document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")startHeroRotation();else stopHeroRotation()});
 }
-async function boot(){applyLanguage();initEvents();initSectionSpy();document.querySelectorAll(".category").forEach(x=>x.classList.toggle("active",x.dataset.category===state.category));try{const r=await fetch("./data/sources.json",{cache:"no-store"});if(!r.ok)throw new Error("source registry "+r.status);const rows=await r.json();state.sources=Array.isArray(rows)?rows.filter(s=>s&&s.id&&s.title):[];renderWatch();renderWander();renderNowStrip();renderQuickSearches();state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0]||state.sources[0]);const initialQ=new URL(location.href).searchParams.get("q")||"";$("#searchInput").value=initialQ;search(initialQ);if(initialQ)setTimeout(()=>scrollToId("search"),80);renderMap();renderSaved();const m=location.hash.match(/^#view=(.+)$/),p=location.hash.match(/^#place=(.+)$/);if(m){const id=decodeURIComponent(m[1]);const target=state.sources.find(s=>s.id===id);if(target)openViewer(target,{record:false,updateHash:false})}else if(p){openPlace(decodeURIComponent(p[1]))}startHeroRotation()}catch(err){console.error(err);$("#heroTitle").textContent="Earth will be back shortly";$("#heroMeta").textContent="ERN could not load its current-window catalog. Please refresh in a moment."}}
+async function boot(){applyLanguage();initEvents();initSectionSpy();document.querySelectorAll(".category").forEach(x=>x.classList.toggle("active",x.dataset.category===state.category));try{const r=await fetch("./data/sources.json",{cache:"no-store"});if(!r.ok)throw new Error("source registry "+r.status);const rows=await r.json();state.sources=Array.isArray(rows)?rows.filter(s=>s&&s.id&&s.title):[];renderWatch();renderWander();renderLocalEarth();renderNowStrip();renderQuickSearches();state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0]||state.sources[0]);const initialQ=new URL(location.href).searchParams.get("q")||"";$("#searchInput").value=initialQ;search(initialQ);if(initialQ)setTimeout(()=>scrollToId("search"),80);renderMap();renderSaved();const m=location.hash.match(/^#view=(.+)$/),p=location.hash.match(/^#place=(.+)$/);if(m){const id=decodeURIComponent(m[1]);const target=state.sources.find(s=>s.id===id);if(target)openViewer(target,{record:false,updateHash:false})}else if(p){openPlace(decodeURIComponent(p[1]))}startHeroRotation()}catch(err){console.error(err);$("#heroTitle").textContent="Earth will be back shortly";$("#heroMeta").textContent="ERN could not load its current-window catalog. Please refresh in a moment."}}
 boot();
 })();

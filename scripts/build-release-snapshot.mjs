@@ -20,6 +20,8 @@ await cp(new URL("../manifest.webmanifest",import.meta.url),new URL("manifest.we
 await cp(new URL("../service-worker.js",import.meta.url),new URL("service-worker.js",dist));
 await cp(new URL("../offline.html",import.meta.url),new URL("offline.html",dist));
 await cp(new URL("../privacy.html",import.meta.url),new URL("privacy.html",dist));
+await cp(new URL("../now-moments.html",import.meta.url),new URL("now-moments.html",dist));
+await cp(new URL("../for-places.html",import.meta.url),new URL("for-places.html",dist));
 await cp(new URL("../release-verification.html",import.meta.url),new URL("release-verification.html",dist));
 await cp(new URL("../src/release-verification-console.js",import.meta.url),new URL("src/release-verification-console.js",dist));
 await cp(new URL("../about.html",import.meta.url),new URL("about.html",dist));

@@ -12,6 +12,8 @@ on:
       - "assets/**"
       - "about.html"
       - "privacy.html"
+      - "now-moments.html"
+      - "for-places.html"
       - "manifest.webmanifest"
       - "service-worker.js"
       - "offline.html"

@@ -114,6 +114,14 @@
       <div class="wander-note" id="wanderNote">Curated from healthy sources outside the current Top 20.</div>
     </section>
 
+    <section class="local-earth-section" id="localEarth">
+      <div class="section-head local-head">
+        <div><p class="eyebrow">LOCAL EARTH</p><h2>Small places deserve a window too.</h2></div>
+        <p>Villages, local markets, farms, harbours, neighbourhoods and smaller destinations can be worth seeing even when they are not famous.</p>
+      </div>
+      <div class="local-earth-grid" id="localEarthGrid"></div>
+    </section>
+
     <section class="section search-section" id="search">
       <div class="section-head">
         <div><p class="eyebrow" data-i18n="exploreEarth">EXPLORE EARTH</p><h2 data-i18n="whereLook">Where do you want to look?</h2></div>
@@ -146,14 +154,21 @@
         <button class="atlas-filter" data-map-filter="external" data-i18n="externalLive">External live</button>
         <button class="atlas-filter" data-map-filter="daylight" data-i18n="daylightNow">Daylight now</button>
       </div>
-      <div class="atlas" id="atlas" role="group" aria-label="Living Atlas">
-        <div class="atlas-continent atlas-americas"></div>
-        <div class="atlas-continent atlas-europe"></div>
-        <div class="atlas-continent atlas-africa"></div>
-        <div class="atlas-continent atlas-asia"></div>
-        <div class="atlas-continent atlas-australia"></div>
-      </div>
+      <div class="atlas" id="atlas" role="group" aria-label="Living Atlas"></div>
       <p class="map-note" id="mapNote" role="status" aria-live="polite"></p>
+      <p class="atlas-credit">Map base: Natural Earth / CC0 via Wikimedia Commons · equirectangular projection</p>
+    </section>
+
+    <section class="participate-section" id="participate">
+      <div class="section-head participate-head">
+        <div><p class="eyebrow">GROW THE VIEW</p><h2>Places, cameras and moments.</h2></div>
+        <p>ERN can grow through camera owners, local places and temporary visitor observations without turning ranking into advertising.</p>
+      </div>
+      <div class="participate-grid">
+        <a class="participate-card" href="./for-places.html"><span>01</span><strong>Add a camera</strong><small>For camera owners and places. Rights, truth and source health are reviewed before publication.</small></a>
+        <a class="participate-card" href="./for-places.html#local-places"><span>02</span><strong>Local places & small businesses</strong><small>Help useful smaller places become discoverable. Payment never buys ERN ranking.</small></a>
+        <a class="participate-card" href="./now-moments.html"><span>03</span><strong>Share a Now Moment</strong><small>Temporary visitor observations first; photos and short clips only after moderation and privacy infrastructure are ready.</small></a>
+      </div>
     </section>
 
     <section class="section my-earth" id="saved">
@@ -177,7 +192,7 @@
 
   <footer>
     <div><strong>Earth Right Now</strong> · See before you go.</div>
-    <div class="footer-links"><a href="./about.html">About & sources</a><a href="./privacy.html">Privacy</a></div>
+    <div class="footer-links"><a href="./about.html">About & sources</a><a href="./for-places.html">For places & cameras</a><a href="./now-moments.html">Now Moments</a><a href="./privacy.html">Privacy</a></div>
   </footer>
 
   <div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="viewerTitle" aria-describedby="viewerPlace">

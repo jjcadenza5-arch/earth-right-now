@@ -207,3 +207,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .trust-page .compact h1{font-family:Georgia,serif;font-size:clamp(42px,7vw,72px);line-height:.98;font-weight:500;letter-spacing:-.035em;margin:0 0 28px}
 .trust-page .compact h2{font-family:Georgia,serif;font-size:25px;font-weight:500;margin:38px 0 10px}
 .trust-page .compact p{color:#c9dad5;line-height:1.72;font-size:14px}.trust-page .compact a{color:#dff4ed}
+
+/* Broader ERN: real-map Atlas, Local Earth and participation paths */
+.atlas{aspect-ratio:2/1;min-height:0;background-color:#dfe9e3;background-image:linear-gradient(rgba(232,241,236,.62),rgba(232,241,236,.62)),url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/BlankMap-Equirectangular.svg/960px-BlankMap-Equirectangular.svg.png");background-size:100% 100%;background-position:center;background-repeat:no-repeat}
+.atlas:before{background-image:linear-gradient(rgba(11,42,37,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(11,42,37,.04) 1px,transparent 1px);background-size:10% 16.666%}
+.atlas-continent{display:none}.atlas-credit{margin:8px 2px 0;color:#718a82;font-size:8px}
+.local-earth-section{padding:48px 4vw 52px;background:#f0f4ef;color:#183b34}.local-head{margin-bottom:18px}.local-earth-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.local-earth-grid .wander-card{background:white;color:#173c34;border-color:rgba(24,61,55,.12);box-shadow:0 8px 24px rgba(24,61,55,.05)}.local-earth-grid .wander-copy small,.local-earth-grid .wander-copy em{color:#607e75}
+.participate-section{padding:52px 4vw 58px;background:#062f2b;color:white}.participate-head{margin-bottom:20px}.participate-head>p{color:#a8c2bb}.participate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.participate-card{min-height:190px;display:flex;flex-direction:column;padding:20px;border:1px solid rgba(255,255,255,.13);border-radius:18px;background:rgba(255,255,255,.04);color:white;text-decoration:none;transition:.18s}.participate-card:hover{transform:translateY(-2px);background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.25)}.participate-card>span{font-size:9px;letter-spacing:.1em;color:#8fb4aa}.participate-card strong{font-family:Georgia,serif;font-size:26px;font-weight:500;line-height:1.06;margin:22px 0 10px}.participate-card small{color:#afc8c1;line-height:1.55}
+@media(max-width:850px){.local-earth-grid,.participate-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.atlas{aspect-ratio:2/1;min-height:240px}.local-earth-section,.participate-section{padding:38px 12px 42px}.local-earth-grid,.participate-grid{grid-template-columns:1fr}.participate-card{min-height:150px}}
+
+.trust-callout{margin:24px 0;padding:16px 18px;border:1px solid rgba(255,255,255,.13);border-radius:14px;background:rgba(255,255,255,.045)}.trust-callout strong{display:block;margin-bottom:5px}.trust-callout p{margin:0}
