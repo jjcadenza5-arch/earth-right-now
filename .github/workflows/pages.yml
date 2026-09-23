@@ -20,6 +20,7 @@ on:
       - "CNAME"
       - "scripts/lean-preflight.mjs"
       - "scripts/build-release-snapshot.mjs"
+      - "scripts/build-destination-pages.mjs"
       - ".github/workflows/pages.yml"
 
 permissions:
