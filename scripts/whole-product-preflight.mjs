@@ -17,6 +17,7 @@ must(css.includes("BlankMap-Equirectangular"),"Living Atlas lost its real-map ba
 must(index.includes('data-map-filter="local"')&&app.includes('map-pin local'),"Living Atlas lost reviewed local-place discovery");
 must(index.includes('id="atlasBeyond"')&&app.includes("renderAtlasBeyond(")&&css.includes("Atlas beyond-map coverage"),"Living Atlas lost honest unmapped-place discovery");
 must(index.includes("atlas-legend")&&app.includes("coordinate provenance")&&css.includes("Atlas legend and coordinate honesty"),"Living Atlas lost coordinate-honesty cues");
+must(app.includes("renderWatch();renderWander();renderMap()")&&app.includes("category: ${state.category}"),"Living Atlas no longer follows the visitor category context");
 must(css.includes(".guide-panel"),"ERN Guide visual doorway missing");
 must(css.includes("Mockup fidelity lock"),"approved ERN mockup fidelity layer missing");
 must(css.includes("Landscape mobile viewer: keep the Earth window visible"),"landscape mobile viewer protection missing");
