@@ -9,6 +9,7 @@ import { catalogSnapshot } from "./catalog-snapshot.js";
 import { healthCheckReport,healthReportAudit } from "./health-report.js";
 import { providerHostIntegrity } from "./provider-host-integrity.js";
 import { providerObservationBatch } from "./provider-observation-batch.js";
+import { providerPlaybackEvidenceStatus } from "./provider-playback-evidence.js";
 
 export function operationsReport(sources,{queueLimit=20,catalogOptions={},releaseEvidence={},healthObservations=null,providerObservations=null,checkedAt=null}={}){
   const health=catalogHealthSummary(sources),gate=catalogReleaseGate(sources,catalogOptions);
@@ -16,6 +17,7 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
   const snapshot=catalogSnapshot(sources,{checkedAt});
   const providerReview=(sources||[]).map(source=>({id:source.id,...providerHostIntegrity(source)})).filter(x=>!x.ok||x.crossProvider);
   const providerBatch=providerObservations===null?null:providerObservationBatch(providerObservations,{observedAt:checkedAt||undefined,knownSourceIds:(sources||[]).map(x=>x.id)});
+  const providerPlaybackEvidence=providerPlaybackEvidenceStatus(sources||[],providerObservations||[]);
   const effectiveHealthObservations=healthObservations??providerBatch?.observations??null;
   const observationNow=Date.parse(checkedAt||new Date().toISOString());
   const observationMaxAgeMs=24*60*60*1000;
@@ -64,6 +66,7 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
     release:{ready:release.ready,blockers:release.blockers,checks:release.checks,evidence:release.evidence},
     healthAutomation,
     providerReview:{total:providerReview.length,unsafe:providerReview.filter(x=>!x.ok),reviewRequired:providerReview.filter(x=>x.reviewRequired),crossProvider:providerReview.filter(x=>x.crossProvider)},
+    providerPlaybackEvidence,
     revalidation:{total:queue.length,next:queue.slice(0,queueLimit).map(x=>({id:x.source.id,title:x.source.title,priority:x.priority,reason:x.reason,health:x.source.health,playback:x.source.playback,permission:x.source.permission}))}
   };
 }
