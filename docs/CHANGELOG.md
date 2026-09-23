@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-23 — Product activation operator visibility
+- Added business and Earth Signals readiness to operations reporting.
+- Added a machine-readable Earth Signals status command.
+- Kept contributions read-only and commercial activation disabled until real backend capabilities exist.
+- Added regression coverage for the activation boundary.
+
 ## 2026-09-23 — Atlas provenance integrity hardening
 - Made coordinate provenance validation symmetric and HTTPS-only.
 - Added schema-level coordinate evidence fields and dependency rules.
