@@ -1,12 +1,14 @@
 import fs from "node:fs";
 const read=p=>fs.readFileSync(p,"utf8");
-const index=read("index.html"),app=read("src/app-lite.js"),css=read("src/styles-lite.css"),places=read("for-places.html"),moments=read("now-moments.html"),strategy=read("docs/CRISPY_PORK_SKIN_STRATEGY.md"),guide=read("docs/ERN_GUIDE_VISION.md"),sources=JSON.parse(read("data/sources.json"));
+const index=read("index.html"),app=read("src/app-lite.js"),css=read("src/styles-lite.css"),places=read("for-places.html"),moments=read("now-moments.html"),strategy=read("docs/CRISPY_PORK_SKIN_STRATEGY.md"),guide=read("docs/ERN_GUIDE_VISION.md"),sources=JSON.parse(read("data/sources.json")),localDirectory=JSON.parse(read("data/local-directory.json"));
 const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)};
 
 for(const id of ["watch","search","map","localEarth","participate","saved","guideLauncher","guidePanel"])must(index.includes(`id="${id}"`),`whole-product surface missing: ${id}`);
 for(const href of ["./for-places.html","./now-moments.html","./about.html","./privacy.html"])must(index.includes(`href="${href}"`),`public path missing: ${href}`);
 for(const fn of ["function search(","function renderMap(","function renderLocalEarth(","function guideResponse(","function runGuide("])must(app.includes(fn),`runtime capability missing: ${fn}`);
 must(app.includes("localIntent="),"Search lost small/local-place intent handling");
+must(app.includes("localDirectoryMatch(")&&app.includes("localDirectoryCard("),"reviewed local-place search plumbing missing");
+must(Array.isArray(localDirectory),"local-directory registry must be an array");
 must(css.includes("BlankMap-Equirectangular"),"Living Atlas lost its real-map base");
 must(css.includes(".guide-panel"),"ERN Guide visual doorway missing");
 must(css.includes("Mockup fidelity lock"),"approved ERN mockup fidelity layer missing");
