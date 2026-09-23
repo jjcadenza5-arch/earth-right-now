@@ -1,3 +1,10 @@
+## 2026-09-23 — GitHub Pages certificate diagnosis hardening
+- The new domain diagnostic exposed a CI masking bug: `npm run domain:health | tee ...` could return success from `tee` even when domain health itself failed.
+- Pages post-deploy diagnostics now use shell pipefail, so DNS/TLS failures correctly drive the fail-closed enforcement step and skip exact-origin certification.
+- Current runner evidence shows the apex DNS resolving to GitHub Pages addresses while the served certificate is still GitHub's generic `*.github.io` certificate rather than one covering earthrightnow.app.
+- Domain health now identifies that specific state as `PAGES_CUSTOM_CERT_NOT_PROVISIONED`, separating it from arbitrary TLS hostname mismatches.
+- Repository deployment/build behavior is healthy; custom-domain certificate provisioning remains an external Pages/domain-setting dependency.
+
 ## 2026-09-23 — Pages custom-domain failure isolation
 - GitHub Pages artifact deployment was succeeding while the post-deploy custom-domain check failed with a TLS hostname mismatch for earthrightnow.app.
 - The Pages workflow now runs ERN's DNS/TLS health diagnostic before origin certification and publishes the exact domain state to the workflow summary.
