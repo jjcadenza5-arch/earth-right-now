@@ -522,3 +522,17 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
 /* Accessibility completion: keyboard users can bypass repeated navigation */
 .skip-link{position:fixed;left:12px;top:10px;z-index:10000;transform:translateY(-160%);background:white;color:#123b34;padding:9px 12px;border-radius:10px;font-size:11px;font-weight:800;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.22)}
 .skip-link:focus{transform:translateY(0)}
+
+/* Atlas beyond-map coverage: keep unmapped current places discoverable without fake coordinates */
+.atlas-beyond{margin-top:14px;padding:14px;border:1px solid rgba(24,61,55,.12);border-radius:16px;background:rgba(255,255,255,.55)}
+.atlas-beyond[hidden]{display:none}
+.atlas-beyond-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:10px}
+.atlas-beyond-head strong{font-family:Georgia,serif;font-size:17px;font-weight:500;color:#244a42}
+.atlas-beyond-head span{font-size:9px;color:#6f877f;text-align:right}
+.atlas-beyond-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.atlas-beyond-card{border:1px solid rgba(24,61,55,.13);background:white;color:#173c34;border-radius:12px;padding:10px 11px;text-align:left;min-width:0}
+.atlas-beyond-card strong{display:block;font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.atlas-beyond-card small{display:block;margin-top:3px;color:#6a827a;font-size:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.atlas-beyond-card:hover{border-color:rgba(24,61,55,.3);transform:translateY(-1px)}
+@media(max-width:760px){.atlas-beyond-head{align-items:flex-start;flex-direction:column}.atlas-beyond-head span{text-align:left}.atlas-beyond-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:460px){.atlas-beyond-grid{grid-template-columns:1fr}}

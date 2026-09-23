@@ -379,6 +379,18 @@ function renderNowStrip(){
  $("#nowNightCities").textContent=healthy.filter(s=>!isDay(s)&&isCity(s)).length;
  $("#nowMapped").textContent=healthy.filter(s=>Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))).length;
 }
+
+function renderAtlasBeyond(){
+ const box=$("#atlasBeyond"),grid=$("#atlasBeyondGrid"),note=$("#atlasBeyondNote");
+ const unmapped=state.sources.filter(s=>featureEligible(s)&&(!Number.isFinite(Number(s.lat))||!Number.isFinite(Number(s.lon))));
+ if(!unmapped.length){box.hidden=true;grid.replaceChildren();return}
+ const ranked=[...unmapped].sort((a,b)=>baseScore(b)-baseScore(a));
+ const pick=[],countries=new Set();
+ for(const s of ranked){if(countries.has(s.country)&&pick.length<4)continue;pick.push(s);countries.add(s.country);if(pick.length>=6)break}
+ const buttons=pick.map(s=>{const b=document.createElement("button");b.type="button";b.className="atlas-beyond-card";const strong=document.createElement("strong");strong.textContent=s.title;const small=document.createElement("small");small.textContent=[s.region,s.country,publicTruth(s)].filter(Boolean).join(" · ");b.append(strong,small);b.onclick=()=>openViewer(s);return b});
+ grid.replaceChildren(...buttons);note.textContent=`${unmapped.length} current ERN place${unmapped.length===1?"":"s"} are searchable but not pinned until location evidence is added.`;box.hidden=false;
+}
+
 function renderMap(){
  const a=$("#atlas");a.querySelectorAll(".map-pin").forEach(x=>x.remove());let count=0,insideCount=0,externalCount=0,localCount=0;
  const grouped=groupByPlace(state.sources.filter(s=>s.health!=="OFFLINE"&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))));
@@ -392,7 +404,7 @@ function renderMap(){
    const p=document.createElement("a");p.className="map-pin local";p.href=safeExternalUrl(x.url);p.target="_blank";p.rel="noopener noreferrer";p.title=x.name+" — reviewed local place";p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";a.append(p);count++;localCount++;
  }
  document.querySelectorAll(".atlas-filter").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter===state.mapFilter));
- $("#mapNote").textContent=`${count} mapped places shown · ${insideCount} play inside ERN · ${externalCount} provider views${localCount?" · "+localCount+" reviewed local place"+(localCount===1?"":"s"):""}.`;
+ $("#mapNote").textContent=`${count} mapped places shown · ${insideCount} play inside ERN · ${externalCount} provider views${localCount?" · "+localCount+" reviewed local place"+(localCount===1?"":"s"):""}.`;renderAtlasBeyond();
 }
 function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}
 function distanceKm(a,b){
