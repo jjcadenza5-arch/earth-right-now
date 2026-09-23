@@ -21,9 +21,19 @@ export function pagesDnsAssessment({host="",a=[],aaaa=[],cname=[],caa=[],githubU
 }
 export function domainNextAction({state="OK",dns={}}={}){
  if(dns.dnsState&&dns.dnsState!=="OK")return dns.recommended?.[0]||"Repair DNS to match GitHub Pages before retrying HTTPS provisioning.";
+ if(state==="PAGES_CUSTOM_CERT_NOT_PROVISIONED")return "GitHub Pages is serving its generic *.github.io certificate for this hostname. Check that the custom domain is set to this repository in Settings → Pages, allow certificate provisioning, then re-add the domain if it remains stuck.";
  if(state==="TLS_HOSTNAME_MISMATCH")return "DNS points somewhere reachable, but the certificate does not cover this hostname. Confirm Pages custom-domain settings; after DNS is correct, remove and re-add the custom domain if GitHub certificate provisioning remains stuck.";
  if(state==="TLS_HANDSHAKE_FAILED")return "Confirm DNS reaches GitHub Pages and that GitHub Pages HTTPS provisioning has completed.";
  if(state==="HTTPS_REQUEST_FAILED")return "TLS is present but the HTTPS request failed; inspect Pages deployment/origin response before changing application code.";
  if(state==="DNS_UNRESOLVED")return "Create the required GitHub Pages DNS records for this hostname.";
  return "No domain remediation required.";
+}
+
+export function certificateCoverage({host="",certificate="",dnsState="OK"}={}){
+ const h=norm(host);
+ const names=[...String(certificate).matchAll(/DNS:([^,\s]+)/g)].map(match=>norm(match[1]));
+ const covers=names.some(name=>name===h||name.startsWith("*.")&&h.endsWith(name.slice(1))&&h.split(".").length===name.split(".").length);
+ if(covers)return "OK";
+ if(dnsState==="OK"&&names.includes("*.github.io"))return "PAGES_CUSTOM_CERT_NOT_PROVISIONED";
+ return "TLS_HOSTNAME_MISMATCH";
 }

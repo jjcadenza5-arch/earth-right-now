@@ -1,3 +1,8 @@
+## 2026-09-23 — Exact Pages certificate diagnosis
+- Preserved the certificate-specific finding from the earlier unmerged diagnostic branch after its pipeline fix was superseded.
+- Domain health now reports PAGES_CUSTOM_CERT_NOT_PROVISIONED when DNS matches GitHub Pages but the endpoint still serves the generic *.github.io certificate.
+- Exact SAN matching avoids treating a wildcard for a parent domain as coverage for the apex. The release gate remains fail-closed, and no DNS or Pages setting is changed automatically.
+
 ## 2026-09-23 — Official source freshness tranche A
 - Revalidated eight high-value external/current sources against their current official provider pages: Kīlauea, Yellowstone, San Diego Zoo, Georgia Aquarium, Zermatt, Chamonix, Whistler Blackcomb and Florida Now.
 - Each refreshed timestamp now carries a source-specific freshness-evidence statement explaining what the official page currently confirms.
