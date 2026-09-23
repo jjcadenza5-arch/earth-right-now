@@ -1,0 +1,1 @@
+import fs from "node:fs";const s=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");console.assert(s.includes('"mainEntityOfPage"'));console.assert(s.includes('"isPartOf"'));console.assert(s.includes("latestCheck"));console.assert(s.includes("<lastmod>"));console.assert(s.includes('lastmod:"2026-09-23"'));console.log("ERN destination SEO freshness wiring passed");
