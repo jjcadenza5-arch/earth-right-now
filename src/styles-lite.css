@@ -48,3 +48,12 @@ footer{display:flex;justify-content:space-between;gap:20px;align-items:center;pa
 .result-card strong{font-family:Inter,ui-sans-serif,system-ui;font-size:15px;margin:5px 0 3px;line-height:1.2}
 .result-card small{font-size:11px;line-height:1.35}
 @media(max-width:560px){.result-card{grid-template-columns:72px 1fr}.result-visual{width:72px;height:72px}}
+
+/* Destination flow: multiple truthful windows for the same place */
+.viewer-alternates{display:flex;gap:8px;align-items:center;padding:8px 14px;background:#061713;border-top:1px solid rgba(255,255,255,.08);overflow:auto}
+.viewer-alternates[hidden]{display:none}
+.alt-label{flex:0 0 auto;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#8fa8a2;margin-right:2px}
+.alt-view{flex:0 0 auto;display:flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.045);color:white;padding:7px 10px;border-radius:999px}
+.alt-view strong{font-size:10px;font-weight:700}.alt-view small{font-size:8px;color:#9fb7b1;letter-spacing:.06em}
+.alt-view:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.28)}
+@media(max-width:600px){.viewer-alternates{padding:7px 10px}.alt-label{display:none}.alt-view strong{max-width:145px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}

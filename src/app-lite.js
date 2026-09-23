@@ -2,7 +2,10 @@
 "use strict";
 const $=s=>document.querySelector(s);
 const FEATURED_HOLD=new Set(["maui-hale-pau-hana","perdido-key-beach","pleasant-beach-lake-ontario","blouberg-table-mountain"]);
-const state={sources:[],watch:[],selected:null,watchIndex:0,journeyTimer:null,imageTimer:null,heroTimer:null,setOffset:0,category:"all",favorites:new Set(JSON.parse(localStorage.getItem("ern-favorites")||"[]"))};
+function readSavedSet(key){try{return new Set(JSON.parse(localStorage.getItem(key)||"[]"))}catch{return new Set()}}
+function readSavedText(key,fallback){try{return localStorage.getItem(key)||fallback}catch{return fallback}}
+function writeSaved(key,value){try{localStorage.setItem(key,value)}catch{}}
+const state={sources:[],watch:[],selected:null,watchIndex:0,journeyTimer:null,imageTimer:null,heroTimer:null,setOffset:0,category:"all",favorites:readSavedSet("ern-favorites")};
 const translations={
  en:{playJourney:"Play journey",pauseJourney:"Pause journey"},
  th:{playJourney:"เล่นต่อเนื่อง",pauseJourney:"หยุดชั่วคราว"},
@@ -12,7 +15,7 @@ const translations={
  zh:{playJourney:"自动播放",pauseJourney:"暂停"},
  es:{playJourney:"Reproducir viaje",pauseJourney:"Pausar"}
 };
-let lang=localStorage.getItem("ern-language")||"en";if(!translations[lang])lang="en";
+let lang=readSavedText("ern-language","en");if(!translations[lang])lang="en";
 const t=k=>translations[lang]?.[k]||translations.en[k]||k;
 function cleanUrl(v){try{const u=new URL(v,location.href);return /^https?:$/.test(u.protocol)?u.href:null}catch{return null}}
 function truthLabel(s){if(s.truth==="LIVE_VIDEO")return"LIVE VIDEO";if(s.truth==="LIVE_IMAGE")return"LIVE IMAGE";if(s.truth==="EXTERNAL_LIVE")return"EXTERNAL LIVE";if(s.truth==="PARTNER")return"PARTNER";return"PREVIEW"}
@@ -103,7 +106,7 @@ function card(s,compact=false){
 function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map(s=>card(s)));$("#watchCount").textContent=state.watch.length;state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(state.watch[0])}
 function search(q){const x=String(q||"").trim().toLowerCase();const items=!x?state.sources.slice().sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,12):state.sources.filter(s=>[s.title,s.region,s.country,...(s.categories||[])].filter(Boolean).join(" ").toLowerCase().includes(x)).sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,24);$("#searchResults").replaceChildren(...items.map(s=>card(s,true)));$("#searchStatus").textContent=x?`${items.length} result${items.length===1?"":"s"}`:""}
 function renderMap(){const a=$("#atlas");a.replaceChildren();let count=0;for(const s of state.sources){const lat=Number(s.lat),lon=Number(s.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;const p=document.createElement("button");p.className="map-pin"+(isInside(s)?"":" external");p.type="button";p.title=`${s.title} — ${truthLabel(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s);a.append(p);count++}$("#mapNote").textContent=`${count} mapped current-window locations · green can play inside ERN · amber opens at the provider.`}
-function saveFavorites(){localStorage.setItem("ern-favorites",JSON.stringify([...state.favorites]))}
+function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}
 function renderSaved(){const items=state.sources.filter(s=>state.favorites.has(s.id));$("#savedResults").replaceChildren(...items.map(s=>card(s,true)));$("#savedEmpty").hidden=items.length>0}
 function stopImageTimer(){if(state.imageTimer){clearInterval(state.imageTimer);state.imageTimer=null}}
 function mountViewerNow(s){
@@ -113,8 +116,16 @@ function mountViewerNow(s){
  else{const box=document.createElement("div");box.className="external-box";const h=document.createElement("h3");h.textContent=s.title;const p=document.createElement("p");p.textContent="This current window is available at its official provider. ERN opens it there rather than pretending it is embedded here.";box.append(h,p);if(source){const a=document.createElement("a");a.href=source;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Open current source";box.append(a)}mount.append(box)}
 }
 function mountViewer(s){const stage=$("#viewerStage");stage.classList.add("changing");setTimeout(()=>{mountViewerNow(s);requestAnimationFrame(()=>stage.classList.remove("changing"))},170)}
-function openViewer(s){if(!s)return;state.selected=s;const i=state.watch.findIndex(x=>x.id===s.id);if(i>=0)state.watchIndex=i;$("#viewerTruth").textContent=truthLabel(s);$("#viewerTitle").textContent=s.title;$("#viewerPlace").textContent=[s.region,s.country,localTime(s)].filter(Boolean).join(" · ");$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";if($("#viewer").hidden){$("#viewer").hidden=false;$("#viewer").classList.add("opening");setTimeout(()=>$("#viewer").classList.remove("opening"),260)}mountViewer(s);document.body.style.overflow="hidden"}
-function closeViewer(){stopJourney();stopImageTimer();$("#viewer").hidden=true;$("#viewerStage").replaceChildren();document.body.style.overflow=""}
+function renderAlternates(s){
+ const host=$("#viewerAlternates");const same=state.sources.filter(x=>x.id!==s.id&&(x.placeId||x.id)===(s.placeId||s.id)&&x.health!=="OFFLINE");
+ host.replaceChildren();
+ if(!same.length){host.hidden=true;return}
+ const label=document.createElement("span");label.className="alt-label";label.textContent="More views here";host.append(label);
+ for(const alt of same){const b=document.createElement("button");b.type="button";b.className="alt-view";b.innerHTML="<strong></strong><small></small>";b.querySelector("strong").textContent=alt.title;b.querySelector("small").textContent=truthLabel(alt);b.onclick=()=>openViewer(alt);host.append(b)}
+ host.hidden=false;
+}
+function openViewer(s){if(!s)return;state.selected=s;const i=state.watch.findIndex(x=>x.id===s.id);if(i>=0)state.watchIndex=i;$("#viewerTruth").textContent=truthLabel(s);$("#viewerTitle").textContent=s.title;$("#viewerPlace").textContent=[s.region,s.country,localTime(s)].filter(Boolean).join(" · ");$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";renderAlternates(s);if($("#viewer").hidden){$("#viewer").hidden=false;$("#viewer").classList.add("opening");setTimeout(()=>$("#viewer").classList.remove("opening"),260)}mountViewer(s);document.body.style.overflow="hidden"}
+function closeViewer(){stopJourney();stopImageTimer();$("#viewer").hidden=true;$("#viewerStage").replaceChildren();$("#viewerAlternates").replaceChildren();$("#viewerAlternates").hidden=true;document.body.style.overflow=""}
 function move(d){if(!state.watch.length)return;state.watchIndex=(state.watchIndex+d+state.watch.length)%state.watch.length;openViewer(state.watch[state.watchIndex])}
 function updateJourneyButton(){$("#journeyToggle").textContent=state.journeyTimer?t("pauseJourney"):t("playJourney")}
 function startJourney(){if(state.journeyTimer)return;stopHeroRotation();state.journeyTimer=setInterval(()=>move(1),30000);updateJourneyButton()}
@@ -140,7 +151,7 @@ function initEvents(){
  $("#searchInput").oninput=e=>search(e.target.value);$("#clearSearch").onclick=()=>{$("#searchInput").value="";search("");$("#searchInput").focus()};
  $("#closeViewer").onclick=()=>{closeViewer();startHeroRotation()};$("#prevViewer").onclick=()=>move(-1);$("#nextViewer").onclick=()=>move(1);$("#journeyToggle").onclick=()=>state.journeyTimer?stopJourney():startJourney();$("#fullViewer").onclick=()=>$("#viewer").requestFullscreen?.();
  $("#favoriteViewer").onclick=()=>{const s=state.selected;if(!s)return;state.favorites.has(s.id)?state.favorites.delete(s.id):state.favorites.add(s.id);saveFavorites();$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";renderSaved();renderWatch()};
- $("#languageSelect").onchange=e=>{lang=e.target.value;localStorage.setItem("ern-language",lang);applyLanguage()};
+ $("#languageSelect").onchange=e=>{lang=e.target.value;writeSaved("ern-language",lang);applyLanguage()};
  document.addEventListener("keydown",e=>{if($("#viewer").hidden)return;if(e.key==="Escape"){closeViewer();startHeroRotation()}if(e.key==="ArrowRight")move(1);if(e.key==="ArrowLeft")move(-1)});
  document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")startHeroRotation();else stopHeroRotation()});
 }
