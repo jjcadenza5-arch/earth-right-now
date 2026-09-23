@@ -2036,5 +2036,34 @@
     "moment": 84,
     "story": "Compare high-alpine viewpoints before buying tickets or heading up the mountain.",
     "rightsBasis": "Current official Jungfrau webcam surface exists, but camera connections were reported offline during verification. ERN keeps it LINK_ONLY and DEGRADED until fresh working-camera evidence exists."
+  },
+  {
+    "id": "sottomarina-chioggia",
+    "placeId": "sottomarina-chioggia",
+    "title": "Sottomarina — Chioggia",
+    "provider": "Visit Chioggia",
+    "country": "Italy",
+    "region": "Chioggia",
+    "timeZone": "Europe/Rome",
+    "categories": [
+      "Beaches & Water",
+      "Beautiful Earth",
+      "Useful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.visitchioggia.it/en/",
+    "officialUrl": "https://www.visitchioggia.it/en/",
+    "embedUrl": null,
+    "checkedAt": "2026-09-23T07:01:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T07:01:00+07:00",
+    "failureReason": null,
+    "quality": 82,
+    "freshness": 90,
+    "moment": 84,
+    "story": "Check Sottomarina beach weather and conditions in real time before going.",
+    "rightsBasis": "Current official Visit Chioggia page explicitly offers a Sottomarina live webcam for real-time beach weather and conditions. ERN keeps it LINK_ONLY and does not infer embed permission."
   }
 ]
