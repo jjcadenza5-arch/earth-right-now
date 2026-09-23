@@ -1,3 +1,8 @@
+## 2026-09-23 — Daily operations failure propagation
+- All seven scheduled source, Atlas, provider, Watch Earth and operations reports now preserve the underlying command's exit status while also saving JSON through tee.
+- A failed provider/source report will fail the daily job instead of appearing green solely because the log was captured; reports and artifacts still publish through their always steps.
+- Current Watch Earth structural audit fills 20 distinct places across four UTC dayparts, but strict-current inside-ERN playback is zero. Embedded candidates remain stale until genuinely revalidated; provider pages alone do not certify human playback.
+
 ## 2026-09-23 — Exact Pages certificate diagnosis
 - Preserved the certificate-specific finding from the earlier unmerged diagnostic branch after its pipeline fix was superseded.
 - Domain health now reports PAGES_CUSTOM_CERT_NOT_PROVISIONED when DNS matches GitHub Pages but the endpoint still serves the generic *.github.io certificate.
