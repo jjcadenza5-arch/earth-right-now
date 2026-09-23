@@ -1,3 +1,10 @@
+## 2026-09-23 — Pages custom-domain failure isolation
+- GitHub Pages artifact deployment was succeeding while the post-deploy custom-domain check failed with a TLS hostname mismatch for earthrightnow.app.
+- The Pages workflow now runs ERN's DNS/TLS health diagnostic before origin certification and publishes the exact domain state to the workflow summary.
+- A DNS/TLS failure remains fail-closed, but it is now identified as a custom-domain infrastructure blocker rather than being conflated with a broken static artifact or application regression.
+- Exact-commit verification still runs only after the custom domain passes DNS/TLS/HTTPS health; no release gate is weakened.
+- Current external evidence still requires the domain/DNS owner to correct or allow GitHub Pages HTTPS provisioning before origin certification can pass.
+
 ## 2026-09-23 — ERN Guide runtime localization
 - Closed the gap between ERN’s seven-language interface and dynamic Guide responses.
 - Place-window, nearby-place, stay, surprise, live-now and no-current-view responses now follow the visitor’s selected language.
