@@ -194,6 +194,11 @@ function renderContext(s){
  near.replaceChildren();
  const nearby=state.sources.filter(x=>x.id!==s.id&&x.health==="HEALTHY"&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,d:distanceKm(s,x)})).filter(x=>Number.isFinite(x.d)).sort((a,b)=>a.d-b.d).slice(0,3);
  for(const item of nearby){const b=document.createElement("button");b.type="button";b.className="nearby-item";const label=document.createElement("strong");label.textContent=item.s.title;const meta=document.createElement("small");meta.textContent=item.d<1?"Nearby":Math.round(item.d)+" km";b.append(label,meta);b.onclick=()=>openViewer(item.s);near.append(b)}
+ const place=[s.region,s.country,s.title].filter(Boolean).join(" ");
+ const q=encodeURIComponent(place);
+ $("#planStay").href="https://www.google.com/search?q="+encodeURIComponent("hotels "+place);
+ $("#planEat").href="https://www.google.com/search?q="+encodeURIComponent("restaurants "+place);
+ $("#planDo").href="https://www.google.com/search?q="+encodeURIComponent("things to do "+place);
  box.hidden=!(story.textContent||tags.children.length||near.children.length);
 }
 function renderSaved(){const items=state.sources.filter(s=>state.favorites.has(s.id));$("#savedResults").replaceChildren(...items.map(s=>card(s,true)));$("#savedEmpty").hidden=items.length>0}
