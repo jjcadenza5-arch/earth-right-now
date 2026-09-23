@@ -202,6 +202,7 @@
         "CAMERA_EXACT",
         "PLACE_REFERENCE",
         "REGION_REFERENCE",
+        "DYNAMIC_ORBIT",
         null
       ]
     },
@@ -211,6 +212,22 @@
         "null"
       ],
       "pattern": "^https://"
+    },
+    "mapBehavior": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "DYNAMIC_UNPINNED",
+        null
+      ]
+    },
+    "coordinateNote": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "additionalProperties": true,
@@ -332,7 +349,11 @@
         ],
         "properties": {
           "coordinateBasis": {
-            "type": "string"
+            "enum": [
+              "CAMERA_EXACT",
+              "PLACE_REFERENCE",
+              "REGION_REFERENCE"
+            ]
           }
         }
       },
@@ -361,6 +382,35 @@
           "lon",
           "coordinateBasis"
         ]
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "coordinateBasis"
+        ],
+        "properties": {
+          "coordinateBasis": {
+            "const": "DYNAMIC_ORBIT"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "mapBehavior",
+          "coordinateNote"
+        ],
+        "properties": {
+          "mapBehavior": {
+            "const": "DYNAMIC_UNPINNED"
+          },
+          "lat": {
+            "type": "null"
+          },
+          "lon": {
+            "type": "null"
+          }
+        }
       }
     }
   ]
