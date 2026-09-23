@@ -7,7 +7,9 @@ const curl=run("curl",["--fail","--silent","--show-error","--location","--max-ti
 let state="OK";
 if(!dns4.ok&&!dns6.ok)state="DNS_UNRESOLVED";
 else if(!tls.ok)state="TLS_HANDSHAKE_FAILED";
-else if(!tls.out.includes(`DNS:${host}`)&&!tls.out.includes(`DNS:*.${host.split(".").slice(1).join(".")}`))state="TLS_HOSTNAME_MISMATCH";
+else if(!tls.out.includes(`DNS:${host}`)&&!tls.out.includes(`DNS:*.${host.split(".").slice(1).join(".")}`)){
+  state=/DNS:\*\.github\.io|subject=CN = \*\.github\.io/.test(tls.out)?"PAGES_CUSTOM_CERT_NOT_PROVISIONED":"TLS_HOSTNAME_MISMATCH";
+}
 else if(!curl.ok)state="HTTPS_REQUEST_FAILED";
 const report={host,state,dns:{ipv4:dns4.ok?dns4.out.split("\n").slice(0,8):[],ipv6:dns6.ok?dns6.out.split("\n").slice(0,8):[]},certificate:tls.out||tls.err,https:{ok:curl.ok,error:curl.ok?null:curl.err}};
 console.log(JSON.stringify(report,null,2));if(state!=="OK")process.exitCode=1;
