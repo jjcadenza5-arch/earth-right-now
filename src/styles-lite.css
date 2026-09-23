@@ -38,3 +38,13 @@ footer{display:flex;justify-content:space-between;gap:20px;align-items:center;pa
 .category{transition:background .16s ease,transform .16s ease}.category:hover{transform:translateY(-1px)}
 .surprise{transition:background .16s ease,border-color .16s ease}.surprise:hover{background:rgba(255,255,255,.08);border-color:#fff}
 @media(max-width:860px){.hero-script{display:none}.watch-globe{width:30px;height:30px;font-size:15px}}
+
+/* Product polish: richer Explore/My Earth cards without adding runtime weight */
+.result-card{display:grid;grid-template-columns:86px 1fr;grid-template-rows:auto auto 1fr;column-gap:13px;align-items:start;min-height:112px;overflow:hidden;padding:12px}
+.result-visual{grid-row:1 / span 3;width:86px;height:86px;border-radius:13px;overflow:hidden;display:block;background:#d8e5df;position:relative}
+.result-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(7,35,30,.14),transparent 60%)}
+.result-visual img{width:100%;height:100%;object-fit:cover;display:block}
+.result-card .truth{align-self:end;margin-top:3px}
+.result-card strong{font-family:Inter,ui-sans-serif,system-ui;font-size:15px;margin:5px 0 3px;line-height:1.2}
+.result-card small{font-size:11px;line-height:1.35}
+@media(max-width:560px){.result-card{grid-template-columns:72px 1fr}.result-visual{width:72px;height:72px}}
