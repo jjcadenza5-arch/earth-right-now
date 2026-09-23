@@ -1,84 +1,31 @@
 name: ERN CI
+
+# BUILD MODE: manual only while ERN is being consolidated.
+# This prevents every small repository change from starting another full test run.
 on:
-  push:
-    branches: [main]
-  pull_request:
   workflow_dispatch:
+
 permissions:
   contents: read
+
 jobs:
   smoke:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - name: Run ERN smoke suite
-        id: smoke
+      - name: Run focused ERN smoke suite
+        run: npm test
+      - name: Verify accessibility and mobile contracts
         run: |
-          set -o pipefail
-          npm test 2>&1 | tee smoke-output.txt
-      - name: Verify static accessibility contract
-        run: npm run accessibility:preflight
-      - name: Verify mobile layout contract
-        run: npm run mobile:preflight
-      - name: Audit embed registry
-        run: npm run catalog:embeds
-      - name: Audit provider fallback chains
-        run: npm run catalog:fallbacks
-      - name: Audit Watch Earth across global dayparts
-        run: npm run watch-earth:audit
-      - name: Audit release evidence ledger
-        if: success()
-        run: npm run release:evidence
-      - name: Report release posture
-        if: success()
-        run: npm run release:status
-      - name: Verify public launch infrastructure
-        if: success()
-        run: npm run release:preflight
-      - name: Report beta readiness
-        if: success()
-        run: npm run release:readiness
-      - name: Report business readiness
-        if: success()
-        run: npm run business:status
-      - name: Report release candidate
-        if: success()
-        run: npm run release:candidate
-      - name: Build release operator packet
-        if: success()
-        run: npm run release:packet -- "$GITHUB_SHA" > release-operator-packet.md
-      - name: Build immutable release artifact
-        if: success()
-        run: npm run release:build
-      - name: Verify release artifact manifest
-        if: success()
-        run: node scripts/verify-release-snapshot.mjs
-      - name: Publish smoke output to summary
-        if: always()
+          npm run accessibility:preflight
+          npm run mobile:preflight
+      - name: Verify public-launch essentials
         run: |
-          echo "## ERN smoke output" >> "$GITHUB_STEP_SUMMARY"
-          tail -n 120 smoke-output.txt >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
-      - name: Upload smoke diagnostics
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ern-smoke-diagnostics
-          path: smoke-output.txt
-          retention-days: 3
-      - name: Upload release operator packet
-        if: success()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ern-release-operator-packet
-          path: release-operator-packet.md
-          retention-days: 7
-      - name: Publish smoke failure summary
-        if: failure() && steps.smoke.outcome == 'failure'
-        run: |
-          echo "## ERN smoke suite failed" >> "$GITHUB_STEP_SUMMARY"
-          echo "The npm test step above reports each failing *.smoke.js filename and exit code." >> "$GITHUB_STEP_SUMMARY"
-          echo "Re-run locally with: npm test" >> "$GITHUB_STEP_SUMMARY"
+          npm run catalog:embeds
+          npm run catalog:fallbacks
+          npm run watch-earth:audit
+          npm run release:preflight

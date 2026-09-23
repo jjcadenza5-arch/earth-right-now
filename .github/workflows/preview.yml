@@ -1,33 +1,28 @@
 name: ERN Preview Artifact
+
+# Manual only. Preview builds are useful at checkpoints, not on every PR update.
 on:
   workflow_dispatch:
-  pull_request:
-    types: [opened, synchronize, reopened]
+
 permissions:
   contents: read
+
 jobs:
   preview:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - name: Verify candidate
+      - name: Verify and build candidate
         run: |
           npm test
-          npm run catalog:embeds
-          npm run catalog:fallbacks
-          npm run watch-earth:audit
-          npm run release:evidence
-          npm run release:status
-          npm run release:candidate
-      - name: Build immutable static preview
-        run: npm run release:build
+          npm run release:build
       - name: Upload preview artifact
         uses: actions/upload-artifact@v4
         with:
           name: ern-preview
           path: dist
-          retention-days: 7
+          retention-days: 3

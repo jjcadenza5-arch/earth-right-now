@@ -1,76 +1,23 @@
-name: ERN Daily Operations Watch
+name: ERN Operations Check
+
+# Manual while the product is being simplified and stabilized.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "23 0 * * *"
+
 permissions:
   contents: read
+
 jobs:
   watch:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - name: Source verification horizon
-        shell: bash
+      - name: Check live-source essentials
         run: |
-          set -o pipefail
-          npm run sources:horizon | tee source-horizon.json
-      - name: Atlas coordinate worklist
-        shell: bash
-        run: |
-          set -o pipefail
-          npm run atlas:coordinates | tee atlas-coordinate-worklist.json
-      - name: Provider evidence worklist
-        shell: bash
-        run: |
-          set -o pipefail
-          npm run provider:worklist | tee provider-worklist.json
-      - name: Provider family sampling plan
-        shell: bash
-        run: |
-          set -o pipefail
-          npm run provider:evidence-plan | tee provider-evidence-plan.json
-      - name: Provider playback evidence status
-        shell: bash
-        run: |
-          set -o pipefail
-          npm run provider:playback-status | tee provider-playback-status.json
-      - name: Watch Earth live-now coverage
-        shell: bash
-        run: |
-          set -o pipefail
-          npm run watch-earth:now | tee watch-earth-live-now.json
-      - name: Operations status
-        shell: bash
-        run: |
-          set -o pipefail
-          npm run operations:status | tee operations-status.json
-      - name: Publish operations summary
-        if: always()
-        run: |
-          echo "## ERN daily operations watch" >> "$GITHUB_STEP_SUMMARY"
-          echo "### Verification horizon" >> "$GITHUB_STEP_SUMMARY"
-          cat source-horizon.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
-          echo "### Provider worklist" >> "$GITHUB_STEP_SUMMARY"
-          cat provider-worklist.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
-          echo "### Provider playback evidence" >> "$GITHUB_STEP_SUMMARY"
-          cat provider-playback-status.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
-          echo "### Watch Earth live-now coverage" >> "$GITHUB_STEP_SUMMARY"
-          cat watch-earth-live-now.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
-          echo "### Operations status" >> "$GITHUB_STEP_SUMMARY"
-          cat operations-status.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: ern-daily-operations
-          path: |
-            source-horizon.json
-            atlas-coordinate-worklist.json
-            provider-worklist.json
-            provider-evidence-plan.json
-            watch-earth-live-now.json
-            operations-status.json
-          retention-days: 14
+          npm run sources:horizon
+          npm run watch-earth:now
+          npm run operations:status

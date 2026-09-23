@@ -1,48 +1,22 @@
 name: ERN Domain Health
+
+# Manual while ERN is in active build/consolidation mode.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "17 */6 * * *"
+
 permissions:
   contents: read
+
 jobs:
   diagnose:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - name: Diagnose apex domain
-        id: apex
-        continue-on-error: true
-        shell: bash
+      - name: Diagnose custom domain
         run: |
-          set -o pipefail
-          npm run domain:health -- earthrightnow.app | tee domain-apex.json
-      - name: Diagnose www domain
-        id: www
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          npm run domain:health -- www.earthrightnow.app | tee domain-www.json
-      - name: Publish diagnostics
-        if: always()
-        run: |
-          echo "## ERN domain health" >> "$GITHUB_STEP_SUMMARY"
-          echo "### earthrightnow.app" >> "$GITHUB_STEP_SUMMARY"
-          cat domain-apex.json >> "$GITHUB_STEP_SUMMARY" || true
-          echo "### www.earthrightnow.app" >> "$GITHUB_STEP_SUMMARY"
-          cat domain-www.json >> "$GITHUB_STEP_SUMMARY" || true
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: ern-domain-health
-          path: |
-            domain-apex.json
-            domain-www.json
-          retention-days: 7
-      - name: Enforce apex health
-        if: steps.apex.outcome != 'success'
-        run: exit 1
+          npm run domain:health -- earthrightnow.app
+          npm run domain:health -- www.earthrightnow.app
