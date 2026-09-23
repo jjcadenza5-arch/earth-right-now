@@ -686,3 +686,8 @@
 - Added DNS/TLS/HTTPS diagnostics directly to post-deploy verification, with a clear workflow summary when custom-domain infrastructure blocks certification.
 - The workflow still fails closed and only verifies the exact deployed commit after the domain is healthy.
 - Added regression coverage so future deployment failures stay actionable instead of appearing as generic curl failures.
+
+## 2026-09-23 — Complete ERN Guide language continuity
+- Main Guide replies, evidence caveats, weather boundaries, preference responses, contextual follow-ups and suggestion chips now follow ERN’s seven-language selection.
+- Localized follow-up labels resolve to canonical actions before execution so translated UI does not alter search, surprise, nearby, stay or live-now semantics.
+- Added regression coverage for all six non-English language paths while preserving English defaults and all source-truth gates.
