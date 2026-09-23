@@ -109,6 +109,14 @@
         <input id="searchInput" type="search" autocomplete="off" placeholder="Search Earth…">
         <button id="clearSearch">Clear</button>
       </div>
+      <div class="search-suggestions" aria-label="Quick searches">
+        <button data-query="New York">New York</button>
+        <button data-query="Switzerland">Switzerland</button>
+        <button data-query="Japan">Japan</button>
+        <button data-query="Beaches & Water">Beaches</button>
+        <button data-query="Mountains">Mountains</button>
+        <button data-query="Wildlife">Wildlife</button>
+      </div>
       <p class="search-status" id="searchStatus"></p>
       <div class="result-grid" id="searchResults"></div>
     </section>
@@ -153,7 +161,10 @@
       <div><span class="viewer-truth" id="viewerTruth"></span><strong id="viewerTitle"></strong><small id="viewerPlace"></small></div>
       <button id="closeViewer" aria-label="Close">×</button>
     </div>
-    <div class="viewer-stage" id="viewerStage"></div>
+    <div class="viewer-stage-wrap">
+      <div class="viewer-stage" id="viewerStage"></div>
+      <div class="viewer-loading" id="viewerLoading" hidden><span></span><strong>Connecting to this window…</strong><small>If the provider is slow, you can still open the original source.</small></div>
+    </div>
     <div class="viewer-alternates" id="viewerAlternates" hidden></div>
     <div class="viewer-context" id="viewerContext" hidden>
       <div class="context-story"><span class="context-kicker">ABOUT THIS WINDOW</span><p id="viewerStory"></p><div class="context-tags" id="viewerTags"></div></div>

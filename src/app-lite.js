@@ -198,10 +198,13 @@ function renderContext(s){
 }
 function renderSaved(){const items=state.sources.filter(s=>state.favorites.has(s.id));$("#savedResults").replaceChildren(...items.map(s=>card(s,true)));$("#savedEmpty").hidden=items.length>0}
 function stopImageTimer(){if(state.imageTimer){clearInterval(state.imageTimer);state.imageTimer=null}}
+let viewerLoadTimer=null;
+function clearViewerLoad(){if(viewerLoadTimer){clearTimeout(viewerLoadTimer);viewerLoadTimer=null}$("#viewerLoading").hidden=true}
+function beginViewerLoad(){clearViewerLoad();$("#viewerLoading").hidden=false;viewerLoadTimer=setTimeout(()=>{$("#viewerLoading").hidden=false},7000)}
 function mountViewerNow(s){
- stopImageTimer();const mount=$("#viewerStage");mount.replaceChildren();mount.style.background=generatedBackground(s);const source=cleanUrl(s.sourceUrl||s.officialUrl),link=$("#sourceViewer");if(source){link.href=source;link.hidden=false}else{link.removeAttribute("href");link.hidden=true}
- if(s.playback==="EMBED"&&cleanUrl(s.embedUrl)){const f=document.createElement("iframe");f.src=s.embedUrl;f.title=s.title;f.allow="autoplay; fullscreen; picture-in-picture";f.allowFullscreen=true;f.referrerPolicy="strict-origin-when-cross-origin";mount.append(f)}
- else if(s.playback==="IMAGE_REFRESH"&&cleanUrl(s.sourceUrl)){const img=document.createElement("img");img.alt=s.title;const refresh=()=>{try{const u=new URL(s.sourceUrl);u.searchParams.set("ern",Date.now());img.src=u.href}catch{img.src=s.sourceUrl}};refresh();state.imageTimer=setInterval(()=>{if(document.visibilityState==="visible")refresh()},Math.max(30000,Number(s.refreshMs)||60000));mount.append(img)}
+ stopImageTimer();clearViewerLoad();const mount=$("#viewerStage");mount.replaceChildren();mount.style.background=generatedBackground(s);const source=cleanUrl(s.sourceUrl||s.officialUrl),link=$("#sourceViewer");if(source){link.href=source;link.hidden=false}else{link.removeAttribute("href");link.hidden=true}
+ if(s.playback==="EMBED"&&cleanUrl(s.embedUrl)){beginViewerLoad();const f=document.createElement("iframe");f.src=s.embedUrl;f.title=s.title;f.allow="autoplay; fullscreen; picture-in-picture";f.allowFullscreen=true;f.referrerPolicy="strict-origin-when-cross-origin";f.onload=()=>clearViewerLoad();mount.append(f)}
+ else if(s.playback==="IMAGE_REFRESH"&&cleanUrl(s.sourceUrl)){beginViewerLoad();const img=document.createElement("img");img.alt=s.title;img.onload=()=>clearViewerLoad();img.onerror=()=>{$("#viewerLoading").hidden=false};const refresh=()=>{try{const u=new URL(s.sourceUrl);u.searchParams.set("ern",Date.now());img.src=u.href}catch{img.src=s.sourceUrl}};refresh();state.imageTimer=setInterval(()=>{if(document.visibilityState==="visible")refresh()},Math.max(30000,Number(s.refreshMs)||60000));mount.append(img)}
  else{const box=document.createElement("div");box.className="external-box";const h=document.createElement("h3");h.textContent=s.title;const p=document.createElement("p");p.textContent="This current window is available at its official provider. ERN opens it there rather than pretending it is embedded here.";box.append(h,p);if(source){const a=document.createElement("a");a.href=source;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Open current source";box.append(a)}mount.append(box)}
 }
 function mountViewer(s){const stage=$("#viewerStage");stage.classList.add("changing");setTimeout(()=>{mountViewerNow(s);requestAnimationFrame(()=>stage.classList.remove("changing"))},170)}
@@ -214,7 +217,7 @@ function renderAlternates(s){
  host.hidden=false;
 }
 function openViewer(s){if(!s)return;state.selected=s;const i=state.watch.findIndex(x=>x.id===s.id);if(i>=0)state.watchIndex=i;$("#viewerTruth").textContent=truthLabel(s);$("#viewerTitle").textContent=s.title;$("#viewerPlace").textContent=[s.region,s.country,localTime(s)].filter(Boolean).join(" · ");$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";renderAlternates(s);renderContext(s);if($("#viewer").hidden){$("#viewer").hidden=false;$("#viewer").classList.add("opening");setTimeout(()=>$("#viewer").classList.remove("opening"),260)}mountViewer(s);document.body.style.overflow="hidden"}
-function closeViewer(){stopJourney();stopImageTimer();$("#viewer").hidden=true;$("#viewerStage").replaceChildren();$("#viewerAlternates").replaceChildren();$("#viewerAlternates").hidden=true;$("#viewerContext").hidden=true;$("#nearbyList").replaceChildren();document.body.style.overflow=""}
+function closeViewer(){stopJourney();stopImageTimer();clearViewerLoad();$("#viewer").hidden=true;$("#viewerStage").replaceChildren();$("#viewerAlternates").replaceChildren();$("#viewerAlternates").hidden=true;$("#viewerContext").hidden=true;$("#nearbyList").replaceChildren();document.body.style.overflow=""}
 function move(d){if(!state.watch.length)return;state.watchIndex=(state.watchIndex+d+state.watch.length)%state.watch.length;openViewer(state.watch[state.watchIndex])}
 function updateJourneyButton(){$("#journeyToggle").textContent=state.journeyTimer?t("pauseJourney"):t("playJourney")}
 function startJourney(){if(state.journeyTimer)return;stopHeroRotation();state.journeyTimer=setInterval(()=>move(1),30000);updateJourneyButton()}
@@ -254,6 +257,7 @@ function initEvents(){
  document.querySelectorAll(".atlas-filter").forEach(b=>b.onclick=()=>{state.mapFilter=b.dataset.mapFilter||"all";renderMap()});
  document.querySelectorAll(".category").forEach(b=>b.onclick=()=>{stopHeroRotation();selectCategory(b.dataset.category,b);startHeroRotation()});
  $("#searchInput").oninput=e=>search(e.target.value);$("#clearSearch").onclick=()=>{$("#searchInput").value="";search("");$("#searchInput").focus()};
+ document.querySelectorAll(".search-suggestions button").forEach(b=>b.onclick=()=>{$("#searchInput").value=b.dataset.query||"";search($("#searchInput").value);scrollToId("search")});
  $("#closeViewer").onclick=()=>{closeViewer();startHeroRotation()};$("#prevViewer").onclick=()=>move(-1);$("#nextViewer").onclick=()=>move(1);$("#journeyToggle").onclick=()=>state.journeyTimer?stopJourney():startJourney();$("#fullViewer").onclick=()=>$("#viewer").requestFullscreen?.();
  $("#favoriteViewer").onclick=()=>{const s=state.selected;if(!s)return;state.favorites.has(s.id)?state.favorites.delete(s.id):state.favorites.add(s.id);saveFavorites();$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";renderSaved();renderWatch()};
  $("#languageSelect").onchange=e=>{lang=e.target.value;writeSaved("ern-language",lang);applyLanguage()};
