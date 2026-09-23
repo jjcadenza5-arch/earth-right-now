@@ -12,7 +12,7 @@ must(c.includes(":focus-visible"),"visible focus styles missing");
 must(c.includes("@media(prefers-reduced-motion:reduce)"),"reduced-motion handling missing");
 must(c.includes("env(safe-area-inset-bottom)"),"mobile safe-area handling missing");
 must(a.includes('e.key==="Escape"')&&a.includes('e.key==="ArrowRight"')&&a.includes('e.key==="ArrowLeft"'),"viewer keyboard navigation missing");
-must(a.includes("state.lastFocus")&&a.includes(".focus?.()"),"viewer focus restoration missing");
+must(a.includes("state.lastFocus")&&a.includes("state.lastFocus.focus()"),"viewer focus restoration missing");
 must(h.includes('role="status"')&&h.includes('aria-live="polite"'),"live status messaging missing");
 if(fail.length){console.error(JSON.stringify({ok:false,fail},null,2));process.exit(1)}
 console.log(JSON.stringify({ok:true,skipLink:true,viewerDialog:true,guideNamed:true,atlasNamed:true,focusVisible:true,reducedMotion:true,safeArea:true,keyboardViewer:true,focusRestore:true},null,2));
