@@ -1,0 +1,15 @@
+{
+  "previousKnownGoodCommit": "a41ad2e49755d31344e8c0f04ca7338867f05d57",
+  "rehearsalBranch": "rollback-proof-20260923",
+  "method": "Non-destructive rollback rehearsal: preserve a branch at a previously successful deployed commit, verify that commit remains reachable, and document the production rollback command/path without repointing main during normal operation.",
+  "procedure": [
+    "Confirm the current deployment is unhealthy and identify the prior known-good commit.",
+    "Move main back to the known-good commit using GitHub ref update.",
+    "Allow the single Pages workflow to deploy that commit.",
+    "Verify Home, Watch Earth, one embedded provider, and one external-provider route.",
+    "Only then resume forward fixes from a new commit."
+  ],
+  "verifiedAt": "2026-09-23T20:18:00+07:00",
+  "verified": true,
+  "note": "The rollback rehearsal branch points at the known-good deployed commit. Production main was not rolled back because the live site is healthy."
+}

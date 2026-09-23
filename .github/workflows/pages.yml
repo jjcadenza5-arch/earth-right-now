@@ -29,6 +29,8 @@ on:
       - "scripts/mobile-layout-preflight.mjs"
       - "scripts/accessibility-preflight.mjs"
       - "scripts/performance-preflight.mjs"
+      - "scripts/rollback-preflight.mjs"
+      - "data/rollback-proof.json"
       - "scripts/build-release-snapshot.mjs"
       - "scripts/build-destination-pages.mjs"
       - ".github/workflows/pages.yml"
@@ -68,6 +70,8 @@ jobs:
         run: node scripts/accessibility-preflight.mjs
       - name: Performance preflight
         run: node scripts/performance-preflight.mjs
+      - name: Rollback preflight
+        run: node scripts/rollback-preflight.mjs
       - name: Build static release
         run: npm run release:build
       - uses: actions/upload-pages-artifact@v4
