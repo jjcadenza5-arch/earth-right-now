@@ -312,3 +312,60 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
   .viewer-bottom button,.viewer-bottom a{font-size:10px;padding:7px 10px}
   .mobile-dock,.guide-launcher{display:none!important}
 }
+
+/* Landscape action dock: always reachable above mobile browser chrome */
+@media (orientation:landscape) and (max-height:520px){
+  .viewer{padding-bottom:76px}
+  .viewer-bar #closeViewer{flex:0 0 38px;width:38px;height:38px;display:grid;place-items:center}
+  .viewer-bottom{
+    position:fixed!important;
+    left:8px;
+    right:8px;
+    bottom:max(8px,env(safe-area-inset-bottom));
+    width:auto;
+    z-index:40;
+    display:flex!important;
+    flex-direction:row!important;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+    padding:7px 9px!important;
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:16px;
+    background:rgba(2,18,16,.94)!important;
+    backdrop-filter:blur(14px);
+    box-shadow:0 10px 30px rgba(0,0,0,.35)
+  }
+  .viewer-bottom .journey,.viewer-bottom .viewer-actions{
+    width:auto!important;
+    flex:0 1 auto;
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    gap:6px!important;
+    align-items:center;
+    justify-content:center
+  }
+  .viewer-bottom button,.viewer-bottom a{
+    min-height:34px;
+    font-size:9px!important;
+    line-height:1;
+    padding:7px 9px!important;
+    white-space:nowrap
+  }
+  #journeyToggle{display:none}
+  #favoriteViewer{width:34px;padding-inline:0!important}
+  #fullViewer{
+    display:inline-flex!important;
+    align-items:center;
+    justify-content:center;
+    background:white!important;
+    color:#123b34!important;
+    border-color:white!important;
+    font-weight:800
+  }
+}
+@media (orientation:landscape) and (max-height:430px){
+  .viewer-bottom{left:6px;right:6px;bottom:max(6px,env(safe-area-inset-bottom));padding:6px 7px!important}
+  .viewer-bottom button,.viewer-bottom a{font-size:8px!important;padding:6px 8px!important;min-height:32px}
+  #sourceViewer{display:none}
+}
