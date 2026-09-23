@@ -8,6 +8,7 @@ for(const href of ["./for-places.html","./now-moments.html","./about.html","./pr
 for(const fn of ["function search(","function renderMap(","function renderLocalEarth(","function guideResponse(","function runGuide("])must(app.includes(fn),`runtime capability missing: ${fn}`);
 must(css.includes("BlankMap-Equirectangular"),"Living Atlas lost its real-map base");
 must(css.includes(".guide-panel"),"ERN Guide visual doorway missing");
+must(css.includes("Mockup fidelity lock"),"approved ERN mockup fidelity layer missing");
 must(css.includes(".local-earth-section"),"Local Earth styling missing");
 must(css.includes(".participate-section"),"places/cameras/moments participation surface missing");
 must(/(payment or partner status never buys editorial ranking|no ranking for sale)/i.test(places),"commercial no-paid-ranking guardrail missing");

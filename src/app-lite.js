@@ -168,11 +168,21 @@ function generatedBackground(s){
  return"radial-gradient(circle at 65% 24%,rgba(155,220,190,.62),transparent 20%),linear-gradient(145deg,#5a8b7a,#2d6659 52%,#153f35)";
 }
 function posterMarkup(s){const img=cleanUrl(s.thumbnailUrl);return img?`<img src="${img.replace(/"/g,"&quot;")}" alt="" loading="lazy">`:""}
+function scenicPoster(s){
+ const c=cats(s),wrap=document.createElement("div");wrap.className="scenic-poster";
+ if(/mountain|volcano|alps|snow|ski/.test(c))wrap.dataset.scene="mountain";
+ else if(/beach|water|sea|harbour|coast|surf/.test(c))wrap.dataset.scene="water";
+ else if(/wildlife|animal|zoo|aquarium/.test(c))wrap.dataset.scene="wildlife";
+ else if(/city|street|skyline|harbour/.test(c))wrap.dataset.scene="city";
+ else wrap.dataset.scene="earth";
+ wrap.innerHTML='<span class="scene-sun"></span><span class="scene-back"></span><span class="scene-front"></span>';
+ return wrap;
+}
 function renderHero(s){
  state.selected=s;if(!s)return;const mount=$("#heroLive");mount.classList.add("is-changing");
  setTimeout(()=>{mount.replaceChildren();mount.style.background=generatedBackground(s);const img=cleanUrl(s.thumbnailUrl);
-  if(img){const el=document.createElement("img");el.src=img;el.alt="";el.decoding="async";mount.append(el)}
-  else if(allowAmbientLive()&&s.playback==="EMBED"&&cleanUrl(s.embedUrl)){const f=document.createElement("iframe");f.src=s.embedUrl;f.title=s.title;f.allow="autoplay; fullscreen; picture-in-picture";f.loading="eager";f.referrerPolicy="strict-origin-when-cross-origin";f.tabIndex=-1;mount.append(f)}
+  if(img){const el=document.createElement("img");el.src=img;el.alt="";el.decoding="async";el.onerror=()=>{el.remove();mount.append(scenicPoster(s))};mount.append(el)}
+  else{mount.append(scenicPoster(s))}
   $("#heroTitle").textContent=s.title;$("#heroMeta").textContent=[s.region,s.country,momentSignal(s).label,localTime(s)].filter(Boolean).join(" · ");$("#heroTruth").textContent=publicTruth(s);$("#heroLocation").dataset.truth=truthTone(s);$("#heroDot").dataset.truth=truthTone(s);mount.classList.remove("is-changing");
  },180);
 }
@@ -189,8 +199,7 @@ function card(s,compact=false,index=-1){
    b.prepend(compactVisual(s));b.querySelector(".truth").textContent=publicTruth(s);b.querySelector(".verify-mini").textContent=verificationLabel(s);b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(" · ");
  }
  else{b.innerHTML=`<div class="card-visual"></div><div class="card-body"><div class="card-kicker"><span></span><span></span></div><strong></strong><small></small><span class="card-favorite" aria-hidden="true">${state.favorites.has(s.id)?"♥":"♡"}</span></div>`;const v=b.querySelector(".card-visual");v.style.background=generatedBackground(s);v.innerHTML=posterMarkup(s);
- const miniLive=allowAmbientLive()&&index>=0&&index<3&&globalThis.innerWidth>=1100&&s.playback==="EMBED"&&isInside(s)&&cleanUrl(s.embedUrl);
- if(miniLive&&!v.querySelector("img")){const f=document.createElement("iframe");f.src=s.embedUrl;f.title=s.title+" live preview";f.loading="lazy";f.tabIndex=-1;f.setAttribute("aria-hidden","true");f.allow="autoplay; fullscreen; picture-in-picture";f.referrerPolicy="strict-origin-when-cross-origin";v.append(f);b.classList.add("has-live-preview")}
+ if(!v.querySelector("img"))v.append(scenicPoster(s));
  b.dataset.truth=truthTone(s);b.querySelector(".card-kicker span:first-child").textContent=publicTruth(s);b.querySelector(".card-kicker span:last-child").textContent=[momentSignal(s).label,localTime(s)].filter(Boolean).join(" · ");b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(", ")}
  b.onclick=()=>openViewer(s);return b;
 }
@@ -450,7 +459,7 @@ function initSectionSpy(){
  for(const [id] of map){const el=document.getElementById(id);if(el)obs.observe(el)}
 }
 function initEvents(){
- $("#homeBtn").onclick=()=>scrollToId("home");$("#homeNav").onclick=()=>scrollToId("home");
+ $("#homeBtn").onclick=()=>scrollToId("home");$("#homeNav").onclick=()=>scrollToId("home");$("#topSearch").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#topAtlas").onclick=()=>scrollToId("map");
  $("#guideLauncher").onclick=()=>$("#guidePanel").hidden?openGuide():closeGuide();$("#guideClose").onclick=closeGuide;$("#heroGuide").onclick=openGuide;
  $("#guideForm").onsubmit=e=>{e.preventDefault();const q=$("#guideInput").value.trim();if(q)runGuide(q)};
  document.querySelectorAll("[data-guide]").forEach(b=>b.onclick=()=>{$("#guideInput").value=b.dataset.guide||"";runGuide($("#guideInput").value)});

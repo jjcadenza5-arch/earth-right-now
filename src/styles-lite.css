@@ -227,3 +227,22 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .guide-form{display:grid;grid-template-columns:1fr auto;gap:7px;margin:12px 0}.guide-form input{min-width:0;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:white;border-radius:12px;padding:10px 11px;font-size:10px}.guide-form input::placeholder{color:#83a199}.guide-form button{border:0;background:white;color:#173f37;border-radius:12px;padding:0 13px;font-size:9px;font-weight:800}
 .guide-reply{padding:10px 11px;border-left:2px solid #63a99a;background:rgba(255,255,255,.035);color:#d6e4e0;font-size:10px;line-height:1.5}.guide-results{display:grid;gap:6px;margin-top:9px}.guide-result{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035);color:white;border-radius:12px;padding:9px 10px;text-align:left;text-decoration:none}.guide-result:hover{background:rgba(255,255,255,.075)}.guide-result strong{display:block;font-size:10px}.guide-result small{display:block;margin-top:2px;color:#91aea6;font-size:8px}.guide-result-link{font-size:9px;font-weight:700}.guide-links{display:flex;gap:10px;margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,.08)}.guide-links a{color:#9fc9bf;font-size:8px}
 @media(max-width:600px){.guide-launcher{right:12px;bottom:76px}.guide-panel{right:12px;bottom:124px;max-height:calc(100vh - 150px)}}
+
+/* Mockup fidelity lock: proportions, clarity and graceful visual fallback */
+.topbar{height:96px;padding-inline:3.7vw}.brand img{width:64px;height:64px;border-radius:18px}.brand strong{font-size:25px}.brand small{font-size:12px;letter-spacing:.2em}
+nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
+.hero{height:400px;min-height:400px;max-height:400px}.hero-copy{left:4.4vw;width:min(710px,54vw)}.hero h1{font-size:clamp(58px,5.4vw,82px);line-height:.88}.hero-tagline{font-size:25px}.hero-deck{max-width:620px}
+.hero-shade{background:linear-gradient(90deg,rgba(1,18,16,.84) 0,rgba(3,27,24,.54) 31%,rgba(4,27,25,.03) 70%),linear-gradient(0deg,rgba(2,18,15,.22),transparent 55%)}
+.category-bar{padding:11px 2.4vw}.category{min-height:72px}.now-strip{display:none}
+.watch-section{padding-top:18px}.window-grid{gap:12px}.window-card{min-height:230px}
+.scenic-poster{position:absolute;inset:0;overflow:hidden;background:linear-gradient(180deg,#62aeca 0%,#4d9cb7 34%,#0e4050 100%)}
+.scenic-poster .scene-sun{position:absolute;width:28%;aspect-ratio:1;border-radius:50%;right:12%;top:6%;background:radial-gradient(circle,rgba(255,238,174,.95) 0,rgba(255,215,122,.48) 32%,rgba(255,214,128,0) 70%);filter:blur(1px)}
+.scenic-poster .scene-back,.scenic-poster .scene-front{position:absolute;left:-8%;right:-8%;bottom:-10%;height:56%;background:#215c5a;clip-path:polygon(0 78%,12% 60%,23% 67%,37% 34%,50% 62%,63% 43%,77% 66%,89% 52%,100% 69%,100% 100%,0 100%)}
+.scenic-poster .scene-front{bottom:-14%;height:48%;background:#0b3735;opacity:.95;transform:scaleX(1.08)}
+.scenic-poster[data-scene="water"]{background:linear-gradient(180deg,#79c5dc,#45a0bf 43%,#0f657c 44%,#083e4d)}.scenic-poster[data-scene="water"] .scene-back{height:34%;background:#0b5f74;clip-path:polygon(0 40%,100% 22%,100% 100%,0 100%)}.scenic-poster[data-scene="water"] .scene-front{height:24%;background:#083d49;clip-path:polygon(0 55%,100% 35%,100% 100%,0 100%)}
+.scenic-poster[data-scene="city"]{background:linear-gradient(180deg,#66879d,#3a6178 48%,#142d3a)}.scenic-poster[data-scene="city"] .scene-back{height:50%;background:#183c49;clip-path:polygon(0 58%,7% 58%,7% 33%,12% 33%,12% 51%,18% 51%,18% 20%,25% 20%,25% 54%,32% 54%,32% 29%,39% 29%,39% 62%,47% 62%,47% 40%,54% 40%,54% 24%,61% 24%,61% 56%,69% 56%,69% 35%,76% 35%,76% 50%,84% 50%,84% 17%,91% 17%,91% 57%,100% 57%,100% 100%,0 100%)}
+.scenic-poster[data-scene="wildlife"]{background:linear-gradient(180deg,#c9ba7a,#8a8b55 48%,#45573b)}.scenic-poster[data-scene="wildlife"] .scene-back{background:#657348}.scenic-poster[data-scene="wildlife"] .scene-front{background:#394c32}
+.card-visual>.scenic-poster{position:absolute}.hero-live>.scenic-poster{position:absolute}
+.hero-live iframe{display:none!important}
+@media(max-width:1100px){.topbar{height:84px}.brand img{width:54px;height:54px}.nav-symbol{display:none}.hero{height:430px;min-height:430px;max-height:430px}.hero-copy{width:min(700px,68vw)}}
+@media(max-width:600px){.topbar{height:66px}.brand img{width:42px;height:42px}.hero{height:72vh;min-height:520px;max-height:none}}
