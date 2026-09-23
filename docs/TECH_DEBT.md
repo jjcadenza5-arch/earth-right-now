@@ -10,5 +10,5 @@
 - Source favorites now use the versioned favorites module/key.
 
 ## Still to integrate
-- Historical recovery is now ledgered and prioritized; 2 candidates remain pending fresh source/permission revalidation before any migration.
+- Historical recovery is now ledgered and prioritized; 1 candidate remains pending fresh source/permission revalidation before any migration.
 - Current source/provider verification remains an operational evidence task; automation may prioritize and record evidence but must not fabricate playback verification.

@@ -2094,5 +2094,34 @@
     "moment": 80,
     "story": "Check the official Chidori-ga-fuchi live camera and current Green Way conditions before visiting.",
     "rightsBasis": "Current official Visit Chiyoda Sakura Festival pages explicitly offer the Chidori-ga-fuchi live camera. ERN keeps the source LINK_ONLY and does not infer display permission."
+  },
+  {
+    "id": "volcan-tajogaite",
+    "placeId": "volcan-tajogaite",
+    "title": "Volcán Tajogaite",
+    "region": "La Palma",
+    "country": "Spain",
+    "timeZone": "Atlantic/Canary",
+    "provider": "Webcam La Palma",
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://webcam-lapalma.de/vulkan-tajogaite-cumbre-vieja/",
+    "officialUrl": "https://webcam-lapalma.de/vulkan-tajogaite-cumbre-vieja/",
+    "embedUrl": null,
+    "quality": 84,
+    "freshness": 90,
+    "moment": 84,
+    "categories": [
+      "Volcanoes & Earth",
+      "Mountains",
+      "Beautiful Earth"
+    ],
+    "story": "See the current Tajogaite volcano view across the Aridane Valley before exploring La Palma.",
+    "rightsBasis": "Current provider page explicitly describes its live webcam with a direct Tajogaite view. ERN links to the provider page only and does not infer third-party embedding permission.",
+    "checkedAt": "2026-09-23T07:10:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T07:10:00+07:00",
+    "failureReason": null
   }
 ]
