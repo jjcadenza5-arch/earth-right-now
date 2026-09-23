@@ -143,13 +143,20 @@
       <p class="map-note" id="mapNote"></p>
     </section>
 
-    <section class="section" id="saved">
+    <section class="section my-earth" id="saved">
       <div class="section-head">
-        <div><p class="eyebrow">MY EARTH</p><h2>Saved windows</h2></div>
-        <p>Favorites stay in this browser.</p>
+        <div><p class="eyebrow">MY EARTH</p><h2>Your places, kept local.</h2></div>
+        <p>Favorites and recent exploration stay in this browser. ERN uses them only to gently improve your “For this moment” set.</p>
+      </div>
+      <div class="my-earth-tools">
+        <strong>Saved windows</strong>
+        <button id="resetPersonal">Reset local suggestions</button>
       </div>
       <div class="result-grid" id="savedResults"></div>
       <p class="empty" id="savedEmpty">Nothing saved yet. Tap ♡ while watching a window.</p>
+      <div class="recent-head"><strong>Recently explored</strong><small id="recentNote"></small></div>
+      <div class="result-grid recent-grid" id="recentResults"></div>
+      <p class="empty" id="recentEmpty">Places you explore will appear here for quick return.</p>
     </section>
   </main>
 

@@ -135,3 +135,9 @@ nav .icon-nav.active{background:rgba(255,255,255,.08)}
 .local-personal{margin-left:auto;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:4px 7px;color:#8eafa7;font-size:8px;white-space:nowrap}
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #67adff;outline-offset:2px}
 @media(max-width:700px){.local-personal{display:none}}
+
+/* My Earth: transparent, local personalization */
+.my-earth{background:linear-gradient(180deg,#f3f6f3,#edf2ee)}
+.my-earth-tools,.recent-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:8px 0 12px}.my-earth-tools strong,.recent-head strong{font-size:13px}.my-earth-tools button{border:1px solid rgba(24,61,55,.14);background:white;color:#46665f;border-radius:999px;padding:7px 10px;font-size:9px}.my-earth-tools button:hover{border-color:rgba(24,61,55,.28)}
+.recent-head{margin-top:28px}.recent-head small{color:var(--paperMuted);font-size:9px;text-align:right}.recent-grid{opacity:.97}
+@media(max-width:600px){.my-earth-tools,.recent-head{align-items:flex-start;flex-direction:column;gap:7px}.recent-head small{text-align:left}}

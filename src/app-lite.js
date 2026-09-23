@@ -13,6 +13,7 @@ function recordInterest(s){
  for(const c of (s.categories||[]).slice(0,4))p.categories[c]=(p.categories[c]||0)+1;
  const trim=o=>Object.fromEntries(Object.entries(o).sort((a,b)=>b[1]-a[1]).slice(0,12));p.countries=trim(p.countries);p.categories=trim(p.categories);
  writeSaved("ern-profile",JSON.stringify(p));
+ const recent=readJSON("ern-recent",[]);const next=[s.id,...recent.filter(id=>id!==s.id)].slice(0,8);writeSaved("ern-recent",JSON.stringify(next));
 }
 const savedMode=readSavedText("ern-mode","auto");
 const savedCategory=readSavedText("ern-category","all");
@@ -218,7 +219,12 @@ function renderContext(s){
  $("#planDo").href="https://www.google.com/search?q="+encodeURIComponent("things to do "+place);
  box.hidden=!(story.textContent||tags.children.length||near.children.length);
 }
-function renderSaved(){const items=state.sources.filter(s=>state.favorites.has(s.id));$("#savedResults").replaceChildren(...items.map(s=>card(s,true)));$("#savedEmpty").hidden=items.length>0}
+function renderSaved(){
+ const items=state.sources.filter(s=>state.favorites.has(s.id));$("#savedResults").replaceChildren(...items.map(s=>card(s,true)));$("#savedEmpty").hidden=items.length>0;
+ const recentIds=readJSON("ern-recent",[]);const byId=new Map(state.sources.map(s=>[s.id,s]));const recent=recentIds.map(id=>byId.get(id)).filter(Boolean);
+ $("#recentResults").replaceChildren(...recent.map(s=>card(s,true)));$("#recentEmpty").hidden=recent.length>0;
+ const p=interactionProfile();$("#recentNote").textContent=Number(p.views||0)>=3?"Local suggestions are adapting to your exploration.":"Explore a few places and ERN will begin adapting locally.";
+}
 function stopImageTimer(){if(state.imageTimer){clearInterval(state.imageTimer);state.imageTimer=null}}
 let viewerLoadTimer=null;
 function clearViewerLoad(){if(viewerLoadTimer){clearTimeout(viewerLoadTimer);viewerLoadTimer=null}$("#viewerLoading").hidden=true}
@@ -238,7 +244,7 @@ function renderAlternates(s){
  for(const alt of same){const b=document.createElement("button");b.type="button";b.className="alt-view";b.innerHTML="<strong></strong><small></small>";b.querySelector("strong").textContent=alt.title;b.querySelector("small").textContent=truthLabel(alt);b.onclick=()=>openViewer(alt);host.append(b)}
  host.hidden=false;
 }
-function openViewer(s){if(!s)return;recordInterest(s);state.selected=s;const i=state.watch.findIndex(x=>x.id===s.id);if(i>=0)state.watchIndex=i;$("#viewerTruth").textContent=truthLabel(s);$("#viewerTitle").textContent=s.title;$("#viewerPlace").textContent=[s.region,s.country,localTime(s)].filter(Boolean).join(" · ");$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";renderAlternates(s);renderContext(s);if($("#viewer").hidden){$("#viewer").hidden=false;$("#viewer").classList.add("opening");setTimeout(()=>$("#viewer").classList.remove("opening"),260)}mountViewer(s);document.body.style.overflow="hidden"}
+function openViewer(s){if(!s)return;recordInterest(s);renderSaved();state.selected=s;const i=state.watch.findIndex(x=>x.id===s.id);if(i>=0)state.watchIndex=i;$("#viewerTruth").textContent=truthLabel(s);$("#viewerTitle").textContent=s.title;$("#viewerPlace").textContent=[s.region,s.country,localTime(s)].filter(Boolean).join(" · ");$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";renderAlternates(s);renderContext(s);if($("#viewer").hidden){$("#viewer").hidden=false;$("#viewer").classList.add("opening");setTimeout(()=>$("#viewer").classList.remove("opening"),260)}mountViewer(s);document.body.style.overflow="hidden"}
 function closeViewer(){stopJourney();stopImageTimer();clearViewerLoad();$("#viewer").hidden=true;$("#viewerStage").replaceChildren();$("#viewerAlternates").replaceChildren();$("#viewerAlternates").hidden=true;$("#viewerContext").hidden=true;$("#nearbyList").replaceChildren();document.body.style.overflow=""}
 function move(d){if(!state.watch.length)return;state.watchIndex=(state.watchIndex+d+state.watch.length)%state.watch.length;openViewer(state.watch[state.watchIndex])}
 function updateJourneyButton(){$("#journeyToggle").textContent=state.journeyTimer?t("pauseJourney"):t("playJourney")}
@@ -282,6 +288,7 @@ function initEvents(){
  document.querySelectorAll(".search-suggestions button").forEach(b=>b.onclick=()=>{$("#searchInput").value=b.dataset.query||"";search($("#searchInput").value);scrollToId("search")});
  $("#closeViewer").onclick=()=>{closeViewer();startHeroRotation()};$("#prevViewer").onclick=()=>move(-1);$("#nextViewer").onclick=()=>move(1);$("#journeyToggle").onclick=()=>state.journeyTimer?stopJourney():startJourney();$("#fullViewer").onclick=()=>$("#viewer").requestFullscreen?.();
  $("#favoriteViewer").onclick=()=>{const s=state.selected;if(!s)return;state.favorites.has(s.id)?state.favorites.delete(s.id):state.favorites.add(s.id);saveFavorites();$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";renderSaved();renderWatch()};
+ $("#resetPersonal").onclick=()=>{writeSaved("ern-profile",JSON.stringify({countries:{},categories:{},views:0}));writeSaved("ern-recent","[]");state.mode="auto";writeSaved("ern-mode","auto");renderWatch();renderWander();renderSaved();};
  $("#languageSelect").onchange=e=>{lang=e.target.value;writeSaved("ern-language",lang);applyLanguage()};
  document.addEventListener("keydown",e=>{if($("#viewer").hidden)return;if(e.key==="Escape"){closeViewer();startHeroRotation()}if(e.key==="ArrowRight")move(1);if(e.key==="ArrowLeft")move(-1)});
  document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")startHeroRotation();else stopHeroRotation()});
