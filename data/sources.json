@@ -156,8 +156,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Environment Canterbury",
-    "checkedAt": "2026-09-21T21:52:00+07:00",
-    "lastSuccessfulCheck": "2026-09-21T21:52:00+07:00",
+    "checkedAt": "2026-09-23T14:20:00Z",
+    "lastSuccessfulCheck": "2026-09-23T14:20:00Z",
     "failureReason": null,
     "quality": 84,
     "freshness": 96,
@@ -167,7 +167,10 @@
     "lon": 173.681,
     "timeZone": "Pacific/Auckland",
     "rightsBasis": "Official Environment Canterbury regional webcam page; retained as link-only because ERN has not documented display/embed permission.",
-    "officialUrl": "https://www.ecan.govt.nz/webcams"
+    "officialUrl": "https://www.ecan.govt.nz/webcams",
+    "freshnessEvidence": "Environment Canterbury's current regional webcam page identifies the South Bay, Kaikōura view and states that static webcam images update every five minutes.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.ecan.govt.nz/webcams"
   },
   {
     "id": "glenelg-sa",
@@ -191,8 +194,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Government of South Australia — Marine Safety",
-    "checkedAt": "2026-09-21T21:45:00+07:00",
-    "lastSuccessfulCheck": "2026-09-21T21:45:00+07:00",
+    "checkedAt": "2026-09-23T14:20:00Z",
+    "lastSuccessfulCheck": "2026-09-23T14:20:00Z",
     "failureReason": null,
     "quality": 88,
     "freshness": null,
@@ -200,7 +203,10 @@
     "story": "Official live coastal conditions at Glenelg Beach from South Australia's Marine Safety camera network.",
     "timeZone": "Australia/Adelaide",
     "rightsBasis": "Official South Australia Marine Safety webcam network provides live coastal images; ERN conservatively keeps provider playback link-only.",
-    "officialUrl": "https://marinesafety.sa.gov.au/web-cameras"
+    "officialUrl": "https://marinesafety.sa.gov.au/web-cameras",
+    "freshnessEvidence": "Current South Australia Marine Safety information states that Glenelg Beach is one of the live coastal cameras in its network and that the cameras provide real-time beach/sea-condition views.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://marinesafety.sa.gov.au/web-cameras"
   },
   {
     "id": "brighton-sa",
@@ -224,8 +230,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Government of South Australia — Marine Safety",
-    "checkedAt": "2026-09-21T21:45:00+07:00",
-    "lastSuccessfulCheck": "2026-09-21T21:45:00+07:00",
+    "checkedAt": "2026-09-23T14:20:00Z",
+    "lastSuccessfulCheck": "2026-09-23T14:20:00Z",
     "failureReason": null,
     "quality": 86,
     "freshness": null,
@@ -233,7 +239,10 @@
     "story": "Official live coastal conditions at Brighton Beach from South Australia's Marine Safety camera network.",
     "timeZone": "Australia/Adelaide",
     "rightsBasis": "Official South Australia Marine Safety webcam network provides live coastal images; ERN conservatively keeps provider playback link-only.",
-    "officialUrl": "https://marinesafety.sa.gov.au/web-cameras"
+    "officialUrl": "https://marinesafety.sa.gov.au/web-cameras",
+    "freshnessEvidence": "Current South Australia Marine Safety information states that Brighton Beach is one of the live coastal cameras in its network and that the cameras provide real-time beach/sea-condition views.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://marinesafety.sa.gov.au/web-cameras"
   },
   {
     "id": "mpala-watering-hole",
@@ -349,8 +358,8 @@
     "officialUrl": "https://www.verbier.ch/en/",
     "embedUrl": null,
     "thumbnailUrl": null,
-    "checkedAt": "2026-09-21T21:32:00+07:00",
-    "lastSuccessfulCheck": "2026-09-21T21:32:00+07:00",
+    "checkedAt": "2026-09-23T14:20:00Z",
+    "lastSuccessfulCheck": "2026-09-23T14:20:00Z",
     "failureReason": null,
     "quality": 86,
     "freshness": 92,
@@ -358,7 +367,10 @@
     "story": "The official tourism site presents its live cameras as a way to plan a ski day or hike before arrival.",
     "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented.",
     "lat": 46.096025,
-    "lon": 7.229023
+    "lon": 7.229023,
+    "freshnessEvidence": "The current Verbier tourism webcam page describes continuously updated live views from Verbier centre and the surrounding mountain area.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.verbier.ch/en/"
   },
   {
     "id": "dolomiti-superski",
@@ -1506,8 +1518,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Amden & Weesen Tourism",
-    "checkedAt": "2026-09-21T21:40:00+07:00",
-    "lastSuccessfulCheck": "2026-09-21T21:40:00+07:00",
+    "checkedAt": "2026-09-23T14:20:00Z",
+    "lastSuccessfulCheck": "2026-09-23T14:20:00Z",
     "failureReason": null,
     "quality": 96,
     "freshness": 95,
@@ -1516,7 +1528,10 @@
     "lat": 47.148,
     "lon": 9.142,
     "timeZone": "Europe/Zurich",
-    "rightsBasis": "Official tourism page provides live/current webcam imagery. ERN conservatively classifies the collection as current images and links to the provider."
+    "rightsBasis": "Official tourism page provides live/current webcam imagery. ERN conservatively classifies the collection as current images and links to the provider.",
+    "freshnessEvidence": "The current Amden & Weesen Tourism webcam page lists live views for Amden Village, Weesen–Lake Walensee and Betlis, with destination-specific descriptions.",
+    "coordinateBasis": "REGION_REFERENCE",
+    "coordinateSourceUrl": "https://www.amden-weesen.ch/en/plan-your-trip/webcams"
   },
   {
     "id": "oeschinensee-official",
@@ -1539,8 +1554,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Oeschinensee",
-    "checkedAt": "2026-09-21T21:40:00+07:00",
-    "lastSuccessfulCheck": "2026-09-21T21:40:00+07:00",
+    "checkedAt": "2026-09-23T14:20:00Z",
+    "lastSuccessfulCheck": "2026-09-23T14:20:00Z",
     "failureReason": null,
     "quality": 97,
     "freshness": 95,
@@ -1549,7 +1564,10 @@
     "lat": 46.498,
     "lon": 7.727,
     "timeZone": "Europe/Zurich",
-    "rightsBasis": "Official destination page says its webcams deliver the latest live images. ERN conservatively classifies them as current images and links to the provider."
+    "rightsBasis": "Official destination page says its webcams deliver the latest live images. ERN conservatively classifies them as current images and links to the provider.",
+    "freshnessEvidence": "The current Oeschinensee webcam page lists cameras for the Oeschinensee area, mountain station and toboggan run and shows a current page update timestamp.",
+    "coordinateBasis": "REGION_REFERENCE",
+    "coordinateSourceUrl": "https://www.oeschinensee.ch/en/webcams/"
   },
   {
     "id": "lake-lucerne-official",
@@ -2381,15 +2399,17 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Icelandic Meteorological Office",
-    "checkedAt": "2026-09-23T07:20:00+07:00",
-    "lastSuccessfulCheck": "2026-09-23T07:20:00+07:00",
+    "checkedAt": "2026-09-23T14:20:00Z",
+    "lastSuccessfulCheck": "2026-09-23T14:20:00Z",
     "failureReason": null,
     "quality": 86,
     "freshness": 94,
     "moment": 86,
     "story": "Official Icelandic Meteorological Office webcam views around Reykjavík for current sky, visibility and city conditions.",
-    "freshnessEvidence": "The official webcam page exposes the current frame plus recent time-stepped frames, indicating refreshed current imagery.",
-    "rightsBasis": "Official Icelandic Meteorological Office webcam page. ERN links to the provider and does not infer third-party display permission."
+    "freshnessEvidence": "The Icelandic Meteorological Office Reykjavík webcam page exposes current and recent time-stepped images and states that the webcams belong to the Icelandic Meteorological Office.",
+    "rightsBasis": "Official Icelandic Meteorological Office webcam page. ERN links to the provider and does not infer third-party display permission.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://en.vedur.is/weather/observations/webcams/reykjavik/"
   },
   {
     "id": "boulders-penguins-sanparks",

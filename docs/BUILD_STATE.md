@@ -1,3 +1,10 @@
+## 2026-09-23 — Official source refresh + Atlas provenance tranche E
+- Revalidated seven official-provider/current-source pages: Glenelg, Brighton, Amden/Weesen, Oeschinensee, Verbier, Reykjavík and Kaikōura.
+- Each record now carries source-specific freshness evidence from the current official provider surface rather than a cosmetic timestamp refresh.
+- Added conservative PLACE_REFERENCE/REGION_REFERENCE coordinate provenance without moving existing pins or claiming exact camera hardware positions.
+- Kaikōura remains LIVE_IMAGE because Environment Canterbury explicitly describes five-minute static-image refreshes; playback/permission semantics are unchanged.
+- Added regression coverage for all seven refreshed records.
+
 ## 2026-09-23 — Atlas coordinate provenance tranche D
 - Added conservative provenance to six additional mapped sources from official provider pages: Addo, Orpen, Boulders, Nossob and two Takayama views.
 - Existing coordinates were preserved; none of these sources is promoted to CAMERA_EXACT.
