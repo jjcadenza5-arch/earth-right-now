@@ -66,7 +66,7 @@ jobs:
           cat /tmp/ern-domain-health.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
           if [ "${{ steps.domain.outcome }}" != "success" ]; then
             echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "The Pages artifact deployed, but the custom domain is not yet safe to certify. Check apex DNS records and GitHub Pages HTTPS provisioning before treating this as an application regression." >> "$GITHUB_STEP_SUMMARY"
+            echo "The Pages artifact deployed, but the custom domain is not yet safe to certify. Follow the diagnostic nextAction above; DNS may already be correct. Do not treat this as an application regression." >> "$GITHUB_STEP_SUMMARY"
           fi
       - name: Enforce custom-domain health
         if: steps.domain.outcome != 'success'
