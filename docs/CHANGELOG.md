@@ -680,3 +680,9 @@
 ## 2026-09-23 — Localize dynamic ERN Guide responses
 - Dynamic Guide replies for place windows, nearby discovery, stays, surprise and live-now now respect ERN’s selected language across English, Thai, German, French, Spanish, Japanese and Chinese.
 - Added a dedicated presentation-only runtime copy layer plus regression coverage; discovery ranking and source-truth gates are unchanged.
+
+## 2026-09-23 — Separate Pages deployment health from custom-domain health
+- Diagnosed repeated Pages workflow failures as post-deploy TLS hostname mismatch at earthrightnow.app; artifact build/deploy jobs themselves were succeeding.
+- Added DNS/TLS/HTTPS diagnostics directly to post-deploy verification, with a clear workflow summary when custom-domain infrastructure blocks certification.
+- The workflow still fails closed and only verifies the exact deployed commit after the domain is healthy.
+- Added regression coverage so future deployment failures stay actionable instead of appearing as generic curl failures.
