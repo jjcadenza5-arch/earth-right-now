@@ -43,6 +43,10 @@ function baseScore(s){
  if(FEATURED_HOLD.has(s.id))n-=500;
  return n;
 }
+function heroPool(){
+ const inside=state.watch.filter(s=>isInside(s)&&s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id));
+ return inside.length?inside:state.watch;
+}
 function setProfile(){
  const slot=(Math.floor(Date.now()/14400000)+state.setOffset)%4;
  return[
@@ -58,12 +62,14 @@ function buildWatch(sources){
  if(state.category!=="all"&&state.category!=="random")pool=pool.filter(s=>categoryMatch(s,state.category));
  const sorted=[...pool].sort((a,b)=>(baseScore(b)+profile.boost(b))-(baseScore(a)+profile.boost(a)));
  const out=[],countries=new Map(),providers=new Map();
+ const reserveInside=sorted.filter(s=>isInside(s)&&s.health==="HEALTHY").slice(0,5);
+ for(const s of reserveInside){out.push(s);countries.set(s.country||"", (countries.get(s.country||"")||0)+1);providers.set(s.provider||"", (providers.get(s.provider||"")||0)+1)}
  for(const s of sorted){
-   if(out.length>=20)break;
+   if(out.length>=20)break;if(out.some(x=>x.id===s.id))continue;
    const country=s.country||"",provider=s.provider||"";
    const cc=countries.get(country)||0,pc=providers.get(provider)||0;
    if(cc>=2&&out.length<15)continue;
-   if(pc>=6&&out.length<15)continue;
+   if(pc>=7&&out.length<15)continue;
    out.push(s);countries.set(country,cc+1);providers.set(provider,pc+1);
  }
  for(const s of sorted){if(out.length>=20)break;if(!out.some(x=>x.id===s.id))out.push(s)}
@@ -100,10 +106,10 @@ function card(s,compact=false){
    b.innerHTML=`<span class="truth"></span><strong></strong><small></small>`;
    b.prepend(compactVisual(s));b.querySelector(".truth").textContent=truthLabel(s);b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(" · ");
  }
- else{b.innerHTML=`<div class="card-visual"></div><div class="card-body"><div class="card-kicker"><span></span><span></span></div><strong></strong><small></small><span class="card-favorite" aria-hidden="true">${state.favorites.has(s.id)?"♥":"♡"}</span></div>`;const v=b.querySelector(".card-visual");v.style.background=generatedBackground(s);v.innerHTML=posterMarkup(s);b.querySelector(".card-kicker span:first-child").textContent=s.truth==="LIVE_VIDEO"?"LIVE":truthLabel(s);b.querySelector(".card-kicker span:last-child").textContent=localTime(s);b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(", ")}
+ else{b.innerHTML=`<div class="card-visual"></div><div class="card-body"><div class="card-kicker"><span></span><span></span></div><strong></strong><small></small><span class="card-favorite" aria-hidden="true">${state.favorites.has(s.id)?"♥":"♡"}</span></div>`;const v=b.querySelector(".card-visual");v.style.background=generatedBackground(s);v.innerHTML=posterMarkup(s);b.querySelector(".card-kicker span:first-child").textContent=isInside(s)?"LIVE HERE":(s.truth==="EXTERNAL_LIVE"?"LIVE ↗":truthLabel(s));b.querySelector(".card-kicker span:last-child").textContent=localTime(s);b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(", ")}
  b.onclick=()=>openViewer(s);return b;
 }
-function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map(s=>card(s)));$("#watchCount").textContent=state.watch.length;state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(state.watch[0])}
+function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map(s=>card(s)));$("#watchCount").textContent=state.watch.length;state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(heroPool()[0]||state.watch[0])}
 function placeCard(group){
  const best=[...group].sort((a,b)=>baseScore(b)-baseScore(a))[0];
  const b=card(best,true);b.classList.add("place-card");
@@ -157,7 +163,9 @@ function startHeroRotation(){
  if(reduce||state.watch.length<2)return;
  state.heroTimer=setInterval(()=>{
    if(document.visibilityState!=="visible"||!$("#viewer").hidden)return;
-   state.watchIndex=(state.watchIndex+1)%state.watch.length;renderHero(state.watch[state.watchIndex]);
+   const hp=heroPool();if(!hp.length)return;
+   const current=hp.findIndex(x=>x.id===state.selected?.id);
+   const next=hp[(current+1+hp.length)%hp.length];state.watchIndex=Math.max(0,state.watch.findIndex(x=>x.id===next.id));renderHero(next);
  },45000);
 }
 function scrollToId(id){document.getElementById(id)?.scrollIntoView({behavior:"smooth",block:"start"})}
@@ -165,7 +173,7 @@ function applyLanguage(){document.documentElement.lang=lang;$("#languageSelect")
 function selectCategory(cat,button){state.category=cat;document.querySelectorAll(".category").forEach(x=>x.classList.remove("active"));button?.classList.add("active");if(cat==="random")state.setOffset++;renderWatch();if(state.watch.length){state.watchIndex=0;renderHero(state.watch[0])}scrollToId("watch")}
 function initEvents(){
  $("#homeBtn").onclick=()=>scrollToId("home");$("#homeNav").onclick=()=>scrollToId("home");$("#watchNav").onclick=()=>scrollToId("watch");$("#searchNav").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#destinationsNav").onclick=()=>$("#searchNav").click();$("#mapNav").onclick=()=>scrollToId("map");$("#savedNav").onclick=()=>scrollToId("saved");
- $("#heroWatch").onclick=()=>scrollToId("watch");$("#heroNext").onclick=()=>{if(!state.watch.length)return;stopHeroRotation();state.watchIndex=(state.watchIndex+1)%state.watch.length;renderHero(state.watch[state.watchIndex]);startHeroRotation()};
+ $("#heroWatch").onclick=()=>scrollToId("watch");$("#heroNext").onclick=()=>{const hp=heroPool();if(!hp.length)return;stopHeroRotation();const current=hp.findIndex(x=>x.id===state.selected?.id);const next=hp[(current+1+hp.length)%hp.length];state.watchIndex=Math.max(0,state.watch.findIndex(x=>x.id===next.id));renderHero(next);startHeroRotation()};
  $("#refreshSet").onclick=()=>{stopHeroRotation();state.setOffset++;renderWatch();if(state.watch.length){state.watchIndex=0;renderHero(state.watch[0])}startHeroRotation()};
  document.querySelectorAll(".category").forEach(b=>b.onclick=()=>{stopHeroRotation();selectCategory(b.dataset.category,b);startHeroRotation()});
  $("#searchInput").oninput=e=>search(e.target.value);$("#clearSearch").onclick=()=>{$("#searchInput").value="";search("");$("#searchInput").focus()};
@@ -175,6 +183,6 @@ function initEvents(){
  document.addEventListener("keydown",e=>{if($("#viewer").hidden)return;if(e.key==="Escape"){closeViewer();startHeroRotation()}if(e.key==="ArrowRight")move(1);if(e.key==="ArrowLeft")move(-1)});
  document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")startHeroRotation();else stopHeroRotation()});
 }
-async function boot(){applyLanguage();initEvents();try{const r=await fetch("./data/sources.json",{cache:"no-store"});if(!r.ok)throw new Error("source registry "+r.status);const rows=await r.json();state.sources=Array.isArray(rows)?rows.filter(s=>s&&s.id&&s.title):[];renderWatch();state.watchIndex=0;renderHero(state.watch[0]||state.sources[0]);search("");renderMap();renderSaved();startHeroRotation()}catch(err){console.error(err);$("#heroTitle").textContent="Earth will be back shortly";$("#heroMeta").textContent="ERN could not load its current-window catalog. Please refresh in a moment."}}
+async function boot(){applyLanguage();initEvents();try{const r=await fetch("./data/sources.json",{cache:"no-store"});if(!r.ok)throw new Error("source registry "+r.status);const rows=await r.json();state.sources=Array.isArray(rows)?rows.filter(s=>s&&s.id&&s.title):[];renderWatch();state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0]||state.sources[0]);search("");renderMap();renderSaved();startHeroRotation()}catch(err){console.error(err);$("#heroTitle").textContent="Earth will be back shortly";$("#heroMeta").textContent="ERN could not load its current-window catalog. Please refresh in a moment."}}
 boot();
 })();

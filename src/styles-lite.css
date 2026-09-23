@@ -62,3 +62,8 @@ footer{display:flex;justify-content:space-between;gap:20px;align-items:center;pa
 .place-card{position:relative}
 .view-count{position:absolute;right:10px;top:10px;border:1px solid rgba(24,61,55,.13);background:rgba(246,249,247,.94);color:#365f58;border-radius:999px;padding:4px 7px;font-size:9px;font-weight:800;letter-spacing:.04em}
 .place-card:hover .view-count{background:white}
+
+/* Curation cue: the first row prioritizes windows that actually play inside ERN */
+.window-card:not(.is-external) .card-kicker span:first-child{background:#2eb24b}
+.window-card.is-external .card-kicker span:first-child{background:#a87733}
+.card-kicker span:first-child{white-space:nowrap}
