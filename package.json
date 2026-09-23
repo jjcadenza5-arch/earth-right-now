@@ -29,7 +29,8 @@
     "mobile:preflight": "node scripts/mobile-layout-preflight.mjs",
     "release:operator-brief": "node scripts/release-operator-brief.mjs",
     "domain:health": "node scripts/domain-health.mjs",
-    "sources:horizon": "node scripts/verification-horizon.mjs"
+    "sources:horizon": "node scripts/verification-horizon.mjs",
+    "atlas:coordinates": "node scripts/atlas-coordinate-worklist.mjs"
   },
   "engines": {
     "node": ">=20"
