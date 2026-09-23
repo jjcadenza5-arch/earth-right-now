@@ -32,6 +32,14 @@ Recommended order:
 
 Only evidence for the exact tested candidate should be recorded.
 
+## Custom-domain certificate handoff — 2026-09-23
+
+The latest Pages run built and deployed commit `2700a42926be4d292388c37167bd7afcdfcd3c26` successfully. Its post-deploy check found the four correct GitHub Pages apex A records, no conflicting AAAA or restrictive CAA records, and state `PAGES_CUSTOM_CERT_NOT_PROVISIONED`: the TLS endpoint serves GitHub's generic `*.github.io` certificate rather than one covering `earthrightnow.app`. The public custom-domain origin therefore remains uncertified.
+
+Repository admin action: open **Settings → Pages** for `jjcadenza5-arch/earth-right-now` and confirm **Custom domain** is exactly `earthrightnow.app`. If absent, enter and save it; then allow GitHub's HTTPS provisioning to finish before enabling **Enforce HTTPS** when offered. Capture the Pages setting/status if it remains stuck. GitHub's guidance says HTTPS availability may take up to 24 hours. Only consider removing and re-adding the custom domain if the setting is already correct and provisioning remains stalled.
+
+This repository publishes through a custom GitHub Actions workflow. GitHub's documentation states that its repository `CNAME` file is ignored for that publishing mode; the Pages setting is the control that must be checked. Do not change the already-matching apex A records merely because the certificate is missing. Once GitHub serves a certificate for `earthrightnow.app`, rerun Pages deployment and require the exact-origin verification to pass.
+
 ## Current human boundary
 
 The public beta exposure decision has already been made. Engineering may keep the existing GitHub Pages beta deployable, but real browser/mobile/provider-playback/accessibility/performance/rollback evidence must still come from an actual tested candidate and must not be fabricated from CI or HTTP reachability. Any new host, commercial activation, account authorization, or materially different public exposure remains an explicit owner decision.
