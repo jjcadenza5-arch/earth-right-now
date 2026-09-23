@@ -14,19 +14,40 @@ jobs:
         with:
           node-version: 22
       - name: Source verification horizon
-        run: npm run sources:horizon | tee source-horizon.json
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run sources:horizon | tee source-horizon.json
       - name: Atlas coordinate worklist
-        run: npm run atlas:coordinates | tee atlas-coordinate-worklist.json
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run atlas:coordinates | tee atlas-coordinate-worklist.json
       - name: Provider evidence worklist
-        run: npm run provider:worklist | tee provider-worklist.json
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run provider:worklist | tee provider-worklist.json
       - name: Provider family sampling plan
-        run: npm run provider:evidence-plan | tee provider-evidence-plan.json
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run provider:evidence-plan | tee provider-evidence-plan.json
       - name: Provider playback evidence status
-        run: npm run provider:playback-status | tee provider-playback-status.json
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run provider:playback-status | tee provider-playback-status.json
       - name: Watch Earth live-now coverage
-        run: npm run watch-earth:now | tee watch-earth-live-now.json
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run watch-earth:now | tee watch-earth-live-now.json
       - name: Operations status
-        run: npm run operations:status | tee operations-status.json
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run operations:status | tee operations-status.json
       - name: Publish operations summary
         if: always()
         run: |
