@@ -1,0 +1,11 @@
+import assert from "node:assert/strict";
+import {certificateCoverage,domainNextAction} from "../src/pages-domain-diagnostics.js";
+const status=(certificate,host="earthrightnow.app",dnsState="OK")=>certificateCoverage({host,certificate,dnsState});
+assert.equal(status("X509v3 Subject Alternative Name: DNS:earthrightnow.app, DNS:www.earthrightnow.app"),"OK");
+assert.equal(status("X509v3 Subject Alternative Name: DNS:*.github.io"),"PAGES_CUSTOM_CERT_NOT_PROVISIONED");
+assert.equal(status("X509v3 Subject Alternative Name: DNS:*.app"),"TLS_HOSTNAME_MISMATCH");
+assert.equal(status("X509v3 Subject Alternative Name: DNS:*.example.org","www.example.org"),"OK");
+assert.equal(status("X509v3 Subject Alternative Name: DNS:*.example.org","example.org"),"TLS_HOSTNAME_MISMATCH");
+assert.equal(status("X509v3 Subject Alternative Name: DNS:*.github.io","earthrightnow.app","APEX_A_MISMATCH"),"TLS_HOSTNAME_MISMATCH");
+assert.match(domainNextAction({state:"PAGES_CUSTOM_CERT_NOT_PROVISIONED"}),/Settings.*Pages/);
+console.log("ERN exact Pages certificate diagnosis passed");
