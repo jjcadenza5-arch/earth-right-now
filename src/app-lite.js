@@ -41,6 +41,7 @@ function localTime(s){if(!s?.timeZone)return"";try{return new Intl.DateTimeForma
 function verificationAgeDays(s){const raw=s.lastSuccessfulCheck||s.checkedAt;if(!raw)return Infinity;const ms=Date.now()-Date.parse(raw);return Number.isFinite(ms)?Math.max(0,ms/86400000):Infinity}
 function verificationLabel(s){const d=verificationAgeDays(s);if(!Number.isFinite(d))return"Verification time unavailable";if(d<1)return"Verified within 24h";if(d<2)return"Verified yesterday";return"Verified "+Math.floor(d)+" days ago"}
 function featureEligible(s){return!!(s&&s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id)&&verificationAgeDays(s)<=21)}
+function watchEligible(s){return featureEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
 const momentWords={
  en:["Current","Morning light","Daylight","Evening light","Night"],
  th:["ปัจจุบัน","แสงยามเช้า","กลางวัน","แสงยามเย็น","กลางคืน"],
@@ -123,7 +124,7 @@ function setProfile(){
 }
 function buildWatch(sources){
  const profile=setProfile();
- let pool=sources.filter(featureEligible);
+ let pool=sources.filter(watchEligible);
  if(state.category!=="all"&&state.category!=="random")pool=pool.filter(s=>categoryMatch(s,state.category));
  if(state.category==="all"){
    const strict={
