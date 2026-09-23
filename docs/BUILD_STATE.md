@@ -1,3 +1,10 @@
+## 2026-09-23 — Dynamic Atlas exception repaired
+- Reconciled the stricter coordinate-provenance rules with ERN's existing International Space Station model.
+- DYNAMIC_ORBIT is now a first-class coordinate basis only when paired with DYNAMIC_UNPINNED; it must not carry static latitude/longitude.
+- The ISS and future moving viewpoints no longer appear as missing-coordinate maintenance debt.
+- Static PLACE_REFERENCE / REGION_REFERENCE / CAMERA_EXACT evidence rules remain strict and unchanged.
+- Added regression coverage for validation, schema semantics and maintenance/worklist behavior.
+
 ## 2026-09-23 — Official source refresh + Atlas provenance tranche F
 - Revalidated Auckland Viaduct Harbour, Pattaya City CCTV Streaming and Ski Arlberg against their current official provider surfaces.
 - Auckland's provider still exposes an Auckland Viaduct live view; Pattaya's official portal exposes a broad public Live View camera directory; Ski Arlberg reports active live mountain webcams.
