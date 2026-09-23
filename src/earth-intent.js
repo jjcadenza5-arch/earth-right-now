@@ -1,7 +1,7 @@
 const SYNONYMS={
  wildlife:["wildlife","animal","animals","elephant","bird","birds","zoo","nature","สัตว์","สัตว์ป่า","tier","tiere","animaux","faune","animales","fauna","動物","野生動物","动物","野生动物"],
- water:["beach","beaches","sea","ocean","coast","coastal","water","surf","harbour","harbor","ทะเล","ชายหาด","strand","meer","plage","mer","playa","mar","海","ビーチ","海滩","海灘"],
- mountains:["mountain","mountains","volcano","volcanoes","snow","summit","alpine","ภูเขา","ดอย","berg","berge","montagne","montagnes","montaña","montañas","山","山岳","山峰"],
+ water:["beach","beaches","sea","ocean","coast","coastal","water","surf","harbour","harbor","ทะเล","ชายหาด","strand","meer","plage","mer","playa","mar","海","海を","海が","ビーチ","海滩","海灘"],
+ mountains:["mountain","mountains","volcano","volcanoes","snow","summit","alpine","ภูเขา","ดอย","berg","berge","montagne","montagnes","montaña","montañas","山","山を","山が","山岳","山峰"],
  human:["city","cities","street","streets","people","urban","square","harbour","harbor","market","markets","promenade","walking street"],
  beautiful:["beautiful","scenic","view","views","relax","relaxing","calm","peaceful"],
  happening:["happening","active","event","busy","crowd","crowds","street life","local life"],
