@@ -2123,5 +2123,63 @@
     "checkedAt": "2026-09-23T07:10:00+07:00",
     "lastSuccessfulCheck": "2026-09-23T07:10:00+07:00",
     "failureReason": null
+  },
+  {
+    "id": "rio-copacabana-earthcam",
+    "placeId": "rio-copacabana",
+    "title": "Rio de Janeiro — Copacabana Beach",
+    "provider": "EarthCam",
+    "country": "Brazil",
+    "region": "Rio de Janeiro",
+    "timeZone": "America/Sao_Paulo",
+    "categories": [
+      "Beaches & Water",
+      "Cities & Streets",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.youtube.com/watch?v=bwQyNMjsG3k",
+    "officialUrl": "https://www.youtube.com/watch?v=bwQyNMjsG3k",
+    "embedUrl": null,
+    "checkedAt": "2026-09-23T07:10:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T07:10:00+07:00",
+    "failureReason": null,
+    "quality": 88,
+    "freshness": 90,
+    "moment": 90,
+    "story": "See Copacabana Beach and the Rio shoreline live before choosing when to go.",
+    "rightsBasis": "Current verified EarthCam live-stream page identifies Copacabana Beach in Rio. ERN keeps this LINK_ONLY and does not infer embed rights."
+  },
+  {
+    "id": "torres-del-paine-rio-serrano",
+    "placeId": "torres-del-paine",
+    "title": "Torres del Paine — Río Serrano",
+    "provider": "SkylineWebcams",
+    "country": "Chile",
+    "region": "Magallanes",
+    "timeZone": "America/Punta_Arenas",
+    "categories": [
+      "Mountains",
+      "Parks & Scenic",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.skylinewebcams.com/es/webcam/chile/magallanes-region/torres-del-paine/patagonia.html",
+    "officialUrl": "https://www.skylinewebcams.com/es/webcam/chile/magallanes-region/torres-del-paine/patagonia.html",
+    "embedUrl": null,
+    "checkedAt": "2026-09-23T07:10:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T07:10:00+07:00",
+    "failureReason": null,
+    "quality": 88,
+    "freshness": 90,
+    "moment": 90,
+    "story": "See the Río Serrano and Torres del Paine landscape live before planning a Patagonia day.",
+    "rightsBasis": "Current provider page explicitly presents a live webcam of Torres del Paine and Río Serrano. ERN keeps this LINK_ONLY and does not infer embed rights."
   }
 ]
