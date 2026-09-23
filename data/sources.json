@@ -255,7 +255,8 @@
     "recoveredFrom": "earth-right-now-live-v16.05.html",
     "lastSuccessfulCheck": "2026-09-21T21:25:00+07:00",
     "checkedAt": "2026-09-21T21:25:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A wildlife window onto the Mpala watering hole in Laikipia, useful for catching animal activity when conditions line up."
   },
   {
     "id": "kijihiki-plateau",
@@ -283,7 +284,8 @@
     "recoveredFrom": "earth-right-now-live-v16.05.html",
     "lastSuccessfulCheck": "2026-09-19",
     "checkedAt": "2026-09-19",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A broad Hokkaido highland view for checking the plateau, sky and mountain atmosphere before exploring the area."
   },
   {
     "id": "st-moritz",
@@ -758,7 +760,8 @@
     "rightsBasis": "Current CouchTourist destination page exposes an Embed this cam control and attribution guidance. ERN retains provider attribution.",
     "checkedAt": "2026-09-20T07:05:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:05:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A harbour window on Pico Island for seeing the Atlantic waterfront and local conditions around Lajes do Pico."
   },
   {
     "id": "roque-observatory",
@@ -785,7 +788,8 @@
     "rightsBasis": "Current CouchTourist destination page exposes an Embed this cam control and attribution guidance. ERN retains provider attribution.",
     "checkedAt": "2026-09-20T07:05:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:05:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A high-altitude La Palma view near Roque de los Muchachos, where mountain light and cloud conditions can change dramatically."
   },
   {
     "id": "cijin-beach-kaohsiung",
@@ -1504,7 +1508,8 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A Pacific-facing coastal window in Taitung for checking sea, sky and shoreline conditions."
   },
   {
     "id": "blouberg-table-mountain",
@@ -1532,7 +1537,8 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A Cape Town coastal perspective from Bloubergstrand toward Table Mountain and the Atlantic shoreline."
   },
   {
     "id": "perdido-key-beach",
@@ -1559,7 +1565,8 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A Gulf Coast beach view at Perdido Key for seeing shoreline, surf and sky conditions."
   },
   {
     "id": "sasagawa-nagare",
@@ -1586,7 +1593,8 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A Sea of Japan coastal view along Sasagawa Nagare, highlighting the shoreline, water and changing light."
   },
   {
     "id": "chihshang-paradise-road",
@@ -1613,7 +1621,8 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A rural Taitung landscape around Chihshang, with fields, open sky and mountain backdrop."
   },
   {
     "id": "ponte-di-legno-adamello",
@@ -1640,7 +1649,8 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "An alpine window around Ponte di Legno and the Adamello area for mountain, snow and weather atmosphere."
   },
   {
     "id": "pleasant-beach-lake-ontario",
@@ -1667,7 +1677,8 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A Lake Ontario shoreline view at Pleasant Beach for water, weather and lakeside conditions."
   },
   {
     "id": "maui-hale-pau-hana",
@@ -1695,7 +1706,8 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": "VISITOR_PLAYBACK_REJECTED_2026-09-20",
-    "lastFailedCheck": "2026-09-20T12:34:00+07:00"
+    "lastFailedCheck": "2026-09-20T12:34:00+07:00",
+    "story": "A Maui beach-and-surf perspective around Hale Pau Hana; ERN keeps it lower tier while playback quality is being reverified."
   },
   {
     "id": "bergen-ulriken",
@@ -1723,7 +1735,8 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A mountain-and-city perspective from Bergen’s Ulriken area, connecting fjord-side urban scenery with the surrounding highlands."
   },
   {
     "id": "waikiki-south-shore",
@@ -1752,7 +1765,8 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": "VISITOR_PLAYBACK_REJECTED_2026-09-20",
-    "lastFailedCheck": "2026-09-20T12:34:00+07:00"
+    "lastFailedCheck": "2026-09-20T12:34:00+07:00",
+    "story": "A Waikiki South Shore beach-and-city view; ERN keeps it lower tier while playback quality is being reverified."
   },
   {
     "id": "cold-lake-marina",
@@ -1780,7 +1794,8 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": "VISITOR_PLAYBACK_REJECTED_2026-09-20",
-    "lastFailedCheck": "2026-09-20T12:34:00+07:00"
+    "lastFailedCheck": "2026-09-20T12:34:00+07:00",
+    "story": "A lakeside marina view in Cold Lake, Alberta; ERN keeps it lower tier while playback quality is being reverified."
   },
   {
     "id": "st-johns-harbour",
@@ -1807,7 +1822,8 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A harbour-city window in St. John’s, Newfoundland and Labrador, for waterfront activity, sky and coastal atmosphere."
   },
   {
     "id": "metung-gippsland-lakes",
@@ -1834,7 +1850,8 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A waterside view around Metung and the Gippsland Lakes, useful for seeing lake, sky and village atmosphere."
   },
   {
     "id": "skeikampen-ski",
@@ -1861,7 +1878,8 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "story": "A mountain-resort view at Skeikampen for alpine conditions, landscape and seasonal snow."
   },
   {
     "id": "coogee-randwick-beaches",
