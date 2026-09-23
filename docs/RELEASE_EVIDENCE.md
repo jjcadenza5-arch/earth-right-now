@@ -30,16 +30,22 @@ The checked-in fail-closed ledger lives at `data/release-evidence.json`. A missi
 Use:
 - `npm run release:evidence` to audit the ledger and reject any `ok: true` record that lacks a note, valid timestamp, or freshness.
 - `npm run release:status` to combine the ledger with the current catalog and print the publication candidate posture.
+- `npm run release:packet -- <40-char candidate SHA>` to generate the human operator packet for the exact candidate. It includes the six release checks, provider-family playback representatives, candidate-bound record commands and rollback identifiers.
 
 Only record `ok: true` after the named real-world check has actually been performed. Notes should identify the environment/provider/check performed clearly enough that another maintainer can understand what was validated. Do not convert CI, source-health checks, or inferred behavior into browser/mobile/provider evidence.
 
 
 ## Recording a completed real-world check
 
-After actually performing a check, record it with:
+After actually performing a check, record it with the exact candidate commit:
 
-`npm run release:record -- <key> <pass|fail> "<what was checked, where, and the result>"`
+`npm run release:record -- <key> <pass|fail> <40-char candidate SHA> "<what was checked, where, and the result>"`
 
 Example keys are `browser`, `mobile`, `providerPlayback`, `accessibility`, `performance`, and `rollback`.
 
 The command writes a dated evidence object to the ledger. Then run `npm run release:evidence` and `npm run release:status` before committing it. This command is only a recorder; it does not perform or infer the check.
+
+
+## Candidate-specific operator packet
+
+Every green CI candidate now generates an `ern-release-operator-packet` artifact. The packet is intentionally a checklist, not proof: it names the deployed origin, exact candidate SHA, previous commit for rollback work, all six human evidence categories, and the representative inside-ERN provider windows that still need HUMAN_PLAYBACK confirmation. A provider URL returning HTTP 200 or an iframe loading is never converted into playback evidence.
