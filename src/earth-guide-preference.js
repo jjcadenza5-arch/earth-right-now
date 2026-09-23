@@ -10,10 +10,10 @@ export function earthGuidePreferenceReply(action,{hasVerifiedPriceData=false,has
  const copy=guideCopy(language);
  if(action?.type==="MISSING_CONTEXT")return{canAnswer:false,text:copy.missingContext};
  if(action?.type==="PRICE")return hasVerifiedPriceData
-  ?{canAnswer:true,text:language==="en"?"I can compare the verified price information currently connected to ERN for "+placeTitle+".":guideFormat("priceNo",{place:placeTitle},language).replace(/ยังไม่มีข้อมูลราคาปัจจุบันที่ตรวจสอบแล้วสำหรับ|hat für|ne dispose pas encore de prix actuels vérifiés pour|todavía no tiene precios actuales verificados para|について確認済みの現在価格はまだありません。|还没有 /,"")}
+  ?{canAnswer:true,text:guideFormat("priceYes",{place:placeTitle},language)}
   :{canAnswer:false,text:guideFormat("priceNo",{place:placeTitle},language)};
  if(action?.type==="QUIET")return hasQuietEvidence
-  ?{canAnswer:true,text:language==="en"?"I can use ERN’s current quietness evidence for "+placeTitle+".":guideFormat("quietNo",{place:placeTitle},language)}
+  ?{canAnswer:true,text:guideFormat("quietYes",{place:placeTitle},language)}
   :{canAnswer:false,text:guideFormat("quietNo",{place:placeTitle},language)};
  return null;
 }
