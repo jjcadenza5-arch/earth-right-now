@@ -15,10 +15,11 @@ const htmlIds=new Set([...index.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]));
 const jsIds=[...app.matchAll(/\$\("#([^"]+)"\)/g)].map(m=>m[1]);
 const missingIds=[...new Set(jsIds.filter(id=>!htmlIds.has(id)))];
 if(missingIds.length) throw new Error("app references missing HTML ids: "+missingIds.join(", "));
-for(const id of ["heroLive","watchGrid","searchResults","atlas","viewer","viewerStage","languageSelect","savedResults","recommendedResults"]){
+for(const id of ["heroLive","watchGrid","searchResults","atlas","viewer","viewerStage","languageSelect","savedResults","recommendedResults","guideLauncher","guidePanel","guideInput","guideResults"]){
   if(!htmlIds.has(id)) throw new Error("required lean UI id missing: "+id);
 }
 if(!app.includes('"golden"')) throw new Error("Golden Hour mode is missing from the lean runtime");
+if(!app.includes("function runGuide(")||!app.includes("function guideResponse(")) throw new Error("ERN Guide runtime is missing");
 if(!index.includes('data-mode="golden"')) throw new Error("Golden Hour control is missing from the lean page");
 if(manifest.theme_color!=="#062f2b") throw new Error("manifest theme color is out of sync with ERN");
 for(const shortcut of manifest.shortcuts||[]){

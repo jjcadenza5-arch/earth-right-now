@@ -218,6 +218,84 @@ function renderQuickSearches(){
  const items=[...rankedCountries,...typeQueries].slice(0,6);host.replaceChildren(...items.map(q=>{const b=document.createElement("button");b.type="button";b.dataset.query=q;b.textContent=q;return b}));
  host.querySelectorAll("button").forEach(b=>b.onclick=()=>{$("#searchInput").value=b.dataset.query||"";search($("#searchInput").value,{updateUrl:true});scrollToId("search")});
 }
+
+function guideWords(q){return normalizeSearch(q).split(/\s+/).filter(Boolean)}
+function guideIntent(q){
+ const x=normalizeSearch(q),words=guideWords(q),has=(...xs)=>xs.some(v=>x.includes(v));
+ return{
+   raw:String(q||"").trim(),words,
+   peaceful:has("peaceful","quiet","calm","relax","tranquil","สงบ","ruhig","calme","静か","安静","tranquilo"),
+   golden:has("golden","sunset","sunrise","evening light","morning light","แสง","sonnen","coucher","夕","日落","atardecer"),
+   night:has("night","night lights","city lights","กลางคืน","nacht","nuit","夜","夜晚","noche"),
+   local:has("small local","local place","not famous","village","market","farm","neighbourhood","neighborhood","ท้องถิ่น","lokal","local","地元","本地"),
+   wildlife:has("wildlife","animal","zoo","สัตว์","tier","faune","動物","野生","fauna"),
+   beach:has("beach","sea","coast","ocean","ชายหาด","strand","plage","海","playa"),
+   mountain:has("mountain","alps","snow","ski","ภูเขา","berg","montagne","山","montaña"),
+   city:has("city","street","people","busy","เมือง","stadt","ville","都市","城市","ciudad"),
+   surprise:has("surprise","random","unexpected","somewhere else","สุ่ม","überrasch","surpr","おまかせ","随机"),
+   current:has("right now","now","live","current","ตอนนี้","jetzt","maintenant","今","现在","ahora"),
+   near:has("near here","nearby","around here","ใกล้","in der nähe","près","近く","附近","cerca")
+ };
+}
+function guideScore(s,intent){
+ let n=baseScore(s),c=cats(s),m=momentSignal(s);
+ if(intent.peaceful)n+=/nature|mountain|beach|water|park|wildlife|forest|snow/.test(c)?42:-8;
+ if(intent.golden)n+=m.label==="Morning light"||m.label==="Evening light"?70:isScenic(s)?18:-15;
+ if(intent.night)n+=!isDay(s)&&isCity(s)?70:isCity(s)?12:-25;
+ if(intent.local){const l=localPlaceSignals(s);n+=l.worth?80:l.score*10-15}
+ if(intent.wildlife)n+=/wildlife|animal|zoo|aquarium/.test(c)?70:-16;
+ if(intent.beach)n+=/beach|water|sea|coast|island|harbour|harbor/.test(c)?60:-12;
+ if(intent.mountain)n+=/mountain|snow|ski|volcano|alps/.test(c)?60:-12;
+ if(intent.city)n+=isCity(s)?55:-10;
+ return n;
+}
+function guideNearby(seed){
+ if(!seed)return[];const lat=Number(seed.lat),lon=Number(seed.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon))return[];
+ return state.sources.filter(s=>s.id!==seed.id&&featureEligible(s)&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon)))
+   .map(s=>({s,d:distanceKm(seed,s)})).filter(x=>Number.isFinite(x.d)).sort((a,b)=>a.d-b.d).slice(0,4).map(x=>x.s);
+}
+function guideResponse(q){
+ const intent=guideIntent(q);
+ if(!intent.raw)return{text:"Tell me a mood, a place, or the kind of Earth you want to see.",items:[]};
+ if(/camera|business|cafe|café|shop|restaurant|place owner|my place/.test(normalizeSearch(q)))return{text:"If you have a place or public camera, ERN has a reviewed path for it. Payment never buys ranking.",items:[],link:{href:"./for-places.html",label:"For places & cameras"}};
+ if(/moment|upload|photo|picture|visitor/.test(normalizeSearch(q)))return{text:"Now Moments are the visitor-expression layer: short-lived observations first, then temporary photos and clips once moderation and privacy infrastructure are ready.",items:[],link:{href:"./now-moments.html",label:"About Now Moments"}};
+ if(intent.near&&state.selected){const items=guideNearby(state.selected);return{text:items.length?"Here are a few current places near "+state.selected.title+".":"I do not yet have enough mapped places near this window.",items};}
+ let pool=state.sources.filter(featureEligible);
+ if(intent.current)pool=pool.filter(s=>verificationAgeDays(s)<=7);
+ if(intent.local){const local=pool.filter(s=>localPlaceSignals(s).worth);if(local.length)pool=local}
+ let items=[...pool].sort((a,b)=>guideScore(b,intent)-guideScore(a,intent));
+ if(intent.surprise&&items.length){const top=items.slice(0,Math.min(18,items.length));const salt=(Date.now()/60000|0)%top.length;items=[top[salt],...top.filter((_,i)=>i!==salt)]}
+ items=items.slice(0,4);
+ let text="Here are a few places I would start with.";
+ if(intent.peaceful)text="For a quieter Earth, I’d start with these.";
+ else if(intent.golden)text="These have the strongest morning or evening-light potential right now.";
+ else if(intent.night)text="For night lights and visible city energy, try these.";
+ else if(intent.local)text="These are smaller local places worth discovering, not just famous destinations.";
+ else if(intent.wildlife)text="These are the strongest wildlife-oriented windows I can find right now.";
+ else if(intent.beach)text="For water, coast and beach views, I’d start here.";
+ else if(intent.mountain)text="For mountains, snow and high places, try these.";
+ else if(intent.city)text="For streets, cities and visible activity, these are good starting points.";
+ else if(intent.surprise)text="Let’s go somewhere you might not have searched for yourself.";
+ else if(intent.current)text="These are among ERN’s stronger recently verified windows right now.";
+ return{text,items};
+}
+function renderGuideResult(s){
+ const b=document.createElement("button");b.type="button";b.className="guide-result";
+ const copy=document.createElement("span"),title=document.createElement("strong"),meta=document.createElement("small");
+ title.textContent=s.title;meta.textContent=[publicTruth(s),momentSignal(s).label,s.country].filter(Boolean).join(" · ");copy.append(title,meta);
+ const arrow=document.createElement("span");arrow.textContent="→";b.append(copy,arrow);b.onclick=()=>{closeGuide();openViewer(s)};return b;
+}
+function runGuide(q){
+ const result=guideResponse(q);$("#guideReply").textContent=result.text;$("#guideResults").replaceChildren(...result.items.map(renderGuideResult));
+ if(result.link){const a=document.createElement("a");a.href=result.link.href;a.className="guide-result guide-result-link";a.textContent=result.link.label+" →";$("#guideResults").append(a)}
+}
+function openGuide(){
+ $("#guidePanel").hidden=false;$("#guideLauncher").setAttribute("aria-expanded","true");setTimeout(()=>$("#guideInput").focus(),40)
+}
+function closeGuide(){
+ $("#guidePanel").hidden=true;$("#guideLauncher").setAttribute("aria-expanded","false")
+}
+
 function search(q,options={updateUrl:false}){
  const raw=String(q||"").trim(),x=normalizeSearch(raw),tokens=x.split(/\s+/).filter(Boolean);
  if(options.updateUrl){const u=new URL(location.href);if(raw)u.searchParams.set("q",raw);else u.searchParams.delete("q");history.replaceState(null,"",u.pathname+u.search+u.hash)}
@@ -372,7 +450,11 @@ function initSectionSpy(){
  for(const [id] of map){const el=document.getElementById(id);if(el)obs.observe(el)}
 }
 function initEvents(){
- $("#homeBtn").onclick=()=>scrollToId("home");$("#homeNav").onclick=()=>scrollToId("home");$("#watchNav").onclick=()=>scrollToId("watch");$("#searchNav").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#destinationsNav").onclick=()=>scrollToId("destinations");$("#mapNav").onclick=()=>scrollToId("map");$("#savedNav").onclick=()=>scrollToId("saved");
+ $("#homeBtn").onclick=()=>scrollToId("home");$("#homeNav").onclick=()=>scrollToId("home");
+ $("#guideLauncher").onclick=()=>$("#guidePanel").hidden?openGuide():closeGuide();$("#guideClose").onclick=closeGuide;$("#heroGuide").onclick=openGuide;
+ $("#guideForm").onsubmit=e=>{e.preventDefault();const q=$("#guideInput").value.trim();if(q)runGuide(q)};
+ document.querySelectorAll("[data-guide]").forEach(b=>b.onclick=()=>{$("#guideInput").value=b.dataset.guide||"";runGuide($("#guideInput").value)});
+$("#watchNav").onclick=()=>scrollToId("watch");$("#searchNav").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#destinationsNav").onclick=()=>scrollToId("destinations");$("#mapNav").onclick=()=>scrollToId("map");$("#savedNav").onclick=()=>scrollToId("saved");
  $("#mobileWatch").onclick=()=>scrollToId("watch");$("#mobileExplore").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#mobileMap").onclick=()=>scrollToId("map");$("#mobileSaved").onclick=()=>scrollToId("saved");
  $("#heroWatch").onclick=()=>scrollToId("watch");$("#heroNext").onclick=()=>{const hp=heroPool();if(!hp.length)return;stopHeroRotation();const current=hp.findIndex(x=>x.id===state.selected?.id);const next=hp[(current+1+hp.length)%hp.length];state.watchIndex=Math.max(0,state.watch.findIndex(x=>x.id===next.id));renderHero(next);startHeroRotation()};
  $("#refreshSet").onclick=()=>{stopHeroRotation();state.mode="auto";writeSaved("ern-mode","auto");state.setOffset++;renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}startHeroRotation()};
