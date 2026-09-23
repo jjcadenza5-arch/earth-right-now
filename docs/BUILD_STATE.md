@@ -1,3 +1,15 @@
+## 2026-09-23 — Actual-clock Watch Earth operations
+- Added a separate live-now Watch Earth status report that evaluates the curated journey against the actual current clock instead of the deterministic catalog-time anchor used by CI regression audits.
+- Daily operations now exposes current journey count, shortfall, place/country/provider breadth, inside-ERN coverage, light mix and stale/expired catalog-source debt.
+- The deterministic four-daypart audit remains unchanged for reproducible structural testing; the new report prevents that historical anchor from being mistaken for present-time freshness.
+- The report is strictly observational: it does not refresh verification timestamps, change promotion eligibility, or substitute for HUMAN_PLAYBACK/release evidence.
+
+## 2026-09-23 — Fail-closed domain diagnostics
+- Fixed a shell-pipeline bug where `npm run domain:health | tee ...` could hide the diagnostic command's non-zero exit code.
+- Both the Pages origin-verification workflow and the scheduled domain-health workflow now enable `pipefail`, so a TLS/DNS/HTTPS failure remains a real workflow failure even while its JSON report is captured.
+- This closes a misleading state where the diagnostic step appeared successful while the certificate still did not cover earthrightnow.app.
+- Added regression coverage requiring the scheduled domain checks to preserve exit status through logging pipes.
+
 ## 2026-09-23 — Atlas pin precision disclosure
 - Living Atlas pin titles and accessible labels now disclose coordinate precision when evidence is available.
 - PLACE_REFERENCE and REGION_REFERENCE pins explicitly say they are reference points and may not be the exact camera position; CAMERA_EXACT remains distinguishable.
