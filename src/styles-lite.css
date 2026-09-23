@@ -94,3 +94,14 @@ footer{display:flex;justify-content:space-between;gap:20px;align-items:center;pa
 nav button.active{background:rgba(255,255,255,.045)}
 nav .icon-nav.active{background:rgba(255,255,255,.08)}
 @media(max-width:999px){.card-visual iframe{display:none}}
+
+/* Mobile destination dock: keeps the core ERN journey one tap away */
+.mobile-dock{display:none}
+@media(max-width:600px){
+ body{padding-bottom:62px}
+ .mobile-dock{position:fixed;left:10px;right:10px;bottom:8px;z-index:80;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:6px;border:1px solid rgba(255,255,255,.13);background:rgba(4,37,33,.94);backdrop-filter:blur(18px);border-radius:18px;box-shadow:0 14px 38px rgba(0,0,0,.28)}
+ .mobile-dock button{border:0;background:transparent;color:#dce9e5;border-radius:13px;padding:7px 5px 6px;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:16px}
+ .mobile-dock button span{font-size:8px;letter-spacing:.05em}.mobile-dock button:active,.mobile-dock button:focus-visible{background:rgba(255,255,255,.09);color:white}
+ .hero-location{grid-template-columns:minmax(0,1fr) auto auto}.hero-location small{max-width:210px}
+ footer{padding-bottom:72px}
+}
