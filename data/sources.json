@@ -52,8 +52,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "U.S. Geological Survey",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T09:36:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
     "failureReason": null,
     "quality": 92,
     "freshness": 98,
@@ -63,7 +63,8 @@
     "lon": -155.287,
     "timeZone": "Pacific/Honolulu",
     "rightsBasis": "Official USGS current-view source; retained as link-only because ERN has not documented redistribution/embed permission.",
-    "officialUrl": "https://www.usgs.gov/volcanoes/kilauea/summit-webcams"
+    "officialUrl": "https://www.usgs.gov/volcanoes/kilauea/summit-webcams",
+    "freshnessEvidence": "Current official USGS Kīlauea Summit Webcams page states that views come from live webcams, links summit livestream cameras, and says the webcams are operational 24/7."
   },
   {
     "id": "pattaya-city-live",
@@ -522,13 +523,14 @@
     ],
     "story": "Watch Old Faithful and check current entrance, weather and park views before choosing when to visit.",
     "rightsBasis": "Current NPS page explicitly provides an Old Faithful livestream plus refreshed static webcams; retained LINK_ONLY.",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T09:36:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
     "failureReason": null,
     "lat": 44.460364,
     "lon": -110.828219,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.nps.gov/yell/planyourvisit/maps.htm"
+    "coordinateSourceUrl": "https://www.nps.gov/yell/planyourvisit/maps.htm",
+    "freshnessEvidence": "Current official NPS Yellowstone Webcams page states that ten webcams show views throughout the park, including a live-streaming Old Faithful/Upper Geyser Basin camera and current-condition static webcams."
   },
   {
     "id": "mount-rainier-national-park",
@@ -617,9 +619,10 @@
     ],
     "story": "See live animal activity across multiple Zoo and Safari Park cameras before deciding when to visit.",
     "rightsBasis": "Current official San Diego Zoo page explicitly lists live wildlife cameras; retained LINK_ONLY. Pre-recorded Red Panda content is not treated as live.",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
-    "failureReason": null
+    "checkedAt": "2026-09-23T09:36:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
+    "failureReason": null,
+    "freshnessEvidence": "Current official San Diego Zoo Live Cameras page explicitly presents live wildlife cameras for the Zoo and Safari Park and separately labels prerecorded content where applicable."
   },
   {
     "id": "zermatt-matterhorn",
@@ -644,9 +647,10 @@
     ],
     "story": "See the Matterhorn and surrounding mountains live before heading up; village cameras operate during daytime.",
     "rightsBasis": "Current official Zermatt Tourism page explicitly describes live destination webcams; retained LINK_ONLY.",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
-    "failureReason": null
+    "checkedAt": "2026-09-23T09:36:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
+    "failureReason": null,
+    "freshnessEvidence": "Current official Zermatt Tourism Webcams page says visitors can discover Zermatt–Matterhorn live via webcam and notes village webcams operate during daytime."
   },
   {
     "id": "chamonix-mont-blanc",
@@ -671,9 +675,10 @@
     ],
     "story": "Compare current valley and high-mountain views from Chamonix town to Aiguille du Midi before going up.",
     "rightsBasis": "Current official Chamonix tourism webcam page lists numerous current valley and summit panoramas; retained LINK_ONLY.",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
-    "failureReason": null
+    "checkedAt": "2026-09-23T09:36:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
+    "failureReason": null,
+    "freshnessEvidence": "Current official Chamonix-Mont-Blanc Webcams page exposes a broad active webcam collection across the valley, mountains, villages and lifts."
   },
   {
     "id": "georgia-aquarium",
@@ -698,9 +703,10 @@
     ],
     "story": "Watch current marine-animal activity through Georgia Aquarium's official webcam network before planning a visit.",
     "rightsBasis": "Current official Georgia Aquarium site exposes multiple animal webcams/current live views; retained LINK_ONLY because no embed permission is inferred.",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
-    "failureReason": null
+    "checkedAt": "2026-09-23T09:36:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
+    "failureReason": null,
+    "freshnessEvidence": "Current official Georgia Aquarium Ocean Voyager page explicitly labels the view LIVE CAM and describes its aquarium webcam galleries as real-time livestreams."
   },
   {
     "id": "whistler-blackcomb",
@@ -725,9 +731,10 @@
     ],
     "story": "See current mountain camera views and conditions before choosing whether and where to head up.",
     "rightsBasis": "Current official Whistler Blackcomb mountain-cams surface is available; retained LINK_ONLY because no embed permission is inferred.",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
-    "failureReason": null
+    "checkedAt": "2026-09-23T09:36:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
+    "failureReason": null,
+    "freshnessEvidence": "Current official Whistler Blackcomb Mountain Cams page explicitly labels LIVE MOUNTAIN CAMS / Live Webcams and exposes multiple active camera players."
   },
   {
     "id": "florida-now",
@@ -752,9 +759,10 @@
     ],
     "story": "Compare current Florida beach and destination webcam views before choosing where to go.",
     "rightsBasis": "Current official VISIT FLORIDA Florida Now property provides destination webcam/current-condition views; retained LINK_ONLY.",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
-    "failureReason": null
+    "checkedAt": "2026-09-23T09:36:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
+    "failureReason": null,
+    "freshnessEvidence": "Current official VISIT FLORIDA Florida Now page says it provides live webcam feeds and up-to-the-minute travel conditions, with a large current webcam inventory."
   },
   {
     "id": "lajes-pico-harbour",
