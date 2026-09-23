@@ -27,6 +27,8 @@ on:
       - "scripts/whole-product-status.mjs"
       - "scripts/public-launch-preflight.mjs"
       - "scripts/mobile-layout-preflight.mjs"
+      - "scripts/accessibility-preflight.mjs"
+      - "scripts/performance-preflight.mjs"
       - "scripts/build-release-snapshot.mjs"
       - "scripts/build-destination-pages.mjs"
       - ".github/workflows/pages.yml"
@@ -62,6 +64,10 @@ jobs:
         run: node scripts/public-launch-preflight.mjs
       - name: Mobile layout preflight
         run: node scripts/mobile-layout-preflight.mjs
+      - name: Accessibility preflight
+        run: node scripts/accessibility-preflight.mjs
+      - name: Performance preflight
+        run: node scripts/performance-preflight.mjs
       - name: Build static release
         run: npm run release:build
       - uses: actions/upload-pages-artifact@v4
