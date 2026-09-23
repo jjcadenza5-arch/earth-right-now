@@ -27,7 +27,8 @@
     "accessibility:preflight": "node scripts/accessibility-preflight.mjs",
     "release:preflight": "node scripts/public-launch-preflight.mjs",
     "mobile:preflight": "node scripts/mobile-layout-preflight.mjs",
-    "release:operator-brief": "node scripts/release-operator-brief.mjs"
+    "release:operator-brief": "node scripts/release-operator-brief.mjs",
+    "domain:health": "node scripts/domain-health.mjs"
   },
   "engines": {
     "node": ">=20"
