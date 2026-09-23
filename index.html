@@ -97,6 +97,7 @@
         <button id="wanderRefresh">Another six →</button>
       </div>
       <div class="wander-grid" id="wanderGrid"></div>
+      <div class="wander-note" id="wanderNote">Curated from healthy sources outside the current Top 20.</div>
     </section>
 
     <section class="section search-section" id="search">
@@ -117,7 +118,18 @@
         <div><p class="eyebrow">LIVING ATLAS</p><h2>The world, one current window at a time.</h2></div>
         <p>Choose a pin, then open the best available current view for that place.</p>
       </div>
-      <div class="atlas" id="atlas" role="group" aria-label="Living Atlas"></div>
+      <div class="atlas-controls" aria-label="Map filters">
+        <button class="atlas-filter active" data-map-filter="all">All windows</button>
+        <button class="atlas-filter" data-map-filter="inside">Play here</button>
+        <button class="atlas-filter" data-map-filter="external">External live</button>
+      </div>
+      <div class="atlas" id="atlas" role="group" aria-label="Living Atlas">
+        <div class="atlas-continent atlas-americas"></div>
+        <div class="atlas-continent atlas-europe"></div>
+        <div class="atlas-continent atlas-africa"></div>
+        <div class="atlas-continent atlas-asia"></div>
+        <div class="atlas-continent atlas-australia"></div>
+      </div>
       <p class="map-note" id="mapNote"></p>
     </section>
 

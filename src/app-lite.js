@@ -50,13 +50,17 @@ function heroPool(){
  const inside=state.watch.filter(s=>isInside(s)&&s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id));
  return inside.length?inside:state.watch;
 }
+function visitorHour(){return new Date().getHours()}
+function visitorDaypart(){const h=visitorHour();if(h>=5&&h<10)return"morning";if(h>=10&&h<17)return"day";if(h>=17&&h<21)return"evening";return"night"}
 function setProfile(){
- const autoSlot=(Math.floor(Date.now()/14400000)+state.setOffset)%4;
+ const part=visitorDaypart();
+ const daypartOffset={morning:0,day:1,evening:2,night:3}[part]||0;
+ const autoSlot=(Math.floor(Date.now()/14400000)+daypartOffset+state.setOffset)%4;
  const automatic=[
-  {id:"beautiful",label:"Beautiful Earth",reason:"Daylight, scenery and strong current windows.",boost:s=>isScenic(s)?28:0},
-  {id:"live",label:"Live Around the World",reason:"A broad mix of strong live windows across regions.",boost:s=>isInside(s)?34:0},
-  {id:"cities",label:"Earth in Motion",reason:"Cities, harbours and places with visible human activity.",boost:s=>isCity(s)?34:0},
-  {id:"wander",label:"Keep Wandering",reason:"A varied route through places, nature and useful current views.",boost:s=>(/interesting|useful/.test(cats(s))?24:0)}
+  {id:"beautiful",label:"Beautiful Earth",reason:"Chosen for this moment: daylight, scenery and strong current windows.",boost:s=>isScenic(s)?28:0},
+  {id:"live",label:"Live Around the World",reason:"Chosen for this moment: strong live windows across regions.",boost:s=>isInside(s)?34:0},
+  {id:"cities",label:"Earth in Motion",reason:"Chosen for this moment: cities, harbours and visible activity.",boost:s=>isCity(s)?34:0},
+  {id:"wander",label:"Keep Wandering",reason:"Chosen for this moment: a varied route through useful current views.",boost:s=>(/interesting|useful/.test(cats(s))?24:0)}
  ][autoSlot];
  if(state.mode==="auto")return automatic;
  const fixed={
@@ -122,7 +126,7 @@ function card(s,compact=false,index=-1){
    b.prepend(compactVisual(s));b.querySelector(".truth").textContent=truthLabel(s);b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(" · ");
  }
  else{b.innerHTML=`<div class="card-visual"></div><div class="card-body"><div class="card-kicker"><span></span><span></span></div><strong></strong><small></small><span class="card-favorite" aria-hidden="true">${state.favorites.has(s.id)?"♥":"♡"}</span></div>`;const v=b.querySelector(".card-visual");v.style.background=generatedBackground(s);v.innerHTML=posterMarkup(s);
- const miniLive=index>=0&&index<5&&globalThis.innerWidth>=1000&&s.playback==="EMBED"&&isInside(s)&&cleanUrl(s.embedUrl);
+ const miniLive=index>=0&&index<3&&globalThis.innerWidth>=1100&&s.playback==="EMBED"&&isInside(s)&&cleanUrl(s.embedUrl);
  if(miniLive&&!v.querySelector("img")){const f=document.createElement("iframe");f.src=s.embedUrl;f.title=s.title+" live preview";f.loading="lazy";f.tabIndex=-1;f.setAttribute("aria-hidden","true");f.allow="autoplay; fullscreen; picture-in-picture";f.referrerPolicy="strict-origin-when-cross-origin";v.append(f);b.classList.add("has-live-preview")}
  b.querySelector(".card-kicker span:first-child").textContent=isInside(s)?"LIVE HERE":(s.truth==="EXTERNAL_LIVE"?"LIVE ↗":truthLabel(s));b.querySelector(".card-kicker span:last-child").textContent=[momentLabel(s),localTime(s)].filter(Boolean).join(" · ");b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(", ")}
  b.onclick=()=>openViewer(s);return b;
@@ -161,9 +165,18 @@ function renderWander(){
  const diverse=[],countries=new Set();for(const s of ranked){if(countries.has(s.country)&&diverse.length<5)continue;diverse.push(s);countries.add(s.country);if(diverse.length>=18)break}
  if(!diverse.length){$("#wanderGrid").replaceChildren();return}
  const start=(state.wanderOffset*6)%diverse.length;const pick=[];for(let i=0;i<Math.min(6,diverse.length);i++)pick.push(diverse[(start+i)%diverse.length]);
- $("#wanderGrid").replaceChildren(...pick.map(wanderCard));
+ $("#wanderGrid").replaceChildren(...pick.map(wanderCard));$("#wanderNote").textContent=`${pick.length} places beyond the current Top 20 · healthy sources only · ${visitorDaypart()} selection context`;
 }
-function renderMap(){const a=$("#atlas");a.replaceChildren();let count=0;for(const s of state.sources){const lat=Number(s.lat),lon=Number(s.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;const p=document.createElement("button");p.className="map-pin"+(isInside(s)?"":" external");p.type="button";p.title=`${s.title} — ${truthLabel(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s);a.append(p);count++}$("#mapNote").textContent=`${count} mapped current-window locations · green can play inside ERN · amber opens at the provider.`}
+function renderMap(){
+ const a=$("#atlas");a.querySelectorAll(".map-pin").forEach(x=>x.remove());let count=0,insideCount=0,externalCount=0;
+ for(const s of state.sources){
+   const lat=Number(s.lat),lon=Number(s.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon)||s.health==="OFFLINE")continue;
+   const inside=isInside(s);if(state.mapFilter==="inside"&&!inside)continue;if(state.mapFilter==="external"&&inside)continue;
+   const p=document.createElement("button");p.className="map-pin"+(inside?"":" external");p.type="button";p.title=`${s.title} — ${truthLabel(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s);a.append(p);count++;if(inside)insideCount++;else externalCount++;
+ }
+ document.querySelectorAll(".atlas-filter").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter===state.mapFilter));
+ $("#mapNote").textContent=`${count} mapped windows shown · ${insideCount} play inside ERN · ${externalCount} open at their provider.`;
+}
 function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}
 function distanceKm(a,b){
  const lat1=Number(a.lat),lon1=Number(a.lon),lat2=Number(b.lat),lon2=Number(b.lon);
@@ -238,6 +251,7 @@ function initEvents(){
  $("#refreshSet").onclick=()=>{stopHeroRotation();state.mode="auto";writeSaved("ern-mode","auto");state.setOffset++;renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}startHeroRotation()};
  document.querySelectorAll(".mode-chip").forEach(b=>b.onclick=()=>{stopHeroRotation();state.mode=b.dataset.mode||"auto";writeSaved("ern-mode",state.mode);renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}startHeroRotation()});
  $("#wanderRefresh").onclick=()=>{state.wanderOffset++;renderWander()};
+ document.querySelectorAll(".atlas-filter").forEach(b=>b.onclick=()=>{state.mapFilter=b.dataset.mapFilter||"all";renderMap()});
  document.querySelectorAll(".category").forEach(b=>b.onclick=()=>{stopHeroRotation();selectCategory(b.dataset.category,b);startHeroRotation()});
  $("#searchInput").oninput=e=>search(e.target.value);$("#clearSearch").onclick=()=>{$("#searchInput").value="";search("");$("#searchInput").focus()};
  $("#closeViewer").onclick=()=>{closeViewer();startHeroRotation()};$("#prevViewer").onclick=()=>move(-1);$("#nextViewer").onclick=()=>move(1);$("#journeyToggle").onclick=()=>state.journeyTimer?stopJourney():startJourney();$("#fullViewer").onclick=()=>$("#viewer").requestFullscreen?.();
