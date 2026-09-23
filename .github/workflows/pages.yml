@@ -21,6 +21,7 @@ on:
       - "sitemap.xml"
       - "CNAME"
       - "scripts/lean-preflight.mjs"
+      - "scripts/whole-product-preflight.mjs"
       - "scripts/public-launch-preflight.mjs"
       - "scripts/mobile-layout-preflight.mjs"
       - "scripts/build-release-snapshot.mjs"
@@ -50,6 +51,8 @@ jobs:
           node-version: 22
       - name: Lean launch preflight
         run: node scripts/lean-preflight.mjs
+      - name: Whole-product guard
+        run: node scripts/whole-product-preflight.mjs
       - name: Public launch preflight
         run: node scripts/public-launch-preflight.mjs
       - name: Mobile layout preflight
