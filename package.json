@@ -22,7 +22,8 @@
     "operations:status": "node scripts/operations-status.mjs",
     "provider:record": "node scripts/record-provider-observation.mjs",
     "provider:worklist": "node scripts/provider-worklist.mjs",
-    "recovery:ledger": "node scripts/recovery-ledger.mjs"
+    "recovery:ledger": "node scripts/recovery-ledger.mjs",
+    "provider:evidence-plan": "node scripts/provider-evidence-plan.mjs"
   },
   "engines": {
     "node": ">=20"
