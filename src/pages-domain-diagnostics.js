@@ -27,3 +27,12 @@ export function domainNextAction({state="OK",dns={}}={}){
  if(state==="DNS_UNRESOLVED")return "Create the required GitHub Pages DNS records for this hostname.";
  return "No domain remediation required.";
 }
+
+export function certificateCoverage({host="",certificate="",dnsState="OK"}={}){
+ const h=norm(host);
+ const names=[...String(certificate).matchAll(/DNS:([^,\s]+)/g)].map(match=>norm(match[1]));
+ const covers=names.some(name=>name===h||name.startsWith("*.")&&h.endsWith(name.slice(1))&&h.split(".").length===name.split(".").length);
+ if(covers)return "OK";
+ if(dnsState==="OK"&&names.includes("*.github.io"))return "PAGES_CUSTOM_CERT_NOT_PROVISIONED";
+ return "TLS_HOSTNAME_MISMATCH";
+}
