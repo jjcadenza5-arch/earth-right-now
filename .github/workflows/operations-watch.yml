@@ -21,6 +21,8 @@ jobs:
         run: npm run provider:worklist | tee provider-worklist.json
       - name: Provider family sampling plan
         run: npm run provider:evidence-plan | tee provider-evidence-plan.json
+      - name: Provider playback evidence status
+        run: npm run provider:playback-status | tee provider-playback-status.json
       - name: Operations status
         run: npm run operations:status | tee operations-status.json
       - name: Publish operations summary
@@ -31,6 +33,8 @@ jobs:
           cat source-horizon.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
           echo "### Provider worklist" >> "$GITHUB_STEP_SUMMARY"
           cat provider-worklist.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+          echo "### Provider playback evidence" >> "$GITHUB_STEP_SUMMARY"
+          cat provider-playback-status.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
           echo "### Operations status" >> "$GITHUB_STEP_SUMMARY"
           cat operations-status.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
       - uses: actions/upload-artifact@v4
@@ -42,5 +46,6 @@ jobs:
             atlas-coordinate-worklist.json
             provider-worklist.json
             provider-evidence-plan.json
+            provider-playback-status.json
             operations-status.json
           retention-days: 14
