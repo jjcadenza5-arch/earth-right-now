@@ -1417,7 +1417,10 @@
     "sourceUrl": "https://www.earthcam.com/cams/earth/space/?cam=nasa_iss",
     "quality": 96,
     "moment": 100,
-    "story": "A live view of Earth from an external camera on the International Space Station; signal handovers can temporarily show a blue screen."
+    "story": "A live view of Earth from an external camera on the International Space Station; signal handovers can temporarily show a blue screen.",
+    "mapBehavior": "DYNAMIC_UNPINNED",
+    "coordinateBasis": "DYNAMIC_ORBIT",
+    "coordinateNote": "The ISS position changes continuously, so ERN intentionally does not represent it with a static Living Atlas pin."
   },
   {
     "id": "flam-fjord-official",
@@ -1692,7 +1695,12 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": null,
-    "story": "A rural Taitung landscape around Chihshang, with fields, open sky and mountain backdrop."
+    "story": "A rural Taitung landscape around Chihshang, with fields, open sky and mountain backdrop.",
+    "lat": 23.1166667,
+    "lon": 121.2166667,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q1135297",
+    "coordinateNote": "Chihshang Township reference point for Paradise Road; not claimed as exact webcam position."
   },
   {
     "id": "ponte-di-legno-adamello",
@@ -2213,7 +2221,12 @@
     "freshness": 88,
     "moment": 80,
     "story": "Check the official Chidori-ga-fuchi live camera and current Green Way conditions before visiting.",
-    "rightsBasis": "Current official Visit Chiyoda Sakura Festival pages explicitly offer the Chidori-ga-fuchi live camera. ERN keeps the source LINK_ONLY and does not infer display permission."
+    "rightsBasis": "Current official Visit Chiyoda Sakura Festival pages explicitly offer the Chidori-ga-fuchi live camera. ERN keeps the source LINK_ONLY and does not infer display permission.",
+    "lat": 35.686,
+    "lon": 139.74496,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q6631821",
+    "coordinateNote": "Chidorigafuchi Park reference point for the Green Way destination; not claimed as exact camera position."
   },
   {
     "id": "volcan-tajogaite",
@@ -2271,7 +2284,12 @@
     "freshness": 90,
     "moment": 90,
     "story": "See Copacabana Beach and the Rio shoreline live before choosing when to go.",
-    "rightsBasis": "Current verified EarthCam live-stream page identifies Copacabana Beach in Rio. ERN keeps this LINK_ONLY and does not infer embed rights."
+    "rightsBasis": "Current verified EarthCam live-stream page identifies Copacabana Beach in Rio. ERN keeps this LINK_ONLY and does not infer embed rights.",
+    "lat": -22.9669444,
+    "lon": -43.1808333,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q202730",
+    "coordinateNote": "Copacabana neighbourhood/beach reference point; not claimed as exact camera position."
   },
   {
     "id": "torres-del-paine-rio-serrano",
