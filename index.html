@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./src/styles-lite.css">
 </head>
 <body>
+  <a class="skip-link" href="#mainContent">Skip to content</a>
   <header class="topbar">
     <button class="brand" id="homeBtn" aria-label="Earth Right Now home">
       <img src="./assets/ern-mark.svg" alt="" width="54" height="54">
@@ -56,7 +57,7 @@
       </div>
       <div class="hero-location" id="heroLocation">
         <div><strong id="heroTitle">Earth is loading…</strong><small id="heroMeta">Finding a beautiful current window.</small></div>
-        <span class="live-dot"></span><span id="heroTruth">CURRENT</span>
+        <span class="live-dot" id="heroDot"></span><span id="heroTruth">CURRENT</span>
       </div>
     </section>
 
@@ -179,12 +180,12 @@
     </div>
     <div class="viewer-stage-wrap">
       <div class="viewer-stage" id="viewerStage"></div>
-      <div class="viewer-loading" id="viewerLoading" hidden><span></span><strong>Connecting to this window…</strong><small>If the provider is slow, you can still open the original source.</small></div>
+      <div class="viewer-loading" id="viewerLoading" hidden role="status" aria-live="polite"><span></span><strong>Connecting to this window…</strong><small>If the provider is slow, you can still open the original source.</small><a id="loadingSource" target="_blank" rel="noopener noreferrer">Open source</a></div>
     </div>
     <div class="viewer-alternates" id="viewerAlternates" hidden></div>
     <div class="viewer-context" id="viewerContext" hidden>
       <div class="context-story"><span class="context-kicker">ABOUT THIS WINDOW</span><p id="viewerStory"></p><div class="context-tags" id="viewerTags"></div></div>
-      <div class="context-nearby"><span class="context-kicker">NEARBY ON EARTH</span><div class="nearby-list" id="nearbyList"></div></div>
+      <div class="context-nearby"><span class="context-kicker">NEARBY ON EARTH</span><div class="nearby-list" id="nearbyList"></div><span class="context-kicker related-kicker">MORE LIKE THIS</span><div class="nearby-list" id="relatedList"></div></div>
       <div class="context-plan"><span class="context-kicker">BEFORE YOU GO</span><div class="plan-actions">
         <a id="planStay" target="_blank" rel="noopener noreferrer">Stay</a>
         <a id="planEat" target="_blank" rel="noopener noreferrer">Eat</a>
