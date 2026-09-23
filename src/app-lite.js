@@ -40,6 +40,7 @@ function localHour(s){if(!s?.timeZone)return null;try{const p=new Intl.DateTimeF
 function localTime(s){if(!s?.timeZone)return"";try{return new Intl.DateTimeFormat(undefined,{timeZone:s.timeZone,hour:"numeric",minute:"2-digit"}).format(new Date())}catch{return""}}
 function verificationAgeDays(s){const raw=s.lastSuccessfulCheck||s.checkedAt;if(!raw)return Infinity;const ms=Date.now()-Date.parse(raw);return Number.isFinite(ms)?Math.max(0,ms/86400000):Infinity}
 function verificationLabel(s){const d=verificationAgeDays(s);if(!Number.isFinite(d))return"Verification time unavailable";if(d<1)return"Verified within 24h";if(d<2)return"Verified yesterday";return"Verified "+Math.floor(d)+" days ago"}
+function featureEligible(s){return!!(s&&s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id)&&verificationAgeDays(s)<=21)}
 const momentWords={
  en:["Current","Morning light","Daylight","Evening light","Night"],
  th:["ปัจจุบัน","แสงยามเช้า","กลางวัน","แสงยามเย็น","กลางคืน"],
@@ -122,7 +123,7 @@ function setProfile(){
 }
 function buildWatch(sources){
  const profile=setProfile();
- let pool=sources.filter(s=>s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id)&&verificationAgeDays(s)<=21);
+ let pool=sources.filter(featureEligible);
  if(state.category!=="all"&&state.category!=="random")pool=pool.filter(s=>categoryMatch(s,state.category));
  if(state.category==="all"){
    const strict={
@@ -194,7 +195,7 @@ function card(s,compact=false,index=-1){
  b.onclick=()=>openViewer(s);return b;
 }
 function renderModeChips(){document.querySelectorAll(".mode-chip").forEach(b=>b.classList.toggle("active",b.dataset.mode===state.mode))}
-function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map((s,i)=>card(s,false,i)));$("#watchCount").textContent=state.watch.length;renderModeChips();state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(heroPool()[0]||state.watch[0])}
+function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map((s,i)=>card(s,false,i)));$("#watchCount").textContent=state.watch.length;$("#watchEmpty").hidden=state.watch.length>0;renderModeChips();state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(heroPool()[0]||state.watch[0])}
 function placeCard(group){
  const best=[...group].sort((a,b)=>baseScore(b)-baseScore(a))[0];
  const b=card(best,true);b.classList.add("place-card");
@@ -232,14 +233,14 @@ function wanderCard(s){
 }
 function renderWander(){
  const used=new Set(state.watch.map(s=>s.id));
- const ranked=state.sources.filter(s=>s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id)&&!used.has(s.id)).sort((a,b)=>baseScore(b)-baseScore(a));
+ const ranked=state.sources.filter(s=>featureEligible(s)&&!used.has(s.id)).sort((a,b)=>baseScore(b)-baseScore(a));
  const diverse=[],countries=new Set();for(const s of ranked){if(countries.has(s.country)&&diverse.length<5)continue;diverse.push(s);countries.add(s.country);if(diverse.length>=18)break}
  if(!diverse.length){$("#wanderGrid").replaceChildren();return}
  const start=(state.wanderOffset*6)%diverse.length;const pick=[];for(let i=0;i<Math.min(6,diverse.length);i++)pick.push(diverse[(start+i)%diverse.length]);
  $("#wanderGrid").replaceChildren(...pick.map(wanderCard));$("#wanderNote").textContent=`${pick.length} places beyond the current Top 20 · healthy sources only · ${visitorDaypart()} selection context`;
 }
 function renderNowStrip(){
- const healthy=state.sources.filter(s=>s.health==="HEALTHY"&&verificationAgeDays(s)<=21);
+ const healthy=state.sources.filter(featureEligible);
  $("#nowPlayable").textContent=healthy.filter(isInside).length;
  $("#nowDaylight").textContent=healthy.filter(isDay).length;
  $("#nowNightCities").textContent=healthy.filter(s=>!isDay(s)&&isCity(s)).length;
@@ -269,13 +270,13 @@ function renderContext(s){
  story.textContent=s.story||"A current window onto this place.";const ms=momentSignal(s);$("#viewerMomentWhy").textContent="Why now · "+ms.reason;
  tags.replaceChildren();
  const tagValues=[momentLabel(s),publicTruth(s),...(s.categories||[]).slice(0,3)];
- const confidence=$("#sourceConfidence");confidence.textContent=[verificationLabel(s),s.provider?("Source: "+s.provider):"",s.health==="HEALTHY"?"Catalog health: healthy":"Catalog health: "+String(s.health||"unknown").toLowerCase()].filter(Boolean).join(" · ");
+ const confidence=$("#sourceConfidence"),age=verificationAgeDays(s);confidence.textContent=[verificationLabel(s),s.provider?("Source: "+s.provider):"",s.health==="HEALTHY"?"Catalog health: healthy":"Catalog health: "+String(s.health||"unknown").toLowerCase()].filter(Boolean).join(" · ");confidence.classList.toggle("stale",!Number.isFinite(age)||age>21);
  for(const value of tagValues){const tag=document.createElement("span");tag.textContent=value;tags.append(tag)}
  near.replaceChildren();
- const nearby=state.sources.filter(x=>x.id!==s.id&&x.health==="HEALTHY"&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,d:distanceKm(s,x)})).filter(x=>Number.isFinite(x.d)).sort((a,b)=>a.d-b.d).slice(0,3);
+ const nearby=state.sources.filter(x=>x.id!==s.id&&featureEligible(x)&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,d:distanceKm(s,x)})).filter(x=>Number.isFinite(x.d)).sort((a,b)=>a.d-b.d).slice(0,3);
  for(const item of nearby){const b=document.createElement("button");b.type="button";b.className="nearby-item";const label=document.createElement("strong");label.textContent=item.s.title;const meta=document.createElement("small");meta.textContent=item.d<1?"Nearby":Math.round(item.d)+" km";b.append(label,meta);b.onclick=()=>openViewer(item.s);near.append(b)}
  related.replaceChildren();const sourceCats=new Set((s.categories||[]).map(x=>String(x).toLowerCase()));
- const relatedItems=state.sources.filter(x=>x.id!==s.id&&x.health==="HEALTHY"&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,match:(x.categories||[]).filter(c=>sourceCats.has(String(c).toLowerCase())).length,score:baseScore(x)})).filter(x=>x.match>0).sort((a,b)=>b.match-a.match||b.score-a.score).slice(0,3);
+ const relatedItems=state.sources.filter(x=>x.id!==s.id&&featureEligible(x)&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,match:(x.categories||[]).filter(c=>sourceCats.has(String(c).toLowerCase())).length,score:baseScore(x)})).filter(x=>x.match>0).sort((a,b)=>b.match-a.match||b.score-a.score).slice(0,3);
  for(const item of relatedItems){const b=document.createElement("button");b.type="button";b.className="nearby-item";const label=document.createElement("strong");label.textContent=item.s.title;const meta=document.createElement("small");meta.textContent=publicTruth(item.s);b.append(label,meta);b.onclick=()=>openViewer(item.s);related.append(b)}
  const place=[s.region,s.country,s.title].filter(Boolean).join(" ");
  const q=encodeURIComponent(place);
@@ -291,7 +292,7 @@ function renderSaved(){
  const recentIds=readJSON("ern-recent",[]);const byId=new Map(state.sources.map(s=>[s.id,s]));const recent=recentIds.map(id=>byId.get(id)).filter(Boolean);
  $("#recentResults").replaceChildren(...recent.map(s=>card(s,true)));$("#recentEmpty").hidden=recent.length>0;
  const p=interactionProfile();$("#recentNote").textContent=Number(p.views||0)>=3?"Local suggestions are adapting to your exploration.":"Explore a few places and ERN will begin adapting locally.";
- const excluded=new Set([...state.favorites,...recentIds]);const recs=state.sources.filter(s=>s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id)&&!excluded.has(s.id)&&verificationAgeDays(s)<=21).sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,6);
+ const excluded=new Set([...state.favorites,...recentIds]);const recs=state.sources.filter(s=>featureEligible(s)&&!excluded.has(s.id)).sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,6);
  $("#recommendedResults").replaceChildren(...recs.map(s=>card(s,true)));
 }
 function stopImageTimer(){if(state.imageTimer){clearInterval(state.imageTimer);state.imageTimer=null}}

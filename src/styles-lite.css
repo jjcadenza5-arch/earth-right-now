@@ -194,3 +194,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 /* Larger polish stage: readable category labels + alternate-view recovery */
 .category b{font:inherit;font-weight:500}
 .loading-actions{grid-column:2;display:flex;gap:9px;align-items:center;margin-top:5px}.loading-actions button,.loading-actions a{border:0;background:transparent;color:white;font-size:8px;padding:0;text-decoration:underline;text-underline-offset:2px}.loading-actions button[hidden]{display:none}
+
+/* One eligibility rule across featured discovery */
+.watch-empty{margin:8px 2.2vw 20px;padding:14px 16px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.035);color:#bfd1cc;font-size:11px}
+.watch-empty[hidden]{display:none}.source-confidence.stale{color:#d5a66c}
