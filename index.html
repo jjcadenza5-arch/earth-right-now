@@ -65,17 +65,17 @@
     </section>
 
     <section class="category-bar" aria-label="Explore categories">
-      <button class="category active" data-category="all"><span>◉</span>All Places</button>
-      <button class="category" data-category="mountain"><span>△</span>Mountains</button>
-      <button class="category" data-category="beach"><span>≈</span>Beaches</button>
-      <button class="category" data-category="city"><span>▥</span>Cities</button>
-      <button class="category" data-category="nature"><span>♧</span>Nature</button>
-      <button class="category" data-category="wildlife"><span>◌</span>Wildlife</button>
-      <button class="category" data-category="island"><span>⌁</span>Islands</button>
-      <button class="category" data-category="park"><span>♤</span>Parks</button>
-      <button class="category" data-category="landmark"><span>⌂</span>Landmarks</button>
-      <button class="category" data-category="weather"><span>☁</span>Weather</button>
-      <button class="category" data-category="random"><span>⤨</span>Random</button>
+      <button class="category active" data-category="all"><span>◉</span><b data-i18n="allPlaces">All Places</b></button>
+      <button class="category" data-category="mountain"><span>△</span><b data-i18n="mountains">Mountains</b></button>
+      <button class="category" data-category="beach"><span>≈</span><b data-i18n="beaches">Beaches</b></button>
+      <button class="category" data-category="city"><span>▥</span><b data-i18n="cities">Cities</b></button>
+      <button class="category" data-category="nature"><span>♧</span><b data-i18n="nature">Nature</b></button>
+      <button class="category" data-category="wildlife"><span>◌</span><b data-i18n="wildlife">Wildlife</b></button>
+      <button class="category" data-category="island"><span>⌁</span><b data-i18n="islands">Islands</b></button>
+      <button class="category" data-category="park"><span>♤</span><b data-i18n="parks">Parks</b></button>
+      <button class="category" data-category="landmark"><span>⌂</span><b data-i18n="landmarks">Landmarks</b></button>
+      <button class="category" data-category="weather"><span>☁</span><b data-i18n="weather">Weather</b></button>
+      <button class="category" data-category="random"><span>⤨</span><b data-i18n="random">Random</b></button>
     </section>
 
     <section class="now-strip" aria-label="Earth right now">
@@ -144,7 +144,7 @@
         <button class="atlas-filter active" data-map-filter="all" data-i18n="allWindows">All windows</button>
         <button class="atlas-filter" data-map-filter="inside" data-i18n="playHere">Play here</button>
         <button class="atlas-filter" data-map-filter="external" data-i18n="externalLive">External live</button>
-        <button class="atlas-filter" data-map-filter="daylight">Daylight now</button>
+        <button class="atlas-filter" data-map-filter="daylight" data-i18n="daylightNow">Daylight now</button>
       </div>
       <div class="atlas" id="atlas" role="group" aria-label="Living Atlas">
         <div class="atlas-continent atlas-americas"></div>
@@ -187,7 +187,7 @@
     </div>
     <div class="viewer-stage-wrap">
       <div class="viewer-stage" id="viewerStage"></div>
-      <div class="viewer-loading" id="viewerLoading" hidden role="status" aria-live="polite"><span></span><strong>Connecting to this window…</strong><small>If the provider is slow, you can still open the original source.</small><a id="loadingSource" target="_blank" rel="noopener noreferrer">Open source</a></div>
+      <div class="viewer-loading" id="viewerLoading" hidden role="status" aria-live="polite"><span></span><strong>Connecting to this window…</strong><small>If the provider is slow, you can still open the original source.</small><div class="loading-actions"><button id="viewerTryAlternate" hidden>Try another view</button><a id="loadingSource" target="_blank" rel="noopener noreferrer">Open source</a></div></div>
     </div>
     <div class="viewer-alternates" id="viewerAlternates" hidden></div>
     <div class="viewer-context" id="viewerContext" hidden>

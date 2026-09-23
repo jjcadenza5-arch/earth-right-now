@@ -190,3 +190,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 /* Atlas is place-first, not pin-clutter-first */
 .map-pin[data-views]:after{content:attr(data-views);position:absolute;left:8px;top:-8px;min-width:13px;height:13px;padding:0 2px;display:grid;place-items:center;border-radius:999px;background:white;color:#245248;font-size:7px;font-weight:900;box-shadow:0 2px 6px rgba(0,0,0,.16)}
 .verify-mini{grid-column:2;font-size:8px;color:#8aa098;margin-top:4px}
+
+/* Larger polish stage: readable category labels + alternate-view recovery */
+.category b{font:inherit;font-weight:500}
+.loading-actions{grid-column:2;display:flex;gap:9px;align-items:center;margin-top:5px}.loading-actions button,.loading-actions a{border:0;background:transparent;color:white;font-size:8px;padding:0;text-decoration:underline;text-underline-offset:2px}.loading-actions button[hidden]{display:none}
