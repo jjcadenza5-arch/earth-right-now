@@ -19,14 +19,14 @@ const savedMode=readSavedText("ern-mode","auto");
 const savedCategory=readSavedText("ern-category","all");
 const state={sources:[],watch:[],selected:null,watchIndex:0,journeyTimer:null,imageTimer:null,heroTimer:null,setOffset:0,wanderOffset:0,mode:["auto","beautiful","cities","calm","night"].includes(savedMode)?savedMode:"auto",category:["all","mountain","beach","city","nature","wildlife","island","park","landmark","weather","random"].includes(savedCategory)?savedCategory:"all",favorites:readSavedSet("ern-favorites")};
 const translations={
- en:{playJourney:"Play journey",pauseJourney:"Pause journey"},
- th:{playJourney:"เล่นต่อเนื่อง",pauseJourney:"หยุดชั่วคราว"},
- de:{playJourney:"Reise starten",pauseJourney:"Pause"},
- fr:{playJourney:"Lancer",pauseJourney:"Pause"},
- ja:{playJourney:"自動再生",pauseJourney:"一時停止"},
- zh:{playJourney:"自动播放",pauseJourney:"暂停"},
- es:{playJourney:"Reproducir viaje",pauseJourney:"Pausar"}
-};
+ en:{home:"Home",watchEarth:"Watch Earth",explore:"Explore",worldMap:"World Map",destinations:"Destinations",seeBefore:"See before you go.",watchNow:"Watch Earth Now",nextMoment:"Next moment",forMoment:"For this moment",beautifulEarth:"Beautiful Earth",earthMotion:"Earth in Motion",natureCalm:"Nature & Calm",nightLights:"Night Lights",anotherSix:"Another six",searchEarth:"Search Earth…",clear:"Clear",allWindows:"All windows",playHere:"Play here",externalLive:"External live",resetLocal:"Reset local suggestions",previous:"Previous",playJourney:"Play journey",pauseJourney:"Pause journey",next:"Next",source:"Source",fullScreen:"Full screen",watch:"Watch",map:"Map",saved:"Saved"},
+ th:{home:"หน้าแรก",watchEarth:"ชมโลก",explore:"สำรวจ",worldMap:"แผนที่โลก",destinations:"จุดหมาย",seeBefore:"ดูก่อนที่คุณจะไป",watchNow:"ชมโลกตอนนี้",nextMoment:"ช่วงเวลาถัดไป",forMoment:"สำหรับช่วงเวลานี้",beautifulEarth:"โลกที่สวยงาม",earthMotion:"โลกที่เคลื่อนไหว",natureCalm:"ธรรมชาติและความสงบ",nightLights:"แสงไฟยามค่ำ",anotherSix:"อีกหกแห่ง",searchEarth:"ค้นหาโลก…",clear:"ล้าง",allWindows:"ทุกมุมมอง",playHere:"เล่นที่นี่",externalLive:"ไลฟ์ภายนอก",resetLocal:"รีเซ็ตคำแนะนำในเครื่อง",previous:"ก่อนหน้า",playJourney:"เล่นต่อเนื่อง",pauseJourney:"หยุดชั่วคราว",next:"ถัดไป",source:"แหล่งที่มา",fullScreen:"เต็มจอ",watch:"ชม",map:"แผนที่",saved:"บันทึก"},
+ de:{home:"Start",watchEarth:"Erde ansehen",explore:"Entdecken",worldMap:"Weltkarte",destinations:"Ziele",seeBefore:"Sehen, bevor du gehst.",watchNow:"Erde jetzt ansehen",nextMoment:"Nächster Moment",forMoment:"Für diesen Moment",beautifulEarth:"Schöne Erde",earthMotion:"Erde in Bewegung",natureCalm:"Natur & Ruhe",nightLights:"Nachtlichter",anotherSix:"Sechs weitere",searchEarth:"Erde durchsuchen…",clear:"Löschen",allWindows:"Alle Fenster",playHere:"Hier abspielen",externalLive:"Extern live",resetLocal:"Lokale Vorschläge zurücksetzen",previous:"Zurück",playJourney:"Reise starten",pauseJourney:"Pause",next:"Weiter",source:"Quelle",fullScreen:"Vollbild",watch:"Ansehen",map:"Karte",saved:"Gespeichert"},
+ fr:{home:"Accueil",watchEarth:"Voir la Terre",explore:"Explorer",worldMap:"Carte du monde",destinations:"Destinations",seeBefore:"Voir avant de partir.",watchNow:"Voir la Terre maintenant",nextMoment:"Moment suivant",forMoment:"Pour cet instant",beautifulEarth:"Belle Terre",earthMotion:"Terre en mouvement",natureCalm:"Nature & calme",nightLights:"Lumières de nuit",anotherSix:"Six autres",searchEarth:"Rechercher sur Terre…",clear:"Effacer",allWindows:"Toutes les vues",playHere:"Lire ici",externalLive:"Live externe",resetLocal:"Réinitialiser les suggestions locales",previous:"Précédent",playJourney:"Lancer le voyage",pauseJourney:"Pause",next:"Suivant",source:"Source",fullScreen:"Plein écran",watch:"Voir",map:"Carte",saved:"Enregistré"},
+ ja:{home:"ホーム",watchEarth:"地球を見る",explore:"探索",worldMap:"世界地図",destinations:"行き先",seeBefore:"行く前に見る。",watchNow:"今の地球を見る",nextMoment:"次の瞬間",forMoment:"今この瞬間",beautifulEarth:"美しい地球",earthMotion:"動く地球",natureCalm:"自然と静けさ",nightLights:"夜の灯り",anotherSix:"別の6か所",searchEarth:"地球を検索…",clear:"クリア",allWindows:"すべて",playHere:"ここで再生",externalLive:"外部ライブ",resetLocal:"ローカル提案をリセット",previous:"前へ",playJourney:"自動再生",pauseJourney:"一時停止",next:"次へ",source:"ソース",fullScreen:"全画面",watch:"見る",map:"地図",saved:"保存"},
+ zh:{home:"首页",watchEarth:"观看地球",explore:"探索",worldMap:"世界地图",destinations:"目的地",seeBefore:"出发前先看看。",watchNow:"现在看地球",nextMoment:"下一个时刻",forMoment:"此刻推荐",beautifulEarth:"美丽地球",earthMotion:"流动的地球",natureCalm:"自然与宁静",nightLights:"夜色灯光",anotherSix:"再看六个",searchEarth:"搜索地球…",clear:"清除",allWindows:"全部窗口",playHere:"站内播放",externalLive:"外部直播",resetLocal:"重置本地推荐",previous:"上一个",playJourney:"自动播放",pauseJourney:"暂停",next:"下一个",source:"来源",fullScreen:"全屏",watch:"观看",map:"地图",saved:"收藏"},
+ es:{home:"Inicio",watchEarth:"Ver la Tierra",explore:"Explorar",worldMap:"Mapa mundial",destinations:"Destinos",seeBefore:"Mira antes de ir.",watchNow:"Ver la Tierra ahora",nextMoment:"Siguiente momento",forMoment:"Para este momento",beautifulEarth:"Tierra hermosa",earthMotion:"Tierra en movimiento",natureCalm:"Naturaleza y calma",nightLights:"Luces nocturnas",anotherSix:"Otros seis",searchEarth:"Buscar en la Tierra…",clear:"Limpiar",allWindows:"Todas las vistas",playHere:"Ver aquí",externalLive:"Live externo",resetLocal:"Restablecer sugerencias locales",previous:"Anterior",playJourney:"Iniciar viaje",pauseJourney:"Pausar",next:"Siguiente",source:"Fuente",fullScreen:"Pantalla completa",watch:"Ver",map:"Mapa",saved:"Guardado"}
+}
 let lang=readSavedText("ern-language","en");if(!translations[lang])lang="en";
 const t=k=>translations[lang]?.[k]||translations.en[k]||k;
 function cleanUrl(v){try{const u=new URL(v,location.href);return /^https?:$/.test(u.protocol)?u.href:null}catch{return null}}
@@ -263,7 +263,12 @@ function startHeroRotation(){
  },45000);
 }
 function scrollToId(id){document.getElementById(id)?.scrollIntoView({behavior:"smooth",block:"start"})}
-function applyLanguage(){document.documentElement.lang=lang;$("#languageSelect").value=lang;updateJourneyButton()}
+function applyLanguage(){
+ document.documentElement.lang=lang;$("#languageSelect").value=lang;
+ document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;const value=t(key);if(value!==key)el.textContent=value});
+ document.querySelectorAll("[data-i18n-placeholder]").forEach(el=>{const key=el.dataset.i18nPlaceholder;const value=t(key);if(value!==key)el.setAttribute("placeholder",value)});
+ updateJourneyButton();
+}
 function selectCategory(cat,button){state.category=cat;writeSaved("ern-category",cat);document.querySelectorAll(".category").forEach(x=>x.classList.toggle("active",x.dataset.category===cat));button?.classList.add("active");if(cat==="random")state.setOffset++;renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}scrollToId("watch")}
 function initSectionSpy(){
  if(!("IntersectionObserver"in globalThis))return;

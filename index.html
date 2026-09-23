@@ -26,11 +26,11 @@
       <span class="brand-copy"><strong>Earth Right Now<sup>™</sup></strong><small>See before you go.</small></span>
     </button>
     <nav aria-label="Main navigation">
-      <button id="homeNav" class="active">Home</button>
-      <button id="watchNav">Watch Earth</button>
-      <button id="searchNav">Explore</button>
-      <button id="mapNav">World Map</button>
-      <button id="destinationsNav">Destinations</button>
+      <button id="homeNav" class="active" data-i18n="home">Home</button>
+      <button id="watchNav" data-i18n="watchEarth">Watch Earth</button>
+      <button id="searchNav" data-i18n="explore">Explore</button>
+      <button id="mapNav" data-i18n="worldMap">World Map</button>
+      <button id="destinationsNav" data-i18n="destinations">Destinations</button>
       <a href="./about.html">About</a>
       <button id="savedNav" class="icon-nav" aria-label="Saved windows">♡</button>
       <select id="languageSelect" aria-label="Language">
@@ -47,11 +47,11 @@
       <div class="hero-copy">
         <p class="eyebrow">EARTH RIGHT NOW</p>
         <h1>A more<br>connected world.</h1>
-        <p class="hero-tagline">See before you go.</p>
+        <p class="hero-tagline" data-i18n="seeBefore">See before you go.</p>
         <p class="hero-deck">Live views from amazing places around the world.<br>Real conditions. Real moments. A more connected planet.</p>
         <div class="hero-actions">
-          <button class="primary" id="heroWatch"><span class="play-mark">▶</span> Watch Earth Now <span aria-hidden="true">→</span></button>
-          <button id="heroNext" class="quiet-hero">Next moment</button>
+          <button class="primary" id="heroWatch"><span class="play-mark">▶</span> <span data-i18n="watchNow">Watch Earth Now</span> <span aria-hidden="true">→</span></button>
+          <button id="heroNext" class="quiet-hero" data-i18n="nextMoment">Next moment</button>
         </div>
       </div>
       <div class="hero-location" id="heroLocation">
@@ -81,11 +81,11 @@
       </div>
       <div class="set-note"><span id="setLabel">Featured now</span><span id="setReason">Chosen for quality, local light and variety.</span><span class="local-personal" id="personalNote">Personalized in this browser</span></div>
       <div class="mode-switcher" id="modeSwitcher" aria-label="Featured sets">
-        <button class="mode-chip active" data-mode="auto">For this moment</button>
-        <button class="mode-chip" data-mode="beautiful">Beautiful Earth</button>
-        <button class="mode-chip" data-mode="cities">Earth in Motion</button>
-        <button class="mode-chip" data-mode="calm">Nature & Calm</button>
-        <button class="mode-chip" data-mode="night">Night Lights</button>
+        <button class="mode-chip active" data-mode="auto" data-i18n="forMoment">For this moment</button>
+        <button class="mode-chip" data-mode="beautiful" data-i18n="beautifulEarth">Beautiful Earth</button>
+        <button class="mode-chip" data-mode="cities" data-i18n="earthMotion">Earth in Motion</button>
+        <button class="mode-chip" data-mode="calm" data-i18n="natureCalm">Nature & Calm</button>
+        <button class="mode-chip" data-mode="night" data-i18n="nightLights">Night Lights</button>
       </div>
       <div class="window-grid" id="watchGrid" aria-live="polite"></div>
       <div class="watch-foot">
@@ -96,7 +96,7 @@
     <section class="wander-section" id="destinations">
       <div class="wander-head">
         <div><p class="eyebrow">KEEP WANDERING</p><h2>More places worth a look.</h2></div>
-        <button id="wanderRefresh">Another six →</button>
+        <button id="wanderRefresh"><span data-i18n="anotherSix">Another six</span> →</button>
       </div>
       <div class="wander-grid" id="wanderGrid"></div>
       <div class="wander-note" id="wanderNote">Curated from healthy sources outside the current Top 20.</div>
@@ -108,8 +108,8 @@
         <p>Search a city, beach, mountain, park, wildlife camera or destination. ERN shows the best truthful window available.</p>
       </div>
       <div class="search-box">
-        <input id="searchInput" type="search" autocomplete="off" placeholder="Search Earth…">
-        <button id="clearSearch">Clear</button>
+        <input id="searchInput" type="search" autocomplete="off" placeholder="Search Earth…" data-i18n-placeholder="searchEarth">
+        <button id="clearSearch" data-i18n="clear">Clear</button>
       </div>
       <div class="search-suggestions" aria-label="Quick searches">
         <button data-query="New York">New York</button>
@@ -129,9 +129,9 @@
         <p>Choose a pin, then open the best available current view for that place.</p>
       </div>
       <div class="atlas-controls" aria-label="Map filters">
-        <button class="atlas-filter active" data-map-filter="all">All windows</button>
-        <button class="atlas-filter" data-map-filter="inside">Play here</button>
-        <button class="atlas-filter" data-map-filter="external">External live</button>
+        <button class="atlas-filter active" data-map-filter="all" data-i18n="allWindows">All windows</button>
+        <button class="atlas-filter" data-map-filter="inside" data-i18n="playHere">Play here</button>
+        <button class="atlas-filter" data-map-filter="external" data-i18n="externalLive">External live</button>
       </div>
       <div class="atlas" id="atlas" role="group" aria-label="Living Atlas">
         <div class="atlas-continent atlas-americas"></div>
@@ -150,7 +150,7 @@
       </div>
       <div class="my-earth-tools">
         <strong>Saved windows</strong>
-        <button id="resetPersonal">Reset local suggestions</button>
+        <button id="resetPersonal" data-i18n="resetLocal">Reset local suggestions</button>
       </div>
       <div class="result-grid" id="savedResults"></div>
       <p class="empty" id="savedEmpty">Nothing saved yet. Tap ♡ while watching a window.</p>
@@ -186,23 +186,23 @@
     </div>
     <div class="viewer-bottom">
       <div class="journey">
-        <button id="prevViewer">Previous</button>
+        <button id="prevViewer" data-i18n="previous">Previous</button>
         <button id="journeyToggle">Play journey</button>
-        <button id="nextViewer">Next</button>
+        <button id="nextViewer" data-i18n="next">Next</button>
       </div>
       <div class="viewer-actions">
         <button id="favoriteViewer" aria-label="Save">♡</button>
-        <a id="sourceViewer" target="_blank" rel="noopener noreferrer">Source</a>
-        <button id="fullViewer">Full screen</button>
+        <a id="sourceViewer" target="_blank" rel="noopener noreferrer" data-i18n="source">Source</a>
+        <button id="fullViewer" data-i18n="fullScreen">Full screen</button>
       </div>
     </div>
   </div>
 
   <nav class="mobile-dock" aria-label="Mobile navigation">
-    <button id="mobileWatch">▶<span>Watch</span></button>
-    <button id="mobileExplore">⌕<span>Explore</span></button>
-    <button id="mobileMap">◎<span>Map</span></button>
-    <button id="mobileSaved">♡<span>Saved</span></button>
+    <button id="mobileWatch">▶<span data-i18n="watch">Watch</span></button>
+    <button id="mobileExplore">⌕<span data-i18n="explore">Explore</span></button>
+    <button id="mobileMap">◎<span data-i18n="map">Map</span></button>
+    <button id="mobileSaved">♡<span data-i18n="saved">Saved</span></button>
   </nav>
 
   <script src="./src/app-lite.js" defer></script>
