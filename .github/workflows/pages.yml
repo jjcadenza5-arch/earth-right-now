@@ -57,6 +57,8 @@ jobs:
             sleep 10
           done
           grep -F 'rel="canonical" href="https://earthrightnow.app/"' /tmp/ern-index.html
+          curl --fail --silent --show-error --location --max-time 20 "$base/release-manifest.json" -o /tmp/ern-release-manifest.json
+          grep -F "\"commit\": \"${GITHUB_SHA}\"" /tmp/ern-release-manifest.json
           for path in /manifest.webmanifest /robots.txt /about.html /privacy.html; do
             curl --fail --silent --show-error --location --max-time 20 "$base$path" -o /dev/null
           done
