@@ -669,3 +669,9 @@
 
 ## 2026-09-20 — ERN place answers
 - Search destination cards now state the best available visual evidence and current-check status directly, turning results into concise place answers rather than generic listings.
+
+## 2026-09-23 — Make real playback evidence measurable
+- Added provider-family playback evidence status for all legal inside-ERN embeds.
+- A provider family is not considered ready until representative sources have actual HUMAN_PLAYBACK observations; HTTP-only and media-endpoint checks are never promoted into visual playback proof.
+- Degraded inside-ERN sources remain mandatory checks, while healthy representatives are sampled conservatively to reduce repetitive manual validation.
+- Added `npm run provider:playback-status` and regression coverage. Release evidence remains fail-closed until observations are genuinely performed on the deployed ERN origin.
