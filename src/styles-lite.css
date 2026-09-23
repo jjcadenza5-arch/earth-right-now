@@ -183,3 +183,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .mode-chip[data-mode="golden"]{border-color:rgba(255,210,132,.28)}
 .mode-chip[data-mode="golden"].active{background:#fff0cf;color:#58411b;border-color:#fff0cf}
 .recommend-head{margin-top:32px}
+
+/* Broader provider diversity keeps Watch Earth from feeling like a single-camera directory */
+.set-note{flex-wrap:wrap}

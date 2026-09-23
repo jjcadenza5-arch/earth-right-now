@@ -49,7 +49,7 @@
         <p class="eyebrow">EARTH RIGHT NOW</p>
         <h1>A more<br>connected world.</h1>
         <p class="hero-tagline" data-i18n="seeBefore">See before you go.</p>
-        <p class="hero-deck">Live views from amazing places around the world.<br>Real conditions. Real moments. A more connected planet.</p>
+        <p class="hero-deck" data-i18n="heroDeck">Live views from amazing places around the world.<br>Real conditions. Real moments. A more connected planet.</p>
         <div class="hero-actions">
           <button class="primary" id="heroWatch"><span class="play-mark">▶</span> <span data-i18n="watchNow">Watch Earth Now</span> <span aria-hidden="true">→</span></button>
           <button id="heroNext" class="quiet-hero" data-i18n="nextMoment">Next moment</button>
@@ -84,8 +84,8 @@
 
     <section class="watch-section" id="watch">
       <div class="section-head dark-head">
-        <div><p class="eyebrow">WATCH EARTH NOW</p><h2><span class="watch-globe">◎</span> <span id="watchCount">20</span> current windows.</h2><p id="watchSubhead">A changing world. Always something new to see.</p></div>
-        <button id="refreshSet" class="surprise">⤨ Surprise Me</button>
+        <div><p class="eyebrow" data-i18n="watchNowEyebrow">WATCH EARTH NOW</p><h2><span class="watch-globe">◎</span> <span id="watchCount">20</span> current windows.</h2><p id="watchSubhead" data-i18n="watchSubhead">A changing world. Always something new to see.</p></div>
+        <button id="refreshSet" class="surprise">⤨ <span data-i18n="surpriseMe">Surprise Me</span></button>
       </div>
       <div class="set-note"><span id="setLabel">Featured now</span><span id="setReason">Chosen for quality, local light and variety.</span><span class="moment-summary" id="momentSummary"></span><span class="local-personal" id="personalNote">Personalized in this browser</span></div>
       <div class="mode-switcher" id="modeSwitcher" aria-label="Featured sets">
@@ -104,7 +104,7 @@
 
     <section class="wander-section" id="destinations">
       <div class="wander-head">
-        <div><p class="eyebrow">KEEP WANDERING</p><h2>More places worth a look.</h2></div>
+        <div><p class="eyebrow" data-i18n="keepWandering">KEEP WANDERING</p><h2 data-i18n="morePlaces">More places worth a look.</h2></div>
         <button id="wanderRefresh"><span data-i18n="anotherSix">Another six</span> →</button>
       </div>
       <div class="wander-grid" id="wanderGrid"></div>
@@ -113,8 +113,8 @@
 
     <section class="section search-section" id="search">
       <div class="section-head">
-        <div><p class="eyebrow">EXPLORE EARTH</p><h2>Where do you want to look?</h2></div>
-        <p>Search a city, beach, mountain, park, wildlife camera or destination. ERN shows the best truthful window available.</p>
+        <div><p class="eyebrow" data-i18n="exploreEarth">EXPLORE EARTH</p><h2 data-i18n="whereLook">Where do you want to look?</h2></div>
+        <p data-i18n="searchDeck">Search a city, beach, mountain, park, wildlife camera or destination. ERN shows the best truthful window available.</p>
       </div>
       <div class="search-box">
         <input id="searchInput" type="search" autocomplete="off" placeholder="Search Earth…" data-i18n-placeholder="searchEarth">
@@ -134,8 +134,8 @@
 
     <section class="section atlas-section" id="map">
       <div class="section-head">
-        <div><p class="eyebrow">LIVING ATLAS</p><h2>The world, one current window at a time.</h2></div>
-        <p>Choose a pin, then open the best available current view for that place.</p>
+        <div><p class="eyebrow" data-i18n="livingAtlas">LIVING ATLAS</p><h2 data-i18n="atlasHeading">The world, one current window at a time.</h2></div>
+        <p data-i18n="atlasDeck">Choose a pin, then open the best available current view for that place.</p>
       </div>
       <div class="atlas-controls" aria-label="Map filters">
         <button class="atlas-filter active" data-map-filter="all" data-i18n="allWindows">All windows</button>
@@ -154,19 +154,19 @@
 
     <section class="section my-earth" id="saved">
       <div class="section-head">
-        <div><p class="eyebrow">MY EARTH</p><h2>Your places, kept local.</h2></div>
-        <p>Favorites and recent exploration stay in this browser. ERN uses them only to gently improve your “For this moment” set.</p>
+        <div><p class="eyebrow" data-i18n="myEarth">MY EARTH</p><h2 data-i18n="myEarthHeading">Your places, kept local.</h2></div>
+        <p data-i18n="myEarthDeck">Favorites and recent exploration stay in this browser. ERN uses them only to gently improve your “For this moment” set.</p>
       </div>
       <div class="my-earth-tools">
-        <strong>Saved windows</strong>
+        <strong data-i18n="savedWindows">Saved windows</strong>
         <button id="resetPersonal" data-i18n="resetLocal">Reset local suggestions</button>
       </div>
       <div class="result-grid" id="savedResults"></div>
       <p class="empty" id="savedEmpty">Nothing saved yet. Tap ♡ while watching a window.</p>
-      <div class="recent-head"><strong>Recently explored</strong><small id="recentNote"></small></div>
+      <div class="recent-head"><strong data-i18n="recentExplored">Recently explored</strong><small id="recentNote"></small></div>
       <div class="result-grid recent-grid" id="recentResults"></div>
       <p class="empty" id="recentEmpty">Places you explore will appear here for quick return.</p>
-      <div class="recent-head recommend-head"><strong>Continue exploring</strong><small>Based only on your local ERN activity.</small></div>
+      <div class="recent-head recommend-head"><strong data-i18n="continueExploring">Continue exploring</strong><small data-i18n="localOnly">Based only on your local ERN activity.</small></div>
       <div class="result-grid recent-grid" id="recommendedResults"></div>
     </section>
   </main>
@@ -187,14 +187,14 @@
     </div>
     <div class="viewer-alternates" id="viewerAlternates" hidden></div>
     <div class="viewer-context" id="viewerContext" hidden>
-      <div class="context-story"><span class="context-kicker">ABOUT THIS WINDOW</span><p id="viewerStory"></p><div class="moment-why" id="viewerMomentWhy"></div><div class="source-confidence" id="sourceConfidence"></div><div class="context-tags" id="viewerTags"></div></div>
-      <div class="context-nearby"><span class="context-kicker">NEARBY ON EARTH</span><div class="nearby-list" id="nearbyList"></div><span class="context-kicker related-kicker">MORE LIKE THIS</span><div class="nearby-list" id="relatedList"></div></div>
-      <div class="context-plan"><span class="context-kicker">BEFORE YOU GO</span><div class="plan-actions">
-        <a id="planStay" target="_blank" rel="noopener noreferrer">Stay</a>
-        <a id="planEat" target="_blank" rel="noopener noreferrer">Eat</a>
-        <a id="planDo" target="_blank" rel="noopener noreferrer">Things to do</a>
-        <a id="planWeather" target="_blank" rel="noopener noreferrer">Weather</a>
-        <a id="planMap" target="_blank" rel="noopener noreferrer">Map</a>
+      <div class="context-story"><span class="context-kicker" data-i18n="aboutWindow">ABOUT THIS WINDOW</span><p id="viewerStory"></p><div class="moment-why" id="viewerMomentWhy"></div><div class="source-confidence" id="sourceConfidence"></div><div class="context-tags" id="viewerTags"></div></div>
+      <div class="context-nearby"><span class="context-kicker" data-i18n="nearbyEarth">NEARBY ON EARTH</span><div class="nearby-list" id="nearbyList"></div><span class="context-kicker related-kicker" data-i18n="moreLikeThis">MORE LIKE THIS</span><div class="nearby-list" id="relatedList"></div></div>
+      <div class="context-plan"><span class="context-kicker" data-i18n="beforeGo">BEFORE YOU GO</span><div class="plan-actions">
+        <a id="planStay" target="_blank" rel="noopener noreferrer" data-i18n="stay">Stay</a>
+        <a id="planEat" target="_blank" rel="noopener noreferrer" data-i18n="eat">Eat</a>
+        <a id="planDo" target="_blank" rel="noopener noreferrer" data-i18n="thingsDo">Things to do</a>
+        <a id="planWeather" target="_blank" rel="noopener noreferrer" data-i18n="weather">Weather</a>
+        <a id="planMap" target="_blank" rel="noopener noreferrer" data-i18n="map">Map</a>
       </div><small>Useful planning links for this place. Partner links can be added later without changing the ERN experience.</small></div>
     </div>
     <div class="viewer-bottom">
