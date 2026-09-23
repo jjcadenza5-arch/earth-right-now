@@ -21,3 +21,20 @@ footer{display:flex;justify-content:space-between;gap:20px;align-items:center;pa
 @media(max-width:860px){.topbar{height:76px}.brand img{width:46px;height:46px}.brand strong{font-size:18px}.brand small{font-size:9px}.window-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{height:58vh}.hero-location{right:16px;bottom:16px}.category-bar{justify-content:flex-start}.watch-foot{overflow:auto;justify-content:flex-start}.section-head{align-items:start;flex-direction:column}.viewer-bottom{align-items:stretch;flex-direction:column}.journey,.viewer-actions{justify-content:center}}
 @media(max-width:600px){.topbar{height:64px;padding:0 12px}.brand img{width:39px;height:39px}.brand strong{font-size:14px}.brand small{display:none}nav{gap:1px}nav button{font-size:11px;padding:6px}nav button:nth-of-type(3),nav button:nth-of-type(4),nav button:nth-of-type(5),nav a{display:none}nav select{max-width:58px;padding:7px}.hero{height:72vh;min-height:520px}.hero-copy{left:18px;top:43%;width:calc(100% - 36px)}.hero h1{font-size:clamp(44px,15vw,70px)}.hero-tagline{font-size:20px}.hero-deck{font-size:13px}.quiet-hero{display:none}.hero-location{left:18px;right:18px;bottom:18px;min-width:0}.category{min-width:82px}.window-grid{grid-template-columns:1fr 1fr;gap:8px}.window-card{min-height:190px}.watch-section{padding-inline:8px}.dark-head{padding-inline:8px}.surprise{padding:9px 13px}.section{padding:42px 16px}.atlas{min-height:330px}.viewer-bar{padding:10px}.viewer-bottom{padding:10px}.viewer-bottom button,.viewer-bottom a{font-size:11px;padding:8px 9px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-live,.viewer-stage,.viewer{transition:none}.window-card:hover,.result-card:hover{transform:none}}
+
+/* Mockup fidelity pass: quieter premium details and stronger ERN identity */
+.hero-script{position:absolute;z-index:3;right:4.8vw;top:12%;text-align:right;color:rgba(255,255,255,.76);font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(18px,2.2vw,30px);line-height:1.08;transform:rotate(-5deg);text-shadow:0 2px 12px rgba(0,0,0,.22)}
+.hero-script em{font-style:normal;font-size:.92em}
+.watch-globe{display:inline-grid;place-items:center;width:34px;height:34px;border:2px solid rgba(255,255,255,.8);border-radius:50%;font-size:18px;vertical-align:-5px;margin-right:4px}
+.card-favorite{position:absolute;right:11px;bottom:10px;z-index:5;width:30px;height:30px;border:0;background:transparent;color:white;font-size:23px;line-height:1;text-shadow:0 2px 8px rgba(0,0,0,.72);padding:0}
+.card-favorite:hover,.card-favorite:focus-visible{transform:scale(1.08)}
+.window-card.saved .card-favorite{color:#fff}
+.window-card.saved .card-favorite:before{content:""}
+.window-card.is-external .card-kicker span:first-child{background:#b77b2e}
+.window-card.is-image .card-kicker span:first-child{background:#1f8aa3}
+.window-card.is-partner .card-kicker span:first-child{background:#6a63d8}
+.window-card .card-body{padding-right:43px}
+.window-card .card-body small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.category{transition:background .16s ease,transform .16s ease}.category:hover{transform:translateY(-1px)}
+.surprise{transition:background .16s ease,border-color .16s ease}.surprise:hover{background:rgba(255,255,255,.08);border-color:#fff}
+@media(max-width:860px){.hero-script{display:none}.watch-globe{width:30px;height:30px;font-size:15px}}
