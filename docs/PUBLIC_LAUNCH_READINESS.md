@@ -1,6 +1,6 @@
 # Public Launch Readiness
 
-Earth Right Now is moving from private beta presentation toward a public custom-domain launch at https://earthrightnow.app/.
+Earth Right Now is publicly reachable on its custom domain at https://earthrightnow.app/ while release certification remains evidence-gated. Repository automation can verify static/deployment invariants, but real browser/device/provider behavior must still be observed before ERN calls a release fully validated.
 
 ## Engineering gates
 
@@ -23,6 +23,12 @@ Earth Right Now is moving from private beta presentation toward a public custom-
 - Affiliate and sponsored relationships must be disclosed at the point of action.
 - Do not invent inventory, availability, prices, discounts or partner relationships.
 - Activate monetization incrementally only after real visitor use can be measured responsibly.
+
+## Evidence boundaries
+
+Automated checks cover catalog/schema invariants, custom-domain/SEO/PWA wiring, static accessibility semantics, source-truth logic and immutable release packaging. They do not prove that a third-party stream visibly plays in a real browser or that a mobile device feels usable.
+
+Use `npm run release:operator-brief` to see only the remaining real-world evidence items for the current ledger.
 
 ## Evidence still requiring a human/account action
 
