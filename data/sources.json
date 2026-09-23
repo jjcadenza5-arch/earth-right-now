@@ -896,8 +896,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T09:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:40:00+07:00",
     "failureReason": null,
     "quality": 95,
     "freshness": 98,
@@ -907,7 +907,8 @@
     "lon": -74.0438,
     "timeZone": "America/New_York",
     "rightsBasis": "EarthCam publicly identifies this as live streaming video; ERN keeps playback at the provider because no ERN embed permission is inferred.",
-    "officialUrl": "https://www.earthcam.com/usa/newyork/skyline/?cam=skyline_g"
+    "officialUrl": "https://www.earthcam.com/usa/newyork/skyline/?cam=skyline_g",
+    "freshnessEvidence": "Current EarthCam New York skyline page states that the Jersey City view delivers New York City in live streaming video."
   },
   {
     "id": "statue-liberty-harbor-earthcam",
@@ -1052,8 +1053,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T09:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:40:00+07:00",
     "failureReason": null,
     "freshness": 98,
     "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights.",
@@ -1074,7 +1075,8 @@
     "story": "A calm Caribbean beachfront window with turquoise water and changing sunrise-to-sunset light.",
     "lat": 18.1818,
     "lon": -63.139,
-    "timeZone": "America/Anguilla"
+    "timeZone": "America/Anguilla",
+    "freshnessEvidence": "Current EarthCam Meads Bay page says the view is live from Anguilla and provides real-time views of Meads Bay."
   },
   {
     "provider": "EarthCam",
@@ -1085,8 +1087,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T09:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:40:00+07:00",
     "failureReason": null,
     "freshness": 98,
     "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights.",
@@ -1107,7 +1109,8 @@
     "story": "Live oceanfront beach and pier conditions from Lauderdale-by-the-Sea.",
     "lat": 26.189,
     "lon": -80.096,
-    "timeZone": "America/New_York"
+    "timeZone": "America/New_York",
+    "freshnessEvidence": "Current EarthCam Lauderdale-by-the-Sea page states that it provides live streaming oceanfront HD views of the beach and pier."
   },
   {
     "provider": "EarthCam",
@@ -1118,8 +1121,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T09:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:40:00+07:00",
     "failureReason": null,
     "freshness": 98,
     "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights.",
@@ -1140,7 +1143,8 @@
     "story": "A live oceanfront Caribbean view from Aruba, strong for daylight, beach conditions and evening light.",
     "lat": 12.531,
     "lon": -70.058,
-    "timeZone": "America/Aruba"
+    "timeZone": "America/Aruba",
+    "freshnessEvidence": "Current EarthCam Aruba page states that the resort camera provides a live oceanfront view of Oranjestad."
   },
   {
     "provider": "EarthCam",
@@ -1151,8 +1155,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T09:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:40:00+07:00",
     "failureReason": null,
     "freshness": 98,
     "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights.",
@@ -1173,7 +1177,8 @@
     "story": "A tranquil live white-sand beach window from Florida's Paradise Coast.",
     "lat": 25.94,
     "lon": -81.734,
-    "timeZone": "America/New_York"
+    "timeZone": "America/New_York",
+    "freshnessEvidence": "Current EarthCam Marco Island page explicitly describes the beach camera as a live streaming camera."
   },
   {
     "provider": "EarthCam",
@@ -1184,8 +1189,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T09:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:40:00+07:00",
     "failureReason": null,
     "freshness": 98,
     "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights.",
@@ -1207,7 +1212,8 @@
     "story": "A lively street-level window into Dublin's Temple Bar, especially strong for evening atmosphere and events.",
     "lat": 53.3455,
     "lon": -6.264,
-    "timeZone": "Europe/Dublin"
+    "timeZone": "Europe/Dublin",
+    "freshnessEvidence": "Current EarthCam Dublin page explicitly describes its Temple Bar views as live streaming webcams."
   },
   {
     "provider": "EarthCam",
@@ -1218,8 +1224,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T09:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:40:00+07:00",
     "failureReason": null,
     "freshness": 98,
     "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights.",
@@ -1240,7 +1246,8 @@
     "story": "A live panorama of Chicago's skyline, Museum Campus, Lake Shore Drive and Lake Michigan.",
     "lat": 41.8663,
     "lon": -87.617,
-    "timeZone": "America/Chicago"
+    "timeZone": "America/Chicago",
+    "freshnessEvidence": "Current EarthCam Chicago page explicitly describes the Field Museum skyline view as a live camera."
   },
   {
     "provider": "EarthCam",
@@ -1251,8 +1258,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T09:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:40:00+07:00",
     "failureReason": null,
     "freshness": 98,
     "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights.",
@@ -1273,7 +1280,8 @@
     "story": "A Caribbean live window across Little Bay where cruise ships can pass beyond the beach.",
     "lat": 18.0201,
     "lon": -63.063,
-    "timeZone": "America/Lower_Princes"
+    "timeZone": "America/Lower_Princes",
+    "freshnessEvidence": "Current EarthCam Sint Maarten page explicitly invites visitors to watch live from Little Bay Beach."
   },
   {
     "provider": "EarthCam",
@@ -1284,8 +1292,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T09:40:00+07:00",
+    "lastSuccessfulCheck": "2026-09-23T09:40:00+07:00",
     "failureReason": null,
     "freshness": 98,
     "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights.",
@@ -1306,7 +1314,8 @@
     "story": "A live central-city view across Tbilisi's Freedom Square and Saint George monument.",
     "lat": 41.693,
     "lon": 44.8015,
-    "timeZone": "Asia/Tbilisi"
+    "timeZone": "Asia/Tbilisi",
+    "freshnessEvidence": "Current EarthCam Tbilisi page explicitly describes the Freedom Square view as a live webcam."
   },
   {
     "provider": "EarthCam",
