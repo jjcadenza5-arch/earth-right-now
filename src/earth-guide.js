@@ -1,18 +1,26 @@
 import { interpretEarthIntent } from "./earth-intent.js";
-const label=i=>({water:"water and coast",mountains:"mountains and snow",wildlife:"wildlife",human:"city life",beautiful:"beautiful scenery",happening:"places with activity",night:"city lights at night",daylight:"daylight",golden:"sunrise, sunset or golden light",snow:"snow",rain:"rain",local:"small and local places",reference:"reference images"}[i]||i);
-export function earthGuideReply(result,{tasteSignals=0}={}){
- const q=String(result?.query||"").trim();if(!q)return{tone:"WELCOME",text:"Ask me about a place, a mood, weather, scenery or something happening on Earth. I’ll help you see the best truthful window ERN has — current views when available, or clearly labeled reference views when they’re not."};
+import { guideCopy,guideFormat,guideIntentLabel } from "./earth-guide-l10n.js";
+
+export function earthGuideReply(result,{tasteSignals=0,language="en"}={}){
+ const q=String(result?.query||"").trim(),copy=guideCopy(language);
+ if(!q)return{tone:"WELCOME",text:copy.welcome};
  const intent=interpretEarthIntent(q);
- if(result?.empty)return{tone:"EMPTY",text:intent.wantsCurrent?"I couldn't find a verified-current match for that yet. Try the same place without “live” to see other available views or clearly labeled reference images.":"I don't have a good match for that yet. Try a place, landscape, city, coast, mountain or wildlife view."};
- const first=result.items?.[0],where=first?.title||first?.region||first?.country||"somewhere on Earth",weather=intent.intents.filter(i=>i==="snow"||i==="rain"),theme=(weather.length?weather:intent.intents).map(label).slice(0,2).join(" and ");
- const current=intent.wantsCurrent?"current ":"",evidence=!intent.wantsCurrent&&result.nearNowCount?` ${result.nearNowCount} near-now ${result.nearNowCount===1?"view is":"views are"} supported by current evidence.`:"",unchecked=!intent.wantsCurrent&&result.availableNonCurrentCount?` ${result.availableNonCurrentCount} additional ${result.availableNonCurrentCount===1?"view is":"views are"} available but visual currentness is not confirmed.`:"",fallback=!intent.wantsCurrent&&result.referenceCount?` ${result.referenceCount} reference ${result.referenceCount===1?"image is":"images are"} clearly labeled as not current.`:"",personal=tasteSignals?" I also used your local My Earth taste as a gentle preference, after your request.":"";
- const currentEvidence=intent.wantsCurrent&&result.nearNowCount?` ${result.nearNowCount} near-now ${result.nearNowCount===1?"view is":"views are"} supported by current evidence.`:"";return{tone:"FOUND",text:`I found ${result.count} ${current}destination${result.count===1?"":"s"}${theme?` for ${theme}`:""}. Start with ${where}.${currentEvidence}${evidence}${unchecked}${fallback}${personal}`};
+ if(result?.empty)return{tone:"EMPTY",text:intent.wantsCurrent?copy.emptyCurrent:copy.empty};
+ const first=result.items?.[0],where=first?.title||first?.region||first?.country||"somewhere on Earth",weather=intent.intents.filter(i=>i==="snow"||i==="rain"),theme=(weather.length?weather:intent.intents).map(i=>guideIntentLabel(i,language)).slice(0,2).join(language==="ja"||language==="zh"?"、":" and ");
+ const count=result.count||0,current=intent.wantsCurrent;
+ const text=guideFormat("found",{count,current:current?(language==="en"?"current ":language==="th"?"ที่เป็นปัจจุบัน":language==="de"?"aktuelle ":language==="fr"?" actuelle":language==="es"?" actual":language==="ja"?"現在の":"当前"):"",plural:count===1?"":"s",theme:theme?(language==="en"?" for "+theme:language==="de"?" für "+theme:language==="fr"?" pour "+theme:language==="es"?" para "+theme:language==="ja"?"（"+theme+"）":language==="zh"?"，主题为"+theme:" สำหรับ "+theme):"",where},language)
+  +(result.nearNowCount?guideFormat("nearNow",{count:result.nearNowCount,plural:result.nearNowCount===1?"":"s",verb:result.nearNowCount===1?"is":"are"},language):"")
+  +(!current&&result.availableNonCurrentCount?guideFormat("unchecked",{count:result.availableNonCurrentCount,plural:result.availableNonCurrentCount===1?"":"s",verb:result.availableNonCurrentCount===1?"is":"are"},language):"")
+  +(!current&&result.referenceCount?guideFormat("fallback",{count:result.referenceCount,plural:result.referenceCount===1?"":"s",verb:result.referenceCount===1?"is":"are"},language):"")
+  +(tasteSignals?copy.personal:"");
+ return{tone:"FOUND",text};
 }
-export function earthGuideFollowUps(result){
- if(!result?.count)return["What’s good on Earth right now?","Surprise me","Show me a live beach"];
- const intent=interpretEarthIntent(result.query);const out=[];
- if(!intent.wantsCurrent)out.push("Show me what is live right now");
- if(!intent.intents.includes("beautiful"))out.push("Make it peaceful and beautiful");
- if(!intent.intents.includes("night")&&!intent.intents.includes("golden"))out.push("Show me sunrise, sunset or golden hour now");
- out.push("Show me somewhere completely different");out.push("Take me somewhere small and local");return out.slice(0,3);
+export function earthGuideFollowUps(result,{language="en"}={}){
+ const copy=guideCopy(language);
+ if(!result?.count)return[...copy.followEmpty];
+ const intent=interpretEarthIntent(result.query),out=[];
+ if(!intent.wantsCurrent)out.push(copy.follow[0]);
+ if(!intent.intents.includes("beautiful"))out.push(copy.follow[1]);
+ if(!intent.intents.includes("night")&&!intent.intents.includes("golden"))out.push(copy.follow[2]);
+ out.push(copy.follow[3]);out.push(copy.follow[4]);return out.slice(0,3);
 }
