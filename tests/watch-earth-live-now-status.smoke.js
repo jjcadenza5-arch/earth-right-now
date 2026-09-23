@@ -1,0 +1,4 @@
+import assert from "node:assert/strict";import fs from "node:fs";import {watchEarthLiveNowStatus} from "../src/watch-earth-live-now-status.js";
+const rows=JSON.parse(fs.readFileSync("data/sources.json","utf8"));const checks=rows.flatMap(x=>[x.checkedAt,x.lastSuccessfulCheck]).map(Date.parse).filter(Number.isFinite);const anchor=new Date(Math.max(...checks));
+const anchored=watchEarthLiveNowStatus(rows,{now:anchor,limit:20});assert.ok(["FULL","PARTIAL","EMPTY"].includes(anchored.status));assert.equal(anchored.shortfall,Math.max(0,20-anchored.count));assert.ok(Array.isArray(anchored.ids));assert.match(anchored.note,/actual current clock/);
+console.log("ERN Watch Earth live-now operations status passed");
