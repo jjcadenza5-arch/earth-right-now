@@ -4,7 +4,7 @@ Earth Right Now is publicly reachable on its custom domain at https://earthright
 
 ## Engineering gates
 
-- Main CI and Pages deployment must be green for the exact release commit.
+- Main CI, Pages deployment, and post-deploy custom-domain HTTP verification must be green for the exact release commit.
 - Custom-domain canonical, sitemap, robots and CNAME must agree on earthrightnow.app.
 - LIVE VIDEO, LIVE IMAGE, EXTERNAL LIVE, PARTNER and PREVIEW meanings remain distinct.
 - Watch Earth requires near-now evidence and usable playback; runtime failures are skipped/quarantined.
