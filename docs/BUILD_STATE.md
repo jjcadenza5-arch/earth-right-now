@@ -4,6 +4,12 @@
 - No embed permission or HUMAN_PLAYBACK evidence was inferred from these page checks; playback location and release evidence remain unchanged.
 - Sources whose current page did not clearly support their existing camera/currentness semantics were left stale rather than receiving a cosmetic timestamp refresh.
 
+## 2026-09-23 — Actual-clock Watch Earth operations
+- Added a separate live-now Watch Earth status report that evaluates the curated journey against the actual current clock instead of the deterministic catalog-time anchor used by CI regression audits.
+- Daily operations now exposes current journey count, shortfall, place/country/provider breadth, inside-ERN coverage, light mix and stale/expired catalog-source debt.
+- The deterministic four-daypart audit remains unchanged for reproducible structural testing; the new report prevents that historical anchor from being mistaken for present-time freshness.
+- The report is strictly observational: it does not refresh verification timestamps, change promotion eligibility, or substitute for HUMAN_PLAYBACK/release evidence.
+
 ## 2026-09-23 — Fail-closed domain diagnostics
 - Fixed a shell-pipeline bug where `npm run domain:health | tee ...` could hide the diagnostic command's non-zero exit code.
 - Both the Pages origin-verification workflow and the scheduled domain-health workflow now enable `pipefail`, so a TLS/DNS/HTTPS failure remains a real workflow failure even while its JSON report is captured.
