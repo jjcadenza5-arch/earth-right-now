@@ -50,6 +50,16 @@ const momentWords={
  es:["Actual","Luz de la mañana","Día","Luz de la tarde","Noche"]
 };
 function momentLabel(s){const w=momentWords[lang]||momentWords.en,h=localHour(s);if(h===null)return w[0];if(h>=5&&h<8)return w[1];if(h>=8&&h<17)return w[2];if(h>=17&&h<20)return w[3];return w[4];}
+function momentSignal(s){
+ const h=localHour(s),c=cats(s);if(h===null)return{score:0,label:"Current view",reason:"Current conditions available now."};
+ const scenic=isScenic(s),city=isCity(s),wild=/wildlife|animal|zoo/.test(c),water=/beach|water|sea|coast|harbour/.test(c),mountain=/mountain|snow|ski|volcano|alps/.test(c);
+ if(h>=5&&h<8){let score=18+(scenic?16:0)+(wild?9:0);return{score,label:"Morning light",reason:wild?"Dawn can be an active wildlife window.":"Soft morning light can make this a strong time to look."}}
+ if(h>=17&&h<20){let score=20+(scenic?18:0)+(water?7:0)+(mountain?6:0);return{score,label:"Evening light",reason:"Late-day light can make this view especially expressive."}}
+ if((h>=20||h<5)&&city){return{score:34,label:"Night lights",reason:"This city or harbour can stay visually active after dark."}}
+ if((h>=20||h<5)&&!city){return{score:-26,label:"Night",reason:"It is dark locally, so this view may reveal less detail."}}
+ if(h>=8&&h<17){let score=10+(scenic?12:0);return{score,label:"Daylight",reason:"Local daylight gives a clearer view of current conditions."}}
+ return{score:0,label:momentLabel(s),reason:"Current local conditions."};
+}
 function cats(s){return(s.categories||[]).join(" ").toLowerCase()}
 function isDay(s){const h=localHour(s);return h===null?true:h>=6&&h<19}
 function isCity(s){return/city|cities|street|skyline|harbour|landmark|culture/.test(cats(s))}
@@ -76,9 +86,10 @@ function baseScore(s){
  if(s.health==="HEALTHY")n+=32;else if(s.health==="DEGRADED")n-=38;else n-=100;
  const age=verificationAgeDays(s);if(age<1)n+=8;else if(age<3)n+=3;else if(age>14)n-=30;else if(age>7)n-=12;
  if(isInside(s))n+=22;
- if(isDay(s)&&isScenic(s))n+=32;
- if(!isDay(s)&&!isCity(s))n-=50;
- if(!isDay(s)&&isCity(s))n+=16;
+ const ms=momentSignal(s);n+=ms.score;
+ if(isDay(s)&&isScenic(s))n+=18;
+ if(!isDay(s)&&!isCity(s))n-=20;
+ if(!isDay(s)&&isCity(s))n+=8;
  if(FEATURED_HOLD.has(s.id))n-=500;
  n+=personalBoost(s);
  return n;
@@ -110,7 +121,7 @@ function setProfile(){
 }
 function buildWatch(sources){
  const profile=setProfile();
- let pool=sources.filter(s=>s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id));
+ let pool=sources.filter(s=>s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id)&&verificationAgeDays(s)<=21);
  if(state.category!=="all"&&state.category!=="random")pool=pool.filter(s=>categoryMatch(s,state.category));
  if(state.category==="all"){
    const strict={
@@ -139,7 +150,9 @@ function buildWatch(sources){
  }
  for(const s of sorted){if(out.length>=20)break;if(!out.some(x=>x.id===s.id))out.push(s)}
  if(state.category==="random")out.sort(()=>Math.random()-.5);
- $("#setLabel").textContent=profile.label;$("#setReason").textContent=profile.reason;const p=interactionProfile();$("#personalNote").textContent=Number(p.views||0)>=3?"Adapting locally to places you explore":"Personalized locally as you explore";
+ $("#setLabel").textContent=profile.label;$("#setReason").textContent=profile.reason;
+ const signals=out.slice(0,6).map(s=>momentSignal(s));const strong=signals.filter(x=>x.score>=24).length;$("#momentSummary").textContent=strong?strong+" strong moment"+(strong===1?"":"s")+" near the top":"Balanced for the current moment";
+ const p=interactionProfile();$("#personalNote").textContent=Number(p.views||0)>=3?"Adapting locally to places you explore":"Personalized locally as you explore";
  return out;
 }
 function generatedBackground(s){
@@ -156,7 +169,7 @@ function renderHero(s){
  setTimeout(()=>{mount.replaceChildren();mount.style.background=generatedBackground(s);const img=cleanUrl(s.thumbnailUrl);
   if(img){const el=document.createElement("img");el.src=img;el.alt="";el.decoding="async";mount.append(el)}
   else if(allowAmbientLive()&&s.playback==="EMBED"&&cleanUrl(s.embedUrl)){const f=document.createElement("iframe");f.src=s.embedUrl;f.title=s.title;f.allow="autoplay; fullscreen; picture-in-picture";f.loading="eager";f.referrerPolicy="strict-origin-when-cross-origin";f.tabIndex=-1;mount.append(f)}
-  $("#heroTitle").textContent=s.title;$("#heroMeta").textContent=[s.region,s.country,momentLabel(s),localTime(s)].filter(Boolean).join(" · ");$("#heroTruth").textContent=publicTruth(s);$("#heroLocation").dataset.truth=truthTone(s);$("#heroDot").dataset.truth=truthTone(s);mount.classList.remove("is-changing");
+  $("#heroTitle").textContent=s.title;$("#heroMeta").textContent=[s.region,s.country,momentSignal(s).label,localTime(s)].filter(Boolean).join(" · ");$("#heroTruth").textContent=publicTruth(s);$("#heroLocation").dataset.truth=truthTone(s);$("#heroDot").dataset.truth=truthTone(s);mount.classList.remove("is-changing");
  },180);
 }
 function compactVisual(s){
@@ -174,7 +187,7 @@ function card(s,compact=false,index=-1){
  else{b.innerHTML=`<div class="card-visual"></div><div class="card-body"><div class="card-kicker"><span></span><span></span></div><strong></strong><small></small><span class="card-favorite" aria-hidden="true">${state.favorites.has(s.id)?"♥":"♡"}</span></div>`;const v=b.querySelector(".card-visual");v.style.background=generatedBackground(s);v.innerHTML=posterMarkup(s);
  const miniLive=allowAmbientLive()&&index>=0&&index<3&&globalThis.innerWidth>=1100&&s.playback==="EMBED"&&isInside(s)&&cleanUrl(s.embedUrl);
  if(miniLive&&!v.querySelector("img")){const f=document.createElement("iframe");f.src=s.embedUrl;f.title=s.title+" live preview";f.loading="lazy";f.tabIndex=-1;f.setAttribute("aria-hidden","true");f.allow="autoplay; fullscreen; picture-in-picture";f.referrerPolicy="strict-origin-when-cross-origin";v.append(f);b.classList.add("has-live-preview")}
- b.dataset.truth=truthTone(s);b.querySelector(".card-kicker span:first-child").textContent=publicTruth(s);b.querySelector(".card-kicker span:last-child").textContent=[momentLabel(s),localTime(s)].filter(Boolean).join(" · ");b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(", ")}
+ b.dataset.truth=truthTone(s);b.querySelector(".card-kicker span:first-child").textContent=publicTruth(s);b.querySelector(".card-kicker span:last-child").textContent=[momentSignal(s).label,localTime(s)].filter(Boolean).join(" · ");b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(", ")}
  b.onclick=()=>openViewer(s);return b;
 }
 function renderModeChips(){document.querySelectorAll(".mode-chip").forEach(b=>b.classList.toggle("active",b.dataset.mode===state.mode))}
@@ -241,7 +254,7 @@ function distanceKm(a,b){
 }
 function renderContext(s){
  const box=$("#viewerContext"),story=$("#viewerStory"),tags=$("#viewerTags"),near=$("#nearbyList"),related=$("#relatedList");
- story.textContent=s.story||"A current window onto this place.";
+ story.textContent=s.story||"A current window onto this place.";const ms=momentSignal(s);$("#viewerMomentWhy").textContent="Why now · "+ms.reason;
  tags.replaceChildren();
  const tagValues=[momentLabel(s),publicTruth(s),...(s.categories||[]).slice(0,3)];
  const confidence=$("#sourceConfidence");confidence.textContent=[verificationLabel(s),s.provider?("Source: "+s.provider):"",s.health==="HEALTHY"?"Catalog health: healthy":"Catalog health: "+String(s.health||"unknown").toLowerCase()].filter(Boolean).join(" · ");
@@ -257,6 +270,8 @@ function renderContext(s){
  $("#planStay").href="https://www.google.com/search?q="+encodeURIComponent("hotels "+place);
  $("#planEat").href="https://www.google.com/search?q="+encodeURIComponent("restaurants "+place);
  $("#planDo").href="https://www.google.com/search?q="+encodeURIComponent("things to do "+place);
+ $("#planWeather").href="https://www.google.com/search?q="+encodeURIComponent("weather "+place);
+ const lat=Number(s.lat),lon=Number(s.lon);$("#planMap").href=Number.isFinite(lat)&&Number.isFinite(lon)?"https://www.google.com/maps/search/?api=1&query="+lat+","+lon:"https://www.google.com/maps/search/?api=1&query="+q;
  box.hidden=!(story.textContent||tags.children.length||near.children.length);
 }
 function renderSaved(){

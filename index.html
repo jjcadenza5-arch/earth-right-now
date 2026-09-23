@@ -87,7 +87,7 @@
         <div><p class="eyebrow">WATCH EARTH NOW</p><h2><span class="watch-globe">◎</span> <span id="watchCount">20</span> current windows.</h2><p id="watchSubhead">A changing world. Always something new to see.</p></div>
         <button id="refreshSet" class="surprise">⤨ Surprise Me</button>
       </div>
-      <div class="set-note"><span id="setLabel">Featured now</span><span id="setReason">Chosen for quality, local light and variety.</span><span class="local-personal" id="personalNote">Personalized in this browser</span></div>
+      <div class="set-note"><span id="setLabel">Featured now</span><span id="setReason">Chosen for quality, local light and variety.</span><span class="moment-summary" id="momentSummary"></span><span class="local-personal" id="personalNote">Personalized in this browser</span></div>
       <div class="mode-switcher" id="modeSwitcher" aria-label="Featured sets">
         <button class="mode-chip active" data-mode="auto" data-i18n="forMoment">For this moment</button>
         <button class="mode-chip" data-mode="beautiful" data-i18n="beautifulEarth">Beautiful Earth</button>
@@ -184,12 +184,14 @@
     </div>
     <div class="viewer-alternates" id="viewerAlternates" hidden></div>
     <div class="viewer-context" id="viewerContext" hidden>
-      <div class="context-story"><span class="context-kicker">ABOUT THIS WINDOW</span><p id="viewerStory"></p><div class="source-confidence" id="sourceConfidence"></div><div class="context-tags" id="viewerTags"></div></div>
+      <div class="context-story"><span class="context-kicker">ABOUT THIS WINDOW</span><p id="viewerStory"></p><div class="moment-why" id="viewerMomentWhy"></div><div class="source-confidence" id="sourceConfidence"></div><div class="context-tags" id="viewerTags"></div></div>
       <div class="context-nearby"><span class="context-kicker">NEARBY ON EARTH</span><div class="nearby-list" id="nearbyList"></div><span class="context-kicker related-kicker">MORE LIKE THIS</span><div class="nearby-list" id="relatedList"></div></div>
       <div class="context-plan"><span class="context-kicker">BEFORE YOU GO</span><div class="plan-actions">
         <a id="planStay" target="_blank" rel="noopener noreferrer">Stay</a>
         <a id="planEat" target="_blank" rel="noopener noreferrer">Eat</a>
         <a id="planDo" target="_blank" rel="noopener noreferrer">Things to do</a>
+        <a id="planWeather" target="_blank" rel="noopener noreferrer">Weather</a>
+        <a id="planMap" target="_blank" rel="noopener noreferrer">Map</a>
       </div><small>Useful planning links for this place. Partner links can be added later without changing the ERN experience.</small></div>
     </div>
     <div class="viewer-bottom">
