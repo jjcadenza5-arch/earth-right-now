@@ -5,7 +5,7 @@ const mapped=sources.filter(s=>Number.isFinite(Number(s.lat))&&Number.isFinite(N
 const inside=sources.filter(s=>s.health==="HEALTHY"&&((s.playback==="EMBED"&&s.embedUrl)||(s.playback==="IMAGE_REFRESH"&&s.sourceUrl))).length;
 const fresh=sources.filter(s=>{const d=Date.parse(s.lastSuccessfulCheck||s.checkedAt||"");return s.health==="HEALTHY"&&Number.isFinite(d)&&(Date.now()-d)<=21*86400000}).length;
 const formalEvidence=["browser","mobile","providerPlayback","accessibility","performance","rollback"];
-const automatedGates={accessibility:fs.existsSync("scripts/accessibility-preflight.mjs"),performance:fs.existsSync("scripts/performance-preflight.mjs"),rollback:fs.existsSync("scripts/rollback-preflight.mjs")&&rollback?.verified===true};
+const automatedGates={accessibility:fs.existsSync("scripts/accessibility-preflight.mjs"),performance:fs.existsSync("scripts/performance-preflight.mjs"),rollback:fs.existsSync("scripts/rollback-preflight.mjs")&&rollback?.verified===true,participation:fs.existsSync("scripts/participation-preflight.mjs"),featuredCuration:fs.existsSync("scripts/featured-curation-preflight.mjs")};
 const evidencePassed=formalEvidence.filter(k=>evidence?.[k]?.ok===true&&String(evidence[k].note||"").trim());
 const product={
  watchEarth:index.includes('id="watch"'),
