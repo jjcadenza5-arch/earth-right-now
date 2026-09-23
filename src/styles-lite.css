@@ -536,3 +536,9 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
 .atlas-beyond-card:hover{border-color:rgba(24,61,55,.3);transform:translateY(-1px)}
 @media(max-width:760px){.atlas-beyond-head{align-items:flex-start;flex-direction:column}.atlas-beyond-head span{text-align:left}.atlas-beyond-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:460px){.atlas-beyond-grid{grid-template-columns:1fr}}
+
+/* Atlas legend and coordinate honesty */
+.atlas-legend{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:10px;color:#5f786f;font-size:8px}
+.atlas-legend span{display:inline-flex;align-items:center;gap:5px}
+.legend-pin{display:inline-block;width:10px;height:10px;border-radius:50%;border:1.5px solid white;box-shadow:0 1px 4px rgba(7,42,34,.2);background:#1b7564}
+.legend-pin.external{background:#d79a3e}.legend-pin.local{background:#7c6de0}
