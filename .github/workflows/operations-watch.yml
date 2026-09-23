@@ -15,6 +15,8 @@ jobs:
           node-version: 22
       - name: Source verification horizon
         run: npm run sources:horizon | tee source-horizon.json
+      - name: Atlas coordinate worklist
+        run: npm run atlas:coordinates | tee atlas-coordinate-worklist.json
       - name: Provider evidence worklist
         run: npm run provider:worklist | tee provider-worklist.json
       - name: Provider family sampling plan
@@ -37,6 +39,7 @@ jobs:
           name: ern-daily-operations
           path: |
             source-horizon.json
+            atlas-coordinate-worklist.json
             provider-worklist.json
             provider-evidence-plan.json
             operations-status.json
