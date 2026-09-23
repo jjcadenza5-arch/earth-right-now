@@ -4,7 +4,7 @@
 ## Stage B — shared playback engine — DONE
 ## Stage C — mature visual shell — DONE (fidelity work continues)
 ## Stage D — catalog recovery — ACTIVE
-Active catalog now contains 62 sources: 59 HEALTHY, 3 deliberately DEGRADED from visitor playback rejection, and 0 UNKNOWN. Historical recovery is ledgered separately; 10 candidates remain pending fresh source/permission revalidation and historical verification is never current health.
+Active catalog now contains 69 sources: 65 HEALTHY, 4 DEGRADED, and 0 UNKNOWN. Historical recovery is ledgered separately; 3 candidates remain pending fresh source/permission revalidation and historical verification is never current health.
 
 ## Stage E — experience restoration — ACTIVE
 Hero, immersive viewer, Watch Earth, Explore, Moments, My Earth, Living Atlas and Choose a Window use the shared truth/playback architecture. Continue browser-level fidelity validation against the mature ERN reference.

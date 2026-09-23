@@ -1,3 +1,10 @@
+## 2026-09-23 — Official external recovery tranche
+- Seven historical destinations were re-evaluated against current official provider surfaces rather than promoted from legacy status.
+- Randwick/Coogee, Boston Harbor Islands, Diano Marina, Farm Tomita, Waikiki Beach and Sottomarina/Chioggia return as healthy LINK_ONLY external evidence.
+- Jungfrau returns deliberately DEGRADED because the current official webcam surface reports its listed camera connections offline; recovery does not erase negative evidence.
+- The active catalog reaches 69 sources (65 HEALTHY / 4 DEGRADED / 0 UNKNOWN), while the historical recovery ledger falls to three unresolved candidates.
+- No external source in this tranche gains embed permission or inside-ERN playback merely because an official live/current page exists.
+
 ## 2026-09-20 — Watch Earth visitor-quality milestone
 - Three visitor-observed poor experiences (unavailable embed, visibly non-live feed, and weak destination presentation) are quarantined from the curated Watch Earth journey while remaining auditable in the catalog.
 - Watch Earth now requires a strong visitor-experience floor in addition to truthful/current playback; technically available is no longer sufficient for the curated 20.
