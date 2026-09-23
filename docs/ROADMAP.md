@@ -10,7 +10,7 @@ Active catalog now contains 78 sources: 74 HEALTHY, 4 DEGRADED, and 0 UNKNOWN. H
 Hero, immersive viewer, Watch Earth, Explore, Moments, My Earth, Living Atlas and Choose a Window use the shared truth/playback architecture. Continue browser-level fidelity validation against the mature ERN reference.
 
 ## Stage F — map and ERN AI — ACTIVE
-Atlas and ERN AI are connected to the same registry/truth gates. High-value Earth intent now spans all seven supported interface languages, including compact-script natural sentences. Continue spatial UX and relevance refinement without creating a parallel truth source.
+Atlas and ERN AI are connected to the same registry/truth gates. High-value Earth intent now spans all seven supported interface languages, including compact-script natural sentences. Coordinate provenance now distinguishes exact camera positions from verified place/region reference points, and the first authoritative NPS mapping tranche is in place. Continue spatial coverage and relevance refinement without creating a parallel truth source or guessing pin precision.
 
 ## Stage G — source health automation — ACTIVE
 Report-only health proposals, conservative provider-family policies, prioritized evidence debt, a provider-family evidence plan, a daily operations watch, and a provider playback-evidence status report now exist. The report requires HUMAN_PLAYBACK on representative inside-ERN sources (including every degraded inside-ERN source) and refuses to treat HTTP reachability or provider metadata as playback proof. Next: collect the remaining real media confirmations on the deployed origin; automation must not mutate rights/truth.

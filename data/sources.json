@@ -493,7 +493,11 @@
     "lastSuccessfulCheck": "2026-09-23T08:15:00+07:00",
     "failureReason": null,
     "refreshIntervalSeconds": 60,
-    "freshnessEvidence": "The current NPS weather/webcam page states that the entrance view refreshes every minute and instructs visitors to verify the displayed date and time."
+    "freshnessEvidence": "The current NPS weather/webcam page states that the entrance view refreshes every minute and instructs visitors to verify the displayed date and time.",
+    "lat": 36.058713,
+    "lon": -112.108861,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.nps.gov/grca/getinvolved/sup.htm"
   },
   {
     "id": "yellowstone-national-park",
@@ -520,7 +524,11 @@
     "rightsBasis": "Current NPS page explicitly provides an Old Faithful livestream plus refreshed static webcams; retained LINK_ONLY.",
     "checkedAt": "2026-09-19",
     "lastSuccessfulCheck": "2026-09-19",
-    "failureReason": null
+    "failureReason": null,
+    "lat": 44.460364,
+    "lon": -110.828219,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.nps.gov/yell/planyourvisit/maps.htm"
   },
   {
     "id": "mount-rainier-national-park",
@@ -549,7 +557,11 @@
     "lastSuccessfulCheck": "2026-09-23T08:15:00+07:00",
     "failureReason": null,
     "refreshIntervalSeconds": 900,
-    "freshnessEvidence": "The current NPS Mount Rainier weather page links its live webcams and states that the Paradise air-quality webcam images are updated every 15 minutes."
+    "freshnessEvidence": "The current NPS Mount Rainier weather page links its live webcams and states that the Paradise air-quality webcam images are updated every 15 minutes.",
+    "lat": 46.785858,
+    "lon": -121.736708,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.nps.gov/planyourvisit/event-details.htm?id=FA1EF6C5-C90B-21C5-0EB54E9BA55DB47F"
   },
   {
     "id": "glacier-national-park",
@@ -576,7 +588,11 @@
     "rightsBasis": "Current NPS pages explicitly link Glacier live webcams/current views; some individual cameras can be seasonally offline, so ERN remains LINK_ONLY at the destination page.",
     "checkedAt": "2026-09-19",
     "lastSuccessfulCheck": "2026-09-19",
-    "failureReason": null
+    "failureReason": null,
+    "lat": 48.525,
+    "lon": -113.98361,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.nps.gov/glac/planyourvisit/reservation-campgrounds.htm"
   },
   {
     "id": "san-diego-zoo",
