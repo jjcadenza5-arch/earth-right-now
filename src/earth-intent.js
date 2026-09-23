@@ -17,7 +17,8 @@ const CURRENT=["right now","live now","now","live","current","currently","today"
 const marks=/[\u0300-\u036f]/g;
 function cleanPunctuation(s){return s.replace(/[!-/:-@[-`{-~]/g," ")}
 export function normalizeEarthText(x){return cleanPunctuation((x||"").toString().normalize("NFC").toLowerCase()).replace(/\s+/g," ").trim()}
-const COMPACT_SCRIPT=/[\u0E00-\u0E7F\u3040-\u30FF\u3400-\u9FFF]/;\nfunction phrasePresent(text,tokens,phrase){if(phrase.includes(" "))return (" "+text+" ").includes(" "+phrase+" ");if(COMPACT_SCRIPT.test(phrase)&&[...phrase].length>1)return text.includes(phrase);return tokens.includes(phrase)}
+const COMPACT_SCRIPT=/[\u0E00-\u0E7F\u3040-\u30FF\u3400-\u9FFF]/;
+function phrasePresent(text,tokens,phrase){if(phrase.includes(" "))return (" "+text+" ").includes(" "+phrase+" ");if(COMPACT_SCRIPT.test(phrase)&&[...phrase].length>1)return text.includes(phrase);return tokens.includes(phrase)}
 export function foldEarthSearchText(x){return normalizeEarthText(x).split(/(\s+)/).map(token=>/[A-Za-zÀ-ž]/.test(token)?token.normalize("NFD").replace(marks,"").normalize("NFC"):token).join("")}
 export function interpretEarthIntent(q){
  const text=normalizeEarthText(q),tokens=text.split(" ").filter(Boolean),intents=[];
