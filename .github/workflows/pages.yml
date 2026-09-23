@@ -10,6 +10,7 @@ on:
       - "src/styles-lite.css"
       - "data/sources.json"
       - "data/local-directory.json"
+      - "data/provider-observations.json"
       - "assets/**"
       - "about.html"
       - "privacy.html"
@@ -23,6 +24,7 @@ on:
       - "CNAME"
       - "scripts/lean-preflight.mjs"
       - "scripts/whole-product-preflight.mjs"
+      - "scripts/whole-product-status.mjs"
       - "scripts/public-launch-preflight.mjs"
       - "scripts/mobile-layout-preflight.mjs"
       - "scripts/build-release-snapshot.mjs"
@@ -54,6 +56,8 @@ jobs:
         run: node scripts/lean-preflight.mjs
       - name: Whole-product guard
         run: node scripts/whole-product-preflight.mjs
+      - name: Whole-product status
+        run: node scripts/whole-product-status.mjs
       - name: Public launch preflight
         run: node scripts/public-launch-preflight.mjs
       - name: Mobile layout preflight

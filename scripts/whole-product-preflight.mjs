@@ -7,6 +7,7 @@ for(const id of ["watch","search","map","localEarth","participate","saved","guid
 for(const href of ["./for-places.html","./now-moments.html","./about.html","./privacy.html"])must(index.includes(`href="${href}"`),`public path missing: ${href}`);
 for(const fn of ["function search(","function renderMap(","function renderLocalEarth(","function guideResponse(","function runGuide("])must(app.includes(fn),`runtime capability missing: ${fn}`);
 must(app.includes("guidePlaceMatches(")&&app.includes('params.get("guide")'),"ERN Guide place/deep-link routing missing");
+must(read("src/release-verification-console.js").includes('./#view='),"release verification provider links do not match viewer routing");
 must(app.includes("localIntent="),"Search lost small/local-place intent handling");
 must(app.includes("localDirectoryMatch(")&&app.includes("localDirectoryCard("),"reviewed local-place search plumbing missing");
 must(Array.isArray(localDirectory),"local-directory registry must be an array");
