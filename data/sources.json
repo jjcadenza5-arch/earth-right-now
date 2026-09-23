@@ -132,7 +132,9 @@
     "lon": 20.596,
     "timeZone": "Africa/Johannesburg",
     "rightsBasis": "Official SANParks webcam page; retained as link-only because ERN has not documented display/embed permission.",
-    "officialUrl": "https://www.sanparks.org/travel/webcams"
+    "officialUrl": "https://www.sanparks.org/travel/webcams",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams"
   },
   {
     "id": "kaikoura-coast",
@@ -1055,7 +1057,9 @@
     "lon": 137.255,
     "timeZone": "Asia/Tokyo",
     "rightsBasis": "The operator explicitly describes this page as YouTube Live and notes that stream addresses can change after restarts; ERN links to the stable provider page rather than inferring embed rights.",
-    "officialUrl": "https://takayama-live.com/streaming"
+    "officialUrl": "https://takayama-live.com/streaming",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://takayama-live.com/streaming"
   },
   {
     "id": "takayama-miyagawa-current-image",
@@ -1089,7 +1093,9 @@
     "lon": 137.255,
     "timeZone": "Asia/Tokyo",
     "rightsBasis": "The operator states the still cameras refresh about every three minutes and instructs visitors to reload for the newest image; ERN links to the provider page.",
-    "officialUrl": "https://takayama-live.com/"
+    "officialUrl": "https://takayama-live.com/",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://takayama-live.com/"
   },
   {
     "provider": "EarthCam",
@@ -2417,7 +2423,9 @@
     "freshness": 92,
     "moment": 94,
     "story": "Official SANParks video from the Boulders African Penguin Colony; the provider notes that playback may trail real time by about ten minutes for stability.",
-    "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding rights."
+    "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding rights.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/boulders"
   },
   {
     "id": "sanparks-addo-video",
@@ -2449,7 +2457,9 @@
     "freshness": 92,
     "moment": 94,
     "story": "An official SANParks wildlife video window at Addo Elephant National Park, useful for seeing activity around the park before a visit.",
-    "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding permission."
+    "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding permission.",
+    "coordinateBasis": "REGION_REFERENCE",
+    "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/addo"
   },
   {
     "id": "sanparks-orpen-video",
@@ -2481,7 +2491,9 @@
     "freshness": 92,
     "moment": 94,
     "story": "An official SANParks wildlife video window from Orpen in Kruger National Park, where open plains and water attract changing animal activity.",
-    "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding permission."
+    "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding permission.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/orpen"
   },
   {
     "id": "cape-town-earthtv",
