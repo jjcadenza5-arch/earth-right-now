@@ -17,6 +17,7 @@ console.log(JSON.stringify({
  healthAutomation:report.healthAutomation,
  providerPlaybackEvidence:report.providerPlaybackEvidence,
  productActivation:report.productActivation,
+ maintenance:report.maintenance,
  providerReview:{
   total:report.providerReview.total,
   unsafe:report.providerReview.unsafe.map(x=>({id:x.id,issues:x.issues})),
