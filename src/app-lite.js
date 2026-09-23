@@ -5,6 +5,15 @@ const FEATURED_HOLD=new Set(["maui-hale-pau-hana","perdido-key-beach","pleasant-
 function readSavedSet(key){try{return new Set(JSON.parse(localStorage.getItem(key)||"[]"))}catch{return new Set()}}
 function readSavedText(key,fallback){try{return localStorage.getItem(key)||fallback}catch{return fallback}}
 function writeSaved(key,value){try{localStorage.setItem(key,value)}catch{}}
+function readJSON(key,fallback){try{const v=JSON.parse(localStorage.getItem(key)||"null");return v??fallback}catch{return fallback}}
+function interactionProfile(){const p=readJSON("ern-profile",{countries:{},categories:{},views:0});return p&&typeof p==="object"?p:{countries:{},categories:{},views:0}}
+function recordInterest(s){
+ const p=interactionProfile();p.countries=p.countries||{};p.categories=p.categories||{};p.views=Number(p.views||0)+1;
+ if(s.country)p.countries[s.country]=(p.countries[s.country]||0)+1;
+ for(const c of (s.categories||[]).slice(0,4))p.categories[c]=(p.categories[c]||0)+1;
+ const trim=o=>Object.fromEntries(Object.entries(o).sort((a,b)=>b[1]-a[1]).slice(0,12));p.countries=trim(p.countries);p.categories=trim(p.categories);
+ writeSaved("ern-profile",JSON.stringify(p));
+}
 const savedMode=readSavedText("ern-mode","auto");
 const savedCategory=readSavedText("ern-category","all");
 const state={sources:[],watch:[],selected:null,watchIndex:0,journeyTimer:null,imageTimer:null,heroTimer:null,setOffset:0,wanderOffset:0,mode:["auto","beautiful","cities","calm","night"].includes(savedMode)?savedMode:"auto",category:["all","mountain","beach","city","nature","wildlife","island","park","landmark","weather","random"].includes(savedCategory)?savedCategory:"all",favorites:readSavedSet("ern-favorites")};
@@ -36,6 +45,13 @@ function categoryMatch(s,cat){
  if(cat==="island")return/island|beach|coast/.test(c);if(cat==="park")return/park|nature|forest/.test(c);if(cat==="landmark")return/landmark|culture/.test(c);
  if(cat==="weather")return/useful|weather|mountain|beach/.test(c);return true;
 }
+function personalBoost(s){
+ if(state.mode!=="auto")return 0;
+ const p=interactionProfile();if(Number(p.views||0)<3)return 0;
+ let n=0;if(s.country)n+=Math.min(10,Number(p.countries?.[s.country]||0)*2);
+ for(const c of s.categories||[])n+=Math.min(4,Number(p.categories?.[c]||0));
+ return Math.min(18,n);
+}
 function baseScore(s){
  let n=Number(s.quality||0)+Number(s.moment||0)*.72+Number(s.freshness||0)*.35;
  if(s.health==="HEALTHY")n+=32;else if(s.health==="DEGRADED")n-=38;else n-=100;
@@ -44,6 +60,7 @@ function baseScore(s){
  if(!isDay(s)&&!isCity(s))n-=50;
  if(!isDay(s)&&isCity(s))n+=16;
  if(FEATURED_HOLD.has(s.id))n-=500;
+ n+=personalBoost(s);
  return n;
 }
 function heroPool(){
@@ -93,7 +110,7 @@ function buildWatch(sources){
  }
  for(const s of sorted){if(out.length>=20)break;if(!out.some(x=>x.id===s.id))out.push(s)}
  if(state.category==="random")out.sort(()=>Math.random()-.5);
- $("#setLabel").textContent=profile.label;$("#setReason").textContent=profile.reason;
+ $("#setLabel").textContent=profile.label;$("#setReason").textContent=profile.reason;const p=interactionProfile();$("#personalNote").textContent=Number(p.views||0)>=3?"Adapting locally to places you explore":"Personalized locally as you explore";
  return out;
 }
 function generatedBackground(s){
@@ -221,7 +238,7 @@ function renderAlternates(s){
  for(const alt of same){const b=document.createElement("button");b.type="button";b.className="alt-view";b.innerHTML="<strong></strong><small></small>";b.querySelector("strong").textContent=alt.title;b.querySelector("small").textContent=truthLabel(alt);b.onclick=()=>openViewer(alt);host.append(b)}
  host.hidden=false;
 }
-function openViewer(s){if(!s)return;state.selected=s;const i=state.watch.findIndex(x=>x.id===s.id);if(i>=0)state.watchIndex=i;$("#viewerTruth").textContent=truthLabel(s);$("#viewerTitle").textContent=s.title;$("#viewerPlace").textContent=[s.region,s.country,localTime(s)].filter(Boolean).join(" · ");$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";renderAlternates(s);renderContext(s);if($("#viewer").hidden){$("#viewer").hidden=false;$("#viewer").classList.add("opening");setTimeout(()=>$("#viewer").classList.remove("opening"),260)}mountViewer(s);document.body.style.overflow="hidden"}
+function openViewer(s){if(!s)return;recordInterest(s);state.selected=s;const i=state.watch.findIndex(x=>x.id===s.id);if(i>=0)state.watchIndex=i;$("#viewerTruth").textContent=truthLabel(s);$("#viewerTitle").textContent=s.title;$("#viewerPlace").textContent=[s.region,s.country,localTime(s)].filter(Boolean).join(" · ");$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";renderAlternates(s);renderContext(s);if($("#viewer").hidden){$("#viewer").hidden=false;$("#viewer").classList.add("opening");setTimeout(()=>$("#viewer").classList.remove("opening"),260)}mountViewer(s);document.body.style.overflow="hidden"}
 function closeViewer(){stopJourney();stopImageTimer();clearViewerLoad();$("#viewer").hidden=true;$("#viewerStage").replaceChildren();$("#viewerAlternates").replaceChildren();$("#viewerAlternates").hidden=true;$("#viewerContext").hidden=true;$("#nearbyList").replaceChildren();document.body.style.overflow=""}
 function move(d){if(!state.watch.length)return;state.watchIndex=(state.watchIndex+d+state.watch.length)%state.watch.length;openViewer(state.watch[state.watchIndex])}
 function updateJourneyButton(){$("#journeyToggle").textContent=state.journeyTimer?t("pauseJourney"):t("playJourney")}

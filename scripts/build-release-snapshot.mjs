@@ -5,8 +5,12 @@ await mkdir(dist,{recursive:true});
 // Generate crawlable destination pages and sitemap from the same truth catalog used by the app.
 await import("./build-destination-pages.mjs");
 await cp(new URL("../index.html",import.meta.url),new URL("index.html",dist));
-await cp(new URL("../src/",import.meta.url),new URL("src/",dist),{recursive:true});
-await cp(new URL("../data/",import.meta.url),new URL("data/",dist),{recursive:true});
+await mkdir(new URL("src/",dist),{recursive:true});
+await cp(new URL("../src/app-lite.js",import.meta.url),new URL("src/app-lite.js",dist));
+await cp(new URL("../src/styles-lite.css",import.meta.url),new URL("src/styles-lite.css",dist));
+await mkdir(new URL("data/",dist),{recursive:true});
+await cp(new URL("../data/sources.json",import.meta.url),new URL("data/sources.json",dist));
+try{await cp(new URL("../data/release-evidence.json",import.meta.url),new URL("data/release-evidence.json",dist))}catch{await writeFile(new URL("data/release-evidence.json",dist),"{}\n")}
 await cp(new URL("../assets/",import.meta.url),new URL("assets/",dist),{recursive:true});
 await cp(new URL("../places/",import.meta.url),new URL("places/",dist),{recursive:true});
 await cp(new URL("../sitemap.xml",import.meta.url),new URL("sitemap.xml",dist));
