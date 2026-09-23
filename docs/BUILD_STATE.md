@@ -1,3 +1,10 @@
+## 2026-09-23 — Evidence-backed Living Atlas coordinates
+- Added explicit coordinate provenance semantics so ERN can distinguish an exact camera position from a verified place/region reference point.
+- Coordinate provenance is optional for legacy pins but validated whenever supplied; a provenance basis must carry an HTTPS source and valid lat/lon.
+- The Atlas worklist now separates unmapped sources from legacy mapped pins that still need provenance, preventing old coordinates from being silently treated as equally evidenced.
+- Added authoritative place-reference coordinates for Grand Canyon, Yellowstone (Old Faithful), Mount Rainier (Paradise) and Glacier (Apgar) from U.S. National Park Service sources.
+- These pins are deliberately labeled PLACE_REFERENCE rather than CAMERA_EXACT; ERN gains useful spatial discovery without pretending the webcam hardware sits at the reference point.
+
 ## 2026-09-23 — Candidate-bound release verification console
 - Added an unlinked, no-index release verification page to the immutable deployment artifact.
 - The console reads the exact release manifest candidate SHA, exposes the deployed origin and browser environment, lays out all six real-world release gates, and shows the minimum inside-ERN provider representatives still needing HUMAN_PLAYBACK evidence.
