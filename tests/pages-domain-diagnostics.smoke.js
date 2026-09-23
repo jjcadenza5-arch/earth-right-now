@@ -3,6 +3,7 @@ const w=fs.readFileSync(".github/workflows/pages.yml","utf8");
 console.assert(w.includes("Diagnose custom-domain DNS and TLS"));
 console.assert(w.includes("npm run domain:health -- earthrightnow.app"));
 console.assert(w.includes("continue-on-error: true"));
+console.assert(w.includes("set -o pipefail"));
 console.assert(w.includes("Publish custom-domain diagnostics"));
 console.assert(w.includes("Enforce custom-domain health"));
 console.assert(w.includes("The deployed artifact may be healthy; repair custom-domain DNS/HTTPS"));
