@@ -686,3 +686,8 @@
 - Added DNS/TLS/HTTPS diagnostics directly to post-deploy verification, with a clear workflow summary when custom-domain infrastructure blocks certification.
 - The workflow still fails closed and only verifies the exact deployed commit after the domain is healthy.
 - Added regression coverage so future deployment failures stay actionable instead of appearing as generic curl failures.
+
+## 2026-09-23 — Make Pages certificate failures exact
+- Fixed the post-deploy diagnostic pipeline so `tee` can no longer hide a failing domain-health exit code.
+- Added a specific `PAGES_CUSTOM_CERT_NOT_PROVISIONED` diagnosis when DNS reaches GitHub Pages but the endpoint still serves the generic `*.github.io` certificate.
+- Exact-origin verification is now skipped when that prerequisite is unhealthy, preserving the intended fail-closed release boundary.
