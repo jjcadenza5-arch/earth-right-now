@@ -1,3 +1,10 @@
+## 2026-09-23 — Official source refresh + Atlas provenance tranche F
+- Revalidated Auckland Viaduct Harbour, Pattaya City CCTV Streaming and Ski Arlberg against their current official provider surfaces.
+- Auckland's provider still exposes an Auckland Viaduct live view; Pattaya's official portal exposes a broad public Live View camera directory; Ski Arlberg reports active live mountain webcams.
+- Recorded source-specific freshness evidence and conservative PLACE_REFERENCE/REGION_REFERENCE coordinate provenance without moving existing pins.
+- Truth, permission and playback remain unchanged; Pattaya stays link-only under its public-service terms and Ski Arlberg remains provider-viewed.
+- Added regression coverage for all three refreshed records.
+
 ## 2026-09-23 — Official source refresh + Atlas provenance tranche E
 - Revalidated seven official-provider/current-source pages: Glenelg, Brighton, Amden/Weesen, Oeschinensee, Verbier, Reykjavík and Kaikōura.
 - Each record now carries source-specific freshness evidence from the current official provider surface rather than a cosmetic timestamp refresh.

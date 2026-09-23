@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-23 — Official source refresh + Atlas provenance tranche F
+- Revalidated Auckland Viaduct Harbour, Pattaya City CCTV and Ski Arlberg.
+- Added explicit freshness evidence plus conservative coordinate provenance without moving pins.
+- Preserved truth, permission and playback semantics.
+- Added regression coverage for the tranche.
+
 ## 2026-09-23 — Official source refresh + Atlas provenance tranche E
 - Revalidated seven official current-source pages and recorded explicit freshness evidence.
 - Added conservative coordinate provenance to the same mapped destinations without moving pins.

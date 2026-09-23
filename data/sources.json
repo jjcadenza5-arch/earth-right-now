@@ -19,9 +19,9 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Auckland Viaduct View",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
-    "failureReason": "Current live stream confirmed on Viaduct Harbour and Viaduct Harbour Marina official destination pages; historical ERN embed permission has not yet been revalidated, so playback remains external.",
+    "checkedAt": "2026-09-23T14:24:00Z",
+    "lastSuccessfulCheck": "2026-09-23T14:24:00Z",
+    "failureReason": null,
     "quality": 90,
     "freshness": 97,
     "moment": 85,
@@ -30,7 +30,10 @@
     "lon": 174.7633,
     "timeZone": "Pacific/Auckland",
     "rightsBasis": "Current live stream confirmed on official Viaduct Harbour destination pages; ERN retains link-only playback until explicit current embed permission is revalidated.",
-    "officialUrl": "https://www.viaduct.co.nz/"
+    "officialUrl": "https://www.viaduct.co.nz/",
+    "freshnessEvidence": "The current Viaduct Harbour destination page includes an 'Auckland Viaduct View — live' stream for the harbour.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.viaduct.co.nz/"
   },
   {
     "id": "kilauea-summit",
@@ -88,8 +91,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Pattaya City",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T14:24:00Z",
+    "lastSuccessfulCheck": "2026-09-23T14:24:00Z",
     "failureReason": null,
     "quality": 82,
     "freshness": null,
@@ -99,7 +102,10 @@
     "lon": 100.8825,
     "timeZone": "Asia/Bangkok",
     "rightsBasis": "Official Pattaya City CCTV Streaming portal permits public viewing for general information; terms prohibit commercial use and republication without written authorization. ERN remains link-only.",
-    "officialUrl": "https://livestream.pattaya.go.th/"
+    "officialUrl": "https://livestream.pattaya.go.th/",
+    "freshnessEvidence": "The current Pattaya City CCTV Streaming portal presents a Live View directory with hundreds of public cameras across Pattaya; current provider pages also describe the service as public CCTV streaming for viewing local conditions.",
+    "coordinateBasis": "REGION_REFERENCE",
+    "coordinateSourceUrl": "https://livestream.pattaya.go.th/"
   },
   {
     "id": "nossob-kgalagadi",
@@ -484,8 +490,8 @@
     "officialUrl": "https://www.skiarlberg.at/en",
     "embedUrl": null,
     "thumbnailUrl": null,
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-23T14:24:00Z",
+    "lastSuccessfulCheck": "2026-09-23T14:24:00Z",
     "failureReason": null,
     "quality": 88,
     "freshness": 95,
@@ -493,7 +499,10 @@
     "story": "Webcams sit beside live lift, weather, parking and getting-here information—a complete current-condition decision page.",
     "rightsBasis": "Current official Ski Arlberg webcam page reports active webcams and live mountain views; retained as LINK_ONLY because no embed permission is inferred.",
     "lat": 47.116667,
-    "lon": 10.266667
+    "lon": 10.266667,
+    "freshnessEvidence": "The current official Ski Arlberg webcam page reports active webcams and describes them as live mountain views across the Arlberg region.",
+    "coordinateBasis": "REGION_REFERENCE",
+    "coordinateSourceUrl": "https://www.skiarlberg.at/en"
   },
   {
     "id": "grand-canyon-national-park",
