@@ -2,6 +2,7 @@
 - Extended seven-language behavior beyond static interface text and one-off runtime sentences into the main Earth Guide response layer.
 - Welcome, empty-state, result summaries, current-evidence caveats, My Earth preference notes, weather caution, place follow-ups, price/quietness boundaries and starter suggestion labels now follow the selected language.
 - Translated follow-up labels map back to canonical ERN actions before execution, preventing localized “Surprise”, “nearby”, “stay” or live-now prompts from degrading into unrelated free-text searches.
+- Directly typed multilingual Guide actions now understand surprise, different-place, general live-now, nearby, stay, cheaper and quieter requests across the six non-English interface languages.
 - Suggestion chips keep canonical queries behind localized labels, preserving the existing intent/action engine while presenting the visitor’s chosen language.
 - English remains the default API behavior for existing modules/tests; source truth, currentness, permission and ranking rules are unchanged.
 - Added full multilingual interaction regression coverage across Thai, German, French, Spanish, Japanese and Chinese.
