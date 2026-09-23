@@ -6,6 +6,7 @@ const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)};
 for(const id of ["watch","search","map","localEarth","participate","saved","guideLauncher","guidePanel"])must(index.includes(`id="${id}"`),`whole-product surface missing: ${id}`);
 for(const href of ["./for-places.html","./now-moments.html","./about.html","./privacy.html"])must(index.includes(`href="${href}"`),`public path missing: ${href}`);
 for(const fn of ["function search(","function renderMap(","function renderLocalEarth(","function guideResponse(","function runGuide("])must(app.includes(fn),`runtime capability missing: ${fn}`);
+must(app.includes("localIntent="),"Search lost small/local-place intent handling");
 must(css.includes("BlankMap-Equirectangular"),"Living Atlas lost its real-map base");
 must(css.includes(".guide-panel"),"ERN Guide visual doorway missing");
 must(css.includes("Mockup fidelity lock"),"approved ERN mockup fidelity layer missing");
@@ -13,7 +14,9 @@ must(css.includes(".local-earth-section"),"Local Earth styling missing");
 must(css.includes(".participate-section"),"places/cameras/moments participation surface missing");
 must(/(payment or partner status never buys editorial ranking|no ranking for sale)/i.test(places),"commercial no-paid-ranking guardrail missing");
 must(/submission delivery is not open yet/i.test(places),"camera-submission honesty boundary missing");
+must(/Prepare a camera review draft/i.test(places)&&/LOCAL_DRAFT_ONLY/.test(places),"camera local-draft readiness tool missing");
 must(/uploads are intentionally not active yet/i.test(moments),"Now Moments safety boundary missing");
+must(/Preview an Earth Signal/i.test(moments)&&/Nothing is uploaded or transmitted/i.test(moments),"Now Moments local preview boundary missing");
 must(/friendly tour guide/i.test(strategy)&&/small places and small businesses/i.test(strategy),"Crispy Pork Skin strategy has been weakened");
 must(/tour guide, not a generic chatbot/i.test(guide),"ERN Guide vision has been weakened");
 

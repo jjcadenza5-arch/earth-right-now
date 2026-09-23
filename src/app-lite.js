@@ -308,8 +308,9 @@ function closeGuide(){
 function search(q,options={updateUrl:false}){
  const raw=String(q||"").trim(),x=normalizeSearch(raw),tokens=x.split(/\s+/).filter(Boolean);
  if(options.updateUrl){const u=new URL(location.href);if(raw)u.searchParams.set("q",raw);else u.searchParams.delete("q");history.replaceState(null,"",u.pathname+u.search+u.hash)}
- const matches=!x?state.sources:state.sources.filter(s=>{const hay=normalizeSearch([s.title,s.region,s.country,s.provider,s.story,...(s.categories||[])].filter(Boolean).join(" "));return tokens.every(token=>hay.includes(token))});
- const groups=groupByPlace(matches).sort((a,b)=>Math.max(...b.map(baseScore))-Math.max(...a.map(baseScore))).slice(0,x?24:12);
+ const localIntent=/\b(local|small|village|market|farm|neighbourhood|neighborhood|harbour|harbor|marina)\b/.test(x);
+ const matches=!x?state.sources:state.sources.filter(s=>{const hay=normalizeSearch([s.title,s.region,s.country,s.provider,s.story,...(s.categories||[])].filter(Boolean).join(" "));if(localIntent&&localPlaceSignals(s).worth)return tokens.filter(t=>!["local","small","place","places"].includes(t)).every(token=>hay.includes(token));return tokens.every(token=>hay.includes(token))});
+ const groups=groupByPlace(matches).sort((a,b)=>{const al=localIntent?Math.max(...a.map(s=>localPlaceSignals(s).score))*20:0,bl=localIntent?Math.max(...b.map(s=>localPlaceSignals(s).score))*20:0;return(bl+Math.max(...b.map(baseScore)))-(al+Math.max(...a.map(baseScore)))}).slice(0,x?24:12);
  $("#searchResults").replaceChildren(...groups.map(placeCard));
  $("#searchStatus").textContent=x?`${groups.length} place${groups.length===1?"":"s"} · ${matches.length} current window${matches.length===1?"":"s"}`:"";
 }

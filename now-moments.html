@@ -11,5 +11,26 @@
 <h2>First: short-lived Earth Signals</h2><p>Planned structured observations include raining, beautiful light, busy, peaceful, something happening and worth seeing. They expire after about 45 minutes. Precise contributor coordinates are never shown publicly.</p>
 <h2>Then: temporary photos and short clips</h2><p>Visitor “Now Moment” photos and short clips remain part of the roadmap, but they will not be activated until ERN has real moderation, abuse reporting, consent, metadata stripping, automatic expiry/deletion, rate limits and an updated privacy notice. Visitor media never upgrades a camera to LIVE or proves that a source is current.</p>
 <div class="trust-callout"><strong>Uploads are intentionally not active yet.</strong><p>This page explains the product direction without pretending that the required safety and moderation infrastructure already exists.</p></div>
+<section class="readiness-box" aria-labelledby="signalPreviewHeading">
+<h2 id="signalPreviewHeading">Preview an Earth Signal</h2>
+<p>Try the lightweight visitor-expression idea locally. Nothing is uploaded or transmitted.</p>
+<form class="readiness-form" id="signalForm">
+<label>Place<input id="signalPlace" maxlength="160" required placeholder="Example: Chiang Mai old town"></label>
+<label>What are you seeing?
+<select id="signalType" required>
+<option value="">Choose one…</option><option>Beautiful light</option><option>Raining</option><option>Busy</option><option>Peaceful</option><option>Something happening</option><option>Worth seeing</option>
+</select></label>
+<button type="submit">Preview locally</button>
+</form>
+<div class="signal-preview" id="signalPreview" hidden>
+<span class="signal-badge" id="signalBadge"></span><strong id="signalPlaceLabel"></strong><small id="signalExpiry"></small>
+<p>This is only a browser-local preview. A real public signal would require ERN transport, moderation, rate limits, reporting and expiry infrastructure.</p>
+</div>
+</section>
 <h2>Why this belongs in ERN</h2><p>Cameras show one fixed window. Temporary visitor moments can eventually reveal what is happening nearby or just outside the frame, while still keeping ERN focused on “See before you go.”</p>
-<p><a href="./for-places.html">For places & cameras</a> · <a href="./privacy.html">Privacy</a></p></main></body></html>
+<p><a href="./for-places.html">For places & cameras</a> · <a href="./privacy.html">Privacy</a></p></main>
+<script>
+(()=>{const f=document.getElementById("signalForm"),box=document.getElementById("signalPreview"),badge=document.getElementById("signalBadge"),place=document.getElementById("signalPlaceLabel"),expiry=document.getElementById("signalExpiry");
+f?.addEventListener("submit",e=>{e.preventDefault();const p=document.getElementById("signalPlace").value.trim(),type=document.getElementById("signalType").value;if(!p||!type)return;const now=new Date(),end=new Date(now.getTime()+45*60000);badge.textContent=type;place.textContent=p;expiry.textContent="Preview only · would expire around "+end.toLocaleTimeString([],{hour:"numeric",minute:"2-digit"});box.hidden=false});
+})();
+</script></body></html>
