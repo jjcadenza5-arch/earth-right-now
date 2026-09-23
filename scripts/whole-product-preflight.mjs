@@ -16,6 +16,7 @@ must(requireExists("scripts/participation-preflight.mjs"),"participation safety 
 must(css.includes("BlankMap-Equirectangular"),"Living Atlas lost its real-map base");
 must(index.includes('data-map-filter="local"')&&app.includes('map-pin local'),"Living Atlas lost reviewed local-place discovery");
 must(index.includes('id="atlasBeyond"')&&app.includes("renderAtlasBeyond(")&&css.includes("Atlas beyond-map coverage"),"Living Atlas lost honest unmapped-place discovery");
+must(app.includes('DYNAMIC_UNPINNED'),"Living Atlas must distinguish dynamic Earth views from missing-coordinate places");
 must(index.includes("atlas-legend")&&app.includes("coordinate provenance")&&css.includes("Atlas legend and coordinate honesty"),"Living Atlas lost coordinate-honesty cues");
 must(app.includes("renderWatch();renderWander();renderMap()")&&app.includes("category: ${state.category}"),"Living Atlas no longer follows the visitor category context");
 must(css.includes(".guide-panel"),"ERN Guide visual doorway missing");
