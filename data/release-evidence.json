@@ -1,8 +1,35 @@
 {
-  "browser": {"ok": false, "note": "", "checkedAt": ""},
-  "mobile": {"ok": false, "note": "", "checkedAt": ""},
-  "providerPlayback": {"ok": false, "note": "", "checkedAt": ""},
-  "accessibility": {"ok": false, "note": "", "checkedAt": ""},
-  "performance": {"ok": false, "note": "", "checkedAt": ""},
-  "rollback": {"ok": false, "note": "", "checkedAt": ""}
+  "browser": {
+    "ok": true,
+    "note": "User live-tested desktop earthrightnow.app on 23 Sep 2026: Home/Watch Earth, ERN Guide, embedded live windows, external-provider routing, and desktop media fullscreen were observed working after fixes.",
+    "checkedAt": "2026-09-23T20:07:00+07:00",
+    "commit": "a41ad2e49755d31344e8c0f04ca7338867f05d57"
+  },
+  "mobile": {
+    "ok": true,
+    "note": "User live-tested iPhone portrait and landscape on 23 Sep 2026. Viewer, controls, scrolling and landscape access were iteratively corrected; iPhone fullscreen is intentionally delegated to the embedded player's native fullscreen control where Safari limits page fullscreen.",
+    "checkedAt": "2026-09-23T20:07:00+07:00",
+    "commit": "a41ad2e49755d31344e8c0f04ca7338867f05d57"
+  },
+  "providerPlayback": {
+    "ok": true,
+    "note": "User observed working current/live playback for Taitung Jinzun, Cijin Beach, Cancun Caribbean Beach, St. John's Harbour, Skeikampen and Mpala; Chicago external-source routing also opened correctly.",
+    "checkedAt": "2026-09-23T20:07:00+07:00",
+    "commit": "a41ad2e49755d31344e8c0f04ca7338867f05d57"
+  },
+  "accessibility": {
+    "ok": false,
+    "note": "",
+    "checkedAt": ""
+  },
+  "performance": {
+    "ok": false,
+    "note": "",
+    "checkedAt": ""
+  },
+  "rollback": {
+    "ok": false,
+    "note": "",
+    "checkedAt": ""
+  }
 }
