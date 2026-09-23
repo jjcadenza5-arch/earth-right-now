@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Earth Right Now — See Before You Go</title>
-  <meta name="description" content="Beautiful live and current windows around Earth. See before you go.">
+  <meta name="description" content="Live and current windows from remarkable places around Earth. See before you go.">
   <meta name="robots" content="index,follow">
   <meta name="google-site-verification" content="TUkQ8MCqJpnV9hI0m3k0nMt_qMdVMP9gYpG3huixrYE">
   <link rel="canonical" href="https://earthrightnow.app/">
   <link rel="icon" href="./assets/ern-mark.svg" type="image/svg+xml">
   <link rel="manifest" href="/manifest.webmanifest">
-  <meta name="theme-color" content="#f6f4ec">
+  <meta name="theme-color" content="#062f2b">
   <meta property="og:title" content="Earth Right Now — See Before You Go">
-  <meta property="og:description" content="Watch beautiful moments happening around Earth, or search a place before you go.">
+  <meta property="og:description" content="Live views from remarkable places. Real conditions. Real moments. A more connected planet.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://earthrightnow.app/">
   <link rel="stylesheet" href="./src/styles-lite.css">
@@ -20,14 +20,17 @@
 <body>
   <header class="topbar">
     <button class="brand" id="homeBtn" aria-label="Earth Right Now home">
-      <img src="./assets/ern-mark.svg" alt="" width="42" height="42">
-      <span><strong>Earth Right Now</strong><small>See before you go.</small></span>
+      <img src="./assets/ern-mark.svg" alt="" width="54" height="54">
+      <span class="brand-copy"><strong>Earth Right Now<sup>™</sup></strong><small>See before you go.</small></span>
     </button>
     <nav aria-label="Main navigation">
+      <button id="homeNav" class="active">Home</button>
       <button id="watchNav">Watch Earth</button>
-      <button id="searchNav">Search</button>
+      <button id="searchNav">Explore</button>
       <button id="mapNav">World Map</button>
-      <button id="savedNav">Saved</button>
+      <button id="destinationsNav">Destinations</button>
+      <a href="./about.html">About</a>
+      <button id="savedNav" class="icon-nav" aria-label="Saved windows">♡</button>
       <select id="languageSelect" aria-label="Language">
         <option value="en">EN</option><option value="th">ไทย</option><option value="de">DE</option>
         <option value="fr">FR</option><option value="ja">日本語</option><option value="zh">中文</option><option value="es">ES</option>
@@ -40,44 +43,64 @@
       <div class="hero-live" id="heroLive" aria-label="Featured current Earth window"></div>
       <div class="hero-shade"></div>
       <div class="hero-copy">
-        <p class="eyebrow" data-t="liveEarth">EARTH RIGHT NOW</p>
-        <h1 id="heroTitle">Earth is loading…</h1>
-        <p class="hero-meta" id="heroMeta">Finding a beautiful current window.</p>
-        <div class="truth-row"><span id="heroTruth">CURRENT WINDOW</span><span id="heroLocal"></span></div>
+        <p class="eyebrow">EARTH RIGHT NOW</p>
+        <h1>A more<br>connected world.</h1>
+        <p class="hero-tagline">See before you go.</p>
+        <p class="hero-deck">Live views from amazing places around the world.<br>Real conditions. Real moments. A more connected planet.</p>
         <div class="hero-actions">
-          <button class="primary" id="heroWatch" data-t="watchHere">Watch here</button>
-          <button id="heroNext" data-t="nextWindow">Next window</button>
-          <button id="heroSearch" data-t="searchEarth">Search Earth</button>
+          <button class="primary" id="heroWatch"><span class="play-mark">▶</span> Watch Earth Now <span aria-hidden="true">→</span></button>
+          <button id="heroNext" class="quiet-hero">Next moment</button>
         </div>
       </div>
-      <div class="hero-note" data-t="truthNote">Live means live. Refreshed images and external provider views are labeled honestly.</div>
+      <div class="hero-location" id="heroLocation">
+        <div><strong id="heroTitle">Earth is loading…</strong><small id="heroMeta">Finding a beautiful current window.</small></div>
+        <span class="live-dot"></span><span id="heroTruth">CURRENT</span>
+      </div>
     </section>
 
-    <section class="section" id="watch">
-      <div class="section-head">
-        <div><p class="eyebrow" data-t="watchEarth">WATCH EARTH</p><h2 data-t="bestMoments">Beautiful moments around Earth</h2></div>
-        <p data-t="watchCopy">A curated set of current windows chosen for quality, variety and the local moment.</p>
+    <section class="category-bar" aria-label="Explore categories">
+      <button class="category active" data-category="all"><span>◉</span>All Places</button>
+      <button class="category" data-category="mountain"><span>△</span>Mountains</button>
+      <button class="category" data-category="beach"><span>≈</span>Beaches</button>
+      <button class="category" data-category="city"><span>▥</span>Cities</button>
+      <button class="category" data-category="nature"><span>♧</span>Nature</button>
+      <button class="category" data-category="wildlife"><span>◌</span>Wildlife</button>
+      <button class="category" data-category="island"><span>⌁</span>Islands</button>
+      <button class="category" data-category="park"><span>♤</span>Parks</button>
+      <button class="category" data-category="landmark"><span>⌂</span>Landmarks</button>
+      <button class="category" data-category="weather"><span>☁</span>Weather</button>
+      <button class="category" data-category="random"><span>⤨</span>Random</button>
+    </section>
+
+    <section class="watch-section" id="watch">
+      <div class="section-head dark-head">
+        <div><p class="eyebrow">WATCH EARTH NOW</p><h2>20 live windows.</h2><p id="watchSubhead">A changing world. Always something new to see.</p></div>
+        <button id="refreshSet" class="surprise">⤨ Surprise Me</button>
       </div>
-      <div class="window-strip" id="watchGrid" aria-live="polite"></div>
+      <div class="set-note"><span id="setLabel">Featured now</span><span id="setReason">Chosen for quality, local light and variety.</span></div>
+      <div class="window-grid" id="watchGrid" aria-live="polite"></div>
+      <div class="watch-foot">
+        <span>⌂ Real places</span><span>▣ Live & current views</span><span>● Global perspective</span><span>◒ A more connected world</span>
+      </div>
     </section>
 
     <section class="section search-section" id="search">
       <div class="section-head">
-        <div><p class="eyebrow" data-t="searchEarth">SEARCH EARTH</p><h2 data-t="whereLook">Where do you want to look?</h2></div>
-        <p data-t="searchCopy">Search a city, beach, mountain, park, wildlife camera or destination.</p>
+        <div><p class="eyebrow">EXPLORE EARTH</p><h2>Where do you want to look?</h2></div>
+        <p>Search a city, beach, mountain, park, wildlife camera or destination. ERN shows the best truthful window available.</p>
       </div>
       <div class="search-box">
         <input id="searchInput" type="search" autocomplete="off" placeholder="Search Earth…">
-        <button id="clearSearch" data-t="clear">Clear</button>
+        <button id="clearSearch">Clear</button>
       </div>
       <p class="search-status" id="searchStatus"></p>
       <div class="result-grid" id="searchResults"></div>
     </section>
 
-    <section class="section" id="map">
+    <section class="section atlas-section" id="map">
       <div class="section-head">
-        <div><p class="eyebrow" data-t="livingAtlas">LIVING ATLAS</p><h2 data-t="worldMap">A simple map of current Earth windows</h2></div>
-        <p data-t="mapCopy">Choose a pin, then open the best available current view for that place.</p>
+        <div><p class="eyebrow">LIVING ATLAS</p><h2>The world, one current window at a time.</h2></div>
+        <p>Choose a pin, then open the best available current view for that place.</p>
       </div>
       <div class="atlas" id="atlas" role="group" aria-label="Living Atlas"></div>
       <p class="map-note" id="mapNote"></p>
@@ -85,16 +108,16 @@
 
     <section class="section" id="saved">
       <div class="section-head">
-        <div><p class="eyebrow" data-t="myEarth">MY EARTH</p><h2 data-t="savedWindows">Saved windows</h2></div>
-        <p data-t="savedCopy">Favorites stay in this browser.</p>
+        <div><p class="eyebrow">MY EARTH</p><h2>Saved windows</h2></div>
+        <p>Favorites stay in this browser.</p>
       </div>
       <div class="result-grid" id="savedResults"></div>
-      <p class="empty" id="savedEmpty" data-t="nothingSaved">Nothing saved yet. Tap ♡ while watching a window.</p>
+      <p class="empty" id="savedEmpty">Nothing saved yet. Tap ♡ while watching a window.</p>
     </section>
   </main>
 
   <footer>
-    <div><strong>Earth Right Now</strong> · <span data-t="footerLine">See before you go.</span></div>
+    <div><strong>Earth Right Now</strong> · See before you go.</div>
     <div class="footer-links"><a href="./about.html">About & sources</a><a href="./privacy.html">Privacy</a></div>
   </footer>
 
@@ -106,14 +129,14 @@
     <div class="viewer-stage" id="viewerStage"></div>
     <div class="viewer-bottom">
       <div class="journey">
-        <button id="prevViewer" data-t="previous">Previous</button>
-        <button id="journeyToggle" data-t="playJourney">Play journey</button>
-        <button id="nextViewer" data-t="next">Next</button>
+        <button id="prevViewer">Previous</button>
+        <button id="journeyToggle">Play journey</button>
+        <button id="nextViewer">Next</button>
       </div>
       <div class="viewer-actions">
         <button id="favoriteViewer" aria-label="Save">♡</button>
-        <a id="sourceViewer" target="_blank" rel="noopener noreferrer" data-t="source">Source</a>
-        <button id="fullViewer" data-t="fullScreen">Full screen</button>
+        <a id="sourceViewer" target="_blank" rel="noopener noreferrer">Source</a>
+        <button id="fullViewer">Full screen</button>
       </div>
     </div>
   </div>
