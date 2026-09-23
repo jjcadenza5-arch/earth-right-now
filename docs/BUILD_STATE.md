@@ -1,3 +1,9 @@
+## 2026-09-23 — Atlas pin precision disclosure
+- Living Atlas pin titles and accessible labels now disclose coordinate precision when evidence is available.
+- PLACE_REFERENCE and REGION_REFERENCE pins explicitly say they are reference points and may not be the exact camera position; CAMERA_EXACT remains distinguishable.
+- Legacy pins retain neutral “Map position” wording rather than receiving invented precision.
+- Added regression coverage so future Atlas rendering cannot silently erase the provenance distinction.
+
 ## 2026-09-23 — Evidence-backed Living Atlas coordinates
 - Added explicit coordinate provenance semantics so ERN can distinguish an exact camera position from a verified place/region reference point.
 - Coordinate provenance is optional for legacy pins but validated whenever supplied; a provenance basis must carry an HTTPS source and valid lat/lon.
