@@ -147,3 +147,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .now-strip>div{display:flex;align-items:baseline;justify-content:center;gap:7px;padding:10px 8px;background:rgba(255,255,255,.025)}
 .now-strip strong{font-family:Georgia,serif;font-size:20px;font-weight:500;color:white}.now-strip span{font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:#97b8b0}
 @media(max-width:600px){.now-strip{grid-template-columns:1fr 1fr}.now-strip>div{padding:8px 5px}.now-strip strong{font-size:17px}.now-strip span{font-size:7px}}
+
+/* Interaction polish: focus return, mobile active state, touch-friendly viewer */
+.mobile-dock button.active{background:rgba(255,255,255,.1);color:white}
+#closeViewer:focus-visible{outline-offset:-2px}
+.viewer-stage{touch-action:pan-y}

@@ -34,7 +34,16 @@ function truthLabel(s){if(s.truth==="LIVE_VIDEO")return"LIVE VIDEO";if(s.truth==
 function isInside(s){return!!(s&&s.health!=="OFFLINE"&&((s.playback==="EMBED"&&cleanUrl(s.embedUrl))||(s.playback==="IMAGE_REFRESH"&&cleanUrl(s.sourceUrl))))}
 function localHour(s){if(!s?.timeZone)return null;try{const p=new Intl.DateTimeFormat("en-US",{timeZone:s.timeZone,hour:"2-digit",hour12:false}).formatToParts(new Date());const h=Number(p.find(x=>x.type==="hour")?.value);return Number.isFinite(h)?h%24:null}catch{return null}}
 function localTime(s){if(!s?.timeZone)return"";try{return new Intl.DateTimeFormat(undefined,{timeZone:s.timeZone,hour:"numeric",minute:"2-digit"}).format(new Date())}catch{return""}}
-function momentLabel(s){const h=localHour(s);if(h===null)return"Current";if(h>=5&&h<8)return"Morning light";if(h>=8&&h<17)return"Daylight";if(h>=17&&h<20)return"Evening light";return"Night";}
+const momentWords={
+ en:["Current","Morning light","Daylight","Evening light","Night"],
+ th:["ปัจจุบัน","แสงยามเช้า","กลางวัน","แสงยามเย็น","กลางคืน"],
+ de:["Aktuell","Morgenlicht","Tageslicht","Abendlicht","Nacht"],
+ fr:["Actuel","Lumière du matin","Jour","Lumière du soir","Nuit"],
+ ja:["現在","朝の光","昼","夕方の光","夜"],
+ zh:["当前","晨光","白天","暮光","夜晚"],
+ es:["Actual","Luz de la mañana","Día","Luz de la tarde","Noche"]
+};
+function momentLabel(s){const w=momentWords[lang]||momentWords.en,h=localHour(s);if(h===null)return w[0];if(h>=5&&h<8)return w[1];if(h>=8&&h<17)return w[2];if(h>=17&&h<20)return w[3];return w[4];}
 function cats(s){return(s.categories||[]).join(" ").toLowerCase()}
 function isDay(s){const h=localHour(s);return h===null?true:h>=6&&h<19}
 function isCity(s){return/city|cities|street|skyline|harbour|landmark|culture/.test(cats(s))}
@@ -265,8 +274,8 @@ function renderAlternates(s){
  host.hidden=false;
 }
 function viewHash(id){return "#view="+encodeURIComponent(id)}
-function openViewer(s,options={record:true,updateHash:true}){if(!s)return;if(options.record!==false){recordInterest(s);renderSaved()}state.selected=s;const i=state.watch.findIndex(x=>x.id===s.id);if(i>=0)state.watchIndex=i;$("#viewerTruth").textContent=truthLabel(s);$("#viewerTitle").textContent=s.title;$("#viewerPlace").textContent=[s.region,s.country,localTime(s)].filter(Boolean).join(" · ");$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";renderAlternates(s);renderContext(s);if($("#viewer").hidden){$("#viewer").hidden=false;$("#viewer").classList.add("opening");setTimeout(()=>$("#viewer").classList.remove("opening"),260)}if(options.updateHash!==false&&location.hash!==viewHash(s.id))history.replaceState(null,"",viewHash(s.id));mountViewer(s);document.body.style.overflow="hidden"}
-function closeViewer(){stopJourney();stopImageTimer();clearViewerLoad();if(location.hash.startsWith("#view="))history.replaceState(null,"",location.pathname+location.search);$("#viewer").hidden=true;$("#viewerStage").replaceChildren();$("#viewerAlternates").replaceChildren();$("#viewerAlternates").hidden=true;$("#viewerContext").hidden=true;$("#nearbyList").replaceChildren();document.body.style.overflow=""}
+function openViewer(s,options={record:true,updateHash:true}){if(!s)return;if($("#viewer").hidden)state.lastFocus=document.activeElement;if(options.record!==false){recordInterest(s);renderSaved()}state.selected=s;const i=state.watch.findIndex(x=>x.id===s.id);if(i>=0)state.watchIndex=i;$("#viewerTruth").textContent=truthLabel(s);$("#viewerTitle").textContent=s.title;$("#viewerPlace").textContent=[s.region,s.country,localTime(s)].filter(Boolean).join(" · ");$("#favoriteViewer").textContent=state.favorites.has(s.id)?"♥":"♡";renderAlternates(s);renderContext(s);if($("#viewer").hidden){$("#viewer").hidden=false;$("#viewer").classList.add("opening");setTimeout(()=>$("#viewer").classList.remove("opening"),260);setTimeout(()=>$("#closeViewer").focus(),40)}if(options.updateHash!==false&&location.hash!==viewHash(s.id))history.replaceState(null,"",viewHash(s.id));mountViewer(s);document.body.style.overflow="hidden"}
+function closeViewer(options={clearHash:true,restoreFocus:true}){stopJourney();stopImageTimer();clearViewerLoad();if(options.clearHash!==false&&location.hash.startsWith("#view="))history.replaceState(null,"",location.pathname+location.search);$("#viewer").hidden=true;$("#viewerStage").replaceChildren();$("#viewerAlternates").replaceChildren();$("#viewerAlternates").hidden=true;$("#viewerContext").hidden=true;$("#nearbyList").replaceChildren();document.body.style.overflow="";if(options.restoreFocus!==false&&state.lastFocus?.focus)setTimeout(()=>state.lastFocus.focus(),0)}
 function move(d,record=true){if(!state.watch.length)return;state.watchIndex=(state.watchIndex+d+state.watch.length)%state.watch.length;openViewer(state.watch[state.watchIndex],{record})}
 function updateJourneyButton(){$("#journeyToggle").textContent=state.journeyTimer?t("pauseJourney"):t("playJourney")}
 function startJourney(){if(state.journeyTimer)return;stopHeroRotation();state.journeyTimer=setInterval(()=>move(1,false),30000);updateJourneyButton()}
@@ -288,7 +297,7 @@ function applyLanguage(){
  document.documentElement.lang=lang;$("#languageSelect").value=lang;
  document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;const value=t(key);if(value!==key)el.textContent=value});
  document.querySelectorAll("[data-i18n-placeholder]").forEach(el=>{const key=el.dataset.i18nPlaceholder;const value=t(key);if(value!==key)el.setAttribute("placeholder",value)});
- updateJourneyButton();
+ updateJourneyButton();if(state.sources.length){renderWatch();renderWander();renderSaved();if(state.selected){$("#viewerPlace").textContent=[state.selected.region,state.selected.country,momentLabel(state.selected),localTime(state.selected)].filter(Boolean).join(" · ");renderContext(state.selected)}}
 }
 function selectCategory(cat,button){state.category=cat;writeSaved("ern-category",cat);document.querySelectorAll(".category").forEach(x=>x.classList.toggle("active",x.dataset.category===cat));button?.classList.add("active");if(cat==="random")state.setOffset++;renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}scrollToId("watch")}
 function initSectionSpy(){
@@ -298,6 +307,7 @@ function initSectionSpy(){
    const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(!visible)return;
    const active=map.find(x=>x[0]===visible.target.id)?.[1];if(!active)return;
    for(const [,id] of map){const el=document.getElementById(id);if(el)el.classList.toggle("active",id===active)}
+   const mobileMap={watch:"mobileWatch",search:"mobileExplore",map:"mobileMap",saved:"mobileSaved"};for(const [section,id] of Object.entries(mobileMap)){const el=document.getElementById(id);if(el)el.classList.toggle("active",visible.target.id===section)}
  },{rootMargin:"-20% 0px -60% 0px",threshold:[0,.15,.4]});
  for(const [id] of map){const el=document.getElementById(id);if(el)obs.observe(el)}
 }
@@ -318,6 +328,8 @@ function initEvents(){
  $("#resetPersonal").onclick=()=>{writeSaved("ern-profile",JSON.stringify({countries:{},categories:{},views:0}));writeSaved("ern-recent","[]");state.mode="auto";writeSaved("ern-mode","auto");renderWatch();renderWander();renderSaved();};
  $("#languageSelect").onchange=e=>{lang=e.target.value;writeSaved("ern-language",lang);applyLanguage()};
  document.addEventListener("keydown",e=>{if($("#viewer").hidden)return;if(e.key==="Escape"){closeViewer();startHeroRotation()}if(e.key==="ArrowRight")move(1);if(e.key==="ArrowLeft")move(-1)});
+ let touchStart=0;$("#viewerStage").addEventListener("touchstart",e=>{touchStart=e.changedTouches?.[0]?.clientX||0},{passive:true});$("#viewerStage").addEventListener("touchend",e=>{const end=e.changedTouches?.[0]?.clientX||0,d=end-touchStart;if(Math.abs(d)>55)move(d<0?1:-1,true)},{passive:true});
+ window.addEventListener("hashchange",()=>{const m=location.hash.match(/^#view=(.+)$/);if(m){const target=state.sources.find(s=>s.id===decodeURIComponent(m[1]));if(target)openViewer(target,{record:false,updateHash:false})}else if(!$("#viewer").hidden)closeViewer({clearHash:false,restoreFocus:false})});
  document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")startHeroRotation();else stopHeroRotation()});
 }
 async function boot(){applyLanguage();initEvents();initSectionSpy();document.querySelectorAll(".category").forEach(x=>x.classList.toggle("active",x.dataset.category===state.category));try{const r=await fetch("./data/sources.json",{cache:"no-store"});if(!r.ok)throw new Error("source registry "+r.status);const rows=await r.json();state.sources=Array.isArray(rows)?rows.filter(s=>s&&s.id&&s.title):[];renderWatch();renderWander();renderNowStrip();state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0]||state.sources[0]);search("");renderMap();renderSaved();const m=location.hash.match(/^#view=(.+)$/);if(m){const id=decodeURIComponent(m[1]);const target=state.sources.find(s=>s.id===id);if(target)openViewer(target,{record:false,updateHash:false})}startHeroRotation()}catch(err){console.error(err);$("#heroTitle").textContent="Earth will be back shortly";$("#heroMeta").textContent="ERN could not load its current-window catalog. Please refresh in a moment."}}
