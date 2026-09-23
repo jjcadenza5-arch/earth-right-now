@@ -12,12 +12,13 @@ for(const [name,html,url] of [["index",index,"https://earthrightnow.app/"],["abo
 }
 assert(!about.includes("./src/styles.css")&&!privacy.includes("./src/styles.css"),"trust pages still reference legacy stylesheet");
 assert(robots.includes("Sitemap: https://earthrightnow.app/sitemap.xml"),"robots sitemap mismatch");
-for(const url of ["https://earthrightnow.app/","https://earthrightnow.app/about.html","https://earthrightnow.app/privacy.html"])assert(sitemap.includes(`<loc>${url}</loc>`),`sitemap missing ${url}`);
+for(const url of ["https://earthrightnow.app/","https://earthrightnow.app/about.html","https://earthrightnow.app/privacy.html","https://earthrightnow.app/for-places.html","https://earthrightnow.app/now-moments.html"])assert(sitemap.includes(`<loc>${url}</loc>`),`sitemap missing ${url}`);
 assert(manifest.start_url==="/"&&manifest.scope==="/","manifest must use custom-domain root");
 assert(index.includes('rel="manifest" href="/manifest.webmanifest"'),"manifest link missing");
 assert(index.includes('navigator.serviceWorker.register("/service-worker.js")'),"service worker root registration missing");
 for(const p of ["manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","for-places.html","now-moments.html","release-verification.html"])assert(build.includes(`../${p}`),`release artifact missing ${p}`);
 assert(build.includes("../src/release-verification-console.js"),"release verification console script is not shipped");
+assert(build.includes("../data/local-directory.json"),"reviewed local-place directory is not shipped");
 assert(sw.includes('event.request.mode!=="navigate"'),"service worker should limit offline interception to navigation");
 assert(index.includes("./privacy.html")&&index.includes("./about.html"),"footer trust links missing");
 if(fail.length){console.error(JSON.stringify({ok:false,fail},null,2));process.exit(1)}
