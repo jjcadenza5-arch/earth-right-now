@@ -64,7 +64,9 @@
     "timeZone": "Pacific/Honolulu",
     "rightsBasis": "Official USGS current-view source; retained as link-only because ERN has not documented redistribution/embed permission.",
     "officialUrl": "https://www.usgs.gov/volcanoes/kilauea/summit-webcams",
-    "freshnessEvidence": "Current official USGS Kīlauea Summit Webcams page states that views come from live webcams, links summit livestream cameras, and says the webcams are operational 24/7."
+    "freshnessEvidence": "Current official USGS Kīlauea Summit Webcams page states that views come from live webcams, links summit livestream cameras, and says the webcams are operational 24/7.",
+    "coordinateBasis": "REGION_REFERENCE",
+    "coordinateSourceUrl": "https://www.usgs.gov/volcanoes/kilauea"
   },
   {
     "id": "pattaya-city-live",
@@ -320,7 +322,9 @@
     "story": "Enjoy the Engadin live or check conditions before choosing a mountain day.",
     "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented.",
     "lat": 46.497777,
-    "lon": 9.838323
+    "lon": 9.838323,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.stmoritz.com/en"
   },
   {
     "id": "verbier",
@@ -667,7 +671,9 @@
     "failureReason": null,
     "freshnessEvidence": "Current official Zermatt Tourism Webcams page says visitors can discover Zermatt–Matterhorn live via webcam and notes village webcams operate during daytime.",
     "lat": 46.023604,
-    "lon": 7.748607
+    "lon": 7.748607,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://zermatt.swiss/"
   },
   {
     "id": "chamonix-mont-blanc",
@@ -947,7 +953,9 @@
     "timeZone": "America/New_York",
     "rightsBasis": "EarthCam publicly identifies this as live streaming video; ERN keeps playback at the provider because no ERN embed permission is inferred.",
     "officialUrl": "https://www.earthcam.com/usa/newyork/skyline/?cam=skyline_g",
-    "freshnessEvidence": "Current EarthCam New York skyline page states that the Jersey City view delivers New York City in live streaming video."
+    "freshnessEvidence": "Current EarthCam New York skyline page states that the Jersey City view delivers New York City in live streaming video.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthcam.com/usa/newyork/skyline/?cam=skyline_g"
   },
   {
     "id": "statue-liberty-harbor-earthcam",
@@ -1115,7 +1123,9 @@
     "lat": 18.1818,
     "lon": -63.139,
     "timeZone": "America/Anguilla",
-    "freshnessEvidence": "Current EarthCam Meads Bay page says the view is live from Anguilla and provides real-time views of Meads Bay."
+    "freshnessEvidence": "Current EarthCam Meads Bay page says the view is live from Anguilla and provides real-time views of Meads Bay.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthcam.com/world/anguilla/meadsbay/?cam=meadsbay_hd"
   },
   {
     "provider": "EarthCam",
@@ -1149,7 +1159,9 @@
     "lat": 26.189,
     "lon": -80.096,
     "timeZone": "America/New_York",
-    "freshnessEvidence": "Current EarthCam Lauderdale-by-the-Sea page states that it provides live streaming oceanfront HD views of the beach and pier."
+    "freshnessEvidence": "Current EarthCam Lauderdale-by-the-Sea page states that it provides live streaming oceanfront HD views of the beach and pier.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthcam.com/usa/florida/lauderdalebythesea/?cam=windjammer"
   },
   {
     "provider": "EarthCam",
@@ -1183,7 +1195,9 @@
     "lat": 12.531,
     "lon": -70.058,
     "timeZone": "America/Aruba",
-    "freshnessEvidence": "Current EarthCam Aruba page states that the resort camera provides a live oceanfront view of Oranjestad."
+    "freshnessEvidence": "Current EarthCam Aruba page states that the resort camera provides a live oceanfront view of Oranjestad.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthcam.com/world/aruba/druifbeach/?cam=casadelmar2"
   },
   {
     "provider": "EarthCam",
@@ -1217,7 +1231,9 @@
     "lat": 25.94,
     "lon": -81.734,
     "timeZone": "America/New_York",
-    "freshnessEvidence": "Current EarthCam Marco Island page explicitly describes the beach camera as a live streaming camera."
+    "freshnessEvidence": "Current EarthCam Marco Island page explicitly describes the beach camera as a live streaming camera.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthcam.com/usa/florida/marcoisland/beach/?cam=marcoisland_beach"
   },
   {
     "provider": "EarthCam",
@@ -1252,7 +1268,9 @@
     "lat": 53.3455,
     "lon": -6.264,
     "timeZone": "Europe/Dublin",
-    "freshnessEvidence": "Current EarthCam Dublin page explicitly describes its Temple Bar views as live streaming webcams."
+    "freshnessEvidence": "Current EarthCam Dublin page explicitly describes its Temple Bar views as live streaming webcams.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthcam.com/world/ireland/dublin/?cam=templebar"
   },
   {
     "provider": "EarthCam",
@@ -1286,7 +1304,9 @@
     "lat": 41.8663,
     "lon": -87.617,
     "timeZone": "America/Chicago",
-    "freshnessEvidence": "Current EarthCam Chicago page explicitly describes the Field Museum skyline view as a live camera."
+    "freshnessEvidence": "Current EarthCam Chicago page explicitly describes the Field Museum skyline view as a live camera.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthcam.com/usa/illinois/chicago/field/?cam=fieldmuseum"
   },
   {
     "provider": "EarthCam",
@@ -1320,7 +1340,9 @@
     "lat": 18.0201,
     "lon": -63.063,
     "timeZone": "America/Lower_Princes",
-    "freshnessEvidence": "Current EarthCam Sint Maarten page explicitly invites visitors to watch live from Little Bay Beach."
+    "freshnessEvidence": "Current EarthCam Sint Maarten page explicitly invites visitors to watch live from Little Bay Beach.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthcam.com/world/sintmaarten/?cam=sintmaarten_belair"
   },
   {
     "provider": "EarthCam",
@@ -1354,7 +1376,9 @@
     "lat": 41.693,
     "lon": 44.8015,
     "timeZone": "Asia/Tbilisi",
-    "freshnessEvidence": "Current EarthCam Tbilisi page explicitly describes the Freedom Square view as a live webcam."
+    "freshnessEvidence": "Current EarthCam Tbilisi page explicitly describes the Freedom Square view as a live webcam.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthcam.com/world/georgia/tbilisi/?cam=tbilisi"
   },
   {
     "provider": "EarthCam",
@@ -1552,7 +1576,9 @@
     "lat": 47.05,
     "lon": 8.31,
     "timeZone": "Europe/Zurich",
-    "rightsBasis": "Official navigation-company page provides live webcam views and current weather. ERN conservatively classifies the collection as current images and links to the provider."
+    "rightsBasis": "Official navigation-company page provides live webcam views and current weather. ERN conservatively classifies the collection as current images and links to the provider.",
+    "coordinateBasis": "REGION_REFERENCE",
+    "coordinateSourceUrl": "https://webshop.lakelucerne.ch/en/pages/webcams"
   },
   {
     "id": "taitung-jinzun",
