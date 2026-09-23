@@ -255,3 +255,7 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
 
 /* Reviewed local-place search: real records only */
 .local-directory-card{text-decoration:none}.local-place-visual{display:grid;place-items:center;background:linear-gradient(145deg,#d9e9df,#b9d4c9)!important;color:#2b6759;font-size:30px}.local-place-visual:after{display:none}
+
+/* Atlas + Search completion: reviewed local places can join discovery without buying rank */
+.map-pin.local{background:#7c6de0;border-color:white;width:16px;height:16px}.map-pin.local:after{content:"⌂";position:absolute;inset:-1px;display:grid;place-items:center;color:white;font-size:8px;font-weight:900}
+.search-empty-help{grid-column:1/-1;display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:18px;border:1px dashed rgba(24,61,55,.22);border-radius:16px;color:var(--paperInk)}.search-empty-help strong{font-size:14px}.search-empty-help span{color:var(--paperMuted);font-size:11px;margin-right:auto}.search-empty-help button,.search-empty-help a{border:1px solid rgba(24,61,55,.15);background:white;color:#31574f;border-radius:999px;padding:8px 11px;font-size:9px;text-decoration:none}

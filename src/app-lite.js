@@ -345,6 +345,7 @@ function search(q,options={updateUrl:false}){
  const groups=groupByPlace(matches).sort((a,b)=>{const al=localIntent?Math.max(...a.map(s=>localPlaceSignals(s).score))*20:0,bl=localIntent?Math.max(...b.map(s=>localPlaceSignals(s).score))*20:0;return(bl+Math.max(...b.map(baseScore)))-(al+Math.max(...a.map(baseScore)))}).slice(0,x?24:12);
  const localMatches=x?localDirectoryMatch(raw).slice(0,12):[];
  $("#searchResults").replaceChildren(...localMatches.map(localDirectoryCard),...groups.map(placeCard));
+ if(x&&!localMatches.length&&!groups.length){const box=document.createElement("div");box.className="search-empty-help";box.innerHTML="<strong>No reviewed ERN match yet.</strong><span>Try a broader place name, ask ERN Guide, or help add a real place.</span>";const g=document.createElement("button");g.type="button";g.textContent="Ask ERN Guide";g.onclick=()=>{openGuide();$("#guideInput").value=raw;runGuide(raw)};const a=document.createElement("a");a.href="./for-places.html";a.textContent="Add a place or camera";box.append(g,a);$("#searchResults").append(box)}
  $("#searchStatus").textContent=x?`${groups.length} Earth place${groups.length===1?"":"s"} · ${matches.length} current window${matches.length===1?"":"s"}${localMatches.length?" · "+localMatches.length+" reviewed local place"+(localMatches.length===1?"":"s"):""}`:"";
 }
 function localPlaceSignals(s){
@@ -379,15 +380,19 @@ function renderNowStrip(){
  $("#nowMapped").textContent=healthy.filter(s=>Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))).length;
 }
 function renderMap(){
- const a=$("#atlas");a.querySelectorAll(".map-pin").forEach(x=>x.remove());let count=0,insideCount=0,externalCount=0;
+ const a=$("#atlas");a.querySelectorAll(".map-pin").forEach(x=>x.remove());let count=0,insideCount=0,externalCount=0,localCount=0;
  const grouped=groupByPlace(state.sources.filter(s=>s.health!=="OFFLINE"&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))));
  for(const group of grouped){
-   const eligible=group.filter(s=>{const inside=isInside(s);if(state.mapFilter==="inside"&&!inside)return false;if(state.mapFilter==="external"&&inside)return false;if(state.mapFilter==="daylight"&&!isDay(s))return false;return true});
+   const eligible=group.filter(s=>{const inside=isInside(s);if(state.mapFilter==="local")return false;if(state.mapFilter==="inside"&&!inside)return false;if(state.mapFilter==="external"&&inside)return false;if(state.mapFilter==="daylight"&&!isDay(s))return false;return true});
    if(!eligible.length)continue;const s=[...eligible].sort((x,y)=>baseScore(y)-baseScore(x))[0],lat=Number(s.lat),lon=Number(s.lon),inside=isInside(s);
    const p=document.createElement("button");p.className="map-pin"+(inside?"":" external");p.type="button";p.title=`${s.title} — ${publicTruth(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s);if(group.length>1)p.dataset.views=String(group.length);a.append(p);count++;if(inside)insideCount++;else externalCount++;
  }
+ for(const x of approvedLocalPlaces()){
+   const lat=Number(x.lat),lon=Number(x.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;if(state.mapFilter!=="all"&&state.mapFilter!=="local")continue;
+   const p=document.createElement("a");p.className="map-pin local";p.href=safeExternalUrl(x.url);p.target="_blank";p.rel="noopener noreferrer";p.title=x.name+" — reviewed local place";p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";a.append(p);count++;localCount++;
+ }
  document.querySelectorAll(".atlas-filter").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter===state.mapFilter));
- $("#mapNote").textContent=`${count} mapped places shown · ${insideCount} play inside ERN · ${externalCount} open at their provider.`;
+ $("#mapNote").textContent=`${count} mapped places shown · ${insideCount} play inside ERN · ${externalCount} provider views${localCount?" · "+localCount+" reviewed local place"+(localCount===1?"":"s"):""}.`;
 }
 function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}
 function distanceKm(a,b){

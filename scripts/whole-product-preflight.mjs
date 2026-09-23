@@ -11,6 +11,7 @@ must(app.includes("localIntent="),"Search lost small/local-place intent handling
 must(app.includes("localDirectoryMatch(")&&app.includes("localDirectoryCard("),"reviewed local-place search plumbing missing");
 must(Array.isArray(localDirectory),"local-directory registry must be an array");
 must(css.includes("BlankMap-Equirectangular"),"Living Atlas lost its real-map base");
+must(index.includes('data-map-filter="local"')&&app.includes('map-pin local'),"Living Atlas lost reviewed local-place discovery");
 must(css.includes(".guide-panel"),"ERN Guide visual doorway missing");
 must(css.includes("Mockup fidelity lock"),"approved ERN mockup fidelity layer missing");
 must(css.includes(".local-earth-section"),"Local Earth styling missing");
