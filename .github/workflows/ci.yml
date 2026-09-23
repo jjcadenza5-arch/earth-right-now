@@ -32,6 +32,9 @@ jobs:
       - name: Report release posture
         if: success()
         run: npm run release:status
+      - name: Verify public launch infrastructure
+        if: success()
+        run: npm run release:preflight
       - name: Report beta readiness
         if: success()
         run: npm run release:readiness
