@@ -20,6 +20,10 @@ jobs:
         run: |
           set -o pipefail
           npm test 2>&1 | tee smoke-output.txt
+      - name: Verify static accessibility contract
+        run: npm run accessibility:preflight
+      - name: Verify mobile layout contract
+        run: npm run mobile:preflight
       - name: Audit embed registry
         run: npm run catalog:embeds
       - name: Audit provider fallback chains
