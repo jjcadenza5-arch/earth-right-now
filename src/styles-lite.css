@@ -485,3 +485,23 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
   }
   .viewer-actions{padding-right:0!important}
 }
+
+/* Desktop fullscreen means the Earth window only — no ERN context chrome */
+#viewerStage:fullscreen,#viewerStage:-webkit-full-screen{
+  width:100vw!important;
+  height:100vh!important;
+  max-width:none!important;
+  max-height:none!important;
+  margin:0!important;
+  background:#000!important;
+  display:grid!important;
+  place-items:center!important;
+}
+#viewerStage:fullscreen iframe,#viewerStage:-webkit-full-screen iframe,
+#viewerStage:fullscreen img,#viewerStage:-webkit-full-screen img{
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
+}

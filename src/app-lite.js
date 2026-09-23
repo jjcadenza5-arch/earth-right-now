@@ -498,18 +498,18 @@ function initSectionSpy(){
  for(const [id] of map){const el=document.getElementById(id);if(el)obs.observe(el)}
 }
 async function toggleViewerFullscreen(){
- const viewer=$("#viewer");
+ const stage=$("#viewerStage");
  if(document.fullscreenElement){try{await document.exitFullscreen();return}catch{}}
  if(document.webkitFullscreenElement&&document.webkitExitFullscreen){try{document.webkitExitFullscreen();return}catch{}}
  try{
-   if(viewer.requestFullscreen){await viewer.requestFullscreen();return}
-   if(viewer.webkitRequestFullscreen){viewer.webkitRequestFullscreen();return}
+   if(stage?.requestFullscreen){await stage.requestFullscreen();return}
+   if(stage?.webkitRequestFullscreen){stage.webkitRequestFullscreen();return}
  }catch{}
- const stage=$("#viewerStage");stage?.scrollIntoView({behavior:"smooth",block:"center"});
+ stage?.scrollIntoView({behavior:"smooth",block:"center"});
  const btn=$("#fullViewer"),old=btn.textContent;btn.textContent="Use player ⛶";setTimeout(()=>btn.textContent=old,1800);
 }
 function syncFullscreenButton(){
- const active=!!(document.fullscreenElement||document.webkitFullscreenElement||$("#viewer").classList.contains("faux-fullscreen"));
+ const active=!!(document.fullscreenElement||document.webkitFullscreenElement);
  $("#fullViewer").textContent=active?"Exit full screen":t("fullscreen");$("#fullViewer").setAttribute("aria-pressed",active?"true":"false")
 }
 function initEvents(){
