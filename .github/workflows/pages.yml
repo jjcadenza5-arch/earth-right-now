@@ -1,9 +1,26 @@
 name: Deploy ERN to GitHub Pages
 
-# BUILD MODE: deploy only when deliberately requested.
-# Re-enable a single push-to-main deployment after the consolidation pass is complete.
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "src/app-lite.js"
+      - "src/styles-lite.css"
+      - "data/sources.json"
+      - "assets/**"
+      - "about.html"
+      - "privacy.html"
+      - "manifest.webmanifest"
+      - "service-worker.js"
+      - "offline.html"
+      - "robots.txt"
+      - "sitemap.xml"
+      - "CNAME"
+      - "scripts/lean-preflight.mjs"
+      - "scripts/build-release-snapshot.mjs"
+      - ".github/workflows/pages.yml"
 
 permissions:
   contents: read
@@ -15,9 +32,9 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 8
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -26,12 +43,9 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - name: Verify essentials
-        run: |
-          npm test
-          npm run accessibility:preflight
-          npm run mobile:preflight
-      - name: Build static site
+      - name: Lean launch preflight
+        run: node scripts/lean-preflight.mjs
+      - name: Build static release
         run: npm run release:build
       - uses: actions/upload-pages-artifact@v4
         with:
