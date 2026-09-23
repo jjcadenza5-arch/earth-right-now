@@ -54,7 +54,10 @@ jobs:
       - name: Diagnose custom-domain DNS and TLS
         id: domain
         continue-on-error: true
-        run: npm run domain:health -- earthrightnow.app | tee /tmp/ern-domain-health.json
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run domain:health -- earthrightnow.app | tee /tmp/ern-domain-health.json
       - name: Publish custom-domain diagnostics
         if: always()
         shell: bash
