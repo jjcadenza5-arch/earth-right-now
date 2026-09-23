@@ -1,3 +1,9 @@
+## 2026-09-23 — Official source freshness tranche A
+- Revalidated eight high-value external/current sources against their current official provider pages: Kīlauea, Yellowstone, San Diego Zoo, Georgia Aquarium, Zermatt, Chamonix, Whistler Blackcomb and Florida Now.
+- Each refreshed timestamp now carries a source-specific freshness-evidence statement explaining what the official page currently confirms.
+- No embed permission or HUMAN_PLAYBACK evidence was inferred from these page checks; playback location and release evidence remain unchanged.
+- Sources whose current page did not clearly support their existing camera/currentness semantics were left stale rather than receiving a cosmetic timestamp refresh.
+
 ## 2026-09-23 — Fail-closed domain diagnostics
 - Fixed a shell-pipeline bug where `npm run domain:health | tee ...` could hide the diagnostic command's non-zero exit code.
 - Both the Pages origin-verification workflow and the scheduled domain-health workflow now enable `pipefail`, so a TLS/DNS/HTTPS failure remains a real workflow failure even while its JSON report is captured.
