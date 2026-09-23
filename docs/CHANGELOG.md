@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-23 — Dynamic Atlas exception repair
+- Added explicit DYNAMIC_ORBIT / DYNAMIC_UNPINNED handling for moving viewpoints such as the ISS.
+- Excluded intentional dynamic sources from missing-coordinate maintenance debt.
+- Preserved strict static coordinate provenance requirements and added regression coverage.
+
 ## 2026-09-23 — Official source refresh + Atlas provenance tranche F
 - Revalidated Auckland Viaduct Harbour, Pattaya City CCTV and Ski Arlberg.
 - Added explicit freshness evidence plus conservative coordinate provenance without moving pins.
