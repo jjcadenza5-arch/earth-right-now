@@ -86,3 +86,11 @@ footer{display:flex;justify-content:space-between;gap:20px;align-items:center;pa
 .nearby-list{display:flex;gap:7px;overflow:auto}.nearby-item{flex:1 0 130px;min-width:0;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.045);color:white;border-radius:10px;padding:8px 9px;text-align:left}.nearby-item strong{display:block;font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.nearby-item small{display:block;margin-top:3px;color:#91aaa3;font-size:8px}
 .nearby-item:hover{background:rgba(255,255,255,.085)}
 @media(max-width:760px){.viewer-context{grid-template-columns:1fr;gap:10px;padding:10px 12px}.context-story p{font-size:10px}.nearby-list{padding-bottom:2px}}
+
+/* Live-first mockup fidelity: only the first desktop row carries live previews */
+.card-visual iframe{width:100%;height:100%;border:0;pointer-events:none;object-fit:cover;transform:scale(1.01)}
+.window-card.has-live-preview .card-visual:after{background:linear-gradient(0deg,rgba(2,16,14,.9) 0,rgba(2,16,14,.02) 68%)}
+.window-card.has-live-preview{border-color:rgba(255,255,255,.24)}
+nav button.active{background:rgba(255,255,255,.045)}
+nav .icon-nav.active{background:rgba(255,255,255,.08)}
+@media(max-width:999px){.card-visual iframe{display:none}}
