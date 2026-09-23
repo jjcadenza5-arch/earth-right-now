@@ -2,16 +2,16 @@ const SYNONYMS={
  wildlife:["wildlife","animal","animals","elephant","bird","birds","zoo","nature","สัตว์","สัตว์ป่า","tier","tiere","animaux","faune","animales","fauna","動物","野生動物","动物","野生动物"],
  water:["beach","beaches","sea","ocean","coast","coastal","water","surf","harbour","harbor","ทะเล","ชายหาด","strand","meer","plage","mer","playa","mar","海","海を","海が","ビーチ","海滩","海灘"],
  mountains:["mountain","mountains","volcano","volcanoes","snow","summit","alpine","ภูเขา","ดอย","berg","berge","montagne","montagnes","montaña","montañas","山","山を","山が","山岳","山峰"],
- human:["city","cities","street","streets","people","urban","square","harbour","harbor","market","markets","promenade","walking street"],
- beautiful:["beautiful","scenic","view","views","relax","relaxing","calm","peaceful"],
+ human:["city","cities","street","streets","people","urban","square","harbour","harbor","market","markets","promenade","walking street","เมือง","ถนน","ตลาด","stadt","straße","markt","ville","rue","marché","ciudad","calle","mercado","街","市場","城市","街道","市场","市場"],
+ beautiful:["beautiful","scenic","view","views","relax","relaxing","calm","peaceful","สวย","วิวสวย","schön","aussicht","beau","belle vue","bonito","hermosa vista","美しい","絶景","美丽","美麗","风景","風景"],
  happening:["happening","active","event","busy","crowd","crowds","street life","local life"],
  night:["night","nighttime","lights","after dark","กลางคืน","ไฟกลางคืน","nacht","nuit","noche","夜","夜景"],
- daylight:["daylight","sunny","daytime"],
+ daylight:["daylight","sunny","daytime","กลางวัน","แดด","tagsüber","sonnig","journée","ensoleillé","día","soleado","昼","晴れ","白天","晴天"],
  golden:["sunrise","sunset","golden hour","dawn","dusk","พระอาทิตย์ขึ้น","พระอาทิตย์ตก","sonnenaufgang","sonnenuntergang","lever du soleil","coucher du soleil","amanecer","atardecer","日の出","夕日","日出","日落"],
- snow:["snow","snowing","snowfall","snowy"],
- rain:["rain","raining","rainy"],
+ snow:["snow","snowing","snowfall","snowy","หิมะ","schnee","neige","nieve","雪"],
+ rain:["rain","raining","rainy","ฝน","regen","pluie","lluvia","雨"],
  local:["local","small place","small places","village","villages","hidden gem","hidden gems","lesser known","off the beaten path","ท้องถิ่น","หมู่บ้าน","ที่เล็กๆ","kleiner ort","kleine orte","dorf","dörfer","lokal","village local","petit village","petit endroit","local","pueblo","pueblos","lugar pequeño","local","小さな町","村","地元","小さな場所","小镇","小鎮","村庄","村莊","本地","当地","當地"],
- reference:["photo","photos","image","images","reference","picture","pictures"]
+ reference:["photo","photos","image","images","reference","picture","pictures","รูป","ภาพ","foto","bild","photo","image","foto","imagen","写真","画像","照片","图片","圖片"]
 };
 const CURRENT=["right now","live now","now","live","current","currently","today","tonight","at the moment","at this moment","ตอนนี้","สด","jetzt","live jetzt","gerade","maintenant","en direct","ahora","en vivo","今","今すぐ","ライブ","现在","現在","直播"];
 const marks=/[\u0300-\u036f]/g;
