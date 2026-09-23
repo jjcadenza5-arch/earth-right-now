@@ -30,6 +30,7 @@ on:
       - "scripts/accessibility-preflight.mjs"
       - "scripts/performance-preflight.mjs"
       - "scripts/rollback-preflight.mjs"
+      - "scripts/participation-preflight.mjs"
       - "data/rollback-proof.json"
       - "scripts/build-release-snapshot.mjs"
       - "scripts/build-destination-pages.mjs"
@@ -72,6 +73,8 @@ jobs:
         run: node scripts/performance-preflight.mjs
       - name: Rollback preflight
         run: node scripts/rollback-preflight.mjs
+      - name: Participation safety preflight
+        run: node scripts/participation-preflight.mjs
       - name: Build static release
         run: npm run release:build
       - uses: actions/upload-pages-artifact@v4
