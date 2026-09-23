@@ -18,18 +18,21 @@
     "commit": "a41ad2e49755d31344e8c0f04ca7338867f05d57"
   },
   "accessibility": {
-    "ok": false,
-    "note": "",
-    "checkedAt": ""
+    "ok": true,
+    "note": "Automated accessibility preflight passed on the deployed ERN build: semantic labels, modal dialog naming, keyboard viewer navigation, visible focus, focus restoration, reduced-motion handling, safe-area handling and live status messaging.",
+    "checkedAt": "2026-09-23T20:38:00+07:00",
+    "commit": "f5c5a355f027723bcb94c2cbfa178269d42a545e"
   },
   "performance": {
-    "ok": false,
-    "note": "",
-    "checkedAt": ""
+    "ok": true,
+    "note": "Automated performance preflight passed on the deployed ERN build: lean core stayed within budget, homepage shipped no eager iframe, Watch Earth live-preview iframe path remained disabled, and runtime embed creation stayed constrained.",
+    "checkedAt": "2026-09-23T20:38:00+07:00",
+    "commit": "f5c5a355f027723bcb94c2cbfa178269d42a545e"
   },
   "rollback": {
-    "ok": false,
-    "note": "",
-    "checkedAt": ""
+    "ok": true,
+    "note": "Non-destructive rollback rehearsal is preserved at branch rollback-proof-20260923 pointing to a known-good deployed commit; rollback procedure and rollback preflight both passed without moving healthy production main.",
+    "checkedAt": "2026-09-23T20:38:00+07:00",
+    "commit": "f5c5a355f027723bcb94c2cbfa178269d42a545e"
   }
 }
