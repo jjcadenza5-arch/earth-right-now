@@ -1,0 +1,5 @@
+import fs from "node:fs";import { RELEASE_EVIDENCE_KEYS,evidenceExpiry } from "../src/release-evidence.js";
+const evidence=JSON.parse(fs.readFileSync("data/release-evidence.json","utf8"));
+const titles={browser:"Desktop browser",mobile:"Mobile device",providerPlayback:"Provider playback",accessibility:"Keyboard/accessibility",performance:"Performance",rollback:"Rollback"};
+const rows=RELEASE_EVIDENCE_KEYS.map(key=>{const x=evidence[key]||{},expiry=evidenceExpiry(x.checkedAt);const passed=x.ok===true&&String(x.note||"").trim()&&expiry.valid&&!expiry.expired;return{key,title:titles[key],status:passed?"PASS":x.checkedAt&&expiry.expired?"EXPIRED":"NEEDS_EVIDENCE",note:String(x.note||"").trim()||null,checkedAt:x.checkedAt||null,commit:x.commit||null}});
+console.log(JSON.stringify({automatedChecks:"Run npm test, npm run accessibility:preflight and npm run release:preflight in CI.",humanEvidenceRemaining:rows.filter(x=>x.status!=="PASS"),passedEvidence:rows.filter(x=>x.status==="PASS"),instruction:"Record only observations actually performed on the deployed candidate. Do not infer real playback or device behavior from CI."},null,2));
