@@ -35,3 +35,6 @@ Only evidence for the exact tested candidate should be recorded.
 ## Current human boundary
 
 The public beta exposure decision has already been made. Engineering may keep the existing GitHub Pages beta deployable, but real browser/mobile/provider-playback/accessibility/performance/rollback evidence must still come from an actual tested candidate and must not be fabricated from CI or HTTP reachability. Any new host, commercial activation, account authorization, or materially different public exposure remains an explicit owner decision.
+
+
+The deployed immutable candidate also contains `/release-verification.html`, an unlinked no-index operator page that consolidates the six human checks and the representative provider-playback windows. It is deliberately unable to mark release gates passed; it only reduces the manual coordination burden once the candidate origin is healthy.

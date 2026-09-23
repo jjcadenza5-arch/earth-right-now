@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>ERN Release Verification</title>
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17201c;background:#f4f7f4}
+*{box-sizing:border-box}body{margin:0}.wrap{max-width:980px;margin:auto;padding:28px 18px 60px}.hero,.card{background:white;border:1px solid #dce5df;border-radius:18px;box-shadow:0 8px 30px rgba(18,35,25,.06)}.hero{padding:24px}.card{padding:20px;margin-top:16px}h1{font-size:clamp(1.8rem,4vw,2.7rem);margin:.2rem 0}.eyebrow{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#5b6d62}.muted{color:#64756b}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-top:14px}.fact{padding:12px;border-radius:12px;background:#f5f8f6}.fact strong{display:block;font-size:.78rem;color:#607267;margin-bottom:4px}.gate{border-top:1px solid #e3e9e5;padding:14px 0}.gate:first-of-type{border-top:0}.gate h3{margin:.2rem 0}.gate ul{margin:.5rem 0 .8rem;padding-left:1.2rem}.provider{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:11px 0;border-top:1px solid #e8ece9}.provider:first-child{border-top:0}.pill{font-size:.72rem;padding:4px 8px;border-radius:999px;background:#eef3ef}.danger{background:#fff3ea;color:#8a4b1c}.ok{background:#e9f6ed;color:#27623c}button,a.button{display:inline-block;border:0;border-radius:999px;padding:10px 14px;background:#183c2b;color:#fff;text-decoration:none;cursor:pointer;font:inherit}.secondary{background:#e9efeb!important;color:#183c2b!important}textarea{width:100%;min-height:78px;border:1px solid #ccd8d0;border-radius:12px;padding:10px;font:inherit}.commands{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.8rem;white-space:pre-wrap;background:#101b15;color:#e7f1eb;border-radius:12px;padding:12px;overflow:auto}.warning{padding:12px;border-radius:12px;background:#fff8e8;border:1px solid #f2dfac;color:#6d5622}.checks label{display:block;margin:7px 0}.footer{margin-top:22px;color:#64756b;font-size:.85rem}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="hero">
+<div class="eyebrow">Earth Right Now · operator only</div>
+<h1>Release verification</h1>
+<p class="muted">Use this page only to organize real observations on the deployed candidate. It never converts automated checks, HTTP success, or iframe loading into human evidence.</p>
+<div class="warning">No check on this page is automatically recorded as a release pass. A PASS is valid only after the named real-world behavior was actually observed on the exact candidate commit.</div>
+<div class="grid" id="facts"></div>
+</section>
+<section class="card"><h2>Six real-world gates</h2><div id="gates"></div></section>
+<section class="card"><h2>Provider playback representatives</h2><p class="muted">These are the minimum inside-ERN representative windows that still need visible-media confirmation. Every degraded representative remains mandatory.</p><div id="providers">Loading…</div></section>
+<section class="card"><h2>Evidence note builder</h2><p class="muted">Write what you actually checked. This page stores nothing remotely.</p>
+<label for="key">Gate</label>
+<select id="key"><option>browser</option><option>mobile</option><option>providerPlayback</option><option>accessibility</option><option>performance</option><option>rollback</option></select>
+<label for="note">Observation note</label><textarea id="note" placeholder="Example: Safari 20 on macOS, Home → Explore → Atlas → viewer; Previous/Next and source link worked; no blocked controls observed."></textarea>
+<p><button id="makeCommand">Build recording command</button></p><div class="commands" id="command">Candidate must load before a command can be built.</div>
+</section>
+<div class="footer">This verification console is intentionally unlinked and marked noindex. It is a release aid, not part of the visitor experience.</div>
+</main>
+<script type="module" src="./src/release-verification-console.js"></script>
+</body>
+</html>

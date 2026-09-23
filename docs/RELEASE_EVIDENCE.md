@@ -49,3 +49,10 @@ The command writes a dated evidence object to the ledger. Then run `npm run rele
 ## Candidate-specific operator packet
 
 Every green CI candidate now generates an `ern-release-operator-packet` artifact. The packet is intentionally a checklist, not proof: it names the deployed origin, exact candidate SHA, previous commit for rollback work, all six human evidence categories, and the representative inside-ERN provider windows that still need HUMAN_PLAYBACK confirmation. A provider URL returning HTTP 200 or an iframe loading is never converted into playback evidence.
+
+
+## Candidate verification console
+
+The immutable candidate includes `/release-verification.html` as an unlinked, `noindex` operator aid. It loads the candidate's own `release-manifest.json`, lists all six human checks and derives the representative inside-ERN provider windows from the shipped source registry.
+
+The console is organizational only. It cannot write `data/release-evidence.json`, cannot convert automated checks into real-world evidence, and cannot mark provider playback from HTTP or iframe reachability. Use it to perform and describe the actual observation, then record that observation against the exact candidate SHA.

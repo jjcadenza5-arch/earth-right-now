@@ -16,10 +16,11 @@ await cp(new URL("../manifest.webmanifest",import.meta.url),new URL("manifest.we
 await cp(new URL("../service-worker.js",import.meta.url),new URL("service-worker.js",dist));
 await cp(new URL("../offline.html",import.meta.url),new URL("offline.html",dist));
 await cp(new URL("../privacy.html",import.meta.url),new URL("privacy.html",dist));
+await cp(new URL("../release-verification.html",import.meta.url),new URL("release-verification.html",dist));
 await cp(new URL("../about.html",import.meta.url),new URL("about.html",dist));
 await cp(new URL("../deploy/_headers",import.meta.url),new URL("_headers",dist));
 await cp(new URL("../deploy/_redirects",import.meta.url),new URL("_redirects",dist));
-const files=["index.html","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","data/sources.json","data/release-evidence.json"];
+const files=["index.html","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","release-verification.html","data/sources.json","data/release-evidence.json"];
 const hashes={};for(const p of files){const b=await readFile(new URL(p,dist));hashes[p]=createHash("sha256").update(b).digest("hex")}
 const pkg=JSON.parse(await readFile(new URL("../package.json",import.meta.url),"utf8"));
 const commit=String(process.env.GITHUB_SHA||process.env.ERN_COMMIT_SHA||"").trim()||null;
