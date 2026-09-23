@@ -676,3 +676,9 @@
 - Degraded inside-ERN sources remain mandatory checks, while healthy representatives are sampled conservatively to reduce repetitive manual validation.
 - Daily operations now reports the same playback evidence debt alongside source-health worklists.
 - Added `npm run provider:playback-status` and regression coverage. Release evidence remains fail-closed until observations are genuinely performed on the deployed ERN origin.
+
+## 2026-09-23 — Separate Pages deployment health from custom-domain health
+- Diagnosed repeated Pages workflow failures as post-deploy TLS hostname mismatch at earthrightnow.app; artifact build/deploy jobs themselves were succeeding.
+- Added DNS/TLS/HTTPS diagnostics directly to post-deploy verification, with a clear workflow summary when custom-domain infrastructure blocks certification.
+- The workflow still fails closed and only verifies the exact deployed commit after the domain is healthy.
+- Added regression coverage so future deployment failures stay actionable instead of appearing as generic curl failures.
