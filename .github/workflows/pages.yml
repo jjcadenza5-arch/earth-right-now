@@ -9,6 +9,7 @@ on:
       - "src/app-lite.js"
       - "src/styles-lite.css"
       - "data/sources.json"
+      - "data/local-directory.json"
       - "assets/**"
       - "about.html"
       - "privacy.html"
