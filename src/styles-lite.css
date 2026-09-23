@@ -465,3 +465,23 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
   .viewer-bar-actions{position:relative;z-index:80}
   .viewer-bar{overflow:visible}
 }
+
+/* Final fullscreen policy: ordinary action row; iPhone Safari uses provider/player fullscreen */
+#fullViewerTop{display:none!important}
+@media (orientation:landscape) and (max-height:520px){
+  #fullViewer{
+    position:static!important;
+    right:auto!important;
+    bottom:auto!important;
+    z-index:auto!important;
+    min-width:0!important;
+    min-height:34px!important;
+    display:inline-flex!important;
+    background:transparent!important;
+    color:white!important;
+    border-color:rgba(255,255,255,.18)!important;
+    box-shadow:none!important;
+    font-weight:500!important;
+  }
+  .viewer-actions{padding-right:0!important}
+}
