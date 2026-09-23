@@ -257,7 +257,9 @@
     "lastSuccessfulCheck": "2026-09-21T21:25:00+07:00",
     "checkedAt": "2026-09-21T21:25:00+07:00",
     "failureReason": null,
-    "story": "A wildlife window onto the Mpala watering hole in Laikipia, useful for catching animal activity when conditions line up."
+    "story": "A wildlife window onto the Mpala watering hole in Laikipia, useful for catching animal activity when conditions line up.",
+    "lat": 0.2928,
+    "lon": 36.899
   },
   {
     "id": "kijihiki-plateau",
@@ -316,7 +318,9 @@
     "freshness": 90,
     "moment": 82,
     "story": "Enjoy the Engadin live or check conditions before choosing a mountain day.",
-    "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented."
+    "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented.",
+    "lat": 46.497777,
+    "lon": 9.838323
   },
   {
     "id": "verbier",
@@ -346,7 +350,9 @@
     "freshness": 92,
     "moment": 84,
     "story": "The official tourism site presents its live cameras as a way to plan a ski day or hike before arrival.",
-    "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented."
+    "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented.",
+    "lat": 46.096025,
+    "lon": 7.229023
   },
   {
     "id": "dolomiti-superski",
@@ -435,7 +441,9 @@
     "freshness": 94,
     "moment": 84,
     "story": "See current mountain pictures before choosing your day or imagining a holiday here.",
-    "rightsBasis": "Current official KitzSki map exposes multiple Livecams; retained as LINK_ONLY because no embed permission is inferred."
+    "rightsBasis": "Current official KitzSki map exposes multiple Livecams; retained as LINK_ONLY because no embed permission is inferred.",
+    "lat": 47.446389,
+    "lon": 12.391944
   },
   {
     "id": "ski-arlberg",
@@ -465,7 +473,9 @@
     "freshness": 95,
     "moment": 86,
     "story": "Webcams sit beside live lift, weather, parking and getting-here information—a complete current-condition decision page.",
-    "rightsBasis": "Current official Ski Arlberg webcam page reports active webcams and live mountain views; retained as LINK_ONLY because no embed permission is inferred."
+    "rightsBasis": "Current official Ski Arlberg webcam page reports active webcams and live mountain views; retained as LINK_ONLY because no embed permission is inferred.",
+    "lat": 47.116667,
+    "lon": 10.266667
   },
   {
     "id": "grand-canyon-national-park",
@@ -650,7 +660,9 @@
     "checkedAt": "2026-09-23T09:36:00+07:00",
     "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
     "failureReason": null,
-    "freshnessEvidence": "Current official Zermatt Tourism Webcams page says visitors can discover Zermatt–Matterhorn live via webcam and notes village webcams operate during daytime."
+    "freshnessEvidence": "Current official Zermatt Tourism Webcams page says visitors can discover Zermatt–Matterhorn live via webcam and notes village webcams operate during daytime.",
+    "lat": 46.023604,
+    "lon": 7.748607
   },
   {
     "id": "chamonix-mont-blanc",
@@ -789,7 +801,9 @@
     "checkedAt": "2026-09-20T07:05:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:05:00+07:00",
     "failureReason": null,
-    "story": "A harbour window on Pico Island for seeing the Atlantic waterfront and local conditions around Lajes do Pico."
+    "story": "A harbour window on Pico Island for seeing the Atlantic waterfront and local conditions around Lajes do Pico.",
+    "lat": 38.388917,
+    "lon": -28.252551
   },
   {
     "id": "roque-observatory",
@@ -817,7 +831,9 @@
     "checkedAt": "2026-09-20T07:05:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:05:00+07:00",
     "failureReason": null,
-    "story": "A high-altitude La Palma view near Roque de los Muchachos, where mountain light and cloud conditions can change dramatically."
+    "story": "A high-altitude La Palma view near Roque de los Muchachos, where mountain light and cloud conditions can change dramatically.",
+    "lat": 28.7561111,
+    "lon": -17.8916667
   },
   {
     "id": "cijin-beach-kaohsiung",
@@ -1546,7 +1562,9 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": null,
-    "story": "A Pacific-facing coastal window in Taitung for checking sea, sky and shoreline conditions."
+    "story": "A Pacific-facing coastal window in Taitung for checking sea, sky and shoreline conditions.",
+    "lat": 22.945168,
+    "lon": 121.2799
   },
   {
     "id": "blouberg-table-mountain",
@@ -1773,7 +1791,9 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": null,
-    "story": "A mountain-and-city perspective from Bergen’s Ulriken area, connecting fjord-side urban scenery with the surrounding highlands."
+    "story": "A mountain-and-city perspective from Bergen’s Ulriken area, connecting fjord-side urban scenery with the surrounding highlands.",
+    "lat": 60.37674,
+    "lon": 5.39343
   },
   {
     "id": "waikiki-south-shore",
