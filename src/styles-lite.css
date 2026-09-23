@@ -291,3 +291,24 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
   body:has(.viewer:not([hidden])) .mobile-dock{display:none}
   body:has(.viewer:not([hidden])) .guide-launcher{display:none}
 }
+
+/* Landscape mobile viewer: keep the Earth window visible and move context below it */
+@media (orientation:landscape) and (max-height:520px){
+  body{padding-bottom:0}
+  .viewer{display:block;overflow-y:auto;overflow-x:hidden;background:#010705}
+  .viewer[hidden]{display:none}
+  .viewer-bar{position:sticky;top:0;z-index:12;min-height:56px;padding:8px 12px;background:#03100e}
+  .viewer-bar>div{min-width:0;overflow:hidden}
+  .viewer-bar strong{font-size:13px;max-width:44vw}
+  .viewer-bar small{display:inline;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:34vw}
+  .viewer-stage-wrap{height:72vh;min-height:250px;max-height:none}
+  .viewer-stage-wrap .viewer-stage{height:100%;min-height:250px}
+  .viewer-context{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(230px,.75fr) minmax(190px,.6fr);gap:14px;overflow:visible;padding:12px 14px 16px}
+  .viewer-context[hidden]{display:none}
+  .nearby-list{overflow-x:auto;max-width:100%}
+  .nearby-item{flex:0 0 150px}
+  .viewer-bottom{position:sticky;bottom:0;z-index:11;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:#03100e}
+  .journey,.viewer-actions{display:flex;flex-wrap:wrap;gap:7px;justify-content:center}
+  .viewer-bottom button,.viewer-bottom a{font-size:10px;padding:7px 10px}
+  .mobile-dock,.guide-launcher{display:none!important}
+}

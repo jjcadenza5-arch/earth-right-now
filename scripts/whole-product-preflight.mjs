@@ -15,6 +15,7 @@ must(css.includes("BlankMap-Equirectangular"),"Living Atlas lost its real-map ba
 must(index.includes('data-map-filter="local"')&&app.includes('map-pin local'),"Living Atlas lost reviewed local-place discovery");
 must(css.includes(".guide-panel"),"ERN Guide visual doorway missing");
 must(css.includes("Mockup fidelity lock"),"approved ERN mockup fidelity layer missing");
+must(css.includes("Landscape mobile viewer: keep the Earth window visible"),"landscape mobile viewer protection missing");
 must(app.includes('$("#heroWatch").onclick=()=>{const target='),"Watch Earth Now no longer opens the active Earth window");
 must(css.includes(".local-earth-section"),"Local Earth styling missing");
 must(css.includes(".participate-section"),"places/cameras/moments participation surface missing");
