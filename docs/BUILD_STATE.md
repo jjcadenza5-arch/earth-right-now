@@ -1,3 +1,10 @@
+## 2026-09-23 — Pages custom-domain failure isolation
+- GitHub Pages artifact deployment was succeeding while the post-deploy custom-domain check failed with a TLS hostname mismatch for earthrightnow.app.
+- The Pages workflow now runs ERN's DNS/TLS health diagnostic before origin certification and publishes the exact domain state to the workflow summary.
+- A DNS/TLS failure remains fail-closed, but it is now identified as a custom-domain infrastructure blocker rather than being conflated with a broken static artifact or application regression.
+- Exact-commit verification still runs only after the custom domain passes DNS/TLS/HTTPS health; no release gate is weakened.
+- Current external evidence still requires the domain/DNS owner to correct or allow GitHub Pages HTTPS provisioning before origin certification can pass.
+
 ## 2026-09-23 — Provider playback evidence closure
 - Added a provider-family playback evidence status model for ERN's inside-ERN EMBED_ALLOWED inventory.
 - Representative evidence deliberately requires HUMAN_PLAYBACK; HTTP success, provider-page metadata and media-endpoint reachability remain useful diagnostics but cannot certify visible browser playback.
