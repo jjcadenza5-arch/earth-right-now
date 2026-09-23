@@ -2048,7 +2048,12 @@
     "freshness": 92,
     "moment": 84,
     "story": "Check Mediterranean beach, sea and weather conditions before going.",
-    "rightsBasis": "Current official municipal tourism page is titled Live Webcam and identifies five live-image webcam viewpoints. ERN keeps this LINK_ONLY and does not infer embed permission."
+    "rightsBasis": "Current official municipal tourism page is titled Live Webcam and identifies five live-image webcam viewpoints. ERN keeps this LINK_ONLY and does not infer embed permission.",
+    "lat": 43.9166667,
+    "lon": 8.0833333,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Diano_Marina",
+    "coordinateNote": "Diano Marina town reference point; not claimed as exact webcam position."
   },
   {
     "id": "farm-tomita",
@@ -2111,7 +2116,12 @@
     "rightsBasis": "Current official Hilton resort webcam page explicitly offers live city and beach footage. ERN keeps it LINK_ONLY and does not infer embed permission.",
     "checkedAt": "2026-09-23T07:01:00+07:00",
     "lastSuccessfulCheck": "2026-09-23T07:01:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "lat": 21.2800172,
+    "lon": -157.8274441,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://fr.wikipedia.org/wiki/Waikiki",
+    "coordinateNote": "Waikiki neighbourhood reference point for the live beach/city destination; not claimed as exact webcam position."
   },
   {
     "id": "jungfrau-region",
@@ -2169,7 +2179,12 @@
     "freshness": 90,
     "moment": 84,
     "story": "Check Sottomarina beach weather and conditions in real time before going.",
-    "rightsBasis": "Current official Visit Chioggia page explicitly offers a Sottomarina live webcam for real-time beach weather and conditions. ERN keeps it LINK_ONLY and does not infer embed permission."
+    "rightsBasis": "Current official Visit Chioggia page explicitly offers a Sottomarina live webcam for real-time beach weather and conditions. ERN keeps it LINK_ONLY and does not infer embed permission.",
+    "lat": 45.1926833,
+    "lon": 12.2930139,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Sottomarina",
+    "coordinateNote": "Sottomarina place reference for the Chioggia beach destination; not claimed as exact webcam position."
   },
   {
     "id": "chidori-sakura",
@@ -2285,7 +2300,12 @@
     "freshness": 90,
     "moment": 90,
     "story": "See the Río Serrano and Torres del Paine landscape live before planning a Patagonia day.",
-    "rightsBasis": "Current provider page explicitly presents a live webcam of Torres del Paine and Río Serrano. ERN keeps this LINK_ONLY and does not infer embed rights."
+    "rightsBasis": "Current provider page explicitly presents a live webcam of Torres del Paine and Río Serrano. ERN keeps this LINK_ONLY and does not infer embed rights.",
+    "lat": -50.9830556,
+    "lon": -72.9663889,
+    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Nationalpark_Torres_del_Paine",
+    "coordinateNote": "Torres del Paine National Park reference point for the Río Serrano destination; not claimed as exact webcam position."
   },
   {
     "id": "reykjavik-metoffice",
