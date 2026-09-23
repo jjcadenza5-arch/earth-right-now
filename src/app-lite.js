@@ -498,12 +498,12 @@ function initSectionSpy(){
  for(const [id] of map){const el=document.getElementById(id);if(el)obs.observe(el)}
 }
 async function toggleViewerFullscreen(){
- const stage=$("#viewerStage");
+ const stage=$("#viewerStage"),media=stage?.querySelector("iframe,img,video"),target=media||stage;
  if(document.fullscreenElement){try{await document.exitFullscreen();return}catch{}}
  if(document.webkitFullscreenElement&&document.webkitExitFullscreen){try{document.webkitExitFullscreen();return}catch{}}
  try{
-   if(stage?.requestFullscreen){await stage.requestFullscreen();return}
-   if(stage?.webkitRequestFullscreen){stage.webkitRequestFullscreen();return}
+   if(target?.requestFullscreen){await target.requestFullscreen();return}
+   if(target?.webkitRequestFullscreen){target.webkitRequestFullscreen();return}
  }catch{}
  stage?.scrollIntoView({behavior:"smooth",block:"center"});
  const btn=$("#fullViewer"),old=btn.textContent;btn.textContent="Use player ⛶";setTimeout(()=>btn.textContent=old,1800);

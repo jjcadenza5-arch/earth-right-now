@@ -505,3 +505,16 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
   max-height:none!important;
   object-fit:contain!important;
 }
+
+/* Fullscreen the media itself, not the ERN viewer shell */
+#viewerStage iframe:fullscreen,#viewerStage iframe:-webkit-full-screen,
+#viewerStage img:fullscreen,#viewerStage img:-webkit-full-screen,
+#viewerStage video:fullscreen,#viewerStage video:-webkit-full-screen{
+  width:100vw!important;
+  height:100vh!important;
+  max-width:none!important;
+  max-height:none!important;
+  margin:0!important;
+  background:#000!important;
+  object-fit:contain!important;
+}
