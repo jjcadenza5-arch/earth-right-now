@@ -5,6 +5,7 @@ console.assert(pkg.scripts["operations:status"]==="node scripts/operations-statu
 console.assert(s.includes("providerReview"));
 console.assert(s.includes("providerPlaybackEvidence:report.providerPlaybackEvidence"));
 console.assert(s.includes("healthAutomation:report.healthAutomation"));
+console.assert(s.includes("maintenance:report.maintenance"));
 console.assert(s.includes("provider-observations.json"));
 console.assert(s.includes("providerObservations"));
 console.assert(s.includes("providerInput?.rejected?.length"));

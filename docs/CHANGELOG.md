@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-23 — Consolidated maintenance debt
+- Added a reusable Atlas maintenance summary model.
+- Combined Atlas provenance debt and source revalidation priorities in operations output.
+- Added regression coverage while leaving the stable-beta visitor experience unchanged.
+
 ## 2026-09-23 — Product activation operator visibility
 - Added business and Earth Signals readiness to operations reporting.
 - Added a machine-readable Earth Signals status command.

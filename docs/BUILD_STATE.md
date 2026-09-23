@@ -1,3 +1,9 @@
+## 2026-09-23 — Consolidated maintenance debt
+- Operations status now carries one maintenance block combining source revalidation and Living Atlas coordinate/provenance debt.
+- Atlas maintenance distinguishes unmapped sources from mapped legacy positions that still lack authoritative provenance, with current sources prioritized first.
+- Provenance completion percentage is visible without changing or silently upgrading any existing coordinate.
+- The operator view now exposes the next ten source-revalidation items and next ten Atlas actions in one place, reducing duplicated/circular maintenance work.
+
 ## 2026-09-23 — Product activation operator visibility
 - Daily/interactive operations reporting now shows business activation and Earth Signals contribution readiness beside catalog, playback and release health.
 - Business remains FOUNDATION_READY but not commercially active until real submission transport and affiliate inventory exist.
