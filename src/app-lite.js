@@ -38,6 +38,8 @@ function allowAmbientLive(){return !(navigator.connection?.saveData||globalThis.
 function isInside(s){return!!(s&&s.health!=="OFFLINE"&&((s.playback==="EMBED"&&cleanUrl(s.embedUrl))||(s.playback==="IMAGE_REFRESH"&&cleanUrl(s.sourceUrl))))}
 function localHour(s){if(!s?.timeZone)return null;try{const p=new Intl.DateTimeFormat("en-US",{timeZone:s.timeZone,hour:"2-digit",hour12:false}).formatToParts(new Date());const h=Number(p.find(x=>x.type==="hour")?.value);return Number.isFinite(h)?h%24:null}catch{return null}}
 function localTime(s){if(!s?.timeZone)return"";try{return new Intl.DateTimeFormat(undefined,{timeZone:s.timeZone,hour:"numeric",minute:"2-digit"}).format(new Date())}catch{return""}}
+function verificationAgeDays(s){const raw=s.lastSuccessfulCheck||s.checkedAt;if(!raw)return Infinity;const ms=Date.now()-Date.parse(raw);return Number.isFinite(ms)?Math.max(0,ms/86400000):Infinity}
+function verificationLabel(s){const d=verificationAgeDays(s);if(!Number.isFinite(d))return"Verification time unavailable";if(d<1)return"Verified within 24h";if(d<2)return"Verified yesterday";return"Verified "+Math.floor(d)+" days ago"}
 const momentWords={
  en:["Current","Morning light","Daylight","Evening light","Night"],
  th:["ปัจจุบัน","แสงยามเช้า","กลางวัน","แสงยามเย็น","กลางคืน"],
@@ -72,6 +74,7 @@ function personalBoost(s){
 function baseScore(s){
  let n=Number(s.quality||0)+Number(s.moment||0)*.72+Number(s.freshness||0)*.35;
  if(s.health==="HEALTHY")n+=32;else if(s.health==="DEGRADED")n-=38;else n-=100;
+ const age=verificationAgeDays(s);if(age<1)n+=8;else if(age<3)n+=3;else if(age>14)n-=30;else if(age>7)n-=12;
  if(isInside(s))n+=22;
  if(isDay(s)&&isScenic(s))n+=32;
  if(!isDay(s)&&!isCity(s))n-=50;
@@ -240,7 +243,8 @@ function renderContext(s){
  const box=$("#viewerContext"),story=$("#viewerStory"),tags=$("#viewerTags"),near=$("#nearbyList"),related=$("#relatedList");
  story.textContent=s.story||"A current window onto this place.";
  tags.replaceChildren();
- const tagValues=[momentLabel(s),truthLabel(s),...(s.categories||[]).slice(0,3)];
+ const tagValues=[momentLabel(s),publicTruth(s),...(s.categories||[]).slice(0,3)];
+ const confidence=$("#sourceConfidence");confidence.textContent=[verificationLabel(s),s.provider?("Source: "+s.provider):"",s.health==="HEALTHY"?"Catalog health: healthy":"Catalog health: "+String(s.health||"unknown").toLowerCase()].filter(Boolean).join(" · ");
  for(const value of tagValues){const tag=document.createElement("span");tag.textContent=value;tags.append(tag)}
  near.replaceChildren();
  const nearby=state.sources.filter(x=>x.id!==s.id&&x.health==="HEALTHY"&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,d:distanceKm(s,x)})).filter(x=>Number.isFinite(x.d)).sort((a,b)=>a.d-b.d).slice(0,3);

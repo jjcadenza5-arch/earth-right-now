@@ -170,3 +170,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .window-card[data-truth="preview"] .card-kicker span:first-child{background:#687b76}
 .viewer-loading a{grid-column:2;margin-top:4px;width:max-content;color:white;font-size:8px;text-decoration:underline;text-underline-offset:2px}
 .related-kicker{margin-top:10px}
+
+/* Verification transparency */
+.source-confidence{margin-top:7px;color:#91aaa3;font-size:8px;line-height:1.4}

@@ -127,7 +127,7 @@
         <button data-query="Mountains">Mountains</button>
         <button data-query="Wildlife">Wildlife</button>
       </div>
-      <p class="search-status" id="searchStatus"></p>
+      <p class="search-status" id="searchStatus" role="status" aria-live="polite"></p>
       <div class="result-grid" id="searchResults"></div>
     </section>
 
@@ -184,7 +184,7 @@
     </div>
     <div class="viewer-alternates" id="viewerAlternates" hidden></div>
     <div class="viewer-context" id="viewerContext" hidden>
-      <div class="context-story"><span class="context-kicker">ABOUT THIS WINDOW</span><p id="viewerStory"></p><div class="context-tags" id="viewerTags"></div></div>
+      <div class="context-story"><span class="context-kicker">ABOUT THIS WINDOW</span><p id="viewerStory"></p><div class="source-confidence" id="sourceConfidence"></div><div class="context-tags" id="viewerTags"></div></div>
       <div class="context-nearby"><span class="context-kicker">NEARBY ON EARTH</span><div class="nearby-list" id="nearbyList"></div><span class="context-kicker related-kicker">MORE LIKE THIS</span><div class="nearby-list" id="relatedList"></div></div>
       <div class="context-plan"><span class="context-kicker">BEFORE YOU GO</span><div class="plan-actions">
         <a id="planStay" target="_blank" rel="noopener noreferrer">Stay</a>
