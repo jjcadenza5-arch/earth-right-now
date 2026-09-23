@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: 22
       - run: npm test
+      - run: npm run accessibility:preflight
+      - run: npm run mobile:preflight
+      - run: npm run release:preflight
       - run: npm run catalog:embeds
       - run: npm run catalog:fallbacks
       - run: npm run watch-earth:audit
