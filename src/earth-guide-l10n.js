@@ -12,3 +12,14 @@ const D={
 function fill(s,v={}){return String(s||"").replace(/\{(\w+)\}/g,(_,k)=>String(v[k]??""))}
 export function guideCopy(language="en"){return D[code(language)]}
 export function guideFormat(key,vars={},language="en"){return fill(guideCopy(language)[key],vars)}
+
+const INTENT={
+ en:{water:"water and coast",mountains:"mountains and snow",wildlife:"wildlife",human:"city life",beautiful:"beautiful scenery",happening:"places with activity",night:"city lights at night",daylight:"daylight",golden:"sunrise, sunset or golden light",snow:"snow",rain:"rain",local:"small and local places",reference:"reference images"},
+ th:{water:"ทะเลและชายฝั่ง",mountains:"ภูเขาและหิมะ",wildlife:"สัตว์ป่า",human:"ชีวิตในเมือง",beautiful:"วิวสวย",happening:"สถานที่ที่มีกิจกรรม",night:"แสงเมืองยามค่ำคืน",daylight:"กลางวัน",golden:"พระอาทิตย์ขึ้น ตก หรือช่วงแสงทอง",snow:"หิมะ",rain:"ฝน",local:"สถานที่เล็กๆ แบบท้องถิ่น",reference:"ภาพอ้างอิง"},
+ de:{water:"Wasser und Küste",mountains:"Berge und Schnee",wildlife:"Tierwelt",human:"Stadtleben",beautiful:"schöne Landschaft",happening:"Orte mit Aktivität",night:"Stadtlichter bei Nacht",daylight:"Tageslicht",golden:"Sonnenaufgang, Sonnenuntergang oder goldenes Licht",snow:"Schnee",rain:"Regen",local:"kleine lokale Orte",reference:"Referenzbilder"},
+ fr:{water:"eau et littoral",mountains:"montagnes et neige",wildlife:"faune",human:"vie urbaine",beautiful:"beaux paysages",happening:"lieux animés",night:"lumières de ville la nuit",daylight:"lumière du jour",golden:"lever, coucher du soleil ou lumière dorée",snow:"neige",rain:"pluie",local:"petits lieux locaux",reference:"images de référence"},
+ es:{water:"agua y costa",mountains:"montañas y nieve",wildlife:"vida salvaje",human:"vida urbana",beautiful:"paisajes hermosos",happening:"lugares con actividad",night:"luces de ciudad por la noche",daylight:"luz del día",golden:"amanecer, atardecer o luz dorada",snow:"nieve",rain:"lluvia",local:"lugares pequeños y locales",reference:"imágenes de referencia"},
+ ja:{water:"海と海岸",mountains:"山と雪",wildlife:"野生動物",human:"街の暮らし",beautiful:"美しい景色",happening:"人や活動のある場所",night:"夜の街明かり",daylight:"昼間",golden:"日の出・夕日・ゴールデンアワー",snow:"雪",rain:"雨",local:"小さな地元の場所",reference:"参考画像"},
+ zh:{water:"海水与海岸",mountains:"山地与雪景",wildlife:"野生动物",human:"城市生活",beautiful:"美丽风景",happening:"有活动的地方",night:"夜间城市灯光",daylight:"白天",golden:"日出、日落或黄金时刻",snow:"雪",rain:"雨",local:"小而本地的地方",reference:"参考图片"}
+};
+export function guideIntentLabel(intent,language="en"){return INTENT[code(language)]?.[intent]||intent}
