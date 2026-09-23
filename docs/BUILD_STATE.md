@@ -1,3 +1,9 @@
+## 2026-09-23 — EarthCam source freshness tranche B
+- Revalidated nine visitor-favorite EarthCam destinations against their current provider pages: New York skyline, Meads Bay, Lauderdale-by-the-Sea, Aruba, Marco Island, Dublin, Chicago, Sint Maarten and Tbilisi Freedom Square.
+- Every refreshed source carries an explicit statement of the live/real-time wording currently present on the provider page.
+- These checks renew external/current evidence only. They do not create embed permission and do not count as HUMAN_PLAYBACK inside ERN.
+- EarthCam pages without sufficiently clear current/live evidence in this pass remain untouched.
+
 ## 2026-09-23 — Actual-clock Watch Earth operations
 - Added a separate live-now Watch Earth status report that evaluates the curated journey against the actual current clock instead of the deterministic catalog-time anchor used by CI regression audits.
 - Daily operations now exposes current journey count, shortfall, place/country/provider breadth, inside-ERN coverage, light mix and stale/expired catalog-source debt.
