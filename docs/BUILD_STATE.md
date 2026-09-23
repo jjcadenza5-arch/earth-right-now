@@ -1,3 +1,9 @@
+## 2026-09-23 — Atlas provenance integrity hardening
+- Coordinate evidence is now symmetric: a provenance basis requires coordinates + an evidence URL, and an evidence URL cannot exist without a declared basis.
+- Coordinate evidence URLs must use HTTPS; the JSON schema now exposes the same provenance contract already enforced at runtime.
+- The Atlas operations worklist now reports provenance completion percentage, current legacy-coordinate debt and separate top-priority queues for unmapped current sources versus mapped-but-unevidenced sources.
+- No existing map positions were changed and no legacy coordinate was silently upgraded to CAMERA_EXACT.
+
 ## 2026-09-23 — Daily operations failure propagation
 - All seven scheduled source, Atlas, provider, Watch Earth and operations reports now preserve the underlying command's exit status while also saving JSON through tee.
 - A failed provider/source report will fail the daily job instead of appearing green solely because the log was captured; reports and artifacts still publish through their always steps.

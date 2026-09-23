@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-23 — Atlas provenance integrity hardening
+- Made coordinate provenance validation symmetric and HTTPS-only.
+- Added schema-level coordinate evidence fields and dependency rules.
+- Added current-source priority and completion reporting to the Atlas coordinate worklist.
+- Added regression coverage without changing any existing map position.
+
 ## 2026-09-18 — Recovery foundation
 - Established permanent ERN repository.
 - Locked mature ERN as product specification; Fresh is an engineering rebuild, not a redesign.
