@@ -230,7 +230,7 @@ function groupByPlace(items){
 function normalizeSearch(v){return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim()}
 function renderQuickSearches(){
  const host=document.querySelector(".search-suggestions");if(!host)return;
- const rankedCountries=[...new Set(state.sources.filter(s=>s.health==="HEALTHY"&&verificationAgeDays(s)<=21).sort((a,b)=>baseScore(b)-baseScore(a)).map(s=>s.country).filter(Boolean))].slice(0,3);
+ const rankedCountries=[...new Set(state.sources.filter(featureEligible).sort((a,b)=>baseScore(b)-baseScore(a)).map(s=>s.country).filter(Boolean))].slice(0,3);
  const typeQueries=visitorDaypart()==="night"?["Cities","Beaches & Water","Wildlife"]:["Beaches & Water","Mountains","Wildlife"];
  const items=[...rankedCountries,...typeQueries].slice(0,6);host.replaceChildren(...items.map(q=>{const b=document.createElement("button");b.type="button";b.dataset.query=q;b.textContent=q;return b}));
  host.querySelectorAll("button").forEach(b=>b.onclick=()=>{$("#searchInput").value=b.dataset.query||"";search($("#searchInput").value,{updateUrl:true});scrollToId("search")});
@@ -310,7 +310,7 @@ function guideResponse(q){
  const placeMatches=guidePlaceMatches(q);
  if(placeMatches.length&&!intent.surprise&&!intent.near&&!intent.local&&!intent.peaceful&&!intent.golden&&!intent.night&&!intent.wildlife&&!intent.beach&&!intent.mountain&&!intent.city)return{text:"I found "+placeMatches.length+" strong ERN window"+(placeMatches.length===1?"":"s")+" for that place.",items:placeMatches.slice(0,4)};
  let pool=state.sources.filter(featureEligible);
- if(intent.current)pool=pool.filter(s=>verificationAgeDays(s)<=7);
+ if(intent.current)pool=pool.filter(currentTruthClaim);
  if(intent.local){const local=pool.filter(s=>localPlaceSignals(s).worth);if(local.length)pool=local}
  let items=[...pool].sort((a,b)=>guideScore(b,intent)-guideScore(a,intent));
  if(intent.surprise&&items.length){const top=items.slice(0,Math.min(18,items.length));const salt=(Date.now()/60000|0)%top.length;items=[top[salt],...top.filter((_,i)=>i!==salt)]}
@@ -430,7 +430,7 @@ function renderContext(s){
  story.textContent=s.story||"A current window onto this place.";const ms=momentSignal(s);$("#viewerMomentWhy").textContent="Why now · "+ms.reason;
  tags.replaceChildren();
  const tagValues=[momentLabel(s),publicTruth(s),...(s.categories||[]).slice(0,3)];
- const confidence=$("#sourceConfidence"),age=verificationAgeDays(s);confidence.textContent=[verificationLabel(s),s.provider?("Source: "+s.provider):"",s.health==="HEALTHY"?"Catalog health: healthy":"Catalog health: "+String(s.health||"unknown").toLowerCase()].filter(Boolean).join(" · ");confidence.classList.toggle("stale",!Number.isFinite(age)||age>21);
+ const confidence=$("#sourceConfidence"),age=verificationAgeDays(s);confidence.textContent=[verificationLabel(s),s.provider?("Source: "+s.provider):"",s.health==="HEALTHY"?"Catalog health: healthy":"Catalog health: "+String(s.health||"unknown").toLowerCase()].filter(Boolean).join(" · ");confidence.classList.toggle("stale",!currentTruthClaim(s));
  for(const value of tagValues){const tag=document.createElement("span");tag.textContent=value;tags.append(tag)}
  near.replaceChildren();
  const nearby=state.sources.filter(x=>x.id!==s.id&&featureEligible(x)&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,d:distanceKm(s,x)})).filter(x=>Number.isFinite(x.d)).sort((a,b)=>a.d-b.d).slice(0,3);
