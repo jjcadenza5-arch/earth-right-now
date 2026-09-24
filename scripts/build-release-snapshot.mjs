@@ -12,6 +12,7 @@ await cp(new URL("../src/styles-lite.css",import.meta.url),new URL("src/styles-l
 await mkdir(new URL("data/",dist),{recursive:true});
 await cp(new URL("../data/sources.json",import.meta.url),new URL("data/sources.json",dist));
 await cp(new URL("../data/local-directory.json",import.meta.url),new URL("data/local-directory.json",dist));
+await cp(new URL("../data/travel-offers.json",import.meta.url),new URL("data/travel-offers.json",dist));
 await cp(new URL("../data/provider-observations.json",import.meta.url),new URL("data/provider-observations.json",dist));
 try{await cp(new URL("../data/release-evidence.json",import.meta.url),new URL("data/release-evidence.json",dist))}catch{await writeFile(new URL("data/release-evidence.json",dist),"{}\n")}
 await cp(new URL("../assets/",import.meta.url),new URL("assets/",dist),{recursive:true});
@@ -31,7 +32,7 @@ await cp(new URL("../src/release-verification-console.js",import.meta.url),new U
 await cp(new URL("../about.html",import.meta.url),new URL("about.html",dist));
 await cp(new URL("../deploy/_headers",import.meta.url),new URL("_headers",dist));
 await cp(new URL("../deploy/_redirects",import.meta.url),new URL("_redirects",dist));
-const files=["index.html","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","release-verification.html","data/sources.json","data/local-directory.json","data/provider-observations.json","data/release-evidence.json","for-places.html","now-moments.html","review/inside-ern.html"];
+const files=["index.html","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","release-verification.html","data/sources.json","data/local-directory.json","data/travel-offers.json","data/provider-observations.json","data/release-evidence.json","for-places.html","now-moments.html","review/inside-ern.html"];
 const hashes={};for(const p of files){const b=await readFile(new URL(p,dist));hashes[p]=createHash("sha256").update(b).digest("hex")}
 const pkg=JSON.parse(await readFile(new URL("../package.json",import.meta.url),"utf8"));
 const commit=String(process.env.GITHUB_SHA||process.env.ERN_COMMIT_SHA||"").trim()||null;
