@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Catalog-owned featured holds
+- Moved feature holds from hard-coded browser IDs into source catalog metadata.
+- Watch Earth, Hero selection and inside recovery now honor the same hold state.
+- Held sources remain discoverable but are excluded from featured/restoration priority.
+
 ## 2026-09-24 — Clean JSON operations packet output
 - Switched daily packet commands to silent npm execution so retained diagnostics remain machine-readable JSON.
 

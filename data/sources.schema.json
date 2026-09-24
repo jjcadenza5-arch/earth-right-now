@@ -230,6 +230,18 @@
         "string",
         "null"
       ]
+    },
+    "featuredHold": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "featuredHoldReason": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "additionalProperties": true,

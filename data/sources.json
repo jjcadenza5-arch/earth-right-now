@@ -1724,7 +1724,9 @@
     "lon": 18.461,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.openstreetmap.org/node/262719335",
-    "coordinateNote": "OpenStreetMap locality reference for Bloubergstrand, Western Cape."
+    "coordinateNote": "OpenStreetMap locality reference for Bloubergstrand, Western Cape.",
+    "featuredHold": true,
+    "featuredHoldReason": "Current stable-beta curation hold."
   },
   {
     "id": "perdido-key-beach",
@@ -1757,7 +1759,9 @@
     "lon": -87.440376,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.compass.com/homedetails/14239-Perdido-Key-Dr-Unit-PH13-Perdido-Key-FL-32507/GYLB3_pid/",
-    "coordinateNote": "Public property reference coordinates for the La Riva complex on Perdido Key."
+    "coordinateNote": "Public property reference coordinates for the La Riva complex on Perdido Key.",
+    "featuredHold": true,
+    "featuredHoldReason": "Current stable-beta curation hold."
   },
   {
     "id": "sasagawa-nagare",
@@ -1889,7 +1893,9 @@
     "lon": -76.70581,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.openstreetmap.org/way/827770432",
-    "coordinateNote": "OpenStreetMap feature coordinates for Pleasant Beach Hotel in Sterling, New York."
+    "coordinateNote": "OpenStreetMap feature coordinates for Pleasant Beach Hotel in Sterling, New York.",
+    "featuredHold": true,
+    "featuredHoldReason": "Current stable-beta curation hold."
   },
   {
     "id": "maui-hale-pau-hana",
@@ -1923,7 +1929,9 @@
     "lon": -156.4466,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://mapcarta.com/25364046",
-    "coordinateNote": "Public GeoNames-backed place reference for Hale Pau Hana in Kihei, Maui."
+    "coordinateNote": "Public GeoNames-backed place reference for Hale Pau Hana in Kihei, Maui.",
+    "featuredHold": true,
+    "featuredHoldReason": "Current stable-beta curation hold."
   },
   {
     "id": "bergen-ulriken",

@@ -11,6 +11,7 @@ export function watchEarthEligible(s,{now=new Date()}={}) {
     sourceStatus(s,{now}).live &&
     nearNowEvidence(s,{now}) &&
     s.health === "HEALTHY" &&
+    s.featuredHold !== true &&
     s.permission !== "UNKNOWN" &&
     recencyState(s,{now}) === "CURRENT_CHECK" &&
     playbackCapability(s,{now}).action !== "UNAVAILABLE" &&

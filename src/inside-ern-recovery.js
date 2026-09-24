@@ -24,6 +24,7 @@ export function insideERNRecoveryStatus(sources=[],entries=[],{now=new Date(),ob
     const evidence=evidenceFor(batch,source.id,now,observationMaxAgeHours);
     const recency=recencyState(source,{now});
     const permissionOk=source.permission==="EMBED_ALLOWED";
+    if(source.featuredHold===true){queue.push({id:source.id,title:source.title,provider:source.provider||null,health:source.health,recency,action:"CURATION_HOLD",reason:"FEATURED_HOLD",priority:10,observedAt:evidence.observation?.observedAt||null,lastSuccessfulCheck:source.lastSuccessfulCheck||source.checkedAt||null,sourceUrl:source.sourceUrl||null,embedUrl:source.embedUrl||null,quality:Number(source.quality)||0,moment:Number(source.moment)||0,freshness:Number(source.freshness)||0,featuredHold:true,featuredHoldReason:source.featuredHoldReason||null,requiredEvidence:[]});continue}
     if(source.health==="HEALTHY"&&permissionOk&&recency==="CURRENT_CHECK"&&evidence.human){
       ready.push({id:source.id,title:source.title,provider:source.provider||null,observedAt:evidence.observation?.observedAt||null});
       continue;
@@ -46,7 +47,7 @@ export function insideERNRecoveryStatus(sources=[],entries=[],{now=new Date(),ob
     });
   }
   queue.sort((a,b)=>b.priority-a.priority||(Date.parse(a.lastSuccessfulCheck||0)||0)-(Date.parse(b.lastSuccessfulCheck||0)||0)||a.id.localeCompare(b.id));
-  const restorationCandidates=queue.filter(x=>x.health==="HEALTHY"&&x.action!=="REVIEW_EMBED_PERMISSION").map(x=>({...x,restorationScore:Number((x.quality+x.moment*.25+x.freshness*.15).toFixed(2))})).sort((a,b)=>b.restorationScore-a.restorationScore||b.quality-a.quality||a.id.localeCompare(b.id));
+  const restorationCandidates=queue.filter(x=>x.health==="HEALTHY"&&x.action!=="REVIEW_EMBED_PERMISSION"&&x.reason!=="FEATURED_HOLD").map(x=>({...x,restorationScore:Number((x.quality+x.moment*.25+x.freshness*.15).toFixed(2))})).sort((a,b)=>b.restorationScore-a.restorationScore||b.quality-a.quality||a.id.localeCompare(b.id));
   const blocked=queue.filter(x=>x.health!=="HEALTHY"||x.action==="REVIEW_EMBED_PERMISSION");
   return{
     generatedAt:now instanceof Date?now.toISOString():new Date(now).toISOString(),
@@ -59,6 +60,8 @@ export function insideERNRecoveryStatus(sources=[],entries=[],{now=new Date(),ob
     staleSource:queue.filter(x=>["STALE_CHECK","EXPIRED_CHECK"].includes(x.reason)).length,
     missingHumanPlayback:queue.filter(x=>x.reason==="MISSING_CURRENT_HUMAN_PLAYBACK").length,
     stalePlaybackEvidence:queue.filter(x=>x.reason==="STALE_PLAYBACK_EVIDENCE").length,
+    held:queue.filter(x=>x.reason==="FEATURED_HOLD").length,
+    heldSources:queue.filter(x=>x.reason==="FEATURED_HOLD").map(x=>({id:x.id,title:x.title,reason:x.featuredHoldReason})),
     readySources:ready,
     restorationCandidates:restorationCandidates.slice(0,limit),
     blocked:blocked.slice(0,limit),
