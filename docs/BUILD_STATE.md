@@ -1,3 +1,8 @@
+## 2026-09-24 — Catalog gate rejection details retained
+- Operations status now preserves catalogReleaseGate.rejectedDetails instead of reducing malformed-source diagnostics to a count only.
+- This lets the retained daily artifact identify each rejected source ID and validator error before any catalog edit is attempted.
+- No validation rules or source records were changed in this step; it is observability only.
+
 ## 2026-09-24 — Known degraded exceptions removed from immediate revalidation
 - Refined source-revalidation triage so intentionally held or already-understood degraded sources do not repeatedly appear as ordinary immediate work.
 - featuredHold sources now enter CURATION_HOLD until the hold is deliberately removed.

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-24 — Catalog gate rejection details retained
+- Daily operations now retains exact malformed-source IDs/errors instead of only the rejected-record count.
+
 ## 2026-09-24 — Known degraded exceptions removed from immediate revalidation
 - Featured holds and already-known visitor playback rejections no longer inflate the immediate source-review queue.
 - Maui stays held; Waikīkī South Shore and Cold Lake stay deferred; genuinely unresolved degraded sources remain immediate.

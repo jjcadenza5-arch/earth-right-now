@@ -75,7 +75,7 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
     snapshot,
     watchEarth:{...watchSnapshot,...watchSequence,target:20,shortfall:Math.max(0,20-watchSnapshot.count),providerResilient:watchSequence.resilience==="DIVERSE"},
     health,
-    gate:{ready:gate.ready,blockers:gate.blockers,currentHealthy:gate.currentHealthy,currentInsideERN:gate.currentInsideERN,unknown:gate.unknown,rejected:gate.rejected},
+    gate:{ready:gate.ready,blockers:gate.blockers,currentHealthy:gate.currentHealthy,currentInsideERN:gate.currentInsideERN,unknown:gate.unknown,rejected:gate.rejected,rejectedDetails:gate.rejectedDetails||[]},
     release:{ready:release.ready,blockers:release.blockers,checks:release.checks,evidence:release.evidence},
     healthAutomation,
     providerReview:{total:providerReview.length,unsafe:providerReview.filter(x=>!x.ok),reviewRequired:providerReview.filter(x=>x.reviewRequired),crossProvider:providerReview.filter(x=>x.crossProvider)},
