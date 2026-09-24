@@ -1,3 +1,11 @@
+## 2026-09-24 — Official LIVE_IMAGE currentness refresh
+- Refreshed five official current-image sources from current provider/government webcam pages: Lake Lucerne, Kaikōura, Reykjavík, Glenelg Beach and Brighton Beach.
+- Lake Lucerne's official navigation-company page still describes live webcam views and current weather.
+- Environment Canterbury still lists the South Bay, Kaikōura camera and states that its static webcam images update every five minutes.
+- The Icelandic Meteorological Office Reykjavík webcam page remains current.
+- South Australia Marine Safety still lists Glenelg and Brighton within its live coastal camera network and warns that individual cameras may temporarily go offline.
+- Only currentness/freshness evidence changed. All five remain LIVE_IMAGE + LINK_ONLY + EXTERNAL; no display/embed permission was inferred.
+
 ## 2026-09-24 — NPS current-source refresh tranche
 - Refreshed source-currentness evidence for Grand Canyon, Mount Rainier and Glacier National Park from current official National Park Service webcam pages.
 - Grand Canyon's current NPS webcam surfaces include active refreshed views such as South Entrance Station.

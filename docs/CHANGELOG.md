@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Official LIVE_IMAGE currentness refresh
+- Refreshed Lake Lucerne, Kaikōura, Reykjavík, Glenelg and Brighton from current official webcam pages.
+- Preserved LIVE_IMAGE / LINK_ONLY / EXTERNAL boundaries for all five.
+
 ## 2026-09-24 — NPS current-source refresh
 - Refreshed Grand Canyon, Mount Rainier and Glacier official webcam currentness from current NPS evidence.
 - All remain LINK_ONLY / EXTERNAL; no display permission or inside-ERN playback was inferred.
