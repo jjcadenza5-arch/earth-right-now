@@ -282,9 +282,9 @@ function applyPlanOffer(el,offer,fallback,label){
  const href=offer?String(offer.url||""):fallback;el.href=href;
  if(offer){
   el.dataset.offerId=String(offer.id);el.dataset.offerKind=offer.sponsored?"sponsored":offer.affiliate?"affiliate":"external";
-  const disclosure=travelOfferDisclosure(offer);el.title=String(offer.provider)+" · "+disclosure;el.setAttribute("aria-label",label+" — "+String(offer.provider)+" — "+disclosure);
+  const disclosure=travelOfferDisclosure(offer);el.title=String(offer.provider)+" · "+disclosure;el.setAttribute("aria-label",label+" — "+String(offer.provider)+" — "+disclosure);el.rel=offer.affiliate||offer.sponsored?"noopener noreferrer sponsored":"noopener noreferrer";
  }else{
-  delete el.dataset.offerId;delete el.dataset.offerKind;el.removeAttribute("title");el.setAttribute("aria-label",label);
+  delete el.dataset.offerId;delete el.dataset.offerKind;el.removeAttribute("title");el.setAttribute("aria-label",label);el.rel="noopener noreferrer";
  }
 }
 function approvedLocalPlaces(){return(state.localDirectory||[]).filter(x=>x&&x.status==="APPROVED"&&x.id&&x.name&&safeExternalUrl(x.url))}
