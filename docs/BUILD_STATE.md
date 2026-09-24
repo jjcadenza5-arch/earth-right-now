@@ -1,3 +1,10 @@
+## 2026-09-24 — Immediate operations validation on relevant main changes
+- Operations Check now runs not only daily/manual but also after relevant operational/source changes land on main.
+- Push-trigger paths cover source and observation truth files, embed research/provider-family data, commercial staging/config, src/, scripts/, package.json and the workflow itself.
+- This closes the delay where a broken operations script could remain unnoticed until the next scheduled run.
+- The daily schedule remains intact, so continuous maintenance still happens even when no code changes.
+- Added regression coverage for the push trigger and retained schedule/manual entry points.
+
 ## 2026-09-24 — Human review evidence target binding
 - Human review evidence is now bound to the exact source/provider and embed/player URLs that were actually reviewed.
 - Production proposal generation compares exported review URLs with the current source catalog or research-candidate record.

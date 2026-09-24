@@ -1,6 +1,20 @@
 name: ERN Operations Check
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/operations-watch.yml"
+      - "data/sources.json"
+      - "data/provider-observations.json"
+      - "data/embed-research-candidates.json"
+      - "data/embed-provider-families.json"
+      - "data/affiliate-partners.json"
+      - "data/travel-offers.json"
+      - "data/submission-transport.json"
+      - "src/**"
+      - "scripts/**"
+      - "package.json"
   workflow_dispatch:
   schedule:
     - cron: "17 0 * * *"

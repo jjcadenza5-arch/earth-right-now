@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Immediate operations validation on relevant main changes
+- ERN Operations Check now runs after relevant main changes as well as daily/manual.
+- This validates operations packet generation and network preflights immediately after source/operations changes.
+
 ## 2026-09-24 — Human review evidence target binding
 - Production review proposals now require the reviewed source/embed URLs to still match current catalog/research targets.
 - Changed targets force a new deployed human review rather than reusing old evidence.
