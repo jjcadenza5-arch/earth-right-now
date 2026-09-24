@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -18,6 +18,21 @@ export function operationsOperatorBrief({snapshot,delta,availability}={}){
     lines.push("## Source availability sample");
     lines.push(`- Sampled ${a.total??a.sampled??0}: ${a.reachable||0} reachable, ${a.missing||0} missing, ${a.blocked||0} blocked/inconclusive, ${a.temporaryError||0} temporary errors, ${a.timeout||0} timeouts, ${a.networkError||0} network errors.`);
     lines.push("- Availability is non-scoring evidence: a reachable page does not prove live playback.","");
+  }
+  if(recovery?.restorationCandidates?.length){
+    lines.push("## Inside-ERN restoration queue");
+    for(const item of recovery.restorationCandidates.slice(0,5))lines.push(`- ${item.title||item.id} — ${item.action||item.reason||"VERIFY"}${Number.isFinite(item.restorationScore)?` (score ${item.restorationScore})`:""}`);
+    lines.push("");
+  }
+  if(recovery?.blocked?.length){
+    lines.push("## Inside-ERN blockers");
+    for(const item of recovery.blocked.slice(0,5))lines.push(`- ${item.title||item.id} — ${item.reason||item.action||"BLOCKED"}`);
+    lines.push("");
+  }
+  if(research?.next?.length){
+    lines.push("## Second-provider research");
+    for(const item of research.next.slice(0,3))lines.push(`- ${item.provider||item.id} / ${item.id}: ${item.permissionReview||"permission review"} + ${item.playbackReview||"playback review"}`);
+    lines.push("");
   }
   lines.push("## Next operational focus");
   if((snapshot?.insideERN?.readyShortfall||0)>0)lines.push("- Restore strong inside-ERN windows with fresh HUMAN_PLAYBACK evidence.");

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Actionable daily operator brief
+- Added named restoration candidates, blocker sources and second-provider research items to operator-brief.md.
+- Kept the brief read-only and evidence-gated.
+
 ## 2026-09-24 — Availability-aware trend + daily operator brief
 - Added non-scoring source-availability evidence to trend snapshots.
 - Added a concise private operator-brief.md to each retained operations packet.

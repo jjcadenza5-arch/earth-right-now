@@ -1,3 +1,9 @@
+## 2026-09-24 — Actionable daily operator brief
+- Extended the private daily operator brief with the top inside-ERN restoration candidates, current blocker lane, and second-provider research candidates.
+- The brief now names specific sources/actions from the recovery and research queues rather than only stating broad goals.
+- It remains read-only and inherits the same evidence rules: source currentness, human playback, permission and provider review are never bypassed.
+- Added regression coverage for queue rendering and workflow input wiring.
+
 ## 2026-09-24 — Availability-aware trend + daily operator brief
 - Daily trend snapshots now carry the public-source availability sample as non-scoring observational evidence.
 - Availability changes can be compared day to day, but they never affect the operational trend score because provider-page reachability is not proof of live playback.
