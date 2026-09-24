@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Intentional-unpinned Atlas UI
+- Kept the beyond-pins area useful after static mapping reached completion.
+- Added selectable cards for multi-location collections and dynamic Earth views with explicit unpinned reasons.
+- Preserved a separate state for future true coordinate debt.
+
 ## 2026-09-24 — Atlas static mapping complete
 - Completed the final six single-location place/region references.
 - Every static source is now mapped with provenance; only intentional dynamic/multi-site sources remain unpinned.
