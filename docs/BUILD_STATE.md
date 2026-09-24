@@ -1,3 +1,11 @@
+## 2026-09-24 — Jungfrau current provider-offline state
+- Rechecked the official Jungfrau Region webcam collection. The official current page still lists all 10 webcams as Offline / no connection.
+- Refreshed ERN's Jungfrau verification timestamp and failure evidence without claiming any working live camera.
+- Kept truth EXTERNAL_LIVE, permission LINK_ONLY and health DEGRADED; no live/playback promotion occurred.
+- Added DEFERRED_PROVIDER_OFFLINE triage for current official collections that explicitly report their cameras offline.
+- Jungfrau no longer appears as an immediate mystery review; it becomes a low-urgency provider-recovery recheck.
+- Added regression coverage for the current Jungfrau state and new triage lane.
+
 ## 2026-09-24 — Catalog coordinate-basis blocker cleared
 - Resolved the 13 malformed-source release rejections identified by the retained Operations Check artifact.
 - All 13 records used VERIFIED_PLACE_REFERENCE, which duplicated ERN's already-established PLACE_REFERENCE coordinate meaning.

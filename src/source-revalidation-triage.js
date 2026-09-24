@@ -6,6 +6,7 @@ export function sourceRevalidationTriage(sources=[],{availability=null,continuit
     const s=entry.source,a=availabilityMap.get(String(s.id))||null,c=continuityMap.get(String(s.id))||null;
     let lane="UNSAMPLED_RECHECK",action="RUN_OR_REVIEW_SOURCE_CHECK",urgency=30;
     if(s.featuredHold===true){lane="CURATION_HOLD";action="KEEP_DEFERRED_UNTIL_HOLD_REMOVED";urgency=0}
+    else if(String(s.failureReason||"").startsWith("OFFICIAL_COLLECTION_WEBCAMS_OFFLINE_")){lane="DEFERRED_PROVIDER_OFFLINE";action="RECHECK_PROVIDER_COLLECTION_LATER";urgency=15}
     else if(String(s.failureReason||"").startsWith("VISITOR_PLAYBACK_REJECTED_")){lane="DEFERRED_PLAYBACK_REPROVE";action="REPROVE_ONLY_AFTER_PRIMARY_RECOVERY_OR_EXPLICIT_REVIEW";urgency=25}
     else if(s.permission==="UNKNOWN"){lane="PERMISSION_REVIEW";action="REVIEW_PERMISSION_BEFORE_PLAYBACK";urgency=100}
     else if(s.health==="DEGRADED"||s.health==="UNKNOWN"){lane="HUMAN_MEDIA_REVIEW";action="REVIEW_CURRENT_MEDIA_AND_SOURCE";urgency=90}
@@ -32,6 +33,7 @@ export function sourceRevalidationTriage(sources=[],{availability=null,continuit
       accessLimited:count("ACCESS_LIMITED"),
       retryLater:count("RETRY_LATER"),
       deferredPlaybackReprove:count("DEFERRED_PLAYBACK_REPROVE"),
+      deferredProviderOffline:count("DEFERRED_PROVIDER_OFFLINE"),
       curationHold:count("CURATION_HOLD"),
       unsampled:count("UNSAMPLED_RECHECK")
     },

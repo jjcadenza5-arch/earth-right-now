@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Jungfrau provider-offline refresh
+- Fresh official evidence still reports the Jungfrau webcam collection offline.
+- ERN keeps it degraded/link-only and defers it to provider-recovery recheck instead of immediate human review.
+
 ## 2026-09-24 — Catalog coordinate basis normalization
 - Normalized 13 VERIFIED_PLACE_REFERENCE records to the canonical PLACE_REFERENCE contract.
 - Catalog guard now has regression coverage requiring zero rejected source records.

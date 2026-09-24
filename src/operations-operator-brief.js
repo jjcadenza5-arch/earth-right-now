@@ -83,7 +83,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     const q=sourceRevalidationTriage.summary;
     lines.push("## Source revalidation triage");
     lines.push(`- Immediate: ${(sourceRevalidationTriage.immediate||[]).length}; permission ${q.permissionReview||0}; human-media ${q.humanMediaReview||0}; manual-source ${q.manualSourceReview||0}.`);
-    lines.push(`- Routine: editorial reachable-page ${q.editorialRecheck||0}; access-limited ${q.accessLimited||0}; retry-later ${q.retryLater||0}; deferred playback-reprove ${q.deferredPlaybackReprove||0}; curation hold ${q.curationHold||0}; unsampled ${q.unsampled||0}.`);
+    lines.push(`- Routine: editorial reachable-page ${q.editorialRecheck||0}; access-limited ${q.accessLimited||0}; retry-later ${q.retryLater||0}; deferred playback-reprove ${q.deferredPlaybackReprove||0}; provider-offline ${q.deferredProviderOffline||0}; curation hold ${q.curationHold||0}; unsampled ${q.unsampled||0}.`);
     for(const item of (sourceRevalidationTriage.immediate||[]).slice(0,5))lines.push(`- ${item.title||item.id} — ${item.lane}: ${item.action}`);
     lines.push("- Triage is read-only; PAGE_REACHABLE never proves live playback and network/access failures never change catalog health automatically.","");
   }
