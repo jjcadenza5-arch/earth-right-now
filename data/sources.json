@@ -943,7 +943,8 @@
     "lastSuccessfulCheck": "2026-09-24T08:05:00Z",
     "failureReason": null,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://couchtourist.com/cams/taiwan/kaohsiung/cijin-beach/"
+    "coordinateSourceUrl": "https://couchtourist.com/cams/taiwan/kaohsiung/cijin-beach/",
+    "playbackVerifiedAt": "2026-09-24T08:05:00Z"
   },
   {
     "id": "cancun-live-aqua-beach",
@@ -1964,7 +1965,8 @@
     "lat": 60.37674,
     "lon": 5.39343,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://couchtourist.com/cams/norway/ulriken-mountain-view-bergen-norway/"
+    "coordinateSourceUrl": "https://couchtourist.com/cams/norway/ulriken-mountain-view-bergen-norway/",
+    "playbackVerifiedAt": "2026-09-24T08:05:00Z"
   },
   {
     "id": "waikiki-south-shore",
@@ -2132,7 +2134,8 @@
     "lon": 10.083333,
     "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q2786332",
-    "coordinateNote": "Skeikampen mountain/destination reference point; not claimed as exact webcam position."
+    "coordinateNote": "Skeikampen mountain/destination reference point; not claimed as exact webcam position.",
+    "playbackVerifiedAt": "2026-09-24T08:05:00Z"
   },
   {
     "id": "coogee-randwick-beaches",

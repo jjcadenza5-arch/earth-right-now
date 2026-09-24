@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Fresh human-playback gate for embedded sources
+- Added playbackVerifiedAt evidence markers for the three freshly confirmed deployed embeds.
+- Watch Earth and public LIVE HERE claims now require fresh human playback for EMBED sources.
+- Provider-page freshness alone can no longer restore an embed to featured live status.
+
 ## 2026-09-24 — Catalog-owned featured holds
 - Moved feature holds from hard-coded browser IDs into source catalog metadata.
 - Watch Earth, Hero selection and inside recovery now honor the same hold state.

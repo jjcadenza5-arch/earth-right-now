@@ -32,7 +32,8 @@ let lang=readSavedText("ern-language","en");if(!translations[lang])lang="en";
 const t=k=>translations[lang]?.[k]||translations.en[k]||k;
 function cleanUrl(v){try{const u=new URL(v,location.href);return /^https?:$/.test(u.protocol)?u.href:null}catch{return null}}
 function truthLabel(s){if(s.truth==="LIVE_VIDEO")return"LIVE VIDEO";if(s.truth==="LIVE_IMAGE")return"LIVE IMAGE";if(s.truth==="EXTERNAL_LIVE")return"EXTERNAL LIVE";if(s.truth==="PARTNER")return"PARTNER";return"PREVIEW"}
-function currentTruthClaim(s){return!!(s&&s.health==="HEALTHY"&&verificationAgeHours(s)<=verificationWindowHours(s))}
+function embedPlaybackCurrent(s){if(!s||s.playback!=="EMBED")return true;const t=Date.parse(s.playbackVerifiedAt||"");return Number.isFinite(t)&&Math.max(0,(Date.now()-t)/36e5)<=24}
+function currentTruthClaim(s){return!!(s&&s.health==="HEALTHY"&&verificationAgeHours(s)<=verificationWindowHours(s)&&embedPlaybackCurrent(s))}
 function truthTone(s){if(!currentTruthClaim(s))return"preview";if(isInside(s)&&s.truth==="LIVE_VIDEO")return"live-here";if(isInside(s)&&s.truth==="LIVE_IMAGE")return"current-image";if(["LIVE_VIDEO","LIVE_IMAGE","EXTERNAL_LIVE"].includes(s.truth))return"external-live";if(s.truth==="PARTNER")return"partner";return"preview"}
 function publicTruth(s){if(!s)return"PREVIEW";if(s.health==="DEGRADED")return"LIMITED SOURCE";if(s.health==="OFFLINE")return"TEMPORARILY UNAVAILABLE";if(s.health!=="HEALTHY")return"SOURCE CHECK";if(!currentTruthClaim(s))return"RECHECK DUE";if(s.truth==="LIVE_VIDEO")return isInside(s)?"LIVE HERE":"LIVE VIDEO ↗";if(s.truth==="LIVE_IMAGE")return isInside(s)?"CURRENT IMAGE":"CURRENT IMAGE ↗";if(s.truth==="EXTERNAL_LIVE")return"LIVE ↗";if(s.truth==="PARTNER")return"PARTNER";return"PREVIEW"}
 function allowAmbientLive(){return !(navigator.connection?.saveData||globalThis.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches)}

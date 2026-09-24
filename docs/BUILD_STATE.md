@@ -1,3 +1,10 @@
+## 2026-09-24 — Fresh human-playback gate for embedded sources
+- Added a compact `playbackVerifiedAt` evidence marker for EMBED sources and seeded it only for the three deployed-origin views actually confirmed today: Bergen/Ulriken, Skeikampen and Cijin Beach.
+- Backend Watch Earth and the public browser now require that marker to be within 24 hours before an embedded source can make a fresh LIVE HERE claim.
+- Provider-page/source verification remains separate. Refreshing a CouchTourist page can prove the source is current, but it no longer promotes the embed to LIVE HERE without human playback evidence.
+- Non-embedded current sources keep their existing source-type verification rules.
+- Added shared/helper and browser regression coverage, including stale playback evidence rejection.
+
 ## 2026-09-24 — Catalog-owned featured holds
 - Moved the four existing stable-beta feature holds out of a hard-coded browser ID list and into source catalog fields (`featuredHold` / `featuredHoldReason`).
 - The public app, backend Watch Earth selection and inside-ERN recovery queue now share the same curation state.
