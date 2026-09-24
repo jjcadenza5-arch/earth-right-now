@@ -1,3 +1,11 @@
+## 2026-09-24 — Local Natural Earth Atlas vector
+- Replaced the Living Atlas remote Wikimedia raster dependency with a local simplified equirectangular vector generated from Natural Earth public-domain geography.
+- The local asset uses a 1200×600 / 2:1 projection matching ERN's existing longitude/latitude pin math, so no pin positions or coordinate semantics changed.
+- Reduced the pale overlay so coastlines/continents remain visible while preserving the existing light ERN visual language.
+- Updated map attribution to Natural Earth public-domain geography · ERN simplified vector.
+- Whole-product release preflight now requires the local vector rather than the retired remote filename.
+- Added regression coverage preventing a return to remote map dependencies and protecting projection/asset wiring.
+
 ## 2026-09-24 — Safe review-evidence proposal layer
 - Added a non-mutating proposal layer that combines validated operator human-review evidence with independent source-availability evidence and optional second-provider technical preflight.
 - A restored source reaches READY_FOR_PROVIDER_OBSERVATION_PROPOSAL only when HUMAN_PLAYBACK is confirmed and a separate PAGE_REACHABLE HTTP observation is current within the evidence-separation window.
