@@ -41,7 +41,8 @@
     "inside:research": "node scripts/embed-research-status.mjs",
     "watch-earth:balance": "node scripts/watch-earth-product-balance-status.mjs",
     "operations:trend-snapshot": "node scripts/operations-trend-snapshot.mjs",
-    "operations:trend-compare": "node scripts/operations-trend-compare.mjs"
+    "operations:trend-compare": "node scripts/operations-trend-compare.mjs",
+    "sources:availability": "node scripts/source-availability-status.mjs"
   },
   "engines": {
     "node": ">=20"

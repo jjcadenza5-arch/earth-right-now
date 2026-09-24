@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Automated public-source availability observer
+- Added a safe prioritized HTTP availability probe to the daily read-only operations audit.
+- Availability evidence is explicitly non-live proof and cannot mutate catalog truth.
+- Added private-network rejection, host caps, timeouts and regression coverage.
+
 ## 2026-09-24 — Daily ERN operations trend layer
 - Added compact operations snapshots and previous-vs-current trend comparison.
 - Daily audit now emits trend-current.json and trend-delta.json and carries the latest snapshot forward through Actions cache.

@@ -28,6 +28,7 @@ jobs:
         run: |
           mkdir -p ern-ops ern-history
           npm --silent run sources:horizon | tee ern-ops/verification-horizon.json
+          npm --silent run sources:availability | tee ern-ops/source-availability.json
           npm --silent run watch-earth:now | tee ern-ops/watch-earth-now.json
           npm --silent run watch-earth:balance | tee ern-ops/watch-earth-balance.json
           npm --silent run provider:worklist | tee ern-ops/provider-worklist.json
