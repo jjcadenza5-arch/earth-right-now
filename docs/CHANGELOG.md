@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Embed source refresh tranche L
+- Revalidated four more CouchTourist source pages and existing embed snippets.
+- Kept deployed playback separately unverified so none returns to LIVE HERE without fresh human proof.
+
 ## 2026-09-24 — Embed source refresh tranche K
 - Revalidated six high-value CouchTourist source pages and existing embed snippets.
 - Refreshed source currentness while deliberately leaving deployed playback unverified.

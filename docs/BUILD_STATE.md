@@ -1,3 +1,10 @@
+## 2026-09-24 — Embed source refresh tranche L
+- Revalidated four additional CouchTourist provider pages: Roque de los Muchachos, Taitung Jinzun, Lajes do Pico and Mpala Watering Hole.
+- Each page still identifies its view as live and exposes the same ERN-reviewed embed iframe already in the catalog.
+- Source currentness was refreshed while playbackVerifiedAt remains intentionally absent.
+- The fresh-human-playback gate therefore keeps all four out of LIVE HERE / Watch Earth until deployed playback is separately confirmed.
+- Added regression coverage for the separation.
+
 ## 2026-09-24 — Embed source refresh tranche K
 - Revalidated six high-value CouchTourist source pages: Ponte di Legno, Sasagawa Nagare, Metung, Cancún, Chihshang Paradise Road and St. John's Harbour.
 - Each current provider page still describes the view as live and exposes the same ERN-reviewed embed iframe already in the catalog.
