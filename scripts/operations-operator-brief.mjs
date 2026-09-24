@@ -29,5 +29,6 @@ const operatorReviewQueue=await optional(args[14]);
 const researchReviewQueue=await optional(args[15]);
 const sourceRevalidationTriage=await optional(args[16]);
 const commercialResearch=await optional(args[17]);
+const affiliatePlatformResearch=await optional(args[18]);
 
-console.log(operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch}));
+console.log(operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch}));

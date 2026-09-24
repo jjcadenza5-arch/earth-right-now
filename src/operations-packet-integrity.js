@@ -21,6 +21,7 @@ const requiredJson=[
  "commercial-verification-horizon.json",
  "commercial-onboarding-plan.json",
  "commercial-research.json",
+ "affiliate-platform-research.json",
  "submission-transport-readiness.json",
  "trend-current.json",
  "trend-delta.json",
@@ -149,6 +150,17 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(commercialResearch?.safety?.automaticPublicVisibilityAllowed!==false)issues.push({file:"commercial-research.json",code:"COMMERCIAL_RESEARCH_VISIBILITY_BOUNDARY_VIOLATION"});
     if(commercialResearch?.safety?.paidRankingAllowed!==false)issues.push({file:"commercial-research.json",code:"COMMERCIAL_RESEARCH_RANKING_BOUNDARY_VIOLATION"});
     if(commercialResearch?.invalid)issues.push({file:"commercial-research.json",code:"INVALID_COMMERCIAL_RESEARCH_ROWS",count:commercialResearch.invalid});
+  }
+
+  const affiliateResearch=files["affiliate-platform-research.json"];
+  if(affiliateResearch){
+    if(affiliateResearch?.publicActivationAllowed!==false)issues.push({file:"affiliate-platform-research.json",code:"AFFILIATE_RESEARCH_PUBLIC_ACTIVATION_VIOLATION"});
+    if(affiliateResearch?.safety?.automaticApplicationAllowed!==false)issues.push({file:"affiliate-platform-research.json",code:"AFFILIATE_RESEARCH_AUTO_APPLICATION_VIOLATION"});
+    if(affiliateResearch?.safety?.automaticRelationshipClaimAllowed!==false)issues.push({file:"affiliate-platform-research.json",code:"AFFILIATE_RESEARCH_RELATIONSHIP_VIOLATION"});
+    if(affiliateResearch?.safety?.credentialsStored!==false)issues.push({file:"affiliate-platform-research.json",code:"AFFILIATE_RESEARCH_CREDENTIAL_VIOLATION"});
+    if(affiliateResearch?.safety?.trackedLinksAllowed!==false)issues.push({file:"affiliate-platform-research.json",code:"AFFILIATE_RESEARCH_TRACKING_VIOLATION"});
+    if(affiliateResearch?.safety?.paidRankingAllowed!==false)issues.push({file:"affiliate-platform-research.json",code:"AFFILIATE_RESEARCH_RANKING_VIOLATION"});
+    if(affiliateResearch?.invalid)issues.push({file:"affiliate-platform-research.json",code:"INVALID_AFFILIATE_RESEARCH_ROWS",count:affiliateResearch.invalid});
   }
 
   const transport=files["submission-transport-readiness.json"];

@@ -1,3 +1,13 @@
+## 2026-09-24 — Private affiliate-platform research registry
+- Added current research-only program records for Booking.com, Agoda, Viator and Skyscanner, covering stays, activities/tickets and transport.
+- Booking.com official affiliate materials confirm application through regional affiliate networks and commission on qualified bookings.
+- Agoda official affiliate materials describe a tiered completed-booking commission model; rates are recorded only as provider-stated evidence, never as an ERN forecast.
+- Viator official partner materials currently state 8% on completed experience bookings attributed within a 30-day window.
+- Skyscanner's current Partners site confirms an affiliate program with commission on referred traffic; no fixed commission rate is assumed.
+- Every platform remains application-required, relationship inactive, credentials unconfigured, tracked links disabled, public activation off and paid ranking prohibited.
+- Added operations status, daily packet retention, brief visibility and fail-closed packet-integrity checks.
+- No application was submitted and no affiliate relationship is claimed.
+
 ## 2026-09-24 — Public Guide multilingual reply layer
 - Added a lightweight public Guide reply-copy layer for all seven ERN interface languages: English, Thai, German, French, Spanish, Japanese and Chinese.
 - The public Guide already understood multilingual intent terms, but several response sentences were hard-coded in English; those replies now follow the selected interface language.

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Affiliate-platform research staging
+- Staged Booking.com, Agoda, Viator and Skyscanner as private research-only affiliate programs.
+- Added operations and integrity guards preventing accidental relationship/credential/link activation.
+
 ## 2026-09-24 — Multilingual public Guide replies
 - Public Guide answers now follow ERN's selected language across all seven supported interface languages.
 

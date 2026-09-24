@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -112,6 +112,12 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     for(const item of (commercialResearch.items||[]).filter(x=>x.valid).slice(0,5))lines.push(`- ${item.name} · ${item.placeId} — ${item.intent}; affiliate terms NOT REVIEWED.`);
     lines.push("- These are existence-verified private research candidates only; no affiliate relationship, sponsorship or public offer is implied.","");
   }
+  if(affiliatePlatformResearch){
+    lines.push("## Affiliate-platform research");
+    lines.push(`- ${affiliatePlatformResearch.valid||0}/${affiliatePlatformResearch.total||0} programs have current research evidence; no ERN relationship or tracked-link permission is active.`);
+    for(const item of (affiliatePlatformResearch.items||[]).filter(x=>x.valid).slice(0,5))lines.push(`- ${item.name} — ${item.intents.join(", ")}; ${item.programStatus}.`);
+    lines.push("- Program terms are research evidence only; applications, credentials and public links remain off.","");
+  }
   if(submissionTransport){
     lines.push("## Submission transport");
     lines.push(`- Status: ${submissionTransport.status||"UNKNOWN"}; delivery ${submissionTransport.active?"ready":"off"}.`);
@@ -135,6 +141,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   else if((a?.missing||0)>0)lines.push("- Review new PAGE_MISSING observations manually; wait for repeat evidence before any catalog-health decision.");
   if((commercialVerificationHorizon?.summary?.attention||0)>0)lines.push("- Review commercial verification warnings before partner or offer evidence becomes stale; never auto-renew.");
   if(commercialInventory?.stage==="EMPTY_STAGING")lines.push("- Keep the public experience non-commercial until real verified partner inventory exists.");
+  if(affiliatePlatformResearch?.valid)lines.push("- Keep affiliate platforms research-only until ERN deliberately chooses which programs to apply to.");
   if(commercialResearch?.valid)lines.push("- Review staged real travel options for partner/affiliate terms before any public activation.");
   else if(commercialOnboarding?.items?.length)lines.push("- Research real travel options for the highest content-ready destinations without contacting or listing invented partners.");
   if(submissionTransport&&!submissionTransport.active)lines.push("- Keep camera/place submission delivery closed until a real HTTPS review endpoint, privacy notice and retention window are configured.");

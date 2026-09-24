@@ -1,0 +1,81 @@
+[
+  {
+    "id": "booking-com",
+    "name": "Booking.com Affiliate Partner Program",
+    "intents": [
+      "stay",
+      "transport",
+      "activities"
+    ],
+    "programUrl": "https://www.booking.com/affiliate-program/v2/index.html",
+    "termsUrl": "https://www.booking.com/affiliate-program/v2/index.html",
+    "programStatus": "AVAILABLE_APPLICATION_REQUIRED",
+    "applicationRequired": true,
+    "networkOrAccount": "Awin/CJ depending on region",
+    "commissionEvidence": "Official affiliate page confirms commission on qualified bookings; no fixed ERN commission assumption stored.",
+    "termsReviewedAt": "2026-09-24T16:18:00Z",
+    "relationshipActive": false,
+    "credentialsConfigured": false,
+    "publicActivationAllowed": false,
+    "trackedLinksAllowed": false,
+    "paidRankingAllowed": false
+  },
+  {
+    "id": "agoda",
+    "name": "Agoda Affiliate Program",
+    "intents": [
+      "stay"
+    ],
+    "programUrl": "https://partners.agoda.com/",
+    "termsUrl": "https://partners.agoda.com/Content/pdf/Agoda_OnlineAffiliateAgreement.pdf",
+    "programStatus": "AVAILABLE_APPLICATION_REQUIRED",
+    "applicationRequired": true,
+    "networkOrAccount": "Agoda Partner Center",
+    "commissionEvidence": "Official Agoda affiliate materials currently describe tiered commission based on completed stays/bookings; rates can change and are not treated as a forecast.",
+    "termsReviewedAt": "2026-09-24T16:18:00Z",
+    "relationshipActive": false,
+    "credentialsConfigured": false,
+    "publicActivationAllowed": false,
+    "trackedLinksAllowed": false,
+    "paidRankingAllowed": false
+  },
+  {
+    "id": "viator",
+    "name": "Viator Partner Program",
+    "intents": [
+      "activities",
+      "tickets"
+    ],
+    "programUrl": "https://partnerresources.viator.com/",
+    "termsUrl": "https://partnerresources.viator.com/travel-content/links/",
+    "programStatus": "AVAILABLE_SIGNUP_REQUIRED",
+    "applicationRequired": true,
+    "networkOrAccount": "Viator Partner Program",
+    "commissionEvidence": "Current official Viator partner materials state 8% commission on completed experience bookings attributed within a 30-day cookie window.",
+    "termsReviewedAt": "2026-09-24T16:18:00Z",
+    "relationshipActive": false,
+    "credentialsConfigured": false,
+    "publicActivationAllowed": false,
+    "trackedLinksAllowed": false,
+    "paidRankingAllowed": false
+  },
+  {
+    "id": "skyscanner",
+    "name": "Skyscanner Affiliate Program",
+    "intents": [
+      "transport"
+    ],
+    "programUrl": "https://www.partners.skyscanner.net/",
+    "termsUrl": "https://www.partners.skyscanner.net/",
+    "programStatus": "AVAILABLE_APPLICATION_REQUIRED",
+    "applicationRequired": true,
+    "networkOrAccount": "Skyscanner Partners",
+    "commissionEvidence": "Current official Skyscanner Partners site confirms an affiliate program with competitive commission on referred traffic; no fixed rate is assumed.",
+    "termsReviewedAt": "2026-09-24T16:18:00Z",
+    "relationshipActive": false,
+    "credentialsConfigured": false,
+    "publicActivationAllowed": false,
+    "trackedLinksAllowed": false,
+    "paidRankingAllowed": false
+  }
+]

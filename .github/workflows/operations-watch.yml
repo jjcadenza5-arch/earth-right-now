@@ -12,6 +12,7 @@ on:
       - "data/affiliate-partners.json"
       - "data/travel-offers.json"
       - "data/commercial-research-candidates.json"
+      - "data/affiliate-platform-research.json"
       - "data/submission-transport.json"
       - "src/**"
       - "scripts/**"
@@ -75,6 +76,7 @@ jobs:
           npm --silent run business:verification-horizon | tee ern-ops/commercial-verification-horizon.json
           npm --silent run business:onboarding-plan | tee ern-ops/commercial-onboarding-plan.json
           npm --silent run business:research-status | tee ern-ops/commercial-research.json
+          npm --silent run business:affiliate-research | tee ern-ops/affiliate-platform-research.json
           npm --silent run business:submission-transport | tee ern-ops/submission-transport-readiness.json
           npm --silent run operations:trend-snapshot -- ern-ops/source-availability.json | tee ern-ops/trend-current.json
           npm --silent run operations:status | tee ern-ops/operations-status.json
@@ -95,7 +97,7 @@ jobs:
         run: |
           set -euo pipefail
           if [ -f ern-ops/trend-current.json ]; then
-            npm --silent run operations:brief -- ern-ops/trend-current.json ern-ops/trend-delta.json ern-ops/source-availability.json ern-ops/inside-recovery.json ern-ops/embed-research.json ern-ops/inside-playback-horizon.json ern-ops/embed-research-preflight.json ern-ops/source-availability-continuity.json ern-ops/commercial-inventory.json ern-ops/commercial-onboarding-plan.json ern-ops/submission-transport-readiness.json ern-ops/commercial-verification-horizon.json ern-ops/playback-evidence-consistency.json ern-ops/provider-family-research.json ern-ops/operator-review-queue.json ern-ops/research-review-queue.json ern-ops/source-revalidation-triage.json ern-ops/commercial-research.json | tee ern-ops/operator-brief.md
+            npm --silent run operations:brief -- ern-ops/trend-current.json ern-ops/trend-delta.json ern-ops/source-availability.json ern-ops/inside-recovery.json ern-ops/embed-research.json ern-ops/inside-playback-horizon.json ern-ops/embed-research-preflight.json ern-ops/source-availability-continuity.json ern-ops/commercial-inventory.json ern-ops/commercial-onboarding-plan.json ern-ops/submission-transport-readiness.json ern-ops/commercial-verification-horizon.json ern-ops/playback-evidence-consistency.json ern-ops/provider-family-research.json ern-ops/operator-review-queue.json ern-ops/research-review-queue.json ern-ops/source-revalidation-triage.json ern-ops/commercial-research.json ern-ops/affiliate-platform-research.json | tee ern-ops/operator-brief.md
           fi
       - name: Validate operations packet
         if: always()
