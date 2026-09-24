@@ -1,3 +1,11 @@
+## 2026-09-24 — Adaptive Watch Earth set size
+- Watch Earth now treats 20 as a ceiling rather than a quota.
+- Shared balance policy: when fewer than five fresh/current inside-ERN windows are available, the set uses at most 12 external windows; current inside windows can extend the total naturally, so 3 inside allows up to 15 and 5+ inside can grow back toward 20.
+- Smaller truthful pools remain smaller and are never padded.
+- The same adaptive rule now drives backend Watch Earth construction, product-balance diagnostics and the public browser selection path.
+- Existing inside-first, quality, moment, currentness, featured-hold and playback-evidence gates remain intact.
+- Added regression coverage for external-only, three-inside, five-inside, explicit-limit and public-browser behavior.
+
 ## 2026-09-24 — Second-provider technical preflight
 - Added a research-only technical preflight for YouTube embed candidates using public YouTube oEmbed metadata plus direct candidate embed-page reachability.
 - A candidate can advance only to TECHNICALLY_READY_FOR_DEPLOYED_TEST; the preflight explicitly keeps permissionConfirmed=false, humanPlaybackConfirmed=false and promotionAllowed=false.
