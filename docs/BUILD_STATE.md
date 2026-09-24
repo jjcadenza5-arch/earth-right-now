@@ -1,3 +1,11 @@
+## 2026-09-24 — Truthful inside-ERN release metrics
+- Separated structural playback capability from current visitor truth in release/product diagnostics.
+- Lean preflight now reports configuredInsideERN, freshHumanProvenEmbeds, currentImageRefreshes and currentInsideERN instead of the misleading playableInsideERN total.
+- The structural beta guard still requires at least ten configured inside-ERN capabilities; ephemeral 24-hour human proof is reported but is not used as a deploy blocker.
+- Whole-product status replaced its generic 21-day fresh count with source-type currentness and the same configured/proven/current-image breakdown.
+- Catalog health summary now distinguishes configuredInsideERN, provenEmbeddedInsideERN, currentImageInsideERN and currentInsideERN.
+- Added regression and functional coverage preventing the old undifferentiated metrics from returning.
+
 ## 2026-09-24 — Shared Hero/Viewer media-frame factory
 - Repaired the Hero live-preview deployment failure without weakening the performance guard.
 - Hero preview and full Viewer now share one controlled runtime iframe factory, restoring ERN's single iframe-construction pathway.
