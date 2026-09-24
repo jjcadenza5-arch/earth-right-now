@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Availability-aware trend + daily operator brief
+- Added non-scoring source-availability evidence to trend snapshots.
+- Added a concise private operator-brief.md to each retained operations packet.
+- Briefs summarize change and next operational focus without mutating ERN.
+
 ## 2026-09-24 — Automated public-source availability observer
 - Added a safe prioritized HTTP availability probe to the daily read-only operations audit.
 - Availability evidence is explicitly non-live proof and cannot mutate catalog truth.
