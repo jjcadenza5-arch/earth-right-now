@@ -4,5 +4,6 @@ Disallow: /review/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /review/
 
 Sitemap: https://earthrightnow.app/sitemap.xml
