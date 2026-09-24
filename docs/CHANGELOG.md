@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Illustrative visual truth cue
+- Marked ERN-generated decorative visuals as illustrative in Hero, Watch and compact destination cards.
+- Kept source truth labels independent: the source can still be live/current while the shown artwork is decorative.
+- Broken remote thumbnails inherit the same illustrative fallback state.
+
 ## 2026-09-24 — Sticky-header section landing repair
 - Added responsive scroll-margin offsets for all primary in-page navigation targets.
 - Prevented World Map/Explore/Watch headings from landing underneath the sticky header.
