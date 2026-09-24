@@ -1,3 +1,10 @@
+## 2026-09-24 — Degraded source-page refresh tranche M
+- Revalidated the current CouchTourist provider pages for Waikīkī Beach and Cold Lake Marina; both pages still expose the same reviewed embed iframes.
+- Updated source-page currentness evidence only.
+- Preserved DEGRADED health, VISITOR_PLAYBACK_REJECTED_2026-09-20 failure reasons, and absent playbackVerifiedAt markers.
+- Neither source can return to Watch Earth/LIVE HERE until fresh deployed HUMAN_PLAYBACK resolves the prior visitor-playback rejection.
+- Added regression coverage proving page freshness cannot clear playback failures.
+
 ## 2026-09-24 — Inside-ERN playback evidence horizon
 - Added a 24-hour horizon for embedded HUMAN_PLAYBACK evidence so ERN can see which LIVE HERE proofs are current, due within 12h/6h, expired, missing or intentionally held.
 - The horizon is retained in the daily operations packet as inside-playback-horizon.json and is summarized in the private operator brief.

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Degraded source-page refresh tranche M
+- Revalidated Waikīkī and Cold Lake provider pages without changing degraded playback health.
+- Source freshness can no longer be mistaken for playback recovery.
+
 ## 2026-09-24 — Inside-ERN playback evidence horizon
 - Added current/due/expired/missing/held states for embedded playback proof.
 - Added the horizon to the daily operations packet and operator brief.
