@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";import {adaptiveWatchEarthLimit} from "../src/watch-earth-balance-policy.js";import {buildWatchEarth} from "../src/watch-earth.js";
+assert.equal(adaptiveWatchEarthLimit({insideCount:0,externalCount:30,target:20}),12);
+assert.equal(adaptiveWatchEarthLimit({insideCount:3,externalCount:30,target:20}),15);
+assert.equal(adaptiveWatchEarthLimit({insideCount:5,externalCount:30,target:20}),20);
+assert.equal(adaptiveWatchEarthLimit({insideCount:2,externalCount:4,target:20}),6);
+const now=new Date("2026-09-24T11:00:00Z"),base={health:"HEALTHY",checkedAt:now.toISOString(),lastSuccessfulCheck:now.toISOString(),quality:90,moment:90,freshness:90,categories:["Cities & Streets"],lat:0,lon:0};
+const ext=Array.from({length:30},(_,i)=>({...base,id:"e"+i,placeId:"e"+i,country:"E"+i,truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",playback:"EXTERNAL",sourceUrl:"https://example.com/e"+i}));
+const inside=n=>Array.from({length:n},(_,i)=>({...base,id:"i"+i,placeId:"i"+i,country:"I"+i,truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",playback:"EMBED",sourceUrl:"https://example.com/i"+i,embedUrl:"https://couchtourist.com/embed/cam/"+(9200+i)+"/",playbackVerifiedAt:"2026-09-24T10:45:00Z"}));
+assert.equal(buildWatchEarth(ext,{now}).length,12);
+assert.equal(buildWatchEarth([...inside(3),...ext],{now}).length,15);
+assert.equal(buildWatchEarth([...inside(5),...ext],{now}).length,20);
+assert.equal(buildWatchEarth([...inside(3),...ext],{now,limit:6}).length,6);
+console.log("ERN adaptive Watch Earth size policy passed");
