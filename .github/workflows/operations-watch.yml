@@ -24,11 +24,24 @@ jobs:
           key: ern-ops-trend-${{ github.run_id }}
           restore-keys: |
             ern-ops-trend-
+      - name: Restore previous availability sample
+        uses: actions/cache/restore@v4
+        with:
+          path: ern-history/availability-previous.json
+          key: ern-availability-${{ github.run_id }}
+          restore-keys: |
+            ern-availability-
       - name: Build daily operations packet
         run: |
           mkdir -p ern-ops ern-history
           npm --silent run sources:horizon | tee ern-ops/verification-horizon.json
           npm --silent run sources:availability | tee ern-ops/source-availability.json
+          if [ -f ern-history/availability-previous.json ]; then
+            npm --silent run sources:availability-continuity -- ern-history/availability-previous.json ern-ops/source-availability.json | tee ern-ops/source-availability-continuity.json
+          else
+            npm --silent run sources:availability-continuity -- - ern-ops/source-availability.json | tee ern-ops/source-availability-continuity.json
+          fi
+          cp ern-ops/source-availability.json ern-history/availability-previous.json
           npm --silent run watch-earth:now | tee ern-ops/watch-earth-now.json
           npm --silent run watch-earth:balance | tee ern-ops/watch-earth-balance.json
           npm --silent run provider:worklist | tee ern-ops/provider-worklist.json
@@ -54,7 +67,7 @@ jobs:
         if: always()
         run: |
           if [ -f ern-ops/trend-current.json ]; then
-            npm --silent run operations:brief -- ern-ops/trend-current.json ern-ops/trend-delta.json ern-ops/source-availability.json ern-ops/inside-recovery.json ern-ops/embed-research.json ern-ops/inside-playback-horizon.json ern-ops/embed-research-preflight.json | tee ern-ops/operator-brief.md
+            npm --silent run operations:brief -- ern-ops/trend-current.json ern-ops/trend-delta.json ern-ops/source-availability.json ern-ops/inside-recovery.json ern-ops/embed-research.json ern-ops/inside-playback-horizon.json ern-ops/embed-research-preflight.json ern-ops/source-availability-continuity.json | tee ern-ops/operator-brief.md
           fi
       - name: Save latest trend snapshot
         if: always() && hashFiles('ern-history/previous.json') != ''
@@ -62,6 +75,12 @@ jobs:
         with:
           path: ern-history/previous.json
           key: ern-ops-trend-${{ github.run_id }}
+      - name: Save latest availability sample
+        if: always() && hashFiles('ern-history/availability-previous.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: ern-history/availability-previous.json
+          key: ern-availability-${{ github.run_id }}
       - name: Retain operations packet
         if: always()
         uses: actions/upload-artifact@v4
