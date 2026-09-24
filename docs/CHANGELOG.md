@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Submission transport readiness contract
+- Added a disabled real-endpoint/privacy/retention readiness contract for camera/place submissions.
+- Wired readiness into business status, daily operations and packet-integrity safety checks.
+- Public submission delivery remains closed until genuine transport infrastructure exists.
+
 ## 2026-09-24 — Private commercial onboarding planner
 - Added a diversified content-readiness queue for destinations that lack verified travel offers.
 - The planner is private/editorial only and cannot predict demand/revenue or influence public ranking.
