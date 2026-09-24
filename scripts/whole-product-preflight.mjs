@@ -26,6 +26,7 @@ must(css.includes("Landscape action dock: always reachable"),"landscape action c
 must(css.includes("ordinary action row; iPhone Safari uses provider/player fullscreen"),"final fullscreen policy missing");
 must(app.includes('stage?.querySelector("iframe,img,video")')&&css.includes("Fullscreen the media itself"),"desktop fullscreen must target the actual media element");
 must(app.includes('$("#heroWatch").onclick=()=>{const target='),"Watch Earth Now no longer opens the active Earth window");
+must(app.includes("function heroLivePreviewAllowed(")&&app.includes('s.playback==="EMBED"')&&app.includes("currentTruthClaim(s)")&&app.includes("saveData===true"),"Hero live preview lost its proven-embed/data-saver safety gate");
 must(css.includes(".local-earth-section"),"Local Earth styling missing");
 must(css.includes(".participate-section"),"places/cameras/moments participation surface missing");
 must(/(payment or partner status never buys editorial ranking|no ranking for sale)/i.test(places),"commercial no-paid-ranking guardrail missing");
