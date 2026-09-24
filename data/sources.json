@@ -434,14 +434,19 @@
     "officialUrl": "https://www.queenstownairport.co.nz/",
     "embedUrl": null,
     "thumbnailUrl": null,
-    "checkedAt": "2026-09-21T21:32:00+07:00",
-    "lastSuccessfulCheck": "2026-09-21T21:32:00+07:00",
+    "checkedAt": "2026-09-24T13:47:00+07:00",
+    "lastSuccessfulCheck": "2026-09-24T13:47:00+07:00",
     "failureReason": null,
     "quality": 83,
     "freshness": 92,
     "moment": 80,
     "story": "A beautiful arrival-window into Queenstown that also helps travelers see current visibility around the airport and mountains.",
-    "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented."
+    "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented.",
+    "lat": -45.0220678,
+    "lon": 168.7372513,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.queenstownairport.co.nz/contact-us/",
+    "freshnessEvidence": "The current official Queenstown Airport Webcams & Weather page describes close-to-live views of the airport and surrounding area and lists multiple active airport-facing webcam views."
   },
   {
     "id": "kitzbuhel",
@@ -763,10 +768,14 @@
     ],
     "story": "Watch current marine-animal activity through Georgia Aquarium's official webcam network before planning a visit.",
     "rightsBasis": "Current official Georgia Aquarium site exposes multiple animal webcams/current live views; retained LINK_ONLY because no embed permission is inferred.",
-    "checkedAt": "2026-09-23T09:36:00+07:00",
-    "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
+    "checkedAt": "2026-09-24T13:47:00+07:00",
+    "lastSuccessfulCheck": "2026-09-24T13:47:00+07:00",
     "failureReason": null,
-    "freshnessEvidence": "Current official Georgia Aquarium Ocean Voyager page explicitly labels the view LIVE CAM and describes its aquarium webcam galleries as real-time livestreams."
+    "freshnessEvidence": "The current Georgia Aquarium site continues to expose its Live Cams section and identifies the aquarium's current physical location at 225 Baker Street NW, Atlanta.",
+    "lat": 33.7638778,
+    "lon": -84.3979549,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.georgiaaquarium.org/booking/directions-parking/"
   },
   {
     "id": "whistler-blackcomb",
