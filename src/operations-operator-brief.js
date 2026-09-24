@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -18,6 +18,13 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push("## Source availability sample");
     lines.push(`- Sampled ${a.total??a.sampled??0}: ${a.reachable||0} reachable, ${a.missing||0} missing, ${a.blocked||0} blocked/inconclusive, ${a.temporaryError||0} temporary errors, ${a.timeout||0} timeouts, ${a.networkError||0} network errors.`);
     lines.push("- Availability is non-scoring evidence: a reachable page does not prove live playback.","");
+  }
+  if(availabilityContinuity?.summary){
+    const q=availabilityContinuity.summary;
+    lines.push("## Availability continuity");
+    lines.push(`- ${q.persistentMissing||0} persistent missing; ${q.repeatedTransient||0} repeated transient; ${q.repeatedAccessLimitation||0} repeated access-limitation; ${q.newMissing||0} new missing; ${q.recovered||0} recovered.`);
+    for(const item of (availabilityContinuity.incidents||[]).slice(0,5))lines.push(`- ${item.id}: ${item.state} — ${item.action}`);
+    lines.push("- Continuity incidents are manual-review evidence only; they do not change catalog health automatically.","");
   }
   if(playbackHorizon?.summary){
     const h=playbackHorizon.summary;
@@ -52,7 +59,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
   if((snapshot?.maintenance?.sourceRevalidation||0)>0)lines.push("- Work the highest-priority source revalidation items.");
   if((snapshot?.release?.blockers||0)>0)lines.push("- Keep release blockers visible; do not bypass them for presentation polish.");
-  if((a?.missing||0)>0)lines.push("- Review PAGE_MISSING observations manually before changing catalog health.");
+  if((availabilityContinuity?.summary?.persistentMissing||0)>0)lines.push("- Review persistent PAGE_MISSING incidents manually before any catalog-health decision.");\n  else if((a?.missing||0)>0)lines.push("- Review new PAGE_MISSING observations manually; wait for repeat evidence before any catalog-health decision.");
   lines.push("","_Read-only operational summary. It does not mutate source truth, health, permissions, ranking or visitor content._");
   return lines.join("\n");
 }

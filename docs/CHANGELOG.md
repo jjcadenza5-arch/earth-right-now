@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Availability continuity memory
+- Added per-source daily availability continuity with persistent-missing, repeated-access, transient and recovery states.
+- Repeated evidence creates manual-review incidents only; no automatic source-health mutation.
+- Added previous-sample cache and operator-brief visibility.
+
 ## 2026-09-24 — Current-proven inside visitor boundary
 - Browser Watch Earth, adaptive sizing, Hero pool, pulse strip and Atlas Play here filtering now require current-proven inside playback rather than configured embed capability.
 - Unproven embeds remain discoverable but cannot count as current LIVE HERE windows.

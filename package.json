@@ -47,7 +47,8 @@
     "inside:playback-horizon": "node scripts/playback-evidence-horizon.mjs",
     "inside:research-preflight": "node scripts/embed-research-preflight.mjs",
     "inside:review-evidence": "node scripts/operator-review-evidence-status.mjs",
-    "inside:review-proposals": "node scripts/review-evidence-proposals.mjs"
+    "inside:review-proposals": "node scripts/review-evidence-proposals.mjs",
+    "sources:availability-continuity": "node scripts/source-availability-continuity.mjs"
   },
   "engines": {
     "node": ">=20"
