@@ -17,6 +17,7 @@ console.log(JSON.stringify({
  healthAutomation:report.healthAutomation,
  providerPlaybackEvidence:report.providerPlaybackEvidence,
  insideERNRecovery:report.insideERNRecovery,
+ insideProviderResilience:report.insideProviderResilience,
  productActivation:report.productActivation,
  maintenance:report.maintenance,
  providerReview:{

@@ -23,4 +23,5 @@ jobs:
           npm run watch-earth:now
           npm run provider:worklist
           npm run inside:recovery
+          npm run inside:providers
           npm run operations:status

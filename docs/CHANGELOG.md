@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Inside-ERN provider resilience
+- Added provider-family and concentration diagnostics for embedded playback.
+- Flagged single-provider dependency as an explicit expansion goal.
+- Wired the signal into operations status and the daily audit.
+
 ## 2026-09-24 — Inside-ERN recovery queue
 - Added a dedicated evidence-driven recovery queue for embedded sources.
 - Ready now requires current source verification plus fresh HUMAN_PLAYBACK evidence.

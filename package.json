@@ -36,7 +36,8 @@
     "watch-earth:now": "node scripts/watch-earth-live-now.mjs",
     "product:status": "node scripts/whole-product-status.mjs",
     "earth-signals:status": "node scripts/earth-signal-status.mjs",
-    "inside:recovery": "node scripts/inside-ern-recovery-status.mjs"
+    "inside:recovery": "node scripts/inside-ern-recovery-status.mjs",
+    "inside:providers": "node scripts/inside-provider-resilience-status.mjs"
   },
   "engines": {
     "node": ">=20"

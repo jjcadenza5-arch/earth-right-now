@@ -14,6 +14,7 @@ import { businessReadiness } from "./business-readiness.js";
 import { earthSignalStatusReport } from "./earth-signal-status-report.js";
 import { atlasMaintenanceSummary } from "./atlas-maintenance-summary.js";
 import { insideERNRecoveryStatus } from "./inside-ern-recovery.js";
+import { insideProviderResilience } from "./inside-provider-resilience.js";
 
 export function operationsReport(sources,{queueLimit=20,catalogOptions={},releaseEvidence={},healthObservations=null,providerObservations=null,checkedAt=null}={}){
   const health=catalogHealthSummary(sources),gate=catalogReleaseGate(sources,catalogOptions);
@@ -27,6 +28,7 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
   const providerBatch=providerObservations===null?null:providerObservationBatch(providerObservations,{observedAt:checkedAt||undefined,knownSourceIds:(sources||[]).map(x=>x.id)});
   const providerPlaybackEvidence=providerPlaybackEvidenceStatus(sources||[],providerObservations||[]);
   const insideERNRecovery=insideERNRecoveryStatus(sources||[],providerObservations||[],{now:maintenanceNow,limit:queueLimit});
+  const insideProvider=insideProviderResilience(sources||[]);
   const effectiveHealthObservations=healthObservations??providerBatch?.observations??null;
   const observationNow=Date.parse(checkedAt||new Date().toISOString());
   const observationMaxAgeMs=24*60*60*1000;
@@ -77,6 +79,7 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
     providerReview:{total:providerReview.length,unsafe:providerReview.filter(x=>!x.ok),reviewRequired:providerReview.filter(x=>x.reviewRequired),crossProvider:providerReview.filter(x=>x.crossProvider)},
     providerPlaybackEvidence,
     insideERNRecovery,
+    insideProviderResilience:insideProvider,
     productActivation:{business,earthSignals},
     maintenance:{atlas:atlasMaintenance,sourceRevalidation:{total:queue.length,next:queue.slice(0,10).map(x=>({id:x.source.id,title:x.source.title,priority:x.priority,reason:x.reason}))}},
     revalidation:{total:queue.length,next:queue.slice(0,queueLimit).map(x=>({id:x.source.id,title:x.source.title,priority:x.priority,reason:x.reason,health:x.source.health,playback:x.source.playback,permission:x.source.permission}))}
