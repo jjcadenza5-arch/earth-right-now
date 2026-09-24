@@ -1,3 +1,9 @@
+## 2026-09-24 — Repository-wide JavaScript syntax guard
+- The new Pages syntax preflight exposed two older latent literal-newline defects in legacy src/app.js and scripts/recovery-ledger.mjs; both were repaired without changing behavior.
+- Added a lightweight ERN JavaScript Syntax Check workflow that runs on every main push touching src/ or scripts/, independently of whether that change triggers a Pages deployment.
+- Hardened the Pages syntax step with fail-closed shell settings.
+- This separates syntax health from product/deployment semantics and prevents dormant JavaScript parse failures from accumulating unnoticed.
+
 ## 2026-09-24 — Verification horizon respects curation holds
 - Featured curation holds are now classified as HELD instead of EXPIRED/DUE in the source verification horizon.
 - Held sources retain their underlying timestamps and expiry math for context, but they no longer inflate urgent maintenance counts.

@@ -64,7 +64,9 @@ jobs:
         with:
           node-version: 22
       - name: JavaScript syntax preflight
-        run: find src scripts -type f \( -name '*.js' -o -name '*.mjs' \) -print0 | xargs -0 -n1 node --check
+        run: |
+          set -euo pipefail
+          find src scripts -type f \( -name '*.js' -o -name '*.mjs' \) -print0 | xargs -0 -n1 node --check
       - name: Lean launch preflight
         run: node scripts/lean-preflight.mjs
       - name: Whole-product guard

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Repository-wide JavaScript syntax guard
+- Repaired latent syntax defects in legacy app/recovery-ledger code.
+- Added an automatic push-time syntax workflow for all src/ and scripts/ JavaScript.
+
 ## 2026-09-24 — Verification horizon hold semantics
 - Featured holds now appear as HELD rather than false expiry urgency in the verification horizon.
 
