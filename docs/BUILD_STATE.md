@@ -1,3 +1,9 @@
+## 2026-09-24 — Boston Harbor Islands reference mapping
+- Revalidated the National Park Service Boston Harbor Islands webcam surface: the current camera set is on Boston Light / Little Brewster Island and individual views are active with one-minute refreshes.
+- Added a PLACE_REFERENCE pin using the NPS-published Little Brewster Island reference coordinates rather than guessing a generic Boston Harbor centroid.
+- The pin represents the webcam island/location context, not exact camera hardware placement.
+- Added regression coverage; truth, permission and playback remain unchanged.
+
 ## 2026-09-24 — Multi-site Atlas collections
 - Added a first-class MULTI_SITE_COLLECTION / MULTI_SITE_UNPINNED model for sources that intentionally represent many physical locations.
 - Dolomiti Superski, Florida Now, Randwick beach cams and Jungfrau Region now stay unpinned rather than receiving misleading single-point coordinates.
