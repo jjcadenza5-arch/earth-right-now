@@ -458,8 +458,8 @@
     "officialUrl": "https://www.kitzski.at/en/",
     "embedUrl": null,
     "thumbnailUrl": null,
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-24T13:47:00+07:00",
+    "lastSuccessfulCheck": "2026-09-24T13:47:00+07:00",
     "failureReason": null,
     "quality": 86,
     "freshness": 94,
@@ -467,7 +467,10 @@
     "story": "See current mountain pictures before choosing your day or imagining a holiday here.",
     "rightsBasis": "Current official KitzSki map exposes multiple Livecams; retained as LINK_ONLY because no embed permission is inferred.",
     "lat": 47.446389,
-    "lon": 12.391944
+    "lon": 12.391944,
+    "freshnessEvidence": "The current official KitzSki webcam page lists live/current images from Hahnenkamm, Steinbergkogel, Pengelstein, Kitzbüheler Horn, Bichlalm, Resterkogel and other Kitzbühel-area mountain locations.",
+    "coordinateBasis": "REGION_REFERENCE",
+    "coordinateSourceUrl": "https://www.kitzski.at/en/"
   },
   {
     "id": "ski-arlberg",
@@ -1000,8 +1003,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-24T13:47:00+07:00",
+    "lastSuccessfulCheck": "2026-09-24T13:47:00+07:00",
     "failureReason": null,
     "quality": 94,
     "freshness": 98,
@@ -1011,7 +1014,10 @@
     "lon": -74.0445,
     "timeZone": "America/New_York",
     "rightsBasis": "EarthCam publicly presents the HarborCam as a live view; ERN keeps playback at the provider because no ERN embed permission is inferred.",
-    "officialUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_hd"
+    "officialUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_hd",
+    "freshnessEvidence": "The current EarthCam Statue of Liberty HarborCam page remains active and presents current views around the Statue of Liberty and Ellis Island.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_hd"
   },
   {
     "id": "statue-liberty-earthcam",
@@ -1033,8 +1039,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-24T13:47:00+07:00",
+    "lastSuccessfulCheck": "2026-09-24T13:47:00+07:00",
     "failureReason": null,
     "quality": 93,
     "freshness": 98,
@@ -1044,7 +1050,10 @@
     "lon": -74.0445,
     "timeZone": "America/New_York",
     "rightsBasis": "EarthCam publicly presents this Statue of Liberty camera as a live view; ERN keeps playback at the provider because no ERN embed permission is inferred.",
-    "officialUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_str"
+    "officialUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_str",
+    "freshnessEvidence": "The current EarthCam Statue of Liberty camera page remains active and presents current close perspectives around the Statue of Liberty.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_str"
   },
   {
     "id": "takayama-miyagawa-stream",
@@ -1416,8 +1425,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-24T13:47:00+07:00",
+    "lastSuccessfulCheck": "2026-09-24T13:47:00+07:00",
     "failureReason": null,
     "freshness": 98,
     "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights.",
@@ -1438,7 +1447,10 @@
     "story": "A high scenic view over the Mtkvari River, Narikala fortress and Tbilisi's historic landscape.",
     "lat": 41.688,
     "lon": 44.811,
-    "timeZone": "Asia/Tbilisi"
+    "timeZone": "Asia/Tbilisi",
+    "freshnessEvidence": "The current EarthCam Mtkvari River page remains active and identifies a view overlooking the Mtkvari River, Narikala fortress and the Tbilisi broadcasting tower.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthcam.com/world/georgia/tbilisi/mtkvaririver/?cam=mtkvaririver"
   },
   {
     "provider": "EarthCam",
@@ -1494,8 +1506,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Norway's Best",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-24T13:47:00+07:00",
+    "lastSuccessfulCheck": "2026-09-24T13:47:00+07:00",
     "failureReason": null,
     "quality": 97,
     "freshness": 97,
@@ -1504,7 +1516,10 @@
     "lat": 60.862,
     "lon": 7.115,
     "timeZone": "Europe/Oslo",
-    "rightsBasis": "Official destination operator presents these as real-time live webcam feeds. ERN links to the provider and does not infer embedding rights."
+    "rightsBasis": "Official destination operator presents these as real-time live webcam feeds. ERN links to the provider and does not infer embedding rights.",
+    "freshnessEvidence": "The current Norway's Best Flåm webcam page states that visitors can experience Flåm and the Nærøyfjord area in real time through live webcam feeds, including Flåm Downtown, Aurland and Gudvangen.",
+    "coordinateBasis": "REGION_REFERENCE",
+    "coordinateSourceUrl": "https://www.norwaysbest.com/en/flam/flam-webcam"
   },
   {
     "id": "amden-walensee-official",
@@ -2548,13 +2563,16 @@
     "officialUrl": "https://www.earthtv.com/en/webcam/cape-town-table-mountain",
     "embedUrl": null,
     "attribution": "earthTV",
-    "checkedAt": "2026-09-23T08:15:00+07:00",
-    "lastSuccessfulCheck": "2026-09-23T08:15:00+07:00",
+    "checkedAt": "2026-09-24T13:47:00+07:00",
+    "lastSuccessfulCheck": "2026-09-24T13:47:00+07:00",
     "failureReason": null,
     "quality": 91,
     "freshness": 92,
     "moment": 95,
     "story": "A Cape Town live-stream view combining Table Mountain, Lion’s Head and V&A Waterfront harbour activity.",
-    "rightsBasis": "Current earthTV live-stream page explicitly presents the Cape Town webcam. ERN keeps this LINK_ONLY and does not infer embedding rights."
+    "rightsBasis": "Current earthTV live-stream page explicitly presents the Cape Town webcam. ERN keeps this LINK_ONLY and does not infer embedding rights.",
+    "freshnessEvidence": "The current earthTV Cape Town page identifies a live-streaming webcam at the V&A Waterfront overlooking Table Mountain, Lion's Head, the harbour, Clocktower and Swing Bridge.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.earthtv.com/en/webcam/cape-town-table-mountain"
   }
 ]
