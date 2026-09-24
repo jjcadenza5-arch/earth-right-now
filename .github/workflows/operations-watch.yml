@@ -20,14 +20,14 @@ jobs:
       - name: Build daily operations packet
         run: |
           mkdir -p ern-ops
-          npm run sources:horizon | tee ern-ops/verification-horizon.json
-          npm run watch-earth:now | tee ern-ops/watch-earth-now.json
-          npm run watch-earth:balance | tee ern-ops/watch-earth-balance.json
-          npm run provider:worklist | tee ern-ops/provider-worklist.json
-          npm run inside:recovery | tee ern-ops/inside-recovery.json
-          npm run inside:providers | tee ern-ops/inside-provider-resilience.json
-          npm run inside:research | tee ern-ops/embed-research.json
-          npm run operations:status | tee ern-ops/operations-status.json
+          npm --silent run sources:horizon | tee ern-ops/verification-horizon.json
+          npm --silent run watch-earth:now | tee ern-ops/watch-earth-now.json
+          npm --silent run watch-earth:balance | tee ern-ops/watch-earth-balance.json
+          npm --silent run provider:worklist | tee ern-ops/provider-worklist.json
+          npm --silent run inside:recovery | tee ern-ops/inside-recovery.json
+          npm --silent run inside:providers | tee ern-ops/inside-provider-resilience.json
+          npm --silent run inside:research | tee ern-ops/embed-research.json
+          npm --silent run operations:status | tee ern-ops/operations-status.json
       - name: Retain operations packet
         if: always()
         uses: actions/upload-artifact@v4

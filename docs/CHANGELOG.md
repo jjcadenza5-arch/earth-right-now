@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-24 — Clean JSON operations packet output
+- Switched daily packet commands to silent npm execution so retained diagnostics remain machine-readable JSON.
+
 ## 2026-09-24 — Retained daily operations packet
 - Daily operations now retain separate JSON diagnostics as a 14-day GitHub Actions artifact.
 - Partial packet evidence is kept even when a later safety check fails.
