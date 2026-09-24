@@ -1,3 +1,10 @@
+## 2026-09-24 — Illustrative visual truth cue
+- ERN's generated scenic artwork is now explicitly marked as illustrative wherever it appears in the Hero, Watch Earth cards and compact destination/search cards.
+- A source may still truthfully be LIVE HERE, LIVE VIDEO, CURRENT IMAGE or LIVE ↗; the cue describes only the decorative visual shown by ERN when no safe source thumbnail is available.
+- If a remote thumbnail later fails, the UI switches to the generated fallback and marks it illustrative instead of leaving a broken-image glyph or silently implying current imagery.
+- The cue is intentionally small so the approved visual design remains intact.
+- Added regression coverage for hero, card and compact-card visual truth states.
+
 ## 2026-09-24 — Sticky-header section landing repair
 - Added explicit scroll-margin offsets for Home, Watch Earth, Destinations, Explore, World Map and Saved/My Earth.
 - Desktop, tablet and mobile offsets track ERN's existing sticky-header heights.

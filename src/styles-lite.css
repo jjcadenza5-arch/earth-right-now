@@ -547,3 +547,9 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
 #home,#watch,#destinations,#search,#map,#saved{scroll-margin-top:96px}
 @media(max-width:1100px){#home,#watch,#destinations,#search,#map,#saved{scroll-margin-top:92px}}
 @media(max-width:600px){#home,#watch,#destinations,#search,#map,#saved{scroll-margin-top:74px}}
+
+/* Visual truth: decorative ERN artwork is never presented as the source image */
+#heroLive[data-visual-kind="illustrative"]::after{content:"Illustrative visual";position:absolute;right:18px;top:18px;z-index:4;padding:5px 8px;border-radius:999px;background:rgba(2,22,19,.58);border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.82);font:700 8px/1 Inter,ui-sans-serif,system-ui;letter-spacing:.08em;text-transform:uppercase;pointer-events:none}
+.card-visual[data-visual-kind="illustrative"]::before{content:"Illustrative";position:absolute;right:9px;top:38px;z-index:3;padding:4px 6px;border-radius:999px;background:rgba(2,22,19,.5);color:rgba(255,255,255,.76);font:700 7px/1 Inter,ui-sans-serif,system-ui;letter-spacing:.06em;text-transform:uppercase;pointer-events:none}
+.result-visual[data-visual-kind="illustrative"]::before{content:"Illustrative";position:absolute;right:4px;bottom:4px;z-index:3;padding:3px 4px;border-radius:999px;background:rgba(2,22,19,.54);color:rgba(255,255,255,.78);font:700 6px/1 Inter,ui-sans-serif,system-ui;letter-spacing:.04em;text-transform:uppercase;pointer-events:none}
+@media(max-width:600px){#heroLive[data-visual-kind="illustrative"]::after{right:10px;top:10px;font-size:7px}.card-visual[data-visual-kind="illustrative"]::before{top:36px}}
