@@ -1,3 +1,11 @@
+## 2026-09-24 — Guarded playback-proof application plan
+- Added a final read-only planning layer between reviewed human evidence and any future manual catalog/ledger edit.
+- Ready playback proposals are rechecked against current source playback type, EMBED_ALLOWED permission, HEALTHY state, current playbackVerifiedAt and latest observation timestamp.
+- The planner refuses non-atomic timestamps and blocks stale evidence from overwriting an equal/newer catalog marker or observation.
+- A ready item carries explicit expected-current preconditions plus one paired catalog-marker/HUMAN_PLAYBACK update.
+- Automatic writes, partial proof updates, stale overwrites and unrelated source-truth mutations remain forbidden.
+- Added CLI and regression coverage so future human evidence can be applied deliberately without recreating ledger/catalog drift.
+
 ## 2026-09-24 — Daily operator playback review queue
 - Added the proactive renewal/restoration queue to the retained daily operations packet instead of generating it only during release/review-page builds.
 - The private operator brief now shows renewal-first playback work with remaining proof hours when relevant.

@@ -56,7 +56,8 @@
     "business:verification-horizon": "node scripts/commercial-verification-horizon.mjs",
     "inside:evidence-consistency": "node scripts/playback-evidence-consistency.mjs",
     "inside:provider-family-research": "node scripts/provider-family-research-status.mjs",
-    "inside:operator-review-queue": "node scripts/operator-review-queue-status.mjs"
+    "inside:operator-review-queue": "node scripts/operator-review-queue-status.mjs",
+    "inside:review-apply-plan": "node scripts/playback-proof-application-plan.mjs"
   },
   "engines": {
     "node": ">=20"

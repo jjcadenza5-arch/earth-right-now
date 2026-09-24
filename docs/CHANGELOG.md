@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Guarded playback-proof application plan
+- Added a conflict-aware manual application plan for reviewed playback evidence.
+- It blocks stale/partial proof updates and requires catalog marker + HUMAN_PLAYBACK observation to move together.
+
 ## 2026-09-24 — Daily operator playback review queue
 - Daily operations now retains the same renewal-first queue used by the operator review lab.
 - The operator brief surfaces expiring proof before restoration work while preserving human review and non-mutating boundaries.
