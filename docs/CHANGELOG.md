@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Visible poster fallback + Atlas unpinned UI repair
+- Replaced failed remote thumbnail glyphs with ERN generated scenic posters on window/destination cards.
+- Updated World Map beyond-pins copy and filtering for multi-site collections.
+- Kept the stable-beta design intact and added regression coverage.
+
 ## 2026-09-24 — Official single-site Atlas mappings
 - Added official-site-backed place-reference pins for Queenstown Airport and Georgia Aquarium.
 - Refreshed current source evidence and preserved source truth/playback semantics.
