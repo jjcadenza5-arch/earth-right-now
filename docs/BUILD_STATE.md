@@ -1,3 +1,11 @@
+## 2026-09-24 — Human review evidence target binding
+- Human review evidence is now bound to the exact source/provider and embed/player URLs that were actually reviewed.
+- Production proposal generation compares exported review URLs with the current source catalog or research-candidate record.
+- If either target changed after the review page was built, the evidence becomes EVIDENCE_TARGET_CHANGED and cannot create a playback proof or research promotion proposal.
+- This prevents fresh-but-obsolete review evidence from being replayed against a replaced camera/player endpoint.
+- Existing direct-library callers remain backward-compatible unless they supply current target records; production CLI supplies them and therefore fails closed.
+- Added positive and mismatch regression coverage for both public-source restoration and second-provider research.
+
 ## 2026-09-24 — Deployed-origin and freshness trust for human review evidence
 - Closed a trust gap in exported operator review packets: the validator can now require the exact deployed ERN review origin and a bounded evidence age.
 - Production review CLI paths require https://earthrightnow.app/review/inside-ern.html and reject evidence older than 24 hours before it can become a proposal.

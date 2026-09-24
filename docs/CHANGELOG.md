@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Human review evidence target binding
+- Production review proposals now require the reviewed source/embed URLs to still match current catalog/research targets.
+- Changed targets force a new deployed human review rather than reusing old evidence.
+
 ## 2026-09-24 — Deployed-origin and freshness trust for human review evidence
 - Production review/proposal CLIs now accept human review evidence only from the deployed ERN review page and within the 24-hour proof window.
 - Wrong-origin, stale and future-dated review packets fail closed.

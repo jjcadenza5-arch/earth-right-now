@@ -17,6 +17,8 @@ const [packet,sources,research,availability,researchPreflight]=await Promise.all
 console.log(JSON.stringify(reviewEvidenceProposals(packet,{
   knownSourceIds:sources.map(x=>x.id),
   researchIds:research.map(x=>x.id),
+  knownSources:sources,
+  researchCandidates:research,
   availabilityReport:availability,
   researchPreflight,
   expectedReviewOrigins:["https://earthrightnow.app/review/inside-ern.html"],

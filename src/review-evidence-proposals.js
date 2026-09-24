@@ -10,6 +10,15 @@ function availabilityById(report){
 function preflightById(report){
   return new Map((report?.rows||[]).filter(x=>x?.id).map(x=>[String(x.id),x]));
 }
+function normalizedUrl(raw){
+  try{const u=new URL(String(raw||""));return u.protocol==="https:"?u.toString():null}catch{return null}
+}
+function targetMatches(item,current,type){
+  if(!current)return false;
+  const expectedSource=normalizedUrl(current.sourceUrl),reviewedSource=normalizedUrl(item.sourceUrl);
+  const expectedEmbed=normalizedUrl(type==="research"?current.candidateEmbedUrl:current.embedUrl),reviewedEmbed=normalizedUrl(item.embedUrl);
+  return Boolean(expectedSource&&reviewedSource&&expectedSource===reviewedSource&&expectedEmbed&&reviewedEmbed&&expectedEmbed===reviewedEmbed);
+}
 
 export function reviewEvidenceProposals(packet,{
   knownSourceIds=[],
@@ -19,14 +28,22 @@ export function reviewEvidenceProposals(packet,{
   maxEvidenceSeparationHours=24,
   expectedReviewOrigins=[],
   maxReviewAgeHours=null,
-  now=new Date()
+  now=new Date(),
+  knownSources=null,
+  researchCandidates=null
 }={}){
   const validated=validateOperatorReviewEvidence(packet,{knownSourceIds,researchIds,expectedReviewOrigins,maxItemAgeHours:maxReviewAgeHours,now});
   const availability=availabilityById(availabilityReport),preflight=preflightById(researchPreflight);
+  const sourceMap=Array.isArray(knownSources)?new Map(knownSources.map(x=>[String(x.id),x])):null;
+  const researchMap=Array.isArray(researchCandidates)?new Map(researchCandidates.map(x=>[String(x.id),x])):null;
   const sourceProposals=[],researchProposals=[];
 
   for(const item of validated.sourceEvidence||[]){
     const a=availability.get(item.id)||null;
+    if(sourceMap&&!targetMatches(item,sourceMap.get(item.id),"source")){
+      sourceProposals.push({id:item.id,outcome:item.outcome,status:"EVIDENCE_TARGET_CHANGED",reviewObservedAt:item.observedAt,proposedObservation:null,proposedCatalogPlaybackMarker:null,atomicProofUpdateRequired:false,automaticWriteAllowed:false,note:"Reviewed source/embed URL no longer matches the current catalog target; repeat human review on the current deployed candidate."});
+      continue;
+    }
     const availabilityCurrent=Boolean(
       a &&
       a.outcome==="PAGE_REACHABLE" &&
@@ -102,6 +119,10 @@ export function reviewEvidenceProposals(packet,{
 
   for(const item of validated.researchEvidence||[]){
     const p=preflight.get(item.id)||null;
+    if(researchMap&&!targetMatches(item,researchMap.get(item.id),"research")){
+      researchProposals.push({id:item.id,outcome:item.outcome,status:"EVIDENCE_TARGET_CHANGED",reviewObservedAt:item.observedAt,technicalReady:Boolean(p?.technicalReady),preflightOutcome:p?.outcome||null,catalogPromotionAllowed:false,automaticWriteAllowed:false,note:"Reviewed research source/player URL no longer matches the current candidate; repeat deployed review on the current target."});
+      continue;
+    }
     if(item.outcome==="HUMAN_PLAYBACK_CONFIRMED"){
       researchProposals.push({
         id:item.id,
@@ -142,9 +163,11 @@ export function reviewEvidenceProposals(packet,{
       sourceReady:sourceProposals.filter(x=>x.status==="READY_FOR_PROVIDER_OBSERVATION_PROPOSAL").length,
       sourceNeedsAvailability:sourceProposals.filter(x=>x.status==="NEEDS_FRESH_AVAILABILITY_EVIDENCE").length,
       sourceFailureReview:sourceProposals.filter(x=>["MANUAL_PLAYBACK_FAILURE_REVIEW","POSSIBLE_SOURCE_REMOVAL_REVIEW"].includes(x.status)).length,
+      sourceTargetChanged:sourceProposals.filter(x=>x.status==="EVIDENCE_TARGET_CHANGED").length,
       researchReadyForReview:researchProposals.filter(x=>x.status==="READY_FOR_PERMISSION_AND_EDITORIAL_REVIEW").length,
-      researchNeedsPreflight:researchProposals.filter(x=>x.status==="NEEDS_TECHNICAL_PREFLIGHT").length
+      researchNeedsPreflight:researchProposals.filter(x=>x.status==="NEEDS_TECHNICAL_PREFLIGHT").length,
+      researchTargetChanged:researchProposals.filter(x=>x.status==="EVIDENCE_TARGET_CHANGED").length
     },
-    note:"Proposal layer only. Confirmed source playback proposes the HUMAN_PLAYBACK observation and matching playbackVerifiedAt marker as one manual atomic proof update. Nothing is written automatically."
+    note:"Proposal layer only. When current target records are supplied, reviewed source/embed URLs must still match before evidence can progress. Confirmed playback proposals remain manual and atomic."
   };
 }
