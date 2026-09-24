@@ -278,7 +278,9 @@
     "failureReason": null,
     "story": "A wildlife window onto the Mpala watering hole in Laikipia, useful for catching animal activity when conditions line up.",
     "lat": 0.2928,
-    "lon": 36.899
+    "lon": 36.899,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://couchtourist.com/cams/kenya/laikipia-county/mpala-research-centre-watering-hole-2/"
   },
   {
     "id": "kijihiki-plateau",
@@ -850,7 +852,9 @@
     "failureReason": null,
     "story": "A harbour window on Pico Island for seeing the Atlantic waterfront and local conditions around Lajes do Pico.",
     "lat": 38.388917,
-    "lon": -28.252551
+    "lon": -28.252551,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://couchtourist.com/cams/portugal/azores/espaco-talassa-harbour-view-lajes-do-pico/"
   },
   {
     "id": "roque-observatory",
@@ -880,7 +884,9 @@
     "failureReason": null,
     "story": "A high-altitude La Palma view near Roque de los Muchachos, where mountain light and cloud conditions can change dramatically.",
     "lat": 28.7561111,
-    "lon": -17.8916667
+    "lon": -17.8916667,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://couchtourist.com/cams/spain/canary-islands/nordic-optical-telescope-observatory-view/"
   },
   {
     "id": "cijin-beach-kaohsiung",
@@ -913,7 +919,9 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:05:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:05:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://couchtourist.com/cams/taiwan/kaohsiung/cijin-beach/"
   },
   {
     "id": "cancun-live-aqua-beach",
@@ -945,7 +953,9 @@
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-20T07:05:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:05:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://couchtourist.com/cams/mexico/quintana-roo/live-aqua-beach-resort-cancun-mexico/"
   },
   {
     "id": "nyc-skyline-jersey-city-earthcam",
@@ -1656,7 +1666,9 @@
     "failureReason": null,
     "story": "A Pacific-facing coastal window in Taitung for checking sea, sky and shoreline conditions.",
     "lat": 22.945168,
-    "lon": 121.2799
+    "lon": 121.2799,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://couchtourist.com/cams/taiwan/taitung-county/taitung-jinzun/"
   },
   {
     "id": "blouberg-table-mountain",
@@ -1890,7 +1902,9 @@
     "failureReason": null,
     "story": "A mountain-and-city perspective from Bergen’s Ulriken area, connecting fjord-side urban scenery with the surrounding highlands.",
     "lat": 60.37674,
-    "lon": 5.39343
+    "lon": 5.39343,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://couchtourist.com/cams/norway/ulriken-mountain-view-bergen-norway/"
   },
   {
     "id": "waikiki-south-shore",
