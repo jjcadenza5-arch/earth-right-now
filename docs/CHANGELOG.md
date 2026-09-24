@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Private commercial onboarding planner
+- Added a diversified content-readiness queue for destinations that lack verified travel offers.
+- The planner is private/editorial only and cannot predict demand/revenue or influence public ranking.
+- Wired it into daily operations, operator brief and packet-integrity safety checks.
+
 ## 2026-09-24 — Verified travel-offer runtime readiness
 - Before You Go can now consume current verified travel offers while preserving Google fallbacks when inventory is empty.
 - Affiliate/sponsored links are visibly disclosed and marked rel=sponsored; payment never affects ranking.
