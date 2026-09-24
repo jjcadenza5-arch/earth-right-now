@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Daily operator-brief CLI repair
+- Fixed the operator-brief CLI parser and wired its three new commercial/readiness inputs.
+- Added executable coverage so the daily operations brief cannot silently lose those sections or fail from malformed argument wiring.
+
 ## 2026-09-24 — Verified travel-offer release wiring
 - Ship data/travel-offers.json in the public release and redeploy Pages when it changes.
 - Added public-launch and regression guards so verified offers cannot silently disappear from deployed artifacts.

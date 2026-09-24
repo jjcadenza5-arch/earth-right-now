@@ -1,3 +1,9 @@
+## 2026-09-24 — Daily operator-brief CLI repair
+- Repaired a malformed operations CLI newline that would have caused the next daily operator-brief step to fail before rendering.
+- The CLI now actually reads commercial-inventory.json, commercial-onboarding-plan.json and submission-transport-readiness.json from the workflow arguments already being passed.
+- Added executable regression coverage that runs the real CLI and requires all three commercial/readiness sections plus the read-only safety boundary.
+- This repair changes operations reporting only; it does not mutate source truth, health, permissions, ranking or visitor content.
+
 ## 2026-09-24 — Verified travel-offer release wiring
 - Closed a deployment gap in the new Before You Go commercial runtime.
 - data/travel-offers.json is now copied into the immutable public release artifact and included in the release manifest hash set.

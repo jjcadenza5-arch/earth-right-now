@@ -17,6 +17,10 @@ const availability=await optional(args[2]);
 const recovery=await optional(args[3]);
 const research=await optional(args[4]);
 const playbackHorizon=await optional(args[5]);
-const researchPreflight=await optional(args[6]);\nconst availabilityContinuity=await optional(args[7]);
+const researchPreflight=await optional(args[6]);
+const availabilityContinuity=await optional(args[7]);
+const commercialInventory=await optional(args[8]);
+const commercialOnboarding=await optional(args[9]);
+const submissionTransport=await optional(args[10]);
 
 console.log(operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport}));
