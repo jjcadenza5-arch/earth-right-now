@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Daily ERN operations trend layer
+- Added compact operations snapshots and previous-vs-current trend comparison.
+- Daily audit now emits trend-current.json and trend-delta.json and carries the latest snapshot forward through Actions cache.
+- Trend is observational only and cannot mutate catalog/source truth.
+
 ## 2026-09-24 — Embed source refresh tranche L
 - Revalidated four more CouchTourist source pages and existing embed snippets.
 - Kept deployed playback separately unverified so none returns to LIVE HERE without fresh human proof.
