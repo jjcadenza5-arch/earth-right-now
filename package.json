@@ -45,7 +45,8 @@
     "sources:availability": "node scripts/source-availability-status.mjs",
     "operations:brief": "node scripts/operations-operator-brief.mjs",
     "inside:playback-horizon": "node scripts/playback-evidence-horizon.mjs",
-    "inside:research-preflight": "node scripts/embed-research-preflight.mjs"
+    "inside:research-preflight": "node scripts/embed-research-preflight.mjs",
+    "inside:review-evidence": "node scripts/operator-review-evidence-status.mjs"
   },
   "engines": {
     "node": ">=20"
