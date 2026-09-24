@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Boston Harbor Islands reference mapping
+- Revalidated the active NPS Little Brewster webcam set.
+- Added a conservative NPS-sourced place-reference pin for the collection.
+- Preserved source truth and playback semantics and added regression coverage.
+
 ## 2026-09-24 — Multi-site Atlas collections
 - Added explicit MULTI_SITE_COLLECTION / MULTI_SITE_UNPINNED semantics.
 - Removed four multi-location collections from false missing-coordinate debt instead of inventing representative pins.
