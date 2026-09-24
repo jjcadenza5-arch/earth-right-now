@@ -6,7 +6,8 @@ const fresh=s=>{const d=Date.parse(s.lastSuccessfulCheck||s.checkedAt||"");retur
 const eligible=rows.filter(s=>s&&s.health==="HEALTHY"&&!HOLD.has(s.id)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"&&fresh(s));
 const inside=eligible.filter(s=>(s.playback==="EMBED"&&s.embedUrl)||(s.playback==="IMAGE_REFRESH"&&s.sourceUrl));
 const countries=new Set(eligible.map(s=>s.country).filter(Boolean)),providers=new Set(eligible.map(s=>s.provider).filter(Boolean)),truth=new Set(eligible.map(s=>s.truth));
-const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)};\nfor(const s of futureDated)fail.push("future-dated verification timestamp: "+s.id+" ("+(s.lastSuccessfulCheck||s.checkedAt)+")");
+const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)};
+for(const s of futureDated)fail.push("future-dated verification timestamp: "+s.id+" ("+(s.lastSuccessfulCheck||s.checkedAt)+")");
 must(eligible.length>=20,`fewer than 20 fresh non-preview Watch Earth candidates: ${eligible.length}`);
 must(inside.length>=5,`fewer than 5 fresh inside-ERN candidates: ${inside.length}`);
 must(countries.size>=10,`Watch Earth candidate geography too narrow: ${countries.size} countries`);
