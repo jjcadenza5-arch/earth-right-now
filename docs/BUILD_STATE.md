@@ -1,3 +1,12 @@
+## 2026-09-24 — Availability continuity memory
+- Added per-source previous-vs-current availability comparison across daily audits.
+- One PAGE_MISSING remains a notice; two consecutive PAGE_MISSING observations become a PERSISTENT_MISSING_REVIEW manual-review incident.
+- Repeated 403/429 responses become REPEATED_ACCESS_LIMITATION rather than source-failure evidence.
+- Repeated transient network/timeout/5xx-style observations become REPEATED_TRANSIENT_REVIEW; a later reachable page is recorded as RECOVERED_PAGE.
+- The previous availability sample is retained separately in GitHub Actions cache and the continuity report is included in the daily operations packet.
+- Operator brief now names continuity incidents and explicitly keeps catalog mutation / automatic health changes disabled.
+- Added regression coverage for first-run behavior, persistence, recovery, access limitations, workflow cache wiring and non-mutating boundaries.
+
 ## 2026-09-24 — Current-proven inside visitor boundary
 - Added a shared `currentInside` definition in the public runtime: a source is counted/treated as inside ERN only when it has an inside playback capability AND its current truth claim is valid.
 - Browser Watch Earth now explicitly requires currentTruthClaim, closing the gap where a source-current but playback-unproven EMBED could enter the public set with a RECHECK DUE label.
