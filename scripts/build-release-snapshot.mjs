@@ -4,6 +4,7 @@ const root=new URL("../",import.meta.url),dist=new URL("../dist/",import.meta.ur
 await mkdir(dist,{recursive:true});
 // Generate crawlable destination pages and sitemap from the same truth catalog used by the app.
 await import("./build-destination-pages.mjs");
+await import("./build-operator-review.mjs");
 await cp(new URL("../index.html",import.meta.url),new URL("index.html",dist));
 await mkdir(new URL("src/",dist),{recursive:true});
 await cp(new URL("../src/app-lite.js",import.meta.url),new URL("src/app-lite.js",dist));
@@ -15,6 +16,7 @@ await cp(new URL("../data/provider-observations.json",import.meta.url),new URL("
 try{await cp(new URL("../data/release-evidence.json",import.meta.url),new URL("data/release-evidence.json",dist))}catch{await writeFile(new URL("data/release-evidence.json",dist),"{}\n")}
 await cp(new URL("../assets/",import.meta.url),new URL("assets/",dist),{recursive:true});
 await cp(new URL("../places/",import.meta.url),new URL("places/",dist),{recursive:true});
+await cp(new URL("../review/",import.meta.url),new URL("review/",dist),{recursive:true});
 await cp(new URL("../sitemap.xml",import.meta.url),new URL("sitemap.xml",dist));
 await cp(new URL("../robots.txt",import.meta.url),new URL("robots.txt",dist));
 await cp(new URL("../CNAME",import.meta.url),new URL("CNAME",dist));
@@ -29,7 +31,7 @@ await cp(new URL("../src/release-verification-console.js",import.meta.url),new U
 await cp(new URL("../about.html",import.meta.url),new URL("about.html",dist));
 await cp(new URL("../deploy/_headers",import.meta.url),new URL("_headers",dist));
 await cp(new URL("../deploy/_redirects",import.meta.url),new URL("_redirects",dist));
-const files=["index.html","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","release-verification.html","data/sources.json","data/local-directory.json","data/provider-observations.json","data/release-evidence.json","for-places.html","now-moments.html"];
+const files=["index.html","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","release-verification.html","data/sources.json","data/local-directory.json","data/provider-observations.json","data/release-evidence.json","for-places.html","now-moments.html","review/inside-ern.html"];
 const hashes={};for(const p of files){const b=await readFile(new URL(p,dist));hashes[p]=createHash("sha256").update(b).digest("hex")}
 const pkg=JSON.parse(await readFile(new URL("../package.json",import.meta.url),"utf8"));
 const commit=String(process.env.GITHUB_SHA||process.env.ERN_COMMIT_SHA||"").trim()||null;
