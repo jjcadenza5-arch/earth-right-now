@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -37,8 +37,13 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push("");
   }
   if(research?.next?.length){
+    const preflightById=new Map((researchPreflight?.rows||[]).map(x=>[x.id,x]));
     lines.push("## Second-provider research");
-    for(const item of research.next.slice(0,3))lines.push(`- ${item.provider||item.id} / ${item.id}: ${item.permissionReview||"permission review"} + ${item.playbackReview||"playback review"}`);
+    for(const item of research.next.slice(0,3)){
+      const p=preflightById.get(item.id);
+      const technical=p?.technicalReady?"TECHNICALLY READY":p?.outcome||"PREFLIGHT PENDING";
+      lines.push(`- ${item.provider||item.id} / ${item.id}: ${technical}; ${item.permissionReview||"permission review"} + ${item.playbackReview||"playback review"}`);
+    }
     lines.push("");
   }
   lines.push("## Next operational focus");
