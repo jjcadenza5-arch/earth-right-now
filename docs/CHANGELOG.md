@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Unlinked operator embed review lab
+- Added a noindex, unlinked deployed-origin review page for inside-ERN and second-provider playback candidates.
+- Frames load only on operator action and cannot write source evidence or promote catalog entries.
+- Kept the page out of sitemap/navigation and added crawler exclusions plus release-manifest hashing.
+
 ## 2026-09-24 — Adaptive Watch Earth set size
 - Changed Watch Earth from a fixed fill-to-20 target to an adaptive quality-over-quantity ceiling.
 - Caps external fill at 12 while inside-ERN playback is below the five-window preferred floor.
