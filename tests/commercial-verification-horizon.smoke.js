@@ -14,7 +14,7 @@ const offers=[
 ];
 const r=commercialVerificationHorizon({partners,offers},{now});
 assert.equal(r.summary.partners.current,1);assert.equal(r.summary.partners.due14,1);assert.equal(r.summary.partners.expired,1);assert.equal(r.summary.partners.inactive,1);
-assert.equal(r.summary.offers.current,1);assert.equal(r.summary.offers.due14,1);assert.equal(r.summary.offers.expired,1);assert.equal(r.summary.offers.reviewRequired,1);
+assert.equal(r.summary.offers.current,1);assert.equal(r.summary.offers.due7,1);assert.equal(r.summary.offers.expired,1);assert.equal(r.summary.offers.reviewRequired,1);
 assert.ok(r.urgent.some(x=>x.id==="p-due"));assert.ok(r.urgent.some(x=>x.id==="o-due"));
 assert.equal(r.safety.automaticActivationAllowed,false);assert.equal(r.safety.automaticRenewalAllowed,false);assert.equal(r.safety.publicRankingAffected,false);assert.equal(r.safety.inventedInventoryAllowed,false);
 console.log("ERN commercial verification horizon passed");
