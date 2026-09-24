@@ -127,11 +127,11 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "SANParks",
-    "checkedAt": "2026-09-21T21:45:00+07:00",
-    "lastSuccessfulCheck": "2026-09-21T21:45:00+07:00",
+    "checkedAt": "2026-09-24T15:31:00Z",
+    "lastSuccessfulCheck": "2026-09-24T15:31:00Z",
     "failureReason": null,
     "quality": 86,
-    "freshness": 96,
+    "freshness": 97,
     "moment": 88,
     "story": "Official SANParks still camera at Nossob Rest Camp; images refresh every few minutes.",
     "lat": -25.418,
@@ -140,7 +140,8 @@
     "rightsBasis": "Official SANParks webcam page; retained as link-only because ERN has not documented display/embed permission.",
     "officialUrl": "https://www.sanparks.org/travel/webcams",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams"
+    "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams",
+    "freshnessEvidence": "Fresh official SANParks Nossob webcam page remains current on 2026-09-24 and states that still photos are taken and updated every few minutes, subject to occasional power/weather disruption. ERN remains LIVE_IMAGE + LINK_ONLY + EXTERNAL."
   },
   {
     "id": "kaikoura-coast",
@@ -407,18 +408,19 @@
     "officialUrl": "https://www.dolomitisuperski.com/en",
     "embedUrl": null,
     "thumbnailUrl": null,
-    "checkedAt": "2026-09-21T21:32:00+07:00",
-    "lastSuccessfulCheck": "2026-09-21T21:32:00+07:00",
+    "checkedAt": "2026-09-24T15:31:00Z",
+    "lastSuccessfulCheck": "2026-09-24T15:31:00Z",
     "failureReason": null,
     "quality": 87,
-    "freshness": 92,
+    "freshness": 96,
     "moment": 85,
     "story": "Browse current views across twelve Dolomites regions before choosing where to ski, hike or sightsee.",
     "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented.",
     "mapBehavior": "MULTI_SITE_UNPINNED",
     "coordinateBasis": "MULTI_SITE_COLLECTION",
     "coordinateNote": "The official Dolomiti Superski webcam surface spans multiple named Dolomites regions and cameras, so one static point would misrepresent the collection.",
-    "coordinateSourceUrl": "https://www.dolomitisuperski.com/en"
+    "coordinateSourceUrl": "https://www.dolomitisuperski.com/en",
+    "freshnessEvidence": "Fresh official Dolomiti Superski webcam page remains current on 2026-09-24 and lists live broadcasts/current cameras across multiple Dolomites regions. ERN keeps this multi-site collection LINK_ONLY + EXTERNAL."
   },
   {
     "id": "queenstown-airport-alps",
@@ -1114,11 +1116,11 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Hida-Takayama Live Camera",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-24T15:31:00Z",
+    "lastSuccessfulCheck": "2026-09-24T15:31:00Z",
     "failureReason": null,
     "quality": 84,
-    "freshness": 97,
+    "freshness": 98,
     "moment": 92,
     "story": "A genuine live stream near Miyagawa and Kaji Bridge in central Takayama, with seasonal streetscape, weather and occasional festival activity.",
     "lat": 36.1433,
@@ -1127,7 +1129,8 @@
     "rightsBasis": "The operator explicitly describes this page as YouTube Live and notes that stream addresses can change after restarts; ERN links to the stable provider page rather than inferring embed rights.",
     "officialUrl": "https://takayama-live.com/streaming",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://takayama-live.com/streaming"
+    "coordinateSourceUrl": "https://takayama-live.com/streaming",
+    "freshnessEvidence": "Fresh Hida-Takayama Live Camera streaming page remains current on 2026-09-24 and explicitly describes its YouTube Live stream near Miyagawa/Kaji Bridge, including restart/address-change caveats. ERN links to the stable provider page and remains LINK_ONLY + EXTERNAL."
   },
   {
     "id": "takayama-miyagawa-current-image",
@@ -1150,11 +1153,11 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Hida-Takayama Live Camera",
-    "checkedAt": "2026-09-21T21:52:00+07:00",
-    "lastSuccessfulCheck": "2026-09-21T21:52:00+07:00",
+    "checkedAt": "2026-09-24T15:31:00Z",
+    "lastSuccessfulCheck": "2026-09-24T15:31:00Z",
     "failureReason": null,
     "quality": 88,
-    "freshness": 94,
+    "freshness": 98,
     "moment": 90,
     "story": "Refreshed current images around Miyagawa, Kaji Bridge and the morning-market street; a clearer companion when the live stream is dark or soft.",
     "lat": 36.1433,
@@ -1163,7 +1166,8 @@
     "rightsBasis": "The operator states the still cameras refresh about every three minutes and instructs visitors to reload for the newest image; ERN links to the provider page.",
     "officialUrl": "https://takayama-live.com/",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://takayama-live.com/"
+    "coordinateSourceUrl": "https://takayama-live.com/",
+    "freshnessEvidence": "Fresh Hida-Takayama Live Camera page remains current on 2026-09-24 and states that Miyagawa/Kaji Bridge and morning-market still images update about every three minutes. ERN remains LIVE_IMAGE + LINK_ONLY + EXTERNAL."
   },
   {
     "provider": "EarthCam",
