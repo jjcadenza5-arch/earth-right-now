@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Safe review-evidence proposal layer
+- Added a proposal-only bridge from exported human review evidence plus independent availability/preflight evidence.
+- Confirmed playback can become a review proposal but never an automatic health/catalog write.
+- Playback failures and second-provider candidates remain manual-review lanes.
+
 ## 2026-09-24 — Local-only operator review evidence packets
 - Added local human review controls and copy/download JSON export to the unlinked operator review lab.
 - Exported packets never claim network status or mutation authority.
