@@ -408,7 +408,11 @@
     "freshness": 92,
     "moment": 85,
     "story": "Browse current views across twelve Dolomites regions before choosing where to ski, hike or sightsee.",
-    "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented."
+    "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented.",
+    "mapBehavior": "MULTI_SITE_UNPINNED",
+    "coordinateBasis": "MULTI_SITE_COLLECTION",
+    "coordinateNote": "The official Dolomiti Superski webcam surface spans multiple named Dolomites regions and cameras, so one static point would misrepresent the collection.",
+    "coordinateSourceUrl": "https://www.dolomitisuperski.com/en"
   },
   {
     "id": "queenstown-airport-alps",
@@ -823,7 +827,11 @@
     "checkedAt": "2026-09-23T09:36:00+07:00",
     "lastSuccessfulCheck": "2026-09-23T09:36:00+07:00",
     "failureReason": null,
-    "freshnessEvidence": "Current official VISIT FLORIDA Florida Now page says it provides live webcam feeds and up-to-the-minute travel conditions, with a large current webcam inventory."
+    "freshnessEvidence": "Current official VISIT FLORIDA Florida Now page says it provides live webcam feeds and up-to-the-minute travel conditions, with a large current webcam inventory.",
+    "mapBehavior": "MULTI_SITE_UNPINNED",
+    "coordinateBasis": "MULTI_SITE_COLLECTION",
+    "coordinateNote": "VISIT FLORIDA's Florida Now surface aggregates live webcam feeds from many cities and destinations across the state, so ERN intentionally does not assign one static pin.",
+    "coordinateSourceUrl": "https://www.visitflorida.com/"
   },
   {
     "id": "lajes-pico-harbour",
@@ -2086,7 +2094,11 @@
     "freshness": 92,
     "moment": 84,
     "story": "Check live beach conditions and crowd levels across Coogee and other Randwick beaches before choosing where to go.",
-    "rightsBasis": "Current official Randwick City Council beach-cam page explicitly identifies multiple live beach cams. ERN keeps this LINK_ONLY; no restream or embed permission is inferred."
+    "rightsBasis": "Current official Randwick City Council beach-cam page explicitly identifies multiple live beach cams. ERN keeps this LINK_ONLY; no restream or embed permission is inferred.",
+    "mapBehavior": "MULTI_SITE_UNPINNED",
+    "coordinateBasis": "MULTI_SITE_COLLECTION",
+    "coordinateNote": "Randwick City Council's beach-cam surface covers Coogee, Clovelly, Little Bay, Mahon Pool, Malabar, Maroubra and Yarra Bay, so one pin would misrepresent the collection.",
+    "coordinateSourceUrl": "https://www.randwick.nsw.gov.au/"
   },
   {
     "id": "boston-harbor-islands",
@@ -2246,7 +2258,11 @@
     "freshness": 30,
     "moment": 84,
     "story": "Compare high-alpine viewpoints before buying tickets or heading up the mountain.",
-    "rightsBasis": "Current official Jungfrau webcam surface exists, but camera connections were reported offline during verification. ERN keeps it LINK_ONLY and DEGRADED until fresh working-camera evidence exists."
+    "rightsBasis": "Current official Jungfrau webcam surface exists, but camera connections were reported offline during verification. ERN keeps it LINK_ONLY and DEGRADED until fresh working-camera evidence exists.",
+    "mapBehavior": "MULTI_SITE_UNPINNED",
+    "coordinateBasis": "MULTI_SITE_COLLECTION",
+    "coordinateNote": "The Jungfrau Railways webcam surface contains multiple live-view locations across Jungfraujoch, Eigergletscher, Grindelwald-First, Männlichen, Schynige Platte, Harder Kulm and Lauberhorn, so ERN intentionally keeps the collection unpinned.",
+    "coordinateSourceUrl": "https://www.jungfrau.ch/en-gb/"
   },
   {
     "id": "sottomarina-chioggia",

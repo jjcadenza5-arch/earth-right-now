@@ -203,6 +203,7 @@
         "PLACE_REFERENCE",
         "REGION_REFERENCE",
         "DYNAMIC_ORBIT",
+        "MULTI_SITE_COLLECTION",
         null
       ]
     },
@@ -220,6 +221,7 @@
       ],
       "enum": [
         "DYNAMIC_UNPINNED",
+        "MULTI_SITE_UNPINNED",
         null
       ]
     },
@@ -403,6 +405,35 @@
         "properties": {
           "mapBehavior": {
             "const": "DYNAMIC_UNPINNED"
+          },
+          "lat": {
+            "type": "null"
+          },
+          "lon": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "coordinateBasis"
+        ],
+        "properties": {
+          "coordinateBasis": {
+            "const": "MULTI_SITE_COLLECTION"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "mapBehavior",
+          "coordinateNote"
+        ],
+        "properties": {
+          "mapBehavior": {
+            "const": "MULTI_SITE_UNPINNED"
           },
           "lat": {
             "type": "null"

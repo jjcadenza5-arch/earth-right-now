@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Multi-site Atlas collections
+- Added explicit MULTI_SITE_COLLECTION / MULTI_SITE_UNPINNED semantics.
+- Removed four multi-location collections from false missing-coordinate debt instead of inventing representative pins.
+- Kept dynamic moving-source semantics separate and added regression coverage.
+
 ## 2026-09-24 — Atlas coordinate provenance tranche H
 - Added conservative place-level provenance to seven existing mapped provider destinations.
 - Preserved every map position and avoided exact-camera claims.
