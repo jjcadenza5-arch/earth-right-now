@@ -1,4 +1,4 @@
-export function operationsTrendSnapshot(report){
+export function operationsTrendSnapshot(report,{availability=null}={}){
   const health=report?.health||{},balance=report?.watchEarthProductBalance||{},recovery=report?.insideERNRecovery||{},providers=report?.insideProviderResilience||{},maintenance=report?.maintenance||{},release=report?.release||{};
   return{
     schemaVersion:1,
@@ -44,7 +44,16 @@ export function operationsTrendSnapshot(report){
       sourceRevalidation:Number(maintenance?.sourceRevalidation?.total)||0,
       atlasUnmapped:Number(maintenance?.atlas?.unmapped)||0,
       atlasLegacy:Number(maintenance?.atlas?.legacy)||0
-    }
+    },
+    availability:availability?{
+      sampled:Number(availability?.summary?.total)||0,
+      reachable:Number(availability?.summary?.reachable)||0,
+      missing:Number(availability?.summary?.missing)||0,
+      blocked:Number(availability?.summary?.blocked)||0,
+      temporaryError:Number(availability?.summary?.temporaryError)||0,
+      timeout:Number(availability?.summary?.timeout)||0,
+      networkError:Number(availability?.summary?.networkError)||0
+    }:null
   };
 }
 
@@ -54,7 +63,7 @@ const paths=[
 ];
 function get(obj,path){return path.split(".").reduce((v,k)=>v?.[k],obj)}
 export function compareOperationsTrend(previous,current){
-  if(!previous)return{direction:"BASELINE",score:0,improved:[],regressed:[],unchanged:[],previousGeneratedAt:null,currentGeneratedAt:current?.generatedAt||null};
+  if(!previous)return{direction:"BASELINE",score:0,improved:[],regressed:[],unchanged:[],observational:{availability:{previous:null,current:current?.availability||null,delta:null}},previousGeneratedAt:null,currentGeneratedAt:current?.generatedAt||null};
   const improved=[],regressed=[],unchanged=[];let score=0;
   for(const [path,weight] of paths){
     const a=Number(get(previous,path)),b=Number(get(current,path));
@@ -68,5 +77,6 @@ export function compareOperationsTrend(previous,current){
   }
   score=Number(score.toFixed(2));
   const direction=improved.length&&regressed.length?"MIXED":score>0?"IMPROVING":score<0?"REGRESSING":"UNCHANGED";
-  return{direction,score,improved,regressed,unchanged,previousGeneratedAt:previous.generatedAt||null,currentGeneratedAt:current?.generatedAt||null};
+  const availabilityDelta=(previous?.availability&&current?.availability)?Object.fromEntries(["sampled","reachable","missing","blocked","temporaryError","timeout","networkError"].map(k=>[k,Number(((Number(current.availability[k])||0)-(Number(previous.availability[k])||0)).toFixed(3))])):null;
+  return{direction,score,improved,regressed,unchanged,observational:{availability:{previous:previous?.availability||null,current:current?.availability||null,delta:availabilityDelta}},previousGeneratedAt:previous.generatedAt||null,currentGeneratedAt:current?.generatedAt||null};
 }

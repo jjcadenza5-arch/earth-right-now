@@ -1,0 +1,5 @@
+import assert from "node:assert/strict";import {operationsOperatorBrief} from "../src/operations-operator-brief.js";
+const snapshot={generatedAt:"2026-09-24T10:30:00Z",catalog:{healthy:8,total:10,degraded:2,expired:1},watchEarth:{strongCurrent:6,insideCurrent:2,status:"INSIDE_SHORTFALL",recommendedLimit:6},insideERN:{ready:2,targetReady:5,readyShortfall:3,recoveryDebt:5},providers:{families:1,targetFamilies:2,dominantShare:1,nextGoal:"REVIEW_SECOND_EMBED_PROVIDER"},release:{blockers:1},maintenance:{sourceRevalidation:4},availability:{sampled:4,reachable:2,missing:1,blocked:1,temporaryError:0,timeout:0,networkError:0}};
+const delta={direction:"MIXED",score:2,improved:[{metric:"catalog.healthy",previous:7,current:8,delta:1}],regressed:[{metric:"catalog.degraded",previous:1,current:2,delta:1}]};
+const md=operationsOperatorBrief({snapshot,delta});assert.match(md,/ERN Daily Operations Brief/);assert.match(md,/MIXED/);assert.match(md,/Restore strong inside-ERN windows/);assert.match(md,/PAGE_MISSING/);assert.match(md,/Read-only operational summary/);
+console.log("ERN daily operator brief passed");

@@ -1,0 +1,30 @@
+function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
+export function operationsOperatorBrief({snapshot,delta,availability}={}){
+  const direction=delta?.direction||"BASELINE",lines=[];
+  lines.push("# ERN Daily Operations Brief","");
+  lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
+  lines.push(`Trend: **${direction}**${Number.isFinite(delta?.score)?` (score ${delta.score})`:""}`,"");
+  lines.push("## Current state");
+  lines.push(`- Catalog: ${snapshot?.catalog?.healthy||0} healthy / ${snapshot?.catalog?.total||0} total; ${snapshot?.catalog?.degraded||0} degraded; ${snapshot?.catalog?.expired||0} expired.`);
+  lines.push(`- Watch Earth: ${snapshot?.watchEarth?.strongCurrent||0} strong current; ${snapshot?.watchEarth?.insideCurrent||0} inside ERN; status ${snapshot?.watchEarth?.status||"UNKNOWN"}; recommended set size ${snapshot?.watchEarth?.recommendedLimit||0}.`);
+  lines.push(`- Inside ERN: ${snapshot?.insideERN?.ready||0}/${snapshot?.insideERN?.targetReady||0} ready; shortfall ${snapshot?.insideERN?.readyShortfall||0}; recovery debt ${snapshot?.insideERN?.recoveryDebt||0}.`);
+  lines.push(`- Providers: ${snapshot?.providers?.families||0}/${snapshot?.providers?.targetFamilies||0} embed families; dominant share ${Math.round((snapshot?.providers?.dominantShare||0)*100)}%; next goal ${snapshot?.providers?.nextGoal||"none"}.`);
+  lines.push(`- Release blockers: ${snapshot?.release?.blockers||0}; source revalidation queue: ${snapshot?.maintenance?.sourceRevalidation||0}.`,"");
+  if(delta?.improved?.length){lines.push("## Improved",fmtList(delta.improved),"")}
+  if(delta?.regressed?.length){lines.push("## Regressed",fmtList(delta.regressed),"")}
+  if(!delta?.improved?.length&&!delta?.regressed?.length)lines.push("## Change","- No scored operational movement yet; this run is a baseline or unchanged.","");
+  const a=availability?.summary||snapshot?.availability;
+  if(a){
+    lines.push("## Source availability sample");
+    lines.push(`- Sampled ${a.total??a.sampled??0}: ${a.reachable||0} reachable, ${a.missing||0} missing, ${a.blocked||0} blocked/inconclusive, ${a.temporaryError||0} temporary errors, ${a.timeout||0} timeouts, ${a.networkError||0} network errors.`);
+    lines.push("- Availability is non-scoring evidence: a reachable page does not prove live playback.","");
+  }
+  lines.push("## Next operational focus");
+  if((snapshot?.insideERN?.readyShortfall||0)>0)lines.push("- Restore strong inside-ERN windows with fresh HUMAN_PLAYBACK evidence.");
+  if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
+  if((snapshot?.maintenance?.sourceRevalidation||0)>0)lines.push("- Work the highest-priority source revalidation items.");
+  if((snapshot?.release?.blockers||0)>0)lines.push("- Keep release blockers visible; do not bypass them for presentation polish.");
+  if((a?.missing||0)>0)lines.push("- Review PAGE_MISSING observations manually before changing catalog health.");
+  lines.push("","_Read-only operational summary. It does not mutate source truth, health, permissions, ranking or visitor content._");
+  return lines.join("\n");
+}
