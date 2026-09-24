@@ -1,3 +1,10 @@
+## 2026-09-24 — Operations priorities aligned with real state
+- Updated the roadmap to reflect reality: earthrightnow.app is already public and the current release-readiness gate is green; future releases remain evidence-gated rather than publication being described as blocked.
+- Provider playback worklist now separates actionable evidence debt from explicit curation holds and known visitor-playback rejections.
+- Maui, Waikīkī South Shore and Cold Lake no longer appear as ordinary next-action provider work merely because they lack fresh playback proof.
+- Operator brief no longer emits a generic source-revalidation urgency line when the richer triage report exists and its immediate lane is empty.
+- Added executable regression coverage for both worklist deferral and false-urgency suppression.
+
 ## 2026-09-24 — Future-dated source verification guard
 - Corrected recent source-currentness timestamps that had been stamped ahead of the GitHub runner clock.
 - Featured curation now diagnoses future-dated source IDs directly before downstream diversity checks.

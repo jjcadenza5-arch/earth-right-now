@@ -121,8 +121,9 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
   if(providerFamilyResearch?.needsTermsReview)lines.push("- Refresh stale provider terms evidence before permission review progresses.");
   if(providerFamilyResearch?.items?.length&&providerFamilyResearch.items.some(x=>x.technicalStatus==="SPECIFIC_EMBED_URL_REQUIRED"))lines.push("- Identify a current specific player URL for promising provider-family research before deployed playback testing.");
-  if((sourceRevalidationTriage?.immediate||[]).length)lines.push("- Work only the immediate source-revalidation lane first; defer routine reachable/access/network items.");
-  else if((snapshot?.maintenance?.sourceRevalidation||0)>0)lines.push("- Work the highest-priority source revalidation items.");
+  if(sourceRevalidationTriage){
+    if((sourceRevalidationTriage.immediate||[]).length)lines.push("- Work only the immediate source-revalidation lane first; defer routine reachable/access/network items.");
+  }else if((snapshot?.maintenance?.sourceRevalidation||0)>0)lines.push("- Work the highest-priority source revalidation items.");
   if((snapshot?.release?.blockers||0)>0)lines.push("- Keep release blockers visible; do not bypass them for presentation polish.");
   if((availabilityContinuity?.summary?.persistentMissing||0)>0)lines.push("- Review persistent PAGE_MISSING incidents manually before any catalog-health decision.");
   else if((a?.missing||0)>0)lines.push("- Review new PAGE_MISSING observations manually; wait for repeat evidence before any catalog-health decision.");

@@ -18,8 +18,8 @@ Report-only health proposals, conservative provider-family policies, prioritized
 ## Stage H — travel bridge — FOUNDATION DONE
 Trust-isolated stay/eat/transport/ticket offer model exists. Add real verified partners only after Earth-first experience is stable.
 
-## Stage I — deployment — BLOCKED BY REAL-WORLD EVIDENCE
-Executable CI exists, but publication still requires fresh browser/mobile/provider playback/accessibility/performance/rollback evidence. Do not deploy recovery work merely because static/CI gates are green.
+## Stage I — public deployment and release certification — PUBLIC / GATE READY
+earthrightnow.app is publicly deployed and the current release-readiness gate is green with fresh browser, mobile, provider-playback, accessibility, performance and rollback evidence. Future releases remain fail-closed: keep evidence fresh and do not treat static/CI success alone as permission or playback proof.
 
 ## Cross-cutting priority — inside-ERN playback
 Increase legal high-quality inside-ERN windows through explicit permission review. Current catalog has 20 EMBED_ALLOWED inside-ERN sources; three remain deliberately DEGRADED pending fresh playback evidence. Never infer rights from technical iframe success.

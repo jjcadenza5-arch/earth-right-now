@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Operations priority alignment
+- Roadmap now reflects public deployment + green release gate.
+- Provider worklist defers held/known-rejected embeds, and the operator brief suppresses generic source urgency when triage has no immediate work.
+
 ## 2026-09-24 — Future source timestamp guard
 - Featured curation now reports future-dated verification timestamps directly instead of only surfacing downstream diversity symptoms.
 
