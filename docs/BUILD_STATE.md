@@ -1,3 +1,13 @@
+## 2026-09-24 — Submission transport readiness contract
+- Added a disabled-by-default submission transport configuration and explicit readiness model for real place/camera submissions.
+- Transport can report READY only when all three prerequisites exist: a real HTTPS review endpoint, a valid HTTPS privacy notice, and an explicit retention window between 1 and 365 days.
+- business:status now derives submissionTransport readiness from the real config instead of a hard-coded false value.
+- The daily operations packet includes submission-transport-readiness.json and the private operator brief names exactly what is missing while delivery remains closed.
+- Safety boundaries are explicit: no automatic publication, no automatic approval, no silent background submission, no credential forwarding, and no retention beyond policy.
+- Packet integrity rejects any future transport output that violates those boundaries.
+- The public For Places page remains unchanged and truthful: it still prepares a local draft only and does not pretend a review inbox exists.
+- Added regression coverage for disabled/default state, a fully valid hypothetical transport, invalid endpoint/privacy/retention states, workflow/brief wiring and packet-integrity enforcement.
+
 ## 2026-09-24 — Private commercial onboarding planner
 - Added a private editorial planner that identifies ERN places with strong current content but no current verified travel offer.
 - Scoring uses ERN content readiness only: source quality, moment value, freshness and current healthy window count.

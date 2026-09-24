@@ -19,4 +19,4 @@ const research=await optional(args[4]);
 const playbackHorizon=await optional(args[5]);
 const researchPreflight=await optional(args[6]);\nconst availabilityContinuity=await optional(args[7]);
 
-console.log(operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding}));
+console.log(operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport}));

@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -64,6 +64,12 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     for(const item of commercialOnboarding.items.slice(0,5))lines.push(`- ${item.title} · ${item.country||"Unknown"} — ${item.recommendedAction} (content-readiness ${item.score})`);
     lines.push("- This is an editorial research queue only; it is not visitor-demand, conversion, or revenue ranking.","");
   }
+  if(submissionTransport){
+    lines.push("## Submission transport");
+    lines.push(`- Status: ${submissionTransport.status||"UNKNOWN"}; delivery ${submissionTransport.active?"ready":"off"}.`);
+    if(submissionTransport.missing?.length)lines.push(`- Missing: ${submissionTransport.missing.join(", ")}.`);
+    lines.push("- Delivery readiness never implies approval or publication; review remains manual and separate.","");
+  }
   lines.push("## Next operational focus");
   if((playbackHorizon?.summary?.due6h||0)>0||(playbackHorizon?.summary?.due12h||0)>0)lines.push("- Renew expiring inside-ERN HUMAN_PLAYBACK evidence before LIVE HERE eligibility lapses.");
   if((snapshot?.insideERN?.readyShortfall||0)>0)lines.push("- Restore strong inside-ERN windows with fresh HUMAN_PLAYBACK evidence.");
@@ -74,6 +80,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   else if((a?.missing||0)>0)lines.push("- Review new PAGE_MISSING observations manually; wait for repeat evidence before any catalog-health decision.");
   if(commercialInventory?.stage==="EMPTY_STAGING")lines.push("- Keep the public experience non-commercial until real verified partner inventory exists.");
   if(commercialOnboarding?.items?.length)lines.push("- Research real travel options for the highest content-ready destinations without contacting or listing invented partners.");
+  if(submissionTransport&&!submissionTransport.active)lines.push("- Keep camera/place submission delivery closed until a real HTTPS review endpoint, privacy notice and retention window are configured.");
   lines.push("","_Read-only operational summary. It does not mutate source truth, health, permissions, ranking or visitor content._");
   return lines.join("\n");
 }

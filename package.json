@@ -51,7 +51,8 @@
     "sources:availability-continuity": "node scripts/source-availability-continuity.mjs",
     "operations:packet-integrity": "node scripts/operations-packet-integrity.mjs",
     "business:inventory": "node scripts/commercial-inventory-status.mjs",
-    "business:onboarding-plan": "node scripts/commercial-onboarding-plan.mjs"
+    "business:onboarding-plan": "node scripts/commercial-onboarding-plan.mjs",
+    "business:submission-transport": "node scripts/submission-transport-readiness.mjs"
   },
   "engines": {
     "node": ">=20"

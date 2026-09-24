@@ -14,6 +14,7 @@ const requiredJson=[
  "embed-research-preflight.json",
  "commercial-inventory.json",
  "commercial-onboarding-plan.json",
+ "submission-transport-readiness.json",
  "trend-current.json",
  "trend-delta.json",
  "operations-status.json"
@@ -81,6 +82,16 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(onboarding?.safety?.revenueForecast!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_REVENUE_FORECAST_BOUNDARY_VIOLATION"});
     if(onboarding?.safety?.paidPriorityAllowed!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_PAID_PRIORITY_BOUNDARY_VIOLATION"});
     if(onboarding?.safety?.inventOffersAllowed!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_INVENTION_BOUNDARY_VIOLATION"});
+  }
+
+  const transport=files["submission-transport-readiness.json"];
+  if(transport){
+    if(transport?.safety?.automaticPublishAllowed!==false)issues.push({file:"submission-transport-readiness.json",code:"TRANSPORT_AUTO_PUBLISH_BOUNDARY_VIOLATION"});
+    if(transport?.safety?.automaticApprovalAllowed!==false)issues.push({file:"submission-transport-readiness.json",code:"TRANSPORT_AUTO_APPROVAL_BOUNDARY_VIOLATION"});
+    if(transport?.safety?.silentBackgroundSubmissionAllowed!==false)issues.push({file:"submission-transport-readiness.json",code:"TRANSPORT_SILENT_SUBMISSION_BOUNDARY_VIOLATION"});
+    if(transport?.safety?.credentialsIncluded!==false)issues.push({file:"submission-transport-readiness.json",code:"TRANSPORT_CREDENTIAL_BOUNDARY_VIOLATION"});
+    if(transport?.safety?.retentionBeyondPolicyAllowed!==false)issues.push({file:"submission-transport-readiness.json",code:"TRANSPORT_RETENTION_BOUNDARY_VIOLATION"});
+    if(transport.status==="READY"&&transport.active!==true)issues.push({file:"submission-transport-readiness.json",code:"TRANSPORT_READY_STATE_INCONSISTENT"});
   }
 
   const trend=files["trend-current.json"];
