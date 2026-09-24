@@ -1,3 +1,13 @@
+## 2026-09-24 — Unlinked operator embed review lab
+- Added a generated operator-only review surface at `/review/inside-ern.html` for future human playback checking.
+- The page is deliberately unlinked from ERN navigation, excluded from the sitemap, marked `noindex,nofollow,noarchive`, and disallowed for generic and OAI search crawlers.
+- It is not authentication-protected, so the page states that boundary explicitly and contains only public-source candidates.
+- Candidate frames load only after an operator clicks Load candidate, avoiding a page full of simultaneous third-party iframes.
+- The lab includes highest-value inside-ERN restoration candidates plus second-provider research candidates, but loading a frame never writes evidence or promotes a source.
+- HUMAN_PLAYBACK, permission/provider review and catalog promotion remain separate explicit steps.
+- The generated review page is included and hashed in the immutable release artifact so deployed-origin testing matches the live ERN environment.
+- Added regression coverage for noindex/crawler boundaries, release wiring, non-authoritative language and absence from public discovery.
+
 ## 2026-09-24 — Adaptive Watch Earth set size
 - Watch Earth now treats 20 as a ceiling rather than a quota.
 - Shared balance policy: when fewer than five fresh/current inside-ERN windows are available, the set uses at most 12 external windows; current inside windows can extend the total naturally, so 3 inside allows up to 15 and 5+ inside can grow back toward 20.
