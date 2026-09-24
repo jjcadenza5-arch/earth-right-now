@@ -1,3 +1,10 @@
+## 2026-09-24 — Inside-ERN restoration priority
+- Split embed recovery into two operational lanes: healthy restoration candidates and blocked/degraded sources.
+- Added a default target of five freshly proven inside-ERN windows and a readyShortfall metric.
+- Healthy candidates are ranked by quality, moment value and freshness so ERN can restore the strongest visitor windows first instead of spending all effort on broken cameras.
+- Degraded/offline/permission problems remain visible in a separate blocker list and still require explicit evidence before recovery.
+- The underlying truth gate is unchanged: current source verification plus fresh HUMAN_PLAYBACK is still required for readiness.
+
 ## 2026-09-24 — Research-only second embed-provider ledger
 - Added a non-public embed-research ledger for potential second-provider expansion.
 - Seeded it with three current official Monterey Bay Aquarium YouTube live cams: Monterey Bay, Open Sea and Jelly Cam.

@@ -16,7 +16,7 @@ function evidenceFor(batch,id,now,maxAgeHours){
     media:current&&observation.httpOk===true&&["HUMAN_PLAYBACK","MEDIA_ENDPOINT"].includes(observation.evidenceKind)
   };
 }
-export function insideERNRecoveryStatus(sources=[],entries=[],{now=new Date(),observationMaxAgeHours=24,limit=20}={}){
+export function insideERNRecoveryStatus(sources=[],entries=[],{now=new Date(),observationMaxAgeHours=24,limit=20,targetReady=5}={}){
   const embeds=(sources||[]).filter(s=>s.playback==="EMBED");
   const batch=providerObservationBatch(entries,{observedAt:now instanceof Date?now.toISOString():now,knownSourceIds:(sources||[]).map(s=>s.id)});
   const ready=[],queue=[];
@@ -41,22 +41,29 @@ export function insideERNRecoveryStatus(sources=[],entries=[],{now=new Date(),ob
       action,reason,priority,observedAt:evidence.observation?.observedAt||null,
       lastSuccessfulCheck:source.lastSuccessfulCheck||source.checkedAt||null,
       sourceUrl:source.sourceUrl||null,embedUrl:source.embedUrl||null,
+      quality:Number(source.quality)||0,moment:Number(source.moment)||0,freshness:Number(source.freshness)||0,
       requiredEvidence:action==="REVIEW_EMBED_PERMISSION"?["PERMISSION_REVIEW"]:["HUMAN_PLAYBACK"]
     });
   }
   queue.sort((a,b)=>b.priority-a.priority||(Date.parse(a.lastSuccessfulCheck||0)||0)-(Date.parse(b.lastSuccessfulCheck||0)||0)||a.id.localeCompare(b.id));
+  const restorationCandidates=queue.filter(x=>x.health==="HEALTHY"&&x.action!=="REVIEW_EMBED_PERMISSION").map(x=>({...x,restorationScore:Number((x.quality+x.moment*.25+x.freshness*.15).toFixed(2))})).sort((a,b)=>b.restorationScore-a.restorationScore||b.quality-a.quality||a.id.localeCompare(b.id));
+  const blocked=queue.filter(x=>x.health!=="HEALTHY"||x.action==="REVIEW_EMBED_PERMISSION");
   return{
     generatedAt:now instanceof Date?now.toISOString():new Date(now).toISOString(),
     insideERN:embeds.length,
     ready:ready.length,
+    targetReady,
+    readyShortfall:Math.max(0,targetReady-ready.length),
     recoveryDebt:queue.length,
     degraded:queue.filter(x=>x.reason==="DEGRADED_EMBED").length,
     staleSource:queue.filter(x=>["STALE_CHECK","EXPIRED_CHECK"].includes(x.reason)).length,
     missingHumanPlayback:queue.filter(x=>x.reason==="MISSING_CURRENT_HUMAN_PLAYBACK").length,
     stalePlaybackEvidence:queue.filter(x=>x.reason==="STALE_PLAYBACK_EVIDENCE").length,
     readySources:ready,
+    restorationCandidates:restorationCandidates.slice(0,limit),
+    blocked:blocked.slice(0,limit),
     next:queue.slice(0,limit),
     rejectedObservations:batch.rejected,
-    note:"Recovery status is read-only. A source becomes ready only with healthy/current source state, EMBED_ALLOWED permission and current HUMAN_PLAYBACK evidence."
+    note:"Recovery status is read-only. Restore healthy high-value candidates first to close the readyShortfall; degraded/offline/permission blockers stay separate. A source becomes ready only with healthy/current source state, EMBED_ALLOWED permission and current HUMAN_PLAYBACK evidence."
   };
 }

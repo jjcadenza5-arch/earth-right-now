@@ -12,9 +12,9 @@ const observations=[
  {id:"degraded",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-24T08:10:00Z"}
 ];
 const r=insideERNRecoveryStatus(sources,observations,{now,limit:10});
-assert.equal(r.ready,1);assert.equal(r.recoveryDebt,3);
+assert.equal(r.ready,1);assert.equal(r.targetReady,5);assert.equal(r.readyShortfall,4);assert.equal(r.recoveryDebt,3);
 assert.equal(r.readySources[0].id,"ready");
 assert.equal(r.next[0].id,"degraded");assert.equal(r.next[0].action,"REPROVE_VISITOR_PLAYBACK");
 assert.ok(r.next.some(x=>x.id==="stale-source"&&x.action==="REFRESH_SOURCE_AND_PLAYBACK"));
-assert.ok(r.next.some(x=>x.id==="no-human"&&x.reason==="MISSING_CURRENT_HUMAN_PLAYBACK"));
+assert.ok(r.next.some(x=>x.id==="no-human"&&x.reason==="MISSING_CURRENT_HUMAN_PLAYBACK"));assert.ok(r.restorationCandidates.some(x=>x.id==="stale-source"));assert.ok(r.blocked.some(x=>x.id==="degraded"));
 console.log("ERN inside-ERN recovery queue passed");

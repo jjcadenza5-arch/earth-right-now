@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Inside-ERN restoration priority
+- Added a five-window ready target and shortfall metric.
+- Split healthy high-value restoration candidates from degraded/offline blockers.
+- Ranked restoration candidates by visitor value while preserving the same evidence gate.
+
 ## 2026-09-24 — Research-only second embed-provider ledger
 - Added three official Monterey Bay Aquarium YouTube live cams as non-public research candidates.
 - Candidates remain blocked until per-video embed availability and deployed HUMAN_PLAYBACK are confirmed.
