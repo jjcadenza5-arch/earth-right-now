@@ -300,7 +300,7 @@
     "officialUrl": "https://couchtourist.com/cams/japan/hokkaido/kijihiki-plateau-hokkaido-japan/",
     "embedUrl": "https://couchtourist.com/embed/cam/8657/",
     "quality": 82,
-    "freshness": 90,
+    "freshness": 96,
     "moment": 0,
     "categories": [
       "Mountains",
@@ -308,15 +308,16 @@
     ],
     "rightsBasis": "Current CouchTourist page exposes an Embed this cam iframe and asks users to retain CouchTourist attribution.",
     "recoveredFrom": "earth-right-now-live-v16.05.html",
-    "lastSuccessfulCheck": "2026-09-19",
-    "checkedAt": "2026-09-19",
+    "lastSuccessfulCheck": "2026-09-24T15:07:00Z",
+    "checkedAt": "2026-09-24T15:07:00Z",
     "failureReason": null,
     "story": "A broad Hokkaido highland view for checking the plateau, sky and mountain atmosphere before exploring the area.",
     "lat": 41.943912,
     "lon": 140.616395,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.harp.lg.jp/opendata/dataset/2241/resource/8354/content.html",
-    "coordinateNote": "Hokkaido/Hokuto public open-data coordinates for the Kijihiki Plateau panorama viewpoint."
+    "coordinateNote": "Hokkaido/Hokuto public open-data coordinates for the Kijihiki Plateau panorama viewpoint.",
+    "freshnessEvidence": "Fresh CouchTourist Kijihiki Plateau page remains current on 2026-09-24 and still exposes the same provider embed iframe (cam 8657) with attribution instructions. This confirms provider-page/embed availability only; deployed HUMAN_PLAYBACK remains separately unverified."
   },
   {
     "id": "st-moritz",
@@ -339,18 +340,19 @@
     "officialUrl": "https://www.stmoritz.com/en",
     "embedUrl": null,
     "thumbnailUrl": null,
-    "checkedAt": "2026-09-21T22:05:00+07:00",
-    "lastSuccessfulCheck": "2026-09-21T22:05:00+07:00",
+    "checkedAt": "2026-09-24T15:07:00Z",
+    "lastSuccessfulCheck": "2026-09-24T15:07:00Z",
     "failureReason": null,
     "quality": 84,
-    "freshness": 90,
+    "freshness": 97,
     "moment": 82,
     "story": "Enjoy the Engadin live or check conditions before choosing a mountain day.",
     "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented.",
     "lat": 46.497777,
     "lon": 9.838323,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.stmoritz.com/en"
+    "coordinateSourceUrl": "https://www.stmoritz.com/en",
+    "freshnessEvidence": "Fresh official St. Moritz webcam page remains current on 2026-09-24 and lists live panorama webcams including St. Moritz / Corviglia / Piz Nair views. ERN remains EXTERNAL_LIVE + LINK_ONLY + EXTERNAL; no embed permission is inferred."
   },
   {
     "id": "verbier",
