@@ -1,3 +1,7 @@
+## 2026-09-24 — Clean JSON operations packet output
+- Switched retained operations-packet commands to silent npm execution so artifact files contain script JSON rather than npm command banners.
+- This keeps the daily packet machine-readable for future comparison/automation while preserving the same fail-visible workflow behavior.
+
 ## 2026-09-24 — Retained daily operations packet
 - The scheduled read-only ERN operations audit now writes each diagnostic to a separate JSON snapshot and retains the packet as a GitHub Actions artifact for 14 days.
 - Packet contents include verification horizon, Watch Earth live-now status, product balance, provider worklist, inside-ERN recovery, provider resilience, embed research, and consolidated operations status.
