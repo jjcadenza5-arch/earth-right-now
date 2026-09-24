@@ -1,3 +1,11 @@
+## 2026-09-24 — NPS current-source refresh tranche
+- Refreshed source-currentness evidence for Grand Canyon, Mount Rainier and Glacier National Park from current official National Park Service webcam pages.
+- Grand Canyon's current NPS webcam surfaces include active refreshed views such as South Entrance Station.
+- Mount Rainier's official webcam system still lists active Longmire/Paradise/Sunrise views.
+- Glacier's official webcam directory remains current, with active individual webcam pages.
+- Updated only checkedAt/lastSuccessfulCheck/freshness evidence. All three remain external LINK_ONLY sources; no embed or playback rights were inferred.
+- Added a regression guard preserving HEALTHY + LINK_ONLY + EXTERNAL semantics for the refreshed NPS tranche.
+
 ## 2026-09-24 — Jungfrau current provider-offline state
 - Rechecked the official Jungfrau Region webcam collection. The official current page still lists all 10 webcams as Offline / no connection.
 - Refreshed ERN's Jungfrau verification timestamp and failure evidence without claiming any working live camera.

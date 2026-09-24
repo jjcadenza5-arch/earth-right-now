@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — NPS current-source refresh
+- Refreshed Grand Canyon, Mount Rainier and Glacier official webcam currentness from current NPS evidence.
+- All remain LINK_ONLY / EXTERNAL; no display permission or inside-ERN playback was inferred.
+
 ## 2026-09-24 — Jungfrau provider-offline refresh
 - Fresh official evidence still reports the Jungfrau webcam collection offline.
 - ERN keeps it degraded/link-only and defers it to provider-recovery recheck instead of immediate human review.
