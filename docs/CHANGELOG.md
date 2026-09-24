@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Truthful inside-ERN release metrics
+- Separated configured embed/image capability from fresh human-proven embeds and current refreshed images in deployment/product reports.
+- Removed the old generic 21-day freshness metric and misleading playableInsideERN label.
+
 ## 2026-09-24 — Shared Hero/Viewer media-frame factory
 - Refactored Hero preview and full Viewer onto one controlled iframe factory.
 - Preserved the single-iframe-path performance rule instead of loosening it.
