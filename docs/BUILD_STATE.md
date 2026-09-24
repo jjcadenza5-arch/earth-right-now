@@ -1,3 +1,10 @@
+## 2026-09-24 — Catalog coordinate-basis blocker cleared
+- Resolved the 13 malformed-source release rejections identified by the retained Operations Check artifact.
+- All 13 records used VERIFIED_PLACE_REFERENCE, which duplicated ERN's already-established PLACE_REFERENCE coordinate meaning.
+- Normalized those records to the canonical PLACE_REFERENCE contract without changing coordinates, source provenance, map behavior or visitor-visible content.
+- Added a full-catalog guard regression requiring every source record to pass validation and locking the normalized records to PLACE_REFERENCE.
+- No coordinate was moved and no precision claim was upgraded.
+
 ## 2026-09-24 — Catalog gate rejection details retained
 - Operations status now preserves catalogReleaseGate.rejectedDetails instead of reducing malformed-source diagnostics to a count only.
 - This lets the retained daily artifact identify each rejected source ID and validator error before any catalog edit is attempted.

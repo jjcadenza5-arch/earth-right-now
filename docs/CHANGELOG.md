@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Catalog coordinate basis normalization
+- Normalized 13 VERIFIED_PLACE_REFERENCE records to the canonical PLACE_REFERENCE contract.
+- Catalog guard now has regression coverage requiring zero rejected source records.
+
 ## 2026-09-24 — Catalog gate rejection details retained
 - Daily operations now retains exact malformed-source IDs/errors instead of only the rejected-record count.
 

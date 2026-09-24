@@ -682,7 +682,7 @@
     "freshnessEvidence": "Current official San Diego Zoo Live Cameras page explicitly presents live wildlife cameras for the Zoo and Safari Park and separately labels prerecorded content where applicable.",
     "lat": 32.7356967,
     "lon": -117.1515722,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/San_Diego_Zoo",
     "coordinateNote": "Zoo-site reference point for Atlas placement; not claimed as a specific camera position."
   },
@@ -747,7 +747,7 @@
     "freshnessEvidence": "Current official Chamonix-Mont-Blanc Webcams page exposes a broad active webcam collection across the valley, mountains, villages and lifts.",
     "lat": 45.9230556,
     "lon": 6.8697222,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://fr.wikipedia.org/wiki/Chamonix-Mont-Blanc",
     "coordinateNote": "Chamonix town reference point for a multi-webcam destination; not a specific camera coordinate."
   },
@@ -812,7 +812,7 @@
     "freshnessEvidence": "Current official Whistler Blackcomb Mountain Cams page explicitly labels LIVE MOUNTAIN CAMS / Live Webcams and exposes multiple active camera players.",
     "lat": 50.1163889,
     "lon": -122.9541667,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://apps.gov.bc.ca/pub/bcgnws/names/34795.html",
     "coordinateNote": "Official BC Geographical Names Whistler community reference point for the resort destination."
   },
@@ -1832,7 +1832,7 @@
     "story": "A rural Taitung landscape around Chihshang, with fields, open sky and mountain backdrop.",
     "lat": 23.1166667,
     "lon": 121.2166667,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q1135297",
     "coordinateNote": "Chihshang Township reference point for Paradise Road; not claimed as exact webcam position.",
     "freshnessEvidence": "Current CouchTourist Chihshang Paradise Road page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 1037). Source page is current; deployed ERN playback remains separately unverified."
@@ -2076,7 +2076,7 @@
     "story": "A harbour-city window in St. John’s, Newfoundland and Labrador, for waterfront activity, sky and coastal atmosphere.",
     "lat": 47.565556,
     "lon": -52.698056,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q111959894",
     "coordinateNote": "St. John's Harbour reference point; not claimed as exact webcam position.",
     "freshnessEvidence": "Current CouchTourist St. John's Harbour page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 151). Source page is current; deployed ERN playback remains separately unverified."
@@ -2144,7 +2144,7 @@
     "story": "A mountain-resort view at Skeikampen for alpine conditions, landscape and seasonal snow.",
     "lat": 61.35,
     "lon": 10.083333,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q2786332",
     "coordinateNote": "Skeikampen mountain/destination reference point; not claimed as exact webcam position.",
     "playbackVerifiedAt": "2026-09-24T08:05:00Z"
@@ -2246,7 +2246,7 @@
     "rightsBasis": "Current official municipal tourism page is titled Live Webcam and identifies five live-image webcam viewpoints. ERN keeps this LINK_ONLY and does not infer embed permission.",
     "lat": 43.9166667,
     "lon": 8.0833333,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Diano_Marina",
     "coordinateNote": "Diano Marina town reference point; not claimed as exact webcam position."
   },
@@ -2280,7 +2280,7 @@
     "failureReason": null,
     "lat": 43.41731,
     "lon": 142.42447,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://mapcarta.com/W68744759",
     "coordinateNote": "Farm Tomita site reference point based on mapped garden feature; official Farm Tomita address independently confirms Nakafurano location."
   },
@@ -2314,7 +2314,7 @@
     "failureReason": null,
     "lat": 21.2800172,
     "lon": -157.8274441,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://fr.wikipedia.org/wiki/Waikiki",
     "coordinateNote": "Waikiki neighbourhood reference point for the live beach/city destination; not claimed as exact webcam position."
   },
@@ -2381,7 +2381,7 @@
     "rightsBasis": "Current official Visit Chioggia page explicitly offers a Sottomarina live webcam for real-time beach weather and conditions. ERN keeps it LINK_ONLY and does not infer embed permission.",
     "lat": 45.1926833,
     "lon": 12.2930139,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Sottomarina",
     "coordinateNote": "Sottomarina place reference for the Chioggia beach destination; not claimed as exact webcam position."
   },
@@ -2415,7 +2415,7 @@
     "rightsBasis": "Current official Visit Chiyoda Sakura Festival pages explicitly offer the Chidori-ga-fuchi live camera. ERN keeps the source LINK_ONLY and does not infer display permission.",
     "lat": 35.686,
     "lon": 139.74496,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q6631821",
     "coordinateNote": "Chidorigafuchi Park reference point for the Green Way destination; not claimed as exact camera position."
   },
@@ -2483,7 +2483,7 @@
     "rightsBasis": "Current verified EarthCam live-stream page identifies Copacabana Beach in Rio. ERN keeps this LINK_ONLY and does not infer embed rights.",
     "lat": -22.9669444,
     "lon": -43.1808333,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q202730",
     "coordinateNote": "Copacabana neighbourhood/beach reference point; not claimed as exact camera position."
   },
@@ -2517,7 +2517,7 @@
     "rightsBasis": "Current provider page explicitly presents a live webcam of Torres del Paine and Río Serrano. ERN keeps this LINK_ONLY and does not infer embed rights.",
     "lat": -50.9830556,
     "lon": -72.9663889,
-    "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
+    "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Nationalpark_Torres_del_Paine",
     "coordinateNote": "Torres del Paine National Park reference point for the Río Serrano destination; not claimed as exact webcam position."
   },
