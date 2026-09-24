@@ -1,3 +1,10 @@
+## 2026-09-24 — Catalog-owned featured holds
+- Moved the four existing stable-beta feature holds out of a hard-coded browser ID list and into source catalog fields (`featuredHold` / `featuredHoldReason`).
+- The public app, backend Watch Earth selection and inside-ERN recovery queue now share the same curation state.
+- Held sources remain searchable/maintainable but are excluded from Watch Earth, Hero priority and healthy restoration-candidate ranking until the hold is explicitly removed.
+- Recovery reports held sources separately instead of treating them as broken or as priority restoration work.
+- Added schema declarations and regression coverage for the catalog/app/backend/recovery boundary.
+
 ## 2026-09-24 — Clean JSON operations packet output
 - Switched retained operations-packet commands to silent npm execution so artifact files contain script JSON rather than npm command banners.
 - This keeps the daily packet machine-readable for future comparison/automation while preserving the same fail-visible workflow behavior.
