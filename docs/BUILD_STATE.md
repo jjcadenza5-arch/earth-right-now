@@ -1,3 +1,10 @@
+## 2026-09-24 — Public truth labels separated from playback location
+- Corrected Explore/My Earth/Watch card labels so verified LIVE_IMAGE and LIVE_VIDEO sources no longer collapse to PREVIEW merely because they open at the provider.
+- Provider-opened LIVE_IMAGE now reads CURRENT IMAGE ↗; provider-opened LIVE_VIDEO reads LIVE VIDEO ↗.
+- Playback location still controls tone/action semantics, but source truth remains independent.
+- This aligns compact cards with destination/source truth and fixes the visible Oeschinensee/Reykjavík-style mismatch from the current site screenshots.
+- Added regression coverage for the truth/playback boundary.
+
 ## 2026-09-24 — Visible poster fallback + Atlas unpinned UI repair
 - Removed browser broken-image glyphs from the main window cards and compact destination cards: failed remote thumbnails are now removed immediately and replaced by ERN's generated scenic poster.
 - Preserved the existing generated-background style instead of introducing a redesign.

@@ -32,8 +32,8 @@ let lang=readSavedText("ern-language","en");if(!translations[lang])lang="en";
 const t=k=>translations[lang]?.[k]||translations.en[k]||k;
 function cleanUrl(v){try{const u=new URL(v,location.href);return /^https?:$/.test(u.protocol)?u.href:null}catch{return null}}
 function truthLabel(s){if(s.truth==="LIVE_VIDEO")return"LIVE VIDEO";if(s.truth==="LIVE_IMAGE")return"LIVE IMAGE";if(s.truth==="EXTERNAL_LIVE")return"EXTERNAL LIVE";if(s.truth==="PARTNER")return"PARTNER";return"PREVIEW"}
-function truthTone(s){if(isInside(s)&&s.truth==="LIVE_VIDEO")return"live-here";if(isInside(s)&&s.truth==="LIVE_IMAGE")return"current-image";if(s.truth==="EXTERNAL_LIVE")return"external-live";if(s.truth==="PARTNER")return"partner";return"preview"}
-function publicTruth(s){if(isInside(s)&&s.truth==="LIVE_VIDEO")return"LIVE HERE";if(isInside(s)&&s.truth==="LIVE_IMAGE")return"CURRENT IMAGE";if(s.truth==="EXTERNAL_LIVE")return"LIVE ↗";if(s.truth==="PARTNER")return"PARTNER";return"PREVIEW"}
+function truthTone(s){if(isInside(s)&&s.truth==="LIVE_VIDEO")return"live-here";if(isInside(s)&&s.truth==="LIVE_IMAGE")return"current-image";if(["LIVE_VIDEO","LIVE_IMAGE","EXTERNAL_LIVE"].includes(s.truth))return"external-live";if(s.truth==="PARTNER")return"partner";return"preview"}
+function publicTruth(s){if(s.truth==="LIVE_VIDEO")return isInside(s)?"LIVE HERE":"LIVE VIDEO ↗";if(s.truth==="LIVE_IMAGE")return isInside(s)?"CURRENT IMAGE":"CURRENT IMAGE ↗";if(s.truth==="EXTERNAL_LIVE")return"LIVE ↗";if(s.truth==="PARTNER")return"PARTNER";return"PREVIEW"}
 function allowAmbientLive(){return !(navigator.connection?.saveData||globalThis.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches)}
 function isInside(s){return!!(s&&s.health!=="OFFLINE"&&((s.playback==="EMBED"&&cleanUrl(s.embedUrl))||(s.playback==="IMAGE_REFRESH"&&cleanUrl(s.sourceUrl))))}
 function localHour(s){if(!s?.timeZone)return null;try{const p=new Intl.DateTimeFormat("en-US",{timeZone:s.timeZone,hour:"2-digit",hour12:false}).formatToParts(new Date());const h=Number(p.find(x=>x.type==="hour")?.value);return Number.isFinite(h)?h%24:null}catch{return null}}
