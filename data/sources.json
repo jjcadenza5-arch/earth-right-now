@@ -1503,8 +1503,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-19",
-    "lastSuccessfulCheck": "2026-09-19",
+    "checkedAt": "2026-09-24T15:37:00Z",
+    "lastSuccessfulCheck": "2026-09-24T15:37:00Z",
     "failureReason": null,
     "freshness": 98,
     "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights.",
@@ -1525,7 +1525,8 @@
     "story": "A live view of Earth from an external camera on the International Space Station; signal handovers can temporarily show a blue screen.",
     "mapBehavior": "DYNAMIC_UNPINNED",
     "coordinateBasis": "DYNAMIC_ORBIT",
-    "coordinateNote": "The ISS position changes continuously, so ERN intentionally does not represent it with a static Living Atlas pin."
+    "coordinateNote": "The ISS position changes continuously, so ERN intentionally does not represent it with a static Living Atlas pin.",
+    "freshnessEvidence": "Fresh EarthCam Planet Earth page remains current on 2026-09-24 and states that Earth views are streamed from an external camera outside the International Space Station, with expected blue-screen periods during communications-satellite handovers. ERN remains LINK_ONLY + EXTERNAL."
   },
   {
     "id": "flam-fjord-official",
