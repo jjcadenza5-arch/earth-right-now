@@ -1,3 +1,10 @@
+## 2026-09-24 — Daily operator playback review queue
+- Added the proactive renewal/restoration queue to the retained daily operations packet instead of generating it only during release/review-page builds.
+- The private operator brief now shows renewal-first playback work with remaining proof hours when relevant.
+- Daily queue ordering remains advisory: it cannot mutate source truth, refresh playbackVerifiedAt, change health or auto-confirm playback.
+- Packet integrity validates review modes and the no-mutation/no-auto-verification boundary.
+- Added executable wiring/regression coverage so the operator queue cannot silently disappear from daily operations.
+
 ## 2026-09-24 — Research-only Explore player allowance
 - Added a separate research-only embed allow path for exact Explore.org /livecams/player/ URLs.
 - The normal public embed allowlist remains unchanged, so Explore cannot enter ERN visitor playback merely because it is researchable.

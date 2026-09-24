@@ -9,6 +9,7 @@ const requiredJson=[
  "provider-worklist.json",
  "inside-recovery.json",
  "inside-playback-horizon.json",
+ "operator-review-queue.json",
  "playback-evidence-consistency.json",
  "inside-provider-resilience.json",
  "embed-research.json",
@@ -57,6 +58,14 @@ export async function validateOperationsPacket(dir="ern-ops"){
       if(row?.catalogMutationAllowed!==false)issues.push({file:"source-availability-continuity.json",code:"CONTINUITY_MUTATION_BOUNDARY_VIOLATION",id:row?.id||null});
       if(row?.automaticHealthChangeAllowed!==false)issues.push({file:"source-availability-continuity.json",code:"CONTINUITY_HEALTH_BOUNDARY_VIOLATION",id:row?.id||null});
     }
+  }
+
+  const operatorReview=files["operator-review-queue.json"];
+  if(operatorReview){
+    if(operatorReview?.safety?.catalogMutationAllowed!==false)issues.push({file:"operator-review-queue.json",code:"OPERATOR_QUEUE_MUTATION_BOUNDARY_VIOLATION"});
+    if(operatorReview?.safety?.automaticPlaybackVerificationAllowed!==false)issues.push({file:"operator-review-queue.json",code:"OPERATOR_QUEUE_AUTO_VERIFY_BOUNDARY_VIOLATION"});
+    if(!Array.isArray(operatorReview?.items))issues.push({file:"operator-review-queue.json",code:"OPERATOR_QUEUE_ITEMS_NOT_ARRAY"});
+    for(const item of operatorReview?.items||[])if(!["RENEW","RESTORE"].includes(item?.reviewMode))issues.push({file:"operator-review-queue.json",code:"OPERATOR_QUEUE_INVALID_MODE",id:item?.id||null});
   }
 
   const providerFamilyResearch=files["provider-family-research.json"];

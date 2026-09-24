@@ -25,5 +25,6 @@ const submissionTransport=await optional(args[10]);
 const commercialVerificationHorizon=await optional(args[11]);
 const playbackEvidenceConsistency=await optional(args[12]);
 const providerFamilyResearch=await optional(args[13]);
+const operatorReviewQueue=await optional(args[14]);
 
-console.log(operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch}));
+console.log(operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,operatorReviewQueue}));

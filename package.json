@@ -55,7 +55,8 @@
     "business:submission-transport": "node scripts/submission-transport-readiness.mjs",
     "business:verification-horizon": "node scripts/commercial-verification-horizon.mjs",
     "inside:evidence-consistency": "node scripts/playback-evidence-consistency.mjs",
-    "inside:provider-family-research": "node scripts/provider-family-research-status.mjs"
+    "inside:provider-family-research": "node scripts/provider-family-research-status.mjs",
+    "inside:operator-review-queue": "node scripts/operator-review-queue-status.mjs"
   },
   "engines": {
     "node": ">=20"
