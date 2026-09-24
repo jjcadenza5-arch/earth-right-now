@@ -1,3 +1,11 @@
+## 2026-09-24 — Known degraded exceptions removed from immediate revalidation
+- Refined source-revalidation triage so intentionally held or already-understood degraded sources do not repeatedly appear as ordinary immediate work.
+- featuredHold sources now enter CURATION_HOLD until the hold is deliberately removed.
+- Sources carrying the explicit VISITOR_PLAYBACK_REJECTED_* state enter DEFERRED_PLAYBACK_REPROVE rather than immediate human-media review.
+- This matches the current ERN recovery strategy: close the 3/5 inside shortfall with strong healthy candidates first, then revisit rejected/degraded embeds separately.
+- Current catalog regression coverage locks Maui into CURATION_HOLD, Waikīkī South Shore and Cold Lake Marina into deferred playback reproof, while Jungfrau remains genuine HUMAN_MEDIA_REVIEW.
+- No source health or truth is changed by triage.
+
 ## 2026-09-24 — Action-oriented source revalidation triage
 - Split the broad source-revalidation debt into distinct evidence lanes instead of treating every stale/recheck item as equally urgent.
 - Immediate lanes are permission review, degraded/unknown human-media review and missing-page manual source review.

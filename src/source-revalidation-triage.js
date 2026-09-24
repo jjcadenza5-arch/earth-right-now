@@ -5,7 +5,9 @@ export function sourceRevalidationTriage(sources=[],{availability=null,continuit
   const items=buildRevalidationQueue(sources).map(entry=>{
     const s=entry.source,a=availabilityMap.get(String(s.id))||null,c=continuityMap.get(String(s.id))||null;
     let lane="UNSAMPLED_RECHECK",action="RUN_OR_REVIEW_SOURCE_CHECK",urgency=30;
-    if(s.permission==="UNKNOWN"){lane="PERMISSION_REVIEW";action="REVIEW_PERMISSION_BEFORE_PLAYBACK";urgency=100}
+    if(s.featuredHold===true){lane="CURATION_HOLD";action="KEEP_DEFERRED_UNTIL_HOLD_REMOVED";urgency=0}
+    else if(String(s.failureReason||"").startsWith("VISITOR_PLAYBACK_REJECTED_")){lane="DEFERRED_PLAYBACK_REPROVE";action="REPROVE_ONLY_AFTER_PRIMARY_RECOVERY_OR_EXPLICIT_REVIEW";urgency=25}
+    else if(s.permission==="UNKNOWN"){lane="PERMISSION_REVIEW";action="REVIEW_PERMISSION_BEFORE_PLAYBACK";urgency=100}
     else if(s.health==="DEGRADED"||s.health==="UNKNOWN"){lane="HUMAN_MEDIA_REVIEW";action="REVIEW_CURRENT_MEDIA_AND_SOURCE";urgency=90}
     else if(c?.state==="PERSISTENT_MISSING_REVIEW"||a?.outcome==="PAGE_MISSING"){lane="MANUAL_SOURCE_REVIEW";action="VERIFY_PROVIDER_PAGE_OR_REPLACEMENT";urgency=85}
     else if(a?.outcome==="ACCESS_BLOCKED"){lane="ACCESS_LIMITED";action="REVIEW_PROVIDER_ACCESS_PATTERN";urgency=50}
@@ -29,6 +31,8 @@ export function sourceRevalidationTriage(sources=[],{availability=null,continuit
       editorialRecheck:count("EDITORIAL_RECHECK"),
       accessLimited:count("ACCESS_LIMITED"),
       retryLater:count("RETRY_LATER"),
+      deferredPlaybackReprove:count("DEFERRED_PLAYBACK_REPROVE"),
+      curationHold:count("CURATION_HOLD"),
       unsampled:count("UNSAMPLED_RECHECK")
     },
     immediate:items.filter(x=>x.urgency>=80).slice(0,limit),

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Known degraded exceptions removed from immediate revalidation
+- Featured holds and already-known visitor playback rejections no longer inflate the immediate source-review queue.
+- Maui stays held; Waikīkī South Shore and Cold Lake stay deferred; genuinely unresolved degraded sources remain immediate.
+
 ## 2026-09-24 — Action-oriented source revalidation triage
 - Revalidation debt is now separated into immediate human/permission/source-review work and routine reachable/access/network follow-up.
 - Page availability remains non-live, non-mutating evidence.
