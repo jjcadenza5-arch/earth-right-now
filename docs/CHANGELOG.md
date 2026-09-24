@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Operations history cache recovery
+- Empty/corrupt previous availability or trend cache now falls back to baseline instead of aborting current operations.
+- Current observations remain strict and fail closed if malformed.
+
 ## 2026-09-24 — Operations fail-closed repair
 - Fixed malformed source-availability executable code that had been hidden by tee pipelines.
 - Operations workflow now uses pipefail so upstream npm/validator failures cannot appear green.

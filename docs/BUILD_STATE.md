@@ -1,3 +1,10 @@
+## 2026-09-24 — Operations history cache recovery
+- Hardened availability-continuity and trend-comparison CLIs against empty/corrupt cached history left by earlier failed runs.
+- Missing, blank or malformed previous-history files now recover as a clean baseline instead of aborting the current operations packet.
+- Current input remains strict: malformed current availability/trend data still fails rather than being ignored.
+- This allows the next valid run to overwrite the bad cache with fresh source availability and trend snapshots.
+- Added regression coverage for both empty and malformed historical cache files.
+
 ## 2026-09-24 — Operations fail-closed repair
 - Diagnosed a false-green Operations Check from the retained artifact rather than trusting the workflow badge.
 - Fixed a literal \\n sequence in source-availability-observer.js that made the availability module fail to parse.
