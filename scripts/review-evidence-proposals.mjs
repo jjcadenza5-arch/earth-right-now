@@ -18,5 +18,8 @@ console.log(JSON.stringify(reviewEvidenceProposals(packet,{
   knownSourceIds:sources.map(x=>x.id),
   researchIds:research.map(x=>x.id),
   availabilityReport:availability,
-  researchPreflight
+  researchPreflight,
+  expectedReviewOrigins:["https://earthrightnow.app/review/inside-ern.html"],
+  maxReviewAgeHours:24,
+  now:new Date()
 }),null,2));

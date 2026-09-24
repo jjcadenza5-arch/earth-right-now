@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Deployed-origin and freshness trust for human review evidence
+- Production review/proposal CLIs now accept human review evidence only from the deployed ERN review page and within the 24-hour proof window.
+- Wrong-origin, stale and future-dated review packets fail closed.
+
 ## 2026-09-24 — Guarded playback-proof application plan
 - Added a conflict-aware manual application plan for reviewed playback evidence.
 - It blocks stale/partial proof updates and requires catalog marker + HUMAN_PLAYBACK observation to move together.

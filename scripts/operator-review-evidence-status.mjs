@@ -5,4 +5,4 @@ const [packet,sources,research]=await Promise.all([
  JSON.parse(await readFile(new URL("../data/sources.json",import.meta.url),"utf8")),
  JSON.parse(await readFile(new URL("../data/embed-research-candidates.json",import.meta.url),"utf8"))
 ]);
-console.log(JSON.stringify(validateOperatorReviewEvidence(packet,{knownSourceIds:sources.map(x=>x.id),researchIds:research.map(x=>x.id)}),null,2));
+console.log(JSON.stringify(validateOperatorReviewEvidence(packet,{knownSourceIds:sources.map(x=>x.id),researchIds:research.map(x=>x.id),expectedReviewOrigins:["https://earthrightnow.app/review/inside-ern.html"],maxItemAgeHours:24,now:new Date()}),null,2));

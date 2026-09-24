@@ -16,9 +16,12 @@ export function reviewEvidenceProposals(packet,{
   researchIds=[],
   availabilityReport=null,
   researchPreflight=null,
-  maxEvidenceSeparationHours=24
+  maxEvidenceSeparationHours=24,
+  expectedReviewOrigins=[],
+  maxReviewAgeHours=null,
+  now=new Date()
 }={}){
-  const validated=validateOperatorReviewEvidence(packet,{knownSourceIds,researchIds});
+  const validated=validateOperatorReviewEvidence(packet,{knownSourceIds,researchIds,expectedReviewOrigins,maxItemAgeHours:maxReviewAgeHours,now});
   const availability=availabilityById(availabilityReport),preflight=preflightById(researchPreflight);
   const sourceProposals=[],researchProposals=[];
 

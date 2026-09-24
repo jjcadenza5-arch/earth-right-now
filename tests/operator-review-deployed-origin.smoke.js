@@ -1,0 +1,11 @@
+import assert from "node:assert/strict";import {validateOperatorReviewEvidence} from "../src/operator-review-evidence.js";
+const base={schemaVersion:1,kind:"ERN_OPERATOR_REVIEW_EVIDENCE",catalogMutationAllowed:false,networkStatus:"UNKNOWN_NOT_RECORDED",reviewOrigin:"https://earthrightnow.app/review/inside-ern.html",items:[{id:"a",type:"restore",outcome:"HUMAN_PLAYBACK_CONFIRMED",observedAt:"2026-09-24T14:00:00Z",evidenceKind:"HUMAN_REVIEW",networkStatus:"UNKNOWN_NOT_RECORDED"}]};
+let r=validateOperatorReviewEvidence(base,{knownSourceIds:["a"],expectedReviewOrigins:["https://earthrightnow.app/review/inside-ern.html"],maxItemAgeHours:24,now:new Date("2026-09-24T14:30:00Z")});
+assert.equal(r.ok,true);assert.equal(r.originTrusted,true);
+r=validateOperatorReviewEvidence({...base,reviewOrigin:"https://evil.example/review/inside-ern.html"},{knownSourceIds:["a"],expectedReviewOrigins:["https://earthrightnow.app/review/inside-ern.html"],maxItemAgeHours:24,now:new Date("2026-09-24T14:30:00Z")});
+assert.equal(r.ok,false);assert.ok(r.rejected.some(x=>x.reason==="UNTRUSTED_REVIEW_ORIGIN"));
+r=validateOperatorReviewEvidence({...base,items:[{...base.items[0],observedAt:"2026-09-22T10:00:00Z"}]},{knownSourceIds:["a"],expectedReviewOrigins:["https://earthrightnow.app/review/inside-ern.html"],maxItemAgeHours:24,now:new Date("2026-09-24T14:30:00Z")});
+assert.equal(r.ok,false);assert.ok(r.rejected.some(x=>x.reason==="REVIEW_EVIDENCE_EXPIRED"));
+r=validateOperatorReviewEvidence({...base,items:[{...base.items[0],observedAt:"2026-09-24T15:00:00Z"}]},{knownSourceIds:["a"],expectedReviewOrigins:["https://earthrightnow.app/review/inside-ern.html"],maxItemAgeHours:24,now:new Date("2026-09-24T14:30:00Z")});
+assert.equal(r.ok,false);assert.ok(r.rejected.some(x=>x.reason==="OBSERVED_AT_IN_FUTURE"));
+console.log("ERN deployed review origin and freshness validation passed");

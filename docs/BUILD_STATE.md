@@ -1,3 +1,11 @@
+## 2026-09-24 — Deployed-origin and freshness trust for human review evidence
+- Closed a trust gap in exported operator review packets: the validator can now require the exact deployed ERN review origin and a bounded evidence age.
+- Production review CLI paths require https://earthrightnow.app/review/inside-ern.html and reject evidence older than 24 hours before it can become a proposal.
+- Review timestamps materially in the future are rejected with a small clock-skew allowance.
+- Direct library validation remains configurable for tests/tooling, but production proposal generation now fails closed on wrong-origin, stale or future-dated evidence.
+- This verifies where/when the human review was recorded; it still does not auto-confirm permission, health or catalog truth.
+- Added regression and CLI coverage for trusted origin, untrusted origin, expiry and future timestamps.
+
 ## 2026-09-24 — Guarded playback-proof application plan
 - Added a final read-only planning layer between reviewed human evidence and any future manual catalog/ledger edit.
 - Ready playback proposals are rechecked against current source playback type, EMBED_ALLOWED permission, HEALTHY state, current playbackVerifiedAt and latest observation timestamp.
