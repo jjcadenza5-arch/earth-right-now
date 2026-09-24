@@ -18,15 +18,25 @@ export function operatorReviewQueue(sources=[],observations=[],{now=new Date(),l
   const restoration=(recovery.restorationCandidates||[])
     .filter(x=>x.embedUrl&&!renewalIds.has(String(x.id)))
     .map(x=>({...x,reviewMode:"RESTORE"}));
+  const recommendedRestorationCount=Math.min(recovery.readyShortfall,restoration.length);
+  const primaryItems=[...renewal,...restoration.slice(0,recommendedRestorationCount)].slice(0,limit);
+  const primaryIds=new Set(primaryItems.map(x=>String(x.id)));
   const items=[...renewal,...restoration].slice(0,limit);
+  const backlogItems=items.filter(x=>!primaryIds.has(String(x.id)));
   return{
     generatedAt:now instanceof Date?now.toISOString():new Date(now).toISOString(),
+    ready:recovery.ready,
+    targetReady:recovery.targetReady,
+    readyShortfall:recovery.readyShortfall,
     renewalCount:renewal.length,
     restorationCount:restoration.length,
+    recommendedRestorationCount,
+    primaryItems,
+    backlogItems,
     items,
     renewal:renewal.slice(0,limit),
     restoration:restoration.slice(0,limit),
     safety:{catalogMutationAllowed:false,automaticPlaybackVerificationAllowed:false},
-    note:"Operator review queue brings expiring HUMAN_PLAYBACK proof forward before expiry, then fills remaining capacity with restoration candidates. Review remains human and non-mutating."
+    note:"Operator review queue brings expiring HUMAN_PLAYBACK proof forward first, then recommends only enough restoration confirmations to close the current readyShortfall. Remaining candidates stay backlog. Review remains human and non-mutating."
   };
 }

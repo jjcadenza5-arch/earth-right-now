@@ -34,9 +34,11 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push("");
   }
   if(operatorReviewQueue?.items?.length){
+    const primary=operatorReviewQueue.primaryItems?.length?operatorReviewQueue.primaryItems:operatorReviewQueue.items;
     lines.push("## Operator playback review queue");
-    lines.push(`- ${operatorReviewQueue.renewalCount||0} renewal candidates; ${operatorReviewQueue.restorationCount||0} restoration candidates; showing ${operatorReviewQueue.items.length} prioritized items.`);
-    for(const item of operatorReviewQueue.items.slice(0,5))lines.push(`- ${item.title||item.id} — ${item.reviewMode||"REVIEW"}${item.reason?` / ${item.reason}`:""}${Number.isFinite(item.remainingHours)?` (${item.remainingHours}h remaining)`:""}`);
+    lines.push(`- Inside target: ${operatorReviewQueue.ready??0}/${operatorReviewQueue.targetReady??0}; shortfall ${operatorReviewQueue.readyShortfall??0}. Primary batch: ${operatorReviewQueue.renewalCount||0} renewal + ${operatorReviewQueue.recommendedRestorationCount??Math.min(operatorReviewQueue.restorationCount||0,operatorReviewQueue.readyShortfall||0)} restoration review(s).`);
+    for(const item of primary.slice(0,5))lines.push(`- ${item.title||item.id} — ${item.reviewMode||"REVIEW"}${item.reason?` / ${item.reason}`:""}${Number.isFinite(item.remainingHours)?` (${item.remainingHours}h remaining)`:""}`);
+    if(operatorReviewQueue.backlogItems?.length)lines.push(`- Backlog retained: ${operatorReviewQueue.backlogItems.length} additional prioritized candidate(s).`);
     lines.push("- Queue ordering is advisory and non-mutating; human playback review is still required.","");
   }
   if(playbackEvidenceConsistency?.summary){

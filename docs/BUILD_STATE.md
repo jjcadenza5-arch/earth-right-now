@@ -1,3 +1,11 @@
+## 2026-09-24 — Minimal human playback review batch
+- Reduced the operator review burden to the actual inside-ERN target gap instead of showing ten equally actionable restoration cards.
+- The queue now reports current ready/target/shortfall and recommends only enough restoration confirmations to close that shortfall, while still placing any expiring renewals first.
+- With the current 3/5 state, the primary human batch is two restoration candidates; additional high-quality candidates stay visible as backlog rather than immediate work.
+- The private review lab renders only the primary batch as loadable cards and lists remaining restoration backlog separately.
+- The operator brief uses the same primary-batch contract so operations and the review page cannot disagree about how much human work is needed.
+- Added regression coverage for a 3/5 -> two-restoration target and renewal-first behavior.
+
 ## 2026-09-24 — Operations history cache recovery
 - Hardened availability-continuity and trend-comparison CLIs against empty/corrupt cached history left by earlier failed runs.
 - Missing, blank or malformed previous-history files now recover as a clean baseline instead of aborting the current operations packet.

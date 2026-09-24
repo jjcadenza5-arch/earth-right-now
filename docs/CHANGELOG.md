@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Minimal human playback review batch
+- Operator review now asks for only enough restoration confirmations to close the current inside-ERN shortfall.
+- Additional candidates remain backlog, while expiring proof renewals still come first.
+
 ## 2026-09-24 — Operations history cache recovery
 - Empty/corrupt previous availability or trend cache now falls back to baseline instead of aborting current operations.
 - Current observations remain strict and fail closed if malformed.
