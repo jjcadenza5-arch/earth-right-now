@@ -127,6 +127,12 @@ function setProfile(){
  };
  return fixed[state.mode]||automatic;
 }
+function adaptiveWatchLimit(pool,target=20){
+ const inside=pool.filter(isInside).length,external=Math.max(0,pool.length-inside);
+ if(!pool.length)return 0;
+ if(inside<5)return Math.min(target,pool.length,inside+Math.min(external,12));
+ return Math.min(target,pool.length);
+}
 function buildWatch(sources){
  const profile=setProfile();
  let pool=sources.filter(watchEligible);
@@ -142,15 +148,16 @@ function buildWatch(sources){
    if(strict){const narrowed=pool.filter(strict);if(narrowed.length>=8)pool=narrowed}
  }
  const sorted=[...pool].sort((a,b)=>(baseScore(b)+profile.boost(b))-(baseScore(a)+profile.boost(a)));
+ const setLimit=adaptiveWatchLimit(sorted,20);
  const out=[],countries=new Map(),providers=new Map(),places=new Map();
  const reserveInside=sorted.filter(s=>isInside(s)&&s.health==="HEALTHY");
  for(const s of reserveInside){
-   if(out.length>=5)break;const place=s.placeId||s.id,provider=s.provider||"";
+   if(out.length>=Math.min(5,setLimit))break;const place=s.placeId||s.id,provider=s.provider||"";
    if(places.has(place)||(providers.get(provider)||0)>=3)continue;
    out.push(s);places.set(place,1);countries.set(s.country||"", (countries.get(s.country||"")||0)+1);providers.set(provider,(providers.get(provider)||0)+1)
  }
  for(const s of sorted){
-   if(out.length>=20)break;if(out.some(x=>x.id===s.id))continue;
+   if(out.length>=setLimit)break;if(out.some(x=>x.id===s.id))continue;
    const country=s.country||"",provider=s.provider||"",place=s.placeId||s.id;
    const cc=countries.get(country)||0,pc=providers.get(provider)||0,pl=places.get(place)||0;
    if(pl>=1&&out.length<16)continue;
@@ -158,7 +165,7 @@ function buildWatch(sources){
    if(pc>=4&&out.length<15)continue;
    out.push(s);places.set(place,pl+1);countries.set(country,cc+1);providers.set(provider,pc+1);
  }
- for(const s of sorted){if(out.length>=20)break;if(!out.some(x=>x.id===s.id))out.push(s)}
+ for(const s of sorted){if(out.length>=setLimit)break;if(!out.some(x=>x.id===s.id))out.push(s)}
  if(state.category==="random")out.sort(()=>Math.random()-.5);
  $("#setLabel").textContent=profile.label;$("#setReason").textContent=profile.reason;
  const signals=out.slice(0,6).map(s=>momentSignal(s));const strong=signals.filter(x=>x.score>=24).length;$("#momentSummary").textContent=strong?strong+" strong moment"+(strong===1?"":"s")+" near the top":"Balanced for the current moment";
