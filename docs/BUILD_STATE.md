@@ -1,3 +1,11 @@
+## 2026-09-24 — Affiliate application readiness boundary
+- Added a private readiness plan that separates ERN-side prerequisites from external affiliate enrollment work.
+- ERN-side prerequisites are now explicit: public site, privacy notice, affiliate disclosure policy, no-paid-ranking policy and verified travel-option research.
+- Current researched platforms can reach READY_FOR_USER_APPLICATION_DECISION, but never ACTIVE or tracked-link-ready from this plan.
+- External steps remain explicit: account/enrollment, application where required, acceptance, credential/link-tool configuration, final terms/disclosure review and private tracked-link verification.
+- Added Operations visibility and packet-integrity guards prohibiting automatic applications, credentials, tracked links, public activation or paid ranking.
+- No account was created, no application was submitted and no credentials were requested.
+
 ## 2026-09-24 — Private affiliate-platform research registry
 - Added current research-only program records for Booking.com, Agoda, Viator and Skyscanner, covering stays, activities/tickets and transport.
 - Booking.com official affiliate materials confirm application through regional affiliate networks and commission on qualified bookings.

@@ -22,6 +22,7 @@ const requiredJson=[
  "commercial-onboarding-plan.json",
  "commercial-research.json",
  "affiliate-platform-research.json",
+ "affiliate-application-readiness.json",
  "submission-transport-readiness.json",
  "trend-current.json",
  "trend-delta.json",
@@ -161,6 +162,15 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(affiliateResearch?.safety?.trackedLinksAllowed!==false)issues.push({file:"affiliate-platform-research.json",code:"AFFILIATE_RESEARCH_TRACKING_VIOLATION"});
     if(affiliateResearch?.safety?.paidRankingAllowed!==false)issues.push({file:"affiliate-platform-research.json",code:"AFFILIATE_RESEARCH_RANKING_VIOLATION"});
     if(affiliateResearch?.invalid)issues.push({file:"affiliate-platform-research.json",code:"INVALID_AFFILIATE_RESEARCH_ROWS",count:affiliateResearch.invalid});
+  }
+
+  const affiliateReadiness=files["affiliate-application-readiness.json"];
+  if(affiliateReadiness){
+    if(affiliateReadiness?.safety?.automaticApplicationAllowed!==false)issues.push({file:"affiliate-application-readiness.json",code:"AFFILIATE_READINESS_AUTO_APPLICATION_VIOLATION"});
+    if(affiliateReadiness?.safety?.automaticCredentialSetupAllowed!==false)issues.push({file:"affiliate-application-readiness.json",code:"AFFILIATE_READINESS_CREDENTIAL_VIOLATION"});
+    if(affiliateReadiness?.safety?.automaticTrackedLinkActivationAllowed!==false)issues.push({file:"affiliate-application-readiness.json",code:"AFFILIATE_READINESS_TRACKING_VIOLATION"});
+    if(affiliateReadiness?.safety?.automaticPublicActivationAllowed!==false)issues.push({file:"affiliate-application-readiness.json",code:"AFFILIATE_READINESS_PUBLIC_ACTIVATION_VIOLATION"});
+    if(affiliateReadiness?.safety?.paidRankingAllowed!==false)issues.push({file:"affiliate-application-readiness.json",code:"AFFILIATE_READINESS_RANKING_VIOLATION"});
   }
 
   const transport=files["submission-transport-readiness.json"];

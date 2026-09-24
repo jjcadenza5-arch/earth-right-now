@@ -61,7 +61,8 @@
     "inside:research-review-queue": "node scripts/research-review-queue.mjs",
     "sources:revalidation-triage": "node scripts/source-revalidation-triage.mjs",
     "business:research-status": "node scripts/commercial-research-status.mjs",
-    "business:affiliate-research": "node scripts/affiliate-platform-research-status.mjs"
+    "business:affiliate-research": "node scripts/affiliate-platform-research-status.mjs",
+    "business:affiliate-readiness": "node scripts/affiliate-application-readiness.mjs"
   },
   "engines": {
     "node": ">=20"

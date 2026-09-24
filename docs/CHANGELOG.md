@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Affiliate application readiness
+- Added a private readiness planner that stops at the explicit user/application boundary.
+- Operations now distinguishes ERN-side readiness from external enrollment, acceptance and credential work.
+
 ## 2026-09-24 — Affiliate-platform research staging
 - Staged Booking.com, Agoda, Viator and Skyscanner as private research-only affiliate programs.
 - Added operations and integrity guards preventing accidental relationship/credential/link activation.
