@@ -4,6 +4,7 @@ const requiredJson=[
  "verification-horizon.json",
  "source-availability.json",
  "source-availability-continuity.json",
+ "source-revalidation-triage.json",
  "watch-earth-now.json",
  "watch-earth-balance.json",
  "provider-worklist.json",
@@ -50,6 +51,16 @@ export async function validateOperationsPacket(dir="ern-ops"){
   if(availability){
     if(!Array.isArray(availability.results))issues.push({file:"source-availability.json",code:"RESULTS_NOT_ARRAY"});
     for(const row of availability.results||[])if(row?.provesLive!==false)issues.push({file:"source-availability.json",code:"AVAILABILITY_MUST_NOT_PROVE_LIVE",id:row?.id||null});
+  }
+
+  const revalidationTriage=files["source-revalidation-triage.json"];
+  if(revalidationTriage){
+    if(revalidationTriage?.safety?.catalogMutationAllowed!==false)issues.push({file:"source-revalidation-triage.json",code:"REVALIDATION_TRIAGE_MUTATION_BOUNDARY_VIOLATION"});
+    if(revalidationTriage?.safety?.automaticHealthChangeAllowed!==false)issues.push({file:"source-revalidation-triage.json",code:"REVALIDATION_TRIAGE_HEALTH_BOUNDARY_VIOLATION"});
+    if(revalidationTriage?.safety?.availabilityProvesLive!==false)issues.push({file:"source-revalidation-triage.json",code:"REVALIDATION_TRIAGE_LIVE_BOUNDARY_VIOLATION"});
+    for(const item of revalidationTriage?.items||[]){
+      if(item?.catalogMutationAllowed!==false||item?.automaticHealthChangeAllowed!==false||item?.availabilityProvesLive!==false)issues.push({file:"source-revalidation-triage.json",code:"REVALIDATION_TRIAGE_ITEM_BOUNDARY_VIOLATION",id:item?.id||null});
+    }
   }
 
   const continuity=files["source-availability-continuity.json"];

@@ -1,3 +1,11 @@
+## 2026-09-24 — Action-oriented source revalidation triage
+- Split the broad source-revalidation debt into distinct evidence lanes instead of treating every stale/recheck item as equally urgent.
+- Immediate lanes are permission review, degraded/unknown human-media review and missing-page manual source review.
+- Routine lanes separate reachable-page editorial rechecks, access-limited providers, transient retry-later checks and unsampled rechecks.
+- Reachable pages remain explicitly non-live evidence; access/network outcomes remain non-mutating.
+- Daily operations now retains source-revalidation-triage.json, and the operator brief tells the operator to work only the immediate lane first.
+- Packet integrity enforces no catalog mutation, no automatic health changes and no availability-to-live promotion.
+
 ## 2026-09-24 — Single primary second-provider test
 - Added a dedicated research review queue so ERN no longer asks the operator to test all second-provider candidates equally.
 - The queue prioritizes technically ready candidates with current provider-family terms evidence, safe provider-branded usage and a resolved network family.

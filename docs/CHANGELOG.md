@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Action-oriented source revalidation triage
+- Revalidation debt is now separated into immediate human/permission/source-review work and routine reachable/access/network follow-up.
+- Page availability remains non-live, non-mutating evidence.
+
 ## 2026-09-24 — Single primary second-provider test
 - Second-provider research now presents one best provider-diversification test first and keeps the remaining candidates as alternates.
 - Technical/terms readiness only changes review order; it never grants permission, playback proof or catalog promotion.

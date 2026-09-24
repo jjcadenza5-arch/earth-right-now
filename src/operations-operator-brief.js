@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,operatorReviewQueue,researchReviewQueue}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -79,6 +79,14 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     }
     lines.push("");
   }
+  if(sourceRevalidationTriage?.summary){
+    const q=sourceRevalidationTriage.summary;
+    lines.push("## Source revalidation triage");
+    lines.push(`- Immediate: ${(sourceRevalidationTriage.immediate||[]).length}; permission ${q.permissionReview||0}; human-media ${q.humanMediaReview||0}; manual-source ${q.manualSourceReview||0}.`);
+    lines.push(`- Routine: editorial reachable-page ${q.editorialRecheck||0}; access-limited ${q.accessLimited||0}; retry-later ${q.retryLater||0}; unsampled ${q.unsampled||0}.`);
+    for(const item of (sourceRevalidationTriage.immediate||[]).slice(0,5))lines.push(`- ${item.title||item.id} — ${item.lane}: ${item.action}`);
+    lines.push("- Triage is read-only; PAGE_REACHABLE never proves live playback and network/access failures never change catalog health automatically.","");
+  }
   if(commercialInventory){
     lines.push("## Commercial staging");
     lines.push(`- Stage: ${commercialInventory.stage||"UNKNOWN"}; public activation ${commercialInventory.publicActivationAllowed?"allowed":"off"}.`);
@@ -113,7 +121,8 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
   if(providerFamilyResearch?.needsTermsReview)lines.push("- Refresh stale provider terms evidence before permission review progresses.");
   if(providerFamilyResearch?.items?.length&&providerFamilyResearch.items.some(x=>x.technicalStatus==="SPECIFIC_EMBED_URL_REQUIRED"))lines.push("- Identify a current specific player URL for promising provider-family research before deployed playback testing.");
-  if((snapshot?.maintenance?.sourceRevalidation||0)>0)lines.push("- Work the highest-priority source revalidation items.");
+  if((sourceRevalidationTriage?.immediate||[]).length)lines.push("- Work only the immediate source-revalidation lane first; defer routine reachable/access/network items.");
+  else if((snapshot?.maintenance?.sourceRevalidation||0)>0)lines.push("- Work the highest-priority source revalidation items.");
   if((snapshot?.release?.blockers||0)>0)lines.push("- Keep release blockers visible; do not bypass them for presentation polish.");
   if((availabilityContinuity?.summary?.persistentMissing||0)>0)lines.push("- Review persistent PAGE_MISSING incidents manually before any catalog-health decision.");
   else if((a?.missing||0)>0)lines.push("- Review new PAGE_MISSING observations manually; wait for repeat evidence before any catalog-health decision.");

@@ -58,7 +58,8 @@
     "inside:provider-family-research": "node scripts/provider-family-research-status.mjs",
     "inside:operator-review-queue": "node scripts/operator-review-queue-status.mjs",
     "inside:review-apply-plan": "node scripts/playback-proof-application-plan.mjs",
-    "inside:research-review-queue": "node scripts/research-review-queue.mjs"
+    "inside:research-review-queue": "node scripts/research-review-queue.mjs",
+    "sources:revalidation-triage": "node scripts/source-revalidation-triage.mjs"
   },
   "engines": {
     "node": ">=20"
