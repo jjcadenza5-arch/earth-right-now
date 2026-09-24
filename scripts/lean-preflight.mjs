@@ -1,3 +1,5 @@
+import {recencyState} from "../src/source-recency.js";
+import {embedPlaybackCurrent} from "../src/embed-playback-current.js";
 import fs from "node:fs";
 
 const index=fs.readFileSync("index.html","utf8");
@@ -28,7 +30,7 @@ for(const shortcut of manifest.shortcuts||[]){
 
 if(!Array.isArray(sources) || sources.length < 20) throw new Error("source catalog is unexpectedly small");
 const ids=new Set(),allowedTruth=new Set(["LIVE_VIDEO","LIVE_IMAGE","EXTERNAL_LIVE","PARTNER","PREVIEW"]),allowedPlayback=new Set(["EMBED","IMAGE_REFRESH","EXTERNAL"]);
-let inside=0,checked=0;
+let configuredInside=0,provenEmbeds=0,currentImages=0,checked=0;
 for(const s of sources){
   if(!s?.id || !s?.title) throw new Error("source missing id/title");
   if(ids.has(s.id)) throw new Error("duplicate source id: "+s.id);
@@ -36,9 +38,11 @@ for(const s of sources){
   if(s.truth&&!allowedTruth.has(s.truth)) throw new Error("unknown truth label on "+s.id+": "+s.truth);
   if(s.playback&&!allowedPlayback.has(s.playback)) throw new Error("unknown playback mode on "+s.id+": "+s.playback);
   if(s.checkedAt||s.lastSuccessfulCheck) checked++;
-  if(s.health!=="OFFLINE" && ((s.playback==="EMBED"&&s.embedUrl)||(s.playback==="IMAGE_REFRESH"&&s.sourceUrl))) inside++;
+  if(s.health!=="OFFLINE" && ((s.playback==="EMBED"&&s.embedUrl)||(s.playback==="IMAGE_REFRESH"&&s.sourceUrl))) configuredInside++;
+  if(s.health==="HEALTHY"&&recencyState(s)==="CURRENT_CHECK"&&s.playback==="EMBED"&&s.embedUrl&&embedPlaybackCurrent(s)) provenEmbeds++;
+  if(s.health==="HEALTHY"&&recencyState(s)==="CURRENT_CHECK"&&s.playback==="IMAGE_REFRESH"&&s.sourceUrl) currentImages++;
 }
-if(inside < 10) throw new Error("not enough playable inside-ERN windows: "+inside);
+if(configuredInside < 10) throw new Error("not enough configured inside-ERN capabilities: "+configuredInside);
 if(checked < Math.ceil(sources.length*.9)) throw new Error("too many sources lack verification timestamps");
 
-console.log(JSON.stringify({ok:true,sources:sources.length,playableInsideERN:inside,verifiedTimestampCoverage:checked,htmlIds:htmlIds.size,appIdRefs:new Set(jsIds).size}));
+console.log(JSON.stringify({ok:true,sources:sources.length,configuredInsideERN:configuredInside,freshHumanProvenEmbeds:provenEmbeds,currentImageRefreshes:currentImages,currentInsideERN:provenEmbeds+currentImages,verifiedTimestampCoverage:checked,htmlIds:htmlIds.size,appIdRefs:new Set(jsIds).size}));
