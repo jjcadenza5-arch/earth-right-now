@@ -309,7 +309,12 @@
     "lastSuccessfulCheck": "2026-09-19",
     "checkedAt": "2026-09-19",
     "failureReason": null,
-    "story": "A broad Hokkaido highland view for checking the plateau, sky and mountain atmosphere before exploring the area."
+    "story": "A broad Hokkaido highland view for checking the plateau, sky and mountain atmosphere before exploring the area.",
+    "lat": 41.943912,
+    "lon": 140.616395,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.harp.lg.jp/opendata/dataset/2241/resource/8354/content.html",
+    "coordinateNote": "Hokkaido/Hokuto public open-data coordinates for the Kijihiki Plateau panorama viewpoint."
   },
   {
     "id": "st-moritz",
@@ -1714,7 +1719,12 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": null,
-    "story": "A Cape Town coastal perspective from Bloubergstrand toward Table Mountain and the Atlantic shoreline."
+    "story": "A Cape Town coastal perspective from Bloubergstrand toward Table Mountain and the Atlantic shoreline.",
+    "lat": -33.7973,
+    "lon": 18.461,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.openstreetmap.org/node/262719335",
+    "coordinateNote": "OpenStreetMap locality reference for Bloubergstrand, Western Cape."
   },
   {
     "id": "perdido-key-beach",
@@ -1742,7 +1752,12 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": null,
-    "story": "A Gulf Coast beach view at Perdido Key for seeing shoreline, surf and sky conditions."
+    "story": "A Gulf Coast beach view at Perdido Key for seeing shoreline, surf and sky conditions.",
+    "lat": 30.295185,
+    "lon": -87.440376,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.compass.com/homedetails/14239-Perdido-Key-Dr-Unit-PH13-Perdido-Key-FL-32507/GYLB3_pid/",
+    "coordinateNote": "Public property reference coordinates for the La Riva complex on Perdido Key."
   },
   {
     "id": "sasagawa-nagare",
@@ -1836,7 +1851,12 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": null,
-    "story": "An alpine window around Ponte di Legno and the Adamello area for mountain, snow and weather atmosphere."
+    "story": "An alpine window around Ponte di Legno and the Adamello area for mountain, snow and weather atmosphere.",
+    "lat": 46.2586,
+    "lon": 10.5087,
+    "coordinateBasis": "REGION_REFERENCE",
+    "coordinateSourceUrl": "https://mapcarta.com/25426064",
+    "coordinateNote": "Public geographic reference for Ponte di Legno town; ERN treats this as a regional reference for the Adamello-area view, not the camera position."
   },
   {
     "id": "pleasant-beach-lake-ontario",
@@ -1898,7 +1918,12 @@
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": "VISITOR_PLAYBACK_REJECTED_2026-09-20",
     "lastFailedCheck": "2026-09-20T12:34:00+07:00",
-    "story": "A Maui beach-and-surf perspective around Hale Pau Hana; ERN keeps it lower tier while playback quality is being reverified."
+    "story": "A Maui beach-and-surf perspective around Hale Pau Hana; ERN keeps it lower tier while playback quality is being reverified.",
+    "lat": 20.7182,
+    "lon": -156.4466,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://mapcarta.com/25364046",
+    "coordinateNote": "Public GeoNames-backed place reference for Hale Pau Hana in Kihei, Maui."
   },
   {
     "id": "bergen-ulriken",
@@ -2061,7 +2086,12 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": null,
-    "story": "A waterside view around Metung and the Gippsland Lakes, useful for seeing lake, sky and village atmosphere."
+    "story": "A waterside view around Metung and the Gippsland Lakes, useful for seeing lake, sky and village atmosphere.",
+    "lat": -37.8921089,
+    "lon": 147.8542936,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://clubsandpubsnearme.com.au/pubs/the-metung-hotel-metung-vic",
+    "coordinateNote": "Public place reference coordinates for The Metung Hotel at 64 Kurnai Avenue."
   },
   {
     "id": "skeikampen-ski",

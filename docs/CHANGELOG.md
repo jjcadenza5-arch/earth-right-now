@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Atlas static mapping complete
+- Completed the final six single-location place/region references.
+- Every static source is now mapped with provenance; only intentional dynamic/multi-site sources remain unpinned.
+- Added a catalog-wide regression gate for mapping completeness.
+
 ## 2026-09-24 — Atlas mapping tranche I
 - Mapped five previously unmapped single-location sources from explicit public coordinate evidence.
 - Kept each as PLACE_REFERENCE rather than an exact-camera claim.

@@ -1,3 +1,10 @@
+## 2026-09-24 — Atlas static mapping complete
+- Completed the remaining six single-location Atlas references: Kijihiki Plateau, Bloubergstrand, Perdido Key/La Riva, Hale Pau Hana, Metung and Ponte di Legno/Adamello.
+- Kijihiki uses Hokkaido/Hokuto public open data; Bloubergstrand uses an OpenStreetMap locality; the property/place destinations use documented public place references; Ponte di Legno is deliberately REGION_REFERENCE rather than an exact-camera claim.
+- ERN now has no unresolved static single-location sources: every source is either mapped with explicit provenance or intentionally unpinned because it is dynamic/multi-site.
+- Added a completeness regression gate so future catalog additions cannot silently reintroduce unproven static map gaps.
+- Source truth, permission and playback semantics remain unchanged.
+
 ## 2026-09-24 — Atlas mapping tranche I
 - Added conservative PLACE_REFERENCE coordinates to five previously unmapped single-location sources: Volcán Tajogaite, Sasagawa Nagare, Waikīkī Beach, Cold Lake Marina and Pleasant Beach Hotel/Lake Ontario.
 - Tajogaite uses Government of the Canary Islands coordinates; Sasagawa uses its public Wikidata coordinate record; Waikīkī, Cold Lake Marina and Pleasant Beach use explicit OpenStreetMap feature coordinates.
