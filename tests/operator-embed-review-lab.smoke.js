@@ -1,0 +1,10 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const build=fs.readFileSync("scripts/build-operator-review.mjs","utf8");
+assert.match(build,/noindex,nofollow,noarchive/);
+assert.match(build,/not authentication-protected/i);
+assert.match(build,/Not loaded\. Human playback proof is still required\./);
+assert.match(build,/Loading this frame is only a review step/);
+assert.match(build,/never writes to ERN data/);
+assert.match(build,/querySelectorAll\("\.load"\)/);
+assert.ok(!fs.readFileSync("index.html","utf8").includes("review/inside-ern.html"));
+console.log("ERN operator embed review lab contract passed");
