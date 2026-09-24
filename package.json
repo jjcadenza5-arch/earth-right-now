@@ -46,7 +46,8 @@
     "operations:brief": "node scripts/operations-operator-brief.mjs",
     "inside:playback-horizon": "node scripts/playback-evidence-horizon.mjs",
     "inside:research-preflight": "node scripts/embed-research-preflight.mjs",
-    "inside:review-evidence": "node scripts/operator-review-evidence-status.mjs"
+    "inside:review-evidence": "node scripts/operator-review-evidence-status.mjs",
+    "inside:review-proposals": "node scripts/review-evidence-proposals.mjs"
   },
   "engines": {
     "node": ">=20"
