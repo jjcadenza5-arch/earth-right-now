@@ -1,3 +1,10 @@
+## 2026-09-24 — Second-provider technical preflight
+- Added a research-only technical preflight for YouTube embed candidates using public YouTube oEmbed metadata plus direct candidate embed-page reachability.
+- A candidate can advance only to TECHNICALLY_READY_FOR_DEPLOYED_TEST; the preflight explicitly keeps permissionConfirmed=false, humanPlaybackConfirmed=false and promotionAllowed=false.
+- Passing technical preflight does not prove that the video is live/current, embeddable on ERN's deployed origin, legally/operationally approved, or suitable for the public catalog.
+- The daily operations packet now retains embed-research-preflight.json and the private operator brief shows whether each second-provider candidate is technically ready or still preflight-pending.
+- Added regression coverage for full/partial/unsupported classifications, safety fields and workflow/brief wiring.
+
 ## 2026-09-24 — Degraded source-page refresh tranche M
 - Revalidated the current CouchTourist provider pages for Waikīkī Beach and Cold Lake Marina; both pages still expose the same reviewed embed iframes.
 - Updated source-page currentness evidence only.

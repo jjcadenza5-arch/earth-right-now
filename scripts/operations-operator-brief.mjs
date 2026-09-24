@@ -17,5 +17,6 @@ const availability=await optional(args[2]);
 const recovery=await optional(args[3]);
 const research=await optional(args[4]);
 const playbackHorizon=await optional(args[5]);
+const researchPreflight=await optional(args[6]);
 
-console.log(operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon}));
+console.log(operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight}));
