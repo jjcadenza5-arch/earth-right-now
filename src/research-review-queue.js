@@ -3,7 +3,9 @@ function preflightById(report){return new Map((report?.rows||[]).map(x=>[String(
 function familyByProvider(report){return new Map(rows(report).filter(x=>x?.provider).map(x=>[String(x.provider),x]))}
 export function researchReviewQueue(candidates=[],{preflightReport=null,providerFamilyReport=null,primaryCount=1}={}){
   const preflight=preflightById(preflightReport),families=familyByProvider(providerFamilyReport);
-  const ranked=(candidates||[]).map(c=>{
+  const failedPlayback=(candidates||[]).filter(c=>c.playbackReview==="HUMAN_PLAYBACK_FAILED");
+  const reviewable=(candidates||[]).filter(c=>c.playbackReview!=="HUMAN_PLAYBACK_FAILED");
+  const ranked=reviewable.map(c=>{
     const p=preflight.get(String(c.id))||null,f=families.get(String(c.provider))||null;
     let score=0;
     if(p?.technicalReady===true)score+=100;
@@ -27,14 +29,15 @@ export function researchReviewQueue(candidates=[],{preflightReport=null,provider
     };
   }).sort((a,b)=>b.reviewPriority-a.reviewPriority||String(a.provider).localeCompare(String(b.provider))||String(a.id).localeCompare(String(b.id)));
   const count=Math.max(0,Math.min(Number(primaryCount)||0,ranked.length));
-  const primary=ranked.slice(0,count),alternates=ranked.slice(count);
+  const primary=ranked.slice(0,count),alternates=[...ranked.slice(count),...failedPlayback.map(c=>({...c,reviewPriority:-1,requiredHumanAction:"WAIT_FOR_TARGET_OR_PROVIDER_CHANGE",permissionStillRequired:true,promotionAllowed:false,technicalReady:false,technicalOutcome:"HUMAN_PLAYBACK_FAILED"}))];
   return{
     generatedAt:new Date().toISOString(),
-    total:ranked.length,
+    total:(candidates||[]).length,
+    failedPlayback:failedPlayback.length,
     primaryCount:primary.length,
     primary,
     alternates,
     safety:{catalogPromotionAllowed:false,automaticPermissionApprovalAllowed:false,automaticPlaybackConfirmationAllowed:false},
-    note:"Review one strongest provider-diversification candidate first. Technical readiness and current terms evidence only prioritize human testing; they do not confirm permission, playback or catalog eligibility."
+    note:"Review one strongest provider-diversification candidate first. Candidates with deployed HUMAN_PLAYBACK_FAILED evidence are moved out of the primary lane until their target/provider changes or an explicit retest is justified. Technical readiness and current terms evidence never confirm permission, playback or catalog eligibility."
   };
 }

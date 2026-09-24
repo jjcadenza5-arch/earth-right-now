@@ -1878,7 +1878,8 @@
     "coordinateBasis": "REGION_REFERENCE",
     "coordinateSourceUrl": "https://mapcarta.com/25426064",
     "coordinateNote": "Public geographic reference for Ponte di Legno town; ERN treats this as a regional reference for the Adamello-area view, not the camera position.",
-    "freshnessEvidence": "Current CouchTourist Ponte di Legno / Adamello page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 8621). Source page is current; deployed ERN playback remains separately unverified."
+    "freshnessEvidence": "Current CouchTourist Ponte di Legno / Adamello page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 8621). Source page is current; deployed ERN playback remains separately unverified.",
+    "playbackVerifiedAt": "2026-09-24T15:49:44.573Z"
   },
   {
     "id": "pleasant-beach-lake-ontario",
@@ -2122,7 +2123,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://clubsandpubsnearme.com.au/pubs/the-metung-hotel-metung-vic",
     "coordinateNote": "Public place reference coordinates for The Metung Hotel at 64 Kurnai Avenue.",
-    "freshnessEvidence": "Current CouchTourist Metung Hotel page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 4100). Source page is current; deployed ERN playback remains separately unverified."
+    "freshnessEvidence": "Current CouchTourist Metung Hotel page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 4100). Source page is current; deployed ERN playback remains separately unverified.",
+    "playbackVerifiedAt": "2026-09-24T15:51:30.088Z"
   },
   {
     "id": "skeikampen-ski",

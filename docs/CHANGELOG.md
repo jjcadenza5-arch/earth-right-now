@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Operator review evidence applied
+- Added atomic HUMAN_PLAYBACK proof for Ponte di Legno and Metung.
+- Recorded Explore Brooks Falls as research playback failed and deferred it from the primary research lane.
+- Removed completed-batch hard-coding from the operator review page preflight.
+
 ## 2026-09-24 — Operator review buttons repaired
 - Fixed a generated inline-script syntax error that made Load candidate and all other review-page controls inert.
 - Added a built-page preflight for review JavaScript and required candidate cards.

@@ -1,3 +1,12 @@
+## 2026-09-24 — Human operator review evidence applied
+- Accepted deployed-origin review evidence from https://earthrightnow.app/review/inside-ern.html while it was within the 24-hour evidence window.
+- Ponte di Legno — Adamello: HUMAN_PLAYBACK confirmed at 2026-09-24T15:49:44.573Z.
+- Metung — Gippsland Lakes: HUMAN_PLAYBACK confirmed at 2026-09-24T15:51:30.088Z.
+- For each confirmed source, the catalog playbackVerifiedAt marker and provider-observation HUMAN_PLAYBACK record were applied together at the identical review timestamp after verifying the source remained HEALTHY + EMBED_ALLOWED + EMBED and the current provider page still exposed the same reviewed embed target.
+- Explore.org Brooks Falls: deployed human review returned PLAYBACK_FAILED at 2026-09-24T15:51:16.022Z. It remains RESEARCH_ONLY and blocked from promotion; the failure is not interpreted as source removal or permission denial.
+- Failed research playback is removed from the primary provider-diversification test lane until the player/provider target changes or an explicit retest is justified.
+- Operator-review built-page preflight is now state-agnostic rather than hard-coding a completed review batch.
+
 ## 2026-09-24 — Operator review Load candidate failure fixed
 - Diagnosed the deployed review page from the actual GitHub Pages artifact after the user reported that all three Load candidate buttons appeared inert.
 - Root cause: the generated inline JavaScript contained an invalid literal newline inside the Download JSON Blob expression. Because the whole inline script failed parsing, no review-page button handlers were installed.

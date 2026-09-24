@@ -26,5 +26,19 @@
     "observedAt": "2026-09-24T08:05:00Z",
     "reason": "Fresh deployed-origin fullscreen playback was visually confirmed in the user-provided ERN screenshot.",
     "httpStatus": 200
+  },
+  {
+    "id": "ponte-di-legno-adamello",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-24T15:49:44.573Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; current provider page independently remained reachable and exposed the same reviewed embed target.",
+    "httpStatus": 200
+  },
+  {
+    "id": "metung-gippsland-lakes",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-24T15:51:30.088Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; current provider page independently remained reachable and exposed the same reviewed embed target.",
+    "httpStatus": 200
   }
 ]
