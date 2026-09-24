@@ -1,3 +1,12 @@
+## 2026-09-24 — Local-only operator review evidence packets
+- Extended the unlinked operator review lab with local-only human review controls: Playing & current, Failed / not playing, and Inconclusive.
+- Review controls remain disabled until the candidate iframe has actually been loaded in the deployed review page.
+- Observations are stored only in that browser's localStorage and can be copied or downloaded as a versioned ERN_OPERATOR_REVIEW_EVIDENCE JSON packet.
+- Exported evidence explicitly records networkStatus=UNKNOWN_NOT_RECORDED and catalogMutationAllowed=false; the lab never fabricates HTTP status or writes to ERN.
+- Added a repository-side validator and `npm run inside:review-evidence -- <packet.json>` command that checks known source/research IDs, outcomes, timestamps, duplicates, evidence kind and mutation/network boundaries.
+- Validation never converts human review into health, permission approval or catalog promotion automatically.
+- Added regression coverage for local capture wiring and evidence validation.
+
 ## 2026-09-24 — Unlinked operator embed review lab
 - Added a generated operator-only review surface at `/review/inside-ern.html` for future human playback checking.
 - The page is deliberately unlinked from ERN navigation, excluded from the sitemap, marked `noindex,nofollow,noarchive`, and disallowed for generic and OAI search crawlers.
