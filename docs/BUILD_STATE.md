@@ -1,3 +1,11 @@
+## 2026-09-24 — Verified travel-offer release wiring
+- Closed a deployment gap in the new Before You Go commercial runtime.
+- data/travel-offers.json is now copied into the immutable public release artifact and included in the release manifest hash set.
+- Changes to the verified travel-offer registry now trigger the GitHub Pages deployment workflow.
+- Public-launch preflight fails if the release builder stops shipping the travel-offer registry.
+- Current inventory is still empty, so visitor behavior remains unchanged; this makes future real verified offers deployable without another architecture change.
+- Added regression coverage for release copy, manifest inclusion, Pages trigger and public-launch preflight.
+
 ## 2026-09-24 — Submission transport readiness contract
 - Added a disabled-by-default submission transport configuration and explicit readiness model for real place/camera submissions.
 - Transport can report READY only when all three prerequisites exist: a real HTTPS review endpoint, a valid HTTPS privacy notice, and an explicit retention window between 1 and 365 days.
