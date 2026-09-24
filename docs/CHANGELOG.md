@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Sticky-header section landing repair
+- Added responsive scroll-margin offsets for all primary in-page navigation targets.
+- Prevented World Map/Explore/Watch headings from landing underneath the sticky header.
+- Preserved the existing layout and added regression coverage.
+
 ## 2026-09-24 — Public truth label consistency
 - Kept LIVE_IMAGE/LIVE_VIDEO truth visible even when playback opens at the provider.
 - Replaced misleading PREVIEW labels with CURRENT IMAGE ↗ / LIVE VIDEO ↗ where appropriate.
