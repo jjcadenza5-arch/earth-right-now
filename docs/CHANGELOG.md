@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-24 — Future source timestamp guard
+- Featured curation now reports future-dated verification timestamps directly instead of only surfacing downstream diversity symptoms.
+
 ## 2026-09-24 — Current destination-image refresh
 - Refreshed Amden/Weesen, Oeschinensee and Farm Tomita from current official webcam/live pages.
 - Preserved external link-only boundaries for all three.

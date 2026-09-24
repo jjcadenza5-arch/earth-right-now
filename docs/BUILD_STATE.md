@@ -1,3 +1,8 @@
+## 2026-09-24 — Future-dated source verification guard
+- Corrected recent source-currentness timestamps that had been stamped ahead of the GitHub runner clock.
+- Featured curation now diagnoses future-dated source IDs directly before downstream diversity checks.
+- Added regression coverage for the current catalog's five-minute clock-skew boundary.
+
 ## 2026-09-24 — Current destination-image refresh
 - Refreshed Amden/Weesen, Oeschinensee and Farm Tomita from current official provider pages.
 - Amden & Weesen still lists live/current webcam views across Amden Village, Weesen–Lake Walensee and Betlis.
