@@ -40,7 +40,7 @@ function localHour(s){if(!s?.timeZone)return null;try{const p=new Intl.DateTimeF
 function localTime(s){if(!s?.timeZone)return"";try{return new Intl.DateTimeFormat(undefined,{timeZone:s.timeZone,hour:"numeric",minute:"2-digit"}).format(new Date())}catch{return""}}
 function verificationAgeDays(s){const raw=s.lastSuccessfulCheck||s.checkedAt;if(!raw)return Infinity;const ms=Date.now()-Date.parse(raw);return Number.isFinite(ms)?Math.max(0,ms/86400000):Infinity}
 function verificationLabel(s){const d=verificationAgeDays(s);if(!Number.isFinite(d))return"Verification time unavailable";if(d<1)return"Verified within 24h";if(d<2)return"Verified yesterday";return"Verified "+Math.floor(d)+" days ago"}
-function featureEligible(s){return!!(s&&s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id)&&verificationAgeDays(s)<=21)}
+function verificationWindowHours(s){if(s?.truth==="LIVE_IMAGE"||s?.playback==="IMAGE_REFRESH")return 24;if(s?.playback==="EMBED")return 24;if(s?.truth==="EXTERNAL_LIVE"||s?.truth==="PARTNER")return 72;return 168}\nfunction verificationAgeHours(s){return verificationAgeDays(s)*24}\nfunction featureEligible(s){return!!(s&&s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id)&&verificationAgeHours(s)<=verificationWindowHours(s))}
 function watchEligible(s){return featureEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
 const momentWords={
  en:["Current","Morning light","Daylight","Evening light","Night"],

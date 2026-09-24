@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Watch Earth currentness gate + fresh playback evidence
+- Replaced the loose 21-day feature gate with ERN's source-type verification windows.
+- Recorded fresh HUMAN_PLAYBACK evidence for Bergen/Ulriken, Skeikampen and Cijin Beach.
+- Watch Earth now fails toward fewer/current sources instead of stale LIVE HERE claims.
+
 ## 2026-09-24 — Intentional-unpinned Atlas UI
 - Kept the beyond-pins area useful after static mapping reached completion.
 - Added selectable cards for multi-location collections and dynamic Earth views with explicit unpinned reasons.
