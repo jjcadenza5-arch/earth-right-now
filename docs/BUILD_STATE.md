@@ -1,3 +1,11 @@
+## 2026-09-24 — Watch Earth product-balance diagnostic
+- Added a diagnostic layer that compares strong-current inside-ERN and external windows without changing the public Top 20 yet.
+- Default product targets are 20 maximum windows, at least five strong inside-ERN windows, and a soft cap of 12 external windows.
+- When inside-ERN playback is below the preferred floor, operations now reports an INSIDE_SHORTFALL and a smaller recommended set size rather than assuming all 20 slots should be filled externally.
+- With the current catalog shape, this gives ERN an explicit quality/product signal for the concern that Watch Earth can become mostly outbound links.
+- The diagnostic is available through `npm run watch-earth:balance`, consolidated operations status, and the daily audit.
+- No visitor count or ranking is changed automatically by this diagnostic.
+
 ## 2026-09-24 — Visitor currentness-policy sweep
 - Removed the remaining generic 21-day and 7-day currentness shortcuts from the visitor app.
 - Quick-search country suggestions now draw from feature-eligible sources using the same source-type verification windows as Watch Earth.
