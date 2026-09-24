@@ -1,3 +1,11 @@
+## 2026-09-24 — Research-only second embed-provider ledger
+- Added a non-public embed-research ledger for potential second-provider expansion.
+- Seeded it with three current official Monterey Bay Aquarium YouTube live cams: Monterey Bay, Open Sea and Jelly Cam.
+- Candidate embed URLs use YouTube privacy-enhanced mode, which ERN already allows technically.
+- None of these candidates is in the visitor catalog. Promotion remains blocked until the specific video permits embedding on the deployed origin and fresh HUMAN_PLAYBACK is observed.
+- The research queue is available via `npm run inside:research` and runs in the daily read-only operations audit.
+- This gives ERN a concrete route away from single-provider dependency without weakening source-truth or permission standards.
+
 ## 2026-09-24 — Inside-ERN provider resilience
 - Added an explicit resilience model for embedded playback providers instead of treating all inside-ERN windows as interchangeable.
 - ERN now reports provider-family count, dominant-provider share, concentration state and the next resilience goal.
