@@ -2000,8 +2000,8 @@
     "playback": "EMBED",
     "freshness": 96,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
-    "checkedAt": "2026-09-20T07:30:00+07:00",
-    "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
+    "checkedAt": "2026-09-24T10:45:00Z",
+    "lastSuccessfulCheck": "2026-09-24T10:45:00Z",
     "failureReason": "VISITOR_PLAYBACK_REJECTED_2026-09-20",
     "lastFailedCheck": "2026-09-20T12:34:00+07:00",
     "story": "A Waikiki South Shore beach-and-city view; ERN keeps it lower tier while playback quality is being reverified.",
@@ -2009,7 +2009,8 @@
     "lon": -157.82628,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.openstreetmap.org/way/218679862",
-    "coordinateNote": "OpenStreetMap feature coordinates for Waikīkī Beach."
+    "coordinateNote": "OpenStreetMap feature coordinates for Waikīkī Beach.",
+    "freshnessEvidence": "Current CouchTourist Waikiki Beach page is reachable today and still exposes the same ERN-reviewed embed iframe (cam 1285). Provider-page currentness is confirmed, but the prior deployed visitor playback rejection remains unresolved; health stays DEGRADED and playback remains unverified."
   },
   {
     "id": "cold-lake-marina",
@@ -2034,8 +2035,8 @@
     "freshness": 96,
     "moment": 0,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
-    "checkedAt": "2026-09-20T07:30:00+07:00",
-    "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
+    "checkedAt": "2026-09-24T10:45:00Z",
+    "lastSuccessfulCheck": "2026-09-24T10:45:00Z",
     "failureReason": "VISITOR_PLAYBACK_REJECTED_2026-09-20",
     "lastFailedCheck": "2026-09-20T12:34:00+07:00",
     "story": "A lakeside marina view in Cold Lake, Alberta; ERN keeps it lower tier while playback quality is being reverified.",
@@ -2043,7 +2044,8 @@
     "lon": -110.17009,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.openstreetmap.org/way/399682010",
-    "coordinateNote": "OpenStreetMap feature coordinates for Cold Lake Marina."
+    "coordinateNote": "OpenStreetMap feature coordinates for Cold Lake Marina.",
+    "freshnessEvidence": "Current CouchTourist Cold Lake Marina page is reachable today and still exposes the same ERN-reviewed embed iframe (cam 7042). Provider-page currentness is confirmed, but the prior deployed visitor playback rejection remains unresolved; health stays DEGRADED and playback remains unverified."
   },
   {
     "id": "st-johns-harbour",
