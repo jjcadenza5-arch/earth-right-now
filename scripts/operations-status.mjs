@@ -18,6 +18,7 @@ console.log(JSON.stringify({
  providerPlaybackEvidence:report.providerPlaybackEvidence,
  insideERNRecovery:report.insideERNRecovery,
  insideProviderResilience:report.insideProviderResilience,
+ watchEarthProductBalance:report.watchEarthProductBalance,
  productActivation:report.productActivation,
  maintenance:report.maintenance,
  providerReview:{
