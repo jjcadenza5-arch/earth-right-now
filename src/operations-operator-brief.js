@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -53,13 +53,21 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     }
     lines.push("");
   }
+  if(commercialInventory){
+    lines.push("## Commercial staging");
+    lines.push(`- Stage: ${commercialInventory.stage||"UNKNOWN"}; public activation ${commercialInventory.publicActivationAllowed?"allowed":"off"}.`);
+    lines.push(`- Affiliate partners: ${commercialInventory.partnerRegistry?.active||0} active / ${commercialInventory.partnerRegistry?.total||0} staged; travel offers: ${commercialInventory.travelOfferRegistry?.current||0} current / ${commercialInventory.travelOfferRegistry?.total||0} staged; place coverage ${commercialInventory.travelOfferRegistry?.placeCoverage||0}.`);
+    lines.push("- Commercial inventory remains separate from Watch Earth ranking; payment never buys prominence.","");
+  }
   lines.push("## Next operational focus");
   if((playbackHorizon?.summary?.due6h||0)>0||(playbackHorizon?.summary?.due12h||0)>0)lines.push("- Renew expiring inside-ERN HUMAN_PLAYBACK evidence before LIVE HERE eligibility lapses.");
   if((snapshot?.insideERN?.readyShortfall||0)>0)lines.push("- Restore strong inside-ERN windows with fresh HUMAN_PLAYBACK evidence.");
   if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
   if((snapshot?.maintenance?.sourceRevalidation||0)>0)lines.push("- Work the highest-priority source revalidation items.");
   if((snapshot?.release?.blockers||0)>0)lines.push("- Keep release blockers visible; do not bypass them for presentation polish.");
-  if((availabilityContinuity?.summary?.persistentMissing||0)>0)lines.push("- Review persistent PAGE_MISSING incidents manually before any catalog-health decision.");\n  else if((a?.missing||0)>0)lines.push("- Review new PAGE_MISSING observations manually; wait for repeat evidence before any catalog-health decision.");
+  if((availabilityContinuity?.summary?.persistentMissing||0)>0)lines.push("- Review persistent PAGE_MISSING incidents manually before any catalog-health decision.");
+  else if((a?.missing||0)>0)lines.push("- Review new PAGE_MISSING observations manually; wait for repeat evidence before any catalog-health decision.");
+  if(commercialInventory?.stage==="EMPTY_STAGING")lines.push("- Keep the public experience non-commercial until real verified partner inventory exists.");
   lines.push("","_Read-only operational summary. It does not mutate source truth, health, permissions, ranking or visitor content._");
   return lines.join("\n");
 }
