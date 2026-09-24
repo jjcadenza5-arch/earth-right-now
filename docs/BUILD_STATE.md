@@ -1,3 +1,11 @@
+## 2026-09-24 — Commercial verification horizon
+- Added a read-only maintenance horizon for future affiliate partners and verified travel offers.
+- Partner expiry and the existing 90-day travel-offer verification window are classified as CURRENT, DUE_30D, DUE_14D, DUE_7D, EXPIRED or REVIEW_REQUIRED; intentionally disabled partners remain INACTIVE.
+- Daily operations now retains commercial-verification-horizon.json and surfaces urgent maintenance in the private operator brief before evidence becomes stale.
+- The horizon cannot create inventory, renew verification, activate partners/offers or affect public ranking.
+- Packet integrity enforces those safety boundaries, and executable/wiring tests cover the new operations path.
+- Current registries remain empty, so this adds readiness without changing the public ERN experience.
+
 ## 2026-09-24 — Daily operator-brief CLI repair
 - Repaired a malformed operations CLI newline that would have caused the next daily operator-brief step to fail before rendering.
 - The CLI now actually reads commercial-inventory.json, commercial-onboarding-plan.json and submission-transport-readiness.json from the workflow arguments already being passed.

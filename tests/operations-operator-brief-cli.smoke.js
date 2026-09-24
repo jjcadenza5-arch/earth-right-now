@@ -17,12 +17,14 @@ const args=[
  write("continuity.json",{summary:{persistentMissing:0,repeatedTransient:0,repeatedAccessLimitation:0,newMissing:0,recovered:0},incidents:[]}),
  write("commercial.json",{stage:"EMPTY_STAGING",publicActivationAllowed:false,partnerRegistry:{active:0,total:0},travelOfferRegistry:{current:0,total:0,placeCoverage:0}}),
  write("onboarding.json",{items:[{title:"Test Place",country:"Testland",recommendedAction:"RESEARCH_REAL_OPTIONS",score:88}]}),
- write("transport.json",{status:"DISABLED",active:false,missing:["ENDPOINT"]})
+ write("transport.json",{status:"DISABLED",active:false,missing:["ENDPOINT"]}),
+ write("commercial-horizon.json",{summary:{partners:{current:0,due30:0,due14:0,due7:0,expired:0,reviewRequired:0,inactive:0},offers:{current:0,due30:0,due14:0,due7:0,expired:0,reviewRequired:0},attention:0},urgent:[]})
 ];
 const r=spawnSync(process.execPath,["scripts/operations-operator-brief.mjs",...args],{encoding:"utf8"});
 assert.equal(r.status,0,r.stderr);
 assert.match(r.stdout,/Commercial staging/);
 assert.match(r.stdout,/Commercial onboarding research/);
 assert.match(r.stdout,/Submission transport/);
+assert.match(r.stdout,/Commercial verification horizon/);
 assert.match(r.stdout,/Read-only operational summary/);
 console.log("ERN operations operator-brief CLI wiring passed");

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Commercial verification horizon
+- Added advance expiry/review warnings for future affiliate partners and verified travel offers.
+- Wired the read-only horizon into daily operations, operator brief and packet-integrity safety checks.
+- Empty current registries remain valid and cause no public behavior change.
+
 ## 2026-09-24 — Daily operator-brief CLI repair
 - Fixed the operator-brief CLI parser and wired its three new commercial/readiness inputs.
 - Added executable coverage so the daily operations brief cannot silently lose those sections or fail from malformed argument wiring.

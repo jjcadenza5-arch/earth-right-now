@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -59,6 +59,14 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push(`- Affiliate partners: ${commercialInventory.partnerRegistry?.active||0} active / ${commercialInventory.partnerRegistry?.total||0} staged; travel offers: ${commercialInventory.travelOfferRegistry?.current||0} current / ${commercialInventory.travelOfferRegistry?.total||0} staged; place coverage ${commercialInventory.travelOfferRegistry?.placeCoverage||0}.`);
     lines.push("- Commercial inventory remains separate from Watch Earth ranking; payment never buys prominence.","");
   }
+  if(commercialVerificationHorizon?.summary){
+    const h=commercialVerificationHorizon.summary,p=h.partners||{},o=h.offers||{};
+    lines.push("## Commercial verification horizon");
+    lines.push(`- Partners: ${p.current||0} current; ${p.due30||0} due within 30d; ${p.due14||0} due within 14d; ${p.due7||0} due within 7d; ${p.expired||0} expired; ${p.reviewRequired||0} need review; ${p.inactive||0} inactive.`);
+    lines.push(`- Offers: ${o.current||0} current; ${o.due30||0} due within 30d; ${o.due14||0} due within 14d; ${o.due7||0} due within 7d; ${o.expired||0} expired; ${o.reviewRequired||0} need review.`);
+    for(const item of (commercialVerificationHorizon.urgent||[]).slice(0,5))lines.push(`- ${item.kind}: ${item.name||item.id} — ${item.state}${Number.isFinite(item.remainingDays)?` (${item.remainingDays}d)`:""}`);
+    lines.push("- Verification warnings are maintenance only; nothing is renewed, activated or ranked automatically.","");
+  }
   if(commercialOnboarding?.items?.length){
     lines.push("## Commercial onboarding research");
     for(const item of commercialOnboarding.items.slice(0,5))lines.push(`- ${item.title} · ${item.country||"Unknown"} — ${item.recommendedAction} (content-readiness ${item.score})`);
@@ -78,6 +86,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   if((snapshot?.release?.blockers||0)>0)lines.push("- Keep release blockers visible; do not bypass them for presentation polish.");
   if((availabilityContinuity?.summary?.persistentMissing||0)>0)lines.push("- Review persistent PAGE_MISSING incidents manually before any catalog-health decision.");
   else if((a?.missing||0)>0)lines.push("- Review new PAGE_MISSING observations manually; wait for repeat evidence before any catalog-health decision.");
+  if((commercialVerificationHorizon?.summary?.attention||0)>0)lines.push("- Review commercial verification warnings before partner or offer evidence becomes stale; never auto-renew.");
   if(commercialInventory?.stage==="EMPTY_STAGING")lines.push("- Keep the public experience non-commercial until real verified partner inventory exists.");
   if(commercialOnboarding?.items?.length)lines.push("- Research real travel options for the highest content-ready destinations without contacting or listing invented partners.");
   if(submissionTransport&&!submissionTransport.active)lines.push("- Keep camera/place submission delivery closed until a real HTTPS review endpoint, privacy notice and retention window are configured.");
