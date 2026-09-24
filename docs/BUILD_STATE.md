@@ -1,3 +1,10 @@
+## 2026-09-24 — Daily read-only operations audit
+- Enabled the existing ERN Operations Check to run once daily at 00:17 UTC while preserving manual workflow dispatch.
+- The scheduled audit runs source verification horizon, Watch Earth live-now status, provider recovery worklist and the consolidated operations report.
+- The workflow remains read-only: it does not mutate source truth, health, coordinates or permissions automatically.
+- Unsafe provider-integrity conditions and rejected observation input continue to fail visibly rather than being silently repaired.
+- Added regression coverage for the schedule and command set.
+
 ## 2026-09-24 — Watch Earth inside-ERN priority parity
 - Aligned the backend Watch Earth builder with the visitor app's product principle: reserve up to five fresh/current inside-ERN windows before filling the rest of the journey with external views.
 - The reserve still passes every existing truth, health, permission, near-now and recency gate; stale or degraded embeds are never promoted merely because they can play inside ERN.

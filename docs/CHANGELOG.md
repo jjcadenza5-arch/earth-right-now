@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Daily read-only operations audit
+- Scheduled the existing ERN operations workflow once daily while keeping manual launch available.
+- Added provider recovery worklist to the audit alongside verification horizon, Watch Earth and operations status.
+- Kept the workflow read-only and fail-visible.
+
 ## 2026-09-24 — Watch Earth inside-ERN priority parity
 - Reserved up to five fresh/current inside-ERN windows in the backend Watch Earth builder before external fill.
 - Kept all existing truth/currentness/diversity gates intact.

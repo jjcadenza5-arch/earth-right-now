@@ -1,8 +1,9 @@
 name: ERN Operations Check
 
-# Manual while the product is being simplified and stabilized.
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "17 0 * * *"
 
 permissions:
   contents: read
@@ -20,4 +21,5 @@ jobs:
         run: |
           npm run sources:horizon
           npm run watch-earth:now
+          npm run provider:worklist
           npm run operations:status
