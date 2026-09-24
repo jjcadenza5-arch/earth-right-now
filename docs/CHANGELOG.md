@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Official single-site Atlas mappings
+- Added official-site-backed place-reference pins for Queenstown Airport and Georgia Aquarium.
+- Refreshed current source evidence and preserved source truth/playback semantics.
+- Added regression coverage for both mappings.
+
 ## 2026-09-24 — Boston Harbor Islands reference mapping
 - Revalidated the active NPS Little Brewster webcam set.
 - Added a conservative NPS-sourced place-reference pin for the collection.
