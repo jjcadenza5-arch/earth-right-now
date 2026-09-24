@@ -5,7 +5,7 @@ function safeHttpUrl(raw){
     const u=new URL(raw);
     if(!["http:","https:"].includes(u.protocol))return null;
     const host=u.hostname.toLowerCase();
-    if(host==="localhost"||host.endsWith(".localhost")||host==="0.0.0.0"||host==="127.0.0.1"||host==="::1")return null;
+    const privateV4=/^(?:10\.|127\.|169\.254\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.)/;\n    if(host==="localhost"||host.endsWith(".localhost")||host==="0.0.0.0"||host==="::1"||host==="[::1]"||privateV4.test(host)||host.endsWith(".local"))return null;
     return u;
   }catch{return null}
 }
