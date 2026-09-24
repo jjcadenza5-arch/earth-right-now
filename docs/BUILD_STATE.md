@@ -1,3 +1,10 @@
+## 2026-09-24 — Current-proven inside visitor boundary
+- Added a shared `currentInside` definition in the public runtime: a source is counted/treated as inside ERN only when it has an inside playback capability AND its current truth claim is valid.
+- Browser Watch Earth now explicitly requires currentTruthClaim, closing the gap where a source-current but playback-unproven EMBED could enter the public set with a RECHECK DUE label.
+- Adaptive set sizing, inside-first reservation, Hero pool/boost, public Play here pulse count and Living Atlas inside filter/count now use currentInside rather than configured capability alone.
+- Configured but unproven embeds remain discoverable elsewhere with truthful RECHECK DUE semantics; they are not counted as current Play here windows.
+- Whole-product preflight and regression tests now guard this visitor truth boundary.
+
 ## 2026-09-24 — Truthful inside-ERN release metrics
 - Separated structural playback capability from current visitor truth in release/product diagnostics.
 - Lean preflight now reports configuredInsideERN, freshHumanProvenEmbeds, currentImageRefreshes and currentInsideERN instead of the misleading playableInsideERN total.

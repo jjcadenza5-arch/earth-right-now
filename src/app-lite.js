@@ -38,6 +38,7 @@ function truthTone(s){if(!currentTruthClaim(s))return"preview";if(isInside(s)&&s
 function publicTruth(s){if(!s)return"PREVIEW";if(s.health==="DEGRADED")return"LIMITED SOURCE";if(s.health==="OFFLINE")return"TEMPORARILY UNAVAILABLE";if(s.health!=="HEALTHY")return"SOURCE CHECK";if(!currentTruthClaim(s))return"RECHECK DUE";if(s.truth==="LIVE_VIDEO")return isInside(s)?"LIVE HERE":"LIVE VIDEO ↗";if(s.truth==="LIVE_IMAGE")return isInside(s)?"CURRENT IMAGE":"CURRENT IMAGE ↗";if(s.truth==="EXTERNAL_LIVE")return"LIVE ↗";if(s.truth==="PARTNER")return"PARTNER";return"PREVIEW"}
 function allowAmbientLive(){return !(navigator.connection?.saveData||globalThis.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches)}
 function isInside(s){return!!(s&&s.health!=="OFFLINE"&&((s.playback==="EMBED"&&cleanUrl(s.embedUrl))||(s.playback==="IMAGE_REFRESH"&&cleanUrl(s.sourceUrl))))}
+function currentInside(s){return isInside(s)&&currentTruthClaim(s)}
 function localHour(s){if(!s?.timeZone)return null;try{const p=new Intl.DateTimeFormat("en-US",{timeZone:s.timeZone,hour:"2-digit",hour12:false}).formatToParts(new Date());const h=Number(p.find(x=>x.type==="hour")?.value);return Number.isFinite(h)?h%24:null}catch{return null}}
 function localTime(s){if(!s?.timeZone)return"";try{return new Intl.DateTimeFormat(undefined,{timeZone:s.timeZone,hour:"numeric",minute:"2-digit"}).format(new Date())}catch{return""}}
 function verificationAgeDays(s){const raw=s.lastSuccessfulCheck||s.checkedAt;if(!raw)return Infinity;const ms=Date.now()-Date.parse(raw);return Number.isFinite(ms)?Math.max(0,ms/86400000):Infinity}
@@ -46,7 +47,7 @@ function verificationWindowHours(s){if(s?.truth==="LIVE_IMAGE"||s?.playback==="I
 function verificationAgeHours(s){return verificationAgeDays(s)*24}
 function featureEligible(s){return!!(s&&s.health==="HEALTHY"&&!featuredHold(s)&&verificationAgeHours(s)<=verificationWindowHours(s))}
 function watchExperienceEligible(s){return!!(s&&s.health==="HEALTHY"&&!/VISITOR_PLAYBACK_REJECTED|NOT_LIVE|VIDEO_UNAVAILABLE|STALE_RECORDING|BROKEN_EMBED/i.test(String(s.failureReason||""))&&(Number(s.quality)||0)>=80&&(Number(s.moment)||0)>=70)}
-function watchEligible(s){return featureEligible(s)&&watchExperienceEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
+function watchEligible(s){return featureEligible(s)&&currentTruthClaim(s)&&watchExperienceEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
 const momentWords={
  en:["Current","Morning light","Daylight","Evening light","Night"],
  th:["ปัจจุบัน","แสงยามเช้า","กลางวัน","แสงยามเย็น","กลางคืน"],
@@ -92,7 +93,7 @@ function baseScore(s){
  let n=Number(s.quality||0)+Number(s.moment||0)*.72+Number(s.freshness||0)*.35;
  if(s.health==="HEALTHY")n+=32;else if(s.health==="DEGRADED")n-=38;else n-=100;
  const age=verificationAgeDays(s);if(age<1)n+=8;else if(age<3)n+=3;else if(age>14)n-=30;else if(age>7)n-=12;
- if(isInside(s))n+=22;
+ if(currentInside(s))n+=22;
  const ms=momentSignal(s);n+=ms.score;
  if(isDay(s)&&isScenic(s))n+=18;
  if(!isDay(s)&&!isCity(s))n-=20;
@@ -102,7 +103,7 @@ function baseScore(s){
  return n;
 }
 function heroPool(){
- const inside=state.watch.filter(s=>isInside(s)&&s.health==="HEALTHY"&&!featuredHold(s));
+ const inside=state.watch.filter(s=>currentInside(s)&&!featuredHold(s));
  return inside.length?inside:state.watch;
 }
 function visitorHour(){return new Date().getHours()}
@@ -113,7 +114,7 @@ function setProfile(){
  const autoSlot=(Math.floor(Date.now()/14400000)+daypartOffset+state.setOffset)%4;
  const automatic=[
   {id:"beautiful",label:"Beautiful Earth",reason:"Chosen for this moment: daylight, scenery and strong current windows.",boost:s=>isScenic(s)?28:0},
-  {id:"live",label:"Live Around the World",reason:"Chosen for this moment: strong live windows across regions.",boost:s=>isInside(s)?34:0},
+  {id:"live",label:"Live Around the World",reason:"Chosen for this moment: strong live windows across regions.",boost:s=>currentInside(s)?34:0},
   {id:"cities",label:"Earth in Motion",reason:"Chosen for this moment: cities, harbours and visible activity.",boost:s=>isCity(s)?34:0},
   {id:"wander",label:"Keep Wandering",reason:"Chosen for this moment: a varied route through useful current views.",boost:s=>(/interesting|useful/.test(cats(s))?24:0)}
  ][autoSlot];
@@ -128,7 +129,7 @@ function setProfile(){
  return fixed[state.mode]||automatic;
 }
 function adaptiveWatchLimit(pool,target=20){
- const inside=pool.filter(isInside).length,external=Math.max(0,pool.length-inside);
+ const inside=pool.filter(currentInside).length,external=Math.max(0,pool.length-inside);
  if(!pool.length)return 0;
  if(inside<5)return Math.min(target,pool.length,inside+Math.min(external,12));
  return Math.min(target,pool.length);
@@ -150,7 +151,7 @@ function buildWatch(sources){
  const sorted=[...pool].sort((a,b)=>(baseScore(b)+profile.boost(b))-(baseScore(a)+profile.boost(a)));
  const setLimit=adaptiveWatchLimit(sorted,20);
  const out=[],countries=new Map(),providers=new Map(),places=new Map();
- const reserveInside=sorted.filter(s=>isInside(s)&&s.health==="HEALTHY");
+ const reserveInside=sorted.filter(currentInside);
  for(const s of reserveInside){
    if(out.length>=Math.min(5,setLimit))break;const place=s.placeId||s.id,provider=s.provider||"";
    if(places.has(place)||(providers.get(provider)||0)>=3)continue;
@@ -408,7 +409,7 @@ function renderWander(){
 }
 function renderNowStrip(){
  const healthy=state.sources.filter(featureEligible);
- $("#nowPlayable").textContent=healthy.filter(isInside).length;
+ $("#nowPlayable").textContent=healthy.filter(currentInside).length;
  $("#nowDaylight").textContent=healthy.filter(isDay).length;
  $("#nowNightCities").textContent=healthy.filter(s=>!isDay(s)&&isCity(s)).length;
  $("#nowMapped").textContent=healthy.filter(s=>Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))).length;
@@ -432,8 +433,8 @@ function renderMap(){
  const a=$("#atlas");a.querySelectorAll(".map-pin").forEach(x=>x.remove());let count=0,insideCount=0,externalCount=0,localCount=0;
  const grouped=groupByPlace(state.sources.filter(s=>s.health!=="OFFLINE"&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))));
  for(const group of grouped){
-   const eligible=group.filter(s=>{const inside=isInside(s);if(state.mapFilter==="local")return false;if(state.category!=="all"&&state.category!=="random"&&!categoryMatch(s,state.category))return false;if(state.mapFilter==="inside"&&!inside)return false;if(state.mapFilter==="external"&&inside)return false;if(state.mapFilter==="daylight"&&!isDay(s))return false;return true});
-   if(!eligible.length)continue;const s=[...eligible].sort((x,y)=>baseScore(y)-baseScore(x))[0],lat=Number(s.lat),lon=Number(s.lon),inside=isInside(s);
+   const eligible=group.filter(s=>{const inside=currentInside(s);if(state.mapFilter==="local")return false;if(state.category!=="all"&&state.category!=="random"&&!categoryMatch(s,state.category))return false;if(state.mapFilter==="inside"&&!inside)return false;if(state.mapFilter==="external"&&inside)return false;if(state.mapFilter==="daylight"&&!isDay(s))return false;return true});
+   if(!eligible.length)continue;const s=[...eligible].sort((x,y)=>baseScore(y)-baseScore(x))[0],lat=Number(s.lat),lon=Number(s.lon),inside=currentInside(s);
    const p=document.createElement("button");p.className="map-pin"+(inside?"":" external");p.type="button";p.title=`${s.title} — ${publicTruth(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s);if(group.length>1)p.dataset.views=String(group.length);a.append(p);count++;if(inside)insideCount++;else externalCount++;
  }
  for(const x of approvedLocalPlaces()){

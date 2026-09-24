@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Current-proven inside visitor boundary
+- Browser Watch Earth, adaptive sizing, Hero pool, pulse strip and Atlas Play here filtering now require current-proven inside playback rather than configured embed capability.
+- Unproven embeds remain discoverable but cannot count as current LIVE HERE windows.
+
 ## 2026-09-24 — Truthful inside-ERN release metrics
 - Separated configured embed/image capability from fresh human-proven embeds and current refreshed images in deployment/product reports.
 - Removed the old generic 21-day freshness metric and misleading playableInsideERN label.

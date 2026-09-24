@@ -1,0 +1,13 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const app=fs.readFileSync("src/app-lite.js","utf8");
+assert.match(app,/function currentInside\(s\)\{return isInside\(s\)&&currentTruthClaim\(s\)\}/);
+assert.match(app,/function watchEligible\(s\)\{return featureEligible\(s\)&&currentTruthClaim\(s\)&&watchExperienceEligible\(s\)/);
+assert.match(app,/healthy\.filter\(currentInside\)\.length/);
+assert.match(app,/pool\.filter\(currentInside\)\.length/);
+assert.match(app,/sorted\.filter\(currentInside\)/);
+assert.match(app,/state\.watch\.filter\(s=>currentInside\(s\)/);
+assert.match(app,/const inside=currentInside\(s\);if\(state\.mapFilter==="local"\)/);
+assert.match(app,/inside=currentInside\(s\);\n   const p=document\.createElement\("button"\)/);
+assert.equal((app.match(/\\nfunction /g)||[]).length,0);
+new Function(app);
+console.log("ERN current inside visitor boundary passed");
