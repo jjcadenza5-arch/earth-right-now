@@ -13,6 +13,7 @@ const files={
  "embed-research.json":{},
  "embed-research-preflight.json":{rows:[{id:"y",permissionConfirmed:false,humanPlaybackConfirmed:false,promotionAllowed:false}]},
  "commercial-inventory.json":{stage:"EMPTY_STAGING",publicActivationAllowed:false,safety:{inventPartnersAllowed:false,unverifiedOffersVisible:false,undisclosedAffiliateLinksAllowed:false,paidRankingAllowed:false}},
+ "commercial-onboarding-plan.json":{safety:{publicRankingAffected:false,demandForecast:false,revenueForecast:false,paidPriorityAllowed:false,inventOffersAllowed:false}},
  "trend-current.json":{schemaVersion:1},
  "trend-delta.json":{direction:"BASELINE"},
  "operations-status.json":{providerReview:{unsafe:[]}}
@@ -27,5 +28,6 @@ await writeFile(path.join(bad,"operator-brief.md"),"no boundary");
 await writeFile(path.join(bad,"source-availability-continuity.json"),JSON.stringify({rows:[{id:"a",catalogMutationAllowed:true,automaticHealthChangeAllowed:false}]}));
 await writeFile(path.join(bad,"embed-research-preflight.json"),JSON.stringify({rows:[{id:"y",permissionConfirmed:true,humanPlaybackConfirmed:false,promotionAllowed:false}]}));
 await writeFile(path.join(bad,"commercial-inventory.json"),JSON.stringify({stage:"EMPTY_STAGING",publicActivationAllowed:true,safety:{inventPartnersAllowed:false,unverifiedOffersVisible:false,undisclosedAffiliateLinksAllowed:false,paidRankingAllowed:true}}));
-r=await validateOperationsPacket(bad);assert.equal(r.valid,false);assert.ok(r.issues.some(x=>x.code==="CONTINUITY_MUTATION_BOUNDARY_VIOLATION"));assert.ok(r.issues.some(x=>x.code==="PREFLIGHT_PERMISSION_BOUNDARY_VIOLATION"));assert.ok(r.issues.some(x=>x.code==="PREMATURE_COMMERCIAL_ACTIVATION"));assert.ok(r.issues.some(x=>x.code==="COMMERCIAL_RANKING_BOUNDARY_VIOLATION"));assert.ok(r.issues.some(x=>x.code==="READ_ONLY_BOUNDARY_MISSING"));
+await writeFile(path.join(bad,"commercial-onboarding-plan.json"),JSON.stringify({safety:{publicRankingAffected:true,demandForecast:true,revenueForecast:false,paidPriorityAllowed:true,inventOffersAllowed:true}}));
+r=await validateOperationsPacket(bad);assert.equal(r.valid,false);assert.ok(r.issues.some(x=>x.code==="CONTINUITY_MUTATION_BOUNDARY_VIOLATION"));assert.ok(r.issues.some(x=>x.code==="PREFLIGHT_PERMISSION_BOUNDARY_VIOLATION"));assert.ok(r.issues.some(x=>x.code==="PREMATURE_COMMERCIAL_ACTIVATION"));assert.ok(r.issues.some(x=>x.code==="COMMERCIAL_RANKING_BOUNDARY_VIOLATION"));assert.ok(r.issues.some(x=>x.code==="ONBOARDING_PUBLIC_RANKING_BOUNDARY_VIOLATION"));assert.ok(r.issues.some(x=>x.code==="ONBOARDING_DEMAND_FORECAST_BOUNDARY_VIOLATION"));assert.ok(r.issues.some(x=>x.code==="ONBOARDING_PAID_PRIORITY_BOUNDARY_VIOLATION"));assert.ok(r.issues.some(x=>x.code==="ONBOARDING_INVENTION_BOUNDARY_VIOLATION"));assert.ok(r.issues.some(x=>x.code==="READ_ONLY_BOUNDARY_MISSING"));
 console.log("ERN operations packet integrity passed");
