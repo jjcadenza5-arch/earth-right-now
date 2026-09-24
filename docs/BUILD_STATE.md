@@ -1,3 +1,10 @@
+## 2026-09-24 — Current destination-image refresh
+- Refreshed Amden/Weesen, Oeschinensee and Farm Tomita from current official provider pages.
+- Amden & Weesen still lists live/current webcam views across Amden Village, Weesen–Lake Walensee and Betlis.
+- Oeschinensee's current live page lists its webcam locations alongside current operating information.
+- Farm Tomita's official site shows today's date/opening information and its current farm webcam section.
+- Updated only source-currentness/freshness evidence. All three remain LIVE_IMAGE + LINK_ONLY + EXTERNAL; no reuse/embed permission was inferred.
+
 ## 2026-09-24 — Official LIVE_IMAGE currentness refresh
 - Refreshed five official current-image sources from current provider/government webcam pages: Lake Lucerne, Kaikōura, Reykjavík, Glenelg Beach and Brighton Beach.
 - Lake Lucerne's official navigation-company page still describes live webcam views and current weather.

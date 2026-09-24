@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Current destination-image refresh
+- Refreshed Amden/Weesen, Oeschinensee and Farm Tomita from current official webcam/live pages.
+- Preserved external link-only boundaries for all three.
+
 ## 2026-09-24 — Official LIVE_IMAGE currentness refresh
 - Refreshed Lake Lucerne, Kaikōura, Reykjavík, Glenelg and Brighton from current official webcam pages.
 - Preserved LIVE_IMAGE / LINK_ONLY / EXTERNAL boundaries for all five.
