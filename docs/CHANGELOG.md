@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Public currentness label boundary
+- Gated live/current labels across shared visitor surfaces by ERN verification windows.
+- Expired sources remain discoverable but show RECHECK DUE instead of a fresh-live claim.
+- Added explicit limited/offline/source-check states and regression coverage.
+
 ## 2026-09-24 — Watch Earth currentness gate + fresh playback evidence
 - Replaced the loose 21-day feature gate with ERN's source-type verification windows.
 - Recorded fresh HUMAN_PLAYBACK evidence for Bergen/Ulriken, Skeikampen and Cijin Beach.
