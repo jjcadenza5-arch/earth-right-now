@@ -1,3 +1,9 @@
+## 2026-09-24 — Retained daily operations packet
+- The scheduled read-only ERN operations audit now writes each diagnostic to a separate JSON snapshot and retains the packet as a GitHub Actions artifact for 14 days.
+- Packet contents include verification horizon, Watch Earth live-now status, product balance, provider worklist, inside-ERN recovery, provider resilience, embed research, and consolidated operations status.
+- Upload runs with `if: always()`, so partial diagnostic evidence is retained even when a later fail-visible safety check stops the workflow.
+- The packet does not mutate the catalog and is not published to visitors; it creates continuity for maintenance and avoids circular re-analysis.
+
 ## 2026-09-24 — Watch Earth product-balance diagnostic
 - Added a diagnostic layer that compares strong-current inside-ERN and external windows without changing the public Top 20 yet.
 - Default product targets are 20 maximum windows, at least five strong inside-ERN windows, and a soft cap of 12 external windows.
