@@ -1,3 +1,10 @@
+## 2026-09-24 — Research-only Explore player allowance
+- Added a separate research-only embed allow path for exact Explore.org /livecams/player/ URLs.
+- The normal public embed allowlist remains unchanged, so Explore cannot enter ERN visitor playback merely because it is researchable.
+- The unlinked operator review lab now uses the research-only policy for second-provider candidates while ordinary source review continues using the stricter public embed policy.
+- Explore research frames receive a conservative sandbox and still require operator-loaded deployed-origin HUMAN_PLAYBACK review.
+- Added regression coverage proving ordinary Explore pages, HTTP URLs and public playback remain blocked.
+
 ## 2026-09-24 — Explore.org specific second-provider candidate
 - Added Brooks Falls as a research-only Explore.org candidate using the current Explore source page plus the current Explore player URL.
 - Extended technical preflight beyond YouTube so Explore candidates can independently test source-page and player-page reachability.

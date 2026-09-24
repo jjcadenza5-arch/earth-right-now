@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import {operatorReviewQueue} from "../src/operator-review-queue.js";
-import {allowedEmbedUrl,embedSandbox} from "../src/embed-policy.js";
+import {allowedEmbedUrl,allowedResearchEmbedUrl,embedSandbox} from "../src/embed-policy.js";
 
 const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
 let observations=[];try{observations=JSON.parse(fs.readFileSync("data/provider-observations.json","utf8"))}catch{}
@@ -10,7 +10,8 @@ const reviewQueue=operatorReviewQueue(sources,observations,{now:new Date(),limit
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const safe=u=>{try{const x=new URL(String(u||""));return /^https:$/.test(x.protocol)?x.toString():""}catch{return""}};
 const card=(x,type)=>{
- const embed=allowedEmbedUrl(x.embedUrl||x.candidateEmbedUrl)||"";
+ const rawEmbed=x.embedUrl||x.candidateEmbedUrl;
+ const embed=(type==="research"?allowedResearchEmbedUrl(rawEmbed):allowedEmbedUrl(rawEmbed))||"";
  const source=safe(x.sourceUrl);
  const sandbox=embed?embedSandbox({embedUrl:embed}):"";
  const status=type==="research"?"Research-only · technical review required":[x.reason,x.action,Number.isFinite(x.remainingHours)?`${x.remainingHours}h remaining`:null].filter(Boolean).join(" · ");

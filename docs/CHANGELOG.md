@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Research-only Explore player allowance
+- Enabled exact Explore.org player URLs only inside the operator research lab.
+- Public ERN embed policy remains unchanged; Explore still cannot become visitor playback without later explicit promotion/review.
+
 ## 2026-09-24 — Explore.org specific second-provider candidate
 - Added research-only Brooks Falls and Explore player URL to the second-provider queue.
 - Technical preflight now supports Explore source/player reachability without treating it as permission or playback proof.
