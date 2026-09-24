@@ -1,3 +1,11 @@
+## 2026-09-24 — Inside-ERN recovery queue
+- Added a dedicated read-only recovery model for EMBED sources so ERN can prioritize rebuilding the inside-ERN experience instead of mixing those tasks with ordinary external-link maintenance.
+- A source counts as ready only when source health is HEALTHY, embed permission is EMBED_ALLOWED, source verification is current and fresh HUMAN_PLAYBACK evidence exists.
+- Recovery work is ranked by permission problems, degraded/offline health, expired source verification, stale playback evidence and missing human playback.
+- The queue is exposed in operations status, has its own `npm run inside:recovery` command, and runs in the daily operations audit.
+- No source is automatically promoted or repaired from the queue; evidence still has to be recorded explicitly.
+- Added regression coverage for priority, readiness and workflow wiring.
+
 ## 2026-09-24 — Daily read-only operations audit
 - Enabled the existing ERN Operations Check to run once daily at 00:17 UTC while preserving manual workflow dispatch.
 - The scheduled audit runs source verification horizon, Watch Earth live-now status, provider recovery worklist and the consolidated operations report.

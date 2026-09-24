@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Inside-ERN recovery queue
+- Added a dedicated evidence-driven recovery queue for embedded sources.
+- Ready now requires current source verification plus fresh HUMAN_PLAYBACK evidence.
+- Wired the queue into operations status and the daily read-only audit.
+
 ## 2026-09-24 — Daily read-only operations audit
 - Scheduled the existing ERN operations workflow once daily while keeping manual launch available.
 - Added provider recovery worklist to the audit alongside verification horizon, Watch Earth and operations status.

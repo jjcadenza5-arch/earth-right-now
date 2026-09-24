@@ -22,4 +22,5 @@ jobs:
           npm run sources:horizon
           npm run watch-earth:now
           npm run provider:worklist
+          npm run inside:recovery
           npm run operations:status

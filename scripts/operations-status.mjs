@@ -16,6 +16,7 @@ console.log(JSON.stringify({
  release:{ready:report.release.ready,blockers:report.release.blockers},
  healthAutomation:report.healthAutomation,
  providerPlaybackEvidence:report.providerPlaybackEvidence,
+ insideERNRecovery:report.insideERNRecovery,
  productActivation:report.productActivation,
  maintenance:report.maintenance,
  providerReview:{
