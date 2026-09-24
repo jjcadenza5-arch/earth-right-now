@@ -1,3 +1,11 @@
+## 2026-09-24 — Explore.org specific second-provider candidate
+- Added Brooks Falls as a research-only Explore.org candidate using the current Explore source page plus the current Explore player URL.
+- Extended technical preflight beyond YouTube so Explore candidates can independently test source-page and player-page reachability.
+- Current public evidence identifies Brooks Falls as currently live, while Explore.org terms describe embedding/deep-linking when embedding is enabled.
+- Technical success still leaves permissionConfirmed=false, humanPlaybackConfirmed=false and promotionAllowed=false.
+- The provider-family ledger now records an actual explore.org player endpoint instead of an unresolved network family.
+- Public ERN catalog and Watch Earth remain unchanged until deployed HUMAN_PLAYBACK and specific player/permission review are completed.
+
 ## 2026-09-24 — Second provider-family research lane
 - Added a provider-family research ledger separate from specific embed candidates and the public source catalog.
 - Explore.org is staged as RESEARCH_ONLY because its current terms describe deep-link/embed use when embedding is enabled, including the Explore-branded player; ERN still requires a specific current camera with an enabled embed path before any deployed test.

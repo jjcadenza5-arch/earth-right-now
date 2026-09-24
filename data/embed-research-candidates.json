@@ -40,5 +40,19 @@
     "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
     "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
     "promotion": "BLOCKED_UNTIL_REVIEW"
+  },
+  {
+    "id": "explore-brooks-falls",
+    "status": "RESEARCH_ONLY",
+    "provider": "Explore.org",
+    "platform": "Explore",
+    "sourceUrl": "https://explore.org/livecams/currently-live/brown-bear-salmon-cam-brooks-falls",
+    "candidateEmbedUrl": "https://explore.org/livecams/player/brown-bear-salmon-cam-brooks-falls",
+    "ownerEvidence": "Explore.org official livecam network and player surface",
+    "currentEvidence": "Explore.org lists Brooks Falls in its Currently Live collection; current pages show Brooks Falls activity in September 2026.",
+    "discoveredAt": "2026-09-24T14:20:00Z",
+    "permissionReview": "EXPLORE_TERMS_ALLOW_EMBED_WHEN_ENABLED_SPECIFIC_PLAYER_STILL_REQUIRES_REVIEW",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_UNTIL_REVIEW"
   }
 ]

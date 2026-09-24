@@ -1,4 +1,4 @@
 import fs from "node:fs";import assert from "node:assert/strict";import {providerFamilyResearchStatus} from "../src/provider-family-research.js";
 const rows=JSON.parse(fs.readFileSync("data/embed-provider-families.json","utf8")),r=providerFamilyResearchStatus(rows);
-assert.ok(r.items.some(x=>x.id==="explore-org"));assert.equal(r.unsafe.length,0);const x=r.items.find(x=>x.id==="explore-org");assert.equal(x.permissionConfirmed,false);assert.equal(x.humanPlaybackConfirmed,false);assert.equal(x.promotionAllowed,false);assert.equal(x.technicalStatus,"SPECIFIC_EMBED_URL_REQUIRED");
+assert.ok(r.items.some(x=>x.id==="explore-org"));assert.equal(r.unsafe.length,0);const x=r.items.find(x=>x.id==="explore-org");assert.equal(x.permissionConfirmed,false);assert.equal(x.humanPlaybackConfirmed,false);assert.equal(x.promotionAllowed,false);assert.equal(x.technicalStatus,"CANDIDATE_PLAYER_URL_STAGED");assert.equal(x.networkFamily,"explore.org");
 console.log("ERN current provider-family research ledger is safely staged");

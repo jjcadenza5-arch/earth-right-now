@@ -8,11 +8,11 @@
     "termsUrl": "https://explore.org/terms-of-service",
     "verifiedAt": "2026-09-24T00:00:00Z",
     "permissionEvidence": "Explore.org terms state that deep-linking and embedding are permitted when embedding is enabled, including use of the Explore-branded player. Re-streaming/rebroadcasting is not treated as the same permission and remains prohibited.",
-    "permissionStatus": "PROMISING_REQUIRES_SPECIFIC_ENABLED_CAM",
-    "technicalStatus": "SPECIFIC_EMBED_URL_REQUIRED",
+    "permissionStatus": "PROMISING_SPECIFIC_PLAYER_REQUIRES_REVIEW",
+    "technicalStatus": "CANDIDATE_PLAYER_URL_STAGED",
     "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN",
     "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
-    "nextAction": "IDENTIFY_CURRENT_CAM_WITH_ENABLED_EXPLORE_PLAYER_AND_TEST_DEPLOYED_ORIGIN",
-    "networkFamily": null
+    "nextAction": "RUN_TECHNICAL_PREFLIGHT_THEN_DEPLOYED_HUMAN_PLAYBACK_AND_SPECIFIC_PERMISSION_REVIEW",
+    "networkFamily": "explore.org"
   }
 ]

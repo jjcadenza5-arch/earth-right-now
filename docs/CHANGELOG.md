@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Explore.org specific second-provider candidate
+- Added research-only Brooks Falls and Explore player URL to the second-provider queue.
+- Technical preflight now supports Explore source/player reachability without treating it as permission or playback proof.
+
 ## 2026-09-24 — Second provider-family research lane
 - Added a research-only provider-family ledger for non-CouchTourist embed paths.
 - Explore.org is staged as promising-but-unresolved pending a specific enabled player URL and deployed human playback test.
