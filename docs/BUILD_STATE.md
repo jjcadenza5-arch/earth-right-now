@@ -1,3 +1,10 @@
+## 2026-09-24 — Intentional-unpinned Atlas UI
+- After static mapping completion, the "Beyond the mapped pins" surface now remains useful instead of becoming an empty container.
+- Multi-location collections and moving Earth views are rendered as selectable cards with an explicit reason they do not have a single pin.
+- Any future genuinely unmapped static source remains separately labeled as awaiting map evidence.
+- This preserves discoverability for the ISS and multi-site collections without inventing representative coordinates.
+- Added regression coverage for the post-completion Atlas state.
+
 ## 2026-09-24 — Atlas static mapping complete
 - Completed the remaining six single-location Atlas references: Kijihiki Plateau, Bloubergstrand, Perdido Key/La Riva, Hale Pau Hana, Metung and Ponte di Legno/Adamello.
 - Kijihiki uses Hokkaido/Hokuto public open data; Bloubergstrand uses an OpenStreetMap locality; the property/place destinations use documented public place references; Ponte di Legno is deliberately REGION_REFERENCE rather than an exact-camera claim.
