@@ -1,0 +1,44 @@
+[
+  {
+    "id": "youtube-monterey-bay-cam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Monterey Bay Aquarium",
+    "platform": "YouTube",
+    "sourceUrl": "https://www.youtube.com/watch?v=fuCeRkeDxtQ",
+    "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/fuCeRkeDxtQ",
+    "ownerEvidence": "Official Monterey Bay Aquarium YouTube channel",
+    "currentEvidence": "Official video description states the Monterey Bay cam is available daily 7 a.m.–7 p.m. Pacific time.",
+    "discoveredAt": "2026-09-24T08:50:00Z",
+    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_UNTIL_REVIEW"
+  },
+  {
+    "id": "youtube-monterey-open-sea",
+    "status": "RESEARCH_ONLY",
+    "provider": "Monterey Bay Aquarium",
+    "platform": "YouTube",
+    "sourceUrl": "https://www.youtube.com/watch?v=nNTVZKz219U",
+    "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/nNTVZKz219U",
+    "ownerEvidence": "Official Monterey Bay Aquarium YouTube channel",
+    "currentEvidence": "Official video description states the Open Sea Cam is live every day from 7 a.m. to 7 p.m. Pacific time.",
+    "discoveredAt": "2026-09-24T08:50:00Z",
+    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_UNTIL_REVIEW"
+  },
+  {
+    "id": "youtube-monterey-jelly-cam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Monterey Bay Aquarium",
+    "platform": "YouTube",
+    "sourceUrl": "https://www.youtube.com/watch?v=m1XcdxjVGos",
+    "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/m1XcdxjVGos",
+    "ownerEvidence": "Official Monterey Bay Aquarium YouTube channel",
+    "currentEvidence": "Official video description states the Jelly Cam is live every day from 7 a.m. to 7 p.m. Pacific time.",
+    "discoveredAt": "2026-09-24T08:50:00Z",
+    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_UNTIL_REVIEW"
+  }
+]

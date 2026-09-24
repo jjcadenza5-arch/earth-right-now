@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Research-only second embed-provider ledger
+- Added three official Monterey Bay Aquarium YouTube live cams as non-public research candidates.
+- Candidates remain blocked until per-video embed availability and deployed HUMAN_PLAYBACK are confirmed.
+- Wired the research queue into the daily audit.
+
 ## 2026-09-24 — Inside-ERN provider resilience
 - Added provider-family and concentration diagnostics for embedded playback.
 - Flagged single-provider dependency as an explicit expansion goal.
