@@ -391,10 +391,10 @@ function renderAtlasBeyond(){
  const intentional=new Set([...dynamic,...multiSite].map(s=>s.id));
  const unmapped=state.sources.filter(s=>featureEligible(s)&&!intentional.has(s.id)&&(!Number.isFinite(Number(s.lat))||!Number.isFinite(Number(s.lon))));
  if(!unmapped.length&&!dynamic.length&&!multiSite.length){box.hidden=true;grid.replaceChildren();return}
- const ranked=[...unmapped].sort((a,b)=>baseScore(b)-baseScore(a));
+ const ranked=[...unmapped,...multiSite,...dynamic].sort((a,b)=>baseScore(b)-baseScore(a));
  const pick=[],countries=new Set();
- for(const s of ranked){if(countries.has(s.country)&&pick.length<4)continue;pick.push(s);countries.add(s.country);if(pick.length>=6)break}
- const buttons=pick.map(s=>{const b=document.createElement("button");b.type="button";b.className="atlas-beyond-card";const strong=document.createElement("strong");strong.textContent=s.title;const small=document.createElement("small");small.textContent=[s.region,s.country,publicTruth(s)].filter(Boolean).join(" · ");b.append(strong,small);b.onclick=()=>openViewer(s);return b});
+ for(const s of ranked){if(countries.has(s.country)&&pick.length<4&&unmapped.includes(s))continue;pick.push(s);if(s.country)countries.add(s.country);if(pick.length>=6)break}
+ const buttons=pick.map(s=>{const b=document.createElement("button");b.type="button";b.className="atlas-beyond-card";const strong=document.createElement("strong");strong.textContent=s.title;const small=document.createElement("small");const kind=s.mapBehavior==="MULTI_SITE_UNPINNED"?"Multi-location collection":s.mapBehavior==="DYNAMIC_UNPINNED"?"Moving Earth view":"Awaiting map evidence";small.textContent=[kind,s.region,s.country,publicTruth(s)].filter(Boolean).join(" · ");b.append(strong,small);b.onclick=()=>openViewer(s);return b});
  grid.replaceChildren(...buttons);const parts=[];if(unmapped.length)parts.push(`${unmapped.length} current ERN place${unmapped.length===1?"":"s"} searchable but not pinned until location evidence is added`);if(multiSite.length)parts.push(`${multiSite.length} multi-location collection${multiSite.length===1?" is":"s are"} intentionally unpinned`);if(dynamic.length)parts.push(`${dynamic.length} dynamic Earth view${dynamic.length===1?" is":"s are"} intentionally unpinned`);note.textContent=parts.join(" · ")+ ".";box.hidden=false;
 }
 
