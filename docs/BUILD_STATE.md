@@ -1,3 +1,11 @@
+## 2026-09-24 — Public currentness label boundary
+- Extended ERN's strict verification windows beyond Watch Earth into Search, My Earth, Destinations and other shared card surfaces.
+- A source whose verification window has expired remains discoverable but now reads RECHECK DUE instead of LIVE HERE / LIVE ↗ / CURRENT IMAGE.
+- DEGRADED, OFFLINE and unknown-health sources now surface LIMITED SOURCE, TEMPORARILY UNAVAILABLE or SOURCE CHECK respectively.
+- Current healthy sources retain their normal live/current truth label.
+- This closes the mismatch where a card could say LIVE HERE while also saying it was verified several days ago.
+- Added regression coverage for the shared truth-label boundary.
+
 ## 2026-09-24 — Watch Earth currentness gate + fresh human playback evidence
 - Aligned visitor-facing Watch Earth eligibility with ERN's backend verification windows: 24h for embedded/current-image sources, 72h for external-live/partner sources, and 168h for ordinary current pages.
 - Removed the previous loose 21-day feature gate that could label an old verification as LIVE HERE.
