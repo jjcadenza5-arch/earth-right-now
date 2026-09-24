@@ -974,11 +974,12 @@
     "lat": 21.109,
     "lon": -86.764,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
-    "checkedAt": "2026-09-20T07:05:00+07:00",
-    "lastSuccessfulCheck": "2026-09-20T07:05:00+07:00",
+    "checkedAt": "2026-09-24T09:10:00Z",
+    "lastSuccessfulCheck": "2026-09-24T09:10:00Z",
     "failureReason": null,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://couchtourist.com/cams/mexico/quintana-roo/live-aqua-beach-resort-cancun-mexico/"
+    "coordinateSourceUrl": "https://couchtourist.com/cams/mexico/quintana-roo/live-aqua-beach-resort-cancun-mexico/",
+    "freshnessEvidence": "Current CouchTourist Live Aqua Cancún page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 3990). Source page is current; deployed ERN playback remains separately unverified."
   },
   {
     "id": "nyc-skyline-jersey-city-earthcam",
@@ -1787,15 +1788,16 @@
     "playback": "EMBED",
     "freshness": 96,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
-    "checkedAt": "2026-09-20T07:30:00+07:00",
-    "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
+    "checkedAt": "2026-09-24T09:10:00Z",
+    "lastSuccessfulCheck": "2026-09-24T09:10:00Z",
     "failureReason": null,
     "story": "A Sea of Japan coastal view along Sasagawa Nagare, highlighting the shoreline, water and changing light.",
     "lat": 38.374444,
     "lon": 139.458139,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q11641442",
-    "coordinateNote": "Public Wikidata coordinate record for Roadside Station Sasagawa-nagare, sourced from the Japanese Wikipedia entry."
+    "coordinateNote": "Public Wikidata coordinate record for Roadside Station Sasagawa-nagare, sourced from the Japanese Wikipedia entry.",
+    "freshnessEvidence": "Current CouchTourist Sasagawa Nagare page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 9505). Source page is current; deployed ERN playback remains separately unverified."
   },
   {
     "id": "chihshang-paradise-road",
@@ -1820,15 +1822,16 @@
     "playback": "EMBED",
     "freshness": 96,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
-    "checkedAt": "2026-09-20T07:30:00+07:00",
-    "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
+    "checkedAt": "2026-09-24T09:10:00Z",
+    "lastSuccessfulCheck": "2026-09-24T09:10:00Z",
     "failureReason": null,
     "story": "A rural Taitung landscape around Chihshang, with fields, open sky and mountain backdrop.",
     "lat": 23.1166667,
     "lon": 121.2166667,
     "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q1135297",
-    "coordinateNote": "Chihshang Township reference point for Paradise Road; not claimed as exact webcam position."
+    "coordinateNote": "Chihshang Township reference point for Paradise Road; not claimed as exact webcam position.",
+    "freshnessEvidence": "Current CouchTourist Chihshang Paradise Road page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 1037). Source page is current; deployed ERN playback remains separately unverified."
   },
   {
     "id": "ponte-di-legno-adamello",
@@ -1853,15 +1856,16 @@
     "playback": "EMBED",
     "freshness": 96,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
-    "checkedAt": "2026-09-20T07:30:00+07:00",
-    "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
+    "checkedAt": "2026-09-24T09:10:00Z",
+    "lastSuccessfulCheck": "2026-09-24T09:10:00Z",
     "failureReason": null,
     "story": "An alpine window around Ponte di Legno and the Adamello area for mountain, snow and weather atmosphere.",
     "lat": 46.2586,
     "lon": 10.5087,
     "coordinateBasis": "REGION_REFERENCE",
     "coordinateSourceUrl": "https://mapcarta.com/25426064",
-    "coordinateNote": "Public geographic reference for Ponte di Legno town; ERN treats this as a regional reference for the Adamello-area view, not the camera position."
+    "coordinateNote": "Public geographic reference for Ponte di Legno town; ERN treats this as a regional reference for the Adamello-area view, not the camera position.",
+    "freshnessEvidence": "Current CouchTourist Ponte di Legno / Adamello page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 8621). Source page is current; deployed ERN playback remains separately unverified."
   },
   {
     "id": "pleasant-beach-lake-ontario",
@@ -2060,15 +2064,16 @@
     "playback": "EMBED",
     "freshness": 96,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
-    "checkedAt": "2026-09-20T07:30:00+07:00",
-    "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
+    "checkedAt": "2026-09-24T09:10:00Z",
+    "lastSuccessfulCheck": "2026-09-24T09:10:00Z",
     "failureReason": null,
     "story": "A harbour-city window in St. John’s, Newfoundland and Labrador, for waterfront activity, sky and coastal atmosphere.",
     "lat": 47.565556,
     "lon": -52.698056,
     "coordinateBasis": "VERIFIED_PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q111959894",
-    "coordinateNote": "St. John's Harbour reference point; not claimed as exact webcam position."
+    "coordinateNote": "St. John's Harbour reference point; not claimed as exact webcam position.",
+    "freshnessEvidence": "Current CouchTourist St. John's Harbour page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 151). Source page is current; deployed ERN playback remains separately unverified."
   },
   {
     "id": "metung-gippsland-lakes",
@@ -2093,15 +2098,16 @@
     "playback": "EMBED",
     "freshness": 96,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
-    "checkedAt": "2026-09-20T07:30:00+07:00",
-    "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
+    "checkedAt": "2026-09-24T09:10:00Z",
+    "lastSuccessfulCheck": "2026-09-24T09:10:00Z",
     "failureReason": null,
     "story": "A waterside view around Metung and the Gippsland Lakes, useful for seeing lake, sky and village atmosphere.",
     "lat": -37.8921089,
     "lon": 147.8542936,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://clubsandpubsnearme.com.au/pubs/the-metung-hotel-metung-vic",
-    "coordinateNote": "Public place reference coordinates for The Metung Hotel at 64 Kurnai Avenue."
+    "coordinateNote": "Public place reference coordinates for The Metung Hotel at 64 Kurnai Avenue.",
+    "freshnessEvidence": "Current CouchTourist Metung Hotel page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 4100). Source page is current; deployed ERN playback remains separately unverified."
   },
   {
     "id": "skeikampen-ski",

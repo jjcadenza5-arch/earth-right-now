@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Embed source refresh tranche K
+- Revalidated six high-value CouchTourist source pages and existing embed snippets.
+- Refreshed source currentness while deliberately leaving deployed playback unverified.
+- Human-playback gate keeps all six out of LIVE HERE until separately confirmed.
+
 ## 2026-09-24 — Fresh human-playback gate for embedded sources
 - Added playbackVerifiedAt evidence markers for the three freshly confirmed deployed embeds.
 - Watch Earth and public LIVE HERE claims now require fresh human playback for EMBED sources.
