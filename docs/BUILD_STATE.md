@@ -1,3 +1,10 @@
+## 2026-09-24 — Public Guide multilingual reply layer
+- Added a lightweight public Guide reply-copy layer for all seven ERN interface languages: English, Thai, German, French, Spanish, Japanese and Chinese.
+- The public Guide already understood multilingual intent terms, but several response sentences were hard-coded in English; those replies now follow the selected interface language.
+- Kept search, ranking, currentness, playback and place logic unchanged. This is a presentation consolidation only.
+- The copy layer loads before app-lite.js and is included in the immutable release artifact/manifest.
+- Added regression coverage for language availability, load order and release inclusion.
+
 ## 2026-09-24 — Private real travel-option research registry
 - Added a private research registry with five existence-verified real stay options for ERN's current top content-ready destinations: Hyatt House Jersey City, Tiflis Palace, Malliouhana, Chalet Arva and Flåmsbrygga.
 - Each candidate is backed by a current official business/destination page and tied to an existing ERN placeId.

@@ -30,6 +30,7 @@ const translations={
 }
 let lang=readSavedText("ern-language","en");if(!translations[lang])lang="en";
 const t=k=>translations[lang]?.[k]||translations.en[k]||k;
+function guideMsg(key,vars={}){const table=globalThis.ERNGuideCopy?.[lang]||globalThis.ERNGuideCopy?.en||{},raw=table[key]||globalThis.ERNGuideCopy?.en?.[key]||key;return String(raw).replace(/\{(\w+)\}/g,(_,k)=>String(vars[k]??""))}
 function cleanUrl(v){try{const u=new URL(v,location.href);return /^https?:$/.test(u.protocol)?u.href:null}catch{return null}}
 function truthLabel(s){if(s.truth==="LIVE_VIDEO")return"LIVE VIDEO";if(s.truth==="LIVE_IMAGE")return"LIVE IMAGE";if(s.truth==="EXTERNAL_LIVE")return"EXTERNAL LIVE";if(s.truth==="PARTNER")return"PARTNER";return"PREVIEW"}
 function embedPlaybackCurrent(s){if(!s||s.playback!=="EMBED")return true;const t=Date.parse(s.playbackVerifiedAt||"");return Number.isFinite(t)&&Math.max(0,(Date.now()-t)/36e5)<=24}
@@ -353,33 +354,33 @@ function guidePlaceMatches(q){
 
 function guideResponse(q){
  const intent=guideIntent(q);
- if(!intent.raw)return{text:"Tell me a mood, a place, or the kind of Earth you want to see.",items:[]};
+ if(!intent.raw)return{text:guideMsg("welcome"),items:[]};
  const nq=normalizeSearch(q),ownerIntent=/\b(add|submit|owner|my camera|my business|my place|list my|camera owner)\b/.test(nq);
- if(ownerIntent)return{text:"If you have a place or public camera, ERN has a reviewed path for it. Payment never buys ranking.",items:[],link:{href:"./for-places.html",label:"For places & cameras"}};
+ if(ownerIntent)return{text:guideMsg("owner"),items:[],link:{href:"./for-places.html",label:"For places & cameras"}};
  const businessIntent=/\b(cafe|café|restaurant|shop|market|farm|small business|local business|hotel|guesthouse|bakery|food)\b/.test(nq);
- if(businessIntent){const locals=localDirectoryMatch(q).slice(0,4);if(locals.length)return{text:"These are reviewed local places that match what you asked for.",items:[],locals};return{text:"ERN’s reviewed local-place directory is still growing. I won’t invent a business, but I can show smaller current Earth places or you can search a destination.",items:state.sources.filter(featureEligible).filter(s=>localPlaceSignals(s).worth).sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,4)};}
- if(/moment|upload|photo|picture|visitor/.test(normalizeSearch(q)))return{text:"Now Moments are the visitor-expression layer: short-lived observations first, then temporary photos and clips once moderation and privacy infrastructure are ready.",items:[],link:{href:"./now-moments.html",label:"About Now Moments"}};
- if(intent.near&&state.selected){const items=guideNearby(state.selected);return{text:items.length?"Here are a few current places near "+state.selected.title+".":"I do not yet have enough mapped places near this window.",items};}
+ if(businessIntent){const locals=localDirectoryMatch(q).slice(0,4);if(locals.length)return{text:guideMsg("businessFound"),items:[],locals};return{text:guideMsg("businessEmpty"),items:state.sources.filter(featureEligible).filter(s=>localPlaceSignals(s).worth).sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,4)};}
+ if(/moment|upload|photo|picture|visitor/.test(normalizeSearch(q)))return{text:guideMsg("moments"),items:[],link:{href:"./now-moments.html",label:"About Now Moments"}};
+ if(intent.near&&state.selected){const items=guideNearby(state.selected);return{text:items.length?guideMsg("nearbyFound",{place:state.selected.title}):guideMsg("nearbyEmpty"),items};}
  const placeMatches=guidePlaceMatches(q);
- if(placeMatches.length&&!intent.surprise&&!intent.near&&!intent.local&&!intent.peaceful&&!intent.golden&&!intent.night&&!intent.wildlife&&!intent.beach&&!intent.mountain&&!intent.city&&!intent.happening)return{text:"I found "+placeMatches.length+" strong ERN window"+(placeMatches.length===1?"":"s")+" for that place.",items:placeMatches.slice(0,4)};
+ if(placeMatches.length&&!intent.surprise&&!intent.near&&!intent.local&&!intent.peaceful&&!intent.golden&&!intent.night&&!intent.wildlife&&!intent.beach&&!intent.mountain&&!intent.city&&!intent.happening)return{text:guideMsg("placeFound",{count:placeMatches.length}),items:placeMatches.slice(0,4)};
  let pool=state.sources.filter(featureEligible);
  if(intent.current)pool=pool.filter(currentTruthClaim);
  if(intent.local){const local=pool.filter(s=>localPlaceSignals(s).worth);if(local.length)pool=local}
  let items=[...pool].sort((a,b)=>guideScore(b,intent)-guideScore(a,intent));
  if(intent.surprise&&items.length){const top=items.slice(0,Math.min(18,items.length));const salt=(Date.now()/60000|0)%top.length;items=[top[salt],...top.filter((_,i)=>i!==salt)]}
  items=items.slice(0,4);
- let text="Here are a few places I would start with.";
- if(intent.peaceful)text="For a quieter Earth, I’d start with these.";
- else if(intent.golden)text="These have the strongest morning or evening-light potential right now.";
- else if(intent.night)text="For night lights and visible city energy, try these.";
- else if(intent.local)text="These are smaller local places worth discovering, not just famous destinations.";
- else if(intent.wildlife)text="These are the strongest wildlife-oriented windows I can find right now.";
- else if(intent.beach)text="For water, coast and beach views, I’d start here.";
- else if(intent.mountain)text="For mountains, snow and high places, try these.";
- else if(intent.happening)text="For visible activity happening now, I’d start with these verified current windows.";
- else if(intent.city)text="For streets, cities and visible activity, these are good starting points.";
- else if(intent.surprise)text="Let’s go somewhere you might not have searched for yourself.";
- else if(intent.current)text="These are among ERN’s stronger recently verified windows right now.";
+ let text=guideMsg("default");
+ if(intent.peaceful)text=guideMsg("peaceful");
+ else if(intent.golden)text=guideMsg("golden");
+ else if(intent.night)text=guideMsg("night");
+ else if(intent.local)text=guideMsg("local");
+ else if(intent.wildlife)text=guideMsg("wildlife");
+ else if(intent.beach)text=guideMsg("beach");
+ else if(intent.mountain)text=guideMsg("mountain");
+ else if(intent.happening)text=guideMsg("happening");
+ else if(intent.city)text=guideMsg("city");
+ else if(intent.surprise)text=guideMsg("surprise");
+ else if(intent.current)text=guideMsg("current");
  return{text,items};
 }
 function renderGuideResult(s){

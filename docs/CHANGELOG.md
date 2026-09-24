@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-24 — Multilingual public Guide replies
+- Public Guide answers now follow ERN's selected language across all seven supported interface languages.
+
 ## 2026-09-24 — Private commercial research staging
 - Staged five real, official-site-verified travel options for the top content-ready destinations.
 - Added operations/integrity validation while keeping public affiliate and travel-offer inventory empty.
