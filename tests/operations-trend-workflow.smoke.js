@@ -1,0 +1,10 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const pkg=JSON.parse(fs.readFileSync("package.json","utf8"));
+assert.equal(pkg.scripts["operations:trend-snapshot"],"node scripts/operations-trend-snapshot.mjs");
+assert.equal(pkg.scripts["operations:trend-compare"],"node scripts/operations-trend-compare.mjs");
+const yml=fs.readFileSync(".github/workflows/operations-watch.yml","utf8");
+assert.match(yml,/actions\/cache\/restore@v4/);assert.match(yml,/actions\/cache\/save@v4/);
+assert.match(yml,/trend-current\.json/);assert.match(yml,/trend-delta\.json/);
+assert.match(yml,/operations:trend-snapshot/);assert.match(yml,/operations:trend-compare/);
+assert.match(yml,/ern-ops-trend-/);assert.match(yml,/actions\/upload-artifact@v4/);
+console.log("ERN operations trend workflow wiring passed");
