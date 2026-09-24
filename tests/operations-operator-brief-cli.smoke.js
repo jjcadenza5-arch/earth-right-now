@@ -19,7 +19,8 @@ const args=[
  write("onboarding.json",{items:[{title:"Test Place",country:"Testland",recommendedAction:"RESEARCH_REAL_OPTIONS",score:88}]}),
  write("transport.json",{status:"DISABLED",active:false,missing:["ENDPOINT"]}),
  write("commercial-horizon.json",{summary:{partners:{current:0,due30:0,due14:0,due7:0,expired:0,reviewRequired:0,inactive:0},offers:{current:0,due30:0,due14:0,due7:0,expired:0,reviewRequired:0},attention:0},urgent:[]}),
- write("playback-consistency.json",{summary:{catalogMarkers:3,humanObservations:4,freshHumanObservations:3,issues:0},issues:[]})
+ write("playback-consistency.json",{summary:{catalogMarkers:3,humanObservations:4,freshHumanObservations:3,issues:0},issues:[]}),
+ write("provider-family-research.json",{items:[{provider:"Explore.org",permissionStatus:"PROMISING_REQUIRES_SPECIFIC_ENABLED_CAM",technicalStatus:"SPECIFIC_EMBED_URL_REQUIRED",nextAction:"TEST"}]})
 ];
 const r=spawnSync(process.execPath,["scripts/operations-operator-brief.mjs",...args],{encoding:"utf8"});
 assert.equal(r.status,0,r.stderr);
@@ -28,5 +29,6 @@ assert.match(r.stdout,/Commercial onboarding research/);
 assert.match(r.stdout,/Submission transport/);
 assert.match(r.stdout,/Commercial verification horizon/);
 assert.match(r.stdout,/Playback evidence consistency/);
+assert.match(r.stdout,/Provider-family research/);
 assert.match(r.stdout,/Read-only operational summary/);
 console.log("ERN operations operator-brief CLI wiring passed");

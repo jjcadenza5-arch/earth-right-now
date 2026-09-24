@@ -13,6 +13,7 @@ const requiredJson=[
  "inside-provider-resilience.json",
  "embed-research.json",
  "embed-research-preflight.json",
+ "provider-family-research.json",
  "commercial-inventory.json",
  "commercial-verification-horizon.json",
  "commercial-onboarding-plan.json",
@@ -56,6 +57,14 @@ export async function validateOperationsPacket(dir="ern-ops"){
       if(row?.catalogMutationAllowed!==false)issues.push({file:"source-availability-continuity.json",code:"CONTINUITY_MUTATION_BOUNDARY_VIOLATION",id:row?.id||null});
       if(row?.automaticHealthChangeAllowed!==false)issues.push({file:"source-availability-continuity.json",code:"CONTINUITY_HEALTH_BOUNDARY_VIOLATION",id:row?.id||null});
     }
+  }
+
+  const providerFamilyResearch=files["provider-family-research.json"];
+  if(providerFamilyResearch){
+    if(providerFamilyResearch?.safety?.catalogMutationAllowed!==false)issues.push({file:"provider-family-research.json",code:"PROVIDER_FAMILY_MUTATION_BOUNDARY_VIOLATION"});
+    if(providerFamilyResearch?.safety?.automaticPermissionApprovalAllowed!==false)issues.push({file:"provider-family-research.json",code:"PROVIDER_FAMILY_PERMISSION_BOUNDARY_VIOLATION"});
+    if(providerFamilyResearch?.safety?.automaticPromotionAllowed!==false)issues.push({file:"provider-family-research.json",code:"PROVIDER_FAMILY_PROMOTION_BOUNDARY_VIOLATION"});
+    if(providerFamilyResearch?.unsafe?.length)issues.push({file:"provider-family-research.json",code:"UNSAFE_PROVIDER_FAMILY_RESEARCH",count:providerFamilyResearch.unsafe.length});
   }
 
   const playbackConsistency=files["playback-evidence-consistency.json"];

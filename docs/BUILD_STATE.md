@@ -1,3 +1,11 @@
+## 2026-09-24 — Second provider-family research lane
+- Added a provider-family research ledger separate from specific embed candidates and the public source catalog.
+- Explore.org is staged as RESEARCH_ONLY because its current terms describe deep-link/embed use when embedding is enabled, including the Explore-branded player; ERN still requires a specific current camera with an enabled embed path before any deployed test.
+- The ledger explicitly keeps permissionConfirmed=false, humanPlaybackConfirmed=false and promotionAllowed=false until specific-camera review.
+- Network-family identity remains unresolved until the actual player endpoint is identified, so this research cannot falsely satisfy provider-resilience metrics.
+- Daily operations and the private operator brief now carry provider-family research alongside specific YouTube candidate preflight.
+- Packet integrity enforces the no-mutation/no-auto-permission/no-auto-promotion boundary.
+
 ## 2026-09-24 — Atomic playback-proof update proposals
 - Strengthened the human-review proposal layer so confirmed playback now proposes both sides of ERN's proof model together: the HUMAN_PLAYBACK observation and the matching catalog playbackVerifiedAt marker.
 - Both proposed timestamps are identical and the proposal explicitly marks the pair as an atomic manual proof update.

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Second provider-family research lane
+- Added a research-only provider-family ledger for non-CouchTourist embed paths.
+- Explore.org is staged as promising-but-unresolved pending a specific enabled player URL and deployed human playback test.
+- Provider-family research cannot promote catalog sources or satisfy resilience metrics automatically.
+
 ## 2026-09-24 — Atomic playback-proof update proposals
 - Human playback confirmation now proposes the observation ledger entry and matching playbackVerifiedAt marker as one manual atomic update.
 - Failure/inconclusive paths propose neither marker nor automatic write.
