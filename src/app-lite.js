@@ -18,7 +18,7 @@ function recordInterest(s){
 }
 const savedMode=readSavedText("ern-mode","auto");
 const savedCategory=readSavedText("ern-category","all");
-const state={sources:[],localDirectory:[],watch:[],selected:null,watchIndex:0,journeyTimer:null,imageTimer:null,heroTimer:null,setOffset:0,wanderOffset:0,mode:["auto","beautiful","cities","calm","night","golden"].includes(savedMode)?savedMode:"auto",category:["all","mountain","beach","city","nature","wildlife","island","park","landmark","weather","random"].includes(savedCategory)?savedCategory:"all",favorites:readSavedSet("ern-favorites")};
+const state={sources:[],localDirectory:[],travelOffers:[],watch:[],selected:null,watchIndex:0,journeyTimer:null,imageTimer:null,heroTimer:null,setOffset:0,wanderOffset:0,mode:["auto","beautiful","cities","calm","night","golden"].includes(savedMode)?savedMode:"auto",category:["all","mountain","beach","city","nature","wildlife","island","park","landmark","weather","random"].includes(savedCategory)?savedCategory:"all",favorites:readSavedSet("ern-favorites")};
 const translations={
  en:{home:"Home",watchEarth:"Watch Earth",explore:"Explore",worldMap:"World Map",destinations:"Destinations",seeBefore:"See before you go.",watchNow:"Watch Earth Now",nextMoment:"Next moment",forMoment:"For this moment",beautifulEarth:"Beautiful Earth",earthMotion:"Earth in Motion",natureCalm:"Nature & Calm",nightLights:"Night Lights",anotherSix:"Another six",searchEarth:"Search Earth…",clear:"Clear",allWindows:"All windows",playHere:"Play here",externalLive:"External live",resetLocal:"Reset local suggestions",previous:"Previous",playJourney:"Play journey",pauseJourney:"Pause journey",next:"Next",source:"Source",share:"Share",fullScreen:"Full screen",watch:"Watch",map:"Map",saved:"Saved",heroDeck:"Live views from amazing places around the world. Real conditions. Real moments. A more connected planet.",watchNowEyebrow:"WATCH EARTH NOW",watchSubhead:"A changing world. Always something new to see.",surpriseMe:"Surprise Me",keepWandering:"KEEP WANDERING",morePlaces:"More places worth a look.",exploreEarth:"EXPLORE EARTH",whereLook:"Where do you want to look?",searchDeck:"Search a city, beach, mountain, park, wildlife camera or destination. ERN shows the best truthful window available.",livingAtlas:"LIVING ATLAS",atlasHeading:"The world, one current window at a time.",atlasDeck:"Choose a pin, then open the best available current view for that place.",myEarth:"MY EARTH",myEarthHeading:"Your places, kept local.",myEarthDeck:"Favorites and recent exploration stay in this browser. ERN uses them only to gently improve your For this moment set.",savedWindows:"Saved windows",recentExplored:"Recently explored",continueExploring:"Continue exploring",localOnly:"Based only on your local ERN activity.",aboutWindow:"ABOUT THIS WINDOW",nearbyEarth:"NEARBY ON EARTH",moreLikeThis:"MORE LIKE THIS",beforeGo:"BEFORE YOU GO",stay:"Stay",eat:"Eat",thingsDo:"Things to do",weather:"Weather",goldenHour:"Golden Hour",playHereCount:"play here",daylightCount:"in daylight",nightCityCount:"night-city views",mappedCount:"mapped windows",allPlaces:"All Places",mountains:"Mountains",beaches:"Beaches",cities:"Cities",nature:"Nature",wildlife:"Wildlife",islands:"Islands",parks:"Parks",landmarks:"Landmarks",random:"Random",daylightNow:"Daylight now"},
  th:{home:"หน้าแรก",watchEarth:"ชมโลก",explore:"สำรวจ",worldMap:"แผนที่โลก",destinations:"จุดหมาย",seeBefore:"ดูก่อนที่คุณจะไป",watchNow:"ชมโลกตอนนี้",nextMoment:"ช่วงเวลาถัดไป",forMoment:"สำหรับช่วงเวลานี้",beautifulEarth:"โลกที่สวยงาม",earthMotion:"โลกที่เคลื่อนไหว",natureCalm:"ธรรมชาติและความสงบ",nightLights:"แสงไฟยามค่ำ",anotherSix:"อีกหกแห่ง",searchEarth:"ค้นหาโลก…",clear:"ล้าง",allWindows:"ทุกมุมมอง",playHere:"เล่นที่นี่",externalLive:"ไลฟ์ภายนอก",resetLocal:"รีเซ็ตคำแนะนำในเครื่อง",previous:"ก่อนหน้า",playJourney:"เล่นต่อเนื่อง",pauseJourney:"หยุดชั่วคราว",next:"ถัดไป",source:"แหล่งที่มา",share:"แชร์",fullScreen:"เต็มจอ",watch:"ชม",map:"แผนที่",saved:"บันทึก",heroDeck:"มุมมองสดและภาพปัจจุบันจากสถานที่น่าสนใจทั่วโลก สภาพจริง ช่วงเวลาจริง โลกที่เชื่อมถึงกันมากขึ้น",watchNowEyebrow:"ชมโลกตอนนี้",watchSubhead:"โลกกำลังเปลี่ยนแปลง และมีสิ่งใหม่ให้เห็นเสมอ",surpriseMe:"สุ่มให้ฉัน",keepWandering:"เดินทางต่อ",morePlaces:"อีกหลายสถานที่ที่น่าดู",exploreEarth:"สำรวจโลก",whereLook:"คุณอยากมองไปที่ไหน?",searchDeck:"ค้นหาเมือง ชายหาด ภูเขา สวน สัตว์ป่า หรือจุดหมายปลายทาง ERN จะแสดงมุมมองที่ตรงไปตรงมาที่สุด",livingAtlas:"แผนที่โลกมีชีวิต",atlasHeading:"โลกทั้งใบ ผ่านมุมมองปัจจุบันทีละแห่ง",atlasDeck:"เลือกหมุด แล้วเปิดมุมมองปัจจุบันที่ดีที่สุดของสถานที่นั้น",myEarth:"โลกของฉัน",myEarthHeading:"สถานที่ของคุณ เก็บไว้ในเบราว์เซอร์นี้",myEarthDeck:"รายการโปรดและประวัติการสำรวจอยู่ในเบราว์เซอร์นี้เท่านั้น ERN ใช้เพื่อปรับชุดสำหรับช่วงเวลานี้อย่างนุ่มนวล",savedWindows:"มุมมองที่บันทึก",recentExplored:"สำรวจล่าสุด",continueExploring:"สำรวจต่อ",localOnly:"อ้างอิงจากกิจกรรม ERN ในเบราว์เซอร์นี้เท่านั้น",aboutWindow:"เกี่ยวกับมุมมองนี้",nearbyEarth:"สถานที่ใกล้เคียง",moreLikeThis:"คล้ายกัน",beforeGo:"ก่อนที่คุณจะไป",stay:"ที่พัก",eat:"ร้านอาหาร",thingsDo:"สิ่งที่น่าทำ",weather:"อากาศ",goldenHour:"ช่วงแสงทอง",playHereCount:"เล่นที่นี่",daylightCount:"อยู่ในช่วงกลางวัน",nightCityCount:"เมืองยามค่ำ",mappedCount:"อยู่บนแผนที่",allPlaces:"ทุกสถานที่",mountains:"ภูเขา",beaches:"ชายหาด",cities:"เมือง",nature:"ธรรมชาติ",wildlife:"สัตว์ป่า",islands:"เกาะ",parks:"สวน",landmarks:"แลนด์มาร์ก",random:"สุ่ม",daylightNow:"กลางวันตอนนี้"},
@@ -265,6 +265,28 @@ function renderQuickSearches(){
 
 
 function safeExternalUrl(v){try{const u=new URL(String(v||"").trim());return["http:","https:"].includes(u.protocol)&&!u.username&&!u.password?u.toString():""}catch{return""}}
+function currentClientTravelOffer(o){
+ if(!o||o.verified!==true||!o.id||!o.title||!o.provider||!o.placeId||!o.intent)return false;
+ let u;try{u=new URL(String(o.url||"").trim())}catch{return false}
+ if(u.protocol!=="https:"||u.username||u.password||!u.hostname)return false;
+ const t=Date.parse(o.verifiedAt||"");if(!Number.isFinite(t)||t>Date.now()+300000)return false;
+ return (Date.now()-t)/86400000<=90;
+}
+function travelOfferFor(s,intent){
+ const placeId=s?.placeId||s?.id;if(!placeId)return null;
+ return (state.travelOffers||[]).filter(o=>o&&o.placeId===placeId&&o.intent===intent&&currentClientTravelOffer(o)).sort((a,b)=>Date.parse(b.verifiedAt)-Date.parse(a.verifiedAt)||String(a.id).localeCompare(String(b.id)))[0]||null;
+}
+function travelOfferDisclosure(o){return o?.sponsored?"Sponsored":o?.affiliate?"Affiliate link":"External travel link"}
+function applyPlanOffer(el,offer,fallback,label){
+ if(!el)return;
+ const href=offer?String(offer.url||""):fallback;el.href=href;
+ if(offer){
+  el.dataset.offerId=String(offer.id);el.dataset.offerKind=offer.sponsored?"sponsored":offer.affiliate?"affiliate":"external";
+  const disclosure=travelOfferDisclosure(offer);el.title=String(offer.provider)+" · "+disclosure;el.setAttribute("aria-label",label+" — "+String(offer.provider)+" — "+disclosure);
+ }else{
+  delete el.dataset.offerId;delete el.dataset.offerKind;el.removeAttribute("title");el.setAttribute("aria-label",label);
+ }
+}
 function approvedLocalPlaces(){return(state.localDirectory||[]).filter(x=>x&&x.status==="APPROVED"&&x.id&&x.name&&safeExternalUrl(x.url))}
 function localDirectoryMatch(q){
  const tokens=normalizeSearch(q).split(/\s+/).filter(Boolean),noise=new Set(["local","small","place","places","business","businesses","near","nearby","find","show","me","a","an","the"]);
