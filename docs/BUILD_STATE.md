@@ -1,3 +1,10 @@
+## 2026-09-24 — Atomic playback-proof update proposals
+- Strengthened the human-review proposal layer so confirmed playback now proposes both sides of ERN's proof model together: the HUMAN_PLAYBACK observation and the matching catalog playbackVerifiedAt marker.
+- Both proposed timestamps are identical and the proposal explicitly marks the pair as an atomic manual proof update.
+- Missing availability, playback failures and inconclusive reviews never receive a playback marker proposal.
+- Automatic writes remain disabled; source health, permission and catalog truth are still unchanged until reviewed evidence is deliberately applied.
+- Added regression coverage that prevents future proposal code from updating only one side and creating ledger/catalog drift.
+
 ## 2026-09-24 — Proactive playback-proof renewal queue
 - Upgraded the unlinked operator review lab so fresh inside-ERN proof can be renewed before its 24-hour LIVE HERE eligibility expires.
 - DUE_12H and DUE_6H healthy EMBED_ALLOWED sources are now placed ahead of ordinary restoration candidates.

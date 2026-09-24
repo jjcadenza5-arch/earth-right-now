@@ -11,10 +11,10 @@ const availability={results:[
 const preflight={rows:[{id:"research-a",technicalReady:true,outcome:"TECHNICALLY_READY_FOR_DEPLOYED_TEST"}]};
 let r=reviewEvidenceProposals(packet,{knownSourceIds:["source-a","source-b"],researchIds:["research-a"],availabilityReport:availability,researchPreflight:preflight});
 assert.equal(r.validation.ok,true);assert.equal(r.summary.sourceReady,1);assert.equal(r.summary.sourceFailureReview,1);assert.equal(r.summary.researchReadyForReview,1);
-const ready=r.sourceProposals.find(x=>x.id==="source-a");assert.equal(ready.status,"READY_FOR_PROVIDER_OBSERVATION_PROPOSAL");assert.equal(ready.proposedObservation.httpStatus,200);assert.equal(ready.proposedObservation.confirmation,"HUMAN_PLAYBACK");assert.equal(ready.automaticWriteAllowed,false);
-const failed=r.sourceProposals.find(x=>x.id==="source-b");assert.equal(failed.status,"POSSIBLE_SOURCE_REMOVAL_REVIEW");assert.equal(failed.proposedObservation,null);
+const ready=r.sourceProposals.find(x=>x.id==="source-a");assert.equal(ready.status,"READY_FOR_PROVIDER_OBSERVATION_PROPOSAL");assert.equal(ready.proposedObservation.httpStatus,200);assert.equal(ready.proposedObservation.confirmation,"HUMAN_PLAYBACK");assert.deepEqual(ready.proposedCatalogPlaybackMarker,{id:"source-a",playbackVerifiedAt:"2026-09-24T11:00:00.000Z"});assert.equal(ready.atomicProofUpdateRequired,true);assert.equal(ready.automaticWriteAllowed,false);
+const failed=r.sourceProposals.find(x=>x.id==="source-b");assert.equal(failed.status,"POSSIBLE_SOURCE_REMOVAL_REVIEW");assert.equal(failed.proposedObservation,null);assert.equal(failed.proposedCatalogPlaybackMarker,null);assert.equal(failed.atomicProofUpdateRequired,false);
 const research=r.researchProposals[0];assert.equal(research.status,"READY_FOR_PERMISSION_AND_EDITORIAL_REVIEW");assert.equal(research.catalogPromotionAllowed,false);
-assert.equal(r.catalogMutationAllowed,false);assert.equal(r.automaticHealthChangeAllowed,false);assert.equal(r.automaticPermissionApprovalAllowed,false);
+assert.equal(r.catalogMutationAllowed,false);assert.equal(r.automaticHealthChangeAllowed,false);assert.equal(r.automaticPermissionApprovalAllowed,false);assert.equal(r.playbackProofUpdateAtomicityRequired,true);
 r=reviewEvidenceProposals(packet,{knownSourceIds:["source-a","source-b"],researchIds:["research-a"],availabilityReport:{results:[]},researchPreflight:null});
 assert.equal(r.sourceProposals.find(x=>x.id==="source-a").status,"NEEDS_FRESH_AVAILABILITY_EVIDENCE");
 assert.equal(r.researchProposals[0].status,"NEEDS_TECHNICAL_PREFLIGHT");

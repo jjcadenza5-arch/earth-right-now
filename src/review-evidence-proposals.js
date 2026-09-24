@@ -48,6 +48,8 @@ export function reviewEvidenceProposals(packet,{
           observedAt:item.observedAt,
           reason:"Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
         },
+        proposedCatalogPlaybackMarker:{id:item.id,playbackVerifiedAt:item.observedAt},
+        atomicProofUpdateRequired:true,
         automaticWriteAllowed:false
       }:{
         id:item.id,
@@ -57,6 +59,8 @@ export function reviewEvidenceProposals(packet,{
         availabilityObservedAt:a?.observedAt||null,
         availabilityOutcome:a?.outcome||null,
         proposedObservation:null,
+        proposedCatalogPlaybackMarker:null,
+        atomicProofUpdateRequired:false,
         automaticWriteAllowed:false
       });
       continue;
@@ -71,6 +75,8 @@ export function reviewEvidenceProposals(packet,{
         availabilityObservedAt:a?.observedAt||null,
         availabilityOutcome:a?.outcome||null,
         proposedObservation:null,
+        proposedCatalogPlaybackMarker:null,
+        atomicProofUpdateRequired:false,
         automaticWriteAllowed:false,
         note:"A human playback failure is not treated as a definitive provider/media removal automatically."
       });
@@ -85,6 +91,8 @@ export function reviewEvidenceProposals(packet,{
       availabilityObservedAt:a?.observedAt||null,
       availabilityOutcome:a?.outcome||null,
       proposedObservation:null,
+      proposedCatalogPlaybackMarker:null,
+      atomicProofUpdateRequired:false,
       automaticWriteAllowed:false
     });
   }
@@ -124,6 +132,7 @@ export function reviewEvidenceProposals(packet,{
     catalogMutationAllowed:false,
     automaticHealthChangeAllowed:false,
     automaticPermissionApprovalAllowed:false,
+    playbackProofUpdateAtomicityRequired:true,
     sourceProposals,
     researchProposals,
     summary:{
@@ -133,6 +142,6 @@ export function reviewEvidenceProposals(packet,{
       researchReadyForReview:researchProposals.filter(x=>x.status==="READY_FOR_PERMISSION_AND_EDITORIAL_REVIEW").length,
       researchNeedsPreflight:researchProposals.filter(x=>x.status==="NEEDS_TECHNICAL_PREFLIGHT").length
     },
-    note:"Proposal layer only. No provider observation, source health, permission, playbackVerifiedAt, or catalog record is written automatically."
+    note:"Proposal layer only. Confirmed source playback proposes the HUMAN_PLAYBACK observation and matching playbackVerifiedAt marker as one manual atomic proof update. Nothing is written automatically."
   };
 }

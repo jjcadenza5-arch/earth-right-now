@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Atomic playback-proof update proposals
+- Human playback confirmation now proposes the observation ledger entry and matching playbackVerifiedAt marker as one manual atomic update.
+- Failure/inconclusive paths propose neither marker nor automatic write.
+
 ## 2026-09-24 — Proactive playback-proof renewal queue
 - Operator review now surfaces DUE_12H / DUE_6H inside-ERN playback proof before it expires.
 - Renewal items precede ordinary restoration candidates while preserving human review and non-mutating evidence boundaries.
