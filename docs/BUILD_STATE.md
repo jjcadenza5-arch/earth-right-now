@@ -1,3 +1,12 @@
+## 2026-09-24 — Safe review-evidence proposal layer
+- Added a non-mutating proposal layer that combines validated operator human-review evidence with independent source-availability evidence and optional second-provider technical preflight.
+- A restored source reaches READY_FOR_PROVIDER_OBSERVATION_PROPOSAL only when HUMAN_PLAYBACK is confirmed and a separate PAGE_REACHABLE HTTP observation is current within the evidence-separation window.
+- Playback failures never become definitive removals automatically; PAGE_MISSING + human failure only produces POSSIBLE_SOURCE_REMOVAL_REVIEW.
+- Research candidates with human playback + technical readiness advance only to READY_FOR_PERMISSION_AND_EDITORIAL_REVIEW; catalog promotion remains blocked.
+- Added `npm run inside:review-proposals -- <review-packet.json> [availability.json] [research-preflight.json]`.
+- The output explicitly keeps catalogMutationAllowed=false, automaticHealthChangeAllowed=false, automaticPermissionApprovalAllowed=false and per-item automaticWriteAllowed=false.
+- Added regression coverage for ready, missing-availability, failure-review and second-provider proposal paths.
+
 ## 2026-09-24 — Local-only operator review evidence packets
 - Extended the unlinked operator review lab with local-only human review controls: Playing & current, Failed / not playing, and Inconclusive.
 - Review controls remain disabled until the candidate iframe has actually been loaded in the deployed review page.
