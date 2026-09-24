@@ -17,9 +17,16 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
+      - name: Restore previous trend snapshot
+        uses: actions/cache/restore@v4
+        with:
+          path: ern-history/previous.json
+          key: ern-ops-trend-${{ github.run_id }}
+          restore-keys: |
+            ern-ops-trend-
       - name: Build daily operations packet
         run: |
-          mkdir -p ern-ops
+          mkdir -p ern-ops ern-history
           npm --silent run sources:horizon | tee ern-ops/verification-horizon.json
           npm --silent run watch-earth:now | tee ern-ops/watch-earth-now.json
           npm --silent run watch-earth:balance | tee ern-ops/watch-earth-balance.json
@@ -27,7 +34,25 @@ jobs:
           npm --silent run inside:recovery | tee ern-ops/inside-recovery.json
           npm --silent run inside:providers | tee ern-ops/inside-provider-resilience.json
           npm --silent run inside:research | tee ern-ops/embed-research.json
+          npm --silent run operations:trend-snapshot | tee ern-ops/trend-current.json
           npm --silent run operations:status | tee ern-ops/operations-status.json
+      - name: Compare operations trend
+        if: always()
+        run: |
+          if [ -f ern-ops/trend-current.json ]; then
+            if [ -f ern-history/previous.json ]; then
+              npm --silent run operations:trend-compare -- ern-history/previous.json ern-ops/trend-current.json | tee ern-ops/trend-delta.json
+            else
+              npm --silent run operations:trend-compare -- - ern-ops/trend-current.json | tee ern-ops/trend-delta.json
+            fi
+            cp ern-ops/trend-current.json ern-history/previous.json
+          fi
+      - name: Save latest trend snapshot
+        if: always() && hashFiles('ern-history/previous.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: ern-history/previous.json
+          key: ern-ops-trend-${{ github.run_id }}
       - name: Retain operations packet
         if: always()
         uses: actions/upload-artifact@v4

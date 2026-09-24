@@ -1,3 +1,11 @@
+## 2026-09-24 — Daily ERN operations trend layer
+- Added a compact versioned operations snapshot covering catalog health/currentness, Watch Earth balance, inside-ERN readiness, provider concentration, release blockers and maintenance debt.
+- Daily operations now restore the most recent prior trend snapshot when available, compare it with the current snapshot, and emit a trend delta classified as BASELINE, IMPROVING, REGRESSING, MIXED or UNCHANGED.
+- The latest snapshot is retained through GitHub Actions cache while the full current/delta JSON files are included in the normal 14-day operations artifact packet.
+- Trend comparison is observational only: it does not change catalog truth, source health, permissions, playback evidence, rankings or visitor content.
+- First run cleanly establishes a BASELINE when no prior snapshot exists.
+- Added regression coverage for snapshot shape, improvement/regression direction, CLI contracts and cache/artifact workflow wiring.
+
 ## 2026-09-24 — Embed source refresh tranche L
 - Revalidated four additional CouchTourist provider pages: Roque de los Muchachos, Taitung Jinzun, Lajes do Pico and Mpala Watering Hole.
 - Each page still identifies its view as live and exposes the same ERN-reviewed embed iframe already in the catalog.
