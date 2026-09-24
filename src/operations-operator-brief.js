@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -32,6 +32,12 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push(`- ${h.current||0} current; ${h.due6h||0} due within 6h; ${h.due12h||0} due within 12h; ${h.expired||0} expired; ${h.missing||0} missing; ${h.held||0} held.`);
     for(const item of (playbackHorizon.urgent||[]).slice(0,5))lines.push(`- ${item.title||item.id}: ${item.state}${Number.isFinite(item.remainingHours)?` (${item.remainingHours}h)`:""}`);
     lines.push("");
+  }
+  if(playbackEvidenceConsistency?.summary){
+    lines.push("## Playback evidence consistency");
+    lines.push(`- Catalog markers: ${playbackEvidenceConsistency.summary.catalogMarkers||0}; HUMAN_PLAYBACK observations: ${playbackEvidenceConsistency.summary.humanObservations||0}; fresh human observations: ${playbackEvidenceConsistency.summary.freshHumanObservations||0}; issues: ${playbackEvidenceConsistency.summary.issues||0}.`);
+    for(const item of (playbackEvidenceConsistency.issues||[]).slice(0,5))lines.push(`- ${item.id||"unknown"} — ${item.code}`);
+    lines.push("- Consistency audit is read-only; it never creates or refreshes playback proof.","");
   }
   if(recovery?.restorationCandidates?.length){
     lines.push("## Inside-ERN restoration queue");
@@ -80,6 +86,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   }
   lines.push("## Next operational focus");
   if((playbackHorizon?.summary?.due6h||0)>0||(playbackHorizon?.summary?.due12h||0)>0)lines.push("- Renew expiring inside-ERN HUMAN_PLAYBACK evidence before LIVE HERE eligibility lapses.");
+  if((playbackEvidenceConsistency?.summary?.issues||0)>0)lines.push("- Resolve playback-evidence ledger/catalog drift before treating new LIVE HERE proof as authoritative.");
   if((snapshot?.insideERN?.readyShortfall||0)>0)lines.push("- Restore strong inside-ERN windows with fresh HUMAN_PLAYBACK evidence.");
   if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
   if((snapshot?.maintenance?.sourceRevalidation||0)>0)lines.push("- Work the highest-priority source revalidation items.");

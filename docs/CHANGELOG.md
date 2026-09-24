@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Playback evidence consistency audit
+- Added daily read-only drift detection between playbackVerifiedAt catalog markers and HUMAN_PLAYBACK observations.
+- Fresh evidence cannot silently exist in only one proof path without becoming an operator issue.
+- No catalog, health or playback proof is changed automatically.
+
 ## 2026-09-24 — Commercial verification horizon
 - Added advance expiry/review warnings for future affiliate partners and verified travel offers.
 - Wired the read-only horizon into daily operations, operator brief and packet-integrity safety checks.

@@ -9,6 +9,7 @@ const requiredJson=[
  "provider-worklist.json",
  "inside-recovery.json",
  "inside-playback-horizon.json",
+ "playback-evidence-consistency.json",
  "inside-provider-resilience.json",
  "embed-research.json",
  "embed-research-preflight.json",
@@ -55,6 +56,13 @@ export async function validateOperationsPacket(dir="ern-ops"){
       if(row?.catalogMutationAllowed!==false)issues.push({file:"source-availability-continuity.json",code:"CONTINUITY_MUTATION_BOUNDARY_VIOLATION",id:row?.id||null});
       if(row?.automaticHealthChangeAllowed!==false)issues.push({file:"source-availability-continuity.json",code:"CONTINUITY_HEALTH_BOUNDARY_VIOLATION",id:row?.id||null});
     }
+  }
+
+  const playbackConsistency=files["playback-evidence-consistency.json"];
+  if(playbackConsistency){
+    if(playbackConsistency?.safety?.catalogMutationAllowed!==false)issues.push({file:"playback-evidence-consistency.json",code:"PLAYBACK_CONSISTENCY_MUTATION_BOUNDARY_VIOLATION"});
+    if(playbackConsistency?.safety?.automaticHealthChangeAllowed!==false)issues.push({file:"playback-evidence-consistency.json",code:"PLAYBACK_CONSISTENCY_HEALTH_BOUNDARY_VIOLATION"});
+    if(playbackConsistency?.safety?.automaticPlaybackVerificationAllowed!==false)issues.push({file:"playback-evidence-consistency.json",code:"PLAYBACK_CONSISTENCY_AUTO_VERIFY_BOUNDARY_VIOLATION"});
   }
 
   const preflight=files["embed-research-preflight.json"];

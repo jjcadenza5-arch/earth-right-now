@@ -53,7 +53,8 @@
     "business:inventory": "node scripts/commercial-inventory-status.mjs",
     "business:onboarding-plan": "node scripts/commercial-onboarding-plan.mjs",
     "business:submission-transport": "node scripts/submission-transport-readiness.mjs",
-    "business:verification-horizon": "node scripts/commercial-verification-horizon.mjs"
+    "business:verification-horizon": "node scripts/commercial-verification-horizon.mjs",
+    "inside:evidence-consistency": "node scripts/playback-evidence-consistency.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -1,3 +1,11 @@
+## 2026-09-24 — Playback evidence consistency audit
+- Added a read-only audit between catalog playbackVerifiedAt markers and provider-observation HUMAN_PLAYBACK evidence.
+- Detects catalog markers without matching human evidence, fresh human observations missing the catalog marker, timestamp drift, markers on non-embed sources and observations for unknown source IDs.
+- Stale historical HUMAN_PLAYBACK observations remain valid history and do not force a fresh catalog marker.
+- Daily operations now retains playback-evidence-consistency.json and surfaces any drift before new LIVE HERE evidence is trusted operationally.
+- Packet integrity enforces the non-mutating/no-auto-verification boundary.
+- Added synthetic regression coverage plus a current-catalog assertion that the existing three fresh playback markers are consistent with the observation ledger.
+
 ## 2026-09-24 — Commercial verification horizon
 - Added a read-only maintenance horizon for future affiliate partners and verified travel offers.
 - Partner expiry and the existing 90-day travel-offer verification window are classified as CURRENT, DUE_30D, DUE_14D, DUE_7D, EXPIRED or REVIEW_REQUIRED; intentionally disabled partners remain INACTIVE.
