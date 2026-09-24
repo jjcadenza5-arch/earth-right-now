@@ -65,7 +65,7 @@ document.querySelectorAll(".load").forEach(btn=>btn.addEventListener("click",()=
 }));
 document.querySelectorAll(".review-actions button").forEach(btn=>btn.addEventListener("click",()=>record(btn.closest(".card"),btn.dataset.outcome)));
 document.getElementById("copyEvidence").addEventListener("click",async()=>{const text=JSON.stringify(packet(),null,2);try{await navigator.clipboard.writeText(text);document.getElementById("evidenceStatus").textContent="Evidence JSON copied to clipboard."}catch{document.getElementById("evidenceStatus").textContent="Clipboard unavailable. Use Download JSON instead."}});
-document.getElementById("downloadEvidence").addEventListener("click",()=>{const blob=new Blob([JSON.stringify(packet(),null,2)+"\n"],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="ern-review-evidence-"+new Date().toISOString().replace(/[:.]/g,"-")+".json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
+document.getElementById("downloadEvidence").addEventListener("click",()=>{const blob=new Blob([JSON.stringify(packet(),null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="ern-review-evidence-"+new Date().toISOString().replace(/[:.]/g,"-")+".json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
 document.getElementById("clearEvidence").addEventListener("click",()=>{if(!confirm("Clear local ERN review evidence from this browser?"))return;try{localStorage.removeItem(KEY)}catch{}renderEvidence();document.getElementById("evidenceStatus").textContent="Local review evidence cleared."});
 renderEvidence();
 </script></body></html>`;

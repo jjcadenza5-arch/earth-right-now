@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Operator review buttons repaired
+- Fixed a generated inline-script syntax error that made Load candidate and all other review-page controls inert.
+- Added a built-page preflight for review JavaScript and required candidate cards.
+
 ## 2026-09-24 — Repository-wide JavaScript syntax guard
 - Repaired latent syntax defects in legacy app/recovery-ledger code.
 - Added an automatic push-time syntax workflow for all src/ and scripts/ JavaScript.

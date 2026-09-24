@@ -89,6 +89,8 @@ jobs:
         run: node scripts/featured-curation-preflight.mjs
       - name: Build static release
         run: npm run release:build
+      - name: Operator review page preflight
+        run: node scripts/operator-review-page-preflight.mjs
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist

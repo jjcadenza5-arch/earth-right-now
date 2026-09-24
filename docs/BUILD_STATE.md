@@ -1,3 +1,10 @@
+## 2026-09-24 — Operator review Load candidate failure fixed
+- Diagnosed the deployed review page from the actual GitHub Pages artifact after the user reported that all three Load candidate buttons appeared inert.
+- Root cause: the generated inline JavaScript contained an invalid literal newline inside the Download JSON Blob expression. Because the whole inline script failed parsing, no review-page button handlers were installed.
+- Removed the unnecessary newline append from the generated evidence download payload.
+- Added a generated operator-review-page preflight that parses the actual built inline script and verifies the three current human-review targets are present with loadable embed URLs.
+- Pages deployment now fails before upload if the generated review page JavaScript is invalid or the required review cards disappear.
+
 ## 2026-09-24 — Repository-wide JavaScript syntax guard
 - The new Pages syntax preflight exposed two older latent literal-newline defects in legacy src/app.js and scripts/recovery-ledger.mjs; both were repaired without changing behavior.
 - Added a lightweight ERN JavaScript Syntax Check workflow that runs on every main push touching src/ or scripts/, independently of whether that change triggers a Pages deployment.
