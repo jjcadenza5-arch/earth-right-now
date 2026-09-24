@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — YouTube provider-family research
+- Added current YouTube/Monterey provider-family evidence and refreshed Monterey candidate evidence.
+- Roadmap now reflects 5/5 verified LIVE HERE readiness and the separate degraded exception states.
+
 ## 2026-09-24 — Operator review evidence applied
 - Added atomic HUMAN_PLAYBACK proof for Ponte di Legno and Metung.
 - Recorded Explore Brooks Falls as research playback failed and deferred it from the primary research lane.

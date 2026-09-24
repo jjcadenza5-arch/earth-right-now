@@ -1,3 +1,11 @@
+## 2026-09-24 — YouTube second-provider family evidence
+- Added a current provider-family research record for Monterey Bay Aquarium's official YouTube live-cam candidates.
+- Current YouTube documentation supports standard iframe/IFrame Player embeds while requiring platform/player identity, branding, unobscured controls, valid Referer behavior and minimum player dimensions.
+- Monterey Bay Aquarium's current official site still exposes its live-cam program; official YouTube descriptions continue to identify Monterey Bay, Open Sea and Jelly cams as scheduled live cameras.
+- ERN restricts this research family to the standard branded YouTube player, never restreams, and still requires deployed-origin HUMAN_PLAYBACK for the specific candidate before any promotion.
+- Refreshed the three Monterey candidate evidence notes without changing their RESEARCH_ONLY / BLOCKED state.
+- Updated the roadmap to reflect the achieved 5/5 inside-ERN ready target and distinguish the four degraded exceptions accurately.
+
 ## 2026-09-24 — Human operator review evidence applied
 - Accepted deployed-origin review evidence from https://earthrightnow.app/review/inside-ern.html while it was within the 24-hour evidence window.
 - Ponte di Legno — Adamello: HUMAN_PLAYBACK confirmed at 2026-09-24T15:49:44.573Z.

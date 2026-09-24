@@ -22,5 +22,29 @@
     "playerBrandingRequired": true,
     "restreamAllowed": false,
     "permissionConfirmed": false
+  },
+  {
+    "id": "youtube",
+    "status": "RESEARCH_ONLY",
+    "provider": "Monterey Bay Aquarium",
+    "familyLabel": "YouTube branded embedded player",
+    "researchUrl": "https://www.montereybayaquarium.org/visit/live-cams",
+    "termsUrl": "https://developers.google.com/youtube/terms/required-minimum-functionality",
+    "verifiedAt": "2026-09-24T15:54:00Z",
+    "permissionEvidence": "Current YouTube documentation supports standard iframe/IFrame Player embeds and requires player attribution/branding, unobscured controls, valid HTTP Referer identification, and minimum player size. Monterey Bay Aquarium's current official site exposes live cams and its official YouTube channel identifies the Monterey Bay, Open Sea and Jelly cams as live/current. ERN may only test the standard branded YouTube player; specific deployed playback remains unconfirmed until human review.",
+    "permissionStatus": "PLATFORM_EMBED_SUPPORTED_SPECIFIC_VIDEO_REQUIRES_DEPLOYED_REVIEW",
+    "technicalStatus": "OFFICIAL_YOUTUBE_CANDIDATES_STAGED",
+    "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "nextAction": "DEPLOYED_HUMAN_PLAYBACK_ON_ONE_OFFICIAL_MONTEREY_VIDEO_THEN_EDITORIAL_REVIEW",
+    "networkFamily": "youtube.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-24T15:54:00Z",
+    "communityGuidelinesUrl": "https://developers.google.com/youtube/terms/developer-policies",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "STANDARD_EMBED_PLAYER",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false
   }
 ]

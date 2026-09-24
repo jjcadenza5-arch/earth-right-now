@@ -11,7 +11,9 @@
     "discoveredAt": "2026-09-24T08:50:00Z",
     "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
     "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_UNTIL_REVIEW"
+    "promotion": "BLOCKED_UNTIL_REVIEW",
+    "currentEvidenceReviewedAt": "2026-09-24T15:54:00Z",
+    "platformEvidence": "Monterey Bay Aquarium's current official site still exposes its live-cam program, and official YouTube video descriptions identify the selected cam as a scheduled live camera. YouTube's current embedded-player documentation supports standard branded iframe embeds subject to platform requirements; deployed ERN playback remains separately unconfirmed."
   },
   {
     "id": "youtube-monterey-open-sea",
@@ -25,7 +27,9 @@
     "discoveredAt": "2026-09-24T08:50:00Z",
     "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
     "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_UNTIL_REVIEW"
+    "promotion": "BLOCKED_UNTIL_REVIEW",
+    "currentEvidenceReviewedAt": "2026-09-24T15:54:00Z",
+    "platformEvidence": "Monterey Bay Aquarium's current official site still exposes its live-cam program, and official YouTube video descriptions identify the selected cam as a scheduled live camera. YouTube's current embedded-player documentation supports standard branded iframe embeds subject to platform requirements; deployed ERN playback remains separately unconfirmed."
   },
   {
     "id": "youtube-monterey-jelly-cam",
@@ -39,7 +43,9 @@
     "discoveredAt": "2026-09-24T08:50:00Z",
     "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
     "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_UNTIL_REVIEW"
+    "promotion": "BLOCKED_UNTIL_REVIEW",
+    "currentEvidenceReviewedAt": "2026-09-24T15:54:00Z",
+    "platformEvidence": "Monterey Bay Aquarium's current official site still exposes its live-cam program, and official YouTube video descriptions identify the selected cam as a scheduled live camera. YouTube's current embedded-player documentation supports standard branded iframe embeds subject to platform requirements; deployed ERN playback remains separately unconfirmed."
   },
   {
     "id": "explore-brooks-falls",
