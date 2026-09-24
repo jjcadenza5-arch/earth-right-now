@@ -1,7 +1,8 @@
 import fs from "node:fs";
 const rows=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
 const HOLD=new Set(["maui-hale-pau-hana","perdido-key-beach","pleasant-beach-lake-ontario","blouberg-table-mountain"]);
-const now=Date.now(),futureSkewMs=5*60*1000,futureDated=rows.filter(s=>{const d=Date.parse(s.lastSuccessfulCheck||s.checkedAt||"");return Number.isFinite(d)&&d>now+futureSkewMs});\nconst fresh=s=>{const d=Date.parse(s.lastSuccessfulCheck||s.checkedAt||"");return Number.isFinite(d)&&d<=now+futureSkewMs&&(now-d)<=21*86400000};
+const now=Date.now(),futureSkewMs=5*60*1000,futureDated=rows.filter(s=>{const d=Date.parse(s.lastSuccessfulCheck||s.checkedAt||"");return Number.isFinite(d)&&d>now+futureSkewMs});
+const fresh=s=>{const d=Date.parse(s.lastSuccessfulCheck||s.checkedAt||"");return Number.isFinite(d)&&d<=now+futureSkewMs&&(now-d)<=21*86400000};
 const eligible=rows.filter(s=>s&&s.health==="HEALTHY"&&!HOLD.has(s.id)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"&&fresh(s));
 const inside=eligible.filter(s=>(s.playback==="EMBED"&&s.embedUrl)||(s.playback==="IMAGE_REFRESH"&&s.sourceUrl));
 const countries=new Set(eligible.map(s=>s.country).filter(Boolean)),providers=new Set(eligible.map(s=>s.provider).filter(Boolean)),truth=new Set(eligible.map(s=>s.truth));
