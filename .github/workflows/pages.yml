@@ -11,6 +11,7 @@ on:
       - "data/sources.json"
       - "data/local-directory.json"
       - "data/provider-observations.json"
+      - "data/embed-research-candidates.json"
       - "assets/**"
       - "about.html"
       - "privacy.html"
@@ -35,6 +36,9 @@ on:
       - "data/rollback-proof.json"
       - "scripts/build-release-snapshot.mjs"
       - "scripts/build-destination-pages.mjs"
+      - "scripts/build-operator-review.mjs"
+      - "src/inside-ern-recovery.js"
+      - "src/embed-policy.js"
       - ".github/workflows/pages.yml"
 
 permissions:
