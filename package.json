@@ -43,7 +43,8 @@
     "operations:trend-snapshot": "node scripts/operations-trend-snapshot.mjs",
     "operations:trend-compare": "node scripts/operations-trend-compare.mjs",
     "sources:availability": "node scripts/source-availability-status.mjs",
-    "operations:brief": "node scripts/operations-operator-brief.mjs"
+    "operations:brief": "node scripts/operations-operator-brief.mjs",
+    "inside:playback-horizon": "node scripts/playback-evidence-horizon.mjs"
   },
   "engines": {
     "node": ">=20"
