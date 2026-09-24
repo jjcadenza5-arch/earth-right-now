@@ -2,7 +2,9 @@ import { readFile } from "node:fs/promises";
 const read=async p=>JSON.parse(await readFile(new URL(p,import.meta.url),"utf8"));
 const sources=await read("../data/sources.json");
 const files=["../data/recovery-candidates-2026-09-18.json","../data/recovery-candidates-tranche-02.json","../data/recovery-candidates-tranche-03.json","../data/recovery-candidates-tranche-04.json"];
-const candidates=(await Promise.all(files.map(read))).flat(),active=new Map(sources.map(x=>[x.id,x]));\nlet dispositions=[];try{dispositions=await read("../data/recovery-dispositions.json")}catch{}\nconst dispositionById=new Map(dispositions.map(x=>[x.candidateId,x]));
+const candidates=(await Promise.all(files.map(read))).flat(),active=new Map(sources.map(x=>[x.id,x]));
+let dispositions=[];try{dispositions=await read("../data/recovery-dispositions.json")}catch{}
+const dispositionById=new Map(dispositions.map(x=>[x.candidateId,x]));
 const canonical=id=>String(id||"").replace(/-recovered$/,"");
 const migrated=[],pending=[],deferred=[];
 for(const candidate of candidates){const id=canonical(candidate.id),source=active.get(id);if(source)migrated.push({candidateId:candidate.id,sourceId:id,title:source.title,health:source.health,checkedAt:source.checkedAt||null});else pending.push({candidateId:candidate.id,canonicalId:id,title:candidate.title,legacyHealth:candidate.health,permission:candidate.permission,playback:candidate.playback,historicalCheckedAt:candidate.checkedAt||null,categories:candidate.categories||[],requiresCurrentRevalidation:true});}
