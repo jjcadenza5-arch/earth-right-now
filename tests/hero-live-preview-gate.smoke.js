@@ -1,0 +1,16 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const app=fs.readFileSync("src/app-lite.js","utf8");
+assert.match(app,/function heroLivePreviewAllowed/);
+assert.match(app,/min-width:1000px/);
+assert.match(app,/connection\?\.saveData===true/);
+assert.match(app,/s\.playback==="EMBED"/);
+assert.match(app,/currentTruthClaim\(s\)/);
+assert.match(app,/cleanUrl\(s\.embedUrl\)/);
+assert.match(app,/frame\.src=cleanUrl\(s\.embedUrl\)/);
+assert.match(app,/frame\.allow="fullscreen; picture-in-picture"/);
+assert.match(app,/frame\.setAttribute\("aria-hidden","true"\)/);
+assert.match(app,/mount\.dataset\.visualKind="live-preview"/);
+assert.match(app,/frame\.onerror=/);
+assert.ok(!app.includes('frame.allow="autoplay; fullscreen; picture-in-picture"'));
+new Function(app);
+console.log("ERN Hero proven live-preview gate passed");
