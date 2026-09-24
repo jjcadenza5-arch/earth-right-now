@@ -13,7 +13,7 @@ must(app.includes("function watchEligible(")&&app.includes("sources.filter(watch
 must(app.includes("localDirectoryMatch(")&&app.includes("localDirectoryCard("),"reviewed local-place search plumbing missing");
 must(Array.isArray(localDirectory),"local-directory registry must be an array");
 must(requireExists("scripts/participation-preflight.mjs"),"participation safety preflight missing");
-must(css.includes("BlankMap-Equirectangular"),"Living Atlas lost its real-map base");
+must(css.includes("world-map-natural-earth.svg"),"Living Atlas lost its local real-map base");
 must(index.includes('data-map-filter="local"')&&app.includes('map-pin local'),"Living Atlas lost reviewed local-place discovery");
 must(index.includes('id="atlasBeyond"')&&app.includes("renderAtlasBeyond(")&&css.includes("Atlas beyond-map coverage"),"Living Atlas lost honest unmapped-place discovery");
 must(app.includes('DYNAMIC_UNPINNED'),"Living Atlas must distinguish dynamic Earth views from missing-coordinate places");

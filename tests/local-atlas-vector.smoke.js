@@ -1,0 +1,10 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const css=fs.readFileSync("src/styles-lite.css","utf8"),svg=fs.readFileSync("assets/world-map-natural-earth.svg","utf8"),html=fs.readFileSync("index.html","utf8");
+assert.match(css,/url\("\.\.\/assets\/world-map-natural-earth\.svg"\)/);
+assert.ok(!css.includes("upload.wikimedia.org"));
+assert.match(css,/\.atlas\{aspect-ratio:2\/1/);
+assert.match(svg,/viewBox="0 0 1200 600"/);
+assert.ok((svg.match(/<path /g)||[]).length>20);
+assert.match(html,/Natural Earth public-domain geography/);
+assert.match(html,/equirectangular projection/);
+console.log("ERN local Atlas vector contract passed");

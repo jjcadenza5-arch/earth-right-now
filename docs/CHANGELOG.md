@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Local Natural Earth Atlas vector
+- Replaced the Living Atlas remote map image with a local public-domain Natural Earth vector.
+- Preserved the 2:1 equirectangular projection and all existing pin coordinates.
+- Updated attribution and release preflight guards.
+
 ## 2026-09-24 — Safe review-evidence proposal layer
 - Added a proposal-only bridge from exported human review evidence plus independent availability/preflight evidence.
 - Confirmed playback can become a review proposal but never an automatic health/catalog write.
