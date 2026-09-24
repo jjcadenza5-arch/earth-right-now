@@ -1,3 +1,11 @@
+## 2026-09-24 — Daily operations packet integrity preflight
+- Added a packet-level validator for the retained daily ERN operations artifact.
+- Required diagnostics must exist, contain valid JSON/text, and satisfy key safety contracts before the packet is considered valid.
+- Source availability rows must remain provesLive=false; availability-continuity rows must keep catalogMutationAllowed=false and automaticHealthChangeAllowed=false; second-provider preflight rows must keep permissionConfirmed=false, humanPlaybackConfirmed=false and promotionAllowed=false.
+- Trend schema/direction, unsafe provider-review presence and the operator brief's read-only boundary are also checked.
+- The workflow writes packet-integrity.json and fails visibly on integrity errors while the artifact upload still runs with if: always() so evidence is preserved.
+- Added regression coverage for clean packets, malformed/safety-violating packets and workflow wiring.
+
 ## 2026-09-24 — Availability continuity memory
 - Added per-source previous-vs-current availability comparison across daily audits.
 - One PAGE_MISSING remains a notice; two consecutive PAGE_MISSING observations become a PERSISTENT_MISSING_REVIEW manual-review incident.
