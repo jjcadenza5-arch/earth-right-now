@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Visitor currentness-policy sweep
+- Removed remaining generic 21-day/7-day currentness shortcuts from quick search, ERN Guide and viewer confidence.
+- Reused the shared source-type verification policy everywhere.
+
 ## 2026-09-24 — Browser/backend Watch Earth quality parity
 - Applied the backend Watch Earth quality/moment/playback-rejection gate to the browser selection path.
 - Preserved quality-over-quantity when the current catalog is smaller than 20 strong windows.
