@@ -553,3 +553,7 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
 .card-visual[data-visual-kind="illustrative"]::before{content:"Illustrative";position:absolute;right:9px;top:38px;z-index:3;padding:4px 6px;border-radius:999px;background:rgba(2,22,19,.5);color:rgba(255,255,255,.76);font:700 7px/1 Inter,ui-sans-serif,system-ui;letter-spacing:.06em;text-transform:uppercase;pointer-events:none}
 .result-visual[data-visual-kind="illustrative"]::before{content:"Illustrative";position:absolute;right:4px;bottom:4px;z-index:3;padding:3px 4px;border-radius:999px;background:rgba(2,22,19,.54);color:rgba(255,255,255,.78);font:700 6px/1 Inter,ui-sans-serif,system-ui;letter-spacing:.04em;text-transform:uppercase;pointer-events:none}
 @media(max-width:600px){#heroLive[data-visual-kind="illustrative"]::after{right:10px;top:10px;font-size:7px}.card-visual[data-visual-kind="illustrative"]::before{top:36px}}
+
+/* Verified travel-offer disclosure: hidden until real current inventory exists */
+.plan-commercial-disclosure{display:block;margin-top:8px;font-size:11px;line-height:1.4;color:var(--muted,#66736d)}
+.plan-commercial-disclosure[hidden]{display:none}
