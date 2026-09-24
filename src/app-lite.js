@@ -1,7 +1,7 @@
 (() => {
 "use strict";
 const $=s=>document.querySelector(s);
-const FEATURED_HOLD=new Set(["maui-hale-pau-hana","perdido-key-beach","pleasant-beach-lake-ontario","blouberg-table-mountain"]);
+function featuredHold(s){return s?.featuredHold===true}
 function readSavedSet(key){try{return new Set(JSON.parse(localStorage.getItem(key)||"[]"))}catch{return new Set()}}
 function readSavedText(key,fallback){try{return localStorage.getItem(key)||fallback}catch{return fallback}}
 function writeSaved(key,value){try{localStorage.setItem(key,value)}catch{}}
@@ -43,7 +43,7 @@ function verificationAgeDays(s){const raw=s.lastSuccessfulCheck||s.checkedAt;if(
 function verificationLabel(s){const d=verificationAgeDays(s);if(!Number.isFinite(d))return"Verification time unavailable";if(d<1)return"Verified within 24h";if(d<2)return"Verified yesterday";return"Verified "+Math.floor(d)+" days ago"}
 function verificationWindowHours(s){if(s?.truth==="LIVE_IMAGE"||s?.playback==="IMAGE_REFRESH")return 24;if(s?.playback==="EMBED")return 24;if(s?.truth==="EXTERNAL_LIVE"||s?.truth==="PARTNER")return 72;return 168}
 function verificationAgeHours(s){return verificationAgeDays(s)*24}
-function featureEligible(s){return!!(s&&s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id)&&verificationAgeHours(s)<=verificationWindowHours(s))}
+function featureEligible(s){return!!(s&&s.health==="HEALTHY"&&!featuredHold(s)&&verificationAgeHours(s)<=verificationWindowHours(s))}
 function watchExperienceEligible(s){return!!(s&&s.health==="HEALTHY"&&!/VISITOR_PLAYBACK_REJECTED|NOT_LIVE|VIDEO_UNAVAILABLE|STALE_RECORDING|BROKEN_EMBED/i.test(String(s.failureReason||""))&&(Number(s.quality)||0)>=80&&(Number(s.moment)||0)>=70)}
 function watchEligible(s){return featureEligible(s)&&watchExperienceEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
 const momentWords={
@@ -96,12 +96,12 @@ function baseScore(s){
  if(isDay(s)&&isScenic(s))n+=18;
  if(!isDay(s)&&!isCity(s))n-=20;
  if(!isDay(s)&&isCity(s))n+=8;
- if(FEATURED_HOLD.has(s.id))n-=500;
+ if(featuredHold(s))n-=500;
  n+=personalBoost(s);
  return n;
 }
 function heroPool(){
- const inside=state.watch.filter(s=>isInside(s)&&s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id));
+ const inside=state.watch.filter(s=>isInside(s)&&s.health==="HEALTHY"&&!featuredHold(s));
  return inside.length?inside:state.watch;
 }
 function visitorHour(){return new Date().getHours()}
