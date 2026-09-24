@@ -1,3 +1,11 @@
+## 2026-09-24 — Watch Earth currentness gate + fresh human playback evidence
+- Aligned visitor-facing Watch Earth eligibility with ERN's backend verification windows: 24h for embedded/current-image sources, 72h for external-live/partner sources, and 168h for ordinary current pages.
+- Removed the previous loose 21-day feature gate that could label an old verification as LIVE HERE.
+- Recorded fresh HUMAN_PLAYBACK evidence from the deployed ERN experience for Bergen/Ulriken, Skeikampen and Cijin Beach based on fresh fullscreen playback screenshots supplied during verification.
+- Refreshed those three source checks to the same observed time; they remain eligible inside ERN for the 24h embed window.
+- This intentionally allows Watch Earth to shrink or rotate toward fewer sources when current verification is insufficient rather than filling slots with stale claims.
+- Added regression coverage for the currentness policy and observation ledger.
+
 ## 2026-09-24 — Intentional-unpinned Atlas UI
 - After static mapping completion, the "Beyond the mapped pins" surface now remains useful instead of becoming an empty container.
 - Multi-location collections and moving Earth views are rendered as selectable cards with an explicit reason they do not have a single pin.
