@@ -21,6 +21,7 @@ jobs:
         run: |
           npm run sources:horizon
           npm run watch-earth:now
+          npm run watch-earth:balance
           npm run provider:worklist
           npm run inside:recovery
           npm run inside:providers

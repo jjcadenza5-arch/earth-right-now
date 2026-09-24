@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Watch Earth product-balance diagnostic
+- Added inside/external balance, inside shortfall and recommended set-size diagnostics.
+- Wired the signal into operations status and the daily audit without changing the public Top 20 automatically.
+
 ## 2026-09-24 — Visitor currentness-policy sweep
 - Removed remaining generic 21-day/7-day currentness shortcuts from quick search, ERN Guide and viewer confidence.
 - Reused the shared source-type verification policy everywhere.

@@ -38,7 +38,8 @@
     "earth-signals:status": "node scripts/earth-signal-status.mjs",
     "inside:recovery": "node scripts/inside-ern-recovery-status.mjs",
     "inside:providers": "node scripts/inside-provider-resilience-status.mjs",
-    "inside:research": "node scripts/embed-research-status.mjs"
+    "inside:research": "node scripts/embed-research-status.mjs",
+    "watch-earth:balance": "node scripts/watch-earth-product-balance-status.mjs"
   },
   "engines": {
     "node": ">=20"
