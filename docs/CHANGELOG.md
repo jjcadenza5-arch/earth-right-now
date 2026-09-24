@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Proven inside-ERN Hero live preview
+- Hero now uses real inside-ERN previews only for fresh human-proven EMBED sources on desktop.
+- Mobile/Data Saver/unverified/external sources keep lightweight truthful fallbacks.
+- Added release-preflight and regression guards.
+
 ## 2026-09-24 — Local Natural Earth Atlas vector
 - Replaced the Living Atlas remote map image with a local public-domain Natural Earth vector.
 - Preserved the 2:1 equirectangular projection and all existing pin coordinates.

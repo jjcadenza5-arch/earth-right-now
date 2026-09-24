@@ -1,3 +1,13 @@
+## 2026-09-24 — Proven inside-ERN Hero live preview
+- The Hero can now show a real embedded Earth window instead of the generated illustrative fallback when the selected source is an EMBED with current source truth and fresh playbackVerifiedAt evidence.
+- Live Hero previews are desktop-only (>=1000px), require the document to be visible, and are disabled when the browser reports Data Saver.
+- Mobile and data-saver visitors keep the lightweight source-thumbnail/illustrative fallback.
+- External sources and unverified embeds are never turned into Hero iframes.
+- The fallback is mounted first and remains available if the preview fails; successful preview load switches visualKind to live-preview so the Illustrative visual cue disappears.
+- The Hero iframe is non-interactive, omits autoplay permission, and retains the existing Watch Earth Now path into the full viewer.
+- Whole-product release preflight now guards the EMBED/current-truth/data-saver safety gate.
+- Added syntax/style regression coverage for the preview boundary.
+
 ## 2026-09-24 — Local Natural Earth Atlas vector
 - Replaced the Living Atlas remote Wikimedia raster dependency with a local simplified equirectangular vector generated from Natural Earth public-domain geography.
 - The local asset uses a 1200×600 / 2:1 projection matching ERN's existing longitude/latitude pin math, so no pin positions or coordinate semantics changed.
