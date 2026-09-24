@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Retained daily operations packet
+- Daily operations now retain separate JSON diagnostics as a 14-day GitHub Actions artifact.
+- Partial packet evidence is kept even when a later safety check fails.
+- No catalog mutation or visitor-facing publication is introduced.
+
 ## 2026-09-24 — Watch Earth product-balance diagnostic
 - Added inside/external balance, inside shortfall and recommended set-size diagnostics.
 - Wired the signal into operations status and the daily audit without changing the public Top 20 automatically.
