@@ -37,6 +37,20 @@ export function buildWatchEarth(
   const places = new Map();
   const out = [];
 
+  // Fresh inside-ERN windows are the preferred product experience. Reserve a
+  // small truthful core before filling the rest of the journey with the best
+  // current external windows. This never bypasses watchEarthEligible().
+  const insidePool=pool.filter(source=>playbackCapability(source,{now}).action==="PLAY");
+  for(const source of insidePool){
+    if(out.length>=Math.min(5,limit))break;
+    const country=source.country||"Unknown",place=source.placeId||source.id;
+    if((countries.get(country)||0)>=maxPerCountry)continue;
+    if((places.get(place)||0)>=maxPerPlace)continue;
+    out.push(source);
+    countries.set(country,(countries.get(country)||0)+1);
+    places.set(place,(places.get(place)||0)+1);
+  }
+
   for (const source of pool) {
     const country = source.country || "Unknown";
     const place = source.placeId || source.id;
