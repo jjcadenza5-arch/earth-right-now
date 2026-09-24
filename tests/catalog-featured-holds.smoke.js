@@ -1,0 +1,11 @@
+import fs from "node:fs";import assert from "node:assert/strict";import {watchEarthEligible} from "../src/watch-earth.js";import {insideERNRecoveryStatus} from "../src/inside-ern-recovery.js";
+const rows=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
+const held=rows.filter(x=>x.featuredHold===true);
+assert.deepEqual(held.map(x=>x.id).sort(),["blouberg-table-mountain","maui-hale-pau-hana","perdido-key-beach","pleasant-beach-lake-ontario"].sort());
+assert.ok(held.every(x=>x.featuredHoldReason));
+const app=fs.readFileSync("src/app-lite.js","utf8");assert.ok(!app.includes("FEATURED_HOLD"));assert.match(app,/function featuredHold/);
+const now=new Date("2026-09-24T09:00:00Z"),base={id:"held-test",title:"Held",provider:"P",health:"HEALTHY",truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",playback:"EMBED",embedUrl:"https://couchtourist.com/embed/cam/9999/",sourceUrl:"https://example.com",checkedAt:now.toISOString(),lastSuccessfulCheck:now.toISOString(),quality:90,moment:90,freshness:90,categories:["Beautiful Earth"],featuredHold:true,featuredHoldReason:"Test hold"};
+assert.equal(watchEarthEligible(base,{now}),false);
+const r=insideERNRecoveryStatus([base],[{id:"held-test",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:now.toISOString()}],{now});
+assert.equal(r.ready,0);assert.equal(r.held,1);assert.equal(r.restorationCandidates.length,0);assert.equal(r.heldSources[0].id,"held-test");
+console.log("ERN catalog featured holds passed");
