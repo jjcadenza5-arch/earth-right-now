@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-24 — Guide live-now intelligence
+- Public Guide now prioritizes verified LIVE HERE windows for current/live requests and understands explicit happening/activity intent.
+
 ## 2026-09-24 — YouTube provider-family research
 - Added current YouTube/Monterey provider-family evidence and refreshed Monterey candidate evidence.
 - Roadmap now reflects 5/5 verified LIVE HERE readiness and the separate degraded exception states.

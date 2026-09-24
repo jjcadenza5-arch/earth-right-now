@@ -316,6 +316,7 @@ function guideIntent(q){
    beach:has("beach","sea","coast","ocean","ชายหาด","strand","plage","海","playa"),
    mountain:has("mountain","alps","snow","ski","ภูเขา","berg","montagne","山","montaña"),
    city:has("city","street","people","busy","เมือง","stadt","ville","都市","城市","ciudad"),
+   happening:has("happening","happening now","activity","street life","busy now","people now","คึกคัก","กิจกรรม","คนเยอะ","viel los","belebt","activité","animé","actividad","animado","賑やか","人が多い","热闹","熱鬧","活动","活動"),
    surprise:has("surprise","random","unexpected","somewhere else","สุ่ม","überrasch","surpr","おまかせ","随机"),
    current:has("right now","now","live","current","ตอนนี้","jetzt","maintenant","今","现在","ahora"),
    near:has("near here","nearby","around here","ใกล้","in der nähe","près","近く","附近","cerca")
@@ -331,6 +332,9 @@ function guideScore(s,intent){
  if(intent.beach)n+=/beach|water|sea|coast|island|harbour|harbor/.test(c)?60:-12;
  if(intent.mountain)n+=/mountain|snow|ski|volcano|alps/.test(c)?60:-12;
  if(intent.city)n+=isCity(s)?55:-10;
+ if(intent.happening){const c2=cats(s),active=/city|street|people|urban|square|market|promenade|harbour|harbor|culture/.test(c2);n+=active?62:-18;if(["Daylight","Night lights","Morning light","Evening light"].includes(m.label))n+=18}
+ if(intent.current&&currentInside(s))n+=70;
+ if(intent.current&&s.playback==="EMBED"&&embedPlaybackCurrent(s))n+=28;
  return n;
 }
 function guideNearby(seed){
@@ -341,7 +345,7 @@ function guideNearby(seed){
 
 function guidePlaceMatches(q){
  const noise=new Set(["show","me","take","to","somewhere","place","places","see","earth","please","right","now","live","current","good","what","is","are","the","a","an","with","in","at","near"]);
- const intentWords=new Set(["peaceful","quiet","calm","golden","sunset","sunrise","night","lights","wildlife","animal","beach","sea","coast","ocean","mountain","snow","ski","city","street","busy","surprise","random","local","small","business","cafe","café","restaurant","shop","market","farm","hotel","guesthouse","bakery","food"]);
+ const intentWords=new Set(["peaceful","quiet","calm","golden","sunset","sunrise","night","lights","wildlife","animal","beach","sea","coast","ocean","mountain","snow","ski","city","street","busy","happening","activity","people","surprise","random","local","small","business","cafe","café","restaurant","shop","market","farm","hotel","guesthouse","bakery","food"]);
  const tokens=normalizeSearch(q).split(/\s+/).filter(t=>t&&!noise.has(t)&&!intentWords.has(t));
  if(!tokens.length)return[];
  return state.sources.filter(featureEligible).filter(s=>{const hay=normalizeSearch([s.title,s.region,s.country,s.provider,s.story,...(s.categories||[])].filter(Boolean).join(" "));return tokens.every(t=>hay.includes(t))}).sort((a,b)=>baseScore(b)-baseScore(a));
@@ -357,7 +361,7 @@ function guideResponse(q){
  if(/moment|upload|photo|picture|visitor/.test(normalizeSearch(q)))return{text:"Now Moments are the visitor-expression layer: short-lived observations first, then temporary photos and clips once moderation and privacy infrastructure are ready.",items:[],link:{href:"./now-moments.html",label:"About Now Moments"}};
  if(intent.near&&state.selected){const items=guideNearby(state.selected);return{text:items.length?"Here are a few current places near "+state.selected.title+".":"I do not yet have enough mapped places near this window.",items};}
  const placeMatches=guidePlaceMatches(q);
- if(placeMatches.length&&!intent.surprise&&!intent.near&&!intent.local&&!intent.peaceful&&!intent.golden&&!intent.night&&!intent.wildlife&&!intent.beach&&!intent.mountain&&!intent.city)return{text:"I found "+placeMatches.length+" strong ERN window"+(placeMatches.length===1?"":"s")+" for that place.",items:placeMatches.slice(0,4)};
+ if(placeMatches.length&&!intent.surprise&&!intent.near&&!intent.local&&!intent.peaceful&&!intent.golden&&!intent.night&&!intent.wildlife&&!intent.beach&&!intent.mountain&&!intent.city&&!intent.happening)return{text:"I found "+placeMatches.length+" strong ERN window"+(placeMatches.length===1?"":"s")+" for that place.",items:placeMatches.slice(0,4)};
  let pool=state.sources.filter(featureEligible);
  if(intent.current)pool=pool.filter(currentTruthClaim);
  if(intent.local){const local=pool.filter(s=>localPlaceSignals(s).worth);if(local.length)pool=local}
@@ -372,6 +376,7 @@ function guideResponse(q){
  else if(intent.wildlife)text="These are the strongest wildlife-oriented windows I can find right now.";
  else if(intent.beach)text="For water, coast and beach views, I’d start here.";
  else if(intent.mountain)text="For mountains, snow and high places, try these.";
+ else if(intent.happening)text="For visible activity happening now, I’d start with these verified current windows.";
  else if(intent.city)text="For streets, cities and visible activity, these are good starting points.";
  else if(intent.surprise)text="Let’s go somewhere you might not have searched for yourself.";
  else if(intent.current)text="These are among ERN’s stronger recently verified windows right now.";

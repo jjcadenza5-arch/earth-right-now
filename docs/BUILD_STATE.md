@@ -1,3 +1,10 @@
+## 2026-09-24 — Public Guide current-moment priority
+- Strengthened the public ERN Guide's "right now" behavior without changing source truth.
+- Current/live requests now strongly prefer inside-ERN windows whose playback proof is still current, while currentTruthClaim remains the mandatory filter.
+- Added an explicit happening/activity/street-life intent across the public Guide's multilingual vocabulary so current-activity questions no longer fall through to a generic current ranking.
+- Activity intent favors city/street/market/promenade/harbour/culture contexts and current local visual moments, but never promotes stale or unverified playback.
+- Added a smoke guard ensuring the public Guide retains the current-truth filter and verified LIVE HERE priority.
+
 ## 2026-09-24 — YouTube second-provider family evidence
 - Added a current provider-family research record for Monterey Bay Aquarium's official YouTube live-cam candidates.
 - Current YouTube documentation supports standard iframe/IFrame Player embeds while requiring platform/player identity, branding, unobscured controls, valid Referer behavior and minimum player dimensions.
