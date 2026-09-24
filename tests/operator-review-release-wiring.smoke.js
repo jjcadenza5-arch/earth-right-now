@@ -1,0 +1,11 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const release=fs.readFileSync("scripts/build-release-snapshot.mjs","utf8");
+assert.match(release,/build-operator-review\.mjs/);
+assert.match(release,/review\/inside-ern\.html/);
+assert.match(release,/new URL\("\.\.\/review\/"[,)]/);
+const pages=fs.readFileSync(".github/workflows/pages.yml","utf8");
+assert.match(pages,/scripts\/build-operator-review\.mjs/);
+assert.match(pages,/data\/embed-research-candidates\.json/);
+const robots=fs.readFileSync("robots.txt","utf8");
+assert.ok((robots.match(/Disallow: \/review\//g)||[]).length>=2);
+console.log("ERN operator review release wiring passed");
