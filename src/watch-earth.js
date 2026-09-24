@@ -6,6 +6,7 @@ import { solarMoment } from "./solar-moment.js";
 import { watchEarthExperienceEligible,watchEarthExperienceScore } from "./watch-earth-experience.js";
 import { nearNowEvidence } from "./now-evidence.js";
 import { embedPlaybackCurrent } from "./embed-playback-current.js";
+import { adaptiveWatchEarthLimit } from "./watch-earth-balance-policy.js";
 
 export function watchEarthEligible(s,{now=new Date()}={}) {
   return !!s &&
@@ -39,13 +40,16 @@ export function buildWatchEarth(
   const countries = new Map();
   const places = new Map();
   const out = [];
+  const insideCount=pool.filter(source=>playbackCapability(source,{now}).action==="PLAY").length;
+  const externalCount=pool.filter(source=>playbackCapability(source,{now}).action==="EXTERNAL").length;
+  const effectiveLimit=adaptiveWatchEarthLimit({insideCount,externalCount,target:limit,preferredInside:5,externalSoftCap:12});
 
   // Fresh inside-ERN windows are the preferred product experience. Reserve a
   // small truthful core before filling the rest of the journey with the best
   // current external windows. This never bypasses watchEarthEligible().
   const insidePool=pool.filter(source=>playbackCapability(source,{now}).action==="PLAY");
   for(const source of insidePool){
-    if(out.length>=Math.min(5,limit))break;
+    if(out.length>=Math.min(5,effectiveLimit))break;
     const country=source.country||"Unknown",place=source.placeId||source.id;
     if((countries.get(country)||0)>=maxPerCountry)continue;
     if((places.get(place)||0)>=maxPerPlace)continue;
@@ -62,7 +66,7 @@ export function buildWatchEarth(
     out.push(source);
     countries.set(country, (countries.get(country) || 0) + 1);
     places.set(place, (places.get(place) || 0) + 1);
-    if (out.length >= limit) return out;
+    if (out.length >= effectiveLimit) return out;
   }
 
   // First relax country concentration while preserving distinct places.
@@ -72,7 +76,7 @@ export function buildWatchEarth(
     if ((places.get(place) || 0) >= maxPerPlace) continue;
     out.push(source);
     places.set(place, (places.get(place) || 0) + 1);
-    if (out.length >= limit) return out;
+    if (out.length >= effectiveLimit) return out;
   }
 
   // Only if the truthful current catalog is still smaller than the journey do we
@@ -80,7 +84,7 @@ export function buildWatchEarth(
   for (const source of pool) {
     if (out.includes(source)) continue;
     out.push(source);
-    if (out.length >= limit) break;
+    if (out.length >= effectiveLimit) break;
   }
   return out;
 }
