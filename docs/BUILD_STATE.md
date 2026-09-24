@@ -1,3 +1,10 @@
+## 2026-09-24 — Availability-aware trend + daily operator brief
+- Daily trend snapshots now carry the public-source availability sample as non-scoring observational evidence.
+- Availability changes can be compared day to day, but they never affect the operational trend score because provider-page reachability is not proof of live playback.
+- Added a private Markdown operator brief summarizing catalog health, Watch Earth balance, inside-ERN readiness, provider resilience, release blockers, availability warnings, scored improvements/regressions and next operational focus.
+- The brief is generated into the retained daily operations packet only; it is not public and cannot mutate catalog truth, health, permissions, ranking or visitor content.
+- Added regression coverage proving availability remains non-scoring and the brief stays read-only/diagnostic.
+
 ## 2026-09-24 — Automated public-source availability observer
 - Added a read-only daily observer for a small prioritized set of public provider/source pages.
 - The plan is capped at 24 sources, no more than four requests per host, four concurrent requests, and seven-second request timeouts.
