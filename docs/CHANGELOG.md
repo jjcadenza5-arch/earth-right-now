@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Verified travel-offer runtime readiness
+- Before You Go can now consume current verified travel offers while preserving Google fallbacks when inventory is empty.
+- Affiliate/sponsored links are visibly disclosed and marked rel=sponsored; payment never affects ranking.
+- Public behavior remains unchanged with today's empty registries.
+
 ## 2026-09-24 — Commercial registry foundation
 - Added empty verified affiliate-partner and travel-offer staging registries.
 - Added commercial inventory status, daily operations reporting and safety validation.

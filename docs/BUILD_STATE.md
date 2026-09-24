@@ -1,3 +1,13 @@
+## 2026-09-24 — Verified travel-offer runtime readiness
+- Wired the existing Before You Go Stay / Eat / Things to do actions to prefer a current verified travel offer when one exists for the selected ERN place.
+- Empty inventory preserves the existing Google-search fallbacks exactly, so there is no visitor-facing commercial change today.
+- Public runtime verification requires verified=true, a known place/intent, HTTPS URL without credentials, a valid verifiedAt timestamp, and verification age <=90 days.
+- Offer selection is neutral: newest verification then stable ID; affiliate/sponsored status is never used to improve ranking.
+- Affiliate and sponsored links receive visible disclosure plus rel="sponsored"; ordinary offers are labeled External travel link.
+- A dedicated visible disclosure line appears only when a verified commercial option is actually active; the planning note also states that commercial links never affect ERN ranking.
+- The public app now loads data/travel-offers.json independently and fails safely to an empty inventory if unavailable.
+- Added syntax and regression coverage proving empty staging preserves current behavior and commercial links remain verified/disclosed.
+
 ## 2026-09-24 — Commercial registry foundation
 - Added empty private staging registries for affiliate partners and verified travel offers; ERN does not invent partners or offers.
 - Added a commercial-inventory status model with EMPTY_STAGING, STAGING_REVIEW and ACTIVE states.

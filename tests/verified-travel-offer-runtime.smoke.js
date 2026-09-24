@@ -1,0 +1,10 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const app=fs.readFileSync("src/app-lite.js","utf8"),html=fs.readFileSync("index.html","utf8"),css=fs.readFileSync("src/styles-lite.css","utf8");
+assert.match(app,/travelOffers:\[\]/);assert.match(app,/fetch\("\.\/data\/travel-offers\.json"/);
+assert.match(app,/function currentClientTravelOffer/);assert.match(app,/u\.protocol!=="https:"/);assert.match(app,/\/86400000<=90/);
+assert.match(app,/function travelOfferFor/);assert.match(app,/Date\.parse\(b\.verifiedAt\)-Date\.parse\(a\.verifiedAt\)/);
+assert.match(app,/function travelOfferDisclosure/);assert.match(app,/Affiliate link/);assert.match(app,/Sponsored/);
+assert.match(app,/noopener noreferrer sponsored/);assert.match(app,/applyPlanOffer\(\$\("#planStay"\)/);assert.match(app,/applyPlanOffer\(\$\("#planEat"\)/);assert.match(app,/applyPlanOffer\(\$\("#planDo"\)/);
+assert.match(html,/id="planCommercialDisclosure"/);assert.match(html,/id="planPlanningNote"/);assert.match(css,/plan-commercial-disclosure\[hidden\]/);
+new Function(app);
+console.log("ERN verified travel offer runtime wiring passed");
