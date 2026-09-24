@@ -1,3 +1,10 @@
+## 2026-09-24 — Verification horizon respects curation holds
+- Featured curation holds are now classified as HELD instead of EXPIRED/DUE in the source verification horizon.
+- Held sources retain their underlying timestamps and expiry math for context, but they no longer inflate urgent maintenance counts.
+- Current held set includes Maui, Bloubergstrand, Perdido Key and Pleasant Beach.
+- The horizon remains maintenance-only and never changes source truth or health.
+- Added regression coverage proving held sources stay out of urgent verification work.
+
 ## 2026-09-24 — Operations priorities aligned with real state
 - Updated the roadmap to reflect reality: earthrightnow.app is already public and the current release-readiness gate is green; future releases remain evidence-gated rather than publication being described as blocked.
 - Provider playback worklist now separates actionable evidence debt from explicit curation holds and known visitor-playback rejections.

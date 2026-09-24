@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-24 — Verification horizon hold semantics
+- Featured holds now appear as HELD rather than false expiry urgency in the verification horizon.
+
 ## 2026-09-24 — Operations priority alignment
 - Roadmap now reflects public deployment + green release gate.
 - Provider worklist defers held/known-rejected embeds, and the operator brief suppresses generic source urgency when triage has no immediate work.
