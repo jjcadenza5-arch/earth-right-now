@@ -1,3 +1,10 @@
+## 2026-09-24 — Multi-site Atlas collections
+- Added a first-class MULTI_SITE_COLLECTION / MULTI_SITE_UNPINNED model for sources that intentionally represent many physical locations.
+- Dolomiti Superski, Florida Now, Randwick beach cams and Jungfrau Region now stay unpinned rather than receiving misleading single-point coordinates.
+- These collections are removed from missing-coordinate debt while retaining provider/source provenance and explanatory notes.
+- The existing DYNAMIC_ORBIT / DYNAMIC_UNPINNED rule remains separate for moving viewpoints such as the ISS.
+- Added regression coverage for validation, schema and maintenance/worklist behavior.
+
 ## 2026-09-24 — Atlas coordinate provenance tranche H
 - Added conservative PLACE_REFERENCE provenance to seven existing mapped provider destinations: Mpala, Lajes do Pico, Roque de los Muchachos, Cijin Beach, Cancún, Taitung Jinzun and Bergen/Ulriken.
 - Existing coordinates were preserved; none is promoted to CAMERA_EXACT.
