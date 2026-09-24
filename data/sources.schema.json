@@ -242,6 +242,13 @@
         "string",
         "null"
       ]
+    },
+    "playbackVerifiedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
     }
   },
   "additionalProperties": true,
