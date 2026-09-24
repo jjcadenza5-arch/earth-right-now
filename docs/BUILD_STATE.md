@@ -1,3 +1,11 @@
+## 2026-09-24 — Inside-ERN provider resilience
+- Added an explicit resilience model for embedded playback providers instead of treating all inside-ERN windows as interchangeable.
+- ERN now reports provider-family count, dominant-provider share, concentration state and the next resilience goal.
+- The current catalog correctly flags a single-provider dependency rather than hiding it behind the total number of embeds.
+- A second embed family remains only an operational goal: no YouTube or other provider is promoted until source truth, platform/owner permission semantics and HUMAN_PLAYBACK evidence are reviewed.
+- The resilience status is available in operations output, via `npm run inside:providers`, and in the daily read-only audit.
+- Added regression coverage for single-provider and diversified-provider states.
+
 ## 2026-09-24 — Inside-ERN recovery queue
 - Added a dedicated read-only recovery model for EMBED sources so ERN can prioritize rebuilding the inside-ERN experience instead of mixing those tasks with ordinary external-link maintenance.
 - A source counts as ready only when source health is HEALTHY, embed permission is EMBED_ALLOWED, source verification is current and fresh HUMAN_PLAYBACK evidence exists.
