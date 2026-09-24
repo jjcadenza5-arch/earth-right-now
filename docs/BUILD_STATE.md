@@ -1,3 +1,14 @@
+## 2026-09-24 — Commercial registry foundation
+- Added empty private staging registries for affiliate partners and verified travel offers; ERN does not invent partners or offers.
+- Added a commercial-inventory status model with EMPTY_STAGING, STAGING_REVIEW and ACTIVE states.
+- Public commercial activation is allowed only when at least one real active affiliate partner and one current verified travel offer exist.
+- Existing affiliate disclosure, expiry, HTTPS/private-host, offer verification and place-reference contracts are reused rather than duplicated.
+- The daily operations packet now includes commercial-inventory.json and the private operator brief reports commercial stage, active partner count, current offer count and place coverage.
+- Packet integrity now enforces commercial safety boundaries: no invented partners, no unverified offers, no undisclosed affiliate links, no paid ranking, and no premature public activation.
+- business:status now derives affiliate-inventory readiness from the real registries instead of a hard-coded assumption.
+- Both registries remain empty, so the public ERN experience stays non-commercial until genuine reviewed inventory exists.
+- Added regression coverage for empty staging, verified activation, disclosure semantics, operator-brief behavior and packet-integrity failures.
+
 ## 2026-09-24 — Daily operations packet integrity preflight
 - Added a packet-level validator for the retained daily ERN operations artifact.
 - Required diagnostics must exist, contain valid JSON/text, and satisfy key safety contracts before the packet is considered valid.

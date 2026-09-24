@@ -12,6 +12,7 @@ const requiredJson=[
  "inside-provider-resilience.json",
  "embed-research.json",
  "embed-research-preflight.json",
+ "commercial-inventory.json",
  "trend-current.json",
  "trend-delta.json",
  "operations-status.json"
@@ -61,6 +62,15 @@ export async function validateOperationsPacket(dir="ern-ops"){
       if(row?.humanPlaybackConfirmed!==false)issues.push({file:"embed-research-preflight.json",code:"PREFLIGHT_PLAYBACK_BOUNDARY_VIOLATION",id:row?.id||null});
       if(row?.promotionAllowed!==false)issues.push({file:"embed-research-preflight.json",code:"PREFLIGHT_PROMOTION_BOUNDARY_VIOLATION",id:row?.id||null});
     }
+  }
+
+  const commercial=files["commercial-inventory.json"];
+  if(commercial){
+    if(commercial?.safety?.inventPartnersAllowed!==false)issues.push({file:"commercial-inventory.json",code:"COMMERCIAL_INVENTION_BOUNDARY_VIOLATION"});
+    if(commercial?.safety?.unverifiedOffersVisible!==false)issues.push({file:"commercial-inventory.json",code:"COMMERCIAL_VERIFICATION_BOUNDARY_VIOLATION"});
+    if(commercial?.safety?.undisclosedAffiliateLinksAllowed!==false)issues.push({file:"commercial-inventory.json",code:"COMMERCIAL_DISCLOSURE_BOUNDARY_VIOLATION"});
+    if(commercial?.safety?.paidRankingAllowed!==false)issues.push({file:"commercial-inventory.json",code:"COMMERCIAL_RANKING_BOUNDARY_VIOLATION"});
+    if(commercial.stage!=="ACTIVE"&&commercial.publicActivationAllowed!==false)issues.push({file:"commercial-inventory.json",code:"PREMATURE_COMMERCIAL_ACTIVATION"});
   }
 
   const trend=files["trend-current.json"];
