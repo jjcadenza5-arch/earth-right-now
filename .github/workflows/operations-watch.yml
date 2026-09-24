@@ -36,6 +36,7 @@ jobs:
           npm --silent run inside:playback-horizon | tee ern-ops/inside-playback-horizon.json
           npm --silent run inside:providers | tee ern-ops/inside-provider-resilience.json
           npm --silent run inside:research | tee ern-ops/embed-research.json
+          npm --silent run inside:research-preflight | tee ern-ops/embed-research-preflight.json
           npm --silent run operations:trend-snapshot -- ern-ops/source-availability.json | tee ern-ops/trend-current.json
           npm --silent run operations:status | tee ern-ops/operations-status.json
       - name: Compare operations trend
@@ -53,7 +54,7 @@ jobs:
         if: always()
         run: |
           if [ -f ern-ops/trend-current.json ]; then
-            npm --silent run operations:brief -- ern-ops/trend-current.json ern-ops/trend-delta.json ern-ops/source-availability.json ern-ops/inside-recovery.json ern-ops/embed-research.json ern-ops/inside-playback-horizon.json | tee ern-ops/operator-brief.md
+            npm --silent run operations:brief -- ern-ops/trend-current.json ern-ops/trend-delta.json ern-ops/source-availability.json ern-ops/inside-recovery.json ern-ops/embed-research.json ern-ops/inside-playback-horizon.json ern-ops/embed-research-preflight.json | tee ern-ops/operator-brief.md
           fi
       - name: Save latest trend snapshot
         if: always() && hashFiles('ern-history/previous.json') != ''
