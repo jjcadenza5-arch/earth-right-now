@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Adaptive Watch Earth set size
+- Changed Watch Earth from a fixed fill-to-20 target to an adaptive quality-over-quantity ceiling.
+- Caps external fill at 12 while inside-ERN playback is below the five-window preferred floor.
+- Shared the same policy across backend diagnostics and the public browser.
+
 ## 2026-09-24 — Second-provider technical preflight
 - Added public oEmbed + embed-page preflight for research-only YouTube candidates.
 - Technical success remains blocked from catalog promotion until deployed HUMAN_PLAYBACK and per-video/provider review are complete.
