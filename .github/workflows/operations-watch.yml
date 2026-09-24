@@ -17,13 +17,22 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - name: Check live-source essentials
+      - name: Build daily operations packet
         run: |
-          npm run sources:horizon
-          npm run watch-earth:now
-          npm run watch-earth:balance
-          npm run provider:worklist
-          npm run inside:recovery
-          npm run inside:providers
-          npm run inside:research
-          npm run operations:status
+          mkdir -p ern-ops
+          npm run sources:horizon | tee ern-ops/verification-horizon.json
+          npm run watch-earth:now | tee ern-ops/watch-earth-now.json
+          npm run watch-earth:balance | tee ern-ops/watch-earth-balance.json
+          npm run provider:worklist | tee ern-ops/provider-worklist.json
+          npm run inside:recovery | tee ern-ops/inside-recovery.json
+          npm run inside:providers | tee ern-ops/inside-provider-resilience.json
+          npm run inside:research | tee ern-ops/embed-research.json
+          npm run operations:status | tee ern-ops/operations-status.json
+      - name: Retain operations packet
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ern-operations-${{ github.run_number }}
+          path: ern-ops/
+          if-no-files-found: warn
+          retention-days: 14
