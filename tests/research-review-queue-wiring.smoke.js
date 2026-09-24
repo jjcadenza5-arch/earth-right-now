@@ -1,0 +1,4 @@
+import assert from "node:assert/strict";import fs from "node:fs";
+const pkg=fs.readFileSync("package.json","utf8"),wf=fs.readFileSync(".github/workflows/operations-watch.yml","utf8"),cli=fs.readFileSync("scripts/operations-operator-brief.mjs","utf8"),builder=fs.readFileSync("scripts/build-operator-review.mjs","utf8"),integrity=fs.readFileSync("src/operations-packet-integrity.js","utf8");
+assert.match(pkg,/"inside:research-review-queue"/);assert.match(wf,/inside:research-review-queue.*research-review-queue\.json/s);assert.match(cli,/researchReviewQueue=await optional\(args\[15\]\)/);assert.match(builder,/researchQueue\.primary/);assert.match(builder,/Alternate provider tests/);assert.match(integrity,/"research-review-queue\.json"/);
+console.log("ERN second-provider primary review wiring passed");

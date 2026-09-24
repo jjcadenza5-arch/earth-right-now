@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Single primary second-provider test
+- Second-provider research now presents one best provider-diversification test first and keeps the remaining candidates as alternates.
+- Technical/terms readiness only changes review order; it never grants permission, playback proof or catalog promotion.
+
 ## 2026-09-24 — Provider permission evidence freshness
 - Added a 30-day terms-review horizon for provider-family research.
 - Explore research now explicitly permits only the provider-branded player path when enabled and forbids re-streaming/rebroadcasting.

@@ -1,3 +1,11 @@
+## 2026-09-24 — Single primary second-provider test
+- Added a dedicated research review queue so ERN no longer asks the operator to test all second-provider candidates equally.
+- The queue prioritizes technically ready candidates with current provider-family terms evidence, safe provider-branded usage and a resolved network family.
+- Current research therefore selects one strongest new-family candidate as the primary human test and retains the other candidates as alternates.
+- The operator review lab renders only the primary research candidate as a loadable card; alternates stay collapsed and are used only if the primary fails or remains permission-blocked.
+- Daily operations now retains research-review-queue.json and the operator brief names the primary provider test.
+- Packet integrity enforces at most one primary candidate and forbids automatic permission approval, playback confirmation or catalog promotion.
+
 ## 2026-09-24 — Provider permission evidence freshness and anti-restream boundary
 - Re-reviewed Explore.org's current Terms of Service (effective January 23, 2026) and Community Guidelines and recorded the distinction between provider-branded embedding and prohibited re-streaming/rebroadcasting.
 - Explore research now records termsEffectiveAt, termsReviewedAt, the Community Guidelines URL, PROVIDER_BRANDED_PLAYER_ONLY usage, WHEN_ENABLED condition, required provider branding and restreamAllowed=false.

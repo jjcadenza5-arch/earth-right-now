@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,operatorReviewQueue}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,operatorReviewQueue,researchReviewQueue}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -63,6 +63,12 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     if(providerFamilyResearch.needsTermsReview)lines.push(`- ${providerFamilyResearch.needsTermsReview} provider-family terms review(s) need refresh.`);
     lines.push("- Research-family entries are not public sources. ERN uses provider-branded players only; re-streaming/rebroadcasting remains prohibited.","");
   }
+  if(researchReviewQueue?.primary?.length){
+    lines.push("## Second-provider primary test");
+    for(const item of researchReviewQueue.primary)lines.push(`- ${item.provider||item.id} / ${item.id} — ${item.technicalReady?"TECHNICALLY READY":item.technicalOutcome||"PREFLIGHT PENDING"}; terms ${item.familyTermsState||"UNTRACKED"}; action ${item.requiredHumanAction}.`);
+    if(researchReviewQueue.alternates?.length)lines.push(`- Alternates held: ${researchReviewQueue.alternates.length}. Test them only if the primary candidate fails or remains permission-blocked.`);
+    lines.push("- Primary status only reduces review work; permission and deployed human playback remain mandatory.","");
+  }
   if(research?.next?.length){
     const preflightById=new Map((researchPreflight?.rows||[]).map(x=>[x.id,x]));
     lines.push("## Second-provider research");
@@ -103,7 +109,8 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   else if((playbackHorizon?.summary?.due6h||0)>0||(playbackHorizon?.summary?.due12h||0)>0)lines.push("- Renew expiring inside-ERN HUMAN_PLAYBACK evidence before LIVE HERE eligibility lapses.");
   if((playbackEvidenceConsistency?.summary?.issues||0)>0)lines.push("- Resolve playback-evidence ledger/catalog drift before treating new LIVE HERE proof as authoritative.");
   if((snapshot?.insideERN?.readyShortfall||0)>0)lines.push("- Restore strong inside-ERN windows with fresh HUMAN_PLAYBACK evidence.");
-  if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
+  if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.primary?.length)lines.push(`- Test second-provider primary candidate ${researchReviewQueue.primary[0].provider||researchReviewQueue.primary[0].id} first; use alternates only if needed.`);
+  else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
   if(providerFamilyResearch?.needsTermsReview)lines.push("- Refresh stale provider terms evidence before permission review progresses.");
   if(providerFamilyResearch?.items?.length&&providerFamilyResearch.items.some(x=>x.technicalStatus==="SPECIFIC_EMBED_URL_REQUIRED"))lines.push("- Identify a current specific player URL for promising provider-family research before deployed playback testing.");
   if((snapshot?.maintenance?.sourceRevalidation||0)>0)lines.push("- Work the highest-priority source revalidation items.");

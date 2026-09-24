@@ -1,10 +1,15 @@
 import fs from "node:fs";
 import {operatorReviewQueue} from "../src/operator-review-queue.js";
 import {allowedEmbedUrl,allowedResearchEmbedUrl,embedSandbox} from "../src/embed-policy.js";
+import {providerFamilyResearchStatus} from "../src/provider-family-research.js";
+import {researchReviewQueue} from "../src/research-review-queue.js";
 
 const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
 let observations=[];try{observations=JSON.parse(fs.readFileSync("data/provider-observations.json","utf8"))}catch{}
 const research=JSON.parse(fs.readFileSync("data/embed-research-candidates.json","utf8"));
+const providerFamilies=JSON.parse(fs.readFileSync("data/embed-provider-families.json","utf8"));
+const familyResearch=providerFamilyResearchStatus(providerFamilies,{now:new Date()});
+const researchQueue=researchReviewQueue(research,{providerFamilyReport:familyResearch,primaryCount:1});
 const reviewQueue=operatorReviewQueue(sources,observations,{now:new Date(),limit:10,targetReady:5});
 
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
@@ -26,7 +31,8 @@ const card=(x,type)=>{
 };
 const insideReview=(reviewQueue.primaryItems||reviewQueue.items||[]).filter(x=>x.embedUrl).slice(0,10);
 const insideBacklog=(reviewQueue.backlogItems||[]).filter(x=>x.embedUrl);
-const researchCards=research.map(x=>({...x,title:x.provider+" — "+x.id}));
+const researchPrimary=researchQueue.primary.map(x=>({...x,title:x.provider+" — "+x.id}));
+const researchAlternates=researchQueue.alternates.map(x=>({...x,title:x.provider+" — "+x.id}));
 const generatedAt=new Date().toISOString();
 const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ERN Operator Embed Review</title><meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="strict-origin-when-cross-origin">
@@ -35,7 +41,7 @@ const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta nam
 <div class="warning"><strong>Unlinked / noindex review surface.</strong> This page is not authentication-protected. All candidates are public sources, but nothing here is visitor-approved. Human playback confirmation and source/provider review remain mandatory before promotion.</div>
 <div class="evidence"><strong>Local review evidence</strong><span id="reviewCount">0 observations</span><button id="copyEvidence" type="button">Copy JSON</button><button id="downloadEvidence" type="button">Download JSON</button><button id="clearEvidence" type="button">Clear local</button><small id="evidenceStatus">Stored only in this browser. Nothing is uploaded or written to ERN.</small></div>
 <section><h2>Renew / restore inside ERN</h2><p>Primary batch: ${reviewQueue.renewalCount||0} renewal + ${reviewQueue.recommendedRestorationCount||0} restoration review${(reviewQueue.recommendedRestorationCount||0)===1?"":"s"} to protect current proof and close the ${reviewQueue.readyShortfall||0}-window shortfall.</p><div class="grid">${insideReview.length?insideReview.map(x=>card(x,"restore")).join(""):'<p class="empty">No renewal or restoration candidates right now.</p>'}</div>${insideBacklog.length?`<details><summary>Additional restoration backlog (${insideBacklog.length})</summary><ul class="backlog">${insideBacklog.map(x=>`<li>${esc(x.title||x.id)} — ${esc(x.reason||x.action||"REVIEW")}</li>`).join("")}</ul></details>`:""}</section>
-<section><h2>Second-provider research</h2><p>Research-only candidates. Technical loading here does not approve permission or playback.</p><div class="grid">${researchCards.length?researchCards.map(x=>card(x,"research")).join(""):'<p class="empty">No research candidates right now.</p>'}</div></section>
+<section><h2>Second-provider research</h2><p>Test one strongest provider-family candidate first. Technical loading never approves permission or playback.</p><div class="grid">${researchPrimary.length?researchPrimary.map(x=>card(x,"research")).join(""):'<p class="empty">No primary research candidate right now.</p>'}</div>${researchAlternates.length?`<details><summary>Alternate provider tests (${researchAlternates.length})</summary><ul class="backlog">${researchAlternates.map(x=>`<li>${esc(x.title||x.id)} — use only if the primary test fails or remains blocked</li>`).join("")}</ul></details>`:""}</section>
 <p class="foot">Generated ${esc(generatedAt)}. This page never writes to ERN data and cannot mark a source healthy, live, or approved.</p>
 </main><script>
 const KEY="ern-operator-review-evidence-v1";
@@ -65,4 +71,4 @@ renderEvidence();
 </script></body></html>`;
 fs.mkdirSync("review",{recursive:true});
 fs.writeFileSync("review/inside-ern.html",html);
-console.log(JSON.stringify({generated:true,ready:reviewQueue.ready,targetReady:reviewQueue.targetReady,readyShortfall:reviewQueue.readyShortfall,recommendedRestorationCount:reviewQueue.recommendedRestorationCount,renewal:reviewQueue.renewal.map(x=>x.id),primary:insideReview.map(x=>x.id),backlog:insideBacklog.map(x=>x.id),research:research.map(x=>x.id),localEvidence:true},null,2));
+console.log(JSON.stringify({generated:true,ready:reviewQueue.ready,targetReady:reviewQueue.targetReady,readyShortfall:reviewQueue.readyShortfall,recommendedRestorationCount:reviewQueue.recommendedRestorationCount,renewal:reviewQueue.renewal.map(x=>x.id),primary:insideReview.map(x=>x.id),backlog:insideBacklog.map(x=>x.id),researchPrimary:researchPrimary.map(x=>x.id),researchAlternates:researchAlternates.map(x=>x.id),localEvidence:true},null,2));

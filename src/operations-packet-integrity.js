@@ -15,6 +15,7 @@ const requiredJson=[
  "embed-research.json",
  "embed-research-preflight.json",
  "provider-family-research.json",
+ "research-review-queue.json",
  "commercial-inventory.json",
  "commercial-verification-horizon.json",
  "commercial-onboarding-plan.json",
@@ -58,6 +59,15 @@ export async function validateOperationsPacket(dir="ern-ops"){
       if(row?.catalogMutationAllowed!==false)issues.push({file:"source-availability-continuity.json",code:"CONTINUITY_MUTATION_BOUNDARY_VIOLATION",id:row?.id||null});
       if(row?.automaticHealthChangeAllowed!==false)issues.push({file:"source-availability-continuity.json",code:"CONTINUITY_HEALTH_BOUNDARY_VIOLATION",id:row?.id||null});
     }
+  }
+
+  const researchQueue=files["research-review-queue.json"];
+  if(researchQueue){
+    if(researchQueue?.safety?.catalogPromotionAllowed!==false)issues.push({file:"research-review-queue.json",code:"RESEARCH_QUEUE_PROMOTION_BOUNDARY_VIOLATION"});
+    if(researchQueue?.safety?.automaticPermissionApprovalAllowed!==false)issues.push({file:"research-review-queue.json",code:"RESEARCH_QUEUE_PERMISSION_BOUNDARY_VIOLATION"});
+    if(researchQueue?.safety?.automaticPlaybackConfirmationAllowed!==false)issues.push({file:"research-review-queue.json",code:"RESEARCH_QUEUE_PLAYBACK_BOUNDARY_VIOLATION"});
+    if(!Array.isArray(researchQueue?.primary)||researchQueue.primary.length>1)issues.push({file:"research-review-queue.json",code:"RESEARCH_QUEUE_PRIMARY_INVALID"});
+    for(const item of [...(researchQueue?.primary||[]),...(researchQueue?.alternates||[])])if(item?.promotionAllowed!==false)issues.push({file:"research-review-queue.json",code:"RESEARCH_QUEUE_ITEM_PROMOTION_VIOLATION",id:item?.id||null});
   }
 
   const operatorReview=files["operator-review-queue.json"];
