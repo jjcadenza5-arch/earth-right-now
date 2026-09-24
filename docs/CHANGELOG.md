@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-24 — Official source refresh + Atlas provenance tranche G
+- Revalidated six current provider surfaces across Austria, Norway, South Africa, New York and Tbilisi.
+- Added explicit freshness evidence and conservative coordinate provenance without moving pins.
+- Preserved truth, permission and playback semantics.
+- Added regression coverage for the tranche.
+
 ## 2026-09-23 — Dynamic Atlas exception repair
 - Added explicit DYNAMIC_ORBIT / DYNAMIC_UNPINNED handling for moving viewpoints such as the ISS.
 - Excluded intentional dynamic sources from missing-coordinate maintenance debt.

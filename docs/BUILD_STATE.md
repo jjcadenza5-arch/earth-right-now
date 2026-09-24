@@ -1,3 +1,10 @@
+## 2026-09-24 — Official source refresh + Atlas provenance tranche G
+- Revalidated Kitzbühel/KitzSki, Flåm/Norway's Best, Cape Town earthTV, two Statue of Liberty EarthCam views and the Tbilisi Mtkvari River EarthCam page.
+- Recorded source-specific currentness evidence from each provider surface rather than only advancing timestamps.
+- Added conservative PLACE_REFERENCE/REGION_REFERENCE provenance without moving existing pins or claiming exact camera hardware positions.
+- Truth, permission and playback semantics remain unchanged.
+- Added regression coverage for all six refreshed records.
+
 ## 2026-09-23 — Dynamic Atlas exception repaired
 - Reconciled the stricter coordinate-provenance rules with ERN's existing International Space Station model.
 - DYNAMIC_ORBIT is now a first-class coordinate basis only when paired with DYNAMIC_UNPINNED; it must not carry static latitude/longitude.
