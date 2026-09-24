@@ -5,5 +5,26 @@
     "observedAt": "2026-09-21T21:25:00+07:00",
     "reason": "Previously verified visitor playback evidence retained as operational observation.",
     "httpStatus": 200
+  },
+  {
+    "id": "bergen-ulriken",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-24T08:05:00Z",
+    "reason": "Fresh deployed-origin fullscreen playback was visually confirmed in the user-provided ERN screenshot.",
+    "httpStatus": 200
+  },
+  {
+    "id": "skeikampen-ski",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-24T08:05:00Z",
+    "reason": "Fresh deployed-origin fullscreen playback was visually confirmed in the user-provided ERN screenshot.",
+    "httpStatus": 200
+  },
+  {
+    "id": "cijin-beach-kaohsiung",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-24T08:05:00Z",
+    "reason": "Fresh deployed-origin fullscreen playback was visually confirmed in the user-provided ERN screenshot.",
+    "httpStatus": 200
   }
 ]
