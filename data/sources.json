@@ -2120,14 +2120,19 @@
     "sourceUrl": "https://www.nps.gov/boha/learn/photosmultimedia/webcams.htm",
     "officialUrl": "https://www.nps.gov/boha/index.htm",
     "embedUrl": null,
-    "checkedAt": "2026-09-23T07:01:00+07:00",
-    "lastSuccessfulCheck": "2026-09-23T07:01:00+07:00",
+    "checkedAt": "2026-09-24T13:47:00+07:00",
+    "lastSuccessfulCheck": "2026-09-24T13:47:00+07:00",
     "failureReason": null,
     "quality": 82,
     "freshness": 88,
     "moment": 82,
     "story": "See current Boston Light and harbor viewpoints before planning an island trip.",
-    "rightsBasis": "Current official National Park Service webcam page lists four Boston Light webcam viewpoints. ERN keeps this LINK_ONLY and does not infer display permission."
+    "rightsBasis": "Current official National Park Service webcam page lists four Boston Light webcam viewpoints. ERN keeps this LINK_ONLY and does not infer display permission.",
+    "lat": 42.3293333,
+    "lon": -70.8918056,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.nps.gov/boha/learn/historyculture/facts-libr.htm",
+    "freshnessEvidence": "The current NPS Boston Harbor Islands webcam page lists four active views from Boston Light on Little Brewster Island; individual camera pages report active status and one-minute refreshes."
   },
   {
     "id": "diano-marina",
