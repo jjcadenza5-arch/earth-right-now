@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Second-provider technical preflight
+- Added public oEmbed + embed-page preflight for research-only YouTube candidates.
+- Technical success remains blocked from catalog promotion until deployed HUMAN_PLAYBACK and per-video/provider review are complete.
+- Added daily packet and operator-brief visibility.
+
 ## 2026-09-24 — Degraded source-page refresh tranche M
 - Revalidated Waikīkī and Cold Lake provider pages without changing degraded playback health.
 - Source freshness can no longer be mistaken for playback recovery.
