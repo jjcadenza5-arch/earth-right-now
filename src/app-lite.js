@@ -191,6 +191,13 @@ function scenicPoster(s){
  wrap.innerHTML='<span class="scene-sun"></span><span class="scene-back"></span><span class="scene-front"></span>';
  return wrap;
 }
+function createMediaFrame(s,{preview=false,onload=null,onerror=null}={}){
+ const url=cleanUrl(s?.embedUrl);if(!url)return null;
+ const frame=document.createElement("iframe");frame.src=url;frame.title=preview?s.title+" live preview":s.title;frame.loading="eager";frame.referrerPolicy="strict-origin-when-cross-origin";frame.allow=preview?"fullscreen; picture-in-picture":"autoplay; fullscreen; picture-in-picture";frame.allowFullscreen=true;
+ if(preview){frame.tabIndex=-1;frame.setAttribute("aria-hidden","true")}
+ if(typeof onload==="function")frame.onload=onload;if(typeof onerror==="function")frame.onerror=onerror;
+ return frame;
+}
 function heroLivePreviewAllowed(s){
  const desktop=globalThis.matchMedia?.("(min-width:1000px)")?.matches===true;
  const saveData=globalThis.navigator?.connection?.saveData===true;
@@ -204,10 +211,8 @@ function renderHero(s){
   if(img){fallback.src=img;fallback.alt="";fallback.decoding="async";fallback.onerror=()=>{if(!fallback.isConnected)return;fallback.remove();mount.dataset.visualKind="illustrative";mount.prepend(scenicPoster(s))}}
   mount.dataset.visualKind=img?"source":"illustrative";mount.append(fallback);
   if(heroLivePreviewAllowed(s)){
-   const frame=document.createElement("iframe");frame.src=cleanUrl(s.embedUrl);frame.title=s.title+" live preview";frame.loading="eager";frame.referrerPolicy="strict-origin-when-cross-origin";frame.allow="fullscreen; picture-in-picture";frame.tabIndex=-1;frame.setAttribute("aria-hidden","true");
-   frame.onload=()=>{if(!frame.isConnected)return;if(fallback.isConnected)fallback.remove();mount.dataset.visualKind="live-preview"};
-   frame.onerror=()=>{if(frame.isConnected)frame.remove();if(!fallback.isConnected){mount.dataset.visualKind="illustrative";mount.prepend(scenicPoster(s))}};
-   mount.append(frame);
+   const frame=createMediaFrame(s,{preview:true,onload:()=>{if(!frame?.isConnected)return;if(fallback.isConnected)fallback.remove();mount.dataset.visualKind="live-preview"},onerror:()=>{if(frame?.isConnected)frame.remove();if(!fallback.isConnected){mount.dataset.visualKind="illustrative";mount.prepend(scenicPoster(s))}}});
+   if(frame)mount.append(frame);
   }
   $("#heroTitle").textContent=s.title;$("#heroMeta").textContent=[s.region,s.country,momentSignal(s).label,localTime(s)].filter(Boolean).join(" · ");$("#heroTruth").textContent=publicTruth(s);$("#heroLocation").dataset.truth=truthTone(s);$("#heroDot").dataset.truth=truthTone(s);mount.classList.remove("is-changing");
  },180);
@@ -486,7 +491,7 @@ function bestAlternate(s){
 function beginViewerLoad(s){clearViewerLoad();const link=$("#loadingSource"),source=cleanUrl(s?.sourceUrl||s?.officialUrl),alt=bestAlternate(s),tryAlt=$("#viewerTryAlternate");if(source){link.href=source;link.hidden=false}else{link.removeAttribute("href");link.hidden=true}tryAlt.hidden=!alt;tryAlt.onclick=alt?()=>openViewer(alt):null;$("#viewerLoading").hidden=false;viewerLoadTimer=setTimeout(()=>{$("#viewerLoading").hidden=false},7000)}
 function mountViewerNow(s){
  stopImageTimer();clearViewerLoad();const mount=$("#viewerStage");mount.replaceChildren();mount.style.background=generatedBackground(s);const source=cleanUrl(s.sourceUrl||s.officialUrl),link=$("#sourceViewer");if(source){link.href=source;link.hidden=false}else{link.removeAttribute("href");link.hidden=true}
- if(s.playback==="EMBED"&&cleanUrl(s.embedUrl)){beginViewerLoad(s);const f=document.createElement("iframe");f.src=s.embedUrl;f.title=s.title;f.allow="autoplay; fullscreen; picture-in-picture";f.allowFullscreen=true;f.referrerPolicy="strict-origin-when-cross-origin";f.onload=()=>clearViewerLoad();mount.append(f)}
+ if(s.playback==="EMBED"&&cleanUrl(s.embedUrl)){beginViewerLoad(s);const f=createMediaFrame(s,{onload:()=>clearViewerLoad()});if(f)mount.append(f)}
  else if(s.playback==="IMAGE_REFRESH"&&cleanUrl(s.sourceUrl)){beginViewerLoad(s);const img=document.createElement("img");img.alt=s.title;img.onload=()=>clearViewerLoad();img.onerror=()=>{$("#viewerLoading").hidden=false};const refresh=()=>{try{const u=new URL(s.sourceUrl);u.searchParams.set("ern",Date.now());img.src=u.href}catch{img.src=s.sourceUrl}};refresh();state.imageTimer=setInterval(()=>{if(document.visibilityState==="visible")refresh()},Math.max(30000,Number(s.refreshMs)||60000));mount.append(img)}
  else{const box=document.createElement("div");box.className="external-box";const h=document.createElement("h3");h.textContent=s.title;const p=document.createElement("p");p.textContent="This current window is available at its official provider. ERN opens it there rather than pretending it is embedded here.";box.append(h,p);if(source){const a=document.createElement("a");a.href=source;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Open current source";box.append(a)}mount.append(box)}
 }

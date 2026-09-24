@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Shared Hero/Viewer media-frame factory
+- Refactored Hero preview and full Viewer onto one controlled iframe factory.
+- Preserved the single-iframe-path performance rule instead of loosening it.
+
 ## 2026-09-24 — Proven inside-ERN Hero live preview
 - Hero now uses real inside-ERN previews only for fresh human-proven EMBED sources on desktop.
 - Mobile/Data Saver/unverified/external sources keep lightweight truthful fallbacks.

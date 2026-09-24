@@ -1,3 +1,11 @@
+## 2026-09-24 — Shared Hero/Viewer media-frame factory
+- Repaired the Hero live-preview deployment failure without weakening the performance guard.
+- Hero preview and full Viewer now share one controlled runtime iframe factory, restoring ERN's single iframe-construction pathway.
+- Preview frames remain non-interactive and omit autoplay permission; full Viewer frames retain autoplay/fullscreen/picture-in-picture permissions.
+- Both paths share HTTPS-cleaned catalog embed URLs and strict-origin referrer policy.
+- The existing performance preflight remains unchanged at <=1 runtime iframe factory.
+- Updated Hero regression coverage and added a dedicated shared-factory test.
+
 ## 2026-09-24 — Proven inside-ERN Hero live preview
 - The Hero can now show a real embedded Earth window instead of the generated illustrative fallback when the selected source is an EMBED with current source truth and fresh playbackVerifiedAt evidence.
 - Live Hero previews are desktop-only (>=1000px), require the document to be visible, and are disabled when the browser reports Data Saver.
