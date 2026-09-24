@@ -10,6 +10,7 @@ on:
       - "src/styles-lite.css"
       - "data/sources.json"
       - "data/local-directory.json"
+      - "data/travel-offers.json"
       - "data/provider-observations.json"
       - "data/embed-research-candidates.json"
       - "assets/**"

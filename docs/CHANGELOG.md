@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Verified travel-offer release wiring
+- Ship data/travel-offers.json in the public release and redeploy Pages when it changes.
+- Added public-launch and regression guards so verified offers cannot silently disappear from deployed artifacts.
+
 ## 2026-09-24 — Submission transport readiness contract
 - Added a disabled real-endpoint/privacy/retention readiness contract for camera/place submissions.
 - Wired readiness into business status, daily operations and packet-integrity safety checks.

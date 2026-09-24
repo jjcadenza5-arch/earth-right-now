@@ -19,6 +19,7 @@ assert(index.includes('navigator.serviceWorker.register("/service-worker.js")'),
 for(const p of ["manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","for-places.html","now-moments.html","release-verification.html"])assert(build.includes(`../${p}`),`release artifact missing ${p}`);
 assert(build.includes("../src/release-verification-console.js"),"release verification console script is not shipped");
 assert(build.includes("../data/local-directory.json"),"reviewed local-place directory is not shipped");
+assert(build.includes("../data/travel-offers.json"),"verified travel-offer registry is not shipped");
 assert(build.includes("../data/provider-observations.json"),"provider playback observations are not shipped to operator verification");
 assert(read("scripts/build-destination-pages.mjs").includes("Ask ERN Guide"),"destination pages lost ERN Guide handoff");
 assert(sw.includes('event.request.mode!=="navigate"'),"service worker should limit offline interception to navigation");
