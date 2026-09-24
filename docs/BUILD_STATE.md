@@ -1,3 +1,10 @@
+## 2026-09-24 — Embed source refresh tranche K
+- Revalidated six high-value CouchTourist source pages: Ponte di Legno, Sasagawa Nagare, Metung, Cancún, Chihshang Paradise Road and St. John's Harbour.
+- Each current provider page still describes the view as live and exposes the same ERN-reviewed embed iframe already in the catalog.
+- Source-level checkedAt / lastSuccessfulCheck / freshness evidence were refreshed, but playbackVerifiedAt remains intentionally absent.
+- Because the fresh-human-playback gate is now active, none of these six returns to LIVE HERE or Watch Earth until deployed-origin HUMAN_PLAYBACK is separately confirmed.
+- Added regression coverage proving source currentness cannot bypass playback evidence.
+
 ## 2026-09-24 — Fresh human-playback gate for embedded sources
 - Added a compact `playbackVerifiedAt` evidence marker for EMBED sources and seeded it only for the three deployed-origin views actually confirmed today: Bergen/Ulriken, Skeikampen and Cijin Beach.
 - Backend Watch Earth and the public browser now require that marker to be within 24 hours before an embedded source can make a fresh LIVE HERE claim.
