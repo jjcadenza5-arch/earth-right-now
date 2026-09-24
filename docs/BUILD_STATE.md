@@ -1,3 +1,10 @@
+## 2026-09-24 — Browser/backend Watch Earth quality parity
+- Aligned the public Watch Earth filter with the backend experience gate.
+- Top 20 candidates now require quality >=80, moment >=70 and no known visitor-playback rejection/stale-recording/broken-embed reason in addition to current health/truth checks.
+- This prevents inside-ERN restoration from lowering the visitor standard merely to fill the set.
+- The intended result is explicitly quality over quantity: Watch Earth may show fewer than 20 windows when the current catalog cannot support 20 strong ones.
+- Added a syntax-backed regression check for the browser gate.
+
 ## 2026-09-24 — Inside-ERN restoration priority
 - Split embed recovery into two operational lanes: healthy restoration candidates and blocked/degraded sources.
 - Added a default target of five freshly proven inside-ERN windows and a readyShortfall metric.

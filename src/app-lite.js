@@ -44,7 +44,8 @@ function verificationLabel(s){const d=verificationAgeDays(s);if(!Number.isFinite
 function verificationWindowHours(s){if(s?.truth==="LIVE_IMAGE"||s?.playback==="IMAGE_REFRESH")return 24;if(s?.playback==="EMBED")return 24;if(s?.truth==="EXTERNAL_LIVE"||s?.truth==="PARTNER")return 72;return 168}
 function verificationAgeHours(s){return verificationAgeDays(s)*24}
 function featureEligible(s){return!!(s&&s.health==="HEALTHY"&&!FEATURED_HOLD.has(s.id)&&verificationAgeHours(s)<=verificationWindowHours(s))}
-function watchEligible(s){return featureEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
+function watchExperienceEligible(s){return!!(s&&s.health==="HEALTHY"&&!/VISITOR_PLAYBACK_REJECTED|NOT_LIVE|VIDEO_UNAVAILABLE|STALE_RECORDING|BROKEN_EMBED/i.test(String(s.failureReason||""))&&(Number(s.quality)||0)>=80&&(Number(s.moment)||0)>=70)}
+function watchEligible(s){return featureEligible(s)&&watchExperienceEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
 const momentWords={
  en:["Current","Morning light","Daylight","Evening light","Night"],
  th:["ปัจจุบัน","แสงยามเช้า","กลางวัน","แสงยามเย็น","กลางคืน"],
