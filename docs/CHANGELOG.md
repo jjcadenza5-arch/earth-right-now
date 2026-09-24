@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Public truth label consistency
+- Kept LIVE_IMAGE/LIVE_VIDEO truth visible even when playback opens at the provider.
+- Replaced misleading PREVIEW labels with CURRENT IMAGE ↗ / LIVE VIDEO ↗ where appropriate.
+- Added regression coverage for the truth/playback boundary.
+
 ## 2026-09-24 — Visible poster fallback + Atlas unpinned UI repair
 - Replaced failed remote thumbnail glyphs with ERN generated scenic posters on window/destination cards.
 - Updated World Map beyond-pins copy and filtering for multi-site collections.
