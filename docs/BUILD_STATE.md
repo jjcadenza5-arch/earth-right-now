@@ -1,3 +1,10 @@
+## 2026-09-24 — Visible poster fallback + Atlas unpinned UI repair
+- Removed browser broken-image glyphs from the main window cards and compact destination cards: failed remote thumbnails are now removed immediately and replaced by ERN's generated scenic poster.
+- Preserved the existing generated-background style instead of introducing a redesign.
+- Updated the World Map "Beyond the mapped pins" logic to treat MULTI_SITE_UNPINNED collections separately from genuinely unmapped single places.
+- The note now distinguishes true coordinate debt, intentional multi-location collections, and dynamic Earth views.
+- Added regression coverage for both visible behaviors.
+
 ## 2026-09-24 — Official single-site Atlas mappings
 - Added PLACE_REFERENCE pins for Queenstown Airport and Georgia Aquarium using coordinates exposed by map links from each destination's official site.
 - Revalidated Queenstown Airport's close-to-live webcam surface and Georgia Aquarium's current Live Cams/site-location surface.

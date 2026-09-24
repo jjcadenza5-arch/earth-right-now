@@ -187,9 +187,12 @@ function renderHero(s){
   $("#heroTitle").textContent=s.title;$("#heroMeta").textContent=[s.region,s.country,momentSignal(s).label,localTime(s)].filter(Boolean).join(" · ");$("#heroTruth").textContent=publicTruth(s);$("#heroLocation").dataset.truth=truthTone(s);$("#heroDot").dataset.truth=truthTone(s);mount.classList.remove("is-changing");
  },180);
 }
+function installVisualFallback(img,wrap,s){
+ if(!img||!wrap)return;img.addEventListener("error",()=>{if(!img.isConnected)return;img.remove();if(!wrap.querySelector(".scenic-poster"))wrap.append(scenicPoster(s))},{once:true});
+}
 function compactVisual(s){
  const wrap=document.createElement("span");wrap.className="result-visual";wrap.style.background=generatedBackground(s);
- const img=cleanUrl(s.thumbnailUrl);if(img){const el=document.createElement("img");el.src=img;el.alt="";el.loading="lazy";wrap.append(el)}
+ const img=cleanUrl(s.thumbnailUrl);if(img){const el=document.createElement("img");el.src=img;el.alt="";el.loading="lazy";installVisualFallback(el,wrap,s);wrap.append(el)}else wrap.append(scenicPoster(s));
  return wrap;
 }
 function card(s,compact=false,index=-1){
@@ -200,7 +203,7 @@ function card(s,compact=false,index=-1){
    b.prepend(compactVisual(s));b.querySelector(".truth").textContent=publicTruth(s);b.querySelector(".verify-mini").textContent=verificationLabel(s);b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(" · ");
  }
  else{b.innerHTML=`<div class="card-visual"></div><div class="card-body"><div class="card-kicker"><span></span><span></span></div><strong></strong><small></small><span class="card-favorite" aria-hidden="true">${state.favorites.has(s.id)?"♥":"♡"}</span></div>`;const v=b.querySelector(".card-visual");v.style.background=generatedBackground(s);v.innerHTML=posterMarkup(s);
- if(!v.querySelector("img"))v.append(scenicPoster(s));
+ const posterImg=v.querySelector("img");if(posterImg)installVisualFallback(posterImg,v,s);else v.append(scenicPoster(s));
  b.dataset.truth=truthTone(s);b.querySelector(".card-kicker span:first-child").textContent=publicTruth(s);b.querySelector(".card-kicker span:last-child").textContent=[momentSignal(s).label,localTime(s)].filter(Boolean).join(" · ");b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(", ")}
  b.onclick=()=>openViewer(s);return b;
 }
@@ -384,13 +387,15 @@ function renderNowStrip(){
 function renderAtlasBeyond(){
  const box=$("#atlasBeyond"),grid=$("#atlasBeyondGrid"),note=$("#atlasBeyondNote");
  const dynamic=state.sources.filter(s=>featureEligible(s)&&s.mapBehavior==="DYNAMIC_UNPINNED");
- const unmapped=state.sources.filter(s=>featureEligible(s)&&s.mapBehavior!=="DYNAMIC_UNPINNED"&&(!Number.isFinite(Number(s.lat))||!Number.isFinite(Number(s.lon))));
- if(!unmapped.length&&!dynamic.length){box.hidden=true;grid.replaceChildren();return}
+ const multiSite=state.sources.filter(s=>featureEligible(s)&&s.mapBehavior==="MULTI_SITE_UNPINNED");
+ const intentional=new Set([...dynamic,...multiSite].map(s=>s.id));
+ const unmapped=state.sources.filter(s=>featureEligible(s)&&!intentional.has(s.id)&&(!Number.isFinite(Number(s.lat))||!Number.isFinite(Number(s.lon))));
+ if(!unmapped.length&&!dynamic.length&&!multiSite.length){box.hidden=true;grid.replaceChildren();return}
  const ranked=[...unmapped].sort((a,b)=>baseScore(b)-baseScore(a));
  const pick=[],countries=new Set();
  for(const s of ranked){if(countries.has(s.country)&&pick.length<4)continue;pick.push(s);countries.add(s.country);if(pick.length>=6)break}
  const buttons=pick.map(s=>{const b=document.createElement("button");b.type="button";b.className="atlas-beyond-card";const strong=document.createElement("strong");strong.textContent=s.title;const small=document.createElement("small");small.textContent=[s.region,s.country,publicTruth(s)].filter(Boolean).join(" · ");b.append(strong,small);b.onclick=()=>openViewer(s);return b});
- grid.replaceChildren(...buttons);const parts=[];if(unmapped.length)parts.push(`${unmapped.length} current ERN place${unmapped.length===1?"":"s"} searchable but not pinned until location evidence is added`);if(dynamic.length)parts.push(`${dynamic.length} dynamic Earth view${dynamic.length===1?" is":"s are"} intentionally unpinned`);note.textContent=parts.join(" · ")+ ".";box.hidden=false;
+ grid.replaceChildren(...buttons);const parts=[];if(unmapped.length)parts.push(`${unmapped.length} current ERN place${unmapped.length===1?"":"s"} searchable but not pinned until location evidence is added`);if(multiSite.length)parts.push(`${multiSite.length} multi-location collection${multiSite.length===1?" is":"s are"} intentionally unpinned`);if(dynamic.length)parts.push(`${dynamic.length} dynamic Earth view${dynamic.length===1?" is":"s are"} intentionally unpinned`);note.textContent=parts.join(" · ")+ ".";box.hidden=false;
 }
 
 function renderMap(){
