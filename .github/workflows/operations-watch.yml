@@ -69,6 +69,10 @@ jobs:
           if [ -f ern-ops/trend-current.json ]; then
             npm --silent run operations:brief -- ern-ops/trend-current.json ern-ops/trend-delta.json ern-ops/source-availability.json ern-ops/inside-recovery.json ern-ops/embed-research.json ern-ops/inside-playback-horizon.json ern-ops/embed-research-preflight.json ern-ops/source-availability-continuity.json | tee ern-ops/operator-brief.md
           fi
+      - name: Validate operations packet
+        if: always()
+        run: |
+          npm --silent run operations:packet-integrity -- ern-ops | tee ern-ops/packet-integrity.json
       - name: Save latest trend snapshot
         if: always() && hashFiles('ern-history/previous.json') != ''
         uses: actions/cache/save@v4

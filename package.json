@@ -48,7 +48,8 @@
     "inside:research-preflight": "node scripts/embed-research-preflight.mjs",
     "inside:review-evidence": "node scripts/operator-review-evidence-status.mjs",
     "inside:review-proposals": "node scripts/review-evidence-proposals.mjs",
-    "sources:availability-continuity": "node scripts/source-availability-continuity.mjs"
+    "sources:availability-continuity": "node scripts/source-availability-continuity.mjs",
+    "operations:packet-integrity": "node scripts/operations-packet-integrity.mjs"
   },
   "engines": {
     "node": ">=20"
