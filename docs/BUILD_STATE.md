@@ -1,3 +1,12 @@
+## 2026-09-24 — Proactive playback-proof renewal queue
+- Upgraded the unlinked operator review lab so fresh inside-ERN proof can be renewed before its 24-hour LIVE HERE eligibility expires.
+- DUE_12H and DUE_6H healthy EMBED_ALLOWED sources are now placed ahead of ordinary restoration candidates.
+- Featured-hold sources stay excluded, and restoration remains the fallback lane after renewal priorities.
+- Renewal cards are visibly labeled RENEW LIVE HERE; they still require an operator to load the deployed iframe and record human review.
+- The exported evidence type remains the existing validated source-review type, so no parallel evidence schema was introduced.
+- Added a reusable operator-review queue model plus regression/wiring coverage.
+- Nothing renews playbackVerifiedAt automatically and no source truth, health or permission is mutated.
+
 ## 2026-09-24 — Playback evidence consistency audit
 - Added a read-only audit between catalog playbackVerifiedAt markers and provider-observation HUMAN_PLAYBACK evidence.
 - Detects catalog markers without matching human evidence, fresh human observations missing the catalog marker, timestamp drift, markers on non-embed sources and observations for unknown source IDs.

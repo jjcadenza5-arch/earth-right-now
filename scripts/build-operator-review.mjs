@@ -1,11 +1,11 @@
 import fs from "node:fs";
-import {insideERNRecoveryStatus} from "../src/inside-ern-recovery.js";
+import {operatorReviewQueue} from "../src/operator-review-queue.js";
 import {allowedEmbedUrl,embedSandbox} from "../src/embed-policy.js";
 
 const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
 let observations=[];try{observations=JSON.parse(fs.readFileSync("data/provider-observations.json","utf8"))}catch{}
 const research=JSON.parse(fs.readFileSync("data/embed-research-candidates.json","utf8"));
-const recovery=insideERNRecoveryStatus(sources,observations,{now:new Date(),limit:12,targetReady:5});
+const reviewQueue=operatorReviewQueue(sources,observations,{now:new Date(),limit:10,targetReady:5});
 
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const safe=u=>{try{const x=new URL(String(u||""));return /^https:$/.test(x.protocol)?x.toString():""}catch{return""}};
@@ -13,9 +13,9 @@ const card=(x,type)=>{
  const embed=allowedEmbedUrl(x.embedUrl||x.candidateEmbedUrl)||"";
  const source=safe(x.sourceUrl);
  const sandbox=embed?embedSandbox({embedUrl:embed}):"";
- const status=type==="research"?"Research-only · technical review required":[x.reason,x.action].filter(Boolean).join(" · ");
+ const status=type==="research"?"Research-only · technical review required":[x.reason,x.action,Number.isFinite(x.remainingHours)?`${x.remainingHours}h remaining`:null].filter(Boolean).join(" · ");
  return `<article class="card" data-type="${esc(type)}" data-id="${esc(x.id)}" data-title="${esc(x.title||x.id)}" data-provider="${esc(x.provider||"Unknown provider")}" data-source="${esc(source)}" data-embed="${esc(embed)}">
-   <div class="meta"><span>${esc(type==="research"?"SECOND PROVIDER":"RESTORE INSIDE ERN")}</span><strong>${esc(x.title||x.id)}</strong><small>${esc(x.provider||"Unknown provider")} · ${esc(status)}</small></div>
+   <div class="meta"><span>${esc(type==="research"?"SECOND PROVIDER":x.reviewMode==="RENEW"?"RENEW LIVE HERE":"RESTORE INSIDE ERN")}</span><strong>${esc(x.title||x.id)}</strong><small>${esc(x.provider||"Unknown provider")} · ${esc(status)}</small></div>
    <div class="stage" data-embed="${esc(embed)}" data-sandbox="${esc(sandbox)}"><div class="placeholder">Not loaded. Human playback proof is still required.</div></div>
    <div class="actions"><button class="load" type="button" ${embed?"":"disabled"}>Load candidate</button>${source?`<a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Open provider ↗</a>`:""}</div>
    <div class="review-actions" aria-label="Record local human review"><button type="button" data-outcome="HUMAN_PLAYBACK_CONFIRMED" disabled>Playing & current</button><button type="button" data-outcome="PLAYBACK_FAILED" disabled>Failed / not playing</button><button type="button" data-outcome="INCONCLUSIVE" disabled>Inconclusive</button></div>
@@ -23,7 +23,7 @@ const card=(x,type)=>{
    <p class="note">Loading this frame is only a review step. A page or iframe loading does not prove that the view is live/current.</p>
  </article>`;
 };
-const restoration=recovery.restorationCandidates.filter(x=>x.embedUrl).slice(0,8);
+const insideReview=reviewQueue.items.filter(x=>x.embedUrl).slice(0,10);
 const researchCards=research.map(x=>({...x,title:x.provider+" — "+x.id}));
 const generatedAt=new Date().toISOString();
 const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -32,7 +32,7 @@ const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta nam
 <body><main><p class="kicker">EARTH RIGHT NOW · OPERATOR REVIEW</p><h1>Inside-ERN playback review lab</h1>
 <div class="warning"><strong>Unlinked / noindex review surface.</strong> This page is not authentication-protected. All candidates are public sources, but nothing here is visitor-approved. Human playback confirmation and source/provider review remain mandatory before promotion.</div>
 <div class="evidence"><strong>Local review evidence</strong><span id="reviewCount">0 observations</span><button id="copyEvidence" type="button">Copy JSON</button><button id="downloadEvidence" type="button">Download JSON</button><button id="clearEvidence" type="button">Clear local</button><small id="evidenceStatus">Stored only in this browser. Nothing is uploaded or written to ERN.</small></div>
-<section><h2>Restore inside ERN</h2><p>Highest-value healthy embeds that still need current human playback proof.</p><div class="grid">${restoration.length?restoration.map(x=>card(x,"restore")).join(""):'<p class="empty">No restoration candidates right now.</p>'}</div></section>
+<section><h2>Renew / restore inside ERN</h2><p>Expiring LIVE HERE proof is shown first, followed by high-value healthy embeds that still need current human playback proof.</p><div class="grid">${insideReview.length?insideReview.map(x=>card(x,"restore")).join(""):'<p class="empty">No renewal or restoration candidates right now.</p>'}</div></section>
 <section><h2>Second-provider research</h2><p>Research-only candidates. Technical loading here does not approve permission or playback.</p><div class="grid">${researchCards.length?researchCards.map(x=>card(x,"research")).join(""):'<p class="empty">No research candidates right now.</p>'}</div></section>
 <p class="foot">Generated ${esc(generatedAt)}. This page never writes to ERN data and cannot mark a source healthy, live, or approved.</p>
 </main><script>
@@ -63,4 +63,4 @@ renderEvidence();
 </script></body></html>`;
 fs.mkdirSync("review",{recursive:true});
 fs.writeFileSync("review/inside-ern.html",html);
-console.log(JSON.stringify({generated:true,restoration:restoration.map(x=>x.id),research:research.map(x=>x.id),localEvidence:true},null,2));
+console.log(JSON.stringify({generated:true,renewal:reviewQueue.renewal.map(x=>x.id),restoration:reviewQueue.restoration.map(x=>x.id),insideReview:insideReview.map(x=>x.id),research:research.map(x=>x.id),localEvidence:true},null,2));

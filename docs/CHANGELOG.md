@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Proactive playback-proof renewal queue
+- Operator review now surfaces DUE_12H / DUE_6H inside-ERN playback proof before it expires.
+- Renewal items precede ordinary restoration candidates while preserving human review and non-mutating evidence boundaries.
+
 ## 2026-09-24 — Playback evidence consistency audit
 - Added daily read-only drift detection between playbackVerifiedAt catalog markers and HUMAN_PLAYBACK observations.
 - Fresh evidence cannot silently exist in only one proof path without becoming an operator issue.
