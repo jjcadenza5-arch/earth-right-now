@@ -1,0 +1,10 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const app=fs.readFileSync("src/app-lite.js","utf8");
+assert.ok(!app.includes("verificationAgeDays(s)<=21"));
+assert.ok(!app.includes("verificationAgeDays(s)<=7"));
+assert.ok(!app.includes("age>21"));
+assert.match(app,/state\.sources\.filter\(featureEligible\)/);
+assert.match(app,/if\(intent\.current\)pool=pool\.filter\(currentTruthClaim\)/);
+assert.match(app,/confidence\.classList\.toggle\("stale",!currentTruthClaim\(s\)\)/);
+new Function(app);
+console.log("ERN visitor currentness policy sweep passed");
