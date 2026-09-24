@@ -1,3 +1,10 @@
+## 2026-09-24 — Atlas coordinate provenance tranche H
+- Added conservative PLACE_REFERENCE provenance to seven existing mapped provider destinations: Mpala, Lajes do Pico, Roque de los Muchachos, Cijin Beach, Cancún, Taitung Jinzun and Bergen/Ulriken.
+- Existing coordinates were preserved; none is promoted to CAMERA_EXACT.
+- Provenance points to the current provider/destination page that names the mapped place.
+- This closes mapped legacy debt without changing visitor playback or source-truth semantics.
+- Added regression coverage for all seven records.
+
 ## 2026-09-24 — Official source refresh + Atlas provenance tranche G
 - Revalidated Kitzbühel/KitzSki, Flåm/Norway's Best, Cape Town earthTV, two Statue of Liberty EarthCam views and the Tbilisi Mtkvari River EarthCam page.
 - Recorded source-specific currentness evidence from each provider surface rather than only advancing timestamps.
