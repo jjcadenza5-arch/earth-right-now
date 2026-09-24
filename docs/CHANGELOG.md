@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Local-only operator review evidence packets
+- Added local human review controls and copy/download JSON export to the unlinked operator review lab.
+- Exported packets never claim network status or mutation authority.
+- Added a repository validator/CLI for future evidence handoff.
+
 ## 2026-09-24 — Unlinked operator embed review lab
 - Added a noindex, unlinked deployed-origin review page for inside-ERN and second-provider playback candidates.
 - Frames load only on operator action and cannot write source evidence or promote catalog entries.
