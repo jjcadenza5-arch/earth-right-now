@@ -1,3 +1,10 @@
+## 2026-09-24 — Sticky-header section landing repair
+- Added explicit scroll-margin offsets for Home, Watch Earth, Destinations, Explore, World Map and Saved/My Earth.
+- Desktop, tablet and mobile offsets track ERN's existing sticky-header heights.
+- Navigation jumps now land with section headings visible instead of hiding their first line underneath the header.
+- No section layout, typography or navigation structure was redesigned.
+- Added regression coverage for the landing offsets.
+
 ## 2026-09-24 — Public truth labels separated from playback location
 - Corrected Explore/My Earth/Watch card labels so verified LIVE_IMAGE and LIVE_VIDEO sources no longer collapse to PREVIEW merely because they open at the provider.
 - Provider-opened LIVE_IMAGE now reads CURRENT IMAGE ↗; provider-opened LIVE_VIDEO reads LIVE VIDEO ↗.

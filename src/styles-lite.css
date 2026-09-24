@@ -542,3 +542,8 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
 .atlas-legend span{display:inline-flex;align-items:center;gap:5px}
 .legend-pin{display:inline-block;width:10px;height:10px;border-radius:50%;border:1.5px solid white;box-shadow:0 1px 4px rgba(7,42,34,.2);background:#1b7564}
 .legend-pin.external{background:#d79a3e}.legend-pin.local{background:#7c6de0}
+
+/* Sticky-header section landing: keep nav targets fully visible */
+#home,#watch,#destinations,#search,#map,#saved{scroll-margin-top:96px}
+@media(max-width:1100px){#home,#watch,#destinations,#search,#map,#saved{scroll-margin-top:92px}}
+@media(max-width:600px){#home,#watch,#destinations,#search,#map,#saved{scroll-margin-top:74px}}
