@@ -20,6 +20,7 @@ const requiredJson=[
  "commercial-inventory.json",
  "commercial-verification-horizon.json",
  "commercial-onboarding-plan.json",
+ "commercial-research.json",
  "submission-transport-readiness.json",
  "trend-current.json",
  "trend-delta.json",
@@ -138,6 +139,16 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(onboarding?.safety?.revenueForecast!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_REVENUE_FORECAST_BOUNDARY_VIOLATION"});
     if(onboarding?.safety?.paidPriorityAllowed!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_PAID_PRIORITY_BOUNDARY_VIOLATION"});
     if(onboarding?.safety?.inventOffersAllowed!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_INVENTION_BOUNDARY_VIOLATION"});
+  }
+
+  const commercialResearch=files["commercial-research.json"];
+  if(commercialResearch){
+    if(commercialResearch?.publicActivationAllowed!==false)issues.push({file:"commercial-research.json",code:"COMMERCIAL_RESEARCH_PUBLIC_ACTIVATION_VIOLATION"});
+    if(commercialResearch?.safety?.inventOptionsAllowed!==false)issues.push({file:"commercial-research.json",code:"COMMERCIAL_RESEARCH_INVENTION_BOUNDARY_VIOLATION"});
+    if(commercialResearch?.safety?.automaticAffiliateActivationAllowed!==false)issues.push({file:"commercial-research.json",code:"COMMERCIAL_RESEARCH_AFFILIATE_BOUNDARY_VIOLATION"});
+    if(commercialResearch?.safety?.automaticPublicVisibilityAllowed!==false)issues.push({file:"commercial-research.json",code:"COMMERCIAL_RESEARCH_VISIBILITY_BOUNDARY_VIOLATION"});
+    if(commercialResearch?.safety?.paidRankingAllowed!==false)issues.push({file:"commercial-research.json",code:"COMMERCIAL_RESEARCH_RANKING_BOUNDARY_VIOLATION"});
+    if(commercialResearch?.invalid)issues.push({file:"commercial-research.json",code:"INVALID_COMMERCIAL_RESEARCH_ROWS",count:commercialResearch.invalid});
   }
 
   const transport=files["submission-transport-readiness.json"];

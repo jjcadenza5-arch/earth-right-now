@@ -1,3 +1,11 @@
+## 2026-09-24 — Private real travel-option research registry
+- Added a private research registry with five existence-verified real stay options for ERN's current top content-ready destinations: Hyatt House Jersey City, Tiflis Palace, Malliouhana, Chalet Arva and Flåmsbrygga.
+- Each candidate is backed by a current official business/destination page and tied to an existing ERN placeId.
+- The registry explicitly records RESEARCH_ONLY, affiliateStatus NOT_REVIEWED, publicActivationAllowed false, sponsored false, paidPriorityAllowed false and contacted false.
+- Added fail-closed validation, an operations status command, daily operations packet retention, operator-brief visibility and packet-integrity safety checks.
+- Public affiliate-partners.json and travel-offers.json remain empty. Nothing is activated, ranked, contacted, sponsored or presented to visitors.
+- Next commercial step is terms/partner review for these staged real options, not more generic destination rediscovery.
+
 ## 2026-09-24 — Public Atlas currentness gate
 - Tightened the public Living Atlas so map pins are built only from featureEligible sources: HEALTHY, not on featured hold, and within the source-type verification window.
 - Degraded, held and expired mapped sources no longer remain pinned merely because they are not OFFLINE.

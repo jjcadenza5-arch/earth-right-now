@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Private commercial research staging
+- Staged five real, official-site-verified travel options for the top content-ready destinations.
+- Added operations/integrity validation while keeping public affiliate and travel-offer inventory empty.
+
 ## 2026-09-24 — Atlas currentness gate
 - Public Atlas now pins only verified-current feature-eligible sources and aligns its provenance count/copy with the displayed pins.
 
