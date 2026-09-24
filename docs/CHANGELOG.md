@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Operations fail-closed repair
+- Fixed malformed source-availability executable code that had been hidden by tee pipelines.
+- Operations workflow now uses pipefail so upstream npm/validator failures cannot appear green.
+
 ## 2026-09-24 — Immediate operations validation on relevant main changes
 - ERN Operations Check now runs after relevant main changes as well as daily/manual.
 - This validates operations packet generation and network preflights immediately after source/operations changes.

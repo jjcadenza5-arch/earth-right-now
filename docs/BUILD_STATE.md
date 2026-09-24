@@ -1,3 +1,11 @@
+## 2026-09-24 — Operations fail-closed repair
+- Diagnosed a false-green Operations Check from the retained artifact rather than trusting the workflow badge.
+- Fixed a literal \\n sequence in source-availability-observer.js that made the availability module fail to parse.
+- Added set -euo pipefail to every shell run block in Operations Check so npm failures piped through tee now fail the step.
+- Packet-integrity already returned a non-zero exit code on invalid packets; pipefail now preserves that failure instead of tee masking it.
+- The retained artifact had exposed five missing/empty outputs (availability, continuity, trend snapshot, trend delta and operator brief), which should now fail visibly if they recur.
+- Added regression coverage for the syntax repair and fail-closed shell boundary.
+
 ## 2026-09-24 — Immediate operations validation on relevant main changes
 - Operations Check now runs not only daily/manual but also after relevant operational/source changes land on main.
 - Push-trigger paths cover source and observation truth files, embed research/provider-family data, commercial staging/config, src/, scripts/, package.json and the workflow itself.

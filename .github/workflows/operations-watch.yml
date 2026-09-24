@@ -47,6 +47,7 @@ jobs:
             ern-availability-
       - name: Build daily operations packet
         run: |
+          set -euo pipefail
           mkdir -p ern-ops ern-history
           npm --silent run sources:horizon | tee ern-ops/verification-horizon.json
           npm --silent run sources:availability | tee ern-ops/source-availability.json
@@ -76,6 +77,7 @@ jobs:
       - name: Compare operations trend
         if: always()
         run: |
+          set -euo pipefail
           if [ -f ern-ops/trend-current.json ]; then
             if [ -f ern-history/previous.json ]; then
               npm --silent run operations:trend-compare -- ern-history/previous.json ern-ops/trend-current.json | tee ern-ops/trend-delta.json
@@ -87,12 +89,14 @@ jobs:
       - name: Build operator brief
         if: always()
         run: |
+          set -euo pipefail
           if [ -f ern-ops/trend-current.json ]; then
             npm --silent run operations:brief -- ern-ops/trend-current.json ern-ops/trend-delta.json ern-ops/source-availability.json ern-ops/inside-recovery.json ern-ops/embed-research.json ern-ops/inside-playback-horizon.json ern-ops/embed-research-preflight.json ern-ops/source-availability-continuity.json ern-ops/commercial-inventory.json ern-ops/commercial-onboarding-plan.json ern-ops/submission-transport-readiness.json ern-ops/commercial-verification-horizon.json ern-ops/playback-evidence-consistency.json ern-ops/provider-family-research.json ern-ops/operator-review-queue.json | tee ern-ops/operator-brief.md
           fi
       - name: Validate operations packet
         if: always()
         run: |
+          set -euo pipefail
           npm --silent run operations:packet-integrity -- ern-ops | tee ern-ops/packet-integrity.json
       - name: Save latest trend snapshot
         if: always() && hashFiles('ern-history/previous.json') != ''
