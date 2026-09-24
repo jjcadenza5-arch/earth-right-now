@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Provider permission evidence freshness
+- Added a 30-day terms-review horizon for provider-family research.
+- Explore research now explicitly permits only the provider-branded player path when enabled and forbids re-streaming/rebroadcasting.
+- Terms evidence remains advisory; specific camera permission and deployed playback still require review.
+
 ## 2026-09-24 — Minimal human playback review batch
 - Operator review now asks for only enough restoration confirmations to close the current inside-ERN shortfall.
 - Additional candidates remain backlog, while expiring proof renewals still come first.

@@ -59,8 +59,9 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   }
   if(providerFamilyResearch?.items?.length){
     lines.push("## Provider-family research");
-    for(const item of providerFamilyResearch.items.slice(0,5))lines.push(`- ${item.provider||item.id} — ${item.permissionStatus||"permission review"}; ${item.technicalStatus||"technical review"}; next: ${item.nextAction||"manual research"}.`);
-    lines.push("- Research-family entries are not public sources and cannot confirm permission, playback or catalog eligibility.","");
+    for(const item of providerFamilyResearch.items.slice(0,5))lines.push(`- ${item.provider||item.id} — ${item.permissionStatus||"permission review"}; terms ${item.termsEvidenceState||"UNKNOWN"}${Number.isFinite(item.termsAgeDays)?` (${item.termsAgeDays}d)`:""}; ${item.technicalStatus||"technical review"}; next: ${item.nextAction||"manual research"}.`);
+    if(providerFamilyResearch.needsTermsReview)lines.push(`- ${providerFamilyResearch.needsTermsReview} provider-family terms review(s) need refresh.`);
+    lines.push("- Research-family entries are not public sources. ERN uses provider-branded players only; re-streaming/rebroadcasting remains prohibited.","");
   }
   if(research?.next?.length){
     const preflightById=new Map((researchPreflight?.rows||[]).map(x=>[x.id,x]));
@@ -103,6 +104,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   if((playbackEvidenceConsistency?.summary?.issues||0)>0)lines.push("- Resolve playback-evidence ledger/catalog drift before treating new LIVE HERE proof as authoritative.");
   if((snapshot?.insideERN?.readyShortfall||0)>0)lines.push("- Restore strong inside-ERN windows with fresh HUMAN_PLAYBACK evidence.");
   if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
+  if(providerFamilyResearch?.needsTermsReview)lines.push("- Refresh stale provider terms evidence before permission review progresses.");
   if(providerFamilyResearch?.items?.length&&providerFamilyResearch.items.some(x=>x.technicalStatus==="SPECIFIC_EMBED_URL_REQUIRED"))lines.push("- Identify a current specific player URL for promising provider-family research before deployed playback testing.");
   if((snapshot?.maintenance?.sourceRevalidation||0)>0)lines.push("- Work the highest-priority source revalidation items.");
   if((snapshot?.release?.blockers||0)>0)lines.push("- Keep release blockers visible; do not bypass them for presentation polish.");

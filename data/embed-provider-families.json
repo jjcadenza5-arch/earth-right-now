@@ -7,12 +7,20 @@
     "researchUrl": "https://explore.org/livecams/currently-live",
     "termsUrl": "https://explore.org/terms-of-service",
     "verifiedAt": "2026-09-24T00:00:00Z",
-    "permissionEvidence": "Explore.org terms state that deep-linking and embedding are permitted when embedding is enabled, including use of the Explore-branded player. Re-streaming/rebroadcasting is not treated as the same permission and remains prohibited.",
-    "permissionStatus": "PROMISING_SPECIFIC_PLAYER_REQUIRES_REVIEW",
+    "permissionEvidence": "Explore.org Terms of Service permit deep-linking and embedding and state that, when enabled, users may embed the Explore-branded player. Community Guidelines separately prohibit re-streaming or rebroadcasting live streams. ERN research therefore permits only the provider-branded player path, never stream copying/restreaming.",
+    "permissionStatus": "TERMS_SUPPORT_ENABLED_BRANDED_PLAYER_SPECIFIC_PLAYER_REQUIRES_REVIEW",
     "technicalStatus": "CANDIDATE_PLAYER_URL_STAGED",
     "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN",
     "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
-    "nextAction": "RUN_TECHNICAL_PREFLIGHT_THEN_DEPLOYED_HUMAN_PLAYBACK_AND_SPECIFIC_PERMISSION_REVIEW",
-    "networkFamily": "explore.org"
+    "nextAction": "DEPLOYED_HUMAN_PLAYBACK_THEN_CONFIRM_SPECIFIC_PLAYER_IS_ENABLED_FOR_EMBED_USE",
+    "networkFamily": "explore.org",
+    "termsEffectiveAt": "2026-01-23",
+    "termsReviewedAt": "2026-09-24T14:30:00Z",
+    "communityGuidelinesUrl": "https://explore.org/community-guidelines",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "WHEN_ENABLED",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false
   }
 ]

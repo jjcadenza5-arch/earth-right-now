@@ -1,3 +1,11 @@
+## 2026-09-24 — Provider permission evidence freshness and anti-restream boundary
+- Re-reviewed Explore.org's current Terms of Service (effective January 23, 2026) and Community Guidelines and recorded the distinction between provider-branded embedding and prohibited re-streaming/rebroadcasting.
+- Explore research now records termsEffectiveAt, termsReviewedAt, the Community Guidelines URL, PROVIDER_BRANDED_PLAYER_ONLY usage, WHEN_ENABLED condition, required provider branding and restreamAllowed=false.
+- Permission status is more precise: terms support an enabled Explore-branded player, but the specific staged Brooks Falls player still requires explicit review and deployed human playback before any promotion.
+- Provider-family research now classifies terms evidence CURRENT / STALE / MISSING with a 30-day research review horizon and surfaces stale/missing evidence in the operator brief.
+- Unsafe usage modes, removed provider branding or any restream allowance fail the research safety model.
+- No source permission or catalog promotion is granted by this change.
+
 ## 2026-09-24 — Minimal human playback review batch
 - Reduced the operator review burden to the actual inside-ERN target gap instead of showing ten equally actionable restoration cards.
 - The queue now reports current ready/target/shortfall and recommends only enough restoration confirmations to close that shortfall, while still placing any expiring renewals first.
