@@ -1,3 +1,10 @@
+## 2026-09-24 — Official single-site Atlas mappings
+- Added PLACE_REFERENCE pins for Queenstown Airport and Georgia Aquarium using coordinates exposed by map links from each destination's official site.
+- Revalidated Queenstown Airport's close-to-live webcam surface and Georgia Aquarium's current Live Cams/site-location surface.
+- Coordinate provenance points back to the official contact/directions page rather than an unsourced geocode.
+- Truth, permission and playback semantics remain unchanged.
+- Added regression coverage for both mappings.
+
 ## 2026-09-24 — Boston Harbor Islands reference mapping
 - Revalidated the National Park Service Boston Harbor Islands webcam surface: the current camera set is on Boston Light / Little Brewster Island and individual views are active with one-minute refreshes.
 - Added a PLACE_REFERENCE pin using the NPS-published Little Brewster Island reference coordinates rather than guessing a generic Boston Harbor centroid.
