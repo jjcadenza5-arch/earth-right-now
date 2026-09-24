@@ -1,3 +1,10 @@
+## 2026-09-24 — Inside-ERN playback evidence horizon
+- Added a 24-hour horizon for embedded HUMAN_PLAYBACK evidence so ERN can see which LIVE HERE proofs are current, due within 12h/6h, expired, missing or intentionally held.
+- The horizon is retained in the daily operations packet as inside-playback-horizon.json and is summarized in the private operator brief.
+- Expiring evidence creates a proactive renewal reminder; it does not reverify anything automatically.
+- Featured-hold sources are separated from the urgent renewal lane.
+- Added regression coverage for horizon states, ordering, workflow wiring and operator-brief warnings.
+
 ## 2026-09-24 — Actionable daily operator brief
 - Extended the private daily operator brief with the top inside-ERN restoration candidates, current blocker lane, and second-provider research candidates.
 - The brief now names specific sources/actions from the recovery and research queues rather than only stating broad goals.
