@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Atlas mapping tranche I
+- Mapped five previously unmapped single-location sources from explicit public coordinate evidence.
+- Kept each as PLACE_REFERENCE rather than an exact-camera claim.
+- Preserved source truth/playback semantics and added regression coverage.
+
 ## 2026-09-24 — Illustrative visual truth cue
 - Marked ERN-generated decorative visuals as illustrative in Hero, Watch and compact destination cards.
 - Kept source truth labels independent: the source can still be live/current while the shown artwork is decorative.

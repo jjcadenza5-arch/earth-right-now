@@ -1,3 +1,10 @@
+## 2026-09-24 — Atlas mapping tranche I
+- Added conservative PLACE_REFERENCE coordinates to five previously unmapped single-location sources: Volcán Tajogaite, Sasagawa Nagare, Waikīkī Beach, Cold Lake Marina and Pleasant Beach Hotel/Lake Ontario.
+- Tajogaite uses Government of the Canary Islands coordinates; Sasagawa uses its public Wikidata coordinate record; Waikīkī, Cold Lake Marina and Pleasant Beach use explicit OpenStreetMap feature coordinates.
+- These are place references, not exact camera-hardware claims.
+- Existing source truth, playback and permission semantics were not changed.
+- Added regression coverage for all five mappings.
+
 ## 2026-09-24 — Illustrative visual truth cue
 - ERN's generated scenic artwork is now explicitly marked as illustrative wherever it appears in the Hero, Watch Earth cards and compact destination/search cards.
 - A source may still truthfully be LIVE HERE, LIVE VIDEO, CURRENT IMAGE or LIVE ↗; the cue describes only the decorative visual shown by ERN when no safe source thumbnail is available.
