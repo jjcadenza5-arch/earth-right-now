@@ -1770,7 +1770,12 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": null,
-    "story": "A Sea of Japan coastal view along Sasagawa Nagare, highlighting the shoreline, water and changing light."
+    "story": "A Sea of Japan coastal view along Sasagawa Nagare, highlighting the shoreline, water and changing light.",
+    "lat": 38.374444,
+    "lon": 139.458139,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q11641442",
+    "coordinateNote": "Public Wikidata coordinate record for Roadside Station Sasagawa-nagare, sourced from the Japanese Wikipedia entry."
   },
   {
     "id": "chihshang-paradise-road",
@@ -1859,7 +1864,12 @@
     "checkedAt": "2026-09-20T07:30:00+07:00",
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": null,
-    "story": "A Lake Ontario shoreline view at Pleasant Beach for water, weather and lakeside conditions."
+    "story": "A Lake Ontario shoreline view at Pleasant Beach for water, weather and lakeside conditions.",
+    "lat": 43.31788,
+    "lon": -76.70581,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.openstreetmap.org/way/827770432",
+    "coordinateNote": "OpenStreetMap feature coordinates for Pleasant Beach Hotel in Sterling, New York."
   },
   {
     "id": "maui-hale-pau-hana",
@@ -1951,7 +1961,12 @@
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": "VISITOR_PLAYBACK_REJECTED_2026-09-20",
     "lastFailedCheck": "2026-09-20T12:34:00+07:00",
-    "story": "A Waikiki South Shore beach-and-city view; ERN keeps it lower tier while playback quality is being reverified."
+    "story": "A Waikiki South Shore beach-and-city view; ERN keeps it lower tier while playback quality is being reverified.",
+    "lat": 21.27406,
+    "lon": -157.82628,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.openstreetmap.org/way/218679862",
+    "coordinateNote": "OpenStreetMap feature coordinates for Waikīkī Beach."
   },
   {
     "id": "cold-lake-marina",
@@ -1980,7 +1995,12 @@
     "lastSuccessfulCheck": "2026-09-20T07:30:00+07:00",
     "failureReason": "VISITOR_PLAYBACK_REJECTED_2026-09-20",
     "lastFailedCheck": "2026-09-20T12:34:00+07:00",
-    "story": "A lakeside marina view in Cold Lake, Alberta; ERN keeps it lower tier while playback quality is being reverified."
+    "story": "A lakeside marina view in Cold Lake, Alberta; ERN keeps it lower tier while playback quality is being reverified.",
+    "lat": 54.46578,
+    "lon": -110.17009,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.openstreetmap.org/way/399682010",
+    "coordinateNote": "OpenStreetMap feature coordinates for Cold Lake Marina."
   },
   {
     "id": "st-johns-harbour",
@@ -2373,7 +2393,12 @@
     "rightsBasis": "Current provider page explicitly describes its live webcam with a direct Tajogaite view. ERN links to the provider page only and does not infer third-party embedding permission.",
     "checkedAt": "2026-09-23T07:10:00+07:00",
     "lastSuccessfulCheck": "2026-09-23T07:10:00+07:00",
-    "failureReason": null
+    "failureReason": null,
+    "lat": 28.612778,
+    "lon": -17.866111,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www3.gobiernodecanarias.org/medusa/wiki/index.php?title=Volc%C3%A1n_de_Tajogaite_o_Cabezavaca",
+    "coordinateNote": "Government of the Canary Islands reference coordinates for Volcán de Tajogaite."
   },
   {
     "id": "rio-copacabana-earthcam",
