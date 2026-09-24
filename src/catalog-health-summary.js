@@ -1,1 +1,20 @@
-import { recencyState } from "./source-recency.js";import { playbackCapability } from "./playback-capability.js";import { currentSource } from "./discovery-eligibility.js";export function catalogHealthSummary(sources){const out={total:sources.length,healthy:0,degraded:0,offline:0,unknown:0,current:0,stale:0,expired:0,insideERN:0,currentInsideERN:0,external:0,unavailable:0};for(const s of sources){const h=(s.health||"UNKNOWN").toLowerCase();if(h in out)out[h]++;const r=recencyState(s);if(currentSource(s))out.current++;else if(r==="STALE_CHECK")out.stale++;else if(r==="EXPIRED_CHECK")out.expired++;const a=playbackCapability(s).action;if(a==="PLAY"){out.insideERN++;if(currentSource(s))out.currentInsideERN++}else if(a==="EXTERNAL")out.external++;else out.unavailable++}return out}
+import { recencyState } from "./source-recency.js";
+import { playbackCapability } from "./playback-capability.js";
+import { currentSource } from "./discovery-eligibility.js";
+import { embedPlaybackCurrent } from "./embed-playback-current.js";
+
+export function catalogHealthSummary(sources){
+ const out={total:sources.length,healthy:0,degraded:0,offline:0,unknown:0,current:0,stale:0,expired:0,insideERN:0,configuredInsideERN:0,currentInsideERN:0,provenEmbeddedInsideERN:0,currentImageInsideERN:0,external:0,unavailable:0};
+ for(const s of sources){
+  const h=(s.health||"UNKNOWN").toLowerCase();if(h in out)out[h]++;
+  const r=recencyState(s);if(currentSource(s))out.current++;else if(r==="STALE_CHECK")out.stale++;else if(r==="EXPIRED_CHECK")out.expired++;
+  const a=playbackCapability(s).action;
+  if(a==="PLAY"){
+   out.insideERN++;out.configuredInsideERN++;
+   const current=currentSource(s);
+   if(s.playback==="EMBED"&&current&&embedPlaybackCurrent(s)){out.provenEmbeddedInsideERN++;out.currentInsideERN++}
+   else if(s.playback==="IMAGE_REFRESH"&&current){out.currentImageInsideERN++;out.currentInsideERN++}
+  }else if(a==="EXTERNAL")out.external++;else out.unavailable++;
+ }
+ return out
+}
