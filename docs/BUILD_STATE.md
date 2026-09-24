@@ -1,3 +1,12 @@
+## 2026-09-24 — Automated public-source availability observer
+- Added a read-only daily observer for a small prioritized set of public provider/source pages.
+- The plan is capped at 24 sources, no more than four requests per host, four concurrent requests, and seven-second request timeouts.
+- Localhost/private-network targets are rejected before probing.
+- Evidence is deliberately narrow: PAGE_REACHABLE means only that the provider page responded; it never proves that a camera is live or changes source truth automatically.
+- HTTP 403/429 is ACCESS_BLOCKED/inconclusive, 404/410 is PAGE_MISSING, 5xx is TEMPORARY_ERROR, and network/timeout failures stay observational.
+- The report is retained as source-availability.json in the daily operations packet.
+- Added regression coverage for host caps, private-network rejection, outcome classification and workflow wiring.
+
 ## 2026-09-24 — Daily ERN operations trend layer
 - Added a compact versioned operations snapshot covering catalog health/currentness, Watch Earth balance, inside-ERN readiness, provider concentration, release blockers and maintenance debt.
 - Daily operations now restore the most recent prior trend snapshot when available, compare it with the current snapshot, and emit a trend delta classified as BASELINE, IMPROVING, REGRESSING, MIXED or UNCHANGED.
