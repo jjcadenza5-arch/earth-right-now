@@ -51,6 +51,7 @@ jobs:
           npm --silent run inside:research | tee ern-ops/embed-research.json
           npm --silent run inside:research-preflight | tee ern-ops/embed-research-preflight.json
           npm --silent run business:inventory | tee ern-ops/commercial-inventory.json
+          npm --silent run business:onboarding-plan | tee ern-ops/commercial-onboarding-plan.json
           npm --silent run operations:trend-snapshot -- ern-ops/source-availability.json | tee ern-ops/trend-current.json
           npm --silent run operations:status | tee ern-ops/operations-status.json
       - name: Compare operations trend
@@ -68,7 +69,7 @@ jobs:
         if: always()
         run: |
           if [ -f ern-ops/trend-current.json ]; then
-            npm --silent run operations:brief -- ern-ops/trend-current.json ern-ops/trend-delta.json ern-ops/source-availability.json ern-ops/inside-recovery.json ern-ops/embed-research.json ern-ops/inside-playback-horizon.json ern-ops/embed-research-preflight.json ern-ops/source-availability-continuity.json ern-ops/commercial-inventory.json | tee ern-ops/operator-brief.md
+            npm --silent run operations:brief -- ern-ops/trend-current.json ern-ops/trend-delta.json ern-ops/source-availability.json ern-ops/inside-recovery.json ern-ops/embed-research.json ern-ops/inside-playback-horizon.json ern-ops/embed-research-preflight.json ern-ops/source-availability-continuity.json ern-ops/commercial-inventory.json ern-ops/commercial-onboarding-plan.json | tee ern-ops/operator-brief.md
           fi
       - name: Validate operations packet
         if: always()

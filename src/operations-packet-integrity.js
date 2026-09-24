@@ -13,6 +13,7 @@ const requiredJson=[
  "embed-research.json",
  "embed-research-preflight.json",
  "commercial-inventory.json",
+ "commercial-onboarding-plan.json",
  "trend-current.json",
  "trend-delta.json",
  "operations-status.json"
@@ -71,6 +72,15 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(commercial?.safety?.undisclosedAffiliateLinksAllowed!==false)issues.push({file:"commercial-inventory.json",code:"COMMERCIAL_DISCLOSURE_BOUNDARY_VIOLATION"});
     if(commercial?.safety?.paidRankingAllowed!==false)issues.push({file:"commercial-inventory.json",code:"COMMERCIAL_RANKING_BOUNDARY_VIOLATION"});
     if(commercial.stage!=="ACTIVE"&&commercial.publicActivationAllowed!==false)issues.push({file:"commercial-inventory.json",code:"PREMATURE_COMMERCIAL_ACTIVATION"});
+  }
+
+  const onboarding=files["commercial-onboarding-plan.json"];
+  if(onboarding){
+    if(onboarding?.safety?.publicRankingAffected!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_PUBLIC_RANKING_BOUNDARY_VIOLATION"});
+    if(onboarding?.safety?.demandForecast!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_DEMAND_FORECAST_BOUNDARY_VIOLATION"});
+    if(onboarding?.safety?.revenueForecast!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_REVENUE_FORECAST_BOUNDARY_VIOLATION"});
+    if(onboarding?.safety?.paidPriorityAllowed!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_PAID_PRIORITY_BOUNDARY_VIOLATION"});
+    if(onboarding?.safety?.inventOffersAllowed!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_INVENTION_BOUNDARY_VIOLATION"});
   }
 
   const trend=files["trend-current.json"];
