@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Commercial registry foundation
+- Added empty verified affiliate-partner and travel-offer staging registries.
+- Added commercial inventory status, daily operations reporting and safety validation.
+- Public ERN remains non-commercial until real reviewed inventory exists; payment never buys ranking.
+
 ## 2026-09-24 — Daily operations packet integrity preflight
 - Added packet-integrity.json validation for required daily diagnostics and non-mutating safety boundaries.
 - Integrity failures are fail-visible while retained artifacts still preserve evidence.
