@@ -458,7 +458,7 @@ function renderAtlasBeyond(){
 
 function renderMap(){
  const a=$("#atlas");a.querySelectorAll(".map-pin").forEach(x=>x.remove());let count=0,insideCount=0,externalCount=0,localCount=0;
- const grouped=groupByPlace(state.sources.filter(s=>s.health!=="OFFLINE"&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))));
+ const grouped=groupByPlace(state.sources.filter(s=>featureEligible(s)&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))));
  for(const group of grouped){
    const eligible=group.filter(s=>{const inside=currentInside(s);if(state.mapFilter==="local")return false;if(state.category!=="all"&&state.category!=="random"&&!categoryMatch(s,state.category))return false;if(state.mapFilter==="inside"&&!inside)return false;if(state.mapFilter==="external"&&inside)return false;if(state.mapFilter==="daylight"&&!isDay(s))return false;return true});
    if(!eligible.length)continue;const s=[...eligible].sort((x,y)=>baseScore(y)-baseScore(x))[0],lat=Number(s.lat),lon=Number(s.lon),inside=currentInside(s);
@@ -469,7 +469,7 @@ function renderMap(){
    const p=document.createElement("a");p.className="map-pin local";p.href=safeExternalUrl(x.url);p.target="_blank";p.rel="noopener noreferrer";p.title=x.name+" — reviewed local place";p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";a.append(p);count++;localCount++;
  }
  document.querySelectorAll(".atlas-filter").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter===state.mapFilter));
- const basisCount=state.sources.filter(s=>s.health!=="OFFLINE"&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))&&s.coordinateBasis).length;const categoryContext=state.category!=="all"&&state.category!=="random"?` · category: ${state.category}`:"";$("#mapNote").textContent=`${count} mapped places shown${categoryContext} · ${insideCount} play inside ERN · ${externalCount} provider views${localCount?" · "+localCount+" reviewed local place"+(localCount===1?"":"s"):""} · ${basisCount} pins carry explicit coordinate provenance. Pin positions can be place-level references unless an exact camera position is documented.`;renderAtlasBeyond();
+ const basisCount=state.sources.filter(s=>featureEligible(s)&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))&&s.coordinateBasis).length;const categoryContext=state.category!=="all"&&state.category!=="random"?` · category: ${state.category}`:"";$("#mapNote").textContent=`${count} verified-current mapped places shown${categoryContext} · ${insideCount} play inside ERN · ${externalCount} provider views${localCount?" · "+localCount+" reviewed local place"+(localCount===1?"":"s"):""} · ${basisCount} pins carry explicit coordinate provenance. Pin positions can be place-level references unless an exact camera position is documented.`;renderAtlasBeyond();
 }
 function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}
 function distanceKm(a,b){

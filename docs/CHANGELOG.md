@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-24 — Atlas currentness gate
+- Public Atlas now pins only verified-current feature-eligible sources and aligns its provenance count/copy with the displayed pins.
+
 ## 2026-09-24 — Guide live-now intelligence
 - Public Guide now prioritizes verified LIVE HERE windows for current/live requests and understands explicit happening/activity intent.
 

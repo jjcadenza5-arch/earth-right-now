@@ -1,3 +1,10 @@
+## 2026-09-24 — Public Atlas currentness gate
+- Tightened the public Living Atlas so map pins are built only from featureEligible sources: HEALTHY, not on featured hold, and within the source-type verification window.
+- Degraded, held and expired mapped sources no longer remain pinned merely because they are not OFFLINE.
+- Coordinate-provenance counts now use the same current eligibility gate as the pins they describe.
+- Updated map copy to state that the count represents verified-current mapped places.
+- Intentional dynamic/multi-site/unmapped sources remain available through the existing Atlas Beyond section rather than receiving invented pins.
+
 ## 2026-09-24 — Public Guide current-moment priority
 - Strengthened the public ERN Guide's "right now" behavior without changing source truth.
 - Current/live requests now strongly prefer inside-ERN windows whose playback proof is still current, while currentTruthClaim remains the mandatory filter.
