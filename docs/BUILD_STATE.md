@@ -1,3 +1,10 @@
+## 2026-09-24 — Watch Earth inside-ERN priority parity
+- Aligned the backend Watch Earth builder with the visitor app's product principle: reserve up to five fresh/current inside-ERN windows before filling the rest of the journey with external views.
+- The reserve still passes every existing truth, health, permission, near-now and recency gate; stale or degraded embeds are never promoted merely because they can play inside ERN.
+- Country/place diversity remains enforced, and downstream provider/delivery diversity still limits concentration.
+- This creates one consistent source-selection direction across operations and the public experience while the inside-ERN catalog is rebuilt.
+- Added regression coverage with deliberately lower-scoring inside windows to prove product priority without bypassing eligibility.
+
 ## 2026-09-24 — Public currentness label boundary
 - Extended ERN's strict verification windows beyond Watch Earth into Search, My Earth, Destinations and other shared card surfaces.
 - A source whose verification window has expired remains discoverable but now reads RECHECK DUE instead of LIVE HERE / LIVE ↗ / CURRENT IMAGE.
