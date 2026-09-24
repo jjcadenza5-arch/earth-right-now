@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Inside-ERN playback evidence horizon
+- Added current/due/expired/missing/held states for embedded playback proof.
+- Added the horizon to the daily operations packet and operator brief.
+- Evidence expiry remains read-only and never revalidates a source automatically.
+
 ## 2026-09-24 — Actionable daily operator brief
 - Added named restoration candidates, blocker sources and second-provider research items to operator-brief.md.
 - Kept the brief read-only and evidence-gated.
