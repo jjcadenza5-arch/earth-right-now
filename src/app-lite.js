@@ -191,11 +191,24 @@ function scenicPoster(s){
  wrap.innerHTML='<span class="scene-sun"></span><span class="scene-back"></span><span class="scene-front"></span>';
  return wrap;
 }
+function heroLivePreviewAllowed(s){
+ const desktop=globalThis.matchMedia?.("(min-width:1000px)")?.matches===true;
+ const saveData=globalThis.navigator?.connection?.saveData===true;
+ return!!(s&&desktop&&!saveData&&document.visibilityState==="visible"&&s.playback==="EMBED"&&currentTruthClaim(s)&&cleanUrl(s.embedUrl));
+}
 function renderHero(s){
  state.selected=s;if(!s)return;const mount=$("#heroLive");mount.classList.add("is-changing");
- setTimeout(()=>{mount.replaceChildren();mount.style.background=generatedBackground(s);const img=cleanUrl(s.thumbnailUrl);mount.dataset.visualKind=img?"source":"illustrative";
-  if(img){const el=document.createElement("img");el.src=img;el.alt="";el.decoding="async";el.onerror=()=>{el.remove();mount.dataset.visualKind="illustrative";mount.append(scenicPoster(s))};mount.append(el)}
-  else{mount.append(scenicPoster(s))}
+ setTimeout(()=>{
+  mount.replaceChildren();mount.style.background=generatedBackground(s);
+  const img=cleanUrl(s.thumbnailUrl),fallback=img?document.createElement("img"):scenicPoster(s);
+  if(img){fallback.src=img;fallback.alt="";fallback.decoding="async";fallback.onerror=()=>{if(!fallback.isConnected)return;fallback.remove();mount.dataset.visualKind="illustrative";mount.prepend(scenicPoster(s))}}
+  mount.dataset.visualKind=img?"source":"illustrative";mount.append(fallback);
+  if(heroLivePreviewAllowed(s)){
+   const frame=document.createElement("iframe");frame.src=cleanUrl(s.embedUrl);frame.title=s.title+" live preview";frame.loading="eager";frame.referrerPolicy="strict-origin-when-cross-origin";frame.allow="fullscreen; picture-in-picture";frame.tabIndex=-1;frame.setAttribute("aria-hidden","true");
+   frame.onload=()=>{if(!frame.isConnected)return;if(fallback.isConnected)fallback.remove();mount.dataset.visualKind="live-preview"};
+   frame.onerror=()=>{if(frame.isConnected)frame.remove();if(!fallback.isConnected){mount.dataset.visualKind="illustrative";mount.prepend(scenicPoster(s))}};
+   mount.append(frame);
+  }
   $("#heroTitle").textContent=s.title;$("#heroMeta").textContent=[s.region,s.country,momentSignal(s).label,localTime(s)].filter(Boolean).join(" · ");$("#heroTruth").textContent=publicTruth(s);$("#heroLocation").dataset.truth=truthTone(s);$("#heroDot").dataset.truth=truthTone(s);mount.classList.remove("is-changing");
  },180);
 }
