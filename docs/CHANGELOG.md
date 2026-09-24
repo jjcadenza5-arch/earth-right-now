@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Atlas coordinate provenance tranche H
+- Added conservative place-level provenance to seven existing mapped provider destinations.
+- Preserved every map position and avoided exact-camera claims.
+- Added regression coverage for the tranche.
+
 ## 2026-09-24 — Official source refresh + Atlas provenance tranche G
 - Revalidated six current provider surfaces across Austria, Norway, South Africa, New York and Tbilisi.
 - Added explicit freshness evidence and conservative coordinate provenance without moving pins.
