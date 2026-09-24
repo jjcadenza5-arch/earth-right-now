@@ -1,3 +1,13 @@
+## 2026-09-24 — Private commercial onboarding planner
+- Added a private editorial planner that identifies ERN places with strong current content but no current verified travel offer.
+- Scoring uses ERN content readiness only: source quality, moment value, freshness and current healthy window count.
+- Existing verified-offer places, featured-hold sources, unhealthy/stale sources and low-quality sources are excluded.
+- Country caps keep the research queue geographically diversified instead of concentrating on one market.
+- The planner explicitly does not estimate visitor demand, conversion, revenue or sponsor value, and cannot affect public ranking or allow paid priority.
+- The daily operations packet now includes commercial-onboarding-plan.json and the private operator brief names the top destinations to research for real travel options.
+- Packet integrity enforces the no-public-ranking, no-demand-forecast, no-revenue-forecast, no-paid-priority and no-invented-offer boundaries.
+- Added regression coverage for coverage exclusion, hold exclusion, geographic diversity, operator-brief wiring and safety validation.
+
 ## 2026-09-24 — Verified travel-offer runtime readiness
 - Wired the existing Before You Go Stay / Eat / Things to do actions to prefer a current verified travel offer when one exists for the selected ERN place.
 - Empty inventory preserves the existing Google-search fallbacks exactly, so there is no visitor-facing commercial change today.
