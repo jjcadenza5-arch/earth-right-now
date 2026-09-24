@@ -1,3 +1,10 @@
+## 2026-09-24 — Visitor currentness-policy sweep
+- Removed the remaining generic 21-day and 7-day currentness shortcuts from the visitor app.
+- Quick-search country suggestions now draw from feature-eligible sources using the same source-type verification windows as Watch Earth.
+- ERN Guide "current" intent now uses the shared currentTruthClaim boundary rather than a generic seven-day cutoff.
+- Viewer confidence now becomes stale as soon as the source-specific verification window expires, not only after 21 days.
+- Added regression coverage that rejects the legacy cutoffs from app-lite.
+
 ## 2026-09-24 — Browser/backend Watch Earth quality parity
 - Aligned the public Watch Earth filter with the backend experience gate.
 - Top 20 candidates now require quality >=80, moment >=70 and no known visitor-playback rejection/stale-recording/broken-embed reason in addition to current health/truth checks.
