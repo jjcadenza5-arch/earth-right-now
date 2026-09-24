@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Daily operations packet integrity preflight
+- Added packet-integrity.json validation for required daily diagnostics and non-mutating safety boundaries.
+- Integrity failures are fail-visible while retained artifacts still preserve evidence.
+
 ## 2026-09-24 — Availability continuity memory
 - Added per-source daily availability continuity with persistent-missing, repeated-access, transient and recovery states.
 - Repeated evidence creates manual-review incidents only; no automatic source-health mutation.
