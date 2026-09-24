@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-24 — Watch Earth inside-ERN priority parity
+- Reserved up to five fresh/current inside-ERN windows in the backend Watch Earth builder before external fill.
+- Kept all existing truth/currentness/diversity gates intact.
+- Added regression coverage for the priority rule.
+
 ## 2026-09-24 — Public currentness label boundary
 - Gated live/current labels across shared visitor surfaces by ERN verification windows.
 - Expired sources remain discoverable but show RECHECK DUE instead of a fresh-live claim.
