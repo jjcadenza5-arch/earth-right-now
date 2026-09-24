@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-24 — Browser/backend Watch Earth quality parity
+- Applied the backend Watch Earth quality/moment/playback-rejection gate to the browser selection path.
+- Preserved quality-over-quantity when the current catalog is smaller than 20 strong windows.
+
 ## 2026-09-24 — Inside-ERN restoration priority
 - Added a five-window ready target and shortfall metric.
 - Split healthy high-value restoration candidates from degraded/offline blockers.
