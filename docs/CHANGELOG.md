@@ -1,3 +1,7 @@
+## 2026-09-25 — Revalidation action/defer alignment
+- Operations now separates actionable revalidation from curation holds, known playback-reprove deferrals and provider-offline deferrals instead of presenting all maintenance debt as “next”.
+- Added regression coverage for the current 0-actionable / 7-deferred state.
+
 # Changelog
 
 ## 2026-09-25 — Provider observation renewal history
