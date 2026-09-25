@@ -1,3 +1,10 @@
+## 2026-09-25 — Fresh human playback renewals applied; Jelly Cam remains blocked
+- Applied deployed-origin HUMAN_PLAYBACK confirmations from review batch `3ec5f713ce5daf15` for Metung — Gippsland Lakes at 2026-09-25T05:54:31.950Z and Ponte di Legno — Adamello at 2026-09-25T05:54:19.434Z.
+- Added both observations to the historical provider-observation ledger and advanced the matching catalog `playbackVerifiedAt` timestamps; no truth, permission or health state was upgraded beyond the observed playback evidence.
+- Recorded Monterey Bay Aquarium Jelly Cam as `HUMAN_PLAYBACK_FAILED` at 2026-09-25T05:54:40.750Z from the same deployed review batch.
+- Jelly Cam stays RESEARCH_ONLY / BLOCKED_PLAYBACK_FAILED. This failure is candidate-specific and does not imply Monterey Bay Aquarium or YouTube embeddings fail generally.
+- The next unfailed Monterey research fallback remains Open Sea Cam; promotion still requires a separate deployed human playback confirmation.
+
 ## 2026-09-25 — Operator playback renewals no longer depend on a fresh deploy
 - Operations surfaced two current HUMAN_PLAYBACK proofs due within ~12 hours: Ponte di Legno — Adamello and Metung — Gippsland Lakes.
 - Fixed the review-page aging problem without adding frequent scheduled Pages rebuilds: the operator review queue now exposes the current verified inside-ERN set as an evergreen renewable set.
