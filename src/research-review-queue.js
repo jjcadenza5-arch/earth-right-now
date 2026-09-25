@@ -1,6 +1,38 @@
 function rows(report){return Array.isArray(report?.items)?report.items:[]}
 function preflightById(report){return new Map((report?.rows||[]).map(x=>[String(x.id),x]))}
 function familyByProvider(report){return new Map(rows(report).filter(x=>x?.provider).map(x=>[String(x.provider),x]))}
+function normalized(value){return String(value||"").trim()}
+function stagedProviderKeys(candidates=[]){
+  const keys=new Set();
+  for(const c of candidates||[]){
+    const p=normalized(c?.provider);if(p)keys.add(p);
+  }
+  return keys;
+}
+function providerPreparation(providerFamilyReport,candidates=[]){
+  const staged=stagedProviderKeys(candidates);
+  return rows(providerFamilyReport).filter(f=>{
+    if(f?.candidateEligible!==true)return false;
+    if(!String(f?.technicalStatus||"").includes("GENERATED_"))return false;
+    const aliases=[normalized(f?.provider),...(f?.discoveryProviderAliases||[]).map(normalized)].filter(Boolean);
+    return !aliases.some(x=>staged.has(x));
+  }).map(f=>({
+    id:f.id,
+    provider:f.provider,
+    familyLabel:f.familyLabel,
+    usageMode:f.usageMode,
+    technicalStatus:f.technicalStatus,
+    permissionStatus:f.permissionStatus,
+    nextAction:f.nextAction,
+    familyTermsState:f.termsEvidenceState,
+    familySafeUsage:f.safeUsage===true,
+    familyNetwork:f.networkFamily||null,
+    requiredHumanAction:"NONE_YET_PREPARE_EXACT_PROVIDER_GENERATED_TARGET",
+    permissionStillRequired:true,
+    playbackStillRequired:true,
+    promotionAllowed:false
+  })).sort((a,b)=>String(a.provider).localeCompare(String(b.provider)));
+}
 
 export function researchReviewQueue(candidates=[],{preflightReport=null,providerFamilyReport=null,primaryCount=1}={}){
   const preflight=preflightById(preflightReport),families=familyByProvider(providerFamilyReport);
@@ -32,6 +64,7 @@ export function researchReviewQueue(candidates=[],{preflightReport=null,provider
     };
   }).sort((a,b)=>b.reviewPriority-a.reviewPriority||String(a.provider).localeCompare(String(b.provider))||String(a.id).localeCompare(String(b.id)));
 
+  const preparation=providerPreparation(providerFamilyReport,candidates);
   const count=Math.max(0,Math.min(Number(primaryCount)||0,ranked.length));
   const primary=ranked.slice(0,count);
   const alternates=[
@@ -46,8 +79,8 @@ export function researchReviewQueue(candidates=[],{preflightReport=null,provider
       technicalOutcome:"HUMAN_PLAYBACK_FAILED"
     }))
   ];
-  const exhausted=ranked.length===0&&(candidates||[]).length>0;
-  const state=exhausted?"EXHAUSTED_RESEARCH_NEW_PROVIDER":primary.length?"HUMAN_REVIEW_READY":"NO_CANDIDATES";
+  const exhausted=ranked.length===0&&preparation.length===0&&(candidates||[]).length>0;
+  const state=primary.length?"HUMAN_REVIEW_READY":preparation.length?"PROVIDER_PREPARATION_READY":exhausted?"EXHAUSTED_RESEARCH_NEW_PROVIDER":"NO_CANDIDATES";
   return{
     generatedAt:new Date().toISOString(),
     state,
@@ -58,15 +91,19 @@ export function researchReviewQueue(candidates=[],{preflightReport=null,provider
     reviewable:ranked.length,
     primaryCount:primary.length,
     primary,
+    preparation,
     alternates,
-    nextAction:exhausted?"RESEARCH_NEW_PROVIDER_FAMILY":primary.length?"RUN_DEPLOYED_HUMAN_PLAYBACK":"STAGE_PROVIDER_RESEARCH",
+    nextAction:primary.length?"RUN_DEPLOYED_HUMAN_PLAYBACK":preparation.length?"PREPARE_PROVIDER_GENERATED_TARGET":exhausted?"RESEARCH_NEW_PROVIDER_FAMILY":"STAGE_PROVIDER_RESEARCH",
     safety:{
       catalogPromotionAllowed:false,
       automaticPermissionApprovalAllowed:false,
       automaticPlaybackConfirmationAllowed:false,
-      failedCandidateRetestAllowed:false
+      failedCandidateRetestAllowed:false,
+      automaticWidgetGenerationAllowed:false
     },
-    note:exhausted
+    note:preparation.length&&!primary.length
+      ?"A provider-generated integration path is documented, but the exact provider-generated target/code has not been staged. Prepare that exact target before requesting deployed rendering/playback review; do not infer permission or promote a source from family-level research."
+      :exhausted
       ?"All staged candidates have failed deployed HUMAN_PLAYBACK review. Do not recycle them as active work. Research a genuinely new provider family or materially changed target before another human playback request."
       :"Review the strongest provider-diversification candidates in the current batch. Failed candidates remain deferred until their target/provider materially changes. Technical readiness and current terms evidence never confirm permission, playback or catalog eligibility."
   };
