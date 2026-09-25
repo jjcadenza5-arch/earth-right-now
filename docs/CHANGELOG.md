@@ -1,3 +1,8 @@
+## 2026-09-25 — Make Guide AI rate identity server-owned
+- Removed client session fallback from the rate-limit identity path.
+- Production requires a server-derived pseudonymous subject and forbids raw network identifier storage.
+- Focused Guide CI is green; public Guide remains deterministic.
+
 ## 2026-09-25 — Bound and cancel future Guide AI model calls
 - Added a 12-second default model timeout with AbortSignal cancellation and deterministic fallback.
 - Production activation now requires verified model-cancellation support; deployment remains off.
