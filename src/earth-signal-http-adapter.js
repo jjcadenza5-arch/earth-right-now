@@ -47,7 +47,7 @@ export async function earthSignalHttpRequest(request={}, context={}){
     if(mode!=="CONTRIBUTION_ENABLED")return response(503,{ok:false,mode:"READ_ONLY",reason:"EARTH_SIGNALS_NOT_ACTIVATED"});
     try{
       const tx=await reportEarthSignalService({...request.body,signalId:reportMatch[1]},context);
-      if(!tx.ok)return response(tx.reason==="SIGNAL_NOT_FOUND"?404:400,{ok:false,reason:tx.reason,stage:tx.stage});
+      if(!tx.ok){const status=tx.stage==="RATE_LIMIT"?429:tx.reason==="SIGNAL_NOT_FOUND"?404:400;return response(status,{ok:false,reason:tx.reason,stage:tx.stage});}
       return response(202,{ok:true,report:tx.report,visibility:tx.immediateVisibility});
     }catch(error){
       return response(503,{ok:false,reason:error?.code||"SERVICE_UNAVAILABLE"});
