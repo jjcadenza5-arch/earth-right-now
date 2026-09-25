@@ -75,5 +75,34 @@
       "https://www.earthcam.com/faq.php",
       "https://www.earthcam.com/company/tos.php"
     ]
+  },
+  {
+    "id": "nps-live-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "National Park Service",
+    "familyLabel": "National Park Service live/current webcams",
+    "researchUrl": "https://www.nps.gov/yell/learn/photosmultimedia/webcams.htm",
+    "termsUrl": "https://www.nps.gov/subjects/developer/cms-elements-multimedia.htm",
+    "verifiedAt": "2026-09-25T06:22:00Z",
+    "permissionEvidence": "NPS publicly exposes iframe embed controls for some NPS multimedia and its developer documentation supports webcam elements, including streaming cameras with additional setup. The specific Old Faithful live-webcam media page is active but does not expose a reusable public embed control in the reviewed page, and the live view credits Canon USA and Yellowstone Forever support. ERN must not infer live-webcam embed permission from general NPS multimedia embedding.",
+    "permissionStatus": "GENERAL_NPS_MEDIA_EMBED_EXISTS_SPECIFIC_LIVE_WEBCAM_RIGHTS_UNRESOLVED",
+    "technicalStatus": "SPECIFIC_LIVE_WEBCAM_EMBED_URL_REQUIRED",
+    "humanPlaybackStatus": "BLOCKED_UNTIL_SPECIFIC_PLAYER_AND_RIGHTS_REVIEW",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "nextAction": "IDENTIFY_OFFICIAL_SPECIFIC_LIVE_WEBCAM_PLAYER_OR_KEEP_LINK_ONLY",
+    "networkFamily": "nps.gov",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T06:22:00Z",
+    "communityGuidelinesUrl": "https://www.nps.gov/media/webcam/view.htm?id=AF555E5C-BE40-FE91-52E98E0EDD833B68",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "SPECIFIC_WEBCAM_PLAYER_UNRESOLVED",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.nps.gov/subjects/developer/cms-elements-multimedia.htm",
+      "https://www.nps.gov/yell/learn/photosmultimedia/webcams.htm",
+      "https://www.nps.gov/media/webcam/view.htm?id=AF555E5C-BE40-FE91-52E98E0EDD833B68"
+    ]
   }
 ]
