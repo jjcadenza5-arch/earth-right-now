@@ -44,12 +44,22 @@ export async function listEarthSignalService(context={}){
 export async function reportEarthSignalService(input={}, context={}){
   requireActivated(context.capabilities);
   const storage=assertEarthSignalStorage(context.storage);
+  const limiter=context.rateLimiter;
+  if(!limiter||typeof limiter.check!=="function"||typeof limiter.commit!=="function"){
+    const error=new Error("EARTH_SIGNAL_RATE_LIMITER_REQUIRED");
+    error.code="EARTH_SIGNAL_RATE_LIMITER_REQUIRED";
+    throw error;
+  }
+  const subject=earthSignalRateSubject({subject:context.rateSubject});
+  if(!subject.ok)return{ok:false,stage:"RATE_LIMIT",reason:subject.reason};
   const now=context.now instanceof Date?context.now:new Date();
   const records=await storage.listSignals({now});
   const tx=earthSignalReportTransaction(input,records);
   if(!tx.ok)return tx;
+  const rate=await limiter.commit({subject:subject.subject,action:"REPORT",targetId:tx.report.signalId,now});
+  if(!rate.allowed)return{ok:false,stage:"RATE_LIMIT",reason:rate.reason};
   await storage.putReport(tx.report);
-  return{...tx,persisted:true};
+  return{...tx,rate:{remaining:rate.remaining},persisted:true};
 }
 
 export async function cleanupEarthSignalService(context={}){
