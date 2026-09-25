@@ -143,5 +143,50 @@
     "promotion": "BLOCKED_UNTIL_REVIEW",
     "currentEvidenceReviewedAt": "2026-09-25T06:48:00Z",
     "platformEvidence": "The provider's own current page uses a standard YouTube no-cookie embed. ERN may test that branded player but still requires deployed human playback before promotion."
+  },
+  {
+    "id": "lapalma-tajogaite-embed",
+    "status": "RESEARCH_ONLY",
+    "provider": "Webcam La Palma",
+    "platform": "WebcamLaPalma",
+    "sourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/",
+    "candidateEmbedUrl": "https://webcam-lapalma.de/embed/vulkan/",
+    "ownerEvidence": "Provider's official embed page publishes this exact iframe code for free third-party embedding with visible attribution.",
+    "currentEvidence": "Provider describes the Tajogaite cam as live and running continuously; official embed page supplies the current iframe target.",
+    "discoveredAt": "2026-09-25T06:55:00Z",
+    "permissionReview": "EXPLICIT_FREE_IFRAME_EMBED_WITH_ATTRIBUTION_DEPLOYED_TEST_REQUIRED",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_UNTIL_REVIEW",
+    "currentEvidenceReviewedAt": "2026-09-25T06:55:00Z"
+  },
+  {
+    "id": "lapalma-aridane-embed",
+    "status": "RESEARCH_ONLY",
+    "provider": "Webcam La Palma",
+    "platform": "WebcamLaPalma",
+    "sourceUrl": "https://webcam-lapalma.de/webcam-aridane-tal/",
+    "candidateEmbedUrl": "https://webcam-lapalma.de/embed/aridane/",
+    "ownerEvidence": "Provider's official embed page publishes this exact iframe code for free third-party embedding with visible attribution.",
+    "currentEvidence": "Provider's official embed page identifies the Aridane Valley live cam and supplies the current iframe target.",
+    "discoveredAt": "2026-09-25T06:55:00Z",
+    "permissionReview": "EXPLICIT_FREE_IFRAME_EMBED_WITH_ATTRIBUTION_DEPLOYED_TEST_REQUIRED",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_UNTIL_REVIEW",
+    "currentEvidenceReviewedAt": "2026-09-25T06:55:00Z"
+  },
+  {
+    "id": "lapalma-caldera-embed",
+    "status": "RESEARCH_ONLY",
+    "provider": "Webcam La Palma",
+    "platform": "WebcamLaPalma",
+    "sourceUrl": "https://webcam-lapalma.de/webcam-caldera-taburiente/",
+    "candidateEmbedUrl": "https://webcam-lapalma.de/embed/caldera/",
+    "ownerEvidence": "Provider's official embed page publishes this exact iframe code for free third-party embedding with visible attribution.",
+    "currentEvidence": "Provider's official embed page identifies the Caldera de Taburiente live cam and supplies the current iframe target.",
+    "discoveredAt": "2026-09-25T06:55:00Z",
+    "permissionReview": "EXPLICIT_FREE_IFRAME_EMBED_WITH_ATTRIBUTION_DEPLOYED_TEST_REQUIRED",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_UNTIL_REVIEW",
+    "currentEvidenceReviewedAt": "2026-09-25T06:55:00Z"
   }
 ]
