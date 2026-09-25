@@ -10,9 +10,10 @@ const sources=[
  {...base,id:"e1",placeId:"e",title:"Held",country:"C",region:"R",quality:99,moment:99,featuredHold:true}
 ];
 const offers=[{id:"offer-a",placeId:"a",intent:"stay",title:"Stay",provider:"P",url:"https://example.com",affiliate:true,sponsored:false,verified:true,verifiedAt:"2026-09-24T00:00:00Z"}];
-const r=commercialOnboardingPlan({sources,offers},{now,limit:5,maxPerCountry:2});
-assert.ok(!r.items.some(x=>x.placeId==="a"));assert.ok(!r.items.some(x=>x.placeId==="e"));
-assert.equal(r.items.filter(x=>x.country==="A").length,2);
-assert.ok(r.items.some(x=>x.placeId==="d"));
+const researchCandidates=[{id:"research-b",placeId:"b",researchStatus:"RESEARCH_ONLY",publicActivationAllowed:false}];
+const r=commercialOnboardingPlan({sources,offers,researchCandidates},{now,limit:5,maxPerCountry:2});
+assert.ok(!r.items.some(x=>x.placeId==="a"));assert.ok(!r.items.some(x=>x.placeId==="b"));assert.ok(!r.items.some(x=>x.placeId==="e"));
+assert.equal(r.items.filter(x=>x.country==="A").length,1);
+assert.ok(r.items.some(x=>x.placeId==="c"));assert.ok(r.items.some(x=>x.placeId==="d"));assert.equal(r.currentOfferPlaceCount,1);assert.equal(r.researchedPlaceCount,1);
 assert.equal(r.safety.publicRankingAffected,false);assert.equal(r.safety.demandForecast,false);assert.equal(r.safety.revenueForecast,false);assert.equal(r.safety.paidPriorityAllowed,false);assert.equal(r.safety.inventOffersAllowed,false);
 console.log("ERN commercial onboarding planner passed");
