@@ -1,3 +1,8 @@
+## 2026-09-25 — Bound and cancel future Guide AI model calls
+- Added a 12-second default model timeout with AbortSignal cancellation and deterministic fallback.
+- Production activation now requires verified model-cancellation support; deployment remains off.
+- Focused Guide CI is green.
+
 ## 2026-09-25 — Add replay-safe Generative Guide requests
 - Guide AI API moved to v2 with opaque request IDs and privacy-minimal idempotency.
 - Duplicate retries replay the stored public response without another model call or cost charge; in-flight duplicates fail closed.
