@@ -226,6 +226,28 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     if(submissionMissing.length===1&&submissionMissing[0]==="HTTPS_REVIEW_ENDPOINT")lines.push("- Submission privacy and retention are ready. The only remaining transport blocker is a real HTTPS review endpoint; hold local submission work until backend infrastructure is deliberately provisioned.");
     else lines.push("- Keep camera/place submission delivery closed until its remaining readiness requirements are configured.");
   }
+  const providerTargetsBlocked=Boolean(providerGeneratedTargets?.items?.length)&&providerGeneratedTargets.items.every(item=>Boolean(item?.blockerReason)&&["EXACT_PROVIDER_CODE_REQUIRED","EXACT_PROVIDER_TARGET_URL_REQUIRED"].includes(item?.state));
+  const submissionExternalOnly=Boolean(submissionTransport)&&submissionTransport.active===false&&Array.isArray(submissionTransport.missing)&&submissionTransport.missing.length===1&&submissionTransport.missing[0]==="HTTPS_REVIEW_ENDPOINT";
+  const autonomousHold=
+    (snapshot?.insideERN?.readyShortfall||0)===0&&
+    (operatorReviewQueue?.renewalRequiredCount??operatorReviewQueue?.renewalCount??0)===0&&
+    (playbackEvidenceConsistency?.summary?.issues||0)===0&&
+    (sourceRevalidationTriage?.immediate||[]).length===0&&
+    providerDiscoveryQueue?.state==="CURRENT_CATALOG_RESEARCH_COMPLETE"&&
+    providerTargetsBlocked&&
+    commercialOnboarding?.state==="PILOT_COVERAGE_REACHED"&&
+    (commercialResearchDepth?.items||[]).length===0&&
+    localDirectory?.state==="PILOT_COMPLETE"&&
+    guideAi?.mode==="DETERMINISTIC_ONLY"&&guideAi?.deterministicFallback===true&&
+    earthSignals?.mode==="READ_ONLY"&&earthSignals?.privacyNoticeDraft?.published===true&&
+    submissionExternalOnly;
+
+  if(autonomousHold){
+    lines.push("","## Autonomous work state");
+    lines.push("- **AUTONOMOUS HOLD** — no high-priority local implementation or research lane remains open.");
+    lines.push("- Resume only when something materially changes: playback evidence ages/fails, the catalog changes, an exact provider target becomes available, or ERN deliberately opens an external provider/backend/commercial decision phase.");
+    lines.push("- Do not create new tasks merely to keep activity moving; hold completed and externally blocked lanes.");
+  }
   lines.push("","_Read-only operational summary. It does not mutate source truth, health, permissions, ranking or visitor content._");
   return lines.join("\n");
 }
