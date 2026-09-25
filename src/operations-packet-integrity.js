@@ -16,6 +16,7 @@ const requiredJson=[
  "embed-research.json",
  "embed-research-preflight.json",
  "provider-family-research.json",
+ "provider-generated-targets.json",
  "provider-discovery-queue.json",
  "research-review-queue.json",
  "commercial-inventory.json",
@@ -103,6 +104,19 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(providerFamilyResearch?.safety?.automaticPermissionApprovalAllowed!==false)issues.push({file:"provider-family-research.json",code:"PROVIDER_FAMILY_PERMISSION_BOUNDARY_VIOLATION"});
     if(providerFamilyResearch?.safety?.automaticPromotionAllowed!==false)issues.push({file:"provider-family-research.json",code:"PROVIDER_FAMILY_PROMOTION_BOUNDARY_VIOLATION"});
     if(providerFamilyResearch?.unsafe?.length)issues.push({file:"provider-family-research.json",code:"UNSAFE_PROVIDER_FAMILY_RESEARCH",count:providerFamilyResearch.unsafe.length});
+  }
+
+  const providerGeneratedTargets=files["provider-generated-targets.json"];
+  if(providerGeneratedTargets){
+    if(providerGeneratedTargets?.safety?.catalogMutationAllowed!==false)issues.push({file:"provider-generated-targets.json",code:"PROVIDER_TARGET_CATALOG_MUTATION_BOUNDARY_VIOLATION"});
+    if(providerGeneratedTargets?.safety?.automaticGenerationAllowed!==false)issues.push({file:"provider-generated-targets.json",code:"PROVIDER_TARGET_AUTO_GENERATION_BOUNDARY_VIOLATION"});
+    if(providerGeneratedTargets?.safety?.automaticPromotionAllowed!==false)issues.push({file:"provider-generated-targets.json",code:"PROVIDER_TARGET_AUTO_PROMOTION_BOUNDARY_VIOLATION"});
+    if(providerGeneratedTargets?.safety?.permissionInferred!==false)issues.push({file:"provider-generated-targets.json",code:"PROVIDER_TARGET_PERMISSION_INFERENCE_VIOLATION"});
+    if(providerGeneratedTargets?.safety?.playbackInferred!==false)issues.push({file:"provider-generated-targets.json",code:"PROVIDER_TARGET_PLAYBACK_INFERENCE_VIOLATION"});
+    if((providerGeneratedTargets?.invalid||0)>0)issues.push({file:"provider-generated-targets.json",code:"INVALID_PROVIDER_GENERATED_TARGET_STAGING",count:providerGeneratedTargets.invalid});
+    for(const item of providerGeneratedTargets?.items||[]){
+      if(item?.promotionAllowed!==false||item?.catalogMutationAllowed!==false||item?.automaticGenerationAllowed!==false)issues.push({file:"provider-generated-targets.json",code:"PROVIDER_TARGET_ITEM_BOUNDARY_VIOLATION",id:item?.id||null});
+    }
   }
 
   const providerDiscovery=files["provider-discovery-queue.json"];
