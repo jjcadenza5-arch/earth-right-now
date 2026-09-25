@@ -24,6 +24,7 @@ const requiredJson=[
  "affiliate-platform-research.json",
  "affiliate-application-readiness.json",
  "submission-transport-readiness.json",
+ "earth-signals-status.json",
  "trend-current.json",
  "trend-delta.json",
  "operations-status.json"
@@ -181,6 +182,15 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(transport?.safety?.credentialsIncluded!==false)issues.push({file:"submission-transport-readiness.json",code:"TRANSPORT_CREDENTIAL_BOUNDARY_VIOLATION"});
     if(transport?.safety?.retentionBeyondPolicyAllowed!==false)issues.push({file:"submission-transport-readiness.json",code:"TRANSPORT_RETENTION_BOUNDARY_VIOLATION"});
     if(transport.status==="READY"&&transport.active!==true)issues.push({file:"submission-transport-readiness.json",code:"TRANSPORT_READY_STATE_INCONSISTENT"});
+  }
+
+  const earthSignals=files["earth-signals-status.json"];
+  if(earthSignals){
+    if(!["READ_ONLY","CONTRIBUTION_ENABLED"].includes(earthSignals.mode))issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_MODE_INVALID",value:earthSignals.mode??null});
+    if(earthSignals.mode==="READ_ONLY"&&earthSignals.ready!==false)issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_READ_ONLY_READY_MISMATCH"});
+    if(earthSignals.mode==="CONTRIBUTION_ENABLED"&&earthSignals.ready!==true)issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_ENABLED_READY_MISMATCH"});
+    if(earthSignals?.backendFoundation?.deployedTransport===true&&earthSignals?.deployment?.ready!==true)issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_TRANSPORT_WITHOUT_DEPLOYMENT_EVIDENCE"});
+    if(earthSignals?.privacyNoticeDraft?.published===false&&earthSignals?.privacyNoticeDraft?.activationSatisfied===true)issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_UNPUBLISHED_PRIVACY_ACTIVATION"});
   }
 
   const trend=files["trend-current.json"];
