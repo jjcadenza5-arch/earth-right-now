@@ -148,7 +148,7 @@
     "reviewBatch": "87f2fc998e39534d",
     "reviewedSourceUrl": "https://www.verbier.ch/en/practice/live/webcams/",
     "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag",
-    "reviewNote": "Deployed human review confirmed the exact official Verbier YouTube player delivers current live content. Preserve provider/player branding and click-to-play behavior."
+    "reviewNote": "Deployed-origin human review confirmed current playback in the exact official Verbier YouTube player. Preserve provider branding/controls and click-to-play behavior."
   },
   {
     "id": "lapalma-tajogaite-embed",
@@ -169,7 +169,7 @@
     "reviewBatch": "87f2fc998e39534d",
     "reviewedSourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/",
     "reviewedEmbedUrl": "https://webcam-lapalma.de/embed/vulkan/",
-    "reviewNote": "Deployed human review confirmed the provider-published iframe plays current live content. Visible webcam-lapalma.de attribution remains mandatory."
+    "reviewNote": "Deployed-origin human review confirmed current playback in the provider-supplied iframe. Preserve the provider-required visible webcam-lapalma.de attribution link."
   },
   {
     "id": "lapalma-aridane-embed",
@@ -190,7 +190,7 @@
     "reviewBatch": "87f2fc998e39534d",
     "reviewedSourceUrl": "https://webcam-lapalma.de/webcam-aridane-tal/",
     "reviewedEmbedUrl": "https://webcam-lapalma.de/embed/aridane/",
-    "reviewNote": "Deployed human review confirmed the provider-published iframe plays current live content. Visible webcam-lapalma.de attribution remains mandatory."
+    "reviewNote": "Deployed-origin human review confirmed current playback in the provider-supplied iframe. Preserve the provider-required visible webcam-lapalma.de attribution link."
   },
   {
     "id": "lapalma-caldera-embed",
@@ -211,6 +211,6 @@
     "reviewBatch": "87f2fc998e39534d",
     "reviewedSourceUrl": "https://webcam-lapalma.de/webcam-caldera-taburiente/",
     "reviewedEmbedUrl": "https://webcam-lapalma.de/embed/caldera/",
-    "reviewNote": "Deployed human review confirmed the provider-published iframe plays current live content. Visible webcam-lapalma.de attribution remains mandatory."
+    "reviewNote": "Deployed-origin human review confirmed current playback in the provider-supplied iframe. Preserve the provider-required visible webcam-lapalma.de attribution link."
   }
 ]
