@@ -53,7 +53,7 @@ assert.equal(listed.body.signals.length,1);
 
 const report=await earthSignalHttpRequest(
   {method:"POST",path:"/api/earth-signals/sig-1/report",body:{reason:"PRIVACY"}},
-  {capabilities:allCapabilities,records:[record],now}
+  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"browser-a",now}
 );
 assert.equal(report.status,202);
 assert.equal(report.body.visibility,"HIDE_PENDING_REVIEW");
