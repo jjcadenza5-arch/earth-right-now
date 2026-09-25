@@ -1531,7 +1531,9 @@
     "mapBehavior": "DYNAMIC_UNPINNED",
     "coordinateBasis": "DYNAMIC_ORBIT",
     "coordinateNote": "The ISS position changes continuously, so ERN intentionally does not represent it with a static Living Atlas pin.",
-    "freshnessEvidence": "Fresh EarthCam Planet Earth page remains current on 2026-09-24 and states that Earth views are streamed from an external camera outside the International Space Station, with expected blue-screen periods during communications-satellite handovers. ERN remains LINK_ONLY + EXTERNAL."
+    "freshnessEvidence": "Fresh EarthCam Planet Earth page remains current on 2026-09-24 and states that Earth views are streamed from an external camera outside the International Space Station, with expected blue-screen periods during communications-satellite handovers. ERN remains LINK_ONLY + EXTERNAL.",
+    "travelResearchEligible": false,
+    "travelResearchExclusionReason": "Orbital Earth-view source, not a normal visitor destination for ERN travel-option onboarding."
   },
   {
     "id": "flam-fjord-official",
