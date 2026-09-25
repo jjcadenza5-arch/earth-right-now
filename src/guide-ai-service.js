@@ -27,16 +27,29 @@ export async function guideAiService(input={},context={}){
   const replay=await context.idempotency.begin({subject:subject.subject,requestId:request.requestId});
   if(!replay?.ok)return fallback(replay?.reason||"IDEMPOTENCY_FAILED",request);
   if(replay.replay)return{ok:true,mode:"GENERATIVE_ENABLED",response:replay.response,replayed:true};
-  const rate=await context.rateLimiter.begin({subject:subject.subject});
-  if(!rate?.allowed){await context.idempotency.abort({subject:subject.subject,requestId:request.requestId});await metric(context.metrics,"rateLimited",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(rate?.reason||"RATE_LIMIT",request)}
+
+  let rateBegun=false,budgetReserved=false,completed=false;
+  const abort=async()=>{
+    if(!completed)await context.idempotency.abort({subject:subject.subject,requestId:request.requestId});
+    if(budgetReserved){await releaseBudget(context.costGuard);budgetReserved=false}
+  };
 
   try{
+    const rate=await context.rateLimiter.begin({subject:subject.subject});
+    if(!rate?.allowed){await abort();await metric(context.metrics,"rateLimited",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(rate?.reason||"RATE_LIMIT",request)}
+    rateBegun=true;
+
     let selection;
-    try{selection=await context.resolver.resolve({query:request.query,language:request.language,placeHint:request.placeId,sourceHints:request.sourceIds,catalog:context.catalog})}catch{return fallback("DETERMINISTIC_RESOLUTION_FAILED",request)}
-    if(!selection||!Array.isArray(selection.sourceIds))return fallback("DETERMINISTIC_RESOLUTION_INVALID",request);
+    try{selection=await context.resolver.resolve({query:request.query,language:request.language,placeHint:request.placeId,sourceHints:request.sourceIds,catalog:context.catalog})}
+    catch{await abort();return fallback("DETERMINISTIC_RESOLUTION_FAILED",request)}
+    if(!selection||!Array.isArray(selection.sourceIds)){await abort();return fallback("DETERMINISTIC_RESOLUTION_INVALID",request)}
     const trusted=guideAiTrustedContext(selection,context.catalog);
-    const budget=await context.costGuard.allow({sessionId:subject.subject,queryChars:request.query.length});
-    if(!budget?.allowed){await context.idempotency.abort({subject:subject.subject,requestId:request.requestId});await metric(context.metrics,"costBlocked",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(budget?.reason||"COST_GUARD_BLOCKED",request)}
+
+    let budget;
+    try{budget=await context.costGuard.allow({sessionId:subject.subject,queryChars:request.query.length})}
+    catch{await abort();return fallback("COST_GUARD_FAILED",request)}
+    if(!budget?.allowed){await abort();await metric(context.metrics,"costBlocked",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(budget?.reason||"COST_GUARD_BLOCKED",request)}
+    budgetReserved=true;
 
     let generated;
     try{
@@ -47,22 +60,30 @@ export async function guideAiService(input={},context={}){
         constraints:{maxAnswerChars:1600,claimsMustUseTrustedContext:true,noPaidRanking:true,doNotUpgradeTruthLabels:true}
       });
     }catch{
-      await releaseBudget(context.costGuard);
+      await abort();
       await metric(context.metrics,"modelError",{latencyMs:Date.now()-started,inputChars:request.query.length});
-      await context.idempotency.abort({subject:subject.subject,requestId:request.requestId});
       return fallback("MODEL_GENERATION_FAILED",request);
     }
 
     const validated=validateGuideAiModelResult(generated,trusted);
-    if(!validated.ok){await releaseBudget(context.costGuard);await context.idempotency.abort({subject:subject.subject,requestId:request.requestId});await metric(context.metrics,"truthRejected",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(validated.reason,request)}
-    const committed=await context.costGuard.commit({sessionId:subject.subject,usage:generated.usage||null});
-    if(committed?.allowed===false){await context.idempotency.abort({subject:subject.subject,requestId:request.requestId});await metric(context.metrics,"costBlocked",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(committed.reason||"COST_COMMIT_BLOCKED",request)}
+    if(!validated.ok){await abort();await metric(context.metrics,"truthRejected",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(validated.reason,request)}
+
+    let committed;
+    try{committed=await context.costGuard.commit({sessionId:subject.subject,usage:generated.usage||null})}
+    catch{await abort();return fallback("COST_COMMIT_FAILED",request)}
+    budgetReserved=false;
+    if(committed?.allowed===false){await abort();await metric(context.metrics,"costBlocked",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(committed.reason||"COST_COMMIT_BLOCKED",request)}
 
     const response=guideAiPublicResponse(validated.result);
-    await context.idempotency.complete({subject:subject.subject,requestId:request.requestId,response});
+    const saved=await context.idempotency.complete({subject:subject.subject,requestId:request.requestId,response});
+    if(!saved?.ok){await metric(context.metrics,"fallback",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(saved?.reason||"IDEMPOTENCY_COMPLETE_FAILED",request)}
+    completed=true;
     await metric(context.metrics,"success",{latencyMs:Date.now()-started,inputChars:request.query.length,outputChars:response.answer.length,estimatedCostUsd:Number.isFinite(committed?.estimatedCostUsd)?committed.estimatedCostUsd:null});
-    return{ok:true,mode:"GENERATIVE_ENABLED",response,trustedContext:trusted};
+    return{ok:true,mode:"GENERATIVE_ENABLED",response,trustedContext:trusted,replayed:false};
+  }catch{
+    await abort();
+    return fallback("GUIDE_AI_SERVICE_FAILED",request);
   }finally{
-    await context.rateLimiter.end({subject:subject.subject});
+    if(rateBegun)await context.rateLimiter.end({subject:subject.subject});
   }
 }
