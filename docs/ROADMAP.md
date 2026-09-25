@@ -42,3 +42,6 @@ ERN should improve continuously without repeating completed, blocked, failed or 
 
 ## Private commercial pilot research — COMPLETE FOR CURRENT SCOPE
 Private editorial research has reached its finite pilot target: 59 verified real-option records across 30 places. New-destination breadth is held at 30 places, and the default two-intent depth queue is empty after applying explicit evidence-based holds where a distinct second option would be forced or duplicative. Public activation, affiliate applications, paid ranking and revenue assumptions remain off. Further commercial research requires a new decision or material evidence/catalog change.
+
+## Earth Signals privacy milestone
+The future Earth Signals privacy boundary is now published on the public privacy page. This clears only the published-privacy-notice readiness item. Earth Signals remain `READ_ONLY` / `NOT_DEPLOYED` until HTTPS transport, durable storage, server rate limits, pseudonymous rate subjects, moderation, reporting, expiry cleanup, secret isolation, observability and cost controls are all backed by real production evidence.
