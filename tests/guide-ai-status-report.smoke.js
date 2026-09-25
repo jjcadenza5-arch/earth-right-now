@@ -6,6 +6,6 @@ assert.equal(r.mode,"DETERMINISTIC_ONLY");
 assert.equal(r.ready,false);
 assert.equal(r.deterministicFallback,true);
 assert.equal(r.deployment.state,"NOT_DEPLOYED");
-assert.equal(r.deployment.missing.length,13);
+assert.equal(r.deployment.missing.length,14);
 assert.match(r.truth,/remains deterministic/);
 console.log("Generative Guide status fails closed to the current deterministic Guide");
