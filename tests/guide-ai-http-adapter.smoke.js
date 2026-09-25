@@ -14,6 +14,7 @@ const context={
  capabilities:all,catalog,
  costGuard:{allow:async()=>({allowed:true}),commit:async()=>({allowed:true})},
  modelAdapter:{generate:async()=>({answer:"A",sourceIds:["a"]})},
+ resolver:{resolve:async()=>({placeId:"p",sourceIds:["a"]})},
  rateLimiter:createInMemoryGuideAiRateLimiter(),
  metrics:createInMemoryGuideAiMetrics(),
  rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
