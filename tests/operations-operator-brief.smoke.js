@@ -122,3 +122,15 @@ const signalInfraHold=operationsOperatorBrief({
 });
 assert.match(signalInfraHold,/privacy requirement is complete/);
 assert.match(signalInfraHold,/hold local activation work until ERN deliberately enters a production-infrastructure phase/);
+
+const guideExternalHold=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ guideAi:{
+   mode:"DETERMINISTIC_ONLY",
+   deterministicFallback:true,
+   deployment:{state:"NOT_DEPLOYED",missing:["httpsEndpoint","providerDataHandlingReviewed","secretIsolation","rateLimits","observability","costGuard"],costDecisionRequired:true,cost:{monthlyCostCeilingUsd:null}}
+ }
+});
+assert.match(guideExternalHold,/Local generative-Guide groundwork is complete enough for the current phase/);
+assert.match(guideExternalHold,/hold local activation work until that phase is deliberately opened/);
