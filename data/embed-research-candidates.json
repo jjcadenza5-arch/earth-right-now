@@ -32,10 +32,16 @@
     "currentEvidence": "Official video description states the Open Sea Cam is live every day from 7 a.m. to 7 p.m. Pacific time.",
     "discoveredAt": "2026-09-24T08:50:00Z",
     "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_UNTIL_REVIEW",
+    "playbackReview": "HUMAN_PLAYBACK_FAILED",
+    "promotion": "BLOCKED_PLAYBACK_FAILED",
     "currentEvidenceReviewedAt": "2026-09-24T15:54:00Z",
-    "platformEvidence": "Monterey Bay Aquarium's current official site still exposes its live-cam program, and official YouTube video descriptions identify the selected cam as a scheduled live camera. YouTube's current embedded-player documentation supports standard branded iframe embeds subject to platform requirements; deployed ERN playback remains separately unconfirmed."
+    "platformEvidence": "Monterey Bay Aquarium's current official site still exposes its live-cam program, and official YouTube video descriptions identify the selected cam as a scheduled live camera. YouTube's current embedded-player documentation supports standard branded iframe embeds subject to platform requirements; deployed ERN playback remains separately unconfirmed.",
+    "lastHumanReviewAt": "2026-09-25T06:07:28.524Z",
+    "lastHumanReviewOutcome": "PLAYBACK_FAILED",
+    "reviewedSourceUrl": "https://www.youtube.com/watch?v=nNTVZKz219U",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/nNTVZKz219U",
+    "reviewBatch": "fbeae45f290ade5b",
+    "reviewNote": "Deployed-origin operator review on earthrightnow.app failed to produce usable Open Sea Cam playback. Keep research-only; do not infer a platform-wide YouTube embed failure from this candidate-specific result."
   },
   {
     "id": "youtube-monterey-jelly-cam",
