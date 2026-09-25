@@ -34,7 +34,7 @@
     "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Auckland Viaduct YouTube channel-live player delivers current live content after the visitor presses Play.",
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.viaduct.co.nz/",
-    "playbackVerifiedAt": "2026-09-25T06:32:26.769Z"
+    "playbackVerifiedAt": "2026-09-25T14:59:12.384Z"
   },
   {
     "id": "kilauea-summit",
@@ -389,7 +389,7 @@
     "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Verbier embedded player delivers current live content.",
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.verbier.ch/en/",
-    "playbackVerifiedAt": "2026-09-25T07:07:12.223Z"
+    "playbackVerifiedAt": "2026-09-25T14:59:35.119Z"
   },
   {
     "id": "dolomiti-superski",
@@ -954,7 +954,7 @@
     "failureReason": null,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/taiwan/kaohsiung/cijin-beach/",
-    "playbackVerifiedAt": "2026-09-25T02:23:23.106Z"
+    "playbackVerifiedAt": "2026-09-25T14:58:26.918Z"
   },
   {
     "id": "cancun-live-aqua-beach",
@@ -1135,7 +1135,7 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://takayama-live.com/streaming",
     "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Hida-Takayama YouTube channel-live player delivers current live content after the visitor presses Play.",
-    "playbackVerifiedAt": "2026-09-25T06:22:47.183Z"
+    "playbackVerifiedAt": "2026-09-25T14:59:07.202Z"
   },
   {
     "id": "takayama-miyagawa-current-image",
@@ -1882,7 +1882,7 @@
     "coordinateSourceUrl": "https://mapcarta.com/25426064",
     "coordinateNote": "Public geographic reference for Ponte di Legno town; ERN treats this as a regional reference for the Adamello-area view, not the camera position.",
     "freshnessEvidence": "Current CouchTourist Ponte di Legno / Adamello page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 8621). Source page is current; deployed ERN playback remains separately unverified.",
-    "playbackVerifiedAt": "2026-09-25T06:03:34.172Z"
+    "playbackVerifiedAt": "2026-09-25T14:58:57.886Z"
   },
   {
     "id": "pleasant-beach-lake-ontario",
@@ -1987,7 +1987,7 @@
     "lon": 5.39343,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/norway/ulriken-mountain-view-bergen-norway/",
-    "playbackVerifiedAt": "2026-09-25T02:23:51.687Z"
+    "playbackVerifiedAt": "2026-09-25T14:58:20.419Z"
   },
   {
     "id": "waikiki-south-shore",
@@ -2113,13 +2113,13 @@
     "provider": "CouchTourist",
     "truth": "LIVE_VIDEO",
     "permission": "EMBED_ALLOWED",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EMBED",
     "freshness": 96,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
     "checkedAt": "2026-09-24T09:10:00Z",
     "lastSuccessfulCheck": "2026-09-24T09:10:00Z",
-    "failureReason": null,
+    "failureReason": "VISITOR_PLAYBACK_REJECTED_2026-09-25",
     "story": "A waterside view around Metung and the Gippsland Lakes, useful for seeing lake, sky and village atmosphere.",
     "lat": -37.8921089,
     "lon": 147.8542936,
@@ -2127,7 +2127,9 @@
     "coordinateSourceUrl": "https://clubsandpubsnearme.com.au/pubs/the-metung-hotel-metung-vic",
     "coordinateNote": "Public place reference coordinates for The Metung Hotel at 64 Kurnai Avenue.",
     "freshnessEvidence": "Current CouchTourist Metung Hotel page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 4100). Source page is current; deployed ERN playback remains separately unverified.",
-    "playbackVerifiedAt": "2026-09-25T06:03:42.339Z"
+    "lastFailedCheck": "2026-09-25T14:58:52.619Z",
+    "featuredHold": true,
+    "featuredHoldReason": "Fresh deployed ERN human review failed playback on 2026-09-25. Keep out of featured/LIVE HERE rotation until a later human review confirms recovery."
   },
   {
     "id": "skeikampen-ski",
@@ -2161,7 +2163,7 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q2786332",
     "coordinateNote": "Skeikampen mountain/destination reference point; not claimed as exact webcam position.",
-    "playbackVerifiedAt": "2026-09-25T02:23:31.053Z"
+    "playbackVerifiedAt": "2026-09-25T14:58:39.667Z"
   },
   {
     "id": "coogee-randwick-beaches",
@@ -2748,7 +2750,7 @@
     "rightsBasis": "Webcam La Palma's official embed page explicitly permits free iframe embedding of this live cam provided the visible webcam-lapalma.de attribution link remains present. Deployed ERN human review confirmed current playback.",
     "checkedAt": "2026-09-25T07:07:22.289Z",
     "lastSuccessfulCheck": "2026-09-25T07:07:22.289Z",
-    "playbackVerifiedAt": "2026-09-25T07:07:22.289Z",
+    "playbackVerifiedAt": "2026-09-25T14:59:29.385Z",
     "failureReason": null,
     "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Aridane Valley iframe delivers current live content.",
     "lat": 28.6600849,
@@ -2787,7 +2789,7 @@
     "rightsBasis": "Webcam La Palma's official embed page explicitly permits free iframe embedding of this live cam provided the visible webcam-lapalma.de attribution link remains present. Deployed ERN human review confirmed current playback.",
     "checkedAt": "2026-09-25T07:07:27.755Z",
     "lastSuccessfulCheck": "2026-09-25T07:07:27.755Z",
-    "playbackVerifiedAt": "2026-09-25T07:07:27.755Z",
+    "playbackVerifiedAt": "2026-09-25T14:59:21.300Z",
     "failureReason": null,
     "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Caldera iframe delivers current live content.",
     "lat": 28.721111,
