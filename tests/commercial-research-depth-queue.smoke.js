@@ -9,7 +9,7 @@ const researchStatus={byPlace:{
  b:{total:2,intents:{stay:1,eat:0,transport:0,activities:1,tickets:0,services:0}},
  held:{total:1,intents:{stay:1,eat:0,transport:0,activities:0,tickets:0,services:0}}
 }};
-const r=commercialResearchDepthQueue({sources,researchStatus},{limit:5,maxPerCountry:2});
-assert.equal(r.items.length,2);assert.equal(r.items[0].placeId,"a");assert.equal(r.items[0].recommendedIntent,"activities");assert.equal(r.items[1].recommendedIntent,"tickets");assert.ok(!r.items.some(x=>x.placeId==="held"));
+const r=commercialResearchDepthQueue({sources,researchStatus},{limit:5,maxPerCountry:2,targetIntentDiversity:2});
+assert.equal(r.items.length,1);assert.equal(r.items[0].placeId,"a");assert.equal(r.items[0].recommendedIntent,"activities");assert.equal(r.targetIntentDiversity,2);assert.ok(!r.items.some(x=>x.placeId==="b"));assert.ok(!r.items.some(x=>x.placeId==="held"));
 assert.equal(r.safety.publicActivationAllowed,false);assert.equal(r.safety.automaticContactAllowed,false);assert.equal(r.safety.paidRankingAllowed,false);assert.equal(r.safety.demandForecast,false);assert.equal(r.safety.revenueForecast,false);
 console.log("ERN private commercial research-depth queue stays non-promotional");
