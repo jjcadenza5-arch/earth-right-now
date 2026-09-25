@@ -190,5 +190,33 @@
       "https://www.usgs.gov/volcanoes/kilauea/summit-webcams",
       "https://www.usgs.gov/programs/VHP/volcano-updates"
     ]
+  },
+  {
+    "id": "youtube-auckland-viaduct",
+    "status": "RESEARCH_ONLY",
+    "provider": "Auckland Viaduct View",
+    "familyLabel": "Auckland Viaduct official YouTube channel live player",
+    "researchUrl": "https://www.viaduct.co.nz/",
+    "termsUrl": "https://developers.google.com/youtube/terms/required-minimum-functionality",
+    "verifiedAt": "2026-09-25T06:42:00Z",
+    "permissionEvidence": "The official Viaduct Harbour page labels the view 'Auckland Viaduct View — live' and points to a stable standard YouTube channel-live embed. YouTube embedded-player requirements still apply; ERN requires deployed human playback before any source promotion.",
+    "permissionStatus": "PROVIDER_PAGE_USES_STANDARD_YOUTUBE_CHANNEL_LIVE_EMBED_SPECIFIC_DEPLOYED_REVIEW_REQUIRED",
+    "technicalStatus": "STABLE_CHANNEL_LIVE_EMBED_STAGED",
+    "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "nextAction": "DEPLOYED_HUMAN_PLAYBACK_THEN_EDITORIAL_REVIEW",
+    "networkFamily": "youtube.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T06:42:00Z",
+    "communityGuidelinesUrl": "https://developers.google.com/youtube/terms/developer-policies",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "STANDARD_EMBED_PLAYER",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.viaduct.co.nz/",
+      "https://developers.google.com/youtube/terms/required-minimum-functionality"
+    ]
   }
 ]
