@@ -37,7 +37,7 @@ const researchAlternates=researchQueue.alternates.map(x=>({...x,title:x.provider
 const generatedAt=new Date().toISOString();
 const reviewBatchMaterial=[
  ...insideReview.map(x=>["restore",x.id,x.reviewMode||"",x.playbackVerifiedAt||"",x.embedUrl||""].join("|")),
- ...researchPrimary.map(x=>["research",x.id,x.playbackReview||"",x.lastHumanReviewAt||"",x.candidateEmbedUrl||""].join("|"))
+ ...[...researchPrimary,...researchAlternates].map(x=>["research",x.id,x.playbackReview||"",x.lastHumanReviewAt||"",x.candidateEmbedUrl||""].join("|"))
 ].sort().join("\n");
 const reviewBatch=createHash("sha256").update(reviewBatchMaterial).digest("hex").slice(0,16);
 const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
