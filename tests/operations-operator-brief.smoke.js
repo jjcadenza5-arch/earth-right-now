@@ -3,3 +3,13 @@ const snapshot={generatedAt:"2026-09-24T10:30:00Z",catalog:{healthy:8,total:10,d
 const delta={direction:"MIXED",score:2,improved:[{metric:"catalog.healthy",previous:7,current:8,delta:1}],regressed:[{metric:"catalog.degraded",previous:1,current:2,delta:1}]};
 const earthSignals={mode:"READ_ONLY",backendFoundation:{state:"PREPARED_NOT_DEPLOYED"},privacyNoticeDraft:{contentReady:true,published:false,activationSatisfied:false},deployment:{state:"NOT_DEPLOYED",missing:["httpsEndpoint","durableStorage"]}};const md=operationsOperatorBrief({snapshot,delta,earthSignals});assert.match(md,/ERN Daily Operations Brief/);assert.match(md,/MIXED/);assert.match(md,/Restore strong inside-ERN windows/);assert.match(md,/PAGE_MISSING/);assert.match(md,/Earth Signals readiness/);assert.match(md,/NOT_DEPLOYED/);assert.match(md,/Read-only operational summary/);
 console.log("ERN daily operator brief passed");
+
+const exhaustedBrief=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ researchReviewQueue:{exhausted:true,total:4,failedPlayback:4,nextAction:"RESEARCH_NEW_PROVIDER_FAMILY",primary:[]}
+});
+assert.match(exhaustedBrief,/Second-provider research state/);
+assert.match(exhaustedBrief,/4\/4 staged candidate/);
+assert.match(exhaustedBrief,/RESEARCH_NEW_PROVIDER_FAMILY/);
+assert.match(exhaustedBrief,/Research a genuinely new embeddable provider family/);
