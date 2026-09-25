@@ -706,5 +706,68 @@
       "https://www.queenstownairport.co.nz/webcams-weather/",
       "https://www.queenstownairport.co.nz/corporate/terms-of-use/"
     ]
+  },
+  {
+    "id": "ski-arlberg-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Ski Arlberg",
+    "familyLabel": "Official Ski Arlberg webcam network",
+    "researchUrl": "https://www.skiarlberg.at/en/live-info/webcams",
+    "termsUrl": "https://www.skiarlberg.at/en/legal-notice",
+    "verifiedAt": "2026-09-25T14:18:00Z",
+    "permissionEvidence": "Ski Arlberg currently publishes active real-time webcams on its official site. Its general conditions describe webcam images as distributed on Ski Arlberg's website/app and the online/social portals of Ski Arlberg members, while its privacy notice identifies feratel media technologies AG, Panomax GmbH and foto-webcam.eu as webcam providers. The reviewed official Ski Arlberg materials do not publish a general third-party iframe/widget licence for unrelated sites such as ERN. ERN therefore keeps this family link-only unless a specific provider-generated or licensed integration path is documented.",
+    "permissionStatus": "OFFICIAL_REALTIME_WEBCAMS_PROVIDER_NETWORK_IDENTIFIED_NO_PUBLIC_THIRD_PARTY_EMBED_GRANT_FOUND",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_SPECIFIC_PROVIDER_OR_LICENSED_EMBED_PATH_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_FERATEL_PANOMAX_FOTO_WEBCAM_OR_SKI_ARLBERG_DOCUMENTS_A_SPECIFIC_THIRD_PARTY_EMBED_PATH",
+    "networkFamily": "skiarlberg.at",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T14:18:00Z",
+    "communityGuidelinesUrl": "https://www.skiarlberg.at/en/legal-notice",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "NO_PUBLIC_THIRD_PARTY_EMBED_GRANT_FOUND",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.skiarlberg.at/en/live-info/webcams",
+      "https://www.skiarlberg.at/de/agb",
+      "https://www.skiarlberg.at/de/datenschutz",
+      "https://www.skiarlberg.at/en/legal-notice"
+    ]
+  },
+  {
+    "id": "st-moritz-tourism-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "St. Moritz Tourismus AG",
+    "discoveryProviderAliases": [
+      "St. Moritz Tourism"
+    ],
+    "familyLabel": "Official St. Moritz panorama webcams",
+    "researchUrl": "https://www.stmoritz.com/en/live/webcams",
+    "termsUrl": "https://www.stmoritz.com/en/imprint",
+    "verifiedAt": "2026-09-25T14:18:00Z",
+    "permissionEvidence": "St. Moritz Tourismus currently publishes live panorama webcams on its official site. The reviewed current imprint, privacy policy, contacts and publication/licensing surfaces identify St. Moritz Tourismus AG as publisher and provide channels for publication/brand licensing enquiries, but no public third-party webcam embed/widget licence was found. ERN therefore keeps the existing source link-only and does not infer reuse rights from public viewing availability.",
+    "permissionStatus": "OFFICIAL_LIVE_WEBCAMS_NO_PUBLIC_THIRD_PARTY_WIDGET_OR_EMBED_PERMISSION_FOUND",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_EMBED_OR_PUBLICATION_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_ST_MORITZ_OR_THE_WEBCAM_RIGHTSHOLDER_DOCUMENTS_A_PUBLIC_WIDGET_OR_GRANTS_SPECIFIC_PERMISSION",
+    "networkFamily": "stmoritz.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T14:18:00Z",
+    "communityGuidelinesUrl": "https://www.stmoritz.com/en/contacts",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "NO_PUBLIC_THIRD_PARTY_EMBED_PERMISSION_FOUND",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.stmoritz.com/en/live/webcams",
+      "https://www.stmoritz.com/en/imprint",
+      "https://www.stmoritz.com/en/privacypolicy",
+      "https://www.stmoritz.com/en/contacts"
+    ]
   }
 ]
