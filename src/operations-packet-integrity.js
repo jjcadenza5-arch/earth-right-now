@@ -26,6 +26,7 @@ const requiredJson=[
  "affiliate-application-readiness.json",
  "submission-transport-readiness.json",
  "earth-signals-status.json",
+ "guide-ai-status.json",
  "trend-current.json",
  "trend-delta.json",
  "operations-status.json"
@@ -195,6 +196,16 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(transport?.safety?.credentialsIncluded!==false)issues.push({file:"submission-transport-readiness.json",code:"TRANSPORT_CREDENTIAL_BOUNDARY_VIOLATION"});
     if(transport?.safety?.retentionBeyondPolicyAllowed!==false)issues.push({file:"submission-transport-readiness.json",code:"TRANSPORT_RETENTION_BOUNDARY_VIOLATION"});
     if(transport.status==="READY"&&transport.active!==true)issues.push({file:"submission-transport-readiness.json",code:"TRANSPORT_READY_STATE_INCONSISTENT"});
+  }
+
+  const guideAi=files["guide-ai-status.json"];
+  if(guideAi){
+    if(!["DETERMINISTIC_ONLY","GENERATIVE_ENABLED"].includes(guideAi.mode))issues.push({file:"guide-ai-status.json",code:"GUIDE_AI_MODE_INVALID",value:guideAi.mode??null});
+    if(guideAi.mode==="DETERMINISTIC_ONLY"&&guideAi.ready!==false)issues.push({file:"guide-ai-status.json",code:"GUIDE_AI_DETERMINISTIC_READY_MISMATCH"});
+    if(guideAi.mode==="GENERATIVE_ENABLED"&&guideAi.ready!==true)issues.push({file:"guide-ai-status.json",code:"GUIDE_AI_ENABLED_READY_MISMATCH"});
+    if(guideAi.deterministicFallback!==true)issues.push({file:"guide-ai-status.json",code:"GUIDE_AI_FALLBACK_REQUIRED"});
+    if(guideAi.mode==="GENERATIVE_ENABLED"&&guideAi?.deployment?.ready!==true)issues.push({file:"guide-ai-status.json",code:"GUIDE_AI_ENABLED_WITHOUT_DEPLOYMENT_EVIDENCE"});
+    if(guideAi?.deployment?.cost?.automaticCeilingIncreaseAllowed!==false)issues.push({file:"guide-ai-status.json",code:"GUIDE_AI_COST_CEILING_AUTO_INCREASE_VIOLATION"});
   }
 
   const earthSignals=files["earth-signals-status.json"];
