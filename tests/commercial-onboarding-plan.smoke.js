@@ -18,3 +18,8 @@ assert.equal(r.items.filter(x=>x.country==="A").length,1);
 assert.ok(r.items.some(x=>x.placeId==="c"));assert.ok(r.items.some(x=>x.placeId==="d"));assert.equal(r.currentOfferPlaceCount,1);assert.equal(r.researchedPlaceCount,1);
 assert.equal(r.safety.publicRankingAffected,false);assert.equal(r.safety.demandForecast,false);assert.equal(r.safety.revenueForecast,false);assert.equal(r.safety.paidPriorityAllowed,false);assert.equal(r.safety.inventOffersAllowed,false);
 console.log("ERN commercial onboarding planner passed");
+
+const pilotCovered=[...Array(30)].map((_,i)=>({id:"r"+i,placeId:"p"+i,researchStatus:"RESEARCH_ONLY",publicActivationAllowed:false}));
+const pilotSources=[...Array(3)].map((_,i)=>({...base,id:"n"+i,placeId:"new"+i,title:"New "+i,country:"N",region:"R",quality:99,moment:99}));
+const held=commercialOnboardingPlan({sources:pilotSources,offers:[],researchCandidates:pilotCovered},{now,limit:5,targetResearchPlaces:30});
+assert.equal(held.state,"PILOT_COVERAGE_REACHED");assert.equal(held.breadthTargetReached,true);assert.equal(held.items.length,0);assert.equal(held.nextAction,"HOLD_NEW_RESEARCH_UNTIL_COMMERCIAL_DECISION_OR_CATALOG_CHANGE");
