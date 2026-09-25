@@ -1,3 +1,6 @@
+## Visitor-scoped abuse controls
+Rate limiting is now separated from the public Earth Signal store. Submission quotas are scoped to an opaque pseudonymous visitor subject, with an independent per-place cap; one visitor's activity cannot consume another visitor's quota. Raw IP/email/network identifiers are not valid rate subjects. A deployment must prove pseudonymous subjects and rawNetworkIdentifiersStored=false before the rate-limit requirement can pass. Reporting has its own quota and duplicate-report guard so a single visitor cannot repeatedly hide the same signal while privacy-sensitive reports can still hide a signal immediately pending review.
+
 ## Persistent record schema hardening
 Earth Signal storage now has a strict record schema before any future durable backend is connected. Stored signals reject precise coordinates, free text, contact/network identifiers, malformed timestamps, invalid expiry ordering and unsupported moderation/location states. Reports are similarly bounded to the approved reason set and reject free text or identifying network/contact fields. The storage boundary enforces these validators rather than trusting callers.
 
