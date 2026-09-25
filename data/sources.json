@@ -2750,7 +2750,12 @@
     "lastSuccessfulCheck": "2026-09-25T07:07:22.289Z",
     "playbackVerifiedAt": "2026-09-25T07:07:22.289Z",
     "failureReason": null,
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Aridane Valley iframe delivers current live content."
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Aridane Valley iframe delivers current live content.",
+    "lat": 28.6600849,
+    "lon": -17.9143581,
+    "coordinateBasis": "REGION_REFERENCE",
+    "coordinateSourceUrl": "https://lapalmasmart-open.lapalma.es/en/node/72",
+    "coordinateNote": "Representative official Cabildo de La Palma reference point in Los Llanos de Aridane; not an exact camera position."
   },
   {
     "id": "la-palma-caldera-taburiente",
@@ -2784,6 +2789,11 @@
     "lastSuccessfulCheck": "2026-09-25T07:07:27.755Z",
     "playbackVerifiedAt": "2026-09-25T07:07:27.755Z",
     "failureReason": null,
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Caldera iframe delivers current live content."
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Caldera iframe delivers current live content.",
+    "lat": 28.721111,
+    "lon": -17.870694,
+    "coordinateBasis": "REGION_REFERENCE",
+    "coordinateSourceUrl": "https://www.miteco.gob.es/es/parques-nacionales-oapn/red-parques-nacionales/parques-nacionales/taburiente/ficha-tecnica.html",
+    "coordinateNote": "Regional midpoint derived from the official MITECO coordinate bounds for Caldera de Taburiente National Park; not an exact camera position."
   }
 ]
