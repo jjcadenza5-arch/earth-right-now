@@ -15,3 +15,10 @@ const widget=providerFamilyResearchStatus([{id:"widget",status:"RESEARCH_ONLY",p
 assert.equal(widget.items[0].safeUsage,true);
 assert.equal(widget.items[0].candidateEligible,true);
 assert.equal(widget.unsafe.length,0);
+
+const authorizedImage=providerFamilyResearchStatus([{id:"image",status:"RESEARCH_ONLY",provider:"Public Agency",familyLabel:"Authorized current image",researchUrl:"https://example.com/cam",termsUrl:"https://example.com/terms",technicalStatus:"EXACT_CURRENT_IMAGE_TARGET_REQUIRED",humanPlaybackStatus:"REQUIRED_ON_DEPLOYED_ERN_FOR_CURRENT_IMAGE_RENDERING",promotion:"BLOCKED_UNTIL_SPECIFIC_IMAGE_REVIEW",nextAction:"STAGE_IMAGE",networkFamily:"example.com",termsReviewedAt:"2026-09-25T00:00:00Z",usageMode:"PROVIDER_AUTHORIZED_CURRENT_IMAGE",embeddingCondition:"DIRECT_CURRENT_IMAGE_WITH_ATTRIBUTION_ONLY",playerBrandingRequired:false,imageReuseAllowed:true,attributionRequired:true,restreamAllowed:false}],{now:new Date("2026-09-25T12:00:00Z")});
+assert.equal(authorizedImage.items[0].safeUsage,true);
+assert.equal(authorizedImage.items[0].candidateEligible,true);
+assert.equal(authorizedImage.items[0].imageReuseAllowed,true);
+assert.equal(authorizedImage.items[0].attributionRequired,true);
+assert.equal(authorizedImage.unsafe.length,0);
