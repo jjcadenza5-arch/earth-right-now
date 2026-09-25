@@ -217,7 +217,11 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   if(commercialResearchDepth?.items?.length)lines.push(`- Deepen private research at ${commercialResearchDepth.items[0].title||commercialResearchDepth.items[0].placeId} with a real ${commercialResearchDepth.items[0].recommendedIntent||"travel"} option before adding duplicate intent coverage.`);
   if(commercialResearch?.valid)lines.push("- Review staged real travel options for partner/affiliate terms before any public activation.");
   else if(commercialOnboarding?.items?.length)lines.push("- Research real travel options for the highest content-ready destinations without contacting or listing invented partners.");
-  if(submissionTransport&&!submissionTransport.active)lines.push("- Keep camera/place submission delivery closed until a real HTTPS review endpoint, privacy notice and retention window are configured.");
+  if(submissionTransport&&!submissionTransport.active){
+    const submissionMissing=submissionTransport.missing||[];
+    if(submissionMissing.length===1&&submissionMissing[0]==="HTTPS_REVIEW_ENDPOINT")lines.push("- Submission privacy and retention are ready. The only remaining transport blocker is a real HTTPS review endpoint; hold local submission work until backend infrastructure is deliberately provisioned.");
+    else lines.push("- Keep camera/place submission delivery closed until its remaining readiness requirements are configured.");
+  }
   lines.push("","_Read-only operational summary. It does not mutate source truth, health, permissions, ranking or visitor content._");
   return lines.join("\n");
 }
