@@ -1,3 +1,7 @@
+## 2026-09-25 — Failed provider tests stay deferred
+- Split second-provider alternates into unfailed loadable fallbacks and previously failed/deferred history.
+- Failed deployed playback targets are no longer one-click retest cards; they require target/provider change or explicit retest justification.
+
 ## 2026-09-25 — Direct second-provider alternate testing
 - Operator Review now keeps alternate research candidates collapsed but loadable, avoiding a redeploy between failed primary and alternate tests.
 - Review-batch hashing now includes all loadable research targets so alternate-target changes cannot reuse stale local evidence.
