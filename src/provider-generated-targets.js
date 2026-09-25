@@ -6,7 +6,7 @@ export function providerGeneratedTargetStatus(rows=[]){
     const hasExactTarget=HTTPS.test(clean(raw?.exactTargetUrl));
     const generated=hasExactCode||hasExactTarget;
     const reviewed=Boolean(raw?.reviewedAt&&raw?.reviewOutcome);
-    const valid=Boolean(raw?.id&&raw?.providerFamilyId&&raw?.provider&&raw?.sourceId&&["PROVIDER_GENERATED_WIDGET","PROVIDER_GENERATED_CURRENT_IMAGE"].includes(raw?.integrationKind)&&HTTPS.test(clean(raw?.generatorUrl)));
+    const valid=Boolean(raw?.id&&raw?.providerFamilyId&&raw?.provider&&raw?.sourceId&&["PROVIDER_GENERATED_WIDGET","PROVIDER_GENERATED_CURRENT_IMAGE","PROVIDER_AUTHORIZED_CURRENT_IMAGE"].includes(raw?.integrationKind)&&HTTPS.test(clean(raw?.generatorUrl)));
     const safetyOk=raw?.promotionAllowed===false&&raw?.catalogMutationAllowed===false&&raw?.automaticGenerationAllowed===false;
     let state="INVALID";
     if(valid&&safetyOk&&!generated)state="EXACT_PROVIDER_CODE_REQUIRED";
