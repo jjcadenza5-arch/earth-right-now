@@ -1,3 +1,9 @@
+## 2026-09-25 — Rebuild second-provider discovery and stage Hida-Takayama
+- Added explicit exhausted research handling plus a catalog-grounded provider discovery queue.
+- EarthCam resolved link-only unless licensed; NPS remains specific-player research only; SANParks resolved link-only without written permission.
+- Staged Hida-Takayama's official stable YouTube channel-live embed as the next deployed human playback candidate.
+- Current review batch: `aad67aa5f7c8fe3a`; candidate remains research-only until human confirmation.
+
 ## 2026-09-25 — Monterey Open Sea playback failed
 - Recorded deployed HUMAN_PLAYBACK_FAILED for Open Sea Cam from batch `fbeae45f290ade5b`.
 - All three Monterey YouTube research candidates are now deferred after candidate-specific playback failures; none is promoted.
