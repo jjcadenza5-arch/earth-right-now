@@ -33,5 +33,6 @@ const commercialResearch=await optional(args[18]);
 const affiliatePlatformResearch=await optional(args[19]);
 const affiliateApplicationReadiness=await optional(args[20]);
 const earthSignals=await optional(args[21]);
+const guideAi=await optional(args[22]);
 
-console.log(operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals}));
+console.log(operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi}));
