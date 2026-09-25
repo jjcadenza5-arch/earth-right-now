@@ -86,7 +86,7 @@
   },
   {
     "id": "youtube-hida-takayama-channel-live",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "Hida-Takayama Live Camera",
     "platform": "YouTube",
     "sourceUrl": "https://takayama-live.com/streaming",
@@ -94,10 +94,16 @@
     "ownerEvidence": "Official Hida-Takayama Live Camera streaming page embeds this YouTube channel live player and links the Hida-Takayama Live Camera YouTube channel.",
     "currentEvidence": "Official streaming page updated 2026-04-07 describes the live stream as YouTube Live, identifies the Takayama Honmachi / Miyagawa Kajibashi camera location, and notes that individual YouTube Live addresses change when the stream reconnects.",
     "discoveredAt": "2026-09-25T06:31:00Z",
-    "permissionReview": "PROVIDER_PAGE_USES_STANDARD_YOUTUBE_CHANNEL_LIVE_EMBED_DEPLOYED_TEST_REQUIRED",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_UNTIL_REVIEW",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "currentEvidenceReviewedAt": "2026-09-25T06:31:00Z",
-    "platformEvidence": "The official provider page itself uses a standard YouTube channel live embed, giving stronger specific-target evidence than the prior Monterey individual-video candidates. ERN still requires deployed human playback and must keep YouTube branding/player controls intact."
+    "platformEvidence": "The official provider page itself uses a standard YouTube channel live embed, giving stronger specific-target evidence than the prior Monterey individual-video candidates. ERN still requires deployed human playback and must keep YouTube branding/player controls intact.",
+    "lastHumanReviewAt": "2026-09-25T06:22:47.183Z",
+    "lastHumanReviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
+    "reviewedSourceUrl": "https://takayama-live.com/streaming",
+    "reviewedEmbedUrl": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw",
+    "reviewBatch": "aad67aa5f7c8fe3a",
+    "reviewNote": "Deployed-origin human review confirmed the exact official Hida-Takayama YouTube channel-live embed plays current live content after explicit visitor Play interaction. Preserve click-to-play; do not assume autoplay."
   }
 ]
