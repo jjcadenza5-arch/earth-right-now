@@ -1,3 +1,10 @@
+## 2026-09-25 — Earth Signal privacy wording prepared, not activated
+- Added a complete privacy-notice draft model for structured Earth Signals covering purpose, signal types, 45-minute retention, optional location evidence, place-only public scope, reporting and deletion.
+- The draft explicitly states that free text is not accepted, precise coordinates are not public and no account is required for the structured phase.
+- Readiness logic distinguishes content-complete from published: the draft reports contentReady=true but published=false and activationSatisfied=false.
+- Earth Signal status now exposes this distinction so a finished draft cannot silently satisfy the production privacyNotice capability.
+- Public contribution remains READ_ONLY and the privacyNotice capability remains false.
+
 ## 2026-09-25 — Earth Signal service/storage foundation is executable but still fail-closed
 - Added a server transaction pipeline that composes structured-input validation, canonical place checks, rate limits, moderation visibility, reporting and retention.
 - Added an HTTP-style adapter that returns READ_ONLY / 503 unless every real activation capability is enabled; prepared code cannot accidentally become a public endpoint.
