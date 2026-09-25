@@ -1,3 +1,7 @@
+## 2026-09-25 — Earth Signal privacy notice draft
+- Added content-complete structured-signal privacy wording while keeping publication status DRAFT_NOT_PUBLISHED.
+- Status reporting distinguishes prepared wording from a verified live notice; privacy activation remains unsatisfied.
+
 ## 2026-09-25 — Executable Earth Signal backend foundation
 - Added fail-closed server pipeline, HTTP adapter, durable-storage contract and deployment-neutral service layer for structured Earth Signals.
 - Added deterministic coverage for validation, server-owned freshness, rate limiting, reporting visibility and 45-minute expiry.
