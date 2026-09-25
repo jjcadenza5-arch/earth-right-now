@@ -58,7 +58,7 @@ export async function guideAiService(input={},context={}){
         language:request.language,
         trustedContext:trusted,
         signal,
-        constraints:{maxAnswerChars:1600,claimsMustUseTrustedContext:true,noPaidRanking:true,doNotUpgradeTruthLabels:true}
+        constraints:{maxAnswerChars:1600,maxSegments:8,groundedSegmentsRequired:true,claimsMustUseTrustedContext:true,noPaidRanking:true,doNotUpgradeTruthLabels:true}
       }),
       {timeoutMs:context.modelTimeoutMs}
     );
