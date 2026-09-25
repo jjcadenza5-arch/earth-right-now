@@ -109,3 +109,16 @@ const submissionExternalHold=operationsOperatorBrief({
 });
 assert.match(submissionExternalHold,/only remaining transport blocker is a real HTTPS review endpoint/);
 assert.match(submissionExternalHold,/hold local submission work until backend infrastructure is deliberately provisioned/);
+
+const signalInfraHold=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ earthSignals:{
+   mode:"READ_ONLY",
+   backendFoundation:{state:"PREPARED_NOT_DEPLOYED"},
+   privacyNoticeDraft:{contentReady:true,published:true,activationSatisfied:true},
+   deployment:{state:"NOT_DEPLOYED",missing:["httpsEndpoint","durableStorage","serverRateLimits","pseudonymousRateSubjects","moderation","reportQueue","expiryCleanup","secretIsolation","observability","costGuard"]}
+ }
+});
+assert.match(signalInfraHold,/privacy requirement is complete/);
+assert.match(signalInfraHold,/hold local activation work until ERN deliberately enters a production-infrastructure phase/);
