@@ -7,7 +7,9 @@ on:
       - "src/**"
       - "scripts/**"
       - "tests/earth-signal-*.smoke.js"
+      - "tests/guide-ai-*.smoke.js"
       - "data/earth-signal-deployment.json"
+      - "data/guide-ai-deployment.json"
       - ".github/workflows/syntax-check.yml"
   workflow_dispatch:
 
@@ -31,5 +33,11 @@ jobs:
         run: |
           set -euo pipefail
           for test in tests/earth-signal-*.smoke.js; do
+            node "$test"
+          done
+      - name: Run Generative Guide focused smoke tests
+        run: |
+          set -euo pipefail
+          for test in tests/guide-ai-*.smoke.js; do
             node "$test"
           done
