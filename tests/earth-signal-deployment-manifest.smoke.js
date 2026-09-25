@@ -8,7 +8,7 @@ assert.equal(current.valid,true);
 const publicEvidence=publicEarthSignalDeploymentEvidence(manifest);
 assert.equal(publicEvidence.ok,true);
 assert.equal(publicEvidence.evidence.status,"NOT_DEPLOYED");
-assert.equal(publicEvidence.evidence.endpointUrl,null);
+assert.equal(publicEvidence.evidence.endpointUrl,null);assert.equal(publicEvidence.evidence.privacyPublished,true);assert.equal(publicEvidence.evidence.privacyUrl,"https://earthrightnow.app/privacy.html");
 
 const secretLeak=validateEarthSignalDeploymentManifest({...manifest,apiKey:"secret"});
 assert.equal(secretLeak.valid,false);
