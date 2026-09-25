@@ -239,22 +239,22 @@
 
   <button class="guide-launcher" id="guideLauncher" aria-expanded="false" aria-controls="guidePanel"><span>◎</span> ERN Guide</button>
   <aside class="guide-panel" id="guidePanel" hidden aria-label="ERN Guide">
-    <div class="guide-head"><div><span class="eyebrow">ERN GUIDE</span><strong>Where should we look?</strong></div><button id="guideClose" aria-label="Close ERN Guide">×</button></div>
-    <p class="guide-intro">You do not need to know what to search for. Tell me the kind of Earth you want to see.</p>
+    <div class="guide-head"><div><span class="eyebrow">ERN GUIDE</span><strong data-i18n="guideWhere">What are you curious to see?</strong></div><button id="guideClose" aria-label="Close ERN Guide">×</button></div>
+    <p class="guide-intro" data-i18n="guideIntro">You do not need the answer first. Start with a place, a mood, or a question.</p>
     <div class="guide-chips">
-      <button data-guide="what is good on earth right now">What’s good now?</button>
-      <button data-guide="somewhere peaceful">Somewhere peaceful</button>
-      <button data-guide="beautiful evening light">Golden hour</button>
-      <button data-guide="small local place">Small local place</button>
-      <button data-guide="surprise me">Surprise me</button>
+      <button data-guide="what is good on earth right now" data-i18n="guideGood">What’s good now?</button>
+      <button data-guide="somewhere peaceful" data-i18n="guidePeaceful">Somewhere peaceful</button>
+      <button data-guide="beautiful evening light" data-i18n="guideGolden">Golden hour</button>
+      <button data-guide="small local place" data-i18n="guideLocal">Small local place</button>
+      <button data-guide="surprise me" data-i18n="guideSurprise">Surprise me</button>
     </div>
     <form class="guide-form" id="guideForm">
-      <input id="guideInput" type="search" autocomplete="off" placeholder="Try “show me somewhere peaceful”">
-      <button type="submit">Go</button>
+      <input id="guideInput" type="search" autocomplete="off" data-i18n-placeholder="guidePlaceholder" placeholder="Try “where does Earth feel quiet right now?”">
+      <button type="submit" data-i18n="guideGo">Go</button>
     </form>
-    <div class="guide-reply" id="guideReply" role="status" aria-live="polite">I can guide you through Watch Earth, Search, the Atlas, Local Earth and places beyond the obvious.</div>
+    <div class="guide-reply" id="guideReply" role="status" aria-live="polite" data-i18n="guideStart">Ask a question and I’ll open the strongest truthful windows ERN has.</div>
     <div class="guide-results" id="guideResults"></div>
-    <div class="guide-links"><a href="./now-moments.html">Now Moments</a><a href="./for-places.html">Add a place or camera</a></div>
+    <div class="guide-links"><a href="./now-moments.html">Now Moments</a><a href="./for-places.html" data-i18n="guideAddPlace">Add a place or camera</a></div>
   </aside>
 
   <nav class="mobile-dock" aria-label="Mobile navigation">
