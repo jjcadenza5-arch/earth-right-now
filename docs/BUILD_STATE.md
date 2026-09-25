@@ -1,3 +1,11 @@
+## 2026-09-25 — Operator review page now detects stale deployed batches
+- A second operator packet arrived from old review batch `3ec5f713ce5daf15` after the repository had already advanced the second-provider primary to Open Sea. The repeated Metung/Ponte confirmations were still valid human observations and were applied at their newer timestamps; the repeated Jelly Cam failure was retained as confirming evidence only.
+- Root cause was stale browser/CDN delivery of the operator review HTML, not stale repository state. The current deployed research primary was already Open Sea.
+- Added `review/current.json` as a tiny current-batch manifest generated alongside the review page.
+- The review page now fetches that manifest with `cache: no-store`; if its embedded review batch disagrees, it displays a stale-page warning and disables all load/review controls until reload.
+- Operator preflight now requires the HTML batch and current-batch manifest to agree and requires stale-batch protection to be present.
+- Latest successful Pages build uses batch `fbeae45f290ade5b`, shows Open Sea as the sole active second-provider primary, and keeps Jelly Cam / Monterey Bay Cam / Brooks Falls deferred after failed playback evidence.
+
 ## 2026-09-25 — Fresh human playback renewals applied; Jelly Cam remains blocked
 - Applied deployed-origin HUMAN_PLAYBACK confirmations from review batch `3ec5f713ce5daf15` for Metung — Gippsland Lakes at 2026-09-25T05:54:31.950Z and Ponte di Legno — Adamello at 2026-09-25T05:54:19.434Z.
 - Added both observations to the historical provider-observation ledger and advanced the matching catalog `playbackVerifiedAt` timestamps; no truth, permission or health state was upgraded beyond the observed playback evidence.
