@@ -28,3 +28,9 @@ assert.ok(!r.items.some(x=>x.provider==="Provider B"));
 assert.ok(!r.items.some(x=>x.provider==="Provider C Short"));
 assert.ok(!r.items.some(x=>x.provider==="Old Provider"));
 console.log("Provider discovery queue skips researched provider labels and explicit aliases without inferring embed rights");
+
+const complete=providerDiscoveryQueue(sources,{items:[{provider:"Provider A"},{provider:"Provider B"},{provider:"Provider C Incorporated",discoveryProviderAliases:["Provider C Short"]}]},{now,maxAgeDays:7});
+assert.equal(complete.state,"CURRENT_CATALOG_RESEARCH_COMPLETE");
+assert.equal(complete.total,0);
+assert.equal(complete.primary,null);
+assert.equal(complete.nextAction,"HOLD_UNTIL_EXTERNAL_CATALOG_CHANGES");
