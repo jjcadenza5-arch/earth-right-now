@@ -29,3 +29,6 @@ Provider research continuity: see `docs/PROVIDER_RESEARCH_HANDOFF_2026-09-25.md`
 
 ## Cross-cutting priority — Curiosity-first story layer
 Use small open questions to invite self-directed discovery: **Do not push the answer. Create the question.** This is a non-disruptive strengthening layer only; truth/currentness, source choice, navigation and playback architecture remain authoritative. See `docs/CURIOSITY_STORY_LAYER.md`.
+
+## Cross-cutting priority — Generative Guide privacy readiness
+The public privacy notice now documents the future generative Guide boundary: server-side secret isolation, trusted ERN context rehydration, no raw prompt/response operational logging, no visitor profiling, keyed rate limiting without raw network identifiers, and deterministic fallback. This completes only the published-privacy-notice requirement. The generative Guide remains `NOT_DEPLOYED`; endpoint, provider-specific data handling, rate limits, idempotency, cancellation, observability, safety and hard cost-stop evidence are still required before activation.
