@@ -918,5 +918,35 @@
       "https://visit-chiyoda.tokyo/en/sakura/faq/",
       "https://visit-chiyoda.tokyo/en/privacy/"
     ]
+  },
+  {
+    "id": "icelandic-met-office-current-images",
+    "status": "RESEARCH_ONLY",
+    "provider": "Icelandic Meteorological Office",
+    "familyLabel": "IMO current webcam images",
+    "researchUrl": "https://en.vedur.is/weather/observations/webcams/reykjavik/",
+    "termsUrl": "https://en.vedur.is/about-imo/the-web/conditions/",
+    "verifiedAt": "2026-09-25T14:26:00Z",
+    "permissionEvidence": "The Icelandic Meteorological Office explicitly states that, unless otherwise noted, its photographs and data may be used for private or commercial purposes, with attribution to the Icelandic Meteorological Office and the data-download date. It also says low-resolution images may be downloaded as they appear on the website. The Reykjavík webcam page states that the web cameras belong to IMO. This creates an explicit current-image reuse path, but ERN must still identify the exact current image target and review deployed rendering before any catalog promotion.",
+    "permissionStatus": "EXPLICIT_PHOTO_AND_DATA_REUSE_ALLOWED_WITH_ATTRIBUTION_INCLUDING_COMMERCIAL_USE",
+    "technicalStatus": "EXACT_CURRENT_IMAGE_TARGET_REQUIRED",
+    "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN_FOR_CURRENT_IMAGE_RENDERING",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_IMAGE_TARGET_AND_RENDERING_REVIEW",
+    "nextAction": "IDENTIFY_EXACT_CURRENT_REYKJAVIK_WEBCAM_IMAGE_TARGET_THEN_STAGE_FOR_DEPLOYED_RENDERING_REVIEW",
+    "networkFamily": "en.vedur.is",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T14:26:00Z",
+    "communityGuidelinesUrl": "https://en.vedur.is/about-imo/the-web/conditions/",
+    "usageMode": "PROVIDER_AUTHORIZED_CURRENT_IMAGE",
+    "embeddingCondition": "EXACT_CURRENT_IMAGE_WITH_IMO_ATTRIBUTION_AND_DOWNLOAD_DATE",
+    "playerBrandingRequired": false,
+    "imageReuseAllowed": true,
+    "attributionRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://en.vedur.is/about-imo/the-web/conditions/",
+      "https://en.vedur.is/weather/observations/webcams/reykjavik/"
+    ]
   }
 ]
