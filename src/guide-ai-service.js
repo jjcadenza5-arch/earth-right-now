@@ -23,7 +23,7 @@ export async function guideAiService(input={},context={}){
   if(typeof context.rateLimiter?.begin!=="function"||typeof context.rateLimiter?.end!=="function")return fallback("RATE_LIMITER_REQUIRED",request);
   if(typeof context.metrics?.record!=="function")return fallback("OBSERVABILITY_REQUIRED",request);
 
-  const subject=guideAiRateSubject(context.rateSubject||request.sessionId);
+  const subject=guideAiRateSubject(context.rateSubject);
   if(!subject.ok)return fallback(subject.reason,request);
   const replay=await context.idempotency.begin({subject:subject.subject,requestId:request.requestId});
   if(!replay?.ok)return fallback(replay?.reason||"IDEMPOTENCY_FAILED",request);
