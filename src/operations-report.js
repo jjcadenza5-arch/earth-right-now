@@ -64,6 +64,15 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
   for(const x of healthAutomation?.outcomeDetails?.failedChecks||[])if(!observationPriority.has(x.id))observationPriority.set(x.id,{boost:80,reason:"FAILED_CHECK"});
   for(const x of healthAutomation?.outcomeDetails?.inconclusive||[])if(!observationPriority.has(x.id))observationPriority.set(x.id,{boost:60,reason:"INCONCLUSIVE_MEDIA"});
   const queue=buildRevalidationQueue(sources).map(x=>{const overlay=observationPriority.get(x.source.id);return overlay?{...x,priority:x.priority+overlay.boost,reason:[overlay.reason,x.reason].filter(Boolean).join("+")} : x}).sort((a,b)=>b.priority-a.priority||String(a.source.id).localeCompare(String(b.source.id)));
+  const revalidationDisposition=x=>{
+    const source=x?.source||{};
+    if(source.featuredHold===true)return "CURATION_HOLD";
+    if(String(source.failureReason||"").startsWith("VISITOR_PLAYBACK_REJECTED_"))return "DEFERRED_PLAYBACK_REPROVE";
+    if(String(source.failureReason||"").startsWith("OFFICIAL_COLLECTION_WEBCAMS_OFFLINE_"))return "DEFERRED_PROVIDER_OFFLINE";
+    return "ACTIONABLE";
+  };
+  const actionableQueue=queue.filter(x=>revalidationDisposition(x)==="ACTIONABLE");
+  const deferredQueue=queue.filter(x=>revalidationDisposition(x)!=="ACTIONABLE");
 
   const watchNow=checkedAt?new Date(checkedAt):new Date();
   const watchItems=buildDynamicWatchEarth(sources,{limit:20,now:watchNow});
@@ -84,7 +93,7 @@ export function operationsReport(sources,{queueLimit=20,catalogOptions={},releas
     insideProviderResilience:insideProvider,
     watchEarthProductBalance:watchProductBalance,
     productActivation:{business,earthSignals},
-    maintenance:{atlas:atlasMaintenance,sourceRevalidation:{total:queue.length,next:queue.slice(0,10).map(x=>({id:x.source.id,title:x.source.title,priority:x.priority,reason:x.reason}))}},
-    revalidation:{total:queue.length,next:queue.slice(0,queueLimit).map(x=>({id:x.source.id,title:x.source.title,priority:x.priority,reason:x.reason,health:x.source.health,playback:x.source.playback,permission:x.source.permission}))}
+    maintenance:{atlas:atlasMaintenance,sourceRevalidation:{total:queue.length,actionable:actionableQueue.length,deferred:deferredQueue.length,next:actionableQueue.slice(0,10).map(x=>({id:x.source.id,title:x.source.title,priority:x.priority,reason:x.reason}))}},
+    revalidation:{total:queue.length,actionable:actionableQueue.length,deferred:deferredQueue.length,next:actionableQueue.slice(0,queueLimit).map(x=>({id:x.source.id,title:x.source.title,priority:x.priority,reason:x.reason,health:x.source.health,playback:x.source.playback,permission:x.source.permission})),deferredItems:deferredQueue.slice(0,queueLimit).map(x=>({id:x.source.id,title:x.source.title,priority:x.priority,reason:x.reason,disposition:revalidationDisposition(x),health:x.source.health,playback:x.source.playback,permission:x.source.permission}))}
   };
 }
