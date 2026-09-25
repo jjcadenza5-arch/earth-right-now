@@ -218,5 +218,33 @@
       "https://www.viaduct.co.nz/",
       "https://developers.google.com/youtube/terms/required-minimum-functionality"
     ]
+  },
+  {
+    "id": "youtube-verbier-tourism",
+    "status": "RESEARCH_ONLY",
+    "provider": "Verbier – Val de Bagnes Tourism",
+    "familyLabel": "Verbier official YouTube live webcam player",
+    "researchUrl": "https://www.verbier.ch/en/practice/live/webcams/",
+    "termsUrl": "https://developers.google.com/youtube/terms/required-minimum-functionality",
+    "verifiedAt": "2026-09-25T06:48:00Z",
+    "permissionEvidence": "Verbier's official tourism webcam page directly embeds a standard YouTube no-cookie player for its live mountain view. YouTube embedded-player requirements apply; ERN requires deployed human playback before promotion.",
+    "permissionStatus": "PROVIDER_PAGE_USES_STANDARD_YOUTUBE_EMBED_SPECIFIC_DEPLOYED_REVIEW_REQUIRED",
+    "technicalStatus": "OFFICIAL_YOUTUBE_EMBED_STAGED",
+    "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "nextAction": "DEPLOYED_HUMAN_PLAYBACK_THEN_EDITORIAL_REVIEW",
+    "networkFamily": "youtube.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T06:48:00Z",
+    "communityGuidelinesUrl": "https://developers.google.com/youtube/terms/developer-policies",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "STANDARD_EMBED_PLAYER",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.verbier.ch/en/practice/live/webcams/",
+      "https://developers.google.com/youtube/terms/required-minimum-functionality"
+    ]
   }
 ]
