@@ -127,5 +127,21 @@
     "reviewedEmbedUrl": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ",
     "reviewBatch": "ee73d3e3c6fe0bd7",
     "reviewNote": "Deployed-origin human review confirmed the exact Auckland Viaduct YouTube channel-live player works after explicit visitor Play interaction. Preserve click-to-play; do not assume autoplay."
+  },
+  {
+    "id": "youtube-verbier-live",
+    "status": "RESEARCH_ONLY",
+    "provider": "Verbier – Val de Bagnes Tourism",
+    "platform": "YouTube",
+    "sourceUrl": "https://www.verbier.ch/en/practice/live/webcams/",
+    "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag",
+    "ownerEvidence": "Official Verbier tourism webcam page labels the mountain view live and embeds this YouTube player directly on the official page.",
+    "currentEvidence": "Current official Verbier webcam page describes the mountain webcam as continuously updated/live and embeds the YouTube live player.",
+    "discoveredAt": "2026-09-25T06:48:00Z",
+    "permissionReview": "PROVIDER_PAGE_USES_STANDARD_YOUTUBE_EMBED_DEPLOYED_TEST_REQUIRED",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_UNTIL_REVIEW",
+    "currentEvidenceReviewedAt": "2026-09-25T06:48:00Z",
+    "platformEvidence": "The provider's own current page uses a standard YouTube no-cookie embed. ERN may test that branded player but still requires deployed human playback before promotion."
   }
 ]
