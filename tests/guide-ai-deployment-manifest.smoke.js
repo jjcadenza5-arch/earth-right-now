@@ -1,0 +1,11 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import {validateGuideAiDeploymentManifest,publicGuideAiDeploymentEvidence} from "../src/guide-ai-deployment-manifest.js";
+
+const manifest=JSON.parse(fs.readFileSync("data/guide-ai-deployment.json","utf8"));
+assert.equal(validateGuideAiDeploymentManifest(manifest).valid,true);
+assert.equal(publicGuideAiDeploymentEvidence(manifest).evidence.status,"NOT_DEPLOYED");
+const bad=validateGuideAiDeploymentManifest({...manifest,apiKey:"secret"});
+assert.equal(bad.valid,false);
+assert.ok(bad.issues.some(x=>x.includes("apiKey")));
+console.log("Generative Guide deployment manifest is public evidence only and rejects secret-like fields");
