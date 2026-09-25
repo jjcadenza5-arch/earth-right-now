@@ -10,3 +10,16 @@ assert.equal(r.items[0].id,"due");assert.equal(r.items[0].reviewMode,"RENEW");as
 assert.ok(r.items.some(x=>x.id==="restore"&&x.reviewMode==="RESTORE"));assert.ok(!r.items.some(x=>x.id==="held"));assert.equal(r.readyShortfall,4);assert.equal(r.recommendedRestorationCount,1);assert.equal(r.primaryItems[0].id,"due");assert.equal(r.primaryItems[1].id,"restore");assert.ok(r.renewable.some(x=>x.id==="due"));assert.ok(!r.renewable.some(x=>x.id==="restore"));assert.ok(!r.renewable.some(x=>x.id==="held"));
 assert.equal(r.safety.catalogMutationAllowed,false);assert.equal(r.safety.automaticPlaybackVerificationAllowed,false);
 console.log("ERN operator review queue renewal priority passed");
+
+const expiredSources=[
+ {id:"expired",title:"Expired",provider:"P",playback:"EMBED",permission:"EMBED_ALLOWED",health:"HEALTHY",playbackVerifiedAt:"2026-09-23T00:00:00Z",embedUrl:"https://couchtourist.com/embed/cam/4/",sourceUrl:"https://couchtourist.com/cams/d",quality:92,freshness:95,moment:90,checkedAt:"2026-09-24T17:00:00Z",lastSuccessfulCheck:"2026-09-24T17:00:00Z"},
+ {id:"never",title:"Never",provider:"P",playback:"EMBED",permission:"EMBED_ALLOWED",health:"HEALTHY",embedUrl:"https://couchtourist.com/embed/cam/5/",sourceUrl:"https://couchtourist.com/cams/e",quality:91,freshness:95,moment:90,checkedAt:"2026-09-24T17:00:00Z",lastSuccessfulCheck:"2026-09-24T17:00:00Z"}
+];
+const expiredObs=[{id:"expired",confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-23T00:00:00Z",httpStatus:200}];
+const ex=operatorReviewQueue(expiredSources,expiredObs,{now:new Date("2026-09-24T18:30:00Z"),limit:8,targetReady:2});
+assert.equal(ex.primaryItems[0].id,"expired");
+assert.equal(ex.primaryItems[0].reviewMode,"RENEW");
+assert.equal(ex.primaryItems[0].action,"RENEW_EXPIRED_VISITOR_PLAYBACK");
+assert.equal(ex.primaryItems[0].reason,"EXPIRED");
+assert.equal(ex.renewalCount,1);
+assert.ok(ex.primaryItems.some(x=>x.id==="never"&&x.reviewMode==="RESTORE"));
