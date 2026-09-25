@@ -29,6 +29,7 @@ const requiredJson=[
  "submission-transport-readiness.json",
  "earth-signals-status.json",
  "guide-ai-status.json",
+ "local-directory-status.json",
  "trend-current.json",
  "trend-delta.json",
  "operations-status.json"
@@ -53,6 +54,18 @@ export async function validateOperationsPacket(dir="ern-ops"){
     const file=path.join(dir,name);
     if(!(await fileExists(file))){issues.push({file:name,code:"MISSING_OR_EMPTY"});continue}
     files[name]=await readFile(file,"utf8");
+  }
+
+  const localDirectory=files["local-directory-status.json"];
+  if(localDirectory){
+    if(localDirectory?.safety?.paidRankingAllowed!==false)issues.push({file:"local-directory-status.json",code:"LOCAL_DIRECTORY_PAID_RANKING_VIOLATION"});
+    if(localDirectory?.safety?.affiliateRelationshipImplied!==false)issues.push({file:"local-directory-status.json",code:"LOCAL_DIRECTORY_AFFILIATE_VIOLATION"});
+    if(localDirectory?.safety?.automaticApprovalAllowed!==false)issues.push({file:"local-directory-status.json",code:"LOCAL_DIRECTORY_AUTO_APPROVAL_VIOLATION"});
+    if(localDirectory?.safety?.automaticDirectoryMutationAllowed!==false)issues.push({file:"local-directory-status.json",code:"LOCAL_DIRECTORY_AUTO_MUTATION_VIOLATION"});
+    if((localDirectory?.invalid||0)>0)issues.push({file:"local-directory-status.json",code:"INVALID_LOCAL_DIRECTORY_ENTRIES",count:localDirectory.invalid});
+    for(const item of localDirectory?.items||[]){
+      if(item?.paidPlacement!==false||item?.affiliate!==false||item?.valid!==true)issues.push({file:"local-directory-status.json",code:"LOCAL_DIRECTORY_ITEM_BOUNDARY_VIOLATION",id:item?.id||null});
+    }
   }
 
   const availability=files["source-availability.json"];
