@@ -176,7 +176,10 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push("## Earth Signals readiness");
     lines.push(`- Mode: ${earthSignals.mode||"UNKNOWN"}; backend foundation ${earthSignals.backendFoundation?.state||"UNKNOWN"}; deployment ${earthSignals.deployment?.state||"UNKNOWN"}.`);
     lines.push(`- Privacy wording: ${earthSignals.privacyNoticeDraft?.contentReady?"content-ready":"incomplete"}; publication ${earthSignals.privacyNoticeDraft?.published?"published":"not published"}; activation ${earthSignals.privacyNoticeDraft?.activationSatisfied?"satisfied":"blocked"}.`);
-    if(earthSignals.deployment?.missing?.length)lines.push(`- Production evidence still missing: ${earthSignals.deployment.missing.join(", ")}.`);
+    if(earthSignals.deployment?.missing?.length){
+      lines.push(`- Production evidence still missing: ${earthSignals.deployment.missing.join(", ")}.`);
+      if(earthSignals.privacyNoticeDraft?.published&&earthSignals.mode==="READ_ONLY")lines.push("- The privacy requirement is complete. Remaining Earth Signals blockers require real backend infrastructure; hold local activation work until ERN deliberately enters a production-infrastructure phase.");
+    }
     lines.push("- Prepared code, test doubles and draft wording do not enable visitor contribution.", "");
   }
   if(submissionTransport){
