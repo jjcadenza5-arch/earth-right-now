@@ -8,6 +8,9 @@ export const EARTH_SIGNAL_BACKEND_FOUNDATION=Object.freeze({
   boundedRetention:true,
   privacyMinimalPublicProjection:true,
   failClosedHttpAdapter:true,
+  durableStorageContract:true,
+  storageSchemaValidation:true,
+  gatedServiceLayer:true,
   deployedTransport:false
 });
 
