@@ -18,8 +18,8 @@ assert.equal(r.backendFoundation.gatedServiceLayer,true);
 assert.equal(r.backendFoundation.subjectScopedRateLimitContract,true);
 assert.equal(r.backendFoundation.rawNetworkIdentifiersStored,false);
 assert.equal(r.privacyNoticeDraft.contentReady,true);
-assert.equal(r.privacyNoticeDraft.published,false);
-assert.equal(r.privacyNoticeDraft.activationSatisfied,false);
+assert.equal(r.privacyNoticeDraft.published,true);
+assert.equal(r.privacyNoticeDraft.activationSatisfied,true);
 assert.equal(r.deployment.state,"NOT_DEPLOYED");
 assert.equal(r.deployment.ready,false);
 assert.equal(r.deployment.missing.length,11);
@@ -51,3 +51,23 @@ assert.equal(enabled.ready,true);
 assert.equal(enabled.backendFoundation.deployedTransport,true);
 
 console.log("Earth Signal operator status requires both capabilities and deployment evidence");
+
+const publishedOnly=earthSignalStatusReport(EARTH_SIGNAL_CAPABILITIES,{deploymentEvidence:{
+ status:"NOT_DEPLOYED",
+ endpointUrl:null,
+ durableStorage:false,
+ serverRateLimits:false,
+ pseudonymousRateSubjects:false,
+ rawNetworkIdentifiersStored:false,
+ moderation:false,
+ reportQueue:false,
+ expiryCleanup:false,
+ privacyUrl:"https://earthrightnow.app/privacy.html",
+ privacyPublished:true,
+ secretIsolation:false,
+ observability:false,
+ costGuard:false
+}});
+assert.equal(publishedOnly.deployment.ready,false);
+assert.equal(publishedOnly.deployment.missing.length,10);
+assert.ok(!publishedOnly.deployment.missing.includes("publishedPrivacyNotice"));
