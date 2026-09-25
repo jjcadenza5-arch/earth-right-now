@@ -798,5 +798,53 @@
     "url": "https://www.sanparks.org/parks/addo-elephant/what-to-do/activities/game-drives",
     "evidence": "Current official SANParks page offers guided game drives from Addo Main Camp including sunrise, morning, midday, afternoon, sunset and night departures; advance booking is required.",
     "verifiedAt": "2026-09-25T15:00:00Z"
+  },
+  {
+    "researchStatus": "RESEARCH_ONLY",
+    "affiliateStatus": "NOT_REVIEWED",
+    "publicActivationAllowed": false,
+    "sponsored": false,
+    "paidPriorityAllowed": false,
+    "contacted": false,
+    "id": "activities-whistler-summer-alpine",
+    "placeId": "whistler-blackcomb",
+    "name": "Whistler Blackcomb Summer Alpine Experience",
+    "country": "Canada",
+    "intent": "activities",
+    "url": "https://www.whistlerblackcomb.com/plan-your-trip/lift-access/summer-sightsee-tickets.aspx",
+    "evidence": "Current official Whistler Blackcomb page sells Summer Alpine Experience tickets with PEAK 2 PEAK Gondola sightseeing and access to Whistler and Blackcomb alpine hiking terrain.",
+    "verifiedAt": "2026-09-25T15:02:00Z"
+  },
+  {
+    "researchStatus": "RESEARCH_ONLY",
+    "affiliateStatus": "NOT_REVIEWED",
+    "publicActivationAllowed": false,
+    "sponsored": false,
+    "paidPriorityAllowed": false,
+    "contacted": false,
+    "id": "activities-cape-town-waterfront-two-oceans",
+    "placeId": "cape-town-waterfront",
+    "name": "Two Oceans Aquarium at the V&A Waterfront",
+    "country": "South Africa",
+    "intent": "activities",
+    "url": "https://www.waterfront.co.za/attractions/two-oceans-aquarium",
+    "evidence": "Current official V&A Waterfront page lists the Two Oceans Aquarium as an active year-round Waterfront attraction with sharks, penguins, kelp forest exhibits and daily opening hours.",
+    "verifiedAt": "2026-09-25T15:02:00Z"
+  },
+  {
+    "researchStatus": "RESEARCH_ONLY",
+    "affiliateStatus": "NOT_REVIEWED",
+    "publicActivationAllowed": false,
+    "sponsored": false,
+    "paidPriorityAllowed": false,
+    "contacted": false,
+    "id": "activities-orpen-kruger-guided-drives",
+    "placeId": "orpen-kruger",
+    "name": "Orpen Rest Camp Guided Game Drives",
+    "country": "South Africa",
+    "intent": "activities",
+    "url": "https://www.sanparks.org/parks/kruger/camps/main-rest-camps/orpen",
+    "evidence": "Current official SANParks Orpen Rest Camp page lists guided bush walks and game drives with trained field guides as active camp activities.",
+    "verifiedAt": "2026-09-25T15:02:00Z"
   }
 ]
