@@ -10,7 +10,7 @@ let observations=[];try{observations=JSON.parse(fs.readFileSync("data/provider-o
 const research=JSON.parse(fs.readFileSync("data/embed-research-candidates.json","utf8"));
 const providerFamilies=JSON.parse(fs.readFileSync("data/embed-provider-families.json","utf8"));
 const familyResearch=providerFamilyResearchStatus(providerFamilies,{now:new Date()});
-const researchQueue=researchReviewQueue(research,{providerFamilyReport:familyResearch,primaryCount:1});
+const researchQueue=researchReviewQueue(research,{providerFamilyReport:familyResearch,primaryCount:4});
 const reviewQueue=operatorReviewQueue(sources,observations,{now:new Date(),limit:10,targetReady:5});
 
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
