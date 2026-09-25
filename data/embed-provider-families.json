@@ -948,5 +948,153 @@
       "https://en.vedur.is/about-imo/the-web/conditions/",
       "https://en.vedur.is/weather/observations/webcams/reykjavik/"
     ]
+  },
+  {
+    "id": "amden-weesen-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Amden Weesen Tourismus",
+    "discoveryProviderAliases": [
+      "Amden & Weesen Tourism"
+    ],
+    "familyLabel": "Official Amden Weesen live webcam network",
+    "researchUrl": "https://www.amden-weesen.ch/en/plan-your-trip/webcams",
+    "termsUrl": "https://www.amden-weesen.ch/impressum",
+    "verifiedAt": "2026-09-25T14:30:00Z",
+    "permissionEvidence": "Amden Weesen Tourismus publishes several live webcam views, including iframe-based views. Its current imprint states that copyright in its own website content belongs to Amden Weesen Tourismus and that reproduction of graphics, sounds and texts in other electronic or printed publications is not permitted without express consent. No separate public webcam reuse/embed licence was found, so ERN keeps the source link-only.",
+    "permissionStatus": "OFFICIAL_LIVE_WEBCAMS_REPRODUCTION_REQUIRES_EXPRESS_CONSENT",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER_OR_IMAGE",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPRESS_CONSENT_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_AMDEN_WEESEN_OR_CAMERA_RIGHTSHOLDER_GRANTS_SPECIFIC_EMBED_OR_IMAGE_REUSE_PERMISSION",
+    "networkFamily": "amden-weesen.ch",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T14:30:00Z",
+    "communityGuidelinesUrl": "https://www.amden-weesen.ch/impressum",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "EXPRESS_CONSENT_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.amden-weesen.ch/en/plan-your-trip/webcams",
+      "https://www.amden-weesen.ch/impressum"
+    ]
+  },
+  {
+    "id": "environment-canterbury-regional-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Environment Canterbury",
+    "familyLabel": "Environment Canterbury regional five-minute webcams",
+    "researchUrl": "https://www.ecan.govt.nz/webcams",
+    "termsUrl": "https://www.ecan.govt.nz/info/copyright/",
+    "verifiedAt": "2026-09-25T14:30:00Z",
+    "permissionEvidence": "Environment Canterbury operates regional webcams with static images updating every five minutes. Its website copyright policy permits website content reuse for personal, informational and non-commercial purposes only; other copying or use, including photos, requires written Council permission. Because ERN is designed to support a future commercial travel service, ERN keeps these images link-only unless written reuse permission or a separately licensed data endpoint is obtained.",
+    "permissionStatus": "FIVE_MINUTE_CURRENT_IMAGES_NONCOMMERCIAL_WEB_REUSE_ONLY_OTHER_USE_REQUIRES_WRITTEN_PERMISSION",
+    "technicalStatus": "DO_NOT_STAGE_IMAGE",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_WRITTEN_COMMERCIAL_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_ENVIRONMENT_CANTERBURY_GRANTS_WRITTEN_REUSE_PERMISSION_FOR_ERN_OR_A_SEPARATE_LICENSED_ENDPOINT_APPLIES",
+    "networkFamily": "ecan.govt.nz",
+    "termsEffectiveAt": "2020-11-11",
+    "termsReviewedAt": "2026-09-25T14:30:00Z",
+    "communityGuidelinesUrl": "https://www.ecan.govt.nz/info/copyright/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "COMMERCIAL_REUSE_REQUIRES_WRITTEN_PERMISSION",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.ecan.govt.nz/webcams",
+      "https://www.ecan.govt.nz/info/copyright/"
+    ]
+  },
+  {
+    "id": "farm-tomita-live-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Farm Tomita",
+    "familyLabel": "Official Farm Tomita current webcam images",
+    "researchUrl": "https://www.farm-tomita.co.jp/en/",
+    "termsUrl": "https://www.farm-tomita.co.jp/en/news/detail.asp?id=316",
+    "verifiedAt": "2026-09-25T14:30:00Z",
+    "permissionEvidence": "Farm Tomita's official site currently publishes live webcam images of its flower fields. Its current visitor rules expressly prohibit commercial photography and business activities on the property, and the reviewed public site does not publish a third-party webcam image reuse or embed licence. ERN therefore does not infer commercial reuse rights from the public webcam display.",
+    "permissionStatus": "OFFICIAL_LIVE_WEBCAM_NO_PUBLIC_THIRD_PARTY_REUSE_GRANT_FOUND",
+    "technicalStatus": "DO_NOT_STAGE_IMAGE",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_FARM_TOMITA_GRANTS_SPECIFIC_WEBCAM_IMAGE_REUSE_PERMISSION",
+    "networkFamily": "farm-tomita.co.jp",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T14:30:00Z",
+    "communityGuidelinesUrl": "https://www.farm-tomita.co.jp/en/news/detail.asp?id=316",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "NO_PUBLIC_THIRD_PARTY_REUSE_GRANT_FOUND",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.farm-tomita.co.jp/en/",
+      "https://www.farm-tomita.co.jp/en/news/detail.asp?id=316"
+    ]
+  },
+  {
+    "id": "lake-lucerne-navigation-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Lake Lucerne Navigation Company (SGV) AG",
+    "discoveryProviderAliases": [
+      "Lake Lucerne Navigation Company"
+    ],
+    "familyLabel": "Official Lake Lucerne current webcam view",
+    "researchUrl": "https://www.lakelucerne.ch/en/",
+    "termsUrl": "https://www.lakelucerne.ch/en/disclaimer/",
+    "verifiedAt": "2026-09-25T14:30:00Z",
+    "permissionEvidence": "SGV's current disclaimer states that all website content is copyright-protected, permits downloading/printing text or images for private purposes, and strictly prohibits other use or reproduction without explicit consent of the copyright or trademark owner. ERN therefore keeps the current webcam/image source link-only unless SGV grants reuse permission.",
+    "permissionStatus": "PRIVATE_IMAGE_USE_ALLOWED_OTHER_REPRODUCTION_REQUIRES_EXPLICIT_CONSENT",
+    "technicalStatus": "DO_NOT_STAGE_IMAGE",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_CONSENT_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_SGV_GRANTS_SPECIFIC_CURRENT_IMAGE_REUSE_PERMISSION",
+    "networkFamily": "lakelucerne.ch",
+    "termsEffectiveAt": "2015-06-26",
+    "termsReviewedAt": "2026-09-25T14:30:00Z",
+    "communityGuidelinesUrl": "https://www.lakelucerne.ch/en/disclaimer/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "NONPRIVATE_REUSE_REQUIRES_EXPLICIT_CONSENT",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.lakelucerne.ch/en/disclaimer/"
+    ]
+  },
+  {
+    "id": "oeschinensee-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Gondelbahn Kandersteg-Oeschinensee AG",
+    "discoveryProviderAliases": [
+      "Oeschinensee"
+    ],
+    "familyLabel": "Official Oeschinensee live webcam images",
+    "researchUrl": "https://www.oeschinensee.ch/en/webcams/",
+    "termsUrl": "https://www.oeschinensee.ch/en/medien/",
+    "verifiedAt": "2026-09-25T14:30:00Z",
+    "permissionEvidence": "Oeschinensee currently publishes multiple live webcam images. Its media guidance says images may be used only with source attribution and that image releases for commercial purposes must be requested from Oeschinensee. Because ERN is intended to become a commercial travel product, ERN keeps the webcam images link-only unless a commercial image release specifically covers their reuse.",
+    "permissionStatus": "IMAGE_ATTRIBUTION_REQUIRED_COMMERCIAL_IMAGE_RELEASE_MUST_BE_REQUESTED",
+    "technicalStatus": "DO_NOT_STAGE_IMAGE",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_COMMERCIAL_IMAGE_RELEASE_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_OESCHINENSEE_GRANTS_A_COMMERCIAL_RELEASE_COVERING_WEBCAM_IMAGE_REUSE",
+    "networkFamily": "oeschinensee.ch",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T14:30:00Z",
+    "communityGuidelinesUrl": "https://www.oeschinensee.ch/en/medien/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "COMMERCIAL_IMAGE_RELEASE_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.oeschinensee.ch/en/webcams/",
+      "https://www.oeschinensee.ch/en/medien/"
+    ]
   }
 ]
