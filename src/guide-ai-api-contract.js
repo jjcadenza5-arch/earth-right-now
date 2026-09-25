@@ -12,7 +12,7 @@ export const GUIDE_AI_API_CONTRACT=Object.freeze({
 });
 
 const ID=/^[a-z0-9][a-z0-9._-]{0,119}$/;
-const KEYS=new Set(["version","query","language","placeId","sourceIds","sessionId"]);
+const KEYS=new Set(["version","query","language","placeId","sourceIds","sessionId","requestId"]);
 
 export function guideAiRequestEnvelope(input={}){
   const unknown=Object.keys(input).filter(k=>!KEYS.has(k));
@@ -30,7 +30,9 @@ export function guideAiRequestEnvelope(input={}){
   if(sourceIds.some(id=>!ID.test(id)))return{ok:false,reason:"INVALID_SOURCE_ID"};
   const sessionId=input.sessionId==null?null:String(input.sessionId).trim();
   if(sessionId&&(!/^anon_[A-Za-z0-9_-]{24,90}$/.test(sessionId)))return{ok:false,reason:"OPAQUE_SESSION_ID_REQUIRED"};
-  return{ok:true,request:{version:GUIDE_AI_API_VERSION,query,language,placeId,sourceIds,sessionId}};
+  const requestId=String(input.requestId||"").trim();
+  if(!/^req_[A-Za-z0-9_-]{20,72}$/.test(requestId))return{ok:false,reason:requestId?"INVALID_REQUEST_ID":"REQUEST_ID_REQUIRED"};
+  return{ok:true,request:{version:GUIDE_AI_API_VERSION,query,language,placeId,sourceIds,sessionId,requestId}};
 }
 
 export function guideAiPublicResponse(input={}){
