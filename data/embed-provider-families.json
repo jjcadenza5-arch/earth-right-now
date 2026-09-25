@@ -584,5 +584,33 @@
       "https://www.skylinewebcams.com/terms-of-use.html",
       "https://www.skylinewebcams.com/webcam-copyright.html"
     ]
+  },
+  {
+    "id": "randwick-beach-cams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Randwick City Council",
+    "familyLabel": "Randwick City Council live beach cameras",
+    "researchUrl": "https://www.randwick.nsw.gov.au/facilities-and-recreation/explore-randwick-city/beach-cams",
+    "termsUrl": "https://www.randwick.nsw.gov.au/about-us/administration/copyright",
+    "verifiedAt": "2026-09-25T09:44:00Z",
+    "permissionEvidence": "Randwick City Council currently publishes live beach cams but explicitly says it has added security measures because of unauthorised restreaming. Council copyright guidance permits ordinary website material downloads for personal, in-house or non-commercial use, while reproduction, storage or transmission for other purposes requires formal permission; it also warns that third-party material may carry separate rights. ERN therefore must not restream or frame the beach camera feeds and keeps them link-only unless Council grants specific permission.",
+    "permissionStatus": "PUBLIC_BEACH_CAMS_UNAUTHORISED_RESTREAMING_BLOCKED_SPECIFIC_PERMISSION_REQUIRED",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_SPECIFIC_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_RANDWICK_COUNCIL_GRANTS_SPECIFIC_BEACH_CAM_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "randwick.nsw.gov.au",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T09:44:00Z",
+    "communityGuidelinesUrl": "https://www.randwick.nsw.gov.au/facilities-and-recreation/explore-randwick-city/beach-cams",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "UNAUTHORISED_RESTREAMING_EXPLICITLY_BLOCKED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.randwick.nsw.gov.au/facilities-and-recreation/explore-randwick-city/beach-cams",
+      "https://www.randwick.nsw.gov.au/about-us/administration/copyright"
+    ]
   }
 ]
