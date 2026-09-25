@@ -1,3 +1,8 @@
+## 2026-09-25 — Guide action-link localization
+- Removed the two remaining English-only action labels inside the public ERN Guide.
+- "For places & cameras" and "About Now Moments" now follow the selected ERN language across English, Thai, German, French, Spanish, Japanese and Chinese.
+- Search/ranking/currentness behavior is unchanged.
+
 ## 2026-09-25 — Operator review evidence batch isolation
 - Scoped browser-local operator evidence to a deterministic review-batch signature derived from the exact current review targets, embed URLs and proof baselines.
 - Yesterday's HUMAN_PLAYBACK observations can no longer remain selected as if they were today's renewal evidence merely because the source ID is the same.

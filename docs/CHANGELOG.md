@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-25 — Guide link localization
+- Localized the remaining Guide action-link labels across all seven public languages.
+
 ## 2026-09-25 — Review evidence isolation
 - Operator Review local evidence is now scoped to the exact current review batch, preventing stale browser selections from masquerading as fresh renewals.
 

@@ -356,10 +356,10 @@ function guideResponse(q){
  const intent=guideIntent(q);
  if(!intent.raw)return{text:guideMsg("welcome"),items:[]};
  const nq=normalizeSearch(q),ownerIntent=/\b(add|submit|owner|my camera|my business|my place|list my|camera owner)\b/.test(nq);
- if(ownerIntent)return{text:guideMsg("owner"),items:[],link:{href:"./for-places.html",label:"For places & cameras"}};
+ if(ownerIntent)return{text:guideMsg("owner"),items:[],link:{href:"./for-places.html",label:guideMsg("forPlaces")}};
  const businessIntent=/\b(cafe|café|restaurant|shop|market|farm|small business|local business|hotel|guesthouse|bakery|food)\b/.test(nq);
  if(businessIntent){const locals=localDirectoryMatch(q).slice(0,4);if(locals.length)return{text:guideMsg("businessFound"),items:[],locals};return{text:guideMsg("businessEmpty"),items:state.sources.filter(featureEligible).filter(s=>localPlaceSignals(s).worth).sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,4)};}
- if(/moment|upload|photo|picture|visitor/.test(normalizeSearch(q)))return{text:guideMsg("moments"),items:[],link:{href:"./now-moments.html",label:"About Now Moments"}};
+ if(/moment|upload|photo|picture|visitor/.test(normalizeSearch(q)))return{text:guideMsg("moments"),items:[],link:{href:"./now-moments.html",label:guideMsg("aboutMoments")}};
  if(intent.near&&state.selected){const items=guideNearby(state.selected);return{text:items.length?guideMsg("nearbyFound",{place:state.selected.title}):guideMsg("nearbyEmpty"),items};}
  const placeMatches=guidePlaceMatches(q);
  if(placeMatches.length&&!intent.surprise&&!intent.near&&!intent.local&&!intent.peaceful&&!intent.golden&&!intent.night&&!intent.wildlife&&!intent.beach&&!intent.mountain&&!intent.city&&!intent.happening)return{text:guideMsg("placeFound",{count:placeMatches.length}),items:placeMatches.slice(0,4)};
