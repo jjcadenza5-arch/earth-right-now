@@ -8,6 +8,7 @@ export const GUIDE_AI_DEPLOYMENT_REQUIREMENTS=Object.freeze([
   "observability",
   "safetyBoundary",
   "publishedPrivacyNotice",
+  "privacyDataHandling",
   "deterministicFallback",
   "costGuard"
 ]);
@@ -24,6 +25,7 @@ export function guideAiDeploymentReadiness(evidence={}){
     observability:evidence.observability===true,
     safetyBoundary:evidence.safetyBoundary===true,
     publishedPrivacyNotice:evidence.privacyPublished===true&&https(evidence.privacyUrl),
+    privacyDataHandling:evidence.providerDataHandlingReviewed===true&&evidence.rawPromptLoggingDisabled===true&&evidence.rawResponseLoggingDisabled===true&&evidence.visitorProfilingDisabled===true,
     deterministicFallback:evidence.deterministicFallback===true,
     costGuard:cost.ready
   };
