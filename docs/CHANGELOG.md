@@ -1,3 +1,9 @@
+## 2026-09-25 — Earth Signal deployment handoff and Guide aggregation
+- Added a validated, non-secret deployment evidence manifest and made both status reporting and CI/Operations depend on it.
+- Contribution status now requires deployment evidence as well as capability checks.
+- Added conservative Guide aggregation for short-lived visitor signals without converting repeated reports into verified facts.
+- Earth Signals remain READ_ONLY / NOT_DEPLOYED.
+
 ## 2026-09-25 — Correct Earth Signal visitor/report rate limiting
 - Replaced shared-store submission limiting with opaque visitor-scoped rate-limit state so one visitor cannot consume another's quota.
 - Production deployment now requires pseudonymous rate subjects and proof that raw network identifiers are not stored.
