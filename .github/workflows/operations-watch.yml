@@ -17,6 +17,7 @@ on:
       - "data/submission-transport.json"
       - "data/earth-signal-deployment.json"
       - "data/guide-ai-deployment.json"
+      - "data/local-directory.json"
       - "src/**"
       - "scripts/**"
       - "package.json"
@@ -87,6 +88,7 @@ jobs:
           npm --silent run business:submission-transport | tee ern-ops/submission-transport-readiness.json
           npm --silent run earth-signals:status | tee ern-ops/earth-signals-status.json
           npm --silent run guide-ai:status | tee ern-ops/guide-ai-status.json
+          npm --silent run local:directory-status | tee ern-ops/local-directory-status.json
           npm --silent run operations:trend-snapshot -- ern-ops/source-availability.json | tee ern-ops/trend-current.json
           npm --silent run operations:status | tee ern-ops/operations-status.json
       - name: Compare operations trend
