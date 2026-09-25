@@ -105,5 +105,21 @@
     "reviewedEmbedUrl": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw",
     "reviewBatch": "aad67aa5f7c8fe3a",
     "reviewNote": "Deployed-origin human review confirmed the exact official Hida-Takayama YouTube channel-live embed plays current live content after explicit visitor Play interaction. Preserve click-to-play; do not assume autoplay."
+  },
+  {
+    "id": "youtube-auckland-viaduct-channel-live",
+    "status": "RESEARCH_ONLY",
+    "provider": "Auckland Viaduct View",
+    "platform": "YouTube",
+    "sourceUrl": "https://www.viaduct.co.nz/",
+    "candidateEmbedUrl": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ",
+    "ownerEvidence": "Official Viaduct Harbour destination page exposes 'Auckland Viaduct View — live' through this YouTube channel-live embed target.",
+    "currentEvidence": "The current official Viaduct Harbour page labels the view as live and links the live view to a stable YouTube channel-live player.",
+    "discoveredAt": "2026-09-25T06:42:00Z",
+    "permissionReview": "PROVIDER_PAGE_USES_STANDARD_YOUTUBE_CHANNEL_LIVE_EMBED_DEPLOYED_TEST_REQUIRED",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_UNTIL_REVIEW",
+    "currentEvidenceReviewedAt": "2026-09-25T06:42:00Z",
+    "platformEvidence": "The provider's own current page uses a stable standard YouTube channel-live embed. ERN may test that branded player but still requires deployed human playback before promotion."
   }
 ]
