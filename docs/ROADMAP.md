@@ -34,16 +34,6 @@ Use small open questions to invite self-directed discovery: **Do not push the an
 The public privacy notice now documents the future generative Guide boundary: server-side secret isolation, trusted ERN context rehydration, no raw prompt/response operational logging, no visitor profiling, keyed rate limiting without raw network identifiers, and deterministic fallback. This completes only the published-privacy-notice requirement. The generative Guide remains `NOT_DEPLOYED`; endpoint, provider-specific data handling, rate limits, idempotency, cancellation, observability, safety and hard cost-stop evidence are still required before activation.
 
 
-## Cross-cutting priority — Private travel-research breadth and depth
-Private travel-option research remains completely separate from public commercial inventory. As of 2026-09-25, ERN has staged 31 existence-verified research options across 21 covered destinations, spanning stays, tickets and activities. No affiliate relationship, sponsorship, contact, tracked link or public activation is implied.
-
-Operations now uses two distinct queues:
-- commercial onboarding breadth: skip destinations already covered by either a current public offer or private real-option research, so new-destination research does not repeat completed work;
-- commercial research depth: identify missing intent categories (activities, tickets, transport, eat, stay, services) at already researched destinations, without forecasting demand or revenue.
-
-Both queues remain private, non-promotional and fail-closed. Affiliate applications still require an explicit user decision.
-
-
 ## Cross-cutting priority — Minimum LIVE HERE renewal workload
 Operator playback review now treats due/expired HUMAN_PLAYBACK proof as renewal debt but makes only the minimum number of renewals needed to preserve the 5/5 LIVE HERE target primary. Extra renewal debt stays visible in backlog. Human playback confirmation remains mandatory and nothing renews automatically. This reduces repetitive operator work without lowering the playback-truth boundary.
 
