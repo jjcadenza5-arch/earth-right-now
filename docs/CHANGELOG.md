@@ -1,3 +1,8 @@
+## 2026-09-25 — Earth Signals added to Operations packet
+- Added retained Earth Signal readiness diagnostics to the daily Operations packet and operator brief.
+- Packet integrity now fails closed on inconsistent activation, deployment or privacy states.
+- Latest Operations packet build and integrity validation completed successfully.
+
 ## 2026-09-25 — Harden Earth Signal stored records
 - Added strict signal/report record validators and enforced them at the storage boundary.
 - Backend readiness now distinguishes durable-storage/schema/service preparation from actual deployed transport.
