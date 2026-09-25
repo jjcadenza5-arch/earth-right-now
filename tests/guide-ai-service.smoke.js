@@ -11,6 +11,7 @@ const modelAdapter={generate:async({trustedContext})=>({answer:"A is a current E
 const subject="anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 const context=(overrides={})=>({
   capabilities:all,catalog,costGuard,modelAdapter,
+  resolver:{resolve:async({placeHint})=>({placeId:placeHint||"p",sourceIds:["a"]})},
   rateLimiter:createInMemoryGuideAiRateLimiter(),
   metrics:createInMemoryGuideAiMetrics(),
   rateSubject:subject,
@@ -35,8 +36,11 @@ const costBlocked=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show
 assert.equal(costBlocked.mode,"DETERMINISTIC_ONLY");
 assert.equal(costBlocked.reason,"COST_GUARD_BLOCKED");
 
-const missingLimiter=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p"},{capabilities:all,catalog,costGuard,modelAdapter,metrics:createInMemoryGuideAiMetrics(),rateSubject:subject});
+const missingLimiter=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p"},{capabilities:all,catalog,costGuard,modelAdapter,resolver:{resolve:async()=>({placeId:"p",sourceIds:["a"]})},metrics:createInMemoryGuideAiMetrics(),rateSubject:subject});
 assert.equal(missingLimiter.reason,"RATE_LIMITER_REQUIRED");
+
+const noResolver=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p"},{capabilities:all,catalog,costGuard,modelAdapter,rateLimiter:createInMemoryGuideAiRateLimiter(),metrics:createInMemoryGuideAiMetrics(),rateSubject:subject});
+assert.equal(noResolver.reason,"DETERMINISTIC_RESOLVER_REQUIRED");
 
 const rawIdentity=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p"},context({rateSubject:"192.0.2.1"}));
 assert.equal(rawIdentity.reason,"OPAQUE_RATE_SUBJECT_REQUIRED");
