@@ -13,3 +13,12 @@ assert.match(exhaustedBrief,/Second-provider research state/);
 assert.match(exhaustedBrief,/4\/4 staged candidate/);
 assert.match(exhaustedBrief,/RESEARCH_NEW_PROVIDER_FAMILY/);
 assert.match(exhaustedBrief,/Research a genuinely new embeddable provider family/);
+
+const prepBrief=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ researchReviewQueue:{state:"PROVIDER_PREPARATION_READY",exhausted:false,primary:[],preparation:[{id:"widget",provider:"Widget Provider",familyLabel:"Official widget",technicalStatus:"GENERATED_WIDGET_CODE_REQUIRED",nextAction:"GENERATE_WIDGET"}]}
+});
+assert.match(prepBrief,/Provider-generated integration preparation/);
+assert.match(prepBrief,/Widget Provider/);
+assert.match(prepBrief,/Prepare the exact provider-generated target/);
