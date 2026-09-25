@@ -1,3 +1,4 @@
+import {validateEarthSignalStoredRecord,validateEarthSignalReportRecord} from "./earth-signal-record-schema.js";
 export const EARTH_SIGNAL_STORAGE_METHODS=Object.freeze([
   "putSignal",
   "listSignals",
@@ -27,6 +28,13 @@ export function createInMemoryEarthSignalStorage(seed=[]){
   let reports=[];
   return{
     async putSignal(record){
+      const validation=validateEarthSignalStoredRecord(record);
+      if(!validation.valid){
+        const error=new Error("EARTH_SIGNAL_RECORD_INVALID");
+        error.code="EARTH_SIGNAL_RECORD_INVALID";
+        error.errors=validation.errors;
+        throw error;
+      }
       signals=signals.filter(x=>String(x.id)!==String(record.id));
       signals.push({...record});
       return{...record};
@@ -40,6 +48,13 @@ export function createInMemoryEarthSignalStorage(seed=[]){
       }).map(x=>({...x}));
     },
     async putReport(report){
+      const validation=validateEarthSignalReportRecord(report);
+      if(!validation.valid){
+        const error=new Error("EARTH_SIGNAL_REPORT_INVALID");
+        error.code="EARTH_SIGNAL_REPORT_INVALID";
+        error.errors=validation.errors;
+        throw error;
+      }
       reports.push({...report});
       signals=signals.map(x=>String(x.id)===String(report.signalId)?{...x,reported:true}:x);
       return{...report};
