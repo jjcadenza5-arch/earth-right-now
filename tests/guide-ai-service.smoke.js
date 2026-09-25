@@ -49,6 +49,11 @@ assert.equal(noResolver.reason,"DETERMINISTIC_RESOLVER_REQUIRED");
 
 const rawIdentity=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p",requestId:"req_RAWIDENTITYAAAAAAAAAAAAAA"},context({rateSubject:"192.0.2.1"}));
 assert.equal(rawIdentity.reason,"OPAQUE_RATE_SUBJECT_REQUIRED");
+const clientOnly=await guideAiService(
+ {version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p",sessionId:subject,requestId:"req_CLIENTONLYAAAAAAAAAAAAAAA"},
+ context({rateSubject:null})
+);
+assert.equal(clientOnly.reason,"RATE_SUBJECT_REQUIRED");
 
 const metrics=createInMemoryGuideAiMetrics();
 const observed=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p",requestId:"req_METRICSAAAAAAAAAAAAAAAAA"},context({metrics}));
