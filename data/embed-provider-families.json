@@ -46,5 +46,34 @@
     "playerBrandingRequired": true,
     "restreamAllowed": false,
     "permissionConfirmed": false
+  },
+  {
+    "id": "earthcam-public-network",
+    "status": "RESEARCH_ONLY",
+    "provider": "EarthCam",
+    "familyLabel": "EarthCam public webcam network",
+    "researchUrl": "https://www.earthcam.com/",
+    "termsUrl": "https://www.earthcam.com/company/tos.php",
+    "verifiedAt": "2026-09-25T06:18:00Z",
+    "permissionEvidence": "EarthCam's current Link to Us page says not to embed EarthCam live images and not to frame EarthCam pages. Its FAQ says embedding EarthCam live streams on a website or app requires discussing a content license with EarthCam. ERN therefore keeps public EarthCam network sources link-only unless a separate license is obtained.",
+    "permissionStatus": "PUBLIC_EMBED_NOT_PERMITTED_LICENSE_REQUIRED",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_LICENSE_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_EXPLICIT_LICENSE_OBTAINED",
+    "networkFamily": "earthcam.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T06:18:00Z",
+    "communityGuidelinesUrl": "https://www.earthcam.com/site/linktous.php",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "LICENSE_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.earthcam.com/site/linktous.php",
+      "https://www.earthcam.com/faq.php",
+      "https://www.earthcam.com/company/tos.php"
+    ]
   }
 ]
