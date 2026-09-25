@@ -228,25 +228,31 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   }
   const providerTargetsBlocked=Boolean(providerGeneratedTargets?.items?.length)&&providerGeneratedTargets.items.every(item=>Boolean(item?.blockerReason)&&["EXACT_PROVIDER_CODE_REQUIRED","EXACT_PROVIDER_TARGET_URL_REQUIRED"].includes(item?.state));
   const submissionExternalOnly=Boolean(submissionTransport)&&submissionTransport.active===false&&Array.isArray(submissionTransport.missing)&&submissionTransport.missing.length===1&&submissionTransport.missing[0]==="HTTPS_REVIEW_ENDPOINT";
-  const autonomousHold=
-    (snapshot?.insideERN?.readyShortfall||0)===0&&
-    (operatorReviewQueue?.renewalRequiredCount??operatorReviewQueue?.renewalCount??0)===0&&
-    (playbackEvidenceConsistency?.summary?.issues||0)===0&&
-    (sourceRevalidationTriage?.immediate||[]).length===0&&
-    providerDiscoveryQueue?.state==="CURRENT_CATALOG_RESEARCH_COMPLETE"&&
-    providerTargetsBlocked&&
-    commercialOnboarding?.state==="PILOT_COVERAGE_REACHED"&&
-    (commercialResearchDepth?.items||[]).length===0&&
-    localDirectory?.state==="PILOT_COMPLETE"&&
-    guideAi?.mode==="DETERMINISTIC_ONLY"&&guideAi?.deterministicFallback===true&&
-    earthSignals?.mode==="READ_ONLY"&&earthSignals?.privacyNoticeDraft?.published===true&&
-    submissionExternalOnly;
+  const autonomousHoldChecks={
+    insideTargetHealthy:(snapshot?.insideERN?.readyShortfall||0)===0,
+    noRequiredRenewal:(operatorReviewQueue?.renewalRequiredCount??operatorReviewQueue?.renewalCount??0)===0,
+    playbackLedgerConsistent:(playbackEvidenceConsistency?.summary?.issues||0)===0,
+    noImmediateRevalidation:(sourceRevalidationTriage?.immediate||[]).length===0,
+    providerDiscoveryComplete:providerDiscoveryQueue?.state==="CURRENT_CATALOG_RESEARCH_COMPLETE",
+    providerTargetsExternallyBlocked:providerTargetsBlocked,
+    commercialBreadthComplete:commercialOnboarding?.state==="PILOT_COVERAGE_REACHED",
+    commercialDepthComplete:(commercialResearchDepth?.items||[]).length===0,
+    localEarthComplete:localDirectory?.state==="PILOT_COMPLETE",
+    guideLocallyComplete:guideAi?.mode==="DETERMINISTIC_ONLY"&&guideAi?.deterministicFallback===true,
+    earthSignalsLocallyComplete:earthSignals?.mode==="READ_ONLY"&&earthSignals?.privacyNoticeDraft?.published===true,
+    submissionLocallyComplete:submissionExternalOnly
+  };
+  const autonomousHoldBlockers=Object.entries(autonomousHoldChecks).filter(([,passed])=>!passed).map(([key])=>key);
+  const autonomousHold=autonomousHoldBlockers.length===0;
 
+  lines.push("","## Autonomous work state");
   if(autonomousHold){
-    lines.push("","## Autonomous work state");
     lines.push("- **AUTONOMOUS HOLD** — no high-priority local implementation or research lane remains open.");
     lines.push("- Resume only when something materially changes: playback evidence ages/fails, the catalog changes, an exact provider target becomes available, or ERN deliberately opens an external provider/backend/commercial decision phase.");
     lines.push("- Do not create new tasks merely to keep activity moving; hold completed and externally blocked lanes.");
+  }else{
+    lines.push(`- Local autonomous work remains open in: ${autonomousHoldBlockers.join(", ")}.`);
+    lines.push("- Work only those failed hold checks; do not reopen lanes whose hold check already passes.");
   }
   lines.push("","_Read-only operational summary. It does not mutate source truth, health, permissions, ranking or visitor content._");
   return lines.join("\n");
