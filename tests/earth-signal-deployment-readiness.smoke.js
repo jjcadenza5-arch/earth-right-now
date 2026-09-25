@@ -4,7 +4,7 @@ import {earthSignalDeploymentReadiness,earthSignalCapabilitiesFromDeployment} fr
 const empty=earthSignalDeploymentReadiness();
 assert.equal(empty.ready,false);
 assert.equal(empty.state,"NOT_DEPLOYED");
-assert.equal(empty.missing.length,10);
+assert.equal(empty.missing.length,11);
 assert.deepEqual(earthSignalCapabilitiesFromDeployment(),{
   transport:false,rateLimits:false,moderation:false,reporting:false,expiryDeletion:false,privacyNotice:false
 });
@@ -18,12 +18,15 @@ assert.equal(partial.ready,false);
 assert.equal(partial.checks.httpsEndpoint,true);
 assert.equal(partial.checks.durableStorage,true);
 assert.equal(partial.checks.serverRateLimits,true);
+assert.equal(partial.checks.pseudonymousRateSubjects,false);
 assert.equal(partial.checks.publishedPrivacyNotice,false);
 
 const fullEvidence={
   endpointUrl:"https://signals.example.test/api/earth-signals",
   durableStorage:true,
   serverRateLimits:true,
+  pseudonymousRateSubjects:true,
+  rawNetworkIdentifiersStored:false,
   moderation:true,
   reportQueue:true,
   expiryCleanup:true,
