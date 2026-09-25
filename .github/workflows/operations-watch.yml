@@ -9,6 +9,7 @@ on:
       - "data/provider-observations.json"
       - "data/embed-research-candidates.json"
       - "data/embed-provider-families.json"
+      - "data/provider-generated-targets.json"
       - "data/affiliate-partners.json"
       - "data/travel-offers.json"
       - "data/commercial-research-candidates.json"
@@ -73,6 +74,7 @@ jobs:
           npm --silent run inside:research | tee ern-ops/embed-research.json
           npm --silent run inside:research-preflight | tee ern-ops/embed-research-preflight.json
           npm --silent run inside:provider-family-research | tee ern-ops/provider-family-research.json
+          npm --silent run inside:provider-generated-targets | tee ern-ops/provider-generated-targets.json
           npm --silent run inside:provider-discovery | tee ern-ops/provider-discovery-queue.json
           npm --silent run inside:research-review-queue -- ern-ops/embed-research-preflight.json ern-ops/provider-family-research.json | tee ern-ops/research-review-queue.json
           npm --silent run business:inventory | tee ern-ops/commercial-inventory.json
