@@ -12,8 +12,18 @@ function key(subject,placeId){
 export function earthSignalRateSubject(input={}){
   const subject=String(input.subject||"").trim();
   if(!subject)return{ok:false,reason:"RATE_SUBJECT_REQUIRED"};
-  if(subject.length>160)return{ok:false,reason:"RATE_SUBJECT_TOO_LONG"};
+  if(subject.length>96)return{ok:false,reason:"RATE_SUBJECT_TOO_LONG"};
+  if(!/^anon_[A-Za-z0-9_-]{24,90}$/.test(subject))return{ok:false,reason:"OPAQUE_RATE_SUBJECT_REQUIRED"};
   return{ok:true,subject};
+}
+
+export async function deriveEarthSignalRateSubject(clientToken,{digest}={}){
+  const token=String(clientToken||"").trim();
+  if(!/^[A-Za-z0-9_-]{24,128}$/.test(token))return{ok:false,reason:"CLIENT_TOKEN_INVALID"};
+  if(typeof digest!=="function")return{ok:false,reason:"SUBJECT_DIGEST_REQUIRED"};
+  const value=String(await digest(token)||"").replace(/[^A-Za-z0-9_-]/g,"");
+  if(value.length<24)return{ok:false,reason:"SUBJECT_DIGEST_INVALID"};
+  return earthSignalRateSubject({subject:"anon_"+value.slice(0,90)});
 }
 
 export function createInMemoryEarthSignalRateLimiter(){
