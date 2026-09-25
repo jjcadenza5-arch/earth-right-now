@@ -14,6 +14,7 @@ export async function guideAiService(input={},context={}){
   if(!parsed.ok){await metric(context.metrics,"inputRejected",{latencyMs:Date.now()-started,inputChars:String(input?.query||"").length});return{ok:false,mode:"GENERATIVE_ENABLED",stage:"INPUT",reason:parsed.reason}}
   const request=parsed.request;
   if(!Array.isArray(context.catalog))return fallback("TRUSTED_CATALOG_REQUIRED",request);
+  if(typeof context.resolver?.resolve!=="function")return fallback("DETERMINISTIC_RESOLVER_REQUIRED",request);
   if(typeof context.modelAdapter?.generate!=="function")return fallback("MODEL_ADAPTER_REQUIRED",request);
   if(typeof context.costGuard?.allow!=="function"||typeof context.costGuard?.commit!=="function")return fallback("COST_GUARD_REQUIRED",request);
   if(typeof context.rateLimiter?.begin!=="function"||typeof context.rateLimiter?.end!=="function")return fallback("RATE_LIMITER_REQUIRED",request);
@@ -25,7 +26,10 @@ export async function guideAiService(input={},context={}){
   if(!rate?.allowed){await metric(context.metrics,"rateLimited",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(rate?.reason||"RATE_LIMIT",request)}
 
   try{
-    const trusted=guideAiTrustedContext(request,context.catalog);
+    let selection;
+    try{selection=await context.resolver.resolve({query:request.query,language:request.language,placeHint:request.placeId,sourceHints:request.sourceIds,catalog:context.catalog})}catch{return fallback("DETERMINISTIC_RESOLUTION_FAILED",request)}
+    if(!selection||!Array.isArray(selection.sourceIds))return fallback("DETERMINISTIC_RESOLUTION_INVALID",request);
+    const trusted=guideAiTrustedContext(selection,context.catalog);
     const budget=await context.costGuard.allow({sessionId:subject.subject,queryChars:request.query.length});
     if(!budget?.allowed){await metric(context.metrics,"costBlocked",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(budget?.reason||"COST_GUARD_BLOCKED",request)}
 
