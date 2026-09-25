@@ -60,3 +60,12 @@ Before starting a task, ask:
 If the answer does not justify new work, hold the item and move to another queue.
 
 **ERN should improve continuously, but it should not move in circles.**
+
+## Commercial pilot research complete — 2026-09-25
+
+- Breadth: 30/30 researched places reached; new-destination research is held by default.
+- Private registry: 59 verified research options across those 30 places.
+- Depth: no active default depth candidates remain.
+- Most researched places have at least two distinct intent types.
+- Lauderdale-by-the-Sea and Boulders Beach are explicit depth holds because a second distinct official option is currently weak/duplicative; they reopen only if materially new evidence appears.
+- Do not resume breadth or depth merely to increase counts. Resume only after an explicit commercial decision, material catalog change, or materially stronger evidence for a held place.
