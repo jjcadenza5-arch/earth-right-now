@@ -1,4 +1,4 @@
-export const GUIDE_AI_API_VERSION="2026-09-25.v1";
+export const GUIDE_AI_API_VERSION="2026-09-25.v2";
 export const GUIDE_AI_API_CONTRACT=Object.freeze({
   version:GUIDE_AI_API_VERSION,
   path:"/api/guide",
