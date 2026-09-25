@@ -69,3 +69,15 @@ If the answer does not justify new work, hold the item and move to another queue
 - Most researched places have at least two distinct intent types.
 - Lauderdale-by-the-Sea and Boulders Beach are explicit depth holds because a second distinct official option is currently weak/duplicative; they reopen only if materially new evidence appears.
 - Do not resume breadth or depth merely to increase counts. Resume only after an explicit commercial decision, material catalog change, or materially stronger evidence for a held place.
+
+## Autonomous hold
+
+When all locally actionable lanes are complete, healthy, sufficiently researched, or blocked on real external infrastructure/decisions, Operations must declare **AUTONOMOUS HOLD**.
+
+While in AUTONOMOUS HOLD:
+- do not create research or implementation tasks merely to keep activity moving;
+- do not reopen terminal provider, Local Earth, commercial breadth/depth, or failed-playback work;
+- do not simulate production deployment for Guide, Earth Signals or submissions;
+- resume only after a material trigger: playback proof ages/fails, catalog/source state changes, an exact provider target becomes available, or ERN deliberately opens a provider/backend/commercial decision phase.
+
+This is a successful operating state, not a failure to find work.
