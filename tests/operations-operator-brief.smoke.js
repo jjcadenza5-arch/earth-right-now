@@ -134,3 +134,25 @@ const guideExternalHold=operationsOperatorBrief({
 });
 assert.match(guideExternalHold,/Local generative-Guide groundwork is complete enough for the current phase/);
 assert.match(guideExternalHold,/hold local activation work until that phase is deliberately opened/);
+
+const autonomousHoldBrief=operationsOperatorBrief({
+ snapshot:{insideERN:{ready:6,targetReady:5,readyShortfall:0,recoveryDebt:0},providers:{families:2,targetFamilies:2},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ operatorReviewQueue:{renewalCount:0,renewalRequiredCount:0,primaryItems:[],backlogItems:[],items:[]},
+ playbackEvidenceConsistency:{summary:{issues:0}},
+ sourceRevalidationTriage:{immediate:[]},
+ providerDiscoveryQueue:{state:"CURRENT_CATALOG_RESEARCH_COMPLETE",primary:null,items:[]},
+ providerGeneratedTargets:{items:[
+   {state:"EXACT_PROVIDER_CODE_REQUIRED",blockerReason:"interactive provider generator"},
+   {state:"EXACT_PROVIDER_TARGET_URL_REQUIRED",blockerReason:"dynamic provider asset"}
+ ]},
+ commercialOnboarding:{state:"PILOT_COVERAGE_REACHED",items:[]},
+ commercialResearchDepth:{items:[]},
+ localDirectory:{state:"PILOT_COMPLETE"},
+ guideAi:{mode:"DETERMINISTIC_ONLY",deterministicFallback:true,deployment:{missing:["httpsEndpoint"]}},
+ earthSignals:{mode:"READ_ONLY",privacyNoticeDraft:{published:true},deployment:{missing:["httpsEndpoint"]}},
+ submissionTransport:{active:false,missing:["HTTPS_REVIEW_ENDPOINT"]}
+});
+assert.match(autonomousHoldBrief,/AUTONOMOUS HOLD/);
+assert.match(autonomousHoldBrief,/no high-priority local implementation or research lane remains open/);
+assert.match(autonomousHoldBrief,/Do not create new tasks merely to keep activity moving/);
