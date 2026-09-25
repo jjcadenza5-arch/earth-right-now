@@ -1,6 +1,6 @@
 const SAFE_KEYS=new Set([
  "schemaVersion","status","endpointUrl","secretIsolation","trustedContextRehydration","rateLimits","observability","safetyBoundary",
- "privacyUrl","privacyPublished","deterministicFallback","monthlyCostCeilingUsd","hardStopConfigured","usageMetering","checkedAt","evidenceNote"
+ "privacyUrl","privacyPublished","providerDataHandlingReviewed","rawPromptLoggingDisabled","rawResponseLoggingDisabled","visitorProfilingDisabled","deterministicFallback","monthlyCostCeilingUsd","hardStopConfigured","usageMetering","checkedAt","evidenceNote"
 ]);
 
 export function validateGuideAiDeploymentManifest(manifest={}){
