@@ -1,3 +1,8 @@
+## 2026-09-25 — Executable Earth Signal backend foundation
+- Added fail-closed server pipeline, HTTP adapter, durable-storage contract and deployment-neutral service layer for structured Earth Signals.
+- Added deterministic coverage for validation, server-owned freshness, rate limiting, reporting visibility and 45-minute expiry.
+- Public contribution remains READ_ONLY; no production endpoint or storage service was activated.
+
 ## 2026-09-25 — Earth Signal backend contract v1
 - Added a deployment-neutral structured-signal API contract with server-owned timestamps/expiry, canonical place validation, no free text and no precise coordinates.
 - Earth Signals remain READ_ONLY until all real infrastructure blockers are resolved.
