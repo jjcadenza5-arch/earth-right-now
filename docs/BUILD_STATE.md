@@ -1,3 +1,10 @@
+## 2026-09-25 — Fresh operator playback evidence applied
+- Accepted user-exported deployed-origin review batch `16c76f3fbec0fc76` from `https://earthrightnow.app/review/inside-ern.html`.
+- HUMAN_PLAYBACK renewed/confirmed for Auckland Viaduct Harbour, Bergen — Ulriken Mountain, Cijin Beach — Kaohsiung, La Palma — Aridane Valley, La Palma — Caldera de Taburiente, Ponte di Legno — Adamello, Skeikampen — Mountain Resort, Takayama — Miyagawa & Kaji Bridge, and Verbier using the exact user-recorded timestamps.
+- For confirmed sources, catalog `playbackVerifiedAt` markers and provider-observation HUMAN_PLAYBACK records were updated together semantically at matching timestamps.
+- Metung — Gippsland Lakes returned PLAYBACK_FAILED at 2026-09-25T14:58:52.619Z. It is now DEGRADED + featured hold, its prior playback marker was cleared, and no source-removal or permission-denial inference was made.
+- The evidence packet itself remained non-mutating (`catalogMutationAllowed:false`); the applied repository changes were a separate reviewed action.
+
 ## 2026-09-25 — Guide AI rate identity is server-owned and privacy-safe
 - Removed the client session-ID fallback from the future generative Guide rate-limit boundary. A valid client `sessionId` can no longer substitute for the server-derived pseudonymous rate subject.
 - Production readiness now requires `serverDerivedRateSubject=true` together with `rawNetworkIdentifiersStored=false`; storing raw IP/network identity would fail the deployment gate.
