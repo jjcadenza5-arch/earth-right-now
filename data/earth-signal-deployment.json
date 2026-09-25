@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "status": "NOT_DEPLOYED",
+  "endpointUrl": null,
+  "durableStorage": false,
+  "serverRateLimits": false,
+  "pseudonymousRateSubjects": false,
+  "rawNetworkIdentifiersStored": false,
+  "moderation": false,
+  "reportQueue": false,
+  "expiryCleanup": false,
+  "privacyUrl": null,
+  "privacyPublished": false,
+  "secretIsolation": false,
+  "observability": false,
+  "costGuard": false,
+  "checkedAt": null,
+  "evidenceNote": "Public, non-secret deployment evidence only. Never place credentials, tokens or private infrastructure values in this file."
+}
