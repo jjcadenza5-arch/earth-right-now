@@ -1246,7 +1246,9 @@
     "timeZone": "America/New_York",
     "freshnessEvidence": "Current EarthCam Lauderdale-by-the-Sea page states that it provides live streaming oceanfront HD views of the beach and pier.",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.earthcam.com/usa/florida/lauderdalebythesea/?cam=windjammer"
+    "coordinateSourceUrl": "https://www.earthcam.com/usa/florida/lauderdalebythesea/?cam=windjammer",
+    "commercialDepthResearchHold": true,
+    "commercialDepthResearchHoldReason": "Private research already has a concrete stay. No sufficiently strong distinct official activity candidate is documented yet; hold depth rather than forcing weak or duplicate coverage."
   },
   {
     "provider": "EarthCam",
@@ -2618,7 +2620,9 @@
     "story": "Official SANParks video from the Boulders African Penguin Colony; the provider notes that playback may trail real time by about ten minutes for stability.",
     "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding rights.",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/boulders"
+    "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/boulders",
+    "commercialDepthResearchHold": true,
+    "commercialDepthResearchHoldReason": "Private research already has a Boulders Beach gate ticket. The obvious penguin viewing/boardwalk experience is materially the same visit, so do not manufacture a second intent merely to satisfy depth."
   },
   {
     "id": "sanparks-addo-video",
