@@ -19,5 +19,6 @@
   "rawPromptLoggingDisabled": true,
   "rawResponseLoggingDisabled": true,
   "visitorProfilingDisabled": true,
-  "idempotency": false
+  "idempotency": false,
+  "modelCancellation": false
 }
