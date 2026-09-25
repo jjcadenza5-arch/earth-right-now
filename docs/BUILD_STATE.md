@@ -1,3 +1,13 @@
+## 2026-09-25 — Provider research lane rebuilt; Hida-Takayama staged as the next real test
+- Provider research now has an explicit exhausted state. When every staged candidate has failed deployed HUMAN_PLAYBACK, ERN stops recycling those targets and switches to RESEARCH_NEW_PROVIDER_FAMILY.
+- Added a catalog-grounded provider discovery queue using only healthy/current external-live ERN sources. The queue ranks research leverage only; it never infers permission, embedability, playback or visitor value.
+- EarthCam ranked first and was resolved from current official terms as link-only unless separately licensed. ERN will not stage EarthCam public-network players or frames.
+- National Park Service ranked next. NPS supports official iframe embeds for some multimedia and maintains active webcams, but the reviewed live-webcam path did not expose a reusable specific live player with sufficiently resolved rights. NPS remains research-only pending a specific official live-webcam player path; no human test is requested.
+- SANParks ranked next and was resolved as link-only unless written permission is obtained. Direct cached webcam video files are not staged because SANParks terms prohibit reproduction/broadcast/transmission without prior written consent.
+- Discovery then surfaced Hida-Takayama Live Camera. Its official streaming page currently embeds a stable YouTube channel-live player and explicitly notes that individual YouTube Live URLs change on reconnect. ERN staged the provider-page channel embed rather than a changing video ID.
+- Hida-Takayama candidate `youtube-hida-takayama-channel-live` is now the sole active second-provider HUMAN_PLAYBACK research target. It remains RESEARCH_ONLY / BLOCKED_UNTIL_REVIEW.
+- Latest deployed operator review batch: `aad67aa5f7c8fe3a`. Current 5/5 LIVE HERE readiness remains unchanged.
+
 ## 2026-09-25 — Monterey Open Sea candidate failed deployed playback
 - Recorded HUMAN_PLAYBACK_FAILED for Monterey Bay Aquarium Open Sea Cam from deployed review batch `fbeae45f290ade5b` at 2026-09-25T06:07:28.524Z.
 - Open Sea remains RESEARCH_ONLY / BLOCKED_PLAYBACK_FAILED; this is candidate-specific evidence and does not imply a platform-wide YouTube embed failure.
