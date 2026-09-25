@@ -29,3 +29,13 @@ assert.equal(approvedQueue.primary.length,0);
 assert.equal(approvedQueue.reviewable,0);
 assert.equal(approvedQueue.exhausted,true);
 assert.ok(!approvedQueue.alternates.some(x=>x.id==="approved"));
+
+const batch=researchReviewQueue([
+ {id:"a",provider:"A",playbackReview:"HUMAN_PLAYBACK_REQUIRED"},
+ {id:"b",provider:"B",playbackReview:"HUMAN_PLAYBACK_REQUIRED"},
+ {id:"c",provider:"C",playbackReview:"HUMAN_PLAYBACK_REQUIRED"},
+ {id:"d",provider:"D",playbackReview:"HUMAN_PLAYBACK_REQUIRED"},
+ {id:"e",provider:"E",playbackReview:"HUMAN_PLAYBACK_REQUIRED"}
+],{primaryCount:4});
+assert.equal(batch.primary.length,4);
+assert.equal(batch.alternates.length,1);
