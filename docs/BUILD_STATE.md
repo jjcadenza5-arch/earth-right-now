@@ -1,3 +1,11 @@
+## 2026-09-25 — Deployment-neutral Earth Signal backend contract
+- Added a v1 backend contract for ERN's first contribution phase: structured Earth Signals only, before photos or video.
+- Client submissions are limited to the six existing signal types plus canonical place identity; free text and precise coordinates are rejected.
+- The server owns IDs, createdAt and storageExpiryAt so a client cannot manufacture freshness or extend the 45-minute life of a signal.
+- Public responses expose only the privacy-minimal Earth Signal projection and expiry; precise/private location evidence is never emitted directly.
+- Earth Signal operator status now exposes the backend-contract version while remaining READ_ONLY with the same six real infrastructure blockers.
+- No transport endpoint, moderation service, storage, rate-limit service or public contribution capability was activated.
+
 ## 2026-09-25 — Failed second-provider targets remain deferred
 - Refined the new loadable alternate-provider workflow so only unfailed fallback candidates can be opened directly after a blocked primary test.
 - Research targets that already carry deployed HUMAN_PLAYBACK_FAILED evidence remain visible for audit/history but are not rendered as one-click retest cards.
