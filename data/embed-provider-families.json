@@ -305,5 +305,128 @@
     "discoveryProviderAliases": [
       "Bergbahn Kitzbühel / KitzSki"
     ]
+  },
+  {
+    "id": "chamonix-tourism-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Chamonix-Mont-Blanc Valley Tourist Office",
+    "discoveryProviderAliases": [
+      "Chamonix-Mont-Blanc Tourism"
+    ],
+    "familyLabel": "Official Chamonix valley webcam pages",
+    "researchUrl": "https://en.chamonix.com/webcams",
+    "termsUrl": "https://en.chamonix.com/legal-notice",
+    "verifiedAt": "2026-09-25T09:36:00Z",
+    "permissionEvidence": "Chamonix's current legal notice allows ordinary hyperlinks to chamonix.com but explicitly excludes sites that integrate Chamonix pages inside another website using frames. The webcam pages expose live/current views, including pages whose own implementation contains an iframe, but that does not grant third parties permission to frame the Chamonix page or reuse the underlying player. ERN therefore keeps this provider link-only unless a separate camera/player permission path is documented.",
+    "permissionStatus": "HYPERLINK_ALLOWED_PAGE_FRAMING_PROHIBITED",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_SPECIFIC_EMBED_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_SEPARATE_CAMERA_PLAYER_PERMISSION_IS_DOCUMENTED",
+    "networkFamily": "chamonix.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T09:36:00Z",
+    "communityGuidelinesUrl": "https://en.chamonix.com/legal-notice",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "PAGE_FRAMING_PROHIBITED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://en.chamonix.com/webcams",
+      "https://en.chamonix.com/legal-notice"
+    ]
+  },
+  {
+    "id": "georgia-aquarium-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Georgia Aquarium",
+    "familyLabel": "Official Georgia Aquarium livestream webcams",
+    "researchUrl": "https://www.georgiaaquarium.org/webcam/",
+    "termsUrl": "https://www.georgiaaquarium.org/terms-conditions/",
+    "verifiedAt": "2026-09-25T09:36:00Z",
+    "permissionEvidence": "Georgia Aquarium's current webcam page offers official livestreams, but its January 14, 2026 Terms restrict copying, publishing, public display, broadcast, retransmission or other exploitation of Online Services unless specifically permitted or expressly consented to in writing. No public third-party webcam embed permission was found in the reviewed official materials. ERN therefore keeps these webcams link-only unless explicit reuse/embed permission is obtained.",
+    "permissionStatus": "PUBLIC_WEBCAMS_EXIST_REUSE_REQUIRES_SPECIFIC_PERMISSION",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_EXPLICIT_WEBCAM_EMBED_PERMISSION_IS_OBTAINED",
+    "networkFamily": "georgiaaquarium.org",
+    "termsEffectiveAt": "2026-01-14",
+    "termsReviewedAt": "2026-09-25T09:36:00Z",
+    "communityGuidelinesUrl": "https://www.georgiaaquarium.org/media-center/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "EXPRESS_PERMISSION_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.georgiaaquarium.org/webcam/",
+      "https://www.georgiaaquarium.org/terms-conditions/",
+      "https://www.georgiaaquarium.org/media-center/"
+    ]
+  },
+  {
+    "id": "south-australia-marine-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Department for Infrastructure and Transport, Government of South Australia",
+    "discoveryProviderAliases": [
+      "Government of South Australia — Marine Safety"
+    ],
+    "familyLabel": "South Australia Marine Safety coastal web cameras",
+    "researchUrl": "https://marinesafety.sa.gov.au/web-cameras",
+    "termsUrl": "https://dit.sa.gov.au/copyright_statement",
+    "verifiedAt": "2026-09-25T09:36:00Z",
+    "permissionEvidence": "Marine Safety currently publishes many live coastal webcam views and states that Department for Infrastructure and Transport provides the live images unless otherwise indicated. DIT's copyright statement licenses general website content under CC BY 3.0 but explicitly excepts images and trademark-protected material. Because webcam output is image material and no camera-specific reuse/embed licence was found, ERN must not treat the general CC licence as webcam embed permission.",
+    "permissionStatus": "LIVE_IMAGES_PUBLIC_CAMERA_SPECIFIC_REUSE_NOT_ESTABLISHED",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_CAMERA_SPECIFIC_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_CAMERA_SPECIFIC_REUSE_OR_EMBED_LICENSE_IS_DOCUMENTED",
+    "networkFamily": "marinesafety.sa.gov.au",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T09:36:00Z",
+    "communityGuidelinesUrl": "https://dit.sa.gov.au/copyright_statement",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "IMAGE_EXCEPTION_REQUIRES_SPECIFIC_RIGHTS_REVIEW",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://marinesafety.sa.gov.au/web-cameras",
+      "https://dit.sa.gov.au/copyright_statement"
+    ]
+  },
+  {
+    "id": "dolomiti-superski-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Federconsorzi Dolomiti Superski",
+    "discoveryProviderAliases": [
+      "Dolomiti Superski"
+    ],
+    "familyLabel": "Official Dolomiti Superski webcam network",
+    "researchUrl": "https://www.dolomitisuperski.com/en/live-info/webcam",
+    "termsUrl": "https://www.dolomitisuperski.com/en/legal-information",
+    "verifiedAt": "2026-09-25T09:36:00Z",
+    "permissionEvidence": "Dolomiti Superski's current official webcam directory presents live broadcasts across its regions. The reviewed current legal-information, sales-conditions, privacy and imprint pages did not provide a public third-party webcam embed licence or reusable widget path. ERN therefore does not infer embed rights from the presence of live broadcasts and keeps the provider link-only pending explicit integration terms.",
+    "permissionStatus": "PUBLIC_LIVE_WEBCAMS_NO_THIRD_PARTY_EMBED_PERMISSION_FOUND",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_EMBED_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_OFFICIAL_WIDGET_OR_EXPLICIT_EMBED_PERMISSION_IS_FOUND",
+    "networkFamily": "dolomitisuperski.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T09:36:00Z",
+    "communityGuidelinesUrl": "https://www.dolomitisuperski.com/en/legal-information",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "NO_PUBLIC_EMBED_PERMISSION_FOUND",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.dolomitisuperski.com/en/live-info/webcam",
+      "https://www.dolomitisuperski.com/en/legal-information",
+      "https://www.dolomitisuperski.com/en/legal-information/impressum"
+    ]
   }
 ]
