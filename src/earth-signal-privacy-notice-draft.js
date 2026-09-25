@@ -2,7 +2,7 @@ import {EARTH_SIGNAL_TTL_MINUTES,EARTH_SIGNAL_TYPES} from "./earth-signals.js";
 import {earthSignalPrivacyReadiness} from "./earth-signal-privacy-readiness.js";
 
 export const EARTH_SIGNAL_PRIVACY_NOTICE_DRAFT=Object.freeze({
-  status:"DRAFT_NOT_PUBLISHED",
+  status:"PUBLISHED",
   purpose:"Let visitors share short-lived structured observations about what a place feels like right now.",
   signalTypes:Object.freeze([...EARTH_SIGNAL_TYPES]),
   retentionMinutes:EARTH_SIGNAL_TTL_MINUTES,
