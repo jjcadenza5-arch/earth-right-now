@@ -5,7 +5,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
   lines.push(`Trend: **${direction}**${Number.isFinite(delta?.score)?` (score ${delta.score})`:""}`,"");
   lines.push("## Current state");
-  lines.push(`- Catalog: ${snapshot?.catalog?.healthy||0} healthy / ${snapshot?.catalog?.total||0} total; ${snapshot?.catalog?.degraded||0} degraded; ${snapshot?.catalog?.expired||0} expired.`);
+  lines.push(`- Catalog: ${snapshot?.catalog?.healthy||0} healthy / ${snapshot?.catalog?.total||0} total; ${snapshot?.catalog?.degraded||0} degraded; ${snapshot?.catalog?.expired||0} expired; ${snapshot?.catalog?.held||0} held.`);
   lines.push(`- Watch Earth: ${snapshot?.watchEarth?.strongCurrent||0} strong current; ${snapshot?.watchEarth?.insideCurrent||0} inside ERN; status ${snapshot?.watchEarth?.status||"UNKNOWN"}; recommended set size ${snapshot?.watchEarth?.recommendedLimit||0}.`);
   lines.push(`- Inside ERN: ${snapshot?.insideERN?.ready||0}/${snapshot?.insideERN?.targetReady||0} ready; shortfall ${snapshot?.insideERN?.readyShortfall||0}; recovery debt ${snapshot?.insideERN?.recoveryDebt||0}.`);
   lines.push(`- Providers: ${snapshot?.providers?.families||0}/${snapshot?.providers?.targetFamilies||0} embed families; dominant share ${Math.round((snapshot?.providers?.dominantShare||0)*100)}%; next goal ${snapshot?.providers?.nextGoal||"none"}.`);

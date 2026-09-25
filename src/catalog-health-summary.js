@@ -4,10 +4,10 @@ import { currentSource } from "./discovery-eligibility.js";
 import { embedPlaybackCurrent } from "./embed-playback-current.js";
 
 export function catalogHealthSummary(sources){
- const out={total:sources.length,healthy:0,degraded:0,offline:0,unknown:0,current:0,stale:0,expired:0,insideERN:0,configuredInsideERN:0,currentInsideERN:0,provenEmbeddedInsideERN:0,currentImageInsideERN:0,external:0,unavailable:0};
+ const out={total:sources.length,healthy:0,degraded:0,offline:0,unknown:0,current:0,stale:0,expired:0,held:0,insideERN:0,configuredInsideERN:0,currentInsideERN:0,provenEmbeddedInsideERN:0,currentImageInsideERN:0,external:0,unavailable:0};
  for(const s of sources){
   const h=(s.health||"UNKNOWN").toLowerCase();if(h in out)out[h]++;
-  const r=recencyState(s);if(currentSource(s))out.current++;else if(r==="STALE_CHECK")out.stale++;else if(r==="EXPIRED_CHECK")out.expired++;
+  const r=recencyState(s);if(currentSource(s))out.current++;else if(s?.featuredHold===true)out.held++;else if(r==="STALE_CHECK")out.stale++;else if(r==="EXPIRED_CHECK")out.expired++;
   const a=playbackCapability(s).action;
   if(a==="PLAY"){
    out.insideERN++;out.configuredInsideERN++;

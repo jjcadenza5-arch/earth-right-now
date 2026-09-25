@@ -1,3 +1,9 @@
+## 2026-09-25 — Operations held/expired alignment
+- Aligned the top-level catalog health summary with the verification horizon's existing hold semantics.
+- Sources on an explicit featuredHold are now counted as held rather than expired when they are outside the normal verification window.
+- Operator brief now reports both expired and held counts, preventing deliberate curation holds from looking like urgent maintenance debt.
+- No source truth, health, release gate or public ranking behavior changed.
+
 ## 2026-09-25 — Guide action-link localization
 - Removed the two remaining English-only action labels inside the public ERN Guide.
 - "For places & cameras" and "About Now Moments" now follow the selected ERN language across English, Thai, German, French, Spanish, Japanese and Chinese.
