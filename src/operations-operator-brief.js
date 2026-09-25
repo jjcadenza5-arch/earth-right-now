@@ -65,8 +65,8 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   }
   if(providerGeneratedTargets?.items?.length){
     lines.push("## Provider-generated target staging");
-    lines.push(`- State: ${providerGeneratedTargets.state||"UNKNOWN"}; ${providerGeneratedTargets.preparation||0} exact target(s) still need official provider code or authorized target URL; ${providerGeneratedTargets.reviewReady||0} ready for deployed rendering review.`);
-    for(const item of providerGeneratedTargets.items.slice(0,5))lines.push(`- ${item.provider||item.id} / ${item.sourceId||item.id} — ${item.integrationKind||"INTEGRATION"}; ${item.state||"UNKNOWN"}; next: ${item.nextAction||"manual review"}.`);
+    lines.push(`- State: ${providerGeneratedTargets.state||"UNKNOWN"}; ${providerGeneratedTargets.preparation||0} exact target(s) still need official provider code or authorized target URL; ${providerGeneratedTargets.manualPreparation||0} require interactive provider action; ${providerGeneratedTargets.reviewReady||0} ready for deployed rendering review.`);
+    for(const item of providerGeneratedTargets.items.slice(0,5))lines.push(`- ${item.provider||item.id} / ${item.sourceId||item.id} — ${item.integrationKind||"INTEGRATION"}; ${item.state||"UNKNOWN"}${item.manualInteractionRequired?" / INTERACTIVE PROVIDER ACTION":""}; next: ${item.nextAction||"manual review"}.`);
     lines.push("- Exact target staging is fail-closed: no family permission, guessed URL or technical fetch becomes catalog permission/playback proof automatically.","");
   }
   if(providerDiscoveryQueue?.primary){
@@ -175,7 +175,10 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.exhausted)lines.push("- Research a genuinely new embeddable provider family or materially changed target; do not recycle failed playback candidates.");
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
   if(providerGeneratedTargets?.reviewReady)lines.push("- Run deployed rendering review for exact provider-generated/current-image targets before any editorial promotion review.");
-  else if(providerGeneratedTargets?.preparation)lines.push("- Obtain exact provider-generated code or authorized current-image target URLs; do not guess or derive unstable targets.");
+  else if(providerGeneratedTargets?.preparation){
+    if(providerGeneratedTargets?.manualPreparation)lines.push("- Interactive provider generators are a real blocker for some targets; do not repeatedly retry them as machine-retrievable work.");
+    if(providerGeneratedTargets.preparation>providerGeneratedTargets.manualPreparation)lines.push("- Continue machine-safe discovery only for non-interactive exact target URLs; do not guess or derive unstable assets.");
+  }
   if(providerFamilyResearch?.needsTermsReview)lines.push("- Refresh stale provider terms evidence before permission review progresses.");
   if(providerFamilyResearch?.items?.length&&providerFamilyResearch.items.some(x=>x.technicalStatus==="SPECIFIC_EMBED_URL_REQUIRED"))lines.push("- Identify a current specific player URL for promising provider-family research before deployed playback testing.");
   if(sourceRevalidationTriage){
