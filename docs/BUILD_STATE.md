@@ -1,3 +1,10 @@
+## 2026-09-25 — Operator review evidence batch isolation
+- Scoped browser-local operator evidence to a deterministic review-batch signature derived from the exact current review targets, embed URLs and proof baselines.
+- Yesterday's HUMAN_PLAYBACK observations can no longer remain selected as if they were today's renewal evidence merely because the source ID is the same.
+- Research batches also change identity when the candidate target or prior human-review baseline changes.
+- Exported evidence now carries its reviewBatch identifier for traceability; the existing server-side freshness/origin/target validators remain authoritative.
+- Added a built-page preflight requiring batch-scoped evidence storage.
+
 ## 2026-09-24 — Affiliate application readiness boundary
 - Added a private readiness plan that separates ERN-side prerequisites from external affiliate enrollment work.
 - ERN-side prerequisites are now explicit: public site, privacy notice, affiliate disclosure policy, no-paid-ranking policy and verified travel-option research.

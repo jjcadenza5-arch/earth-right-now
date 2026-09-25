@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-25 — Review evidence isolation
+- Operator Review local evidence is now scoped to the exact current review batch, preventing stale browser selections from masquerading as fresh renewals.
+
 ## 2026-09-24 — Affiliate application readiness
 - Added a private readiness planner that stops at the explicit user/application boundary.
 - Operations now distinguishes ERN-side readiness from external enrollment, acceptance and credential work.

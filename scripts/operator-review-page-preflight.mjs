@@ -10,4 +10,6 @@ const loadButtons=(html.match(/class="load"/g)||[]).length;
 const loadable=cards.filter(x=>/^https:\/\//.test(x.embed));
 if(loadButtons!==loadable.length){console.error("operator review load controls and loadable embed targets disagree");process.exit(1)}
 if(!html.includes("Local review evidence")){console.error("operator review evidence controls missing");process.exit(1)}
+if(!/ern-operator-review-evidence-v2-[a-f0-9]{16}/.test(html)){console.error("operator review evidence is not scoped to an exact review batch");process.exit(1)}
+if(!/reviewBatch:REVIEW_BATCH/.test(html)){console.error("operator review export does not retain batch identity");process.exit(1)}
 console.log(JSON.stringify({ok:true,cards:cards.length,loadableEmbeds:loadable.length,ids:cards.map(x=>x.id)},null,2));
