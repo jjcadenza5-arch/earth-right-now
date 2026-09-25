@@ -6,3 +6,12 @@ assert.match(app,/function guideMsg\(/);assert.match(app,/guideMsg\("happening"\
 assert.ok(index.indexOf("guide-public-copy.js")<index.indexOf("app-lite.js"));
 assert.match(build,/guide-public-copy\.js/);
 console.log("ERN public Guide reply copy is language-aware across seven interface languages");
+
+const l10n=fs.readFileSync("src/earth-guide-l10n.js","utf8");
+assert.match(l10n,/What is live right now\?/);
+assert.match(l10n,/ตอนนี้มีอะไรสดอยู่\?/);
+assert.match(l10n,/Was ist gerade live\?/);
+assert.match(l10n,/Qu’est-ce qui est en direct maintenant \?/);
+assert.match(l10n,/¿Qué está en vivo ahora\?/);
+assert.match(l10n,/今ライブなのはどこ？/);
+assert.match(l10n,/现在什么是直播的？/);
