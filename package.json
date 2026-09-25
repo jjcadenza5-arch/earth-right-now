@@ -63,7 +63,8 @@
     "business:research-status": "node scripts/commercial-research-status.mjs",
     "business:affiliate-research": "node scripts/affiliate-platform-research-status.mjs",
     "business:affiliate-readiness": "node scripts/affiliate-application-readiness.mjs",
-    "inside:provider-discovery": "node scripts/provider-discovery-queue.mjs"
+    "inside:provider-discovery": "node scripts/provider-discovery-queue.mjs",
+    "guide-ai:status": "node scripts/guide-ai-status.mjs"
   },
   "engines": {
     "node": ">=20"
