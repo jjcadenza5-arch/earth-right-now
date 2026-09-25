@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch,affiliateApplicationReadiness}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -122,6 +122,13 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push("## Affiliate application readiness");
     lines.push(`- ERN-side prerequisites: ${affiliateApplicationReadiness.ernReady?"ready":"incomplete"}; ${affiliateApplicationReadiness.readyForDecision||0}/${affiliateApplicationReadiness.total||0} researched programs are ready for a later user application decision.`);
     lines.push("- Applications, acceptance, credentials and tracked links remain external/manual steps and are not performed by Operations.","");
+  }
+  if(earthSignals){
+    lines.push("## Earth Signals readiness");
+    lines.push(`- Mode: ${earthSignals.mode||"UNKNOWN"}; backend foundation ${earthSignals.backendFoundation?.state||"UNKNOWN"}; deployment ${earthSignals.deployment?.state||"UNKNOWN"}.`);
+    lines.push(`- Privacy wording: ${earthSignals.privacyNoticeDraft?.contentReady?"content-ready":"incomplete"}; publication ${earthSignals.privacyNoticeDraft?.published?"published":"not published"}; activation ${earthSignals.privacyNoticeDraft?.activationSatisfied?"satisfied":"blocked"}.`);
+    if(earthSignals.deployment?.missing?.length)lines.push(`- Production evidence still missing: ${earthSignals.deployment.missing.join(", ")}.`);
+    lines.push("- Prepared code, test doubles and draft wording do not enable visitor contribution.", "");
   }
   if(submissionTransport){
     lines.push("## Submission transport");
