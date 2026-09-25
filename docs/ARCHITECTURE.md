@@ -16,3 +16,18 @@ Surfaces request playback with a source ID. The controller opens in the visitor'
 
 ### Recovery rule
 Recovered ERN HTML is specification/evidence. Extract data and behavior deliberately; do not import its accumulated duplicate player generations wholesale.
+
+
+### Optional Generative Guide layer
+The existing deterministic ERN Guide remains the public baseline and permanent fallback. A future generative layer may sit above it only as a server-side interpretation/wording layer; it must never become a parallel source of Earth truth.
+
+Generative Guide flow:
+1. Validate a bounded visitor request.
+2. Treat all client place/source identifiers as untrusted hints.
+3. Rehydrate trusted place/source context from the server-side ERN catalog and current truth gates.
+4. Apply rate limits and hard cost guard before model invocation.
+5. Generate concise Guide wording under ERN truth/no-paid-ranking constraints.
+6. Reject model source references outside the trusted context.
+7. Fall back to the deterministic Guide on transport, model, truth, safety or cost failure.
+
+Model/API credentials must remain server-side. The generative layer stays disabled until its production deployment evidence, privacy notice, observability and hard cost ceiling all pass. Local code, test adapters and browser configuration never count as activation evidence.
