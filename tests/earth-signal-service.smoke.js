@@ -20,7 +20,7 @@ await assert.rejects(
 
 const created=await createEarthSignalService(
   {type:"PEACEFUL",placeId:"chiang-mai",placeLabel:"Chiang Mai"},
-  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"browser-a",knownPlaceIds:["chiang-mai"],id:"sig-1",now}
+  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",knownPlaceIds:["chiang-mai"],id:"sig-1",now}
 );
 assert.equal(created.ok,true);
 assert.equal(created.persisted,true);
@@ -49,18 +49,18 @@ for(let i=0;i<6;i++){
   const placeId=i<3?"chiang-mai":"flam-aurlandsfjord";
   const made=await createEarthSignalService(
     {type:"BUSY",placeId},
-    {capabilities:allCapabilities,storage:otherStorage,rateLimiter:sharedLimiter,rateSubject:"browser-a",knownPlaceIds:["chiang-mai","flam-aurlandsfjord"],id:"a-"+i,now:new Date(now.getTime()+i*1000)}
+    {capabilities:allCapabilities,storage:otherStorage,rateLimiter:sharedLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",knownPlaceIds:["chiang-mai","flam-aurlandsfjord"],id:"a-"+i,now:new Date(now.getTime()+i*1000)}
   );
   assert.equal(made.ok,true);
 }
 const blocked=await createEarthSignalService(
   {type:"BUSY",placeId:"flam-aurlandsfjord"},
-  {capabilities:allCapabilities,storage:otherStorage,rateLimiter:sharedLimiter,rateSubject:"browser-a",knownPlaceIds:["chiang-mai","flam-aurlandsfjord"],id:"a-7",now:new Date(now.getTime()+7000)}
+  {capabilities:allCapabilities,storage:otherStorage,rateLimiter:sharedLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",knownPlaceIds:["chiang-mai","flam-aurlandsfjord"],id:"a-7",now:new Date(now.getTime()+7000)}
 );
 assert.equal(blocked.reason,"RATE_LIMIT");
 const independent=await createEarthSignalService(
   {type:"BUSY",placeId:"flam-aurlandsfjord"},
-  {capabilities:allCapabilities,storage:otherStorage,rateLimiter:sharedLimiter,rateSubject:"browser-b",knownPlaceIds:["chiang-mai","flam-aurlandsfjord"],id:"b-1",now:new Date(now.getTime()+7000)}
+  {capabilities:allCapabilities,storage:otherStorage,rateLimiter:sharedLimiter,rateSubject:"anon_BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",knownPlaceIds:["chiang-mai","flam-aurlandsfjord"],id:"b-1",now:new Date(now.getTime()+7000)}
 );
 assert.equal(independent.ok,true);
 
