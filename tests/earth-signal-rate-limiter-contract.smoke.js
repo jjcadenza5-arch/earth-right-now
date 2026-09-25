@@ -30,4 +30,12 @@ assert.equal(globalBlocked.reason,"RATE_LIMIT");
 const otherVisitor=await limiter.check({subject:"anon_BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",placeId:"chiang-mai",now:new Date(now.getTime()+9000)});
 assert.equal(otherVisitor.allowed,true);
 
+const firstReport=await limiter.commit({subject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",action:"REPORT",targetId:"sig-1",now:new Date(now.getTime()+10000)});
+assert.equal(firstReport.allowed,true);
+const duplicateReport=await limiter.check({subject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",action:"REPORT",targetId:"sig-1",now:new Date(now.getTime()+11000)});
+assert.equal(duplicateReport.allowed,false);
+assert.equal(duplicateReport.reason,"DUPLICATE_REPORT");
+const otherReporter=await limiter.check({subject:"anon_BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",action:"REPORT",targetId:"sig-1",now:new Date(now.getTime()+11000)});
+assert.equal(otherReporter.allowed,true);
+
 console.log("Earth Signal rate limiting is subject-scoped, place-bounded and does not let one visitor consume another visitor's quota");
