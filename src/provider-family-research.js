@@ -16,6 +16,7 @@ export function providerFamilyResearchStatus(rows=[],{now=new Date(),maxTermsAge
       id:String(raw?.id||""),
       provider:String(raw?.provider||""),
       familyLabel:String(raw?.familyLabel||""),
+      discoveryProviderAliases:Array.isArray(raw?.discoveryProviderAliases)?raw.discoveryProviderAliases.map(x=>String(x||"").trim()).filter(Boolean):[],
       valid,
       status:raw?.status||null,
       permissionStatus:raw?.permissionStatus||null,
