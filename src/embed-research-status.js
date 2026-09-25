@@ -13,7 +13,8 @@ export function embedResearchStatus(candidates=[]){
    approvedForCatalog:rows.filter(x=>!x.blockedFromCatalog).length,
    needsHumanPlayback:rows.filter(x=>x.playbackReview==="HUMAN_PLAYBACK_REQUIRED").map(x=>x.id),
    needsPerVideoPermissionReview:rows.filter(x=>x.permissionReview==="PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST").map(x=>x.id),
-   next:rows.filter(x=>x.blockedFromCatalog).map(x=>({id:x.id,provider:x.provider,platform:x.platform,sourceUrl:x.sourceUrl,candidateEmbedUrl:x.candidateEmbedUrl,permissionReview:x.permissionReview,playbackReview:x.playbackReview})),
-   note:"Research candidates are never part of data/sources.json until per-video embed permission/availability and deployed-origin HUMAN_PLAYBACK are confirmed."
+   next:rows.filter(x=>x.blockedFromCatalog&&x.playbackReview!=="HUMAN_PLAYBACK_FAILED").map(x=>({id:x.id,provider:x.provider,platform:x.platform,sourceUrl:x.sourceUrl,candidateEmbedUrl:x.candidateEmbedUrl,permissionReview:x.permissionReview,playbackReview:x.playbackReview})),
+   deferredFailed:rows.filter(x=>x.playbackReview==="HUMAN_PLAYBACK_FAILED").map(x=>x.id),
+   note:"Active research excludes approved/promoted and deployed-playback-failed candidates. Failed candidates remain deferred until a target/provider materially changes. Promotion still requires specific embed permission plus deployed-origin HUMAN_PLAYBACK."
  };
 }
