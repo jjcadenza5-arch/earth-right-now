@@ -46,3 +46,6 @@ Both queues remain private, non-promotional and fail-closed. Affiliate applicati
 
 ## Cross-cutting priority — Minimum LIVE HERE renewal workload
 Operator playback review now treats due/expired HUMAN_PLAYBACK proof as renewal debt but makes only the minimum number of renewals needed to preserve the 5/5 LIVE HERE target primary. Extra renewal debt stays visible in backlog. Human playback confirmation remains mandatory and nothing renews automatically. This reduces repetitive operator work without lowering the playback-truth boundary.
+
+## Cross-cutting operating rule — no circular work
+ERN should improve continuously without repeating completed, blocked, failed or sufficiently researched work. Provider discovery now has a terminal current-catalog state; failed playback is deferred until material change; private travel research stops by default after two intent types per place; and non-visitor sources can be excluded from travel onboarding. See `docs/ANTI_LOOP_WORK_RULES.md`.
