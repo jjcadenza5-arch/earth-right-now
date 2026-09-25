@@ -1,3 +1,9 @@
+## 2026-09-25 — Operator review batch guidance
+- Added visible review-page guidance explaining that browser evidence is isolated to the exact current review batch.
+- The page now shows the number of primary human checks currently presented and states that older review evidence is not reused.
+- Updated local-evidence copy to make the batch-local storage behavior explicit.
+- This is presentation/safety guidance only; evidence validation and catalog mutation rules are unchanged.
+
 ## 2026-09-25 — Pages trigger coverage for review preflight
 - Added scripts/operator-review-page-preflight.mjs to the Pages workflow path filter.
 - Changes to the generated-review deployment guard now automatically run the actual Pages validation/deployment instead of only syntax/Operations checks.

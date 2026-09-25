@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-25 — Review batch guidance
+- Operator Review now visibly explains batch isolation and the current primary human-check count.
+
 ## 2026-09-25 — Pages review-preflight trigger
 - Pages now retriggers whenever the operator-review generated-page preflight changes.
 
