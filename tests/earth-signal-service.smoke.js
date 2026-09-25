@@ -31,10 +31,16 @@ assert.equal(listed.signals[0].id,"sig-1");
 
 const reported=await reportEarthSignalService(
   {signalId:"sig-1",reason:"WRONG_PLACE",createdAt:"2026-09-25T06:01:00Z"},
-  {capabilities:allCapabilities,storage,now}
+  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",now}
 );
 assert.equal(reported.ok,true);
 assert.equal(reported.persisted,true);
+const duplicateReport=await reportEarthSignalService(
+  {signalId:"sig-1",reason:"SPAM",createdAt:"2026-09-25T06:02:00Z"},
+  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",now:new Date("2026-09-25T06:02:00Z")}
+);
+assert.equal(duplicateReport.ok,false);
+assert.equal(duplicateReport.reason,"DUPLICATE_REPORT");
 assert.equal(storage.snapshot().signals[0].reported,true);
 
 const hidden=await listEarthSignalService({capabilities:allCapabilities,storage,placeId:"chiang-mai",now});
