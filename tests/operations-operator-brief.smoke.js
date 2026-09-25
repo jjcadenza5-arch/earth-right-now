@@ -68,3 +68,11 @@ assert.match(depthBrief,/Private travel-research depth/);
 assert.match(depthBrief,/Alpha/);
 assert.match(depthBrief,/next research intent: activities/);
 assert.match(depthBrief,/Deepen private research at Alpha with a real activities option/);
+
+const efficientRenewalBrief=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:6,targetReady:5,readyShortfall:0,recoveryDebt:3},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ operatorReviewQueue:{ready:6,targetReady:5,readyShortfall:0,renewalCount:3,renewalRequiredCount:2,recommendedRestorationCount:0,primaryItems:[{id:"a",title:"A",reviewMode:"RENEW"},{id:"b",title:"B",reviewMode:"RENEW"}],backlogItems:[{id:"c",title:"C",reviewMode:"RENEW"}],items:[{id:"a"},{id:"b"},{id:"c"}]}
+});
+assert.match(efficientRenewalBrief,/Renewal debt: 3; minimum primary renewals: 2/);
+assert.match(efficientRenewalBrief,/Complete only the minimum primary playback renewals/);
