@@ -15,4 +15,5 @@ console.log("Provider-generated target staging stays fail-closed");
 
 const authorized=providerGeneratedTargetStatus([{id:"imo",providerFamilyId:"imo-family",provider:"Icelandic Meteorological Office",sourceId:"reykjavik-metoffice",integrationKind:"PROVIDER_AUTHORIZED_CURRENT_IMAGE",generatorUrl:"https://en.vedur.is/weather/observations/webcams/reykjavik/",exactCode:null,exactTargetUrl:null,reviewedAt:null,reviewOutcome:null,promotionAllowed:false,catalogMutationAllowed:false,automaticGenerationAllowed:false}]);
 assert.equal(authorized.state,"PREPARATION_REQUIRED");
-assert.equal(authorized.items[0].state,"EXACT_PROVIDER_CODE_REQUIRED");
+assert.equal(authorized.items[0].state,"EXACT_PROVIDER_TARGET_URL_REQUIRED");
+assert.equal(authorized.items[0].nextAction,"IDENTIFY_EXACT_AUTHORIZED_CURRENT_IMAGE_URL");
