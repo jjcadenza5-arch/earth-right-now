@@ -133,5 +133,33 @@
       "https://www.sanparks.org/contact/request/copyright-permission",
       "https://www.sanparks.org/travel/webcams/overview"
     ]
+  },
+  {
+    "id": "youtube-hida-takayama",
+    "status": "RESEARCH_ONLY",
+    "provider": "Hida-Takayama Live Camera",
+    "familyLabel": "Hida-Takayama official YouTube channel live player",
+    "researchUrl": "https://takayama-live.com/streaming",
+    "termsUrl": "https://developers.google.com/youtube/terms/required-minimum-functionality",
+    "verifiedAt": "2026-09-25T06:31:00Z",
+    "permissionEvidence": "Hida-Takayama's official streaming page embeds a standard YouTube channel live player and links its official channel. YouTube's standard embedded-player requirements still apply. This provider-specific use is promising but ERN requires deployed human playback before promotion.",
+    "permissionStatus": "PROVIDER_PAGE_USES_STANDARD_YOUTUBE_CHANNEL_LIVE_EMBED_SPECIFIC_DEPLOYED_REVIEW_REQUIRED",
+    "technicalStatus": "STABLE_CHANNEL_LIVE_EMBED_STAGED",
+    "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "nextAction": "DEPLOYED_HUMAN_PLAYBACK_THEN_EDITORIAL_REVIEW",
+    "networkFamily": "youtube.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T06:31:00Z",
+    "communityGuidelinesUrl": "https://developers.google.com/youtube/terms/developer-policies",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "STANDARD_EMBED_PLAYER",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://takayama-live.com/streaming",
+      "https://developers.google.com/youtube/terms/required-minimum-functionality"
+    ]
   }
 ]
