@@ -1,6 +1,6 @@
 import fs from "node:fs";
-const path="review/inside-ern.html";
-if(!fs.existsSync(path)){console.error("operator review page missing");process.exit(1)}
+const path="review/inside-ern.html";const currentPath="review/current.json";
+if(!fs.existsSync(path)){console.error("operator review page missing");process.exit(1)}if(!fs.existsSync(currentPath)){console.error("operator review current-batch manifest missing");process.exit(1)}
 const html=fs.readFileSync(path,"utf8");
 const match=html.match(/<script>([\s\S]*?)<\/script>/);
 if(!match){console.error("operator review inline script missing");process.exit(1)}
@@ -11,5 +11,5 @@ const loadable=cards.filter(x=>/^https:\/\//.test(x.embed));
 if(loadButtons!==loadable.length){console.error("operator review load controls and loadable embed targets disagree");process.exit(1)}
 if(!html.includes("Local review evidence")){console.error("operator review evidence controls missing");process.exit(1)}
 if(!/const REVIEW_BATCH="[a-f0-9]{16}";/.test(html)||!html.includes('const KEY="ern-operator-review-evidence-v2-"+REVIEW_BATCH;')){console.error("operator review evidence is not scoped to an exact review batch");process.exit(1)}
-if(!/reviewBatch:REVIEW_BATCH/.test(html)){console.error("operator review export does not retain batch identity");process.exit(1)}
+if(!/reviewBatch:REVIEW_BATCH/.test(html)){console.error("operator review export does not retain batch identity");process.exit(1)}const current=JSON.parse(fs.readFileSync(currentPath,"utf8"));const batchMatch=html.match(/const REVIEW_BATCH="([a-f0-9]{16})";/);if(!batchMatch||current.reviewBatch!==batchMatch[1]){console.error("operator review page and current-batch manifest disagree");process.exit(1)}if(!html.includes("This review page is stale")||!html.includes("./current.json?ts=")){console.error("operator review stale-batch protection missing");process.exit(1)}
 console.log(JSON.stringify({ok:true,cards:cards.length,loadableEmbeds:loadable.length,ids:cards.map(x=>x.id)},null,2));
