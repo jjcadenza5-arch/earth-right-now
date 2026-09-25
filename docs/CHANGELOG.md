@@ -1,3 +1,7 @@
+## 2026-09-25 — Monterey Open Sea playback failed
+- Recorded deployed HUMAN_PLAYBACK_FAILED for Open Sea Cam from batch `fbeae45f290ade5b`.
+- All three Monterey YouTube research candidates are now deferred after candidate-specific playback failures; none is promoted.
+
 ## 2026-09-25 — Detect stale operator review pages
 - Added a current-batch manifest and fail-closed stale-page detection to the deployed operator review surface.
 - Repeated valid Metung/Ponte confirmations were accepted; repeated Jelly failure remained research-only.
