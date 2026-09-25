@@ -149,6 +149,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push(`- Mode: ${guideAi.mode||"UNKNOWN"}; deployment ${guideAi.deployment?.state||"UNKNOWN"}; deterministic fallback ${guideAi.deterministicFallback?"ready":"missing"}.`);
     if(guideAi.deployment?.missing?.length)lines.push(`- Production evidence still missing: ${guideAi.deployment.missing.join(", ")}.`);
     if(guideAi.deployment?.cost?.monthlyCostCeilingUsd!=null)lines.push(`- Hard monthly cost ceiling evidence: ${guideAi.deployment.cost.monthlyCostCeilingUsd}.`);
+    else if(guideAi.deployment?.costDecisionRequired)lines.push("- Model spending remains disabled: an explicit monthly ceiling, usage metering and a hard stop must be configured before generative activation.");
     lines.push("- Client prompts and IDs never become trusted place/source facts; the server must rehydrate ERN catalog truth before generation.", "");
   }
   if(earthSignals){
