@@ -1,3 +1,7 @@
+## 2026-09-25 — Earth Signal backend contract v1
+- Added a deployment-neutral structured-signal API contract with server-owned timestamps/expiry, canonical place validation, no free text and no precise coordinates.
+- Earth Signals remain READ_ONLY until all real infrastructure blockers are resolved.
+
 ## 2026-09-25 — Failed provider tests stay deferred
 - Split second-provider alternates into unfailed loadable fallbacks and previously failed/deferred history.
 - Failed deployed playback targets are no longer one-click retest cards; they require target/provider change or explicit retest justification.
