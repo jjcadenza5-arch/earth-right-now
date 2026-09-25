@@ -7,7 +7,7 @@ import {createInMemoryGuideAiIdempotencyStore} from "../src/guide-ai-idempotency
 
 const all={transport:true,secretIsolation:true,trustedContext:true,costGuard:true,rateLimits:true,idempotency:true,observability:true,safetyBoundary:true,privacyNotice:true,deterministicFallback:true};
 const catalog=[{id:"a",placeId:"p",title:"A",truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",health:"HEALTHY",playback:"EMBED",checkedAt:"2026-09-25T00:00:00Z"}];
-const costGuard={allow:async()=>({allowed:true}),commit:async()=>({allowed:true})};
+const costGuard={allow:async()=>({allowed:true}),commit:async()=>({allowed:true}),release:async()=>({released:true}),forfeit:async()=>({forfeited:true})};
 const modelAdapter={generate:async({trustedContext})=>({segments:[{text:"A is a current ERN window.",sourceIds:[trustedContext.sourceIds[0]]}],usage:{units:1}})};
 const subject="anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 const context=(overrides={})=>({
@@ -27,16 +27,16 @@ const ok=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",la
 assert.equal(ok.ok,true);
 assert.equal(ok.response.sourceIds[0],"a");
 
-let releases=0;
-const releasingCostGuard={allow:async()=>({allowed:true}),commit:async()=>({allowed:true}),release:async()=>{releases++;return{released:true}}};
+let releases=0,forfeits=0;
+const releasingCostGuard={allow:async()=>({allowed:true}),commit:async()=>({allowed:true}),release:async()=>{releases++;return{released:true}},forfeit:async()=>{forfeits++;return{forfeited:true}}};
 const hallucinating={generate:async()=>({segments:[{text:"Use fake",sourceIds:["fake"]}]})};
 const blocked=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p",requestId:"req_HALLUCINATEAAAAAAAAAAAAAA"},context({modelAdapter:hallucinating,costGuard:releasingCostGuard}));
 assert.equal(blocked.ok,false);
 assert.equal(blocked.reason,"UNTRUSTED_SOURCE_REFERENCE");
 assert.equal(blocked.mode,"DETERMINISTIC_ONLY");
-assert.equal(releases,1);
+assert.equal(releases,0);assert.equal(forfeits,1);
 
-const expensive={allow:async()=>({allowed:false,reason:"COST_GUARD_BLOCKED"}),commit:async()=>({allowed:true})};
+const expensive={allow:async()=>({allowed:false,reason:"COST_GUARD_BLOCKED"}),commit:async()=>({allowed:true}),release:async()=>({released:true}),forfeit:async()=>({forfeited:true})};
 const costBlocked=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p",requestId:"req_COSTAAAAAAAAAAAAAAAAAAAA"},context({costGuard:expensive}));
 assert.equal(costBlocked.mode,"DETERMINISTIC_ONLY");
 assert.equal(costBlocked.reason,"COST_GUARD_BLOCKED");
@@ -66,7 +66,7 @@ const replayStore=createInMemoryGuideAiIdempotencyStore();
 const replayContext=context({
   idempotency:replayStore,
   modelAdapter:{generate:async({trustedContext})=>{modelCalls++;return{segments:[{text:"A is current.",sourceIds:[trustedContext.sourceIds[0]]}],usage:{units:1}}}},
-  costGuard:{allow:async()=>{costAllows++;return{allowed:true}},commit:async()=>{costCommits++;return{allowed:true,estimatedCostUsd:0.001}}}
+  costGuard:{allow:async()=>{costAllows++;return{allowed:true}},commit:async()=>{costCommits++;return{allowed:true,estimatedCostUsd:0.001}},release:async()=>({released:true}),forfeit:async()=>({forfeited:true})}
 });
 const replayRequest={version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p",requestId:"req_REPLAYAAAAAAAAAAAAAAAAAAA"};
 const firstReplay=await guideAiService(replayRequest,replayContext);
