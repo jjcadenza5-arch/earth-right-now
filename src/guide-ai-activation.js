@@ -1,6 +1,6 @@
 import {GUIDE_AI_CAPABILITIES} from "./guide-ai-capabilities.js";
 
-const REQUIRED=["transport","secretIsolation","trustedContext","costGuard","rateLimits","observability","safetyBoundary","privacyNotice"];
+const REQUIRED=["transport","secretIsolation","trustedContext","costGuard","rateLimits","idempotency","observability","safetyBoundary","privacyNotice"];
 
 export function guideAiActivation(capabilities=GUIDE_AI_CAPABILITIES){
   const checks=Object.fromEntries(REQUIRED.map(k=>[k,capabilities?.[k]===true]));
