@@ -1,3 +1,12 @@
+## 2026-09-25 — Earth Signal deployment handoff + conservative Guide pulse
+- Added a non-secret `data/earth-signal-deployment.json` manifest so future production infrastructure can be connected by recording verified evidence rather than editing activation logic.
+- Manifest validation rejects unknown/secret-like fields, non-HTTPS endpoint/privacy URLs and invalid timestamps; credentials/tokens must never be placed in the repository manifest.
+- Earth Signal status is now fail-closed on two planes: capability readiness **and** production deployment evidence must both pass before status can report CONTRIBUTION_ENABLED.
+- The status CLI reads the deployment manifest and derives activation capabilities from it; an all-true capability object alone no longer makes Operations report the feature as live.
+- Operations and focused CI now trigger whenever the deployment manifest changes, preventing silent evidence-state changes.
+- Added a conservative Earth Signal pulse for ERN Guide: active visitor reports are grouped by signal type and recency, but the pulse always carries verified=false and explicit wording that visitor reports are not independent verification.
+- Earth Signals remain READ_ONLY / NOT_DEPLOYED; public ERN visitor behavior is unchanged.
+
 ## 2026-09-25 — Earth Signal visitor abuse controls corrected before deployment
 - Found and removed a pre-production design flaw where service-layer submission limits were derived from the shared public signal store; that would have allowed unrelated visitors to consume one another's quota.
 - Added a dedicated subject-scoped rate-limit contract. Submission limits are now per opaque pseudonymous visitor subject, with a separate tighter per-place cap.
