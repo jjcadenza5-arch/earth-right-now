@@ -2,11 +2,13 @@ export const EARTH_SIGNAL_RATE_LIMIT_REQUIREMENTS=Object.freeze({
   windowMinutes:10,
   maxSubmissionsPerSubject:6,
   maxActivePerSubjectPlace:3,
+  maxReportsPerSubject:10,
+  maxReportsPerTargetPerSubject:1,
   rawNetworkIdentifiersStored:false
 });
 
-function key(subject,placeId){
-  return String(subject||"")+"::"+String(placeId||"");
+function normalizedAction(action){
+  return action==="REPORT"?"REPORT":"SUBMIT";
 }
 
 export function earthSignalRateSubject(input={}){
@@ -29,23 +31,40 @@ export async function deriveEarthSignalRateSubject(clientToken,{digest}={}){
 export function createInMemoryEarthSignalRateLimiter(){
   let events=[];
   return{
-    async check({subject,placeId,now=new Date()}={}){
+    async check({subject,placeId=null,action="SUBMIT",targetId=null,now=new Date()}={}){
       const parsed=earthSignalRateSubject({subject});
       if(!parsed.ok)return{allowed:false,reason:parsed.reason};
-      const place=String(placeId||"").trim();
-      if(!place)return{allowed:false,reason:"INVALID_PLACE"};
+      const type=normalizedAction(action);
       const start=now.getTime()-EARTH_SIGNAL_RATE_LIMIT_REQUIREMENTS.windowMinutes*60000;
       events=events.filter(x=>x.at>=start&&x.at<=now.getTime());
-      const subjectEvents=events.filter(x=>x.subject===parsed.subject);
+      const subjectEvents=events.filter(x=>x.subject===parsed.subject&&x.action===type);
+
+      if(type==="REPORT"){
+        const target=String(targetId||"").trim();
+        if(!target)return{allowed:false,reason:"REPORT_TARGET_REQUIRED"};
+        if(subjectEvents.length>=EARTH_SIGNAL_RATE_LIMIT_REQUIREMENTS.maxReportsPerSubject)return{allowed:false,reason:"REPORT_RATE_LIMIT"};
+        if(subjectEvents.some(x=>x.targetId===target))return{allowed:false,reason:"DUPLICATE_REPORT"};
+        return{allowed:true,reason:null,remaining:EARTH_SIGNAL_RATE_LIMIT_REQUIREMENTS.maxReportsPerSubject-subjectEvents.length-1};
+      }
+
+      const place=String(placeId||"").trim();
+      if(!place)return{allowed:false,reason:"INVALID_PLACE"};
       if(subjectEvents.length>=EARTH_SIGNAL_RATE_LIMIT_REQUIREMENTS.maxSubmissionsPerSubject)return{allowed:false,reason:"RATE_LIMIT"};
       const subjectPlace=subjectEvents.filter(x=>x.placeId===place);
       if(subjectPlace.length>=EARTH_SIGNAL_RATE_LIMIT_REQUIREMENTS.maxActivePerSubjectPlace)return{allowed:false,reason:"PLACE_LIMIT"};
       return{allowed:true,reason:null,remaining:EARTH_SIGNAL_RATE_LIMIT_REQUIREMENTS.maxSubmissionsPerSubject-subjectEvents.length-1};
     },
-    async commit({subject,placeId,now=new Date()}={}){
-      const decision=await this.check({subject,placeId,now});
+    async commit(input={}){
+      const now=input.now instanceof Date?input.now:new Date();
+      const decision=await this.check({...input,now});
       if(!decision.allowed)return decision;
-      events.push({subject:String(subject),placeId:String(placeId),at:now.getTime()});
+      events.push({
+        subject:String(input.subject),
+        action:normalizedAction(input.action),
+        placeId:input.placeId==null?null:String(input.placeId),
+        targetId:input.targetId==null?null:String(input.targetId),
+        at:now.getTime()
+      });
       return{...decision,committed:true};
     },
     snapshot(){
