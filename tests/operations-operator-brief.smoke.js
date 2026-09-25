@@ -76,3 +76,20 @@ const efficientRenewalBrief=operationsOperatorBrief({
 });
 assert.match(efficientRenewalBrief,/Renewal debt: 3; minimum primary renewals: 2/);
 assert.match(efficientRenewalBrief,/Complete only the minimum primary playback renewals/);
+
+const noDuplicatePrep=operationsOperatorBrief({
+ snapshot:{providers:{families:1,targetFamilies:2},insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ providerGeneratedTargets:{state:"PREPARATION_REQUIRED",preparation:1,manualPreparation:1,reviewReady:0,items:[{providerFamilyId:"widget-family",provider:"Widget Provider",sourceId:"source",integrationKind:"PROVIDER_GENERATED_WIDGET",state:"EXACT_PROVIDER_CODE_REQUIRED",manualInteractionRequired:true,nextAction:"GENERATE_EXACT_CODE_ON_OFFICIAL_PROVIDER_SURFACE"}]},
+ researchReviewQueue:{state:"PROVIDER_PREPARATION_READY",exhausted:false,primary:[],preparation:[{id:"widget-family",provider:"Widget Provider",familyLabel:"Official widget",technicalStatus:"GENERATED_WIDGET_CODE_REQUIRED",nextAction:"GENERATE_WIDGET"}]}
+});
+assert.match(noDuplicatePrep,/Provider-generated target staging/);
+assert.doesNotMatch(noDuplicatePrep,/## Provider-generated integration preparation/);
+const terminalProviderBrief=operationsOperatorBrief({
+ snapshot:{providers:{families:1,targetFamilies:2},insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ providerDiscoveryQueue:{state:"CURRENT_CATALOG_RESEARCH_COMPLETE",primary:null,items:[]},
+ researchReviewQueue:{state:"EXHAUSTED_RESEARCH_NEW_PROVIDER",exhausted:true,failedPlayback:4,total:4,primary:[],preparation:[],alternates:[]}
+});
+assert.match(terminalProviderBrief,/Current external-provider research is complete/);
+assert.match(terminalProviderBrief,/do not recycle failed or already-classified families/);
