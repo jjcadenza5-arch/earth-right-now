@@ -36,7 +36,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   if(operatorReviewQueue?.items?.length){
     const primary=operatorReviewQueue.primaryItems?.length?operatorReviewQueue.primaryItems:operatorReviewQueue.items;
     lines.push("## Operator playback review queue");
-    lines.push(`- Inside target: ${operatorReviewQueue.ready??0}/${operatorReviewQueue.targetReady??0}; shortfall ${operatorReviewQueue.readyShortfall??0}. Primary batch: ${operatorReviewQueue.renewalCount||0} renewal + ${operatorReviewQueue.recommendedRestorationCount??Math.min(operatorReviewQueue.restorationCount||0,operatorReviewQueue.readyShortfall||0)} restoration review(s).`);
+    lines.push(`- Inside target: ${operatorReviewQueue.ready??0}/${operatorReviewQueue.targetReady??0}; shortfall ${operatorReviewQueue.readyShortfall??0}. Renewal debt: ${operatorReviewQueue.renewalCount||0}; minimum primary renewals: ${operatorReviewQueue.renewalRequiredCount??operatorReviewQueue.renewalCount??0}; primary restoration reviews: ${operatorReviewQueue.recommendedRestorationCount??Math.min(operatorReviewQueue.restorationCount||0,operatorReviewQueue.readyShortfall||0)}.`);
     for(const item of primary.slice(0,5))lines.push(`- ${item.title||item.id} — ${item.reviewMode||"REVIEW"}${item.reason?` / ${item.reason}`:""}${Number.isFinite(item.remainingHours)?` (${item.remainingHours}h remaining)`:""}`);
     if(operatorReviewQueue.backlogItems?.length)lines.push(`- Backlog retained: ${operatorReviewQueue.backlogItems.length} additional prioritized candidate(s).`);
     lines.push("- Queue ordering is advisory and non-mutating; human playback review is still required.","");
@@ -172,7 +172,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push("- Delivery readiness never implies approval or publication; review remains manual and separate.","");
   }
   lines.push("## Next operational focus");
-  if((operatorReviewQueue?.renewalCount||0)>0)lines.push("- Work the operator playback renewal queue before proof expires.");
+  if((operatorReviewQueue?.renewalRequiredCount??operatorReviewQueue?.renewalCount||0)>0)lines.push("- Complete only the minimum primary playback renewals needed to preserve the LIVE HERE target; keep extra renewal debt in backlog unless capacity allows.");
   else if((playbackHorizon?.summary?.due6h||0)>0||(playbackHorizon?.summary?.due12h||0)>0)lines.push("- Renew expiring inside-ERN HUMAN_PLAYBACK evidence before LIVE HERE eligibility lapses.");
   if((playbackEvidenceConsistency?.summary?.issues||0)>0)lines.push("- Resolve playback-evidence ledger/catalog drift before treating new LIVE HERE proof as authoritative.");
   if((snapshot?.insideERN?.readyShortfall||0)>0)lines.push("- Restore strong inside-ERN windows with fresh HUMAN_PLAYBACK evidence.");
