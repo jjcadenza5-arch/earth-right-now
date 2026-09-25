@@ -1,3 +1,9 @@
+## 2026-09-25 — Guide AI rate identity is server-owned and privacy-safe
+- Removed the client session-ID fallback from the future generative Guide rate-limit boundary. A valid client `sessionId` can no longer substitute for the server-derived pseudonymous rate subject.
+- Production readiness now requires `serverDerivedRateSubject=true` together with `rawNetworkIdentifiersStored=false`; storing raw IP/network identity would fail the deployment gate.
+- The public deployment manifest keeps server-derived subject capability disabled and raw network identifier storage false, so Generative Guide remains DETERMINISTIC_ONLY / NOT_DEPLOYED.
+- Focused Guide CI is green, including a regression proving a client-only opaque session cannot bypass the server-owned rate identity requirement.
+
 ## 2026-09-25 — Guide AI model execution is now bounded and cancellable
 - Added a provider-neutral execution wrapper around future model calls with a default 12-second timeout, clamped to a 3–20 second safety range.
 - Every model generation receives an `AbortSignal`; timeout returns the Guide to deterministic fallback, releases any reserved cost budget and clears the idempotency slot.
@@ -12,7 +18,7 @@
 - Duplicate completed requests replay the prior public response before rate-limit consumption, model generation or cost reservation, preventing browser retries from creating duplicate model spend.
 - Concurrent reuse of an in-flight request ID fails closed; the HTTP boundary maps that state to conflict rather than launching a second generation.
 - Every non-success service path now aborts the in-flight replay slot and releases any reserved request budget, including resolver/model/cost exceptions.
-- Idempotency is now a first-class activation and production-deployment requirement. The public deployment manifest keeps it `false`, so Generative Guide remains DETETERMINISTIC_ONLY / NOT_DEPLOYED.
+- Idempotency is now a first-class activation and production-deployment requirement. The public deployment manifest keeps it `false`, so Generative Guide remains DETERMINISTIC_ONLY / NOT_DEPLOYED.
 - Focused Guide CI is green with a regression test proving a duplicate request produces only one model call and one cost reservation/commit.
 
 ## 2026-09-25 — Provider diversity stabilized; fail-closed Generative ERN Guide foundation prepared
