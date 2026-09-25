@@ -1,3 +1,10 @@
+## 2026-09-25 — Earth Signals promoted into the daily Operations truth plane
+- Daily Operations now emits and retains `earth-signals-status.json` as a first-class artifact beside source/playback/commercial diagnostics.
+- Packet-integrity validation now checks Earth Signal mode consistency, blocks transport-without-deployment-evidence and blocks unpublished privacy wording from satisfying activation.
+- The daily operator brief now shows Earth Signal mode, backend-foundation state, deployment state, privacy publication state and remaining production-evidence requirements.
+- The Operations workflow completed successfully with packet build, operator brief, integrity validation and artifact retention all green.
+- Earth Signals remain READ_ONLY / NOT_DEPLOYED; this work improves observability only and does not change visitor behavior.
+
 ## 2026-09-25 — Earth Signal storage schema hardened
 - Added strict persistent-record validators for signals and reports before any production database is selected.
 - Signal storage rejects precise coordinates, free text, email/IP/user-agent fields, malformed timestamps, invalid expiry order and unsupported states.
