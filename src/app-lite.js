@@ -60,14 +60,14 @@ const momentWords={
 };
 function momentLabel(s){const w=momentWords[lang]||momentWords.en,h=localHour(s);if(h===null)return w[0];if(h>=5&&h<8)return w[1];if(h>=8&&h<17)return w[2];if(h>=17&&h<20)return w[3];return w[4];}
 function momentSignal(s){
- const h=localHour(s),c=cats(s);if(h===null)return{score:0,label:"Current view",reason:"Current conditions available now."};
+ const h=localHour(s),c=cats(s);if(h===null)return{score:0,label:"Current view",reason:"What is this place showing right now?"};
  const scenic=isScenic(s),city=isCity(s),wild=/wildlife|animal|zoo/.test(c),water=/beach|water|sea|coast|harbour/.test(c),mountain=/mountain|snow|ski|volcano|alps/.test(c);
- if(h>=5&&h<8){let score=18+(scenic?16:0)+(wild?9:0);return{score,label:"Morning light",reason:wild?"Dawn can be an active wildlife window.":"Soft morning light can make this a strong time to look."}}
- if(h>=17&&h<20){let score=20+(scenic?18:0)+(water?7:0)+(mountain?6:0);return{score,label:"Evening light",reason:"Late-day light can make this view especially expressive."}}
- if((h>=20||h<5)&&city){return{score:34,label:"Night lights",reason:"This city or harbour can stay visually active after dark."}}
- if((h>=20||h<5)&&!city){return{score:-26,label:"Night",reason:"It is dark locally, so this view may reveal less detail."}}
- if(h>=8&&h<17){let score=10+(scenic?12:0);return{score,label:"Daylight",reason:"Local daylight gives a clearer view of current conditions."}}
- return{score:0,label:momentLabel(s),reason:"Current local conditions."};
+ if(h>=5&&h<8){let score=18+(scenic?16:0)+(wild?9:0);return{score,label:"Morning light",reason:wild?"Who is already awake here at dawn?":"What does this place look like before the day fully arrives?"}}
+ if(h>=17&&h<20){let score=20+(scenic?18:0)+(water?7:0)+(mountain?6:0);return{score,label:"Evening light",reason:"What changes here when the day starts to soften?"}}
+ if((h>=20||h<5)&&city){return{score:34,label:"Night lights",reason:"What is still moving here after dark?"}}
+ if((h>=20||h<5)&&!city){return{score:-26,label:"Night",reason:"What can this place still reveal in the dark?"}}
+ if(h>=8&&h<17){let score=10+(scenic?12:0);return{score,label:"Daylight",reason:"What is happening here in full daylight?"}}
+ return{score:0,label:momentLabel(s),reason:"What is this place doing right now?"};
 }
 function cats(s){return(s.categories||[]).join(" ").toLowerCase()}
 function isDay(s){const h=localHour(s);return h===null?true:h>=6&&h<19}
@@ -114,18 +114,18 @@ function setProfile(){
  const daypartOffset={morning:0,day:1,evening:2,night:3}[part]||0;
  const autoSlot=(Math.floor(Date.now()/14400000)+daypartOffset+state.setOffset)%4;
  const automatic=[
-  {id:"beautiful",label:"Beautiful Earth",reason:"Chosen for this moment: daylight, scenery and strong current windows.",boost:s=>isScenic(s)?28:0},
-  {id:"live",label:"Live Around the World",reason:"Chosen for this moment: strong live windows across regions.",boost:s=>currentInside(s)?34:0},
-  {id:"cities",label:"Earth in Motion",reason:"Chosen for this moment: cities, harbours and visible activity.",boost:s=>isCity(s)?34:0},
-  {id:"wander",label:"Keep Wandering",reason:"Chosen for this moment: a varied route through useful current views.",boost:s=>(/interesting|useful/.test(cats(s))?24:0)}
+  {id:"beautiful",label:"Beautiful Earth",reason:"What part of Earth looks unexpectedly beautiful right now?",boost:s=>isScenic(s)?28:0},
+  {id:"live",label:"Live Around the World",reason:"What is unfolding somewhere else on Earth right now?",boost:s=>currentInside(s)?34:0},
+  {id:"cities",label:"Earth in Motion",reason:"Where is the world still moving right now?",boost:s=>isCity(s)?34:0},
+  {id:"wander",label:"Keep Wandering",reason:"What might you find if you keep looking?",boost:s=>(/interesting|useful/.test(cats(s))?24:0)}
  ][autoSlot];
  if(state.mode==="auto")return automatic;
  const fixed={
-  beautiful:{id:"beautiful",label:"Beautiful Earth",reason:"Scenic daylight, strong views and visual calm.",boost:s=>(isScenic(s)&&isDay(s)?42:0)},
-  cities:{id:"cities",label:"Earth in Motion",reason:"Cities, streets and harbours with visible life.",boost:s=>isCity(s)?46:0},
-  calm:{id:"calm",label:"Nature & Calm",reason:"Mountains, water, wildlife and quieter windows.",boost:s=>(/mountain|beach|water|nature|park|wildlife|snow/.test(cats(s))?45:0)-(isCity(s)?12:0)},
-  night:{id:"night",label:"Night Lights",reason:"City and harbour windows that stay interesting after dark.",boost:s=>(!isDay(s)&&isCity(s)?60:0)-(!isDay(s)&&!isCity(s)?30:0)},
-  golden:{id:"golden",label:"Golden Hour",reason:"Morning and evening light across scenic places.",boost:s=>{const h=localHour(s);return h!==null&&((h>=5&&h<8)||(h>=17&&h<20))&&isScenic(s)?70:0}}
+  beautiful:{id:"beautiful",label:"Beautiful Earth",reason:"Which window feels worth stopping for right now?",boost:s=>(isScenic(s)&&isDay(s)?42:0)},
+  cities:{id:"cities",label:"Earth in Motion",reason:"Where can you feel the world moving right now?",boost:s=>isCity(s)?46:0},
+  calm:{id:"calm",label:"Nature & Calm",reason:"Where does Earth feel quiet right now?",boost:s=>(/mountain|beach|water|nature|park|wildlife|snow/.test(cats(s))?45:0)-(isCity(s)?12:0)},
+  night:{id:"night",label:"Night Lights",reason:"Which city is still glowing after dark?",boost:s=>(!isDay(s)&&isCity(s)?60:0)-(!isDay(s)&&!isCity(s)?30:0)},
+  golden:{id:"golden",label:"Golden Hour",reason:"Where is the light changing right now?",boost:s=>{const h=localHour(s);return h!==null&&((h>=5&&h<8)||(h>=17&&h<20))&&isScenic(s)?70:0}}
  };
  return fixed[state.mode]||automatic;
 }
@@ -482,7 +482,7 @@ function distanceKm(a,b){
 }
 function renderContext(s){
  const box=$("#viewerContext"),story=$("#viewerStory"),tags=$("#viewerTags"),near=$("#nearbyList"),related=$("#relatedList");
- story.textContent=s.story||"A current window onto this place.";const ms=momentSignal(s);$("#viewerMomentWhy").textContent="Why now · "+ms.reason;
+ story.textContent=s.story||"A current window onto this place.";const ms=momentSignal(s);$("#viewerMomentWhy").textContent="Look now · "+ms.reason;
  tags.replaceChildren();
  const tagValues=[momentLabel(s),publicTruth(s),...(s.categories||[]).slice(0,3)];
  const confidence=$("#sourceConfidence"),age=verificationAgeDays(s);confidence.textContent=[verificationLabel(s),s.provider?("Source: "+s.provider):"",s.health==="HEALTHY"?"Catalog health: healthy":"Catalog health: "+String(s.health||"unknown").toLowerCase()].filter(Boolean).join(" · ");confidence.classList.toggle("stale",!currentTruthClaim(s));
