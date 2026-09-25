@@ -18,7 +18,7 @@ assert.equal(disabled.body.reason,"EARTH_SIGNALS_NOT_ACTIVATED");
 
 const created=await earthSignalHttpRequest(
   {method:"POST",path:"/api/earth-signals",body:{type:"WORTH_SEEING",placeId:"chiang-mai",placeLabel:"Chiang Mai"}},
-  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"browser-a",knownPlaceIds:["chiang-mai"],id:"sig-1",now}
+  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",knownPlaceIds:["chiang-mai"],id:"sig-1",now}
 );
 assert.equal(created.status,201);
 assert.equal(created.body.signal.id,"sig-1");
@@ -27,7 +27,7 @@ assert.equal(created.body.signal.expiresAt,"2026-09-25T05:45:00.000Z");
 
 const bad=await earthSignalHttpRequest(
   {method:"POST",path:"/api/earth-signals",body:{type:"BUSY",placeId:"unknown"}},
-  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"browser-a",knownPlaceIds:["chiang-mai"],id:"sig-2",now}
+  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",knownPlaceIds:["chiang-mai"],id:"sig-2",now}
 );
 assert.equal(bad.status,404);
 assert.equal(bad.body.reason,"UNKNOWN_PLACE");
@@ -46,14 +46,14 @@ const record={
 await storage.putSignal(record);
 const listed=await earthSignalHttpRequest(
   {method:"GET",path:"/api/earth-signals",query:{placeId:"chiang-mai"}},
-  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"browser-a",now}
+  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",now}
 );
 assert.equal(listed.status,200);
 assert.equal(listed.body.signals.length,1);
 
 const report=await earthSignalHttpRequest(
   {method:"POST",path:"/api/earth-signals/sig-1/report",body:{reason:"PRIVACY"}},
-  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"browser-a",now}
+  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",now}
 );
 assert.equal(report.status,202);
 assert.equal(report.body.visibility,"HIDE_PENDING_REVIEW");
