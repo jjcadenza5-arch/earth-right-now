@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -133,6 +133,13 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push("## Affiliate application readiness");
     lines.push(`- ERN-side prerequisites: ${affiliateApplicationReadiness.ernReady?"ready":"incomplete"}; ${affiliateApplicationReadiness.readyForDecision||0}/${affiliateApplicationReadiness.total||0} researched programs are ready for a later user application decision.`);
     lines.push("- Applications, acceptance, credentials and tracked links remain external/manual steps and are not performed by Operations.","");
+  }
+  if(guideAi){
+    lines.push("## Generative ERN Guide readiness");
+    lines.push(`- Mode: ${guideAi.mode||"UNKNOWN"}; deployment ${guideAi.deployment?.state||"UNKNOWN"}; deterministic fallback ${guideAi.deterministicFallback?"ready":"missing"}.`);
+    if(guideAi.deployment?.missing?.length)lines.push(`- Production evidence still missing: ${guideAi.deployment.missing.join(", ")}.`);
+    if(guideAi.deployment?.cost?.monthlyCostCeilingUsd!=null)lines.push(`- Hard monthly cost ceiling evidence: ${guideAi.deployment.cost.monthlyCostCeilingUsd}.`);
+    lines.push("- Client prompts and IDs never become trusted place/source facts; the server must rehydrate ERN catalog truth before generation.", "");
   }
   if(earthSignals){
     lines.push("## Earth Signals readiness");
