@@ -1,3 +1,6 @@
+## Backend service boundary and storage contract
+The structured Earth Signal foundation now includes a deployment-neutral service layer and explicit durable-storage interface. The service composes canonical-place validation, server-owned freshness, rate limiting, moderation visibility, reporting and 45-minute expiry around a storage adapter. A reference in-memory adapter exists only for tests. The service and HTTP adapter are both fail-closed behind the complete activation gate, so this preparation still does not turn on public contribution or imply that production transport/storage exists.
+
 ## Structured Earth Signal API contract
 ERN now has a deployment-neutral v1 contract for the first backend phase. It defines a bounded structured-signal submission path, server-owned timestamps/expiry, canonical place validation, no free text, no precise coordinates, privacy-minimal public responses and a 45-minute TTL. This contract prepares a future serverless implementation but does **not** enable submissions by itself; transport, rate limits, moderation, reporting, expiry deletion and the privacy notice still have to be real before contribution mode can turn on.
 
