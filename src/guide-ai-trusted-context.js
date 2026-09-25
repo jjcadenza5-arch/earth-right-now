@@ -30,12 +30,26 @@ export function guideAiTrustedContext(selection={},catalog=[]){
 }
 
 export function validateGuideAiModelResult(result={},trustedContext={}){
-  const answer=String(result.answer||"").trim();
+  const allowed=new Set(trustedContext.sourceIds||[]);
+  const segments=Array.isArray(result.segments)?result.segments:[];
+  if(!segments.length)return{ok:false,reason:"GROUNDED_SEGMENTS_REQUIRED"};
+  if(segments.length>8)return{ok:false,reason:"TOO_MANY_GROUNDED_SEGMENTS"};
+
+  const normalized=[];
+  for(const segment of segments){
+    const text=String(segment?.text||"").trim();
+    if(!text)return{ok:false,reason:"SEGMENT_TEXT_REQUIRED"};
+    if(text.length>500)return{ok:false,reason:"SEGMENT_TEXT_TOO_LONG"};
+    const ids=Array.isArray(segment?.sourceIds)?[...new Set(segment.sourceIds.map(String))]:[];
+    if(!ids.length)return{ok:false,reason:"SEGMENT_SOURCE_REQUIRED"};
+    const unknown=ids.filter(id=>!allowed.has(id));
+    if(unknown.length)return{ok:false,reason:"UNTRUSTED_SOURCE_REFERENCE",sourceIds:unknown};
+    normalized.push({text,sourceIds:ids});
+  }
+
+  const answer=normalized.map(x=>x.text).join(" ").trim();
   if(!answer)return{ok:false,reason:"MODEL_ANSWER_REQUIRED"};
   if(answer.length>1600)return{ok:false,reason:"MODEL_ANSWER_TOO_LONG"};
-  const allowed=new Set(trustedContext.sourceIds||[]);
-  const sourceIds=Array.isArray(result.sourceIds)?[...new Set(result.sourceIds.map(String))]:[];
-  const unknown=sourceIds.filter(id=>!allowed.has(id));
-  if(unknown.length)return{ok:false,reason:"UNTRUSTED_SOURCE_REFERENCE",sourceIds:unknown};
-  return{ok:true,result:{answer,sourceIds,placeId:trustedContext.placeId||null,action:trustedContext.action||null}};
+  const sourceIds=[...new Set(normalized.flatMap(x=>x.sourceIds))];
+  return{ok:true,result:{answer,sourceIds,segments:normalized,placeId:trustedContext.placeId||null,action:trustedContext.action||null}};
 }
