@@ -18,13 +18,17 @@ export async function guideAiService(input={},context={}){
   if(typeof context.resolver?.resolve!=="function")return fallback("DETERMINISTIC_RESOLVER_REQUIRED",request);
   if(typeof context.modelAdapter?.generate!=="function")return fallback("MODEL_ADAPTER_REQUIRED",request);
   if(typeof context.costGuard?.allow!=="function"||typeof context.costGuard?.commit!=="function")return fallback("COST_GUARD_REQUIRED",request);
+  if(typeof context.idempotency?.begin!=="function"||typeof context.idempotency?.complete!=="function"||typeof context.idempotency?.abort!=="function")return fallback("IDEMPOTENCY_STORE_REQUIRED",request);
   if(typeof context.rateLimiter?.begin!=="function"||typeof context.rateLimiter?.end!=="function")return fallback("RATE_LIMITER_REQUIRED",request);
   if(typeof context.metrics?.record!=="function")return fallback("OBSERVABILITY_REQUIRED",request);
 
   const subject=guideAiRateSubject(context.rateSubject||request.sessionId);
   if(!subject.ok)return fallback(subject.reason,request);
+  const replay=await context.idempotency.begin({subject:subject.subject,requestId:request.requestId});
+  if(!replay?.ok)return fallback(replay?.reason||"IDEMPOTENCY_FAILED",request);
+  if(replay.replay)return{ok:true,mode:"GENERATIVE_ENABLED",response:replay.response,replayed:true};
   const rate=await context.rateLimiter.begin({subject:subject.subject});
-  if(!rate?.allowed){await metric(context.metrics,"rateLimited",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(rate?.reason||"RATE_LIMIT",request)}
+  if(!rate?.allowed){await context.idempotency.abort({subject:subject.subject,requestId:request.requestId});await metric(context.metrics,"rateLimited",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(rate?.reason||"RATE_LIMIT",request)}
 
   try{
     let selection;
@@ -32,7 +36,7 @@ export async function guideAiService(input={},context={}){
     if(!selection||!Array.isArray(selection.sourceIds))return fallback("DETERMINISTIC_RESOLUTION_INVALID",request);
     const trusted=guideAiTrustedContext(selection,context.catalog);
     const budget=await context.costGuard.allow({sessionId:subject.subject,queryChars:request.query.length});
-    if(!budget?.allowed){await metric(context.metrics,"costBlocked",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(budget?.reason||"COST_GUARD_BLOCKED",request)}
+    if(!budget?.allowed){await context.idempotency.abort({subject:subject.subject,requestId:request.requestId});await metric(context.metrics,"costBlocked",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(budget?.reason||"COST_GUARD_BLOCKED",request)}
 
     let generated;
     try{
@@ -45,15 +49,17 @@ export async function guideAiService(input={},context={}){
     }catch{
       await releaseBudget(context.costGuard);
       await metric(context.metrics,"modelError",{latencyMs:Date.now()-started,inputChars:request.query.length});
+      await context.idempotency.abort({subject:subject.subject,requestId:request.requestId});
       return fallback("MODEL_GENERATION_FAILED",request);
     }
 
     const validated=validateGuideAiModelResult(generated,trusted);
-    if(!validated.ok){await releaseBudget(context.costGuard);await metric(context.metrics,"truthRejected",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(validated.reason,request)}
+    if(!validated.ok){await releaseBudget(context.costGuard);await context.idempotency.abort({subject:subject.subject,requestId:request.requestId});await metric(context.metrics,"truthRejected",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(validated.reason,request)}
     const committed=await context.costGuard.commit({sessionId:subject.subject,usage:generated.usage||null});
-    if(committed?.allowed===false){await metric(context.metrics,"costBlocked",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(committed.reason||"COST_COMMIT_BLOCKED",request)}
+    if(committed?.allowed===false){await context.idempotency.abort({subject:subject.subject,requestId:request.requestId});await metric(context.metrics,"costBlocked",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(committed.reason||"COST_COMMIT_BLOCKED",request)}
 
     const response=guideAiPublicResponse(validated.result);
+    await context.idempotency.complete({subject:subject.subject,requestId:request.requestId,response});
     await metric(context.metrics,"success",{latencyMs:Date.now()-started,inputChars:request.query.length,outputChars:response.answer.length,estimatedCostUsd:Number.isFinite(committed?.estimatedCostUsd)?committed.estimatedCostUsd:null});
     return{ok:true,mode:"GENERATIVE_ENABLED",response,trustedContext:trusted};
   }finally{
