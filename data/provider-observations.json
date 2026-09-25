@@ -61,5 +61,19 @@
     "observedAt": "2026-09-25T02:23:51.687Z",
     "reason": "Human playback confirmed in deployed ERN operator review lab; source target matched the current catalog embed.",
     "httpStatus": 200
+  },
+  {
+    "id": "metung-gippsland-lakes",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T05:54:31.950Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; source and embed target matched the current review batch 3ec5f713ce5daf15.",
+    "httpStatus": 200
+  },
+  {
+    "id": "ponte-di-legno-adamello",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T05:54:19.434Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; source and embed target matched the current review batch 3ec5f713ce5daf15.",
+    "httpStatus": 200
   }
 ]
