@@ -57,6 +57,12 @@ const report=await earthSignalHttpRequest(
 );
 assert.equal(report.status,202);
 assert.equal(report.body.visibility,"HIDE_PENDING_REVIEW");
+const duplicateReport=await earthSignalHttpRequest(
+  {method:"POST",path:"/api/earth-signals/sig-1/report",body:{reason:"SPAM"}},
+  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",now:new Date("2026-09-25T05:01:00Z")}
+);
+assert.equal(duplicateReport.status,429);
+assert.equal(duplicateReport.body.reason,"DUPLICATE_REPORT");
 
 assert.equal(created.headers["cache-control"],"no-store");
 assert.equal(listed.headers["cache-control"],"no-store");
