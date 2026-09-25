@@ -1,3 +1,10 @@
+## 2026-09-25 — Earth Signal production deployment gate added
+- Added an explicit deployment-evidence gate covering HTTPS transport, durable storage, server-side rate limits, moderation, reporting queue, expiry cleanup, published privacy notice, secret isolation, observability and cost control.
+- Partial evidence remains NOT_DEPLOYED; local code, test adapters and prepared architecture do not satisfy production capability.
+- Activation capability flags can only be derived as all-true when the complete deployment evidence set passes.
+- Current ERN status intentionally reports NOT_DEPLOYED with all ten production evidence requirements missing, while the backend foundation and privacy wording remain prepared but non-live.
+- Public contribution remains READ_ONLY.
+
 ## 2026-09-25 — Earth Signal privacy wording prepared, not activated
 - Added a complete privacy-notice draft model for structured Earth Signals covering purpose, signal types, 45-minute retention, optional location evidence, place-only public scope, reporting and deletion.
 - The draft explicitly states that free text is not accepted, precise coordinates are not public and no account is required for the structured phase.
