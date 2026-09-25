@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -62,6 +62,12 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     for(const item of providerFamilyResearch.items.slice(0,5))lines.push(`- ${item.provider||item.id} — ${item.permissionStatus||"permission review"}; terms ${item.termsEvidenceState||"UNKNOWN"}${Number.isFinite(item.termsAgeDays)?` (${item.termsAgeDays}d)`:""}; ${item.technicalStatus||"technical review"}; next: ${item.nextAction||"manual research"}.`);
     if(providerFamilyResearch.needsTermsReview)lines.push(`- ${providerFamilyResearch.needsTermsReview} provider-family terms review(s) need refresh.`);
     lines.push("- Research-family entries are not public sources. ERN uses provider-branded players only; re-streaming/rebroadcasting remains prohibited.","");
+  }
+  if(providerGeneratedTargets?.items?.length){
+    lines.push("## Provider-generated target staging");
+    lines.push(`- State: ${providerGeneratedTargets.state||"UNKNOWN"}; ${providerGeneratedTargets.preparation||0} exact target(s) still need provider code/URL; ${providerGeneratedTargets.reviewReady||0} ready for deployed rendering review.`);
+    for(const item of providerGeneratedTargets.items.slice(0,5))lines.push(`- ${item.provider||item.id} / ${item.sourceId||item.id} — ${item.integrationKind||"INTEGRATION"}; ${item.state||"UNKNOWN"}; next: ${item.nextAction||"manual review"}.`);
+    lines.push("- Exact target staging is fail-closed: no family permission, guessed URL or technical fetch becomes catalog permission/playback proof automatically.","");
   }
   if(providerDiscoveryQueue?.primary){
     lines.push("## Provider discovery queue");
@@ -168,6 +174,8 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.exhausted&&providerDiscoveryQueue?.primary)lines.push(`- Research ${providerDiscoveryQueue.primary.provider} terms and branded player path next; discovery ranking does not imply permission or embedability.`);
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.exhausted)lines.push("- Research a genuinely new embeddable provider family or materially changed target; do not recycle failed playback candidates.");
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
+  if(providerGeneratedTargets?.reviewReady)lines.push("- Run deployed rendering review for exact provider-generated/current-image targets before any editorial promotion review.");
+  else if(providerGeneratedTargets?.preparation)lines.push("- Obtain exact provider-generated code or authorized current-image target URLs; do not guess or derive unstable targets.");
   if(providerFamilyResearch?.needsTermsReview)lines.push("- Refresh stale provider terms evidence before permission review progresses.");
   if(providerFamilyResearch?.items?.length&&providerFamilyResearch.items.some(x=>x.technicalStatus==="SPECIFIC_EMBED_URL_REQUIRED"))lines.push("- Identify a current specific player URL for promising provider-family research before deployed playback testing.");
   if(sourceRevalidationTriage){
