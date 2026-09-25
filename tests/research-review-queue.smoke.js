@@ -39,3 +39,13 @@ const batch=researchReviewQueue([
 ],{primaryCount:4});
 assert.equal(batch.primary.length,4);
 assert.equal(batch.alternates.length,1);
+
+const prep=researchReviewQueue([{id:"failed-a",provider:"Old",playbackReview:"HUMAN_PLAYBACK_FAILED"}],{providerFamilyReport:{items:[{id:"widget-family",provider:"Widget Provider",familyLabel:"Official widget",candidateEligible:true,technicalStatus:"GENERATED_WIDGET_CODE_REQUIRED",permissionStatus:"EXPLICIT_WIDGET_ALLOWED",nextAction:"GENERATE_WIDGET",termsEvidenceState:"CURRENT",safeUsage:true,networkFamily:"widget.example",usageMode:"PROVIDER_GENERATED_WIDGET_ONLY",discoveryProviderAliases:["Widget Provider Alias"]}]},primaryCount:1});
+assert.equal(prep.state,"PROVIDER_PREPARATION_READY");
+assert.equal(prep.exhausted,false);
+assert.equal(prep.primary.length,0);
+assert.equal(prep.preparation.length,1);
+assert.equal(prep.preparation[0].requiredHumanAction,"NONE_YET_PREPARE_EXACT_PROVIDER_GENERATED_TARGET");
+assert.equal(prep.nextAction,"PREPARE_PROVIDER_GENERATED_TARGET");
+assert.equal(prep.safety.automaticWidgetGenerationAllowed,false);
+assert.equal(prep.preparation[0].promotionAllowed,false);
