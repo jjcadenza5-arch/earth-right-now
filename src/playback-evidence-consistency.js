@@ -9,7 +9,8 @@ export function playbackEvidenceConsistency(sources=[],observations=[],{now=new 
     const obs=byId.get(String(source?.id||""))||null;
     const human=obs?.confirmation==="HUMAN_PLAYBACK";
     const observedAt=normalizeIso(obs?.observedAt);
-    const freshHuman=human&&Number.isFinite(n)&&ageHours(observedAt,n)<=freshHours;
+    const failureAt=normalizeIso(source?.lastFailedCheck);const humanSupersededByFailure=Boolean(human&&observedAt&&failureAt&&Date.parse(failureAt)>Date.parse(observedAt));
+    const freshHuman=human&&!humanSupersededByFailure&&Number.isFinite(n)&&ageHours(observedAt,n)<=freshHours;
     if(marker&&source.playback!=="EMBED"){
       issues.push({id:source.id,code:"PLAYBACK_MARKER_ON_NON_EMBED",playback:source.playback,playbackVerifiedAt:marker});
     }
@@ -23,7 +24,7 @@ export function playbackEvidenceConsistency(sources=[],observations=[],{now=new 
       const separationMinutes=Math.abs(Date.parse(marker)-Date.parse(observedAt))/6e4;
       if(separationMinutes>toleranceMinutes)issues.push({id:source.id,code:"PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",playbackVerifiedAt:marker,observedAt,separationMinutes:Number(separationMinutes.toFixed(1))});
     }
-    if(marker||obs)rows.push({id:source.id,title:source.title,playback:source.playback,playbackVerifiedAt:marker,observationKind:obs?.confirmation||null,observedAt,freshHuman});
+    if(marker||obs||failureAt)rows.push({id:source.id,title:source.title,playback:source.playback,playbackVerifiedAt:marker,observationKind:obs?.confirmation||null,observedAt,failureAt,humanSupersededByFailure,freshHuman});
   }
   const known=new Set((sources||[]).map(x=>String(x.id)));
   for(const obs of observations||[])if(obs?.id&&!known.has(String(obs.id)))issues.push({id:String(obs.id),code:"UNKNOWN_SOURCE_OBSERVATION",observedAt:normalizeIso(obs.observedAt)});
@@ -35,6 +36,6 @@ export function playbackEvidenceConsistency(sources=[],observations=[],{now=new 
     issues,
     rows,
     safety:{catalogMutationAllowed:false,automaticHealthChangeAllowed:false,automaticPlaybackVerificationAllowed:false},
-    note:"Read-only consistency audit between catalog playbackVerifiedAt markers and HUMAN_PLAYBACK observations. It detects drift but never creates or refreshes playback proof."
+    note:"Read-only consistency audit between catalog playbackVerifiedAt markers and HUMAN_PLAYBACK observations. A later recorded playback failure supersedes an older success for freshness checks. The audit detects drift but never creates or refreshes playback proof."
   };
 }
