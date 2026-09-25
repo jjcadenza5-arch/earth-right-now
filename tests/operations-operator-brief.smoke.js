@@ -22,3 +22,15 @@ const prepBrief=operationsOperatorBrief({
 assert.match(prepBrief,/Provider-generated integration preparation/);
 assert.match(prepBrief,/Widget Provider/);
 assert.match(prepBrief,/Prepare the exact provider-generated target/);
+
+const targetBrief=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ providerGeneratedTargets:{state:"PREPARATION_REQUIRED",preparation:3,reviewReady:0,items:[
+   {id:"k",provider:"KitzSki",sourceId:"kitzbuhel",integrationKind:"PROVIDER_GENERATED_WIDGET",state:"EXACT_PROVIDER_CODE_REQUIRED",nextAction:"GENERATE_EXACT_CODE_ON_OFFICIAL_PROVIDER_SURFACE"},
+   {id:"i",provider:"Icelandic Meteorological Office",sourceId:"reykjavik-metoffice",integrationKind:"PROVIDER_AUTHORIZED_CURRENT_IMAGE",state:"EXACT_PROVIDER_CODE_REQUIRED",nextAction:"GENERATE_EXACT_CODE_ON_OFFICIAL_PROVIDER_SURFACE"}
+ ]}
+});
+assert.match(targetBrief,/Provider-generated target staging/);
+assert.match(targetBrief,/Icelandic Meteorological Office/);
+assert.match(targetBrief,/Obtain exact provider-generated code or authorized current-image target URLs/);
