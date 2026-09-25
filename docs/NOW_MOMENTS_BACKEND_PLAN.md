@@ -1,3 +1,6 @@
+## Structured Earth Signal API contract
+ERN now has a deployment-neutral v1 contract for the first backend phase. It defines a bounded structured-signal submission path, server-owned timestamps/expiry, canonical place validation, no free text, no precise coordinates, privacy-minimal public responses and a 45-minute TTL. This contract prepares a future serverless implementation but does **not** enable submissions by itself; transport, rate limits, moderation, reporting, expiry deletion and the privacy notice still have to be real before contribution mode can turn on.
+
 # Now Moments backend activation plan
 
 Now Moments is intentionally **not** a permanent social feed.
