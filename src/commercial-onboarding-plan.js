@@ -19,6 +19,7 @@ export function commercialOnboardingPlan({sources=[],offers=[],researchCandidate
   for(const source of sources||[]){
     const key=placeKey(source);
     if(!key||source.featuredHold===true||source.health!=="HEALTHY"||!currentSource(source))continue;
+    if(source.travelResearchEligible===false)continue;
     if((Number(source.quality)||0)<80)continue;
     const group=groups.get(key)||[];
     group.push(source);groups.set(key,group);
@@ -72,6 +73,6 @@ export function commercialOnboardingPlan({sources=[],offers=[],researchCandidate
       paidPriorityAllowed:false,
       inventOffersAllowed:false
     },
-    note:"Private editorial onboarding plan only. Places with a current public offer or existing private real-option research are excluded from new-research recommendations. Research coverage never implies an affiliate relationship, sponsorship, public activation, visitor demand, conversion probability, revenue, or ranking value."
+    note:"Private editorial onboarding plan only. Places explicitly marked travelResearchEligible:false, places with a current public offer, and places with existing private real-option research are excluded from new-research recommendations. Research coverage never implies an affiliate relationship, sponsorship, public activation, visitor demand, conversion probability, revenue, or ranking value."
   };
 }
