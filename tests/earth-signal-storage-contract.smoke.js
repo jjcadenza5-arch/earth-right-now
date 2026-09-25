@@ -17,7 +17,9 @@ await store.putSignal({
   placeId:"chiang-mai",
   createdAt:"2026-09-25T05:00:00.000Z",
   storageExpiryAt:"2026-09-25T05:45:00.000Z",
-  reported:false
+  reported:false,
+  locationEvidence:"UNVERIFIED",
+  moderation:"STRUCTURED"
 });
 await store.putSignal({
   id:"sig-2",
@@ -25,7 +27,9 @@ await store.putSignal({
   placeId:"flam-aurlandsfjord",
   createdAt:"2026-09-25T05:10:00.000Z",
   storageExpiryAt:"2026-09-25T05:55:00.000Z",
-  reported:false
+  reported:false,
+  locationEvidence:"UNVERIFIED",
+  moderation:"STRUCTURED"
 });
 
 const list=await store.listSignals({placeId:"chiang-mai",now:new Date("2026-09-25T05:30:00Z")});
