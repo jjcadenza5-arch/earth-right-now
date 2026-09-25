@@ -104,5 +104,34 @@
       "https://www.nps.gov/yell/learn/photosmultimedia/webcams.htm",
       "https://www.nps.gov/media/webcam/view.htm?id=AF555E5C-BE40-FE91-52E98E0EDD833B68"
     ]
+  },
+  {
+    "id": "sanparks-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "SANParks",
+    "familyLabel": "SANParks wildlife webcam network",
+    "researchUrl": "https://www.sanparks.org/travel/webcams/overview",
+    "termsUrl": "https://www.sanparks.org/legal/terms-conditions",
+    "verifiedAt": "2026-09-25T06:26:00Z",
+    "permissionEvidence": "SANParks' current Terms & Conditions state that website content including video clips and images may not be reproduced, distributed, broadcast, transmitted or recorded without prior written consent. SANParks provides a copyright-permission request workflow. Current webcam pages expose delayed local video files for browser viewing, but ERN must not convert those files into direct embeds or restreams without permission.",
+    "permissionStatus": "WRITTEN_PERMISSION_REQUIRED_FOR_REUSE_OR_EMBED",
+    "technicalStatus": "DO_NOT_STAGE_DIRECT_MEDIA_FILE",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_WRITTEN_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_WRITTEN_PERMISSION_OBTAINED",
+    "networkFamily": "sanparks.org",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T06:26:00Z",
+    "communityGuidelinesUrl": "https://www.sanparks.org/contact/request/copyright-permission",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "LICENSE_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.sanparks.org/legal/terms-conditions",
+      "https://www.sanparks.org/contact/request/copyright-permission",
+      "https://www.sanparks.org/travel/webcams/overview"
+    ]
   }
 ]
