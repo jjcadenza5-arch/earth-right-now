@@ -1,3 +1,6 @@
+## Persistent record schema hardening
+Earth Signal storage now has a strict record schema before any future durable backend is connected. Stored signals reject precise coordinates, free text, contact/network identifiers, malformed timestamps, invalid expiry ordering and unsupported moderation/location states. Reports are similarly bounded to the approved reason set and reject free text or identifying network/contact fields. The storage boundary enforces these validators rather than trusting callers.
+
 ## Production deployment evidence gate
 A complete backend deployment now has an explicit fail-closed evidence model. Contribution remains off unless real production evidence exists for: an HTTPS endpoint, durable storage, server-side rate limits, moderation, a report queue, expiry cleanup, a published privacy notice, secret isolation, observability, and a cost guard. Test doubles and local code are explicitly insufficient. Only a fully complete deployment-evidence set may derive all six activation capabilities as true.
 
