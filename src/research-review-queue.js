@@ -4,8 +4,9 @@ function familyByProvider(report){return new Map(rows(report).filter(x=>x?.provi
 
 export function researchReviewQueue(candidates=[],{preflightReport=null,providerFamilyReport=null,primaryCount=1}={}){
   const preflight=preflightById(preflightReport),families=familyByProvider(providerFamilyReport);
+  const approved=(candidates||[]).filter(c=>c.status==="APPROVED"&&c.promotion==="APPROVED_FOR_CATALOG"&&c.playbackReview==="HUMAN_PLAYBACK_CONFIRMED"&&c.permissionReview==="PER_VIDEO_EMBED_CONFIRMED");
   const failedPlayback=(candidates||[]).filter(c=>c.playbackReview==="HUMAN_PLAYBACK_FAILED");
-  const reviewable=(candidates||[]).filter(c=>c.playbackReview!=="HUMAN_PLAYBACK_FAILED");
+  const reviewable=(candidates||[]).filter(c=>!approved.includes(c)&&c.playbackReview!=="HUMAN_PLAYBACK_FAILED");
 
   const ranked=reviewable.map(c=>{
     const p=preflight.get(String(c.id))||null,f=families.get(String(c.provider))||null;
@@ -52,6 +53,7 @@ export function researchReviewQueue(candidates=[],{preflightReport=null,provider
     state,
     exhausted,
     total:(candidates||[]).length,
+    approved:approved.length,
     failedPlayback:failedPlayback.length,
     reviewable:ranked.length,
     primaryCount:primary.length,
