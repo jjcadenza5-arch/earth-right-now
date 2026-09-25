@@ -115,3 +115,13 @@ The Icelandic Meteorological Office is the exception: it has an explicit authori
 2. If an exact target is obtained, stage it in `data/provider-generated-targets.json` and move only to `DEPLOYED_REVIEW_REQUIRED`.
 3. Continue normal inside-ERN playback evidence maintenance/restoration without treating HTTP reachability as proof.
 4. Keep generative ERN Guide, Earth Signals, submissions and commercial activation behind their existing deployment/user-decision gates.
+
+## Extraction blockers — 2026-09-25 later update
+
+The exact-target registry now records extraction mode and blocker reason so future work does not repeat dead-end retrieval attempts.
+
+- KitzSki: `INTERACTIVE_PROVIDER_GENERATOR`; human interaction with the official widget generator is required to obtain the generated source code. Public HTML confirms the widget path but does not expose the generated code.
+- SkylineWebcams Torres del Paine: `INTERACTIVE_PROVIDER_EMBED_CONTROL`; human interaction with the official Embed control is required to obtain the permitted five-minute photogram code. Do not substitute the live-video player.
+- Icelandic Meteorological Office Reykjavík: `DYNAMIC_PROVIDER_IMAGE_TARGET`; no human interaction flag yet, but the stable current-image URL is not exposed by the retrievable public page. Continue machine-safe discovery only; do not guess an asset URL.
+
+Operations now reports how many preparation targets require interactive provider action and explicitly warns against repeatedly treating those as machine-retrievable work.
