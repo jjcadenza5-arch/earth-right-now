@@ -83,5 +83,21 @@
     "reviewedSourceUrl": "https://explore.org/livecams/currently-live/brown-bear-salmon-cam-brooks-falls",
     "reviewedEmbedUrl": "https://explore.org/livecams/player/brown-bear-salmon-cam-brooks-falls",
     "reviewNote": "Deployed-origin operator review on earthrightnow.app failed to produce usable playback. Keep research-only; do not infer source outage or permission failure from iframe playback failure alone."
+  },
+  {
+    "id": "youtube-hida-takayama-channel-live",
+    "status": "RESEARCH_ONLY",
+    "provider": "Hida-Takayama Live Camera",
+    "platform": "YouTube",
+    "sourceUrl": "https://takayama-live.com/streaming",
+    "candidateEmbedUrl": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw",
+    "ownerEvidence": "Official Hida-Takayama Live Camera streaming page embeds this YouTube channel live player and links the Hida-Takayama Live Camera YouTube channel.",
+    "currentEvidence": "Official streaming page updated 2026-04-07 describes the live stream as YouTube Live, identifies the Takayama Honmachi / Miyagawa Kajibashi camera location, and notes that individual YouTube Live addresses change when the stream reconnects.",
+    "discoveredAt": "2026-09-25T06:31:00Z",
+    "permissionReview": "PROVIDER_PAGE_USES_STANDARD_YOUTUBE_CHANNEL_LIVE_EMBED_DEPLOYED_TEST_REQUIRED",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_UNTIL_REVIEW",
+    "currentEvidenceReviewedAt": "2026-09-25T06:31:00Z",
+    "platformEvidence": "The official provider page itself uses a standard YouTube channel live embed, giving stronger specific-target evidence than the prior Monterey individual-video candidates. ERN still requires deployed human playback and must keep YouTube branding/player controls intact."
   }
 ]
