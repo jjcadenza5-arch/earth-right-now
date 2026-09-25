@@ -1,0 +1,11 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+import {allowedResearchEmbedUrl,allowedEmbedUrl,embedSandbox} from "../src/embed-policy.js";
+assert.ok(allowedResearchEmbedUrl("https://webcam-lapalma.de/embed/vulkan/"));
+assert.ok(allowedResearchEmbedUrl("https://webcam-lapalma.de/embed/aridane/"));
+assert.ok(allowedResearchEmbedUrl("https://webcam-lapalma.de/embed/caldera/"));
+assert.equal(allowedEmbedUrl("https://webcam-lapalma.de/embed/vulkan/"),null);
+assert.match(embedSandbox({embedUrl:"https://webcam-lapalma.de/embed/vulkan/"}),/allow-scripts/);
+const builder=fs.readFileSync("scripts/build-operator-review.mjs","utf8");
+assert.match(builder,/required-attribution/);
+assert.match(builder,/webcam-lapalma\.de/);
+console.log("Webcam La Palma stays research-only until human review and preserves attribution");
