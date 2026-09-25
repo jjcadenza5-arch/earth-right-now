@@ -14,6 +14,7 @@ on:
       - "data/commercial-research-candidates.json"
       - "data/affiliate-platform-research.json"
       - "data/submission-transport.json"
+      - "data/earth-signal-deployment.json"
       - "src/**"
       - "scripts/**"
       - "package.json"
