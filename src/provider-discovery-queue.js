@@ -74,12 +74,12 @@ export function providerDiscoveryQueue(sources=[],providerFamilyReport=null,{now
 
   return{
     generatedAt:now.toISOString(),
-    state:items.length?"DISCOVERY_READY":"NO_DISCOVERY_CANDIDATES",
+    state:items.length?"DISCOVERY_READY":"CURRENT_CATALOG_RESEARCH_COMPLETE",
     total:items.length,
     maxAgeDays,
     items,
     primary:items[0]||null,
-    nextAction:items.length?"RESEARCH_PRIMARY_PROVIDER_TERMS":"EXPAND_CATALOG_RESEARCH",
+    nextAction:items.length?"RESEARCH_PRIMARY_PROVIDER_TERMS":"HOLD_UNTIL_EXTERNAL_CATALOG_CHANGES",
     safety:{
       catalogMutationAllowed:false,
       embedPermissionInferred:false,
@@ -87,6 +87,6 @@ export function providerDiscoveryQueue(sources=[],providerFamilyReport=null,{now
       providerContactAllowed:false,
       humanReviewRequested:false
     },
-    note:"Discovery ranking uses ERN's existing healthy/current external-live catalog only. It prioritizes research leverage, not provider quality, permission, embedability or visitor ranking."
+    note:"Discovery ranking uses ERN's existing healthy/current external-live catalog only. When no unresearched current provider remains, research is complete for the current catalog and should stay on hold until the external catalog materially changes. It prioritizes research leverage, not provider quality, permission, embedability or visitor ranking."
   };
 }
