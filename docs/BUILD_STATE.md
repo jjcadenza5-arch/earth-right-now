@@ -1,3 +1,11 @@
+## 2026-09-25 — Earth Signal storage schema hardened
+- Added strict persistent-record validators for signals and reports before any production database is selected.
+- Signal storage rejects precise coordinates, free text, email/IP/user-agent fields, malformed timestamps, invalid expiry order and unsupported states.
+- Report storage rejects unsupported reasons plus free text and identifying contact/network fields.
+- The storage adapter now enforces schema validation on every write instead of trusting upstream code.
+- Backend foundation status now explicitly reports durable-storage contract, schema validation and gated service-layer readiness while deployedTransport remains false.
+- Focused Earth Signal CI remains active and production contribution remains READ_ONLY.
+
 ## 2026-09-25 — Earth Signal production deployment gate added
 - Added an explicit deployment-evidence gate covering HTTPS transport, durable storage, server-side rate limits, moderation, reporting queue, expiry cleanup, published privacy notice, secret isolation, observability and cost control.
 - Partial evidence remains NOT_DEPLOYED; local code, test adapters and prepared architecture do not satisfy production capability.
