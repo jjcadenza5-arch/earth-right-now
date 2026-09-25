@@ -34,3 +34,16 @@ const targetBrief=operationsOperatorBrief({
 assert.match(targetBrief,/Provider-generated target staging/);
 assert.match(targetBrief,/Icelandic Meteorological Office/);
 assert.match(targetBrief,/Obtain exact provider-generated code or authorized current-image target URLs/);
+
+const blockerBrief=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ providerGeneratedTargets:{state:"PREPARATION_REQUIRED",preparation:3,manualPreparation:2,reviewReady:0,items:[
+  {id:"k",provider:"KitzSki",sourceId:"kitzbuhel",integrationKind:"PROVIDER_GENERATED_WIDGET",state:"EXACT_PROVIDER_CODE_REQUIRED",manualInteractionRequired:true,nextAction:"GENERATE_EXACT_CODE_ON_OFFICIAL_PROVIDER_SURFACE"},
+  {id:"i",provider:"IMO",sourceId:"reykjavik",integrationKind:"PROVIDER_AUTHORIZED_CURRENT_IMAGE",state:"EXACT_PROVIDER_TARGET_URL_REQUIRED",manualInteractionRequired:false,nextAction:"IDENTIFY_EXACT_AUTHORIZED_CURRENT_IMAGE_URL"}
+ ]}
+});
+assert.match(blockerBrief,/2 require interactive provider action/);
+assert.match(blockerBrief,/INTERACTIVE PROVIDER ACTION/);
+assert.match(blockerBrief,/do not repeatedly retry them as machine-retrievable work/);
+assert.match(blockerBrief,/Continue machine-safe discovery/);
