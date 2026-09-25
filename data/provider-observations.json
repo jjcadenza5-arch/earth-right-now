@@ -131,5 +131,68 @@
     "observedAt": "2026-09-25T07:07:39.994Z",
     "reason": "Webcam La Palma Tajogaite deployed review confirmed current playback; batch 87f2fc998e39534d.",
     "httpStatus": 200
+  },
+  {
+    "id": "auckland-viaduct-harbour",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T14:59:12.384Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
+    "httpStatus": 200
+  },
+  {
+    "id": "bergen-ulriken",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T14:58:20.419Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
+    "httpStatus": 200
+  },
+  {
+    "id": "cijin-beach-kaohsiung",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T14:58:26.918Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
+    "httpStatus": 200
+  },
+  {
+    "id": "la-palma-aridane-valley",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T14:59:29.385Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
+    "httpStatus": 200
+  },
+  {
+    "id": "la-palma-caldera-taburiente",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T14:59:21.300Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
+    "httpStatus": 200
+  },
+  {
+    "id": "ponte-di-legno-adamello",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T14:58:57.886Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
+    "httpStatus": 200
+  },
+  {
+    "id": "skeikampen-ski",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T14:58:39.667Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
+    "httpStatus": 200
+  },
+  {
+    "id": "takayama-miyagawa-stream",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T14:59:07.202Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
+    "httpStatus": 200
+  },
+  {
+    "id": "verbier",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T14:59:35.119Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
+    "httpStatus": 200
   }
 ]
