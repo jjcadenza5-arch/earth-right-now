@@ -1,3 +1,6 @@
+## Privacy notice preparation
+The structured Earth Signal privacy wording is now content-complete in code: purpose, allowed signal types, 45-minute retention, optional location evidence, place-only public location scope, reporting, expiry deletion, no free text, no public precise coordinates and no account requirement. It remains explicitly **DRAFT_NOT_PUBLISHED**. The privacyNotice capability must stay false until this wording is actually published at the real public privacy surface and that publication is verified.
+
 ## Backend service boundary and storage contract
 The structured Earth Signal foundation now includes a deployment-neutral service layer and explicit durable-storage interface. The service composes canonical-place validation, server-owned freshness, rate limiting, moderation visibility, reporting and 45-minute expiry around a storage adapter. A reference in-memory adapter exists only for tests. The service and HTTP adapter are both fail-closed behind the complete activation gate, so this preparation still does not turn on public contribution or imply that production transport/storage exists.
 
