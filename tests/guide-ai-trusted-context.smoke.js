@@ -8,6 +8,22 @@ const catalog=[
 const trusted=guideAiTrustedContext({placeId:"p",action:"SHOW_PLACE",sourceIds:["a","b","fake"]},catalog);
 assert.equal(trusted.serverRehydrated,true);assert.equal(trusted.selectionOrigin,"DETERMINISTIC_ERN_RESOLVER");
 assert.deepEqual(new Set(trusted.sourceIds),new Set(["a","b"]));
-const accepted=validateGuideAiModelResult({answer:"Try A",sourceIds:["a"],placeId:"fake-place",action:"DELETE_EARTH"},trusted);assert.equal(accepted.ok,true);assert.equal(accepted.result.placeId,"p");assert.equal(accepted.result.action,"SHOW_PLACE");
-assert.equal(validateGuideAiModelResult({answer:"Invented",sourceIds:["fake"]},trusted).reason,"UNTRUSTED_SOURCE_REFERENCE");
-console.log("Generative Guide trusts only server-rehydrated ERN catalog sources");
+
+const accepted=validateGuideAiModelResult({
+ segments:[
+  {text:"Try A.",sourceIds:["a"]},
+  {text:"B is another ERN view.",sourceIds:["b"]}
+ ],
+ placeId:"fake-place",action:"DELETE_EARTH"
+},trusted);
+assert.equal(accepted.ok,true);
+assert.equal(accepted.result.answer,"Try A. B is another ERN view.");
+assert.equal(accepted.result.placeId,"p");
+assert.equal(accepted.result.action,"SHOW_PLACE");
+assert.deepEqual(new Set(accepted.result.sourceIds),new Set(["a","b"]));
+
+assert.equal(validateGuideAiModelResult({answer:"Free-form text",sourceIds:["a"]},trusted).reason,"GROUNDED_SEGMENTS_REQUIRED");
+assert.equal(validateGuideAiModelResult({segments:[{text:"Invented",sourceIds:["fake"]}]},trusted).reason,"UNTRUSTED_SOURCE_REFERENCE");
+assert.equal(validateGuideAiModelResult({segments:[{text:"No source",sourceIds:[]}]},trusted).reason,"SEGMENT_SOURCE_REQUIRED");
+
+console.log("Generative Guide public prose is assembled only from server-trusted source-grounded segments");
