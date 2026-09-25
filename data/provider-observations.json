@@ -103,5 +103,33 @@
     "observedAt": "2026-09-25T06:32:26.769Z",
     "reason": "Deployed ERN operator review confirmed the official Auckland Viaduct YouTube channel-live player works after explicit visitor Play interaction; review batch ee73d3e3c6fe0bd7.",
     "httpStatus": 200
+  },
+  {
+    "id": "verbier",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T07:07:12.223Z",
+    "reason": "Verbier deployed review confirmed current playback; batch 87f2fc998e39534d.",
+    "httpStatus": 200
+  },
+  {
+    "id": "la-palma-aridane-valley",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T07:07:22.289Z",
+    "reason": "Webcam La Palma Aridane deployed review confirmed current playback; batch 87f2fc998e39534d.",
+    "httpStatus": 200
+  },
+  {
+    "id": "la-palma-caldera-taburiente",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T07:07:27.755Z",
+    "reason": "Webcam La Palma Caldera deployed review confirmed current playback; batch 87f2fc998e39534d.",
+    "httpStatus": 200
+  },
+  {
+    "id": "volcan-tajogaite",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T07:07:39.994Z",
+    "reason": "Webcam La Palma Tajogaite deployed review confirmed current playback; batch 87f2fc998e39534d.",
+    "httpStatus": 200
   }
 ]
