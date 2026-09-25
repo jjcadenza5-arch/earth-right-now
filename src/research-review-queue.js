@@ -93,7 +93,7 @@ export function researchReviewQueue(candidates=[],{preflightReport=null,provider
     primary,
     preparation,
     alternates,
-    nextAction:primary.length?"RUN_DEPLOYED_HUMAN_PLAYBACK":preparation.length?"PREPARE_PROVIDER_GENERATED_TARGET":exhausted?"RESEARCH_NEW_PROVIDER_FAMILY":"STAGE_PROVIDER_RESEARCH",
+    nextAction:primary.length?"RUN_DEPLOYED_HUMAN_PLAYBACK":preparation.length?"PREPARE_PROVIDER_GENERATED_TARGET":exhausted?"CHECK_PROVIDER_DISCOVERY_STATE":"STAGE_PROVIDER_RESEARCH",
     safety:{
       catalogPromotionAllowed:false,
       automaticPermissionApprovalAllowed:false,
