@@ -11,6 +11,8 @@ export const EARTH_SIGNAL_BACKEND_FOUNDATION=Object.freeze({
   durableStorageContract:true,
   storageSchemaValidation:true,
   gatedServiceLayer:true,
+  subjectScopedRateLimitContract:true,
+  rawNetworkIdentifiersStored:false,
   deployedTransport:false
 });
 
