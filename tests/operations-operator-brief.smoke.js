@@ -156,3 +156,21 @@ const autonomousHoldBrief=operationsOperatorBrief({
 assert.match(autonomousHoldBrief,/AUTONOMOUS HOLD/);
 assert.match(autonomousHoldBrief,/no high-priority local implementation or research lane remains open/);
 assert.match(autonomousHoldBrief,/Do not create new tasks merely to keep activity moving/);
+
+const partialHoldBrief=operationsOperatorBrief({
+ snapshot:{insideERN:{ready:6,targetReady:5,readyShortfall:0,recoveryDebt:0},providers:{families:2,targetFamilies:2},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ operatorReviewQueue:{renewalCount:0,renewalRequiredCount:0},
+ playbackEvidenceConsistency:{summary:{issues:0}},
+ sourceRevalidationTriage:{immediate:[]},
+ providerDiscoveryQueue:{state:"CURRENT_CATALOG_RESEARCH_COMPLETE"},
+ providerGeneratedTargets:{items:[{state:"EXACT_PROVIDER_CODE_REQUIRED",blockerReason:"interactive"}]},
+ commercialOnboarding:{state:"PILOT_COVERAGE_REACHED"},
+ commercialResearchDepth:{items:[]},
+ localDirectory:{state:"PILOT_COMPLETE"},
+ guideAi:{mode:"DETERMINISTIC_ONLY",deterministicFallback:true},
+ earthSignals:{mode:"READ_ONLY",privacyNoticeDraft:{published:false}},
+ submissionTransport:{active:false,missing:["HTTPS_REVIEW_ENDPOINT"]}
+});
+assert.match(partialHoldBrief,/Local autonomous work remains open in: earthSignalsLocallyComplete/);
+assert.match(partialHoldBrief,/do not reopen lanes whose hold check already passes/);
