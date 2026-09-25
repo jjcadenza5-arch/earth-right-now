@@ -10,14 +10,16 @@ function scoreGroup(group){
   return Number((quality+moment*.25+freshness*.15+Math.min(3,healthyCurrent)*4).toFixed(2));
 }
 
-export function commercialOnboardingPlan({sources=[],offers=[],researchCandidates=[]}={}, {now=Date.now(),limit=12,maxPerCountry=2}={}){
+export function commercialOnboardingPlan({sources=[],offers=[],researchCandidates=[]}={}, {now=Date.now(),limit=12,maxPerCountry=2,targetResearchPlaces=30}={}){
   const currentOfferPlaces=new Set((offers||[]).filter(o=>currentTravelOffer(o,{now})).map(o=>String(o.placeId||"")));
   const researchedPlaces=new Set((researchCandidates||[])
     .filter(r=>r?.researchStatus==="RESEARCH_ONLY"&&r?.publicActivationAllowed===false&&String(r?.placeId||"").trim())
     .map(r=>String(r.placeId).trim()));
+  const breadthTargetReached=researchedPlaces.size>=targetResearchPlaces;
   const groups=new Map();
   for(const source of sources||[]){
     const key=placeKey(source);
+    if(breadthTargetReached)continue;
     if(!key||source.featuredHold===true||source.health!=="HEALTHY"||!currentSource(source))continue;
     if(source.travelResearchEligible===false)continue;
     if((Number(source.quality)||0)<80)continue;
@@ -62,6 +64,10 @@ export function commercialOnboardingPlan({sources=[],offers=[],researchCandidate
     generatedAt:new Date(now instanceof Date?now.getTime():Number(now)).toISOString(),
     candidatePlaces:ranked.length,
     selected:selected.length,
+    state:breadthTargetReached?"PILOT_COVERAGE_REACHED":selected.length?"RESEARCH_READY":"NO_NEW_RESEARCH_CANDIDATES",
+    nextAction:breadthTargetReached?"HOLD_NEW_RESEARCH_UNTIL_COMMERCIAL_DECISION_OR_CATALOG_CHANGE":selected.length?"RESEARCH_SELECTED_PLACES":"HOLD_UNTIL_CATALOG_CHANGES",
+    targetResearchPlaces,
+    breadthTargetReached,
     maxPerCountry,
     currentOfferPlaceCount:currentOfferPlaces.size,
     researchedPlaceCount:researchedPlaces.size,
@@ -73,6 +79,6 @@ export function commercialOnboardingPlan({sources=[],offers=[],researchCandidate
       paidPriorityAllowed:false,
       inventOffersAllowed:false
     },
-    note:"Private editorial onboarding plan only. Places explicitly marked travelResearchEligible:false, places with a current public offer, and places with existing private real-option research are excluded from new-research recommendations. Research coverage never implies an affiliate relationship, sponsorship, public activation, visitor demand, conversion probability, revenue, or ranking value."
+    note:"Private editorial onboarding plan only. New breadth research stops by default once pilot coverage reaches the target number of researched places, preventing endless catalog-filling. Places explicitly marked travelResearchEligible:false, places with a current public offer, and places with existing private real-option research are also excluded. Research coverage never implies an affiliate relationship, sponsorship, public activation, visitor demand, conversion probability, revenue, or ranking value."
   };
 }
