@@ -46,12 +46,12 @@ export function guideAiCapabilitiesFromDeployment(evidence={}){
   const r=guideAiDeploymentReadiness(evidence);
   if(!r.ready)return{
     transport:false,secretIsolation:false,trustedContext:false,costGuard:false,
-    rateLimits:false,observability:false,safetyBoundary:false,privacyNotice:false,
+    rateLimits:false,idempotency:false,observability:false,safetyBoundary:false,privacyNotice:false,
     deterministicFallback:true
   };
   return{
     transport:true,secretIsolation:true,trustedContext:true,costGuard:true,
-    rateLimits:true,observability:true,safetyBoundary:true,privacyNotice:true,
+    rateLimits:true,idempotency:true,observability:true,safetyBoundary:true,privacyNotice:true,
     deterministicFallback:true
   };
 }
