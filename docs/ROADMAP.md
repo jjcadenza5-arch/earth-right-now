@@ -45,3 +45,6 @@ Private editorial research has reached its finite pilot target: 59 verified real
 
 ## Earth Signals privacy milestone
 The future Earth Signals privacy boundary is now published on the public privacy page. This clears only the published-privacy-notice readiness item. Earth Signals remain `READ_ONLY` / `NOT_DEPLOYED` until HTTPS transport, durable storage, server rate limits, pseudonymous rate subjects, moderation, reporting, expiry cleanup, secret isolation, observability and cost controls are all backed by real production evidence.
+
+## Submission retention milestone
+The future camera/place submission workflow now has a published 30-day maximum retention policy for unapproved intake. This clears the retention-policy readiness item only. Submission transport remains disabled until a real HTTPS review endpoint is configured and passes the existing trust-boundary checks.
