@@ -101,3 +101,11 @@ const pilotHoldBrief=operationsOperatorBrief({
 });
 assert.match(pilotHoldBrief,/Pilot breadth target reached: 30\/30/);
 assert.match(pilotHoldBrief,/do not keep adding destinations for its own sake/);
+
+const submissionExternalHold=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ submissionTransport:{status:"DISABLED",active:false,missing:["HTTPS_REVIEW_ENDPOINT"],privacyReady:true,retentionReady:true,retentionDays:30}
+});
+assert.match(submissionExternalHold,/only remaining transport blocker is a real HTTPS review endpoint/);
+assert.match(submissionExternalHold,/hold local submission work until backend infrastructure is deliberately provisioned/);
