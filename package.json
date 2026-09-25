@@ -65,7 +65,8 @@
     "business:affiliate-readiness": "node scripts/affiliate-application-readiness.mjs",
     "inside:provider-discovery": "node scripts/provider-discovery-queue.mjs",
     "guide-ai:status": "node scripts/guide-ai-status.mjs",
-    "inside:provider-generated-targets": "node scripts/provider-generated-target-status.mjs"
+    "inside:provider-generated-targets": "node scripts/provider-generated-target-status.mjs",
+    "business:research-depth": "node scripts/commercial-research-depth-queue.mjs"
   },
   "engines": {
     "node": ">=20"
