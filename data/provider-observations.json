@@ -40,5 +40,26 @@
     "observedAt": "2026-09-24T15:51:30.088Z",
     "reason": "Human playback confirmed in deployed ERN operator review lab; current provider page independently remained reachable and exposed the same reviewed embed target.",
     "httpStatus": 200
+  },
+  {
+    "id": "cijin-beach-kaohsiung",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T02:23:23.106Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; source target matched the current catalog embed.",
+    "httpStatus": 200
+  },
+  {
+    "id": "skeikampen-ski",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T02:23:31.053Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; source target matched the current catalog embed.",
+    "httpStatus": 200
+  },
+  {
+    "id": "bergen-ulriken",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T02:23:51.687Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; source target matched the current catalog embed.",
+    "httpStatus": 200
   }
 ]

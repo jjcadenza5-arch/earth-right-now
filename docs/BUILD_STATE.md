@@ -1,3 +1,11 @@
+## 2026-09-25 — Fresh operator renewal batch applied
+- Accepted review batch 3266d6937e58b239 from the deployed ERN operator review surface.
+- Renewed HUMAN_PLAYBACK atomically for Cijin Beach — Kaohsiung at 2026-09-25T02:23:23.106Z.
+- Renewed HUMAN_PLAYBACK atomically for Skeikampen — Mountain Resort at 2026-09-25T02:23:31.053Z.
+- Renewed HUMAN_PLAYBACK atomically for Bergen — Ulriken Mountain at 2026-09-25T02:23:51.687Z.
+- Catalog playbackVerifiedAt markers and provider-observation entries use the exact same human-review timestamps; source health, permission and truth were not changed.
+- Monterey Bay Aquarium — Monterey Bay Cam failed deployed playback review at 2026-09-25T02:23:46.254Z. It remains RESEARCH_ONLY and blocked from promotion; this single-video failure is not treated as a platform-wide YouTube failure.
+
 ## 2026-09-25 — Operator review batch hash generator fix
 - Fixed the actual batch-isolation generator bug: the built review page was receiving the literal string ${reviewBatch} instead of the computed deterministic batch hash.
 - The page now receives the real 16-character review-batch hash generated from current targets and proof baselines.

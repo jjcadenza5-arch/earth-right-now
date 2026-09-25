@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-25 — Playback renewals and Monterey review
+- Renewed Cijin, Skeikampen and Bergen HUMAN_PLAYBACK proof.
+- Recorded Monterey Bay Cam as research playback failed without promoting or downgrading unrelated sources.
+
 ## 2026-09-25 — Review batch hash generator fix
 - Operator Review now emits the computed batch hash rather than a literal template placeholder.
 
