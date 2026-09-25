@@ -21,13 +21,23 @@ export function commercialResearchStatus(rows=[],{knownPlaceIds=[],now=Date.now(
   const row={...raw,ageDays:Number.isFinite(ageDays)?Number(ageDays.toFixed(2)):null,valid:reasons.length===0,reasons};
   items.push(row);for(const reason of reasons)issues.push({id:id||null,reason});
  }
+ const validItems=items.filter(x=>x.valid);
+ const byPlace=Object.fromEntries([...new Set(validItems.map(x=>x.placeId))].sort().map(placeId=>{
+  const placeItems=validItems.filter(x=>x.placeId===placeId);
+  return[placeId,{
+   total:placeItems.length,
+   intents:Object.fromEntries([...INTENTS].map(k=>[k,placeItems.filter(x=>x.intent===k).length])),
+   missingIntents:[...INTENTS].filter(k=>!placeItems.some(x=>x.intent===k))
+  }];
+ }));
  return{
   generatedAt:new Date(Number(now)).toISOString(),
   total:items.length,
   valid:items.filter(x=>x.valid).length,
   invalid:items.filter(x=>!x.valid).length,
-  placeCoverage:new Set(items.filter(x=>x.valid).map(x=>x.placeId)).size,
-  byIntent:Object.fromEntries([...INTENTS].map(k=>[k,items.filter(x=>x.valid&&x.intent===k).length])),
+  placeCoverage:new Set(validItems.map(x=>x.placeId)).size,
+  byIntent:Object.fromEntries([...INTENTS].map(k=>[k,validItems.filter(x=>x.intent===k).length])),
+  byPlace,
   items,issues,
   publicActivationAllowed:false,
   safety:{inventOptionsAllowed:false,automaticAffiliateActivationAllowed:false,automaticPublicVisibilityAllowed:false,contactWithoutReviewAllowed:false,paidRankingAllowed:false,demandForecast:false,revenueForecast:false},
