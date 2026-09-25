@@ -14,7 +14,7 @@ const catalog=[{id:"a",placeId:"p",title:"A",truth:"LIVE_VIDEO",permission:"EMBE
 const context={
  capabilities:all,catalog,
  costGuard:{allow:async()=>({allowed:true}),commit:async()=>({allowed:true})},
- modelAdapter:{generate:async()=>({answer:"A",sourceIds:["a"]})},
+ modelAdapter:{generate:async()=>({segments:[{text:"A",sourceIds:["a"]}]})},
  resolver:{resolve:async()=>({placeId:"p",sourceIds:["a"]})},
  rateLimiter:createInMemoryGuideAiRateLimiter(),
  idempotency:createInMemoryGuideAiIdempotencyStore(),
