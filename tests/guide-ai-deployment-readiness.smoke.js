@@ -3,12 +3,14 @@ import {guideAiDeploymentReadiness,guideAiCapabilitiesFromDeployment} from "../s
 
 const empty=guideAiDeploymentReadiness();
 assert.equal(empty.ready,false);
-assert.equal(empty.missing.length,12);
+assert.equal(empty.missing.length,13);
 const evidence={
  endpointUrl:"https://guide.example.test/api/guide",
  secretIsolation:true,
  trustedContextRehydration:true,
  rateLimits:true,
+ serverDerivedRateSubject:true,
+ rawNetworkIdentifiersStored:false,
  idempotency:true,
  modelCancellation:true,
  observability:true,
@@ -25,12 +27,13 @@ const evidence={
  usageMetering:true
 };
 const ready=guideAiDeploymentReadiness(evidence);
-assert.equal(ready.ready,true);assert.equal(ready.checks.privacyDataHandling,true);assert.equal(ready.checks.modelCancellation,true);
+assert.equal(ready.ready,true);assert.equal(ready.checks.privacyDataHandling,true);assert.equal(ready.checks.modelCancellation,true);assert.equal(ready.checks.serverDerivedRateSubject,true);
 assert.equal(ready.cost.monthlyCostCeilingUsd,10);
 assert.equal(ready.cost.automaticCeilingIncreaseAllowed,false);
 const caps=guideAiCapabilitiesFromDeployment(evidence);
 assert.equal(caps.transport,true);
 assert.equal(caps.costGuard,true);assert.equal(caps.idempotency,true);
+const unsafeIdentity=guideAiDeploymentReadiness({...evidence,rawNetworkIdentifiersStored:true});assert.equal(unsafeIdentity.ready,false);assert.equal(unsafeIdentity.checks.serverDerivedRateSubject,false);
 const notReady=guideAiCapabilitiesFromDeployment({...evidence,hardStopConfigured:false});
 assert.equal(notReady.transport,false);
 assert.equal(notReady.deterministicFallback,true);
