@@ -1,3 +1,9 @@
+## 2026-09-25 — Correct Earth Signal visitor/report rate limiting
+- Replaced shared-store submission limiting with opaque visitor-scoped rate-limit state so one visitor cannot consume another's quota.
+- Production deployment now requires pseudonymous rate subjects and proof that raw network identifiers are not stored.
+- Added duplicate-report and report-rate limits while preserving immediate pending-review hiding for accepted reports.
+- Earth Signal HTTP/service boundaries and focused CI are green; public contribution remains READ_ONLY.
+
 ## 2026-09-25 — Earth Signals added to Operations packet
 - Added retained Earth Signal readiness diagnostics to the daily Operations packet and operator brief.
 - Packet integrity now fails closed on inconsistent activation, deployment or privacy states.
