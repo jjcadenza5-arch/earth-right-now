@@ -1,3 +1,12 @@
+## 2026-09-25 — Guide AI replay protection prevents duplicate spend
+- Generative Guide API contract advanced to `2026-09-25.v2` and now requires an opaque per-request `requestId` in addition to the pseudonymous session subject.
+- Added a provider-neutral idempotency store contract with a 15-minute replay window. It stores only the finished public Guide response for replay; raw prompts and raw model responses are not retained for deduplication.
+- Duplicate completed requests replay the prior public response before rate-limit consumption, model generation or cost reservation, preventing browser retries from creating duplicate model spend.
+- Concurrent reuse of an in-flight request ID fails closed; the HTTP boundary maps that state to conflict rather than launching a second generation.
+- Every non-success service path now aborts the in-flight replay slot and releases any reserved request budget, including resolver/model/cost exceptions.
+- Idempotency is now a first-class activation and production-deployment requirement. The public deployment manifest keeps it `false`, so Generative Guide remains DETETERMINISTIC_ONLY / NOT_DEPLOYED.
+- Focused Guide CI is green with a regression test proving a duplicate request produces only one model call and one cost reservation/commit.
+
 ## 2026-09-25 — Provider diversity stabilized; fail-closed Generative ERN Guide foundation prepared
 - Applied the full four-stream human review batch: Verbier plus Webcam La Palma Aridane, Caldera and Tajogaite all passed deployed HUMAN_PLAYBACK review and were promoted only under their existing source-specific rights evidence.
 - Webcam La Palma production playback now uses the provider's explicitly permitted iframe path with visible `webcam-lapalma.de` attribution; the normal production embed allowlist and shared media-credit renderer enforce that requirement.
