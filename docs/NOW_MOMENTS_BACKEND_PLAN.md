@@ -1,3 +1,8 @@
+## Deployment manifest and conservative Guide pulse
+ERN now has a public, non-secret deployment evidence manifest for Earth Signals. It records only verifiable production facts and explicitly forbids credentials/secrets. The status CLI validates the manifest, derives capabilities only from complete deployment evidence, and remains READ_ONLY until the full gate passes. Manifest changes now trigger both focused CI and the Operations workflow.
+
+Short-lived visitor observations also have a conservative aggregation layer for ERN Guide. Multiple reports can be grouped into a current pulse, including how many were marked near the place, but the aggregate remains explicitly unverified visitor evidence and never becomes a factual weather/crowd/event claim by repetition alone.
+
 ## Visitor-scoped abuse controls
 Rate limiting is now separated from the public Earth Signal store. Submission quotas are scoped to an opaque pseudonymous visitor subject, with an independent per-place cap; one visitor's activity cannot consume another visitor's quota. Raw IP/email/network identifiers are not valid rate subjects. A deployment must prove pseudonymous subjects and rawNetworkIdentifiersStored=false before the rate-limit requirement can pass. Reporting has its own quota and duplicate-report guard so a single visitor cannot repeatedly hide the same signal while privacy-sensitive reports can still hide a signal immediately pending review.
 
