@@ -492,5 +492,65 @@
       "https://www.norwaysbest.com/en/tour-operators-and-agents",
       "https://www.norwaysbest.com/en/privacy-policy"
     ]
+  },
+  {
+    "id": "pattaya-city-cctv",
+    "status": "RESEARCH_ONLY",
+    "provider": "Pattaya City",
+    "familyLabel": "Pattaya City public CCTV streaming network",
+    "researchUrl": "https://livestream.pattaya.go.th/",
+    "termsUrl": "https://livestream.pattaya.go.th/terms",
+    "verifiedAt": "2026-09-25T09:41:00Z",
+    "permissionEvidence": "Pattaya City's current public CCTV service provides live public viewing, but its service terms prohibit commercial use and prohibit recording, copying, reproduction, editing, publication, forwarding or other public redistribution of CCTV images unless Pattaya City grants written permission. ERN therefore must not embed, restream or republish the CCTV imagery without written authorization.",
+    "permissionStatus": "PUBLIC_VIEWING_ONLY_WRITTEN_PERMISSION_REQUIRED_FOR_REPUBLICATION",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_WRITTEN_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_WRITTEN_PERMISSION_FROM_PATTAYA_CITY_IS_OBTAINED",
+    "networkFamily": "livestream.pattaya.go.th",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T09:41:00Z",
+    "communityGuidelinesUrl": "https://livestream.pattaya.go.th/terms",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "WRITTEN_PERMISSION_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://livestream.pattaya.go.th/",
+      "https://livestream.pattaya.go.th/terms"
+    ]
+  },
+  {
+    "id": "san-diego-zoo-live-cams",
+    "status": "RESEARCH_ONLY",
+    "provider": "San Diego Zoo Wildlife Alliance",
+    "discoveryProviderAliases": [
+      "San Diego Zoo"
+    ],
+    "familyLabel": "Official San Diego Zoo live-camera network",
+    "researchUrl": "https://sandiegozoo.org/cams/",
+    "termsUrl": "https://blogs.sandiegozoo.org/terms-of-use",
+    "verifiedAt": "2026-09-25T09:41:00Z",
+    "permissionEvidence": "San Diego Zoo Wildlife Alliance currently publishes many official live cams. Its Terms of Use limit site material to personal, noncommercial use and prohibit copying, distribution, transmission, display, reproduction, publication or licensing of site material. Its visitor help center also states that recording or broadcast beyond personal enjoyment requires an advance licensing agreement. No public third-party cam embed permission was found, so ERN keeps this network link-only unless a licensing agreement or explicit embed permission is obtained.",
+    "permissionStatus": "PERSONAL_NONCOMMERCIAL_VIEWING_PUBLIC_REUSE_REQUIRES_LICENSE",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_LICENSING_AGREEMENT_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_SDZWA_LICENSE_OR_EXPLICIT_EMBED_PERMISSION_IS_ESTABLISHED",
+    "networkFamily": "sandiegozoo.org",
+    "termsEffectiveAt": "2024-06-22",
+    "termsReviewedAt": "2026-09-25T09:41:00Z",
+    "communityGuidelinesUrl": "https://zoo.sandiegozoo.org/help-center",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "ADVANCE_LICENSE_OR_EXPLICIT_PERMISSION_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://sandiegozoo.org/cams/",
+      "https://blogs.sandiegozoo.org/terms-of-use",
+      "https://zoo.sandiegozoo.org/help-center"
+    ]
   }
 ]
