@@ -1,3 +1,10 @@
+## 2026-09-25 — Failed second-provider targets remain deferred
+- Refined the new loadable alternate-provider workflow so only unfailed fallback candidates can be opened directly after a blocked primary test.
+- Research targets that already carry deployed HUMAN_PLAYBACK_FAILED evidence remain visible for audit/history but are not rendered as one-click retest cards.
+- A failed target requires a changed target/provider or an explicit retest justification before returning to the active test lane.
+- Review-batch identity now covers the primary plus only currently testable fallback targets; deferred failed history cannot silently influence fresh local evidence.
+- This preserves the one-strongest-first workflow while avoiding unnecessary redeploy cycles and preventing casual retesting of known failures.
+
 ## 2026-09-25 — Second-provider review alternates are directly testable
 - The operator review lab still presents one strongest second-provider candidate first, but alternate research candidates are now loadable inside a collapsed fallback section instead of being text-only.
 - If the primary candidate fails or remains blocked, an operator can test the next candidate immediately without another code/deploy cycle.
