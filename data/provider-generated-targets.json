@@ -46,7 +46,7 @@
     "integrationKind": "PROVIDER_AUTHORIZED_CURRENT_IMAGE",
     "truthIfApproved": "LIVE_IMAGE",
     "refreshSemantics": "PROVIDER_CURRENT_IMAGE_SERIES",
-    "state": "EXACT_PROVIDER_CODE_REQUIRED",
+    "state": "EXACT_PROVIDER_TARGET_URL_REQUIRED",
     "generatorUrl": "https://en.vedur.is/weather/observations/webcams/reykjavik/",
     "exactCode": null,
     "exactTargetUrl": null,
@@ -56,6 +56,6 @@
     "promotionAllowed": false,
     "catalogMutationAllowed": false,
     "automaticGenerationAllowed": false,
-    "notes": "IMO terms explicitly allow photographs/data for private or commercial use with IMO attribution and download date unless otherwise stated. Stage only the exact current webcam image target; preserve attribution and do not alter the image."
+    "notes": "IMO terms explicitly allow photographs/data for private and commercial use with IMO attribution and download date unless otherwise stated. Identify only the exact stable current-image URL exposed by the provider; do not guess, scrape an unstable asset path, or alter the image."
   }
 ]
