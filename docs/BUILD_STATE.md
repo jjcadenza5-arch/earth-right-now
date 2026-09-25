@@ -1,3 +1,11 @@
+## 2026-09-25 — Earth Signal service/storage foundation is executable but still fail-closed
+- Added a server transaction pipeline that composes structured-input validation, canonical place checks, rate limits, moderation visibility, reporting and retention.
+- Added an HTTP-style adapter that returns READ_ONLY / 503 unless every real activation capability is enabled; prepared code cannot accidentally become a public endpoint.
+- Added an explicit durable-storage contract with put/list/report/delete-expired methods plus an in-memory reference adapter for deterministic tests only.
+- Added a deployment-neutral service layer that persists structured signals, hides reported signals immediately pending review and removes expired records through the storage contract.
+- Server time remains authoritative for createdAt and 45-minute expiry; public projections remain privacy-minimal.
+- Current production capability flags remain unchanged: transport, rate limiting, moderation, reporting, expiry deletion and privacy notice are all false. Public ERN remains READ_ONLY for Earth Signals.
+
 ## 2026-09-25 — Deployment-neutral Earth Signal backend contract
 - Added a v1 backend contract for ERN's first contribution phase: structured Earth Signals only, before photos or video.
 - Client submissions are limited to the six existing signal types plus canonical place identity; free text and precise coordinates are rejected.
