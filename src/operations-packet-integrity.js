@@ -16,6 +16,7 @@ const requiredJson=[
  "embed-research.json",
  "embed-research-preflight.json",
  "provider-family-research.json",
+ "provider-discovery-queue.json",
  "research-review-queue.json",
  "commercial-inventory.json",
  "commercial-verification-horizon.json",
@@ -99,6 +100,18 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(providerFamilyResearch?.safety?.automaticPermissionApprovalAllowed!==false)issues.push({file:"provider-family-research.json",code:"PROVIDER_FAMILY_PERMISSION_BOUNDARY_VIOLATION"});
     if(providerFamilyResearch?.safety?.automaticPromotionAllowed!==false)issues.push({file:"provider-family-research.json",code:"PROVIDER_FAMILY_PROMOTION_BOUNDARY_VIOLATION"});
     if(providerFamilyResearch?.unsafe?.length)issues.push({file:"provider-family-research.json",code:"UNSAFE_PROVIDER_FAMILY_RESEARCH",count:providerFamilyResearch.unsafe.length});
+  }
+
+  const providerDiscovery=files["provider-discovery-queue.json"];
+  if(providerDiscovery){
+    if(providerDiscovery?.safety?.catalogMutationAllowed!==false)issues.push({file:"provider-discovery-queue.json",code:"PROVIDER_DISCOVERY_MUTATION_BOUNDARY_VIOLATION"});
+    if(providerDiscovery?.safety?.embedPermissionInferred!==false)issues.push({file:"provider-discovery-queue.json",code:"PROVIDER_DISCOVERY_PERMISSION_INFERENCE_VIOLATION"});
+    if(providerDiscovery?.safety?.playbackInferred!==false)issues.push({file:"provider-discovery-queue.json",code:"PROVIDER_DISCOVERY_PLAYBACK_INFERENCE_VIOLATION"});
+    if(providerDiscovery?.safety?.providerContactAllowed!==false)issues.push({file:"provider-discovery-queue.json",code:"PROVIDER_DISCOVERY_CONTACT_BOUNDARY_VIOLATION"});
+    if(providerDiscovery?.safety?.humanReviewRequested!==false)issues.push({file:"provider-discovery-queue.json",code:"PROVIDER_DISCOVERY_HUMAN_REVIEW_BOUNDARY_VIOLATION"});
+    for(const item of providerDiscovery?.items||[]){
+      if(item?.permissionKnown!==false||item?.embedKnown!==false||item?.humanPlaybackKnown!==false)issues.push({file:"provider-discovery-queue.json",code:"PROVIDER_DISCOVERY_ITEM_INFERENCE_VIOLATION",provider:item?.provider||null});
+    }
   }
 
   const playbackConsistency=files["playback-evidence-consistency.json"];
