@@ -3,13 +3,14 @@ import {guideAiDeploymentReadiness,guideAiCapabilitiesFromDeployment} from "../s
 
 const empty=guideAiDeploymentReadiness();
 assert.equal(empty.ready,false);
-assert.equal(empty.missing.length,13);
+assert.equal(empty.missing.length,14);
 const evidence={
  endpointUrl:"https://guide.example.test/api/guide",
  secretIsolation:true,
  trustedContextRehydration:true,
  rateLimits:true,
  serverDerivedRateSubject:true,
+ keyedRateSubjectDerivation:true,
  rawNetworkIdentifiersStored:false,
  idempotency:true,
  modelCancellation:true,
@@ -27,7 +28,7 @@ const evidence={
  usageMetering:true
 };
 const ready=guideAiDeploymentReadiness(evidence);
-assert.equal(ready.ready,true);assert.equal(ready.checks.privacyDataHandling,true);assert.equal(ready.checks.modelCancellation,true);assert.equal(ready.checks.serverDerivedRateSubject,true);
+assert.equal(ready.ready,true);assert.equal(ready.checks.privacyDataHandling,true);assert.equal(ready.checks.modelCancellation,true);assert.equal(ready.checks.serverDerivedRateSubject,true);assert.equal(ready.checks.keyedRateSubjectDerivation,true);
 assert.equal(ready.cost.monthlyCostCeilingUsd,10);
 assert.equal(ready.cost.automaticCeilingIncreaseAllowed,false);
 const caps=guideAiCapabilitiesFromDeployment(evidence);
