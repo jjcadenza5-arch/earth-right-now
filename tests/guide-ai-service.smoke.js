@@ -25,11 +25,14 @@ const ok=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",la
 assert.equal(ok.ok,true);
 assert.equal(ok.response.sourceIds[0],"a");
 
+let releases=0;
+const releasingCostGuard={allow:async()=>({allowed:true}),commit:async()=>({allowed:true}),release:async()=>{releases++;return{released:true}}};
 const hallucinating={generate:async()=>({answer:"Use fake",sourceIds:["fake"]})};
-const blocked=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p"},context({modelAdapter:hallucinating}));
+const blocked=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p"},context({modelAdapter:hallucinating,costGuard:releasingCostGuard}));
 assert.equal(blocked.ok,false);
 assert.equal(blocked.reason,"UNTRUSTED_SOURCE_REFERENCE");
 assert.equal(blocked.mode,"DETERMINISTIC_ONLY");
+assert.equal(releases,1);
 
 const expensive={allow:async()=>({allowed:false,reason:"COST_GUARD_BLOCKED"}),commit:async()=>({allowed:true})};
 const costBlocked=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p"},context({costGuard:expensive}));
