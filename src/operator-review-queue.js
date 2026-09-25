@@ -27,8 +27,14 @@ export function operatorReviewQueue(sources=[],observations=[],{now=new Date(),l
   const restoration=(recovery.restorationCandidates||[])
     .filter(x=>x.embedUrl&&!renewalIds.has(String(x.id)))
     .map(x=>({...x,reviewMode:"RESTORE"}));
-  const recommendedRestorationCount=Math.min(recovery.readyShortfall,restoration.length);
-  const primaryItems=[...renewal,...restoration.slice(0,recommendedRestorationCount)].slice(0,limit);
+  const pendingExpiryCount=renewal.filter(x=>["DUE_12H","DUE_6H"].includes(x.reason)).length;
+  const projectedReadyWithoutRenewal=Math.max(0,recovery.ready-pendingExpiryCount);
+  const renewalRequiredCount=Math.min(renewal.length,Math.max(0,targetReady-projectedReadyWithoutRenewal));
+  const primaryRenewal=renewal.slice(0,renewalRequiredCount);
+  const projectedReadyAfterPrimaryRenewal=projectedReadyWithoutRenewal+primaryRenewal.length;
+  const restorationNeededAfterRenewal=Math.max(0,targetReady-projectedReadyAfterPrimaryRenewal);
+  const recommendedRestorationCount=Math.min(restorationNeededAfterRenewal,restoration.length);
+  const primaryItems=[...primaryRenewal,...restoration.slice(0,recommendedRestorationCount)].slice(0,limit);
   const primaryIds=new Set(primaryItems.map(x=>String(x.id)));
   const items=[...renewal,...restoration].slice(0,limit);
   const backlogItems=items.filter(x=>!primaryIds.has(String(x.id)));
@@ -38,6 +44,9 @@ export function operatorReviewQueue(sources=[],observations=[],{now=new Date(),l
     targetReady:recovery.targetReady,
     readyShortfall:recovery.readyShortfall,
     renewalCount:renewal.length,
+    renewalRequiredCount,
+    projectedReadyWithoutRenewal,
+    projectedReadyAfterPrimaryRenewal,
     restorationCount:restoration.length,
     recommendedRestorationCount,
     primaryItems,
@@ -47,6 +56,6 @@ export function operatorReviewQueue(sources=[],observations=[],{now=new Date(),l
     renewable:renewable.slice(0,Math.max(limit,targetReady)),
     restoration:restoration.slice(0,limit),
     safety:{catalogMutationAllowed:false,automaticPlaybackVerificationAllowed:false},
-    note:"Operator review queue brings due or expired previously verified HUMAN_PLAYBACK proof forward as renewal debt, then recommends only enough never/currently-unverified restoration confirmations to close the ready shortfall. Expiry never renews proof automatically; review remains human and non-mutating."
+    note:"Operator review queue brings due or expired previously verified HUMAN_PLAYBACK proof forward as renewal debt, but makes only the minimum renewals needed to preserve the ready target primary. Additional renewals stay visible as backlog. It then recommends only enough restoration confirmations to close any remaining projected shortfall. Expiry never renews proof automatically; review remains human and non-mutating."
   };
 }
