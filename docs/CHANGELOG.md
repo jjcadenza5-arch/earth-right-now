@@ -1,3 +1,7 @@
+## 2026-09-25 — Harden Earth Signal stored records
+- Added strict signal/report record validators and enforced them at the storage boundary.
+- Backend readiness now distinguishes durable-storage/schema/service preparation from actual deployed transport.
+
 ## 2026-09-25 — Earth Signal deployment evidence gate
 - Added a ten-part fail-closed production deployment gate and capability derivation.
 - Local/test readiness cannot satisfy production activation; current state remains NOT_DEPLOYED and READ_ONLY.
