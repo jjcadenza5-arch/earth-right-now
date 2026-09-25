@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -62,6 +62,13 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     for(const item of providerFamilyResearch.items.slice(0,5))lines.push(`- ${item.provider||item.id} — ${item.permissionStatus||"permission review"}; terms ${item.termsEvidenceState||"UNKNOWN"}${Number.isFinite(item.termsAgeDays)?` (${item.termsAgeDays}d)`:""}; ${item.technicalStatus||"technical review"}; next: ${item.nextAction||"manual research"}.`);
     if(providerFamilyResearch.needsTermsReview)lines.push(`- ${providerFamilyResearch.needsTermsReview} provider-family terms review(s) need refresh.`);
     lines.push("- Research-family entries are not public sources. ERN uses provider-branded players only; re-streaming/rebroadcasting remains prohibited.","");
+  }
+  if(providerDiscoveryQueue?.primary){
+    lines.push("## Provider discovery queue");
+    lines.push(`- Research primary: ${providerDiscoveryQueue.primary.provider} — ${providerDiscoveryQueue.primary.sourceCount} current external source(s), ${providerDiscoveryQueue.primary.liveVideoCount} live-video source(s), ${providerDiscoveryQueue.primary.countryCount} country/countries represented.`);
+    lines.push(`- Action: ${providerDiscoveryQueue.primary.nextAction}. This is research leverage only; embed rights, technical compatibility and playback remain unknown.`);
+    if((providerDiscoveryQueue.items||[]).length>1)lines.push(`- Additional research families staged: ${providerDiscoveryQueue.items.length-1}.`);
+    lines.push("");
   }
   if(researchReviewQueue?.exhausted){
     lines.push("## Second-provider research state");
@@ -146,6 +153,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   if((playbackEvidenceConsistency?.summary?.issues||0)>0)lines.push("- Resolve playback-evidence ledger/catalog drift before treating new LIVE HERE proof as authoritative.");
   if((snapshot?.insideERN?.readyShortfall||0)>0)lines.push("- Restore strong inside-ERN windows with fresh HUMAN_PLAYBACK evidence.");
   if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.primary?.length)lines.push(`- Test second-provider primary candidate ${researchReviewQueue.primary[0].provider||researchReviewQueue.primary[0].id} first; use alternates only if needed.`);
+  else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.exhausted&&providerDiscoveryQueue?.primary)lines.push(`- Research ${providerDiscoveryQueue.primary.provider} terms and branded player path next; discovery ranking does not imply permission or embedability.`);
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.exhausted)lines.push("- Research a genuinely new embeddable provider family or materially changed target; do not recycle failed playback candidates.");
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
   if(providerFamilyResearch?.needsTermsReview)lines.push("- Refresh stale provider terms evidence before permission review progresses.");
