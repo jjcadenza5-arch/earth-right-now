@@ -1,3 +1,7 @@
+## 2026-09-25 — Earth Signal deployment evidence gate
+- Added a ten-part fail-closed production deployment gate and capability derivation.
+- Local/test readiness cannot satisfy production activation; current state remains NOT_DEPLOYED and READ_ONLY.
+
 ## 2026-09-25 — Earth Signal privacy notice draft
 - Added content-complete structured-signal privacy wording while keeping publication status DRAFT_NOT_PUBLISHED.
 - Status reporting distinguishes prepared wording from a verified live notice; privacy activation remains unsatisfied.
