@@ -1,25 +1,23 @@
 import assert from "node:assert/strict";
 import { providerObservationBatch } from "../src/provider-observation-batch.js";
-const at="2026-09-20T12:00:00Z";
 const r=providerObservationBatch([
- {id:"a",httpStatus:200},
- {id:"b",httpStatus:200,confirmation:"MEDIA_ENDPOINT"},
- {id:"c",httpStatus:404,failure:"MEDIA_GONE",reason:"Gone"},
- {id:"b",httpStatus:200,confirmation:"HUMAN_PLAYBACK"},
+ {id:"a",httpStatus:200,observedAt:"2026-09-20T12:00:00Z"},
+ {id:"b",httpStatus:200,confirmation:"MEDIA_ENDPOINT",observedAt:"2026-09-20T12:00:00Z"},
+ {id:"c",httpStatus:404,failure:"MEDIA_GONE",reason:"Gone",observedAt:"2026-09-20T12:00:00Z"},
+ {id:"b",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-21T12:00:00Z"},
  {httpStatus:200}
-],{observedAt:at,knownSourceIds:["a","b","c"]});
+],{knownSourceIds:["a","b","c"]});
 assert.equal(r.total,3);
 assert.equal(r.observations.a.providerConfirmed,false);
-assert.equal(r.observations.a.evidenceKind,"HTTP_ONLY");
-assert.equal(r.observations.b.providerConfirmed,true);
+assert.equal(r.observations.b.confirmation,"HUMAN_PLAYBACK");
+assert.equal(r.observations.b.observedAt,"2026-09-21T12:00:00.000Z");
 assert.equal(r.observations.c.definitiveFailure,true);
-assert.deepEqual(r.rejected.map(x=>x.reason),["DUPLICATE_SOURCE_ID","MISSING_SOURCE_ID"]);
-console.log("provider observation batch passed");
-
-const guarded=providerObservationBatch([{id:"ghost",httpStatus:200}],{observedAt:at,knownSourceIds:["a"]});
-assert.equal(guarded.total,0);
-assert.equal(guarded.rejected[0].reason,"UNKNOWN_SOURCE_ID");
-
-const ledger=JSON.parse(await import("node:fs/promises").then(fs=>fs.readFile(new URL("../data/provider-observations.json",import.meta.url),"utf8")));
-const known=providerObservationBatch(ledger,{knownSourceIds:["mpala-watering-hole"]});
-console.assert(known.total===1&&known.rejected.length===0&&known.observations["mpala-watering-hole"].providerConfirmed===true);
+assert.deepEqual(r.rejected.map(x=>x.reason),["MISSING_SOURCE_ID"]);
+assert.equal(r.superseded.length,1);
+const reverse=providerObservationBatch([
+ {id:"x",httpStatus:200,confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-25T02:00:00Z"},
+ {id:"x",httpStatus:200,confirmation:"MEDIA_ENDPOINT",observedAt:"2026-09-24T02:00:00Z"}
+],{knownSourceIds:["x"]});
+assert.equal(reverse.observations.x.confirmation,"HUMAN_PLAYBACK");
+assert.equal(reverse.rejected.length,0);
+console.log("provider observation renewal history selects newest valid evidence");

@@ -1,3 +1,10 @@
+## 2026-09-25 — Operations supports playback renewal history
+- Fixed provider observation batching so legitimate repeated source IDs in the historical observation ledger are no longer treated as invalid duplicates.
+- The batch now retains the newest valid observation per source by observedAt while preserving older entries in the source ledger itself.
+- Older valid observations are reported as superseded context, not rejected evidence.
+- Malformed, missing-ID and unknown-source observations remain fail-closed rejections.
+- This aligns Operations with the new recurring HUMAN_PLAYBACK renewal workflow.
+
 ## 2026-09-25 — Fresh operator renewal batch applied
 - Accepted review batch 3266d6937e58b239 from the deployed ERN operator review surface.
 - Renewed HUMAN_PLAYBACK atomically for Cijin Beach — Kaohsiung at 2026-09-25T02:23:23.106Z.

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-25 — Provider observation renewal history
+- Operations now accepts historical repeated source observations and selects the newest valid record per source instead of rejecting renewals as duplicates.
+
 ## 2026-09-25 — Playback renewals and Monterey review
 - Renewed Cijin, Skeikampen and Bergen HUMAN_PLAYBACK proof.
 - Recorded Monterey Bay Cam as research playback failed without promoting or downgrading unrelated sources.
