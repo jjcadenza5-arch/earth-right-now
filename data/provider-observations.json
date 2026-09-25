@@ -89,5 +89,12 @@
     "observedAt": "2026-09-25T06:03:34.172Z",
     "reason": "Human playback reconfirmed in deployed ERN operator review lab; evidence packet from batch 3ec5f713ce5daf15 supplied by operator.",
     "httpStatus": 200
+  },
+  {
+    "id": "takayama-miyagawa-stream",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T06:22:47.183Z",
+    "reason": "Deployed ERN operator review confirmed the official Hida-Takayama YouTube channel-live player works after explicit visitor Play interaction; review batch aad67aa5f7c8fe3a.",
+    "httpStatus": 200
   }
 ]
