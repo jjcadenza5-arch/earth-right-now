@@ -82,7 +82,7 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(researchQueue?.safety?.catalogPromotionAllowed!==false)issues.push({file:"research-review-queue.json",code:"RESEARCH_QUEUE_PROMOTION_BOUNDARY_VIOLATION"});
     if(researchQueue?.safety?.automaticPermissionApprovalAllowed!==false)issues.push({file:"research-review-queue.json",code:"RESEARCH_QUEUE_PERMISSION_BOUNDARY_VIOLATION"});
     if(researchQueue?.safety?.automaticPlaybackConfirmationAllowed!==false)issues.push({file:"research-review-queue.json",code:"RESEARCH_QUEUE_PLAYBACK_BOUNDARY_VIOLATION"});
-    if(!Array.isArray(researchQueue?.primary)||researchQueue.primary.length>1)issues.push({file:"research-review-queue.json",code:"RESEARCH_QUEUE_PRIMARY_INVALID"});
+    if(!Array.isArray(researchQueue?.primary)||researchQueue.primary.length>4)issues.push({file:"research-review-queue.json",code:"RESEARCH_QUEUE_PRIMARY_INVALID"});
     for(const item of [...(researchQueue?.primary||[]),...(researchQueue?.alternates||[])])if(item?.promotionAllowed!==false)issues.push({file:"research-review-queue.json",code:"RESEARCH_QUEUE_ITEM_PROMOTION_VIOLATION",id:item?.id||null});
   }
 
