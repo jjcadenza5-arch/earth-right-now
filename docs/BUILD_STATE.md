@@ -1,3 +1,17 @@
+## 2026-09-25 — Provider diversity stabilized; fail-closed Generative ERN Guide foundation prepared
+- Applied the full four-stream human review batch: Verbier plus Webcam La Palma Aridane, Caldera and Tajogaite all passed deployed HUMAN_PLAYBACK review and were promoted only under their existing source-specific rights evidence.
+- Webcam La Palma production playback now uses the provider's explicitly permitted iframe path with visible `webcam-lapalma.de` attribution; the normal production embed allowlist and shared media-credit renderer enforce that requirement.
+- Current inside-ERN state reached 11/5 ready across 4/2 embed provider families; dominant-provider share fell to ~77% and Operations moved the resilience goal to MAINTAIN_DIVERSITY.
+- The review lab supports up to four primary research checks per session and now has one-click batch loading while still requiring an individual human result for every stream.
+- Added conservative Atlas region-reference coordinates for the new Aridane and Caldera sources. These are explicitly not exact camera positions.
+- Began the optional ChatGPT-like ERN Guide backend as a separate, provider-neutral server layer above the existing deterministic Guide. The current public Guide is unchanged and remains the fallback.
+- Generative Guide activation is fail-closed behind nine verified production requirements: HTTPS endpoint, server-side secret isolation, trusted ERN context rehydration, rate limits, observability, safety boundary, published privacy notice, deterministic fallback and a hard cost guard.
+- Added a non-secret `data/guide-ai-deployment.json` manifest. It is currently `NOT_DEPLOYED`; no model/API provider, credentials, endpoint or public generative behavior is active.
+- Guide requests are bounded (500 query chars, 12 source IDs, seven supported languages) and client-supplied place/source IDs are never trusted as factual context. The server must rehydrate sources from ERN's catalog before generation.
+- Added an executable but undeployed Guide service/HTTP pipeline. Model output may reference only source IDs present in server-rehydrated trusted context; model, truth-validation or cost failures fall back to `DETERMINISTIC_ONLY`.
+- Hard cost policy requires usage metering, an explicit monthly ceiling and a hard stop; automatic ceiling increases are forbidden.
+- Generative Guide readiness is now a first-class daily Operations artifact and packet-integrity gate. Focused Guide CI and Operations are green through the latest service tests.
+
 ## 2026-09-25 — Auckland promoted; human provider review expanded to four streams per session
 - Applied deployed HUMAN_PLAYBACK confirmation for Auckland Viaduct review batch `ee73d3e3c6fe0bd7` at 2026-09-25T06:32:26.769Z. The exact official YouTube channel-live player worked after explicit visitor Play interaction; click-to-play is preserved and autoplay is not assumed.
 - Promoted `auckland-viaduct-harbour` to LIVE_VIDEO + EMBED_ALLOWED + EMBED with fresh source-level HUMAN_PLAYBACK evidence. Approval is source-specific, not blanket YouTube/provider approval.
