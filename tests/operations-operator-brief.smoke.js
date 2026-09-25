@@ -93,3 +93,11 @@ const terminalProviderBrief=operationsOperatorBrief({
 });
 assert.match(terminalProviderBrief,/Current external-provider research is complete/);
 assert.match(terminalProviderBrief,/do not recycle failed or already-classified families/);
+
+const pilotHoldBrief=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ commercialOnboarding:{state:"PILOT_COVERAGE_REACHED",researchedPlaceCount:30,targetResearchPlaces:30,items:[]}
+});
+assert.match(pilotHoldBrief,/Pilot breadth target reached: 30\/30/);
+assert.match(pilotHoldBrief,/do not keep adding destinations for its own sake/);
