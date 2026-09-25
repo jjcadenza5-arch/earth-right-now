@@ -13,8 +13,21 @@ function currentEnough(source,now,maxAgeDays){
   return now.getTime()-t<=maxAgeDays*864e5;
 }
 
+function researchedProviderKeys(providerFamilyReport){
+  const keys=new Set();
+  for(const item of providerFamilyReport?.items||[]){
+    const provider=String(item.provider||"").trim();
+    if(provider)keys.add(provider);
+    for(const alias of item.discoveryProviderAliases||[]){
+      const value=String(alias||"").trim();
+      if(value)keys.add(value);
+    }
+  }
+  return keys;
+}
+
 export function providerDiscoveryQueue(sources=[],providerFamilyReport=null,{now=new Date(),maxAgeDays=7,limit=8}={}){
-  const researchedProviders=new Set((providerFamilyReport?.items||[]).map(x=>String(x.provider||"").trim()).filter(Boolean));
+  const researchedProviders=researchedProviderKeys(providerFamilyReport);
   const groups=new Map();
 
   for(const source of sources||[]){
