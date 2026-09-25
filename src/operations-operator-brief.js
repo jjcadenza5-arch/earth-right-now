@@ -170,6 +170,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     if(guideAi.deployment?.missing?.length)lines.push(`- Production evidence still missing: ${guideAi.deployment.missing.join(", ")}.`);
     if(guideAi.deployment?.cost?.monthlyCostCeilingUsd!=null)lines.push(`- Hard monthly cost ceiling evidence: ${guideAi.deployment.cost.monthlyCostCeilingUsd}.`);
     else if(guideAi.deployment?.costDecisionRequired)lines.push("- Model spending remains disabled: an explicit monthly ceiling, usage metering and a hard stop must be configured before generative activation.");
+    if(guideAi.mode==="DETERMINISTIC_ONLY"&&guideAi.deterministicFallback&&guideAi.deployment?.missing?.length)lines.push("- Local generative-Guide groundwork is complete enough for the current phase. Remaining blockers require an explicit provider/backend/cost decision; hold local activation work until that phase is deliberately opened.");
     lines.push("- Client prompts and IDs never become trusted place/source facts; the server must rehydrate ERN catalog truth before generation.", "");
   }
   if(earthSignals){
