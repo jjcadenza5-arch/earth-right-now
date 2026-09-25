@@ -1,3 +1,10 @@
+## 2026-09-25 — Second-provider review alternates are directly testable
+- The operator review lab still presents one strongest second-provider candidate first, but alternate research candidates are now loadable inside a collapsed fallback section instead of being text-only.
+- If the primary candidate fails or remains blocked, an operator can test the next candidate immediately without another code/deploy cycle.
+- Alternate testing remains local evidence only: it cannot grant permission, confirm source truth, mutate the catalog or promote visitor playback.
+- Review-batch identity now includes every loadable research target, not only the primary candidate, so changing any alternate invalidates stale browser-local evidence automatically.
+- Public ERN UX and current source/catalog state are unchanged.
+
 ## 2026-09-25 — Actionable revalidation reporting aligned with triage
 - Corrected the legacy top-level Operations revalidation summary so deliberate curation holds, known visitor-playback rejections and provider-offline collections are no longer presented as immediate “next” work.
 - Operations now reports actionable and deferred revalidation counts separately while retaining the full maintenance debt for auditability.
