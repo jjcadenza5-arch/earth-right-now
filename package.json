@@ -66,7 +66,8 @@
     "inside:provider-discovery": "node scripts/provider-discovery-queue.mjs",
     "guide-ai:status": "node scripts/guide-ai-status.mjs",
     "inside:provider-generated-targets": "node scripts/provider-generated-target-status.mjs",
-    "business:research-depth": "node scripts/commercial-research-depth-queue.mjs"
+    "business:research-depth": "node scripts/commercial-research-depth-queue.mjs",
+    "local:directory-status": "node scripts/local-directory-status.mjs"
   },
   "engines": {
     "node": ">=20"
