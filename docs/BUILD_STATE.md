@@ -1,3 +1,11 @@
+## 2026-09-25 — Operator playback renewals no longer depend on a fresh deploy
+- Operations surfaced two current HUMAN_PLAYBACK proofs due within ~12 hours: Ponte di Legno — Adamello and Metung — Gippsland Lakes.
+- Fixed the review-page aging problem without adding frequent scheduled Pages rebuilds: the operator review queue now exposes the current verified inside-ERN set as an evergreen renewable set.
+- The deployed review page keeps due renewals in the primary batch and also carries currently verified LIVE HERE windows in a collapsed “renew anytime” section, so they remain manually reviewable even if their proof becomes due after the last deploy.
+- Review-batch identity includes these renewable targets, and evidence remains browser-local/non-mutating until explicitly applied through the existing evidence workflow.
+- Latest deployed review build shows 5/5 ready, primary renewals for Ponte di Legno + Metung, and evergreen renewal access for Bergen, Cijin Beach and Skeikampen.
+- JavaScript checks, Operations and GitHub Pages deployment all passed.
+
 ## 2026-09-25 — Earth Signal deployment handoff + conservative Guide pulse
 - Added a non-secret `data/earth-signal-deployment.json` manifest so future production infrastructure can be connected by recording verified evidence rather than editing activation logic.
 - Manifest validation rejects unknown/secret-like fields, non-HTTPS endpoint/privacy URLs and invalid timestamps; credentials/tokens must never be placed in the repository manifest.
