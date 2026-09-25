@@ -246,5 +246,32 @@
       "https://www.verbier.ch/en/practice/live/webcams/",
       "https://developers.google.com/youtube/terms/required-minimum-functionality"
     ]
+  },
+  {
+    "id": "webcam-la-palma-free-embed",
+    "status": "RESEARCH_ONLY",
+    "provider": "Webcam La Palma",
+    "familyLabel": "Webcam La Palma free live-cam iframe",
+    "researchUrl": "https://webcam-lapalma.de/webcam-einbetten/",
+    "termsUrl": "https://webcam-lapalma.de/webcam-einbetten/",
+    "verifiedAt": "2026-09-25T06:55:00Z",
+    "permissionEvidence": "The provider's current embed page explicitly offers its Tajogaite, Aridane and Caldera live cams for free iframe embedding without registration. The stated condition is that the small webcam-lapalma.de attribution link under the camera remains visible.",
+    "permissionStatus": "EXPLICIT_FREE_IFRAME_EMBED_WITH_VISIBLE_ATTRIBUTION",
+    "technicalStatus": "THREE_OFFICIAL_IFRAME_TARGETS_STAGED",
+    "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "nextAction": "DEPLOYED_HUMAN_PLAYBACK_ON_STAGED_IFRAMES",
+    "networkFamily": "webcam-lapalma.de",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T06:55:00Z",
+    "communityGuidelinesUrl": "https://webcam-lapalma.de/webcam-einbetten/",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "FREE_WITH_VISIBLE_ATTRIBUTION_LINK",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://webcam-lapalma.de/webcam-einbetten/"
+    ]
   }
 ]
