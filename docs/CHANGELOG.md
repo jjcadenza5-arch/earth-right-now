@@ -1,3 +1,11 @@
+## 2026-09-25 — Promote four reviewed streams + prepare fail-closed Generative Guide
+- Promoted Verbier and three Webcam La Palma streams after one batched deployed human review; La Palma's required visible attribution is enforced in production.
+- Inside-ERN readiness reached 11/5 across four provider families, with dominant-provider share reduced to about 77%.
+- Added one-click loading for multi-stream operator review while keeping per-stream human evidence mandatory.
+- Added conservative region-reference Atlas provenance for Aridane and Caldera.
+- Added provider-neutral Generative ERN Guide contracts, deployment manifest, trusted-context rehydration, hard cost guard, fail-closed service/HTTP adapter, focused CI and daily Operations status.
+- Public ERN Guide remains deterministic; generative mode is NOT_DEPLOYED and cannot activate from client code or local test success.
+
 ## 2026-09-25 — Auckland promoted + four-stream review batches
 - Promoted Auckland Viaduct after deployed click-to-play HUMAN_PLAYBACK confirmation.
 - Expanded human provider review to up to four primary candidates per session without weakening evidence gates.
