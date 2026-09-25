@@ -26,3 +26,6 @@ Maintain the verified 5/5 LIVE HERE target and expand provider resilience carefu
 
 
 Provider research continuity: see `docs/PROVIDER_RESEARCH_HANDOFF_2026-09-25.md`.
+
+## Cross-cutting priority — Curiosity-first story layer
+Use small open questions to invite self-directed discovery: **Do not push the answer. Create the question.** This is a non-disruptive strengthening layer only; truth/currentness, source choice, navigation and playback architecture remain authoritative. See `docs/CURIOSITY_STORY_LAYER.md`.
