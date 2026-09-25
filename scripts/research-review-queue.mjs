@@ -5,4 +5,4 @@ const optional=async p=>{if(!p||p==="-")return null;try{return await read(p)}cat
 const [candidates,preflightReport,providerFamilyReport]=await Promise.all([
  read(new URL("../data/embed-research-candidates.json",import.meta.url)),optional(preflightPath),optional(familyPath)
 ]);
-console.log(JSON.stringify(researchReviewQueue(candidates,{preflightReport,providerFamilyReport,primaryCount:1}),null,2));
+console.log(JSON.stringify(researchReviewQueue(candidates,{preflightReport,providerFamilyReport,primaryCount:4}),null,2));
