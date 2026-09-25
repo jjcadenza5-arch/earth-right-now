@@ -55,3 +55,16 @@ const guideCostBrief=operationsOperatorBrief({
 });
 assert.match(guideCostBrief,/Model spending remains disabled/);
 assert.match(guideCostBrief,/explicit monthly ceiling/);
+
+const depthBrief=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ commercialResearchDepth:{totalCoveredPlaces:3,depthCandidates:2,selected:2,items:[
+   {placeId:"a",title:"Alpha",country:"X",coveredIntents:["stay"],recommendedIntent:"activities"},
+   {placeId:"b",title:"Beta",country:"Y",coveredIntents:["stay","activities"],recommendedIntent:"tickets"}
+ ]}
+});
+assert.match(depthBrief,/Private travel-research depth/);
+assert.match(depthBrief,/Alpha/);
+assert.match(depthBrief,/next research intent: activities/);
+assert.match(depthBrief,/Deepen private research at Alpha with a real activities option/);
