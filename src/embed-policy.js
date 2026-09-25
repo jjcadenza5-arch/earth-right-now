@@ -7,6 +7,7 @@ export function allowedResearchEmbedUrl(value){
     const u=new URL(value,"https://ern.invalid/"),host=u.hostname.toLowerCase().replace(/^www\./,"");
     if(u.protocol!=="https:"||u.username||u.password)return null;
     if(host==="explore.org"&&u.pathname.startsWith("/livecams/player/"))return u.toString();
+    if(host==="webcam-lapalma.de"&&u.pathname.startsWith("/embed/"))return u.toString();
     return null;
   }catch{return null}
 }
@@ -15,5 +16,6 @@ export function embedSandbox(source){
   if(host.endsWith("youtube.com")||host==="youtube-nocookie.com")return"allow-scripts allow-same-origin allow-presentation";
   if(host==="couchtourist.com")return"allow-scripts allow-same-origin allow-presentation allow-popups";
   if(host==="explore.org")return"allow-scripts allow-same-origin allow-presentation";
+  if(host==="webcam-lapalma.de")return"allow-scripts allow-same-origin allow-presentation";
   return"";
 }
