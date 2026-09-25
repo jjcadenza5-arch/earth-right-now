@@ -13,7 +13,7 @@ const all={transport:true,secretIsolation:true,trustedContext:true,costGuard:tru
 const catalog=[{id:"a",placeId:"p",title:"A",truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",health:"HEALTHY",playback:"EMBED",checkedAt:"2026-09-25T00:00:00Z"}];
 const context={
  capabilities:all,catalog,
- costGuard:{allow:async()=>({allowed:true}),commit:async()=>({allowed:true})},
+ costGuard:{allow:async()=>({allowed:true}),commit:async()=>({allowed:true}),release:async()=>({released:true}),forfeit:async()=>({forfeited:true})},
  modelAdapter:{generate:async()=>({segments:[{text:"A",sourceIds:["a"]}]})},
  resolver:{resolve:async()=>({placeId:"p",sourceIds:["a"]})},
  rateLimiter:createInMemoryGuideAiRateLimiter(),
