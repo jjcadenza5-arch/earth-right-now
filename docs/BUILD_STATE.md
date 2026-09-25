@@ -1,3 +1,13 @@
+## 2026-09-25 — Auckland promoted; human provider review expanded to four streams per session
+- Applied deployed HUMAN_PLAYBACK confirmation for Auckland Viaduct review batch `ee73d3e3c6fe0bd7` at 2026-09-25T06:32:26.769Z. The exact official YouTube channel-live player worked after explicit visitor Play interaction; click-to-play is preserved and autoplay is not assumed.
+- Promoted `auckland-viaduct-harbour` to LIVE_VIDEO + EMBED_ALLOWED + EMBED with fresh source-level HUMAN_PLAYBACK evidence. Approval is source-specific, not blanket YouTube/provider approval.
+- Inside-ERN readiness increased to 7 ready windows while the provider-diversification effort continues.
+- At user request, operator research review now supports up to four active primary candidates per session. Each candidate remains individually evidenced; batching does not weaken permission/playback/promotion gates.
+- Added Verbier's official tourism-page YouTube live player as a research-only candidate.
+- Webcam La Palma's current provider page explicitly permits free iframe embedding of Tajogaite, Aridane Valley and Caldera live cams with a visible webcam-lapalma.de attribution link. ERN staged all three as research-only and the review lab now renders the required attribution under those players.
+- Operations packet integrity was updated from a one-primary maximum to a four-primary maximum and is green with all existing no-auto-promotion/no-auto-permission boundaries intact.
+- Latest deployed review batch `87f2fc998e39534d` contains exactly four active human playback checks: Verbier, La Palma Aridane, La Palma Caldera and La Palma Tajogaite.
+
 ## 2026-09-25 — Hida-Takayama promoted; provider diversity reached 2 families; Auckland staged next
 - Applied deployed HUMAN_PLAYBACK confirmation for Hida-Takayama review batch `aad67aa5f7c8fe3a` at 2026-09-25T06:22:47.183Z. The player required explicit visitor Play interaction; ERN records this as valid click-to-play behavior and does not assume autoplay.
 - Promoted existing catalog source `takayama-miyagawa-stream` from EXTERNAL/LINK_ONLY to LIVE_VIDEO + EMBED_ALLOWED + EMBED using the exact stable YouTube channel-live player from the provider's own page.
