@@ -846,5 +846,37 @@
     "url": "https://www.sanparks.org/parks/kruger/camps/main-rest-camps/orpen",
     "evidence": "Current official SANParks Orpen Rest Camp page lists guided bush walks and game drives with trained field guides as active camp activities.",
     "verifiedAt": "2026-09-25T15:02:00Z"
+  },
+  {
+    "researchStatus": "RESEARCH_ONLY",
+    "affiliateStatus": "NOT_REVIEWED",
+    "publicActivationAllowed": false,
+    "sponsored": false,
+    "paidPriorityAllowed": false,
+    "contacted": false,
+    "id": "activities-auckland-viaduct-charters",
+    "placeId": "auckland-viaduct-harbour",
+    "name": "Viaduct Harbour Sailing & Charter Experiences",
+    "country": "New Zealand",
+    "intent": "activities",
+    "url": "https://www.viaduct.co.nz/the-viaduct-harbour-marina",
+    "evidence": "Current official Viaduct Harbour page identifies the marina as a hub for sailing and private yacht charters exploring Waitematā Harbour and the Hauraki Gulf, including Waiheke excursions.",
+    "verifiedAt": "2026-09-25T15:04:00Z"
+  },
+  {
+    "researchStatus": "RESEARCH_ONLY",
+    "affiliateStatus": "NOT_REVIEWED",
+    "publicActivationAllowed": false,
+    "sponsored": false,
+    "paidPriorityAllowed": false,
+    "contacted": false,
+    "id": "activities-ski-arlberg-summer-mountain",
+    "placeId": "ski-arlberg",
+    "name": "St. Anton Mountain Summer",
+    "country": "Austria",
+    "intent": "activities",
+    "url": "https://www.skiarlberg.at/en/st-anton/summer",
+    "evidence": "Current official Ski Arlberg page documents the 2026 St. Anton mountain-summer program with summer cable cars, hiking, biking, family trails and via ferrata from June 13 through October 4.",
+    "verifiedAt": "2026-09-25T15:04:00Z"
   }
 ]
