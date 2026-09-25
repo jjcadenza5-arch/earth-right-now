@@ -644,5 +644,67 @@
       "https://turismo.dianomarina.im.it/it/credits-note-legali",
       "https://www.comune.dianomarina.im.it/"
     ]
+  },
+  {
+    "id": "hilton-waikiki-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Hilton Domestic Operating Company Inc. / Hilton Waikiki Beach Resort & Spa",
+    "discoveryProviderAliases": [
+      "Hilton Waikiki Beach Resort & Spa"
+    ],
+    "familyLabel": "Official Hilton Waikiki city and beach webcam",
+    "researchUrl": "https://www.hilton.com/en/hotels/hnlwahf-hilton-waikiki-beach-resort-and-spa/resort/webcam/",
+    "termsUrl": "https://www.hilton.com/en/p/site-usage-agreement/",
+    "verifiedAt": "2026-09-25T14:12:00Z",
+    "permissionEvidence": "Hilton's official Waikiki resort page embeds its own live city/beach webcam. Hilton's current Site Usage Agreement states that site materials may not be copied, reproduced, republished, transmitted, distributed or used on another website, and framing Hilton proprietary information requires prior express written consent. The presence of an iframe on Hilton's own page therefore does not grant ERN third-party embed rights.",
+    "permissionStatus": "OFFICIAL_LIVE_WEBCAM_PRESENT_THIRD_PARTY_FRAMING_REQUIRES_PRIOR_WRITTEN_CONSENT",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_PRIOR_WRITTEN_CONSENT_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_HILTON_OR_THE_WEBCAM_RIGHTSHOLDER_GRANTS_EXPLICIT_EMBED_PERMISSION",
+    "networkFamily": "hilton.com",
+    "termsEffectiveAt": "2025-10",
+    "termsReviewedAt": "2026-09-25T14:12:00Z",
+    "communityGuidelinesUrl": "https://www.hilton.com/en/p/site-usage-agreement/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "PRIOR_EXPRESS_WRITTEN_CONSENT_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.hilton.com/en/hotels/hnlwahf-hilton-waikiki-beach-resort-and-spa/resort/webcam/",
+      "https://www.hilton.com/en/p/site-usage-agreement/"
+    ]
+  },
+  {
+    "id": "queenstown-airport-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Queenstown Airport Corporation Limited",
+    "discoveryProviderAliases": [
+      "Queenstown Airport"
+    ],
+    "familyLabel": "Official Queenstown Airport close-to-live webcams",
+    "researchUrl": "https://www.queenstownairport.co.nz/webcams-weather/",
+    "termsUrl": "https://www.queenstownairport.co.nz/corporate/terms-of-use/",
+    "verifiedAt": "2026-09-25T14:12:00Z",
+    "permissionEvidence": "Queenstown Airport's official site publishes several close-to-live airport and mountain webcam views. Its current Terms of Use state that site content may not be reproduced, adapted, linked to, distributed or used in any way without prior written consent, apart from a personal non-commercial copy. No public third-party webcam embed/widget licence is provided on the reviewed official pages.",
+    "permissionStatus": "CLOSE_TO_LIVE_WEBCAMS_PUBLIC_REUSE_REQUIRES_PRIOR_WRITTEN_CONSENT",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_PRIOR_WRITTEN_CONSENT_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_QUEENSTOWN_AIRPORT_GRANTS_SPECIFIC_WEBCAM_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "queenstownairport.co.nz",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T14:12:00Z",
+    "communityGuidelinesUrl": "https://www.queenstownairport.co.nz/corporate/terms-of-use/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "PRIOR_WRITTEN_CONSENT_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.queenstownairport.co.nz/webcams-weather/",
+      "https://www.queenstownairport.co.nz/corporate/terms-of-use/"
+    ]
   }
 ]
