@@ -18,5 +18,6 @@
   "providerDataHandlingReviewed": false,
   "rawPromptLoggingDisabled": true,
   "rawResponseLoggingDisabled": true,
-  "visitorProfilingDisabled": true
+  "visitorProfilingDisabled": true,
+  "idempotency": false
 }
