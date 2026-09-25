@@ -22,5 +22,6 @@
   "idempotency": false,
   "modelCancellation": false,
   "serverDerivedRateSubject": false,
-  "rawNetworkIdentifiersStored": false
+  "rawNetworkIdentifiersStored": false,
+  "keyedRateSubjectDerivation": false
 }
