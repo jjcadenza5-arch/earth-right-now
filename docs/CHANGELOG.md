@@ -1,3 +1,10 @@
+## 2026-09-25 — Promote Hida-Takayama and stage Auckland Viaduct
+- Promoted Takayama to LIVE_VIDEO + EMBED_ALLOWED after deployed human playback confirmation; click-to-play is preserved and approval is source-specific.
+- Inside-ERN readiness is now 6/5 across 2/2 provider families; next resilience goal is reducing CouchTourist concentration.
+- Cleaned active research so approved/failed candidates no longer reappear as human-review work.
+- Staged Auckland Viaduct's official stable YouTube channel-live player as the next research-only deployed playback test.
+- Current review batch: `ee73d3e3c6fe0bd7`.
+
 ## 2026-09-25 — Rebuild second-provider discovery and stage Hida-Takayama
 - Added explicit exhausted research handling plus a catalog-grounded provider discovery queue.
 - EarthCam resolved link-only unless licensed; NPS remains specific-player research only; SANParks resolved link-only without written permission.
