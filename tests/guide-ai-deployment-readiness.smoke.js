@@ -3,7 +3,7 @@ import {guideAiDeploymentReadiness,guideAiCapabilitiesFromDeployment} from "../s
 
 const empty=guideAiDeploymentReadiness();
 assert.equal(empty.ready,false);
-assert.equal(empty.missing.length,9);
+assert.equal(empty.missing.length,10);
 const evidence={
  endpointUrl:"https://guide.example.test/api/guide",
  secretIsolation:true,
@@ -13,13 +13,17 @@ const evidence={
  safetyBoundary:true,
  privacyUrl:"https://example.test/privacy",
  privacyPublished:true,
+ providerDataHandlingReviewed:true,
+ rawPromptLoggingDisabled:true,
+ rawResponseLoggingDisabled:true,
+ visitorProfilingDisabled:true,
  deterministicFallback:true,
  monthlyCostCeilingUsd:10,
  hardStopConfigured:true,
  usageMetering:true
 };
 const ready=guideAiDeploymentReadiness(evidence);
-assert.equal(ready.ready,true);
+assert.equal(ready.ready,true);assert.equal(ready.checks.privacyDataHandling,true);
 assert.equal(ready.cost.monthlyCostCeilingUsd,10);
 assert.equal(ready.cost.automaticCeilingIncreaseAllowed,false);
 const caps=guideAiCapabilitiesFromDeployment(evidence);
