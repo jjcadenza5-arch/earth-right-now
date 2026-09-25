@@ -13,7 +13,7 @@ export async function guideAiHttpRequest(request={},context={}){
   if(!activation.ready)return response(503,{ok:false,mode:"DETERMINISTIC_ONLY",reason:"GUIDE_AI_NOT_ACTIVATED"});
   const result=await guideAiService(request.body||{},context);
   if(!result.ok){
-    const status=result.stage==="INPUT"?400:result.reason==="COST_GUARD_BLOCKED"?429:503;
+    const status=result.stage==="INPUT"?400:result.reason==="REQUEST_ALREADY_IN_PROGRESS"?409:result.reason==="COST_GUARD_BLOCKED"?429:503;
     return response(status,result);
   }
   return response(200,result);
