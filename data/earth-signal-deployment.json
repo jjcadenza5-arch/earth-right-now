@@ -9,11 +9,11 @@
   "moderation": false,
   "reportQueue": false,
   "expiryCleanup": false,
-  "privacyUrl": null,
-  "privacyPublished": false,
+  "privacyUrl": "https://earthrightnow.app/privacy.html",
+  "privacyPublished": true,
   "secretIsolation": false,
   "observability": false,
   "costGuard": false,
-  "checkedAt": null,
-  "evidenceNote": "Public, non-secret deployment evidence only. Never place credentials, tokens or private infrastructure values in this file."
+  "checkedAt": "2026-09-25T15:40:00Z",
+  "evidenceNote": "Public, non-secret deployment evidence only. The Earth Signals privacy notice is published at the ERN privacy page. Contributions remain NOT_DEPLOYED until all other production infrastructure evidence passes. Never place credentials, tokens or private infrastructure values in this file."
 }
