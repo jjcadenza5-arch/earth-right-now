@@ -5,6 +5,7 @@ import {guideAiRateSubject} from "./guide-ai-rate-limit.js";
 import {guideAiFallback} from "./guide-ai-fallback.js";
 
 async function metric(metrics,type,fields={}){try{await metrics?.record?.({type,...fields})}catch{}}
+async function releaseBudget(costGuard){try{await costGuard?.release?.()}catch{}}
 function fallback(reason,request={}){return{ok:false,...guideAiFallback(reason,request)}}
 
 export async function guideAiService(input={},context={}){
@@ -42,12 +43,13 @@ export async function guideAiService(input={},context={}){
         constraints:{maxAnswerChars:1600,claimsMustUseTrustedContext:true,noPaidRanking:true,doNotUpgradeTruthLabels:true}
       });
     }catch{
+      await releaseBudget(context.costGuard);
       await metric(context.metrics,"modelError",{latencyMs:Date.now()-started,inputChars:request.query.length});
       return fallback("MODEL_GENERATION_FAILED",request);
     }
 
     const validated=validateGuideAiModelResult(generated,trusted);
-    if(!validated.ok){await metric(context.metrics,"truthRejected",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(validated.reason,request)}
+    if(!validated.ok){await releaseBudget(context.costGuard);await metric(context.metrics,"truthRejected",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(validated.reason,request)}
     const committed=await context.costGuard.commit({sessionId:subject.subject,usage:generated.usage||null});
     if(committed?.allowed===false){await metric(context.metrics,"costBlocked",{latencyMs:Date.now()-started,inputChars:request.query.length});return fallback(committed.reason||"COST_COMMIT_BLOCKED",request)}
 
