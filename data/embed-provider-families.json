@@ -612,5 +612,37 @@
       "https://www.randwick.nsw.gov.au/facilities-and-recreation/explore-randwick-city/beach-cams",
       "https://www.randwick.nsw.gov.au/about-us/administration/copyright"
     ]
+  },
+  {
+    "id": "diano-marina-tourism-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Comune di Diano Marina",
+    "discoveryProviderAliases": [
+      "Comune di Diano Marina Tourism"
+    ],
+    "familyLabel": "Official Diano Marina tourism webcam network",
+    "researchUrl": "https://turismo.dianomarina.im.it/en/webcam",
+    "termsUrl": "https://turismo.dianomarina.im.it/it/credits-note-legali",
+    "verifiedAt": "2026-09-25T14:08:00Z",
+    "permissionEvidence": "The official Diano Marina tourism site publishes five HotSpot webcams and links visitors to live images, photos, 360-degree views and weather. Its legal notice states that the site interface and information organization are protected and reproduction requires explicit authorization; site content is generally limited to personal, non-commercial use unless otherwise specified. The webcam page does not publish a third-party embed/widget permission path. ERN therefore keeps the provider link-only unless explicit reuse/embed authorization is documented.",
+    "permissionStatus": "PUBLIC_OFFICIAL_WEBCAMS_NO_THIRD_PARTY_EMBED_AUTHORIZATION_FOUND",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_AUTHORIZATION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_COMUNE_DI_DIANO_MARINA_OR_CAMERA_PROVIDER_GRANTS_EXPLICIT_EMBED_PERMISSION",
+    "networkFamily": "turismo.dianomarina.im.it",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T14:08:00Z",
+    "communityGuidelinesUrl": "https://turismo.dianomarina.im.it/it/credits-note-legali",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "EXPLICIT_AUTHORIZATION_REQUIRED_NO_PUBLIC_WIDGET_FOUND",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://turismo.dianomarina.im.it/en/webcam",
+      "https://turismo.dianomarina.im.it/it/credits-note-legali",
+      "https://www.comune.dianomarina.im.it/"
+    ]
   }
 ]
