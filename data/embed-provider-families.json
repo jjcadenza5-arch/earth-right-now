@@ -301,6 +301,9 @@
       "https://partner.kitzski.at/de/widget-webcams.html",
       "https://www.kitzski.at/en/legal-notice.html",
       "https://www.kitzski.at/de/partnerinformation.html"
+    ],
+    "discoveryProviderAliases": [
+      "Bergbahn Kitzbühel / KitzSki"
     ]
   }
 ]
