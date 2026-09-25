@@ -769,5 +769,154 @@
       "https://www.stmoritz.com/en/privacypolicy",
       "https://www.stmoritz.com/en/contacts"
     ]
+  },
+  {
+    "id": "visit-florida-now-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "VISIT FLORIDA",
+    "familyLabel": "VISIT FLORIDA Florida Now webcam collection",
+    "researchUrl": "https://www.visitflorida.com/more/florida-now/",
+    "termsUrl": "https://www.visitflorida.com/terms-of-services/",
+    "verifiedAt": "2026-09-25T14:22:00Z",
+    "permissionEvidence": "VISIT FLORIDA's current Terms limit ordinary use to personal/non-commercial viewing and prohibit copying, streaming, retransmitting, framing or inline-linking Content unless expressly permitted. The Terms separately recognize that VISIT FLORIDA may sometimes make Content available through a widget, embedded player or similar technology, in which case that supplied technology must remain intact. The reviewed Florida Now webcam collection does not itself expose a specific portable ERN widget/player grant, so ERN keeps it link-only unless such explicit technology is supplied for the selected feed.",
+    "permissionStatus": "EMBED_ALLOWED_ONLY_WHEN_VISIT_FLORIDA_EXPRESSLY_SUPPLIES_WIDGET_OR_PLAYER_NO_SPECIFIC_CURRENT_TARGET_FOUND",
+    "technicalStatus": "DO_NOT_STAGE_UNLESS_EXPLICIT_PROVIDER_WIDGET_TARGET_EXISTS",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_SPECIFIC_PROVIDER_WIDGET_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_VISIT_FLORIDA_SUPPLIES_AN_EXPLICIT_WIDGET_OR_EMBEDDED_PLAYER_FOR_A_SPECIFIC_CURRENT_FEED",
+    "networkFamily": "visitflorida.com",
+    "termsEffectiveAt": "2013-09-30",
+    "termsReviewedAt": "2026-09-25T14:22:00Z",
+    "communityGuidelinesUrl": "https://www.visitflorida.com/terms-of-services/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_PROVIDER_SUPPLIED_WIDGET_OR_PLAYER_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.visitflorida.com/more/florida-now/",
+      "https://www.visitflorida.com/terms-of-services/"
+    ]
+  },
+  {
+    "id": "whistler-blackcomb-mountain-cams",
+    "status": "RESEARCH_ONLY",
+    "provider": "The Vail Corporation / Whistler Blackcomb",
+    "discoveryProviderAliases": [
+      "Whistler Blackcomb"
+    ],
+    "familyLabel": "Official Whistler Blackcomb live mountain cams",
+    "researchUrl": "https://www.whistlerblackcomb.com/the-mountain/mountain-conditions/mountain-cams.aspx",
+    "termsUrl": "https://www.whistlerblackcomb.com/Policies",
+    "verifiedAt": "2026-09-25T14:22:00Z",
+    "permissionEvidence": "Whistler Blackcomb currently publishes official live mountain webcams. Its current Vail Resorts website terms identify site video and other material as protected Vail Resorts Content and do not grant unrelated third parties a general right to republish or embed that content. No public portable webcam widget or source-specific third-party embed licence was found on the reviewed official surfaces.",
+    "permissionStatus": "OFFICIAL_LIVE_CAMS_NO_PUBLIC_THIRD_PARTY_EMBED_GRANT_FOUND",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_EMBED_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_VAIL_RESORTS_OR_THE_CAMERA_RIGHTSHOLDER_DOCUMENTS_A_SPECIFIC_THIRD_PARTY_EMBED_PATH",
+    "networkFamily": "whistlerblackcomb.com",
+    "termsEffectiveAt": "2026-06-23",
+    "termsReviewedAt": "2026-09-25T14:22:00Z",
+    "communityGuidelinesUrl": "https://www.whistlerblackcomb.com/Policies",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "NO_PUBLIC_THIRD_PARTY_EMBED_GRANT_FOUND",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.whistlerblackcomb.com/the-mountain/mountain-conditions/mountain-cams.aspx",
+      "https://www.whistlerblackcomb.com/Policies"
+    ]
+  },
+  {
+    "id": "zermatt-tourism-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Zermatt Tourism",
+    "familyLabel": "Official Zermatt Matterhorn live webcams",
+    "researchUrl": "https://zermatt.swiss/en/info/webcams",
+    "termsUrl": "https://zermatt.swiss/en/info/contact",
+    "verifiedAt": "2026-09-25T14:22:00Z",
+    "permissionEvidence": "Zermatt Tourism currently presents live destination webcams and explicitly describes them as live/current views. The current official site exposes legal information, media contacts and accreditation channels, but the reviewed webcam/contact/legal surfaces do not publish a reusable third-party webcam widget or blanket embed licence. ERN therefore keeps the source link-only instead of inferring display rights from public availability.",
+    "permissionStatus": "OFFICIAL_LIVE_WEBCAMS_NO_PUBLIC_REUSABLE_WIDGET_OR_EMBED_LICENCE_FOUND",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_SOURCE_LEVEL_EMBED_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_ZERMATT_TOURISM_OR_THE_CAMERA_PROVIDER_DOCUMENTS_A_SPECIFIC_EMBED_PATH",
+    "networkFamily": "zermatt.swiss",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T14:22:00Z",
+    "communityGuidelinesUrl": "https://zermatt.swiss/en/info/contact",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "NO_PUBLIC_SOURCE_LEVEL_EMBED_PERMISSION_FOUND",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://zermatt.swiss/en/info/webcams",
+      "https://zermatt.swiss/en/info/contact"
+    ]
+  },
+  {
+    "id": "visit-chioggia-sottomarina-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Comune di Chioggia / Visit Chioggia",
+    "discoveryProviderAliases": [
+      "Visit Chioggia"
+    ],
+    "familyLabel": "Official Sottomarina beach live webcam",
+    "researchUrl": "https://www.visitchioggia.it/en/",
+    "termsUrl": "https://www.visitchioggia.it/en/",
+    "verifiedAt": "2026-09-25T14:22:00Z",
+    "permissionEvidence": "Visit Chioggia, the Comune di Chioggia tourism portal, currently offers a Sottomarina live webcam for real-time beach conditions. The official site credits Feratel Media DMS for content integration and marks site content as Comune di Chioggia copyright, but the reviewed public surface does not expose third-party embed code or a reusable webcam licence. ERN therefore keeps the camera link-only unless the Comune or the actual camera/provider publishes a specific embed path.",
+    "permissionStatus": "OFFICIAL_LIVE_WEBCAM_FERATEL_INTEGRATION_PRESENT_NO_PUBLIC_THIRD_PARTY_EMBED_GRANT_FOUND",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_SPECIFIC_EMBED_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_COMUNE_DI_CHIOGGIA_OR_THE_CAMERA_PROVIDER_DOCUMENTS_A_PUBLIC_EMBED_PATH",
+    "networkFamily": "visitchioggia.it",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T14:22:00Z",
+    "communityGuidelinesUrl": "https://www.visitchioggia.it/en/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "NO_PUBLIC_THIRD_PARTY_EMBED_GRANT_FOUND",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.visitchioggia.it/en/"
+    ]
+  },
+  {
+    "id": "chiyoda-sakura-live-camera",
+    "status": "RESEARCH_ONLY",
+    "provider": "Chiyoda City Tourism Association",
+    "discoveryProviderAliases": [
+      "Visit Chiyoda / Chiyoda City Sakura Festival"
+    ],
+    "familyLabel": "Official Chidori-ga-fuchi Sakura live camera",
+    "researchUrl": "https://visit-chiyoda.tokyo/en/sakura/",
+    "termsUrl": "https://visit-chiyoda.tokyo/en/privacy/",
+    "verifiedAt": "2026-09-25T14:22:00Z",
+    "permissionEvidence": "The official 2026 Chiyoda Sakura Festival site publishes a Chidori-ga-fuchi live camera and identifies Chiyoda City Tourism Association/Chiyoda City as organizer. The broader Visit Chiyoda site states copyright is reserved, and its official festival FAQ says media coverage and photography require prior permission. No public third-party camera embed/widget permission was found, so ERN keeps the source link-only.",
+    "permissionStatus": "OFFICIAL_LIVE_CAMERA_NO_PUBLIC_THIRD_PARTY_EMBED_PERMISSION_FOUND",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_PRIOR_PERMISSION_OR_PUBLIC_WIDGET_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_CHIYODA_CITY_TOURISM_ASSOCIATION_DOCUMENTS_A_PUBLIC_EMBED_PATH_OR_GRANTS_PERMISSION",
+    "networkFamily": "visit-chiyoda.tokyo",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T14:22:00Z",
+    "communityGuidelinesUrl": "https://visit-chiyoda.tokyo/en/sakura/faq/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "NO_PUBLIC_THIRD_PARTY_EMBED_PERMISSION_FOUND",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://visit-chiyoda.tokyo/en/sakura/",
+      "https://visit-chiyoda.tokyo/en/sakura/faq/",
+      "https://visit-chiyoda.tokyo/en/privacy/"
+    ]
   }
 ]
