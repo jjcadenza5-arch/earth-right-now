@@ -428,5 +428,69 @@
       "https://www.dolomitisuperski.com/en/legal-information",
       "https://www.dolomitisuperski.com/en/legal-information/impressum"
     ]
+  },
+  {
+    "id": "earthtv-licensed-player",
+    "status": "RESEARCH_ONLY",
+    "provider": "earthTV network GmbH",
+    "discoveryProviderAliases": [
+      "earthTV"
+    ],
+    "familyLabel": "earthTV camera and program player network",
+    "researchUrl": "https://www.earthtv.com/en/webcams",
+    "termsUrl": "https://global.earthtv.com/en/",
+    "verifiedAt": "2026-09-25T09:39:00Z",
+    "permissionEvidence": "earthTV currently operates a large public webcam network and separately markets content licensing and web-publisher integration. Its current materials describe embeddable players and customizable licensed partner integrations, which indicates that third-party integration is a licensing/partner path rather than blanket public embed permission for arbitrary camera feeds. ERN therefore keeps existing earthTV sources link-only until an explicit licensed or provider-authorized integration is established.",
+    "permissionStatus": "WEB_INTEGRATION_AVAILABLE_THROUGH_LICENSING_OR_PARTNER_PATH",
+    "technicalStatus": "DO_NOT_STAGE_UNLICENSED_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_LICENSE_OR_PARTNER_AUTHORIZATION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_EXPLICIT_EARTHTV_INTEGRATION_LICENSE_OR_PARTNER_PERMISSION_IS_ESTABLISHED",
+    "networkFamily": "earthtv.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T09:39:00Z",
+    "communityGuidelinesUrl": "https://global.earthtv.com/en/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "LICENSE_OR_PARTNER_AUTHORIZATION_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.earthtv.com/en/webcams",
+      "https://global.earthtv.com/en/",
+      "https://www.earthtv.com/en/program/world-weather-today-english"
+    ]
+  },
+  {
+    "id": "norways-best-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Norway's Best AS",
+    "discoveryProviderAliases": [
+      "Norway's Best"
+    ],
+    "familyLabel": "Official Norway's Best destination webcams",
+    "researchUrl": "https://www.norwaysbest.com/en/flam/flam-webcam",
+    "termsUrl": "https://www.norwaysbest.com/en/privacy-policy",
+    "verifiedAt": "2026-09-25T09:39:00Z",
+    "permissionEvidence": "Norway's Best currently publishes real-time Flåm and Aurland webcam feeds on its official site. Reviewed public booking, privacy, contact and B2B materials do not provide a general third-party webcam embed licence; B2B materials direct partners to the sales team for contracts and image resources. ERN therefore does not infer reusable webcam rights from public viewing availability and keeps the source link-only unless an explicit partner/embed path is documented.",
+    "permissionStatus": "PUBLIC_WEBCAMS_EXIST_NO_GENERAL_THIRD_PARTY_EMBED_PERMISSION_FOUND",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_PARTNER_OR_EMBED_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_OFFICIAL_PARTNER_OR_EMBED_PERMISSION_IS_DOCUMENTED",
+    "networkFamily": "norwaysbest.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T09:39:00Z",
+    "communityGuidelinesUrl": "https://www.norwaysbest.com/en/tour-operators-and-agents",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "NO_PUBLIC_EMBED_PERMISSION_FOUND",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.norwaysbest.com/en/flam/flam-webcam",
+      "https://www.norwaysbest.com/en/tour-operators-and-agents",
+      "https://www.norwaysbest.com/en/privacy-policy"
+    ]
   }
 ]
