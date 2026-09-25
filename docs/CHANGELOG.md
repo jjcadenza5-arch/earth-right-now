@@ -1,3 +1,8 @@
+## 2026-09-25 — Detect stale operator review pages
+- Added a current-batch manifest and fail-closed stale-page detection to the deployed operator review surface.
+- Repeated valid Metung/Ponte confirmations were accepted; repeated Jelly failure remained research-only.
+- Latest deployed review batch is `fbeae45f290ade5b` with Monterey Open Sea as the active research primary.
+
 ## 2026-09-25 — Renew Metung + Ponte; block Jelly Cam candidate
 - Applied fresh deployed HUMAN_PLAYBACK renewals for Metung and Ponte di Legno from review batch `3ec5f713ce5daf15`.
 - Recorded Monterey Jelly Cam as a candidate-specific deployed playback failure; it remains research-only and blocked.
