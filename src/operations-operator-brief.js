@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -133,6 +133,12 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     for(const item of (commercialResearch.items||[]).filter(x=>x.valid).slice(0,5))lines.push(`- ${item.name} · ${item.placeId} — ${item.intent}; affiliate terms NOT REVIEWED.`);
     lines.push("- These are existence-verified private research candidates only; no affiliate relationship, sponsorship or public offer is implied.","");
   }
+  if(commercialResearchDepth?.items?.length){
+    lines.push("## Private travel-research depth");
+    lines.push(`- ${commercialResearchDepth.totalCoveredPlaces||0} researched place(s); ${commercialResearchDepth.depthCandidates||0} have additional intent categories worth researching; showing ${commercialResearchDepth.selected||commercialResearchDepth.items.length} prioritized place(s).`);
+    for(const item of commercialResearchDepth.items.slice(0,5))lines.push(`- ${item.title||item.placeId} · ${item.country||"Unknown"} — already: ${(item.coveredIntents||[]).join(", ")||"none"}; next research intent: ${item.recommendedIntent||"review"}.`);
+    lines.push("- Depth suggestions are private editorial research only; they do not imply demand, affiliate relationships, contact, public activation or paid ranking.","");
+  }
   if(affiliatePlatformResearch){
     lines.push("## Affiliate-platform research");
     lines.push(`- ${affiliatePlatformResearch.valid||0}/${affiliatePlatformResearch.total||0} programs have current research evidence; no ERN relationship or tracked-link permission is active.`);
@@ -192,6 +198,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   if(commercialInventory?.stage==="EMPTY_STAGING")lines.push("- Keep the public experience non-commercial until real verified partner inventory exists.");
   if(affiliateApplicationReadiness?.readyForDecision)lines.push("- Affiliate groundwork is complete; wait for an explicit user decision before any program application or credential setup.");
   else if(affiliatePlatformResearch?.valid)lines.push("- Keep affiliate platforms research-only until ERN deliberately chooses which programs to apply to.");
+  if(commercialResearchDepth?.items?.length)lines.push(`- Deepen private research at ${commercialResearchDepth.items[0].title||commercialResearchDepth.items[0].placeId} with a real ${commercialResearchDepth.items[0].recommendedIntent||"travel"} option before adding duplicate intent coverage.`);
   if(commercialResearch?.valid)lines.push("- Review staged real travel options for partner/affiliate terms before any public activation.");
   else if(commercialOnboarding?.items?.length)lines.push("- Research real travel options for the highest content-ready destinations without contacting or listing invented partners.");
   if(submissionTransport&&!submissionTransport.active)lines.push("- Keep camera/place submission delivery closed until a real HTTPS review endpoint, privacy notice and retention window are configured.");
