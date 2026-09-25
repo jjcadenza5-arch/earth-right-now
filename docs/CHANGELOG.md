@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-25 — Review batch hash generator fix
+- Operator Review now emits the computed batch hash rather than a literal template placeholder.
+
 ## 2026-09-25 — Review batch guidance
 - Operator Review now visibly explains batch isolation and the current primary human-check count.
 

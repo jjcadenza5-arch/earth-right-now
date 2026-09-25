@@ -50,7 +50,7 @@ const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta nam
 <section><h2>Second-provider research</h2><p>Test one strongest provider-family candidate first. Technical loading never approves permission or playback.</p><div class="grid">${researchPrimary.length?researchPrimary.map(x=>card(x,"research")).join(""):'<p class="empty">No primary research candidate right now.</p>'}</div>${researchAlternates.length?`<details><summary>Alternate provider tests (${researchAlternates.length})</summary><ul class="backlog">${researchAlternates.map(x=>`<li>${esc(x.title||x.id)} — use only if the primary test fails or remains blocked</li>`).join("")}</ul></details>`:""}</section>
 <p class="foot">Generated ${esc(generatedAt)}. This page never writes to ERN data and cannot mark a source healthy, live, or approved.</p>
 </main><script>
-const REVIEW_BATCH=${JSON.stringify("${reviewBatch}")};
+const REVIEW_BATCH=${JSON.stringify(reviewBatch)};
 const KEY="ern-operator-review-evidence-v2-"+REVIEW_BATCH;
 const readEvidence=()=>{try{return JSON.parse(localStorage.getItem(KEY)||"{}")}catch{return{}}};
 const writeEvidence=value=>{try{localStorage.setItem(KEY,JSON.stringify(value))}catch{}};

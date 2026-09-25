@@ -1,3 +1,9 @@
+## 2026-09-25 — Operator review batch hash generator fix
+- Fixed the actual batch-isolation generator bug: the built review page was receiving the literal string ${reviewBatch} instead of the computed deterministic batch hash.
+- The page now receives the real 16-character review-batch hash generated from current targets and proof baselines.
+- The fail-closed Pages preflight correctly caught this before deployment.
+- Added regression coverage against reintroducing the literal template marker.
+
 ## 2026-09-25 — Operator review batch guidance
 - Added visible review-page guidance explaining that browser evidence is isolated to the exact current review batch.
 - The page now shows the number of primary human checks currently presented and states that older review evidence is not reused.
