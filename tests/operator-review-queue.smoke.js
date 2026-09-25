@@ -7,6 +7,6 @@ const sources=[
 const observations=[{id:"due",confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-24T00:00:00Z",httpStatus:200}];
 const r=operatorReviewQueue(sources,observations,{now:new Date("2026-09-24T18:30:00Z"),limit:8,targetReady:5});
 assert.equal(r.items[0].id,"due");assert.equal(r.items[0].reviewMode,"RENEW");assert.match(r.items[0].reason,/DUE_/);
-assert.ok(r.items.some(x=>x.id==="restore"&&x.reviewMode==="RESTORE"));assert.ok(!r.items.some(x=>x.id==="held"));assert.equal(r.readyShortfall,4);assert.equal(r.recommendedRestorationCount,1);assert.equal(r.primaryItems[0].id,"due");assert.equal(r.primaryItems[1].id,"restore");
+assert.ok(r.items.some(x=>x.id==="restore"&&x.reviewMode==="RESTORE"));assert.ok(!r.items.some(x=>x.id==="held"));assert.equal(r.readyShortfall,4);assert.equal(r.recommendedRestorationCount,1);assert.equal(r.primaryItems[0].id,"due");assert.equal(r.primaryItems[1].id,"restore");assert.ok(r.renewable.some(x=>x.id==="due"));assert.ok(!r.renewable.some(x=>x.id==="restore"));assert.ok(!r.renewable.some(x=>x.id==="held"));
 assert.equal(r.safety.catalogMutationAllowed,false);assert.equal(r.safety.automaticPlaybackVerificationAllowed,false);
 console.log("ERN operator review queue renewal priority passed");
