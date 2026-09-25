@@ -68,6 +68,6 @@ export function researchReviewQueue(candidates=[],{preflightReport=null,provider
     },
     note:exhausted
       ?"All staged candidates have failed deployed HUMAN_PLAYBACK review. Do not recycle them as active work. Research a genuinely new provider family or materially changed target before another human playback request."
-      :"Review one strongest provider-diversification candidate first. Failed candidates remain deferred until their target/provider materially changes. Technical readiness and current terms evidence never confirm permission, playback or catalog eligibility."
+      :"Review the strongest provider-diversification candidates in the current batch. Failed candidates remain deferred until their target/provider materially changes. Technical readiness and current terms evidence never confirm permission, playback or catalog eligibility."
   };
 }
