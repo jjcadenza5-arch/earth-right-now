@@ -16,7 +16,7 @@ export function providerGeneratedTargetStatus(rows=[]){
     return{
       id:clean(raw?.id),providerFamilyId:clean(raw?.providerFamilyId),provider:clean(raw?.provider),sourceId:clean(raw?.sourceId),
       integrationKind:raw?.integrationKind||null,truthIfApproved:raw?.truthIfApproved||null,refreshSemantics:raw?.refreshSemantics||null,
-      generatorUrl:raw?.generatorUrl||null,hasExactCode,hasExactTarget,generated,reviewed,reviewOutcome:raw?.reviewOutcome||null,
+      generatorUrl:raw?.generatorUrl||null,extractionMode:raw?.extractionMode||null,manualInteractionRequired:raw?.manualInteractionRequired===true,blockerReason:raw?.blockerReason||null,lastExtractionAttemptAt:raw?.lastExtractionAttemptAt||null,hasExactCode,hasExactTarget,generated,reviewed,reviewOutcome:raw?.reviewOutcome||null,
       state,valid,safetyOk,promotionAllowed:false,catalogMutationAllowed:false,automaticGenerationAllowed:false,
       nextAction:state==="EXACT_PROVIDER_CODE_REQUIRED"?"GENERATE_EXACT_CODE_ON_OFFICIAL_PROVIDER_SURFACE":
         state==="EXACT_PROVIDER_TARGET_URL_REQUIRED"?"IDENTIFY_EXACT_AUTHORIZED_CURRENT_IMAGE_URL":
@@ -28,16 +28,18 @@ export function providerGeneratedTargetStatus(rows=[]){
   const invalid=items.filter(x=>!x.valid||!x.safetyOk);
   const preparation=items.filter(x=>["EXACT_PROVIDER_CODE_REQUIRED","EXACT_PROVIDER_TARGET_URL_REQUIRED"].includes(x.state));
   const reviewReady=items.filter(x=>x.state==="DEPLOYED_REVIEW_REQUIRED");
+  const manualPreparation=preparation.filter(x=>x.manualInteractionRequired);
   return{
     generatedAt:new Date().toISOString(),
     total:items.length,
     valid:items.filter(x=>x.valid).length,
     preparation:preparation.length,
+    manualPreparation:manualPreparation.length,
     reviewReady:reviewReady.length,
     invalid:invalid.length,
     state:invalid.length?"INVALID_STAGING":reviewReady.length?"DEPLOYED_REVIEW_READY":preparation.length?"PREPARATION_REQUIRED":"NO_ACTIVE_PREPARATION",
     items,
     safety:{catalogMutationAllowed:false,automaticGenerationAllowed:false,automaticPromotionAllowed:false,permissionInferred:false,playbackInferred:false},
-    note:"Provider-generated target staging only. Family-level permission evidence never promotes a source. Exact generated code/targets require deployed review before any catalog change."
+    note:"Provider-generated target staging only. Family-level permission evidence never promotes a source. Extraction blockers are recorded so interactive provider generators are not repeatedly treated as machine-retrievable. Exact generated code/targets still require deployed review before any catalog change."
   };
 }
