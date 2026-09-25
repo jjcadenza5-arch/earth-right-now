@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -145,6 +145,14 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     for(const item of commercialResearchDepth.items.slice(0,5))lines.push(`- ${item.title||item.placeId} · ${item.country||"Unknown"} — already: ${(item.coveredIntents||[]).join(", ")||"none"}; next research intent: ${item.recommendedIntent||"review"}.`);
     lines.push("- Depth suggestions are private editorial research only; they do not imply demand, affiliate relationships, contact, public activation or paid ranking.","");
   }
+  if(localDirectory){
+    lines.push("## Local Earth editorial directory");
+    lines.push(`- ${localDirectory.approved||0}/${localDirectory.targetApproved||0} approved editorial places; ${localDirectory.invalid||0} invalid; state ${localDirectory.state||"UNKNOWN"}.`);
+    if(localDirectory.state==="PILOT_COMPLETE")lines.push("- Local Earth pilot is complete for the current scope. Hold expansion until materially useful local evidence or a product decision appears.");
+    else if(localDirectory.invalid)lines.push("- Fix invalid local-directory entries before adding anything else.");
+    else lines.push("- Review only real, useful unpaid local places; do not fill the directory to increase counts.");
+    lines.push("- Paid ranking, affiliate implication and automatic approval remain prohibited.","");
+  }
   if(affiliatePlatformResearch){
     lines.push("## Affiliate-platform research");
     lines.push(`- ${affiliatePlatformResearch.valid||0}/${affiliatePlatformResearch.total||0} programs have current research evidence; no ERN relationship or tracked-link permission is active.`);
@@ -203,6 +211,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   else if((a?.missing||0)>0)lines.push("- Review new PAGE_MISSING observations manually; wait for repeat evidence before any catalog-health decision.");
   if((commercialVerificationHorizon?.summary?.attention||0)>0)lines.push("- Review commercial verification warnings before partner or offer evidence becomes stale; never auto-renew.");
   if(commercialInventory?.stage==="EMPTY_STAGING")lines.push("- Keep the public experience non-commercial until real verified partner inventory exists.");
+  if(localDirectory?.state==="PILOT_COMPLETE")lines.push("- Local Earth editorial pilot is complete; keep expansion on hold unless materially useful local evidence appears.");
   if(affiliateApplicationReadiness?.readyForDecision)lines.push("- Affiliate groundwork is complete; wait for an explicit user decision before any program application or credential setup.");
   else if(affiliatePlatformResearch?.valid)lines.push("- Keep affiliate platforms research-only until ERN deliberately chooses which programs to apply to.");
   if(commercialResearchDepth?.items?.length)lines.push(`- Deepen private research at ${commercialResearchDepth.items[0].title||commercialResearchDepth.items[0].placeId} with a real ${commercialResearchDepth.items[0].recommendedIntent||"travel"} option before adding duplicate intent coverage.`);
