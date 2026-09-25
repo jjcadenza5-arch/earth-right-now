@@ -19,3 +19,13 @@ assert.equal(exhausted.reviewable,0);
 assert.equal(exhausted.primary.length,0);
 assert.equal(exhausted.nextAction,"RESEARCH_NEW_PROVIDER_FAMILY");
 assert.equal(exhausted.safety.failedCandidateRetestAllowed,false);
+
+const approvedQueue=researchReviewQueue([
+ {id:"approved",provider:"Hida",status:"APPROVED",promotion:"APPROVED_FOR_CATALOG",playbackReview:"HUMAN_PLAYBACK_CONFIRMED",permissionReview:"PER_VIDEO_EMBED_CONFIRMED"},
+ {id:"failed",provider:"Old",playbackReview:"HUMAN_PLAYBACK_FAILED"}
+],{primaryCount:1});
+assert.equal(approvedQueue.approved,1);
+assert.equal(approvedQueue.primary.length,0);
+assert.equal(approvedQueue.reviewable,0);
+assert.equal(approvedQueue.exhausted,true);
+assert.ok(!approvedQueue.alternates.some(x=>x.id==="approved"));
