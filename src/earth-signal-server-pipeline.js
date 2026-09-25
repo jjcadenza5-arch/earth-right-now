@@ -1,17 +1,12 @@
 import {earthSignalSubmissionEnvelope,earthSignalServerRecord,earthSignalPublicResponse} from "./earth-signal-api-contract.js";
-import {earthSignalRateDecision} from "./earth-signal-rate-limit.js";
 import {earthSignalModerationState,earthSignalReport} from "./earth-signal-moderation.js";
 import {earthSignalDeletionState} from "./earth-signal-retention.js";
 
 export function earthSignalCreateTransaction(input={}, context={}){
   const knownPlaceIds=context.knownPlaceIds||null;
-  const history=Array.isArray(context.history)?context.history:[];
   const now=context.now instanceof Date?context.now:new Date();
   const request=earthSignalSubmissionEnvelope(input,{knownPlaceIds});
   if(!request.ok)return{ok:false,stage:"VALIDATION",reason:request.reason};
-
-  const rate=earthSignalRateDecision(history,request.request,{now});
-  if(!rate.allowed)return{ok:false,stage:"RATE_LIMIT",reason:rate.reason};
 
   const built=earthSignalServerRecord(request.request,{id:context.id,now});
   if(!built.ok)return{ok:false,stage:"SERVER_RECORD",reason:built.reason};
@@ -25,7 +20,6 @@ export function earthSignalCreateTransaction(input={}, context={}){
     stage:"READY_TO_PERSIST",
     record:built.record,
     public:earthSignalPublicResponse(built.record),
-    rate:{remaining:rate.remaining},
     retention:{expiryAt:deletion.expiryAt,deleteNow:deletion.deleteNow}
   };
 }
