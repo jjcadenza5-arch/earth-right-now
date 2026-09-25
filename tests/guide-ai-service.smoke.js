@@ -8,7 +8,7 @@ import {createInMemoryGuideAiIdempotencyStore} from "../src/guide-ai-idempotency
 const all={transport:true,secretIsolation:true,trustedContext:true,costGuard:true,rateLimits:true,idempotency:true,observability:true,safetyBoundary:true,privacyNotice:true,deterministicFallback:true};
 const catalog=[{id:"a",placeId:"p",title:"A",truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",health:"HEALTHY",playback:"EMBED",checkedAt:"2026-09-25T00:00:00Z"}];
 const costGuard={allow:async()=>({allowed:true}),commit:async()=>({allowed:true})};
-const modelAdapter={generate:async({trustedContext})=>({answer:"A is a current ERN window.",sourceIds:[trustedContext.sourceIds[0]],usage:{units:1}})};
+const modelAdapter={generate:async({trustedContext})=>({segments:[{text:"A is a current ERN window.",sourceIds:[trustedContext.sourceIds[0]]}],usage:{units:1}})};
 const subject="anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 const context=(overrides={})=>({
   capabilities:all,catalog,costGuard,modelAdapter,
@@ -29,7 +29,7 @@ assert.equal(ok.response.sourceIds[0],"a");
 
 let releases=0;
 const releasingCostGuard={allow:async()=>({allowed:true}),commit:async()=>({allowed:true}),release:async()=>{releases++;return{released:true}}};
-const hallucinating={generate:async()=>({answer:"Use fake",sourceIds:["fake"]})};
+const hallucinating={generate:async()=>({segments:[{text:"Use fake",sourceIds:["fake"]}]})};
 const blocked=await guideAiService({version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p",requestId:"req_HALLUCINATEAAAAAAAAAAAAAA"},context({modelAdapter:hallucinating,costGuard:releasingCostGuard}));
 assert.equal(blocked.ok,false);
 assert.equal(blocked.reason,"UNTRUSTED_SOURCE_REFERENCE");
@@ -65,7 +65,7 @@ let modelCalls=0,costAllows=0,costCommits=0;
 const replayStore=createInMemoryGuideAiIdempotencyStore();
 const replayContext=context({
   idempotency:replayStore,
-  modelAdapter:{generate:async({trustedContext})=>{modelCalls++;return{answer:"A is current.",sourceIds:[trustedContext.sourceIds[0]],usage:{units:1}}}},
+  modelAdapter:{generate:async({trustedContext})=>{modelCalls++;return{segments:[{text:"A is current.",sourceIds:[trustedContext.sourceIds[0]]}],usage:{units:1}}}},
   costGuard:{allow:async()=>{costAllows++;return{allowed:true}},commit:async()=>{costCommits++;return{allowed:true,estimatedCostUsd:0.001}}}
 });
 const replayRequest={version:GUIDE_AI_API_VERSION,query:"show me A",language:"en",placeId:"p",requestId:"req_REPLAYAAAAAAAAAAAAAAAAAAA"};
