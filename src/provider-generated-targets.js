@@ -8,8 +8,9 @@ export function providerGeneratedTargetStatus(rows=[]){
     const reviewed=Boolean(raw?.reviewedAt&&raw?.reviewOutcome);
     const valid=Boolean(raw?.id&&raw?.providerFamilyId&&raw?.provider&&raw?.sourceId&&["PROVIDER_GENERATED_WIDGET","PROVIDER_GENERATED_CURRENT_IMAGE","PROVIDER_AUTHORIZED_CURRENT_IMAGE"].includes(raw?.integrationKind)&&HTTPS.test(clean(raw?.generatorUrl)));
     const safetyOk=raw?.promotionAllowed===false&&raw?.catalogMutationAllowed===false&&raw?.automaticGenerationAllowed===false;
+    const exactTargetState=raw?.integrationKind==="PROVIDER_AUTHORIZED_CURRENT_IMAGE"?"EXACT_PROVIDER_TARGET_URL_REQUIRED":"EXACT_PROVIDER_CODE_REQUIRED";
     let state="INVALID";
-    if(valid&&safetyOk&&!generated)state="EXACT_PROVIDER_CODE_REQUIRED";
+    if(valid&&safetyOk&&!generated)state=exactTargetState;
     else if(valid&&safetyOk&&generated&&!reviewed)state="DEPLOYED_REVIEW_REQUIRED";
     else if(valid&&safetyOk&&generated&&reviewed)state=raw.reviewOutcome==="APPROVED"?"REVIEW_APPROVED_NOT_PROMOTED":"REVIEW_FAILED";
     return{
@@ -18,13 +19,14 @@ export function providerGeneratedTargetStatus(rows=[]){
       generatorUrl:raw?.generatorUrl||null,hasExactCode,hasExactTarget,generated,reviewed,reviewOutcome:raw?.reviewOutcome||null,
       state,valid,safetyOk,promotionAllowed:false,catalogMutationAllowed:false,automaticGenerationAllowed:false,
       nextAction:state==="EXACT_PROVIDER_CODE_REQUIRED"?"GENERATE_EXACT_CODE_ON_OFFICIAL_PROVIDER_SURFACE":
+        state==="EXACT_PROVIDER_TARGET_URL_REQUIRED"?"IDENTIFY_EXACT_AUTHORIZED_CURRENT_IMAGE_URL":
         state==="DEPLOYED_REVIEW_REQUIRED"?"STAGE_EXACT_TARGET_FOR_DEPLOYED_RENDERING_REVIEW":
         state==="REVIEW_APPROVED_NOT_PROMOTED"?"EDITORIAL_AND_CATALOG_PROMOTION_REVIEW":
         state==="REVIEW_FAILED"?"KEEP_RESEARCH_ONLY_OR_REGENERATE_MATERIALLY_CHANGED_TARGET":"FIX_INVALID_STAGING_RECORD"
     };
   });
   const invalid=items.filter(x=>!x.valid||!x.safetyOk);
-  const preparation=items.filter(x=>x.state==="EXACT_PROVIDER_CODE_REQUIRED");
+  const preparation=items.filter(x=>["EXACT_PROVIDER_CODE_REQUIRED","EXACT_PROVIDER_TARGET_URL_REQUIRED"].includes(x.state));
   const reviewReady=items.filter(x=>x.state==="DEPLOYED_REVIEW_REQUIRED");
   return{
     generatedAt:new Date().toISOString(),
