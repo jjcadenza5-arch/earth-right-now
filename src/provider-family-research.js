@@ -11,8 +11,9 @@ export function providerFamilyResearchStatus(rows=[],{now=new Date(),maxTermsAge
     const brandedPlayerSafe=raw?.restreamAllowed===false&&raw?.playerBrandingRequired===true&&raw?.usageMode==="PROVIDER_BRANDED_PLAYER_ONLY";
     const linkOnlySafe=raw?.restreamAllowed===false&&raw?.usageMode==="LINK_ONLY_UNLESS_LICENSED";
     const generatedWidgetSafe=raw?.restreamAllowed===false&&raw?.playerBrandingRequired===true&&raw?.usageMode==="PROVIDER_GENERATED_WIDGET_ONLY";
-    const safeUsage=brandedPlayerSafe||generatedWidgetSafe||linkOnlySafe;
-    const integrationSafe=brandedPlayerSafe||generatedWidgetSafe;
+    const authorizedCurrentImageSafe=raw?.restreamAllowed===false&&raw?.imageReuseAllowed===true&&raw?.attributionRequired===true&&raw?.usageMode==="PROVIDER_AUTHORIZED_CURRENT_IMAGE";
+    const safeUsage=brandedPlayerSafe||generatedWidgetSafe||authorizedCurrentImageSafe||linkOnlySafe;
+    const integrationSafe=brandedPlayerSafe||generatedWidgetSafe||authorizedCurrentImageSafe;
     const candidateEligible=integrationSafe&&raw?.embeddingCondition!=="LICENSE_REQUIRED"&&raw?.technicalStatus!=="DO_NOT_STAGE_PLAYER";
     return{
       id:String(raw?.id||""),
@@ -39,6 +40,8 @@ export function providerFamilyResearchStatus(rows=[],{now=new Date(),maxTermsAge
       usageMode:raw?.usageMode||null,
       embeddingCondition:raw?.embeddingCondition||null,
       playerBrandingRequired:raw?.playerBrandingRequired===true,
+      imageReuseAllowed:raw?.imageReuseAllowed===true,
+      attributionRequired:raw?.attributionRequired===true,
       restreamAllowed:raw?.restreamAllowed===true,
       safeUsage,
       candidateEligible,
@@ -62,6 +65,6 @@ export function providerFamilyResearchStatus(rows=[],{now=new Date(),maxTermsAge
     attention:needsTermsReview.map(x=>({id:x.id,provider:x.provider,reason:x.termsEvidenceState==="MISSING"?"TERMS_REVIEW_MISSING":"TERMS_REVIEW_STALE",termsReviewedAt:x.termsReviewedAt})),
     items,
     safety:{catalogMutationAllowed:false,automaticPermissionApprovalAllowed:false,automaticPromotionAllowed:false,restreamAllowed:false,providerBrandingRemovalAllowed:false},
-    note:"Provider-family research only. Current terms evidence can guide review, but it does not confirm a specific camera/player/widget or deployed rendering. Families may resolve to provider-branded-player research, provider-generated widget research, or conservative link-only use; ERN never restreams/rebroadcasts provider video."
+    note:"Provider-family research only. Current terms evidence can guide review, but it does not confirm a specific camera/player/widget/image target or deployed rendering. Families may resolve to provider-branded-player research, provider-generated widget research, explicitly authorized current-image research, or conservative link-only use; ERN never restreams/rebroadcasts provider video."
   };
 }
