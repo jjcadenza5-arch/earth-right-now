@@ -1,3 +1,6 @@
+## Production deployment evidence gate
+A complete backend deployment now has an explicit fail-closed evidence model. Contribution remains off unless real production evidence exists for: an HTTPS endpoint, durable storage, server-side rate limits, moderation, a report queue, expiry cleanup, a published privacy notice, secret isolation, observability, and a cost guard. Test doubles and local code are explicitly insufficient. Only a fully complete deployment-evidence set may derive all six activation capabilities as true.
+
 ## Privacy notice preparation
 The structured Earth Signal privacy wording is now content-complete in code: purpose, allowed signal types, 45-minute retention, optional location evidence, place-only public location scope, reporting, expiry deletion, no free text, no public precise coordinates and no account requirement. It remains explicitly **DRAFT_NOT_PUBLISHED**. The privacyNotice capability must stay false until this wording is actually published at the real public privacy surface and that publication is verified.
 
