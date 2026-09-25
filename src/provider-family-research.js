@@ -8,7 +8,10 @@ export function providerFamilyResearchStatus(rows=[],{now=new Date(),maxTermsAge
     const termsAgeDays=ageDays(raw?.termsReviewedAt,now);
     const termsEvidenceState=!Number.isFinite(termsAgeDays)?"MISSING":termsAgeDays>maxTermsAgeDays?"STALE":"CURRENT";
     const valid=Boolean(raw?.id&&raw?.provider&&raw?.status==="RESEARCH_ONLY"&&HTTPS.test(String(raw?.researchUrl||""))&&HTTPS.test(String(raw?.termsUrl||"")));
-    const safeUsage=raw?.restreamAllowed===false&&raw?.playerBrandingRequired===true&&raw?.usageMode==="PROVIDER_BRANDED_PLAYER_ONLY";
+    const brandedPlayerSafe=raw?.restreamAllowed===false&&raw?.playerBrandingRequired===true&&raw?.usageMode==="PROVIDER_BRANDED_PLAYER_ONLY";
+    const linkOnlySafe=raw?.restreamAllowed===false&&raw?.usageMode==="LINK_ONLY_UNLESS_LICENSED";
+    const safeUsage=brandedPlayerSafe||linkOnlySafe;
+    const candidateEligible=brandedPlayerSafe&&raw?.embeddingCondition!=="LICENSE_REQUIRED"&&raw?.technicalStatus!=="DO_NOT_STAGE_PLAYER";
     return{
       id:String(raw?.id||""),
       provider:String(raw?.provider||""),
@@ -35,6 +38,7 @@ export function providerFamilyResearchStatus(rows=[],{now=new Date(),maxTermsAge
       playerBrandingRequired:raw?.playerBrandingRequired===true,
       restreamAllowed:raw?.restreamAllowed===true,
       safeUsage,
+      candidateEligible,
       networkFamily:raw?.networkFamily||null,
       permissionConfirmed:false,
       humanPlaybackConfirmed:false,
@@ -55,6 +59,6 @@ export function providerFamilyResearchStatus(rows=[],{now=new Date(),maxTermsAge
     attention:needsTermsReview.map(x=>({id:x.id,provider:x.provider,reason:x.termsEvidenceState==="MISSING"?"TERMS_REVIEW_MISSING":"TERMS_REVIEW_STALE",termsReviewedAt:x.termsReviewedAt})),
     items,
     safety:{catalogMutationAllowed:false,automaticPermissionApprovalAllowed:false,automaticPromotionAllowed:false,restreamAllowed:false,providerBrandingRemovalAllowed:false},
-    note:"Provider-family research only. Current terms evidence can guide review, but it does not confirm a specific camera/player or deployed playback. ERN must use the provider-branded player and never restream/rebroadcast provider video."
+    note:"Provider-family research only. Current terms evidence can guide review, but it does not confirm a specific camera/player or deployed playback. Families may resolve to provider-branded-player research or conservative link-only use; ERN never restreams/rebroadcasts provider video."
   };
 }
