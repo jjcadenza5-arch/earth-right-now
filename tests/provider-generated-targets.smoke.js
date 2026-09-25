@@ -17,3 +17,9 @@ const authorized=providerGeneratedTargetStatus([{id:"imo",providerFamilyId:"imo-
 assert.equal(authorized.state,"PREPARATION_REQUIRED");
 assert.equal(authorized.items[0].state,"EXACT_PROVIDER_TARGET_URL_REQUIRED");
 assert.equal(authorized.items[0].nextAction,"IDENTIFY_EXACT_AUTHORIZED_CURRENT_IMAGE_URL");
+
+const blocked=providerGeneratedTargetStatus([{id:"b",providerFamilyId:"fam",provider:"Provider",sourceId:"src",integrationKind:"PROVIDER_GENERATED_WIDGET",generatorUrl:"https://example.com/generate",extractionMode:"INTERACTIVE_PROVIDER_GENERATOR",manualInteractionRequired:true,blockerReason:"interactive",exactCode:null,exactTargetUrl:null,promotionAllowed:false,catalogMutationAllowed:false,automaticGenerationAllowed:false}]);
+assert.equal(blocked.manualPreparation,1);
+assert.equal(blocked.items[0].manualInteractionRequired,true);
+assert.equal(blocked.items[0].extractionMode,"INTERACTIVE_PROVIDER_GENERATOR");
+assert.equal(blocked.items[0].blockerReason,"interactive");
