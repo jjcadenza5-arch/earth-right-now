@@ -1,3 +1,10 @@
+## 2026-09-25 — Actionable revalidation reporting aligned with triage
+- Corrected the legacy top-level Operations revalidation summary so deliberate curation holds, known visitor-playback rejections and provider-offline collections are no longer presented as immediate “next” work.
+- Operations now reports actionable and deferred revalidation counts separately while retaining the full maintenance debt for auditability.
+- Deferred items carry an explicit disposition: CURATION_HOLD, DEFERRED_PLAYBACK_REPROVE or DEFERRED_PROVIDER_OFFLINE.
+- Current state is now consistent with the richer triage plane: 0 immediate source-revalidation actions and 7 intentionally deferred maintenance items.
+- No source truth, health, permission, playback proof, ranking or public behavior changed.
+
 ## 2026-09-25 — Operations supports playback renewal history
 - Fixed provider observation batching so legitimate repeated source IDs in the historical observation ledger are no longer treated as invalid duplicates.
 - The batch now retains the newest valid observation per source by observedAt while preserving older entries in the source ledger itself.
