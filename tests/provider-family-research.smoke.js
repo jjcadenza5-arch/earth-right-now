@@ -10,3 +10,8 @@ assert.equal(linkOnly.unsafe.length,0);
 
 const aliasReport=providerFamilyResearchStatus([{id:"alias",status:"RESEARCH_ONLY",provider:"Provider C Incorporated",discoveryProviderAliases:["Provider C Short"],familyLabel:"Player",researchUrl:"https://example.com/live",termsUrl:"https://example.com/terms",termsReviewedAt:"2026-09-25T00:00:00Z",usageMode:"PROVIDER_BRANDED_PLAYER_ONLY",playerBrandingRequired:true,restreamAllowed:false}],{now:new Date("2026-09-25T12:00:00Z")});
 assert.deepEqual(aliasReport.items[0].discoveryProviderAliases,["Provider C Short"]);
+
+const widget=providerFamilyResearchStatus([{id:"widget",status:"RESEARCH_ONLY",provider:"Widget Provider",familyLabel:"Generated widget",researchUrl:"https://example.com/widget",termsUrl:"https://example.com/terms",technicalStatus:"GENERATED_WIDGET_CODE_REQUIRED",humanPlaybackStatus:"REQUIRED_ON_DEPLOYED_ERN_FOR_WIDGET_RENDERING",promotion:"BLOCKED_UNTIL_SPECIFIC_WIDGET_REVIEW",nextAction:"STAGE_WIDGET",networkFamily:"example.com",termsReviewedAt:"2026-09-25T00:00:00Z",usageMode:"PROVIDER_GENERATED_WIDGET_ONLY",embeddingCondition:"OFFICIAL_GENERATED_WIDGET_ONLY",playerBrandingRequired:true,restreamAllowed:false}],{now:new Date("2026-09-25T12:00:00Z")});
+assert.equal(widget.items[0].safeUsage,true);
+assert.equal(widget.items[0].candidateEligible,true);
+assert.equal(widget.unsafe.length,0);
