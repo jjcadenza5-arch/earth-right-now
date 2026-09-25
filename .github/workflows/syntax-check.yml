@@ -7,6 +7,7 @@ on:
       - "src/**"
       - "scripts/**"
       - "tests/earth-signal-*.smoke.js"
+      - "data/earth-signal-deployment.json"
       - ".github/workflows/syntax-check.yml"
   workflow_dispatch:
 
