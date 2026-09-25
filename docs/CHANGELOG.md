@@ -1,3 +1,7 @@
+## 2026-09-25 — Renew Metung + Ponte; block Jelly Cam candidate
+- Applied fresh deployed HUMAN_PLAYBACK renewals for Metung and Ponte di Legno from review batch `3ec5f713ce5daf15`.
+- Recorded Monterey Jelly Cam as a candidate-specific deployed playback failure; it remains research-only and blocked.
+
 ## 2026-09-25 — Keep LIVE HERE proof renewable between deploys
 - Added an evergreen renewal set to the operator review queue and deployed review page.
 - Current due renewals remain primary; other verified LIVE HERE windows stay available in a collapsed manual-renewal section even as proof ages.
