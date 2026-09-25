@@ -1,3 +1,14 @@
+## 2026-09-25 — Hida-Takayama promoted; provider diversity reached 2 families; Auckland staged next
+- Applied deployed HUMAN_PLAYBACK confirmation for Hida-Takayama review batch `aad67aa5f7c8fe3a` at 2026-09-25T06:22:47.183Z. The player required explicit visitor Play interaction; ERN records this as valid click-to-play behavior and does not assume autoplay.
+- Promoted existing catalog source `takayama-miyagawa-stream` from EXTERNAL/LINK_ONLY to LIVE_VIDEO + EMBED_ALLOWED + EMBED using the exact stable YouTube channel-live player from the provider's own page.
+- Added source-level HUMAN_PLAYBACK evidence and fresh `playbackVerifiedAt`; rightsBasis now explicitly preserves YouTube branding/controls and forbids restreaming.
+- Hida approval is specific-source only, not blanket approval for future Hida or YouTube targets.
+- Research diagnostics were corrected so approved candidates leave the human-review queue and failed playback candidates remain deferred rather than appearing as active work.
+- Inside-ERN readiness is now 6/5 with 2/2 provider families. Provider concentration is still high (~95% CouchTourist), so the next resilience goal is REDUCE_PROVIDER_CONCENTRATION rather than merely reaching a second family.
+- Provider discovery research resolved EarthCam as link-only unless licensed, NPS as specific-live-player unresolved, SANParks as link-only without written permission, and USGS Kīlauea as promising/public-domain but still lacking a stable specific reusable live-player target.
+- Auckland Viaduct View then surfaced as the next strong provider candidate. Its official Viaduct Harbour page exposes a stable YouTube channel-live target, so ERN staged `youtube-auckland-viaduct-channel-live` for deployed human playback only.
+- Latest deployed operator review batch: `ee73d3e3c6fe0bd7`. Auckland is the sole active second-provider research primary; it remains RESEARCH_ONLY / BLOCKED_UNTIL_REVIEW.
+
 ## 2026-09-25 — Provider research lane rebuilt; Hida-Takayama staged as the next real test
 - Provider research now has an explicit exhausted state. When every staged candidate has failed deployed HUMAN_PLAYBACK, ERN stops recycling those targets and switches to RESEARCH_NEW_PROVIDER_FAMILY.
 - Added a catalog-grounded provider discovery queue using only healthy/current external-live ERN sources. The queue ranks research leverage only; it never infers permission, embedability, playback or visitor value.
