@@ -47,3 +47,11 @@ assert.match(blockerBrief,/2 require interactive provider action/);
 assert.match(blockerBrief,/INTERACTIVE PROVIDER ACTION/);
 assert.match(blockerBrief,/do not repeatedly retry them as machine-retrievable work/);
 assert.match(blockerBrief,/Continue machine-safe discovery/);
+
+const guideCostBrief=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ guideAi:{mode:"DETERMINISTIC_ONLY",ready:false,deterministicFallback:true,deployment:{state:"NOT_DEPLOYED",missing:["costGuard"],costDecisionRequired:true,cost:{monthlyCostCeilingUsd:null}}}
+});
+assert.match(guideCostBrief,/Model spending remains disabled/);
+assert.match(guideCostBrief,/explicit monthly ceiling/);
