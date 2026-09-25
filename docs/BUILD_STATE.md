@@ -1,3 +1,11 @@
+## 2026-09-25 — Guide AI model execution is now bounded and cancellable
+- Added a provider-neutral execution wrapper around future model calls with a default 12-second timeout, clamped to a 3–20 second safety range.
+- Every model generation receives an `AbortSignal`; timeout returns the Guide to deterministic fallback, releases any reserved cost budget and clears the idempotency slot.
+- Future production activation now requires `modelCancellation=true` evidence in addition to replay protection, trusted context, rate limits, observability, privacy and hard cost controls.
+- The public non-secret deployment manifest keeps `modelCancellation=false`; no provider/model backend is active.
+- Focused Guide CI is green, including timeout, abort-signal, model-error and deployment-gate checks.
+- Public ERN Guide behavior remains unchanged and deterministic.
+
 ## 2026-09-25 — Guide AI replay protection prevents duplicate spend
 - Generative Guide API contract advanced to `2026-09-25.v2` and now requires an opaque per-request `requestId` in addition to the pseudonymous session subject.
 - Added a provider-neutral idempotency store contract with a 15-minute replay window. It stores only the finished public Guide response for replay; raw prompts and raw model responses are not retained for deduplication.
