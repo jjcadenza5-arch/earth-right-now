@@ -1,3 +1,8 @@
+## 2026-09-25 — Keep LIVE HERE proof renewable between deploys
+- Added an evergreen renewal set to the operator review queue and deployed review page.
+- Current due renewals remain primary; other verified LIVE HERE windows stay available in a collapsed manual-renewal section even as proof ages.
+- Latest Pages/Operations/syntax runs are green.
+
 ## 2026-09-25 — Earth Signal deployment handoff and Guide aggregation
 - Added a validated, non-secret deployment evidence manifest and made both status reporting and CI/Operations depend on it.
 - Contribution status now requires deployment evidence as well as capability checks.
