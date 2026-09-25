@@ -96,5 +96,12 @@
     "observedAt": "2026-09-25T06:22:47.183Z",
     "reason": "Deployed ERN operator review confirmed the official Hida-Takayama YouTube channel-live player works after explicit visitor Play interaction; review batch aad67aa5f7c8fe3a.",
     "httpStatus": 200
+  },
+  {
+    "id": "auckland-viaduct-harbour",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-25T06:32:26.769Z",
+    "reason": "Deployed ERN operator review confirmed the official Auckland Viaduct YouTube channel-live player works after explicit visitor Play interaction; review batch ee73d3e3c6fe0bd7.",
+    "httpStatus": 200
   }
 ]
