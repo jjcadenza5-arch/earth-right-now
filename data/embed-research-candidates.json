@@ -108,7 +108,7 @@
   },
   {
     "id": "youtube-auckland-viaduct-channel-live",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "Auckland Viaduct View",
     "platform": "YouTube",
     "sourceUrl": "https://www.viaduct.co.nz/",
@@ -116,10 +116,16 @@
     "ownerEvidence": "Official Viaduct Harbour destination page exposes 'Auckland Viaduct View — live' through this YouTube channel-live embed target.",
     "currentEvidence": "The current official Viaduct Harbour page labels the view as live and links the live view to a stable YouTube channel-live player.",
     "discoveredAt": "2026-09-25T06:42:00Z",
-    "permissionReview": "PROVIDER_PAGE_USES_STANDARD_YOUTUBE_CHANNEL_LIVE_EMBED_DEPLOYED_TEST_REQUIRED",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_UNTIL_REVIEW",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "currentEvidenceReviewedAt": "2026-09-25T06:42:00Z",
-    "platformEvidence": "The provider's own current page uses a stable standard YouTube channel-live embed. ERN may test that branded player but still requires deployed human playback before promotion."
+    "platformEvidence": "The provider's own current page uses a stable standard YouTube channel-live embed. ERN may test that branded player but still requires deployed human playback before promotion.",
+    "lastHumanReviewAt": "2026-09-25T06:32:26.769Z",
+    "lastHumanReviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
+    "reviewedSourceUrl": "https://www.viaduct.co.nz/",
+    "reviewedEmbedUrl": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ",
+    "reviewBatch": "ee73d3e3c6fe0bd7",
+    "reviewNote": "Deployed-origin human review confirmed the exact Auckland Viaduct YouTube channel-live player works after explicit visitor Play interaction. Preserve click-to-play; do not assume autoplay."
   }
 ]
