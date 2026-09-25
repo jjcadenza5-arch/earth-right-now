@@ -13,3 +13,7 @@ Validation:
 The rights checkbox is a submitter assertion, not ERN verification. Review must independently determine truth type, health, permission, playback mode, attribution, source provenance, and currentness before a record can enter the promoted catalog.
 
 Future server-side intake must repeat URL validation and must protect any fetcher from SSRF/private-network destinations. Client validation is usability/safety defense, not a server security boundary.
+
+## Retention
+
+If server-side submission transport is activated later, unapproved camera/place submission records have a maximum review retention of 30 days and must then be deleted. Approved submissions may contribute verified source/place metadata to the normal ERN catalog; approval does not preserve unnecessary contact or intake data. Transport remains disabled until a real HTTPS review endpoint exists.
