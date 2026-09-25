@@ -65,7 +65,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   }
   if(providerGeneratedTargets?.items?.length){
     lines.push("## Provider-generated target staging");
-    lines.push(`- State: ${providerGeneratedTargets.state||"UNKNOWN"}; ${providerGeneratedTargets.preparation||0} exact target(s) still need provider code/URL; ${providerGeneratedTargets.reviewReady||0} ready for deployed rendering review.`);
+    lines.push(`- State: ${providerGeneratedTargets.state||"UNKNOWN"}; ${providerGeneratedTargets.preparation||0} exact target(s) still need official provider code or authorized target URL; ${providerGeneratedTargets.reviewReady||0} ready for deployed rendering review.`);
     for(const item of providerGeneratedTargets.items.slice(0,5))lines.push(`- ${item.provider||item.id} / ${item.sourceId||item.id} — ${item.integrationKind||"INTEGRATION"}; ${item.state||"UNKNOWN"}; next: ${item.nextAction||"manual review"}.`);
     lines.push("- Exact target staging is fail-closed: no family permission, guessed URL or technical fetch becomes catalog permission/playback proof automatically.","");
   }
