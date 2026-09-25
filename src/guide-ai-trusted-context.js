@@ -20,6 +20,7 @@ export function guideAiTrustedContext(selection={},catalog=[]){
   }));
   return{
     placeId:selection.placeId||null,
+    action:selection.action||null,
     sourceIds:sources.map(x=>x.id),
     sources,
     serverRehydrated:true,
@@ -36,5 +37,5 @@ export function validateGuideAiModelResult(result={},trustedContext={}){
   const sourceIds=Array.isArray(result.sourceIds)?[...new Set(result.sourceIds.map(String))]:[];
   const unknown=sourceIds.filter(id=>!allowed.has(id));
   if(unknown.length)return{ok:false,reason:"UNTRUSTED_SOURCE_REFERENCE",sourceIds:unknown};
-  return{ok:true,result:{answer,sourceIds,placeId:result.placeId||trustedContext.placeId||null,action:result.action||null}};
+  return{ok:true,result:{answer,sourceIds,placeId:trustedContext.placeId||null,action:trustedContext.action||null}};
 }
