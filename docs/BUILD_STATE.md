@@ -1,3 +1,8 @@
+## 2026-09-25 — Operator review batch preflight correction
+- Corrected the review-page preflight to validate the generated REVIEW_BATCH constant and runtime-scoped localStorage key composition separately.
+- The prior check incorrectly expected the final concatenated key to exist literally in static HTML even though the page intentionally builds it at runtime.
+- Review-batch isolation behavior is unchanged; this fixes only the deployment guard.
+
 ## 2026-09-25 — Operations held/expired alignment
 - Aligned the top-level catalog health summary with the verification horizon's existing hold semantics.
 - Sources on an explicit featuredHold are now counted as held rather than expired when they are outside the normal verification window.

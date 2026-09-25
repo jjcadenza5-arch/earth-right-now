@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-25 — Review batch preflight fix
+- Fixed a false Pages failure in the operator-review batch-isolation preflight.
+
 ## 2026-09-25 — Operations hold reporting
 - Catalog/Operations summaries now distinguish deliberate held sources from genuinely expired verification.
 
