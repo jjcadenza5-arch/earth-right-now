@@ -23,6 +23,7 @@ const requiredJson=[
  "commercial-verification-horizon.json",
  "commercial-onboarding-plan.json",
  "commercial-research.json",
+ "commercial-research-depth.json",
  "affiliate-platform-research.json",
  "affiliate-application-readiness.json",
  "submission-transport-readiness.json",
@@ -172,6 +173,19 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(onboarding?.safety?.revenueForecast!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_REVENUE_FORECAST_BOUNDARY_VIOLATION"});
     if(onboarding?.safety?.paidPriorityAllowed!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_PAID_PRIORITY_BOUNDARY_VIOLATION"});
     if(onboarding?.safety?.inventOffersAllowed!==false)issues.push({file:"commercial-onboarding-plan.json",code:"ONBOARDING_INVENTION_BOUNDARY_VIOLATION"});
+  }
+
+  const commercialResearchDepth=files["commercial-research-depth.json"];
+  if(commercialResearchDepth){
+    if(commercialResearchDepth?.safety?.publicActivationAllowed!==false)issues.push({file:"commercial-research-depth.json",code:"COMMERCIAL_DEPTH_PUBLIC_ACTIVATION_VIOLATION"});
+    if(commercialResearchDepth?.safety?.automaticAffiliateActivationAllowed!==false)issues.push({file:"commercial-research-depth.json",code:"COMMERCIAL_DEPTH_AFFILIATE_BOUNDARY_VIOLATION"});
+    if(commercialResearchDepth?.safety?.automaticContactAllowed!==false)issues.push({file:"commercial-research-depth.json",code:"COMMERCIAL_DEPTH_CONTACT_BOUNDARY_VIOLATION"});
+    if(commercialResearchDepth?.safety?.paidRankingAllowed!==false)issues.push({file:"commercial-research-depth.json",code:"COMMERCIAL_DEPTH_RANKING_BOUNDARY_VIOLATION"});
+    if(commercialResearchDepth?.safety?.demandForecast!==false)issues.push({file:"commercial-research-depth.json",code:"COMMERCIAL_DEPTH_DEMAND_FORECAST_VIOLATION"});
+    if(commercialResearchDepth?.safety?.revenueForecast!==false)issues.push({file:"commercial-research-depth.json",code:"COMMERCIAL_DEPTH_REVENUE_FORECAST_VIOLATION"});
+    for(const item of commercialResearchDepth?.items||[]){
+      if(item?.publicActivationAllowed!==false||item?.affiliateRelationshipImplied!==false||item?.paidRankingAllowed!==false)issues.push({file:"commercial-research-depth.json",code:"COMMERCIAL_DEPTH_ITEM_BOUNDARY_VIOLATION",placeId:item?.placeId||null});
+    }
   }
 
   const commercialResearch=files["commercial-research.json"];
