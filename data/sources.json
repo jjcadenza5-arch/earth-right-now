@@ -853,7 +853,9 @@
     "mapBehavior": "MULTI_SITE_UNPINNED",
     "coordinateBasis": "MULTI_SITE_COLLECTION",
     "coordinateNote": "VISIT FLORIDA's Florida Now surface aggregates live webcam feeds from many cities and destinations across the state, so ERN intentionally does not assign one static pin.",
-    "coordinateSourceUrl": "https://www.visitflorida.com/"
+    "coordinateSourceUrl": "https://www.visitflorida.com/",
+    "travelResearchEligible": false,
+    "travelResearchExclusionReason": "Statewide multi-destination collection rather than one concrete visitor destination; do not force a single travel option onto the aggregate source."
   },
   {
     "id": "lajes-pico-harbour",
