@@ -32,6 +32,13 @@ export function createInMemoryGuideAiCostGuard({monthlyCeilingUsd,maxRequestRese
     async release(){
       const s=state();reserved.set(s.month,Math.max(0,s.held-reservation));return{released:true,...state()};
     },
+    async forfeit(){
+      const s=state(),forfeitedUsd=Math.min(reservation,s.held);
+      if(forfeitedUsd<=0)return{forfeited:false,forfeitedUsd:0,...s};
+      reserved.set(s.month,Math.max(0,s.held-forfeitedUsd));
+      spent.set(s.month,(spent.get(s.month)||0)+forfeitedUsd);
+      return{forfeited:true,forfeitedUsd,...state()};
+    },
     snapshot(){return state()}
   };
 }
