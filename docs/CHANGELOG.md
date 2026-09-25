@@ -1,3 +1,9 @@
+## 2026-09-25 — Auckland promoted + four-stream review batches
+- Promoted Auckland Viaduct after deployed click-to-play HUMAN_PLAYBACK confirmation.
+- Expanded human provider review to up to four primary candidates per session without weakening evidence gates.
+- Staged Verbier plus three explicitly embeddable Webcam La Palma live cams; required La Palma attribution is preserved in the review UI.
+- Current review batch: `87f2fc998e39534d`; Operations and syntax checks are green.
+
 ## 2026-09-25 — Promote Hida-Takayama and stage Auckland Viaduct
 - Promoted Takayama to LIVE_VIDEO + EMBED_ALLOWED after deployed human playback confirmation; click-to-play is preserved and approval is source-specific.
 - Inside-ERN readiness is now 6/5 across 2/2 provider families; next resilience goal is reducing CouchTourist concentration.
