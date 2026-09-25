@@ -273,5 +273,34 @@
     "researchSources": [
       "https://webcam-lapalma.de/webcam-einbetten/"
     ]
+  },
+  {
+    "id": "kitzski-partner-webcam-widget",
+    "status": "RESEARCH_ONLY",
+    "provider": "Bergbahn AG Kitzbühel / KitzSki",
+    "familyLabel": "Official KitzSki partner webcam widget",
+    "researchUrl": "https://partner.kitzski.at/de/widget-webcams.html",
+    "termsUrl": "https://www.kitzski.at/en/legal-notice.html",
+    "verifiedAt": "2026-09-25T09:27:00Z",
+    "permissionEvidence": "KitzSki's current partner webcam page explicitly says its prepared webcam widget may be freely placed on a third-party website and provides a generator for copyable embed code. KitzSki's general legal notice separately prohibits placing individual site pages inside third-party frames. ERN therefore treats only the provider-generated partner widget as a potentially permitted integration path; ordinary KitzSki pages, Feratel pages and Panomax pages must not be framed by inference.",
+    "permissionStatus": "EXPLICIT_PARTNER_WIDGET_ALLOWED_ORDINARY_PAGE_FRAMING_PROHIBITED",
+    "technicalStatus": "GENERATED_WIDGET_CODE_REQUIRED",
+    "humanPlaybackStatus": "BLOCKED_UNTIL_EXACT_WIDGET_STAGED_AND_DEPLOYED_REVIEWED",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_WIDGET_REVIEW",
+    "nextAction": "GENERATE_OFFICIAL_WEBCAM_WIDGET_CODE_THEN_STAGE_EXACT_TARGET_FOR_DEPLOYED_HUMAN_PLAYBACK",
+    "networkFamily": "partner.kitzski.at",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T09:27:00Z",
+    "communityGuidelinesUrl": "https://partner.kitzski.at/de/widget-webcams.html",
+    "usageMode": "PROVIDER_GENERATED_WIDGET_ONLY",
+    "embeddingCondition": "OFFICIAL_WIDGET_CODE_ONLY_NO_PAGE_FRAMING",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://partner.kitzski.at/de/widget-webcams.html",
+      "https://www.kitzski.at/en/legal-notice.html",
+      "https://www.kitzski.at/de/partnerinformation.html"
+    ]
   }
 ]
