@@ -20,5 +20,7 @@
   "rawResponseLoggingDisabled": true,
   "visitorProfilingDisabled": true,
   "idempotency": false,
-  "modelCancellation": false
+  "modelCancellation": false,
+  "serverDerivedRateSubject": false,
+  "rawNetworkIdentifiersStored": false
 }
