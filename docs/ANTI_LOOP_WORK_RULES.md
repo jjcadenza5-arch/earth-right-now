@@ -28,6 +28,7 @@ ERN work must advance from state, not from repetition. A completed, blocked, fai
 - Extra renewal debt remains backlog instead of forcing unnecessary review.
 
 ### Commercial breadth
+- **Pilot breadth stop:** once private research reaches 30 distinct places, new-destination research goes on hold by default until an explicit commercial decision or material catalog change.
 - Places with existing private real-option research are excluded from new-destination research.
 - Sources marked `travelResearchEligible:false` are excluded entirely from travel onboarding.
 - Example: ISS / Low Earth Orbit is an Earth-view experience, not a normal "before you go" travel destination.
