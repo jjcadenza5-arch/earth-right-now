@@ -161,5 +161,34 @@
       "https://takayama-live.com/streaming",
       "https://developers.google.com/youtube/terms/required-minimum-functionality"
     ]
+  },
+  {
+    "id": "usgs-kilauea-live",
+    "status": "RESEARCH_ONLY",
+    "provider": "U.S. Geological Survey",
+    "familyLabel": "USGS Kīlauea official livestream network",
+    "researchUrl": "https://www.usgs.gov/volcanoes/kilauea/summit-webcams",
+    "termsUrl": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+    "verifiedAt": "2026-09-25T06:36:00Z",
+    "permissionEvidence": "USGS Kīlauea webcam and multimedia pages identify the livestreams as official USGS content; USGS webcam media is commonly marked Public Domain and current USGS volcano notices point to official USGS YouTube livestreams. However, ERN has not yet resolved a stable specific reusable YouTube player target from the official short-link/live pages, so no embed is staged.",
+    "permissionStatus": "PUBLIC_DOMAIN_SOURCE_PROMISING_SPECIFIC_PLAYER_TARGET_UNRESOLVED",
+    "technicalStatus": "SPECIFIC_STABLE_YOUTUBE_TARGET_REQUIRED",
+    "humanPlaybackStatus": "BLOCKED_UNTIL_SPECIFIC_PLAYER_STAGED",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "nextAction": "RESOLVE_STABLE_OFFICIAL_USGS_LIVE_PLAYER_TARGET",
+    "networkFamily": "youtube.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-25T06:36:00Z",
+    "communityGuidelinesUrl": "https://www.usgs.gov/volcanoes/kilauea/summit-webcams",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "SPECIFIC_PLAYER_UNRESOLVED",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.usgs.gov/volcanoes/kilauea",
+      "https://www.usgs.gov/volcanoes/kilauea/summit-webcams",
+      "https://www.usgs.gov/programs/VHP/volcano-updates"
+    ]
   }
 ]
