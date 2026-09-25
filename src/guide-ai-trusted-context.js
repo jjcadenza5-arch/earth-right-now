@@ -1,12 +1,8 @@
 function byId(catalog=[]){return new Map((catalog||[]).filter(x=>x?.id).map(x=>[String(x.id),x]))}
 
-export function guideAiTrustedContext(request={},catalog=[]){
+export function guideAiTrustedContext(selection={},catalog=[]){
   const map=byId(catalog);
-  const requestedIds=[...(request.sourceIds||[])];
-  if(request.placeId){
-    for(const source of catalog||[])if((source.placeId||source.id)===request.placeId)requestedIds.push(source.id);
-  }
-  const ids=[...new Set(requestedIds)].slice(0,12);
+  const ids=[...new Set(Array.isArray(selection.sourceIds)?selection.sourceIds.map(String):[])].slice(0,12);
   const sources=ids.map(id=>map.get(id)).filter(Boolean).map(source=>({
     id:source.id,
     placeId:source.placeId||source.id,
@@ -23,11 +19,12 @@ export function guideAiTrustedContext(request={},catalog=[]){
     story:source.story||null
   }));
   return{
-    placeId:request.placeId||null,
+    placeId:selection.placeId||null,
     sourceIds:sources.map(x=>x.id),
     sources,
     serverRehydrated:true,
-    truth:"Only server-rehydrated ERN source fields may ground generated place/source claims."
+    selectionOrigin:"DETERMINISTIC_ERN_RESOLVER",
+    truth:"Only server-resolved and server-rehydrated ERN source fields may ground generated place/source claims."
   };
 }
 
