@@ -124,7 +124,11 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     for(const item of (commercialVerificationHorizon.urgent||[]).slice(0,5))lines.push(`- ${item.kind}: ${item.name||item.id} — ${item.state}${Number.isFinite(item.remainingDays)?` (${item.remainingDays}d)`:""}`);
     lines.push("- Verification warnings are maintenance only; nothing is renewed, activated or ranked automatically.","");
   }
-  if(commercialOnboarding?.items?.length){
+  if(commercialOnboarding?.state==="PILOT_COVERAGE_REACHED"){
+    lines.push("## Commercial onboarding research");
+    lines.push(`- Pilot breadth target reached: ${commercialOnboarding.researchedPlaceCount||0}/${commercialOnboarding.targetResearchPlaces||0} researched places. New-destination research is on hold.`);
+    lines.push("- Resume breadth only after an explicit commercial decision or a material catalog change; do not keep adding destinations for its own sake.","");
+  } else if(commercialOnboarding?.items?.length){
     lines.push("## Commercial onboarding research");
     for(const item of commercialOnboarding.items.slice(0,5))lines.push(`- ${item.title} · ${item.country||"Unknown"} — ${item.recommendedAction} (content-readiness ${item.score})`);
     lines.push("- This is an editorial research queue only; it is not visitor-demand, conversion, or revenue ranking.","");
