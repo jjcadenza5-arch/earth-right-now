@@ -11,7 +11,7 @@ export function commercialResearchDepthQueue({sources=[],researchStatus=null}={}
   const groups=new Map();
   for(const source of sources||[]){
     const key=placeKey(source);
-    if(!key||source.health!=="HEALTHY"||source.featuredHold===true||(Number(source.quality)||0)<80)continue;
+    if(!key||source.health!=="HEALTHY"||source.featuredHold===true||source.commercialDepthResearchHold===true||(Number(source.quality)||0)<80)continue;
     const group=groups.get(key)||[];group.push(source);groups.set(key,group);
   }
   const rows=[];
@@ -52,6 +52,6 @@ export function commercialResearchDepthQueue({sources=[],researchStatus=null}={}
     targetIntentDiversity,
     items:selected,
     safety:{publicActivationAllowed:false,automaticAffiliateActivationAllowed:false,automaticContactAllowed:false,paidRankingAllowed:false,demandForecast:false,revenueForecast:false},
-    note:"Private research-depth queue only. By default it stops once a place has two distinct researched travel intents, preventing endless category-filling busywork. Deeper research should require an explicit later decision. It does not invent options, contact businesses, activate offers, imply affiliate relationships, or affect public ranking."
+    note:"Private research-depth queue only. By default it stops once a place has two distinct researched travel intents, and sources explicitly placed on commercialDepthResearchHold are excluded until materially new evidence appears. This prevents endless category-filling or forced duplicate research. Deeper research should require an explicit later decision. It does not invent options, contact businesses, activate offers, imply affiliate relationships, or affect public ranking."
   };
 }
