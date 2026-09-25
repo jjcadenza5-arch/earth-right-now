@@ -1,3 +1,13 @@
+## 2026-09-25 — Earth Signal visitor abuse controls corrected before deployment
+- Found and removed a pre-production design flaw where service-layer submission limits were derived from the shared public signal store; that would have allowed unrelated visitors to consume one another's quota.
+- Added a dedicated subject-scoped rate-limit contract. Submission limits are now per opaque pseudonymous visitor subject, with a separate tighter per-place cap.
+- Raw IP addresses, email addresses and arbitrary identifiers are rejected as rate subjects; production must derive an opaque `anon_...` subject and may not store raw network identifiers in the rate-limit layer.
+- The deployment evidence gate now requires `pseudonymousRateSubjects=true` and `rawNetworkIdentifiersStored=false`, increasing the production evidence gate from 10 to 11 requirements.
+- Routed the HTTP boundary through the gated service layer so enabled requests cannot bypass storage or rate-limit contracts.
+- Added separate report-abuse controls: reports use their own quota, a visitor may report the same signal only once within the limiter window, and rate-limited reports return HTTP 429.
+- Privacy-sensitive reporting still hides a signal immediately pending review after an accepted report.
+- Focused Earth Signal CI is green after the correction; public Earth Signals remain READ_ONLY / NOT_DEPLOYED.
+
 ## 2026-09-25 — Earth Signals promoted into the daily Operations truth plane
 - Daily Operations now emits and retains `earth-signals-status.json` as a first-class artifact beside source/playback/commercial diagnostics.
 - Packet-integrity validation now checks Earth Signal mode consistency, blocks transport-without-deployment-evidence and blocks unpublished privacy wording from satisfying activation.
