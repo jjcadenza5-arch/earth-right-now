@@ -6,7 +6,7 @@ function scorePlace(group){
   const freshness=Math.max(...group.map(x=>Number(x.freshness)||0),0);
   return Number((quality+moment*.2+freshness*.1).toFixed(2));
 }
-export function commercialResearchDepthQueue({sources=[],researchStatus=null}={}, {limit=12,maxPerCountry=2}={}){
+export function commercialResearchDepthQueue({sources=[],researchStatus=null}={}, {limit=12,maxPerCountry=2,targetIntentDiversity=2}={}){
   const coverage=researchStatus?.byPlace||{};
   const groups=new Map();
   for(const source of sources||[]){
@@ -18,12 +18,14 @@ export function commercialResearchDepthQueue({sources=[],researchStatus=null}={}
   for(const [placeId,cov] of Object.entries(coverage)){
     const group=groups.get(placeId);if(!group?.length)continue;
     const best=[...group].sort((a,b)=>(Number(b.quality)||0)-(Number(a.quality)||0)||String(a.id).localeCompare(String(b.id)))[0];
+    const covered=INTENT_PRIORITY.filter(k=>(cov?.intents?.[k]||0)>0);
+    if(covered.length>=targetIntentDiversity)continue;
     const missing=INTENT_PRIORITY.filter(k=>(cov?.intents?.[k]||0)===0);
     if(!missing.length)continue;
     rows.push({
       placeId,title:best.title||placeId,country:best.country||null,region:best.region||null,
       researchCount:Number(cov?.total)||0,
-      coveredIntents:INTENT_PRIORITY.filter(k=>(cov?.intents?.[k]||0)>0),
+      coveredIntents:covered,
       missingIntents:missing,
       recommendedIntent:missing[0],
       score:scorePlace(group),
@@ -47,8 +49,9 @@ export function commercialResearchDepthQueue({sources=[],researchStatus=null}={}
     depthCandidates:rows.length,
     selected:selected.length,
     maxPerCountry,
+    targetIntentDiversity,
     items:selected,
     safety:{publicActivationAllowed:false,automaticAffiliateActivationAllowed:false,automaticContactAllowed:false,paidRankingAllowed:false,demandForecast:false,revenueForecast:false},
-    note:"Private research-depth queue only. It suggests missing intent categories at already researched places; it does not invent options, contact businesses, activate offers, imply affiliate relationships, or affect public ranking."
+    note:"Private research-depth queue only. By default it stops once a place has two distinct researched travel intents, preventing endless category-filling busywork. Deeper research should require an explicit later decision. It does not invent options, contact businesses, activate offers, imply affiliate relationships, or affect public ranking."
   };
 }
