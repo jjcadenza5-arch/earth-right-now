@@ -23,18 +23,6 @@ const badPlace=earthSignalCreateTransaction(
 );
 assert.deepEqual({ok:badPlace.ok,stage:badPlace.stage,reason:badPlace.reason},{ok:false,stage:"VALIDATION",reason:"UNKNOWN_PLACE"});
 
-const history=Array.from({length:6},(_,i)=>({
-  id:"old-"+i,
-  type:"BUSY",
-  placeId:"flam-aurlandsfjord",
-  createdAt:new Date(now.getTime()-i*60000).toISOString()
-}));
-const limited=earthSignalCreateTransaction(
-  {type:"BUSY",placeId:"chiang-mai"},
-  {knownPlaceIds:known,history,id:"sig-3",now}
-);
-assert.equal(limited.stage,"RATE_LIMIT");
-assert.equal(limited.reason,"RATE_LIMIT");
 
 const active=[
   created.record,
@@ -52,4 +40,4 @@ assert.equal(report.immediateVisibility,"HIDE_PENDING_REVIEW");
 const missing=earthSignalReportTransaction({signalId:"none",reason:"SPAM"},active);
 assert.equal(missing.reason,"SIGNAL_NOT_FOUND");
 
-console.log("Earth Signal server pipeline composes validation, rate limits, moderation, retention and reporting fail-closed");
+console.log("Earth Signal server pipeline composes validation, moderation, retention and reporting without shared visitor-rate state");
