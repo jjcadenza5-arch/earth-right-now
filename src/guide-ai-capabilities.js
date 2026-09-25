@@ -4,6 +4,7 @@ export const GUIDE_AI_CAPABILITIES=Object.freeze({
   trustedContext:false,
   costGuard:false,
   rateLimits:false,
+  idempotency:false,
   observability:false,
   safetyBoundary:false,
   privacyNotice:false,
