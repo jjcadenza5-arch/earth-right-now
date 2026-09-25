@@ -10,8 +10,11 @@ function scoreGroup(group){
   return Number((quality+moment*.25+freshness*.15+Math.min(3,healthyCurrent)*4).toFixed(2));
 }
 
-export function commercialOnboardingPlan({sources=[],offers=[]}={}, {now=Date.now(),limit=12,maxPerCountry=2}={}){
+export function commercialOnboardingPlan({sources=[],offers=[],researchCandidates=[]}={}, {now=Date.now(),limit=12,maxPerCountry=2}={}){
   const currentOfferPlaces=new Set((offers||[]).filter(o=>currentTravelOffer(o,{now})).map(o=>String(o.placeId||"")));
+  const researchedPlaces=new Set((researchCandidates||[])
+    .filter(r=>r?.researchStatus==="RESEARCH_ONLY"&&r?.publicActivationAllowed===false&&String(r?.placeId||"").trim())
+    .map(r=>String(r.placeId).trim()));
   const groups=new Map();
   for(const source of sources||[]){
     const key=placeKey(source);
@@ -34,9 +37,15 @@ export function commercialOnboardingPlan({sources=[],offers=[]}={}, {now=Date.no
       bestQuality:Math.max(...group.map(s=>Number(s.quality)||0),0),
       bestMoment:Math.max(...group.map(s=>Number(s.moment)||0),0),
       categories,
-      alreadyCovered:currentOfferPlaces.has(placeId),
-      recommendedAction:currentOfferPlaces.has(placeId)?"MAINTAIN_VERIFIED_OFFER":"RESEARCH_REAL_TRAVEL_OPTIONS",
-      rationale:"Strong current ERN content with no current verified travel offer. Editorial onboarding priority only."
+      publicOfferCovered:currentOfferPlaces.has(placeId),
+      researchCovered:researchedPlaces.has(placeId),
+      alreadyCovered:currentOfferPlaces.has(placeId)||researchedPlaces.has(placeId),
+      recommendedAction:currentOfferPlaces.has(placeId)?"MAINTAIN_VERIFIED_OFFER":researchedPlaces.has(placeId)?"REVIEW_RESEARCH_TERMS":"RESEARCH_REAL_TRAVEL_OPTIONS",
+      rationale:currentOfferPlaces.has(placeId)
+        ?"Current verified public travel offer already exists."
+        :researchedPlaces.has(placeId)
+          ?"Private real-option research already exists; review partner/affiliate terms before any public activation."
+          :"Strong current ERN content with no current verified travel offer or staged real-option research. Editorial onboarding priority only."
     };
   }).filter(x=>!x.alreadyCovered).sort((a,b)=>b.score-a.score||b.bestQuality-a.bestQuality||a.placeId.localeCompare(b.placeId));
 
@@ -53,6 +62,8 @@ export function commercialOnboardingPlan({sources=[],offers=[]}={}, {now=Date.no
     candidatePlaces:ranked.length,
     selected:selected.length,
     maxPerCountry,
+    currentOfferPlaceCount:currentOfferPlaces.size,
+    researchedPlaceCount:researchedPlaces.size,
     items:selected,
     safety:{
       publicRankingAffected:false,
@@ -61,6 +72,6 @@ export function commercialOnboardingPlan({sources=[],offers=[]}={}, {now=Date.no
       paidPriorityAllowed:false,
       inventOffersAllowed:false
     },
-    note:"Private editorial onboarding plan only. Scores measure ERN content readiness, not visitor demand, conversion probability, revenue, or sponsor value."
+    note:"Private editorial onboarding plan only. Places with a current public offer or existing private real-option research are excluded from new-research recommendations. Research coverage never implies an affiliate relationship, sponsorship, public activation, visitor demand, conversion probability, revenue, or ranking value."
   };
 }
