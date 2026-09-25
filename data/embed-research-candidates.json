@@ -52,12 +52,12 @@
     "promotion": "BLOCKED_PLAYBACK_FAILED",
     "currentEvidenceReviewedAt": "2026-09-24T15:54:00Z",
     "platformEvidence": "Monterey Bay Aquarium's current official site still exposes its live-cam program, and official YouTube video descriptions identify the selected cam as a scheduled live camera. YouTube's current embedded-player documentation supports standard branded iframe embeds subject to platform requirements; deployed ERN playback remains separately unconfirmed.",
-    "lastHumanReviewAt": "2026-09-25T05:54:40.750Z",
+    "lastHumanReviewAt": "2026-09-25T06:03:48.672Z",
     "lastHumanReviewOutcome": "PLAYBACK_FAILED",
     "reviewedSourceUrl": "https://www.youtube.com/watch?v=m1XcdxjVGos",
     "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/m1XcdxjVGos",
     "reviewBatch": "3ec5f713ce5daf15",
-    "reviewNote": "Deployed-origin operator review on earthrightnow.app failed to produce usable playback. Keep research-only; do not infer source removal or platform-wide YouTube embed failure from this single candidate."
+    "reviewNote": "Deployed-origin operator review on earthrightnow.app again failed to produce usable Jelly Cam playback. Keep research-only and deferred; repeated candidate failure still does not imply platform-wide YouTube embed failure."
   },
   {
     "id": "explore-brooks-falls",
