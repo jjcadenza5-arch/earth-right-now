@@ -46,9 +46,10 @@ assert.equal(cleanup.deleted,1);
 const otherStorage=createInMemoryEarthSignalStorage();
 const sharedLimiter=createInMemoryEarthSignalRateLimiter();
 for(let i=0;i<6;i++){
+  const placeId=i<3?"chiang-mai":"flam-aurlandsfjord";
   const made=await createEarthSignalService(
-    {type:"BUSY",placeId:"chiang-mai"},
-    {capabilities:allCapabilities,storage:otherStorage,rateLimiter:sharedLimiter,rateSubject:"browser-a",knownPlaceIds:["chiang-mai"],id:"a-"+i,now:new Date(now.getTime()+i*1000)}
+    {type:"BUSY",placeId},
+    {capabilities:allCapabilities,storage:otherStorage,rateLimiter:sharedLimiter,rateSubject:"browser-a",knownPlaceIds:["chiang-mai","flam-aurlandsfjord"],id:"a-"+i,now:new Date(now.getTime()+i*1000)}
   );
   assert.equal(made.ok,true);
 }
