@@ -13,6 +13,15 @@ export function operatorReviewQueue(sources=[],observations=[],{now=new Date(),l
     })
     .filter(Boolean)
     .sort((a,b)=>(a.remainingHours??Infinity)-(b.remainingHours??Infinity)||(Number(b.quality)||0)-(Number(a.quality)||0)||String(a.id).localeCompare(String(b.id)));
+  const renewable=(horizon.items||[])
+    .filter(x=>["CURRENT","DUE_12H","DUE_6H"].includes(x.state)&&!x.held)
+    .map(x=>{
+      const s=sourceById.get(String(x.id));
+      if(!s||s.playback!=="EMBED"||s.permission!=="EMBED_ALLOWED"||s.health!=="HEALTHY")return null;
+      return {...s,reviewMode:"RENEW",action:"RENEW_VISITOR_PLAYBACK",reason:x.state,remainingHours:x.remainingHours,playbackVerifiedAt:x.playbackVerifiedAt};
+    })
+    .filter(Boolean)
+    .sort((a,b)=>(a.remainingHours??Infinity)-(b.remainingHours??Infinity)||(Number(b.quality)||0)-(Number(a.quality)||0)||String(a.id).localeCompare(String(b.id)));
   const renewalIds=new Set(renewal.map(x=>String(x.id)));
   const recovery=insideERNRecoveryStatus(sources,observations,{now,limit:Math.max(limit,20),targetReady});
   const restoration=(recovery.restorationCandidates||[])
@@ -35,8 +44,9 @@ export function operatorReviewQueue(sources=[],observations=[],{now=new Date(),l
     backlogItems,
     items,
     renewal:renewal.slice(0,limit),
+    renewable:renewable.slice(0,Math.max(limit,targetReady)),
     restoration:restoration.slice(0,limit),
     safety:{catalogMutationAllowed:false,automaticPlaybackVerificationAllowed:false},
-    note:"Operator review queue brings expiring HUMAN_PLAYBACK proof forward first, then recommends only enough restoration confirmations to close the current readyShortfall. Remaining candidates stay backlog. Review remains human and non-mutating."
+    note:"Operator review queue brings expiring HUMAN_PLAYBACK proof forward first, then recommends only enough restoration confirmations to close the current readyShortfall. It also exposes the current verified inside-ERN set as renewable so the review page does not become unusable merely because proof ages after the last deploy. Review remains human and non-mutating."
   };
 }
