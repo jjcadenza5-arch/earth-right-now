@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-25 — Pages review-preflight trigger
+- Pages now retriggers whenever the operator-review generated-page preflight changes.
+
 ## 2026-09-25 — Review batch preflight fix
 - Fixed a false Pages failure in the operator-review batch-isolation preflight.
 

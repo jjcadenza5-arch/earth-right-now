@@ -1,3 +1,8 @@
+## 2026-09-25 — Pages trigger coverage for review preflight
+- Added scripts/operator-review-page-preflight.mjs to the Pages workflow path filter.
+- Changes to the generated-review deployment guard now automatically run the actual Pages validation/deployment instead of only syntax/Operations checks.
+- This closes the trigger gap exposed while correcting the batch-isolation preflight.
+
 ## 2026-09-25 — Operator review batch preflight correction
 - Corrected the review-page preflight to validate the generated REVIEW_BATCH constant and runtime-scoped localStorage key composition separately.
 - The prior check incorrectly expected the final concatenated key to exist literally in static HTML even though the page intentionally builds it at runtime.
