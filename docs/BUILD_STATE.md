@@ -1,3 +1,10 @@
+## 2026-09-25 — Monterey Open Sea candidate failed deployed playback
+- Recorded HUMAN_PLAYBACK_FAILED for Monterey Bay Aquarium Open Sea Cam from deployed review batch `fbeae45f290ade5b` at 2026-09-25T06:07:28.524Z.
+- Open Sea remains RESEARCH_ONLY / BLOCKED_PLAYBACK_FAILED; this is candidate-specific evidence and does not imply a platform-wide YouTube embed failure.
+- Monterey Bay Cam, Jelly Cam and Open Sea Cam have now all failed deployed human playback checks; they are removed from the active research lane until a target/provider change or explicit retest is justified.
+- Brooks Falls remains separately deferred after its prior failed playback review.
+- ERN therefore has no active second-provider promotion candidate at this moment; current 5/5 inside-ERN readiness remains supported by CouchTourist sources with fresh human playback proof.
+
 ## 2026-09-25 — Operator review page now detects stale deployed batches
 - A second operator packet arrived from old review batch `3ec5f713ce5daf15` after the repository had already advanced the second-provider primary to Open Sea. The repeated Metung/Ponte confirmations were still valid human observations and were applied at their newer timestamps; the repeated Jelly Cam failure was retained as confirming evidence only.
 - Root cause was stale browser/CDN delivery of the operator review HTML, not stale repository state. The current deployed research primary was already Open Sea.
