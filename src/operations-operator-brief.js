@@ -63,7 +63,11 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     if(providerFamilyResearch.needsTermsReview)lines.push(`- ${providerFamilyResearch.needsTermsReview} provider-family terms review(s) need refresh.`);
     lines.push("- Research-family entries are not public sources. ERN uses provider-branded players only; re-streaming/rebroadcasting remains prohibited.","");
   }
-  if(researchReviewQueue?.primary?.length){
+  if(researchReviewQueue?.exhausted){
+    lines.push("## Second-provider research state");
+    lines.push(`- ${researchReviewQueue.failedPlayback||0}/${researchReviewQueue.total||0} staged candidate(s) have failed deployed HUMAN_PLAYBACK review; active human-review queue is paused.`);
+    lines.push(`- Next action: ${researchReviewQueue.nextAction||"RESEARCH_NEW_PROVIDER_FAMILY"}. Failed targets must not be recycled without a material target/provider change.`, "");
+  } else if(researchReviewQueue?.primary?.length){
     lines.push("## Second-provider primary test");
     for(const item of researchReviewQueue.primary)lines.push(`- ${item.provider||item.id} / ${item.id} — ${item.technicalReady?"TECHNICALLY READY":item.technicalOutcome||"PREFLIGHT PENDING"}; terms ${item.familyTermsState||"UNTRACKED"}; action ${item.requiredHumanAction}.`);
     if(researchReviewQueue.alternates?.length)lines.push(`- Alternates held: ${researchReviewQueue.alternates.length}. Test them only if the primary candidate fails or remains permission-blocked.`);
@@ -142,6 +146,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   if((playbackEvidenceConsistency?.summary?.issues||0)>0)lines.push("- Resolve playback-evidence ledger/catalog drift before treating new LIVE HERE proof as authoritative.");
   if((snapshot?.insideERN?.readyShortfall||0)>0)lines.push("- Restore strong inside-ERN windows with fresh HUMAN_PLAYBACK evidence.");
   if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.primary?.length)lines.push(`- Test second-provider primary candidate ${researchReviewQueue.primary[0].provider||researchReviewQueue.primary[0].id} first; use alternates only if needed.`);
+  else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.exhausted)lines.push("- Research a genuinely new embeddable provider family or materially changed target; do not recycle failed playback candidates.");
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
   if(providerFamilyResearch?.needsTermsReview)lines.push("- Refresh stale provider terms evidence before permission review progresses.");
   if(providerFamilyResearch?.items?.length&&providerFamilyResearch.items.some(x=>x.technicalStatus==="SPECIFIC_EMBED_URL_REQUIRED"))lines.push("- Identify a current specific player URL for promising provider-family research before deployed playback testing.");
