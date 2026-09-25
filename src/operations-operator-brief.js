@@ -70,7 +70,11 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     if((providerDiscoveryQueue.items||[]).length>1)lines.push(`- Additional research families staged: ${providerDiscoveryQueue.items.length-1}.`);
     lines.push("");
   }
-  if(researchReviewQueue?.exhausted){
+  if(researchReviewQueue?.state==="PROVIDER_PREPARATION_READY"&&researchReviewQueue?.preparation?.length){
+    lines.push("## Provider-generated integration preparation");
+    for(const item of researchReviewQueue.preparation.slice(0,5))lines.push(`- ${item.provider||item.id} / ${item.familyLabel||item.id} — ${item.technicalStatus||"PREPARE EXACT TARGET"}; next: ${item.nextAction||"PREPARE_PROVIDER_GENERATED_TARGET"}.`);
+    lines.push("- Family-level permission evidence is not source-level approval. Prepare the exact provider-generated code/target before deployed rendering review; no automatic promotion is allowed.","");
+  } else if(researchReviewQueue?.exhausted){
     lines.push("## Second-provider research state");
     lines.push(`- ${researchReviewQueue.failedPlayback||0}/${researchReviewQueue.total||0} staged candidate(s) have failed deployed HUMAN_PLAYBACK review; active human-review queue is paused.`);
     lines.push(`- Next action: ${researchReviewQueue.nextAction||"RESEARCH_NEW_PROVIDER_FAMILY"}. Failed targets must not be recycled without a material target/provider change.`, "");
@@ -160,6 +164,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   if((playbackEvidenceConsistency?.summary?.issues||0)>0)lines.push("- Resolve playback-evidence ledger/catalog drift before treating new LIVE HERE proof as authoritative.");
   if((snapshot?.insideERN?.readyShortfall||0)>0)lines.push("- Restore strong inside-ERN windows with fresh HUMAN_PLAYBACK evidence.");
   if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.primary?.length)lines.push(`- Test second-provider primary candidate ${researchReviewQueue.primary[0].provider||researchReviewQueue.primary[0].id} first; use alternates only if needed.`);
+  else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.state==="PROVIDER_PREPARATION_READY"&&researchReviewQueue?.preparation?.length)lines.push(`- Prepare the exact provider-generated target for ${researchReviewQueue.preparation[0].provider||researchReviewQueue.preparation[0].id}; only then request deployed rendering/playback review.`);
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.exhausted&&providerDiscoveryQueue?.primary)lines.push(`- Research ${providerDiscoveryQueue.primary.provider} terms and branded player path next; discovery ranking does not imply permission or embedability.`);
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0)&&researchReviewQueue?.exhausted)lines.push("- Research a genuinely new embeddable provider family or materially changed target; do not recycle failed playback candidates.");
   else if((snapshot?.providers?.families||0)<(snapshot?.providers?.targetFamilies||0))lines.push("- Continue review of a second embeddable provider family; do not promote candidates before permission and playback proof.");
