@@ -81,6 +81,7 @@ jobs:
           npm --silent run business:verification-horizon | tee ern-ops/commercial-verification-horizon.json
           npm --silent run business:onboarding-plan | tee ern-ops/commercial-onboarding-plan.json
           npm --silent run business:research-status | tee ern-ops/commercial-research.json
+          npm --silent run business:research-depth | tee ern-ops/commercial-research-depth.json
           npm --silent run business:affiliate-research | tee ern-ops/affiliate-platform-research.json
           npm --silent run business:affiliate-readiness | tee ern-ops/affiliate-application-readiness.json
           npm --silent run business:submission-transport | tee ern-ops/submission-transport-readiness.json
