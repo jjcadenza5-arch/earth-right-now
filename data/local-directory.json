@@ -1,1 +1,208 @@
-[]
+[
+  {
+    "id": "local-tiflis-palace",
+    "name": "Tiflis Palace",
+    "type": "hotel",
+    "place": "Old Tbilisi",
+    "country": "Georgia",
+    "summary": "Independent hotel in Old Tbilisi near Narikala Fortress, Metekhi Church and the sulphur baths.",
+    "url": "https://tiflispalace.ge/english/home",
+    "verifiedAt": "2026-09-24T16:05:00Z",
+    "status": "APPROVED",
+    "placeId": "tbilisi-center",
+    "tags": [
+      "hotel",
+      "old tbilisi",
+      "narikala",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false
+  },
+  {
+    "id": "local-chalet-arva",
+    "name": "Chalet Arva",
+    "type": "chalet",
+    "place": "Oeschinensee",
+    "country": "Switzerland",
+    "summary": "Summer-season chalet accommodation directly at Oeschinensee.",
+    "url": "https://www.oeschinensee.ch/en/uebernachten/",
+    "verifiedAt": "2026-09-24T16:05:00Z",
+    "status": "APPROVED",
+    "placeId": "oeschinensee",
+    "tags": [
+      "chalet",
+      "lake",
+      "mountain stay",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false
+  },
+  {
+    "id": "local-flamsbrygga",
+    "name": "Flåmsbrygga",
+    "type": "hotel",
+    "place": "Flåm",
+    "country": "Norway",
+    "summary": "Fjord-side hotel and apartment accommodation in Flåm and Aurland.",
+    "url": "https://en.flamsbrygga.no/",
+    "verifiedAt": "2026-09-24T16:05:00Z",
+    "status": "APPROVED",
+    "placeId": "flam-aurlandsfjord",
+    "tags": [
+      "hotel",
+      "fjord",
+      "flam",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false
+  },
+  {
+    "id": "local-hotel-arvenbuel",
+    "name": "Hotel Arvenbüel",
+    "type": "hotel",
+    "place": "Amden",
+    "country": "Switzerland",
+    "summary": "Twenty-one-room hotel in Arvenbüel with direct access to the hiking and ski area above Lake Walensee.",
+    "url": "https://www.arvenbuel.ch/de/",
+    "verifiedAt": "2026-09-25T14:35:00Z",
+    "status": "APPROVED",
+    "placeId": "amden-walensee",
+    "tags": [
+      "hotel",
+      "amden",
+      "hiking",
+      "ski area",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false
+  },
+  {
+    "id": "local-windjammer-resort",
+    "name": "Windjammer Resort & Beach Club",
+    "type": "beach resort",
+    "place": "Lauderdale-by-the-Sea",
+    "country": "United States",
+    "summary": "Oceanfront local resort steps from Lauderdale-by-the-Sea village center and the beach.",
+    "url": "https://windjammerresort.com/",
+    "verifiedAt": "2026-09-25T14:38:00Z",
+    "status": "APPROVED",
+    "placeId": "lauderdale-by-the-sea",
+    "tags": [
+      "beach resort",
+      "lauderdale-by-the-sea",
+      "oceanfront",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false
+  },
+  {
+    "id": "local-calypso-charters-anguilla",
+    "name": "Calypso Charters Anguilla",
+    "type": "boat charter",
+    "place": "Anguilla",
+    "country": "Anguilla",
+    "summary": "Local sea-excursion operator offering snorkeling, sightseeing, sunset cruises, fishing and custom boat trips.",
+    "url": "https://www.calypsochartersanguilla.com/our-services/",
+    "verifiedAt": "2026-09-25T14:48:00Z",
+    "status": "APPROVED",
+    "placeId": "meads-bay-anguilla",
+    "tags": [
+      "boat charter",
+      "snorkeling",
+      "sunset cruise",
+      "fishing",
+      "local activity"
+    ],
+    "paidPlacement": false,
+    "affiliate": false
+  },
+  {
+    "id": "local-mtatsminda-funicular",
+    "name": "Mtatsminda Funicular",
+    "type": "funicular",
+    "place": "Tbilisi",
+    "country": "Georgia",
+    "summary": "Funicular and ropeway access connecting Tbilisi with the Mtatsminda upper plateau.",
+    "url": "https://register.park.ge/app/offers/3-funicularropeway-pass",
+    "verifiedAt": "2026-09-25T15:18:00Z",
+    "status": "APPROVED",
+    "placeId": "tbilisi-center",
+    "tags": [
+      "funicular",
+      "ropeway",
+      "mtatsminda",
+      "tbilisi",
+      "local attraction"
+    ],
+    "paidPlacement": false,
+    "affiliate": false
+  },
+  {
+    "id": "local-mattstock-chairlift",
+    "name": "Mattstock Chairlift",
+    "type": "chairlift",
+    "place": "Amden",
+    "country": "Switzerland",
+    "summary": "Mountain chairlift providing access to hiking routes and viewpoints above Amden and Lake Walensee.",
+    "url": "https://www.amden-weesen.ch/en/poi/detail/mattstock-chairlift-95071e2956",
+    "verifiedAt": "2026-09-25T15:18:00Z",
+    "status": "APPROVED",
+    "placeId": "amden-walensee",
+    "tags": [
+      "chairlift",
+      "mountain",
+      "hiking",
+      "amden",
+      "local attraction"
+    ],
+    "paidPlacement": false,
+    "affiliate": false
+  },
+  {
+    "id": "local-dolphin-explorer-marco",
+    "name": "The Dolphin Explorer",
+    "type": "eco tour",
+    "place": "Marco Island",
+    "country": "United States",
+    "summary": "Three-hour dolphin-study eco-tour with wildlife observation and a barrier-beach shelling stop.",
+    "url": "https://www.govisitmarcoisland.com/the-dolphin-explorer/the-dolphin-study-eco-tour-and-cruise",
+    "verifiedAt": "2026-09-25T15:18:00Z",
+    "status": "APPROVED",
+    "placeId": "marco-island-beach",
+    "tags": [
+      "dolphin",
+      "eco tour",
+      "boat",
+      "wildlife",
+      "local activity"
+    ],
+    "paidPlacement": false,
+    "affiliate": false
+  },
+  {
+    "id": "local-the-massif-patagonia",
+    "name": "The Massif",
+    "type": "expedition operator",
+    "place": "Torres del Paine",
+    "country": "Chile",
+    "summary": "Regional expedition and transfer operator offering guided trekking, scenic tours, navigation and horseback riding in Torres del Paine.",
+    "url": "https://rioserrano.com/en/themassif/",
+    "verifiedAt": "2026-09-25T15:06:00Z",
+    "status": "APPROVED",
+    "placeId": "torres-del-paine",
+    "tags": [
+      "expedition",
+      "trekking",
+      "navigation",
+      "horseback riding",
+      "local activity"
+    ],
+    "paidPlacement": false,
+    "affiliate": false
+  }
+]
