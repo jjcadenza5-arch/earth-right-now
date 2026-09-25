@@ -6,6 +6,7 @@ on:
     paths:
       - "src/**"
       - "scripts/**"
+      - "tests/earth-signal-*.smoke.js"
       - ".github/workflows/syntax-check.yml"
   workflow_dispatch:
 
@@ -25,3 +26,9 @@ jobs:
         run: |
           set -euo pipefail
           find src scripts -type f \( -name '*.js' -o -name '*.mjs' \) -print0 | xargs -0 -n1 node --check
+      - name: Run Earth Signal focused smoke tests
+        run: |
+          set -euo pipefail
+          for test in tests/earth-signal-*.smoke.js; do
+            node "$test"
+          done
