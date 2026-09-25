@@ -49,3 +49,6 @@ Operator playback review now treats due/expired HUMAN_PLAYBACK proof as renewal 
 
 ## Cross-cutting operating rule — no circular work
 ERN should improve continuously without repeating completed, blocked, failed or sufficiently researched work. Provider discovery now has a terminal current-catalog state; failed playback is deferred until material change; private travel research stops by default after two intent types per place; and non-visitor sources can be excluded from travel onboarding. See `docs/ANTI_LOOP_WORK_RULES.md`.
+
+## Private commercial pilot research — COMPLETE FOR CURRENT SCOPE
+Private editorial research has reached its finite pilot target: 59 verified real-option records across 30 places. New-destination breadth is held at 30 places, and the default two-intent depth queue is empty after applying explicit evidence-based holds where a distinct second option would be forced or duplicative. Public activation, affiliate applications, paid ranking and revenue assumptions remain off. Further commercial research requires a new decision or material evidence/catalog change.
