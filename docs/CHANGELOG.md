@@ -1,3 +1,8 @@
+## 2026-09-25 — Add replay-safe Generative Guide requests
+- Guide AI API moved to v2 with opaque request IDs and privacy-minimal idempotency.
+- Duplicate retries replay the stored public response without another model call or cost charge; in-flight duplicates fail closed.
+- Idempotency is required for future production activation and remains undeployed today.
+
 ## 2026-09-25 — Promote four reviewed streams + prepare fail-closed Generative Guide
 - Promoted Verbier and three Webcam La Palma streams after one batched deployed human review; La Palma's required visible attribution is enforced in production.
 - Inside-ERN readiness reached 11/5 across four provider families, with dominant-provider share reduced to about 77%.
