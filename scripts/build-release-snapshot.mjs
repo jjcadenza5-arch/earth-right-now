@@ -8,6 +8,7 @@ await import("./build-operator-review.mjs");
 await cp(new URL("../index.html",import.meta.url),new URL("index.html",dist));
 await mkdir(new URL("src/",dist),{recursive:true});
 await cp(new URL("../src/guide-public-copy.js",import.meta.url),new URL("src/guide-public-copy.js",dist));
+await cp(new URL("../src/home-i18n.js",import.meta.url),new URL("src/home-i18n.js",dist));
 await cp(new URL("../src/app-lite.js",import.meta.url),new URL("src/app-lite.js",dist));
 await cp(new URL("../src/styles-lite.css",import.meta.url),new URL("src/styles-lite.css",dist));
 await mkdir(new URL("data/",dist),{recursive:true});
@@ -33,7 +34,7 @@ await cp(new URL("../src/release-verification-console.js",import.meta.url),new U
 await cp(new URL("../about.html",import.meta.url),new URL("about.html",dist));
 await cp(new URL("../deploy/_headers",import.meta.url),new URL("_headers",dist));
 await cp(new URL("../deploy/_redirects",import.meta.url),new URL("_redirects",dist));
-const files=["index.html","src/guide-public-copy.js","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","release-verification.html","data/sources.json","data/local-directory.json","data/travel-offers.json","data/provider-observations.json","data/release-evidence.json","for-places.html","now-moments.html","review/inside-ern.html"];
+const files=["index.html","src/guide-public-copy.js","src/home-i18n.js","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","release-verification.html","data/sources.json","data/local-directory.json","data/travel-offers.json","data/provider-observations.json","data/release-evidence.json","for-places.html","now-moments.html","review/inside-ern.html"];
 const hashes={};for(const p of files){const b=await readFile(new URL(p,dist));hashes[p]=createHash("sha256").update(b).digest("hex")}
 const pkg=JSON.parse(await readFile(new URL("../package.json",import.meta.url),"utf8"));
 const commit=String(process.env.GITHUB_SHA||process.env.ERN_COMMIT_SHA||"").trim()||null;
