@@ -35,7 +35,7 @@
       <button id="searchNav" data-i18n="explore">Explore</button>
       <button id="mapNav" data-i18n="worldMap">World Map</button>
       <button id="destinationsNav" data-i18n="destinations">Destinations</button>
-      <a href="./about.html">About</a>
+      <a href="./about.html" data-i18n="about">About</a>
       <button id="topSearch" class="icon-nav nav-symbol" aria-label="Search Earth">⌕</button>
       <button id="savedNav" class="icon-nav" aria-label="Saved windows">♡</button>
       <button id="topAtlas" class="icon-nav nav-symbol" aria-label="Open Living Atlas">◎</button>
@@ -49,10 +49,10 @@
   <main id="mainContent">
     <section class="hero" id="home">
       <div class="hero-live" id="heroLive" aria-label="Featured current Earth window"></div>
-      <div class="hero-shade"></div><div class="hero-script">Same Planet<br><em>Brighter Perspectives</em></div>
+      <div class="hero-shade"></div><div class="hero-script"><span data-i18n="samePlanet">Same Planet</span><br><em data-i18n="brighterPerspectives">Brighter Perspectives</em></div>
       <div class="hero-copy">
         <p class="eyebrow">EARTH RIGHT NOW</p>
-        <h1>A more<br>connected world.</h1>
+        <h1><span data-i18n="heroHeadline1">A more</span><br><span data-i18n="heroHeadline2">connected world.</span></h1>
         <p class="hero-tagline" data-i18n="seeBefore">See before you go.</p>
         <p class="hero-deck" data-i18n="heroDeck">Live views from amazing places around the world.<br>Real conditions. Real moments. A more connected planet.</p>
         <div class="hero-actions">
@@ -93,7 +93,7 @@
         <div><p class="eyebrow" data-i18n="watchNowEyebrow">WATCH EARTH NOW</p><h2><span class="watch-globe">◎</span> <span id="watchCount">20</span> <span data-i18n="currentWindows">current windows.</span></h2><p id="watchSubhead" data-i18n="watchSubhead">A changing world. Always something new to see.</p></div>
         <button id="refreshSet" class="surprise">⤨ <span data-i18n="surpriseMe">Surprise Me</span></button>
       </div>
-      <div class="set-note"><span id="setLabel">Featured now</span><span id="setReason">Chosen for quality, local light and variety.</span><span class="moment-summary" id="momentSummary"></span><span class="local-personal" id="personalNote">Personalized in this browser</span></div>
+      <div class="set-note"><span id="setLabel" data-i18n="featuredNow">Featured now</span><span id="setReason" data-i18n="featuredReason">Chosen for quality, local light and variety.</span><span class="moment-summary" id="momentSummary"></span><span class="local-personal" id="personalNote" data-i18n="personalizedBrowser">Personalized in this browser</span></div>
       <div class="mode-switcher" id="modeSwitcher" aria-label="Featured sets">
         <button class="mode-chip active" data-mode="auto" data-i18n="forMoment">For this moment</button>
         <button class="mode-chip" data-mode="beautiful" data-i18n="beautifulEarth">Beautiful Earth</button>
@@ -102,9 +102,9 @@
         <button class="mode-chip" data-mode="night" data-i18n="nightLights">Night Lights</button>
         <button class="mode-chip" data-mode="golden" data-i18n="goldenHour">Golden Hour</button>
       </div>
-      <div class="window-grid" id="watchGrid" aria-live="polite"></div><p class="watch-empty" id="watchEmpty" hidden>No strong current windows match this filter right now. Try another category or “For this moment.”</p>
+      <div class="window-grid" id="watchGrid" aria-live="polite"></div><p class="watch-empty" id="watchEmpty" hidden data-i18n="watchEmpty">No strong current windows match this filter right now. Try another category or “For this moment.”</p>
       <div class="watch-foot">
-        <span>⌂ Real places</span><span>▣ Live & current views</span><span>● Global perspective</span><span>◒ A more connected world</span>
+        <span data-i18n="realPlaces">⌂ Real places</span><span data-i18n="liveCurrentViews">▣ Live & current views</span><span data-i18n="globalPerspective">● Global perspective</span><span data-i18n="connectedWorld">◒ A more connected world</span>
       </div>
     </section>
 
@@ -114,7 +114,7 @@
         <button id="wanderRefresh"><span data-i18n="anotherSix">Another six</span> →</button>
       </div>
       <div class="wander-grid" id="wanderGrid"></div>
-      <div class="wander-note" id="wanderNote">Curated from healthy sources outside the current Top 20.</div>
+      <div class="wander-note" id="wanderNote" data-i18n="wanderNote">Curated from healthy sources outside the current Top 20.</div>
     </section>
 
     <section class="local-earth-section" id="localEarth">
@@ -156,12 +156,12 @@
         <button class="atlas-filter" data-map-filter="inside" data-i18n="playHere">Play here</button>
         <button class="atlas-filter" data-map-filter="external" data-i18n="externalLive">External live</button>
         <button class="atlas-filter" data-map-filter="daylight" data-i18n="daylightNow">Daylight now</button>
-        <button class="atlas-filter" data-map-filter="local">Local places</button>
+        <button class="atlas-filter" data-map-filter="local" data-i18n="localPlaces">Local places</button>
       </div>
       <div class="atlas" id="atlas" role="group" aria-label="Living Atlas"></div>
-      <div class="atlas-legend" aria-label="Living Atlas legend"><span><i class="legend-pin inside"></i>Plays in ERN</span><span><i class="legend-pin external"></i>Provider view</span><span><i class="legend-pin local"></i>Reviewed local place</span></div>
+      <div class="atlas-legend" aria-label="Living Atlas legend"><span><i class="legend-pin inside"></i><span data-i18n="playsInErn">Plays in ERN</span></span><span><i class="legend-pin external"></i><span data-i18n="providerView">Provider view</span></span><span><i class="legend-pin local"></i><span data-i18n="reviewedLocal">Reviewed local place</span></span></div>
       <p class="map-note" id="mapNote" role="status" aria-live="polite"></p>
-      <div class="atlas-beyond" id="atlasBeyond" hidden><div class="atlas-beyond-head"><strong>Beyond the mapped pins</strong><span id="atlasBeyondNote"></span></div><div class="atlas-beyond-grid" id="atlasBeyondGrid"></div></div>
+      <div class="atlas-beyond" id="atlasBeyond" hidden><div class="atlas-beyond-head"><strong data-i18n="beyondPins">Beyond the mapped pins</strong><span id="atlasBeyondNote"></span></div><div class="atlas-beyond-grid" id="atlasBeyondGrid"></div></div>
       <p class="atlas-credit">Map base: Natural Earth public-domain geography · ERN simplified vector · equirectangular projection</p>
     </section>
 
@@ -187,18 +187,18 @@
         <button id="resetPersonal" data-i18n="resetLocal">Reset local suggestions</button>
       </div>
       <div class="result-grid" id="savedResults"></div>
-      <p class="empty" id="savedEmpty">Nothing saved yet. Tap ♡ while watching a window.</p>
+      <p class="empty" id="savedEmpty" data-i18n="nothingSaved">Nothing saved yet. Tap ♡ while watching a window.</p>
       <div class="recent-head"><strong data-i18n="recentExplored">Recently explored</strong><small id="recentNote"></small></div>
       <div class="result-grid recent-grid" id="recentResults"></div>
-      <p class="empty" id="recentEmpty">Places you explore will appear here for quick return.</p>
+      <p class="empty" id="recentEmpty" data-i18n="recentEmpty">Places you explore will appear here for quick return.</p>
       <div class="recent-head recommend-head"><strong data-i18n="continueExploring">Continue exploring</strong><small data-i18n="localOnly">Based only on your local ERN activity.</small></div>
       <div class="result-grid recent-grid" id="recommendedResults"></div>
     </section>
   </main>
 
   <footer>
-    <div><strong>Earth Right Now</strong> · See before you go.</div>
-    <div class="footer-links"><a href="./about.html" data-i18n="aboutSources">About & sources</a><a href="./for-places.html" data-i18n="forPlacesCameras">For places & cameras</a><a href="./now-moments.html">Now Moments</a><a href="./privacy.html" data-i18n="privacy">Privacy</a></div>
+    <div><strong>Earth Right Now</strong> · <span data-i18n="seeBefore">See before you go.</span></div>
+    <div class="footer-links"><a href="./about.html" data-i18n="aboutSources">About & sources</a><a href="./for-places.html" data-i18n="forPlacesCameras">For places & cameras</a><a href="./now-moments.html" data-i18n="nowMoments">Now Moments</a><a href="./privacy.html" data-i18n="privacy">Privacy</a></div>
   </footer>
 
   <div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="viewerTitle" aria-describedby="viewerPlace">
@@ -208,7 +208,7 @@
     </div>
     <div class="viewer-stage-wrap">
       <div class="viewer-stage" id="viewerStage"></div>
-      <div class="viewer-loading" id="viewerLoading" hidden role="status" aria-live="polite"><span></span><strong>Connecting to this window…</strong><small>If the provider is slow, you can still open the original source.</small><div class="loading-actions"><button id="viewerTryAlternate" hidden>Try another view</button><a id="loadingSource" target="_blank" rel="noopener noreferrer">Open source</a></div></div>
+      <div class="viewer-loading" id="viewerLoading" hidden role="status" aria-live="polite"><span></span><strong data-i18n="connectingWindow">Connecting to this window…</strong><small data-i18n="providerSlow">If the provider is slow, you can still open the original source.</small><div class="loading-actions"><button id="viewerTryAlternate" hidden data-i18n="tryAnotherView">Try another view</button><a id="loadingSource" target="_blank" rel="noopener noreferrer" data-i18n="openSource">Open source</a></div></div>
     </div>
     <div class="viewer-alternates" id="viewerAlternates" hidden></div>
     <div class="viewer-context" id="viewerContext" hidden>
@@ -220,7 +220,7 @@
         <a id="planDo" target="_blank" rel="noopener noreferrer" data-i18n="thingsDo">Things to do</a>
         <a id="planWeather" target="_blank" rel="noopener noreferrer" data-i18n="weather">Weather</a>
         <a id="planMap" target="_blank" rel="noopener noreferrer" data-i18n="map">Map</a>
-      </div><small id="planCommercialDisclosure" class="plan-commercial-disclosure" hidden></small><small id="planPlanningNote">Useful external planning links for this place. Earth-view ranking is independent of commercial relationships.</small></div>
+      </div><small id="planCommercialDisclosure" class="plan-commercial-disclosure" hidden></small><small id="planPlanningNote" data-i18n="planningNote">Useful external planning links for this place. Earth-view ranking is independent of commercial relationships.</small></div>
     </div>
     <div class="viewer-bottom">
       <div class="journey">
