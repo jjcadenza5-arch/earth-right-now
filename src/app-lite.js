@@ -58,8 +58,11 @@ function verificationLabel(s){const d=verificationAgeDays(s);if(!Number.isFinite
 function verificationWindowHours(s){if(s?.truth==="LIVE_IMAGE"||s?.playback==="IMAGE_REFRESH")return 24;if(s?.playback==="EMBED")return 24;if(s?.truth==="EXTERNAL_LIVE"||s?.truth==="PARTNER")return 72;return 168}
 function verificationAgeHours(s){return verificationAgeDays(s)*24}
 function featureEligible(s){return!!(s&&s.health==="HEALTHY"&&!featuredHold(s)&&verificationAgeHours(s)<=verificationWindowHours(s))}
-function watchExperienceEligible(s){return!!(s&&s.health==="HEALTHY"&&!/VISITOR_PLAYBACK_REJECTED|NOT_LIVE|VIDEO_UNAVAILABLE|STALE_RECORDING|BROKEN_EMBED/i.test(String(s.failureReason||""))&&(Number(s.quality)||0)>=80&&(Number(s.moment)||0)>=70)}
+function recentPlaybackProof(s,hours=72){const raw=s?.playbackVerifiedAt;if(!raw)return false;const age=(Date.now()-Date.parse(raw))/36e5;return Number.isFinite(age)&&age>=0&&age<=hours}
+function watchExperienceEligible(s){return!!(s&&s.health==="HEALTHY"&&s.watchHold!==true&&!/VISITOR_PLAYBACK_REJECTED|NOT_LIVE|VIDEO_UNAVAILABLE|STALE_RECORDING|BROKEN_EMBED/i.test(String(s.failureReason||""))&&(Number(s.quality)||0)>=80&&(Number(s.moment)||0)>=70)}
 function watchEligible(s){return featureEligible(s)&&currentTruthClaim(s)&&watchExperienceEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
+function provenWatchHere(s){return watchEligible(s)&&((s.playback==="EMBED"&&recentPlaybackProof(s))||(s.playback==="IMAGE_REFRESH"&&currentTruthClaim(s)))}
+function atlasEligible(s){return!!(s&&s.health!=="OFFLINE"&&!featuredHold(s)&&s.truth!=="PREVIEW"&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon)))}
 const momentWords={
  en:["Current","Morning light","Daylight","Evening light","Night"],
  th:["ปัจจุบัน","แสงยามเช้า","กลางวัน","แสงยามเย็น","กลางคืน"],
@@ -149,6 +152,8 @@ function adaptiveWatchLimit(pool,target=20){
 function buildWatch(sources){
  const profile=setProfile();
  let pool=sources.filter(watchEligible);
+ const proven=sources.filter(provenWatchHere);
+ if(proven.length>=6)pool=proven;
  if(state.category!=="all"&&state.category!=="random")pool=pool.filter(s=>categoryMatch(s,state.category));
  if(state.category==="all"){
    const strict={
@@ -470,18 +475,18 @@ function renderAtlasBeyond(){
 
 function renderMap(){
  const a=$("#atlas");a.querySelectorAll(".map-pin").forEach(x=>x.remove());let count=0,insideCount=0,externalCount=0,localCount=0;
- const grouped=groupByPlace(state.sources.filter(s=>featureEligible(s)&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))));
+ const grouped=groupByPlace(state.sources.filter(atlasEligible));
  for(const group of grouped){
    const eligible=group.filter(s=>{const inside=currentInside(s);if(state.mapFilter==="local")return false;if(state.category!=="all"&&state.category!=="random"&&!categoryMatch(s,state.category))return false;if(state.mapFilter==="inside"&&!inside)return false;if(state.mapFilter==="external"&&inside)return false;if(state.mapFilter==="daylight"&&!isDay(s))return false;return true});
-   if(!eligible.length)continue;const s=[...eligible].sort((x,y)=>baseScore(y)-baseScore(x))[0],lat=Number(s.lat),lon=Number(s.lon),inside=currentInside(s);
-   const p=document.createElement("button");p.className="map-pin"+(inside?"":" external");p.type="button";p.title=`${s.title} — ${publicTruth(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s);if(group.length>1)p.dataset.views=String(group.length);a.append(p);count++;if(inside)insideCount++;else externalCount++;
+   if(!eligible.length)continue;const s=[...eligible].sort((x,y)=>(featureEligible(y)?1:0)-(featureEligible(x)?1:0)||baseScore(y)-baseScore(x))[0],lat=Number(s.lat),lon=Number(s.lon),inside=currentInside(s),current=featureEligible(s)&&currentTruthClaim(s);
+   const p=document.createElement("button");p.className="map-pin"+(inside?"":" external")+(!current?" recheck":"");p.type="button";p.title=`${s.title} — ${publicTruth(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s);if(group.length>1)p.dataset.views=String(group.length);a.append(p);count++;if(inside)insideCount++;else externalCount++;
  }
  for(const x of approvedLocalPlaces()){
    const lat=Number(x.lat),lon=Number(x.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;if(state.mapFilter!=="all"&&state.mapFilter!=="local")continue;
    const p=document.createElement("a");p.className="map-pin local";p.href=safeExternalUrl(x.url);p.target="_blank";p.rel="noopener noreferrer";p.title=x.name+" — reviewed local place";p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";a.append(p);count++;localCount++;
  }
  document.querySelectorAll(".atlas-filter").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter===state.mapFilter));
- const basisCount=state.sources.filter(s=>featureEligible(s)&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))&&s.coordinateBasis).length;const categoryContext=state.category!=="all"&&state.category!=="random"?` · category: ${state.category}`:"";$("#mapNote").textContent=`${count} verified-current mapped places shown${categoryContext} · ${insideCount} play inside ERN · ${externalCount} provider views${localCount?" · "+localCount+" reviewed local place"+(localCount===1?"":"s"):""} · ${basisCount} pins carry explicit coordinate provenance. Pin positions can be place-level references unless an exact camera position is documented.`;renderAtlasBeyond();
+ const mappedCatalog=state.sources.filter(atlasEligible),basisCount=mappedCatalog.filter(s=>s.coordinateBasis).length,currentMapped=mappedCatalog.filter(s=>featureEligible(s)&&currentTruthClaim(s)).length,recheckMapped=Math.max(0,mappedCatalog.length-currentMapped);const categoryContext=state.category!=="all"&&state.category!=="random"?` · category: ${state.category}`:"";$("#mapNote").textContent=`${count} mapped places shown${categoryContext} · ${currentMapped} current-verified sources · ${recheckMapped} broader mapped sources may show RECHECK DUE · ${insideCount} play inside ERN · ${externalCount} provider/source views${localCount?" · "+localCount+" reviewed local place"+(localCount===1?"":"s"):""} · ${basisCount} mapped sources carry coordinate provenance.`;renderAtlasBeyond();
 }
 function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}
 function distanceKm(a,b){
@@ -559,7 +564,7 @@ function openPlace(placeId){
  const best=[...group].sort((a,b)=>baseScore(b)-baseScore(a))[0];openViewer(best,{record:false,updateHash:false});return true;
 }
 function openViewer(s,options={record:true,updateHash:true}){if(!s)return;if($("#viewer").hidden)state.lastFocus=document.activeElement;document.title=s.title+" — Earth Right Now";if(options.record!==false){recordInterest(s);renderSaved()}state.selected=s;const i=state.watch.findIndex(x=>x.id===s.id);if(i>=0)state.watchIndex=i;$("#viewerTruth").textContent=publicTruth(s);$("#viewerTruth").dataset.truth=truthTone(s);$("#viewerTitle").textContent=s.title;$("#viewerPlace").textContent=[s.region,s.country,localTime(s)].filter(Boolean).join(" · ");const viewerSaved=state.favorites.has(s.id);$("#favoriteViewer").textContent=viewerSaved?"♥":"♡";$("#favoriteViewer").setAttribute("aria-pressed",String(viewerSaved));$("#favoriteViewer").setAttribute("aria-label",viewerSaved?t("ariaRemoveSaved"):t("ariaSave"));renderAlternates(s);renderContext(s);if($("#viewer").hidden){$("#viewer").hidden=false;$("#viewer").classList.add("opening");setTimeout(()=>$("#viewer").classList.remove("opening"),260);setTimeout(()=>$("#closeViewer").focus(),40)}if(options.updateHash!==false&&location.hash!==viewHash(s.id))history.replaceState(null,"",viewHash(s.id));mountViewer(s);document.body.style.overflow="hidden"}
-function closeViewer(options={clearHash:true,restoreFocus:true}){stopJourney();stopImageTimer();clearViewerLoad();syncFullscreenButton();document.title="Earth Right Now — See Before You Go";if(options.clearHash!==false&&location.hash.startsWith("#view="))history.replaceState(null,"",location.pathname+location.search);$("#viewer").hidden=true;$("#viewerStage").replaceChildren();$("#viewerAlternates").replaceChildren();$("#viewerAlternates").hidden=true;$("#viewerContext").hidden=true;$("#nearbyList").replaceChildren();$("#relatedList").replaceChildren();document.body.style.overflow="";if(options.restoreFocus!==false&&state.lastFocus?.focus)setTimeout(()=>state.lastFocus.focus(),0)}
+function closeViewer(options={clearHash:true,restoreFocus:true}){stopJourney();stopImageTimer();clearViewerLoad();$("#viewer").classList.remove("faux-fullscreen");syncFullscreenButton();document.title="Earth Right Now — See Before You Go";if(options.clearHash!==false&&location.hash.startsWith("#view="))history.replaceState(null,"",location.pathname+location.search);$("#viewer").hidden=true;$("#viewerStage").replaceChildren();$("#viewerAlternates").replaceChildren();$("#viewerAlternates").hidden=true;$("#viewerContext").hidden=true;$("#nearbyList").replaceChildren();$("#relatedList").replaceChildren();document.body.style.overflow="";if(options.restoreFocus!==false&&state.lastFocus?.focus)setTimeout(()=>state.lastFocus.focus(),0)}
 function move(d,record=true){if(!state.watch.length)return;state.watchIndex=(state.watchIndex+d+state.watch.length)%state.watch.length;openViewer(state.watch[state.watchIndex],{record})}
 function updateJourneyButton(){$("#journeyToggle").textContent=state.journeyTimer?t("pauseJourney"):t("playJourney")}
 function startJourney(){if(state.journeyTimer)return;stopHeroRotation();state.journeyTimer=setInterval(()=>move(1,false),30000);updateJourneyButton()}
@@ -597,18 +602,18 @@ function initSectionSpy(){
  for(const [id] of map){const el=document.getElementById(id);if(el)obs.observe(el)}
 }
 async function toggleViewerFullscreen(){
- const stage=$("#viewerStage"),media=stage?.querySelector("iframe,img,video"),target=media||stage;
+ const viewer=$("#viewer"),stage=$("#viewerStage"),media=stage?.querySelector("iframe,img,video"),target=media||stage;
+ if(viewer.classList.contains("faux-fullscreen")){viewer.classList.remove("faux-fullscreen");syncFullscreenButton();return}
  if(document.fullscreenElement){try{await document.exitFullscreen();return}catch{}}
  if(document.webkitFullscreenElement&&document.webkitExitFullscreen){try{document.webkitExitFullscreen();return}catch{}}
  try{
    if(target?.requestFullscreen){await target.requestFullscreen();return}
-   if(target?.webkitRequestFullscreen){target.webkitRequestFullscreen();return}
+   if(target?.webkitRequestFullscreen){target.webkitRequestFullscreen();setTimeout(()=>{if(!document.webkitFullscreenElement&&!document.fullscreenElement){viewer.classList.add("faux-fullscreen");syncFullscreenButton()}},250);return}
  }catch{}
- stage?.scrollIntoView({behavior:"smooth",block:"center"});
- const btn=$("#fullViewer"),old=btn.textContent;btn.textContent="Use player ⛶";setTimeout(()=>btn.textContent=old,1800);
+ viewer.classList.add("faux-fullscreen");syncFullscreenButton();
 }
 function syncFullscreenButton(){
- const active=!!(document.fullscreenElement||document.webkitFullscreenElement);
+ const active=!!(document.fullscreenElement||document.webkitFullscreenElement||$("#viewer")?.classList.contains("faux-fullscreen"));
  $("#fullViewer").textContent=active?"Exit full screen":t("fullscreen");$("#fullViewer").setAttribute("aria-pressed",active?"true":"false")
 }
 function initEvents(){
