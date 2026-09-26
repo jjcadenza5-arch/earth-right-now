@@ -34,7 +34,9 @@
     "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Auckland Viaduct YouTube channel-live player delivers current live content after the visitor presses Play.",
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.viaduct.co.nz/",
-    "playbackVerifiedAt": "2026-09-25T14:59:12.384Z"
+    "playbackVerifiedAt": "2026-09-25T14:59:12.384Z",
+    "watchHold": true,
+    "watchHoldReason": "USER_BROWSER_REVIEW_2026-09-26_YOUTUBE_PLAYBACK_UNRELIABLE"
   },
   {
     "id": "kilauea-summit",
@@ -1137,7 +1139,9 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://takayama-live.com/streaming",
     "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Hida-Takayama YouTube channel-live player delivers current live content after the visitor presses Play.",
-    "playbackVerifiedAt": "2026-09-25T14:59:07.202Z"
+    "playbackVerifiedAt": "2026-09-25T14:59:07.202Z",
+    "watchHold": true,
+    "watchHoldReason": "USER_BROWSER_REVIEW_2026-09-26_YOUTUBE_PLAYBACK_UNRELIABLE"
   },
   {
     "id": "takayama-miyagawa-current-image",
