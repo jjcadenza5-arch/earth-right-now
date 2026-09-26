@@ -58,11 +58,11 @@ function verificationLabel(s){const d=verificationAgeDays(s);if(!Number.isFinite
 function verificationWindowHours(s){if(s?.truth==="LIVE_IMAGE"||s?.playback==="IMAGE_REFRESH")return 24;if(s?.playback==="EMBED")return 24;if(s?.truth==="EXTERNAL_LIVE"||s?.truth==="PARTNER")return 72;return 168}
 function verificationAgeHours(s){return verificationAgeDays(s)*24}
 function featureEligible(s){return!!(s&&s.health==="HEALTHY"&&!featuredHold(s)&&verificationAgeHours(s)<=verificationWindowHours(s))}
-function recentPlaybackProof(s,hours=72){const raw=s?.playbackVerifiedAt;if(!raw)return false;const age=(Date.now()-Date.parse(raw))/36e5;return Number.isFinite(age)&&age>=0&&age<=hours}
-function watchExperienceEligible(s){return!!(s&&s.health==="HEALTHY"&&s.watchHold!==true&&!/VISITOR_PLAYBACK_REJECTED|NOT_LIVE|VIDEO_UNAVAILABLE|STALE_RECORDING|BROKEN_EMBED/i.test(String(s.failureReason||""))&&(Number(s.quality)||0)>=80&&(Number(s.moment)||0)>=70)}
+function recentPlaybackProof(s){const a=(Date.now()-Date.parse(s?.playbackVerifiedAt))/36e5;return Number.isFinite(a)&&a>=0&&a<=72}
+function watchExperienceEligible(s){return!!(s&&s.health==="HEALTHY"&&!s.watchHold&&!/VISITOR_PLAYBACK_REJECTED|NOT_LIVE|VIDEO_UNAVAILABLE|STALE_RECORDING|BROKEN_EMBED/i.test(s.failureReason||"")&&+s.quality>=80&&+s.moment>=70)}
 function watchEligible(s){return featureEligible(s)&&currentTruthClaim(s)&&watchExperienceEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
 function provenWatchHere(s){return watchEligible(s)&&((s.playback==="EMBED"&&recentPlaybackProof(s))||(s.playback==="IMAGE_REFRESH"&&currentTruthClaim(s)))}
-function atlasEligible(s){return!!(s&&s.health!=="OFFLINE"&&!featuredHold(s)&&s.truth!=="PREVIEW"&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon)))}
+function atlasEligible(s){return!!(s&&s.health!=="OFFLINE"&&!featuredHold(s)&&s.truth!=="PREVIEW"&&Number.isFinite(+s.lat)&&Number.isFinite(+s.lon))}
 const momentWords={
  en:["Current","Morning light","Daylight","Evening light","Night"],
  th:["ปัจจุบัน","แสงยามเช้า","กลางวัน","แสงยามเย็น","กลางคืน"],
@@ -610,12 +610,8 @@ async function toggleViewerFullscreen(){
    if(target?.requestFullscreen){await target.requestFullscreen();return}
    if(target?.webkitRequestFullscreen){target.webkitRequestFullscreen();setTimeout(()=>{if(!document.webkitFullscreenElement&&!document.fullscreenElement){viewer.classList.add("faux-fullscreen");syncFullscreenButton()}},250);return}
  }catch{}
- viewer.classList.add("faux-fullscreen");syncFullscreenButton();
-}
-function syncFullscreenButton(){
- const active=!!(document.fullscreenElement||document.webkitFullscreenElement||$("#viewer")?.classList.contains("faux-fullscreen"));
- $("#fullViewer").textContent=active?"Exit full screen":t("fullscreen");$("#fullViewer").setAttribute("aria-pressed",active?"true":"false")
-}
+ viewer.classList.add("faux-fullscreen");syncFullscreenButton()}
+function syncFullscreenButton(){const active=!!(document.fullscreenElement||document.webkitFullscreenElement||$("#viewer")?.classList.contains("faux-fullscreen"));$("#fullViewer").textContent=active?"Exit full screen":t("fullscreen");$("#fullViewer").setAttribute("aria-pressed",String(active))}
 function initEvents(){
  $("#homeBtn").onclick=()=>scrollToId("home");$("#homeNav").onclick=()=>scrollToId("home");$("#topSearch").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#topAtlas").onclick=()=>scrollToId("map");
  $("#guideLauncher").onclick=()=>$("#guidePanel").hidden?openGuide():closeGuide();$("#guideClose").onclick=closeGuide;$("#heroGuide").onclick=openGuide;
