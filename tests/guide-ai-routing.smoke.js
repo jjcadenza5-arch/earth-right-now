@@ -1,0 +1,10 @@
+import {guideAiEscalationDecision as d} from "../src/guide-ai-routing.js";
+const items={items:[{id:"x"}]};
+console.assert(!d({query:"show me beaches",deterministic:items}).eligible,"simple discovery should stay deterministic");
+console.assert(!d({query:"open Tokyo",deterministic:items}).eligible,"direct place discovery should stay deterministic");
+console.assert(!d({query:"share a photo",deterministic:{items:[],link:{href:"./now-moments.html"}}}).eligible,"direct product action should stay deterministic");
+console.assert(d({query:"I have two hours before dinner and want somewhere peaceful with evening light, but not a famous tourist city — where should I look?",deterministic:items}).eligible,"nuanced selection should be AI eligible");
+console.assert(d({query:"Can you explain why this place might fit what I want?",deterministic:items}).eligible,"explanatory follow-up should be AI eligible");
+console.assert(d({query:"somewhere unusual please",deterministic:{items:[]}}).eligible,"meaningful no-match should be AI eligible");
+console.assert(!d({query:"hello",deterministic:{items:[]}}).eligible,"chitchat should not spend AI");
+console.log("guide-ai-routing smoke: ok");
