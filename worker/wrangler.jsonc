@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "ern-guide-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-26",
+  "vars": {
+    "ERN_GUIDE_AI_ENABLED": "false",
+    "ERN_GUIDE_MODEL": "gpt-5.6-luna",
+    "ERN_GUIDE_MONTHLY_COST_CEILING_USD": "10",
+    "ERN_GUIDE_MAX_REQUEST_RESERVATION_USD": "0.02",
+    "ERN_PUBLIC_ORIGIN": "https://earthrightnow.app",
+    "ERN_CATALOG_URL": "https://earthrightnow.app/data/sources.json"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "GUIDE_STATE",
+        "class_name": "GuideState"
+      }
+    ]
+  },
+  "exports": {
+    "GuideState": {
+      "type": "durable-object",
+      "storage": "sqlite"
+    }
+  }
+}
