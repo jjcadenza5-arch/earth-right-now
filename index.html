@@ -29,21 +29,21 @@
 <body>
   <a class="skip-link" href="#mainContent">Skip to content</a>
   <header class="topbar">
-    <button class="brand" id="homeBtn" aria-label="Earth Right Now home">
+    <button class="brand" id="homeBtn" aria-label="Earth Right Now home" data-i18n-aria-label="ariaHome">
       <img src="./assets/ern-mark.svg" alt="" width="54" height="54">
       <span class="brand-copy"><strong>Earth Right Now</strong><small>See before you go.</small></span>
     </button>
-    <nav aria-label="Main navigation">
+    <nav aria-label="Main navigation" data-i18n-aria-label="ariaMainNav">
       <button id="homeNav" class="active" data-i18n="home">Home</button>
       <button id="watchNav" data-i18n="watchEarth">Watch Earth</button>
       <button id="searchNav" data-i18n="explore">Explore</button>
       <button id="mapNav" data-i18n="worldMap">World Map</button>
       <button id="destinationsNav" data-i18n="destinations">Destinations</button>
       <a href="./about.html" data-i18n="about">About</a>
-      <button id="topSearch" class="icon-nav nav-symbol" aria-label="Search Earth">⌕</button>
-      <button id="savedNav" class="icon-nav" aria-label="Saved windows">♡</button>
-      <button id="topAtlas" class="icon-nav nav-symbol" aria-label="Open Living Atlas">◎</button>
-      <select id="languageSelect" aria-label="Language">
+      <button id="topSearch" class="icon-nav nav-symbol" aria-label="Search Earth" data-i18n-aria-label="ariaSearch">⌕</button>
+      <button id="savedNav" class="icon-nav" aria-label="Saved windows" data-i18n-aria-label="ariaSaved">♡</button>
+      <button id="topAtlas" class="icon-nav nav-symbol" aria-label="Open Living Atlas" data-i18n-aria-label="ariaOpenAtlas">◎</button>
+      <select id="languageSelect" aria-label="Language" data-i18n-aria-label="ariaLanguage">
         <option value="en">EN</option><option value="th">ไทย</option><option value="de">DE</option>
         <option value="fr">FR</option><option value="ja">日本語</option><option value="zh">中文</option><option value="es">ES</option>
       </select>
@@ -52,7 +52,7 @@
 
   <main id="mainContent">
     <section class="hero" id="home">
-      <div class="hero-live" id="heroLive" aria-label="Featured current Earth window"></div>
+      <div class="hero-live" id="heroLive" aria-label="Featured current Earth window" data-i18n-aria-label="ariaHeroWindow"></div>
       <div class="hero-shade"></div><div class="hero-script"><span data-i18n="samePlanet">Same Planet</span><br><em data-i18n="brighterPerspectives">Brighter Perspectives</em></div>
       <div class="hero-copy">
         <p class="eyebrow">EARTH RIGHT NOW</p>
@@ -71,7 +71,7 @@
       </div>
     </section>
 
-    <section class="category-bar" aria-label="Explore categories">
+    <section class="category-bar" aria-label="Explore categories" data-i18n-aria-label="ariaCategories">
       <button class="category active" data-category="all"><span>◉</span><b data-i18n="allPlaces">All Places</b></button>
       <button class="category" data-category="mountain"><span>△</span><b data-i18n="mountains">Mountains</b></button>
       <button class="category" data-category="beach"><span>≈</span><b data-i18n="beaches">Beaches</b></button>
@@ -85,7 +85,7 @@
       <button class="category" data-category="random"><span>⤨</span><b data-i18n="random">Random</b></button>
     </section>
 
-    <section class="now-strip" aria-label="Earth right now">
+    <section class="now-strip" aria-label="Earth right now" data-i18n-aria-label="ariaEarthNow">
       <div><strong id="nowPlayable">—</strong><span data-i18n="playHereCount">play here</span></div>
       <div><strong id="nowDaylight">—</strong><span data-i18n="daylightCount">in daylight</span></div>
       <div><strong id="nowNightCities">—</strong><span data-i18n="nightCityCount">night-city views</span></div>
@@ -98,7 +98,7 @@
         <button id="refreshSet" class="surprise">⤨ <span data-i18n="surpriseMe">Surprise Me</span></button>
       </div>
       <div class="set-note"><span id="setLabel" data-i18n="featuredNow">Featured now</span><span id="setReason" data-i18n="featuredReason">Chosen for quality, local light and variety.</span><span class="moment-summary" id="momentSummary"></span><span class="local-personal" id="personalNote" data-i18n="personalizedBrowser">Personalized in this browser</span></div>
-      <div class="mode-switcher" id="modeSwitcher" aria-label="Featured sets">
+      <div class="mode-switcher" id="modeSwitcher" aria-label="Featured sets" data-i18n-aria-label="ariaFeaturedSets">
         <button class="mode-chip active" data-mode="auto" data-i18n="forMoment">For this moment</button>
         <button class="mode-chip" data-mode="beautiful" data-i18n="beautifulEarth">Beautiful Earth</button>
         <button class="mode-chip" data-mode="cities" data-i18n="earthMotion">Earth in Motion</button>
@@ -138,7 +138,7 @@
         <input id="searchInput" type="search" autocomplete="off" placeholder="Search Earth…" data-i18n-placeholder="searchEarth">
         <button id="clearSearch" data-i18n="clear">Clear</button>
       </div>
-      <div class="search-suggestions" aria-label="Quick searches">
+      <div class="search-suggestions" aria-label="Quick searches" data-i18n-aria-label="ariaQuickSearches">
         <button data-query="New York">New York</button>
         <button data-query="Switzerland">Switzerland</button>
         <button data-query="Japan">Japan</button>
@@ -155,15 +155,15 @@
         <div><p class="eyebrow" data-i18n="livingAtlas">LIVING ATLAS</p><h2 data-i18n="atlasHeading">The world, one current window at a time.</h2></div>
         <p data-i18n="atlasDeck">Choose a pin, then open the best available current view for that place.</p>
       </div>
-      <div class="atlas-controls" aria-label="Map filters">
+      <div class="atlas-controls" aria-label="Map filters" data-i18n-aria-label="ariaMapFilters">
         <button class="atlas-filter active" data-map-filter="all" data-i18n="allWindows">All windows</button>
         <button class="atlas-filter" data-map-filter="inside" data-i18n="playHere">Play here</button>
         <button class="atlas-filter" data-map-filter="external" data-i18n="externalLive">External live</button>
         <button class="atlas-filter" data-map-filter="daylight" data-i18n="daylightNow">Daylight now</button>
         <button class="atlas-filter" data-map-filter="local" data-i18n="localPlaces">Local places</button>
       </div>
-      <div class="atlas" id="atlas" role="group" aria-label="Living Atlas"></div>
-      <div class="atlas-legend" aria-label="Living Atlas legend"><span><i class="legend-pin inside"></i><span data-i18n="playsInErn">Plays in ERN</span></span><span><i class="legend-pin external"></i><span data-i18n="providerView">Provider view</span></span><span><i class="legend-pin local"></i><span data-i18n="reviewedLocal">Reviewed local place</span></span></div>
+      <div class="atlas" id="atlas" role="group" aria-label="Living Atlas" data-i18n-aria-label="ariaLivingAtlas"></div>
+      <div class="atlas-legend" aria-label="Living Atlas legend" data-i18n-aria-label="ariaAtlasLegend"><span><i class="legend-pin inside"></i><span data-i18n="playsInErn">Plays in ERN</span></span><span><i class="legend-pin external"></i><span data-i18n="providerView">Provider view</span></span><span><i class="legend-pin local"></i><span data-i18n="reviewedLocal">Reviewed local place</span></span></div>
       <p class="map-note" id="mapNote" role="status" aria-live="polite"></p>
       <div class="atlas-beyond" id="atlasBeyond" hidden><div class="atlas-beyond-head"><strong data-i18n="beyondPins">Beyond the mapped pins</strong><span id="atlasBeyondNote"></span></div><div class="atlas-beyond-grid" id="atlasBeyondGrid"></div></div>
       <p class="atlas-credit">Map base: Natural Earth public-domain geography · ERN simplified vector · equirectangular projection</p>
@@ -208,7 +208,7 @@
   <div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="viewerTitle" aria-describedby="viewerPlace">
     <div class="viewer-bar">
       <div><span class="viewer-truth" id="viewerTruth"></span><strong id="viewerTitle"></strong><small id="viewerPlace"></small></div>
-      <button id="closeViewer" aria-label="Close">×</button>
+      <button id="closeViewer" aria-label="Close" data-i18n-aria-label="ariaClose">×</button>
     </div>
     <div class="viewer-stage-wrap">
       <div class="viewer-stage" id="viewerStage"></div>
@@ -233,7 +233,7 @@
         <button id="nextViewer" data-i18n="next">Next</button>
       </div>
       <div class="viewer-actions">
-        <button id="favoriteViewer" aria-label="Save">♡</button>
+        <button id="favoriteViewer" aria-label="Save" data-i18n-aria-label="ariaSave">♡</button>
         <a id="sourceViewer" target="_blank" rel="noopener noreferrer" data-i18n="source">Source</a>
         <button id="shareViewer" data-i18n="share">Share</button>
         <button id="fullViewer" data-i18n="fullScreen">Full screen</button>
@@ -242,8 +242,8 @@
   </div>
 
   <button class="guide-launcher" id="guideLauncher" aria-expanded="false" aria-controls="guidePanel"><span>◎</span> ERN Guide</button>
-  <aside class="guide-panel" id="guidePanel" hidden aria-label="ERN Guide">
-    <div class="guide-head"><div><span class="eyebrow">ERN GUIDE</span><strong data-i18n="guideWhere">What are you curious to see?</strong></div><button id="guideClose" aria-label="Close ERN Guide">×</button></div>
+  <aside class="guide-panel" id="guidePanel" hidden aria-label="ERN Guide" data-i18n-aria-label="ariaGuide">
+    <div class="guide-head"><div><span class="eyebrow">ERN GUIDE</span><strong data-i18n="guideWhere">What are you curious to see?</strong></div><button id="guideClose" aria-label="Close ERN Guide" data-i18n-aria-label="ariaCloseGuide">×</button></div>
     <p class="guide-intro" data-i18n="guideIntro">You do not need the answer first. Start with a place, a mood, or a question.</p>
     <div class="guide-chips">
       <button data-guide="what is good on earth right now" data-i18n="guideGood">What’s good now?</button>
@@ -261,7 +261,7 @@
     <div class="guide-links"><a href="./now-moments.html">Now Moments</a><a href="./for-places.html" data-i18n="guideAddPlace">Cameras &amp; places</a></div>
   </aside>
 
-  <nav class="mobile-dock" aria-label="Mobile navigation">
+  <nav class="mobile-dock" aria-label="Mobile navigation" data-i18n-aria-label="ariaMobileNav">
     <button id="mobileWatch">▶<span data-i18n="watch">Watch</span></button>
     <button id="mobileExplore">⌕<span data-i18n="explore">Explore</span></button>
     <button id="mobileMap">◎<span data-i18n="map">Map</span></button>
