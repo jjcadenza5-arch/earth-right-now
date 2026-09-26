@@ -58,7 +58,7 @@
         <div class="hero-actions">
           <button class="primary" id="heroWatch"><span class="play-mark">▶</span> <span data-i18n="watchNow">Watch Earth Now</span> <span aria-hidden="true">→</span></button>
           <button id="heroNext" class="quiet-hero" data-i18n="nextMoment">Next moment</button>
-          <button id="heroGuide" class="quiet-hero">Ask ERN Guide</button>
+          <button id="heroGuide" class="quiet-hero" data-i18n="askGuide">Ask ERN Guide</button>
         </div>
       </div>
       <div class="hero-location" id="heroLocation">
@@ -90,7 +90,7 @@
 
     <section class="watch-section" id="watch">
       <div class="section-head dark-head">
-        <div><p class="eyebrow" data-i18n="watchNowEyebrow">WATCH EARTH NOW</p><h2><span class="watch-globe">◎</span> <span id="watchCount">20</span> current windows.</h2><p id="watchSubhead" data-i18n="watchSubhead">A changing world. Always something new to see.</p></div>
+        <div><p class="eyebrow" data-i18n="watchNowEyebrow">WATCH EARTH NOW</p><h2><span class="watch-globe">◎</span> <span id="watchCount">20</span> <span data-i18n="currentWindows">current windows.</span></h2><p id="watchSubhead" data-i18n="watchSubhead">A changing world. Always something new to see.</p></div>
         <button id="refreshSet" class="surprise">⤨ <span data-i18n="surpriseMe">Surprise Me</span></button>
       </div>
       <div class="set-note"><span id="setLabel">Featured now</span><span id="setReason">Chosen for quality, local light and variety.</span><span class="moment-summary" id="momentSummary"></span><span class="local-personal" id="personalNote">Personalized in this browser</span></div>
@@ -119,8 +119,8 @@
 
     <section class="local-earth-section" id="localEarth">
       <div class="section-head local-head">
-        <div><p class="eyebrow">LOCAL EARTH</p><h2>Small places deserve a window too.</h2></div>
-        <p>Villages, local markets, farms, harbours, neighbourhoods and smaller destinations can be worth seeing even when they are not famous.</p>
+        <div><p class="eyebrow" data-i18n="localEarth">LOCAL EARTH</p><h2 data-i18n="localEarthHeading">Small places deserve a window too.</h2></div>
+        <p data-i18n="localEarthDeck">Villages, local markets, farms, harbours, neighbourhoods and smaller destinations can be worth seeing even when they are not famous.</p>
       </div>
       <div class="local-earth-grid" id="localEarthGrid"></div>
     </section>
@@ -167,13 +167,13 @@
 
     <section class="participate-section" id="participate">
       <div class="section-head participate-head">
-        <div><p class="eyebrow">GROW THE VIEW</p><h2>Places, cameras and moments.</h2></div>
-        <p>ERN can grow through camera owners, local places and temporary visitor observations without turning ranking into advertising.</p>
+        <div><p class="eyebrow" data-i18n="growView">GROW THE VIEW</p><h2 data-i18n="growHeading">Places, cameras and moments.</h2></div>
+        <p data-i18n="growDeck">ERN can grow through camera owners, local places and temporary visitor observations without turning ranking into advertising.</p>
       </div>
       <div class="participate-grid">
-        <a class="participate-card" href="./for-places.html"><span>01</span><strong>Cameras & places</strong><small>See how camera owners and places can prepare a source for ERN review. Nothing is published without rights, truth and source-health checks.</small></a>
-        <a class="participate-card" href="./for-places.html#local-places"><span>02</span><strong>Local places & small businesses</strong><small>Learn how useful smaller places can become discoverable. Payment never buys ERN ranking.</small></a>
-        <a class="participate-card" href="./now-moments.html"><span>03</span><strong>Explore Now Moments</strong><small>Preview ERN’s short-lived visitor observations locally. Public sharing stays off until moderation and privacy infrastructure are ready.</small></a>
+        <a class="participate-card" href="./for-places.html"><span>01</span><strong data-i18n="camerasPlaces">Cameras & places</strong><small data-i18n="camerasPlacesDeck">See how camera owners and places can prepare a source for ERN review. Nothing is published without rights, truth and source-health checks.</small></a>
+        <a class="participate-card" href="./for-places.html#local-places"><span>02</span><strong data-i18n="localPlacesBusiness">Local places & small businesses</strong><small data-i18n="localPlacesDeck">Learn how useful smaller places can become discoverable. Payment never buys ERN ranking.</small></a>
+        <a class="participate-card" href="./now-moments.html"><span>03</span><strong data-i18n="exploreNowMoments">Explore Now Moments</strong><small data-i18n="nowMomentsDeck">Preview ERN’s short-lived visitor observations locally. Public sharing stays off until moderation and privacy infrastructure are ready.</small></a>
       </div>
     </section>
 
@@ -198,7 +198,7 @@
 
   <footer>
     <div><strong>Earth Right Now</strong> · See before you go.</div>
-    <div class="footer-links"><a href="./about.html">About & sources</a><a href="./for-places.html">For places & cameras</a><a href="./now-moments.html">Now Moments</a><a href="./privacy.html">Privacy</a></div>
+    <div class="footer-links"><a href="./about.html" data-i18n="aboutSources">About & sources</a><a href="./for-places.html" data-i18n="forPlacesCameras">For places & cameras</a><a href="./now-moments.html">Now Moments</a><a href="./privacy.html" data-i18n="privacy">Privacy</a></div>
   </footer>
 
   <div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="viewerTitle" aria-describedby="viewerPlace">
