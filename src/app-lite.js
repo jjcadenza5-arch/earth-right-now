@@ -507,7 +507,7 @@ function renderContext(s){
   note.textContent="Verified travel options are shown only when current. Affiliate or sponsored links are disclosed and never affect ERN ranking.";
  }else{
   disclosure.hidden=true;disclosure.textContent="";
-  note.textContent="Useful planning links for this place. Partner links can be added later without changing the ERN experience.";
+  note.textContent="Useful external planning links for this place. Earth-view ranking is independent of commercial relationships.";
  }
  box.hidden=!(story.textContent||tags.children.length||near.children.length);
 }
