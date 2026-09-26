@@ -6,8 +6,8 @@
 ## Stage D — historical catalog recovery — DONE
 Active catalog now contains 78 sources: 74 HEALTHY, 4 DEGRADED, and 0 UNKNOWN. Historical recovery review is complete: verified candidates were migrated from fresh evidence, while one unresolved legacy Vesuvius candidate is explicitly deferred rather than promoted from historical assumptions.
 
-## Stage E — experience restoration — ACTIVE
-Hero, immersive viewer, Watch Earth, Explore, Moments, My Earth, Living Atlas and Choose a Window use the shared truth/playback architecture. Continue browser-level fidelity validation against the mature ERN reference.
+## Stage E — experience restoration — MAINTENANCE / HUMAN-ACCEPTED
+Hero, immersive viewer, Watch Earth, Explore, Moments, My Earth, Living Atlas and Choose a Window use the shared truth/playback architecture. Human browser review on 2026-09-26 accepted the public experience for progression, with two known maintenance items: Watch Earth still has too much provider/open-current-source behavior, and mobile fullscreen remains imperfect on some phones. These remain maintenance work and do not block Phase 2.
 
 ## Stage F — Living Atlas and ERN Guide — ACTIVE
 Atlas and ERN Guide are connected to the same registry/truth gates. ERN Guide is not a generic chatbot: it is the tour-guide doorway into the whole product, meant to break the ice, understand visitor intent, explain why a view matters now, and move naturally across Watch Earth, Search, Atlas, Local Earth, My Earth, Now Moments and later travel actions. High-value Earth intent spans all seven supported interface languages. Coordinate provenance distinguishes exact camera positions from verified place/region reference points. **Atlas coordinate coverage/provenance is complete for the current catalog: 75 mapped sources, 0 unintended unmapped sources, 0 legacy mapped sources without provenance; five sources are intentionally unpinned by design.** Continue real-map fidelity and Guide relevance without creating a parallel truth source or guessing pin precision.
@@ -30,8 +30,8 @@ Provider research continuity: see `docs/PROVIDER_RESEARCH_HANDOFF_2026-09-25.md`
 ## Cross-cutting priority — Curiosity-first story layer
 Use small open questions to invite self-directed discovery: **Do not push the answer. Create the question.** This is a non-disruptive strengthening layer only; truth/currentness, source choice, navigation and playback architecture remain authoritative. See `docs/CURIOSITY_STORY_LAYER.md`.
 
-## Cross-cutting priority — Generative Guide privacy readiness
-The public privacy notice now documents the future generative Guide boundary: server-side secret isolation, trusted ERN context rehydration, no raw prompt/response operational logging, no visitor profiling, keyed rate limiting without raw network identifiers, and deterministic fallback. This completes only the published-privacy-notice requirement. The generative Guide remains `NOT_DEPLOYED`; endpoint, provider-specific data handling, rate limits, idempotency, cancellation, observability, safety and hard cost-stop evidence are still required before activation.
+## Cross-cutting priority — Generative Guide production phase
+The public privacy notice documents the generative Guide boundary. The repository now contains the approved Cloudflare Worker + GPT-5.6 Luna production foundation with deterministic-first escalation, server-side ERN catalog rehydration, keyed anonymous rate subjects, SQLite Durable Object rate/idempotency/cost state, Structured Outputs, model cancellation, aggregate-only metrics and a USD 10 monthly ceiling. **This is code readiness only.** The Guide remains `NOT_DEPLOYED` and paid AI remains OFF until a real Worker endpoint, Cloudflare secrets, provider-data-handling review, production health/cost verification and public deployment evidence are complete.
 
 
 ## Cross-cutting priority — Minimum LIVE HERE renewal workload
