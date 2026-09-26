@@ -34,3 +34,17 @@ function renderProviders(){
 }
 $("#makeCommand").onclick=()=>{const sha=String(manifest?.commit||"");if(!/^[0-9a-f]{40}$/i.test(sha)){command.textContent="Cannot build a recording command until release-manifest.json exposes a valid candidate SHA.";return}const text=String(note.value||"").trim();const escaped=text.replaceAll("\\","\\\\").replaceAll('"','\\"');command.textContent='npm run release:record -- '+key.value+' pass '+sha+' "'+escaped+'"';};
 load();
+
+const phase1Checks=[...document.querySelectorAll("#phase1Signoff input[type=checkbox]")];
+$("#copyPhase1").onclick=async()=>{
+ const passed=phase1Checks.filter(x=>x.checked).length,total=phase1Checks.length;
+ const incomplete=phase1Checks.filter(x=>!x.checked).map(x=>x.parentElement.textContent.trim());
+ const summary=[
+   "ERN Phase 1 browser review",
+   "Candidate: "+(manifest?.commit||"unknown"),
+   "Passed: "+passed+"/"+total,
+   incomplete.length?"Needs review: "+incomplete.join(" | "):"Result: All Phase 1 visitor checks passed."
+ ].join("\n");
+ try{await navigator.clipboard.writeText(summary);$("#copyPhase1").textContent="Copied";setTimeout(()=>$("#copyPhase1").textContent="Copy Phase 1 result",1200)}
+ catch{command.textContent=summary}
+};
