@@ -5,6 +5,7 @@ a(c.includes("@media(max-width:600px)"),"mobile breakpoint missing");
 a(c.includes(".mobile-dock"),"mobile navigation dock missing");
 a(c.includes(".window-grid{grid-template-columns:1fr 1fr"),"mobile Watch Earth two-column layout missing");
 a(c.includes(".viewer-bottom{padding:10px}"),"mobile viewer controls missing");
+a(fs.readFileSync("src/app-lite.js","utf8").includes('classList.add("faux-fullscreen")'),"mobile fullscreen runtime fallback missing");
 a(c.includes(".atlas{min-height:330px}"),"mobile Atlas sizing missing");
 a(c.includes(".wander-grid{grid-template-columns:1fr}"),"mobile destination stack missing");
 a(c.includes(".viewer-context{grid-template-columns:1fr}"),"mobile viewer context stack missing");
