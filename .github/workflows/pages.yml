@@ -22,6 +22,8 @@ on:
       - "manifest.webmanifest"
       - "service-worker.js"
       - "offline.html"
+      - "release-verification.html"
+      - "src/release-verification-console.js"
       - "robots.txt"
       - "sitemap.xml"
       - "CNAME"
