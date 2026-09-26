@@ -19,13 +19,28 @@
 <div class="warning">No check on this page is automatically recorded as a release pass. A PASS is valid only after the named real-world behavior was actually observed on the exact candidate commit.</div>
 <div class="grid" id="facts"></div>
 </section>
-<section class="card"><h2>Six real-world gates</h2><div id="gates"></div></section>
+<section class="card">
+<h2>Phase 1 visitor sign-off</h2>
+<p class="muted">This is the short human check before ERN moves beyond public-site readiness. Use ERN like a normal visitor. If everything feels right, you do not need to write a long report—only note anything that looks wrong, confusing, slow or unfinished.</p>
+<div class="checks" id="phase1Signoff">
+<label><input type="checkbox"> Desktop: Home → Watch Earth → open a window → Previous/Next → close viewer.</label>
+<label><input type="checkbox"> Explore: search for a place, open Living Atlas, open at least one map pin.</label>
+<label><input type="checkbox"> ERN Guide: ask for one place or mood and confirm the result makes sense.</label>
+<label><input type="checkbox"> Language: switch away from English and confirm the main page does not feel half-translated.</label>
+<label><input type="checkbox"> Viewer controls: Save ♡, Share, Source and Full screen behave normally.</label>
+<label><input type="checkbox"> Mobile: portrait and landscape controls remain reachable and the viewer does not trap you.</label>
+<label><input type="checkbox"> Overall feeling: nothing obvious says “unfinished”, overlaps badly, freezes, or makes you unsure what to do next.</label>
+</div>
+<p><a class="button" href="./" target="_blank" rel="noopener">Open ERN for this check</a></p>
+</section>
+<section class="card"><h2>Six operational release gates</h2><div id="gates"></div></section>
 <section class="card"><h2>Provider playback representatives</h2><p class="muted">These are the minimum inside-ERN representative windows that still need visible-media confirmation. Every degraded representative remains mandatory.</p><div id="providers">Loading…</div></section>
 <section class="card"><h2>Evidence note builder</h2><p class="muted">Write what you actually checked. This page stores nothing remotely.</p>
 <label for="key">Gate</label>
 <select id="key"><option>browser</option><option>mobile</option><option>providerPlayback</option><option>accessibility</option><option>performance</option><option>rollback</option></select>
 <label for="note">Observation note</label><textarea id="note" placeholder="Example: Safari 20 on macOS, Home → Explore → Atlas → viewer; Previous/Next and source link worked; no blocked controls observed."></textarea>
-<p><button id="makeCommand">Build recording command</button></p><div class="commands" id="command">Candidate must load before a command can be built.</div>
+<p><button id="makeCommand">Build recording command</button> <button id="copyPhase1" class="secondary" type="button">Copy Phase 1 result</button></p>
+<div class="commands" id="command">Candidate must load before a command can be built.</div>
 </section>
 <div class="footer">This verification console is intentionally unlinked and marked noindex. It is a release aid, not part of the visitor experience.</div>
 </main>
