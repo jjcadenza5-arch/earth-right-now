@@ -1,5 +1,5 @@
 import fs from "node:fs";
-const files=["index.html","src/app-lite.js","src/styles-lite.css","data/sources.json","data/local-directory.json"];
+const files=["index.html","src/app-lite.js","src/home-i18n.js","src/styles-lite.css","data/sources.json","data/local-directory.json"];
 const bytes=Object.fromEntries(files.map(p=>[p,fs.statSync(p).size]));
 const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)};
 const app=fs.readFileSync("src/app-lite.js","utf8"),index=fs.readFileSync("index.html","utf8");
