@@ -11,6 +11,8 @@ must(read("src/release-verification-console.js").includes('./#view='),"release v
 must(app.includes("localIntent="),"Search lost small/local-place intent handling");
 must(app.includes("function watchEligible(")&&app.includes("sources.filter(watchEligible)"),"Watch Earth must exclude PREVIEW-only sources from the curated Top 20");
 must(app.includes("function currentInside(s)")&&app.includes("healthy.filter(currentInside)")&&app.includes("sorted.filter(currentInside)")&&app.includes('currentTruthClaim(s)&&watchExperienceEligible(s)'),"Visitor Play here/Watch Earth paths lost the current-proven inside boundary");
+must(app.includes("function provenWatchHere(s)")&&app.includes("if(proven.length>=6)pool=proven"),"Watch Earth lost proven in-ERN preference");
+must(app.includes("function atlasEligible(s)")&&app.includes("state.sources.filter(atlasEligible)"),"Living Atlas lost broader truthful mapped-catalog coverage");
 must(app.includes("localDirectoryMatch(")&&app.includes("localDirectoryCard("),"reviewed local-place search plumbing missing");
 must(Array.isArray(localDirectory),"local-directory registry must be an array");
 must(requireExists("scripts/participation-preflight.mjs"),"participation safety preflight missing");
