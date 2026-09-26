@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "ern-guide-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-26",
+  "vars": {
+    "ERN_GUIDE_AI_ENABLED": "false",
+    "ERN_GUIDE_MODEL": "gpt-5.6-luna",
+    "ERN_GUIDE_MONTHLY_COST_CEILING_USD": "10",
+    "ERN_PUBLIC_ORIGIN": "https://earthrightnow.app"
+  },
+  "secrets": {
+    "required": [
+      "OPENAI_API_KEY",
+      "ERN_RATE_HMAC_KEY"
+    ]
+  }
+}
