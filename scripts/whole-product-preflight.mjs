@@ -23,6 +23,8 @@ must(app.includes('DYNAMIC_UNPINNED'),"Living Atlas must distinguish dynamic Ear
 must(index.includes("atlas-legend")&&app.includes("coordinate provenance")&&css.includes("Atlas legend and coordinate honesty"),"Living Atlas lost coordinate-honesty cues");
 must(app.includes("renderWatch();renderWander();renderMap()")&&app.includes("categoryMatch(s,state.category)"),"Living Atlas no longer follows the visitor category context");
 must(css.includes(".guide-panel"),"ERN Guide visual doorway missing");
+must(index.includes('src/guide-ai-client.js')&&requireExists("src/guide-ai-client.js")&&requireExists("src/guide-ai-routing.js"),"public deterministic-first Guide AI bridge missing");
+const guideAiClient=read("src/guide-ai-client.js");must(guideAiClient.includes("guideAiEscalationDecision")&&guideAiClient.includes('dataset.aiState="fallback"')&&guideAiClient.includes("!r.ok"),"Guide AI bridge lost deterministic fallback discipline");
 must(css.includes("Mockup fidelity lock"),"approved ERN mockup fidelity layer missing");
 must(css.includes("Landscape mobile viewer: keep the Earth window visible"),"landscape mobile viewer protection missing");
 must(css.includes("Landscape action dock: always reachable"),"landscape action controls are not protected");
