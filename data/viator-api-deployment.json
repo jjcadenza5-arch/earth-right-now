@@ -21,5 +21,7 @@
     "errorCode": "UNAUTHORIZED",
     "errorMessage": "Invalid API Key",
     "observedAt": "2026-09-27T15:10:00Z"
-  }
+  },
+  "nextRecommendedRetestAt": "2026-09-28T15:21:00Z",
+  "retestPolicy": "Do not repeat sandbox diagnostics before the recommended retest time unless Viator reports the key active earlier or the key/access state materially changes."
 }
