@@ -60,3 +60,10 @@ To continue production deployment:
 8. only then wire dynamic products into the public ERN destination/planning surface.
 
 Do not paste the Viator API key into chat or GitHub.
+
+
+## Verification environment rule
+
+Viator's current Partner API v2 uses `/destinations` for destination taxonomy. The legacy `/v1/taxonomy/destinations` path must not be used for new ERN integration work.
+
+All integration testing remains on `https://api.sandbox.viator.com/partner`. Production API endpoints are not used for tests. ERN may switch to production only after the mapping, product-search, attribution and public-release gates are complete.
