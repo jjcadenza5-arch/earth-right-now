@@ -6,7 +6,7 @@ assert.equal(x.placeId,"auckland-viaduct-harbour");
 assert.equal(x.intent,"activities");
 assert.equal(x.provider,"Viator");
 assert.equal(x.affiliate,true);
-assert.equal(x.sponsored,false);
+assert.equal(x.sponsored,false);\nassert.equal(x.linkScope,"destination");\nassert.equal(x.resolvedBehavior,"DESTINATION_RESULTS");
 assert.equal(x.verified,true);
 assert.match(x.url,/pid=P00322254/);
 assert.match(x.url,/medium=link/);
