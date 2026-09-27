@@ -1,4 +1,4 @@
-import {publicViatorProduct,validateViatorSearchRequest} from "../../src/viator-api-contract.js";
+import {publicViatorProduct,validateViatorSearchRequest,viatorCampaignValue} from "../../src/viator-api-contract.js";
 
 const JSON_HEADERS={"content-type":"application/json; charset=utf-8","cache-control":"no-store"};
 const viatorBase=(env)=>String(env.VIATOR_API_BASE||"https://api.sandbox.viator.com/partner").replace(/\/$/,"");
@@ -117,14 +117,15 @@ export default{
     const mapping=approvedMapping(registry,checked.value.placeId);
     if(!mapping)return reply(404,{ok:false,reason:"PLACE_NOT_MAPPED"},origin);
     try{
-      const data=await viatorFetch("/products/search",{env,method:"POST",language:checked.value.language,body:{
+      const campaign=encodeURIComponent(viatorCampaignValue(checked.value.placeId));
+      const data=await viatorFetch("/products/search?campaign-value="+campaign,{env,method:"POST",language:checked.value.language,body:{
         filtering:{destination:String(mapping.viatorDestinationId)},
         sorting:{sort:"DEFAULT"},
         pagination:{start:1,count:checked.value.count},
-        currency:String(input?.currency||"USD")
+        currency:checked.value.currency
       }});
-      const products=(Array.isArray(data?.products)?data.products:[]).slice(0,checked.value.count).map(publicViatorProduct).filter(x=>x.productCode&&x.title);
-      return reply(200,{ok:true,placeId:checked.value.placeId,destination:{id:String(mapping.viatorDestinationId),name:String(mapping.viatorDestinationName||"")},products},origin,"public, max-age=900");
+      const products=(Array.isArray(data?.products)?data.products:[]).slice(0,checked.value.count).map(publicViatorProduct).filter(x=>x.productCode&&x.title&&x.productUrl);
+      return reply(200,{ok:true,placeId:checked.value.placeId,destination:{id:String(mapping.viatorDestinationId),name:String(mapping.viatorDestinationName||"")},campaign:viatorCampaignValue(checked.value.placeId),products},origin,"public, max-age=900");
     }catch(error){
       return reply(503,{ok:false,reason:String(error?.message||"VIATOR_PRODUCT_SEARCH_FAILED")},origin);
     }
