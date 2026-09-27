@@ -31,7 +31,7 @@
         }
       ],
       "rationale": "Broad first-wave coverage across stays/transport/attractions plus tours/activities without changing ERN Earth-view ranking.",
-      "next": "VERIFY_VIATOR_PRIVATE_STAGING_AND_WAIT_FOR_BOOKING_COM"
+      "next": "MONITOR_VIATOR_AUCKLAND_PILOT_AND_WAIT_FOR_BOOKING_COM"
     },
     {
       "id": "wave-b",
@@ -50,7 +50,7 @@
       "rationale": "Useful transport/referral depth but adds a separate Impact-based tracking relationship, so defer until the first wave is operational."
     }
   ],
-  "next": "VERIFY_VIATOR_PRIVATE_STAGING_AND_WAIT_FOR_BOOKING_COM",
+  "next": "MONITOR_VIATOR_AUCKLAND_PILOT_AND_WAIT_FOR_BOOKING_COM",
   "note": "Application, account creation, acceptance and credential setup are external relationship actions. ERN prepares the workflow but does not claim an affiliate relationship until documented acceptance exists.",
-  "updatedAt": "2026-09-27T13:17:00Z"
+  "updatedAt": "2026-09-27T13:24:00Z"
 }
