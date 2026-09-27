@@ -238,7 +238,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     commercialBreadthComplete:commercialOnboarding?.state==="PILOT_COVERAGE_REACHED",
     commercialDepthComplete:(commercialResearchDepth?.items||[]).length===0,
     localEarthComplete:localDirectory?.state==="PILOT_COMPLETE",
-    guideLocallyComplete:guideAi?.mode==="DETERMINISTIC_ONLY"&&guideAi?.deterministicFallback===true,
+    guideLocallyComplete:guideAi?.deterministicFallback===true&&((guideAi?.mode==="DETERMINISTIC_ONLY")||(guideAi?.mode==="GENERATIVE_ENABLED"&&guideAi?.ready===true&&guideAi?.deployment?.ready===true)),
     earthSignalsLocallyComplete:earthSignals?.mode==="READ_ONLY"&&earthSignals?.privacyNoticeDraft?.published===true,
     submissionLocallyComplete:submissionExternalOnly
   };

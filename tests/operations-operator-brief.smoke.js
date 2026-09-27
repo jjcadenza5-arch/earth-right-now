@@ -157,6 +157,27 @@ assert.match(autonomousHoldBrief,/AUTONOMOUS HOLD/);
 assert.match(autonomousHoldBrief,/no high-priority local implementation or research lane remains open/);
 assert.match(autonomousHoldBrief,/Do not create new tasks merely to keep activity moving/);
 
+const autonomousGenerativeGuideHold=operationsOperatorBrief({
+ snapshot:{insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},providers:{families:2,targetFamilies:2},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ operatorReviewQueue:{renewalCount:5,renewalRequiredCount:0,primaryItems:[],backlogItems:[],items:[]},
+ playbackEvidenceConsistency:{summary:{issues:0}},
+ sourceRevalidationTriage:{immediate:[]},
+ providerDiscoveryQueue:{state:"CURRENT_CATALOG_RESEARCH_COMPLETE"},
+ providerGeneratedTargets:{items:[
+   {state:"EXACT_PROVIDER_CODE_REQUIRED",blockerReason:"interactive provider generator"},
+   {state:"EXACT_PROVIDER_TARGET_URL_REQUIRED",blockerReason:"provider target URL"}
+ ]},
+ commercialOnboarding:{state:"PILOT_COVERAGE_REACHED"},
+ commercialResearchDepth:{items:[]},
+ localDirectory:{state:"PILOT_COMPLETE"},
+ guideAi:{mode:"GENERATIVE_ENABLED",ready:true,deterministicFallback:true,deployment:{ready:true,state:"DEPLOYMENT_EVIDENCE_COMPLETE"}},
+ earthSignals:{mode:"READ_ONLY",privacyNoticeDraft:{published:true}},
+ submissionTransport:{active:false,missing:["HTTPS_REVIEW_ENDPOINT"]}
+});
+assert.match(autonomousGenerativeGuideHold,/AUTONOMOUS HOLD/);
+assert.doesNotMatch(autonomousGenerativeGuideHold,/guideLocallyComplete/);
+
 const partialHoldBrief=operationsOperatorBrief({
  snapshot:{insideERN:{ready:6,targetReady:5,readyShortfall:0,recoveryDebt:0},providers:{families:2,targetFamilies:2},release:{blockers:0}},
  delta:{direction:"UNCHANGED",improved:[],regressed:[]},
