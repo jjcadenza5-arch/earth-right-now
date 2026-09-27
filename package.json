@@ -67,7 +67,8 @@
     "guide-ai:status": "node scripts/guide-ai-status.mjs",
     "inside:provider-generated-targets": "node scripts/provider-generated-target-status.mjs",
     "business:research-depth": "node scripts/commercial-research-depth-queue.mjs",
-    "local:directory-status": "node scripts/local-directory-status.mjs"
+    "local:directory-status": "node scripts/local-directory-status.mjs",
+    "discoverability:preflight": "node scripts/discoverability-preflight.mjs"
   },
   "engines": {
     "node": ">=20"
