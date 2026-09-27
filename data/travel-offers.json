@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "id": "viator-auckland-activities-pilot",
+    "placeId": "auckland-viaduct-harbour",
+    "intent": "activities",
+    "title": "Explore Auckland activities",
+    "provider": "Viator",
+    "url": "https://www.viator.com/tours/Auckland/Hobbiton-Movie-Set-and-Waitomo-Glowworm-Caves-Day-Trip-from-Auckland/d391-37991P3?pid=P00322254&mcid=42383&medium=link",
+    "affiliate": true,
+    "sponsored": false,
+    "verified": true,
+    "verifiedAt": "2026-09-27T13:24:00Z",
+    "verificationNote": "Operator click-through confirmed a working Viator Auckland destination/results experience with ERN partner tracking retained. Treat as destination-level activity link, not a guaranteed deep link to one specific tour."
+  }
+]
