@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "status": "NOT_DEPLOYED",
-  "endpointUrl": null,
-  "secretIsolation": false,
+  "status": "DEPLOYED_GATED",
+  "endpointUrl": "https://ern-travel-api.jjcadenza6.workers.dev",
+  "secretIsolation": true,
   "corsOrigin": "https://earthrightnow.app",
   "destinationMappingRequired": true,
   "fuzzyAutomaticMappingAllowed": false,
-  "apiKeyConfigured": false,
+  "apiKeyConfigured": true,
   "taxonomyVerified": false,
   "productSearchVerified": false,
   "affiliateAttributionVerified": false,
   "publicActivationAllowed": false,
-  "checkedAt": "2026-09-27T13:40:00Z",
-  "note": "Code readiness only. Do not expose Viator credentials client-side. Public activation remains blocked until a real Cloudflare Worker, secret, taxonomy mapping, search verification and affiliate attribution check exist."
+  "checkedAt": "2026-09-27T14:26:00Z",
+  "note": "Production Worker health check confirmed Viator API enabled, API key configured, explicit-only mapping mode, public activation still disabled, and no secret values exposed. Taxonomy/product/attribution verification remain pending."
 }
