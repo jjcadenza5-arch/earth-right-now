@@ -1,7 +1,7 @@
 import {publicViatorProduct,validateViatorSearchRequest} from "../../src/viator-api-contract.js";
 
 const JSON_HEADERS={"content-type":"application/json; charset=utf-8","cache-control":"no-store"};
-const VIATOR_BASE="https://api.viator.com/partner";
+const viatorBase=(env)=>String(env.VIATOR_API_BASE||"https://api.sandbox.viator.com/partner").replace(/\/$/,"");
 const allowedOrigin=(request,env)=>{
   const want=String(env.ERN_PUBLIC_ORIGIN||"https://earthrightnow.app").replace(/\/$/,"");
   const got=String(request.headers.get("origin")||"").replace(/\/$/,"");
@@ -19,7 +19,7 @@ const viatorHeaders=(env,language="en-US")=>({
   "exp-api-key":env.VIATOR_API_KEY
 });
 async function viatorFetch(path,{env,method="GET",language="en-US",body=null}={}){
-  const r=await fetch(VIATOR_BASE+path,{method,headers:viatorHeaders(env,language),body:body?JSON.stringify(body):undefined});
+  const r=await fetch(viatorBase(env)+path,{method,headers:viatorHeaders(env,language),body:body?JSON.stringify(body):undefined});
   if(!r.ok)throw new Error("VIATOR_"+r.status);
   return r.json();
 }
@@ -47,7 +47,7 @@ export default{
     }}):new Response(null,{status:403});
   }
   if(request.method==="GET"&&url.pathname==="/health"){
-    return reply(200,{ok:true,service:"ERN Travel API",viatorEnabled:enabled,apiKeyConfigured:Boolean(env.VIATOR_API_KEY),mappingMode:"EXPLICIT_ONLY",publicActivationAllowed:false,secretValuesExposed:false},origin);
+    return reply(200,{ok:true,service:"ERN Travel API",viatorEnabled:enabled,apiKeyConfigured:Boolean(env.VIATOR_API_KEY),apiEnvironment:viatorBase(env).includes("sandbox")?"SANDBOX":"PRODUCTION",mappingMode:"EXPLICIT_ONLY",publicActivationAllowed:false,secretValuesExposed:false},origin);
   }
   if(!origin)return reply(403,{ok:false,reason:"ORIGIN_NOT_ALLOWED"});
   if(!enabled)return reply(503,{ok:false,reason:"VIATOR_API_DISABLED"},origin);
@@ -55,7 +55,7 @@ export default{
 
   if(request.method==="GET"&&url.pathname==="/api/viator/destinations"){
     try{
-      const data=await viatorFetch("/v1/taxonomy/destinations",{env});
+      const data=await viatorFetch("/destinations",{env});
       const items=Array.isArray(data?.destinations)?data.destinations:[];
       return reply(200,{ok:true,destinations:items.map(x=>({
         destinationId:String(x.destinationId||x.id||""),
