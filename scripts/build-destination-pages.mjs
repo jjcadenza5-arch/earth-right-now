@@ -34,6 +34,7 @@ for(const [id,items] of map){
   const desc=(preferred.story||("Available Earth Right Now views for "+title)).slice(0,220);
   const url=base+"places/"+encodeURIComponent(id)+"/";
   const lat=Number(preferred.lat),lon=Number(preferred.lon);
+  const lastmod=latestDate(items);
   const placeData={
     "@type":"Place",
     "@id":url+"#place",
@@ -47,7 +48,7 @@ for(const [id,items] of map){
   const graph={
     "@context":"https://schema.org",
     "@graph":[
-      {"@type":"WebPage","@id":url,"url":url,"name":"See "+title+" before you go — Earth Right Now","description":desc,"isPartOf":{"@id":base+"#website"},"mainEntity":{"@id":url+"#place"},"breadcrumb":{"@id":url+"#breadcrumb"}},
+      {"@type":"WebPage","@id":url,"url":url,"name":"See "+title+" before you go — Earth Right Now","description":desc,"isPartOf":{"@id":base+"#website"},"mainEntity":{"@id":url+"#place"},"breadcrumb":{"@id":url+"#breadcrumb"},...(lastmod?{"dateModified":lastmod}: {})},
       placeData,
       {"@type":"BreadcrumbList","@id":url+"#breadcrumb","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Earth Right Now","item":base},
@@ -84,7 +85,6 @@ for(const [id,items] of map){
   fs.mkdirSync(dir,{recursive:true});
   fs.writeFileSync(dir+"/index.html",html);
 
-  const lastmod=latestDate(items);
   urls.push({loc:url,lastmod});
   placeRows.push({id,title,country:preferred.country||"",region:preferred.region||"",story:desc,lastmod});
 }
@@ -92,7 +92,8 @@ for(const [id,items] of map){
 placeRows.sort((a,b)=>a.country.localeCompare(b.country)||a.title.localeCompare(b.title));
 const directoryItems=placeRows.map(p=>'<li><a href="'+base+'places/'+encodeURIComponent(p.id)+'/"><strong>'+esc(p.title)+'</strong></a><span>'+esc([p.region,p.country].filter(Boolean).join(", "))+'</span><small>'+esc(p.story)+'</small></li>').join("");
 const directoryData={"@context":"https://schema.org","@graph":[
-  {"@type":"CollectionPage","@id":base+"places/","url":base+"places/","name":"Places on Earth Right Now","description":"Browse crawlable destination pages for places with live or current Earth Right Now views.","isPartOf":{"@id":base+"#website"}},
+  {"@type":"CollectionPage","@id":base+"places/","url":base+"places/","name":"Places on Earth Right Now","description":"Browse crawlable destination pages for places with live or current Earth Right Now views.","isPartOf":{"@id":base+"#website"},"mainEntity":{"@id":base+"places/#list"}},
+  {"@type":"ItemList","@id":base+"places/#list","name":"Places on Earth Right Now","numberOfItems":placeRows.length,"itemListElement":placeRows.map((p,i)=>({"@type":"ListItem","position":i+1,"name":p.title,"url":base+"places/"+encodeURIComponent(p.id)+"/"}))},
   {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Earth Right Now","item":base},{"@type":"ListItem","position":2,"name":"Places","item":base+"places/"}]}
 ]};
 const directoryHtml='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Places — Earth Right Now</title><meta name="description" content="Browse places with truthful live and current Earth Right Now views. See before you go."><meta name="robots" content="index,follow"><link rel="canonical" href="'+base+'places/"><meta property="og:site_name" content="Earth Right Now"><meta property="og:title" content="Places — Earth Right Now"><meta property="og:description" content="Browse places with truthful live and current Earth Right Now views. See before you go."><meta property="og:type" content="website"><meta property="og:url" content="'+base+'places/"><meta property="og:image" content="'+base+'assets/ern-social-card.png"><script type="application/ld+json">'+JSON.stringify(directoryData).replace(/</g,"\\u003c")+'</script><style>:root{color-scheme:dark}body{margin:0;background:#062f2b;color:#f2f8f6;font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1000px;margin:auto;padding:56px 24px 88px}a{color:#b5e2d7}h1{font:500 clamp(2.8rem,7vw,5rem)/1 Georgia,serif;margin:.25em 0}.intro{max-width:700px;color:#c9dad5}.grid{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.grid li{border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:16px;background:rgba(255,255,255,.04)}.grid strong,.grid span,.grid small{display:block}.grid span{color:#a9c7bf;margin:.25rem 0}.grid small{color:#c9dad5}.ern-breadcrumb{display:flex;gap:.55rem}</style></head><body><main><nav class="ern-breadcrumb" aria-label="Breadcrumb"><a href="'+base+'">Earth Right Now</a><span>›</span><span aria-current="page">Places</span></nav><h1>Places on Earth Right Now</h1><p class="intro">Browse places with live video, refreshed current images and verified provider-hosted current views. ERN labels each source truthfully and keeps provider attribution visible.</p><ul class="grid">'+directoryItems+'</ul></main></body></html>';
