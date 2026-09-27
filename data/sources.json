@@ -34,7 +34,7 @@
     "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Auckland Viaduct YouTube channel-live player delivers current live content after the visitor presses Play.",
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.viaduct.co.nz/",
-    "playbackVerifiedAt": "2026-09-25T14:59:12.384Z",
+    "playbackVerifiedAt": "2026-09-27T16:03:17.113Z",
     "watchHold": true,
     "watchHoldReason": "USER_BROWSER_REVIEW_2026-09-26_YOUTUBE_PLAYBACK_UNRELIABLE"
   },
@@ -958,7 +958,7 @@
     "failureReason": null,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/taiwan/kaohsiung/cijin-beach/",
-    "playbackVerifiedAt": "2026-09-25T14:58:26.918Z"
+    "playbackVerifiedAt": "2026-09-27T16:03:57.829Z"
   },
   {
     "id": "cancun-live-aqua-beach",
@@ -1892,7 +1892,7 @@
     "coordinateSourceUrl": "https://mapcarta.com/25426064",
     "coordinateNote": "Public geographic reference for Ponte di Legno town; ERN treats this as a regional reference for the Adamello-area view, not the camera position.",
     "freshnessEvidence": "Current CouchTourist Ponte di Legno / Adamello page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 8621). Source page is current; deployed ERN playback remains separately unverified.",
-    "playbackVerifiedAt": "2026-09-25T14:58:57.886Z"
+    "playbackVerifiedAt": "2026-09-27T16:03:49.996Z"
   },
   {
     "id": "pleasant-beach-lake-ontario",
@@ -1997,7 +1997,7 @@
     "lon": 5.39343,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/norway/ulriken-mountain-view-bergen-norway/",
-    "playbackVerifiedAt": "2026-09-25T14:58:20.419Z"
+    "playbackVerifiedAt": "2026-09-27T16:03:27.884Z"
   },
   {
     "id": "waikiki-south-shore",
@@ -2481,7 +2481,7 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www3.gobiernodecanarias.org/medusa/wiki/index.php?title=Volc%C3%A1n_de_Tajogaite_o_Cabezavaca",
     "coordinateNote": "Government of the Canary Islands reference coordinates for Volcán de Tajogaite.",
-    "playbackVerifiedAt": "2026-09-25T07:07:39.994Z",
+    "playbackVerifiedAt": "2026-09-27T16:03:03.733Z",
     "attribution": "Webcam La Palma — webcam-lapalma.de",
     "attributionUrl": "https://webcam-lapalma.de/",
     "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Tajogaite iframe delivers current live content."
