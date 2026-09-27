@@ -8,6 +8,7 @@ const deployment=JSON.parse(fs.readFileSync("data/viator-api-deployment.json","u
 const map=JSON.parse(fs.readFileSync("data/viator-destination-map.json","utf8"));
 
 assert.match(cfg,/"ERN_VIATOR_API_ENABLED": "true"/);
+assert.match(cfg,/"ERN_VIATOR_PUBLIC_PRODUCTS_ENABLED": "false"/);
 assert.match(cfg,/api\.sandbox\.viator\.com\/partner/);
 assert.match(worker,/exp-api-key/);
 assert.match(worker,/\/destinations/);
@@ -16,6 +17,7 @@ assert.match(worker,/\/api\/viator\/diagnostics/);
 assert.match(worker,/campaign-value/);
 assert.match(worker,/approvedMapping/);
 assert.match(worker,/PLACE_NOT_MAPPED/);
+assert.match(worker,/PUBLIC_PRODUCTS_DISABLED/);
 assert.match(worker,/publicViatorProduct/);
 assert.ok(!worker.includes("P00322254"),"Partner ID must not be hard-coded in API Worker");
 
