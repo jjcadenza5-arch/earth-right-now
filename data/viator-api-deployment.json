@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "NOT_DEPLOYED",
+  "endpointUrl": null,
+  "secretIsolation": false,
+  "corsOrigin": "https://earthrightnow.app",
+  "destinationMappingRequired": true,
+  "fuzzyAutomaticMappingAllowed": false,
+  "apiKeyConfigured": false,
+  "taxonomyVerified": false,
+  "productSearchVerified": false,
+  "affiliateAttributionVerified": false,
+  "publicActivationAllowed": false,
+  "checkedAt": "2026-09-27T13:40:00Z",
+  "note": "Code readiness only. Do not expose Viator credentials client-side. Public activation remains blocked until a real Cloudflare Worker, secret, taxonomy mapping, search verification and affiliate attribution check exist."
+}
