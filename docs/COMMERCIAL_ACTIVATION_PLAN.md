@@ -1,6 +1,6 @@
 # ERN commercial activation plan
 
-Status: **PHASE 3 OPEN — FIRST WAVE REQUIRES USER APPLICATION**
+Status: **PHASE 3 ACTIVE — VIATOR LIMITED PILOT, BOOKING.COM PENDING**
 
 Opened: 2026-09-27
 
@@ -16,17 +16,19 @@ Do not publish tracked affiliate links or claim a partner relationship until acc
 
 Why first: one relationship can cover a broad range of travel intents around ERN places, including accommodations and other travel offerings. The current official Booking.com affiliate page directs new affiliates to register and complete regional enrollment through CJ.
 
-Current ERN state: **READY FOR USER APPLICATION**  
-Relationship: **NOT ACTIVE**  
+Current ERN state: **APPLICATION SUBMITTED / PENDING REVIEW**  
+Relationship: **NOT YET ACTIVE**  
 Tracked links: **OFF**
 
 ### 2. Viator
 
-Why first: complements ERN's place discovery with tours, activities and ticketable experiences. The current official Viator Partner Program remains open for affiliate enrollment and provides link-based monetization after enrollment.
+Why first: complements ERN's place discovery with tours, activities and ticketable experiences.
 
-Current ERN state: **READY FOR USER APPLICATION**  
-Relationship: **NOT ACTIVE**  
-Tracked links: **OFF**
+Current ERN state: **ACTIVE — LIMITED PUBLIC PILOT**  
+Relationship: **ACTIVE**  
+Tracked links: **ON only for the verified Auckland activities pilot**
+
+The first tracked link retains ERN's Viator partner ID and resolves to Auckland activity results. ERN records it as a **destination-level** affiliate link, not a guaranteed deep link to one specific tour. Specific-experience links may be added later only when their click-through behavior is verified as specific.
 
 ## Later waves
 
@@ -55,4 +57,4 @@ Only after a program confirms acceptance:
 - activate a limited public pilot;
 - confirm Earth-view ranking is unchanged.
 
-This is the finite next lane. Do not reopen 30-place commercial research while these applications are unresolved.
+Current finite lane: monitor the Auckland Viator pilot and wait for Booking.com review. Do not reopen the 30-place commercial research set or start Agoda/Skyscanner merely to create activity. Expand Viator only with verified destination or experience links whose scope is represented truthfully.
