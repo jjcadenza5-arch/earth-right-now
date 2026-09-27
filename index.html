@@ -22,7 +22,10 @@
   <meta name="twitter:title" content="Earth Right Now — See Before You Go">
   <meta name="twitter:description" content="Live views from remarkable places. Real conditions. Real moments. A more connected planet.">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebSite","name":"Earth Right Now","url":"https://earthrightnow.app/","description":"Live and current windows from remarkable places around Earth. See before you go.","potentialAction":{"@type":"SearchAction","target":"https://earthrightnow.app/?q={search_term_string}","query-input":"required name=search_term_string"}}
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"WebSite","@id":"https://earthrightnow.app/#website","name":"Earth Right Now","alternateName":"ERN","url":"https://earthrightnow.app/","description":"Live and current windows from remarkable places around Earth. See before you go.","publisher":{"@id":"https://earthrightnow.app/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://earthrightnow.app/?q={search_term_string}"},"query-input":"required name=search_term_string"}},
+    {"@type":"Organization","@id":"https://earthrightnow.app/#organization","name":"Earth Right Now","alternateName":"ERN","url":"https://earthrightnow.app/","logo":{"@type":"ImageObject","url":"https://earthrightnow.app/assets/ern-icon-512.png","contentUrl":"https://earthrightnow.app/assets/ern-icon-512.png","width":512,"height":512},"description":"Earth Right Now curates truthful live and current views of real places so people can see before they go."}
+  ]}
   </script>
   <link rel="stylesheet" href="./src/styles-lite.css">
 </head>
