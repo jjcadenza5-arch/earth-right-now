@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import assert from "node:assert/strict";
-import {validateViatorSearchRequest,publicViatorProduct} from "../src/viator-api-contract.js";
+import {validateViatorSearchRequest,publicViatorProduct,safeViatorAffiliateUrl,viatorCampaignValue} from "../src/viator-api-contract.js";
 
 const cfg=fs.readFileSync("travel-worker/wrangler.jsonc","utf8");
 const worker=fs.readFileSync("travel-worker/src/index.js","utf8");
@@ -25,7 +25,7 @@ assert.equal(deployment.publicActivationAllowed,false);
 assert.equal(map.policy.automaticFuzzyMatchingAllowed,false);
 assert.equal(map.policy.publicProductsRequireApprovedMapping,true);
 
-assert.equal(validateViatorSearchRequest({placeId:"p",language:"en-US",count:6}).valid,true);
+assert.equal(validateViatorSearchRequest({placeId:"p",language:"en-US",currency:"THB",count:6}).valid,true);\nassert.equal(validateViatorSearchRequest({placeId:"p",language:"en-US",currency:"XYZ",count:6}).valid,false);\nassert.equal(safeViatorAffiliateUrl("https://www.viator.com/tours/test?pid=P1"),"https://www.viator.com/tours/test?pid=P1");\nassert.equal(safeViatorAffiliateUrl("https://example.com/not-viator"),"");\nassert.equal(viatorCampaignValue("auckland-viaduct-harbour"),"ern-auckland-viaduct-harbour");
 assert.equal(validateViatorSearchRequest({placeId:"",language:"en-US",count:6}).valid,false);
 
 const p=publicViatorProduct({
@@ -35,7 +35,7 @@ const p=publicViatorProduct({
  reviews:{combinedAverageRating:4.8,totalReviews:10},
  pricing:{summary:{fromPrice:99},currency:"USD"}
 });
-assert.equal(p.provider,"Viator");
+assert.equal(p.provider,"Viator");\nassert.equal(p.affiliate,true);\nassert.equal(p.linkScope,"experience");
 assert.equal(p.rating,4.8);
 
 console.log("Viator API foundation smoke: ok");
