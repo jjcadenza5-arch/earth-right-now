@@ -1,3 +1,14 @@
+## 2026-09-27 — Viator API deployed safely; sandbox key activation pending
+- Created and deployed the separate Cloudflare Worker `ern-travel-api` from the ERN repository; the Viator key exists only as the encrypted `VIATOR_API_KEY` Worker secret.
+- Live `/health` confirmed the API layer is enabled, the key is configured, mapping mode is explicit-only, public activation is off, and secret values are not exposed.
+- Corrected the Viator integration from the retired legacy taxonomy path to Partner API v2 `/destinations` and kept all verification on `api.sandbox.viator.com`.
+- Safe diagnostics against both `/destinations` and the documented sample product `/products/5010SYDNEY` currently return 401 `UNAUTHORIZED / Invalid API Key`.
+- The Viator partner portal shows the sandbox key as Enabled / Basic Access and warns that activation can take up to 24 hours. This is now treated as a provider-side activation hold; ERN must not repeatedly rotate the key or switch to production for testing.
+- Public API products remain independently fail-closed through `ERN_VIATOR_PUBLIC_PRODUCTS_ENABLED=false`; approving a destination mapping alone cannot expose API products.
+- Product-search preparation now preserves Viator's returned affiliate `productUrl` exactly, rejects non-Viator outbound URLs, adds a place-scoped ERN campaign value, and drops products without a safe affiliate link.
+- Added exact-only Auckland taxonomy review with parent ancestry and New Zealand country confirmation. Fuzzy matching and automatic mapping approval remain prohibited.
+- Existing Auckland destination-level affiliate pilot remains unchanged and verified; dynamic API products will not replace it until sandbox authentication, taxonomy mapping, product search, and returned-link attribution all pass.
+
 ## 2026-09-25 — Fresh operator playback evidence applied
 - Accepted user-exported deployed-origin review batch `16c76f3fbec0fc76` from `https://earthrightnow.app/review/inside-ern.html`.
 - HUMAN_PLAYBACK renewed/confirmed for Auckland Viaduct Harbour, Bergen — Ulriken Mountain, Cijin Beach — Kaohsiung, La Palma — Aridane Valley, La Palma — Caldera de Taburiente, Ponte di Legno — Adamello, Skeikampen — Mountain Resort, Takayama — Miyagawa & Kaji Bridge, and Verbier using the exact user-recorded timestamps.
