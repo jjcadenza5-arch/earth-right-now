@@ -48,3 +48,20 @@ $("#copyPhase1").onclick=async()=>{
  try{await navigator.clipboard.writeText(summary);$("#copyPhase1").textContent="Copied";setTimeout(()=>$("#copyPhase1").textContent="Copy Phase 1 result",1200)}
  catch{command.textContent=summary}
 };
+
+const GUIDE_AI_ENDPOINT="https://ern-guide-api.jjcadenza6.workers.dev/api/guide";
+const GUIDE_AI_VERSION="2026-09-25.v2";
+const guideAiTestResult=$("#guideAiTestResult");
+function requestId(){const bytes=crypto.getRandomValues(new Uint8Array(16));return"req_"+[...bytes].map(x=>x.toString(16).padStart(2,"0")).join("")}
+$("#runGuideAiTest").onclick=async()=>{
+ const button=$("#runGuideAiTest");button.disabled=true;guideAiTestResult.textContent="Running one grounded AI request…";
+ try{
+  const healthy=sources.filter(s=>s.health==="HEALTHY"&&s.id).slice(0,4).map(s=>s.id);
+  if(!healthy.length)throw new Error("No healthy ERN sources available for the controlled test.");
+  const payload={version:GUIDE_AI_VERSION,query:"I have two hours before dinner and want somewhere peaceful with evening atmosphere. Which of these ERN places would you suggest, and why?",language:"en",sourceIds:healthy,requestId:requestId()};
+  const response=await fetch(GUIDE_AI_ENDPOINT,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(payload)});
+  const body=await response.json().catch(()=>({}));
+  guideAiTestResult.textContent=JSON.stringify({httpStatus:response.status,...body},null,2);
+ }catch(error){guideAiTestResult.textContent=JSON.stringify({ok:false,error:String(error?.message||error)},null,2)}
+ finally{button.disabled=false}
+};
