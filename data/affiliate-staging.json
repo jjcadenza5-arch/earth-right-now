@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "state": "WAITING_FOR_PROGRAM_APPROVAL",
+  "state": "VIATOR_PRIVATE_STAGING_READY",
   "publicActivationAllowed": false,
   "programs": {
     "booking-com": {
@@ -12,12 +12,13 @@
       "disclosure": "Affiliate travel option"
     },
     "viator": {
-      "relationshipState": "VERIFICATION_IN_REVIEW",
-      "acceptanceEvidence": null,
-      "trackingConfigured": false,
+      "relationshipState": "ACTIVE",
+      "acceptanceEvidence": "Viator partner dashboard exposes Affiliate Tools and Affiliate API; tracked link generated with partner id P00322254.",
+      "trackingConfigured": true,
       "privateStagingVerified": false,
       "publicLinksEnabled": false,
-      "disclosure": "Affiliate travel option"
+      "disclosure": "Affiliate travel option",
+      "stagingLink": "https://www.viator.com/tours/Auckland/Hobbiton-Movie-Set-and-Waitomo-Glowworm-Caves-Day-Trip-from-Auckland/d391-37991P3?pid=P00322254&mcid=42383&medium=link"
     }
   },
   "activationRule": "A program may activate publicly only after documented acceptance, approved tracking configuration, private staging verification, and disclosure checks all pass.",

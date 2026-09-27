@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "phase": "COMMERCIAL_ACTIVATION",
-  "state": "APPLICATIONS_SUBMITTED",
+  "state": "PARTIAL_ACTIVATION",
   "openedAt": "2026-09-27T08:50:00Z",
   "policy": {
     "publicActivationBeforeAcceptance": false,
@@ -13,7 +13,7 @@
   "waves": [
     {
       "id": "wave-a",
-      "state": "IN_REVIEW",
+      "state": "PARTIALLY_ACTIVE",
       "programs": [
         {
           "id": "booking-com",
@@ -22,13 +22,16 @@
         },
         {
           "id": "viator",
-          "state": "VERIFICATION_IN_REVIEW",
+          "state": "ACTIVE_TRACKED_LINK_CREATED",
           "submittedAt": "2026-09-27T10:34:29Z",
-          "reviewWindow": "UP_TO_72_HOURS"
+          "reviewWindow": "UP_TO_72_HOURS",
+          "activatedAt": "2026-09-27T13:17:00Z",
+          "partnerId": "P00322254",
+          "firstTrackedLinkTarget": "Auckland — Hobbiton Movie Set and Waitomo Glowworm Caves Day Trip"
         }
       ],
       "rationale": "Broad first-wave coverage across stays/transport/attractions plus tours/activities without changing ERN Earth-view ranking.",
-      "next": "WAIT_FOR_PROGRAM_DECISION"
+      "next": "VERIFY_VIATOR_PRIVATE_STAGING_AND_WAIT_FOR_BOOKING_COM"
     },
     {
       "id": "wave-b",
@@ -47,7 +50,7 @@
       "rationale": "Useful transport/referral depth but adds a separate Impact-based tracking relationship, so defer until the first wave is operational."
     }
   ],
-  "next": "WAIT_FOR_WAVE_A_DECISIONS",
+  "next": "VERIFY_VIATOR_PRIVATE_STAGING_AND_WAIT_FOR_BOOKING_COM",
   "note": "Application, account creation, acceptance and credential setup are external relationship actions. ERN prepares the workflow but does not claim an affiliate relationship until documented acceptance exists.",
-  "updatedAt": "2026-09-27T10:34:29Z"
+  "updatedAt": "2026-09-27T13:17:00Z"
 }
