@@ -11,6 +11,15 @@
   "productSearchVerified": false,
   "affiliateAttributionVerified": false,
   "publicActivationAllowed": false,
-  "checkedAt": "2026-09-27T14:26:00Z",
-  "note": "Production Worker health check confirmed Viator API enabled, API key configured, explicit-only mapping mode, public activation still disabled, and no secret values exposed. Taxonomy/product/attribution verification remain pending."
+  "checkedAt": "2026-09-27T15:10:00Z",
+  "note": "Travel Worker is deployed and secret-isolated. Viator sandbox key is enabled in the partner portal, which states activation can take up to 24 hours. Current sandbox diagnostics return 401 Invalid API Key for both /destinations and a documented sample product endpoint. Public activation remains off. Do not rotate or re-enter the key unless this persists after the provider activation window.",
+  "sandboxKeyState": "ENABLED_PENDING_ACTIVATION",
+  "lastDiagnostic": {
+    "environment": "SANDBOX",
+    "destinationsStatus": 401,
+    "sampleProductStatus": 401,
+    "errorCode": "UNAUTHORIZED",
+    "errorMessage": "Invalid API Key",
+    "observedAt": "2026-09-27T15:10:00Z"
+  }
 }
