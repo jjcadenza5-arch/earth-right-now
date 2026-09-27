@@ -1,0 +1,15 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const html=fs.readFileSync("release-verification.html","utf8");
+const js=fs.readFileSync("src/release-verification-console.js","utf8");
+const worker=fs.readFileSync("travel-worker/src/index.js","utf8");
+const manifest=JSON.parse(fs.readFileSync("data/viator-api-deployment.json","utf8"));
+assert.match(html,/runViatorTaxonomyTest/);
+assert.match(js,/\/api\/viator\/destinations/);
+assert.match(js,/toLowerCase\(\)==="auckland"/);
+assert.match(worker,/parentDestinationId/);
+assert.match(worker,/lookupId/);
+assert.equal(manifest.status,"DEPLOYED_GATED");
+assert.equal(manifest.secretIsolation,true);
+assert.equal(manifest.apiKeyConfigured,true);
+assert.equal(manifest.publicActivationAllowed,false);
+console.log("Viator taxonomy operator smoke: ok");

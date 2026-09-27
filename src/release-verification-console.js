@@ -65,3 +65,32 @@ $("#runGuideAiTest").onclick=async()=>{
  }catch(error){guideAiTestResult.textContent=JSON.stringify({ok:false,error:String(error?.message||error)},null,2)}
  finally{button.disabled=false}
 };
+
+
+const VIATOR_API_ENDPOINT="https://ern-travel-api.jjcadenza6.workers.dev";
+const viatorTaxonomyTestResult=$("#viatorTaxonomyTestResult");
+$("#runViatorTaxonomyTest").onclick=async()=>{
+ const button=$("#runViatorTaxonomyTest");
+ button.disabled=true;
+ viatorTaxonomyTestResult.textContent="Loading official Viator destination taxonomy…";
+ try{
+  const response=await fetch(VIATOR_API_ENDPOINT+"/api/viator/destinations",{headers:{accept:"application/json"}});
+  const body=await response.json().catch(()=>({}));
+  if(!response.ok)throw new Error(body?.reason||("HTTP "+response.status));
+  const rows=(Array.isArray(body?.destinations)?body.destinations:[])
+    .filter(x=>String(x?.name||"").trim().toLowerCase()==="auckland")
+    .map(x=>({
+      destinationId:x.destinationId,
+      name:x.name,
+      type:x.type,
+      parentDestinationId:x.parentDestinationId,
+      lookupId:x.lookupId,
+      destinationUrl:x.destinationUrl,
+      timeZone:x.timeZone,
+      center:x.center
+    }));
+  viatorTaxonomyTestResult.textContent=JSON.stringify({httpStatus:response.status,matchCount:rows.length,matches:rows},null,2);
+ }catch(error){
+  viatorTaxonomyTestResult.textContent=JSON.stringify({ok:false,error:String(error?.message||error)},null,2);
+ }finally{button.disabled=false}
+};

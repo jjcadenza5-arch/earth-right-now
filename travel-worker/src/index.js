@@ -57,7 +57,17 @@ export default{
     try{
       const data=await viatorFetch("/v1/taxonomy/destinations",{env});
       const items=Array.isArray(data?.destinations)?data.destinations:[];
-      return reply(200,{ok:true,destinations:items.map(x=>({destinationId:String(x.destinationId||x.id||""),name:String(x.name||""),parentId:x.parentId==null?null:String(x.parentId)}))},origin,"public, max-age=3600");
+      return reply(200,{ok:true,destinations:items.map(x=>({
+        destinationId:String(x.destinationId||x.id||""),
+        name:String(x.name||""),
+        type:String(x.type||""),
+        parentDestinationId:x.parentDestinationId==null?null:String(x.parentDestinationId),
+        lookupId:String(x.lookupId||""),
+        destinationUrl:String(x.destinationUrl||""),
+        defaultCurrencyCode:String(x.defaultCurrencyCode||""),
+        timeZone:String(x.timeZone||""),
+        center:x.center&&Number.isFinite(Number(x.center.latitude))&&Number.isFinite(Number(x.center.longitude))?{latitude:Number(x.center.latitude),longitude:Number(x.center.longitude)}:null
+      }))},origin,"public, max-age=3600");
     }catch(error){
       return reply(503,{ok:false,reason:String(error?.message||"VIATOR_DESTINATIONS_FAILED")},origin);
     }
