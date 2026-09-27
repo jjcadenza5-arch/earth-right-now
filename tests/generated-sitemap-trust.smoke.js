@@ -8,6 +8,8 @@ assert.match(src,/staticUrls/);
 assert.match(src,/places\/index\.html/);
 assert.match(src,/BreadcrumbList/);
 assert.match(src,/CollectionPage/);
+assert.match(src,/ItemList/);
+assert.match(src,/dateModified/);
 assert.match(src,/base\+"places\/"/);
 assert.match(src,/mainEntity/);
 console.log("generated sitemap and destination hierarchy guard passed");
