@@ -100,3 +100,14 @@ This is a successful operating state, not a failure to find work.
 - Do not expose the Viator API key in browser code, GitHub, screenshots, or chat.
 - Do not request Full or Full + Booking access merely to expand scope; Basic Access is the active architecture until a concrete product need proves otherwise.
 - Destination/product commerce stays downstream from an already-selected ERN place and never changes Earth-view ranking.
+
+
+## Viator sandbox activation hold
+
+When the Viator deployment manifest records sandboxKeyState = ENABLED_PENDING_ACTIVATION and the last diagnostic is the same provider-side 401 Invalid API Key state:
+- do not re-enter or rotate the key merely to create activity;
+- do not switch to production for testing;
+- do not repeat diagnostics before nextRecommendedRetestAt unless Viator reports activation or another material access-state change occurs;
+- continue only locally safe ERN work that does not weaken the public activation gates.
+
+The next finite external trigger is sandbox authentication success (or a materially different Viator access response).
