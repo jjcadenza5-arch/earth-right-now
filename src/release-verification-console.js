@@ -94,3 +94,18 @@ $("#runViatorTaxonomyTest").onclick=async()=>{
   viatorTaxonomyTestResult.textContent=JSON.stringify({ok:false,error:String(error?.message||error)},null,2);
  }finally{button.disabled=false}
 };
+
+
+const viatorDiagnosticResult=$("#viatorDiagnosticResult");
+$("#runViatorDiagnostic").onclick=async()=>{
+ const button=$("#runViatorDiagnostic");
+ button.disabled=true;
+ viatorDiagnosticResult.textContent="Checking Viator sandbox access…";
+ try{
+  const response=await fetch(VIATOR_API_ENDPOINT+"/api/viator/diagnostics",{headers:{accept:"application/json"}});
+  const body=await response.json().catch(()=>({}));
+  viatorDiagnosticResult.textContent=JSON.stringify({httpStatus:response.status,...body},null,2);
+ }catch(error){
+  viatorDiagnosticResult.textContent=JSON.stringify({ok:false,error:String(error?.message||error)},null,2);
+ }finally{button.disabled=false}
+};
