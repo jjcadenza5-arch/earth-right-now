@@ -23,6 +23,29 @@ async function viatorFetch(path,{env,method="GET",language="en-US",body=null}={}
   if(!r.ok)throw new Error("VIATOR_"+r.status);
   return r.json();
 }
+async function viatorDiagnostic(path,{env,method="GET",language="en-US",body=null}={}){
+  const endpoint=viatorBase(env)+path;
+  const r=await fetch(endpoint,{method,headers:viatorHeaders(env,language),body:body?JSON.stringify(body):undefined});
+  const contentType=String(r.headers.get("content-type")||"");
+  let payload=null;
+  try{
+    payload=contentType.includes("application/json")?await r.json():String(await r.text()).slice(0,500);
+  }catch{}
+  const safeError=payload&&typeof payload==="object"?{
+    code:String(payload.code||payload.errorCode||"").slice(0,120),
+    message:String(payload.message||payload.errorMessage||"").slice(0,300),
+    trackingId:String(payload.trackingId||"").slice(0,200)
+  }:null;
+  return{
+    path,
+    status:r.status,
+    ok:r.ok,
+    uniqueId:String(r.headers.get("x-unique-id")||"").slice(0,200),
+    rateLimit:String(r.headers.get("ratelimit-limit")||"").slice(0,80),
+    contentType:contentType.slice(0,120),
+    error:safeError
+  };
+}
 async function mappingRegistry(env){
   const url=env.ERN_VIATOR_MAPPING_URL||"https://earthrightnow.app/data/viator-destination-map.json";
   const r=await fetch(url,{headers:{accept:"application/json","user-agent":"ERN-Travel/1.0"},cf:{cacheTtl:300,cacheEverything:true}});
@@ -52,6 +75,19 @@ export default{
   if(!origin)return reply(403,{ok:false,reason:"ORIGIN_NOT_ALLOWED"});
   if(!enabled)return reply(503,{ok:false,reason:"VIATOR_API_DISABLED"},origin);
   if(!env.VIATOR_API_KEY)return reply(503,{ok:false,reason:"VIATOR_API_KEY_MISSING"},origin);
+
+  if(request.method==="GET"&&url.pathname==="/api/viator/diagnostics"){
+    const checks=[];
+    checks.push(await viatorDiagnostic("/destinations",{env}));
+    checks.push(await viatorDiagnostic("/products/5010SYDNEY",{env}));
+    return reply(200,{
+      ok:true,
+      environment:viatorBase(env).includes("sandbox")?"SANDBOX":"PRODUCTION",
+      apiBaseHost:new URL(viatorBase(env)).host,
+      checks,
+      secretValuesExposed:false
+    },origin);
+  }
 
   if(request.method==="GET"&&url.pathname==="/api/viator/destinations"){
     try{
