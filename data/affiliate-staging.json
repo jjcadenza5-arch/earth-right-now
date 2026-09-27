@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "state": "VIATOR_PRIVATE_STAGING_READY",
-  "publicActivationAllowed": false,
+  "state": "VIATOR_LIMITED_PUBLIC_PILOT",
+  "publicActivationAllowed": true,
   "programs": {
     "booking-com": {
       "relationshipState": "PENDING_REVIEW",
@@ -15,12 +15,18 @@
       "relationshipState": "ACTIVE",
       "acceptanceEvidence": "Viator partner dashboard exposes Affiliate Tools and Affiliate API; tracked link generated with partner id P00322254.",
       "trackingConfigured": true,
-      "privateStagingVerified": false,
-      "publicLinksEnabled": false,
+      "privateStagingVerified": true,
+      "publicLinksEnabled": true,
       "disclosure": "Affiliate travel option",
-      "stagingLink": "https://www.viator.com/tours/Auckland/Hobbiton-Movie-Set-and-Waitomo-Glowworm-Caves-Day-Trip-from-Auckland/d391-37991P3?pid=P00322254&mcid=42383&medium=link"
+      "stagingLink": "https://www.viator.com/tours/Auckland/Hobbiton-Movie-Set-and-Waitomo-Glowworm-Caves-Day-Trip-from-Auckland/d391-37991P3?pid=P00322254&mcid=42383&medium=link",
+      "privateStagingVerifiedAt": "2026-09-27T13:24:00Z",
+      "privateStagingEvidence": "Operator click-through retained pid=P00322254 and opened Viator Auckland experience results successfully.",
+      "publicScope": "Auckland activities only"
     }
   },
   "activationRule": "A program may activate publicly only after documented acceptance, approved tracking configuration, private staging verification, and disclosure checks all pass.",
-  "rankingRule": "Commercial status never changes Earth-view ranking, currentness, truth labels, source health, or ERN Guide source selection."
+  "rankingRule": "Commercial status never changes Earth-view ranking, currentness, truth labels, source health, or ERN Guide source selection.",
+  "publicActivationScope": [
+    "viator"
+  ]
 }
