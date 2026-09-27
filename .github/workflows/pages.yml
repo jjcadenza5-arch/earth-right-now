@@ -92,6 +92,8 @@ jobs:
         run: node scripts/featured-curation-preflight.mjs
       - name: Build static release
         run: npm run release:build
+      - name: Public discoverability preflight
+        run: npm --silent run discoverability:preflight -- dist
       - name: Operator review page preflight
         run: node scripts/operator-review-page-preflight.mjs
       - uses: actions/upload-pages-artifact@v4
