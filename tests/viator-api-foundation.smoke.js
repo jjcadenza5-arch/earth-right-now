@@ -6,14 +6,14 @@ const deployment=JSON.parse(fs.readFileSync("data/viator-api-deployment.json","u
 const map=JSON.parse(fs.readFileSync("data/viator-destination-map.json","utf8"));
 
 assert.match(cfg,/"ERN_VIATOR_API_ENABLED": "false"/);
-assert.match(worker,/exp-api-key/);
+assert.match(worker,/exp-api-key/);\nassert.match(worker,/approvedMapping/);\nassert.match(worker,/PLACE_NOT_MAPPED/);\nassert.match(worker,/publicViatorProduct/);
 assert.ok(!worker.includes("P00322254"),"Partner ID must not be hard-coded in API Worker");
 assert.equal(deployment.status,"NOT_DEPLOYED");
 assert.equal(deployment.publicActivationAllowed,false);
 assert.equal(map.policy.automaticFuzzyMatchingAllowed,false);
 assert.equal(map.policy.publicProductsRequireApprovedMapping,true);
-assert.equal(validateViatorSearchRequest({placeId:"p",destinationId:"77",language:"en-US",count:6}).valid,true);
-assert.equal(validateViatorSearchRequest({placeId:"p",destinationId:"",language:"en-US",count:6}).valid,false);
+assert.equal(validateViatorSearchRequest({placeId:"p",language:"en-US",count:6}).valid,true);
+assert.equal(validateViatorSearchRequest({placeId:"",language:"en-US",count:6}).valid,false);
 const p=publicViatorProduct({productCode:"X",title:"T",description:"D",reviews:{combinedAverageRating:4.8,totalReviews:10},pricing:{summary:{fromPrice:99},currency:"USD"}});
 assert.equal(p.provider,"Viator");
 assert.equal(p.rating,4.8);
