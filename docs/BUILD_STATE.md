@@ -1,3 +1,11 @@
+## 2026-09-27 — Minimum five LIVE HERE playback renewals applied
+- Accepted deployed-origin operator review batch `36a9eac4191cc610` generated at 2026-09-27T16:04:09.647Z.
+- HUMAN_PLAYBACK confirmed for Auckland Viaduct Harbour, Bergen — Ulriken Mountain, Cijin Beach — Kaohsiung, Ponte di Legno — Adamello, and Volcán Tajogaite.
+- Applied only the exact operator-recorded playback timestamps to the matching catalog `playbackVerifiedAt` fields and appended matching HUMAN_PLAYBACK observations.
+- Every reviewed source/embed URL matched the current catalog target before application.
+- No health, permission, truth, ranking, commercial state, watch hold, or featured status was changed.
+- This is the minimum renewal set requested by Operations to restore the 5/5 LIVE HERE target; extra renewal debt remains backlog.
+
 ## 2026-09-27 — AI-search discoverability strengthened; LIVE HERE proofs now require renewal
 - ERN homepage now exposes explicit WebSite + Organization structured identity, with stable logo and a working SearchAction that maps to the existing `?q=` search deep link.
 - Added a crawlable `/places/` directory linking the generated destination pages; destination pages now expose BreadcrumbList + Place/WebPage structure and verified-source `dateModified` freshness.

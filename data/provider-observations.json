@@ -194,5 +194,40 @@
     "observedAt": "2026-09-25T14:59:35.119Z",
     "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
     "httpStatus": 200
+  },
+  {
+    "id": "auckland-viaduct-harbour",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-27T16:03:17.113Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 36a9eac4191cc610 supplied by operator and source/embed target matched current catalog data.",
+    "httpStatus": 200
+  },
+  {
+    "id": "bergen-ulriken",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-27T16:03:27.884Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 36a9eac4191cc610 supplied by operator and source/embed target matched current catalog data.",
+    "httpStatus": 200
+  },
+  {
+    "id": "cijin-beach-kaohsiung",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-27T16:03:57.829Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 36a9eac4191cc610 supplied by operator and source/embed target matched current catalog data.",
+    "httpStatus": 200
+  },
+  {
+    "id": "ponte-di-legno-adamello",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-27T16:03:49.996Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 36a9eac4191cc610 supplied by operator and source/embed target matched current catalog data.",
+    "httpStatus": 200
+  },
+  {
+    "id": "volcan-tajogaite",
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-27T16:03:03.733Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 36a9eac4191cc610 supplied by operator and source/embed target matched current catalog data.",
+    "httpStatus": 200
   }
 ]
