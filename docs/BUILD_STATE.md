@@ -1,3 +1,10 @@
+## 2026-09-27 — Viator activation window confirmed as up to 48 hours
+- Viator sent partner email evidence stating that the Affiliate API key can take up to 48 hours to become active.
+- ERN's prior 24-hour retest assumption is superseded.
+- Current sandbox 401 `Invalid API Key` remains classified as a provider-side activation hold, not an ERN integration failure.
+- No key rotation, production switch, or repeated diagnostics are justified during the window unless Viator reports an earlier activation-state change.
+- Recommended next diagnostic moved to the end of the 48-hour window.
+
 ## 2026-09-27 — Viator API deployed safely; sandbox key activation pending
 - Created and deployed the separate Cloudflare Worker `ern-travel-api` from the ERN repository; the Viator key exists only as the encrypted `VIATOR_API_KEY` Worker secret.
 - Live `/health` confirmed the API layer is enabled, the key is configured, mapping mode is explicit-only, public activation is off, and secret values are not exposed.
