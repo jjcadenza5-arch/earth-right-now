@@ -12,7 +12,7 @@
   "affiliateAttributionVerified": false,
   "publicActivationAllowed": false,
   "checkedAt": "2026-09-27T15:10:00Z",
-  "note": "Travel Worker is deployed and secret-isolated. Viator sandbox key is enabled in the partner portal, which states activation can take up to 24 hours. Current sandbox diagnostics return 401 Invalid API Key for both /destinations and a documented sample product endpoint. Public activation remains off. Do not rotate or re-enter the key unless this persists after the provider activation window.",
+  "note": "Travel Worker is deployed and secret-isolated. Viator sandbox key is enabled in the partner portal. A Viator partner email states that API key activation can take up to 48 hours. Current sandbox diagnostics return 401 Invalid API Key for both /destinations and a documented sample product endpoint. Public activation remains off. Do not rotate or re-enter the key unless this persists beyond the provider activation window.",
   "sandboxKeyState": "ENABLED_PENDING_ACTIVATION",
   "lastDiagnostic": {
     "environment": "SANDBOX",
@@ -22,6 +22,8 @@
     "errorMessage": "Invalid API Key",
     "observedAt": "2026-09-27T15:10:00Z"
   },
-  "nextRecommendedRetestAt": "2026-09-28T15:21:00Z",
-  "retestPolicy": "Do not repeat sandbox diagnostics before the recommended retest time unless Viator reports the key active earlier or the key/access state materially changes."
+  "nextRecommendedRetestAt": "2026-09-29T15:21:00Z",
+  "retestPolicy": "Do not repeat sandbox diagnostics before the recommended retest time unless Viator reports the key active earlier or the key/access state materially changes.",
+  "providerActivationWindow": "UP_TO_48_HOURS",
+  "activationEvidence": "Viator partner email states: it can take up to 48 hours for the API key to be active."
 }
