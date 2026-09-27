@@ -1,3 +1,9 @@
+## 2026-09-27 — Human review also refreshes exact source currentness for five renewed embeds
+- Follow-up Operations after PR #542 showed 5 fresh HUMAN_PLAYBACK observations with 0 consistency issues, but LIVE HERE remained 0/5 because the separate 24-hour embed source-currentness timestamps had also expired.
+- The same deployed operator review directly loaded the exact current catalog embed targets and visually confirmed they were playing/current, so those observations are valid human source-currentness evidence for the exact reviewed embed targets.
+- Applied each operator-recorded timestamp to `checkedAt` and `lastSuccessfulCheck` for Auckland Viaduct Harbour, Bergen — Ulriken Mountain, Cijin Beach — Kaohsiung, Ponte di Legno — Adamello, and Volcán Tajogaite.
+- No health, permission, truth, ranking, featured/watch hold, or commercial state was changed.
+
 ## 2026-09-27 — Minimum five LIVE HERE playback renewals applied
 - Accepted deployed-origin operator review batch `36a9eac4191cc610` generated at 2026-09-27T16:04:09.647Z.
 - HUMAN_PLAYBACK confirmed for Auckland Viaduct Harbour, Bergen — Ulriken Mountain, Cijin Beach — Kaohsiung, Ponte di Legno — Adamello, and Volcán Tajogaite.
