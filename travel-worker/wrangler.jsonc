@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "ern-travel-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-26",
+  "vars": {
+    "ERN_VIATOR_API_ENABLED": "false",
+    "ERN_PUBLIC_ORIGIN": "https://earthrightnow.app"
+  }
+}
