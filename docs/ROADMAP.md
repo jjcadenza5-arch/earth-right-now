@@ -18,6 +18,10 @@ Report-only health proposals, conservative provider-family policies, prioritized
 ## Stage H — travel bridge — PHASE 3 ACTIVATION OPEN
 Trust-isolated stay/eat/transport/ticket offer model exists and the Earth-first experience is now accepted for commercial progression. The finite first activation wave is Booking.com + Viator. Agoda and Skyscanner are held until Wave A state is known. No tracked links or partner claims are public until documented acceptance and credential verification exist.
 
+
+### Viator scalable integration
+The first Auckland Viator affiliate pilot is active at destination-link level. A separate fail-closed `ern-travel-api` Worker foundation now exists for Viator Basic Affiliate API integration. It remains **NOT_DEPLOYED** until a real Viator API key is installed as a server-side secret, destination taxonomy is retrieved, explicit ERN↔Viator mappings are approved, product search is verified, and affiliate attribution is confirmed. Manual fuzzy destination matching is prohibited.
+
 ## Stage I — public deployment and release certification — PUBLIC / GATE READY
 earthrightnow.app is publicly deployed and the current release-readiness gate is green with fresh browser, mobile, provider-playback, accessibility, performance and rollback evidence. Future releases remain fail-closed: keep evidence fresh and do not treat static/CI success alone as permission or playback proof.
 

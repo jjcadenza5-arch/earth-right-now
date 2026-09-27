@@ -90,3 +90,13 @@ This is a successful operating state, not a failure to find work.
 - Do not resume 30-place breadth/depth research while Wave A applications are unresolved.
 - Do not populate affiliate-partners.json, enable tracked links, or claim a relationship until acceptance evidence exists.
 - Agoda and Skyscanner remain held until Wave A state is known.
+
+
+## Viator API scaling lane — 2026-09-27
+
+- Do not manually generate dozens of destination links when the Basic Affiliate API can provide a scalable path.
+- Do not deploy or enable the Travel API without a real server-side API key and health evidence.
+- Do not fuzzy-match ERN places to Viator destinations automatically.
+- Do not expose the Viator API key in browser code, GitHub, screenshots, or chat.
+- Do not request Full or Full + Booking access merely to expand scope; Basic Access is the active architecture until a concrete product need proves otherwise.
+- Destination/product commerce stays downstream from an already-selected ERN place and never changes Earth-view ranking.

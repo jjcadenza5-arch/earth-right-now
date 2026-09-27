@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "state": "EXPLICIT_MAPPING_REQUIRED",
+  "mappings": [
+    {
+      "ernPlaceId": "auckland-viaduct-harbour",
+      "viatorDestinationId": null,
+      "viatorDestinationName": "Auckland",
+      "status": "PENDING_API_TAXONOMY_MATCH",
+      "evidence": "ERN has a verified Auckland source and a working destination-level Viator affiliate click-through, but the Viator API taxonomy ID has not yet been retrieved."
+    }
+  ],
+  "policy": {
+    "automaticFuzzyMatchingAllowed": false,
+    "publicProductsRequireApprovedMapping": true,
+    "countryRegionContextRequired": true
+  }
+}
