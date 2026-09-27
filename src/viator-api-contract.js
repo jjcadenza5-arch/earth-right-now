@@ -8,14 +8,12 @@ const MAX_RESULTS=12;
 export function validateViatorSearchRequest(input={}){
   const issues=[];
   const placeId=String(input.placeId||"").trim();
-  const destinationId=String(input.destinationId||"").trim();
   const language=String(input.language||"en-US").trim();
   const count=Number(input.count??6);
   if(!placeId)issues.push("MISSING_PLACE_ID");
-  if(!destinationId)issues.push("MISSING_DESTINATION_ID");
   if(!ALLOWED_LANGUAGES.has(language))issues.push("UNSUPPORTED_LANGUAGE");
   if(!Number.isInteger(count)||count<1||count>MAX_RESULTS)issues.push("INVALID_COUNT");
-  return{valid:issues.length===0,issues,value:{placeId,destinationId,language,count}};
+  return{valid:issues.length===0,issues,value:{placeId,language,count}};
 }
 
 export function publicViatorProduct(product={}){
