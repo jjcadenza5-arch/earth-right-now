@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "phase": "COMMERCIAL_ACTIVATION",
-  "state": "USER_APPLICATION_REQUIRED",
+  "state": "APPLICATIONS_SUBMITTED",
   "openedAt": "2026-09-27T08:50:00Z",
   "policy": {
     "publicActivationBeforeAcceptance": false,
@@ -13,12 +13,22 @@
   "waves": [
     {
       "id": "wave-a",
-      "state": "READY_FOR_USER_APPLICATION",
+      "state": "IN_REVIEW",
       "programs": [
-        "booking-com",
-        "viator"
+        {
+          "id": "booking-com",
+          "state": "SUBMITTED_PENDING_REVIEW",
+          "submittedAt": "2026-09-27T10:19:08Z"
+        },
+        {
+          "id": "viator",
+          "state": "VERIFICATION_IN_REVIEW",
+          "submittedAt": "2026-09-27T10:34:29Z",
+          "reviewWindow": "UP_TO_72_HOURS"
+        }
       ],
-      "rationale": "Broad first-wave coverage across stays/transport/attractions plus tours/activities without changing ERN Earth-view ranking."
+      "rationale": "Broad first-wave coverage across stays/transport/attractions plus tours/activities without changing ERN Earth-view ranking.",
+      "next": "WAIT_FOR_PROGRAM_DECISION"
     },
     {
       "id": "wave-b",
@@ -37,6 +47,7 @@
       "rationale": "Useful transport/referral depth but adds a separate Impact-based tracking relationship, so defer until the first wave is operational."
     }
   ],
-  "next": "USER_APPLIES_TO_BOOKING_COM_AND_VIATOR",
-  "note": "Application, account creation, acceptance and credential setup are external relationship actions. ERN prepares the workflow but does not claim an affiliate relationship until documented acceptance exists."
+  "next": "WAIT_FOR_WAVE_A_DECISIONS",
+  "note": "Application, account creation, acceptance and credential setup are external relationship actions. ERN prepares the workflow but does not claim an affiliate relationship until documented acceptance exists.",
+  "updatedAt": "2026-09-27T10:34:29Z"
 }
