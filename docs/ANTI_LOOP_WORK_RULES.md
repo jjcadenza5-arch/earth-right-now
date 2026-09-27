@@ -81,3 +81,12 @@ While in AUTONOMOUS HOLD:
 - resume only after a material trigger: playback proof ages/fails, catalog/source state changes, an exact provider target becomes available, or ERN deliberately opens a provider/backend/commercial decision phase.
 
 This is a successful operating state, not a failure to find work.
+
+
+## Commercial activation wave — 2026-09-27
+
+- Phase 3 is explicitly open.
+- Wave A is finite: Booking.com + Viator only.
+- Do not resume 30-place breadth/depth research while Wave A applications are unresolved.
+- Do not populate affiliate-partners.json, enable tracked links, or claim a relationship until acceptance evidence exists.
+- Agoda and Skyscanner remain held until Wave A state is known.

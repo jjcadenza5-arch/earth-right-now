@@ -1,0 +1,11 @@
+import fs from "node:fs";
+const a=JSON.parse(fs.readFileSync("data/affiliate-activation.json","utf8"));
+const partners=JSON.parse(fs.readFileSync("data/affiliate-partners.json","utf8"));
+console.assert(a.phase==="COMMERCIAL_ACTIVATION");
+console.assert(a.state==="USER_APPLICATION_REQUIRED");
+console.assert(a.waves?.[0]?.programs?.join(",")==="booking-com,viator");
+console.assert(a.policy.publicActivationBeforeAcceptance===false);
+console.assert(a.policy.trackedLinksBeforeAcceptance===false);
+console.assert(a.policy.paidRankingAllowed===false);
+console.assert(Array.isArray(partners)&&partners.length===0,"No affiliate relationship may be inferred before acceptance");
+console.log("affiliate activation smoke: ok");
