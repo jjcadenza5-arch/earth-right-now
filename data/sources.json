@@ -19,8 +19,8 @@
     "embedUrl": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ",
     "thumbnailUrl": null,
     "attribution": "Auckland Viaduct View",
-    "checkedAt": "2026-09-25T06:32:26.769Z",
-    "lastSuccessfulCheck": "2026-09-25T06:32:26.769Z",
+    "checkedAt": "2026-09-27T16:03:17.113Z",
+    "lastSuccessfulCheck": "2026-09-27T16:03:17.113Z",
     "failureReason": null,
     "quality": 90,
     "freshness": 97,
@@ -31,7 +31,7 @@
     "timeZone": "Pacific/Auckland",
     "rightsBasis": "The official Viaduct Harbour page exposes the Auckland Viaduct View through this standard YouTube channel-live player. Deployed ERN human review confirmed current playback after explicit visitor Play interaction. Keep YouTube branding/controls intact and preserve click-to-play; do not restream.",
     "officialUrl": "https://www.viaduct.co.nz/",
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Auckland Viaduct YouTube channel-live player delivers current live content after the visitor presses Play.",
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Auckland Viaduct YouTube channel-live player delivers current live content after the visitor presses Play. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current.",
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.viaduct.co.nz/",
     "playbackVerifiedAt": "2026-09-27T16:03:17.113Z",
@@ -953,12 +953,13 @@
     "lat": 22.615,
     "lon": 120.265,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
-    "checkedAt": "2026-09-24T08:05:00Z",
-    "lastSuccessfulCheck": "2026-09-24T08:05:00Z",
+    "checkedAt": "2026-09-27T16:03:57.829Z",
+    "lastSuccessfulCheck": "2026-09-27T16:03:57.829Z",
     "failureReason": null,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/taiwan/kaohsiung/cijin-beach/",
-    "playbackVerifiedAt": "2026-09-27T16:03:57.829Z"
+    "playbackVerifiedAt": "2026-09-27T16:03:57.829Z",
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current."
   },
   {
     "id": "cancun-live-aqua-beach",
@@ -1882,8 +1883,8 @@
     "playback": "EMBED",
     "freshness": 96,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
-    "checkedAt": "2026-09-24T09:10:00Z",
-    "lastSuccessfulCheck": "2026-09-24T09:10:00Z",
+    "checkedAt": "2026-09-27T16:03:49.996Z",
+    "lastSuccessfulCheck": "2026-09-27T16:03:49.996Z",
     "failureReason": null,
     "story": "An alpine window around Ponte di Legno and the Adamello area for mountain, snow and weather atmosphere.",
     "lat": 46.2586,
@@ -1891,7 +1892,7 @@
     "coordinateBasis": "REGION_REFERENCE",
     "coordinateSourceUrl": "https://mapcarta.com/25426064",
     "coordinateNote": "Public geographic reference for Ponte di Legno town; ERN treats this as a regional reference for the Adamello-area view, not the camera position.",
-    "freshnessEvidence": "Current CouchTourist Ponte di Legno / Adamello page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 8621). Source page is current; deployed ERN playback remains separately unverified.",
+    "freshnessEvidence": "Current CouchTourist Ponte di Legno / Adamello page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 8621). Source page is current; deployed ERN playback remains separately unverified. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current.",
     "playbackVerifiedAt": "2026-09-27T16:03:49.996Z"
   },
   {
@@ -1989,15 +1990,16 @@
     "playback": "EMBED",
     "freshness": 96,
     "rightsBasis": "Current CouchTourist page explicitly provides an 'Embed this cam' iframe and asks embedded users to retain CouchTourist attribution.",
-    "checkedAt": "2026-09-24T08:05:00Z",
-    "lastSuccessfulCheck": "2026-09-24T08:05:00Z",
+    "checkedAt": "2026-09-27T16:03:27.884Z",
+    "lastSuccessfulCheck": "2026-09-27T16:03:27.884Z",
     "failureReason": null,
     "story": "A mountain-and-city perspective from Bergen’s Ulriken area, connecting fjord-side urban scenery with the surrounding highlands.",
     "lat": 60.37674,
     "lon": 5.39343,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/norway/ulriken-mountain-view-bergen-norway/",
-    "playbackVerifiedAt": "2026-09-27T16:03:27.884Z"
+    "playbackVerifiedAt": "2026-09-27T16:03:27.884Z",
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current."
   },
   {
     "id": "waikiki-south-shore",
@@ -2473,8 +2475,8 @@
     ],
     "story": "See the current Tajogaite volcano view across the Aridane Valley before exploring La Palma.",
     "rightsBasis": "Webcam La Palma's official embed page explicitly permits free iframe embedding of this live cam provided the visible webcam-lapalma.de attribution link remains present. Deployed ERN human review confirmed current playback.",
-    "checkedAt": "2026-09-25T07:07:39.994Z",
-    "lastSuccessfulCheck": "2026-09-25T07:07:39.994Z",
+    "checkedAt": "2026-09-27T16:03:03.733Z",
+    "lastSuccessfulCheck": "2026-09-27T16:03:03.733Z",
     "failureReason": null,
     "lat": 28.612778,
     "lon": -17.866111,
@@ -2484,7 +2486,7 @@
     "playbackVerifiedAt": "2026-09-27T16:03:03.733Z",
     "attribution": "Webcam La Palma — webcam-lapalma.de",
     "attributionUrl": "https://webcam-lapalma.de/",
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Tajogaite iframe delivers current live content."
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Tajogaite iframe delivers current live content. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current."
   },
   {
     "id": "rio-copacabana-earthcam",
