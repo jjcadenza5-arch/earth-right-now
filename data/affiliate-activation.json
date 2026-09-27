@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "phase": "COMMERCIAL_ACTIVATION",
+  "state": "USER_APPLICATION_REQUIRED",
+  "openedAt": "2026-09-27T08:50:00Z",
+  "policy": {
+    "publicActivationBeforeAcceptance": false,
+    "trackedLinksBeforeAcceptance": false,
+    "paidRankingAllowed": false,
+    "earthViewRankingIndependentOfCommercialStatus": true,
+    "relationshipClaimsRequireAcceptanceEvidence": true
+  },
+  "waves": [
+    {
+      "id": "wave-a",
+      "state": "READY_FOR_USER_APPLICATION",
+      "programs": [
+        "booking-com",
+        "viator"
+      ],
+      "rationale": "Broad first-wave coverage across stays/transport/attractions plus tours/activities without changing ERN Earth-view ranking."
+    },
+    {
+      "id": "wave-b",
+      "state": "HOLD_UNTIL_WAVE_A_DECISION",
+      "programs": [
+        "agoda"
+      ],
+      "rationale": "Complementary lodging channel; activate only after the first-wave account/application state is known."
+    },
+    {
+      "id": "wave-c",
+      "state": "HOLD_UNTIL_WAVE_A_DECISION",
+      "programs": [
+        "skyscanner"
+      ],
+      "rationale": "Useful transport/referral depth but adds a separate Impact-based tracking relationship, so defer until the first wave is operational."
+    }
+  ],
+  "next": "USER_APPLIES_TO_BOOKING_COM_AND_VIATOR",
+  "note": "Application, account creation, acceptance and credential setup are external relationship actions. ERN prepares the workflow but does not claim an affiliate relationship until documented acceptance exists."
+}
