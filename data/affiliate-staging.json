@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "state": "WAITING_FOR_PROGRAM_APPROVAL",
+  "publicActivationAllowed": false,
+  "programs": {
+    "booking-com": {
+      "relationshipState": "PENDING_REVIEW",
+      "acceptanceEvidence": null,
+      "trackingConfigured": false,
+      "privateStagingVerified": false,
+      "publicLinksEnabled": false,
+      "disclosure": "Affiliate travel option"
+    },
+    "viator": {
+      "relationshipState": "VERIFICATION_IN_REVIEW",
+      "acceptanceEvidence": null,
+      "trackingConfigured": false,
+      "privateStagingVerified": false,
+      "publicLinksEnabled": false,
+      "disclosure": "Affiliate travel option"
+    }
+  },
+  "activationRule": "A program may activate publicly only after documented acceptance, approved tracking configuration, private staging verification, and disclosure checks all pass.",
+  "rankingRule": "Commercial status never changes Earth-view ranking, currentness, truth labels, source health, or ERN Guide source selection."
+}
