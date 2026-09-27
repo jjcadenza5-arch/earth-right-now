@@ -1,3 +1,5 @@
+import {publicViatorProduct,validateViatorSearchRequest} from "../../src/viator-api-contract.js";
+
 const JSON_HEADERS={"content-type":"application/json; charset=utf-8","cache-control":"no-store"};
 const VIATOR_BASE="https://api.viator.com/partner";
 const allowedOrigin=(request,env)=>{
@@ -21,6 +23,17 @@ async function viatorFetch(path,{env,method="GET",language="en-US",body=null}={}
   if(!r.ok)throw new Error("VIATOR_"+r.status);
   return r.json();
 }
+async function mappingRegistry(env){
+  const url=env.ERN_VIATOR_MAPPING_URL||"https://earthrightnow.app/data/viator-destination-map.json";
+  const r=await fetch(url,{headers:{accept:"application/json","user-agent":"ERN-Travel/1.0"},cf:{cacheTtl:300,cacheEverything:true}});
+  if(!r.ok)throw new Error("MAPPING_"+r.status);
+  const data=await r.json();
+  if(!Array.isArray(data?.mappings))throw new Error("MAPPING_INVALID");
+  return data;
+}
+function approvedMapping(registry,placeId){
+  return registry.mappings.find(x=>x?.ernPlaceId===placeId&&x?.status==="APPROVED"&&String(x?.viatorDestinationId||"").trim());
+}
 export default{
  async fetch(request,env){
   const url=new URL(request.url),origin=allowedOrigin(request,env),enabled=env.ERN_VIATOR_API_ENABLED==="true";
@@ -34,7 +47,7 @@ export default{
     }}):new Response(null,{status:403});
   }
   if(request.method==="GET"&&url.pathname==="/health"){
-    return reply(200,{ok:true,service:"ERN Travel API",viatorEnabled:enabled,apiKeyConfigured:Boolean(env.VIATOR_API_KEY),publicActivationAllowed:false,secretValuesExposed:false},origin);
+    return reply(200,{ok:true,service:"ERN Travel API",viatorEnabled:enabled,apiKeyConfigured:Boolean(env.VIATOR_API_KEY),mappingMode:"EXPLICIT_ONLY",publicActivationAllowed:false,secretValuesExposed:false},origin);
   }
   if(!origin)return reply(403,{ok:false,reason:"ORIGIN_NOT_ALLOWED"});
   if(!enabled)return reply(503,{ok:false,reason:"VIATOR_API_DISABLED"},origin);
@@ -43,7 +56,8 @@ export default{
   if(request.method==="GET"&&url.pathname==="/api/viator/destinations"){
     try{
       const data=await viatorFetch("/v1/taxonomy/destinations",{env});
-      return reply(200,{ok:true,destinations:Array.isArray(data?.destinations)?data.destinations:data},origin,"public, max-age=3600");
+      const items=Array.isArray(data?.destinations)?data.destinations:[];
+      return reply(200,{ok:true,destinations:items.map(x=>({destinationId:String(x.destinationId||x.id||""),name:String(x.name||""),parentId:x.parentId==null?null:String(x.parentId)}))},origin,"public, max-age=3600");
     }catch(error){
       return reply(503,{ok:false,reason:String(error?.message||"VIATOR_DESTINATIONS_FAILED")},origin);
     }
@@ -51,16 +65,20 @@ export default{
 
   if(request.method==="POST"&&url.pathname==="/api/viator/products"){
     let input;try{input=await request.json()}catch{return reply(400,{ok:false,reason:"INVALID_JSON"},origin)}
-    const destination=String(input?.destinationId||"").trim(),count=Math.min(12,Math.max(1,Number(input?.count||6))),language=String(input?.language||"en-US");
-    if(!destination)return reply(400,{ok:false,reason:"MISSING_DESTINATION_ID"},origin);
+    const checked=validateViatorSearchRequest(input);
+    if(!checked.valid)return reply(400,{ok:false,reason:"INVALID_REQUEST",issues:checked.issues},origin);
+    let registry;try{registry=await mappingRegistry(env)}catch(error){return reply(503,{ok:false,reason:String(error?.message||"MAPPING_UNAVAILABLE")},origin)}
+    const mapping=approvedMapping(registry,checked.value.placeId);
+    if(!mapping)return reply(404,{ok:false,reason:"PLACE_NOT_MAPPED"},origin);
     try{
-      const data=await viatorFetch("/products/search",{env,method:"POST",language,body:{
-        filtering:{destination},
+      const data=await viatorFetch("/products/search",{env,method:"POST",language:checked.value.language,body:{
+        filtering:{destination:String(mapping.viatorDestinationId)},
         sorting:{sort:"DEFAULT"},
-        pagination:{start:1,count},
+        pagination:{start:1,count:checked.value.count},
         currency:String(input?.currency||"USD")
       }});
-      return reply(200,{ok:true,destinationId:destination,products:Array.isArray(data?.products)?data.products:[]},origin,"public, max-age=900");
+      const products=(Array.isArray(data?.products)?data.products:[]).slice(0,checked.value.count).map(publicViatorProduct).filter(x=>x.productCode&&x.title);
+      return reply(200,{ok:true,placeId:checked.value.placeId,destination:{id:String(mapping.viatorDestinationId),name:String(mapping.viatorDestinationName||"")},products},origin,"public, max-age=900");
     }catch(error){
       return reply(503,{ok:false,reason:String(error?.message||"VIATOR_PRODUCT_SEARCH_FAILED")},origin);
     }
