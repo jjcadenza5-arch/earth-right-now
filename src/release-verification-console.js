@@ -1,3 +1,4 @@
+import {exactDestinationCandidates} from "./viator-destination-match.js";
 const $=s=>document.querySelector(s);
 const GATES=[
  {key:"browser",title:"Desktop browser",steps:["Open Home, Watch Earth, Explore, Local Earth, Living Atlas and My Earth.","Open ERN Guide and try at least one place request.","Open and close the immersive viewer.","Open the separate Now Moments and Places & Cameras pages.","Verify Previous/Next and source links.","Confirm controls are reachable and layout is not broken."]},
@@ -77,19 +78,14 @@ $("#runViatorTaxonomyTest").onclick=async()=>{
   const response=await fetch(VIATOR_API_ENDPOINT+"/api/viator/destinations",{headers:{accept:"application/json"}});
   const body=await response.json().catch(()=>({}));
   if(!response.ok)throw new Error(body?.reason||("HTTP "+response.status));
-  const rows=(Array.isArray(body?.destinations)?body.destinations:[])
-    .filter(x=>String(x?.name||"").trim().toLowerCase()==="auckland")
-    .map(x=>({
-      destinationId:x.destinationId,
-      name:x.name,
-      type:x.type,
-      parentDestinationId:x.parentDestinationId,
-      lookupId:x.lookupId,
-      destinationUrl:x.destinationUrl,
-      timeZone:x.timeZone,
-      center:x.center
-    }));
-  viatorTaxonomyTestResult.textContent=JSON.stringify({httpStatus:response.status,matchCount:rows.length,matches:rows},null,2);
+  const all=Array.isArray(body?.destinations)?body.destinations:[];
+  const rows=exactDestinationCandidates(all,{name:"Auckland",country:"New Zealand",types:["CITY","TOWN"]});
+  viatorTaxonomyTestResult.textContent=JSON.stringify({
+    httpStatus:response.status,
+    exactMatchCount:rows.length,
+    countryConfirmedCount:rows.filter(x=>x.countryMatch).length,
+    candidates:rows
+  },null,2);
  }catch(error){
   viatorTaxonomyTestResult.textContent=JSON.stringify({ok:false,error:String(error?.message||error)},null,2);
  }finally{button.disabled=false}

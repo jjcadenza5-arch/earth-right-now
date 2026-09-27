@@ -1,4 +1,4 @@
-import {publicViatorProduct,validateViatorSearchRequest} from "../../src/viator-api-contract.js";
+import {publicViatorProduct,validateViatorSearchRequest,viatorCampaignValue} from "../../src/viator-api-contract.js";
 
 const JSON_HEADERS={"content-type":"application/json; charset=utf-8","cache-control":"no-store"};
 const viatorBase=(env)=>String(env.VIATOR_API_BASE||"https://api.sandbox.viator.com/partner").replace(/\/$/,"");
@@ -59,7 +59,7 @@ function approvedMapping(registry,placeId){
 }
 export default{
  async fetch(request,env){
-  const url=new URL(request.url),origin=allowedOrigin(request,env),enabled=env.ERN_VIATOR_API_ENABLED==="true";
+  const url=new URL(request.url),origin=allowedOrigin(request,env),enabled=env.ERN_VIATOR_API_ENABLED==="true",publicProductsEnabled=env.ERN_VIATOR_PUBLIC_PRODUCTS_ENABLED==="true";
   if(request.method==="OPTIONS"){
     return origin?new Response(null,{status:204,headers:{
       "access-control-allow-origin":origin,
@@ -70,7 +70,7 @@ export default{
     }}):new Response(null,{status:403});
   }
   if(request.method==="GET"&&url.pathname==="/health"){
-    return reply(200,{ok:true,service:"ERN Travel API",viatorEnabled:enabled,apiKeyConfigured:Boolean(env.VIATOR_API_KEY),apiEnvironment:viatorBase(env).includes("sandbox")?"SANDBOX":"PRODUCTION",mappingMode:"EXPLICIT_ONLY",publicActivationAllowed:false,secretValuesExposed:false},origin);
+    return reply(200,{ok:true,service:"ERN Travel API",viatorEnabled:enabled,apiKeyConfigured:Boolean(env.VIATOR_API_KEY),apiEnvironment:viatorBase(env).includes("sandbox")?"SANDBOX":"PRODUCTION",mappingMode:"EXPLICIT_ONLY",publicActivationAllowed:publicProductsEnabled,secretValuesExposed:false},origin);
   }
   if(!origin)return reply(403,{ok:false,reason:"ORIGIN_NOT_ALLOWED"});
   if(!enabled)return reply(503,{ok:false,reason:"VIATOR_API_DISABLED"},origin);
@@ -110,6 +110,7 @@ export default{
   }
 
   if(request.method==="POST"&&url.pathname==="/api/viator/products"){
+    if(!publicProductsEnabled)return reply(503,{ok:false,reason:"PUBLIC_PRODUCTS_DISABLED"},origin);
     let input;try{input=await request.json()}catch{return reply(400,{ok:false,reason:"INVALID_JSON"},origin)}
     const checked=validateViatorSearchRequest(input);
     if(!checked.valid)return reply(400,{ok:false,reason:"INVALID_REQUEST",issues:checked.issues},origin);
@@ -117,14 +118,15 @@ export default{
     const mapping=approvedMapping(registry,checked.value.placeId);
     if(!mapping)return reply(404,{ok:false,reason:"PLACE_NOT_MAPPED"},origin);
     try{
-      const data=await viatorFetch("/products/search",{env,method:"POST",language:checked.value.language,body:{
+      const campaign=encodeURIComponent(viatorCampaignValue(checked.value.placeId));
+      const data=await viatorFetch("/products/search?campaign-value="+campaign,{env,method:"POST",language:checked.value.language,body:{
         filtering:{destination:String(mapping.viatorDestinationId)},
         sorting:{sort:"DEFAULT"},
         pagination:{start:1,count:checked.value.count},
-        currency:String(input?.currency||"USD")
+        currency:checked.value.currency
       }});
-      const products=(Array.isArray(data?.products)?data.products:[]).slice(0,checked.value.count).map(publicViatorProduct).filter(x=>x.productCode&&x.title);
-      return reply(200,{ok:true,placeId:checked.value.placeId,destination:{id:String(mapping.viatorDestinationId),name:String(mapping.viatorDestinationName||"")},products},origin,"public, max-age=900");
+      const products=(Array.isArray(data?.products)?data.products:[]).slice(0,checked.value.count).map(publicViatorProduct).filter(x=>x.productCode&&x.title&&x.productUrl);
+      return reply(200,{ok:true,placeId:checked.value.placeId,destination:{id:String(mapping.viatorDestinationId),name:String(mapping.viatorDestinationName||"")},campaign:viatorCampaignValue(checked.value.placeId),products},origin,"public, max-age=900");
     }catch(error){
       return reply(503,{ok:false,reason:String(error?.message||"VIATOR_PRODUCT_SEARCH_FAILED")},origin);
     }
