@@ -15,8 +15,8 @@ Atlas and ERN Guide are connected to the same registry/truth gates. ERN Guide is
 ## Stage G — source health automation — ACTIVE
 Report-only health proposals, conservative provider-family policies, prioritized evidence debt, a provider-family evidence plan, a daily operations watch, and provider playback-evidence status are active. The current healthy/current external provider-discovery queue has been fully researched as of 2026-09-25; unresolved integration work is now explicit exact-target preparation rather than unclassified provider research. KitzSki and SkylineWebcams have official provider-generated widget/current-image paths, while the Icelandic Meteorological Office has an explicitly authorized attributed current-image reuse path. All three remain fail-closed at exact-target preparation until deployed review. The current inside-ERN ready target is 5/5 with fresh HUMAN_PLAYBACK proof. Remaining degraded sources are deliberate exceptions/recovery items, not a blocker to the current ready target. Automation continues to refuse HTTP reachability or provider metadata as playback proof and never mutates rights/truth automatically.
 
-## Stage H — travel bridge — FOUNDATION DONE
-Trust-isolated stay/eat/transport/ticket offer model exists. Add real verified partners only after Earth-first experience is stable.
+## Stage H — travel bridge — PHASE 3 ACTIVATION OPEN
+Trust-isolated stay/eat/transport/ticket offer model exists and the Earth-first experience is now accepted for commercial progression. The finite first activation wave is Booking.com + Viator. Agoda and Skyscanner are held until Wave A state is known. No tracked links or partner claims are public until documented acceptance and credential verification exist.
 
 ## Stage I — public deployment and release certification — PUBLIC / GATE READY
 earthrightnow.app is publicly deployed and the current release-readiness gate is green with fresh browser, mobile, provider-playback, accessibility, performance and rollback evidence. Future releases remain fail-closed: keep evidence fresh and do not treat static/CI success alone as permission or playback proof.
@@ -30,8 +30,8 @@ Provider research continuity: see `docs/PROVIDER_RESEARCH_HANDOFF_2026-09-25.md`
 ## Cross-cutting priority — Curiosity-first story layer
 Use small open questions to invite self-directed discovery: **Do not push the answer. Create the question.** This is a non-disruptive strengthening layer only; truth/currentness, source choice, navigation and playback architecture remain authoritative. See `docs/CURIOSITY_STORY_LAYER.md`.
 
-## Cross-cutting priority — Generative Guide production phase
-The public privacy notice documents the generative Guide boundary. The repository now contains the approved Cloudflare Worker + GPT-5.6 Luna production foundation with deterministic-first escalation, server-side ERN catalog rehydration, keyed anonymous rate subjects, SQLite Durable Object rate/idempotency/cost state, Structured Outputs, model cancellation, aggregate-only metrics and a USD 10 monthly ceiling. **This is code readiness only.** The Guide remains `NOT_DEPLOYED` and paid AI remains OFF until a real Worker endpoint, Cloudflare secrets, provider-data-handling review, production health/cost verification and public deployment evidence are complete.
+## Cross-cutting priority — Generative Guide — LIVE / COST-CONTROLLED
+The Generative ERN Guide is now deployed through a separate Cloudflare Worker and is live in deterministic-first mode. Simple/direct Guide requests remain local and free; only nuanced/no-match requests are eligible for GPT-5.6 Luna. Production evidence includes server-side ERN catalog rehydration, keyed anonymous rate subjects, SQLite Durable Object rate/idempotency/cost state, Structured Outputs, model cancellation, aggregate-only metrics, a USD 10 monthly ceiling, live health verification, and a successful grounded production request costing about USD 0.0007466. Deterministic fallback remains mandatory.
 
 
 ## Cross-cutting priority — Minimum LIVE HERE renewal workload
