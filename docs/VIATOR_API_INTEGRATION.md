@@ -81,7 +81,7 @@ API availability and public product visibility are separate gates. ERN_VIATOR_AP
 
 ## Current activation hold
 
-Provider-side sandbox authentication is the only current blocker. The partner portal shows the sandbox key as enabled and warns that activation may take up to 24 hours. During this window ERN must not rotate the key repeatedly, switch production on for testing, or loosen the public gates. Once sandbox authentication succeeds, the finite sequence is: retrieve destination taxonomy → explicitly approve Auckland mapping → verify product search → verify returned affiliate productUrl → then consider public API-product activation.
+Provider-side sandbox authentication is the only current blocker. The partner portal shows the sandbox key as enabled and states that API key activation can take up to 48 hours. During this window ERN must not rotate the key repeatedly, switch production on for testing, or loosen the public gates. Once sandbox authentication succeeds, the finite sequence is: retrieve destination taxonomy → explicitly approve Auckland mapping → verify product search → verify returned affiliate productUrl → then consider public API-product activation.
 
 
 ## Browser activation gate
@@ -91,3 +91,8 @@ A dormant browser helper may prepare public API-product requests, but it must fa
 ## Retest discipline
 
 While the Viator sandbox key remains in provider activation, repeat diagnostics only after the recorded nextRecommendedRetestAt time, or earlier only if Viator reports that the key is active or another material access-state change occurs. This prevents circular retries of the same known 401 state.
+
+
+## 2026-09-27 activation-window update
+
+Viator sent partner email evidence stating that a newly issued API key can take up to 48 hours to become active. ERN therefore treats the current sandbox 401 Invalid API Key response as an expected provider-side activation hold until that window expires, unless Viator reports activation earlier.
