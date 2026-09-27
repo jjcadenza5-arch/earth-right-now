@@ -1,1 +1,11 @@
-import fs from "node:fs";const s=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");console.assert(s.includes('"mainEntityOfPage"'));console.assert(s.includes('"isPartOf"'));console.assert(s.includes("latestCheck"));console.assert(s.includes("<lastmod>"));console.assert(s.includes('lastmod:"2026-09-23"'));console.log("ERN destination SEO freshness wiring passed");
+import fs from "node:fs";
+import assert from "node:assert/strict";
+
+const s=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
+assert.match(s,/"mainEntityOfPage"|"mainEntity"/);
+assert.match(s,/"isPartOf"/);
+assert.match(s,/latestDate/);
+assert.match(s,/<lastmod>/);
+assert.match(s,/staticLastmod/);
+assert.match(s,/BreadcrumbList/);
+console.log("ERN destination SEO freshness wiring passed");
