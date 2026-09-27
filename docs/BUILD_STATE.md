@@ -1,3 +1,13 @@
+## 2026-09-27 — AI-search discoverability strengthened; LIVE HERE proofs now require renewal
+- ERN homepage now exposes explicit WebSite + Organization structured identity, with stable logo and a working SearchAction that maps to the existing `?q=` search deep link.
+- Added a crawlable `/places/` directory linking the generated destination pages; destination pages now expose BreadcrumbList + Place/WebPage structure and verified-source `dateModified` freshness.
+- The Places directory exposes an ItemList of current ERN destinations. Sitemap generation includes the hub and all destination pages.
+- OAI-SearchBot remains explicitly allowed in `robots.txt`; crawler policy was not broadened unnecessarily. Operator/review surfaces remain noindex and excluded from the sitemap.
+- Added a post-build discoverability preflight that blocks deployment if ERN loses OAI-SearchBot access, the Places hierarchy, destination canonicals/breadcrumbs, or operator-page sitemap exclusion.
+- PRs #538, #539 and #540 deployed successfully; JavaScript syntax, Operations and Pages all passed.
+- Latest Operations run at 2026-09-27T15:54Z shows the prior HUMAN_PLAYBACK evidence has aged out: 0/5 current LIVE HERE readiness, 10 expired proofs, and minimum primary renewal count 5.
+- No catalog health/permission/playback truth is auto-mutated by that expiry. The next valid recovery step is human playback review of only the minimum five primary renewals; extra renewal debt stays backlog.
+
 ## 2026-09-27 — Viator activation window confirmed as up to 48 hours
 - Viator sent partner email evidence stating that the Affiliate API key can take up to 48 hours to become active.
 - ERN's prior 24-hour retest assumption is superseded.
