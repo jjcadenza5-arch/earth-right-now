@@ -1,4 +1,6 @@
-import fs from "node:fs";import assert from "node:assert/strict";
+import fs from "node:fs";
+import assert from "node:assert/strict";
+
 const offers=JSON.parse(fs.readFileSync("data/travel-offers.json","utf8"));
 const x=offers.find(o=>o.id==="viator-auckland-activities-pilot");
 assert.ok(x);
@@ -6,12 +8,21 @@ assert.equal(x.placeId,"auckland-viaduct-harbour");
 assert.equal(x.intent,"activities");
 assert.equal(x.provider,"Viator");
 assert.equal(x.affiliate,true);
-assert.equal(x.sponsored,false);\nassert.equal(x.linkScope,"destination");\nassert.equal(x.resolvedBehavior,"DESTINATION_RESULTS");
+assert.equal(x.sponsored,false);
+assert.equal(x.linkScope,"destination");
+assert.equal(x.resolvedBehavior,"DESTINATION_RESULTS");
 assert.equal(x.verified,true);
 assert.match(x.url,/pid=P00322254/);
 assert.match(x.url,/medium=link/);
+
 const staging=JSON.parse(fs.readFileSync("data/affiliate-staging.json","utf8"));
 assert.equal(staging.programs.viator.privateStagingVerified,true);
 assert.equal(staging.programs.viator.publicLinksEnabled,true);
 assert.equal(staging.programs["booking-com"].publicLinksEnabled,false);
+
+const deployment=JSON.parse(fs.readFileSync("data/viator-api-deployment.json","utf8"));
+assert.equal(deployment.publicActivationAllowed,false);
+assert.equal(deployment.sandboxKeyState,"ENABLED_PENDING_ACTIVATION");
+assert.equal(deployment.lastDiagnostic.destinationsStatus,401);
+
 console.log("Viator Auckland limited pilot: ok");
