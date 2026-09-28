@@ -1,3 +1,9 @@
+## 2026-09-28 — Apply second Kyoto playback review
+- Promoted Hanamikoji after deployed human confirmation.
+- Deferred Arashiyama Bamboo after candidate-specific playback failure.
+- Preserved Nishiki Market for an in-window retest because the observed failure occurred outside its stated live schedule.
+- No blanket Kyoto or YouTube approval inferred.
+
 ## 2026-09-28 — Stage second Kyoto visitor-condition batch
 - Added Hanamikoji Street, Nishiki Market and Arashiyama Bamboo Forest as research-only official Kyoto live-camera candidates.
 - Preserved Nishiki's provider-stated 11:00–18:00 JST live window.
