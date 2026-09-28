@@ -83,3 +83,7 @@ The future camera/place submission workflow now has a published 30-day maximum r
 
 ## Cross-cutting priority — See Before You Go source strategy
 ERN quality and visitor-program fit now work together in source research. Any visitor-interest place may qualify; categories are illustrative, not restrictive. Prioritize strong truthful current windows where visitors benefit from seeing the place before going, then add practical travel actions only when naturally relevant. Commercial fit is a supporting research signal and never overrides truth, visual quality, playback eligibility, Guide truth, Stories ranking or Watch Earth editorial curation. See `docs/SEE_BEFORE_YOU_GO_STANDARD.md` and `data/source-research-priorities.json`.
+
+
+### Visitor-interest source expansion queue — ACTIVE RESEARCH
+The See Before You Go strategy now has a fail-closed candidate queue in `data/visitor-source-expansion-candidates.json`. Current priority is exact-target research for Kyoto official tourism live cameras, followed by active London tourism webcams and Seoul visitor-facing real-time/CCTV surfaces. Seasonal bloom cameras are retained as timed review candidates. Nothing enters the catalog from this queue without exact truth, permission, currentness, health and visual-quality evidence.
