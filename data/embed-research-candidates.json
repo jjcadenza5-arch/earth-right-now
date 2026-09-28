@@ -296,7 +296,7 @@
   },
   {
     "id": "youtube-kyoto-hanamikoji",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "Kyoto City Tourism Association",
     "platform": "YouTube",
     "sourceUrl": "https://global.kyoto.travel/en/comfort/",
@@ -304,15 +304,21 @@
     "ownerEvidence": "Kyoto City Tourism Association official live-stream channel identifies Hanamikoji Street as an official Kyoto live camera.",
     "currentEvidence": "Official stream description says visitors can check real-time images of Kyoto sightseeing spots and avoid crowded times.",
     "discoveredAt": "2026-09-28T15:15:00Z",
-    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_PENDING_PLAYBACK",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "currentEvidenceReviewedAt": "2026-09-28T15:15:00Z",
     "platformEvidence": "Exact official YouTube target J3xHBUgWRqc. Standard branded/no-cookie player only; deployed review required.",
     "researchSources": [
       "https://global.kyoto.travel/en/comfort/",
       "https://www.youtube.com/watch?v=J3xHBUgWRqc"
-    ]
+    ],
+    "lastHumanReviewAt": "2026-09-28T15:15:56.227Z",
+    "lastHumanReviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
+    "reviewBatch": "af006e03dfb279e3",
+    "reviewedSourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc",
+    "reviewNote": "Deployed-origin human review confirmed the exact Hanamikoji Kyoto tourism player was visibly playing/current. Approval applies only to this exact target."
   },
   {
     "id": "youtube-kyoto-nishiki-market",
@@ -327,13 +333,19 @@
     "discoveredAt": "2026-09-28T15:15:00Z",
     "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
     "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_PENDING_PLAYBACK",
+    "promotion": "BLOCKED_PENDING_VALID_SCHEDULE_REVIEW",
     "currentEvidenceReviewedAt": "2026-09-28T15:15:00Z",
     "platformEvidence": "Exact official YouTube target qZ2ghbe3zc0. ERN must not imply 24/7 live availability outside the provider's stated 11:00–18:00 JST schedule.",
     "researchSources": [
       "https://global.kyoto.travel/en/comfort/",
       "https://www.youtube.com/watch?v=qZ2ghbe3zc0"
-    ]
+    ],
+    "lastHumanReviewAt": "2026-09-28T15:16:17.377Z",
+    "lastHumanReviewOutcome": "PLAYBACK_FAILED_OUTSIDE_PUBLISHED_LIVE_WINDOW",
+    "reviewBatch": "af006e03dfb279e3",
+    "reviewedSourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0",
+    "reviewNote": "Human review occurred around 00:16 JST, outside the provider's stated 11:00–18:00 JST live window. Do not count this as a target failure. Retest only during the published live window."
   },
   {
     "id": "youtube-kyoto-arashiyama-bamboo",
@@ -346,13 +358,19 @@
     "currentEvidence": "Official stream description says live imagery is provided for real-time sightseeing conditions and crowd avoidance.",
     "discoveredAt": "2026-09-28T15:15:00Z",
     "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_PENDING_PLAYBACK",
+    "playbackReview": "HUMAN_PLAYBACK_FAILED",
+    "promotion": "BLOCKED_PLAYBACK_FAILED",
     "currentEvidenceReviewedAt": "2026-09-28T15:15:00Z",
     "platformEvidence": "Exact official YouTube target Op-lf2NRMzs. Standard branded/no-cookie player only; deployed review required.",
     "researchSources": [
       "https://global.kyoto.travel/en/comfort/",
       "https://www.youtube.com/watch?v=Op-lf2NRMzs"
-    ]
+    ],
+    "lastHumanReviewAt": "2026-09-28T15:15:50.026Z",
+    "lastHumanReviewOutcome": "PLAYBACK_FAILED",
+    "reviewBatch": "af006e03dfb279e3",
+    "reviewedSourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/Op-lf2NRMzs",
+    "reviewNote": "Deployed-origin operator review failed to produce usable playback for this exact target. Keep research-only; do not infer source outage or family-wide YouTube failure."
   }
 ]
