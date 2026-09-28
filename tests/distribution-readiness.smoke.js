@@ -1,0 +1,11 @@
+import fs from "node:fs";
+import {spawnSync} from "node:child_process";
+const x=JSON.parse(fs.readFileSync("data/distribution-channels.json","utf8"));
+console.assert(x.safety?.inventAccountClaimsAllowed===false);
+console.assert(x.safety?.automaticPostingAllowed===false);
+console.assert((x.channels||[]).every(c=>c.state==="NOT_CONNECTED"),"No social account may be claimed before real connection evidence exists");
+const r=spawnSync(process.execPath,["scripts/distribution-readiness.mjs"],{encoding:"utf8"});
+console.assert(r.status===0);const out=JSON.parse(r.stdout);
+console.assert(out.websiteShareReady===true&&out.aiSearchReady===true);
+console.assert(out.externalConnectionRequired.includes("instagram")&&out.externalConnectionRequired.includes("line"));
+console.log("Stage N distribution readiness stays truthful about external social accounts");
