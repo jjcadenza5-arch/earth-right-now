@@ -26,6 +26,9 @@ on:
       - "tests/stage-m-completion.smoke.js"
       - "tests/share-links.smoke.js"
       - "tests/distribution-readiness.smoke.js"
+      - "tests/public-brand-kit.smoke.js"
+      - "press.html"
+      - "data/public-brand-facts.json"
       - "data/distribution-channels.json"
       - "stories.html"
       - "tests/stage-l-completion.smoke.js"
@@ -88,6 +91,7 @@ jobs:
           node tests/stage-m-completion.smoke.js
           node tests/share-links.smoke.js
           node tests/distribution-readiness.smoke.js
+          node tests/public-brand-kit.smoke.js
       - name: Run Generative Guide focused smoke tests
         run: |
           set -euo pipefail
