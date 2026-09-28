@@ -43,12 +43,12 @@ if(booking&&booking.state==="SUBMITTED_PENDING_REVIEW"){
     beforeTrigger:"WAIT"
   });
 }
-if(travelpayouts&&travelpayouts.reviewState==="MATCHING_IN_PROGRESS"){
+if(travelpayouts&&/MATCHING|CONTINUES/.test(String(travelpayouts.reviewState||""))){
   add({
     id:"travelpayouts-program-matching",
     lane:"AFFILIATE_PLATFORM",
-    state:"MATCHING_IN_PROGRESS",
-    trigger:"Travelpayouts finishes Project matching or the dashboard materially changes program availability/review states.",
+    state:travelpayouts.reviewState||"MATCHING_IN_PROGRESS",
+    trigger:"Travelpayouts materially changes the available/unlockable program set or finishes broader matching.",
     nextEligibleAt:null,
     eligibleNow:false,
     beforeTrigger:"NO_MASS_ACTIVATION_OR_DRIVE_AUTOMATION",
