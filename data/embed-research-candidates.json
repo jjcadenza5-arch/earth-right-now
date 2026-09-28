@@ -345,7 +345,13 @@
     "reviewBatch": "af006e03dfb279e3",
     "reviewedSourceUrl": "https://global.kyoto.travel/en/comfort/",
     "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0",
-    "reviewNote": "Human review occurred around 00:16 JST, outside the provider's stated 11:00–18:00 JST live window. Do not count this as a target failure. Retest only during the published live window."
+    "reviewNote": "Human review occurred around 00:16 JST, outside the provider's stated 11:00–18:00 JST live window. Do not count this as a target failure. Retest only during the published live window.",
+    "reviewWindow": {
+      "timeZone": "Asia/Tokyo",
+      "start": "11:00",
+      "end": "18:00",
+      "source": "Provider-published live schedule"
+    }
   },
   {
     "id": "youtube-kyoto-arashiyama-bamboo",
