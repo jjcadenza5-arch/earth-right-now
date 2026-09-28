@@ -215,6 +215,9 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     if(submissionTransport.missing?.length)lines.push(`- Missing: ${submissionTransport.missing.join(", ")}.`);
     lines.push("- Delivery readiness never implies approval or publication; review remains manual and separate.","");
   }
+  const commercialExternalGate=(externalGates?.openGates||[]).some(g=>["booking-com-review","viator-api-activation"].includes(g?.id));
+  const commercialResearchFiniteComplete=commercialOnboarding?.state==="PILOT_COVERAGE_REACHED"&&!(commercialResearchDepth?.items||[]).length;
+  const humanPlaybackRenewals=(operatorReviewQueue?.renewalRequiredCount??operatorReviewQueue?.renewalCount??0);
   lines.push("## Next operational focus");
   if((operatorReviewQueue?.renewalRequiredCount??operatorReviewQueue?.renewalCount??0)>0)lines.push("- Complete only the minimum primary playback renewals needed to preserve the LIVE HERE target; keep extra renewal debt in backlog unless capacity allows.");
   else if((playbackHorizon?.summary?.due6h||0)>0||(playbackHorizon?.summary?.due12h||0)>0)lines.push("- Renew expiring inside-ERN HUMAN_PLAYBACK evidence before LIVE HERE eligibility lapses.");
@@ -242,11 +245,12 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   if((commercialVerificationHorizon?.summary?.attention||0)>0)lines.push("- Review commercial verification warnings before partner or offer evidence becomes stale; never auto-renew.");
   if(commercialInventory?.stage==="EMPTY_STAGING")lines.push("- Keep the public experience non-commercial until real verified partner inventory exists.");
   if(localDirectory?.state==="PILOT_COMPLETE")lines.push("- Local Earth editorial pilot is complete; keep expansion on hold unless materially useful local evidence appears.");
-  if(affiliateApplicationReadiness?.readyForDecision)lines.push("- Affiliate groundwork is complete; wait for an explicit user decision before any program application or credential setup.");
+  if(commercialExternalGate&&commercialResearchFiniteComplete)lines.push("- Commercial Wave A is externally gated and the finite private research target is complete; do not reopen affiliate breadth/depth or staged-option review until Booking.com/Viator evidence materially changes.");
+  else if(affiliateApplicationReadiness?.readyForDecision)lines.push("- Affiliate groundwork is complete; wait for an explicit user decision before any new program application or credential setup.");
   else if(affiliatePlatformResearch?.valid)lines.push("- Keep affiliate platforms research-only until ERN deliberately chooses which programs to apply to.");
-  if(commercialResearchDepth?.items?.length)lines.push(`- Deepen private research at ${commercialResearchDepth.items[0].title||commercialResearchDepth.items[0].placeId} with a real ${commercialResearchDepth.items[0].recommendedIntent||"travel"} option before adding duplicate intent coverage.`);
-  if(commercialResearch?.valid)lines.push("- Review staged real travel options for partner/affiliate terms before any public activation.");
-  else if(commercialOnboarding?.items?.length)lines.push("- Research real travel options for the highest content-ready destinations without contacting or listing invented partners.");
+  if(!commercialExternalGate&&commercialResearchDepth?.items?.length)lines.push(`- Deepen private research at ${commercialResearchDepth.items[0].title||commercialResearchDepth.items[0].placeId} with a real ${commercialResearchDepth.items[0].recommendedIntent||"travel"} option before adding duplicate intent coverage.`);
+  if(!commercialExternalGate&&commercialResearch?.valid&&!commercialResearchFiniteComplete)lines.push("- Review staged real travel options for partner/affiliate terms before any public activation.");
+  else if(!commercialExternalGate&&commercialOnboarding?.items?.length)lines.push("- Research real travel options for the highest content-ready destinations without contacting or listing invented partners.");
   if(submissionTransport&&!submissionTransport.active){
     const submissionMissing=submissionTransport.missing||[];
     if(submissionMissing.length===1&&submissionMissing[0]==="HTTPS_REVIEW_ENDPOINT")lines.push("- Submission privacy, retention and Worker foundation are prepared. The remaining transport gate is controlled HTTPS deployment evidence; public intake stays off.");
@@ -256,7 +260,6 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   const submissionExternalOnly=Boolean(submissionTransport)&&submissionTransport.active===false&&Array.isArray(submissionTransport.missing)&&submissionTransport.missing.length===1&&submissionTransport.missing[0]==="HTTPS_REVIEW_ENDPOINT";
   const autonomousHoldChecks={
     insideTargetHealthy:(snapshot?.insideERN?.readyShortfall||0)===0,
-    noRequiredRenewal:(operatorReviewQueue?.renewalRequiredCount??operatorReviewQueue?.renewalCount??0)===0,
     playbackLedgerConsistent:(playbackEvidenceConsistency?.summary?.issues||0)===0,
     noImmediateRevalidation:(sourceRevalidationTriage?.immediate||[]).length===0,
     providerDiscoveryComplete:providerDiscoveryQueue?.state==="CURRENT_CATALOG_RESEARCH_COMPLETE",
@@ -274,8 +277,13 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
 
   lines.push("","## Autonomous work state");
   if(autonomousHold){
-    lines.push("- **AUTONOMOUS HOLD** — no high-priority local implementation or research lane remains open.");
-    lines.push("- Resume only when something materially changes: playback evidence ages/fails, the catalog changes, an exact provider target becomes available, or ERN deliberately opens an external provider/backend/commercial decision phase.");
+    if(humanPlaybackRenewals>0){
+      lines.push(`- **AUTONOMOUS HOLD / HUMAN REVIEW DUE** — no high-priority local implementation or research lane remains open; ${humanPlaybackRenewals} primary HUMAN_PLAYBACK renewal(s) require real browser observation.`);
+      lines.push("- Human playback renewal is not autonomous work and cannot be inferred from HTTP, CI, metadata or provider reachability.");
+    }else{
+      lines.push("- **AUTONOMOUS HOLD** — no high-priority local implementation or research lane remains open.");
+    }
+    lines.push("- Resume autonomous work only when a material trigger appears: catalog/source state changes, exact provider target availability, verified external account/provider change, or an explicitly opened product phase.");
     lines.push("- Do not create new tasks merely to keep activity moving; hold completed and externally blocked lanes.");
   }else{
     lines.push(`- Local autonomous work remains open in: ${autonomousHoldBlockers.join(", ")}.`);
