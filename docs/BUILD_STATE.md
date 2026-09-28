@@ -1,3 +1,11 @@
+## 2026-09-28 — Visitor-interest source expansion queue created
+- Converted the See Before You Go strategy into a fail-closed research queue rather than adding unverified cameras directly to the catalog.
+- P0: Kyoto official tourism live-camera network, because it explicitly shows real-time conditions at visitor hotspots for congestion-aware trip decisions.
+- P1: active London tourism webcams, Seoul real-time tourism/CCTV, and seasonal Tulip Time / Tonami bloom cameras.
+- Chiang Mai official CCTV is held because feeds currently report standby/waiting.
+- Thailand seasonal farms/orchards are recorded as a source gap and future For Places / partner-camera outreach opportunity; static tourism media is not treated as current.
+- No candidate is public or eligible for Watch Earth until exact URL, truth, permission, currentness, health and visual quality are separately verified.
+
 ## 2026-09-28 — See Before You Go source strategy formalized
 - Preserved ERN's original strawberry-picking lesson as a general product test: help visitors understand the real place before they go.
 - Clarified that ERN is not restricted to any place category; any place with real visitor interest can qualify.

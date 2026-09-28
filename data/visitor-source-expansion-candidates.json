@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-28T14:50:00Z",
+  "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
+  "publicPromotionAllowed": false,
+  "candidates": [
+    {
+      "id": "kyoto-official-tourism-live-cameras",
+      "priority": "P0",
+      "placeGroup": "Kyoto visitor hotspots",
+      "country": "Japan",
+      "provider": "Kyoto City / Kyoto City Tourism Association (DMO KYOTO)",
+      "candidateType": "OFFICIAL_TOURISM_LIVE_CAMERA_NETWORK",
+      "visitorDecisionValue": "VERY_HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "activities",
+        "culture",
+        "eat",
+        "transport",
+        "services"
+      ],
+      "evidenceUrls": [
+        "https://global.kyoto.travel/en/comfort/",
+        "https://www.kyokanko.or.jp/news/20260812"
+      ],
+      "observedTargets": [
+        "Arashiyama / Togetsukyo Bridge",
+        "Arashiyama Bamboo Forest",
+        "Gion / Hanamikoji",
+        "Fushimi Inari area",
+        "Nishiki Market",
+        "Philosopher's Path",
+        "Kyoto Station"
+      ],
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "Official tourism cameras are explicitly used to show real-time visitor conditions and congestion before/during visits; exceptionally close match to ERN mission.",
+      "next": "Resolve durable per-camera URLs, truth type, permission/link-only behavior, currentness and playback."
+    },
+    {
+      "id": "london-official-tourism-webcams",
+      "priority": "P1",
+      "placeGroup": "London visitor landmarks",
+      "country": "United Kingdom",
+      "provider": "Visit London",
+      "candidateType": "OFFICIAL_TOURISM_WEBCAM_GUIDE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "activities",
+        "culture",
+        "stay",
+        "transport"
+      ],
+      "evidenceUrls": [
+        "https://www.visitlondon.com/things-to-do/sightseeing/london-attraction/webcams-of-london"
+      ],
+      "observedTargets": [
+        "Savoy Place skyline",
+        "Abbey Road crossing"
+      ],
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "Official tourism guide identifies live/current views of iconic visitor-interest places; several other listed cameras are currently unavailable and must remain excluded until reverified.",
+      "next": "Resolve exact active camera URLs and distinguish true live footage from daily shots/time-lapse."
+    },
+    {
+      "id": "seoul-live-tourism-cctv",
+      "priority": "P1",
+      "placeGroup": "Seoul tourist areas",
+      "country": "South Korea",
+      "provider": "Seoul Tourism Organization / Seoul Real-time City Data",
+      "candidateType": "OFFICIAL_REALTIME_TOURISM_DATA_WITH_CCTV",
+      "visitorDecisionValue": "VERY_HIGH",
+      "qualityPotential": "MEDIUM",
+      "programFit": [
+        "activities",
+        "culture",
+        "eat",
+        "transport",
+        "services"
+      ],
+      "evidenceUrls": [
+        "https://english.visitseoul.net/realtime-seoul"
+      ],
+      "observedTargets": [
+        "Gwanghwamun",
+        "Myeongdong",
+        "Hongdae",
+        "Itaewon",
+        "Gangnam",
+        "Jamsil",
+        "Seoul Station",
+        "Banpo Hangang Park"
+      ],
+      "state": "VISUAL_ACCESS_RESEARCH_REQUIRED",
+      "why": "Official tourism service already combines real-time crowd, traffic, weather and CCTV links for visitor decision support.",
+      "next": "Verify whether visitor-facing CCTV imagery is durable, legally linkable and useful enough as an ERN current window."
+    },
+    {
+      "id": "holland-tulip-time-live-tracker",
+      "priority": "P1_SEASONAL",
+      "placeGroup": "Holland Tulip Time bloom areas",
+      "country": "United States",
+      "provider": "Tulip Time Festival / City of Holland",
+      "candidateType": "SEASONAL_LIVE_VIDEO_TRACKER",
+      "visitorDecisionValue": "VERY_HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "activities",
+        "culture",
+        "transport"
+      ],
+      "evidenceUrls": [
+        "https://www.tuliptime.com/the-tulips/tulip-tracker"
+      ],
+      "observedTargets": [
+        "Window on the Waterfront",
+        "Centennial Park"
+      ],
+      "state": "SEASONAL_REVIEW",
+      "season": "Spring",
+      "nextReviewHint": "2027-03",
+      "why": "Explicit real-time bloom tracking answers the exact See Before You Go question for a seasonal trip.",
+      "next": "Recheck feeds before 2027 bloom season; do not promote off-season archival material as current."
+    },
+    {
+      "id": "tonami-tulip-park-live-camera",
+      "priority": "P1_SEASONAL",
+      "placeGroup": "Tonami Tulip Park",
+      "country": "Japan",
+      "provider": "Tonami City",
+      "candidateType": "MUNICIPAL_LIVE_CAMERA",
+      "visitorDecisionValue": "VERY_HIGH",
+      "qualityPotential": "MEDIUM_HIGH",
+      "programFit": [
+        "activities",
+        "culture",
+        "transport"
+      ],
+      "evidenceUrls": [
+        "https://www.city.tonami.lg.jp/livecam/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%AA%E3%83%83%E3%83%97%E5%85%AC%E5%9C%92%E5%8D%97%E9%96%80/"
+      ],
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "Municipal live camera at a seasonal flower destination strongly matches condition-before-trip use.",
+      "next": "Verify current refresh behavior, off-season usefulness and link/embed permission."
+    },
+    {
+      "id": "chiang-mai-pao-cctv",
+      "priority": "P2_LOCAL",
+      "placeGroup": "Chiang Mai public areas",
+      "country": "Thailand",
+      "provider": "Chiang Mai Provincial Administrative Organization",
+      "candidateType": "OFFICIAL_CCTV_NETWORK",
+      "visitorDecisionValue": "MEDIUM_HIGH",
+      "qualityPotential": "UNKNOWN",
+      "programFit": [
+        "activities",
+        "eat",
+        "transport",
+        "services"
+      ],
+      "evidenceUrls": [
+        "https://www.chiangmaipao.go.th/all_cctv.php"
+      ],
+      "state": "HOLD_FEEDS_NOT_READY",
+      "why": "Official local real-time CCTV page is highly relevant geographically, but current page reports feeds as standby/waiting; no public source promotion justified yet.",
+      "next": "Recheck only on material feed-state change."
+    },
+    {
+      "id": "thai-seasonal-agritourism-gap",
+      "priority": "P2_OUTREACH",
+      "placeGroup": "Thailand farms / orchards / seasonal fields",
+      "country": "Thailand",
+      "provider": "Multiple official tourism/agritourism directories",
+      "candidateType": "SOURCE_GAP_AND_FUTURE_PARTNER_OUTREACH",
+      "visitorDecisionValue": "VERY_HIGH",
+      "qualityPotential": "UNKNOWN",
+      "programFit": [
+        "activities",
+        "eat",
+        "stay",
+        "transport"
+      ],
+      "evidenceUrls": [
+        "https://www.doae.go.th/agrotourism/",
+        "https://www.tourismthailand.org/Attraction/sunflower-fields",
+        "https://www.thailandtravel.or.jp/i-love-flower-farm/"
+      ],
+      "state": "NO_VERIFIED_CURRENT_CAMERA_YET",
+      "why": "Seasonal farms and orchards embody ERN's origin story, but tourism pages mostly provide static/promotional imagery. This is a future camera-submission/outreach opportunity, not a license to label old media current.",
+      "next": "Later use For Places / partner-camera submission to invite farms with real current cameras or frequent current-image feeds."
+    }
+  ],
+  "guardrails": {
+    "noAutomaticPromotion": true,
+    "exactUrlRequired": true,
+    "truthTypeRequired": true,
+    "permissionRequired": true,
+    "currentnessRequired": true,
+    "healthRequired": true,
+    "visualQualityReviewRequired": true,
+    "commercialSignalCannotPromoteCandidate": true
+  }
+}

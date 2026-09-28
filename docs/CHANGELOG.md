@@ -1,3 +1,9 @@
+## 2026-09-28 — Add visitor-interest source expansion queue
+- Added a fail-closed candidate queue grounded in official/current evidence.
+- Prioritized Kyoto's official tourism cameras, London official tourism webcams, Seoul real-time tourism/CCTV, and seasonal bloom trackers.
+- Recorded Chiang Mai CCTV and Thailand agritourism as held/gap lanes rather than inventing current camera availability.
+- No public source truth or Watch Earth ranking changed.
+
 ## 2026-09-28 — Formalize See Before You Go source strategy
 - Added a product/source-research standard rooted in ERN's original purpose: show visitors the real place before they decide to go.
 - Made place coverage intentionally broad; source categories are examples, never restrictions.
