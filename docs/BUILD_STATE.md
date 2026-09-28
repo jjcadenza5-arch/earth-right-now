@@ -6,6 +6,12 @@
 - Added a lightweight homepage doorway, crawlable Stories page, sitemap entry, release-build inclusion, responsive styling and a truth-gate smoke test.
 - This is a strengthening layer only. Watch Earth, Guide, Search, Atlas, source truth and playback architecture remain authoritative.
 
+## 2026-09-28 — Stage L photo privacy publication verified
+- GitHub Pages successfully deployed commit `946bd6dc53e8d301234a93549ac9b871136c1d01` at 2026-09-28T08:13:53Z.
+- The public privacy page now contains the dedicated temporary Now Moment photo boundary.
+- Updated only non-secret deployment evidence: `privacyPublished=true` and the public privacy URL.
+- Media transport remains `NOT_DEPLOYED`, `publicActivationAllowed=false`, video remains disabled, and no Worker/R2 deployment is claimed.
+
 ## 2026-09-28 — Stage L local completion batch: privacy, moderation queue and deploy path
 - Published dedicated privacy wording for temporary Now Moment still photos: client/server metadata sanitation, canonical place binding, no captions/free text, no precise public coordinates, moderation before display, immediate hide-on-report, 45-minute deletion, rate/storage bounds and explicit public-off deployment gating.
 - Added a token-protected moderator queue for PENDING/REVIEW/reported photos plus a private no-store moderator media preview route. Pending media remains inaccessible through the public media route.
