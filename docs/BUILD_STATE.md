@@ -1,3 +1,9 @@
+## 2026-09-28 — Klook Honolulu/Waikiki destination offer prepared
+- Human generated and verified Klook Honolulu link `https://klook.tpo.mx/D2fGjnFI`.
+- Bound the offer to `waikiki-beach` as an activities option.
+- Partner: Klook via Travelpayouts; disclosure remains explicit; editorial ranking is unchanged.
+- This completes the current controlled destination-expansion wave pending final review.
+
 ## 2026-09-28 — Klook Sydney destination offer prepared
 - Human generated and verified Klook Sydney link `https://klook.tpo.mx/1tpoK4dK`.
 - Bound the offer to `coogee-randwick-beaches` as an activities option.

@@ -76,9 +76,9 @@
       "rationale": "Direct large-brand applications remain on hold while ERN builds traffic, social proof and commercial history through Viator and Travelpayouts-accessible programs."
     }
   ],
-  "next": "VALIDATE_AND_DEPLOY_KLOOK_SYDNEY_THEN_ASSESS_WAIKIKI_OR_PAUSE_WAVE",
+  "next": "VALIDATE_AND_DEPLOY_KLOOK_HONOLULU_THEN_REVIEW_COMMERCIAL_WAVE",
   "note": "Travelpayouts first activation set selected by ERN fit: Klook, Tiqets, Welcome Pickups. Drive remains off. Generate/verify exact manual links before any public placement. Remaining unseen available programs are not guessed.",
-  "updatedAt": "2026-09-28T14:18:00Z",
+  "updatedAt": "2026-09-28T14:22:00Z",
   "travelpayoutsVerifiedPrograms": {
     "klook": {
       "state": "MANUAL_LINK_HUMAN_VERIFIED",
@@ -125,6 +125,16 @@
           "publicPlacementAllowed": true,
           "placeIds": [
             "coogee-randwick-beaches"
+          ]
+        },
+        "honolulu": {
+          "state": "HUMAN_VERIFIED",
+          "trackingUrl": "https://klook.tpo.mx/D2fGjnFI",
+          "destinationPage": "https://www.klook.com/en-US/destination/c703335-honolulu/",
+          "verifiedAt": "2026-09-28T14:22:00Z",
+          "publicPlacementAllowed": true,
+          "placeIds": [
+            "waikiki-beach"
           ]
         }
       }
