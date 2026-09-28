@@ -9,13 +9,13 @@ Active catalog now contains 78 sources: 74 HEALTHY, 4 DEGRADED, and 0 UNKNOWN. H
 ## Stage E — experience restoration — MAINTENANCE / HUMAN-ACCEPTED
 Hero, immersive viewer, Watch Earth, Explore, Moments, My Earth, Living Atlas and Choose a Window use the shared truth/playback architecture. Human browser review on 2026-09-26 accepted the public experience for progression, with two known maintenance items: Watch Earth still has too much provider/open-current-source behavior, and mobile fullscreen remains imperfect on some phones. These remain maintenance work and do not block Phase 2.
 
-## Stage F — Living Atlas and ERN Guide — ACTIVE
+## Stage F — Living Atlas and ERN Guide — LIVE / MAINTENANCE
 Atlas and ERN Guide are connected to the same registry/truth gates. ERN Guide is not a generic chatbot: it is the tour-guide doorway into the whole product, meant to break the ice, understand visitor intent, explain why a view matters now, and move naturally across Watch Earth, Search, Atlas, Local Earth, My Earth, Now Moments and later travel actions. High-value Earth intent spans all seven supported interface languages. Coordinate provenance distinguishes exact camera positions from verified place/region reference points. **Atlas coordinate coverage/provenance is complete for the current catalog: 75 mapped sources, 0 unintended unmapped sources, 0 legacy mapped sources without provenance; five sources are intentionally unpinned by design.** Continue real-map fidelity and Guide relevance without creating a parallel truth source or guessing pin precision.
 
-## Stage G — source health automation — ACTIVE
+## Stage G — source health automation — OPERATIONS / MAINTENANCE
 Report-only health proposals, conservative provider-family policies, prioritized evidence debt, a provider-family evidence plan, a daily operations watch, and provider playback-evidence status are active. The current healthy/current external provider-discovery queue has been fully researched as of 2026-09-25; unresolved integration work is now explicit exact-target preparation rather than unclassified provider research. KitzSki and SkylineWebcams have official provider-generated widget/current-image paths, while the Icelandic Meteorological Office has an explicitly authorized attributed current-image reuse path. All three remain fail-closed at exact-target preparation until deployed review. The current inside-ERN ready target is 5/5 with fresh HUMAN_PLAYBACK proof. Remaining degraded sources are deliberate exceptions/recovery items, not a blocker to the current ready target. Automation continues to refuse HTTP reachability or provider metadata as playback proof and never mutates rights/truth automatically.
 
-## Stage H — travel bridge — PHASE 3 ACTIVATION OPEN
+## Stage H — travel bridge — PARTIALLY ACTIVE / EXTERNAL PROVIDER GATE
 Trust-isolated stay/eat/transport/ticket offer model exists and the Earth-first experience is now accepted for commercial progression. The finite first activation wave is Booking.com + Viator. Agoda and Skyscanner are held until Wave A state is known. No tracked links or partner claims are public until documented acceptance and credential verification exist.
 
 
@@ -43,8 +43,11 @@ ERN now has a public, crawlable Media & Partner Kit plus machine-readable brand 
 ## Stage P — commercial attribution truth — LOCALLY COMPLETE / ANALYTICS ACTIVATION GATE
 The bounded `travel_option_opened` event is now deployed through ERN's existing privacy-minimal telemetry gate and revalidates clicked offers against the current verified registry. Analytics remains default-OFF, so no new ERN event is transmitted until a provider is intentionally configured. Clicks are never treated as bookings, purchases, conversion, commission or revenue and may never influence source truth, playback eligibility, Watch Earth ordering, ERN Guide selection, Stories ranking or editorial curation.
 
-## Stage Q — business operations control — ACTIVE
-Create one internal read-only control artifact for commercial activation, verified offer inventory, attribution readiness, distribution connections, participation gates and public identity readiness. It must distinguish local readiness from external-provider/account gates and prohibit revenue forecasting, booking/conversion inference, invented partner claims, automatic external-account actions, automatic public activation and any commercial effect on Earth-window ranking.
+## Stage Q — business operations control — LOCALLY COMPLETE / CONTINUOUS OPERATIONS
+A single internal read-only business-control artifact now combines commercial activation, verified offer inventory, attribution readiness, distribution connections, participation gates and public identity readiness. Daily Operations retains, validates and summarizes it. Revenue forecasting, booking/conversion inference, invented partner claims, automatic external-account actions, automatic public activation and commercial effects on Earth-window ranking remain prohibited.
+
+## Stage R — external gate trigger register — ACTIVE
+Maintain one machine-readable register of locally complete lanes that are waiting on real external evidence. Each gate must name the exact material trigger that makes work eligible again, distinguish eligibility from success, and state what must not happen before the trigger. Time passing alone never proves success.
 
 ## Stage I — public deployment and release certification — PUBLIC / GATE READY
 earthrightnow.app is publicly deployed and the current release-readiness gate is green with fresh browser, mobile, provider-playback, accessibility, performance and rollback evidence. Future releases remain fail-closed: keep evidence fresh and do not treat static/CI success alone as permission or playback proof.
