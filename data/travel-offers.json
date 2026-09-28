@@ -150,5 +150,22 @@
     "verifiedAt": "2026-09-28T14:10:00Z",
     "expiresAt": "2026-12-27T14:10:00Z",
     "evidence": "Human generated a destination-specific Klook/Tokyo link through the verified Travelpayouts ERN Project and confirmed it opens the Tokyo destination page correctly."
+  },
+  {
+    "id": "klook-sydney-activities",
+    "title": "Explore Sydney activities",
+    "placeId": "coogee-randwick-beaches",
+    "provider": "Klook",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "klook",
+    "destinationScope": "Sydney",
+    "url": "https://klook.tpo.mx/1tpoK4dK",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-09-28T14:18:00Z",
+    "expiresAt": "2026-12-27T14:18:00Z",
+    "evidence": "Human generated a destination-specific Klook/Sydney link through the verified Travelpayouts ERN Project and confirmed it opens the Sydney destination page correctly."
   }
 ]
