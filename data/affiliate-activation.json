@@ -39,13 +39,13 @@
     },
     {
       "id": "wave-b",
-      "state": "PROJECT_CONFIRMED_UNDER_REVIEW",
+      "state": "PROJECT_ACTIVE_WITH_AVAILABLE_PROGRAMS",
       "programs": [
         {
           "id": "travelpayouts-platform",
-          "state": "PROJECT_CONFIRMED_MANUAL_TOOLS_ONLY",
+          "state": "PROJECT_ACTIVE_INITIAL_REVIEW_COMPLETE",
           "relationshipActive": true,
-          "trackedLinksAllowed": true,
+          "trackedLinksAllowed": false,
           "projectDomain": "https://earthrightnow.app",
           "availableProgramsObserved": 26,
           "unlockMoreObserved": 20,
@@ -53,16 +53,18 @@
             "klook",
             "yesim"
           ],
-          "reviewState": "MATCHING_IN_PROGRESS",
+          "reviewState": "INITIAL_REVIEW_COMPLETE_ADDITIONAL_MATCHING_CONTINUES",
           "driveAutomationAllowed": false,
           "preferredTools": [
             "links",
             "widgets"
           ],
-          "note": "Travelpayouts Project remains verified. Drive auto-monetization is disabled/removed from ERN; use explicit affiliate links/widgets only after program-level eligibility is confirmed."
+          "note": "Travelpayouts Project remains verified. Drive auto-monetization is disabled/removed from ERN; use explicit affiliate links/widgets only after program-level eligibility is confirmed.",
+          "manualToolsOnly": true,
+          "reviewEvidence": "Travelpayouts email states the ERN project was reviewed and connected to relevant brands; dashboard shows 26 available programs with Generate links, while a banner still indicates broader matching/review continues."
         }
       ],
-      "rationale": "ERN website ownership is confirmed in Travelpayouts. The Project is under program matching/review with 26 programs already shown available and 20 more shown as unlockable. Activate only programs that fit ERN and only after reviewing their individual terms."
+      "rationale": "Initial Travelpayouts Project review is complete enough for 26 usable programs. Additional matching continues for more programs. ERN should review the current 26 program set selectively and activate only deliberate manual links/widgets."
     },
     {
       "id": "wave-c",
@@ -74,7 +76,7 @@
       "rationale": "Direct large-brand applications remain on hold while ERN builds traffic, social proof and commercial history through Viator and Travelpayouts-accessible programs."
     }
   ],
-  "next": "WAIT_FOR_TRAVELPAYOUTS_MATCHING_THEN_REVIEW_PROGRAMS_FOR_MANUAL_LINKS",
+  "next": "REVIEW_CURRENT_26_PROGRAMS_SELECTIVELY",
   "note": "Commercial ladder after Booking.com rejection: Viator remains active; Travelpayouts is the next onboarding platform; direct Agoda/Skyscanner applications are deferred until stronger traffic or a material program signal. No program is claimed active before real account evidence.",
-  "updatedAt": "2026-09-28T12:31:00Z"
+  "updatedAt": "2026-09-28T13:15:00Z"
 }
