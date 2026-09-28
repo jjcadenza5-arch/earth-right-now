@@ -212,5 +212,68 @@
     "reviewedSourceUrl": "https://webcam-lapalma.de/webcam-caldera-taburiente/",
     "reviewedEmbedUrl": "https://webcam-lapalma.de/embed/caldera/",
     "reviewNote": "Deployed-origin human review confirmed current playback in the provider-supplied iframe. Preserve the provider-required visible webcam-lapalma.de attribution link."
+  },
+  {
+    "id": "youtube-kyoto-kiyomizuzaka",
+    "status": "RESEARCH_ONLY",
+    "provider": "Kyoto City Tourism Association",
+    "platform": "YouTube",
+    "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk",
+    "ownerEvidence": "Kyoto City / Kyoto City Tourism Association official tourism pages identify live cameras as real-time visitor-condition tools; Kiyomizu-zaka is one of the official live camera locations.",
+    "currentEvidence": "Current Kyoto tourism guidance directs visitors to the official live-camera system to check real-time sightseeing conditions and congestion before/during visits.",
+    "discoveredAt": "2026-09-28T14:55:00Z",
+    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_PENDING_PLAYBACK",
+    "currentEvidenceReviewedAt": "2026-09-28T14:55:00Z",
+    "platformEvidence": "Exact YouTube live target cUnYPpK7ENk is associated with the Kyoto tourism live-camera network. ERN may test only the standard branded player; deployed playback and target-specific permission remain unconfirmed until review.",
+    "researchSources": [
+      "https://global.kyoto.travel/en/comfort/",
+      "https://www.city.kyoto.lg.jp/sankan/page/0000357110.html",
+      "https://www.youtube.com/watch?v=cUnYPpK7ENk"
+    ]
+  },
+  {
+    "id": "youtube-kyoto-fushimi-inari",
+    "status": "RESEARCH_ONLY",
+    "provider": "Kyoto City Tourism Association",
+    "platform": "YouTube",
+    "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA",
+    "ownerEvidence": "Kyoto City / Kyoto City Tourism Association official tourism pages identify Fushimi Inari as part of the visitor-facing live-camera network used for congestion-aware sightseeing.",
+    "currentEvidence": "Official Kyoto tourism pages describe the network as real-time streaming for visitors to understand current conditions.",
+    "discoveredAt": "2026-09-28T14:55:00Z",
+    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_PENDING_PLAYBACK",
+    "currentEvidenceReviewedAt": "2026-09-28T14:55:00Z",
+    "platformEvidence": "Exact YouTube live target MMeBDRfRHyA is associated with the official Kyoto tourism live-camera network. Standard branded player only; no restreaming.",
+    "researchSources": [
+      "https://global.kyoto.travel/en/comfort/",
+      "https://www.city.kyoto.lg.jp/sankan/page/0000357110.html",
+      "https://www.youtube.com/watch?v=MMeBDRfRHyA"
+    ]
+  },
+  {
+    "id": "youtube-kyoto-kifune",
+    "status": "RESEARCH_ONLY",
+    "provider": "Kyoto City Tourism Association",
+    "platform": "YouTube",
+    "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY",
+    "ownerEvidence": "Kyoto City tourism materials list Kifune Shrine among visitor-facing live-camera targets; the camera is managed as part of Kyoto's congestion/current-condition information system.",
+    "currentEvidence": "Current tourism guidance uses the camera network to help visitors check real-time conditions before traveling to sightseeing locations.",
+    "discoveredAt": "2026-09-28T14:55:00Z",
+    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_PENDING_PLAYBACK",
+    "currentEvidenceReviewedAt": "2026-09-28T14:55:00Z",
+    "platformEvidence": "Exact YouTube live target eJAqPCdS1cY is associated with the Kyoto tourism live-camera network; third-party camera directories also identify it as 24/365 real-time, but ERN still requires deployed review.",
+    "researchSources": [
+      "https://global.kyoto.travel/en/comfort/",
+      "https://www.city.kyoto.lg.jp/sankan/page/0000357110.html",
+      "https://www.youtube.com/watch?v=eJAqPCdS1cY"
+    ]
   }
 ]

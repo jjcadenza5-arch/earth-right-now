@@ -1,3 +1,8 @@
+## 2026-09-28 — Stage Kyoto visitor-condition cameras for review
+- Added Kiyomizu-zaka, Fushimi Inari and Kifune Shrine as research-only YouTube candidates.
+- Added a Kyoto tourism provider-family record without inferring blanket embed permission.
+- Promotion remains blocked pending deployed human playback and source-specific review.
+
 ## 2026-09-28 — Add visitor-interest source expansion queue
 - Added a fail-closed candidate queue grounded in official/current evidence.
 - Prioritized Kyoto's official tourism cameras, London official tourism webcams, Seoul real-time tourism/CCTV, and seasonal bloom trackers.
