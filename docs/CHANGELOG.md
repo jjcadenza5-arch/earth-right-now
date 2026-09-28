@@ -1,3 +1,8 @@
+## 2026-09-28 — Add Tonami Tulip Park official live window
+- Added one selective municipal park live camera as external/link-only.
+- Preserved the seasonal See Before You Go use case without broad camera-network import.
+- No embed/restream permission inferred.
+
 ## 2026-09-28 — Make research playback review schedule-aware
 - Added provider-published review windows and automatic off-hours suppression.
 - Nishiki Market is now eligible for human review only during 11:00–18:00 JST.
