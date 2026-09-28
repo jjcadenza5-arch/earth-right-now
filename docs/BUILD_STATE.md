@@ -1,3 +1,9 @@
+## 2026-09-28 — Guide trip-intent syntax failure repaired before deployment
+- Pages/JavaScript syntax gates correctly blocked the first “See before I go” deployment because multilingual planning copy had been inserted at an invalid boundary in `guide-public-copy.js`.
+- Restored `guide-public-copy.js` to the last known-good version and moved the new planning prompt/result copy into the app's existing seven-language translation layer.
+- Updated the focused preflight to validate the new translation path.
+- Existing public site was unaffected because the failed build never deployed.
+
 ## 2026-09-28 — “See before I go” added to ERN Guide
 - Added a first-class Guide quick action for ERN's original trip-intent use case without redesigning the Guide.
 - A planning-only prompt now asks for the destination; a planning query containing a known place returns the strongest truthful current ERN windows for that place.
