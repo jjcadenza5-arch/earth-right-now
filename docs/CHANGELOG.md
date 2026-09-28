@@ -1,3 +1,8 @@
+## 2026-09-28 — Stage second Kyoto visitor-condition batch
+- Added Hanamikoji Street, Nishiki Market and Arashiyama Bamboo Forest as research-only official Kyoto live-camera candidates.
+- Preserved Nishiki's provider-stated 11:00–18:00 JST live window.
+- No automatic approval from the first Kyoto batch.
+
 ## 2026-09-28 — Prepare Seoul real-time context research
 - Added a separate non-visual real-time context manifest for Seoul.
 - Preserved strict separation between camera truth and crowd/traffic/weather/transit data.
