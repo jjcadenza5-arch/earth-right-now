@@ -1779,7 +1779,8 @@
     "coordinateNote": "OpenStreetMap locality reference for Bloubergstrand, Western Cape.",
     "featuredHold": true,
     "featuredHoldReason": "Current stable-beta curation hold.",
-    "attribution": "CouchTourist"
+    "attribution": "CouchTourist",
+    "freshnessEvidence": "ERN registry records a successful live-video target verification at 2026-09-20T07:30:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "perdido-key-beach",
@@ -1815,7 +1816,8 @@
     "coordinateNote": "Public property reference coordinates for the La Riva complex on Perdido Key.",
     "featuredHold": true,
     "featuredHoldReason": "Current stable-beta curation hold.",
-    "attribution": "CouchTourist"
+    "attribution": "CouchTourist",
+    "freshnessEvidence": "ERN registry records a successful live-video target verification at 2026-09-20T07:30:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "sasagawa-nagare",
@@ -1957,7 +1959,8 @@
     "coordinateNote": "OpenStreetMap feature coordinates for Pleasant Beach Hotel in Sterling, New York.",
     "featuredHold": true,
     "featuredHoldReason": "Current stable-beta curation hold.",
-    "attribution": "CouchTourist"
+    "attribution": "CouchTourist",
+    "freshnessEvidence": "ERN registry records a successful live-video target verification at 2026-09-20T07:30:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "maui-hale-pau-hana",
@@ -1994,7 +1997,8 @@
     "coordinateNote": "Public GeoNames-backed place reference for Hale Pau Hana in Kihei, Maui.",
     "featuredHold": true,
     "featuredHoldReason": "Current stable-beta curation hold.",
-    "attribution": "CouchTourist"
+    "attribution": "CouchTourist",
+    "freshnessEvidence": "ERN registry records a successful live-video target verification at 2026-09-20T07:30:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "bergen-ulriken",
@@ -2246,7 +2250,8 @@
     "coordinateBasis": "MULTI_SITE_COLLECTION",
     "coordinateNote": "Randwick City Council's beach-cam surface covers Coogee, Clovelly, Little Bay, Mahon Pool, Malabar, Maroubra and Yarra Bay, so one pin would misrepresent the collection.",
     "coordinateSourceUrl": "https://www.randwick.nsw.gov.au/",
-    "attribution": "Randwick City Council"
+    "attribution": "Randwick City Council",
+    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T07:01:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "boston-harbor-islands",
@@ -2316,7 +2321,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Diano_Marina",
     "coordinateNote": "Diano Marina town reference point; not claimed as exact webcam position.",
-    "attribution": "Comune di Diano Marina Tourism"
+    "attribution": "Comune di Diano Marina Tourism",
+    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T07:01:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "farm-tomita",
@@ -2387,7 +2393,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://fr.wikipedia.org/wiki/Waikiki",
     "coordinateNote": "Waikiki neighbourhood reference point for the live beach/city destination; not claimed as exact webcam position.",
-    "attribution": "Hilton Waikiki Beach Resort & Spa"
+    "attribution": "Hilton Waikiki Beach Resort & Spa",
+    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T07:01:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "jungfrau-region",
@@ -2458,7 +2465,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Sottomarina",
     "coordinateNote": "Sottomarina place reference for the Chioggia beach destination; not claimed as exact webcam position.",
-    "attribution": "Visit Chioggia"
+    "attribution": "Visit Chioggia",
+    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T07:01:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "chidori-sakura",
@@ -2493,7 +2501,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q6631821",
     "coordinateNote": "Chidorigafuchi Park reference point for the Green Way destination; not claimed as exact camera position.",
-    "attribution": "Visit Chiyoda / Chiyoda City Sakura Festival"
+    "attribution": "Visit Chiyoda / Chiyoda City Sakura Festival",
+    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T07:10:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "volcan-tajogaite",
@@ -2566,7 +2575,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q202730",
     "coordinateNote": "Copacabana neighbourhood/beach reference point; not claimed as exact camera position.",
-    "attribution": "EarthCam"
+    "attribution": "EarthCam",
+    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T07:10:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "torres-del-paine-rio-serrano",
@@ -2601,7 +2611,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Nationalpark_Torres_del_Paine",
     "coordinateNote": "Torres del Paine National Park reference point for the Río Serrano destination; not claimed as exact webcam position.",
-    "attribution": "SkylineWebcams"
+    "attribution": "SkylineWebcams",
+    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T07:10:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "reykjavik-metoffice",
@@ -2675,7 +2686,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/boulders",
     "commercialDepthResearchHold": true,
-    "commercialDepthResearchHoldReason": "Private research already has a Boulders Beach gate ticket. The obvious penguin viewing/boardwalk experience is materially the same visit, so do not manufacture a second intent merely to satisfy depth."
+    "commercialDepthResearchHoldReason": "Private research already has a Boulders Beach gate ticket. The obvious penguin viewing/boardwalk experience is materially the same visit, so do not manufacture a second intent merely to satisfy depth.",
+    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T07:20:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "sanparks-addo-video",
@@ -2709,7 +2721,8 @@
     "story": "An official SANParks wildlife video window at Addo Elephant National Park, useful for seeing activity around the park before a visit.",
     "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding permission.",
     "coordinateBasis": "REGION_REFERENCE",
-    "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/addo"
+    "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/addo",
+    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T08:15:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "sanparks-orpen-video",
@@ -2743,7 +2756,8 @@
     "story": "An official SANParks wildlife video window from Orpen in Kruger National Park, where open plains and water attract changing animal activity.",
     "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding permission.",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/orpen"
+    "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/orpen",
+    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T08:15:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
   },
   {
     "id": "cape-town-earthtv",
