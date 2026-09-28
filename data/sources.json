@@ -3184,10 +3184,10 @@
     "rightsBasis": "SkylineWebcams' current provider page identifies the Singapore port-area view as a live cam. ERN keeps it LINK_ONLY/EXTERNAL and does not infer embed or restream rights.",
     "freshnessEvidence": "Current SkylineWebcams page labels the Singapore port-area camera LIVE.",
     "coordinateBasis": "REGION_REFERENCE",
-    "lat": 1.274194,
-    "lon": 103.846083,
-    "coordinateSourceUrl": "https://spotcameras.com/en/cams/Asia/Singapore/15024-Singapore-View-from-the-office-Waypoint-Port-Services-to-the-port-area",
-    "coordinateNote": "Approximate port-area reference from a camera directory identifying the SkylineWebcams source; not claimed as exact ERN-verified camera position."
+    "lat": 1.2655556,
+    "lon": 103.835,
+    "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q1421994",
+    "coordinateNote": "Port of Singapore region-reference coordinate from Wikidata; not claimed as the exact camera position."
   },
   {
     "id": "rome-spanish-steps-skylinewebcams",
@@ -3222,10 +3222,10 @@
     "rightsBasis": "SkylineWebcams' current provider page identifies the Spanish Steps view as a live cam. ERN keeps the source LINK_ONLY/EXTERNAL and does not infer embed or restream rights.",
     "freshnessEvidence": "Current SkylineWebcams Spanish Steps page is active and presents the view as a live cam without an offline notice.",
     "coordinateBasis": "PLACE_REFERENCE",
-    "lat": 41.90607,
-    "lon": 12.48281,
-    "coordinateSourceUrl": "https://mapcarta.com/25584572",
-    "coordinateNote": "Place-reference coordinate for the Spanish Steps; not claimed as exact camera position."
+    "lat": 41.905973,
+    "lon": 12.482529,
+    "coordinateSourceUrl": "https://www.turismoroma.it/en/places/spanish-steps",
+    "coordinateNote": "Official Roma Capitale tourism coordinate for the Spanish Steps; not claimed as the exact camera position."
   },
   {
     "id": "rovaniemi-santa-claus-village-live",
