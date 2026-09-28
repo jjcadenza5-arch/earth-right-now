@@ -46,8 +46,8 @@ The bounded `travel_option_opened` event is now deployed through ERN's existing 
 ## Stage Q — business operations control — LOCALLY COMPLETE / CONTINUOUS OPERATIONS
 A single internal read-only business-control artifact now combines commercial activation, verified offer inventory, attribution readiness, distribution connections, participation gates and public identity readiness. Daily Operations retains, validates and summarizes it. Revenue forecasting, booking/conversion inference, invented partner claims, automatic external-account actions, automatic public activation and commercial effects on Earth-window ranking remain prohibited.
 
-## Stage R — external gate trigger register — ACTIVE
-Maintain one machine-readable register of locally complete lanes that are waiting on real external evidence. Each gate must name the exact material trigger that makes work eligible again, distinguish eligibility from success, and state what must not happen before the trigger. Time passing alone never proves success.
+## Stage R — external gate trigger register — LOCALLY COMPLETE / CONTINUOUS OPERATIONS
+A machine-readable register now tracks locally complete lanes waiting on real external evidence, names the exact material trigger that makes each lane eligible again, distinguishes eligibility from success, and states what must not happen before the trigger. Daily Operations retains and validates the register. Time passing alone never proves success. Human-only HUMAN_PLAYBACK renewals are now reported separately from autonomous implementation work.
 
 ## Stage I — public deployment and release certification — PUBLIC / GATE READY
 earthrightnow.app is publicly deployed and the current release-readiness gate is green with fresh browser, mobile, provider-playback, accessibility, performance and rollback evidence. Future releases remain fail-closed: keep evidence fresh and do not treat static/CI success alone as permission or playback proof.
