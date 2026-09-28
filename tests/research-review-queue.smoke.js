@@ -17,7 +17,7 @@ assert.equal(exhausted.state,"EXHAUSTED_RESEARCH_NEW_PROVIDER");
 assert.equal(exhausted.exhausted,true);
 assert.equal(exhausted.reviewable,0);
 assert.equal(exhausted.primary.length,0);
-assert.equal(exhausted.nextAction,"RESEARCH_NEW_PROVIDER_FAMILY");
+assert.equal(exhausted.nextAction,"CHECK_PROVIDER_DISCOVERY_STATE");
 assert.equal(exhausted.safety.failedCandidateRetestAllowed,false);
 
 const approvedQueue=researchReviewQueue([
