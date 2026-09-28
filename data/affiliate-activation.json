@@ -76,9 +76,9 @@
       "rationale": "Direct large-brand applications remain on hold while ERN builds traffic, social proof and commercial history through Viator and Travelpayouts-accessible programs."
     }
   ],
-  "next": "GENERATE_AND_VERIFY_TIQETS_LINK_THEN_WELCOME_PICKUPS",
+  "next": "GENERATE_AND_VERIFY_WELCOME_PICKUPS_LINK",
   "note": "Travelpayouts first activation set selected by ERN fit: Klook, Tiqets, Welcome Pickups. Drive remains off. Generate/verify exact manual links before any public placement. Remaining unseen available programs are not guessed.",
-  "updatedAt": "2026-09-28T13:33:00Z",
+  "updatedAt": "2026-09-28T13:39:00Z",
   "travelpayoutsVerifiedPrograms": {
     "klook": {
       "state": "MANUAL_LINK_HUMAN_VERIFIED",
@@ -87,6 +87,14 @@
       "verifiedAt": "2026-09-28T13:33:00Z",
       "publicPlacementAllowed": false,
       "note": "Human opened the generated Travelpayouts/Klook link and confirmed it resolves correctly. Keep as fallback evidence; prefer destination-specific links for public ERN placement."
+    },
+    "tiqets": {
+      "state": "MANUAL_LINK_HUMAN_VERIFIED",
+      "trackingUrl": "https://tiqets.tpo.mx/z0Qww9UU",
+      "destinationScope": "GENERIC_HOMEPAGE",
+      "verifiedAt": "2026-09-28T13:39:00Z",
+      "publicPlacementAllowed": false,
+      "note": "Human opened the generated Travelpayouts/Tiqets link and confirmed it resolves correctly. Keep as fallback evidence; prefer destination-specific links for public ERN placement."
     }
   }
 }

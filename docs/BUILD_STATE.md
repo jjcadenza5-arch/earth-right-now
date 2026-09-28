@@ -1,3 +1,9 @@
+## 2026-09-28 — Tiqets manual affiliate link verified
+- Human generated a Tiqets link through the verified Travelpayouts ERN Project and confirmed it opens correctly.
+- Recorded tracking URL `https://tiqets.tpo.mx/z0Qww9UU` as GENERIC_HOMEPAGE scope only.
+- Registered Tiqets as an active manual affiliate partner via Travelpayouts with an ERN 90-day recheck horizon.
+- Generic Tiqets link is not yet allowed for public placement; prefer destination-specific links before exposing it in ERN.
+
 ## 2026-09-28 — Klook manual affiliate link verified
 - Human generated a Klook link through the verified Travelpayouts ERN Project and confirmed it opens correctly.
 - Recorded tracking URL `https://klook.tpo.mx/B1bd4eo6` as GENERIC_HOMEPAGE scope only.

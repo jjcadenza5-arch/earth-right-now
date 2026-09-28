@@ -20,5 +20,16 @@
     "enabled": true,
     "verifiedAt": "2026-09-28T13:33:00Z",
     "expiresAt": "2026-12-27T13:33:00Z"
+  },
+  {
+    "id": "tiqets",
+    "name": "Tiqets via Travelpayouts",
+    "intent": "tickets",
+    "baseUrl": "https://www.tiqets.com/",
+    "affiliate": true,
+    "sponsored": false,
+    "enabled": true,
+    "verifiedAt": "2026-09-28T13:39:00Z",
+    "expiresAt": "2026-12-27T13:39:00Z"
   }
 ]
