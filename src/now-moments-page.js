@@ -23,6 +23,9 @@ const submit=document.getElementById("signalSubmit");
 const nearWrap=document.getElementById("signalNearWrap");
 const near=document.getElementById("signalNear");
 const result=document.getElementById("signalResult");
+const pulseSection=document.getElementById("signalPulseSection");
+const pulseRefresh=document.getElementById("signalPulseRefresh");
+const pulse=document.getElementById("signalPulse");
 
 let sources=[],byLabel=new Map(),client=createEarthSignalClient({});
 
@@ -59,12 +62,35 @@ async function boot(){
     mode.textContent="Earth Signals are open in a limited structured pilot.";
     submit.textContent="Share Earth Signal";
     nearWrap.hidden=false;
+    pulseSection.hidden=false;
   }else{
     mode.textContent="Uploads are intentionally not active yet. This remains a local preview until verified deployment and explicit activation are complete.";
     submit.textContent="Preview locally";
     nearWrap.hidden=true;
+    pulseSection.hidden=true;
   }
 }
+
+async function refreshPulse(){
+  if(!client.config.enabled){pulseSection.hidden=true;return}
+  const selected=byLabel.get(placeInput.value.trim());
+  if(!selected){pulse.textContent="Choose a real ERN place first.";return}
+  pulseRefresh.disabled=true;
+  try{
+    const response=await client.list(selected.placeId);
+    if(!response.ok){pulse.textContent="Recent visitor signals are unavailable right now.";return}
+    if(!response.signals.length){pulse.textContent="No recent visitor signals for this place.";return}
+    pulse.innerHTML=response.signals.slice(0,12).map(s=>{
+      const label=Object.entries(LABEL_TO_TYPE).find(([,type])=>type===s.type)?.[0]||"Visitor signal";
+      const when=s.createdAt?new Date(s.createdAt).toLocaleTimeString([],{hour:"numeric",minute:"2-digit"}):"recently";
+      const location=s.nearPlaceVerified?" · marked near this place":"";
+      return `<p><strong>${label}</strong> · ${when}${location}<br><small>Visitor report · not independently verified</small></p>`;
+    }).join("");
+  }finally{pulseRefresh.disabled=false}
+}
+pulseRefresh?.addEventListener("click",refreshPulse);
+placeInput?.addEventListener("change",()=>{if(client.config.enabled)refreshPulse()});
+
 form?.addEventListener("submit",async e=>{
   e.preventDefault();
   result.textContent="";
@@ -91,6 +117,7 @@ form?.addEventListener("submit",async e=>{
     if(response.ok){
       showPreview({label:raw,type,live:true,expiresAt:response.signal?.expiresAt});
       result.textContent="Shared as a short-lived visitor signal. It is not independent verification.";
+      await refreshPulse();
     }else{
       result.textContent="Signal was not sent: "+(response.reason||"request failed");
     }
