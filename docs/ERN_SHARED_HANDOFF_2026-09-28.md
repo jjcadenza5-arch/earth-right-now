@@ -66,6 +66,14 @@ Resolved/active directions:
 - Strong future-fit programs include KKday, Go City, WeGoTrip, Radical Storage and selected transfer partners.
 - User only needs to generate account-specific Travelpayouts links when a human login step is required.
 
+## Real-time visitor context
+- Reusable context standard: `docs/REALTIME_CONTEXT_STANDARD.md`.
+- Research manifest: `data/realtime-context-sources.json`.
+- Context supports two explicit acquisition modes: verified API and official-page manual refresh. Both remain separate from camera truth and source ranking.
+- Paris Eiffel live visitor conditions are now a PUBLIC-OFF manual-refresh context lane with a short expiry; they are not a camera and cannot create a LIVE label.
+- Current SkylineWebcams Paris/Eiffel/Pantheon candidates were checked and are OFFLINE; recheck only on a material provider-state change.
+- Seoul-specific adapter details remain below.
+ 
 ## Seoul real-time context
 - Research manifest: `data/realtime-context-sources.json`.
 - Adapter contract: `docs/SEOUL_REALTIME_CONTEXT_ADAPTER_CONTRACT.md`.
@@ -107,4 +115,6 @@ User preference: work autonomously in large batches and return only for genuine 
 - A destination-opportunity matrix now steers visual-gap research. Current unresolved high/meaningful gaps include Chiang Mai and Paris; already-covered destinations should be maintained selectively rather than padded with duplicates.
 - Chiang Mai PAO CCTV was rechecked after the destination-matrix pass and still reports STANDBY / WAITING FOR FEED on all four official cameras. Keep the gap honest until feed state materially changes.
 - Catalog metadata completeness is now a Pages release gate. The current 93-source catalog has complete provider/country/region/truth-support/check-history/story/attribution metadata under truth-aware rules.
+- Freshness evidence is now required by the catalog metadata gate; older records were completed only from their existing successful-check timestamps, without upgrading source truth.
+- Context expiry smoke checks now run in Pages CI so stale manual context cannot remain current.
 - Continue autonomously. Only ask the operator for deployed human playback when a candidate is genuinely ready and inside any provider-published live window.
