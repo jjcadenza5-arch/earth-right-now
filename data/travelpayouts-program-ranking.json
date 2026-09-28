@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-09-28T13:30:00Z",
+  "basis": "Fit-first assessment from human-provided Travelpayouts Available-program screenshots. Commission is secondary to visitor utility and ERN editorial fit.",
+  "firstActivationSet": [
+    {
+      "id": "klook",
+      "name": "Klook",
+      "priority": 1,
+      "fit": "VERY_HIGH",
+      "intent": [
+        "activities",
+        "transport"
+      ],
+      "reason": "Broad global destination activities and transport; natural Things to do placement; useful alternative/complement to Viator.",
+      "status": "READY_FOR_LINK_GENERATION"
+    },
+    {
+      "id": "tiqets",
+      "name": "Tiqets",
+      "priority": 2,
+      "fit": "VERY_HIGH",
+      "intent": [
+        "activities",
+        "culture"
+      ],
+      "reason": "Strong attraction/landmark/museum fit for destination pages and Before You Go; supports city/product-level tools.",
+      "status": "READY_FOR_LINK_GENERATION"
+    },
+    {
+      "id": "welcome-pickups",
+      "name": "Welcome Pickups",
+      "priority": 3,
+      "fit": "HIGH",
+      "intent": [
+        "transport"
+      ],
+      "reason": "Airport and destination transfer utility fills a distinct pre-trip need with less overlap with Viator.",
+      "status": "READY_FOR_LINK_GENERATION"
+    }
+  ],
+  "visibleHoldSet": [
+    {
+      "id": "kiwitaxi",
+      "name": "Kiwitaxi",
+      "fit": "HIGH",
+      "reason": "Good transfer fit but overlaps Welcome Pickups; keep as alternate until first transfer partner is tested."
+    },
+    {
+      "id": "localrent",
+      "name": "Localrent.com",
+      "fit": "MEDIUM_HIGH",
+      "reason": "Useful car-rental category but adds complexity and is less universal than transfer/activities."
+    },
+    {
+      "id": "kiwi-com",
+      "name": "Kiwi.com",
+      "fit": "MEDIUM",
+      "reason": "Flights are useful but less tightly connected to the current-place viewing moment; manual deep-link path is possible but not first-wave priority."
+    },
+    {
+      "id": "airalo",
+      "name": "Airalo",
+      "fit": "MEDIUM",
+      "reason": "Useful travel utility, but eSIM is secondary to ERN's core see-place-then-go flow."
+    },
+    {
+      "id": "yesim",
+      "name": "Yesim",
+      "fit": "MEDIUM",
+      "reason": "Useful eSIM utility; redundant with Airalo/GigSky, so only one eSIM partner should be considered later."
+    },
+    {
+      "id": "gigsky",
+      "name": "GigSky",
+      "fit": "LOW_MEDIUM",
+      "reason": "Another eSIM option; hold to avoid duplicating utilities."
+    }
+  ],
+  "activationRules": {
+    "maxInitialPrograms": 3,
+    "driveAutomationAllowed": false,
+    "massActivationAllowed": false,
+    "rankingAffectedByCommission": false,
+    "exactPartnerLinkRequired": true,
+    "exactPartnerTermsReviewRequired": true,
+    "explicitAffiliateDisclosureRequired": true
+  },
+  "missingInventoryNote": "Only programs clearly visible in the supplied screenshots are ranked here. Complete 26-program ranking will be appended once the remaining program names are visible; no unseen program is guessed."
+}
