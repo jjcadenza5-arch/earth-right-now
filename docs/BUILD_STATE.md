@@ -1,3 +1,11 @@
+## 2026-09-28 — Ten LIVE HERE playback renewals applied from deployed human review
+- Accepted operator evidence packet batch `84f64e750d320582` from the trusted deployed review origin `https://earthrightnow.app/review/inside-ern.html`.
+- All 10 reviewed EMBED / EMBED_ALLOWED / HEALTHY sources were marked `HUMAN_PLAYBACK_CONFIRMED` by the operator as visibly playing and current.
+- Applied each operator-recorded timestamp atomically to the matching catalog `playbackVerifiedAt` and HUMAN_PLAYBACK provider observation.
+- The same observed timestamps refresh `checkedAt` and `lastSuccessfulCheck` because the operator explicitly confirmed the exact deployed current target was playing/current; provider/source pages were independently reachable.
+- No source truth, permission, ranking, featured/watch hold, affiliate/commercial state, or public activation switch changed.
+- Evidence included both the five primary renewal items and the five extra renewal-backlog items, so the full 10-window renewal debt was cleared in one human review session.
+
 ## 2026-09-28 — Stage R locally complete; Operations anti-loop reconciliation
 - Stage R passed JavaScript and Operations packet-integrity checks on commit `69336f9ab41f919cf5c6a9cc3719298efc14f305` and is now LOCALLY COMPLETE / CONTINUOUS OPERATIONS.
 - Fixed stale commercial next-work logic: when Booking.com/Viator Wave A is externally gated and the finite 30-place private research scope is complete, Operations now holds affiliate breadth/depth/staged-option review instead of reopening completed research.

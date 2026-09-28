@@ -1,38 +1,38 @@
 [
   {
-    "id": "mpala-watering-hole",
+    "id": "auckland-viaduct-harbour",
+    "httpStatus": 200,
     "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-21T21:25:00+07:00",
-    "reason": "Previously verified visitor playback evidence retained as operational observation.",
-    "httpStatus": 200
+    "observedAt": "2026-09-28T09:45:54.236Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 84f64e750d320582 supplied by operator, exact source/embed target matched current catalog data, and the provider/source page was independently reachable."
   },
   {
     "id": "bergen-ulriken",
+    "httpStatus": 200,
     "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-24T08:05:00Z",
-    "reason": "Fresh deployed-origin fullscreen playback was visually confirmed in the user-provided ERN screenshot.",
-    "httpStatus": 200
-  },
-  {
-    "id": "skeikampen-ski",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-24T08:05:00Z",
-    "reason": "Fresh deployed-origin fullscreen playback was visually confirmed in the user-provided ERN screenshot.",
-    "httpStatus": 200
+    "observedAt": "2026-09-28T09:45:59.053Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 84f64e750d320582 supplied by operator, exact source/embed target matched current catalog data, and the provider/source page was independently reachable."
   },
   {
     "id": "cijin-beach-kaohsiung",
+    "httpStatus": 200,
     "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-24T08:05:00Z",
-    "reason": "Fresh deployed-origin fullscreen playback was visually confirmed in the user-provided ERN screenshot.",
-    "httpStatus": 200
+    "observedAt": "2026-09-28T09:46:08.369Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 84f64e750d320582 supplied by operator, exact source/embed target matched current catalog data, and the provider/source page was independently reachable."
   },
   {
-    "id": "ponte-di-legno-adamello",
+    "id": "la-palma-aridane-valley",
+    "httpStatus": 200,
     "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-24T15:49:44.573Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; current provider page independently remained reachable and exposed the same reviewed embed target.",
-    "httpStatus": 200
+    "observedAt": "2026-09-28T09:45:45.085Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 84f64e750d320582 supplied by operator, exact source/embed target matched current catalog data, and the provider/source page was independently reachable."
+  },
+  {
+    "id": "la-palma-caldera-taburiente",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-28T09:45:03.220Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 84f64e750d320582 supplied by operator, exact source/embed target matched current catalog data, and the provider/source page was independently reachable."
   },
   {
     "id": "metung-gippsland-lakes",
@@ -42,37 +42,9 @@
     "httpStatus": 200
   },
   {
-    "id": "cijin-beach-kaohsiung",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T02:23:23.106Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; source target matched the current catalog embed.",
-    "httpStatus": 200
-  },
-  {
-    "id": "skeikampen-ski",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T02:23:31.053Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; source target matched the current catalog embed.",
-    "httpStatus": 200
-  },
-  {
-    "id": "bergen-ulriken",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T02:23:51.687Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; source target matched the current catalog embed.",
-    "httpStatus": 200
-  },
-  {
     "id": "metung-gippsland-lakes",
     "confirmation": "HUMAN_PLAYBACK",
     "observedAt": "2026-09-25T05:54:31.950Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; source and embed target matched the current review batch 3ec5f713ce5daf15.",
-    "httpStatus": 200
-  },
-  {
-    "id": "ponte-di-legno-adamello",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T05:54:19.434Z",
     "reason": "Human playback confirmed in deployed ERN operator review lab; source and embed target matched the current review batch 3ec5f713ce5daf15.",
     "httpStatus": 200
   },
@@ -84,150 +56,45 @@
     "httpStatus": 200
   },
   {
-    "id": "ponte-di-legno-adamello",
+    "id": "mpala-watering-hole",
     "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T06:03:34.172Z",
-    "reason": "Human playback reconfirmed in deployed ERN operator review lab; evidence packet from batch 3ec5f713ce5daf15 supplied by operator.",
-    "httpStatus": 200
-  },
-  {
-    "id": "takayama-miyagawa-stream",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T06:22:47.183Z",
-    "reason": "Deployed ERN operator review confirmed the official Hida-Takayama YouTube channel-live player works after explicit visitor Play interaction; review batch aad67aa5f7c8fe3a.",
-    "httpStatus": 200
-  },
-  {
-    "id": "auckland-viaduct-harbour",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T06:32:26.769Z",
-    "reason": "Deployed ERN operator review confirmed the official Auckland Viaduct YouTube channel-live player works after explicit visitor Play interaction; review batch ee73d3e3c6fe0bd7.",
-    "httpStatus": 200
-  },
-  {
-    "id": "verbier",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T07:07:12.223Z",
-    "reason": "Verbier deployed review confirmed current playback; batch 87f2fc998e39534d.",
-    "httpStatus": 200
-  },
-  {
-    "id": "la-palma-aridane-valley",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T07:07:22.289Z",
-    "reason": "Webcam La Palma Aridane deployed review confirmed current playback; batch 87f2fc998e39534d.",
-    "httpStatus": 200
-  },
-  {
-    "id": "la-palma-caldera-taburiente",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T07:07:27.755Z",
-    "reason": "Webcam La Palma Caldera deployed review confirmed current playback; batch 87f2fc998e39534d.",
-    "httpStatus": 200
-  },
-  {
-    "id": "volcan-tajogaite",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T07:07:39.994Z",
-    "reason": "Webcam La Palma Tajogaite deployed review confirmed current playback; batch 87f2fc998e39534d.",
-    "httpStatus": 200
-  },
-  {
-    "id": "auckland-viaduct-harbour",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T14:59:12.384Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
-    "httpStatus": 200
-  },
-  {
-    "id": "bergen-ulriken",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T14:58:20.419Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
-    "httpStatus": 200
-  },
-  {
-    "id": "cijin-beach-kaohsiung",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T14:58:26.918Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
-    "httpStatus": 200
-  },
-  {
-    "id": "la-palma-aridane-valley",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T14:59:29.385Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
-    "httpStatus": 200
-  },
-  {
-    "id": "la-palma-caldera-taburiente",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T14:59:21.300Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
+    "observedAt": "2026-09-21T21:25:00+07:00",
+    "reason": "Previously verified visitor playback evidence retained as operational observation.",
     "httpStatus": 200
   },
   {
     "id": "ponte-di-legno-adamello",
+    "httpStatus": 200,
     "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T14:58:57.886Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
-    "httpStatus": 200
+    "observedAt": "2026-09-28T09:46:03.303Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 84f64e750d320582 supplied by operator, exact source/embed target matched current catalog data, and the provider/source page was independently reachable."
   },
   {
     "id": "skeikampen-ski",
+    "httpStatus": 200,
     "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T14:58:39.667Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
-    "httpStatus": 200
+    "observedAt": "2026-09-28T09:44:24.803Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 84f64e750d320582 supplied by operator, exact source/embed target matched current catalog data, and the provider/source page was independently reachable."
   },
   {
     "id": "takayama-miyagawa-stream",
+    "httpStatus": 200,
     "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T14:59:07.202Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
-    "httpStatus": 200
+    "observedAt": "2026-09-28T09:45:43.670Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 84f64e750d320582 supplied by operator, exact source/embed target matched current catalog data, and the provider/source page was independently reachable."
   },
   {
     "id": "verbier",
+    "httpStatus": 200,
     "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-25T14:59:35.119Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; the reviewed source/embed target matched current catalog data and the provider/source surface remained available.",
-    "httpStatus": 200
-  },
-  {
-    "id": "auckland-viaduct-harbour",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-27T16:03:17.113Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 36a9eac4191cc610 supplied by operator and source/embed target matched current catalog data.",
-    "httpStatus": 200
-  },
-  {
-    "id": "bergen-ulriken",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-27T16:03:27.884Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 36a9eac4191cc610 supplied by operator and source/embed target matched current catalog data.",
-    "httpStatus": 200
-  },
-  {
-    "id": "cijin-beach-kaohsiung",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-27T16:03:57.829Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 36a9eac4191cc610 supplied by operator and source/embed target matched current catalog data.",
-    "httpStatus": 200
-  },
-  {
-    "id": "ponte-di-legno-adamello",
-    "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-27T16:03:49.996Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 36a9eac4191cc610 supplied by operator and source/embed target matched current catalog data.",
-    "httpStatus": 200
+    "observedAt": "2026-09-28T09:45:01.286Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 84f64e750d320582 supplied by operator, exact source/embed target matched current catalog data, and the provider/source page was independently reachable."
   },
   {
     "id": "volcan-tajogaite",
+    "httpStatus": 200,
     "confirmation": "HUMAN_PLAYBACK",
-    "observedAt": "2026-09-27T16:03:03.733Z",
-    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 36a9eac4191cc610 supplied by operator and source/embed target matched current catalog data.",
-    "httpStatus": 200
+    "observedAt": "2026-09-28T09:46:11.870Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 84f64e750d320582 supplied by operator, exact source/embed target matched current catalog data, and the provider/source page was independently reachable."
   }
 ]
