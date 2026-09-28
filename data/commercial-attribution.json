@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "state": "MEASUREMENT_READY_DEFAULT_OFF",
+  "event": "travel_option_opened",
+  "analyticsEnabled": false,
+  "countsAs": "OUTBOUND_OPTION_OPEN",
+  "doesNotProve": [
+    "booking",
+    "purchase",
+    "conversion",
+    "commission",
+    "revenue",
+    "traveler identity"
+  ],
+  "allowedFields": [
+    "offerId",
+    "placeId",
+    "intent",
+    "linkScope",
+    "affiliate",
+    "sponsored"
+  ],
+  "forbiddenFields": [
+    "email",
+    "name",
+    "search text",
+    "favorites",
+    "recent places",
+    "precise location",
+    "raw IP",
+    "order value",
+    "commission amount unless later provided by verified partner reporting"
+  ],
+  "ranking": {
+    "earthViewRankingAffected": false,
+    "guideSourceSelectionAffected": false,
+    "watchEarthAffected": false
+  }
+}
