@@ -1,3 +1,10 @@
+## 2026-09-28 — Operations now understands Phase J participation state
+- Added a machine-generated `participation-infrastructure.json` Operations artifact that verifies both Worker foundations, manual-only deployment, fail-closed configs, and current public-off manifests from repository state.
+- Daily Operations now includes this artifact in the retained packet and operator brief.
+- Packet integrity rejects automatic public activation, automatic publication/catalog mutation, push-triggered participation deployment, or any prepared state that has already turned public.
+- Updated old pre-Phase-J wording: Earth Signals and submissions are no longer described as waiting for the infrastructure phase to be opened. The current next gate is controlled deployment evidence, while visitor-facing activation remains separate.
+- AUTONOMOUS HOLD now requires the Phase J prepared/off boundary to pass rather than treating privacy wording alone as locally complete.
+
 ## 2026-09-28 — Manual-only participation deployment path prepared
 - Added a manual GitHub Actions deployment workflow for the two Phase J Workers: Earth Signals and camera/place submissions.
 - The workflow has no push trigger. Deployment requires an explicit workflow-dispatch target plus Cloudflare deployment credentials from GitHub secrets.
