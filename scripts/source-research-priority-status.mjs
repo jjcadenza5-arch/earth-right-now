@@ -1,0 +1,15 @@
+import fs from "node:fs";
+const file=new URL("../data/source-research-priorities.json",import.meta.url);
+const data=JSON.parse(fs.readFileSync(file,"utf8"));
+const w=data.scoringWeights||{};
+const total=Object.values(w).reduce((a,b)=>a+Number(b||0),0);
+const fail=[];
+if(Math.abs(total-1)>1e-9) fail.push(`weights must total 1, got ${total}`);
+if(Number(w.practicalCommercialFit)>0.05) fail.push("commercial fit exceeds 5% cap");
+if(data.invariants?.commercialMayOverrideTruth!==false) fail.push("commercial truth override must remain false");
+if(data.invariants?.commercialMayOverrideQuality!==false) fail.push("commercial quality override must remain false");
+if(data.invariants?.commercialMayAffectWatchEarthRanking!==false) fail.push("commercial Watch Earth ranking effect must remain false");
+if(data.invariants?.placeCategoriesAreIllustrativeNotRestrictive!==true) fail.push("place categories must remain illustrative, not restrictive");
+if(!Array.isArray(data.placeUniverse)||data.placeUniverse.length<8) fail.push("place universe is unexpectedly narrow");
+console.log(JSON.stringify({ok:fail.length===0,totalWeight:total,commercialWeight:w.practicalCommercialFit,placeUniverseCount:data.placeUniverse?.length||0,fail},null,2));
+if(fail.length) process.exit(1);
