@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-28T15:45:00Z",
+  "principle": "Research destinations where a truthful current window is valuable to visitors. Existing/available travel programs help identify useful next-step categories, but may not lower source-quality or truth standards.",
+  "columns": {
+    "visualCoverage": "Current ERN visual-window state",
+    "visitorDecisionValue": "How much seeing the place now could change timing/expectations",
+    "nextStepIntents": "Useful planning actions after viewing",
+    "sourcePriority": "Research priority based on quality gap + visitor usefulness, not commission",
+    "programFamilies": "Program categories that may support the destination type; exact partner/destination coverage still requires verification"
+  },
+  "rows": [
+    {
+      "destination": "Kyoto",
+      "country": "Japan",
+      "visualCoverage": "STRONG_CURRENT",
+      "currentSources": [
+        "kyoto-fushimi-inari-live",
+        "kyoto-kifune-shrine-live",
+        "kyoto-kiyomizuzaka-live",
+        "kyoto-hanamikoji-live"
+      ],
+      "visitorDecisionValue": "VERY_HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "eat",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "ATTRACTIONS",
+        "TRANSFERS"
+      ],
+      "sourcePriority": "MAINTAIN_AND_SELECTIVELY_EXPAND",
+      "why": "Official visitor-condition cameras directly help with crowd/timing decisions; expand only source-specifically.",
+      "next": "Retest Nishiki Market only inside 11:00–18:00 JST; otherwise maintain four approved sources."
+    },
+    {
+      "destination": "London",
+      "country": "United Kingdom",
+      "visualCoverage": "GOOD_EXTERNAL",
+      "currentSources": [
+        "london-savoy-place-live",
+        "london-abbey-road-crossing-live"
+      ],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "stay",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "ATTRACTIONS",
+        "TRANSFERS"
+      ],
+      "sourcePriority": "MEDIUM",
+      "why": "Two truthful official external live windows exist; inside-ERN playback is not necessary for usefulness.",
+      "next": "Recheck unavailable official-tourism webcams only on material provider change."
+    },
+    {
+      "destination": "Seoul",
+      "country": "South Korea",
+      "visualCoverage": "CONTEXT_STRONG_VISUAL_GAP",
+      "currentSources": [],
+      "visitorDecisionValue": "VERY_HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "eat",
+        "transport",
+        "services"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "ATTRACTIONS",
+        "TRANSFERS",
+        "CITY_UTILITY"
+      ],
+      "sourcePriority": "HIGH",
+      "why": "Official real-time crowd/traffic/weather/transit context exists for visitor areas, but ERN lacks a proven visual window.",
+      "next": "Research durable visitor-facing visual sources separately from the context-data lane."
+    },
+    {
+      "destination": "Bangkok",
+      "country": "Thailand",
+      "visualCoverage": "VISUAL_GAP_OFFICIAL_TRAFFIC_DATA_EXISTS",
+      "currentSources": [],
+      "visitorDecisionValue": "VERY_HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "eat",
+        "stay",
+        "transport",
+        "services"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "ATTRACTIONS",
+        "TRANSFERS",
+        "CITY_UTILITY"
+      ],
+      "sourcePriority": "HIGH",
+      "why": "Major visitor destination with official BMA traffic/CCTV systems, but current ERN visual coverage is absent and the traffic application has reduced stability.",
+      "next": "Seek a high-quality official/provider visitor-facing current window; do not promote legacy traffic CCTV merely to fill the gap."
+    },
+    {
+      "destination": "Chiang Mai",
+      "country": "Thailand",
+      "visualCoverage": "OFFICIAL_CCTV_STANDBY_GAP",
+      "currentSources": [],
+      "visitorDecisionValue": "VERY_HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "eat",
+        "stay",
+        "transport",
+        "services"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "ATTRACTIONS",
+        "TRANSFERS",
+        "CITY_UTILITY"
+      ],
+      "sourcePriority": "HIGH",
+      "why": "Strong visitor interest and direct relevance to ERN's local/farm origins, but Chiang Mai PAO cameras currently report standby/waiting.",
+      "next": "Monitor official feed state and build future For Places outreach to farms, resorts, markets and attractions with real current cameras."
+    },
+    {
+      "destination": "Tonami Tulip Park",
+      "country": "Japan",
+      "visualCoverage": "STRONG_EXTERNAL_SEASONAL",
+      "currentSources": [
+        "tonami-tulip-park-panorama"
+      ],
+      "visitorDecisionValue": "VERY_HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "TRANSFERS"
+      ],
+      "sourcePriority": "MAINTAIN",
+      "why": "A municipal live park window directly answers whether a seasonal trip is worth making now.",
+      "next": "Keep one selective live window; do not import the full municipal camera network without distinct visitor need."
+    },
+    {
+      "destination": "Tokyo",
+      "country": "Japan",
+      "visualCoverage": "GOOD_EXTERNAL",
+      "currentSources": [
+        "chidori-sakura"
+      ],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "eat",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "ATTRACTIONS",
+        "TRANSFERS"
+      ],
+      "sourcePriority": "MEDIUM_HIGH",
+      "why": "Existing current Chidori-ga-fuchi coverage plus strong visitor planning value; additional sources should add distinct utility rather than duplicate.",
+      "next": "Favor distinct current conditions such as markets, streets, seasonal parks or transport gateways if official/high-quality sources emerge."
+    },
+    {
+      "destination": "New York",
+      "country": "United States",
+      "visualCoverage": "STRONG_EXTERNAL",
+      "currentSources": [
+        "nyc-skyline-jersey-city-earthcam",
+        "statue-liberty-harbor-earthcam",
+        "statue-liberty-earthcam",
+        "pleasant-beach-lake-ontario"
+      ],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "stay",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "ATTRACTIONS",
+        "TRANSFERS"
+      ],
+      "sourcePriority": "LOW_MAINTAIN",
+      "why": "Multiple strong current landmark/skyline windows already exist; avoid commercial/source over-density.",
+      "next": "Maintain quality; new sources need a clearly different visitor use."
+    },
+    {
+      "destination": "Auckland",
+      "country": "New Zealand",
+      "visualCoverage": "STRONG_INSIDE_ERN",
+      "currentSources": [
+        "auckland-viaduct-harbour"
+      ],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "transport",
+        "stay"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "TRANSFERS"
+      ],
+      "sourcePriority": "LOW_MAINTAIN",
+      "why": "Strong inside-ERN harbour view plus useful destination-specific planning actions already prove the model.",
+      "next": "Maintain reliability rather than adding density."
+    },
+    {
+      "destination": "Sydney",
+      "country": "Australia",
+      "visualCoverage": "GOOD_EXTERNAL",
+      "currentSources": [
+        "coogee-randwick-beaches"
+      ],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "ATTRACTIONS",
+        "TRANSFERS",
+        "CAR_RENTAL"
+      ],
+      "sourcePriority": "MEDIUM",
+      "why": "Good beach/current-condition coverage; a distinct city/harbour view would add more value than another beach.",
+      "next": "Research official/high-quality city or harbour current window before adding more coastal duplication."
+    },
+    {
+      "destination": "Honolulu / Waikiki",
+      "country": "United States",
+      "visualCoverage": "GOOD_EXTERNAL",
+      "currentSources": [
+        "waikiki-beach"
+      ],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "transport",
+        "services"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "TRANSFERS",
+        "CAR_RENTAL",
+        "MOBILITY"
+      ],
+      "sourcePriority": "LOW_MAINTAIN",
+      "why": "Current beach view already answers a key visitor-condition question.",
+      "next": "Maintain; add only if a distinct surf/weather/city condition window is materially better."
+    },
+    {
+      "destination": "Paris",
+      "country": "France",
+      "visualCoverage": "VISUAL_GAP_OFFICIAL_VISITOR_CONTEXT_EXISTS",
+      "currentSources": [],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "stay",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "ATTRACTIONS",
+        "TRANSFERS",
+        "CITY_UTILITY"
+      ],
+      "sourcePriority": "MEDIUM_HIGH",
+      "why": "Major visitor destination; official Eiffel Tower pages provide live visit conditions/attendance/weather, but ERN still lacks a verified current visual window for Paris itself.",
+      "next": "Research a rights-clear, high-quality current visual source; keep non-visual attendance/weather as context only."
+    },
+    {
+      "destination": "Rome",
+      "country": "Italy",
+      "visualCoverage": "VISUAL_GAP",
+      "currentSources": [],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "stay",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "ATTRACTIONS",
+        "TRANSFERS",
+        "CITY_UTILITY"
+      ],
+      "sourcePriority": "MEDIUM_HIGH",
+      "why": "Major culture/visitor destination with strong practical next-step fit but no verified ERN current window.",
+      "next": "Research official or rights-clear current landmark/street views; no source should be added solely because program fit is strong."
+    },
+    {
+      "destination": "Singapore",
+      "country": "Singapore",
+      "visualCoverage": "VISUAL_GAP",
+      "currentSources": [],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "eat",
+        "stay",
+        "transport",
+        "services"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "ATTRACTIONS",
+        "TRANSFERS",
+        "CITY_UTILITY"
+      ],
+      "sourcePriority": "MEDIUM_HIGH",
+      "why": "High visitor interest and useful planning categories, but no verified current ERN window was found in the first official-source pass.",
+      "next": "Continue official/provider current-source research; do not fill the gap with generic promotional video."
+    }
+  ],
+  "rules": {
+    "commissionMaySetSourcePriority": false,
+    "programFitMayBreakTiesAfterQuality": true,
+    "sourceMustPassTruthPermissionCurrentnessQuality": true,
+    "duplicateDestinationDensityIsPenalized": true,
+    "gapsMayRemainUnknown": true
+  }
+}
