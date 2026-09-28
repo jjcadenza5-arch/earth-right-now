@@ -1,3 +1,9 @@
+## 2026-09-28 — Commercial partner registry reconciled
+- Added the real active Viator limited-pilot relationship to `data/affiliate-partners.json`, fixing the prior state where a verified affiliate offer existed without a matching active partner record.
+- Viator uses a conservative ERN 90-day internal recheck window through 2026-12-26; this is not presented as a provider contract expiry.
+- Reconciled affiliate-platform evidence: Booking.com not approved, Viator active limited pilot, Travelpayouts Project confirmed/matching with Drive automation disabled and manual tools only.
+- Travelpayouts is not treated as blanket approval for its underlying brands; each program still requires actual Project availability/terms evidence before use.
+
 ## 2026-09-28 — Travelpayouts Drive automation removed
 - Advanced Drive settings were reviewed after Project verification and were found to be at Maximum monetization.
 - The enabled feature set could rewrite existing links, link keywords, insert recommendations, show smart previews and targeted offers automatically.
