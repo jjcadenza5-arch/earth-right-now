@@ -1,3 +1,10 @@
+## 2026-09-28 — Seoul real-time API contract verified; public context remains OFF
+- Verified the official English Seoul Real-time City Data API service as `citydata_eng` (dataset OA-22714), including documented request pattern, one-area-per-request behavior and API-key requirement.
+- Added a server-side adapter contract with source timestamps, stale-data fail-closed behavior, attribution, privacy and explicit ERN↔Seoul place-mapping gates.
+- Hardened `context:status` so context can never create LIVE labels, affect Watch Earth ranking, hide camera truth when stale, or activate automatically.
+- Wired real-time-context and visitor-source-expansion integrity checks into Pages release CI.
+- No Seoul context is public yet; obtaining an ERN-controlled Seoul Open Data API key remains an external/human gate.
+
 ## 2026-09-28 — ERN origin story added to About
 - Added a concise public explanation of the strawberry-picking experience that inspired “See before you go.”
 - Kept the story on the About page rather than adding homepage clutter.
