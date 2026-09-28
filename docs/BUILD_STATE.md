@@ -1,3 +1,9 @@
+## 2026-09-28 — Rome Spanish Steps live window added
+- Added one selective EXTERNAL_LIVE / LINK_ONLY current view of the Spanish Steps.
+- The source gives visitors direct crowd/atmosphere context in a major cultural destination without forcing embed rights.
+- Rome moves from visual gap to selective-maintenance status in the destination opportunity matrix.
+- Paris remains unresolved because the current provider live pages found in this research pass are marked offline.
+
 ## 2026-09-28 — Seoul, Bangkok and Singapore visual gaps selectively filled
 - Added official Seoul Plaza 24 Hours as EXTERNAL_LIVE / LINK_ONLY from Seoul Metropolitan Government.
 - Added Bangkok Sukhumvit Road and Singapore Port & Skyline as current EXTERNAL_LIVE / LINK_ONLY SkylineWebcams views.
