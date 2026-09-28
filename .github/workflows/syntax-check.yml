@@ -31,6 +31,8 @@ on:
       - "tests/business-control-status.smoke.js"
       - "tests/external-gate-register.smoke.js"
       - "tests/operations-autonomy-boundary.smoke.js"
+      - "tests/watch-earth-inside-core.smoke.js"
+      - "tests/viewer-fullscreen-stage-first.smoke.js"
       - "press.html"
       - "data/public-brand-facts.json"
       - "data/distribution-channels.json"
@@ -106,3 +108,8 @@ jobs:
           for test in tests/guide-ai-*.smoke.js; do
             node "$test"
           done
+      - name: Run public experience maintenance smoke tests
+        run: |
+          set -euo pipefail
+          node tests/watch-earth-inside-core.smoke.js
+          node tests/viewer-fullscreen-stage-first.smoke.js
