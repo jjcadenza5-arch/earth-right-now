@@ -1,6 +1,6 @@
 import fs from "node:fs";
 const read=p=>fs.readFileSync(p,"utf8");
-const index=read("index.html"),app=read("src/app-lite.js"),css=read("src/styles-lite.css"),places=read("for-places.html"),moments=read("now-moments.html"),strategy=read("docs/CRISPY_PORK_SKIN_STRATEGY.md"),guide=read("docs/ERN_GUIDE_VISION.md"),sources=JSON.parse(read("data/sources.json")),localDirectory=JSON.parse(read("data/local-directory.json"));
+const index=read("index.html"),app=read("src/app-lite.js"),css=read("src/styles-lite.css"),places=read("for-places.html"),moments=read("now-moments.html"),placesJs=read("src/for-places-page.js"),momentsJs=read("src/now-moments-page.js"),strategy=read("docs/CRISPY_PORK_SKIN_STRATEGY.md"),guide=read("docs/ERN_GUIDE_VISION.md"),sources=JSON.parse(read("data/sources.json")),localDirectory=JSON.parse(read("data/local-directory.json"));
 const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)},requireExists=p=>fs.existsSync(p);
 
 for(const id of ["watch","search","map","localEarth","participate","saved","guideLauncher","guidePanel"])must(index.includes(`id="${id}"`),`whole-product surface missing: ${id}`);
@@ -36,9 +36,9 @@ must(css.includes(".local-earth-section"),"Local Earth styling missing");
 must(css.includes(".participate-section"),"places/cameras/moments participation surface missing");
 must(/(payment or partner status never buys editorial ranking|no ranking for sale)/i.test(places),"commercial no-paid-ranking guardrail missing");
 must(/submission delivery is not open yet/i.test(places),"camera-submission honesty boundary missing");
-must(/Prepare a camera review draft/i.test(places)&&/LOCAL_DRAFT_ONLY/.test(places),"camera local-draft readiness tool missing");
+must(/Prepare a camera review draft/i.test(places)&&/LOCAL_DRAFT_ONLY/.test(placesJs),"camera local-draft readiness tool missing");
 must(/uploads are intentionally not active yet/i.test(moments),"Now Moments safety boundary missing");
-must(/Preview an Earth Signal/i.test(moments)&&/Nothing is uploaded or transmitted/i.test(moments),"Now Moments local preview boundary missing");
+must(/Preview an Earth Signal/i.test(moments)&&/Nothing is uploaded or transmitted/i.test(moments)&&/Preview locally/.test(momentsJs),"Now Moments local preview boundary missing");
 must(/friendly tour guide/i.test(strategy)&&/small places and small businesses/i.test(strategy),"Crispy Pork Skin strategy has been weakened");
 must(/tour guide, not a generic chatbot/i.test(guide),"ERN Guide vision has been weakened");
 
