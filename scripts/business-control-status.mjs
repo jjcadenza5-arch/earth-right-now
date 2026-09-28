@@ -23,7 +23,7 @@ const externalGates=[];
 const booking=program("booking-com"),viator=program("viator"),travelpayouts=program("travelpayouts-platform");
 if(booking&&/PENDING|WAIT|REVIEW|ACTIVATION/i.test(String(booking.state)))externalGates.push({id:"booking-com",state:booking.state});
 if(viator&&/PENDING|WAIT|ACTIVATION/i.test(String(viator.state)))externalGates.push({id:"viator",state:viator.state});
-if(travelpayouts?.reviewState==="MATCHING_IN_PROGRESS")externalGates.push({id:"travelpayouts-program-matching",state:travelpayouts.reviewState,availablePrograms:Number(travelpayouts.availableProgramsObserved||0)});
+if(/MATCHING|CONTINUES/.test(String(travelpayouts?.reviewState||"")))externalGates.push({id:"travelpayouts-program-matching",state:travelpayouts.reviewState,availablePrograms:Number(travelpayouts.availableProgramsObserved||0)});
 if(earthSignals.status!=="DEPLOYED")externalGates.push({id:"earth-signals-deployment",state:earthSignals.status});
 if(submissions.enabled!==true)externalGates.push({id:"submission-transport",state:submissions.status||"DISABLED"});
 if(media.status!=="DEPLOYED")externalGates.push({id:"now-moment-media",state:media.status});

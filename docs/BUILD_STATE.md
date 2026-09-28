@@ -1,3 +1,9 @@
+## 2026-09-28 — Travelpayouts initial Project review completed
+- Human-provided Travelpayouts email states ERN was reviewed and connected to relevant brands.
+- Dashboard shows 26 programs currently Available with Generate links controls; 20 more remain in an Unlock more pool.
+- The remaining review banner is interpreted as broader program matching continuing, not as ERN still waiting for initial Project approval.
+- ERN may now review the current 26 programs selectively. Drive automation remains disabled and no program is mass-activated.
+
 ## 2026-09-28 — Affiliate research/activation boundary repaired
 - Operations correctly rejected live relationship state inside the research-only affiliate-platform registry.
 - Restored `data/affiliate-platform-research.json` to research-only program availability facts.
