@@ -1,0 +1,1 @@
+import fs from "node:fs";import assert from "node:assert/strict";const src=fs.readFileSync("src/fullscreen-continuity.js","utf8");assert.match(src,/fullscreenElement/);assert.match(src,/webkitFullscreenElement/);assert.match(src,/tagName==="IFRAME"/);assert.match(src,/parentElement===mount/);console.log("ERN fullscreen continuity helper passed");
