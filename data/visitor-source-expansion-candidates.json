@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T14:50:00Z",
+  "generatedAt": "2026-09-28T16:12:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -159,15 +159,25 @@
       "evidenceUrls": [
         "https://www.city.tonami.lg.jp/livecam/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%AA%E3%83%83%E3%83%97%E5%85%AC%E5%9C%92%E5%8D%97%E9%96%80/"
       ],
-      "state": "RESOLVED_ONE_OFFICIAL_EXTERNAL_LIVE_WINDOW",
-      "why": "Municipal live camera at a seasonal flower destination strongly matches condition-before-trip use.",
-      "next": "Maintain the official Panorama Terrace external live source; review other Tonami cameras only if a distinct visitor use justifies them.",
+      "state": "EXACT_TARGET_RESOLVED_RESEARCH_ONLY",
+      "why": "Tonami City operates a municipal live-camera network and the Panorama Terrace page exposes an exact current-image target with selectable camera directions. This strongly fits seasonal See Before You Go, but direct third-party image reuse and deployed freshness behavior remain unapproved.",
+      "next": "Use the exact Panorama Terrace page/image as a research target. Verify refresh/currentness in a real deployed browser and resolve link-only versus direct-image permission before catalog promotion; preserve off-season honesty.",
       "resolvedTarget": {
         "name": "Tonami Tulip Park — Panorama Terrace",
         "catalogId": "tonami-tulip-park-panorama",
         "mode": "EXTERNAL_LIVE",
         "officialUrl": "https://www.city.tonami.lg.jp/livecam/cam01/"
-      }
+      },
+      "resolvedTargets": [
+        {
+          "name": "Tonami Tulip Park Panorama Terrace",
+          "officialPage": "https://www.city.tonami.lg.jp/livecam/cam01/",
+          "currentImageUrl": "https://www.city.tonami.lg.jp/livecam/images/mirror/churip.jpg",
+          "truthCandidate": "LIVE_IMAGE",
+          "permissionState": "OFFICIAL_PAGE_DISPLAYS_IMAGE_DIRECT_REUSE_NOT_YET_APPROVED",
+          "currentnessState": "MUNICIPAL_LIVE_CAMERA_PAGE_CURRENTNESS_NEEDS_DEPLOYED_REVIEW"
+        }
+      ]
     },
     {
       "id": "chiang-mai-pao-cctv",
