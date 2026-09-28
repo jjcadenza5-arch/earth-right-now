@@ -1,3 +1,9 @@
+## 2026-09-28 — Phase K legacy gate repair completed
+- Updated the Earth Signal public deployment-manifest validator to recognize the explicit non-secret `publicActivationAllowed` switch.
+- The focused deployment-manifest smoke now requires that switch to be false in the current NOT_DEPLOYED state.
+- Updated whole-product preflight to validate local-fallback behavior in the new ES modules rather than requiring `LOCAL_DRAFT_ONLY` to remain inline in HTML.
+- This resolves the three Phase K guard failures caused by legacy gate assumptions; no activation state changed.
+
 ## 2026-09-28 — Phase K release gate and read-side pulse completed
 - Updated the participation release preflight for the activation-aware module architecture instead of assuming all local-only logic must remain inline in HTML.
 - Fixed the static release builder to actually ship the new Phase K modules plus the two non-secret participation manifests; this prevents source/release drift.
