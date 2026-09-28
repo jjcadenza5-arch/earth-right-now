@@ -35,8 +35,8 @@ The first tracked link retains ERN's Viator partner ID and resolves to Auckland 
 
 ## Commercial ladder after Booking.com decision
 
-### Travelpayouts — PROJECT CONFIRMED / MATCHING IN PROGRESS
-ERN website ownership is now confirmed in Travelpayouts. The Project dashboard shows 26 programs available and 20 more potentially unlockable while Travelpayouts reviews/matches the Project. Visible available examples include Klook and Yesim. ERN will **not use Drive auto-monetization**: the maximum settings can rewrite existing travel links, add keyword links, insert recommendation blocks, show previews and targeted offers. ERN instead uses explicit affiliate links/widgets only where the product deliberately places commercial actions, after program-level eligibility and terms are verified.
+### Travelpayouts — PROJECT ACTIVE / 26 PROGRAMS AVAILABLE
+ERN website ownership is confirmed and Travelpayouts has completed the initial Project review. The dashboard currently shows 26 programs Available with Generate links controls and 20 more in an Unlock more pool while broader matching continues. Drive auto-monetization remains disabled; ERN will use explicit affiliate links/widgets only where the product deliberately places commercial actions, after program-level terms and fit are reviewed.
 
 Why this is next: it lets ERN build real clicks/bookings and commercial history without depending on one large advertiser application.
 
