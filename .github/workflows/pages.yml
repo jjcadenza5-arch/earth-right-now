@@ -36,6 +36,7 @@ on:
       - "src/commercial-attribution-runtime.js"
       - "src/discovery-eligibility.js"
       - "src/source-recency.js"
+      - "src/catalog-metadata-audit.js"
       - "src/solar-moment.js"
       - "src/media-identity.js"
       - "manifest.webmanifest"
@@ -58,6 +59,7 @@ on:
       - "scripts/featured-curation-preflight.mjs"
       - "scripts/guide-see-before-go-preflight.mjs"
       - "scripts/source-research-priority-status.mjs"
+      - "scripts/catalog-metadata-status.mjs"
       - "scripts/visitor-source-expansion-status.mjs"
       - "scripts/realtime-context-status.mjs"
       - "scripts/commercial-placement-preflight.mjs"
@@ -114,6 +116,8 @@ jobs:
         run: node scripts/participation-preflight.mjs
       - name: Featured curation preflight
         run: node scripts/featured-curation-preflight.mjs
+      - name: Catalog metadata completeness
+        run: node scripts/catalog-metadata-status.mjs
       - name: Source research priority integrity
         run: node scripts/source-research-priority-status.mjs
       - name: Guide See before go preflight
