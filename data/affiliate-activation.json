@@ -13,12 +13,16 @@
   "waves": [
     {
       "id": "wave-a",
-      "state": "PARTIALLY_ACTIVE",
+      "state": "PARTIALLY_ACTIVE_BOOKING_REJECTED",
       "programs": [
         {
           "id": "booking-com",
-          "state": "SUBMITTED_PENDING_REVIEW",
-          "submittedAt": "2026-09-27T10:19:08Z"
+          "state": "REJECTED",
+          "submittedAt": "2026-09-27T10:19:08Z",
+          "decisionAt": "2026-09-28",
+          "relationshipActive": false,
+          "trackedLinksAllowed": false,
+          "decisionEvidence": "Booking.com APAC / CJ message: application was not approved."
         },
         {
           "id": "viator",
@@ -31,26 +35,26 @@
         }
       ],
       "rationale": "Broad first-wave coverage across stays/transport/attractions plus tours/activities without changing ERN Earth-view ranking.",
-      "next": "MONITOR_VIATOR_AUCKLAND_PILOT_AND_WAIT_FOR_BOOKING_COM"
+      "next": "MONITOR_VIATOR_AUCKLAND_PILOT_AND_REVIEW_AGODA"
     },
     {
       "id": "wave-b",
-      "state": "HOLD_UNTIL_WAVE_A_DECISION",
+      "state": "ELIGIBLE_FOR_REVIEW",
       "programs": [
         "agoda"
       ],
-      "rationale": "Complementary lodging channel; activate only after the first-wave account/application state is known."
+      "rationale": "Booking.com application was not approved on 2026-09-28 while Viator remains active. Agoda is now the next lodging-channel candidate, but application/account actions remain human-controlled."
     },
     {
       "id": "wave-c",
-      "state": "HOLD_UNTIL_WAVE_A_DECISION",
+      "state": "HOLD_PENDING_LODGING_REVIEW",
       "programs": [
         "skyscanner"
       ],
-      "rationale": "Useful transport/referral depth but adds a separate Impact-based tracking relationship, so defer until the first wave is operational."
+      "rationale": "Keep the extra transport/referral relationship on hold while ERN reviews the next lodging path and continues the Viator pilot."
     }
   ],
-  "next": "MONITOR_VIATOR_AUCKLAND_PILOT_AND_WAIT_FOR_BOOKING_COM",
-  "note": "Application, account creation, acceptance and credential setup are external relationship actions. ERN prepares the workflow but does not claim an affiliate relationship until documented acceptance exists.",
-  "updatedAt": "2026-09-27T13:24:00Z"
+  "next": "MONITOR_VIATOR_AUCKLAND_PILOT_AND_REVIEW_AGODA",
+  "note": "Booking.com rejection is recorded as a program decision only, not as a judgment about ERN quality. Application/account actions remain external and human-controlled. ERN does not claim a relationship without documented acceptance.",
+  "updatedAt": "2026-09-28T09:50:00Z"
 }
