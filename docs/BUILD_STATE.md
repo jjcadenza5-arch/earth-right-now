@@ -1,3 +1,10 @@
+## 2026-09-28 — Seoul, Bangkok and Singapore visual gaps selectively filled
+- Added official Seoul Plaza 24 Hours as EXTERNAL_LIVE / LINK_ONLY from Seoul Metropolitan Government.
+- Added Bangkok Sukhumvit Road and Singapore Port & Skyline as current EXTERNAL_LIVE / LINK_ONLY SkylineWebcams views.
+- Preserved the principle that external live is useful without forcing embed rights.
+- Updated the destination opportunity matrix: all three destinations move from high visual-gap priority to maintenance/selective expansion.
+- Singapore Marina Bay/downtown provider pages currently marked offline remain excluded.
+
 ## 2026-09-28 — Destination opportunity matrix added
 - Added a concrete internal matrix connecting current visual coverage, visitor decision value, useful travel intents and source-research priority.
 - High current gaps include Seoul, Bangkok and Chiang Mai; Paris, Rome and Singapore remain meaningful visual-source gaps after initial official-source research.
