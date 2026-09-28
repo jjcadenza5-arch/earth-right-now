@@ -1,3 +1,9 @@
+## 2026-09-28 — Klook manual affiliate link verified
+- Human generated a Klook link through the verified Travelpayouts ERN Project and confirmed it opens correctly.
+- Recorded tracking URL `https://klook.tpo.mx/B1bd4eo6` as GENERIC_HOMEPAGE scope only.
+- Registered Klook as an active manual affiliate partner via Travelpayouts with an ERN 90-day recheck horizon.
+- Generic Klook link is not yet allowed for public placement; prefer destination-specific links before exposing it in ERN.
+
 ## 2026-09-28 — Travelpayouts initial Project review completed
 - Human-provided Travelpayouts email states ERN was reviewed and connected to relevant brands.
 - Dashboard shows 26 programs currently Available with Generate links controls; 20 more remain in an Unlock more pool.
