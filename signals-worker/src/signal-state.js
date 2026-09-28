@@ -2,6 +2,8 @@ const WINDOW_MS=10*60*1000;
 const MAX_SUBMISSIONS=6;
 const MAX_PLACE_SUBMISSIONS=3;
 const MAX_REPORTS=10;
+const MAX_ACTIVE_SIGNALS=5000;
+const MAX_RETAINED_REPORTS=1000;
 
 function json(status,body){
   return new Response(JSON.stringify(body),{status,headers:{"content-type":"application/json; charset=utf-8","cache-control":"no-store"}});
@@ -36,6 +38,7 @@ export class SignalState{
 
   cleanup(now){
     this.sql.exec("DELETE FROM signals WHERE expiry_at <= ?",now);
+    this.sql.exec("DELETE FROM reports WHERE signal_id NOT IN (SELECT id FROM signals)");
     this.sql.exec("DELETE FROM rate_events WHERE at < ?",now-WINDOW_MS);
   }
 
@@ -64,6 +67,10 @@ export class SignalState{
     if(b.op==="put-signal"){
       const r=b.record||{},expiry=Date.parse(r.storageExpiryAt||"");
       if(!r.id||!r.placeId||!Number.isFinite(expiry))return json(400,{ok:false,reason:"INVALID_RECORD"});
+      this.cleanup(now);
+      const exists=[...this.sql.exec("SELECT id FROM signals WHERE id = ?",String(r.id))][0];
+      const active=Number([...this.sql.exec("SELECT COUNT(*) AS n FROM signals")][0]?.n||0);
+      if(!exists&&active>=MAX_ACTIVE_SIGNALS)return json(503,{ok:false,reason:"SIGNAL_STORAGE_CAPACITY"});
       this.sql.exec("INSERT OR REPLACE INTO signals(id,place_id,expiry_at,reported,record_json) VALUES(?,?,?,?,?)",
         String(r.id),String(r.placeId),expiry,r.reported===true?1:0,JSON.stringify(r));
       return json(200,{ok:true});
@@ -80,6 +87,10 @@ export class SignalState{
     if(b.op==="put-report"){
       const report=b.report||{},created=Date.parse(report.createdAt||"");
       if(!report.signalId||!Number.isFinite(created))return json(400,{ok:false,reason:"INVALID_REPORT"});
+      this.cleanup(now);
+      const existingReport=[...this.sql.exec("SELECT signal_id FROM reports WHERE signal_id = ?",String(report.signalId))][0];
+      const reportCount=Number([...this.sql.exec("SELECT COUNT(*) AS n FROM reports")][0]?.n||0);
+      if(!existingReport&&reportCount>=MAX_RETAINED_REPORTS)return json(503,{ok:false,reason:"REPORT_STORAGE_CAPACITY"});
       this.sql.exec("INSERT OR REPLACE INTO reports(signal_id,created_at,report_json) VALUES(?,?,?)",String(report.signalId),created,JSON.stringify(report));
       this.sql.exec("UPDATE signals SET reported = 1 WHERE id = ?",String(report.signalId));
       return json(200,{ok:true});
@@ -130,7 +141,7 @@ export class SignalState{
       this.cleanup(now);
       const signals=Number([...this.sql.exec("SELECT COUNT(*) AS n FROM signals")][0]?.n||0);
       const reports=Number([...this.sql.exec("SELECT COUNT(*) AS n FROM reports")][0]?.n||0);
-      return json(200,{ok:true,signals,reports,rawNetworkIdentifiersStored:false});
+      return json(200,{ok:true,signals,reports,limits:{maxActiveSignals:MAX_ACTIVE_SIGNALS,maxRetainedReports:MAX_RETAINED_REPORTS},rawNetworkIdentifiersStored:false});
     }
 
     return json(404,{ok:false,reason:"UNKNOWN_OPERATION"});

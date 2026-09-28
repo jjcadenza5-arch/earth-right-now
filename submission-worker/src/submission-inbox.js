@@ -1,5 +1,6 @@
 const DAY_MS=24*60*60*1000;
 const MAX_PER_DAY=5;
+const MAX_RETAINED_SUBMISSIONS=1000;
 
 function json(status,body){
   return new Response(JSON.stringify(body),{status,headers:{"content-type":"application/json; charset=utf-8","cache-control":"no-store"}});
@@ -46,6 +47,9 @@ export class SubmissionInbox{
     if(b.op==="put"){
       const record=b.record||{},id=String(b.id||""),submitted=Date.parse(record.submittedAt||""),retentionDays=Math.max(1,Math.min(30,Number(b.retentionDays)||30));
       if(!id||!Number.isFinite(submitted))return json(400,{ok:false,reason:"INVALID_RECORD"});
+      const exists=[...this.sql.exec("SELECT id FROM submissions WHERE id = ?",id)][0];
+      const retained=Number([...this.sql.exec("SELECT COUNT(*) AS n FROM submissions")][0]?.n||0);
+      if(!exists&&retained>=MAX_RETAINED_SUBMISSIONS)return json(503,{ok:false,reason:"SUBMISSION_STORAGE_CAPACITY"});
       const expires=submitted+retentionDays*DAY_MS;
       this.sql.exec("INSERT OR REPLACE INTO submissions(id,submitted_at,expires_at,status,record_json) VALUES(?,?,?,?,?)",
         id,submitted,expires,String(record.status||"PENDING_REVIEW"),JSON.stringify(record));
@@ -73,7 +77,7 @@ export class SubmissionInbox{
 
     if(b.op==="status"){
       const count=Number([...this.sql.exec("SELECT COUNT(*) AS n FROM submissions")][0]?.n||0);
-      return json(200,{ok:true,pendingRecords:count,maxRetentionDays:30,automaticPublishAllowed:false});
+      return json(200,{ok:true,pendingRecords:count,maxRetentionDays:30,maxRetainedSubmissions:MAX_RETAINED_SUBMISSIONS,automaticPublishAllowed:false});
     }
 
     return json(404,{ok:false,reason:"UNKNOWN_OPERATION"});

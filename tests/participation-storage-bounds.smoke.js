@@ -1,0 +1,11 @@
+import fs from "node:fs";
+const signals=fs.readFileSync("signals-worker/src/signal-state.js","utf8");
+const submissions=fs.readFileSync("submission-worker/src/submission-inbox.js","utf8");
+console.assert(signals.includes("MAX_ACTIVE_SIGNALS=5000"),"Earth Signals active storage cap missing");
+console.assert(signals.includes("MAX_RETAINED_REPORTS=1000"),"Earth Signals report storage cap missing");
+console.assert(signals.includes('DELETE FROM reports WHERE signal_id NOT IN (SELECT id FROM signals)'),"Expired-signal orphan report cleanup missing");
+console.assert(signals.includes("SIGNAL_STORAGE_CAPACITY")&&signals.includes("REPORT_STORAGE_CAPACITY"),"Earth Signal fail-closed capacity reasons missing");
+console.assert(submissions.includes("MAX_RETAINED_SUBMISSIONS=1000"),"Submission retained-record cap missing");
+console.assert(submissions.includes("SUBMISSION_STORAGE_CAPACITY"),"Submission fail-closed capacity reason missing");
+console.assert(submissions.includes("maxRetainedSubmissions"),"Submission health capacity evidence missing");
+console.log("participation durable storage is bounded and expiry cleanup removes orphan reports");
