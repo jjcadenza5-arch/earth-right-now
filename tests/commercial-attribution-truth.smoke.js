@@ -1,0 +1,16 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import {telemetryEnvelope,telemetryPolicy} from "../src/telemetry-policy.js";
+const policy=telemetryPolicy();
+assert.equal(policy.defaultEnabled,false);
+assert(policy.allowedEvents.includes("travel_option_opened"));
+for(const x of ["booking status","transaction value","revenue","commission amount","payment details"])assert(policy.forbidden.includes(x));
+const e=telemetryEnvelope("travel_option_opened",{offerId:"o1",placeId:"p1",intent:"activities",linkScope:"destination",affiliate:true,sponsored:false,bookingId:"secret",revenue:99,email:"x@y.test",lat:1});
+assert.deepEqual(e.data,{offerId:"o1",placeId:"p1",intent:"activities",linkScope:"destination",affiliate:true,sponsored:false});
+const runtime=fs.readFileSync("src/commercial-attribution-runtime.js","utf8");
+assert(runtime.includes('a[data-offer-id]'));
+assert(runtime.includes("currentVerified(offer)"));
+assert(runtime.includes("events.travelOption(offer)"));
+const app=fs.readFileSync("src/app-lite.js","utf8");
+assert(app.includes("data.offerId")||app.includes("dataset.offerId"));
+console.log("Stage P commercial attribution remains bounded, verified-offer-only and default-off");
