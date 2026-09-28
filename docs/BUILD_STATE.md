@@ -1,3 +1,11 @@
+## 2026-09-28 — Participation browser adapters prepared behind OFF gates
+- Added Earth Signals and camera/place submission browser clients without wiring either into public UI.
+- Both clients fail closed when deployment/activation evidence is absent and perform no network request in that state.
+- Earth Signals requires both an HTTPS endpoint and explicit public activation evidence; submission delivery additionally requires explicit visitor consent.
+- Requests omit browser credentials and use no-store behavior.
+- Endpoint normalization accepts either a Worker base URL or the exact API path, avoiding duplicate API paths when deployment manifests are filled later.
+- These adapters are plumbing only; they cannot approve, publish, mutate catalog truth, or expose Worker/review secrets.
+
 ## 2026-09-28 — Post-deployment participation evidence verifier prepared
 - Added a non-mutating verifier for real Earth Signals and submission Worker HTTPS `/health` endpoints.
 - The verifier requires Durable Object evidence, configured server-side rate identity without secret exposure, and raw-network-identifier non-storage.
