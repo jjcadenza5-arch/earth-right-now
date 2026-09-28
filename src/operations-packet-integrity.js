@@ -30,6 +30,7 @@ const requiredJson=[
  "earth-signals-status.json",
  "guide-ai-status.json",
  "local-directory-status.json",
+ "participation-infrastructure.json",
  "trend-current.json",
  "trend-delta.json",
  "operations-status.json"
@@ -258,6 +259,15 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(earthSignals.mode==="CONTRIBUTION_ENABLED"&&earthSignals.ready!==true)issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_ENABLED_READY_MISMATCH"});
     if(earthSignals?.backendFoundation?.deployedTransport===true&&earthSignals?.deployment?.ready!==true)issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_TRANSPORT_WITHOUT_DEPLOYMENT_EVIDENCE"});
     if(earthSignals?.privacyNoticeDraft?.published===false&&earthSignals?.privacyNoticeDraft?.activationSatisfied===true)issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_UNPUBLISHED_PRIVACY_ACTIVATION"});
+  }
+
+  const participation=files["participation-infrastructure.json"];
+  if(participation){
+    if(participation?.safety?.automaticPublicActivationAllowed!==false)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_AUTO_ACTIVATION_VIOLATION"});
+    if(participation?.safety?.automaticPublicationAllowed!==false)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_AUTO_PUBLICATION_VIOLATION"});
+    if(participation?.safety?.automaticCatalogMutationAllowed!==false)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_AUTO_CATALOG_MUTATION_VIOLATION"});
+    if(participation?.safety?.pushTriggeredInfrastructureDeploymentAllowed!==false)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_PUSH_DEPLOY_VIOLATION"});
+    if(participation.state==="PREPARED_FOR_CONTROLLED_DEPLOYMENT"&&participation.publicActivationOff!==true)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_PREPARED_BUT_PUBLIC_ON"});
   }
 
   const trend=files["trend-current.json"];
