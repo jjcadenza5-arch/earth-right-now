@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "name": "Earth Right Now",
+  "shortName": "ERN",
+  "slogan": "See before you go.",
+  "canonicalUrl": "https://earthrightnow.app/",
+  "description": "Earth Right Now helps people look at real places through truthful live and current visual windows before they travel, explore or simply wonder what Earth looks like right now.",
+  "principles": [
+    "Truth and currentness before storytelling",
+    "Payment never buys Earth-window ranking",
+    "Live video, current images, external live and previews remain distinct",
+    "Curiosity-first discovery",
+    "Privacy-first exploration without required accounts"
+  ],
+  "brandAssets": {
+    "mark": "https://earthrightnow.app/assets/ern-mark.svg",
+    "socialCard": "https://earthrightnow.app/assets/ern-social-card.png",
+    "icon512": "https://earthrightnow.app/assets/ern-icon-512.png"
+  },
+  "socialAccountClaims": [],
+  "contactClaimed": false,
+  "commercialRankingAffected": false
+}

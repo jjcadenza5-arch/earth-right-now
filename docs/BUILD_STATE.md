@@ -1,3 +1,10 @@
+## 2026-09-28 — Stage N locally complete; Stage O public media & partner kit opened
+- Stage N shareability foundation passed public deployment and CI on commit `317e19a5d17773646c427225560adb722461d41d`.
+- Stage N is now locally complete; external social channels remain a truthful connection gate. Metricool is available as an optional future connector for connected-brand social operations, but no account connection is assumed.
+- Opened Stage O with a public crawlable Media & Partner Kit using only ERN's verified product description, brand assets, source principles, privacy and commercial-ranking boundaries.
+- Added machine-readable public brand facts with no invented contact email, social handles, partnerships, audience claims or endorsements.
+- The kit explicitly keeps payment/partnership separate from source approval and Earth-window ranking.
+
 ## 2026-09-28 — Stage N opened: organic distribution and shareability
 - Added canonical ERN Story deep links using `/stories.html?story=<source-id>`.
 - Stories now support native Web Share where available and a copy-link fallback without any platform SDK, account or tracking dependency.
