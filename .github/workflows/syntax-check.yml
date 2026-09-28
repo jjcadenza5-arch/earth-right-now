@@ -22,6 +22,8 @@ on:
       - "tests/now-moment-photo-service.smoke.js"
       - "tests/now-moment-photo-client-http.smoke.js"
       - "tests/now-moment-media-worker.smoke.js"
+      - "tests/stage-l-completion.smoke.js"
+      - ".github/workflows/deploy-now-moment-media.yml"
       - "media-worker/**"
       - "data/now-moment-media-deployment.json"
       - "now-moments.html"
@@ -73,6 +75,7 @@ jobs:
           node tests/now-moment-photo-service.smoke.js
           node tests/now-moment-photo-client-http.smoke.js
           node tests/now-moment-media-worker.smoke.js
+          node tests/stage-l-completion.smoke.js
       - name: Run Generative Guide focused smoke tests
         run: |
           set -euo pipefail
