@@ -1,3 +1,9 @@
+## 2026-09-28 — Stage P locally complete; Stage Q Business Operations Control opened
+- Stage P passed JavaScript, Operations and GitHub Pages deployment on commit `1c527525647ec3665c6baa7fa9b76a652d637777` and is now LOCALLY COMPLETE / ANALYTICS ACTIVATION GATE.
+- Opened Stage Q with a single read-only business-control artifact combining affiliate activation, verified public offers, attribution configuration, distribution-channel connection state, participation deployment gates and canonical public-identity readiness.
+- The control artifact explicitly reports external gates instead of converting them into fake progress.
+- Hard interpretation boundaries prohibit revenue forecasting, booking/conversion inference, paid ranking, automatic partner claims, automatic external-account actions, automatic public activation and commercial influence on Earth ranking.
+- Daily Operations now retains and validates `business-control.json`.
 ## 2026-09-28 — Stage O locally complete; Stage P Commercial Attribution Truth opened
 - Stage O public Media & Partner Kit passed syntax, Operations and GitHub Pages deployment on commit `5b6816878632a98795c5c4f212e44d5f5a3c58f9`; Stage O is now LIVE / LOCALLY COMPLETE.
 - Opened Stage P by extending ERN's existing privacy-minimal telemetry allowlist with one bounded `travel_option_opened` event.
