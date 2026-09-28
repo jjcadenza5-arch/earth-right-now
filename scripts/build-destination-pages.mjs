@@ -34,7 +34,10 @@ for(const [id,items] of map){
   const preferred=[...(currentItems.length?currentItems:items)].sort((a,b)=>(b.quality||0)-(a.quality||0))[0];
   const title=preferred.title;
   const where=[preferred.region,preferred.country].filter(Boolean).join(", ");
-  const desc=(preferred.story||("Available Earth Right Now views for "+title)).slice(0,220);
+  const story=(preferred.story||("Available Earth Right Now views for "+title)).slice(0,220);
+  const desc=currentItems.length
+    ?story
+    :("ERN currently has provider source information for "+title+", but no in-horizon verification is available right now. Open the provider source directly or check back after ERN revalidates it.").slice(0,220);
   const url=base+"places/"+encodeURIComponent(id)+"/";
   const lat=Number(preferred.lat),lon=Number(preferred.lon);
   const lastmod=latestDate(items);
@@ -94,11 +97,11 @@ for(const [id,items] of map){
   fs.writeFileSync(dir+"/index.html",html);
 
   urls.push({loc:url,lastmod});
-  placeRows.push({id,title,country:preferred.country||"",region:preferred.region||"",story:desc,lastmod});
+  placeRows.push({id,title,country:preferred.country||"",region:preferred.region||"",story:desc,lastmod,current:currentItems.length>0});
 }
 
 placeRows.sort((a,b)=>a.country.localeCompare(b.country)||a.title.localeCompare(b.title));
-const directoryItems=placeRows.map(p=>'<li><a href="'+base+'places/'+encodeURIComponent(p.id)+'/"><strong>'+esc(p.title)+'</strong></a><span>'+esc([p.region,p.country].filter(Boolean).join(", "))+'</span><small>'+esc(p.story)+'</small></li>').join("");
+const directoryItems=placeRows.map(p=>'<li><a href="'+base+'places/'+encodeURIComponent(p.id)+'/"><strong>'+esc(p.title)+'</strong></a><span>'+esc([p.region,p.country].filter(Boolean).join(", "))+'</span><small>'+(p.current?'Current verified view available · ':'Awaiting ERN recheck · ')+esc(p.story)+'</small></li>').join("");
 const directoryData={"@context":"https://schema.org","@graph":[
   {"@type":"CollectionPage","@id":base+"places/","url":base+"places/","name":"Places on Earth Right Now","description":"Browse crawlable destination pages for places with live or current Earth Right Now views.","isPartOf":{"@id":base+"#website"},"mainEntity":{"@id":base+"places/#list"}},
   {"@type":"ItemList","@id":base+"places/#list","name":"Places on Earth Right Now","numberOfItems":placeRows.length,"itemListElement":placeRows.map((p,i)=>({"@type":"ListItem","position":i+1,"name":p.title,"url":base+"places/"+encodeURIComponent(p.id)+"/"}))},
