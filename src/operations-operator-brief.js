@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,businessControl}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -110,6 +110,16 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     for(const item of (sourceRevalidationTriage.immediate||[]).slice(0,5))lines.push(`- ${item.title||item.id} — ${item.lane}: ${item.action}`);
     lines.push("- Triage is read-only; PAGE_REACHABLE never proves live playback and network/access failures never change catalog health automatically.","");
   }
+  if(businessControl){
+    lines.push("## Business control");
+    lines.push("- Commercial: "+(businessControl.commercial?.activationState||"UNKNOWN")+"; verified public offers "+(businessControl.commercial?.verifiedPublicOffers||0)+"; affiliate offers "+(businessControl.commercial?.affiliateOffers||0)+"; sponsored offers "+(businessControl.commercial?.sponsoredOffers||0)+".");
+    lines.push("- Attribution: bounded event "+(businessControl.attribution?.boundedEventPrepared?"prepared":"missing")+"; analytics "+(businessControl.attribution?.outboundMeasurementActive?"ACTIVE":"OFF")+"; booking/revenue inference prohibited.");
+    lines.push("- Distribution: "+(businessControl.distribution?.connectedChannels?.length||0)+" external channel(s) connected; "+(businessControl.distribution?.externalConnectionRequired?.length||0)+" still require real account connection.");
+    lines.push("- Participation gates: Earth Signals "+(businessControl.participation?.earthSignals?.status||"UNKNOWN")+"; submissions "+(businessControl.participation?.submissions?.enabled?"ENABLED":"OFF")+"; Now Moment media "+(businessControl.participation?.nowMomentMedia?.status||"UNKNOWN")+".");
+    for(const gate of (businessControl.externalGates||[]).slice(0,6))lines.push("- External gate: "+gate.id+" — "+gate.state+(gate.count?" ("+gate.count+")":"")+".");
+    lines.push("- Business control is read-only: no click becomes a booking/revenue claim, and commercial state never affects Earth-window ranking.","");
+  }
+
   if(commercialInventory){
     lines.push("## Commercial staging");
     lines.push(`- Stage: ${commercialInventory.stage||"UNKNOWN"}; public activation ${commercialInventory.publicActivationAllowed?"allowed":"off"}.`);

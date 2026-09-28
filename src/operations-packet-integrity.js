@@ -20,6 +20,7 @@ const requiredJson=[
  "provider-discovery-queue.json",
  "research-review-queue.json",
  "commercial-inventory.json",
+ "business-control.json",
  "commercial-verification-horizon.json",
  "commercial-onboarding-plan.json",
  "commercial-research.json",
@@ -161,6 +162,19 @@ export async function validateOperationsPacket(dir="ern-ops"){
       if(row?.humanPlaybackConfirmed!==false)issues.push({file:"embed-research-preflight.json",code:"PREFLIGHT_PLAYBACK_BOUNDARY_VIOLATION",id:row?.id||null});
       if(row?.promotionAllowed!==false)issues.push({file:"embed-research-preflight.json",code:"PREFLIGHT_PROMOTION_BOUNDARY_VIOLATION",id:row?.id||null});
     }
+  }
+
+  const businessControl=files["business-control.json"];
+  if(businessControl){
+    const s=businessControl.safety||{};
+    if(s.revenueForecastAllowed!==false)issues.push({file:"business-control.json",code:"BUSINESS_CONTROL_REVENUE_FORECAST_VIOLATION"});
+    if(s.bookingOrConversionInferenceAllowed!==false)issues.push({file:"business-control.json",code:"BUSINESS_CONTROL_BOOKING_INFERENCE_VIOLATION"});
+    if(s.paidRankingAllowed!==false)issues.push({file:"business-control.json",code:"BUSINESS_CONTROL_PAID_RANKING_VIOLATION"});
+    if(s.automaticPartnerClaimAllowed!==false)issues.push({file:"business-control.json",code:"BUSINESS_CONTROL_PARTNER_CLAIM_VIOLATION"});
+    if(s.automaticExternalAccountActionAllowed!==false)issues.push({file:"business-control.json",code:"BUSINESS_CONTROL_EXTERNAL_ACTION_VIOLATION"});
+    if(s.automaticPublicActivationAllowed!==false)issues.push({file:"business-control.json",code:"BUSINESS_CONTROL_AUTO_ACTIVATION_VIOLATION"});
+    if(s.commercialSignalsMayAffectEarthRanking!==false)issues.push({file:"business-control.json",code:"BUSINESS_CONTROL_RANKING_SIGNAL_VIOLATION"});
+    if(businessControl?.attribution?.bookingInferenceAllowed!==false||businessControl?.attribution?.revenueInferenceAllowed!==false)issues.push({file:"business-control.json",code:"BUSINESS_CONTROL_ATTRIBUTION_INFERENCE_VIOLATION"});
   }
 
   const commercial=files["commercial-inventory.json"];
