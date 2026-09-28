@@ -1,3 +1,13 @@
+## 2026-09-28 — Context standard generalized; freshness evidence completed
+- Completed explicit freshness-evidence text for 14 older sources using only their already-recorded successful verification timestamps; no source was upgraded and each statement is bounded to that recorded check.
+- Strengthened catalog metadata completeness so `freshnessEvidence` is now required in addition to rights/check-history/attribution metadata.
+- Generalized the context integrity model to support both verified APIs and official-page manual refreshes without forcing non-API sources into an API contract.
+- Added Paris Eiffel official live visitor conditions as a PUBLIC-OFF manual-refresh context source with a 60-minute expiry policy, field allowlist, human-verification requirement and no automated scraping assumption.
+- Added `src/manual-context-record.js` and smoke tests so manual context expires automatically and cannot smuggle camera truth or LIVE labels.
+- Added context smoke checks to Pages CI.
+- Added `docs/REALTIME_CONTEXT_STANDARD.md` as the reusable ERN rule set for API and manual current-context sources.
+- Recorded current SkylineWebcams Paris/Eiffel/Pantheon candidates as OFFLINE; recheck only on material provider-state change. Paris remains a real visual gap.
+
 ## 2026-09-28 — Catalog metadata hardened; Paris context clarified
 - Filled 46 previously missing source-attribution fields conservatively from each source's existing provider identity; no provider, truth, permission or ranking changed.
 - Made the catalog metadata audit truth-aware: dynamic-orbit sources do not need a terrestrial timezone, and a degraded source may satisfy check-history evidence with a real failed check rather than a fabricated successful one.
