@@ -1,3 +1,9 @@
+## 2026-09-28 — Welcome Pickups Auckland destination offer prepared
+- Human generated and verified Welcome Pickups Auckland airport-to-city link `https://tpo.mx/VxEEARBO`.
+- Bound the offer to `auckland-viaduct-harbour` as a transport option.
+- Partner: Welcome Pickups via Travelpayouts; intent: transport; disclosure remains explicit.
+- Auckland now has distinct destination-specific activity and transfer commercial options without changing editorial ranking.
+
 ## 2026-09-28 — Tiqets Statue of Liberty destination offer prepared
 - Human generated and verified Tiqets Statue of Liberty link `https://tiqets.tpo.mx/cCt55uo7`.
 - Bound the offer to both ERN Statue of Liberty views: close view and harbor view.
