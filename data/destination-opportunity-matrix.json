@@ -343,6 +343,51 @@
       "sourcePriority": "MEDIUM",
       "why": "A current port/skyline live view now fills the first Singapore visual gap; Marina Bay-specific provider pages are currently offline and remain excluded.",
       "next": "Maintain current port view; recheck Marina Bay/downtown sources only on material provider change."
+    },
+    {
+      "destination": "Rovaniemi / Santa Claus Village",
+      "country": "Finland",
+      "visualCoverage": "STRONG_OFFICIAL_EXTERNAL",
+      "currentSources": [
+        "rovaniemi-santa-claus-village-live"
+      ],
+      "visitorDecisionValue": "VERY_HIGH",
+      "nextStepIntents": [
+        "activities",
+        "stay",
+        "eat",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "TRANSFERS",
+        "CAR_RENTAL"
+      ],
+      "sourcePriority": "LOW_MAINTAIN",
+      "why": "Official current Arctic Circle village view strongly supports seasonal/weather/atmosphere decisions before a Lapland trip.",
+      "next": "Maintain one strong live village window; add another Finland source only when it offers a distinct visitor decision."
+    },
+    {
+      "destination": "Yellowstone / Old Faithful",
+      "country": "United States",
+      "visualCoverage": "STRONG_OFFICIAL_EXTERNAL",
+      "currentSources": [
+        "yellowstone-old-faithful-live",
+        "yellowstone-national-park"
+      ],
+      "visitorDecisionValue": "VERY_HIGH",
+      "nextStepIntents": [
+        "activities",
+        "stay",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "CAR_RENTAL"
+      ],
+      "sourcePriority": "LOW_MAINTAIN",
+      "why": "NPS live stream directly shows geyser-basin conditions and happenings; ERN already has broader Yellowstone coverage.",
+      "next": "Maintain Old Faithful live plus broader park source; avoid duplicate geyser-window density."
     }
   ],
   "rules": {
