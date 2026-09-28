@@ -1,7 +1,7 @@
 const SAFE_KEYS=new Set([
   "schemaVersion","status","endpointUrl","durableStorage","serverRateLimits","pseudonymousRateSubjects",
   "rawNetworkIdentifiersStored","moderation","reportQueue","expiryCleanup","privacyUrl","privacyPublished",
-  "secretIsolation","observability","costGuard","checkedAt","evidenceNote"
+  "secretIsolation","observability","costGuard","publicActivationAllowed","checkedAt","evidenceNote"
 ]);
 
 export function validateEarthSignalDeploymentManifest(manifest={}){
