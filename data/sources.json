@@ -2308,8 +2308,8 @@
     "sourceUrl": "https://turismo.dianomarina.im.it/en/webcam",
     "officialUrl": "https://turismo.dianomarina.im.it/en/",
     "embedUrl": null,
-    "checkedAt": "2026-09-23T07:01:00+07:00",
-    "lastSuccessfulCheck": "2026-09-23T07:01:00+07:00",
+    "checkedAt": "2026-09-28T16:46:00Z",
+    "lastSuccessfulCheck": "2026-09-28T16:46:00Z",
     "failureReason": null,
     "quality": 82,
     "freshness": 92,
@@ -2322,7 +2322,7 @@
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Diano_Marina",
     "coordinateNote": "Diano Marina town reference point; not claimed as exact webcam position.",
     "attribution": "Comune di Diano Marina Tourism",
-    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T07:01:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
+    "freshnessEvidence": "Official Diano Marina municipal tourism webcam page was rechecked on 2026-09-28 and still presents Live Webcam content, live images and five hotspot webcam viewpoints."
   },
   {
     "id": "farm-tomita",
@@ -2452,8 +2452,8 @@
     "sourceUrl": "https://www.visitchioggia.it/en/",
     "officialUrl": "https://www.visitchioggia.it/en/",
     "embedUrl": null,
-    "checkedAt": "2026-09-23T07:01:00+07:00",
-    "lastSuccessfulCheck": "2026-09-23T07:01:00+07:00",
+    "checkedAt": "2026-09-28T16:46:00Z",
+    "lastSuccessfulCheck": "2026-09-28T16:46:00Z",
     "failureReason": null,
     "quality": 82,
     "freshness": 90,
@@ -2466,7 +2466,7 @@
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Sottomarina",
     "coordinateNote": "Sottomarina place reference for the Chioggia beach destination; not claimed as exact webcam position.",
     "attribution": "Visit Chioggia",
-    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T07:01:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
+    "freshnessEvidence": "Official Visit Chioggia page was rechecked on 2026-09-28 and still offers the Sottomarina live webcam specifically for real-time beach weather and conditions."
   },
   {
     "id": "chidori-sakura",
@@ -2598,8 +2598,8 @@
     "sourceUrl": "https://www.skylinewebcams.com/es/webcam/chile/magallanes-region/torres-del-paine/patagonia.html",
     "officialUrl": "https://www.skylinewebcams.com/es/webcam/chile/magallanes-region/torres-del-paine/patagonia.html",
     "embedUrl": null,
-    "checkedAt": "2026-09-23T07:10:00+07:00",
-    "lastSuccessfulCheck": "2026-09-23T07:10:00+07:00",
+    "checkedAt": "2026-09-28T16:46:00Z",
+    "lastSuccessfulCheck": "2026-09-28T16:46:00Z",
     "failureReason": null,
     "quality": 88,
     "freshness": 90,
@@ -2612,7 +2612,7 @@
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Nationalpark_Torres_del_Paine",
     "coordinateNote": "Torres del Paine National Park reference point for the Río Serrano destination; not claimed as exact webcam position.",
     "attribution": "SkylineWebcams",
-    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T07:10:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
+    "freshnessEvidence": "SkylineWebcams' Torres del Paine / Río Serrano page was rechecked on 2026-09-28 and continues to present the Patagonia view as a live webcam / real-time view."
   },
   {
     "id": "reykjavik-metoffice",
@@ -2675,8 +2675,8 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "SANParks",
-    "checkedAt": "2026-09-23T07:20:00+07:00",
-    "lastSuccessfulCheck": "2026-09-23T07:20:00+07:00",
+    "checkedAt": "2026-09-28T16:46:00Z",
+    "lastSuccessfulCheck": "2026-09-28T16:46:00Z",
     "failureReason": null,
     "quality": 90,
     "freshness": 92,
@@ -2687,7 +2687,7 @@
     "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/boulders",
     "commercialDepthResearchHold": true,
     "commercialDepthResearchHoldReason": "Private research already has a Boulders Beach gate ticket. The obvious penguin viewing/boardwalk experience is materially the same visit, so do not manufacture a second intent merely to satisfy depth.",
-    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T07:20:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
+    "freshnessEvidence": "Official SANParks Boulders webcam page was rechecked on 2026-09-28 and states that live webcam video is cached locally for stability, with an expected delay of about ten minutes."
   },
   {
     "id": "sanparks-addo-video",
@@ -2712,8 +2712,8 @@
     "officialUrl": "https://www.sanparks.org/travel/webcams/video/addo",
     "embedUrl": null,
     "attribution": "SANParks",
-    "checkedAt": "2026-09-23T08:15:00+07:00",
-    "lastSuccessfulCheck": "2026-09-23T08:15:00+07:00",
+    "checkedAt": "2026-09-28T16:46:00Z",
+    "lastSuccessfulCheck": "2026-09-28T16:46:00Z",
     "failureReason": null,
     "quality": 91,
     "freshness": 92,
@@ -2722,7 +2722,7 @@
     "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding permission.",
     "coordinateBasis": "REGION_REFERENCE",
     "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/addo",
-    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T08:15:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
+    "freshnessEvidence": "Official SANParks Addo webcam page was rechecked on 2026-09-28 and states that live webcam video is cached locally for stability, with an expected delay of about ten minutes."
   },
   {
     "id": "sanparks-orpen-video",
@@ -2747,8 +2747,8 @@
     "officialUrl": "https://www.sanparks.org/travel/webcams/video/orpen",
     "embedUrl": null,
     "attribution": "SANParks",
-    "checkedAt": "2026-09-23T08:15:00+07:00",
-    "lastSuccessfulCheck": "2026-09-23T08:15:00+07:00",
+    "checkedAt": "2026-09-28T16:46:00Z",
+    "lastSuccessfulCheck": "2026-09-28T16:46:00Z",
     "failureReason": null,
     "quality": 90,
     "freshness": 92,
@@ -2757,7 +2757,7 @@
     "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding permission.",
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams/video/orpen",
-    "freshnessEvidence": "ERN registry records a successful external current/live source verification at 2026-09-23T08:15:00+07:00. This evidence supports that recorded check only; later currentness remains subject to the normal revalidation horizon."
+    "freshnessEvidence": "Official SANParks Orpen webcam page was rechecked on 2026-09-28 and states that live webcam video is cached locally for stability, with an expected delay of about ten minutes."
   },
   {
     "id": "cape-town-earthtv",
