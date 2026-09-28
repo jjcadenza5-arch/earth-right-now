@@ -1,3 +1,8 @@
+## 2026-09-28 — Promote three Kyoto visitor-condition cameras
+- Deployed human review confirmed Fushimi Inari, Kifune Shrine and Kiyomizu-zaka are playing/current.
+- Added the three exact sources to the catalog as embedded live video.
+- Preserved target-specific approval; no family-wide Kyoto camera permission is inferred.
+
 ## 2026-09-28 — Stage Kyoto visitor-condition cameras for review
 - Added Kiyomizu-zaka, Fushimi Inari and Kifune Shrine as research-only YouTube candidates.
 - Added a Kyoto tourism provider-family record without inferring blanket embed permission.
