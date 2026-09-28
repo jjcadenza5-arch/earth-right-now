@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T16:10:00Z",
+  "generatedAt": "2026-09-28T17:40:00Z",
   "publicActivationAllowed": false,
   "principle": "Real-time context may explain what a place is like now, but must remain separate from visual source truth and may never manufacture a LIVE label.",
   "sources": [
@@ -112,7 +112,80 @@
         "staleBehavior": "HIDE_CURRENT_CONTEXT_AND_KEEP_CAMERA_SOURCE_VISIBLE",
         "serverTimestampRequired": true,
         "clientClockMustNotCreateFreshness": true
+      },
+      "acquisition": {
+        "kind": "API",
+        "automaticScrapingAllowed": false
       }
+    },
+    {
+      "id": "paris-eiffel-live-visitor-context",
+      "city": "Paris",
+      "country": "France",
+      "provider": "Société d'Exploitation de la Tour Eiffel",
+      "tourismSurface": "Official Eiffel Tower website",
+      "officialTourismUrl": "https://www.toureiffel.paris/en/rates-opening-times",
+      "state": "OFFICIAL_PAGE_VERIFIED_MANUAL_REFRESH_NOT_PUBLIC",
+      "freshness": "LIVE_PAGE_MANUAL_VERIFICATION",
+      "dataTypes": [
+        "attendance_level",
+        "opening_status",
+        "summit_temperature",
+        "summit_wind",
+        "paris_weather"
+      ],
+      "rights": {
+        "owner": "Société d'Exploitation de la Tour Eiffel",
+        "license": "Official visitor-information page; no dataset reuse license inferred",
+        "commercialUseAllowed": false,
+        "modificationAllowed": false,
+        "attributionRequired": true,
+        "thirdPartyCopyrightHolder": "UNKNOWN_NOT_ASSUMED"
+      },
+      "ERNUse": {
+        "visualTruthSource": false,
+        "maySupplementGuideLater": true,
+        "maySupplementPlacePagesLater": true,
+        "mayAffectWatchEarthRanking": false,
+        "mayCreateLiveLabel": false,
+        "mayOverrideCameraEvidence": false,
+        "cctvLinksNeedIndependentSourceReview": false
+      },
+      "acquisition": {
+        "kind": "OFFICIAL_PAGE_MANUAL_REFRESH",
+        "officialUrl": "https://www.toureiffel.paris/en/rates-opening-times",
+        "secondaryOfficialUrl": "https://www.toureiffel.paris/en/planning-smooth-visit",
+        "automaticScrapingAllowed": false,
+        "refreshMethod": "HUMAN_VERIFIED_FACT_REFRESH_ONLY"
+      },
+      "activationGates": [
+        "ATTRIBUTION_COPY_IMPLEMENTED",
+        "MANUAL_REFRESH_WORKFLOW_DEFINED",
+        "STALE_CONTEXT_BEHAVIOR_DEFINED",
+        "GUIDE_WORDING_FAILS_CLOSED_WHEN_STALE",
+        "NO_AUTOMATED_SCRAPING_WITHOUT_SEPARATE_REVIEW",
+        "PRIVACY_REVIEW_COMPLETE"
+      ],
+      "verifiedSchema": {
+        "fields": [
+          "attendance_level",
+          "opening_status",
+          "summit_temperature",
+          "summit_wind",
+          "paris_temperature_weather"
+        ],
+        "note": "Only facts visibly present on the official Eiffel Tower page at verification time may be recorded. ERN must not derive a camera/live-visual claim from these fields."
+      },
+      "freshnessPolicy": {
+        "sourceCadence": "OFFICIAL_PAGE_LIVE_VISITOR_INFO",
+        "historicalArchiveExpected": false,
+        "staleBehavior": "HIDE_CURRENT_CONTEXT_AND_KEEP_CAMERA_SOURCE_VISIBLE",
+        "serverTimestampRequired": false,
+        "clientClockMustNotCreateFreshness": true,
+        "manualVerificationRequired": true,
+        "maxPublicAgeMinutes": 60
+      },
+      "next": "Keep public-OFF. Define a bounded human refresh record format before any Guide/place-page use; do not automate scraping or infer reuse rights."
     }
   ],
   "invariants": {
