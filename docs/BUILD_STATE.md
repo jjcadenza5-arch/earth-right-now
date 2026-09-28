@@ -1,3 +1,11 @@
+## 2026-09-28 — Stage M opened: ERN Stories becomes a real discovery surface
+- Added a dedicated ERN Stories engine and public page implementing the approved principle: “Do not push the answer. Create the question.”
+- Stories are derived only from ERN's existing current/discoverable truth pool, exclude featured holds, and deduplicate both place and media identity.
+- Story hooks are deterministic questions based on safe place/category/local-light context; they never assert weather, crowds, wildlife sightings, events or urgency.
+- Every card preserves truthful playback semantics: in-ERN current windows open the ERN viewer; external sources remain external rather than masquerading as embedded content.
+- Added a lightweight homepage doorway, crawlable Stories page, sitemap entry, release-build inclusion, responsive styling and a truth-gate smoke test.
+- This is a strengthening layer only. Watch Earth, Guide, Search, Atlas, source truth and playback architecture remain authoritative.
+
 ## 2026-09-28 — Stage L local completion batch: privacy, moderation queue and deploy path
 - Published dedicated privacy wording for temporary Now Moment still photos: client/server metadata sanitation, canonical place binding, no captions/free text, no precise public coordinates, moderation before display, immediate hide-on-report, 45-minute deletion, rate/storage bounds and explicit public-off deployment gating.
 - Added a token-protected moderator queue for PENDING/REVIEW/reported photos plus a private no-store moderator media preview route. Pending media remains inaccessible through the public media route.
