@@ -1,3 +1,9 @@
+## 2026-09-28 — Verify Seoul real-time API contract and harden context gates
+- Resolved the official English Seoul real-time city API service, auth requirement and documented population/congestion schema.
+- Added a non-public adapter contract and explicit stale-data/source-timestamp rules.
+- Added release-CI checks for real-time context and visitor-source-expansion guardrails.
+- Public Seoul context remains OFF pending a provider API key and real response validation.
+
 ## 2026-09-28 — Add ERN origin story
 - Added the strawberry-picking origin of “See before you go” to the About page.
 - Kept homepage/product flow unchanged.
