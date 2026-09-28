@@ -1,3 +1,8 @@
+## 2026-09-28 — New-chat continuity handoff added
+- Added `docs/ERN_SHARED_HANDOFF_2026-09-28.md` so a fresh ChatGPT conversation can resume from the exact ERN product, source, commercial and external-gate state without reconstructing prior chats.
+- AGENTS now points resuming work to the handoff after the normal continuity/principles/truth/build-state files.
+- No product behavior or public source truth changed.
+
 ## 2026-09-28 — Research review queue made schedule-aware
 - Added machine-readable provider live windows to scheduled research candidates, beginning with Nishiki Market (11:00–18:00 JST).
 - Research candidates outside their published live hours are no longer shown as human playback work; they enter WAIT_FOR_REVIEW_WINDOW instead.
