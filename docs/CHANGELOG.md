@@ -1,3 +1,9 @@
+## 2026-09-28 — Preserve fullscreen across Watch Earth livestream changes
+- Added a viewer-stage continuity helper that preserves the active fullscreen iframe across EMBED→EMBED Watch Earth changes by retargeting the same element.
+- Kept external/image transitions fail-honest; they may exit fullscreen normally.
+- Recorded human acceptance of desktop fullscreen entry/exit and the remaining non-blocking phone-landscape issue.
+- Final deployment is green on `b5fd73a61e127ee8e171f5640c44ed2249b8050a`.
+
 ## 2026-09-28 — Watch Earth play-here priority and fullscreen maintenance
 - Preserved up to five verified inside-ERN windows within the first eight Watch Earth journey positions after downstream balancing.
 - Kept external-only sources truthful and available; no source truth, permission, health or curation state changed.
