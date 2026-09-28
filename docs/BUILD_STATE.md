@@ -1,3 +1,11 @@
+## 2026-09-28 — Visitor-source expansion + Seoul adapter foundation
+- Added three high-value See Before You Go research lanes without public promotion: Visit Finland live webcams, Yellowstone Old Faithful, and Yosemite current webcams.
+- Resolved exact safe research targets for Santa Claus Village (official live-video page) and Yellowstone Old Faithful (active NPS webcam page); both remain link-first/research-only until deployed visitor review.
+- Recorded Yosemite as permission-gated because the official NPS page explicitly directs third parties to a Yosemite Conservancy webcam usage agreement before featuring webcam imagery.
+- Added a pure fail-closed Seoul context normalizer/freshness module and smoke coverage. It rejects unmapped areas, missing timestamps and stale data and cannot create camera truth or LIVE labels.
+- Corrected a stale smoke expectation so the exhausted research queue test matches the current safer `CHECK_PROVIDER_DISCOVERY_STATE` behavior.
+- Local full-repository smoke execution could not be performed from the operator runtime because direct GitHub network access is unavailable there; connector writes and source review completed, and normal repository CI remains the deployment gate.
+
 ## 2026-09-28 — Rome Spanish Steps live window added
 - Added one selective EXTERNAL_LIVE / LINK_ONLY current view of the Spanish Steps.
 - The source gives visitors direct crowd/atmosphere context in a major cultural destination without forcing embed rights.
