@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T16:55:00Z",
+  "generatedAt": "2026-09-28T17:05:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -200,7 +200,9 @@
       ],
       "state": "HOLD_FEEDS_NOT_READY",
       "why": "Official local real-time CCTV page is highly relevant geographically, but current page reports feeds as standby/waiting; no public source promotion justified yet.",
-      "next": "Recheck only on material feed-state change."
+      "next": "Recheck only on a material feed-state change. Current official page still reports STANDBY / WAITING FOR FEED; do not promote or simulate a current visual source.",
+      "lastRecheckedAt": "2026-09-28T17:05:00Z",
+      "currentObservedState": "OFFICIAL_PAGE_STILL_REPORTS_STANDBY_WAITING_FOR_FEED"
     },
     {
       "id": "thai-seasonal-agritourism-gap",
