@@ -40,8 +40,11 @@ ERN now has canonical Story deep links, native Web Share, copy-link fallback and
 ## Stage O — public media & partner kit — LIVE / LOCALLY COMPLETE
 ERN now has a public, crawlable Media & Partner Kit plus machine-readable brand facts built only from verified ERN product facts and public assets. The kit does not invent contact details, social handles, partnerships, user numbers, revenue, press coverage or endorsements. Partnership language preserves ERN's rights review, disclosure and no-paid-ranking boundaries. Future changes are maintenance/brand refinement rather than a blocker.
 
-## Stage P — commercial attribution truth — ACTIVE
-Prepare privacy-minimal measurement for verified travel-option opens without converting clicks into booking/revenue claims or behavioral profiles. Only bounded offer/place/intent/scope/affiliate/sponsored fields may enter the event. Analytics remains default-OFF until intentionally configured. Commercial events may never influence source truth, playback eligibility, Watch Earth ordering, ERN Guide selection, Stories ranking or editorial curation.
+## Stage P — commercial attribution truth — LOCALLY COMPLETE / ANALYTICS ACTIVATION GATE
+The bounded `travel_option_opened` event is now deployed through ERN's existing privacy-minimal telemetry gate and revalidates clicked offers against the current verified registry. Analytics remains default-OFF, so no new ERN event is transmitted until a provider is intentionally configured. Clicks are never treated as bookings, purchases, conversion, commission or revenue and may never influence source truth, playback eligibility, Watch Earth ordering, ERN Guide selection, Stories ranking or editorial curation.
+
+## Stage Q — business operations control — ACTIVE
+Create one internal read-only control artifact for commercial activation, verified offer inventory, attribution readiness, distribution connections, participation gates and public identity readiness. It must distinguish local readiness from external-provider/account gates and prohibit revenue forecasting, booking/conversion inference, invented partner claims, automatic external-account actions, automatic public activation and any commercial effect on Earth-window ranking.
 
 ## Stage I — public deployment and release certification — PUBLIC / GATE READY
 earthrightnow.app is publicly deployed and the current release-readiness gate is green with fresh browser, mobile, provider-playback, accessibility, performance and rollback evidence. Future releases remain fail-closed: keep evidence fresh and do not treat static/CI success alone as permission or playback proof.
