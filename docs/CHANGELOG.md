@@ -1,3 +1,10 @@
+## 2026-09-28 — Generalize current-context truth and complete freshness evidence
+- Added missing bounded freshness evidence for 14 existing catalog records and made it a metadata requirement.
+- Added API/manual-official-page acquisition modes to context integrity checks.
+- Added expiring manual context records and CI smoke coverage.
+- Added reusable `REALTIME_CONTEXT_STANDARD.md`.
+- Recorded currently offline Paris SkylineWebcams candidates as exclusions rather than promoting or repeatedly re-researching them.
+
 ## 2026-09-28 — Harden catalog metadata and add Paris live context
 - Backfilled missing attribution from already-recorded provider identity for 46 sources.
 - Updated metadata completeness rules for dynamic-orbit and degraded/failure-only sources.
