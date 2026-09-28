@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T16:45:00Z",
+  "generatedAt": "2026-09-28T16:55:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -250,9 +250,19 @@
         "Turku port and archipelago",
         "Kilpisjärvi / Saana Fell"
       ],
-      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "state": "PARTIALLY_RESOLVED_EXACT_TARGETS_RESEARCH_ONLY",
       "why": "Visit Finland explicitly curates real-time webcam views so visitors can see what destinations look like right now. This is closely aligned with ERN, but each underlying provider/player and permission path must be reviewed separately.",
-      "next": "Resolve one or two strongest exact targets, provider ownership, durable player/page URL, live truth, permission mode and deployed playback before any catalog promotion."
+      "next": "Start with the Santa Claus Village official live-video page as a link-only/deployed-review target. Resolve Helsinki Market Square and other Visit Finland provider targets separately; do not infer one provider's permissions across the whole Visit Finland guide.",
+      "resolvedTargets": [
+        {
+          "name": "Santa Claus Village — Arctic Circle",
+          "officialPage": "https://santaclausvillage.info/",
+          "provider": "Santa Claus Village / City of Rovaniemi",
+          "truthCandidate": "EXTERNAL_LIVE",
+          "permissionState": "LINK_ONLY_SAFE_PATH_AVAILABLE_EMBED_NOT_INFERRED",
+          "currentnessState": "OFFICIAL_SITE_EXPOSES_LIVE_VIDEO_WEBCAM"
+        }
+      ]
     },
     {
       "id": "yellowstone-old-faithful-official-live",
@@ -275,9 +285,19 @@
       "observedTargets": [
         "Old Faithful and Upper Geyser Basin livestream"
       ],
-      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "state": "EXACT_TARGET_RESOLVED_RESEARCH_ONLY",
       "why": "NPS identifies the Old Faithful camera as an active livestream and explicitly positions Yellowstone webcams as a way to see what is happening in the park right now.",
-      "next": "Resolve the exact player integration/link path and rights attribution for this live target. Do not infer public-domain reuse because the live view credits external funding/partners; link-only is acceptable if embed rights are not explicit."
+      "next": "Use the exact active NPS webcam page as a deployed external-link review target. Keep any in-page embed blocked until the live player's own usage/rights path is explicit.",
+      "resolvedTargets": [
+        {
+          "name": "Old Faithful and Upper Geyser Basin",
+          "officialPage": "https://www.nps.gov/media/webcam/view.htm?id=AF555E5C-BE40-FE91-52E98E0EDD833B68",
+          "provider": "U.S. National Park Service / Yellowstone National Park",
+          "truthCandidate": "EXTERNAL_LIVE",
+          "providerStatus": "ACTIVE",
+          "permissionState": "LINK_ONLY_SAFE_PATH_AVAILABLE_EMBED_NOT_INFERRED"
+        }
+      ]
     },
     {
       "id": "yosemite-official-current-webcams",
