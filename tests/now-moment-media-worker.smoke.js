@@ -1,0 +1,20 @@
+import fs from "node:fs";
+const cfg=fs.readFileSync("media-worker/wrangler.jsonc","utf8");
+const worker=fs.readFileSync("media-worker/src/index.js","utf8");
+const state=fs.readFileSync("media-worker/src/media-state.js","utf8");
+const wm=await import("../media-worker/src/index.js");
+const sm=await import("../media-worker/src/media-state.js");
+
+console.assert(typeof wm.default?.fetch==="function"&&typeof wm.default?.scheduled==="function","Media Worker must expose fetch + scheduled cleanup");
+console.assert(typeof sm.MediaState==="function","MediaState export missing");
+console.assert(cfg.includes('"ERN_NOW_MOMENT_PHOTO_ENABLED": "false"'),"Photo Worker must deploy OFF by default");
+console.assert(cfg.includes('"binding": "NOW_MOMENT_MEDIA"')&&cfg.includes('"bucket_name": "ern-now-moment-media"'),"Private R2 binding missing");
+console.assert(cfg.includes('"*/15 * * * *"'),"TTL cleanup cron missing");
+console.assert(worker.includes("directBucketPublicAccess:false"),"Worker must state bucket is not public");
+console.assert(worker.includes("automaticPublicationAllowed:false"),"Worker must prohibit automatic publication");
+console.assert(worker.includes("ERN_MEDIA_REVIEW_TOKEN")&&worker.includes("ERN_MEDIA_RATE_HMAC_KEY"),"Media runtime secrets missing");
+console.assert(worker.includes("PENDING_REVIEW")&&worker.includes("published:false"),"Upload must remain moderation-first");
+console.assert(worker.includes("x-content-type-options")&&worker.includes("objectStore.get"),"Approved media proxy boundary missing");
+console.assert(state.includes("MAX_RETAINED_MEDIA=500")&&state.includes("MEDIA_STORAGE_CAPACITY"),"Media storage capacity bound missing");
+console.assert(state.includes("MAX_PHOTOS_PER_DAY=3")&&state.includes("MAX_PHOTOS_PER_PLACE_DAY=2"),"Photo rate bounds missing");
+console.log("Phase L media Worker remains private, moderated, temporary and fail-closed");
