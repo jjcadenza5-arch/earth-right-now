@@ -1,3 +1,7 @@
+## 2026-09-28 — Trim Guide planning copy from app-lite
+- Moved long planning strings into the existing split i18n bundle instead of raising the 100 KB app budget.
+- Functionality and translations are unchanged.
+
 ## 2026-09-28 — Repair blocked Guide trip-intent build
 - Syntax CI caught malformed multilingual Guide copy before deployment.
 - Restored the valid public-copy file and moved trip-planning translations into the existing app i18n layer.
