@@ -1,3 +1,8 @@
+## 2026-09-28 — Add two official London external live windows
+- Added IET Savoy Place skyline and Abbey Road Crossing as truthful external live sources.
+- Preserved provider-specific limits and avoided embedding/restream inference.
+- Excluded Visit London cameras currently marked unavailable.
+
 ## 2026-09-28 — Promote three Kyoto visitor-condition cameras
 - Deployed human review confirmed Fushimi Inari, Kifune Shrine and Kiyomizu-zaka are playing/current.
 - Added the three exact sources to the catalog as embedded live video.
