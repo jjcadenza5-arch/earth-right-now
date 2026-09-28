@@ -1,3 +1,9 @@
+## 2026-09-28 — Three Kyoto visitor-condition cameras approved and promoted
+- Human deployed review batch `242d81d7b87d98a3` confirmed current playback for Fushimi Inari, Kifune Shrine and Kiyomizu-zaka.
+- Promoted only those exact three Kyoto Tourism Association YouTube targets to the catalog as LIVE_VIDEO / EMBED_ALLOWED / HEALTHY.
+- Preserved source-specific permission: no blanket approval for the rest of Kyoto's camera network.
+- These sources strongly embody ERN's original See Before You Go purpose by showing real visitor conditions before a trip.
+
 ## 2026-09-28 — Kyoto official live-camera review batch staged
 - Resolved three exact Kyoto visitor-condition YouTube targets for research-only deployed review: Kiyomizu-zaka, Fushimi Inari and Kifune Shrine.
 - All remain blocked from catalog promotion. Each requires exact deployed human playback and target-specific permission review.
