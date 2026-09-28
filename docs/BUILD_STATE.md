@@ -1,3 +1,10 @@
+## 2026-09-28 — Complete Travelpayouts program map captured
+- Operator supplied the full 26-program Available inventory.
+- ERN now treats commercial usefulness as a camera-research prioritization signal, never as an editorial override.
+- Strongest new program areas for future review: KKday, Go City, WeGoTrip, Radical Storage, additional transfer coverage.
+- Future camera/source research should favor high-quality live/current views in major tourist cities, iconic attractions, arrival cities, walkable historic centers, and selected road-trip/island destinations.
+- Flights, eSIM, travel recovery and protection are useful business layers but do not drive camera geography.
+
 ## 2026-09-28 — Klook Honolulu/Waikiki destination offer prepared
 - Human generated and verified Klook Honolulu link `https://klook.tpo.mx/D2fGjnFI`.
 - Bound the offer to `waikiki-beach` as an activities option.
