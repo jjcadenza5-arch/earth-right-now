@@ -159,9 +159,15 @@
       "evidenceUrls": [
         "https://www.city.tonami.lg.jp/livecam/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%AA%E3%83%83%E3%83%97%E5%85%AC%E5%9C%92%E5%8D%97%E9%96%80/"
       ],
-      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "state": "RESOLVED_ONE_OFFICIAL_EXTERNAL_LIVE_WINDOW",
       "why": "Municipal live camera at a seasonal flower destination strongly matches condition-before-trip use.",
-      "next": "Verify current refresh behavior, off-season usefulness and link/embed permission."
+      "next": "Maintain the official Panorama Terrace external live source; review other Tonami cameras only if a distinct visitor use justifies them.",
+      "resolvedTarget": {
+        "name": "Tonami Tulip Park — Panorama Terrace",
+        "catalogId": "tonami-tulip-park-panorama",
+        "mode": "EXTERNAL_LIVE",
+        "officialUrl": "https://www.city.tonami.lg.jp/livecam/cam01/"
+      }
     },
     {
       "id": "chiang-mai-pao-cctv",
