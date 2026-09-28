@@ -16,6 +16,8 @@ on:
       - "data/embed-research-candidates.json"
       - "assets/**"
       - "about.html"
+      - "press.html"
+      - "data/public-brand-facts.json"
       - "privacy.html"
       - "now-moments.html"
       - "for-places.html"
