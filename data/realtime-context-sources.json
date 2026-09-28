@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T15:08:00Z",
+  "generatedAt": "2026-09-28T16:10:00Z",
   "publicActivationAllowed": false,
   "principle": "Real-time context may explain what a place is like now, but must remain separate from visual source truth and may never manufacture a LIVE label.",
   "sources": [
@@ -12,7 +12,7 @@
       "tourismSurface": "Seoul Tourism Organization / Visit Seoul",
       "officialTourismUrl": "https://english.visitseoul.net/realtime-seoul",
       "openDataUrl": "https://data.seoul.go.kr/dataList/OA-22270/A/1/datasetView.do",
-      "state": "RESEARCH_READY_NOT_PUBLIC",
+      "state": "API_CONTRACT_VERIFIED_KEY_REQUIRED_NOT_PUBLIC",
       "freshness": "REAL_TIME",
       "dataTypes": [
         "crowd_density",
@@ -63,7 +63,56 @@
         "GUIDE_WORDING_FAILS_CLOSED_WHEN_STALE",
         "PRIVACY_REVIEW_COMPLETE"
       ],
-      "next": "Resolve English API endpoint/schema and build a server-side read-only adapter with explicit timestamps and stale-data fallback. Keep CCTV as a separate source-review lane."
+      "next": "Obtain a Seoul Open Data API key through a human/provider action, then implement a server-side read-only adapter against citydata_eng. Validate actual JSON response timestamps/fields for approved ERN place mappings before any public activation.",
+      "api": {
+        "datasetId": "OA-22714",
+        "service": "citydata_eng",
+        "baseUrl": "http://openapi.seoul.go.kr:8088/{KEY}/{TYPE}/citydata_eng/1/5/{AREA_NM_OR_CODE}",
+        "formats": [
+          "json",
+          "xml",
+          "xmlf",
+          "xls"
+        ],
+        "auth": "SEOUL_OPEN_API_KEY_REQUIRED",
+        "sampleScope": "Gwanghwamun / Deoksugung only with sample key",
+        "oneAreaPerRequest": true,
+        "areaLookup": "place name or official place code",
+        "officialDatasetUrl": "https://data.seoul.go.kr/dataList/OA-22714/F/1/datasetView.do",
+        "verifiedAt": "2026-09-28"
+      },
+      "verifiedSchema": {
+        "common": [
+          "list_total_count",
+          "RESULT.CODE",
+          "RESULT.MESSAGE",
+          "AREA_NM",
+          "AREA_CD"
+        ],
+        "population": [
+          "LIVE_PPLTN_STTS",
+          "AREA_CONGEST_LVL",
+          "AREA_CONGEST_MSG",
+          "AREA_PPLTN_MIN",
+          "AREA_PPLTN_MAX"
+        ],
+        "broaderDatasetIncludes": [
+          "traffic",
+          "parking",
+          "subway",
+          "public_bike",
+          "weather",
+          "events"
+        ],
+        "note": "Only fields actually returned and timestamped by the live API may be surfaced; ERN must not imply every broader field is present for every area/request."
+      },
+      "freshnessPolicy": {
+        "sourceCadence": "REAL_TIME_MINUTE_SCALE",
+        "historicalArchiveExpected": false,
+        "staleBehavior": "HIDE_CURRENT_CONTEXT_AND_KEEP_CAMERA_SOURCE_VISIBLE",
+        "serverTimestampRequired": true,
+        "clientClockMustNotCreateFreshness": true
+      }
     }
   ],
   "invariants": {
