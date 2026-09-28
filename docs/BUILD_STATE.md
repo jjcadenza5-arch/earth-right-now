@@ -1,3 +1,12 @@
+## 2026-09-28 — ERN reaches STABLE_BETA_READY planning state
+- Refreshed all six formal release-evidence categories from September 28 real-world/browser/operator/release checks while explicitly preserving known fullscreen limitations.
+- Current beta-readiness inputs are 80 sources, 26 countries, 37 providers, 26 inside-ERN windows and 54 external windows.
+- All six evidence categories are fresh and explicitly passed: browser, mobile, providerPlayback, accessibility, performance and rollback.
+- Under the checked-in beta-readiness model, all catalog/evidence ratios are at their caps, producing a 100% planning indicator.
+- Existing deployed runtime release safeguards were already green, so ERN now satisfies the repository's internal STABLE_BETA_READY definition. This does not activate affiliates, analytics, submissions, uploads or social accounts.
+- Human owner successfully submitted `sitemap.xml` for earthrightnow.app in Google Search Console on 2026-09-28. Google indexing/canonical reconciliation remains external and pending; do not infer indexing from submission.
+- URL Inspection still surfaced the prior GitHub Pages address during the domain transition. No further repository work is justified unless Google reports a concrete crawl/canonical problem.
+
 ## 2026-09-28 — Fullscreen transition persistence deferred by human decision
 - Human desktop review confirmed that changing to another livestream while fullscreen still exits native fullscreen across Watch Earth Journey and ordinary Next navigation.
 - The issue is now explicitly DEFERRED / NON-BLOCKING. Normal enter/exit fullscreen works on desktop; phone portrait remains usable; phone landscape sizing remains imperfect but non-urgent.
