@@ -59,9 +59,28 @@
         "Savoy Place skyline",
         "Abbey Road crossing"
       ],
-      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "state": "PARTIALLY_RESOLVED_TWO_ACTIVE_EXTERNAL_WINDOWS",
       "why": "Official tourism guide identifies live/current views of iconic visitor-interest places; several other listed cameras are currently unavailable and must remain excluded until reverified.",
-      "next": "Resolve exact active camera URLs and distinguish true live footage from daily shots/time-lapse."
+      "next": "Maintain the two active external live sources and recheck currently unavailable London cameras only after a material provider change.",
+      "resolvedTargets": [
+        {
+          "name": "Savoy Place skyline",
+          "catalogId": "london-savoy-place-live",
+          "mode": "EXTERNAL_LIVE"
+        },
+        {
+          "name": "Abbey Road crossing",
+          "catalogId": "london-abbey-road-crossing-live",
+          "mode": "EXTERNAL_LIVE"
+        }
+      ],
+      "excludedUnavailable": [
+        "View from the Shard",
+        "Novotel Canary Wharf",
+        "Westminster Bridge",
+        "River Thames / Marriott County Hall",
+        "London Eye"
+      ]
     },
     {
       "id": "seoul-live-tourism-cctv",

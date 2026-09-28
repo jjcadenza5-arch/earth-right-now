@@ -1,3 +1,9 @@
+## 2026-09-28 — Two official London live windows added
+- Added Savoy Place skyline as EXTERNAL_LIVE / LINK_ONLY from the IET's official webcam page. The provider explicitly states the feed is live, not recorded, and limited to ten-minute viewer sessions, so ERN does not attempt to embed or bypass that behavior.
+- Added Abbey Road Crossing as EXTERNAL_LIVE / LINK_ONLY from Abbey Road Studios' official LIVE crossing page.
+- Visit London currently marks several other London cameras unavailable; those remain excluded rather than being padded into ERN.
+- Both additions satisfy See Before You Go: current place context first, provider-respecting playback second.
+
 ## 2026-09-28 — Three Kyoto visitor-condition cameras approved and promoted
 - Human deployed review batch `242d81d7b87d98a3` confirmed current playback for Fushimi Inari, Kifune Shrine and Kiyomizu-zaka.
 - Promoted only those exact three Kyoto Tourism Association YouTube targets to the catalog as LIVE_VIDEO / EMBED_ALLOWED / HEALTHY.
