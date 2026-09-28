@@ -1,3 +1,9 @@
+## 2026-09-28 — First destination-specific Travelpayouts offer prepared
+- Human generated and verified Klook Auckland link `https://klook.tpo.mx/kZmdWsAo`.
+- Bound the offer to `auckland-viaduct-harbour` in ERN's existing Before You Go commercial layer.
+- Partner: Klook via Travelpayouts; intent: tickets/activities; disclosure remains explicit.
+- This is ERN's first destination-specific Travelpayouts placement. No generic homepage link is exposed.
+
 ## 2026-09-28 — First Travelpayouts manual-link wave completed
 - Human generated and verified the Welcome Pickups Travelpayouts link `https://tpo.mx/FmFTgwST`.
 - Welcome Pickups is now the third verified manual affiliate partner after Klook and Tiqets.
