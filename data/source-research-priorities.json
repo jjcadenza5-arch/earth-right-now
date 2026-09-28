@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-28T14:45:00Z",
+  "mission": "See before you go",
+  "productTest": "Would this current view help someone understand the place better before deciding whether, when, or how to go?",
+  "hardGates": [
+    "TRUTH_KNOWN_AND_HONEST",
+    "PERMISSION_DOCUMENTED_OR_FAIL_CLOSED",
+    "ATTRIBUTION_RETAINED",
+    "CURRENTNESS_EXPLAINABLE",
+    "HEALTH_SEPARATE_FROM_TRUTH",
+    "NO_ARCHIVAL_AS_CURRENT"
+  ],
+  "scoringWeights": {
+    "currentUsefulness": 0.25,
+    "visualQuality": 0.2,
+    "visitorInterest": 0.2,
+    "placeUnderstanding": 0.15,
+    "geographicEditorialBalance": 0.1,
+    "providerReliability": 0.05,
+    "practicalCommercialFit": 0.05
+  },
+  "invariants": {
+    "practicalCommercialFitMaxWeight": 0.05,
+    "commercialMayInfluenceResearchPriority": true,
+    "commercialMayOverrideTruth": false,
+    "commercialMayOverrideQuality": false,
+    "commercialMayAffectWatchEarthRanking": false,
+    "commercialMayAffectGuideTruth": false,
+    "commercialMayAffectStoriesRanking": false,
+    "placeCategoriesAreIllustrativeNotRestrictive": true
+  },
+  "placeUniverse": [
+    "cities-streets-neighborhoods",
+    "beaches-islands-waterfronts",
+    "mountains-ski-scenic-viewpoints",
+    "farms-orchards-seasonal-destinations",
+    "parks-gardens-nature",
+    "zoos-aquariums-animal-viewing",
+    "museums-landmarks-cultural-attractions",
+    "markets-food-shopping-districts",
+    "resorts-hotels-destination-properties",
+    "transport-hubs-gateway-cities",
+    "festivals-public-spaces-other-visitor-interest-places"
+  ],
+  "businessAlignment": {
+    "principle": "ERN quality and visitor-program fit should reinforce one another without narrowing the world ERN can show.",
+    "usefulIntents": [
+      "activities",
+      "culture",
+      "eat",
+      "stay",
+      "transport",
+      "services"
+    ],
+    "noPaidEditorialRanking": true
+  }
+}

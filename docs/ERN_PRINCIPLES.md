@@ -14,3 +14,7 @@
 12. External-only sources open at the provider when embedding is not permitted/reliable.
 13. Favorites begin local-first; avoid unnecessary backend complexity.
 14. ERN remains alive and adaptable after publication.
+
+
+## See Before You Go Standard
+ERN source selection follows `docs/SEE_BEFORE_YOU_GO_STANDARD.md`. Any visitor-interest place can qualify when truthful current visual quality is strong enough. Commercial/program fit may help prioritize research but never overrides truth, quality or editorial judgment.
