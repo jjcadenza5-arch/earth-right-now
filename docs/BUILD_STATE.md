@@ -1,3 +1,10 @@
+## 2026-09-28 — Travelpayouts Drive automation removed
+- Advanced Drive settings were reviewed after Project verification and were found to be at Maximum monetization.
+- The enabled feature set could rewrite existing links, link keywords, insert recommendations, show smart previews and targeted offers automatically.
+- ERN therefore removed the Drive script from the homepage after ownership verification.
+- The Travelpayouts Project/account remains active. Future Travelpayouts monetization will use explicit program links/widgets placed intentionally by ERN after eligibility/terms review.
+- This preserves ERN editorial ranking, source truth, Guide behavior and visitor-control boundaries.
+
 ## 2026-09-28 — Travelpayouts ERN Project confirmed
 - Travelpayouts verified ownership of earthrightnow.app and activated the ERN Project.
 - Dashboard shows Project matching/review in progress with 26 programs currently available and 20 more shown as unlockable.
