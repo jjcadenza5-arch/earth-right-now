@@ -10,6 +10,8 @@ on:
       - "src/guide-public-copy.js"
       - "src/styles-lite.css"
       - "data/sources.json"
+      - "data/source-research-priorities.json"
+      - "docs/SEE_BEFORE_YOU_GO_STANDARD.md"
       - "data/local-directory.json"
       - "data/travel-offers.json"
       - "data/affiliate-partners.json"
@@ -106,6 +108,8 @@ jobs:
         run: node scripts/participation-preflight.mjs
       - name: Featured curation preflight
         run: node scripts/featured-curation-preflight.mjs
+      - name: Source research priority integrity
+        run: node scripts/source-research-priority-status.mjs
       - name: Commercial placement integrity preflight
         run: node scripts/commercial-placement-preflight.mjs
       - name: Build static release
