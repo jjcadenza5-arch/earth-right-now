@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-28T15:08:00Z",
+  "publicActivationAllowed": false,
+  "principle": "Real-time context may explain what a place is like now, but must remain separate from visual source truth and may never manufacture a LIVE label.",
+  "sources": [
+    {
+      "id": "seoul-realtime-city-data",
+      "city": "Seoul",
+      "country": "South Korea",
+      "provider": "Seoul Metropolitan Government",
+      "tourismSurface": "Seoul Tourism Organization / Visit Seoul",
+      "officialTourismUrl": "https://english.visitseoul.net/realtime-seoul",
+      "openDataUrl": "https://data.seoul.go.kr/dataList/OA-22270/A/1/datasetView.do",
+      "state": "RESEARCH_READY_NOT_PUBLIC",
+      "freshness": "REAL_TIME",
+      "dataTypes": [
+        "crowd_density",
+        "traffic_conditions",
+        "parking_availability",
+        "subway_availability",
+        "public_bike_availability",
+        "weather",
+        "events",
+        "cctv_links"
+      ],
+      "observedVisitorAreas": [
+        "Gwanghwamun",
+        "Gyeongbokgung Palace / Seochon",
+        "Bukchon Hanok Village",
+        "Myeongdong",
+        "Seoul Station",
+        "Hongdae",
+        "Itaewon",
+        "Gangnam",
+        "Banpo Hangang Park",
+        "Jamsil",
+        "Seongsu Café Street"
+      ],
+      "rights": {
+        "owner": "Seoul Metropolitan Government",
+        "license": "Korea Open Government License Type 1 / attribution",
+        "commercialUseAllowed": true,
+        "modificationAllowed": true,
+        "attributionRequired": true,
+        "thirdPartyCopyrightHolder": "NONE_REPORTED_ON_DATASET_PAGE"
+      },
+      "ERNUse": {
+        "visualTruthSource": false,
+        "maySupplementGuideLater": true,
+        "maySupplementPlacePagesLater": true,
+        "mayAffectWatchEarthRanking": false,
+        "mayCreateLiveLabel": false,
+        "mayOverrideCameraEvidence": false,
+        "cctvLinksNeedIndependentSourceReview": true
+      },
+      "activationGates": [
+        "API_ENDPOINT_AND_SCHEMA_VERIFIED",
+        "ATTRIBUTION_COPY_IMPLEMENTED",
+        "CACHE_AND_STALENESS_RULES_DEFINED",
+        "RATE_LIMIT_AND_FAILURE_BEHAVIOR_DEFINED",
+        "PLACE_MAPPING_APPROVED",
+        "GUIDE_WORDING_FAILS_CLOSED_WHEN_STALE",
+        "PRIVACY_REVIEW_COMPLETE"
+      ],
+      "next": "Resolve English API endpoint/schema and build a server-side read-only adapter with explicit timestamps and stale-data fallback. Keep CCTV as a separate source-review lane."
+    }
+  ],
+  "invariants": {
+    "contextIsNotCameraTruth": true,
+    "staleContextMayNotBePresentedAsCurrent": true,
+    "contextFailureMustNotHideCamera": true,
+    "automaticPublicActivation": false
+  }
+}

@@ -87,3 +87,7 @@ ERN quality and visitor-program fit now work together in source research. Any vi
 
 ### Visitor-interest source expansion queue — ACTIVE RESEARCH
 The See Before You Go strategy now has a fail-closed candidate queue in `data/visitor-source-expansion-candidates.json`. Current priority is exact-target research for Kyoto official tourism live cameras, followed by active London tourism webcams and Seoul visitor-facing real-time/CCTV surfaces. Seasonal bloom cameras are retained as timed review candidates. Nothing enters the catalog from this queue without exact truth, permission, currentness, health and visual-quality evidence.
+
+
+## Cross-cutting priority — Real-time place context — RESEARCH / PUBLIC OFF
+ERN may supplement truthful visual windows with separately sourced current context such as crowd, traffic, weather, transit or events when official data is available. Context is never camera truth and can never create a LIVE label or alter Watch Earth editorial ranking. Seoul Real-time City Data is the first research-ready lane; public activation remains blocked pending server-side API verification, attribution, timestamp/staleness rules, place mapping and fail-closed Guide integration. See `data/realtime-context-sources.json`.

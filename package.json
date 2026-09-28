@@ -77,7 +77,8 @@
     "commercial:attribution-status": "node scripts/commercial-attribution-status.mjs",
     "business:placement-preflight": "node scripts/commercial-placement-preflight.mjs",
     "sources:research-priority": "node scripts/source-research-priority-status.mjs",
-    "sources:expansion-queue": "node scripts/visitor-source-expansion-status.mjs"
+    "sources:expansion-queue": "node scripts/visitor-source-expansion-status.mjs",
+    "context:status": "node scripts/realtime-context-status.mjs"
   },
   "engines": {
     "node": ">=20"

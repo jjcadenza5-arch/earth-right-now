@@ -1,3 +1,10 @@
+## 2026-09-28 — Seoul real-time context lane prepared
+- Added Seoul Real-time City Data as ERN's first research-ready context source, separate from camera/source truth.
+- Official Visit Seoul surfaces expose real-time crowd density, traffic, transit/parking, weather and CCTV links for major visitor areas.
+- Seoul Open Data identifies the real-time dataset as Seoul Metropolitan Government data under attribution terms permitting commercial use and modification.
+- Public activation remains OFF. CCTV links require separate source review; context data cannot create LIVE labels or affect Watch Earth ranking.
+- Next step is server-side English API/schema verification, place mapping, timestamps/staleness policy and fail-closed Guide wording.
+
 ## 2026-09-28 — Two official London live windows added
 - Added Savoy Place skyline as EXTERNAL_LIVE / LINK_ONLY from the IET's official webcam page. The provider explicitly states the feed is live, not recorded, and limited to ten-minute viewer sessions, so ERN does not attempt to embed or bypass that behavior.
 - Added Abbey Road Crossing as EXTERNAL_LIVE / LINK_ONLY from Abbey Road Studios' official LIVE crossing page.
