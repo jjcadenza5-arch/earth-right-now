@@ -43,6 +43,7 @@ Resolved/active directions:
 - London: Savoy Place skyline and Abbey Road Crossing added as EXTERNAL_LIVE / LINK_ONLY.
 - Seoul: real-time crowd/traffic/transit/weather context is a separate research lane, not camera truth.
 - Seasonal bloom/farm/orchard sources remain high-value research because they embody the original strawberry-picking use case.
+- Tonami Tulip Park Panorama Terrace is already promoted as EXTERNAL_LIVE / LINK_ONLY from Tonami City's official live-camera page. A discovered direct municipal image URL remains research-only and must not replace the safe link-only path without separate permission/currentness approval.
 - Thailand agritourism/farms are a source gap and future For Places / partner-camera outreach opportunity; never substitute static promotional media for current evidence.
 
 ## Commercial state
@@ -59,9 +60,11 @@ Resolved/active directions:
 
 ## Seoul real-time context
 - Research manifest: `data/realtime-context-sources.json`.
+- Adapter contract: `docs/SEOUL_REALTIME_CONTEXT_ADAPTER_CONTRACT.md`.
+- Official English API contract is verified as Seoul dataset OA-22714 / service `citydata_eng`; one area per request; an API key is required beyond the sample Gwanghwamun/Deoksugung scope.
 - Context may later supplement Guide/place pages with current crowd, traffic, transit, weather and events.
-- Context must never create a LIVE camera label, alter camera truth, or affect Watch Earth editorial ranking.
-- Public activation remains OFF pending API/schema, attribution, timestamps/staleness, place mapping and fail-closed Guide integration.
+- Context must never create a LIVE camera label, alter camera truth, hide camera truth when stale, or affect Watch Earth editorial ranking.
+- Public activation remains OFF pending an ERN-controlled API key, actual response/timestamp validation, place mapping, attribution, privacy and fail-closed Guide integration.
 
 ## Human-only work
 Only ask the user when genuinely required:
