@@ -24,7 +24,8 @@ if(target==="earth-signals"){
   checks={
     ...common,
     service:body?.service==="ERN Earth Signals API",
-    rateSubjectSecretConfigured:body?.rateSubjectSecretConfigured===true
+    rateSubjectSecretConfigured:body?.rateSubjectSecretConfigured===true,
+    reviewTokenConfigured:body?.reviewTokenConfigured===true
   };
   publicActivationOff=body?.contributionsEnabled===false;
 }else{
