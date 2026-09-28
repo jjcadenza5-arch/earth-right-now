@@ -215,7 +215,7 @@
   },
   {
     "id": "youtube-kyoto-kiyomizuzaka",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "Kyoto City Tourism Association",
     "platform": "YouTube",
     "sourceUrl": "https://global.kyoto.travel/en/comfort/",
@@ -223,20 +223,26 @@
     "ownerEvidence": "Kyoto City / Kyoto City Tourism Association official tourism pages identify live cameras as real-time visitor-condition tools; Kiyomizu-zaka is one of the official live camera locations.",
     "currentEvidence": "Current Kyoto tourism guidance directs visitors to the official live-camera system to check real-time sightseeing conditions and congestion before/during visits.",
     "discoveredAt": "2026-09-28T14:55:00Z",
-    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_PENDING_PLAYBACK",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "currentEvidenceReviewedAt": "2026-09-28T14:55:00Z",
     "platformEvidence": "Exact YouTube live target cUnYPpK7ENk is associated with the Kyoto tourism live-camera network. ERN may test only the standard branded player; deployed playback and target-specific permission remain unconfirmed until review.",
     "researchSources": [
       "https://global.kyoto.travel/en/comfort/",
       "https://www.city.kyoto.lg.jp/sankan/page/0000357110.html",
       "https://www.youtube.com/watch?v=cUnYPpK7ENk"
-    ]
+    ],
+    "lastHumanReviewAt": "2026-09-28T14:53:26.998Z",
+    "lastHumanReviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
+    "reviewBatch": "242d81d7b87d98a3",
+    "reviewedSourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk",
+    "reviewNote": "Deployed-origin human review on earthrightnow.app confirmed the exact Kyoto tourism YouTube target was visibly playing and current. Approval applies only to this exact target; preserve branded player/controls and do not infer blanket approval for other Kyoto cameras."
   },
   {
     "id": "youtube-kyoto-fushimi-inari",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "Kyoto City Tourism Association",
     "platform": "YouTube",
     "sourceUrl": "https://global.kyoto.travel/en/comfort/",
@@ -244,20 +250,26 @@
     "ownerEvidence": "Kyoto City / Kyoto City Tourism Association official tourism pages identify Fushimi Inari as part of the visitor-facing live-camera network used for congestion-aware sightseeing.",
     "currentEvidence": "Official Kyoto tourism pages describe the network as real-time streaming for visitors to understand current conditions.",
     "discoveredAt": "2026-09-28T14:55:00Z",
-    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_PENDING_PLAYBACK",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "currentEvidenceReviewedAt": "2026-09-28T14:55:00Z",
     "platformEvidence": "Exact YouTube live target MMeBDRfRHyA is associated with the official Kyoto tourism live-camera network. Standard branded player only; no restreaming.",
     "researchSources": [
       "https://global.kyoto.travel/en/comfort/",
       "https://www.city.kyoto.lg.jp/sankan/page/0000357110.html",
       "https://www.youtube.com/watch?v=MMeBDRfRHyA"
-    ]
+    ],
+    "lastHumanReviewAt": "2026-09-28T14:53:15.031Z",
+    "lastHumanReviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
+    "reviewBatch": "242d81d7b87d98a3",
+    "reviewedSourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA",
+    "reviewNote": "Deployed-origin human review on earthrightnow.app confirmed the exact Kyoto tourism YouTube target was visibly playing and current. Approval applies only to this exact target; preserve branded player/controls and do not infer blanket approval for other Kyoto cameras."
   },
   {
     "id": "youtube-kyoto-kifune",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "Kyoto City Tourism Association",
     "platform": "YouTube",
     "sourceUrl": "https://global.kyoto.travel/en/comfort/",
@@ -265,15 +277,21 @@
     "ownerEvidence": "Kyoto City tourism materials list Kifune Shrine among visitor-facing live-camera targets; the camera is managed as part of Kyoto's congestion/current-condition information system.",
     "currentEvidence": "Current tourism guidance uses the camera network to help visitors check real-time conditions before traveling to sightseeing locations.",
     "discoveredAt": "2026-09-28T14:55:00Z",
-    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_PENDING_PLAYBACK",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "currentEvidenceReviewedAt": "2026-09-28T14:55:00Z",
     "platformEvidence": "Exact YouTube live target eJAqPCdS1cY is associated with the Kyoto tourism live-camera network; third-party camera directories also identify it as 24/365 real-time, but ERN still requires deployed review.",
     "researchSources": [
       "https://global.kyoto.travel/en/comfort/",
       "https://www.city.kyoto.lg.jp/sankan/page/0000357110.html",
       "https://www.youtube.com/watch?v=eJAqPCdS1cY"
-    ]
+    ],
+    "lastHumanReviewAt": "2026-09-28T14:53:21.166Z",
+    "lastHumanReviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
+    "reviewBatch": "242d81d7b87d98a3",
+    "reviewedSourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY",
+    "reviewNote": "Deployed-origin human review on earthrightnow.app confirmed the exact Kyoto tourism YouTube target was visibly playing and current. Approval applies only to this exact target; preserve branded player/controls and do not infer blanket approval for other Kyoto cameras."
   }
 ]
