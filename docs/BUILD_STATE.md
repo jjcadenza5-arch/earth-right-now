@@ -1,3 +1,11 @@
+## 2026-09-28 — Participation durable storage bounded
+- Fixed a real retention gap in Earth Signals: when a short-lived signal expires, any orphaned report row is now deleted as part of cleanup.
+- Added hard Durable Object capacity ceilings: 5,000 active Earth Signals, 1,000 retained signal reports, and 1,000 retained camera/place submissions.
+- New records fail closed with explicit capacity reasons when a ceiling is reached instead of allowing unbounded storage growth.
+- Existing IDs may still be updated at capacity, avoiding accidental lockout of legitimate review/resolution work.
+- Health/status evidence now exposes the configured storage ceilings without exposing secrets.
+- This establishes a concrete resource/cost boundary before production deployment; public participation remains OFF.
+
 ## 2026-09-28 — Private participation operator control prepared
 - Closed the Earth Signals moderation gap: reported signals can now be listed through a token-protected internal endpoint and resolved explicitly as RESTORE or REMOVE.
 - RESTORE clears the report flag only; REMOVE deletes the short-lived signal. Neither path mutates catalog/source truth or publishes anything.
