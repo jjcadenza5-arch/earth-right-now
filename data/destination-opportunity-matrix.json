@@ -63,8 +63,10 @@
     {
       "destination": "Seoul",
       "country": "South Korea",
-      "visualCoverage": "CONTEXT_STRONG_VISUAL_GAP",
-      "currentSources": [],
+      "visualCoverage": "GOOD_OFFICIAL_EXTERNAL_PLUS_CONTEXT",
+      "currentSources": [
+        "seoul-plaza-24h-live"
+      ],
       "visitorDecisionValue": "VERY_HIGH",
       "nextStepIntents": [
         "activities",
@@ -79,15 +81,17 @@
         "TRANSFERS",
         "CITY_UTILITY"
       ],
-      "sourcePriority": "HIGH",
-      "why": "Official real-time crowd/traffic/weather/transit context exists for visitor areas, but ERN lacks a proven visual window.",
-      "next": "Research durable visitor-facing visual sources separately from the context-data lane."
+      "sourcePriority": "MEDIUM_HIGH",
+      "why": "Official 24-hour Seoul Plaza live cam now fills the first visual gap, while separate official real-time crowd/traffic/weather context remains available for future Guide integration.",
+      "next": "Maintain Seoul Plaza; research additional distinct visitor-area visuals only if they add utility beyond the plaza/context layer."
     },
     {
       "destination": "Bangkok",
       "country": "Thailand",
-      "visualCoverage": "VISUAL_GAP_OFFICIAL_TRAFFIC_DATA_EXISTS",
-      "currentSources": [],
+      "visualCoverage": "GOOD_EXTERNAL",
+      "currentSources": [
+        "bangkok-sukhumvit-skylinewebcams"
+      ],
       "visitorDecisionValue": "VERY_HIGH",
       "nextStepIntents": [
         "activities",
@@ -103,9 +107,9 @@
         "TRANSFERS",
         "CITY_UTILITY"
       ],
-      "sourcePriority": "HIGH",
-      "why": "Major visitor destination with official BMA traffic/CCTV systems, but current ERN visual coverage is absent and the traffic application has reduced stability.",
-      "next": "Seek a high-quality official/provider visitor-facing current window; do not promote legacy traffic CCTV merely to fill the gap."
+      "sourcePriority": "MEDIUM",
+      "why": "A current Sukhumvit Road live view now gives ERN a useful Bangkok street-condition window without relying on the reduced-stability BMA traffic application.",
+      "next": "Maintain Sukhumvit; seek a second distinct river/landmark/current-condition view only if quality is clearly stronger and non-duplicative."
     },
     {
       "destination": "Chiang Mai",
@@ -315,8 +319,10 @@
     {
       "destination": "Singapore",
       "country": "Singapore",
-      "visualCoverage": "VISUAL_GAP",
-      "currentSources": [],
+      "visualCoverage": "GOOD_EXTERNAL",
+      "currentSources": [
+        "singapore-port-skylinewebcams"
+      ],
       "visitorDecisionValue": "HIGH",
       "nextStepIntents": [
         "activities",
@@ -332,9 +338,9 @@
         "TRANSFERS",
         "CITY_UTILITY"
       ],
-      "sourcePriority": "MEDIUM_HIGH",
-      "why": "High visitor interest and useful planning categories, but no verified current ERN window was found in the first official-source pass.",
-      "next": "Continue official/provider current-source research; do not fill the gap with generic promotional video."
+      "sourcePriority": "MEDIUM",
+      "why": "A current port/skyline live view now fills the first Singapore visual gap; Marina Bay-specific provider pages are currently offline and remain excluded.",
+      "next": "Maintain current port view; recheck Marina Bay/downtown sources only on material provider change."
     }
   ],
   "rules": {

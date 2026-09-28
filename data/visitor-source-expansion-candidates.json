@@ -111,9 +111,14 @@
         "Seoul Station",
         "Banpo Hangang Park"
       ],
-      "state": "VISUAL_ACCESS_RESEARCH_REQUIRED",
+      "state": "PARTIALLY_RESOLVED_OFFICIAL_SEOUL_PLAZA_LIVE",
       "why": "Official tourism service already combines real-time crowd, traffic, weather and CCTV links for visitor decision support.",
-      "next": "Verify whether visitor-facing CCTV imagery is durable, legally linkable and useful enough as an ERN current window."
+      "next": "Keep the official Seoul Plaza visual window; retain CCTV links as context/secondary research and review any future camera target independently.",
+      "resolvedTarget": {
+        "name": "Seoul Plaza 24 Hours",
+        "catalogId": "seoul-plaza-24h-live",
+        "mode": "EXTERNAL_LIVE"
+      }
     },
     {
       "id": "holland-tulip-time-live-tracker",

@@ -1,3 +1,8 @@
+## 2026-09-28 — Fill Seoul, Bangkok and Singapore visual gaps
+- Added one selective current live window for each destination.
+- Kept all three external/link-only and provider-respecting.
+- Updated research priorities to avoid duplicate source density.
+
 ## 2026-09-28 — Add destination opportunity matrix
 - Connected source-quality gaps and visitor-use/program categories into one research planning artifact.
 - Explicitly penalizes duplicate destination density and forbids commission-led source priority.
