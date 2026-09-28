@@ -3188,5 +3188,43 @@
     "lon": 103.846083,
     "coordinateSourceUrl": "https://spotcameras.com/en/cams/Asia/Singapore/15024-Singapore-View-from-the-office-Waypoint-Port-Services-to-the-port-area",
     "coordinateNote": "Approximate port-area reference from a camera directory identifying the SkylineWebcams source; not claimed as exact ERN-verified camera position."
+  },
+  {
+    "id": "rome-spanish-steps-skylinewebcams",
+    "placeId": "rome-spanish-steps",
+    "title": "Rome — Spanish Steps",
+    "provider": "SkylineWebcams",
+    "country": "Italy",
+    "region": "Rome",
+    "categories": [
+      "Culture & Landmarks",
+      "Cities & Streets",
+      "Earth Happening Now",
+      "Useful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.skylinewebcams.com/webcam/italia/lazio/roma/chiesa-trinita-dei-monti.html",
+    "officialUrl": "https://www.skylinewebcams.com/webcam/italia/lazio/roma/chiesa-trinita-dei-monti.html",
+    "embedUrl": null,
+    "thumbnailUrl": null,
+    "attribution": "SkylineWebcams",
+    "checkedAt": "2026-09-28T15:58:00Z",
+    "lastSuccessfulCheck": "2026-09-28T15:58:00Z",
+    "failureReason": null,
+    "quality": 91,
+    "freshness": 96,
+    "moment": 96,
+    "story": "See the Spanish Steps and the real visitor atmosphere in Piazza di Spagna before heading there.",
+    "timeZone": "Europe/Rome",
+    "rightsBasis": "SkylineWebcams' current provider page identifies the Spanish Steps view as a live cam. ERN keeps the source LINK_ONLY/EXTERNAL and does not infer embed or restream rights.",
+    "freshnessEvidence": "Current SkylineWebcams Spanish Steps page is active and presents the view as a live cam without an offline notice.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "lat": 41.90607,
+    "lon": 12.48281,
+    "coordinateSourceUrl": "https://mapcarta.com/25584572",
+    "coordinateNote": "Place-reference coordinate for the Spanish Steps; not claimed as exact camera position."
   }
 ]

@@ -1,3 +1,7 @@
+## 2026-09-28 — Add Rome Spanish Steps live window
+- Added one active external live Rome landmark view.
+- Left Paris unresolved because current provider live pages are offline.
+
 ## 2026-09-28 — Fill Seoul, Bangkok and Singapore visual gaps
 - Added one selective current live window for each destination.
 - Kept all three external/link-only and provider-respecting.
