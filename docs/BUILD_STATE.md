@@ -1,3 +1,11 @@
+## 2026-09-28 — Catalog metadata hardened; Paris context clarified
+- Filled 46 previously missing source-attribution fields conservatively from each source's existing provider identity; no provider, truth, permission or ranking changed.
+- Made the catalog metadata audit truth-aware: dynamic-orbit sources do not need a terrestrial timezone, and a degraded source may satisfy check-history evidence with a real failed check rather than a fabricated successful one.
+- Current 93-source catalog now passes the strengthened metadata completeness model in a direct data audit: zero incomplete records under the revised rules.
+- Added catalog metadata completeness as a Pages release gate.
+- Added official Eiffel Tower live visitor conditions as a Paris context-only research lane: attendance/open status, summit temperature/wind and Paris weather are useful before a visit but are not visual/camera truth.
+- Paris remains a real visual-source gap; no live label or current-image claim was created from the Eiffel context data.
+
 ## 2026-09-28 — Guide planning copy moved out of app-lite to preserve performance budget
 - Performance CI blocked the repaired Guide build because app-lite reached 102,768 bytes, slightly above ERN's fixed 100 KB ceiling.
 - Kept the ceiling unchanged and moved only the longer seven-language trip-planning strings into the existing split `home-i18n.js` bundle.
