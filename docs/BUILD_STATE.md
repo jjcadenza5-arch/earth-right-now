@@ -1,3 +1,12 @@
+## 2026-09-28 — Phase L opened: temporary Now Moment photo foundation
+- Phase K is now locally complete and activation-gated after green syntax, Operations and Pages deployment.
+- Opened Phase L for still-photo Now Moments only; video remains explicitly disabled.
+- Added a separate photo policy with 45-minute TTL, JPEG/PNG/WebP allowlist, 5 MB source cap, 1.5 MB stored-derivative cap and 1920 px maximum dimension.
+- First activation forbids free-text captions and precise coordinates, requires canonical ERN place identity, requires server-verified metadata stripping, and forbids automatic publication.
+- Added metadata scanning for common JPEG EXIF/XMP/GPS markers plus PNG/WebP metadata chunks.
+- Added a separate non-secret deployment manifest, currently NOT_DEPLOYED with publicActivationAllowed=false.
+- Visitor media remains explicitly unverified and cannot change camera LIVE/current truth, source health or ranking.
+
 ## 2026-09-28 — Phase K legacy gate repair completed
 - Updated the Earth Signal public deployment-manifest validator to recognize the explicit non-secret `publicActivationAllowed` switch.
 - The focused deployment-manifest smoke now requires that switch to be false in the current NOT_DEPLOYED state.
