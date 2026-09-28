@@ -1096,5 +1096,33 @@
       "https://www.oeschinensee.ch/en/webcams/",
       "https://www.oeschinensee.ch/en/medien/"
     ]
+  },
+  {
+    "id": "youtube-kyoto-tourism",
+    "status": "RESEARCH_ONLY",
+    "provider": "Kyoto City Tourism Association",
+    "familyLabel": "Kyoto official tourism YouTube live-camera network",
+    "researchUrl": "https://global.kyoto.travel/en/comfort/",
+    "termsUrl": "https://developers.google.com/youtube/terms/required-minimum-functionality",
+    "verifiedAt": "2026-09-28T14:55:00Z",
+    "permissionEvidence": "Kyoto City and Kyoto City Tourism Association officially publish a visitor-facing live-camera network for real-time sightseeing/congestion conditions. Exact YouTube targets are staged only for branded-player review. The public tourism purpose does not itself grant ERN blanket embed approval.",
+    "permissionStatus": "OFFICIAL_LIVE_NETWORK_SPECIFIC_VIDEO_REQUIRES_DEPLOYED_REVIEW",
+    "technicalStatus": "EXACT_YOUTUBE_TARGETS_STAGED",
+    "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "nextAction": "DEPLOYED_HUMAN_PLAYBACK_ON_STAGED_KYOTO_TARGETS",
+    "networkFamily": "youtube.com",
+    "termsReviewedAt": "2026-09-28T14:55:00Z",
+    "communityGuidelinesUrl": "https://developers.google.com/youtube/terms/developer-policies",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "STANDARD_EMBED_PLAYER",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://global.kyoto.travel/en/comfort/",
+      "https://www.city.kyoto.lg.jp/sankan/page/0000357110.html",
+      "https://developers.google.com/youtube/terms/required-minimum-functionality"
+    ]
   }
 ]
