@@ -21,6 +21,8 @@ on:
       - "tests/now-moment-photo-foundation.smoke.js"
       - "tests/now-moment-photo-service.smoke.js"
       - "tests/now-moment-photo-client-http.smoke.js"
+      - "tests/now-moment-media-worker.smoke.js"
+      - "media-worker/**"
       - "data/now-moment-media-deployment.json"
       - "now-moments.html"
       - "for-places.html"
@@ -48,7 +50,7 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           set -euo pipefail
-          find src scripts worker travel-worker signals-worker submission-worker -type f \( -name '*.js' -o -name '*.mjs' \) -print0 | xargs -0 -n1 node --check
+          find src scripts worker travel-worker signals-worker submission-worker media-worker -type f \( -name '*.js' -o -name '*.mjs' \) -print0 | xargs -0 -n1 node --check
       - name: Run Earth Signal focused smoke tests
         run: |
           set -euo pipefail
@@ -70,6 +72,7 @@ jobs:
           node tests/now-moment-photo-foundation.smoke.js
           node tests/now-moment-photo-service.smoke.js
           node tests/now-moment-photo-client-http.smoke.js
+          node tests/now-moment-media-worker.smoke.js
       - name: Run Generative Guide focused smoke tests
         run: |
           set -euo pipefail
