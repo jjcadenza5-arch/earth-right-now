@@ -11,11 +11,21 @@ await cp(new URL("../src/guide-public-copy.js",import.meta.url),new URL("src/gui
 await cp(new URL("../src/home-i18n.js",import.meta.url),new URL("src/home-i18n.js",dist));
 await cp(new URL("../src/app-lite.js",import.meta.url),new URL("src/app-lite.js",dist));
 await cp(new URL("../src/styles-lite.css",import.meta.url),new URL("src/styles-lite.css",dist));
+await cp(new URL("../src/participation-public-config.js",import.meta.url),new URL("src/participation-public-config.js",dist));
+await cp(new URL("../src/earth-signal-client.js",import.meta.url),new URL("src/earth-signal-client.js",dist));
+await cp(new URL("../src/earth-signals.js",import.meta.url),new URL("src/earth-signals.js",dist));
+await cp(new URL("../src/now-moments-page.js",import.meta.url),new URL("src/now-moments-page.js",dist));
+await cp(new URL("../src/submission-client.js",import.meta.url),new URL("src/submission-client.js",dist));
+await cp(new URL("../src/business-submission.js",import.meta.url),new URL("src/business-submission.js",dist));
+await cp(new URL("../src/submission-review-contract.js",import.meta.url),new URL("src/submission-review-contract.js",dist));
+await cp(new URL("../src/for-places-page.js",import.meta.url),new URL("src/for-places-page.js",dist));
 await mkdir(new URL("data/",dist),{recursive:true});
 await cp(new URL("../data/sources.json",import.meta.url),new URL("data/sources.json",dist));
 await cp(new URL("../data/local-directory.json",import.meta.url),new URL("data/local-directory.json",dist));
 await cp(new URL("../data/travel-offers.json",import.meta.url),new URL("data/travel-offers.json",dist));
 await cp(new URL("../data/provider-observations.json",import.meta.url),new URL("data/provider-observations.json",dist));
+await cp(new URL("../data/earth-signal-deployment.json",import.meta.url),new URL("data/earth-signal-deployment.json",dist));
+await cp(new URL("../data/submission-transport.json",import.meta.url),new URL("data/submission-transport.json",dist));
 try{await cp(new URL("../data/release-evidence.json",import.meta.url),new URL("data/release-evidence.json",dist))}catch{await writeFile(new URL("data/release-evidence.json",dist),"{}\n")}
 await cp(new URL("../assets/",import.meta.url),new URL("assets/",dist),{recursive:true});
 await cp(new URL("../places/",import.meta.url),new URL("places/",dist),{recursive:true});
@@ -34,7 +44,7 @@ await cp(new URL("../src/release-verification-console.js",import.meta.url),new U
 await cp(new URL("../about.html",import.meta.url),new URL("about.html",dist));
 await cp(new URL("../deploy/_headers",import.meta.url),new URL("_headers",dist));
 await cp(new URL("../deploy/_redirects",import.meta.url),new URL("_redirects",dist));
-const files=["index.html","src/guide-public-copy.js","src/home-i18n.js","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","release-verification.html","data/sources.json","data/local-directory.json","data/travel-offers.json","data/provider-observations.json","data/release-evidence.json","for-places.html","now-moments.html","review/inside-ern.html"];
+const files=["index.html","src/guide-public-copy.js","src/home-i18n.js","src/participation-public-config.js","src/earth-signal-client.js","src/earth-signals.js","src/now-moments-page.js","src/submission-client.js","src/business-submission.js","src/submission-review-contract.js","src/for-places-page.js","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","release-verification.html","data/sources.json","data/local-directory.json","data/travel-offers.json","data/provider-observations.json","data/earth-signal-deployment.json","data/submission-transport.json","data/release-evidence.json","for-places.html","now-moments.html","review/inside-ern.html"];
 const hashes={};for(const p of files){const b=await readFile(new URL(p,dist));hashes[p]=createHash("sha256").update(b).digest("hex")}
 const pkg=JSON.parse(await readFile(new URL("../package.json",import.meta.url),"utf8"));
 const commit=String(process.env.GITHUB_SHA||process.env.ERN_COMMIT_SHA||"").trim()||null;
