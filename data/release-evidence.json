@@ -1,38 +1,38 @@
 {
   "browser": {
     "ok": true,
-    "note": "User live-tested desktop earthrightnow.app on 23 Sep 2026: Home/Watch Earth, ERN Guide, embedded live windows, external-provider routing, and desktop media fullscreen were observed working after fixes.",
-    "checkedAt": "2026-09-23T20:07:00+07:00",
-    "commit": "a41ad2e49755d31344e8c0f04ca7338867f05d57"
+    "note": "Human live-tested desktop earthrightnow.app on 28 Sep 2026: normal viewer use and entering/exiting fullscreen work. Changing to another livestream exits native fullscreen; this limitation is explicitly accepted as deferred/non-blocking.",
+    "checkedAt": "2026-09-28T18:00:00+07:00",
+    "commit": "c4f541599007f0e9b8d522bc7e8dc98d8a9b526e"
   },
   "mobile": {
     "ok": true,
-    "note": "User live-tested iPhone portrait and landscape on 23 Sep 2026. Viewer, controls, scrolling and landscape access were iteratively corrected; iPhone fullscreen is intentionally delegated to the embedded player's native fullscreen control where Safari limits page fullscreen.",
-    "checkedAt": "2026-09-23T20:07:00+07:00",
-    "commit": "a41ad2e49755d31344e8c0f04ca7338867f05d57"
+    "note": "Human live-tested phone portrait and landscape on 28 Sep 2026. Portrait is usable although not all action buttons fit at once. Landscape shows working controls; fullscreen appears smaller than normal landscape view and is accepted as non-urgent maintenance.",
+    "checkedAt": "2026-09-28T18:00:00+07:00",
+    "commit": "c4f541599007f0e9b8d522bc7e8dc98d8a9b526e"
   },
   "providerPlayback": {
     "ok": true,
-    "note": "User observed working current/live playback for Taitung Jinzun, Cijin Beach, Cancun Caribbean Beach, St. John's Harbour, Skeikampen and Mpala; Chicago external-source routing also opened correctly.",
-    "checkedAt": "2026-09-23T20:07:00+07:00",
-    "commit": "a41ad2e49755d31344e8c0f04ca7338867f05d57"
+    "note": "Human operator review on 28 Sep 2026 confirmed ten EMBED / EMBED_ALLOWED / HEALTHY sources were visibly playing and current in the deployed ERN review flow; the matching HUMAN_PLAYBACK observations were applied to the catalog.",
+    "checkedAt": "2026-09-28T17:30:00+07:00",
+    "commit": "c4f541599007f0e9b8d522bc7e8dc98d8a9b526e"
   },
   "accessibility": {
     "ok": true,
-    "note": "Automated accessibility preflight passed on the deployed ERN build: semantic labels, modal dialog naming, keyboard viewer navigation, visible focus, focus restoration, reduced-motion handling, safe-area handling and live status messaging.",
-    "checkedAt": "2026-09-23T20:38:00+07:00",
-    "commit": "f5c5a355f027723bcb94c2cbfa178269d42a545e"
+    "note": "Accessibility preflight passed on deployed runtime c4f5415 on 28 Sep 2026, including semantic labels, modal naming, keyboard viewer navigation, visible focus, focus restoration, reduced-motion handling, safe-area handling and live status messaging.",
+    "checkedAt": "2026-09-28T17:40:00+07:00",
+    "commit": "c4f541599007f0e9b8d522bc7e8dc98d8a9b526e"
   },
   "performance": {
     "ok": true,
-    "note": "Automated performance preflight passed on the deployed ERN build: lean core stayed within budget, homepage shipped no eager iframe, Watch Earth live-preview iframe path remained disabled, and runtime embed creation stayed constrained.",
-    "checkedAt": "2026-09-23T20:38:00+07:00",
-    "commit": "f5c5a355f027723bcb94c2cbfa178269d42a545e"
+    "note": "Performance preflight passed on deployed runtime c4f5415 on 28 Sep 2026: app-lite remained within the 100 KB ceiling, lean core stayed within budget, homepage shipped no eager iframe and runtime iframe creation stayed constrained.",
+    "checkedAt": "2026-09-28T17:40:00+07:00",
+    "commit": "c4f541599007f0e9b8d522bc7e8dc98d8a9b526e"
   },
   "rollback": {
     "ok": true,
-    "note": "Non-destructive rollback rehearsal is preserved at branch rollback-proof-20260923 pointing to a known-good deployed commit; rollback procedure and rollback preflight both passed without moving healthy production main.",
-    "checkedAt": "2026-09-23T20:38:00+07:00",
-    "commit": "f5c5a355f027723bcb94c2cbfa178269d42a545e"
+    "note": "Rollback preflight passed on deployed runtime c4f5415 on 28 Sep 2026; the non-destructive rollback proof and documented recovery path remain intact without rolling back healthy production.",
+    "checkedAt": "2026-09-28T17:40:00+07:00",
+    "commit": "c4f541599007f0e9b8d522bc7e8dc98d8a9b526e"
   }
 }
