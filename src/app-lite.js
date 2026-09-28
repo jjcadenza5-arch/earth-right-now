@@ -602,14 +602,19 @@ function initSectionSpy(){
  for(const [id] of map){const el=document.getElementById(id);if(el)obs.observe(el)}
 }
 async function toggleViewerFullscreen(){
- const viewer=$("#viewer"),stage=$("#viewerStage"),media=stage?.querySelector("iframe,img,video"),target=media||stage;
+ const viewer=$("#viewer"),stage=$("#viewerStage"),media=stage?.querySelector("iframe,img,video"),video=media?.tagName==="VIDEO"?media:null;
  if(viewer.classList.contains("faux-fullscreen")){viewer.classList.remove("faux-fullscreen");syncFullscreenButton();return}
  if(document.fullscreenElement){try{await document.exitFullscreen();return}catch{}}
  if(document.webkitFullscreenElement&&document.webkitExitFullscreen){try{document.webkitExitFullscreen();return}catch{}}
+ try{if(stage?.requestFullscreen){await stage.requestFullscreen();return}}catch{}
  try{
-   if(target?.requestFullscreen){await target.requestFullscreen();return}
-   if(target?.webkitRequestFullscreen){target.webkitRequestFullscreen();setTimeout(()=>{if(!document.webkitFullscreenElement&&!document.fullscreenElement){viewer.classList.add("faux-fullscreen");syncFullscreenButton()}},250);return}
+   if(stage?.webkitRequestFullscreen){
+     stage.webkitRequestFullscreen();
+     setTimeout(()=>{if(!document.webkitFullscreenElement&&!document.fullscreenElement){viewer.classList.add("faux-fullscreen");syncFullscreenButton()}},250);
+     return
+   }
  }catch{}
+ try{if(video?.webkitEnterFullscreen){video.webkitEnterFullscreen();return}}catch{}
  viewer.classList.add("faux-fullscreen");syncFullscreenButton()}
 function syncFullscreenButton(){const active=!!(document.fullscreenElement||document.webkitFullscreenElement||$("#viewer")?.classList.contains("faux-fullscreen"));$("#fullViewer").textContent=active?"Exit full screen":t("fullscreen");$("#fullViewer").setAttribute("aria-pressed",String(active))}
 function initEvents(){
