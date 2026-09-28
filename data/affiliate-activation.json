@@ -76,9 +76,9 @@
       "rationale": "Direct large-brand applications remain on hold while ERN builds traffic, social proof and commercial history through Viator and Travelpayouts-accessible programs."
     }
   ],
-  "next": "VALIDATE_AND_DEPLOY_WELCOME_PICKUPS_AUCKLAND_THEN_ASSESS_SECOND_DESTINATION_WAVE",
+  "next": "VALIDATE_AND_DEPLOY_KLOOK_NEW_YORK_THEN_REVIEW_SECOND_WAVE",
   "note": "Travelpayouts first activation set selected by ERN fit: Klook, Tiqets, Welcome Pickups. Drive remains off. Generate/verify exact manual links before any public placement. Remaining unseen available programs are not guessed.",
-  "updatedAt": "2026-09-28T13:58:00Z",
+  "updatedAt": "2026-09-28T14:02:00Z",
   "travelpayoutsVerifiedPrograms": {
     "klook": {
       "state": "MANUAL_LINK_HUMAN_VERIFIED",
@@ -94,6 +94,18 @@
           "destinationPage": "https://www.klook.com/en-US/destination/c80-auckland/",
           "verifiedAt": "2026-09-28T13:45:00Z",
           "publicPlacementAllowed": true
+        },
+        "new-york": {
+          "state": "HUMAN_VERIFIED",
+          "trackingUrl": "https://klook.tpo.mx/9ofY8SDC",
+          "destinationPage": "https://www.klook.com/en-US/destination/c93-new-york/",
+          "verifiedAt": "2026-09-28T14:02:00Z",
+          "publicPlacementAllowed": true,
+          "placeIds": [
+            "nyc-skyline-jersey-city-earthcam",
+            "statue-liberty-earthcam",
+            "statue-liberty-harbor-earthcam"
+          ]
         }
       }
     },
