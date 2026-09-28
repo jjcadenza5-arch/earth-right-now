@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T15:45:00Z",
+  "generatedAt": "2026-09-28T17:25:00Z",
   "principle": "Research destinations where a truthful current window is valuable to visitors. Existing/available travel programs help identify useful next-step categories, but may not lower source-quality or truth standards.",
   "columns": {
     "visualCoverage": "Current ERN visual-window state",
@@ -275,7 +275,7 @@
     {
       "destination": "Paris",
       "country": "France",
-      "visualCoverage": "VISUAL_GAP_OFFICIAL_VISITOR_CONTEXT_EXISTS",
+      "visualCoverage": "VISUAL_GAP_OFFICIAL_LIVE_VISITOR_CONTEXT",
       "currentSources": [],
       "visitorDecisionValue": "HIGH",
       "nextStepIntents": [
@@ -291,8 +291,12 @@
         "CITY_UTILITY"
       ],
       "sourcePriority": "MEDIUM_HIGH",
-      "why": "Major visitor destination; official Eiffel Tower pages provide live visit conditions/attendance/weather, but ERN still lacks a verified current visual window for Paris itself.",
-      "next": "Research a rights-clear, high-quality current visual source; keep non-visual attendance/weather as context only."
+      "why": "Major visitor destination; the official Eiffel Tower site exposes live attendance/opening/weather/summit-condition context, but ERN still lacks a verified current visual window for Paris itself.",
+      "next": "Preserve official Eiffel live visitor context as non-visual evidence only. Continue researching a rights-clear, high-quality current Paris visual source.",
+      "contextSources": [
+        "https://www.toureiffel.paris/en/rates-opening-times",
+        "https://www.toureiffel.paris/en/planning-smooth-visit"
+      ]
     },
     {
       "destination": "Rome",
