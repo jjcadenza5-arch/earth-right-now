@@ -1,3 +1,9 @@
+## 2026-09-28 — Klook New York destination offer prepared
+- Human generated and verified Klook New York link `https://klook.tpo.mx/9ofY8SDC`.
+- Bound the offer to ERN's New York skyline and both Statue of Liberty views as an activities option.
+- Existing Tiqets Statue of Liberty offer remains the more specific culture/landmark path; Klook remains broader city activities.
+- Generic Klook homepage link remains non-public.
+
 ## 2026-09-28 — Welcome Pickups Auckland destination offer prepared
 - Human generated and verified Welcome Pickups Auckland airport-to-city link `https://tpo.mx/VxEEARBO`.
 - Bound the offer to `auckland-viaduct-harbour` as a transport option.
