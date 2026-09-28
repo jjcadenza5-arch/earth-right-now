@@ -76,9 +76,9 @@
       "rationale": "Direct large-brand applications remain on hold while ERN builds traffic, social proof and commercial history through Viator and Travelpayouts-accessible programs."
     }
   ],
-  "next": "VALIDATE_AND_DEPLOY_KLOOK_NEW_YORK_THEN_REVIEW_SECOND_WAVE",
+  "next": "VALIDATE_AND_DEPLOY_KLOOK_TOKYO_THEN_ASSESS_NEXT_UNSATURATED_DESTINATION",
   "note": "Travelpayouts first activation set selected by ERN fit: Klook, Tiqets, Welcome Pickups. Drive remains off. Generate/verify exact manual links before any public placement. Remaining unseen available programs are not guessed.",
-  "updatedAt": "2026-09-28T14:02:00Z",
+  "updatedAt": "2026-09-28T14:10:00Z",
   "travelpayoutsVerifiedPrograms": {
     "klook": {
       "state": "MANUAL_LINK_HUMAN_VERIFIED",
@@ -105,6 +105,16 @@
             "nyc-skyline-jersey-city-earthcam",
             "statue-liberty-earthcam",
             "statue-liberty-harbor-earthcam"
+          ]
+        },
+        "tokyo": {
+          "state": "HUMAN_VERIFIED",
+          "trackingUrl": "https://klook.tpo.mx/RHEyOza2",
+          "destinationPage": "https://www.klook.com/en-US/destination/c28-tokyo/",
+          "verifiedAt": "2026-09-28T14:10:00Z",
+          "publicPlacementAllowed": true,
+          "placeIds": [
+            "chidori-sakura"
           ]
         }
       }
