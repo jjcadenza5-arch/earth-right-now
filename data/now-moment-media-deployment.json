@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "NOT_DEPLOYED",
+  "publicActivationAllowed": false,
+  "endpointUrl": null,
+  "objectStorage": false,
+  "durableMetadata": false,
+  "metadataSanitization": false,
+  "canonicalPlaceValidation": false,
+  "serverRateLimits": false,
+  "moderationQueue": false,
+  "abuseReporting": false,
+  "expiryCleanup": false,
+  "ttlMinutes": 45,
+  "maxStoredBytes": 1572864,
+  "videoEnabled": false,
+  "privacyPublished": false,
+  "secretIsolation": false,
+  "observability": false,
+  "costGuard": false,
+  "checkedAt": "2026-09-28T07:38:30Z",
+  "evidenceNote": "Preparation-only manifest. Still-photo Now Moments remain OFF until production media transport, sanitation, moderation, expiry deletion, privacy wording, observability and cost evidence all pass. Video remains out of scope."
+}

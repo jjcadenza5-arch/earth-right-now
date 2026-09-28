@@ -25,8 +25,11 @@ The first Auckland Viator affiliate pilot is active at destination-link level. A
 ## Stage J — participation infrastructure — LOCALLY COMPLETE / EXTERNAL DEPLOYMENT GATE
 Earth Signals and camera/place submission infrastructure, operator moderation, storage/cost bounds, browser clients, deployment verification and manual secret-provisioning workflows are prepared and green. Both services remain public-OFF. The remaining gate is controlled Cloudflare deployment plus live health evidence; repository work should not pretend that external deployment has occurred.
 
-## Stage K — living participation surfaces — ACTIVE
-Make Now Moments and For Places activation-aware without redesigning ERN or weakening truth. Public pages must derive behavior from non-secret deployment manifests, stay local/preview-only while activation is off, use canonical ERN place identity for Earth Signals, require explicit consent for submissions, and never equate visitor reports with verified facts. Structured Earth Signals come before visitor media; photos/clips remain OFF until their separate moderation/storage/privacy infrastructure is real.
+## Stage K — living participation surfaces — LOCALLY COMPLETE / ACTIVATION GATED
+Now Moments and For Places are activation-aware, canonical-place/consent bounded, safely deployed to Pages, and remain local/read-only while participation infrastructure is OFF. Recent visitor-signal display is prepared and clearly unverified. Remaining activation depends on Phase J deployment evidence and explicit switches.
+
+## Stage L — temporary Now Moment media foundation — ACTIVE
+Prepare still-photo Now Moments behind a separate deployment/activation gate. Photos must remain temporary, metadata-stripped, canonical-place-linked, moderation-before-display, bounded in file size/dimensions/storage, and clearly labeled as unverified visitor media. Structured Earth Signals must activate first. Video remains out of scope.
 
 ## Stage I — public deployment and release certification — PUBLIC / GATE READY
 earthrightnow.app is publicly deployed and the current release-readiness gate is green with fresh browser, mobile, provider-playback, accessibility, performance and rollback evidence. Future releases remain fail-closed: keep evidence fresh and do not treat static/CI success alone as permission or playback proof.

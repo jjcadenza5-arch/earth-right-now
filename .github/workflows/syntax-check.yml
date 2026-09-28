@@ -18,6 +18,8 @@ on:
       - "tests/participation-storage-bounds.smoke.js"
       - "tests/participation-public-surfaces.smoke.js"
       - "tests/phase-k-release-read.smoke.js"
+      - "tests/now-moment-photo-foundation.smoke.js"
+      - "data/now-moment-media-deployment.json"
       - "now-moments.html"
       - "for-places.html"
       - "data/earth-signal-deployment.json"
@@ -63,6 +65,7 @@ jobs:
           node tests/participation-storage-bounds.smoke.js
           node tests/participation-public-surfaces.smoke.js
           node tests/phase-k-release-read.smoke.js
+          node tests/now-moment-photo-foundation.smoke.js
       - name: Run Generative Guide focused smoke tests
         run: |
           set -euo pipefail
