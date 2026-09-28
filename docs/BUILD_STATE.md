@@ -1,3 +1,15 @@
+## 2026-09-28 — Submission transport backend foundation prepared
+- Continued Phase J with a separate `ern-submission-api` Cloudflare Worker foundation.
+- Public transport remains OFF by default through `ERN_SUBMISSION_ENABLED=false`.
+- Intake repeats canonical server-side validation, requires explicit consent, accepts only the ERN origin, and rate-limits through a server-secret HMAC-derived opaque subject.
+- Durable Object SQLite stores a bounded human-review inbox and anonymous rate events; raw network identifiers are not stored.
+- Intake retention is clamped to 30 days and cleanup runs in durable state.
+- Internal review endpoints require a separate review token. APPROVED remains a review state only and still returns `published:false`; no automatic catalog mutation, embed, health promotion or publication path exists.
+- Contact data is stripped when a submission is approved.
+- Added executable Worker smoke imports and extended the repository syntax guard to cover the submission Worker directory.
+- `data/submission-transport.json` remains disabled until a real HTTPS endpoint and production evidence exist.
+- LIVE HERE and Viator state are unchanged.
+
 ## 2026-09-28 — Next phase opened: Earth Signals production-shaped Worker foundation
 - User explicitly opened the next ERN phase, ending AUTONOMOUS HOLD for this finite infrastructure lane.
 - Added a separate `ern-signals-api` Cloudflare Worker foundation with Durable Object SQLite for structured signals, reports and opaque rate events.
