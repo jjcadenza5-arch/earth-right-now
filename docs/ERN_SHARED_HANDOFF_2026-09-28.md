@@ -103,4 +103,5 @@ User preference: work autonomously in large batches and return only for genuine 
 - Seoul Real-time City Data remains a separate PUBLIC-OFF context-data research lane, never camera truth.
 - Current catalog count at this handoff revision: 91 sources. Always read current `data/sources.json` rather than relying on a frozen count.
 - A destination-opportunity matrix now steers visual-gap research. Current unresolved high/meaningful gaps include Chiang Mai and Paris; already-covered destinations should be maintained selectively rather than padded with duplicates.
+- Chiang Mai PAO CCTV was rechecked after the destination-matrix pass and still reports STANDBY / WAITING FOR FEED on all four official cameras. Keep the gap honest until feed state materially changes.
 - Continue autonomously. Only ask the operator for deployed human playback when a candidate is genuinely ready and inside any provider-published live window.
