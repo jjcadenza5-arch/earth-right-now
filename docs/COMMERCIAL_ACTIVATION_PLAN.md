@@ -28,9 +28,10 @@ Why first: complements ERN's place discovery with tours, activities and ticketab
 
 Current ERN state: **ACTIVE — LIMITED PUBLIC PILOT**  
 Relationship: **ACTIVE**  
-Tracked links: **ON only for the verified Auckland activities pilot**
+Tracked links: **ON only for the verified Auckland activities pilot**  
+Partner registry: **ACTIVE with ERN 90-day recheck horizon**
 
-The first tracked link retains ERN's Viator partner ID and resolves to Auckland activity results. ERN records it as a **destination-level** affiliate link, not a guaranteed deep link to one specific tour. Specific-experience links may be added later only when their click-through behavior is verified as specific.
+The first tracked link retains ERN's Viator partner ID and resolves to Auckland activity results. ERN records it as a **destination-level** affiliate link, not a guaranteed deep link to one specific tour. Specific-experience links may be added later only when their click-through behavior is verified as specific. ERN applies a conservative 90-day internal relationship recheck horizon; this is an ERN verification policy, not a Viator contract-expiry claim.
 
 ## Commercial ladder after Booking.com decision
 
