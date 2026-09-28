@@ -1,0 +1,17 @@
+import assert from "node:assert/strict";
+import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/business-control-status.mjs"],{encoding:"utf8"});
+assert.equal(r.status,0,r.stderr);
+const x=JSON.parse(r.stdout);
+assert.equal(x.phase,"STAGE_Q_BUSINESS_OPERATIONS_CONTROL");
+assert.equal(x.safety.revenueForecastAllowed,false);
+assert.equal(x.safety.bookingOrConversionInferenceAllowed,false);
+assert.equal(x.safety.paidRankingAllowed,false);
+assert.equal(x.safety.automaticPartnerClaimAllowed,false);
+assert.equal(x.safety.automaticExternalAccountActionAllowed,false);
+assert.equal(x.safety.automaticPublicActivationAllowed,false);
+assert.equal(x.safety.commercialSignalsMayAffectEarthRanking,false);
+assert.equal(x.attribution.bookingInferenceAllowed,false);
+assert.equal(x.attribution.revenueInferenceAllowed,false);
+assert(Array.isArray(x.externalGates));
+console.log("Stage Q business control remains read-only and non-inferential");
