@@ -1,3 +1,12 @@
+## 2026-09-28 — Recency maintenance advanced to 64 current-healthy sources
+- Continued provider-backed revalidation without relaxing any source-verification horizon.
+- Revalidated 19 additional current external/LIVE_IMAGE sources this pass, including Meads Bay, Flåm, ISS Earth view, Aruba, Chicago, Dublin, Sint Maarten, Oeschinensee, Lake Lucerne, Amden/Walensee, Mount Rainier, Marco Island, Windjammer, Georgia Aquarium, Zermatt, Ski Arlberg, Florida Now, Dolomiti Superski and Glacier National Park.
+- Revalidated six expired current-image sources: Takayama Miyagawa current images, Grand Canyon, Glenelg, Nossob, Brighton and Farm Tomita.
+- Current catalog state after this batch: 64 current+healthy, 10 stale and 18 expired. Remaining expired debt is now dominated by inside-ERN embed playback reproof rather than simple provider-page freshness.
+- Corrected Pattaya City from HEALTHY to DEGRADED because its official CCTV dashboard currently reports 0 live cameras despite 600 total registered cameras.
+- Reconfirmed Jungfrau Region as DEGRADED because all ten official webcams still report no connection / Offline.
+- Reconciled missing `playbackVerifiedAt` markers for the first three approved Kyoto embeds from their exact existing human-review timestamps and reviewed embed URLs. This does not add new approval; it makes catalog proof match the already-recorded evidence.
+
 ## 2026-09-28 — Recency debt surfaced and destination truth tightened
 - Audited all 93 catalog sources against ERN's current verification horizons. Before this pass: 23 current, 42 stale, 28 expired.
 - Revalidated eight high-value external/current sources from their current provider pages: Coogee/Randwick beaches, Waikiki Beach, Kīlauea, Yellowstone, San Diego Zoo, Chamonix, Whistler Blackcomb and New York skyline.
