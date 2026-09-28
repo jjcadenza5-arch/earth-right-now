@@ -51,6 +51,8 @@ Resolved/active directions:
 - Visit Finland live-webcam guide is a new P1 research lane; Santa Claus Village has an exact official live-video page staged link-first/research-only.
 - Yellowstone Old Faithful has an exact active NPS live-webcam page staged link-first/research-only.
 - Yosemite official current webcams are valuable but permission-gated: the official NPS page directs third parties to a Yosemite Conservancy usage agreement before featuring webcam imagery.
+- Rovaniemi / Santa Claus Village and Yellowstone / Old Faithful are now promoted as EXTERNAL_LIVE / LINK_ONLY; maintain them rather than duplicating their destination coverage.
+- Paris now has an exact official Eiffel Tower live visitor-context lane (attendance/opening/summit conditions/weather), but this remains context-only. Paris still has no verified current visual window in ERN.
 
 ## Commercial state
 - Booking.com application: rejected/inactive; do not claim relationship.
@@ -101,7 +103,8 @@ User preference: work autonomously in large batches and return only for genuine 
 - Public About page now includes the concise strawberry-picking origin of ERN and why current views matter.
 - For Places copy now explicitly invites any visitor-interest place where today's flowers, crowds, weather, visibility, animals, beach conditions, activity or atmosphere can help someone decide whether, when or how to go.
 - Seoul Real-time City Data remains a separate PUBLIC-OFF context-data research lane, never camera truth.
-- Current catalog count at this handoff revision: 91 sources. Always read current `data/sources.json` rather than relying on a frozen count.
+- Current catalog count at this handoff revision: 93 sources. Always read current `data/sources.json` rather than relying on a frozen count.
 - A destination-opportunity matrix now steers visual-gap research. Current unresolved high/meaningful gaps include Chiang Mai and Paris; already-covered destinations should be maintained selectively rather than padded with duplicates.
 - Chiang Mai PAO CCTV was rechecked after the destination-matrix pass and still reports STANDBY / WAITING FOR FEED on all four official cameras. Keep the gap honest until feed state materially changes.
+- Catalog metadata completeness is now a Pages release gate. The current 93-source catalog has complete provider/country/region/truth-support/check-history/story/attribution metadata under truth-aware rules.
 - Continue autonomously. Only ask the operator for deployed human playback when a candidate is genuinely ready and inside any provider-published live window.
