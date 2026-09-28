@@ -1,0 +1,9 @@
+import fs from "node:fs";
+const workflow=fs.readFileSync(".github/workflows/deploy-participation-workers.yml","utf8");
+console.assert(workflow.includes("workflow_dispatch:"),"Participation Worker deployment must remain manual-only");
+console.assert(!workflow.includes("\n  push:"),"Participation Worker deployment must never run on push");
+console.assert(workflow.includes("CLOUDFLARE_API_TOKEN")&&workflow.includes("CLOUDFLARE_ACCOUNT_ID"),"Cloudflare deployment credentials must come from GitHub secrets");
+console.assert(workflow.includes("ERN_EARTH_SIGNALS_ENABLED")&&workflow.includes('"false"'),"Earth Signals deployment must preserve fail-closed activation");
+console.assert(workflow.includes("ERN_SUBMISSION_ENABLED")&&workflow.includes('"false"'),"Submission deployment must preserve fail-closed activation");
+console.assert(workflow.includes("wrangler@latest deploy"),"Participation deployment must use Wrangler");
+console.log("participation Worker deployment remains manual and fail-closed");
