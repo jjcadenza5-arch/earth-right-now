@@ -39,16 +39,24 @@
     },
     {
       "id": "wave-b",
-      "state": "ELIGIBLE_FOR_HUMAN_ONBOARDING",
+      "state": "PROJECT_CONFIRMED_UNDER_REVIEW",
       "programs": [
         {
           "id": "travelpayouts-platform",
-          "state": "READY_TO_CREATE_PROJECT",
-          "relationshipActive": false,
-          "trackedLinksAllowed": false
+          "state": "PROJECT_CONFIRMED_UNDER_REVIEW",
+          "relationshipActive": true,
+          "trackedLinksAllowed": false,
+          "projectDomain": "https://earthrightnow.app",
+          "availableProgramsObserved": 26,
+          "unlockMoreObserved": 20,
+          "visibleProgramsObserved": [
+            "klook",
+            "yesim"
+          ],
+          "reviewState": "MATCHING_IN_PROGRESS"
         }
       ],
-      "rationale": "Next commercial rung after Booking.com rejection: create one ERN travel Project on Travelpayouts, then use only programs actually made available to that Project. Some programs may be instant-access and others may require brand review."
+      "rationale": "ERN website ownership is confirmed in Travelpayouts. The Project is under program matching/review with 26 programs already shown available and 20 more shown as unlockable. Activate only programs that fit ERN and only after reviewing their individual terms."
     },
     {
       "id": "wave-c",
@@ -60,7 +68,7 @@
       "rationale": "Direct large-brand applications remain on hold while ERN builds traffic, social proof and commercial history through Viator and Travelpayouts-accessible programs."
     }
   ],
-  "next": "CREATE_TRAVELPAYOUTS_PROJECT_THEN_USE_ONLY_AVAILABLE_PROGRAMS",
+  "next": "WAIT_FOR_TRAVELPAYOUTS_MATCHING_THEN_REVIEW_AVAILABLE_PROGRAMS",
   "note": "Commercial ladder after Booking.com rejection: Viator remains active; Travelpayouts is the next onboarding platform; direct Agoda/Skyscanner applications are deferred until stronger traffic or a material program signal. No program is claimed active before real account evidence.",
-  "updatedAt": "2026-09-28T11:55:00Z"
+  "updatedAt": "2026-09-28T12:25:00Z"
 }
