@@ -1,3 +1,8 @@
+## 2026-09-28 — Guide planning copy moved out of app-lite to preserve performance budget
+- Performance CI blocked the repaired Guide build because app-lite reached 102,768 bytes, slightly above ERN's fixed 100 KB ceiling.
+- Kept the ceiling unchanged and moved only the longer seven-language trip-planning strings into the existing split `home-i18n.js` bundle.
+- Guide behavior and all seven languages remain intact; core app logic is leaner.
+
 ## 2026-09-28 — Guide trip-intent syntax failure repaired before deployment
 - Pages/JavaScript syntax gates correctly blocked the first “See before I go” deployment because multilingual planning copy had been inserted at an invalid boundary in `guide-public-copy.js`.
 - Restored `guide-public-copy.js` to the last known-good version and moved the new planning prompt/result copy into the app's existing seven-language translation layer.
