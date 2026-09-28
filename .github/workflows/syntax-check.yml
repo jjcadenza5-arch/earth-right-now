@@ -33,6 +33,7 @@ on:
       - "tests/operations-autonomy-boundary.smoke.js"
       - "tests/watch-earth-inside-core.smoke.js"
       - "tests/viewer-fullscreen-stage-first.smoke.js"
+      - "tests/fullscreen-continuity.smoke.js"
       - "press.html"
       - "data/public-brand-facts.json"
       - "data/distribution-channels.json"
@@ -113,3 +114,4 @@ jobs:
           set -euo pipefail
           node tests/watch-earth-inside-core.smoke.js
           node tests/viewer-fullscreen-stage-first.smoke.js
+          node tests/fullscreen-continuity.smoke.js
