@@ -1,3 +1,9 @@
+## 2026-09-28 — Rovaniemi and Old Faithful official live windows added
+- Added Santa Claus Village / Arctic Circle as EXTERNAL_LIVE / LINK_ONLY from the official village page; the live video is hosted by the City of Rovaniemi.
+- Added Old Faithful / Upper Geyser Basin as EXTERNAL_LIVE / LINK_ONLY from the official NPS live-stream webcam page, whose exact media status is Active.
+- Both are high-value See Before You Go sources: seasonal/weather/atmosphere in Lapland and live geyser/park conditions in Yellowstone.
+- No embed/reuse rights are inferred from the public live pages.
+
 ## 2026-09-28 — Visitor-source expansion + Seoul adapter foundation
 - Added three high-value See Before You Go research lanes without public promotion: Visit Finland live webcams, Yellowstone Old Faithful, and Yosemite current webcams.
 - Resolved exact safe research targets for Santa Claus Village (official live-video page) and Yellowstone Old Faithful (active NPS webcam page); both remain link-first/research-only until deployed visitor review.
