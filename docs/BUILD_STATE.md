@@ -1,3 +1,11 @@
+## 2026-09-28 — Phase L media deployment readiness prepared
+- Extended the existing manual-only participation deployment workflow with an explicit `now-moment-media` target.
+- Media deployment fails closed unless the private `ern-now-moment-media` R2 bucket already exists and both `ERN_MEDIA_RATE_HMAC_KEY` + `ERN_MEDIA_REVIEW_TOKEN` are available as GitHub secrets.
+- Runtime secrets are installed directly into Worker secret storage; values are not committed or echoed.
+- Deployment preserves `ERN_NOW_MOMENT_PHOTO_ENABLED=false`.
+- Extended the live deployment verifier to certify media object storage, durable metadata, rate/review secret presence, private bucket posture, video disabled, automatic publication false, 45-minute retention, bounded storage and public photo activation OFF.
+- Repository readiness still does not claim the R2 bucket or Worker have actually been provisioned.
+
 ## 2026-09-28 — Phase L private media Worker foundation prepared
 - Added separate `ern-now-moment-media` Cloudflare Worker foundation with photo public activation OFF by default.
 - Prepared a private R2 bucket binding; the bucket is never used as a public origin.
