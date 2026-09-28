@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { sourceMetadataCompleteness,catalogMetadataAudit } from "../src/catalog-metadata-audit.js";
 
-const full={id:"x",provider:"p",country:"c",region:"r",timeZone:"UTC",categories:["City"],rightsBasis:"basis",checkedAt:"2026-09-19",lastSuccessfulCheck:"2026-09-19",quality:80,story:"story",attribution:"p"};
+const full={id:"x",provider:"p",country:"c",region:"r",timeZone:"UTC",categories:["City"],rightsBasis:"basis",freshnessEvidence:"verified current",checkedAt:"2026-09-19",lastSuccessfulCheck:"2026-09-19",quality:80,story:"story",attribution:"p"};
 assert.equal(sourceMetadataCompleteness(full).complete,true);
 assert.equal(sourceMetadataCompleteness(full).score,100);
 
@@ -16,6 +16,9 @@ assert.equal(a.total,2);
 assert.equal(a.incomplete,1);
 assert.ok(a.rows[0].missing.includes("story"));
 assert.ok(a.rows[0].missing.includes("quality"));
+
+const noFreshness=sourceMetadataCompleteness({...full,id:"freshness-missing",freshnessEvidence:""});
+assert.ok(noFreshness.missing.includes("freshnessEvidence"));
 
 const noAttribution=sourceMetadataCompleteness({...full,id:"z",attribution:""});
 assert.ok(noAttribution.missing.includes("attribution"));
