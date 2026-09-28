@@ -49,3 +49,18 @@ assert.equal(prep.preparation[0].requiredHumanAction,"NONE_YET_PREPARE_EXACT_PRO
 assert.equal(prep.nextAction,"PREPARE_PROVIDER_GENERATED_TARGET");
 assert.equal(prep.safety.automaticWidgetGenerationAllowed,false);
 assert.equal(prep.preparation[0].promotionAllowed,false);
+
+
+const scheduledCandidate={id:"scheduled",provider:"Kyoto",playbackReview:"HUMAN_PLAYBACK_REQUIRED",reviewWindow:{timeZone:"Asia/Tokyo",start:"11:00",end:"18:00"}};
+const outside=researchReviewQueue([scheduledCandidate],{primaryCount:1,now:new Date("2026-09-28T15:16:17.377Z")});
+assert.equal(outside.state,"WAIT_FOR_REVIEW_WINDOW");
+assert.equal(outside.primary.length,0);
+assert.equal(outside.scheduledWaiting.length,1);
+assert.equal(outside.scheduledWaiting[0].requiredHumanAction,"WAIT_FOR_PUBLISHED_LIVE_WINDOW");
+assert.equal(outside.exhausted,false);
+const inside=researchReviewQueue([scheduledCandidate],{primaryCount:1,now:new Date("2026-09-29T03:00:00Z")});
+assert.equal(inside.state,"HUMAN_REVIEW_READY");
+assert.equal(inside.primary.length,1);
+assert.equal(inside.primary[0].id,"scheduled");
+assert.equal(inside.scheduledWaiting.length,0);
+console.log("ERN research review queue respects provider-published live windows");
