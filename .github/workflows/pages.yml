@@ -56,6 +56,7 @@ on:
       - "scripts/rollback-preflight.mjs"
       - "scripts/participation-preflight.mjs"
       - "scripts/featured-curation-preflight.mjs"
+      - "scripts/guide-see-before-go-preflight.mjs"
       - "scripts/source-research-priority-status.mjs"
       - "scripts/visitor-source-expansion-status.mjs"
       - "scripts/realtime-context-status.mjs"
@@ -115,6 +116,8 @@ jobs:
         run: node scripts/featured-curation-preflight.mjs
       - name: Source research priority integrity
         run: node scripts/source-research-priority-status.mjs
+      - name: Guide See before go preflight
+        run: node scripts/guide-see-before-go-preflight.mjs
       - name: Visitor source expansion integrity
         run: node scripts/visitor-source-expansion-status.mjs
       - name: Real-time context integrity

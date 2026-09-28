@@ -1,3 +1,8 @@
+## 2026-09-28 — Add See before I go Guide doorway
+- Added a lightweight trip-intent quick action and deterministic planning response.
+- Localized it across all seven interface languages.
+- No source/commercial ranking behavior changed.
+
 ## 2026-09-28 — Improve coordinate provenance and preserve Chiang Mai truth
 - Upgraded Singapore Port and Rome Spanish Steps place-reference coordinates to stronger Wikidata/official tourism sources.
 - Rechecked Chiang Mai PAO CCTV; official feeds remain standby/waiting.
