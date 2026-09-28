@@ -20,7 +20,7 @@
     "title": "Explore Auckland activities",
     "placeId": "auckland-viaduct-harbour",
     "provider": "Klook",
-    "intent": "tickets",
+    "intent": "activities",
     "affiliate": true,
     "sponsored": false,
     "partnerId": "klook",
@@ -29,6 +29,7 @@
     "disclosure": "Affiliate link",
     "verifiedAt": "2026-09-28T13:45:00Z",
     "expiresAt": "2026-12-27T13:45:00Z",
-    "evidence": "Human generated a destination-specific Klook/Auckland link through the verified Travelpayouts ERN Project and confirmed it opens the Auckland destination page correctly."
+    "evidence": "Human generated a destination-specific Klook/Auckland link through the verified Travelpayouts ERN Project and confirmed it opens the Auckland destination page correctly.",
+    "verified": true
   }
 ]
