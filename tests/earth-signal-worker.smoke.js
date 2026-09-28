@@ -2,7 +2,11 @@ import fs from "node:fs";
 const cfg=fs.readFileSync("signals-worker/wrangler.jsonc","utf8");
 const worker=fs.readFileSync("signals-worker/src/index.js","utf8");
 const state=fs.readFileSync("signals-worker/src/signal-state.js","utf8");
+const workerModule=await import("../signals-worker/src/index.js");
+const stateModule=await import("../signals-worker/src/signal-state.js");
 
+console.assert(typeof workerModule.default?.fetch==="function","Earth Signals Worker module must export fetch");
+console.assert(typeof stateModule.SignalState==="function","Earth Signals Worker must export SignalState");
 console.assert(cfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "false"'),"Earth Signals must deploy fail-closed by default");
 console.assert(cfg.includes('"class_name": "SignalState"')&&cfg.includes('"storage": "sqlite"'),"Earth Signals durable state must use SQLite");
 console.assert(worker.includes("earthSignalHttpRequest"),"Worker must reuse the canonical Earth Signal HTTP contract");
