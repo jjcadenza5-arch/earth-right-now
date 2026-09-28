@@ -1,3 +1,8 @@
+## 2026-09-28 — Repair blocked Guide trip-intent build
+- Syntax CI caught malformed multilingual Guide copy before deployment.
+- Restored the valid public-copy file and moved trip-planning translations into the existing app i18n layer.
+- Public site was not affected by the failed build.
+
 ## 2026-09-28 — Add See before I go Guide doorway
 - Added a lightweight trip-intent quick action and deterministic planning response.
 - Localized it across all seven interface languages.

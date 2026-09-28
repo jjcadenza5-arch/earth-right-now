@@ -1,15 +1,13 @@
 import fs from "node:fs";
 const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
-const guide=fs.readFileSync(new URL("../src/guide-public-copy.js",import.meta.url),"utf8");
 const html=fs.readFileSync(new URL("../index.html",import.meta.url),"utf8");
 const fail=[];
 if(!html.includes('data-guide="see before i go"'))fail.push("missing See before I go chip");
 if(!html.includes('data-i18n="guideBeforeGo"'))fail.push("missing localized Guide chip key");
 if(!app.includes("planning:has("))fail.push("missing planning intent");
-if(!app.includes('guideMsg("planningPrompt")'))fail.push("missing planning prompt response");
-if(!app.includes('guideMsg("planningFound"'))fail.push("missing destination planning response");
-for(const lang of ["en","th","de","fr","ja","zh","es"]){if(!guide.includes(lang+":{"))fail.push("missing guide language: "+lang);}
-if((guide.match(/planningPrompt:/g)||[]).length<7)fail.push("planning prompt not localized to seven languages");
-if((guide.match(/planningFound:/g)||[]).length<7)fail.push("planning result not localized to seven languages");
+if(!app.includes('t("guidePlanningPrompt")'))fail.push("missing planning prompt response");
+if(!app.includes('t("guidePlanningFound")'))fail.push("missing destination planning response");
+if((app.match(/guidePlanningPrompt:/g)||[]).length<7)fail.push("planning prompt not localized to seven languages");
+if((app.match(/guidePlanningFound:/g)||[]).length<7)fail.push("planning result not localized to seven languages");
 console.log(JSON.stringify({ok:fail.length===0,fail},null,2));
 if(fail.length)process.exit(1);
