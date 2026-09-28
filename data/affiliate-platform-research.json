@@ -9,7 +9,7 @@
     ],
     "programUrl": "https://www.booking.com/affiliate-program/v2/index.html",
     "termsUrl": "https://www.booking.com/affiliate-program/v2/index.html",
-    "programStatus": "AVAILABLE_APPLICATION_REQUIRED",
+    "programStatus": "APPLICATION_NOT_APPROVED_2026-09-28",
     "applicationRequired": true,
     "networkOrAccount": "Awin/CJ depending on region",
     "commissionEvidence": "Official affiliate page confirms commission on qualified bookings; no fixed ERN commission assumption stored.",
@@ -18,7 +18,8 @@
     "credentialsConfigured": false,
     "publicActivationAllowed": false,
     "trackedLinksAllowed": false,
-    "paidRankingAllowed": false
+    "paidRankingAllowed": false,
+    "decisionNote": "Booking.com APAC/CJ reported the application was not approved on 2026-09-28."
   },
   {
     "id": "agoda",
@@ -48,16 +49,18 @@
     ],
     "programUrl": "https://partnerresources.viator.com/",
     "termsUrl": "https://partnerresources.viator.com/travel-content/links/",
-    "programStatus": "AVAILABLE_SIGNUP_REQUIRED",
+    "programStatus": "ACTIVE_LIMITED_PILOT",
     "applicationRequired": true,
     "networkOrAccount": "Viator Partner Program",
     "commissionEvidence": "Current official Viator partner materials state 8% commission on completed experience bookings attributed within a 30-day cookie window.",
     "termsReviewedAt": "2026-09-24T16:18:00Z",
-    "relationshipActive": false,
-    "credentialsConfigured": false,
-    "publicActivationAllowed": false,
-    "trackedLinksAllowed": false,
-    "paidRankingAllowed": false
+    "relationshipActive": true,
+    "credentialsConfigured": true,
+    "publicActivationAllowed": true,
+    "trackedLinksAllowed": true,
+    "paidRankingAllowed": false,
+    "activationScope": "Verified Auckland destination-level tracked link only; API products remain separately gated.",
+    "activatedAt": "2026-09-27T13:17:00Z"
   },
   {
     "id": "skyscanner",
@@ -76,6 +79,30 @@
     "credentialsConfigured": false,
     "publicActivationAllowed": false,
     "trackedLinksAllowed": false,
+    "paidRankingAllowed": false
+  },
+  {
+    "id": "travelpayouts",
+    "name": "Travelpayouts",
+    "intents": [
+      "stay",
+      "transport",
+      "activities",
+      "services"
+    ],
+    "programUrl": "https://www.travelpayouts.com/",
+    "termsUrl": "https://www.travelpayouts.com/",
+    "programStatus": "PROJECT_CONFIRMED_MATCHING_IN_PROGRESS",
+    "applicationRequired": false,
+    "networkOrAccount": "Travelpayouts",
+    "commissionEvidence": "Program-specific rates vary by brand and are not assumed until the ERN Project dashboard exposes an eligible program.",
+    "termsReviewedAt": "2026-09-28T12:25:00Z",
+    "relationshipActive": true,
+    "credentialsConfigured": true,
+    "publicActivationAllowed": false,
+    "trackedLinksAllowed": false,
+    "driveAutomationAllowed": false,
+    "manualToolsOnly": true,
     "paidRankingAllowed": false
   }
 ]
