@@ -1,3 +1,9 @@
+## 2026-09-28 — Stable beta readiness milestone
+- Refreshed the six formal release-evidence records from current September 28 evidence.
+- ERN's beta-readiness inputs now meet every model cap and all six evidence categories pass, yielding the model's 100% planning indicator.
+- Recorded successful Google Search Console sitemap submission for earthrightnow.app; indexing remains an external Google process.
+- No commercial, analytics, participation, upload or social activation changed.
+
 ## 2026-09-28 — Defer fullscreen transition persistence
 - Human browser review confirmed fullscreen still exits when switching livestreams, including ordinary Next navigation.
 - Marked the issue non-blocking and deferred rather than continuing a browser-specific repair loop.
