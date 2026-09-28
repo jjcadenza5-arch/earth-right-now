@@ -70,7 +70,8 @@
     "local:directory-status": "node scripts/local-directory-status.mjs",
     "discoverability:preflight": "node scripts/discoverability-preflight.mjs",
     "participation:status": "node scripts/participation-infrastructure-status.mjs",
-    "participation:verify-deployment": "node scripts/participation-deployment-verify.mjs"
+    "participation:verify-deployment": "node scripts/participation-deployment-verify.mjs",
+    "distribution:status": "node scripts/distribution-readiness.mjs"
   },
   "engines": {
     "node": ">=20"
