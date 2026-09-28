@@ -1,3 +1,9 @@
+## 2026-09-28 — Advance source recency to 64 current-healthy records
+- Revalidated a further 25 external/current-image sources from explicit provider evidence.
+- Corrected Pattaya City to degraded (official dashboard: 0 live cameras) and reaffirmed Jungfrau as degraded (all ten webcams offline).
+- Reconciled playback proof timestamps for the first three approved Kyoto embeds from their existing exact human-review records.
+- Remaining stale/expired debt is now concentrated in sources that need deployed playback proof or separate provider-state review.
+
 ## 2026-09-28 — Make source recency visible and actionable
 - Rechecked eight high-value provider sources and raised current inventory from 23 to 37 of 93 across two provider-backed recheck batches.
 - Split destination pages into current verified views vs sources awaiting recheck.
