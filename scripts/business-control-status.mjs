@@ -21,7 +21,7 @@ const analyticsEnabled=/enabled\s*:\s*true/.test(analyticsText)&&!/provider\s*:\
 
 const externalGates=[];
 const booking=program("booking-com"),viator=program("viator");
-if(booking&&booking.state!=="ACTIVE")externalGates.push({id:"booking-com",state:booking.state});
+if(booking&&/PENDING|WAIT|REVIEW|ACTIVATION/i.test(String(booking.state)))externalGates.push({id:"booking-com",state:booking.state});
 if(viator&&/PENDING|WAIT|ACTIVATION/i.test(String(viator.state)))externalGates.push({id:"viator",state:viator.state});
 if(earthSignals.status!=="DEPLOYED")externalGates.push({id:"earth-signals-deployment",state:earthSignals.status});
 if(submissions.enabled!==true)externalGates.push({id:"submission-transport",state:submissions.status||"DISABLED"});
@@ -40,7 +40,7 @@ const status={
   },
   commercial:{
     activationState:affiliate.state||"UNKNOWN",
-    bookingCom:booking?{state:booking.state,submittedAt:booking.submittedAt||null}:null,
+    bookingCom:booking?{state:booking.state,submittedAt:booking.submittedAt||null,decisionAt:booking.decisionAt||null,relationshipActive:booking.relationshipActive===true}:null,
     viator:viator?{state:viator.state,activatedAt:viator.activatedAt||null,partnerIdPresent:Boolean(viator.partnerId)}:null,
     verifiedPublicOffers:verifiedOffers.length,
     affiliateOffers:verifiedOffers.filter(x=>x.affiliate===true).length,

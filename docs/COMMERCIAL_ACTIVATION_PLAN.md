@@ -1,6 +1,6 @@
 # ERN commercial activation plan
 
-Status: **PHASE 3 ACTIVE — VIATOR LIMITED PILOT, BOOKING.COM PENDING**
+Status: **PHASE 3 ACTIVE — VIATOR LIMITED PILOT, BOOKING.COM REJECTED, LODGING REVIEW REOPENED**
 
 Opened: 2026-09-27
 
@@ -16,9 +16,11 @@ Do not publish tracked affiliate links or claim a partner relationship until acc
 
 Why first: one relationship can cover a broad range of travel intents around ERN places, including accommodations and other travel offerings. The current official Booking.com affiliate page directs new affiliates to register and complete regional enrollment through CJ.
 
-Current ERN state: **APPLICATION SUBMITTED / PENDING REVIEW**  
-Relationship: **NOT YET ACTIVE**  
+Current ERN state: **APPLICATION NOT APPROVED — 28 SEP 2026**  
+Relationship: **INACTIVE**  
 Tracked links: **OFF**
+
+This is recorded as a program decision only. Booking.com/CJ did not state that ERN lacks quality or value; the rejection message explicitly says advertiser acceptance can vary for many reasons.
 
 ### 2. Viator
 
@@ -33,18 +35,19 @@ The first tracked link retains ERN's Viator partner ID and resolves to Auckland 
 ## Later waves
 
 ### Agoda
-Hold until Wave A state is known. It is a useful complementary accommodation program, especially for global/Asian travel, but ERN does not need two lodging applications before the first commercial path is proven.
+**ELIGIBLE FOR REVIEW.** Wave A is now materially known: Viator is active and Booking.com was not approved. Agoda becomes the next lodging-channel candidate, especially for global/Asian travel, but ERN should review current program requirements before any human application is submitted.
 
 ### Skyscanner
-Hold until Wave A state is known. Current Skyscanner referral tracking uses Impact partner IDs; defer the extra network/tracking relationship until ERN has one working commercial path.
+**HOLD PENDING LODGING REVIEW.** Viator already gives ERN one working commercial path. Defer this extra transport/referral relationship while the next lodging channel is reviewed.
 
 ## User-side actions required
 
-1. Open the official Booking.com affiliate enrollment page and begin the CJ registration/application.
-2. Open the official Viator Partner Program and create/enroll the ERN affiliate account.
-3. Use **Earth Right Now** / **earthrightnow.app** as the site/product identity.
-4. Do not invent traffic, conversion, audience-size or revenue figures. Use truthful current values if asked.
-5. Do not paste affiliate credentials into chat or GitHub.
+1. No further Booking.com action is required unless CJ/Booking.com provides a material new invitation or account-state change.
+2. Continue the verified Viator pilot.
+3. Review Agoda's current affiliate/application requirements before deciding whether to apply.
+4. Use **Earth Right Now** / **earthrightnow.app** as the site/product identity for any future application.
+5. Do not invent traffic, conversion, audience-size or revenue figures. Use truthful current values if asked.
+6. Do not paste affiliate credentials into chat or GitHub.
 
 ## After acceptance
 
@@ -57,4 +60,4 @@ Only after a program confirms acceptance:
 - activate a limited public pilot;
 - confirm Earth-view ranking is unchanged.
 
-Current finite lane: monitor the Auckland Viator pilot and wait for Booking.com review. Do not reopen the 30-place commercial research set or start Agoda/Skyscanner merely to create activity. Expand Viator only with verified destination or experience links whose scope is represented truthfully.
+Current finite lane: monitor the Auckland Viator pilot and review Agoda as the next lodging-channel candidate. Do not reopen the completed 30-place commercial research set or start Skyscanner merely to create activity. Expand Viator only with verified destination or experience links whose scope is represented truthfully.
