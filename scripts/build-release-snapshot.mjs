@@ -38,13 +38,22 @@ await cp(new URL("../service-worker.js",import.meta.url),new URL("service-worker
 await cp(new URL("../offline.html",import.meta.url),new URL("offline.html",dist));
 await cp(new URL("../privacy.html",import.meta.url),new URL("privacy.html",dist));
 await cp(new URL("../now-moments.html",import.meta.url),new URL("now-moments.html",dist));
+await cp(new URL("../stories.html",import.meta.url),new URL("stories.html",dist));
+await cp(new URL("../src/ern-stories.js",import.meta.url),new URL("src/ern-stories.js",dist));
+await cp(new URL("../src/stories-page.js",import.meta.url),new URL("src/stories-page.js",dist));
+await cp(new URL("../src/discovery-eligibility.js",import.meta.url),new URL("src/discovery-eligibility.js",dist));
+await cp(new URL("../src/source-recency.js",import.meta.url),new URL("src/source-recency.js",dist));
+await cp(new URL("../src/embed-policy.js",import.meta.url),new URL("src/embed-policy.js",dist));
+await cp(new URL("../src/url-safety.js",import.meta.url),new URL("src/url-safety.js",dist));
+await cp(new URL("../src/solar-moment.js",import.meta.url),new URL("src/solar-moment.js",dist));
+await cp(new URL("../src/media-identity.js",import.meta.url),new URL("src/media-identity.js",dist));
 await cp(new URL("../for-places.html",import.meta.url),new URL("for-places.html",dist));
 await cp(new URL("../release-verification.html",import.meta.url),new URL("release-verification.html",dist));
 await cp(new URL("../src/release-verification-console.js",import.meta.url),new URL("src/release-verification-console.js",dist));
 await cp(new URL("../about.html",import.meta.url),new URL("about.html",dist));
 await cp(new URL("../deploy/_headers",import.meta.url),new URL("_headers",dist));
 await cp(new URL("../deploy/_redirects",import.meta.url),new URL("_redirects",dist));
-const files=["index.html","src/guide-public-copy.js","src/home-i18n.js","src/participation-public-config.js","src/earth-signal-client.js","src/earth-signals.js","src/now-moments-page.js","src/submission-client.js","src/business-submission.js","src/submission-review-contract.js","src/for-places-page.js","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","release-verification.html","data/sources.json","data/local-directory.json","data/travel-offers.json","data/provider-observations.json","data/earth-signal-deployment.json","data/submission-transport.json","data/release-evidence.json","for-places.html","now-moments.html","review/inside-ern.html"];
+const files=["index.html","src/guide-public-copy.js","src/home-i18n.js","src/participation-public-config.js","src/earth-signal-client.js","src/earth-signals.js","src/now-moments-page.js","src/submission-client.js","src/business-submission.js","src/submission-review-contract.js","src/for-places-page.js","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","privacy.html","release-verification.html","data/sources.json","data/local-directory.json","data/travel-offers.json","data/provider-observations.json","data/earth-signal-deployment.json","data/submission-transport.json","data/release-evidence.json","for-places.html","now-moments.html","stories.html","src/ern-stories.js","src/stories-page.js","src/discovery-eligibility.js","src/source-recency.js","src/embed-policy.js","src/url-safety.js","src/solar-moment.js","src/media-identity.js","review/inside-ern.html"];
 const hashes={};for(const p of files){const b=await readFile(new URL(p,dist));hashes[p]=createHash("sha256").update(b).digest("hex")}
 const pkg=JSON.parse(await readFile(new URL("../package.json",import.meta.url),"utf8"));
 const commit=String(process.env.GITHUB_SHA||process.env.ERN_COMMIT_SHA||"").trim()||null;
