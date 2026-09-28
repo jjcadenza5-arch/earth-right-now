@@ -1,3 +1,9 @@
+## 2026-09-28 — Affiliate research/activation boundary repaired
+- Operations correctly rejected live relationship state inside the research-only affiliate-platform registry.
+- Restored `data/affiliate-platform-research.json` to research-only program availability facts.
+- Real Booking.com, Viator and Travelpayouts account/relationship states remain authoritative in `data/affiliate-activation.json` and `data/affiliate-partners.json`.
+- This preserves the separation between “a program exists” and “ERN has a real relationship.”
+
 ## 2026-09-28 — Travelpayouts matching added to external gate control
 - Added Travelpayouts Project matching as a first-class external gate in Operations.
 - Business control now reports Travelpayouts review state, observed available-program count and Drive automation state.
