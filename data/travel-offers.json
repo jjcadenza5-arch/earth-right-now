@@ -65,5 +65,22 @@
     "evidence": "Human generated a destination-specific Tiqets/Statue of Liberty link through the verified Travelpayouts ERN Project and confirmed it opens the Statue of Liberty Tiqets page correctly.",
     "id": "tiqets-statue-liberty-harbor",
     "placeId": "statue-liberty-harbor-earthcam"
+  },
+  {
+    "id": "welcome-pickups-auckland-transfer",
+    "title": "Auckland airport transfer",
+    "placeId": "auckland-viaduct-harbour",
+    "provider": "Welcome Pickups",
+    "intent": "transport",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "welcome-pickups",
+    "destinationScope": "Auckland airport to city",
+    "url": "https://tpo.mx/VxEEARBO",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-09-28T13:58:00Z",
+    "expiresAt": "2026-12-27T13:58:00Z",
+    "evidence": "Human generated a destination-specific Welcome Pickups Auckland airport-to-city link through the verified Travelpayouts ERN Project and confirmed it opens the Auckland transfer page correctly."
   }
 ]
