@@ -66,8 +66,27 @@ export default{
     if(request.method==="OPTIONS")return origin?new Response(null,{status:204,headers:{"access-control-allow-origin":origin,"access-control-allow-methods":"GET, POST, OPTIONS","access-control-allow-headers":"content-type","access-control-max-age":"600","vary":"Origin"}}):new Response(null,{status:403});
     if(request.method==="GET"&&url.pathname==="/health"){
       let state=null;try{state=await stateCall(env,{op:"status"})}catch{}
-      return reply(200,{ok:true,service:"ERN Earth Signals API",contributionsEnabled:enabled,durableStorage:Boolean(env.SIGNAL_STATE),rateSubjectSecretConfigured:Boolean(env.ERN_RATE_HMAC_KEY),rawNetworkIdentifiersStored:false,state,secretValuesExposed:false},origin);
+      return reply(200,{ok:true,service:"ERN Earth Signals API",contributionsEnabled:enabled,durableStorage:Boolean(env.SIGNAL_STATE),rateSubjectSecretConfigured:Boolean(env.ERN_RATE_HMAC_KEY),reviewTokenConfigured:Boolean(env.ERN_SIGNAL_REVIEW_TOKEN),rawNetworkIdentifiersStored:false,state,secretValuesExposed:false},origin);
     }
+    if(url.pathname.startsWith("/internal/earth-signals")){
+      const expected=String(env.ERN_SIGNAL_REVIEW_TOKEN||"");
+      const got=String(request.headers.get("authorization")||"");
+      if(!expected||got!==`Bearer ${expected}`)return reply(401,{ok:false,reason:"UNAUTHORIZED"});
+      if(request.method==="GET"&&url.pathname==="/internal/earth-signals/reports"){
+        const x=await stateCall(env,{op:"list-reports",now:Date.now()});
+        return reply(200,x);
+      }
+      const m=url.pathname.match(/^\/internal\/earth-signals\/([^/]+)\/resolve$/);
+      if(request.method==="POST"&&m){
+        let body;try{body=await request.json()}catch{return reply(400,{ok:false,reason:"INVALID_JSON"})}
+        const decision=String(body?.decision||"");
+        if(!["RESTORE","REMOVE"].includes(decision))return reply(400,{ok:false,reason:"INVALID_RESOLUTION"});
+        const x=await stateCall(env,{op:"resolve-report",signalId:decodeURIComponent(m[1]),decision,now:Date.now()});
+        return reply(200,{...x,published:false});
+      }
+      return reply(404,{ok:false,reason:"NOT_FOUND"});
+    }
+
     if(!url.pathname.startsWith("/api/earth-signals"))return reply(404,{ok:false,reason:"NOT_FOUND"},origin);
     if(!origin)return reply(403,{ok:false,reason:"ORIGIN_NOT_ALLOWED"});
     if((+request.headers.get("content-length")||0)>4096)return reply(413,{ok:false,reason:"REQUEST_TOO_LARGE"},origin);
