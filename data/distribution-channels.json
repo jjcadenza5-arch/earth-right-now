@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "website": {
+    "canonicalDomain": "https://earthrightnow.app",
+    "storyDeepLinks": true,
+    "nativeWebShare": true,
+    "copyLinkFallback": true
+  },
+  "aiSearch": {
+    "robotsPublished": true,
+    "sitemapPublished": true,
+    "oaiSearchBotAllowed": true,
+    "structuredSiteIdentity": true
+  },
+  "channels": [
+    {"id":"instagram","state":"NOT_CONNECTED","automaticPostingAllowed":false},
+    {"id":"whatsapp","state":"NOT_CONNECTED","automaticPostingAllowed":false},
+    {"id":"line","state":"NOT_CONNECTED","automaticPostingAllowed":false},
+    {"id":"tiktok","state":"NOT_CONNECTED","automaticPostingAllowed":false},
+    {"id":"youtube","state":"NOT_CONNECTED","automaticPostingAllowed":false},
+    {"id":"facebook","state":"NOT_CONNECTED","automaticPostingAllowed":false},
+    {"id":"x","state":"NOT_CONNECTED","automaticPostingAllowed":false}
+  ],
+  "safety": {
+    "inventAccountClaimsAllowed": false,
+    "automaticAccountCreationAllowed": false,
+    "automaticPostingAllowed": false,
+    "paidPromotionAssumed": false,
+    "commercialRankingAffected": false
+  }
+}

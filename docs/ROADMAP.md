@@ -34,6 +34,9 @@ Still-photo Now Moments now have a prepared private R2 + Durable Object Worker, 
 ## Stage M — ERN Stories / curiosity discovery — LIVE / LOCALLY COMPLETE
 The approved curiosity-first principle is now a visible, deployed discovery surface rather than a parallel content system. Stories are generated only from ERN's current/discoverable catalog, deduplicate place/media identity, preserve truth/playback labels, and use an open question rather than a claim as the hook. The live/current window remains the answer. Homepage and ERN Guide both provide doorways into Stories. No invented weather, events, crowds, wildlife sightings, urgency or clickbait. Future refinement is iterative content/presentation work, not a blocker to the next phase.
 
+## Stage N — organic distribution & shareability — ACTIVE
+Make ERN easy to share and discover without paid promotion or invented social presence. Story deep links, native Web Share and copy-link fallback are platform-neutral and account-independent. AI/search discoverability remains grounded in the canonical domain, sitemap, robots and structured site identity. Social channels such as Instagram, WhatsApp, LINE, TikTok, YouTube, Facebook and X remain NOT_CONNECTED until official ERN accounts actually exist and are intentionally connected. Social popularity, sponsorship and affiliate relationships must never alter Earth-window truth or editorial ranking.
+
 ## Stage I — public deployment and release certification — PUBLIC / GATE READY
 earthrightnow.app is publicly deployed and the current release-readiness gate is green with fresh browser, mobile, provider-playback, accessibility, performance and rollback evidence. Future releases remain fail-closed: keep evidence fresh and do not treat static/CI success alone as permission or playback proof.
 

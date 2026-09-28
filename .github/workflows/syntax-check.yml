@@ -24,6 +24,9 @@ on:
       - "tests/now-moment-media-worker.smoke.js"
       - "tests/ern-stories.smoke.js"
       - "tests/stage-m-completion.smoke.js"
+      - "tests/share-links.smoke.js"
+      - "tests/distribution-readiness.smoke.js"
+      - "data/distribution-channels.json"
       - "stories.html"
       - "tests/stage-l-completion.smoke.js"
       - ".github/workflows/deploy-now-moment-media.yml"
@@ -83,6 +86,8 @@ jobs:
         run: |
           node tests/ern-stories.smoke.js
           node tests/stage-m-completion.smoke.js
+          node tests/share-links.smoke.js
+          node tests/distribution-readiness.smoke.js
       - name: Run Generative Guide focused smoke tests
         run: |
           set -euo pipefail

@@ -1,0 +1,10 @@
+import assert from "node:assert/strict";
+import {ernStoryUrl,ernStorySharePayload,shareOrCopy} from "../src/share-links.js";
+assert.equal(ernStoryUrl("abc",{origin:"https://earthrightnow.app"}),"https://earthrightnow.app/stories.html?story=abc");
+const p=ernStorySharePayload({id:"abc",question:"What does Bergen look like right now?"});
+assert.equal(p.url,"https://earthrightnow.app/stories.html?story=abc");
+assert.match(p.text,/What does Bergen look like right now\?/);
+let copied="";
+const r=await shareOrCopy(p,{navigatorLike:{clipboard:{async writeText(x){copied=x}}}});
+assert.equal(r.method,"COPY_LINK");assert.equal(copied,p.url);
+console.log("ERN share links remain canonical, platform-neutral and account-independent");
