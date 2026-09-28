@@ -297,8 +297,10 @@
     {
       "destination": "Rome",
       "country": "Italy",
-      "visualCoverage": "VISUAL_GAP",
-      "currentSources": [],
+      "visualCoverage": "GOOD_EXTERNAL",
+      "currentSources": [
+        "rome-spanish-steps-skylinewebcams"
+      ],
       "visitorDecisionValue": "HIGH",
       "nextStepIntents": [
         "activities",
@@ -312,9 +314,9 @@
         "TRANSFERS",
         "CITY_UTILITY"
       ],
-      "sourcePriority": "MEDIUM_HIGH",
-      "why": "Major culture/visitor destination with strong practical next-step fit but no verified ERN current window.",
-      "next": "Research official or rights-clear current landmark/street views; no source should be added solely because program fit is strong."
+      "sourcePriority": "MEDIUM",
+      "why": "A current Spanish Steps live view now gives ERN a strong visitor-activity window for central Rome.",
+      "next": "Maintain the Spanish Steps view; add another Rome source only if it provides clearly different utility such as Colosseum or Trevi conditions and remains current."
     },
     {
       "destination": "Singapore",
