@@ -1,3 +1,8 @@
+## 2026-09-28 — Stage R locally complete; Operations anti-loop reconciliation
+- Stage R passed JavaScript and Operations packet-integrity checks on commit `69336f9ab41f919cf5c6a9cc3719298efc14f305` and is now LOCALLY COMPLETE / CONTINUOUS OPERATIONS.
+- Fixed stale commercial next-work logic: when Booking.com/Viator Wave A is externally gated and the finite 30-place private research scope is complete, Operations now holds affiliate breadth/depth/staged-option review instead of reopening completed research.
+- Separated human playback renewals from autonomous implementation work. Required HUMAN_PLAYBACK renewals remain visible and important, but they no longer falsely prevent an autonomous hold state.
+- AUTONOMOUS HOLD can now correctly say HUMAN REVIEW DUE when the only remaining high-priority action is real browser playback observation.
 ## 2026-09-28 — Stage Q locally complete; Stage R External Gate Trigger Register opened
 - Stage Q passed daily Operations packet integrity and JavaScript safety checks on commit `34d8d8e7814e1042bc062c0bee6466461977ef9e` and is now LOCALLY COMPLETE / CONTINUOUS OPERATIONS.
 - Reclassified Stage F as LIVE / MAINTENANCE, Stage G as OPERATIONS / MAINTENANCE, and Stage H as PARTIALLY ACTIVE / EXTERNAL PROVIDER GATE so mature systems are not left falsely open.
