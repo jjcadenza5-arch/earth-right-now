@@ -39,22 +39,28 @@
     },
     {
       "id": "wave-b",
-      "state": "ELIGIBLE_FOR_REVIEW",
+      "state": "ELIGIBLE_FOR_HUMAN_ONBOARDING",
       "programs": [
-        "agoda"
+        {
+          "id": "travelpayouts-platform",
+          "state": "READY_TO_CREATE_PROJECT",
+          "relationshipActive": false,
+          "trackedLinksAllowed": false
+        }
       ],
-      "rationale": "Booking.com application was not approved on 2026-09-28 while Viator remains active. Agoda is now the next lodging-channel candidate, but application/account actions remain human-controlled."
+      "rationale": "Next commercial rung after Booking.com rejection: create one ERN travel Project on Travelpayouts, then use only programs actually made available to that Project. Some programs may be instant-access and others may require brand review."
     },
     {
       "id": "wave-c",
-      "state": "HOLD_PENDING_LODGING_REVIEW",
+      "state": "HOLD_UNTIL_TRAFFIC_OR_TRAVELPAYOUTS_SIGNAL",
       "programs": [
+        "agoda-direct",
         "skyscanner"
       ],
-      "rationale": "Keep the extra transport/referral relationship on hold while ERN reviews the next lodging path and continues the Viator pilot."
+      "rationale": "Direct large-brand applications remain on hold while ERN builds traffic, social proof and commercial history through Viator and Travelpayouts-accessible programs."
     }
   ],
-  "next": "MONITOR_VIATOR_AUCKLAND_PILOT_AND_REVIEW_AGODA",
-  "note": "Booking.com rejection is recorded as a program decision only, not as a judgment about ERN quality. Application/account actions remain external and human-controlled. ERN does not claim a relationship without documented acceptance.",
-  "updatedAt": "2026-09-28T09:50:00Z"
+  "next": "CREATE_TRAVELPAYOUTS_PROJECT_THEN_USE_ONLY_AVAILABLE_PROGRAMS",
+  "note": "Commercial ladder after Booking.com rejection: Viator remains active; Travelpayouts is the next onboarding platform; direct Agoda/Skyscanner applications are deferred until stronger traffic or a material program signal. No program is claimed active before real account evidence.",
+  "updatedAt": "2026-09-28T11:55:00Z"
 }

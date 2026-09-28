@@ -1,3 +1,10 @@
+## 2026-09-28 — Commercial ladder revised after Booking.com rejection
+- Viator remains ERN's active limited affiliate pilot.
+- Selected Travelpayouts as the next onboarding platform rather than immediately applying to another large advertiser.
+- Current Travelpayouts guidance allows travel websites/channels to be created as Projects; relevant brand programs are made available automatically where eligible, with some requiring review.
+- Direct Agoda and Skyscanner applications are deferred while ERN builds real traffic, social proof and commercial history.
+- No Travelpayouts relationship or brand access is claimed until the owner creates the Project and the dashboard shows actual program states.
+
 ## 2026-09-28 — Booking.com affiliate decision received
 - Human-provided CJ/Booking.com APAC evidence shows the ERN Booking.com application was **not approved** on 2026-09-28.
 - Closed the Booking.com pending-review gate as REJECTED / INACTIVE; tracked Booking.com links remain OFF and no relationship claim is permitted.

@@ -1,6 +1,6 @@
 # ERN commercial activation plan
 
-Status: **PHASE 3 ACTIVE — VIATOR LIMITED PILOT, BOOKING.COM REJECTED, LODGING REVIEW REOPENED**
+Status: **PHASE 3 ACTIVE — VIATOR LIMITED PILOT, TRAVELPAYOUTS NEXT, DIRECT BIG-BRAND APPLICATIONS DEFERRED**
 
 Opened: 2026-09-27
 
@@ -32,22 +32,27 @@ Tracked links: **ON only for the verified Auckland activities pilot**
 
 The first tracked link retains ERN's Viator partner ID and resolves to Auckland activity results. ERN records it as a **destination-level** affiliate link, not a guaranteed deep link to one specific tour. Specific-experience links may be added later only when their click-through behavior is verified as specific.
 
-## Later waves
+## Commercial ladder after Booking.com decision
 
-### Agoda
-**ELIGIBLE FOR REVIEW.** Wave A is now materially known: Viator is active and Booking.com was not approved. Agoda becomes the next lodging-channel candidate, especially for global/Asian travel, but ERN should review current program requirements before any human application is submitted.
+### Travelpayouts — NEXT ONBOARDING PLATFORM
+Official 2026 platform guidance says a travel website/app/channel can be added as a Project. Relevant brand programs are then connected automatically where available; some are instant-access and some require Project/brand review. ERN should use only the programs actually made available to its Project and never claim access before the dashboard confirms it.
 
-### Skyscanner
-**HOLD PENDING LODGING REVIEW.** Viator already gives ERN one working commercial path. Defer this extra transport/referral relationship while the next lodging channel is reviewed.
+Why this is next: it lets ERN build real clicks/bookings and commercial history without depending on one large advertiser application.
+
+### Agoda direct — HOLD FOR STRONGER TRACTION
+Agoda's direct affiliate program remains a legitimate future lodging option, but applications are reviewed. Keep it on hold while ERN builds steady traffic, social proof and partner history unless Agoda provides a materially easier invitation/path.
+
+### Skyscanner — HOLD
+Keep this extra transport/referral relationship on hold while Viator and the Travelpayouts project establish real commercial history.
 
 ## User-side actions required
 
 1. No further Booking.com action is required unless CJ/Booking.com provides a material new invitation or account-state change.
 2. Continue the verified Viator pilot.
-3. Review Agoda's current affiliate/application requirements before deciding whether to apply.
+3. Create an ERN Project on Travelpayouts when ready. Use earthrightnow.app as the website identity and enter only truthful current traffic/audience information.
 4. Use **Earth Right Now** / **earthrightnow.app** as the site/product identity for any future application.
 5. Do not invent traffic, conversion, audience-size or revenue figures. Use truthful current values if asked.
-6. Do not paste affiliate credentials into chat or GitHub.
+6. After the Travelpayouts Project is created, report only which programs the dashboard shows as Available / Under Review / Unavailable; do not paste credentials into chat or GitHub.
 
 ## After acceptance
 
@@ -60,4 +65,4 @@ Only after a program confirms acceptance:
 - activate a limited public pilot;
 - confirm Earth-view ranking is unchanged.
 
-Current finite lane: monitor the Auckland Viator pilot and review Agoda as the next lodging-channel candidate. Do not reopen the completed 30-place commercial research set or start Skyscanner merely to create activity. Expand Viator only with verified destination or experience links whose scope is represented truthfully.
+Current finite lane: monitor the Auckland Viator pilot and create one Travelpayouts ERN Project when the owner is ready. Use only programs that Travelpayouts actually marks available for that Project. Keep direct Agoda and Skyscanner applications deferred while ERN accumulates real traffic, engagement and commercial history.
