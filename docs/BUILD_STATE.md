@@ -1,3 +1,10 @@
+## 2026-09-28 — Manual participation deployment now provisions runtime secrets safely
+- Closed the final deployment-workflow configuration gap: the manual Phase J workflow now requires and installs each Worker's server-side HMAC and private review token from GitHub secrets before deployment.
+- Secret values are piped directly to Wrangler secret storage and are never committed to Worker config, browser code or deployment output.
+- Earth Signals uses `ERN_RATE_HMAC_KEY` + `ERN_SIGNAL_REVIEW_TOKEN`; submissions use `ERN_SUBMISSION_RATE_HMAC_KEY` + `ERN_SUBMISSION_REVIEW_TOKEN`.
+- Deployment remains manual-only and both public feature switches remain false.
+- The live deployment verifier now also requires the bounded Durable Object storage ceilings to be visible in health evidence before the deployment can be considered correctly configured.
+
 ## 2026-09-28 — Participation durable storage bounded
 - Fixed a real retention gap in Earth Signals: when a short-lived signal expires, any orphaned report row is now deleted as part of cleanup.
 - Added hard Durable Object capacity ceilings: 5,000 active Earth Signals, 1,000 retained signal reports, and 1,000 retained camera/place submissions.

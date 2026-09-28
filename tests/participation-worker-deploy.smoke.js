@@ -6,4 +6,8 @@ console.assert(workflow.includes("CLOUDFLARE_API_TOKEN")&&workflow.includes("CLO
 console.assert(workflow.includes("ERN_EARTH_SIGNALS_ENABLED")&&workflow.includes('"false"'),"Earth Signals deployment must preserve fail-closed activation");
 console.assert(workflow.includes("ERN_SUBMISSION_ENABLED")&&workflow.includes('"false"'),"Submission deployment must preserve fail-closed activation");
 console.assert(workflow.includes("wrangler@latest deploy"),"Participation deployment must use Wrangler");
+console.assert(workflow.includes("ERN_RATE_HMAC_KEY")&&workflow.includes("ERN_SIGNAL_REVIEW_TOKEN"),"Earth Signals runtime secrets must be installed through GitHub secrets");
+console.assert(workflow.includes("ERN_SUBMISSION_RATE_HMAC_KEY")&&workflow.includes("ERN_SUBMISSION_REVIEW_TOKEN"),"Submission runtime secrets must be installed through GitHub secrets");
+console.assert(workflow.includes("wrangler@latest secret put"),"Participation deployment must install runtime secrets before deployment");
+console.assert(!workflow.includes("echo $ERN_")&&!workflow.includes("echo \"$ERN_"),"Participation deployment must not echo secret values");
 console.log("participation Worker deployment remains manual and fail-closed");

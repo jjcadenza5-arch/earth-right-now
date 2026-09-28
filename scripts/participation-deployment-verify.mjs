@@ -25,7 +25,8 @@ if(target==="earth-signals"){
     ...common,
     service:body?.service==="ERN Earth Signals API",
     rateSubjectSecretConfigured:body?.rateSubjectSecretConfigured===true,
-    reviewTokenConfigured:body?.reviewTokenConfigured===true
+    reviewTokenConfigured:body?.reviewTokenConfigured===true,
+    storageBounded:Number(body?.state?.limits?.maxActiveSignals)>0&&Number(body?.state?.limits?.maxRetainedReports)>0
   };
   publicActivationOff=body?.contributionsEnabled===false;
 }else{
@@ -36,7 +37,8 @@ if(target==="earth-signals"){
     reviewTokenConfigured:body?.reviewTokenConfigured===true,
     retentionBounded:Number(body?.retentionDays)>=1&&Number(body?.retentionDays)<=30,
     automaticPublishAllowed:body?.automaticPublishAllowed===false,
-    automaticApprovalAllowed:body?.automaticApprovalAllowed===false
+    automaticApprovalAllowed:body?.automaticApprovalAllowed===false,
+    storageBounded:Number(body?.state?.maxRetainedSubmissions)>0
   };
   publicActivationOff=body?.submissionEnabled===false;
 }
