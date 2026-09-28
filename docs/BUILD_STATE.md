@@ -1,3 +1,14 @@
+## 2026-09-28 — Human Stage E review + fullscreen journey continuity deployed
+- Human browser review accepted desktop viewer/fullscreen entry and exit as working.
+- Phone portrait remains usable but not all action buttons are visible at once; accepted as non-blocking.
+- Phone landscape controls are visible and working, but fullscreen currently appears smaller than the normal landscape view; retained as non-urgent maintenance and not treated as solved.
+- Human review also found that Watch Earth journey changes exited desktop fullscreen because the active iframe DOM node was replaced.
+- Deployed PR #579 / commit `b5fd73a61e127ee8e171f5640c44ed2249b8050a`: while the active fullscreen element is the viewer iframe, EMBED→EMBED journey changes now reuse that same fullscreen iframe and retarget its source instead of destroying it.
+- External/image transitions preserve normal fallback behavior and may exit fullscreen rather than faking continuity.
+- `app-lite.js` was left untouched; the fullscreen-continuity helper is loaded before the app runtime.
+- JavaScript/smoke, Operations and all Pages release preflights including performance passed; deployment succeeded.
+- Final Stage E closure still requires human browser confirmation that an automatic Watch Earth livestream change now remains fullscreen on desktop.
+
 ## 2026-09-28 — Public experience maintenance deployed and release gates green
 - Merged the Stage E maintenance batch through PRs #574–#577; final deployed commit is `48c97be6eda61ce35ca0c987bd95df932adfc742`.
 - Watch Earth now preserves up to five verified inside-ERN PLAY windows within the first eight journey positions after moment/provider balancing, reducing early provider-only handoffs without hiding truthful external sources.
