@@ -1,3 +1,10 @@
+## 2026-09-28 — Post-deployment participation evidence verifier prepared
+- Added a non-mutating verifier for real Earth Signals and submission Worker HTTPS `/health` endpoints.
+- The verifier requires Durable Object evidence, configured server-side rate identity without secret exposure, and raw-network-identifier non-storage.
+- Submission verification additionally requires the private review token, bounded retention, and automatic publish/approval to remain false.
+- Both service checks require the public contribution switch to remain OFF during deployment verification.
+- A successful health check is explicitly not treated as permission to activate visitors or mutate deployment manifests automatically.
+
 ## 2026-09-28 — Operations now understands Phase J participation state
 - Added a machine-generated `participation-infrastructure.json` Operations artifact that verifies both Worker foundations, manual-only deployment, fail-closed configs, and current public-off manifests from repository state.
 - Daily Operations now includes this artifact in the retained packet and operator brief.
