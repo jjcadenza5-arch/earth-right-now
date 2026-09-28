@@ -1,3 +1,10 @@
+## 2026-09-28 — Booking.com affiliate decision received
+- Human-provided CJ/Booking.com APAC evidence shows the ERN Booking.com application was **not approved** on 2026-09-28.
+- Closed the Booking.com pending-review gate as REJECTED / INACTIVE; tracked Booking.com links remain OFF and no relationship claim is permitted.
+- Preserved Viator as the active limited commercial pilot.
+- Moved Agoda from hold to ELIGIBLE_FOR_REVIEW as the next lodging-channel candidate; Skyscanner remains held pending the lodging review.
+- This is treated only as an advertiser/program decision, not as evidence about ERN product quality.
+
 ## 2026-09-28 — ERN reaches STABLE_BETA_READY planning state
 - Refreshed all six formal release-evidence categories from September 28 real-world/browser/operator/release checks while explicitly preserving known fullscreen limitations.
 - Current beta-readiness inputs are 80 sources, 26 countries, 37 providers, 26 inside-ERN windows and 54 external windows.
