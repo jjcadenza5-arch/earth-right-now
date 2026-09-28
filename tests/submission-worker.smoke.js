@@ -1,0 +1,20 @@
+import fs from "node:fs";
+const cfg=fs.readFileSync("submission-worker/wrangler.jsonc","utf8");
+const worker=fs.readFileSync("submission-worker/src/index.js","utf8");
+const state=fs.readFileSync("submission-worker/src/submission-inbox.js","utf8");
+const workerModule=await import("../submission-worker/src/index.js");
+const stateModule=await import("../submission-worker/src/submission-inbox.js");
+
+console.assert(typeof workerModule.default?.fetch==="function","Submission Worker must export fetch");
+console.assert(typeof stateModule.SubmissionInbox==="function","Submission Worker must export SubmissionInbox");
+console.assert(cfg.includes('"ERN_SUBMISSION_ENABLED": "false"'),"Submission transport must default off");
+console.assert(cfg.includes('"ERN_SUBMISSION_RETENTION_DAYS": "30"'),"Submission retention must remain bounded to 30 days");
+console.assert(cfg.includes('"class_name": "SubmissionInbox"')&&cfg.includes('"storage": "sqlite"'),"Submission durable inbox must use SQLite");
+console.assert(worker.includes("submissionRecord")&&worker.includes("submissionEnvelope"),"Worker must repeat canonical server-side validation");
+console.assert(worker.includes("ERN_SUBMISSION_RATE_HMAC_KEY")&&worker.includes("CF-Connecting-IP"),"Worker must derive opaque server-side rate identity");
+console.assert(worker.includes("ERN_SUBMISSION_REVIEW_TOKEN")&&worker.includes("authorization"),"Human review queue must be protected");
+console.assert(worker.includes("published:false")&&worker.includes("automaticPublishAllowed:false"),"Submission must never auto-publish");
+console.assert(worker.includes("contact:null"),"Approved intake must drop unnecessary contact data");
+console.assert(state.includes("DELETE FROM submissions WHERE expires_at <= ?"),"Retention cleanup missing");
+console.assert(state.includes("MAX_PER_DAY=5"),"Server rate limit missing");
+console.log("submission-worker fail-closed intake foundation smoke: ok");
