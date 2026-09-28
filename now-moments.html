@@ -27,6 +27,12 @@
 <p>This is only a browser-local preview. A real public signal would require ERN transport, moderation, rate limits, reporting and expiry infrastructure.</p>
 </div>
 </section>
+<section class="readiness-box" id="signalPulseSection" hidden aria-labelledby="signalPulseHeading">
+<h2 id="signalPulseHeading">Recent visitor signals</h2>
+<p>Short-lived visitor observations are not independent verification. They may help you notice what people nearby are reporting right now.</p>
+<button id="signalPulseRefresh" type="button">Check recent signals</button>
+<div id="signalPulse" aria-live="polite"></div>
+</section>
 <h2>Why this belongs in ERN</h2><p>Cameras show one fixed window. Temporary visitor moments can eventually reveal what is happening nearby or just outside the frame, while still keeping ERN focused on “See before you go.”</p>
 <p><a href="./for-places.html">For places & cameras</a> · <a href="./privacy.html">Privacy</a></p></main>
 <script type="module" src="./src/now-moments-page.js"></script></body></html>
