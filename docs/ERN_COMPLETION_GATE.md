@@ -36,6 +36,9 @@ These are not reasons to keep redesigning the same screens:
 
 Once the core product is present, further work should either close one of these gates or fix an observed visitor problem. Do not endlessly add polish to already-working functions.
 
+## Current milestone — 2026-09-28
+ERN currently satisfies this repository's `STABLE_BETA_READY` definition: every listed core surface is present, all six formal release-evidence categories are fresh and passed, and the automated release/rollback guard system is present. Known fullscreen transition persistence and phone-landscape sizing limitations are explicitly accepted as non-blocking maintenance. Stable beta readiness does not imply affiliate approval, analytics activation, public participation/upload activation, social-account connection or search-engine indexing.
+
 
 ## Rollback rehearsal
 A non-destructive rollback rehearsal is now preserved at branch `rollback-proof-20260923`, pinned to known-good deployed commit `a41ad2e49755d31344e8c0f04ca7338867f05d57`. The live main branch is not deliberately rolled backward while healthy. The release pipeline validates the rollback proof and documented procedure on every relevant deployment.
