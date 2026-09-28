@@ -1,3 +1,9 @@
+## 2026-09-28 — Second Kyoto visitor-condition batch staged
+- Staged three more official Kyoto tourism cameras as research-only: Hanamikoji Street, Nishiki Market and Arashiyama Bamboo Forest.
+- Nishiki Market's official stream is scheduled 11:00–18:00 JST; ERN must preserve that schedule and never imply 24/7 live availability.
+- All three require a new deployed human playback batch before promotion.
+- Existing first-wave Kyoto approvals remain source-specific and do not automatically approve these targets.
+
 ## 2026-09-28 — Seoul real-time context lane prepared
 - Added Seoul Real-time City Data as ERN's first research-ready context source, separate from camera/source truth.
 - Official Visit Seoul surfaces expose real-time crowd density, traffic, transit/parking, weather and CCTV links for major visitor areas.
