@@ -9,6 +9,9 @@ on:
       - "tests/earth-signal-*.smoke.js"
       - "signals-worker/**"
       - "submission-worker/**"
+      - "tests/submission-worker.smoke.js"
+      - "tests/participation-worker-deploy.smoke.js"
+      - ".github/workflows/deploy-participation-workers.yml"
       - "tests/guide-ai-*.smoke.js"
       - "data/earth-signal-deployment.json"
       - "data/guide-ai-deployment.json"
@@ -37,6 +40,11 @@ jobs:
           for test in tests/earth-signal-*.smoke.js; do
             node "$test"
           done
+      - name: Run Submission and participation deployment smoke tests
+        run: |
+          set -euo pipefail
+          node tests/submission-worker.smoke.js
+          node tests/participation-worker-deploy.smoke.js
       - name: Run Generative Guide focused smoke tests
         run: |
           set -euo pipefail
