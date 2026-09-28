@@ -2,6 +2,22 @@ function rows(report){return Array.isArray(report?.items)?report.items:[]}
 function preflightById(report){return new Map((report?.rows||[]).map(x=>[String(x.id),x]))}
 function familyByProvider(report){return new Map(rows(report).filter(x=>x?.provider).map(x=>[String(x.provider),x]))}
 function normalized(value){return String(value||"").trim()}
+function clockMinutes(value){const [h,m]=String(value||"").split(":").map(Number);return Number.isFinite(h)&&Number.isFinite(m)?h*60+m:null}
+function localClock(now,timeZone){
+  try{
+    const parts=new Intl.DateTimeFormat("en-US",{timeZone,hour:"2-digit",minute:"2-digit",hourCycle:"h23",weekday:"short"}).formatToParts(now);
+    const get=t=>parts.find(x=>x.type===t)?.value;
+    return{minutes:Number(get("hour"))*60+Number(get("minute")),weekday:get("weekday")||null};
+  }catch{return null}
+}
+function reviewWindowState(candidate,now){
+  const w=candidate?.reviewWindow;if(!w)return{restricted:false,open:true};
+  const start=clockMinutes(w.start),end=clockMinutes(w.end),local=localClock(now,w.timeZone);
+  if(start===null||end===null||!local)return{restricted:true,open:false,reason:"INVALID_REVIEW_WINDOW"};
+  if(Array.isArray(w.weekdays)&&w.weekdays.length&&!w.weekdays.includes(local.weekday))return{restricted:true,open:false,reason:"OUTSIDE_PUBLISHED_LIVE_WINDOW"};
+  const open=end>start?local.minutes>=start&&local.minutes<end:local.minutes>=start||local.minutes<end;
+  return{restricted:true,open,reason:open?null:"OUTSIDE_PUBLISHED_LIVE_WINDOW",timeZone:w.timeZone,start:w.start,end:w.end,localMinutes:local.minutes};
+}
 function stagedProviderKeys(candidates=[]){
   const keys=new Set();
   for(const c of candidates||[]){
@@ -34,13 +50,19 @@ function providerPreparation(providerFamilyReport,candidates=[]){
   })).sort((a,b)=>String(a.provider).localeCompare(String(b.provider)));
 }
 
-export function researchReviewQueue(candidates=[],{preflightReport=null,providerFamilyReport=null,primaryCount=1}={}){
+export function researchReviewQueue(candidates=[],{preflightReport=null,providerFamilyReport=null,primaryCount=1,now=new Date()}={}){
   const preflight=preflightById(preflightReport),families=familyByProvider(providerFamilyReport);
   const approved=(candidates||[]).filter(c=>c.status==="APPROVED"&&c.promotion==="APPROVED_FOR_CATALOG"&&c.playbackReview==="HUMAN_PLAYBACK_CONFIRMED"&&c.permissionReview==="PER_VIDEO_EMBED_CONFIRMED");
   const failedPlayback=(candidates||[]).filter(c=>c.playbackReview==="HUMAN_PLAYBACK_FAILED");
   const reviewable=(candidates||[]).filter(c=>!approved.includes(c)&&c.playbackReview!=="HUMAN_PLAYBACK_FAILED");
+  const scheduledWaiting=reviewable.filter(c=>{const state=reviewWindowState(c,now);return state.restricted&&!state.open}).map(c=>{
+    const state=reviewWindowState(c,now);
+    return{...c,reviewPriority:-2,requiredHumanAction:"WAIT_FOR_PUBLISHED_LIVE_WINDOW",permissionStillRequired:true,promotionAllowed:false,technicalReady:false,technicalOutcome:state.reason,reviewWindowState:state};
+  });
+  const scheduledWaitingIds=new Set(scheduledWaiting.map(c=>String(c.id)));
+  const eligibleReviewable=reviewable.filter(c=>!scheduledWaitingIds.has(String(c.id)));
 
-  const ranked=reviewable.map(c=>{
+  const ranked=eligibleReviewable.map(c=>{
     const p=preflight.get(String(c.id))||null,f=families.get(String(c.provider))||null;
     let score=0;
     if(p?.technicalReady===true)score+=100;
@@ -79,8 +101,8 @@ export function researchReviewQueue(candidates=[],{preflightReport=null,provider
       technicalOutcome:"HUMAN_PLAYBACK_FAILED"
     }))
   ];
-  const exhausted=ranked.length===0&&preparation.length===0&&(candidates||[]).length>0;
-  const state=primary.length?"HUMAN_REVIEW_READY":preparation.length?"PROVIDER_PREPARATION_READY":exhausted?"EXHAUSTED_RESEARCH_NEW_PROVIDER":"NO_CANDIDATES";
+  const exhausted=ranked.length===0&&preparation.length===0&&scheduledWaiting.length===0&&(candidates||[]).length>0;
+  const state=primary.length?"HUMAN_REVIEW_READY":preparation.length?"PROVIDER_PREPARATION_READY":scheduledWaiting.length?"WAIT_FOR_REVIEW_WINDOW":exhausted?"EXHAUSTED_RESEARCH_NEW_PROVIDER":"NO_CANDIDATES";
   return{
     generatedAt:new Date().toISOString(),
     state,
@@ -89,11 +111,13 @@ export function researchReviewQueue(candidates=[],{preflightReport=null,provider
     approved:approved.length,
     failedPlayback:failedPlayback.length,
     reviewable:ranked.length,
+    scheduledWaitingCount:scheduledWaiting.length,
     primaryCount:primary.length,
     primary,
     preparation,
+    scheduledWaiting,
     alternates,
-    nextAction:primary.length?"RUN_DEPLOYED_HUMAN_PLAYBACK":preparation.length?"PREPARE_PROVIDER_GENERATED_TARGET":exhausted?"CHECK_PROVIDER_DISCOVERY_STATE":"STAGE_PROVIDER_RESEARCH",
+    nextAction:primary.length?"RUN_DEPLOYED_HUMAN_PLAYBACK":preparation.length?"PREPARE_PROVIDER_GENERATED_TARGET":scheduledWaiting.length?"WAIT_FOR_PUBLISHED_LIVE_WINDOW":exhausted?"CHECK_PROVIDER_DISCOVERY_STATE":"STAGE_PROVIDER_RESEARCH",
     safety:{
       catalogPromotionAllowed:false,
       automaticPermissionApprovalAllowed:false,
