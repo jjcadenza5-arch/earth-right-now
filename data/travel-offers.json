@@ -12,6 +12,7 @@
     "verifiedAt": "2026-09-27T13:24:00Z",
     "verificationNote": "Operator click-through confirmed a working Viator Auckland destination/results experience with ERN partner tracking retained. Treat as destination-level activity link, not a guaranteed deep link to one specific tour.",
     "linkScope": "destination",
-    "resolvedBehavior": "DESTINATION_RESULTS"
+    "resolvedBehavior": "DESTINATION_RESULTS",
+    "partnerId": "viator"
   }
 ]
