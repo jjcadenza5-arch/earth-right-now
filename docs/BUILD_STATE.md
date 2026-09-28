@@ -1,3 +1,10 @@
+## 2026-09-28 — Phase L browser sanitizer and HTTP contract prepared
+- Added browser-side photo preparation that decodes and re-encodes to JPEG, scales the longest dimension to at most 1920 px, retries compression until the 1.5 MB stored-derivative ceiling is met, and never carries the original filename forward.
+- Added a bounded binary HTTP contract with explicit ERN place/media headers; filenames, free text and precise coordinates are not accepted transport fields.
+- Added a fail-closed HTTP adapter for upload/list/report. It returns OFF unless the complete Phase L capability gate passes.
+- Upload responses are PENDING_REVIEW / published:false; the client/HTTP layer does not create any public photo path by itself.
+- No public file input or transport endpoint is active.
+
 ## 2026-09-28 — Phase L transport-neutral photo service prepared
 - Added a complete-capability activation contract for temporary Now Moment photos; partial infrastructure remains OFF.
 - Added strict server record creation tied to canonical ERN place IDs and server-owned ID/object key/timestamps.
