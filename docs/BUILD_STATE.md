@@ -1,3 +1,8 @@
+## 2026-09-28 — ERN origin story added to About
+- Added a concise public explanation of the strawberry-picking experience that inspired “See before you go.”
+- Kept the story on the About page rather than adding homepage clutter.
+- Framed the lesson broadly: ERN applies to any visitor-interest place where a truthful current view can set better expectations.
+
 ## 2026-09-28 — Tonami Tulip Park official live window added
 - Added Tonami City’s Panorama Terrace live camera as EXTERNAL_LIVE / LINK_ONLY.
 - This is a direct See Before You Go seasonal-use case: visitors can inspect the park’s current appearance before traveling, without ERN substituting archival/promotional imagery.
