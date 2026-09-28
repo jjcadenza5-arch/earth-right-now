@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T17:25:00Z",
+  "generatedAt": "2026-09-28T17:50:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -363,7 +363,30 @@
       ],
       "state": "CONTEXT_ONLY_VISUAL_GAP_REMAINS",
       "why": "The official Eiffel Tower site exposes live visit conditions such as attendance, opening status, summit temperature/wind and Paris weather. This is useful See Before You Go context but is not a camera or current visual window.",
-      "next": "Keep as context-only research. Continue looking for a rights-clear current Paris visual source; never label Eiffel live status data as LIVE_VIDEO/LIVE_IMAGE."
+      "next": "Keep Eiffel official conditions as context-only. Current SkylineWebcams Paris/Eiffel/Pantheon visual targets are marked OFFLINE; recheck only on a material provider-state change. Continue research only for a genuinely current rights-clear visual source.",
+      "excludedCurrentVisualTargets": [
+        {
+          "provider": "SkylineWebcams",
+          "target": "Paris - Tour Eiffel panoramic view",
+          "url": "https://www.skylinewebcams.com/en/webcam/france/ile-de-france/paris/paris-tour-eiffel.html",
+          "state": "OFFLINE_AT_RESEARCH_CHECK",
+          "recheckRule": "MATERIAL_PROVIDER_STATE_CHANGE_ONLY"
+        },
+        {
+          "provider": "SkylineWebcams",
+          "target": "Tour Eiffel close view",
+          "url": "https://www.skylinewebcams.com/fr/webcam/france/ile-de-france/paris/tour-eiffel.html",
+          "state": "OFFLINE_AT_RESEARCH_CHECK",
+          "recheckRule": "MATERIAL_PROVIDER_STATE_CHANGE_ONLY"
+        },
+        {
+          "provider": "SkylineWebcams",
+          "target": "Paris Pantheon / Notre-Dame skyline",
+          "url": "https://www.skylinewebcams.com/en/webcam/france/ile-de-france/paris/paris-pantheon-notre-dame.html",
+          "state": "OFFLINE_AT_RESEARCH_CHECK",
+          "recheckRule": "MATERIAL_PROVIDER_STATE_CHANGE_ONLY"
+        }
+      ]
     }
   ],
   "guardrails": {
