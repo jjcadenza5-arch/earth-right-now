@@ -1,3 +1,7 @@
+## 2026-09-28 — Align For Places with See Before You Go
+- Strengthened the participation message around truthful current conditions and broad visitor-interest places.
+- No submission activation or commercial ranking behavior changed.
+
 ## 2026-09-28 — Verify Seoul real-time API contract and harden context gates
 - Resolved the official English Seoul real-time city API service, auth requirement and documented population/congestion schema.
 - Added a non-public adapter contract and explicit stale-data/source-timestamp rules.
