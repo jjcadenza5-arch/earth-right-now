@@ -12,6 +12,7 @@ on:
       - "tests/submission-worker.smoke.js"
       - "tests/participation-worker-deploy.smoke.js"
       - "tests/participation-infrastructure-status.smoke.js"
+      - "tests/participation-deployment-verify.smoke.js"
       - ".github/workflows/deploy-participation-workers.yml"
       - "tests/guide-ai-*.smoke.js"
       - "data/earth-signal-deployment.json"
@@ -47,6 +48,7 @@ jobs:
           node tests/submission-worker.smoke.js
           node tests/participation-worker-deploy.smoke.js
           node tests/participation-infrastructure-status.smoke.js
+          node tests/participation-deployment-verify.smoke.js
       - name: Run Generative Guide focused smoke tests
         run: |
           set -euo pipefail
