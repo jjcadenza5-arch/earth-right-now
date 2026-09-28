@@ -1,0 +1,11 @@
+import fs from "node:fs";
+const html=fs.readFileSync("press.html","utf8");
+const facts=JSON.parse(fs.readFileSync("data/public-brand-facts.json","utf8"));
+console.assert(html.includes("See before you go."));
+console.assert(html.includes("Payment never bypasses review or buys editorial ranking."));
+console.assert(html.includes("does not claim social-media accounts"));
+console.assert(!/@[A-Za-z0-9_.-]+/.test(html),"Press kit must not invent social handles");
+console.assert(!/mailto:/i.test(html),"Press kit must not invent a contact email");
+console.assert(facts.socialAccountClaims.length===0&&facts.contactClaimed===false);
+console.assert(facts.commercialRankingAffected===false);
+console.log("Stage O media kit stays official, crawlable and free of invented contact/social claims");
