@@ -20,9 +20,10 @@ const pendingChannels=(distribution.channels||[]).filter(x=>x.state!=="CONNECTED
 const analyticsEnabled=/enabled\s*:\s*true/.test(analyticsText)&&!/provider\s*:\s*["']NONE["']/.test(analyticsText);
 
 const externalGates=[];
-const booking=program("booking-com"),viator=program("viator");
+const booking=program("booking-com"),viator=program("viator"),travelpayouts=program("travelpayouts-platform");
 if(booking&&/PENDING|WAIT|REVIEW|ACTIVATION/i.test(String(booking.state)))externalGates.push({id:"booking-com",state:booking.state});
 if(viator&&/PENDING|WAIT|ACTIVATION/i.test(String(viator.state)))externalGates.push({id:"viator",state:viator.state});
+if(travelpayouts?.reviewState==="MATCHING_IN_PROGRESS")externalGates.push({id:"travelpayouts-program-matching",state:travelpayouts.reviewState,availablePrograms:Number(travelpayouts.availableProgramsObserved||0)});
 if(earthSignals.status!=="DEPLOYED")externalGates.push({id:"earth-signals-deployment",state:earthSignals.status});
 if(submissions.enabled!==true)externalGates.push({id:"submission-transport",state:submissions.status||"DISABLED"});
 if(media.status!=="DEPLOYED")externalGates.push({id:"now-moment-media",state:media.status});
@@ -42,6 +43,7 @@ const status={
     activationState:affiliate.state||"UNKNOWN",
     bookingCom:booking?{state:booking.state,submittedAt:booking.submittedAt||null,decisionAt:booking.decisionAt||null,relationshipActive:booking.relationshipActive===true}:null,
     viator:viator?{state:viator.state,activatedAt:viator.activatedAt||null,partnerIdPresent:Boolean(viator.partnerId)}:null,
+    travelpayouts:travelpayouts?{state:travelpayouts.state,reviewState:travelpayouts.reviewState||null,driveAutomationAllowed:travelpayouts.driveAutomationAllowed===true,availablePrograms:Number(travelpayouts.availableProgramsObserved||0)}:null,
     verifiedPublicOffers:verifiedOffers.length,
     affiliateOffers:verifiedOffers.filter(x=>x.affiliate===true).length,
     sponsoredOffers:verifiedOffers.filter(x=>x.sponsored===true).length
