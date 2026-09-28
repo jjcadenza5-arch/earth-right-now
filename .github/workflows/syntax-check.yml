@@ -10,6 +10,7 @@ on:
       - "signals-worker/**"
       - "submission-worker/**"
       - "tests/submission-worker.smoke.js"
+      - "tests/submission-client.smoke.js"
       - "tests/participation-worker-deploy.smoke.js"
       - "tests/participation-infrastructure-status.smoke.js"
       - "tests/participation-deployment-verify.smoke.js"
@@ -46,6 +47,7 @@ jobs:
         run: |
           set -euo pipefail
           node tests/submission-worker.smoke.js
+          node tests/submission-client.smoke.js
           node tests/participation-worker-deploy.smoke.js
           node tests/participation-infrastructure-status.smoke.js
           node tests/participation-deployment-verify.smoke.js
