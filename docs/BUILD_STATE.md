@@ -1,3 +1,9 @@
+## 2026-09-28 — Tonami Tulip Park official live window added
+- Added Tonami City’s Panorama Terrace live camera as EXTERNAL_LIVE / LINK_ONLY.
+- This is a direct See Before You Go seasonal-use case: visitors can inspect the park’s current appearance before traveling, without ERN substituting archival/promotional imagery.
+- Kept only one strong park window instead of importing the full municipal camera network.
+- No embed/restream rights are inferred; visitors open the official Tonami City live-camera page.
+
 ## 2026-09-28 — New-chat continuity handoff added
 - Added `docs/ERN_SHARED_HANDOFF_2026-09-28.md` so a fresh ChatGPT conversation can resume from the exact ERN product, source, commercial and external-gate state without reconstructing prior chats.
 - AGENTS now points resuming work to the handoff after the normal continuity/principles/truth/build-state files.
