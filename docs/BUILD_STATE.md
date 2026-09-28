@@ -1,3 +1,10 @@
+## 2026-09-28 — Travelpayouts ERN Project confirmed
+- Travelpayouts verified ownership of earthrightnow.app and activated the ERN Project.
+- Dashboard shows Project matching/review in progress with 26 programs currently available and 20 more shown as unlockable.
+- Visible available examples include Klook and Yesim; this is not treated as a complete program inventory.
+- Drive remains installed only on the homepage for controlled verification while settings are reviewed.
+- No mass program activation, tracked-link expansion or editorial-ranking effect is authorized.
+
 ## 2026-09-28 — Commercial ladder revised after Booking.com rejection
 - Viator remains ERN's active limited affiliate pilot.
 - Selected Travelpayouts as the next onboarding platform rather than immediately applying to another large advertiser.
