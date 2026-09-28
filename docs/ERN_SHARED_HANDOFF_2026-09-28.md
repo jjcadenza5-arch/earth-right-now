@@ -45,6 +45,9 @@ Resolved/active directions:
 - Seasonal bloom/farm/orchard sources remain high-value research because they embody the original strawberry-picking use case.
 - Tonami Tulip Park Panorama Terrace is already promoted as EXTERNAL_LIVE / LINK_ONLY from Tonami City's official live-camera page. A discovered direct municipal image URL remains research-only and must not replace the safe link-only path without separate permission/currentness approval.
 - Thailand agritourism/farms are a source gap and future For Places / partner-camera outreach opportunity; never substitute static promotional media for current evidence.
+- Visit Finland live-webcam guide is a new P1 research lane; Santa Claus Village has an exact official live-video page staged link-first/research-only.
+- Yellowstone Old Faithful has an exact active NPS live-webcam page staged link-first/research-only.
+- Yosemite official current webcams are valuable but permission-gated: the official NPS page directs third parties to a Yosemite Conservancy usage agreement before featuring webcam imagery.
 
 ## Commercial state
 - Booking.com application: rejected/inactive; do not claim relationship.
@@ -65,6 +68,7 @@ Resolved/active directions:
 - Context may later supplement Guide/place pages with current crowd, traffic, transit, weather and events.
 - Context must never create a LIVE camera label, alter camera truth, hide camera truth when stale, or affect Watch Earth editorial ranking.
 - Public activation remains OFF pending an ERN-controlled API key, actual response/timestamp validation, place mapping, attribution, privacy and fail-closed Guide integration.
+- Fail-closed normalization code now exists in `src/realtime-context-adapter.js`: unmapped, untimestamped and stale context is rejected; context cannot create camera truth or LIVE labels.
 
 ## Human-only work
 Only ask the user when genuinely required:
