@@ -1,3 +1,7 @@
+## 2026-09-28 — Add Rovaniemi and Old Faithful official live windows
+- Promoted two exact official live targets as external/link-only.
+- Preserved source-specific rights boundaries and updated the research/opportunity queues.
+
 ## 2026-09-28 — Expand visitor-source research and add Seoul fail-closed adapter
 - Added Visit Finland, Yellowstone Old Faithful and Yosemite official/current source research lanes.
 - Resolved Santa Claus Village and Old Faithful to exact official link-first targets without promoting them.
