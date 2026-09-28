@@ -1,3 +1,13 @@
+## 2026-09-28 — Phase L transport-neutral photo service prepared
+- Added a complete-capability activation contract for temporary Now Moment photos; partial infrastructure remains OFF.
+- Added strict server record creation tied to canonical ERN place IDs and server-owned ID/object key/timestamps.
+- Added separate metadata-store and object-store contracts plus in-memory test stores.
+- Photo creation verifies stripped-media bytes, requires a pseudonymous rate subject, stores the object privately, and creates metadata in PENDING moderation state with no public record.
+- Human review is explicit APPROVED/REJECTED; reports hide approved media immediately by moving it to REVIEW.
+- TTL cleanup deletes expired metadata and the corresponding object.
+- Public projection remains unverified visitor evidence and carries no precise coordinates.
+- No transport or public upload surface is active.
+
 ## 2026-09-28 — Phase L opened: temporary Now Moment photo foundation
 - Phase K is now locally complete and activation-gated after green syntax, Operations and Pages deployment.
 - Opened Phase L for still-photo Now Moments only; video remains explicitly disabled.
