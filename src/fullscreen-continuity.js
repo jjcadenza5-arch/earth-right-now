@@ -1,0 +1,1 @@
+(()=>{"use strict";function reusableEmbed(mount){const d=globalThis.document,e=d?.fullscreenElement||d?.webkitFullscreenElement;return e?.tagName==="IFRAME"&&e.parentElement===mount?e:null}globalThis.ERNFullscreenContinuity={reusableEmbed}})();
