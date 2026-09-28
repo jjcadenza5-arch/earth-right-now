@@ -10,6 +10,7 @@ on:
         options:
           - earth-signals
           - submissions
+          - now-moment-media
 
 permissions:
   contents: read
@@ -30,6 +31,7 @@ jobs:
           node tests/submission-worker.smoke.js
           grep -q '"ERN_EARTH_SIGNALS_ENABLED": "false"' signals-worker/wrangler.jsonc
           grep -q '"ERN_SUBMISSION_ENABLED": "false"' submission-worker/wrangler.jsonc
+          grep -q '"ERN_NOW_MOMENT_PHOTO_ENABLED": "false"' media-worker/wrangler.jsonc
       - name: Require Cloudflare deployment credentials
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -94,9 +96,42 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npx --yes wrangler@latest deploy
+      - name: Require Now Moment Media runtime prerequisites
+        if: ${{ inputs.target == 'now-moment-media' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          ERN_MEDIA_RATE_HMAC_KEY: ${{ secrets.ERN_MEDIA_RATE_HMAC_KEY }}
+          ERN_MEDIA_REVIEW_TOKEN: ${{ secrets.ERN_MEDIA_REVIEW_TOKEN }}
+        run: |
+          set -euo pipefail
+          test -n "$ERN_MEDIA_RATE_HMAC_KEY"
+          test -n "$ERN_MEDIA_REVIEW_TOKEN"
+          npx --yes wrangler@latest r2 bucket list --json > /tmp/ern-r2-buckets.json
+          node -e 'const fs=require("fs");const x=JSON.parse(fs.readFileSync("/tmp/ern-r2-buckets.json","utf8"));const rows=Array.isArray(x)?x:(x.buckets||[]);if(!rows.some(b=>(b.name||b.bucket_name)==="ern-now-moment-media"))process.exit(1)'
+      - name: Install Now Moment Media runtime secrets
+        if: ${{ inputs.target == 'now-moment-media' }}
+        working-directory: media-worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          ERN_MEDIA_RATE_HMAC_KEY: ${{ secrets.ERN_MEDIA_RATE_HMAC_KEY }}
+          ERN_MEDIA_REVIEW_TOKEN: ${{ secrets.ERN_MEDIA_REVIEW_TOKEN }}
+        run: |
+          set -euo pipefail
+          printf '%s' "$ERN_MEDIA_RATE_HMAC_KEY" | npx --yes wrangler@latest secret put ERN_MEDIA_RATE_HMAC_KEY
+          printf '%s' "$ERN_MEDIA_REVIEW_TOKEN" | npx --yes wrangler@latest secret put ERN_MEDIA_REVIEW_TOKEN
+      - name: Deploy Now Moment Media Worker
+        if: ${{ inputs.target == 'now-moment-media' }}
+        working-directory: media-worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@latest deploy
       - name: Preserve fail-closed activation boundary
         run: |
           set -euo pipefail
           grep -q '"ERN_EARTH_SIGNALS_ENABLED": "false"' signals-worker/wrangler.jsonc
           grep -q '"ERN_SUBMISSION_ENABLED": "false"' submission-worker/wrangler.jsonc
+          grep -q '"ERN_NOW_MOMENT_PHOTO_ENABLED": "false"' media-worker/wrangler.jsonc
           echo "Deployment may create infrastructure only; public activation remains off."

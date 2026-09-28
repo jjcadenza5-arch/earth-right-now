@@ -5,9 +5,13 @@ console.assert(!workflow.includes("\n  push:"),"Participation Worker deployment 
 console.assert(workflow.includes("CLOUDFLARE_API_TOKEN")&&workflow.includes("CLOUDFLARE_ACCOUNT_ID"),"Cloudflare deployment credentials must come from GitHub secrets");
 console.assert(workflow.includes("ERN_EARTH_SIGNALS_ENABLED")&&workflow.includes('"false"'),"Earth Signals deployment must preserve fail-closed activation");
 console.assert(workflow.includes("ERN_SUBMISSION_ENABLED")&&workflow.includes('"false"'),"Submission deployment must preserve fail-closed activation");
+console.assert(workflow.includes("ERN_NOW_MOMENT_PHOTO_ENABLED")&&workflow.includes('"false"'),"Media deployment must preserve fail-closed activation");
 console.assert(workflow.includes("wrangler@latest deploy"),"Participation deployment must use Wrangler");
 console.assert(workflow.includes("ERN_RATE_HMAC_KEY")&&workflow.includes("ERN_SIGNAL_REVIEW_TOKEN"),"Earth Signals runtime secrets must be installed through GitHub secrets");
 console.assert(workflow.includes("ERN_SUBMISSION_RATE_HMAC_KEY")&&workflow.includes("ERN_SUBMISSION_REVIEW_TOKEN"),"Submission runtime secrets must be installed through GitHub secrets");
+console.assert(workflow.includes("now-moment-media"),"Now Moment Media must be an explicit manual deployment target");
+console.assert(workflow.includes("ERN_MEDIA_RATE_HMAC_KEY")&&workflow.includes("ERN_MEDIA_REVIEW_TOKEN"),"Media runtime secrets must be installed through GitHub secrets");
+console.assert(workflow.includes("ern-now-moment-media")&&workflow.includes("r2 bucket list"),"Media deployment must require the private R2 bucket");
 console.assert(workflow.includes("wrangler@latest secret put"),"Participation deployment must install runtime secrets before deployment");
 console.assert(!workflow.includes("echo $ERN_")&&!workflow.includes("echo \"$ERN_"),"Participation deployment must not echo secret values");
 console.log("participation Worker deployment remains manual and fail-closed");
