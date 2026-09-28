@@ -1,3 +1,9 @@
+## 2026-09-28 — “See before I go” added to ERN Guide
+- Added a first-class Guide quick action for ERN's original trip-intent use case without redesigning the Guide.
+- A planning-only prompt now asks for the destination; a planning query containing a known place returns the strongest truthful current ERN windows for that place.
+- Added localized public copy for all seven interface languages.
+- Source truth/ranking remains authoritative; the new intent does not promote affiliate links or change Watch Earth/editorial ranking.
+
 ## 2026-09-28 — Coordinate provenance strengthened; Chiang Mai gap rechecked
 - Replaced Singapore Port's directory-derived region reference with the Port of Singapore Wikidata coordinate.
 - Replaced Rome Spanish Steps' Mapcarta reference with the official Roma Capitale tourism coordinate.
