@@ -28,8 +28,8 @@ Earth Signals and camera/place submission infrastructure, operator moderation, s
 ## Stage K — living participation surfaces — LOCALLY COMPLETE / ACTIVATION GATED
 Now Moments and For Places are activation-aware, canonical-place/consent bounded, safely deployed to Pages, and remain local/read-only while participation infrastructure is OFF. Recent visitor-signal display is prepared and clearly unverified. Remaining activation depends on Phase J deployment evidence and explicit switches.
 
-## Stage L — temporary Now Moment media foundation — ACTIVE
-Prepare still-photo Now Moments behind a separate deployment/activation gate. Photos must remain temporary, metadata-stripped, canonical-place-linked, moderation-before-display, bounded in file size/dimensions/storage, and clearly labeled as unverified visitor media. Structured Earth Signals must activate first. Video remains out of scope.
+## Stage L — temporary Now Moment media foundation — LOCALLY COMPLETE / EXTERNAL DEPLOYMENT GATE
+Still-photo Now Moments now have a prepared private R2 + Durable Object Worker, metadata sanitation, canonical-place validation, moderation-before-display, private operator queue/preview, abuse reporting, 45-minute metadata/object cleanup, rate and storage ceilings, photo-specific published privacy wording, manual secret-provisioning deployment and live health verification. Visitor photo upload remains OFF. The remaining gate is controlled Cloudflare deployment plus live health evidence, and structured Earth Signals must activate before photo activation. Video remains out of scope.
 
 ## Stage I — public deployment and release certification — PUBLIC / GATE READY
 earthrightnow.app is publicly deployed and the current release-readiness gate is green with fresh browser, mobile, provider-playback, accessibility, performance and rollback evidence. Future releases remain fail-closed: keep evidence fresh and do not treat static/CI success alone as permission or playback proof.
