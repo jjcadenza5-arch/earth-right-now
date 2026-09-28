@@ -14,10 +14,11 @@
   "ttlMinutes": 45,
   "maxStoredBytes": 1572864,
   "videoEnabled": false,
-  "privacyPublished": false,
+  "privacyPublished": true,
   "secretIsolation": false,
   "observability": false,
   "costGuard": false,
-  "checkedAt": "2026-09-28T07:38:30Z",
-  "evidenceNote": "Preparation-only manifest. Still-photo Now Moments remain OFF until production media transport, sanitation, moderation, expiry deletion, privacy wording, observability and cost evidence all pass. Video remains out of scope."
+  "checkedAt": "2026-09-28T08:13:53Z",
+  "evidenceNote": "Public, non-secret deployment evidence only. Photo-specific Now Moment privacy wording is now published at https://earthrightnow.app/privacy.html and was deployed successfully by GitHub Pages from commit 946bd6dc53e8d301234a93549ac9b871136c1d01. Media transport remains NOT_DEPLOYED, publicActivationAllowed=false, video remains disabled, and no production infrastructure claim is implied.",
+  "privacyUrl": "https://earthrightnow.app/privacy.html"
 }
