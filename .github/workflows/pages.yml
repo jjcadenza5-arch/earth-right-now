@@ -11,6 +11,8 @@ on:
       - "src/styles-lite.css"
       - "data/sources.json"
       - "data/source-research-priorities.json"
+      - "data/visitor-source-expansion-candidates.json"
+      - "data/realtime-context-sources.json"
       - "docs/SEE_BEFORE_YOU_GO_STANDARD.md"
       - "data/local-directory.json"
       - "data/travel-offers.json"
@@ -54,6 +56,9 @@ on:
       - "scripts/rollback-preflight.mjs"
       - "scripts/participation-preflight.mjs"
       - "scripts/featured-curation-preflight.mjs"
+      - "scripts/source-research-priority-status.mjs"
+      - "scripts/visitor-source-expansion-status.mjs"
+      - "scripts/realtime-context-status.mjs"
       - "scripts/commercial-placement-preflight.mjs"
       - "data/rollback-proof.json"
       - "scripts/build-release-snapshot.mjs"
@@ -110,6 +115,10 @@ jobs:
         run: node scripts/featured-curation-preflight.mjs
       - name: Source research priority integrity
         run: node scripts/source-research-priority-status.mjs
+      - name: Visitor source expansion integrity
+        run: node scripts/visitor-source-expansion-status.mjs
+      - name: Real-time context integrity
+        run: node scripts/realtime-context-status.mjs
       - name: Commercial placement integrity preflight
         run: node scripts/commercial-placement-preflight.mjs
       - name: Build static release
