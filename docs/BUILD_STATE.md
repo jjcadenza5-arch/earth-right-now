@@ -1,3 +1,9 @@
+## 2026-09-28 — Klook Tokyo destination offer prepared
+- Human generated and verified Klook Tokyo link `https://klook.tpo.mx/RHEyOza2`.
+- Bound the offer to `chidori-sakura` (Chidori-ga-fuchi Green Way) as an activities option.
+- Partner: Klook via Travelpayouts; disclosure remains explicit; editorial ranking is unchanged.
+- Generic Klook homepage link remains non-public.
+
 ## 2026-09-28 — Klook New York destination offer prepared
 - Human generated and verified Klook New York link `https://klook.tpo.mx/9ofY8SDC`.
 - Bound the offer to ERN's New York skyline and both Statue of Liberty views as an activities option.
