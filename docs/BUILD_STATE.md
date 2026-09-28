@@ -1,3 +1,12 @@
+## 2026-09-28 — Stage O locally complete; Stage P Commercial Attribution Truth opened
+- Stage O public Media & Partner Kit passed syntax, Operations and GitHub Pages deployment on commit `5b6816878632a98795c5c4f212e44d5f5a3c58f9`; Stage O is now LIVE / LOCALLY COMPLETE.
+- Opened Stage P by extending ERN's existing privacy-minimal telemetry allowlist with one bounded `travel_option_opened` event.
+- The event can contain only offer ID, place ID, intent, destination/experience link scope, affiliate flag and sponsored flag.
+- Travel telemetry remains default-OFF and is emitted only through ERN's existing `ERN_TELEMETRY` gate when an analytics adapter is intentionally installed.
+- Runtime attribution listens only to existing `data-offer-id` links and revalidates the offer against the current verified travel registry before emitting.
+- Clicks are explicitly not bookings, purchases, conversions, commissions or revenue and cannot feed personalization/ranking.
+- Added a read-only attribution status, privacy documentation and smoke coverage.
+
 ## 2026-09-28 — Stage N locally complete; Stage O public media & partner kit opened
 - Stage N shareability foundation passed public deployment and CI on commit `317e19a5d17773646c427225560adb722461d41d`.
 - Stage N is now locally complete; external social channels remain a truthful connection gate. Metricool is available as an optional future connector for connected-brand social operations, but no account connection is assumed.
