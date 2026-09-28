@@ -7,8 +7,13 @@ function safeEndpoint(raw){
 }
 export function submissionClientConfig(raw={}){
   const endpoint=safeEndpoint(raw.endpoint||raw.endpointUrl||"");
-  const enabled=Boolean(raw.enabled===true&&endpoint);
-  return{enabled,endpoint};
+  let submissionUrl=null;
+  if(endpoint){
+    const u=new URL(endpoint);
+    submissionUrl=u.pathname.replace(/\/$/,"").endsWith("/api/submissions")?u.toString().replace(/\/$/,""):endpoint+"/api/submissions";
+  }
+  const enabled=Boolean(raw.enabled===true&&submissionUrl);
+  return{enabled,endpoint,submissionUrl};
 }
 export function createSubmissionClient(raw={}){
   const config=submissionClientConfig(raw);
@@ -17,7 +22,7 @@ export function createSubmissionClient(raw={}){
     async submit(record,{consent=false}={}){
       if(consent!==true)return{ok:false,reason:"CONSENT_REQUIRED"};
       if(!config.enabled)return{ok:false,disabled:true,reason:"SUBMISSION_TRANSPORT_DISABLED"};
-      const r=await fetch(config.endpoint+"/api/submissions",{
+      const r=await fetch(config.submissionUrl,{
         method:"POST",
         headers:{"content-type":"application/json"},
         credentials:"omit",
