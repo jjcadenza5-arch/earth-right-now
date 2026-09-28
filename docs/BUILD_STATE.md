@@ -1,3 +1,8 @@
+## 2026-09-28 — For Places copy aligned with See Before You Go
+- Clarified that any visitor-interest place may participate, not only famous landmarks or a narrow set of categories.
+- Added the practical reason to contribute a current window: when today's flowers, crowds, weather, visibility, animals, beach conditions, activity or atmosphere matter, a current view can help visitors decide whether, when and how to go.
+- Kept no-ranking-for-sale and review/permission boundaries unchanged.
+
 ## 2026-09-28 — Seoul real-time API contract verified; public context remains OFF
 - Verified the official English Seoul Real-time City Data API service as `citydata_eng` (dataset OA-22714), including documented request pattern, one-area-per-request behavior and API-key requirement.
 - Added a server-side adapter contract with source timestamps, stale-data fail-closed behavior, attribution, privacy and explicit ERN↔Seoul place-mapping gates.
