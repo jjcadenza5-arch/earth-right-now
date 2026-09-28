@@ -133,5 +133,22 @@
     "evidence": "Human generated a destination-specific Klook/New York link through the verified Travelpayouts ERN Project and confirmed it opens the New York destination page correctly.",
     "id": "klook-new-york-statue-harbor",
     "placeId": "statue-liberty-harbor-earthcam"
+  },
+  {
+    "id": "klook-tokyo-activities",
+    "title": "Explore Tokyo activities",
+    "placeId": "chidori-sakura",
+    "provider": "Klook",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "klook",
+    "destinationScope": "Tokyo",
+    "url": "https://klook.tpo.mx/RHEyOza2",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-09-28T14:10:00Z",
+    "expiresAt": "2026-12-27T14:10:00Z",
+    "evidence": "Human generated a destination-specific Klook/Tokyo link through the verified Travelpayouts ERN Project and confirmed it opens the Tokyo destination page correctly."
   }
 ]
