@@ -285,7 +285,8 @@
     "lon": 36.899,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/kenya/laikipia-county/mpala-research-centre-watering-hole-2/",
-    "freshnessEvidence": "Current CouchTourist Mpala Research Centre watering-hole page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 604). Source page is current; deployed ERN playback remains separately unverified."
+    "freshnessEvidence": "Current CouchTourist Mpala Research Centre watering-hole page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 604). Source page is current; deployed ERN playback remains separately unverified.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "kijihiki-plateau",
@@ -320,7 +321,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.harp.lg.jp/opendata/dataset/2241/resource/8354/content.html",
     "coordinateNote": "Hokkaido/Hokuto public open-data coordinates for the Kijihiki Plateau panorama viewpoint.",
-    "freshnessEvidence": "Fresh CouchTourist Kijihiki Plateau page remains current on 2026-09-24 and still exposes the same provider embed iframe (cam 8657) with attribution instructions. This confirms provider-page/embed availability only; deployed HUMAN_PLAYBACK remains separately unverified."
+    "freshnessEvidence": "Fresh CouchTourist Kijihiki Plateau page remains current on 2026-09-24 and still exposes the same provider embed iframe (cam 8657) with attribution instructions. This confirms provider-page/embed availability only; deployed HUMAN_PLAYBACK remains separately unverified.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "st-moritz",
@@ -355,7 +357,8 @@
     "lon": 9.838323,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.stmoritz.com/en",
-    "freshnessEvidence": "Fresh official St. Moritz webcam page remains current on 2026-09-24 and lists live panorama webcams including St. Moritz / Corviglia / Piz Nair views. ERN remains EXTERNAL_LIVE + LINK_ONLY + EXTERNAL; no embed permission is inferred."
+    "freshnessEvidence": "Fresh official St. Moritz webcam page remains current on 2026-09-24 and lists live panorama webcams including St. Moritz / Corviglia / Piz Nair views. ERN remains EXTERNAL_LIVE + LINK_ONLY + EXTERNAL; no embed permission is inferred.",
+    "attribution": "St. Moritz Tourism"
   },
   {
     "id": "verbier",
@@ -391,7 +394,8 @@
     "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Verbier embedded player delivers current live content. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.verbier.ch/en/",
-    "playbackVerifiedAt": "2026-09-28T09:45:01.286Z"
+    "playbackVerifiedAt": "2026-09-28T09:45:01.286Z",
+    "attribution": "Verbier – Val de Bagnes Tourism"
   },
   {
     "id": "dolomiti-superski",
@@ -426,7 +430,8 @@
     "coordinateBasis": "MULTI_SITE_COLLECTION",
     "coordinateNote": "The official Dolomiti Superski webcam surface spans multiple named Dolomites regions and cameras, so one static point would misrepresent the collection.",
     "coordinateSourceUrl": "https://www.dolomitisuperski.com/en",
-    "freshnessEvidence": "Fresh official Dolomiti Superski webcam page remains current on 2026-09-24 and lists live broadcasts/current cameras across multiple Dolomites regions. ERN keeps this multi-site collection LINK_ONLY + EXTERNAL."
+    "freshnessEvidence": "Fresh official Dolomiti Superski webcam page remains current on 2026-09-24 and lists live broadcasts/current cameras across multiple Dolomites regions. ERN keeps this multi-site collection LINK_ONLY + EXTERNAL.",
+    "attribution": "Dolomiti Superski"
   },
   {
     "id": "queenstown-airport-alps",
@@ -460,7 +465,8 @@
     "lon": 168.7372513,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.queenstownairport.co.nz/contact-us/",
-    "freshnessEvidence": "The current official Queenstown Airport Webcams & Weather page describes close-to-live views of the airport and surrounding area and lists multiple active airport-facing webcam views."
+    "freshnessEvidence": "The current official Queenstown Airport Webcams & Weather page describes close-to-live views of the airport and surrounding area and lists multiple active airport-facing webcam views.",
+    "attribution": "Queenstown Airport"
   },
   {
     "id": "kitzbuhel",
@@ -495,7 +501,8 @@
     "lon": 12.391944,
     "freshnessEvidence": "The current official KitzSki webcam page lists live/current images from Hahnenkamm, Steinbergkogel, Pengelstein, Kitzbüheler Horn, Bichlalm, Resterkogel and other Kitzbühel-area mountain locations.",
     "coordinateBasis": "REGION_REFERENCE",
-    "coordinateSourceUrl": "https://www.kitzski.at/en/"
+    "coordinateSourceUrl": "https://www.kitzski.at/en/",
+    "attribution": "Bergbahn Kitzbühel / KitzSki"
   },
   {
     "id": "ski-arlberg",
@@ -530,7 +537,8 @@
     "lon": 10.266667,
     "freshnessEvidence": "The current official Ski Arlberg webcam page reports active webcams and describes them as live mountain views across the Arlberg region.",
     "coordinateBasis": "REGION_REFERENCE",
-    "coordinateSourceUrl": "https://www.skiarlberg.at/en"
+    "coordinateSourceUrl": "https://www.skiarlberg.at/en",
+    "attribution": "Ski Arlberg"
   },
   {
     "id": "grand-canyon-national-park",
@@ -563,7 +571,8 @@
     "lat": 36.058713,
     "lon": -112.108861,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.nps.gov/grca/getinvolved/sup.htm"
+    "coordinateSourceUrl": "https://www.nps.gov/grca/getinvolved/sup.htm",
+    "attribution": "National Park Service"
   },
   {
     "id": "yellowstone-national-park",
@@ -595,7 +604,8 @@
     "lon": -110.828219,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.nps.gov/yell/planyourvisit/maps.htm",
-    "freshnessEvidence": "Current official NPS Yellowstone Webcams page states that ten webcams show views throughout the park, including a live-streaming Old Faithful/Upper Geyser Basin camera and current-condition static webcams."
+    "freshnessEvidence": "Current official NPS Yellowstone Webcams page states that ten webcams show views throughout the park, including a live-streaming Old Faithful/Upper Geyser Basin camera and current-condition static webcams.",
+    "attribution": "National Park Service"
   },
   {
     "id": "mount-rainier-national-park",
@@ -628,7 +638,8 @@
     "lat": 46.785858,
     "lon": -121.736708,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.nps.gov/planyourvisit/event-details.htm?id=FA1EF6C5-C90B-21C5-0EB54E9BA55DB47F"
+    "coordinateSourceUrl": "https://www.nps.gov/planyourvisit/event-details.htm?id=FA1EF6C5-C90B-21C5-0EB54E9BA55DB47F",
+    "attribution": "National Park Service"
   },
   {
     "id": "glacier-national-park",
@@ -660,7 +671,8 @@
     "lon": -113.98361,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.nps.gov/glac/planyourvisit/reservation-campgrounds.htm",
-    "freshnessEvidence": "Fresh official National Park Service Glacier webcam directory remains current on 2026-09-24, with multiple park webcam views; individual current camera pages such as Many Glacier report Active status and one-minute refresh. ERN remains LINK_ONLY and does not infer embed/display permission."
+    "freshnessEvidence": "Fresh official National Park Service Glacier webcam directory remains current on 2026-09-24, with multiple park webcam views; individual current camera pages such as Many Glacier report Active status and one-minute refresh. ERN remains LINK_ONLY and does not infer embed/display permission.",
+    "attribution": "National Park Service"
   },
   {
     "id": "san-diego-zoo",
@@ -693,7 +705,8 @@
     "lon": -117.1515722,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/San_Diego_Zoo",
-    "coordinateNote": "Zoo-site reference point for Atlas placement; not claimed as a specific camera position."
+    "coordinateNote": "Zoo-site reference point for Atlas placement; not claimed as a specific camera position.",
+    "attribution": "San Diego Zoo"
   },
   {
     "id": "zermatt-matterhorn",
@@ -725,7 +738,8 @@
     "lat": 46.023604,
     "lon": 7.748607,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://zermatt.swiss/"
+    "coordinateSourceUrl": "https://zermatt.swiss/",
+    "attribution": "Zermatt Tourism"
   },
   {
     "id": "chamonix-mont-blanc",
@@ -758,7 +772,8 @@
     "lon": 6.8697222,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://fr.wikipedia.org/wiki/Chamonix-Mont-Blanc",
-    "coordinateNote": "Chamonix town reference point for a multi-webcam destination; not a specific camera coordinate."
+    "coordinateNote": "Chamonix town reference point for a multi-webcam destination; not a specific camera coordinate.",
+    "attribution": "Chamonix-Mont-Blanc Tourism"
   },
   {
     "id": "georgia-aquarium",
@@ -790,7 +805,8 @@
     "lat": 33.7638778,
     "lon": -84.3979549,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.georgiaaquarium.org/booking/directions-parking/"
+    "coordinateSourceUrl": "https://www.georgiaaquarium.org/booking/directions-parking/",
+    "attribution": "Georgia Aquarium"
   },
   {
     "id": "whistler-blackcomb",
@@ -823,7 +839,8 @@
     "lon": -122.9541667,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://apps.gov.bc.ca/pub/bcgnws/names/34795.html",
-    "coordinateNote": "Official BC Geographical Names Whistler community reference point for the resort destination."
+    "coordinateNote": "Official BC Geographical Names Whistler community reference point for the resort destination.",
+    "attribution": "Whistler Blackcomb"
   },
   {
     "id": "florida-now",
@@ -857,7 +874,8 @@
     "coordinateNote": "VISIT FLORIDA's Florida Now surface aggregates live webcam feeds from many cities and destinations across the state, so ERN intentionally does not assign one static pin.",
     "coordinateSourceUrl": "https://www.visitflorida.com/",
     "travelResearchEligible": false,
-    "travelResearchExclusionReason": "Statewide multi-destination collection rather than one concrete visitor destination; do not force a single travel option onto the aggregate source."
+    "travelResearchExclusionReason": "Statewide multi-destination collection rather than one concrete visitor destination; do not force a single travel option onto the aggregate source.",
+    "attribution": "VISIT FLORIDA"
   },
   {
     "id": "lajes-pico-harbour",
@@ -889,7 +907,8 @@
     "lon": -28.252551,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/portugal/azores/espaco-talassa-harbour-view-lajes-do-pico/",
-    "freshnessEvidence": "Current CouchTourist Espaço Talassa / Lajes do Pico page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 4199). Source page is current; deployed ERN playback remains separately unverified."
+    "freshnessEvidence": "Current CouchTourist Espaço Talassa / Lajes do Pico page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 4199). Source page is current; deployed ERN playback remains separately unverified.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "roque-observatory",
@@ -922,7 +941,8 @@
     "lon": -17.8916667,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/spain/canary-islands/nordic-optical-telescope-observatory-view/",
-    "freshnessEvidence": "Current CouchTourist Nordic Optical Telescope / Roque de los Muchachos page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 7784). Source page is current; deployed ERN playback remains separately unverified."
+    "freshnessEvidence": "Current CouchTourist Nordic Optical Telescope / Roque de los Muchachos page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 7784). Source page is current; deployed ERN playback remains separately unverified.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "cijin-beach-kaohsiung",
@@ -959,7 +979,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/taiwan/kaohsiung/cijin-beach/",
     "playbackVerifiedAt": "2026-09-28T09:46:08.369Z",
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current."
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "cancun-live-aqua-beach",
@@ -994,7 +1015,8 @@
     "failureReason": null,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/mexico/quintana-roo/live-aqua-beach-resort-cancun-mexico/",
-    "freshnessEvidence": "Current CouchTourist Live Aqua Cancún page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 3990). Source page is current; deployed ERN playback remains separately unverified."
+    "freshnessEvidence": "Current CouchTourist Live Aqua Cancún page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 3990). Source page is current; deployed ERN playback remains separately unverified.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "nyc-skyline-jersey-city-earthcam",
@@ -1719,7 +1741,8 @@
     "lon": 121.2799,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/taiwan/taitung-county/taitung-jinzun/",
-    "freshnessEvidence": "Current CouchTourist Taitung Jinzun page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 1043). Source page is current; deployed ERN playback remains separately unverified."
+    "freshnessEvidence": "Current CouchTourist Taitung Jinzun page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 1043). Source page is current; deployed ERN playback remains separately unverified.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "blouberg-table-mountain",
@@ -1755,7 +1778,8 @@
     "coordinateSourceUrl": "https://www.openstreetmap.org/node/262719335",
     "coordinateNote": "OpenStreetMap locality reference for Bloubergstrand, Western Cape.",
     "featuredHold": true,
-    "featuredHoldReason": "Current stable-beta curation hold."
+    "featuredHoldReason": "Current stable-beta curation hold.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "perdido-key-beach",
@@ -1790,7 +1814,8 @@
     "coordinateSourceUrl": "https://www.compass.com/homedetails/14239-Perdido-Key-Dr-Unit-PH13-Perdido-Key-FL-32507/GYLB3_pid/",
     "coordinateNote": "Public property reference coordinates for the La Riva complex on Perdido Key.",
     "featuredHold": true,
-    "featuredHoldReason": "Current stable-beta curation hold."
+    "featuredHoldReason": "Current stable-beta curation hold.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "sasagawa-nagare",
@@ -1824,7 +1849,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q11641442",
     "coordinateNote": "Public Wikidata coordinate record for Roadside Station Sasagawa-nagare, sourced from the Japanese Wikipedia entry.",
-    "freshnessEvidence": "Current CouchTourist Sasagawa Nagare page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 9505). Source page is current; deployed ERN playback remains separately unverified."
+    "freshnessEvidence": "Current CouchTourist Sasagawa Nagare page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 9505). Source page is current; deployed ERN playback remains separately unverified.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "chihshang-paradise-road",
@@ -1858,7 +1884,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q1135297",
     "coordinateNote": "Chihshang Township reference point for Paradise Road; not claimed as exact webcam position.",
-    "freshnessEvidence": "Current CouchTourist Chihshang Paradise Road page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 1037). Source page is current; deployed ERN playback remains separately unverified."
+    "freshnessEvidence": "Current CouchTourist Chihshang Paradise Road page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 1037). Source page is current; deployed ERN playback remains separately unverified.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "ponte-di-legno-adamello",
@@ -1893,7 +1920,8 @@
     "coordinateSourceUrl": "https://mapcarta.com/25426064",
     "coordinateNote": "Public geographic reference for Ponte di Legno town; ERN treats this as a regional reference for the Adamello-area view, not the camera position.",
     "freshnessEvidence": "Current CouchTourist Ponte di Legno / Adamello page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 8621). Source page is current; deployed ERN playback remains separately unverified. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
-    "playbackVerifiedAt": "2026-09-28T09:46:03.303Z"
+    "playbackVerifiedAt": "2026-09-28T09:46:03.303Z",
+    "attribution": "CouchTourist"
   },
   {
     "id": "pleasant-beach-lake-ontario",
@@ -1928,7 +1956,8 @@
     "coordinateSourceUrl": "https://www.openstreetmap.org/way/827770432",
     "coordinateNote": "OpenStreetMap feature coordinates for Pleasant Beach Hotel in Sterling, New York.",
     "featuredHold": true,
-    "featuredHoldReason": "Current stable-beta curation hold."
+    "featuredHoldReason": "Current stable-beta curation hold.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "maui-hale-pau-hana",
@@ -1964,7 +1993,8 @@
     "coordinateSourceUrl": "https://mapcarta.com/25364046",
     "coordinateNote": "Public GeoNames-backed place reference for Hale Pau Hana in Kihei, Maui.",
     "featuredHold": true,
-    "featuredHoldReason": "Current stable-beta curation hold."
+    "featuredHoldReason": "Current stable-beta curation hold.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "bergen-ulriken",
@@ -1999,7 +2029,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/norway/ulriken-mountain-view-bergen-norway/",
     "playbackVerifiedAt": "2026-09-28T09:45:59.053Z",
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current."
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "waikiki-south-shore",
@@ -2035,7 +2066,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.openstreetmap.org/way/218679862",
     "coordinateNote": "OpenStreetMap feature coordinates for Waikīkī Beach.",
-    "freshnessEvidence": "Current CouchTourist Waikiki Beach page is reachable today and still exposes the same ERN-reviewed embed iframe (cam 1285). Provider-page currentness is confirmed, but the prior deployed visitor playback rejection remains unresolved; health stays DEGRADED and playback remains unverified."
+    "freshnessEvidence": "Current CouchTourist Waikiki Beach page is reachable today and still exposes the same ERN-reviewed embed iframe (cam 1285). Provider-page currentness is confirmed, but the prior deployed visitor playback rejection remains unresolved; health stays DEGRADED and playback remains unverified.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "cold-lake-marina",
@@ -2070,7 +2102,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.openstreetmap.org/way/399682010",
     "coordinateNote": "OpenStreetMap feature coordinates for Cold Lake Marina.",
-    "freshnessEvidence": "Current CouchTourist Cold Lake Marina page is reachable today and still exposes the same ERN-reviewed embed iframe (cam 7042). Provider-page currentness is confirmed, but the prior deployed visitor playback rejection remains unresolved; health stays DEGRADED and playback remains unverified."
+    "freshnessEvidence": "Current CouchTourist Cold Lake Marina page is reachable today and still exposes the same ERN-reviewed embed iframe (cam 7042). Provider-page currentness is confirmed, but the prior deployed visitor playback rejection remains unresolved; health stays DEGRADED and playback remains unverified.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "st-johns-harbour",
@@ -2104,7 +2137,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q111959894",
     "coordinateNote": "St. John's Harbour reference point; not claimed as exact webcam position.",
-    "freshnessEvidence": "Current CouchTourist St. John's Harbour page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 151). Source page is current; deployed ERN playback remains separately unverified."
+    "freshnessEvidence": "Current CouchTourist St. John's Harbour page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 151). Source page is current; deployed ERN playback remains separately unverified.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "metung-gippsland-lakes",
@@ -2141,7 +2175,8 @@
     "freshnessEvidence": "Current CouchTourist Metung Hotel page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 4100). Source page is current; deployed ERN playback remains separately unverified.",
     "lastFailedCheck": "2026-09-25T14:58:52.619Z",
     "featuredHold": true,
-    "featuredHoldReason": "Fresh deployed ERN human review failed playback on 2026-09-25. Keep out of featured/LIVE HERE rotation until a later human review confirms recovery."
+    "featuredHoldReason": "Fresh deployed ERN human review failed playback on 2026-09-25. Keep out of featured/LIVE HERE rotation until a later human review confirms recovery.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "skeikampen-ski",
@@ -2176,7 +2211,8 @@
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q2786332",
     "coordinateNote": "Skeikampen mountain/destination reference point; not claimed as exact webcam position.",
     "playbackVerifiedAt": "2026-09-28T09:44:24.803Z",
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current."
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
+    "attribution": "CouchTourist"
   },
   {
     "id": "coogee-randwick-beaches",
@@ -2209,7 +2245,8 @@
     "mapBehavior": "MULTI_SITE_UNPINNED",
     "coordinateBasis": "MULTI_SITE_COLLECTION",
     "coordinateNote": "Randwick City Council's beach-cam surface covers Coogee, Clovelly, Little Bay, Mahon Pool, Malabar, Maroubra and Yarra Bay, so one pin would misrepresent the collection.",
-    "coordinateSourceUrl": "https://www.randwick.nsw.gov.au/"
+    "coordinateSourceUrl": "https://www.randwick.nsw.gov.au/",
+    "attribution": "Randwick City Council"
   },
   {
     "id": "boston-harbor-islands",
@@ -2243,7 +2280,8 @@
     "lon": -70.8918056,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.nps.gov/boha/learn/historyculture/facts-libr.htm",
-    "freshnessEvidence": "The current NPS Boston Harbor Islands webcam page lists four active views from Boston Light on Little Brewster Island; individual camera pages report active status and one-minute refreshes."
+    "freshnessEvidence": "The current NPS Boston Harbor Islands webcam page lists four active views from Boston Light on Little Brewster Island; individual camera pages report active status and one-minute refreshes.",
+    "attribution": "National Park Service"
   },
   {
     "id": "diano-marina",
@@ -2277,7 +2315,8 @@
     "lon": 8.0833333,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Diano_Marina",
-    "coordinateNote": "Diano Marina town reference point; not claimed as exact webcam position."
+    "coordinateNote": "Diano Marina town reference point; not claimed as exact webcam position.",
+    "attribution": "Comune di Diano Marina Tourism"
   },
   {
     "id": "farm-tomita",
@@ -2312,7 +2351,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://mapcarta.com/W68744759",
     "coordinateNote": "Farm Tomita site reference point based on mapped garden feature; official Farm Tomita address independently confirms Nakafurano location.",
-    "freshnessEvidence": "Fresh official Farm Tomita site shows today's 2026-09-24 opening information and a current live-webcam section with present field imagery. ERN remains LIVE_IMAGE + LINK_ONLY + EXTERNAL and does not infer image reuse permission."
+    "freshnessEvidence": "Fresh official Farm Tomita site shows today's 2026-09-24 opening information and a current live-webcam section with present field imagery. ERN remains LIVE_IMAGE + LINK_ONLY + EXTERNAL and does not infer image reuse permission.",
+    "attribution": "Farm Tomita"
   },
   {
     "id": "waikiki-beach",
@@ -2346,7 +2386,8 @@
     "lon": -157.8274441,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://fr.wikipedia.org/wiki/Waikiki",
-    "coordinateNote": "Waikiki neighbourhood reference point for the live beach/city destination; not claimed as exact webcam position."
+    "coordinateNote": "Waikiki neighbourhood reference point for the live beach/city destination; not claimed as exact webcam position.",
+    "attribution": "Hilton Waikiki Beach Resort & Spa"
   },
   {
     "id": "jungfrau-region",
@@ -2381,7 +2422,8 @@
     "coordinateNote": "The Jungfrau Railways webcam surface contains multiple live-view locations across Jungfraujoch, Eigergletscher, Grindelwald-First, Männlichen, Schynige Platte, Harder Kulm and Lauberhorn, so ERN intentionally keeps the collection unpinned.",
     "coordinateSourceUrl": "https://www.jungfrau.ch/en-gb/",
     "lastFailedCheck": "2026-09-25T14:50:00Z",
-    "freshnessEvidence": "Fresh official Jungfrau Region webcam pages still list all 10 collection cameras as Offline / no connection on 2026-09-25. The official webcam surface remains current, but ERN keeps this source LINK_ONLY and DEGRADED until at least one working camera returns."
+    "freshnessEvidence": "Fresh official Jungfrau Region webcam pages still list all 10 collection cameras as Offline / no connection on 2026-09-25. The official webcam surface remains current, but ERN keeps this source LINK_ONLY and DEGRADED until at least one working camera returns.",
+    "attribution": "Jungfrau Railways"
   },
   {
     "id": "sottomarina-chioggia",
@@ -2415,7 +2457,8 @@
     "lon": 12.2930139,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Sottomarina",
-    "coordinateNote": "Sottomarina place reference for the Chioggia beach destination; not claimed as exact webcam position."
+    "coordinateNote": "Sottomarina place reference for the Chioggia beach destination; not claimed as exact webcam position.",
+    "attribution": "Visit Chioggia"
   },
   {
     "id": "chidori-sakura",
@@ -2449,7 +2492,8 @@
     "lon": 139.74496,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q6631821",
-    "coordinateNote": "Chidorigafuchi Park reference point for the Green Way destination; not claimed as exact camera position."
+    "coordinateNote": "Chidorigafuchi Park reference point for the Green Way destination; not claimed as exact camera position.",
+    "attribution": "Visit Chiyoda / Chiyoda City Sakura Festival"
   },
   {
     "id": "volcan-tajogaite",
@@ -2521,7 +2565,8 @@
     "lon": -43.1808333,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q202730",
-    "coordinateNote": "Copacabana neighbourhood/beach reference point; not claimed as exact camera position."
+    "coordinateNote": "Copacabana neighbourhood/beach reference point; not claimed as exact camera position.",
+    "attribution": "EarthCam"
   },
   {
     "id": "torres-del-paine-rio-serrano",
@@ -2555,7 +2600,8 @@
     "lon": -72.9663889,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://de.wikipedia.org/wiki/Nationalpark_Torres_del_Paine",
-    "coordinateNote": "Torres del Paine National Park reference point for the Río Serrano destination; not claimed as exact webcam position."
+    "coordinateNote": "Torres del Paine National Park reference point for the Río Serrano destination; not claimed as exact webcam position.",
+    "attribution": "SkylineWebcams"
   },
   {
     "id": "reykjavik-metoffice",
