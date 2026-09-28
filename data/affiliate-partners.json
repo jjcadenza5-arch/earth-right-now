@@ -31,5 +31,16 @@
     "enabled": true,
     "verifiedAt": "2026-09-28T13:39:00Z",
     "expiresAt": "2026-12-27T13:39:00Z"
+  },
+  {
+    "id": "welcome-pickups",
+    "name": "Welcome Pickups via Travelpayouts",
+    "intent": "transport",
+    "baseUrl": "https://www.welcomepickups.com/",
+    "affiliate": true,
+    "sponsored": false,
+    "enabled": true,
+    "verifiedAt": "2026-09-28T13:41:00Z",
+    "expiresAt": "2026-12-27T13:41:00Z"
   }
 ]
