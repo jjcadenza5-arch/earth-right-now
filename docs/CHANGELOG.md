@@ -1,3 +1,8 @@
+## 2026-09-28 — Make research playback review schedule-aware
+- Added provider-published review windows and automatic off-hours suppression.
+- Nishiki Market is now eligible for human review only during 11:00–18:00 JST.
+- Added tests preventing off-window candidates from appearing as active review work.
+
 ## 2026-09-28 — Apply second Kyoto playback review
 - Promoted Hanamikoji after deployed human confirmation.
 - Deferred Arashiyama Bamboo after candidate-specific playback failure.
