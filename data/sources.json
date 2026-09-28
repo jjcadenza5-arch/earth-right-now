@@ -2909,7 +2909,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": 34.9671,
     "lon": 135.7727,
-    "coordinateSourceUrl": "https://global.kyoto.travel/en/comfort/"
+    "coordinateSourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "playbackVerifiedAt": "2026-09-28T14:53:15.031Z"
   },
   {
     "id": "kyoto-kifune-shrine-live",
@@ -2946,7 +2947,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": 35.1216,
     "lon": 135.763,
-    "coordinateSourceUrl": "https://global.kyoto.travel/en/comfort/"
+    "coordinateSourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "playbackVerifiedAt": "2026-09-28T14:53:21.166Z"
   },
   {
     "id": "kyoto-kiyomizuzaka-live",
@@ -2983,7 +2985,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": 34.9966,
     "lon": 135.7808,
-    "coordinateSourceUrl": "https://global.kyoto.travel/en/comfort/"
+    "coordinateSourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "playbackVerifiedAt": "2026-09-28T14:53:26.998Z"
   },
   {
     "id": "london-savoy-place-live",
