@@ -1,3 +1,14 @@
+## 2026-09-28 — Phase K opened: activation-aware living participation surfaces
+- Phase J is now marked locally complete with an external-only deployment gate.
+- Opened Phase K for visitor-facing participation surfaces that can be prepared safely before deployment.
+- Added a shared public participation-config reader driven only by non-secret deployment manifests.
+- Earth Signals remain OFF unless the deployment manifest says DEPLOYED, exposes a valid HTTPS endpoint, and explicitly sets publicActivationAllowed=true.
+- Now Moments now uses canonical ERN place identity rather than arbitrary place text; while OFF it remains a local preview, and when eventually activated it uses the fail-closed Earth Signal client.
+- For Places now uses the submission manifest; while OFF it remains a local draft tool, and when eventually activated it additionally requires explicit visitor consent before transmission.
+- Both surfaces use external ES modules rather than inline transport logic. No admin/review/deployment secrets enter public code.
+- Visitor reports remain clearly unverified and never change camera LIVE/current truth, catalog health or ranking.
+- Visitor photo/video uploads remain OFF and outside this activation wave.
+
 ## 2026-09-28 — Manual participation deployment now provisions runtime secrets safely
 - Closed the final deployment-workflow configuration gap: the manual Phase J workflow now requires and installs each Worker's server-side HMAC and private review token from GitHub secrets before deployment.
 - Secret values are piped directly to Wrangler secret storage and are never committed to Worker config, browser code or deployment output.
