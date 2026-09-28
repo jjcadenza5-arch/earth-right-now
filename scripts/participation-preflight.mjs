@@ -2,6 +2,11 @@ import fs from "node:fs";
 const local=JSON.parse(fs.readFileSync("data/local-directory.json","utf8"));
 const places=fs.readFileSync("for-places.html","utf8");
 const moments=fs.readFileSync("now-moments.html","utf8");
+const placesJs=fs.readFileSync("src/for-places-page.js","utf8");
+const momentsJs=fs.readFileSync("src/now-moments-page.js","utf8");
+const publicConfig=fs.readFileSync("src/participation-public-config.js","utf8");
+const earthSignals=JSON.parse(fs.readFileSync("data/earth-signal-deployment.json","utf8"));
+const submission=JSON.parse(fs.readFileSync("data/submission-transport.json","utf8"));
 const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)};
 must(Array.isArray(local),"local directory must be an array");
 const ids=new Set();
@@ -17,12 +22,23 @@ for(const [i,x] of local.entries()){
  must(Number.isFinite(Date.parse(x.verifiedAt||"")),`${prefix} verifiedAt must be a date`);
  if(x.lat!==undefined||x.lon!==undefined)must(Number.isFinite(Number(x.lat))&&Number.isFinite(Number(x.lon))&&Number(x.lat)>=-90&&Number(x.lat)<=90&&Number(x.lon)>=-180&&Number(x.lon)<=180,`${prefix} coordinates invalid`);
 }
-must(/Submission delivery is not open yet/i.test(places),"camera submission page lost inactive-transport disclosure");
-must(/LOCAL_DRAFT_ONLY/.test(places),"camera submission page lost local-only draft boundary");
-must(!/<form[^>]+action=/i.test(places),"camera draft must not silently post to a backend");
-must(/Uploads are intentionally not active yet/i.test(moments),"Now Moments page lost inactive-upload disclosure");
-must(/Nothing is uploaded or transmitted/i.test(moments),"Now Moments page lost local-preview disclosure");
-must(!/<input[^>]+type=["']file["']/i.test(moments),"Now Moments must not expose file uploads before backend activation");
-must(!/<form[^>]+action=/i.test(moments),"Now Moments preview must not silently post to a backend");
+must(!/<form[^>]+action=/i.test(places),"camera form must not silently post to a backend");
+must(!/<form[^>]+action=/i.test(moments),"Now Moments form must not silently post to a backend");
+must(!/<input[^>]+type=["']file["']/i.test(moments),"Now Moments must not expose file uploads before media backend activation");
+must(placesJs.includes("LOCAL_DRAFT_ONLY"),"camera submission local fallback missing");
+must(placesJs.includes("consent?.checked!==true"),"camera submission explicit send consent missing");
+must(momentsJs.includes("Preview locally"),"Now Moments local preview fallback missing");
+must(momentsJs.includes("canonicalPlaces"),"Now Moments canonical ERN place boundary missing");
+must(publicConfig.includes('earthSignals?.status==="DEPLOYED"')&&publicConfig.includes("publicActivationAllowed===true"),"Earth Signal public config must require deployed + explicit activation");
+must(publicConfig.includes("submissions?.enabled===true"),"Submission public config must require explicit enabled transport");
+if(earthSignals.publicActivationAllowed!==true)must(earthSignals.publicActivationAllowed===false,"Earth Signals activation switch must be explicit false until intentionally enabled");
+if(submission.enabled!==true)must(submission.enabled===false,"Submission transport enabled switch must be explicit false until intentionally enabled");
 if(fail.length){console.error(JSON.stringify({ok:false,fail},null,2));process.exit(1)}
-console.log(JSON.stringify({ok:true,approvedLocalPlaces:local.length,cameraTransportActive:false,nowMomentUploadActive:false,guardrails:["approved-only local directory","no hidden form transport","no premature file upload"]},null,2));
+console.log(JSON.stringify({
+ ok:true,
+ approvedLocalPlaces:local.length,
+ earthSignalsPublicActive:earthSignals.status==="DEPLOYED"&&earthSignals.publicActivationAllowed===true,
+ submissionTransportActive:submission.enabled===true,
+ nowMomentMediaUploadActive:false,
+ guardrails:["approved-only local directory","manifest-gated participation","explicit submission consent","no premature media upload"]
+},null,2));
