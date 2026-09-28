@@ -1,5 +1,5 @@
 export const EARTH_SIGNAL_MEDIA_POLICY=Object.freeze({
- photo:Object.freeze({enabled:false,ttlMinutes:45,stripMetadata:true}),
+ photo:Object.freeze({enabled:false,ttlMinutes:45,stripMetadata:true,maxStoredBytes:1536*1024,maxDimensionPx:1920,moderationRequired:true}),
  video:Object.freeze({enabled:false,ttlMinutes:45,maxSeconds:15,stripMetadata:true})
 });
 export function earthSignalMediaPolicy(kind){return EARTH_SIGNAL_MEDIA_POLICY[kind]||null}
