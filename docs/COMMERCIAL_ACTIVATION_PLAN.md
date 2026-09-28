@@ -35,7 +35,7 @@ The first tracked link retains ERN's Viator partner ID and resolves to Auckland 
 ## Commercial ladder after Booking.com decision
 
 ### Travelpayouts — PROJECT CONFIRMED / MATCHING IN PROGRESS
-ERN website ownership is now confirmed in Travelpayouts. The Project dashboard shows 26 programs available and 20 more potentially unlockable while Travelpayouts reviews/matches the Project. Visible available examples include Klook and Yesim. ERN should still activate only programs that genuinely fit the visitor journey and only after checking individual terms.
+ERN website ownership is now confirmed in Travelpayouts. The Project dashboard shows 26 programs available and 20 more potentially unlockable while Travelpayouts reviews/matches the Project. Visible available examples include Klook and Yesim. ERN will **not use Drive auto-monetization**: the maximum settings can rewrite existing travel links, add keyword links, insert recommendation blocks, show previews and targeted offers. ERN instead uses explicit affiliate links/widgets only where the product deliberately places commercial actions, after program-level eligibility and terms are verified.
 
 Why this is next: it lets ERN build real clicks/bookings and commercial history without depending on one large advertiser application.
 
@@ -65,4 +65,4 @@ Only after a program confirms acceptance:
 - activate a limited public pilot;
 - confirm Earth-view ranking is unchanged.
 
-Current finite lane: monitor the Auckland Viator pilot and wait for Travelpayouts Project matching to complete, then review the actual available-program set. Do not mass-activate programs; prioritize genuine ERN fit such as activities/tickets/transport before secondary utilities. Keep direct Agoda and Skyscanner applications deferred while ERN accumulates real traffic, engagement and commercial history.
+Current finite lane: monitor the Auckland Viator pilot and wait for Travelpayouts Project matching to complete, then review the actual available-program set. Do not mass-activate programs and do not re-enable Drive automation. Prioritize genuine ERN fit such as activities/tickets/transport before secondary utilities, using manual links/widgets only. Keep direct Agoda and Skyscanner applications deferred while ERN accumulates real traffic, engagement and commercial history.
