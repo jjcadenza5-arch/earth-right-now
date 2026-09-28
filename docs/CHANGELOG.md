@@ -1,3 +1,9 @@
+## 2026-09-28 — Make source recency visible and actionable
+- Rechecked eight high-value provider sources and raised current inventory from 23 to 31 of 93.
+- Split destination pages into current verified views vs sources awaiting recheck.
+- Made destination SEO/directory copy recency-aware.
+- Routed stale/expired revalidation by evidence type instead of a generic unsampled bucket.
+
 ## 2026-09-28 — Generalize current-context truth and complete freshness evidence
 - Added missing bounded freshness evidence for 14 existing catalog records and made it a metadata requirement.
 - Added API/manual-official-page acquisition modes to context integrity checks.
