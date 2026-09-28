@@ -1,3 +1,9 @@
+## 2026-09-28 — Formalize See Before You Go source strategy
+- Added a product/source-research standard rooted in ERN's original purpose: show visitors the real place before they decide to go.
+- Made place coverage intentionally broad; source categories are examples, never restrictions.
+- Balanced current usefulness, visual quality, visitor interest, place understanding, editorial balance and provider reliability, with commercial fit capped as a small supporting signal.
+- Preserved no-paid-ranking and source-truth boundaries.
+
 ## 2026-09-28 — Stable beta readiness milestone
 - Refreshed the six formal release-evidence records from current September 28 evidence.
 - ERN's beta-readiness inputs now meet every model cap and all six evidence categories pass, yielding the model's 100% planning indicator.
