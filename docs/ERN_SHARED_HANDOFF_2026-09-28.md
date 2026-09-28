@@ -37,11 +37,14 @@ Current research principles are in:
 - `docs/SEE_BEFORE_YOU_GO_STANDARD.md`
 - `data/source-research-priorities.json`
 - `data/visitor-source-expansion-candidates.json`
+- Destination opportunity matrix: `data/destination-opportunity-matrix.json`
 
 Resolved/active directions:
 - Kyoto official tourism live-camera network: active and expanding source-specifically.
 - London: Savoy Place skyline and Abbey Road Crossing added as EXTERNAL_LIVE / LINK_ONLY.
 - Seoul: real-time crowd/traffic/transit/weather context is a separate research lane, not camera truth.
+- Seoul Plaza 24 Hours is now in the catalog as official EXTERNAL_LIVE / LINK_ONLY; the data-context lane remains separate and public-OFF.
+- Bangkok Sukhumvit Road, Singapore Port & Skyline, and Rome Spanish Steps are now selective EXTERNAL_LIVE / LINK_ONLY catalog windows. Do not infer embed rights from these external handoffs.
 - Seasonal bloom/farm/orchard sources remain high-value research because they embody the original strawberry-picking use case.
 - Tonami Tulip Park Panorama Terrace is already promoted as EXTERNAL_LIVE / LINK_ONLY from Tonami City's official live-camera page. A discovered direct municipal image URL remains research-only and must not replace the safe link-only path without separate permission/currentness approval.
 - Thailand agritourism/farms are a source gap and future For Places / partner-camera outreach opportunity; never substitute static promotional media for current evidence.
@@ -98,5 +101,6 @@ User preference: work autonomously in large batches and return only for genuine 
 - Public About page now includes the concise strawberry-picking origin of ERN and why current views matter.
 - For Places copy now explicitly invites any visitor-interest place where today's flowers, crowds, weather, visibility, animals, beach conditions, activity or atmosphere can help someone decide whether, when or how to go.
 - Seoul Real-time City Data remains a separate PUBLIC-OFF context-data research lane, never camera truth.
-- Current catalog has grown beyond the original stable-beta 80-source baseline; always read current `data/sources.json` rather than relying on the old count.
+- Current catalog count at this handoff revision: 91 sources. Always read current `data/sources.json` rather than relying on a frozen count.
+- A destination-opportunity matrix now steers visual-gap research. Current unresolved high/meaningful gaps include Chiang Mai and Paris; already-covered destinations should be maintained selectively rather than padded with duplicates.
 - Continue autonomously. Only ask the operator for deployed human playback when a candidate is genuinely ready and inside any provider-published live window.
