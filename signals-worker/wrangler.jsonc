@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "ern-signals-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-28",
+  "vars": {
+    "ERN_EARTH_SIGNALS_ENABLED": "false",
+    "ERN_PUBLIC_ORIGIN": "https://earthrightnow.app",
+    "ERN_CATALOG_URL": "https://earthrightnow.app/data/sources.json"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SIGNAL_STATE",
+        "class_name": "SignalState"
+      }
+    ]
+  },
+  "exports": {
+    "SignalState": {
+      "type": "durable-object",
+      "storage": "sqlite"
+    }
+  }
+}

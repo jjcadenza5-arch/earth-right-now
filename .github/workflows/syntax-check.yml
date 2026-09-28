@@ -7,6 +7,7 @@ on:
       - "src/**"
       - "scripts/**"
       - "tests/earth-signal-*.smoke.js"
+      - "signals-worker/**"
       - "tests/guide-ai-*.smoke.js"
       - "data/earth-signal-deployment.json"
       - "data/guide-ai-deployment.json"
@@ -28,7 +29,7 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           set -euo pipefail
-          find src scripts -type f \( -name '*.js' -o -name '*.mjs' \) -print0 | xargs -0 -n1 node --check
+          find src scripts worker travel-worker signals-worker -type f \( -name '*.js' -o -name '*.mjs' \) -print0 | xargs -0 -n1 node --check
       - name: Run Earth Signal focused smoke tests
         run: |
           set -euo pipefail

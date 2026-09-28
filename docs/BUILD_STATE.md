@@ -1,3 +1,14 @@
+## 2026-09-28 — Next phase opened: Earth Signals production-shaped Worker foundation
+- User explicitly opened the next ERN phase, ending AUTONOMOUS HOLD for this finite infrastructure lane.
+- Added a separate `ern-signals-api` Cloudflare Worker foundation with Durable Object SQLite for structured signals, reports and opaque rate events.
+- The Worker reuses ERN's existing Earth Signal validation/service/HTTP contracts instead of creating a parallel truth path.
+- Public contribution activation remains OFF by default through `ERN_EARTH_SIGNALS_ENABLED=false`; repository preparation is not treated as deployment evidence.
+- Server-side place validation is rehydrated from ERN's catalog. Client-created arbitrary place IDs remain rejected.
+- Rate identity is derived server-side with a secret HMAC; raw network identifiers are not stored.
+- Reporting, expiry cleanup, origin restriction, request-size bounds and no-secret health reporting are built into the deployment boundary.
+- Added a dedicated smoke guard and deployment handoff. `data/earth-signal-deployment.json` remains `NOT_DEPLOYED` until real production evidence exists.
+- LIVE HERE 5/5 and the Viator activation hold are untouched.
+
 ## 2026-09-27 — Human review also refreshes exact source currentness for five renewed embeds
 - Follow-up Operations after PR #542 showed 5 fresh HUMAN_PLAYBACK observations with 0 consistency issues, but LIVE HERE remained 0/5 because the separate 24-hour embed source-currentness timestamps had also expired.
 - The same deployed operator review directly loaded the exact current catalog embed targets and visually confirmed they were playing/current, so those observations are valid human source-currentness evidence for the exact reviewed embed targets.
