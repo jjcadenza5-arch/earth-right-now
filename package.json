@@ -68,7 +68,8 @@
     "inside:provider-generated-targets": "node scripts/provider-generated-target-status.mjs",
     "business:research-depth": "node scripts/commercial-research-depth-queue.mjs",
     "local:directory-status": "node scripts/local-directory-status.mjs",
-    "discoverability:preflight": "node scripts/discoverability-preflight.mjs"
+    "discoverability:preflight": "node scripts/discoverability-preflight.mjs",
+    "participation:status": "node scripts/participation-infrastructure-status.mjs"
   },
   "engines": {
     "node": ">=20"
