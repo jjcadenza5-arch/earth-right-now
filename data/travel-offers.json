@@ -167,5 +167,22 @@
     "verifiedAt": "2026-09-28T14:18:00Z",
     "expiresAt": "2026-12-27T14:18:00Z",
     "evidence": "Human generated a destination-specific Klook/Sydney link through the verified Travelpayouts ERN Project and confirmed it opens the Sydney destination page correctly."
+  },
+  {
+    "id": "klook-honolulu-activities",
+    "title": "Explore Honolulu activities",
+    "placeId": "waikiki-beach",
+    "provider": "Klook",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "klook",
+    "destinationScope": "Honolulu / Waikiki",
+    "url": "https://klook.tpo.mx/D2fGjnFI",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-09-28T14:22:00Z",
+    "expiresAt": "2026-12-27T14:22:00Z",
+    "evidence": "Human generated a destination-specific Klook/Honolulu link through the verified Travelpayouts ERN Project and confirmed it opens the Honolulu destination page correctly."
   }
 ]
