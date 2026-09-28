@@ -1,10 +1,11 @@
 ## 2026-09-28 — Recency debt surfaced and destination truth tightened
 - Audited all 93 catalog sources against ERN's current verification horizons. Before this pass: 23 current, 42 stale, 28 expired.
 - Revalidated eight high-value external/current sources from their current provider pages: Coogee/Randwick beaches, Waikiki Beach, Kīlauea, Yellowstone, San Diego Zoo, Chamonix, Whistler Blackcomb and New York skyline.
-- Current in-horizon inventory increased to 31; 34 sources remain stale and 28 expired. Stale/expired records remain catalog history/source references, not current evidence.
+- Current in-horizon inventory increased to 37; 28 sources remain stale and 28 expired after a second six-source provider recheck batch. Stale/expired records remain catalog history/source references, not current evidence.
 - Destination-page generation now separates `Current verified views` from `Sources awaiting recheck`; stale sources are no longer visually grouped as equivalent to current views.
 - Destination SEO/meta copy and the places directory are recency-aware when a place has no in-horizon source.
 - Source revalidation triage now routes unsampled work by actual evidence need: deployed playback recheck for embeds, current-image verification for LIVE_IMAGE, and editorial provider-page recheck for external sources.
+- Second provider recheck batch covered Diano Marina, Sottomarina/Chioggia, Torres del Paine, and SANParks Boulders/Addo/Orpen.
 - No recency horizon was weakened to make the numbers look better.
 
 ## 2026-09-28 — Context standard generalized; freshness evidence completed
