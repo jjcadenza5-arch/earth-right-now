@@ -1,3 +1,10 @@
+## 2026-09-28 — See Before You Go source strategy formalized
+- Preserved ERN's original strawberry-picking lesson as a general product test: help visitors understand the real place before they go.
+- Clarified that ERN is not restricted to any place category; any place with real visitor interest can qualify.
+- Source research now explicitly balances truthful current visual quality with visitor usefulness and practical travel/program fit.
+- Commercial/program fit is a supporting prioritization signal only; it cannot override source truth, quality, Watch Earth ranking, Guide truth or Stories ranking.
+- Added a machine-readable source-research priority model with broad place coverage and only 5% commercial weighting.
+
 ## 2026-09-28 — Complete Travelpayouts program map captured
 - Operator supplied the full 26-program Available inventory.
 - ERN now treats commercial usefulness as a camera-research prioritization signal, never as an editorial override.
