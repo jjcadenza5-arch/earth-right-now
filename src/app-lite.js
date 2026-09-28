@@ -601,21 +601,7 @@ function initSectionSpy(){
  },{rootMargin:"-20% 0px -60% 0px",threshold:[0,.15,.4]});
  for(const [id] of map){const el=document.getElementById(id);if(el)obs.observe(el)}
 }
-async function toggleViewerFullscreen(){
- const viewer=$("#viewer"),stage=$("#viewerStage"),media=stage?.querySelector("iframe,img,video"),video=media?.tagName==="VIDEO"?media:null;
- if(viewer.classList.contains("faux-fullscreen")){viewer.classList.remove("faux-fullscreen");syncFullscreenButton();return}
- if(document.fullscreenElement){try{await document.exitFullscreen();return}catch{}}
- if(document.webkitFullscreenElement&&document.webkitExitFullscreen){try{document.webkitExitFullscreen();return}catch{}}
- try{if(stage?.requestFullscreen){await stage.requestFullscreen();return}}catch{}
- try{
-   if(stage?.webkitRequestFullscreen){
-     stage.webkitRequestFullscreen();
-     setTimeout(()=>{if(!document.webkitFullscreenElement&&!document.fullscreenElement){viewer.classList.add("faux-fullscreen");syncFullscreenButton()}},250);
-     return
-   }
- }catch{}
- try{if(video?.webkitEnterFullscreen){video.webkitEnterFullscreen();return}}catch{}
- viewer.classList.add("faux-fullscreen");syncFullscreenButton()}
+async function toggleViewerFullscreen(){const v=$("#viewer"),s=$("#viewerStage"),m=s?.querySelector("video");if(v.classList.contains("faux-fullscreen")){v.classList.remove("faux-fullscreen");syncFullscreenButton();return}if(document.fullscreenElement){try{await document.exitFullscreen();return}catch{}}if(document.webkitFullscreenElement&&document.webkitExitFullscreen){try{document.webkitExitFullscreen();return}catch{}}try{if(s?.requestFullscreen){await s.requestFullscreen();return}}catch{}try{if(s?.webkitRequestFullscreen){s.webkitRequestFullscreen();setTimeout(()=>{if(!document.webkitFullscreenElement&&!document.fullscreenElement){v.classList.add("faux-fullscreen");syncFullscreenButton()}},250);return}}catch{}try{if(m?.webkitEnterFullscreen){m.webkitEnterFullscreen();return}}catch{}v.classList.add("faux-fullscreen");syncFullscreenButton()}
 function syncFullscreenButton(){const active=!!(document.fullscreenElement||document.webkitFullscreenElement||$("#viewer")?.classList.contains("faux-fullscreen"));$("#fullViewer").textContent=active?"Exit full screen":t("fullscreen");$("#fullViewer").setAttribute("aria-pressed",String(active))}
 function initEvents(){
  $("#homeBtn").onclick=()=>scrollToId("home");$("#homeNav").onclick=()=>scrollToId("home");$("#topSearch").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#topAtlas").onclick=()=>scrollToId("map");
