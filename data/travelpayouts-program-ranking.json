@@ -1,89 +1,391 @@
 {
-  "generatedAt": "2026-09-28T13:30:00Z",
-  "basis": "Fit-first assessment from human-provided Travelpayouts Available-program screenshots. Commission is secondary to visitor utility and ERN editorial fit.",
-  "firstActivationSet": [
+  "generatedAt": "2026-09-28T14:25:00Z",
+  "basis": "Fit-first assessment from the complete 26-program Travelpayouts Available inventory shown by the operator. Commission is secondary to ERN visitor utility and editorial fit.",
+  "strategy": {
+    "principle": "Camera quality and live/current truth come first. Commercial usefulness may help prioritize destinations, but never changes editorial ranking or truth labels.",
+    "cameraPrioritySignals": [
+      "Major tourist cities with strong live/current street, skyline or landmark views",
+      "Iconic attractions and museum/landmark districts",
+      "Arrival cities where airport transfer is a natural next step",
+      "Walkable historic centers where tours and luggage storage are useful",
+      "Island/coastal/road-trip destinations where car or bike rental is useful",
+      "Asia destinations with strong activities/experience inventory"
+    ],
+    "nonCameraDrivers": [
+      "Flights",
+      "eSIM/connectivity",
+      "flight-compensation services",
+      "travel protection"
+    ]
+  },
+  "activeWave": [
+    "klook",
+    "tiqets",
+    "welcome-pickups"
+  ],
+  "nextPartnerReview": [
+    "kkday",
+    "go-city",
+    "wego-trip",
+    "radical-storage",
+    "kiwitaxi",
+    "intui-travel"
+  ],
+  "programs": [
     {
       "id": "klook",
       "name": "Klook",
-      "priority": 1,
       "fit": "VERY_HIGH",
+      "group": "EXPERIENCES",
+      "reward": "2–5%",
+      "cookie": "7–30 days",
+      "mobile": "Mobile web & app",
       "intent": [
         "activities",
         "transport"
       ],
-      "reason": "Broad global destination activities and transport; natural Things to do placement; useful alternative/complement to Viator.",
-      "status": "READY_FOR_LINK_GENERATION"
+      "cameraSignal": "Prioritize strong live/current views in major tourist cities, landmarks and day-trip hubs."
     },
     {
       "id": "tiqets",
       "name": "Tiqets",
-      "priority": 2,
       "fit": "VERY_HIGH",
+      "group": "ATTRACTIONS",
+      "reward": "3.5–8%",
+      "cookie": "30 days",
+      "mobile": "Mobile web & app",
       "intent": [
         "activities",
         "culture"
       ],
-      "reason": "Strong attraction/landmark/museum fit for destination pages and Before You Go; supports city/product-level tools.",
-      "status": "READY_FOR_LINK_GENERATION"
+      "cameraSignal": "Prioritize landmark, museum-district and iconic attraction views."
+    },
+    {
+      "id": "kkday",
+      "name": "KKday",
+      "fit": "VERY_HIGH",
+      "group": "EXPERIENCES",
+      "reward": "1–5%",
+      "cookie": "30 days",
+      "mobile": "Mobile web & app",
+      "intent": [
+        "activities",
+        "transport",
+        "eat",
+        "services"
+      ],
+      "cameraSignal": "Strong Asia-led destination signal; useful for cities, attractions, food and connectivity."
+    },
+    {
+      "id": "go-city",
+      "name": "Go City",
+      "fit": "HIGH",
+      "group": "ATTRACTIONS",
+      "reward": "3.4–6%",
+      "cookie": "90 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "activities",
+        "culture"
+      ],
+      "cameraSignal": "Favor cities with dense attraction clusters and multi-attraction visitor behavior."
+    },
+    {
+      "id": "wego-trip",
+      "name": "WeGoTrip",
+      "fit": "HIGH",
+      "group": "EXPERIENCES",
+      "reward": "6.64–41.5%",
+      "cookie": "30 days",
+      "mobile": "Mobile web & app",
+      "intent": [
+        "activities",
+        "culture"
+      ],
+      "cameraSignal": "Useful for walkable historic centers, museums and self-guided-tour destinations."
     },
     {
       "id": "welcome-pickups",
       "name": "Welcome Pickups",
-      "priority": 3,
       "fit": "HIGH",
+      "group": "TRANSFERS",
+      "reward": "8–9%",
+      "cookie": "45 days",
+      "mobile": "Mobile web only",
       "intent": [
         "transport"
       ],
-      "reason": "Airport and destination transfer utility fills a distinct pre-trip need with less overlap with Viator.",
-      "status": "READY_FOR_LINK_GENERATION"
-    }
-  ],
-  "visibleHoldSet": [
+      "cameraSignal": "Favor major arrival cities/airports where a live city view can lead naturally into transfer planning."
+    },
     {
       "id": "kiwitaxi",
       "name": "Kiwitaxi",
       "fit": "HIGH",
-      "reason": "Good transfer fit but overlaps Welcome Pickups; keep as alternate until first transfer partner is tested."
+      "group": "TRANSFERS",
+      "reward": "9–11%",
+      "cookie": "30 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "transport"
+      ],
+      "cameraSignal": "Alternate transfer partner for major arrival destinations; avoid duplicate placement where Welcome Pickups already fits."
+    },
+    {
+      "id": "intui-travel",
+      "name": "intui.travel",
+      "fit": "HIGH",
+      "group": "TRANSFERS",
+      "reward": "10%",
+      "cookie": "35 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "transport"
+      ],
+      "cameraSignal": "Another useful transfer layer for destinations not covered well by existing transfer partners."
+    },
+    {
+      "id": "radical-storage",
+      "name": "Radical Storage",
+      "fit": "HIGH",
+      "group": "CITY_UTILITY",
+      "reward": "8%",
+      "cookie": "30 days",
+      "mobile": "Mobile web & app",
+      "intent": [
+        "services"
+      ],
+      "cameraSignal": "Excellent for train-station, downtown and walkable-city windows where luggage storage solves an immediate visitor need."
     },
     {
       "id": "localrent",
       "name": "Localrent.com",
       "fit": "MEDIUM_HIGH",
-      "reason": "Useful car-rental category but adds complexity and is less universal than transfer/activities."
+      "group": "CAR_RENTAL",
+      "reward": "7.5–10%",
+      "cookie": "30 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "transport"
+      ],
+      "cameraSignal": "Useful in island, coastal and road-trip destinations where car rental is a natural next action."
+    },
+    {
+      "id": "getrentacar",
+      "name": "GetRentacar.com",
+      "fit": "MEDIUM_HIGH",
+      "group": "CAR_RENTAL",
+      "reward": "10%",
+      "cookie": "90 days",
+      "mobile": "Mobile web & app",
+      "intent": [
+        "transport"
+      ],
+      "cameraSignal": "Good road-trip/island signal; avoid crowding destinations already served by another car-rental partner."
+    },
+    {
+      "id": "qeeq",
+      "name": "QEEQ",
+      "fit": "MEDIUM_HIGH",
+      "group": "CAR_RENTAL",
+      "reward": "5–10%",
+      "cookie": "30 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "transport"
+      ],
+      "cameraSignal": "Useful for car-dependent destinations; potentially strong for U.S., Australia, islands and scenic drives."
+    },
+    {
+      "id": "economybookings",
+      "name": "Economybookings.com",
+      "fit": "MEDIUM_HIGH",
+      "group": "CAR_RENTAL",
+      "reward": "3–8%",
+      "cookie": "30 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "transport"
+      ],
+      "cameraSignal": "Same strategic role as other car-rental partners; use only where coverage or economics justify it."
+    },
+    {
+      "id": "autoeurope",
+      "name": "AutoEurope (EU,UK)",
+      "fit": "MEDIUM_HIGH",
+      "group": "CAR_RENTAL",
+      "reward": "4.4–8%",
+      "cookie": "30 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "transport"
+      ],
+      "cameraSignal": "Useful Europe/UK road-trip signal, especially for scenic regions and secondary cities."
+    },
+    {
+      "id": "bikesbooking",
+      "name": "BikesBooking.com",
+      "fit": "MEDIUM_HIGH",
+      "group": "MOBILITY",
+      "reward": "4%",
+      "cookie": "30 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "transport"
+      ],
+      "cameraSignal": "Good for bike-friendly cities, islands and resort areas where micro-mobility fits the place."
+    },
+    {
+      "id": "aviasales",
+      "name": "Aviasales",
+      "fit": "MEDIUM",
+      "group": "FLIGHTS",
+      "reward": "40%",
+      "cookie": "30 days",
+      "mobile": "Mobile web & app",
+      "intent": [
+        "transport"
+      ],
+      "cameraSignal": "Useful as an onward-travel layer, but not a reason by itself to choose a camera location."
     },
     {
       "id": "kiwi-com",
       "name": "Kiwi.com",
       "fit": "MEDIUM",
-      "reason": "Flights are useful but less tightly connected to the current-place viewing moment; manual deep-link path is possible but not first-wave priority."
+      "group": "FLIGHTS",
+      "reward": "3%",
+      "cookie": "30 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "transport"
+      ],
+      "cameraSignal": "Flight planning is useful but less connected to the immediate live-view moment."
     },
     {
       "id": "airalo",
       "name": "Airalo",
       "fit": "MEDIUM",
-      "reason": "Useful travel utility, but eSIM is secondary to ERN's core see-place-then-go flow."
+      "group": "ESIM",
+      "reward": "12%",
+      "cookie": "30 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "services"
+      ],
+      "cameraSignal": "Connectivity is globally useful but should not shape camera geography."
     },
     {
       "id": "yesim",
       "name": "Yesim",
       "fit": "MEDIUM",
-      "reason": "Useful eSIM utility; redundant with Airalo/GigSky, so only one eSIM partner should be considered later."
+      "group": "ESIM",
+      "reward": "18%",
+      "cookie": "90 days",
+      "mobile": "Mobile web & app",
+      "intent": [
+        "services"
+      ],
+      "cameraSignal": "Same utility role as other eSIM partners; select at most one or two later."
     },
     {
       "id": "gigsky",
       "name": "GigSky",
       "fit": "LOW_MEDIUM",
-      "reason": "Another eSIM option; hold to avoid duplicating utilities."
+      "group": "ESIM",
+      "reward": "20% / fixed reward for additional services",
+      "cookie": "30 days",
+      "mobile": "Mobile web & app",
+      "intent": [
+        "services"
+      ],
+      "cameraSignal": "Global utility, low camera-selection value."
+    },
+    {
+      "id": "drimsim",
+      "name": "Drimsim",
+      "fit": "LOW_MEDIUM",
+      "group": "ESIM",
+      "reward": "€8 fixed",
+      "cookie": "90 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "services"
+      ],
+      "cameraSignal": "Connectivity utility only; not a camera-selection driver."
+    },
+    {
+      "id": "saily",
+      "name": "Saily",
+      "fit": "MEDIUM",
+      "group": "ESIM",
+      "reward": "15% of booking amount",
+      "cookie": "30 days",
+      "mobile": "Mobile web & app",
+      "intent": [
+        "services"
+      ],
+      "cameraSignal": "Connectivity utility only; useful later if one eSIM partner is selected."
+    },
+    {
+      "id": "airhelp",
+      "name": "AirHelp",
+      "fit": "MEDIUM",
+      "group": "TRAVEL_RECOVERY",
+      "reward": "15–16.6%",
+      "cookie": "45 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "services"
+      ],
+      "cameraSignal": "Post-disruption utility; commercially useful but unrelated to camera selection."
+    },
+    {
+      "id": "compensair",
+      "name": "Compensair",
+      "fit": "LOW_MEDIUM",
+      "group": "TRAVEL_RECOVERY",
+      "reward": "€5–12 fixed",
+      "cookie": "30 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "services"
+      ],
+      "cameraSignal": "Same recovery role as AirHelp; avoid duplication."
+    },
+    {
+      "id": "ekta",
+      "name": "EKTA",
+      "fit": "LOW_MEDIUM",
+      "group": "TRAVEL_PROTECTION",
+      "reward": "25%",
+      "cookie": "30 days",
+      "mobile": "Mobile web only",
+      "intent": [
+        "services"
+      ],
+      "cameraSignal": "Travel-protection utility; should never drive editorial or camera selection."
+    },
+    {
+      "id": "gettransfer",
+      "name": "GetTransfer.com",
+      "fit": "MEDIUM_HIGH",
+      "group": "TRANSFERS",
+      "reward": "4–25%",
+      "cookie": "30 days",
+      "mobile": "Mobile web & app",
+      "intent": [
+        "transport"
+      ],
+      "cameraSignal": "Potentially useful transfer option, but overlap is high; reserve for coverage gaps."
     }
   ],
   "activationRules": {
-    "maxInitialPrograms": 3,
     "driveAutomationAllowed": false,
     "massActivationAllowed": false,
     "rankingAffectedByCommission": false,
+    "commercialSignalMayInfluenceCameraResearchPriority": true,
+    "commercialSignalMayOverrideEditorialQuality": false,
     "exactPartnerLinkRequired": true,
     "exactPartnerTermsReviewRequired": true,
     "explicitAffiliateDisclosureRequired": true
-  },
-  "missingInventoryNote": "Only programs clearly visible in the supplied screenshots are ranked here. Complete 26-program ranking will be appended once the remaining program names are visible; no unseen program is guessed."
+  }
 }
