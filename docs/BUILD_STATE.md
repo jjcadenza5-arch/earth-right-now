@@ -1,3 +1,10 @@
+## 2026-09-28 — Manual-only participation deployment path prepared
+- Added a manual GitHub Actions deployment workflow for the two Phase J Workers: Earth Signals and camera/place submissions.
+- The workflow has no push trigger. Deployment requires an explicit workflow-dispatch target plus Cloudflare deployment credentials from GitHub secrets.
+- Both Worker configs are re-checked immediately before and after deployment so infrastructure can be created without silently enabling public participation.
+- Repository syntax checks now cover both participation Workers, the submission Worker smoke, and the deployment-workflow safety contract.
+- This does not claim either Worker is deployed; production evidence and public activation remain separate gates.
+
 ## 2026-09-28 — Submission transport backend foundation prepared
 - Continued Phase J with a separate `ern-submission-api` Cloudflare Worker foundation.
 - Public transport remains OFF by default through `ERN_SUBMISSION_ENABLED=false`.
