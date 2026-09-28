@@ -1,0 +1,10 @@
+import {earthSignalClientConfig,createEarthSignalClient} from "../src/earth-signal-client.js";
+console.assert(earthSignalClientConfig().mode==="READ_ONLY");
+console.assert(earthSignalClientConfig({endpointUrl:"http://example.com",publicActivationAllowed:true}).enabled===false);
+console.assert(earthSignalClientConfig({endpointUrl:"https://signals.example.com",publicActivationAllowed:false}).enabled===false);
+console.assert(earthSignalClientConfig({endpointUrl:"https://signals.example.com",publicActivationAllowed:true}).enabled===true);
+const disabled=createEarthSignalClient({});
+const listed=await disabled.list("chiang-mai");console.assert(listed.disabled&&listed.signals.length===0);
+const submitted=await disabled.submit({type:"PEACEFUL",placeId:"chiang-mai"});console.assert(submitted.disabled);
+const reported=await disabled.report("sig-1","SPAM");console.assert(reported.disabled);
+console.log("Earth Signal browser client stays fail-closed until verified public activation");
