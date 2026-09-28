@@ -2,7 +2,8 @@ import {submissionClientConfig,createSubmissionClient} from "../src/submission-c
 console.assert(submissionClientConfig().enabled===false);
 console.assert(submissionClientConfig({endpoint:"http://submit.example.com",enabled:true}).enabled===false);
 console.assert(submissionClientConfig({endpoint:"https://submit.example.com",enabled:false}).enabled===false);
-console.assert(submissionClientConfig({endpoint:"https://submit.example.com",enabled:true}).enabled===true);
+console.assert(submissionClientConfig({endpoint:"https://submit.example.com",enabled:true}).submissionUrl==="https://submit.example.com/api/submissions");
+console.assert(submissionClientConfig({endpoint:"https://submit.example.com/api/submissions",enabled:true}).submissionUrl==="https://submit.example.com/api/submissions");
 const client=createSubmissionClient({});
 const noConsent=await client.submit({businessName:"Example"},{consent:false});console.assert(noConsent.reason==="CONSENT_REQUIRED");
 const disabled=await client.submit({businessName:"Example"},{consent:true});console.assert(disabled.disabled&&disabled.reason==="SUBMISSION_TRANSPORT_DISABLED");
