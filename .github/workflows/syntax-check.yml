@@ -27,6 +27,7 @@ on:
       - "tests/share-links.smoke.js"
       - "tests/distribution-readiness.smoke.js"
       - "tests/public-brand-kit.smoke.js"
+      - "tests/commercial-attribution-truth.smoke.js"
       - "press.html"
       - "data/public-brand-facts.json"
       - "data/distribution-channels.json"
@@ -92,6 +93,7 @@ jobs:
           node tests/share-links.smoke.js
           node tests/distribution-readiness.smoke.js
           node tests/public-brand-kit.smoke.js
+          node tests/commercial-attribution-truth.smoke.js
       - name: Run Generative Guide focused smoke tests
         run: |
           set -euo pipefail
