@@ -1,3 +1,8 @@
+## 2026-09-28 — Defer fullscreen transition persistence
+- Human browser review confirmed fullscreen still exits when switching livestreams, including ordinary Next navigation.
+- Marked the issue non-blocking and deferred rather than continuing a browser-specific repair loop.
+- Existing fullscreen entry/exit remains accepted; landscape sizing stays non-urgent maintenance.
+
 ## 2026-09-28 — Preserve fullscreen across Watch Earth livestream changes
 - Added a viewer-stage continuity helper that preserves the active fullscreen iframe across EMBED→EMBED Watch Earth changes by retargeting the same element.
 - Kept external/image transitions fail-honest; they may exit fullscreen normally.

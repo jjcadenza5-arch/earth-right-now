@@ -1,3 +1,9 @@
+## 2026-09-28 — Fullscreen transition persistence deferred by human decision
+- Human desktop review confirmed that changing to another livestream while fullscreen still exits native fullscreen across Watch Earth Journey and ordinary Next navigation.
+- The issue is now explicitly DEFERRED / NON-BLOCKING. Normal enter/exit fullscreen works on desktop; phone portrait remains usable; phone landscape sizing remains imperfect but non-urgent.
+- Do not continue iterating on fullscreen-transition persistence without new browser evidence or an explicit decision to reopen it.
+- Stage E remains HUMAN-ACCEPTED / MAINTENANCE and may progress to other product/publishing work.
+
 ## 2026-09-28 — Human Stage E review + fullscreen journey continuity deployed
 - Human browser review accepted desktop viewer/fullscreen entry and exit as working.
 - Phone portrait remains usable but not all action buttons are visible at once; accepted as non-blocking.
