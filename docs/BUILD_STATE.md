@@ -1,3 +1,9 @@
+## 2026-09-28 — Research review queue made schedule-aware
+- Added machine-readable provider live windows to scheduled research candidates, beginning with Nishiki Market (11:00–18:00 JST).
+- Research candidates outside their published live hours are no longer shown as human playback work; they enter WAIT_FOR_REVIEW_WINDOW instead.
+- This prevents off-hours playback checks from becoming misleading failure evidence and reduces unnecessary human review.
+- Added smoke coverage for both outside-window and inside-window behavior.
+
 ## 2026-09-28 — Second Kyoto review applied
 - Human batch `af006e03dfb279e3` confirmed Hanamikoji Street playback/currentness; promoted only that exact target.
 - Arashiyama Bamboo failed deployed playback and remains research-only/deferred; this is not evidence that the underlying provider camera is offline.
