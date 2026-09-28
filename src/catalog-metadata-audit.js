@@ -1,6 +1,6 @@
 function empty(value){return value==null||value===""||(Array.isArray(value)&&!value.length)}
 export function sourceMetadataCompleteness(source){
- const important=["provider","country","region","categories","rightsBasis","checkedAt","quality","story","attribution"];
+ const important=["provider","country","region","categories","rightsBasis","freshnessEvidence","checkedAt","quality","story","attribution"];
  if(source?.coordinateBasis!=="DYNAMIC_ORBIT")important.push("timeZone");
  const missing=important.filter(k=>empty(source?.[k]));
  const hasCheckOutcome=!empty(source?.lastSuccessfulCheck)||!empty(source?.lastFailedCheck);
