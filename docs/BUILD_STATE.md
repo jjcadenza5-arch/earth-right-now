@@ -1,3 +1,10 @@
+## 2026-09-28 — Phase K release gate and read-side pulse completed
+- Updated the participation release preflight for the activation-aware module architecture instead of assuming all local-only logic must remain inline in HTML.
+- Fixed the static release builder to actually ship the new Phase K modules plus the two non-secret participation manifests; this prevents source/release drift.
+- Added an activation-gated Recent Visitor Signals panel to Now Moments. It stays hidden while Earth Signals are OFF.
+- When eventually activated, visitors can request recent structured reports for a canonical ERN place. The panel labels them as visitor reports and explicitly not independently verified.
+- No automatic polling, urgency, weather inference, camera truth mutation or media upload was introduced.
+
 ## 2026-09-28 — Phase K opened: activation-aware living participation surfaces
 - Phase J is now marked locally complete with an external-only deployment gate.
 - Opened Phase K for visitor-facing participation surfaces that can be prepared safely before deployment.
