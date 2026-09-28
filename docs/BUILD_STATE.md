@@ -1,3 +1,11 @@
+## 2026-09-28 — Private participation operator control prepared
+- Closed the Earth Signals moderation gap: reported signals can now be listed through a token-protected internal endpoint and resolved explicitly as RESTORE or REMOVE.
+- RESTORE clears the report flag only; REMOVE deletes the short-lived signal. Neither path mutates catalog/source truth or publishes anything.
+- Earth Signals health now reports whether its review token is configured without exposing the token.
+- Added one private operator CLI for camera/place submission review and Earth Signal moderation.
+- Operator endpoint and token are environment-only; secrets are never accepted as command-line arguments or committed to browser/public code.
+- Submission approval remains review-only and still does not publish or mutate the catalog automatically.
+
 ## 2026-09-28 — Participation browser adapters prepared behind OFF gates
 - Added Earth Signals and camera/place submission browser clients without wiring either into public UI.
 - Both clients fail closed when deployment/activation evidence is absent and perform no network request in that state.
