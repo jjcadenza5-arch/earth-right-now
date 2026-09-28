@@ -1,3 +1,9 @@
+## 2026-09-28 — Harden catalog metadata and add Paris live context
+- Backfilled missing attribution from already-recorded provider identity for 46 sources.
+- Updated metadata completeness rules for dynamic-orbit and degraded/failure-only sources.
+- Added metadata completeness to Pages release gates.
+- Added official Eiffel Tower live visit conditions as context-only research while preserving Paris as a visual gap.
+
 ## 2026-09-28 — Trim Guide planning copy from app-lite
 - Moved long planning strings into the existing split i18n bundle instead of raising the 100 KB app budget.
 - Functionality and translations are unchanged.
