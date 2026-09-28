@@ -85,6 +85,31 @@ export class SignalState{
       return json(200,{ok:true});
     }
 
+    if(b.op==="list-reports"){
+      this.cleanup(now);
+      const rows=[...this.sql.exec("SELECT signal_id,created_at,report_json FROM reports ORDER BY created_at ASC")];
+      return json(200,{ok:true,reports:rows.map(r=>({signalId:r.signal_id,createdAt:new Date(Number(r.created_at)).toISOString(),report:JSON.parse(r.report_json)}))});
+    }
+
+    if(b.op==="resolve-report"){
+      const signalId=String(b.signalId||""),decision=String(b.decision||"");
+      if(!signalId||!["RESTORE","REMOVE"].includes(decision))return json(400,{ok:false,reason:"INVALID_RESOLUTION"});
+      const exists=[...this.sql.exec("SELECT signal_id FROM reports WHERE signal_id = ?",signalId)][0];
+      if(!exists)return json(404,{ok:false,reason:"REPORT_NOT_FOUND"});
+      if(decision==="RESTORE"){
+        this.sql.exec("UPDATE signals SET reported = 0 WHERE id = ?",signalId);
+        const row=[...this.sql.exec("SELECT record_json FROM signals WHERE id = ?",signalId)][0];
+        if(row){
+          const record={...JSON.parse(row.record_json),reported:false};
+          this.sql.exec("UPDATE signals SET record_json = ? WHERE id = ?",JSON.stringify(record),signalId);
+        }
+      }else{
+        this.sql.exec("DELETE FROM signals WHERE id = ?",signalId);
+      }
+      this.sql.exec("DELETE FROM reports WHERE signal_id = ?",signalId);
+      return json(200,{ok:true,signalId,decision,visible:decision==="RESTORE"});
+    }
+
     if(b.op==="delete-expired"){
       const before=[...this.sql.exec("SELECT COUNT(*) AS n FROM signals")][0]?.n||0;
       this.cleanup(now);
