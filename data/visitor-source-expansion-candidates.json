@@ -250,9 +250,9 @@
         "Turku port and archipelago",
         "Kilpisjärvi / Saana Fell"
       ],
-      "state": "PARTIALLY_RESOLVED_EXACT_TARGETS_RESEARCH_ONLY",
+      "state": "PARTIALLY_RESOLVED_ONE_PROMOTED_EXTERNAL_LIVE",
       "why": "Visit Finland explicitly curates real-time webcam views so visitors can see what destinations look like right now. This is closely aligned with ERN, but each underlying provider/player and permission path must be reviewed separately.",
-      "next": "Start with the Santa Claus Village official live-video page as a link-only/deployed-review target. Resolve Helsinki Market Square and other Visit Finland provider targets separately; do not infer one provider's permissions across the whole Visit Finland guide.",
+      "next": "Maintain Santa Claus Village. Resolve Helsinki Market Square or another Visit Finland target only if it adds distinct visitor value and its provider path is independently verified.",
       "resolvedTargets": [
         {
           "name": "Santa Claus Village — Arctic Circle",
@@ -260,7 +260,10 @@
           "provider": "Santa Claus Village / City of Rovaniemi",
           "truthCandidate": "EXTERNAL_LIVE",
           "permissionState": "LINK_ONLY_SAFE_PATH_AVAILABLE_EMBED_NOT_INFERRED",
-          "currentnessState": "OFFICIAL_SITE_EXPOSES_LIVE_VIDEO_WEBCAM"
+          "currentnessState": "OFFICIAL_SITE_EXPOSES_LIVE_VIDEO_WEBCAM",
+          "catalogId": "rovaniemi-santa-claus-village-live",
+          "mode": "EXTERNAL_LIVE",
+          "promotionState": "PROMOTED_LINK_ONLY"
         }
       ]
     },
@@ -285,9 +288,9 @@
       "observedTargets": [
         "Old Faithful and Upper Geyser Basin livestream"
       ],
-      "state": "EXACT_TARGET_RESOLVED_RESEARCH_ONLY",
+      "state": "RESOLVED_PROMOTED_EXTERNAL_LIVE",
       "why": "NPS identifies the Old Faithful camera as an active livestream and explicitly positions Yellowstone webcams as a way to see what is happening in the park right now.",
-      "next": "Use the exact active NPS webcam page as a deployed external-link review target. Keep any in-page embed blocked until the live player's own usage/rights path is explicit.",
+      "next": "Maintain the official Old Faithful live stream. Other Yellowstone static webcams may be evaluated separately as LIVE_IMAGE only if their refresh/currentness behavior adds distinct trip value.",
       "resolvedTargets": [
         {
           "name": "Old Faithful and Upper Geyser Basin",
@@ -295,7 +298,10 @@
           "provider": "U.S. National Park Service / Yellowstone National Park",
           "truthCandidate": "EXTERNAL_LIVE",
           "providerStatus": "ACTIVE",
-          "permissionState": "LINK_ONLY_SAFE_PATH_AVAILABLE_EMBED_NOT_INFERRED"
+          "permissionState": "LINK_ONLY_SAFE_PATH_AVAILABLE_EMBED_NOT_INFERRED",
+          "catalogId": "yellowstone-old-faithful-live",
+          "mode": "EXTERNAL_LIVE",
+          "promotionState": "PROMOTED_LINK_ONLY"
         }
       ]
     },
