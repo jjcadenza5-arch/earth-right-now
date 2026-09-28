@@ -14,6 +14,11 @@ export function sourceRevalidationTriage(sources=[],{availability=null,continuit
     else if(a?.outcome==="ACCESS_BLOCKED"){lane="ACCESS_LIMITED";action="REVIEW_PROVIDER_ACCESS_PATTERN";urgency=50}
     else if(["TEMPORARY_ERROR","TIMEOUT","NETWORK_ERROR"].includes(a?.outcome)){lane="RETRY_LATER";action="RETRY_NETWORK_CHECK";urgency=20}
     else if(a?.outcome==="PAGE_REACHABLE"){lane="EDITORIAL_RECHECK";action="REVIEW_PAGE_CURRENTNESS_WITHOUT_INFERRING_LIVE";urgency=40}
+    else if(!a){
+      if(s.playback==="EMBED"){lane="DEPLOYED_PLAYBACK_RECHECK";action="RECHECK_DEPLOYED_PLAYBACK_AND_PROVIDER_PAGE";urgency=65}
+      else if(s.truth==="LIVE_IMAGE"||s.playback==="IMAGE_REFRESH"){lane="CURRENT_IMAGE_RECHECK";action="VERIFY_CURRENT_IMAGE_REFRESH_AND_PROVIDER_PAGE";urgency=55}
+      else {lane="EDITORIAL_RECHECK";action="VERIFY_PROVIDER_PAGE_STILL_PRESENTS_CURRENT_LIVE_SOURCE";urgency=40}
+    }
     return{
       id:s.id,title:s.title,provider:s.provider||null,health:s.health,permission:s.permission,playback:s.playback,
       queuePriority:entry.priority,reason:entry.reason,lane,action,urgency,
@@ -30,6 +35,8 @@ export function sourceRevalidationTriage(sources=[],{availability=null,continuit
       humanMediaReview:count("HUMAN_MEDIA_REVIEW"),
       manualSourceReview:count("MANUAL_SOURCE_REVIEW"),
       editorialRecheck:count("EDITORIAL_RECHECK"),
+      deployedPlaybackRecheck:count("DEPLOYED_PLAYBACK_RECHECK"),
+      currentImageRecheck:count("CURRENT_IMAGE_RECHECK"),
       accessLimited:count("ACCESS_LIMITED"),
       retryLater:count("RETRY_LATER"),
       deferredPlaybackReprove:count("DEFERRED_PLAYBACK_REPROVE"),
@@ -41,6 +48,6 @@ export function sourceRevalidationTriage(sources=[],{availability=null,continuit
     routine:items.filter(x=>x.urgency<80).slice(0,limit),
     items:items.slice(0,limit),
     safety:{catalogMutationAllowed:false,automaticHealthChangeAllowed:false,availabilityProvesLive:false},
-    note:"Read-only triage. Reachable pages never prove live playback; access/network outcomes do not automatically change catalog health. Human media and permission review remain separate."
+    note:"Read-only triage. Unsampled stale/expired sources are still routed by evidence need: deployed playback for embeds, current-image verification for LIVE_IMAGE, and editorial provider-page review for external sources. Reachability alone never proves live playback."
   };
 }
