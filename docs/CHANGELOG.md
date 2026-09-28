@@ -1,3 +1,8 @@
+## 2026-09-28 — Improve coordinate provenance and preserve Chiang Mai truth
+- Upgraded Singapore Port and Rome Spanish Steps place-reference coordinates to stronger Wikidata/official tourism sources.
+- Rechecked Chiang Mai PAO CCTV; official feeds remain standby/waiting.
+- Kept Chiang Mai unfilled rather than substituting non-current imagery.
+
 ## 2026-09-28 — Add Rovaniemi and Old Faithful official live windows
 - Promoted two exact official live targets as external/link-only.
 - Preserved source-specific rights boundaries and updated the research/opportunity queues.
