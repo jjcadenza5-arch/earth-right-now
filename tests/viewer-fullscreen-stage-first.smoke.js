@@ -2,7 +2,7 @@ import fs from "node:fs";
 import assert from "node:assert/strict";
 const app=fs.readFileSync("src/app-lite.js","utf8");
 assert.match(app,/stage\?\.querySelector\("iframe,img,video"\)/);
-assert.match(app,/m\|\|stage/);
+assert.match(app,/state\.journeyTimer\?stage:m\|\|stage/);
 assert.match(app,/\?\.requestFullscreen/);
 assert.match(app,/\?\.webkitRequestFullscreen/);
 assert.match(app,/\?\.webkitEnterFullscreen/);
