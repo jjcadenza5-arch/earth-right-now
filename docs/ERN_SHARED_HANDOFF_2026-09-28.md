@@ -112,7 +112,7 @@ User preference: work autonomously in large batches and return only for genuine 
 - For Places copy now explicitly invites any visitor-interest place where today's flowers, crowds, weather, visibility, animals, beach conditions, activity or atmosphere can help someone decide whether, when or how to go.
 - Seoul Real-time City Data remains a separate PUBLIC-OFF context-data research lane, never camera truth.
 - Current catalog count at this handoff revision: 93 sources. Always read current `data/sources.json` rather than relying on a frozen count.
-- Recency audit after two recheck batches at 2026-09-28T16:47Z: 37 current, 28 stale, 28 expired under ERN's existing horizons. This is maintenance debt, not permission to relax truth windows.
+- Latest recency state after continued provider rechecks: 64 current+healthy, 10 stale, 18 expired under ERN's existing horizons. This is maintenance debt, not permission to relax truth windows.
 - Eight high-value external/current sources were freshly revalidated first: Coogee/Randwick, Waikiki, Kīlauea, Yellowstone, San Diego Zoo, Chamonix, Whistler Blackcomb and New York skyline.
 - A second six-source recheck batch refreshed Diano Marina, Sottomarina/Chioggia, Torres del Paine, and SANParks Boulders/Addo/Orpen.
 - Generated destination pages now visibly separate current verified views from provider sources awaiting recheck, including recency-aware SEO/directory copy.
@@ -122,4 +122,6 @@ User preference: work autonomously in large batches and return only for genuine 
 - Freshness evidence is now required by the catalog metadata gate; older records were completed only from their existing successful-check timestamps, without upgrading source truth.
 - Context expiry smoke checks now run in Pages CI so stale manual context cannot remain current.
 - Revalidation triage now routes stale/expired work by evidence need: EMBED → deployed playback recheck; LIVE_IMAGE → current-image recheck; EXTERNAL → editorial/provider-page recheck.
+- Pattaya City is now DEGRADED because its official CCTV dashboard reports 0 live cameras; Jungfrau remains DEGRADED because all ten official webcams are offline.
+- The first three Kyoto approved embeds now carry `playbackVerifiedAt` markers matching their existing exact human-review timestamps and reviewed embed URLs; no new approval was inferred.
 - Continue autonomously. Only ask the operator for deployed human playback when a candidate is genuinely ready and inside any provider-published live window.
