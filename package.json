@@ -71,7 +71,8 @@
     "discoverability:preflight": "node scripts/discoverability-preflight.mjs",
     "participation:status": "node scripts/participation-infrastructure-status.mjs",
     "participation:verify-deployment": "node scripts/participation-deployment-verify.mjs",
-    "distribution:status": "node scripts/distribution-readiness.mjs"
+    "distribution:status": "node scripts/distribution-readiness.mjs",
+    "commercial:attribution-status": "node scripts/commercial-attribution-status.mjs"
   },
   "engines": {
     "node": ">=20"
