@@ -31,6 +31,9 @@ Now Moments and For Places are activation-aware, canonical-place/consent bounded
 ## Stage L — temporary Now Moment media foundation — LOCALLY COMPLETE / EXTERNAL DEPLOYMENT GATE
 Still-photo Now Moments now have a prepared private R2 + Durable Object Worker, metadata sanitation, canonical-place validation, moderation-before-display, private operator queue/preview, abuse reporting, 45-minute metadata/object cleanup, rate and storage ceilings, photo-specific published privacy wording, manual secret-provisioning deployment and live health verification. Visitor photo upload remains OFF. The remaining gate is controlled Cloudflare deployment plus live health evidence, and structured Earth Signals must activate before photo activation. Video remains out of scope.
 
+## Stage M — ERN Stories / curiosity discovery — ACTIVE
+Turn the approved curiosity-first principle into a visible discovery surface without creating a parallel content or truth system. Stories must be generated only from ERN's current/discoverable catalog, deduplicate place/media identity, preserve truth/playback labels, and use an open question rather than a claim as the hook. The live/current window remains the answer. No invented weather, events, crowds, wildlife sightings, urgency or clickbait.
+
 ## Stage I — public deployment and release certification — PUBLIC / GATE READY
 earthrightnow.app is publicly deployed and the current release-readiness gate is green with fresh browser, mobile, provider-playback, accessibility, performance and rollback evidence. Future releases remain fail-closed: keep evidence fresh and do not treat static/CI success alone as permission or playback proof.
 
