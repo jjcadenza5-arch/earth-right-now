@@ -1,3 +1,10 @@
+## 2026-09-28 — Watch Earth play-here priority and fullscreen maintenance
+- Preserved up to five verified inside-ERN windows within the first eight Watch Earth journey positions after downstream balancing.
+- Kept external-only sources truthful and available; no source truth, permission, health or curation state changed.
+- Retained ERN's media-first desktop fullscreen policy and strengthened WebKit/player + faux-fullscreen fallback behavior.
+- Added focused regression tests to the JavaScript safety workflow.
+- Preserved the existing 100 KB app-lite performance ceiling; final release preflights and Pages deployment are green on `48c97be6eda61ce35ca0c987bd95df932adfc742`.
+
 ## 2026-09-25 — Make Guide AI rate identity server-owned
 - Removed client session fallback from the rate-limit identity path.
 - Production requires a server-derived pseudonymous subject and forbids raw network identifier storage.

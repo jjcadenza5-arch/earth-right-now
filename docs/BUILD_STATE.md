@@ -1,3 +1,13 @@
+## 2026-09-28 — Public experience maintenance deployed and release gates green
+- Merged the Stage E maintenance batch through PRs #574–#577; final deployed commit is `48c97be6eda61ce35ca0c987bd95df932adfc742`.
+- Watch Earth now preserves up to five verified inside-ERN PLAY windows within the first eight journey positions after moment/provider balancing, reducing early provider-only handoffs without hiding truthful external sources.
+- Viewer fullscreen remains media-first on desktop per the existing whole-product invariant, with WebKit/player and faux-fullscreen fallbacks retained for mobile browser differences.
+- Added focused Watch Earth and fullscreen regression coverage to the JavaScript/safety workflow.
+- The first deployment attempt correctly failed closed on the existing 100 KB `app-lite.js` performance budget; follow-up work restored the same behavior without weakening the budget.
+- Final JavaScript/smoke, Operations, whole-product, mobile, accessibility, performance, rollback, participation-safety, featured-curation, release-build, discoverability and operator-review preflights all passed; GitHub Pages deployment succeeded.
+- No source truth, permission, health, playback evidence, commercial state, featured hold or activation switch changed.
+- Remaining Stage E closure evidence is browser/device acceptance of the deployed fullscreen fallback and the resulting Watch Earth provider/play-here balance; do not infer that from CI alone.
+
 ## 2026-09-28 — Ten LIVE HERE playback renewals applied from deployed human review
 - Accepted operator evidence packet batch `84f64e750d320582` from the trusted deployed review origin `https://earthrightnow.app/review/inside-ern.html`.
 - All 10 reviewed EMBED / EMBED_ALLOWED / HEALTHY sources were marked `HUMAN_PLAYBACK_CONFIRMED` by the operator as visibly playing and current.
