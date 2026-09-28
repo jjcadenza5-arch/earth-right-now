@@ -37,8 +37,11 @@ The approved curiosity-first principle is now a visible, deployed discovery surf
 ## Stage N — organic distribution & shareability — LOCALLY COMPLETE / EXTERNAL CHANNEL GATE
 ERN now has canonical Story deep links, native Web Share, copy-link fallback and established AI/search discoverability through the canonical domain, sitemap, robots and structured site identity. Social channels such as Instagram, WhatsApp, LINE, TikTok, YouTube, Facebook and X remain NOT_CONNECTED until official ERN accounts actually exist and are intentionally connected. Social popularity, sponsorship and affiliate relationships never alter Earth-window truth or editorial ranking. Remaining work is external account connection/operation, not local product plumbing.
 
-## Stage O — public media & partner kit — ACTIVE
-Create a clear, crawlable self-service identity for journalists, collaborators, camera owners, tourism partners and AI/search systems. The kit must use only verified ERN product facts and public brand assets; it must not invent contact details, social handles, partnerships, user numbers, revenue, press coverage or endorsements. Partnership language must preserve ERN's rights review, disclosure and no-paid-ranking boundaries.
+## Stage O — public media & partner kit — LIVE / LOCALLY COMPLETE
+ERN now has a public, crawlable Media & Partner Kit plus machine-readable brand facts built only from verified ERN product facts and public assets. The kit does not invent contact details, social handles, partnerships, user numbers, revenue, press coverage or endorsements. Partnership language preserves ERN's rights review, disclosure and no-paid-ranking boundaries. Future changes are maintenance/brand refinement rather than a blocker.
+
+## Stage P — commercial attribution truth — ACTIVE
+Prepare privacy-minimal measurement for verified travel-option opens without converting clicks into booking/revenue claims or behavioral profiles. Only bounded offer/place/intent/scope/affiliate/sponsored fields may enter the event. Analytics remains default-OFF until intentionally configured. Commercial events may never influence source truth, playback eligibility, Watch Earth ordering, ERN Guide selection, Stories ranking or editorial curation.
 
 ## Stage I — public deployment and release certification — PUBLIC / GATE READY
 earthrightnow.app is publicly deployed and the current release-readiness gate is green with fresh browser, mobile, provider-playback, accessibility, performance and rollback evidence. Future releases remain fail-closed: keep evidence fresh and do not treat static/CI success alone as permission or playback proof.
