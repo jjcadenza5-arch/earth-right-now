@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -173,13 +173,20 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     if(guideAi.mode==="DETERMINISTIC_ONLY"&&guideAi.deterministicFallback&&guideAi.deployment?.missing?.length)lines.push("- Local generative-Guide groundwork is complete enough for the current phase. Remaining blockers require an explicit provider/backend/cost decision; hold local activation work until that phase is deliberately opened.");
     lines.push("- Client prompts and IDs never become trusted place/source facts; the server must rehydrate ERN catalog truth before generation.", "");
   }
+  if(participationInfrastructure){
+    lines.push("## Phase J participation infrastructure");
+    lines.push(`- State: ${participationInfrastructure.state||"UNKNOWN"}; public activation ${participationInfrastructure.publicActivationOff?"OFF":"CHECK REQUIRED"}.`);
+    lines.push(`- Earth Signals Worker: ${participationInfrastructure.workers?.earthSignals?.prepared?"prepared":"incomplete"}; Submission Worker: ${participationInfrastructure.workers?.submissions?.prepared?"prepared":"incomplete"}.`);
+    lines.push(`- Next: ${participationInfrastructure.next||"REVIEW"}.`);
+    lines.push("- Repository preparation is not production deployment evidence; controlled infrastructure deployment remains separate from visitor-facing activation.","");
+  }
   if(earthSignals){
     lines.push("## Earth Signals readiness");
     lines.push(`- Mode: ${earthSignals.mode||"UNKNOWN"}; backend foundation ${earthSignals.backendFoundation?.state||"UNKNOWN"}; deployment ${earthSignals.deployment?.state||"UNKNOWN"}.`);
     lines.push(`- Privacy wording: ${earthSignals.privacyNoticeDraft?.contentReady?"content-ready":"incomplete"}; publication ${earthSignals.privacyNoticeDraft?.published?"published":"not published"}; activation ${earthSignals.privacyNoticeDraft?.activationSatisfied?"satisfied":"blocked"}.`);
     if(earthSignals.deployment?.missing?.length){
       lines.push(`- Production evidence still missing: ${earthSignals.deployment.missing.join(", ")}.`);
-      if(earthSignals.privacyNoticeDraft?.published&&earthSignals.mode==="READ_ONLY")lines.push("- The privacy requirement is complete. Remaining Earth Signals blockers require real backend infrastructure; hold local activation work until ERN deliberately enters a production-infrastructure phase.");
+      if(earthSignals.privacyNoticeDraft?.published&&earthSignals.mode==="READ_ONLY")lines.push("- The privacy requirement is complete. Phase J infrastructure is prepared; deployment evidence remains the next gate and public activation stays separate.");
     }
     lines.push("- Prepared code, test doubles and draft wording do not enable visitor contribution.", "");
   }
@@ -223,7 +230,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   else if(commercialOnboarding?.items?.length)lines.push("- Research real travel options for the highest content-ready destinations without contacting or listing invented partners.");
   if(submissionTransport&&!submissionTransport.active){
     const submissionMissing=submissionTransport.missing||[];
-    if(submissionMissing.length===1&&submissionMissing[0]==="HTTPS_REVIEW_ENDPOINT")lines.push("- Submission privacy and retention are ready. The only remaining transport blocker is a real HTTPS review endpoint; hold local submission work until backend infrastructure is deliberately provisioned.");
+    if(submissionMissing.length===1&&submissionMissing[0]==="HTTPS_REVIEW_ENDPOINT")lines.push("- Submission privacy, retention and Worker foundation are prepared. The remaining transport gate is controlled HTTPS deployment evidence; public intake stays off.");
     else lines.push("- Keep camera/place submission delivery closed until its remaining readiness requirements are configured.");
   }
   const providerTargetsBlocked=Boolean(providerGeneratedTargets?.items?.length)&&providerGeneratedTargets.items.every(item=>Boolean(item?.blockerReason)&&["EXACT_PROVIDER_CODE_REQUIRED","EXACT_PROVIDER_TARGET_URL_REQUIRED"].includes(item?.state));
@@ -240,6 +247,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     localEarthComplete:localDirectory?.state==="PILOT_COMPLETE",
     guideLocallyComplete:guideAi?.deterministicFallback===true&&((guideAi?.mode==="DETERMINISTIC_ONLY")||(guideAi?.mode==="GENERATIVE_ENABLED"&&guideAi?.ready===true&&guideAi?.deployment?.ready===true)),
     earthSignalsLocallyComplete:earthSignals?.mode==="READ_ONLY"&&earthSignals?.privacyNoticeDraft?.published===true,
+    participationInfrastructurePrepared:participationInfrastructure?.prepared===true&&participationInfrastructure?.publicActivationOff===true,
     submissionLocallyComplete:submissionExternalOnly
   };
   const autonomousHoldBlockers=Object.entries(autonomousHoldChecks).filter(([,passed])=>!passed).map(([key])=>key);

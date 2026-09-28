@@ -1,0 +1,10 @@
+import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/participation-infrastructure-status.mjs"],{encoding:"utf8"});
+console.assert(r.status===0,"Participation infrastructure status must run");
+const x=JSON.parse(r.stdout);
+console.assert(x.state==="PREPARED_FOR_CONTROLLED_DEPLOYMENT","Phase J infrastructure should be prepared");
+console.assert(x.publicActivationOff===true,"Participation public activation must remain off");
+console.assert(x.safety?.automaticPublicActivationAllowed===false,"Automatic public activation must stay forbidden");
+console.assert(x.safety?.pushTriggeredInfrastructureDeploymentAllowed===false,"Participation deployment must remain manual-only");
+console.assert(x.next==="CONTROLLED_INFRASTRUCTURE_DEPLOYMENT","Next state should be controlled infrastructure deployment");
+console.log("participation infrastructure Operations status smoke: ok");
