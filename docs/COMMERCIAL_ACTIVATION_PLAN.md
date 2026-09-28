@@ -34,8 +34,8 @@ The first tracked link retains ERN's Viator partner ID and resolves to Auckland 
 
 ## Commercial ladder after Booking.com decision
 
-### Travelpayouts — NEXT ONBOARDING PLATFORM
-Official 2026 platform guidance says a travel website/app/channel can be added as a Project. Relevant brand programs are then connected automatically where available; some are instant-access and some require Project/brand review. ERN should use only the programs actually made available to its Project and never claim access before the dashboard confirms it.
+### Travelpayouts — PROJECT CONFIRMED / MATCHING IN PROGRESS
+ERN website ownership is now confirmed in Travelpayouts. The Project dashboard shows 26 programs available and 20 more potentially unlockable while Travelpayouts reviews/matches the Project. Visible available examples include Klook and Yesim. ERN should still activate only programs that genuinely fit the visitor journey and only after checking individual terms.
 
 Why this is next: it lets ERN build real clicks/bookings and commercial history without depending on one large advertiser application.
 
@@ -65,4 +65,4 @@ Only after a program confirms acceptance:
 - activate a limited public pilot;
 - confirm Earth-view ranking is unchanged.
 
-Current finite lane: monitor the Auckland Viator pilot and create one Travelpayouts ERN Project when the owner is ready. Use only programs that Travelpayouts actually marks available for that Project. Keep direct Agoda and Skyscanner applications deferred while ERN accumulates real traffic, engagement and commercial history.
+Current finite lane: monitor the Auckland Viator pilot and wait for Travelpayouts Project matching to complete, then review the actual available-program set. Do not mass-activate programs; prioritize genuine ERN fit such as activities/tickets/transport before secondary utilities. Keep direct Agoda and Skyscanner applications deferred while ERN accumulates real traffic, engagement and commercial history.
