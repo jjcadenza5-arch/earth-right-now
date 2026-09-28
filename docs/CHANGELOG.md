@@ -1,3 +1,10 @@
+## 2026-09-28 — Expand visitor-source research and add Seoul fail-closed adapter
+- Added Visit Finland, Yellowstone Old Faithful and Yosemite official/current source research lanes.
+- Resolved Santa Claus Village and Old Faithful to exact official link-first targets without promoting them.
+- Preserved Yosemite's explicit usage-agreement gate.
+- Added a pure Seoul real-time context normalizer/freshness layer plus smoke coverage for stale, unmapped and untimestamped data.
+- Aligned the research-queue smoke expectation with the current provider-discovery action.
+
 ## 2026-09-28 — Add Rome Spanish Steps live window
 - Added one active external live Rome landmark view.
 - Left Paris unresolved because current provider live pages are offline.
