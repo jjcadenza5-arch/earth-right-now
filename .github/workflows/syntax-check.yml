@@ -20,6 +20,7 @@ on:
       - "tests/phase-k-release-read.smoke.js"
       - "tests/now-moment-photo-foundation.smoke.js"
       - "tests/now-moment-photo-service.smoke.js"
+      - "tests/now-moment-photo-client-http.smoke.js"
       - "data/now-moment-media-deployment.json"
       - "now-moments.html"
       - "for-places.html"
@@ -68,6 +69,7 @@ jobs:
           node tests/phase-k-release-read.smoke.js
           node tests/now-moment-photo-foundation.smoke.js
           node tests/now-moment-photo-service.smoke.js
+          node tests/now-moment-photo-client-http.smoke.js
       - name: Run Generative Guide focused smoke tests
         run: |
           set -euo pipefail
