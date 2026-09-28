@@ -8,6 +8,7 @@ import { diversifyDeliveryHosts } from "./watch-earth-delivery-diversity.js";
 import { arrangeWatchEarthJourney } from "./watch-earth-story-flow.js";
 import { diversifyWatchEarthProviders } from "./watch-earth-provider-diversity.js";
 import { interleaveWatchEarthProviders } from "./watch-earth-provider-interleave.js";
+import { preserveWatchEarthInsideCore } from "./watch-earth-inside-core.js";
 
 export function buildDynamicWatchEarth(sources,{limit=20,now=new Date()}={}){
   const healthy=runtimeWatchEarthSources(sources,now);
@@ -23,5 +24,6 @@ export function buildDynamicWatchEarth(sources,{limit=20,now=new Date()}={}){
   const broad=broadenWatchEarthRegions(unique,{limit:Math.max(limit*2,40),maxPerRegion:6});
   const delivery=diversifyDeliveryHosts(broad,{limit:Math.max(limit*2,40),maxPerHost:4});
   const providers=diversifyWatchEarthProviders(delivery,{limit:Math.max(limit*2,40),maxPerProvider:6});
-  return interleaveWatchEarthProviders(arrangeWatchEarthJourney(balanceWatchEarthMoments(providers,{limit,now}),{now}),{now});
+  const arranged=interleaveWatchEarthProviders(arrangeWatchEarthJourney(balanceWatchEarthMoments(providers,{limit,now}),{now}),{now});
+  return preserveWatchEarthInsideCore(arranged,{now,preferredInside:5,earlyWindow:8});
 }
