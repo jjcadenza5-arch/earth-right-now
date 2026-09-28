@@ -79,3 +79,7 @@ The future Earth Signals privacy boundary is now published on the public privacy
 
 ## Submission retention milestone
 The future camera/place submission workflow now has a published 30-day maximum retention policy for unapproved intake. This clears the retention-policy readiness item only. Submission transport remains disabled until a real HTTPS review endpoint is configured and passes the existing trust-boundary checks.
+
+
+## Cross-cutting priority — See Before You Go source strategy
+ERN quality and visitor-program fit now work together in source research. Any visitor-interest place may qualify; categories are illustrative, not restrictive. Prioritize strong truthful current windows where visitors benefit from seeing the place before going, then add practical travel actions only when naturally relevant. Commercial fit is a supporting research signal and never overrides truth, visual quality, playback eligibility, Guide truth, Stories ranking or Watch Earth editorial curation. See `docs/SEE_BEFORE_YOU_GO_STANDARD.md` and `data/source-research-priorities.json`.
