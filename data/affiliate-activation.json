@@ -76,9 +76,9 @@
       "rationale": "Direct large-brand applications remain on hold while ERN builds traffic, social proof and commercial history through Viator and Travelpayouts-accessible programs."
     }
   ],
-  "next": "CREATE_DESTINATION_SPECIFIC_LINKS_FOR_EXISTING_ERN_PLACES",
+  "next": "VALIDATE_AND_DEPLOY_KLOOK_AUCKLAND_THEN_PREPARE_TIQETS_DESTINATION_LINK",
   "note": "Travelpayouts first activation set selected by ERN fit: Klook, Tiqets, Welcome Pickups. Drive remains off. Generate/verify exact manual links before any public placement. Remaining unseen available programs are not guessed.",
-  "updatedAt": "2026-09-28T13:41:00Z",
+  "updatedAt": "2026-09-28T13:45:00Z",
   "travelpayoutsVerifiedPrograms": {
     "klook": {
       "state": "MANUAL_LINK_HUMAN_VERIFIED",
@@ -86,7 +86,16 @@
       "destinationScope": "GENERIC_HOMEPAGE",
       "verifiedAt": "2026-09-28T13:33:00Z",
       "publicPlacementAllowed": false,
-      "note": "Human opened the generated Travelpayouts/Klook link and confirmed it resolves correctly. Keep as fallback evidence; prefer destination-specific links for public ERN placement."
+      "note": "Human opened the generated Travelpayouts/Klook link and confirmed it resolves correctly. Keep as fallback evidence; prefer destination-specific links for public ERN placement.",
+      "destinationLinks": {
+        "auckland": {
+          "state": "HUMAN_VERIFIED",
+          "trackingUrl": "https://klook.tpo.mx/kZmdWsAo",
+          "destinationPage": "https://www.klook.com/en-US/destination/c80-auckland/",
+          "verifiedAt": "2026-09-28T13:45:00Z",
+          "publicPlacementAllowed": true
+        }
+      }
     },
     "tiqets": {
       "state": "MANUAL_LINK_HUMAN_VERIFIED",
