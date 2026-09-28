@@ -1,3 +1,9 @@
+## 2026-09-28 — Second Kyoto review applied
+- Human batch `af006e03dfb279e3` confirmed Hanamikoji Street playback/currentness; promoted only that exact target.
+- Arashiyama Bamboo failed deployed playback and remains research-only/deferred; this is not evidence that the underlying provider camera is offline.
+- Nishiki Market was tested around 00:16 JST, outside its published 11:00–18:00 JST live window. The failure is not counted as a target failure; retest is allowed only during the stated live window.
+- Kyoto now has four exact source-specific approved live cameras in ERN.
+
 ## 2026-09-28 — Second Kyoto visitor-condition batch staged
 - Staged three more official Kyoto tourism cameras as research-only: Hanamikoji Street, Nishiki Market and Arashiyama Bamboo Forest.
 - Nishiki Market's official stream is scheduled 11:00–18:00 JST; ERN must preserve that schedule and never imply 24/7 live availability.
