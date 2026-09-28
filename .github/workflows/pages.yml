@@ -22,6 +22,7 @@ on:
       - "stories.html"
       - "src/ern-stories.js"
       - "src/stories-page.js"
+      - "src/share-links.js"
       - "src/discovery-eligibility.js"
       - "src/source-recency.js"
       - "src/solar-moment.js"
