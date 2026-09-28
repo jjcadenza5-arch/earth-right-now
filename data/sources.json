@@ -3036,5 +3036,43 @@
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q34600",
     "coordinateNote": "Kyoto city reference point; not claimed as the exact camera position.",
     "playbackVerifiedAt": "2026-09-28T15:15:56.227Z"
+  },
+  {
+    "id": "tonami-tulip-park-panorama",
+    "placeId": "tonami-tulip-park",
+    "title": "Tonami Tulip Park — Panorama Terrace",
+    "provider": "Tonami City",
+    "country": "Japan",
+    "region": "Toyama",
+    "categories": [
+      "Farms & Seasonal",
+      "Parks & Scenic",
+      "Beautiful Earth",
+      "Useful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.city.tonami.lg.jp/livecam/cam01/",
+    "officialUrl": "https://www.city.tonami.lg.jp/livecam/cam01/",
+    "embedUrl": null,
+    "thumbnailUrl": null,
+    "attribution": "Tonami City",
+    "checkedAt": "2026-09-28T15:20:00Z",
+    "lastSuccessfulCheck": "2026-09-28T15:20:00Z",
+    "failureReason": null,
+    "quality": 88,
+    "freshness": 98,
+    "moment": 93,
+    "story": "Check Tonami Tulip Park's current condition before making a seasonal visit.",
+    "timeZone": "Asia/Tokyo",
+    "rightsBasis": "Tonami City's official live-camera page provides a current visitor-facing live view of the park with selectable directions. ERN links to the official page and does not infer third-party embed or restream rights.",
+    "freshnessEvidence": "Tonami City's current live-camera index and Panorama Terrace page are active and identify the page as a live camera. The park is a year-round city park and spring tulip-fair venue.",
+    "coordinateBasis": "PLACE_REFERENCE",
+    "lat": 36.6408156,
+    "lon": 136.9606446,
+    "coordinateSourceUrl": "https://www.city.tonami.lg.jp/section/1607p/",
+    "coordinateNote": "Place-reference coordinate for Tonami Tulip Park address; not claimed as exact camera position."
   }
 ]
