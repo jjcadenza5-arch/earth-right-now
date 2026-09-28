@@ -1,3 +1,14 @@
+## 2026-09-28 — Phase L private media Worker foundation prepared
+- Added separate `ern-now-moment-media` Cloudflare Worker foundation with photo public activation OFF by default.
+- Prepared a private R2 bucket binding; the bucket is never used as a public origin.
+- Durable Object SQLite stores temporary media metadata and anonymous rate events with a hard retained-media ceiling of 500.
+- Upload limits are 3 photos/day per anonymous subject and 2/place/day; reports have their own duplicate/rate guard.
+- Uploads require sanitized derivatives and return PENDING_REVIEW / published:false.
+- Approved media is proxied through the Worker only while unreported and unexpired.
+- Reported media is hidden immediately; human review remains explicit.
+- Scheduled cleanup every 15 minutes deletes expired metadata and corresponding R2 objects.
+- Video remains disabled and no deployment has occurred.
+
 ## 2026-09-28 — Phase L browser sanitizer and HTTP contract prepared
 - Added browser-side photo preparation that decodes and re-encodes to JPEG, scales the longest dimension to at most 1920 px, retries compression until the 1.5 MB stored-derivative ceiling is met, and never carries the original filename forward.
 - Added a bounded binary HTTP contract with explicit ERN place/media headers; filenames, free text and precise coordinates are not accepted transport fields.
