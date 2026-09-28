@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T16:12:00Z",
+  "generatedAt": "2026-09-28T16:45:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -225,6 +225,87 @@
       "state": "NO_VERIFIED_CURRENT_CAMERA_YET",
       "why": "Seasonal farms and orchards embody ERN's origin story, but tourism pages mostly provide static/promotional imagery. This is a future camera-submission/outreach opportunity, not a license to label old media current.",
       "next": "Later use For Places / partner-camera submission to invite farms with real current cameras or frequent current-image feeds."
+    },
+    {
+      "id": "visit-finland-official-live-webcams",
+      "priority": "P1",
+      "placeGroup": "Finland visitor destinations",
+      "country": "Finland",
+      "provider": "Visit Finland / source-specific camera providers",
+      "candidateType": "OFFICIAL_TOURISM_LIVE_WEBCAM_GUIDE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "activities",
+        "culture",
+        "stay",
+        "transport"
+      ],
+      "evidenceUrls": [
+        "https://www.visitfinland.com/en/practical-tips/live-from-finland/"
+      ],
+      "observedTargets": [
+        "Helsinki Market Square",
+        "Rovaniemi / Santa Claus Village",
+        "Turku port and archipelago",
+        "Kilpisjärvi / Saana Fell"
+      ],
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "Visit Finland explicitly curates real-time webcam views so visitors can see what destinations look like right now. This is closely aligned with ERN, but each underlying provider/player and permission path must be reviewed separately.",
+      "next": "Resolve one or two strongest exact targets, provider ownership, durable player/page URL, live truth, permission mode and deployed playback before any catalog promotion."
+    },
+    {
+      "id": "yellowstone-old-faithful-official-live",
+      "priority": "P1",
+      "placeGroup": "Yellowstone National Park / Old Faithful",
+      "country": "United States",
+      "provider": "U.S. National Park Service / Yellowstone National Park",
+      "candidateType": "OFFICIAL_NPS_LIVE_STREAM",
+      "visitorDecisionValue": "VERY_HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "activities",
+        "transport",
+        "stay"
+      ],
+      "evidenceUrls": [
+        "https://www.nps.gov/media/webcam/view.htm?id=AF555E5C-BE40-FE91-52E98E0EDD833B68",
+        "https://www.nps.gov/yell/learn/photosmultimedia/webcams.htm"
+      ],
+      "observedTargets": [
+        "Old Faithful and Upper Geyser Basin livestream"
+      ],
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "NPS identifies the Old Faithful camera as an active livestream and explicitly positions Yellowstone webcams as a way to see what is happening in the park right now.",
+      "next": "Resolve the exact player integration/link path and rights attribution for this live target. Do not infer public-domain reuse because the live view credits external funding/partners; link-only is acceptable if embed rights are not explicit."
+    },
+    {
+      "id": "yosemite-official-current-webcams",
+      "priority": "P1",
+      "placeGroup": "Yosemite National Park",
+      "country": "United States",
+      "provider": "U.S. National Park Service / Yosemite Conservancy",
+      "candidateType": "OFFICIAL_CURRENT_WEBCAM_NETWORK_PERMISSION_GATED",
+      "visitorDecisionValue": "VERY_HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "activities",
+        "transport",
+        "stay"
+      ],
+      "evidenceUrls": [
+        "https://www.nps.gov/yose/learn/photosmultimedia/webcams.htm",
+        "https://www.nps.gov/yose/planyourvisit/conditions.htm"
+      ],
+      "observedTargets": [
+        "Yosemite Falls",
+        "Half Dome",
+        "Yosemite High Sierra",
+        "El Capitan"
+      ],
+      "state": "HOLD_USAGE_AGREEMENT_REQUIRED_FOR_FEATURE_REUSE",
+      "why": "NPS exposes current Yosemite webcam conditions, but the official page explicitly directs third parties to a Yosemite Conservancy webcam usage agreement before featuring the webcam imagery.",
+      "next": "Keep research-only/link-level until a usage agreement is approved or a clearly permitted official external handoff is chosen. Do not reuse current images directly without that permission."
     }
   ],
   "guardrails": {
