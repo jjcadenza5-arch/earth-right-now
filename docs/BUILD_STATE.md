@@ -1,3 +1,9 @@
+## 2026-09-28 — Coordinate provenance strengthened; Chiang Mai gap rechecked
+- Replaced Singapore Port's directory-derived region reference with the Port of Singapore Wikidata coordinate.
+- Replaced Rome Spanish Steps' Mapcarta reference with the official Roma Capitale tourism coordinate.
+- Rechecked Chiang Mai PAO's official real-time CCTV surface; all four feeds still report STANDBY / WAITING FOR FEED.
+- Chiang Mai therefore remains a real visual-source gap rather than being padded with stale/static imagery.
+
 ## 2026-09-28 — Rovaniemi and Old Faithful official live windows added
 - Added Santa Claus Village / Arctic Circle as EXTERNAL_LIVE / LINK_ONLY from the official village page; the live video is hosted by the City of Rovaniemi.
 - Added Old Faithful / Upper Geyser Basin as EXTERNAL_LIVE / LINK_ONLY from the official NPS live-stream webcam page, whose exact media status is Active.
