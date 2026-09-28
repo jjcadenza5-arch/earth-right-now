@@ -1,3 +1,9 @@
+## 2026-09-28 — First Travelpayouts manual-link wave completed
+- Human generated and verified the Welcome Pickups Travelpayouts link `https://tpo.mx/FmFTgwST`.
+- Welcome Pickups is now the third verified manual affiliate partner after Klook and Tiqets.
+- First wave is complete: Klook, Tiqets, Welcome Pickups all have human-verified generic tracking links.
+- Generic homepage links remain non-public. Next step is destination-specific link generation for existing ERN places so offers are useful and context-matched.
+
 ## 2026-09-28 — Tiqets manual affiliate link verified
 - Human generated a Tiqets link through the verified Travelpayouts ERN Project and confirmed it opens correctly.
 - Recorded tracking URL `https://tiqets.tpo.mx/z0Qww9UU` as GENERIC_HOMEPAGE scope only.
