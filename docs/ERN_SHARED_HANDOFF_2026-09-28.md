@@ -112,8 +112,9 @@ User preference: work autonomously in large batches and return only for genuine 
 - For Places copy now explicitly invites any visitor-interest place where today's flowers, crowds, weather, visibility, animals, beach conditions, activity or atmosphere can help someone decide whether, when or how to go.
 - Seoul Real-time City Data remains a separate PUBLIC-OFF context-data research lane, never camera truth.
 - Current catalog count at this handoff revision: 93 sources. Always read current `data/sources.json` rather than relying on a frozen count.
-- Recency audit at 2026-09-28T16:40Z: 31 current, 34 stale, 28 expired under ERN's existing horizons. This is maintenance debt, not permission to relax truth windows.
-- Eight high-value external/current sources were freshly revalidated this pass: Coogee/Randwick, Waikiki, Kīlauea, Yellowstone, San Diego Zoo, Chamonix, Whistler Blackcomb and New York skyline.
+- Recency audit after two recheck batches at 2026-09-28T16:47Z: 37 current, 28 stale, 28 expired under ERN's existing horizons. This is maintenance debt, not permission to relax truth windows.
+- Eight high-value external/current sources were freshly revalidated first: Coogee/Randwick, Waikiki, Kīlauea, Yellowstone, San Diego Zoo, Chamonix, Whistler Blackcomb and New York skyline.
+- A second six-source recheck batch refreshed Diano Marina, Sottomarina/Chioggia, Torres del Paine, and SANParks Boulders/Addo/Orpen.
 - Generated destination pages now visibly separate current verified views from provider sources awaiting recheck, including recency-aware SEO/directory copy.
 - A destination-opportunity matrix now steers visual-gap research. Current unresolved high/meaningful gaps include Chiang Mai and Paris; already-covered destinations should be maintained selectively rather than padded with duplicates.
 - Chiang Mai PAO CCTV was rechecked after the destination-matrix pass and still reports STANDBY / WAITING FOR FEED on all four official cameras. Keep the gap honest until feed state materially changes.
