@@ -15,6 +15,7 @@ const source=await import("node:fs/promises");
 const text=await source.readFile("scripts/participation-deployment-verify.mjs","utf8");
 console.assert(text.includes("secretValuesExposed")&&text.includes("rawNetworkIdentifiersStored"),"Verifier must check privacy/secret evidence");
 console.assert(text.includes("contributionsEnabled")&&text.includes("submissionEnabled"),"Verifier must require both participation services to remain public-off");
-console.assert(text.includes("reviewTokenConfigured")&&text.includes("retentionBounded"),"Submission evidence checks missing");
+console.assert(text.includes("reviewTokenConfigured"),"Participation review-token evidence check missing");
+console.assert(text.includes("retentionBounded"),"Submission retention evidence check missing");
 console.assert(text.includes('truth:"Health verification is deployment evidence only.'),"Verifier must not equate health with activation");
 console.log("participation deployment verifier safety smoke: ok");
