@@ -1,3 +1,9 @@
+## 2026-09-28 — Destination opportunity matrix added
+- Added a concrete internal matrix connecting current visual coverage, visitor decision value, useful travel intents and source-research priority.
+- High current gaps include Seoul, Bangkok and Chiang Mai; Paris, Rome and Singapore remain meaningful visual-source gaps after initial official-source research.
+- Strongly covered destinations such as Auckland, New York and Waikiki are deliberately lower priority to avoid source/commercial over-density.
+- Program families may break ties only after quality/truth/currentness; commission cannot set source priority.
+
 ## 2026-09-28 — For Places copy aligned with See Before You Go
 - Clarified that any visitor-interest place may participate, not only famous landmarks or a narrow set of categories.
 - Added the practical reason to contribute a current window: when today's flowers, crowds, weather, visibility, animals, beach conditions, activity or atmosphere matter, a current view can help visitors decide whether, when and how to go.

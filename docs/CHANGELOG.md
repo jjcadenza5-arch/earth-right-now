@@ -1,3 +1,7 @@
+## 2026-09-28 — Add destination opportunity matrix
+- Connected source-quality gaps and visitor-use/program categories into one research planning artifact.
+- Explicitly penalizes duplicate destination density and forbids commission-led source priority.
+
 ## 2026-09-28 — Align For Places with See Before You Go
 - Strengthened the participation message around truthful current conditions and broad visitor-interest places.
 - No submission activation or commercial ranking behavior changed.
