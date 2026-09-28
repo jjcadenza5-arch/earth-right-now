@@ -12,6 +12,7 @@ const now=Date.now();
 
 const programs=(affiliate.waves||[]).flatMap(w=>w.programs||[]).filter(x=>x&&typeof x==="object");
 const booking=programs.find(x=>x.id==="booking-com")||null;
+const travelpayouts=programs.find(x=>x.id==="travelpayouts-platform")||null;
 const connected=(distribution.channels||[]).filter(x=>x.state==="CONNECTED").map(x=>x.id);
 const unconnected=(distribution.channels||[]).filter(x=>x.state!=="CONNECTED").map(x=>x.id);
 const analyticsEnabled=/enabled\s*:\s*true/.test(analytics)&&!/provider\s*:\s*["']NONE["']/.test(analytics);
@@ -40,6 +41,19 @@ if(booking&&booking.state==="SUBMITTED_PENDING_REVIEW"){
     nextEligibleAt:null,
     eligibleNow:false,
     beforeTrigger:"WAIT"
+  });
+}
+if(travelpayouts&&travelpayouts.reviewState==="MATCHING_IN_PROGRESS"){
+  add({
+    id:"travelpayouts-program-matching",
+    lane:"AFFILIATE_PLATFORM",
+    state:"MATCHING_IN_PROGRESS",
+    trigger:"Travelpayouts finishes Project matching or the dashboard materially changes program availability/review states.",
+    nextEligibleAt:null,
+    eligibleNow:false,
+    beforeTrigger:"NO_MASS_ACTIVATION_OR_DRIVE_AUTOMATION",
+    currentlyAvailable:Number(travelpayouts.availableProgramsObserved||0),
+    potentiallyUnlockable:Number(travelpayouts.unlockMoreObserved||0)
   });
 }
 if(earth.status!=="DEPLOYED"){

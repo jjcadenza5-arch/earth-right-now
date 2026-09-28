@@ -1,3 +1,9 @@
+## 2026-09-28 — Travelpayouts matching added to external gate control
+- Added Travelpayouts Project matching as a first-class external gate in Operations.
+- Business control now reports Travelpayouts review state, observed available-program count and Drive automation state.
+- The lane reopens only on a material dashboard/program-state change; time passing alone does not authorize program activation.
+- Drive remains disabled and mass activation remains prohibited.
+
 ## 2026-09-28 — Commercial partner registry reconciled
 - Added the real active Viator limited-pilot relationship to `data/affiliate-partners.json`, fixing the prior state where a verified affiliate offer existed without a matching active partner record.
 - Viator uses a conservative ERN 90-day internal recheck window through 2026-12-26; this is not presented as a provider contract expiry.
