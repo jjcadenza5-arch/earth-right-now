@@ -1,3 +1,9 @@
+## 2026-09-28 — Kyoto official live-camera review batch staged
+- Resolved three exact Kyoto visitor-condition YouTube targets for research-only deployed review: Kiyomizu-zaka, Fushimi Inari and Kifune Shrine.
+- All remain blocked from catalog promotion. Each requires exact deployed human playback and target-specific permission review.
+- Kyoto City / DMO Kyoto official tourism pages explicitly position live cameras as real-time tools for visitors to understand congestion/current conditions before and during sightseeing.
+- Standard branded YouTube player only; no restreaming and no family-wide permission inference.
+
 ## 2026-09-28 — Visitor-interest source expansion queue created
 - Converted the See Before You Go strategy into a fail-closed research queue rather than adding unverified cameras directly to the catalog.
 - P0: Kyoto official tourism live-camera network, because it explicitly shows real-time conditions at visitor hotspots for congestion-aware trip decisions.
