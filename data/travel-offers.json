@@ -31,5 +31,39 @@
     "expiresAt": "2026-12-27T13:45:00Z",
     "evidence": "Human generated a destination-specific Klook/Auckland link through the verified Travelpayouts ERN Project and confirmed it opens the Auckland destination page correctly.",
     "verified": true
+  },
+  {
+    "title": "Statue of Liberty tickets & tours",
+    "provider": "Tiqets",
+    "intent": "culture",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "tiqets",
+    "destinationScope": "Statue of Liberty",
+    "url": "https://tiqets.tpo.mx/cCt55uo7",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-09-28T13:52:00Z",
+    "expiresAt": "2026-12-27T13:52:00Z",
+    "evidence": "Human generated a destination-specific Tiqets/Statue of Liberty link through the verified Travelpayouts ERN Project and confirmed it opens the Statue of Liberty Tiqets page correctly.",
+    "id": "tiqets-statue-liberty-close",
+    "placeId": "statue-liberty-earthcam"
+  },
+  {
+    "title": "Statue of Liberty tickets & tours",
+    "provider": "Tiqets",
+    "intent": "culture",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "tiqets",
+    "destinationScope": "Statue of Liberty",
+    "url": "https://tiqets.tpo.mx/cCt55uo7",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-09-28T13:52:00Z",
+    "expiresAt": "2026-12-27T13:52:00Z",
+    "evidence": "Human generated a destination-specific Tiqets/Statue of Liberty link through the verified Travelpayouts ERN Project and confirmed it opens the Statue of Liberty Tiqets page correctly.",
+    "id": "tiqets-statue-liberty-harbor",
+    "placeId": "statue-liberty-harbor-earthcam"
   }
 ]

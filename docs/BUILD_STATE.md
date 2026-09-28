@@ -1,3 +1,9 @@
+## 2026-09-28 — Tiqets Statue of Liberty destination offer prepared
+- Human generated and verified Tiqets Statue of Liberty link `https://tiqets.tpo.mx/cCt55uo7`.
+- Bound the offer to both ERN Statue of Liberty views: close view and harbor view.
+- Partner: Tiqets via Travelpayouts; intent: culture; disclosure remains explicit.
+- Generic Tiqets homepage link remains non-public.
+
 ## 2026-09-28 — First destination-specific Travelpayouts offer prepared
 - Human generated and verified Klook Auckland link `https://klook.tpo.mx/kZmdWsAo`.
 - Bound the offer to `auckland-viaduct-harbour` in ERN's existing Before You Go commercial layer.
