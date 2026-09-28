@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,businessControl}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,businessControl,externalGates}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -110,6 +110,15 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     for(const item of (sourceRevalidationTriage.immediate||[]).slice(0,5))lines.push(`- ${item.title||item.id} — ${item.lane}: ${item.action}`);
     lines.push("- Triage is read-only; PAGE_REACHABLE never proves live playback and network/access failures never change catalog health automatically.","");
   }
+  if(externalGates){
+    lines.push("## External gate triggers");
+    lines.push("- Open gates: "+(externalGates.count||0)+"; eligible for evidence review now: "+(externalGates.eligibleNow?.length||0)+"; waiting: "+(externalGates.waiting?.length||0)+".");
+    for(const gate of (externalGates.openGates||[]).slice(0,8)){
+      lines.push("- "+gate.id+" — "+gate.state+"; trigger: "+gate.trigger+(gate.nextEligibleAt?" · earliest "+gate.nextEligibleAt:"")+"; before trigger: "+gate.beforeTrigger+".");
+    }
+    lines.push("- Trigger eligibility is not success and never authorizes automatic external action or public activation.","");
+  }
+
   if(businessControl){
     lines.push("## Business control");
     lines.push("- Commercial: "+(businessControl.commercial?.activationState||"UNKNOWN")+"; verified public offers "+(businessControl.commercial?.verifiedPublicOffers||0)+"; affiliate offers "+(businessControl.commercial?.affiliateOffers||0)+"; sponsored offers "+(businessControl.commercial?.sponsoredOffers||0)+".");

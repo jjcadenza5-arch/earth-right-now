@@ -21,6 +21,7 @@ const requiredJson=[
  "research-review-queue.json",
  "commercial-inventory.json",
  "business-control.json",
+ "external-gates.json",
  "commercial-verification-horizon.json",
  "commercial-onboarding-plan.json",
  "commercial-research.json",
@@ -161,6 +162,20 @@ export async function validateOperationsPacket(dir="ern-ops"){
       if(row?.permissionConfirmed!==false)issues.push({file:"embed-research-preflight.json",code:"PREFLIGHT_PERMISSION_BOUNDARY_VIOLATION",id:row?.id||null});
       if(row?.humanPlaybackConfirmed!==false)issues.push({file:"embed-research-preflight.json",code:"PREFLIGHT_PLAYBACK_BOUNDARY_VIOLATION",id:row?.id||null});
       if(row?.promotionAllowed!==false)issues.push({file:"embed-research-preflight.json",code:"PREFLIGHT_PROMOTION_BOUNDARY_VIOLATION",id:row?.id||null});
+    }
+  }
+
+  const externalGates=files["external-gates.json"];
+  if(externalGates){
+    const s=externalGates.safety||{};
+    if(s.inventTriggerEvidenceAllowed!==false)issues.push({file:"external-gates.json",code:"EXTERNAL_GATE_INVENT_EVIDENCE_VIOLATION"});
+    if(s.automaticExternalActionAllowed!==false)issues.push({file:"external-gates.json",code:"EXTERNAL_GATE_AUTO_ACTION_VIOLATION"});
+    if(s.automaticCredentialRotationAllowed!==false)issues.push({file:"external-gates.json",code:"EXTERNAL_GATE_CREDENTIAL_ROTATION_VIOLATION"});
+    if(s.automaticPublicActivationAllowed!==false)issues.push({file:"external-gates.json",code:"EXTERNAL_GATE_AUTO_ACTIVATION_VIOLATION"});
+    if(s.automaticPartnerClaimAllowed!==false)issues.push({file:"external-gates.json",code:"EXTERNAL_GATE_PARTNER_CLAIM_VIOLATION"});
+    if(s.timePassingAloneCountsAsSuccess!==false)issues.push({file:"external-gates.json",code:"EXTERNAL_GATE_TIME_SUCCESS_VIOLATION"});
+    for(const gate of externalGates.openGates||[]){
+      if(gate?.reopenOnlyWhen!==true||!gate?.trigger||!gate?.beforeTrigger)issues.push({file:"external-gates.json",code:"EXTERNAL_GATE_INVALID_TRIGGER",id:gate?.id||null});
     }
   }
 

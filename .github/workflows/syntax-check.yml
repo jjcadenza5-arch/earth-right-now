@@ -29,6 +29,7 @@ on:
       - "tests/public-brand-kit.smoke.js"
       - "tests/commercial-attribution-truth.smoke.js"
       - "tests/business-control-status.smoke.js"
+      - "tests/external-gate-register.smoke.js"
       - "press.html"
       - "data/public-brand-facts.json"
       - "data/distribution-channels.json"
@@ -96,6 +97,7 @@ jobs:
           node tests/public-brand-kit.smoke.js
           node tests/commercial-attribution-truth.smoke.js
           node tests/business-control-status.smoke.js
+          node tests/external-gate-register.smoke.js
       - name: Run Generative Guide focused smoke tests
         run: |
           set -euo pipefail

@@ -1,3 +1,9 @@
+## 2026-09-28 — Stage Q locally complete; Stage R External Gate Trigger Register opened
+- Stage Q passed daily Operations packet integrity and JavaScript safety checks on commit `34d8d8e7814e1042bc062c0bee6466461977ef9e` and is now LOCALLY COMPLETE / CONTINUOUS OPERATIONS.
+- Reclassified Stage F as LIVE / MAINTENANCE, Stage G as OPERATIONS / MAINTENANCE, and Stage H as PARTIALLY ACTIVE / EXTERNAL PROVIDER GATE so mature systems are not left falsely open.
+- Opened Stage R with an evidence-gated trigger register for Viator API activation, Booking.com review, participation deployments, Now Moment media, official social channels and aggregate analytics.
+- Each trigger makes a lane eligible for review only; it never proves success or authorizes activation.
+- Daily Operations now retains the trigger register alongside business control.
 ## 2026-09-28 — Stage P locally complete; Stage Q Business Operations Control opened
 - Stage P passed JavaScript, Operations and GitHub Pages deployment on commit `1c527525647ec3665c6baa7fa9b76a652d637777` and is now LOCALLY COMPLETE / ANALYTICS ACTIVATION GATE.
 - Opened Stage Q with a single read-only business-control artifact combining affiliate activation, verified public offers, attribution configuration, distribution-channel connection state, participation deployment gates and canonical public-identity readiness.
