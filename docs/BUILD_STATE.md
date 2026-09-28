@@ -1,3 +1,11 @@
+## 2026-09-28 — Stage L local completion batch: privacy, moderation queue and deploy path
+- Published dedicated privacy wording for temporary Now Moment still photos: client/server metadata sanitation, canonical place binding, no captions/free text, no precise public coordinates, moderation before display, immediate hide-on-report, 45-minute deletion, rate/storage bounds and explicit public-off deployment gating.
+- Added a token-protected moderator queue for PENDING/REVIEW/reported photos plus a private no-store moderator media preview route. Pending media remains inaccessible through the public media route.
+- Added a private media operator CLI with environment-only review credentials.
+- Added a manual-only Cloudflare deployment workflow that creates the private R2 bucket when missing, installs rate/review secrets, deploys with photo activation false, and never exposes secret values.
+- Added a non-mutating live /health deployment verifier requiring private storage, durable metadata, runtime secrets, hard media capacity, 45-minute TTL, video off and photo public activation off.
+- These changes complete the local infrastructure/review/privacy path; real Cloudflare deployment evidence remains external and visitor photo upload stays OFF.
+
 ## 2026-09-28 — Phase L media deployment readiness prepared
 - Extended the existing manual-only participation deployment workflow with an explicit `now-moment-media` target.
 - Media deployment fails closed unless the private `ern-now-moment-media` R2 bucket already exists and both `ERN_MEDIA_RATE_HMAC_KEY` + `ERN_MEDIA_REVIEW_TOKEN` are available as GitHub secrets.

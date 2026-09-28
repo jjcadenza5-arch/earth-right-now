@@ -89,6 +89,18 @@ export default{
 
     if(url.pathname.startsWith("/internal/now-moments/photos")){
       if(!adminAllowed(request,env))return reply(401,{ok:false,reason:"UNAUTHORIZED"});
+      if(request.method==="GET"&&url.pathname==="/internal/now-moments/photos"){
+        const x=await stateCall(env,{op:"list-review",now:Date.now()});
+        return reply(200,{ok:true,items:(x.records||[]).map(r=>({id:r.id,placeId:r.placeId,placeLabel:r.placeLabel,createdAt:r.createdAt,expiresAt:r.storageExpiryAt,moderation:r.moderation,reported:r.reported===true,mimeType:r.mimeType,width:r.width,height:r.height,storedBytes:r.storedBytes,previewUrl:`/internal/now-moments/photos/${encodeURIComponent(r.id)}/media`}))});
+      }
+      const privateMedia=url.pathname.match(/^\/internal\/now-moments\/photos\/([^/]+)\/media$/);
+      if(request.method==="GET"&&privateMedia){
+        const {metadataStore,objectStore}=stores(env);
+        const record=await metadataStore.get(decodeURIComponent(privateMedia[1]));
+        if(!record||Date.parse(record.storageExpiryAt)<=Date.now())return reply(404,{ok:false,reason:"NOT_FOUND"});
+        const object=await objectStore.get(record.objectKey);if(!object)return reply(404,{ok:false,reason:"NOT_FOUND"});
+        return new Response(object.body,{status:200,headers:{"content-type":record.mimeType,"cache-control":"private, no-store","x-content-type-options":"nosniff","content-security-policy":"default-src 'none'; img-src 'self'; style-src 'none'; sandbox"}});
+      }
       const m=url.pathname.match(/^\/internal\/now-moments\/photos\/([^/]+)\/review$/);
       if(request.method==="POST"&&m){
         let body;try{body=await request.json()}catch{return reply(400,{ok:false,reason:"INVALID_JSON"})}

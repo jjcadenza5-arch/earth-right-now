@@ -69,6 +69,11 @@ export class MediaState{
       return json(200,{ok:true});
     }
 
+    if(b.op==="list-review"){
+      const rows=[...this.sql.exec("SELECT record_json, reported, moderation FROM photos WHERE expiry_at > ? AND (moderation = 'PENDING' OR moderation = 'REVIEW' OR reported = 1) ORDER BY expiry_at ASC",now)];
+      return json(200,{ok:true,records:rows.map(r=>({...JSON.parse(r.record_json),reported:Boolean(r.reported),moderation:r.moderation}))});
+    }
+
     if(b.op==="get"){
       const row=[...this.sql.exec("SELECT record_json, reported, moderation FROM photos WHERE id = ?",String(b.id||""))][0];
       return row?json(200,{ok:true,record:{...JSON.parse(row.record_json),reported:Boolean(row.reported),moderation:row.moderation}}):json(404,{ok:false,reason:"NOT_FOUND"});
