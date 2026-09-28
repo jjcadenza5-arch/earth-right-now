@@ -1,3 +1,7 @@
+## 2026-09-28 — Add ERN origin story
+- Added the strawberry-picking origin of “See before you go” to the About page.
+- Kept homepage/product flow unchanged.
+
 ## 2026-09-28 — Add Tonami Tulip Park official live window
 - Added one selective municipal park live camera as external/link-only.
 - Preserved the seasonal See Before You Go use case without broad camera-network import.
