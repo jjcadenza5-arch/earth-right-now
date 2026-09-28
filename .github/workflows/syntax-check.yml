@@ -23,6 +23,7 @@ on:
       - "tests/now-moment-photo-client-http.smoke.js"
       - "tests/now-moment-media-worker.smoke.js"
       - "tests/ern-stories.smoke.js"
+      - "tests/stage-m-completion.smoke.js"
       - "stories.html"
       - "tests/stage-l-completion.smoke.js"
       - ".github/workflows/deploy-now-moment-media.yml"
@@ -79,7 +80,9 @@ jobs:
           node tests/now-moment-media-worker.smoke.js
           node tests/stage-l-completion.smoke.js
       - name: Run ERN Stories truth-gate smoke
-        run: node tests/ern-stories.smoke.js
+        run: |
+          node tests/ern-stories.smoke.js
+          node tests/stage-m-completion.smoke.js
       - name: Run Generative Guide focused smoke tests
         run: |
           set -euo pipefail

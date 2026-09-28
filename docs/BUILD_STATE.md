@@ -1,3 +1,8 @@
+## 2026-09-28 — Stage M Stories integrated into ERN Guide and marked locally complete
+- The first public Stories release passed JavaScript, Operations and GitHub Pages deployment on commit `ffdab214f6f4e31a73efb94eca415d5a59feb8f9`.
+- Added ERN Stories to the Guide link row so curiosity can flow naturally Guide → Stories → real current window.
+- Stage M is now LIVE / LOCALLY COMPLETE. Future story refinement remains iterative and must preserve the same truth gate.
+
 ## 2026-09-28 — Stage M opened: ERN Stories becomes a real discovery surface
 - Added a dedicated ERN Stories engine and public page implementing the approved principle: “Do not push the answer. Create the question.”
 - Stories are derived only from ERN's existing current/discoverable truth pool, exclude featured holds, and deduplicate both place and media identity.
