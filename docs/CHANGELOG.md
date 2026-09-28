@@ -1,3 +1,9 @@
+## 2026-09-28 — Prepare Seoul real-time context research
+- Added a separate non-visual real-time context manifest for Seoul.
+- Preserved strict separation between camera truth and crowd/traffic/weather/transit data.
+- Recorded attribution/commercial-use requirements and public activation gates.
+- No public UI or source truth changed.
+
 ## 2026-09-28 — Add two official London external live windows
 - Added IET Savoy Place skyline and Abbey Road Crossing as truthful external live sources.
 - Preserved provider-specific limits and avoided embedding/restream inference.
