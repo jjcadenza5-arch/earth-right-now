@@ -83,3 +83,16 @@ User preference: work autonomously in large batches and return only for genuine 
 4. Maintain London/Kyoto/source health and release gates.
 5. Explore strong current/live sources in places visitors genuinely care about, not random geographic coverage.
 6. Keep commercial/business readiness progressing without degrading ERN's visual/trust quality.
+
+## Latest progress after handoff creation
+- Second Kyoto review batch applied:
+  - Hanamikoji Street approved and in catalog.
+  - Arashiyama Bamboo failed deployed playback and remains deferred/research-only.
+  - Nishiki Market failure occurred outside its provider-published 11:00–18:00 JST live window and is NOT counted as a target failure. Retest only in-window.
+- Research review queue is schedule-aware and suppresses off-hours playback work.
+- Tonami Tulip Park — Panorama Terrace added as official EXTERNAL_LIVE / LINK_ONLY, a direct seasonal See Before You Go use case.
+- Public About page now includes the concise strawberry-picking origin of ERN and why current views matter.
+- For Places copy now explicitly invites any visitor-interest place where today's flowers, crowds, weather, visibility, animals, beach conditions, activity or atmosphere can help someone decide whether, when or how to go.
+- Seoul Real-time City Data remains a separate PUBLIC-OFF context-data research lane, never camera truth.
+- Current catalog has grown beyond the original stable-beta 80-source baseline; always read current `data/sources.json` rather than relying on the old count.
+- Continue autonomously. Only ask the operator for deployed human playback when a candidate is genuinely ready and inside any provider-published live window.
