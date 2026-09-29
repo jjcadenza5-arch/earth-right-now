@@ -7,12 +7,12 @@
   "destinationMappingRequired": true,
   "fuzzyAutomaticMappingAllowed": false,
   "apiKeyConfigured": true,
-  "taxonomyVerified": false,
+  "taxonomyVerified": true,
   "productSearchVerified": false,
   "affiliateAttributionVerified": false,
   "publicActivationAllowed": false,
   "checkedAt": "2026-09-29T15:42:04Z",
-  "note": "Viator sandbox API key authentication is confirmed active. Public activation remains OFF. Next work is exact destination taxonomy mapping, controlled product-search validation, and affiliate attribution verification; time/auth success alone does not authorize public products.",
+  "note": "Viator sandbox authentication and exact Auckland taxonomy mapping are confirmed. Public activation remains OFF. Next evidence gate is controlled product-search validation using the approved Auckland destination plus affiliate attribution verification.",
   "sandboxKeyState": "ACTIVE_AUTH_CONFIRMED",
   "lastDiagnostic": {
     "environment": "SANDBOX",
@@ -26,5 +26,15 @@
   "nextRecommendedRetestAt": null,
   "retestPolicy": "Authentication is now confirmed. Do not repeat activation diagnostics unless Viator auth materially fails or provider/key state changes.",
   "providerActivationWindow": "UP_TO_48_HOURS",
-  "activationEvidence": "One-time post-window diagnostic on 2026-09-29 returned HTTP 200 for both /destinations and documented sample product /products/5010SYDNEY via the deployed secret-isolated ERN Travel Worker."
+  "activationEvidence": "One-time post-window diagnostic on 2026-09-29 returned HTTP 200 for both /destinations and documented sample product /products/5010SYDNEY via the deployed secret-isolated ERN Travel Worker.",
+  "taxonomyEvidence": {
+    "ernPlaceId": "auckland-viaduct-harbour",
+    "destinationId": "391",
+    "destinationName": "Auckland",
+    "country": "New Zealand",
+    "countryDestinationId": "24",
+    "lookupId": "3.24.128.391",
+    "timeZone": "Pacific/Auckland",
+    "verifiedAt": "2026-09-29T15:45:48Z"
+  }
 }
