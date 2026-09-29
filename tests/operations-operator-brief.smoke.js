@@ -121,7 +121,7 @@ const signalInfraHold=operationsOperatorBrief({
  }
 });
 assert.match(signalInfraHold,/privacy requirement is complete/);
-assert.match(signalInfraHold,/hold local activation work until ERN deliberately enters a production-infrastructure phase/);
+assert.match(signalInfraHold,/deployment evidence remains the next gate and public activation stays separate/);
 
 const guideExternalHold=operationsOperatorBrief({
  snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
