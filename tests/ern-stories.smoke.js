@@ -6,12 +6,14 @@ const rows=[
  {...base,id:"b",placeId:"tokyo",place:"Tokyo",title:"Tokyo second",country:"Japan",sourceUrl:"https://example.com/live2"},
  {...base,id:"c",placeId:"bergen",place:"Bergen",title:"Bergen current",country:"Norway",sourceUrl:"https://example.org/live",lat:60,lon:5,categories:["Useful Earth"],quality:60,moment:60},
  {...base,id:"d",placeId:"market",place:"Market",title:"Interesting market",country:"Thailand",sourceUrl:"https://example.net/live",lat:18,lon:99,categories:["Interesting Earth"],quality:55,moment:55},
- {...base,id:"e",placeId:"coast",place:"Coast",title:"Beautiful coast",country:"Portugal",sourceUrl:"https://example.edu/live",lat:38,lon:-9,categories:["Beautiful Earth"],quality:95,moment:95}
+ {...base,id:"e",placeId:"coast",place:"Coast",title:"Beautiful coast",country:"Portugal",sourceUrl:"https://example.edu/live",lat:38,lon:-9,categories:["Beautiful Earth"],quality:95,moment:95},
+ {...base,id:"f",placeId:"osaka",place:"Osaka",title:"Osaka high score",country:"Japan",sourceUrl:"https://example.info/osaka",lat:34,lon:135,quality:98,moment:98},
+ {...base,id:"g",placeId:"canada",place:"Harbour",title:"Canadian harbour",country:"Canada",sourceUrl:"https://example.info/canada",lat:49,lon:-123,quality:40,moment:40}
 ];
 const story=storyCard(rows[0],{now});console.assert(story.question.endsWith("?"),"Story hook must be a question");
 console.assert(!/amazing|must see|happening now|crowd|raining/i.test(story.question),"Story question must not manufacture a condition");
 const deck=buildStoryDeck(rows,{now,limit:9});
-console.assert(deck.length===4,"Story deck must deduplicate places");
+console.assert(deck.length===6,"Story deck must deduplicate places");
 console.assert(new Set(deck.map(x=>x.placeId)).size===deck.length,"Story deck place identity must stay unique");
 const lenses=new Set(deck.flatMap(x=>x.editorialLenses||[]));
 console.assert(lenses.has("USEFUL"),"Story deck should preserve a useful-current lane when available");
@@ -21,6 +23,9 @@ const topThree=buildStoryDeck(rows,{now,limit:3});
 console.assert(topThree.some(x=>x.editorialLenses.includes("USEFUL")),"Top three should include Useful Earth when current evidence exists");
 console.assert(topThree.some(x=>x.editorialLenses.includes("INTERESTING")),"Top three should include Interesting Earth when current evidence exists");
 console.assert(topThree.some(x=>x.editorialLenses.includes("BEAUTIFUL")),"Top three should include Beautiful Earth when current evidence exists");
+const diverseFive=buildStoryDeck(rows,{now,limit:5});
+console.assert(new Set(diverseFive.map(x=>x.country).filter(Boolean)).size===5,"Story fill should prefer geographic diversity when five countries are available");
+console.assert(diverseFive.filter(x=>x.country==="Japan").length===1,"Story fill should avoid repeating a country until distinct countries are used when possible");
 
 const freshEmbed={...base,id:"embed-fresh",placeId:"embed-fresh",place:"Fresh Embed",title:"Fresh Embed",playback:"EMBED",permission:"EMBED_ALLOWED",truth:"LIVE_VIDEO",embedUrl:"https://www.youtube-nocookie.com/embed/abc12345",sourceUrl:"https://example.com/embed-fresh",playbackVerifiedAt:"2026-09-28T07:55:00Z"};
 const staleEmbed={...freshEmbed,id:"embed-stale",placeId:"embed-stale",place:"Stale Embed",title:"Stale Embed",sourceUrl:"https://example.com/embed-stale",playbackVerifiedAt:"2026-09-27T06:00:00Z"};
