@@ -6,4 +6,6 @@ assert.ok(app.includes("target&&guideEligible(target)"),"shared #view links must
 assert.ok(app.includes("That shared window is no longer current"),"expired shared view needs visible fallback copy");
 assert.ok(app.includes("currentTruthClaim(s)?location.origin+location.pathname+viewHash(s.id):placePageUrl(s)"),"non-current viewer shares must use canonical place page");
 assert.ok(app.includes("filter(s=>(s.placeId||s.id)===placeId&&guideEligible(s))"),"#place opening must prefer current truth only");
+assert.ok(app.includes("function resolvePlaceLink(placeId)"),"place deep-link fallback resolver missing");
+assert.ok(app.includes("That place has no current ERN window right now"),"unavailable #place links need visible current-alternative copy");
 console.log("ERN shared view/place deep links fail closed when currentness expires");
