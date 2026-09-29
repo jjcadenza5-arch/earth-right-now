@@ -265,3 +265,25 @@ Only interrupt the operator for:
   - checked-in sitemap was aligned with `/places/`, Stories and Press.
 - `src/app-lite.js` remains below the fixed 100 KB cap after the Guide hardening (about 91.6 KB in the repository fetch used for this checkpoint).
 - Previous independently known green Pages run remains `36523426778`. The connected GitHub action interface available in this chat still does not expose push-triggered Pages-run enumeration, so do not claim a newer green run number without separate verification.
+
+
+## Continuation checkpoint — public-AI gating + context/currentness consistency
+- Catalog checkpoint remains **94 total / 91 current checks / 90 current+healthy / 17 current healthy embeds / 3 stale / 0 expired** at the end of this batch.
+- Generative ERN Guide infrastructure and public activation are now explicitly separated:
+  - production Worker/deployment evidence may exist;
+  - `GUIDE_AI_CAPABILITIES` remains the public activation authority;
+  - `src/guide-ai-client.js` now fails closed and makes no generative request while explicit public capabilities are OFF;
+  - `scripts/guide-ai-status.mjs` now reports using explicit public capabilities instead of inferring activation from deployment readiness.
+- Whole-product preflight now guards the public-AI fail-closed boundary.
+- Current release smoke now includes Guide AI routing and deployment-readiness safety tests in addition to ERN Stories.
+- Seoul real-time context adapter was hardened while remaining PUBLIC-OFF:
+  - caller/client timestamps can no longer substitute for a missing provider timestamp;
+  - material future timestamps are rejected with a bounded clock-skew rule;
+  - manifest/status checks now require provider-supplied timestamps and explicitly forbid client-created freshness.
+- No Seoul API key was requested and no public Seoul context was activated; real-response validation and approved place mapping still require the existing human/API gate.
+- Current-discovery consistency audit:
+  - ERN Guide, Now strip, Local Earth/current discovery, beyond-map current cards, Nearby, More Like This, recommendations and the active Hero action now require both recent verification and `currentTruthClaim`;
+  - this means schedule-closed or playback-stale sources cannot leak into surfaces that promise a current/now experience;
+  - Living Atlas intentionally retains its broader recheck/degraded pins with explicit recheck labeling.
+- `src/app-lite.js` remains safely below the 100 KB budget at about **91.5 KB** after these changes.
+- Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until a push-triggered run is independently verified.
