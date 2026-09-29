@@ -23,7 +23,7 @@ export async function createNowMomentPhoto(input={},context={}){
   if(!dimensions.ok)return{ok:false,stage:"VALIDATION",reason:dimensions.reason};
   if(Number(input.width)!==dimensions.width||Number(input.height)!==dimensions.height)return{ok:false,stage:"VALIDATION",reason:"IMAGE_DIMENSIONS_MISMATCH",actual:{width:dimensions.width,height:dimensions.height}};
   const now=context.now instanceof Date?context.now:new Date();
-  const record=nowMomentPhotoServerRecord({...input,metadataStripped:true},{id:context.id,objectKey:context.objectKey,now,knownPlaceIds:context.knownPlaceIds});
+  const record=nowMomentPhotoServerRecord({...input,metadataStripped:true},{id:context.id,objectKey:context.objectKey,now,knownPlaceIds:context.knownPlaceIds,canonicalPlaceLabels:context.canonicalPlaceLabels});
   if(!record.ok)return{ok:false,stage:"VALIDATION",...record};
   const committed=await context.rateLimiter.commit({subject:context.rateSubject,placeId:record.record.placeId,action:"PHOTO",now});
   if(!committed?.allowed)return{ok:false,stage:"RATE_LIMIT",reason:committed?.reason||"RATE_LIMIT"};
