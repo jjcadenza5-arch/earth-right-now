@@ -6,6 +6,10 @@ export function currentLocalDirectoryEntry(raw,{now=new Date(),maxAgeDays=90,fut
   const n=now instanceof Date?now.getTime():Number(now),verifiedMs=validTime(raw?.verifiedAt);
   if(!raw||raw.status!=="APPROVED"||raw.paidPlacement!==false||raw.affiliate!==false)return false;
   if(!clean(raw.id)||!clean(raw.name)||!clean(raw.type)||!clean(raw.place)||!clean(raw.country)||!clean(raw.summary)||!HTTPS.test(clean(raw.url)))return false;
+  if(clean(raw.address)&&(!clean(raw.addressBasis)||!HTTPS.test(clean(raw.addressSourceUrl))))return false;
+  const hasLat=raw.lat!==undefined&&raw.lat!==null&&raw.lat!=="",hasLon=raw.lon!==undefined&&raw.lon!==null&&raw.lon!=="";
+  if(hasLat!==hasLon)return false;
+  if(hasLat&&(!Number.isFinite(Number(raw.lat))||!Number.isFinite(Number(raw.lon))||!clean(raw.coordinateBasis)||!HTTPS.test(clean(raw.coordinateSourceUrl))))return false;
   if(verifiedMs===null||!Number.isFinite(n))return false;
   if(verifiedMs>n+Math.max(0,Number(futureSkewMinutes)||0)*60000)return false;
   const ageDays=Math.max(0,(n-verifiedMs)/DAY);
@@ -26,6 +30,12 @@ export function localDirectoryStatus(rows=[],{knownPlaceIds=[],targetApproved=10
     if(!clean(raw?.country))reasons.push("MISSING_COUNTRY");
     if(!clean(raw?.summary))reasons.push("MISSING_SUMMARY");
     if(!HTTPS.test(url))reasons.push("INVALID_PUBLIC_URL");
+    const address=clean(raw?.address),addressBasis=clean(raw?.addressBasis),addressSourceUrl=clean(raw?.addressSourceUrl);
+    if(address&&(!addressBasis||!HTTPS.test(addressSourceUrl)))reasons.push("ADDRESS_PROVENANCE_INCOMPLETE");
+    const hasLat=raw?.lat!==undefined&&raw?.lat!==null&&raw?.lat!=="",hasLon=raw?.lon!==undefined&&raw?.lon!==null&&raw?.lon!=="";
+    if(hasLat!==hasLon)reasons.push("COORDINATE_PAIR_INCOMPLETE");
+    if(hasLat&&hasLon&&(!Number.isFinite(Number(raw.lat))||!Number.isFinite(Number(raw.lon))))reasons.push("INVALID_COORDINATES");
+    if(hasLat&&hasLon&&(!clean(raw?.coordinateBasis)||!HTTPS.test(clean(raw?.coordinateSourceUrl))))reasons.push("COORDINATE_PROVENANCE_INCOMPLETE");
     if(url&&seenUrls.has(url))reasons.push("DUPLICATE_URL"); else if(url)seenUrls.add(url);
     const verifiedMs=validTime(raw?.verifiedAt);
     let ageDays=null;
@@ -43,7 +53,7 @@ export function localDirectoryStatus(rows=[],{knownPlaceIds=[],targetApproved=10
     if(placeId&&known.size&&!known.has(placeId))reasons.push("UNKNOWN_PLACE_ID");
     items.push({
       id:id||null,name:clean(raw?.name)||null,type:clean(raw?.type)||null,place:clean(raw?.place)||null,country:clean(raw?.country)||null,
-      placeId:placeId||null,url:url||null,verifiedAt:verifiedMs===null?null:new Date(verifiedMs).toISOString(),ageDays,
+      placeId:placeId||null,url:url||null,address:address||null,addressBasis:addressBasis||null,addressSourceUrl:addressSourceUrl||null,verifiedAt:verifiedMs===null?null:new Date(verifiedMs).toISOString(),ageDays,
       status:raw?.status||null,paidPlacement:raw?.paidPlacement,affiliate:raw?.affiliate,
       valid:reasons.length===0,reasons
     });
