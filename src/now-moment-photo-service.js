@@ -1,6 +1,6 @@
 import {nowMomentPhotoActivation} from "./now-moment-photo-capabilities.js";
 import {nowMomentPhotoServerRecord,nowMomentPhotoPublic} from "./now-moment-photo-record.js";
-import {nowMomentMetadataScan} from "./now-moment-photo-metadata.js";
+import {nowMomentMetadataScan,nowMomentImageDimensions} from "./now-moment-photo-metadata.js";
 import {assertNowMomentPhotoMetadataStore,assertNowMomentPhotoObjectStore} from "./now-moment-photo-storage-contract.js";
 
 function requireReady(capabilities){
@@ -19,6 +19,9 @@ export async function createNowMomentPhoto(input={},context={}){
   if(Number(input.storedBytes)!==bytes.byteLength)return{ok:false,stage:"VALIDATION",reason:"STORED_SIZE_MISMATCH"};
   const scan=nowMomentMetadataScan(bytes,input.mimeType);
   if(!scan.ok)return{ok:false,stage:"METADATA",reason:scan.issues[0],issues:scan.issues};
+  const dimensions=nowMomentImageDimensions(bytes,input.mimeType);
+  if(!dimensions.ok)return{ok:false,stage:"VALIDATION",reason:dimensions.reason};
+  if(Number(input.width)!==dimensions.width||Number(input.height)!==dimensions.height)return{ok:false,stage:"VALIDATION",reason:"IMAGE_DIMENSIONS_MISMATCH",actual:{width:dimensions.width,height:dimensions.height}};
   const now=context.now instanceof Date?context.now:new Date();
   const record=nowMomentPhotoServerRecord({...input,metadataStripped:true},{id:context.id,objectKey:context.objectKey,now,knownPlaceIds:context.knownPlaceIds});
   if(!record.ok)return{ok:false,stage:"VALIDATION",...record};
