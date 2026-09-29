@@ -34,17 +34,8 @@
 <p><a class="button" href="./" target="_blank" rel="noopener">Open ERN for this check</a></p>
 </section>
 <section class="card">
-<h2>Phase 2 · First controlled AI test</h2>
-<p class="muted">Operator-only. Sends exactly one grounded Guide request to the production Worker using a few healthy ERN catalog sources. No API key or secret is present in this page.</p>
-<p><button id="runGuideAiTest" type="button">Run one AI test</button></p>
-<div class="commands" id="guideAiTestResult">Not run yet. Expected cost is tiny and the Worker monthly ceiling remains $10.</div>
-</section>
-<section class="card">
-<h2>Phase 3 · Viator taxonomy test</h2>
-<p class="muted">Operator-only. Calls the production ERN Travel API from the approved ERN origin, then shows only Viator taxonomy entries matching Auckland. No Viator API key is present in this page.</p>
-<p><button id="runViatorTaxonomyTest" type="button">Find official Auckland destination</button> <button id="runViatorDiagnostic" class="secondary" type="button">Diagnose Viator access</button></p>
-<div class="commands" id="viatorTaxonomyTestResult">Not run yet. Public activation remains off until the official mapping and product-search checks pass.</div>
-<div class="commands" id="viatorDiagnosticResult" style="margin-top:10px">Diagnostic not run.</div>
+<h2>External API tests</h2>
+<p class="muted">Production Guide AI, travel-provider and other quota-bearing API tests are intentionally disabled in this static public artifact. Run those only through a secured operator workflow. Public feature activation remains separate from deployment readiness.</p>
 </section>
 <section class="card"><h2>Six operational release gates</h2><div id="gates"></div></section>
 <section class="card"><h2>Provider playback representatives</h2><p class="muted">These are the minimum inside-ERN representative windows that still need visible-media confirmation. Every degraded representative remains mandatory.</p><div id="providers">Loading…</div></section>
