@@ -46,6 +46,7 @@ for(const x of opportunities.opportunities||[]){
 if(!destinationBuilder.includes("currentTravelOffer")||!destinationBuilder.includes("activeAffiliatePartner"))fail.push("destination pages may surface affiliate links without current offer/partner gates");
 if(!destinationBuilder.includes('rel="sponsored noopener noreferrer"'))fail.push("destination page affiliate links must carry sponsored rel");
 if(!destinationBuilder.includes("Affiliate availability never affects ERN source ranking"))fail.push("destination page affiliate ranking-independence disclosure missing");
+if(!destinationBuilder.includes("const offers=currentItems.length?offerForPlace(id):[]"))fail.push("stale-only destination pages may become commercial surfaces");
 if(!destinationBuilder.includes("These entries are not paid placements"))fail.push("destination page local-place non-paid disclosure missing");
 
 if(/emrldtp\.com\/|Travelpayouts Drive/i.test(index))fail.push("Travelpayouts Drive bootstrap returned to public homepage");
