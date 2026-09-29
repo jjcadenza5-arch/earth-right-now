@@ -1,3 +1,9 @@
+## 2026-09-29 — Concentrate recency debt and stage independent Rovaniemi player
+- Refreshed Statue HarborCam and Reykjavík current images.
+- Reached 72 current+healthy / 4 stale / 16 expired.
+- Added provider-concentration reporting for recency debt; all expired records currently belong to CouchTourist.
+- Staged the exact official Santa Claus Village / City of Rovaniemi YouTube live player for research-only deployed review.
+
 ## 2026-09-29 — Reach 70 current sources and make recency debt visible
 - Revalidated five additional live/external sources plus Kaikōura current images.
 - Degraded off-season Chidori rather than treating April festival state as current in September; updated Tokyo opportunity status accordingly.
