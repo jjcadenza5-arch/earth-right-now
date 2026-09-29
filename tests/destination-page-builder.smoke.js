@@ -10,4 +10,7 @@ assert.match(builder,/currentTravelOffer/,"affiliate offers must pass current ve
 assert.match(builder,/activeAffiliatePartner/,"affiliate offers must require an active partner");
 assert.match(builder,/Affiliate availability never affects ERN source ranking/,"affiliate ranking independence must be disclosed");
 assert.match(builder,/These entries are not paid placements/,"reviewed local entries must remain explicitly non-paid");
+assert.match(builder,/const indexable=currentItems\.length>0\|\|scheduledClosedItems\.length>0/,"stale-only destination pages must be noindex");
+assert.match(builder,/indexable\?"index,follow":"noindex,follow"/,"destination robots state must follow current/scheduled evidence");
+assert.match(builder,/if\(indexable\)urls\.push/,"noindex destination pages must stay out of the sitemap");
 console.log("Destination pages preserve schedule, playback, local-place and commercial truth boundaries");
