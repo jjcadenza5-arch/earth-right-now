@@ -17,6 +17,9 @@ if(data.invariants?.providerConcentrationMayRaiseResearchPriority!==true) fail.p
 if(data.invariants?.providerConcentrationMayAffectWatchEarthRanking!==false) fail.push("provider concentration may affect Watch Earth ranking");
 if(data.invariants?.providerConcentrationMayOverrideTruth!==false) fail.push("provider concentration may override truth");
 if(data.invariants?.providerConcentrationMayOverrideQuality!==false) fail.push("provider concentration may override quality");
+const activeCouchTourist=sources.filter(x=>/couchtourist/i.test(String(x.provider||"")+" "+String(x.sourceUrl||"")+" "+String(x.officialUrl||""))).length;
+const declaredCouchTourist=Number(data.operationalResearchModifiers?.providerDiversification?.currentActiveCouchTouristSources);
+if(!Number.isFinite(declaredCouchTourist)||declaredCouchTourist!==activeCouchTourist)fail.push("declared active CouchTourist dependency count does not match catalog");
 if(!Array.isArray(data.placeUniverse)||data.placeUniverse.length<8) fail.push("place universe is unexpectedly narrow");
 const stale=data.currentStaleDebt;
 const staleItems=Array.isArray(stale?.items)?stale.items:[];
@@ -34,5 +37,5 @@ for(const item of staleItems){
   if(state==="UNKNOWN")fail.push("declared stale debt entry has unknown recency: "+item.id);
 }
 const routineRecencyQueue=sources.filter(x=>recencyState(x,{now})==="STALE_CHECK"&&!staleItems.some(item=>item.id===x.id)).map(x=>x.id).sort();
-console.log(JSON.stringify({ok:fail.length===0,totalWeight:total,commercialWeight:w.practicalCommercialFit,placeUniverseCount:data.placeUniverse?.length||0,persistentStaleDebt:staleItems.map(x=>x.id),routineRecencyQueue,fail},null,2));
+console.log(JSON.stringify({ok:fail.length===0,totalWeight:total,commercialWeight:w.practicalCommercialFit,placeUniverseCount:data.placeUniverse?.length||0,activeCouchTourist,persistentStaleDebt:staleItems.map(x=>x.id),routineRecencyQueue,fail},null,2));
 if(fail.length) process.exit(1);
