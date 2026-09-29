@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,businessControl,externalGates}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -191,6 +191,12 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     else if(guideAi.deployment?.costDecisionRequired)lines.push("- Model spending remains disabled: an explicit monthly ceiling, usage metering and a hard stop must be configured before generative activation.");
     if(guideAi.mode==="DETERMINISTIC_ONLY"&&guideAi.deterministicFallback&&guideAi.deployment?.missing?.length)lines.push("- Local generative-Guide groundwork is complete enough for the current phase. Remaining blockers require an explicit provider/backend/cost decision; hold local activation work until that phase is deliberately opened.");
     lines.push("- Client prompts and IDs never become trusted place/source facts; the server must rehydrate ERN catalog truth before generation.", "");
+  }
+  if(nowMomentMedia){
+    lines.push("## Now Moment media readiness");
+    lines.push(`- State: ${nowMomentMedia.state||"UNKNOWN"}; prepared ${nowMomentMedia.prepared===true?"yes":"no"}; deployed ${nowMomentMedia.deployed===true?"yes":"no"}; public activation ${nowMomentMedia.publicActivationAllowed===true?"ON":"OFF"}.`);
+    lines.push(`- Policy: still photos only; TTL ${nowMomentMedia.policy?.ttlMinutes??45} minutes; video ${nowMomentMedia.policy?.videoEnabled===true?"ON":"OFF"}; automatic publication ${nowMomentMedia.policy?.automaticPublicationAllowed===true?"ON":"OFF"}.`);
+    lines.push("- Media remains temporary visitor evidence and never upgrades camera/source truth.","");
   }
   if(participationInfrastructure){
     lines.push("## Phase J participation infrastructure");
