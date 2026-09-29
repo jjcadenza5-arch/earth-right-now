@@ -1,0 +1,11 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
+const start=app.indexOf("function guideResponse("),end=app.indexOf("function renderGuideResult",start);
+const body=app.slice(start,end);
+assert.match(body,/let pool=placeMatches\.length\?\[\.\.\.placeMatches\]:state\.sources\.filter\(guideEligible\)/,"place+intent queries must constrain ranking to matched geography");
+assert.match(body,/offers:intent\.planning&&items\.length\?TP\.guideOffers\(state\.travelOffers,items\[0\]\):\[\]/,"planning links must derive after constrained intent ranking");
+const matchStart=app.indexOf("function guidePlaceMatches"),matchEnd=app.indexOf("function guideResponse",matchStart);
+const matchBody=app.slice(matchStart,matchEnd);
+for(const token of ["morning","evening","daylight"])assert.ok(matchBody.includes('"'+token+'"'),token+" should be treated as intent/time language, not a place token");
+console.log("Deterministic Guide keeps place+intent queries geographically constrained");
