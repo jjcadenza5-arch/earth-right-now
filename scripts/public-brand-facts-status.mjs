@@ -1,0 +1,18 @@
+import fs from "node:fs";
+const facts=JSON.parse(fs.readFileSync("data/public-brand-facts.json","utf8"));
+const dist=JSON.parse(fs.readFileSync("data/distribution-channels.json","utf8"));
+const index=fs.readFileSync("index.html","utf8");
+const press=fs.readFileSync("press.html","utf8");
+const fail=[];
+if(facts.name!=="Earth Right Now"||facts.shortName!=="ERN")fail.push("public brand name mismatch");
+if(facts.slogan!=="See before you go.")fail.push("public slogan mismatch");
+if(facts.canonicalUrl!=="https://earthrightnow.app/")fail.push("canonical public brand URL mismatch");
+if(!index.includes('"name":"Earth Right Now"')||!index.includes('"alternateName":"ERN"'))fail.push("homepage structured brand identity mismatch");
+if(!press.includes("See before you go."))fail.push("Press page slogan mismatch");
+if(!press.includes("Use earthrightnow.app as the canonical public identity."))fail.push("Press canonical identity guidance missing");
+if(!Array.isArray(facts.socialAccountClaims)||facts.socialAccountClaims.length!==0)fail.push("public brand facts must not claim social accounts before connection");
+if((dist.channels||[]).some(x=>x.state==="CONNECTED")&&facts.socialAccountClaims.length===0)fail.push("connected distribution channel exists without public brand account claim review");
+if((dist.channels||[]).every(x=>x.state!=="CONNECTED")&&facts.socialAccountClaims.length!==0)fail.push("social account claims exist while no channel is connected");
+if(facts.commercialRankingAffected!==false||dist.safety?.commercialRankingAffected!==false)fail.push("commercial ranking independence mismatch");
+console.log(JSON.stringify({ok:fail.length===0,name:facts.name,slogan:facts.slogan,canonicalUrl:facts.canonicalUrl,connectedChannels:(dist.channels||[]).filter(x=>x.state==="CONNECTED").map(x=>x.id),socialAccountClaims:facts.socialAccountClaims,fail},null,2));
+if(fail.length)process.exit(1);
