@@ -156,7 +156,7 @@ export default{
       const record=await metadataStore.get(decodeURIComponent(media[1]));
       if(!record||record.moderation!=="APPROVED"||record.reported===true||Date.parse(record.storageExpiryAt)<=Date.now())return reply(404,{ok:false,reason:"NOT_FOUND"},origin);
       const object=await objectStore.get(record.objectKey);if(!object)return reply(404,{ok:false,reason:"NOT_FOUND"},origin);
-      return new Response(object.body,{status:200,headers:{"content-type":record.mimeType,"cache-control":"private, max-age=60","x-content-type-options":"nosniff"}});
+      return new Response(object.body,{status:200,headers:{"content-type":record.mimeType,"cache-control":"private, no-store","x-content-type-options":"nosniff","content-security-policy":"default-src 'none'; img-src 'self'; style-src 'none'; sandbox"}});
     }
 
     const report=url.pathname.match(/^\/api\/now-moments\/photos\/([^/]+)\/report$/);
