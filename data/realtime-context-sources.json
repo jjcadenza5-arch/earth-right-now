@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T08:05:00Z",
+  "generatedAt": "2026-09-29T08:12:00Z",
   "publicActivationAllowed": false,
   "principle": "Real-time context may explain what a place is like now, but must remain separate from visual source truth and may never manufacture a LIVE label.",
   "sources": [
@@ -12,7 +12,7 @@
       "tourismSurface": "Seoul Tourism Organization / Visit Seoul",
       "officialTourismUrl": "https://english.visitseoul.net/realtime-seoul",
       "openDataUrl": "https://data.seoul.go.kr/dataList/OA-22270/A/1/datasetView.do",
-      "state": "API_CONTRACT_VERIFIED_KEY_REQUIRED_FAIL_CLOSED_ADAPTER_READY_NOT_PUBLIC",
+      "state": "NON_CREDENTIAL_ARCHITECTURE_COMPLETE_KEY_AND_REAL_RESPONSE_VALIDATION_REQUIRED_PUBLIC_OFF",
       "freshness": "REAL_TIME",
       "dataTypes": [
         "crowd_density",
@@ -151,6 +151,28 @@
         "individualIdentificationAllowed": false,
         "cctvMediaIngested": false,
         "providerAggregateContextOnly": true
+      },
+      "readiness": {
+        "nonCredentialArchitectureComplete": true,
+        "publicActivationReady": false,
+        "completed": [
+          "API_ENDPOINT_AND_SCHEMA_VERIFIED",
+          "ATTRIBUTION_COPY_IMPLEMENTED",
+          "CACHE_AND_STALENESS_RULES_DEFINED",
+          "FAILURE_BEHAVIOR_DEFINED",
+          "FAIL_CLOSED_PLACE_MAPPING_REGISTRY_DEFINED",
+          "PROVIDER_TIMESTAMP_FRESHNESS_RULES_DEFINED",
+          "PRIVACY_AND_DATA_MINIMIZATION_POLICY_DEFINED",
+          "PUBLIC_ARTIFACT_EXCLUSION_GUARDED"
+        ],
+        "pendingHumanOrProvider": [
+          "SEOUL_OPEN_API_KEY",
+          "REAL_CITYDATA_RESPONSE_VALIDATION",
+          "PROVIDER_AREA_IDENTITY_CODE_CONFIRMATION",
+          "PROVIDER_RATE_LIMIT_CONFIRMATION",
+          "EXPLICIT_PLACE_MAPPING_APPROVAL",
+          "EXPLICIT_PUBLIC_ACTIVATION_DECISION"
+        ]
       }
     },
     {
