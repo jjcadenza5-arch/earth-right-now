@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T04:54:00Z",
+  "generatedAt": "2026-09-29T05:12:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -506,6 +506,94 @@
       "state": "OFFICIAL_LIVE_CAMERA_PLATFORM_CONFIRMED_PUBLIC_SITE_DEEP_LINKS_UNRESOLVED",
       "why": "Tokyo Metropolitan Government states that Tokyo Port DX publicly exposes live cameras showing roads and floodgates. This provides a legitimate year-round current-visual lane, but exact visitor-facing viewpoints and usefulness must be resolved before ERN promotion.",
       "next": "The official Tokyo Minato DX public site is now independently confirmed by Tokyo Metropolitan Government / TOKYO Resilience as a public PC/mobile service with live road and sluice-gate cameras. Resolve exact public camera deep links and assess visitor usefulness before any ERN promotion."
+    },
+    {
+      "id": "cold-lake-official-live-replacement",
+      "destination": "Cold Lake Marina, Alberta, Canada",
+      "provider": "City of Cold Lake",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "OFFICIAL_MUNICIPAL_LIVE_CAMERA_REPLACEMENT",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "evidenceUrls": [
+        "https://www.coldlake.com/play/live-webcams/"
+      ],
+      "state": "RESOLVED_PROMOTED_OFFICIAL_LINK_ONLY",
+      "why": "Replaces a degraded CouchTourist embed with the City of Cold Lake's own visitor-facing live webcam surface, explicitly described as streaming 24/7 year-round.",
+      "next": "Maintain the municipal page as ERN's source-of-truth handoff. Keep LINK_ONLY unless a source-specific embed path is separately approved and reviewed.",
+      "replacesExpiredSourceId": "cold-lake-marina",
+      "resolvedTarget": {
+        "catalogId": "cold-lake-marina",
+        "mode": "EXTERNAL_LIVE",
+        "officialPage": "https://www.coldlake.com/play/live-webcams/",
+        "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
+      }
+    },
+    {
+      "id": "metung-hotel-official-live-replacement",
+      "destination": "Metung, Gippsland Lakes, Victoria, Australia",
+      "provider": "Metung Hotel",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "OFFICIAL_PROPERTY_LIVE_STREAM_REPLACEMENT",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "evidenceUrls": [
+        "https://www.metunghotel.com.au/"
+      ],
+      "state": "RESOLVED_PROMOTED_OFFICIAL_LINK_ONLY",
+      "why": "Replaces a degraded CouchTourist embed with Metung Hotel's own current waterfront LIVE STREAM surface.",
+      "next": "Maintain the official hotel page as ERN's source-of-truth handoff. Keep LINK_ONLY unless source-specific embed permission and deployed playback are separately reviewed.",
+      "replacesExpiredSourceId": "metung-gippsland-lakes",
+      "resolvedTarget": {
+        "catalogId": "metung-gippsland-lakes",
+        "mode": "EXTERNAL_LIVE",
+        "officialPage": "https://www.metunghotel.com.au/",
+        "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
+      }
+    },
+    {
+      "id": "hale-pau-hana-official-live-replacement",
+      "destination": "Hale Pau Hana, Kihei, Maui, Hawaii",
+      "provider": "The Hale Pau Hana",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "OFFICIAL_PROPERTY_LIVE_STREAM_REPLACEMENT",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "evidenceUrls": [
+        "https://www.thehalepauhana.com/live-at-the-hale-pau-hana"
+      ],
+      "state": "RESOLVED_PROMOTED_OFFICIAL_LINK_ONLY",
+      "why": "Replaces a degraded CouchTourist embed with Hale Pau Hana's own real-time beach live-stream page.",
+      "next": "Maintain the official property page as ERN's source-of-truth handoff. Keep LINK_ONLY unless source-specific embed permission and deployed playback are separately reviewed.",
+      "replacesExpiredSourceId": "maui-hale-pau-hana",
+      "resolvedTarget": {
+        "catalogId": "maui-hale-pau-hana",
+        "mode": "EXTERNAL_LIVE",
+        "officialPage": "https://www.thehalepauhana.com/live-at-the-hale-pau-hana",
+        "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
+      }
+    },
+    {
+      "id": "waikiki-aquarium-south-shore-replacement",
+      "destination": "Waikīkī South Shore, Honolulu, Hawaii",
+      "provider": "Waikīkī Aquarium",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "OFFICIAL_AQUARIUM_LIVE_WEBCAM_REPLACEMENT",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "evidenceUrls": [
+        "https://www.waikikiaquarium.org/webcams/"
+      ],
+      "state": "RESOLVED_PROMOTED_OFFICIAL_LINK_ONLY",
+      "why": "Replaces a degraded CouchTourist South Shore embed with the Waikīkī Aquarium's own live-webcam page, which explicitly includes a south-shore Waikīkī view.",
+      "next": "Maintain the Aquarium page as ERN's source-of-truth handoff. Keep LINK_ONLY unless source-specific embed permission and deployed playback are separately reviewed.",
+      "replacesExpiredSourceId": "waikiki-south-shore",
+      "resolvedTarget": {
+        "catalogId": "waikiki-south-shore",
+        "mode": "EXTERNAL_LIVE",
+        "officialPage": "https://www.waikikiaquarium.org/webcams/",
+        "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
+      }
     }
   ],
   "guardrails": {
