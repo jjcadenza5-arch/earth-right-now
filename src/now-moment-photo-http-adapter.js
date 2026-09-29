@@ -22,8 +22,7 @@ export async function nowMomentPhotoHttpRequest(request={},context={}){
       storedBytes:Number(header(request,"x-ern-photo-stored-bytes")),
       width:Number(header(request,"x-ern-photo-width")),
       height:Number(header(request,"x-ern-photo-height")),
-      placeId:header(request,"x-ern-place-id"),
-      placeLabel:header(request,"x-ern-place-label")
+      placeId:header(request,"x-ern-place-id")
     };
     try{
       const result=await createNowMomentPhoto(input,context);
