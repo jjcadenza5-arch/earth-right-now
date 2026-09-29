@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T06:22:00Z",
+  "generatedAt": "2026-09-29T07:20:00Z",
   "mission": "See before you go",
   "productTest": "Would this current view help someone understand the place better before deciding whether, when, or how to go?",
   "hardGates": [
@@ -70,5 +70,29 @@
       "mayOverrideQuality": false,
       "currentSignal": "Expired recency debt is now zero after moving the remaining Cancún and St. John's records to direct current source paths. The catalog remains 94 sources with 4 CouchTourist records still present, all non-degraded at this checkpoint. Continue diversification opportunistically when a stronger official/direct source exists; do not replace a healthy source merely to force provider counts lower."
     }
+  },
+  "currentStaleDebt": {
+    "total": 3,
+    "principle": "Stale debt is heterogeneous. Do not treat seasonal closure, playback-proof debt and editorial currentness debt as the same maintenance problem.",
+    "items": [
+      {
+        "id": "pattaya-city-live",
+        "class": "PLAYBACK_EVIDENCE_DEBT",
+        "priority": "HIGH",
+        "action": "Independently verify real public playback for one or more individual Pattaya City cameras before any health/currentness promotion. Portal reachability and camera inventory alone do not prove playback."
+      },
+      {
+        "id": "chidori-sakura",
+        "class": "SEASONAL_OFF_SEASON",
+        "priority": "LOW_UNTIL_SEASON_OR_MATERIAL_CHANGE",
+        "action": "Keep off current-discovery surfaces. Recheck when Sakura-season content materially changes or the official provider publishes a year-round current visual path."
+      },
+      {
+        "id": "tbilisi-mtkvari-river",
+        "class": "EDITORIAL_CURRENTNESS_DEBT",
+        "priority": "ROUTINE",
+        "action": "Reconfirm explicit provider evidence that the exact Mtkvari/Narikala view is live/current before refreshing lastSuccessfulCheck. Page reachability alone is insufficient."
+      }
+    ]
   }
 }
