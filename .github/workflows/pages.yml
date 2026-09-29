@@ -8,6 +8,17 @@ on:
       - "index.html"
       - "src/app-lite.js"
       - "src/guide-public-copy.js"
+      - "src/guide-ai-client.js"
+      - "src/guide-ai-routing.js"
+      - "src/guide-ai-capabilities.js"
+      - "src/guide-ai-activation.js"
+      - "src/current-window-label.js"
+      - "src/playback-capability.js"
+      - "src/now-evidence.js"
+      - "src/local-directory-status.js"
+      - "src/travel-offer-verification.js"
+      - "src/affiliate-partners.js"
+      - "scripts/local-directory-status.mjs"
       - "src/styles-lite.css"
       - "data/sources.json"
       - "data/source-research-priorities.json"
@@ -139,6 +150,8 @@ jobs:
         run: node scripts/featured-curation-preflight.mjs
       - name: Catalog metadata completeness
         run: node scripts/catalog-metadata-status.mjs
+      - name: Local Earth directory integrity
+        run: npm --silent run local:directory-status
       - name: Source recency maintenance summary
         run: node scripts/source-recency-summary.mjs
       - name: Source research priority integrity
