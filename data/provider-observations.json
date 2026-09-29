@@ -96,5 +96,75 @@
     "confirmation": "HUMAN_PLAYBACK",
     "observedAt": "2026-09-28T09:46:11.870Z",
     "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 84f64e750d320582 supplied by operator, exact source/embed target matched current catalog data, and the provider/source page was independently reachable."
+  },
+  {
+    "id": "auckland-viaduct-harbour",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:56:26.462Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch bd51ac5733059f3f supplied by operator and exact source/embed target matched current catalog data."
+  },
+  {
+    "id": "bergen-ulriken",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:56:33.396Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch bd51ac5733059f3f supplied by operator and exact source/embed target matched current catalog data."
+  },
+  {
+    "id": "cijin-beach-kaohsiung",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:56:50.112Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch bd51ac5733059f3f supplied by operator and exact source/embed target matched current catalog data."
+  },
+  {
+    "id": "la-palma-aridane-valley",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:57:56.164Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch bd51ac5733059f3f supplied by operator and exact source/embed target matched current catalog data."
+  },
+  {
+    "id": "la-palma-caldera-taburiente",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:57:46.146Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch bd51ac5733059f3f supplied by operator and exact source/embed target matched current catalog data."
+  },
+  {
+    "id": "ponte-di-legno-adamello",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:56:42.862Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch bd51ac5733059f3f supplied by operator and exact source/embed target matched current catalog data."
+  },
+  {
+    "id": "skeikampen-ski",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:56:59.447Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch bd51ac5733059f3f supplied by operator and exact source/embed target matched current catalog data."
+  },
+  {
+    "id": "takayama-miyagawa-stream",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:58:05.013Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch bd51ac5733059f3f supplied by operator and exact source/embed target matched current catalog data."
+  },
+  {
+    "id": "verbier",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:57:51.864Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch bd51ac5733059f3f supplied by operator and exact source/embed target matched current catalog data."
+  },
+  {
+    "id": "volcan-tajogaite",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:58:02.195Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch bd51ac5733059f3f supplied by operator and exact source/embed target matched current catalog data."
   }
 ]
