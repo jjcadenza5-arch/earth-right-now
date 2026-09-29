@@ -15,6 +15,7 @@ assert.equal(created.ok,true);
 assert.equal(created.stage,"READY_TO_PERSIST");
 assert.equal(created.record.createdAt,"2026-09-25T04:30:00.000Z");
 assert.equal(created.public.placeId,"chiang-mai");
+assert.ok(!("nearPlaceVerified" in created.public));
 assert.equal(created.retention.expiryAt,"2026-09-25T05:15:00.000Z");
 
 const badPlace=earthSignalCreateTransaction(
