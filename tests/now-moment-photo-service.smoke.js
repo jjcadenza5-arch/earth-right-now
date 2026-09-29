@@ -22,7 +22,17 @@ const stores2=memoryNowMomentPhotoStores();
 const ctx2={...ctx,metadataStore:stores2.metadata,objectStore:stores2.objects,id:"p2",objectKey:"p2.jpg"};
 await createNowMomentPhoto(base,ctx2);
 const cleaned=await cleanupNowMomentPhotos({...ctx2,now:new Date("2026-09-28T09:00:00Z")});
-assert.equal(cleaned.deleted,1);assert.equal(stores2.debug.objects.size,0);
+assert.equal(cleaned.deleted,1);assert.equal(stores2.debug.objects.size,0);assert.equal(stores2.debug.metadata.size,0);
+
+const stores3=memoryNowMomentPhotoStores();
+const ctx3={...ctx,metadataStore:stores3.metadata,objectStore:stores3.objects,id:"p3",objectKey:"p3.jpg"};
+await createNowMomentPhoto(base,ctx3);
+let firstDelete=true;
+const flakyObjects={...stores3.objects,async delete(key){if(firstDelete){firstDelete=false;throw new Error("R2_TEMPORARY_FAILURE")}return stores3.objects.delete(key)}};
+const failedCleanup=await cleanupNowMomentPhotos({...ctx3,objectStore:flakyObjects,now:new Date("2026-09-28T09:00:00Z")});
+assert.equal(failedCleanup.ok,false);assert.equal(failedCleanup.deleted,0);assert.equal(stores3.debug.metadata.has("p3"),true,"metadata must remain so cleanup can retry");assert.equal(stores3.debug.objects.has("p3.jpg"),true);
+const retryCleanup=await cleanupNowMomentPhotos({...ctx3,now:new Date("2026-09-28T09:01:00Z")});
+assert.equal(retryCleanup.ok,true);assert.equal(retryCleanup.deleted,1);assert.equal(stores3.debug.metadata.size,0);assert.equal(stores3.debug.objects.size,0);
 
 await assert.rejects(()=>createNowMomentPhoto(base,{...ctx,capabilities:{}}),/NOW_MOMENT_PHOTO_NOT_ACTIVATED/);
 console.log("Phase L photo service requires complete activation, moderation and expiry cleanup");
