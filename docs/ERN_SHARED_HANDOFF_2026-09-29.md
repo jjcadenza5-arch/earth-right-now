@@ -287,3 +287,31 @@ Only interrupt the operator for:
   - Living Atlas intentionally retains its broader recheck/degraded pins with explicit recheck labeling.
 - `src/app-lite.js` remains safely below the 100 KB budget at about **91.5 KB** after these changes.
 - Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until a push-triggered run is independently verified.
+
+
+## Continuation checkpoint — destination-page truth + Atlas/business strengthening
+- Catalog checkpoint remains **94 total / 91 current checks / 90 current+healthy / 17 current healthy embeds / 3 stale / 0 expired**.
+- Public crawlable destination pages now distinguish three different source states instead of collapsing them:
+  1. **Current verified views**
+  2. **Outside published live hours**
+  3. **Sources awaiting recheck or recovery**
+- Scheduled-closed sources no longer receive false “no in-horizon verification” wording.
+- Destination pages now require fresh inside-ERN playback proof before an EMBED source can be treated/labeled as current. If source verification is fresh but playback proof has aged out, the page uses **PLAYBACK RECHECK DUE** rather than a live label.
+- Shared `src/current-window-label.js` was hardened the same way, so a stale playback proof cannot produce `LIVE WINDOW` / `Watch live` elsewhere.
+- Living Atlas grouped-pin selection now prefers a genuinely current/available source over a merely recently verified or schedule-closed sibling at the same place. Broader degraded/recheck Atlas visibility remains intentionally preserved.
+- Crawlable destination pages can now surface existing **verified, current affiliate planning links** and **reviewed non-paid local places**:
+  - affiliate offers require both `currentTravelOffer` and an active affiliate partner;
+  - affiliate links carry `rel="sponsored noopener noreferrer"` and explicit “Affiliate link” disclosure;
+  - copy explicitly states affiliate availability never affects ERN source ranking;
+  - reviewed local places explicitly state they are not paid placements;
+  - stale-only destination pages are forced non-commercial;
+  - reviewed local places are limited to pages with a current source or a recently verified source outside published live hours.
+- Commercial placement preflight and built-output discoverability preflight now guard those destination-page boundaries.
+- Added `tests/destination-page-builder.smoke.js` and included it in the current release smoke suite.
+- Destination opportunity matrix was refreshed:
+  - Kyoto now reflects all five published source-specific cameras including schedule-aware Nishiki Market.
+  - New York row was narrowed to **New York City / Statue of Liberty** so unrelated New York State source coverage is not conflated.
+  - Honolulu/Waikīkī now reflects both direct current official paths.
+  - Cancún/Punta NIZUC and St. John's were added as maintained direct/provider current destinations.
+- `src/app-lite.js` remains safely below the fixed 100 KB cap at about **91.5 KB**.
+- Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until a push-triggered run is independently verified.
