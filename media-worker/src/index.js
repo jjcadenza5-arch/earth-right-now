@@ -121,7 +121,7 @@ export default{
         let body;try{body=await request.json()}catch{return reply(400,{ok:false,reason:"INVALID_JSON"})}
         const {metadataStore,objectStore}=stores(env);
         const result=await reviewNowMomentPhoto({id:decodeURIComponent(m[1]),decision:body.decision},{capabilities:CAPABILITIES,metadataStore,objectStore});
-        return result.ok?reply(200,{...result,published:false}):reply(400,result);
+        return result.ok?reply(200,{...result,publicEligible:Boolean(result.public),published:enabled&&Boolean(result.public)}):reply(result.reason==="PHOTO_EXPIRED"?410:400,result);
       }
       return reply(404,{ok:false,reason:"NOT_FOUND"});
     }
