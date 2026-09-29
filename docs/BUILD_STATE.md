@@ -1,3 +1,13 @@
+## 2026-09-29 — Travelpayouts active confirmed; Nishiki safely published
+- Operator screenshot confirms the Earthrightnow Travelpayouts project is active/green with 26 available programs.
+- Payout method is still not configured; ERN records this as payout-readiness work, not a reason to block verified affiliate links or editorial/product work.
+- Added an explicit Travelpayouts platform record with active relationship, manual-tools-only mode, Drive automation OFF, automatic link rewriting OFF, automatic placement OFF and paid ranking prohibited.
+- Commercial release preflight now fails closed if Travelpayouts-backed partners exist without an active platform record or if automation/ranking safeguards drift. Missing payout method is reported as a warning, not a release failure.
+- Added a non-public commercial opportunity queue for Kyoto, Rome, Seoul, Rovaniemi, Dublin and Chicago. Every item requires account coverage confirmation and an exact tracked link before any public placement.
+- Nishiki Market is now published source-specifically with provider-published 11:00–18:00 JST availability. ERN currentness/playback logic respects the schedule and the browser exposes live hours outside the window rather than implying 24/7 availability.
+- Kyoto provider-family state now records five published exact targets: Fushimi Inari, Kifune Shrine, Kiyomizu-zaka, Hanamikoji and Nishiki Market. Arashiyama Bamboo remains deferred.
+- Current catalog checkpoint: 94 sources; 76 current checks; 75 current+healthy sources; 17 current in-ERN embeds; 3 stale; 15 expired.
+
 ## 2026-09-29 — Human playback packet absorbed; final release green
 - Accepted operator evidence packet `bd51ac5733059f3f` from the deployed ERN review origin.
 - Fresh deployed-origin playback evidence was recorded for 10 existing approved inside-ERN sources.
