@@ -2,6 +2,7 @@ export const VIATOR_API_VERSION="2026-09-27.v2";
 export const VIATOR_SEARCH_PATH="/api/viator/products";
 export const VIATOR_DESTINATIONS_PATH="/api/viator/destinations";
 export const VIATOR_DIAGNOSTICS_PATH="/api/viator/diagnostics";
+export const VIATOR_PRODUCT_VALIDATION_PATH="/api/viator/product-validation";
 
 const ALLOWED_LANGUAGES=new Set(["en-US","th-TH","de-DE","fr-FR","es-ES","ja-JP","zh-CN"]);
 const ALLOWED_CURRENCIES=new Set(["USD","THB","EUR","GBP","AUD","CAD","NZD","JPY","CHF"]);
