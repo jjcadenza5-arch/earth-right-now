@@ -1,4 +1,4 @@
-export function ageHours(iso,now=Date.now()){if(!iso)return Infinity;const t=Date.parse(iso),n=now instanceof Date?now.getTime():Number(now);return Number.isFinite(t)&&Number.isFinite(n)?Math.max(0,(n-t)/36e5):Infinity}
+export function ageHours(iso,now=Date.now(),futureSkewMinutes=5){if(!iso)return Infinity;const t=Date.parse(iso),n=now instanceof Date?now.getTime():Number(now);if(!Number.isFinite(t)||!Number.isFinite(n))return Infinity;const delta=n-t;if(delta < -Math.max(0,Number(futureSkewMinutes)||0)*60000)return Infinity;return Math.max(0,delta/36e5)}
 function clockMinutes(value){const [h,m]=String(value||"").split(":").map(Number);return Number.isFinite(h)&&Number.isFinite(m)?h*60+m:null}
 function localClock(now,timeZone){try{const d=now instanceof Date?now:new Date(Number(now));const parts=new Intl.DateTimeFormat("en-US",{timeZone,hour:"2-digit",minute:"2-digit",hourCycle:"h23",weekday:"short"}).formatToParts(d);const get=t=>parts.find(x=>x.type===t)?.value;return{minutes:Number(get("hour"))*60+Number(get("minute")),weekday:get("weekday")||null}}catch{return null}}
 export function sourceAvailabilityState(source,{now=Date.now()}={}){
