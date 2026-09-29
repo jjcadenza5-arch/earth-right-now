@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T07:42:00Z",
+  "generatedAt": "2026-09-29T07:40:00Z",
   "principle": "Research destinations where a truthful current window is valuable to visitors. Existing/available travel programs help identify useful next-step categories, but may not lower source-quality or truth standards.",
   "columns": {
     "visualCoverage": "Current ERN visual-window state",
@@ -161,7 +161,7 @@
     {
       "destination": "Tokyo",
       "country": "Japan",
-      "visualCoverage": "SEASONAL_GAP_PLUS_OFFICIAL_PORT_RESEARCH",
+      "visualCoverage": "SEASONAL_OFF_SEASON_GAP_PLUS_OFFICIAL_PORT_RESEARCH",
       "currentSources": [],
       "visitorDecisionValue": "HIGH",
       "nextStepIntents": [
@@ -176,8 +176,10 @@
         "TRANSFERS"
       ],
       "sourcePriority": "HIGH",
-      "why": "Chidori remains off-season, so ERN still lacks a strong central-Tokyo year-round visitor window. Tokyo Metropolitan Government now provides a public Tokyo Port DX live-camera platform, creating a legitimate official year-round research lane for waterfront/transport conditions.",
-      "next": "Resolve Tokyo Port DX exact camera targets and visitor usefulness. Continue searching separately for a strong year-round central-Tokyo street/market/landmark current window with a safe provider path."
+      "why": "Chidori-ga-fuchi was rechecked on 2026-09-29 and the official Visit Chiyoda surface still shows April 2026 Sakura conditions, so this lane is intentionally seasonal/off-season rather than a broken year-round source. Tokyo Port DX remains the official year-round research lane for waterfront/transport conditions.",
+      "next": "Keep Chidori deferred until Sakura season or a material provider change. Resolve exact Tokyo Port DX camera targets and continue searching separately for a strong year-round central-Tokyo visitor window.",
+      "lastOfficialRecheck": "2026-09-29",
+      "maintenanceClass": "SEASONAL_OFF_SEASON"
     },
     {
       "destination": "New York City / Statue of Liberty",
@@ -435,6 +437,52 @@
       "sourcePriority": "LOW_MAINTAIN",
       "why": "CBC News Newfoundland and Labrador currently provides a public harbour/Narrows webcam from The Rooms, giving a strong direct city/harbour condition window.",
       "next": "Maintain the CBC source and respect scheduled maintenance; add another St. John's source only for distinct weather/harbour utility."
+    },
+    {
+      "destination": "Pattaya",
+      "country": "Thailand",
+      "visualCoverage": "OFFICIAL_PORTAL_PLAYBACK_EVIDENCE_GAP",
+      "currentSources": [],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "beach",
+        "transport",
+        "stay"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "TRANSFERS",
+        "CITY_UTILITY"
+      ],
+      "sourcePriority": "HIGH",
+      "maintenanceClass": "PLAYBACK_EVIDENCE_DEBT",
+      "why": "The official Pattaya City CCTV portal was rechecked on 2026-09-29. It reports 600 total cameras, while the public Live View and Camera List currently show 0 cameras. ERN therefore cannot claim a current playback window.",
+      "next": "Reverify real public individual-camera playback before promoting the source. Portal reachability or inventory count alone is insufficient.",
+      "lastOfficialRecheck": "2026-09-29"
+    },
+    {
+      "destination": "Tbilisi",
+      "country": "Georgia",
+      "visualCoverage": "PROVIDER_CAMERA_PAGE_ACTIVE_CURRENTNESS_PROOF_STALE",
+      "currentSources": [],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "stay",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "ATTRACTIONS",
+        "TRANSFERS"
+      ],
+      "sourcePriority": "ROUTINE_RECHECK",
+      "maintenanceClass": "EDITORIAL_CURRENTNESS_DEBT",
+      "why": "EarthCam's Mtkvari River/Narikala camera page was rechecked on 2026-09-29 and remains active, but ERN did not find stronger explicit live/current wording sufficient to refresh successful-current evidence.",
+      "next": "Reconfirm explicit provider live/current evidence for the exact camera before refreshing lastSuccessfulCheck. Do not promote based on page reachability alone.",
+      "lastProviderRecheck": "2026-09-29"
     }
   ],
   "rules": {
