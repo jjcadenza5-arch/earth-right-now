@@ -15,8 +15,9 @@ console.assert(worker.includes("readJsonBodyBounded")&&worker.includes("8192"),"
 console.assert(!worker.includes('op:"rate-check"'),"Submission rate limit must use one atomic reservation");
 console.assert(worker.includes("ERN_SUBMISSION_RATE_HMAC_KEY")&&worker.includes("CF-Connecting-IP"),"Worker must derive opaque server-side rate identity");
 console.assert(worker.includes("ERN_SUBMISSION_REVIEW_TOKEN")&&worker.includes("authorization"),"Human review queue must be protected");
+console.assert(worker.includes("constantTimeEqual")&&!worker.includes("got===`Bearer ${expected}`"),"Submission review bearer token must not use direct string equality");
 console.assert(worker.includes("published:false")&&worker.includes("automaticPublishAllowed:false"),"Submission must never auto-publish");
-console.assert(worker.includes("contact:null"),"Approved intake must drop unnecessary contact data");
+console.assert(worker.includes('["APPROVED","REJECTED"]')&&worker.includes("contact:null"),"Final submission review must drop unnecessary contact data while NEEDS_INFO may retain it");
 console.assert(state.includes("DELETE FROM submissions WHERE expires_at <= ?"),"Retention cleanup missing");
 console.assert(state.includes("MAX_PER_DAY=5"),"Server rate limit missing");
 console.log("submission-worker fail-closed intake foundation smoke: ok");
