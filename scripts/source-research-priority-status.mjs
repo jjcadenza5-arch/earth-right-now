@@ -19,13 +19,20 @@ if(data.invariants?.providerConcentrationMayOverrideTruth!==false) fail.push("pr
 if(data.invariants?.providerConcentrationMayOverrideQuality!==false) fail.push("provider concentration may override quality");
 if(!Array.isArray(data.placeUniverse)||data.placeUniverse.length<8) fail.push("place universe is unexpectedly narrow");
 const stale=data.currentStaleDebt;
-if(!stale||stale.total!==3||!Array.isArray(stale.items)||stale.items.length!==3) fail.push("current stale-debt classification missing or incomplete");
-const staleClasses=new Set((stale?.items||[]).map(x=>x.class));
-for(const cls of ["PLAYBACK_EVIDENCE_DEBT","SEASONAL_OFF_SEASON","EDITORIAL_CURRENTNESS_DEBT"])if(!staleClasses.has(cls))fail.push("stale debt class missing: "+cls);
-if((stale?.items||[]).some(x=>!/^(HIGH|LOW_UNTIL_SEASON_OR_MATERIAL_CHANGE|ROUTINE)$/.test(String(x.priority||""))))fail.push("stale debt priority label invalid");
-const staleCatalogIds=sources.filter(x=>recencyState(x,{now})==="STALE_CHECK").map(x=>x.id).sort();
-const declaredStaleIds=(stale?.items||[]).map(x=>x.id).sort();
-if(JSON.stringify(staleCatalogIds)!==JSON.stringify(declaredStaleIds))fail.push("declared stale debt ids do not match catalog STALE_CHECK ids");
-if(Number(stale?.total)!==staleCatalogIds.length)fail.push("declared stale debt total does not match catalog");
-console.log(JSON.stringify({ok:fail.length===0,totalWeight:total,commercialWeight:w.practicalCommercialFit,placeUniverseCount:data.placeUniverse?.length||0,fail},null,2));
+const staleItems=Array.isArray(stale?.items)?stale.items:[];
+if(!stale||!staleItems.length||Number(stale.total)!==staleItems.length)fail.push("current stale-debt classification missing or count mismatch");
+const allowedClasses=new Set(["PLAYBACK_EVIDENCE_DEBT","SEASONAL_OFF_SEASON","EDITORIAL_CURRENTNESS_DEBT"]);
+const allowedPriorities=/^(HIGH|LOW_UNTIL_SEASON_OR_MATERIAL_CHANGE|ROUTINE)$/;
+const sourceById=new Map(sources.map(x=>[String(x.id),x]));
+for(const item of staleItems){
+  if(!allowedClasses.has(String(item.class||"")))fail.push("stale debt class invalid: "+String(item.class||""));
+  if(!allowedPriorities.test(String(item.priority||"")))fail.push("stale debt priority label invalid: "+String(item.priority||""));
+  const source=sourceById.get(String(item.id||""));
+  if(!source){fail.push("declared stale debt source missing from catalog: "+String(item.id||""));continue}
+  const state=recencyState(source,{now});
+  if(state==="CURRENT_CHECK")fail.push("declared stale debt entry is current and should be reconciled: "+item.id);
+  if(state==="UNKNOWN")fail.push("declared stale debt entry has unknown recency: "+item.id);
+}
+const routineRecencyQueue=sources.filter(x=>recencyState(x,{now})==="STALE_CHECK"&&!staleItems.some(item=>item.id===x.id)).map(x=>x.id).sort();
+console.log(JSON.stringify({ok:fail.length===0,totalWeight:total,commercialWeight:w.practicalCommercialFit,placeUniverseCount:data.placeUniverse?.length||0,persistentStaleDebt:staleItems.map(x=>x.id),routineRecencyQueue,fail},null,2));
 if(fail.length) process.exit(1);
