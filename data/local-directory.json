@@ -17,7 +17,10 @@
       "local stay"
     ],
     "paidPlacement": false,
-    "affiliate": false
+    "affiliate": false,
+    "address": "3 Vakhtang Gorgasali St, Tbilisi 0105, Georgia",
+    "addressBasis": "OFFICIAL_SITE",
+    "addressSourceUrl": "https://tiflispalace.ge/english/contacts"
   },
   {
     "id": "local-chalet-arva",
@@ -37,7 +40,10 @@
       "local stay"
     ],
     "paidPlacement": false,
-    "affiliate": false
+    "affiliate": false,
+    "address": "Oeschinensee, 3718 Kandersteg, Switzerland",
+    "addressBasis": "OFFICIAL_PLACE_PAGE",
+    "addressSourceUrl": "https://www.oeschinensee.ch/en/uebernachten/"
   },
   {
     "id": "local-flamsbrygga",
@@ -57,7 +63,10 @@
       "local stay"
     ],
     "paidPlacement": false,
-    "affiliate": false
+    "affiliate": false,
+    "address": "A-Feltvegen 25, 5743 Flåm, Norway",
+    "addressBasis": "OFFICIAL_SITE",
+    "addressSourceUrl": "https://en.flamsbrygga.no/om-oss/kontakt-oss"
   },
   {
     "id": "local-hotel-arvenbuel",
@@ -78,7 +87,10 @@
       "local stay"
     ],
     "paidPlacement": false,
-    "affiliate": false
+    "affiliate": false,
+    "address": "Arvenbüelstrasse 47, 8873 Amden, Switzerland",
+    "addressBasis": "OFFICIAL_HOTEL_PUBLICATION",
+    "addressSourceUrl": "https://www.arvenbuel.ch/"
   },
   {
     "id": "local-windjammer-resort",
@@ -98,7 +110,10 @@
       "local stay"
     ],
     "paidPlacement": false,
-    "affiliate": false
+    "affiliate": false,
+    "address": "4244 El Mar Drive, Lauderdale-by-the-Sea, FL 33308, United States",
+    "addressBasis": "OFFICIAL_SITE",
+    "addressSourceUrl": "https://windjammerresort.com/Location"
   },
   {
     "id": "local-calypso-charters-anguilla",
@@ -119,7 +134,10 @@
       "local activity"
     ],
     "paidPlacement": false,
-    "affiliate": false
+    "affiliate": false,
+    "address": "Blowing Point Ferry Terminal, Blowing Point, Anguilla",
+    "addressBasis": "OFFICIAL_SITE",
+    "addressSourceUrl": "https://www.calypsochartersanguilla.com/contact-calypso-charters/"
   },
   {
     "id": "local-mtatsminda-funicular",
@@ -140,7 +158,10 @@
       "local attraction"
     ],
     "paidPlacement": false,
-    "affiliate": false
+    "affiliate": false,
+    "address": "Shota Chitadze Dead End, Tbilisi, Georgia",
+    "addressBasis": "BUSINESS_DIRECTORY_MATCH",
+    "addressSourceUrl": "https://register.park.ge/app/offers/3-funicularropeway-pass"
   },
   {
     "id": "local-mattstock-chairlift",
@@ -161,7 +182,10 @@
       "local attraction"
     ],
     "paidPlacement": false,
-    "affiliate": false
+    "affiliate": false,
+    "address": "Ruestelstrasse 20, 8873 Amden, Switzerland",
+    "addressBasis": "OFFICIAL_TOURISM_SITE",
+    "addressSourceUrl": "https://www.amden-weesen.ch/en/poi/detail/mattstock-chairlift-95071e2956"
   },
   {
     "id": "local-dolphin-explorer-marco",
@@ -182,7 +206,10 @@
       "local activity"
     ],
     "paidPlacement": false,
-    "affiliate": false
+    "affiliate": false,
+    "address": "951 Bald Eagle Dr, Marco Island, FL 34145, United States",
+    "addressBasis": "BUSINESS_DIRECTORY_MATCH",
+    "addressSourceUrl": "https://www.govisitmarcoisland.com/the-dolphin-explorer/the-dolphin-study-eco-tour-and-cruise"
   },
   {
     "id": "local-the-massif-patagonia",
@@ -203,6 +230,9 @@
       "local activity"
     ],
     "paidPlacement": false,
-    "affiliate": false
+    "affiliate": false,
+    "address": "Villa Serrano sector, southern boundary of Torres del Paine National Park, Chile",
+    "addressBasis": "OFFICIAL_SITE_AREA",
+    "addressSourceUrl": "https://rioserrano.com/en/contact/"
   }
 ]
