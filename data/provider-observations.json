@@ -271,5 +271,19 @@
     "confirmation": "PROVIDER_SOURCE_CURRENT_LINK_ONLY",
     "observedAt": "2026-09-29T06:02:00Z",
     "reason": "CBC News Newfoundland and Labrador currently operates a public St. John's harbour/Narrows webcam from The Rooms. The catalog now uses the broadcaster's live stream as an external LINK_ONLY handoff."
+  },
+  {
+    "id": "pattaya-city-live",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_PORTAL_CURRENT_PLAYBACK_UNVERIFIED",
+    "observedAt": "2026-09-29T06:10:00Z",
+    "reason": "Pattaya City's official CCTV Streaming portal currently exposes a 600-camera inventory and Live View interface. Individual camera playback was not independently verified, so the catalog remains DEGRADED."
+  },
+  {
+    "id": "chidori-sakura",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SURFACE_CURRENTLY_OFF_SEASON",
+    "observedAt": "2026-09-29T06:10:00Z",
+    "reason": "Visit Chiyoda's official Sakura Festival surface remains reachable but still displays April 2026 blossom/congestion state in late September. The source remains DEGRADED/off-season and is not treated as a current Tokyo visual window."
   }
 ]
