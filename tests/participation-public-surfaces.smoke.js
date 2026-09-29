@@ -1,5 +1,6 @@
 import fs from "node:fs";
 const manifest=JSON.parse(fs.readFileSync("data/earth-signal-deployment.json","utf8"));
+const media=JSON.parse(fs.readFileSync("data/now-moment-media-deployment.json","utf8"));
 const config=fs.readFileSync("src/participation-public-config.js","utf8");
 const now=fs.readFileSync("now-moments.html","utf8");
 const nowJs=fs.readFileSync("src/now-moments-page.js","utf8");
@@ -9,6 +10,8 @@ const placesJs=fs.readFileSync("src/for-places-page.js","utf8");
 console.assert(manifest.publicActivationAllowed===false,"Earth Signals public activation must default false");
 console.assert(config.includes('earthSignals?.status==="DEPLOYED"')&&config.includes("publicActivationAllowed===true"),"Public config must require deployed + explicit Earth Signal activation");
 console.assert(config.includes("submissions?.enabled===true"),"Public config must require explicit submission transport enablement");
+console.assert(media.publicActivationAllowed===false&&media.status==="NOT_DEPLOYED","Now Moment media must remain public-OFF and not deployed");
+console.assert(config.includes('media?.status==="DEPLOYED"')&&config.includes("media?.publicActivationAllowed===true")&&config.includes("media?.videoEnabled===false"),"Public config must require deployed + explicit media activation while video remains off");
 console.assert(now.includes('datalist id="signalPlaces"')&&nowJs.includes("canonicalPlaces"),"Now Moments must use canonical ERN places");
 console.assert(nowJs.includes("EARTH_SIGNAL_TYPES")&&nowJs.includes("local preview"),"Now Moments structured signal boundary missing");
 console.assert(places.includes('id="cameraConsentWrap" hidden')&&placesJs.includes("consent?.checked!==true"),"Submission surface must require explicit send consent");
