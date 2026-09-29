@@ -2,3 +2,5 @@ import { travelContext,travelOffer,visibleTravelOffer,travelDisclosure } from ".
 console.assert(travelOffer({id:"",intent:"stay",title:"Stay",provider:"P",url:"https://example.com"},{place,verified:true})===null);
 console.assert(travelOffer({id:"a",intent:"stay",title:"",provider:"P",url:"https://example.com"},{place,verified:true})===null);
 console.assert(travelOffer({id:"a",intent:"stay",title:"Stay",provider:"",url:"https://example.com"},{place,verified:true})===null);
+
+const exp=travelOffer({id:"e",intent:"activities",title:"Do",provider:"P",url:"https://example.com/do",expiresAt:"2026-12-01T00:00:00Z"},{place,verified:true});console.assert(exp.expiresAt==="2026-12-01T00:00:00Z");console.assert(travelOffer({id:"badexp",intent:"activities",title:"Do",provider:"P",url:"https://example.com/do",expiresAt:"bad"},{place,verified:true})===null);
