@@ -20,8 +20,10 @@ export async function earthSignalHttpRequest(request={}, context={}){
 
   if(method==="GET"&&path===EARTH_SIGNAL_API_CONTRACT.contributionPath){
     if(mode!=="CONTRIBUTION_ENABLED")return response(503,{ok:false,mode:"READ_ONLY",reason:"EARTH_SIGNALS_NOT_ACTIVATED"});
+    const placeId=String(request.query?.placeId||"").trim();
+    if(!placeId)return response(400,{ok:false,reason:"SIGNAL_PLACE_ID_REQUIRED"});
     try{
-      const result=await listEarthSignalService({...context,placeId:request.query?.placeId||null});
+      const result=await listEarthSignalService({...context,placeId});
       return response(200,result);
     }catch(error){
       return response(503,{ok:false,reason:error?.code||"SERVICE_UNAVAILABLE"});
