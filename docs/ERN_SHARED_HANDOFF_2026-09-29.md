@@ -648,3 +648,15 @@ Only interrupt the operator for:
 - Public Viator API products are **not** authorized by this validation. Public activation remains a separate explicit product decision.
 - Temporary Cloudflare validation access should now be closed by setting `ERN_VIATOR_PRODUCT_VALIDATION_ENABLED=false`. Keep the two Worker secrets stored unless/until intentionally rotated or removed; they do not authorize public product access by themselves.
 
+## Stage R checkpoint — Viator validation transition fully green
+- Controlled Viator product validation remains confirmed and public Viator API products remain OFF.
+- Temporary validation access was closed in Cloudflare after the successful test:
+  - `ERN_VIATOR_API_ENABLED=true`
+  - `ERN_VIATOR_PRODUCT_VALIDATION_ENABLED=false`
+  - `ERN_VIATOR_PUBLIC_PRODUCTS_ENABLED=false`
+  - validation token, affiliate PID and API key remain stored as Worker secrets.
+- Release smoke was advanced from the pre-validation state to the verified/public-OFF state across the Viator foundation, taxonomy/operator, Auckland pilot, validation-boundary and public-client checks.
+- Public client recognizes `PRODUCT_VALIDATION_CONFIRMED_PUBLIC_OFF` but still fails closed unless `publicActivationAllowed=true`.
+- Independently verified GitHub Pages run **36601013852** completed successfully through Deploy for commit `396835e28254c3799ade3c47c987944cd46eb940`.
+- Do not repeat Viator activation, taxonomy or product-validation diagnostics unless provider/auth state materially changes.
+
