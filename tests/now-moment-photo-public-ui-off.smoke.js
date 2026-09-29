@@ -1,0 +1,10 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const html=fs.readFileSync(new URL("../now-moments.html",import.meta.url),"utf8");
+const page=fs.readFileSync(new URL("../src/now-moments-page.js",import.meta.url),"utf8");
+const cfg=fs.readFileSync(new URL("../src/participation-public-config.js",import.meta.url),"utf8");
+assert.doesNotMatch(html,/type=["']file["']|accept=["']image\//i,"public Now Moments page must not expose a photo file picker yet");
+assert.doesNotMatch(page,/prepareNowMomentPhoto|nowMomentPhotoUploadHeaders|\/api\/now-moments\/photos/,"public Now Moments runtime must not upload photos yet");
+assert.match(cfg,/nowMomentMedia:/,"public config may report media readiness separately");
+assert.doesNotMatch(page,/nowMomentMedia/,"media deployment state alone must not create a photo-upload UI");
+console.log("Now Moment photo infrastructure remains double-gated: deployment state alone cannot expose public upload UI");
