@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";
+await import("../src/travel-planning-client.js");
+const TP=globalThis.ERNTravelPlanning;
+const now=Date.parse("2026-09-29T09:00:00Z");
+const base={id:"a",title:"A",provider:"P",placeId:"place",intent:"activities",url:"https://example.test/",verified:true,verifiedAt:"2026-09-28T09:00:00Z"};
+assert.equal(TP.current(base,now),true);
+assert.equal(TP.current({...base,expiresAt:"2026-09-29T08:59:00Z"},now),false);
+assert.equal(TP.current({...base,url:"http://example.test/"},now),false);
+const offers=[base,{...base,id:"b",intent:"transport",verifiedAt:"2026-09-28T10:00:00Z"}];
+assert.equal(TP.offerFor(offers,{placeId:"place"},"transport",now).id,"b");
+assert.deepEqual(TP.guideOffers(offers,{placeId:"place"},now).map(x=>x.id),["a","b"]);
+assert.equal(TP.disclosure({...base,affiliate:true}),"Affiliate link");
+console.log("Travel planning client keeps currentness, expiry and disclosure boundaries");
