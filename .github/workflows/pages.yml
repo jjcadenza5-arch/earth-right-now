@@ -23,6 +23,8 @@ on:
       - "package.json"
       - "data/embed-provider-families.json"
       - "src/research-review-queue.js"
+      - "src/embed-research-preflight.js"
+      - "tests/embed-research-preflight.smoke.js"
       - "src/provider-family-research.js"
       - "src/recency-provider-debt.js"
       - "tests/research-review-queue.smoke.js"
