@@ -11,6 +11,7 @@ const sources=[
 ];
 const observations=[
  {id:"ok",confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-24T08:05:00Z"},
+ {id:"ok",confirmation:"PROVIDER_PAGE_EXPLICIT_LIVE_CURRENT",observedAt:"2026-09-24T11:30:00Z"},
  {id:"fresh-missing",confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-24T11:00:00Z"},
  {id:"marker-no-human",confirmation:"MEDIA_ENDPOINT",observedAt:"2026-09-24T09:00:00Z"},
  {id:"mismatch",confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-24T10:10:00Z"},
@@ -22,5 +23,6 @@ const r=playbackEvidenceConsistency(sources,observations,{now,freshHours:24,tole
 assert.equal(r.consistent,false);
 for(const code of ["FRESH_HUMAN_OBSERVATION_MISSING_CATALOG_MARKER","CATALOG_MARKER_WITHOUT_HUMAN_OBSERVATION","PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH","PLAYBACK_MARKER_ON_NON_EMBED","UNKNOWN_SOURCE_OBSERVATION"])assert.ok(r.issues.some(x=>x.code===code),code);
 assert.ok(!r.issues.some(x=>x.id==="stale-only"&&x.code==="FRESH_HUMAN_OBSERVATION_MISSING_CATALOG_MARKER"));assert.ok(!r.issues.some(x=>x.id==="failed-after-success"&&x.code==="FRESH_HUMAN_OBSERVATION_MISSING_CATALOG_MARKER"));assert.equal(r.rows.find(x=>x.id==="failed-after-success").humanSupersededByFailure,true);
+assert.equal(r.rows.find(x=>x.id==="ok").observationKind,"HUMAN_PLAYBACK");assert.equal(r.rows.find(x=>x.id==="ok").latestObservationKind,"PROVIDER_PAGE_EXPLICIT_LIVE_CURRENT");assert.ok(!r.issues.some(x=>x.id==="ok"&&x.code==="CATALOG_MARKER_WITHOUT_HUMAN_OBSERVATION"));
 assert.equal(r.safety.catalogMutationAllowed,false);assert.equal(r.safety.automaticHealthChangeAllowed,false);assert.equal(r.safety.automaticPlaybackVerificationAllowed,false);
 console.log("ERN playback evidence consistency audit passed");
