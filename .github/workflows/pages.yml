@@ -98,6 +98,16 @@ on:
       - "scripts/performance-preflight.mjs"
       - "scripts/rollback-preflight.mjs"
       - "scripts/participation-preflight.mjs"
+      - "scripts/participation-infrastructure-status.mjs"
+      - "scripts/now-moment-media-status.mjs"
+      - "data/now-moment-media-deployment.json"
+      - "src/now-moment-photo-service.js"
+      - "src/now-moment-photo-storage-contract.js"
+      - "src/now-moment-photo-capabilities.js"
+      - "src/now-moment-photo-metadata.js"
+      - "src/now-moment-photo-record.js"
+      - "src/now-moment-photo-policy.js"
+      - "media-worker/**"
       - "scripts/featured-curation-preflight.mjs"
       - "scripts/guide-see-before-go-preflight.mjs"
       - "scripts/source-research-priority-status.mjs"
@@ -162,6 +172,10 @@ jobs:
         run: node scripts/rollback-preflight.mjs
       - name: Participation safety preflight
         run: node scripts/participation-preflight.mjs
+      - name: Participation infrastructure readiness
+        run: npm --silent run participation:status
+      - name: Now Moment media readiness
+        run: npm --silent run participation:media-status
       - name: Featured curation preflight
         run: node scripts/featured-curation-preflight.mjs
       - name: Catalog metadata completeness
