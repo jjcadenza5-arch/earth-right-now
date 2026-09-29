@@ -18,6 +18,7 @@ on:
       - "data/travel-offers.json"
       - "data/affiliate-partners.json"
       - "data/affiliate-platform-research.json"
+      - "data/commercial-link-opportunities.json"
       - "data/provider-observations.json"
       - "data/embed-research-candidates.json"
       - "tests/**"
