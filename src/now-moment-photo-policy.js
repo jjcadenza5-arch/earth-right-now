@@ -34,14 +34,16 @@ export function nowMomentPhotoInput(input={}){
   return{ok:issues.length===0,issues};
 }
 
+function publicMinuteIso(value){const t=Date.parse(value||"");if(!Number.isFinite(t))return null;return new Date(Math.floor(t/60000)*60000).toISOString()}
+
 export function nowMomentPhotoPublicRecord(record={}){
   return{
     id:record.id||null,
     kind:"photo",
     placeId:record.placeId||null,
     placeLabel:record.placeLabel||null,
-    createdAt:record.createdAt||null,
-    expiresAt:record.storageExpiryAt||null,
+    createdAt:publicMinuteIso(record.createdAt),
+    expiresAt:publicMinuteIso(record.storageExpiryAt),
     temporary:true,
     verified:false,
     evidenceKind:"VISITOR_MEDIA",
