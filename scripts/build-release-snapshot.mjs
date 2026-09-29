@@ -51,6 +51,7 @@ await cp(new URL("../src/embed-policy.js",import.meta.url),new URL("src/embed-po
 await cp(new URL("../src/url-safety.js",import.meta.url),new URL("src/url-safety.js",dist));
 await cp(new URL("../src/solar-moment.js",import.meta.url),new URL("src/solar-moment.js",dist));
 await cp(new URL("../src/media-identity.js",import.meta.url),new URL("src/media-identity.js",dist));
+await cp(new URL("../src/playback-proof.js",import.meta.url),new URL("src/playback-proof.js",dist));
 await cp(new URL("../src/share-links.js",import.meta.url),new URL("src/share-links.js",dist));
 await cp(new URL("../src/telemetry-policy.js",import.meta.url),new URL("src/telemetry-policy.js",dist));
 await cp(new URL("../src/telemetry.js",import.meta.url),new URL("src/telemetry.js",dist));
