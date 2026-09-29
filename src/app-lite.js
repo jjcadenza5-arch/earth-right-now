@@ -484,7 +484,7 @@ function renderMap(){
  for(const group of grouped){
    const eligible=group.filter(s=>{const inside=currentInside(s);if(state.mapFilter==="local")return false;if(state.category!=="all"&&state.category!=="random"&&!categoryMatch(s,state.category))return false;if(state.mapFilter==="inside"&&!inside)return false;if(state.mapFilter==="external"&&inside)return false;if(state.mapFilter==="daylight"&&!isDay(s))return false;return true});
    if(!eligible.length)continue;const s=[...eligible].sort((x,y)=>(guideEligible(y)?1:0)-(guideEligible(x)?1:0)||(featureEligible(y)?1:0)-(featureEligible(x)?1:0)||baseScore(y)-baseScore(x))[0],lat=Number(s.lat),lon=Number(s.lon),inside=currentInside(s),current=guideEligible(s);
-   const p=document.createElement("button");p.className="map-pin"+(inside?"":" external")+(!current?" recheck":"");p.type="button";p.title=`${s.title} — ${publicTruth(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s);if(group.length>1)p.dataset.views=String(group.length);a.append(p);count++;if(inside)insideCount++;else externalCount++;
+   const p=document.createElement("button");p.className="map-pin"+(inside?"":" external")+(!current?" recheck":"");p.type="button";p.title=`${s.title} — ${publicTruth(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s,{record:current,updateHash:current});if(group.length>1)p.dataset.views=String(group.length);a.append(p);count++;if(inside)insideCount++;else externalCount++;
  }
  for(const x of mappableLocal){
    const lat=Number(x.lat),lon=Number(x.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;if(state.mapFilter!=="all"&&state.mapFilter!=="local")continue;
@@ -550,6 +550,7 @@ function bestAlternate(s){
 function beginViewerLoad(s){clearViewerLoad();const link=$("#loadingSource"),source=cleanUrl(s?.sourceUrl||s?.officialUrl),alt=bestAlternate(s),tryAlt=$("#viewerTryAlternate");if(source){link.href=source;link.hidden=false}else{link.removeAttribute("href");link.hidden=true}tryAlt.hidden=!alt;tryAlt.onclick=alt?()=>openViewer(alt):null;$("#viewerLoading").hidden=false;viewerLoadTimer=setTimeout(()=>{$("#viewerLoading").hidden=false},7000)}
 function mountViewerNow(s){
  stopImageTimer();clearViewerLoad();const mount=$("#viewerStage");mount.replaceChildren();mount.style.background=generatedBackground(s);const source=cleanUrl(s.sourceUrl||s.officialUrl),link=$("#sourceViewer");if(source){link.href=source;link.hidden=false}else{link.removeAttribute("href");link.hidden=true}
+ if(!currentTruthClaim(s)){mount.dataset.visualKind="reference";mount.append(scenicPoster(s));return}
  if(s.playback==="EMBED"&&cleanUrl(s.embedUrl)){beginViewerLoad(s);const f=createMediaFrame(s,{onload:()=>clearViewerLoad()});if(f)mount.append(f)}
  else if(s.playback==="IMAGE_REFRESH"&&cleanUrl(s.sourceUrl)){beginViewerLoad(s);const img=document.createElement("img");img.alt=s.title;img.onload=()=>clearViewerLoad();img.onerror=()=>{$("#viewerLoading").hidden=false};const refresh=()=>{try{const u=new URL(s.sourceUrl);u.searchParams.set("ern",Date.now());img.src=u.href}catch{img.src=s.sourceUrl}};refresh();state.imageTimer=setInterval(()=>{if(document.visibilityState==="visible")refresh()},Math.max(30000,Number(s.refreshMs)||60000));mount.append(img)}
  else{const box=document.createElement("div");box.className="external-box";const h=document.createElement("h3");h.textContent=s.title;const p=document.createElement("p");p.textContent="This current window is available at its official provider. ERN opens it there rather than pretending it is embedded here.";box.append(h,p);if(source){const a=document.createElement("a");a.href=source;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Open current source";box.append(a)}mount.append(box)}
@@ -560,7 +561,7 @@ function renderAlternates(s){
  host.replaceChildren();
  if(!same.length){host.hidden=true;return}
  const label=document.createElement("span");label.className="alt-label";label.textContent="More views here";host.append(label);
- for(const alt of same){const b=document.createElement("button");b.type="button";b.className="alt-view";b.innerHTML="<strong></strong><small></small>";b.querySelector("strong").textContent=alt.title;b.querySelector("small").textContent=truthLabel(alt);b.onclick=()=>openViewer(alt);host.append(b)}
+ for(const alt of same){const current=guideEligible(alt),b=document.createElement("button");b.type="button";b.className="alt-view"+(current?"":" recheck");b.innerHTML="<strong></strong><small></small>";b.querySelector("strong").textContent=alt.title;b.querySelector("small").textContent=publicTruth(alt);b.onclick=()=>openViewer(alt,{record:current,updateHash:current});host.append(b)}
  host.hidden=false;
 }
 function viewHash(id){return "#view="+encodeURIComponent(id)}
