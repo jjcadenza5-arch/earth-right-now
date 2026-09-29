@@ -660,3 +660,25 @@ Only interrupt the operator for:
 - Independently verified GitHub Pages run **36601013852** completed successfully through Deploy for commit `396835e28254c3799ade3c47c987944cd46eb940`.
 - Do not repeat Viator activation, taxonomy or product-validation diagnostics unless provider/auth state materially changes.
 
+
+
+## Stage R continuation — Earth Signals infrastructure deployed, public OFF
+- Manual GitHub Actions workflow **Deploy ERN Participation Workers #2** (run `36608946177`) completed successfully for target `earth-signals`.
+- Cloudflare created and deployed Worker `ern-signals-api` at `https://ern-signals-api.jjcadenza6.workers.dev`.
+- Runtime secrets were installed through GitHub Actions without exposing their values:
+  - `ERN_RATE_HMAC_KEY`
+  - `ERN_SIGNAL_REVIEW_TOKEN`
+- Operator-verified live `/health` response confirmed:
+  - `ok=true`
+  - `contributionsEnabled=false`
+  - `durableStorage=true`
+  - `rateSubjectSecretConfigured=true`
+  - `reviewTokenConfigured=true`
+  - `rawNetworkIdentifiersStored=false`
+  - durable state healthy with `signals=0` and `reports=0`
+  - configured limits: `maxActiveSignals=5000`, `maxRetainedReports=1000`
+  - `secretValuesExposed=false`
+- Canonical deployment evidence in `data/earth-signal-deployment.json` is now `DEPLOYED_PUBLIC_OFF`.
+- This is infrastructure deployment only. Public visitor contributions remain explicitly OFF and are not authorized by this milestone.
+- Observability and cost-guard evidence remain conservative/unverified; do not mark them true without independent evidence.
+- Do not repeat Cloudflare credential setup or Earth Signals deployment unless deployment state materially changes.
