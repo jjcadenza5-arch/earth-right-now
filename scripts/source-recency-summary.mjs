@@ -6,8 +6,8 @@ const rows=JSON.parse(await readFile(new URL("../data/sources.json",import.meta.
 const now=new Date();
 const stateOf=s=>recencyState(s,{now});
 const current=rows.filter(s=>stateOf(s)==="CURRENT_CHECK");
-const stale=rows.filter(s=>stateOf(s)==="RECHECK_DUE");
-const other=rows.filter(s=>!["CURRENT_CHECK","RECHECK_DUE"].includes(stateOf(s)));
+const stale=rows.filter(s=>stateOf(s)==="STALE_CHECK");
+const other=rows.filter(s=>!["CURRENT_CHECK","STALE_CHECK"].includes(stateOf(s)));
 const healthy=xs=>xs.filter(s=>s.health==="HEALTHY");
 const degraded=xs=>xs.filter(s=>s.health==="DEGRADED");
 const embeds=xs=>xs.filter(s=>s.playback==="EMBED");
