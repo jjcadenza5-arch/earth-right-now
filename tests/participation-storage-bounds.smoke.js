@@ -1,6 +1,7 @@
 import fs from "node:fs";
 const signals=fs.readFileSync("signals-worker/src/signal-state.js","utf8");
 const submissions=fs.readFileSync("submission-worker/src/submission-inbox.js","utf8");
+const media=fs.readFileSync("media-worker/src/media-state.js","utf8");
 console.assert(signals.includes("MAX_ACTIVE_SIGNALS=5000"),"Earth Signals active storage cap missing");
 console.assert(signals.includes("MAX_RETAINED_REPORTS=1000"),"Earth Signals report storage cap missing");
 console.assert(signals.includes('DELETE FROM reports WHERE signal_id NOT IN (SELECT id FROM signals)'),"Expired-signal orphan report cleanup missing");
@@ -8,4 +9,8 @@ console.assert(signals.includes("SIGNAL_STORAGE_CAPACITY")&&signals.includes("RE
 console.assert(submissions.includes("MAX_RETAINED_SUBMISSIONS=1000"),"Submission retained-record cap missing");
 console.assert(submissions.includes("SUBMISSION_STORAGE_CAPACITY"),"Submission fail-closed capacity reason missing");
 console.assert(submissions.includes("maxRetainedSubmissions"),"Submission health capacity evidence missing");
-console.log("participation durable storage is bounded and expiry cleanup removes orphan reports");
+console.assert(media.includes("MAX_RETAINED_MEDIA=500")&&media.includes("MEDIA_STORAGE_CAPACITY"),"Now Moment media retained-object cap missing");
+console.assert(media.includes("MAX_PHOTOS_PER_DAY=3")&&media.includes("MAX_PHOTOS_PER_PLACE_DAY=2"),"Now Moment media upload rate caps missing");
+console.assert(media.includes("MAX_REPORTS_PER_DAY=10"),"Now Moment media report rate cap missing");
+console.assert(media.includes("ttlMinutes:45")&&media.includes("videoEnabled:false"),"Now Moment media status must expose TTL and video-off boundary");
+console.log("participation durable storage is bounded across signals, submissions and Now Moment media");
