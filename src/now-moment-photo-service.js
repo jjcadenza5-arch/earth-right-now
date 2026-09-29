@@ -14,7 +14,7 @@ export async function createNowMomentPhoto(input={},context={}){
   const metadata=assertNowMomentPhotoMetadataStore(context.metadataStore);
   const objects=assertNowMomentPhotoObjectStore(context.objectStore);
   if(!subjectOk(context.rateSubject))return{ok:false,stage:"RATE_LIMIT",reason:"RATE_SUBJECT_REQUIRED"};
-  if(typeof context.rateLimiter?.check!=="function"||typeof context.rateLimiter?.commit!=="function")throw Object.assign(new Error("PHOTO_RATE_LIMITER_REQUIRED"),{code:"PHOTO_RATE_LIMITER_REQUIRED"});
+  if(typeof context.rateLimiter?.commit!=="function")throw Object.assign(new Error("PHOTO_RATE_LIMITER_REQUIRED"),{code:"PHOTO_RATE_LIMITER_REQUIRED"});
   const bytes=input.bytes instanceof Uint8Array?input.bytes:new Uint8Array(input.bytes||[]);
   if(Number(input.storedBytes)!==bytes.byteLength)return{ok:false,stage:"VALIDATION",reason:"STORED_SIZE_MISMATCH"};
   const scan=nowMomentMetadataScan(bytes,input.mimeType);
@@ -22,8 +22,6 @@ export async function createNowMomentPhoto(input={},context={}){
   const now=context.now instanceof Date?context.now:new Date();
   const record=nowMomentPhotoServerRecord({...input,metadataStripped:true},{id:context.id,objectKey:context.objectKey,now,knownPlaceIds:context.knownPlaceIds});
   if(!record.ok)return{ok:false,stage:"VALIDATION",...record};
-  const rate=await context.rateLimiter.check({subject:context.rateSubject,placeId:record.record.placeId,action:"PHOTO",now});
-  if(!rate?.allowed)return{ok:false,stage:"RATE_LIMIT",reason:rate?.reason||"RATE_LIMIT"};
   const committed=await context.rateLimiter.commit({subject:context.rateSubject,placeId:record.record.placeId,action:"PHOTO",now});
   if(!committed?.allowed)return{ok:false,stage:"RATE_LIMIT",reason:committed?.reason||"RATE_LIMIT"};
   await objects.put(record.record.objectKey,bytes,{contentType:record.record.mimeType});
