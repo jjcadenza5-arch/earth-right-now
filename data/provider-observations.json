@@ -317,5 +317,53 @@
     "observedAt": "2026-09-29T07:32:00Z",
     "reason": "EarthCam's Mtkvari River Cam page is active and identifies the exact Mtkvari River/Narikala view, but current page text does not provide stronger explicit live/current wording sufficient for ERN to refresh lastSuccessfulCheck. Source remains HEALTHY but stale pending editorial live/current proof.",
     "sourceUrl": "https://www.earthcam.com/world/georgia/tbilisi/mtkvaririver/?cam=mtkvaririver"
+  },
+  {
+    "id": "auckland-viaduct-harbour",
+    "httpStatus": 200,
+    "confirmation": "PROVIDER_PAGE_EXPLICIT_LIVE_CURRENT",
+    "observedAt": "2026-09-29T10:24:48Z",
+    "reason": "Independent provider-page recheck on 2026-09-29 confirmed the official Viaduct Harbour page still publishes an 'Auckland Viaduct View — live' stream. Source currentness refreshed independently of human playback proof.",
+    "sourceUrl": "https://www.viaduct.co.nz/"
+  },
+  {
+    "id": "verbier",
+    "httpStatus": 200,
+    "confirmation": "PROVIDER_PAGE_EXPLICIT_LIVE_CURRENT",
+    "observedAt": "2026-09-29T10:24:48Z",
+    "reason": "Independent provider-page recheck on 2026-09-29 confirmed the official Verbier tourism webcams page labels the mountain webcam live, continuously updated, and exposes the YouTube live player. Source currentness refreshed independently of human playback proof.",
+    "sourceUrl": "https://www.verbier.ch/en/practice/live/webcams/"
+  },
+  {
+    "id": "takayama-miyagawa-stream",
+    "httpStatus": 200,
+    "confirmation": "PROVIDER_PAGE_EXPLICIT_LIVE_CURRENT",
+    "observedAt": "2026-09-29T10:24:48Z",
+    "reason": "Independent provider-page recheck on 2026-09-29 confirmed the Hida-Takayama page still publishes its Miyagawa/Kaji Bridge YouTube Live stream and describes live-stream continuity behavior. Source currentness refreshed independently of human playback proof.",
+    "sourceUrl": "https://takayama-live.com/streaming"
+  },
+  {
+    "id": "la-palma-aridane-valley",
+    "httpStatus": 200,
+    "confirmation": "PROVIDER_PAGE_EXPLICIT_LIVE_CURRENT",
+    "observedAt": "2026-09-29T10:24:48Z",
+    "reason": "Independent provider-page recheck on 2026-09-29 confirmed Webcam La Palma identifies the Aridane Valley stream as its own HD live stream running around the clock and explicitly offers embedding. Source currentness refreshed independently of human playback proof.",
+    "sourceUrl": "https://webcam-lapalma.de/webcam-aridane-tal/"
+  },
+  {
+    "id": "la-palma-caldera-taburiente",
+    "httpStatus": 200,
+    "confirmation": "PROVIDER_PAGE_EXPLICIT_LIVE_CURRENT",
+    "observedAt": "2026-09-29T10:24:48Z",
+    "reason": "Independent provider-page recheck on 2026-09-29 confirmed Webcam La Palma labels the Caldera de Taburiente view LIVE, states the live image is embedded on its main webcam page, and offers embedding. Source currentness refreshed independently of human playback proof.",
+    "sourceUrl": "https://webcam-lapalma.de/webcam-caldera-taburiente/"
+  },
+  {
+    "id": "volcan-tajogaite",
+    "httpStatus": 200,
+    "confirmation": "PROVIDER_PAGE_EXPLICIT_LIVE_CURRENT",
+    "observedAt": "2026-09-29T10:24:48Z",
+    "reason": "Independent provider-page recheck on 2026-09-29 confirmed Webcam La Palma's exact Tajogaite camera page labels the view LIVE, real-time/around-the-clock, provider-operated, and explicitly offers embedding. Source currentness refreshed independently of human playback proof.",
+    "sourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/"
   }
 ]
