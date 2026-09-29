@@ -349,3 +349,37 @@ Only interrupt the operator for:
 - Destination opportunity matrix and provider observations now record that Chiang Mai recheck and keep the future For Places outreach lane for farms, resorts, markets and attractions.
 - `src/app-lite.js` remains below the fixed 100 KB cap at about **92.5 KB** after this batch.
 - Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until a push-triggered run is independently verified.
+
+
+## Continuation checkpoint — full-artifact release integrity + Story/search/index truth
+- Catalog checkpoint remains **94 total / 91 current checks / 90 current+healthy / 17 current healthy embeds / 3 stale / 0 expired / 0 unknown**.
+- Release artifact integrity was strengthened substantially:
+  - `scripts/build-release-snapshot.mjs` no longer relies on a hand-maintained hash list;
+  - release manifest now enumerates and hashes **every file actually shipped in `dist`**, excluding only `release-manifest.json` itself;
+  - this now covers the real public runtime, generated destination pages, headers/redirects, public data, scripts, assets and all other shipped files.
+- Added a post-build **Public module integrity** gate:
+  - `scripts/public-module-integrity.mjs` walks shipped HTML script references and recursively checks relative ES-module imports inside `dist`;
+  - Pages now runs this after `release:build` and before public discoverability preflight;
+  - future “works in repo, missing module after deployment” failures should fail the release instead of reaching visitors.
+- Public Guide/playback dependency chain remains explicitly shipped:
+  - Guide client/routing/capabilities/activation modules
+  - new shared `src/playback-proof.js`.
+- Inside-ERN playback-proof truth is now shared and stricter:
+  - `src/playback-proof.js` rejects missing, stale and materially future playback evidence;
+  - `current-window-label.js`, ERN Stories and crawlable destination pages use the shared playback-proof rule;
+  - ERN Stories now excludes an EMBED source whose playback proof is older than the 24-hour Story/current-window horizon.
+- Source-recency policy also now rejects materially future provider-verification timestamps instead of treating them as age zero.
+- The public `app-lite.js` runtime was aligned with the same five-minute clock-skew tolerance for source verification and embed playback proof.
+- Search/Explore remains current-only through `guideEligible`; this batch preserved that invariant.
+- Crawlable destination indexing now follows evidence:
+  - pages with a current verified source remain `index,follow`;
+  - pages with a recently verified source currently outside published live hours remain indexable;
+  - **stale/reference-only pages become `noindex,follow` and are excluded from the sitemap**;
+  - discoverability preflight now enforces sitemap/index consistency.
+- Current stale-only reference pages are the existing intentional debt: Pattaya, Tbilisi Mtkvari and Chidori-ga-fuchi. Their pages can remain reachable as honest references without being advertised to search engines as current destinations.
+- Destination build logging now reports indexable vs reference-only destination-page counts.
+- Shared ERN Story deep links remain canonical; if a previously shared Story is no longer current/eligible, the Stories page now explicitly says so and shows current questions instead of silently substituting another window.
+- `share-links.smoke.js` is now included in the current release smoke suite.
+- ERN Stories smoke now has a fresh-vs-stale EMBED playback-proof regression case.
+- `src/app-lite.js` remains safely below the fixed 100 KB cap at about **92.6 KB**.
+- Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until a push-triggered run is independently verified.
