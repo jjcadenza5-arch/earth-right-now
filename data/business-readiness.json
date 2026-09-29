@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-09-29T04:42:00Z",
+  "publicSurface": false,
+  "revenueInfrastructure": {
+    "travelpayoutsProjectActive": true,
+    "travelpayoutsProjectStatus": "GREEN_OPERATOR_CONFIRMED",
+    "travelpayoutsAvailablePrograms": 26,
+    "payoutMethodConfigured": false,
+    "payoutReadiness": "HUMAN_ACCOUNT_ACTION_REQUIRED",
+    "verifiedAffiliatePartners": [
+      "viator",
+      "klook",
+      "tiqets",
+      "welcome-pickups"
+    ],
+    "exactTrackedLinksAlreadyLive": true,
+    "automaticPlacementAllowed": false,
+    "automaticLinkRewritingAllowed": false,
+    "paidRankingAllowed": false
+  },
+  "completed": [
+    "Travelpayouts Earthrightnow project active/green",
+    "26-program Travelpayouts inventory mapped",
+    "Klook, Tiqets and Welcome Pickups verified through Travelpayouts",
+    "Viator limited pilot active",
+    "Destination-specific tracked links verified for current pilot destinations",
+    "Commercial placement release preflight active",
+    "Non-public exact-link opportunity queue active"
+  ],
+  "humanOnlyRemaining": [
+    {
+      "id": "travelpayouts-payout-method",
+      "action": "Configure payout method in Travelpayouts account",
+      "priority": "BEFORE_FIRST_PAYOUT",
+      "blocksPublicERN": false,
+      "blocksTrackedLinks": false,
+      "blocksReceivingPayouts": true
+    },
+    {
+      "id": "travelpayouts-next-exact-links",
+      "action": "Generate exact destination-level tracked links only when ERN presents a vetted small batch",
+      "priority": "AS_NEEDED",
+      "blocksPublicERN": false,
+      "blocksCurrentOffers": false,
+      "blocksOnlyNewPlacements": true
+    }
+  ],
+  "safeguards": [
+    "Commercial state never changes camera truth",
+    "Commercial state never changes Watch Earth ranking",
+    "No public offer without exact verified tracked link",
+    "Affiliate disclosure remains explicit",
+    "Do not activate all available programs merely because they are available"
+  ]
+}
