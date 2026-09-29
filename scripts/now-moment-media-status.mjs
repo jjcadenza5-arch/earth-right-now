@@ -27,6 +27,7 @@ must(metadata.includes("nowMomentImageDimensions")&&service.includes("IMAGE_DIME
 must(service.includes("moderationRequired:true")&&service.includes("reportNowMomentPhoto")&&service.includes("cleanupNowMomentPhotos"),"moderation/report/cleanup service contract incomplete");
 must(!service.includes("rateLimiter.check(")&&service.includes("rateLimiter.commit("),"photo rate limiting must use a single atomic reservation/commit");
 must(worker.includes("readBodyBounded")&&worker.includes("STORED_SIZE_MISMATCH"),"bounded upload body verification missing");
+must((worker.match(/cache-control":"private, no-store"/g)||[]).length>=2,"temporary public media must be no-store so reports/expiry take effect immediately");
 must(service.includes("metadata.listExpired")&&service.indexOf("objects.delete(r.objectKey)")<service.indexOf("metadata.delete(r.id)"),"retry-safe expiry cleanup ordering missing");
 must(state.includes('b.op==="list-expired"')&&state.includes('b.op==="delete"'),"retry-safe media state cleanup operations missing");
 must(worker.includes("PENDING_REVIEW")&&worker.includes("published:false"),"upload must remain moderation-first");
