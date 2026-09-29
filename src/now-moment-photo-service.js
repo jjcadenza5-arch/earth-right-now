@@ -26,7 +26,8 @@ export async function createNowMomentPhoto(input={},context={}){
   const committed=await context.rateLimiter.commit({subject:context.rateSubject,placeId:record.record.placeId,action:"PHOTO",now});
   if(!committed?.allowed)return{ok:false,stage:"RATE_LIMIT",reason:committed?.reason||"RATE_LIMIT"};
   await objects.put(record.record.objectKey,bytes,{contentType:record.record.mimeType});
-  await metadata.put(record.record);
+  try{await metadata.put(record.record)}
+  catch(error){try{await objects.delete(record.record.objectKey)}catch{}throw error}
   return{ok:true,record:record.record,public:null,rate:{remaining:committed.remaining},moderationRequired:true};
 }
 
@@ -66,7 +67,14 @@ export async function cleanupNowMomentPhotos(context={}){
   requireReady(context.capabilities);
   const metadata=assertNowMomentPhotoMetadataStore(context.metadataStore);
   const objects=assertNowMomentPhotoObjectStore(context.objectStore);
-  const result=await metadata.deleteExpired({now:context.now instanceof Date?context.now:new Date()});
-  for(const r of result.deleted||[])await objects.delete(r.objectKey);
-  return{ok:true,deleted:(result.deleted||[]).length};
+  const now=context.now instanceof Date?context.now:new Date(),expired=await metadata.listExpired({now});
+  let deleted=0;const failed=[];
+  for(const r of expired||[]){
+    try{
+      await objects.delete(r.objectKey);
+      await metadata.delete(r.id);
+      deleted++;
+    }catch(error){failed.push({id:r.id,reason:String(error?.code||error?.message||"DELETE_FAILED")})}
+  }
+  return{ok:failed.length===0,deleted,failed};
 }
