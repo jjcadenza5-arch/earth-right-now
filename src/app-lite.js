@@ -47,7 +47,8 @@ function scheduledNow(s){const w=s?.availabilitySchedule;if(!w)return true;try{c
 function localHour(s){if(!s?.timeZone)return null;try{const p=new Intl.DateTimeFormat("en-US",{timeZone:s.timeZone,hour:"2-digit",hour12:false}).formatToParts(new Date());const h=Number(p.find(x=>x.type==="hour")?.value);return Number.isFinite(h)?h%24:null}catch{return null}}
 function localTime(s){if(!s?.timeZone)return"";try{return new Intl.DateTimeFormat(undefined,{timeZone:s.timeZone,hour:"numeric",minute:"2-digit"}).format(new Date())}catch{return""}}
 function verificationAgeDays(s){const raw=s.lastSuccessfulCheck||s.checkedAt;if(!raw)return Infinity;const ms=Date.now()-Date.parse(raw);return Number.isFinite(ms)&&ms>=-5*60000?Math.max(0,ms/86400000):Infinity}
-function verificationLabel(s){const d=verificationAgeDays(s);if(!Number.isFinite(d))return"Verification time unavailable";if(d<1)return"Verified within 24h";if(d<2)return"Verified yesterday";return"Verified "+Math.floor(d)+" days ago"}
+function verificationLabel(s){const d=verificationAgeDays(s);if(!Number.isFinite(d))return"Verification time unavailable";if(d<1)return"Source verified within 24h";if(d<2)return"Source verified yesterday";return"Source verified "+Math.floor(d)+" days ago"}
+function playbackProofLabel(s){if(s?.playback!=="EMBED")return"";const t=Date.parse(s.playbackVerifiedAt||""),d=Date.now()-t;if(!Number.isFinite(t)||d<-5*60000)return"Playback check unavailable";const h=Math.max(0,d/36e5);if(h<=24)return"Playback checked within 24h";if(h<48)return"Playback check older than 24h";return"Playback check due"}
 function verificationWindowHours(s){if(s?.truth==="LIVE_IMAGE"||s?.playback==="IMAGE_REFRESH")return 24;if(s?.playback==="EMBED")return 24;if(s?.truth==="EXTERNAL_LIVE"||s?.truth==="PARTNER")return 72;return 168}
 function verificationAgeHours(s){return verificationAgeDays(s)*24}
 function featureEligible(s){return!!(s&&s.health==="HEALTHY"&&!featuredHold(s)&&verificationAgeHours(s)<=verificationWindowHours(s))}
@@ -495,7 +496,7 @@ function renderContext(s){
  const current=currentTruthClaim(s);story.textContent=s.story||(current?"A current window onto this place.":"A provider source for this place, currently awaiting ERN recheck.");const ms=momentSignal(s);$("#viewerMomentWhy").textContent=current?("Look now · "+ms.reason):"Reference only · ERN is not treating this source as current.";
  tags.replaceChildren();
  const tagValues=[momentLabel(s),publicTruth(s),...(s.categories||[]).slice(0,3)];
- const confidence=$("#sourceConfidence"),age=verificationAgeDays(s);confidence.textContent=[verificationLabel(s),s.provider?("Source: "+s.provider):"",s.health==="HEALTHY"?"Catalog health: healthy":"Catalog health: "+String(s.health||"unknown").toLowerCase()].filter(Boolean).join(" · ");confidence.classList.toggle("stale",!currentTruthClaim(s));
+ const confidence=$("#sourceConfidence"),age=verificationAgeDays(s);confidence.textContent=[verificationLabel(s),playbackProofLabel(s),s.provider?("Source: "+s.provider):"",s.health==="HEALTHY"?"Catalog health: healthy":"Catalog health: "+String(s.health||"unknown").toLowerCase()].filter(Boolean).join(" · ");confidence.classList.toggle("stale",!currentTruthClaim(s));
  for(const value of tagValues){const tag=document.createElement("span");tag.textContent=value;tags.append(tag)}
  near.replaceChildren();
  const nearby=state.sources.filter(x=>x.id!==s.id&&guideEligible(x)&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,d:distanceKm(s,x)})).filter(x=>Number.isFinite(x.d)).sort((a,b)=>a.d-b.d).slice(0,3);
