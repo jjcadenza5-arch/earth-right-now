@@ -5,6 +5,8 @@ const rows=JSON.parse(fs.readFileSync(new URL("../data/sources.json",import.meta
 const r=providerConcentration(rows);
 assert.equal(r.total,94);
 assert.ok(r.providerCount>20,"catalog should remain provider-diverse");
-assert.ok(r.topShare<.20,"largest provider should remain below advisory concentration threshold");
+assert.ok(r.domainCount>20,"catalog should remain domain-diverse");
+assert.ok(r.topProviderShare<.20,"largest provider should remain below advisory concentration threshold");
+assert.ok(r.topDomainShare<.20,"largest source domain should remain below advisory concentration threshold");
 assert.equal(rows.filter(x=>/couchtourist/i.test(String(x.provider||"")+" "+String(x.sourceUrl||"")+" "+String(x.officialUrl||""))).length,0);
-console.log(`Provider concentration healthy: ${r.topProvider} ${(r.topShare*100).toFixed(1)}%`);
+console.log(`Provider/domain concentration healthy: ${r.topProvider} ${(r.topProviderShare*100).toFixed(1)}% · ${r.topDomain} ${(r.topDomainShare*100).toFixed(1)}%`);
