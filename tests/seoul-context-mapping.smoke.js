@@ -1,0 +1,12 @@
+import assert from "node:assert/strict";
+import registry from "../data/seoul-context-place-mappings.json" with {type:"json"};
+import {seoulContextMappingForPlace,seoulMappingValidationTarget} from "../src/seoul-context-mapping.js";
+const target=seoulMappingValidationTarget(registry,"seoul-plaza");
+assert.equal(target.ok,true);
+assert.equal(target.areaName,"Gwanghwamun·Deoksugung");
+assert.equal(target.realResponseValidated,false);
+const publicMap=seoulContextMappingForPlace(registry,"seoul-plaza");
+assert.equal(publicMap.ok,false);
+assert.equal(publicMap.reason,"PLACE_MAPPING_NOT_PUBLIC");
+assert.equal(seoulContextMappingForPlace(registry,"missing-place").reason,"PLACE_MAPPING_NOT_FOUND");
+console.log("Seoul context mappings remain explicit, validation-only and public-OFF");
