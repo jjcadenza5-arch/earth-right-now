@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "DEPLOYED_PUBLIC_OFF",
+  "status": "DEPLOYED",
   "endpointUrl": "https://ern-signals-api.jjcadenza6.workers.dev",
   "durableStorage": true,
   "serverRateLimits": true,
