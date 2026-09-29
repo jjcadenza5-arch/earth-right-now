@@ -46,7 +46,7 @@ async function render(){
     const selected=requested?all.find(x=>x.id===requested):null;
     const stories=(selected?[selected,...all.filter(x=>x.id!==selected.id)]:all).slice(0,9);
     grid.replaceChildren(...stories.map(card));
-    status.textContent=stories.length?`${stories.length} current questions from around Earth. The window is the answer.`:"No strong current story windows are available right now.";
+    status.textContent=requested&&!selected\n      ?(stories.length?"That shared window is not currently eligible, so ERN is showing current questions instead.":"That shared window is not currently eligible, and no strong current story windows are available right now.")\n      :(stories.length?`${stories.length} current questions from around Earth. The window is the answer.`:"No strong current story windows are available right now.");
   }catch(error){
     console.error(error);grid.replaceChildren();status.textContent="Stories could not load the current ERN catalog. Try again shortly.";
   }finally{refresh.disabled=false}
