@@ -64,3 +64,18 @@ assert.equal(inside.primary.length,1);
 assert.equal(inside.primary[0].id,"scheduled");
 assert.equal(inside.scheduledWaiting.length,0);
 console.log("ERN research review queue respects provider-published live windows");
+
+const rovaniemi=researchReviewQueue([
+ {id:"youtube-rovaniemi-santa-claus-village",provider:"Santa Claus Village / City of Rovaniemi",platform:"YouTube",playbackReview:"REQUIRED_ON_DEPLOYED_ERN",promotion:"BLOCKED_UNTIL_SPECIFIC_REVIEW"}
+],{providerFamilyReport:{items:[{
+ provider:"Santa Claus Village / City of Rovaniemi",
+ termsEvidenceState:"CURRENT",safeUsage:true,networkFamily:"youtube.com",
+ permissionStatus:"OFFICIAL_PROVIDER_PAGE_EMBEDS_EXACT_YOUTUBE_PLAYER_SPECIFIC_DEPLOYED_REVIEW_REQUIRED"
+}]},primaryCount:1});
+assert.equal(rovaniemi.state,"HUMAN_REVIEW_READY");
+assert.equal(rovaniemi.primary.length,1);
+assert.equal(rovaniemi.primary[0].id,"youtube-rovaniemi-santa-claus-village");
+assert.equal(rovaniemi.primary[0].requiredHumanAction,"DEPLOYED_HUMAN_PLAYBACK");
+assert.equal(rovaniemi.primary[0].promotionAllowed,false);
+assert.equal(rovaniemi.primary[0].permissionStillRequired,true);
+console.log("ERN official-page YouTube diversification candidate remains review-only until deployed proof");
