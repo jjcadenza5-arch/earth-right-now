@@ -3,11 +3,11 @@ import {prepareNowMomentPhoto} from "../src/now-moment-photo-client.js";
 import {NOW_MOMENT_PHOTO_API,nowMomentPhotoUploadHeaders} from "../src/now-moment-photo-api-contract.js";
 import {nowMomentPhotoHttpRequest} from "../src/now-moment-photo-http-adapter.js";
 
-assert.equal(NOW_MOMENT_PHOTO_API.originalFilenameAccepted,false);
+assert.equal(NOW_MOMENT_PHOTO_API.originalFilenameAccepted,false);assert.equal(NOW_MOMENT_PHOTO_API.placeLabelAccepted,false);
 assert.equal(NOW_MOMENT_PHOTO_API.freeTextAccepted,false);
 assert.equal(NOW_MOMENT_PHOTO_API.preciseCoordinatesAccepted,false);
 const headers=nowMomentPhotoUploadHeaders({placeId:"x",placeLabel:"Place",mimeType:"image/jpeg",sourceBytes:100,storedBytes:80,width:10,height:10,filename:"secret.jpg"});
-assert.equal(headers["x-ern-place-id"],"x");
+assert.equal(headers["x-ern-place-id"],"x");assert.ok(!("x-ern-place-label" in headers));
 assert.ok(!Object.keys(headers).some(k=>/filename/i.test(k)));
 
 const fakeFile={type:"image/jpeg",size:100};
