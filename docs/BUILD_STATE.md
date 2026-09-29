@@ -1,3 +1,13 @@
+## 2026-09-29 — Human playback packet absorbed; final release green
+- Accepted operator evidence packet `bd51ac5733059f3f` from the deployed ERN review origin.
+- Fresh deployed-origin playback evidence was recorded for 10 existing approved inside-ERN sources.
+- Rovaniemi Santa Claus Village was upgraded in place to the exact official City of Rovaniemi YouTube player.
+- Taitung Jinzun was upgraded in place from CouchTourist to the official East Coast National Scenic Area YouTube player.
+- Kyoto Nishiki Market is human-confirmed and permission-confirmed at 12:57 JST inside its published 11:00–18:00 JST live window, but remains intentionally unpublished pending clearer outside-hours browser wording.
+- Shared source availability now understands provider-published live windows; current discovery, playback actions and browser current-truth gating respect schedules.
+- At the evidence timestamp: 93 catalog sources, 75 current checks, 74 current+healthy truth-ready sources, 16 current in-ERN embeds and 15 expired embeds.
+- Pages workflow `36520033122` completed SUCCESS on head `94c1fdd1a1b84111e86a07c22cd34584e94ac7ba`; every gate through Deploy passed.
+
 ## 2026-09-29 — Human playback packet absorbed; Rovaniemi/Jinzun promoted; final release green
 - Accepted operator evidence packet `bd51ac5733059f3f` generated from the deployed review origin at `earthrightnow.app/review/inside-ern.html`.
 - Ten existing approved sources received fresh deployed-origin `HUMAN_PLAYBACK` evidence: Auckland Viaduct, Bergen Ulriken, Cijin Beach, La Palma Aridane, La Palma Caldera, Ponte di Legno, Skeikampen, Takayama Miyagawa, Verbier and Volcán Tajogaite.
