@@ -24,6 +24,7 @@ const releaseTests=[
   "url-safety.smoke.js",
   "catalog-release-gate.smoke.js",
   "ern-stories.smoke.js",
+  "share-links.smoke.js",
   "guide-ai-routing.smoke.js",
   "guide-ai-deployment-readiness.smoke.js",
   "destination-page-builder.smoke.js",
