@@ -14,7 +14,7 @@ function population(row){
   if(Array.isArray(raw))return raw[0]||null;
   return raw&&typeof raw==="object"?raw:null;
 }
-export function normalizeSeoulRealtimeContext(payload,{observedAt=null,areaAllowlist=[]}={}){
+export function normalizeSeoulRealtimeContext(payload,{areaAllowlist=[]}={}){
   const row=firstRow(payload);
   if(!row)return{ok:false,reason:"NO_CITYDATA_ROW"};
   const areaName=text(row.AREA_NM),areaCode=text(row.AREA_CD);
@@ -24,7 +24,7 @@ export function normalizeSeoulRealtimeContext(payload,{observedAt=null,areaAllow
   if(!p)return{ok:false,reason:"POPULATION_CONTEXT_MISSING"};
   const congestionLevel=text(p.AREA_CONGEST_LVL),congestionMessage=text(p.AREA_CONGEST_MSG);
   const min=finite(p.AREA_PPLTN_MIN),max=finite(p.AREA_PPLTN_MAX);
-  const sourceObservedAt=text(p.PPLTN_TIME)||text(p.PPLTN_TIME_STAMP)||text(row.PPLTN_TIME)||text(row.UPDATE_TIME)||text(observedAt);
+  const sourceObservedAt=text(p.PPLTN_TIME)||text(p.PPLTN_TIME_STAMP)||text(row.PPLTN_TIME)||text(row.UPDATE_TIME);
   if(!sourceObservedAt)return{ok:false,reason:"SOURCE_TIMESTAMP_MISSING"};
   if(!congestionLevel&&!congestionMessage&&min===null&&max===null)return{ok:false,reason:"CURRENT_CONTEXT_FIELDS_MISSING"};
   return{ok:true,context:{
@@ -43,11 +43,13 @@ export function normalizeSeoulRealtimeContext(payload,{observedAt=null,areaAllow
     mayCreateLiveLabel:false
   }};
 }
-export function seoulContextFreshness(context,{now=Date.now(),maxAgeMinutes=15}={}){
+export function seoulContextFreshness(context,{now=Date.now(),maxAgeMinutes=15,maxFutureSkewMinutes=2}={}){
   const t=Date.parse(context?.sourceObservedAt||"");
   const n=now instanceof Date?now.getTime():Number(now);
   if(!Number.isFinite(t)||!Number.isFinite(n))return{current:false,reason:"INVALID_SOURCE_TIMESTAMP"};
-  const ageMinutes=Math.max(0,(n-t)/60000);
+  const deltaMinutes=(n-t)/60000;
+  if(deltaMinutes < -Math.max(0,Number(maxFutureSkewMinutes)||0))return{current:false,reason:"SOURCE_TIMESTAMP_IN_FUTURE",ageMinutes:deltaMinutes};
+  const ageMinutes=Math.max(0,deltaMinutes);
   return ageMinutes<=maxAgeMinutes?{current:true,ageMinutes}:{current:false,ageMinutes,reason:"STALE_CONTEXT"};
 }
 export function publicSeoulContext(result,opts={}){
