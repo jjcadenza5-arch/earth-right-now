@@ -26,6 +26,9 @@ on:
       - "data/source-research-priorities.json"
       - "data/visitor-source-expansion-candidates.json"
       - "data/realtime-context-sources.json"
+      - "scripts/seoul-context-mapping-status.mjs"
+      - "src/seoul-context-mapping.js"
+      - "data/seoul-context-place-mappings.json"
       - "docs/SEE_BEFORE_YOU_GO_STANDARD.md"
       - "data/local-directory.json"
       - "data/travel-offers.json"
@@ -168,6 +171,8 @@ jobs:
         run: node scripts/visitor-source-expansion-status.mjs
       - name: Real-time context integrity
         run: node scripts/realtime-context-status.mjs
+      - name: Seoul context mapping integrity
+        run: node scripts/seoul-context-mapping-status.mjs
       - name: Context truth smoke checks
         run: |
           node tests/realtime-context.smoke.js
