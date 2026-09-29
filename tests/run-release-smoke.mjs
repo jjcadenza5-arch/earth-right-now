@@ -36,6 +36,7 @@ const releaseTests=[
   "offline-currentness.smoke.js",
   "guide-ai-routing.smoke.js",
   "guide-planning-boundary.smoke.js",
+  "guide-place-intent.smoke.js",
   "guide-ai-deployment-readiness.smoke.js",
   "destination-page-builder.smoke.js",
   "public-trust-discovery.smoke.js",
