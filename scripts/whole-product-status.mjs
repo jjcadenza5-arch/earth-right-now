@@ -31,6 +31,8 @@ const product={
 const guideActivationReady=Object.entries(GUIDE_AI_CAPABILITIES).filter(([k])=>k!=="deterministicFallback").every(([,v])=>v===true);
 const currentPartners=partners.filter(p=>activeAffiliatePartner(p));
 const currentOffers=offers.filter(o=>currentTravelOffer(o)&&(!o.partnerId||currentPartners.some(p=>p.id===o.partnerId)));
+const currentPlaceIds=new Set(sources.filter(s=>currentSource(s)).map(s=>String(s.placeId||s.id)));
+const publicEligibleOffers=currentOffers.filter(o=>currentPlaceIds.has(String(o.placeId||"")));
 const connectedChannels=(distribution.channels||[]).filter(x=>x.state==="CONNECTED").map(x=>x.id);
 const analyticsActive=/enabled\s*:\s*true/.test(analytics)&&!/provider\s*:\s*["']NONE["']/.test(analytics);
 const external={
@@ -39,7 +41,7 @@ const external={
  submissionTransport:{deployed:Boolean(submission.endpoint),publicActive:submission.enabled===true&&Boolean(submission.endpoint)},
  nowMomentMedia:{deployed:media.status==="DEPLOYED",publicActive:media.status==="DEPLOYED"&&media.publicActivationAllowed===true,videoEnabled:media.videoEnabled===true,moderationReady:media.moderationQueue===true},
  localEarth:{reviewedPlaces:local.filter(x=>x?.status==="APPROVED").length},
- commercial:{currentAffiliatePartners:currentPartners.length,currentVerifiedOffers:currentOffers.length,inventoryActive:currentOffers.length>0},
+ commercial:{currentAffiliatePartners:currentPartners.length,currentVerifiedOffers:currentOffers.length,publicEligibleOffers:publicEligibleOffers.length,inventoryActive:currentOffers.length>0,publicPlacementAvailable:publicEligibleOffers.length>0},
  distribution:{connectedChannels},
  analytics:{active:analyticsActive}
 };
