@@ -96,7 +96,7 @@
     "attribution": "Pattaya City",
     "checkedAt": "2026-09-29T07:32:00Z",
     "lastSuccessfulCheck": "2026-09-23T14:24:00Z",
-    "failureReason": "PUBLIC_PORTAL_CURRENT_CAMERA_INVENTORY_PRESENT_BUT_INDIVIDUAL_PLAYBACK_UNVERIFIED",
+    "failureReason": "OFFICIAL_COLLECTION_WEBCAMS_OFFLINE_PUBLIC_LIVE_VIEW_ZERO_CAMERAS",
     "quality": 82,
     "freshness": null,
     "moment": 78,
@@ -106,7 +106,7 @@
     "timeZone": "Asia/Bangkok",
     "rightsBasis": "Official Pattaya City CCTV Streaming portal permits public viewing for general information; terms prohibit commercial use and republication without written authorization. ERN remains link-only.",
     "officialUrl": "https://livestream.pattaya.go.th/",
-    "freshnessEvidence": "Pattaya City's official CCTV Streaming portal was rechecked on 2026-09-29. It reports Total 600 cameras, while the public Live View and Camera List currently show 0 cameras. ERN keeps health DEGRADED and does not refresh successful playback/currentness evidence.",
+    "freshnessEvidence": "Pattaya City's official CCTV Streaming portal was rechecked on 2026-09-29. It reports Total 600 cameras, while the public Live View and Camera List currently show 0 cameras. This is provider-offline evidence for the public live collection, so ERN keeps the source DEGRADED and defers recheck until a material provider change; no successful playback/currentness claim is made.",
     "coordinateBasis": "REGION_REFERENCE",
     "coordinateSourceUrl": "https://livestream.pattaya.go.th/",
     "lastFailedCheck": "2026-09-28T17:16:00Z"
