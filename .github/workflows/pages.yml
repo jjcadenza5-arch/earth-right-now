@@ -20,6 +20,7 @@ on:
       - "data/affiliate-platform-research.json"
       - "data/provider-observations.json"
       - "data/embed-research-candidates.json"
+      - "tests/**"
       - "package.json"
       - "data/embed-provider-families.json"
       - "src/research-review-queue.js"
