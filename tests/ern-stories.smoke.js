@@ -21,5 +21,12 @@ const topThree=buildStoryDeck(rows,{now,limit:3});
 console.assert(topThree.some(x=>x.editorialLenses.includes("USEFUL")),"Top three should include Useful Earth when current evidence exists");
 console.assert(topThree.some(x=>x.editorialLenses.includes("INTERESTING")),"Top three should include Interesting Earth when current evidence exists");
 console.assert(topThree.some(x=>x.editorialLenses.includes("BEAUTIFUL")),"Top three should include Beautiful Earth when current evidence exists");
+
+const freshEmbed={...base,id:"embed-fresh",placeId:"embed-fresh",place:"Fresh Embed",title:"Fresh Embed",playback:"EMBED",permission:"EMBED_ALLOWED",truth:"LIVE_VIDEO",embedUrl:"https://www.youtube-nocookie.com/embed/abc12345",sourceUrl:"https://example.com/embed-fresh",playbackVerifiedAt:"2026-09-28T07:55:00Z"};
+const staleEmbed={...freshEmbed,id:"embed-stale",placeId:"embed-stale",place:"Stale Embed",title:"Stale Embed",sourceUrl:"https://example.com/embed-stale",playbackVerifiedAt:"2026-09-27T06:00:00Z"};
+const embedDeck=buildStoryDeck([freshEmbed,staleEmbed],{now,limit:9});
+console.assert(embedDeck.some(x=>x.id==="embed-fresh"),"fresh embed proof should remain Story-eligible");
+console.assert(!embedDeck.some(x=>x.id==="embed-stale"),"stale embed proof must be excluded from Stories");
+
 console.assert(STORY_PRINCIPLE==="Do not push the answer. Create the question.");
 console.log("ERN Stories stays curiosity-first, truth-gated and editorially balanced");
