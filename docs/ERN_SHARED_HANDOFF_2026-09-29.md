@@ -178,14 +178,14 @@ Only interrupt the operator for:
 - an irreducible product decision
 
 ## Next autonomous work
-1. Continue source-health maintenance and provider diversification from CouchTourist debt.
-2. Continue high-value current-source research for genuine visitor destinations, especially honest visual gaps.
-3. Keep Kyoto/Nishiki schedule behavior healthy.
-4. Continue Seoul context implementation without public activation.
-5. Expand commercial readiness internally, but keep exact-link placement fail-closed.
-6. Prepare small batches of account-specific Travelpayouts link requests only when the value is clear.
-7. Continue ERN Guide, Living Atlas, Stories and organic/discoverability improvements without redesigning stable core UI.
-8. Keep continuity docs current after substantial batches.
+ERN core website is complete as a stable beta. Autonomous work is now maintenance-first, not an endless build queue.
+
+1. Repair only real local blockers surfaced by current release/operations checks.
+2. Maintain source truth, recency, schedules and provider resilience without lowering evidence standards.
+3. Make selective product-quality improvements only when they clearly improve the existing experience without redesigning stable core UI.
+4. Keep commercial, Guide AI, participation/media, Seoul context, analytics and social lanes fail-closed until their actual external/account/product trigger exists.
+5. Do not manufacture new work merely because optional external gates remain open.
+6. Keep continuity docs current after substantial state changes.
 
 ## User working style
 - Work autonomously in **large batches**.
