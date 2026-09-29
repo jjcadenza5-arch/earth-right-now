@@ -7,10 +7,7 @@ export const NOW_MOMENT_PHOTO_API=Object.freeze({
   requestMetadataHeaders:Object.freeze([
     "x-ern-place-id",
     "x-ern-photo-mime",
-    "x-ern-photo-source-bytes",
-    "x-ern-photo-stored-bytes",
-    "x-ern-photo-width",
-    "x-ern-photo-height"
+    "x-ern-photo-mime"
   ]),
   originalFilenameAccepted:false,
   placeLabelAccepted:false,
@@ -23,11 +20,7 @@ export function nowMomentPhotoUploadHeaders(meta={}){
   const headers={
     "content-type":"application/octet-stream",
     "x-ern-place-id":String(meta.placeId||""),
-    "x-ern-photo-mime":String(meta.mimeType||""),
-    "x-ern-photo-source-bytes":String(Number(meta.sourceBytes)||0),
-    "x-ern-photo-stored-bytes":String(Number(meta.storedBytes)||0),
-    "x-ern-photo-width":String(Number(meta.width)||0),
-    "x-ern-photo-height":String(Number(meta.height)||0)
+    "x-ern-photo-mime":String(meta.mimeType||"")
   };
   return headers;
 }
