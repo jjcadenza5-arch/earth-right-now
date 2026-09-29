@@ -21,14 +21,15 @@ const view=s=>({
   recencyState:stateOf(s),ageHours:ageHours(s),windowHours:verificationWindowHours(s),
   failureReason:s.failureReason||null
 });
-const recheckItems=stale.map(view),outsideItems=other.map(view);
+const persistentDebtIds=new Set(["pattaya-city-live","tbilisi-mtkvari-river","chidori-sakura"]);
+const recheckItems=stale.map(view),persistentDebtItems=recheckItems.filter(x=>persistentDebtIds.has(x.id)),routineRecheckItems=recheckItems.filter(x=>!persistentDebtIds.has(x.id)),outsideItems=other.map(view);
 const debt=recencyProviderDebt([...recheckItems,...outsideItems]);
 const expiredEmbedDebt=recencyProviderDebt(outsideItems.filter(s=>s.playback==="EMBED"));
 const report={
   generatedAt:now.toISOString(),
   total:rows.length,
   current:{total:current.length,healthy:healthy(current).length,degraded:degraded(current).length,embeds:embeds(healthy(current)).length},
-  recheckDue:{total:stale.length,healthy:healthy(stale).length,degraded:degraded(stale).length,items:recheckItems},
+  recheckDue:{total:stale.length,healthy:healthy(stale).length,degraded:degraded(stale).length,persistentDebt:persistentDebtItems,routine:routineRecheckItems,items:recheckItems},
   outsideCurrentOrRecheck:{total:other.length,healthy:healthy(other).length,degraded:degraded(other).length,items:outsideItems},
   providerDebt:debt,
   expiredEmbedProviderDebt:expiredEmbedDebt,
