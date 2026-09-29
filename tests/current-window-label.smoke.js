@@ -1,1 +1,15 @@
-import { currentWindowEyebrow,currentWindowAction } from "../src/current-window-label.js";const now=new Date().toISOString(),external={health:"HEALTHY",truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",playback:"EXTERNAL",sourceUrl:"https://example.test/live",checkedAt:now,lastSuccessfulCheck:now};console.assert(currentWindowEyebrow(external)==="NEAR-NOW AT SOURCE");console.assert(currentWindowAction(external)==="Open near-now source");const image={health:"HEALTHY",truth:"LIVE_IMAGE",permission:"EMBED_ALLOWED",playback:"IMAGE_REFRESH",sourceUrl:"https://example.test/image.jpg",checkedAt:now,lastSuccessfulCheck:now,freshnessEvidence:"Provider documents refreshed camera imagery"};console.assert(currentWindowEyebrow(image)==="NEAR-NOW IMAGE");console.log("ERN current window labels smoke checks passed");
+import { currentWindowEyebrow,currentWindowAction } from "../src/current-window-label.js";
+const now=new Date();
+const iso=now.toISOString();
+const external={health:"HEALTHY",truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",playback:"EXTERNAL",sourceUrl:"https://example.test/live",checkedAt:iso,lastSuccessfulCheck:iso};
+console.assert(currentWindowEyebrow(external,{now})==="NEAR-NOW AT SOURCE");
+console.assert(currentWindowAction(external,{now})==="Open near-now source");
+const image={health:"HEALTHY",truth:"LIVE_IMAGE",permission:"EMBED_ALLOWED",playback:"IMAGE_REFRESH",sourceUrl:"https://example.test/image.jpg",checkedAt:iso,lastSuccessfulCheck:iso,freshnessEvidence:"Provider documents refreshed camera imagery"};
+console.assert(currentWindowEyebrow(image,{now})==="NEAR-NOW IMAGE");
+const freshEmbed={health:"HEALTHY",truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",playback:"EMBED",sourceUrl:"https://example.test/live",embedUrl:"https://www.youtube-nocookie.com/embed/abc12345",checkedAt:iso,lastSuccessfulCheck:iso,playbackVerifiedAt:iso};
+console.assert(currentWindowEyebrow(freshEmbed,{now})==="LIVE WINDOW");
+console.assert(currentWindowAction(freshEmbed,{now})==="Watch live");
+const staleProof={...freshEmbed,playbackVerifiedAt:new Date(now.getTime()-25*36e5).toISOString()};
+console.assert(currentWindowEyebrow(staleProof,{now})==="PLAYBACK RECHECK DUE");
+console.assert(currentWindowAction(staleProof,{now})==="View source");
+console.log("ERN current window labels fail closed when embed playback proof expires");
