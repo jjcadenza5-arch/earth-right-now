@@ -64,6 +64,8 @@ on:
       - "src/commercial-attribution-runtime.js"
       - "src/discovery-eligibility.js"
       - "src/source-recency.js"
+      - "src/stale-maintenance-class.js"
+      - "src/source-revalidation-triage.js"
       - "src/catalog-metadata-audit.js"
       - "src/manual-context-record.js"
       - "src/solar-moment.js"
