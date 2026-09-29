@@ -1,3 +1,4 @@
+import {readJsonBodyBounded} from "../../src/bounded-json-body.js";
 import {earthSignalHttpRequest} from "../../src/earth-signal-http-adapter.js";
 import {earthSignalRateSubject} from "../../src/earth-signal-rate-limiter-contract.js";
 export {SignalState} from "./signal-state.js";
@@ -78,7 +79,7 @@ export default{
       }
       const m=url.pathname.match(/^\/internal\/earth-signals\/([^/]+)\/resolve$/);
       if(request.method==="POST"&&m){
-        let body;try{body=await request.json()}catch{return reply(400,{ok:false,reason:"INVALID_JSON"})}
+        let body;try{body=await readJsonBodyBounded(request,4096)}catch(error){return reply(error.code==="REQUEST_TOO_LARGE"?413:400,{ok:false,reason:error.code||"INVALID_JSON"})}
         const decision=String(body?.decision||"");
         if(!["RESTORE","REMOVE"].includes(decision))return reply(400,{ok:false,reason:"INVALID_RESOLUTION"});
         const x=await stateCall(env,{op:"resolve-report",signalId:decodeURIComponent(m[1]),decision,now:Date.now()});
@@ -95,7 +96,7 @@ export default{
     let knownPlaceIds;try{knownPlaceIds=await catalogPlaceIds(env)}catch(error){return reply(503,{ok:false,mode:"READ_ONLY",reason:error.code||"TRUSTED_CATALOG_UNAVAILABLE"},origin)}
     const {storage,rateLimiter}=adapters(env);
     let body={};
-    if(request.method==="POST"){try{body=await request.json()}catch{return reply(400,{ok:false,reason:"INVALID_JSON"},origin)}}
+    if(request.method==="POST"){try{body=await readJsonBodyBounded(request,4096)}catch(error){return reply(error.code==="REQUEST_TOO_LARGE"?413:400,{ok:false,reason:error.code||"INVALID_JSON"},origin)}}
     const result=await earthSignalHttpRequest({
       method:request.method,
       path:url.pathname,
