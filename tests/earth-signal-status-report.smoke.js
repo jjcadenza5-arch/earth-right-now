@@ -6,7 +6,7 @@ const r=earthSignalStatusReport();
 assert.equal(r.mode,"READ_ONLY");
 assert.equal(r.ready,false);
 assert.equal(r.blockers.length,7);
-assert.equal(r.truth,"Architecture readiness and an API contract are not production capability; deployment evidence must also pass.");
+assert.equal(r.truth,"Production infrastructure may be deployed while Earth Signals remain read-only; visitor contributions require complete evidence plus explicit public activation.");
 assert.equal(r.backendContract.version,"2026-09-25.v1");
 assert.equal(r.backendContract.ttlMinutes,45);
 assert.equal(r.backendFoundation.state,"PREPARED_NOT_DEPLOYED");
@@ -31,6 +31,7 @@ assert.equal(noDeployment.mode,"READ_ONLY");
 assert.equal(noDeployment.ready,false);
 
 const deploymentEvidence={
+ status:"DEPLOYED",
  endpointUrl:"https://signals.example.test/api/earth-signals",
  durableStorage:true,
  serverRateLimits:true,
@@ -43,14 +44,27 @@ const deploymentEvidence={
  privacyPublished:true,
  secretIsolation:true,
  observability:true,
- costGuard:true
+ costGuard:true,
+ publicActivationAllowed:false
 };
-const enabled=earthSignalStatusReport(all,{deploymentEvidence});
+const gated=earthSignalStatusReport(all,{deploymentEvidence});
+assert.equal(gated.mode,"READ_ONLY");
+assert.equal(gated.ready,false);
+assert.equal(gated.backendFoundation.deployedTransport,true);
+assert.equal(gated.deployment.state,"DEPLOYMENT_EVIDENCE_COMPLETE");
+assert.deepEqual(gated.blockers,["Explicit public activation decision"]);
+
+const enabled=earthSignalStatusReport(all,{deploymentEvidence:{...deploymentEvidence,publicActivationAllowed:true}});
 assert.equal(enabled.mode,"CONTRIBUTION_ENABLED");
 assert.equal(enabled.ready,true);
 assert.equal(enabled.backendFoundation.deployedTransport,true);
 
-console.log("Earth Signal operator status requires both capabilities and deployment evidence");
+const partial=earthSignalStatusReport(all,{deploymentEvidence:{...deploymentEvidence,observability:false,costGuard:false}});
+assert.equal(partial.mode,"READ_ONLY");
+assert.equal(partial.deployment.state,"DEPLOYED_EVIDENCE_PARTIAL");
+assert.deepEqual(partial.deployment.missing,["observability","costGuard"]);
+
+console.log("Earth Signal operator status distinguishes deployed, evidence-complete and explicitly activated states");
 
 const publishedOnly=earthSignalStatusReport(EARTH_SIGNAL_CAPABILITIES,{deploymentEvidence:{
  status:"NOT_DEPLOYED",
@@ -66,7 +80,8 @@ const publishedOnly=earthSignalStatusReport(EARTH_SIGNAL_CAPABILITIES,{deploymen
  privacyPublished:true,
  secretIsolation:false,
  observability:false,
- costGuard:false
+ costGuard:false,
+ publicActivationAllowed:false
 }});
 assert.equal(publishedOnly.deployment.ready,false);
 assert.equal(publishedOnly.deployment.missing.length,10);
