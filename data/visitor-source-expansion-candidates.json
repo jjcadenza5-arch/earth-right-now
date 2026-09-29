@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T17:50:00Z",
+  "generatedAt": "2026-09-29T02:15:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -387,6 +387,40 @@
           "recheckRule": "MATERIAL_PROVIDER_STATE_CHANGE_ONLY"
         }
       ]
+    },
+    {
+      "id": "taitung-chihshang-official-live-replacement",
+      "destination": "Chihshang Paradise Road, Taitung County, Taiwan",
+      "provider": "Taitung County Government Tourism",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "OFFICIAL_LIVE_CAMERA_REPLACEMENT",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "currentEvidence": [
+        "https://tour.taitung.gov.tw/en/media/live-camera/list",
+        "https://tour.taitung.gov.tw/en/media/live-camera/29"
+      ],
+      "observed": "Official Taitung Travel live-camera directory currently lists Chihshang Paradise Road among the county's live cameras.",
+      "replacesExpiredSourceId": "chihshang-paradise-road",
+      "state": "OFFICIAL_CURRENT_SOURCE_CONFIRMED_EXACT_EMBED_TARGET_UNRESOLVED",
+      "next": "Resolve the exact provider-hosted/YouTube player target from the official page. Keep the existing CouchTourist source expired; do not infer embed permission or promote until an exact target is staged and reviewed."
+    },
+    {
+      "id": "mpala-explore-official-live-replacement",
+      "destination": "Mpala Research Centre, Laikipia, Kenya",
+      "provider": "Explore.org / Mpala Research Centre",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "OFFICIAL_PARTNER_LIVE_CAMERA_REPLACEMENT",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "currentEvidence": [
+        "https://explore.org/livecams/mpala/african-watering-hole-animal-camera",
+        "https://mpala.org/"
+      ],
+      "observed": "Explore.org currently exposes the African Watering Hole Animal Camera under Mpala, and Mpala's own site currently presents Mpala LIVE.",
+      "replacesExpiredSourceId": "mpala-watering-hole",
+      "state": "CURRENT_PROVIDER_LIVE_SURFACE_CONFIRMED_PLAYER_TARGET_UNRESOLVED",
+      "next": "Resolve a provider-enabled branded player target only if Explore's specific camera supports embedding. Do not reuse the previously failed Brooks Falls target and do not infer embed permission from live-page availability alone."
     }
   ],
   "guardrails": {
