@@ -4,6 +4,7 @@ import { sourceAvailabilityState,recencyState } from "../src/source-recency.js";
 import { currentTravelOffer } from "../src/travel-offer-verification.js";
 import { affiliatePartner,activeAffiliatePartner } from "../src/affiliate-partners.js";
 import { currentLocalDirectoryEntry } from "../src/local-directory-status.js";
+import { embedPlaybackProofCurrent } from "../src/playback-proof.js";
 import fs from "node:fs";
 
 const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
@@ -16,12 +17,7 @@ const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>
 const slug=s=>String(s).replace(/[^a-zA-Z0-9_-]/g,"-");
 const safe=u=>{try{const x=new URL(u);return /^https?:$/.test(x.protocol)?x.toString():""}catch{return""}};
 const date=s=>{const d=new Date(s);return Number.isNaN(d.getTime())?"":d.toISOString()};
-const embedPlaybackCurrent=(s,now)=>{
-  if(s?.playback!=="EMBED")return true;
-  const t=Date.parse(s?.playbackVerifiedAt||"");
-  return Number.isFinite(t)&&Math.max(0,(now.getTime()-t)/36e5)<=24;
-};
-const pageCurrentSource=(s,now)=>currentSource(s,{now})&&embedPlaybackCurrent(s,now);
+const pageCurrentSource=(s,now)=>currentSource(s,{now})&&embedPlaybackProofCurrent(s,{now});
 const latestDate=items=>{
   const times=items.map(s=>Date.parse(s.lastSuccessfulCheck||s.checkedAt||"")).filter(Number.isFinite).sort((a,b)=>b-a);
   return times[0]?new Date(times[0]).toISOString().slice(0,10):null;
@@ -48,7 +44,7 @@ for(const [id,items] of map){
   const currentItems=items.filter(s=>pageCurrentSource(s,buildNow));
   const scheduledClosedItems=items.filter(s=>{
     const a=sourceAvailabilityState(s,{now:buildNow});
-    return a.restricted&&!a.open&&recencyState(s,{now:buildNow})==="CURRENT_CHECK"&&s.health==="HEALTHY"&&embedPlaybackCurrent(s,buildNow);
+    return a.restricted&&!a.open&&recencyState(s,{now:buildNow})==="CURRENT_CHECK"&&s.health==="HEALTHY"&&embedPlaybackProofCurrent(s,{now:buildNow});
   });
   const waitingItems=items.filter(s=>!currentItems.includes(s)&&!scheduledClosedItems.includes(s));
   const indexable=currentItems.length>0||scheduledClosedItems.length>0;
@@ -101,7 +97,7 @@ for(const [id,items] of map){
     const fresh=checked?' · ERN checked <time datetime="'+esc(checked)+'">'+esc(checked.slice(0,10))+'</time>':" · verification time unavailable";
     const link=href?' · <a href="'+esc(href)+'" rel="noopener noreferrer">Provider source</a>':"";
     const availability=sourceAvailabilityState(s,{now:buildNow});
-    const playbackFresh=embedPlaybackCurrent(s,buildNow);
+    const playbackFresh=embedPlaybackProofCurrent(s,{now:buildNow});
     const truth=!playbackFresh&&s.playback==="EMBED"?"PLAYBACK RECHECK DUE":availability.restricted&&!availability.open?"OUTSIDE LIVE HOURS":currentWindowEyebrow(s,{now:buildNow});
     return '<li><strong>'+esc(s.title)+'</strong> — '+esc(truth)+' · '+esc(s.provider||"Provider")+fresh+link+'</li>';
   };
