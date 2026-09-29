@@ -1,3 +1,13 @@
+## 2026-09-29 — Provider-page YouTube preflight fixed; current inventory reached 73
+- Refreshed the exact Statue of Liberty close-view source from current EarthCam network evidence identifying Statue of Liberty Cam as a live streaming view.
+- Current catalog state: 73 current+healthy, 3 stale, 16 expired.
+- The remaining stale set is now intentionally narrow: Pattaya and Chidori are degraded by current/off-season evidence; Tbilisi Mtkvari remains stale because its exact page is active but fresh live wording is still not explicit enough for automatic renewal.
+- Fixed a research-preflight blind spot: YouTube candidates may now use an official provider page as `sourceUrl` while ERN derives exact video metadata from the reviewed YouTube embed target. This supports Kyoto/Rovaniemi-style provider-page → YouTube-player research without converting technical reachability into permission or playback proof.
+- Added smoke coverage for the official-provider-page YouTube preflight path.
+- Expanded Pages path triggers to include provider-family research, research-review queue, recency-provider-debt, embed-research-preflight and associated smoke tests so those changes rebuild the deployed operator review surface.
+- Normalized Rovaniemi candidate state to `HUMAN_PLAYBACK_REQUIRED`; it remains RESEARCH_ONLY and blocked from promotion.
+- Added provider diversification as an operational research modifier only. It may raise research priority when maintenance debt is concentrated, but may not affect Watch Earth ranking or override truth, permission or quality.
+
 ## 2026-09-29 — Recency debt concentrated; Rovaniemi diversification staged
 - Refreshed Statue of Liberty HarborCam and Reykjavík current-image source from fresh exact provider evidence.
 - Current catalog state: 72 current+healthy, 4 stale, 16 expired.
