@@ -1,5 +1,6 @@
 import {readFile} from "node:fs/promises";
 import {recencyState,verificationWindowHours} from "../src/source-recency.js";
+import {recencyProviderDebt} from "../src/recency-provider-debt.js";
 
 const rows=JSON.parse(await readFile(new URL("../data/sources.json",import.meta.url),"utf8"));
 const now=new Date();
@@ -20,16 +21,22 @@ const view=s=>({
   ageHours:ageHours(s),windowHours:verificationWindowHours(s),
   failureReason:s.failureReason||null
 });
+const recheckItems=stale.map(view),outsideItems=other.map(view);
+const debt=recencyProviderDebt([...recheckItems,...outsideItems]);
+const expiredEmbedDebt=recencyProviderDebt(outsideItems.filter(s=>s.playback==="EMBED"));
 const report={
   generatedAt:now.toISOString(),
   total:rows.length,
   current:{total:current.length,healthy:healthy(current).length,degraded:degraded(current).length,embeds:embeds(healthy(current)).length},
-  recheckDue:{total:stale.length,healthy:healthy(stale).length,degraded:degraded(stale).length,items:stale.map(view)},
-  outsideCurrentOrRecheck:{total:other.length,healthy:healthy(other).length,degraded:degraded(other).length,items:other.map(view)},
+  recheckDue:{total:stale.length,healthy:healthy(stale).length,degraded:degraded(stale).length,items:recheckItems},
+  outsideCurrentOrRecheck:{total:other.length,healthy:healthy(other).length,degraded:degraded(other).length,items:outsideItems},
+  providerDebt:debt,
+  expiredEmbedProviderDebt:expiredEmbedDebt,
   maintenance:{
     healthyOutsideCurrent:healthy([...stale,...other]).length,
     degradedTotal:rows.filter(s=>s.health==="DEGRADED").length,
-    expiredEmbedsNeedingProof:other.filter(s=>s.playback==="EMBED"&&s.health==="HEALTHY").map(view)
+    expiredEmbedsNeedingProof:other.filter(s=>s.playback==="EMBED"&&s.health==="HEALTHY").map(view),
+    replacementResearchSuggested:Boolean(expiredEmbedDebt.concentrated&&expiredEmbedDebt.primary?.provider)
   },
   note:"Advisory maintenance report only. It must not extend verification windows or promote a source. Current product surfaces still rely on the source-recency and playback-proof gates."
 };
