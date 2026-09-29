@@ -84,14 +84,20 @@ if(earth.status!=="DEPLOYED"){
     beforeTrigger:"NO_PUBLIC_ACTIVATION"
   });
 }else if(earth.publicActivationAllowed!==true){
+  const evidenceComplete=earth.observability===true&&earth.costGuard===true;
   add({
     id:"earth-signals-public-activation",
     lane:"PARTICIPATION",
-    state:"DEPLOYED_PUBLIC_OFF",
-    trigger:"Live deployment evidence is verified and an explicit product decision approves a limited Earth Signals pilot.",
+    state:evidenceComplete?"DEPLOYED_PUBLIC_OFF":"DEPLOYED_PUBLIC_OFF_EVIDENCE_PARTIAL",
+    trigger:evidenceComplete
+      ?"An explicit product decision approves a limited Earth Signals pilot after current deployment evidence is reviewed."
+      :"Observability and cost-guard evidence are independently verified, then an explicit product decision approves a limited Earth Signals pilot.",
     nextEligibleAt:null,
     eligibleNow:false,
-    beforeTrigger:"READ_ONLY"
+    beforeTrigger:"READ_ONLY",
+    deploymentVerified:true,
+    observabilityVerified:earth.observability===true,
+    costGuardVerified:earth.costGuard===true
   });
 }
 if(submission.enabled!==true){
