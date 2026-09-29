@@ -1,12 +1,12 @@
 import { providerHealthObservation } from "./provider-health-observation.js";
 
 export function providerObservationBatch(entries=[],{observedAt=new Date().toISOString(),knownSourceIds=null}={}){
- const observations={},rejected=[],superseded=[];
+ const observations={},rejected=[],superseded=[],researchOnly=[];
  const known=knownSourceIds?new Set([...knownSourceIds].map(String)):null;
  for(const entry of entries||[]){
   const id=String(entry?.id||"").trim();
   if(!id){rejected.push({id:null,reason:"MISSING_SOURCE_ID"});continue}
-  if(known&&!known.has(id)){rejected.push({id,reason:"UNKNOWN_SOURCE_ID"});continue}
+  if(known&&!known.has(id)){if(entry?.scope==="RESEARCH_GAP"){researchOnly.push({id,scope:"RESEARCH_GAP",observedAt:entry?.observedAt||null,confirmation:entry?.confirmation||null,reason:entry?.reason||null,sourceUrl:entry?.sourceUrl||null});continue}rejected.push({id,reason:"UNKNOWN_SOURCE_ID"});continue}
   const observation=providerHealthObservation(entry,{observedAt:entry?.observedAt||observedAt});
   if(!observation){rejected.push({id,reason:"INVALID_OBSERVATION"});continue}
   const previous=observations[id];
@@ -19,5 +19,5 @@ export function providerObservationBatch(entries=[],{observedAt=new Date().toISO
     superseded.push({id,observedAt:observation.observedAt||null,replacedBy:previous.observedAt||null});
   }
  }
- return{observations,rejected,superseded,total:Object.keys(observations).length};
+ return{observations,rejected,superseded,researchOnly,total:Object.keys(observations).length};
 }
