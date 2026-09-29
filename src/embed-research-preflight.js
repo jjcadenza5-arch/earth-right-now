@@ -12,6 +12,19 @@ function youtubeEmbedUrl(raw){
   if(!["youtube-nocookie.com","youtube.com"].includes(host)||!u.pathname.startsWith("/embed/"))return null;
   return u.href;
 }
+function youtubeVideoIdFromEmbed(raw){
+  const u=parseHttps(raw);if(!u)return null;
+  const host=u.hostname.toLowerCase().replace(/^www\./,"");
+  if(!["youtube-nocookie.com","youtube.com"].includes(host)||!u.pathname.startsWith("/embed/"))return null;
+  const tail=u.pathname.slice("/embed/".length).split("/")[0];
+  if(!tail||tail==="live_stream")return null;
+  return tail;
+}
+function youtubeMetadataTarget(sourceRaw,embedRaw){
+  const direct=youtubeWatchUrl(sourceRaw);if(direct)return direct;
+  const id=youtubeVideoIdFromEmbed(embedRaw);
+  return id?"https://www.youtube.com/watch?v="+encodeURIComponent(id):null;
+}
 function exploreSourceUrl(raw){
   const u=parseHttps(raw);if(!u)return null;
   const host=u.hostname.toLowerCase().replace(/^www\./,"");
@@ -35,23 +48,27 @@ async function fetchPage(url,{fetchImpl,timeoutMs}){
   return{status:r.status,url:r.url||url};
 }
 async function youtubePreflight(candidate,{fetchImpl,timeoutMs}){
-  const sourceUrl=youtubeWatchUrl(candidate?.sourceUrl),embedUrl=youtubeEmbedUrl(candidate?.candidateEmbedUrl);
-  if(!sourceUrl||!embedUrl)return null;
-  const oembed="https://www.youtube.com/oembed?url="+encodeURIComponent(sourceUrl)+"&format=json";
-  let meta=null,page=null,metaError=null,pageError=null;
-  try{meta=await fetchJson(oembed,{fetchImpl,timeoutMs})}catch(error){metaError=String(error?.message||error)}
+  const providerSource=parseHttps(candidate?.sourceUrl),embedUrl=youtubeEmbedUrl(candidate?.candidateEmbedUrl);
+  if(!providerSource||!embedUrl)return null;
+  const metadataTarget=youtubeMetadataTarget(candidate?.sourceUrl,candidate?.candidateEmbedUrl);
+  const oembed=metadataTarget?"https://www.youtube.com/oembed?url="+encodeURIComponent(metadataTarget)+"&format=json":null;
+  let meta=null,page=null,sourcePage=null,metaError=null,pageError=null,sourceError=null;
+  if(oembed){try{meta=await fetchJson(oembed,{fetchImpl,timeoutMs})}catch(error){metaError=String(error?.message||error)}}
   try{page=await fetchPage(embedUrl,{fetchImpl,timeoutMs})}catch(error){pageError=String(error?.message||error)}
+  try{sourcePage=await fetchPage(providerSource.href,{fetchImpl,timeoutMs})}catch(error){sourceError=String(error?.message||error)}
   const metadataAvailable=Boolean(meta&&meta.status>=200&&meta.status<300&&meta.json?.title);
+  const sourcePageReachable=Boolean(sourcePage&&sourcePage.status>=200&&sourcePage.status<400);
   const embedPageReachable=Boolean(page&&page.status>=200&&page.status<400);
-  const technicalReady=metadataAvailable&&embedPageReachable;
+  const technicalReady=embedPageReachable&&(metadataAvailable||sourcePageReachable);
   return{
-    id:candidate.id,provider:candidate.provider||null,platform:candidate.platform||null,sourceUrl,candidateEmbedUrl:embedUrl,
-    outcome:technicalReady?"TECHNICALLY_READY_FOR_DEPLOYED_TEST":metadataAvailable||embedPageReachable?"PARTIAL_TECHNICAL_EVIDENCE":"TECHNICAL_PREFLIGHT_FAILED",
-    metadataAvailable,sourcePageReachable:metadataAvailable,embedPageReachable,technicalReady,
-    oembed:{httpStatus:meta?.status??null,title:meta?.json?.title||null,authorName:meta?.json?.author_name||null,providerName:meta?.json?.provider_name||null,error:metaError},
+    id:candidate.id,provider:candidate.provider||null,platform:candidate.platform||null,sourceUrl:providerSource.href,candidateEmbedUrl:embedUrl,
+    outcome:technicalReady?"TECHNICALLY_READY_FOR_DEPLOYED_TEST":metadataAvailable||sourcePageReachable||embedPageReachable?"PARTIAL_TECHNICAL_EVIDENCE":"TECHNICAL_PREFLIGHT_FAILED",
+    metadataAvailable,sourcePageReachable,embedPageReachable,technicalReady,
+    oembed:{target:metadataTarget,httpStatus:meta?.status??null,title:meta?.json?.title||null,authorName:meta?.json?.author_name||null,providerName:meta?.json?.provider_name||null,error:metaError},
+    source:{httpStatus:sourcePage?.status??null,finalUrl:sourcePage?.url||providerSource.href,error:sourceError},
     embed:{httpStatus:page?.status??null,finalUrl:page?.url||embedUrl,error:pageError},
     permissionConfirmed:false,humanPlaybackConfirmed:false,promotionAllowed:false,
-    note:"YouTube technical preflight only. oEmbed/embed reachability does not prove per-video permission on ERN, live/current playback, or catalog eligibility."
+    note:"YouTube technical preflight only. Official provider-page reachability, oEmbed metadata and embed-page reachability do not prove ERN permission, live/current playback, or catalog eligibility."
   };
 }
 async function explorePreflight(candidate,{fetchImpl,timeoutMs}){
