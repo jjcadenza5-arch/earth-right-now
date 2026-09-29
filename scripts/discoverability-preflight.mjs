@@ -46,6 +46,11 @@ for(const entry of destinationDirs){
   if(!/rel="canonical" href="https:\/\/earthrightnow\.app\/places\//.test(html))issues.push({code:"DESTINATION_CANONICAL_MISSING",place:entry.name});
   if(!/BreadcrumbList/.test(html))issues.push({code:"DESTINATION_BREADCRUMB_MISSING",place:entry.name});
   if(!/"@type":"Place"/.test(html))issues.push({code:"DESTINATION_PLACE_SCHEMA_MISSING",place:entry.name});
+  if(/rel="sponsored noopener noreferrer"/.test(html)){
+    if(!html.includes("Affiliate link"))issues.push({code:"AFFILIATE_DISCLOSURE_MISSING",place:entry.name});
+    if(!html.includes("Affiliate availability never affects ERN source ranking"))issues.push({code:"AFFILIATE_RANKING_BOUNDARY_MISSING",place:entry.name});
+  }
+  if(html.includes("Reviewed local places")&&!html.includes("These entries are not paid placements"))issues.push({code:"LOCAL_PLACE_NONPAID_DISCLOSURE_MISSING",place:entry.name});
 }
 
 const report={
