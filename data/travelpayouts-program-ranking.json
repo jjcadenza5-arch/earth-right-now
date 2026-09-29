@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T14:25:00Z",
+  "generatedAt": "2026-09-29T04:36:00Z",
   "basis": "Fit-first assessment from the complete 26-program Travelpayouts Available inventory shown by the operator. Commission is secondary to ERN visitor utility and editorial fit.",
   "strategy": {
     "principle": "Camera quality and live/current truth come first. Commercial usefulness may help prioritize destinations, but never changes editorial ranking or truth labels.",
@@ -387,5 +387,13 @@
     "exactPartnerLinkRequired": true,
     "exactPartnerTermsReviewRequired": true,
     "explicitAffiliateDisclosureRequired": true
+  },
+  "operatorPlatformEvidence": {
+    "observedAt": "2026-09-29T04:03:00Z",
+    "project": "Earthrightnow",
+    "status": "ACTIVE_GREEN_OPERATOR_CONFIRMED",
+    "availableProgramCount": 26,
+    "payoutMethodConfigured": false,
+    "note": "Operator screenshot confirms the Earthrightnow Travelpayouts project is active/green with 26 available programs. The account still shows a prompt to set the payout method."
   }
 }
