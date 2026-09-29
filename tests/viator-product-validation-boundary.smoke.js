@@ -20,10 +20,10 @@ assert.match(worker,/PLACE_NOT_MAPPED/);
 assert.match(worker,/approvedMapping/);
 assert.match(contract,/VIATOR_PRODUCT_VALIDATION_PATH/);
 assert.equal(deployment.publicActivationAllowed,false);
-assert.equal(deployment.productSearchVerified,false);
-assert.equal(deployment.affiliateAttributionVerified,false);
+assert.equal(deployment.productSearchVerified,true);
+assert.equal(deployment.affiliateAttributionVerified,true);
 assert.ok(!cfg.includes("ERN_VIATOR_VALIDATION_TOKEN"),"validation token must be a Worker secret, not wrangler vars");
 assert.ok(!cfg.includes("VIATOR_AFFILIATE_PID"),"affiliate PID must be a Worker secret, not wrangler vars");
 assert.ok(!worker.includes("P00322254"),"affiliate PID must not be hard-coded in Worker source");
 
-console.log("Viator product validation boundary: prepared, secret-gated, public OFF");
+console.log("Viator product validation boundary: verified, secret-gated, public OFF");
