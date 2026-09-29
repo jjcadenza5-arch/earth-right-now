@@ -23,6 +23,8 @@ must(policy.includes("videoEnabled:false"),"video must remain disabled");
 must(metadata.includes("EXIF_PRESENT")&&metadata.includes("XMP_PRESENT")&&metadata.includes("GPS_METADATA_SUSPECTED"),"JPEG metadata rejection incomplete");
 must(metadata.includes("PNG_METADATA_CHUNK")&&metadata.includes("WEBP_METADATA_CHUNK"),"PNG/WebP metadata rejection incomplete");
 must(service.includes("moderationRequired:true")&&service.includes("reportNowMomentPhoto")&&service.includes("cleanupNowMomentPhotos"),"moderation/report/cleanup service contract incomplete");
+must(service.includes("metadata.listExpired")&&service.indexOf("objects.delete(r.objectKey)")<service.indexOf("metadata.delete(r.id)"),"retry-safe expiry cleanup ordering missing");
+must(state.includes('b.op==="list-expired"')&&state.includes('b.op==="delete"'),"retry-safe media state cleanup operations missing");
 must(worker.includes("PENDING_REVIEW")&&worker.includes("published:false"),"upload must remain moderation-first");
 must(worker.includes("rawNetworkIdentifiersStored:false"),"worker must explicitly avoid raw network identifier storage");
 must(worker.includes("directBucketPublicAccess:false"),"R2 bucket must remain non-public");
@@ -39,7 +41,7 @@ console.log(JSON.stringify({
   deployed:false,
   publicActivationAllowed:false,
   policy:{ttlMinutes:45,maxStoredBytes:1572864,maxDimensionPx:1920,videoEnabled:false,automaticPublicationAllowed:false,freeTextAccepted:false,preciseCoordinatesStored:false},
-  safeguards:{privateObjectStorage:true,metadataScan:true,canonicalPlaceValidation:true,serverRateLimits:true,humanModeration:true,abuseReporting:true,expiryCleanup:true,rawNetworkIdentifiersStored:false},
+  safeguards:{privateObjectStorage:true,metadataScan:true,canonicalPlaceValidation:true,serverRateLimits:true,humanModeration:true,abuseReporting:true,expiryCleanup:true,retrySafeObjectDeletion:true,rawNetworkIdentifiersStored:false},
   next:prepared?"CONTROLLED_INFRASTRUCTURE_DEPLOYMENT_WHEN_HUMAN_APPROVES":"REPAIR_MEDIA_PREPARATION",
   fail
 },null,2));
