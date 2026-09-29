@@ -257,5 +257,19 @@
     "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
     "observedAt": "2026-09-29T05:40:00Z",
     "reason": "Murakami City's official live-camera directory currently retains the Sasagawa Nagare / Samugawa-area external live-camera route. Catalog now uses the municipal directory as an external LINK_ONLY handoff."
+  },
+  {
+    "id": "cancun-live-aqua-beach",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T06:02:00Z",
+    "reason": "NIZUC Resort & Spa's official Live Cam page currently presents resort-operated real-time Cancún beachfront views. The catalog now uses that direct resort page as an external LINK_ONLY handoff."
+  },
+  {
+    "id": "st-johns-harbour",
+    "httpStatus": 200,
+    "confirmation": "PROVIDER_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T06:02:00Z",
+    "reason": "CBC News Newfoundland and Labrador currently operates a public St. John's harbour/Narrows webcam from The Rooms. The catalog now uses the broadcaster's live stream as an external LINK_ONLY handoff."
   }
 ]
