@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "DEPLOYED_GATED",
+  "status": "DEPLOYED_AUTH_CONFIRMED_PUBLIC_OFF",
   "endpointUrl": "https://ern-travel-api.jjcadenza6.workers.dev",
   "secretIsolation": true,
   "corsOrigin": "https://earthrightnow.app",
@@ -11,19 +11,20 @@
   "productSearchVerified": false,
   "affiliateAttributionVerified": false,
   "publicActivationAllowed": false,
-  "checkedAt": "2026-09-27T15:10:00Z",
-  "note": "Travel Worker is deployed and secret-isolated. Viator sandbox key is enabled in the partner portal. A Viator partner email states that API key activation can take up to 48 hours. Current sandbox diagnostics return 401 Invalid API Key for both /destinations and a documented sample product endpoint. Public activation remains off. Do not rotate or re-enter the key unless this persists beyond the provider activation window.",
-  "sandboxKeyState": "ENABLED_PENDING_ACTIVATION",
+  "checkedAt": "2026-09-29T15:42:04Z",
+  "note": "Viator sandbox API key authentication is confirmed active. Public activation remains OFF. Next work is exact destination taxonomy mapping, controlled product-search validation, and affiliate attribution verification; time/auth success alone does not authorize public products.",
+  "sandboxKeyState": "ACTIVE_AUTH_CONFIRMED",
   "lastDiagnostic": {
     "environment": "SANDBOX",
-    "destinationsStatus": 401,
-    "sampleProductStatus": 401,
-    "errorCode": "UNAUTHORIZED",
-    "errorMessage": "Invalid API Key",
-    "observedAt": "2026-09-27T15:10:00Z"
+    "destinationsStatus": 200,
+    "sampleProductStatus": 200,
+    "errorCode": null,
+    "errorMessage": null,
+    "observedAt": "2026-09-29T15:42:04Z",
+    "secretValuesExposed": false
   },
-  "nextRecommendedRetestAt": "2026-09-29T15:21:00Z",
-  "retestPolicy": "Do not repeat sandbox diagnostics before the recommended retest time unless Viator reports the key active earlier or the key/access state materially changes.",
+  "nextRecommendedRetestAt": null,
+  "retestPolicy": "Authentication is now confirmed. Do not repeat activation diagnostics unless Viator auth materially fails or provider/key state changes.",
   "providerActivationWindow": "UP_TO_48_HOURS",
-  "activationEvidence": "Viator partner email states: it can take up to 48 hours for the API key to be active."
+  "activationEvidence": "One-time post-window diagnostic on 2026-09-29 returned HTTP 200 for both /destinations and documented sample product /products/5010SYDNEY via the deployed secret-isolated ERN Travel Worker."
 }
