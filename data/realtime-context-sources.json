@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T17:40:00Z",
+  "generatedAt": "2026-09-29T06:34:00Z",
   "publicActivationAllowed": false,
   "principle": "Real-time context may explain what a place is like now, but must remain separate from visual source truth and may never manufacture a LIVE label.",
   "sources": [
@@ -12,7 +12,7 @@
       "tourismSurface": "Seoul Tourism Organization / Visit Seoul",
       "officialTourismUrl": "https://english.visitseoul.net/realtime-seoul",
       "openDataUrl": "https://data.seoul.go.kr/dataList/OA-22270/A/1/datasetView.do",
-      "state": "API_CONTRACT_VERIFIED_KEY_REQUIRED_NOT_PUBLIC",
+      "state": "API_CONTRACT_VERIFIED_KEY_REQUIRED_FAIL_CLOSED_ADAPTER_READY_NOT_PUBLIC",
       "freshness": "REAL_TIME",
       "dataTypes": [
         "crowd_density",
@@ -63,7 +63,7 @@
         "GUIDE_WORDING_FAILS_CLOSED_WHEN_STALE",
         "PRIVACY_REVIEW_COMPLETE"
       ],
-      "next": "Obtain a Seoul Open Data API key through a human/provider action, then implement a server-side read-only adapter against citydata_eng. Validate actual JSON response timestamps/fields for approved ERN place mappings before any public activation.",
+      "next": "Obtain a Seoul Open Data API key through a human/provider action. The ERN adapter now requires a provider-supplied timestamp, rejects unapproved areas, rejects stale data, and rejects material future clock skew. Next validate real citydata_eng responses for approved place mappings before any public activation.",
       "api": {
         "datasetId": "OA-22714",
         "service": "citydata_eng",
@@ -111,7 +111,10 @@
         "historicalArchiveExpected": false,
         "staleBehavior": "HIDE_CURRENT_CONTEXT_AND_KEEP_CAMERA_SOURCE_VISIBLE",
         "serverTimestampRequired": true,
-        "clientClockMustNotCreateFreshness": true
+        "clientClockMustNotCreateFreshness": true,
+        "sourceTimestampMustBeProviderSupplied": true,
+        "maxFutureSkewMinutes": 2,
+        "clientSuppliedTimestampMayCreateFreshness": false
       },
       "acquisition": {
         "kind": "API",
