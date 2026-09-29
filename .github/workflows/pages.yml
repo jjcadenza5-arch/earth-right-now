@@ -51,6 +51,8 @@ on:
       - "tests/embed-research-preflight.smoke.js"
       - "src/provider-family-research.js"
       - "src/recency-provider-debt.js"
+      - "scripts/provider-concentration-status.mjs"
+      - "src/provider-concentration.js"
       - "tests/research-review-queue.smoke.js"
       - "tests/recency-provider-debt.smoke.js"
       - "scripts/operator-review-page-preflight.mjs"
@@ -170,6 +172,8 @@ jobs:
         run: node scripts/source-recency-summary.mjs
       - name: Source research priority integrity
         run: node scripts/source-research-priority-status.mjs
+      - name: Provider concentration resilience
+        run: node scripts/provider-concentration-status.mjs
       - name: Guide See before go preflight
         run: node scripts/guide-see-before-go-preflight.mjs
       - name: Visitor source expansion integrity
