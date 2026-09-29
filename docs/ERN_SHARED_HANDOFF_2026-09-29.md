@@ -433,3 +433,32 @@ Only interrupt the operator for:
 - Destination opportunity matrix now carries the same explicit maintenance class for Pattaya, Tokyo/Chidori and Tbilisi.
 - `app-lite.js` remains about **93.7 KB**, below the 100 KB cap.
 - Previous independently known green Pages run remains `36523426778`.
+
+
+## Continuation checkpoint — Seoul non-credential readiness + Atlas recheck fail-closed
+- Catalog remains **94 total / 91 current / 90 current+healthy / 17 current healthy embeds / 3 stale / 0 expired / 0 unknown**.
+- Seoul real-time context remains fully **PUBLIC-OFF**.
+- Added `data/seoul-context-place-mappings.json` with one conservative internal candidate: `seoul-plaza` → `Gwanghwamun·Deoksugung`.
+- Mapping is validation-only: `mayPublishContext=false`, `realResponseValidated=false`, and global registry activation is also false.
+- Added `src/seoul-context-mapping.js`; public mapping now requires both registry-wide activation and an individually `APPROVED_VALIDATED` mapping.
+- Added `validateSeoulMappedResponse` so a future keyed `citydata_eng` response can validate provider area identity without making the mapping public.
+- Seoul manifest now defines attribution, bounded cache, fail-closed failure behavior, and privacy/data-minimization rules:
+  - no visitor personal data or profiling,
+  - no raw network identifiers,
+  - no movement-history archive,
+  - current aggregate snapshot only,
+  - no CCTV media ingestion,
+  - no stale-on-error or stale-while-revalidate currentness.
+- Added Seoul mapping integrity gate to Pages and release smoke; internal context registries are explicitly prevented from shipping in the public artifact while context is OFF.
+- Seoul state is now `NON_CREDENTIAL_ARCHITECTURE_COMPLETE_KEY_AND_REAL_RESPONSE_VALIDATION_REQUIRED_PUBLIC_OFF`.
+- Remaining Seoul human/provider gates are explicit: API key, real response validation, provider area/code confirmation, provider rate-limit confirmation, explicit mapping approval, and explicit public activation decision.
+- Manual official-page context records now reject materially future observation timestamps.
+- Living Atlas recheck behavior is stricter:
+  - non-current EMBED/IMAGE_REFRESH sources no longer mount media in the viewer;
+  - they render a reference visual plus provider-source access instead;
+  - recheck pins/alternates do not create stale deep links or record personalization interest;
+  - alternate labels use `publicTruth`, not generic media-type labels;
+  - recheck viewer copy says **Reference only** instead of “Look now/current window.”
+- Added Atlas recheck currentness regression coverage and whole-product guards.
+- `src/app-lite.js` is about **94.1 KB**, still under the fixed 100 KB cap.
+- Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until independently verified.
