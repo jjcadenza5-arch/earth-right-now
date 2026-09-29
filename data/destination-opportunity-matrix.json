@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T01:10:00Z",
+  "generatedAt": "2026-09-29T04:40:00Z",
   "principle": "Research destinations where a truthful current window is valuable to visitors. Existing/available travel programs help identify useful next-step categories, but may not lower source-quality or truth standards.",
   "columns": {
     "visualCoverage": "Current ERN visual-window state",
@@ -227,7 +227,7 @@
     {
       "destination": "Sydney",
       "country": "Australia",
-      "visualCoverage": "GOOD_EXTERNAL",
+      "visualCoverage": "GOOD_EXTERNAL_PLUS_HARBOUR_RESEARCH",
       "currentSources": [
         "coogee-randwick-beaches"
       ],
@@ -243,9 +243,9 @@
         "TRANSFERS",
         "CAR_RENTAL"
       ],
-      "sourcePriority": "MEDIUM",
-      "why": "Good beach/current-condition coverage; a distinct city/harbour view would add more value than another beach.",
-      "next": "Research official/high-quality city or harbour current window before adding more coastal duplication."
+      "sourcePriority": "MEDIUM_HIGH",
+      "why": "Coogee gives useful beach/current-condition coverage. WebcamSydney currently offers a distinct 24/7 harbour/Opera House/Bridge view, but ERN is keeping it research/link-first because third-party reuse/embed rights are not yet explicit.",
+      "next": "Maintain Coogee. Continue source-specific rights review for WebcamSydney or find an official/high-quality Sydney Harbour current window with a clearly permitted external/embed path."
     },
     {
       "destination": "Honolulu / Waikiki",
