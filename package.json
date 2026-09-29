@@ -83,7 +83,8 @@
     "sources:recency-summary": "node scripts/source-recency-summary.mjs",
     "test:release": "node tests/run-release-smoke.mjs",
     "release:public-module-integrity": "node scripts/public-module-integrity.mjs",
-    "participation:media-status": "node scripts/now-moment-media-status.mjs"
+    "participation:media-status": "node scripts/now-moment-media-status.mjs",
+    "project:phase": "node scripts/project-phase-status.mjs"
   },
   "engines": {
     "node": ">=20"
