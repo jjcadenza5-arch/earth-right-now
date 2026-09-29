@@ -26,7 +26,8 @@ export function createEarthSignalClient(raw={}){
     config,
     async list(placeId){
       if(!config.enabled)return{ok:false,disabled:true,reason:"EARTH_SIGNALS_READ_ONLY",signals:[]};
-      const u=new URL(config.contributionUrl);if(placeId)u.searchParams.set("placeId",String(placeId));
+      const id=String(placeId||"").trim();if(!id)return{ok:false,reason:"SIGNAL_PLACE_ID_REQUIRED",signals:[]};
+      const u=new URL(config.contributionUrl);u.searchParams.set("placeId",id);
       const r=await jsonFetch(u.toString(),{method:"GET"});
       return r.ok?{ok:true,signals:Array.isArray(r.body?.signals)?r.body.signals:[]}:{ok:false,status:r.status,reason:r.body?.reason||"REQUEST_FAILED",signals:[]};
     },
