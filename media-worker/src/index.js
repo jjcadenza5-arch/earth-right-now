@@ -113,7 +113,7 @@ export default{
       if(!adminAllowed(request,env))return reply(401,{ok:false,reason:"UNAUTHORIZED"});
       if(request.method==="GET"&&url.pathname==="/internal/now-moments/photos"){
         const x=await stateCall(env,{op:"list-review",now:Date.now()});
-        return reply(200,{ok:true,items:(x.records||[]).map(r=>({id:r.id,placeId:r.placeId,placeLabel:r.placeLabel,createdAt:r.createdAt,expiresAt:r.storageExpiryAt,moderation:r.moderation,reported:r.reported===true,mimeType:r.mimeType,width:r.width,height:r.height,storedBytes:r.storedBytes,previewUrl:`/internal/now-moments/photos/${encodeURIComponent(r.id)}/media`}))});
+        return reply(200,{ok:true,items:(x.records||[]).map(r=>({id:r.id,placeId:r.placeId,placeLabel:r.placeLabel,createdAt:r.createdAt,expiresAt:r.storageExpiryAt,moderation:r.moderation,reported:r.reported===true,publicVisible:enabled&&r.moderation==="APPROVED"&&r.reported!==true,mimeType:r.mimeType,width:r.width,height:r.height,storedBytes:r.storedBytes,previewUrl:`/internal/now-moments/photos/${encodeURIComponent(r.id)}/media`}))});
       }
       const privateMedia=url.pathname.match(/^\/internal\/now-moments\/photos\/([^/]+)\/media$/);
       if(request.method==="GET"&&privateMedia){
