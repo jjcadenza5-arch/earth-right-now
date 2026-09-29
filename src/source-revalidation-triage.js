@@ -8,6 +8,8 @@ export function sourceRevalidationTriage(sources=[],{availability=null,continuit
     const staleClass=staleMaintenanceClass(s);
     let lane="UNSAMPLED_RECHECK",action=staleClass.action,urgency=staleClass.urgency;
     if(s.featuredHold===true){lane="CURATION_HOLD";action="KEEP_DEFERRED_UNTIL_HOLD_REMOVED";urgency=0}
+    else if(staleClass.class==="SEASONAL_OFF_SEASON"){lane="SEASONAL_DEFERRED";action=staleClass.action;urgency=staleClass.urgency}
+    else if(staleClass.class==="PLAYBACK_EVIDENCE_DEBT"){lane="PLAYBACK_EVIDENCE_REVIEW";action=staleClass.action;urgency=staleClass.urgency}
     else if(String(s.failureReason||"").startsWith("OFFICIAL_COLLECTION_WEBCAMS_OFFLINE_")){lane="DEFERRED_PROVIDER_OFFLINE";action="RECHECK_PROVIDER_COLLECTION_LATER";urgency=15}
     else if(String(s.failureReason||"").startsWith("VISITOR_PLAYBACK_REJECTED_")){lane="DEFERRED_PLAYBACK_REPROVE";action="REPROVE_ONLY_AFTER_PRIMARY_RECOVERY_OR_EXPLICIT_REVIEW";urgency=25}
     else if(s.permission==="UNKNOWN"){lane="PERMISSION_REVIEW";action="REVIEW_PERMISSION_BEFORE_PLAYBACK";urgency=100}
@@ -34,6 +36,8 @@ export function sourceRevalidationTriage(sources=[],{availability=null,continuit
     generatedAt:new Date().toISOString(),total:items.length,
     summary:{
       permissionReview:count("PERMISSION_REVIEW"),
+      seasonalDeferred:count("SEASONAL_DEFERRED"),
+      playbackEvidenceReview:count("PLAYBACK_EVIDENCE_REVIEW"),
       humanMediaReview:count("HUMAN_MEDIA_REVIEW"),
       manualSourceReview:count("MANUAL_SOURCE_REVIEW"),
       editorialRecheck:count("EDITORIAL_RECHECK"),
