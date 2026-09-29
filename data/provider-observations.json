@@ -208,5 +208,47 @@
     "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
     "observedAt": "2026-09-29T05:12:00Z",
     "reason": "Waikīkī Aquarium's official Webcams page currently features a South Shore Waikīkī live webcam. Catalog now uses the Aquarium page as an external LINK_ONLY handoff."
+  },
+  {
+    "id": "kijihiki-plateau",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T05:30:00Z",
+    "reason": "Hokuto City's official tourism page currently presents Kijihiki Plateau live cameras from the Panorama Observatory. Catalog now uses the municipal page as an external LINK_ONLY handoff."
+  },
+  {
+    "id": "lajes-pico-harbour",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T05:30:00Z",
+    "reason": "Espaço Talassa's own website currently publishes its Lajes do Pico Webcam page. Catalog now uses the originating provider's page as an external LINK_ONLY handoff."
+  },
+  {
+    "id": "roque-observatory",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T05:30:00Z",
+    "reason": "Gran Telescopio CANARIAS' official webcam page currently publishes observatory images taken every minute. Catalog now links to the official current-image page."
+  },
+  {
+    "id": "blouberg-table-mountain",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T05:30:00Z",
+    "reason": "TableMountainView.com's direct webcam page currently states that its Blouberg/Table Mountain image updates every 120 seconds during the published daylight window. Catalog now uses the direct provider page as LINK_ONLY."
+  },
+  {
+    "id": "perdido-key-beach",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T05:30:00Z",
+    "reason": "The National Park Service's official Perdido Key Beach webcam is currently marked Active and takes a photograph every 15 minutes. Catalog now links to the NPS page."
+  },
+  {
+    "id": "pleasant-beach-lake-ontario",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T05:30:00Z",
+    "reason": "Pleasant Beach Hotel's official site currently advertises a PBH Webcam with live video overlooking Little Sodus Bay. Catalog now uses the property page as LINK_ONLY."
   }
 ]
