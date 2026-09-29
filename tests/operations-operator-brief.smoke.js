@@ -207,3 +207,27 @@ assert.match(mediaBrief,/Now Moment media readiness/);
 assert.match(mediaBrief,/still photos only/);
 assert.match(mediaBrief,/public activation OFF/);
 assert.match(mediaBrief,/video OFF/);
+
+const externalGateBrief=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ externalGates:{
+   count:3,
+   eligibleNow:[],
+   waiting:[
+     {id:"viator-api-activation",state:"WAIT_PROVIDER_ACTIVATION",trigger:"provider activation or timed review",nextEligibleAt:"2026-09-29T15:21:00Z",beforeTrigger:"DO_NOT_RETEST_OR_ROTATE_KEY"},
+     {id:"guide-ai-public-activation",state:"BACKEND_DEPLOYED_CLIENT_DISABLED",trigger:"explicit product decision",nextEligibleAt:null,beforeTrigger:"DETERMINISTIC_ONLY"},
+     {id:"seoul-context-validation-and-activation",state:"PUBLIC_OFF",trigger:"API key + real response",nextEligibleAt:null,beforeTrigger:"KEEP_CONTEXT_PUBLIC_OFF"}
+   ],
+   openGates:[
+     {id:"viator-api-activation",state:"WAIT_PROVIDER_ACTIVATION",trigger:"provider activation or timed review",nextEligibleAt:"2026-09-29T15:21:00Z",beforeTrigger:"DO_NOT_RETEST_OR_ROTATE_KEY"},
+     {id:"guide-ai-public-activation",state:"BACKEND_DEPLOYED_CLIENT_DISABLED",trigger:"explicit product decision",nextEligibleAt:null,beforeTrigger:"DETERMINISTIC_ONLY"},
+     {id:"seoul-context-validation-and-activation",state:"PUBLIC_OFF",trigger:"API key + real response",nextEligibleAt:null,beforeTrigger:"KEEP_CONTEXT_PUBLIC_OFF"}
+   ],
+   nextTimedReview:{id:"viator-api-activation",lane:"TRAVEL_API",nextEligibleAt:"2026-09-29T15:21:00Z",beforeTrigger:"DO_NOT_RETEST_OR_ROTATE_KEY"},
+   untimedWaiting:["guide-ai-public-activation","seoul-context-validation-and-activation"]
+ }
+});
+assert.match(externalGateBrief,/Next timed review: viator-api-activation at 2026-09-29T15:21:00Z/);
+assert.match(externalGateBrief,/DO_NOT_RETEST_OR_ROTATE_KEY/);
+assert.match(externalGateBrief,/Untimed waits: guide-ai-public-activation, seoul-context-validation-and-activation/);
