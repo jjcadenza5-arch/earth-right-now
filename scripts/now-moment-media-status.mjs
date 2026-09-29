@@ -34,6 +34,7 @@ must((worker.match(/cache-control":"private, no-store"/g)||[]).length>=2,"tempor
 must(service.includes("metadata.listExpired")&&service.indexOf("objects.delete(r.objectKey)")<service.indexOf("metadata.delete(r.id)"),"retry-safe expiry cleanup ordering missing");
 must(state.includes('b.op==="list-expired"')&&state.includes('b.op==="delete"'),"retry-safe media state cleanup operations missing");
 must(worker.includes("PENDING_REVIEW")&&worker.includes("published:false"),"upload must remain moderation-first");
+must(worker.includes("PUBLICATION_DISABLED")&&worker.includes('body.decision==="APPROVED"&&!enabled'),"pre-activation approvals must not become latent future publication");
 must(worker.includes("rawNetworkIdentifiersStored:false"),"worker must explicitly avoid raw network identifier storage");
 must(worker.includes("directBucketPublicAccess:false"),"R2 bucket must remain non-public");
 must(state.includes("MAX_RETAINED_MEDIA=500"),"retained-media ceiling missing");
