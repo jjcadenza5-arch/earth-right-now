@@ -6,7 +6,7 @@ const read=async p=>readFile(path.join(root,p),"utf8");
 const exists=async p=>{try{return (await stat(path.join(root,p))).isFile()}catch{return false}};
 const issues=[];
 
-for(const required of ["index.html","robots.txt","sitemap.xml","places/index.html","stories.html","press.html"]){
+for(const required of ["index.html","robots.txt","sitemap.xml","places/index.html","stories.html","press.html","about.html","privacy.html","for-places.html"]){
   if(!(await exists(required)))issues.push({code:"MISSING_PUBLIC_DISCOVERY_FILE",file:required});
 }
 
@@ -34,6 +34,13 @@ if(!/CollectionPage/.test(stories))issues.push({code:"STORIES_COLLECTION_SCHEMA_
 if(!/BreadcrumbList/.test(stories))issues.push({code:"STORIES_BREADCRUMB_SCHEMA_MISSING"});
 if(!stories.includes('<link rel="canonical" href="https://earthrightnow.app/stories.html">'))issues.push({code:"STORIES_CANONICAL_MISSING"});
 
+for(const [file,type] of [["about.html","AboutPage"],["privacy.html","WebPage"],["for-places.html","WebPage"],["press.html","AboutPage"]]){
+  const html=await read(file);
+  if(!html.includes('<link rel="canonical" href="https://earthrightnow.app/'+file+'">'))issues.push({code:"TRUST_PAGE_CANONICAL_MISSING",file});
+  if(!html.includes('"@type":"'+type+'"'))issues.push({code:"TRUST_PAGE_SCHEMA_MISSING",file,type});
+  if(!html.includes("BreadcrumbList"))issues.push({code:"TRUST_PAGE_BREADCRUMB_SCHEMA_MISSING",file});
+  if(!/aria-label="Breadcrumb"/.test(html))issues.push({code:"TRUST_PAGE_VISIBLE_BREADCRUMB_MISSING",file});
+}
 const placesIndex=await read("places/index.html");
 if(!/CollectionPage/.test(placesIndex))issues.push({code:"PLACES_COLLECTION_SCHEMA_MISSING"});
 if(!/BreadcrumbList/.test(placesIndex))issues.push({code:"PLACES_BREADCRUMB_SCHEMA_MISSING"});
