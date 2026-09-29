@@ -4,7 +4,7 @@ const view=earthSignalViewModel(fresh,{now});
 assert.ok(view.ageLabel==="7 min ago");
 assert.ok(view.expiryLabel==="Expires in 38 min");
 assert.ok(view.evidenceLabel==="EARTH SIGNAL");
-assert.ok(view.locationLabel==="Near this place ✓");
+assert.ok(view.locationLabel==="Marked near this place · self-reported");
 assert.ok(earthSignalViewModel({...fresh,createdAt:"2026-09-21T10:00:00Z"},{now})===null);
 assert.ok(earthSignalSummary([fresh],{now}).text.startsWith("1 visitor signal right now"));
 console.log("Earth Signal presentation checks passed");
