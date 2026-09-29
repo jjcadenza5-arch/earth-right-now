@@ -1,6 +1,9 @@
+import {recencyState} from "../src/source-recency.js";
 import fs from "node:fs";
 const file=new URL("../data/source-research-priorities.json",import.meta.url);
 const data=JSON.parse(fs.readFileSync(file,"utf8"));
+const sources=JSON.parse(fs.readFileSync(new URL("../data/sources.json",import.meta.url),"utf8"));
+const now=new Date();
 const w=data.scoringWeights||{};
 const total=Object.values(w).reduce((a,b)=>a+Number(b||0),0);
 const fail=[];
@@ -20,5 +23,9 @@ if(!stale||stale.total!==3||!Array.isArray(stale.items)||stale.items.length!==3)
 const staleClasses=new Set((stale?.items||[]).map(x=>x.class));
 for(const cls of ["PLAYBACK_EVIDENCE_DEBT","SEASONAL_OFF_SEASON","EDITORIAL_CURRENTNESS_DEBT"])if(!staleClasses.has(cls))fail.push("stale debt class missing: "+cls);
 if((stale?.items||[]).some(x=>!/^(HIGH|LOW_UNTIL_SEASON_OR_MATERIAL_CHANGE|ROUTINE)$/.test(String(x.priority||""))))fail.push("stale debt priority label invalid");
+const staleCatalogIds=sources.filter(x=>recencyState(x,{now})==="STALE_CHECK").map(x=>x.id).sort();
+const declaredStaleIds=(stale?.items||[]).map(x=>x.id).sort();
+if(JSON.stringify(staleCatalogIds)!==JSON.stringify(declaredStaleIds))fail.push("declared stale debt ids do not match catalog STALE_CHECK ids");
+if(Number(stale?.total)!==staleCatalogIds.length)fail.push("declared stale debt total does not match catalog");
 console.log(JSON.stringify({ok:fail.length===0,totalWeight:total,commercialWeight:w.practicalCommercialFit,placeUniverseCount:data.placeUniverse?.length||0,fail},null,2));
 if(fail.length) process.exit(1);
