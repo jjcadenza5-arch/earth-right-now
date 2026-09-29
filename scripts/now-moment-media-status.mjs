@@ -25,6 +25,7 @@ must(metadata.includes("PNG_METADATA_CHUNK")&&metadata.includes("WEBP_METADATA_C
 must(metadata.includes("matchesAscii")&&!metadata.includes("String.fromCharCode"),"metadata scan must avoid whole-image string conversion");
 must(metadata.includes("nowMomentImageDimensions")&&service.includes("IMAGE_DIMENSIONS_MISMATCH"),"server-side encoded image dimension verification missing");
 must(service.includes("moderationRequired:true")&&service.includes("reportNowMomentPhoto")&&service.includes("cleanupNowMomentPhotos"),"moderation/report/cleanup service contract incomplete");
+must(service.includes("canonicalPlaceLabels")&&worker.includes("canonicalPlaceLabels:places.labels"),"trusted place-label rehydration missing");
 must(!service.includes("rateLimiter.check(")&&service.includes("rateLimiter.commit("),"photo rate limiting must use a single atomic reservation/commit");
 must(worker.includes("readBodyBounded")&&worker.includes("STORED_SIZE_MISMATCH"),"bounded upload body verification missing");
 must((worker.match(/cache-control":"private, no-store"/g)||[]).length>=2,"temporary public media must be no-store so reports/expiry take effect immediately");
