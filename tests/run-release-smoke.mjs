@@ -14,6 +14,7 @@ const releaseTests=[
   "embed-research-preflight.smoke.js",
   "provider-family-research.smoke.js",
   "provider-diversification.smoke.js",
+  "provider-observation-research-gap.smoke.js",
   "provider-concentration.smoke.js",
   "watch-diversity.smoke.js",
   "operator-review-queue.smoke.js",
