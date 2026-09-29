@@ -6,7 +6,7 @@ const read=async p=>readFile(path.join(root,p),"utf8");
 const exists=async p=>{try{return (await stat(path.join(root,p))).isFile()}catch{return false}};
 const issues=[];
 
-for(const required of ["index.html","robots.txt","sitemap.xml","places/index.html"]){
+for(const required of ["index.html","robots.txt","sitemap.xml","places/index.html","stories.html","press.html"]){
   if(!(await exists(required)))issues.push({code:"MISSING_PUBLIC_DISCOVERY_FILE",file:required});
 }
 
@@ -23,7 +23,7 @@ if(/User-agent:\s*OAI-SearchBot[\s\S]*?Disallow:\s*\/\s*(?:\r?\n|$)/i.test(robot
 if(!/Disallow:\s*\/review\//i.test(robots))issues.push({code:"REVIEW_ROBOTS_GUARD_MISSING"});
 
 const sitemap=await read("sitemap.xml");
-for(const url of ["https://earthrightnow.app/","https://earthrightnow.app/places/"]){
+for(const url of ["https://earthrightnow.app/","https://earthrightnow.app/places/","https://earthrightnow.app/stories.html","https://earthrightnow.app/press.html"]){
   if(!sitemap.includes("<loc>"+url+"</loc>"))issues.push({code:"SITEMAP_ENTRY_MISSING",url});
 }
 if(/\/review\/|release-verification\.html/.test(sitemap))issues.push({code:"OPERATOR_URL_IN_SITEMAP"});
