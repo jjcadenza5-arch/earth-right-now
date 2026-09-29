@@ -7,7 +7,7 @@ assert.equal(NOW_MOMENT_PHOTO_API.originalFilenameAccepted,false);assert.equal(N
 assert.equal(NOW_MOMENT_PHOTO_API.freeTextAccepted,false);
 assert.equal(NOW_MOMENT_PHOTO_API.preciseCoordinatesAccepted,false);
 const headers=nowMomentPhotoUploadHeaders({placeId:"x",placeLabel:"Place",mimeType:"image/jpeg",sourceBytes:100,storedBytes:80,width:10,height:10,filename:"secret.jpg"});
-assert.equal(headers["x-ern-place-id"],"x");assert.ok(!("x-ern-place-label" in headers));
+assert.equal(headers["x-ern-place-id"],"x");assert.ok(!("x-ern-place-label" in headers));for(const k of ["x-ern-photo-source-bytes","x-ern-photo-stored-bytes","x-ern-photo-width","x-ern-photo-height"])assert.ok(!(k in headers));
 assert.ok(!Object.keys(headers).some(k=>/filename/i.test(k)));
 
 const fakeFile={type:"image/jpeg",size:100};
