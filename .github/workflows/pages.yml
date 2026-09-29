@@ -35,6 +35,7 @@ on:
       - "data/local-directory.json"
       - "data/travel-offers.json"
       - "scripts/public-brand-facts-status.mjs"
+      - "scripts/distribution-readiness.mjs"
       - "data/distribution-channels.json"
       - "data/affiliate-partners.json"
       - "data/affiliate-platform-research.json"
