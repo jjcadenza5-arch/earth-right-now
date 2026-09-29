@@ -350,7 +350,7 @@ function guideNearby(seed){
 
 function guidePlaceMatches(q){
  const noise=new Set(["show","me","take","to","somewhere","place","places","see","earth","please","right","now","live","current","good","what","is","are","the","a","an","with","in","at","near","i","we","am","are","going","go","before","planning","plan","trip","travel","thinking","of"]);
- const intentWords=new Set(["peaceful","quiet","calm","golden","sunset","sunrise","night","lights","wildlife","animal","beach","sea","coast","ocean","mountain","snow","ski","city","street","busy","happening","activity","people","surprise","random","local","small","business","cafe","café","restaurant","shop","market","farm","hotel","guesthouse","bakery","food"]);
+ const intentWords=new Set(["peaceful","quiet","calm","golden","sunset","sunrise","morning","evening","daylight","night","lights","wildlife","animal","beach","sea","coast","ocean","mountain","snow","ski","city","street","busy","happening","activity","people","surprise","random","local","small","business","cafe","café","restaurant","shop","market","farm","hotel","guesthouse","bakery","food"]);
  const tokens=normalizeSearch(q).split(/\s+/).filter(t=>t&&!noise.has(t)&&!intentWords.has(t));
  if(!tokens.length)return[];
  return state.sources.filter(guideEligible).filter(s=>{const hay=normalizeSearch([s.title,s.region,s.country,s.provider,s.story,...(s.categories||[])].filter(Boolean).join(" "));return tokens.every(t=>hay.includes(t))}).sort((a,b)=>baseScore(b)-baseScore(a));
@@ -368,7 +368,7 @@ function guideResponse(q){
  const placeMatches=guidePlaceMatches(q);
  if(intent.planning&&!placeMatches.length)return{text:t("guidePlanningPrompt"),items:[]};
  if(placeMatches.length&&!intent.surprise&&!intent.near&&!intent.local&&!intent.peaceful&&!intent.golden&&!intent.night&&!intent.wildlife&&!intent.beach&&!intent.mountain&&!intent.city&&!intent.happening){const items=placeMatches.slice(0,4);return{text:intent.planning?String(t("guidePlanningFound")).replace("{count}",String(placeMatches.length)):guideMsg("placeFound",{count:placeMatches.length}),items,offers:intent.planning?TP.guideOffers(state.travelOffers,items[0]):[]}};
- let pool=state.sources.filter(guideEligible);
+ let pool=placeMatches.length?[...placeMatches]:state.sources.filter(guideEligible);
  if(intent.current)pool=pool.filter(currentTruthClaim);
  if(intent.local){const local=pool.filter(s=>localPlaceSignals(s).worth);if(local.length)pool=local}
  let items=[...pool].sort((a,b)=>guideScore(b,intent)-guideScore(a,intent));
@@ -386,7 +386,7 @@ function guideResponse(q){
  else if(intent.city)text=guideMsg("city");
  else if(intent.surprise)text=guideMsg("surprise");
  else if(intent.current)text=guideMsg("current");
- return{text,items};
+ return{text,items,offers:intent.planning&&items.length?TP.guideOffers(state.travelOffers,items[0]):[]};
 }
 function renderGuideResult(s){
  const b=document.createElement("button");b.type="button";b.className="guide-result";
