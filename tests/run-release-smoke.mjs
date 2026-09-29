@@ -36,6 +36,7 @@ const releaseTests=[
   "share-links.smoke.js",
   "deep-link-currentness.smoke.js",
   "atlas-recheck-currentness.smoke.js",
+  "viewer-confidence.smoke.js",
   "offline-currentness.smoke.js",
   "guide-ai-routing.smoke.js",
   "guide-planning-boundary.smoke.js",
