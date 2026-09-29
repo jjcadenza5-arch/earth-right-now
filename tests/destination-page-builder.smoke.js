@@ -3,7 +3,7 @@ import fs from "node:fs";
 const builder=fs.readFileSync(new URL("../scripts/build-destination-pages.mjs",import.meta.url),"utf8");
 assert.match(builder,/sourceAvailabilityState/,"destination pages must inspect source availability schedules");
 assert.match(builder,/Outside published live hours/,"scheduled-closed sources need a truthful public section");
-assert.match(builder,/embedPlaybackCurrent/,"inside-ERN embeds need fresh playback proof on destination pages");
+assert.match(builder,/embedPlaybackProofCurrent/,"inside-ERN embeds need fresh playback proof on destination pages");
 assert.match(builder,/PLAYBACK RECHECK DUE/,"expired playback proof must not retain a live label");
 assert.match(builder,/const offers=currentItems\.length\?offerForPlace\(id\):\[\]/,"stale-only pages must not surface affiliate offers");
 assert.match(builder,/currentTravelOffer/,"affiliate offers must pass current verification");
