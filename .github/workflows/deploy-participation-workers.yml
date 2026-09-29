@@ -29,6 +29,11 @@ jobs:
           set -euo pipefail
           node tests/earth-signal-worker.smoke.js
           node tests/submission-worker.smoke.js
+          node tests/now-moment-photo-foundation.smoke.js
+          node tests/now-moment-photo-service.smoke.js
+          node tests/now-moment-media-worker.smoke.js
+          node scripts/participation-infrastructure-status.mjs
+          node scripts/now-moment-media-status.mjs
           grep -q '"ERN_EARTH_SIGNALS_ENABLED": "false"' signals-worker/wrangler.jsonc
           grep -q '"ERN_SUBMISSION_ENABLED": "false"' submission-worker/wrangler.jsonc
           grep -q '"ERN_NOW_MOMENT_PHOTO_ENABLED": "false"' media-worker/wrangler.jsonc
