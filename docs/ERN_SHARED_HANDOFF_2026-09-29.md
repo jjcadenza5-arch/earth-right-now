@@ -627,3 +627,24 @@ Only interrupt the operator for:
 - The remaining step is a genuine Cloudflare/external gate: configure the two Worker secrets, intentionally deploy/enable the validation-only path, run one controlled Auckland validation, record the evidence, then disable/remove the temporary validation capability. Do not infer success without the returned product and attribution evidence.
 - No public Viator product activation is authorized by this checkpoint.
 - Independently verified GitHub Pages run **36594873098** completed successfully through Deploy for commit `9940de6a5c585de29f15e6733a7345ba148deea7`, including the new Viator product-validation boundary smoke.
+
+## Stage R continuation — Viator product validation passed
+- Controlled non-public Auckland Viator product validation completed successfully on 2026-09-29.
+- Verified request scope:
+  - ERN place: `auckland-viaduct-harbour`
+  - Viator destinationId: `391`
+  - currency: NZD
+  - sample size: 3
+  - campaign: `ern-auckland-viaduct-harbour`
+- Validation result:
+  - `productSearchVerified=true`
+  - `affiliateAttributionVerified=true`
+  - all three returned product URLs matched the configured affiliate PID
+  - `secretValuesExposed=false`
+  - `publicActivationAllowed=false`
+- Returned product codes recorded for evidence: `37991P3`, `56760P4`, `3910P74`.
+- Canonical deployment state is now `PRODUCT_VALIDATION_CONFIRMED_PUBLIC_OFF`.
+- The `viator-api-product-validation` evidence gate is satisfied. Do not repeat activation, taxonomy, or product-validation diagnostics unless Viator auth/provider state materially changes.
+- Public Viator API products are **not** authorized by this validation. Public activation remains a separate explicit product decision.
+- Temporary Cloudflare validation access should now be closed by setting `ERN_VIATOR_PRODUCT_VALIDATION_ENABLED=false`. Keep the two Worker secrets stored unless/until intentionally rotated or removed; they do not authorize public product access by themselves.
+
