@@ -1,3 +1,16 @@
+## 2026-09-29 — Pages release green; independent provider review batch deployed
+- Repaired two malformed legacy smoke-test files that the expanded all-test syntax scan exposed.
+- The historical `npm test` suite currently contains 809 smoke tests and 115 historical/obsolete expectation failures. It remains available as a maintenance/migration backlog, but it is no longer treated as a universal release blocker.
+- Added `tests/run-release-smoke.mjs` and `npm run test:release`: 20 current release invariants covering source truth/recency, embed policy, context expiry, playback proof, provider research, operator-review safety and release gates.
+- Pages continues to syntax-check all JS/MJS under `src`, `scripts` and `tests`, then runs the curated current release smoke suite plus the existing dedicated launch/mobile/accessibility/performance/context/commercial/discoverability/operator-review preflights.
+- Fixed the performance regression without increasing the budget: moved the remaining extended static homepage translations from `app-lite.js` into the already-loaded `home-i18n.js` bundle. `app-lite.js` fell comfortably below the 100 KB file cap with all seven languages retained.
+- Updated Guide See-before-go preflight to validate planning localization across both runtime and split i18n bundles.
+- Normalized Chihshang/Mpala replacement research records to the existing non-public expansion schema.
+- Successful Pages workflow run: `36511689549`, head `ca0d1fdc28f338af195ccd50021036efd653c156`, conclusion SUCCESS. Every gate through Deploy passed.
+- Deployed operator review batch: `bd51ac5733059f3f`, research state `HUMAN_REVIEW_READY`.
+- Deployed primary research candidates: `youtube-taitung-jinzun-official` and `youtube-rovaniemi-santa-claus-village`. Both remain RESEARCH_ONLY and require deployed human playback confirmation before any promotion.
+- Tbilisi Mtkvari remains stale intentionally: its exact current EarthCam page is active but lacks fresh explicit live wording comparable to Freedom Square.
+
 ## 2026-09-29 — Provider-page YouTube preflight fixed; current inventory reached 73
 - Refreshed the exact Statue of Liberty close-view source from current EarthCam network evidence identifying Statue of Liberty Cam as a live streaming view.
 - Current catalog state: 73 current+healthy, 3 stale, 16 expired.
