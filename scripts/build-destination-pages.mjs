@@ -94,11 +94,13 @@ for(const [id,items] of map){
     const href=safe(s.sourceUrl||s.officialUrl);
     const checked=date(s.lastSuccessfulCheck||s.checkedAt);
     const fresh=checked?' · ERN checked <time datetime="'+esc(checked)+'">'+esc(checked.slice(0,10))+'</time>':" · verification time unavailable";
+    const playbackChecked=s.playback==="EMBED"?date(s.playbackVerifiedAt):null;
+    const playback=playbackChecked?' · Playback checked <time datetime="'+esc(playbackChecked)+'">'+esc(playbackChecked.slice(0,10))+'</time>':"";
     const link=href?' · <a href="'+esc(href)+'" rel="noopener noreferrer">Provider source</a>':"";
     const availability=sourceAvailabilityState(s,{now:buildNow});
     const playbackFresh=embedPlaybackProofCurrent(s,{now:buildNow});
     const truth=!playbackFresh&&s.playback==="EMBED"?"PLAYBACK RECHECK DUE":availability.restricted&&!availability.open?"OUTSIDE LIVE HOURS":currentWindowEyebrow(s,{now:buildNow});
-    return '<li><strong>'+esc(s.title)+'</strong> — '+esc(truth)+' · '+esc(s.provider||"Provider")+fresh+link+'</li>';
+    return '<li><strong>'+esc(s.title)+'</strong> — '+esc(truth)+' · '+esc(s.provider||"Provider")+fresh+playback+link+'</li>';
   };
   const currentCards=currentItems.map(cardFor).join("");
   const waitingCards=waitingItems.map(cardFor).join("");
