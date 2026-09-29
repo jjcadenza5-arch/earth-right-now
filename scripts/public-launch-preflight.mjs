@@ -4,8 +4,8 @@ const read=p=>fs.readFileSync(p,"utf8");
 const index=read("index.html"),about=read("about.html"),privacy=read("privacy.html"),robots=read("robots.txt"),sitemap=read("sitemap.xml"),cname=read("CNAME").trim(),manifest=JSON.parse(read("manifest.webmanifest")),sw=read("service-worker.js"),build=read("scripts/build-release-snapshot.mjs");
 const assert=(ok,msg)=>{if(!ok)fail.push(msg)};
 assert(cname==="earthrightnow.app","CNAME must be earthrightnow.app");
-const forPlaces=read("for-places.html"),nowMoments=read("now-moments.html"),stories=read("stories.html"),press=read("press.html"),placesIndex=read("places/index.html");
-for(const [name,html,url] of [["index",index,"https://earthrightnow.app/"],["about",about,"https://earthrightnow.app/about.html"],["privacy",privacy,"https://earthrightnow.app/privacy.html"],["forPlaces",forPlaces,"https://earthrightnow.app/for-places.html"],["nowMoments",nowMoments,"https://earthrightnow.app/now-moments.html"],["stories",stories,"https://earthrightnow.app/stories.html"],["press",press,"https://earthrightnow.app/press.html"],["places",placesIndex,"https://earthrightnow.app/places/"]]){
+const forPlaces=read("for-places.html"),nowMoments=read("now-moments.html"),stories=read("stories.html"),press=read("press.html");
+for(const [name,html,url] of [["index",index,"https://earthrightnow.app/"],["about",about,"https://earthrightnow.app/about.html"],["privacy",privacy,"https://earthrightnow.app/privacy.html"],["forPlaces",forPlaces,"https://earthrightnow.app/for-places.html"],["nowMoments",nowMoments,"https://earthrightnow.app/now-moments.html"],["stories",stories,"https://earthrightnow.app/stories.html"],["press",press,"https://earthrightnow.app/press.html"]]){
   assert(html.includes(`rel="canonical" href="${url}"`),`${name} canonical mismatch`);
   assert(!html.includes("github.io"),`${name} must not advertise GitHub hostname`);
   assert(html.includes("./src/styles-lite.css"),`${name} must use lean public stylesheet`);
@@ -34,4 +34,4 @@ assert(!sw.includes("cache.put("),"service worker must not cache current navigat
 assert(!/sources\.json|travel-offers\.json|local-directory\.json|\/places\//.test(sw),"service worker must not cache public current-truth data");
 assert(index.includes("./privacy.html")&&index.includes("./about.html"),"footer trust links missing");
 if(fail.length){console.error(JSON.stringify({ok:false,fail},null,2));process.exit(1)}
-console.log(JSON.stringify({ok:true,domain:"earthrightnow.app",trustPages:["about.html","privacy.html","press.html"],discoveryPages:["stories.html","places/"],leanStyles:true,pwa:true,offlineFallback:true,operatorConsole:true},null,2));
+console.log(JSON.stringify({ok:true,domain:"earthrightnow.app",trustPages:["about.html","privacy.html","press.html"],discoveryPages:["stories.html"],postBuildDiscovery:["places/"],leanStyles:true,pwa:true,offlineFallback:true,operatorConsole:true},null,2));
