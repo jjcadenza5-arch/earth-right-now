@@ -1,7 +1,16 @@
-function ascii(bytes){
-  let s="";for(let i=0;i<bytes.length;i++)s+=String.fromCharCode(bytes[i]);return s;
+function matchesAscii(bytes,offset,needle){
+  if(offset<0||offset+needle.length>bytes.length)return false;
+  for(let i=0;i<needle.length;i++)if(bytes[offset+i]!==needle.charCodeAt(i))return false;
+  return true;
 }
-function includesAscii(bytes,needle){return ascii(bytes).includes(needle)}
+function includesAscii(bytes,needle){
+  if(!needle||needle.length>bytes.length)return false;
+  const first=needle.charCodeAt(0);
+  for(let i=0;i<=bytes.length-needle.length;i++){
+    if(bytes[i]===first&&matchesAscii(bytes,i,needle))return true;
+  }
+  return false;
+}
 
 export function nowMomentMetadataScan(bytes,mimeType){
   const b=bytes instanceof Uint8Array?bytes:new Uint8Array(bytes||[]);
@@ -19,7 +28,7 @@ export function nowMomentMetadataScan(bytes,mimeType){
     if(sig.some((v,i)=>b[i]!==v))issues.push("PNG_MAGIC_INVALID");
     for(const chunk of ["eXIf","tEXt","zTXt","iTXt"])if(includesAscii(b,chunk))issues.push("PNG_METADATA_CHUNK:"+chunk);
   }else if(mime==="image/webp"){
-    if(ascii(b.slice(0,4))!=="RIFF"||ascii(b.slice(8,12))!=="WEBP")issues.push("WEBP_MAGIC_INVALID");
+    if(!matchesAscii(b,0,"RIFF")||!matchesAscii(b,8,"WEBP"))issues.push("WEBP_MAGIC_INVALID");
     for(const chunk of ["EXIF","XMP "])if(includesAscii(b,chunk))issues.push("WEBP_METADATA_CHUNK:"+chunk);
   }else{
     issues.push("UNSUPPORTED_MEDIA_TYPE");
