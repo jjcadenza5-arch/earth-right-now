@@ -1,22 +1,123 @@
-import assert from "node:assert/strict";import {providerFamilyResearchStatus} from "../src/provider-family-research.js";
-const r=providerFamilyResearchStatus([{id:"x",status:"RESEARCH_ONLY",provider:"Provider",familyLabel:"Player",researchUrl:"https://example.com/live",termsUrl:"https://example.com/terms",permissionStatus:"PROMISING_REQUIRES_SPECIFIC_ENABLED_CAM",technicalStatus:"SPECIFIC_EMBED_URL_REQUIRED",humanPlaybackStatus:"REQUIRED_ON_DEPLOYED_ERN",promotion:"BLOCKED_UNTIL_SPECIFIC_REVIEW",nextAction:"TEST",verifiedAt:"2026-09-24T00:00:00Z",networkFamily:null,termsReviewedAt:"2026-09-24T00:00:00Z",usageMode:"PROVIDER_BRANDED_PLAYER_ONLY",playerBrandingRequired:true,restreamAllowed:false}],{now:new Date("2026-09-24T12:00:00Z")}]);
-assert.equal(r.total,1);assert.equal(r.valid,1);assert.deepEqual(r.items[0].discoveryProviderAliases,[]);assert.equal(r.unresolvedNetworkFamily,1);assert.equal(r.currentTermsEvidence,1);assert.equal(r.needsTermsReview,0);assert.equal(r.unsafe.length,0);assert.equal(r.items[0].permissionConfirmed,false);assert.equal(r.items[0].humanPlaybackConfirmed,false);assert.equal(r.items[0].promotionAllowed,false);assert.equal(r.safety.catalogMutationAllowed,false);assert.equal(r.safety.automaticPermissionApprovalAllowed,false);assert.equal(r.safety.automaticPromotionAllowed,false);assert.equal(r.safety.restreamAllowed,false);assert.equal(r.safety.providerBrandingRemovalAllowed,false);
+import assert from "node:assert/strict";
+import {providerFamilyResearchStatus} from "../src/provider-family-research.js";
+
+const r=providerFamilyResearchStatus([{
+  id:"x",
+  status:"RESEARCH_ONLY",
+  provider:"Provider",
+  familyLabel:"Player",
+  researchUrl:"https://example.com/live",
+  termsUrl:"https://example.com/terms",
+  permissionStatus:"PROMISING_REQUIRES_SPECIFIC_ENABLED_CAM",
+  technicalStatus:"SPECIFIC_EMBED_URL_REQUIRED",
+  humanPlaybackStatus:"REQUIRED_ON_DEPLOYED_ERN",
+  promotion:"BLOCKED_UNTIL_SPECIFIC_REVIEW",
+  nextAction:"TEST",
+  verifiedAt:"2026-09-24T00:00:00Z",
+  networkFamily:null,
+  termsReviewedAt:"2026-09-24T00:00:00Z",
+  usageMode:"PROVIDER_BRANDED_PLAYER_ONLY",
+  playerBrandingRequired:true,
+  restreamAllowed:false
+}],{now:new Date("2026-09-24T12:00:00Z")});
+
+assert.equal(r.total,1);
+assert.equal(r.valid,1);
+assert.deepEqual(r.items[0].discoveryProviderAliases,[]);
+assert.equal(r.unresolvedNetworkFamily,1);
+assert.equal(r.currentTermsEvidence,1);
+assert.equal(r.needsTermsReview,0);
+assert.equal(r.unsafe.length,0);
+assert.equal(r.items[0].permissionConfirmed,false);
+assert.equal(r.items[0].humanPlaybackConfirmed,false);
+assert.equal(r.items[0].promotionAllowed,false);
+assert.equal(r.safety.catalogMutationAllowed,false);
+assert.equal(r.safety.automaticPermissionApprovalAllowed,false);
+assert.equal(r.safety.automaticPromotionAllowed,false);
+assert.equal(r.safety.restreamAllowed,false);
+assert.equal(r.safety.providerBrandingRemovalAllowed,false);
 console.log("ERN provider-family research safety passed");
 
-const linkOnly=providerFamilyResearchStatus([{id:"earthcam",status:"RESEARCH_ONLY",provider:"EarthCam",familyLabel:"Public network",researchUrl:"https://www.earthcam.com/",termsUrl:"https://www.earthcam.com/company/tos.php",permissionStatus:"PUBLIC_EMBED_NOT_PERMITTED_LICENSE_REQUIRED",technicalStatus:"DO_NOT_STAGE_PLAYER",humanPlaybackStatus:"NOT_APPLICABLE_LINK_ONLY",promotion:"BLOCKED_LICENSE_REQUIRED",nextAction:"KEEP_LINK_ONLY_UNLESS_EXPLICIT_LICENSE_OBTAINED",networkFamily:"earthcam.com",termsReviewedAt:"2026-09-25T00:00:00Z",usageMode:"LINK_ONLY_UNLESS_LICENSED",embeddingCondition:"LICENSE_REQUIRED",playerBrandingRequired:false,restreamAllowed:false}],{now:new Date("2026-09-25T12:00:00Z")});
+const linkOnly=providerFamilyResearchStatus([{
+  id:"earthcam",
+  status:"RESEARCH_ONLY",
+  provider:"EarthCam",
+  familyLabel:"Public network",
+  researchUrl:"https://www.earthcam.com/",
+  termsUrl:"https://www.earthcam.com/company/tos.php",
+  permissionStatus:"PUBLIC_EMBED_NOT_PERMITTED_LICENSE_REQUIRED",
+  technicalStatus:"DO_NOT_STAGE_PLAYER",
+  humanPlaybackStatus:"NOT_APPLICABLE_LINK_ONLY",
+  promotion:"BLOCKED_LICENSE_REQUIRED",
+  nextAction:"KEEP_LINK_ONLY_UNLESS_EXPLICIT_LICENSE_OBTAINED",
+  networkFamily:"earthcam.com",
+  termsReviewedAt:"2026-09-25T00:00:00Z",
+  usageMode:"LINK_ONLY_UNLESS_LICENSED",
+  embeddingCondition:"LICENSE_REQUIRED",
+  playerBrandingRequired:false,
+  restreamAllowed:false
+}],{now:new Date("2026-09-25T12:00:00Z")});
 assert.equal(linkOnly.items[0].safeUsage,true);
 assert.equal(linkOnly.items[0].candidateEligible,false);
 assert.equal(linkOnly.unsafe.length,0);
 
-const aliasReport=providerFamilyResearchStatus([{id:"alias",status:"RESEARCH_ONLY",provider:"Provider C Incorporated",discoveryProviderAliases:["Provider C Short"],familyLabel:"Player",researchUrl:"https://example.com/live",termsUrl:"https://example.com/terms",termsReviewedAt:"2026-09-25T00:00:00Z",usageMode:"PROVIDER_BRANDED_PLAYER_ONLY",playerBrandingRequired:true,restreamAllowed:false}],{now:new Date("2026-09-25T12:00:00Z")});
+const aliasReport=providerFamilyResearchStatus([{
+  id:"alias",
+  status:"RESEARCH_ONLY",
+  provider:"Provider C Incorporated",
+  discoveryProviderAliases:["Provider C Short"],
+  familyLabel:"Player",
+  researchUrl:"https://example.com/live",
+  termsUrl:"https://example.com/terms",
+  termsReviewedAt:"2026-09-25T00:00:00Z",
+  usageMode:"PROVIDER_BRANDED_PLAYER_ONLY",
+  playerBrandingRequired:true,
+  restreamAllowed:false
+}],{now:new Date("2026-09-25T12:00:00Z")});
 assert.deepEqual(aliasReport.items[0].discoveryProviderAliases,["Provider C Short"]);
 
-const widget=providerFamilyResearchStatus([{id:"widget",status:"RESEARCH_ONLY",provider:"Widget Provider",familyLabel:"Generated widget",researchUrl:"https://example.com/widget",termsUrl:"https://example.com/terms",technicalStatus:"GENERATED_WIDGET_CODE_REQUIRED",humanPlaybackStatus:"REQUIRED_ON_DEPLOYED_ERN_FOR_WIDGET_RENDERING",promotion:"BLOCKED_UNTIL_SPECIFIC_WIDGET_REVIEW",nextAction:"STAGE_WIDGET",networkFamily:"example.com",termsReviewedAt:"2026-09-25T00:00:00Z",usageMode:"PROVIDER_GENERATED_WIDGET_ONLY",embeddingCondition:"OFFICIAL_GENERATED_WIDGET_ONLY",playerBrandingRequired:true,restreamAllowed:false}],{now:new Date("2026-09-25T12:00:00Z")});
+const widget=providerFamilyResearchStatus([{
+  id:"widget",
+  status:"RESEARCH_ONLY",
+  provider:"Widget Provider",
+  familyLabel:"Generated widget",
+  researchUrl:"https://example.com/widget",
+  termsUrl:"https://example.com/terms",
+  technicalStatus:"GENERATED_WIDGET_CODE_REQUIRED",
+  humanPlaybackStatus:"REQUIRED_ON_DEPLOYED_ERN_FOR_WIDGET_RENDERING",
+  promotion:"BLOCKED_UNTIL_SPECIFIC_WIDGET_REVIEW",
+  nextAction:"STAGE_WIDGET",
+  networkFamily:"example.com",
+  termsReviewedAt:"2026-09-25T00:00:00Z",
+  usageMode:"PROVIDER_GENERATED_WIDGET_ONLY",
+  embeddingCondition:"OFFICIAL_GENERATED_WIDGET_ONLY",
+  playerBrandingRequired:true,
+  restreamAllowed:false
+}],{now:new Date("2026-09-25T12:00:00Z")});
 assert.equal(widget.items[0].safeUsage,true);
 assert.equal(widget.items[0].candidateEligible,true);
 assert.equal(widget.unsafe.length,0);
 
-const authorizedImage=providerFamilyResearchStatus([{id:"image",status:"RESEARCH_ONLY",provider:"Public Agency",familyLabel:"Authorized current image",researchUrl:"https://example.com/cam",termsUrl:"https://example.com/terms",technicalStatus:"EXACT_CURRENT_IMAGE_TARGET_REQUIRED",humanPlaybackStatus:"REQUIRED_ON_DEPLOYED_ERN_FOR_CURRENT_IMAGE_RENDERING",promotion:"BLOCKED_UNTIL_SPECIFIC_IMAGE_REVIEW",nextAction:"STAGE_IMAGE",networkFamily:"example.com",termsReviewedAt:"2026-09-25T00:00:00Z",usageMode:"PROVIDER_AUTHORIZED_CURRENT_IMAGE",embeddingCondition:"DIRECT_CURRENT_IMAGE_WITH_ATTRIBUTION_ONLY",playerBrandingRequired:false,imageReuseAllowed:true,attributionRequired:true,restreamAllowed:false}],{now:new Date("2026-09-25T12:00:00Z")});
+const authorizedImage=providerFamilyResearchStatus([{
+  id:"image",
+  status:"RESEARCH_ONLY",
+  provider:"Public Agency",
+  familyLabel:"Authorized current image",
+  researchUrl:"https://example.com/cam",
+  termsUrl:"https://example.com/terms",
+  technicalStatus:"EXACT_CURRENT_IMAGE_TARGET_REQUIRED",
+  humanPlaybackStatus:"REQUIRED_ON_DEPLOYED_ERN_FOR_CURRENT_IMAGE_RENDERING",
+  promotion:"BLOCKED_UNTIL_SPECIFIC_IMAGE_REVIEW",
+  nextAction:"STAGE_IMAGE",
+  networkFamily:"example.com",
+  termsReviewedAt:"2026-09-25T00:00:00Z",
+  usageMode:"PROVIDER_AUTHORIZED_CURRENT_IMAGE",
+  embeddingCondition:"DIRECT_CURRENT_IMAGE_WITH_ATTRIBUTION_ONLY",
+  playerBrandingRequired:false,
+  imageReuseAllowed:true,
+  attributionRequired:true,
+  restreamAllowed:false
+}],{now:new Date("2026-09-25T12:00:00Z")});
 assert.equal(authorizedImage.items[0].safeUsage,true);
 assert.equal(authorizedImage.items[0].candidateEligible,true);
 assert.equal(authorizedImage.items[0].imageReuseAllowed,true);
