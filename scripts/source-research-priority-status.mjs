@@ -10,6 +10,10 @@ if(data.invariants?.commercialMayOverrideTruth!==false) fail.push("commercial tr
 if(data.invariants?.commercialMayOverrideQuality!==false) fail.push("commercial quality override must remain false");
 if(data.invariants?.commercialMayAffectWatchEarthRanking!==false) fail.push("commercial Watch Earth ranking effect must remain false");
 if(data.invariants?.placeCategoriesAreIllustrativeNotRestrictive!==true) fail.push("place categories must remain illustrative, not restrictive");
+if(data.invariants?.providerConcentrationMayRaiseResearchPriority!==true) fail.push("provider concentration research-priority modifier missing");
+if(data.invariants?.providerConcentrationMayAffectWatchEarthRanking!==false) fail.push("provider concentration may affect Watch Earth ranking");
+if(data.invariants?.providerConcentrationMayOverrideTruth!==false) fail.push("provider concentration may override truth");
+if(data.invariants?.providerConcentrationMayOverrideQuality!==false) fail.push("provider concentration may override quality");
 if(!Array.isArray(data.placeUniverse)||data.placeUniverse.length<8) fail.push("place universe is unexpectedly narrow");
 console.log(JSON.stringify({ok:fail.length===0,totalWeight:total,commercialWeight:w.practicalCommercialFit,placeUniverseCount:data.placeUniverse?.length||0,fail},null,2));
 if(fail.length) process.exit(1);
