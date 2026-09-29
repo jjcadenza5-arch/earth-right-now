@@ -31,7 +31,7 @@ assert(read("scripts/build-destination-pages.mjs").includes("Ask ERN Guide"),"de
 assert(sw.includes('event.request.mode!=="navigate"'),"service worker should limit offline interception to navigation");
 assert(sw.includes('cache.add(OFFLINE)'),"service worker should cache only the explicit offline shell");
 assert(!sw.includes("cache.put("),"service worker must not cache current navigation responses");
-assert(!/sources\\.json|travel-offers\\.json|local-directory\\.json|\\/places\\//.test(sw),"service worker must not cache public current-truth data");
+assert(!/sources\.json|travel-offers\.json|local-directory\.json|\/places\//.test(sw),"service worker must not cache public current-truth data");
 assert(index.includes("./privacy.html")&&index.includes("./about.html"),"footer trust links missing");
 if(fail.length){console.error(JSON.stringify({ok:false,fail},null,2));process.exit(1)}
 console.log(JSON.stringify({ok:true,domain:"earthrightnow.app",trustPages:["about.html","privacy.html","press.html"],discoveryPages:["stories.html","places/"],leanStyles:true,pwa:true,offlineFallback:true,operatorConsole:true},null,2));
