@@ -250,5 +250,12 @@
     "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
     "observedAt": "2026-09-29T05:30:00Z",
     "reason": "Pleasant Beach Hotel's official site currently advertises a PBH Webcam with live video overlooking Little Sodus Bay. Catalog now uses the property page as LINK_ONLY."
+  },
+  {
+    "id": "sasagawa-nagare",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T05:40:00Z",
+    "reason": "Murakami City's official live-camera directory currently retains the Sasagawa Nagare / Samugawa-area external live-camera route. Catalog now uses the municipal directory as an external LINK_ONLY handoff."
   }
 ]
