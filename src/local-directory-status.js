@@ -1,7 +1,17 @@
 const HTTPS=/^https:\/\//i;
+const DAY=864e5;
 function clean(v){return String(v||"").trim()}
 function validTime(v){const t=Date.parse(v||"");return Number.isFinite(t)?t:null}
-export function localDirectoryStatus(rows=[],{knownPlaceIds=[],targetApproved=10,now=new Date(),futureSkewMinutes=5}={}){
+export function currentLocalDirectoryEntry(raw,{now=new Date(),maxAgeDays=90,futureSkewMinutes=5}={}){
+  const n=now instanceof Date?now.getTime():Number(now),verifiedMs=validTime(raw?.verifiedAt);
+  if(!raw||raw.status!=="APPROVED"||raw.paidPlacement!==false||raw.affiliate!==false)return false;
+  if(!clean(raw.id)||!clean(raw.name)||!clean(raw.type)||!clean(raw.place)||!clean(raw.country)||!clean(raw.summary)||!HTTPS.test(clean(raw.url)))return false;
+  if(verifiedMs===null||!Number.isFinite(n))return false;
+  if(verifiedMs>n+Math.max(0,Number(futureSkewMinutes)||0)*60000)return false;
+  const ageDays=Math.max(0,(n-verifiedMs)/DAY);
+  return ageDays<=Math.max(1,Number(maxAgeDays)||90);
+}
+export function localDirectoryStatus(rows=[],{knownPlaceIds=[],targetApproved=10,now=new Date(),futureSkewMinutes=5,maxAgeDays=90}={}){
   const known=new Set((knownPlaceIds||[]).map(String));
   const n=now instanceof Date?now.getTime():Number(now);
   const seenIds=new Set(),seenUrls=new Set(),items=[];
@@ -18,15 +28,22 @@ export function localDirectoryStatus(rows=[],{knownPlaceIds=[],targetApproved=10
     if(!HTTPS.test(url))reasons.push("INVALID_PUBLIC_URL");
     if(url&&seenUrls.has(url))reasons.push("DUPLICATE_URL"); else if(url)seenUrls.add(url);
     const verifiedMs=validTime(raw?.verifiedAt);
+    let ageDays=null;
     if(verifiedMs===null)reasons.push("INVALID_VERIFIED_AT");
-    else if(Number.isFinite(n)&&verifiedMs>n+Math.max(0,Number(futureSkewMinutes)||0)*60000)reasons.push("VERIFIED_AT_IN_FUTURE");
+    else if(Number.isFinite(n)){
+      if(verifiedMs>n+Math.max(0,Number(futureSkewMinutes)||0)*60000)reasons.push("VERIFIED_AT_IN_FUTURE");
+      else{
+        ageDays=Math.max(0,(n-verifiedMs)/DAY);
+        if(ageDays>Math.max(1,Number(maxAgeDays)||90))reasons.push("REVIEW_EXPIRED");
+      }
+    }
     if(raw?.status!=="APPROVED")reasons.push("NOT_APPROVED");
     if(raw?.paidPlacement!==false)reasons.push("PAID_PLACEMENT_NOT_FALSE");
     if(raw?.affiliate!==false)reasons.push("AFFILIATE_NOT_FALSE");
     if(placeId&&known.size&&!known.has(placeId))reasons.push("UNKNOWN_PLACE_ID");
     items.push({
       id:id||null,name:clean(raw?.name)||null,type:clean(raw?.type)||null,place:clean(raw?.place)||null,country:clean(raw?.country)||null,
-      placeId:placeId||null,url:url||null,verifiedAt:verifiedMs===null?null:new Date(verifiedMs).toISOString(),
+      placeId:placeId||null,url:url||null,verifiedAt:verifiedMs===null?null:new Date(verifiedMs).toISOString(),ageDays,
       status:raw?.status||null,paidPlacement:raw?.paidPlacement,affiliate:raw?.affiliate,
       valid:reasons.length===0,reasons
     });
@@ -36,12 +53,12 @@ export function localDirectoryStatus(rows=[],{knownPlaceIds=[],targetApproved=10
   const complete=invalid.length===0&&approvedValid.length>=targetApproved;
   return{
     generatedAt:new Date(Number.isFinite(n)?n:Date.now()).toISOString(),
-    targetApproved,total:items.length,valid:valid.length,invalid:invalid.length,approved:approvedValid.length,
+    targetApproved,maxAgeDays,total:items.length,valid:valid.length,invalid:invalid.length,approved:approvedValid.length,
     uniquePlaces:new Set(valid.map(x=>x.placeId||x.place).filter(Boolean)).size,
     state:invalid.length?"INVALID_DIRECTORY":complete?"PILOT_COMPLETE":"PILOT_BUILDING",
-    nextAction:invalid.length?"FIX_INVALID_DIRECTORY_ENTRIES":complete?"HOLD_UNTIL_MATERIAL_LOCAL_EVIDENCE_OR_PRODUCT_DECISION":"REVIEW_REAL_EDITORIAL_LOCAL_PLACES",
+    nextAction:invalid.length?"FIX_OR_REVERIFY_INVALID_DIRECTORY_ENTRIES":complete?"HOLD_UNTIL_MATERIAL_LOCAL_EVIDENCE_OR_PRODUCT_DECISION":"REVIEW_REAL_EDITORIAL_LOCAL_PLACES",
     items,
     safety:{paidRankingAllowed:false,affiliateRelationshipImplied:false,automaticApprovalAllowed:false,automaticDirectoryMutationAllowed:false,commercialPriorityAllowed:false},
-    note:"Read-only Local Earth editorial directory status. Ten approved unpaid/non-affiliate entries complete the current pilot; expansion then stays on hold until materially useful local evidence or a product decision appears."
+    note:"Read-only Local Earth editorial directory status. Entries expire from reviewed status after the bounded verification horizon. Ten valid approved unpaid/non-affiliate entries complete the current pilot; expansion then stays on hold until materially useful local evidence or a product decision appears."
   };
 }
