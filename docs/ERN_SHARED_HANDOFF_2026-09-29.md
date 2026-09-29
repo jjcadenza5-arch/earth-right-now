@@ -383,3 +383,17 @@ Only interrupt the operator for:
 - ERN Stories smoke now has a fresh-vs-stale EMBED playback-proof regression case.
 - `src/app-lite.js` remains safely below the fixed 100 KB cap at about **92.6 KB**.
 - Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until a push-triggered run is independently verified.
+
+
+## Continuation checkpoint — deep-link/offline hardening
+- Catalog remains **94 / 91 current / 90 current+healthy / 17 current healthy embeds / 3 stale / 0 expired / 0 unknown**.
+- Fixed a release omission: `src/fullscreen-continuity.js` is now copied into the Pages artifact and its changes trigger deployment.
+- Current viewer shares keep `#view=`; non-current/reference views now share the canonical place page instead.
+- Shared `#view=` and `#place=` links now fail closed when currentness expires, falling back to current alternatives rather than reopening stale “now” content.
+- Destination-page primary CTAs are current-state aware; non-current pages route to current ERN search instead of a dead viewer action.
+- Added release smoke coverage for deep-link currentness and offline currentness.
+- Service worker/offline behavior is explicitly guarded: only the offline shell is cached; current navigation/data/place content is never cached for replay.
+- `/places/` now prioritizes current/schedule-verified destinations, structured ItemList excludes reference-only rows, and “Explore more” excludes stale reference-only pages.
+- Full-artifact hashing and recursive post-build public-module integrity remain active.
+- `app-lite.js` is about **93.7 KB**, still under the fixed 100 KB cap.
+- Previous independently known green Pages run remains `36523426778`.
