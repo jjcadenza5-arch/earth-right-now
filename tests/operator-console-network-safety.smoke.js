@@ -1,0 +1,11 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const html=fs.readFileSync(new URL("../release-verification.html",import.meta.url),"utf8");
+const js=fs.readFileSync(new URL("../src/release-verification-console.js",import.meta.url),"utf8");
+const robots=fs.readFileSync(new URL("../robots.txt",import.meta.url),"utf8");
+assert.match(html,/noindex,nofollow,noarchive/,"operator console must remain noindex/nofollow");
+assert.match(robots,/Disallow: \/release-verification\.html/,"robots must disallow release verification URL");
+assert.doesNotMatch(js,/ern-guide-api\.|ern-travel-api\.|VIATOR_API_ENDPOINT|GUIDE_AI_ENDPOINT/,"static operator console must not call production quota-bearing APIs");
+assert.doesNotMatch(html,/Run one AI test|Find official Auckland destination|Diagnose Viator access/,"public static console must not expose external API action buttons");
+assert.match(html,/Production Guide AI, travel-provider and other quota-bearing API tests are intentionally disabled/,"operator console must explain the external-test boundary");
+console.log("Static release verification remains noindex and quota-network-action free");
