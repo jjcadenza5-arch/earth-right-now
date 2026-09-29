@@ -600,3 +600,29 @@ Only interrupt the operator for:
 - `scripts/autonomous-work-status.mjs` is the canonical “keep working vs hold” source.
 - Operator brief now surfaces the next timed external review and untimed waits to prevent blocked-lane loops.
 - Safety: do not invent work to avoid a hold; do not reopen completed lanes without a material trigger; no automatic external action or public activation.
+
+
+## Stage R continuation — Viator auth cleared, product validation prepared
+- The scheduled one-time Viator activation diagnostic has already completed; do **not** repeat it.
+- Sandbox authentication is confirmed active and the exact Auckland taxonomy mapping is verified:
+  - ERN place: `auckland-viaduct-harbour`
+  - Viator destinationId: `391`
+  - destination: Auckland, New Zealand
+- Canonical Viator gate has advanced from activation/auth to **`viator-api-product-validation`**.
+- Current Viator truth remains:
+  - `taxonomyVerified=true`
+  - `productSearchVerified=false`
+  - `affiliateAttributionVerified=false`
+  - `publicActivationAllowed=false`
+- Local Stage R preparation for the next gate is complete:
+  - added a dedicated `/api/viator/product-validation` path;
+  - the path is **disabled by default** via `ERN_VIATOR_PRODUCT_VALIDATION_ENABLED=false`;
+  - it requires a separate Worker secret token (`ERN_VIATOR_VALIDATION_TOKEN`);
+  - affiliate PID comparison is supplied only through Worker secret `VIATOR_AFFILIATE_PID`;
+  - it accepts only approved explicit ERN→Viator destination mappings;
+  - it caps the validation sample to three products;
+  - it reports product-search and affiliate-attribution evidence without exposing secret values;
+  - public `/api/viator/products` remains OFF.
+- Added release-smoke protection in `tests/viator-product-validation-boundary.smoke.js`; the test ensures validation/public switches remain OFF by default and no affiliate PID/token is hard-coded.
+- The remaining step is a genuine Cloudflare/external gate: configure the two Worker secrets, intentionally deploy/enable the validation-only path, run one controlled Auckland validation, record the evidence, then disable/remove the temporary validation capability. Do not infer success without the returned product and attribution evidence.
+- No public Viator product activation is authorized by this checkpoint.
