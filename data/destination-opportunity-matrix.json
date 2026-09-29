@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T04:40:00Z",
+  "generatedAt": "2026-09-29T04:55:00Z",
   "principle": "Research destinations where a truthful current window is valuable to visitors. Existing/available travel programs help identify useful next-step categories, but may not lower source-quality or truth standards.",
   "columns": {
     "visualCoverage": "Current ERN visual-window state",
@@ -159,7 +159,7 @@
     {
       "destination": "Tokyo",
       "country": "Japan",
-      "visualCoverage": "SEASONAL_SOURCE_OFF_SEASON_GAP",
+      "visualCoverage": "SEASONAL_GAP_PLUS_OFFICIAL_PORT_RESEARCH",
       "currentSources": [],
       "visitorDecisionValue": "HIGH",
       "nextStepIntents": [
@@ -174,8 +174,8 @@
         "TRANSFERS"
       ],
       "sourcePriority": "HIGH",
-      "why": "The existing Chidori-ga-fuchi source is seasonal and the official Sakura page still shows April 9 bloom/congestion state in late September, so ERN currently has no in-horizon Tokyo visual window.",
-      "next": "Keep Chidori as seasonal/degraded until its next active season or fresh current evidence appears. Research a distinct year-round Tokyo street, market, park or transport-gateway current window from an official/high-quality provider."
+      "why": "Chidori remains off-season, so ERN still lacks a strong central-Tokyo year-round visitor window. Tokyo Metropolitan Government now provides a public Tokyo Port DX live-camera platform, creating a legitimate official year-round research lane for waterfront/transport conditions.",
+      "next": "Resolve Tokyo Port DX exact camera targets and visitor usefulness. Continue searching separately for a strong year-round central-Tokyo street/market/landmark current window with a safe provider path."
     },
     {
       "destination": "New York",
