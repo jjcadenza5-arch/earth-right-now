@@ -1,0 +1,11 @@
+import assert from "node:assert/strict";
+import {candidateEvidenceStatus,RELEASE_EVIDENCE_KEYS} from "../src/candidate-evidence-binding.js";
+const a="a".repeat(40),b="b".repeat(40);
+const bound=Object.fromEntries(RELEASE_EVIDENCE_KEYS.map(k=>[k,{commit:a}]));
+assert.equal(candidateEvidenceStatus(bound,a).allBound,true);
+const mixed={...bound,mobile:{commit:b}};
+const result=candidateEvidenceStatus(mixed,a);
+assert.equal(result.allBound,false);
+assert.deepEqual(result.unbound,["mobile"]);
+assert.equal(candidateEvidenceStatus(bound,"not-a-sha").candidateValid,false);
+console.log("Release evidence binding remains candidate-specific");
