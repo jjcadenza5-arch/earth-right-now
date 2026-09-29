@@ -1,5 +1,5 @@
 import {readFile} from "node:fs/promises";
-import {recencyState,verificationWindowHours} from "../src/source-recency.js";
+import {ageHours as sourceAgeHours,recencyState,verificationWindowHours} from "../src/source-recency.js";
 import {recencyProviderDebt} from "../src/recency-provider-debt.js";
 
 const rows=JSON.parse(await readFile(new URL("../data/sources.json",import.meta.url),"utf8"));
@@ -12,13 +12,13 @@ const healthy=xs=>xs.filter(s=>s.health==="HEALTHY");
 const degraded=xs=>xs.filter(s=>s.health==="DEGRADED");
 const embeds=xs=>xs.filter(s=>s.playback==="EMBED");
 const ageHours=s=>{
-  const raw=s.lastSuccessfulCheck||s.checkedAt||null,t=Date.parse(raw||"");
-  return Number.isFinite(t)?Number(((now-t)/36e5).toFixed(1)):null;
+  const raw=s.lastSuccessfulCheck||s.checkedAt||null,age=sourceAgeHours(raw,now);
+  return Number.isFinite(age)?Number(age.toFixed(1)):null;
 };
 const view=s=>({
   id:s.id,title:s.title,provider:s.provider||null,truth:s.truth,playback:s.playback,health:s.health,
   checkedAt:s.lastSuccessfulCheck||s.checkedAt||null,
-  ageHours:ageHours(s),windowHours:verificationWindowHours(s),
+  recencyState:stateOf(s),ageHours:ageHours(s),windowHours:verificationWindowHours(s),
   failureReason:s.failureReason||null
 });
 const recheckItems=stale.map(view),outsideItems=other.map(view);
