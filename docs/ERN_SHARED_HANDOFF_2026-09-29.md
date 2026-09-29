@@ -397,3 +397,19 @@ Only interrupt the operator for:
 - Full-artifact hashing and recursive post-build public-module integrity remain active.
 - `app-lite.js` is about **93.7 KB**, still under the fixed 100 KB cap.
 - Previous independently known green Pages run remains `36523426778`.
+
+
+## Continuation checkpoint — candidate evidence + operator-console safety
+- Catalog remains **94 total / 91 current / 90 current+healthy / 17 current healthy embeds / 3 stale / 0 expired / 0 unknown**.
+- Fixed a maintenance bug: source recency summary now classifies `STALE_CHECK` correctly; the three stale sources no longer fall into a generic outside bucket.
+- Recency summary age reporting now uses the shared source-recency clock policy and includes each item's exact recency state.
+- Release verification console now shows candidate SHA, manifest generation time, artifact file count, and whether all six evidence records are bound to that exact candidate.
+- Provider representative status on the operator console now requires fresh playback proof, not merely any historical HUMAN_PLAYBACK observation.
+- Release candidate/status logic now becomes commit-bound when a candidate SHA is supplied; a new candidate cannot inherit READY status from human evidence recorded for an older commit.
+- Added release smoke coverage for candidate evidence binding, release-candidate binding and recency-summary state naming.
+- Removed production Guide AI and travel-provider API action buttons/network calls from the static public release-verification page. Quota-bearing external tests remain a secured/human-only workflow.
+- Added an operator-console network-safety smoke test and explicit robots disallow for `/release-verification.html`.
+- Public operator console remains `noindex,nofollow,noarchive`; discoverability preflight now guards the robots exclusion.
+- Public release artifact keeps only the lean candidate-evidence helper required by the console; unused Viator helper is no longer shipped.
+- `app-lite.js` remains about **93.7 KB**, under the fixed 100 KB cap.
+- Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment without independent verification.
