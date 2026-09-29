@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T07:05:00Z",
+  "generatedAt": "2026-09-29T07:42:00Z",
   "principle": "Research destinations where a truthful current window is valuable to visitors. Existing/available travel programs help identify useful next-step categories, but may not lower source-quality or truth standards.",
   "columns": {
     "visualCoverage": "Current ERN visual-window state",
@@ -133,8 +133,9 @@
         "CITY_UTILITY"
       ],
       "sourcePriority": "HIGH",
-      "why": "Strong visitor interest and direct relevance to ERN's local/farm origins, but Chiang Mai PAO cameras currently report standby/waiting.",
-      "next": "Monitor official feed state and build future For Places outreach to farms, resorts, markets and attractions with real current cameras."
+      "why": "Strong visitor interest and direct relevance to ERN's local/farm origins. Official Chiang Mai PAO Smart City CCTV was rechecked on 2026-09-29: the portal is active, but all four public cameras still show STANDBY / WAITING FOR FEED.",
+      "next": "Keep the official PAO lane on material-change watch only. In parallel, prioritize future For Places outreach to farms, resorts, markets and attractions that can provide truthful current visual windows.",
+      "lastOfficialRecheck": "2026-09-29"
     },
     {
       "destination": "Tonami Tulip Park",
