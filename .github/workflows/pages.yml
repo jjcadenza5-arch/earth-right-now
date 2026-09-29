@@ -19,6 +19,7 @@ on:
       - "src/now-evidence.js"
       - "src/local-directory-status.js"
       - "src/travel-offer-verification.js"
+      - "src/travel-bridge.js"
       - "src/affiliate-partners.js"
       - "scripts/local-directory-status.mjs"
       - "src/styles-lite.css"
