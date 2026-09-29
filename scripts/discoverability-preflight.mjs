@@ -21,6 +21,7 @@ const robots=await read("robots.txt");
 if(!/User-agent:\s*OAI-SearchBot[\s\S]*?Allow:\s*\//i.test(robots))issues.push({code:"OAI_SEARCHBOT_NOT_EXPLICITLY_ALLOWED"});
 if(/User-agent:\s*OAI-SearchBot[\s\S]*?Disallow:\s*\/\s*(?:\r?\n|$)/i.test(robots))issues.push({code:"OAI_SEARCHBOT_ROOT_BLOCKED"});
 if(!/Disallow:\s*\/review\//i.test(robots))issues.push({code:"REVIEW_ROBOTS_GUARD_MISSING"});
+if(!/Disallow:\s*\/release-verification\.html/i.test(robots))issues.push({code:"RELEASE_VERIFICATION_ROBOTS_GUARD_MISSING"});
 
 const sitemap=await read("sitemap.xml");
 for(const url of ["https://earthrightnow.app/","https://earthrightnow.app/places/","https://earthrightnow.app/stories.html","https://earthrightnow.app/press.html"]){
