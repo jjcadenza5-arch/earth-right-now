@@ -1,6 +1,9 @@
 import {guideAiEscalationDecision} from "./guide-ai-routing.js";
+import {GUIDE_AI_CAPABILITIES} from "./guide-ai-capabilities.js";
+import {guideAiActivation} from "./guide-ai-activation.js";
 
 const ENDPOINT="https://ern-guide-api.jjcadenza6.workers.dev/api/guide";
+const PUBLIC_AI=guideAiActivation(GUIDE_AI_CAPABILITIES).ready;
 const VERSION="2026-09-25.v2";
 const form=document.querySelector("#guideForm"),input=document.querySelector("#guideInput"),reply=document.querySelector("#guideReply"),results=document.querySelector("#guideResults");
 if(form&&input&&reply&&results){
@@ -9,6 +12,7 @@ if(form&&input&&reply&&results){
  const lang=()=>document.documentElement.lang||localStorage.getItem("ern-language")||"en";
  const snapshot=()=>({items:[...results.querySelectorAll("button.guide-result")],link:results.querySelector("a.guide-result-link")||null});
  const maybeAsk=async q=>{
+  if(!PUBLIC_AI){reply.dataset.aiState="deterministic";return}
   const my=++seq,det=snapshot(),decision=guideAiEscalationDecision({query:q,deterministic:det});
   if(!decision.eligible)return;
   const fallback=reply.textContent;
