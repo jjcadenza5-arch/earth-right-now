@@ -626,3 +626,4 @@ Only interrupt the operator for:
 - Added release-smoke protection in `tests/viator-product-validation-boundary.smoke.js`; the test ensures validation/public switches remain OFF by default and no affiliate PID/token is hard-coded.
 - The remaining step is a genuine Cloudflare/external gate: configure the two Worker secrets, intentionally deploy/enable the validation-only path, run one controlled Auckland validation, record the evidence, then disable/remove the temporary validation capability. Do not infer success without the returned product and attribution evidence.
 - No public Viator product activation is authorized by this checkpoint.
+- Independently verified GitHub Pages run **36594873098** completed successfully through Deploy for commit `9940de6a5c585de29f15e6733a7345ba148deea7`, including the new Viator product-validation boundary smoke.
