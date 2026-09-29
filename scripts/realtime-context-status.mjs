@@ -20,6 +20,11 @@ for(const s of data.sources||[]){
    if(s.freshnessPolicy?.sourceTimestampMustBeProviderSupplied!==true) fail.push(`${s.id}: provider-supplied timestamp requirement missing`);
    if(s.freshnessPolicy?.clientSuppliedTimestampMayCreateFreshness!==false) fail.push(`${s.id}: client time may create API freshness`);
    if(!Number.isFinite(Number(s.freshnessPolicy?.maxFutureSkewMinutes))) fail.push(`${s.id}: future timestamp skew bound missing`);
+   if(!s.placeMappingRegistry) fail.push(`${s.id}: explicit place mapping registry missing`);
+   if(s.attribution?.required!==true||!s.attribution?.publicLabel||s.attribution?.sourceLinkRequired!==true) fail.push(`${s.id}: attribution contract incomplete`);
+   if(!Number.isFinite(Number(s.cachePolicy?.maxPublicAgeMinutes))||s.cachePolicy?.staleWhileRevalidateAllowed!==false||s.cachePolicy?.staleOnErrorAllowed!==false||s.cachePolicy?.cacheMayCreateFreshness!==false) fail.push(`${s.id}: fail-closed cache policy incomplete`);
+   if(!s.failurePolicy||Object.values(s.failurePolicy).some(v=>v!=="HIDE_CONTEXT_KEEP_CAMERA_VISIBLE")) fail.push(`${s.id}: failure policy may affect camera visibility`);
+   if(s.privacy?.visitorPersonalDataCollected!==false||s.privacy?.visitorProfilingAllowed!==false||s.privacy?.rawNetworkIdentifiersStored!==false||s.privacy?.movementHistoryArchiveAllowed!==false||s.privacy?.currentSnapshotOnly!==true||s.privacy?.individualIdentificationAllowed!==false||s.privacy?.cctvMediaIngested!==false) fail.push(`${s.id}: privacy/data-minimization policy incomplete`);
  }
  if(kind==="OFFICIAL_PAGE_MANUAL_REFRESH"){
    if(!s.acquisition?.officialUrl) fail.push(`${s.id}: official manual-refresh URL missing`);
