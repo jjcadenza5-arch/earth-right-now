@@ -462,3 +462,28 @@ Only interrupt the operator for:
 - Added Atlas recheck currentness regression coverage and whole-product guards.
 - `src/app-lite.js` is about **94.1 KB**, still under the fixed 100 KB cap.
 - Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until independently verified.
+
+
+## Continuation checkpoint — Guide planning + travel-offer expiry alignment
+- Catalog remains **94 total / 91 current / 90 current+healthy / 17 current healthy embeds / 3 stale / 0 expired / 0 unknown**.
+- Deterministic ERN Guide now supports **planning-after-view**:
+  - Earth windows are selected/ranked first using the existing editorial/currentness logic;
+  - only after that match does Guide derive up to three current verified travel-planning links from the matched place;
+  - affiliate/sponsored availability is never read by `guideScore` and cannot affect which Earth window ranks first;
+  - planning links retain explicit provider/disclosure text and open externally.
+- Reference-only/stale viewer states remain non-commercial: affiliate/verified offers are suppressed unless the source is current; neutral external search/map utilities remain available.
+- Travel-offer expiry is now enforced across all surfaces:
+  - shared `travel-offer-verification.js` rejects explicit expired/invalid `expiresAt`;
+  - lightweight browser gate mirrors the same rule;
+  - normalized `travelOffer()` preserves validated `expiresAt` instead of dropping it.
+- Added release smoke for explicit offer expiry, travel-bridge expiry normalization and Guide planning/commercial neutrality.
+- Whole-product preflight now guards:
+  - planning links remain post-ranking;
+  - commercial state never enters Guide scoring;
+  - stale/reference viewer states stay non-commercial;
+  - browser offer gate enforces explicit expiry.
+- Pages now triggers when `src/travel-bridge.js` changes.
+- Guide mountain wording was adjusted in all seven supported languages so it asks only what the camera/window visibly shows rather than implying ERN has current weather data while real-time context remains public-OFF.
+- Existing localized planning copy was verified present in all seven languages and already states that travel links are current-only and do not affect ERN ranking.
+- `src/app-lite.js` is about **94.9 KB**, still under the fixed 100 KB cap.
+- Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until independently verified.
