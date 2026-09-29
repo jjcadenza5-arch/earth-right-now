@@ -7,6 +7,8 @@ const worker=read("media-worker/src/index.js");
 const state=read("media-worker/src/media-state.js");
 const cfg=read("media-worker/wrangler.jsonc");
 const privacy=read("privacy.html");
+const publicPage=read("now-moments.html");
+const publicRuntime=read("src/now-moments-page.js");
 const deployment=json("data/now-moment-media-deployment.json");
 const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)};
 must(deployment.status==="NOT_DEPLOYED","media deployment evidence must remain NOT_DEPLOYED before controlled deployment");
@@ -49,6 +51,8 @@ must(state.includes("ttlMinutes:45"),"worker health TTL evidence missing");
 must(state.includes("expiredPendingCleanup"),"worker health must expose expired media pending cleanup");
 must(worker.includes("NOW_MOMENT_CLEANUP_FAILED")&&worker.includes("throw error"),"scheduled cleanup failures must be observable");
 must(privacy.includes("expire after 45 minutes")&&privacy.includes("still images only")&&privacy.includes("video remains disabled"),"published privacy notice no longer matches media policy");
+must(!/type=["\']file["\']|accept=["\']image\//i.test(publicPage),"public photo-upload UI must remain absent before explicit UI activation");
+must(!/prepareNowMomentPhoto|nowMomentPhotoUploadHeaders|\/api\/now-moments\/photos/.test(publicRuntime),"public runtime must not upload photos before explicit UI activation");
 const prepared=fail.length===0;
 console.log(JSON.stringify({
   phase:"PHASE_L_NOW_MOMENT_MEDIA",
