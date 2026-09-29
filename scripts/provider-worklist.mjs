@@ -23,6 +23,8 @@ console.log(JSON.stringify({
  generatedAt:report.generatedAt,
  summary:{...(input?.evidenceDebtSummary||{total:0,degraded:0,unknown:0}),actionable:actionable.length,deferred:deferred.length},
  staleObservationIds:input?.staleObservationIds||[],
+ rejected:input?.rejected||[],
+ researchOnly:report.healthAutomation?.providerInput?.researchOnly||[],
  blockedDegraded:actionable.filter(item=>item.health==="DEGRADED").map(item=>({id:item.id,provider:item.provider||null,sourceUrl:item.sourceUrl||null,embedUrl:item.embedUrl||null,action:item.action,requiredEvidence:item.requiredEvidence,reason:item.reason,recordCommand:recordCommand(item)})),
  deferred:deferred.map(item=>({id:item.id,provider:item.provider||null,health:item.health,deferredReason:item.deferredReason,reason:item.reason,action:item.action})),
  next:actionable.slice(0,20).map(item=>({...item,recordCommand:recordCommand(item),warning:"Do not record HTTP-only page reachability as playback proof."}))
