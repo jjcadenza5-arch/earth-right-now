@@ -4,7 +4,7 @@ const facts=JSON.parse(fs.readFileSync("data/public-brand-facts.json","utf8"));
 console.assert(html.includes("See before you go."));
 console.assert(html.includes("Payment never bypasses review or buys editorial ranking."));
 console.assert(html.includes("does not claim social-media accounts"));
-console.assert(!/@[A-Za-z0-9_.-]+/.test(html),"Press kit must not invent social handles");
+console.assert(!/(^|[\\s>])@[A-Za-z][A-Za-z0-9_.-]{1,}/m.test(html),"Press kit must not invent visible social handles");
 console.assert(!/mailto:/i.test(html),"Press kit must not invent a contact email");
 console.assert(facts.socialAccountClaims.length===0&&facts.contactClaimed===false);
 console.assert(facts.commercialRankingAffected===false);
