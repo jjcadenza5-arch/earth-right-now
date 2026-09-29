@@ -579,3 +579,24 @@ Only interrupt the operator for:
   - analytics active/off.
   It no longer collapses “deployed but gated” into generic false.
 - Safety remains unchanged: no automatic external action, credential rotation, public activation, partner claim or invented trigger evidence.
+
+
+## Latest autonomous checkpoint — Stage R hold
+- Independently verified GitHub Pages run **36584429951** completed successfully for commit `3c9115f9b917779561a57803336c6f59a65410f2`.
+- Canonical project phase remains **`STAGE_R_EXTERNAL_GATE_TRIGGER_REGISTER`**.
+- New canonical autonomous-work status is **`AUTONOMOUS_HOLD_EXTERNAL_WAIT`**.
+- Machine-reported local blockers: **none**.
+- External gates eligible now at the successful run: **none**.
+- Next timed review:
+  - `viator-api-activation`
+  - **2026-09-29T15:21:00Z / 22:21 Asia/Bangkok**
+  - before trigger: **DO_NOT_RETEST_OR_ROTATE_KEY**
+- A one-time ChatGPT task is scheduled for 22:21 Bangkok to perform exactly one conservative Viator activation diagnostic. It must not rotate/re-enter credentials, must not infer success from time passing, and must keep public activation OFF unless real evidence passes.
+- Untimed waiting lanes remain: Travelpayouts broader matching, Earth Signals controlled deployment, submission transport, Now Moment media deployment, generative Guide public activation, Seoul context validation/activation, official social-channel connection and aggregate analytics.
+- Current source state at the hold checkpoint: **91 current / 90 current+healthy / 13 current healthy embeds**; persistent stale debt remains exactly Pattaya, Tbilisi Mtkvari and Chidori-ga-fuchi.
+- Active CouchTourist dependency remains **zero**.
+- Whole-product status now distinguishes deployed backend vs public activation and verified inventory vs current public placement.
+- `scripts/project-phase-status.mjs` is the canonical phase source.
+- `scripts/autonomous-work-status.mjs` is the canonical “keep working vs hold” source.
+- Operator brief now surfaces the next timed external review and untimed waits to prevent blocked-lane loops.
+- Safety: do not invent work to avoid a hold; do not reopen completed lanes without a material trigger; no automatic external action or public activation.
