@@ -70,3 +70,31 @@ Context remains public-OFF until its source-specific activation gates are comple
 ## Commercial boundary
 
 Context may support a visitor's decision, but affiliate availability or commission may not alter context wording, freshness, source selection, or Watch Earth ranking.
+
+
+## Place mapping
+
+Context must not be attached to an ERN place through fuzzy names, proximity alone, or client inference.
+
+For API context:
+- maintain a reviewed mapping registry from ERN `placeId` to provider area identity;
+- allow internal validation candidates without making them public;
+- require a real provider response to confirm the provider area name/code before public approval;
+- keep `mayPublishContext=false` until that response has been validated and the mapping is explicitly approved;
+- mapping failure hides context only and never hides the camera/source.
+
+Current Seoul state: ERN has one internal validation candidate, `seoul-plaza` → `Gwanghwamun·Deoksugung`. It remains public-OFF until a real keyed `citydata_eng` response confirms the provider identity.
+
+## Privacy and caching
+
+Real-time context should be current-snapshot utility, not a people-movement archive.
+
+Default rules:
+- no visitor profiling;
+- no raw network identifiers stored for context;
+- no individual identification;
+- no CCTV media ingestion through a context adapter;
+- no historical movement archive by default;
+- bounded cache age only;
+- no stale-while-revalidate or stale-on-error behavior that could present expired context as current;
+- cache or client clocks may decide expiry but may not manufacture freshness.
