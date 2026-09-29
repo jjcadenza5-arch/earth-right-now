@@ -487,3 +487,27 @@ Only interrupt the operator for:
 - Existing localized planning copy was verified present in all seven languages and already states that travel links are current-only and do not affect ERN ranking.
 - `src/app-lite.js` is about **94.9 KB**, still under the fixed 100 KB cap.
 - Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until independently verified.
+
+
+## Continuation checkpoint — trust discovery + distribution gate + runtime headroom
+- Catalog remains **94 total / 91 current / 90 current+healthy / 17 current healthy embeds / 3 stale / 0 expired / 0 unknown**.
+- Public trust/discovery surfaces were normalized:
+  - `about.html` → AboutPage + BreadcrumbList + visible breadcrumb
+  - `privacy.html` → WebPage + BreadcrumbList + visible breadcrumb
+  - `for-places.html` → WebPage + BreadcrumbList + visible breadcrumb
+  - `press.html` → AboutPage + BreadcrumbList + visible breadcrumb + fuller Twitter/share metadata
+- Discoverability preflight now requires all four trust pages, canonical URLs, structured page type, breadcrumb schema and visible breadcrumb.
+- `distribution-readiness.mjs` now treats structured site identity as part of AI/search readiness instead of checking only robots/sitemap/OAI crawler allowance.
+- Distribution readiness is now fail-closed for website sharing, AI/search structure and safety invariants, while unconnected social channels remain optional/human-gated.
+- Pages now runs:
+  - **Public brand identity integrity**
+  - **Organic distribution readiness**
+  before public discoverability preflight.
+- Public brand facts are cross-checked against homepage/Press identity, canonical domain, social-account claim state and commercial-ranking independence.
+- No social account is claimed or auto-created; all current distribution channels remain NOT_CONNECTED and automatic posting stays disabled.
+- To restore runtime headroom, low-frequency travel-planning selection/disclosure/link helpers were extracted from `app-lite.js` into `src/travel-planning-client.js`.
+- The helper loads before `app-lite.js`, is copied into the release artifact, triggers Pages on change, and has dedicated smoke coverage.
+- Existing Guide/commercial guards were updated to protect the extracted API rather than old inline function names.
+- `app-lite.js` dropped from about **94.9 KB to 93.5 KB**, restoring about **6.5 KB** of headroom under the fixed 100 KB cap without changing the stable UI.
+- Release smoke now includes public trust discovery, distribution readiness and travel-planning client coverage.
+- Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until independently verified.
