@@ -117,7 +117,8 @@ export class MediaState{
 
     if(b.op==="status"){
       const count=Number([...this.sql.exec("SELECT COUNT(*) AS n FROM photos")][0]?.n||0);
-      return json(200,{ok:true,retainedMedia:count,maxRetainedMedia:MAX_RETAINED_MEDIA,ttlMinutes:45,videoEnabled:false,directBucketPublicAccess:false});
+      const expiredPendingCleanup=Number([...this.sql.exec("SELECT COUNT(*) AS n FROM photos WHERE expiry_at <= ?",now)][0]?.n||0);
+      return json(200,{ok:true,retainedMedia:count,activeMedia:Math.max(0,count-expiredPendingCleanup),expiredPendingCleanup,maxRetainedMedia:MAX_RETAINED_MEDIA,ttlMinutes:45,videoEnabled:false,directBucketPublicAccess:false});
     }
 
     return json(404,{ok:false,reason:"UNKNOWN_OPERATION"});
