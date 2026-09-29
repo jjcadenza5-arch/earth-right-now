@@ -51,6 +51,7 @@ function verificationLabel(s){const d=verificationAgeDays(s);if(!Number.isFinite
 function verificationWindowHours(s){if(s?.truth==="LIVE_IMAGE"||s?.playback==="IMAGE_REFRESH")return 24;if(s?.playback==="EMBED")return 24;if(s?.truth==="EXTERNAL_LIVE"||s?.truth==="PARTNER")return 72;return 168}
 function verificationAgeHours(s){return verificationAgeDays(s)*24}
 function featureEligible(s){return!!(s&&s.health==="HEALTHY"&&!featuredHold(s)&&verificationAgeHours(s)<=verificationWindowHours(s))}
+function guideEligible(s){return featureEligible(s)&&currentTruthClaim(s)}
 function recentPlaybackProof(s){const a=(Date.now()-Date.parse(s?.playbackVerifiedAt))/36e5;return Number.isFinite(a)&&a>=0&&a<=72}
 function watchExperienceEligible(s){return!!(s&&s.health==="HEALTHY"&&!s.watchHold&&!/VISITOR_PLAYBACK_REJECTED|NOT_LIVE|VIDEO_UNAVAILABLE|STALE_RECORDING|BROKEN_EMBED/i.test(s.failureReason||"")&&+s.quality>=80&&+s.moment>=70)}
 function watchEligible(s){return featureEligible(s)&&currentTruthClaim(s)&&watchExperienceEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
@@ -350,7 +351,7 @@ function guideScore(s,intent){
 }
 function guideNearby(seed){
  if(!seed)return[];const lat=Number(seed.lat),lon=Number(seed.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon))return[];
- return state.sources.filter(s=>s.id!==seed.id&&featureEligible(s)&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon)))
+ return state.sources.filter(s=>s.id!==seed.id&&guideEligible(s)&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon)))
    .map(s=>({s,d:distanceKm(seed,s)})).filter(x=>Number.isFinite(x.d)).sort((a,b)=>a.d-b.d).slice(0,4).map(x=>x.s);
 }
 
@@ -359,7 +360,7 @@ function guidePlaceMatches(q){
  const intentWords=new Set(["peaceful","quiet","calm","golden","sunset","sunrise","night","lights","wildlife","animal","beach","sea","coast","ocean","mountain","snow","ski","city","street","busy","happening","activity","people","surprise","random","local","small","business","cafe","café","restaurant","shop","market","farm","hotel","guesthouse","bakery","food"]);
  const tokens=normalizeSearch(q).split(/\s+/).filter(t=>t&&!noise.has(t)&&!intentWords.has(t));
  if(!tokens.length)return[];
- return state.sources.filter(featureEligible).filter(s=>{const hay=normalizeSearch([s.title,s.region,s.country,s.provider,s.story,...(s.categories||[])].filter(Boolean).join(" "));return tokens.every(t=>hay.includes(t))}).sort((a,b)=>baseScore(b)-baseScore(a));
+ return state.sources.filter(guideEligible).filter(s=>{const hay=normalizeSearch([s.title,s.region,s.country,s.provider,s.story,...(s.categories||[])].filter(Boolean).join(" "));return tokens.every(t=>hay.includes(t))}).sort((a,b)=>baseScore(b)-baseScore(a));
 }
 
 function guideResponse(q){
@@ -368,13 +369,13 @@ function guideResponse(q){
  const nq=normalizeSearch(q),ownerIntent=/\b(add|submit|owner|my camera|my business|my place|list my|camera owner)\b/.test(nq);
  if(ownerIntent)return{text:guideMsg("owner"),items:[],link:{href:"./for-places.html",label:guideMsg("forPlaces")}};
  const businessIntent=/\b(cafe|café|restaurant|shop|market|farm|small business|local business|hotel|guesthouse|bakery|food)\b/.test(nq);
- if(businessIntent){const locals=localDirectoryMatch(q).slice(0,4);if(locals.length)return{text:guideMsg("businessFound"),items:[],locals};return{text:guideMsg("businessEmpty"),items:state.sources.filter(featureEligible).filter(s=>localPlaceSignals(s).worth).sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,4)};}
+ if(businessIntent){const locals=localDirectoryMatch(q).slice(0,4);if(locals.length)return{text:guideMsg("businessFound"),items:[],locals};return{text:guideMsg("businessEmpty"),items:state.sources.filter(guideEligible).filter(s=>localPlaceSignals(s).worth).sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,4)};}
  if(/moment|upload|photo|picture|visitor/.test(normalizeSearch(q)))return{text:guideMsg("moments"),items:[],link:{href:"./now-moments.html",label:guideMsg("aboutMoments")}};
  if(intent.near&&state.selected){const items=guideNearby(state.selected);return{text:items.length?guideMsg("nearbyFound",{place:state.selected.title}):guideMsg("nearbyEmpty"),items};}
  const placeMatches=guidePlaceMatches(q);
  if(intent.planning&&!placeMatches.length)return{text:t("guidePlanningPrompt"),items:[]};
  if(placeMatches.length&&!intent.surprise&&!intent.near&&!intent.local&&!intent.peaceful&&!intent.golden&&!intent.night&&!intent.wildlife&&!intent.beach&&!intent.mountain&&!intent.city&&!intent.happening)return{text:intent.planning?String(t("guidePlanningFound")).replace("{count}",String(placeMatches.length)):guideMsg("placeFound",{count:placeMatches.length}),items:placeMatches.slice(0,4)};
- let pool=state.sources.filter(featureEligible);
+ let pool=state.sources.filter(guideEligible);
  if(intent.current)pool=pool.filter(currentTruthClaim);
  if(intent.local){const local=pool.filter(s=>localPlaceSignals(s).worth);if(local.length)pool=local}
  let items=[...pool].sort((a,b)=>guideScore(b,intent)-guideScore(a,intent));
