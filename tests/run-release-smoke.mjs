@@ -39,6 +39,7 @@ const releaseTests=[
   "destination-page-builder.smoke.js",
   "local-directory-status.smoke.js",
   "travel-offer-expiry.smoke.js",
+  "travel-bridge.smoke.js",
   "release-artifact-assets.smoke.js",
   "operator-console-network-safety.smoke.js",
   "release-candidate.smoke.js",
