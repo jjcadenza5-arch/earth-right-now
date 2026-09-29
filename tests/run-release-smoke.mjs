@@ -19,6 +19,7 @@ const releaseTests=[
   "source-recency-policy.smoke.js",
   "source-recency-summary.smoke.js",
   "stale-maintenance-class.smoke.js",
+  "source-research-stale-debt.smoke.js",
   "discovery-eligibility.smoke.js",
   "playback-currentness.smoke.js",
   "catalog-release-recency.smoke.js",
