@@ -233,6 +233,13 @@ jobs:
           node tests/manual-context-record.smoke.js
       - name: Commercial placement integrity preflight
         run: node scripts/commercial-placement-preflight.mjs
+      - name: One-time Viator activation diagnostic
+        run: |
+          set -euo pipefail
+          echo "ERN_VIATOR_DIAGNOSTIC_BEGIN"
+          curl -sS -H 'Origin: https://earthrightnow.app' https://ern-travel-api.jjcadenza6.workers.dev/api/viator/diagnostics
+          echo
+          echo "ERN_VIATOR_DIAGNOSTIC_END"
       - name: Build static release
         run: npm run release:build
       - name: Public module integrity
