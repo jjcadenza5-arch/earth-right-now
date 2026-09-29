@@ -156,6 +156,12 @@ export default{
     return reply(404,{ok:false,reason:"NOT_FOUND"},origin);
   },
   async scheduled(_controller,env){
-    try{await cleanup(env)}catch{}
+    try{
+      const result=await cleanup(env);
+      if(!result.ok)throw Object.assign(new Error("NOW_MOMENT_CLEANUP_PARTIAL_FAILURE"),{details:result.failed||[]});
+    }catch(error){
+      console.error("NOW_MOMENT_CLEANUP_FAILED",error?.message||error,error?.details||[]);
+      throw error;
+    }
   }
 };
