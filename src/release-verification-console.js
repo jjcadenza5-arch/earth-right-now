@@ -1,4 +1,6 @@
 import {exactDestinationCandidates} from "./viator-destination-match.js";
+import {candidateEvidenceStatus} from "./release-evidence.js";
+import {embedPlaybackProofCurrent} from "./playback-proof.js";
 const $=s=>document.querySelector(s);
 const GATES=[
  {key:"browser",title:"Desktop browser",steps:["Open Home, Watch Earth, Explore, Local Earth, Living Atlas and My Earth.","Open ERN Guide and try at least one place request.","Open and close the immersive viewer.","Open the separate Now Moments and Places & Cameras pages.","Verify Previous/Next and source links.","Confirm controls are reachable and layout is not broken."]},
@@ -10,7 +12,7 @@ const GATES=[
 ];
 function representativeSources(rows=[]){const degraded=rows.filter(x=>x.health==="DEGRADED"),healthy=rows.filter(x=>x.health==="HEALTHY").sort((a,b)=>(b.quality||0)-(a.quality||0));return[...degraded,...healthy.slice(0,Math.max(1,2-degraded.length))].filter((x,i,a)=>a.findIndex(y=>y.id===x.id)===i)}
 const facts=$("#facts"),providers=$("#providers"),gates=$("#gates"),command=$("#command"),note=$("#note"),key=$("#key");
-let manifest=null,sources=[],observations=[];
+let manifest=null,sources=[],observations=[],releaseEvidence={};
 function fact(label,value){const d=document.createElement("div");d.className="fact";d.innerHTML="<strong>"+label+"</strong><span></span>";d.querySelector("span").textContent=value||"Unknown";facts.append(d)}
 function gateView(g){const d=document.createElement("div");d.className="gate";const h=document.createElement("h3");h.textContent=g.title;const checks=document.createElement("div");checks.className="checks";for(const step of g.steps){const l=document.createElement("label"),c=document.createElement("input");c.type="checkbox";c.dataset.gate=g.key;l.append(c," "+step);checks.append(l)}d.append(h,checks);return d}
 GATES.forEach(g=>gates.append(gateView(g)));
@@ -18,7 +20,10 @@ async function load(){
  try{manifest=await fetch("./release-manifest.json",{cache:"no-store"}).then(r=>r.ok?r.json():Promise.reject(new Error("manifest")));}catch{}
  try{sources=await fetch("./data/sources.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]);}catch{}
  try{observations=await fetch("./data/provider-observations.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]);}catch{}
+ try{releaseEvidence=await fetch("./data/release-evidence.json",{cache:"no-store"}).then(r=>r.ok?r.json():{});}catch{}
+ const binding=candidateEvidenceStatus(releaseEvidence,manifest?.commit||"");
  fact("Candidate commit",manifest?.commit||"Manifest not available");
+ fact("Evidence binding",binding.allBound?"All six records match this candidate":binding.candidateValid?binding.unbound.length+" record(s) belong to another/unbound commit":"Candidate SHA unavailable");
  fact("Origin",location.origin);
  fact("Viewport",innerWidth+" × "+innerHeight);
  fact("Browser",navigator.userAgent);
@@ -28,10 +33,10 @@ async function load(){
 function renderProviders(){
  const embeds=sources.filter(x=>x.playback==="EMBED"&&x.permission==="EMBED_ALLOWED"),groups=new Map();
  for(const s of embeds){const p=String(s.provider||"Unknown");if(!groups.has(p))groups.set(p,[]);groups.get(p).push(s)}
- const reps=[...groups.entries()].flatMap(([provider,rows])=>representativeSources(rows).map(source=>({provider,source,verified:observations.some(o=>o.id===source.id&&o.httpStatus===200&&o.confirmation==="HUMAN_PLAYBACK")})));
+ const reps=[...groups.entries()].flatMap(([provider,rows])=>representativeSources(rows).map(source=>({provider,source,verified:embedPlaybackProofCurrent(source,{now:new Date()})&&observations.some(o=>o.id===source.id&&o.httpStatus===200&&o.confirmation==="HUMAN_PLAYBACK")})));
  providers.replaceChildren();
  if(!reps.length){providers.textContent="No inside-ERN representative list could be built.";return}
- for(const x of reps){const row=document.createElement("div");row.className="provider";const left=document.createElement("div");const title=document.createElement("strong");title.textContent=x.source.title;const meta=document.createElement("div");meta.className="muted";meta.textContent=x.provider+" · "+x.source.id+" · "+x.source.health;left.append(title,meta);const actions=document.createElement("div");const status=document.createElement("span");status.className="pill "+(x.verified?"ok":"danger");status.textContent=x.verified?"Recorded":"Needs human playback";const open=document.createElement("a");open.className="button secondary";open.href="./#view="+encodeURIComponent(x.source.id);open.target="_blank";open.rel="noopener";open.textContent="Open";actions.append(status," ",open);row.append(left,actions);providers.append(row)}
+ for(const x of reps){const row=document.createElement("div");row.className="provider";const left=document.createElement("div");const title=document.createElement("strong");title.textContent=x.source.title;const meta=document.createElement("div");meta.className="muted";meta.textContent=x.provider+" · "+x.source.id+" · "+x.source.health;left.append(title,meta);const actions=document.createElement("div");const status=document.createElement("span");status.className="pill "+(x.verified?"ok":"danger");status.textContent=x.verified?"Fresh proof":"Needs fresh playback";const open=document.createElement("a");open.className="button secondary";open.href="./#view="+encodeURIComponent(x.source.id);open.target="_blank";open.rel="noopener";open.textContent="Open";actions.append(status," ",open);row.append(left,actions);providers.append(row)}
 }
 $("#makeCommand").onclick=()=>{const sha=String(manifest?.commit||"");if(!/^[0-9a-f]{40}$/i.test(sha)){command.textContent="Cannot build a recording command until release-manifest.json exposes a valid candidate SHA.";return}const text=String(note.value||"").trim();const escaped=text.replaceAll("\\","\\\\").replaceAll('"','\\"');command.textContent='npm run release:record -- '+key.value+' pass '+sha+' "'+escaped+'"';};
 load();
