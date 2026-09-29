@@ -22,6 +22,7 @@ if((recency.recheckDue?.routine||[]).length>0)localBlockers.push("routine-source
 if((recency.outsideCurrentOrRecheck?.total||0)>0)localBlockers.push("expired-or-unknown-source-state");
 
 const eligible=(gates.eligibleNow||[]).map(x=>x.id);
+const coreComplete=phase.coreComplete===true;
 let state,next;
 if(localBlockers.length){state="LOCAL_AUTONOMOUS_WORK_OPEN";next="WORK_ONLY_LOCAL_BLOCKERS"}
 else if(eligible.length){state="EXTERNAL_REVIEW_ELIGIBLE";next="REVIEW_TRIGGER_EVIDENCE_WITHOUT_ASSUMING_SUCCESS"}
@@ -29,6 +30,8 @@ else{state="AUTONOMOUS_HOLD_EXTERNAL_WAIT";next="WAIT_FOR_MATERIAL_EXTERNAL_TRIG
 
 console.log(JSON.stringify({
   schemaVersion:1,
+  coreComplete,
+  completionState:coreComplete?"CORE_COMPLETE_EXTERNAL_OPTIONAL":"CORE_INCOMPLETE",
   state,
   localBlockers,
   externalEligibleNow:eligible,
@@ -44,5 +47,7 @@ console.log(JSON.stringify({
     automaticPublicActivationAllowed:false,
     timePassingAloneCountsAsSuccess:false
   },
-  note:"Autonomous hold is a valid success state. Resume only for a failed local hold check, an eligible external trigger, a material source/catalog change, or an explicitly opened product phase."
+  note:coreComplete
+    ?"ERN core is complete. Autonomous hold is the correct state when no maintenance blocker or external trigger exists; optional activation gates must not be misreported as unfinished core work."
+    :"Autonomous work should address only the listed local blockers before core completion can be claimed."
 },null,2));
