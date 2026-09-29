@@ -33,6 +33,7 @@ must(momentsJs.includes("Preview locally"),"Now Moments local preview fallback m
 must(momentsJs.includes("canonicalPlaces"),"Now Moments canonical ERN place boundary missing");
 must(publicConfig.includes('earthSignals?.status==="DEPLOYED"')&&publicConfig.includes("publicActivationAllowed===true"),"Earth Signal public config must require deployed + explicit activation");
 must(publicConfig.includes("submissions?.enabled===true"),"Submission public config must require explicit enabled transport");
+must(publicConfig.includes('media?.status==="DEPLOYED"')&&publicConfig.includes("media?.publicActivationAllowed===true")&&publicConfig.includes("media?.videoEnabled===false"),"Now Moment media public config must require deployed + explicit activation + video-off boundary");
 if(earthSignals.publicActivationAllowed!==true)must(earthSignals.publicActivationAllowed===false,"Earth Signals activation switch must be explicit false until intentionally enabled");
 if(submission.enabled!==true)must(submission.enabled===false,"Submission transport enabled switch must be explicit false until intentionally enabled");
 must(media.publicActivationAllowed===false,"Now Moment media public activation must remain false until intentionally enabled");
