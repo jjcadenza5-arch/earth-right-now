@@ -6,6 +6,7 @@ const releaseTests=[
   "embed-policy.smoke.js",
   "realtime-context.smoke.js",
   "seoul-context-mapping.smoke.js",
+  "context-public-off.smoke.js",
   "manual-context-record.smoke.js",
   "recency-provider-debt.smoke.js",
   "catalog-metadata-audit.smoke.js",
