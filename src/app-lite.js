@@ -288,6 +288,12 @@ function travelOfferFor(s,intent){
  return (state.travelOffers||[]).filter(o=>o&&o.placeId===placeId&&o.intent===intent&&currentClientTravelOffer(o)).sort((a,b)=>Date.parse(b.verifiedAt)-Date.parse(a.verifiedAt)||String(a.id).localeCompare(String(b.id)))[0]||null;
 }
 function travelOfferDisclosure(o){return o?.sponsored?"Sponsored":o?.affiliate?"Affiliate link":"External travel link"}
+function guidePlanOffers(s){
+ const seen=new Set();return["activities","culture","transport","stay","eat"].map(i=>travelOfferFor(s,i)).filter(o=>o&&!seen.has(o.id)&&(seen.add(o.id),true)).slice(0,3)
+}
+function guidePlanLink(o){
+ const a=document.createElement("a");a.className="guide-result guide-result-link";a.href=safeExternalUrl(o.url);a.target="_blank";a.rel=o.affiliate||o.sponsored?"noopener noreferrer sponsored":"noopener noreferrer";a.textContent=o.title+" · "+o.provider+" · "+travelOfferDisclosure(o)+" →";return a
+}
 function applyPlanOffer(el,offer,fallback,label){
  if(!el)return;
  const href=offer?String(offer.url||""):fallback;el.href=href;
@@ -378,7 +384,7 @@ function guideResponse(q){
  if(intent.near&&state.selected){const items=guideNearby(state.selected);return{text:items.length?guideMsg("nearbyFound",{place:state.selected.title}):guideMsg("nearbyEmpty"),items};}
  const placeMatches=guidePlaceMatches(q);
  if(intent.planning&&!placeMatches.length)return{text:t("guidePlanningPrompt"),items:[]};
- if(placeMatches.length&&!intent.surprise&&!intent.near&&!intent.local&&!intent.peaceful&&!intent.golden&&!intent.night&&!intent.wildlife&&!intent.beach&&!intent.mountain&&!intent.city&&!intent.happening)return{text:intent.planning?String(t("guidePlanningFound")).replace("{count}",String(placeMatches.length)):guideMsg("placeFound",{count:placeMatches.length}),items:placeMatches.slice(0,4)};
+ if(placeMatches.length&&!intent.surprise&&!intent.near&&!intent.local&&!intent.peaceful&&!intent.golden&&!intent.night&&!intent.wildlife&&!intent.beach&&!intent.mountain&&!intent.city&&!intent.happening){const items=placeMatches.slice(0,4);return{text:intent.planning?String(t("guidePlanningFound")).replace("{count}",String(placeMatches.length)):guideMsg("placeFound",{count:placeMatches.length}),items,offers:intent.planning?guidePlanOffers(items[0]):[]}};
  let pool=state.sources.filter(guideEligible);
  if(intent.current)pool=pool.filter(currentTruthClaim);
  if(intent.local){const local=pool.filter(s=>localPlaceSignals(s).worth);if(local.length)pool=local}
@@ -406,7 +412,7 @@ function renderGuideResult(s){
  const arrow=document.createElement("span");arrow.textContent="→";b.append(copy,arrow);b.onclick=()=>{closeGuide();openViewer(s)};return b;
 }
 function runGuide(q){
- const result=guideResponse(q);$("#guideReply").textContent=result.text;$("#guideResults").replaceChildren(...result.items.map(renderGuideResult),...(result.locals||[]).map(localDirectoryCard));
+ const result=guideResponse(q);$("#guideReply").textContent=result.text;$("#guideResults").replaceChildren(...result.items.map(renderGuideResult),...(result.locals||[]).map(localDirectoryCard),...(result.offers||[]).map(guidePlanLink));
  if(result.link){const a=document.createElement("a");a.href=result.link.href;a.className="guide-result guide-result-link";a.textContent=result.link.label+" →";$("#guideResults").append(a)}
 }
 function openGuide(){
