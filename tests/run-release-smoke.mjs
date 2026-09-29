@@ -30,6 +30,7 @@ const releaseTests=[
   "ern-stories.smoke.js",
   "share-links.smoke.js",
   "deep-link-currentness.smoke.js",
+  "atlas-recheck-currentness.smoke.js",
   "offline-currentness.smoke.js",
   "guide-ai-routing.smoke.js",
   "guide-ai-deployment-readiness.smoke.js",
