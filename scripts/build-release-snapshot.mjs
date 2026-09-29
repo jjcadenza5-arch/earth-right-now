@@ -14,6 +14,7 @@ await cp(new URL("../src/guide-ai-capabilities.js",import.meta.url),new URL("src
 await cp(new URL("../src/guide-ai-activation.js",import.meta.url),new URL("src/guide-ai-activation.js",dist));
 await cp(new URL("../src/home-i18n.js",import.meta.url),new URL("src/home-i18n.js",dist));
 await cp(new URL("../src/fullscreen-continuity.js",import.meta.url),new URL("src/fullscreen-continuity.js",dist));
+await cp(new URL("../src/travel-planning-client.js",import.meta.url),new URL("src/travel-planning-client.js",dist));
 await cp(new URL("../src/app-lite.js",import.meta.url),new URL("src/app-lite.js",dist));
 await cp(new URL("../src/styles-lite.css",import.meta.url),new URL("src/styles-lite.css",dist));
 await cp(new URL("../src/participation-public-config.js",import.meta.url),new URL("src/participation-public-config.js",dist));
