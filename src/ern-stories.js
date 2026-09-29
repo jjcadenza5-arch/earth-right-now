@@ -55,7 +55,8 @@ export function buildStoryDeck(sources,{now=new Date(),limit=9}={}){
   const pool=currentDiscoveryPool(sources||[],{now})
     .filter(s=>s?.featuredHold!==true&&embedPlaybackProofCurrent(s,{now}))
     .sort((a,b)=>beautifulNowScore(b,now)-beautifulNowScore(a,now)||String(a.id).localeCompare(String(b.id)));
-  const usedMedia=new Set(),usedPlaces=new Set(),out=[];
+  const usedMedia=new Set(),usedPlaces=new Set(),usedCountries=new Set(),out=[];
+  const countryKey=source=>String(source?.country||"").trim().toLowerCase();
   const canUse=source=>{
     const media=mediaIdentity(source),place=String(source.placeId||source.id);
     return !((media&&usedMedia.has(media))||usedPlaces.has(place));
@@ -63,18 +64,22 @@ export function buildStoryDeck(sources,{now=new Date(),limit=9}={}){
   const add=source=>{
     if(!source||!canUse(source)||out.length>=limit)return false;
     const card=storyCard(source,{now});if(!card)return false;
-    const media=mediaIdentity(source),place=String(source.placeId||source.id);
-    out.push(card);if(media)usedMedia.add(media);usedPlaces.add(place);return true;
+    const media=mediaIdentity(source),place=String(source.placeId||source.id),country=countryKey(source);
+    out.push(card);if(media)usedMedia.add(media);usedPlaces.add(place);if(country)usedCountries.add(country);return true;
   };
   if(limit>=3){
     for(const lens of ["USEFUL","INTERESTING","BEAUTIFUL"]){
-      const source=pool.find(s=>canUse(s)&&editorialLenses(s).includes(lens));
+      const candidates=pool.filter(s=>canUse(s)&&editorialLenses(s).includes(lens));
+      const source=candidates.find(s=>{const country=countryKey(s);return country&&!usedCountries.has(country)})||candidates[0];
       if(source)add(source);
     }
   }
   for(const source of pool){
-    add(source);
-    if(out.length>=limit)break;
+    const country=countryKey(source);if(country&&usedCountries.has(country))continue;
+    add(source);if(out.length>=limit)break;
+  }
+  for(const source of pool){
+    add(source);if(out.length>=limit)break;
   }
   return out;
 }
