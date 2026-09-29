@@ -33,6 +33,7 @@ const releaseTests=[
   "destination-page-builder.smoke.js",
   "local-directory-status.smoke.js",
   "release-artifact-assets.smoke.js",
+  "operator-console-network-safety.smoke.js",
   "release-candidate.smoke.js",
   "candidate-evidence-binding.smoke.js"
 ];
