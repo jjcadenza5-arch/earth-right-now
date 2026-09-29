@@ -31,6 +31,7 @@ must(placesJs.includes("LOCAL_DRAFT_ONLY"),"camera submission local fallback mis
 must(placesJs.includes("consent?.checked!==true"),"camera submission explicit send consent missing");
 must(momentsJs.includes("Preview locally"),"Now Moments local preview fallback missing");
 must(momentsJs.includes("canonicalPlaces"),"Now Moments canonical ERN place boundary missing");
+must(!momentsJs.includes("nearPlaceVerified")&&momentsJs.includes("nearPlaceSelfReported"),"Earth Signal public UI must treat proximity as visitor self-report, not verified location");
 must(publicConfig.includes('earthSignals?.status==="DEPLOYED"')&&publicConfig.includes("publicActivationAllowed===true"),"Earth Signal public config must require deployed + explicit activation");
 must(publicConfig.includes("submissions?.enabled===true"),"Submission public config must require explicit enabled transport");
 must(publicConfig.includes('media?.status==="DEPLOYED"')&&publicConfig.includes("media?.publicActivationAllowed===true")&&publicConfig.includes("media?.videoEnabled===false"),"Now Moment media public config must require deployed + explicit activation + video-off boundary");
