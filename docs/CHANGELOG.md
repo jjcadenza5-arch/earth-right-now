@@ -1,3 +1,11 @@
+## 2026-09-29 — Restore green Pages release and deploy diversification review
+- Repaired malformed legacy smoke syntax and separated historical regression maintenance from current release invariants.
+- Added a 20-test current release smoke suite while retaining all-test syntax coverage and the full historical suite for maintenance.
+- Restored the app runtime under its 100 KB performance cap by moving extended static translations into the existing i18n bundle, preserving all seven languages.
+- Fixed Guide localization preflight for the split i18n architecture.
+- Pages run `36511689549` completed successfully through Deploy.
+- Deployed review batch `bd51ac5733059f3f` now presents official Jinzun and Rovaniemi YouTube candidates as human-review-only primary research.
+
 ## 2026-09-29 — Fix provider-page YouTube research and reach 73 current sources
 - Refreshed exact Statue of Liberty close-view evidence.
 - Reached 73 current+healthy / 3 stale / 16 expired.
