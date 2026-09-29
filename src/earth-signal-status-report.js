@@ -10,15 +10,17 @@ export function earthSignalStatusReport(capabilities=EARTH_SIGNAL_CAPABILITIES,{
  const backend=earthSignalBackendReadiness(capabilities);
  const privacyDraft=earthSignalPrivacyDraftStatus();
  const deployment=earthSignalDeploymentReadiness(deploymentEvidence);
- const ready=launch.ready&&deployment.ready;
+ const publicActivationAllowed=deploymentEvidence.publicActivationAllowed===true;
+ const ready=launch.ready&&deployment.ready&&publicActivationAllowed;
  return{
   feature:"Earth Signals",
   mode:ready?"CONTRIBUTION_ENABLED":"READ_ONLY",
   ready,
+  publicActivationAllowed,
   backendContract:{version:EARTH_SIGNAL_API_CONTRACT.version,contributionPath:EARTH_SIGNAL_API_CONTRACT.contributionPath,ttlMinutes:EARTH_SIGNAL_API_CONTRACT.ttlMinutes},
   backendFoundation:{
    state:backend.state,
-   deployedTransport:deployment.ready,
+   deployedTransport:deployment.deployed,
    failClosedHttpAdapter:backend.foundation.failClosedHttpAdapter,
    durableStorageContract:backend.foundation.durableStorageContract,
    storageSchemaValidation:backend.foundation.storageSchemaValidation,
@@ -27,10 +29,14 @@ export function earthSignalStatusReport(capabilities=EARTH_SIGNAL_CAPABILITIES,{
    rawNetworkIdentifiersStored:backend.foundation.rawNetworkIdentifiersStored
   },
   privacyNoticeDraft:{contentReady:privacyDraft.contentReady,published:privacyDraft.published,activationSatisfied:privacyDraft.activationSatisfied,status:privacyDraft.status},
-  deployment:{state:deployment.state,ready:deployment.ready,missing:deployment.missing},
+  deployment:{state:deployment.state,deployed:deployment.deployed,ready:deployment.ready,missing:deployment.missing},
   checks:launch.items,
-  blockers:[...launch.blockers,...(!deployment.ready?["Production deployment evidence"]:[])],
-  truth:"Architecture readiness and an API contract are not production capability; deployment evidence must also pass."
+  blockers:[
+    ...launch.blockers,
+    ...(!deployment.ready?["Production deployment evidence"]:[]),
+    ...(deployment.ready&&!publicActivationAllowed?["Explicit public activation decision"]:[])
+  ],
+  truth:"Production infrastructure may be deployed while Earth Signals remain read-only; visitor contributions require complete evidence plus explicit public activation."
  };
 }
 
