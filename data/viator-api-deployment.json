@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "DEPLOYED_AUTH_CONFIRMED_PUBLIC_OFF",
+  "status": "PRODUCT_VALIDATION_CONFIRMED_PUBLIC_OFF",
   "endpointUrl": "https://ern-travel-api.jjcadenza6.workers.dev",
   "secretIsolation": true,
   "corsOrigin": "https://earthrightnow.app",
@@ -8,11 +8,11 @@
   "fuzzyAutomaticMappingAllowed": false,
   "apiKeyConfigured": true,
   "taxonomyVerified": true,
-  "productSearchVerified": false,
-  "affiliateAttributionVerified": false,
+  "productSearchVerified": true,
+  "affiliateAttributionVerified": true,
   "publicActivationAllowed": false,
   "checkedAt": "2026-09-29T15:42:04Z",
-  "note": "Viator sandbox authentication and exact Auckland taxonomy mapping are confirmed. Public activation remains OFF. Next evidence gate is controlled product-search validation using the approved Auckland destination plus affiliate attribution verification.",
+  "note": "Viator sandbox authentication, exact Auckland taxonomy mapping, controlled product search, and affiliate attribution are confirmed. Public product activation remains OFF and requires a separate explicit product decision.",
   "sandboxKeyState": "ACTIVE_AUTH_CONFIRMED",
   "lastDiagnostic": {
     "environment": "SANDBOX",
@@ -36,5 +36,24 @@
     "lookupId": "3.24.128.391",
     "timeZone": "Pacific/Auckland",
     "verifiedAt": "2026-09-29T15:45:48Z"
+  },
+  "productValidationEvidence": {
+    "mode": "CONTROLLED_NON_PUBLIC",
+    "ernPlaceId": "auckland-viaduct-harbour",
+    "destinationId": "391",
+    "destinationName": "Auckland",
+    "currency": "NZD",
+    "requestedCount": 3,
+    "returnedProductCount": 3,
+    "campaign": "ern-auckland-viaduct-harbour",
+    "returnedProductCodes": [
+      "37991P3",
+      "56760P4",
+      "3910P74"
+    ],
+    "allReturnedUrlsMatchedAffiliatePid": true,
+    "secretValuesExposed": false,
+    "publicActivationAllowed": false,
+    "observedDate": "2026-09-29"
   }
 }
