@@ -476,18 +476,22 @@ function renderAtlasBeyond(){
 
 function renderMap(){
  const a=$("#atlas");a.querySelectorAll(".map-pin").forEach(x=>x.remove());let count=0,insideCount=0,externalCount=0,localCount=0;
+ const mappableLocal=approvedLocalPlaces().filter(x=>Number.isFinite(Number(x.lat))&&Number.isFinite(Number(x.lon)));
+ const localFilter=document.querySelector('.atlas-filter[data-map-filter="local"]');
+ if(localFilter){localFilter.disabled=mappableLocal.length===0;localFilter.title=mappableLocal.length?"Show reviewed local places with verified map coordinates":"Reviewed local places remain searchable until exact map coordinates are verified"}
+ if(state.mapFilter==="local"&&!mappableLocal.length)state.mapFilter="all";
  const grouped=groupByPlace(state.sources.filter(atlasEligible));
  for(const group of grouped){
    const eligible=group.filter(s=>{const inside=currentInside(s);if(state.mapFilter==="local")return false;if(state.category!=="all"&&state.category!=="random"&&!categoryMatch(s,state.category))return false;if(state.mapFilter==="inside"&&!inside)return false;if(state.mapFilter==="external"&&inside)return false;if(state.mapFilter==="daylight"&&!isDay(s))return false;return true});
    if(!eligible.length)continue;const s=[...eligible].sort((x,y)=>(guideEligible(y)?1:0)-(guideEligible(x)?1:0)||(featureEligible(y)?1:0)-(featureEligible(x)?1:0)||baseScore(y)-baseScore(x))[0],lat=Number(s.lat),lon=Number(s.lon),inside=currentInside(s),current=guideEligible(s);
    const p=document.createElement("button");p.className="map-pin"+(inside?"":" external")+(!current?" recheck":"");p.type="button";p.title=`${s.title} — ${publicTruth(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s);if(group.length>1)p.dataset.views=String(group.length);a.append(p);count++;if(inside)insideCount++;else externalCount++;
  }
- for(const x of approvedLocalPlaces()){
+ for(const x of mappableLocal){
    const lat=Number(x.lat),lon=Number(x.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;if(state.mapFilter!=="all"&&state.mapFilter!=="local")continue;
    const p=document.createElement("a");p.className="map-pin local";p.href=safeExternalUrl(x.url);p.target="_blank";p.rel="noopener noreferrer";p.title=x.name+" — reviewed local place";p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";a.append(p);count++;localCount++;
  }
  document.querySelectorAll(".atlas-filter").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter===state.mapFilter));
- const mc=state.sources.filter(atlasEligible),bc=mc.filter(s=>s.coordinateBasis).length,cc=mc.filter(guideEligible).length,rc=mc.length-cc,ctx=state.category!=="all"&&state.category!=="random"?` · ${state.category}`:"";$("#mapNote").textContent=`${count} mapped places${ctx} · ${cc} current · ${rc} may need recheck · ${insideCount} play here · ${externalCount} source views${localCount?" · "+localCount+" reviewed local":""} · ${bc} with coordinate provenance.`;renderAtlasBeyond();
+ const mc=state.sources.filter(atlasEligible),bc=mc.filter(s=>s.coordinateBasis).length,cc=mc.filter(guideEligible).length,rc=mc.length-cc,ctx=state.category!=="all"&&state.category!=="random"?` · ${state.category}`:"";$("#mapNote").textContent=`${count} mapped places${ctx} · ${cc} current · ${rc} may need recheck · ${insideCount} play here · ${externalCount} source views${localCount?" · "+localCount+" reviewed local":""} · ${bc} with coordinate provenance.${!mappableLocal.length&&approvedLocalPlaces().length?" Reviewed local places remain searchable but are not pinned until exact coordinates are verified.":""}`;renderAtlasBeyond();
 }
 function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}
 function distanceKm(a,b){
