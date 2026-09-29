@@ -28,10 +28,15 @@ async function subjectFor(request,env){
   if(!raw||!env.ERN_SUBMISSION_RATE_HMAC_KEY)return null;
   return "anon_"+(await hmac(raw,env.ERN_SUBMISSION_RATE_HMAC_KEY)).slice(0,64);
 }
+function constantTimeEqual(a,b){
+  const x=String(a||""),y=String(b||""),n=Math.max(x.length,y.length);let diff=x.length^y.length;
+  for(let i=0;i<n;i++)diff|=(x.charCodeAt(i%x.length||0)||0)^(y.charCodeAt(i%y.length||0)||0);
+  return diff===0;
+}
 function adminAllowed(request,env){
   const expected=String(env.ERN_SUBMISSION_REVIEW_TOKEN||"");
   const got=String(request.headers.get("authorization")||"");
-  return Boolean(expected&&got===`Bearer ${expected}`);
+  return Boolean(expected&&constantTimeEqual(got,`Bearer ${expected}`));
 }
 function retentionDays(env){return Math.max(1,Math.min(30,Number(env.ERN_SUBMISSION_RETENTION_DAYS)||30))}
 
@@ -53,7 +58,7 @@ export default{
         const current=await call(env,{op:"get",id:m[1]});
         const reviewed=reviewSubmission(current.submission.record,{decision:body.decision,reviewedAt:new Date().toISOString(),note:body.note||"",checks:body.checks||{}});
         if(!reviewed.ok)return reply(400,{ok:false,reason:reviewed.error,missing:reviewed.missing||[]});
-        const record=reviewed.record.status==="APPROVED"?{...reviewed.record,contact:null}:reviewed.record;
+        const finalDecision=["APPROVED","REJECTED"].includes(reviewed.record.status);const record=finalDecision?{...reviewed.record,contact:null}:reviewed.record;
         await call(env,{op:"update",id:m[1],record});
         return reply(200,{ok:true,id:m[1],status:record.status,published:false});
       }
