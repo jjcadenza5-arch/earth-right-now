@@ -9,6 +9,7 @@ assert.equal(x.coreStableBeta,true);
 assert.ok(Number.isInteger(x.openExternalGates)&&x.openExternalGates>=1);
 assert.ok(Array.isArray(x.eligibleExternalGates));
 assert.ok(Array.isArray(x.blockedExternalGates));
+assert.ok(Object.prototype.hasOwnProperty.call(x,"nextTimedReview"));
 assert.equal(x.eligibleExternalGates.length+x.blockedExternalGates.length,x.openExternalGates);
 assert.match(x.phaseLabel,/External-gate readiness/);
 assert.equal(x.safety.automaticExternalActionAllowed,false);
