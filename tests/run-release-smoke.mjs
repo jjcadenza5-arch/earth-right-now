@@ -17,6 +17,7 @@ const releaseTests=[
   "inside-ern-recovery.smoke.js",
   "current-window-label.smoke.js",
   "source-recency-policy.smoke.js",
+  "source-recency-summary.smoke.js",
   "discovery-eligibility.smoke.js",
   "playback-currentness.smoke.js",
   "catalog-release-recency.smoke.js",
