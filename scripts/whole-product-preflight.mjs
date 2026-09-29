@@ -10,6 +10,7 @@ for(const fn of ["function search(","function renderMap(","function renderLocalE
 must(app.includes("guidePlaceMatches(")&&app.includes('params.get("guide")'),"ERN Guide place/deep-link routing missing");
 must(read("src/release-verification-console.js").includes('./#view='),"release verification provider links do not match viewer routing");
 must(app.includes("localIntent="),"Search lost small/local-place intent handling");
+must(app.includes("const matches=catalogMatches.filter(guideEligible)"),"Explore search must filter catalog matches through current truth");
 must(app.includes("function watchEligible(")&&app.includes("sources.filter(watchEligible)"),"Watch Earth must exclude PREVIEW-only sources from the curated Top 20");
 must(app.includes("function currentInside(s)")&&app.includes("healthy.filter(currentInside)")&&app.includes("sorted.filter(currentInside)")&&app.includes('currentTruthClaim(s)&&watchExperienceEligible(s)'),"Visitor Play here/Watch Earth paths lost the current-proven inside boundary");
 must(app.includes("function provenWatchHere(s)")&&app.includes("if(proven.length>=6)pool=proven"),"Watch Earth lost proven in-ERN preference");
