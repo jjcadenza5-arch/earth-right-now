@@ -206,3 +206,21 @@ Only interrupt the operator for:
 ## Latest green release
 - Latest green continuity/business/source-research release: Pages run `36523426778`, SUCCESS through Deploy.
 - This run includes the guarded business-readiness state, Travelpayouts active/green status handling, Sydney Harbour research lane and Tokyo Port DX official live-camera research lane.
+
+
+## Continuation checkpoint — official-source diversification
+- Continued autonomously from `docs/CURRENT_HANDOFF.md`.
+- Catalog remains **94 sources**.
+- Six former CouchTourist dependencies were moved to independent official/current **EXTERNAL_LIVE + LINK_ONLY** source paths without inferring embed/restream rights:
+  - Chihshang Paradise Road → Taitung County Government Tourism / Amazing Taitung
+  - Mpala Watering Hole → Mpala Research Centre / Explore.org
+  - Cold Lake Marina → City of Cold Lake
+  - Metung / Gippsland Lakes → Metung Hotel
+  - Hale Pau Hana / Maui → The Hale Pau Hana
+  - Waikīkī South Shore → Waikīkī Aquarium
+- At the continuation checkpoint, using the existing recency windows: **82 current checks / 81 current+healthy / 17 current healthy embeds / 3 stale / 9 expired**.
+- Remaining CouchTourist catalog records at this checkpoint: **13**, with no CouchTourist record currently marked DEGRADED.
+- Old Mpala human-playback evidence was explicitly marked superseded so it cannot be mistaken as playback proof for the new official external target.
+- Sydney Harbour research was tightened: WebcamSydney is a current 24/7 source, but its commercial stream/snapshot/broadcast options and copyright posture keep ERN in rights-gated/link-first research mode.
+- Tokyo Port DX research was tightened: the official public PC/mobile live-camera service is independently confirmed, but exact visitor-useful public camera deep links remain unresolved.
+- The source changes are on `main` and match the Pages workflow path filters. The GitHub connector available in this chat cannot enumerate push-triggered workflow runs, so **do not replace the previous known green run `36523426778` with a newer run number until deployment is independently verified**.
