@@ -38,6 +38,7 @@ on:
       - "scripts/distribution-readiness.mjs"
       - "scripts/external-gate-register.mjs"
       - "scripts/project-phase-status.mjs"
+      - "scripts/autonomous-work-status.mjs"
       - "data/distribution-channels.json"
       - "data/affiliate-partners.json"
       - "data/affiliate-platform-research.json"
@@ -244,6 +245,8 @@ jobs:
         run: node scripts/external-gate-register.mjs
       - name: Canonical project phase status
         run: npm --silent run project:phase
+      - name: Autonomous work status
+        run: npm --silent run project:autonomous-status
       - name: Public discoverability preflight
         run: npm --silent run discoverability:preflight -- dist
       - name: Operator review page preflight
