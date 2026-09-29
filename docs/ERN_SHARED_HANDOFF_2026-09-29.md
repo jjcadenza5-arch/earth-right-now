@@ -511,3 +511,21 @@ Only interrupt the operator for:
 - `app-lite.js` dropped from about **94.9 KB to 93.5 KB**, restoring about **6.5 KB** of headroom under the fixed 100 KB cap without changing the stable UI.
 - Release smoke now includes public trust discovery, distribution readiness and travel-planning client coverage.
 - Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until independently verified.
+
+
+## Continuation checkpoint — verified green release + release-gate repairs
+- Independently verified GitHub Pages run **36554768805** completed successfully through **Deploy** for commit `b9158ee7db9bbe04e1a125814c51c14293ca7363`.
+- This replaces the earlier “last known green run 36523426778” limitation.
+- Release blockers found and repaired during this continuation:
+  - fixed literal `\n` syntax corruption in `src/stories-page.js`;
+  - fixed malformed regex syntax in `scripts/public-launch-preflight.mjs`;
+  - aligned Guide AI routing smoke with the intentional 4-token no-match cost threshold;
+  - aligned destination-page smoke with the shared `embedPlaybackProofCurrent` helper;
+  - moved generated Places validation back to the post-build discoverability layer instead of the pre-build launch preflight;
+  - separated persistent/problem-specific stale research debt from ordinary age-based recency maintenance.
+- The successful run passed syntax, release smoke, launch, mobile, accessibility, performance, rollback, participation, curation, catalog, Local Earth, recency, research priority, Guide, visitor expansion, real-time context, Seoul mapping, commercial placement, build, module integrity, public brand, distribution, discoverability, operator review, artifact upload and Deploy.
+- Startup performance now has a second budget: total homepage JavaScript is capped at **160 KB** in addition to the fixed **100 KB app-lite.js** ceiling.
+- Latest measured homepage JS set is about **144.5 KB** total; `app-lite.js` remains about **93.5 KB**.
+- Homepage public copy no longer says “Real conditions”; it now stays grounded in real places/current windows while public telemetry context is OFF.
+- Deployed operator review batch **bcb7950ef0dc7e4e** contains renewal entries for Fushimi Inari, Kifune Shrine, Kiyomizu-zaka and Hanamikoji Street.
+- Those renewals are optional for preserving all four Kyoto inside-ERN windows; ERN remains operational if they temporarily age out, so no operator interruption is required yet.
