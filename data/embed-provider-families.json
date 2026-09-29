@@ -1124,5 +1124,37 @@
       "https://www.city.kyoto.lg.jp/sankan/page/0000357110.html",
       "https://developers.google.com/youtube/terms/required-minimum-functionality"
     ]
+  },
+  {
+    "id": "youtube-rovaniemi-santa-claus-village",
+    "status": "RESEARCH_ONLY",
+    "provider": "Santa Claus Village / City of Rovaniemi",
+    "familyLabel": "Official Santa Claus Village / City of Rovaniemi YouTube live player",
+    "researchUrl": "https://santaclausvillage.info/live-video-webcam/",
+    "termsUrl": "https://developers.google.com/youtube/terms/required-minimum-functionality",
+    "verifiedAt": "2026-09-29T01:30:00Z",
+    "permissionEvidence": "Santa Claus Village's official page embeds the exact City of Rovaniemi-hosted YouTube live video. YouTube supports standard branded iframe embeds subject to platform requirements. This supports deployed technical review of the exact branded player only; it does not grant blanket reuse or restream rights.",
+    "permissionStatus": "OFFICIAL_PROVIDER_PAGE_EMBEDS_EXACT_YOUTUBE_PLAYER_SPECIFIC_DEPLOYED_REVIEW_REQUIRED",
+    "technicalStatus": "EXACT_YOUTUBE_PLAYER_STAGED",
+    "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "nextAction": "DEPLOYED_HUMAN_PLAYBACK_ON_EXACT_OFFICIAL_PLAYER_THEN_EDITORIAL_REVIEW",
+    "networkFamily": "youtube.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-29T01:30:00Z",
+    "communityGuidelinesUrl": "https://developers.google.com/youtube/terms/developer-policies",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "STANDARD_EMBED_PLAYER",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "discoveryProviderAliases": [
+      "Santa Claus Village / City of Rovaniemi"
+    ],
+    "researchSources": [
+      "https://santaclausvillage.info/live-video-webcam/",
+      "https://developers.google.com/youtube/terms/required-minimum-functionality",
+      "https://developers.google.com/youtube/terms/developer-policies"
+    ]
   }
 ]
