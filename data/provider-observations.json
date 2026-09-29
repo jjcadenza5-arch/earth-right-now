@@ -434,5 +434,54 @@
     "reason": "Fresh review of official Sydney tourism surfaces confirmed strong harbour visitor information but did not establish a rights-clear live visual source suitable for ERN. Maintain existing Coogee source.",
     "sourceUrl": "https://www.sydney.com/destinations/sydney/sydney-city/sydney-harbour",
     "scope": "RESEARCH_GAP"
+  },
+  {
+    "id": "kyoto-fushimi-inari-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-28T14:53:15.031Z",
+    "reason": "Historical deployed-origin human review recovered from commit 50cb57c294fa32e607fed2b74f3817ae35c57348. Review batch 242d81d7b87d98a3 confirmed the exact Kyoto tourism Fushimi Inari YouTube target was visibly playing/current on earthrightnow.app; source-specific approval only."
+  },
+  {
+    "id": "kyoto-kifune-shrine-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-28T14:53:21.166Z",
+    "reason": "Historical deployed-origin human review recovered from commit 50cb57c294fa32e607fed2b74f3817ae35c57348. Review batch 242d81d7b87d98a3 confirmed the exact Kyoto tourism Kifune Shrine YouTube target was visibly playing/current on earthrightnow.app; source-specific approval only."
+  },
+  {
+    "id": "kyoto-kiyomizuzaka-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-28T14:53:26.998Z",
+    "reason": "Historical deployed-origin human review recovered from commit 50cb57c294fa32e607fed2b74f3817ae35c57348. Review batch 242d81d7b87d98a3 confirmed the exact Kyoto tourism Kiyomizu-zaka YouTube target was visibly playing/current on earthrightnow.app; source-specific approval only."
+  },
+  {
+    "id": "kyoto-hanamikoji-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-28T15:15:56.227Z",
+    "reason": "Historical deployed-origin human review recovered from commit 27b32a96b7aa6687476ddd4b7cf6922fc908c572. Review batch af006e03dfb279e3 confirmed the exact Hanamikoji Kyoto tourism player was visibly playing/current; source-specific approval only."
+  },
+  {
+    "id": "taitung-jinzun",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:57:16.879Z",
+    "reason": "Historical deployed-origin human review recovered from commit caaa9ca2755bf4b837374bc516172f089bf4a98e. Review batch bd51ac5733059f3f confirmed the exact East Coast National Scenic Area / YouTube Jinzun player was visibly playing/current in ERN; source-specific approval only."
+  },
+  {
+    "id": "kyoto-nishiki-market-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:57:23.380Z",
+    "reason": "Historical deployed-origin human review recovered from commits 6bafd33726a1aeffd0b9d951675639923255cb7f and caaa9ca2755bf4b837374bc516172f089bf4a98e. Review batch bd51ac5733059f3f confirmed exact Nishiki Market playback at 12:57 JST, inside the provider-published 11:00–18:00 JST live window; schedule-aware source-specific approval only."
+  },
+  {
+    "id": "rovaniemi-santa-claus-village-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T03:57:30.530Z",
+    "reason": "Historical deployed-origin human review recovered from commit caaa9ca2755bf4b837374bc516172f089bf4a98e. Review batch bd51ac5733059f3f confirmed the exact Santa Claus Village / City of Rovaniemi branded YouTube player was visibly playing/current in ERN; source-specific approval only."
   }
 ]
