@@ -413,3 +413,23 @@ Only interrupt the operator for:
 - Public release artifact keeps only the lean candidate-evidence helper required by the console; unused Viator helper is no longer shipped.
 - `app-lite.js` remains about **93.7 KB**, under the fixed 100 KB cap.
 - Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment without independent verification.
+
+
+## Continuation checkpoint — explicit stale-maintenance lanes
+- Catalog remains **94 total / 91 current / 90 current+healthy / 17 current healthy embeds / 3 stale / 0 expired / 0 unknown**.
+- The three stale records are now machine-classified by maintenance need instead of one generic stale bucket:
+  - `pattaya-city-live` → **PLAYBACK_EVIDENCE_DEBT** / HIGH
+  - `chidori-sakura` → **SEASONAL_OFF_SEASON** / low until season or material provider change
+  - `tbilisi-mtkvari-river` → **EDITORIAL_CURRENTNESS_DEBT** / routine
+- Added `src/stale-maintenance-class.js`; source revalidation triage now exposes `maintenanceClass` and routes Pattaya to **PLAYBACK_EVIDENCE_REVIEW**, Chidori to **SEASONAL_DEFERRED**, and Tbilisi to routine editorial recheck.
+- Added release smoke for stale maintenance routing.
+- `data/source-research-priorities.json` now has a `currentStaleDebt` section with exact ids, class, priority and action.
+- Source research priority status now cross-checks declared stale debt against actual catalog `STALE_CHECK` ids and total; it will fail if the research file and catalog drift apart.
+- Fresh 2026-09-29 provider checks were recorded without refreshing `lastSuccessfulCheck`:
+  - Pattaya official portal reports 600 total cameras while public Live View/Camera List show 0 cameras; remain DEGRADED.
+  - Visit Chiyoda still exposes April 2026 Sakura state in late September; remain DEGRADED/off-season.
+  - EarthCam Mtkvari River page remains active for the exact Tbilisi view, but stronger explicit live/current proof was not re-established; remain HEALTHY but stale.
+- Only `checkedAt`/freshness evidence was refreshed for those three; currentness was not promoted by mere page reachability.
+- Destination opportunity matrix now carries the same explicit maintenance class for Pattaya, Tokyo/Chidori and Tbilisi.
+- `app-lite.js` remains about **93.7 KB**, below the 100 KB cap.
+- Previous independently known green Pages run remains `36523426778`.
