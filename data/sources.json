@@ -31,10 +31,10 @@
     "timeZone": "Pacific/Auckland",
     "rightsBasis": "The official Viaduct Harbour page exposes the Auckland Viaduct View through this standard YouTube channel-live player. Deployed ERN human review confirmed current playback after explicit visitor Play interaction. Keep YouTube branding/controls intact and preserve click-to-play; do not restream.",
     "officialUrl": "https://www.viaduct.co.nz/",
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Auckland Viaduct YouTube channel-live player delivers current live content after the visitor presses Play. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Auckland Viaduct YouTube channel-live player delivers current live content after the visitor presses Play. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f).",
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.viaduct.co.nz/",
-    "playbackVerifiedAt": "2026-09-28T09:45:54.236Z",
+    "playbackVerifiedAt": "2026-09-29T03:56:26.462Z",
     "watchHold": true,
     "watchHoldReason": "USER_BROWSER_REVIEW_2026-09-26_YOUTUBE_PLAYBACK_UNRELIABLE"
   },
@@ -392,10 +392,10 @@
     "rightsBasis": "The official Verbier tourism webcam page embeds this standard YouTube player for its live mountain view. Deployed ERN human review confirmed current playback. Preserve YouTube/provider branding and controls; do not restream.",
     "lat": 46.096025,
     "lon": 7.229023,
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Verbier embedded player delivers current live content. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Verbier embedded player delivers current live content. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f).",
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.verbier.ch/en/",
-    "playbackVerifiedAt": "2026-09-28T09:45:01.286Z",
+    "playbackVerifiedAt": "2026-09-29T03:57:51.864Z",
     "attribution": "Verbier – Val de Bagnes Tourism"
   },
   {
@@ -979,8 +979,8 @@
     "failureReason": null,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/taiwan/kaohsiung/cijin-beach/",
-    "playbackVerifiedAt": "2026-09-28T09:46:08.369Z",
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
+    "playbackVerifiedAt": "2026-09-29T03:56:50.112Z",
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f).",
     "attribution": "CouchTourist"
   },
   {
@@ -1162,8 +1162,8 @@
     "officialUrl": "https://takayama-live.com/streaming",
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://takayama-live.com/streaming",
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Hida-Takayama YouTube channel-live player delivers current live content after the visitor presses Play. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
-    "playbackVerifiedAt": "2026-09-28T09:45:43.670Z",
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Hida-Takayama YouTube channel-live player delivers current live content after the visitor presses Play. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f).",
+    "playbackVerifiedAt": "2026-09-29T03:58:05.013Z",
     "watchHold": true,
     "watchHoldReason": "USER_BROWSER_REVIEW_2026-09-26_YOUTUBE_PLAYBACK_UNRELIABLE"
   },
@@ -1922,8 +1922,8 @@
     "coordinateBasis": "REGION_REFERENCE",
     "coordinateSourceUrl": "https://mapcarta.com/25426064",
     "coordinateNote": "Public geographic reference for Ponte di Legno town; ERN treats this as a regional reference for the Adamello-area view, not the camera position.",
-    "freshnessEvidence": "Current CouchTourist Ponte di Legno / Adamello page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 8621). Source page is current; deployed ERN playback remains separately unverified. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
-    "playbackVerifiedAt": "2026-09-28T09:46:03.303Z",
+    "freshnessEvidence": "Current CouchTourist Ponte di Legno / Adamello page identifies the view as a live webcam and still exposes the ERN-reviewed embed iframe (cam 8621). Source page is current; deployed ERN playback remains separately unverified. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f).",
+    "playbackVerifiedAt": "2026-09-29T03:56:42.862Z",
     "attribution": "CouchTourist"
   },
   {
@@ -2033,8 +2033,8 @@
     "lon": 5.39343,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://couchtourist.com/cams/norway/ulriken-mountain-view-bergen-norway/",
-    "playbackVerifiedAt": "2026-09-28T09:45:59.053Z",
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
+    "playbackVerifiedAt": "2026-09-29T03:56:33.396Z",
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f).",
     "attribution": "CouchTourist"
   },
   {
@@ -2215,8 +2215,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q2786332",
     "coordinateNote": "Skeikampen mountain/destination reference point; not claimed as exact webcam position.",
-    "playbackVerifiedAt": "2026-09-28T09:44:24.803Z",
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
+    "playbackVerifiedAt": "2026-09-29T03:56:59.447Z",
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f).",
     "attribution": "CouchTourist"
   },
   {
@@ -2539,10 +2539,10 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www3.gobiernodecanarias.org/medusa/wiki/index.php?title=Volc%C3%A1n_de_Tajogaite_o_Cabezavaca",
     "coordinateNote": "Government of the Canary Islands reference coordinates for Volcán de Tajogaite.",
-    "playbackVerifiedAt": "2026-09-28T09:46:11.870Z",
+    "playbackVerifiedAt": "2026-09-29T03:58:02.195Z",
     "attribution": "Webcam La Palma — webcam-lapalma.de",
     "attributionUrl": "https://webcam-lapalma.de/",
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Tajogaite iframe delivers current live content. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current."
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Tajogaite iframe delivers current live content. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f)."
   },
   {
     "id": "rio-copacabana-earthcam",
@@ -2827,9 +2827,9 @@
     "rightsBasis": "Webcam La Palma's official embed page explicitly permits free iframe embedding of this live cam provided the visible webcam-lapalma.de attribution link remains present. Deployed ERN human review confirmed current playback.",
     "checkedAt": "2026-09-28T09:45:45.085Z",
     "lastSuccessfulCheck": "2026-09-28T09:45:45.085Z",
-    "playbackVerifiedAt": "2026-09-28T09:45:45.085Z",
+    "playbackVerifiedAt": "2026-09-29T03:57:56.164Z",
     "failureReason": null,
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Aridane Valley iframe delivers current live content. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Aridane Valley iframe delivers current live content. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f).",
     "lat": 28.6600849,
     "lon": -17.9143581,
     "coordinateBasis": "REGION_REFERENCE",
@@ -2866,9 +2866,9 @@
     "rightsBasis": "Webcam La Palma's official embed page explicitly permits free iframe embedding of this live cam provided the visible webcam-lapalma.de attribution link remains present. Deployed ERN human review confirmed current playback.",
     "checkedAt": "2026-09-28T09:45:03.220Z",
     "lastSuccessfulCheck": "2026-09-28T09:45:03.220Z",
-    "playbackVerifiedAt": "2026-09-28T09:45:03.220Z",
+    "playbackVerifiedAt": "2026-09-29T03:57:46.146Z",
     "failureReason": null,
-    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Caldera iframe delivers current live content. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current.",
+    "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the provider-published Caldera iframe delivers current live content. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f).",
     "lat": 28.721111,
     "lon": -17.870694,
     "coordinateBasis": "REGION_REFERENCE",
