@@ -34,10 +34,10 @@ assert.equal(stored.record.moderation,"STRUCTURED");
 
 const publicRow=earthSignalPublicResponse(stored.record);
 assert.equal(publicRow.id,"sig-1");
-assert.equal(publicRow.nearPlaceVerified,true);
+assert.equal(publicRow.nearPlaceSelfReported,true);
 assert.equal("locationEvidence" in publicRow,false);
 assert.equal(EARTH_SIGNAL_API_CONTRACT.freeTextAccepted,false);
 assert.equal(EARTH_SIGNAL_API_CONTRACT.preciseCoordinatesAccepted,false);
 assert.equal(EARTH_SIGNAL_API_CONTRACT.responseCache,"no-store");
 
-console.log("Earth Signal API contract is server-timestamped, bounded and privacy-minimal");
+console.log("Earth Signal API contract is server-timestamped, bounded, privacy-minimal and does not overstate self-reported proximity");
