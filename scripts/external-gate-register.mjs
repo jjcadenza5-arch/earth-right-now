@@ -35,6 +35,19 @@ if(viator.sandboxKeyState==="ENABLED_PENDING_ACTIVATION"){
     eligibleNow:Boolean(retestAt&&Date.parse(retestAt)<=now),
     beforeTrigger:"DO_NOT_RETEST_OR_ROTATE_KEY"
   });
+}else if(viator.sandboxKeyState==="ACTIVE_AUTH_CONFIRMED"&&(!viator.taxonomyVerified||!viator.productSearchVerified||!viator.affiliateAttributionVerified)){
+  add({
+    id:"viator-api-product-validation",
+    lane:"TRAVEL_API",
+    state:viator.taxonomyVerified?"AUTH_AND_TAXONOMY_CONFIRMED_PUBLIC_OFF":"AUTH_CONFIRMED_TAXONOMY_PENDING",
+    trigger:"A controlled non-public Viator product-search validation path is deployed/run for an explicitly approved destination mapping, and returned product URLs/campaign attribution are verified.",
+    nextEligibleAt:null,
+    eligibleNow:false,
+    beforeTrigger:"KEEP_PUBLIC_PRODUCTS_OFF",
+    taxonomyVerified:viator.taxonomyVerified===true,
+    productSearchVerified:viator.productSearchVerified===true,
+    affiliateAttributionVerified:viator.affiliateAttributionVerified===true
+  });
 }
 if(booking&&booking.state==="SUBMITTED_PENDING_REVIEW"){
   add({
