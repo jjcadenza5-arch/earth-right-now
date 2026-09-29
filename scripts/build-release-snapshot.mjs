@@ -29,6 +29,8 @@ await mkdir(new URL("data/",dist),{recursive:true});
 await cp(new URL("../data/sources.json",import.meta.url),new URL("data/sources.json",dist));
 await cp(new URL("../data/local-directory.json",import.meta.url),new URL("data/local-directory.json",dist));
 await cp(new URL("../data/travel-offers.json",import.meta.url),new URL("data/travel-offers.json",dist));
+await cp(new URL("../data/viator-api-deployment.json",import.meta.url),new URL("data/viator-api-deployment.json",dist));
+await cp(new URL("../data/viator-destination-map.json",import.meta.url),new URL("data/viator-destination-map.json",dist));
 await cp(new URL("../data/provider-observations.json",import.meta.url),new URL("data/provider-observations.json",dist));
 await cp(new URL("../data/earth-signal-deployment.json",import.meta.url),new URL("data/earth-signal-deployment.json",dist));
 await cp(new URL("../data/submission-transport.json",import.meta.url),new URL("data/submission-transport.json",dist));
