@@ -298,7 +298,11 @@ function applyPlanOffer(el,offer,fallback,label){
   delete el.dataset.offerId;delete el.dataset.offerKind;el.removeAttribute("title");el.setAttribute("aria-label",label);el.rel="noopener noreferrer";
  }
 }
-function approvedLocalPlaces(){return(state.localDirectory||[]).filter(x=>x&&x.status==="APPROVED"&&x.id&&x.name&&safeExternalUrl(x.url))}
+function localDirectoryCurrent(x){
+ const t=Date.parse(x?.verifiedAt||""),now=Date.now();
+ return!!(x&&x.status==="APPROVED"&&x.paidPlacement===false&&x.affiliate===false&&x.id&&x.name&&safeExternalUrl(x.url)&&Number.isFinite(t)&&t<=now+5*60000&&Math.max(0,(now-t)/864e5)<=90)
+}
+function approvedLocalPlaces(){return(state.localDirectory||[]).filter(localDirectoryCurrent)}
 function localDirectoryMatch(q){
  const tokens=normalizeSearch(q).split(/\s+/).filter(Boolean),noise=new Set(["local","small","place","places","business","businesses","near","nearby","find","show","me","a","an","the"]);
  const useful=tokens.filter(t=>!noise.has(t));
@@ -310,7 +314,7 @@ function localDirectoryCard(x){
  const truth=document.createElement("span");truth.className="truth";truth.textContent="LOCAL PLACE";
  const strong=document.createElement("strong");strong.textContent=x.name;
  const small=document.createElement("small");small.textContent=[x.type,x.place,x.country].filter(Boolean).join(" · ");
- const note=document.createElement("span");note.className="verify-mini";note.textContent=x.verifiedAt?"ERN reviewed "+x.verifiedAt:"ERN reviewed";
+ const note=document.createElement("span");note.className="verify-mini";note.textContent=x.verifiedAt?"ERN reviewed "+String(x.verifiedAt).slice(0,10):"ERN reviewed";
  a.append(v,truth,strong,small,note);return a;
 }
 
