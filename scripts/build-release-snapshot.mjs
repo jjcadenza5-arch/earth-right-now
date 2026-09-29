@@ -61,7 +61,6 @@ await cp(new URL("../for-places.html",import.meta.url),new URL("for-places.html"
 await cp(new URL("../release-verification.html",import.meta.url),new URL("release-verification.html",dist));
 await cp(new URL("../src/release-verification-console.js",import.meta.url),new URL("src/release-verification-console.js",dist));
 await cp(new URL("../src/candidate-evidence-binding.js",import.meta.url),new URL("src/candidate-evidence-binding.js",dist));
-await cp(new URL("../src/viator-destination-match.js",import.meta.url),new URL("src/viator-destination-match.js",dist));
 await cp(new URL("../about.html",import.meta.url),new URL("about.html",dist));
 await cp(new URL("../press.html",import.meta.url),new URL("press.html",dist));
 await cp(new URL("../data/public-brand-facts.json",import.meta.url),new URL("data/public-brand-facts.json",dist));
