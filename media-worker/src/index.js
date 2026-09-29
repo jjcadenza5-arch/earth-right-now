@@ -64,9 +64,14 @@ function stores(env){
     }
   };
 }
+function constantTimeEqual(a,b){
+  const x=String(a||""),y=String(b||""),n=Math.max(x.length,y.length);let diff=x.length^y.length;
+  for(let i=0;i<n;i++)diff|=(x.charCodeAt(i%x.length||0)||0)^(y.charCodeAt(i%y.length||0)||0);
+  return diff===0;
+}
 function adminAllowed(request,env){
   const expected=String(env.ERN_MEDIA_REVIEW_TOKEN||""),got=String(request.headers.get("authorization")||"");
-  return Boolean(expected&&got===`Bearer ${expected}`);
+  return Boolean(expected&&constantTimeEqual(got,`Bearer ${expected}`));
 }
 async function readBodyBounded(request,maxBytes){
   if(!request.body)return new Uint8Array();
