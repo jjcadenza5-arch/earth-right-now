@@ -47,8 +47,16 @@ for(const entry of destinationDirs){
   if(!(await exists(rel))){issues.push({code:"DESTINATION_PAGE_MISSING",place:entry.name});continue}
   const html=await read(rel);
   checked++;
-  if(!html.includes('<meta name="robots" content="index,follow">'))issues.push({code:"DESTINATION_NOT_INDEXABLE",place:entry.name});
-  if(!/rel="canonical" href="https:\/\/earthrightnow\.app\/places\//.test(html))issues.push({code:"DESTINATION_CANONICAL_MISSING",place:entry.name});
+  const canonical=html.match(/rel="canonical" href="([^"]+)"/)?.[1]||null;
+  const indexed=html.includes('<meta name="robots" content="index,follow">');
+  const noindexed=html.includes('<meta name="robots" content="noindex,follow">');
+  if(!indexed&&!noindexed)issues.push({code:"DESTINATION_ROBOTS_STATE_MISSING",place:entry.name});
+  if(!canonical||!/^https:\/\/earthrightnow\.app\/places\//.test(canonical))issues.push({code:"DESTINATION_CANONICAL_MISSING",place:entry.name});
+  if(canonical){
+    const inSitemap=sitemap.includes("<loc>"+canonical+"</loc>");
+    if(indexed&&!inSitemap)issues.push({code:"INDEXABLE_DESTINATION_MISSING_FROM_SITEMAP",place:entry.name,url:canonical});
+    if(noindexed&&inSitemap)issues.push({code:"NOINDEX_DESTINATION_IN_SITEMAP",place:entry.name,url:canonical});
+  }
   if(!/BreadcrumbList/.test(html))issues.push({code:"DESTINATION_BREADCRUMB_MISSING",place:entry.name});
   if(!/"@type":"Place"/.test(html))issues.push({code:"DESTINATION_PLACE_SCHEMA_MISSING",place:entry.name});
   if(/rel="sponsored noopener noreferrer"/.test(html)){
