@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const build=fs.readFileSync(new URL("../scripts/build-release-snapshot.mjs",import.meta.url),"utf8");
+const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
+const guide=fs.readFileSync(new URL("../src/guide-ai-client.js",import.meta.url),"utf8");
+const context=JSON.parse(fs.readFileSync(new URL("../data/realtime-context-sources.json",import.meta.url),"utf8"));
+const mappings=JSON.parse(fs.readFileSync(new URL("../data/seoul-context-place-mappings.json",import.meta.url),"utf8"));
+assert.equal(context.publicActivationAllowed,false);
+assert.equal(mappings.publicActivationAllowed,false);
+assert.doesNotMatch(build,/realtime-context-sources\.json|seoul-context-place-mappings\.json/,"PUBLIC-OFF context registries must not ship in the public artifact");
+assert.doesNotMatch(app,/realtime-context-sources|seoul-context-place-mappings|citydata_eng/,"visitor runtime must not fetch or activate PUBLIC-OFF context");
+assert.doesNotMatch(guide,/realtime-context-sources|seoul-context-place-mappings|citydata_eng/,"public Guide client must not consume PUBLIC-OFF context");
+console.log("Real-time context remains internal and physically absent from public runtime");
