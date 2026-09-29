@@ -4,10 +4,16 @@
   "mappings": [
     {
       "ernPlaceId": "auckland-viaduct-harbour",
-      "viatorDestinationId": null,
+      "viatorDestinationId": "391",
       "viatorDestinationName": "Auckland",
-      "status": "PENDING_API_TAXONOMY_MATCH",
-      "evidence": "ERN has a verified Auckland source and a working destination-level Viator affiliate click-through, but the Viator API taxonomy ID has not yet been retrieved."
+      "status": "APPROVED",
+      "evidence": "One-time authenticated Viator sandbox taxonomy retrieval on 2026-09-29 returned an exact Auckland CITY candidate with destinationId 391, parentDestinationId 128, lookupId 3.24.128.391, timezone Pacific/Auckland, and ancestry containing New Zealand destinationId 24. countryMatch=true.",
+      "verifiedAt": "2026-09-29T15:45:48Z",
+      "countryEvidence": {
+        "name": "New Zealand",
+        "destinationId": "24",
+        "countryMatch": true
+      }
     }
   ],
   "policy": {
