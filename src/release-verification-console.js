@@ -1,6 +1,7 @@
 import {exactDestinationCandidates} from "./viator-destination-match.js";
 import {candidateEvidenceStatus} from "./candidate-evidence-binding.js";
 import {embedPlaybackProofCurrent} from "./playback-proof.js";
+import {currentDiscoveryPool} from "./discovery-eligibility.js";
 const $=s=>document.querySelector(s);
 const GATES=[
  {key:"browser",title:"Desktop browser",steps:["Open Home, Watch Earth, Explore, Local Earth, Living Atlas and My Earth.","Open ERN Guide and try at least one place request.","Open and close the immersive viewer.","Open the separate Now Moments and Places & Cameras pages.","Verify Previous/Next and source links.","Confirm controls are reachable and layout is not broken."]},
@@ -23,6 +24,8 @@ async function load(){
  try{releaseEvidence=await fetch("./data/release-evidence.json",{cache:"no-store"}).then(r=>r.ok?r.json():{});}catch{}
  const binding=candidateEvidenceStatus(releaseEvidence,manifest?.commit||"");
  fact("Candidate commit",manifest?.commit||"Manifest not available");
+ fact("Manifest generated",manifest?.generatedAt||"Unavailable");
+ fact("Artifact files",Array.isArray(manifest?.files)?String(manifest.files.length):"Unavailable");
  fact("Evidence binding",binding.allBound?"All six records match this candidate":binding.candidateValid?binding.unbound.length+" record(s) belong to another/unbound commit":"Candidate SHA unavailable");
  fact("Origin",location.origin);
  fact("Viewport",innerWidth+" × "+innerHeight);
@@ -62,8 +65,8 @@ function requestId(){const bytes=crypto.getRandomValues(new Uint8Array(16));retu
 $("#runGuideAiTest").onclick=async()=>{
  const button=$("#runGuideAiTest");button.disabled=true;guideAiTestResult.textContent="Running one grounded AI request…";
  try{
-  const healthy=sources.filter(s=>s.health==="HEALTHY"&&s.id).slice(0,4).map(s=>s.id);
-  if(!healthy.length)throw new Error("No healthy ERN sources available for the controlled test.");
+  const healthy=currentDiscoveryPool(sources,{now:new Date()}).filter(s=>s.id&&embedPlaybackProofCurrent(s,{now:new Date()})).slice(0,4).map(s=>s.id);
+  if(!healthy.length)throw new Error("No current ERN sources available for the controlled test.");
   const payload={version:GUIDE_AI_VERSION,query:"I have two hours before dinner and want somewhere peaceful with evening atmosphere. Which of these ERN places would you suggest, and why?",language:"en",sourceIds:healthy,requestId:requestId()};
   const response=await fetch(GUIDE_AI_ENDPOINT,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(payload)});
   const body=await response.json().catch(()=>({}));
