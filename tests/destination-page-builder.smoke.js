@@ -15,4 +15,7 @@ assert.match(builder,/indexable\?"index,follow":"noindex,follow"/,"destination r
 assert.match(builder,/if\(indexable\)urls\.push/,"noindex destination pages must stay out of the sitemap");
 assert.match(builder,/const primaryCta=currentItems\.length/,"destination primary CTA must depend on current truth");
 assert.match(builder,/Explore current ERN windows/,"non-current destination pages need current-alternative CTA");
+assert.match(builder,/const structuredRows=placeRows\.filter\(p=>p\.indexable\)/,"structured place directory must exclude reference-only rows");
+assert.match(builder,/Number\(b\.indexable\)-Number\(a\.indexable\)/,"place directory should list current/scheduled destinations before reference-only rows");
+assert.match(builder,/placeIndexable\(rows\)/,"related destination links should exclude reference-only stale places");
 console.log("Destination pages preserve schedule, playback, local-place and commercial truth boundaries");
