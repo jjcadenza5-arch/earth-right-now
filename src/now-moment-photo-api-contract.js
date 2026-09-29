@@ -12,7 +12,8 @@ export const NOW_MOMENT_PHOTO_API=Object.freeze({
   placeLabelAccepted:false,
   freeTextAccepted:false,
   preciseCoordinatesAccepted:false,
-  responseCache:"no-store"
+  responseCache:"no-store",
+  publicListRequiresPlaceId:true
 });
 
 export function nowMomentPhotoUploadHeaders(meta={}){
