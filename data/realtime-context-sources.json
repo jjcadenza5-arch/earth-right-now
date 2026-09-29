@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T06:34:00Z",
+  "generatedAt": "2026-09-29T08:05:00Z",
   "publicActivationAllowed": false,
   "principle": "Real-time context may explain what a place is like now, but must remain separate from visual source truth and may never manufacture a LIVE label.",
   "sources": [
@@ -63,7 +63,7 @@
         "GUIDE_WORDING_FAILS_CLOSED_WHEN_STALE",
         "PRIVACY_REVIEW_COMPLETE"
       ],
-      "next": "Obtain a Seoul Open Data API key through a human/provider action. The ERN adapter now requires a provider-supplied timestamp, rejects unapproved areas, rejects stale data, and rejects material future clock skew. Next validate real citydata_eng responses for approved place mappings before any public activation.",
+      "next": "Human/provider gate remains: obtain a Seoul Open Data API key, validate real citydata_eng response identity/timestamps for the internal Seoul Plaza → Gwanghwamun·Deoksugung mapping candidate, then explicitly approve that mapping before any public activation. All attribution, cache, failure and privacy policies are now machine-defined.",
       "api": {
         "datasetId": "OA-22714",
         "service": "citydata_eng",
@@ -119,6 +119,38 @@
       "acquisition": {
         "kind": "API",
         "automaticScrapingAllowed": false
+      },
+      "placeMappingRegistry": "data/seoul-context-place-mappings.json",
+      "attribution": {
+        "required": true,
+        "publicLabel": "Current city context · Seoul Metropolitan Government Open Data",
+        "sourceLinkRequired": true,
+        "licenseNotice": "Korea Open Government License Type 1"
+      },
+      "cachePolicy": {
+        "maxPublicAgeMinutes": 15,
+        "staleWhileRevalidateAllowed": false,
+        "staleOnErrorAllowed": false,
+        "cacheMayCreateFreshness": false,
+        "historicalSnapshotRetentionAllowed": false
+      },
+      "failurePolicy": {
+        "apiError": "HIDE_CONTEXT_KEEP_CAMERA_VISIBLE",
+        "staleData": "HIDE_CONTEXT_KEEP_CAMERA_VISIBLE",
+        "unmappedArea": "HIDE_CONTEXT_KEEP_CAMERA_VISIBLE",
+        "missingProviderTimestamp": "HIDE_CONTEXT_KEEP_CAMERA_VISIBLE",
+        "futureProviderTimestamp": "HIDE_CONTEXT_KEEP_CAMERA_VISIBLE"
+      },
+      "privacy": {
+        "state": "INTERNAL_DATA_MINIMIZATION_POLICY_DEFINED_PUBLIC_OFF",
+        "visitorPersonalDataCollected": false,
+        "visitorProfilingAllowed": false,
+        "rawNetworkIdentifiersStored": false,
+        "movementHistoryArchiveAllowed": false,
+        "currentSnapshotOnly": true,
+        "individualIdentificationAllowed": false,
+        "cctvMediaIngested": false,
+        "providerAggregateContextOnly": true
       }
     },
     {
