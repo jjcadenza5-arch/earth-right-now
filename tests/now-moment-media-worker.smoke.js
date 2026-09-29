@@ -17,4 +17,6 @@ console.assert(worker.includes("PENDING_REVIEW")&&worker.includes("published:fal
 console.assert(worker.includes("x-content-type-options")&&worker.includes("objectStore.get"),"Approved media proxy boundary missing");
 console.assert(state.includes("MAX_RETAINED_MEDIA=500")&&state.includes("MEDIA_STORAGE_CAPACITY"),"Media storage capacity bound missing");
 console.assert(state.includes("MAX_PHOTOS_PER_DAY=3")&&state.includes("MAX_PHOTOS_PER_PLACE_DAY=2"),"Photo rate bounds missing");
+console.assert(state.includes('b.op==="list-expired"')&&state.includes('b.op==="delete"'),"Retry-safe expired media metadata contract missing");
+console.assert(worker.includes('op:"list-expired"')&&worker.includes('op:"delete"'),"Worker adapter must preserve expired metadata until object deletion succeeds");
 console.log("Phase L media Worker remains private, moderated, temporary and fail-closed");
