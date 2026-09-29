@@ -98,7 +98,9 @@ jobs:
       - name: JavaScript syntax preflight
         run: |
           set -euo pipefail
-          find src scripts -type f \( -name '*.js' -o -name '*.mjs' \) -print0 | xargs -0 -n1 node --check
+          find src scripts tests -type f \( -name '*.js' -o -name '*.mjs' \) -print0 | xargs -0 -n1 node --check
+      - name: ERN smoke suite
+        run: npm test
       - name: Lean launch preflight
         run: node scripts/lean-preflight.mjs
       - name: Whole-product guard
