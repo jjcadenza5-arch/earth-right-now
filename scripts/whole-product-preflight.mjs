@@ -14,6 +14,8 @@ must(read("src/release-verification-console.js").includes('./#view='),"release v
 must(app.includes("localIntent="),"Search lost small/local-place intent handling");
 must(app.includes("const matches=catalogMatches.filter(guideEligible)"),"Explore search must filter catalog matches through current truth");
 must(app.includes("offers:intent.planning?TP.guideOffers(state.travelOffers,items[0]):[]"),"Guide planning links must remain post-ranking");
+must(app.includes("let pool=placeMatches.length?[...placeMatches]:state.sources.filter(guideEligible)"),"Guide place+intent ranking lost geographic constraint");
+must(app.includes("offers:intent.planning&&items.length?TP.guideOffers(state.travelOffers,items[0]):[]"),"Guide intent-planning links must remain post-ranking after geographic constraint");
 const guideScoreBody=app.slice(app.indexOf("function guideScore("),app.indexOf("function guideNearby("));
 must(!/travelOffer|affiliate|sponsored/.test(guideScoreBody),"Commercial availability must not enter Guide editorial scoring");
 must(app.includes('const stayOffer=current?TP.offerFor(state.travelOffers,s,"stay"):null'),"Reference-only viewer states must remain non-commercial");
