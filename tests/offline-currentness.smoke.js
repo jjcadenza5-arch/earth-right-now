@@ -1,0 +1,11 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const sw=fs.readFileSync(new URL("../service-worker.js",import.meta.url),"utf8");
+const offline=fs.readFileSync(new URL("../offline.html",import.meta.url),"utf8");
+assert.match(sw,/const OFFLINE="\/offline\.html"/,"offline shell path must remain explicit");
+assert.match(sw,/cache\.add\(OFFLINE\)/,"service worker should cache only the offline shell");
+assert.match(sw,/event\.request\.mode!=="navigate"/,"service worker must limit interception to navigation");
+assert.doesNotMatch(sw,/cache\.put\(/,"service worker must not cache current navigation responses");
+assert.doesNotMatch(sw,/sources\.json|travel-offers\.json|local-directory\.json|\/places\//,"service worker must not cache current/public truth data");
+assert.match(offline,/does not show cached camera views as if they were current/i,"offline page must explain currentness boundary");
+console.log("ERN offline mode cannot cache or replay current Earth truth");
