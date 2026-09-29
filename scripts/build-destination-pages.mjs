@@ -1,5 +1,6 @@
 import { currentWindowEyebrow } from "../src/current-window-label.js";
 import { currentSource } from "../src/discovery-eligibility.js";
+import { sourceAvailabilityState,recencyState } from "../src/source-recency.js";
 import fs from "node:fs";
 
 const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
@@ -30,7 +31,11 @@ const buildNow=new Date();
 
 for(const [id,items] of map){
   const currentItems=items.filter(s=>currentSource(s,{now:buildNow}));
-  const waitingItems=items.filter(s=>!currentSource(s,{now:buildNow}));
+  const scheduledClosedItems=items.filter(s=>{
+    const a=sourceAvailabilityState(s,{now:buildNow});
+    return a.restricted&&!a.open&&recencyState(s,{now:buildNow})==="CURRENT_CHECK"&&s.health==="HEALTHY";
+  });
+  const waitingItems=items.filter(s=>!currentItems.includes(s)&&!scheduledClosedItems.includes(s));
   const preferred=[...(currentItems.length?currentItems:items)].sort((a,b)=>(b.quality||0)-(a.quality||0))[0];
   const title=preferred.title;
   const where=[preferred.region,preferred.country].filter(Boolean).join(", ");
@@ -82,9 +87,11 @@ for(const [id,items] of map){
   };
   const currentCards=currentItems.map(cardFor).join("");
   const waitingCards=waitingItems.map(cardFor).join("");
-  const viewsHtml=currentItems.length
-    ?'<h2>Current verified views</h2><ul>'+currentCards+'</ul>'+(waitingItems.length?'<h2>Sources awaiting recheck</h2><p class="ern-note">These provider sources remain in ERN\'s catalog, but their latest verification is outside the current evidence window. They are not presented as current until rechecked.</p><ul>'+waitingCards+'</ul>':'')
-    :'<h2>Sources awaiting recheck</h2><p class="ern-note">ERN does not currently have an in-horizon verification for this place. Provider links remain available for reference, but ERN is not presenting them as current.</p><ul>'+waitingCards+'</ul>';
+  const scheduledClosedCards=scheduledClosedItems.map(cardFor).join("");
+  const currentSection=currentItems.length?'<h2>Current verified views</h2><ul>'+currentCards+'</ul>':"";
+  const scheduledSection=scheduledClosedItems.length?'<h2>Outside published live hours</h2><p class="ern-note">These sources have current verification but are outside a provider-published live schedule right now. ERN keeps the source visible without calling it currently live.</p><ul>'+scheduledClosedCards+'</ul>':"";
+  const waitingSection=waitingItems.length?'<h2>Sources awaiting recheck or recovery</h2><p class="ern-note">These provider sources remain in ERN\'s catalog, but current evidence is incomplete, stale, degraded or otherwise outside the active current-source gate. They are not presented as current until the relevant check recovers.</p><ul>'+waitingCards+'</ul>':"";
+  const viewsHtml=currentSection+scheduledSection+waitingSection;
 
   const coordinateText=Number.isFinite(lat)&&Number.isFinite(lon)?((preferred.coordinateBasis?"Map reference":"Coordinates")+": "+lat+", "+lon):null;
   const coordinateNote=preferred.coordinateNote?'<p class="ern-note">'+esc(preferred.coordinateNote)+'</p>':"";
@@ -97,11 +104,11 @@ for(const [id,items] of map){
   fs.writeFileSync(dir+"/index.html",html);
 
   urls.push({loc:url,lastmod});
-  placeRows.push({id,title,country:preferred.country||"",region:preferred.region||"",story:desc,lastmod,current:currentItems.length>0});
+  placeRows.push({id,title,country:preferred.country||"",region:preferred.region||"",story:desc,lastmod,current:currentItems.length>0,scheduled:scheduledClosedItems.length>0});
 }
 
 placeRows.sort((a,b)=>a.country.localeCompare(b.country)||a.title.localeCompare(b.title));
-const directoryItems=placeRows.map(p=>'<li><a href="'+base+'places/'+encodeURIComponent(p.id)+'/"><strong>'+esc(p.title)+'</strong></a><span>'+esc([p.region,p.country].filter(Boolean).join(", "))+'</span><small>'+(p.current?'Current verified view available · ':'Awaiting ERN recheck · ')+esc(p.story)+'</small></li>').join("");
+const directoryItems=placeRows.map(p=>'<li><a href="'+base+'places/'+encodeURIComponent(p.id)+'/"><strong>'+esc(p.title)+'</strong></a><span>'+esc([p.region,p.country].filter(Boolean).join(", "))+'</span><small>'+(p.current?'Current verified view available · ':p.scheduled?'Verified source, outside published live hours · ':'Awaiting ERN recheck or recovery · ')+esc(p.story)+'</small></li>').join("");
 const directoryData={"@context":"https://schema.org","@graph":[
   {"@type":"CollectionPage","@id":base+"places/","url":base+"places/","name":"Places on Earth Right Now","description":"Browse crawlable destination pages for places with live or current Earth Right Now views.","isPartOf":{"@id":base+"#website"},"mainEntity":{"@id":base+"places/#list"}},
   {"@type":"ItemList","@id":base+"places/#list","name":"Places on Earth Right Now","numberOfItems":placeRows.length,"itemListElement":placeRows.map((p,i)=>({"@type":"ListItem","position":i+1,"name":p.title,"url":base+"places/"+encodeURIComponent(p.id)+"/"}))},
