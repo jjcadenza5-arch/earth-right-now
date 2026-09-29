@@ -233,20 +233,6 @@ jobs:
           node tests/manual-context-record.smoke.js
       - name: Commercial placement integrity preflight
         run: node scripts/commercial-placement-preflight.mjs
-      - name: One-time Viator Auckland taxonomy diagnostic
-        run: |
-          set -euo pipefail
-          curl -sS -H 'Origin: https://earthrightnow.app' https://ern-travel-api.jjcadenza6.workers.dev/api/viator/destinations -o /tmp/viator-destinations.json
-          echo "ERN_VIATOR_TAXONOMY_BEGIN"
-          node --input-type=module <<'NODE'
-          import fs from "node:fs";
-          import {exactDestinationCandidates} from "./src/viator-destination-match.js";
-          const payload=JSON.parse(fs.readFileSync("/tmp/viator-destinations.json","utf8"));
-          if(payload?.ok!==true||!Array.isArray(payload.destinations))throw new Error("DESTINATION_PAYLOAD_INVALID");
-          const matches=exactDestinationCandidates(payload.destinations,{name:"Auckland",country:"New Zealand"});
-          console.log(JSON.stringify({ok:true,total:payload.destinations.length,matches},null,2));
-          NODE
-          echo "ERN_VIATOR_TAXONOMY_END"
       - name: Build static release
         run: npm run release:build
       - name: Public module integrity
