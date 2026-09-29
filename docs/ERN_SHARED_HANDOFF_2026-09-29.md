@@ -224,3 +224,22 @@ Only interrupt the operator for:
 - Sydney Harbour research was tightened: WebcamSydney is a current 24/7 source, but its commercial stream/snapshot/broadcast options and copyright posture keep ERN in rights-gated/link-first research mode.
 - Tokyo Port DX research was tightened: the official public PC/mobile live-camera service is independently confirmed, but exact visitor-useful public camera deep links remain unresolved.
 - The source changes are on `main` and match the Pages workflow path filters. The GitHub connector available in this chat cannot enumerate push-triggered workflow runs, so **do not replace the previous known green run `36523426778` with a newer run number until deployment is independently verified**.
+
+
+## Further continuation — provider debt narrowed to two expired records
+- Continued the official/direct-source replacement batch beyond the first six migrations.
+- Additional replacements:
+  - Kijihiki Plateau → Hokuto City official live-camera page
+  - Lajes do Pico Harbour → Espaço Talassa provider-direct webcam
+  - Roque de los Muchachos Observatory → Gran Telescopio CANARIAS / IAC current images
+  - Bloubergstrand / Table Mountain → direct TableMountainView current-image source
+  - Perdido Key Beach → U.S. National Park Service active current-image webcam
+  - Pleasant Beach / Little Sodus Bay → Pleasant Beach Hotel provider-direct webcam
+  - Sasagawa Nagare → Murakami City municipal live-camera route
+- Current catalog checkpoint: **94 total / 89 current checks / 88 current+healthy / 17 current healthy embeds / 3 stale / 2 expired**.
+- Remaining CouchTourist records: **6 total**, none marked DEGRADED.
+- The only expired records left at this checkpoint are:
+  - `cancun-live-aqua-beach`
+  - `st-johns-harbour`
+- These two remain intentionally unresolved because current research found live third-party mirrors but not yet a sufficiently strong source-specific official/direct replacement. Do not lower the source standard just to make the expired count zero.
+- Previous known green Pages run remains `36523426778` until a newer push-triggered deployment can be independently verified.
