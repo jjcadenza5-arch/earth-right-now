@@ -1,3 +1,13 @@
+## 2026-09-29 — Recency maintenance reached 70 current-healthy sources
+- Overnight/current-time maintenance continued without widening verification windows.
+- Refreshed Tbilisi Freedom Square, Cape Town earthTV, Rio Copacabana, Kitzbühel, Boston Harbor Islands and Kaikōura from fresh provider evidence.
+- Corrected Chidori-ga-fuchi to DEGRADED because the official Sakura page still shows April 9 bloom/congestion state in late September; Tokyo is now represented as a seasonal/off-season visual gap in the destination opportunity matrix.
+- Current catalog state: 70 current+healthy, 5 stale, 17 expired.
+- The five stale records are now intentionally narrow: Pattaya and Chidori are degraded by current evidence; the remaining three EarthCam targets stay stale because reachable/current pages did not provide strong enough fresh live wording for automatic renewal.
+- All 14 current inside-ERN embeds carry fresh playback-proof markers.
+- Pages deployment now runs the full ERN smoke suite before deploy.
+- Added an advisory source-recency maintenance summary to every Pages release so recency debt remains visible without weakening source truth or turning historical catalog records into hard release blockers.
+
 ## 2026-09-28 — Recency maintenance advanced to 64 current-healthy sources
 - Continued provider-backed revalidation without relaxing any source-verification horizon.
 - Revalidated 19 additional current external/LIVE_IMAGE sources this pass, including Meads Bay, Flåm, ISS Earth view, Aruba, Chicago, Dublin, Sint Maarten, Oeschinensee, Lake Lucerne, Amden/Walensee, Mount Rainier, Marco Island, Windjammer, Georgia Aquarium, Zermatt, Ski Arlberg, Florida Now, Dolomiti Superski and Glacier National Park.
