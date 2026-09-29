@@ -18,6 +18,14 @@ await assert.rejects(
   error=>error.code==="EARTH_SIGNALS_NOT_ACTIVATED"
 );
 
+const atomicStorage=createInMemoryEarthSignalStorage();
+const atomic=await createEarthSignalService(
+  {type:"PEACEFUL",placeId:"chiang-mai",placeLabel:"Chiang Mai"},
+  {capabilities:allCapabilities,storage:atomicStorage,rateLimiter:{async check(){throw new Error("NON_ATOMIC_SIGNAL_RATE_CHECK_USED")},async commit(){return{allowed:true,remaining:5}}},rateSubject:"anon_CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",knownPlaceIds:["chiang-mai"],id:"atomic-1",now}
+);
+assert.equal(atomic.ok,true);
+assert.equal(atomic.persisted,true);
+
 const created=await createEarthSignalService(
   {type:"PEACEFUL",placeId:"chiang-mai",placeLabel:"Chiang Mai"},
   {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",knownPlaceIds:["chiang-mai"],id:"sig-1",now}
