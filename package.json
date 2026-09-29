@@ -80,7 +80,8 @@
     "sources:expansion-queue": "node scripts/visitor-source-expansion-status.mjs",
     "context:status": "node scripts/realtime-context-status.mjs",
     "sources:opportunity-matrix": "node scripts/destination-opportunity-status.mjs",
-    "sources:recency-summary": "node scripts/source-recency-summary.mjs"
+    "sources:recency-summary": "node scripts/source-recency-summary.mjs",
+    "test:release": "node tests/run-release-smoke.mjs"
   },
   "engines": {
     "node": ">=20"
