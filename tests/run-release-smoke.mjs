@@ -23,7 +23,9 @@ const releaseTests=[
   "source-availability-continuity.smoke.js",
   "url-safety.smoke.js",
   "catalog-release-gate.smoke.js",
-  "ern-stories.smoke.js"
+  "ern-stories.smoke.js",
+  "guide-ai-routing.smoke.js",
+  "guide-ai-deployment-readiness.smoke.js"
 ];
 
 let failed=0;
