@@ -566,3 +566,6 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
 @media(max-width:620px){.stories-grid{grid-template-columns:1fr}.story-card{min-height:68vh;max-height:560px}.stories-intro h1{font-size:clamp(3rem,18vw,5.3rem)}}
 
 .story-actions{display:flex;align-items:center;gap:.6rem;margin-top:.45rem}.story-actions a,.story-actions button{appearance:none;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:.65rem .8rem;font:inherit;font-weight:800;color:#fff;background:rgba(0,0,0,.25);text-decoration:none;cursor:pointer}.story-actions a{background:rgba(255,255,255,.14)}.story-actions button:hover,.story-actions a:hover{background:rgba(255,255,255,.22)}
+
+/* Local Atlas precision guard */
+.atlas-filter:disabled{opacity:.45;cursor:not-allowed;background:rgba(255,255,255,.55)}
