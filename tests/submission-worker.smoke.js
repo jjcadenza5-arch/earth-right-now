@@ -11,6 +11,8 @@ console.assert(cfg.includes('"ERN_SUBMISSION_ENABLED": "false"'),"Submission tra
 console.assert(cfg.includes('"ERN_SUBMISSION_RETENTION_DAYS": "30"'),"Submission retention must remain bounded to 30 days");
 console.assert(cfg.includes('"class_name": "SubmissionInbox"')&&cfg.includes('"storage": "sqlite"'),"Submission durable inbox must use SQLite");
 console.assert(worker.includes("submissionRecord")&&worker.includes("submissionEnvelope"),"Worker must repeat canonical server-side validation");
+console.assert(worker.includes("readJsonBodyBounded")&&worker.includes("8192"),"Submission JSON bodies must be bounded even without Content-Length");
+console.assert(!worker.includes('op:"rate-check"'),"Submission rate limit must use one atomic reservation");
 console.assert(worker.includes("ERN_SUBMISSION_RATE_HMAC_KEY")&&worker.includes("CF-Connecting-IP"),"Worker must derive opaque server-side rate identity");
 console.assert(worker.includes("ERN_SUBMISSION_REVIEW_TOKEN")&&worker.includes("authorization"),"Human review queue must be protected");
 console.assert(worker.includes("published:false")&&worker.includes("automaticPublishAllowed:false"),"Submission must never auto-publish");
