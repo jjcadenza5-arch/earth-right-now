@@ -3,7 +3,7 @@ import {affiliatePartner,activeAffiliatePartner} from "../src/affiliate-partners
 import {currentTravelOffer} from "../src/travel-offer-verification.js";
 
 const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
-const partners=read("data/affiliate-partners.json"),offers=read("data/travel-offers.json"),platforms=read("data/affiliate-platform-research.json"),opportunities=read("data/commercial-link-opportunities.json"),index=fs.readFileSync("index.html","utf8");
+const partners=read("data/affiliate-partners.json"),offers=read("data/travel-offers.json"),platforms=read("data/affiliate-platform-research.json"),opportunities=read("data/commercial-link-opportunities.json"),business=read("data/business-readiness.json"),index=fs.readFileSync("index.html","utf8");
 const now=Date.now(),fail=[],warn=[],partnerMap=new Map();
 for(const raw of partners){
   const p=affiliatePartner(raw);
@@ -30,6 +30,10 @@ if(tp){
   if(tp.rankingAffectedByCommission!==false||tp.paidRankingAllowed!==false)fail.push("Travelpayouts commission may not affect ranking");
   if(tp.payoutMethodConfigured!==true)warn.push("Travelpayouts project is active but payout method is not configured yet");
 }
+if(business.publicSurface!==false)fail.push("business readiness must remain non-public");
+if(business.revenueInfrastructure?.travelpayoutsProjectActive!==true)fail.push("Travelpayouts active project state missing from business readiness");
+if(business.revenueInfrastructure?.payoutMethodConfigured!==false)fail.push("Travelpayouts payout readiness must remain false until human account setup is actually completed");
+if(business.revenueInfrastructure?.paidRankingAllowed!==false)fail.push("business readiness may not enable paid ranking");
 if(opportunities.publicActivationAllowed!==false)fail.push("commercial opportunity queue must remain public-OFF");
 if(opportunities.principles?.automaticPlacementAllowed!==false)fail.push("commercial opportunity queue automatic placement must remain disabled");
 if(opportunities.principles?.automaticLinkRewritingAllowed!==false)fail.push("commercial opportunity queue automatic link rewriting must remain disabled");
