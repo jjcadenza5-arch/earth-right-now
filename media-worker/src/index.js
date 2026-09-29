@@ -35,7 +35,13 @@ async function knownPlaces(env){
   const r=await fetch(env.ERN_CATALOG_URL||"https://earthrightnow.app/data/sources.json",{headers:{accept:"application/json","user-agent":"ERN-Now-Moment-Media/1.0"},cf:{cacheTtl:120,cacheEverything:true}});
   if(!r.ok)throw Object.assign(new Error("CATALOG_FETCH_"+r.status),{code:"TRUSTED_CATALOG_UNAVAILABLE"});
   const list=await r.json();if(!Array.isArray(list))throw Object.assign(new Error("CATALOG_INVALID"),{code:"TRUSTED_CATALOG_UNAVAILABLE"});
-  return [...new Set(list.flatMap(s=>[s.placeId,s.id]).filter(Boolean).map(String))];
+  const ids=new Set(),labels=new Map();
+  for(const s of list){
+    const sourceId=String(s?.id||"").trim(),placeId=String(s?.placeId||sourceId).trim(),label=String(s?.title||s?.region||"").trim();
+    if(sourceId){ids.add(sourceId);if(label&&!labels.has(sourceId))labels.set(sourceId,label)}
+    if(placeId){ids.add(placeId);if(label&&!labels.has(placeId))labels.set(placeId,label)}
+  }
+  return{ids:[...ids],labels};
 }
 function stores(env){
   return{
@@ -142,7 +148,7 @@ export default{
       let bytes;try{bytes=await readBodyBounded(request,1536*1024)}catch(error){return reply(413,{ok:false,reason:error.code||"DERIVATIVE_TOO_LARGE"},origin)}
       const declared=Number(request.headers.get("x-ern-photo-stored-bytes"));if(!Number.isFinite(declared)||declared!==bytes.byteLength)return reply(400,{ok:false,reason:"STORED_SIZE_MISMATCH"},origin);
       const id=crypto.randomUUID(),objectKey=`photos/${id}.${mediaExtension(request.headers.get("x-ern-photo-mime"))}`;
-      const result=await createNowMomentPhoto(inputFrom(request,bytes),{capabilities:CAPABILITIES,metadataStore,objectStore,rateLimiter,rateSubject:subject,knownPlaceIds:places,id,objectKey,now:new Date()});
+      const result=await createNowMomentPhoto(inputFrom(request,bytes),{capabilities:CAPABILITIES,metadataStore,objectStore,rateLimiter,rateSubject:subject,knownPlaceIds:places.ids,canonicalPlaceLabels:places.labels,id,objectKey,now:new Date()});
       if(!result.ok)return reply(result.stage==="RATE_LIMIT"?429:400,result,origin);
       return reply(202,{ok:true,id,status:"PENDING_REVIEW",published:false,expiresAt:result.record.storageExpiryAt},origin);
     }
