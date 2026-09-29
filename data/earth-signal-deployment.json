@@ -15,6 +15,6 @@
   "observability": false,
   "costGuard": false,
   "checkedAt": "2026-09-29T18:02:34Z",
-  "evidenceNote": "Controlled GitHub Actions deployment run 36608946177 completed successfully. Cloudflare created and deployed ern-signals-api with ERN_RATE_HMAC_KEY and ERN_SIGNAL_REVIEW_TOKEN installed as Worker secrets. Operator-verified /health response reported ok=true, contributionsEnabled=false, durableStorage=true, rateSubjectSecretConfigured=true, reviewTokenConfigured=true, rawNetworkIdentifiersStored=false, state.ok=true, signals=0, reports=0, maxActiveSignals=5000, maxRetainedReports=1000, and secretValuesExposed=false. Public activation remains explicitly OFF. Observability and cost-guard evidence are not yet independently verified.",
+  "evidenceNote": "GitHub Actions run 36608946177 deployed ern-signals-api successfully. Operator-verified /health: ok=true, contributionsEnabled=false, durableStorage=true, both runtime secrets configured, rawNetworkIdentifiersStored=false, signals=0, reports=0, bounded state limits present, secretValuesExposed=false. Public activation remains OFF. Observability and cost-guard evidence remain unverified.",
   "publicActivationAllowed": false
 }
