@@ -1,5 +1,5 @@
 import {exactDestinationCandidates} from "./viator-destination-match.js";
-import {candidateEvidenceStatus} from "./release-evidence.js";
+import {candidateEvidenceStatus} from "./candidate-evidence-binding.js";
 import {embedPlaybackProofCurrent} from "./playback-proof.js";
 const $=s=>document.querySelector(s);
 const GATES=[
