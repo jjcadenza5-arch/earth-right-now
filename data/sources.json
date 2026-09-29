@@ -94,7 +94,7 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "Pattaya City",
-    "checkedAt": "2026-09-29T06:10:00Z",
+    "checkedAt": "2026-09-29T07:32:00Z",
     "lastSuccessfulCheck": "2026-09-23T14:24:00Z",
     "failureReason": "PUBLIC_PORTAL_CURRENT_CAMERA_INVENTORY_PRESENT_BUT_INDIVIDUAL_PLAYBACK_UNVERIFIED",
     "quality": 82,
@@ -106,7 +106,7 @@
     "timeZone": "Asia/Bangkok",
     "rightsBasis": "Official Pattaya City CCTV Streaming portal permits public viewing for general information; terms prohibit commercial use and republication without written authorization. ERN remains link-only.",
     "officialUrl": "https://livestream.pattaya.go.th/",
-    "freshnessEvidence": "Pattaya City's official CCTV Streaming portal was rechecked on 2026-09-29 and currently exposes a 600-camera inventory and Live View interface. This is a material recovery from the earlier zero-live state, but ERN has not independently verified individual public playback, so health remains DEGRADED.",
+    "freshnessEvidence": "Pattaya City's official CCTV Streaming portal was rechecked on 2026-09-29. It reports Total 600 cameras, while the public Live View and Camera List currently show 0 cameras. ERN keeps health DEGRADED and does not refresh successful playback/currentness evidence.",
     "coordinateBasis": "REGION_REFERENCE",
     "coordinateSourceUrl": "https://livestream.pattaya.go.th/",
     "lastFailedCheck": "2026-09-28T17:16:00Z"
@@ -1505,7 +1505,7 @@
     "embedUrl": null,
     "thumbnailUrl": null,
     "attribution": "EarthCam",
-    "checkedAt": "2026-09-24T13:47:00+07:00",
+    "checkedAt": "2026-09-29T07:32:00Z",
     "lastSuccessfulCheck": "2026-09-24T13:47:00+07:00",
     "failureReason": null,
     "freshness": 98,
@@ -1528,7 +1528,7 @@
     "lat": 41.688,
     "lon": 44.811,
     "timeZone": "Asia/Tbilisi",
-    "freshnessEvidence": "The current EarthCam Mtkvari River page remains active and identifies a view overlooking the Mtkvari River, Narikala fortress and the Tbilisi broadcasting tower.",
+    "freshnessEvidence": "EarthCam's Mtkvari River Cam page was rechecked on 2026-09-29 and remains active for the exact Mtkvari River/Narikala view. ERN did not find stronger explicit live/current wording sufficient to refresh lastSuccessfulCheck, so the source remains healthy but stale.",
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.earthcam.com/world/georgia/tbilisi/mtkvaririver/?cam=mtkvaririver"
   },
@@ -2477,7 +2477,7 @@
     "sourceUrl": "https://visit-chiyoda.tokyo/en/sakura/",
     "officialUrl": "https://visit-chiyoda.tokyo/en/sakura/",
     "embedUrl": null,
-    "checkedAt": "2026-09-29T06:10:00Z",
+    "checkedAt": "2026-09-29T07:32:00Z",
     "lastSuccessfulCheck": "2026-09-23T07:10:00+07:00",
     "failureReason": "OFF_SEASON_OFFICIAL_SURFACE_STILL_SHOWS_2026_APRIL_STATE",
     "quality": 82,
@@ -2491,7 +2491,7 @@
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q6631821",
     "coordinateNote": "Chidorigafuchi Park reference point for the Green Way destination; not claimed as exact camera position.",
     "attribution": "Visit Chiyoda / Chiyoda City Sakura Festival",
-    "freshnessEvidence": "Visit Chiyoda's official Sakura Festival surface was rechecked on 2026-09-29. It still shows 2026-04-09 blossom/congestion state and festival dates from March-April, so ERN keeps the source DEGRADED/off-season and does not present it as a current Tokyo visual window.",
+    "freshnessEvidence": "Visit Chiyoda's official Sakura Festival surface was rechecked on 2026-09-29 and still shows the 2026 festival period plus April 9 blooming/congestion state. ERN keeps the source DEGRADED/off-season and out of current Tokyo discovery.",
     "lastFailedCheck": "2026-09-29T01:05:00Z"
   },
   {
