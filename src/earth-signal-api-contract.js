@@ -64,10 +64,5 @@ export function earthSignalServerRecord(request={}, {id,now=new Date()}={}){
 }
 
 export function earthSignalPublicResponse(record={}){
-  const publicSignal=publicEarthSignal(record);
-  return{
-    id:record.id||null,
-    ...publicSignal,
-    expiresAt:record.storageExpiryAt||null
-  };
+  return{id:record.id||null,...publicEarthSignal(record)};
 }
