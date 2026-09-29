@@ -26,6 +26,7 @@ must(app.includes("renderWatch();renderWander();renderMap()")&&app.includes("cat
 must(css.includes(".guide-panel"),"ERN Guide visual doorway missing");
 must(index.includes('src/guide-ai-client.js')&&requireExists("src/guide-ai-client.js")&&requireExists("src/guide-ai-routing.js"),"public deterministic-first Guide AI bridge missing");
 const guideAiClient=read("src/guide-ai-client.js");must(guideAiClient.includes("guideAiEscalationDecision")&&guideAiClient.includes('dataset.aiState="fallback"')&&guideAiClient.includes("!r.ok"),"Guide AI bridge lost deterministic fallback discipline");
+must(guideAiClient.includes("GUIDE_AI_CAPABILITIES")&&guideAiClient.includes("guideAiActivation")&&guideAiClient.includes("PUBLIC_AI")&&guideAiClient.includes("if(!PUBLIC_AI)"),"Guide AI public activation is no longer fail-closed behind explicit capabilities");
 must(css.includes("Mockup fidelity lock"),"approved ERN mockup fidelity layer missing");
 must(css.includes("Landscape mobile viewer: keep the Earth window visible"),"landscape mobile viewer protection missing");
 must(css.includes("Landscape action dock: always reachable"),"landscape action controls are not protected");
