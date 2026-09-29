@@ -6,7 +6,6 @@ export const NOW_MOMENT_PHOTO_API=Object.freeze({
   contentType:"application/octet-stream",
   requestMetadataHeaders:Object.freeze([
     "x-ern-place-id",
-    "x-ern-photo-mime",
     "x-ern-photo-mime"
   ]),
   originalFilenameAccepted:false,
