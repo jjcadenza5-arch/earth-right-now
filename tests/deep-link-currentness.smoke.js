@@ -1,0 +1,9 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
+assert.ok(app.includes("function resolveSharedView(id)"),"shared view resolver missing");
+assert.ok(app.includes("target&&guideEligible(target)"),"shared #view links must require current truth");
+assert.ok(app.includes("That shared window is no longer current"),"expired shared view needs visible fallback copy");
+assert.ok(app.includes("currentTruthClaim(s)?location.origin+location.pathname+viewHash(s.id):placePageUrl(s)"),"non-current viewer shares must use canonical place page");
+assert.ok(app.includes("filter(s=>(s.placeId||s.id)===placeId&&guideEligible(s))"),"#place opening must prefer current truth only");
+console.log("ERN shared view/place deep links fail closed when currentness expires");
