@@ -21,6 +21,7 @@ const releaseTests=[
   "current-window-label.smoke.js",
   "source-recency-policy.smoke.js",
   "source-recency-summary.smoke.js",
+  "source-recency-debt-split.smoke.js",
   "stale-maintenance-class.smoke.js",
   "source-research-stale-debt.smoke.js",
   "discovery-eligibility.smoke.js",
