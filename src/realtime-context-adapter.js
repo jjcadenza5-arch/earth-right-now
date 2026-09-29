@@ -1,3 +1,4 @@
+import {seoulMappingValidationTarget} from "./seoul-context-mapping.js";
 function text(v){return typeof v==="string"?v.trim():""}
 function finite(v){const n=Number(v);return Number.isFinite(n)?n:null}
 function firstRow(payload){
@@ -57,4 +58,15 @@ export function publicSeoulContext(result,opts={}){
   const fresh=seoulContextFreshness(result.context,opts);
   if(!fresh.current)return{ok:false,reason:fresh.reason};
   return{ok:true,context:{...result.context,ageMinutes:fresh.ageMinutes}};
+}
+
+export function validateSeoulMappedResponse(payload,{registry,placeId}={}){
+  const target=seoulMappingValidationTarget(registry,placeId);
+  if(!target.ok)return target;
+  const allow=[target.areaName,target.areaCode].filter(Boolean);
+  const normalized=normalizeSeoulRealtimeContext(payload,{areaAllowlist:allow});
+  if(!normalized.ok)return{ok:false,reason:normalized.reason,placeId:target.placeId};
+  const areaName=text(normalized.context?.areaName),areaCode=text(normalized.context?.areaCode);
+  if(target.areaName&&areaName!==target.areaName&&(!target.areaCode||areaCode!==target.areaCode))return{ok:false,reason:"PROVIDER_AREA_IDENTITY_MISMATCH",placeId:target.placeId,expected:{areaName:target.areaName,areaCode:target.areaCode},actual:{areaName:areaName||null,areaCode:areaCode||null}};
+  return{ok:true,placeId:target.placeId,mappingState:target.state,context:normalized.context,publicActivationAllowed:false};
 }
