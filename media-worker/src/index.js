@@ -148,7 +148,9 @@ export default{
     }
 
     if(request.method==="GET"&&url.pathname==="/api/now-moments/photos"){
-      const result=await listNowMomentPhotos({placeId:url.searchParams.get("placeId")||null},{capabilities:CAPABILITIES,metadataStore,objectStore,now:new Date()});
+      const placeId=String(url.searchParams.get("placeId")||"").trim();
+      if(!placeId)return reply(400,{ok:false,reason:"PLACE_ID_REQUIRED"},origin);
+      const result=await listNowMomentPhotos({placeId},{capabilities:CAPABILITIES,metadataStore,objectStore,now:new Date()});
       return reply(200,{ok:true,photos:(result.photos||[]).map(p=>({...p,mediaUrl:`${url.origin}/api/now-moments/photos/${encodeURIComponent(p.id)}/media`}))},origin);
     }
 
