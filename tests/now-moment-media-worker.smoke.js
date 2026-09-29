@@ -15,6 +15,7 @@ console.assert(worker.includes("automaticPublicationAllowed:false"),"Worker must
 console.assert(worker.includes("ERN_MEDIA_REVIEW_TOKEN")&&worker.includes("ERN_MEDIA_RATE_HMAC_KEY"),"Media runtime secrets missing");
 console.assert(worker.includes("constantTimeEqual")&&!worker.includes("got===`Bearer ${expected}`"),"Review bearer token should not use direct string equality");
 console.assert(worker.includes("PENDING_REVIEW")&&worker.includes("published:false"),"Upload must remain moderation-first");
+console.assert(worker.includes("PUBLICATION_DISABLED")&&worker.includes('body.decision==="APPROVED"&&!enabled'),"Feature OFF must prevent latent pre-approval for later publication");
 console.assert(worker.includes("PLACE_ID_REQUIRED"),"Public temporary-photo listing must be place-scoped");
 console.assert(worker.includes("readBodyBounded")&&worker.includes("DERIVATIVE_TOO_LARGE"),"Worker must stream uploads through a hard stored-byte ceiling");
 for(const h of ["x-ern-photo-source-bytes","x-ern-photo-stored-bytes","x-ern-photo-width","x-ern-photo-height"])console.assert(!worker.includes(h),"Worker must not trust client-declared image fact header "+h);
