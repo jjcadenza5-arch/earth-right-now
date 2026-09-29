@@ -1,3 +1,14 @@
+## 2026-09-29 — Human playback packet absorbed; Rovaniemi/Jinzun promoted; final release green
+- Accepted operator evidence packet `bd51ac5733059f3f` generated from the deployed review origin at `earthrightnow.app/review/inside-ern.html`.
+- Ten existing approved sources received fresh deployed-origin `HUMAN_PLAYBACK` evidence: Auckland Viaduct, Bergen Ulriken, Cijin Beach, La Palma Aridane, La Palma Caldera, Ponte di Legno, Skeikampen, Takayama Miyagawa, Verbier and Volcán Tajogaite.
+- Three research players were human-confirmed on the deployed origin: Kyoto Nishiki Market, Rovaniemi Santa Claus Village and Taitung Jinzun.
+- Rovaniemi was upgraded in place from EXTERNAL_LIVE / LINK_ONLY to LIVE_VIDEO / EMBED_ALLOWED using the exact City of Rovaniemi YouTube player.
+- Taitung Jinzun was upgraded in place from CouchTourist to the official East Coast National Scenic Area YouTube player, reducing provider dependency.
+- Nishiki evidence is fully accepted, including an in-window confirmation at 12:57 JST inside the provider's published 11:00–18:00 JST live window. Public publication remains held until ERN's browser wording for outside-hours scheduled sources is clearer; the source is not in the public catalog.
+- Added schedule-aware source availability to shared recency/current-discovery logic, playback actions and browser current-truth gating. Existing source-recency release smoke now verifies inside/outside schedule behavior.
+- At the evidence timestamp: 93 catalog sources, 75 current checks, 74 current+healthy truth-ready sources, 16 current in-ERN embeds and 15 expired embeds.
+- Final Pages workflow `36520033122` completed SUCCESS on head `94c1fdd1a1b84111e86a07c22cd34584e94ac7ba`; every gate through Deploy passed.
+
 ## 2026-09-29 — Pages release green; independent provider review batch deployed
 - Repaired two malformed legacy smoke-test files that the expanded all-test syntax scan exposed.
 - The historical `npm test` suite currently contains 809 smoke tests and 115 historical/obsolete expectation failures. It remains available as a maintenance/migration backlog, but it is no longer treated as a universal release blocker.
