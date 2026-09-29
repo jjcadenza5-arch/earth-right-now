@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T04:55:00Z",
+  "generatedAt": "2026-09-29T07:05:00Z",
   "principle": "Research destinations where a truthful current window is valuable to visitors. Existing/available travel programs help identify useful next-step categories, but may not lower source-quality or truth standards.",
   "columns": {
     "visualCoverage": "Current ERN visual-window state",
@@ -13,12 +13,13 @@
     {
       "destination": "Kyoto",
       "country": "Japan",
-      "visualCoverage": "STRONG_CURRENT",
+      "visualCoverage": "STRONG_CURRENT_PLUS_SCHEDULED_MARKET",
       "currentSources": [
         "kyoto-fushimi-inari-live",
         "kyoto-kifune-shrine-live",
         "kyoto-kiyomizuzaka-live",
-        "kyoto-hanamikoji-live"
+        "kyoto-hanamikoji-live",
+        "kyoto-nishiki-market-live"
       ],
       "visitorDecisionValue": "VERY_HIGH",
       "nextStepIntents": [
@@ -33,8 +34,8 @@
         "TRANSFERS"
       ],
       "sourcePriority": "MAINTAIN_AND_SELECTIVELY_EXPAND",
-      "why": "Official visitor-condition cameras directly help with crowd/timing decisions; expand only source-specifically.",
-      "next": "Retest Nishiki Market only inside 11:00–18:00 JST; otherwise maintain four approved sources."
+      "why": "Five source-specific Kyoto tourism cameras are published. Nishiki Market is schedule-aware (11:00–18:00 JST), while the other approved sources provide broader current-condition coverage.",
+      "next": "Maintain the five approved sources, preserving Nishiki's published live hours. Expand only when a distinct visitor decision is served and exact source proof is available."
     },
     {
       "destination": "London",
@@ -178,14 +179,13 @@
       "next": "Resolve Tokyo Port DX exact camera targets and visitor usefulness. Continue searching separately for a strong year-round central-Tokyo street/market/landmark current window with a safe provider path."
     },
     {
-      "destination": "New York",
+      "destination": "New York City / Statue of Liberty",
       "country": "United States",
       "visualCoverage": "STRONG_EXTERNAL",
       "currentSources": [
         "nyc-skyline-jersey-city-earthcam",
         "statue-liberty-harbor-earthcam",
-        "statue-liberty-earthcam",
-        "pleasant-beach-lake-ontario"
+        "statue-liberty-earthcam"
       ],
       "visitorDecisionValue": "HIGH",
       "nextStepIntents": [
@@ -200,8 +200,8 @@
         "TRANSFERS"
       ],
       "sourcePriority": "LOW_MAINTAIN",
-      "why": "Multiple strong current landmark/skyline windows already exist; avoid commercial/source over-density.",
-      "next": "Maintain quality; new sources need a clearly different visitor use."
+      "why": "Multiple strong current skyline/harbour/Statue of Liberty windows already cover New York City visitor interest; avoid unrelated New York State sources in this destination row.",
+      "next": "Maintain quality and destination coherence; new sources need a clearly different New York City visitor use."
     },
     {
       "destination": "Auckland",
@@ -250,9 +250,10 @@
     {
       "destination": "Honolulu / Waikiki",
       "country": "United States",
-      "visualCoverage": "GOOD_EXTERNAL",
+      "visualCoverage": "STRONG_OFFICIAL_EXTERNAL",
       "currentSources": [
-        "waikiki-beach"
+        "waikiki-beach",
+        "waikiki-south-shore"
       ],
       "visitorDecisionValue": "HIGH",
       "nextStepIntents": [
@@ -267,8 +268,8 @@
         "MOBILITY"
       ],
       "sourcePriority": "LOW_MAINTAIN",
-      "why": "Current beach view already answers a key visitor-condition question.",
-      "next": "Maintain; add only if a distinct surf/weather/city condition window is materially better."
+      "why": "Two direct official/current beach-condition paths now cover Waikīkī: Hilton's beach/city webcam and Waikīkī Aquarium's South Shore webcam.",
+      "next": "Maintain the two distinct official/current views; add only if a surf/weather/city condition source offers materially different utility."
     },
     {
       "destination": "Paris",
@@ -390,6 +391,49 @@
       "sourcePriority": "LOW_MAINTAIN",
       "why": "NPS live stream directly shows geyser-basin conditions and happenings; ERN already has broader Yellowstone coverage.",
       "next": "Maintain Old Faithful live plus broader park source; avoid duplicate geyser-window density."
+    },
+    {
+      "destination": "Cancún / Punta NIZUC",
+      "country": "Mexico",
+      "visualCoverage": "STRONG_OFFICIAL_EXTERNAL",
+      "currentSources": [
+        "cancun-live-aqua-beach"
+      ],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "stay",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "TRANSFERS",
+        "CAR_RENTAL"
+      ],
+      "sourcePriority": "LOW_MAINTAIN",
+      "why": "NIZUC Resort & Spa's official live-cam page now provides a direct current beachfront window, replacing the older aggregator dependency.",
+      "next": "Maintain the direct resort source; add another Cancún view only if it covers a distinctly different visitor condition."
+    },
+    {
+      "destination": "St. John's",
+      "country": "Canada",
+      "visualCoverage": "GOOD_PROVIDER_EXTERNAL",
+      "currentSources": [
+        "st-johns-harbour"
+      ],
+      "visitorDecisionValue": "HIGH",
+      "nextStepIntents": [
+        "activities",
+        "culture",
+        "transport"
+      ],
+      "programFamilies": [
+        "EXPERIENCES",
+        "CAR_RENTAL"
+      ],
+      "sourcePriority": "LOW_MAINTAIN",
+      "why": "CBC News Newfoundland and Labrador currently provides a public harbour/Narrows webcam from The Rooms, giving a strong direct city/harbour condition window.",
+      "next": "Maintain the CBC source and respect scheduled maintenance; add another St. John's source only for distinct weather/harbour utility."
     }
   ],
   "rules": {
