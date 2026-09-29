@@ -113,6 +113,8 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   if(externalGates){
     lines.push("## External gate triggers");
     lines.push("- Open gates: "+(externalGates.count||0)+"; eligible for evidence review now: "+(externalGates.eligibleNow?.length||0)+"; waiting: "+(externalGates.waiting?.length||0)+".");
+    if(externalGates.nextTimedReview)lines.push("- Next timed review: "+externalGates.nextTimedReview.id+" at "+externalGates.nextTimedReview.nextEligibleAt+"; until then: "+externalGates.nextTimedReview.beforeTrigger+".");
+    if(externalGates.untimedWaiting?.length)lines.push("- Untimed waits: "+externalGates.untimedWaiting.join(", ")+". Reopen only on material external evidence or an explicit product decision.");
     for(const gate of (externalGates.openGates||[]).slice(0,8)){
       lines.push("- "+gate.id+" — "+gate.state+"; trigger: "+gate.trigger+(gate.nextEligibleAt?" · earliest "+gate.nextEligibleAt:"")+"; before trigger: "+gate.beforeTrigger+".");
     }
