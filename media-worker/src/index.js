@@ -1,3 +1,4 @@
+import {readJsonBodyBounded} from "../../src/bounded-json-body.js";
 import {createNowMomentPhoto,listNowMomentPhotos,reviewNowMomentPhoto,reportNowMomentPhoto,cleanupNowMomentPhotos} from "../../src/now-moment-photo-service.js";
 export {MediaState} from "./media-state.js";
 
@@ -118,7 +119,7 @@ export default{
       }
       const m=url.pathname.match(/^\/internal\/now-moments\/photos\/([^/]+)\/review$/);
       if(request.method==="POST"&&m){
-        let body;try{body=await request.json()}catch{return reply(400,{ok:false,reason:"INVALID_JSON"})}
+        let body;try{body=await readJsonBodyBounded(request,1024)}catch(error){return reply(error.code==="REQUEST_TOO_LARGE"?413:400,{ok:false,reason:error.code||"INVALID_JSON"})}
         const {metadataStore,objectStore}=stores(env);
         const result=await reviewNowMomentPhoto({id:decodeURIComponent(m[1]),decision:body.decision},{capabilities:CAPABILITIES,metadataStore,objectStore});
         return result.ok?reply(200,{...result,publicEligible:Boolean(result.public),published:enabled&&Boolean(result.public)}):reply(result.reason==="PHOTO_EXPIRED"?410:400,result);
@@ -161,8 +162,10 @@ export default{
 
     const report=url.pathname.match(/^\/api\/now-moments\/photos\/([^/]+)\/report$/);
     if(request.method==="POST"&&report){
-      const targetId=decodeURIComponent(report[1]);
-      const rate=await rateLimiter.commit({subject,action:"REPORT",targetId,now:new Date()});
+      const targetId=decodeURIComponent(report[1]),now=new Date();
+      const target=await metadataStore.get(targetId);
+      if(!target||target.moderation!=="APPROVED"||target.reported===true||Date.parse(target.storageExpiryAt)<=now.getTime())return reply(404,{ok:false,reason:"PHOTO_NOT_FOUND"},origin);
+      const rate=await rateLimiter.commit({subject,action:"REPORT",targetId,now});
       if(!rate.allowed)return reply(429,{ok:false,reason:rate.reason},origin);
       const result=await reportNowMomentPhoto({id:targetId},{capabilities:CAPABILITIES,metadataStore,objectStore});
       return result.ok?reply(202,{ok:true,id:targetId,visible:false},origin):reply(404,result,origin);
