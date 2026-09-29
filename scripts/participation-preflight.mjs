@@ -7,6 +7,8 @@ const momentsJs=fs.readFileSync("src/now-moments-page.js","utf8");
 const publicConfig=fs.readFileSync("src/participation-public-config.js","utf8");
 const earthSignals=JSON.parse(fs.readFileSync("data/earth-signal-deployment.json","utf8"));
 const submission=JSON.parse(fs.readFileSync("data/submission-transport.json","utf8"));
+const media=JSON.parse(fs.readFileSync("data/now-moment-media-deployment.json","utf8"));
+const mediaCfg=fs.readFileSync("media-worker/wrangler.jsonc","utf8");
 const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)};
 must(Array.isArray(local),"local directory must be an array");
 const ids=new Set();
@@ -33,12 +35,16 @@ must(publicConfig.includes('earthSignals?.status==="DEPLOYED"')&&publicConfig.in
 must(publicConfig.includes("submissions?.enabled===true"),"Submission public config must require explicit enabled transport");
 if(earthSignals.publicActivationAllowed!==true)must(earthSignals.publicActivationAllowed===false,"Earth Signals activation switch must be explicit false until intentionally enabled");
 if(submission.enabled!==true)must(submission.enabled===false,"Submission transport enabled switch must be explicit false until intentionally enabled");
+must(media.publicActivationAllowed===false,"Now Moment media public activation must remain false until intentionally enabled");
+must(media.status==="NOT_DEPLOYED"&&media.endpointUrl==null,"Now Moment media deployment evidence must remain NOT_DEPLOYED before controlled deployment");
+must(media.videoEnabled===false,"Now Moment video must remain disabled");
+must(mediaCfg.includes('"ERN_NOW_MOMENT_PHOTO_ENABLED": "false"'),"Now Moment media Worker must remain OFF by default");
 if(fail.length){console.error(JSON.stringify({ok:false,fail},null,2));process.exit(1)}
 console.log(JSON.stringify({
  ok:true,
  approvedLocalPlaces:local.length,
  earthSignalsPublicActive:earthSignals.status==="DEPLOYED"&&earthSignals.publicActivationAllowed===true,
  submissionTransportActive:submission.enabled===true,
- nowMomentMediaUploadActive:false,
+ nowMomentMediaUploadActive:media.status==="DEPLOYED"&&media.publicActivationAllowed===true,
  guardrails:["approved-only local directory","manifest-gated participation","explicit submission consent","no premature media upload"]
 },null,2));
