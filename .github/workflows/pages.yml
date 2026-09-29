@@ -60,6 +60,7 @@ on:
       - "scripts/featured-curation-preflight.mjs"
       - "scripts/guide-see-before-go-preflight.mjs"
       - "scripts/source-research-priority-status.mjs"
+      - "scripts/source-recency-summary.mjs"
       - "scripts/catalog-metadata-status.mjs"
       - "scripts/visitor-source-expansion-status.mjs"
       - "scripts/realtime-context-status.mjs"
@@ -123,6 +124,8 @@ jobs:
         run: node scripts/featured-curation-preflight.mjs
       - name: Catalog metadata completeness
         run: node scripts/catalog-metadata-status.mjs
+      - name: Source recency maintenance summary
+        run: node scripts/source-recency-summary.mjs
       - name: Source research priority integrity
         run: node scripts/source-research-priority-status.mjs
       - name: Guide See before go preflight
