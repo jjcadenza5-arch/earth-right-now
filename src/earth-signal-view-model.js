@@ -3,7 +3,7 @@ const LABELS={RAINING:"Raining here",BEAUTIFUL_LIGHT:"Beautiful light",BUSY:"Bus
 export function earthSignalViewModel(signal,{now=new Date()}={}){
  const state=earthSignalState(signal,{now});if(!state.visible)return null;
  const pub=publicEarthSignal(signal),age=state.ageMinutes===0?"Happening now":state.ageMinutes===1?"1 min ago":state.ageMinutes+" min ago";
- return{...pub,label:LABELS[pub.type]||"Visitor report",ageLabel:age,expiryLabel:"Expires in "+state.expiresInMinutes+" min",evidenceLabel:"EARTH SIGNAL",locationLabel:pub.nearPlaceVerified?"Near this place ✓":"Visitor-submitted · location not verified"};
+ return{...pub,label:LABELS[pub.type]||"Visitor report",ageLabel:age,expiryLabel:"Expires in "+state.expiresInMinutes+" min",evidenceLabel:"EARTH SIGNAL",locationLabel:pub.nearPlaceSelfReported?"Marked near this place · self-reported":"Visitor-submitted · location not verified"};
 }
 export function earthSignalSummary(signals,{now=new Date()}={}){
  const visible=(signals||[]).map(s=>earthSignalViewModel(s,{now})).filter(Boolean);
