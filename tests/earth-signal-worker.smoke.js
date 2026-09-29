@@ -10,6 +10,7 @@ console.assert(typeof stateModule.SignalState==="function","Earth Signals Worker
 console.assert(cfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "false"'),"Earth Signals must deploy fail-closed by default");
 console.assert(cfg.includes('"class_name": "SignalState"')&&cfg.includes('"storage": "sqlite"'),"Earth Signals durable state must use SQLite");
 console.assert(worker.includes("earthSignalHttpRequest"),"Worker must reuse the canonical Earth Signal HTTP contract");
+console.assert(worker.includes("readJsonBodyBounded")&&worker.includes("4096"),"Earth Signal JSON bodies must be bounded even without Content-Length");
 console.assert(worker.includes("ERN_RATE_HMAC_KEY")&&worker.includes("CF-Connecting-IP"),"Worker must derive rate subjects server-side");
 console.assert(worker.includes("rawNetworkIdentifiersStored:false"),"Health response must state raw network identifiers are not stored");
 console.assert(worker.includes("TRUSTED_CATALOG_UNAVAILABLE")&&worker.includes("ERN_CATALOG_URL"),"Worker must validate places from ERN's server-fetched catalog");
