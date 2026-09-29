@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const builder=fs.readFileSync(new URL("../scripts/build-destination-pages.mjs",import.meta.url),"utf8");
+assert.match(builder,/sourceAvailabilityState/,"destination pages must inspect source availability schedules");
+assert.match(builder,/Outside published live hours/,"scheduled-closed sources need a truthful public section");
+assert.match(builder,/embedPlaybackCurrent/,"inside-ERN embeds need fresh playback proof on destination pages");
+assert.match(builder,/PLAYBACK RECHECK DUE/,"expired playback proof must not retain a live label");
+assert.match(builder,/const offers=currentItems\.length\?offerForPlace\(id\):\[\]/,"stale-only pages must not surface affiliate offers");
+assert.match(builder,/currentTravelOffer/,"affiliate offers must pass current verification");
+assert.match(builder,/activeAffiliatePartner/,"affiliate offers must require an active partner");
+assert.match(builder,/Affiliate availability never affects ERN source ranking/,"affiliate ranking independence must be disclosed");
+assert.match(builder,/These entries are not paid placements/,"reviewed local entries must remain explicitly non-paid");
+console.log("Destination pages preserve schedule, playback, local-place and commercial truth boundaries");
