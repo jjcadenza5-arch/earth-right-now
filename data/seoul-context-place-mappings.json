@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-29T07:55:00Z",
+  "publicActivationAllowed": false,
+  "sourceId": "seoul-realtime-city-data",
+  "principle": "An ERN visual place may receive Seoul city context only through an explicit reviewed mapping. Name similarity, geographic proximity or client inference may not create a mapping.",
+  "mappings": [
+    {
+      "ernPlaceId": "seoul-plaza",
+      "ernSourceIds": [
+        "seoul-plaza-24h-live"
+      ],
+      "officialAreaName": "Gwanghwamun·Deoksugung",
+      "officialAreaCode": null,
+      "state": "INTERNAL_CANDIDATE_PENDING_REAL_API_IDENTITY_VALIDATION",
+      "rationale": "Seoul Plaza is adjacent to Deoksugung and within the Gwanghwamun civic-center visitor area, but ERN will not activate this mapping until a real citydata_eng response confirms the provider area identity/code.",
+      "mayPublishContext": false,
+      "mayCreateLiveLabel": false,
+      "mayAffectWatchEarthRanking": false,
+      "realResponseValidated": false
+    }
+  ],
+  "invariants": {
+    "automaticMappingAllowed": false,
+    "fuzzyNameMappingAllowed": false,
+    "proximityOnlyMappingAllowed": false,
+    "realProviderResponseRequiredBeforeActivation": true,
+    "contextFailureMayHideCamera": false,
+    "contextMayCreateLiveLabel": false
+  }
+}
