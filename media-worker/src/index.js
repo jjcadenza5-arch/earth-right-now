@@ -61,6 +61,20 @@ function adminAllowed(request,env){
   const expected=String(env.ERN_MEDIA_REVIEW_TOKEN||""),got=String(request.headers.get("authorization")||"");
   return Boolean(expected&&got===`Bearer ${expected}`);
 }
+async function readBodyBounded(request,maxBytes){
+  if(!request.body)return new Uint8Array();
+  const reader=request.body.getReader(),chunks=[];let total=0;
+  try{
+    while(true){
+      const {done,value}=await reader.read();if(done)break;
+      total+=value.byteLength;if(total>maxBytes){try{await reader.cancel("BODY_TOO_LARGE")}catch{}throw Object.assign(new Error("DERIVATIVE_TOO_LARGE"),{code:"DERIVATIVE_TOO_LARGE"})}
+      chunks.push(value);
+    }
+  }finally{try{reader.releaseLock()}catch{}}
+  const out=new Uint8Array(total);let offset=0;for(const chunk of chunks){out.set(chunk,offset);offset+=chunk.byteLength}
+  return out;
+}
+function mediaExtension(mime){return mime==="image/png"?"png":mime==="image/webp"?"webp":"jpg"}
 function inputFrom(request,bytes){
   const h=n=>request.headers.get(n);
   return{
@@ -124,8 +138,9 @@ export default{
     if(request.method==="POST"&&url.pathname==="/api/now-moments/photos"){
       if((+request.headers.get("content-length")||0)>1536*1024)return reply(413,{ok:false,reason:"DERIVATIVE_TOO_LARGE"},origin);
       let places;try{places=await knownPlaces(env)}catch(error){return reply(503,{ok:false,reason:error.code||"TRUSTED_CATALOG_UNAVAILABLE"},origin)}
-      const bytes=new Uint8Array(await request.arrayBuffer());
-      const id=crypto.randomUUID(),objectKey=`photos/${id}.jpg`;
+      let bytes;try{bytes=await readBodyBounded(request,1536*1024)}catch(error){return reply(413,{ok:false,reason:error.code||"DERIVATIVE_TOO_LARGE"},origin)}
+      const declared=Number(request.headers.get("x-ern-photo-stored-bytes"));if(!Number.isFinite(declared)||declared!==bytes.byteLength)return reply(400,{ok:false,reason:"STORED_SIZE_MISMATCH"},origin);
+      const id=crypto.randomUUID(),objectKey=`photos/${id}.${mediaExtension(request.headers.get("x-ern-photo-mime"))}`;
       const result=await createNowMomentPhoto(inputFrom(request,bytes),{capabilities:CAPABILITIES,metadataStore,objectStore,rateLimiter,rateSubject:subject,knownPlaceIds:places,id,objectKey,now:new Date()});
       if(!result.ok)return reply(result.stage==="RATE_LIMIT"?429:400,result,origin);
       return reply(202,{ok:true,id,status:"PENDING_REVIEW",published:false,expiresAt:result.record.storageExpiryAt},origin);
