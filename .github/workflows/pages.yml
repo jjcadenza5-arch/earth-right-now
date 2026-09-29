@@ -189,6 +189,8 @@ jobs:
         run: npm --silent run release:public-module-integrity -- dist
       - name: Public brand identity integrity
         run: node scripts/public-brand-facts-status.mjs
+      - name: Organic distribution readiness
+        run: npm --silent run distribution:status
       - name: Public discoverability preflight
         run: npm --silent run discoverability:preflight -- dist
       - name: Operator review page preflight
