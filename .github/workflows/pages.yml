@@ -74,6 +74,7 @@ on:
       - "release-verification.html"
       - "src/release-verification-console.js"
       - "src/candidate-evidence-binding.js"
+      - "src/viator-destination-match.js"
       - "robots.txt"
       - "sitemap.xml"
       - "CNAME"
