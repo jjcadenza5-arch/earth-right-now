@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T07:40:00Z",
+  "generatedAt": "2026-09-29T10:50:00Z",
   "principle": "Research destinations where a truthful current window is valuable to visitors. Existing/available travel programs help identify useful next-step categories, but may not lower source-quality or truth standards.",
   "columns": {
     "visualCoverage": "Current ERN visual-window state",
@@ -133,8 +133,8 @@
         "CITY_UTILITY"
       ],
       "sourcePriority": "HIGH",
-      "why": "Strong visitor interest and direct relevance to ERN's local/farm origins. Official Chiang Mai PAO Smart City CCTV was rechecked on 2026-09-29: the portal is active, but all four public cameras still show STANDBY / WAITING FOR FEED.",
-      "next": "Keep the official PAO lane on material-change watch only. In parallel, prioritize future For Places outreach to farms, resorts, markets and attractions that can provide truthful current visual windows.",
+      "why": "Official Chiang Mai PAO Smart City CCTV was rechecked again on 2026-09-29. The portal is active and labels the center real-time, but all four public cameras still show STANDBY / WAITING FOR FEED.",
+      "next": "Keep the PAO lane on material-change watch only. Prioritize future For Places outreach to farms, resorts, markets and attractions rather than treating standby camera inventory as live coverage.",
       "lastOfficialRecheck": "2026-09-29"
     },
     {
@@ -176,8 +176,8 @@
         "TRANSFERS"
       ],
       "sourcePriority": "HIGH",
-      "why": "Chidori-ga-fuchi was rechecked on 2026-09-29 and the official Visit Chiyoda surface still shows April 2026 Sakura conditions, so this lane is intentionally seasonal/off-season rather than a broken year-round source. Tokyo Port DX remains the official year-round research lane for waterfront/transport conditions.",
-      "next": "Keep Chidori deferred until Sakura season or a material provider change. Resolve exact Tokyo Port DX camera targets and continue searching separately for a strong year-round central-Tokyo visitor window.",
+      "why": "Chidori remains intentionally off-season. A fresh 2026-09-29 review of official Tokyo tourism/government surfaces did not identify a rights-clear year-round central-Tokyo live visual suitable for ERN; Tokyo Port remains the best official research lane.",
+      "next": "Keep Chidori deferred until Sakura season or material provider change. Continue Tokyo Port / official-government camera research and add a central Tokyo source only when exact currentness and rights are clear.",
       "lastOfficialRecheck": "2026-09-29",
       "maintenanceClass": "SEASONAL_OFF_SEASON"
     },
@@ -247,8 +247,9 @@
         "CAR_RENTAL"
       ],
       "sourcePriority": "MEDIUM_HIGH",
-      "why": "Coogee gives useful beach/current-condition coverage. WebcamSydney currently offers a distinct 24/7 harbour/Opera House/Bridge view, but ERN is keeping it research/link-first because third-party reuse/embed rights are not yet explicit.",
-      "next": "Maintain Coogee. Continue source-specific rights review for WebcamSydney or find an official/high-quality Sydney Harbour current window with a clearly permitted external/embed path."
+      "why": "Sydney.com was rechecked on 2026-09-29 and strongly covers Sydney Harbour visitor planning, but no official tourism/government live visual with a clear ERN reuse/embed path was identified. Coogee remains the truthful current visual.",
+      "next": "Maintain Coogee. Continue looking for a rights-clear official Sydney Harbour current window; do not promote generic harbour imagery or an unverified third-party feed as live.",
+      "lastOfficialRecheck": "2026-09-29"
     },
     {
       "destination": "Honolulu / Waikiki",
@@ -277,7 +278,7 @@
     {
       "destination": "Paris",
       "country": "France",
-      "visualCoverage": "VISUAL_GAP_OFFICIAL_LIVE_VISITOR_CONTEXT",
+      "visualCoverage": "VISUAL_GAP_STRONG_OFFICIAL_LIVE_VISITOR_CONTEXT",
       "currentSources": [],
       "visitorDecisionValue": "HIGH",
       "nextStepIntents": [
@@ -293,12 +294,13 @@
         "CITY_UTILITY"
       ],
       "sourcePriority": "MEDIUM_HIGH",
-      "why": "Major visitor destination; the official Eiffel Tower site exposes live attendance/opening/weather/summit-condition context, but ERN still lacks a verified current visual window for Paris itself.",
-      "next": "Preserve official Eiffel live visitor context as non-visual evidence only. Continue researching a rights-clear, high-quality current Paris visual source.",
+      "why": "Official Eiffel Tower pages were rechecked on 2026-09-29 and expose current opening status, attendance, temperature, wind and summit/visit conditions. ERN still lacks a rights-clear current visual window for Paris itself, so this remains context-only evidence rather than a camera source.",
+      "next": "Preserve Eiffel live visitor context as non-visual evidence only. Continue searching for a rights-clear current Paris visual source; do not convert visitor telemetry into a LIVE camera claim.",
       "contextSources": [
         "https://www.toureiffel.paris/en/rates-opening-times",
         "https://www.toureiffel.paris/en/planning-smooth-visit"
-      ]
+      ],
+      "lastOfficialRecheck": "2026-09-29"
     },
     {
       "destination": "Rome",
