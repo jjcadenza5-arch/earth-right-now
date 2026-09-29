@@ -18,6 +18,7 @@ must(app.includes("let pool=placeMatches.length?[...placeMatches]:state.sources.
 must(app.includes("offers:intent.planning&&items.length?TP.guideOffers(state.travelOffers,items[0]):[]"),"Guide intent-planning links must remain post-ranking after geographic constraint");
 const guideScoreBody=app.slice(app.indexOf("function guideScore("),app.indexOf("function guideNearby("));
 must(!/travelOffer|affiliate|sponsored/.test(guideScoreBody),"Commercial availability must not enter Guide editorial scoring");
+must(!app.includes("providerConcentration")&&!app.includes("topProvider"),"Provider concentration must remain operational-only and out of visitor ranking runtime");
 must(app.includes('const stayOffer=current?TP.offerFor(state.travelOffers,s,"stay"):null'),"Reference-only viewer states must remain non-commercial");
 must(requireExists("src/travel-planning-client.js")&&read("src/travel-planning-client.js").includes("expires<=now"),"Public travel offer gate must enforce explicit expiry");
 must(app.includes("function watchEligible(")&&app.includes("sources.filter(watchEligible)"),"Watch Earth must exclude PREVIEW-only sources from the curated Top 20");
