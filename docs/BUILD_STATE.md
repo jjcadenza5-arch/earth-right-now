@@ -1,3 +1,12 @@
+## 2026-09-29 — Recency debt concentrated; Rovaniemi diversification staged
+- Refreshed Statue of Liberty HarborCam and Reykjavík current-image source from fresh exact provider evidence.
+- Current catalog state: 72 current+healthy, 4 stale, 16 expired.
+- All 16 expired records are CouchTourist EMBED sources. This is now treated as provider-concentration maintenance debt rather than general catalog failure.
+- Added `src/recency-provider-debt.js` plus smoke coverage. Recency operations now report debt by provider, concentration share and whether replacement/diversification research is warranted.
+- The remaining four stale records are: Pattaya (intentionally degraded, 0 live cameras), Chidori (intentionally degraded/off-season), Statue of Liberty close view (exact target lacks sufficiently fresh explicit proof) and Tbilisi Mtkvari River (current page reachable but exact live wording insufficient for automatic renewal).
+- Staged an exact official Santa Claus Village / City of Rovaniemi YouTube player (`Cp4RRAEgpeU`) as RESEARCH_ONLY. The official Santa Claus Village page embeds that exact City of Rovaniemi-hosted live video.
+- Added a provider-family research record for that exact branded YouTube path. Promotion remains blocked until deployed human playback and exact-source review; no blanket YouTube/provider permission is inferred.
+
 ## 2026-09-29 — Recency maintenance reached 70 current-healthy sources
 - Overnight/current-time maintenance continued without widening verification windows.
 - Refreshed Tbilisi Freedom Square, Cape Town earthTV, Rio Copacabana, Kitzbühel, Boston Harbor Islands and Kaikōura from fresh provider evidence.
