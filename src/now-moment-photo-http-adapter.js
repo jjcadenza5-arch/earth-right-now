@@ -18,10 +18,6 @@ export async function nowMomentPhotoHttpRequest(request={},context={}){
     const input={
       bytes,
       mimeType:header(request,"x-ern-photo-mime"),
-      sourceBytes:Number(header(request,"x-ern-photo-source-bytes")),
-      storedBytes:Number(header(request,"x-ern-photo-stored-bytes")),
-      width:Number(header(request,"x-ern-photo-width")),
-      height:Number(header(request,"x-ern-photo-height")),
       placeId:header(request,"x-ern-place-id")
     };
     try{
