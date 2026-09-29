@@ -4,12 +4,14 @@ import { buildReleaseCandidate,releaseCandidateText } from "../src/release-candi
 const rows=JSON.parse(await readFile(new URL("../data/sources.json",import.meta.url),"utf8"));
 let evidence={};
 try{evidence=JSON.parse(await readFile(new URL("../data/release-evidence.json",import.meta.url),"utf8"))}catch{}
-const candidate=buildReleaseCandidate(rows,evidence);
+const candidateCommit=String(process.env.GITHUB_SHA||process.env.ERN_COMMIT_SHA||"").trim();
+const candidate=buildReleaseCandidate(rows,evidence,{candidateCommit});
 console.log(releaseCandidateText(candidate));
 console.log(JSON.stringify({
   generatedAt:candidate.generatedAt,
   inventory:candidate.inventory,
   sourceWarnings:candidate.sourceWarnings,
+  evidenceBinding:candidate.evidenceBinding,
   publication:candidate.publication,
   recheckIds:candidate.recheckIds
 },null,2));
