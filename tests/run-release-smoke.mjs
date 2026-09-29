@@ -39,6 +39,7 @@ const releaseTests=[
   "viewer-confidence.smoke.js",
   "offline-currentness.smoke.js",
   "participation-public-surfaces.smoke.js",
+  "bounded-json-body.smoke.js",
   "participation-storage-bounds.smoke.js",
   "participation-infrastructure-status.smoke.js",
   "now-moment-media-worker.smoke.js",
