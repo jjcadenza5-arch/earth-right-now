@@ -163,14 +163,21 @@ if(!analyticsEnabled){
   });
 }
 
+const eligibleNow=gates.filter(x=>x.eligibleNow);
+const waiting=gates.filter(x=>!x.eligibleNow);
+const timedWaiting=waiting.filter(x=>x.nextEligibleAt&&Number.isFinite(Date.parse(x.nextEligibleAt))).sort((a,b)=>Date.parse(a.nextEligibleAt)-Date.parse(b.nextEligibleAt));
+const nextTimedReview=timedWaiting[0]?{id:timedWaiting[0].id,lane:timedWaiting[0].lane,nextEligibleAt:timedWaiting[0].nextEligibleAt,beforeTrigger:timedWaiting[0].beforeTrigger}:null;
+
 console.log(JSON.stringify({
   schemaVersion:1,
   phase:"STAGE_R_EXTERNAL_GATE_TRIGGER_REGISTER",
   generatedAt:new Date().toISOString(),
   openGates:gates,
   count:gates.length,
-  eligibleNow:gates.filter(x=>x.eligibleNow),
-  waiting:gates.filter(x=>!x.eligibleNow),
+  eligibleNow,
+  waiting,
+  nextTimedReview,
+  untimedWaiting:waiting.filter(x=>!x.nextEligibleAt).map(x=>x.id),
   connectedChannels:connected,
   safety:{
     inventTriggerEvidenceAllowed:false,
