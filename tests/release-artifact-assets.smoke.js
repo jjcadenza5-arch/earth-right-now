@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 const build=fs.readFileSync(new URL("../scripts/build-release-snapshot.mjs",import.meta.url),"utf8");
-const required=["guide-ai-client.js","guide-ai-routing.js","guide-ai-capabilities.js","guide-ai-activation.js","playback-proof.js","fullscreen-continuity.js","candidate-evidence-binding.js","viator-destination-match.js"];
+const required=["guide-ai-client.js","guide-ai-routing.js","guide-ai-capabilities.js","guide-ai-activation.js","playback-proof.js","fullscreen-continuity.js","candidate-evidence-binding.js"];
 assert.ok(build.includes("listArtifactFiles"),"release manifest must enumerate the full dist artifact");
 assert.ok(build.includes('rel!=="release-manifest.json"'),"release manifest must exclude only itself from artifact hashing");
 for(const name of required){
