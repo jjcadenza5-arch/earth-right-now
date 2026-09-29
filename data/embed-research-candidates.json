@@ -322,7 +322,7 @@
   },
   {
     "id": "youtube-kyoto-nishiki-market",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "Kyoto City Tourism Association",
     "platform": "YouTube",
     "sourceUrl": "https://global.kyoto.travel/en/comfort/",
@@ -331,21 +331,21 @@
     "currentEvidence": "Official stream description states this feed is live 11:00–18:00 JST and exists so visitors can check real-time conditions and avoid crowds.",
     "scheduleNote": "EXPECTED_LIVE_WINDOW_11:00-18:00_ASIA_TOKYO",
     "discoveredAt": "2026-09-28T15:15:00Z",
-    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_PENDING_VALID_SCHEDULE_REVIEW",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "currentEvidenceReviewedAt": "2026-09-28T15:15:00Z",
     "platformEvidence": "Exact official YouTube target qZ2ghbe3zc0. ERN must not imply 24/7 live availability outside the provider's stated 11:00–18:00 JST schedule.",
     "researchSources": [
       "https://global.kyoto.travel/en/comfort/",
       "https://www.youtube.com/watch?v=qZ2ghbe3zc0"
     ],
-    "lastHumanReviewAt": "2026-09-28T15:16:17.377Z",
-    "lastHumanReviewOutcome": "PLAYBACK_FAILED_OUTSIDE_PUBLISHED_LIVE_WINDOW",
-    "reviewBatch": "af006e03dfb279e3",
+    "lastHumanReviewAt": "2026-09-29T03:57:23.380Z",
+    "lastHumanReviewOutcome": "PLAYBACK_CONFIRMED",
+    "reviewBatch": "bd51ac5733059f3f",
     "reviewedSourceUrl": "https://global.kyoto.travel/en/comfort/",
     "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0",
-    "reviewNote": "Human review occurred around 00:16 JST, outside the provider's stated 11:00–18:00 JST live window. Do not count this as a target failure. Retest only during the published live window.",
+    "reviewNote": "Deployed-origin human review confirmed exact branded player visibly playing/current.",
     "reviewWindow": {
       "timeZone": "Asia/Tokyo",
       "start": "11:00",
@@ -381,7 +381,7 @@
   },
   {
     "id": "youtube-rovaniemi-santa-claus-village",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "Santa Claus Village / City of Rovaniemi",
     "platform": "YouTube",
     "sourceUrl": "https://santaclausvillage.info/live-video-webcam/",
@@ -389,20 +389,26 @@
     "ownerEvidence": "Official Santa Claus Village page states that the live video is hosted on the City of Rovaniemi's YouTube channel.",
     "currentEvidence": "Official Santa Claus Village page explicitly labels the view Live @ Santa Claus Village and says it is a live video webcam of the main square and Arctic Circle line.",
     "discoveredAt": "2026-09-29T01:30:00Z",
-    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "currentEvidenceReviewedAt": "2026-09-29T01:30:00Z",
     "platformEvidence": "The official provider page embeds exact YouTube video Cp4RRAEgpeU. ERN may test only the standard branded YouTube player; no stream copying, control hiding or blanket provider approval is inferred.",
     "researchSources": [
       "https://santaclausvillage.info/live-video-webcam/",
       "https://www.youtube.com/embed/Cp4RRAEgpeU",
       "https://developers.google.com/youtube/terms/required-minimum-functionality"
-    ]
+    ],
+    "lastHumanReviewAt": "2026-09-29T03:57:30.530Z",
+    "lastHumanReviewOutcome": "PLAYBACK_CONFIRMED",
+    "reviewBatch": "bd51ac5733059f3f",
+    "reviewedSourceUrl": "https://santaclausvillage.info/live-video-webcam/",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/Cp4RRAEgpeU",
+    "reviewNote": "Deployed-origin human review confirmed exact branded player visibly playing/current."
   },
   {
     "id": "youtube-taitung-jinzun-official",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "East Coast National Scenic Area",
     "platform": "YouTube",
     "sourceUrl": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
@@ -410,9 +416,9 @@
     "ownerEvidence": "The official East Coast National Scenic Area live-camera page for Jinzun embeds exact YouTube player ZdqHgQwvZOw on the government tourism site.",
     "currentEvidence": "The official Jinzun page is under the site's LIVE Camera section and presents the exact YouTube player for Jinzun, Donghe Township. Taitung tourism also lists Jinzun among its current live-camera locations.",
     "discoveredAt": "2026-09-29T02:10:00Z",
-    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "currentEvidenceReviewedAt": "2026-09-29T02:10:00Z",
     "platformEvidence": "Official government tourism page embeds the exact YouTube player. ERN may test only the standard branded YouTube player; technical reachability does not itself grant reuse permission or prove current playback.",
     "replacementForSourceId": "taitung-jinzun",
@@ -422,6 +428,12 @@
       "https://tour.taitung.gov.tw/en/media/live-camera/list",
       "https://www.youtube.com/watch?v=ZdqHgQwvZOw",
       "https://developers.google.com/youtube/terms/required-minimum-functionality"
-    ]
+    ],
+    "lastHumanReviewAt": "2026-09-29T03:57:16.879Z",
+    "lastHumanReviewOutcome": "PLAYBACK_CONFIRMED",
+    "reviewBatch": "bd51ac5733059f3f",
+    "reviewedSourceUrl": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw",
+    "reviewNote": "Deployed-origin human review confirmed exact branded player visibly playing/current."
   }
 ]
