@@ -28,6 +28,11 @@ for(const url of ["https://earthrightnow.app/","https://earthrightnow.app/places
 }
 if(/\/review\/|release-verification\.html/.test(sitemap))issues.push({code:"OPERATOR_URL_IN_SITEMAP"});
 
+const stories=await read("stories.html");
+if(!/CollectionPage/.test(stories))issues.push({code:"STORIES_COLLECTION_SCHEMA_MISSING"});
+if(!/BreadcrumbList/.test(stories))issues.push({code:"STORIES_BREADCRUMB_SCHEMA_MISSING"});
+if(!stories.includes('<link rel="canonical" href="https://earthrightnow.app/stories.html">'))issues.push({code:"STORIES_CANONICAL_MISSING"});
+
 const placesIndex=await read("places/index.html");
 if(!/CollectionPage/.test(placesIndex))issues.push({code:"PLACES_COLLECTION_SCHEMA_MISSING"});
 if(!/BreadcrumbList/.test(placesIndex))issues.push({code:"PLACES_BREADCRUMB_SCHEMA_MISSING"});
