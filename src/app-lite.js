@@ -280,8 +280,8 @@ function currentClientTravelOffer(o){
  if(!o||o.verified!==true||!o.id||!o.title||!o.provider||!o.placeId||!o.intent)return false;
  let u;try{u=new URL(String(o.url||"").trim())}catch{return false}
  if(u.protocol!=="https:"||u.username||u.password||!u.hostname)return false;
- const t=Date.parse(o.verifiedAt||"");if(!Number.isFinite(t)||t>Date.now()+300000)return false;
- return (Date.now()-t)/86400000<=90;
+ const now=Date.now(),t=Date.parse(o.verifiedAt||"");if(!Number.isFinite(t)||t>now+300000)return false;const expires=Date.parse(o.expiresAt||"");if(o.expiresAt&&(!Number.isFinite(expires)||expires<=now))return false;
+ return (now-t)/86400000<=90;
 }
 function travelOfferFor(s,intent){
  const placeId=s?.placeId||s?.id;if(!placeId)return null;
