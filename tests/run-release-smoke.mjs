@@ -13,6 +13,7 @@ const releaseTests=[
   "research-review-queue.smoke.js",
   "embed-research-preflight.smoke.js",
   "provider-family-research.smoke.js",
+  "provider-diversification.smoke.js",
   "operator-review-queue.smoke.js",
   "review-evidence-proposals-safety.smoke.js",
   "playback-proof-application-plan.smoke.js",
