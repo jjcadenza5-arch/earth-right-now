@@ -33,6 +33,7 @@ const requiredJson=[
  "guide-ai-status.json",
  "local-directory-status.json",
  "participation-infrastructure.json",
+ "now-moment-media-status.json",
  "trend-current.json",
  "trend-delta.json",
  "operations-status.json"
@@ -297,6 +298,15 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(participation?.safety?.automaticCatalogMutationAllowed!==false)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_AUTO_CATALOG_MUTATION_VIOLATION"});
     if(participation?.safety?.pushTriggeredInfrastructureDeploymentAllowed!==false)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_PUSH_DEPLOY_VIOLATION"});
     if(participation.state==="PREPARED_FOR_CONTROLLED_DEPLOYMENT"&&participation.publicActivationOff!==true)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_PREPARED_BUT_PUBLIC_ON"});
+  }
+
+  const media=files["now-moment-media-status.json"];
+  if(media){
+    if(media?.publicActivationAllowed!==false)issues.push({file:"now-moment-media-status.json",code:"NOW_MOMENT_MEDIA_AUTO_ACTIVATION"});
+    if(media?.deployed!==false)issues.push({file:"now-moment-media-status.json",code:"NOW_MOMENT_MEDIA_DEPLOYMENT_EVIDENCE_MISMATCH"});
+    if(media?.policy?.videoEnabled!==false)issues.push({file:"now-moment-media-status.json",code:"NOW_MOMENT_MEDIA_VIDEO_BOUNDARY_VIOLATION"});
+    if(media?.policy?.automaticPublicationAllowed!==false)issues.push({file:"now-moment-media-status.json",code:"NOW_MOMENT_MEDIA_AUTO_PUBLICATION_VIOLATION"});
+    if(media?.safeguards?.humanModeration!==true||media?.safeguards?.expiryCleanup!==true||media?.safeguards?.rawNetworkIdentifiersStored!==false)issues.push({file:"now-moment-media-status.json",code:"NOW_MOMENT_MEDIA_SAFEGUARD_INCOMPLETE"});
   }
 
   const trend=files["trend-current.json"];
