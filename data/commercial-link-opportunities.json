@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-09-29T04:35:00Z",
+  "publicActivationAllowed": false,
+  "principles": {
+    "visitorUtilityFirst": true,
+    "exactTrackedLinkRequired": true,
+    "accountCoverageMustBeConfirmed": true,
+    "commissionMayNotAffectEditorialRanking": true,
+    "automaticPlacementAllowed": false,
+    "automaticLinkRewritingAllowed": false,
+    "duplicateCommercialDensityAvoided": true
+  },
+  "opportunities": [
+    {
+      "id": "klook-kyoto",
+      "destination": "Kyoto",
+      "placeIds": [
+        "kyoto-fushimi-inari-live",
+        "kyoto-kifune-shrine-live",
+        "kyoto-kiyomizuzaka-live",
+        "kyoto-hanamikoji-live",
+        "kyoto-nishiki-market-live"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has five source-specific Kyoto current windows. Activities are a natural next step after checking crowd and street conditions.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm Kyoto coverage inside the active Travelpayouts/Klook account, then generate one destination-level tracked link only if useful."
+    },
+    {
+      "id": "tiqets-rome",
+      "destination": "Rome",
+      "placeIds": [
+        "rome-spanish-steps-skylinewebcams"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "A landmark-focused current view can naturally lead to attraction/ticket planning without altering the view ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm Rome inventory and generate a destination/attraction-level tracked link only after fit review."
+    },
+    {
+      "id": "klook-seoul",
+      "destination": "Seoul",
+      "placeIds": [
+        "seoul-plaza-24h-live"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Seoul Plaza is a high-utility city window and Klook is already an active ERN partner; destination activities are a natural optional bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm Seoul coverage in the account, then generate one destination-level link if the result is useful."
+    },
+    {
+      "id": "klook-rovaniemi",
+      "destination": "Rovaniemi / Santa Claus Village",
+      "placeIds": [
+        "rovaniemi-santa-claus-village-live"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "The live Arctic Circle window directly supports trip timing and activity planning in a seasonal destination.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Klook coverage for Rovaniemi/Lapland before any tracked-link generation."
+    },
+    {
+      "id": "klook-dublin",
+      "destination": "Dublin",
+      "placeIds": [
+        "dublin-temple-bar"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Temple Bar is a strong city/culture window where tours and activities can be useful after the visitor chooses to explore.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Dublin coverage; generate a single destination-level link only if inventory quality is strong."
+    },
+    {
+      "id": "tiqets-chicago",
+      "destination": "Chicago",
+      "placeIds": [
+        "chicago-field-skyline"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P2",
+      "reason": "The skyline/museum-campus view can naturally connect to museums and attraction planning.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Chicago attraction coverage before generating any link."
+    }
+  ]
+}
