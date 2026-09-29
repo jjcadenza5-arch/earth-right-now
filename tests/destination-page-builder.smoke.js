@@ -13,4 +13,6 @@ assert.match(builder,/These entries are not paid placements/,"reviewed local ent
 assert.match(builder,/const indexable=currentItems\.length>0\|\|scheduledClosedItems\.length>0/,"stale-only destination pages must be noindex");
 assert.match(builder,/indexable\?"index,follow":"noindex,follow"/,"destination robots state must follow current/scheduled evidence");
 assert.match(builder,/if\(indexable\)urls\.push/,"noindex destination pages must stay out of the sitemap");
+assert.match(builder,/const primaryCta=currentItems\.length/,"destination primary CTA must depend on current truth");
+assert.match(builder,/Explore current ERN windows/,"non-current destination pages need current-alternative CTA");
 console.log("Destination pages preserve schedule, playback, local-place and commercial truth boundaries");
