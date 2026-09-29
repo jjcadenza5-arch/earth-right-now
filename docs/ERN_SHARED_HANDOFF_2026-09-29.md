@@ -682,3 +682,22 @@ Only interrupt the operator for:
 - This is infrastructure deployment only. Public visitor contributions remain explicitly OFF and are not authorized by this milestone.
 - Observability and cost-guard evidence remain conservative/unverified; do not mark them true without independent evidence.
 - Do not repeat Cloudflare credential setup or Earth Signals deployment unless deployment state materially changes.
+
+
+## Stage R completion checkpoint — core website complete, external activations remain optional
+- Earth Signals infrastructure is now fully deployed and evidence-complete at `https://ern-signals-api.jjcadenza6.workers.dev`, while visitor contributions remain explicitly **PUBLIC-OFF**.
+- Live health verification and deployed code together confirm:
+  - durable storage and bounded state;
+  - pseudonymous rate subjects with no raw network identifier storage;
+  - moderation/reporting/expiry infrastructure;
+  - runtime secret isolation;
+  - operational visibility through `/health`;
+  - bounded cost safeguards through rate limits plus hard caps of 5,000 active signals and 1,000 retained reports.
+- Earth Signals public activation is now a separate product decision, not an infrastructure gap.
+- Deployment-state transition repairs are complete across participation status, whole-product status, external gates, operations packet integrity and Earth Signals operator status. The system now distinguishes **deployed**, **evidence-complete**, and **publicly activated** instead of collapsing them together.
+- Earth Signal proximity wording was corrected so visitor proximity is explicitly **self-reported**, never presented as independently verified.
+- False-positive public-brand social-handle checking was repaired so JSON-LD keys such as `@context` do not trigger invented-account alarms.
+- Latest verified green GitHub Pages run: **36610956734**, SUCCESS through **Deploy**, for commit `2d3dc23bb94d4a10fe44c4096298d4a738a72b8a`.
+- Latest verified green Operations run after the Earth Signals evidence transition: **36610675294**, SUCCESS.
+- Product interpretation from this checkpoint: the **core ERN website is functionally complete as a stable beta**. Remaining Stage R items are external/account/provider or deliberate feature activations (for example submission transport, Now Moment media, generative Guide activation, Seoul API context, official social channels, aggregate analytics, and optional broader affiliate/account work). They should not be described as unfinished core website work.
+- Continue maintenance, source quality and selective product improvement autonomously, but do not manufacture new work merely to avoid declaring the core website complete.
