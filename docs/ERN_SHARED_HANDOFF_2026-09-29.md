@@ -243,3 +243,25 @@ Only interrupt the operator for:
   - `st-johns-harbour`
 - These two remain intentionally unresolved because current research found live third-party mirrors but not yet a sufficiently strong source-specific official/direct replacement. Do not lower the source standard just to make the expired count zero.
 - Previous known green Pages run remains `36523426778` until a newer push-triggered deployment can be independently verified.
+
+
+## Continuation checkpoint — zero expired debt + Guide/Stories/discovery strengthening
+- Remaining expired CouchTourist debt was closed without lowering standards:
+  - Cancún source moved from the older Live Aqua/CouchTourist record to **NIZUC Resort & Spa's official live-cam page** as `EXTERNAL_LIVE + LINK_ONLY`.
+  - St. John's Harbour moved to the current **CBC News Newfoundland and Labrador harbour/Narrows webcam** as `EXTERNAL_LIVE + LINK_ONLY`.
+- Current catalog remains **94 total / 91 current checks / 90 current+healthy / 17 current healthy embeds / 3 stale / 0 expired**.
+- Remaining CouchTourist records: **4**, all non-degraded at this checkpoint. Provider diversification is now opportunistic rather than debt-driven.
+- The three stale records remain intentional:
+  - Pattaya City: official portal now exposes a 600-camera inventory/Live View surface, a material improvement from the earlier zero-live state, but individual playback remains unverified so health stays DEGRADED and no successful check is claimed.
+  - Chidori-ga-fuchi: official Sakura surface was rechecked and still displays April 2026 state in late September; remains DEGRADED/off-season.
+  - Tbilisi Mtkvari: current provider page remains reachable, but stronger explicit live wording has not been established; preserve the stale state.
+- ERN Stories now has a deterministic editorial-balance seed: when current evidence exists, the deck reserves room for **Useful Earth, Interesting Earth and Beautiful Earth** before filling the remaining cards by current visual score. Curiosity-first questions and truth gates remain unchanged.
+- `tests/ern-stories.smoke.js` now guards that balance and is included in the current release smoke suite.
+- ERN Guide now uses a dedicated `guideEligible` gate that requires both general feature eligibility and `currentTruthClaim`; this prevents scheduled/closed or playback-stale sources from appearing in Guide results merely because their provider check is still in horizon.
+- Guide preflight and `docs/ERN_GUIDE_VISION.md` now guard/document the same schedule + playback-currentness invariant.
+- Organic discoverability hardening:
+  - release destination-page builder now preserves `stories.html` and `press.html` in generated `sitemap.xml`;
+  - discoverability preflight now requires both public files and sitemap entries;
+  - checked-in sitemap was aligned with `/places/`, Stories and Press.
+- `src/app-lite.js` remains below the fixed 100 KB cap after the Guide hardening (about 91.6 KB in the repository fetch used for this checkpoint).
+- Previous independently known green Pages run remains `36523426778`. The connected GitHub action interface available in this chat still does not expose push-triggered Pages-run enumeration, so do not claim a newer green run number without separate verification.
