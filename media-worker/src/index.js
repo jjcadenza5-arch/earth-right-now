@@ -91,8 +91,7 @@ function inputFrom(request,bytes){
     storedBytes:Number(h("x-ern-photo-stored-bytes")),
     width:Number(h("x-ern-photo-width")),
     height:Number(h("x-ern-photo-height")),
-    placeId:h("x-ern-place-id"),
-    placeLabel:h("x-ern-place-label")
+    placeId:h("x-ern-place-id")
   };
 }
 async function cleanup(env){
@@ -103,7 +102,7 @@ async function cleanup(env){
 export default{
   async fetch(request,env){
     const url=new URL(request.url),origin=originFor(request,env),enabled=env.ERN_NOW_MOMENT_PHOTO_ENABLED==="true";
-    if(request.method==="OPTIONS")return origin?new Response(null,{status:204,headers:{"access-control-allow-origin":origin,"access-control-allow-methods":"GET, POST, OPTIONS","access-control-allow-headers":"content-type,x-ern-place-id,x-ern-place-label,x-ern-photo-mime,x-ern-photo-source-bytes,x-ern-photo-stored-bytes,x-ern-photo-width,x-ern-photo-height","access-control-max-age":"600",vary:"Origin"}}):new Response(null,{status:403});
+    if(request.method==="OPTIONS")return origin?new Response(null,{status:204,headers:{"access-control-allow-origin":origin,"access-control-allow-methods":"GET, POST, OPTIONS","access-control-allow-headers":"content-type,x-ern-place-id,x-ern-photo-mime,x-ern-photo-source-bytes,x-ern-photo-stored-bytes,x-ern-photo-width,x-ern-photo-height","access-control-max-age":"600",vary:"Origin"}}):new Response(null,{status:403});
     if(request.method==="GET"&&url.pathname==="/health"){
       let state=null;try{state=await stateCall(env,{op:"status"})}catch{}
       return reply(200,{ok:true,service:"ERN Now Moment Media API",photoEnabled:enabled,videoEnabled:false,objectStorage:Boolean(env.NOW_MOMENT_MEDIA),durableMetadata:Boolean(env.MEDIA_STATE),rateSubjectSecretConfigured:Boolean(env.ERN_MEDIA_RATE_HMAC_KEY),reviewTokenConfigured:Boolean(env.ERN_MEDIA_REVIEW_TOKEN),directBucketPublicAccess:false,automaticPublicationAllowed:false,rawNetworkIdentifiersStored:false,state,secretValuesExposed:false},origin);
