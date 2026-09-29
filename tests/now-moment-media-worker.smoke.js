@@ -13,6 +13,7 @@ console.assert(cfg.includes('"*/15 * * * *"'),"TTL cleanup cron missing");
 console.assert(worker.includes("directBucketPublicAccess:false"),"Worker must state bucket is not public");
 console.assert(worker.includes("automaticPublicationAllowed:false"),"Worker must prohibit automatic publication");
 console.assert(worker.includes("ERN_MEDIA_REVIEW_TOKEN")&&worker.includes("ERN_MEDIA_RATE_HMAC_KEY"),"Media runtime secrets missing");
+console.assert(worker.includes("constantTimeEqual")&&!worker.includes("got===`Bearer ${expected}`"),"Review bearer token should not use direct string equality");
 console.assert(worker.includes("PENDING_REVIEW")&&worker.includes("published:false"),"Upload must remain moderation-first");
 console.assert(worker.includes("PLACE_ID_REQUIRED"),"Public temporary-photo listing must be place-scoped");
 console.assert(worker.includes("readBodyBounded")&&worker.includes("DERIVATIVE_TOO_LARGE"),"Worker must stream uploads through a hard stored-byte ceiling");
