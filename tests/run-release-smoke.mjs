@@ -37,6 +37,7 @@ const releaseTests=[
   "guide-planning-boundary.smoke.js",
   "guide-ai-deployment-readiness.smoke.js",
   "destination-page-builder.smoke.js",
+  "public-trust-discovery.smoke.js",
   "local-directory-status.smoke.js",
   "travel-offer-expiry.smoke.js",
   "travel-bridge.smoke.js",
