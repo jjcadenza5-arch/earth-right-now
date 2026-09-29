@@ -24,3 +24,6 @@ console.assert(state.includes("MAX_PHOTOS_PER_DAY=3")&&state.includes("MAX_PHOTO
 console.assert(state.includes('b.op==="list-expired"')&&state.includes('b.op==="delete"'),"Retry-safe expired media metadata contract missing");
 console.assert(worker.includes('op:"list-expired"')&&worker.includes('op:"delete"'),"Worker adapter must preserve expired metadata until object deletion succeeds");
 console.log("Phase L media Worker remains private, moderated, temporary and fail-closed");
+
+console.assert((worker.match(/cache-control":"private, no-store"/g)||[]).length>=2,"Internal and approved public temporary media must remain non-cacheable");
+console.assert(worker.includes("x-content-type-options")&&worker.includes("content-security-policy"),"Media responses need content-sniffing and active-content guards");
