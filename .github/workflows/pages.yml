@@ -20,6 +20,7 @@ on:
       - "src/local-directory-status.js"
       - "src/travel-offer-verification.js"
       - "src/travel-bridge.js"
+      - "src/travel-planning-client.js"
       - "src/affiliate-partners.js"
       - "scripts/local-directory-status.mjs"
       - "src/styles-lite.css"
