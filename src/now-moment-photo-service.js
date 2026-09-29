@@ -16,14 +16,13 @@ export async function createNowMomentPhoto(input={},context={}){
   if(!subjectOk(context.rateSubject))return{ok:false,stage:"RATE_LIMIT",reason:"RATE_SUBJECT_REQUIRED"};
   if(typeof context.rateLimiter?.commit!=="function")throw Object.assign(new Error("PHOTO_RATE_LIMITER_REQUIRED"),{code:"PHOTO_RATE_LIMITER_REQUIRED"});
   const bytes=input.bytes instanceof Uint8Array?input.bytes:new Uint8Array(input.bytes||[]);
-  if(Number(input.storedBytes)!==bytes.byteLength)return{ok:false,stage:"VALIDATION",reason:"STORED_SIZE_MISMATCH"};
   const scan=nowMomentMetadataScan(bytes,input.mimeType);
   if(!scan.ok)return{ok:false,stage:"METADATA",reason:scan.issues[0],issues:scan.issues};
   const dimensions=nowMomentImageDimensions(bytes,input.mimeType);
   if(!dimensions.ok)return{ok:false,stage:"VALIDATION",reason:dimensions.reason};
-  if(Number(input.width)!==dimensions.width||Number(input.height)!==dimensions.height)return{ok:false,stage:"VALIDATION",reason:"IMAGE_DIMENSIONS_MISMATCH",actual:{width:dimensions.width,height:dimensions.height}};
   const now=context.now instanceof Date?context.now:new Date();
-  const record=nowMomentPhotoServerRecord({...input,metadataStripped:true},{id:context.id,objectKey:context.objectKey,now,knownPlaceIds:context.knownPlaceIds,canonicalPlaceLabels:context.canonicalPlaceLabels});
+  const normalized={...input,sourceBytes:bytes.byteLength,storedBytes:bytes.byteLength,width:dimensions.width,height:dimensions.height,metadataStripped:true};
+  const record=nowMomentPhotoServerRecord(normalized,{id:context.id,objectKey:context.objectKey,now,knownPlaceIds:context.knownPlaceIds,canonicalPlaceLabels:context.canonicalPlaceLabels});
   if(!record.ok)return{ok:false,stage:"VALIDATION",...record};
   const committed=await context.rateLimiter.commit({subject:context.rateSubject,placeId:record.record.placeId,action:"PHOTO",now});
   if(!committed?.allowed)return{ok:false,stage:"RATE_LIMIT",reason:committed?.reason||"RATE_LIMIT"};
