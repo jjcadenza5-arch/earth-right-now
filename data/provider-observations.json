@@ -285,5 +285,13 @@
     "confirmation": "OFFICIAL_SURFACE_CURRENTLY_OFF_SEASON",
     "observedAt": "2026-09-29T06:10:00Z",
     "reason": "Visit Chiyoda's official Sakura Festival surface remains reachable but still displays April 2026 blossom/congestion state in late September. The source remains DEGRADED/off-season and is not treated as a current Tokyo visual window."
+  },
+  {
+    "id": "chiang-mai-pao-cctv-gap",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_CCTV_PORTAL_CURRENT_STANDBY",
+    "observedAt": "2026-09-29T07:42:00Z",
+    "reason": "Chiang Mai Provincial Administrative Organization's official Smart City CCTV center is live as a portal, but all four listed public cameras still report STANDBY / WAITING FOR FEED. ERN keeps Chiang Mai as an honest visual gap and does not create a LIVE source.",
+    "sourceUrl": "https://www.chiangmaipao.go.th/all_cctv.php"
   }
 ]
