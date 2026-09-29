@@ -1,8 +1,8 @@
 import fs from "node:fs";
 const read=p=>fs.readFileSync(p,"utf8");
 const index=read("index.html"),app=read("src/app-lite.js"),css=read("src/styles-lite.css"),places=read("for-places.html"),moments=read("now-moments.html"),placesJs=read("src/for-places-page.js"),momentsJs=read("src/now-moments-page.js"),strategy=read("docs/CRISPY_PORK_SKIN_STRATEGY.md"),guide=read("docs/ERN_GUIDE_VISION.md"),sources=JSON.parse(read("data/sources.json")),localDirectory=JSON.parse(read("data/local-directory.json"));
-if(!app.includes("const healthy=state.sources.filter(guideEligible)"))fail.push("current discovery surfaces may bypass availability truth");
 const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)},requireExists=p=>fs.existsSync(p);
+if(!app.includes("const healthy=state.sources.filter(guideEligible)"))fail.push("current discovery surfaces may bypass availability truth");
 
 for(const id of ["watch","search","map","localEarth","participate","saved","guideLauncher","guidePanel"])must(index.includes(`id="${id}"`),`whole-product surface missing: ${id}`);
 for(const href of ["./for-places.html","./now-moments.html","./about.html","./privacy.html"])must(index.includes(`href="${href}"`),`public path missing: ${href}`);
