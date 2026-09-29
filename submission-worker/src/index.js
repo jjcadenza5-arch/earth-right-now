@@ -1,3 +1,4 @@
+import {readJsonBodyBounded} from "../../src/bounded-json-body.js";
 import {submissionRecord} from "../../src/business-submission.js";
 import {submissionEnvelope} from "../../src/submission-transport.js";
 import {reviewSubmission} from "../../src/submission-review.js";
@@ -48,7 +49,7 @@ export default{
       if(request.method==="GET"&&url.pathname==="/internal/submissions"){const x=await call(env,{op:"list"});return reply(200,x)}
       const m=url.pathname.match(/^\/internal\/submissions\/([^/]+)\/review$/);
       if(request.method==="POST"&&m){
-        let body;try{body=await request.json()}catch{return reply(400,{ok:false,reason:"INVALID_JSON"})}
+        let body;try{body=await readJsonBodyBounded(request,8192)}catch(error){return reply(error.code==="REQUEST_TOO_LARGE"?413:400,{ok:false,reason:error.code||"INVALID_JSON"})}
         const current=await call(env,{op:"get",id:m[1]});
         const reviewed=reviewSubmission(current.submission.record,{decision:body.decision,reviewedAt:new Date().toISOString(),note:body.note||"",checks:body.checks||{}});
         if(!reviewed.ok)return reply(400,{ok:false,reason:reviewed.error,missing:reviewed.missing||[]});
@@ -63,7 +64,7 @@ export default{
     if(!origin)return reply(403,{ok:false,reason:"ORIGIN_NOT_ALLOWED"});
     if(!enabled)return reply(503,{ok:false,reason:"SUBMISSION_TRANSPORT_DISABLED"},origin);
     if((+request.headers.get("content-length")||0)>8192)return reply(413,{ok:false,reason:"REQUEST_TOO_LARGE"},origin);
-    let body;try{body=await request.json()}catch{return reply(400,{ok:false,reason:"INVALID_JSON"},origin)}
+    let body;try{body=await readJsonBodyBounded(request,8192)}catch(error){return reply(error.code==="REQUEST_TOO_LARGE"?413:400,{ok:false,reason:error.code||"INVALID_JSON"},origin)}
     if(body?.consent!==true)return reply(400,{ok:false,reason:"CONSENT_REQUIRED"},origin);
     const prepared=submissionRecord(body);
     if(!prepared.ok)return reply(400,{ok:false,reason:"INVALID_SUBMISSION",errors:prepared.errors},origin);
@@ -71,8 +72,6 @@ export default{
     if(!envelope.ok)return reply(400,{ok:false,reason:envelope.reason},origin);
     const subject=await subjectFor(request,env);
     if(!subject)return reply(503,{ok:false,reason:"RATE_SUBJECT_CONFIG_INCOMPLETE"},origin);
-    const rate=await call(env,{op:"rate-check",subject,now:Date.now()});
-    if(!rate.allowed)return reply(429,{ok:false,reason:rate.reason},origin);
     const committed=await call(env,{op:"rate-commit",subject,now:Date.now()});
     if(!committed.allowed)return reply(429,{ok:false,reason:committed.reason},origin);
     const id=crypto.randomUUID();
