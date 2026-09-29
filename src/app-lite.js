@@ -268,7 +268,7 @@ function groupByPlace(items){
 function normalizeSearch(v){return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim()}
 function renderQuickSearches(){
  const host=document.querySelector(".search-suggestions");if(!host)return;
- const rankedCountries=[...new Set(state.sources.filter(featureEligible).sort((a,b)=>baseScore(b)-baseScore(a)).map(s=>s.country).filter(Boolean))].slice(0,3);
+ const rankedCountries=[...new Set(state.sources.filter(guideEligible).sort((a,b)=>baseScore(b)-baseScore(a)).map(s=>s.country).filter(Boolean))].slice(0,3);
  const typeQueries=visitorDaypart()==="night"?["Cities","Beaches & Water","Wildlife"]:["Beaches & Water","Mountains","Wildlife"];
  const items=[...rankedCountries,...typeQueries].slice(0,6);host.replaceChildren(...items.map(q=>{const b=document.createElement("button");b.type="button";b.dataset.query=q;b.textContent=q;return b}));
  host.querySelectorAll("button").forEach(b=>b.onclick=()=>{$("#searchInput").value=b.dataset.query||"";search($("#searchInput").value,{updateUrl:true});scrollToId("search")});
@@ -430,7 +430,7 @@ function localPlaceSignals(s){
  const score=terms.reduce((n,[term,w])=>n+(hay.includes(term)?w:0),0);return{score,worth:score>=2&&!famous};
 }
 function renderLocalEarth(){
- const picks=state.sources.filter(featureEligible).map(s=>({s,...localPlaceSignals(s)})).filter(x=>x.worth).sort((a,b)=>b.score-a.score||baseScore(b.s)-baseScore(a.s)).slice(0,6).map(x=>x.s);
+ const picks=state.sources.filter(guideEligible).map(s=>({s,...localPlaceSignals(s)})).filter(x=>x.worth).sort((a,b)=>b.score-a.score||baseScore(b.s)-baseScore(a.s)).slice(0,6).map(x=>x.s);
  $("#localEarthGrid").replaceChildren(...picks.map(wanderCard));
  $("#localEarth").hidden=picks.length===0;
 }
@@ -441,14 +441,14 @@ function wanderCard(s){
 }
 function renderWander(){
  const used=new Set(state.watch.map(s=>s.id));
- const ranked=state.sources.filter(s=>featureEligible(s)&&!used.has(s.id)).sort((a,b)=>baseScore(b)-baseScore(a));
+ const ranked=state.sources.filter(s=>guideEligible(s)&&!used.has(s.id)).sort((a,b)=>baseScore(b)-baseScore(a));
  const diverse=[],countries=new Set();for(const s of ranked){if(countries.has(s.country)&&diverse.length<5)continue;diverse.push(s);countries.add(s.country);if(diverse.length>=18)break}
  if(!diverse.length){$("#wanderGrid").replaceChildren();return}
  const start=(state.wanderOffset*6)%diverse.length;const pick=[];for(let i=0;i<Math.min(6,diverse.length);i++)pick.push(diverse[(start+i)%diverse.length]);
  $("#wanderGrid").replaceChildren(...pick.map(wanderCard));$("#wanderNote").textContent=`${pick.length} places beyond the current Top 20 · healthy sources only · ${visitorDaypart()} selection context`;
 }
 function renderNowStrip(){
- const healthy=state.sources.filter(featureEligible);
+ const healthy=state.sources.filter(guideEligible);
  $("#nowPlayable").textContent=healthy.filter(currentInside).length;
  $("#nowDaylight").textContent=healthy.filter(isDay).length;
  $("#nowNightCities").textContent=healthy.filter(s=>!isDay(s)&&isCity(s)).length;
@@ -457,10 +457,10 @@ function renderNowStrip(){
 
 function renderAtlasBeyond(){
  const box=$("#atlasBeyond"),grid=$("#atlasBeyondGrid"),note=$("#atlasBeyondNote");
- const dynamic=state.sources.filter(s=>featureEligible(s)&&s.mapBehavior==="DYNAMIC_UNPINNED");
- const multiSite=state.sources.filter(s=>featureEligible(s)&&s.mapBehavior==="MULTI_SITE_UNPINNED");
+ const dynamic=state.sources.filter(s=>guideEligible(s)&&s.mapBehavior==="DYNAMIC_UNPINNED");
+ const multiSite=state.sources.filter(s=>guideEligible(s)&&s.mapBehavior==="MULTI_SITE_UNPINNED");
  const intentional=new Set([...dynamic,...multiSite].map(s=>s.id));
- const unmapped=state.sources.filter(s=>featureEligible(s)&&!intentional.has(s.id)&&(!Number.isFinite(Number(s.lat))||!Number.isFinite(Number(s.lon))));
+ const unmapped=state.sources.filter(s=>guideEligible(s)&&!intentional.has(s.id)&&(!Number.isFinite(Number(s.lat))||!Number.isFinite(Number(s.lon))));
  if(!unmapped.length&&!dynamic.length&&!multiSite.length){box.hidden=true;grid.replaceChildren();return}
  const ranked=[...unmapped,...multiSite,...dynamic].sort((a,b)=>baseScore(b)-baseScore(a));
  const pick=[],countries=new Set();
@@ -500,10 +500,10 @@ function renderContext(s){
  const confidence=$("#sourceConfidence"),age=verificationAgeDays(s);confidence.textContent=[verificationLabel(s),s.provider?("Source: "+s.provider):"",s.health==="HEALTHY"?"Catalog health: healthy":"Catalog health: "+String(s.health||"unknown").toLowerCase()].filter(Boolean).join(" · ");confidence.classList.toggle("stale",!currentTruthClaim(s));
  for(const value of tagValues){const tag=document.createElement("span");tag.textContent=value;tags.append(tag)}
  near.replaceChildren();
- const nearby=state.sources.filter(x=>x.id!==s.id&&featureEligible(x)&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,d:distanceKm(s,x)})).filter(x=>Number.isFinite(x.d)).sort((a,b)=>a.d-b.d).slice(0,3);
+ const nearby=state.sources.filter(x=>x.id!==s.id&&guideEligible(x)&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,d:distanceKm(s,x)})).filter(x=>Number.isFinite(x.d)).sort((a,b)=>a.d-b.d).slice(0,3);
  for(const item of nearby){const b=document.createElement("button");b.type="button";b.className="nearby-item";const label=document.createElement("strong");label.textContent=item.s.title;const meta=document.createElement("small");meta.textContent=item.d<1?"Nearby":Math.round(item.d)+" km";b.append(label,meta);b.onclick=()=>openViewer(item.s);near.append(b)}
  related.replaceChildren();const sourceCats=new Set((s.categories||[]).map(x=>String(x).toLowerCase()));
- const relatedItems=state.sources.filter(x=>x.id!==s.id&&featureEligible(x)&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,match:(x.categories||[]).filter(c=>sourceCats.has(String(c).toLowerCase())).length,score:baseScore(x)})).filter(x=>x.match>0).sort((a,b)=>b.match-a.match||b.score-a.score).slice(0,3);
+ const relatedItems=state.sources.filter(x=>x.id!==s.id&&guideEligible(x)&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,match:(x.categories||[]).filter(c=>sourceCats.has(String(c).toLowerCase())).length,score:baseScore(x)})).filter(x=>x.match>0).sort((a,b)=>b.match-a.match||b.score-a.score).slice(0,3);
  for(const item of relatedItems){const b=document.createElement("button");b.type="button";b.className="nearby-item";const label=document.createElement("strong");label.textContent=item.s.title;const meta=document.createElement("small");meta.textContent=publicTruth(item.s);b.append(label,meta);b.onclick=()=>openViewer(item.s);related.append(b)}
  const place=[s.region,s.country,s.title].filter(Boolean).join(" ");
  const q=encodeURIComponent(place);
@@ -528,7 +528,7 @@ function renderSaved(){
  const recentIds=readJSON("ern-recent",[]);const byId=new Map(state.sources.map(s=>[s.id,s]));const recent=recentIds.map(id=>byId.get(id)).filter(Boolean);
  $("#recentResults").replaceChildren(...recent.map(s=>card(s,true)));$("#recentEmpty").hidden=recent.length>0;
  const p=interactionProfile();$("#recentNote").textContent=Number(p.views||0)>=3?"Local suggestions are adapting to your exploration.":"Explore a few places and ERN will begin adapting locally.";
- const excluded=new Set([...state.favorites,...recentIds]);const recs=state.sources.filter(s=>featureEligible(s)&&!excluded.has(s.id)).sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,6);
+ const excluded=new Set([...state.favorites,...recentIds]);const recs=state.sources.filter(s=>guideEligible(s)&&!excluded.has(s.id)).sort((a,b)=>baseScore(b)-baseScore(a)).slice(0,6);
  $("#recommendedResults").replaceChildren(...recs.map(s=>card(s,true)));
 }
 function stopImageTimer(){if(state.imageTimer){clearInterval(state.imageTimer);state.imageTimer=null}}
@@ -606,7 +606,7 @@ function initEvents(){
  document.querySelectorAll("[data-guide]").forEach(b=>b.onclick=()=>{$("#guideInput").value=b.dataset.guide||"";runGuide($("#guideInput").value)});
 $("#watchNav").onclick=()=>scrollToId("watch");$("#searchNav").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#destinationsNav").onclick=()=>scrollToId("destinations");$("#mapNav").onclick=()=>scrollToId("map");$("#savedNav").onclick=()=>scrollToId("saved");
  $("#mobileWatch").onclick=()=>scrollToId("watch");$("#mobileExplore").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#mobileMap").onclick=()=>scrollToId("map");$("#mobileSaved").onclick=()=>scrollToId("saved");
- $("#heroWatch").onclick=()=>{const target=state.selected&&featureEligible(state.selected)?state.selected:(heroPool()[0]||state.watch[0]);if(target){stopHeroRotation();openViewer(target)}else scrollToId("watch")};$("#heroNext").onclick=()=>{const hp=heroPool();if(!hp.length)return;stopHeroRotation();const current=hp.findIndex(x=>x.id===state.selected?.id);const next=hp[(current+1+hp.length)%hp.length];state.watchIndex=Math.max(0,state.watch.findIndex(x=>x.id===next.id));renderHero(next);startHeroRotation()};
+ $("#heroWatch").onclick=()=>{const target=state.selected&&guideEligible(state.selected)?state.selected:(heroPool()[0]||state.watch[0]);if(target){stopHeroRotation();openViewer(target)}else scrollToId("watch")};$("#heroNext").onclick=()=>{const hp=heroPool();if(!hp.length)return;stopHeroRotation();const current=hp.findIndex(x=>x.id===state.selected?.id);const next=hp[(current+1+hp.length)%hp.length];state.watchIndex=Math.max(0,state.watch.findIndex(x=>x.id===next.id));renderHero(next);startHeroRotation()};
  $("#refreshSet").onclick=()=>{stopHeroRotation();state.mode="auto";writeSaved("ern-mode","auto");state.setOffset++;renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}startHeroRotation()};
  document.querySelectorAll(".mode-chip").forEach(b=>b.onclick=()=>{stopHeroRotation();state.mode=b.dataset.mode||"auto";writeSaved("ern-mode",state.mode);renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}startHeroRotation()});
  $("#wanderRefresh").onclick=()=>{state.wanderOffset++;renderWander()};
