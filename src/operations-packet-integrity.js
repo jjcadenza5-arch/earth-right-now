@@ -287,7 +287,7 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(!["READ_ONLY","CONTRIBUTION_ENABLED"].includes(earthSignals.mode))issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_MODE_INVALID",value:earthSignals.mode??null});
     if(earthSignals.mode==="READ_ONLY"&&earthSignals.ready!==false)issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_READ_ONLY_READY_MISMATCH"});
     if(earthSignals.mode==="CONTRIBUTION_ENABLED"&&earthSignals.ready!==true)issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_ENABLED_READY_MISMATCH"});
-    if(earthSignals?.backendFoundation?.deployedTransport===true&&earthSignals?.deployment?.ready!==true)issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_TRANSPORT_WITHOUT_DEPLOYMENT_EVIDENCE"});
+    if(earthSignals?.backendFoundation?.deployedTransport===true&&earthSignals?.deployment?.deployed!==true)issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_TRANSPORT_WITHOUT_DEPLOYMENT_EVIDENCE"});
     if(earthSignals?.privacyNoticeDraft?.published===false&&earthSignals?.privacyNoticeDraft?.activationSatisfied===true)issues.push({file:"earth-signals-status.json",code:"EARTH_SIGNALS_UNPUBLISHED_PRIVACY_ACTIVATION"});
   }
 
@@ -297,7 +297,7 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(participation?.safety?.automaticPublicationAllowed!==false)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_AUTO_PUBLICATION_VIOLATION"});
     if(participation?.safety?.automaticCatalogMutationAllowed!==false)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_AUTO_CATALOG_MUTATION_VIOLATION"});
     if(participation?.safety?.pushTriggeredInfrastructureDeploymentAllowed!==false)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_PUSH_DEPLOY_VIOLATION"});
-    if(participation.state==="PREPARED_FOR_CONTROLLED_DEPLOYMENT"&&participation.publicActivationOff!==true)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_PREPARED_BUT_PUBLIC_ON"});
+    if(["PREPARED_FOR_CONTROLLED_DEPLOYMENT","EARTH_SIGNALS_DEPLOYED_REMAINING_INFRASTRUCTURE_PREPARED"].includes(participation.state)&&participation.publicActivationOff!==true)issues.push({file:"participation-infrastructure.json",code:"PARTICIPATION_PREPARED_BUT_PUBLIC_ON"});
   }
 
   const media=files["now-moment-media-status.json"];
