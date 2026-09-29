@@ -27,6 +27,8 @@ must(metadata.includes("nowMomentImageDimensions")&&service.includes("width:dime
 must(service.includes("moderationRequired:true")&&service.includes("reportNowMomentPhoto")&&service.includes("cleanupNowMomentPhotos"),"moderation/report/cleanup service contract incomplete");
 must(service.includes("canonicalPlaceLabels")&&worker.includes("canonicalPlaceLabels:places.labels"),"trusted place-label rehydration missing");
 must(!worker.includes("x-ern-place-label"),"visitor place-label header must not be accepted by media Worker");
+must(worker.includes("PLACE_ID_REQUIRED"),"public media listing must require an explicit placeId");
+must(worker.includes("constantTimeEqual")&&!worker.includes("got===`Bearer ${expected}`"),"review bearer token comparison must be hardened");
 must(!service.includes("rateLimiter.check(")&&service.includes("rateLimiter.commit("),"photo rate limiting must use a single atomic reservation/commit");
 must(worker.includes("readBodyBounded")&&worker.includes("DERIVATIVE_TOO_LARGE"),"bounded upload body verification missing");
 must(!worker.includes("x-ern-photo-source-bytes")&&!worker.includes("x-ern-photo-stored-bytes")&&!worker.includes("x-ern-photo-width")&&!worker.includes("x-ern-photo-height"),"client-declared image facts must not cross the media Worker boundary");
@@ -34,6 +36,7 @@ must((worker.match(/cache-control":"private, no-store"/g)||[]).length>=2,"tempor
 must(service.includes("metadata.listExpired")&&service.indexOf("objects.delete(r.objectKey)")<service.indexOf("metadata.delete(r.id)"),"retry-safe expiry cleanup ordering missing");
 must(state.includes('b.op==="list-expired"')&&state.includes('b.op==="delete"'),"retry-safe media state cleanup operations missing");
 must(worker.includes("PENDING_REVIEW")&&worker.includes("published:false"),"upload must remain moderation-first");
+must(worker.includes("PUBLICATION_DISABLED")&&worker.includes('body.decision==="APPROVED"&&!enabled'),"feature-OFF state must block latent approvals");
 must(worker.includes("PUBLICATION_DISABLED")&&worker.includes('body.decision==="APPROVED"&&!enabled'),"pre-activation approvals must not become latent future publication");
 must(worker.includes("rawNetworkIdentifiersStored:false"),"worker must explicitly avoid raw network identifier storage");
 must(worker.includes("directBucketPublicAccess:false"),"R2 bucket must remain non-public");
