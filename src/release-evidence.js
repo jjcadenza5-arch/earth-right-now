@@ -1,7 +1,7 @@
 import { releaseReadiness } from "./release-readiness.js";
-import {candidateEvidenceStatus as candidateEvidenceBindingStatus} from "./candidate-evidence-binding.js";
+import {candidateEvidenceStatus as candidateEvidenceBindingStatus,RELEASE_EVIDENCE_KEYS} from "./candidate-evidence-binding.js";
 
-export const RELEASE_EVIDENCE_KEYS=["browser","mobile","providerPlayback","accessibility","performance","rollback"];
+export {RELEASE_EVIDENCE_KEYS};
 
 export function blankReleaseEvidence(){
   return Object.fromEntries(RELEASE_EVIDENCE_KEYS.map(key=>[key,{ok:false,note:"",checkedAt:""}]));
