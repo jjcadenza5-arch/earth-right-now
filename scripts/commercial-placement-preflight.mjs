@@ -3,7 +3,7 @@ import {affiliatePartner,activeAffiliatePartner} from "../src/affiliate-partners
 import {currentTravelOffer} from "../src/travel-offer-verification.js";
 
 const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
-const partners=read("data/affiliate-partners.json"),offers=read("data/travel-offers.json"),platforms=read("data/affiliate-platform-research.json"),opportunities=read("data/commercial-link-opportunities.json"),business=read("data/business-readiness.json"),index=fs.readFileSync("index.html","utf8");
+const partners=read("data/affiliate-partners.json"),offers=read("data/travel-offers.json"),platforms=read("data/affiliate-platform-research.json"),opportunities=read("data/commercial-link-opportunities.json"),business=read("data/business-readiness.json"),index=fs.readFileSync("index.html","utf8"),destinationBuilder=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
 const now=Date.now(),fail=[],warn=[],partnerMap=new Map();
 for(const raw of partners){
   const p=affiliatePartner(raw);
@@ -42,6 +42,12 @@ for(const x of opportunities.opportunities||[]){
   if(!x?.id||!x?.destination||!x?.partnerCandidate||!x?.state)fail.push("invalid commercial opportunity record");
   if(x?.url||x?.trackedUrl||x?.public===true)fail.push("planning opportunity contains public/tracked placement data: "+String(x?.id||"unknown"));
 }
+
+if(!destinationBuilder.includes("currentTravelOffer")||!destinationBuilder.includes("activeAffiliatePartner"))fail.push("destination pages may surface affiliate links without current offer/partner gates");
+if(!destinationBuilder.includes('rel="sponsored noopener noreferrer"'))fail.push("destination page affiliate links must carry sponsored rel");
+if(!destinationBuilder.includes("Affiliate availability never affects ERN source ranking"))fail.push("destination page affiliate ranking-independence disclosure missing");
+if(!destinationBuilder.includes("These entries are not paid placements"))fail.push("destination page local-place non-paid disclosure missing");
+
 if(/emrldtp\.com\/|Travelpayouts Drive/i.test(index))fail.push("Travelpayouts Drive bootstrap returned to public homepage");
 const report={ok:fail.length===0,checkedAt:new Date(now).toISOString(),activePartners:[...partnerMap.values()].filter(x=>x.active).map(x=>x.p.id),affiliateOffers:offers.filter(x=>x?.affiliate).map(x=>({id:x.id,partnerId:x.partnerId||null,current:currentTravelOffer(x,{now})})),travelpayouts:tp?{relationshipActive:tp.relationshipActive===true,projectStatus:tp.projectStatus||null,availableProgramCountObserved:tp.availableProgramCountObserved??null,payoutMethodConfigured:tp.payoutMethodConfigured===true}:null,commercialOpportunityCount:(opportunities.opportunities||[]).length,driveAutomationPresent:/emrldtp\.com\//i.test(index),warn,fail,safety:{automaticPlacementAllowed:false,automaticLinkRewritingAllowed:false,paidRankingAllowed:false}};
 console.log(JSON.stringify(report,null,2));
