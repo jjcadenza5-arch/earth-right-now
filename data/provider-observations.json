@@ -365,5 +365,37 @@
     "observedAt": "2026-09-29T10:24:48Z",
     "reason": "Independent provider-page recheck on 2026-09-29 confirmed Webcam La Palma's exact Tajogaite camera page labels the view LIVE, real-time/around-the-clock, provider-operated, and explicitly offers embedding. Source currentness refreshed independently of human playback proof.",
     "sourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/"
+  },
+  {
+    "id": "bergen-ulriken",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_DIRECT_SOURCE_SUPERSEDES_AGGREGATOR",
+    "observedAt": "2026-09-29T10:29:35Z",
+    "reason": "Independent official-provider recheck on 2026-09-29 confirmed Ulriken643 publishes a live webcam with a current Vidden/mountain view. ERN uses the official page as EXTERNAL_LIVE + LINK_ONLY because reuse/embed rights for ERN have not been independently established. Previous CouchTourist playback observations remain historical evidence for the superseded target and do not apply to the new external source.",
+    "sourceUrl": "https://ulriken643.no/en/webcam"
+  },
+  {
+    "id": "skeikampen-ski",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_DIRECT_SOURCE_SUPERSEDES_AGGREGATOR",
+    "observedAt": "2026-09-29T10:29:35Z",
+    "reason": "Independent official-provider recheck on 2026-09-29 confirmed Skeikampen's official webcam page says the camera shows what Skeikampen looks like today and publishes current webcam players. ERN uses the official page as EXTERNAL_LIVE + LINK_ONLY because reuse/embed rights for ERN have not been independently established. Previous CouchTourist playback observations remain historical evidence for the superseded target and do not apply to the new external source.",
+    "sourceUrl": "https://skeikampen.no/en/practical-info/webcam/"
+  },
+  {
+    "id": "cijin-beach-kaohsiung",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_DIRECT_SOURCE_SUPERSEDES_AGGREGATOR",
+    "observedAt": "2026-09-29T10:29:35Z",
+    "reason": "Independent official-provider recheck on 2026-09-29 confirmed Kaohsiung Travel, operated by the Tourism Bureau of Kaohsiung City Government, publishes the Cijin (Qijin) Beach 4K real-time image/live-camera page. ERN uses the official page as EXTERNAL_LIVE + LINK_ONLY because ERN-specific embed/reuse permission has not been independently established. Previous CouchTourist playback observations remain historical evidence for the superseded target and do not apply to the new external source.",
+    "sourceUrl": "https://khh.travel/en/live-camera/14/"
+  },
+  {
+    "id": "ponte-di-legno-adamello",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_DIRECT_SOURCE_SUPERSEDES_AGGREGATOR",
+    "observedAt": "2026-09-29T10:29:35Z",
+    "reason": "Independent official-provider recheck on 2026-09-29 confirmed Pontedilegno-Tonale's official webcam page publishes multiple LIVE real-time views, including Ponte di Legno. ERN uses the official webcam page as EXTERNAL_LIVE + LINK_ONLY because ERN-specific embed/reuse permission has not been independently established. Previous CouchTourist playback observations remain historical evidence for the superseded target and do not apply to the new external source.",
+    "sourceUrl": "https://www.pontedilegnotonale.com/en/pontedilegno-tonale-booking/webcams-pontedilegno-tonale/"
   }
 ]
