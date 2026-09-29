@@ -529,3 +529,26 @@ Only interrupt the operator for:
 - Homepage public copy no longer says “Real conditions”; it now stays grounded in real places/current windows while public telemetry context is OFF.
 - Deployed operator review batch **bcb7950ef0dc7e4e** contains renewal entries for Fushimi Inari, Kifune Shrine, Kiyomizu-zaka and Hanamikoji Street.
 - Those renewals are optional for preserving all four Kyoto inside-ERN windows; ERN remains operational if they temporarily age out, so no operator interruption is required yet.
+
+
+## Latest continuity checkpoint — green deploy + zero aggregator + media boundary
+- Current local-time checkpoint: **2026-09-29 20:23 Asia/Bangkok**.
+- Latest independently verified green GitHub Pages run: **36574522296**, completed successfully through Deploy after the Now Moment media boundary hardening.
+- Current catalog: **94 total / 91 current / 90 current+healthy / 13 current healthy embeds / 3 stale / 0 expired / 0 unknown**.
+- The only stale records remain the explicit persistent debts:
+  - `pattaya-city-live`
+  - `tbilisi-mtkvari-river`
+  - `chidori-sakura`
+- Active CouchTourist dependency is now **zero**. The final four aggregator records were conservatively migrated to official/direct external-live pages; historical playback observations remain historical and do not apply to the replacement targets.
+- Provider/source-domain concentration is now an operational resilience metric only; current largest provider/domain share remains below the 20% advisory threshold and cannot enter visitor ranking.
+- Watch Earth diversity behavior is protected: current inside-ERN priority first, then soft place/country/provider diversity; commercial state cannot enter Watch Earth ranking.
+- Stories now also prefers geographic diversity as a soft fill rule after truth/currentness and Beautiful/Useful/Interesting balance.
+- Deterministic Guide place+intent handling preserves geographic constraints; planning links remain post-ranking and commercially neutral.
+- Now Moment still-photo infrastructure remains **NOT_DEPLOYED / PUBLIC-OFF / VIDEO-OFF**.
+- Prepared photo safeguards include 45-minute TTL, still images only, bounded encoded dimensions/size, metadata rejection, canonical place validation, server-side rate limits, moderation-first publication, abuse reporting, retry-safe expiry cleanup, private/no-store media delivery, no raw network identifier storage and no automatic publication.
+- New media integrity boundary:
+  - visitor-supplied `placeLabel` is no longer trusted;
+  - public labels are rehydrated from the trusted ERN catalog using canonical `placeId`;
+  - the upload API/Worker no longer accepts the `x-ern-place-label` header at all.
+- The release-smoke/operations-packet drift encountered during media hardening has been repaired; current Pages is green again.
+- Public AI, Seoul context, visitor uploads, external social/account actions and other credentialed gates remain OFF until their explicit human/provider gates are intentionally opened.
