@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T14:45:00Z",
+  "generatedAt": "2026-09-29T01:45:00Z",
   "mission": "See before you go",
   "productTest": "Would this current view help someone understand the place better before deciding whether, when, or how to go?",
   "hardGates": [
@@ -28,7 +28,11 @@
     "commercialMayAffectWatchEarthRanking": false,
     "commercialMayAffectGuideTruth": false,
     "commercialMayAffectStoriesRanking": false,
-    "placeCategoriesAreIllustrativeNotRestrictive": true
+    "placeCategoriesAreIllustrativeNotRestrictive": true,
+    "providerConcentrationMayRaiseResearchPriority": true,
+    "providerConcentrationMayAffectWatchEarthRanking": false,
+    "providerConcentrationMayOverrideTruth": false,
+    "providerConcentrationMayOverrideQuality": false
   },
   "placeUniverse": [
     "cities-streets-neighborhoods",
@@ -54,5 +58,17 @@
       "services"
     ],
     "noPaidEditorialRanking": true
+  },
+  "operationalResearchModifiers": {
+    "providerDiversification": {
+      "enabled": true,
+      "purpose": "Reduce operational dependency when stale/expired or inside-ERN inventory is concentrated in one provider family.",
+      "mayRaiseResearchQueuePriority": true,
+      "mayAffectVisitorRanking": false,
+      "mayOverrideTruth": false,
+      "mayOverridePermission": false,
+      "mayOverrideQuality": false,
+      "currentSignal": "All currently expired catalog records are concentrated in CouchTourist embeds; diversify with independent, rights-clear provider families rather than bulk-renewing one network."
+    }
   }
 }
