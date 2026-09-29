@@ -1,3 +1,11 @@
+## 2026-09-29 — Fix provider-page YouTube research and reach 73 current sources
+- Refreshed exact Statue of Liberty close-view evidence.
+- Reached 73 current+healthy / 3 stale / 16 expired.
+- Fixed YouTube technical preflight for official provider pages that embed an exact YouTube player.
+- Added regression coverage and Pages trigger coverage for research/recency infrastructure.
+- Normalized Rovaniemi to the standard human-playback-required research state.
+- Added provider diversification as a research-only operational modifier with explicit no-ranking/no-truth-override guards.
+
 ## 2026-09-29 — Concentrate recency debt and stage independent Rovaniemi player
 - Refreshed Statue HarborCam and Reykjavík current images.
 - Reached 72 current+healthy / 4 stale / 16 expired.
