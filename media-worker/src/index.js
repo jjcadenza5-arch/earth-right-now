@@ -43,7 +43,8 @@ function stores(env){
       async get(id){try{return (await stateCall(env,{op:"get",id})).record}catch(error){if(error.status===404)return null;throw error}},
       async list({placeId=null,now=new Date()}={}){return (await stateCall(env,{op:"list",placeId,now:now.getTime()})).records||[]},
       async update(id,patch){return (await stateCall(env,{op:"update",id,patch})).record},
-      async deleteExpired({now=new Date()}={}){return{deleted:(await stateCall(env,{op:"delete-expired",now:now.getTime()})).deleted||[]}}
+      async listExpired({now=new Date()}={}){return (await stateCall(env,{op:"list-expired",now:now.getTime()})).records||[]},
+      async delete(id){return stateCall(env,{op:"delete",id})}
     },
     objectStore:{
       async put(key,bytes,{contentType}={}){await env.NOW_MOMENT_MEDIA.put(key,bytes,{httpMetadata:{contentType}});return{ok:true}},
