@@ -12,6 +12,7 @@ must(!/Real conditions/i.test(index),"Homepage must not imply independent real-c
 must(app.includes("guidePlaceMatches(")&&app.includes('params.get("guide")'),"ERN Guide place/deep-link routing missing");
 must(read("src/release-verification-console.js").includes('./#view='),"release verification provider links do not match viewer routing");
 must(app.includes("localIntent="),"Search lost small/local-place intent handling");
+must(app.includes("[x.name,x.type,x.place,x.country,x.address,x.summary"),"Local Earth search lost verified address matching");
 must(app.includes("const matches=catalogMatches.filter(guideEligible)"),"Explore search must filter catalog matches through current truth");
 must(app.includes("offers:intent.planning?TP.guideOffers(state.travelOffers,items[0]):[]"),"Guide planning links must remain post-ranking");
 must(app.includes("let pool=placeMatches.length?[...placeMatches]:state.sources.filter(guideEligible)"),"Guide place+intent ranking lost geographic constraint");
