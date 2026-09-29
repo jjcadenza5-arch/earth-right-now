@@ -552,3 +552,30 @@ Only interrupt the operator for:
   - the upload API/Worker no longer accepts the `x-ern-place-label` header at all.
 - The release-smoke/operations-packet drift encountered during media hardening has been repaired; current Pages is green again.
 - Public AI, Seoul context, visitor uploads, external social/account actions and other credentialed gates remain OFF until their explicit human/provider gates are intentionally opened.
+
+
+## Latest phase checkpoint — Stage R external-gate readiness
+- Canonical repository phase is now machine-derived as **`STAGE_R_EXTERNAL_GATE_TRIGGER_REGISTER`** — “External-gate readiness and evidence-driven activation.”
+- This supersedes informal “Phase 3/4” language. ERN is beyond core build/stable-beta hardening; remaining major activation work is evidence-gated external/human/provider work plus ongoing source/product quality maintenance.
+- First independently verified green Stage R Pages run: **36583259848**.
+- Stage R output at that run:
+  - `coreStableBeta=true`
+  - **9 external gates open**
+  - **0 eligible for evidence review yet**
+  - next action: `HOLD_BLOCKED_LANES_AND_WORK_ELSEWHERE`
+- Next timed provider review:
+  - `viator-api-activation`
+  - earliest review: **2026-09-29T15:21:00Z / 22:21 Asia/Bangkok**
+  - before that time: **DO_NOT_RETEST_OR_ROTATE_KEY**
+- Untimed gates remain evidence-driven only: Travelpayouts matching, Earth Signals deployment, submission transport, Now Moment media deployment, Guide AI public activation, Seoul validation/activation, official social channels and aggregate analytics.
+- Added `scripts/project-phase-status.mjs` and package command `npm run project:phase`; Pages now release-gates this canonical status.
+- External gate register now exposes `nextTimedReview` and `untimedWaiting`; operator brief surfaces both to prevent repeated blocked work.
+- `whole-product-status` now distinguishes:
+  - backend deployed vs public activation,
+  - Earth Signals/submission/media deployment vs public state,
+  - reviewed Local Earth inventory,
+  - current verified affiliate partners/offers,
+  - connected distribution channels,
+  - analytics active/off.
+  It no longer collapses “deployed but gated” into generic false.
+- Safety remains unchanged: no automatic external action, credential rotation, public activation, partner claim or invented trigger evidence.
