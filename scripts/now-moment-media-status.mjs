@@ -20,6 +20,7 @@ must(policy.includes("freeTextAccepted:false"),"free-text rejection policy missi
 must(policy.includes("preciseCoordinatesStored:false"),"precise-coordinate rejection policy missing");
 must(policy.includes("automaticPublicationAllowed:false"),"automatic publication must remain disabled");
 must(policy.includes("videoEnabled:false"),"video must remain disabled");
+must(policy.includes("publicMinuteIso"),"public Now Moment timestamps must be coarsened to minute precision");
 must(metadata.includes("EXIF_PRESENT")&&metadata.includes("XMP_PRESENT")&&metadata.includes("GPS_METADATA_SUSPECTED"),"JPEG metadata rejection incomplete");
 must(metadata.includes("PNG_METADATA_CHUNK")&&metadata.includes("WEBP_METADATA_CHUNK"),"PNG/WebP metadata rejection incomplete");
 must(metadata.includes("matchesAscii")&&!metadata.includes("String.fromCharCode"),"metadata scan must avoid whole-image string conversion");
