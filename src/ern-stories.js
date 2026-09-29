@@ -25,6 +25,13 @@ function truthLabel(source){
   if(source?.playback==="IMAGE_REFRESH")return"CURRENT IMAGE";
   return"CURRENT SOURCE";
 }
+function editorialLenses(source){
+  const raw=(source?.categories||[]).map(x=>String(x).toLowerCase()),out=[];
+  if(raw.some(x=>x.includes("useful earth")))out.push("USEFUL");
+  if(raw.some(x=>x.includes("interesting earth")))out.push("INTERESTING");
+  if(raw.some(x=>x.includes("beautiful earth")))out.push("BEAUTIFUL");
+  return out;
+}
 export function storyCard(source,{now=new Date()}={}){
   if(!source)return null;
   return{
@@ -39,6 +46,7 @@ export function storyCard(source,{now=new Date()}={}){
     imageUrl:source.thumbnail||source.imageUrl||source.poster||null,
     sourceUrl:source.sourceUrl||source.officialUrl||null,
     momentPhase:solarMoment(source,now).phase,
+    editorialLenses:editorialLenses(source),
     score:beautifulNowScore(source,now)
   };
 }
@@ -47,11 +55,24 @@ export function buildStoryDeck(sources,{now=new Date(),limit=9}={}){
     .filter(s=>s?.featuredHold!==true)
     .sort((a,b)=>beautifulNowScore(b,now)-beautifulNowScore(a,now)||String(a.id).localeCompare(String(b.id)));
   const usedMedia=new Set(),usedPlaces=new Set(),out=[];
-  for(const source of pool){
+  const canUse=source=>{
     const media=mediaIdentity(source),place=String(source.placeId||source.id);
-    if((media&&usedMedia.has(media))||usedPlaces.has(place))continue;
-    const card=storyCard(source,{now});if(!card)continue;
-    out.push(card);if(media)usedMedia.add(media);usedPlaces.add(place);
+    return !((media&&usedMedia.has(media))||usedPlaces.has(place));
+  };
+  const add=source=>{
+    if(!source||!canUse(source)||out.length>=limit)return false;
+    const card=storyCard(source,{now});if(!card)return false;
+    const media=mediaIdentity(source),place=String(source.placeId||source.id);
+    out.push(card);if(media)usedMedia.add(media);usedPlaces.add(place);return true;
+  };
+  if(limit>=3){
+    for(const lens of ["USEFUL","INTERESTING","BEAUTIFUL"]){
+      const source=pool.find(s=>canUse(s)&&editorialLenses(s).includes(lens));
+      if(source)add(source);
+    }
+  }
+  for(const source of pool){
+    add(source);
     if(out.length>=limit)break;
   }
   return out;
