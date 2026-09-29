@@ -32,7 +32,9 @@ export async function nowMomentPhotoHttpRequest(request={},context={}){
 
   if(method==="GET"&&path===NOW_MOMENT_PHOTO_API.uploadPath){
     if(!activation.ready)return response(503,{ok:false,mode:"OFF",reason:"NOW_MOMENT_PHOTO_NOT_ACTIVATED"});
-    try{return response(200,await listNowMomentPhotos({placeId:request.query?.placeId||null},context))}
+    const placeId=String(request.query?.placeId||"").trim();
+    if(!placeId)return response(400,{ok:false,reason:"PLACE_ID_REQUIRED"});
+    try{return response(200,await listNowMomentPhotos({placeId},context))}
     catch(error){return response(503,{ok:false,reason:error?.code||"SERVICE_UNAVAILABLE"})}
   }
 
