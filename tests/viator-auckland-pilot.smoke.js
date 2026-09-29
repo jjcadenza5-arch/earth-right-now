@@ -26,7 +26,7 @@ assert.equal(deployment.sandboxKeyState,"ACTIVE_AUTH_CONFIRMED");
 assert.equal(deployment.lastDiagnostic.destinationsStatus,200);
 assert.equal(deployment.lastDiagnostic.sampleProductStatus,200);
 assert.equal(deployment.taxonomyVerified,true);
-assert.equal(deployment.productSearchVerified,false);
-assert.equal(deployment.affiliateAttributionVerified,false);
+assert.equal(deployment.productSearchVerified,true);
+assert.equal(deployment.affiliateAttributionVerified,true);
 
 console.log("Viator Auckland limited pilot: ok");
