@@ -34,6 +34,7 @@ const releaseTests=[
   "atlas-recheck-currentness.smoke.js",
   "offline-currentness.smoke.js",
   "guide-ai-routing.smoke.js",
+  "guide-planning-boundary.smoke.js",
   "guide-ai-deployment-readiness.smoke.js",
   "destination-page-builder.smoke.js",
   "local-directory-status.smoke.js",
