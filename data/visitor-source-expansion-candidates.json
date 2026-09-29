@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T05:12:00Z",
+  "generatedAt": "2026-09-29T05:30:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -592,6 +592,138 @@
         "catalogId": "waikiki-south-shore",
         "mode": "EXTERNAL_LIVE",
         "officialPage": "https://www.waikikiaquarium.org/webcams/",
+        "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
+      }
+    },
+    {
+      "id": "kijihiki-hokuto-official-replacement",
+      "destination": "Kijihiki Plateau, Hokkaido, Japan",
+      "provider": "Hokuto City",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "DIRECT_OR_OFFICIAL_CURRENT_SOURCE_REPLACEMENT",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "evidenceUrls": [
+        "https://www.city.hokuto.hokkaido.jp/docs/1967.html"
+      ],
+      "state": "RESOLVED_PROMOTED_LINK_ONLY",
+      "why": "Official Hokuto City live-camera page replaces the older CouchTourist dependency with a municipal visitor-facing live source.",
+      "next": "Maintain the source-specific page as ERN's source-of-truth handoff. Keep LINK_ONLY unless separate embed/reuse permission and playback review justify a different mode.",
+      "replacesExpiredSourceId": "kijihiki-plateau",
+      "resolvedTarget": {
+        "catalogId": "kijihiki-plateau",
+        "mode": "EXTERNAL",
+        "officialPage": "https://www.city.hokuto.hokkaido.jp/docs/1967.html",
+        "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
+      }
+    },
+    {
+      "id": "lajes-espaco-talassa-official-replacement",
+      "destination": "Lajes do Pico, Azores, Portugal",
+      "provider": "Espaço Talassa",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "DIRECT_OR_OFFICIAL_CURRENT_SOURCE_REPLACEMENT",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "evidenceUrls": [
+        "https://espacotalassa.com/en/webcam/"
+      ],
+      "state": "RESOLVED_PROMOTED_LINK_ONLY",
+      "why": "Espaço Talassa's own webcam page replaces the older CouchTourist dependency with the originating provider's current live surface.",
+      "next": "Maintain the source-specific page as ERN's source-of-truth handoff. Keep LINK_ONLY unless separate embed/reuse permission and playback review justify a different mode.",
+      "replacesExpiredSourceId": "lajes-pico-harbour",
+      "resolvedTarget": {
+        "catalogId": "lajes-pico-harbour",
+        "mode": "EXTERNAL",
+        "officialPage": "https://espacotalassa.com/en/webcam/",
+        "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
+      }
+    },
+    {
+      "id": "roque-gtc-official-replacement",
+      "destination": "Roque de los Muchachos Observatory, La Palma, Spain",
+      "provider": "Gran Telescopio CANARIAS / IAC",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "DIRECT_OR_OFFICIAL_CURRENT_SOURCE_REPLACEMENT",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "evidenceUrls": [
+        "https://www.gtc.iac.es/multimedia/webcams.php"
+      ],
+      "state": "RESOLVED_PROMOTED_LINK_ONLY",
+      "why": "GTC's official current-images page replaces the older CouchTourist dependency with an observatory-operated source that updates every minute.",
+      "next": "Maintain the source-specific page as ERN's source-of-truth handoff. Keep LINK_ONLY unless separate embed/reuse permission and playback review justify a different mode.",
+      "replacesExpiredSourceId": "roque-observatory",
+      "resolvedTarget": {
+        "catalogId": "roque-observatory",
+        "mode": "EXTERNAL",
+        "officialPage": "https://www.gtc.iac.es/multimedia/webcams.php",
+        "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
+      }
+    },
+    {
+      "id": "blouberg-direct-image-replacement",
+      "destination": "Bloubergstrand / Table Mountain, South Africa",
+      "provider": "TableMountainView.com",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "DIRECT_OR_OFFICIAL_CURRENT_SOURCE_REPLACEMENT",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "evidenceUrls": [
+        "https://www.tablemountainview.com/"
+      ],
+      "state": "RESOLVED_PROMOTED_LINK_ONLY",
+      "why": "The direct webcam operator's frequently refreshed Table Mountain view replaces the older CouchTourist dependency without copying the image.",
+      "next": "Maintain the source-specific page as ERN's source-of-truth handoff. Keep LINK_ONLY unless separate embed/reuse permission and playback review justify a different mode.",
+      "replacesExpiredSourceId": "blouberg-table-mountain",
+      "resolvedTarget": {
+        "catalogId": "blouberg-table-mountain",
+        "mode": "EXTERNAL",
+        "officialPage": "https://www.tablemountainview.com/",
+        "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
+      }
+    },
+    {
+      "id": "perdido-nps-official-replacement",
+      "destination": "Perdido Key Beach, Florida, United States",
+      "provider": "U.S. National Park Service",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "DIRECT_OR_OFFICIAL_CURRENT_SOURCE_REPLACEMENT",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "evidenceUrls": [
+        "https://www.nps.gov/media/webcam/view.htm?id=81B4662E-1DD8-B71B-0B01D8503D5C98F4"
+      ],
+      "state": "RESOLVED_PROMOTED_LINK_ONLY",
+      "why": "An active NPS current-image webcam replaces the older CouchTourist dependency with an official public-land source.",
+      "next": "Maintain the source-specific page as ERN's source-of-truth handoff. Keep LINK_ONLY unless separate embed/reuse permission and playback review justify a different mode.",
+      "replacesExpiredSourceId": "perdido-key-beach",
+      "resolvedTarget": {
+        "catalogId": "perdido-key-beach",
+        "mode": "EXTERNAL",
+        "officialPage": "https://www.nps.gov/media/webcam/view.htm?id=81B4662E-1DD8-B71B-0B01D8503D5C98F4",
+        "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
+      }
+    },
+    {
+      "id": "pleasant-beach-hotel-official-replacement",
+      "destination": "Little Sodus Bay / Lake Ontario, New York, United States",
+      "provider": "Pleasant Beach Hotel",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "DIRECT_OR_OFFICIAL_CURRENT_SOURCE_REPLACEMENT",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "evidenceUrls": [
+        "https://www.pleasantbeach.com/about-pleasant-beach-hotel"
+      ],
+      "state": "RESOLVED_PROMOTED_LINK_ONLY",
+      "why": "Pleasant Beach Hotel's own PBH live-video webcam replaces the older CouchTourist dependency with the property provider's source.",
+      "next": "Maintain the source-specific page as ERN's source-of-truth handoff. Keep LINK_ONLY unless separate embed/reuse permission and playback review justify a different mode.",
+      "replacesExpiredSourceId": "pleasant-beach-lake-ontario",
+      "resolvedTarget": {
+        "catalogId": "pleasant-beach-lake-ontario",
+        "mode": "EXTERNAL",
+        "officialPage": "https://www.pleasantbeach.com/about-pleasant-beach-hotel",
         "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
       }
     }
