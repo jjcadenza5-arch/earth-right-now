@@ -7,7 +7,7 @@ export async function loadViatorPublicConfig({manifestUrl=DEFAULT_MANIFEST_URL,f
     const manifest=await response.json();
     const endpoint=String(manifest?.endpointUrl||"").replace(/\/$/,"");
     let url=null;try{url=new URL(endpoint)}catch{}
-    const deployedState=new Set(["DEPLOYED_GATED","DEPLOYED_AUTH_CONFIRMED_PUBLIC_OFF","DEPLOYED_VALIDATED_PUBLIC_OFF","DEPLOYED_PUBLIC"]).has(String(manifest?.status||""));
+    const deployedState=new Set(["DEPLOYED_GATED","DEPLOYED_AUTH_CONFIRMED_PUBLIC_OFF","PRODUCT_VALIDATION_CONFIRMED_PUBLIC_OFF","DEPLOYED_VALIDATED_PUBLIC_OFF","DEPLOYED_PUBLIC"]).has(String(manifest?.status||""));
     const enabled=deployedState&&manifest?.publicActivationAllowed===true&&url?.protocol==="https:";
     return{
       enabled,
