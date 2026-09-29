@@ -12,9 +12,9 @@
   "privacyUrl": "https://earthrightnow.app/privacy.html",
   "privacyPublished": true,
   "secretIsolation": true,
-  "observability": false,
-  "costGuard": false,
+  "observability": true,
+  "costGuard": true,
   "checkedAt": "2026-09-29T18:02:34Z",
-  "evidenceNote": "GitHub Actions run 36608946177 deployed ern-signals-api successfully. Operator-verified /health: ok=true, contributionsEnabled=false, durableStorage=true, both runtime secrets configured, rawNetworkIdentifiersStored=false, signals=0, reports=0, bounded state limits present, secretValuesExposed=false. Public activation remains OFF. Observability and cost-guard evidence remain unverified.",
+  "evidenceNote": "GitHub Actions run 36608946177 deployed ern-signals-api. Live /health verified service/state visibility, bounded counts and no secret exposure. Deployed code enforces per-subject rate limits plus hard caps of 5,000 active signals and 1,000 retained reports; /health reports those limits. Public contributions remain OFF and require an explicit product activation decision.",
   "publicActivationAllowed": false
 }
