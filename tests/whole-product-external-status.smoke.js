@@ -1,0 +1,18 @@
+import assert from "node:assert/strict";
+import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/whole-product-status.mjs"],{encoding:"utf8"});
+assert.equal(r.status,0,r.stderr);
+const x=JSON.parse(r.stdout);
+assert.equal(x.conclusion,"STABLE_BETA_READY");
+assert.equal(x.externalActivation.guideAI.backendDeployed,true);
+assert.equal(x.externalActivation.guideAI.publicGenerativeActive,false);
+assert.equal(x.externalActivation.guideAI.deterministicPublicFallback,true);
+assert.equal(x.externalActivation.earthSignals.publicActive,false);
+assert.equal(x.externalActivation.submissionTransport.publicActive,false);
+assert.equal(x.externalActivation.nowMomentMedia.publicActive,false);
+assert.ok(x.externalActivation.commercial.currentAffiliatePartners>=1);
+assert.ok(x.externalActivation.commercial.currentVerifiedOffers>=1);
+assert.equal(x.externalActivation.commercial.inventoryActive,true);
+assert.deepEqual(x.externalActivation.distribution.connectedChannels,[]);
+assert.equal(x.externalActivation.analytics.active,false);
+console.log("Whole-product status distinguishes deployed, active and gated external capabilities");
