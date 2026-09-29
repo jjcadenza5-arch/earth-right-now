@@ -83,7 +83,7 @@ async function refreshPulse(){
     pulse.innerHTML=response.signals.slice(0,12).map(s=>{
       const label=Object.entries(LABEL_TO_TYPE).find(([,type])=>type===s.type)?.[0]||"Visitor signal";
       const when=s.createdAt?new Date(s.createdAt).toLocaleTimeString([],{hour:"numeric",minute:"2-digit"}):"recently";
-      const location=s.nearPlaceVerified?" · marked near this place":"";
+      const location=s.nearPlaceSelfReported?" · visitor says they are near this place":"";
       return `<p><strong>${label}</strong> · ${when}${location}<br><small>Visitor report · not independently verified</small></p>`;
     }).join("");
   }finally{pulseRefresh.disabled=false}
