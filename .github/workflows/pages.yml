@@ -37,6 +37,7 @@ on:
       - "scripts/public-brand-facts-status.mjs"
       - "scripts/distribution-readiness.mjs"
       - "scripts/external-gate-register.mjs"
+      - "scripts/project-phase-status.mjs"
       - "data/distribution-channels.json"
       - "data/affiliate-partners.json"
       - "data/affiliate-platform-research.json"
@@ -241,6 +242,8 @@ jobs:
         run: npm --silent run distribution:status
       - name: External gate register integrity
         run: node scripts/external-gate-register.mjs
+      - name: Canonical project phase status
+        run: npm --silent run project:phase
       - name: Public discoverability preflight
         run: npm --silent run discoverability:preflight -- dist
       - name: Operator review page preflight
