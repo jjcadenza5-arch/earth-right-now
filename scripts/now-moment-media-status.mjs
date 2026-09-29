@@ -36,6 +36,7 @@ must(!worker.includes("x-ern-photo-source-bytes")&&!worker.includes("x-ern-photo
 must((worker.match(/cache-control":"private, no-store"/g)||[]).length>=2,"temporary public media must be no-store so reports/expiry take effect immediately");
 must(service.includes("metadata.listExpired")&&service.indexOf("objects.delete(r.objectKey)")<service.indexOf("metadata.delete(r.id)"),"retry-safe expiry cleanup ordering missing");
 must(state.includes('b.op==="list-expired"')&&state.includes('b.op==="delete"'),"retry-safe media state cleanup operations missing");
+must(state.includes("moderation != 'REJECTED'")&&worker.includes("publicVisible:enabled"),"moderators must retain visibility of active approved media for revocation");
 must(worker.includes("PENDING_REVIEW")&&worker.includes("published:false"),"upload must remain moderation-first");
 must(worker.includes("PUBLICATION_DISABLED")&&worker.includes('body.decision==="APPROVED"&&!enabled'),"feature-OFF state must block latent approvals");
 must(worker.includes("PUBLICATION_DISABLED")&&worker.includes('body.decision==="APPROVED"&&!enabled'),"pre-activation approvals must not become latent future publication");
