@@ -22,7 +22,11 @@ assert.equal(staging.programs["booking-com"].publicLinksEnabled,false);
 
 const deployment=JSON.parse(fs.readFileSync("data/viator-api-deployment.json","utf8"));
 assert.equal(deployment.publicActivationAllowed,false);
-assert.equal(deployment.sandboxKeyState,"ENABLED_PENDING_ACTIVATION");
-assert.equal(deployment.lastDiagnostic.destinationsStatus,401);
+assert.equal(deployment.sandboxKeyState,"ACTIVE_AUTH_CONFIRMED");
+assert.equal(deployment.lastDiagnostic.destinationsStatus,200);
+assert.equal(deployment.lastDiagnostic.sampleProductStatus,200);
+assert.equal(deployment.taxonomyVerified,true);
+assert.equal(deployment.productSearchVerified,false);
+assert.equal(deployment.affiliateAttributionVerified,false);
 
 console.log("Viator Auckland limited pilot: ok");
