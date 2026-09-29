@@ -26,7 +26,8 @@ const releaseTests=[
   "ern-stories.smoke.js",
   "guide-ai-routing.smoke.js",
   "guide-ai-deployment-readiness.smoke.js",
-  "destination-page-builder.smoke.js"
+  "destination-page-builder.smoke.js",
+  "local-directory-status.smoke.js"
 ];
 
 let failed=0;
