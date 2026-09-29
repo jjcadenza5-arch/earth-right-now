@@ -42,7 +42,9 @@ for(const [id,items] of map){
   const story=(preferred.story||("Available Earth Right Now views for "+title)).slice(0,220);
   const desc=currentItems.length
     ?story
-    :("ERN currently has provider source information for "+title+", but no in-horizon verification is available right now. Open the provider source directly or check back after ERN revalidates it.").slice(0,220);
+    :scheduledClosedItems.length
+      ?("ERN has a recently verified source for "+title+", but it is outside the provider's published live hours right now. Check the published schedule or return when the source is open.").slice(0,220)
+      :("ERN currently has provider source information for "+title+", but no active current-source verification is available right now. Open the provider source directly or check back after ERN revalidates it.").slice(0,220);
   const url=base+"places/"+encodeURIComponent(id)+"/";
   const lat=Number(preferred.lat),lon=Number(preferred.lon);
   const lastmod=latestDate(items);
