@@ -150,3 +150,12 @@ User preference: work autonomously in large batches and return only for genuine 
 - Shared source availability now understands provider-published live windows. Current discovery and playback actions fail closed outside scheduled hours; browser current-truth gating also respects schedules.
 - Current checkpoint at the evidence timestamp: 93 sources; 75 current checks; 74 current+healthy truth-ready; 16 current embeds; 15 expired embeds.
 - Final release validation: Pages run `36520033122`, head `94c1fdd1a1b84111e86a07c22cd34584e94ac7ba`, SUCCESS through Deploy.
+
+## Commercial + scheduled-source update — 2026-09-29
+- Travelpayouts green status confirmed on 2026-09-29 from the operator account: Earthrightnow project active, 26 programs available.
+- Payout method is not configured yet. Treat this as payout readiness only; do not claim payout-ready status.
+- Travelpayouts remains manual-tools-only; Drive automation, automatic link rewriting, automatic placement and paid ranking remain OFF.
+- Non-public commercial opportunity queue: Kyoto, Rome, Seoul, Rovaniemi, Dublin and Chicago. Exact tracked links and account coverage are required before public placement.
+- Nishiki Market is now published with its provider schedule 11:00–18:00 Asia/Tokyo. Current/live treatment fails closed outside that window.
+- Kyoto now has five published exact source-specific cameras: Fushimi Inari, Kifune Shrine, Kiyomizu-zaka, Hanamikoji and Nishiki Market.
+- Current catalog checkpoint: 94 sources; 76 current checks; 75 current+healthy; 17 current in-ERN embeds; 3 stale; 15 expired.
