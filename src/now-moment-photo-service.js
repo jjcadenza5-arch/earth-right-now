@@ -46,6 +46,8 @@ export async function reviewNowMomentPhoto({id,decision}={},context={}){
   const objects=assertNowMomentPhotoObjectStore(context.objectStore);
   const current=await metadata.get(id);
   if(!current)return{ok:false,reason:"PHOTO_NOT_FOUND"};
+  const now=context.now instanceof Date?context.now:new Date();
+  if(Date.parse(current.storageExpiryAt)<=now.getTime())return{ok:false,reason:"PHOTO_EXPIRED"};
   if(decision==="REJECTED"){
     await objects.delete(current.objectKey);
     await metadata.update(id,{moderation:"REJECTED",reported:false});
