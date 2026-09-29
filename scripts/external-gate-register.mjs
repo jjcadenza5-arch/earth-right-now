@@ -1,3 +1,4 @@
+import {GUIDE_AI_CAPABILITIES} from "../src/guide-ai-capabilities.js";
 import fs from "node:fs";
 
 const read=path=>JSON.parse(fs.readFileSync(path,"utf8"));
@@ -6,6 +7,9 @@ const affiliate=read("data/affiliate-activation.json");
 const earth=read("data/earth-signal-deployment.json");
 const submission=read("data/submission-transport.json");
 const media=read("data/now-moment-media-deployment.json");
+const guide=read("data/guide-ai-deployment.json");
+const realtime=read("data/realtime-context-sources.json");
+const seoulMappings=read("data/seoul-context-place-mappings.json");
 const distribution=read("data/distribution-channels.json");
 const analytics=fs.readFileSync("src/analytics-config.js","utf8");
 const now=Date.now();
@@ -66,6 +70,16 @@ if(earth.status!=="DEPLOYED"){
     eligibleNow:false,
     beforeTrigger:"NO_PUBLIC_ACTIVATION"
   });
+}else if(earth.publicActivationAllowed!==true){
+  add({
+    id:"earth-signals-public-activation",
+    lane:"PARTICIPATION",
+    state:"DEPLOYED_PUBLIC_OFF",
+    trigger:"Live deployment evidence is verified and an explicit product decision approves a limited Earth Signals pilot.",
+    nextEligibleAt:null,
+    eligibleNow:false,
+    beforeTrigger:"READ_ONLY"
+  });
 }
 if(submission.enabled!==true){
   add({
@@ -88,7 +102,43 @@ if(media.status!=="DEPLOYED"){
     eligibleNow:false,
     beforeTrigger:"PHOTO_UPLOAD_OFF"
   });
+}else if(media.publicActivationAllowed!==true){
+  add({
+    id:"now-moment-media-public-activation",
+    lane:"NOW_MOMENT_MEDIA",
+    state:"DEPLOYED_PUBLIC_OFF",
+    trigger:"Deployment health, private storage, moderation, cleanup and cost evidence pass, then an explicit product decision approves a still-photo pilot and a separate public UI activation.",
+    nextEligibleAt:null,
+    eligibleNow:false,
+    beforeTrigger:"PHOTO_UPLOAD_OFF"
+  });
 }
+const guideActivationReady=Object.entries(GUIDE_AI_CAPABILITIES).filter(([k])=>k!=="deterministicFallback").every(([,v])=>v===true);
+if(guide.status==="DEPLOYED"&&!guideActivationReady){
+  add({
+    id:"guide-ai-public-activation",
+    lane:"GUIDE_AI",
+    state:"BACKEND_DEPLOYED_CLIENT_DISABLED",
+    trigger:"An explicit product decision enables the public generative Guide after current cost, privacy, fallback and quality evidence is reviewed.",
+    nextEligibleAt:null,
+    eligibleNow:false,
+    beforeTrigger:"DETERMINISTIC_ONLY"
+  });
+}
+const seoul=realtime.sources?.find(x=>x.id==="seoul-realtime-city-data")||null;
+const seoulMap=seoulMappings.mappings?.find(x=>x.ernPlaceId==="seoul-plaza")||null;
+if(seoul&&(!seoulMap||seoulMap.realResponseValidated!==true||seoulMap.mayPublishContext!==true||seoulMappings.publicActivationAllowed!==true)){
+  add({
+    id:"seoul-context-validation-and-activation",
+    lane:"REALTIME_CONTEXT",
+    state:seoul.state||"PUBLIC_OFF",
+    trigger:"A Seoul Open Data API key is supplied, a real citydata_eng response validates the mapped provider area identity/timestamps, and explicit mapping/public activation approval is given.",
+    nextEligibleAt:null,
+    eligibleNow:false,
+    beforeTrigger:"KEEP_CONTEXT_PUBLIC_OFF"
+  });
+}
+
 if(unconnected.length){
   add({
     id:"official-social-channels",
