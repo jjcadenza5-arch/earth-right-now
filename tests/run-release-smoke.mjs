@@ -22,7 +22,8 @@ const releaseTests=[
   "catalog-release-recency.smoke.js",
   "source-availability-continuity.smoke.js",
   "url-safety.smoke.js",
-  "catalog-release-gate.smoke.js"
+  "catalog-release-gate.smoke.js",
+  "ern-stories.smoke.js"
 ];
 
 let failed=0;
