@@ -31,6 +31,7 @@ The Guide should be able to hand off into:
 
 ## Behavior principles
 - Use the same currentness, health, permission and truth rules as every other ERN surface.
+- Public Guide results must pass the same current-truth gate as ERN discovery: health, verification horizon, scheduled live hours and inside-ERN playback proof when applicable.
 - Prefer action plus short explanation over long chat.
 - Explain “why now” when useful.
 - Be warm and guide-like, not verbose or robotic.
