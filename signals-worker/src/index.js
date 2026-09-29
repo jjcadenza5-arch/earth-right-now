@@ -72,7 +72,8 @@ export default{
     if(url.pathname.startsWith("/internal/earth-signals")){
       const expected=String(env.ERN_SIGNAL_REVIEW_TOKEN||"");
       const got=String(request.headers.get("authorization")||"");
-      if(!expected||got!==`Bearer ${expected}`)return reply(401,{ok:false,reason:"UNAUTHORIZED"});
+      const constantTimeEqual=(a,b)=>{const x=String(a||""),y=String(b||""),n=Math.max(x.length,y.length);let diff=x.length^y.length;for(let i=0;i<n;i++)diff|=(x.charCodeAt(i%x.length||0)||0)^(y.charCodeAt(i%y.length||0)||0);return diff===0};
+      if(!expected||!constantTimeEqual(got,`Bearer ${expected}`))return reply(401,{ok:false,reason:"UNAUTHORIZED"});
       if(request.method==="GET"&&url.pathname==="/internal/earth-signals/reports"){
         const x=await stateCall(env,{op:"list-reports",now:Date.now()});
         return reply(200,x);
@@ -90,7 +91,9 @@ export default{
 
     if(!url.pathname.startsWith("/api/earth-signals"))return reply(404,{ok:false,reason:"NOT_FOUND"},origin);
     if(!origin)return reply(403,{ok:false,reason:"ORIGIN_NOT_ALLOWED"});
+    if(!enabled)return reply(503,{ok:false,mode:"READ_ONLY",reason:"EARTH_SIGNALS_NOT_ACTIVATED"},origin);
     if((+request.headers.get("content-length")||0)>4096)return reply(413,{ok:false,reason:"REQUEST_TOO_LARGE"},origin);
+    if(request.method==="GET"&&url.pathname==="/api/earth-signals"&&!String(url.searchParams.get("placeId")||"").trim())return reply(400,{ok:false,reason:"SIGNAL_PLACE_ID_REQUIRED"},origin);
     const subject=await rateSubject(request,env);
     if(!subject.ok)return reply(503,{ok:false,mode:"READ_ONLY",reason:subject.reason},origin);
     let knownPlaceIds;try{knownPlaceIds=await catalogPlaceIds(env)}catch(error){return reply(503,{ok:false,mode:"READ_ONLY",reason:error.code||"TRUSTED_CATALOG_UNAVAILABLE"},origin)}
