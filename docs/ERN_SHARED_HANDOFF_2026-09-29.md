@@ -202,3 +202,7 @@ Only interrupt the operator for:
 - Sydney Harbour research lane added: WebcamSydney currently presents a 24/7 Harbour/Opera House/Bridge view, but ERN keeps it research/link-first because explicit reuse/embed rights are not established.
 - Tokyo year-round research lane added: Tokyo Metropolitan Government's Tokyo Port DX publicly exposes live port road/floodgate cameras. Exact visitor-useful targets still need resolution; this does not yet solve the central-Tokyo visual gap.
 - `docs/CURRENT_HANDOFF.md` points to this file for any new chat.
+
+## Latest green release
+- Latest green continuity/business/source-research release: Pages run `36523426778`, SUCCESS through Deploy.
+- This run includes the guarded business-readiness state, Travelpayouts active/green status handling, Sydney Harbour research lane and Tokyo Port DX official live-camera research lane.
