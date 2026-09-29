@@ -20,6 +20,7 @@ must(Array.isArray(localDirectory),"local-directory registry must be an array");
 must(requireExists("scripts/participation-preflight.mjs"),"participation safety preflight missing");
 must(css.includes("world-map-natural-earth.svg"),"Living Atlas lost its local real-map base");
 must(index.includes('data-map-filter="local"')&&app.includes('map-pin local'),"Living Atlas lost reviewed local-place discovery");
+must(app.includes("mappableLocal")&&app.includes("not pinned until exact coordinates are verified"),"Living Atlas must not imply exact local-place coordinates");
 must(index.includes('id="atlasBeyond"')&&app.includes("renderAtlasBeyond(")&&css.includes("Atlas beyond-map coverage"),"Living Atlas lost honest unmapped-place discovery");
 must(app.includes('DYNAMIC_UNPINNED'),"Living Atlas must distinguish dynamic Earth views from missing-coordinate places");
 must(index.includes("atlas-legend")&&app.includes("coordinate provenance")&&css.includes("Atlas legend and coordinate honesty"),"Living Atlas lost coordinate-honesty cues");
