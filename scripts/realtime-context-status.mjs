@@ -17,6 +17,9 @@ for(const s of data.sources||[]){
    if(!s.api?.service||!s.api?.auth||!s.api?.officialDatasetUrl) fail.push(`${s.id}: verified API contract incomplete`);
    if(s.api?.auth==="NONE") fail.push(`${s.id}: auth state must not be guessed as NONE`);
    if(s.freshnessPolicy?.serverTimestampRequired!==true) fail.push(`${s.id}: server/source timestamp requirement missing`);
+   if(s.freshnessPolicy?.sourceTimestampMustBeProviderSupplied!==true) fail.push(`${s.id}: provider-supplied timestamp requirement missing`);
+   if(s.freshnessPolicy?.clientSuppliedTimestampMayCreateFreshness!==false) fail.push(`${s.id}: client time may create API freshness`);
+   if(!Number.isFinite(Number(s.freshnessPolicy?.maxFutureSkewMinutes))) fail.push(`${s.id}: future timestamp skew bound missing`);
  }
  if(kind==="OFFICIAL_PAGE_MANUAL_REFRESH"){
    if(!s.acquisition?.officialUrl) fail.push(`${s.id}: official manual-refresh URL missing`);
