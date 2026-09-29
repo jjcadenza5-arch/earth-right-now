@@ -95,6 +95,7 @@ on:
       - "scripts/commercial-placement-preflight.mjs"
       - "data/rollback-proof.json"
       - "scripts/build-release-snapshot.mjs"
+      - "scripts/public-module-integrity.mjs"
       - "scripts/build-destination-pages.mjs"
       - "scripts/build-operator-review.mjs"
       - "src/inside-ern-recovery.js"
@@ -170,6 +171,8 @@ jobs:
         run: node scripts/commercial-placement-preflight.mjs
       - name: Build static release
         run: npm run release:build
+      - name: Public module integrity
+        run: npm --silent run release:public-module-integrity -- dist
       - name: Public discoverability preflight
         run: npm --silent run discoverability:preflight -- dist
       - name: Operator review page preflight
