@@ -1,9 +1,11 @@
 User-agent: *
 Allow: /
 Disallow: /review/
+Disallow: /release-verification.html
 
 User-agent: OAI-SearchBot
 Allow: /
 Disallow: /review/
+Disallow: /release-verification.html
 
 Sitemap: https://earthrightnow.app/sitemap.xml
