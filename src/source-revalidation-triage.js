@@ -1,10 +1,12 @@
 import {buildRevalidationQueue} from "./revalidation-queue.js";
+import {staleMaintenanceClass} from "./stale-maintenance-class.js";
 function byId(report,key="results"){return new Map((report?.[key]||[]).filter(x=>x?.id).map(x=>[String(x.id),x]))}
 export function sourceRevalidationTriage(sources=[],{availability=null,continuity=null,limit=20}={}){
   const availabilityMap=byId(availability),continuityMap=byId(continuity,"rows");
   const items=buildRevalidationQueue(sources).map(entry=>{
     const s=entry.source,a=availabilityMap.get(String(s.id))||null,c=continuityMap.get(String(s.id))||null;
-    let lane="UNSAMPLED_RECHECK",action="RUN_OR_REVIEW_SOURCE_CHECK",urgency=30;
+    const staleClass=staleMaintenanceClass(s);
+    let lane="UNSAMPLED_RECHECK",action=staleClass.action,urgency=staleClass.urgency;
     if(s.featuredHold===true){lane="CURATION_HOLD";action="KEEP_DEFERRED_UNTIL_HOLD_REMOVED";urgency=0}
     else if(String(s.failureReason||"").startsWith("OFFICIAL_COLLECTION_WEBCAMS_OFFLINE_")){lane="DEFERRED_PROVIDER_OFFLINE";action="RECHECK_PROVIDER_COLLECTION_LATER";urgency=15}
     else if(String(s.failureReason||"").startsWith("VISITOR_PLAYBACK_REJECTED_")){lane="DEFERRED_PLAYBACK_REPROVE";action="REPROVE_ONLY_AFTER_PRIMARY_RECOVERY_OR_EXPLICIT_REVIEW";urgency=25}
@@ -21,7 +23,7 @@ export function sourceRevalidationTriage(sources=[],{availability=null,continuit
     }
     return{
       id:s.id,title:s.title,provider:s.provider||null,health:s.health,permission:s.permission,playback:s.playback,
-      queuePriority:entry.priority,reason:entry.reason,lane,action,urgency,
+      queuePriority:entry.priority,reason:entry.reason,maintenanceClass:staleClass.class,lane,action,urgency,
       availabilityOutcome:a?.outcome||null,continuityState:c?.state||null,
       sourceUrl:s.sourceUrl||null,embedUrl:s.embedUrl||null,
       catalogMutationAllowed:false,automaticHealthChangeAllowed:false,availabilityProvesLive:false
