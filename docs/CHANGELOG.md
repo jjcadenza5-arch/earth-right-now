@@ -1,3 +1,10 @@
+## 2026-09-29 — Reach 70 current sources and make recency debt visible
+- Revalidated five additional live/external sources plus Kaikōura current images.
+- Degraded off-season Chidori rather than treating April festival state as current in September; updated Tokyo opportunity status accordingly.
+- Added full smoke-suite execution to Pages deploys.
+- Added advisory source-recency summary output to every Pages release.
+- Current state: 70 current+healthy / 5 stale / 17 expired.
+
 ## 2026-09-28 — Advance source recency to 64 current-healthy records
 - Revalidated a further 25 external/current-image sources from explicit provider evidence.
 - Corrected Pattaya City to degraded (official dashboard: 0 live cameras) and reaffirmed Jungfrau as degraded (all ten webcams offline).
