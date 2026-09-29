@@ -39,13 +39,12 @@ const buildNow=new Date();
 const activePartners=new Set(affiliatePartners.map(affiliatePartner).filter(Boolean).filter(p=>activeAffiliatePartner(p,{now:buildNow.getTime()})).map(p=>p.id));
 const offerForPlace=id=>travelOffers.filter(o=>o?.placeId===id&&o?.verified===true&&currentTravelOffer(o,{now:buildNow.getTime()})&&(!o.affiliate||activePartners.has(String(o.partnerId||""))));
 const localForPlace=id=>localDirectory.filter(x=>x?.placeId===id&&currentLocalDirectoryEntry(x,{now:buildNow,maxAgeDays:90})&&safe(x.url));
+const scheduledClosedSource=s=>{const a=sourceAvailabilityState(s,{now:buildNow});return a.restricted&&!a.open&&recencyState(s,{now:buildNow})==="CURRENT_CHECK"&&s.health==="HEALTHY"&&embedPlaybackProofCurrent(s,{now:buildNow})};
+const placeIndexable=rows=>rows.some(s=>pageCurrentSource(s,buildNow))||rows.some(scheduledClosedSource);
 
 for(const [id,items] of map){
   const currentItems=items.filter(s=>pageCurrentSource(s,buildNow));
-  const scheduledClosedItems=items.filter(s=>{
-    const a=sourceAvailabilityState(s,{now:buildNow});
-    return a.restricted&&!a.open&&recencyState(s,{now:buildNow})==="CURRENT_CHECK"&&s.health==="HEALTHY"&&embedPlaybackProofCurrent(s,{now:buildNow});
-  });
+  const scheduledClosedItems=items.filter(scheduledClosedSource);
   const waitingItems=items.filter(s=>!currentItems.includes(s)&&!scheduledClosedItems.includes(s));
   const indexable=currentItems.length>0||scheduledClosedItems.length>0;
   const preferred=[...(currentItems.length?currentItems:items)].sort((a,b)=>(b.quality||0)-(a.quality||0))[0];
@@ -84,7 +83,7 @@ for(const [id,items] of map){
   };
 
   const related=[...map.entries()]
-    .filter(([otherId,rows])=>otherId!==id&&rows.some(s=>s.country===preferred.country))
+    .filter(([otherId,rows])=>otherId!==id&&rows.some(s=>s.country===preferred.country)&&placeIndexable(rows))
     .map(([otherId,rows])=>({id:otherId,title:[...rows].sort((a,b)=>(b.quality||0)-(a.quality||0))[0].title}))
     .slice(0,4);
   const relatedHtml=related.length
