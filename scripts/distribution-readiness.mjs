@@ -5,7 +5,7 @@ const pending=(x.channels||[]).filter(c=>c.state!=="CONNECTED");
 console.log(JSON.stringify({
   phase:"STAGE_N_ORGANIC_DISTRIBUTION",
   websiteShareReady:x.website?.storyDeepLinks===true&&x.website?.nativeWebShare===true&&x.website?.copyLinkFallback===true,
-  aiSearchReady:x.aiSearch?.robotsPublished===true&&x.aiSearch?.sitemapPublished===true&&x.aiSearch?.oaiSearchBotAllowed===true,
+  aiSearchReady:x.aiSearch?.robotsPublished===true&&x.aiSearch?.sitemapPublished===true&&x.aiSearch?.oaiSearchBotAllowed===true&&x.aiSearch?.structuredSiteIdentity===true,
   connectedChannels:connected.map(x=>x.id),
   externalConnectionRequired:pending.map(x=>x.id),
   safety:x.safety,
