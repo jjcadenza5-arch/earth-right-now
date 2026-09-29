@@ -57,9 +57,9 @@
   },
   {
     "id": "mpala-watering-hole",
-    "confirmation": "HUMAN_PLAYBACK",
+    "confirmation": "HISTORICAL_PLAYBACK_SUPERSEDED",
     "observedAt": "2026-09-21T21:25:00+07:00",
-    "reason": "Previously verified visitor playback evidence retained as operational observation.",
+    "reason": "Historical playback evidence applied to the former CouchTourist embed and is retained only as operational history. The catalog now points to the official Mpala Live external handoff, which is LINK_ONLY and does not rely on this old playback proof.",
     "httpStatus": 200
   },
   {
@@ -166,5 +166,19 @@
     "confirmation": "HUMAN_PLAYBACK",
     "observedAt": "2026-09-29T03:58:02.195Z",
     "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch bd51ac5733059f3f supplied by operator and exact source/embed target matched current catalog data."
+  },
+  {
+    "id": "mpala-watering-hole",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T04:58:00Z",
+    "reason": "Mpala Research Centre's official Mpala Live surface is current and exposes live wildlife-camera content with Explore.org credited as partner. Catalog now uses the official page as an external LINK_ONLY handoff; no inside-ERN playback claim is made."
+  },
+  {
+    "id": "chihshang-paradise-road",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T04:58:00Z",
+    "reason": "Taitung County Government's official tourism site currently lists Chihshang Paradise Road as a live camera and the Amazing Taitung county tourism channel hosts the exact live stream. Catalog now uses the official page as an external LINK_ONLY handoff."
   }
 ]
