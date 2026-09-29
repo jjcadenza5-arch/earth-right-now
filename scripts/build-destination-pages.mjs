@@ -149,4 +149,4 @@ const staticUrls=[
 ];
 const xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+[...staticUrls,...urls].map(u=>'  <url><loc>'+u.loc.replace(/&/g,"&amp;")+'</loc>'+(u.lastmod?'<lastmod>'+u.lastmod+'</lastmod>':'')+'</url>').join("\n")+'\n</urlset>\n';
 fs.writeFileSync("sitemap.xml",xml);
-console.log("Generated "+urls.length+" destination pages plus /places/ directory");
+const referenceOnlyCount=placeRows.filter(p=>!p.indexable).length;console.log("Generated "+urls.length+" indexable destination pages + "+referenceOnlyCount+" reference-only noindex pages plus /places/ directory");
