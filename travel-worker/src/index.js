@@ -59,7 +59,7 @@ function approvedMapping(registry,placeId){
 }
 export default{
  async fetch(request,env){
-  const url=new URL(request.url),origin=allowedOrigin(request,env),enabled=env.ERN_VIATOR_API_ENABLED==="true",publicProductsEnabled=env.ERN_VIATOR_PUBLIC_PRODUCTS_ENABLED==="true";
+  const url=new URL(request.url),origin=allowedOrigin(request,env),enabled=env.ERN_VIATOR_API_ENABLED==="true",publicProductsEnabled=env.ERN_VIATOR_PUBLIC_PRODUCTS_ENABLED==="true",productValidationEnabled=env.ERN_VIATOR_PRODUCT_VALIDATION_ENABLED==="true";
   if(request.method==="OPTIONS"){
     return origin?new Response(null,{status:204,headers:{
       "access-control-allow-origin":origin,
@@ -70,7 +70,7 @@ export default{
     }}):new Response(null,{status:403});
   }
   if(request.method==="GET"&&url.pathname==="/health"){
-    return reply(200,{ok:true,service:"ERN Travel API",viatorEnabled:enabled,apiKeyConfigured:Boolean(env.VIATOR_API_KEY),apiEnvironment:viatorBase(env).includes("sandbox")?"SANDBOX":"PRODUCTION",mappingMode:"EXPLICIT_ONLY",publicActivationAllowed:publicProductsEnabled,secretValuesExposed:false},origin);
+    return reply(200,{ok:true,service:"ERN Travel API",viatorEnabled:enabled,apiKeyConfigured:Boolean(env.VIATOR_API_KEY),apiEnvironment:viatorBase(env).includes("sandbox")?"SANDBOX":"PRODUCTION",mappingMode:"EXPLICIT_ONLY",publicActivationAllowed:publicProductsEnabled,productValidationEnabled,secretValuesExposed:false},origin);
   }
   if(!origin)return reply(403,{ok:false,reason:"ORIGIN_NOT_ALLOWED"});
   if(!enabled)return reply(503,{ok:false,reason:"VIATOR_API_DISABLED"},origin);
@@ -106,6 +106,54 @@ export default{
       }))},origin,"public, max-age=3600");
     }catch(error){
       return reply(503,{ok:false,reason:String(error?.message||"VIATOR_DESTINATIONS_FAILED")},origin);
+    }
+  }
+
+  if(request.method==="POST"&&url.pathname==="/api/viator/product-validation"){
+    if(!productValidationEnabled)return reply(404,{ok:false,reason:"NOT_FOUND"},origin);
+    const validationToken=String(env.ERN_VIATOR_VALIDATION_TOKEN||"");
+    const suppliedToken=String(request.headers.get("x-ern-validation-token")||"");
+    if(!validationToken)return reply(503,{ok:false,reason:"VALIDATION_TOKEN_NOT_CONFIGURED"},origin);
+    if(!suppliedToken||suppliedToken!==validationToken)return reply(403,{ok:false,reason:"VALIDATION_NOT_AUTHORIZED"},origin);
+    const expectedPid=String(env.VIATOR_AFFILIATE_PID||"").trim();
+    if(!expectedPid)return reply(503,{ok:false,reason:"AFFILIATE_PID_NOT_CONFIGURED"},origin);
+    let input;try{input=await request.json()}catch{return reply(400,{ok:false,reason:"INVALID_JSON"},origin)}
+    const checked=validateViatorSearchRequest({...input,count:Math.min(Number(input?.count||3),3)});
+    if(!checked.valid)return reply(400,{ok:false,reason:"INVALID_REQUEST",issues:checked.issues},origin);
+    let registry;try{registry=await mappingRegistry(env)}catch(error){return reply(503,{ok:false,reason:String(error?.message||"MAPPING_UNAVAILABLE")},origin)}
+    const mapping=approvedMapping(registry,checked.value.placeId);
+    if(!mapping)return reply(404,{ok:false,reason:"PLACE_NOT_MAPPED"},origin);
+    try{
+      const campaign=viatorCampaignValue(checked.value.placeId);
+      const data=await viatorFetch("/products/search?campaign-value="+encodeURIComponent(campaign),{env,method:"POST",language:checked.value.language,body:{
+        filtering:{destination:String(mapping.viatorDestinationId)},
+        sorting:{sort:"DEFAULT"},
+        pagination:{start:1,count:checked.value.count},
+        currency:checked.value.currency
+      }});
+      const products=(Array.isArray(data?.products)?data.products:[]).slice(0,checked.value.count).map(publicViatorProduct).filter(x=>x.productCode&&x.title&&x.productUrl);
+      const attribution=products.map(product=>{
+        let pidMatches=false;
+        try{pidMatches=new URL(product.productUrl).searchParams.get("pid")===expectedPid}catch{}
+        return{productCode:product.productCode,pidMatches,hasSafeViatorUrl:Boolean(product.productUrl)};
+      });
+      const productSearchVerified=products.length>0;
+      const affiliateAttributionVerified=productSearchVerified&&attribution.every(x=>x.pidMatches&&x.hasSafeViatorUrl);
+      return reply(200,{
+        ok:true,
+        validationOnly:true,
+        publicActivationAllowed:false,
+        placeId:checked.value.placeId,
+        destination:{id:String(mapping.viatorDestinationId),name:String(mapping.viatorDestinationName||"")},
+        campaign,
+        productSearchVerified,
+        affiliateAttributionVerified,
+        attribution,
+        products,
+        secretValuesExposed:false
+      },origin);
+    }catch(error){
+      return reply(503,{ok:false,reason:String(error?.message||"VIATOR_PRODUCT_VALIDATION_FAILED")},origin);
     }
   }
 
