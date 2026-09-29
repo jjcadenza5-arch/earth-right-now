@@ -1,7 +1,5 @@
-import {exactDestinationCandidates} from "./viator-destination-match.js";
 import {candidateEvidenceStatus} from "./candidate-evidence-binding.js";
 import {embedPlaybackProofCurrent} from "./playback-proof.js";
-import {currentDiscoveryPool} from "./discovery-eligibility.js";
 const $=s=>document.querySelector(s);
 const GATES=[
  {key:"browser",title:"Desktop browser",steps:["Open Home, Watch Earth, Explore, Local Earth, Living Atlas and My Earth.","Open ERN Guide and try at least one place request.","Open and close the immersive viewer.","Open the separate Now Moments and Places & Cameras pages.","Verify Previous/Next and source links.","Confirm controls are reachable and layout is not broken."]},
@@ -56,60 +54,4 @@ $("#copyPhase1").onclick=async()=>{
  ].join("\n");
  try{await navigator.clipboard.writeText(summary);$("#copyPhase1").textContent="Copied";setTimeout(()=>$("#copyPhase1").textContent="Copy Phase 1 result",1200)}
  catch{command.textContent=summary}
-};
-
-const GUIDE_AI_ENDPOINT="https://ern-guide-api.jjcadenza6.workers.dev/api/guide";
-const GUIDE_AI_VERSION="2026-09-25.v2";
-const guideAiTestResult=$("#guideAiTestResult");
-function requestId(){const bytes=crypto.getRandomValues(new Uint8Array(16));return"req_"+[...bytes].map(x=>x.toString(16).padStart(2,"0")).join("")}
-$("#runGuideAiTest").onclick=async()=>{
- const button=$("#runGuideAiTest");button.disabled=true;guideAiTestResult.textContent="Running one grounded AI request…";
- try{
-  const healthy=currentDiscoveryPool(sources,{now:new Date()}).filter(s=>s.id&&embedPlaybackProofCurrent(s,{now:new Date()})).slice(0,4).map(s=>s.id);
-  if(!healthy.length)throw new Error("No current ERN sources available for the controlled test.");
-  const payload={version:GUIDE_AI_VERSION,query:"I have two hours before dinner and want somewhere peaceful with evening atmosphere. Which of these ERN places would you suggest, and why?",language:"en",sourceIds:healthy,requestId:requestId()};
-  const response=await fetch(GUIDE_AI_ENDPOINT,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(payload)});
-  const body=await response.json().catch(()=>({}));
-  guideAiTestResult.textContent=JSON.stringify({httpStatus:response.status,...body},null,2);
- }catch(error){guideAiTestResult.textContent=JSON.stringify({ok:false,error:String(error?.message||error)},null,2)}
- finally{button.disabled=false}
-};
-
-
-const VIATOR_API_ENDPOINT="https://ern-travel-api.jjcadenza6.workers.dev";
-const viatorTaxonomyTestResult=$("#viatorTaxonomyTestResult");
-$("#runViatorTaxonomyTest").onclick=async()=>{
- const button=$("#runViatorTaxonomyTest");
- button.disabled=true;
- viatorTaxonomyTestResult.textContent="Loading official Viator destination taxonomy…";
- try{
-  const response=await fetch(VIATOR_API_ENDPOINT+"/api/viator/destinations",{headers:{accept:"application/json"}});
-  const body=await response.json().catch(()=>({}));
-  if(!response.ok)throw new Error(body?.reason||("HTTP "+response.status));
-  const all=Array.isArray(body?.destinations)?body.destinations:[];
-  const rows=exactDestinationCandidates(all,{name:"Auckland",country:"New Zealand",types:["CITY","TOWN"]});
-  viatorTaxonomyTestResult.textContent=JSON.stringify({
-    httpStatus:response.status,
-    exactMatchCount:rows.length,
-    countryConfirmedCount:rows.filter(x=>x.countryMatch).length,
-    candidates:rows
-  },null,2);
- }catch(error){
-  viatorTaxonomyTestResult.textContent=JSON.stringify({ok:false,error:String(error?.message||error)},null,2);
- }finally{button.disabled=false}
-};
-
-
-const viatorDiagnosticResult=$("#viatorDiagnosticResult");
-$("#runViatorDiagnostic").onclick=async()=>{
- const button=$("#runViatorDiagnostic");
- button.disabled=true;
- viatorDiagnosticResult.textContent="Checking Viator sandbox access…";
- try{
-  const response=await fetch(VIATOR_API_ENDPOINT+"/api/viator/diagnostics",{headers:{accept:"application/json"}});
-  const body=await response.json().catch(()=>({}));
-  viatorDiagnosticResult.textContent=JSON.stringify({httpStatus:response.status,...body},null,2);
- }catch(error){
-  viatorDiagnosticResult.textContent=JSON.stringify({ok:false,error:String(error?.message||error)},null,2);
- }finally{button.disabled=false}
 };
