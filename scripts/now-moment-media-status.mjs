@@ -23,6 +23,7 @@ must(policy.includes("videoEnabled:false"),"video must remain disabled");
 must(metadata.includes("EXIF_PRESENT")&&metadata.includes("XMP_PRESENT")&&metadata.includes("GPS_METADATA_SUSPECTED"),"JPEG metadata rejection incomplete");
 must(metadata.includes("PNG_METADATA_CHUNK")&&metadata.includes("WEBP_METADATA_CHUNK"),"PNG/WebP metadata rejection incomplete");
 must(metadata.includes("matchesAscii")&&!metadata.includes("String.fromCharCode"),"metadata scan must avoid whole-image string conversion");
+must(metadata.includes("nowMomentImageDimensions")&&service.includes("IMAGE_DIMENSIONS_MISMATCH"),"server-side encoded image dimension verification missing");
 must(service.includes("moderationRequired:true")&&service.includes("reportNowMomentPhoto")&&service.includes("cleanupNowMomentPhotos"),"moderation/report/cleanup service contract incomplete");
 must(!service.includes("rateLimiter.check(")&&service.includes("rateLimiter.commit("),"photo rate limiting must use a single atomic reservation/commit");
 must(worker.includes("readBodyBounded")&&worker.includes("STORED_SIZE_MISMATCH"),"bounded upload body verification missing");
