@@ -195,3 +195,13 @@ const partialHoldBrief=operationsOperatorBrief({
 });
 assert.match(partialHoldBrief,/Local autonomous work remains open in: earthSignalsLocallyComplete/);
 assert.match(partialHoldBrief,/do not reopen lanes whose hold check already passes/);
+
+const mediaBrief=operationsOperatorBrief({
+ snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ nowMomentMedia:{state:"PREPARED_NOT_DEPLOYED_PUBLIC_OFF",prepared:true,deployed:false,publicActivationAllowed:false,policy:{ttlMinutes:45,videoEnabled:false,automaticPublicationAllowed:false}}
+});
+assert.match(mediaBrief,/Now Moment media readiness/);
+assert.match(mediaBrief,/still photos only/);
+assert.match(mediaBrief,/public activation OFF/);
+assert.match(mediaBrief,/video OFF/);
