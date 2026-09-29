@@ -66,7 +66,7 @@ assert.equal(inside.scheduledWaiting.length,0);
 console.log("ERN research review queue respects provider-published live windows");
 
 const rovaniemi=researchReviewQueue([
- {id:"youtube-rovaniemi-santa-claus-village",provider:"Santa Claus Village / City of Rovaniemi",platform:"YouTube",playbackReview:"REQUIRED_ON_DEPLOYED_ERN",promotion:"BLOCKED_UNTIL_SPECIFIC_REVIEW"}
+ {id:"youtube-rovaniemi-santa-claus-village",provider:"Santa Claus Village / City of Rovaniemi",platform:"YouTube",playbackReview:"HUMAN_PLAYBACK_REQUIRED",promotion:"BLOCKED_UNTIL_SPECIFIC_REVIEW"}
 ],{providerFamilyReport:{items:[{
  provider:"Santa Claus Village / City of Rovaniemi",
  termsEvidenceState:"CURRENT",safeUsage:true,networkFamily:"youtube.com",
