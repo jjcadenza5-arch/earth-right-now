@@ -73,6 +73,7 @@ on:
       - "offline.html"
       - "release-verification.html"
       - "src/release-verification-console.js"
+      - "src/candidate-evidence-binding.js"
       - "robots.txt"
       - "sitemap.xml"
       - "CNAME"
