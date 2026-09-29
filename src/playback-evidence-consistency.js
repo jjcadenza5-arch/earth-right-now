@@ -38,7 +38,7 @@ export function playbackEvidenceConsistency(sources=[],observations=[],{now=new 
     if(marker||history.length||failureAt)rows.push({id:source.id,title:source.title,playback:source.playback,playbackVerifiedAt:marker,observationKind:humanObs?.confirmation||obs?.confirmation||null,latestObservationKind:obs?.confirmation||null,observedAt,failureAt,humanSupersededByFailure,freshHuman});
   }
   const known=new Set((sources||[]).map(x=>String(x.id)));
-  for(const obs of observations||[])if(obs?.id&&!known.has(String(obs.id)))issues.push({id:String(obs.id),code:"UNKNOWN_SOURCE_OBSERVATION",observedAt:normalizeIso(obs.observedAt)});
+  for(const obs of observations||[])if(obs?.id&&obs?.scope!=="RESEARCH_GAP"&&!known.has(String(obs.id)))issues.push({id:String(obs.id),code:"UNKNOWN_SOURCE_OBSERVATION",observedAt:normalizeIso(obs.observedAt)});
   return{
     generatedAt:new Date(n).toISOString(),
     freshHours,toleranceMinutes,
