@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T02:15:00Z",
+  "generatedAt": "2026-09-29T04:40:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -431,6 +431,35 @@
         "https://mpala.org/"
       ],
       "why": "Replaces an expired CouchTourist dependency with an independent Mpala/Explore live-camera path while keeping exact player permission and playback unresolved."
+    },
+    {
+      "id": "sydney-harbour-webcamsydney",
+      "priority": "P1_DISTINCT_CITY_VIEW",
+      "placeGroup": "Sydney Harbour / Opera House / Harbour Bridge",
+      "country": "Australia",
+      "provider": "WebcamSydney",
+      "candidateType": "INDEPENDENT_24_7_LIVE_HARBOUR_LINK_FIRST",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "activities",
+        "culture",
+        "transport"
+      ],
+      "evidenceUrls": [
+        "https://webcamsydney.com/live-webcam-sydney/",
+        "https://webcamsydney.com/"
+      ],
+      "observedTargets": [
+        "Sydney Opera House",
+        "Circular Quay",
+        "The Rocks",
+        "Sydney Harbour Bridge",
+        "Sydney CBD skyline"
+      ],
+      "state": "CURRENT_LIVE_SOURCE_CONFIRMED_RIGHTS_LINK_FIRST_RESEARCH",
+      "why": "WebcamSydney describes a 24/7 live Sydney Harbour view covering the Opera House, Harbour Bridge, Circular Quay and CBD. This adds distinct city/harbour value beyond ERN's existing Coogee beach window.",
+      "next": "Keep research/link-first. The provider marks its content copyright-protected and ERN has no explicit reuse/embed permission yet. Do not embed, restream or copy footage without a source-specific permission path."
     }
   ],
   "guardrails": {
