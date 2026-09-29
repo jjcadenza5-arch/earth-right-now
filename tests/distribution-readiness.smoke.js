@@ -1,11 +1,22 @@
+import assert from "node:assert/strict";
 import fs from "node:fs";
 import {spawnSync} from "node:child_process";
-const x=JSON.parse(fs.readFileSync("data/distribution-channels.json","utf8"));
-console.assert(x.safety?.inventAccountClaimsAllowed===false);
-console.assert(x.safety?.automaticPostingAllowed===false);
-console.assert((x.channels||[]).every(c=>c.state==="NOT_CONNECTED"),"No social account may be claimed before real connection evidence exists");
+
+const state=JSON.parse(fs.readFileSync("data/distribution-channels.json","utf8"));
+assert.equal(state.safety?.inventAccountClaimsAllowed,false);
+assert.equal(state.safety?.automaticAccountCreationAllowed,false);
+assert.equal(state.safety?.automaticPostingAllowed,false);
+assert.equal(state.safety?.paidPromotionAssumed,false);
+assert.equal(state.safety?.commercialRankingAffected,false);
+assert.ok((state.channels||[]).every(c=>c.state==="CONNECTED"||c.automaticPostingAllowed===false));
+
 const r=spawnSync(process.execPath,["scripts/distribution-readiness.mjs"],{encoding:"utf8"});
-console.assert(r.status===0);const out=JSON.parse(r.stdout);
-console.assert(out.websiteShareReady===true&&out.aiSearchReady===true);
-console.assert(out.externalConnectionRequired.includes("instagram")&&out.externalConnectionRequired.includes("line"));
-console.log("Stage N distribution readiness stays truthful about external social accounts");
+assert.equal(r.status,0,r.stderr||"distribution readiness failed");
+const out=JSON.parse(r.stdout);
+assert.equal(out.websiteShareReady,true);
+assert.equal(out.aiSearchReady,true);
+assert.equal(out.ok,true);
+assert.ok(out.externalConnectionRequired.includes("instagram"));
+assert.ok(out.externalConnectionRequired.includes("line"));
+assert.deepEqual(out.connectedChannels,[]);
+console.log("Organic distribution stays search-ready while social account claims remain fail-closed");
