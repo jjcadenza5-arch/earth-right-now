@@ -84,7 +84,8 @@
     "test:release": "node tests/run-release-smoke.mjs",
     "release:public-module-integrity": "node scripts/public-module-integrity.mjs",
     "participation:media-status": "node scripts/now-moment-media-status.mjs",
-    "project:phase": "node scripts/project-phase-status.mjs"
+    "project:phase": "node scripts/project-phase-status.mjs",
+    "project:autonomous-status": "node scripts/autonomous-work-status.mjs"
   },
   "engines": {
     "node": ">=20"
