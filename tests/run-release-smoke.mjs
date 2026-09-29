@@ -62,6 +62,9 @@ const releaseTests=[
   "travel-planning-client.smoke.js",
   "release-artifact-assets.smoke.js",
   "operator-console-network-safety.smoke.js",
+  "operations-operator-brief.smoke.js",
+  "operations-brief-wiring.smoke.js",
+  "operations-packet-integrity.smoke.js",
   "release-candidate.smoke.js",
   "candidate-evidence-binding.smoke.js"
 ];
