@@ -503,7 +503,7 @@ function distanceKm(a,b){
 }
 function renderContext(s){
  const box=$("#viewerContext"),story=$("#viewerStory"),tags=$("#viewerTags"),near=$("#nearbyList"),related=$("#relatedList");
- story.textContent=s.story||"A current window onto this place.";const ms=momentSignal(s);$("#viewerMomentWhy").textContent="Look now · "+ms.reason;
+ const current=currentTruthClaim(s);story.textContent=s.story||(current?"A current window onto this place.":"A provider source for this place, currently awaiting ERN recheck.");const ms=momentSignal(s);$("#viewerMomentWhy").textContent=current?("Look now · "+ms.reason):"Reference only · ERN is not treating this source as current.";
  tags.replaceChildren();
  const tagValues=[momentLabel(s),publicTruth(s),...(s.categories||[]).slice(0,3)];
  const confidence=$("#sourceConfidence"),age=verificationAgeDays(s);confidence.textContent=[verificationLabel(s),s.provider?("Source: "+s.provider):"",s.health==="HEALTHY"?"Catalog health: healthy":"Catalog health: "+String(s.health||"unknown").toLowerCase()].filter(Boolean).join(" · ");confidence.classList.toggle("stale",!currentTruthClaim(s));
