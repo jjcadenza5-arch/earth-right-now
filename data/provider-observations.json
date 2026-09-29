@@ -293,5 +293,29 @@
     "observedAt": "2026-09-29T07:42:00Z",
     "reason": "Chiang Mai Provincial Administrative Organization's official Smart City CCTV center is live as a portal, but all four listed public cameras still report STANDBY / WAITING FOR FEED. ERN keeps Chiang Mai as an honest visual gap and does not create a LIVE source.",
     "sourceUrl": "https://www.chiangmaipao.go.th/all_cctv.php"
+  },
+  {
+    "id": "pattaya-city-live",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_PORTAL_600_TOTAL_ZERO_PUBLIC_LIVE_VIEW",
+    "observedAt": "2026-09-29T07:32:00Z",
+    "reason": "Pattaya City's official CCTV Streaming portal reports Total 600 cameras, but the current public Live View and Camera List both show 0 cameras. ERN therefore keeps the source DEGRADED and does not refresh lastSuccessfulCheck.",
+    "sourceUrl": "https://livestream.pattaya.go.th/"
+  },
+  {
+    "id": "chidori-sakura",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SURFACE_STILL_APRIL_2026_OFF_SEASON",
+    "observedAt": "2026-09-29T07:32:00Z",
+    "reason": "Visit Chiyoda still shows the 2026 Sakura Festival period and April 9 blooming/congestion state in late September. ERN keeps this source DEGRADED/off-season and does not treat it as a current Tokyo window.",
+    "sourceUrl": "https://visit-chiyoda.tokyo/en/sakura/"
+  },
+  {
+    "id": "tbilisi-mtkvari-river",
+    "httpStatus": 200,
+    "confirmation": "PROVIDER_CAMERA_PAGE_ACTIVE_EXPLICIT_LIVE_WORDING_NOT_REESTABLISHED",
+    "observedAt": "2026-09-29T07:32:00Z",
+    "reason": "EarthCam's Mtkvari River Cam page is active and identifies the exact Mtkvari River/Narikala view, but current page text does not provide stronger explicit live/current wording sufficient for ERN to refresh lastSuccessfulCheck. Source remains HEALTHY but stale pending editorial live/current proof.",
+    "sourceUrl": "https://www.earthcam.com/world/georgia/tbilisi/mtkvaririver/?cam=mtkvaririver"
   }
 ]
