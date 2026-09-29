@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T04:58:00Z",
+  "generatedAt": "2026-09-29T05:16:00Z",
   "mission": "See before you go",
   "productTest": "Would this current view help someone understand the place better before deciding whether, when, or how to go?",
   "hardGates": [
@@ -68,7 +68,7 @@
       "mayOverrideTruth": false,
       "mayOverridePermission": false,
       "mayOverrideQuality": false,
-      "currentSignal": "Expired embed debt remains concentrated in older CouchTourist records, while Chihshang Paradise Road and Mpala Watering Hole have now been moved to independent official/current LINK_ONLY source paths. Continue replacing concentrated dependencies source-by-source without weakening proof or permission gates."
+      "currentSignal": "Six catalog records have now moved off CouchTourist to independent official/current LINK_ONLY paths: Chihshang Paradise Road, Mpala Watering Hole, Cold Lake Marina, Metung/Gippsland Lakes, Hale Pau Hana, and Waikīkī South Shore. At the 2026-09-29 continuation checkpoint this reduces expired recency checks from 15 to 9 while keeping the catalog at 94 sources. Remaining CouchTourist records should be diversified selectively without weakening truth, permission, currentness, or quality gates."
     }
   }
 }
