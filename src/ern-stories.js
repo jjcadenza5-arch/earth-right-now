@@ -1,6 +1,7 @@
 import {currentDiscoveryPool} from "./discovery-eligibility.js";
 import {solarMoment,beautifulNowScore} from "./solar-moment.js";
 import {mediaIdentity} from "./media-identity.js";
+import {embedPlaybackProofCurrent} from "./playback-proof.js";
 
 function placeLabel(source){
   return String(source?.place||source?.region||source?.title||"this place").trim();
@@ -52,7 +53,7 @@ export function storyCard(source,{now=new Date()}={}){
 }
 export function buildStoryDeck(sources,{now=new Date(),limit=9}={}){
   const pool=currentDiscoveryPool(sources||[],{now})
-    .filter(s=>s?.featuredHold!==true)
+    .filter(s=>s?.featuredHold!==true&&embedPlaybackProofCurrent(s,{now}))
     .sort((a,b)=>beautifulNowScore(b,now)-beautifulNowScore(a,now)||String(a.id).localeCompare(String(b.id)));
   const usedMedia=new Set(),usedPlaces=new Set(),out=[];
   const canUse=source=>{
