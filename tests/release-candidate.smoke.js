@@ -7,6 +7,9 @@ console.assert(c.releasable===true,`fully current catalog plus fresh evidence sh
 console.assert(c.inventory.insideERN===1&&c.recheckIds.length===0);
 console.assert(c.inventory.currentIds.includes("inside"),"candidate inventory must use the same audit clock as release evidence");
 console.assert(releaseCandidateText(c).includes("READY"));
+const sha="a".repeat(40);const boundEvidence=Object.fromEntries(["browser","mobile","providerPlayback","accessibility","performance","rollback"].map(key=>[key,{ok:true,note:key+" checked",checkedAt:now,commit:sha}]));
+const bound=buildReleaseCandidate([base],boundEvidence,{now:Date.parse(now),candidateCommit:sha});console.assert(bound.releasable===true&&bound.evidenceBinding.allBound,"candidate-bound evidence should release");
+const mismatch=buildReleaseCandidate([base],boundEvidence,{now:Date.parse(now),candidateCommit:"b".repeat(40)});console.assert(mismatch.releasable===false&&mismatch.evidenceBinding.unbound.length===6,"different candidate must not inherit old human evidence");
 const blocked=buildReleaseCandidate([base],{},{now:Date.parse(now)});
 console.assert(!blocked.releasable&&blocked.publication.remaining.length===6,"missing real-world evidence must block candidate");
 console.log("ERN release candidate smoke checks passed");
