@@ -52,6 +52,7 @@ Resolved/active directions:
 - Yellowstone Old Faithful has an exact active NPS live-webcam page staged link-first/research-only.
 - Yosemite official current webcams are valuable but permission-gated: the official NPS page directs third parties to a Yosemite Conservancy usage agreement before featuring webcam imagery.
 - Rovaniemi / Santa Claus Village and Yellowstone / Old Faithful are now promoted as EXTERNAL_LIVE / LINK_ONLY; maintain them rather than duplicating their destination coverage.
+- Rovaniemi diversification candidate: exact City of Rovaniemi YouTube player `Cp4RRAEgpeU` is staged RESEARCH_ONLY from the official Santa Claus Village page. It may become an independent inside-ERN path only after deployed human playback and exact-source approval.
 - Paris now has an exact official Eiffel Tower live visitor-context lane (attendance/opening/summit conditions/weather), but this remains context-only. Paris still has no verified current visual window in ERN.
 
 ## Commercial state
@@ -112,7 +113,7 @@ User preference: work autonomously in large batches and return only for genuine 
 - For Places copy now explicitly invites any visitor-interest place where today's flowers, crowds, weather, visibility, animals, beach conditions, activity or atmosphere can help someone decide whether, when or how to go.
 - Seoul Real-time City Data remains a separate PUBLIC-OFF context-data research lane, never camera truth.
 - Current catalog count at this handoff revision: 93 sources. Always read current `data/sources.json` rather than relying on a frozen count.
-- Latest recency state as of 2026-09-29 morning: 70 current+healthy, 5 stale, 17 expired under ERN's existing horizons. This is maintenance debt, not permission to relax truth windows.
+- Latest recency state: 72 current+healthy, 4 stale, 16 expired under ERN's existing horizons. This is maintenance debt, not permission to relax truth windows.
 - Eight high-value external/current sources were freshly revalidated first: Coogee/Randwick, Waikiki, Kīlauea, Yellowstone, San Diego Zoo, Chamonix, Whistler Blackcomb and New York skyline.
 - A second six-source recheck batch refreshed Diano Marina, Sottomarina/Chioggia, Torres del Paine, and SANParks Boulders/Addo/Orpen.
 - Generated destination pages now visibly separate current verified views from provider sources awaiting recheck, including recency-aware SEO/directory copy.
@@ -122,6 +123,8 @@ User preference: work autonomously in large batches and return only for genuine 
 - Freshness evidence is now required by the catalog metadata gate; older records were completed only from their existing successful-check timestamps, without upgrading source truth.
 - Context expiry smoke checks now run in Pages CI so stale manual context cannot remain current.
 - Pages deploy now runs the full ERN smoke suite before release and logs an advisory source-recency maintenance summary on every deploy.
+- All 16 expired records are CouchTourist embeds. Treat this as provider-concentration maintenance debt; do not bulk-renew or weaken the 24h embed proof window merely to improve counts.
+- Recency reporting now includes provider debt concentration and can flag when replacement/diversification research is warranted.
 - Revalidation triage now routes stale/expired work by evidence need: EMBED → deployed playback recheck; LIVE_IMAGE → current-image recheck; EXTERNAL → editorial/provider-page recheck.
 - Pattaya City is now DEGRADED because its official CCTV dashboard reports 0 live cameras; Jungfrau remains DEGRADED because all ten official webcams are offline.
 - Chidori-ga-fuchi is now DEGRADED/off-season because the official Sakura surface still shows April 9 state in late September; Tokyo is therefore a current visual gap outside sakura season.
