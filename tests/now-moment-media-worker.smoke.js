@@ -14,6 +14,10 @@ console.assert(worker.includes("directBucketPublicAccess:false"),"Worker must st
 console.assert(worker.includes("automaticPublicationAllowed:false"),"Worker must prohibit automatic publication");
 console.assert(worker.includes("ERN_MEDIA_REVIEW_TOKEN")&&worker.includes("ERN_MEDIA_RATE_HMAC_KEY"),"Media runtime secrets missing");
 console.assert(worker.includes("PENDING_REVIEW")&&worker.includes("published:false"),"Upload must remain moderation-first");
+console.assert(worker.includes("readBodyBounded")&&worker.includes("DERIVATIVE_TOO_LARGE"),"Worker must stream uploads through a hard stored-byte ceiling");
+console.assert(worker.includes("STORED_SIZE_MISMATCH"),"Worker must verify declared stored size against actual body bytes");
+console.assert(worker.includes("mediaExtension")&&worker.includes('"webp"')&&worker.includes('"png"'),"Object keys must preserve normalized media type");
+console.assert(worker.includes("publicEligible")&&worker.includes("published:enabled&&Boolean(result.public)"),"Review response must distinguish public eligibility from active publication");
 console.assert(worker.includes("x-content-type-options")&&worker.includes("objectStore.get"),"Approved media proxy boundary missing");
 console.assert(state.includes("MAX_RETAINED_MEDIA=500")&&state.includes("MEDIA_STORAGE_CAPACITY"),"Media storage capacity bound missing");
 console.assert(state.includes("MAX_PHOTOS_PER_DAY=3")&&state.includes("MAX_PHOTOS_PER_PLACE_DAY=2"),"Photo rate bounds missing");
