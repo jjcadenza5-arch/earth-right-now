@@ -304,7 +304,7 @@ function localDirectoryCard(x){
  const truth=document.createElement("span");truth.className="truth";truth.textContent="LOCAL PLACE";
  const strong=document.createElement("strong");strong.textContent=x.name;
  const small=document.createElement("small");small.textContent=[x.type,x.place,x.country].filter(Boolean).join(" · ");
- const note=document.createElement("span");note.className="verify-mini";note.textContent=x.verifiedAt?"ERN reviewed "+String(x.verifiedAt).slice(0,10):"ERN reviewed";
+ const note=document.createElement("span");note.className="verify-mini";note.textContent=[x.address||"",x.verifiedAt?("ERN reviewed "+String(x.verifiedAt).slice(0,10)):"ERN reviewed"].filter(Boolean).join(" · ");
  a.append(v,truth,strong,small,note);return a;
 }
 
