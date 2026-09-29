@@ -47,6 +47,7 @@ const releaseTests=[
   "participation-storage-bounds.smoke.js",
   "participation-infrastructure-status.smoke.js",
   "now-moment-media-worker.smoke.js",
+  "now-moment-photo-public-ui-off.smoke.js",
   "now-moment-photo-service.smoke.js",
   "now-moment-photo-foundation.smoke.js",
   "guide-ai-routing.smoke.js",
