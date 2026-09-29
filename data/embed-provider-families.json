@@ -1156,5 +1156,38 @@
       "https://developers.google.com/youtube/terms/required-minimum-functionality",
       "https://developers.google.com/youtube/terms/developer-policies"
     ]
+  },
+  {
+    "id": "youtube-east-coast-nsa-jinzun",
+    "status": "RESEARCH_ONLY",
+    "provider": "East Coast National Scenic Area",
+    "familyLabel": "Official East Coast National Scenic Area YouTube live-camera player",
+    "researchUrl": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+    "termsUrl": "https://developers.google.com/youtube/terms/required-minimum-functionality",
+    "verifiedAt": "2026-09-29T02:10:00Z",
+    "permissionEvidence": "The official East Coast National Scenic Area Jinzun live-camera page embeds exact YouTube player ZdqHgQwvZOw. This supports deployed review of that exact branded player only. No blanket right to reuse other tourism cameras or restream video is inferred.",
+    "permissionStatus": "OFFICIAL_PROVIDER_PAGE_EMBEDS_EXACT_YOUTUBE_PLAYER_SPECIFIC_DEPLOYED_REVIEW_REQUIRED",
+    "technicalStatus": "EXACT_YOUTUBE_PLAYER_STAGED",
+    "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "nextAction": "DEPLOYED_HUMAN_PLAYBACK_ON_EXACT_OFFICIAL_PLAYER_THEN_EDITORIAL_REVIEW",
+    "networkFamily": "youtube.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-09-29T02:10:00Z",
+    "communityGuidelinesUrl": "https://developers.google.com/youtube/terms/developer-policies",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "STANDARD_EMBED_PLAYER",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "discoveryProviderAliases": [
+      "East Coast National Scenic Area"
+    ],
+    "researchSources": [
+      "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+      "https://tour.taitung.gov.tw/en/media/live-camera/list",
+      "https://developers.google.com/youtube/terms/required-minimum-functionality",
+      "https://developers.google.com/youtube/terms/developer-policies"
+    ]
   }
 ]
