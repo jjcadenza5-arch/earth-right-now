@@ -4,7 +4,7 @@ import {currentTravelOffer} from "../src/travel-offer-verification.js";
 
 const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
 const partners=read("data/affiliate-partners.json"),offers=read("data/travel-offers.json"),platforms=read("data/affiliate-platform-research.json"),index=fs.readFileSync("index.html","utf8");
-const now=Date.now(),fail=[],partnerMap=new Map();
+const now=Date.now(),fail=[],warn=[],partnerMap=new Map();
 for(const raw of partners){
   const p=affiliatePartner(raw);
   if(!p){fail.push("invalid partner record: "+String(raw?.id||"unknown"));continue}
@@ -19,11 +19,18 @@ for(const o of offers){
   if(!currentTravelOffer(o,{now}))fail.push("affiliate offer is not currently verified: "+String(o?.id||"unknown"));
 }
 const tp=platforms.find(x=>x?.id==="travelpayouts");
+const tpBacked=partners.some(x=>/Travelpayouts/i.test(String(x?.name||"")));
+if(tpBacked&&!tp)fail.push("Travelpayouts-backed partners exist but platform state is missing");
 if(tp){
+  if(tp.relationshipActive!==true)fail.push("Travelpayouts relationship must be explicitly active");
   if(tp.driveAutomationAllowed!==false)fail.push("Travelpayouts Drive automation must remain disabled");
   if(tp.manualToolsOnly!==true)fail.push("Travelpayouts relationship must remain manual-tools-only");
+  if(tp.automaticLinkRewritingAllowed!==false)fail.push("Travelpayouts automatic link rewriting must remain disabled");
+  if(tp.automaticPlacementAllowed!==false)fail.push("Travelpayouts automatic placement must remain disabled");
+  if(tp.rankingAffectedByCommission!==false||tp.paidRankingAllowed!==false)fail.push("Travelpayouts commission may not affect ranking");
+  if(tp.payoutMethodConfigured!==true)warn.push("Travelpayouts project is active but payout method is not configured yet");
 }
 if(/emrldtp\.com\/|Travelpayouts Drive/i.test(index))fail.push("Travelpayouts Drive bootstrap returned to public homepage");
-const report={ok:fail.length===0,checkedAt:new Date(now).toISOString(),activePartners:[...partnerMap.values()].filter(x=>x.active).map(x=>x.p.id),affiliateOffers:offers.filter(x=>x?.affiliate).map(x=>({id:x.id,partnerId:x.partnerId||null,current:currentTravelOffer(x,{now})})),driveAutomationPresent:/emrldtp\.com\//i.test(index),fail,safety:{automaticPlacementAllowed:false,automaticLinkRewritingAllowed:false,paidRankingAllowed:false}};
+const report={ok:fail.length===0,checkedAt:new Date(now).toISOString(),activePartners:[...partnerMap.values()].filter(x=>x.active).map(x=>x.p.id),affiliateOffers:offers.filter(x=>x?.affiliate).map(x=>({id:x.id,partnerId:x.partnerId||null,current:currentTravelOffer(x,{now})})),travelpayouts:tp?{relationshipActive:tp.relationshipActive===true,projectStatus:tp.projectStatus||null,availableProgramCountObserved:tp.availableProgramCountObserved??null,payoutMethodConfigured:tp.payoutMethodConfigured===true}:null,driveAutomationPresent:/emrldtp\.com\//i.test(index),warn,fail,safety:{automaticPlacementAllowed:false,automaticLinkRewritingAllowed:false,paidRankingAllowed:false}};
 console.log(JSON.stringify(report,null,2));
 if(fail.length)process.exit(1);
