@@ -151,6 +151,7 @@ const autonomousHoldBrief=operationsOperatorBrief({
  localDirectory:{state:"PILOT_COMPLETE"},
  guideAi:{mode:"DETERMINISTIC_ONLY",deterministicFallback:true,deployment:{missing:["httpsEndpoint"]}},
  earthSignals:{mode:"READ_ONLY",privacyNoticeDraft:{published:true},deployment:{missing:["httpsEndpoint"]}},
+ participationInfrastructure:{prepared:true,publicActivationOff:true},
  submissionTransport:{active:false,missing:["HTTPS_REVIEW_ENDPOINT"]}
 });
 assert.match(autonomousHoldBrief,/AUTONOMOUS HOLD/);
@@ -173,6 +174,7 @@ const autonomousGenerativeGuideHold=operationsOperatorBrief({
  localDirectory:{state:"PILOT_COMPLETE"},
  guideAi:{mode:"GENERATIVE_ENABLED",ready:true,deterministicFallback:true,deployment:{ready:true,state:"DEPLOYMENT_EVIDENCE_COMPLETE"}},
  earthSignals:{mode:"READ_ONLY",privacyNoticeDraft:{published:true}},
+ participationInfrastructure:{prepared:true,publicActivationOff:true},
  submissionTransport:{active:false,missing:["HTTPS_REVIEW_ENDPOINT"]}
 });
 assert.match(autonomousGenerativeGuideHold,/AUTONOMOUS HOLD/);
