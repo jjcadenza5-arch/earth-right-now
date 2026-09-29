@@ -4,29 +4,28 @@ export function affiliateApplicationReadiness(platforms=[],{
  const ernChecks={publicSite,privacyNotice,affiliateDisclosurePolicy,noPaidRankingPolicy,verifiedTravelResearch};
  const ernReady=Object.values(ernChecks).every(Boolean);
  const rows=(platforms||[]).filter(x=>x?.valid!==false).map(p=>{
+  const active=p.state==="ACTIVE_OPERATOR_CONFIRMED"||String(p.programStatus||"").startsWith("ACTIVE_");
   const external=[];
-  if(p.applicationRequired)external.push("CREATE_OR_USE_PROGRAM_ACCOUNT","SUBMIT_PROGRAM_APPLICATION_OR_ENROLLMENT");
-  if(!p.relationshipActive)external.push("WAIT_FOR_OR_CONFIRM_PROGRAM_ACCEPTANCE");
-  if(!p.credentialsConfigured)external.push("CONFIGURE_APPROVED_TRACKING_CREDENTIALS_OR_LINK_TOOLS");
-  external.push("REVIEW_FINAL_PROGRAM_TERMS_AND_DISCLOSURE_PLACEMENT","VERIFY_TRACKED_LINK_IN_PRIVATE_STAGING");
+  if(!active){if(p.applicationRequired)external.push("CREATE_OR_USE_PROGRAM_ACCOUNT","SUBMIT_PROGRAM_APPLICATION_OR_ENROLLMENT");if(!p.relationshipActive)external.push("WAIT_FOR_OR_CONFIRM_PROGRAM_ACCEPTANCE");if(!p.credentialsConfigured)external.push("CONFIGURE_APPROVED_TRACKING_CREDENTIALS_OR_LINK_TOOLS");external.push("REVIEW_FINAL_PROGRAM_TERMS_AND_DISCLOSURE_PLACEMENT","VERIFY_TRACKED_LINK_IN_PRIVATE_STAGING")}else{external.push("MAINTAIN_OPERATOR_TERMS_REVIEW","VERIFY_TRACKED_LINK_BEFORE_EACH_NEW_PUBLIC_PLACEMENT","CONFIGURE_PAYOUT_METHOD_IF_NEEDED")}
   return{
    id:p.id,name:p.name,intents:p.intents||[],
    ernSideReady:ernReady,
-   externalActionRequired:true,
+   externalActionRequired:external.length>0,
    relationshipActive:p.relationshipActive===true,
    credentialsConfigured:p.credentialsConfigured===true,
-   publicActivationAllowed:false,
-   trackedLinksAllowed:false,
+   publicActivationAllowed:active&&p.publicActivationAllowed===true,
+   trackedLinksAllowed:active&&p.trackedLinksAllowed===true,
    remainingExternalActions:[...new Set(external)],
-   state:ernReady?"READY_FOR_USER_APPLICATION_DECISION":"ERN_PREREQUISITES_INCOMPLETE"
+   state:!ernReady?"ERN_PREREQUISITES_INCOMPLETE":active?"ACTIVE_OPERATOR_CONFIRMED":"READY_FOR_USER_APPLICATION_DECISION"
   };
  });
  return{
   ernReady,ernChecks,total:rows.length,
   readyForDecision:rows.filter(x=>x.state==="READY_FOR_USER_APPLICATION_DECISION").length,
+  activePlatforms:rows.filter(x=>x.state==="ACTIVE_OPERATOR_CONFIRMED").length,
   rows,
   safety:{automaticApplicationAllowed:false,automaticCredentialSetupAllowed:false,automaticTrackedLinkActivationAllowed:false,automaticPublicActivationAllowed:false,paidRankingAllowed:false},
-  next:ernReady&&rows.length?"USER_CHOOSES_WHETHER_TO_APPLY":"COMPLETE_ERN_PREREQUISITES",
-  note:"Readiness plan only. ERN can prepare for affiliate enrollment, but account creation, program application, acceptance, credentials and tracked-link activation require an explicit later decision/action."
+  next:!ernReady?"COMPLETE_ERN_PREREQUISITES":rows.some(x=>x.state==="READY_FOR_USER_APPLICATION_DECISION")?"USER_CHOOSES_WHETHER_TO_APPLY":rows.some(x=>x.state==="ACTIVE_OPERATOR_CONFIRMED")?"OPERATE_ACTIVE_PLATFORM_MANUALLY":"NO_PLATFORM_ACTION",
+  note:"Readiness plan only. Research candidates require explicit application/account actions. Operator-confirmed active platforms remain manual, disclosure-bound and excluded from paid ranking or automatic placement."
  };
 }
