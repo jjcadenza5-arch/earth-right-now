@@ -13,6 +13,7 @@ const report={
  openExternalGates:gates.count,
  eligibleExternalGates:(gates.eligibleNow||[]).map(x=>x.id),
  blockedExternalGates:(gates.waiting||[]).map(x=>x.id),
+ nextTimedReview:gates.nextTimedReview||null,
  next:gates.next,
  interpretation:"ERN is beyond core build/stable-beta hardening. Current work is evidence-gated external activation plus ongoing source/product quality maintenance. This is not a simple Phase 3/4 sequence; the canonical repository stage is Stage R.",
  safety:gates.safety
