@@ -14,6 +14,7 @@ console.assert(media.publicActivationAllowed===false&&media.status==="NOT_DEPLOY
 console.assert(config.includes('media?.status==="DEPLOYED"')&&config.includes("media?.publicActivationAllowed===true")&&config.includes("media?.videoEnabled===false"),"Public config must require deployed + explicit media activation while video remains off");
 console.assert(now.includes('datalist id="signalPlaces"')&&nowJs.includes("canonicalPlaces"),"Now Moments must use canonical ERN places");
 console.assert(nowJs.includes("EARTH_SIGNAL_TYPES")&&nowJs.includes("local preview"),"Now Moments structured signal boundary missing");
+console.assert(now.includes("still photos only")&&now.includes("Video and short clips remain disabled"),"Now Moments public roadmap must match still-photo first activation");
 console.assert(places.includes('id="cameraConsentWrap" hidden')&&placesJs.includes("consent?.checked!==true"),"Submission surface must require explicit send consent");
 console.assert(placesJs.includes("submissionRecord")&&placesJs.includes("createSubmissionClient"),"For Places must use canonical validation/client plumbing");
 console.assert(!now.includes("ERN_SIGNAL_REVIEW_TOKEN")&&!places.includes("ERN_SUBMISSION_REVIEW_TOKEN"),"Public pages must never contain review secrets");
