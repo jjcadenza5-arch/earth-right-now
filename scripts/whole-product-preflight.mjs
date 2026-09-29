@@ -54,6 +54,7 @@ must(/uploads are intentionally not active yet/i.test(moments),"Now Moments safe
 must(/Preview an Earth Signal/i.test(moments)&&/Nothing is uploaded or transmitted/i.test(moments)&&/Preview locally/.test(momentsJs),"Now Moments local preview boundary missing");
 must(/friendly tour guide/i.test(strategy)&&/small places and small businesses/i.test(strategy),"Crispy Pork Skin strategy has been weakened");
 must(/tour guide, not a generic chatbot/i.test(guide),"ERN Guide vision has been weakened");
+const storiesLogic=read("src/ern-stories.js");must(storiesLogic.includes("usedCountries")&&storiesLogic.includes("countryKey")&&storiesLogic.includes("usedCountries.has(country)"),"Stories lost geographic diversity preference");
 
 const truth=new Set(sources.map(s=>s.truth));
 for(const type of ["LIVE_VIDEO","LIVE_IMAGE","EXTERNAL_LIVE"])must(truth.has(type),`truthful window variety missing from catalog: ${type}`);
