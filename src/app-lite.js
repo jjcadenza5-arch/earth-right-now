@@ -296,7 +296,7 @@ function approvedLocalPlaces(){return(state.localDirectory||[]).filter(localDire
 function localDirectoryMatch(q){
  const tokens=normalizeSearch(q).split(/\s+/).filter(Boolean),noise=new Set(["local","small","place","places","business","businesses","near","nearby","find","show","me","a","an","the"]);
  const useful=tokens.filter(t=>!noise.has(t));
- return approvedLocalPlaces().filter(x=>{const hay=normalizeSearch([x.name,x.type,x.place,x.country,x.summary,...(x.tags||[])].filter(Boolean).join(" "));return useful.length?useful.every(t=>hay.includes(t)):tokens.some(t=>hay.includes(t))});
+ return approvedLocalPlaces().filter(x=>{const hay=normalizeSearch([x.name,x.type,x.place,x.country,x.address,x.summary,...(x.tags||[])].filter(Boolean).join(" "));return useful.length?useful.every(t=>hay.includes(t)):tokens.some(t=>hay.includes(t))});
 }
 function localDirectoryCard(x){
  const a=document.createElement("a");a.className="result-card local-directory-card";a.href=safeExternalUrl(x.url);a.target="_blank";a.rel="noopener noreferrer";a.setAttribute("aria-label",x.name+" — reviewed local place");
