@@ -21,7 +21,10 @@
     "embeddingCondition": "WHEN_ENABLED",
     "playerBrandingRequired": true,
     "restreamAllowed": false,
-    "permissionConfirmed": false
+    "permissionConfirmed": false,
+    "discoveryProviderAliases": [
+      "Mpala Research Centre / Explore.org"
+    ]
   },
   {
     "id": "youtube",
@@ -103,6 +106,10 @@
       "https://www.nps.gov/subjects/developer/cms-elements-multimedia.htm",
       "https://www.nps.gov/yell/learn/photosmultimedia/webcams.htm",
       "https://www.nps.gov/media/webcam/view.htm?id=AF555E5C-BE40-FE91-52E98E0EDD833B68"
+    ],
+    "discoveryProviderAliases": [
+      "U.S. National Park Service",
+      "U.S. National Park Service / Gulf Islands National Seashore"
     ]
   },
   {
