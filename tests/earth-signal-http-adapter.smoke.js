@@ -44,6 +44,13 @@ const record={
   locationEvidence:"UNVERIFIED"
 };
 await storage.putSignal(record);
+const missingPlace=await earthSignalHttpRequest(
+  {method:"GET",path:"/api/earth-signals",query:{}},
+  {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",now}
+);
+assert.equal(missingPlace.status,400);
+assert.equal(missingPlace.body.reason,"SIGNAL_PLACE_ID_REQUIRED");
+
 const listed=await earthSignalHttpRequest(
   {method:"GET",path:"/api/earth-signals",query:{placeId:"chiang-mai"}},
   {capabilities:allCapabilities,storage,rateLimiter,rateSubject:"anon_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",now}
