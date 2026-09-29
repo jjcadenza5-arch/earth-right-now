@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T17:25:00Z",
+  "generatedAt": "2026-09-29T01:10:00Z",
   "principle": "Research destinations where a truthful current window is valuable to visitors. Existing/available travel programs help identify useful next-step categories, but may not lower source-quality or truth standards.",
   "columns": {
     "visualCoverage": "Current ERN visual-window state",
@@ -159,10 +159,8 @@
     {
       "destination": "Tokyo",
       "country": "Japan",
-      "visualCoverage": "GOOD_EXTERNAL",
-      "currentSources": [
-        "chidori-sakura"
-      ],
+      "visualCoverage": "SEASONAL_SOURCE_OFF_SEASON_GAP",
+      "currentSources": [],
       "visitorDecisionValue": "HIGH",
       "nextStepIntents": [
         "activities",
@@ -175,9 +173,9 @@
         "ATTRACTIONS",
         "TRANSFERS"
       ],
-      "sourcePriority": "MEDIUM_HIGH",
-      "why": "Existing current Chidori-ga-fuchi coverage plus strong visitor planning value; additional sources should add distinct utility rather than duplicate.",
-      "next": "Favor distinct current conditions such as markets, streets, seasonal parks or transport gateways if official/high-quality sources emerge."
+      "sourcePriority": "HIGH",
+      "why": "The existing Chidori-ga-fuchi source is seasonal and the official Sakura page still shows April 9 bloom/congestion state in late September, so ERN currently has no in-horizon Tokyo visual window.",
+      "next": "Keep Chidori as seasonal/degraded until its next active season or fresh current evidence appears. Research a distinct year-round Tokyo street, market, park or transport-gateway current window from an official/high-quality provider."
     },
     {
       "destination": "New York",
