@@ -4,7 +4,8 @@ export function nowMomentPhotoServerRecord(input={},{
   id,
   objectKey,
   now=new Date(),
-  knownPlaceIds=null
+  knownPlaceIds=null,
+  canonicalPlaceLabels=null
 }={}){
   const placeId=String(input.placeId||"").trim();
   if(knownPlaceIds&&!new Set([...knownPlaceIds].map(String)).has(placeId))return{ok:false,reason:"UNKNOWN_PLACE"};
@@ -13,6 +14,7 @@ export function nowMomentPhotoServerRecord(input={},{
   const recordId=String(id||"").trim(),key=String(objectKey||"").trim();
   if(!recordId||!key)return{ok:false,reason:"SERVER_ID_REQUIRED"};
   const createdAt=now.toISOString();
+  const trustedLabel=canonicalPlaceLabels instanceof Map?canonicalPlaceLabels.get(placeId):canonicalPlaceLabels&&typeof canonicalPlaceLabels==="object"?canonicalPlaceLabels[placeId]:null;
   const storageExpiryAt=new Date(now.getTime()+NOW_MOMENT_PHOTO_POLICY.ttlMinutes*60000).toISOString();
   return{
     ok:true,
@@ -20,7 +22,7 @@ export function nowMomentPhotoServerRecord(input={},{
       id:recordId,
       kind:"photo",
       placeId,
-      placeLabel:String(input.placeLabel||"").trim().slice(0,160)||null,
+      placeLabel:String(trustedLabel||"").trim().slice(0,160)||null,
       mimeType:String(input.mimeType),
       sourceBytes:Number(input.sourceBytes),
       storedBytes:Number(input.storedBytes),
