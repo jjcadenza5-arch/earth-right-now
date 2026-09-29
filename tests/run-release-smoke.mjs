@@ -15,6 +15,7 @@ const releaseTests=[
   "provider-family-research.smoke.js",
   "provider-diversification.smoke.js",
   "provider-concentration.smoke.js",
+  "watch-diversity.smoke.js",
   "operator-review-queue.smoke.js",
   "review-evidence-proposals-safety.smoke.js",
   "playback-proof-application-plan.smoke.js",
