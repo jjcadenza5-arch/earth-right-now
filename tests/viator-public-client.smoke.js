@@ -4,7 +4,7 @@ import {loadViatorPublicConfig,fetchViatorProducts} from "../src/viator-public-c
 const response=(body,{ok=true,status=200}={})=>({ok,status,json:async()=>body});
 
 let cfg=await loadViatorPublicConfig({fetchImpl:async()=>response({
-  status:"DEPLOYED_GATED",
+  status:"DEPLOYED_AUTH_CONFIRMED_PUBLIC_OFF",
   endpointUrl:"https://ern-travel-api.example.workers.dev",
   publicActivationAllowed:false,
   taxonomyVerified:true,
@@ -15,7 +15,7 @@ assert.equal(cfg.enabled,false);
 assert.equal(cfg.reason,"PUBLIC_ACTIVATION_OFF");
 
 cfg=await loadViatorPublicConfig({fetchImpl:async()=>response({
-  status:"DEPLOYED_GATED",
+  status:"DEPLOYED_AUTH_CONFIRMED_PUBLIC_OFF",
   endpointUrl:"https://ern-travel-api.example.workers.dev",
   publicActivationAllowed:true,
   taxonomyVerified:true,
