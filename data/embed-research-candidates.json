@@ -378,5 +378,26 @@
     "reviewedSourceUrl": "https://global.kyoto.travel/en/comfort/",
     "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/Op-lf2NRMzs",
     "reviewNote": "Deployed-origin operator review failed to produce usable playback for this exact target. Keep research-only; do not infer source outage or family-wide YouTube failure."
+  },
+  {
+    "id": "youtube-rovaniemi-santa-claus-village",
+    "status": "RESEARCH_ONLY",
+    "provider": "Santa Claus Village / City of Rovaniemi",
+    "platform": "YouTube",
+    "sourceUrl": "https://santaclausvillage.info/live-video-webcam/",
+    "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/Cp4RRAEgpeU",
+    "ownerEvidence": "Official Santa Claus Village page states that the live video is hosted on the City of Rovaniemi's YouTube channel.",
+    "currentEvidence": "Official Santa Claus Village page explicitly labels the view Live @ Santa Claus Village and says it is a live video webcam of the main square and Arctic Circle line.",
+    "discoveredAt": "2026-09-29T01:30:00Z",
+    "permissionReview": "PLATFORM_STANDARD_EMBED_SPECIFIC_VIDEO_REQUIRES_DEPLOYED_REVIEW",
+    "playbackReview": "REQUIRED_ON_DEPLOYED_ERN",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "currentEvidenceReviewedAt": "2026-09-29T01:30:00Z",
+    "platformEvidence": "The official provider page embeds exact YouTube video Cp4RRAEgpeU. ERN may test only the standard branded YouTube player; no stream copying, control hiding or blanket provider approval is inferred.",
+    "researchSources": [
+      "https://santaclausvillage.info/live-video-webcam/",
+      "https://www.youtube.com/embed/Cp4RRAEgpeU",
+      "https://developers.google.com/youtube/terms/required-minimum-functionality"
+    ]
   }
 ]
