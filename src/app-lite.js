@@ -522,7 +522,7 @@ function renderContext(s){
  for(const item of relatedItems){const b=document.createElement("button");b.type="button";b.className="nearby-item";const label=document.createElement("strong");label.textContent=item.s.title;const meta=document.createElement("small");meta.textContent=publicTruth(item.s);b.append(label,meta);b.onclick=()=>openViewer(item.s);related.append(b)}
  const place=[s.region,s.country,s.title].filter(Boolean).join(" ");
  const q=encodeURIComponent(place);
- const stayOffer=travelOfferFor(s,"stay"),eatOffer=travelOfferFor(s,"eat"),doOffer=travelOfferFor(s,"activities");
+ const stayOffer=current?travelOfferFor(s,"stay"):null,eatOffer=current?travelOfferFor(s,"eat"):null,doOffer=current?travelOfferFor(s,"activities"):null;
  applyPlanOffer($("#planStay"),stayOffer,"https://www.google.com/search?q="+encodeURIComponent("hotels "+place),t("stay"));
  applyPlanOffer($("#planEat"),eatOffer,"https://www.google.com/search?q="+encodeURIComponent("restaurants "+place),t("eat"));
  applyPlanOffer($("#planDo"),doOffer,"https://www.google.com/search?q="+encodeURIComponent("things to do "+place),t("thingsDo"));
