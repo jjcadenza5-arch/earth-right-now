@@ -33,7 +33,7 @@ const targetBrief=operationsOperatorBrief({
 });
 assert.match(targetBrief,/Provider-generated target staging/);
 assert.match(targetBrief,/Icelandic Meteorological Office/);
-assert.match(targetBrief,/Obtain exact provider-generated code or authorized current-image target URLs/);
+assert.match(targetBrief,/Exact target staging is fail-closed/);
 
 const blockerBrief=operationsOperatorBrief({
  snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
