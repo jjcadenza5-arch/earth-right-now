@@ -5,4 +5,5 @@ assert.ok(app.includes('if(!currentTruthClaim(s)){mount.dataset.visualKind="refe
 assert.ok(app.includes('b.querySelector("small").textContent=publicTruth(alt)'),"alternate viewer labels must use currentness-aware public truth");
 assert.ok(app.includes('openViewer(alt,{record:current,updateHash:current})'),"non-current alternates must not record interest or create stale deep links");
 assert.ok(app.includes('p.onclick=()=>openViewer(s,{record:current,updateHash:current})'),"Atlas recheck pins must not record interest or create stale deep links");
+assert.ok(app.includes("Reference only · ERN is not treating this source as current."),"recheck viewer context must not say Look now/current window");
 console.log("Atlas and alternate recheck views remain reference-only and non-stateful");
