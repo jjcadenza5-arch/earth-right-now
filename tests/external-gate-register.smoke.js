@@ -6,6 +6,7 @@ const x=JSON.parse(r.stdout);
 assert.equal(x.phase,"STAGE_R_EXTERNAL_GATE_TRIGGER_REGISTER");
 assert(Array.isArray(x.openGates));
 for(const g of x.openGates){assert.equal(g.reopenOnlyWhen,true);assert(g.trigger);assert(g.beforeTrigger)}
+assert.ok(Object.prototype.hasOwnProperty.call(x,"nextTimedReview"));assert.ok(Array.isArray(x.untimedWaiting));if(x.nextTimedReview){assert(x.nextTimedReview.id);assert(x.nextTimedReview.nextEligibleAt);assert.equal(x.nextTimedReview.beforeTrigger,"DO_NOT_RETEST_OR_ROTATE_KEY");}
 for(const k of ["inventTriggerEvidenceAllowed","automaticExternalActionAllowed","automaticCredentialRotationAllowed","automaticPublicActivationAllowed","automaticPartnerClaimAllowed","timePassingAloneCountsAsSuccess"])assert.equal(x.safety[k],false);
 for(const id of ["guide-ai-public-activation","seoul-context-validation-and-activation"])assert(x.openGates.some(g=>g.id===id),`missing explicit external gate ${id}`);
 const guide=x.openGates.find(g=>g.id==="guide-ai-public-activation");assert.equal(guide.beforeTrigger,"DETERMINISTIC_ONLY");
