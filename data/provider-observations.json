@@ -397,5 +397,37 @@
     "observedAt": "2026-09-29T10:29:35Z",
     "reason": "Independent official-provider recheck on 2026-09-29 confirmed Pontedilegno-Tonale's official webcam page publishes multiple LIVE real-time views, including Ponte di Legno. ERN uses the official webcam page as EXTERNAL_LIVE + LINK_ONLY because ERN-specific embed/reuse permission has not been independently established. Previous CouchTourist playback observations remain historical evidence for the superseded target and do not apply to the new external source.",
     "sourceUrl": "https://www.pontedilegnotonale.com/en/pontedilegno-tonale-booking/webcams-pontedilegno-tonale/"
+  },
+  {
+    "id": "paris-eiffel-context-gap",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_LIVE_VISITOR_CONTEXT_NO_VISUAL_SOURCE",
+    "observedAt": "2026-09-29T10:50:00Z",
+    "reason": "Official Eiffel Tower pages expose current attendance, opening, temperature, wind and visit conditions, but ERN did not identify an official rights-clear current visual window. Keep context separate from LIVE camera truth.",
+    "sourceUrl": "https://www.toureiffel.paris/en/rates-opening-times"
+  },
+  {
+    "id": "chiang-mai-pao-cctv-gap",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_CCTV_PORTAL_STILL_STANDBY",
+    "observedAt": "2026-09-29T10:50:00Z",
+    "reason": "Chiang Mai PAO's official real-time CCTV center remains active but all four public cameras still report STANDBY / WAITING FOR FEED. No LIVE source promotion.",
+    "sourceUrl": "https://www.chiangmaipao.go.th/all_cctv.php"
+  },
+  {
+    "id": "tokyo-central-visual-gap",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_TOURISM_REVIEW_NO_RIGHTS_CLEAR_CENTRAL_LIVE_VISUAL",
+    "observedAt": "2026-09-29T10:50:00Z",
+    "reason": "Fresh review of official Tokyo tourism/government surfaces did not identify a rights-clear year-round central-Tokyo live visual suitable for ERN. Existing Chidori source remains seasonal/off-season.",
+    "sourceUrl": "https://www.gotokyo.org/en/"
+  },
+  {
+    "id": "sydney-harbour-visual-gap",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_TOURISM_REVIEW_NO_RIGHTS_CLEAR_HARBOUR_LIVE_VISUAL",
+    "observedAt": "2026-09-29T10:50:00Z",
+    "reason": "Fresh review of official Sydney tourism surfaces confirmed strong harbour visitor information but did not establish a rights-clear live visual source suitable for ERN. Maintain existing Coogee source.",
+    "sourceUrl": "https://www.sydney.com/destinations/sydney/sydney-city/sydney-harbour"
   }
 ]
