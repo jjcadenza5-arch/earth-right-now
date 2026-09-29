@@ -55,6 +55,7 @@ Resolved/active directions:
 - Rovaniemi diversification candidate: exact City of Rovaniemi YouTube player `Cp4RRAEgpeU` is staged RESEARCH_ONLY from the official Santa Claus Village page. It may become an independent inside-ERN path only after deployed human playback and exact-source approval.
 - YouTube research preflight now supports official provider pages embedding exact YouTube players; technical reachability remains separate from permission, current playback and promotion.
 - Rovaniemi uses the standard `HUMAN_PLAYBACK_REQUIRED` state so it can enter the deployed operator-review queue normally.
+- Deployed operator-review batch `bd51ac5733059f3f` is `HUMAN_REVIEW_READY` with two primary independent-provider candidates: `youtube-taitung-jinzun-official` and `youtube-rovaniemi-santa-claus-village`. Both remain research-only until human playback is confirmed on the deployed origin.
 - Paris now has an exact official Eiffel Tower live visitor-context lane (attendance/opening/summit conditions/weather), but this remains context-only. Paris still has no verified current visual window in ERN.
 
 ## Commercial state
@@ -115,7 +116,8 @@ User preference: work autonomously in large batches and return only for genuine 
 - For Places copy now explicitly invites any visitor-interest place where today's flowers, crowds, weather, visibility, animals, beach conditions, activity or atmosphere can help someone decide whether, when or how to go.
 - Seoul Real-time City Data remains a separate PUBLIC-OFF context-data research lane, never camera truth.
 - Current catalog count at this handoff revision: 93 sources. Always read current `data/sources.json` rather than relying on a frozen count.
-- Latest recency state: 73 current+healthy, 3 stale, 16 expired under ERN's existing horizons. This is maintenance debt, not permission to relax truth windows.
+- Latest recency state: 73 current+healthy, 3 stale, 16 expired under ERN's existing horizons.
+- Latest successful Pages release: workflow run `36511689549`, head `ca0d1fdc28f338af195ccd50021036efd653c156`; all Pages gates including Deploy passed. This is maintenance debt, not permission to relax truth windows.
 - Eight high-value external/current sources were freshly revalidated first: Coogee/Randwick, Waikiki, Kīlauea, Yellowstone, San Diego Zoo, Chamonix, Whistler Blackcomb and New York skyline.
 - A second six-source recheck batch refreshed Diano Marina, Sottomarina/Chioggia, Torres del Paine, and SANParks Boulders/Addo/Orpen.
 - Generated destination pages now visibly separate current verified views from provider sources awaiting recheck, including recency-aware SEO/directory copy.
@@ -134,3 +136,8 @@ User preference: work autonomously in large batches and return only for genuine 
 - Chidori-ga-fuchi is now DEGRADED/off-season because the official Sakura surface still shows April 9 state in late September; Tokyo is therefore a current visual gap outside sakura season.
 - The first three Kyoto approved embeds now carry `playbackVerifiedAt` markers matching their existing exact human-review timestamps and reviewed embed URLs; no new approval was inferred.
 - Continue autonomously. Only ask the operator for deployed human playback when a candidate is genuinely ready and inside any provider-published live window.
+
+## Release-test architecture update
+- Current release testing is intentionally split: all JS/MJS test files are syntax-checked; a curated 20-test release suite guards current truth/safety/release invariants; the full 809-test historical suite remains a maintenance/migration backlog and is not allowed to freeze the current product on obsolete timestamps/UI assumptions.
+- The existing dedicated Pages preflights continue to gate launch, mobile, accessibility, performance, rollback, participation, curation, catalog metadata, recency, Guide, expansion, context, commercial placement, discoverability and operator-review integrity.
+- `app-lite.js` stays under the existing 100 KB performance cap by keeping extended static homepage translations in the already-loaded `home-i18n.js` bundle; no performance budget was raised.
