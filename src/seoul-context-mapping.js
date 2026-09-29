@@ -1,5 +1,6 @@
 function clean(v){return String(v||"").trim()}
 export function seoulContextMappingForPlace(registry={},placeId=""){
+  if(registry?.publicActivationAllowed!==true)return{ok:false,reason:"PLACE_MAPPING_REGISTRY_PUBLIC_OFF"};
   const id=clean(placeId);
   const row=(registry?.mappings||[]).find(x=>clean(x?.ernPlaceId)===id);
   if(!row)return{ok:false,reason:"PLACE_MAPPING_NOT_FOUND"};
