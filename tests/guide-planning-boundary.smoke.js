@@ -1,11 +1,12 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
-assert.ok(app.includes('function guidePlanOffers(s)'),"Guide planning helper missing");
-assert.ok(app.includes('offers:intent.planning?guidePlanOffers(items[0]):[]'),"Guide planning links must derive only after editorial place matching");
-assert.ok(app.includes('...(result.offers||[]).map(guidePlanLink)'),"Guide planning links must render after editorial results");
-assert.ok(app.includes('const stayOffer=current?travelOfferFor(s,"stay"):null'),"reference-only viewer must not surface commercial offers");
-assert.ok(app.includes('o.expiresAt&&(!Number.isFinite(expires)||expires<=now)'),"browser travel offer gate must enforce explicit expiry");
+const planning=fs.readFileSync(new URL("../src/travel-planning-client.js",import.meta.url),"utf8");
+assert.ok(app.includes('const TP=globalThis.ERNTravelPlanning'),"travel planning helper wiring missing");
+assert.ok(app.includes('offers:intent.planning?TP.guideOffers(state.travelOffers,items[0]):[]'),"Guide planning links must derive only after editorial place matching");
+assert.ok(app.includes('...(result.offers||[]).map(TP.guideLink)'),"Guide planning links must render after editorial results");
+assert.ok(app.includes('const stayOffer=current?TP.offerFor(state.travelOffers,s,"stay"):null'),"reference-only viewer must not surface commercial offers");
+assert.match(planning,/expires<=now/,"browser travel offer gate must enforce explicit expiry");
 const scoreBody=app.slice(app.indexOf("function guideScore("),app.indexOf("function guideNearby("));
 assert.doesNotMatch(scoreBody,/travelOffer|affiliate|sponsored|provider/,"commercial availability must not enter Guide editorial scoring");
 console.log("Guide planning is post-ranking, current-only and commercial-neutral");
