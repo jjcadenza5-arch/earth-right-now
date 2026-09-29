@@ -126,6 +126,7 @@ export default{
       const m=url.pathname.match(/^\/internal\/now-moments\/photos\/([^/]+)\/review$/);
       if(request.method==="POST"&&m){
         let body;try{body=await readJsonBodyBounded(request,1024)}catch(error){return reply(error.code==="REQUEST_TOO_LARGE"?413:400,{ok:false,reason:error.code||"INVALID_JSON"})}
+        if(body.decision==="APPROVED"&&!enabled)return reply(409,{ok:false,reason:"PUBLICATION_DISABLED",published:false});
         const {metadataStore,objectStore}=stores(env);
         const result=await reviewNowMomentPhoto({id:decodeURIComponent(m[1]),decision:body.decision},{capabilities:CAPABILITIES,metadataStore,objectStore});
         return result.ok?reply(200,{...result,publicEligible:Boolean(result.public),published:enabled&&Boolean(result.public)}):reply(result.reason==="PHOTO_EXPIRED"?410:400,result);
