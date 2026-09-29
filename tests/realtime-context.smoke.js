@@ -14,5 +14,6 @@ assert.equal(publicSeoulContext(r,{now:new Date("2026-09-28T16:45:00Z"),maxAgeMi
 assert.equal(seoulContextFreshness(r.context,{now:new Date("2026-09-28T17:10:00Z"),maxAgeMinutes:15}).current,false);
 assert.equal(publicSeoulContext(r,{now:new Date("2026-09-28T17:10:00Z"),maxAgeMinutes:15}).reason,"STALE_CONTEXT");
 assert.equal(normalizeSeoulRealtimeContext(payload,{areaAllowlist:["OTHER"]}).reason,"AREA_NOT_APPROVED");
-assert.equal(normalizeSeoulRealtimeContext({citydata_eng:{row:[{AREA_NM:"X",LIVE_PPLTN_STTS:[{AREA_CONGEST_LVL:"Busy"}]}]}}).reason,"SOURCE_TIMESTAMP_MISSING");
+assert.equal(normalizeSeoulRealtimeContext({citydata_eng:{row:[{AREA_NM:"X",LIVE_PPLTN_STTS:[{AREA_CONGEST_LVL:"Busy"}]}]}},{observedAt:"2026-09-28T16:40:00Z"}).reason,"SOURCE_TIMESTAMP_MISSING");
+assert.equal(seoulContextFreshness({sourceObservedAt:"2026-09-28T17:00:00Z"},{now:new Date("2026-09-28T16:55:00Z"),maxFutureSkewMinutes:2}).reason,"SOURCE_TIMESTAMP_IN_FUTURE");
 console.log("ERN Seoul context adapter fails closed on stale, unmapped or untimestamped data");
