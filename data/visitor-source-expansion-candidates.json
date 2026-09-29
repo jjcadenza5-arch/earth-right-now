@@ -403,7 +403,12 @@
       "observed": "Official Taitung Travel live-camera directory currently lists Chihshang Paradise Road among the county's live cameras.",
       "replacesExpiredSourceId": "chihshang-paradise-road",
       "state": "OFFICIAL_CURRENT_SOURCE_CONFIRMED_EXACT_EMBED_TARGET_UNRESOLVED",
-      "next": "Resolve the exact provider-hosted/YouTube player target from the official page. Keep the existing CouchTourist source expired; do not infer embed permission or promote until an exact target is staged and reviewed."
+      "next": "Resolve the exact provider-hosted/YouTube player target from the official page. Keep the existing CouchTourist source expired; do not infer embed permission or promote until an exact target is staged and reviewed.",
+      "evidenceUrls": [
+        "https://tour.taitung.gov.tw/en/media/live-camera/list",
+        "https://tour.taitung.gov.tw/en/media/live-camera/29"
+      ],
+      "why": "Replaces an expired CouchTourist dependency with an official Taitung County tourism live-camera path for the same visitor destination."
     },
     {
       "id": "mpala-explore-official-live-replacement",
@@ -420,7 +425,12 @@
       "observed": "Explore.org currently exposes the African Watering Hole Animal Camera under Mpala, and Mpala's own site currently presents Mpala LIVE.",
       "replacesExpiredSourceId": "mpala-watering-hole",
       "state": "CURRENT_PROVIDER_LIVE_SURFACE_CONFIRMED_PLAYER_TARGET_UNRESOLVED",
-      "next": "Resolve a provider-enabled branded player target only if Explore's specific camera supports embedding. Do not reuse the previously failed Brooks Falls target and do not infer embed permission from live-page availability alone."
+      "next": "Resolve a provider-enabled branded player target only if Explore's specific camera supports embedding. Do not reuse the previously failed Brooks Falls target and do not infer embed permission from live-page availability alone.",
+      "evidenceUrls": [
+        "https://explore.org/livecams/mpala/african-watering-hole-animal-camera",
+        "https://mpala.org/"
+      ],
+      "why": "Replaces an expired CouchTourist dependency with an independent Mpala/Explore live-camera path while keeping exact player permission and playback unresolved."
     }
   ],
   "guardrails": {
