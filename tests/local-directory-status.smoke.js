@@ -1,0 +1,15 @@
+import assert from "node:assert/strict";
+import {currentLocalDirectoryEntry,localDirectoryStatus} from "../src/local-directory-status.js";
+const now=new Date("2026-09-29T07:30:00Z");
+const base={id:"local-test",name:"Local Test",type:"cafe",place:"Test Place",country:"Thailand",summary:"A reviewed local place.",url:"https://example.test/",verifiedAt:"2026-09-28T07:30:00Z",status:"APPROVED",placeId:"place-1",paidPlacement:false,affiliate:false};
+assert.equal(currentLocalDirectoryEntry(base,{now,maxAgeDays:90}),true);
+assert.equal(currentLocalDirectoryEntry({...base,verifiedAt:"2026-06-01T00:00:00Z"},{now,maxAgeDays:90}),false);
+assert.equal(currentLocalDirectoryEntry({...base,paidPlacement:true},{now,maxAgeDays:90}),false);
+assert.equal(currentLocalDirectoryEntry({...base,affiliate:true},{now,maxAgeDays:90}),false);
+assert.equal(currentLocalDirectoryEntry({...base,verifiedAt:"2026-09-29T08:00:00Z"},{now,maxAgeDays:90}),false);
+const complete=localDirectoryStatus(Array.from({length:10},(_,i)=>({...base,id:"local-"+i,url:"https://example.test/"+i,placeId:"place-"+i})),{knownPlaceIds:Array.from({length:10},(_,i)=>"place-"+i),targetApproved:10,now,maxAgeDays:90});
+assert.equal(complete.state,"PILOT_COMPLETE");
+const stale=localDirectoryStatus([{...base,verifiedAt:"2026-06-01T00:00:00Z"}],{knownPlaceIds:["place-1"],targetApproved:1,now,maxAgeDays:90});
+assert.equal(stale.state,"INVALID_DIRECTORY");
+assert.ok(stale.items[0].reasons.includes("REVIEW_EXPIRED"));
+console.log("Local Earth directory reviews expire and remain unpaid/non-affiliate");
