@@ -3369,50 +3369,5 @@
     "lon": -110.8281389,
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q858794",
     "coordinateNote": "Place-reference coordinate for Old Faithful geyser; not claimed as exact camera position."
-  },
-  {
-    "id": "kyoto-nishiki-market-live",
-    "placeId": "kyoto-nishiki-market",
-    "title": "Kyoto — Nishiki Market",
-    "provider": "Kyoto City Tourism Association",
-    "country": "Japan",
-    "region": "Kyoto",
-    "timeZone": "Asia/Tokyo",
-    "categories": [
-      "Cities & Streets",
-      "Culture & Landmarks",
-      "Useful Earth",
-      "Interesting Earth"
-    ],
-    "truth": "LIVE_VIDEO",
-    "permission": "EMBED_ALLOWED",
-    "health": "HEALTHY",
-    "playback": "EMBED",
-    "sourceUrl": "https://global.kyoto.travel/en/comfort/",
-    "officialUrl": "https://global.kyoto.travel/en/comfort/",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0",
-    "thumbnailUrl": null,
-    "attribution": "Kyoto City Tourism Association",
-    "checkedAt": "2026-09-28T15:15:00Z",
-    "lastSuccessfulCheck": "2026-09-28T15:15:00Z",
-    "playbackVerifiedAt": "2026-09-29T03:57:23.380Z",
-    "failureReason": null,
-    "quality": 90,
-    "freshness": 99,
-    "moment": 94,
-    "story": "A scheduled live window into Kyoto's Nishiki Market, useful for seeing real-time visitor conditions before deciding when to go.",
-    "rightsBasis": "Kyoto City Tourism Association's official visitor-facing live-camera system publishes this exact Nishiki Market YouTube target. Deployed-origin human review on 2026-09-29, during the provider-published 11:00–18:00 JST live window, confirmed the exact branded player visibly playing/current. Approval is source-specific; preserve YouTube branding/controls and do not restream.",
-    "freshnessEvidence": "Official Kyoto tourism evidence states the Nishiki Market camera is live 11:00–18:00 JST for checking real-time conditions and crowding. Human review at 12:57 JST on 2026-09-29 confirmed exact current playback in deployed ERN (review batch bd51ac5733059f3f).",
-    "availabilitySchedule": {
-      "timeZone": "Asia/Tokyo",
-      "start": "11:00",
-      "end": "18:00",
-      "source": "Provider-published live schedule"
-    },
-    "lat": 35.011611,
-    "lon": 135.768056,
-    "coordinateBasis": "REGION_REFERENCE",
-    "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q34600",
-    "coordinateNote": "Kyoto city regional reference used for map placement; not claimed as the exact Nishiki Market camera position."
   }
 ]
