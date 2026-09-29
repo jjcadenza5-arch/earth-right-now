@@ -192,3 +192,13 @@ Only interrupt the operator for:
 - Minimal micro-updates.
 - “Continue” means permission to keep going.
 - Return only for a substantial milestone or a genuinely human-only action.
+
+## Continuity update — business readiness and new source lanes
+- Created `data/business-readiness.json` as a non-public machine-readable business state.
+- Travelpayouts project remains active/green with 26 available programs; payout method still requires a human account action before payouts can be received.
+- Existing verified links and current ERN content are not blocked by the missing payout method.
+- Commercial preflight now validates the active Travelpayouts state, keeps automatic placement/link rewriting/paid ranking OFF, and keeps the commercial opportunity queue public-OFF.
+- `data/commercial-link-opportunities.json` contains six vetted non-public next-link opportunities: Kyoto/Klook, Rome/Tiqets, Seoul/Klook, Rovaniemi/Klook, Dublin/Klook and Chicago/Tiqets.
+- Sydney Harbour research lane added: WebcamSydney currently presents a 24/7 Harbour/Opera House/Bridge view, but ERN keeps it research/link-first because explicit reuse/embed rights are not established.
+- Tokyo year-round research lane added: Tokyo Metropolitan Government's Tokyo Port DX publicly exposes live port road/floodgate cameras. Exact visitor-useful targets still need resolution; this does not yet solve the central-Tokyo visual gap.
+- `docs/CURRENT_HANDOFF.md` points to this file for any new chat.
