@@ -2,13 +2,28 @@ import fs from "node:fs";
 const x=JSON.parse(fs.readFileSync("data/distribution-channels.json","utf8"));
 const connected=(x.channels||[]).filter(c=>c.state==="CONNECTED");
 const pending=(x.channels||[]).filter(c=>c.state!=="CONNECTED");
-console.log(JSON.stringify({
+const websiteShareReady=x.website?.storyDeepLinks===true&&x.website?.nativeWebShare===true&&x.website?.copyLinkFallback===true;
+const aiSearchReady=x.aiSearch?.robotsPublished===true&&x.aiSearch?.sitemapPublished===true&&x.aiSearch?.oaiSearchBotAllowed===true&&x.aiSearch?.structuredSiteIdentity===true;
+const fail=[];
+if(!websiteShareReady)fail.push("website share readiness incomplete");
+if(!aiSearchReady)fail.push("AI/search discovery readiness incomplete");
+if(x.safety?.inventAccountClaimsAllowed!==false)fail.push("invented account claims must remain disabled");
+if(x.safety?.automaticAccountCreationAllowed!==false)fail.push("automatic account creation must remain disabled");
+if(x.safety?.automaticPostingAllowed!==false)fail.push("automatic posting must remain disabled");
+if(x.safety?.paidPromotionAssumed!==false)fail.push("paid promotion may not be assumed");
+if(x.safety?.commercialRankingAffected!==false)fail.push("commercial relationships may not affect ranking");
+for(const c of x.channels||[])if(c.state!=="CONNECTED"&&c.automaticPostingAllowed!==false)fail.push(c.id+": unconnected channel may not auto-post");
+const report={
   phase:"STAGE_N_ORGANIC_DISTRIBUTION",
-  websiteShareReady:x.website?.storyDeepLinks===true&&x.website?.nativeWebShare===true&&x.website?.copyLinkFallback===true,
-  aiSearchReady:x.aiSearch?.robotsPublished===true&&x.aiSearch?.sitemapPublished===true&&x.aiSearch?.oaiSearchBotAllowed===true&&x.aiSearch?.structuredSiteIdentity===true,
+  websiteShareReady,
+  aiSearchReady,
   connectedChannels:connected.map(x=>x.id),
   externalConnectionRequired:pending.map(x=>x.id),
   safety:x.safety,
   next:pending.length?"CONNECT_OFFICIAL_CHANNELS_WHEN_ACCOUNTS_EXIST":"OPERATE_CONNECTED_CHANNELS",
+  ok:fail.length===0,
+  fail,
   note:"Readiness only. NOT_CONNECTED never implies an ERN account exists, and no social account is created or posted to automatically."
-},null,2));
+};
+console.log(JSON.stringify(report,null,2));
+if(fail.length)process.exit(1);
