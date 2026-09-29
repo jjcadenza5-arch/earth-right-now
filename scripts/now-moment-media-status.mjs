@@ -32,6 +32,8 @@ must(state.includes("MAX_RETAINED_MEDIA=500"),"retained-media ceiling missing");
 must(state.includes("MAX_PHOTOS_PER_DAY=3")&&state.includes("MAX_PHOTOS_PER_PLACE_DAY=2"),"photo rate limits missing");
 must(state.includes("MAX_REPORTS_PER_DAY=10"),"report rate limit missing");
 must(state.includes("ttlMinutes:45"),"worker health TTL evidence missing");
+must(state.includes("expiredPendingCleanup"),"worker health must expose expired media pending cleanup");
+must(worker.includes("NOW_MOMENT_CLEANUP_FAILED")&&worker.includes("throw error"),"scheduled cleanup failures must be observable");
 must(privacy.includes("expire after 45 minutes")&&privacy.includes("still images only")&&privacy.includes("video remains disabled"),"published privacy notice no longer matches media policy");
 const prepared=fail.length===0;
 console.log(JSON.stringify({
@@ -41,7 +43,7 @@ console.log(JSON.stringify({
   deployed:false,
   publicActivationAllowed:false,
   policy:{ttlMinutes:45,maxStoredBytes:1572864,maxDimensionPx:1920,videoEnabled:false,automaticPublicationAllowed:false,freeTextAccepted:false,preciseCoordinatesStored:false},
-  safeguards:{privateObjectStorage:true,metadataScan:true,canonicalPlaceValidation:true,serverRateLimits:true,humanModeration:true,abuseReporting:true,expiryCleanup:true,retrySafeObjectDeletion:true,rawNetworkIdentifiersStored:false},
+  safeguards:{privateObjectStorage:true,metadataScan:true,canonicalPlaceValidation:true,serverRateLimits:true,humanModeration:true,abuseReporting:true,expiryCleanup:true,retrySafeObjectDeletion:true,cleanupBacklogObservable:true,rawNetworkIdentifiersStored:false},
   next:prepared?"CONTROLLED_INFRASTRUCTURE_DEPLOYMENT_WHEN_HUMAN_APPROVES":"REPAIR_MEDIA_PREPARATION",
   fail
 },null,2));
