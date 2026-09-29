@@ -345,13 +345,14 @@
     "reviewBatch": "bd51ac5733059f3f",
     "reviewedSourceUrl": "https://global.kyoto.travel/en/comfort/",
     "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0",
-    "reviewNote": "Deployed-origin human review confirmed exact branded player visibly playing/current.",
+    "reviewNote": "Deployed-origin human review at 12:57 JST on 2026-09-29 confirmed the exact branded player visibly playing/current inside the provider-published 11:00–18:00 JST live window. Evidence is accepted; public catalog publication is held until ERN can suppress live/current claims outside that schedule.",
     "reviewWindow": {
       "timeZone": "Asia/Tokyo",
       "start": "11:00",
       "end": "18:00",
       "source": "Provider-published live schedule"
-    }
+    },
+    "publicationHold": "SCHEDULE_AWARE_RUNTIME_REQUIRED"
   },
   {
     "id": "youtube-kyoto-arashiyama-bamboo",
