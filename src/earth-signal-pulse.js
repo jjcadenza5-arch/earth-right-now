@@ -23,7 +23,7 @@ export function earthSignalPulse(signals=[],placeId,{now=new Date()}={}){
       latestAgeLabel:null
     };
     current.count++;
-    if(signal.nearPlaceVerified)current.nearPlaceCount++;
+    if(signal.nearPlaceSelfReported)current.nearPlaceCount++;
     if(!current.latestCreatedAt||Date.parse(signal.createdAt)>Date.parse(current.latestCreatedAt)){
       current.latestCreatedAt=signal.createdAt;
       current.latestAgeLabel=signal.ageLabel;
