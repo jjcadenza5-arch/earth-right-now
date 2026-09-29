@@ -315,3 +315,37 @@ Only interrupt the operator for:
   - Cancún/Punta NIZUC and St. John's were added as maintained direct/provider current destinations.
 - `src/app-lite.js` remains safely below the fixed 100 KB cap at about **91.5 KB**.
 - Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until a push-triggered run is independently verified.
+
+
+## Continuation checkpoint — Local Earth freshness + release artifact/discovery hardening
+- Local Earth review state now has a bounded **90-day verification horizon**:
+  - `src/local-directory-status.js` exports `currentLocalDirectoryEntry` and marks old reviews `REVIEW_EXPIRED`;
+  - public app `approvedLocalPlaces()` now hides expired/future/paid/affiliate directory entries;
+  - crawlable destination pages require the same current local-place review before showing a reviewed local place;
+  - public local cards now show a readable review date rather than the full raw timestamp.
+- Current Local Earth pilot check: **10 total / 10 current-valid / all mapped to known ERN place IDs / all unpaid / all non-affiliate**.
+- `scripts/local-directory-status.mjs` is now a real release gate and exits non-zero unless the ten-place pilot is complete and valid.
+- Added `tests/local-directory-status.smoke.js` and included it in the current release smoke suite.
+- Pages workflow now explicitly runs **Local Earth directory integrity** and triggers on Local Earth status/runtime dependencies.
+- Release-artifact plumbing was corrected for the public Guide module chain:
+  - `guide-ai-client.js`
+  - `guide-ai-routing.js`
+  - `guide-ai-capabilities.js`
+  - `guide-ai-activation.js`
+  are now copied into `dist/src/` and included in the release manifest.
+- Added `tests/release-artifact-assets.smoke.js`; release smoke now prevents a public index reference from shipping without the Guide module chain.
+- Pages path filters were expanded so isolated changes to Guide/currentness/local/commercial build dependencies trigger a deployment build.
+- Explore/Search now filters catalog matches through `guideEligible`, so stale, degraded, schedule-closed or playback-stale sources are no longer counted/presented as “current windows” on the current-discovery surface.
+- ERN Stories now has explicit crawlable `CollectionPage` + `BreadcrumbList` structured data and richer Twitter/social metadata. Discoverability preflight guards those fields.
+- Living Atlas Local filter now avoids false coordinate precision:
+  - reviewed local places remain searchable;
+  - the Local map filter disables itself when there are no exact verified local-place coordinates;
+  - the map note explicitly explains that reviewed local places are not pinned until exact coordinates are verified.
+- Public About copy now explains that reviewed local-place entries expire from reviewed status until rechecked.
+- Chiang Mai official source gap was rechecked on 2026-09-29:
+  - Chiang Mai PAO Smart City portal remains active;
+  - all four public CCTV feeds still report **STANDBY / WAITING FOR FEED**;
+  - ERN correctly keeps Chiang Mai as an honest visual gap and does not create a LIVE source.
+- Destination opportunity matrix and provider observations now record that Chiang Mai recheck and keep the future For Places outreach lane for farms, resorts, markets and attractions.
+- `src/app-lite.js` remains below the fixed 100 KB cap at about **92.5 KB** after this batch.
+- Previous independently known green Pages run remains `36523426778`; do not claim a newer green deployment until a push-triggered run is independently verified.
