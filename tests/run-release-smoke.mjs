@@ -69,6 +69,7 @@ const releaseTests=[
   "viator-destination-match.smoke.js",
   "viator-auckland-pilot.smoke.js",
   "viator-api-foundation.smoke.js",
+  "viator-product-validation-boundary.smoke.js",
   "release-artifact-assets.smoke.js",
   "operator-console-network-safety.smoke.js",
   "operations-operator-brief.smoke.js",
