@@ -399,5 +399,29 @@
       "https://www.youtube.com/embed/Cp4RRAEgpeU",
       "https://developers.google.com/youtube/terms/required-minimum-functionality"
     ]
+  },
+  {
+    "id": "youtube-taitung-jinzun-official",
+    "status": "RESEARCH_ONLY",
+    "provider": "East Coast National Scenic Area",
+    "platform": "YouTube",
+    "sourceUrl": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+    "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw",
+    "ownerEvidence": "The official East Coast National Scenic Area live-camera page for Jinzun embeds exact YouTube player ZdqHgQwvZOw on the government tourism site.",
+    "currentEvidence": "The official Jinzun page is under the site's LIVE Camera section and presents the exact YouTube player for Jinzun, Donghe Township. Taitung tourism also lists Jinzun among its current live-camera locations.",
+    "discoveredAt": "2026-09-29T02:10:00Z",
+    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "currentEvidenceReviewedAt": "2026-09-29T02:10:00Z",
+    "platformEvidence": "Official government tourism page embeds the exact YouTube player. ERN may test only the standard branded YouTube player; technical reachability does not itself grant reuse permission or prove current playback.",
+    "replacementForSourceId": "taitung-jinzun",
+    "operationalResearchReason": "PROVIDER_DIVERSIFICATION_FROM_EXPIRED_COUCHTOURIST_EMBED",
+    "researchSources": [
+      "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+      "https://tour.taitung.gov.tw/en/media/live-camera/list",
+      "https://www.youtube.com/watch?v=ZdqHgQwvZOw",
+      "https://developers.google.com/youtube/terms/required-minimum-functionality"
+    ]
   }
 ]
