@@ -107,8 +107,8 @@ const submissionExternalHold=operationsOperatorBrief({
  delta:{direction:"UNCHANGED",improved:[],regressed:[]},
  submissionTransport:{status:"DISABLED",active:false,missing:["HTTPS_REVIEW_ENDPOINT"],privacyReady:true,retentionReady:true,retentionDays:30}
 });
-assert.match(submissionExternalHold,/only remaining transport blocker is a real HTTPS review endpoint/);
-assert.match(submissionExternalHold,/hold local submission work until backend infrastructure is deliberately provisioned/);
+assert.match(submissionExternalHold,/remaining transport gate is controlled HTTPS deployment evidence/);
+assert.match(submissionExternalHold,/public intake stays off/);
 
 const signalInfraHold=operationsOperatorBrief({
  snapshot:{...snapshot,insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},release:{blockers:0}},
