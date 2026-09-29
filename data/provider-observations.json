@@ -180,5 +180,33 @@
     "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
     "observedAt": "2026-09-29T04:58:00Z",
     "reason": "Taitung County Government's official tourism site currently lists Chihshang Paradise Road as a live camera and the Amazing Taitung county tourism channel hosts the exact live stream. Catalog now uses the official page as an external LINK_ONLY handoff."
+  },
+  {
+    "id": "cold-lake-marina",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T05:12:00Z",
+    "reason": "City of Cold Lake's official webcam page currently provides a Cold Lake Marina live feed and states the municipal feeds stream 24/7 year-round. Catalog now uses the official page as an external LINK_ONLY handoff."
+  },
+  {
+    "id": "metung-gippsland-lakes",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T05:12:00Z",
+    "reason": "Metung Hotel's official website currently offers a LIVE STREAM / Watch Live Stream surface. Catalog now uses the official property page as an external LINK_ONLY handoff."
+  },
+  {
+    "id": "maui-hale-pau-hana",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T05:12:00Z",
+    "reason": "The Hale Pau Hana's official site currently publishes its 'Live at the Hale Pau Hana' real-time stream. Catalog now uses the official page as an external LINK_ONLY handoff."
+  },
+  {
+    "id": "waikiki-south-shore",
+    "httpStatus": 200,
+    "confirmation": "OFFICIAL_SOURCE_CURRENT_LINK_ONLY",
+    "observedAt": "2026-09-29T05:12:00Z",
+    "reason": "Waikīkī Aquarium's official Webcams page currently features a South Shore Waikīkī live webcam. Catalog now uses the Aquarium page as an external LINK_ONLY handoff."
   }
 ]
