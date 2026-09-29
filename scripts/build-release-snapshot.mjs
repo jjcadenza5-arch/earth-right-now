@@ -1,4 +1,4 @@
-import { readFile,writeFile,mkdir,cp } from "node:fs/promises";
+import { readFile,writeFile,mkdir,cp,readdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
 const root=new URL("../",import.meta.url),dist=new URL("../dist/",import.meta.url);
 await mkdir(dist,{recursive:true});
@@ -64,7 +64,19 @@ await cp(new URL("../press.html",import.meta.url),new URL("press.html",dist));
 await cp(new URL("../data/public-brand-facts.json",import.meta.url),new URL("data/public-brand-facts.json",dist));
 await cp(new URL("../deploy/_headers",import.meta.url),new URL("_headers",dist));
 await cp(new URL("../deploy/_redirects",import.meta.url),new URL("_redirects",dist));
-const files=["index.html","src/app-lite.js","src/styles-lite.css","src/guide-public-copy.js","src/guide-ai-client.js","src/guide-ai-routing.js","src/guide-ai-capabilities.js","src/guide-ai-activation.js","src/home-i18n.js","src/participation-public-config.js","src/earth-signal-client.js","src/earth-signals.js","src/now-moments-page.js","src/submission-client.js","src/business-submission.js","src/submission-review-contract.js","src/for-places-page.js","manifest.webmanifest","service-worker.js","offline.html","sitemap.xml","robots.txt","CNAME","about.html","press.html","privacy.html","release-verification.html","data/public-brand-facts.json","data/sources.json","data/local-directory.json","data/travel-offers.json","data/provider-observations.json","data/earth-signal-deployment.json","data/submission-transport.json","data/release-evidence.json","for-places.html","now-moments.html","stories.html","src/ern-stories.js","src/stories-page.js","src/discovery-eligibility.js","src/source-recency.js","src/embed-policy.js","src/url-safety.js","src/solar-moment.js","src/media-identity.js","src/share-links.js","src/telemetry-policy.js","src/telemetry.js","src/commercial-attribution-runtime.js","review/inside-ern.html"];
+async function listArtifactFiles(dir,baseDir=dir){
+  const out=[];
+  for(const entry of await readdir(dir,{withFileTypes:true})){
+    const full=new URL(entry.name+(entry.isDirectory()?"/":""),dir);
+    if(entry.isDirectory())out.push(...await listArtifactFiles(full,baseDir));
+    else{
+      const rel=decodeURIComponent(full.pathname.slice(baseDir.pathname.length)).replace(/^\/+/, "");
+      if(rel&&rel!=="release-manifest.json")out.push(rel);
+    }
+  }
+  return out;
+}
+const files=(await listArtifactFiles(dist)).sort();
 const hashes={};for(const p of files){const b=await readFile(new URL(p,dist));hashes[p]=createHash("sha256").update(b).digest("hex")}
 const pkg=JSON.parse(await readFile(new URL("../package.json",import.meta.url),"utf8"));
 const commit=String(process.env.GITHUB_SHA||process.env.ERN_COMMIT_SHA||"").trim()||null;
