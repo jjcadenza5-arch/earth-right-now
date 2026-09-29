@@ -21,6 +21,8 @@ must(requireExists("scripts/participation-preflight.mjs"),"participation safety 
 must(css.includes("world-map-natural-earth.svg"),"Living Atlas lost its local real-map base");
 must(index.includes('data-map-filter="local"')&&app.includes('map-pin local'),"Living Atlas lost reviewed local-place discovery");
 must(app.includes("mappableLocal")&&app.includes("not pinned until exact coordinates are verified"),"Living Atlas must not imply exact local-place coordinates");
+must(app.includes('if(!currentTruthClaim(s)){mount.dataset.visualKind="reference"'),"Atlas recheck media must fail closed to a reference visual");
+must(app.includes('b.querySelector("small").textContent=publicTruth(alt)'),"Viewer alternates must use currentness-aware truth labels");
 must(index.includes('id="atlasBeyond"')&&app.includes("renderAtlasBeyond(")&&css.includes("Atlas beyond-map coverage"),"Living Atlas lost honest unmapped-place discovery");
 must(app.includes('DYNAMIC_UNPINNED'),"Living Atlas must distinguish dynamic Earth views from missing-coordinate places");
 must(index.includes("atlas-legend")&&app.includes("coordinate provenance")&&css.includes("Atlas legend and coordinate honesty"),"Living Atlas lost coordinate-honesty cues");
