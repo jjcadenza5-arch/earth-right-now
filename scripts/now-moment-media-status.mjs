@@ -24,6 +24,8 @@ must(metadata.includes("EXIF_PRESENT")&&metadata.includes("XMP_PRESENT")&&metada
 must(metadata.includes("PNG_METADATA_CHUNK")&&metadata.includes("WEBP_METADATA_CHUNK"),"PNG/WebP metadata rejection incomplete");
 must(metadata.includes("matchesAscii")&&!metadata.includes("String.fromCharCode"),"metadata scan must avoid whole-image string conversion");
 must(service.includes("moderationRequired:true")&&service.includes("reportNowMomentPhoto")&&service.includes("cleanupNowMomentPhotos"),"moderation/report/cleanup service contract incomplete");
+must(!service.includes("rateLimiter.check(")&&service.includes("rateLimiter.commit("),"photo rate limiting must use a single atomic reservation/commit");
+must(worker.includes("readBodyBounded")&&worker.includes("STORED_SIZE_MISMATCH"),"bounded upload body verification missing");
 must(service.includes("metadata.listExpired")&&service.indexOf("objects.delete(r.objectKey)")<service.indexOf("metadata.delete(r.id)"),"retry-safe expiry cleanup ordering missing");
 must(state.includes('b.op==="list-expired"')&&state.includes('b.op==="delete"'),"retry-safe media state cleanup operations missing");
 must(worker.includes("PENDING_REVIEW")&&worker.includes("published:false"),"upload must remain moderation-first");
