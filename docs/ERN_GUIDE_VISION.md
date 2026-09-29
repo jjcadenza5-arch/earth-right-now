@@ -39,6 +39,7 @@ The Guide should be able to hand off into:
 - Do not let affiliate or sponsored status affect Earth-view ranking.
 - Preserve multilingual intent handling.
 - Help the visitor move; do not trap them in a conversation pane.
+- Deployed model infrastructure is not the same as public activation. Public generative calls remain fail-closed until explicit ERN capability flags are enabled; production deployment evidence alone may not turn the feature on.
 
 ## Success condition
 A visitor should feel that ERN understands what they are trying to experience, even if they do not know what to search for yet.
