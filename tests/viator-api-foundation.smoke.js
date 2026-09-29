@@ -21,12 +21,17 @@ assert.match(worker,/PUBLIC_PRODUCTS_DISABLED/);
 assert.match(worker,/publicViatorProduct/);
 assert.ok(!worker.includes("P00322254"),"Partner ID must not be hard-coded in API Worker");
 
-assert.equal(deployment.status,"DEPLOYED_GATED");
+assert.equal(deployment.status,"DEPLOYED_AUTH_CONFIRMED_PUBLIC_OFF");
 assert.equal(deployment.secretIsolation,true);
 assert.equal(deployment.apiKeyConfigured,true);
+assert.equal(deployment.sandboxKeyState,"ACTIVE_AUTH_CONFIRMED");
+assert.equal(deployment.taxonomyVerified,true);
 assert.equal(deployment.publicActivationAllowed,false);
 assert.equal(map.policy.automaticFuzzyMatchingAllowed,false);
 assert.equal(map.policy.publicProductsRequireApprovedMapping,true);
+const auckland=map.mappings.find(x=>x.ernPlaceId==="auckland-viaduct-harbour");
+assert.equal(auckland?.status,"APPROVED");
+assert.equal(auckland?.viatorDestinationId,"391");
 
 assert.equal(validateViatorSearchRequest({placeId:"p",language:"en-US",currency:"THB",count:6}).valid,true);
 assert.equal(validateViatorSearchRequest({placeId:"p",language:"en-US",currency:"XYZ",count:6}).valid,false);
