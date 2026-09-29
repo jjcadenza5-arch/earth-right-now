@@ -16,6 +16,7 @@ export async function createNowMomentPhoto(input={},context={}){
   if(!subjectOk(context.rateSubject))return{ok:false,stage:"RATE_LIMIT",reason:"RATE_SUBJECT_REQUIRED"};
   if(typeof context.rateLimiter?.check!=="function"||typeof context.rateLimiter?.commit!=="function")throw Object.assign(new Error("PHOTO_RATE_LIMITER_REQUIRED"),{code:"PHOTO_RATE_LIMITER_REQUIRED"});
   const bytes=input.bytes instanceof Uint8Array?input.bytes:new Uint8Array(input.bytes||[]);
+  if(Number(input.storedBytes)!==bytes.byteLength)return{ok:false,stage:"VALIDATION",reason:"STORED_SIZE_MISMATCH"};
   const scan=nowMomentMetadataScan(bytes,input.mimeType);
   if(!scan.ok)return{ok:false,stage:"METADATA",reason:scan.issues[0],issues:scan.issues};
   const now=context.now instanceof Date?context.now:new Date();
