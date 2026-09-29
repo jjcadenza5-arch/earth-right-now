@@ -1,3 +1,11 @@
+## 2026-09-29 — Apply deployed human playback evidence
+- Recorded 10 fresh deployed-origin playback confirmations for existing approved sources.
+- Accepted exact-player human confirmation for Kyoto Nishiki Market, Rovaniemi Santa Claus Village and Taitung Jinzun.
+- Promoted Rovaniemi and Jinzun in place to official provider-branded YouTube embeds.
+- Kept Nishiki approved but publication-held so ERN does not imply 24/7 availability outside its 11:00–18:00 JST schedule.
+- Added schedule-aware source availability/currentness checks.
+- Pages run `36520033122` succeeded through Deploy.
+
 ## 2026-09-29 — Restore green Pages release and deploy diversification review
 - Repaired malformed legacy smoke syntax and separated historical regression maintenance from current release invariants.
 - Added a 20-test current release smoke suite while retaining all-test syntax coverage and the full historical suite for maintenance.
