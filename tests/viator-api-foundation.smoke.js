@@ -21,7 +21,7 @@ assert.match(worker,/PUBLIC_PRODUCTS_DISABLED/);
 assert.match(worker,/publicViatorProduct/);
 assert.ok(!worker.includes("P00322254"),"Partner ID must not be hard-coded in API Worker");
 
-assert.equal(deployment.status,"DEPLOYED_AUTH_CONFIRMED_PUBLIC_OFF");
+assert.equal(deployment.status,"PRODUCT_VALIDATION_CONFIRMED_PUBLIC_OFF");
 assert.equal(deployment.secretIsolation,true);
 assert.equal(deployment.apiKeyConfigured,true);
 assert.equal(deployment.sandboxKeyState,"ACTIVE_AUTH_CONFIRMED");
