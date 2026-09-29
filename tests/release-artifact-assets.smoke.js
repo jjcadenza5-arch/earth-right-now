@@ -4,6 +4,8 @@ const build=fs.readFileSync(new URL("../scripts/build-release-snapshot.mjs",impo
 const required=["guide-ai-client.js","guide-ai-routing.js","guide-ai-capabilities.js","guide-ai-activation.js","playback-proof.js","fullscreen-continuity.js","candidate-evidence-binding.js","travel-planning-client.js"];
 assert.ok(build.includes("listArtifactFiles"),"release manifest must enumerate the full dist artifact");
 assert.ok(build.includes('rel!=="release-manifest.json"'),"release manifest must exclude only itself from artifact hashing");
+assert.ok(build.includes("data/viator-api-deployment.json"),"release build must ship Viator public config");
+assert.ok(build.includes("data/viator-destination-map.json"),"release build must ship Viator destination mapping registry");
 for(const name of required){
   assert.ok(build.includes('../src/'+name),"release build must copy "+name);
 }
