@@ -32,7 +32,9 @@ const releaseTests=[
   "guide-ai-deployment-readiness.smoke.js",
   "destination-page-builder.smoke.js",
   "local-directory-status.smoke.js",
-  "release-artifact-assets.smoke.js"
+  "release-artifact-assets.smoke.js",
+  "release-candidate.smoke.js",
+  "candidate-evidence-binding.smoke.js"
 ];
 
 let failed=0;
