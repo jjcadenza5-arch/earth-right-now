@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T05:38:00Z",
+  "generatedAt": "2026-09-29T05:58:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -747,6 +747,51 @@
         "catalogId": "sasagawa-nagare",
         "mode": "EXTERNAL_LIVE",
         "officialPage": "https://www.city.murakami.lg.jp/site/live-camera/",
+        "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
+      }
+    },
+    {
+      "id": "cancun-nizuc-direct-live-replacement",
+      "destination": "Punta NIZUC / Cancún, Quintana Roo, Mexico",
+      "provider": "NIZUC Resort & Spa",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "OFFICIAL_PROPERTY_LIVE_CAM_REPLACEMENT",
+      "visitorDecisionValue": "VERY_HIGH",
+      "qualityPotential": "HIGH",
+      "evidenceUrls": [
+        "https://www.nizuc.com/live-cam/",
+        "https://www.nizuc.com/contact/"
+      ],
+      "state": "RESOLVED_PROMOTED_OFFICIAL_LINK_ONLY",
+      "why": "NIZUC Resort & Spa's own live-cam page provides a current Cancún beachfront window and replaces the older CouchTourist dependency with a direct resort-operated source.",
+      "next": "Maintain the NIZUC page as ERN's source-of-truth handoff. Keep LINK_ONLY unless source-specific embed permission and playback review justify a different mode.",
+      "replacesExpiredSourceId": "cancun-live-aqua-beach",
+      "resolvedTarget": {
+        "catalogId": "cancun-live-aqua-beach",
+        "mode": "EXTERNAL_LIVE",
+        "officialPage": "https://www.nizuc.com/live-cam/",
+        "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
+      }
+    },
+    {
+      "id": "st-johns-cbc-harbour-replacement",
+      "destination": "St. John's Harbour / Narrows, Newfoundland and Labrador, Canada",
+      "provider": "CBC News Newfoundland and Labrador",
+      "priority": "P1_REPLACEMENT",
+      "candidateType": "PROVIDER_OPERATED_LIVE_HARBOUR_WEBCAM",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "evidenceUrls": [
+        "https://www.youtube.com/watch?v=3x04ElCJNxg"
+      ],
+      "state": "RESOLVED_PROMOTED_PROVIDER_LINK_ONLY",
+      "why": "CBC News NL currently operates a public St. John's harbour/Narrows webcam from The Rooms, replacing the older CouchTourist dependency with the broadcaster's live stream.",
+      "next": "Maintain the current CBC News NL stream as ERN's source-of-truth handoff. Keep LINK_ONLY and respect scheduled maintenance windows.",
+      "replacesExpiredSourceId": "st-johns-harbour",
+      "resolvedTarget": {
+        "catalogId": "st-johns-harbour",
+        "mode": "EXTERNAL_LIVE",
+        "officialPage": "https://www.youtube.com/watch?v=3x04ElCJNxg",
         "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
       }
     }
