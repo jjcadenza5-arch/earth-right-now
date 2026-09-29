@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T04:40:00Z",
+  "generatedAt": "2026-09-29T04:55:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -460,6 +460,31 @@
       "state": "CURRENT_LIVE_SOURCE_CONFIRMED_RIGHTS_LINK_FIRST_RESEARCH",
       "why": "WebcamSydney describes a 24/7 live Sydney Harbour view covering the Opera House, Harbour Bridge, Circular Quay and CBD. This adds distinct city/harbour value beyond ERN's existing Coogee beach window.",
       "next": "Keep research/link-first. The provider marks its content copyright-protected and ERN has no explicit reuse/embed permission yet. Do not embed, restream or copy footage without a source-specific permission path."
+    },
+    {
+      "id": "tokyo-port-dx-live-cameras",
+      "priority": "P1_YEAR_ROUND_OFFICIAL",
+      "placeGroup": "Tokyo Port / waterfront infrastructure",
+      "country": "Japan",
+      "provider": "Tokyo Metropolitan Government — Bureau of Port and Harbor",
+      "candidateType": "OFFICIAL_PUBLIC_LIVE_CAMERA_PLATFORM",
+      "visitorDecisionValue": "MEDIUM_HIGH",
+      "qualityPotential": "UNKNOWN",
+      "programFit": [
+        "transport",
+        "activities",
+        "services"
+      ],
+      "evidenceUrls": [
+        "https://www.metro.tokyo.lg.jp/information/press/2026/03/2026032511"
+      ],
+      "observedTargets": [
+        "Tokyo Port road conditions",
+        "Tokyo Port floodgate/waterfront infrastructure"
+      ],
+      "state": "OFFICIAL_LIVE_CAMERA_PLATFORM_CONFIRMED_EXACT_VISITOR_TARGET_REQUIRED",
+      "why": "Tokyo Metropolitan Government states that Tokyo Port DX publicly exposes live cameras showing roads and floodgates. This provides a legitimate year-round current-visual lane, but exact visitor-facing viewpoints and usefulness must be resolved before ERN promotion.",
+      "next": "Resolve exact public camera URLs and assess whether any view materially helps a visitor understand Tokyo waterfront/transport conditions. Do not treat the platform as a Shibuya or central-Tokyo substitute unless the actual viewpoint supports that use."
     }
   ],
   "guardrails": {
