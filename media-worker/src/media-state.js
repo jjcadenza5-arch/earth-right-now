@@ -95,10 +95,15 @@ export class MediaState{
       return json(200,{ok:true,record:next});
     }
 
-    if(b.op==="delete-expired"){
-      const rows=[...this.sql.exec("SELECT record_json FROM photos WHERE expiry_at <= ?",now)].map(r=>JSON.parse(r.record_json));
-      this.sql.exec("DELETE FROM photos WHERE expiry_at <= ?",now);
-      return json(200,{ok:true,deleted:rows});
+    if(b.op==="list-expired"){
+      const rows=[...this.sql.exec("SELECT record_json FROM photos WHERE expiry_at <= ? ORDER BY expiry_at ASC",now)].map(r=>JSON.parse(r.record_json));
+      return json(200,{ok:true,records:rows});
+    }
+    if(b.op==="delete"){
+      const id=String(b.id||"");
+      if(!id)return json(400,{ok:false,reason:"ID_REQUIRED"});
+      this.sql.exec("DELETE FROM photos WHERE id = ?",id);
+      return json(200,{ok:true,id});
     }
 
     if(b.op==="rate-check"||b.op==="rate-commit"){
