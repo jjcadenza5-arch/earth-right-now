@@ -15,5 +15,10 @@ if(data.invariants?.providerConcentrationMayAffectWatchEarthRanking!==false) fai
 if(data.invariants?.providerConcentrationMayOverrideTruth!==false) fail.push("provider concentration may override truth");
 if(data.invariants?.providerConcentrationMayOverrideQuality!==false) fail.push("provider concentration may override quality");
 if(!Array.isArray(data.placeUniverse)||data.placeUniverse.length<8) fail.push("place universe is unexpectedly narrow");
+const stale=data.currentStaleDebt;
+if(!stale||stale.total!==3||!Array.isArray(stale.items)||stale.items.length!==3) fail.push("current stale-debt classification missing or incomplete");
+const staleClasses=new Set((stale?.items||[]).map(x=>x.class));
+for(const cls of ["PLAYBACK_EVIDENCE_DEBT","SEASONAL_OFF_SEASON","EDITORIAL_CURRENTNESS_DEBT"])if(!staleClasses.has(cls))fail.push("stale debt class missing: "+cls);
+if((stale?.items||[]).some(x=>!/^(HIGH|LOW_UNTIL_SEASON_OR_MATERIAL_CHANGE|ROUTINE)$/.test(String(x.priority||""))))fail.push("stale debt priority label invalid");
 console.log(JSON.stringify({ok:fail.length===0,totalWeight:total,commercialWeight:w.practicalCommercialFit,placeUniverseCount:data.placeUniverse?.length||0,fail},null,2));
 if(fail.length) process.exit(1);
