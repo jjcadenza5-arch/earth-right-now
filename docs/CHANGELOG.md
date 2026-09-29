@@ -1,3 +1,10 @@
+## 2026-09-29 — Confirm Travelpayouts platform and publish scheduled Nishiki
+- Recorded the operator-confirmed green/active Earthrightnow Travelpayouts project with 26 available programs and payout method still pending.
+- Strengthened commercial preflight around manual-only affiliate operation and ranking independence.
+- Added a public-OFF exact-link-gated commercial opportunity queue.
+- Published Nishiki Market with schedule-aware currentness and live-hours wording.
+- Catalog checkpoint: 94 total / 76 current checks / 75 current+healthy / 17 current embeds.
+
 ## 2026-09-29 — Apply deployed human playback evidence
 - Recorded 10 fresh deployed-origin playback confirmations for existing approved sources.
 - Accepted exact-player human confirmation for Kyoto Nishiki Market, Rovaniemi Santa Claus Village and Taitung Jinzun.
