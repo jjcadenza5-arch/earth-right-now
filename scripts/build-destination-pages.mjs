@@ -4,7 +4,7 @@ import fs from "node:fs";
 
 const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
 const base="https://earthrightnow.app/";
-const staticLastmod="2026-09-27";
+const staticLastmod="2026-09-29";
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const slug=s=>String(s).replace(/[^a-zA-Z0-9_-]/g,"-");
 const safe=u=>{try{const x=new URL(u);return /^https?:$/.test(x.protocol)?x.toString():""}catch{return""}};
@@ -116,7 +116,9 @@ const staticUrls=[
   {loc:base+"about.html",lastmod:staticLastmod},
   {loc:base+"privacy.html",lastmod:staticLastmod},
   {loc:base+"for-places.html",lastmod:staticLastmod},
-  {loc:base+"now-moments.html",lastmod:staticLastmod}
+  {loc:base+"now-moments.html",lastmod:staticLastmod},
+  {loc:base+"stories.html",lastmod:staticLastmod},
+  {loc:base+"press.html",lastmod:staticLastmod}
 ];
 const xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+[...staticUrls,...urls].map(u=>'  <url><loc>'+u.loc.replace(/&/g,"&amp;")+'</loc>'+(u.lastmod?'<lastmod>'+u.lastmod+'</lastmod>':'')+'</url>').join("\n")+'\n</urlset>\n';
 fs.writeFileSync("sitemap.xml",xml);
