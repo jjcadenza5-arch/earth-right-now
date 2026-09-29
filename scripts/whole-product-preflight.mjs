@@ -8,6 +8,7 @@ for(const id of ["watch","search","map","localEarth","participate","saved","guid
 for(const href of ["./for-places.html","./now-moments.html","./about.html","./privacy.html"])must(index.includes(`href="${href}"`),`public path missing: ${href}`);
 for(const fn of ["function search(","function renderMap(","function renderLocalEarth(","function guideResponse(","function runGuide("])must(app.includes(fn),`runtime capability missing: ${fn}`);
 must(index.includes("src/travel-planning-client.js")&&app.includes("const TP=globalThis.ERNTravelPlanning"),"travel planning helper is not wired before app runtime");
+must(!/Real conditions/i.test(index),"Homepage must not imply independent real-condition telemetry while public context is OFF");
 must(app.includes("guidePlaceMatches(")&&app.includes('params.get("guide")'),"ERN Guide place/deep-link routing missing");
 must(read("src/release-verification-console.js").includes('./#view='),"release verification provider links do not match viewer routing");
 must(app.includes("localIntent="),"Search lost small/local-place intent handling");
