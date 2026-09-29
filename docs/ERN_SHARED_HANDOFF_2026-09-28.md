@@ -141,3 +141,12 @@ User preference: work autonomously in large batches and return only for genuine 
 - Current release testing is intentionally split: all JS/MJS test files are syntax-checked; a curated 20-test release suite guards current truth/safety/release invariants; the full 809-test historical suite remains a maintenance/migration backlog and is not allowed to freeze the current product on obsolete timestamps/UI assumptions.
 - The existing dedicated Pages preflights continue to gate launch, mobile, accessibility, performance, rollback, participation, curation, catalog metadata, recency, Guide, expansion, context, commercial placement, discoverability and operator-review integrity.
 - `app-lite.js` stays under the existing 100 KB performance cap by keeping extended static homepage translations in the already-loaded `home-i18n.js` bundle; no performance budget was raised.
+
+## Human evidence absorbed — 2026-09-29
+- Human evidence packet `bd51ac5733059f3f` from the deployed ERN review origin was accepted.
+- Fresh playback evidence was recorded for 10 existing approved inside-ERN sources.
+- Rovaniemi Santa Claus Village and Taitung Jinzun are now published as official inside-ERN YouTube sources.
+- Kyoto Nishiki Market is human-confirmed and permission-confirmed, including successful playback at 12:57 JST inside its provider-published 11:00–18:00 JST window. It remains intentionally unpublished pending clearer scheduled-source wording outside provider hours.
+- Shared source availability now understands provider-published live windows. Current discovery and playback actions fail closed outside scheduled hours; browser current-truth gating also respects schedules.
+- Current checkpoint at the evidence timestamp: 93 sources; 75 current checks; 74 current+healthy truth-ready; 16 current embeds; 15 expired embeds.
+- Final release validation: Pages run `36520033122`, head `94c1fdd1a1b84111e86a07c22cd34584e94ac7ba`, SUCCESS through Deploy.
