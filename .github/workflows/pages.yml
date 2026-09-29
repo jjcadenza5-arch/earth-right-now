@@ -14,6 +14,7 @@ on:
       - "src/guide-ai-activation.js"
       - "src/current-window-label.js"
       - "src/playback-capability.js"
+      - "src/playback-proof.js"
       - "src/now-evidence.js"
       - "src/local-directory-status.js"
       - "src/travel-offer-verification.js"
