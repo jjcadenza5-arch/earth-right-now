@@ -3,6 +3,7 @@ import { currentSource } from "../src/discovery-eligibility.js";
 import { sourceAvailabilityState,recencyState } from "../src/source-recency.js";
 import { currentTravelOffer } from "../src/travel-offer-verification.js";
 import { affiliatePartner,activeAffiliatePartner } from "../src/affiliate-partners.js";
+import { currentLocalDirectoryEntry } from "../src/local-directory-status.js";
 import fs from "node:fs";
 
 const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
@@ -41,7 +42,7 @@ const urls=[];
 const buildNow=new Date();
 const activePartners=new Set(affiliatePartners.map(affiliatePartner).filter(Boolean).filter(p=>activeAffiliatePartner(p,{now:buildNow.getTime()})).map(p=>p.id));
 const offerForPlace=id=>travelOffers.filter(o=>o?.placeId===id&&o?.verified===true&&currentTravelOffer(o,{now:buildNow.getTime()})&&(!o.affiliate||activePartners.has(String(o.partnerId||""))));
-const localForPlace=id=>localDirectory.filter(x=>x?.placeId===id&&x?.status==="APPROVED"&&x?.paidPlacement===false&&safe(x.url));
+const localForPlace=id=>localDirectory.filter(x=>x?.placeId===id&&currentLocalDirectoryEntry(x,{now:buildNow,maxAgeDays:90})&&safe(x.url));
 
 for(const [id,items] of map){
   const currentItems=items.filter(s=>pageCurrentSource(s,buildNow));
