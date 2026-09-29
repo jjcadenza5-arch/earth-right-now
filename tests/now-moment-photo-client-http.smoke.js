@@ -18,6 +18,8 @@ const canvas={width:0,height:0,getContext(){return{drawImage(){}}},toBlob(cb){cb
 const prepared=await prepareNowMomentPhoto(fakeFile,{createBitmap:async()=>bitmap,createCanvas:()=>canvas});
 assert.equal(prepared.ok,true);assert.equal(prepared.width,1920);assert.equal(prepared.height,960);assert.equal(prepared.metadataStripped,true);assert.equal(prepared.originalNameStored,false);
 
+const activeCaps=Object.fromEntries(Object.keys((await import("../src/now-moment-photo-capabilities.js")).NOW_MOMENT_PHOTO_CAPABILITIES).map(k=>[k,true]));
+const placeRequired=await nowMomentPhotoHttpRequest({method:"GET",path:"/api/now-moments/photos",query:{}},{capabilities:activeCaps});assert.equal(placeRequired.status,400);assert.equal(placeRequired.body.reason,"PLACE_ID_REQUIRED");
 const off=await nowMomentPhotoHttpRequest({method:"POST",path:"/api/now-moments/photos",body:new Uint8Array([1]),headers:{}},{capabilities:{}});
 assert.equal(off.status,503);assert.equal(off.body.mode,"OFF");
 console.log("Phase L client sanitizer and HTTP contract remain fail-closed");
