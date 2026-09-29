@@ -14,6 +14,9 @@ console.assert(worker.includes("readJsonBodyBounded")&&worker.includes("4096"),"
 console.assert(worker.includes("ERN_RATE_HMAC_KEY")&&worker.includes("CF-Connecting-IP"),"Worker must derive rate subjects server-side");
 console.assert(worker.includes("rawNetworkIdentifiersStored:false"),"Health response must state raw network identifiers are not stored");
 console.assert(worker.includes("TRUSTED_CATALOG_UNAVAILABLE")&&worker.includes("ERN_CATALOG_URL"),"Worker must validate places from ERN's server-fetched catalog");
+console.assert(worker.includes("SIGNAL_PLACE_ID_REQUIRED"),"Public Earth Signal listing must be place-scoped");
+console.assert(worker.includes("constantTimeEqual")&&!worker.includes("got!==`Bearer ${expected}`"),"Earth Signal review bearer token must not use direct string equality");
+console.assert(worker.indexOf("EARTH_SIGNALS_NOT_ACTIVATED")<worker.indexOf("const subject=await rateSubject"),"Worker must fail closed before rate-subject/catalog work when Signals are OFF");
 console.assert(state.includes("CREATE TABLE IF NOT EXISTS signals")&&state.includes("CREATE TABLE IF NOT EXISTS reports"),"Durable signal/report storage missing");
 console.assert(state.includes("CREATE TABLE IF NOT EXISTS rate_events"),"Durable subject-scoped rate state missing");
 console.assert(state.includes("DELETE FROM signals WHERE expiry_at <= ?"),"Expiry cleanup must be implemented");
