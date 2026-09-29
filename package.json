@@ -81,7 +81,8 @@
     "context:status": "node scripts/realtime-context-status.mjs",
     "sources:opportunity-matrix": "node scripts/destination-opportunity-status.mjs",
     "sources:recency-summary": "node scripts/source-recency-summary.mjs",
-    "test:release": "node tests/run-release-smoke.mjs"
+    "test:release": "node tests/run-release-smoke.mjs",
+    "release:public-module-integrity": "node scripts/public-module-integrity.mjs"
   },
   "engines": {
     "node": ">=20"
