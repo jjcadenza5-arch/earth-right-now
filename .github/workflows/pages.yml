@@ -33,6 +33,8 @@ on:
       - "docs/SEE_BEFORE_YOU_GO_STANDARD.md"
       - "data/local-directory.json"
       - "data/travel-offers.json"
+      - "scripts/public-brand-facts-status.mjs"
+      - "data/distribution-channels.json"
       - "data/affiliate-partners.json"
       - "data/affiliate-platform-research.json"
       - "data/commercial-link-opportunities.json"
@@ -184,6 +186,8 @@ jobs:
         run: npm run release:build
       - name: Public module integrity
         run: npm --silent run release:public-module-integrity -- dist
+      - name: Public brand identity integrity
+        run: node scripts/public-brand-facts-status.mjs
       - name: Public discoverability preflight
         run: npm --silent run discoverability:preflight -- dist
       - name: Operator review page preflight
