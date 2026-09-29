@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T05:42:00Z",
+  "generatedAt": "2026-09-29T06:22:00Z",
   "mission": "See before you go",
   "productTest": "Would this current view help someone understand the place better before deciding whether, when, or how to go?",
   "hardGates": [
@@ -68,7 +68,7 @@
       "mayOverrideTruth": false,
       "mayOverridePermission": false,
       "mayOverrideQuality": false,
-      "currentSignal": "Thirteen catalog dependencies have now been moved off older CouchTourist paths during the 2026-09-29 continuation work, using independent official/direct LINK_ONLY sources without weakening permission gates. The catalog remains 94 sources; current recency checks are 89 and expired checks are down to 2. The two remaining expired CouchTourist records are Cancún Live Aqua Beach and St. John's Harbour, where a stronger source-specific official/direct replacement has not yet been verified."
+      "currentSignal": "Expired recency debt is now zero after moving the remaining Cancún and St. John's records to direct current source paths. The catalog remains 94 sources with 4 CouchTourist records still present, all non-degraded at this checkpoint. Continue diversification opportunistically when a stronger official/direct source exists; do not replace a healthy source merely to force provider counts lower."
     }
   }
 }
