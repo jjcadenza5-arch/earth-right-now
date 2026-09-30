@@ -766,3 +766,19 @@ ERN core website is complete as a stable beta. Autonomous work is now maintenanc
 - Current operator brief explicitly reports **AUTONOMOUS HOLD — no high-priority local implementation or research lane remains open**.
 - Open Stage R lanes are all external/account/provider or explicit product decisions. Do not reopen local construction merely because they remain untimed waits.
 
+## Phase 4 entry — Controlled Infrastructure Pilots
+- Phase 3 is now COMPLETE.
+- Phase 4 is ACTIVE at the controlled-infrastructure stage.
+- Earth Signals Worker: deployed, health-verified, PUBLIC-OFF.
+- Submission Worker: deployed, health-verified, PUBLIC-OFF.
+- Now Moment media remains prepared but not deployed and must remain downstream of structured Earth Signals.
+- Canonical product phase status now reports `phaseNumber: 4`, label `Controlled Infrastructure Pilots`.
+- Phase 4 Pilot 1 is intentionally **Earth Signals**. Scope and rollback are documented in `docs/PHASE_4_CONTROLLED_PILOT_PLAN.md`.
+- No public participation pilot has been activated yet.
+- The next genuine human/product gate is explicit approval to activate the limited Earth Signals pilot. Until then keep:
+  - `ERN_EARTH_SIGNALS_ENABLED=false`
+  - `publicActivationAllowed=false`
+  - Submission intake OFF
+  - Now Moment photo/video OFF
+- Do not confuse Phase 4 entry with permission to activate a visitor-facing feature.
+
