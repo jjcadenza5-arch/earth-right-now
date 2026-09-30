@@ -7,7 +7,7 @@ const nowJs=fs.readFileSync("src/now-moments-page.js","utf8");
 const places=fs.readFileSync("for-places.html","utf8");
 const placesJs=fs.readFileSync("src/for-places-page.js","utf8");
 
-console.assert(manifest.publicActivationAllowed===false,"Earth Signals public activation must default false");
+console.assert(manifest.publicActivationAllowed===true&&manifest.liveHealthVerified===true&&manifest.liveHealth?.contributionsEnabled===true,"Earth Signals limited public pilot must require verified activation evidence");
 console.assert(config.includes('earthSignals?.status==="DEPLOYED"')&&config.includes("publicActivationAllowed===true"),"Public config must require deployed + explicit Earth Signal activation");
 console.assert(config.includes("submissions?.enabled===true"),"Public config must require explicit submission transport enablement");
 console.assert(media.publicActivationAllowed===false&&media.status==="NOT_DEPLOYED","Now Moment media must remain public-OFF and not deployed");
@@ -18,4 +18,4 @@ console.assert(now.includes("still photos only")&&now.includes("Video and short 
 console.assert(places.includes('id="cameraConsentWrap" hidden')&&placesJs.includes("consent?.checked!==true"),"Submission surface must require explicit send consent");
 console.assert(placesJs.includes("submissionRecord")&&placesJs.includes("createSubmissionClient"),"For Places must use canonical validation/client plumbing");
 console.assert(!now.includes("ERN_SIGNAL_REVIEW_TOKEN")&&!places.includes("ERN_SUBMISSION_REVIEW_TOKEN"),"Public pages must never contain review secrets");
-console.log("Phase K public participation surfaces remain activation-aware and fail-closed");
+console.log("Phase 4 public participation surfaces activate Earth Signals only from verified manifest evidence while other lanes remain fail-closed");
