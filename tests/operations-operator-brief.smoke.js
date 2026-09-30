@@ -266,3 +266,24 @@ assert.match(phase4ObservationBrief,/EARLY_OBSERVATION/);
 assert.match(phase4ObservationBrief,/2h \/ minimum 24h/);
 assert.match(phase4ObservationBrief,/review eligible NO/);
 assert.match(phase4ObservationBrief,/automatic expansion FORBIDDEN/);
+
+
+const phase5ReadinessBrief=operationsOperatorBrief({
+ snapshot:{insideERN:{ready:6,targetReady:5,readyShortfall:0,recoveryDebt:0},providers:{families:2,targetFamilies:2},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ phase5Readiness:{
+   state:"PHASE4_OBSERVATION_CONTINUES",
+   technicallyReviewEligible:false,
+   phase5EntryApproved:false,
+   minimumPhase4ObservationHours:24,
+   currentHealthEvidenceSupplied:true,
+   phase4Observation:{elapsedHours:4.5},
+   blockers:["PHASE4_MINIMUM_OBSERVATION_WINDOW_INCOMPLETE"],
+   automaticPhase5EntryAllowed:false,
+   next:"CONTINUE_PHASE4_OBSERVATION"
+ }
+});
+assert.match(phase5ReadinessBrief,/Phase 5 readiness/);
+assert.match(phase5ReadinessBrief,/PHASE4_OBSERVATION_CONTINUES/);
+assert.match(phase5ReadinessBrief,/4.5h \/ minimum 24h/);
+assert.match(phase5ReadinessBrief,/automatic Phase 5 entry FORBIDDEN/);
