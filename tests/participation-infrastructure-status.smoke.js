@@ -2,7 +2,7 @@ import {spawnSync} from "node:child_process";
 const r=spawnSync(process.execPath,["scripts/participation-infrastructure-status.mjs"],{encoding:"utf8"});
 console.assert(r.status===0,"Participation infrastructure status must run");
 const x=JSON.parse(r.stdout);
-console.assert(x.state==="EARTH_SIGNALS_AND_SUBMISSIONS_DEPLOYED_MEDIA_PREPARED","Earth Signals should be deployed while remaining participation infrastructure stays prepared");
+console.assert(["EARTH_SIGNALS_AND_SUBMISSIONS_DEPLOYED_MEDIA_PREPARED","EARTH_SIGNALS_RUNTIME_PILOT_STAGED_PUBLIC_OFF"].includes(x.state),"Participation status should recognize deployed infrastructure or the staged Earth Signals runtime pilot");
 console.assert(x.publicActivationOff===true,"Participation public activation must remain off");
 console.assert(x.workers?.earthSignals?.deployed===true,"Earth Signals deployment evidence should be recognized");
 console.assert(x.workers?.earthSignals?.publicEnabled===false,"Earth Signals public activation must remain off");
@@ -16,5 +16,5 @@ console.assert(x.workers?.nowMomentMedia?.publicEnabled===false,"Now Moment medi
 console.assert(x.workers?.nowMomentMedia?.deploymentEvidence==="NOT_DEPLOYED","Now Moment media deployment evidence must remain NOT_DEPLOYED");
 console.assert(x.safety?.automaticPublicActivationAllowed===false,"Automatic public activation must stay forbidden");
 console.assert(x.safety?.pushTriggeredInfrastructureDeploymentAllowed===false,"Participation deployment must remain manual-only");
-console.assert(x.next==="CONTROLLED_REMAINING_INFRASTRUCTURE_DEPLOYMENT","Next state should be controlled remaining infrastructure deployment");
-console.log("participation infrastructure status recognizes deployed Earth Signals and preserves public-off boundaries");
+console.assert(["CONTROLLED_REMAINING_INFRASTRUCTURE_DEPLOYMENT","VERIFY_EARTH_SIGNALS_RUNTIME_PILOT_HEALTH"].includes(x.next),"Next state should reflect either remaining deployment or staged pilot health verification");
+console.log("participation infrastructure status recognizes deployed/staged Earth Signals state and preserves public-off boundaries");
