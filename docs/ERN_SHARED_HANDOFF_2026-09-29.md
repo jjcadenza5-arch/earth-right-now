@@ -782,3 +782,38 @@ ERN core website is complete as a stable beta. Autonomous work is now maintenanc
   - Now Moment photo/video OFF
 - Do not confuse Phase 4 entry with permission to activate a visitor-facing feature.
 
+## 2026-09-30 — Phase 4 Earth Signals limited public pilot active
+- Owner explicitly approved activation of the limited Earth Signals pilot.
+- Runtime activation deployed successfully in Actions run `36680341225`; Cloudflare deployed version `69e0b578-5d54-4c92-a37a-fda75193f4f4` with `ERN_EARTH_SIGNALS_ENABLED=true`.
+- Operator live `/health` verification at `2026-09-30T06:53:05Z` confirmed:
+  - `ok=true`
+  - `contributionsEnabled=true`
+  - durable storage healthy
+  - rate-subject and review secrets configured
+  - raw network identifiers not stored
+  - `signals=0`, `reports=0`
+  - hard caps `maxActiveSignals=5000`, `maxRetainedReports=1000`
+  - `secretValuesExposed=false`
+- Public manifest activation is now ON for **Earth Signals only**.
+- Scope remains deliberately limited:
+  - structured short-lived signals only;
+  - 45-minute TTL;
+  - no photos or video;
+  - no automatic truth upgrade;
+  - no Watch Earth ranking effect;
+  - no commercial ranking effect.
+- Submission remains deployed but PUBLIC-OFF.
+- Now Moment media remains NOT_DEPLOYED / PUBLIC-OFF.
+- Public release transition is green:
+  - Pages run `36681682503` SUCCESS with all 75 release smoke tests passing.
+  - Subsequent source-maintenance Pages run `36682097214` SUCCESS.
+  - Latest Pages run `36682379891` SUCCESS.
+  - Operations run `36682353982` SUCCESS and reports **AUTONOMOUS HOLD** after active-pilot semantics cleanup.
+- Current canonical Phase 4 state:
+  - phase state `ACTIVE_LIMITED_EARTH_SIGNALS_PILOT`;
+  - next `OBSERVE_EARTH_SIGNALS_LIMITED_PILOT`;
+  - completion state `CORE_COMPLETE_PHASE_4_PILOT_ACTIVE`.
+- Routine external LIVE_IMAGE recency debt was refreshed for 15 official sources on 2026-09-30.
+- Nishiki Market remains an expired HUMAN_PLAYBACK renewal in backlog, but the inside-ERN target remains comfortably satisfied (12/5), so it is not a high-priority release blocker. Renew only through real in-window human playback observation; do not infer it from HTTP/provider reachability.
+- Do not activate Submission, Now Moment media, generative Guide AI, Seoul context, analytics or social lanes without their own explicit product/account trigger.
+
