@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "phase": 4,
+  "feature": "earth-signals",
+  "pilot": "limited-structured-signals",
+  "ownerApproval": true,
+  "approvedAt": "2026-09-30T05:22:00Z",
+  "scope": {
+    "structuredSignalsOnly": true,
+    "photos": false,
+    "video": false,
+    "ttlMinutes": 45,
+    "submissionIntake": false,
+    "nowMomentMedia": false
+  },
+  "runtimeActivationAllowed": true,
+  "publicManifestActivationAllowed": false,
+  "rollbackRequired": true,
+  "note": "Explicit owner approval was given in chat to activate the limited Earth Signals Phase 4 pilot. Runtime activation may be deployed first while the public manifest remains off until live health verifies contributionsEnabled=true."
+}
