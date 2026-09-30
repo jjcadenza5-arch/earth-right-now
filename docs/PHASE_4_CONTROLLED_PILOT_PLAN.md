@@ -1,13 +1,13 @@
 # ERN Phase 4 — Controlled Pilot Plan
 
 ## Status
-**ACTIVE — infrastructure verified, first public pilot not yet activated**
+**ACTIVE — Pilot 1 Earth Signals is live and under observation**
 
 Phase 4 exists to validate one small visitor-facing capability at a time without weakening ERN's truth, privacy, moderation or cost boundaries.
 
 ## Pilot 1 — Earth Signals
 
-Earth Signals is the first intended Phase 4 pilot because:
+Earth Signals is the active Phase 4 Pilot 1 because:
 - its production Worker is deployed and live-health verified;
 - durable storage, bounded retention, rate limits, moderation/reporting, secret isolation and cost bounds are evidenced;
 - public UI already fails closed when the feature is OFF;
@@ -80,5 +80,7 @@ Do not open another participation pilot while Pilot 1 is still being validated.
 
 Submission intake, generative Guide activation, Seoul context, analytics, social channels and Now Moment media remain separate gates. Now Moment media must remain downstream of successful structured Earth Signals operation.
 
-## Current human gate
-The remaining Phase 4 gate is an explicit product decision to activate the limited Earth Signals pilot. Infrastructure deployment alone does not authorize that decision.
+## Current operating gate
+Pilot 1 activation is complete and live-health verified. The present gate is **observation before expansion**.
+
+Do not activate Submission, Now Moment media or any other participation lane merely because Earth Signals is running. Open Pilot 2 only after Pilot 1 remains healthy, bounded, understandable and operationally useful under real traffic.
