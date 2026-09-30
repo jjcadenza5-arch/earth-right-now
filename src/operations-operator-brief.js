@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -219,6 +219,14 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push(`- Next: ${phase4Observation.next||"CONTINUE_OBSERVING_PILOT_1"}; automatic expansion ${phase4Observation.automaticExpansionAllowed===true?"ALLOWED":"FORBIDDEN"}.`);
     if(phase4Observation.issues?.length)lines.push(`- Observation issues: ${phase4Observation.issues.join(", ")}.`);
     lines.push("- Completing the observation window only permits human review; it does not authorize Pilot 2 or media activation.","");
+  }
+  if(phase5Readiness){
+    lines.push("## Phase 5 readiness");
+    lines.push(`- State: ${phase5Readiness.state||"UNKNOWN"}; technically review eligible ${phase5Readiness.technicallyReviewEligible===true?"YES":"NO"}; entry approved ${phase5Readiness.phase5EntryApproved===true?"YES":"NO"}.`);
+    lines.push(`- Phase 4 observation: ${phase5Readiness.phase4Observation?.elapsedHours??"unknown"}h / minimum ${phase5Readiness.minimumPhase4ObservationHours??24}h; current health evidence ${phase5Readiness.currentHealthEvidenceSupplied===true?"present":"missing"}.`);
+    if(phase5Readiness.blockers?.length)lines.push(`- Blockers: ${phase5Readiness.blockers.join(", ")}.`);
+    lines.push(`- Next: ${phase5Readiness.next||"CONTINUE_PHASE4_OBSERVATION"}; automatic Phase 5 entry ${phase5Readiness.automaticPhase5EntryAllowed===true?"ALLOWED":"FORBIDDEN"}.`);
+    lines.push("- Phase 5 can become review-eligible only after the healthy Phase 4 observation window; eligibility never substitutes for explicit human approval.","");
   }
   if(earthSignals){
     lines.push("## Earth Signals readiness");
