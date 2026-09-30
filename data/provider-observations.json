@@ -483,5 +483,96 @@
     "confirmation": "HUMAN_PLAYBACK",
     "observedAt": "2026-09-29T03:57:30.530Z",
     "reason": "Historical deployed-origin human review recovered from commit caaa9ca2755bf4b837374bc516172f089bf4a98e. Review batch bd51ac5733059f3f confirmed the exact Santa Claus Village / City of Rovaniemi branded YouTube player was visibly playing/current in ERN; source-specific approval only."
+  },
+  {
+    "id": "auckland-viaduct-harbour",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-30T00:00:51.782Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
+  },
+  {
+    "id": "kyoto-fushimi-inari-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-30T00:00:07.252Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
+  },
+  {
+    "id": "kyoto-hanamikoji-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-30T00:00:14.304Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
+  },
+  {
+    "id": "kyoto-kifune-shrine-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T23:59:49.663Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
+  },
+  {
+    "id": "kyoto-kiyomizuzaka-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-29T23:59:57.365Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
+  },
+  {
+    "id": "kyoto-nishiki-market-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK_OUTSIDE_PUBLISHED_WINDOW",
+    "observedAt": "2026-09-30T00:00:58.952Z",
+    "reason": "Operator observed the Nishiki player producing playback in deployed ERN during review batch 0b51cbc04e9598b8, but the observation occurred around 09:01 JST, outside the provider-published 11:00–18:00 JST live window. Record the observation without refreshing live/current proof; preserve the last in-window HUMAN_PLAYBACK evidence."
+  },
+  {
+    "id": "la-palma-aridane-valley",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-30T00:01:25.646Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
+  },
+  {
+    "id": "la-palma-caldera-taburiente",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-30T00:01:08.323Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
+  },
+  {
+    "id": "rovaniemi-santa-claus-village-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-30T00:00:21.153Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
+  },
+  {
+    "id": "taitung-jinzun",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-30T00:00:37.993Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
+  },
+  {
+    "id": "takayama-miyagawa-stream",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-30T00:01:33.752Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
+  },
+  {
+    "id": "verbier",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-30T00:01:18.032Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
+  },
+  {
+    "id": "volcan-tajogaite",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-09-30T00:01:39.808Z",
+    "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
   }
 ]
