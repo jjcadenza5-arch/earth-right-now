@@ -89,6 +89,7 @@ jobs:
           npm --silent run business:control | tee ern-ops/business-control.json
           npm --silent run operations:external-gates | tee ern-ops/external-gates.json
           npm --silent run earth-signals:status | tee ern-ops/earth-signals-status.json
+          npm --silent run earth-signals:live-health | tee ern-ops/earth-signals-live-health.json
           npm --silent run guide-ai:status | tee ern-ops/guide-ai-status.json
           npm --silent run local:directory-status | tee ern-ops/local-directory-status.json
           npm --silent run participation:status | tee ern-ops/participation-infrastructure.json
