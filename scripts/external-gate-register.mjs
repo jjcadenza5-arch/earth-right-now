@@ -122,7 +122,7 @@ if(media.status!=="DEPLOYED"){
     id:"now-moment-media-deployment",
     lane:"NOW_MOMENT_MEDIA",
     state:media.status,
-    trigger:"Structured Earth Signals are active first, then the media Worker/R2 deployment passes live health evidence.",
+    trigger:"Structured Earth Signals Pilot 1 remains healthy through the minimum observation window and becomes human-review eligible; only then may the fail-closed media Worker/R2 deployment be considered.",
     nextEligibleAt:null,
     eligibleNow:false,
     beforeTrigger:"PHOTO_UPLOAD_OFF"
