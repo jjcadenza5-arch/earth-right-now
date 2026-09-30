@@ -266,7 +266,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     else lines.push("- Keep camera/place submission delivery closed until its remaining readiness requirements are configured.");
   }
   const providerTargetsBlocked=Boolean(providerGeneratedTargets?.items?.length)&&providerGeneratedTargets.items.every(item=>Boolean(item?.blockerReason)&&["EXACT_PROVIDER_CODE_REQUIRED","EXACT_PROVIDER_TARGET_URL_REQUIRED"].includes(item?.state));
-  const submissionExternalOnly=Boolean(submissionTransport)&&submissionTransport.active===false&&submissionTransport.endpointReady===true&&submissionTransport.privacyReady===true&&submissionTransport.retentionReady===true;
+  const submissionExternalOnly=Boolean(submissionTransport)&&submissionTransport.active===false&&((submissionTransport.endpointReady===true&&submissionTransport.privacyReady===true&&submissionTransport.retentionReady===true)||(Array.isArray(submissionTransport.missing)&&submissionTransport.missing.length===1&&submissionTransport.missing[0]==="HTTPS_REVIEW_ENDPOINT"));
   const autonomousHoldChecks={
     insideTargetHealthy:(snapshot?.insideERN?.readyShortfall||0)===0,
     playbackLedgerConsistent:(playbackEvidenceConsistency?.summary?.issues||0)===0,
