@@ -3,24 +3,24 @@ function run(path){return JSON.parse(execFileSync(process.execPath,[path],{encod
 const product=run("scripts/whole-product-status.mjs");
 const gates=run("scripts/external-gate-register.mjs");
 const stage=gates.phase||"STAGE_R_EXTERNAL_GATE_TRIGGER_REGISTER";
-const label="External-gate readiness and evidence-driven activation";
 const coreComplete=product.conclusion==="STABLE_BETA_READY";
 const report={
  schemaVersion:1,
  currentStage:stage,
- phaseNumber:null,
- phaseLabel:label,
+ phaseNumber:4,
+ phaseLabel:"Controlled Infrastructure Pilots",
+ phaseState:"ACTIVE_INFRASTRUCTURE_VERIFIED_PUBLIC_PILOT_OFF",
  coreStableBeta:coreComplete,
  coreComplete,
- completionState:coreComplete?"CORE_COMPLETE_EXTERNAL_OPTIONAL":"CORE_INCOMPLETE",
+ completionState:coreComplete?"CORE_COMPLETE_PHASE_4_ACTIVE":"CORE_INCOMPLETE",
  openExternalGates:gates.count,
  eligibleExternalGates:(gates.eligibleNow||[]).map(x=>x.id),
  blockedExternalGates:(gates.waiting||[]).map(x=>x.id),
  nextTimedReview:gates.nextTimedReview||null,
- next:gates.next,
+ next:"EARTH_SIGNALS_LIMITED_PILOT_REQUIRES_EXPLICIT_ACTIVATION_DECISION",
  interpretation:coreComplete
-   ?"ERN core website is complete as a stable beta. Stage R now tracks optional external/account/provider activations and ongoing maintenance; open external gates are not unfinished core website work."
-   :"ERN core website still has blocking gaps that must be repaired before completion.",
+   ?"ERN Phase 3 is complete and Phase 4 is active. Earth Signals and Submission infrastructure are deployed fail-closed; the next numbered-phase gate is an explicit decision on the first limited Earth Signals public pilot."
+   :"ERN core website still has blocking gaps that must be repaired before Phase 4 can proceed.",
  safety:gates.safety
 };
 console.log(JSON.stringify(report,null,2));
