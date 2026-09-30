@@ -202,7 +202,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   }
   if(participationInfrastructure){
     lines.push("## Phase J participation infrastructure");
-    lines.push(`- State: ${participationInfrastructure.state||"UNKNOWN"}; public activation ${participationInfrastructure.publicActivationOff?"OFF":"CHECK REQUIRED"}.`);
+    lines.push(`- State: ${participationInfrastructure.state||"UNKNOWN"}; Earth Signals public pilot ${participationInfrastructure.phase4PilotActive===true?"ACTIVE":"OFF"}; remaining participation ${participationInfrastructure.remainingPublicActivationOff===true?"OFF":"CHECK REQUIRED"}.`);
     lines.push(`- Earth Signals Worker: ${participationInfrastructure.workers?.earthSignals?.prepared?"prepared":"incomplete"}; Submission Worker: ${participationInfrastructure.workers?.submissions?.prepared?"prepared":"incomplete"}.`);
     lines.push(`- Next: ${participationInfrastructure.next||"REVIEW"}.`);
     lines.push("- Repository preparation is not production deployment evidence; controlled infrastructure deployment remains separate from visitor-facing activation.","");
@@ -277,8 +277,8 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     commercialDepthComplete:(commercialResearchDepth?.items||[]).length===0,
     localEarthComplete:localDirectory?.state==="PILOT_COMPLETE",
     guideLocallyComplete:guideAi?.deterministicFallback===true&&((guideAi?.mode==="DETERMINISTIC_ONLY")||(guideAi?.mode==="GENERATIVE_ENABLED"&&guideAi?.ready===true&&guideAi?.deployment?.ready===true)),
-    earthSignalsLocallyComplete:earthSignals?.mode==="READ_ONLY"&&earthSignals?.privacyNoticeDraft?.published===true,
-    participationInfrastructurePrepared:participationInfrastructure?.prepared===true&&participationInfrastructure?.publicActivationOff===true,
+    earthSignalsLocallyComplete:["READ_ONLY","CONTRIBUTION_ENABLED"].includes(earthSignals?.mode)&&earthSignals?.privacyNoticeDraft?.published===true,
+    participationInfrastructurePrepared:participationInfrastructure?.prepared===true&&(participationInfrastructure?.publicActivationOff===true||(participationInfrastructure?.phase4PilotActive===true&&participationInfrastructure?.remainingPublicActivationOff===true)),
     submissionLocallyComplete:submissionExternalOnly
   };
   const autonomousHoldBlockers=Object.entries(autonomousHoldChecks).filter(([,passed])=>!passed).map(([key])=>key);
