@@ -881,3 +881,15 @@ ERN core website is complete as a stable beta. Autonomous work is now maintenanc
 - Pages run `36692809314` completed SUCCESS through Deploy after all release gates passed.
 - Current Phase 4 instruction: **continue observing Pilot 1; no human action is needed until the observation gate matures or health changes.**
 
+
+
+## Phase 5 readiness preparation — Phase 4 still active
+- Phase 4 Pilot 1 remains the active phase; no Phase 5 promotion has occurred.
+- Added `src/phase5-readiness.js`, `scripts/phase5-readiness-status.mjs`, release smoke coverage and daily Operations wiring.
+- Phase 5 can become **human-review eligible only after at least 24 hours of healthy Earth Signals observation** with current live health evidence.
+- Pilot 1 public activation timestamp: `2026-09-30T06:53:05Z`.
+- Earliest minimum-window boundary: `2026-10-01T06:53:05Z`, provided health remains green.
+- The time boundary never promotes ERN automatically.
+- Automatic Phase 5 entry and automatic Pilot 2 activation remain forbidden.
+- Submission, Now Moment media, generative Guide, Seoul context, analytics and social channels remain separate gates.
+- Canonical document: `docs/PHASE_5_READINESS_GATE.md`.
