@@ -701,3 +701,33 @@ ERN core website is complete as a stable beta. Autonomous work is now maintenanc
 - Latest verified green Operations run after the Earth Signals evidence transition: **36610675294**, SUCCESS.
 - Product interpretation from this checkpoint: the **core ERN website is functionally complete as a stable beta**. Remaining Stage R items are external/account/provider or deliberate feature activations (for example submission transport, Now Moment media, generative Guide activation, Seoul API context, official social channels, aggregate analytics, and optional broader affiliate/account work). They should not be described as unfinished core website work.
 - Continue maintenance, source quality and selective product improvement autonomously, but do not manufacture new work merely to avoid declaring the core website complete.
+
+## 2026-09-30 — fresh playback review applied; autonomous hold reached
+- Operator review batch `0b51cbc04e9598b8` was supplied from the deployed ERN review surface.
+- Twelve exact inside-ERN sources received fresh HUMAN_PLAYBACK confirmation and had playback/currentness evidence renewed:
+  - Auckland Viaduct Harbour
+  - Kyoto Fushimi Inari
+  - Kyoto Hanamikoji Street
+  - Kyoto Kifune Shrine
+  - Kyoto Kiyomizu-zaka
+  - La Palma Aridane Valley
+  - La Palma Caldera de Taburiente
+  - Rovaniemi Santa Claus Village
+  - Taitung Jinzun
+  - Takayama Miyagawa & Kaji Bridge
+  - Verbier
+  - Volcán Tajogaite
+- Old Auckland and Takayama playback holds were cleared because the operator reconfirmed the exact current targets successfully.
+- Nishiki Market was also seen playing by the operator, but that observation occurred around 09:01 JST, outside the provider-published 11:00–18:00 JST live window. It was recorded as outside-window evidence and did **not** refresh the schedule-aware live/current marker. The prior valid in-window proof remains authoritative.
+- Playback-evidence consistency is now **0 issues**.
+- Current operations checkpoint after application:
+  - 91 healthy / 94 total catalog sources
+  - 78 strong-current Watch Earth sources
+  - 12 current inside-ERN windows against target 5
+  - 0 inside-ERN shortfall
+  - 0 immediate source-revalidation items
+  - 0 expired catalog items
+- Operations run `36648359457` completed SUCCESS and reports **AUTONOMOUS HOLD — no high-priority local implementation or research lane remains open**.
+- Pages run `36648359485` completed SUCCESS through Deploy.
+- ERN core remains complete as a stable beta. Resume autonomous work only on a material source/catalog change, a verified external/provider/account trigger, an exact new provider target, or an explicitly opened product phase. Do not invent work merely to avoid hold.
+
