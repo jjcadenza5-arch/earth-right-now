@@ -22,6 +22,13 @@ jobs:
           node tests/now-moment-photo-foundation.smoke.js
           node tests/now-moment-photo-service.smoke.js
           grep -q '"ERN_NOW_MOMENT_PHOTO_ENABLED": "false"' media-worker/wrangler.jsonc
+      - name: Verify Earth Signals Pilot 1 observation gate
+        run: |
+          set -euo pipefail
+          npm --silent run earth-signals:live-health | tee /tmp/ern-earth-signals-live-health.json
+          npm --silent run phase4:earth-signals-observation -- /tmp/ern-earth-signals-live-health.json | tee /tmp/ern-phase4-observation.json
+          node -e 'const fs=require("fs");const x=JSON.parse(fs.readFileSync("/tmp/ern-phase4-observation.json","utf8"));if(x.reviewEligible!==true)process.exit(1)'
+          echo "Pilot 1 has completed the minimum healthy observation window. Media deployment still remains fail-closed and does not authorize public photo upload."
       - name: Require Cloudflare and media runtime secrets
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
