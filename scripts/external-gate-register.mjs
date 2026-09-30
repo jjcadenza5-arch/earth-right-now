@@ -101,14 +101,20 @@ if(earth.status!=="DEPLOYED"){
   });
 }
 if(submission.enabled!==true){
+  const deployed=submission.status==="DEPLOYED"&&/^https:\/\//.test(String(submission.endpoint||""));
   add({
     id:"submission-transport",
     lane:"PARTICIPATION",
-    state:"DISABLED",
-    trigger:"Controlled submission Worker deployment passes live health evidence and transport is explicitly enabled.",
+    state:deployed?"DEPLOYED_PUBLIC_OFF":"DISABLED",
+    trigger:deployed
+      ?"An explicit product decision enables the already-deployed Submission transport after current privacy, moderation and retention evidence is reviewed."
+      :"Controlled submission Worker deployment passes live health evidence and transport is explicitly enabled.",
     nextEligibleAt:null,
     eligibleNow:false,
-    beforeTrigger:"LOCAL_REVIEW_ONLY"
+    beforeTrigger:"LOCAL_REVIEW_ONLY",
+    deploymentVerified:deployed,
+    retentionDays:Number(submission.retentionDays)||null,
+    rawNetworkIdentifiersStored:submission.rawNetworkIdentifiersStored===true
   });
 }
 if(media.status!=="DEPLOYED"){
