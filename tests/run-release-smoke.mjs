@@ -49,6 +49,7 @@ const releaseTests=[
   "bounded-json-body.smoke.js",
   "participation-storage-bounds.smoke.js",
   "participation-infrastructure-status.smoke.js",
+  "phase4-earth-signals-pilot-workflow.smoke.js",
   "now-moment-media-worker.smoke.js",
   "now-moment-photo-public-ui-off.smoke.js",
   "now-moment-photo-service.smoke.js",
