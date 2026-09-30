@@ -254,3 +254,15 @@ const externalGateBrief=operationsOperatorBrief({
 assert.match(externalGateBrief,/Next timed review: viator-api-activation at 2026-09-29T15:21:00Z/);
 assert.match(externalGateBrief,/DO_NOT_RETEST_OR_ROTATE_KEY/);
 assert.match(externalGateBrief,/Untimed waits: guide-ai-public-activation, seoul-context-validation-and-activation/);
+
+const phase4ObservationBrief=operationsOperatorBrief({
+ snapshot:{insideERN:{ready:6,targetReady:5,readyShortfall:0,recoveryDebt:0},providers:{families:2,targetFamilies:2},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ earthSignalsLiveHealth:{healthy:true,contributionsEnabled:true,metrics:{signals:0,maxActiveSignals:5000,reports:0,maxRetainedReports:1000}},
+ phase4Observation:{state:"EARLY_OBSERVATION",elapsedHours:2,minimumObservationHours:24,reviewEligible:false,automaticExpansionAllowed:false,next:"CONTINUE_OBSERVING_PILOT_1",issues:[]}
+});
+assert.match(phase4ObservationBrief,/Phase 4 Pilot 1 observation gate/);
+assert.match(phase4ObservationBrief,/EARLY_OBSERVATION/);
+assert.match(phase4ObservationBrief,/2h \/ minimum 24h/);
+assert.match(phase4ObservationBrief,/review eligible NO/);
+assert.match(phase4ObservationBrief,/automatic expansion FORBIDDEN/);
