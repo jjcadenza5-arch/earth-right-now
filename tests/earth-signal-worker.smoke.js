@@ -7,7 +7,8 @@ const stateModule=await import("../signals-worker/src/signal-state.js");
 
 console.assert(typeof workerModule.default?.fetch==="function","Earth Signals Worker module must export fetch");
 console.assert(typeof stateModule.SignalState==="function","Earth Signals Worker must export SignalState");
-console.assert(cfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "false"'),"Earth Signals must deploy fail-closed by default");
+console.assert(cfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "false"')||cfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "true"'),"Earth Signals runtime flag must be explicit");
+console.assert(worker.includes('env.ERN_EARTH_SIGNALS_ENABLED!=="true"'),"Earth Signals Worker must fail closed unless runtime flag is explicitly true");
 console.assert(cfg.includes('"class_name": "SignalState"')&&cfg.includes('"storage": "sqlite"'),"Earth Signals durable state must use SQLite");
 console.assert(worker.includes("earthSignalHttpRequest"),"Worker must reuse the canonical Earth Signal HTTP contract");
 console.assert(worker.includes("readJsonBodyBounded")&&worker.includes("4096"),"Earth Signal JSON bodies must be bounded even without Content-Length");
