@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -206,6 +206,12 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push(`- Earth Signals Worker: ${participationInfrastructure.workers?.earthSignals?.prepared?"prepared":"incomplete"}; Submission Worker: ${participationInfrastructure.workers?.submissions?.prepared?"prepared":"incomplete"}.`);
     lines.push(`- Next: ${participationInfrastructure.next||"REVIEW"}.`);
     lines.push("- Repository preparation is not production deployment evidence; controlled infrastructure deployment remains separate from visitor-facing activation.","");
+  }
+  if(earthSignalsLiveHealth){
+    lines.push("## Earth Signals live pilot health");
+    lines.push(`- Health: ${earthSignalsLiveHealth.healthy===true?"HEALTHY":"CHECK REQUIRED"}; contributions ${earthSignalsLiveHealth.contributionsEnabled===true?"ON":"OFF"}; signals ${earthSignalsLiveHealth.metrics?.signals??"unknown"}/${earthSignalsLiveHealth.metrics?.maxActiveSignals??"?"}; reports ${earthSignalsLiveHealth.metrics?.reports??"unknown"}/${earthSignalsLiveHealth.metrics?.maxRetainedReports??"?"}.`);
+    if(earthSignalsLiveHealth.issues?.length)lines.push(`- Issues: ${earthSignalsLiveHealth.issues.join(", ")}.`);
+    lines.push("- This is read-only pilot observation; health monitoring does not authorize broader participation activation.","");
   }
   if(earthSignals){
     lines.push("## Earth Signals readiness");
