@@ -16,8 +16,9 @@ export function submissionTransportReadiness(raw={}){
   if(!transport.endpoint)missing.push("HTTPS_REVIEW_ENDPOINT");
   if(!privacyReady)missing.push("PRIVACY_NOTICE");
   if(!retentionReady)missing.push("RETENTION_POLICY");
+  const deployedConfigured=Boolean(transport.endpoint&&privacyReady&&retentionReady);
   return{
-    status:active?"READY":requested?"CONFIG_INCOMPLETE":"DISABLED",
+    status:active?"READY":requested?"CONFIG_INCOMPLETE":deployedConfigured?"DEPLOYED_PUBLIC_OFF":"DISABLED",
     requested,
     active,
     endpointReady:Boolean(transport.endpoint),
@@ -34,6 +35,6 @@ export function submissionTransportReadiness(raw={}){
       credentialsIncluded:false,
       retentionBeyondPolicyAllowed:false
     },
-    note:"Submission transport remains off until a real HTTPS review endpoint, privacy notice, and explicit retention window are configured. Delivery never implies approval or publication."
+    note:active?"Submission transport is enabled for delivery; review remains manual and delivery never implies approval or publication.":deployedConfigured?"Submission infrastructure is deployed and configured, but public intake remains off pending explicit product activation.":"Submission transport remains off until a real HTTPS review endpoint, privacy notice, and explicit retention window are configured. Delivery never implies approval or publication."
   };
 }
