@@ -8,7 +8,7 @@ assert.equal(x.externalActivation.guideAI.backendDeployed,true);
 assert.equal(x.externalActivation.guideAI.publicGenerativeActive,false);
 assert.equal(x.externalActivation.guideAI.deterministicPublicFallback,true);
 assert.equal(x.externalActivation.earthSignals.deployed,true);
-assert.equal(x.externalActivation.earthSignals.publicActive,false);
+assert.equal(x.externalActivation.earthSignals.publicActive,true);
 assert.equal(x.externalActivation.submissionTransport.deployed,true);
 assert.equal(x.externalActivation.submissionTransport.publicActive,false);
 assert.equal(x.externalActivation.nowMomentMedia.publicActive,false);
