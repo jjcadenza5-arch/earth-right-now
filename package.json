@@ -86,7 +86,8 @@
     "participation:media-status": "node scripts/now-moment-media-status.mjs",
     "project:phase": "node scripts/project-phase-status.mjs",
     "project:autonomous-status": "node scripts/autonomous-work-status.mjs",
-    "earth-signals:live-health": "node scripts/earth-signal-live-health.mjs"
+    "earth-signals:live-health": "node scripts/earth-signal-live-health.mjs",
+    "phase4:earth-signals-observation": "node scripts/phase4-earth-signals-observation-status.mjs"
   },
   "engines": {
     "node": ">=20"
