@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -212,6 +212,13 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push(`- Health: ${earthSignalsLiveHealth.healthy===true?"HEALTHY":"CHECK REQUIRED"}; contributions ${earthSignalsLiveHealth.contributionsEnabled===true?"ON":"OFF"}; signals ${earthSignalsLiveHealth.metrics?.signals??"unknown"}/${earthSignalsLiveHealth.metrics?.maxActiveSignals??"?"}; reports ${earthSignalsLiveHealth.metrics?.reports??"unknown"}/${earthSignalsLiveHealth.metrics?.maxRetainedReports??"?"}.`);
     if(earthSignalsLiveHealth.issues?.length)lines.push(`- Issues: ${earthSignalsLiveHealth.issues.join(", ")}.`);
     lines.push("- This is read-only pilot observation; health monitoring does not authorize broader participation activation.","");
+  }
+  if(phase4Observation){
+    lines.push("## Phase 4 Pilot 1 observation gate");
+    lines.push(`- State: ${phase4Observation.state||"UNKNOWN"}; elapsed ${phase4Observation.elapsedHours??"unknown"}h / minimum ${phase4Observation.minimumObservationHours??24}h; review eligible ${phase4Observation.reviewEligible===true?"YES":"NO"}.`);
+    lines.push(`- Next: ${phase4Observation.next||"CONTINUE_OBSERVING_PILOT_1"}; automatic expansion ${phase4Observation.automaticExpansionAllowed===true?"ALLOWED":"FORBIDDEN"}.`);
+    if(phase4Observation.issues?.length)lines.push(`- Observation issues: ${phase4Observation.issues.join(", ")}.`);
+    lines.push("- Completing the observation window only permits human review; it does not authorize Pilot 2 or media activation.","");
   }
   if(earthSignals){
     lines.push("## Earth Signals readiness");
