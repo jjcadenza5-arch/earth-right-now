@@ -4,7 +4,7 @@
   "main": "src/index.js",
   "compatibility_date": "2026-09-28",
   "vars": {
-    "ERN_EARTH_SIGNALS_ENABLED": "false",
+    "ERN_EARTH_SIGNALS_ENABLED": "true",
     "ERN_PUBLIC_ORIGIN": "https://earthrightnow.app",
     "ERN_CATALOG_URL": "https://earthrightnow.app/data/sources.json"
   },
