@@ -36,7 +36,8 @@ const requiredJson=[
  "now-moment-media-status.json",
  "trend-current.json",
  "trend-delta.json",
- "operations-status.json"
+ "operations-status.json",
+ "phase5-readiness.json"
 ];
 const requiredText=["operator-brief.md"];
 
@@ -178,6 +179,13 @@ export async function validateOperationsPacket(dir="ern-ops"){
     for(const gate of externalGates.openGates||[]){
       if(gate?.reopenOnlyWhen!==true||!gate?.trigger||!gate?.beforeTrigger)issues.push({file:"external-gates.json",code:"EXTERNAL_GATE_INVALID_TRIGGER",id:gate?.id||null});
     }
+  }
+
+  const phase5Readiness=files["phase5-readiness.json"];
+  if(phase5Readiness){
+    if(phase5Readiness?.automaticPhase5EntryAllowed!==false)issues.push({file:"phase5-readiness.json",code:"PHASE5_AUTO_ENTRY_BOUNDARY_VIOLATION"});
+    if(phase5Readiness?.automaticPilot2ActivationAllowed!==false)issues.push({file:"phase5-readiness.json",code:"PHASE5_AUTO_PILOT2_BOUNDARY_VIOLATION"});
+    if(phase5Readiness?.phase5EntryApproved===true)issues.push({file:"phase5-readiness.json",code:"PHASE5_ENTRY_MUST_REQUIRE_SEPARATE_HUMAN_REVIEW"});
   }
 
   const businessControl=files["business-control.json"];
