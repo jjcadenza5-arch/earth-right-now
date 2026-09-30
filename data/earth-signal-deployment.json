@@ -14,11 +14,27 @@
   "secretIsolation": true,
   "observability": true,
   "costGuard": true,
-  "checkedAt": "2026-09-29T18:02:34Z",
-  "evidenceNote": "Earth Signals infrastructure is deployed. Phase 4 limited-pilot runtime activation was explicitly approved and deployed in GitHub Actions run 36680341225. Wrangler output verified env.ERN_EARTH_SIGNALS_ENABLED=(\"true\") and deployed version 69e0b578-5d54-4c92-a37a-fda75193f4f4 at the canonical Worker endpoint. Public manifest activation remains OFF pending direct live /health verification that contributionsEnabled=true.",
-  "publicActivationAllowed": false,
+  "checkedAt": "2026-09-30T06:53:05Z",
+  "evidenceNote": "Phase 4 limited Earth Signals pilot is live-health verified and explicitly approved. GitHub Actions run 36680341225 deployed runtime contributions ON; operator-verified /health at 2026-09-30T06:53:05Z reported ok=true, contributionsEnabled=true, durableStorage=true, both runtime secrets configured, no raw network identifiers stored, state healthy, signals=0, reports=0, caps 5000/1000, and secretValuesExposed=false. Public manifest activation is now allowed for the limited structured-signal pilot.",
+  "publicActivationAllowed": true,
   "runtimePilotDeployed": true,
   "runtimePilotDeploymentRunId": 36680341225,
   "runtimePilotVersionId": "69e0b578-5d54-4c92-a37a-fda75193f4f4",
-  "runtimePilotDeployedAt": "2026-09-30T06:50:37Z"
+  "runtimePilotDeployedAt": "2026-09-30T06:50:37Z",
+  "liveHealthVerified": true,
+  "liveHealthVerifiedAt": "2026-09-30T06:53:05Z",
+  "liveHealth": {
+    "ok": true,
+    "contributionsEnabled": true,
+    "durableStorage": true,
+    "rateSubjectSecretConfigured": true,
+    "reviewTokenConfigured": true,
+    "rawNetworkIdentifiersStored": false,
+    "stateOk": true,
+    "signals": 0,
+    "reports": 0,
+    "maxActiveSignals": 5000,
+    "maxRetainedReports": 1000,
+    "secretValuesExposed": false
+  }
 }
