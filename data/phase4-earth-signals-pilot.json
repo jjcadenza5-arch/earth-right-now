@@ -14,7 +14,11 @@
     "nowMomentMedia": false
   },
   "runtimeActivationAllowed": true,
-  "publicManifestActivationAllowed": false,
+  "publicManifestActivationAllowed": true,
   "rollbackRequired": true,
-  "note": "Explicit owner approval was given in chat to activate the limited Earth Signals Phase 4 pilot. Runtime activation may be deployed first while the public manifest remains off until live health verifies contributionsEnabled=true."
+  "note": "Explicit owner approval was given in chat. Runtime activation deployed successfully, live /health verified contributionsEnabled=true, and the limited structured Earth Signals public pilot is now authorized. Submission and Now Moment media remain OFF.",
+  "publicActivatedAt": "2026-09-30T06:53:05Z",
+  "healthVerified": true,
+  "healthVerifiedAt": "2026-09-30T06:53:05Z",
+  "state": "PUBLIC_PILOT_ACTIVE"
 }
