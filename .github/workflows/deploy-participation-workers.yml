@@ -35,7 +35,7 @@ jobs:
           node scripts/participation-infrastructure-status.mjs
           node scripts/now-moment-media-status.mjs
           if grep -q '"ERN_EARTH_SIGNALS_ENABLED": "true"' signals-worker/wrangler.jsonc; then
-            node -e 'const fs=require("fs");const x=JSON.parse(fs.readFileSync("data/phase4-earth-signals-pilot.json","utf8"));if(!(x.phase===4&&x.feature==="earth-signals"&&x.ownerApproval===true&&x.runtimeActivationAllowed===true&&x.publicManifestActivationAllowed===false))process.exit(1)'
+            node -e 'const fs=require("fs");const x=JSON.parse(fs.readFileSync("data/phase4-earth-signals-pilot.json","utf8"));const ok=x.phase===4&&x.feature==="earth-signals"&&x.ownerApproval===true&&x.runtimeActivationAllowed===true&&(x.publicManifestActivationAllowed===false||(x.publicManifestActivationAllowed===true&&x.healthVerified===true));if(!ok)process.exit(1)'
           else
             grep -q '"ERN_EARTH_SIGNALS_ENABLED": "false"' signals-worker/wrangler.jsonc
           fi
@@ -142,8 +142,8 @@ jobs:
           set -euo pipefail
           if grep -q '"ERN_EARTH_SIGNALS_ENABLED": "true"' signals-worker/wrangler.jsonc; then
             test "${{ inputs.target }}" = "earth-signals"
-            node -e 'const fs=require("fs");const x=JSON.parse(fs.readFileSync("data/phase4-earth-signals-pilot.json","utf8"));if(!(x.ownerApproval===true&&x.runtimeActivationAllowed===true&&x.publicManifestActivationAllowed===false))process.exit(1)'
-            echo "Phase 4 Earth Signals runtime pilot deployed under explicit approval; public manifest remains off until live health verification."
+            node -e 'const fs=require("fs");const x=JSON.parse(fs.readFileSync("data/phase4-earth-signals-pilot.json","utf8"));const ok=x.ownerApproval===true&&x.runtimeActivationAllowed===true&&(x.publicManifestActivationAllowed===false||(x.publicManifestActivationAllowed===true&&x.healthVerified===true));if(!ok)process.exit(1)'
+            node -e 'const fs=require("fs");const x=JSON.parse(fs.readFileSync("data/phase4-earth-signals-pilot.json","utf8"));console.log(x.publicManifestActivationAllowed===true?"Phase 4 Earth Signals limited public pilot remains active under verified approval.":"Phase 4 Earth Signals runtime pilot deployed under explicit approval; public manifest remains off until live health verification.")'
           else
             grep -q '"ERN_EARTH_SIGNALS_ENABLED": "false"' signals-worker/wrangler.jsonc
             echo "Participation Worker deployed fail-closed."
