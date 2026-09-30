@@ -93,7 +93,7 @@ Human gates:
 - affiliate/provider account actions where external services require account-owner approval.
 
 ## Phase 5 — Broader Public Operations & Monetization
-**State: FUTURE**
+**State: FUTURE — READINESS GATE PREPARED**
 
 Purpose:
 - broader public opening;
@@ -103,6 +103,17 @@ Purpose:
 - more destinations and context;
 - selective monetization around visitor intent;
 - possibly public generative Guide after cost/privacy/quality gates.
+
+Phase 5 entry gate:
+- Phase 4 Pilot 1 must complete at least 24 hours of healthy observation;
+- current live health must still be green;
+- core stable-beta gates must remain green;
+- Submission, Now Moment media and generative Guide remain separately gated;
+- meeting the technical gate creates human-review eligibility only;
+- explicit human approval is required before Phase 5 entry;
+- automatic Phase 5 entry and automatic Pilot 2 activation are forbidden.
+
+Canonical readiness: `npm run phase5:readiness -- <current-earth-signals-live-health.json>`.
 
 This phase does not remove ERN’s core rules:
 - truth before quantity;
