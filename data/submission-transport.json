@@ -1,6 +1,20 @@
 {
+  "status": "DEPLOYED",
   "enabled": false,
-  "endpoint": "",
+  "endpoint": "https://ern-submission-api.jjcadenza6.workers.dev/api/submissions",
+  "healthUrl": "https://ern-submission-api.jjcadenza6.workers.dev/health",
   "privacyUrl": "https://earthrightnow.app/privacy.html",
-  "retentionDays": 30
+  "retentionDays": 30,
+  "durableStorage": true,
+  "rateSubjectSecretConfigured": true,
+  "reviewTokenConfigured": true,
+  "rawNetworkIdentifiersStored": false,
+  "automaticPublishAllowed": false,
+  "automaticApprovalAllowed": false,
+  "maxRetainedSubmissions": 1000,
+  "pendingRecords": 0,
+  "secretValuesExposed": false,
+  "deploymentRunId": 36653928433,
+  "checkedAt": "2026-09-30T01:13:46Z",
+  "evidenceNote": "Controlled GitHub Actions deployment run 36653928433 completed successfully for target submissions. Operator-verified /health reported ok=true, submissionEnabled=false, durableStorage=true, rateSubjectSecretConfigured=true, reviewTokenConfigured=true, retentionDays=30, automaticPublishAllowed=false, automaticApprovalAllowed=false, rawNetworkIdentifiersStored=false, state.ok=true, pendingRecords=0, maxRetentionDays=30, maxRetainedSubmissions=1000, state.automaticPublishAllowed=false, and secretValuesExposed=false. Public submission transport remains explicitly OFF."
 }
