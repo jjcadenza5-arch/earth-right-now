@@ -9,7 +9,7 @@ const report={
  currentStage:stage,
  phaseNumber:4,
  phaseLabel:"Controlled Infrastructure Pilots",
- phaseState:"ACTIVE_INFRASTRUCTURE_VERIFIED_PUBLIC_PILOT_OFF",
+ phaseState:"ACTIVE_LIMITED_EARTH_SIGNALS_PILOT",
  coreStableBeta:coreComplete,
  coreComplete,
  completionState:coreComplete?"CORE_COMPLETE_PHASE_4_ACTIVE":"CORE_INCOMPLETE",
@@ -17,9 +17,9 @@ const report={
  eligibleExternalGates:(gates.eligibleNow||[]).map(x=>x.id),
  blockedExternalGates:(gates.waiting||[]).map(x=>x.id),
  nextTimedReview:gates.nextTimedReview||null,
- next:"EARTH_SIGNALS_LIMITED_PILOT_REQUIRES_EXPLICIT_ACTIVATION_DECISION",
+ next:"OBSERVE_EARTH_SIGNALS_LIMITED_PILOT",
  interpretation:coreComplete
-   ?"ERN Phase 3 is complete and Phase 4 is active. Earth Signals and Submission infrastructure are deployed fail-closed; the next numbered-phase gate is an explicit decision on the first limited Earth Signals public pilot."
+   ?"ERN Phase 3 is complete and Phase 4 is active. The limited Earth Signals public pilot is now active under verified safeguards; Submission and Now Moment media remain separate gated lanes."
    :"ERN core website still has blocking gaps that must be repaired before Phase 4 can proceed.",
  safety:gates.safety
 };
