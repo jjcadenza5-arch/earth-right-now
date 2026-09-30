@@ -60,7 +60,7 @@ Phase 3 is complete when:
 6. no major provider-concentration or catalog-integrity debt remains.
 
 ## Phase 4 — Controlled Infrastructure Pilots
-**State: ACTIVE — INFRASTRUCTURE VERIFIED / FIRST PUBLIC PILOT NOT YET ACTIVATED**
+**State: ACTIVE — LIMITED EARTH SIGNALS PUBLIC PILOT**
 
 Purpose:
 - deploy selected prepared backends while they are still OFF;
@@ -68,11 +68,12 @@ Purpose:
 - intentionally activate one small feature/pilot at a time only after evidence passes.
 
 Current Phase 4 progress:
-1. Earth Signals Worker deployed OFF and live-health verified.
-2. Submission Worker deployed OFF and live-health verified.
-3. Storage, rate limits, moderation, retention, privacy and fail-closed activation boundaries are evidenced.
-4. The first visitor-facing pilot has **not** been activated yet.
-5. Earth Signals is the intended first structured participation pilot because Now Moment media is explicitly downstream of structured signals.
+1. Earth Signals Worker is deployed and the limited structured-signal public pilot is ACTIVE.
+2. Live health verified contributions enabled, durable storage healthy, runtime secrets configured, no raw network identifiers stored and no secret exposure.
+3. Submission Worker remains deployed but PUBLIC-OFF.
+4. Now Moment media remains prepared but NOT_DEPLOYED / PUBLIC-OFF.
+5. Storage, rate limits, moderation, retention, privacy and rollback boundaries remain enforced.
+6. The current Phase 4 task is observation of Pilot 1; do not open Pilot 2 while Pilot 1 is still being validated.
 
 Controlled sequence:
 1. keep deployed infrastructure OFF;
@@ -114,10 +115,10 @@ This phase does not remove ERN’s core rules:
 
 ERN has **completed Phase 3 and entered Phase 4**.
 
-Phase 4 is active at the controlled-infrastructure stage:
-- Earth Signals infrastructure: deployed and verified, PUBLIC-OFF;
-- Submission infrastructure: deployed and verified, PUBLIC-OFF;
-- Now Moment media: prepared but not deployed and must remain downstream of structured Earth Signals;
-- no visitor-facing participation pilot has been enabled yet.
+Phase 4 is active with **Pilot 1 — Earth Signals** now live in limited form:
+- Earth Signals: runtime ON + public manifest ON for structured 45-minute signals only;
+- Submission: deployed and verified, PUBLIC-OFF;
+- Now Moment media: prepared but not deployed, PUBLIC-OFF;
+- Guide AI, Seoul context, analytics and social lanes remain separately gated.
 
-The next Phase 4 decision is therefore not more construction. It is whether to open the first small **Earth Signals** public pilot under the existing safeguards. That decision must remain explicit; deployment alone does not authorize activation.
+The next Phase 4 action is controlled observation of the Earth Signals pilot. Expansion is not automatic: Pilot 2 stays closed until Pilot 1 has enough healthy operating evidence.
