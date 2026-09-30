@@ -29,9 +29,11 @@ jobs:
           node tests/earth-signal-worker.smoke.js
           node tests/earth-signal-service.smoke.js
           node scripts/earth-signal-status.mjs
-          grep -q '"ERN_EARTH_SIGNALS_ENABLED": "false"' signals-worker/wrangler.jsonc
           if [ "${{ inputs.action }}" = "activate" ]; then
-            node -e 'const fs=require("fs");const x=JSON.parse(fs.readFileSync("data/earth-signal-deployment.json","utf8"));if(x.status!=="DEPLOYED"||x.publicActivationAllowed!==false||x.observability!==true||x.costGuard!==true)process.exit(1)'
+            grep -q '"ERN_EARTH_SIGNALS_ENABLED": "true"' signals-worker/wrangler.jsonc
+            node -e 'const fs=require("fs");const d=JSON.parse(fs.readFileSync("data/earth-signal-deployment.json","utf8"));const p=JSON.parse(fs.readFileSync("data/phase4-earth-signals-pilot.json","utf8"));if(d.status!=="DEPLOYED"||d.observability!==true||d.costGuard!==true||p.ownerApproval!==true||p.runtimeActivationAllowed!==true)process.exit(1)'
+          else
+            grep -q '"ERN_EARTH_SIGNALS_ENABLED": "true"' signals-worker/wrangler.jsonc
           fi
       - name: Require Cloudflare credentials and Earth Signals secrets
         env:
@@ -45,12 +47,15 @@ jobs:
           test -n "$CLOUDFLARE_ACCOUNT_ID"
           test -n "$ERN_RATE_HMAC_KEY"
           test -n "$ERN_SIGNAL_REVIEW_TOKEN"
-      - name: Prepare runtime activation config
-        if: ${{ inputs.action == 'activate' }}
+      - name: Prepare requested runtime config
         run: |
           set -euo pipefail
-          node -e 'const fs=require("fs");const p="signals-worker/wrangler.jsonc";let s=fs.readFileSync(p,"utf8");s=s.replace(/"ERN_EARTH_SIGNALS_ENABLED":\s*"false"/,"\"ERN_EARTH_SIGNALS_ENABLED\": \"true\"");if(!s.includes("\"ERN_EARTH_SIGNALS_ENABLED\": \"true\""))process.exit(1);fs.writeFileSync(p,s)'
-          grep -q '"ERN_EARTH_SIGNALS_ENABLED": "true"' signals-worker/wrangler.jsonc
+          if [ "${{ inputs.action }}" = "activate" ]; then
+            grep -q '"ERN_EARTH_SIGNALS_ENABLED": "true"' signals-worker/wrangler.jsonc
+          else
+            node -e 'const fs=require("fs");const p="signals-worker/wrangler.jsonc";let s=fs.readFileSync(p,"utf8");s=s.replace(/"ERN_EARTH_SIGNALS_ENABLED":\s*"true"/,"\"ERN_EARTH_SIGNALS_ENABLED\": \"false\"");if(!s.includes("\"ERN_EARTH_SIGNALS_ENABLED\": \"false\""))process.exit(1);fs.writeFileSync(p,s)'
+            grep -q '"ERN_EARTH_SIGNALS_ENABLED": "false"' signals-worker/wrangler.jsonc
+          fi
       - name: Install Earth Signals runtime secrets
         working-directory: signals-worker
         env:
@@ -73,7 +78,7 @@ jobs:
           set -euo pipefail
           if [ "${{ inputs.action }}" = "activate" ]; then
             grep -q '"ERN_EARTH_SIGNALS_ENABLED": "true"' signals-worker/wrangler.jsonc
-            echo "Earth Signals Worker deployed in pilot-enabled runtime state. Public web manifest remains OFF until separate health verification."
+            echo "Earth Signals Worker deployed in pilot-enabled runtime state."
           else
             grep -q '"ERN_EARTH_SIGNALS_ENABLED": "false"' signals-worker/wrangler.jsonc
             echo "Earth Signals Worker rolled back to runtime OFF."
