@@ -261,11 +261,12 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   else if(!commercialExternalGate&&commercialOnboarding?.items?.length)lines.push("- Research real travel options for the highest content-ready destinations without contacting or listing invented partners.");
   if(submissionTransport&&!submissionTransport.active){
     const submissionMissing=submissionTransport.missing||[];
-    if(submissionMissing.length===1&&submissionMissing[0]==="HTTPS_REVIEW_ENDPOINT")lines.push("- Submission privacy, retention and Worker foundation are prepared. The remaining transport gate is controlled HTTPS deployment evidence; public intake stays off.");
+    if(submissionTransport.endpointReady===true&&submissionTransport.privacyReady===true&&submissionTransport.retentionReady===true)lines.push("- Submission Worker deployment, privacy and retention evidence are complete. Public intake remains off pending an explicit product activation decision.");
+    else if(submissionMissing.length===1&&submissionMissing[0]==="HTTPS_REVIEW_ENDPOINT")lines.push("- Submission privacy, retention and Worker foundation are prepared. The remaining transport gate is controlled HTTPS deployment evidence; public intake stays off.");
     else lines.push("- Keep camera/place submission delivery closed until its remaining readiness requirements are configured.");
   }
   const providerTargetsBlocked=Boolean(providerGeneratedTargets?.items?.length)&&providerGeneratedTargets.items.every(item=>Boolean(item?.blockerReason)&&["EXACT_PROVIDER_CODE_REQUIRED","EXACT_PROVIDER_TARGET_URL_REQUIRED"].includes(item?.state));
-  const submissionExternalOnly=Boolean(submissionTransport)&&submissionTransport.active===false&&Array.isArray(submissionTransport.missing)&&submissionTransport.missing.length===1&&submissionTransport.missing[0]==="HTTPS_REVIEW_ENDPOINT";
+  const submissionExternalOnly=Boolean(submissionTransport)&&submissionTransport.active===false&&submissionTransport.endpointReady===true&&submissionTransport.privacyReady===true&&submissionTransport.retentionReady===true;
   const autonomousHoldChecks={
     insideTargetHealthy:(snapshot?.insideERN?.readyShortfall||0)===0,
     playbackLedgerConsistent:(playbackEvidenceConsistency?.summary?.issues||0)===0,
