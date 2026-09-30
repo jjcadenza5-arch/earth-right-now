@@ -893,3 +893,13 @@ ERN core website is complete as a stable beta. Autonomous work is now maintenanc
 - Automatic Phase 5 entry and automatic Pilot 2 activation remain forbidden.
 - Submission, Now Moment media, generative Guide, Seoul context, analytics and social channels remain separate gates.
 - Canonical document: `docs/PHASE_5_READINESS_GATE.md`.
+
+
+## Green Phase 5 readiness checkpoint
+- Phase 4 remains ACTIVE with limited Earth Signals Pilot 1 under observation.
+- Phase 5 readiness scaffolding is complete and fail-closed; it cannot promote the product or Pilot 2 automatically.
+- Daily Operations now records current live health, Phase 4 observation state and Phase 5 readiness in the retained operations packet/operator brief.
+- Release smoke now guards both the Phase 4 observation gate and Phase 5 entry gate.
+- Latest verified Pages release containing the readiness instrumentation: run `36693553944` / Pages #1590 — **SUCCESS through Deploy**.
+- Earliest minimum 24-hour observation boundary remains `2026-10-01T06:53:05Z`; this creates review eligibility only if health is still green.
+- No operator action is required before that evidence boundary unless live health degrades.
