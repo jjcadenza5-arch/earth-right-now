@@ -58,6 +58,19 @@ After activation, observe:
 - whether visitors understand the structured signal UI;
 - whether signal wording creates any confusion with camera truth.
 
+### Minimum observation window
+Before any Pilot 2 deployment is even review-eligible, Pilot 1 must complete at least **24 hours** of healthy live observation.
+
+This is a review gate, not an automatic promotion rule:
+- the 24-hour clock starts from the verified public activation timestamp;
+- current live health must still be green;
+- runtime contributions must remain enabled;
+- privacy boundaries and hard caps must remain intact;
+- completing 24 hours only makes expansion eligible for human review;
+- automatic expansion remains forbidden.
+
+The daily Operations workflow records this state through `phase4:earth-signals-observation`.
+
 ### Pilot success condition
 The pilot may continue only if:
 - health remains stable;
