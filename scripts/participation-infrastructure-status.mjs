@@ -36,19 +36,33 @@ const checks={
   submissionDeployedPublicOff:submissionTransport.status==="DEPLOYED"&&submissionTransport.enabled===false&&/^https:\/\//.test(String(submissionTransport.endpoint||"")),
   mediaPublicOff:mediaDeployment.status==="NOT_DEPLOYED"&&mediaDeployment.endpointUrl==null&&mediaDeployment.publicActivationAllowed===false&&mediaDeployment.videoEnabled===false
 };
+
 const prepared=checks.earthSignalsRuntimeFlagExplicit&&checks.earthSignalsPilotAuthorized&&checks.earthSignalsWorkerPrepared&&checks.submissionWorkerPrepared&&checks.mediaWorkerPrepared&&checks.boundedJsonPrepared&&checks.signalsAtomicRateLimit&&checks.submissionAtomicRateLimit&&checks.signalsBoundedBodies&&checks.submissionBoundedBodies&&checks.manualDeploymentOnly&&checks.deploymentRechecksFailClosed;
-const publicActivationOff=checks.earthSignalsDeployedPublicOff&&checks.submissionDeployedPublicOff&&checks.mediaPublicOff;
 const runtimePilot=signalsCfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "true"')&&pilot?.ownerApproval===true&&pilot?.runtimeActivationAllowed===true;
-const next=prepared&&publicActivationOff?(runtimePilot?"VERIFY_EARTH_SIGNALS_RUNTIME_PILOT_HEALTH":"CONTROLLED_REMAINING_INFRASTRUCTURE_DEPLOYMENT"):"REPAIR_PREPARATION_BOUNDARY";
+const earthSignalsPublicActive=runtimePilot&&signalsDeployment.publicActivationAllowed===true&&signalsDeployment.liveHealthVerified===true&&signalsDeployment.liveHealth?.contributionsEnabled===true;
+const publicActivationOff=checks.earthSignalsDeployedPublicOff&&checks.submissionDeployedPublicOff&&checks.mediaPublicOff;
+const remainingPublicActivationOff=checks.submissionDeployedPublicOff&&checks.mediaPublicOff;
+
+let next="REPAIR_PREPARATION_BOUNDARY";
+if(prepared&&earthSignalsPublicActive)next="OBSERVE_EARTH_SIGNALS_LIMITED_PILOT";
+else if(prepared&&publicActivationOff&&runtimePilot)next="VERIFY_EARTH_SIGNALS_RUNTIME_PILOT_HEALTH";
+else if(prepared&&publicActivationOff)next="CONTROLLED_REMAINING_INFRASTRUCTURE_DEPLOYMENT";
+
+let state="PREPARATION_INCOMPLETE";
+if(prepared&&earthSignalsPublicActive)state="EARTH_SIGNALS_LIMITED_PILOT_ACTIVE";
+else if(prepared&&runtimePilot)state="EARTH_SIGNALS_RUNTIME_PILOT_STAGED_PUBLIC_OFF";
+else if(prepared)state="EARTH_SIGNALS_AND_SUBMISSIONS_DEPLOYED_MEDIA_PREPARED";
 
 console.log(JSON.stringify({
   phase:"PHASE_J_TO_L_PARTICIPATION_INFRASTRUCTURE",
-  state:prepared?(runtimePilot?"EARTH_SIGNALS_RUNTIME_PILOT_STAGED_PUBLIC_OFF":"EARTH_SIGNALS_AND_SUBMISSIONS_DEPLOYED_MEDIA_PREPARED"):"PREPARATION_INCOMPLETE",
+  state,
   prepared,
   publicActivationOff,
+  remainingPublicActivationOff,
+  phase4PilotActive:earthSignalsPublicActive,
   checks,
   workers:{
-    earthSignals:{prepared:checks.earthSignalsWorkerPrepared,deployed:signalsDeployment.status==="DEPLOYED",runtimeEnabled:signalsCfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "true"'),publicEnabled:signalsDeployment.publicActivationAllowed===true,deploymentEvidence:signalsDeployment.status,endpointUrl:signalsDeployment.endpointUrl||null},
+    earthSignals:{prepared:checks.earthSignalsWorkerPrepared,deployed:signalsDeployment.status==="DEPLOYED",runtimeEnabled:runtimePilot,publicEnabled:earthSignalsPublicActive,deploymentEvidence:signalsDeployment.status,endpointUrl:signalsDeployment.endpointUrl||null},
     submissions:{prepared:checks.submissionWorkerPrepared,deployed:submissionTransport.status==="DEPLOYED",publicEnabled:submissionTransport.enabled===true,transportEnabled:submissionTransport.enabled===true,deploymentEvidence:submissionTransport.status||null,endpointUrl:submissionTransport.endpoint||null},
     nowMomentMedia:{prepared:checks.mediaWorkerPrepared,publicEnabled:false,deploymentEvidence:mediaDeployment.status,videoEnabled:false,ttlMinutes:mediaDeployment.ttlMinutes}
   },
@@ -60,5 +74,9 @@ console.log(JSON.stringify({
     visitorMediaMayUpgradeSourceTruth:false
   },
   next,
-  note:signalsCfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "true"')?"Earth Signals runtime pilot is explicitly authorized for Phase 4 while the public manifest remains OFF pending live health verification. Submission and Now Moment media remain public-OFF.":"Earth Signals and Submission infrastructure are deployed and remain public-OFF. Now Moment media infrastructure remains a separate controlled deployment; visitor-facing activation remains a separate explicit gate."
+  note:earthSignalsPublicActive
+    ?"The limited Earth Signals Phase 4 public pilot is active and health-verified. Submission and Now Moment media remain public-OFF."
+    :runtimePilot
+      ?"Earth Signals runtime pilot is explicitly authorized for Phase 4 while the public manifest remains OFF pending live health verification. Submission and Now Moment media remain public-OFF."
+      :"Earth Signals and Submission infrastructure are deployed and remain public-OFF. Now Moment media infrastructure remains a separate controlled deployment; visitor-facing activation remains a separate explicit gate."
 },null,2));
