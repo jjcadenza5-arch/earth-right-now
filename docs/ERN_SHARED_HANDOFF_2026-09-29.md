@@ -840,3 +840,28 @@ ERN core website is complete as a stable beta. Autonomous work is now maintenanc
 - The daily operator brief now includes a dedicated **Earth Signals live pilot health** section.
 - Continue observing Pilot 1. Do not open Submission, Now Moment media or any other participation lane merely because Pilot 1 is healthy.
 
+## 2026-09-30 — Phase 4 observation gate hardened
+- Pilot 1 Earth Signals remains active and healthy.
+- Added a formal minimum **24-hour healthy observation window** before any Pilot 2 deployment becomes review-eligible.
+- This is deliberately **not automatic promotion**:
+  - current live health must be green;
+  - contributions must remain enabled;
+  - privacy boundaries must remain intact;
+  - completing the window only makes expansion eligible for human review.
+- New observation components:
+  - `src/phase4-earth-signals-observation.js`
+  - `scripts/phase4-earth-signals-observation-status.mjs`
+  - `tests/phase4-earth-signals-observation.smoke.js`
+  - npm command `phase4:earth-signals-observation`
+- Daily Operations now runs the observation gate immediately after live Earth Signals health.
+- First observation sample at `2026-09-30T08:53:03Z`:
+  - HTTP 200 / live health green
+  - `healthyNow=true`
+  - elapsed observation about 2 hours
+  - `state=EARLY_OBSERVATION`
+  - `reviewEligible=false`
+  - `automaticExpansionAllowed=false`
+- Both Now Moment media deployment paths are now blocked until the Earth Signals observation gate reports `reviewEligible=true`.
+- External gate wording was tightened accordingly: healthy Pilot 1 observation must complete first; media deployment still requires a separate intentional human review.
+- Do not deploy or activate Now Moment media merely because the 24-hour timer elapses.
+
