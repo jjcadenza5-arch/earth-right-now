@@ -15,7 +15,7 @@
   "observability": true,
   "costGuard": true,
   "checkedAt": "2026-09-30T06:53:05Z",
-  "evidenceNote": "Phase 4 limited Earth Signals pilot is live-health verified and explicitly approved. GitHub Actions run 36680341225 deployed runtime contributions ON; operator-verified /health at 2026-09-30T06:53:05Z reported ok=true, contributionsEnabled=true, durableStorage=true, both runtime secrets configured, no raw network identifiers stored, state healthy, signals=0, reports=0, caps 5000/1000, and secretValuesExposed=false. Public manifest activation is now allowed for the limited structured-signal pilot.",
+  "evidenceNote": "Phase 4 limited Earth Signals pilot is explicitly approved and live-health verified. Run 36680341225 deployed runtime ON; /health confirmed contributionsEnabled=true, durable storage, configured secrets, healthy state, zero signals/reports, bounded caps, no raw network identifiers, and no secret exposure.",
   "publicActivationAllowed": true,
   "runtimePilotDeployed": true,
   "runtimePilotDeploymentRunId": 36680341225,
