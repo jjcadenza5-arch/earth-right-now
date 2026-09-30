@@ -865,3 +865,19 @@ ERN core website is complete as a stable beta. Autonomous work is now maintenanc
 - External gate wording was tightened accordingly: healthy Pilot 1 observation must complete first; media deployment still requires a separate intentional human review.
 - Do not deploy or activate Now Moment media merely because the 24-hour timer elapses.
 
+## 2026-09-30 — Phase 4 observation gate green release
+- The Phase 4 Earth Signals observation gate is now fully wired into Operations and release safety.
+- First recorded observation sample: `2026-09-30T08:53:03Z`
+  - `healthyNow=true`
+  - elapsed about **2.0h**
+  - minimum observation **24h**
+  - `state=EARLY_OBSERVATION`
+  - `reviewEligible=false`
+  - `automaticExpansionAllowed=false`
+- Daily Operations now writes `ern-ops/phase4-earth-signals-observation.json` and includes the observation state in the operator brief.
+- Both Now Moment media deployment workflows now require Pilot 1 to be live-healthy and observation-review-eligible before fail-closed media infrastructure can even deploy.
+- Completing 24h is only a **human review eligibility** condition; it does not authorize Pilot 2 or public media activation.
+- Operations run `36692789388` completed SUCCESS after the observation/brief wiring.
+- Pages run `36692809314` completed SUCCESS through Deploy after all release gates passed.
+- Current Phase 4 instruction: **continue observing Pilot 1; no human action is needed until the observation gate matures or health changes.**
+
