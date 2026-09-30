@@ -30,22 +30,22 @@ const checks={
   manualDeploymentOnly:deployWorkflow.includes("workflow_dispatch:")&&!deployWorkflow.includes("\n  push:"),
   deploymentRechecksFailClosed:deployWorkflow.includes("ERN_EARTH_SIGNALS_ENABLED")&&deployWorkflow.includes("ERN_SUBMISSION_ENABLED")&&deployWorkflow.includes("ERN_NOW_MOMENT_PHOTO_ENABLED")&&deployWorkflow.includes("Deployment may create infrastructure only; public activation remains off."),
   earthSignalsDeployedPublicOff:signalsDeployment.status==="DEPLOYED"&&/^https:\/\//.test(String(signalsDeployment.endpointUrl||""))&&signalsDeployment.publicActivationAllowed===false,
-  submissionPublicOff:submissionTransport.enabled===false&&!submissionTransport.endpoint,
+  submissionDeployedPublicOff:submissionTransport.status==="DEPLOYED"&&submissionTransport.enabled===false&&/^https:\/\//.test(String(submissionTransport.endpoint||"")),
   mediaPublicOff:mediaDeployment.status==="NOT_DEPLOYED"&&mediaDeployment.endpointUrl==null&&mediaDeployment.publicActivationAllowed===false&&mediaDeployment.videoEnabled===false
 };
 const prepared=checks.earthSignalsWorkerPrepared&&checks.submissionWorkerPrepared&&checks.mediaWorkerPrepared&&checks.boundedJsonPrepared&&checks.signalsAtomicRateLimit&&checks.submissionAtomicRateLimit&&checks.signalsBoundedBodies&&checks.submissionBoundedBodies&&checks.manualDeploymentOnly&&checks.deploymentRechecksFailClosed;
-const publicActivationOff=checks.earthSignalsDeployedPublicOff&&checks.submissionPublicOff&&checks.mediaPublicOff;
+const publicActivationOff=checks.earthSignalsDeployedPublicOff&&checks.submissionDeployedPublicOff&&checks.mediaPublicOff;
 const next=prepared&&publicActivationOff?"CONTROLLED_REMAINING_INFRASTRUCTURE_DEPLOYMENT":"REPAIR_PREPARATION_BOUNDARY";
 
 console.log(JSON.stringify({
   phase:"PHASE_J_TO_L_PARTICIPATION_INFRASTRUCTURE",
-  state:prepared?"EARTH_SIGNALS_DEPLOYED_REMAINING_INFRASTRUCTURE_PREPARED":"PREPARATION_INCOMPLETE",
+  state:prepared?"EARTH_SIGNALS_AND_SUBMISSIONS_DEPLOYED_MEDIA_PREPARED":"PREPARATION_INCOMPLETE",
   prepared,
   publicActivationOff,
   checks,
   workers:{
     earthSignals:{prepared:checks.earthSignalsWorkerPrepared,deployed:signalsDeployment.status==="DEPLOYED",publicEnabled:false,deploymentEvidence:signalsDeployment.status,endpointUrl:signalsDeployment.endpointUrl||null},
-    submissions:{prepared:checks.submissionWorkerPrepared,publicEnabled:false,transportEnabled:submissionTransport.enabled===true},
+    submissions:{prepared:checks.submissionWorkerPrepared,deployed:submissionTransport.status==="DEPLOYED",publicEnabled:submissionTransport.enabled===true,transportEnabled:submissionTransport.enabled===true,deploymentEvidence:submissionTransport.status||null,endpointUrl:submissionTransport.endpoint||null},
     nowMomentMedia:{prepared:checks.mediaWorkerPrepared,publicEnabled:false,deploymentEvidence:mediaDeployment.status,videoEnabled:false,ttlMinutes:mediaDeployment.ttlMinutes}
   },
   safety:{
@@ -56,5 +56,5 @@ console.log(JSON.stringify({
     visitorMediaMayUpgradeSourceTruth:false
   },
   next,
-  note:"Earth Signals infrastructure is deployed and remains public-OFF. Submission and Now Moment media infrastructure remain separate controlled deployments; visitor-facing activation remains a separate explicit gate."
+  note:"Earth Signals and Submission infrastructure are deployed and remain public-OFF. Now Moment media infrastructure remains a separate controlled deployment; visitor-facing activation remains a separate explicit gate."
 },null,2));
