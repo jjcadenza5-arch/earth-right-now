@@ -13,7 +13,7 @@ const gates=run("scripts/external-gate-register.mjs");
 const localBlockers=[];
 if(product.conclusion!=="STABLE_BETA_READY")localBlockers.push("core-stable-beta");
 if(phase.currentStage!=="STAGE_R_EXTERNAL_GATE_TRIGGER_REGISTER")localBlockers.push("canonical-stage");
-if(participation.prepared!==true||participation.publicActivationOff!==true)localBlockers.push("participation-local-preparation");
+if(participation.prepared!==true||!(participation.publicActivationOff===true||participation.phase4PilotActive===true))localBlockers.push("participation-local-preparation");
 if(media.prepared!==true||media.publicActivationAllowed!==false)localBlockers.push("now-moment-media-local-preparation");
 if(guide.deterministicFallback!==true||!["DETERMINISTIC_ONLY","GENERATIVE_ENABLED"].includes(guide.mode))localBlockers.push("guide-local-foundation");
 if(local.state!=="PILOT_COMPLETE")localBlockers.push("local-earth-pilot");
@@ -31,7 +31,7 @@ else{state="AUTONOMOUS_HOLD_EXTERNAL_WAIT";next="WAIT_FOR_MATERIAL_EXTERNAL_TRIG
 console.log(JSON.stringify({
   schemaVersion:1,
   coreComplete,
-  completionState:coreComplete?"CORE_COMPLETE_EXTERNAL_OPTIONAL":"CORE_INCOMPLETE",
+  completionState:coreComplete?(participation.phase4PilotActive===true?"CORE_COMPLETE_PHASE_4_PILOT_ACTIVE":"CORE_COMPLETE_EXTERNAL_OPTIONAL"):"CORE_INCOMPLETE",
   state,
   localBlockers,
   externalEligibleNow:eligible,
@@ -48,6 +48,6 @@ console.log(JSON.stringify({
     timePassingAloneCountsAsSuccess:false
   },
   note:coreComplete
-    ?"ERN core is complete. Autonomous hold is the correct state when no maintenance blocker or external trigger exists; optional activation gates must not be misreported as unfinished core work."
+    ?(participation.phase4PilotActive===true?"ERN core is complete and the limited Earth Signals Phase 4 pilot is active. Autonomous work should observe the pilot and preserve remaining gates without inventing new construction.":"ERN core is complete. Autonomous hold is the correct state when no maintenance blocker or external trigger exists; optional activation gates must not be misreported as unfinished core work.")
     :"Autonomous work should address only the listed local blockers before core completion can be claimed."
 },null,2));
