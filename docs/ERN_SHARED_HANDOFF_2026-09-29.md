@@ -756,3 +756,13 @@ ERN core website is complete as a stable beta. Autonomous work is now maintenanc
 - The Stage R submission lane is now **DEPLOYED_PUBLIC_OFF**. Enabling visitor submissions is a separate explicit product decision, not remaining infrastructure work.
 - Do not repeat Submission secret setup or deployment unless deployment state materially changes.
 
+## 2026-09-30 — post-Submission autonomous hold confirmed
+- Post-deployment state transition cleanup is complete.
+- `data/submission-transport.json` records the deployed Submission endpoint while `enabled=false`; public intake remains explicitly OFF.
+- Submission readiness now distinguishes `DEPLOYED_PUBLIC_OFF` from both undeployed and publicly enabled states.
+- Operations correctly treats the Submission lane as an **external/product activation gate**, not unfinished local implementation.
+- Latest verified Operations run after the cleanup: `36654568519` (run 716), **SUCCESS**.
+- Latest verified public Pages deployment containing the canonical deployed-Submission state: `36654289551` (run 1553), **SUCCESS through Deploy**.
+- Current operator brief explicitly reports **AUTONOMOUS HOLD — no high-priority local implementation or research lane remains open**.
+- Open Stage R lanes are all external/account/provider or explicit product decisions. Do not reopen local construction merely because they remain untimed waits.
+
