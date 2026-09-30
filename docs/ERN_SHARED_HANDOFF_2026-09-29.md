@@ -817,3 +817,26 @@ ERN core website is complete as a stable beta. Autonomous work is now maintenanc
 - Nishiki Market remains an expired HUMAN_PLAYBACK renewal in backlog, but the inside-ERN target remains comfortably satisfied (12/5), so it is not a high-priority release blocker. Renew only through real in-window human playback observation; do not infer it from HTTP/provider reachability.
 - Do not activate Submission, Now Moment media, generative Guide AI, Seoul context, analytics or social lanes without their own explicit product/account trigger.
 
+## 2026-09-30 — Phase 4 pilot observation monitoring added
+- Phase 4 Pilot 1 (Earth Signals) remains ACTIVE.
+- Canonical Phase 4 documentation has been aligned with the live pilot state; stale “not yet activated” wording was removed from the phase map and pilot plan.
+- Added read-only live pilot health assessment:
+  - `src/earth-signal-live-health.js`
+  - `scripts/earth-signal-live-health.mjs`
+  - `tests/earth-signal-live-health.smoke.js`
+- Daily ERN Operations now performs a real HTTPS GET to `https://ern-signals-api.jjcadenza6.workers.dev/health` and fails the observation lane if the active pilot becomes unhealthy, runtime contributions unexpectedly turn off, privacy boundaries change, secret exposure appears, durable state fails, or configured caps are exceeded.
+- First automated live observation at `2026-09-30T07:50:49Z` passed:
+  - HTTP 200
+  - `healthy=true`
+  - `pilotActive=true`
+  - `contributionsEnabled=true`
+  - signals `0 / 5000`
+  - reports `0 / 1000`
+  - `rawNetworkIdentifiersStored=false`
+  - `secretValuesExposed=false`
+- Operations run `36686019520` completed SUCCESS with the live-health check.
+- Latest Operations run after wiring live health into the operator brief: `36686082189` (run 735), SUCCESS.
+- Pages run `36686012988` (run 1580) completed SUCCESS.
+- The daily operator brief now includes a dedicated **Earth Signals live pilot health** section.
+- Continue observing Pilot 1. Do not open Submission, Now Moment media or any other participation lane merely because Pilot 1 is healthy.
+
