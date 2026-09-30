@@ -31,18 +31,19 @@ const checks={
   submissionBoundedBodies:submissionWorker.includes("readJsonBodyBounded")&&submissionWorker.includes("8192"),
   mediaWorkerPrepared:mediaCfg.includes('"name": "ern-now-moment-media"')&&mediaCfg.includes('"ERN_NOW_MOMENT_PHOTO_ENABLED": "false"')&&mediaCfg.includes('"class_name": "MediaState"')&&mediaCfg.includes('"bucket_name": "ern-now-moment-media"')&&mediaWorker.includes("automaticPublicationAllowed:false")&&mediaWorker.includes("directBucketPublicAccess:false")&&mediaState.includes("MAX_RETAINED_MEDIA=500"),
   manualDeploymentOnly:deployWorkflow.includes("workflow_dispatch:")&&!deployWorkflow.includes("\n  push:"),
-  deploymentRechecksFailClosed:deployWorkflow.includes("ERN_EARTH_SIGNALS_ENABLED")&&deployWorkflow.includes("ERN_SUBMISSION_ENABLED")&&deployWorkflow.includes("ERN_NOW_MOMENT_PHOTO_ENABLED")&&deployWorkflow.includes("Deployment may create infrastructure only; public activation remains off."),
+  deploymentRechecksFailClosed:deployWorkflow.includes("ERN_EARTH_SIGNALS_ENABLED")&&deployWorkflow.includes("ERN_SUBMISSION_ENABLED")&&deployWorkflow.includes("ERN_NOW_MOMENT_PHOTO_ENABLED")&&deployWorkflow.includes("public manifest remains off until live health verification"),
   earthSignalsDeployedPublicOff:signalsDeployment.status==="DEPLOYED"&&/^https:\/\//.test(String(signalsDeployment.endpointUrl||""))&&signalsDeployment.publicActivationAllowed===false,
   submissionDeployedPublicOff:submissionTransport.status==="DEPLOYED"&&submissionTransport.enabled===false&&/^https:\/\//.test(String(submissionTransport.endpoint||"")),
   mediaPublicOff:mediaDeployment.status==="NOT_DEPLOYED"&&mediaDeployment.endpointUrl==null&&mediaDeployment.publicActivationAllowed===false&&mediaDeployment.videoEnabled===false
 };
 const prepared=checks.earthSignalsRuntimeFlagExplicit&&checks.earthSignalsPilotAuthorized&&checks.earthSignalsWorkerPrepared&&checks.submissionWorkerPrepared&&checks.mediaWorkerPrepared&&checks.boundedJsonPrepared&&checks.signalsAtomicRateLimit&&checks.submissionAtomicRateLimit&&checks.signalsBoundedBodies&&checks.submissionBoundedBodies&&checks.manualDeploymentOnly&&checks.deploymentRechecksFailClosed;
 const publicActivationOff=checks.earthSignalsDeployedPublicOff&&checks.submissionDeployedPublicOff&&checks.mediaPublicOff;
-const next=prepared&&publicActivationOff?"CONTROLLED_REMAINING_INFRASTRUCTURE_DEPLOYMENT":"REPAIR_PREPARATION_BOUNDARY";
+const runtimePilot=signalsCfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "true"')&&pilot?.ownerApproval===true&&pilot?.runtimeActivationAllowed===true;
+const next=prepared&&publicActivationOff?(runtimePilot?"VERIFY_EARTH_SIGNALS_RUNTIME_PILOT_HEALTH":"CONTROLLED_REMAINING_INFRASTRUCTURE_DEPLOYMENT"):"REPAIR_PREPARATION_BOUNDARY";
 
 console.log(JSON.stringify({
   phase:"PHASE_J_TO_L_PARTICIPATION_INFRASTRUCTURE",
-  state:prepared?"EARTH_SIGNALS_AND_SUBMISSIONS_DEPLOYED_MEDIA_PREPARED":"PREPARATION_INCOMPLETE",
+  state:prepared?(runtimePilot?"EARTH_SIGNALS_RUNTIME_PILOT_STAGED_PUBLIC_OFF":"EARTH_SIGNALS_AND_SUBMISSIONS_DEPLOYED_MEDIA_PREPARED"):"PREPARATION_INCOMPLETE",
   prepared,
   publicActivationOff,
   checks,
