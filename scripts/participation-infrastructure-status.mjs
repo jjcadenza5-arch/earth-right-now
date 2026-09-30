@@ -2,7 +2,7 @@ import {readFile} from "node:fs/promises";
 
 async function text(path){return readFile(new URL("../"+path,import.meta.url),"utf8")}
 async function json(path){return JSON.parse(await text(path))}
-const [signalsCfg,submissionCfg,mediaCfg,mediaWorker,mediaState,signalsWorker,submissionWorker,boundedJson,earthSignalService,deployWorkflow,signalsDeployment,submissionTransport,mediaDeployment]=await Promise.all([
+const [signalsCfg,submissionCfg,mediaCfg,mediaWorker,mediaState,signalsWorker,submissionWorker,boundedJson,earthSignalService,deployWorkflow,signalsDeployment,submissionTransport,mediaDeployment,pilot]=await Promise.all([
   text("signals-worker/wrangler.jsonc"),
   text("submission-worker/wrangler.jsonc"),
   text("media-worker/wrangler.jsonc"),
@@ -15,11 +15,14 @@ const [signalsCfg,submissionCfg,mediaCfg,mediaWorker,mediaState,signalsWorker,su
   text(".github/workflows/deploy-participation-workers.yml"),
   json("data/earth-signal-deployment.json"),
   json("data/submission-transport.json"),
-  json("data/now-moment-media-deployment.json")
+  json("data/now-moment-media-deployment.json"),
+  json("data/phase4-earth-signals-pilot.json")
 ]);
 
 const checks={
-  earthSignalsWorkerPrepared:signalsCfg.includes('"name": "ern-signals-api"')&&signalsCfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "false"')&&signalsCfg.includes('"class_name": "SignalState"'),
+  earthSignalsRuntimeFlagExplicit:signalsCfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "false"')||signalsCfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "true"'),
+  earthSignalsPilotAuthorized:signalsCfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "false"')||(signalsCfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "true"')&&pilot?.phase===4&&pilot?.feature==="earth-signals"&&pilot?.ownerApproval===true&&pilot?.runtimeActivationAllowed===true),
+  earthSignalsWorkerPrepared:signalsCfg.includes('"name": "ern-signals-api"')&&signalsCfg.includes('"class_name": "SignalState"'),
   submissionWorkerPrepared:submissionCfg.includes('"name": "ern-submission-api"')&&submissionCfg.includes('"ERN_SUBMISSION_ENABLED": "false"')&&submissionCfg.includes('"class_name": "SubmissionInbox"'),
   boundedJsonPrepared:boundedJson.includes("readJsonBodyBounded")&&boundedJson.includes("REQUEST_TOO_LARGE"),
   signalsAtomicRateLimit:!earthSignalService.includes("limiter.check(")&&earthSignalService.includes("limiter.commit("),
@@ -33,7 +36,7 @@ const checks={
   submissionDeployedPublicOff:submissionTransport.status==="DEPLOYED"&&submissionTransport.enabled===false&&/^https:\/\//.test(String(submissionTransport.endpoint||"")),
   mediaPublicOff:mediaDeployment.status==="NOT_DEPLOYED"&&mediaDeployment.endpointUrl==null&&mediaDeployment.publicActivationAllowed===false&&mediaDeployment.videoEnabled===false
 };
-const prepared=checks.earthSignalsWorkerPrepared&&checks.submissionWorkerPrepared&&checks.mediaWorkerPrepared&&checks.boundedJsonPrepared&&checks.signalsAtomicRateLimit&&checks.submissionAtomicRateLimit&&checks.signalsBoundedBodies&&checks.submissionBoundedBodies&&checks.manualDeploymentOnly&&checks.deploymentRechecksFailClosed;
+const prepared=checks.earthSignalsRuntimeFlagExplicit&&checks.earthSignalsPilotAuthorized&&checks.earthSignalsWorkerPrepared&&checks.submissionWorkerPrepared&&checks.mediaWorkerPrepared&&checks.boundedJsonPrepared&&checks.signalsAtomicRateLimit&&checks.submissionAtomicRateLimit&&checks.signalsBoundedBodies&&checks.submissionBoundedBodies&&checks.manualDeploymentOnly&&checks.deploymentRechecksFailClosed;
 const publicActivationOff=checks.earthSignalsDeployedPublicOff&&checks.submissionDeployedPublicOff&&checks.mediaPublicOff;
 const next=prepared&&publicActivationOff?"CONTROLLED_REMAINING_INFRASTRUCTURE_DEPLOYMENT":"REPAIR_PREPARATION_BOUNDARY";
 
@@ -44,7 +47,7 @@ console.log(JSON.stringify({
   publicActivationOff,
   checks,
   workers:{
-    earthSignals:{prepared:checks.earthSignalsWorkerPrepared,deployed:signalsDeployment.status==="DEPLOYED",publicEnabled:false,deploymentEvidence:signalsDeployment.status,endpointUrl:signalsDeployment.endpointUrl||null},
+    earthSignals:{prepared:checks.earthSignalsWorkerPrepared,deployed:signalsDeployment.status==="DEPLOYED",runtimeEnabled:signalsCfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "true"'),publicEnabled:signalsDeployment.publicActivationAllowed===true,deploymentEvidence:signalsDeployment.status,endpointUrl:signalsDeployment.endpointUrl||null},
     submissions:{prepared:checks.submissionWorkerPrepared,deployed:submissionTransport.status==="DEPLOYED",publicEnabled:submissionTransport.enabled===true,transportEnabled:submissionTransport.enabled===true,deploymentEvidence:submissionTransport.status||null,endpointUrl:submissionTransport.endpoint||null},
     nowMomentMedia:{prepared:checks.mediaWorkerPrepared,publicEnabled:false,deploymentEvidence:mediaDeployment.status,videoEnabled:false,ttlMinutes:mediaDeployment.ttlMinutes}
   },
@@ -56,5 +59,5 @@ console.log(JSON.stringify({
     visitorMediaMayUpgradeSourceTruth:false
   },
   next,
-  note:"Earth Signals and Submission infrastructure are deployed and remain public-OFF. Now Moment media infrastructure remains a separate controlled deployment; visitor-facing activation remains a separate explicit gate."
+  note:signalsCfg.includes('"ERN_EARTH_SIGNALS_ENABLED": "true"')?"Earth Signals runtime pilot is explicitly authorized for Phase 4 while the public manifest remains OFF pending live health verification. Submission and Now Moment media remain public-OFF.":"Earth Signals and Submission infrastructure are deployed and remain public-OFF. Now Moment media infrastructure remains a separate controlled deployment; visitor-facing activation remains a separate explicit gate."
 },null,2));
