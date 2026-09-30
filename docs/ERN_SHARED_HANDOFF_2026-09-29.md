@@ -731,3 +731,28 @@ ERN core website is complete as a stable beta. Autonomous work is now maintenanc
 - Pages run `36648359485` completed SUCCESS through Deploy.
 - ERN core remains complete as a stable beta. Resume autonomous work only on a material source/catalog change, a verified external/provider/account trigger, an exact new provider target, or an explicitly opened product phase. Do not invent work merely to avoid hold.
 
+## 2026-09-30 — Submission Worker deployed, public transport OFF
+- GitHub Actions **Deploy ERN Participation Workers #7** (run `36653928433`) completed SUCCESS with target `submissions`.
+- Cloudflare deployed `ern-submission-api` at `https://ern-submission-api.jjcadenza6.workers.dev`.
+- Runtime secrets were installed successfully without exposing their values:
+  - `ERN_SUBMISSION_RATE_HMAC_KEY`
+  - `ERN_SUBMISSION_REVIEW_TOKEN`
+- Operator-verified live `/health` confirmed:
+  - `ok=true`
+  - `submissionEnabled=false`
+  - `durableStorage=true`
+  - `rateSubjectSecretConfigured=true`
+  - `reviewTokenConfigured=true`
+  - `retentionDays=30`
+  - `automaticPublishAllowed=false`
+  - `automaticApprovalAllowed=false`
+  - `rawNetworkIdentifiersStored=false`
+  - state healthy with `pendingRecords=0`
+  - `maxRetentionDays=30`
+  - `maxRetainedSubmissions=1000`
+  - `secretValuesExposed=false`
+- Canonical `data/submission-transport.json` now records deployed infrastructure and the real HTTPS submission endpoint while keeping `enabled=false`.
+- Participation status now recognizes **Earth Signals + Submission infrastructure deployed, Now Moment media prepared**, all visitor-facing participation still fail-closed.
+- The Stage R submission lane is now **DEPLOYED_PUBLIC_OFF**. Enabling visitor submissions is a separate explicit product decision, not remaining infrastructure work.
+- Do not repeat Submission secret setup or deployment unless deployment state materially changes.
+
