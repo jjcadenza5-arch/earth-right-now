@@ -15,6 +15,10 @@
   "observability": true,
   "costGuard": true,
   "checkedAt": "2026-09-29T18:02:34Z",
-  "evidenceNote": "GitHub Actions run 36608946177 deployed ern-signals-api. Live /health verified service/state visibility, bounded counts and no secret exposure. Deployed code enforces per-subject rate limits plus hard caps of 5,000 active signals and 1,000 retained reports; /health reports those limits. Public contributions remain OFF and require an explicit product activation decision.",
-  "publicActivationAllowed": false
+  "evidenceNote": "Earth Signals infrastructure is deployed. Phase 4 limited-pilot runtime activation was explicitly approved and deployed in GitHub Actions run 36680341225. Wrangler output verified env.ERN_EARTH_SIGNALS_ENABLED=(\"true\") and deployed version 69e0b578-5d54-4c92-a37a-fda75193f4f4 at the canonical Worker endpoint. Public manifest activation remains OFF pending direct live /health verification that contributionsEnabled=true.",
+  "publicActivationAllowed": false,
+  "runtimePilotDeployed": true,
+  "runtimePilotDeploymentRunId": 36680341225,
+  "runtimePilotVersionId": "69e0b578-5d54-4c92-a37a-fda75193f4f4",
+  "runtimePilotDeployedAt": "2026-09-30T06:50:37Z"
 }
