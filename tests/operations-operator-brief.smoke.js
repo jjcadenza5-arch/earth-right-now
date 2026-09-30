@@ -180,6 +180,29 @@ const autonomousGenerativeGuideHold=operationsOperatorBrief({
 assert.match(autonomousGenerativeGuideHold,/AUTONOMOUS HOLD/);
 assert.doesNotMatch(autonomousGenerativeGuideHold,/guideLocallyComplete/);
 
+const activeSignalPilotHold=operationsOperatorBrief({
+ snapshot:{insideERN:{ready:6,targetReady:5,readyShortfall:0,recoveryDebt:0},providers:{families:2,targetFamilies:2},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ operatorReviewQueue:{renewalCount:1,renewalRequiredCount:1,primaryItems:[{id:"kyoto-nishiki-market-live",title:"Kyoto — Nishiki Market",reviewMode:"RENEW"}],items:[{id:"kyoto-nishiki-market-live"}]},
+ playbackEvidenceConsistency:{summary:{issues:0}},
+ sourceRevalidationTriage:{immediate:[]},
+ providerDiscoveryQueue:{state:"CURRENT_CATALOG_RESEARCH_COMPLETE"},
+ providerGeneratedTargets:{items:[
+   {state:"EXACT_PROVIDER_CODE_REQUIRED",blockerReason:"interactive"},
+   {state:"EXACT_PROVIDER_TARGET_URL_REQUIRED",blockerReason:"provider target"}
+ ]},
+ commercialOnboarding:{state:"PILOT_COVERAGE_REACHED"},
+ commercialResearchDepth:{items:[]},
+ localDirectory:{state:"PILOT_COMPLETE"},
+ guideAi:{mode:"DETERMINISTIC_ONLY",deterministicFallback:true},
+ earthSignals:{mode:"CONTRIBUTION_ENABLED",privacyNoticeDraft:{published:true}},
+ participationInfrastructure:{prepared:true,phase4PilotActive:true,remainingPublicActivationOff:true,publicActivationOff:false},
+ submissionTransport:{active:false,endpointReady:true,privacyReady:true,retentionReady:true}
+});
+assert.match(activeSignalPilotHold,/AUTONOMOUS HOLD \/ HUMAN REVIEW DUE/);
+assert.doesNotMatch(activeSignalPilotHold,/earthSignalsLocallyComplete/);
+assert.doesNotMatch(activeSignalPilotHold,/participationInfrastructurePrepared/);
+
 const partialHoldBrief=operationsOperatorBrief({
  snapshot:{insideERN:{ready:6,targetReady:5,readyShortfall:0,recoveryDebt:0},providers:{families:2,targetFamilies:2},release:{blockers:0}},
  delta:{direction:"UNCHANGED",improved:[],regressed:[]},
