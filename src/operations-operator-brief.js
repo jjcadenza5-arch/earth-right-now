@@ -231,7 +231,7 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   if(phase5OperatingStatus){
     lines.push("## Phase 5 operating state");
     lines.push(`- Entry approved ${phase5OperatingStatus.entryApproved===true?"YES":"NO"}; separate feature gates ${phase5OperatingStatus.separateFeatureGatesRemainOff===true?"OFF / ISOLATED":"CHECK REQUIRED"}.`);
-    lines.push(`- Commercial: ${phase5OperatingStatus.commercial?.activePartners||0} active partner(s), ${phase5OperatingStatus.commercial?.currentVerifiedOffers||0} current verified offer(s), ${phase5OperatingStatus.commercial?.placeCoverage||0} place(s) covered; placement preflight ${phase5OperatingStatus.commercial?.placementPreflightOk===true?"PASS":"CHECK REQUIRED"}.`);
+    lines.push(`- Commercial: ${phase5OperatingStatus.commercial?.activePartners||0} active partner(s), ${phase5OperatingStatus.commercial?.currentVerifiedOffers||0} current verified offer(s), ${phase5OperatingStatus.commercial?.placeCoverage||0} place(s) covered; placement preflight ${phase5OperatingStatus.commercial?.placementPreflightOk===true?"PASS":"CHECK REQUIRED"}; source-ineligible offers ${phase5OperatingStatus.commercial?.sourceIneligibleOffers||0}.`);
     lines.push(`- Payout method: ${phase5OperatingStatus.commercial?.payoutReadiness||"UNKNOWN"}; this does not authorize or block separate public feature gates.`);
     lines.push(`- Commercial verification attention: ${phase5OperatingStatus.maintenance?.commercialVerificationAttention??"unknown"}.`);
     lines.push("- Automatic placement/relinking, paid ranking, booking/revenue inference and automatic external account actions remain forbidden.","");
