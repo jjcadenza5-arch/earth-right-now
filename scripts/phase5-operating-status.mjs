@@ -10,6 +10,8 @@ const opportunities=read("data/commercial-link-opportunities.json");
 const attribution=run("scripts/commercial-attribution-status.mjs");
 const placement=run("scripts/commercial-placement-preflight.mjs");
 const inventory=run("scripts/commercial-inventory-status.mjs");
+const inventoryPartners=inventory?.partnerRegistry?.rows||[];
+const inventoryOffers=inventory?.travelOfferRegistry?.rows||[];
 const horizon=run("scripts/commercial-verification-horizon.mjs");
 const gates=run("scripts/external-gate-register.mjs");
 
@@ -36,8 +38,11 @@ const report={
     inventoryStage:inventory?.stage||null,
     publicActivationAllowedByVerifiedInventory:inventory?.publicActivationAllowed===true,
     activePartners:inventory?.partnerRegistry?.active||0,
+    activePartnerIds:inventoryPartners.filter(x=>x.active).map(x=>x.id),
     currentVerifiedOffers:inventory?.travelOfferRegistry?.current||0,
+    currentVerifiedOfferIds:inventoryOffers.filter(x=>x.current).map(x=>x.id),
     placeCoverage:inventory?.travelOfferRegistry?.placeCoverage||0,
+    inventoryNote:"Counts reflect current source/catalog eligibility as well as commercial verification; a verified offer tied to a non-current or unknown ERN place is fail-closed from current inventory.",
     privateOpportunityQueue:(opportunities?.opportunities||[]).length,
     opportunityQueuePublic:false,
     payoutMethodConfigured:payoutReady,
