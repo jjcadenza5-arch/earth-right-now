@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness,phase5OperatingStatus}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -227,6 +227,14 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     if(phase5Readiness.blockers?.length)lines.push(`- Blockers: ${phase5Readiness.blockers.join(", ")}.`);
     lines.push(`- Next: ${phase5Readiness.next||"CONTINUE_PHASE4_OBSERVATION"}; automatic Phase 5 entry ${phase5Readiness.automaticPhase5EntryAllowed===true?"ALLOWED":"FORBIDDEN"}.`);
     lines.push("- Phase 5 can become review-eligible only after the healthy Phase 4 observation window; eligibility never substitutes for explicit human approval.","");
+  }
+  if(phase5OperatingStatus){
+    lines.push("## Phase 5 operating state");
+    lines.push(`- Entry approved ${phase5OperatingStatus.entryApproved===true?"YES":"NO"}; separate feature gates ${phase5OperatingStatus.separateFeatureGatesRemainOff===true?"OFF / ISOLATED":"CHECK REQUIRED"}.`);
+    lines.push(`- Commercial: ${phase5OperatingStatus.commercial?.activePartners||0} active partner(s), ${phase5OperatingStatus.commercial?.currentVerifiedOffers||0} current verified offer(s), ${phase5OperatingStatus.commercial?.placeCoverage||0} place(s) covered; placement preflight ${phase5OperatingStatus.commercial?.placementPreflightOk===true?"PASS":"CHECK REQUIRED"}.`);
+    lines.push(`- Payout method: ${phase5OperatingStatus.commercial?.payoutReadiness||"UNKNOWN"}; this does not authorize or block separate public feature gates.`);
+    lines.push(`- Commercial verification attention: ${phase5OperatingStatus.maintenance?.commercialVerificationAttention??"unknown"}.`);
+    lines.push("- Automatic placement/relinking, paid ranking, booking/revenue inference and automatic external account actions remain forbidden.","");
   }
   if(earthSignals){
     lines.push("## Earth Signals readiness");
