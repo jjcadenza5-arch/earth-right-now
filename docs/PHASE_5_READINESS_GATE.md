@@ -69,3 +69,11 @@ The approval is intentionally narrow: Phase 5 may begin, while Pilot 2, Submissi
 
 Canonical approval state: `data/phase5-entry-approval.json`.
 
+
+## Post-entry operating state
+
+Phase 5 is now the canonical active project phase. Stage R remains the external-gate trigger register; it is not a competing phase number.
+
+Phase 5 entry does not merge or silently approve independent feature gates. Non-gated operations, maintenance and monetization preparation may continue autonomously, while Pilot 2, Submission public intake, Now Moment media, public generative Guide, analytics, social channels and other external actions remain separate human decisions.
+
+When only fresh HUMAN_PLAYBACK proof is missing, the correct state is a human-review boundary rather than invented autonomous construction.
