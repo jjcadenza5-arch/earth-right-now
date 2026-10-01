@@ -1,6 +1,6 @@
 # ERN commercial activation plan
 
-Status: **PHASE 3 ACTIVE — VIATOR LIMITED PILOT, TRAVELPAYOUTS NEXT, DIRECT BIG-BRAND APPLICATIONS DEFERRED**
+Status: **PHASE 5 ACTIVE — VERIFIED LIMITED COMMERCIAL INVENTORY; EXPANSION REMAINS MANUAL AND FAIL-CLOSED**
 
 Opened: 2026-09-27
 
@@ -50,10 +50,10 @@ Keep this extra transport/referral relationship on hold while Viator and the Tra
 
 1. No further Booking.com action is required unless CJ/Booking.com provides a material new invitation or account-state change.
 2. Continue the verified Viator pilot.
-3. Create an ERN Project on Travelpayouts when ready. Use earthrightnow.app as the website identity and enter only truthful current traffic/audience information.
+3. Travelpayouts Project is already active and reviewed with 26 available programs observed. Do not recreate it or re-enable Drive automation.
 4. Use **Earth Right Now** / **earthrightnow.app** as the site/product identity for any future application.
 5. Do not invent traffic, conversion, audience-size or revenue figures. Use truthful current values if asked.
-6. After the Travelpayouts Project is created, report only which programs the dashboard shows as Available / Under Review / Unavailable; do not paste credentials into chat or GitHub.
+6. Configure the Travelpayouts payout method before the first payout is due; this is an account-owner action and does not block current ERN or current tracked links. Never paste payout credentials or secrets into chat or GitHub.
 
 ## After acceptance
 
@@ -66,4 +66,4 @@ Only after a program confirms acceptance:
 - activate a limited public pilot;
 - confirm Earth-view ranking is unchanged.
 
-Current finite lane: monitor the Auckland Viator pilot and wait for Travelpayouts Project matching to complete, then review the actual available-program set. Do not mass-activate programs and do not re-enable Drive automation. Prioritize genuine ERN fit such as activities/tickets/transport before secondary utilities, using manual links/widgets only. Keep direct Agoda and Skyscanner applications deferred while ERN accumulates real traffic, engagement and commercial history.
+Current finite lane: maintain the verified Viator/Klook/Tiqets/Welcome Pickups inventory and its revalidation horizon. Existing destination-specific tracked links cover Auckland, New York/Statue of Liberty, Tokyo, Sydney and Honolulu. The next expansion is a deliberately small account-side exact-link batch only when current ERN source truth and visitor utility justify it. Do not mass-activate programs and do not re-enable Drive automation. Keep direct Agoda and Skyscanner applications deferred while ERN accumulates real traffic, engagement and commercial history.
