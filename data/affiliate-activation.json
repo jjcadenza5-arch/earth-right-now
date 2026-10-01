@@ -76,9 +76,9 @@
       "rationale": "Direct large-brand applications remain on hold while ERN builds traffic, social proof and commercial history through Viator and Travelpayouts-accessible programs."
     }
   ],
-  "next": "VALIDATE_AND_DEPLOY_KLOOK_HONOLULU_THEN_REVIEW_COMMERCIAL_WAVE",
-  "note": "Travelpayouts first activation set selected by ERN fit: Klook, Tiqets, Welcome Pickups. Drive remains off. Generate/verify exact manual links before any public placement. Remaining unseen available programs are not guessed.",
-  "updatedAt": "2026-09-28T14:22:00Z",
+  "next": "MAINTAIN_CURRENT_VERIFIED_DESTINATION_LINKS_AND_VET_NEXT_SMALL_BATCH",
+  "note": "Travelpayouts first activation set is verified: Klook, Tiqets and Welcome Pickups. Destination-specific links already exist for Auckland, New York/Statue of Liberty, Tokyo, Sydney and Honolulu. Drive remains off. New exact links require deliberate account-side generation and verification; remaining available programs are not guessed.",
+  "updatedAt": "2026-10-01T11:45:00Z",
   "travelpayoutsVerifiedPrograms": {
     "klook": {
       "state": "MANUAL_LINK_HUMAN_VERIFIED",
@@ -182,7 +182,7 @@
     }
   },
   "firstTravelpayoutsWave": {
-    "state": "COMPLETE_VERIFIED_GENERIC_LINKS",
+    "state": "COMPLETE_DESTINATION_LINKS_VERIFIED",
     "programs": [
       "klook",
       "tiqets",
@@ -190,6 +190,6 @@
     ],
     "completedAt": "2026-09-28T13:41:00Z",
     "publicPlacementAllowed": false,
-    "next": "CREATE_DESTINATION_SPECIFIC_LINKS_FOR_EXISTING_ERN_PLACES"
+    "next": "MAINTAIN_VERIFICATION_HORIZON_AND_VET_NEXT_SMALL_BATCH"
   }
 }
