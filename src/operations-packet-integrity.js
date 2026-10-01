@@ -195,6 +195,8 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(phase5Operating?.separateFeatureGatesRemainOff!==true)issues.push({file:"phase5-operating-status.json",code:"PHASE5_SEPARATE_GATE_BOUNDARY_VIOLATION"});
     const s=phase5Operating?.safety||{};
     if(s.automaticPilot2ActivationAllowed!==false||s.automaticCommercialPlacementAllowed!==false||s.automaticLinkRewritingAllowed!==false||s.paidRankingAllowed!==false||s.bookingInferenceAllowed!==false||s.revenueInferenceAllowed!==false||s.automaticExternalActionAllowed!==false)issues.push({file:"phase5-operating-status.json",code:"PHASE5_AUTONOMY_BOUNDARY_VIOLATION"});
+    if(s.commercialPlacementPreflightRequired!==true||s.affiliateDisclosureRequired!==true)issues.push({file:"phase5-operating-status.json",code:"PHASE5_COMMERCIAL_GUARDRAIL_MISSING"});
+    if(phase5Operating?.commercial?.placementPreflightOk!==true)issues.push({file:"phase5-operating-status.json",code:"PHASE5_COMMERCIAL_PREFLIGHT_FAILED"});
   }
 
   const businessControl=files["business-control.json"];
