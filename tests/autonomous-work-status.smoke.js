@@ -9,6 +9,7 @@ assert.ok(["LOCAL_AUTONOMOUS_WORK_OPEN","EXTERNAL_REVIEW_ELIGIBLE","AUTONOMOUS_H
 assert.ok(Array.isArray(x.localBlockers));
 assert.ok(Array.isArray(x.externalEligibleNow));
 assert.ok(Array.isArray(x.persistentStaleDebt));
+assert.equal(typeof x.humanOnlyPlaybackDebt,"object");assert.equal(x.humanOnlyPlaybackDebt.automaticPlaybackVerificationAllowed,false);
 for(const k of ["inventWorkToAvoidHold","reopenCompletedLaneWithoutTrigger","automaticExternalActionAllowed","automaticPublicActivationAllowed","timePassingAloneCountsAsSuccess"])assert.equal(x.safety[k],false);
 assert.match(x.note,/core is complete/i);
 console.log("Canonical autonomous-work status preserves core completion and anti-loop safety");
