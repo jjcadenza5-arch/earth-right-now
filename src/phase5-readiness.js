@@ -34,7 +34,7 @@ export function assessPhase5Readiness({
     automaticPhase5EntryAllowed:false,
     automaticPilot2ActivationAllowed:false,
     next:phase5EntryApproved
-      ?"BEGIN_PHASE5_WITH_SEPARATE_FEATURE_GATES"
+      ?"OPERATE_PHASE5_WITH_SEPARATE_FEATURE_GATES_OFF"
       :technicallyReviewEligible
         ?"HUMAN_REVIEW_BEFORE_PHASE5_ENTRY"
         :"CONTINUE_PHASE4_OBSERVATION"
