@@ -574,5 +574,47 @@
     "confirmation": "HUMAN_PLAYBACK",
     "observedAt": "2026-09-30T00:01:39.808Z",
     "reason": "Human playback confirmed in deployed ERN operator review lab; evidence packet batch 0b51cbc04e9598b8 supplied by operator and exact source/embed target matched the current catalog data."
+  },
+  {
+    "id": "rovaniemi-santa-claus-village-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-10-01T12:36:00Z",
+    "reason": "Operator visibly confirmed playback in the deployed ERN review route on 2026-10-01; source-specific evidence only."
+  },
+  {
+    "id": "taitung-jinzun",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-10-01T12:36:00Z",
+    "reason": "Operator visibly confirmed playback in the deployed ERN review route on 2026-10-01; source-specific evidence only."
+  },
+  {
+    "id": "auckland-viaduct-harbour",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-10-01T12:36:00Z",
+    "reason": "Operator visibly confirmed playback in the deployed ERN review route on 2026-10-01; source-specific evidence only."
+  },
+  {
+    "id": "kyoto-hanamikoji-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-10-01T12:36:00Z",
+    "reason": "Operator visibly confirmed playback in the deployed ERN review route on 2026-10-01; source-specific evidence only."
+  },
+  {
+    "id": "kyoto-kiyomizuzaka-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-10-01T12:36:00Z",
+    "reason": "Operator visibly confirmed playback in the deployed ERN review route on 2026-10-01; source-specific evidence only."
+  },
+  {
+    "id": "kyoto-kifune-shrine-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK_FAILED",
+    "observedAt": "2026-10-01T12:36:00Z",
+    "reason": "Operator reported no visible playback in the deployed ERN review route on 2026-10-01; this does not renew playback proof."
   }
 ]
