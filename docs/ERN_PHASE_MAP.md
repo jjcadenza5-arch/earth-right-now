@@ -60,7 +60,7 @@ Phase 3 is complete when:
 6. no major provider-concentration or catalog-integrity debt remains.
 
 ## Phase 4 — Controlled Infrastructure Pilots
-**State: ACTIVE — LIMITED EARTH SIGNALS PUBLIC PILOT**
+**State: COMPLETE FOR PHASE 5 ENTRY — PILOT 1 REMAINS ACTIVE/OBSERVED**
 
 Purpose:
 - deploy selected prepared backends while they are still OFF;
@@ -93,7 +93,7 @@ Human gates:
 - affiliate/provider account actions where external services require account-owner approval.
 
 ## Phase 5 — Broader Public Operations & Monetization
-**State: FUTURE — READINESS GATE PREPARED**
+**State: ACTIVE — ENTRY APPROVED; SEPARATE FEATURE GATES OFF**
 
 Purpose:
 - broader public opening;
@@ -124,7 +124,7 @@ This phase does not remove ERN’s core rules:
 
 ## Current summary
 
-ERN has **completed Phase 3 and entered Phase 4**.
+ERN has **completed the Phase 5 entry gate and is now operating in Phase 5**.
 
 Phase 4 is active with **Pilot 1 — Earth Signals** now live in limited form:
 - Earth Signals: runtime ON + public manifest ON for structured 45-minute signals only;
@@ -132,4 +132,4 @@ Phase 4 is active with **Pilot 1 — Earth Signals** now live in limited form:
 - Now Moment media: prepared but not deployed, PUBLIC-OFF;
 - Guide AI, Seoul context, analytics and social lanes remain separately gated.
 
-The next Phase 4 action is controlled observation of the Earth Signals pilot. Expansion is not automatic: Pilot 2 stays closed until Pilot 1 has enough healthy operating evidence.
+Phase 4 Pilot 1 remains active and monitored as an operating dependency, but it is no longer the project phase. Phase 5 non-gated operations and monetization preparation may continue. Expansion is not automatic: Pilot 2 and every other separate feature gate remain closed until separately approved.
