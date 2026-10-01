@@ -23,17 +23,24 @@ export function commercialInventoryStatus({sources=[],partners=[],offers=[]}={},
     };
   });
 
+  const partnerById=new Map(partnerRows.map(x=>[x.id,x]));
+
   const offerRows=(offers||[]).map(raw=>{
     const placeId=String(raw?.placeId||"");
     const knownPlace=placeIds.has(placeId);
     const placeSource=sourceByPlaceId.get(placeId);
     const eligiblePlace=knownPlace&&sourceEligible(placeSource);
-    const current=eligiblePlace&&currentTravelOffer(raw,{now});
+    const partnerId=String(raw?.partnerId||"");
+    const partnerRow=partnerById.get(partnerId)||null;
+    const partnerActive=Boolean(partnerRow?.active);
+    const current=eligiblePlace&&partnerActive&&currentTravelOffer(raw,{now});
     return{
       id:String(raw?.id||""),
       placeId,
       knownPlace,
       eligiblePlace,
+      partnerId,
+      partnerActive,
       sourceHealth:placeSource?.health||null,
       sourceTruth:placeSource?.truth||null,
       current,
@@ -41,7 +48,7 @@ export function commercialInventoryStatus({sources=[],partners=[],offers=[]}={},
       sponsored:Boolean(raw?.sponsored),
       intent:raw?.intent||null,
       disclosure:current?travelOfferDisclosureText(raw):null,
-      reason:!knownPlace?"UNKNOWN_PLACE":!eligiblePlace?"SOURCE_NOT_CURRENTLY_ELIGIBLE":current?null:"UNVERIFIED_OR_EXPIRED"
+      reason:!knownPlace?"UNKNOWN_PLACE":!eligiblePlace?"SOURCE_NOT_CURRENTLY_ELIGIBLE":!partnerId?"MISSING_PARTNER_ID":!partnerRow?"UNKNOWN_PARTNER":!partnerActive?"PARTNER_INACTIVE_OR_EXPIRED":current?null:"UNVERIFIED_OR_EXPIRED"
     };
   });
 
@@ -86,13 +93,14 @@ export function commercialInventoryStatus({sources=[],partners=[],offers=[]}={},
       unverifiedOffersVisible:false,
       undisclosedAffiliateLinksAllowed:false,
       paidRankingAllowed:false,
-      sourceEligibilityRequired:true
+      sourceEligibilityRequired:true,
+      matchingActivePartnerRequired:true
     },
     next:stage==="EMPTY_STAGING"
       ?"ADD_REAL_VERIFIED_PARTNER_TO_STAGING"
       :stage==="STAGING_REVIEW"
         ?"COMPLETE_VERIFICATION_AND_DISCLOSURE_REVIEW"
         :"MAINTAIN_CURRENT_VERIFICATION",
-    note:"Commercial inventory is private staging until verified real partners/offers exist. Offer currentness also requires a currently HEALTHY live/external-live ERN source for the referenced place; degraded, held, expired, unknown, or non-live source state fails closed. Empty registries are valid and keep the public ERN experience non-commercial."
+    note:"Commercial inventory is private staging until verified real partners/offers exist. Offer currentness requires both a currently HEALTHY live/external-live ERN source for the referenced place and the offer's own active verified affiliate partner; degraded, held, expired, unknown, non-live, missing-partner, or inactive-partner state fails closed. Empty registries are valid and keep the public ERN experience non-commercial."
   };
 }
