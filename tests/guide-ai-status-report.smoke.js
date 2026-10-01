@@ -4,7 +4,7 @@ import {guideAiStatusReport} from "../src/guide-ai-status-report.js";
 const r=guideAiStatusReport();
 assert.equal(r.mode,"DETERMINISTIC_ONLY");
 assert.equal(r.ready,false);
-assert.equal(r.deterministicFallback,true);
+assert.equal(r.deterministicFallback,true);assert.equal(r.publicGenerativeActive,false);
 assert.equal(r.deployment.state,"NOT_DEPLOYED");
 assert.equal(r.deployment.missing.length,14);
 assert.match(r.truth,/remains deterministic/);
