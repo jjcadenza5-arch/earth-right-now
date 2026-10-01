@@ -20,6 +20,7 @@ const participation=run("scripts/participation-infrastructure-status.mjs");
 const media=run("scripts/now-moment-media-status.mjs");
 const guide=run("scripts/guide-ai-status.mjs");
 const gates=run("scripts/external-gate-register.mjs");
+const approval=await readJson("data/phase5-entry-approval.json");
 
 const report=assessPhase5Readiness({
   core,
@@ -28,7 +29,7 @@ const report=assessPhase5Readiness({
   media,
   guide,
   gates,
-  explicitHumanReviewApproved:false
+  explicitHumanReviewApproved:approval?.approved===true
 });
 console.log(JSON.stringify({
   schemaVersion:1,
