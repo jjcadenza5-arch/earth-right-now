@@ -185,7 +185,7 @@ export async function validateOperationsPacket(dir="ern-ops"){
   if(phase5Readiness){
     if(phase5Readiness?.automaticPhase5EntryAllowed!==false)issues.push({file:"phase5-readiness.json",code:"PHASE5_AUTO_ENTRY_BOUNDARY_VIOLATION"});
     if(phase5Readiness?.automaticPilot2ActivationAllowed!==false)issues.push({file:"phase5-readiness.json",code:"PHASE5_AUTO_PILOT2_BOUNDARY_VIOLATION"});
-    if(phase5Readiness?.phase5EntryApproved===true)issues.push({file:"phase5-readiness.json",code:"PHASE5_ENTRY_MUST_REQUIRE_SEPARATE_HUMAN_REVIEW"});
+    if(phase5Readiness?.phase5EntryApproved===true&&(phase5Readiness?.explicitHumanApprovalRecorded!==true||phase5Readiness?.separateFeatureGatesRemainOff!==true))issues.push({file:"phase5-readiness.json",code:"PHASE5_ENTRY_REQUIRES_RECORDED_HUMAN_APPROVAL_AND_SEPARATE_GATES_OFF"});
   }
 
   const businessControl=files["business-control.json"];
