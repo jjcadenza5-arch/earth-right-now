@@ -1,16 +1,21 @@
 import {events} from "./telemetry.js";
+import {activeAffiliatePartner,affiliatePartner} from "./affiliate-partners.js";
+import {currentTravelOffer} from "./travel-offer-verification.js";
 
-let offersPromise=null;
-async function offers(){
-  if(!offersPromise)offersPromise=fetch("./data/travel-offers.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]);
-  const list=await offersPromise;
-  return Array.isArray(list)?list:[];
-}
-function currentVerified(offer){
-  if(!offer||offer.verified!==true||!offer.id||!offer.placeId||!offer.intent)return false;
-  const t=Date.parse(offer.verifiedAt||"");
-  if(!Number.isFinite(t)||t>Date.now()+300000)return false;
-  return (Date.now()-t)/86400000<=90;
+let offersPromise=null,partnersPromise=null,sourcesPromise=null;
+async function json(path){return fetch(path,{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[])}
+async function offers(){if(!offersPromise)offersPromise=json("./data/travel-offers.json");const list=await offersPromise;return Array.isArray(list)?list:[]}
+async function partners(){if(!partnersPromise)partnersPromise=json("./data/affiliate-partners.json");const list=await partnersPromise;return Array.isArray(list)?list:[]}
+async function sources(){if(!sourcesPromise)sourcesPromise=json("./data/sources.json");const list=await sourcesPromise;return Array.isArray(list)?list:[]}
+function sourceEligible(source){return Boolean(source)&&source.health==="HEALTHY"&&["LIVE_VIDEO","LIVE_IMAGE","EXTERNAL_LIVE"].includes(source.truth)}
+function currentPartner(raw){const parsed=affiliatePartner(raw);return Boolean(parsed&&activeAffiliatePartner(parsed,{now:Date.now()}))}
+async function attributable(offer){
+  if(!currentTravelOffer(offer,{now:Date.now()}))return false;
+  const [partnerList,sourceList]=await Promise.all([partners(),sources()]);
+  const partner=partnerList.find(x=>String(x?.id||"")===String(offer?.partnerId||""));
+  if(!currentPartner(partner))return false;
+  const source=sourceList.find(x=>String(x?.placeId||x?.id||"")===String(offer?.placeId||""));
+  return sourceEligible(source);
 }
 document.addEventListener("click",async event=>{
   const link=event.target?.closest?.("a[data-offer-id]");
@@ -18,6 +23,6 @@ document.addEventListener("click",async event=>{
   const id=String(link.dataset.offerId||"");
   if(!id)return;
   const offer=(await offers()).find(x=>String(x?.id||"")===id);
-  if(!currentVerified(offer))return;
+  if(!offer||!(await attributable(offer)))return;
   events.travelOption(offer);
 },{capture:true});
