@@ -7,7 +7,7 @@ const sources=[
  {id:"mismatch",title:"Mismatch",playback:"EMBED",playbackVerifiedAt:"2026-09-24T10:00:00Z"},
  {id:"external-marker",title:"External",playback:"EXTERNAL",playbackVerifiedAt:"2026-09-24T10:00:00Z"},
  {id:"stale-only",title:"Stale",playback:"EMBED"},
- {id:"failed-after-success",title:"Failed after success",playback:"EMBED",lastFailedCheck:"2026-09-24T11:30:00Z"}
+ {id:"failed-after-success",title:"Failed after success",playback:"EMBED"}
 ];
 const observations=[
  {id:"ok",confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-24T08:05:00Z"},
@@ -17,6 +17,7 @@ const observations=[
  {id:"mismatch",confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-24T10:10:00Z"},
  {id:"stale-only",confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-21T10:00:00Z"},
  {id:"failed-after-success",confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-24T10:30:00Z"},
+ {id:"failed-after-success",confirmation:"HUMAN_PLAYBACK_FAILED",observedAt:"2026-09-24T11:30:00Z"},
  {id:"ghost",confirmation:"HUMAN_PLAYBACK",observedAt:"2026-09-24T11:00:00Z"},
  {id:"research-gap",confirmation:"OFFICIAL_CONTEXT_ONLY",scope:"RESEARCH_GAP",observedAt:"2026-09-24T11:00:00Z"}
 ];
