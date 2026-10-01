@@ -9,7 +9,9 @@ const e=telemetryEnvelope("travel_option_opened",{offerId:"o1",placeId:"p1",inte
 assert.deepEqual(e.data,{offerId:"o1",placeId:"p1",intent:"activities",linkScope:"destination",affiliate:true,sponsored:false});
 const runtime=fs.readFileSync("src/commercial-attribution-runtime.js","utf8");
 assert(runtime.includes('a[data-offer-id]'));
-assert(runtime.includes("currentVerified(offer)"));
+assert(runtime.includes("currentTravelOffer(offer"));
+assert(runtime.includes("currentPartner(partner)"));
+assert(runtime.includes("sourceEligible(source)"));
 assert(runtime.includes("events.travelOption(offer)"));
 const app=fs.readFileSync("src/app-lite.js","utf8");
 assert(app.includes("data.offerId")||app.includes("dataset.offerId"));
