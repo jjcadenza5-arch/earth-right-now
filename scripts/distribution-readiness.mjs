@@ -14,16 +14,16 @@ if(x.safety?.paidPromotionAssumed!==false)fail.push("paid promotion may not be a
 if(x.safety?.commercialRankingAffected!==false)fail.push("commercial relationships may not affect ranking");
 for(const c of x.channels||[])if(c.state!=="CONNECTED"&&c.automaticPostingAllowed!==false)fail.push(c.id+": unconnected channel may not auto-post");
 const report={
-  phase:"STAGE_N_ORGANIC_DISTRIBUTION",
+  phase:"PHASE_5_DISTRIBUTION_READINESS",
   websiteShareReady,
   aiSearchReady,
   connectedChannels:connected.map(x=>x.id),
   externalConnectionRequired:pending.map(x=>x.id),
   safety:x.safety,
-  next:pending.length?"CONNECT_OFFICIAL_CHANNELS_WHEN_ACCOUNTS_EXIST":"OPERATE_CONNECTED_CHANNELS",
+  next:pending.length?"HUMAN_GATE_SOCIAL_CONNECTION_DEFERRED_WEBSITE_AND_AI_SEARCH_READY":"OPERATE_CONNECTED_CHANNELS",
   ok:fail.length===0,
   fail,
-  note:"Readiness only. NOT_CONNECTED never implies an ERN account exists, and no social account is created or posted to automatically."
+  note:"Phase 5 distribution readiness: website sharing and AI/search discovery may operate without social accounts. NOT_CONNECTED social channels are a separate human gate, not unfinished autonomous work. No social account is created or posted to automatically."
 };
 console.log(JSON.stringify(report,null,2));
 if(fail.length)process.exit(1);
