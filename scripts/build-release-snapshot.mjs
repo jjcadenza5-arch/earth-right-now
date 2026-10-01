@@ -62,6 +62,7 @@ await cp(new URL("../src/telemetry.js",import.meta.url),new URL("src/telemetry.j
 await cp(new URL("../src/commercial-attribution-runtime.js",import.meta.url),new URL("src/commercial-attribution-runtime.js",dist));
 await cp(new URL("../src/affiliate-partners.js",import.meta.url),new URL("src/affiliate-partners.js",dist));
 await cp(new URL("../src/travel-offer-verification.js",import.meta.url),new URL("src/travel-offer-verification.js",dist));
+await cp(new URL("../src/travel-bridge.js",import.meta.url),new URL("src/travel-bridge.js",dist));
 await cp(new URL("../data/affiliate-partners.json",import.meta.url),new URL("data/affiliate-partners.json",dist));
 await cp(new URL("../for-places.html",import.meta.url),new URL("for-places.html",dist));
 await cp(new URL("../release-verification.html",import.meta.url),new URL("release-verification.html",dist));
