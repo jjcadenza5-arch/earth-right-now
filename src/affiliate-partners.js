@@ -7,6 +7,6 @@ export function affiliatePartner(input){
 }
 export function activeAffiliatePartner(p,{now=Date.now()}={}){
  if(!p?.id||!p.name||!p.enabled||!p.affiliate)return false;
- const v=Date.parse(p.verifiedAt),e=Date.parse(p.expiresAt);return Number.isFinite(v)&&Number.isFinite(e)&&v<=now+5*60*1000&&e>now&&e>v;
+ const nowMs=now instanceof Date?now.getTime():Number(now);const v=Date.parse(p.verifiedAt),e=Date.parse(p.expiresAt);return Number.isFinite(nowMs)&&Number.isFinite(v)&&Number.isFinite(e)&&v<=nowMs+5*60*1000&&e>nowMs&&e>v;
 }
 export function partnerDisclosure(p){if(!p)return null;return p.sponsored?"Sponsored · Affiliate":"Affiliate";}
