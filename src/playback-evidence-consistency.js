@@ -17,9 +17,12 @@ export function playbackEvidenceConsistency(sources=[],observations=[],{now=new 
     const history=grouped.get(String(source?.id||""))||[];
     const obs=latest(history);
     const humanObs=latest(history.filter(x=>x?.confirmation==="HUMAN_PLAYBACK"));
+    const failedHumanObs=latest(history.filter(x=>x?.confirmation==="HUMAN_PLAYBACK_FAILED"));
     const human=Boolean(humanObs);
     const observedAt=normalizeIso(humanObs?.observedAt);
-    const failureAt=normalizeIso(source?.lastFailedCheck);
+    const sourceFailureAt=normalizeIso(source?.lastFailedCheck);
+    const playbackFailureAt=normalizeIso(failedHumanObs?.observedAt);
+    const failureAt=[sourceFailureAt,playbackFailureAt].filter(Boolean).sort((a,b)=>Date.parse(b)-Date.parse(a))[0]||null;
     const humanSupersededByFailure=Boolean(human&&observedAt&&failureAt&&Date.parse(failureAt)>Date.parse(observedAt));
     const freshHuman=human&&!humanSupersededByFailure&&Number.isFinite(n)&&ageHours(observedAt,n)<=freshHours;
     if(marker&&source.playback!=="EMBED"){
