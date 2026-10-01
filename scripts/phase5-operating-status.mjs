@@ -42,6 +42,7 @@ const report={
     currentVerifiedOffers:inventory?.travelOfferRegistry?.current||0,
     currentVerifiedOfferIds:inventoryOffers.filter(x=>x.current).map(x=>x.id),
     placeCoverage:inventory?.travelOfferRegistry?.placeCoverage||0,
+    sourceIneligibleOffers:inventory?.travelOfferRegistry?.sourceIneligible||0,
     inventoryNote:"Counts reflect current source/catalog eligibility as well as commercial verification; a verified offer tied to a non-current or unknown ERN place is fail-closed from current inventory.",
     privateOpportunityQueue:(opportunities?.opportunities||[]).length,
     opportunityQueuePublic:false,
