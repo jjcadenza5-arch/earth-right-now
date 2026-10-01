@@ -61,3 +61,11 @@ The daily ERN Operations workflow now records:
 - Phase 5 readiness state.
 
 The operator brief and operations packet preserve the rule that Phase 5 entry and Pilot 2 activation are never automatic.
+## Entry approval
+
+Phase 5 entry received explicit owner approval on **2026-10-01**, after the healthy Phase 4 Pilot 1 observation window exceeded 24 hours.
+
+The approval is intentionally narrow: Phase 5 may begin, while Pilot 2, Submission public intake, Now Moment media, public generative Guide activation, analytics, social channels, and all other separate feature gates remain OFF unless separately approved.
+
+Canonical approval state: `data/phase5-entry-approval.json`.
+
