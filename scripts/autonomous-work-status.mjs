@@ -9,6 +9,7 @@ const local=run("scripts/local-directory-status.mjs");
 const recency=run("scripts/source-recency-summary.mjs");
 const concentration=run("scripts/provider-concentration-status.mjs");
 const gates=run("scripts/external-gate-register.mjs");
+const reviewQueue=run("scripts/operator-review-queue-status.mjs");
 
 const localBlockers=[];
 if(product.conclusion!=="STABLE_BETA_READY")localBlockers.push("core-stable-beta");
@@ -20,6 +21,7 @@ if(local.state!=="PILOT_COMPLETE")localBlockers.push("local-earth-pilot");
 if(concentration.highRisk===true)localBlockers.push("provider-concentration");
 if((recency.recheckDue?.routine||[]).length>0)localBlockers.push("routine-source-rechecks");
 if((recency.outsideCurrentOrRecheck?.total||0)>0)localBlockers.push("expired-or-unknown-source-state");
+const humanOnlyPlaybackDebt=(reviewQueue.primaryItems||[]).length>0&&reviewQueue.readyShortfall>0;
 
 const eligible=(gates.eligibleNow||[]).map(x=>x.id);
 const coreComplete=phase.coreComplete===true;
@@ -38,8 +40,9 @@ console.log(JSON.stringify({
   nextTimedReview:gates.nextTimedReview||null,
   untimedWaiting:gates.untimedWaiting||[],
   persistentStaleDebt:(recency.recheckDue?.persistentDebt||[]).map(x=>x.id),
+  humanOnlyPlaybackDebt:{required:humanOnlyPlaybackDebt,ready:reviewQueue.ready,targetReady:reviewQueue.targetReady,primaryReviewCount:(reviewQueue.primaryItems||[]).length,automaticPlaybackVerificationAllowed:false},
   currentCatalog:recency.current,
-  next,
+  next:humanOnlyPlaybackDebt&&localBlockers.length===0?"HUMAN_PLAYBACK_REVIEW_REQUIRED_NO_AUTOMATIC_SUBSTITUTE":next,
   safety:{
     inventWorkToAvoidHold:false,
     reopenCompletedLaneWithoutTrigger:false,
