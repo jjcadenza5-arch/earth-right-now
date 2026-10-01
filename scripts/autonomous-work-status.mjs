@@ -14,6 +14,7 @@ const reviewQueue=run("scripts/operator-review-queue-status.mjs");
 const localBlockers=[];
 if(product.conclusion!=="STABLE_BETA_READY")localBlockers.push("core-stable-beta");
 if(phase.currentStage!=="STAGE_R_EXTERNAL_GATE_TRIGGER_REGISTER")localBlockers.push("canonical-stage");
+if(![4,5].includes(phase.phaseNumber))localBlockers.push("canonical-phase");
 if(participation.prepared!==true||!(participation.publicActivationOff===true||participation.phase4PilotActive===true))localBlockers.push("participation-local-preparation");
 if(media.prepared!==true||media.publicActivationAllowed!==false)localBlockers.push("now-moment-media-local-preparation");
 if(guide.deterministicFallback!==true||!["DETERMINISTIC_ONLY","GENERATIVE_ENABLED"].includes(guide.mode))localBlockers.push("guide-local-foundation");
@@ -33,7 +34,7 @@ else{state="AUTONOMOUS_HOLD_EXTERNAL_WAIT";next="WAIT_FOR_MATERIAL_EXTERNAL_TRIG
 console.log(JSON.stringify({
   schemaVersion:1,
   coreComplete,
-  completionState:coreComplete?(participation.phase4PilotActive===true?"CORE_COMPLETE_PHASE_4_PILOT_ACTIVE":"CORE_COMPLETE_EXTERNAL_OPTIONAL"):"CORE_INCOMPLETE",
+  completionState:coreComplete?(phase.phaseNumber===5?"CORE_COMPLETE_PHASE_5_ACTIVE":participation.phase4PilotActive===true?"CORE_COMPLETE_PHASE_4_PILOT_ACTIVE":"CORE_COMPLETE_EXTERNAL_OPTIONAL"):"CORE_INCOMPLETE",
   state,
   localBlockers,
   externalEligibleNow:eligible,
