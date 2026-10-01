@@ -3,7 +3,9 @@ import { currentTravelOffer } from "./travel-offer-verification.js";
 import { travelOfferDisclosureText } from "./travel-offer-action.js";
 
 export function commercialInventoryStatus({sources=[],partners=[],offers=[]}={}, {now=Date.now()}={}){
-  const placeIds=new Set((sources||[]).map(s=>String(s.placeId||s.id||"")).filter(Boolean));
+  const sourceByPlaceId=new Map((sources||[]).map(s=>[String(s.placeId||s.id||""),s]).filter(([id])=>Boolean(id)));
+  const placeIds=new Set(sourceByPlaceId.keys());
+  const sourceEligible=s=>Boolean(s)&&s.health==="HEALTHY"&&["LIVE_VIDEO","LIVE_IMAGE","EXTERNAL_LIVE"].includes(s.truth);
 
   const partnerRows=(partners||[]).map(raw=>{
     const parsed=affiliatePartner(raw);
@@ -24,17 +26,22 @@ export function commercialInventoryStatus({sources=[],partners=[],offers=[]}={},
   const offerRows=(offers||[]).map(raw=>{
     const placeId=String(raw?.placeId||"");
     const knownPlace=placeIds.has(placeId);
-    const current=knownPlace&&currentTravelOffer(raw,{now});
+    const placeSource=sourceByPlaceId.get(placeId);
+    const eligiblePlace=knownPlace&&sourceEligible(placeSource);
+    const current=eligiblePlace&&currentTravelOffer(raw,{now});
     return{
       id:String(raw?.id||""),
       placeId,
       knownPlace,
+      eligiblePlace,
+      sourceHealth:placeSource?.health||null,
+      sourceTruth:placeSource?.truth||null,
       current,
       affiliate:Boolean(raw?.affiliate),
       sponsored:Boolean(raw?.sponsored),
       intent:raw?.intent||null,
       disclosure:current?travelOfferDisclosureText(raw):null,
-      reason:!knownPlace?"UNKNOWN_PLACE":current?null:"UNVERIFIED_OR_EXPIRED"
+      reason:!knownPlace?"UNKNOWN_PLACE":!eligiblePlace?"SOURCE_NOT_CURRENTLY_ELIGIBLE":current?null:"UNVERIFIED_OR_EXPIRED"
     };
   });
 
@@ -44,6 +51,7 @@ export function commercialInventoryStatus({sources=[],partners=[],offers=[]}={},
   const sponsoredOffers=currentOffers.filter(x=>x.sponsored);
   const invalidPartners=partnerRows.filter(x=>!x.valid);
   const invalidOffers=offerRows.filter(x=>!x.knownPlace);
+  const sourceIneligibleOffers=offerRows.filter(x=>x.knownPlace&&!x.eligiblePlace);
 
   const stage=currentOffers.length&&activePartners.length
     ?"ACTIVE"
@@ -59,7 +67,7 @@ export function commercialInventoryStatus({sources=[],partners=[],offers=[]}={},
       total:partnerRows.length,
       active:activePartners.length,
       invalid:invalidPartners.length,
-      byIntent:Object.fromEntries(["stay","eat","transport","tickets"].map(k=>[k,activePartners.filter(x=>x.intent===k).length])),
+      byIntent:Object.fromEntries(["stay","eat","transport","tickets","activities","culture","services"].map(k=>[k,activePartners.filter(x=>x.intent===k).length])),
       rows:partnerRows
     },
     travelOfferRegistry:{
@@ -68,6 +76,7 @@ export function commercialInventoryStatus({sources=[],partners=[],offers=[]}={},
       affiliate:affiliateOffers.length,
       sponsored:sponsoredOffers.length,
       invalid:invalidOffers.length,
+      sourceIneligible:sourceIneligibleOffers.length,
       placeCoverage:new Set(currentOffers.map(x=>x.placeId)).size,
       byIntent:Object.fromEntries(["stay","eat","transport","activities","culture","services"].map(k=>[k,currentOffers.filter(x=>x.intent===k).length])),
       rows:offerRows
@@ -76,13 +85,14 @@ export function commercialInventoryStatus({sources=[],partners=[],offers=[]}={},
       inventPartnersAllowed:false,
       unverifiedOffersVisible:false,
       undisclosedAffiliateLinksAllowed:false,
-      paidRankingAllowed:false
+      paidRankingAllowed:false,
+      sourceEligibilityRequired:true
     },
     next:stage==="EMPTY_STAGING"
       ?"ADD_REAL_VERIFIED_PARTNER_TO_STAGING"
       :stage==="STAGING_REVIEW"
         ?"COMPLETE_VERIFICATION_AND_DISCLOSURE_REVIEW"
         :"MAINTAIN_CURRENT_VERIFICATION",
-    note:"Commercial inventory is private staging until verified real partners/offers exist. Empty registries are valid and keep the public ERN experience non-commercial."
+    note:"Commercial inventory is private staging until verified real partners/offers exist. Offer currentness also requires a currently HEALTHY live/external-live ERN source for the referenced place; degraded, held, expired, unknown, or non-live source state fails closed. Empty registries are valid and keep the public ERN experience non-commercial."
   };
 }
