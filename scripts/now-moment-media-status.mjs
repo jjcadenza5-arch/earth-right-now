@@ -62,7 +62,7 @@ console.log(JSON.stringify({
   publicActivationAllowed:false,
   policy:{ttlMinutes:45,maxStoredBytes:1572864,maxDimensionPx:1920,videoEnabled:false,automaticPublicationAllowed:false,freeTextAccepted:false,preciseCoordinatesStored:false},
   safeguards:{privateObjectStorage:true,metadataScan:true,canonicalPlaceValidation:true,serverRateLimits:true,humanModeration:true,abuseReporting:true,expiryCleanup:true,retrySafeObjectDeletion:true,cleanupBacklogObservable:true,rawNetworkIdentifiersStored:false},
-  next:prepared?"CONTROLLED_INFRASTRUCTURE_DEPLOYMENT_WHEN_HUMAN_APPROVES":"REPAIR_MEDIA_PREPARATION",
+  next:prepared?"HUMAN_GATE_MEDIA_DEPLOYMENT_DEFERRED_PREPARATION_COMPLETE":"REPAIR_MEDIA_PREPARATION",
   fail
 },null,2));
 if(fail.length)process.exit(1);
