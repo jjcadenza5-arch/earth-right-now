@@ -9,7 +9,7 @@
     ],
     "programUrl": "https://www.booking.com/affiliate-program/v2/index.html",
     "termsUrl": "https://www.booking.com/affiliate-program/v2/index.html",
-    "programStatus": "AVAILABLE_APPLICATION_REQUIRED",
+    "programStatus": "APPLICATION_REJECTED_2026_09_28",
     "applicationRequired": true,
     "networkOrAccount": "Awin/CJ depending on region",
     "commissionEvidence": "Official affiliate page confirms commission on qualified bookings; no fixed ERN commission assumption stored.",
@@ -18,7 +18,9 @@
     "credentialsConfigured": false,
     "publicActivationAllowed": false,
     "trackedLinksAllowed": false,
-    "paidRankingAllowed": false
+    "paidRankingAllowed": false,
+    "decisionAt": "2026-09-28",
+    "decisionEvidence": "Booking.com APAC / CJ application not approved; no active relationship."
   },
   {
     "id": "agoda",
@@ -48,16 +50,18 @@
     ],
     "programUrl": "https://partnerresources.viator.com/",
     "termsUrl": "https://partnerresources.viator.com/travel-content/links/",
-    "programStatus": "AVAILABLE_SIGNUP_REQUIRED",
+    "programStatus": "ACTIVE_PARTNER_VERIFIED",
     "applicationRequired": true,
     "networkOrAccount": "Viator Partner Program",
     "commissionEvidence": "Current official Viator partner materials state 8% commission on completed experience bookings attributed within a 30-day cookie window.",
     "termsReviewedAt": "2026-09-24T16:18:00Z",
-    "relationshipActive": false,
-    "credentialsConfigured": false,
-    "publicActivationAllowed": false,
-    "trackedLinksAllowed": false,
-    "paidRankingAllowed": false
+    "relationshipActive": true,
+    "credentialsConfigured": true,
+    "publicActivationAllowed": true,
+    "trackedLinksAllowed": true,
+    "paidRankingAllowed": false,
+    "activatedAt": "2026-09-27T13:17:00Z",
+    "verificationPolicy": "ERN_90_DAY_RECHECK"
   },
   {
     "id": "skyscanner",
