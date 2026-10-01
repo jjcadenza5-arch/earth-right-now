@@ -11,6 +11,7 @@ const media=readJson("data/now-moment-media-deployment.json");
 const guide=readJson("data/guide-ai-deployment.json");
 const brand=readJson("data/public-brand-facts.json");
 const analyticsText=fs.readFileSync("src/analytics-config.js","utf8");
+const phase5=readJson("data/phase5-entry-approval.json");
 
 const verifiedOffers=(Array.isArray(offers)?offers:[]).filter(x=>x?.verified===true);
 const programs=(affiliate.waves||[]).flatMap(w=>w.programs||[]).filter(x=>x&&typeof x==="object");
@@ -31,7 +32,9 @@ if(pendingChannels.length)externalGates.push({id:"social-channels",state:"NOT_CO
 
 const status={
   schemaVersion:1,
-  phase:"STAGE_Q_BUSINESS_OPERATIONS_CONTROL",
+  phase:"PHASE_5_BUSINESS_OPERATIONS_CONTROL",
+  phase5EntryApproved:phase5?.approved===true,
+  separateFeatureGatesRemainOff:phase5?.approved===true&&Object.values(phase5?.constraints||{}).every(v=>v===false),
   generatedAt:new Date().toISOString(),
   publicIdentity:{
     canonicalUrl:brand.canonicalUrl||null,
@@ -78,6 +81,6 @@ const status={
     commercialSignalsMayAffectEarthRanking:false
   },
   next:externalGates.length?"WAIT_OR_ACT_ON_EXTERNAL_GATES_WITH_EVIDENCE":"OPERATE_AND_OBSERVE_WITHOUT_RANKING_EFFECT",
-  note:"Business control is read-only. Counts and states are evidence, not demand, bookings, revenue, conversion, endorsement, partnership breadth or ranking signals."
+  note:"Phase 5 business control is read-only. Counts and states are evidence, not demand, bookings, revenue, conversion, endorsement, partnership breadth or ranking signals. Phase 5 entry never implies approval of a separate public feature gate."
 };
 console.log(JSON.stringify(status,null,2));
