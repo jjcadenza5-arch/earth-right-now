@@ -15,3 +15,6 @@ assert.equal(active.rows[0].trackedLinksAllowed,true);
 assert.ok(active.rows[0].remainingExternalActions.includes("VERIFY_TRACKED_LINK_BEFORE_EACH_NEW_PUBLIC_PLACEMENT"));
 assert.equal(active.safety.automaticTrackedLinkActivationAllowed,false);
 assert.equal(active.safety.paidRankingAllowed,false);
+
+const deferred=affiliateApplicationReadiness([{id:"booking-com",name:"Booking.com",intents:["stay"],applicationRequired:true,relationshipActive:false,credentialsConfigured:false,lastApplicationDecision:"REJECTED_2026_09_28"},{id:"agoda",name:"Agoda",intents:["stay"],applicationRequired:true,relationshipActive:false,credentialsConfigured:false}]);
+assert.equal(deferred.readyForDecision,0);assert.equal(deferred.deferredPlatforms,2);assert.ok(deferred.rows.every(x=>x.state==="DEFERRED_NO_ACTION"));assert.equal(deferred.next,"NO_PLATFORM_ACTION");
