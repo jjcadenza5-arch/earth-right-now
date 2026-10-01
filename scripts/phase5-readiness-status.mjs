@@ -20,6 +20,7 @@ const participation=run("scripts/participation-infrastructure-status.mjs");
 const media=run("scripts/now-moment-media-status.mjs");
 const guide=run("scripts/guide-ai-status.mjs");
 const gates=run("scripts/external-gate-register.mjs");
+// Phase 5 entry approval is explicit, persisted, and independent of all feature gates.
 const approval=await readJson("data/phase5-entry-approval.json");
 
 const report=assessPhase5Readiness({
