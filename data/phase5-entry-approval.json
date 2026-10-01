@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "phase": 5,
+  "label": "Broader Public Operations & Monetization",
+  "approved": true,
+  "approvalBasis": "Explicit owner approval in ChatGPT after healthy Phase 4 Pilot 1 completed the minimum 24-hour observation window.",
+  "approvedAt": "2026-10-01",
+  "constraints": {
+    "pilot2ActivationApproved": false,
+    "submissionPublicActivationApproved": false,
+    "nowMomentMediaActivationApproved": false,
+    "generativeGuidePublicActivationApproved": false,
+    "analyticsActivationApproved": false,
+    "socialChannelActivationApproved": false,
+    "otherSeparateFeatureGatesApproved": false
+  },
+  "automaticExpansionAllowed": false,
+  "next": "BEGIN_PHASE5_WITH_SEPARATE_FEATURE_GATES"
+}
