@@ -92,6 +92,7 @@ jobs:
           npm --silent run earth-signals:live-health | tee ern-ops/earth-signals-live-health.json
           npm --silent run phase4:earth-signals-observation -- ern-ops/earth-signals-live-health.json | tee ern-ops/phase4-earth-signals-observation.json
           npm --silent run phase5:readiness -- ern-ops/earth-signals-live-health.json | tee ern-ops/phase5-readiness.json
+          npm --silent run phase5:status | tee ern-ops/phase5-operating-status.json
           npm --silent run guide-ai:status | tee ern-ops/guide-ai-status.json
           npm --silent run local:directory-status | tee ern-ops/local-directory-status.json
           npm --silent run participation:status | tee ern-ops/participation-infrastructure.json
