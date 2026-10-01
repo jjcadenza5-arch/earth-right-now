@@ -15,5 +15,5 @@
     "otherSeparateFeatureGatesApproved": false
   },
   "automaticExpansionAllowed": false,
-  "next": "BEGIN_PHASE5_WITH_SEPARATE_FEATURE_GATES"
+  "next": "OPERATE_PHASE5_WITH_SEPARATE_FEATURE_GATES_OFF"
 }
