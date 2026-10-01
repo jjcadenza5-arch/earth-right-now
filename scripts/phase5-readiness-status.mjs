@@ -37,6 +37,8 @@ console.log(JSON.stringify({
   generatedAt:new Date().toISOString(),
   phase5Label:"Broader Public Operations & Monetization",
   currentHealthEvidenceSupplied:Boolean(healthPath),
+  explicitHumanApprovalRecorded:approval?.approved===true,
+  separateFeatureGatesRemainOff:approval?.constraints?.pilot2ActivationApproved===false&&approval?.constraints?.submissionPublicActivationApproved===false&&approval?.constraints?.nowMomentMediaActivationApproved===false&&approval?.constraints?.generativeGuidePublicActivationApproved===false&&approval?.automaticExpansionAllowed===false,
   phase4Observation:observation,
   ...report
 },null,2));
