@@ -9,7 +9,7 @@
     ],
     "programUrl": "https://www.booking.com/affiliate-program/v2/index.html",
     "termsUrl": "https://www.booking.com/affiliate-program/v2/index.html",
-    "programStatus": "APPLICATION_REJECTED_2026_09_28",
+    "programStatus": "AVAILABLE_APPLICATION_REQUIRED",
     "applicationRequired": true,
     "networkOrAccount": "Awin/CJ depending on region",
     "commissionEvidence": "Official affiliate page confirms commission on qualified bookings; no fixed ERN commission assumption stored.",
@@ -20,7 +20,8 @@
     "trackedLinksAllowed": false,
     "paidRankingAllowed": false,
     "decisionAt": "2026-09-28",
-    "decisionEvidence": "Booking.com APAC / CJ application not approved; no active relationship."
+    "decisionEvidence": "Booking.com APAC / CJ application not approved; research record remains available for future material account-state change only.",
+    "lastApplicationDecision": "REJECTED_2026_09_28"
   },
   {
     "id": "agoda",
@@ -51,7 +52,7 @@
     "programUrl": "https://partnerresources.viator.com/",
     "termsUrl": "https://partnerresources.viator.com/travel-content/links/",
     "programStatus": "ACTIVE_PARTNER_VERIFIED",
-    "applicationRequired": true,
+    "applicationRequired": false,
     "networkOrAccount": "Viator Partner Program",
     "commissionEvidence": "Current official Viator partner materials state 8% commission on completed experience bookings attributed within a 30-day cookie window.",
     "termsReviewedAt": "2026-09-24T16:18:00Z",
@@ -61,7 +62,13 @@
     "trackedLinksAllowed": true,
     "paidRankingAllowed": false,
     "activatedAt": "2026-09-27T13:17:00Z",
-    "verificationPolicy": "ERN_90_DAY_RECHECK"
+    "verificationPolicy": "ERN_90_DAY_RECHECK",
+    "operatorEvidence": "ERN operator-confirmed Viator Partner Program activation and tracked-link validation on 2026-09-27.",
+    "manualToolsOnly": true,
+    "driveAutomationAllowed": false,
+    "automaticLinkRewritingAllowed": false,
+    "automaticPlacementAllowed": false,
+    "rankingAffectedByCommission": false
   },
   {
     "id": "skyscanner",
