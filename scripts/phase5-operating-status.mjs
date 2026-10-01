@@ -8,6 +8,7 @@ const approval=read("data/phase5-entry-approval.json");
 const business=read("data/business-readiness.json");
 const opportunities=read("data/commercial-link-opportunities.json");
 const attribution=run("scripts/commercial-attribution-status.mjs");
+const placement=run("scripts/commercial-placement-preflight.mjs");
 const inventory=run("scripts/commercial-inventory-status.mjs");
 const horizon=run("scripts/commercial-verification-horizon.mjs");
 const gates=run("scripts/external-gate-register.mjs");
@@ -41,13 +42,19 @@ const report={
     opportunityQueuePublic:false,
     payoutMethodConfigured:payoutReady,
     payoutReadiness:payoutReady?"READY":"HUMAN_ACCOUNT_ACTION_REQUIRED",
+    payoutBlocksPublicERN:false,
+    payoutBlocksTrackedLinks:false,
+    payoutBlocksReceivingPayouts:!payoutReady,
+    placementPreflightOk:placement?.ok===true,
+    placementWarnings:placement?.warn||[],
     telemetryConfigured:attribution?.telemetryConfigured===true,
     outboundMeasurementActive:attribution?.outboundMeasurementActive===true
   },
   maintenance:{
-    commercialVerification:horizon?.state||null,
-    dueNow:horizon?.summary?.expired??horizon?.expired??null,
-    dueSoon:horizon?.summary?.dueSoon??null
+    commercialVerificationAttention:horizon?.summary?.attention??null,
+    partnerHorizon:horizon?.summary?.partners||null,
+    offerHorizon:horizon?.summary?.offers||null,
+    urgentVerification:horizon?.urgent||[]
   },
   safety:{
     automaticPilot2ActivationAllowed:false,
@@ -56,7 +63,9 @@ const report={
     paidRankingAllowed:false,
     bookingInferenceAllowed:false,
     revenueInferenceAllowed:false,
-    automaticExternalActionAllowed:false
+    automaticExternalActionAllowed:false,
+    commercialPlacementPreflightRequired:true,
+    affiliateDisclosureRequired:true
   },
   humanActions:gates?.openGates?.filter(g=>g?.eligibleNow===true).map(g=>g.id)||[],
   next:!approval?.approved
