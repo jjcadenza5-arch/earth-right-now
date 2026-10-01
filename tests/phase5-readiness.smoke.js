@@ -43,7 +43,7 @@ r=assessPhase5Readiness({
 });
 assert.equal(r.phase5EntryApproved,true);
 assert.equal(r.state,"PHASE5_ENTRY_APPROVED");
-assert.equal(r.automaticPilot2ActivationAllowed,false);
+assert.equal(r.automaticPilot2ActivationAllowed,false);assert.equal(r.next,"OPERATE_PHASE5_WITH_SEPARATE_FEATURE_GATES_OFF");
 
 r=assessPhase5Readiness({
   core,
