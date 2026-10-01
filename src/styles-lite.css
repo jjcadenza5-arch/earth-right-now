@@ -569,3 +569,5 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
 
 /* Local Atlas precision guard */
 .atlas-filter:disabled{opacity:.45;cursor:not-allowed;background:rgba(255,255,255,.55)}
+
+.playback-review-notice{position:absolute;z-index:4;left:1rem;right:1rem;top:1rem;padding:.65rem .8rem;border-radius:.6rem;background:rgba(0,0,0,.78);color:#fff;font-size:.78rem;line-height:1.35;pointer-events:none}
