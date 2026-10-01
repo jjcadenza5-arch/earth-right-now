@@ -538,7 +538,7 @@ function bestAlternate(s){
  return same.sort((a,b)=>baseScore(b)-baseScore(a))[0]||null;
 }
 function beginViewerLoad(s){clearViewerLoad();const link=$("#loadingSource"),source=cleanUrl(s?.sourceUrl||s?.officialUrl),alt=bestAlternate(s),tryAlt=$("#viewerTryAlternate");if(source){link.href=source;link.hidden=false}else{link.removeAttribute("href");link.hidden=true}tryAlt.hidden=!alt;tryAlt.onclick=alt?()=>openViewer(alt):null;$("#viewerLoading").hidden=false;viewerLoadTimer=setTimeout(()=>{$("#viewerLoading").hidden=false},7000)}
-function standardViewerFailClosed(s,mount){if(!currentTruthClaim(s)){mount.dataset.visualKind="reference";mount.append(scenicPoster(s));return true}return false}
+function standardViewerFailClosed(s,mount){if(!currentTruthClaim(s)){mount.dataset.visualKind="reference";mount.append(scenicPoster(s));return}}
 function humanPlaybackReviewMode(s){const q=new URLSearchParams(location.search);return q.get("playbackReview")==="1"&&q.get("sourceId")===String(s?.id||"")&&s?.playback==="EMBED"&&s?.permission==="EMBED_ALLOWED"&&s?.health==="HEALTHY"&&cleanUrl(s?.embedUrl)}
 function mountViewerNow(s){
  stopImageTimer();clearViewerLoad();const mount=$("#viewerStage");mount.replaceChildren();mount.style.background=generatedBackground(s);const source=cleanUrl(s.sourceUrl||s.officialUrl),link=$("#sourceViewer");if(source){link.href=source;link.hidden=false}else{link.removeAttribute("href");link.hidden=true}
