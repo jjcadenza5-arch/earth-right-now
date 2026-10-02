@@ -39,7 +39,8 @@ const requiredJson=[
  "operations-status.json",
  "phase5-readiness.json",
  "phase5-operating-status.json",
- "phase6-operating-status.json"
+ "phase6-operating-status.json",
+ "phase7-operating-status.json"
 ];
 const requiredText=["operator-brief.md"];
 
@@ -209,6 +210,16 @@ export async function validateOperationsPacket(dir="ern-ops"){
     const s=phase6Operating?.safety||{};
     if(s.automaticSeparateGateActivationAllowed!==false||s.analyticsActivationAllowed!==false||s.socialAccountActionAllowed!==false||s.generativeGuidePublicActivationAllowed!==false||s.paidRankingAllowed!==false)issues.push({file:"phase6-operating-status.json",code:"PHASE6_AUTONOMY_BOUNDARY_VIOLATION"});
     if(!Array.isArray(phase6Operating?.activeLanes)||!Array.isArray(phase6Operating?.plannedLanes))issues.push({file:"phase6-operating-status.json",code:"PHASE6_LANE_REGISTRY_INVALID"});
+  }
+
+  const phase7Operating=files["phase7-operating-status.json"];
+  if(phase7Operating){
+    if(phase7Operating?.entryApproved!==true)issues.push({file:"phase7-operating-status.json",code:"PHASE7_ENTRY_APPROVAL_MISSING"});
+    if(phase7Operating?.canonicalPhaseNumber!==7)issues.push({file:"phase7-operating-status.json",code:"PHASE7_CANONICAL_PHASE_MISMATCH"});
+    if(phase7Operating?.separateFeatureGatesRemainOff!==true)issues.push({file:"phase7-operating-status.json",code:"PHASE7_SEPARATE_GATE_BOUNDARY_VIOLATION"});
+    const s=phase7Operating?.safety||{};
+    if(s.automaticSocialAccountCreationAllowed!==false||s.automaticPostingAllowed!==false||s.analyticsActivationAllowed!==false||s.payoutAccountActionAllowed!==false||s.newAffiliateAccountActionAllowed!==false||s.automaticPublicFeatureActivationAllowed!==false)issues.push({file:"phase7-operating-status.json",code:"PHASE7_AUTONOMY_BOUNDARY_VIOLATION"});
+    if(!Array.isArray(phase7Operating?.activeLanes)||!Array.isArray(phase7Operating?.plannedLanes))issues.push({file:"phase7-operating-status.json",code:"PHASE7_LANE_REGISTRY_INVALID"});
   }
 
   const businessControl=files["business-control.json"];
