@@ -82,12 +82,22 @@ for(const [id,items] of map){
     ]
   };
 
+  const preferredCategories=new Set(preferred.categories||[]);
   const related=[...map.entries()]
-    .filter(([otherId,rows])=>otherId!==id&&rows.some(s=>s.country===preferred.country)&&placeIndexable(rows))
-    .map(([otherId,rows])=>({id:otherId,title:[...rows].sort((a,b)=>(b.quality||0)-(a.quality||0))[0].title}))
-    .slice(0,4);
+    .filter(([otherId,rows])=>otherId!==id&&placeIndexable(rows))
+    .map(([otherId,rows])=>{
+      const rep=[...rows].sort((a,b)=>(b.quality||0)-(a.quality||0))[0];
+      const overlap=(rep.categories||[]).filter(x=>preferredCategories.has(x)).length;
+      const sameCountry=Boolean(preferred.country&&rep.country===preferred.country);
+      const sameRegion=Boolean(preferred.region&&rep.region===preferred.region);
+      const score=(sameCountry?5:0)+(sameRegion?2:0)+overlap*2+(rep.truth==="LIVE_VIDEO"?1:0);
+      return{id:otherId,title:rep.title,country:rep.country||"",score};
+    })
+    .filter(x=>x.score>0)
+    .sort((a,b)=>b.score-a.score||a.title.localeCompare(b.title))
+    .slice(0,6);
   const relatedHtml=related.length
-    ?'<h2>Explore more in '+esc(preferred.country||"this region")+'</h2><ul>'+related.map(x=>'<li><a href="'+base+'places/'+encodeURIComponent(x.id)+'/">'+esc(x.title)+'</a></li>').join("")+'</ul>'
+    ?'<h2>Explore related places</h2><p class="ern-note">Chosen by place/category similarity and current ERN availability — never by payment.</p><ul>'+related.map(x=>'<li><a href="'+base+'places/'+encodeURIComponent(x.id)+'/">'+esc(x.title)+'</a>'+(x.country?' — '+esc(x.country):'')+'</li>').join("")+'</ul>'
     :"";
 
   const cardFor=s=>{
