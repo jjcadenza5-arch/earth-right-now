@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "phase": 8,
+  "label": "Editorial Collections & Evergreen Growth",
+  "state": "ACTIVE",
+  "lanes": [
+    {
+      "id": "thematic-collection-engine",
+      "label": "Thematic collection engine",
+      "status": "ACTIVE",
+      "gated": false
+    },
+    {
+      "id": "crawlable-collection-pages",
+      "label": "Crawlable collection pages",
+      "status": "ACTIVE",
+      "gated": false
+    },
+    {
+      "id": "multilingual-discovery-copy",
+      "label": "Multilingual discovery copy",
+      "status": "PLANNED",
+      "gated": false
+    },
+    {
+      "id": "seasonal-current-collections",
+      "label": "Seasonal & current collections",
+      "status": "PLANNED",
+      "gated": false
+    },
+    {
+      "id": "collection-shareability",
+      "label": "Collection shareability",
+      "status": "PLANNED",
+      "gated": false
+    },
+    {
+      "id": "phase8-exit-review",
+      "label": "Phase 8 exit review",
+      "status": "PLANNED",
+      "gated": false
+    }
+  ],
+  "constraints": {
+    "socialAccounts": false,
+    "automaticPosting": false,
+    "analytics": false,
+    "payoutAccountChanges": false,
+    "pilot2": false,
+    "submissionPublic": false,
+    "nowMomentMedia": false,
+    "generativeGuidePublic": false
+  },
+  "next": "CONTINUE_PHASE8_NON_GATED_EDITORIAL_GROWTH"
+}
