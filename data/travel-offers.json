@@ -337,5 +337,22 @@
     "verifiedAt": "2026-10-02T15:50:00Z",
     "expiresAt": "2026-12-31T00:00:00Z",
     "evidence": "Owner generated the Travelpayouts/Klook Bangkok destination link on 2026-10-02 and confirmed the short tracked URL resolves to a useful Bangkok Klook destination/results page."
+  },
+  {
+    "id": "klook-singapore-port-area",
+    "title": "Explore Singapore activities",
+    "placeId": "singapore-port-area",
+    "provider": "Klook",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "klook",
+    "destinationScope": "Singapore",
+    "url": "https://klook.tpo.mx/QmJPVYKH",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-02T15:55:00Z",
+    "expiresAt": "2026-12-31T00:00:00Z",
+    "evidence": "Owner generated the Travelpayouts/Klook Singapore destination link on 2026-10-02 and confirmed the short tracked URL resolves to a useful Singapore Klook destination/results page."
   }
 ]
