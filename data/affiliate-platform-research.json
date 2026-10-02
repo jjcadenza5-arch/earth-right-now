@@ -63,12 +63,14 @@
     "paidRankingAllowed": false,
     "activatedAt": "2026-09-27T13:17:00Z",
     "verificationPolicy": "ERN_90_DAY_RECHECK",
-    "operatorEvidence": "ERN operator-confirmed Viator Partner Program activation and tracked-link validation on 2026-09-27.",
+    "operatorEvidence": "ERN operator-confirmed Viator Partner Program activation and tracked-link validation on 2026-09-27. Owner additionally confirmed on 2026-10-02 that Viator payout setup was completed.",
     "manualToolsOnly": true,
     "driveAutomationAllowed": false,
     "automaticLinkRewritingAllowed": false,
     "automaticPlacementAllowed": false,
-    "rankingAffectedByCommission": false
+    "rankingAffectedByCommission": false,
+    "payoutMethodConfigured": true,
+    "payoutReadiness": "OWNER_CONFIRMED_CONFIGURED_2026-10-02"
   },
   {
     "id": "skyscanner",
