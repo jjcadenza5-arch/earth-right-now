@@ -422,5 +422,22 @@
     "verifiedAt": "2026-10-02T16:15:00Z",
     "expiresAt": "2026-12-31T00:00:00Z",
     "evidence": "Owner opened the ERN Viator Dublin partner link on 2026-10-02 and confirmed it resolves to the Dublin Tours & Excursions destination/results page while retaining ERN partner tracking parameters."
+  },
+  {
+    "id": "viator-cape-town-waterfront",
+    "title": "Explore Cape Town tours & activities",
+    "placeId": "cape-town-waterfront",
+    "provider": "Viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "viator",
+    "destinationScope": "Cape Town",
+    "url": "https://www.viator.com/Cape-Town/d318-ttd?pid=P00322254&mcid=42383&medium=link",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-02T16:20:00Z",
+    "expiresAt": "2026-12-31T00:00:00Z",
+    "evidence": "Owner opened the ERN Viator Cape Town partner link on 2026-10-02 and confirmed it resolves to the Cape Town tours/activities destination page while retaining ERN partner tracking parameters. Applied to ERN place: Cape Town — Table Mountain & Waterfront."
   }
 ]
