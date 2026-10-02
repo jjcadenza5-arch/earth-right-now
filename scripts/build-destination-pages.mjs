@@ -164,7 +164,6 @@ const languageNav=(currentLocale,id="")=>'<nav class="language-nav" aria-label="
 const discoverRows=[];
 for(const def of discoverDefinitions){
   const rows=editorialCollectionRows(structuredRows,def).sort((a,b)=>Number(b.current)-Number(a.current)||a.country.localeCompare(b.country)||a.title.localeCompare(b.title));
-  if(!rows.length)continue;
   const url=base+"discover/"+def.id+"/";
   const items=rows.map(p=>'<li><a href="'+base+'places/'+encodeURIComponent(p.id)+'/"><strong>'+esc(p.title)+'</strong></a><span>'+esc([p.region,p.country].filter(Boolean).join(", "))+'</span><small>'+(p.current?'Current verified view available':p.scheduled?'Verified source, outside published live hours':'ERN source')+'</small></li>').join("");
   const data={"@context":"https://schema.org","@graph":[
@@ -191,7 +190,6 @@ for(const locale of DISCOVERY_LOCALES.filter(x=>x!=="en")){
   const localeRows=[];
   for(const def of discoverDefinitions){
     const rows=editorialCollectionRows(structuredRows,def).sort((a,b)=>Number(b.current)-Number(a.current)||a.country.localeCompare(b.country)||a.title.localeCompare(b.title));
-    if(!rows.length)continue;
     const localized=localizedCollection(def.id,locale)||{title:def.title,description:def.description};
     const url=localizedDiscoverUrl(locale,def.id);
     const items=rows.map(p=>'<li><a href="'+base+'places/'+encodeURIComponent(p.id)+'/"><strong>'+esc(p.title)+'</strong></a><span>'+esc([p.region,p.country].filter(Boolean).join(", "))+'</span><small>'+(p.current?esc(copy.current):p.scheduled?esc(copy.scheduled):'ERN source')+'</small></li>').join("");
