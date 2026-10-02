@@ -452,7 +452,7 @@ function renderWander(){
  const start=(state.wanderOffset*6)%diverse.length;const pick=[];for(let i=0;i<Math.min(6,diverse.length);i++)pick.push(diverse[(start+i)%diverse.length]);
  $("#wanderGrid").replaceChildren(...pick.map(wanderCard));$("#wanderNote").textContent=`${pick.length} places beyond the current Top 20 · healthy sources only · ${visitorDaypart()} selection context`;
 }
-function renderDiscoveryProof(){const s=state.sources.filter(x=>x?.health==="HEALTHY"&&x.truth!=="PREVIEW"&&safeExternalUrl(x.sourceUrl||x.officialUrl));$("#proofPlaces").textContent=groupByPlace(s).length;$("#proofCountries").textContent=new Set(s.map(x=>x.country).filter(Boolean)).size;$("#proofCurrent").textContent=groupByPlace(state.sources.filter(guideEligible)).length}
+function renderDiscoveryProof(){const healthy=state.sources.filter(guideEligible),s=state.sources.filter(x=>x?.health==="HEALTHY"&&x.truth!=="PREVIEW"&&safeExternalUrl(x.sourceUrl||x.officialUrl));$("#proofPlaces").textContent=groupByPlace(s).length;$("#proofCountries").textContent=new Set(s.map(x=>x.country).filter(Boolean)).size;$("#proofCurrent").textContent=groupByPlace(healthy).length}
 
 function renderAtlasBeyond(){
  const box=$("#atlasBeyond"),grid=$("#atlasBeyondGrid"),note=$("#atlasBeyondNote");
