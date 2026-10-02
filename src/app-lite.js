@@ -57,7 +57,10 @@ function recentPlaybackProof(s){const a=(Date.now()-Date.parse(s?.playbackVerifi
 function watchExperienceEligible(s){return!!(s&&s.health==="HEALTHY"&&!s.watchHold&&!/VISITOR_PLAYBACK_REJECTED|NOT_LIVE|VIDEO_UNAVAILABLE|STALE_RECORDING|BROKEN_EMBED/i.test(s.failureReason||"")&&+s.quality>=80&&+s.moment>=70)}
 function watchEligible(s){return featureEligible(s)&&currentTruthClaim(s)&&watchExperienceEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
 function provenWatchHere(s){return watchEligible(s)&&((s.playback==="EMBED"&&recentPlaybackProof(s))||(s.playback==="IMAGE_REFRESH"&&currentTruthClaim(s)))}
-function atlasEligible(s){return!!(s&&s.health!=="OFFLINE"&&!featuredHold(s)&&s.truth!=="PREVIEW"&&Number.isFinite(+s.lat)&&Number.isFinite(+s.lon))}
+function referenceHandoffUrl(s){return safeExternalUrl(s?.sourceUrl||s?.officialUrl)}
+function atlasBaseEligible(s){return!!(s&&s.health!=="OFFLINE"&&!featuredHold(s)&&s.truth!=="PREVIEW"&&Number.isFinite(+s.lat)&&Number.isFinite(+s.lon))}
+function atlasReferenceEligible(s){return atlasBaseEligible(s)&&s.health==="HEALTHY"&&!currentTruthClaim(s)&&Boolean(referenceHandoffUrl(s))}
+function atlasEligible(s){return atlasBaseEligible(s)&&(currentTruthClaim(s)||atlasReferenceEligible(s))}
 const momentWords={
  en:["Current","Morning light","Daylight","Evening light","Night"],
  th:["ปัจจุบัน","แสงยามเช้า","กลางวัน","แสงยามเย็น","กลางคืน"],
@@ -490,15 +493,15 @@ function renderMap(){
  const grouped=groupByPlace(state.sources.filter(atlasEligible));
  for(const group of grouped){
    const eligible=group.filter(s=>{const inside=currentInside(s);if(state.mapFilter==="local")return false;if(state.category!=="all"&&state.category!=="random"&&!categoryMatch(s,state.category))return false;if(state.mapFilter==="inside"&&!inside)return false;if(state.mapFilter==="external"&&inside)return false;if(state.mapFilter==="daylight"&&!isDay(s))return false;return true});
-   if(!eligible.length)continue;const s=[...eligible].sort((x,y)=>(guideEligible(y)?1:0)-(guideEligible(x)?1:0)||(featureEligible(y)?1:0)-(featureEligible(x)?1:0)||baseScore(y)-baseScore(x))[0],lat=Number(s.lat),lon=Number(s.lon),inside=currentInside(s),current=guideEligible(s);
-   const p=document.createElement("button");p.className="map-pin"+(inside?"":" external")+(!current?" recheck":"");p.type="button";p.title=`${s.title} — ${publicTruth(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s,{record:current,updateHash:current});if(group.length>1)p.dataset.views=String(group.length);a.append(p);count++;if(inside)insideCount++;else externalCount++;
+   if(!eligible.length)continue;const s=[...eligible].sort((x,y)=>(guideEligible(y)?1:0)-(guideEligible(x)?1:0)||(featureEligible(y)?1:0)-(featureEligible(x)?1:0)||baseScore(y)-baseScore(x))[0],lat=Number(s.lat),lon=Number(s.lon),inside=currentInside(s),current=guideEligible(s),reference=atlasReferenceEligible(s);
+   const p=document.createElement("button");p.className="map-pin"+(inside?"":" external")+(reference?" reference":"");p.type="button";p.title=reference?`${s.title} — Reference only · official source available`:`${s.title} — ${publicTruth(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s,{record:current,updateHash:current});if(group.length>1)p.dataset.views=String(group.length);a.append(p);count++;if(inside)insideCount++;else externalCount++;
  }
  for(const x of mappableLocal){
    const lat=Number(x.lat),lon=Number(x.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;if(state.mapFilter!=="all"&&state.mapFilter!=="local")continue;
    const p=document.createElement("a");p.className="map-pin local";p.href=safeExternalUrl(x.url);p.target="_blank";p.rel="noopener noreferrer";p.title=x.name+" — reviewed local place";p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";a.append(p);count++;localCount++;
  }
  document.querySelectorAll(".atlas-filter").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter===state.mapFilter));
- const mc=state.sources.filter(atlasEligible),bc=mc.filter(s=>s.coordinateBasis).length,cc=mc.filter(guideEligible).length,rc=mc.length-cc,ctx=state.category!=="all"&&state.category!=="random"?` · ${state.category}`:"";$("#mapNote").textContent=`${count} mapped places${ctx} · ${cc} current · ${rc} may need recheck · ${insideCount} play here · ${externalCount} source views${localCount?" · "+localCount+" reviewed local":""} · ${bc} with coordinate provenance.${!mappableLocal.length&&approvedLocalPlaces().length?" Reviewed local places remain searchable but are not pinned until exact coordinates are verified.":""}`;renderAtlasBeyond();
+ const mc=state.sources.filter(atlasEligible),bc=mc.filter(s=>s.coordinateBasis).length,cc=mc.filter(guideEligible).length,rc=mc.filter(atlasReferenceEligible).length,ctx=state.category!=="all"&&state.category!=="random"?` · ${state.category}`:"";$("#mapNote").textContent=`${count} mapped places${ctx} · ${cc} current · ${rc} reference-only handoff${rc===1?"":"s"} · ${insideCount} play here · ${externalCount} source views${localCount?" · "+localCount+" reviewed local":""} · ${bc} with coordinate provenance.${!mappableLocal.length&&approvedLocalPlaces().length?" Reviewed local places remain searchable but are not pinned until exact coordinates are verified.":""}`;renderAtlasBeyond();
 }
 function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}
 function distanceKm(a,b){
@@ -560,7 +563,15 @@ function humanPlaybackReviewMode(s){const q=new URLSearchParams(location.search)
 function mountViewerNow(s){
  stopImageTimer();clearViewerLoad();const mount=$("#viewerStage");mount.replaceChildren();mount.style.background=generatedBackground(s);const source=cleanUrl(s.sourceUrl||s.officialUrl),link=$("#sourceViewer");if(source){link.href=source;link.dataset.ernSourceId=s.id;link.hidden=false}else{link.removeAttribute("href");delete link.dataset.ernSourceId;link.hidden=true}
  const reviewMode=humanPlaybackReviewMode(s);
- if(!currentTruthClaim(s)&&!reviewMode){mount.dataset.visualKind="reference";mount.append(scenicPoster(s));return}
+ if(!currentTruthClaim(s)&&!reviewMode){
+  mount.dataset.visualKind="reference";
+  const box=document.createElement("div");box.className="external-box reference-handoff";
+  const h=document.createElement("h3");h.textContent="Live view temporarily unavailable";
+  const p=document.createElement("p");p.textContent=source?"ERN is not treating this source as current right now. Open the official source to check the latest available view.":"ERN does not currently have a usable live/current source for this place.";
+  box.append(h,p);
+  if(source){const a=document.createElement("a");a.href=source;a.target="_blank";a.rel="noopener noreferrer";a.dataset.ernSourceId=s.id;a.textContent="Open official source";box.append(a)}
+  mount.append(box);return
+ }
  if(reviewMode){const n=document.createElement("div");n.className="playback-review-notice";n.textContent="HUMAN PLAYBACK REVIEW — shown only to renew evidence; not treated as current until a person confirms visible playback.";mount.append(n)}
  if(s.playback==="EMBED"&&cleanUrl(s.embedUrl)){beginViewerLoad(s);const f=createMediaFrame(s,{onload:()=>clearViewerLoad()});if(f)mount.append(f)}
  else if(s.playback==="IMAGE_REFRESH"&&cleanUrl(s.sourceUrl)){beginViewerLoad(s);const img=document.createElement("img");img.alt=s.title;img.onload=()=>clearViewerLoad();img.onerror=()=>{$("#viewerLoading").hidden=false};const refresh=()=>{try{const u=new URL(s.sourceUrl);u.searchParams.set("ern",Date.now());img.src=u.href}catch{img.src=s.sourceUrl}};refresh();state.imageTimer=setInterval(()=>{if(document.visibilityState==="visible")refresh()},Math.max(30000,Number(s.refreshMs)||60000));mount.append(img)}
