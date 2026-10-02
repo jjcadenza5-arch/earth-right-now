@@ -1,6 +1,8 @@
 # ERN Canonical Handoff — Phase 6–9
 Updated: 2026-10-02
 
+> Superseded for current continuation by `docs/ERN_PHASE10_LAUNCH_BUSINESS_READINESS_HANDOFF_2026-10-02.md`. This file remains the historical Phase 6–9 handoff.
+
 ## Instruction for the next ChatGPT chat
 Continue Earth Right Now (ERN) from this file and the repository's current main branch. Do not repeat completed Phase 5, 6, 7, 8 or 9 work. Phase 9 is complete. Do not invent or enter a Phase 10 without an explicit owner/product decision defining the next phase. Continue safe operations/maintenance only when a concrete operational issue requires it; separately gated capabilities remain off unless explicitly approved.
 
