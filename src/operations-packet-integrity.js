@@ -80,7 +80,7 @@ export async function validateOperationsPacket(dir="ern-ops"){
     const s=softLaunch?.safety||{};
     if(s.broadFeatureExpansionAllowed!==false||s.majorPromotionAllowed!==false||s.paidMarketingAllowed!==false||s.automaticExternalAccountActionAllowed!==false||s.automaticCommercialPlacementAllowed!==false||s.automaticLinkRewritingAllowed!==false||s.paidRankingAllowed!==false||s.bookingInferenceAllowed!==false||s.revenueInferenceAllowed!==false)issues.push({file:"soft-launch-stage1-status.json",code:"SOFT_LAUNCH_BOUNDARY_VIOLATION"});
     const g=softLaunch?.gates||{};
-    if(g.pilot2!==false||g.submissionPublic!==false||g.nowMomentMediaPublic!==false||g.generativeGuidePublic!==false||g.analytics!==false||g.socialAccountActions!==false||g.payoutAccountActions!==false||g.otherSeparateFeatureGates!==false)issues.push({file:"soft-launch-stage1-status.json",code:"SOFT_LAUNCH_GATE_VIOLATION"});
+    if(g.pilot2!==false||g.submissionPublic!==false||g.nowMomentMediaPublic!==false||g.generativeGuidePublic!==false||g.analytics!==true||g.analyticsMode!=="AGGREGATE_ONLY"||g.socialAccountActions!==false||g.payoutAccountActions!==false||g.otherSeparateFeatureGates!==false)issues.push({file:"soft-launch-stage1-status.json",code:"SOFT_LAUNCH_GATE_VIOLATION"});
   }
 
   const localDirectory=files["local-directory-status.json"];
