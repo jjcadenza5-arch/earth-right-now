@@ -57,6 +57,8 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p ern-ops ern-history
+          npm --silent run domain:health | tee ern-ops/domain-health.json
+          npm --silent run soft-launch:status -- ern-ops/domain-health.json | tee ern-ops/soft-launch-stage1-status.json
           npm --silent run sources:horizon | tee ern-ops/verification-horizon.json
           npm --silent run sources:availability | tee ern-ops/source-availability.json
           if [ -f ern-history/availability-previous.json ]; then
