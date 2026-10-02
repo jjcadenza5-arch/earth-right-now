@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T14:18:00Z",
+  "generatedAt": "2026-10-02T14:40:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -16,7 +16,9 @@
     "exactTrackedLinksAlreadyLive": true,
     "automaticPlacementAllowed": false,
     "automaticLinkRewritingAllowed": false,
-    "paidRankingAllowed": false
+    "paidRankingAllowed": false,
+    "viatorPayoutMethodConfigured": true,
+    "viatorPayoutReadiness": "OWNER_CONFIRMED_CONFIGURED_2026-10-02"
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -26,7 +28,8 @@
     "Destination-specific tracked links verified for current pilot destinations",
     "Commercial placement release preflight active",
     "Non-public exact-link opportunity queue active",
-    "Travelpayouts payout method configured and email-confirmed by owner on 2026-10-02"
+    "Travelpayouts payout method configured and email-confirmed by owner on 2026-10-02",
+    "Viator payout method configured by owner on 2026-10-02"
   ],
   "humanOnlyRemaining": [
     {
