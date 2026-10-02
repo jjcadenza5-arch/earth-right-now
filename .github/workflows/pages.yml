@@ -248,6 +248,8 @@ jobs:
         run: npm run release:build
       - name: Public module integrity
         run: npm --silent run release:public-module-integrity -- dist
+      - name: SEO indexing readiness
+        run: npm --silent run seo:indexing-audit -- dist
       - name: Public brand identity integrity
         run: node scripts/public-brand-facts-status.mjs
       - name: Organic distribution readiness
