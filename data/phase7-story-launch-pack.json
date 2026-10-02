@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "phase": 7,
+  "label": "ERN Stories Launch Pack",
+  "principle": "Do not push the answer. Create the question.",
+  "canonicalRoot": "https://earthrightnow.app/",
+  "items": [
+    {
+      "id": "quiet-earth",
+      "hook": "Where does Earth feel quiet right now?",
+      "cta": "Open a real current window.",
+      "url": "https://earthrightnow.app/?guide=somewhere%20peaceful"
+    },
+    {
+      "id": "changing-light",
+      "hook": "Where is the light changing right now?",
+      "cta": "See what Earth is showing.",
+      "url": "https://earthrightnow.app/?guide=beautiful%20evening%20light"
+    },
+    {
+      "id": "water-now",
+      "hook": "What does the water look like somewhere else right now?",
+      "cta": "Look before you imagine.",
+      "url": "https://earthrightnow.app/?q=beaches%20%26%20water"
+    },
+    {
+      "id": "earth-moving",
+      "hook": "Where can you feel the world moving right now?",
+      "cta": "Open a current city window.",
+      "url": "https://earthrightnow.app/?q=busy%20city"
+    },
+    {
+      "id": "small-place",
+      "hook": "What is happening somewhere most people never search for?",
+      "cta": "Find a small local place.",
+      "url": "https://earthrightnow.app/?guide=small%20local%20place"
+    },
+    {
+      "id": "surprise-earth",
+      "hook": "What would you notice if you looked somewhere unexpected right now?",
+      "cta": "Let ERN surprise you.",
+      "url": "https://earthrightnow.app/?guide=surprise%20me"
+    }
+  ],
+  "usage": {
+    "captions": "Use hook first, then CTA and canonical ERN link.",
+    "videoOverlay": "Use only the hook on-screen; let the current Earth window answer.",
+    "posting": "Human/external action only. No automatic posting is authorized."
+  },
+  "safety": {
+    "liveConditionClaimsInvented": false,
+    "urgencyManufactured": false,
+    "automaticPostingAllowed": false,
+    "socialAccountClaimed": false,
+    "commercialRankingAffected": false
+  }
+}
