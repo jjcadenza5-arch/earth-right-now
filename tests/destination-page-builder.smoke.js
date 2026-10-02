@@ -21,3 +21,7 @@ assert.match(builder,/const structuredRows=placeRows\.filter\(p=>p\.indexable\)/
 assert.match(builder,/Number\(b\.indexable\)-Number\(a\.indexable\)/,"place directory should list current/scheduled destinations before reference-only rows");
 assert.match(builder,/placeIndexable\(rows\)/,"related destination links should exclude reference-only stale places");
 console.log("Destination pages preserve schedule, playback, local-place and commercial truth boundaries");
+
+assert.match(builder,/Explore related places/,"Phase 6 destination pages should expose related discovery");
+assert.match(builder,/never by payment/,"related destination discovery must disclose ranking independence");
+assert.match(builder,/preferredCategories/,"related destination discovery should use category similarity");
