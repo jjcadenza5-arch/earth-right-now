@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "phase": 8,
+  "label": "Seasonal & Current Collection Policy",
+  "decision": "KEEP_EVERGREEN_COLLECTIONS_STATIC_AND_CURRENT_MOMENTS_IN_WATCH_EARTH",
+  "rationale": [
+    "The current catalog has strong category evidence for snow, water, cities and wildlife but insufficient explicit season metadata for truthful autumn/spring/holiday collections.",
+    "Watch Earth already owns current moment logic such as daylight, night cities, golden light and local-time-aware selection.",
+    "Duplicating current-moment logic in crawlable collection pages would create stale or conflicting claims."
+  ],
+  "evergreenCollections": [
+    "beaches-water",
+    "mountains-snow",
+    "cities-streets",
+    "wildlife-nature",
+    "calm-scenic"
+  ],
+  "currentMomentOwner": "WATCH_EARTH_RUNTIME",
+  "futureSeasonalTrigger": "Open a seasonal collection only when explicit source metadata/evidence can support it without inference.",
+  "safety": {
+    "inventSeasonalityAllowed": false,
+    "staleCurrentClaimsAllowed": false,
+    "duplicateRankingLogicAllowed": false,
+    "paidRankingAllowed": false
+  }
+}
