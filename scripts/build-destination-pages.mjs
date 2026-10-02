@@ -5,7 +5,7 @@ import { currentTravelOffer } from "../src/travel-offer-verification.js";
 import { affiliatePartner,activeAffiliatePartner } from "../src/affiliate-partners.js";
 import { currentLocalDirectoryEntry } from "../src/local-directory-status.js";
 import { embedPlaybackProofCurrent } from "../src/playback-proof.js";
-import { EDITORIAL_COLLECTIONS,editorialCollectionRows } from "../src/editorial-collections.js";
+import { EDITORIAL_COLLECTIONS,editorialCollectionRows,editorialCollectionMatches } from "../src/editorial-collections.js";
 import { DISCOVERY_LOCALES,discoveryLocale,localizedCollection } from "../src/editorial-collections-l10n.js";
 import fs from "node:fs";
 
@@ -23,8 +23,8 @@ const slug=s=>String(s).replace(/[^a-zA-Z0-9_-]/g,"-");
 const safe=u=>{try{const x=new URL(u);return /^https?:$/.test(x.protocol)?x.toString():""}catch{return""}};
 const date=s=>{const d=new Date(s);return Number.isNaN(d.getTime())?"":d.toISOString()};
 const pageCurrentSource=(s,now)=>currentSource(s,{now})&&embedPlaybackProofCurrent(s,{now});
-const commonAlias=s=>(s.aliases||[]).find(a=>a&&a.length>=3&&!/^st\.?\s/i.test(a))||"";
-const seoName=s=>commonAlias(s)||s.city||s.title;
+const commonAlias=s=>(s.aliases||[]).find(a=>a&&a.length>=3&&!/^(st|mt)\.?\s/i.test(a))||"";
+const seoName=s=>s.seoName||s.city||(s.region&&!/[\/,]/.test(s.region)&&String(s.title||"").toLowerCase().startsWith(String(s.region).toLowerCase())?s.region:"")||commonAlias(s)||String(s.title||"").split(" — ")[0]||s.title;
 const sourceKind=s=>s.truth==="LIVE_VIDEO"?"live video":s.truth==="LIVE_IMAGE"?"current image":s.truth==="EXTERNAL_LIVE"?"official external live source":s.truth==="PARTNER"?"partner source":"reference source";
 
 const latestDate=items=>{
@@ -147,10 +147,7 @@ for(const [id,items] of map){
   const coordinateText=Number.isFinite(lat)&&Number.isFinite(lon)?((preferred.coordinateBasis?"Map reference":"Coordinates")+": "+lat+", "+lon):null;
   const coordinateNote=preferred.coordinateNote?'<p class="ern-note">'+esc(preferred.coordinateNote)+'</p>':"";
   const facts=[city?"City: "+city:null,state?"State/region: "+state:null,!state&&preferred.region?"Region: "+preferred.region:null,preferred.country?"Country: "+preferred.country:null,aliases.length?"Also known as: "+aliases.join(", "):null,preferred.timeZone?"Time zone: "+preferred.timeZone:null,coordinateText].filter(Boolean).join(" · ");
-  const categoryLinks=(preferred.categories||[]).map(cat=>{
-    const def=discoverDefinitions.find(d=>String(d.title||"").toLowerCase().includes(String(cat).split("&")[0].trim().toLowerCase())||String(d.id||"").includes(String(cat).toLowerCase().replace(/[^a-z0-9]+/g,"-")));
-    return def?'<a href="'+base+'discover/'+def.id+'/">'+esc(def.title)+'</a>':"";
-  }).filter(Boolean);
+  const categoryLinks=discoverDefinitions.filter(def=>editorialCollectionMatches(preferred,def)).slice(0,3).map(def=>'<a href="'+base+'discover/'+def.id+'/">'+esc(def.title)+'</a>');
   const categoryHtml=categoryLinks.length?'<p class="ern-note">Explore: '+categoryLinks.join(" · ")+'</p>':"";
   const breadcrumb='<nav class="ern-breadcrumb" aria-label="Breadcrumb"><a href="'+base+'">Earth Right Now</a><span>›</span><a href="'+base+'places/">Places</a><span>›</span><span aria-current="page">'+esc(title)+'</span></nav>';
 
