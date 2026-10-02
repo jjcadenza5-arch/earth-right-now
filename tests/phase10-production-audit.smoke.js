@@ -1,0 +1,14 @@
+import assert from "node:assert/strict";
+import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/phase10-production-audit.mjs"],{encoding:"utf8"});
+assert.equal(r.status,0,r.stdout+"\n"+r.stderr);
+const x=JSON.parse(r.stdout);
+assert.equal(x.phase,10);
+assert.equal(x.ok,true);
+assert.equal(x.issues.length,0);
+assert.ok(x.importantSourceCount>0);
+assert.equal(x.gates.nowMomentMedia,false);
+assert.equal(x.gates.generativeGuidePublic,false);
+assert.equal(x.safety.automaticExternalActionsAllowed,false);
+assert.equal(x.safety.paidRankingAllowed,false);
+console.log("Phase 10 production visitor journey and source-integrity audit passed");
