@@ -269,6 +269,41 @@ Soft-launch release repair:
 - artifact upload: **SUCCESS**
 - GitHub Pages deploy step: **SUCCESS**
 
+## Atlas / reference-only visitor recovery repair
+Owner testing on 2026-10-02 found mapped places such as Georgia Aquarium, St. John's Harbour, Cold Lake Marina and Kīlauea Summit opening into a truth-safe but unhelpful placeholder when source verification had aged into `RECHECK DUE`.
+
+Preserved invariant:
+> Never fake LIVE. But never leave the visitor wondering what to do next.
+
+Repair:
+- current verified sources remain normal Atlas results;
+- healthy but stale/unverified mapped sources remain only as visually distinct **reference-only handoffs** when a safe official/provider source URL exists;
+- stale sources with no usable safe handoff are excluded from live-first Atlas discovery;
+- degraded/offline entries are not promoted as ordinary live Atlas results;
+- opening a reference-only handoff now shows a prominent main-area message: **“Live view temporarily unavailable”**;
+- when a safe provider URL exists, the main area offers **“Open official source”**;
+- reference-only opens remain non-stateful: they do not create stale deep links or record the place as a current-view interaction;
+- commercial actions remain unavailable from non-current source states.
+
+A new read-only audit checks every mapped reference-only Source handoff:
+`npm run atlas:reference-audit -- --network`
+
+First production audit:
+- reference-only mapped entries audited: **78**
+- safe handoff URLs: **78**
+- missing/unsafe handoffs: **0**
+- definite broken destinations (404/410): **0**
+- transient attention: Kīlauea USGS older path timed out from CI; Tonami returned temporary 502
+- network reachability never refreshes source currentness and never proves LIVE.
+
+Final validation after the repair:
+- Pages run `36977666710` — **SUCCESS**
+- Operations run `36977666779` — **SUCCESS**
+- release smoke suite: **SUCCESS**
+- whole-product guard: **SUCCESS**
+- public launch/mobile/accessibility/performance checks: **SUCCESS**
+- GitHub Pages deployment: **SUCCESS**
+
 ## What to do next
 Continue operating autonomously through the existing scheduled Operations checks.
 
