@@ -354,6 +354,87 @@ Final validation:
 - performance hard cap — **SUCCESS**
 - mobile/accessibility/public-launch checks — **SUCCESS**
 
+## Search-engine discoverability / SEO hardening
+Completed during Soft Launch / Operating Stage 1 on 2026-10-02.
+
+### Indexing architecture
+- `robots.txt` keeps the public site crawlable and continues to exclude operator/release-verification surfaces.
+- the release build regenerates `sitemap.xml` from the same current/scheduled truth catalog that builds destination pages;
+- indexable destination pages are included in the sitemap;
+- stale/reference-only destination pages remain `noindex,follow` and are excluded from the sitemap;
+- canonical URLs are stable under `https://earthrightnow.app/places/<placeId>/`;
+- `/places/`, `/discover/`, localized Discover roots/collections and appropriate public trust/editorial pages remain crawlable;
+- no thin-page expansion was introduced.
+
+### Destination page contract
+Indexable destination pages now expose crawlable:
+- destination/place name;
+- city/state/region/country when present in trusted catalog metadata;
+- high-confidence aliases/abbreviations;
+- useful destination description;
+- truthful current/scheduled source state and source type;
+- source-provider attribution and citation URLs;
+- related ERN destinations;
+- related editorial discovery collections;
+- Earth Right Now / See before you go branding.
+
+SEO titles use a destination-first pattern such as:
+- `New York Live Now | Earth Right Now`;
+- `Auckland Live Now | Earth Right Now`;
+- specific same-city pages stay distinct, e.g. `Kyoto Hanamikoji Street Live Now | Earth Right Now`, avoiding duplicate Kyoto titles.
+
+Structured data includes WebPage, Place, BreadcrumbList, geographic/address fields when supported, aliases through `alternateName`, source status/type properties and provider citations. It does not upgrade stale evidence into LIVE.
+
+### Internal discovery
+Related-place links remain deterministic, current/schedule-verified and non-commercial. Same country, region/city and category similarity can strengthen related links. Editorial collection links add useful crawl paths without paid ranking.
+
+### Automated SEO audit
+`npm run seo:indexing-audit -- dist`
+
+The Pages workflow runs this against the actual generated release artifact before deployment. It checks:
+- robots/sitemap integrity;
+- sitemap duplicate URLs;
+- sitemap routes;
+- canonical existence and duplicate canonicals;
+- title/description/Open Graph coverage;
+- JSON-LD validity;
+- index/noindex versus sitemap consistency;
+- destination title pattern;
+- visible crawlable text;
+- truthful Place/status structured data;
+- related links/provider attribution warnings.
+
+Final successful artifact audit:
+- files checked: **143**
+- indexable pages: **59**
+- generated destination pages: **90**
+- destination pages currently eligible for indexing: **9**
+- sitemap URLs: **59**
+- blocking SEO issues: **0**
+- non-blocking warnings: **14**, limited to concise localized Discover meta descriptions.
+
+The low indexed-destination count is intentional under ERN's fail-closed truth policy: stale/reference-only destinations remain public for transparency but are not presented to search engines as current destination pages until they regain current/schedule-verified status.
+
+### Search-engine owner readiness
+Owner instructions are in `docs/SEARCH_ENGINE_OWNER_READINESS.md`.
+
+The homepage already contains a Google site-verification meta token. ERN code does not claim that the Search Console property is verified. Google/Bing account creation, login, DNS verification and ownership confirmation remain owner-only actions.
+
+Recommended next owner sequence:
+1. verify/add `earthrightnow.app` in Google Search Console;
+2. submit `https://earthrightnow.app/sitemap.xml`;
+3. inspect representative URLs;
+4. import the verified Search Console property into Bing Webmaster Tools, or use Bing's owner verification flow;
+5. confirm Bing knows the same sitemap.
+
+No DNS token should ever be invented or added without the exact value supplied by the owner's search-engine account.
+
+### Validation
+Pages run `36980095488` — **SUCCESS**.
+All release, lean, whole-product, public-launch, mobile, accessibility, performance, generated SEO indexing and existing public discoverability checks passed.
+
+Direct HTTP fetch of the custom domain could not be independently repeated from the current assistant environment because its DNS/network resolver is unavailable. The conclusion is based on the successfully generated release artifact plus GitHub Pages deployment success; do not misstate this as a manual external browser fetch.
+
 ## What to do next
 Continue operating autonomously through the existing scheduled Operations checks.
 
