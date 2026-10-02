@@ -405,5 +405,22 @@
     "verifiedAt": "2026-10-02T16:05:00Z",
     "expiresAt": "2026-12-31T00:00:00Z",
     "evidence": "Owner generated the Travelpayouts/Tiqets London destination link on 2026-10-02 and confirmed the short tracked URL resolves to a useful London Tiqets attractions page. Shared London destination link applied to ERN place: Abbey Road Crossing."
+  },
+  {
+    "id": "viator-dublin-temple-bar",
+    "title": "Explore Dublin tours & activities",
+    "placeId": "dublin-temple-bar",
+    "provider": "Viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "viator",
+    "destinationScope": "Dublin",
+    "url": "https://www.viator.com/Dublin/d503-ttd?pid=P00322254&mcid=42383&medium=link",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-02T16:15:00Z",
+    "expiresAt": "2026-12-31T00:00:00Z",
+    "evidence": "Owner opened the ERN Viator Dublin partner link on 2026-10-02 and confirmed it resolves to the Dublin Tours & Excursions destination/results page while retaining ERN partner tracking parameters."
   }
 ]
