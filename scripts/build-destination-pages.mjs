@@ -5,6 +5,7 @@ import { currentTravelOffer } from "../src/travel-offer-verification.js";
 import { affiliatePartner,activeAffiliatePartner } from "../src/affiliate-partners.js";
 import { currentLocalDirectoryEntry } from "../src/local-directory-status.js";
 import { embedPlaybackProofCurrent } from "../src/playback-proof.js";
+import { EDITORIAL_COLLECTIONS,editorialCollectionRows } from "../src/editorial-collections.js";
 import fs from "node:fs";
 
 const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
@@ -155,20 +156,10 @@ fs.writeFileSync("places/index.html",directoryHtml);
 
 fs.rmSync("discover",{recursive:true,force:true});
 fs.mkdirSync("discover",{recursive:true});
-const discoverDefinitions=[
-  {id:"beaches-water",title:"Beaches & Water",description:"Explore current and schedule-verified ERN places by the sea, coast, beach, harbour and water.",terms:["beach","water","sea","coast","surf","harbour","harbor","island"]},
-  {id:"mountains-snow",title:"Mountains & Snow",description:"Explore current and schedule-verified mountain, alpine, snow, ski and volcano places on ERN.",terms:["mountain","snow","ski","volcano","alps","alpine"]},
-  {id:"cities-streets",title:"Cities & Streets",description:"Explore current and schedule-verified city, street, skyline, square and urban places on ERN.",terms:["city","cities","street","urban","skyline","square","harbour","harbor","culture"]},
-  {id:"wildlife-nature",title:"Wildlife & Nature",description:"Explore current and schedule-verified wildlife, animal, zoo, aquarium, forest, park and nature places on ERN.",terms:["wildlife","animal","zoo","aquarium","bird","forest","park","nature"]},
-  {id:"calm-scenic",title:"Calm & Scenic Earth",description:"Explore current and schedule-verified scenic, peaceful, nature, mountain, beach and water places on ERN.",terms:["beautiful","scenic","nature","mountain","beach","water","park","forest","island"]}
-];
-const categoryMatch=(p,def)=>{
-  const hay=[...(p.categories||[]),p.title,p.story].join(" ").toLowerCase();
-  return def.terms.some(term=>hay.includes(term));
-};
+const discoverDefinitions=EDITORIAL_COLLECTIONS;
 const discoverRows=[];
 for(const def of discoverDefinitions){
-  const rows=structuredRows.filter(p=>categoryMatch(p,def)).sort((a,b)=>Number(b.current)-Number(a.current)||a.country.localeCompare(b.country)||a.title.localeCompare(b.title));
+  const rows=editorialCollectionRows(structuredRows,def).sort((a,b)=>Number(b.current)-Number(a.current)||a.country.localeCompare(b.country)||a.title.localeCompare(b.title));
   if(!rows.length)continue;
   const url=base+"discover/"+def.id+"/";
   const items=rows.map(p=>'<li><a href="'+base+'places/'+encodeURIComponent(p.id)+'/"><strong>'+esc(p.title)+'</strong></a><span>'+esc([p.region,p.country].filter(Boolean).join(", "))+'</span><small>'+(p.current?'Current verified view available':p.scheduled?'Verified source, outside published live hours':'ERN source')+'</small></li>').join("");
