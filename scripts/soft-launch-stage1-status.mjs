@@ -8,20 +8,22 @@ const business=json("data/business-readiness.json");
 const partners=json("data/affiliate-partners.json");
 const offers=json("data/travel-offers.json");
 const future=json("data/phase10-future-differentiators.json");
+const analyticsApproval=json("data/soft-launch-analytics-approval.json");
 const analyticsText=fs.readFileSync("src/analytics-config.js","utf8");
 const domainPath=process.argv[2]||null;
 let domain=null;
 if(domainPath&&domainPath!=="-"&&fs.existsSync(domainPath)){
   try{domain=json(domainPath)}catch{}
 }
-const analyticsActive=/enabled\s*:\s*true/.test(analyticsText)&&!/provider\s*:\s*["']NONE["']/.test(analyticsText);
+const analyticsActive=/enabled\s*:\s*true/.test(analyticsText)&&/provider\s*:\s*["']ERN_FIRST_PARTY["']/.test(analyticsText)&&/privacyMode\s*:\s*["']AGGREGATE_ONLY["']/.test(analyticsText);
+const analyticsApproved=analyticsApproval.ownerApproval===true&&analyticsApproval.state==="APPROVED_FOR_CONTROLLED_DEPLOYMENT"&&analyticsApproval?.privacyBoundaries?.advertisingTracking===false&&analyticsApproval?.privacyBoundaries?.crossSiteTracking===false&&analyticsApproval?.privacyBoundaries?.personalProfiles===false&&analyticsApproval?.privacyBoundaries?.rawIpStorage===false;
 const constraints=approval.constraints||{};
 const gatesClosed=
  constraints.pilot2===false&&constraints.submissionPublic===false&&constraints.nowMomentMediaPublic===false&&
- constraints.generativeGuidePublic===false&&constraints.analytics===false&&constraints.socialAccountActions===false&&
+ constraints.generativeGuidePublic===false&&constraints.analytics===true&&analyticsActive===true&&analyticsApproved===true&&constraints.socialAccountActions===false&&
  constraints.payoutAccountActions===false&&constraints.otherSeparateFeatureGates===false&&constraints.paidMarketingAllowed===false&&
  constraints.newExternalAccountsAllowed===false&&constraints.spendAllowed===false&&constraints.irreversibleBusinessAccountChangesAllowed===false&&
- constraints.credentialExposureAllowed===false&&analyticsActive===false&&future.publicActivationAllowed===false;
+ constraints.credentialExposureAllowed===false&&future.publicActivationAllowed===false;
 const currentPartnerCount=(partners||[]).filter(x=>x.enabled===true).length;
 const verifiedOfferCount=(offers||[]).filter(x=>x.verified===true).length;
 const domainHealthy=domain?domain.state==="OK":null;
@@ -45,15 +47,15 @@ const report={
   travelpayoutsProjectActive:business.revenueInfrastructure?.travelpayoutsProjectActive===true,
   payoutMethodConfigured:business.revenueInfrastructure?.payoutMethodConfigured===true,
   trackedLinksAlreadyLive:business.revenueInfrastructure?.exactTrackedLinksAlreadyLive===true,
-  trafficMeasured:false,
+  trafficMeasured:analyticsActive,
   bookingsMeasured:false,
   conversionsMeasured:false,
   revenueMeasured:false,
-  interpretation:"Verified inventory and tracked-link readiness are operating facts. With ERN analytics OFF, this status does not infer visitor traffic, bookings, conversions or revenue."
+  interpretation:"Approved first-party aggregate analytics can measure visits, discovery/search activity, source opens and verified commercial outbound actions. It does not infer bookings, conversions, transactions or revenue."
  },
  gates:{
   pilot2:false,submissionPublic:false,nowMomentMediaPublic:false,generativeGuidePublic:false,
-  analytics:false,socialAccountActions:false,payoutAccountActions:false,otherSeparateFeatureGates:false
+  analytics:true,analyticsMode:"AGGREGATE_ONLY",socialAccountActions:false,payoutAccountActions:false,otherSeparateFeatureGates:false
  },
  safety:{
   broadFeatureExpansionAllowed:false,majorPromotionAllowed:false,paidMarketingAllowed:false,
