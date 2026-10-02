@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T15:50:00Z",
+  "generatedAt": "2026-10-02T15:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -126,8 +126,10 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN has a current Singapore port/skyline window and Klook has broad Singapore attraction/activity inventory; this is a strong See Live → Decide → Go bridge.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate and human-verify one Singapore destination-level Klook link in the existing Travelpayouts Earthrightnow project."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate Singapore commercial clicks and keep affiliate placement downstream from Earth discovery.",
+      "trackingUrl": "https://klook.tpo.mx/QmJPVYKH",
+      "verifiedAt": "2026-10-02T15:55:00Z"
     },
     {
       "id": "tiqets-london",
