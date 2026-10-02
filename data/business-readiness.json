@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-29T04:42:00Z",
+  "generatedAt": "2026-10-02T14:18:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
     "travelpayoutsProjectStatus": "GREEN_OPERATOR_CONFIRMED",
     "travelpayoutsAvailablePrograms": 26,
-    "payoutMethodConfigured": false,
-    "payoutReadiness": "HUMAN_ACCOUNT_ACTION_REQUIRED",
+    "payoutMethodConfigured": true,
+    "payoutReadiness": "CONFIGURED_AND_EMAIL_CONFIRMED_BY_OWNER_2026-10-02",
     "verifiedAffiliatePartners": [
       "viator",
       "klook",
@@ -25,17 +25,10 @@
     "Viator limited pilot active",
     "Destination-specific tracked links verified for current pilot destinations",
     "Commercial placement release preflight active",
-    "Non-public exact-link opportunity queue active"
+    "Non-public exact-link opportunity queue active",
+    "Travelpayouts payout method configured and email-confirmed by owner on 2026-10-02"
   ],
   "humanOnlyRemaining": [
-    {
-      "id": "travelpayouts-payout-method",
-      "action": "Configure payout method in Travelpayouts account",
-      "priority": "BEFORE_FIRST_PAYOUT",
-      "blocksPublicERN": false,
-      "blocksTrackedLinks": false,
-      "blocksReceivingPayouts": true
-    },
     {
       "id": "travelpayouts-next-exact-links",
       "action": "Generate exact destination-level tracked links only when ERN presents a vetted small batch",
