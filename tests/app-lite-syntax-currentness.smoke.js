@@ -15,3 +15,6 @@ assert.match(app,/guideStart:/,"Guide opening response should localize");
 assert.match(app,/\.\.\.\(s\.aliases\|\|\[\]\)/,"public Explore search should include source aliases");
 assert.match(app,/const intentGroups=/,"public Explore search should support deterministic intent groups");
 assert.match(app,/activeIntents\.every\(g=>g\.match\(s\)\)/,"public Explore search should require matched deterministic intents");
+
+assert.match(app,/ern:recent-searches:v1/,"Phase 6 Explore should retain recent search terms locally");
+assert.match(app,/rememberSearch\(raw\)/,"URL-backed Explore searches should update local recent-search memory");
