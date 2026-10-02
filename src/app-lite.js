@@ -267,11 +267,14 @@ function groupByPlace(items){
  return [...m.values()];
 }
 function normalizeSearch(v){return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim()}
+function recentSearches(){const rows=readJSON("ern:recent-searches:v1",[]);return Array.isArray(rows)?rows.filter(v=>typeof v==="string"&&v.trim()).slice(0,4):[]}
+function rememberSearch(q){const raw=String(q||"").trim().replace(/\s+/g," ").slice(0,120);if(!raw)return;const next=[raw,...recentSearches().filter(x=>normalizeSearch(x)!==normalizeSearch(raw))].slice(0,8);writeSaved("ern:recent-searches:v1",JSON.stringify(next))}
 function renderQuickSearches(){
  const host=document.querySelector(".search-suggestions");if(!host)return;
  const rankedCountries=[...new Set(state.sources.filter(guideEligible).sort((a,b)=>baseScore(b)-baseScore(a)).map(s=>s.country).filter(Boolean))].slice(0,3);
  const typeQueries=visitorDaypart()==="night"?["Cities","Beaches & Water","Wildlife"]:["Beaches & Water","Mountains","Wildlife"];
- const items=[...rankedCountries,...typeQueries].slice(0,6);host.replaceChildren(...items.map(q=>{const b=document.createElement("button");b.type="button";b.dataset.query=q;b.textContent=q;return b}));
+ const recents=recentSearches();
+ const items=[...recents,...rankedCountries,...typeQueries].filter((q,i,a)=>a.findIndex(x=>normalizeSearch(x)===normalizeSearch(q))===i).slice(0,6);host.replaceChildren(...items.map(q=>{const b=document.createElement("button");b.type="button";b.dataset.query=q;b.textContent=q;return b}));
  host.querySelectorAll("button").forEach(b=>b.onclick=()=>{$("#searchInput").value=b.dataset.query||"";search($("#searchInput").value,{updateUrl:true});scrollToId("search")});
 }
 
@@ -408,7 +411,7 @@ function closeGuide(){
 
 function search(q,options={updateUrl:false}){
  const raw=String(q||"").trim(),x=normalizeSearch(raw),tokens=x.split(/\s+/).filter(Boolean);
- if(options.updateUrl){const u=new URL(location.href);if(raw)u.searchParams.set("q",raw);else u.searchParams.delete("q");history.replaceState(null,"",u.pathname+u.search+u.hash)}
+ if(options.updateUrl){const u=new URL(location.href);if(raw){u.searchParams.set("q",raw);rememberSearch(raw)}else u.searchParams.delete("q");history.replaceState(null,"",u.pathname+u.search+u.hash)}
  const localIntent=/\b(local|small|village|market|farm|neighbourhood|neighborhood|harbour|harbor|marina)\b/.test(x);
  const intentGroups=[
    {test:/\b(beach|beaches|water|sea|ocean|coast|coastal|surf|harbour|harbor)\b/,match:s=>/beach|water|sea|coast|surf|harbour|harbor|island/.test(cats(s))},
