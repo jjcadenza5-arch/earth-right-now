@@ -33,7 +33,7 @@ must(requireExists("scripts/participation-preflight.mjs"),"participation safety 
 must(css.includes("world-map-natural-earth.svg"),"Living Atlas lost its local real-map base");
 must(index.includes('data-map-filter="local"')&&app.includes('map-pin local'),"Living Atlas lost reviewed local-place discovery");
 must(app.includes("mappableLocal")&&app.includes("not pinned until exact coordinates are verified"),"Living Atlas must not imply exact local-place coordinates");
-must(app.includes('mount.dataset.visualKind="reference"')&&app.includes('Source recheck due')&&app.includes('Live view currently unavailable')&&app.includes('Open official source'),"Atlas recheck media must fail closed to an actionable truthful reference handoff");
+must(app.includes('mount.dataset.visualKind="reference"')&&app.includes('Source recheck due')&&app.includes('Live view unavailable')&&app.includes('Open source'),"Atlas recheck media must fail closed to an actionable truthful reference handoff");
 must(app.includes('Live stream available at the source')&&app.includes('Open live source'),"Verified external live streams must use positive intentional handoff wording");
 must(app.includes('b.querySelector("small").textContent=publicTruth(alt)'),"Viewer alternates must use currentness-aware truth labels");
 must(index.includes('id="atlasBeyond"')&&app.includes("renderAtlasBeyond(")&&css.includes("Atlas beyond-map coverage"),"Living Atlas lost honest unmapped-place discovery");
