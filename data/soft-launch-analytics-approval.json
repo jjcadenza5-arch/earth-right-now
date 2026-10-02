@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "stage": "SOFT_LAUNCH_OPERATING_STAGE_1",
+  "feature": "minimal-privacy-analytics",
+  "ownerApproval": true,
+  "approvedAt": "2026-10-02",
+  "purpose": "Learn enough during ERN soft launch to improve reliability, discovery coverage and the visitor-to-useful-action business journey without personal profiling.",
+  "approvedMeasurements": [
+    "approximate visitors",
+    "new-versus-returning visitors using a first-party pseudonymous browser identifier",
+    "coarse country and region",
+    "desktop-mobile-tablet class",
+    "popular ERN places and current windows",
+    "searches",
+    "zero-result searches",
+    "current-source opens",
+    "verified commercial or affiliate action opens",
+    "referrer hostname where available"
+  ],
+  "privacyBoundaries": {
+    "advertisingTracking": false,
+    "crossSiteTracking": false,
+    "personalProfiles": false,
+    "rawIpStorage": false,
+    "preciseLocationStorage": false,
+    "favoritesOrRecentHistoryTransmission": false,
+    "contactDataCollection": false,
+    "bookingInference": false,
+    "transactionInference": false,
+    "revenueInference": false,
+    "commercialSignalsMayAffectRanking": false,
+    "honorDoNotTrackAndGlobalPrivacyControl": true,
+    "searchTermsAggregatedNotEventLogged": true,
+    "obviousEmailUrlPhoneLikeSearchesStored": false
+  },
+  "retentionDays": 90,
+  "infrastructure": {
+    "newPaidServiceAllowed": false,
+    "useExistingCloudflareAccount": true,
+    "useExistingDeploymentCredentials": true,
+    "separateFirstPartyWorker": true
+  },
+  "state": "APPROVED_FOR_CONTROLLED_DEPLOYMENT"
+}
