@@ -90,7 +90,8 @@
     "phase4:earth-signals-observation": "node scripts/phase4-earth-signals-observation-status.mjs",
     "phase5:readiness": "node scripts/phase5-readiness-status.mjs",
     "phase5:status": "node scripts/phase5-operating-status.mjs",
-    "phase6:status": "node scripts/phase6-operating-status.mjs"
+    "phase6:status": "node scripts/phase6-operating-status.mjs",
+    "phase6:qa": "node scripts/phase6-discovery-qa.mjs"
   },
   "engines": {
     "node": ">=20"

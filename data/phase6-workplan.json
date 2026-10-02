@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "phase": 6,
   "label": "Discovery & Growth",
-  "state": "ACTIVE",
+  "state": "ACTIVE_EXIT_QA",
   "lanes": [
     {
       "id": "search-intent-discovery",
@@ -19,25 +19,25 @@
     {
       "id": "crawlable-growth",
       "label": "Crawlable discovery & SEO",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "verified-action-pathways",
       "label": "Verified on-site action pathways",
-      "status": "PLANNED",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "performance-release-resilience",
       "label": "Performance & release resilience",
-      "status": "PLANNED",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "phase6-discovery-qa",
       "label": "Discovery QA & Phase 6 exit review",
-      "status": "PLANNED",
+      "status": "ACTIVE",
       "gated": false
     }
   ],
@@ -50,5 +50,5 @@
     "socialChannels": false,
     "otherSeparateFeatureGates": false
   },
-  "next": "CONTINUE_CRAWLABLE_GROWTH"
+  "next": "RUN_PHASE6_EXIT_QA"
 }

@@ -1,0 +1,10 @@
+import assert from "node:assert/strict";
+import {execFileSync} from "node:child_process";
+const report=JSON.parse(execFileSync(process.execPath,["scripts/phase6-discovery-qa.mjs"],{encoding:"utf8"}));
+assert.equal(report.phase,6);
+assert.equal(report.state,"READY_TO_COMPLETE_PHASE6");
+assert.equal(report.issueCount,0);
+assert.equal(report.separateFeatureGatesRemainOff,true);
+assert.equal(report.safety.automaticGateActivationAllowed,false);
+assert.equal(report.next,"COMPLETE_PHASE6_AND_ASSESS_NEXT_PHASE");
+console.log("Phase 6 discovery and growth exit QA passed");
