@@ -320,5 +320,22 @@
     "verifiedAt": "2026-10-02T00:00:00Z",
     "expiresAt": "2026-12-31T00:00:00Z",
     "evidence": "Owner generated the Travelpayouts/Klook Rovaniemi destination link on 2026-10-02 and confirmed the short tracked URL resolves to a useful Rovaniemi Klook results page."
+  },
+  {
+    "id": "klook-bangkok-sukhumvit-road",
+    "title": "Explore Bangkok activities",
+    "placeId": "bangkok-sukhumvit-road",
+    "provider": "Klook",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "klook",
+    "destinationScope": "Bangkok",
+    "url": "https://klook.tpo.mx/R04u4nLi",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-02T15:50:00Z",
+    "expiresAt": "2026-12-31T00:00:00Z",
+    "evidence": "Owner generated the Travelpayouts/Klook Bangkok destination link on 2026-10-02 and confirmed the short tracked URL resolves to a useful Bangkok Klook destination/results page."
   }
 ]
