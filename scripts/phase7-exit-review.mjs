@@ -7,7 +7,7 @@ const phase=run("scripts/project-phase-status.mjs");
 const qa=run("scripts/phase7-launch-qa.mjs");
 const status=run("scripts/phase7-operating-status.mjs");
 const blockers=[];
-if(phase.phaseNumber!==7)blockers.push("CANONICAL_PHASE_NOT_7");
+if(Number(phase.phaseNumber)<7)blockers.push("CANONICAL_PHASE_BEFORE_7");
 if(qa.state!=="READY_NON_GATED_LAUNCH_PACKAGE")blockers.push("LAUNCH_PACKAGE_QA_NOT_READY");
 if(status.entryApproved!==true||status.separateFeatureGatesRemainOff!==true)blockers.push("PHASE7_OPERATING_BOUNDARY");
 const unfinished=(plan.lanes||[]).filter(x=>x.id!=="phase7-exit-review"&&x.status!=="COMPLETE");
