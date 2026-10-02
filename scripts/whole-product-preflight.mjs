@@ -14,14 +14,15 @@ must(read("src/release-verification-console.js").includes('./#view='),"release v
 must(app.includes("localIntent="),"Search lost small/local-place intent handling");
 must(app.includes("[x.name,x.type,x.place,x.country,x.address,x.summary"),"Local Earth search lost verified address matching");
 must(app.includes("const matches=catalogMatches.filter(guideEligible)"),"Explore search must filter catalog matches through current truth");
-must(app.includes("offers:intent.planning?TP.guideOffers(state.travelOffers,items[0]):[]"),"Guide planning links must remain post-ranking");
+must(app.includes("offers:intent.planning?TP.guideOffers(state.travelOffers,items[0],state.affiliatePartners):[]"),"Guide planning links must remain post-ranking");
 must(app.includes("let pool=placeMatches.length?[...placeMatches]:state.sources.filter(guideEligible)"),"Guide place+intent ranking lost geographic constraint");
-must(app.includes("offers:intent.planning&&items.length?TP.guideOffers(state.travelOffers,items[0]):[]"),"Guide intent-planning links must remain post-ranking after geographic constraint");
+must(app.includes("offers:intent.planning&&items.length?TP.guideOffers(state.travelOffers,items[0],state.affiliatePartners):[]"),"Guide intent-planning links must remain post-ranking after geographic constraint");
 const guideScoreBody=app.slice(app.indexOf("function guideScore("),app.indexOf("function guideNearby("));
 must(!/travelOffer|affiliate|sponsored/.test(guideScoreBody),"Commercial availability must not enter Guide editorial scoring");
 must(!app.includes("providerConcentration")&&!app.includes("topProvider"),"Provider concentration must remain operational-only and out of visitor ranking runtime");
-must(app.includes('const stayOffer=current?TP.offerFor(state.travelOffers,s,"stay"):null'),"Reference-only viewer states must remain non-commercial");
+must(app.includes('const stayOffer=current?TP.offerFor(state.travelOffers,s,"stay",state.affiliatePartners):null'),"Reference-only viewer states must remain non-commercial");
 must(requireExists("src/travel-planning-client.js")&&read("src/travel-planning-client.js").includes("expires<=now"),"Public travel offer gate must enforce explicit expiry");
+must(read("src/travel-planning-client.js").includes("partnerCurrent")&&read("src/travel-planning-client.js").includes("sourceEligible"),"Public travel offer gate must enforce active-partner and source-eligibility boundaries");
 must(app.includes("function watchEligible(")&&app.includes("sources.filter(watchEligible)"),"Watch Earth must exclude PREVIEW-only sources from the curated Top 20");
 must(app.includes("function currentInside(s)")&&app.includes("healthy.filter(currentInside)")&&app.includes("sorted.filter(currentInside)")&&app.includes('currentTruthClaim(s)&&watchExperienceEligible(s)'),"Visitor Play here/Watch Earth paths lost the current-proven inside boundary");
 must(app.includes("function provenWatchHere(s)")&&app.includes("if(proven.length>=6)pool=proven"),"Watch Earth lost proven in-ERN preference");
