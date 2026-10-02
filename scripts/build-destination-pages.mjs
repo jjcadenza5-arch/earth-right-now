@@ -22,6 +22,10 @@ const slug=s=>String(s).replace(/[^a-zA-Z0-9_-]/g,"-");
 const safe=u=>{try{const x=new URL(u);return /^https?:$/.test(x.protocol)?x.toString():""}catch{return""}};
 const date=s=>{const d=new Date(s);return Number.isNaN(d.getTime())?"":d.toISOString()};
 const pageCurrentSource=(s,now)=>currentSource(s,{now})&&embedPlaybackProofCurrent(s,{now});
+const commonAlias=s=>(s.aliases||[]).find(a=>a&&a.length>=3&&!/^st\.?\s/i.test(a))||"";
+const seoName=s=>commonAlias(s)||s.city||s.title;
+const sourceKind=s=>s.truth==="LIVE_VIDEO"?"live video":s.truth==="LIVE_IMAGE"?"current image":s.truth==="EXTERNAL_LIVE"?"official external live source":s.truth==="PARTNER"?"partner source":"reference source";
+
 const latestDate=items=>{
   const times=items.map(s=>Date.parse(s.lastSuccessfulCheck||s.checkedAt||"")).filter(Number.isFinite).sort((a,b)=>b-a);
   return times[0]?new Date(times[0]).toISOString().slice(0,10):null;
@@ -53,10 +57,14 @@ for(const [id,items] of map){
   const indexable=currentItems.length>0||scheduledClosedItems.length>0;
   const preferred=[...(currentItems.length?currentItems:items)].sort((a,b)=>(b.quality||0)-(a.quality||0))[0];
   const title=preferred.title;
-  const where=[preferred.region,preferred.country].filter(Boolean).join(", ");
+  const destinationName=seoName(preferred);
+  const aliases=[...(preferred.aliases||[])].filter(Boolean);
+  const city=preferred.city||"";
+  const state=preferred.state||"";
+  const where=[city,state||preferred.region,preferred.country].filter(Boolean).join(", ");
   const story=(preferred.story||("Available Earth Right Now views for "+title)).slice(0,220);
   const desc=currentItems.length
-    ?story
+    ?("See "+destinationName+" now with Earth Right Now. "+story).slice(0,220)
     :scheduledClosedItems.length
       ?("ERN has a recently verified source for "+title+", but it is outside the provider's published live hours right now. Check the published schedule or return when the source is open.").slice(0,220)
       :("ERN currently has provider source information for "+title+", but no active current-source verification is available right now. Open the provider source directly or check back after ERN revalidates it.").slice(0,220);
@@ -66,17 +74,23 @@ for(const [id,items] of map){
   const placeData={
     "@type":"Place",
     "@id":url+"#place",
-    "name":title,
+    "name":destinationName,
+    ...(title!==destinationName?{"alternateName":[title,...aliases].filter((x,i,a)=>x&&a.indexOf(x)===i)}:aliases.length?{"alternateName":aliases}:{}),
     "description":desc,
     "url":url,
     "mainEntityOfPage":{"@id":url},
-    "containedInPlace":{"@type":"Place","name":where||preferred.country||title}
+    "containedInPlace":{"@type":"Place","name":where||preferred.country||destinationName},
+    ...(city||state||preferred.region||preferred.country?{"address":{"@type":"PostalAddress",...(city?{"addressLocality":city}:{}),...(state||preferred.region?{"addressRegion":state||preferred.region}:{}),...(preferred.country?{"addressCountry":preferred.country}:{})}}:{}),
+    "additionalProperty":[
+      {"@type":"PropertyValue","name":"ERN source status","value":currentItems.length?"Current verified view available":scheduledClosedItems.length?"Verified source outside published live hours":"Reference only / recheck due"},
+      {"@type":"PropertyValue","name":"ERN source type","value":sourceKind(preferred)}
+    ]
   };
   if(Number.isFinite(lat)&&Number.isFinite(lon))placeData.geo={"@type":"GeoCoordinates","latitude":lat,"longitude":lon};
   const graph={
     "@context":"https://schema.org",
     "@graph":[
-      {"@type":"WebPage","@id":url,"url":url,"name":"See "+title+" before you go — Earth Right Now","description":desc,"isPartOf":{"@id":base+"#website"},"mainEntity":{"@id":url+"#place"},"breadcrumb":{"@id":url+"#breadcrumb"},...(lastmod?{"dateModified":lastmod}: {})},
+      {"@type":"WebPage","@id":url,"url":url,"name":destinationName+(currentItems.length?" Live Now":" Live View")+" | Earth Right Now","description":desc,"isPartOf":{"@id":base+"#website"},"mainEntity":{"@id":url+"#place"},"about":{"@id":url+"#place"},"breadcrumb":{"@id":url+"#breadcrumb"},...(lastmod?{"dateModified":lastmod}: {})},
       placeData,
       {"@type":"BreadcrumbList","@id":url+"#breadcrumb","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Earth Right Now","item":base},
@@ -94,7 +108,8 @@ for(const [id,items] of map){
       const overlap=(rep.categories||[]).filter(x=>preferredCategories.has(x)).length;
       const sameCountry=Boolean(preferred.country&&rep.country===preferred.country);
       const sameRegion=Boolean(preferred.region&&rep.region===preferred.region);
-      const score=(sameCountry?5:0)+(sameRegion?2:0)+overlap*2+(rep.truth==="LIVE_VIDEO"?1:0);
+      const sameCity=Boolean(preferred.city&&rep.city===preferred.city);
+      const score=(sameCountry?5:0)+(sameRegion?3:0)+(sameCity?5:0)+overlap*2+(rep.truth==="LIVE_VIDEO"?1:0);
       return{id:otherId,title:rep.title,country:rep.country||"",score};
     })
     .filter(x=>x.score>0)
@@ -130,25 +145,30 @@ for(const [id,items] of map){
   const localHtml=locals.length?'<h2>Reviewed local places</h2><p class="ern-note">Reviewed local places are shown for visitor usefulness. These entries are not paid placements.</p><ul>'+locals.slice(0,4).map(x=>'<li><a href="'+esc(safe(x.url))+'" rel="noopener noreferrer">'+esc(x.name)+'</a> — '+esc(x.summary||x.type||"Local place")+(x.address?' · '+esc(x.address):'')+'</li>').join("")+'</ul>':"";
   const coordinateText=Number.isFinite(lat)&&Number.isFinite(lon)?((preferred.coordinateBasis?"Map reference":"Coordinates")+": "+lat+", "+lon):null;
   const coordinateNote=preferred.coordinateNote?'<p class="ern-note">'+esc(preferred.coordinateNote)+'</p>':"";
-  const facts=[preferred.timeZone?"Time zone: "+preferred.timeZone:null,coordinateText].filter(Boolean).join(" · ");
+  const facts=[city?"City: "+city:null,state?"State/region: "+state:null,!state&&preferred.region?"Region: "+preferred.region:null,preferred.country?"Country: "+preferred.country:null,aliases.length?"Also known as: "+aliases.join(", "):null,preferred.timeZone?"Time zone: "+preferred.timeZone:null,coordinateText].filter(Boolean).join(" · ");
+  const categoryLinks=(preferred.categories||[]).map(cat=>{
+    const def=discoverDefinitions.find(d=>String(d.title||"").toLowerCase().includes(String(cat).split("&")[0].trim().toLowerCase())||String(d.id||"").includes(String(cat).toLowerCase().replace(/[^a-z0-9]+/g,"-")));
+    return def?'<a href="'+base+'discover/'+def.id+'/">'+esc(def.title)+'</a>':"";
+  }).filter(Boolean);
+  const categoryHtml=categoryLinks.length?'<p class="ern-note">Explore: '+categoryLinks.join(" · ")+'</p>':"";
   const breadcrumb='<nav class="ern-breadcrumb" aria-label="Breadcrumb"><a href="'+base+'">Earth Right Now</a><span>›</span><a href="'+base+'places/">Places</a><span>›</span><span aria-current="page">'+esc(title)+'</span></nav>';
 
   const primaryCta=currentItems.length
     ?'<a class="ern-cta" href="'+base+'#place='+encodeURIComponent(id)+'">See '+esc(title)+' in Earth Right Now →</a>'
     :'<a class="ern-cta" href="'+base+'?q='+encodeURIComponent(title)+'">Explore current ERN windows →</a>';
 
-  const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>See '+esc(title)+' before you go — Earth Right Now</title><meta name="description" content="'+esc(desc)+'"><meta name="robots" content="'+(indexable?"index,follow":"noindex,follow")+'"><meta property="og:site_name" content="Earth Right Now"><meta property="og:title" content="See '+esc(title)+' before you go — Earth Right Now"><meta property="og:description" content="'+esc(desc)+'"><meta property="og:type" content="website"><meta property="og:url" content="'+url+'"><meta property="og:image" content="'+base+'assets/ern-social-card.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Earth Right Now — See before you go."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="See '+esc(title)+' before you go — Earth Right Now"><meta name="twitter:description" content="'+esc(desc)+'"><meta name="twitter:image" content="'+base+'assets/ern-social-card.png"><meta name="twitter:image:alt" content="Earth Right Now — See before you go."><meta name="theme-color" content="#062f2b"><link rel="canonical" href="'+url+'"><script type="application/ld+json">'+JSON.stringify(graph).replace(/</g,"\\u003c")+'</script><style>:root{color-scheme:dark}body{margin:0;background:radial-gradient(circle at 70% 0,#0b4d45,#062f2b 48%,#041f1c);color:#f2f8f6;font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:880px;margin:auto;padding:64px 24px 88px}a{color:#a9d9cd}h1{font-family:Georgia,serif;font-size:clamp(2.4rem,7vw,5rem);font-weight:500;line-height:.98;letter-spacing:-.035em;margin:.25em 0}h2{margin-top:2.4rem;font-size:1.15rem}ul{padding-left:1.2rem}li{margin:.85rem 0;color:#d8e6e2}.ern-kicker{letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;color:#a9c7bf}.ern-breadcrumb{display:flex;gap:.55rem;flex-wrap:wrap;color:#a8beb8;font-size:.9rem}.ern-cta{display:inline-block;margin:1.6rem .5rem 1.6rem 0;padding:.82rem 1.05rem;border:1px solid rgba(255,255,255,.35);background:#fff;color:#123b34;border-radius:999px;text-decoration:none;font-weight:800}.ern-note{color:#a8beb8;font-size:.9rem}</style></head><body><main>'+breadcrumb+'<p class="ern-kicker">Earth Right Now · See before you go.</p><h1>See '+esc(title)+' before you go</h1><p>'+esc(where)+'</p><p>'+esc(facts)+'</p>'+coordinateNote+'<p>'+esc(desc)+'</p>'+viewsHtml+localHtml+planningHtml+relatedHtml+'<p>'+primaryCta+'<a class="ern-cta" href="'+base+'?guide='+encodeURIComponent("Show me "+title)+'">Ask ERN Guide →</a></p><p class="ern-note">ERN distinguishes live video, refreshed live images, provider-hosted external live sources and reference images. Reference images are never presented as live. A source check confirms ERN verification at that time; it is not a promise about weather, visibility or uninterrupted provider availability.</p></main></body></html>';
+  const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(destinationName)+(currentItems.length?' Live Now':' Live View')+' | Earth Right Now</title><meta name="description" content="'+esc(desc)+'"><meta name="robots" content="'+(indexable?"index,follow":"noindex,follow")+'"><meta property="og:site_name" content="Earth Right Now"><meta property="og:title" content="'+esc(destinationName)+(currentItems.length?' Live Now':' Live View')+' | Earth Right Now"><meta property="og:description" content="'+esc(desc)+'"><meta property="og:type" content="website"><meta property="og:url" content="'+url+'"><meta property="og:image" content="'+base+'assets/ern-social-card.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Earth Right Now — See before you go."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="'+esc(destinationName)+(currentItems.length?' Live Now':' Live View')+' | Earth Right Now"><meta name="twitter:description" content="'+esc(desc)+'"><meta name="twitter:image" content="'+base+'assets/ern-social-card.png"><meta name="twitter:image:alt" content="Earth Right Now — See before you go."><meta name="theme-color" content="#062f2b"><link rel="canonical" href="'+url+'"><script type="application/ld+json">'+JSON.stringify(graph).replace(/</g,"\\u003c")+'</script><style>:root{color-scheme:dark}body{margin:0;background:radial-gradient(circle at 70% 0,#0b4d45,#062f2b 48%,#041f1c);color:#f2f8f6;font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:880px;margin:auto;padding:64px 24px 88px}a{color:#a9d9cd}h1{font-family:Georgia,serif;font-size:clamp(2.4rem,7vw,5rem);font-weight:500;line-height:.98;letter-spacing:-.035em;margin:.25em 0}h2{margin-top:2.4rem;font-size:1.15rem}ul{padding-left:1.2rem}li{margin:.85rem 0;color:#d8e6e2}.ern-kicker{letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;color:#a9c7bf}.ern-breadcrumb{display:flex;gap:.55rem;flex-wrap:wrap;color:#a8beb8;font-size:.9rem}.ern-cta{display:inline-block;margin:1.6rem .5rem 1.6rem 0;padding:.82rem 1.05rem;border:1px solid rgba(255,255,255,.35);background:#fff;color:#123b34;border-radius:999px;text-decoration:none;font-weight:800}.ern-note{color:#a8beb8;font-size:.9rem}</style></head><body><main>'+breadcrumb+'<p class="ern-kicker">Earth Right Now · See before you go.</p><h1>'+esc(destinationName)+(currentItems.length?' live now':' live view')+'</h1><p>'+esc(where)+'</p><p>'+esc(facts)+'</p>'+categoryHtml'+coordinateNote+'<p>'+esc(desc)+'</p>'+viewsHtml+localHtml+planningHtml+relatedHtml+'<p>'+primaryCta+'<a class="ern-cta" href="'+base+'?guide='+encodeURIComponent("Show me "+title)+'">Ask ERN Guide →</a></p><p class="ern-note">ERN distinguishes live video, refreshed live images, provider-hosted external live sources and reference images. Reference images are never presented as live. A source check confirms ERN verification at that time; it is not a promise about weather, visibility or uninterrupted provider availability.</p></main></body></html>';
   const dir="places/"+slug(id);
   fs.mkdirSync(dir,{recursive:true});
   fs.writeFileSync(dir+"/index.html",html);
 
   if(indexable)urls.push({loc:url,lastmod});
-  placeRows.push({id,title,country:preferred.country||"",region:preferred.region||"",story:desc,lastmod,current:currentItems.length>0,scheduled:scheduledClosedItems.length>0,indexable,categories:[...(preferred.categories||[])]});
+  placeRows.push({id,title,destinationName,aliases,city,state,country:preferred.country||"",region:preferred.region||"",story:desc,lastmod,current:currentItems.length>0,scheduled:scheduledClosedItems.length>0,indexable,categories:[...(preferred.categories||[])]});
 }
 
 placeRows.sort((a,b)=>Number(b.indexable)-Number(a.indexable)||a.country.localeCompare(b.country)||a.title.localeCompare(b.title));
 const structuredRows=placeRows.filter(p=>p.indexable);
-const directoryItems=placeRows.map(p=>'<li data-search="'+esc([p.title,p.region,p.country,p.story].filter(Boolean).join(" ").toLowerCase())+'"><a href="'+base+'places/'+encodeURIComponent(p.id)+'/"><strong>'+esc(p.title)+'</strong></a><span>'+esc([p.region,p.country].filter(Boolean).join(", "))+'</span><small>'+(p.current?'Current verified view available · ':p.scheduled?'Verified source, outside published live hours · ':'Awaiting ERN recheck or recovery · ')+esc(p.story)+'</small></li>').join("");
+const directoryItems=placeRows.map(p=>'<li data-search="'+esc([p.title,p.destinationName,p.city,p.state,p.region,p.country,...(p.aliases||[]),p.story].filter(Boolean).join(" ").toLowerCase())+'"><a href="'+base+'places/'+encodeURIComponent(p.id)+'/"><strong>'+esc(p.title)+'</strong></a><span>'+esc([p.region,p.country].filter(Boolean).join(", "))+'</span><small>'+(p.current?'Current verified view available · ':p.scheduled?'Verified source, outside published live hours · ':'Awaiting ERN recheck or recovery · ')+esc(p.story)+'</small></li>').join("");
 const directoryData={"@context":"https://schema.org","@graph":[
   {"@type":"CollectionPage","@id":base+"places/","url":base+"places/","name":"Places on Earth Right Now","description":"Browse crawlable destination pages for places with live or current Earth Right Now views.","isPartOf":{"@id":base+"#website"},"mainEntity":{"@id":base+"places/#list"}},
   {"@type":"ItemList","@id":base+"places/#list","name":"Places on Earth Right Now","numberOfItems":structuredRows.length,"itemListElement":structuredRows.map((p,i)=>({"@type":"ListItem","position":i+1,"name":p.title,"url":base+"places/"+encodeURIComponent(p.id)+"/"}))},
