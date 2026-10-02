@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "phase": 6,
+  "label": "Discovery & Growth",
+  "approved": true,
+  "approvalBasis": "Owner explicitly instructed ERN to continue into the next phase when current phases are finished or waiting on external information.",
+  "approvedAt": "2026-10-02",
+  "scope": {
+    "deterministicDiscovery": true,
+    "destinationPathways": true,
+    "crawlableGrowth": true,
+    "onSiteConversionSurfaces": true,
+    "reliabilityAndPerformance": true
+  },
+  "constraints": {
+    "pilot2ActivationApproved": false,
+    "submissionPublicActivationApproved": false,
+    "nowMomentMediaActivationApproved": false,
+    "generativeGuidePublicActivationApproved": false,
+    "analyticsActivationApproved": false,
+    "socialChannelActivationApproved": false,
+    "otherSeparateFeatureGatesApproved": false
+  },
+  "automaticExpansionAllowed": false,
+  "next": "BUILD_PHASE6_NON_GATED_DISCOVERY_GROWTH"
+}
