@@ -10,6 +10,8 @@ const releaseTests=[
   "manual-context-record.smoke.js",
   "recency-provider-debt.smoke.js",
   "catalog-metadata-audit.smoke.js",
+  "search-alias-metadata.smoke.js",
+  "search-reference-discovery.smoke.js",
   "research-review-queue.smoke.js",
   "embed-research-preflight.smoke.js",
   "provider-family-research.smoke.js",
