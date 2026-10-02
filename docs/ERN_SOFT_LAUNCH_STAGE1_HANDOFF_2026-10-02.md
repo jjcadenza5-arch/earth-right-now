@@ -280,8 +280,9 @@ Repair:
 - healthy but stale/unverified mapped sources remain only as visually distinct **reference-only handoffs** when a safe official/provider source URL exists;
 - stale sources with no usable safe handoff are excluded from live-first Atlas discovery;
 - degraded/offline entries are not promoted as ordinary live Atlas results;
-- opening a reference-only handoff now shows a prominent main-area message: **“Live view temporarily unavailable”**;
-- when a safe provider URL exists, the main area offers **“Open official source”**;
+- current external live/provider-hosted sources use positive visitor copy: **“Live stream available at the source”** with a prominent **“Open live source”** action;
+- healthy reference-only sources awaiting ERN recheck remain clearly labeled **“Source recheck due”** and can offer **“Open source”** when a safe provider URL exists;
+- **do not** describe a working provider-hosted live source as “temporarily unavailable” merely because it is not embedded inside ERN;
 - reference-only opens remain non-stateful: they do not create stale deep links or record the place as a current-view interaction;
 - commercial actions remain unavailable from non-current source states.
 
