@@ -57,6 +57,7 @@ const releaseTests=[
   "phase7-exit-review.smoke.js",
   "editorial-collections.smoke.js",
   "editorial-collections-home.smoke.js",
+  "editorial-collections-l10n.smoke.js",
   "phase8-operating-status.smoke.js",
   "phase8-current-collection-policy.smoke.js",
   "phase8-exit-review.smoke.js",
