@@ -23,6 +23,9 @@ on:
       - "package.json"
       - "data/phase10-*.json"
       - "data/soft-launch-stage1-*.json"
+      - "data/analytics-deployment.json"
+      - "data/soft-launch-analytics-approval.json"
+      - "analytics-worker/**"
   workflow_dispatch:
   schedule:
     - cron: "17 0 * * *"
@@ -59,6 +62,7 @@ jobs:
           mkdir -p ern-ops ern-history
           npm --silent run domain:health | tee ern-ops/domain-health.json
           npm --silent run soft-launch:status -- ern-ops/domain-health.json | tee ern-ops/soft-launch-stage1-status.json
+          npm --silent run analytics:health | tee ern-ops/analytics-health.json
           npm --silent run sources:horizon | tee ern-ops/verification-horizon.json
           npm --silent run sources:availability | tee ern-ops/source-availability.json
           if [ -f ern-history/availability-previous.json ]; then
@@ -108,6 +112,14 @@ jobs:
           npm --silent run participation:media-status | tee ern-ops/now-moment-media-status.json
           npm --silent run operations:trend-snapshot -- ern-ops/source-availability.json | tee ern-ops/trend-current.json
           npm --silent run operations:status | tee ern-ops/operations-status.json
+      - name: Fetch private analytics evidence
+        env:
+          ERN_ANALYTICS_REVIEW_TOKEN: ${{ secrets.ERN_SIGNAL_REVIEW_TOKEN }}
+        run: |
+          set -euo pipefail
+          npm --silent run analytics:summary -- 30 > ern-ops/analytics-private.json
+          npm --silent run analytics:redact -- ern-ops/analytics-private.json | tee ern-ops/analytics-summary.json
+          npm --silent run analytics:owner-report -- ern-ops/analytics-private.json ern-ops/analytics-owner-report.md
       - name: Compare operations trend
         if: always()
         run: |
