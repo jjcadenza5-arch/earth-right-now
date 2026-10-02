@@ -1,5 +1,5 @@
 import fs from "node:fs";
-// Phase 9 status is read-only and must not activate gated capabilities.
+// Phase 9 status is read-only and must not activate gated capabilities.\n// Once complete, Phase 9 remains valid at canonical phase 9 or any later explicitly approved phase.
 import {execFileSync} from "node:child_process";
 const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
 const run=p=>JSON.parse(execFileSync(process.execPath,[p],{encoding:"utf8"}));
