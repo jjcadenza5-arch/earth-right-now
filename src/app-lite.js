@@ -255,7 +255,7 @@ function card(s,compact=false,index=-1){
 function renderModeChips(){document.querySelectorAll(".mode-chip").forEach(b=>b.classList.toggle("active",b.dataset.mode===state.mode))}
 function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map((s,i)=>card(s,false,i)));$("#watchCount").textContent=state.watch.length;$("#watchEmpty").hidden=state.watch.length>0;renderModeChips();state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(heroPool()[0]||state.watch[0])}
 function placeCard(group){
- const best=[...group].sort((a,b)=>baseScore(b)-baseScore(a))[0];
+ const best=[...group].sort((a,b)=>(guideEligible(b)?1:0)-(guideEligible(a)?1:0)||baseScore(b)-baseScore(a))[0];
  const b=card(best,true);b.classList.add("place-card");
  const count=group.length;
  if(count>1){
@@ -429,7 +429,7 @@ function search(q,options={updateUrl:false}){
  const intentNoise=new Set(["and","&","beach","beaches","water","sea","ocean","coast","coastal","surf","harbour","harbor","mountain","mountains","snow","ski","volcano","alps","alpine","wildlife","animal","animals","zoo","aquarium","birds","bird","city","cities","street","urban","skyline","square","night","nighttime","lights","after","dark","calm","peaceful","quiet","relax","relaxing","nature","beautiful","scenic","amazing","view","views","happening","busy","active","people","live","current","now","show","me","find","see","watch","look","at","in","on","the","a","an","of","for","please","i","want","to","go","going","visit","before","what","is","like","there","can","you","right","somewhere"]);
  const semanticTokens=tokens.filter(t=>!intentNoise.has(t));
  const catalogMatches=!x?state.sources:state.sources.filter(s=>{const hay=normalizeSearch([s.title,s.placeId,s.city,s.state,s.region,s.country,s.provider,s.story,...(s.categories||[]),...(s.tags||[]),...(s.aliases||[])].filter(Boolean).join(" "));if(activeIntents.length&&!activeIntents.every(g=>g.match(s)))return false;if(localIntent&&localPlaceSignals(s).worth)return semanticTokens.filter(t=>!["local","small","place","places"].includes(t)).every(token=>hay.includes(token));return semanticTokens.length?semanticTokens.every(token=>hay.includes(token)):activeIntents.length>0});
- const currentMatches=catalogMatches.filter(guideEligible),matches=currentMatches.length?currentMatches:catalogMatches.filter(s=>s.health==="HEALTHY"&&!!safeExternalUrl(s.sourceUrl||s.officialUrl));
+ const currentMatches=catalogMatches.filter(guideEligible),matches=catalogMatches.filter(s=>guideEligible(s)||(s.health==="HEALTHY"&&!!safeExternalUrl(s.sourceUrl||s.officialUrl)));
  const groups=groupByPlace(matches).sort((a,b)=>{const al=localIntent?Math.max(...a.map(s=>localPlaceSignals(s).score))*20:0,bl=localIntent?Math.max(...b.map(s=>localPlaceSignals(s).score))*20:0;return(bl+Math.max(...b.map(baseScore)))-(al+Math.max(...a.map(baseScore)))}).slice(0,x?24:12);
  const localMatches=x?localDirectoryMatch(raw).slice(0,12):[];
  $("#searchResults").replaceChildren(...localMatches.map(localDirectoryCard),...groups.map(placeCard));
