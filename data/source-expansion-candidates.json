@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-02T17:00:00Z",
+  "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
+  "publicActivationAllowed": false,
+  "rules": {
+    "sourceSpecificVerificationRequired": true,
+    "humanPlaybackCheckRequired": true,
+    "doNotPromoteResearchAsLive": true,
+    "officialOrProviderPublishedPagesPreferred": true,
+    "duplicatePlaceInflationForbidden": true
+  },
+  "candidates": [
+    {
+      "id": "vienna-city-hall-panorama",
+      "title": "Vienna — City Hall & Ringstrasse",
+      "country": "Austria",
+      "region": "Vienna",
+      "provider": "Vienna Tourist Board",
+      "sourcePage": "https://www.wien.info/en/see-do/discover-vienna/webcam-379930",
+      "evidence": "Official Vienna tourism page describes a live webcam covering University of Vienna, City Hall, Parliament, Volksgarten and museums.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "prague-petrin-tower",
+      "title": "Prague — Petřín Lookout Tower",
+      "country": "Czech Republic",
+      "region": "Prague",
+      "provider": "Prague City Tourism",
+      "sourcePage": "https://prague.eu/cs/prazske-veze/",
+      "evidence": "Official Prague City Tourism page states its cameras look around Prague live and lists Petřín Lookout Tower.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "prague-old-town-hall",
+      "title": "Prague — Old Town Hall",
+      "country": "Czech Republic",
+      "region": "Prague",
+      "provider": "Prague City Tourism",
+      "sourcePage": "https://prague.eu/cs/prazske-veze/",
+      "evidence": "Official Prague City Tourism page lists a live-looking camera for Old Town Hall.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "prague-old-town-bridge-tower",
+      "title": "Prague — Old Town Bridge Tower",
+      "country": "Czech Republic",
+      "region": "Prague",
+      "provider": "Prague City Tourism",
+      "sourcePage": "https://prague.eu/cs/prazske-veze/",
+      "evidence": "Official Prague City Tourism page lists a live-looking camera for Old Town Bridge Tower.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "prague-powder-tower",
+      "title": "Prague — Powder Tower",
+      "country": "Czech Republic",
+      "region": "Prague",
+      "provider": "Prague City Tourism",
+      "sourcePage": "https://prague.eu/cs/prazske-veze/",
+      "evidence": "Official Prague City Tourism page lists a live-looking camera for Powder Tower.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "prague-st-nicholas-bell-tower",
+      "title": "Prague — St. Nicholas Bell Tower",
+      "country": "Czech Republic",
+      "region": "Prague",
+      "provider": "Prague City Tourism",
+      "sourcePage": "https://prague.eu/cs/prazske-veze/",
+      "evidence": "Official Prague City Tourism page lists a live-looking camera for St. Nicholas Bell Tower.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "prague-lesser-town-bridge-tower",
+      "title": "Prague — Lesser Town Bridge Tower",
+      "country": "Czech Republic",
+      "region": "Prague",
+      "provider": "Prague City Tourism",
+      "sourcePage": "https://prague.eu/cs/prazske-veze/",
+      "evidence": "Official Prague City Tourism page lists a live-looking camera for Lesser Town Bridge Tower.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "helsinki-market-square",
+      "title": "Helsinki — Market Square & South Harbour",
+      "country": "Finland",
+      "region": "Helsinki",
+      "provider": "Visit Finland / EK",
+      "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
+      "evidence": "Visit Finland explicitly describes this as a real-time webcam overlooking Market Square and South Harbour.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "koli-lake-pielinen",
+      "title": "Koli — Lake Pielinen",
+      "country": "Finland",
+      "region": "North Karelia",
+      "provider": "Visit Finland / Koli Ski",
+      "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
+      "evidence": "Visit Finland describes a live webcam over Lake Pielinen from Koli.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "levi-ski-resort",
+      "title": "Levi Ski Resort",
+      "country": "Finland",
+      "region": "Lapland",
+      "provider": "Visit Finland / Levi Ski Resort",
+      "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
+      "evidence": "Visit Finland describes a live view of the slopes, lifts and fells.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "turku-port-archipelago",
+      "title": "Turku — Port & Archipelago",
+      "country": "Finland",
+      "region": "Turku",
+      "provider": "Visit Finland / Port of Turku",
+      "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
+      "evidence": "Visit Finland describes a live stream from Turku port toward the archipelago.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "kilpisjarvi-saana",
+      "title": "Kilpisjärvi — Saana Fell",
+      "country": "Finland",
+      "region": "Lapland",
+      "provider": "Visit Finland / Starlapland",
+      "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
+      "evidence": "Visit Finland describes a webcam from Kilpisjärvi with Saana Fell and Arctic sky.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "crans-montana-la-nationale",
+      "title": "Crans-Montana — La Nationale",
+      "country": "Switzerland",
+      "region": "Valais",
+      "provider": "Switzerland Tourism",
+      "sourcePage": "https://www.myswitzerland.com/en-us/destinations/panoramas/la-nationale/",
+      "evidence": "Switzerland Tourism publishes an HD Live panorama page for Crans-Montana.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "schynige-platte",
+      "title": "Schynige Platte — Wilderswil",
+      "country": "Switzerland",
+      "region": "Bern Region",
+      "provider": "Switzerland Tourism",
+      "sourcePage": "https://www.myswitzerland.com/en-ch/destinations/panoramas/schynige-platte/",
+      "evidence": "Switzerland Tourism publishes an HD Live panorama page for Schynige Platte.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "randa-valais",
+      "title": "Randa — Valais",
+      "country": "Switzerland",
+      "region": "Valais",
+      "provider": "Switzerland Tourism",
+      "sourcePage": "https://www.myswitzerland.com/en-us/destinations/panoramas/randa/",
+      "evidence": "Switzerland Tourism publishes an HD Live panorama page for Randa.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "celerina-engadin",
+      "title": "Celerina — Engadin",
+      "country": "Switzerland",
+      "region": "Graubünden",
+      "provider": "Switzerland Tourism",
+      "sourcePage": "https://www.myswitzerland.com/en-us/destinations/panoramas/celerina",
+      "evidence": "Switzerland Tourism publishes an HD Live panorama page for Celerina.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "murren-edelweiss",
+      "title": "Mürren — Bernese Alps",
+      "country": "Switzerland",
+      "region": "Bern Region",
+      "provider": "Switzerland Tourism",
+      "sourcePage": "https://www.myswitzerland.com/en-ch/destinations/panoramas/edelweiss/",
+      "evidence": "Switzerland Tourism publishes an HD Live panorama page for Mürren.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "montreux-rochers-de-naye",
+      "title": "Montreux — Rochers-de-Naye",
+      "country": "Switzerland",
+      "region": "Vaud",
+      "provider": "Switzerland Tourism",
+      "sourcePage": "https://www.myswitzerland.com/en-us/destinations/panoramas/rochers-de-naye/",
+      "evidence": "Switzerland Tourism publishes a webcam panorama page for Rochers-de-Naye above Montreux.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "engelberg-fuerenalp",
+      "title": "Engelberg — Fürenalp",
+      "country": "Switzerland",
+      "region": "Lucerne – Lake Lucerne",
+      "provider": "Switzerland Tourism",
+      "sourcePage": "https://www.myswitzerland.com/en-us/destinations/panoramas/fuerenalp/",
+      "evidence": "Switzerland Tourism publishes an HD Live panorama page for Fürenalp.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "wengen-bellevue",
+      "title": "Wengen — Bellevue",
+      "country": "Switzerland",
+      "region": "Bern Region",
+      "provider": "Switzerland Tourism",
+      "sourcePage": "https://www.myswitzerland.com/en-us/destinations/panoramas/bellevue/",
+      "evidence": "Switzerland Tourism publishes an HD Live panorama page for Wengen.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "seoul-gwanghwamun-plaza",
+      "title": "Seoul — Gwanghwamun Plaza",
+      "country": "South Korea",
+      "region": "Seoul",
+      "provider": "Seoul Metropolitan Government",
+      "sourcePage": "https://tv.seoul.go.kr/onair/seoul24.do",
+      "evidence": "Official Live Seoul page lists Gwanghwamun Plaza under 24-hour live coverage.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "seoul-cheonggye-plaza",
+      "title": "Seoul — Cheonggyecheon Plaza",
+      "country": "South Korea",
+      "region": "Seoul",
+      "provider": "Seoul Metropolitan Government",
+      "sourcePage": "https://tv.seoul.go.kr/onair/seoul24.do",
+      "evidence": "Official Live Seoul page lists Cheonggyecheon under 24-hour live coverage.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    }
+  ]
+}
