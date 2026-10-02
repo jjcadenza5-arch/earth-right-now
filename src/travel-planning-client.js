@@ -6,16 +6,24 @@ function current(o,now=Date.now()){
  const expires=Date.parse(o.expiresAt||"");if(o.expiresAt&&(!Number.isFinite(expires)||expires<=now))return false;
  return (now-t)/86400000<=90;
 }
-function offerFor(offers,s,intent,now=Date.now()){
- const placeId=s?.placeId||s?.id;if(!placeId)return null;
- return (offers||[]).filter(o=>o&&o.placeId===placeId&&o.intent===intent&&current(o,now)).sort((a,b)=>Date.parse(b.verifiedAt)-Date.parse(a.verifiedAt)||String(a.id).localeCompare(String(b.id)))[0]||null;
+function partnerCurrent(p,now=Date.now()){
+ if(!p||p.enabled!==true||p.affiliate!==true||!p.id)return false;
+ const verified=Date.parse(p.verifiedAt||"");if(!Number.isFinite(verified)||verified>now+300000)return false;
+ const expires=Date.parse(p.expiresAt||"");if(p.expiresAt&&(!Number.isFinite(expires)||expires<=now))return false;
+ return true;
+}
+function sourceEligible(s){return Boolean(s)&&s.health==="HEALTHY"&&["LIVE_VIDEO","LIVE_IMAGE","EXTERNAL_LIVE"].includes(s.truth)}
+function offerFor(offers,s,intent,partners=[],now=Date.now()){
+ const placeId=s?.placeId||s?.id;if(!placeId||!sourceEligible(s))return null;
+ const partnerById=new Map((partners||[]).filter(p=>partnerCurrent(p,now)).map(p=>[String(p.id),p]));
+ return (offers||[]).filter(o=>o&&o.placeId===placeId&&o.intent===intent&&current(o,now)&&partnerById.has(String(o.partnerId||""))).sort((a,b)=>Date.parse(b.verifiedAt)-Date.parse(a.verifiedAt)||String(a.id).localeCompare(String(b.id)))[0]||null;
 }
 const disclosure=o=>o?.sponsored?"Sponsored":o?.affiliate?"Affiliate link":"External travel link";
-function guideOffers(offers,s,now=Date.now()){
- const seen=new Set();return["activities","culture","transport","stay","eat"].map(i=>offerFor(offers,s,i,now)).filter(o=>o&&!seen.has(o.id)&&(seen.add(o.id),true)).slice(0,3);
+function guideOffers(offers,s,partners=[],now=Date.now()){
+ const seen=new Set();return["activities","culture","transport","stay","eat"].map(i=>offerFor(offers,s,i,partners,now)).filter(o=>o&&!seen.has(o.id)&&(seen.add(o.id),true)).slice(0,3);
 }
 function guideLink(o){
  const a=document.createElement("a");a.className="guide-result guide-result-link";a.href=safe(o.url);a.target="_blank";a.rel=o.affiliate||o.sponsored?"noopener noreferrer sponsored":"noopener noreferrer";a.textContent=o.title+" · "+o.provider+" · "+disclosure(o)+" →";return a
 }
-globalThis.ERNTravelPlanning=Object.freeze({current,offerFor,disclosure,guideOffers,guideLink});
+globalThis.ERNTravelPlanning=Object.freeze({current,partnerCurrent,sourceEligible,offerFor,disclosure,guideOffers,guideLink});
 })();
