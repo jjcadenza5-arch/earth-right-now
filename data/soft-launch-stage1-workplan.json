@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "stage": "SOFT_LAUNCH_OPERATING_STAGE_1",
+  "state": "ACTIVE",
+  "mode": "OPERATE_NOT_EXPAND",
+  "lanes": [
+    {"id":"production-operation","label":"Keep current public ERN stable and production-healthy","status":"ACTIVE"},
+    {"id":"source-operation","label":"Maintain live-source truth, health and fallback integrity","status":"ACTIVE"},
+    {"id":"commercial-operation","label":"Maintain verified post-discovery commercial actions and evidence","status":"ACTIVE"},
+    {"id":"operating-evidence","label":"Record confirmed operating/business evidence without inference","status":"ACTIVE"},
+    {"id":"future-differentiator-hold","label":"Preserve Guide, Now Moments, serendipity and Local Earth readiness without activation","status":"HOLD_GATED"}
+  ],
+  "antiExpansionRules": [
+    "No broad feature construction",
+    "No redesign of working surfaces without a production reason",
+    "No source-count expansion for its own sake",
+    "No affiliate breadth expansion for its own sake",
+    "No promotion campaign",
+    "No gated-feature activation"
+  ],
+  "next": "OPERATE_AND_REVIEW_ONLY_MATERIAL_EVIDENCE"
+}
