@@ -4,8 +4,8 @@ const r=spawnSync(process.execPath,["scripts/autonomous-work-status.mjs"],{encod
 assert.equal(r.status,0,r.stderr);
 const x=JSON.parse(r.stdout);
 assert.equal(x.coreComplete,true);
-assert.ok(["CORE_COMPLETE_EXTERNAL_OPTIONAL","CORE_COMPLETE_PHASE_4_PILOT_ACTIVE","CORE_COMPLETE_PHASE_5_ACTIVE"].includes(x.completionState));
-assert.ok(["LOCAL_AUTONOMOUS_WORK_OPEN","EXTERNAL_REVIEW_ELIGIBLE","AUTONOMOUS_HOLD_EXTERNAL_WAIT"].includes(x.state));
+assert.ok(["CORE_COMPLETE_EXTERNAL_OPTIONAL","CORE_COMPLETE_PHASE_4_PILOT_ACTIVE","CORE_COMPLETE_PHASE_5_ACTIVE","CORE_COMPLETE_PHASE_6_ACTIVE"].includes(x.completionState));
+assert.ok(["LOCAL_AUTONOMOUS_WORK_OPEN","PHASE6_AUTONOMOUS_WORK_OPEN","EXTERNAL_REVIEW_ELIGIBLE","AUTONOMOUS_HOLD_EXTERNAL_WAIT"].includes(x.state));
 assert.ok(Array.isArray(x.localBlockers));
 assert.ok(Array.isArray(x.externalEligibleNow));
 assert.ok(Array.isArray(x.persistentStaleDebt));
