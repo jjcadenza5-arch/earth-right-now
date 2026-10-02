@@ -22,6 +22,7 @@ on:
       - "scripts/**"
       - "package.json"
       - "data/phase10-*.json"
+      - "data/soft-launch-stage1-*.json"
   workflow_dispatch:
   schedule:
     - cron: "17 0 * * *"
