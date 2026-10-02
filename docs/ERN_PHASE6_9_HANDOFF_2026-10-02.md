@@ -2,14 +2,14 @@
 Updated: 2026-10-02
 
 ## Instruction for the next ChatGPT chat
-Continue Earth Right Now (ERN) from this file and the repository's current main branch. Do not repeat completed Phase 5, 6, 7 or 8 work. Continue autonomously in large batches until a genuine human/external-account/product decision is required.
+Continue Earth Right Now (ERN) from this file and the repository's current main branch. Do not repeat completed Phase 5, 6, 7, 8 or 9 work. Phase 9 is complete. Do not invent or enter a Phase 10 without an explicit owner/product decision defining the next phase. Continue safe operations/maintenance only when a concrete operational issue requires it; separately gated capabilities remain off unless explicitly approved.
 
 ## Canonical phase state
 - Phase 5 — Broader Public Operations & Monetization: operating foundation complete enough to advance; separate feature gates remain independently controlled.
 - Phase 6 — Discovery & Growth: COMPLETE.
 - Phase 7 — Launch & Distribution Readiness: COMPLETE.
 - Phase 8 — Editorial Collections & Evergreen Growth: COMPLETE.
-- Phase 9 — International Reach & Localized Discovery: ACTIVE.
+- Phase 9 — International Reach & Localized Discovery: COMPLETE.
 
 Canonical phase status is data-driven through `scripts/project-phase-status.mjs`; latest approved phase wins.
 
@@ -46,20 +46,25 @@ All workplan lanes are COMPLETE:
 
 Editorial collections remain deterministic and downstream from ERN source/playback truth. They do not create or upgrade live truth.
 
-## Phase 9 active workplan
-Label: International Reach & Localized Discovery.
-
-ACTIVE:
+## Phase 9 completion
+All workplan lanes are COMPLETE:
 - phase-registry-hardening
 - localized-collection-registry
-
-PLANNED:
 - crawlable-localized-discovery
 - hreflang-canonical-sitemap
 - localized-discovery-navigation
 - phase9-exit-review
 
-Continue Phase 9 in this order unless a concrete dependency makes another non-gated lane more efficient.
+Major results:
+- canonical localized-discovery registry for English, Thai, German, French, Japanese, Chinese and Spanish;
+- crawlable localized Discover roots and collection pages generated from the same fail-closed editorial/source truth used by ERN;
+- per-locale canonical URLs plus reciprocal hreflang coverage and English x-default;
+- localized Discover URLs included in the generated sitemap and release artifact;
+- language handoff/navigation available on English and localized Discover pages;
+- Phase 9 registry/output/exit-review checks included in the current release smoke suite;
+- all localization remains editorial/discovery-only and cannot change source truth, playback eligibility, collection membership or paid ranking.
+
+The final Phase 9 Pages/release validation passed end-to-end before completion was recorded.
 
 ## Current transition hardening
 The project advanced to Phase 9 faster than some Phase 8-era assertions/Operations wiring. On 2026-10-02 the following were corrected:
@@ -72,7 +77,7 @@ The project advanced to Phase 9 faster than some Phase 8-era assertions/Operatio
 - Phase 9 operating smoke test added;
 - Operations wiring and packet fixtures updated.
 
-Before further Phase 9 feature work, confirm the newest full Pages/release run is green. If not, fix the exact remaining release assertion rather than rolling back Phase 9.
+Transition hardening is complete. The final Phase 9 release validation passed after the remaining stale Phase 8 transition assertions and the Phase 9 release-suite newline defect were corrected narrowly. Do not roll back Phase 9 or reopen completed Phase 5–8 work.
 
 ## Existing operating/truth state to preserve
 - Inside-ERN target had been restored to 5/5 through human playback review.
@@ -93,12 +98,12 @@ Before further Phase 9 feature work, confirm the newest full Pages/release run i
 Commercial attribution and inventory require the offer's own active verified affiliate partner plus an eligible current ERN source/place. Commercial availability never changes Earth-window ranking.
 
 ## Operations anti-loop rule
-Maintenance checks support the active phase but must not replace active phase work. Do not fall back into repeated playback/source-maintenance cycles while Phase 9 has open non-gated lanes, unless a real operational failure makes maintenance necessary.
+Phases 6–9 are complete. Do not manufacture work by repeating playback/source-maintenance cycles or reopening completed phase lanes. Perform maintenance when a concrete operational failure, verification horizon or real source issue requires it. A new product phase requires an explicit owner/product decision.
 
 ## New-chat starting instruction
 1. Read this handoff and current main.
-2. Check the newest GitHub Actions results.
-3. If release is red, repair only the exact Phase 9 transition/release issue.
-4. Then continue Phase 9 non-gated work in large batches.
-5. Preserve all separate feature gates OFF unless explicitly approved.
-6. Ask the owner only when genuinely required.
+2. Confirm the newest GitHub Actions results and the completed Phase 9 workplan.
+3. If a current release/operations check is red, repair only the exact issue without reopening completed phase work.
+4. Preserve all separate feature gates OFF unless explicitly approved.
+5. Do not define or enter Phase 10 automatically.
+6. The next genuine owner decision is what ERN should prioritize after Phase 9, unless a concrete operational incident requires maintenance first.
