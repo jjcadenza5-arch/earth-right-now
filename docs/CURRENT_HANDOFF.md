@@ -13,8 +13,9 @@ Current operating state:
 
 Preserve completed Phases 6–10, current GitHub `main`, deployed production work, affiliate/SEO/analytics work, and all existing feature gates.
 
-Owner-only commercial action currently outstanding:
-- Configure a Travelpayouts payout method before first payout. This does not block tracked links, click attribution, or current ERN operation.
+Commercial payout state:
+- Travelpayouts payout method was configured and email-confirmed by the owner on 2026-10-02.
+- Viator payout details remain to be separately verified because Viator is a direct partner relationship.
 
 Next commercial work should be demand-led from real analytics rather than offer-count expansion. Accommodation/stay remains the largest partner-category gap, but no new account or terms should be accepted without explicit owner approval.
 
