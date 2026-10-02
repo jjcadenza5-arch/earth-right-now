@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T15:55:00Z",
+  "generatedAt": "2026-10-02T15:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -111,8 +111,10 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN has a current Bangkok street window and Klook has deep Bangkok activity inventory; a destination-level planning action is a natural post-discovery step.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate and human-verify one Bangkok destination-level Klook link in the existing Travelpayouts Earthrightnow project."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate Bangkok commercial clicks and keep affiliate placement downstream from Earth discovery.",
+      "trackingUrl": "https://klook.tpo.mx/R04u4nLi",
+      "verifiedAt": "2026-10-02T15:50:00Z"
     },
     {
       "id": "klook-singapore",
