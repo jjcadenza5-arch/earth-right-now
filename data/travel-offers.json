@@ -439,5 +439,22 @@
     "verifiedAt": "2026-10-02T16:20:00Z",
     "expiresAt": "2026-12-31T00:00:00Z",
     "evidence": "Owner opened the ERN Viator Cape Town partner link on 2026-10-02 and confirmed it resolves to the Cape Town tours/activities destination page while retaining ERN partner tracking parameters. Applied to ERN place: Cape Town — Table Mountain & Waterfront."
+  },
+  {
+    "id": "welcome-pickups-bangkok-transfer",
+    "title": "Bangkok airport & city transfer",
+    "placeId": "bangkok-sukhumvit-road",
+    "provider": "Welcome Pickups",
+    "intent": "transport",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "welcome-pickups",
+    "destinationScope": "Bangkok",
+    "url": "https://tpo.mx/IT0dZFMS",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-02T16:25:00Z",
+    "expiresAt": "2026-12-31T00:00:00Z",
+    "evidence": "Owner generated and opened the Travelpayouts/Welcome Pickups Bangkok link on 2026-10-02. Screenshot confirmed the Bangkok transfer booking page loaded correctly with Travelpayouts tracking parameters retained."
   }
 ]
