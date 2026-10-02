@@ -43,6 +43,12 @@ on:
       - "scripts/public-brand-facts-status.mjs"
       - "scripts/distribution-readiness.mjs"
       - "scripts/seo-indexing-audit.mjs"
+      - "scripts/ai-search-readiness.mjs"
+      - "llms.txt"
+      - "how-ern-works.html"
+      - "source-policy.html"
+      - "editorial-principles.html"
+      - "faq.html"
       - "scripts/external-gate-register.mjs"
       - "scripts/project-phase-status.mjs"
       - "scripts/autonomous-work-status.mjs"
@@ -251,6 +257,8 @@ jobs:
         run: npm --silent run release:public-module-integrity -- dist
       - name: SEO indexing readiness
         run: npm --silent run seo:indexing-audit -- dist
+      - name: AI search discovery readiness
+        run: npm --silent run ai-search:readiness -- dist
       - name: Public brand identity integrity
         run: node scripts/public-brand-facts-status.mjs
       - name: Organic distribution readiness
