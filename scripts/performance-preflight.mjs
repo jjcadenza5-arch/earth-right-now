@@ -1,7 +1,7 @@
 import fs from "node:fs";
-const files=["index.html","src/app-lite.js","src/home-i18n.js","src/guide-public-copy.js","src/fullscreen-continuity.js","src/travel-planning-client.js","src/guide-ai-client.js","src/guide-ai-routing.js","src/guide-ai-capabilities.js","src/guide-ai-activation.js","src/commercial-attribution-runtime.js","src/styles-lite.css","data/sources.json","data/local-directory.json"];
+const files=["index.html","src/app-lite.js","src/home-i18n.js","src/guide-public-copy.js","src/fullscreen-continuity.js","src/travel-planning-client.js","src/guide-ai-client.js","src/guide-ai-routing.js","src/guide-ai-capabilities.js","src/guide-ai-activation.js","src/commercial-attribution-runtime.js","src/analytics-runtime.js","src/analytics-config.js","src/telemetry-policy.js","src/styles-lite.css","data/sources.json","data/local-directory.json"];
 const bytes=Object.fromEntries(files.map(p=>[p,fs.statSync(p).size]));
-const startupJs=["src/app-lite.js","src/home-i18n.js","src/guide-public-copy.js","src/fullscreen-continuity.js","src/travel-planning-client.js","src/guide-ai-client.js","src/guide-ai-routing.js","src/guide-ai-capabilities.js","src/guide-ai-activation.js","src/commercial-attribution-runtime.js"];
+const startupJs=["src/app-lite.js","src/home-i18n.js","src/guide-public-copy.js","src/fullscreen-continuity.js","src/travel-planning-client.js","src/guide-ai-client.js","src/guide-ai-routing.js","src/guide-ai-capabilities.js","src/guide-ai-activation.js","src/commercial-attribution-runtime.js","src/analytics-runtime.js","src/analytics-config.js","src/telemetry-policy.js"];
 const startupJsBytes=startupJs.reduce((n,p)=>n+bytes[p],0);
 const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)};
 const app=fs.readFileSync("src/app-lite.js","utf8"),index=fs.readFileSync("index.html","utf8");
