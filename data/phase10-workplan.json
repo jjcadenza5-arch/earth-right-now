@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "phase": 10,
+  "label": "ERN Launch & Business Readiness",
+  "state": "ACTIVE",
+  "lanes": [
+    {"id":"production-hardening","label":"Production hardening & complete visitor journey","status":"ACTIVE","gated":false},
+    {"id":"live-source-integrity","label":"Live-source integrity & fallback correctness","status":"PLANNED","gated":false},
+    {"id":"live-discovery-engine","label":"Search → See Live → Discover → Decide → Go foundation","status":"PLANNED","gated":false},
+    {"id":"business-readiness-architecture","label":"Simple future monetization & useful post-discovery actions","status":"PLANNED","gated":false},
+    {"id":"future-differentiator-readiness","label":"Prepare Guide, Now Moments and serendipity architecture without activation","status":"PLANNED","gated":false},
+    {"id":"phase10-launch-review","label":"Launch & business-readiness review","status":"PLANNED","gated":false}
+  ],
+  "constraints": {
+    "pilot2": false,
+    "submissionPublic": false,
+    "nowMomentMedia": false,
+    "generativeGuidePublic": false,
+    "analytics": false,
+    "socialAccounts": false,
+    "automaticPosting": false,
+    "payoutAccountChanges": false,
+    "otherSeparateFeatureGates": false,
+    "spendMoney": false,
+    "exposePrivateCredentials": false,
+    "irreversibleBusinessAccountChanges": false
+  },
+  "productIdentity": {
+    "name": "Earth Right Now",
+    "category": "The Live Discovery Engine",
+    "tagline": "See before you go.",
+    "direction": "Live Discovery Search Engine",
+    "journey": ["Search","See Live","Discover","Decide","Go"],
+    "businessGoal": "Successful Small Internet Business"
+  },
+  "next": "CONTINUE_PHASE10_PRODUCTION_HARDENING"
+}
