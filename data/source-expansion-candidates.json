@@ -89,17 +89,6 @@
       "state": "HUMAN_PLAYBACK_REQUIRED"
     },
     {
-      "id": "helsinki-market-square",
-      "title": "Helsinki — Market Square & South Harbour",
-      "country": "Finland",
-      "region": "Helsinki",
-      "provider": "Visit Finland / EK",
-      "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
-      "evidence": "Visit Finland explicitly describes this as a real-time webcam overlooking Market Square and South Harbour.",
-      "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
-    },
-    {
       "id": "koli-lake-pielinen",
       "title": "Koli — Lake Pielinen",
       "country": "Finland",
@@ -253,5 +242,8 @@
       "priority": "P1",
       "state": "HUMAN_PLAYBACK_REQUIRED"
     }
+  ],
+  "notes": [
+    "Helsinki Market Square removed from expansion queue on 2026-10-02 after owner noted ERN already carries that destination; avoid duplicate expansion."
   ]
 }
