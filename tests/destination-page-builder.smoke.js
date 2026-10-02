@@ -37,3 +37,9 @@ assert.match(builder,/categoryMatch\(p,def\)/,"Discovery category membership sho
 assert.match(builder,/structuredRows\.filter\(p=>categoryMatch\(p,def\)\)/,"Discovery category pages must only use indexable current\/schedule-verified places");
 assert.match(builder,/Categories are editorial discovery paths; they never change source truth or paid ranking/,"Discovery index must preserve truth and ranking boundaries");
 assert.match(builder,/\.\.\.discoverRows\.map\(x=>\(\{loc:x\.url,lastmod:x\.lastmod\}\)\)/,"Discovery category pages should be included in the sitemap");
+
+assert.match(builder,/EDITORIAL_COLLECTIONS/,"Phase 8 Discover pages should use the shared editorial collection registry");
+assert.match(builder,/editorialCollectionRows/,"Phase 8 collection membership should come from the shared deterministic engine");
+assert.match(builder,/Share this collection/,"Phase 8 crawlable collection pages should expose channel-neutral sharing");
+assert.match(builder,/navigator\.share/,"Collection sharing should prefer native Web Share");
+assert.match(builder,/navigator\.clipboard/,"Collection sharing should retain a copy-link fallback");
