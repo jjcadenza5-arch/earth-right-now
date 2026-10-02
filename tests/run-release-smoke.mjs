@@ -40,6 +40,8 @@ const releaseTests=[
   "share-links.smoke.js",
   "deep-link-currentness.smoke.js",
   "atlas-recheck-currentness.smoke.js",
+  "reference-handoff-ux.smoke.js",
+  "reference-handoff-audit.smoke.js",
   "viewer-confidence.smoke.js",
   "offline-currentness.smoke.js",
   "participation-public-surfaces.smoke.js",
