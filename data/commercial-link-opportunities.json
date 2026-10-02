@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T16:15:00Z",
+  "generatedAt": "2026-10-02T16:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -174,8 +174,10 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN has a current Cape Town waterfront/Table Mountain view and Viator has extensive Cape Town activities; this is a strong trip-planning bridge.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Use the existing Viator partner link tool to generate and human-verify one Cape Town destination-level tracked link."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate Cape Town commercial clicks; keep Viator planning downstream from Earth discovery.",
+      "trackingUrl": "https://www.viator.com/Cape-Town/d318-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-02T16:20:00Z"
     },
     {
       "id": "welcome-pickups-bangkok",
