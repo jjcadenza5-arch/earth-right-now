@@ -31,6 +31,18 @@ async function sendEnvelope(event){
 if(analyticsReady()&&!DNT()){
   globalThis.ERN_TELEMETRY=event=>{void sendEnvelope(event);return true};
   globalThis.ERN_EVENT=(name,data={})=>{const e=telemetryEnvelope(name,data);if(!e)return false;void sendEnvelope(e);return true};
+  let searchTimer=null,lastSearchSignature="";
+  globalThis.ERN_SEARCH_ANALYTICS=(query,resultCount)=>{
+    clearTimeout(searchTimer);
+    const q=String(query||"").trim();if(!q)return false;
+    searchTimer=setTimeout(()=>{
+      const signature=q.normalize("NFKC").replace(/\s+/g," ").toLocaleLowerCase()+"|"+String(resultCount);
+      if(signature===lastSearchSignature)return;lastSearchSignature=signature;
+      globalThis.ERN_EVENT("earth_search",{query:q,resultCount});
+      if(resultCount===0)globalThis.ERN_EVENT("earth_search_zero",{query:q,resultCount:0});
+    },900);
+    return true;
+  };
   const queued=Array.isArray(globalThis.ERN_EVENT_QUEUE)?globalThis.ERN_EVENT_QUEUE.splice(0):[];for(const [name,data] of queued)globalThis.ERN_EVENT(name,data);
   const sendPage=()=>globalThis.ERN_EVENT?.("page_view",{route:location.pathname||"/"});
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",sendPage,{once:true});else queueMicrotask(sendPage);
