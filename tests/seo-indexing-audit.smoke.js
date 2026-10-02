@@ -1,8 +1,9 @@
 import assert from "node:assert/strict";import fs from "node:fs";
 const s=fs.readFileSync("scripts/seo-indexing-audit.mjs","utf8"),b=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
 for(const x of ["SITEMAP_DUPLICATE_URLS","CANONICAL_ROUTE_MISSING","DUPLICATE_CANONICAL","INDEXABLE_DESTINATION_NOT_IN_SITEMAP","NOINDEX_DESTINATION_IN_SITEMAP","DESTINATION_TITLE_PATTERN_WEAK","INVALID_JSONLD"])assert.ok(s.includes(x),x+" SEO guard missing");
-assert.ok(b.includes(" Live Now")+"", "destination title logic missing");
+assert.ok(b.includes(" Live Now"),"destination title logic missing");
 assert.ok(b.includes('"alternateName"'),"destination aliases must reach structured data");
+assert.ok(b.includes('"citation"'),"provider citations must reach structured data");
 assert.ok(b.includes('"addressLocality"'),"city metadata must reach structured data when present");
 assert.ok(b.includes('"addressRegion"'),"region metadata must reach structured data");
 assert.ok(b.includes("ERN source status"),"truthful source status must reach structured data");
