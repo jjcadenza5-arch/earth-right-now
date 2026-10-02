@@ -1,0 +1,93 @@
+name: Deploy ERN Analytics Worker
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "analytics-worker/**"
+      - "data/soft-launch-analytics-approval.json"
+      - "tests/analytics-worker.smoke.js"
+      - ".github/workflows/deploy-analytics-worker.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Verify explicit analytics approval and privacy boundaries
+        run: |
+          set -euo pipefail
+          node tests/analytics-worker.smoke.js
+          node - <<'NODE'
+          const fs=require("fs");
+          const x=JSON.parse(fs.readFileSync("data/soft-launch-analytics-approval.json","utf8"));
+          const p=x.privacyBoundaries||{};
+          const ok=x.ownerApproval===true &&
+            x.state==="APPROVED_FOR_CONTROLLED_DEPLOYMENT" &&
+            p.advertisingTracking===false &&
+            p.crossSiteTracking===false &&
+            p.personalProfiles===false &&
+            p.rawIpStorage===false &&
+            p.preciseLocationStorage===false &&
+            p.commercialSignalsMayAffectRanking===false;
+          if(!ok)process.exit(1);
+          NODE
+      - name: Require existing Cloudflare deployment credentials
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          ERN_RATE_HMAC_KEY: ${{ secrets.ERN_RATE_HMAC_KEY }}
+          ERN_SIGNAL_REVIEW_TOKEN: ${{ secrets.ERN_SIGNAL_REVIEW_TOKEN }}
+        run: |
+          set -euo pipefail
+          test -n "$CLOUDFLARE_API_TOKEN"
+          test -n "$CLOUDFLARE_ACCOUNT_ID"
+          test -n "$ERN_RATE_HMAC_KEY"
+          test -n "$ERN_SIGNAL_REVIEW_TOKEN"
+      - name: Install analytics runtime secrets
+        working-directory: analytics-worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          ERN_RATE_HMAC_KEY: ${{ secrets.ERN_RATE_HMAC_KEY }}
+          ERN_SIGNAL_REVIEW_TOKEN: ${{ secrets.ERN_SIGNAL_REVIEW_TOKEN }}
+        run: |
+          set -euo pipefail
+          printf '%s' "$ERN_RATE_HMAC_KEY" | npx --yes wrangler@latest secret put ERN_ANALYTICS_HMAC_KEY
+          printf '%s' "$ERN_SIGNAL_REVIEW_TOKEN" | npx --yes wrangler@latest secret put ERN_ANALYTICS_REVIEW_TOKEN
+      - name: Deploy analytics Worker
+        working-directory: analytics-worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@latest deploy
+      - name: Verify live analytics health
+        run: |
+          set -euo pipefail
+          node - <<'NODE'
+          const url="https://ern-analytics-api.jjcadenza6.workers.dev/health";
+          let last="";
+          for(let i=0;i<8;i++){
+            try{
+              const r=await fetch(url,{headers:{accept:"application/json"}});
+              last=await r.text();
+              if(r.ok){
+                const x=JSON.parse(last);
+                if(x.ok===true&&x.analyticsEnabled===true&&x.durableStorage===true&&x.hmacSecretConfigured===true&&x.reviewTokenConfigured===true&&x.rawNetworkIdentifiersStored===false&&x.eventRowsStored===false){
+                  console.log(JSON.stringify({ok:true,service:x.service,analyticsEnabled:x.analyticsEnabled,durableStorage:x.durableStorage,rawNetworkIdentifiersStored:x.rawNetworkIdentifiersStored,eventRowsStored:x.eventRowsStored}));
+                  process.exit(0);
+                }
+              }
+            }catch(e){last=String(e)}
+            await new Promise(r=>setTimeout(r,1500));
+          }
+          console.error(last);process.exit(1);
+          NODE
