@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "phase": 9,
+  "label": "International Reach & Localized Discovery",
+  "state": "ACTIVE",
+  "lanes": [
+    {
+      "id": "phase-registry-hardening",
+      "label": "Data-driven phase registry & transition hardening",
+      "status": "ACTIVE",
+      "gated": false
+    },
+    {
+      "id": "localized-collection-registry",
+      "label": "Localized collection registry",
+      "status": "ACTIVE",
+      "gated": false
+    },
+    {
+      "id": "crawlable-localized-discovery",
+      "label": "Crawlable localized Discover pages",
+      "status": "PLANNED",
+      "gated": false
+    },
+    {
+      "id": "hreflang-canonical-sitemap",
+      "label": "hreflang, canonical & sitemap localization",
+      "status": "PLANNED",
+      "gated": false
+    },
+    {
+      "id": "localized-discovery-navigation",
+      "label": "Localized discovery navigation & language handoff",
+      "status": "PLANNED",
+      "gated": false
+    },
+    {
+      "id": "phase9-exit-review",
+      "label": "Phase 9 exit review",
+      "status": "PLANNED",
+      "gated": false
+    }
+  ],
+  "constraints": {
+    "socialAccounts": false,
+    "automaticPosting": false,
+    "analytics": false,
+    "payoutAccountChanges": false,
+    "pilot2": false,
+    "submissionPublic": false,
+    "nowMomentMedia": false,
+    "generativeGuidePublic": false
+  },
+  "next": "CONTINUE_PHASE9_NON_GATED_LOCALIZED_DISCOVERY"
+}
