@@ -20,7 +20,9 @@
       "sourcePage": "https://www.wien.info/en/see-do/discover-vienna/webcam-379930",
       "evidence": "Official Vienna tourism page describes a live webcam covering University of Vienna, City Hall, Parliament, Volksgarten and museums.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-02T16:50:00Z",
+      "verification": "Owner confirmed live playback working on official provider page."
     },
     {
       "id": "prague-petrin-tower",
@@ -97,7 +99,9 @@
       "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
       "evidence": "Visit Finland describes a live webcam over Lake Pielinen from Koli.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-02T16:50:00Z",
+      "verification": "Owner confirmed live playback working on official provider page."
     },
     {
       "id": "levi-ski-resort",
@@ -119,7 +123,9 @@
       "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
       "evidence": "Visit Finland describes a live stream from Turku port toward the archipelago.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-02T16:50:00Z",
+      "verification": "Owner confirmed live playback working on official provider page."
     },
     {
       "id": "kilpisjarvi-saana",
@@ -251,10 +257,13 @@
       "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
       "evidence": "Visit Finland explicitly describes this as a real-time webcam overlooking Market Square and South Harbour.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-02T16:50:00Z",
+      "verification": "Owner confirmed live playback working on official provider page."
     }
   ],
   "notes": [
-    "Registry re-check on 2026-10-02 found no current Helsinki/Market Square source record in data/sources.json; candidate restored pending owner clarification to avoid losing a potentially missing destination."
+    "Registry re-check on 2026-10-02 found no current Helsinki/Market Square source record in data/sources.json; candidate restored pending owner clarification to avoid losing a potentially missing destination.",
+    "Vienna, Helsinki, Koli and Turku promoted to data/sources.json after owner live-playback confirmation on 2026-10-02. Prague remains research-only pending exact camera mapping."
   ]
 }
