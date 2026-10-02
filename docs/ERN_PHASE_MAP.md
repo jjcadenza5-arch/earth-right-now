@@ -123,7 +123,7 @@ This phase does not remove ERN’s core rules:
 - Unknown/recheck is preferable to invented certainty.
 
 ## Phase 6 — Discovery & Growth
-**State: ACTIVE — NON-GATED LANES ONLY**
+**State: COMPLETE**
 
 Purpose:
 - move ERN from a stable operating site toward an ERN-style Earth discovery/search product;
@@ -139,9 +139,27 @@ Phase 6 exit direction:
 - crawlable discovery surfaces are stronger and fail-closed truth rules remain intact;
 - growth work does not depend on analytics, social accounts or gated visitor-contribution features.
 
+## Phase 7 — Launch & Distribution Readiness
+**State: ACTIVE — NON-GATED PREPARATION ONLY**
+
+Purpose:
+- turn ERN's stable discovery product into a coherent launch package;
+- prepare launch messaging, profile copy, story/share packs, organic distribution surfaces and partner/business launch materials;
+- make public trust, disclosure and canonical identity easy to reuse across future channels;
+- separate preparation from account ownership, posting, analytics and payout actions.
+
+Phase 7 may proceed autonomously only in non-gated preparation. ERN may prepare copy, pages, share assets, checklists and launch packets, but may not create or claim social accounts, post externally, enable analytics, change payout settings, generate new affiliate links in external accounts, activate Pilot 2, enable Submission/Now Moment media or turn on the public generative Guide without separate approval.
+
+Phase 7 exit direction:
+- a reusable launch/message kit exists;
+- website/share surfaces point coherently to canonical ERN identity;
+- ERN Stories can supply a launch content pack without automated posting;
+- partner/business launch materials clearly separate verified relationships from future opportunities;
+- any remaining work is a genuine human/external account action rather than unfinished site preparation.
+
 ## Current summary
 
-ERN has completed the Phase 5 operating foundation and is now advancing into **Phase 6 — Discovery & Growth** in non-gated lanes only.
+ERN has completed **Phase 6 — Discovery & Growth** and is now advancing into **Phase 7 — Launch & Distribution Readiness** in non-gated preparation lanes only.
 
 Phase 4 is active with **Pilot 1 — Earth Signals** now live in limited form:
 - Earth Signals: runtime ON + public manifest ON for structured 45-minute signals only;

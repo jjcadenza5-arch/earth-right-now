@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "phase": 6,
   "label": "Discovery & Growth",
-  "state": "ACTIVE_EXIT_QA",
+  "state": "COMPLETE",
   "lanes": [
     {
       "id": "search-intent-discovery",
@@ -37,7 +37,7 @@
     {
       "id": "phase6-discovery-qa",
       "label": "Discovery QA & Phase 6 exit review",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "gated": false
     }
   ],
@@ -50,5 +50,5 @@
     "socialChannels": false,
     "otherSeparateFeatureGates": false
   },
-  "next": "RUN_PHASE6_EXIT_QA"
+  "next": "PHASE6_COMPLETE_ASSESS_NEXT_PHASE"
 }

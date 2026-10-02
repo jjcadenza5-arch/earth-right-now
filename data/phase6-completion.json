@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "phase": 6,
+  "label": "Discovery & Growth",
+  "state": "COMPLETE",
+  "completedAt": "2026-10-02",
+  "releaseCommit": "0eaf90e43dd86d0a776aa6620ac75557224f0294",
+  "evidence": {
+    "pages": "SUCCESS",
+    "javascript": "SUCCESS",
+    "operations": "SUCCESS",
+    "exitQA": "READY_TO_COMPLETE_PHASE6"
+  },
+  "completedLanes": [
+    "search-intent-discovery",
+    "destination-pathways",
+    "crawlable-growth",
+    "verified-action-pathways",
+    "performance-release-resilience",
+    "phase6-discovery-qa"
+  ],
+  "preservedBoundaries": [
+    "Pilot 2 OFF",
+    "Submission public intake OFF",
+    "Now Moment media OFF",
+    "Public generative Guide OFF",
+    "Analytics OFF",
+    "Social channels not connected",
+    "Automatic expansion OFF"
+  ],
+  "next": "PHASE_7_LAUNCH_DISTRIBUTION_READINESS"
+}

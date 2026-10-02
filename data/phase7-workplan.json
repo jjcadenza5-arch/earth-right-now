@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "phase": 7,
+  "label": "Launch & Distribution Readiness",
+  "state": "ACTIVE",
+  "lanes": [
+    {
+      "id": "launch-message-kit",
+      "label": "Launch messaging & profile copy",
+      "status": "ACTIVE",
+      "gated": false
+    },
+    {
+      "id": "organic-distribution-surfaces",
+      "label": "Organic distribution & share surfaces",
+      "status": "ACTIVE",
+      "gated": false
+    },
+    {
+      "id": "story-launch-pack",
+      "label": "ERN Stories launch content pack",
+      "status": "PLANNED",
+      "gated": false
+    },
+    {
+      "id": "partner-business-readiness",
+      "label": "Partner & business launch readiness",
+      "status": "PLANNED",
+      "gated": false
+    },
+    {
+      "id": "public-trust-launch-qa",
+      "label": "Public trust & launch QA",
+      "status": "PLANNED",
+      "gated": false
+    },
+    {
+      "id": "phase7-exit-review",
+      "label": "Phase 7 exit review",
+      "status": "PLANNED",
+      "gated": false
+    }
+  ],
+  "constraints": {
+    "createSocialAccounts": false,
+    "automaticPosting": false,
+    "analytics": false,
+    "payoutAccountChanges": false,
+    "newAffiliateLinkGeneration": false,
+    "pilot2": false,
+    "submissionPublic": false,
+    "nowMomentMedia": false,
+    "generativeGuidePublic": false
+  },
+  "next": "CONTINUE_PHASE7_NON_GATED_LAUNCH_READINESS"
+}
