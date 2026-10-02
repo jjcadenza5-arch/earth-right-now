@@ -587,3 +587,5 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
 .search-status{min-height:18px;margin-top:10px;color:#6d837c;font-size:9px}
 .search-section .result-grid{margin-top:12px}
 @media(max-width:760px){.discovery-proof{grid-template-columns:repeat(3,1fr);padding:10px 12px}.discovery-proof>div{display:grid;gap:3px;text-align:center;padding:9px 5px}.discovery-proof strong{font-size:22px}.discovery-proof span{font-size:7px}.discovery-proof button{grid-column:1/-1;min-height:38px}}
+
+.browse-all-places{margin:2px 0 12px}.browse-all-places a{color:#245b50;font-size:10px;font-weight:800;text-underline-offset:3px}
