@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T04:35:00Z",
+  "generatedAt": "2026-10-02T00:00:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -25,8 +25,10 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has five source-specific Kyoto current windows. Activities are a natural next step after checking crowd and street conditions.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Confirm Kyoto coverage inside the active Travelpayouts/Klook account, then generate one destination-level tracked link only if useful."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate commercial clicks and maintain verification; do not add duplicate Kyoto placements without visitor utility.",
+      "trackingUrl": "https://klook.tpo.mx/R6eK3qEH",
+      "verifiedAt": "2026-10-02T00:00:00Z"
     },
     {
       "id": "tiqets-rome",
@@ -38,8 +40,10 @@
       "intent": "culture",
       "priority": "P1",
       "reason": "A landmark-focused current view can naturally lead to attraction/ticket planning without altering the view ranking.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Confirm Rome inventory and generate a destination/attraction-level tracked link only after fit review."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate commercial clicks and maintain verification; keep placement scoped to Rome.",
+      "trackingUrl": "https://tiqets.tpo.mx/K9PVIj61",
+      "verifiedAt": "2026-10-02T00:00:00Z"
     },
     {
       "id": "klook-seoul",
@@ -51,8 +55,10 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Seoul Plaza is a high-utility city window and Klook is already an active ERN partner; destination activities are a natural optional bridge.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Confirm Seoul coverage in the account, then generate one destination-level link if the result is useful."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate commercial clicks and maintain verification; add no extra Seoul commercial density without evidence.",
+      "trackingUrl": "https://klook.tpo.mx/fJJX7vjK",
+      "verifiedAt": "2026-10-02T00:00:00Z"
     },
     {
       "id": "klook-rovaniemi",
@@ -64,8 +70,10 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "The live Arctic Circle window directly supports trip timing and activity planning in a seasonal destination.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Check Klook coverage for Rovaniemi/Lapland before any tracked-link generation."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate commercial clicks and maintain verification; preserve seasonal visitor-utility focus.",
+      "trackingUrl": "https://klook.tpo.mx/6p7bRKjH",
+      "verifiedAt": "2026-10-02T00:00:00Z"
     },
     {
       "id": "klook-dublin",
