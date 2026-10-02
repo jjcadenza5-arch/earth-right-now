@@ -1,6 +1,8 @@
 import {readFile,stat} from "node:fs/promises";import path from "node:path";
 
 const requiredJson=[
+ "domain-health.json",
+ "soft-launch-stage1-status.json",
  "verification-horizon.json",
  "source-availability.json",
  "source-availability-continuity.json",
@@ -65,6 +67,20 @@ export async function validateOperationsPacket(dir="ern-ops"){
     const file=path.join(dir,name);
     if(!(await fileExists(file))){issues.push({file:name,code:"MISSING_OR_EMPTY"});continue}
     files[name]=await readFile(file,"utf8");
+  }
+
+  const domainHealth=files["domain-health.json"];
+  if(domainHealth&&domainHealth?.state!=="OK")issues.push({file:"domain-health.json",code:"SOFT_LAUNCH_DOMAIN_HEALTH_VIOLATION",state:domainHealth?.state||null});
+
+  const softLaunch=files["soft-launch-stage1-status.json"];
+  if(softLaunch){
+    if(softLaunch?.stage!=="SOFT_LAUNCH_OPERATING_STAGE_1")issues.push({file:"soft-launch-stage1-status.json",code:"SOFT_LAUNCH_STAGE_MISMATCH"});
+    if(softLaunch?.state!=="OPERATING")issues.push({file:"soft-launch-stage1-status.json",code:"SOFT_LAUNCH_NOT_OPERATING"});
+    if((softLaunch?.blockers||[]).length)issues.push({file:"soft-launch-stage1-status.json",code:"SOFT_LAUNCH_BLOCKERS_PRESENT",count:softLaunch.blockers.length});
+    const s=softLaunch?.safety||{};
+    if(s.broadFeatureExpansionAllowed!==false||s.majorPromotionAllowed!==false||s.paidMarketingAllowed!==false||s.automaticExternalAccountActionAllowed!==false||s.automaticCommercialPlacementAllowed!==false||s.automaticLinkRewritingAllowed!==false||s.paidRankingAllowed!==false||s.bookingInferenceAllowed!==false||s.revenueInferenceAllowed!==false)issues.push({file:"soft-launch-stage1-status.json",code:"SOFT_LAUNCH_BOUNDARY_VIOLATION"});
+    const g=softLaunch?.gates||{};
+    if(g.pilot2!==false||g.submissionPublic!==false||g.nowMomentMediaPublic!==false||g.generativeGuidePublic!==false||g.analytics!==false||g.socialAccountActions!==false||g.payoutAccountActions!==false||g.otherSeparateFeatureGates!==false)issues.push({file:"soft-launch-stage1-status.json",code:"SOFT_LAUNCH_GATE_VIOLATION"});
   }
 
   const localDirectory=files["local-directory-status.json"];
