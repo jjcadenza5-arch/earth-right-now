@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "phase": 10,
+  "label": "Post-discovery business readiness architecture",
+  "visitorJourney": ["Search","See Live","Discover","Decide","Go"],
+  "principle": "Useful actions come after truthful Earth discovery; commercial relationships never choose or rank Earth windows.",
+  "actionOrder": [
+    {"stage":"SEE_LIVE","purpose":"Open or play the truthful current Earth window","commercial":false},
+    {"stage":"DISCOVER","purpose":"Explore related and nearby places using editorial/currentness rules","commercial":false},
+    {"stage":"DECIDE","purpose":"Use current visual context and destination information to decide whether the place is relevant","commercial":false},
+    {"stage":"GO","purpose":"Optionally expose verified planning actions such as activities, tickets or stays only after destination selection","commercial":"optional"}
+  ],
+  "commercialRules": {
+    "paymentMayAffectEarthRanking": false,
+    "commissionMayAffectEarthRanking": false,
+    "unverifiedOfferMayDisplay": false,
+    "inactivePartnerOfferMayDisplay": false,
+    "staleOnlyPlaceMayBecomeCommercialSurface": false,
+    "affiliateDisclosureRequired": true,
+    "automaticLinkRewritingAllowed": false,
+    "automaticPlacementAllowed": false,
+    "automaticPartnerApplicationAllowed": false,
+    "automaticPayoutActionAllowed": false
+  },
+  "smallBusinessPrinciples": [
+    "Keep the public flow simple",
+    "Prefer a few verified useful actions over broad inventory",
+    "Do not require accounts for basic discovery",
+    "Do not add paid ranking",
+    "Do not add operational complexity without demonstrated visitor value"
+  ],
+  "state": "ARCHITECTURE_READY_ACTIVATION_SEPARATE"
+}
