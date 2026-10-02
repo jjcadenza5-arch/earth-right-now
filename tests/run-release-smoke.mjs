@@ -52,6 +52,8 @@ const releaseTests=[
   "phase4-earth-signals-pilot-workflow.smoke.js",
   "phase4-earth-signals-observation.smoke.js",
   "phase5-readiness.smoke.js",
+  "phase7-operating-status.smoke.js",
+  "phase7-launch-qa.smoke.js",
   "now-moment-media-worker.smoke.js",
   "now-moment-photo-public-ui-off.smoke.js",
   "now-moment-photo-service.smoke.js",
