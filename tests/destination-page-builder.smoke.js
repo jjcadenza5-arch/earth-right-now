@@ -25,3 +25,7 @@ console.log("Destination pages preserve schedule, playback, local-place and comm
 assert.match(builder,/Explore related places/,"Phase 6 destination pages should expose related discovery");
 assert.match(builder,/never by payment/,"related destination discovery must disclose ranking independence");
 assert.match(builder,/preferredCategories/,"related destination discovery should use category similarity");
+
+assert.match(builder,/id="placeFilter"/,"Phase 6 Places directory should provide deterministic filtering");
+assert.match(builder,/data-search=/,"Places directory rows should expose local filter text only");
+assert.match(builder,/matching place/,"Places directory should report filtered result count accessibly");
