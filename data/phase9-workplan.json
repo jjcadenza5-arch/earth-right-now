@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "phase": 9,
   "label": "International Reach & Localized Discovery",
-  "state": "ACTIVE",
+  "state": "COMPLETE",
   "lanes": [
     {
       "id": "phase-registry-hardening",
@@ -37,7 +37,7 @@
     {
       "id": "phase9-exit-review",
       "label": "Phase 9 exit review",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "gated": false
     }
   ],
@@ -51,5 +51,5 @@
     "nowMomentMedia": false,
     "generativeGuidePublic": false
   },
-  "next": "RUN_PHASE9_EXIT_REVIEW"
+  "next": "PHASE9_COMPLETE"
 }
