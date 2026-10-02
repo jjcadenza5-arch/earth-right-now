@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "phase": 7,
+  "label": "ERN Launch Message Kit",
+  "canonicalUrl": "https://earthrightnow.app/",
+  "tagline": "See before you go.",
+  "oneLine": "Earth Right Now helps people look at real places through truthful live and current visual windows before they travel, explore or simply wonder what Earth looks like right now.",
+  "shortProfile": "Earth Right Now (ERN) curates truthful live video, current images and official external live sources from around the world. Explore real places, current windows and a more connected planet.",
+  "shortShare": "See Earth as it is right now. Real places, current windows, and a simple way to look before you go.",
+  "launchPost": "Earth Right Now is a new way to look at the world before you go. Explore truthful live and current windows from real places, discover places through search and ERN Guide, and follow curiosity through ERN Stories. See before you go.",
+  "pressBoilerplate": "Earth Right Now (ERN) is an Earth-discovery service that curates truthful live and current visual windows from real places. ERN keeps source truth, currentness, permission, storytelling and commercial links separate so visitors can explore with clear context.",
+  "trustPoints": [
+    "Live video, current images, external live sources and previews are labeled separately.",
+    "Payment never buys Earth-window ranking.",
+    "Core exploration requires no account.",
+    "Local favorites and exploration preferences stay in the visitor's browser.",
+    "Official social accounts are not claimed until they are actually connected and verified."
+  ],
+  "channelGuidance": {
+    "website": "Use canonical URL and shortShare.",
+    "socialProfile": "Use shortProfile only after the user creates and verifies the account.",
+    "launchPost": "Use launchPost as a starting draft; posting remains a human/external action.",
+    "press": "Use oneLine plus pressBoilerplate."
+  },
+  "safety": {
+    "socialAccountsClaimed": false,
+    "automaticPostingAllowed": false,
+    "analyticsRequired": false,
+    "paidPromotionAssumed": false,
+    "commercialRankingAffected": false
+  }
+}
