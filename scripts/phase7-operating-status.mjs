@@ -1,0 +1,9 @@
+import fs from "node:fs";
+import {execFileSync} from "node:child_process";
+const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
+const run=p=>JSON.parse(execFileSync(process.execPath,[p],{encoding:"utf8"}));
+const approval=read("data/phase7-entry-approval.json"),plan=read("data/phase7-workplan.json"),phase=run("scripts/project-phase-status.mjs");
+const open=(plan.lanes||[]).filter(x=>x.gated!==true&&["ACTIVE","PLANNED"].includes(x.status)),active=open.filter(x=>x.status==="ACTIVE"),planned=open.filter(x=>x.status==="PLANNED"),c=approval?.constraints||{};
+const closed=c.socialAccountCreationApproved===false&&c.automaticPostingApproved===false&&c.analyticsActivationApproved===false&&c.payoutAccountActionApproved===false&&c.pilot2ActivationApproved===false&&c.submissionPublicActivationApproved===false&&c.nowMomentMediaActivationApproved===false&&c.generativeGuidePublicActivationApproved===false&&c.otherSeparateFeatureGatesApproved===false&&approval?.automaticExternalActionsAllowed===false;
+const report={schemaVersion:1,phase:7,label:"Launch & Distribution Readiness",entryApproved:approval?.approved===true,canonicalPhaseNumber:phase.phaseNumber,state:plan.state,separateFeatureGatesRemainOff:closed,activeLanes:active.map(x=>x.id),plannedLanes:planned.map(x=>x.id),openNonGatedLaneCount:open.length,next:!approval?.approved?"REQUIRE_PHASE7_APPROVAL":!closed?"STOP_PHASE7_GATE_BOUNDARY_VIOLATION":open.length?"CONTINUE_PHASE7_NON_GATED_LAUNCH_READINESS":"PHASE7_REVIEW_READY",safety:{automaticSocialAccountCreationAllowed:false,automaticPostingAllowed:false,analyticsActivationAllowed:false,payoutAccountActionAllowed:false,newAffiliateAccountActionAllowed:false,automaticPublicFeatureActivationAllowed:false}};
+console.log(JSON.stringify(report,null,2));if(!report.entryApproved||!report.separateFeatureGatesRemainOff||report.canonicalPhaseNumber!==7)process.exitCode=1;
