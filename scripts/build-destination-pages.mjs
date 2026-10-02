@@ -91,7 +91,7 @@ for(const [id,items] of map){
   const graph={
     "@context":"https://schema.org",
     "@graph":[
-      {"@type":"WebPage","@id":url,"url":url,"name":destinationName+(currentItems.length?" Live Now":" Live View")+" | Earth Right Now","description":desc,"isPartOf":{"@id":base+"#website"},"mainEntity":{"@id":url+"#place"},"about":{"@id":url+"#place"},"breadcrumb":{"@id":url+"#breadcrumb"},...(lastmod?{"dateModified":lastmod}: {})},
+      {"@type":"WebPage","@id":url,"url":url,"name":destinationName+(currentItems.length?" Live Now":" Live View")+" | Earth Right Now","description":desc,"isPartOf":{"@id":base+"#website"},"mainEntity":{"@id":url+"#place"},"about":{"@id":url+"#place"},"breadcrumb":{"@id":url+"#breadcrumb"},"citation":[...new Set(items.map(s=>safe(s.sourceUrl||s.officialUrl)).filter(Boolean))],...(lastmod?{"dateModified":lastmod}: {})},
       placeData,
       {"@type":"BreadcrumbList","@id":url+"#breadcrumb","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Earth Right Now","item":base},
