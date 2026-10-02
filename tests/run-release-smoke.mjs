@@ -73,6 +73,7 @@ const releaseTests=[
   "soft-launch-stage1-status.smoke.js",
   "analytics-worker.smoke.js",
   "analytics-runtime.smoke.js",
+  "analytics-operations-reporting.smoke.js",
   "analytics-adapter.smoke.js",
   "analytics-default-off.smoke.js",
   "telemetry-privacy.smoke.js",
