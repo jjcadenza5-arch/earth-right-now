@@ -7,19 +7,19 @@
     {
       "id": "search-intent-discovery",
       "label": "Search & intent discovery",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "destination-pathways",
       "label": "Destination pathways",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "crawlable-growth",
       "label": "Crawlable discovery & SEO",
-      "status": "PLANNED",
+      "status": "ACTIVE",
       "gated": false
     },
     {
@@ -50,5 +50,5 @@
     "socialChannels": false,
     "otherSeparateFeatureGates": false
   },
-  "next": "CONTINUE_ACTIVE_NON_GATED_LANES"
+  "next": "CONTINUE_CRAWLABLE_GROWTH"
 }
