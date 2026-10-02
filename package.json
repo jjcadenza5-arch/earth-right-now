@@ -98,7 +98,8 @@
     "phase8:status": "node scripts/phase8-operating-status.mjs",
     "phase8:exit-review": "node scripts/phase8-exit-review.mjs",
     "phase9:status": "node scripts/phase9-operating-status.mjs",
-    "phase9:localization-status": "node scripts/phase9-localized-discovery-status.mjs"
+    "phase9:localization-status": "node scripts/phase9-localized-discovery-status.mjs",
+    "phase9:exit-review": "node scripts/phase9-exit-review.mjs"
   },
   "engines": {
     "node": ">=20"
