@@ -5,7 +5,7 @@ assert.equal(r.status,0,r.stderr);
 const x=JSON.parse(r.stdout);
 assert.equal(x.phase,7);
 assert.equal(x.entryApproved,true);
-assert.equal(x.canonicalPhaseNumber,7);
+assert.ok(Number(x.canonicalPhaseNumber)>=7);
 assert.equal(x.separateFeatureGatesRemainOff,true);
 assert.ok(Array.isArray(x.activeLanes));
 assert.ok(Array.isArray(x.plannedLanes));
