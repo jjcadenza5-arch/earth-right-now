@@ -57,9 +57,8 @@ function recentPlaybackProof(s){const a=(Date.now()-Date.parse(s?.playbackVerifi
 function watchExperienceEligible(s){return!!(s&&s.health==="HEALTHY"&&!s.watchHold&&!/VISITOR_PLAYBACK_REJECTED|NOT_LIVE|VIDEO_UNAVAILABLE|STALE_RECORDING|BROKEN_EMBED/i.test(s.failureReason||"")&&+s.quality>=80&&+s.moment>=70)}
 function watchEligible(s){return featureEligible(s)&&currentTruthClaim(s)&&watchExperienceEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
 function provenWatchHere(s){return watchEligible(s)&&((s.playback==="EMBED"&&recentPlaybackProof(s))||(s.playback==="IMAGE_REFRESH"&&currentTruthClaim(s)))}
-function referenceHandoffUrl(s){return safeExternalUrl(s?.sourceUrl||s?.officialUrl)}
 function atlasBaseEligible(s){return!!(s&&s.health!=="OFFLINE"&&!featuredHold(s)&&s.truth!=="PREVIEW"&&Number.isFinite(+s.lat)&&Number.isFinite(+s.lon))}
-function atlasReferenceEligible(s){return atlasBaseEligible(s)&&s.health==="HEALTHY"&&!currentTruthClaim(s)&&Boolean(referenceHandoffUrl(s))}
+function atlasReferenceEligible(s){return atlasBaseEligible(s)&&s.health==="HEALTHY"&&!currentTruthClaim(s)&&!!safeExternalUrl(s.sourceUrl||s.officialUrl)}
 function atlasEligible(s){return atlasBaseEligible(s)&&(currentTruthClaim(s)||atlasReferenceEligible(s))}
 const momentWords={
  en:["Current","Morning light","Daylight","Evening light","Night"],
@@ -558,20 +557,11 @@ function bestAlternate(s){
  return same.sort((a,b)=>baseScore(b)-baseScore(a))[0]||null;
 }
 function beginViewerLoad(s){clearViewerLoad();const link=$("#loadingSource"),source=cleanUrl(s?.sourceUrl||s?.officialUrl),alt=bestAlternate(s),tryAlt=$("#viewerTryAlternate");if(source){link.href=source;link.dataset.ernSourceId=s.id;link.hidden=false}else{link.removeAttribute("href");delete link.dataset.ernSourceId;link.hidden=true}tryAlt.hidden=!alt;tryAlt.onclick=alt?()=>openViewer(alt):null;$("#viewerLoading").hidden=false;viewerLoadTimer=setTimeout(()=>{$("#viewerLoading").hidden=false},7000)}
-function standardViewerFailClosed(s,mount){if(!currentTruthClaim(s)){mount.dataset.visualKind="reference";mount.append(scenicPoster(s));return}}
 function humanPlaybackReviewMode(s){const q=new URLSearchParams(location.search);return q.get("playbackReview")==="1"&&q.get("sourceId")===String(s?.id||"")&&s?.playback==="EMBED"&&s?.permission==="EMBED_ALLOWED"&&s?.health==="HEALTHY"&&cleanUrl(s?.embedUrl)}
 function mountViewerNow(s){
  stopImageTimer();clearViewerLoad();const mount=$("#viewerStage");mount.replaceChildren();mount.style.background=generatedBackground(s);const source=cleanUrl(s.sourceUrl||s.officialUrl),link=$("#sourceViewer");if(source){link.href=source;link.dataset.ernSourceId=s.id;link.hidden=false}else{link.removeAttribute("href");delete link.dataset.ernSourceId;link.hidden=true}
  const reviewMode=humanPlaybackReviewMode(s);
- if(!currentTruthClaim(s)&&!reviewMode){
-  mount.dataset.visualKind="reference";
-  const box=document.createElement("div");box.className="external-box reference-handoff";
-  const h=document.createElement("h3");h.textContent="Live view temporarily unavailable";
-  const p=document.createElement("p");p.textContent=source?"ERN is not treating this source as current right now. Open the official source to check the latest available view.":"ERN does not currently have a usable live/current source for this place.";
-  box.append(h,p);
-  if(source){const a=document.createElement("a");a.href=source;a.target="_blank";a.rel="noopener noreferrer";a.dataset.ernSourceId=s.id;a.textContent="Open official source";box.append(a)}
-  mount.append(box);return
- }
+ if(!currentTruthClaim(s)&&!reviewMode){mount.dataset.visualKind="reference";const box=document.createElement("div"),h=document.createElement("h3"),p=document.createElement("p");box.className="external-box reference-handoff";h.textContent="Live view temporarily unavailable";p.textContent=source?"ERN is not treating this source as current. Open the official source to check the latest available view.":"ERN does not currently have a usable live/current source for this place.";box.append(h,p);if(source){const a=document.createElement("a");a.href=source;a.target="_blank";a.rel="noopener noreferrer";a.dataset.ernSourceId=s.id;a.textContent="Open official source";box.append(a)}mount.append(box);return}
  if(reviewMode){const n=document.createElement("div");n.className="playback-review-notice";n.textContent="HUMAN PLAYBACK REVIEW — shown only to renew evidence; not treated as current until a person confirms visible playback.";mount.append(n)}
  if(s.playback==="EMBED"&&cleanUrl(s.embedUrl)){beginViewerLoad(s);const f=createMediaFrame(s,{onload:()=>clearViewerLoad()});if(f)mount.append(f)}
  else if(s.playback==="IMAGE_REFRESH"&&cleanUrl(s.sourceUrl)){beginViewerLoad(s);const img=document.createElement("img");img.alt=s.title;img.onload=()=>clearViewerLoad();img.onerror=()=>{$("#viewerLoading").hidden=false};const refresh=()=>{try{const u=new URL(s.sourceUrl);u.searchParams.set("ern",Date.now());img.src=u.href}catch{img.src=s.sourceUrl}};refresh();state.imageTimer=setInterval(()=>{if(document.visibilityState==="visible")refresh()},Math.max(30000,Number(s.refreshMs)||60000));mount.append(img)}
