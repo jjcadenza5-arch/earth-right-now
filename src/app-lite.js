@@ -57,9 +57,9 @@ function recentPlaybackProof(s){const a=(Date.now()-Date.parse(s?.playbackVerifi
 function watchExperienceEligible(s){return!!(s&&s.health==="HEALTHY"&&!s.watchHold&&!/VISITOR_PLAYBACK_REJECTED|NOT_LIVE|VIDEO_UNAVAILABLE|STALE_RECORDING|BROKEN_EMBED/i.test(s.failureReason||"")&&+s.quality>=80&&+s.moment>=70)}
 function watchEligible(s){return featureEligible(s)&&currentTruthClaim(s)&&watchExperienceEligible(s)&&s.truth!=="PREVIEW"&&s.playback!=="PREVIEW"}
 function provenWatchHere(s){return watchEligible(s)&&((s.playback==="EMBED"&&recentPlaybackProof(s))||(s.playback==="IMAGE_REFRESH"&&currentTruthClaim(s)))}
-function atlasBaseEligible(s){return!!(s&&s.health!=="OFFLINE"&&!featuredHold(s)&&s.truth!=="PREVIEW"&&Number.isFinite(+s.lat)&&Number.isFinite(+s.lon))}
-function atlasReferenceEligible(s){return atlasBaseEligible(s)&&s.health==="HEALTHY"&&!currentTruthClaim(s)&&!!safeExternalUrl(s.sourceUrl||s.officialUrl)}
-function atlasEligible(s){return atlasBaseEligible(s)&&(currentTruthClaim(s)||atlasReferenceEligible(s))}
+function atlasBase(s){return!!(s&&s.health!=="OFFLINE"&&!featuredHold(s)&&s.truth!=="PREVIEW"&&Number.isFinite(+s.lat)&&Number.isFinite(+s.lon))}
+function atlasRef(s){return atlasBase(s)&&s.health==="HEALTHY"&&!currentTruthClaim(s)&&!!safeExternalUrl(s.sourceUrl||s.officialUrl)}
+function atlasEligible(s){return atlasBase(s)&&(currentTruthClaim(s)||atlasRef(s))}
 const momentWords={
  en:["Current","Morning light","Daylight","Evening light","Night"],
  th:["ปัจจุบัน","แสงยามเช้า","กลางวัน","แสงยามเย็น","กลางคืน"],
@@ -492,7 +492,7 @@ function renderMap(){
  const grouped=groupByPlace(state.sources.filter(atlasEligible));
  for(const group of grouped){
    const eligible=group.filter(s=>{const inside=currentInside(s);if(state.mapFilter==="local")return false;if(state.category!=="all"&&state.category!=="random"&&!categoryMatch(s,state.category))return false;if(state.mapFilter==="inside"&&!inside)return false;if(state.mapFilter==="external"&&inside)return false;if(state.mapFilter==="daylight"&&!isDay(s))return false;return true});
-   if(!eligible.length)continue;const s=[...eligible].sort((x,y)=>(guideEligible(y)?1:0)-(guideEligible(x)?1:0)||(featureEligible(y)?1:0)-(featureEligible(x)?1:0)||baseScore(y)-baseScore(x))[0],lat=Number(s.lat),lon=Number(s.lon),inside=currentInside(s),current=guideEligible(s),reference=atlasReferenceEligible(s);
+   if(!eligible.length)continue;const s=[...eligible].sort((x,y)=>(guideEligible(y)?1:0)-(guideEligible(x)?1:0)||(featureEligible(y)?1:0)-(featureEligible(x)?1:0)||baseScore(y)-baseScore(x))[0],lat=Number(s.lat),lon=Number(s.lon),inside=currentInside(s),current=guideEligible(s),reference=atlasRef(s);
    const p=document.createElement("button");p.className="map-pin"+(inside?"":" external")+(reference?" reference":"");p.type="button";p.title=reference?`${s.title} — Reference only · official source available`:`${s.title} — ${publicTruth(s)}`;p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";p.onclick=()=>openViewer(s,{record:current,updateHash:current});if(group.length>1)p.dataset.views=String(group.length);a.append(p);count++;if(inside)insideCount++;else externalCount++;
  }
  for(const x of mappableLocal){
@@ -500,7 +500,7 @@ function renderMap(){
    const p=document.createElement("a");p.className="map-pin local";p.href=safeExternalUrl(x.url);p.target="_blank";p.rel="noopener noreferrer";p.title=x.name+" — reviewed local place";p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";a.append(p);count++;localCount++;
  }
  document.querySelectorAll(".atlas-filter").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter===state.mapFilter));
- const mc=state.sources.filter(atlasEligible),bc=mc.filter(s=>s.coordinateBasis).length,cc=mc.filter(guideEligible).length,rc=mc.filter(atlasReferenceEligible).length,ctx=state.category!=="all"&&state.category!=="random"?` · ${state.category}`:"";$("#mapNote").textContent=`${count} mapped places${ctx} · ${cc} current · ${rc} reference-only handoff${rc===1?"":"s"} · ${insideCount} play here · ${externalCount} source views${localCount?" · "+localCount+" reviewed local":""} · ${bc} with coordinate provenance.${!mappableLocal.length&&approvedLocalPlaces().length?" Reviewed local places remain searchable but are not pinned until exact coordinates are verified.":""}`;renderAtlasBeyond();
+ const mc=state.sources.filter(atlasEligible),bc=mc.filter(s=>s.coordinateBasis).length,cc=mc.filter(guideEligible).length,rc=mc.filter(atlasRef).length,ctx=state.category!=="all"&&state.category!=="random"?` · ${state.category}`:"";$("#mapNote").textContent=`${count} mapped places${ctx} · ${cc} current · ${rc} reference-only handoff${rc===1?"":"s"} · ${insideCount} play here · ${externalCount} source views${localCount?" · "+localCount+" reviewed local":""} · ${bc} with coordinate provenance.${!mappableLocal.length&&approvedLocalPlaces().length?" Reviewed local places remain searchable but are not pinned until exact coordinates are verified.":""}`;renderAtlasBeyond();
 }
 function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}
 function distanceKm(a,b){
