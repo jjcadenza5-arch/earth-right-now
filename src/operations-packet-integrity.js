@@ -38,7 +38,8 @@ const requiredJson=[
  "trend-delta.json",
  "operations-status.json",
  "phase5-readiness.json",
- "phase5-operating-status.json"
+ "phase5-operating-status.json",
+ "phase6-operating-status.json"
 ];
 const requiredText=["operator-brief.md"];
 
@@ -197,6 +198,16 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(s.automaticPilot2ActivationAllowed!==false||s.automaticCommercialPlacementAllowed!==false||s.automaticLinkRewritingAllowed!==false||s.paidRankingAllowed!==false||s.bookingInferenceAllowed!==false||s.revenueInferenceAllowed!==false||s.automaticExternalActionAllowed!==false)issues.push({file:"phase5-operating-status.json",code:"PHASE5_AUTONOMY_BOUNDARY_VIOLATION"});
     if(s.commercialPlacementPreflightRequired!==true||s.affiliateDisclosureRequired!==true)issues.push({file:"phase5-operating-status.json",code:"PHASE5_COMMERCIAL_GUARDRAIL_MISSING"});
     if(phase5Operating?.commercial?.placementPreflightOk!==true)issues.push({file:"phase5-operating-status.json",code:"PHASE5_COMMERCIAL_PREFLIGHT_FAILED"});
+  }
+
+  const phase6Operating=files["phase6-operating-status.json"];
+  if(phase6Operating){
+    if(phase6Operating?.entryApproved!==true)issues.push({file:"phase6-operating-status.json",code:"PHASE6_ENTRY_APPROVAL_MISSING"});
+    if(phase6Operating?.canonicalPhaseNumber!==6)issues.push({file:"phase6-operating-status.json",code:"PHASE6_CANONICAL_PHASE_MISMATCH"});
+    if(phase6Operating?.separateFeatureGatesRemainOff!==true)issues.push({file:"phase6-operating-status.json",code:"PHASE6_SEPARATE_GATE_BOUNDARY_VIOLATION"});
+    const s=phase6Operating?.safety||{};
+    if(s.automaticSeparateGateActivationAllowed!==false||s.analyticsActivationAllowed!==false||s.socialAccountActionAllowed!==false||s.generativeGuidePublicActivationAllowed!==false||s.paidRankingAllowed!==false)issues.push({file:"phase6-operating-status.json",code:"PHASE6_AUTONOMY_BOUNDARY_VIOLATION"});
+    if(!Array.isArray(phase6Operating?.activeLanes)||!Array.isArray(phase6Operating?.plannedLanes))issues.push({file:"phase6-operating-status.json",code:"PHASE6_LANE_REGISTRY_INVALID"});
   }
 
   const businessControl=files["business-control.json"];
