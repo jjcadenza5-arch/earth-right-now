@@ -269,6 +269,7 @@ function groupByPlace(items){
  return [...m.values()];
 }
 function normalizeSearch(v){return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^\p{L}\p{N}]+/gu," ").trim()}
+function sourceSearchText(s){return normalizeSearch([s.title,s.placeId,s.city,s.state,s.region,s.country,s.provider,s.story,s.categories,s.tags,s.aliases].join(" "))}
 function recentSearches(){const rows=readJSON("ern:recent-searches:v1",[]);return Array.isArray(rows)?rows.filter(v=>typeof v==="string"&&v.trim()).slice(0,4):[]}
 function rememberSearch(q){const raw=String(q||"").trim().replace(/\s+/g," ").slice(0,120);if(!raw)return;const next=[raw,...recentSearches().filter(x=>normalizeSearch(x)!==normalizeSearch(raw))].slice(0,8);writeSaved("ern:recent-searches:v1",JSON.stringify(next))}
 function renderQuickSearches(){
@@ -359,7 +360,7 @@ function guidePlaceMatches(q){
  const intentWords=new Set(["peaceful","quiet","calm","golden","sunset","sunrise","morning","evening","daylight","night","lights","wildlife","animal","beach","sea","coast","ocean","mountain","snow","ski","city","street","busy","happening","activity","people","surprise","random","local","small","business","cafe","café","restaurant","shop","market","farm","hotel","guesthouse","bakery","food"]);
  const tokens=normalizeSearch(q).split(/\s+/).filter(t=>t&&!noise.has(t)&&!intentWords.has(t));
  if(!tokens.length)return[];
- return state.sources.filter(guideEligible).filter(s=>{const hay=normalizeSearch([s.title,s.region,s.country,s.provider,s.story,...(s.categories||[])].filter(Boolean).join(" "));return tokens.every(t=>hay.includes(t))}).sort((a,b)=>baseScore(b)-baseScore(a));
+ return state.sources.filter(guideEligible).filter(s=>{const hay=sourceSearchText(s);return tokens.every(t=>hay.includes(t))}).sort((a,b)=>baseScore(b)-baseScore(a));
 }
 
 function guideResponse(q){
@@ -428,13 +429,13 @@ function search(q,options={updateUrl:false}){
  const activeIntents=intentGroups.filter(g=>g.test.test(x));
  const intentNoise=new Set(["and","&","beach","beaches","water","sea","ocean","coast","coastal","surf","harbour","harbor","mountain","mountains","snow","ski","volcano","alps","alpine","wildlife","animal","animals","zoo","aquarium","birds","bird","city","cities","street","urban","skyline","square","night","nighttime","lights","after","dark","calm","peaceful","quiet","relax","relaxing","nature","beautiful","scenic","amazing","view","views","happening","busy","active","people","live","current","now","show","me","find","see","watch","look","at","in","on","the","a","an","of","for","please","i","want","to","go","going","visit","before","what","is","like","there","can","you","right","somewhere"]);
  const semanticTokens=tokens.filter(t=>!intentNoise.has(t));
- const catalogMatches=!x?state.sources:state.sources.filter(s=>{const hay=normalizeSearch([s.title,s.placeId,s.city,s.state,s.region,s.country,s.provider,s.story,...(s.categories||[]),...(s.tags||[]),...(s.aliases||[])].filter(Boolean).join(" "));if(activeIntents.length&&!activeIntents.every(g=>g.match(s)))return false;if(localIntent&&localPlaceSignals(s).worth)return semanticTokens.filter(t=>!["local","small","place","places"].includes(t)).every(token=>hay.includes(token));return semanticTokens.length?semanticTokens.every(token=>hay.includes(token)):activeIntents.length>0});
- const currentMatches=catalogMatches.filter(guideEligible),matches=catalogMatches.filter(s=>guideEligible(s)||(s.health==="HEALTHY"&&!!safeExternalUrl(s.sourceUrl||s.officialUrl)));
+ const catalogMatches=!x?state.sources:state.sources.filter(s=>{const hay=sourceSearchText(s);if(activeIntents.length&&!activeIntents.every(g=>g.match(s)))return false;if(localIntent&&localPlaceSignals(s).worth)return semanticTokens.filter(t=>!["local","small","place","places"].includes(t)).every(token=>hay.includes(token));return semanticTokens.length?semanticTokens.every(token=>hay.includes(token)):activeIntents.length>0});
+ const matches=catalogMatches.filter(s=>guideEligible(s)||(s.health==="HEALTHY"&&!!safeExternalUrl(s.sourceUrl||s.officialUrl))),cc=matches.filter(guideEligible).length;
  const groups=groupByPlace(matches).sort((a,b)=>{const al=localIntent?Math.max(...a.map(s=>localPlaceSignals(s).score))*20:0,bl=localIntent?Math.max(...b.map(s=>localPlaceSignals(s).score))*20:0;return(bl+Math.max(...b.map(baseScore)))-(al+Math.max(...a.map(baseScore)))}).slice(0,x?24:12);
  const localMatches=x?localDirectoryMatch(raw).slice(0,12):[];
  $("#searchResults").replaceChildren(...localMatches.map(localDirectoryCard),...groups.map(placeCard));
  if(x&&!localMatches.length&&!groups.length){const box=document.createElement("div");box.className="search-empty-help";box.innerHTML="<strong>No current ERN window matches yet.</strong><span>Try a broader place name, ask ERN Guide, or help add a real place.</span>";const g=document.createElement("button");g.type="button";g.textContent="Ask ERN Guide";g.onclick=()=>{openGuide();$("#guideInput").value=raw;runGuide(raw)};const a=document.createElement("a");a.href="./for-places.html";a.textContent="Add a place or camera";box.append(g,a);$("#searchResults").append(box)}
- $("#searchStatus").textContent=x?`${groups.length} Earth place${groups.length===1?"":"s"} · ${currentMatches.length} current window${currentMatches.length===1?"":"s"}${!currentMatches.length&&matches.length?" · reference-only":""}${localMatches.length?" · "+localMatches.length+" reviewed local place"+(localMatches.length===1?"":"s"):""}`:"";
+ $("#searchStatus").textContent=x?`${groups.length} Earth place${groups.length===1?"":"s"} · ${cc} current window${cc===1?"":"s"}${!cc&&matches.length?" · reference-only":""}${localMatches.length?" · "+localMatches.length+" reviewed local place"+(localMatches.length===1?"":"s"):""}`:"";
  if(x)globalThis.ERN_SEARCH_ANALYTICS?.(raw,groups.length+localMatches.length);
 }
 function localPlaceSignals(s){
