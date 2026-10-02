@@ -17,5 +17,8 @@
     "otherSeparateFeatureGatesApproved": false
   },
   "automaticExternalActionsAllowed": false,
-  "next": "BUILD_PHASE9_NON_GATED_LOCALIZED_DISCOVERY"
+  "next": "BUILD_PHASE9_NON_GATED_LOCALIZED_DISCOVERY",
+  "phaseState": "ACTIVE_PHASE9_NON_GATED_LOCALIZED_DISCOVERY",
+  "completionState": "CORE_COMPLETE_PHASE_9_ACTIVE",
+  "interpretation": "ERN core is complete and Phase 9 International Reach & Localized Discovery is active in non-gated lanes. Localized collection pages, language navigation, hreflang/canonical/sitemap work and phase-transition hardening may proceed while social accounts, analytics, posting, payout actions and other separate feature gates remain independently gated."
 }
