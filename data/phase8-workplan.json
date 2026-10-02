@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "phase": 8,
   "label": "Editorial Collections & Evergreen Growth",
-  "state": "ACTIVE",
+  "state": "COMPLETE",
   "lanes": [
     {
       "id": "thematic-collection-engine",
@@ -37,7 +37,7 @@
     {
       "id": "phase8-exit-review",
       "label": "Phase 8 exit review",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "gated": false
     }
   ],
@@ -51,5 +51,5 @@
     "nowMomentMedia": false,
     "generativeGuidePublic": false
   },
-  "next": "RUN_PHASE8_EXIT_REVIEW"
+  "next": "PHASE8_COMPLETE_PHASE9_LOCALIZED_DISCOVERY"
 }
