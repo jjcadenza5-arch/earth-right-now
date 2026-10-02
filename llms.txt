@@ -1,0 +1,41 @@
+# Earth Right Now — The Live Discovery Engine
+
+> See before you go.
+
+Earth Right Now (ERN) is a Live Discovery Search Engine for discovering what real places around Earth look like now through curated live video, refreshed current images and provider-hosted live sources.
+
+Canonical site: https://earthrightnow.app/
+
+## Core public pages
+- Home: https://earthrightnow.app/
+- Places directory: https://earthrightnow.app/places/
+- Discover directory: https://earthrightnow.app/discover/
+- About: https://earthrightnow.app/about.html
+- How ERN works: https://earthrightnow.app/how-ern-works.html
+- Live & current source policy: https://earthrightnow.app/source-policy.html
+- Editorial & curation principles: https://earthrightnow.app/editorial-principles.html
+- FAQ: https://earthrightnow.app/faq.html
+- Privacy: https://earthrightnow.app/privacy.html
+- Sitemap: https://earthrightnow.app/sitemap.xml
+
+## Source truth
+ERN distinguishes:
+- embedded live streams,
+- provider-hosted external live streams,
+- refreshed current images,
+- sources awaiting recheck,
+- degraded/unavailable sources,
+- reference-only material.
+
+A reachable provider page is not by itself proof that a stream or image is current. Destination pages expose provider attribution and the latest reliable ERN verification time where available.
+
+## Attribution
+Third-party cameras, streams and source pages remain owned/operated by their providers unless explicitly stated otherwise. ERN acts as a discovery bridge and curator.
+
+## Editorial principles
+Quality over quantity. Payment or affiliate commission does not buy Earth-window ranking. Stale/reference-only material is not relabeled LIVE.
+
+## Gated future features
+The public generative ERN Guide and public 45-minute Now Moment media are not activated. Future Local Earth, Now Moments, live context and serendipitous discovery should add genuinely useful current-world information, not SEO filler.
+
+This file is an optional machine-readable orientation aid. The authoritative public content remains ERN's crawlable HTML pages, destination pages, sitemap, canonical URLs and structured data.
