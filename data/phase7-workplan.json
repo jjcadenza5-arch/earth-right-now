@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "phase": 7,
   "label": "Launch & Distribution Readiness",
-  "state": "ACTIVE",
+  "state": "COMPLETE",
   "lanes": [
     {
       "id": "launch-message-kit",
@@ -37,7 +37,7 @@
     {
       "id": "phase7-exit-review",
       "label": "Phase 7 exit review",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "gated": false
     }
   ],
@@ -52,5 +52,5 @@
     "nowMomentMedia": false,
     "generativeGuidePublic": false
   },
-  "next": "RUN_PHASE7_EXIT_REVIEW"
+  "next": "PHASE7_COMPLETE_PHASE8_EDITORIAL_GROWTH"
 }
