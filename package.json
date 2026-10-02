@@ -109,7 +109,8 @@
     "analytics:health": "node scripts/analytics-live-health.mjs",
     "analytics:summary": "node scripts/analytics-live-summary.mjs",
     "analytics:redact": "node scripts/analytics-summary-redact.mjs",
-    "analytics:owner-report": "node scripts/analytics-owner-report.mjs"
+    "analytics:owner-report": "node scripts/analytics-owner-report.mjs",
+    "atlas:reference-audit": "node scripts/reference-handoff-audit.mjs"
   },
   "engines": {
     "node": ">=20"
