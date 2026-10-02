@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness,phase5OperatingStatus}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness,phase5OperatingStatus,phase6OperatingStatus}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -236,6 +236,14 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push(`- Commercial verification attention: ${phase5OperatingStatus.maintenance?.commercialVerificationAttention??"unknown"}.`);
     lines.push("- Automatic placement/relinking, paid ranking, booking/revenue inference and automatic external account actions remain forbidden.","");
   }
+  if(phase6OperatingStatus){
+    lines.push("## Phase 6 — Discovery & Growth");
+    lines.push(`- Entry approved ${phase6OperatingStatus.entryApproved===true?"YES":"NO"}; separate feature gates ${phase6OperatingStatus.separateFeatureGatesRemainOff===true?"OFF / ISOLATED":"CHECK REQUIRED"}.`);
+    lines.push(`- Active non-gated lanes: ${(phase6OperatingStatus.activeLanes||[]).join(", ")||"none"}.`);
+    lines.push(`- Planned non-gated lanes: ${(phase6OperatingStatus.plannedLanes||[]).join(", ")||"none"}.`);
+    lines.push(`- Open Phase 6 non-gated lanes: ${phase6OperatingStatus.openNonGatedLaneCount||0}; next: ${phase6OperatingStatus.next||"REVIEW"}.`);
+    lines.push("- Phase 6 discovery/growth work proceeds without enabling Pilot 2, submissions, Now Moment media, public generative Guide, analytics or social channels.","");
+  }
   if(earthSignals){
     lines.push("## Earth Signals readiness");
     lines.push(`- Mode: ${earthSignals.mode||"UNKNOWN"}; backend foundation ${earthSignals.backendFoundation?.state||"UNKNOWN"}; deployment ${earthSignals.deployment?.state||"UNKNOWN"}.`);
@@ -255,7 +263,9 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   const commercialExternalGate=(externalGates?.openGates||[]).some(g=>["booking-com-review","viator-api-activation"].includes(g?.id));
   const commercialResearchFiniteComplete=commercialOnboarding?.state==="PILOT_COVERAGE_REACHED"&&!(commercialResearchDepth?.items||[]).length;
   const humanPlaybackRenewals=(operatorReviewQueue?.renewalRequiredCount??operatorReviewQueue?.renewalCount??0);
+  const phase6Open=(phase6OperatingStatus?.openNonGatedLaneCount||0)>0;
   lines.push("## Next operational focus");
+  if(phase6Open)lines.push(`- Continue Phase 6 non-gated discovery/growth work: ${(phase6OperatingStatus.activeLanes||[]).join(", ")||"advance the planned workplan"}. Do not fall back to completed Phase 5 maintenance merely because external gates remain closed.`);
   if((operatorReviewQueue?.renewalRequiredCount??operatorReviewQueue?.renewalCount??0)>0)lines.push("- Complete only the minimum primary playback renewals needed to preserve the LIVE HERE target; keep extra renewal debt in backlog unless capacity allows.");
   else if((playbackHorizon?.summary?.due6h||0)>0||(playbackHorizon?.summary?.due12h||0)>0)lines.push("- Renew expiring inside-ERN HUMAN_PLAYBACK evidence before LIVE HERE eligibility lapses.");
   if((playbackEvidenceConsistency?.summary?.issues||0)>0)lines.push("- Resolve playback-evidence ledger/catalog drift before treating new LIVE HERE proof as authoritative.");
@@ -311,10 +321,15 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     submissionLocallyComplete:submissionExternalOnly
   };
   const autonomousHoldBlockers=Object.entries(autonomousHoldChecks).filter(([,passed])=>!passed).map(([key])=>key);
-  const autonomousHold=autonomousHoldBlockers.length===0;
+  const autonomousHold=autonomousHoldBlockers.length===0&&!phase6Open;
 
   lines.push("","## Autonomous work state");
-  if(autonomousHold){
+  if(phase6Open){
+    lines.push(`- **PHASE 6 AUTONOMOUS WORK OPEN** — ${phase6OperatingStatus.openNonGatedLaneCount} declared non-gated lane(s) remain in the Discovery & Growth workplan.`);
+    if((phase6OperatingStatus.activeLanes||[]).length)lines.push("- Work active lanes first: "+phase6OperatingStatus.activeLanes.join(", ")+".");
+    if((phase6OperatingStatus.plannedLanes||[]).length)lines.push("- Then advance planned lanes deliberately: "+phase6OperatingStatus.plannedLanes.join(", ")+".");
+    lines.push("- Keep all separately gated features closed unless explicitly approved; maintenance checks support Phase 6 but must not replace it.");
+  }else if(autonomousHold){
     if(humanPlaybackRenewals>0){
       lines.push(`- **AUTONOMOUS HOLD / HUMAN REVIEW DUE** — no high-priority local implementation or research lane remains open; ${humanPlaybackRenewals} primary HUMAN_PLAYBACK renewal(s) require real browser observation.`);
       lines.push("- Human playback renewal is not autonomous work and cannot be inferred from HTTP, CI, metadata or provider reachability.");
