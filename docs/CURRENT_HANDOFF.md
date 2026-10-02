@@ -15,7 +15,8 @@ Preserve completed Phases 6–10, current GitHub `main`, deployed production wor
 
 Commercial payout state:
 - Travelpayouts payout method was configured and email-confirmed by the owner on 2026-10-02.
-- Viator payout details remain to be separately verified because Viator is a direct partner relationship.
+- Viator payout setup was confirmed completed by the owner on 2026-10-02.
+- No current payout-setup blocker remains for the active ERN affiliate relationships.
 
 Next commercial work should be demand-led from real analytics rather than offer-count expansion. Accommodation/stay remains the largest partner-category gap, but no new account or terms should be accepted without explicit owner approval.
 
