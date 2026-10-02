@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/reference-handoff-audit.mjs"],{encoding:"utf8"});
+assert.equal(r.status,0,r.stdout+"\n"+r.stderr);
+const x=JSON.parse(r.stdout);
+assert.equal(x.mode,"STATIC_ONLY");
+assert.equal(x.staticIssues.length,0);
+assert.equal(x.definiteBroken.length,0);
+assert.equal(x.policy.reachabilityDoesNotProveLive,true);
+assert.equal(x.policy.networkSuccessDoesNotRefreshCurrentness,true);
+assert.equal(x.policy.sourceTruthMutationAllowed,false);
+assert.ok(x.referenceOnlyMappedCount>0);
+assert.equal(x.validHandoffCount,x.referenceOnlyMappedCount);
+console.log("ERN reference-only Source handoff audit passed");
