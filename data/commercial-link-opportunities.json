@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T16:20:00Z",
+  "generatedAt": "2026-10-02T16:25:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -189,8 +189,10 @@
       "intent": "transport",
       "priority": "P2",
       "reason": "Welcome Pickups currently serves Bangkok airport-to-city transfers, adding transport utility after ERN destination discovery.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate and human-verify one Bangkok Welcome Pickups transfer link in Travelpayouts."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate Bangkok transport clicks; keep transfer options downstream from Earth discovery.",
+      "trackingUrl": "https://tpo.mx/IT0dZFMS",
+      "verifiedAt": "2026-10-02T16:25:00Z"
     },
     {
       "id": "welcome-pickups-rome",
