@@ -2,7 +2,7 @@ import assert from "node:assert/strict";import {insideERNRecoveryStatus} from ".
 const now=new Date("2026-09-24T08:30:00Z"),base={provider:"P",truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",playback:"EMBED",sourceUrl:"https://example.com",embedUrl:"https://couchtourist.com/embed/cam/1/",checkedAt:"2026-09-24T08:00:00Z",lastSuccessfulCheck:"2026-09-24T08:00:00Z",health:"HEALTHY"};
 const sources=[
  {...base,id:"ready"},
- {...base,id:"stale-source",checkedAt:"2026-09-20T08:00:00Z",lastSuccessfulCheck:"2026-09-20T08:00:00Z"},
+ {...base,id:"stale-source",checkedAt:"2026-09-16T08:00:00Z",lastSuccessfulCheck:"2026-09-16T08:00:00Z"},
  {...base,id:"degraded",health:"DEGRADED"},
  {...base,id:"no-human"}
 ];
