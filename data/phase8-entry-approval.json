@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "phase": 8,
+  "label": "Editorial Collections & Evergreen Growth",
+  "approved": true,
+  "approvalBasis": "Owner explicitly instructed ERN to continue into the next phase whenever the current phase is finished or waiting on external information.",
+  "approvedAt": "2026-10-02",
+  "constraints": {
+    "socialAccountCreationApproved": false,
+    "automaticPostingApproved": false,
+    "analyticsActivationApproved": false,
+    "payoutAccountActionApproved": false,
+    "pilot2ActivationApproved": false,
+    "submissionPublicActivationApproved": false,
+    "nowMomentMediaActivationApproved": false,
+    "generativeGuidePublicActivationApproved": false,
+    "otherSeparateFeatureGatesApproved": false
+  },
+  "automaticExternalActionsAllowed": false,
+  "next": "BUILD_PHASE8_NON_GATED_EDITORIAL_GROWTH"
+}
