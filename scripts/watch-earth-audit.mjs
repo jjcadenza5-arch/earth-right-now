@@ -21,7 +21,7 @@ const rows=auditMoments.map(now=>{
 });
 const violations=[];
 for(const row of rows){
-  if(row.count<1)violations.push(`${row.utc}: no Watch Earth windows`);
+  if(row.count<1)violations.push(`${row.utc}: no Watch Earth windows`);if(row.actualNow&&row.count<8)violations.push(`${row.utc}: actual-current Watch Earth below production floor (8)`);
   if(row.eligible!==row.count)violations.push(`${row.utc}: ${row.count-row.eligible} ineligible window(s)`);
   if(row.duplicateIds)violations.push(`${row.utc}: ${row.duplicateIds} duplicate source id(s)`);
   if(row.previews)violations.push(`${row.utc}: ${row.previews} PREVIEW item(s) leaked into Watch Earth`);
