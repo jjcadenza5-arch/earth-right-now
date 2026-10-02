@@ -9,6 +9,7 @@ import { EDITORIAL_COLLECTIONS,editorialCollectionRows } from "../src/editorial-
 import { DISCOVERY_LOCALES,discoveryLocale,localizedCollection } from "../src/editorial-collections-l10n.js";
 import fs from "node:fs";
 
+const discoverDefinitions=EDITORIAL_COLLECTIONS;
 const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
 const travelOffers=JSON.parse(fs.readFileSync("data/travel-offers.json","utf8"));
 const localDirectory=JSON.parse(fs.readFileSync("data/local-directory.json","utf8"));
@@ -179,7 +180,6 @@ fs.writeFileSync("places/index.html",directoryHtml);
 
 fs.rmSync("discover",{recursive:true,force:true});
 fs.mkdirSync("discover",{recursive:true});
-const discoverDefinitions=EDITORIAL_COLLECTIONS;
 const languageNav=(currentLocale,id="")=>'<nav class="language-nav" aria-label="Language">'+DISCOVERY_LOCALES.map(locale=>{const lc=discoveryLocale(locale);return '<a'+(locale===currentLocale?' aria-current="page"':'')+' href="'+localizedDiscoverUrl(locale,id)+'">'+esc(lc.languageName)+'</a>'}).join("")+'</nav>';
 const discoverRows=[];
 for(const def of discoverDefinitions){
