@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T00:00:00Z",
+  "generatedAt": "2026-10-02T15:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -100,6 +100,98 @@
       "reason": "The skyline/museum-campus view can naturally connect to museums and attraction planning.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Check Chicago attraction coverage before generating any link."
+    },
+    {
+      "id": "klook-bangkok",
+      "destination": "Bangkok",
+      "placeIds": [
+        "bangkok-sukhumvit-road"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a current Bangkok street window and Klook has deep Bangkok activity inventory; a destination-level planning action is a natural post-discovery step.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and human-verify one Bangkok destination-level Klook link in the existing Travelpayouts Earthrightnow project."
+    },
+    {
+      "id": "klook-singapore",
+      "destination": "Singapore",
+      "placeIds": [
+        "singapore-port-area"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a current Singapore port/skyline window and Klook has broad Singapore attraction/activity inventory; this is a strong See Live → Decide → Go bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and human-verify one Singapore destination-level Klook link in the existing Travelpayouts Earthrightnow project."
+    },
+    {
+      "id": "tiqets-london",
+      "destination": "London",
+      "placeIds": [
+        "london-savoy-place",
+        "london-abbey-road-crossing"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "ERN has two current London windows and Tiqets has substantial London attraction inventory; use one destination-level link across both London places.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and human-verify one London destination-level Tiqets link in the existing Travelpayouts Earthrightnow project."
+    },
+    {
+      "id": "viator-dublin",
+      "destination": "Dublin",
+      "placeIds": [
+        "dublin-temple-bar"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Temple Bar is a strong current culture/street window and Viator has broad Dublin tour inventory; this adds a second direct-partner destination without affecting discovery ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Use the existing Viator partner link tool to generate and human-verify one Dublin destination-level tracked link."
+    },
+    {
+      "id": "viator-cape-town",
+      "destination": "Cape Town",
+      "placeIds": [
+        "cape-town-waterfront"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a current Cape Town waterfront/Table Mountain view and Viator has extensive Cape Town activities; this is a strong trip-planning bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Use the existing Viator partner link tool to generate and human-verify one Cape Town destination-level tracked link."
+    },
+    {
+      "id": "welcome-pickups-bangkok",
+      "destination": "Bangkok",
+      "placeIds": [
+        "bangkok-sukhumvit-road"
+      ],
+      "partnerCandidate": "welcome-pickups",
+      "intent": "transport",
+      "priority": "P2",
+      "reason": "Welcome Pickups currently serves Bangkok airport-to-city transfers, adding transport utility after ERN destination discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and human-verify one Bangkok Welcome Pickups transfer link in Travelpayouts."
+    },
+    {
+      "id": "welcome-pickups-rome",
+      "destination": "Rome",
+      "placeIds": [
+        "rome-spanish-steps"
+      ],
+      "partnerCandidate": "welcome-pickups",
+      "intent": "transport",
+      "priority": "P2",
+      "reason": "Welcome Pickups currently serves Rome airport transfers; this complements the existing Rome attraction link with a distinct transport action.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and human-verify one Rome Welcome Pickups transfer link in Travelpayouts."
     }
   ]
 }
