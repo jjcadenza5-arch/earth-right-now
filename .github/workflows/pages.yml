@@ -42,6 +42,7 @@ on:
       - "data/viator-api-deployment.json"
       - "scripts/public-brand-facts-status.mjs"
       - "scripts/distribution-readiness.mjs"
+      - "scripts/seo-indexing-audit.mjs"
       - "scripts/external-gate-register.mjs"
       - "scripts/project-phase-status.mjs"
       - "scripts/autonomous-work-status.mjs"
