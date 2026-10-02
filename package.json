@@ -92,7 +92,8 @@
     "phase5:status": "node scripts/phase5-operating-status.mjs",
     "phase6:status": "node scripts/phase6-operating-status.mjs",
     "phase6:qa": "node scripts/phase6-discovery-qa.mjs",
-    "phase7:status": "node scripts/phase7-operating-status.mjs"
+    "phase7:status": "node scripts/phase7-operating-status.mjs",
+    "phase7:qa": "node scripts/phase7-launch-qa.mjs"
   },
   "engines": {
     "node": ">=20"
