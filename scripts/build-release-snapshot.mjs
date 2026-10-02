@@ -1,6 +1,7 @@
-import { readFile,writeFile,mkdir,cp,readdir } from "node:fs/promises";
+import { readFile,writeFile,mkdir,cp,readdir,rm } from "node:fs/promises";
 import { createHash } from "node:crypto";
 const root=new URL("../",import.meta.url),dist=new URL("../dist/",import.meta.url);
+await rm(dist,{recursive:true,force:true});
 await mkdir(dist,{recursive:true});
 // Generate crawlable destination pages and sitemap from the same truth catalog used by the app.
 await import("./build-destination-pages.mjs");
