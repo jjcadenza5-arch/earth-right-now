@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "phase": 7,
+  "label": "Partner & Business Launch Readiness",
+  "canonicalPublicIdentity": "https://earthrightnow.app/",
+  "publicPaths": {
+    "mediaAndPartnerKit": "https://earthrightnow.app/press.html",
+    "placesAndCameras": "https://earthrightnow.app/for-places.html",
+    "privacy": "https://earthrightnow.app/privacy.html",
+    "sourcePrinciples": "https://earthrightnow.app/about.html"
+  },
+  "verifiedCommercialRelationships": [
+    {
+      "id": "viator",
+      "label": "Viator Partner Program",
+      "state": "VERIFIED_CURRENT"
+    },
+    {
+      "id": "klook",
+      "label": "Klook via Travelpayouts",
+      "state": "VERIFIED_CURRENT"
+    },
+    {
+      "id": "tiqets",
+      "label": "Tiqets via Travelpayouts",
+      "state": "VERIFIED_CURRENT"
+    },
+    {
+      "id": "welcome-pickups",
+      "label": "Welcome Pickups via Travelpayouts",
+      "state": "VERIFIED_CURRENT"
+    }
+  ],
+  "businessMessage": "ERN can connect visitor intent to useful travel actions only after a visitor chooses a place. Affiliate availability never changes Earth-window truth or editorial ranking.",
+  "cameraOwnerMessage": "Camera owners can prepare a public source for ERN review. Rights, source truth, currentness, visual usefulness and playback are reviewed separately; publication is never automatic.",
+  "localPlaceMessage": "Local places can be useful even when they are not famous. ERN supports reviewed discovery without paid ranking.",
+  "humanExternalActionsRemaining": [
+    "Configure payout method before the first payout is due.",
+    "Generate new exact destination-level affiliate links only for a vetted small batch when needed.",
+    "Create/connect any official social accounts only with explicit owner action."
+  ],
+  "safeguards": {
+    "inventPartnerClaimsAllowed": false,
+    "paidRankingAllowed": false,
+    "automaticPartnerOutreachAllowed": false,
+    "automaticAffiliateAccountActionAllowed": false,
+    "payoutAccountActionAllowed": false,
+    "automaticPublicFeatureActivationAllowed": false
+  }
+}
