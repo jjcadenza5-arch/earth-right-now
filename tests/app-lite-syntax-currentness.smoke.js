@@ -18,3 +18,7 @@ assert.match(app,/activeIntents\.every\(g=>g\.match\(s\)\)/,"public Explore sear
 
 assert.match(app,/ern:recent-searches:v1/,"Phase 6 Explore should retain recent search terms locally");
 assert.match(app,/rememberSearch\(raw\)/,"URL-backed Explore searches should update local recent-search memory");
+
+assert.match(app,/beautiful\|scenic\|amazing/,"Phase 6 Explore should support scenic intent");
+assert.match(app,/happening\|busy\|active/,"Phase 6 Explore should support activity intent");
+assert.match(app,/somewhere/,"Phase 6 Explore should ignore conversational search filler");
