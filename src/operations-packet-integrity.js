@@ -228,7 +228,8 @@ export async function validateOperationsPacket(dir="ern-ops"){
   const phase8Operating=files["phase8-operating-status.json"];
   if(phase8Operating){
     if(phase8Operating?.entryApproved!==true)issues.push({file:"phase8-operating-status.json",code:"PHASE8_ENTRY_APPROVAL_MISSING"});
-    if(phase8Operating?.canonicalPhaseNumber!==8)issues.push({file:"phase8-operating-status.json",code:"PHASE8_CANONICAL_PHASE_MISMATCH"});
+    const phase8CanonicalOk=phase8Operating?.state==="COMPLETE"?Number(phase8Operating?.canonicalPhaseNumber)>=8:phase8Operating?.canonicalPhaseNumber===8;
+    if(!phase8CanonicalOk)issues.push({file:"phase8-operating-status.json",code:"PHASE8_CANONICAL_PHASE_MISMATCH"});
     if(phase8Operating?.separateFeatureGatesRemainOff!==true)issues.push({file:"phase8-operating-status.json",code:"PHASE8_SEPARATE_GATE_BOUNDARY_VIOLATION"});
     const s=phase8Operating?.safety||{};
     if(s.automaticSocialAccountCreationAllowed!==false||s.automaticPostingAllowed!==false||s.analyticsActivationAllowed!==false||s.payoutAccountActionAllowed!==false||s.automaticPublicFeatureActivationAllowed!==false)issues.push({file:"phase8-operating-status.json",code:"PHASE8_AUTONOMY_BOUNDARY_VIOLATION"});
