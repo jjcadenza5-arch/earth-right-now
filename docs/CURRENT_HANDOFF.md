@@ -31,3 +31,21 @@ Production incident — 2026-10-02:
 - A stale commercial preflight that still required Travelpayouts payout readiness to be false was also corrected after owner payout setup.
 - Current-clock Operations validation after repair reported 11 Watch Earth windows, 11 places, 6 countries and 6 providers.
 - Pages run 37025041354 completed SUCCESS and deployed the repair.
+
+
+First-impression / discovery breadth tranche — 2026-10-02:
+- Watch Earth no longer artificially caps external-current views at 12 when inside-ERN embeds are below the preferred count; it can now fill the truthful 20-window target while still preferring inside playback.
+- Explore now surfaces 30 places on the initial no-query view instead of 12 and reports the broader discoverable/current place count.
+- Actual-clock Watch Earth release audit now fails if production falls below 8 current windows.
+- A separate ERN Live Health Watch is active and will only alert on severe current-window collapse or broken core live/search/map functionality.
+- Performance ceiling remained enforced; the broader-discovery change was trimmed to stay under the app-size budget.
+- Pages deployment for the broadened discovery build completed successfully.
+
+Affiliate Expansion Batch B:
+- Prepared across all four approved relationships.
+- Klook: Bangkok, Singapore.
+- Tiqets: Chicago, London.
+- Viator: Dublin, Cape Town.
+- Welcome Pickups: Bangkok, Rome.
+- Exact tracked links are still owner-side evidence; no fabricated or automatic partner links are allowed.
+- See `docs/AFFILIATE_EXPANSION_BATCH_B_2026-10-02.md`.
