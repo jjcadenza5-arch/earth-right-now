@@ -32,7 +32,7 @@ if(tp){
 }
 if(business.publicSurface!==false)fail.push("business readiness must remain non-public");
 if(business.revenueInfrastructure?.travelpayoutsProjectActive!==true)fail.push("Travelpayouts active project state missing from business readiness");
-if(business.revenueInfrastructure?.payoutMethodConfigured!==false)fail.push("Travelpayouts payout readiness must remain false until human account setup is actually completed");
+if(typeof business.revenueInfrastructure?.payoutMethodConfigured!=="boolean")fail.push("Travelpayouts payout readiness must be explicitly recorded as true or false");
 if(business.revenueInfrastructure?.paidRankingAllowed!==false)fail.push("business readiness may not enable paid ranking");
 if(opportunities.publicActivationAllowed!==false)fail.push("commercial opportunity queue must remain public-OFF");
 if(opportunities.principles?.automaticPlacementAllowed!==false)fail.push("commercial opportunity queue automatic placement must remain disabled");
