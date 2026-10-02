@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "phase": 10,
+  "label": "Future differentiator readiness",
+  "publicActivationAllowed": false,
+  "items": [
+    {
+      "id": "ern-guide-generative",
+      "name": "ERN Guide",
+      "visitorExplanation": "Ask ERN what kind of place you want to see, then move into truthful current Earth windows.",
+      "state": "PREPARED_PUBLIC_GENERATIVE_OFF",
+      "activationRequiresExplicitApproval": true
+    },
+    {
+      "id": "now-moments-45",
+      "name": "45-minute Now Moments",
+      "visitorExplanation": "A recent visitor glimpse that expires after 45 minutes, clearly separate from ERN camera truth.",
+      "state": "PREPARED_PUBLIC_MEDIA_OFF",
+      "activationRequiresExplicitApproval": true
+    },
+    {
+      "id": "crispy-pork-skin-serendipity",
+      "name": "Crispy Pork Skin Principle",
+      "visitorExplanation": "ERN can surprise you with a small nearby place worth noticing — something interesting you did not know to search for.",
+      "state": "EDITORIAL_DISCOVERY_FOUNDATION_READY_PUBLIC_EXPLANATION_LATER",
+      "activationRequiresExplicitApproval": false
+    }
+  ],
+  "safety": {
+    "generativeGuidePublic": false,
+    "nowMomentMediaPublic": false,
+    "submissionPublic": false,
+    "pilot2": false,
+    "analytics": false,
+    "socialActions": false,
+    "payoutActions": false,
+    "automaticExternalActions": false
+  }
+}
