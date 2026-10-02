@@ -110,7 +110,8 @@
     "analytics:summary": "node scripts/analytics-live-summary.mjs",
     "analytics:redact": "node scripts/analytics-summary-redact.mjs",
     "analytics:owner-report": "node scripts/analytics-owner-report.mjs",
-    "atlas:reference-audit": "node scripts/reference-handoff-audit.mjs"
+    "atlas:reference-audit": "node scripts/reference-handoff-audit.mjs",
+    "search:metadata-audit": "node scripts/search-metadata-audit.mjs"
   },
   "engines": {
     "node": ">=20"
