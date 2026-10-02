@@ -1,6 +1,8 @@
 # ERN Canonical Handoff — Launch & Business Readiness
 Updated: 2026-10-02
 
+> Superseded for current continuation by `docs/ERN_SOFT_LAUNCH_STAGE1_HANDOFF_2026-10-02.md`. Phase 10 remains complete; the new handoff governs the active operating period.
+
 ## Instruction for the next ChatGPT chat
 Continue Earth Right Now (ERN) from this file and the repository's current `main` branch. Do not repeat completed Phase 5–10 work. Phase 10 — ERN Launch & Business Readiness — is COMPLETE.
 
