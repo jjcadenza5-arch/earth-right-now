@@ -300,3 +300,17 @@ assert.match(phase6Brief,/Phase 6 — Discovery & Growth/);
 assert.match(phase6Brief,/PHASE 6 AUTONOMOUS WORK OPEN/);
 assert.match(phase6Brief,/search-intent-discovery/);
 assert.doesNotMatch(phase6Brief,/\*\*AUTONOMOUS HOLD\*\*/);
+
+const phase7Brief=operationsOperatorBrief({
+ snapshot:{insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},providers:{families:2,targetFamilies:2},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ phase6OperatingStatus:{entryApproved:true,separateFeatureGatesRemainOff:true,openNonGatedLaneCount:0,activeLanes:[],plannedLanes:[],next:"PHASE6_COMPLETE"},
+ phase7OperatingStatus:{entryApproved:true,separateFeatureGatesRemainOff:true,openNonGatedLaneCount:6,activeLanes:["launch-message-kit","organic-distribution-surfaces"],plannedLanes:["story-launch-pack","partner-business-readiness"],next:"CONTINUE_PHASE7_NON_GATED_LAUNCH_READINESS"},
+ operatorReviewQueue:{renewalCount:0,renewalRequiredCount:0,items:[]},
+ playbackEvidenceConsistency:{summary:{issues:0}},
+ sourceRevalidationTriage:{immediate:[]}
+});
+assert.match(phase7Brief,/Phase 7 — Launch & Distribution Readiness/);
+assert.match(phase7Brief,/PHASE 7 AUTONOMOUS WORK OPEN/);
+assert.match(phase7Brief,/launch-message-kit/);
+assert.doesNotMatch(phase7Brief,/\*\*AUTONOMOUS HOLD\*\*/);
