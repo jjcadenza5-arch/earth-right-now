@@ -6,6 +6,7 @@ assert.match(builder,/Outside published live hours/,"scheduled-closed sources ne
 assert.match(builder,/embedPlaybackProofCurrent/,"inside-ERN embeds need fresh playback proof on destination pages");
 assert.match(builder,/PLAYBACK RECHECK DUE/,"expired playback proof must not retain a live label");
 assert.match(builder,/Playback checked/,"inside-ERN destination cards should expose playback proof date separately from source verification");
+assert.match(builder,/Open live source/,"verified external live destination cards should use positive live-source wording");
 assert.match(builder,/const offers=currentItems\.length\?offerForPlace\(id\):\[\]/,"stale-only pages must not surface affiliate offers");
 assert.match(builder,/currentTravelOffer/,"affiliate offers must pass current verification");
 assert.match(builder,/activeAffiliatePartner/,"affiliate offers must require an active partner");
