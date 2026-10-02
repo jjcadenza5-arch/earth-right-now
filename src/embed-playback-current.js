@@ -1,4 +1,4 @@
-export function embedPlaybackCurrent(source,{now=Date.now(),maxAgeHours=24}={}){
+export function embedPlaybackCurrent(source,{now=Date.now(),maxAgeHours=168}={}){
  if(!source||source.playback!=="EMBED")return true;
  const raw=source.playbackVerifiedAt;if(!raw)return false;
  const t=Date.parse(raw),n=now instanceof Date?now.getTime():Number(now);
