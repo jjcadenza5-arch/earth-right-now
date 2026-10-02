@@ -67,6 +67,7 @@ const releaseTests=[
   "phase9-exit-review.smoke.js",
   "phase10-operating-status.smoke.js",
   "phase10-production-audit.smoke.js",
+  "phase10-business-architecture-audit.smoke.js",
   "now-moment-media-worker.smoke.js",
   "now-moment-photo-public-ui-off.smoke.js",
   "now-moment-photo-service.smoke.js",
