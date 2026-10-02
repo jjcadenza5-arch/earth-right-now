@@ -20,7 +20,7 @@ const savedMode=readSavedText("ern-mode","auto");
 const savedCategory=readSavedText("ern-category","all");
 const state={sources:[],localDirectory:[],travelOffers:[],affiliatePartners:[],watch:[],selected:null,watchIndex:0,journeyTimer:null,imageTimer:null,heroTimer:null,setOffset:0,wanderOffset:0,mode:["auto","beautiful","cities","calm","night","golden"].includes(savedMode)?savedMode:"auto",category:["all","mountain","beach","city","nature","wildlife","island","park","landmark","weather","random"].includes(savedCategory)?savedCategory:"all",favorites:readSavedSet("ern-favorites")};
 let analyticsSearchTimer=null,lastAnalyticsSearchSignature="";
-function ernEvent(name,data={}){try{return globalThis.ERN_EVENT?.(name,data)===true}catch{return false}}
+function ernEvent(name,data={}){try{if(typeof globalThis.ERN_EVENT==="function")return globalThis.ERN_EVENT(name,data)===true;globalThis.ERN_EVENT_QUEUE=Array.isArray(globalThis.ERN_EVENT_QUEUE)?globalThis.ERN_EVENT_QUEUE:[];globalThis.ERN_EVENT_QUEUE.push([name,data]);return true}catch{return false}}
 function scheduleSearchAnalytics(raw,resultCount){
  clearTimeout(analyticsSearchTimer);
  const query=String(raw||"").trim();if(!query)return;
