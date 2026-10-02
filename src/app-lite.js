@@ -410,7 +410,18 @@ function search(q,options={updateUrl:false}){
  const raw=String(q||"").trim(),x=normalizeSearch(raw),tokens=x.split(/\s+/).filter(Boolean);
  if(options.updateUrl){const u=new URL(location.href);if(raw)u.searchParams.set("q",raw);else u.searchParams.delete("q");history.replaceState(null,"",u.pathname+u.search+u.hash)}
  const localIntent=/\b(local|small|village|market|farm|neighbourhood|neighborhood|harbour|harbor|marina)\b/.test(x);
- const catalogMatches=!x?state.sources:state.sources.filter(s=>{const hay=normalizeSearch([s.title,s.region,s.country,s.provider,s.story,...(s.categories||[])].filter(Boolean).join(" "));if(localIntent&&localPlaceSignals(s).worth)return tokens.filter(t=>!["local","small","place","places"].includes(t)).every(token=>hay.includes(token));return tokens.every(token=>hay.includes(token))});
+ const intentGroups=[
+   {test:/\b(beach|beaches|water|sea|ocean|coast|coastal|surf|harbour|harbor)\b/,match:s=>/beach|water|sea|coast|surf|harbour|harbor|island/.test(cats(s))},
+   {test:/\b(mountain|mountains|snow|ski|volcano|alps|alpine)\b/,match:s=>/mountain|snow|ski|volcano|alps/.test(cats(s))},
+   {test:/\b(wildlife|animal|animals|zoo|aquarium|birds|bird)\b/,match:s=>/wildlife|animal|zoo|aquarium|bird/.test(cats(s))},
+   {test:/\b(city|cities|street|urban|skyline|square)\b/,match:s=>isCity(s)},
+   {test:/\b(night|nighttime|lights|after dark)\b/,match:s=>!isDay(s)&&isCity(s)},
+   {test:/\b(calm|peaceful|quiet|relax|relaxing|nature)\b/,match:s=>/nature|forest|garden|mountain|beach|water|park|wildlife/.test(cats(s))}
+ ];
+ const activeIntents=intentGroups.filter(g=>g.test.test(x));
+ const intentNoise=new Set(["and","&","beach","beaches","water","sea","ocean","coast","coastal","surf","harbour","harbor","mountain","mountains","snow","ski","volcano","alps","alpine","wildlife","animal","animals","zoo","aquarium","birds","bird","city","cities","street","urban","skyline","square","night","nighttime","lights","after","dark","calm","peaceful","quiet","relax","relaxing","nature"]);
+ const semanticTokens=tokens.filter(t=>!intentNoise.has(t));
+ const catalogMatches=!x?state.sources:state.sources.filter(s=>{const hay=normalizeSearch([s.title,s.region,s.country,s.provider,s.story,...(s.categories||[]),...(s.aliases||[])].filter(Boolean).join(" "));if(activeIntents.length&&!activeIntents.every(g=>g.match(s)))return false;if(localIntent&&localPlaceSignals(s).worth)return semanticTokens.filter(t=>!["local","small","place","places"].includes(t)).every(token=>hay.includes(token));return semanticTokens.length?semanticTokens.every(token=>hay.includes(token)):activeIntents.length>0});
  const matches=catalogMatches.filter(guideEligible);
  const groups=groupByPlace(matches).sort((a,b)=>{const al=localIntent?Math.max(...a.map(s=>localPlaceSignals(s).score))*20:0,bl=localIntent?Math.max(...b.map(s=>localPlaceSignals(s).score))*20:0;return(bl+Math.max(...b.map(baseScore)))-(al+Math.max(...a.map(baseScore)))}).slice(0,x?24:12);
  const localMatches=x?localDirectoryMatch(raw).slice(0,12):[];
