@@ -74,6 +74,11 @@ await cp(new URL("../release-verification.html",import.meta.url),new URL("releas
 await cp(new URL("../src/release-verification-console.js",import.meta.url),new URL("src/release-verification-console.js",dist));
 await cp(new URL("../src/candidate-evidence-binding.js",import.meta.url),new URL("src/candidate-evidence-binding.js",dist));
 await cp(new URL("../about.html",import.meta.url),new URL("about.html",dist));
+await cp(new URL("../how-ern-works.html",import.meta.url),new URL("how-ern-works.html",dist));
+await cp(new URL("../source-policy.html",import.meta.url),new URL("source-policy.html",dist));
+await cp(new URL("../editorial-principles.html",import.meta.url),new URL("editorial-principles.html",dist));
+await cp(new URL("../faq.html",import.meta.url),new URL("faq.html",dist));
+await cp(new URL("../llms.txt",import.meta.url),new URL("llms.txt",dist));
 await cp(new URL("../press.html",import.meta.url),new URL("press.html",dist));
 await cp(new URL("../data/public-brand-facts.json",import.meta.url),new URL("data/public-brand-facts.json",dist));
 await cp(new URL("../deploy/_headers",import.meta.url),new URL("_headers",dist));
