@@ -122,9 +122,26 @@ This phase does not remove ERN’s core rules:
 - visitor contributions never create camera LIVE truth;
 - Unknown/recheck is preferable to invented certainty.
 
+## Phase 6 — Discovery & Growth
+**State: ACTIVE — NON-GATED LANES ONLY**
+
+Purpose:
+- move ERN from a stable operating site toward an ERN-style Earth discovery/search product;
+- improve deterministic search, intent discovery, destination pathways and crawlable usefulness;
+- strengthen on-site journeys from curiosity → current Earth window → destination context → optional verified action;
+- improve reliability/performance without reopening completed infrastructure lanes.
+
+Phase 6 may proceed autonomously only in non-gated work. The following remain separately OFF unless explicitly approved: Pilot 2, Submission public intake, Now Moment media, public generative Guide, analytics, social-channel connection and any other separate feature gate.
+
+Phase 6 exit direction:
+- search/discovery behaves coherently across public surfaces;
+- destination journeys are useful without requiring generative AI;
+- crawlable discovery surfaces are stronger and fail-closed truth rules remain intact;
+- growth work does not depend on analytics, social accounts or gated visitor-contribution features.
+
 ## Current summary
 
-ERN has **completed the Phase 5 entry gate and is now operating in Phase 5**.
+ERN has completed the Phase 5 operating foundation and is now advancing into **Phase 6 — Discovery & Growth** in non-gated lanes only.
 
 Phase 4 is active with **Pilot 1 — Earth Signals** now live in limited form:
 - Earth Signals: runtime ON + public manifest ON for structured 45-minute signals only;
