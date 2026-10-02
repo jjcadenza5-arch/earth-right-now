@@ -33,8 +33,8 @@ assert.match(builder,/matching place/,"Places directory should report filtered r
 assert.match(builder,/discoverDefinitions/,"Phase 6 should define deterministic crawlable discovery categories");
 assert.match(builder,/discover\/index\.html/,"Phase 6 should build a crawlable Discover index");
 assert.match(builder,/base\+"discover\/"\+def\.id/,"Phase 6 category pages should use stable canonical URLs");
-assert.match(builder,/categoryMatch\(p,def\)/,"Discovery category membership should be deterministic");
-assert.match(builder,/structuredRows\.filter\(p=>categoryMatch\(p,def\)\)/,"Discovery category pages must only use indexable current\/schedule-verified places");
+assert.match(builder,/editorialCollectionRows\(structuredRows,def\)/,"Discovery category membership should use the shared deterministic collection engine");
+assert.match(builder,/const rows=editorialCollectionRows\(structuredRows,def\)/,"Discovery category pages must only derive from indexable current\/schedule-verified places");
 assert.match(builder,/Categories are editorial discovery paths; they never change source truth or paid ranking/,"Discovery index must preserve truth and ranking boundaries");
 assert.match(builder,/\.\.\.discoverRows\.map\(x=>\(\{loc:x\.url,lastmod:x\.lastmod\}\)\)/,"Discovery category pages should be included in the sitemap");
 
