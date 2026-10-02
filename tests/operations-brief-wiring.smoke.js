@@ -20,4 +20,6 @@ assert.match(briefScript,/const phase7OperatingStatus=await optional\(args\[35\]
 assert.match(yml,/phase8-operating-status\.json/);assert.match(yml,/phase8:status/);
 assert.match(briefScript,/const phase8OperatingStatus=await optional\(args\[36\]\)/);assert.match(briefScript,/phase7OperatingStatus,phase8OperatingStatus/);
 
-assert.match(briefScript,/const phase9OperatingStatus=await optional\(args\[37\]\)/);assert.match(briefScript,/phase8OperatingStatus,phase9OperatingStatus/);\nassert.match(yml,/phase10-operating-status\\.json/);assert.match(yml,/phase10:status/);\nassert.match(briefScript,/const phase10OperatingStatus=await optional\\(args\\[38\\]\\)/);assert.match(briefScript,/phase9OperatingStatus,phase10OperatingStatus/);
+assert.match(briefScript,/const phase9OperatingStatus=await optional\(args\[37\]\)/);assert.match(briefScript,/phase8OperatingStatus,phase9OperatingStatus/);
+assert.match(yml,/phase10-operating-status\.json/);assert.match(yml,/phase10:status/);
+assert.match(briefScript,/const phase10OperatingStatus=await optional\(args\[38\]\)/);assert.match(briefScript,/phase9OperatingStatus,phase10OperatingStatus/);
