@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";
+import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/phase7-exit-review.mjs"],{encoding:"utf8"});
+assert.equal(r.status,0,r.stderr);
+const x=JSON.parse(r.stdout);
+assert.equal(x.phase,7);
+assert.equal(x.ready,true);
+assert.equal(x.blockers.length,0);
+assert.equal(x.launchQa,"READY_NON_GATED_LAUNCH_PACKAGE");
+assert.equal(x.separateFeatureGatesRemainOff,true);
+assert.equal(x.next,"MARK_PHASE7_COMPLETE_AND_ASSESS_NEXT_PHASE");
+for(const k of ["socialAccountActionRequired","automaticPostingAllowed","analyticsActivationAllowed","payoutAccountActionAllowed","separateFeatureActivationAllowed"])assert.equal(x.safety[k],false);
+console.log("Phase 7 exit review is ready without requiring external account actions");
