@@ -1,0 +1,15 @@
+import assert from "node:assert/strict";
+import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/phase7-launch-qa.mjs"],{encoding:"utf8"});
+assert.equal(r.status,0,r.stderr);
+const x=JSON.parse(r.stdout);
+assert.equal(x.phase,7);
+assert.equal(x.state,"READY_NON_GATED_LAUNCH_PACKAGE");
+assert.equal(x.issues.length,0);
+assert.equal(x.launchMessagesReady,true);
+assert.equal(x.storiesPackReady,true);
+assert.equal(x.partnerBusinessKitReady,true);
+assert.equal(x.siteShareReady,true);
+assert.equal(x.socialChannelsConnected,0);
+for(const k of ["automaticAccountCreationAllowed","automaticPostingAllowed","analyticsActivationImplied","payoutActionImplied","separateFeatureActivationImplied"])assert.equal(x.safety[k],false);
+console.log("Phase 7 launch package is coherent and external actions remain gated");
