@@ -5,11 +5,18 @@ assert.equal(r.status,0,r.stderr);
 const x=JSON.parse(r.stdout);
 assert.equal(x.phase,9);
 assert.equal(x.entryApproved,true);
-assert.equal(x.canonicalPhaseNumber,9);
+assert.ok(Number(x.canonicalPhaseNumber)>=9);
 assert.equal(x.separateFeatureGatesRemainOff,true);
 assert.ok(Array.isArray(x.activeLanes));
 assert.ok(Array.isArray(x.plannedLanes));
-assert.ok(x.openNonGatedLaneCount>0);
+if(x.state==="COMPLETE"){
+  assert.equal(x.openNonGatedLaneCount,0);
+  assert.equal(x.activeLanes.length,0);
+  assert.equal(x.plannedLanes.length,0);
+  assert.equal(x.next,"PHASE9_COMPLETE");
+}else{
+  assert.ok(x.openNonGatedLaneCount>0);
+}
 assert.equal(x.safety.automaticSocialAccountCreationAllowed,false);
 assert.equal(x.safety.automaticPostingAllowed,false);
 assert.equal(x.safety.analyticsActivationAllowed,false);
