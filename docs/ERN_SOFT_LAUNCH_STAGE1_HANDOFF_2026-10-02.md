@@ -27,7 +27,7 @@ Canonical approval:
 Operating workplan:
 `data/soft-launch-stage1-workplan.json`
 
-The owner explicitly approved soft public launch of the current simple product, while keeping all separately gated capabilities off.
+The owner explicitly approved soft public launch of the current simple product. On 2026-10-02 the owner separately approved minimal privacy-respecting analytics and search-gap logging. That analytics lane is now active under `AGGREGATE_ONLY`; all other separately gated capabilities remain off.
 
 ## Operating lanes
 Active operating lanes:
@@ -83,13 +83,74 @@ Current verified commercial foundation:
 
 The payout method is a future human/account action required before receiving payouts; it does not block ERN public operation or existing tracked links.
 
-Because analytics remains OFF, Stage 1 explicitly records:
-- traffic measured: **NO**
-- bookings measured: **NO**
-- conversions measured: **NO**
-- revenue measured: **NO**
+Soft-launch analytics is now **ACTIVE** using ERN's first-party aggregate analytics service:
+- approximate visitors/page views: **MEASURED**
+- coarse country/region: **MEASURED**
+- device class: **MEASURED**
+- referrer hostname: **MEASURED**
+- ERN searches and zero-result search gaps: **MEASURED**
+- current-window/source opens: **MEASURED**
+- verified commercial outbound actions: **MEASURED**
+- bookings: **NOT INFERRED / NOT MEASURED BY ERN**
+- conversions/transactions: **NOT INFERRED / NOT MEASURED BY ERN**
+- revenue/commission: **NOT INFERRED / NOT MEASURED BY ERN**
 
-Do not infer any of those from clicks, links, partner readiness, source traffic or public availability.
+Analytics is first-party, aggregate-only, honors DNT/GPC, stores no raw IP address or precise visitor coordinates, does not transmit My Earth favorites/recent history, and retains aggregate analytics for no more than 90 days under the current policy.
+
+## Minimal privacy analytics and search-gap learning
+Canonical approval:
+`data/soft-launch-analytics-approval.json`
+
+Verified deployment:
+`data/analytics-deployment.json`
+
+Service:
+- first-party ERN analytics Worker on the existing Cloudflare account;
+- no new external account or paid analytics vendor;
+- Durable Object aggregate storage;
+- raw IP storage: **NO**;
+- per-event row storage: **NO**;
+- precise location storage: **NO**;
+- cross-site tracking / advertising profiles: **NO**;
+- retention: **90 days maximum**.
+
+Measured soft-launch events include page views, approximate unique/new/returning use, coarse country/region, device class, referrer hostname, ERN place/source opens, privacy-filtered searches, zero-result searches, and verified commercial outbound opens.
+
+Daily Operations produces:
+- `analytics-health.json`;
+- a public-safe/redacted aggregate summary;
+- a private retained owner report with aggregated search-gap terms.
+
+The first Operations baseline after deployment correctly recorded zero measured visitors/searches because public analytics had not yet been deployed to the site. Treat that as baseline zero, not evidence of no demand.
+
+## Evidence-driven catalog growth
+Zero-result search terms are demand evidence, not automatic publishing instructions.
+
+Use repeated gaps to raise research priority only after ERN truth, permission, currentness, playback and quality checks remain satisfied.
+
+**Chiang Mai** is a known initial demand gap. The official Chiang Mai PAO CCTV candidate remains research-only because the current official page still reports standby / waiting-for-feed rather than a dependable visitor-facing current view. It is now tagged `P1_KNOWN_DEMAND_GAP` and should be revisited only after a material source-state change or repeated production demand evidence. Do not promote a weak/static substitute merely to fill the gap.
+
+## Verified commercial inventory
+Owner-readable inventory:
+`docs/ERN_VERIFIED_COMMERCIAL_INVENTORY_2026-10-02.md`
+
+Current verified relationships:
+- **4 affiliate partners**
+- **11 verified travel-offer records**
+
+Current partners: Viator, Klook via Travelpayouts, Tiqets via Travelpayouts and Welcome Pickups via Travelpayouts.
+
+Existing verified destinations/actions cover Auckland, Statue of Liberty / New York, Tokyo, Sydney, Honolulu/Waikiki and Auckland airport transfer use cases.
+
+Already-approved-partner expansion candidates such as Kyoto, Seoul, Rovaniemi, Dublin, Rome and Chicago may proceed without destination-by-destination owner approval **only after an exact tracked link is generated and independently verified**. Do not fabricate links or mass-activate inventory.
+
+The first business proof funnel is now measurable through:
+**visitor → discovery → useful action → verified affiliate click**
+
+The next milestone requires real partner evidence:
+**first eligible transaction / first real revenue from a stranger**
+
+An outbound click alone is never evidence of a booking, sale, commission or revenue.
 
 ## Commercial operating rule
 The operating sequence remains:
@@ -114,7 +175,7 @@ Unless the owner explicitly approves otherwise:
 - 45-minute Now Moment media OFF;
 - Pilot 2 OFF;
 - public Submission intake OFF;
-- analytics OFF;
+- analytics **ON only in owner-approved `AGGREGATE_ONLY` mode**;
 - social-account actions OFF;
 - payout/account actions OFF;
 - all other separately gated features OFF.
@@ -174,6 +235,26 @@ Act only on:
 - genuine owner/account/business decisions.
 
 ## Current validation evidence
+Latest analytics deployment:
+- Worker deployment run `36975370219` — **SUCCESS**
+- analytics health: **VERIFIED**
+- raw network identifiers stored: **NO**
+- per-event rows stored: **NO**
+
+Latest Soft Launch Operations validation:
+- Operations run at current analytics integration — **SUCCESS**
+- private analytics fetch/report generation: **SUCCESS**
+- domain and Stage 1 checks: **SUCCESS**
+
+Latest public release:
+- Pages run `36976547930` at commit `3a14bd0eeaebad58e469326c4dd0d9589d839327` — **SUCCESS**
+- current release smoke suite: **SUCCESS**
+- public launch/mobile/accessibility/performance/commercial checks: **SUCCESS**
+- static release and public module integrity: **SUCCESS**
+- GitHub Pages deployment: **SUCCESS**
+
+Earlier Stage 1 reference evidence follows:
+
 Stage 1 Operations heartbeat:
 - run `36968809467` — **SUCCESS**
 - domain health: **OK**
