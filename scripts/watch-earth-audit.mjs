@@ -11,13 +11,13 @@ if(!checks.length){
 }
 const anchor=new Date(Math.max(...checks)),day=anchor.toISOString().slice(0,10);
 const hours=[0,6,12,18];
-const rows=hours.map(hour=>{
-  const now=new Date(`${day}T${String(hour).padStart(2,"0")}:00:00Z`);
+const auditMoments=[new Date(),...hours.map(hour=>new Date(`${day}T${String(hour).padStart(2,"0")}:00:00Z`))];
+const rows=auditMoments.map(now=>{
   const items=buildDynamicWatchEarth(sources,{limit:20,now}),snap=watchEarthSnapshot(items,{limit:20,now});
   const ids=items.map(s=>s.id),uniqueIds=new Set(ids),eligible=items.filter(s=>watchEarthEligible(s,{now})).length;
   const previews=items.filter(s=>s.truth==="PREVIEW").length;
   const sequence=watchEarthSequenceDiagnostics(items);
-  return{utc:now.toISOString(),...snap,...sequence,target:20,shortfall:Math.max(0,20-items.length),eligible,duplicateIds:ids.length-uniqueIds.size,previews,titles:items.map(s=>s.title)};
+  return{utc:now.toISOString(),actualNow:Math.abs(Date.now()-now.getTime())<60000,...snap,...sequence,target:20,shortfall:Math.max(0,20-items.length),eligible,duplicateIds:ids.length-uniqueIds.size,previews,titles:items.map(s=>s.title)};
 });
 const violations=[];
 for(const row of rows){
@@ -33,4 +33,4 @@ if(violations.length){
   console.error(`Watch Earth audit failed with ${violations.length} invariant violation(s).`);
   process.exit(1);
 }
-console.log("Watch Earth audit passed across four UTC dayparts.");
+console.log("Watch Earth audit passed for the actual current clock and four anchored UTC dayparts.");
