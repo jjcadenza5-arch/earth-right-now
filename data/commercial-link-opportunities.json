@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T16:25:00Z",
+  "generatedAt": "2026-10-02T16:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -204,8 +204,10 @@
       "intent": "transport",
       "priority": "P2",
       "reason": "Welcome Pickups currently serves Rome airport transfers; this complements the existing Rome attraction link with a distinct transport action.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate and human-verify one Rome Welcome Pickups transfer link in Travelpayouts."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate Rome transport clicks; keep transfer options downstream from Earth discovery.",
+      "trackingUrl": "https://tpo.mx/nXA1do8a",
+      "verifiedAt": "2026-10-02T16:30:00Z"
     }
   ]
 }
