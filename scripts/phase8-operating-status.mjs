@@ -1,0 +1,10 @@
+import fs from "node:fs";
+import {execFileSync} from "node:child_process";
+const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
+const run=p=>JSON.parse(execFileSync(process.execPath,[p],{encoding:"utf8"}));
+const approval=read("data/phase8-entry-approval.json"),plan=read("data/phase8-workplan.json"),phase=run("scripts/project-phase-status.mjs");
+const open=(plan.lanes||[]).filter(x=>x.gated!==true&&["ACTIVE","PLANNED"].includes(x.status));
+const active=open.filter(x=>x.status==="ACTIVE"),planned=open.filter(x=>x.status==="PLANNED"),c=approval?.constraints||{};
+const closed=c.socialAccountCreationApproved===false&&c.automaticPostingApproved===false&&c.analyticsActivationApproved===false&&c.payoutAccountActionApproved===false&&c.pilot2ActivationApproved===false&&c.submissionPublicActivationApproved===false&&c.nowMomentMediaActivationApproved===false&&c.generativeGuidePublicActivationApproved===false&&c.otherSeparateFeatureGatesApproved===false&&approval?.automaticExternalActionsAllowed===false;
+const report={schemaVersion:1,phase:8,label:"Editorial Collections & Evergreen Growth",entryApproved:approval?.approved===true,canonicalPhaseNumber:phase.phaseNumber,state:plan.state,separateFeatureGatesRemainOff:closed,activeLanes:active.map(x=>x.id),plannedLanes:planned.map(x=>x.id),openNonGatedLaneCount:open.length,next:!approval?.approved?"REQUIRE_PHASE8_APPROVAL":!closed?"STOP_PHASE8_GATE_BOUNDARY_VIOLATION":open.length?"CONTINUE_PHASE8_NON_GATED_EDITORIAL_GROWTH":"PHASE8_REVIEW_READY",safety:{automaticSocialAccountCreationAllowed:false,automaticPostingAllowed:false,analyticsActivationAllowed:false,payoutAccountActionAllowed:false,automaticPublicFeatureActivationAllowed:false}};
+console.log(JSON.stringify(report,null,2));if(!report.entryApproved||!report.separateFeatureGatesRemainOff||report.canonicalPhaseNumber!==8)process.exitCode=1;
