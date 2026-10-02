@@ -461,13 +461,7 @@ function renderWander(){
  const start=(state.wanderOffset*6)%diverse.length;const pick=[];for(let i=0;i<Math.min(6,diverse.length);i++)pick.push(diverse[(start+i)%diverse.length]);
  $("#wanderGrid").replaceChildren(...pick.map(wanderCard));$("#wanderNote").textContent=`${pick.length} places beyond the current Top 20 · healthy sources only · ${visitorDaypart()} selection context`;
 }
-function renderDiscoveryProof(){
- const safe=state.sources.filter(s=>s&&s.health==="HEALTHY"&&s.truth!=="PREVIEW"&&!!safeExternalUrl(s.sourceUrl||s.officialUrl));
- const places=groupByPlace(safe),current=groupByPlace(state.sources.filter(guideEligible));
- const countries=new Set(safe.map(s=>s.country).filter(Boolean));
- const p=$("#proofPlaces"),c=$("#proofCountries"),n=$("#proofCurrent");
- if(p)p.textContent=places.length;if(c)c.textContent=countries.size;if(n)n.textContent=current.length;
-}
+function renderDiscoveryProof(){const s=state.sources.filter(x=>x?.health==="HEALTHY"&&x.truth!=="PREVIEW"&&safeExternalUrl(x.sourceUrl||x.officialUrl));$("#proofPlaces").textContent=groupByPlace(s).length;$("#proofCountries").textContent=new Set(s.map(x=>x.country).filter(Boolean)).size;$("#proofCurrent").textContent=groupByPlace(state.sources.filter(guideEligible)).length}
 
 function renderAtlasBeyond(){
  const box=$("#atlasBeyond"),grid=$("#atlasBeyondGrid"),note=$("#atlasBeyondNote");
