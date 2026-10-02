@@ -435,6 +435,23 @@ All release, lean, whole-product, public-launch, mobile, accessibility, performa
 
 Direct HTTP fetch of the custom domain could not be independently repeated from the current assistant environment because its DNS/network resolver is unavailable. The conclusion is based on the successfully generated release artifact plus GitHub Pages deployment success; do not misstate this as a manual external browser fetch.
 
+## External live-source wording refinement
+Completed during Soft Launch / Operating Stage 1 on 2026-10-02.
+
+Visitor-language rule:
+- embedded current stream works in ERN → show normally;
+- verified-current external live stream → **Live stream available at the source** with **Open live source**;
+- healthy source whose verification is stale → **Source recheck due** with a neutral **Open source** handoff;
+- degraded/offline/no usable source → unavailable wording only.
+
+This keeps ERN positive without weakening source truth: `HEALTHY` alone does not prove currentness, and stale/recheck entries are never upgraded to LIVE.
+
+The same positive wording is used on generated destination-page links for verified-current external sources.
+
+During validation, the production audit exposed a time-dependent false positive for the Kyoto Nishiki Market embed outside its provider-published 11:00–18:00 JST live window. The fallback audit now accepts official-source fallback outside published hours instead of incorrectly requiring EMBED to remain primary.
+
+Final Pages run `36989173238` — **SUCCESS**. Release smoke, whole-product, performance, mobile, accessibility, SEO and deployment checks all passed.
+
 ## What to do next
 Continue operating autonomously through the existing scheduled Operations checks.
 
