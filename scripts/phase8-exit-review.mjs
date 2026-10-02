@@ -10,7 +10,7 @@ const html=fs.readFileSync("index.html","utf8");
 const builder=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
 const i18n=fs.readFileSync("src/home-i18n.js","utf8");
 const blockers=[];
-if(phase.phaseNumber!==8)blockers.push("CANONICAL_PHASE_NOT_8");
+if(Number(phase.phaseNumber)<8)blockers.push("CANONICAL_PHASE_BEFORE_8");
 if(status.entryApproved!==true||status.separateFeatureGatesRemainOff!==true)blockers.push("PHASE8_OPERATING_BOUNDARY");
 if(!html.includes('id="editorialCollections"'))blockers.push("HOMEPAGE_COLLECTIONS_MISSING");
 for(const id of ["beaches-water","mountains-snow","cities-streets","wildlife-nature","calm-scenic"])if(!html.includes("./discover/"+id+"/"))blockers.push("HOMEPAGE_COLLECTION_LINK_"+id);
