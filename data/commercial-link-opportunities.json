@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T15:55:00Z",
+  "generatedAt": "2026-10-02T16:00:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -98,8 +98,10 @@
       "intent": "culture",
       "priority": "P2",
       "reason": "The skyline/museum-campus view can naturally connect to museums and attraction planning.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Check Chicago attraction coverage before generating any link."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate Chicago commercial clicks; keep attraction options downstream from discovery.",
+      "trackingUrl": "https://tiqets.tpo.mx/mcVcA84b",
+      "verifiedAt": "2026-10-02T16:00:00Z"
     },
     {
       "id": "klook-bangkok",
