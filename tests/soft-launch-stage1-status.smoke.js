@@ -1,0 +1,16 @@
+import assert from "node:assert/strict";
+import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/soft-launch-stage1-status.mjs"],{encoding:"utf8"});
+assert.equal(r.status,0,r.stdout+"\n"+r.stderr);
+const x=JSON.parse(r.stdout);
+assert.equal(x.stage,"SOFT_LAUNCH_OPERATING_STAGE_1");
+assert.equal(x.state,"OPERATING");
+assert.equal(x.operatingMode,"OPERATE_NOT_EXPAND");
+assert.equal(x.productIdentity.category,"The Live Discovery Engine");
+assert.equal(x.commercialEvidence.trafficMeasured,false);
+assert.equal(x.commercialEvidence.bookingsMeasured,false);
+assert.equal(x.commercialEvidence.revenueMeasured,false);
+assert.equal(x.gates.analytics,false);
+assert.equal(x.safety.broadFeatureExpansionAllowed,false);
+assert.equal(x.safety.paidRankingAllowed,false);
+console.log("ERN Soft Launch Stage 1 operating boundaries passed");
