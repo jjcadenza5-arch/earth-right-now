@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "phase": 9,
+  "label": "International Reach & Localized Discovery",
+  "defaultLocale": "en",
+  "xDefaultLocale": "en",
+  "locales": [
+    {"code":"en","languageName":"English","pathPrefix":""},
+    {"code":"th","languageName":"ไทย","pathPrefix":"th"},
+    {"code":"de","languageName":"Deutsch","pathPrefix":"de"},
+    {"code":"fr","languageName":"Français","pathPrefix":"fr"},
+    {"code":"ja","languageName":"日本語","pathPrefix":"ja"},
+    {"code":"zh","languageName":"中文","pathPrefix":"zh"},
+    {"code":"es","languageName":"Español","pathPrefix":"es"}
+  ],
+  "collections": [
+    "beaches-water",
+    "mountains-snow",
+    "cities-streets",
+    "wildlife-nature",
+    "calm-scenic"
+  ],
+  "routing": {
+    "englishRoot": "/discover/",
+    "localizedRootPattern": "/{locale}/discover/",
+    "collectionPattern": "/{localePrefix}discover/{collection}/",
+    "destinationPagesRemainCanonicalEnglish": true
+  },
+  "safety": {
+    "changesSourceTruth": false,
+    "changesPlaybackEligibility": false,
+    "changesCollectionMembership": false,
+    "automaticTranslationAllowed": false,
+    "paidRankingAllowed": false,
+    "requiresAnalytics": false,
+    "requiresSocialAccount": false,
+    "automaticExternalActionAllowed": false
+  }
+}
