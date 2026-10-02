@@ -1,0 +1,15 @@
+import assert from "node:assert/strict";
+import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/phase9-exit-review.mjs"],{encoding:"utf8"});
+assert.equal(r.status,0,r.stderr);
+const x=JSON.parse(r.stdout);
+assert.equal(x.phase,9);
+assert.equal(x.ready,true);
+assert.equal(x.blockers.length,0);
+assert.equal(x.unfinishedLanes.length,0);
+assert.equal(x.separateFeatureGatesRemainOff,true);
+assert.equal(x.localeCount,7);
+assert.equal(x.collectionCount,5);
+assert.equal(x.next,"MARK_PHASE9_COMPLETE");
+for(const k of ["automaticPostingAllowed","analyticsActivationAllowed","socialAccountActionAllowed","payoutAccountActionAllowed","pilot2ActivationAllowed","submissionPublicActivationAllowed","nowMomentMediaActivationAllowed","generativeGuidePublicActivationAllowed","separateFeatureActivationAllowed"])assert.equal(x.safety[k],false);
+console.log("Phase 9 exit review is ready with all separate feature gates closed");
