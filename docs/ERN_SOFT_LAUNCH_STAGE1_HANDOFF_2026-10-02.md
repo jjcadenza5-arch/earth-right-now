@@ -304,6 +304,56 @@ Final validation after the repair:
 - public launch/mobile/accessibility/performance checks: **SUCCESS**
 - GitHub Pages deployment: **SUCCESS**
 
+## Destination search matching repair
+Owner testing on 2026-10-02 found that searching **New York** could return no public result even though ERN already contained **New York Skyline — Jersey City** and the broader New York Harbor destination.
+
+Root cause:
+- text matching already contained some geography;
+- public browser search then filtered matched catalog records through current-only eligibility;
+- therefore an existing destination could disappear entirely when its source verification became `RECHECK DUE`;
+- the catalog also had no populated `aliases`, `city`, `state` or `tags` metadata on any of its 94 records.
+
+New search contract:
+- destination matching is forgiving and metadata-first, not exact-display-title-only;
+- searchable metadata includes title, placeId, city, state, region, country, provider, story, categories, tags and aliases;
+- punctuation/diacritics are folded for search without changing display names;
+- current verified windows rank ahead of stale/reference-only windows;
+- a healthy known destination with a safe official/provider handoff remains discoverable when current verification expires;
+- that stale result keeps `RECHECK DUE` / reference-only truth and never becomes fake LIVE;
+- unhealthy/offline or unsafe-link records are not admitted through this fallback.
+
+Explicit high-confidence aliases were added to 26 current catalog records, including:
+- New York / New York City / NYC;
+- Mount Rainier / Mt Rainier;
+- ISS / International Space Station;
+- St Johns / Saint John's variants;
+- Rio / Rio de Janeiro;
+- Cancun;
+- Reykjavik;
+- Sydney / Coogee / Randwick;
+- Honolulu / Waikiki;
+- Chicago, Boston, Seoul, Bangkok, Singapore, Rome and Rovaniemi destination forms.
+
+Required examples now pass:
+- `New York` → New York Harbor / New York Skyline destination;
+- `NYC` → New York Harbor / New York Skyline destination;
+- `New York City` → New York Harbor / New York Skyline destination;
+- a future Chiang Mai record with `city: "Chiang Mai"`, region/title/placeId/alias evidence is searchable by `Chiang Mai` even when the display title is more specific.
+
+Catalog-wide audit:
+`npm run search:metadata-audit`
+
+The audit validates every explicit alias against the production search engine and verifies that destination metadata remains represented in each searchable document. It is also part of daily ERN Operations.
+
+Final validation:
+- Pages run `36979017139` — **SUCCESS**
+- Operations run `36979017171` — **SUCCESS**
+- JavaScript syntax — **SUCCESS**
+- 106 current release smoke tests — **SUCCESS**
+- whole-product guard — **SUCCESS**
+- performance hard cap — **SUCCESS**
+- mobile/accessibility/public-launch checks — **SUCCESS**
+
 ## What to do next
 Continue operating autonomously through the existing scheduled Operations checks.
 
