@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness,phase5OperatingStatus,phase6OperatingStatus}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness,phase5OperatingStatus,phase6OperatingStatus,phase7OperatingStatus}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -244,6 +244,14 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push(`- Open Phase 6 non-gated lanes: ${phase6OperatingStatus.openNonGatedLaneCount||0}; next: ${phase6OperatingStatus.next||"REVIEW"}.`);
     lines.push("- Phase 6 discovery/growth work proceeds without enabling Pilot 2, submissions, Now Moment media, public generative Guide, analytics or social channels.","");
   }
+  if(phase7OperatingStatus){
+    lines.push("## Phase 7 — Launch & Distribution Readiness");
+    lines.push(`- Entry approved ${phase7OperatingStatus.entryApproved===true?"YES":"NO"}; separate feature gates ${phase7OperatingStatus.separateFeatureGatesRemainOff===true?"OFF / ISOLATED":"CHECK REQUIRED"}.`);
+    lines.push(`- Active non-gated lanes: ${(phase7OperatingStatus.activeLanes||[]).join(", ")||"none"}.`);
+    lines.push(`- Planned non-gated lanes: ${(phase7OperatingStatus.plannedLanes||[]).join(", ")||"none"}.`);
+    lines.push(`- Open Phase 7 non-gated lanes: ${phase7OperatingStatus.openNonGatedLaneCount||0}; next: ${phase7OperatingStatus.next||"REVIEW"}.`);
+    lines.push("- Phase 7 may prepare launch/distribution materials only; social account creation, posting, analytics, payout changes and separately gated public features remain off.","");
+  }
   if(earthSignals){
     lines.push("## Earth Signals readiness");
     lines.push(`- Mode: ${earthSignals.mode||"UNKNOWN"}; backend foundation ${earthSignals.backendFoundation?.state||"UNKNOWN"}; deployment ${earthSignals.deployment?.state||"UNKNOWN"}.`);
@@ -264,8 +272,10 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   const commercialResearchFiniteComplete=commercialOnboarding?.state==="PILOT_COVERAGE_REACHED"&&!(commercialResearchDepth?.items||[]).length;
   const humanPlaybackRenewals=(operatorReviewQueue?.renewalRequiredCount??operatorReviewQueue?.renewalCount??0);
   const phase6Open=(phase6OperatingStatus?.openNonGatedLaneCount||0)>0;
+  const phase7Open=(phase7OperatingStatus?.openNonGatedLaneCount||0)>0;
   lines.push("## Next operational focus");
-  if(phase6Open)lines.push(`- Continue Phase 6 non-gated discovery/growth work: ${(phase6OperatingStatus.activeLanes||[]).join(", ")||"advance the planned workplan"}. Do not fall back to completed Phase 5 maintenance merely because external gates remain closed.`);
+  if(phase7Open)lines.push(`- Continue Phase 7 non-gated launch/distribution readiness: ${(phase7OperatingStatus.activeLanes||[]).join(", ")||"advance the planned workplan"}. Do not fall back to completed Phase 6/5 maintenance merely because external gates remain closed.`);
+  else if(phase6Open)lines.push(`- Continue Phase 6 non-gated discovery/growth work: ${(phase6OperatingStatus.activeLanes||[]).join(", ")||"advance the planned workplan"}. Do not fall back to completed Phase 5 maintenance merely because external gates remain closed.`);
   if((operatorReviewQueue?.renewalRequiredCount??operatorReviewQueue?.renewalCount??0)>0)lines.push("- Complete only the minimum primary playback renewals needed to preserve the LIVE HERE target; keep extra renewal debt in backlog unless capacity allows.");
   else if((playbackHorizon?.summary?.due6h||0)>0||(playbackHorizon?.summary?.due12h||0)>0)lines.push("- Renew expiring inside-ERN HUMAN_PLAYBACK evidence before LIVE HERE eligibility lapses.");
   if((playbackEvidenceConsistency?.summary?.issues||0)>0)lines.push("- Resolve playback-evidence ledger/catalog drift before treating new LIVE HERE proof as authoritative.");
@@ -321,10 +331,15 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     submissionLocallyComplete:submissionExternalOnly
   };
   const autonomousHoldBlockers=Object.entries(autonomousHoldChecks).filter(([,passed])=>!passed).map(([key])=>key);
-  const autonomousHold=autonomousHoldBlockers.length===0&&!phase6Open;
+  const autonomousHold=autonomousHoldBlockers.length===0&&!phase6Open&&!phase7Open;
 
   lines.push("","## Autonomous work state");
-  if(phase6Open){
+  if(phase7Open){
+    lines.push(`- **PHASE 7 AUTONOMOUS WORK OPEN** — ${phase7OperatingStatus.openNonGatedLaneCount} declared non-gated lane(s) remain in Launch & Distribution Readiness.`);
+    if((phase7OperatingStatus.activeLanes||[]).length)lines.push("- Work active lanes first: "+phase7OperatingStatus.activeLanes.join(", ")+".");
+    if((phase7OperatingStatus.plannedLanes||[]).length)lines.push("- Then advance planned lanes deliberately: "+phase7OperatingStatus.plannedLanes.join(", ")+".");
+    lines.push("- Keep external account actions, posting, analytics, payout changes and separately gated features closed unless explicitly approved.");
+  }else if(phase6Open){
     lines.push(`- **PHASE 6 AUTONOMOUS WORK OPEN** — ${phase6OperatingStatus.openNonGatedLaneCount} declared non-gated lane(s) remain in the Discovery & Growth workplan.`);
     if((phase6OperatingStatus.activeLanes||[]).length)lines.push("- Work active lanes first: "+phase6OperatingStatus.activeLanes.join(", ")+".");
     if((phase6OperatingStatus.plannedLanes||[]).length)lines.push("- Then advance planned lanes deliberately: "+phase6OperatingStatus.plannedLanes.join(", ")+".");
