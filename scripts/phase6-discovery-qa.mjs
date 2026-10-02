@@ -12,12 +12,13 @@ const preflight=read("scripts/whole-product-preflight.mjs");
 const index=read("index.html");
 const phase=JSON.parse(execFileSync(process.execPath,["scripts/project-phase-status.mjs"],{encoding:"utf8"}));
 const issues=[];
+const phase6Complete=plan.state==="COMPLETE";
 const need=(ok,code)=>{if(!ok)issues.push(code)};
 need(approval?.approved===true,"PHASE6_APPROVAL_MISSING");
 need(approval?.automaticExpansionAllowed===false,"PHASE6_AUTOMATIC_EXPANSION_BOUNDARY");
 const constraints=approval?.constraints||{};
 for(const key of ["pilot2ActivationApproved","submissionPublicActivationApproved","nowMomentMediaActivationApproved","generativeGuidePublicActivationApproved","analyticsActivationApproved","socialChannelActivationApproved","otherSeparateFeatureGatesApproved"])need(constraints[key]===false,"GATE_OPEN_"+key);
-need(phase.phaseNumber===6,"CANONICAL_PHASE_NOT_6");
+need(phase6Complete?Number(phase.phaseNumber)>=6:phase.phaseNumber===6,"CANONICAL_PHASE_INVALID_FOR_PHASE6");
 need(app.includes("const intentGroups=")&&app.includes("ern:recent-searches:v1"),"SEARCH_DISCOVERY_INCOMPLETE");
 need(app.includes("...(s.aliases||[])"),"SEARCH_ALIASES_MISSING");
 need(builder.includes("Explore related places")&&builder.includes('id="placeFilter"'),"DESTINATION_PATHWAYS_INCOMPLETE");
@@ -35,14 +36,14 @@ const report={
  phase:6,
  label:"Discovery & Growth exit QA",
  generatedAt:new Date().toISOString(),
- state:issues.length?"BLOCKED":"READY_TO_COMPLETE_PHASE6",
+ state:issues.length?"BLOCKED":phase6Complete?"PHASE6_COMPLETE_VERIFIED":"READY_TO_COMPLETE_PHASE6",
  issueCount:issues.length,
  issues,
  completedLanes:expectedComplete,
  qaLane:"phase6-discovery-qa",
  separateFeatureGatesRemainOff:issues.every(x=>!x.startsWith("GATE_OPEN_")&&!x.includes("AUTOMATIC_EXPANSION")),
  safety:{automaticGateActivationAllowed:false,analyticsActivationAllowed:false,socialAccountActionAllowed:false,generativeGuidePublicActivationAllowed:false,paidRankingAllowed:false},
- next:issues.length?"FIX_PHASE6_QA_ISSUES":"COMPLETE_PHASE6_AND_ASSESS_NEXT_PHASE"
+ next:issues.length?"FIX_PHASE6_QA_ISSUES":phase6Complete?"NO_PHASE6_WORK_REOPENED":"COMPLETE_PHASE6_AND_ASSESS_NEXT_PHASE"
 };
 console.log(JSON.stringify(report,null,2));
 if(issues.length)process.exitCode=1;

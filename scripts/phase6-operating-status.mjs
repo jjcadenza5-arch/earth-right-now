@@ -18,6 +18,7 @@ const gatesClosed=
  constraints.socialChannelActivationApproved===false&&
  constraints.otherSeparateFeatureGatesApproved===false&&
  approval?.automaticExpansionAllowed===false;
+const completed=plan.state==="COMPLETE"&&open.length===0;
 const report={
  schemaVersion:1,
  phase:6,
@@ -29,7 +30,7 @@ const report={
  activeLanes:active.map(x=>x.id),
  plannedLanes:planned.map(x=>x.id),
  openNonGatedLaneCount:open.length,
- next:!approval?.approved?"REQUIRE_PHASE6_APPROVAL":!gatesClosed?"STOP_SEPARATE_GATE_BOUNDARY_VIOLATION":open.length?"CONTINUE_PHASE6_NON_GATED_WORK":"PHASE6_REVIEW_READY",
+ next:!approval?.approved?"REQUIRE_PHASE6_APPROVAL":!gatesClosed?"STOP_SEPARATE_GATE_BOUNDARY_VIOLATION":completed?"PHASE6_COMPLETE":open.length?"CONTINUE_PHASE6_NON_GATED_WORK":"PHASE6_REVIEW_READY",
  safety:{
   automaticSeparateGateActivationAllowed:false,
   analyticsActivationAllowed:false,
@@ -39,4 +40,5 @@ const report={
  }
 };
 console.log(JSON.stringify(report,null,2));
-if(!report.entryApproved||!report.separateFeatureGatesRemainOff||report.canonicalPhaseNumber!==6)process.exitCode=1;
+const canonicalOk=completed?Number(report.canonicalPhaseNumber)>=6:report.canonicalPhaseNumber===6;
+if(!report.entryApproved||!report.separateFeatureGatesRemainOff||!canonicalOk)process.exitCode=1;
