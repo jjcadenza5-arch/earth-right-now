@@ -456,5 +456,22 @@
     "verifiedAt": "2026-10-02T16:25:00Z",
     "expiresAt": "2026-12-31T00:00:00Z",
     "evidence": "Owner generated and opened the Travelpayouts/Welcome Pickups Bangkok link on 2026-10-02. Screenshot confirmed the Bangkok transfer booking page loaded correctly with Travelpayouts tracking parameters retained."
+  },
+  {
+    "id": "welcome-pickups-rome-transfer",
+    "title": "Rome airport & city transfer",
+    "placeId": "rome-spanish-steps",
+    "provider": "Welcome Pickups",
+    "intent": "transport",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "welcome-pickups",
+    "destinationScope": "Rome",
+    "url": "https://tpo.mx/nXA1do8a",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-02T16:30:00Z",
+    "expiresAt": "2026-12-31T00:00:00Z",
+    "evidence": "Owner generated and opened the Travelpayouts/Welcome Pickups Rome link on 2026-10-02 and confirmed it resolves to a useful Rome transfer page."
   }
 ]
