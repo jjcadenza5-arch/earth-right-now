@@ -371,5 +371,22 @@
     "verifiedAt": "2026-10-02T00:00:00Z",
     "expiresAt": "2026-12-31T00:00:00Z",
     "evidence": "Owner generated the Travelpayouts/Tiqets Rome destination link on 2026-10-02 and confirmed the short tracked URL resolves to a useful Rome Tiqets destination/attractions page."
+  },
+  {
+    "id": "klook-rovaniemi-santa-claus-village",
+    "title": "Explore Rovaniemi activities",
+    "placeId": "rovaniemi-santa-claus-village",
+    "provider": "Klook",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "klook",
+    "destinationScope": "Rovaniemi / Santa Claus Village",
+    "url": "https://klook.tpo.mx/6p7bRKjH",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-02T00:00:00Z",
+    "expiresAt": "2026-12-31T00:00:00Z",
+    "evidence": "Owner generated the Travelpayouts/Klook Rovaniemi destination link on 2026-10-02 and confirmed the short tracked URL resolves to a useful Rovaniemi Klook results page."
   }
 ]
