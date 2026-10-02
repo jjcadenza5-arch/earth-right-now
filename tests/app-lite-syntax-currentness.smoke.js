@@ -11,3 +11,7 @@ assert.doesNotMatch(app,/Why now · /,"old explanatory viewer label should be re
 assert.match(app,/guideWhere:/,"Guide shell translations should exist");
 assert.match(app,/guidePlaceholder:/,"Guide placeholder should localize");
 assert.match(app,/guideStart:/,"Guide opening response should localize");
+
+assert.match(app,/\.\.\.\(s\.aliases\|\|\[\]\)/,"public Explore search should include source aliases");
+assert.match(app,/const intentGroups=/,"public Explore search should support deterministic intent groups");
+assert.match(app,/activeIntents\.every\(g=>g\.match\(s\)\)/,"public Explore search should require matched deterministic intents");
