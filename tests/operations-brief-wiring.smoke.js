@@ -16,3 +16,6 @@ assert.match(briefScript,/phase5OperatingStatus,phase6OperatingStatus/);
 
 assert.match(yml,/phase7-operating-status\.json/);assert.match(yml,/phase7:status/);
 assert.match(briefScript,/const phase7OperatingStatus=await optional\(args\[35\]\)/);assert.match(briefScript,/phase6OperatingStatus,phase7OperatingStatus/);
+
+assert.match(yml,/phase8-operating-status\.json/);assert.match(yml,/phase8:status/);
+assert.match(briefScript,/const phase8OperatingStatus=await optional\(args\[36\]\)/);assert.match(briefScript,/phase7OperatingStatus,phase8OperatingStatus/);
