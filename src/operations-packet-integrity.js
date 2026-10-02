@@ -40,7 +40,8 @@ const requiredJson=[
  "phase5-readiness.json",
  "phase5-operating-status.json",
  "phase6-operating-status.json",
- "phase7-operating-status.json"
+ "phase7-operating-status.json",
+ "phase8-operating-status.json"
 ];
 const requiredText=["operator-brief.md"];
 
@@ -221,6 +222,16 @@ export async function validateOperationsPacket(dir="ern-ops"){
     const s=phase7Operating?.safety||{};
     if(s.automaticSocialAccountCreationAllowed!==false||s.automaticPostingAllowed!==false||s.analyticsActivationAllowed!==false||s.payoutAccountActionAllowed!==false||s.newAffiliateAccountActionAllowed!==false||s.automaticPublicFeatureActivationAllowed!==false)issues.push({file:"phase7-operating-status.json",code:"PHASE7_AUTONOMY_BOUNDARY_VIOLATION"});
     if(!Array.isArray(phase7Operating?.activeLanes)||!Array.isArray(phase7Operating?.plannedLanes))issues.push({file:"phase7-operating-status.json",code:"PHASE7_LANE_REGISTRY_INVALID"});
+  }
+
+  const phase8Operating=files["phase8-operating-status.json"];
+  if(phase8Operating){
+    if(phase8Operating?.entryApproved!==true)issues.push({file:"phase8-operating-status.json",code:"PHASE8_ENTRY_APPROVAL_MISSING"});
+    if(phase8Operating?.canonicalPhaseNumber!==8)issues.push({file:"phase8-operating-status.json",code:"PHASE8_CANONICAL_PHASE_MISMATCH"});
+    if(phase8Operating?.separateFeatureGatesRemainOff!==true)issues.push({file:"phase8-operating-status.json",code:"PHASE8_SEPARATE_GATE_BOUNDARY_VIOLATION"});
+    const s=phase8Operating?.safety||{};
+    if(s.automaticSocialAccountCreationAllowed!==false||s.automaticPostingAllowed!==false||s.analyticsActivationAllowed!==false||s.payoutAccountActionAllowed!==false||s.automaticPublicFeatureActivationAllowed!==false)issues.push({file:"phase8-operating-status.json",code:"PHASE8_AUTONOMY_BOUNDARY_VIOLATION"});
+    if(!Array.isArray(phase8Operating?.activeLanes)||!Array.isArray(phase8Operating?.plannedLanes))issues.push({file:"phase8-operating-status.json",code:"PHASE8_LANE_REGISTRY_INVALID"});
   }
 
   const businessControl=files["business-control.json"];
