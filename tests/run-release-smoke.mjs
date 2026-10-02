@@ -55,6 +55,7 @@ const releaseTests=[
   "phase7-operating-status.smoke.js",
   "phase7-launch-qa.smoke.js",
   "phase7-exit-review.smoke.js",
+  "editorial-collections.smoke.js",
   "now-moment-media-worker.smoke.js",
   "now-moment-photo-public-ui-off.smoke.js",
   "now-moment-photo-service.smoke.js",
