@@ -13,7 +13,7 @@ must(app.includes("guidePlaceMatches(")&&app.includes('params.get("guide")'),"ER
 must(read("src/release-verification-console.js").includes('./#view='),"release verification provider links do not match viewer routing");
 must(app.includes("localIntent="),"Search lost small/local-place intent handling");
 must(app.includes("[x.name,x.type,x.place,x.country,x.address,x.summary"),"Local Earth search lost verified address matching");
-must(app.includes("const matches=catalogMatches.filter(guideEligible)"),"Explore search must filter catalog matches through current truth");
+must(app.includes('matches=catalogMatches.filter(s=>guideEligible(s)||(s.health==="HEALTHY"&&!!safeExternalUrl(s.sourceUrl||s.officialUrl)))')&&app.includes('(guideEligible(b)?1:0)-(guideEligible(a)?1:0)'),"Explore search must rank current truth first and limit stale discovery to safe healthy reference handoffs");
 must(app.includes("offers:intent.planning?TP.guideOffers(state.travelOffers,items[0],state.affiliatePartners):[]"),"Guide planning links must remain post-ranking");
 must(app.includes("let pool=placeMatches.length?[...placeMatches]:state.sources.filter(guideEligible)"),"Guide place+intent ranking lost geographic constraint");
 must(app.includes("offers:intent.planning&&items.length?TP.guideOffers(state.travelOffers,items[0],state.affiliatePartners):[]"),"Guide intent-planning links must remain post-ranking after geographic constraint");
