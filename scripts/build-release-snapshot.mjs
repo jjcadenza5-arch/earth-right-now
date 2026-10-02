@@ -60,6 +60,8 @@ await cp(new URL("../src/solar-moment.js",import.meta.url),new URL("src/solar-mo
 await cp(new URL("../src/media-identity.js",import.meta.url),new URL("src/media-identity.js",dist));
 await cp(new URL("../src/playback-proof.js",import.meta.url),new URL("src/playback-proof.js",dist));
 await cp(new URL("../src/share-links.js",import.meta.url),new URL("src/share-links.js",dist));
+await cp(new URL("../src/analytics-config.js",import.meta.url),new URL("src/analytics-config.js",dist));
+await cp(new URL("../src/analytics-runtime.js",import.meta.url),new URL("src/analytics-runtime.js",dist));
 await cp(new URL("../src/telemetry-policy.js",import.meta.url),new URL("src/telemetry-policy.js",dist));
 await cp(new URL("../src/telemetry.js",import.meta.url),new URL("src/telemetry.js",dist));
 await cp(new URL("../src/commercial-attribution-runtime.js",import.meta.url),new URL("src/commercial-attribution-runtime.js",dist));
