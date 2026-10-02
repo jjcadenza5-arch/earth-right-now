@@ -56,6 +56,10 @@ console.log(JSON.stringify({
     timePassingAloneCountsAsSuccess:false
   },
   note:coreComplete
-    ?(participation.phase4PilotActive===true?"ERN core is complete and the limited Earth Signals Phase 4 pilot is active. Autonomous work should observe the pilot and preserve remaining gates without inventing new construction.":"ERN core is complete. Autonomous hold is the correct state when no maintenance blocker or external trigger exists; optional activation gates must not be misreported as unfinished core work.")
+    ?(phase.phaseNumber===6
+      ?"ERN core is complete and Phase 6 Discovery & Growth is active. Continue the declared non-gated Phase 6 workplan before entering hold; separate feature gates remain closed."
+      :participation.phase4PilotActive===true
+        ?"ERN core is complete and the limited Earth Signals Phase 4 pilot is active. Autonomous work should observe the pilot and preserve remaining gates without inventing new construction."
+        :"ERN core is complete. Autonomous hold is the correct state when no maintenance blocker or external trigger exists; optional activation gates must not be misreported as unfinished core work.")
     :"Autonomous work should address only the listed local blockers before core completion can be claimed."
 },null,2));
