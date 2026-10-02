@@ -23,7 +23,7 @@ Earth discovery and source ranking remain independent of commission, payout, par
 
 Travelpayouts Earthrightnow Project remains active/green. Travelpayouts Drive, automatic link rewriting and automatic placement remain disabled.
 
-**Payout method is not configured.** This does not block tracked links or click attribution, but it blocks receiving a payout and remains an owner-only account action before first payout.
+**Payout status:** Travelpayouts payout method was configured and email-confirmed by the owner on 2026-10-02. Viator payout setup was also confirmed completed by the owner on 2026-10-02. No payout-setup blocker remains for the currently active ERN affiliate relationships.
 
 ## Expansion batch completed
 
@@ -120,11 +120,9 @@ Potential later candidates already identified:
 
 No new partner account is required now.
 
-## Owner-only action still outstanding
+## Payout readiness
 
-Configure the **Travelpayouts payout method before first payout**.
-
-This does not block ERN, tracked links, click attribution or the current affiliate expansion.
+Travelpayouts and Viator payout setup are both owner-confirmed complete as of 2026-10-02. No current payout-setup action remains.
 
 Near-term business milestone remains:
 **visitor → discovery → useful travel action → affiliate click → eligible transaction**
