@@ -42,7 +42,8 @@ const requiredJson=[
  "phase6-operating-status.json",
  "phase7-operating-status.json",
  "phase8-operating-status.json",
- "phase9-operating-status.json"
+ "phase9-operating-status.json",
+ "phase10-operating-status.json"
 ];
 const requiredText=["operator-brief.md"];
 
@@ -245,6 +246,17 @@ export async function validateOperationsPacket(dir="ern-ops"){
     const s=phase9Operating?.safety||{};
     if(s.automaticSocialAccountCreationAllowed!==false||s.automaticPostingAllowed!==false||s.analyticsActivationAllowed!==false||s.payoutAccountActionAllowed!==false||s.automaticPublicFeatureActivationAllowed!==false)issues.push({file:"phase9-operating-status.json",code:"PHASE9_AUTONOMY_BOUNDARY_VIOLATION"});
     if(!Array.isArray(phase9Operating?.activeLanes)||!Array.isArray(phase9Operating?.plannedLanes))issues.push({file:"phase9-operating-status.json",code:"PHASE9_LANE_REGISTRY_INVALID"});
+  }
+
+  const phase10Operating=files["phase10-operating-status.json"];
+  if(phase10Operating){
+    if(phase10Operating?.entryApproved!==true)issues.push({file:"phase10-operating-status.json",code:"PHASE10_ENTRY_APPROVAL_MISSING"});
+    const phase10CanonicalOk=phase10Operating?.state==="COMPLETE"?Number(phase10Operating?.canonicalPhaseNumber)>=10:phase10Operating?.canonicalPhaseNumber===10;
+    if(!phase10CanonicalOk)issues.push({file:"phase10-operating-status.json",code:"PHASE10_CANONICAL_PHASE_MISMATCH"});
+    if(phase10Operating?.separateFeatureGatesRemainOff!==true)issues.push({file:"phase10-operating-status.json",code:"PHASE10_SEPARATE_GATE_BOUNDARY_VIOLATION"});
+    const s=phase10Operating?.safety||{};
+    if(s.automaticPublicFeatureActivationAllowed!==false||s.automaticExternalAccountActionAllowed!==false||s.spendAllowed!==false||s.credentialExposureAllowed!==false||s.irreversibleBusinessAccountChangeAllowed!==false||s.paidRankingAllowed!==false)issues.push({file:"phase10-operating-status.json",code:"PHASE10_AUTONOMY_BOUNDARY_VIOLATION"});
+    if(!Array.isArray(phase10Operating?.activeLanes)||!Array.isArray(phase10Operating?.plannedLanes))issues.push({file:"phase10-operating-status.json",code:"PHASE10_LANE_REGISTRY_INVALID"});
   }
 
   const businessControl=files["business-control.json"];
