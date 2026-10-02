@@ -7,37 +7,37 @@
     {
       "id": "thematic-collection-engine",
       "label": "Thematic collection engine",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "crawlable-collection-pages",
       "label": "Crawlable collection pages",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "multilingual-discovery-copy",
       "label": "Multilingual discovery copy",
-      "status": "PLANNED",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "seasonal-current-collections",
       "label": "Seasonal & current collections",
-      "status": "PLANNED",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "collection-shareability",
       "label": "Collection shareability",
-      "status": "PLANNED",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "phase8-exit-review",
       "label": "Phase 8 exit review",
-      "status": "PLANNED",
+      "status": "ACTIVE",
       "gated": false
     }
   ],
@@ -51,5 +51,5 @@
     "nowMomentMedia": false,
     "generativeGuidePublic": false
   },
-  "next": "CONTINUE_PHASE8_NON_GATED_EDITORIAL_GROWTH"
+  "next": "RUN_PHASE8_EXIT_REVIEW"
 }
