@@ -4,7 +4,7 @@
   "shortName": "ERN",
   "slogan": "See before you go.",
   "canonicalUrl": "https://earthrightnow.app/",
-  "description": "Earth Right Now helps people look at real places through truthful live and current visual windows before they travel, explore or simply wonder what Earth looks like right now.",
+  "description": "Earth Right Now is the Live Discovery Engine: a simple, truthful way to search real places, see live and current visual windows, discover what is nearby, decide what is worth exploring, and go. See before you go.",
   "principles": [
     "Truth and currentness before storytelling",
     "Payment never buys Earth-window ranking",
@@ -21,5 +21,15 @@
   },
   "socialAccountClaims": [],
   "contactClaimed": false,
-  "commercialRankingAffected": false
+  "commercialRankingAffected": false,
+  "category": "The Live Discovery Engine",
+  "productDirection": "Live Discovery Search Engine",
+  "discoveryJourney": [
+    "Search",
+    "See Live",
+    "Discover",
+    "Decide",
+    "Go"
+  ],
+  "businessDirection": "Successful Small Internet Business"
 }
