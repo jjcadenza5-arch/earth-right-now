@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T16:05:00Z",
+  "generatedAt": "2026-10-02T16:15:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -159,8 +159,10 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Temple Bar is a strong current culture/street window and Viator has broad Dublin tour inventory; this adds a second direct-partner destination without affecting discovery ranking.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Use the existing Viator partner link tool to generate and human-verify one Dublin destination-level tracked link."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate Dublin commercial clicks; keep Viator planning downstream from Earth discovery.",
+      "trackingUrl": "https://www.viator.com/Dublin/d503-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-02T16:15:00Z"
     },
     {
       "id": "viator-cape-town",
