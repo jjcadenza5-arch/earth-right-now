@@ -4,13 +4,19 @@
   "label": "ERN Soft Launch / Operating Stage 1",
   "approved": true,
   "approvedAt": "2026-10-02",
-  "approvalBasis": "Owner explicitly approved moving the current simple ERN product into a controlled soft public launch / real operating period.",
+  "approvalBasis": "Owner explicitly approved moving the current simple ERN product into a controlled soft public launch / real operating period. Owner additionally approved minimal privacy-respectful analytics and search-gap logging during Soft Launch Stage 1 on 2026-10-02.",
   "productIdentity": {
     "name": "Earth Right Now",
     "category": "The Live Discovery Engine",
     "tagline": "See before you go.",
     "direction": "Live Discovery Search Engine",
-    "journey": ["Search","See Live","Discover","Decide","Go"]
+    "journey": [
+      "Search",
+      "See Live",
+      "Discover",
+      "Decide",
+      "Go"
+    ]
   },
   "operatingIntent": "Stop expanding ERN sideways. Operate the current simple product reliably in the real world and begin proving that it can support a Successful Small Internet Business.",
   "constraints": {
@@ -25,10 +31,11 @@
     "submissionPublic": false,
     "nowMomentMediaPublic": false,
     "generativeGuidePublic": false,
-    "analytics": false,
+    "analytics": true,
     "socialAccountActions": false,
     "payoutAccountActions": false,
-    "otherSeparateFeatureGates": false
+    "otherSeparateFeatureGates": false,
+    "analyticsScope": "MINIMAL_PRIVACY_AGGREGATE_ONLY"
   },
   "commercialBoundaries": {
     "editorialRankingMayUsePayment": false,
