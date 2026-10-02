@@ -1,0 +1,11 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const x=JSON.parse(fs.readFileSync("data/phase8-current-collection-policy.json","utf8"));
+assert.equal(x.phase,8);
+assert.equal(x.decision,"KEEP_EVERGREEN_COLLECTIONS_STATIC_AND_CURRENT_MOMENTS_IN_WATCH_EARTH");
+assert.equal(x.currentMomentOwner,"WATCH_EARTH_RUNTIME");
+assert.equal(x.safety.inventSeasonalityAllowed,false);
+assert.equal(x.safety.staleCurrentClaimsAllowed,false);
+assert.equal(x.safety.duplicateRankingLogicAllowed,false);
+assert.equal(x.safety.paidRankingAllowed,false);
+console.log("Phase 8 seasonal/current collection policy avoids invented or duplicate moment claims");
