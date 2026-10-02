@@ -7,37 +7,37 @@
     {
       "id": "phase-registry-hardening",
       "label": "Data-driven phase registry & transition hardening",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "localized-collection-registry",
       "label": "Localized collection registry",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "crawlable-localized-discovery",
       "label": "Crawlable localized Discover pages",
-      "status": "PLANNED",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "hreflang-canonical-sitemap",
       "label": "hreflang, canonical & sitemap localization",
-      "status": "PLANNED",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "localized-discovery-navigation",
       "label": "Localized discovery navigation & language handoff",
-      "status": "PLANNED",
+      "status": "COMPLETE",
       "gated": false
     },
     {
       "id": "phase9-exit-review",
       "label": "Phase 9 exit review",
-      "status": "PLANNED",
+      "status": "ACTIVE",
       "gated": false
     }
   ],
@@ -51,5 +51,5 @@
     "nowMomentMedia": false,
     "generativeGuidePublic": false
   },
-  "next": "CONTINUE_PHASE9_NON_GATED_LOCALIZED_DISCOVERY"
+  "next": "RUN_PHASE9_EXIT_REVIEW"
 }
