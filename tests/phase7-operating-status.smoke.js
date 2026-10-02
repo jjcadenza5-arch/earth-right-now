@@ -1,0 +1,17 @@
+import assert from "node:assert/strict";
+import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/phase7-operating-status.mjs"],{encoding:"utf8"});
+assert.equal(r.status,0,r.stderr);
+const x=JSON.parse(r.stdout);
+assert.equal(x.phase,7);
+assert.equal(x.entryApproved,true);
+assert.equal(x.canonicalPhaseNumber,7);
+assert.equal(x.separateFeatureGatesRemainOff,true);
+assert.ok(Array.isArray(x.activeLanes));
+assert.ok(Array.isArray(x.plannedLanes));
+assert.equal(x.safety.automaticSocialAccountCreationAllowed,false);
+assert.equal(x.safety.automaticPostingAllowed,false);
+assert.equal(x.safety.analyticsActivationAllowed,false);
+assert.equal(x.safety.payoutAccountActionAllowed,false);
+assert.equal(x.safety.automaticPublicFeatureActivationAllowed,false);
+console.log("Phase 7 operating state preserves external-account and feature gates");
