@@ -269,5 +269,22 @@
     "verifiedAt": "2026-10-02T00:00:00Z",
     "expiresAt": "2026-12-31T00:00:00Z",
     "evidence": "Owner generated and opened the destination-specific Travelpayouts/Klook Kyoto link on 2026-10-02 and confirmed it resolves to a useful Kyoto Klook results page. Shared Kyoto destination link applied to ERN place: Nishiki Market."
+  },
+  {
+    "id": "klook-seoul-plaza",
+    "title": "Explore Seoul activities",
+    "placeId": "seoul-plaza",
+    "provider": "Klook",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "klook",
+    "destinationScope": "Seoul",
+    "url": "https://klook.tpo.mx/fJJX7vjK",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-02T00:00:00Z",
+    "expiresAt": "2026-12-31T00:00:00Z",
+    "evidence": "Owner generated the Travelpayouts/Klook Seoul destination link on 2026-10-02 and confirmed the short tracked URL resolves to a useful Seoul Klook results page."
   }
 ]
