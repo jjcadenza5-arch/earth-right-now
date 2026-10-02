@@ -215,7 +215,8 @@ export async function validateOperationsPacket(dir="ern-ops"){
   const phase7Operating=files["phase7-operating-status.json"];
   if(phase7Operating){
     if(phase7Operating?.entryApproved!==true)issues.push({file:"phase7-operating-status.json",code:"PHASE7_ENTRY_APPROVAL_MISSING"});
-    if(phase7Operating?.canonicalPhaseNumber!==7)issues.push({file:"phase7-operating-status.json",code:"PHASE7_CANONICAL_PHASE_MISMATCH"});
+    const phase7CanonicalOk=phase7Operating?.state==="COMPLETE"?Number(phase7Operating?.canonicalPhaseNumber)>=7:phase7Operating?.canonicalPhaseNumber===7;
+    if(!phase7CanonicalOk)issues.push({file:"phase7-operating-status.json",code:"PHASE7_CANONICAL_PHASE_MISMATCH"});
     if(phase7Operating?.separateFeatureGatesRemainOff!==true)issues.push({file:"phase7-operating-status.json",code:"PHASE7_SEPARATE_GATE_BOUNDARY_VIOLATION"});
     const s=phase7Operating?.safety||{};
     if(s.automaticSocialAccountCreationAllowed!==false||s.automaticPostingAllowed!==false||s.analyticsActivationAllowed!==false||s.payoutAccountActionAllowed!==false||s.newAffiliateAccountActionAllowed!==false||s.automaticPublicFeatureActivationAllowed!==false)issues.push({file:"phase7-operating-status.json",code:"PHASE7_AUTONOMY_BOUNDARY_VIOLATION"});
