@@ -19,5 +19,5 @@ assert.ok(x.externalActivation.commercial.publicEligibleOffers<=x.externalActiva
 assert.equal(x.externalActivation.commercial.inventoryActive,true);
 assert.equal(x.externalActivation.commercial.publicPlacementAvailable,true);
 assert.deepEqual(x.externalActivation.distribution.connectedChannels,[]);
-assert.equal(x.externalActivation.analytics.active,false);
+assert.equal(x.externalActivation.analytics.active,true);
 console.log("Whole-product status distinguishes deployed, active and gated external capabilities");
