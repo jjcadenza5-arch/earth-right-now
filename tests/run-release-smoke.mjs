@@ -60,7 +60,7 @@ const releaseTests=[
   "editorial-collections-l10n.smoke.js",
   "phase8-operating-status.smoke.js",
   "phase8-current-collection-policy.smoke.js",
-  "phase8-exit-review.smoke.js",
+  "phase8-exit-review.smoke.js",\n  "phase9-operating-status.smoke.js",\n  "phase9-localized-discovery-registry.smoke.js",
   "now-moment-media-worker.smoke.js",
   "now-moment-photo-public-ui-off.smoke.js",
   "now-moment-photo-service.smoke.js",
