@@ -21,3 +21,13 @@ Commercial payout state:
 Next commercial work should be demand-led from real analytics rather than offer-count expansion. Accommodation/stay remains the largest partner-category gap, but no new account or terms should be accepted without explicit owner approval.
 
 Older dated handoffs remain historical context only.
+
+
+Production incident — 2026-10-02:
+- Owner browser testing exposed Watch Earth at 0 current windows and widespread RECHECK DUE states.
+- Root cause: public currentness horizons were too short for real operation (24h embeds / 72h external-live) while Operations only reported rechecks and did not mutate source evidence.
+- Repaired policy: embed 168h, external-live 168h, live-image 72h, general external page 336h; embed playback proof aligned to 168h.
+- Watch Earth release audit now includes the actual current clock, not only historical anchor timestamps, preventing silent deploys with zero current windows.
+- A stale commercial preflight that still required Travelpayouts payout readiness to be false was also corrected after owner payout setup.
+- Current-clock Operations validation after repair reported 11 Watch Earth windows, 11 places, 6 countries and 6 providers.
+- Pages run 37025041354 completed SUCCESS and deployed the repair.
