@@ -1,0 +1,18 @@
+import assert from "node:assert/strict";
+import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/phase9-operating-status.mjs"],{encoding:"utf8"});
+assert.equal(r.status,0,r.stderr);
+const x=JSON.parse(r.stdout);
+assert.equal(x.phase,9);
+assert.equal(x.entryApproved,true);
+assert.equal(x.canonicalPhaseNumber,9);
+assert.equal(x.separateFeatureGatesRemainOff,true);
+assert.ok(Array.isArray(x.activeLanes));
+assert.ok(Array.isArray(x.plannedLanes));
+assert.ok(x.openNonGatedLaneCount>0);
+assert.equal(x.safety.automaticSocialAccountCreationAllowed,false);
+assert.equal(x.safety.automaticPostingAllowed,false);
+assert.equal(x.safety.analyticsActivationAllowed,false);
+assert.equal(x.safety.payoutAccountActionAllowed,false);
+assert.equal(x.safety.automaticPublicFeatureActivationAllowed,false);
+console.log("Phase 9 operating state preserves localized-discovery boundaries");
