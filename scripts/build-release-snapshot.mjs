@@ -39,6 +39,7 @@ try{await cp(new URL("../data/release-evidence.json",import.meta.url),new URL("d
 await cp(new URL("../assets/",import.meta.url),new URL("assets/",dist),{recursive:true});
 await cp(new URL("../places/",import.meta.url),new URL("places/",dist),{recursive:true});
 await cp(new URL("../discover/",import.meta.url),new URL("discover/",dist),{recursive:true});
+for(const locale of ["th","de","fr","ja","zh","es"])await cp(new URL("../"+locale+"/",import.meta.url),new URL(locale+"/",dist),{recursive:true});
 await cp(new URL("../review/",import.meta.url),new URL("review/",dist),{recursive:true});
 await cp(new URL("../sitemap.xml",import.meta.url),new URL("sitemap.xml",dist));
 await cp(new URL("../robots.txt",import.meta.url),new URL("robots.txt",dist));
