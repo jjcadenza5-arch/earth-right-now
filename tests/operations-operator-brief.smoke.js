@@ -287,3 +287,16 @@ assert.match(phase5ReadinessBrief,/Phase 5 readiness/);
 assert.match(phase5ReadinessBrief,/PHASE4_OBSERVATION_CONTINUES/);
 assert.match(phase5ReadinessBrief,/4.5h \/ minimum 24h/);
 assert.match(phase5ReadinessBrief,/automatic Phase 5 entry FORBIDDEN/);
+
+const phase6Brief=operationsOperatorBrief({
+ snapshot:{insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},providers:{families:2,targetFamilies:2},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ phase6OperatingStatus:{entryApproved:true,separateFeatureGatesRemainOff:true,openNonGatedLaneCount:4,activeLanes:["search-intent-discovery","destination-pathways"],plannedLanes:["crawlable-growth","performance-release-resilience"],next:"CONTINUE_PHASE6_NON_GATED_WORK"},
+ operatorReviewQueue:{renewalCount:0,renewalRequiredCount:0,items:[]},
+ playbackEvidenceConsistency:{summary:{issues:0}},
+ sourceRevalidationTriage:{immediate:[]}
+});
+assert.match(phase6Brief,/Phase 6 — Discovery & Growth/);
+assert.match(phase6Brief,/PHASE 6 AUTONOMOUS WORK OPEN/);
+assert.match(phase6Brief,/search-intent-discovery/);
+assert.doesNotMatch(phase6Brief,/\*\*AUTONOMOUS HOLD\*\*/);
