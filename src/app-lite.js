@@ -143,7 +143,7 @@ function setProfile(){
 function adaptiveWatchLimit(pool,target=20){
  const inside=pool.filter(currentInside).length,external=Math.max(0,pool.length-inside);
  if(!pool.length)return 0;
- if(inside<5)return Math.min(target,pool.length,inside+Math.min(external,12));
+ if(inside<5)return Math.min(target,pool.length,inside+Math.min(external,target));
  return Math.min(target,pool.length);
 }
 function buildWatch(sources){
@@ -431,11 +431,12 @@ function search(q,options={updateUrl:false}){
  const semanticTokens=tokens.filter(t=>!intentNoise.has(t));
  const catalogMatches=!x?state.sources:state.sources.filter(s=>{const hay=sst(s);if(activeIntents.length&&!activeIntents.every(g=>g.match(s)))return false;if(localIntent&&localPlaceSignals(s).worth)return semanticTokens.filter(t=>!["local","small","place","places"].includes(t)).every(token=>hay.includes(token));return semanticTokens.length?semanticTokens.every(token=>hay.includes(token)):activeIntents.length>0});
  const matches=catalogMatches.filter(s=>guideEligible(s)||(s.health==="HEALTHY"&&!!safeExternalUrl(s.sourceUrl||s.officialUrl))),cc=matches.filter(guideEligible).length;
- const groups=groupByPlace(matches).sort((a,b)=>{const al=localIntent?Math.max(...a.map(s=>localPlaceSignals(s).score))*20:0,bl=localIntent?Math.max(...b.map(s=>localPlaceSignals(s).score))*20:0;return(bl+Math.max(...b.map(baseScore)))-(al+Math.max(...a.map(baseScore)))}).slice(0,x?24:12);
+ const allGroups=groupByPlace(matches).sort((a,b)=>{const al=localIntent?Math.max(...a.map(s=>localPlaceSignals(s).score))*20:0,bl=localIntent?Math.max(...b.map(s=>localPlaceSignals(s).score))*20:0;return(bl+Math.max(...b.map(baseScore)))-(al+Math.max(...a.map(baseScore)))});
+ const groups=allGroups.slice(0,x?24:30),currentPlaces=allGroups.filter(g=>g.some(guideEligible)).length;
  const localMatches=x?localDirectoryMatch(raw).slice(0,12):[];
  $("#searchResults").replaceChildren(...localMatches.map(localDirectoryCard),...groups.map(placeCard));
  if(x&&!localMatches.length&&!groups.length){const box=document.createElement("div");box.className="search-empty-help";box.innerHTML="<strong>No ERN match yet.</strong><span>Try another place or ask ERN Guide.</span>";const g=document.createElement("button");g.type="button";g.textContent="Ask ERN Guide";g.onclick=()=>{openGuide();$("#guideInput").value=raw;runGuide(raw)};const a=document.createElement("a");a.href="./for-places.html";a.textContent="Add place";box.append(g,a);$("#searchResults").append(box)}
- $("#searchStatus").textContent=x?`${groups.length} place${groups.length===1?"":"s"} · ${cc} current${!cc&&matches.length?" · reference-only":""}${localMatches.length?" · "+localMatches.length+" local":""}`:"";
+ $("#searchStatus").textContent=x?`${allGroups.length} place${allGroups.length===1?"":"s"} · ${currentPlaces} current${!currentPlaces&&matches.length?" · reference-only":""}${localMatches.length?" · "+localMatches.length+" local":""}`:`${allGroups.length} discoverable places · showing ${groups.length} · ${currentPlaces} current`;
  if(x)globalThis.ERN_SEARCH_ANALYTICS?.(raw,groups.length+localMatches.length);
 }
 function localPlaceSignals(s){
