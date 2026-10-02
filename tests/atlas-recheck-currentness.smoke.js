@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
-assert.ok(app.includes('function atlasReferenceEligible(s){return atlasBaseEligible(s)&&s.health==="HEALTHY"&&!currentTruthClaim(s)&&!!safeExternalUrl(s.sourceUrl||s.officialUrl)}'),"reference-only Atlas entries must require healthy catalog state plus a valid handoff");
-assert.ok(app.includes('function atlasEligible(s){return atlasBaseEligible(s)&&(currentTruthClaim(s)||atlasReferenceEligible(s))}'),"Atlas must exclude stale places that have no usable current/reference handoff");
+assert.ok(app.includes('function atlasRef(s){return atlasBase(s)&&s.health==="HEALTHY"&&!currentTruthClaim(s)&&!!safeExternalUrl(s.sourceUrl||s.officialUrl)}'),"reference-only Atlas entries must require healthy catalog state plus a valid handoff");
+assert.ok(app.includes('function atlasEligible(s){return atlasBase(s)&&(currentTruthClaim(s)||atlasRef(s))}'),"Atlas must exclude stale places that have no usable current/reference handoff");
 assert.ok(app.includes('p.className="map-pin"+(inside?"":" external")+(reference?" reference":"")'),"reference-only Atlas pins must be visually distinct");
 assert.ok(app.includes('Reference only · official source available'),"reference-only Atlas pins must be labeled explicitly");
 assert.ok(app.includes('h.textContent="Live view temporarily unavailable"'),"recheck viewer must explain temporary live-view unavailability");
