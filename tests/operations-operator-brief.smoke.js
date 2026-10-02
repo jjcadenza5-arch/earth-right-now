@@ -314,3 +314,17 @@ assert.match(phase7Brief,/Phase 7 — Launch & Distribution Readiness/);
 assert.match(phase7Brief,/PHASE 7 AUTONOMOUS WORK OPEN/);
 assert.match(phase7Brief,/launch-message-kit/);
 assert.doesNotMatch(phase7Brief,/\*\*AUTONOMOUS HOLD\*\*/);
+
+const phase8Brief=operationsOperatorBrief({
+ snapshot:{insideERN:{ready:5,targetReady:5,readyShortfall:0,recoveryDebt:0},providers:{families:2,targetFamilies:2},release:{blockers:0}},
+ delta:{direction:"UNCHANGED",improved:[],regressed:[]},
+ phase7OperatingStatus:{entryApproved:true,separateFeatureGatesRemainOff:true,openNonGatedLaneCount:0,activeLanes:[],plannedLanes:[],next:"PHASE7_COMPLETE"},
+ phase8OperatingStatus:{entryApproved:true,separateFeatureGatesRemainOff:true,openNonGatedLaneCount:6,activeLanes:["thematic-collection-engine","crawlable-collection-pages"],plannedLanes:["multilingual-discovery-copy","collection-shareability"],next:"CONTINUE_PHASE8_NON_GATED_EDITORIAL_GROWTH"},
+ operatorReviewQueue:{renewalCount:0,renewalRequiredCount:0,items:[]},
+ playbackEvidenceConsistency:{summary:{issues:0}},
+ sourceRevalidationTriage:{immediate:[]}
+});
+assert.match(phase8Brief,/Phase 8 — Editorial Collections & Evergreen Growth/);
+assert.match(phase8Brief,/PHASE 8 AUTONOMOUS WORK OPEN/);
+assert.match(phase8Brief,/thematic-collection-engine/);
+assert.doesNotMatch(phase8Brief,/\*\*AUTONOMOUS HOLD\*\*/);
