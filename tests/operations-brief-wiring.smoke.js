@@ -8,3 +8,8 @@ const briefScript=fs.readFileSync("scripts/operations-operator-brief.mjs","utf8"
 assert.match(briefScript,/const nowMomentMedia=await optional\(args\[27\]\)/);assert.match(briefScript,/participationInfrastructure,nowMomentMedia,businessControl,externalGates/);
 
 assert.match(briefScript,/const phase5Readiness=await optional\(args\[32\]\)/);assert.match(briefScript,/phase4Observation,phase5Readiness/);
+
+assert.match(yml,/phase6-operating-status\.json/);
+assert.match(yml,/phase6:status/);
+assert.match(briefScript,/const phase6OperatingStatus=await optional\(args\[34\]\)/);
+assert.match(briefScript,/phase5OperatingStatus,phase6OperatingStatus/);
