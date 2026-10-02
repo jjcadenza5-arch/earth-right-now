@@ -58,6 +58,7 @@ const releaseTests=[
   "editorial-collections.smoke.js",
   "editorial-collections-home.smoke.js",
   "phase8-operating-status.smoke.js",
+  "phase8-current-collection-policy.smoke.js",
   "now-moment-media-worker.smoke.js",
   "now-moment-photo-public-ui-off.smoke.js",
   "now-moment-photo-service.smoke.js",
