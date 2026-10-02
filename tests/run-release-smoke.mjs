@@ -70,6 +70,7 @@ const releaseTests=[
   "phase10-business-architecture-audit.smoke.js",
   "phase10-public-link-audit.smoke.js",
   "phase10-launch-review.smoke.js",
+  "soft-launch-stage1-status.smoke.js",
   "now-moment-media-worker.smoke.js",
   "now-moment-photo-public-ui-off.smoke.js",
   "now-moment-photo-service.smoke.js",
