@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "stage": "SOFT_LAUNCH_OPERATING_STAGE_1",
+  "label": "ERN Soft Launch / Operating Stage 1",
+  "approved": true,
+  "approvedAt": "2026-10-02",
+  "approvalBasis": "Owner explicitly approved moving the current simple ERN product into a controlled soft public launch / real operating period.",
+  "productIdentity": {
+    "name": "Earth Right Now",
+    "category": "The Live Discovery Engine",
+    "tagline": "See before you go.",
+    "direction": "Live Discovery Search Engine",
+    "journey": ["Search","See Live","Discover","Decide","Go"]
+  },
+  "operatingIntent": "Stop expanding ERN sideways. Operate the current simple product reliably in the real world and begin proving that it can support a Successful Small Internet Business.",
+  "constraints": {
+    "broadFeaturePhaseAllowed": false,
+    "majorPromotionAllowed": false,
+    "paidMarketingAllowed": false,
+    "newExternalAccountsAllowed": false,
+    "spendAllowed": false,
+    "irreversibleBusinessAccountChangesAllowed": false,
+    "credentialExposureAllowed": false,
+    "pilot2": false,
+    "submissionPublic": false,
+    "nowMomentMediaPublic": false,
+    "generativeGuidePublic": false,
+    "analytics": false,
+    "socialAccountActions": false,
+    "payoutAccountActions": false,
+    "otherSeparateFeatureGates": false
+  },
+  "commercialBoundaries": {
+    "editorialRankingMayUsePayment": false,
+    "commissionMayAffectEarthRanking": false,
+    "automaticPlacementAllowed": false,
+    "automaticLinkRewritingAllowed": false,
+    "bookingInferenceAllowed": false,
+    "revenueInferenceAllowed": false
+  },
+  "reviewTriggers": [
+    "genuine owner approval or business/account decision required",
+    "gated feature is ready and requires explicit approval",
+    "real production issue requires direct human testing",
+    "substantial operating/business-readiness review point reached"
+  ],
+  "state": "ACTIVE"
+}
