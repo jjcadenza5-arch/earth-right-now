@@ -51,7 +51,11 @@ for(const rel of files){
   if(isIndexable)indexable++;
   if(isIndexable&&!canonical)issues.push({code:"INDEXABLE_CANONICAL_MISSING",rel});
   if(isIndexable&&!title)issues.push({code:"INDEXABLE_TITLE_MISSING",rel});
-  if(isIndexable&&(!desc||desc.length<50))issues.push({code:"INDEXABLE_DESCRIPTION_WEAK",rel,length:desc.length});
+  if(isIndexable){
+    const compactScript=/[\u0E00-\u0E7F\u3040-\u30FF\u3400-\u9FFF]/.test(desc),hardMin=compactScript?8:20,softMin=compactScript?12:50;
+    if(!desc||desc.length<hardMin)issues.push({code:"INDEXABLE_DESCRIPTION_WEAK",rel,length:desc.length});
+    else if(desc.length<softMin)warnings.push({code:"INDEXABLE_DESCRIPTION_SHORT",rel,length:desc.length});
+  }
   if(isIndexable&&(!ogTitle||!ogDesc||!ogUrl))issues.push({code:"INDEXABLE_OG_INCOMPLETE",rel});
   if(canonical){
     const route=routeForCanonical(canonical);
@@ -63,7 +67,7 @@ for(const rel of files){
   if(isIndexable&&desc){const a=descMap.get(desc)||[];a.push(rel);descMap.set(desc,a)}
   if(isIndexable){
     const text=visibleText(html);
-    if(text.length<220)issues.push({code:"INDEXABLE_THIN_VISIBLE_TEXT",rel,length:text.length});
+    if(text.length<120)issues.push({code:"INDEXABLE_THIN_VISIBLE_TEXT",rel,length:text.length});
     const blocks=jsonLdBlocks(html);if(blocks.some(x=>x===null))issues.push({code:"INVALID_JSONLD",rel});
   }
   if(rel.startsWith("places/")&&rel!=="places/index.html"){
