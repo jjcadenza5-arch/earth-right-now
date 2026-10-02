@@ -452,6 +452,59 @@ During validation, the production audit exposed a time-dependent false positive 
 
 Final Pages run `36989173238` — **SUCCESS**. Release smoke, whole-product, performance, mobile, accessibility, SEO and deployment checks all passed.
 
+## AI Search Discovery Readiness
+Completed as a focused Soft Launch hardening stage on 2026-10-02.
+
+Public identity:
+- **Earth Right Now — The Live Discovery Engine**
+- **See before you go.**
+- product direction: **Live Discovery Search Engine**
+
+Public crawlable explanatory pages:
+- `/about.html`
+- `/how-ern-works.html`
+- `/source-policy.html`
+- `/editorial-principles.html`
+- `/faq.html`
+- `/privacy.html`
+
+Destination pages expose ordinary HTML text for:
+- place/destination name;
+- city/state/region/country where trusted metadata exists;
+- aliases;
+- factual destination description;
+- provider attribution;
+- source type;
+- playback relationship: embedded in ERN, refreshed current image, external live source or provider source;
+- ERN current/recheck/scheduled status;
+- reliable last checked date and separate embed playback check when available;
+- provider source link;
+- related ERN destinations and editorial collections;
+- stable links to ERN source/editorial policy pages.
+
+Destination structured data remains truthful and includes Place/WebPage/BreadcrumbList data, aliases, geographic/address fields where supported, source-status/type properties and provider citation URLs. No stale evidence is upgraded into LIVE.
+
+Crawler policy:
+- public root remains allowed for `User-agent: *`;
+- `OAI-SearchBot` is explicitly allowed;
+- `/review/` and `/release-verification.html` remain blocked;
+- no private data, secrets or account-only surfaces are exposed.
+
+Optional machine-readable orientation:
+- `/llms.txt` exists as a factual guide to ERN's canonical public pages and source-truth rules;
+- it is **not authoritative** and does not replace HTML, canonical URLs, sitemap or structured data.
+
+Future unique-content architecture remains gated:
+- public generative ERN Guide: **OFF**;
+- public 45-minute Now Moment media: **OFF**;
+- future Local Earth/live-context/serendipitous-discovery layers should add genuine current-world information rather than SEO filler.
+
+Validation command:
+`npm run ai-search:readiness -- dist`
+
+The Pages workflow runs this against the generated artifact before deployment.
+
+
 ## What to do next
 Continue operating autonomously through the existing scheduled Operations checks.
 
