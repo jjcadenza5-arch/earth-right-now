@@ -1,0 +1,16 @@
+import assert from "node:assert/strict";
+import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/phase10-launch-review.mjs"],{encoding:"utf8"});
+assert.equal(r.status,0,r.stdout+"\n"+r.stderr);
+const x=JSON.parse(r.stdout);
+assert.equal(x.phase,10);
+assert.equal(x.ready,true);
+assert.equal(x.issues.length,0);
+assert.equal(x.audits.production,true);
+assert.equal(x.audits.business,true);
+assert.equal(x.audits.publicLinks,true);
+assert.equal(x.separateFeatureGatesRemainOff,true);
+assert.equal(x.unfinishedLanes.length,0);
+assert.equal(x.productIdentity.category,"The Live Discovery Engine");
+assert.equal(x.next,"MARK_PHASE10_COMPLETE_AND_REQUEST_OWNER_LAUNCH_BUSINESS_REVIEW");
+console.log("Phase 10 launch and business readiness review is ready with all gated features closed");
