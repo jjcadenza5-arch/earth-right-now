@@ -22,3 +22,7 @@ assert.match(app,/rememberSearch\(raw\)/,"URL-backed Explore searches should upd
 assert.match(app,/beautiful\|scenic\|amazing/,"Phase 6 Explore should support scenic intent");
 assert.match(app,/happening\|busy\|active/,"Phase 6 Explore should support activity intent");
 assert.match(app,/somewhere/,"Phase 6 Explore should ignore conversational search filler");
+
+assert.match(app,/affiliatePartners:\[\]/,"live app should keep an explicit partner registry for verified actions");
+assert.match(app,/fetch\("\.\/data\/affiliate-partners\.json"/,"live app should load the affiliate partner registry before showing verified partner actions");
+assert.match(app,/TP\.offerFor\(state\.travelOffers,s,"stay",state\.affiliatePartners\)/,"Before You Go offers must use active partner state");
