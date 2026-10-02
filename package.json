@@ -95,7 +95,8 @@
     "phase7:status": "node scripts/phase7-operating-status.mjs",
     "phase7:qa": "node scripts/phase7-launch-qa.mjs",
     "phase7:exit-review": "node scripts/phase7-exit-review.mjs",
-    "phase8:status": "node scripts/phase8-operating-status.mjs"
+    "phase8:status": "node scripts/phase8-operating-status.mjs",
+    "phase8:exit-review": "node scripts/phase8-exit-review.mjs"
   },
   "engines": {
     "node": ">=20"
