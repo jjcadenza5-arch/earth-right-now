@@ -104,7 +104,8 @@
     "phase10:production-audit": "node scripts/phase10-production-audit.mjs",
     "phase10:business-audit": "node scripts/phase10-business-architecture-audit.mjs",
     "phase10:link-audit": "node scripts/phase10-public-link-audit.mjs",
-    "phase10:launch-review": "node scripts/phase10-launch-review.mjs"
+    "phase10:launch-review": "node scripts/phase10-launch-review.mjs",
+    "soft-launch:status": "node scripts/soft-launch-stage1-status.mjs"
   },
   "engines": {
     "node": ">=20"
