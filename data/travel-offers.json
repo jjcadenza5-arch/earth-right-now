@@ -354,5 +354,22 @@
     "verifiedAt": "2026-10-02T15:55:00Z",
     "expiresAt": "2026-12-31T00:00:00Z",
     "evidence": "Owner generated the Travelpayouts/Klook Singapore destination link on 2026-10-02 and confirmed the short tracked URL resolves to a useful Singapore Klook destination/results page."
+  },
+  {
+    "id": "tiqets-chicago-lakefront",
+    "title": "Explore Chicago attractions",
+    "placeId": "chicago-lakefront",
+    "provider": "Tiqets",
+    "intent": "culture",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "tiqets",
+    "destinationScope": "Chicago",
+    "url": "https://tiqets.tpo.mx/mcVcA84b",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-02T16:00:00Z",
+    "expiresAt": "2026-12-31T00:00:00Z",
+    "evidence": "Owner generated the Travelpayouts/Tiqets Chicago destination link on 2026-10-02 and confirmed the short tracked URL resolves to a useful Chicago Tiqets attractions page."
   }
 ]
