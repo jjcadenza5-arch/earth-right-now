@@ -5,8 +5,8 @@ assert.ok(app.includes('function atlasRef(s){return atlasBase(s)&&s.health==="HE
 assert.ok(app.includes('function atlasEligible(s){return atlasBase(s)&&(currentTruthClaim(s)||atlasRef(s))}'),"Atlas must exclude stale places that have no usable current/reference handoff");
 assert.ok(app.includes('p.className="map-pin"+(inside?"":" external")+(reference?" reference":"")'),"reference-only Atlas pins must be visually distinct");
 assert.ok(app.includes('Reference only · source available'),"reference-only Atlas pins must be labeled explicitly");
-assert.ok(app.includes('h.textContent=source&&s.health==="HEALTHY"?"Source recheck due":"Live view currently unavailable"'),"recheck viewer must distinguish stale healthy sources from genuinely unavailable sources");
-assert.ok(app.includes('a.textContent=s.health==="HEALTHY"?"Open official source":"Open source"'),"recheck viewer must provide a prominent source recovery action");
+assert.ok(app.includes('h.textContent=source&&s.health==="HEALTHY"?"Source recheck due":"Live view unavailable"'),"recheck viewer must distinguish stale healthy sources from genuinely unavailable sources");
+assert.ok(app.includes('a.textContent="Open source"'),"recheck viewer must provide a prominent source recovery action");
 assert.ok(app.includes('Reference only · ERN is not treating this source as current.'),"reference handoff must preserve conservative source truth");
 assert.ok(app.includes('openViewer(alt,{record:current,updateHash:current})'),"non-current alternates must not record interest or create stale deep links");
 assert.ok(app.includes('p.onclick=()=>openViewer(s,{record:current,updateHash:current})'),"Atlas reference pins must not record interest or create stale deep links");
