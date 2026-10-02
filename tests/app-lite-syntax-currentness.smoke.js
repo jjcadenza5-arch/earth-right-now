@@ -26,3 +26,7 @@ assert.match(app,/somewhere/,"Phase 6 Explore should ignore conversational searc
 assert.match(app,/affiliatePartners:\[\]/,"live app should keep an explicit partner registry for verified actions");
 assert.match(app,/fetch\("\.\/data\/affiliate-partners\.json"/,"live app should load the affiliate partner registry before showing verified partner actions");
 assert.match(app,/TP\.offerFor\(state\.travelOffers,s,"stay",state\.affiliatePartners\)/,"Before You Go offers must use active partner state");
+
+assert.match(app,/shareErn/,"Phase 7 should expose a site-level Share ERN action");
+assert.match(app,/See Earth as it is right now/,"Share ERN should use canonical channel-neutral launch copy");
+assert.match(app,/location\.origin\+"\/"/,"Share ERN should share the canonical site root");
