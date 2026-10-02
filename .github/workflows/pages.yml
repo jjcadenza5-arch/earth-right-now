@@ -54,6 +54,7 @@ on:
       - "data/embed-research-candidates.json"
       - "tests/**"
       - "package.json"
+      - "data/phase10-*.json"
       - "data/embed-provider-families.json"
       - "src/research-review-queue.js"
       - "src/embed-research-preflight.js"
