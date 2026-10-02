@@ -34,7 +34,7 @@
     "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Auckland Viaduct YouTube channel-live player delivers current live content after the visitor presses Play. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f). Independent provider-page recheck on 2026-09-29 confirmed the official Viaduct Harbour page still publishes an 'Auckland Viaduct View — live' stream. Source currentness refreshed independently of human playback proof. Deployed-origin human review on 2026-09-30 confirmed the exact current ERN embed target visibly playing/current (review batch 0b51cbc04e9598b8).",
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.viaduct.co.nz/",
-    "playbackVerifiedAt": "2026-10-01T12:36:00Z"
+    "playbackVerifiedAt": "2026-10-02T00:45:00Z"
   },
   {
     "id": "kilauea-summit",
@@ -1739,7 +1739,7 @@
     "coordinateSourceUrl": "https://couchtourist.com/cams/taiwan/taitung-county/taitung-jinzun/",
     "freshnessEvidence": "Official East Coast National Scenic Area page places Jinzun under its LIVE Camera service and embeds exact YouTube player ZdqHgQwvZOw. Deployed-origin human review on 2026-09-29 confirmed the exact ERN player visibly playing/current (review batch bd51ac5733059f3f). Deployed-origin human review on 2026-09-30 confirmed the exact current ERN embed target visibly playing/current (review batch 0b51cbc04e9598b8).",
     "attribution": "East Coast National Scenic Area",
-    "playbackVerifiedAt": "2026-10-01T12:36:00Z"
+    "playbackVerifiedAt": "2026-10-02T00:45:00Z"
   },
   {
     "id": "blouberg-table-mountain",
@@ -2963,7 +2963,7 @@
     "lat": 34.9966,
     "lon": 135.7808,
     "coordinateSourceUrl": "https://global.kyoto.travel/en/comfort/",
-    "playbackVerifiedAt": "2026-10-01T12:36:00Z"
+    "playbackVerifiedAt": "2026-10-02T00:45:00Z"
   },
   {
     "id": "london-savoy-place-live",
@@ -3076,7 +3076,7 @@
     "lon": 135.768056,
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q34600",
     "coordinateNote": "Kyoto city reference point; not claimed as the exact camera position.",
-    "playbackVerifiedAt": "2026-10-01T12:36:00Z"
+    "playbackVerifiedAt": "2026-10-02T00:45:00Z"
   },
   {
     "id": "tonami-tulip-park-panorama",
@@ -3305,7 +3305,7 @@
     "lon": 25.8476222,
     "coordinateSourceUrl": "https://santaclausvillage.info/",
     "coordinateNote": "Official Santa Claus Village GPS reference; not claimed as exact camera position.",
-    "playbackVerifiedAt": "2026-10-01T12:36:00Z"
+    "playbackVerifiedAt": "2026-10-02T00:45:00Z"
   },
   {
     "id": "yellowstone-old-faithful-live",
