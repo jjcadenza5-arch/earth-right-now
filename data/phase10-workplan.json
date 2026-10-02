@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "phase": 10,
   "label": "ERN Launch & Business Readiness",
-  "state": "ACTIVE",
+  "state": "COMPLETE",
   "lanes": [
     {
       "id": "production-hardening",
@@ -37,7 +37,7 @@
     {
       "id": "phase10-launch-review",
       "label": "Launch & business-readiness review",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "gated": false
     }
   ],
@@ -69,5 +69,5 @@
     ],
     "businessGoal": "Successful Small Internet Business"
   },
-  "next": "RUN_PHASE10_LAUNCH_BUSINESS_READINESS_REVIEW"
+  "next": "PHASE10_COMPLETE"
 }
