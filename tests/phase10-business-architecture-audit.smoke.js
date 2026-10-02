@@ -1,0 +1,11 @@
+import assert from "node:assert/strict";
+import {spawnSync} from "node:child_process";
+const r=spawnSync(process.execPath,["scripts/phase10-business-architecture-audit.mjs"],{encoding:"utf8"});
+assert.equal(r.status,0,r.stdout+"\n"+r.stderr);
+const x=JSON.parse(r.stdout);
+assert.equal(x.phase,10);
+assert.equal(x.ok,true);
+assert.equal(x.issues.length,0);
+assert.equal(x.futureDifferentiatorsPublic,false);
+assert.equal(x.safety.paidRankingAllowed,false);
+console.log("Phase 10 business and future-differentiator architecture is ready without activation");
