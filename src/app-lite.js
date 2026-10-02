@@ -419,10 +419,12 @@ function search(q,options={updateUrl:false}){
    {test:/\b(wildlife|animal|animals|zoo|aquarium|birds|bird)\b/,match:s=>/wildlife|animal|zoo|aquarium|bird/.test(cats(s))},
    {test:/\b(city|cities|street|urban|skyline|square)\b/,match:s=>isCity(s)},
    {test:/\b(night|nighttime|lights|after dark)\b/,match:s=>!isDay(s)&&isCity(s)},
-   {test:/\b(calm|peaceful|quiet|relax|relaxing|nature)\b/,match:s=>/nature|forest|garden|mountain|beach|water|park|wildlife/.test(cats(s))}
+   {test:/\b(calm|peaceful|quiet|relax|relaxing|nature)\b/,match:s=>/nature|forest|garden|mountain|beach|water|park|wildlife/.test(cats(s))},
+   {test:/\b(beautiful|scenic|amazing|view|views)\b/,match:s=>isScenic(s)},
+   {test:/\b(happening|busy|active|street life|people)\b/,match:s=>/city|street|people|urban|square|market|promenade|harbour|harbor|culture/.test(cats(s))}
  ];
  const activeIntents=intentGroups.filter(g=>g.test.test(x));
- const intentNoise=new Set(["and","&","beach","beaches","water","sea","ocean","coast","coastal","surf","harbour","harbor","mountain","mountains","snow","ski","volcano","alps","alpine","wildlife","animal","animals","zoo","aquarium","birds","bird","city","cities","street","urban","skyline","square","night","nighttime","lights","after","dark","calm","peaceful","quiet","relax","relaxing","nature"]);
+ const intentNoise=new Set(["and","&","beach","beaches","water","sea","ocean","coast","coastal","surf","harbour","harbor","mountain","mountains","snow","ski","volcano","alps","alpine","wildlife","animal","animals","zoo","aquarium","birds","bird","city","cities","street","urban","skyline","square","night","nighttime","lights","after","dark","calm","peaceful","quiet","relax","relaxing","nature","beautiful","scenic","amazing","view","views","happening","busy","active","people","live","current","now","show","me","find","see","watch","look","at","in","on","the","a","an","of","for","please","i","want","to","go","going","visit","before","what","is","like","there","can","you","right","somewhere"]);
  const semanticTokens=tokens.filter(t=>!intentNoise.has(t));
  const catalogMatches=!x?state.sources:state.sources.filter(s=>{const hay=normalizeSearch([s.title,s.region,s.country,s.provider,s.story,...(s.categories||[]),...(s.aliases||[])].filter(Boolean).join(" "));if(activeIntents.length&&!activeIntents.every(g=>g.match(s)))return false;if(localIntent&&localPlaceSignals(s).worth)return semanticTokens.filter(t=>!["local","small","place","places"].includes(t)).every(token=>hay.includes(token));return semanticTokens.length?semanticTokens.every(token=>hay.includes(token)):activeIntents.length>0});
  const matches=catalogMatches.filter(guideEligible);
