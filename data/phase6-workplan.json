@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "phase": 6,
+  "label": "Discovery & Growth",
+  "state": "ACTIVE",
+  "lanes": [
+    {
+      "id": "search-intent-discovery",
+      "label": "Search & intent discovery",
+      "status": "ACTIVE",
+      "gated": false
+    },
+    {
+      "id": "destination-pathways",
+      "label": "Destination pathways",
+      "status": "ACTIVE",
+      "gated": false
+    },
+    {
+      "id": "crawlable-growth",
+      "label": "Crawlable discovery & SEO",
+      "status": "PLANNED",
+      "gated": false
+    },
+    {
+      "id": "verified-action-pathways",
+      "label": "Verified on-site action pathways",
+      "status": "PLANNED",
+      "gated": false
+    },
+    {
+      "id": "performance-release-resilience",
+      "label": "Performance & release resilience",
+      "status": "PLANNED",
+      "gated": false
+    },
+    {
+      "id": "phase6-discovery-qa",
+      "label": "Discovery QA & Phase 6 exit review",
+      "status": "PLANNED",
+      "gated": false
+    }
+  ],
+  "constraints": {
+    "pilot2": false,
+    "submissionPublic": false,
+    "nowMomentMedia": false,
+    "generativeGuidePublic": false,
+    "analytics": false,
+    "socialChannels": false,
+    "otherSeparateFeatureGates": false
+  },
+  "next": "CONTINUE_ACTIVE_NON_GATED_LANES"
+}
