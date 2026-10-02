@@ -11,6 +11,7 @@ const releaseTests=[
   "recency-provider-debt.smoke.js",
   "catalog-metadata-audit.smoke.js",
   "seo-indexing-audit.smoke.js",
+  "ai-search-readiness.smoke.js",
   "search-alias-metadata.smoke.js",
   "search-reference-discovery.smoke.js",
   "research-review-queue.smoke.js",
