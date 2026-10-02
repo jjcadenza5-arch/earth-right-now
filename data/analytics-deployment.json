@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "stage": "SOFT_LAUNCH_OPERATING_STAGE_1",
+  "service": "ERN First-Party Analytics",
+  "workerName": "ern-analytics-api",
+  "endpoint": "https://ern-analytics-api.jjcadenza6.workers.dev/api/analytics",
+  "healthUrl": "https://ern-analytics-api.jjcadenza6.workers.dev/health",
+  "ownerApproval": true,
+  "deployed": true,
+  "deployedAt": "2026-10-02T06:49:14Z",
+  "deploymentRunId": 36975370219,
+  "healthVerified": true,
+  "publicCollectionActive": true,
+  "privacy": {
+    "aggregateOnly": true,
+    "rawIpStored": false,
+    "preciseLocationStored": false,
+    "eventRowsStored": false,
+    "crossSiteTracking": false,
+    "advertisingProfiles": false,
+    "honorsDNTAndGPC": true,
+    "retentionDays": 90
+  },
+  "measurements": [
+    "page views and approximate unique visitors",
+    "new versus returning use",
+    "coarse country and region",
+    "device class",
+    "referrer hostname",
+    "place and source opens",
+    "privacy-filtered searches and zero-result searches",
+    "verified commercial outbound opens"
+  ],
+  "forbiddenInference": [
+    "booking",
+    "purchase",
+    "conversion",
+    "transaction value",
+    "commission",
+    "revenue"
+  ],
+  "state": "ACTIVE_VERIFIED"
+}
