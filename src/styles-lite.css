@@ -575,3 +575,15 @@ nav{gap:14px}.nav-symbol{font-size:25px!important;padding-inline:8px!important}
 .editorial-collections{background:#f5f7f3}.editorial-collection-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.editorial-collection-card{display:flex;min-height:145px;flex-direction:column;justify-content:flex-end;gap:7px;padding:18px;border:1px solid rgba(10,48,40,.12);border-radius:18px;background:white;color:#153f35;text-decoration:none;box-shadow:0 10px 24px rgba(10,48,40,.05)}.editorial-collection-card>span{font-size:28px;margin-bottom:auto}.editorial-collection-card strong{font:600 20px/1.1 Georgia,serif}.editorial-collection-card small{color:#657a73;line-height:1.4}.editorial-collection-card:hover,.editorial-collection-card:focus-visible{transform:translateY(-2px);box-shadow:0 14px 30px rgba(10,48,40,.09)}.editorial-collection-foot{margin-top:16px}.editorial-collection-foot a{color:#1b6657;font-weight:700}@media(max-width:1000px){.editorial-collection-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.editorial-collection-grid{grid-template-columns:1fr}}
 
 .reference-handoff{display:grid;justify-items:center;gap:8px}.reference-handoff h3{margin:0}.reference-handoff p{max-width:520px;margin:0 0 8px}.reference-handoff a{min-width:190px;text-align:center}
+
+
+/* First-impression discovery breadth */
+.discovery-proof{display:grid;grid-template-columns:repeat(3,minmax(120px,1fr)) auto;gap:10px;align-items:stretch;padding:12px 4vw;background:#f4f6f1;color:#173e36;border-bottom:1px solid rgba(23,62,54,.08)}
+.discovery-proof>div{display:flex;align-items:baseline;gap:7px;padding:10px 12px;border-radius:14px;background:white;border:1px solid rgba(23,62,54,.08)}
+.discovery-proof strong{font-family:Georgia,serif;font-size:27px;font-weight:500;line-height:1}
+.discovery-proof span{font-size:9px;letter-spacing:.03em;color:#668078}
+.discovery-proof button{border:1px solid rgba(23,62,54,.14);background:#0a5147;color:white;border-radius:999px;padding:0 18px;font-size:10px;font-weight:800;white-space:nowrap}
+.discovery-proof button:hover{background:#0d6256}
+.search-status{min-height:18px;margin-top:10px;color:#6d837c;font-size:9px}
+.search-section .result-grid{margin-top:12px}
+@media(max-width:760px){.discovery-proof{grid-template-columns:repeat(3,1fr);padding:10px 12px}.discovery-proof>div{display:grid;gap:3px;text-align:center;padding:9px 5px}.discovery-proof strong{font-size:22px}.discovery-proof span{font-size:7px}.discovery-proof button{grid-column:1/-1;min-height:38px}}
