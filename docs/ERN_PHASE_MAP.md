@@ -140,7 +140,7 @@ Phase 6 exit direction:
 - growth work does not depend on analytics, social accounts or gated visitor-contribution features.
 
 ## Phase 7 — Launch & Distribution Readiness
-**State: ACTIVE — NON-GATED PREPARATION ONLY**
+**State: COMPLETE**
 
 Purpose:
 - turn ERN's stable discovery product into a coherent launch package;
@@ -157,9 +157,27 @@ Phase 7 exit direction:
 - partner/business launch materials clearly separate verified relationships from future opportunities;
 - any remaining work is a genuine human/external account action rather than unfinished site preparation.
 
+## Phase 8 — Editorial Collections & Evergreen Growth
+**State: ACTIVE — NON-GATED LANES ONLY**
+
+Purpose:
+- create evergreen thematic entry points from ERN's existing truthful current-window catalog;
+- build crawlable collection pages for moods and Earth categories such as calm places, water, mountains, night cities and wildlife;
+- strengthen multilingual discovery copy and shareable editorial pathways without depending on analytics or social accounts;
+- keep collections downstream from source truth, currentness and playback rules.
+
+Phase 8 may proceed autonomously only in non-gated work. Social accounts, automatic posting, analytics, payout actions, Pilot 2, Submission public intake, Now Moment media and public generative Guide remain separately OFF unless explicitly approved.
+
+Phase 8 exit direction:
+- a deterministic thematic collection engine exists;
+- collection pages are crawlable, truthful and shareable;
+- multilingual collection discovery copy is present where useful;
+- seasonal/current collections fail closed when their source evidence is not current;
+- remaining work is external/account-gated or belongs to a later product phase.
+
 ## Current summary
 
-ERN has completed **Phase 6 — Discovery & Growth** and is now advancing into **Phase 7 — Launch & Distribution Readiness** in non-gated preparation lanes only.
+ERN has completed **Phase 7 — Launch & Distribution Readiness** and is now advancing into **Phase 8 — Editorial Collections & Evergreen Growth** in non-gated lanes only.
 
 Phase 4 is active with **Pilot 1 — Earth Signals** now live in limited form:
 - Earth Signals: runtime ON + public manifest ON for structured 45-minute signals only;
