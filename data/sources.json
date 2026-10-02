@@ -70,7 +70,10 @@
     "officialUrl": "https://www.usgs.gov/volcanoes/kilauea/multimedia/webcams",
     "freshnessEvidence": "Official USGS Kīlauea webcams page was rechecked on 2026-09-28 and continues to list multiple live views and live images of Kīlauea, including Halemaʻumaʻu summit cameras.",
     "coordinateBasis": "REGION_REFERENCE",
-    "coordinateSourceUrl": "https://www.usgs.gov/volcanoes/kilauea"
+    "coordinateSourceUrl": "https://www.usgs.gov/volcanoes/kilauea",
+    "aliases": [
+      "Kilauea"
+    ]
   },
   {
     "id": "pattaya-city-live",
@@ -179,7 +182,10 @@
     "officialUrl": "https://www.ecan.govt.nz/webcams",
     "freshnessEvidence": "Official Environment Canterbury webcam page rechecked on 2026-09-30; it still lists South Bay, Kaikōura and states static webcam images update every five minutes.",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.ecan.govt.nz/webcams"
+    "coordinateSourceUrl": "https://www.ecan.govt.nz/webcams",
+    "aliases": [
+      "Kaikoura"
+    ]
   },
   {
     "id": "glenelg-sa",
@@ -501,7 +507,10 @@
     "freshnessEvidence": "Official KitzSki webcams page was rechecked on 2026-09-29 and explicitly lists livecams/current pictures from the Kitzbühel, Kirchberg and Mittersill ski area.",
     "coordinateBasis": "REGION_REFERENCE",
     "coordinateSourceUrl": "https://www.kitzski.at/en/",
-    "attribution": "Bergbahn Kitzbühel / KitzSki"
+    "attribution": "Bergbahn Kitzbühel / KitzSki",
+    "aliases": [
+      "Kitzbuhel"
+    ]
   },
   {
     "id": "ski-arlberg",
@@ -638,7 +647,11 @@
     "lon": -121.736708,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.nps.gov/planyourvisit/event-details.htm?id=FA1EF6C5-C90B-21C5-0EB54E9BA55DB47F",
-    "attribution": "National Park Service"
+    "attribution": "National Park Service",
+    "aliases": [
+      "Mount Rainier",
+      "Mt Rainier"
+    ]
   },
   {
     "id": "glacier-national-park",
@@ -738,7 +751,10 @@
     "lon": 7.748607,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://zermatt.swiss/",
-    "attribution": "Zermatt Tourism"
+    "attribution": "Zermatt Tourism",
+    "aliases": [
+      "Matterhorn"
+    ]
   },
   {
     "id": "chamonix-mont-blanc",
@@ -772,7 +788,10 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://fr.wikipedia.org/wiki/Chamonix-Mont-Blanc",
     "coordinateNote": "Chamonix town reference point for a multi-webcam destination; not a specific camera coordinate.",
-    "attribution": "Chamonix-Mont-Blanc Tourism"
+    "attribution": "Chamonix-Mont-Blanc Tourism",
+    "aliases": [
+      "Mont Blanc"
+    ]
   },
   {
     "id": "georgia-aquarium",
@@ -1014,7 +1033,10 @@
     "coordinateSourceUrl": "https://mapcarta.com/32506530",
     "freshnessEvidence": "The current official NIZUC Resort & Spa Live Cam page exposes real-time resort views and identifies NIZUC Beach 1 and NIZUC Muelle as live camera surfaces.",
     "attribution": "NIZUC Resort & Spa",
-    "coordinateNote": "Public place-reference coordinates for NIZUC Resort & Spa; not claimed as exact camera position."
+    "coordinateNote": "Public place-reference coordinates for NIZUC Resort & Spa; not claimed as exact camera position.",
+    "aliases": [
+      "Cancun"
+    ]
   },
   {
     "id": "nyc-skyline-jersey-city-earthcam",
@@ -1050,7 +1072,12 @@
     "officialUrl": "https://www.earthcam.com/usa/newyork/skyline/?cam=hyatthd",
     "freshnessEvidence": "EarthCam's Jersey City/New York Skyline page was rechecked on 2026-09-28 and continues to describe the skyline, Statue of Liberty and harbor view as live streaming video.",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.earthcam.com/usa/newyork/skyline/?cam=skyline_g"
+    "coordinateSourceUrl": "https://www.earthcam.com/usa/newyork/skyline/?cam=skyline_g",
+    "aliases": [
+      "New York",
+      "New York City",
+      "NYC"
+    ]
   },
   {
     "id": "statue-liberty-harbor-earthcam",
@@ -1086,7 +1113,12 @@
     "officialUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_hd",
     "freshnessEvidence": "EarthCam's current camera directory was rechecked on 2026-09-29 and explicitly lists the Statue of Liberty HarborCam as a live camera; EarthCam's Statue of Liberty materials describe HarborCam as live streaming panoramic views of New York Harbor.",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_hd"
+    "coordinateSourceUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_hd",
+    "aliases": [
+      "New York",
+      "New York City",
+      "NYC"
+    ]
   },
   {
     "id": "statue-liberty-earthcam",
@@ -1122,7 +1154,12 @@
     "officialUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_str",
     "freshnessEvidence": "EarthCam's current National Park webcam directory was rechecked on 2026-09-29 and lists 'Statue of Liberty Cam' as an active camera. EarthCam's own Statue of Liberty camera description identifies this exact Statue of Liberty Cam view as a live, streaming view of the Statue of Liberty from Brooklyn.",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_str"
+    "coordinateSourceUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_str",
+    "aliases": [
+      "New York",
+      "New York City",
+      "NYC"
+    ]
   },
   {
     "id": "takayama-miyagawa-stream",
@@ -1416,7 +1453,11 @@
     "timeZone": "America/Chicago",
     "freshnessEvidence": "EarthCam's Chicago Field Museum page was rechecked on 2026-09-28, is explicitly labeled LIVE, and describes the camera as a live view of the Chicago skyline, Lake Shore Drive, Museum Campus and Lake Michigan.",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.earthcam.com/usa/illinois/chicago/field/?cam=fieldmuseum"
+    "coordinateSourceUrl": "https://www.earthcam.com/usa/illinois/chicago/field/?cam=fieldmuseum",
+    "aliases": [
+      "Chicago",
+      "Chicago Lakefront"
+    ]
   },
   {
     "provider": "EarthCam",
@@ -1560,7 +1601,12 @@
     "coordinateNote": "The ISS position changes continuously, so ERN intentionally does not represent it with a static Living Atlas pin.",
     "freshnessEvidence": "EarthCam's Planet Earth page was rechecked on 2026-09-28 and states that views of Earth are streamed from an external camera outside the International Space Station, with expected blue-screen periods during communications-satellite handovers.",
     "travelResearchEligible": false,
-    "travelResearchExclusionReason": "Orbital Earth-view source, not a normal visitor destination for ERN travel-option onboarding."
+    "travelResearchExclusionReason": "Orbital Earth-view source, not a normal visitor destination for ERN travel-option onboarding.",
+    "aliases": [
+      "ISS",
+      "International Space Station",
+      "Space Station"
+    ]
   },
   {
     "id": "flam-fjord-official",
@@ -1596,7 +1642,11 @@
     "rightsBasis": "Official destination operator presents these as real-time live webcam feeds. ERN links to the provider and does not infer embedding rights.",
     "freshnessEvidence": "Norway's Best Flåm webcam page was rechecked on 2026-09-28 and explicitly says visitors can experience Flåm and the Nærøyfjord area in real time through live webcam feeds, including Flåm Downtown, Aurland and Gudvangen.",
     "coordinateBasis": "REGION_REFERENCE",
-    "coordinateSourceUrl": "https://www.norwaysbest.com/en/flam/flam-webcam"
+    "coordinateSourceUrl": "https://www.norwaysbest.com/en/flam/flam-webcam",
+    "aliases": [
+      "Flam",
+      "Aurlandsfjord"
+    ]
   },
   {
     "id": "amden-walensee-official",
@@ -2054,7 +2104,11 @@
     "coordinateSourceUrl": "https://www.openstreetmap.org/way/218679862",
     "coordinateNote": "OpenStreetMap feature coordinates for Waikīkī Beach.",
     "freshnessEvidence": "The current official Waikīkī Aquarium Webcams page states that live webcams are featured at the Aquarium and specifically includes the south shore of Waikīkī.",
-    "attribution": "Waikīkī Aquarium"
+    "attribution": "Waikīkī Aquarium",
+    "aliases": [
+      "Honolulu",
+      "Waikiki"
+    ]
   },
   {
     "id": "cold-lake-marina",
@@ -2124,7 +2178,13 @@
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q111959894",
     "coordinateNote": "St. John's Harbour reference point; not claimed as exact webcam position.",
     "freshnessEvidence": "CBC News NL's current webcam stream is titled 'Webcam of Downtown St. John's' and describes a view of the Narrows and harbour from The Rooms, with a brief scheduled maintenance period Friday mornings.",
-    "attribution": "CBC News Newfoundland and Labrador"
+    "attribution": "CBC News Newfoundland and Labrador",
+    "aliases": [
+      "St Johns Harbour",
+      "St Johns Harbor",
+      "Saint John's Harbour",
+      "Saint Johns Harbour"
+    ]
   },
   {
     "id": "metung-gippsland-lakes",
@@ -2228,7 +2288,12 @@
     "coordinateNote": "Randwick City Council's beach-cam surface covers Coogee, Clovelly, Little Bay, Mahon Pool, Malabar, Maroubra and Yarra Bay, so one pin would misrepresent the collection.",
     "coordinateSourceUrl": "https://www.randwick.nsw.gov.au/",
     "attribution": "Randwick City Council",
-    "freshnessEvidence": "Official Randwick City Council beach-cams page was rechecked on 2026-09-28 and still explicitly offers live beach cams for Coogee, Clovelly, Little Bay, Mahon Pool, Malabar, Maroubra and Yarra Bay, including a note that cameras are automatically monitored for outages."
+    "freshnessEvidence": "Official Randwick City Council beach-cams page was rechecked on 2026-09-28 and still explicitly offers live beach cams for Coogee, Clovelly, Little Bay, Mahon Pool, Malabar, Maroubra and Yarra Bay, including a note that cameras are automatically monitored for outages.",
+    "aliases": [
+      "Coogee",
+      "Randwick",
+      "Sydney"
+    ]
   },
   {
     "id": "boston-harbor-islands",
@@ -2263,7 +2328,11 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateSourceUrl": "https://www.nps.gov/boha/learn/historyculture/facts-libr.htm",
     "freshnessEvidence": "Official NPS Boston Harbor Islands webcams page was rechecked on 2026-09-29 and continues to list four Boston Light/Little Brewster webcam viewpoints with current-view links.",
-    "attribution": "National Park Service"
+    "attribution": "National Park Service",
+    "aliases": [
+      "Boston",
+      "Boston Harbour Islands"
+    ]
   },
   {
     "id": "diano-marina",
@@ -2371,7 +2440,11 @@
     "coordinateSourceUrl": "https://fr.wikipedia.org/wiki/Waikiki",
     "coordinateNote": "Waikiki neighbourhood reference point for the live beach/city destination; not claimed as exact webcam position.",
     "attribution": "Hilton Waikiki Beach Resort & Spa",
-    "freshnessEvidence": "Official Hilton Waikiki Beach Resort & Spa webcam page was rechecked on 2026-09-28 and explicitly says visitors can view live footage of the city and beach via its webcam."
+    "freshnessEvidence": "Official Hilton Waikiki Beach Resort & Spa webcam page was rechecked on 2026-09-28 and explicitly says visitors can view live footage of the city and beach via its webcam.",
+    "aliases": [
+      "Honolulu",
+      "Waikiki"
+    ]
   },
   {
     "id": "jungfrau-region",
@@ -2554,7 +2627,11 @@
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q202730",
     "coordinateNote": "Copacabana neighbourhood/beach reference point; not claimed as exact camera position.",
     "attribution": "EarthCam",
-    "freshnessEvidence": "EarthCam's official Rio de Janeiro page was rechecked on 2026-09-29 and explicitly states that it delivers live streaming webcam views of Copacabana Beach."
+    "freshnessEvidence": "EarthCam's official Rio de Janeiro page was rechecked on 2026-09-29 and explicitly states that it delivers live streaming webcam views of Copacabana Beach.",
+    "aliases": [
+      "Rio",
+      "Rio de Janeiro"
+    ]
   },
   {
     "id": "torres-del-paine-rio-serrano",
@@ -2626,7 +2703,10 @@
     "freshnessEvidence": "Official Icelandic Meteorological Office Reykjavík webcam page rechecked on 2026-09-30; it continues to serve North, South East and South West webcam sequences owned by the Met Office.",
     "rightsBasis": "Official Icelandic Meteorological Office webcam page. ERN links to the provider and does not infer third-party display permission.",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://en.vedur.is/weather/observations/webcams/reykjavik/"
+    "coordinateSourceUrl": "https://en.vedur.is/weather/observations/webcams/reykjavik/",
+    "aliases": [
+      "Reykjavik"
+    ]
   },
   {
     "id": "boulders-penguins-sanparks",
@@ -2771,7 +2851,10 @@
     "rightsBasis": "Current earthTV live-stream page explicitly presents the Cape Town webcam. ERN keeps this LINK_ONLY and does not infer embedding rights.",
     "freshnessEvidence": "earthTV's Cape Town page was rechecked on 2026-09-29 and explicitly presents a live-streaming webcam / live cam of Table Mountain, Lion's Head and the V&A Waterfront.",
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateSourceUrl": "https://www.earthtv.com/en/webcam/cape-town-table-mountain"
+    "coordinateSourceUrl": "https://www.earthtv.com/en/webcam/cape-town-table-mountain",
+    "aliases": [
+      "Cape Town"
+    ]
   },
   {
     "id": "la-palma-aridane-valley",
@@ -3152,7 +3235,11 @@
     "lat": 37.5655015943,
     "lon": 126.9787960237,
     "coordinateSourceUrl": "https://data.visitkorea.or.kr/resource/128968",
-    "coordinateNote": "Place-reference coordinate for Seoul Plaza; not claimed as exact camera position."
+    "coordinateNote": "Place-reference coordinate for Seoul Plaza; not claimed as exact camera position.",
+    "aliases": [
+      "Seoul",
+      "Seoul Plaza"
+    ]
   },
   {
     "id": "bangkok-sukhumvit-skylinewebcams",
@@ -3190,7 +3277,11 @@
     "lat": 13.74278,
     "lon": 100.55039,
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q33077153",
-    "coordinateNote": "Reference point on Sukhumvit Road; not claimed as exact camera position."
+    "coordinateNote": "Reference point on Sukhumvit Road; not claimed as exact camera position.",
+    "aliases": [
+      "Bangkok",
+      "Sukhumvit"
+    ]
   },
   {
     "id": "singapore-port-skylinewebcams",
@@ -3228,7 +3319,10 @@
     "lat": 1.2655556,
     "lon": 103.835,
     "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q1421994",
-    "coordinateNote": "Port of Singapore region-reference coordinate from Wikidata; not claimed as the exact camera position."
+    "coordinateNote": "Port of Singapore region-reference coordinate from Wikidata; not claimed as the exact camera position.",
+    "aliases": [
+      "Singapore"
+    ]
   },
   {
     "id": "rome-spanish-steps-skylinewebcams",
@@ -3266,7 +3360,11 @@
     "lat": 41.905973,
     "lon": 12.482529,
     "coordinateSourceUrl": "https://www.turismoroma.it/en/places/spanish-steps",
-    "coordinateNote": "Official Roma Capitale tourism coordinate for the Spanish Steps; not claimed as the exact camera position."
+    "coordinateNote": "Official Roma Capitale tourism coordinate for the Spanish Steps; not claimed as the exact camera position.",
+    "aliases": [
+      "Rome",
+      "Spanish Steps"
+    ]
   },
   {
     "id": "rovaniemi-santa-claus-village-live",
@@ -3305,7 +3403,11 @@
     "lon": 25.8476222,
     "coordinateSourceUrl": "https://santaclausvillage.info/",
     "coordinateNote": "Official Santa Claus Village GPS reference; not claimed as exact camera position.",
-    "playbackVerifiedAt": "2026-10-02T00:45:00Z"
+    "playbackVerifiedAt": "2026-10-02T00:45:00Z",
+    "aliases": [
+      "Rovaniemi",
+      "Santa Claus Village"
+    ]
   },
   {
     "id": "yellowstone-old-faithful-live",
