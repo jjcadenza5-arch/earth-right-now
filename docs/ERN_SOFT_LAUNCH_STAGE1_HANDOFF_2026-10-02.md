@@ -504,6 +504,13 @@ Validation command:
 
 The Pages workflow runs this against the generated artifact before deployment.
 
+Final AI-search release validation:
+- Pages run `36997312250` — **SUCCESS**
+- AI search discovery readiness — **SUCCESS**
+- SEO indexing readiness — **SUCCESS**
+- release smoke / whole-product / mobile / accessibility / performance — **SUCCESS**
+- GitHub Pages deploy — **SUCCESS**
+
 
 ## What to do next
 Continue operating autonomously through the existing scheduled Operations checks.
