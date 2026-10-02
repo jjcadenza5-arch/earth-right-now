@@ -203,7 +203,8 @@ export async function validateOperationsPacket(dir="ern-ops"){
   const phase6Operating=files["phase6-operating-status.json"];
   if(phase6Operating){
     if(phase6Operating?.entryApproved!==true)issues.push({file:"phase6-operating-status.json",code:"PHASE6_ENTRY_APPROVAL_MISSING"});
-    if(phase6Operating?.canonicalPhaseNumber!==6)issues.push({file:"phase6-operating-status.json",code:"PHASE6_CANONICAL_PHASE_MISMATCH"});
+    const phase6CanonicalOk=phase6Operating?.state==="COMPLETE"?Number(phase6Operating?.canonicalPhaseNumber)>=6:phase6Operating?.canonicalPhaseNumber===6;
+    if(!phase6CanonicalOk)issues.push({file:"phase6-operating-status.json",code:"PHASE6_CANONICAL_PHASE_MISMATCH"});
     if(phase6Operating?.separateFeatureGatesRemainOff!==true)issues.push({file:"phase6-operating-status.json",code:"PHASE6_SEPARATE_GATE_BOUNDARY_VIOLATION"});
     const s=phase6Operating?.safety||{};
     if(s.automaticSeparateGateActivationAllowed!==false||s.analyticsActivationAllowed!==false||s.socialAccountActionAllowed!==false||s.generativeGuidePublicActivationAllowed!==false||s.paidRankingAllowed!==false)issues.push({file:"phase6-operating-status.json",code:"PHASE6_AUTONOMY_BOUNDARY_VIOLATION"});
