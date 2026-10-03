@@ -1,867 +1,534 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T09:05:00Z",
-  "principles": {
-    "existingPartnersFirst": true,
-    "exactTrackedLinkRequired": true,
-    "visitorUtilityFirst": true,
-    "commissionMayNotAffectRanking": true,
-    "automaticPlacement": false,
-    "automaticLinkRewriting": false
-  },
-  "currentOpportunityStates": {
-    "VERIFIED_LINK_ADDED": 16,
-    "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 93,
-    "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 11,
-    "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
-  },
-  "researchPriority": [
+  "generatedAt": "2026-10-03T11:35:00Z",
+  "strategy": "Use currently active partners first. Locked Travelpayouts programs are excluded until traffic/account-state unlock. Rank by visitor utility/source quality, never commission.",
+  "activePartners": [
+    "viator",
+    "klook",
+    "tiqets",
+    "welcome-pickups"
+  ],
+  "verifiedLinkCount": 16,
+  "exactLinkQueueCount": 99,
+  "sourceGatedQueueCount": 7,
+  "uncoveredHealthyResearchPriority": [
     {
       "placeId": "koli-lake-pielinen",
       "title": "Koli — Lake Pielinen",
       "country": "Finland",
       "region": "North Karelia",
+      "truth": "EXTERNAL_LIVE",
       "quality": 98,
       "moment": 98,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Beautiful Earth"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 220.75
+    },
+    {
+      "placeId": "planet-earth-orbit",
+      "title": "Planet Earth — International Space Station",
+      "country": "Earth",
+      "region": "Low Earth Orbit",
+      "truth": "EXTERNAL_LIVE",
+      "quality": 96,
+      "moment": 100,
+      "freshness": 98,
+      "suggestedExistingPartners": [
+        "tiqets"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "publicActivationAllowed": false,
+      "score": 220.5
     },
     {
       "placeId": "oeschinensee",
       "title": "Oeschinensee — Mountain & Lake Views",
       "country": "Switzerland",
       "region": "Bernese Oberland",
+      "truth": "LIVE_IMAGE",
       "quality": 97,
       "moment": 98,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Beautiful Earth",
-        "Mountains & Snow",
-        "Useful Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 98,
       "suggestedExistingPartners": [
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "taiwan-hehuanshan-wuling",
-      "title": "Hehuanshan — Wuling Pass",
-      "country": "Taiwan",
-      "region": "Nantou / Hualien",
-      "quality": 97,
-      "moment": 97,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Beautiful Earth",
-        "Useful Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "amden-walensee",
-      "title": "Lake Walensee & Amden — Live Panoramas",
-      "country": "Switzerland",
-      "region": "St. Gallen",
-      "quality": 96,
-      "moment": 96,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Beautiful Earth",
-        "Mountains & Snow",
-        "Useful Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 219.5
     },
     {
       "placeId": "kanlaon-volcano",
       "title": "Kanlaon Volcano — Current Monitoring View",
       "country": "Philippines",
       "region": "Negros Island",
+      "truth": "LIVE_IMAGE",
       "quality": 96,
       "moment": 96,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Volcanoes",
-        "Science & Research",
-        "Quasi-Live"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
-        "viator",
-        "klook"
+        "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 216.75
     },
     {
       "placeId": "new-taipei-zhongjiao-bay",
       "title": "New Taipei — Zhongjiao Bay",
       "country": "Taiwan",
       "region": "New Taipei City",
+      "truth": "LIVE_IMAGE",
       "quality": 96,
       "moment": 96,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 98,
       "suggestedExistingPartners": [
+        "klook",
         "tiqets",
         "viator",
-        "klook",
         "welcome-pickups"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 216.5
+    },
+    {
+      "placeId": "amden-walensee",
+      "title": "Lake Walensee & Amden — Live Panoramas",
+      "country": "Switzerland",
+      "region": "St. Gallen",
+      "truth": "LIVE_IMAGE",
+      "quality": 96,
+      "moment": 96,
+      "freshness": 97,
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "publicActivationAllowed": false,
+      "score": 216.25
     },
     {
       "placeId": "peru-ubinas-volcano",
       "title": "Ubinas Volcano — Peru",
       "country": "Peru",
       "region": "Moquegua",
+      "truth": "LIVE_IMAGE",
       "quality": 95,
       "moment": 96,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Interesting Earth",
-        "Useful Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 215.75
     },
     {
       "placeId": "nz-taranaki-maunga",
       "title": "Taranaki Maunga — Current Images",
       "country": "New Zealand",
       "region": "Taranaki",
+      "truth": "LIVE_IMAGE",
       "quality": 95,
       "moment": 95,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Interesting Earth",
-        "Useful Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
-        "viator",
-        "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "ecuador-sangay-volcano",
-      "title": "Sangay Volcano — Current Views",
-      "country": "Ecuador",
-      "region": "Morona Santiago",
-      "quality": 94,
-      "moment": 96,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Remote Earth",
-        "Interesting Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
+        "klook",
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 214.75
     },
     {
       "placeId": "hong-kong-tai-mo-shan",
       "title": "Tai Mo Shan — Hong Kong",
       "country": "Hong Kong",
       "region": "New Territories",
+      "truth": "LIVE_IMAGE",
       "quality": 95,
       "moment": 95,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Beautiful Earth",
-        "Useful Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
-        "viator",
-        "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "iceland-surtsey",
-      "title": "Surtsey — Iceland",
-      "country": "Iceland",
-      "region": "Vestmannaeyjar / South Iceland",
-      "quality": 95,
-      "moment": 95,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Islands",
-        "Nature",
-        "Remote Earth",
-        "Interesting Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
+        "klook",
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 214.75
     },
     {
       "placeId": "bulusan-volcano",
       "title": "Bulusan Volcano — Current Monitoring View",
       "country": "Philippines",
       "region": "Sorsogon",
+      "truth": "LIVE_IMAGE",
       "quality": 95,
       "moment": 95,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Volcanoes",
-        "Science & Research",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "lauderdale-by-the-sea",
-      "title": "Windjammer Beach — Lauderdale-by-the-Sea",
-      "country": "United States",
-      "region": "Florida",
-      "quality": 95,
-      "moment": 94,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth",
-        "Useful Earth"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 214.75
+    },
+    {
+      "placeId": "ecuador-sangay-volcano",
+      "title": "Sangay Volcano — Current Views",
+      "country": "Ecuador",
+      "region": "Morona Santiago",
+      "truth": "LIVE_IMAGE",
+      "quality": 94,
+      "moment": 96,
+      "freshness": 98,
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "publicActivationAllowed": false,
+      "score": 214.5
+    },
+    {
+      "placeId": "iceland-surtsey",
+      "title": "Surtsey — Iceland",
+      "country": "Iceland",
+      "region": "Vestmannaeyjar / South Iceland",
+      "truth": "LIVE_IMAGE",
+      "quality": 95,
+      "moment": 95,
+      "freshness": 98,
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "publicActivationAllowed": false,
+      "score": 214.5
     },
     {
       "placeId": "guatemala-santiaguito",
       "title": "Santiaguito Volcano — Guatemala",
       "country": "Guatemala",
       "region": "Quetzaltenango",
+      "truth": "LIVE_IMAGE",
       "quality": 93,
       "moment": 96,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Interesting Earth",
-        "Useful Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 213.75
     },
     {
       "placeId": "alaska-shishaldin-volcano",
       "title": "Shishaldin Volcano — Alaska",
       "country": "United States",
       "region": "Aleutian Islands, Alaska",
+      "truth": "LIVE_IMAGE",
       "quality": 94,
       "moment": 95,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Remote Earth",
-        "Interesting Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 213.75
+    },
+    {
+      "placeId": "lauderdale-by-the-sea",
+      "title": "Windjammer Beach — Lauderdale-by-the-Sea",
+      "country": "United States",
+      "region": "Florida",
+      "truth": "EXTERNAL_LIVE",
+      "quality": 95,
+      "moment": 94,
+      "freshness": 98,
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "publicActivationAllowed": false,
+      "score": 213.5
     },
     {
       "placeId": "colombia-nevado-del-ruiz",
       "title": "Nevado del Ruiz — Current Views",
       "country": "Colombia",
       "region": "Caldas / Tolima",
+      "truth": "LIVE_IMAGE",
       "quality": 94,
       "moment": 95,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Interesting Earth",
-        "Useful Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 98,
       "suggestedExistingPartners": [
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 213.5
     },
     {
       "placeId": "alaska-augustine-volcano",
       "title": "Augustine Volcano — Alaska",
       "country": "United States",
       "region": "Cook Inlet, Alaska",
+      "truth": "LIVE_IMAGE",
       "quality": 93,
       "moment": 94,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Remote Earth",
-        "Interesting Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 211.75
     },
     {
       "placeId": "nz-whakaari",
       "title": "Whakaari / White Island — Current Images",
       "country": "New Zealand",
       "region": "Bay of Plenty",
+      "truth": "LIVE_IMAGE",
       "quality": 92,
       "moment": 94,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Interesting Earth",
-        "Useful Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
-        "viator",
-        "klook"
+        "klook",
+        "tiqets",
+        "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 210.75
     },
     {
       "placeId": "colombia-galeras-volcano",
       "title": "Galeras Volcano — Current Views",
       "country": "Colombia",
       "region": "Nariño",
+      "truth": "LIVE_IMAGE",
       "quality": 92,
       "moment": 93,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Interesting Earth",
-        "Useful Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 97,
       "suggestedExistingPartners": [
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 209.25
     },
     {
       "placeId": "kijihiki-plateau",
       "title": "Kijihiki Plateau",
       "country": "Japan",
       "region": "Hokkaido",
+      "truth": "EXTERNAL_LIVE",
       "quality": 92,
       "moment": 91,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Mountains",
-        "Beautiful Earth"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
-        "viator",
-        "klook"
+        "klook",
+        "tiqets",
+        "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 207.75
+    },
+    {
+      "placeId": "roque-observatory",
+      "title": "Roque de los Muchachos Observatory",
+      "country": "Spain",
+      "region": "La Palma",
+      "truth": "LIVE_IMAGE",
+      "quality": 93,
+      "moment": 90,
+      "freshness": 99,
+      "suggestedExistingPartners": [
+        "tiqets"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "publicActivationAllowed": false,
+      "score": 207.75
     },
     {
       "placeId": "nz-raoul-island",
       "title": "Rangitāhua / Raoul Island — Current Images",
       "country": "New Zealand",
       "region": "Kermadec Islands",
+      "truth": "LIVE_IMAGE",
       "quality": 91,
       "moment": 92,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Interesting Earth",
-        "Useful Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
-        "viator",
-        "klook"
+        "klook",
+        "tiqets",
+        "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 207.75
     },
     {
       "placeId": "peru-ticsani-volcano",
       "title": "Ticsani Volcano — Peru",
       "country": "Peru",
       "region": "Moquegua",
+      "truth": "LIVE_IMAGE",
       "quality": 91,
       "moment": 92,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Remote Earth",
-        "Interesting Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 98,
       "suggestedExistingPartners": [
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 207.5
     },
     {
       "placeId": "peru-yucamane-volcano",
       "title": "Yucamane Volcano — Peru",
       "country": "Peru",
       "region": "Tacna",
+      "truth": "LIVE_IMAGE",
       "quality": 91,
       "moment": 92,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Remote Earth",
-        "Interesting Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 98,
       "suggestedExistingPartners": [
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 207.5
     },
     {
       "placeId": "waikiki-south-shore",
       "title": "Waikiki Beach — South Shore",
       "country": "United States",
       "region": "Hawaii",
+      "truth": "EXTERNAL_LIVE",
       "quality": 92,
       "moment": 90,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth",
-        "Cities & Harbours"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
+        "tiqets",
         "viator",
         "welcome-pickups"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 206.75
     },
     {
       "placeId": "metung-gippsland-lakes",
       "title": "Metung — Gippsland Lakes",
       "country": "Australia",
       "region": "Victoria",
+      "truth": "EXTERNAL_LIVE",
       "quality": 91,
       "moment": 91,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth"
-      ],
+      "freshness": 99,
       "suggestedExistingPartners": [
-        "viator",
-        "klook"
+        "klook",
+        "tiqets",
+        "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 206.75
     },
     {
       "placeId": "ecuador-reventador-monitoring",
       "title": "El Reventador Volcano — Monitoring Views",
       "country": "Ecuador",
       "region": "Sucumbíos/Napo",
+      "truth": "LIVE_IMAGE",
       "quality": 90,
       "moment": 91,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Volcanoes",
-        "Mountains",
-        "Science & Research",
-        "Quasi-Live"
-      ],
+      "freshness": 95,
       "suggestedExistingPartners": [
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 204.75
     },
     {
       "placeId": "ponte-di-legno-adamello",
       "title": "Ponte di Legno — Adamello",
       "country": "Italy",
       "region": "Lombardy",
+      "truth": "EXTERNAL_LIVE",
       "quality": 89,
       "moment": 91,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Mountains",
-        "Beautiful Earth"
-      ],
+      "freshness": 96,
       "suggestedExistingPartners": [
+        "tiqets",
         "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 204
     },
     {
       "placeId": "antarctica-casey-station",
       "title": "Casey Research Station — Antarctica",
       "country": "Antarctica",
       "region": "Windmill Islands",
+      "truth": "LIVE_IMAGE",
       "quality": 91,
       "moment": 88,
+      "freshness": 98,
+      "suggestedExistingPartners": [
+        "tiqets"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "publicActivationAllowed": false,
+      "score": 203.5
+    },
+    {
+      "placeId": "antarctica-davis-station",
+      "title": "Davis Research Station — Antarctica",
+      "country": "Antarctica",
+      "region": "Princess Elizabeth Land",
       "truth": "LIVE_IMAGE",
-      "categories": [
-        "Polar Earth",
-        "Science & Research",
-        "Beautiful Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "blouberg-table-mountain",
-      "title": "Bloubergstrand — Table Mountain",
-      "country": "South Africa",
-      "region": "Western Cape",
-      "quality": 88,
-      "moment": 90,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Beaches & Water",
-        "Mountains",
-        "Beautiful Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "perdido-key-beach",
-      "title": "Perdido Key — Gulf Beach",
-      "country": "United States",
-      "region": "Florida",
-      "quality": 90,
+      "quality": 91,
       "moment": 88,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth",
-        "Quasi-Live"
-      ],
+      "freshness": 98,
       "suggestedExistingPartners": [
-        "viator"
+        "tiqets"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "sasagawa-nagare",
-      "title": "Sasagawa Nagare — Sea of Japan",
-      "country": "Japan",
-      "region": "Niigata Prefecture",
-      "quality": 89,
-      "moment": 89,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "cold-lake-marina",
-      "title": "Cold Lake Marina",
-      "country": "Canada",
-      "region": "Alberta",
-      "quality": 90,
-      "moment": 88,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "skeikampen-ski",
-      "title": "Skeikampen — Mountain Resort",
-      "country": "Norway",
-      "region": "Innlandet",
-      "quality": 88,
-      "moment": 90,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Mountains",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "florida-now",
-      "title": "Florida Now — Beaches & Destinations",
-      "country": "United States",
-      "region": "Florida",
-      "quality": 87,
-      "moment": 90,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Beaches & Water"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "antarctica-macquarie-island",
-      "title": "Macquarie Island — Sub-Antarctic Station",
-      "country": "Australia",
-      "region": "Macquarie Island",
-      "quality": 90,
-      "moment": 87,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Polar Earth",
-        "Islands",
-        "Science & Research",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "pleasant-beach-lake-ontario",
-      "title": "Pleasant Beach — Lake Ontario",
-      "country": "United States",
-      "region": "New York",
-      "quality": 88,
-      "moment": 88,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "nossob-kgalagadi",
-      "title": "Nossob — Kgalagadi",
-      "country": "South Africa",
-      "region": "Kgalagadi Transfrontier Park",
-      "quality": 86,
-      "moment": 88,
-      "truth": "LIVE_IMAGE",
-      "categories": [
-        "Wildlife",
-        "Beautiful Earth",
-        "Interesting Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "ski-arlberg",
-      "title": "Ski Arlberg",
-      "country": "Austria",
-      "region": "St. Anton / Lech / Zürs",
-      "quality": 88,
-      "moment": 86,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Mountains & Snow",
-        "Beautiful Earth",
-        "Useful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "glacier-national-park",
-      "title": "Glacier National Park",
-      "country": "United States",
-      "region": "West Glacier",
-      "quality": 86,
-      "moment": 88,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Parks & Scenic"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "cijin-beach-kaohsiung",
-      "title": "Cijin Beach — Kaohsiung",
-      "country": "Taiwan",
-      "region": "Kaohsiung",
-      "quality": 88,
-      "moment": 86,
-      "truth": "EXTERNAL_LIVE",
-      "categories": [
-        "Beaches & Water",
-        "Cities & Harbours",
-        "Beautiful Earth",
-        "Useful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "klook",
-        "welcome-pickups"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
+      "publicActivationAllowed": false,
+      "score": 203.5
     }
   ],
-  "note": "Post-200-place business research queue. Existing partners first; exact links and manual verification remain mandatory. Quasi-live places may unlock planning but never receive ranking preference because of commercial value."
+  "safeguards": {
+    "paidRanking": false,
+    "automaticPlacement": false,
+    "automaticLinkRewriting": false,
+    "exactTrackedLinkRequired": true
+  }
 }
