@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T13:30:00Z",
+  "generatedAt": "2026-10-03T13:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2719,7 +2719,8 @@
       "id": "tiqets-brussels",
       "destination": "Brussels",
       "placeIds": [
-        "brussels-city"
+        "brussels-grand-place",
+        "brussels-brouckere"
       ],
       "partnerCandidate": "tiqets",
       "intent": "culture",
@@ -2733,7 +2734,8 @@
       "id": "viator-heidelberg",
       "destination": "Heidelberg",
       "placeIds": [
-        "heidelberg"
+        "heidelberg-old-town",
+        "heidelberg-konigstuhl"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -2798,6 +2800,35 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Aalborg/d4186-ttd",
       "nextAction": "Only activate if the destination-level Aalborg link is clean and useful; keep the zoo camera editorially independent."
+    },
+    {
+      "id": "viator-dresden",
+      "destination": "Dresden / Radebeul",
+      "placeIds": [
+        "dresden-old-town",
+        "radebeul-wackerbarth"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has two official Dresden Elbland current views and Viator has substantial Dresden sightseeing/day-trip inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Dresden/d22375-ttd",
+      "nextAction": "Generate one Dresden destination-level Viator link; reuse it across the two related ERN places if it cleanly serves both."
+    },
+    {
+      "id": "viator-garmisch-farchant",
+      "destination": "Garmisch-Partenkirchen / Farchant / Zugspitze",
+      "placeIds": [
+        "farchant-zugspitze"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Farchant/Zugspitze-region current view and Viator has dedicated Garmisch-Partenkirchen/Zugspitze activity inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Garmisch-Partenkirchen/d22133-ttd",
+      "nextAction": "Generate one Garmisch-Partenkirchen destination-level Viator link only if it cleanly serves the Farchant/Zugspitze discovery context."
     }
   ]
 }
