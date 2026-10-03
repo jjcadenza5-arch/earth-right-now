@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T10:55:00Z",
+  "generatedAt": "2026-10-03T11:30:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -79,7 +79,19 @@
       "saily",
       "kkday"
     ],
-    "trafficGatedOrResearchPrograms": 19
+    "trafficGatedOrResearchPrograms": 19,
+    "visibleFutureTravelpayoutsPrograms": 18,
+    "futureUnlockStrategy": "TRAFFIC_LED_RECHECK_ONLY",
+    "futureProgramPriority": [
+      "trip-com",
+      "hotels-com",
+      "booking-com",
+      "agoda",
+      "expedia",
+      "getyourguide",
+      "tripadvisor-experiences",
+      "traveloka"
+    ]
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -93,7 +105,8 @@
     "Viator payout method configured by owner on 2026-10-02",
     "Owner-account screenshot audit confirmed many additional Travelpayouts programs now expose Generate links controls.",
     "Travelpayouts locked-program catalog reviewed; traffic-first unlock strategy adopted on 2026-10-03",
-    "Affiliate state model now separates active partners, account-side link tools and traffic-gated/research programs"
+    "Affiliate state model now separates active partners, account-side link tools and traffic-gated/research programs",
+    "Traffic-gated Travelpayouts roadmap recorded"
   ],
   "humanOnlyRemaining": [
     {
@@ -103,6 +116,14 @@
       "blocksPublicERN": false,
       "blocksCurrentOffers": false,
       "blocksOnlyNewPlacements": true
+    },
+    {
+      "id": "travelpayouts-program-unlock-recheck",
+      "action": "Recheck visible locked Travelpayouts programs only after material ERN traffic/conversion growth or an explicit platform status change",
+      "priority": "DEFERRED_UNTIL_TRIGGER",
+      "blocksPublicERN": false,
+      "blocksCurrentOffers": false,
+      "blocksOnlyFuturePartnerExpansion": true
     }
   ],
   "safeguards": [
