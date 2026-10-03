@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:00:00Z",
+  "generatedAt": "2026-10-03T03:15:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -544,6 +544,36 @@
       "reason": "The SANParks Kruger webcam family can support one park-level trip-planning bridge once at least one new camera is promoted; use one shared commercial action rather than one affiliate link per camp.",
       "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
       "nextAction": "After at least one new Kruger camera is promoted, generate one Kruger destination-level Viator partner link and manually verify it; reuse it across verified Kruger places without duplicate commercial density."
+    },
+    {
+      "id": "viator-kilauea",
+      "destination": "Hawaiʻi Volcanoes National Park / Kīlauea",
+      "placeIds": [
+        "kilauea-summit"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Kīlauea Summit source and Viator currently offers multiple Big Island Volcanoes National Park experiences that explicitly visit Kīlauea.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Big-Island-of-Hawaii/d669-ttd",
+      "publicInventoryEvidence": "Current Viator Big Island inventory includes Hawaii Volcanoes National Park experiences, Kīlauea-focused eco tours and volcano helicopter products.",
+      "nextAction": "Generate one Big Island / Hawaiʻi Volcanoes National Park partner link that resolves cleanly to Kīlauea-relevant inventory; verify it manually before public activation."
+    },
+    {
+      "id": "viator-torres-del-paine",
+      "destination": "Torres del Paine",
+      "placeIds": [
+        "torres-del-paine"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Torres del Paine Río Serrano place and Viator currently sells Torres del Paine sightseeing trips from Punta Arenas and Puerto Natales.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Punta-Arenas/Full-Day-Torres-del-Paine/d4416-225783P1",
+      "publicInventoryEvidence": "Current Viator inventory includes a full-day Torres del Paine viewpoints tour covering Lake Sarmiento, Lake Pehoé and Lake Grey with pickup from Punta Arenas or Puerto Natales.",
+      "nextAction": "Prefer a clean Torres del Paine or Puerto Natales destination-level partner link over a single-product link; verify manually before public activation."
     }
   ]
 }
