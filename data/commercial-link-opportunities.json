@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:05:00Z",
+  "generatedAt": "2026-10-03T12:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2070,6 +2070,21 @@
       "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
       "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
       "ownerVerificationRequired": true
+    },
+    {
+      "id": "viator-etosha-future",
+      "destination": "Etosha National Park / Namibia",
+      "placeIds": [
+        "namibia-okaukuejo-waterhole"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Okaukuejo would give ERN a high-value Namibia wildlife discovery surface, and Viator currently has Etosha safari inventory from Windhoek.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Windhoek/4-Day-Etosha-Swakopmund/d5574-9289P3",
+      "publicInventoryEvidence": "Current Viator inventory includes multi-day Etosha National Park safari/game-drive products from Windhoek.",
+      "nextAction": "Promote the Okaukuejo source only after human playback confirmation; then research a clean Namibia/Etosha destination-level Viator link rather than using an individual tour as the commercial surface."
     }
   ]
 }
