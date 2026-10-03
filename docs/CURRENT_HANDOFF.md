@@ -625,3 +625,14 @@ Island quality checkpoint — 2026-10-03 16:05 UTC:
 - Active-partner business paths added for Maldives/Viator, Barbados Paynes Bay/Viator, and Cape Verde Sal/Viator; exact tracked links remain owner-generated and manually verified.
 - Commercial registry now has 16 verified-link opportunities, 165 exact-link/account-search opportunities, 5 source-gated opportunities, and 2 source-gap-blocked opportunities.
 - Trip.com remains ERN's first preferred future Travelpayouts unlock once traffic/account state permits; no repeated owner recheck is needed before then.
+
+
+300-searchable-place milestone — 2026-10-03 16:30 UTC:
+- Production/searchable catalog reached 300 healthy distinct places from 308 source records across 67 countries/territories.
+- Truth mix after the milestone batch: 13 LIVE_VIDEO, 72 EXTERNAL_LIVE and 219 LIVE_IMAGE/current-image source records among healthy sources.
+- Final milestone additions: Baisha Bay, Laomei Green Reef, Yinghanling/Guanyinshan, Taipingshan, Fenqihu, Daxi Old Street, Dongyanshan, Taiping Suspension Bridge, Whanganui Coast and Te Awanga Coast.
+- All ten are clearly labeled LIVE_IMAGE / quasi-live Search-Explore sources with featuredHold/watchHold; Watch Earth live-video semantics were not relaxed.
+- Commercial classification is now complete across all 300 healthy places: 265 have at least one researched commercial path and 35 are explicitly editorial-first; zero healthy places are unclassified.
+- New business paths: Taipingshan/Klook, Alishan-region/Klook, Taoyuan Daxi-Dongyanshan/KKday and Hawke's Bay/Viator. Existing Taiwan North Coast/Klook path was extended to Baisha Bay, Laomei Green Reef and Yinghanling instead of creating duplicate commercial density.
+- Trip.com remains the P1 future Travelpayouts unlock, but owner screenshots show it visible-not-unlocked. Do not repeatedly recheck; wait for material traffic/conversion growth or an explicit platform status change.
+- ERN mode now shifts from raw scale growth to quality-first searchable expansion, stronger true-live upgrades, freshness/provider diversity and conversion of the best existing commercial research into verified exact links.
