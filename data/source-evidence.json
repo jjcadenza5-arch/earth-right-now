@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T15:45:00Z",
+  "generatedAt": "2026-10-03T15:55:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1656,6 +1656,24 @@
     "rarotonga-airport-current": {
       "freshnessEvidence": "Official page labels the latest/current Rarotonga International Airport image.",
       "rightsBasis": "Official Cook Islands Airports webcam page; ERN links to the source and does not restream."
+    },
+    "kuredu-maldives-live": {
+      "freshnessEvidence": "Kuredu's official webcam page explicitly describes multiple views as live.",
+      "rightsBasis": "Official resort live-webcam page; ERN links to the provider and does not restream.",
+      "story": "Official Kuredu Island live webcam collection with beach, sandbank, watersports-centre and main-pool views.",
+      "coordinateSourceUrl": "https://www.kuredu.com/webcams/"
+    },
+    "barbados-paynes-bay-live": {
+      "freshnessEvidence": "Beach View Hotel explicitly identifies the Paynes Bay feed as a live webcam.",
+      "rightsBasis": "Provider-published live webcam; ERN remains link-only.",
+      "story": "Live view of Paynes Bay Beach from Beach View Hotel on Barbados' west coast.",
+      "coordinateSourceUrl": "https://www.beachviewbarbados.com/live-webcam/"
+    },
+    "cape-verde-santa-maria-bay-live": {
+      "freshnessEvidence": "Odjo d'Água states its Santa Maria Bay webcam is live daily and 24 hours a day.",
+      "rightsBasis": "Hotel-published live webcam; ERN remains link-only.",
+      "story": "24-hour live webcam overlooking Santa Maria Bay on Sal Island.",
+      "coordinateSourceUrl": "https://odjodagua.cv/webcam/"
     }
   },
   "prague-petrin-tower": {
