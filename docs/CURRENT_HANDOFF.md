@@ -551,3 +551,14 @@ Post-250 reconciliation — 2026-10-03:
 - Seoul Gwanghwamun and Cheonggyecheon were consolidated under the already-verified Seoul/Klook city path. Tvøroyri was consolidated under the Faroe Islands path, and Lerwick/Shetland place IDs were corrected under the existing Shetland path.
 - Go City research paths added for New York, London and Chicago; other new research paths include Adelaide coast, Taranaki, Kyrgyz highlands, Hakodate/Kijihiki, Gippsland Lakes, Ponte di Legno, Skeikampen, Diano Marina, Chioggia/Sottomarina, Perdido Key and Kgalagadi.
 - Trip.com, Hotels.com, Booking.com, Agoda, Expedia and other traffic-gated programs remain future unlocks, not current owner tasks.
+
+
+275-place soft-stretch checkpoint — 2026-10-03 13:55 UTC:
+- ERN now has 275 healthy distinct searchable places. The soft stretch target is reached; stop raw-count growth and shift to quality/freshness/live-upgrade work.
+- Latest quality-led additions created first-class coverage in Belgium, Netherlands, Germany and Denmark, plus Cannes and Plitvice Lakes.
+- Distinct-place discipline preserved: Brussels Grand-Place vs Place de Brouckère, Heidelberg Old Town vs Königstuhl, and Zandvoort beach vs circuit are separate real visitor places rather than duplicate camera inflation.
+- New active-partner research paths added for Brussels/Tiqets and Heidelberg, Nuremberg, Cannes, Plitvice, Aalborg, Dresden and Garmisch/Farchant via Viator. Exact tracked links remain owner/account-side and manually verified before activation.
+- Unlocked-program matrix now includes appropriate Brussels/Heidelberg/Nuremberg/Dresden/Cannes/Zandvoort research coverage without asserting inventory.
+- Remaining low-intent/nature/special-event places are explicitly editorial-only rather than being forced into weak monetization.
+- Locked Travelpayouts programs remain traffic-led future targets. Trip.com/Hotels.com/Booking.com/Agoda/Expedia/GetYourGuide are not blockers and should only be revisited after traction or an explicit account-state change.
+- Pamir remains deferred; quasi-live/current-image sources remain acceptable for Search/Explore when clearly labeled and evidenced.
