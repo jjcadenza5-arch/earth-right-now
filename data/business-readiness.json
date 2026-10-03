@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T10:45:00Z",
+  "generatedAt": "2026-10-03T10:55:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -115,5 +115,11 @@
     "Accommodation links remain downstream from Earth discovery and cannot affect ranking",
     "Do not repeatedly ask owner to recheck locked Travelpayouts programs; recheck only on meaningful traffic/account-state change"
   ],
-  "currentHealthySearchablePlaces": 200
+  "currentHealthySearchablePlaces": 202,
+  "releaseHealth": {
+    "pagesDeployment": "SUCCESS_2026-10-03T10:54Z",
+    "operationsCheck": "SUCCESS_2026-10-03T10:54Z",
+    "sourceCatalogRuntimeEvidence": "RIGHTS_BASIS_AND_FRESHNESS_EVIDENCE_RETAINED",
+    "verboseSourceEvidenceSidecar": "data/source-evidence.json"
+  }
 }
