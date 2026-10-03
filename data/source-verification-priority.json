@@ -1,29 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:42:00Z",
-  "currentHealthyDistinctPlaces": 118,
+  "generatedAt": "2026-10-03T06:00:00Z",
+  "currentHealthyDistinctPlaces": 181,
   "targetHealthyDistinctPlaces": [
     150,
     200
   ],
-  "remainingToMinimum": 32,
-  "humanPlaybackQueueCount": 93,
+  "remainingToMinimum": 0,
+  "remainingToStretch": 19,
+  "humanPlaybackQueueCount": 54,
   "topBatch": [
-    {
-      "id": "ala-archa-natural-park",
-      "title": "Ala-Archa Natural Park",
-      "country": "Kyrgyzstan",
-      "region": "Chüy",
-      "provider": "ElCat / KG Camera",
-      "priority": "P1",
-      "verificationUrl": "https://kg.camera/en/camera/AlaArchaPark",
-      "verificationType": "CURRENT_CAMERA_NETWORK_DIRECT",
-      "businessUnlocks": [
-        "viator-ala-archa-future",
-        "klook-ala-archa-future"
-      ],
-      "humanCheckHint": "Open the direct Ala-Archa page and confirm the mountain view updates normally."
-    },
     {
       "id": "denpasar-city-live",
       "title": "Denpasar — Live City Streets",
@@ -85,91 +71,6 @@
       "humanCheckHint": "Open the direct KG Camera Karakol Ski Base page and confirm the lower-lift image/video updates normally."
     },
     {
-      "id": "shymbulak-mountain-resort",
-      "title": "Shymbulak — Trans-Ili Alatau",
-      "country": "Kazakhstan",
-      "region": "Almaty",
-      "provider": "Shymbulak Mountain Resort",
-      "priority": "P1",
-      "verificationUrl": "https://shymbulak.com/live",
-      "verificationType": "OFFICIAL_RESORT_LIVE_CAM_PAGE",
-      "businessUnlocks": [
-        "viator-shymbulak-future",
-        "klook-shymbulak-future"
-      ],
-      "humanCheckHint": "Open the official Shymbulak live page and confirm at least one mountain camera visibly updates."
-    },
-    {
-      "id": "bled-lake-tourism",
-      "title": "Bled — Lake & Castle Views",
-      "country": "Slovenia",
-      "region": "Bled",
-      "provider": "Bled Tourist Board / Infrastruktura Bled",
-      "priority": "P1",
-      "verificationUrl": "https://www.bled.si/en/information/webcam/",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "viator-bled-future"
-      ],
-      "humanCheckHint": "Open the official Bled webcam page and confirm at least one Lake Bled/Straža view visibly updates."
-    },
-    {
-      "id": "dubrovnik-pile-city",
-      "title": "Dubrovnik — Pile",
-      "country": "Croatia",
-      "region": "Dubrovnik",
-      "provider": "City of Dubrovnik",
-      "priority": "P1",
-      "verificationUrl": "https://www.dubrovnik.hr/web-kamere/pile",
-      "verificationType": "OFFICIAL_CITY_CAMERA_PAGE",
-      "businessUnlocks": [
-        "viator-dubrovnik-future"
-      ],
-      "humanCheckHint": "Open the exact official city camera page and confirm the video moves/updates normally."
-    },
-    {
-      "id": "everest-khumbu-hotel-view",
-      "title": "Everest & Khumbu — Hotel Everest View",
-      "country": "Nepal",
-      "region": "Solukhumbu",
-      "provider": "Webcam Nepal",
-      "priority": "P1",
-      "verificationUrl": "https://www.geowebcams.com/en/webcam/himalayan-panorama-from-hotel-everest-view",
-      "verificationType": "LIVE_WEBCAM_AGGREGATOR_WITH_OPERATOR_ATTRIBUTION",
-      "businessUnlocks": [
-        "viator-everest-future"
-      ],
-      "humanCheckHint": "Open the Hotel Everest View live page and confirm the image/video is current before ERN promotes it."
-    },
-    {
-      "id": "mauritius-grand-baie",
-      "title": "Grand Baie — Mauritius",
-      "country": "Mauritius",
-      "region": "Rivière du Rempart",
-      "provider": "Mauritius Tourism Promotion Authority / Mauritius Now",
-      "priority": "P1",
-      "verificationUrl": "https://mauritiusnow.com/things-to-do-in-mauritius/",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_FAMILY",
-      "businessUnlocks": [
-        "klook-mauritius-future"
-      ],
-      "humanCheckHint": "Open the official Mauritius Now page, enter the webcam experience, and confirm the Grand Baie camera is present and visibly current."
-    },
-    {
-      "id": "gudauri-ski-area",
-      "title": "Gudauri — Ski Area",
-      "country": "Georgia",
-      "region": "Mtskheta-Mtianeti",
-      "provider": "Gudauri live camera network",
-      "priority": "P1",
-      "verificationUrl": "https://gudauri.com/about-gudauri/webcams-gudauri.html",
-      "verificationType": "LIVE_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "klook-gudauri-future"
-      ],
-      "humanCheckHint": "Open the Gudauri webcam page and confirm the MTA Gudauri player is live/current."
-    },
-    {
       "id": "hualien-shitiping",
       "title": "Hualien — Shitiping",
       "country": "Taiwan",
@@ -182,50 +83,6 @@
         "viator-hualien-future"
       ],
       "humanCheckHint": "Open the official Hualien-filtered Live Taiwan page and confirm Shitiping visibly updates."
-    }
-  ],
-  "backlog": [
-    {
-      "id": "khumbu-glacier-nco-p",
-      "title": "Khumbu Glacier — Everest Region",
-      "country": "Nepal",
-      "region": "Sagarmatha National Park",
-      "provider": "EvK2CNR / ISAC CNR",
-      "priority": "P1",
-      "verificationUrl": "https://www.worldcamera.net/en/webcams/asia/nepal/246-mteverest-area-khumbu-glacier",
-      "verificationType": "SCIENTIFIC_LIVE_IMAGE_PAGE",
-      "businessUnlocks": [
-        "viator-everest-future"
-      ],
-      "humanCheckHint": "Open the Khumbu Glacier camera and confirm the current image refreshes or has a reliable current timestamp."
-    },
-    {
-      "id": "gudauri-kobi",
-      "title": "Kobi — Greater Caucasus",
-      "country": "Georgia",
-      "region": "Mtskheta-Mtianeti",
-      "provider": "Gudauri live camera network",
-      "priority": "P1",
-      "verificationUrl": "https://gudauri.com/about-gudauri/webcams-gudauri.html",
-      "verificationType": "LIVE_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "klook-gudauri-future"
-      ],
-      "humanCheckHint": "Open the Gudauri webcam page and confirm the MTA Kobi player is live/current."
-    },
-    {
-      "id": "wanaka-lake-view-roys-peak",
-      "title": "Lake Wānaka — Roys Peak View",
-      "country": "New Zealand",
-      "region": "Wānaka / Otago",
-      "provider": "Lake Wānaka Tourism",
-      "priority": "P1",
-      "verificationUrl": "https://www.wanaka.co.nz/wanaka-webcams/",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "klook-wanaka-future"
-      ],
-      "humanCheckHint": "Open the Wānaka webcam page and confirm the Lake Wānaka view is current."
     },
     {
       "id": "malta-live-cams",
@@ -242,20 +99,6 @@
       "humanCheckHint": "Open the official Live Malta Cams page and confirm at least one destination camera visibly updates before ERN promotes any specific Malta place."
     },
     {
-      "id": "mykonos-new-port",
-      "title": "Mykonos — New Port Live",
-      "country": "Greece",
-      "region": "Cyclades",
-      "provider": "Municipal Port Fund of Mykonos",
-      "priority": "P1",
-      "verificationUrl": "https://mykonosports.gr/en/webcams/",
-      "verificationType": "OFFICIAL_MUNICIPAL_LIVE_STREAM_PAGE",
-      "businessUnlocks": [
-        "viator-mykonos-future"
-      ],
-      "humanCheckHint": "Open the municipal Mykonos live-stream page and confirm at least one New Port camera moves normally."
-    },
-    {
       "id": "kenyalive-nairobi-national-park",
       "title": "Nairobi National Park — KenyaLIVE",
       "country": "Kenya",
@@ -268,20 +111,6 @@
         "viator-nairobi-national-park-future"
       ],
       "humanCheckHint": "Open the KWS KenyaLIVE article, follow the official KWS YouTube route, and confirm there is a current live broadcast identified as Nairobi National Park before promotion."
-    },
-    {
-      "id": "sanparks-olifants",
-      "title": "Olifants — Kruger National Park",
-      "country": "South Africa",
-      "region": "Kruger National Park",
-      "provider": "SANParks",
-      "priority": "P1",
-      "verificationUrl": "https://www.sanparks.org/travel/webcams/video/olifants",
-      "verificationType": "OFFICIAL_PARK_LIVE_VIDEO_PAGE",
-      "businessUnlocks": [
-        "viator-kruger-future"
-      ],
-      "humanCheckHint": "Open the official Olifants video page and confirm the video is actively updating."
     },
     {
       "id": "panama-canal-agua-clara-locks",
@@ -326,34 +155,6 @@
       "humanCheckHint": "Open the Panama Canal Authority Web Cameras section, choose Miraflores Locks, and confirm ships/locks are updating in real time."
     },
     {
-      "id": "poiana-brasov-live",
-      "title": "Poiana Brașov — Mountain Resort",
-      "country": "Romania",
-      "region": "Brașov",
-      "provider": "Poiana Brașov Travel / Discover Poiana",
-      "priority": "P1",
-      "verificationUrl": "https://poianabrasov.travel/webcams/",
-      "verificationType": "TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "viator-brasov-future"
-      ],
-      "humanCheckHint": "Open the Poiana Brașov webcam page and confirm one panoramic/mountain camera visibly updates."
-    },
-    {
-      "id": "mauritius-pointe-desny",
-      "title": "Pointe d’Esny — Mauritius",
-      "country": "Mauritius",
-      "region": "Grand Port",
-      "provider": "Mauritius Tourism Promotion Authority / Mauritius Now",
-      "priority": "P1",
-      "verificationUrl": "https://mauritiusnow.com/things-to-do-in-mauritius/",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_FAMILY",
-      "businessUnlocks": [
-        "klook-mauritius-future"
-      ],
-      "humanCheckHint": "Open the official Mauritius Now webcam experience and confirm Pointe d’Esny is present and visibly current."
-    },
-    {
       "id": "prague-old-town-hall",
       "title": "Prague — Old Town Hall",
       "country": "Czech Republic",
@@ -380,77 +181,9 @@
         "tiqets-prague-future"
       ],
       "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
-    },
-    {
-      "id": "rotorua-skyline-city-lake",
-      "title": "Rotorua — City & Lake from Skyline",
-      "country": "New Zealand",
-      "region": "Bay of Plenty",
-      "provider": "Rotorua NZ / Skyline Rotorua",
-      "priority": "P1",
-      "verificationUrl": "https://conference.rotoruanz.com/en-NZ/visit/Weather-Webcams",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "viator-rotorua-future"
-      ],
-      "humanCheckHint": "Open the Rotorua webcams page and confirm the Skyline Rotorua city/lake view is visibly current."
-    },
-    {
-      "id": "rotorua-museum-gardens-lake",
-      "title": "Rotorua — Museum, Government Gardens & Lake",
-      "country": "New Zealand",
-      "region": "Bay of Plenty",
-      "provider": "Rotorua NZ / Rotorua Lakes Council",
-      "priority": "P1",
-      "verificationUrl": "https://conference.rotoruanz.com/en-NZ/visit/Weather-Webcams",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "viator-rotorua-future"
-      ],
-      "humanCheckHint": "Open the Rotorua webcams page and confirm the Museum/Government Gardens/Lake view is visibly current."
-    },
-    {
-      "id": "salzburg-mirabell-old-town",
-      "title": "Salzburg — Mirabell Gardens & Old Town",
-      "country": "Austria",
-      "region": "Salzburg",
-      "provider": "Salzburg Tourism",
-      "priority": "P1",
-      "verificationUrl": "https://www.salzburg.info/en/travel-info/webcam",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "tiqets-salzburg-future"
-      ],
-      "humanCheckHint": "Open the official Salzburg webcam page and confirm the Mirabell/Old Town image or video is visibly current."
-    },
-    {
-      "id": "santorini-caldera-imerovigli",
-      "title": "Santorini — Caldera from Imerovigli",
-      "country": "Greece",
-      "region": "Cyclades",
-      "provider": "Santorini.net / Altana Heritage Suites",
-      "priority": "P1",
-      "verificationUrl": "https://www.santorini.net/live_webcam/",
-      "verificationType": "LIVE_STREAM_PAGE",
-      "businessUnlocks": [
-        "viator-santorini-future"
-      ],
-      "humanCheckHint": "Open the Santorini live webcam page and confirm Camera A or B is currently streaming rather than only showing timelapse."
-    },
-    {
-      "id": "sanparks-satara",
-      "title": "Satara — Kruger National Park",
-      "country": "South Africa",
-      "region": "Kruger National Park",
-      "provider": "SANParks",
-      "priority": "P1",
-      "verificationUrl": "https://www.sanparks.org/travel/webcams/video/satara",
-      "verificationType": "OFFICIAL_PARK_LIVE_VIDEO_PAGE",
-      "businessUnlocks": [
-        "viator-kruger-future"
-      ],
-      "humanCheckHint": "Open the official Satara video page and confirm the wildlife video is actively updating."
-    },
+    }
+  ],
+  "backlog": [
     {
       "id": "taichung-techi-reservoir",
       "title": "Taichung — Techi Reservoir",
@@ -494,20 +227,6 @@
       "humanCheckHint": "Open the official Taipei-filtered Live Taiwan page and confirm Dajia Riverside Park visibly updates."
     },
     {
-      "id": "tallinn-tv-tower-panorama",
-      "title": "Tallinn — TV Tower Panorama",
-      "country": "Estonia",
-      "region": "Tallinn",
-      "provider": "Tallinn TV Tower",
-      "priority": "P1",
-      "verificationUrl": "https://teletorn.ee/en/webcam/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [
-        "tiqets-tallinn-future"
-      ],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
-    },
-    {
       "id": "ushuaia-harbour-municipal",
       "title": "Ushuaia — Harbour & Beagle Channel",
       "country": "Argentina",
@@ -520,34 +239,6 @@
         "viator-ushuaia-future"
       ],
       "humanCheckHint": "Open the exact municipal-published YouTube target and confirm it is still a current live harbour stream, not an archived recording."
-    },
-    {
-      "id": "wanaka-mt-aspiring-view",
-      "title": "Wānaka — Mt Aspiring View",
-      "country": "New Zealand",
-      "region": "Wānaka / Otago",
-      "provider": "Lake Wānaka Tourism",
-      "priority": "P1",
-      "verificationUrl": "https://www.wanaka.co.nz/wanaka-webcams/",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "klook-wanaka-future"
-      ],
-      "humanCheckHint": "Open the Wānaka webcam page and confirm the Mt Aspiring view is current."
-    },
-    {
-      "id": "wanaka-roys-peak-town-view",
-      "title": "Wānaka — Roys Peak Town View",
-      "country": "New Zealand",
-      "region": "Wānaka / Otago",
-      "provider": "Lake Wānaka Tourism",
-      "priority": "P1",
-      "verificationUrl": "https://www.wanaka.co.nz/wanaka-webcams/",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "klook-wanaka-future"
-      ],
-      "humanCheckHint": "Open the official Wānaka webcams page and confirm the Roys Peak view toward Wānaka is current."
     },
     {
       "id": "ala-archa-park",
@@ -576,42 +267,16 @@
       "humanCheckHint": "Open the direct Balykchy page and confirm the gateway/road view updates normally."
     },
     {
-      "id": "dubrovnik-gruz-city",
-      "title": "Dubrovnik — Gruž",
-      "country": "Croatia",
-      "region": "Dubrovnik",
-      "provider": "City of Dubrovnik",
-      "priority": "P2",
-      "verificationUrl": "https://www.dubrovnik.hr/web-kamere/gruz",
-      "verificationType": "OFFICIAL_CITY_CAMERA_PAGE",
-      "businessUnlocks": [
-        "viator-dubrovnik-future"
-      ],
-      "humanCheckHint": "Open the exact official city camera page and confirm the video moves/updates normally."
-    },
-    {
-      "id": "funchal-madeira-live",
-      "title": "Funchal — Madeira Live View",
-      "country": "Portugal",
-      "region": "Madeira",
-      "provider": "Madeira Islands Tourism Board",
+      "id": "everest-khumbu-hotel-view",
+      "title": "Everest & Khumbu — Hotel Everest View",
+      "country": "Nepal",
+      "region": "Solukhumbu",
+      "provider": "Webcam Nepal",
       "priority": "P1",
-      "verificationUrl": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
-      "verificationType": "PROVIDER_PAGE",
+      "verificationUrl": "https://www.geowebcams.com/en/webcam/himalayan-panorama-from-hotel-everest-view",
+      "verificationType": "LIVE_WEBCAM_AGGREGATOR_WITH_OPERATOR_ATTRIBUTION",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
-    },
-    {
-      "id": "st-maarten-great-bay-boardwalk",
-      "title": "Great Bay & Philipsburg Boardwalk — St. Maarten",
-      "country": "Sint Maarten",
-      "region": "Philipsburg",
-      "provider": "Visit St. Maarten / ShowMe Caribbean",
-      "priority": "P1",
-      "verificationUrl": "https://www.visitstmaarten.com/areas/philipsburg/",
-      "verificationType": "OFFICIAL_TOURISM_ENDORSED_LIVE_CAMERA",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the official Philipsburg tourism page and confirm the Great Bay/Boardwalk webcam is visibly live."
+      "humanCheckHint": "Open the Hotel Everest View live page and confirm the image/video is current before ERN promotes it."
     },
     {
       "id": "innsbruck-stadtturm",
@@ -624,54 +289,6 @@
       "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
       "businessUnlocks": [],
       "humanCheckHint": "Open the regional Innsbruck webcam page and verify the Stadtturm iframe."
-    },
-    {
-      "id": "innsbruck-live-panorama",
-      "title": "Innsbruck — Live Panorama",
-      "country": "Austria",
-      "region": "Tyrol",
-      "provider": "Innsbruck Tourism",
-      "priority": "P1",
-      "verificationUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the official Innsbruck webcam page and use the main 360° live panorama."
-    },
-    {
-      "id": "innsbruck-markthalle",
-      "title": "Innsbruck — Markthalle & River Inn",
-      "country": "Austria",
-      "region": "Tyrol",
-      "provider": "Innsbruck Tourism",
-      "priority": "P1",
-      "verificationUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
-      "businessUnlocks": [],
-      "humanCheckHint": "On the official Innsbruck webcam page, choose the Markthalle / central Innsbruck camera overlooking the River Inn."
-    },
-    {
-      "id": "issyk-kul-karven-four-seasons",
-      "title": "Issyk-Kul — KarVen Four Seasons Beach",
-      "country": "Kyrgyzstan",
-      "region": "Issyk-Kul",
-      "provider": "ElCat / KG Camera",
-      "priority": "P1",
-      "verificationUrl": "https://kg.camera/en/camera/KarVen_4_Seasons",
-      "verificationType": "CURRENT_CAMERA_NETWORK_DIRECT",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the direct KarVen Four Seasons page and confirm the Lake Issyk-Kul beach view updates normally."
-    },
-    {
-      "id": "innsbruck-kuhtai",
-      "title": "Kühtai — Tyrol",
-      "country": "Austria",
-      "region": "Tyrol",
-      "provider": "Innsbruck Tourism",
-      "priority": "P1",
-      "verificationUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the official Innsbruck webcams page and choose Kühtai."
     },
     {
       "id": "wanaka-lake-hawea-view",
@@ -702,30 +319,6 @@
       "humanCheckHint": "Open the official Taichung-filtered Live Taiwan page and confirm Lishan Yingyuan Hill visibly updates."
     },
     {
-      "id": "st-maarten-maho-beach",
-      "title": "Maho Beach — St. Maarten",
-      "country": "Sint Maarten",
-      "region": "Maho",
-      "provider": "Visit St. Maarten / ShowMe Caribbean",
-      "priority": "P1",
-      "verificationUrl": "https://www.visitstmaarten.com/your-top-three-caribbean-live-webcams-2/",
-      "verificationType": "OFFICIAL_TOURISM_ENDORSED_LIVE_CAMERA",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the official Visit St. Maarten webcam article and confirm the Maho Beach live stream is currently playing."
-    },
-    {
-      "id": "mendoza-plaza-independencia-live",
-      "title": "Mendoza — Plaza Independencia",
-      "country": "Argentina",
-      "region": "Mendoza",
-      "provider": "Municipalidad de la Ciudad de Mendoza",
-      "priority": "P1",
-      "verificationUrl": "https://camarasmunicapital.ciudaddemendoza.gov.ar/index.html",
-      "verificationType": "OFFICIAL_CITY_LIVE_VIDEO_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the official municipal camera page and confirm Plaza Independencia is visibly live/current."
-    },
-    {
       "id": "new-taipei-zhongjiao-bay",
       "title": "New Taipei — Zhongjiao Bay",
       "country": "Taiwan",
@@ -736,18 +329,6 @@
       "verificationType": "OFFICIAL_TOURISM_LIVE_INDEX",
       "businessUnlocks": [],
       "humanCheckHint": "Open the official New Taipei-filtered Live Taiwan page and confirm Zhongjiao Bay visibly updates."
-    },
-    {
-      "id": "innsbruck-nordkette",
-      "title": "Nordkette — Innsbruck",
-      "country": "Austria",
-      "region": "Tyrol",
-      "provider": "Innsbruck Tourism",
-      "priority": "P1",
-      "verificationUrl": "https://www.innsbruck.info/en/destinations/webcams/webcams-region.html",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the regional Innsbruck webcam page and verify the Nordkette iframe updates normally."
     },
     {
       "id": "osh-sulaiman-too",
@@ -790,30 +371,6 @@
         "viator-panama-canal-future"
       ],
       "humanCheckHint": "Choose Pedro Miguel Locks on the official Panama Canal web-camera page and confirm current motion/activity."
-    },
-    {
-      "id": "innsbruck-patscherkofel",
-      "title": "Patscherkofel — Innsbruck Region",
-      "country": "Austria",
-      "region": "Tyrol",
-      "provider": "Innsbruck Tourism",
-      "priority": "P1",
-      "verificationUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the official Innsbruck webcams page and choose Patscherkofel."
-    },
-    {
-      "id": "porto-moniz-madeira-live",
-      "title": "Porto Moniz — Madeira Live View",
-      "country": "Portugal",
-      "region": "Madeira",
-      "provider": "Madeira Islands Tourism Board",
-      "priority": "P1",
-      "verificationUrl": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
     },
     {
       "id": "prague-lesser-town-bridge-tower",
@@ -872,34 +429,6 @@
       "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
     },
     {
-      "id": "sanparks-punda-maria",
-      "title": "Punda Maria — Kruger National Park",
-      "country": "South Africa",
-      "region": "Kruger National Park",
-      "provider": "SANParks",
-      "priority": "P2",
-      "verificationUrl": "https://www.sanparks.org/travel/webcams/still/punda-maria",
-      "verificationType": "OFFICIAL_PARK_LIVE_IMAGE_PAGE",
-      "businessUnlocks": [
-        "viator-kruger-future"
-      ],
-      "humanCheckHint": "Open the official Punda Maria still-cam page and confirm the image timestamp/content refreshes."
-    },
-    {
-      "id": "mauritius-saint-felix",
-      "title": "Saint-Félix — Mauritius",
-      "country": "Mauritius",
-      "region": "Savanne",
-      "provider": "Mauritius Tourism Promotion Authority / Mauritius Now",
-      "priority": "P2",
-      "verificationUrl": "https://mauritiusnow.com/things-to-do-in-mauritius/",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_FAMILY",
-      "businessUnlocks": [
-        "klook-mauritius-future"
-      ],
-      "humanCheckHint": "Open the official Mauritius Now webcam experience and confirm Saint-Félix is present and visibly current."
-    },
-    {
       "id": "seoul-cheonggye-plaza",
       "title": "Seoul — Cheonggyecheon Plaza",
       "country": "South Korea",
@@ -909,7 +438,7 @@
       "verificationUrl": "https://tv.seoul.go.kr/onair/seoul24.do",
       "verificationType": "PROVIDER_PAGE",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
+      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
     },
     {
       "id": "seoul-gwanghwamun-plaza",
@@ -921,7 +450,7 @@
       "verificationUrl": "https://tv.seoul.go.kr/onair/seoul24.do",
       "verificationType": "PROVIDER_PAGE",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
+      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
     },
     {
       "id": "st-maarten-simpson-bay",
@@ -976,20 +505,6 @@
       "humanCheckHint": "Open the official Taipei-filtered Live Taiwan page and confirm Bishanyan visibly updates."
     },
     {
-      "id": "sanparks-talamati",
-      "title": "Talamati — Kruger National Park",
-      "country": "South Africa",
-      "region": "Kruger National Park",
-      "provider": "SANParks",
-      "priority": "P2",
-      "verificationUrl": "https://www.sanparks.org/travel/webcams/still/talamati",
-      "verificationType": "OFFICIAL_PARK_LIVE_IMAGE_PAGE",
-      "businessUnlocks": [
-        "viator-kruger-future"
-      ],
-      "humanCheckHint": "Open the official Talamati still-cam page and confirm the image refreshes."
-    },
-    {
       "id": "too-ashu-north",
       "title": "Too-Ashu Pass — Northern Tunnel Entrance",
       "country": "Kyrgyzstan",
@@ -1026,18 +541,6 @@
       "humanCheckHint": "Open the direct Ala-Too Square page and confirm the city-center view updates normally."
     },
     {
-      "id": "calheta-madeira-live",
-      "title": "Calheta — Madeira Live View",
-      "country": "Portugal",
-      "region": "Madeira",
-      "provider": "Madeira Islands Tourism Board",
-      "priority": "P2",
-      "verificationUrl": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
-    },
-    {
       "id": "celerina-engadin",
       "title": "Celerina — Engadin",
       "country": "Switzerland",
@@ -1047,7 +550,7 @@
       "verificationUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/celerina",
       "verificationType": "PROVIDER_PAGE",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
+      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
     },
     {
       "id": "crans-montana-la-nationale",
@@ -1059,7 +562,7 @@
       "verificationUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/la-nationale/",
       "verificationType": "PROVIDER_PAGE",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
+      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
     },
     {
       "id": "engelberg-fuerenalp",
@@ -1071,19 +574,7 @@
       "verificationUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/fuerenalp/",
       "verificationType": "PROVIDER_PAGE",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
-    },
-    {
-      "id": "kilpisjarvi-saana",
-      "title": "Kilpisjärvi — Saana Fell",
-      "country": "Finland",
-      "region": "Lapland",
-      "provider": "Visit Finland / Starlapland",
-      "priority": "P2",
-      "verificationUrl": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
+      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
     },
     {
       "id": "levi-ski-resort",
@@ -1095,7 +586,7 @@
       "verificationUrl": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
       "verificationType": "PROVIDER_PAGE",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
+      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
     },
     {
       "id": "innsbruck-lusens",
@@ -1110,18 +601,6 @@
       "humanCheckHint": "Open the official Innsbruck webcams page and choose Lüsens."
     },
     {
-      "id": "machico-madeira-live",
-      "title": "Machico — Madeira Live View",
-      "country": "Portugal",
-      "region": "Madeira",
-      "provider": "Madeira Islands Tourism Board",
-      "priority": "P2",
-      "verificationUrl": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
-    },
-    {
       "id": "innsbruck-mieminger-plateau",
       "title": "Mieminger Plateau — Tyrol",
       "country": "Austria",
@@ -1134,18 +613,6 @@
       "humanCheckHint": "Open the official Innsbruck webcams page and choose Mieminger Plateau."
     },
     {
-      "id": "montreux-rochers-de-naye",
-      "title": "Montreux — Rochers-de-Naye",
-      "country": "Switzerland",
-      "region": "Vaud",
-      "provider": "Switzerland Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/rochers-de-naye/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
-    },
-    {
       "id": "murren-edelweiss",
       "title": "Mürren — Bernese Alps",
       "country": "Switzerland",
@@ -1155,7 +622,7 @@
       "verificationUrl": "https://www.myswitzerland.com/en-ch/destinations/panoramas/edelweiss/",
       "verificationType": "PROVIDER_PAGE",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
+      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
     },
     {
       "id": "naryn-central-square",
@@ -1179,7 +646,19 @@
       "verificationUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/randa/",
       "verificationType": "PROVIDER_PAGE",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
+      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
+    },
+    {
+      "id": "mauritius-saint-felix",
+      "title": "Saint-Félix — Mauritius",
+      "country": "Mauritius",
+      "region": "Savanne",
+      "provider": "Mauritius Tourism Promotion Authority / Mauritius Now",
+      "priority": "P2",
+      "verificationUrl": "https://mauritiusnow.com/things-to-do-in-mauritius/",
+      "verificationType": "OFFICIAL_TOURISM_WEBCAM_FAMILY",
+      "businessUnlocks": [],
+      "humanCheckHint": "Open the official Mauritius Now webcam experience and confirm Saint-Félix is present and visibly current."
     },
     {
       "id": "schynige-platte",
@@ -1191,7 +670,7 @@
       "verificationUrl": "https://www.myswitzerland.com/en-ch/destinations/panoramas/schynige-platte/",
       "verificationType": "PROVIDER_PAGE",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
+      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
     },
     {
       "id": "innsbruck-swarovski-wattens",
@@ -1227,7 +706,7 @@
       "verificationUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/bellevue/",
       "verificationType": "PROVIDER_PAGE",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm current/live usefulness before promotion."
+      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
     },
     {
       "id": "razzakov-center",
@@ -1242,5 +721,10 @@
       "humanCheckHint": "Open kg.camera and choose Razzakov city center."
     }
   ],
-  "note": "Only human-playback-gated sources appear here. Quasi-live sources with sufficient official freshness evidence may be promoted separately under LIVE_IMAGE policy."
+  "quasiLivePolicy": {
+    "searchExploreAllowed": true,
+    "watchEarthEligible": false,
+    "labelingRequired": true
+  },
+  "note": "Human verification queue only. Research or business value never changes source truth/currentness."
 }
