@@ -2807,6 +2807,50 @@
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "sourcePage": "https://www.visitdenmark.com/denmark/things-do/livestreams",
       "verification": "Official VisitDenmark live collection supports Klitmøller and Ribe; related official attraction pages support Skjoldnæs, Løkken, Aalborg Zoo and Gribskov."
+    },
+    {
+      "id": "dresden-radebeul-quasi",
+      "title": "Dresden & Radebeul — official weathercams",
+      "country": "Germany",
+      "region": "Saxony",
+      "provider": "Dresden Elbland Tourism",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://www.visit-dresden-elbland.de/en/weathercam",
+      "verification": "Official tourism page exposes two live weathercams: Dresden Old Town and Schloss Wackerbarth/Radebeul."
+    },
+    {
+      "id": "farchant-zugspitze-quasi",
+      "title": "Farchant — Zugspitze Region",
+      "country": "Germany",
+      "region": "Bavaria / Zugspitzland",
+      "provider": "Tourist Information Farchant",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://www.farchant.de/en/live-up-to-date/webcam",
+      "verification": "Official destination page says visitors can check in live and lists Farchant/Zugspitze/Garmisch cameras."
+    },
+    {
+      "id": "heidelberg-konigstuhl-quasi",
+      "title": "Heidelberg — Königstuhl Panorama",
+      "country": "Germany",
+      "region": "Baden-Württemberg",
+      "provider": "Heidelberg Marketing",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://www.heidelberg-marketing.de/planen/wetter-und-webcams",
+      "verification": "Official tourism page lists Königstuhl as a distinct current panorama."
+    },
+    {
+      "id": "zandvoort-circuit-quasi",
+      "title": "Circuit Zandvoort — Pit & Track View",
+      "country": "Netherlands",
+      "region": "North Holland",
+      "provider": "Visit Zandvoort",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://visitzandvoort.com/circuit/webcam/",
+      "verification": "Official tourism page documents a dedicated year-round circuit pitcam."
     }
   ],
   "notes": [
@@ -2862,7 +2906,8 @@
     "2026-10-03T12:35Z milestone batch promoted 2 more quasi-live searchable places, bringing healthy searchable distinct places to the 250 stretch target.",
     "2026-10-03 quality-led Istanbul expansion added Taksim Square, Maiden’s Tower and Anadolu Hisarı as distinct official LIVE_IMAGE/Search-Explore places. Watch Earth rules unchanged.",
     "2026-10-03 promoted Tvøroyri Port, Lerwick Town Hall and Shetland Cliff Cam to searchable LIVE_IMAGE using current official municipal/destination evidence; Watch Earth rules unchanged.",
-    "2026-10-03 13:25 UTC: quality-led European gap batch promoted Belgium, Netherlands, Germany, Denmark, Cannes and Plitvice into Search/Explore using conservative LIVE_IMAGE semantics; no new Watch Earth live-video eligibility was inferred."
+    "2026-10-03 13:25 UTC: quality-led European gap batch promoted Belgium, Netherlands, Germany, Denmark, Cannes and Plitvice into Search/Explore using conservative LIVE_IMAGE semantics; no new Watch Earth live-video eligibility was inferred.",
+    "2026-10-03 13:45 UTC: ERN reached the 275 healthy-searchable soft stretch target using genuinely distinct destinations/POIs rather than duplicate views; Dresden/Radebeul, Heidelberg Königstuhl, Zandvoort Circuit and Farchant completed the batch."
   ],
   "researchGaps": [
     {
