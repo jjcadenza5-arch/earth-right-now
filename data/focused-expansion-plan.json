@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:35:00Z",
+  "generatedAt": "2026-10-03T04:42:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 112,
+    "currentHealthyDistinctPlaceBaseline": 118,
     "targetRange": [
       150,
       200
@@ -74,7 +74,13 @@
       "labelingRequired": true,
       "rule": "Quasi-live expands Search/Explore only; it never masquerades as continuous live video."
     },
-    "quasiLivePromotedCount": 15
+    "quasiLivePromotedCount": 15,
+    "currentHealthyLiveImageCount": 44,
+    "progressToTarget": {
+      "minimumTarget": 150,
+      "current": 118,
+      "remainingToMinimum": 32
+    }
   },
   "businessLane": {
     "activePartners": [
@@ -149,7 +155,14 @@
     "sourceGatedQueueCount": 33,
     "sourceGapBlockedCount": 1,
     "sourceGatedOpportunityCount": 31,
-    "quasiLiveCommercialRule": "A healthy quasi-live searchable place may unlock downstream travel planning, but commercial value never changes truth/currentness."
+    "quasiLiveCommercialRule": "A healthy quasi-live searchable place may unlock downstream travel planning, but commercial value never changes truth/currentness.",
+    "currentOpportunityStates": {
+      "VERIFIED_LINK_ADDED": 16,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 37,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 33,
+      "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
+    },
+    "currentOpportunityCount": 87
   },
   "safeguards": {
     "automaticPlacement": false,
