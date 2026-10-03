@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:55:00Z",
+  "generatedAt": "2026-10-03T02:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -670,6 +670,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Rotorua/d395-ttd",
       "publicInventoryEvidence": "Current Viator Rotorua inventory includes 100+ results spanning Māori cultural experiences, geothermal attractions, rafting, nature and sightseeing.",
       "nextAction": "After at least one Rotorua official webcam is promoted, generate one Rotorua destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-pamir-future",
+      "destination": "Pamir Mountains / Pamir Highway",
+      "placeIds": [
+        "pamir-mountains-tajikistan"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Viator currently has multiple Pamir Highway multi-day experiences from Dushanbe/Osh, including Khorog, Wakhan, Murghab and Karakul. This is commercially relevant only after ERN finds a genuine Pamir live/current source.",
+      "state": "SOURCE_GAP_MUST_BE_SOLVED_FIRST",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/tours/Dushanbe/Pamir-Highway/d50471-220481P1",
+      "publicInventoryEvidence": "Current Viator inventory includes Pamir Highway itineraries through Khorog, Wakhan Corridor, Murghab and Karakul Lake.",
+      "nextAction": "Do not create or publish an affiliate link until ERN has a verified Pamir live/current place. Once source truth exists, prefer one Pamir Highway destination-level Viator link."
     }
   ]
 }
