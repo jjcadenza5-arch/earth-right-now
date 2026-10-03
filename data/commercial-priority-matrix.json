@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T05:45:00Z",
+  "generatedAt": "2026-10-03T09:05:00Z",
   "principles": {
     "existingPartnersFirst": true,
     "exactTrackedLinkRequired": true,
@@ -11,8 +11,8 @@
   },
   "currentOpportunityStates": {
     "VERIFIED_LINK_ADDED": 16,
-    "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 86,
-    "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 17,
+    "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 93,
+    "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 11,
     "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
   },
   "researchPriority": [
@@ -23,6 +23,7 @@
       "region": "North Karelia",
       "quality": 98,
       "moment": 98,
+      "truth": "EXTERNAL_LIVE",
       "categories": [
         "Mountains",
         "Nature",
@@ -42,10 +43,12 @@
       "region": "Bernese Oberland",
       "quality": 97,
       "moment": 98,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Beautiful Earth",
         "Mountains & Snow",
-        "Useful Earth"
+        "Useful Earth",
+        "Quasi-Live"
       ],
       "suggestedExistingPartners": [
         "viator"
@@ -61,6 +64,7 @@
       "region": "Nantou / Hualien",
       "quality": 97,
       "moment": 97,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Nature",
@@ -71,27 +75,6 @@
       "suggestedExistingPartners": [
         "viator",
         "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "peru-sabancaya-volcano",
-      "title": "Sabancaya Volcano — Peru",
-      "country": "Peru",
-      "region": "Arequipa",
-      "quality": 96,
-      "moment": 97,
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Interesting Earth",
-        "Useful Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
@@ -104,57 +87,15 @@
       "region": "St. Gallen",
       "quality": 96,
       "moment": 96,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Beautiful Earth",
         "Mountains & Snow",
-        "Useful Earth"
+        "Useful Earth",
+        "Quasi-Live"
       ],
       "suggestedExistingPartners": [
         "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "taiwan-green-island-chaikou",
-      "title": "Green Island — Chaikou",
-      "country": "Taiwan",
-      "region": "Taitung County",
-      "quality": 96,
-      "moment": 96,
-      "categories": [
-        "Islands",
-        "Beaches & Water",
-        "Nature",
-        "Beautiful Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "taiwan-kenting-forest",
-      "title": "Kenting National Forest — Ocean View Tower",
-      "country": "Taiwan",
-      "region": "Pingtung County",
-      "quality": 96,
-      "moment": 96,
-      "categories": [
-        "Parks & Scenic",
-        "Nature",
-        "Beaches & Water",
-        "Beautiful Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "klook"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
@@ -167,6 +108,7 @@
       "region": "Negros Island",
       "quality": 96,
       "moment": 96,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Volcanoes",
@@ -188,6 +130,7 @@
       "region": "New Taipei City",
       "quality": 96,
       "moment": 96,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Beaches & Water",
         "Beautiful Earth",
@@ -210,6 +153,7 @@
       "region": "Moquegua",
       "quality": 95,
       "moment": 96,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Nature",
@@ -231,11 +175,13 @@
       "region": "Taranaki",
       "quality": 95,
       "moment": 95,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Nature",
         "Interesting Earth",
-        "Useful Earth"
+        "Useful Earth",
+        "Quasi-Live"
       ],
       "suggestedExistingPartners": [
         "viator",
@@ -252,6 +198,7 @@
       "region": "Morona Santiago",
       "quality": 94,
       "moment": 96,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Nature",
@@ -273,6 +220,7 @@
       "region": "New Territories",
       "quality": 95,
       "moment": 95,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Nature",
@@ -281,7 +229,8 @@
         "Quasi-Live"
       ],
       "suggestedExistingPartners": [
-        "viator"
+        "viator",
+        "klook"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
@@ -294,31 +243,12 @@
       "region": "Vestmannaeyjar / South Iceland",
       "quality": 95,
       "moment": 95,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Islands",
         "Nature",
         "Remote Earth",
         "Interesting Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "poiana-brasov",
-      "title": "Poiana Brașov — Mountain Resort",
-      "country": "Romania",
-      "region": "Brașov County",
-      "quality": 95,
-      "moment": 95,
-      "categories": [
-        "Mountains",
-        "Snow",
-        "Beautiful Earth",
         "Quasi-Live"
       ],
       "suggestedExistingPartners": [
@@ -335,6 +265,7 @@
       "region": "Sorsogon",
       "quality": 95,
       "moment": 95,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Volcanoes",
@@ -356,6 +287,7 @@
       "region": "Florida",
       "quality": 95,
       "moment": 94,
+      "truth": "EXTERNAL_LIVE",
       "categories": [
         "Beaches & Water",
         "Beautiful Earth",
@@ -375,11 +307,13 @@
       "region": "Quetzaltenango",
       "quality": 93,
       "moment": 96,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Nature",
         "Interesting Earth",
-        "Useful Earth"
+        "Useful Earth",
+        "Quasi-Live"
       ],
       "suggestedExistingPartners": [
         "viator"
@@ -395,6 +329,7 @@
       "region": "Aleutian Islands, Alaska",
       "quality": 94,
       "moment": 95,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Nature",
@@ -416,32 +351,12 @@
       "region": "Caldas / Tolima",
       "quality": 94,
       "moment": 95,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Nature",
         "Interesting Earth",
         "Useful Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "iceland-hveravellir",
-      "title": "Hveravellir — Icelandic Highlands",
-      "country": "Iceland",
-      "region": "Icelandic Highlands",
-      "quality": 94,
-      "moment": 94,
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Remote Earth",
-        "Beautiful Earth",
         "Quasi-Live"
       ],
       "suggestedExistingPartners": [
@@ -458,6 +373,7 @@
       "region": "Cook Inlet, Alaska",
       "quality": 93,
       "moment": 94,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Nature",
@@ -479,72 +395,17 @@
       "region": "Bay of Plenty",
       "quality": 92,
       "moment": 94,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Nature",
         "Interesting Earth",
-        "Useful Earth"
+        "Useful Earth",
+        "Quasi-Live"
       ],
       "suggestedExistingPartners": [
         "viator",
         "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "peru-coropuna-volcano",
-      "title": "Coropuna — Peru",
-      "country": "Peru",
-      "region": "Arequipa",
-      "quality": 93,
-      "moment": 93,
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Remote Earth",
-        "Interesting Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "maui-hale-pau-hana",
-      "title": "Maui — Hale Pau Hana Surf",
-      "country": "United States",
-      "region": "Hawaii",
-      "quality": 93,
-      "moment": 92,
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "st-johns-harbour",
-      "title": "St. John's Harbour",
-      "country": "Canada",
-      "region": "Newfoundland and Labrador",
-      "quality": 93,
-      "moment": 92,
-      "categories": [
-        "Cities & Harbours",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "welcome-pickups"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
@@ -557,51 +418,12 @@
       "region": "Nariño",
       "quality": 92,
       "moment": 93,
+      "truth": "LIVE_IMAGE",
       "categories": [
         "Mountains",
         "Nature",
         "Interesting Earth",
         "Useful Earth",
-        "Quasi-Live"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "orpen-kruger",
-      "title": "Orpen — Kruger National Park",
-      "country": "South Africa",
-      "region": "Kruger National Park",
-      "quality": 90,
-      "moment": 94,
-      "categories": [
-        "Wildlife",
-        "Parks & Scenic",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "peru-chachani-volcano",
-      "title": "Chachani — Arequipa",
-      "country": "Peru",
-      "region": "Arequipa",
-      "quality": 92,
-      "moment": 92,
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Beautiful Earth",
-        "Interesting Earth",
         "Quasi-Live"
       ],
       "suggestedExistingPartners": [
@@ -618,6 +440,7 @@
       "region": "Hokkaido",
       "quality": 92,
       "moment": 91,
+      "truth": "EXTERNAL_LIVE",
       "categories": [
         "Mountains",
         "Beautiful Earth"
@@ -629,7 +452,416 @@
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
       "publicActivationAllowed": false
+    },
+    {
+      "placeId": "nz-raoul-island",
+      "title": "Rangitāhua / Raoul Island — Current Images",
+      "country": "New Zealand",
+      "region": "Kermadec Islands",
+      "quality": 91,
+      "moment": 92,
+      "truth": "LIVE_IMAGE",
+      "categories": [
+        "Mountains",
+        "Nature",
+        "Interesting Earth",
+        "Useful Earth",
+        "Quasi-Live"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "klook"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "peru-ticsani-volcano",
+      "title": "Ticsani Volcano — Peru",
+      "country": "Peru",
+      "region": "Moquegua",
+      "quality": 91,
+      "moment": 92,
+      "truth": "LIVE_IMAGE",
+      "categories": [
+        "Mountains",
+        "Nature",
+        "Remote Earth",
+        "Interesting Earth",
+        "Quasi-Live"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "peru-yucamane-volcano",
+      "title": "Yucamane Volcano — Peru",
+      "country": "Peru",
+      "region": "Tacna",
+      "quality": 91,
+      "moment": 92,
+      "truth": "LIVE_IMAGE",
+      "categories": [
+        "Mountains",
+        "Nature",
+        "Remote Earth",
+        "Interesting Earth",
+        "Quasi-Live"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "waikiki-south-shore",
+      "title": "Waikiki Beach — South Shore",
+      "country": "United States",
+      "region": "Hawaii",
+      "quality": 92,
+      "moment": 90,
+      "truth": "EXTERNAL_LIVE",
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth",
+        "Cities & Harbours"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "metung-gippsland-lakes",
+      "title": "Metung — Gippsland Lakes",
+      "country": "Australia",
+      "region": "Victoria",
+      "quality": 91,
+      "moment": 91,
+      "truth": "EXTERNAL_LIVE",
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "klook"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "ecuador-reventador-monitoring",
+      "title": "El Reventador Volcano — Monitoring Views",
+      "country": "Ecuador",
+      "region": "Sucumbíos/Napo",
+      "quality": 90,
+      "moment": 91,
+      "truth": "LIVE_IMAGE",
+      "categories": [
+        "Volcanoes",
+        "Mountains",
+        "Science & Research",
+        "Quasi-Live"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "ponte-di-legno-adamello",
+      "title": "Ponte di Legno — Adamello",
+      "country": "Italy",
+      "region": "Lombardy",
+      "quality": 89,
+      "moment": 91,
+      "truth": "EXTERNAL_LIVE",
+      "categories": [
+        "Mountains",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "antarctica-casey-station",
+      "title": "Casey Research Station — Antarctica",
+      "country": "Antarctica",
+      "region": "Windmill Islands",
+      "quality": 91,
+      "moment": 88,
+      "truth": "LIVE_IMAGE",
+      "categories": [
+        "Polar Earth",
+        "Science & Research",
+        "Beautiful Earth",
+        "Quasi-Live"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "blouberg-table-mountain",
+      "title": "Bloubergstrand — Table Mountain",
+      "country": "South Africa",
+      "region": "Western Cape",
+      "quality": 88,
+      "moment": 90,
+      "truth": "LIVE_IMAGE",
+      "categories": [
+        "Beaches & Water",
+        "Mountains",
+        "Beautiful Earth",
+        "Quasi-Live"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "perdido-key-beach",
+      "title": "Perdido Key — Gulf Beach",
+      "country": "United States",
+      "region": "Florida",
+      "quality": 90,
+      "moment": 88,
+      "truth": "LIVE_IMAGE",
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth",
+        "Quasi-Live"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "sasagawa-nagare",
+      "title": "Sasagawa Nagare — Sea of Japan",
+      "country": "Japan",
+      "region": "Niigata Prefecture",
+      "quality": 89,
+      "moment": 89,
+      "truth": "EXTERNAL_LIVE",
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "klook"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "cold-lake-marina",
+      "title": "Cold Lake Marina",
+      "country": "Canada",
+      "region": "Alberta",
+      "quality": 90,
+      "moment": 88,
+      "truth": "EXTERNAL_LIVE",
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "skeikampen-ski",
+      "title": "Skeikampen — Mountain Resort",
+      "country": "Norway",
+      "region": "Innlandet",
+      "quality": 88,
+      "moment": 90,
+      "truth": "EXTERNAL_LIVE",
+      "categories": [
+        "Mountains",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "florida-now",
+      "title": "Florida Now — Beaches & Destinations",
+      "country": "United States",
+      "region": "Florida",
+      "quality": 87,
+      "moment": 90,
+      "truth": "EXTERNAL_LIVE",
+      "categories": [
+        "Beaches & Water"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "antarctica-macquarie-island",
+      "title": "Macquarie Island — Sub-Antarctic Station",
+      "country": "Australia",
+      "region": "Macquarie Island",
+      "quality": 90,
+      "moment": 87,
+      "truth": "LIVE_IMAGE",
+      "categories": [
+        "Polar Earth",
+        "Islands",
+        "Science & Research",
+        "Quasi-Live"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "klook"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "pleasant-beach-lake-ontario",
+      "title": "Pleasant Beach — Lake Ontario",
+      "country": "United States",
+      "region": "New York",
+      "quality": 88,
+      "moment": 88,
+      "truth": "EXTERNAL_LIVE",
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "nossob-kgalagadi",
+      "title": "Nossob — Kgalagadi",
+      "country": "South Africa",
+      "region": "Kgalagadi Transfrontier Park",
+      "quality": 86,
+      "moment": 88,
+      "truth": "LIVE_IMAGE",
+      "categories": [
+        "Wildlife",
+        "Beautiful Earth",
+        "Interesting Earth",
+        "Quasi-Live"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "ski-arlberg",
+      "title": "Ski Arlberg",
+      "country": "Austria",
+      "region": "St. Anton / Lech / Zürs",
+      "quality": 88,
+      "moment": 86,
+      "truth": "EXTERNAL_LIVE",
+      "categories": [
+        "Mountains & Snow",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "glacier-national-park",
+      "title": "Glacier National Park",
+      "country": "United States",
+      "region": "West Glacier",
+      "quality": 86,
+      "moment": 88,
+      "truth": "EXTERNAL_LIVE",
+      "categories": [
+        "Parks & Scenic"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "cijin-beach-kaohsiung",
+      "title": "Cijin Beach — Kaohsiung",
+      "country": "Taiwan",
+      "region": "Kaohsiung",
+      "quality": 88,
+      "moment": 86,
+      "truth": "EXTERNAL_LIVE",
+      "categories": [
+        "Beaches & Water",
+        "Cities & Harbours",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "klook",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
     }
   ],
-  "note": "Post-200-place business research queue. Existing partners first; exact links and manual verification remain mandatory."
+  "note": "Post-200-place business research queue. Existing partners first; exact links and manual verification remain mandatory. Quasi-live places may unlock planning but never receive ranking preference because of commercial value."
 }
