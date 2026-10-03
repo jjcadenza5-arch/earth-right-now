@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T16:48:00Z",
+  "principle": "One useful commercial option per need is better than a wall of affiliate links. ERN chooses a small utility stack and only activates exact links after manual verification.",
+  "primaryStack": [
+    {
+      "need": "connectivity",
+      "primary": "yesim",
+      "reason": "Among currently owner-visible link-generation programs, Yesim has the strongest observed commercial terms (18% displayed reward, 90-day cookie). Product/coverage fit still needs a normal visitor-utility review before public activation.",
+      "alternatives": [
+        "saily",
+        "airalo"
+      ],
+      "activation": "ONE_GLOBAL_TRACKED_LINK_REQUIRED"
+    },
+    {
+      "need": "airport_transfer",
+      "primary": "welcome-pickups",
+      "fallback": "kiwitaxi",
+      "reason": "Keep Welcome Pickups where already useful; use Kiwitaxi only for destinations with no useful Welcome Pickups coverage.",
+      "activation": "DESTINATION_LINK_REQUIRED"
+    },
+    {
+      "need": "car_rental",
+      "primary": "localrent",
+      "alternatives": [
+        "qeeq",
+        "economybookings",
+        "autoeurope"
+      ],
+      "reason": "Use only for places where self-driving materially improves the trip. Never stack several rental brands on one destination.",
+      "activation": "DESTINATION_OR_SEARCH_LINK_REQUIRED"
+    },
+    {
+      "need": "city_pass",
+      "primary": "go-city",
+      "reason": "Distinct from tours: useful for major city attraction bundles. Current priority places: New York, London, Chicago, Sydney.",
+      "activation": "DESTINATION_LINK_REQUIRED"
+    },
+    {
+      "need": "secondary_activities",
+      "primary": "kkday",
+      "reason": "Use as a coverage fallback where Klook/Viator/Tiqets are weak rather than duplicating them everywhere.",
+      "activation": "DESTINATION_LINK_REQUIRED"
+    },
+    {
+      "need": "luggage_storage",
+      "primary": "radical-storage",
+      "reason": "Useful only for major-city arrival/departure contexts; should not appear on nature/resort destinations.",
+      "activation": "DESTINATION_LINK_REQUIRED"
+    }
+  ],
+  "avoidClutterRules": [
+    "No more than one eSIM option by default.",
+    "No more than one car-rental option by default.",
+    "Do not show a transfer partner when the place has no realistic airport/city-transfer need.",
+    "Do not duplicate the same intent merely because another affiliate program is available.",
+    "Affiliate reward rate never affects source ranking or featured-camera order."
+  ]
+}
