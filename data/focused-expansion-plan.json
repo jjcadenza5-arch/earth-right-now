@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T05:55:00Z",
+  "generatedAt": "2026-10-03T06:07:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 181,
@@ -108,7 +108,10 @@
       "viator-boulders-beach",
       "viator-st-maarten",
       "klook-mayon",
-      "viator-mauna-loa"
+      "viator-mauna-loa",
+      "viator-meads-bay",
+      "viator-grand-canyon",
+      "klook-chishang-taitung"
     ],
     "futureAfterSourceVerification": [
       "tiqets-prague-future",
@@ -155,18 +158,18 @@
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 16,
-    "exactLinkQueueCount": 78,
+    "exactLinkQueueCount": 81,
     "sourceGatedQueueCount": 22,
     "sourceGapBlockedCount": 1,
     "sourceGatedOpportunityCount": 31,
     "quasiLiveCommercialRule": "A healthy quasi-live searchable place may unlock downstream travel planning, but commercial value never changes truth/currentness.",
     "currentOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 78,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 81,
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 22,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
     },
-    "currentOpportunityCount": 117
+    "currentOpportunityCount": 120
   },
   "safeguards": {
     "automaticPlacement": false,
