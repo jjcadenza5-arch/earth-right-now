@@ -2511,6 +2511,206 @@
       "reason": "Taiwan coastal destination where KKday may provide regionally relevant activities.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Check New Taipei/Jinshan/Zhongjiao coverage in KKday before generating a tracked link."
+    },
+    {
+      "id": "viator-amden-walensee",
+      "destination": "Amden / Lake Walensee",
+      "placeIds": [
+        "amden-walensee"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Scenic Swiss mountain/lake destination with hiking and excursion intent.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search Amden/Walensee inventory; only generate a link if destination-specific coverage exists."
+    },
+    {
+      "id": "viator-taranaki",
+      "destination": "Taranaki / New Plymouth",
+      "placeIds": [
+        "nz-taranaki-maunga"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Major New Zealand mountain destination with hiking and regional sightseeing intent.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Taranaki/New Plymouth inventory; avoid generic New Zealand links."
+    },
+    {
+      "id": "viator-kyrgyzstan-highlands",
+      "destination": "Kyrgyzstan Highlands",
+      "placeIds": [
+        "too-ashu-north",
+        "suusamyr-valley",
+        "naryn-central-square",
+        "bishkek-ala-too-square"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Four Kyrgyz searchable places form a coherent road-trip/mountain travel corridor; one regional activity path is preferable to four duplicate links.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search Kyrgyzstan/Bishkek/Naryn tours and use one regional link only if inventory genuinely serves the corridor."
+    },
+    {
+      "id": "klook-kijihiki-hakodate",
+      "destination": "Hakodate / Kijihiki Plateau",
+      "placeIds": [
+        "kijihiki-plateau"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Hokkaido scenic destination where Klook may offer Hakodate-area transport or activities.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Hakodate/Kijihiki coverage before exact-link generation."
+    },
+    {
+      "id": "viator-gippsland-lakes",
+      "destination": "Gippsland Lakes / Metung",
+      "placeIds": [
+        "metung-gippsland-lakes"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Australian lakes/coastal destination with boating and regional touring intent.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Gippsland Lakes/Metung inventory; do not substitute Melbourne-only products."
+    },
+    {
+      "id": "viator-ponte-di-legno",
+      "destination": "Ponte di Legno / Adamello",
+      "placeIds": [
+        "ponte-di-legno-adamello"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Alpine resort with hiking/ski and mountain excursion relevance.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Ponte di Legno/Adamello inventory before generating a tracked link."
+    },
+    {
+      "id": "viator-skeikampen",
+      "destination": "Skeikampen / Lillehammer Region",
+      "placeIds": [
+        "skeikampen-ski"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Norwegian mountain resort with seasonal visitor activity intent.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Lillehammer/Skeikampen inventory; use only if directly useful."
+    },
+    {
+      "id": "viator-adelaide-coast",
+      "destination": "Adelaide Coast",
+      "placeIds": [
+        "glenelg-sa",
+        "brighton-sa"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Two Adelaide coastal current-image places can share one city/coast activity path.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search Adelaide/Glenelg coastal activities and generate one regional link if useful."
+    },
+    {
+      "id": "viator-diano-marina",
+      "destination": "Diano Marina / Liguria",
+      "placeIds": [
+        "diano-marina"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Italian Riviera beach destination with coastal excursion potential.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Liguria/Diano Marina inventory; avoid generic Italy placement."
+    },
+    {
+      "id": "viator-chioggia-sottomarina",
+      "destination": "Chioggia / Sottomarina",
+      "placeIds": [
+        "sottomarina-chioggia"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Lagoon/beach destination where Chioggia-specific excursions may provide useful visitor planning.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Chioggia/Sottomarina inventory separately from Venice before generating a link."
+    },
+    {
+      "id": "viator-perdido-key",
+      "destination": "Perdido Key / Pensacola",
+      "placeIds": [
+        "perdido-key-beach"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Gulf beach destination with water and coastal excursion intent.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Perdido Key/Pensacola activity inventory before exact-link generation."
+    },
+    {
+      "id": "viator-kgalagadi",
+      "destination": "Kgalagadi / Nossob",
+      "placeIds": [
+        "nossob-kgalagadi"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Wildlife destination where safari/travel-planning inventory may be useful if genuinely Kgalagadi-specific.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Kgalagadi/Nossob inventory; do not substitute unrelated South African safari products."
+    },
+    {
+      "id": "go-city-new-york",
+      "destination": "New York",
+      "placeIds": [
+        "new-york-harbor"
+      ],
+      "partnerCandidate": "go-city",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Major-city pass utility can complement live harbor discovery without changing ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm New York Go City coverage and generate one tracked city-pass link."
+    },
+    {
+      "id": "go-city-london",
+      "destination": "London",
+      "placeIds": [
+        "london-savoy-place",
+        "london-abbey-road-crossing"
+      ],
+      "partnerCandidate": "go-city",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "City-pass utility fits ERN's London discovery places and adds multi-attraction planning.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm London Go City coverage and generate one tracked link."
+    },
+    {
+      "id": "go-city-chicago",
+      "destination": "Chicago",
+      "placeIds": [
+        "chicago-lakefront"
+      ],
+      "partnerCandidate": "go-city",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "City-pass utility naturally follows Chicago skyline/museum-campus discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm Chicago Go City coverage and generate one tracked link."
     }
   ]
 }
