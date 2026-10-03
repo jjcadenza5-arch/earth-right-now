@@ -450,3 +450,14 @@ Traffic-led business + Andorra expansion checkpoint — 2026-10-03 11:30 UTC:
 - Future unlock priority is led by Trip.com, Hotels.com, Booking.com, Agoda, Expedia and GetYourGuide; no repeated account checking is required until material traffic/conversion growth or an explicit Travelpayouts status change.
 - Business readiness and focused expansion plan now use a traffic-led unlock rule rather than treating every visible Travelpayouts program as immediately actionable.
 - Post-200 searchable expansion is now quality/geography-led, with a soft 200–250 range rather than raw-count growth.
+
+
+Traffic-gated business + island expansion checkpoint — 2026-10-03 11:38 UTC:
+- Healthy/Searchable ERN baseline is now **212 distinct places** from 220 source records.
+- Added official quasi-live/current-image discovery for La Réunion (Boucan Canot, Trou d’Eau, Roches Noires, Piton de la Fournaise) and the Azores (São Miguel, Terceira, Santa Maria). Watch Earth remains stricter than Search/Explore.
+- Owner Travelpayouts screenshots confirm many desirable programs are visible but not yet practically unlocked for ERN. These include Trip.com, Booking.com, Agoda, Expedia, GetYourGuide, Tripadvisor Experiences, DiscoverCars, Traveloka, Omio, 12GO, Hotels.com, Hostelworld, Vrbo, Ticketmaster, Vio.com, Rakuten Travel and others.
+- Business strategy is now traffic-led: use active Viator/Klook/Tiqets/Welcome Pickups first; use currently link-generation-capable utilities selectively; recheck locked programs only after meaningful traffic/conversion growth or explicit platform status change.
+- New business research paths added for La Réunion/Viator and São Miguel/Viator; exact tracked links remain owner/account-side and manually verified.
+- data/available-program-expansion-plan.json prioritizes Airalo, Kiwitaxi, Go City, Radical Storage and Aviasales as the most useful currently available utility layer.
+- Commercial opportunity states reconcile to {"VERIFIED_LINK_ADDED":16,"ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED":101,"SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK":7,"SOURCE_GAP_MUST_BE_SOLVED_FIRST":1} across 125 opportunities.
+- No affiliate program, utility, commission or traffic target affects source truth or ranking.
