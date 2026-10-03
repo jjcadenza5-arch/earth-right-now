@@ -2999,8 +2999,10 @@
       "evidence": "Official government/tourism webcam source confirmed 2026-10-03.",
       "researchEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "No urgent check required. Revisit when runtime catalog headroom improves or a stronger exact target is isolated."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "No urgent check required. Revisit when runtime catalog headroom improves or a stronger exact target is isolated.",
+      "verifiedAt": "2026-10-03T15:15:00Z",
+      "verification": "Promoted from Taiwan government official live-image directory."
     },
     {
       "id": "taiwan-alishan-taiping-live",
@@ -3061,6 +3063,21 @@
       "priority": "P2",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "No urgent check required. Revisit when runtime catalog headroom improves or a stronger exact target is isolated."
+    },
+    {
+      "id": "nz-foxton-beach-current",
+      "title": "Foxton Beach — Manawatū Coast",
+      "country": "New Zealand",
+      "region": "Manawatū-Whanganui",
+      "provider": "Horizons Regional Council",
+      "sourcePage": "https://www.horizons.govt.nz/webcams",
+      "exactTargetUrl": "https://www.horizons.govt.nz/webcams",
+      "exactTargetType": "OFFICIAL_REGIONAL_WEBCAM",
+      "evidence": "Official Horizons Regional Council webcam network lists Foxton Beach.",
+      "researchEvidence": "Useful current regional camera, but held outside active runtime in favor of a higher-utility Gaomei Wetland place under the strict source-size budget.",
+      "priority": "P3",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "No urgent owner action; revisit when runtime headroom improves."
     }
   ],
   "notes": [
@@ -3119,7 +3136,8 @@
     "2026-10-03 13:25 UTC: quality-led European gap batch promoted Belgium, Netherlands, Germany, Denmark, Cannes and Plitvice into Search/Explore using conservative LIVE_IMAGE semantics; no new Watch Earth live-video eligibility was inferred.",
     "2026-10-03 13:45 UTC: ERN reached the 275 healthy-searchable soft stretch target using genuinely distinct destinations/POIs rather than duplicate views; Dresden/Radebeul, Heidelberg Königstuhl, Zandvoort Circuit and Farchant completed the batch.",
     "2026-10-03 Aruba quality-gap research added Palm Beach and Eagle Beach as two real-place candidates from the official Aruba Tourism Authority live-webcam index. Multiple resort cameras are deliberately grouped by beach/place to avoid artificial destination inflation.",
-    "2026-10-03 Taiwan/New Zealand expansion activated eight high-value places while twelve additional official quasi-live candidates were retained in research to preserve the strict 300 KB runtime budget."
+    "2026-10-03 Taiwan/New Zealand expansion activated eight high-value places while twelve additional official quasi-live candidates were retained in research to preserve the strict 300 KB runtime budget.",
+    "2026-10-03 quality swap: Gaomei Wetland promoted into searchable runtime; Foxton Beach moved to research-only to hold catalog size constant while improving visitor/business utility."
   ],
   "researchGaps": [
     {
