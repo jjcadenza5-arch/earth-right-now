@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T05:25:00Z",
+  "generatedAt": "2026-10-03T05:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -235,7 +235,11 @@
       "priority": "P1",
       "reason": "Helsinki's current harbour/city window has strong visitor-planning utility and Viator has broad Helsinki tour inventory.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one Helsinki destination-level Viator partner link and verify it manually before adding any public offer."
+      "nextAction": "Generate one Helsinki destination-level Viator partner link and verify it manually before adding any public offer.",
+      "candidateTrackedUrl": "https://www.viator.com/Helsinki/d803-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T05:30:00Z",
+      "candidateTrackedUrlEvidence": "Public Viator destination URL independently confirmed; ERN's existing direct-partner pid/mcid/medium pattern applied. Still requires owner open/redirect verification before becoming a verified offer.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-turku",
@@ -261,7 +265,11 @@
       "priority": "P1",
       "reason": "Lake Lucerne is one of ERN's strongest current scenic windows and Viator has substantial Lucerne city, lake and mountain inventory.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate and manually verify one destination-level Lucerne Viator partner link before public offer activation."
+      "nextAction": "Generate and manually verify one destination-level Lucerne Viator partner link before public offer activation.",
+      "candidateTrackedUrl": "https://www.viator.com/Lucerne/d576-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T05:30:00Z",
+      "candidateTrackedUrlEvidence": "Public Viator destination URL independently confirmed; ERN's existing direct-partner pid/mcid/medium pattern applied. Still requires owner open/redirect verification before becoming a verified offer.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-tbilisi",
@@ -287,7 +295,11 @@
       "priority": "P1",
       "reason": "ERN has a strong current Cancún beach window and Viator has deep Cancún excursion inventory, creating a direct See Live → Decide → Go bridge.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate and manually verify one Cancún Viator destination link before any public placement."
+      "nextAction": "Generate and manually verify one Cancún Viator destination link before any public placement.",
+      "candidateTrackedUrl": "https://www.viator.com/Cancun/d631-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T05:30:00Z",
+      "candidateTrackedUrlEvidence": "Public Viator destination URL independently confirmed; ERN's existing direct-partner pid/mcid/medium pattern applied. Still requires owner open/redirect verification before becoming a verified offer.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-yellowstone",
@@ -383,7 +395,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Zermatt/d5014-ttd",
       "publicInventoryEvidence": "Current Viator inventory includes Zermatt experiences such as guided Five Lakes/Matterhorn hiking products.",
-      "nextAction": "Generate one Zermatt destination-level Viator partner link and manually verify it before public activation."
+      "nextAction": "Generate one Zermatt destination-level Viator partner link and manually verify it before public activation.",
+      "candidateTrackedUrl": "https://www.viator.com/Zermatt/d5014-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T05:30:00Z",
+      "candidateTrackedUrlEvidence": "Public Viator destination URL independently confirmed; ERN's existing direct-partner pid/mcid/medium pattern applied. Still requires owner open/redirect verification before becoming a verified offer.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-san-diego-zoo",
@@ -1408,7 +1424,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Rio-de-Janeiro/d712-ttd",
       "publicInventoryEvidence": "Current Viator Rio inventory includes 1,000+ tours and multiple headline sightseeing products covering Christ the Redeemer, Sugarloaf and Copacabana.",
-      "nextAction": "Generate one Rio destination-level Viator partner link and verify it manually before public activation."
+      "nextAction": "Generate one Rio destination-level Viator partner link and verify it manually before public activation.",
+      "candidateTrackedUrl": "https://www.viator.com/Rio-de-Janeiro/d712-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T05:30:00Z",
+      "candidateTrackedUrlEvidence": "Public Viator destination URL independently confirmed; ERN's existing direct-partner pid/mcid/medium pattern applied. Still requires owner open/redirect verification before becoming a verified offer.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-tungurahua-banos",
