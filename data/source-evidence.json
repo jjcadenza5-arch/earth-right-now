@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:35:00Z",
+  "generatedAt": "2026-10-03T13:15:00Z",
   "note": "Verbose provenance, coordinate notes, and selected long visitor stories are retained outside the runtime source catalog to preserve ERN's strict production-size budget. Runtime records keep concise visitor-facing story and required truth/freshness markers.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1292,6 +1292,81 @@
       "freshnessEvidence": "Sonnenkinderprojekt Namibia webcam page currently lists Windhoek alongside Swakopmund and states a selected still image can update every five seconds; rechecked 2026-10-03.",
       "rightsBasis": "Provider-published Namibia webcam service; ERN keeps a LINK_ONLY handoff and does not infer reuse rights.",
       "coordinateSourceUrl": "https://skpnamibia.de/webcams/"
+    },
+    "prague-petrin-tower": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "prague-old-town-hall": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "prague-old-town-bridge-tower": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "prague-powder-tower": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "prague-st-nicholas-bell-tower": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "prague-lesser-town-bridge-tower": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "levi-ski-resort": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "crans-montana-la-nationale": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "schynige-platte": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "randa-valais": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "celerina-engadin": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "murren-edelweiss": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "engelberg-fuerenalp": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "wengen-bellevue": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "seoul-gwanghwamun-plaza": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "seoul-cheonggye-plaza": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "karakol-ski-base": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "osh-sulaiman-too": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "naryn-central-square": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "too-ashu-north": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "suusamyr-valley": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "balykchy-north-entry": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "bishkek-ala-too-square": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "mauritius-saint-felix": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+    },
+    "wanaka-lake-hawea-view": {
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
     }
   },
   "prague-petrin-tower": {
