@@ -735,6 +735,36 @@
       "priority": "P2",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Open the official Talamati still-cam page and confirm the image refreshes."
+    },
+    {
+      "id": "mendoza-plaza-independencia-live",
+      "title": "Mendoza — Plaza Independencia",
+      "country": "Argentina",
+      "region": "Mendoza",
+      "provider": "Municipalidad de la Ciudad de Mendoza",
+      "sourcePage": "https://camarasmunicapital.ciudaddemendoza.gov.ar/index.html",
+      "exactTargetUrl": "https://camarasmunicapital.ciudaddemendoza.gov.ar/index.html",
+      "exactTargetType": "OFFICIAL_CITY_LIVE_VIDEO_PAGE",
+      "evidence": "The City of Mendoza municipal camera page identifies Plaza Independencia as Stream Type LIVE and exposes the city camera directly.",
+      "researchEvidence": "Official municipal live-camera page currently shows Plaza Independencia as LIVE.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official municipal camera page and confirm Plaza Independencia is visibly live/current."
+    },
+    {
+      "id": "ushuaia-harbour-municipal",
+      "title": "Ushuaia — Harbour & Beagle Channel",
+      "country": "Argentina",
+      "region": "Tierra del Fuego",
+      "provider": "Municipalidad de Ushuaia / Secretaría de Turismo",
+      "sourcePage": "https://www.ushuaia.gob.ar/noticias/ushuaia-transmite-en-vivo-la-ciudad-para-el-mundo",
+      "exactTargetUrl": "https://www.youtube.com/watch?v=q9g51I3NyJQ",
+      "exactTargetType": "MUNICIPAL_PUBLISHED_YOUTUBE_TARGET",
+      "evidence": "The Municipality of Ushuaia documented a permanent 24-hour live camera from the tourism office overlooking the harbour and Beagle Channel, published through its official YouTube stream.",
+      "researchEvidence": "Municipal evidence is older than the current ERN verification window, so this remains research-only until the exact YouTube target is reconfirmed working in 2026.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the exact municipal-published YouTube target and confirm it is still a current live harbour stream, not an archived recording."
     }
   ],
   "notes": [
@@ -748,6 +778,7 @@
     "2026-10-03 public-web evidence rechecked for Salzburg, Innsbruck, Tallinn and Malta against official tourism/attraction pages. These candidates remain research-only pending human playback confirmation.",
     "2026-10-03 large-batch research expanded the official Innsbruck Tourism family into eight distinct, non-duplicate place candidates spanning city, mountain, village and attraction views. All remain fail-closed until playback is human-confirmed.",
     "2026-10-03 large-batch Asia expansion added eight distinct Taiwan Tourism Administration Live Taiwan candidates spanning Taipei, New Taipei, Taichung, Hualien and Tainan. Official pages mark each selected camera as operating; ERN still requires human playback confirmation before promotion.",
-    "2026-10-03 Africa expansion added four official SANParks camera candidates: Satara, Olifants, Punda Maria and Talamati. Nossob was intentionally not duplicated because it already exists in the live ERN registry."
+    "2026-10-03 Africa expansion added four official SANParks camera candidates: Satara, Olifants, Punda Maria and Talamati. Nossob was intentionally not duplicated because it already exists in the live ERN registry.",
+    "2026-10-03 South America gap work added Mendoza Plaza Independencia from the official municipal LIVE camera page and Ushuaia Harbour from the municipality's published 24-hour camera record. Ushuaia is deliberately held for stricter replay-vs-live verification because the municipal evidence is older."
   ]
 }
