@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T09:52:00Z",
+  "generatedAt": "2026-10-03T11:30:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 202,
+    "currentHealthyDistinctPlaceBaseline": 205,
     "targetRange": [
-      150,
-      200
+      200,
+      250
     ],
-    "strategy": "Maintain the achieved 200+ healthy searchable baseline. Prefer freshness, geographic quality and stronger current evidence over raw count growth; degrade stale sources honestly and replace them with verified live/quasi-live places.",
+    "strategy": "Post-200 quality-led expansion: add distinct useful places where geography or visitor value improves ERN; quasi-live LIVE_IMAGE is acceptable for Search/Explore when provider freshness is trustworthy; Watch Earth remains stricter.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -176,7 +176,17 @@
       "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 98,
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 7,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
-    }
+    },
+    "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
+    "futureUnlockPriority": [
+      "trip-com",
+      "hotels-com",
+      "booking-com",
+      "agoda",
+      "expedia",
+      "getyourguide"
+    ],
+    "unlockRule": "Do not repeatedly recheck locked programs. Recheck after material traffic/conversion growth or explicit Travelpayouts status change."
   },
   "safeguards": {
     "automaticPlacement": false,
