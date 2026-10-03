@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T05:35:00Z",
+  "generatedAt": "2026-10-03T03:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1475,6 +1475,28 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Akureyri/Lake-Myvatn-Hot-springs-and-Godafoss-Waterfall-Tour-from-Akureyri/d4341-16698P46",
       "publicInventoryEvidence": "Current Viator inventory includes multiple Lake Mývatn day tours and shore excursions from Akureyri, including hot springs, lava formations and Goðafoss.",
       "nextAction": "Generate a North Iceland/Mývatn-suitable Viator partner link and verify it manually; avoid using a generic Iceland page if a clean Akureyri/Mývatn path exists."
+    },
+    {
+      "id": "viator-madeira",
+      "destination": "Madeira",
+      "placeIds": [
+        "madeira-funchal",
+        "madeira-porto-moniz",
+        "madeira-calheta",
+        "madeira-machico"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has four healthy official Madeira current-image places, while Viator has deep Madeira inventory spanning Funchal, Porto Moniz, island tours, levada hikes and marine activities.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Madeira/d5392-ttd",
+      "publicInventoryEvidence": "Current Viator Madeira inventory contains 900+ activities, including Funchal experiences and west-island tours that explicitly visit Porto Moniz.",
+      "candidateTrackedUrl": "https://www.viator.com/Madeira/d5392-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T03:30:00Z",
+      "candidateTrackedUrlEvidence": "Public Viator Madeira destination URL confirmed; existing ERN direct-partner pid/mcid/medium pattern applied. Owner open/redirect verification still required before offer activation.",
+      "ownerVerificationRequired": true,
+      "nextAction": "Owner only needs to open and confirm the prepared direct Viator URL when ERN batches exact-link verification; one island-level link should serve all four Madeira places."
     }
   ]
 }
