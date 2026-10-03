@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:45:00Z",
+  "generatedAt": "2026-10-03T03:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1129,6 +1129,51 @@
       "reason": "ERN already has a healthy Marco Island beach place and commercial research already documents an active local dolphin eco-tour; Viator is the preferred existing activity partner for a destination-level link search.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Search the Viator partner tools for a clean Marco Island destination-level link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-takayama",
+      "destination": "Takayama",
+      "placeIds": [
+        "takayama-miyagawa"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN already has a healthy Takayama current-image place and Klook currently lists 100+ Takayama activities/tours, including Old Town and Shirakawa-go products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/c9316-takayama/1-things-to-do/",
+      "publicInventoryEvidence": "Klook currently lists more than 100 Takayama things to do, with high-volume Old Town/Shirakawa-go tours and local experiences.",
+      "nextAction": "Generate one Takayama destination-level Klook tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "klook-taitung",
+      "destination": "Taitung",
+      "placeIds": [
+        "taitung-jinzun"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN already has a healthy Taitung Pacific Coast place and Klook currently lists dozens of Taitung activities spanning coastal tours, parks, hot springs and cultural experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/zh-TW/destination/c47-taitung/1-things-to-do/",
+      "publicInventoryEvidence": "Klook currently exposes a broad Taitung destination inventory with 70+ activities and strong local booking history.",
+      "nextAction": "Generate one Taitung destination-level Klook tracked link and verify it manually; keep commercial action downstream from live discovery."
+    },
+    {
+      "id": "klook-toyama",
+      "destination": "Toyama / Tonami",
+      "placeIds": [
+        "tonami-tulip-park"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN already has a healthy Tonami Tulip Park place in Toyama Prefecture, and Klook currently offers Toyama attraction passes and guided Toyama/Toyama Bay experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/c21926-toyama/",
+      "publicInventoryEvidence": "Klook currently lists Toyama Pass and multiple Toyama/Toyama Bay tours.",
+      "nextAction": "Search the Travelpayouts Klook tools for a Toyama destination link; use only if the destination scope is useful for Tonami visitors."
     }
   ]
 }
