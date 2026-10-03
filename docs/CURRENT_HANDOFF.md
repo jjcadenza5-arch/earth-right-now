@@ -254,3 +254,12 @@ Quasi-live searchable policy — 2026-10-03:
 - Healthy/searchable baseline therefore moves from 91 to 100 distinct places.
 - Related business gates cleared for Poás, Rincón de la Vieja and Cotopaxi; Irazú and Turrialba Viator research was added. Exact tracked links remain owner/account-side and manually verified.
 - Pamir remains deferred; no weak substitute is required now that quasi-live is an accepted future search lane.
+
+
+Second quasi-live searchable batch — 2026-10-03:
+- Promoted five official INETER volcano places in Nicaragua: San Cristóbal, Telica, Momotombo, Masaya and Concepción/Ometepe.
+- INETER explicitly says public volcano-camera images arrive in real time every 30 seconds or 1 minute; ERN therefore labels them LIVE_IMAGE/current imagery, not live video.
+- Promoted El Reventador visual monitoring from Instituto Geofísico EPN as a searchable quasi-live source.
+- All six new places default to featuredHold + watchHold, keeping Watch Earth stricter than Search/Explore.
+- Healthy/searchable baseline increases to 106 distinct places.
+- Nicaragua/Viator commercial path moved from source-gated to exact-link research; no tracked URL is invented or activated automatically.
