@@ -465,17 +465,18 @@
       "id": "viator-dubrovnik-future",
       "destination": "Dubrovnik",
       "placeIds": [
-        "dubrovnik-pile-city",
-        "dubrovnik-gruz-city"
+        "dubrovnik-city"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
       "reason": "The official City of Dubrovnik Pile/Gruž camera candidates map directly to strong Viator Dubrovnik sightseeing inventory.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Dubrovnik/d904-ttd",
       "publicInventoryEvidence": "Current Viator Dubrovnik inventory includes Old Town panoramic tours, island cruises and other city/Adriatic experiences.",
-      "nextAction": "After at least one Dubrovnik camera is promoted, generate one city-level Viator link and reuse it across the verified Dubrovnik places without duplicate commercial density."
+      "nextAction": "Generate one city-level Dubrovnik Viator link and verify it manually; reuse it across the Pile/Gruž views without duplicate commercial density.",
+      "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
+      "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory."
     },
     {
       "id": "klook-taipei-future",
@@ -815,10 +816,12 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Klook currently sells Gudauri day trips/ski-resort tours from Tbilisi, creating a strong planning bridge if ERN first verifies the Gudauri/Kobi live-camera family.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/158746-tbilisi-to-gudauri-ski-resort/",
       "publicInventoryEvidence": "Klook currently lists Gudauri Ski Resort day-tour inventory with mountain-view, ski and cable-car experiences.",
-      "nextAction": "After one Gudauri-family source is promoted, generate one city/resort-level Klook tracked link and reuse it across verified Gudauri/Kobi views."
+      "nextAction": "Generate one Gudauri resort-level Klook tracked link and verify it manually; reuse it across Gudauri/Kobi where appropriate.",
+      "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
+      "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory."
     },
     {
       "id": "klook-shymbulak-future",
@@ -841,17 +844,18 @@
       "id": "viator-everest-future",
       "destination": "Everest / Khumbu",
       "placeIds": [
-        "everest-khumbu-hotel-view",
-        "khumbu-glacier-nco-p"
+        "khumbu-glacier-everest"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
       "reason": "Viator currently has a dedicated Mt. Everest collection spanning scenic flights, helicopter tours and Everest Base Camp treks; this is a natural planning layer after a verified Everest-region live/current view.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/collections/Mt-Everest-Tours-from-Kathmandu/c28285",
       "publicInventoryEvidence": "Viator currently lists multiple Mt. Everest products from Kathmandu, including scenic flights, helicopter tours and multi-day trekking.",
-      "nextAction": "After at least one Everest/Khumbu source is promoted, generate one Everest-region Viator partner link and verify it manually."
+      "nextAction": "Generate one Everest/Khumbu Viator partner link and verify it manually before public placement.",
+      "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
+      "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory."
     },
     {
       "id": "viator-bled-future",
@@ -878,25 +882,29 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "A verified Mykonos port live view aligns closely with deep current Viator inventory for shore excursions, island tours, beaches, cruises and city exploration.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Mykonos/d958-ttd",
       "publicInventoryEvidence": "Viator currently lists hundreds of Mykonos products across shore excursions, cruises, city tours, beaches and private sightseeing.",
-      "nextAction": "After Mykonos playback is confirmed and promoted, generate one city/island-level Viator partner link and verify it manually."
+      "nextAction": "Generate one Mykonos island-level Viator partner link and verify it manually before public activation.",
+      "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
+      "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory."
     },
     {
       "id": "viator-santorini-future",
       "destination": "Santorini",
       "placeIds": [
-        "santorini-caldera-imerovigli"
+        "santorini-imerovigli"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
       "reason": "A verified Santorini caldera stream creates an unusually strong See Live → Decide → Go bridge into deep Viator Santorini cruise, sightseeing and island-tour inventory.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Santorini/d959-ttd",
       "publicInventoryEvidence": "Viator currently lists 1,000+ Santorini experiences including cruises, Oia/Fira sightseeing, volcanic beaches, wine, photography and private tours.",
-      "nextAction": "After the Santorini stream is confirmed current and promoted, generate one Santorini destination-level Viator partner link and verify it manually."
+      "nextAction": "Generate one Santorini destination-level Viator partner link and verify it manually before public activation.",
+      "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
+      "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory."
     },
     {
       "id": "viator-brasov-future",
