@@ -165,3 +165,11 @@ Pamir / Kyrgyz approach research — 2026-10-03:
 - ERN will not substitute prerecorded travel videos, GNSS monitoring stations or static tourism media for live Earth truth.
 - Added research-only Kyrgyz mountain/approach candidates from kg.camera: Osh/Sulayman-Too, Batken, Razzakov, Suusamyr Valley, Ala-Archa and Karakol Ski Base.
 - These broaden Central Asia coverage without falsely labeling them as Pamir proper.
+
+
+Central Europe / Aegean expansion batch — 2026-10-03:
+- Added research-only live candidates for Lake Bled (Slovenia), Mykonos New Port (Greece), Santorini caldera/Imerovigli (Greece), and Poiana Brașov (Romania).
+- Bled and Mykonos use official tourism/municipal live pages; Poiana Brașov uses destination tourism webcam pages; Santorini uses a strong long-running provider live stream and remains link-only unless rights are explicitly established.
+- Added source-gated Viator business opportunities for Bled, Mykonos, Santorini and Brașov; none can activate before the corresponding live source is human-confirmed and promoted.
+- Pamir core remains intentionally unresolved; six Kyrgyz approach/mountain candidates are research-only and do not masquerade as Pamir proper.
+- Source verification priority and focused expansion plan were refreshed after this batch.
