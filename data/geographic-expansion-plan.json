@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:50:00Z",
+  "generatedAt": "2026-10-03T11:32:00Z",
   "currentHealthyCountries": [
     "Anguilla",
     "Aruba",
@@ -127,5 +127,33 @@
     "noWeatherWidgetAsScenicCamera": true,
     "noDuplicatePlaceInflation": true,
     "humanVerificationBeforePromotion": true
-  }
+  },
+  "recentCoverage": [
+    {
+      "region": "Indian Ocean islands",
+      "places": [
+        "Boucan Canot",
+        "Trou d’Eau",
+        "Roches Noires",
+        "Piton de la Fournaise"
+      ],
+      "state": "PROMOTED_SEARCHABLE_QUASI_LIVE"
+    },
+    {
+      "region": "North Atlantic islands",
+      "places": [
+        "São Miguel",
+        "Terceira",
+        "Santa Maria"
+      ],
+      "state": "PROMOTED_SEARCHABLE_QUASI_LIVE"
+    }
+  ],
+  "nextQualityGaps": [
+    "Africa beyond South Africa/Indian Ocean islands",
+    "Caribbean island capitals and harbours",
+    "South America civic/coastal places beyond volcano monitoring",
+    "Pacific islands beyond New Zealand/Australia",
+    "Central Asia city/mountain gateways while Pamir core remains deferred"
+  ]
 }
