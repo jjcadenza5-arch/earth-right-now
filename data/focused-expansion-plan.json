@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T02:40:00Z",
+  "generatedAt": "2026-10-03T03:25:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 91,
@@ -10,29 +10,36 @@
     ],
     "strategy": "Add only genuinely distinct useful places; prefer official tourism/government/provider pages; human playback verification required before promotion.",
     "nextHumanCheckBatch": [
+      "karakol-ski-base",
+      "ala-archa-natural-park",
       "dubrovnik-pile-city",
+      "mauritius-grand-baie",
       "hualien-shitiping",
+      "wanaka-lake-view-roys-peak",
       "malta-live-cams",
       "sanparks-olifants",
+      "mauritius-pointe-desny",
       "prague-old-town-hall",
       "prague-petrin-tower",
+      "rotorua-skyline-city-lake",
+      "rotorua-museum-gardens-lake",
       "salzburg-mirabell-old-town",
       "sanparks-satara",
-      "taichung-techi-reservoir",
-      "tainan-erliao-sunrise",
-      "taipei-dajia-riverside-park",
-      "ushuaia-harbour-municipal",
-      "mauritius-grand-baie"
+      "shymbulak-mountain-resort"
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
-    "researchCandidateCount": 67,
-    "playbackGatedCandidateCount": 63,
+    "researchCandidateCount": 75,
+    "playbackGatedCandidateCount": 71,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan",
       "adjacentHighValueChecks": [
         "shymbulak-mountain-resort",
         "karakol-ski-base",
         "ala-archa-natural-park",
+        "too-ashu-north",
+        "suusamyr-valley",
+        "naryn-central-square",
+        "balykchy-north-entry",
         "osh-sulaiman-too"
       ],
       "rule": "Adjacent Central Asia cameras improve regional breadth but do not close the Pamir/Tajikistan gap."
@@ -77,7 +84,9 @@
       "viator-rotorua-future",
       "viator-shymbulak-future",
       "viator-karakol-future",
-      "viator-pamir-future"
+      "viator-pamir-future",
+      "viator-ala-archa-future",
+      "viator-issyk-kul-future"
     ],
     "accommodationResearch": [
       "hotels-com",
@@ -86,7 +95,8 @@
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 12,
     "exactLinkQueueCount": 18,
-    "sourceGatedQueueCount": 14
+    "sourceGatedQueueCount": 18,
+    "sourceGapBlockedCount": 1
   },
   "safeguards": {
     "automaticPlacement": false,
