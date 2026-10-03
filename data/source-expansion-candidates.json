@@ -2617,7 +2617,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open the municipal Port of Tvøroyri webcam page and confirm the harbour view is moving/current.",
-      "verifiedAt": "2026-10-03T12:55:00Z",
+      "verifiedAt": "2026-10-03T12:30:00Z",
       "verification": "Official municipal page currently exposes a live webcam; promoted conservatively as LIVE_IMAGE/Search-Explore."
     },
     {
@@ -2664,7 +2664,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open Shetland.org Videos and confirm Lerwick Town Hall Cam is visibly live/current.",
-      "verifiedAt": "2026-10-03T12:55:00Z",
+      "verifiedAt": "2026-10-03T12:30:00Z",
       "verification": "Official Shetland destination page currently labels Lerwick Town Hall Cam as Live; promoted conservatively as LIVE_IMAGE/Search-Explore."
     },
     {
@@ -2681,7 +2681,7 @@
       "priority": "P2",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open Shetland.org Videos and confirm Cliff Cam 3 is visibly live/current.",
-      "verifiedAt": "2026-10-03T12:55:00Z",
+      "verifiedAt": "2026-10-03T12:30:00Z",
       "verification": "Official Shetland destination page currently labels Cliff Cam 3 as Live; promoted conservatively as LIVE_IMAGE/Search-Explore."
     },
     {
@@ -2693,7 +2693,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "sourcePage": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
-      "verifiedAt": "2026-10-03T12:40:00Z",
+      "verifiedAt": "2026-10-03T12:30:00Z",
       "verification": "Official municipal camera page + official FAQ describe touristic streams as real-time; promoted conservatively as LIVE_IMAGE for Search/Explore, not Watch Earth."
     },
     {
@@ -2705,7 +2705,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "sourcePage": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
-      "verifiedAt": "2026-10-03T12:40:00Z",
+      "verifiedAt": "2026-10-03T12:30:00Z",
       "verification": "Official municipal camera page + official FAQ describe touristic streams as real-time; promoted conservatively as LIVE_IMAGE for Search/Explore, not Watch Earth."
     },
     {
@@ -2717,7 +2717,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "sourcePage": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
-      "verifiedAt": "2026-10-03T12:40:00Z",
+      "verifiedAt": "2026-10-03T12:30:00Z",
       "verification": "Official municipal camera page + official FAQ describe touristic streams as real-time; promoted conservatively as LIVE_IMAGE for Search/Explore, not Watch Earth."
     }
   ],
