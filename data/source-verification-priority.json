@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:08:00Z",
+  "generatedAt": "2026-10-03T02:32:00Z",
   "publicActivationAllowed": false,
   "currentHealthyDistinctPlaces": 91,
   "targetHealthyDistinctPlaces": [
@@ -181,6 +181,21 @@
       "humanCheckHint": "Open the official Taipei-filtered Live Taiwan page and confirm Dajia Riverside Park visibly updates."
     },
     {
+      "id": "ushuaia-harbour-municipal",
+      "title": "Ushuaia — Harbour & Beagle Channel",
+      "country": "Argentina",
+      "region": "Tierra del Fuego",
+      "provider": "Municipalidad de Ushuaia / Secretaría de Turismo",
+      "priority": "P1",
+      "verificationUrl": "https://www.youtube.com/watch?v=q9g51I3NyJQ",
+      "verificationType": "MUNICIPAL_PUBLISHED_YOUTUBE_TARGET",
+      "oneClick": true,
+      "businessUnlocks": [
+        "viator-ushuaia-future"
+      ],
+      "humanCheckHint": "Open the exact municipal-published YouTube target and confirm it is still a current live harbour stream, not an archived recording."
+    },
+    {
       "id": "tallinn-tv-tower-panorama",
       "title": "Tallinn — TV Tower Panorama",
       "country": "Estonia",
@@ -235,7 +250,9 @@
       "oneClick": true,
       "businessUnlocks": [],
       "humanCheckHint": "Open the official Innsbruck webcam page and use the main 360° live panorama."
-    },
+    }
+  ],
+  "backlog": [
     {
       "id": "innsbruck-markthalle",
       "title": "Innsbruck — Markthalle & River Inn",
@@ -248,9 +265,7 @@
       "oneClick": true,
       "businessUnlocks": [],
       "humanCheckHint": "On the official Innsbruck webcam page, choose the Markthalle / central Innsbruck camera overlooking the River Inn."
-    }
-  ],
-  "backlog": [
+    },
     {
       "id": "innsbruck-kuhtai",
       "title": "Kühtai — Tyrol",
@@ -278,6 +293,19 @@
         "klook-taichung-future"
       ],
       "humanCheckHint": "Open the official Taichung-filtered Live Taiwan page and confirm Lishan Yingyuan Hill visibly updates."
+    },
+    {
+      "id": "mendoza-plaza-independencia-live",
+      "title": "Mendoza — Plaza Independencia",
+      "country": "Argentina",
+      "region": "Mendoza",
+      "provider": "Municipalidad de la Ciudad de Mendoza",
+      "priority": "P1",
+      "verificationUrl": "https://camarasmunicapital.ciudaddemendoza.gov.ar/index.html",
+      "verificationType": "OFFICIAL_CITY_LIVE_VIDEO_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [],
+      "humanCheckHint": "Open the official municipal camera page and confirm Plaza Independencia is visibly live/current."
     },
     {
       "id": "new-taipei-zhongjiao-bay",
