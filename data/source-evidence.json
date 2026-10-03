@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T14:50:00Z",
-  "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog can remain within ERN's strict production-size budget. Runtime records retain concise non-empty audit markers.",
+  "generatedAt": "2026-10-03T15:45:00Z",
+  "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
       "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Auckland Viaduct YouTube channel-live player delivers current live content after the visitor presses Play. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f). Independent provider-page recheck on 2026-09-29 confirmed the official Viaduct Harbour page still publishes an 'Auckland Viaduct View — live' stream. Source currentness refreshed independently of human playback proof. Deployed-origin human review on 2026-09-30 confirmed the exact current ERN embed target visibly playing/current (review batch 0b51cbc04e9598b8).",
@@ -1296,7 +1296,8 @@
     "prague-petrin-tower": {
       "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
       "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
-      "freshnessEvidence": "Prague City Tourism currently publishes this camera target."
+      "freshnessEvidence": "Prague City Tourism currently publishes this camera target.",
+      "story": "Prague City Tourism's official Prague Towers page directly links the Petřín live camera to the Prague Visitor Pass Panomax 360 endpoint. Owner previously reported the Prague camera family..."
     },
     "prague-old-town-hall": {
       "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
@@ -1376,7 +1377,8 @@
     "karakol-ski-base": {
       "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
       "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
-      "freshnessEvidence": "Provider currently publishes this short-delay camera view."
+      "freshnessEvidence": "Provider currently publishes this short-delay camera view.",
+      "story": "KG Camera exposes a direct Karakol Ski Base camera page at the lower lift and states its video surveillance runs without archiving with a 20-second delay. The official Karakol Ski Base al..."
     },
     "osh-sulaiman-too": {
       "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
@@ -1411,7 +1413,8 @@
     "mauritius-saint-felix": {
       "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
       "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
-      "freshnessEvidence": "Mauritius tourism sources list Saint-Félix in the current live-camera family."
+      "freshnessEvidence": "Mauritius tourism sources list Saint-Félix in the current live-camera family.",
+      "story": "Current official tourism family plus MTPA annual-report evidence supports Saint-Félix as a named Mauritius Live camera location; current playback still requires owner verification."
     },
     "wanaka-lake-hawea-view": {
       "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
@@ -1561,6 +1564,98 @@
       "freshnessEvidence": "Official Hawke's Bay Regional Council webcam page rechecked 2026-10-03; provider states webcam images refresh every hour with latest-capture date/time shown.",
       "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
       "coordinateSourceUrl": "https://www.hbrc.govt.nz/webcams"
+    },
+    "brussels-grand-place-current": {
+      "freshnessEvidence": "Current City of Brussels page exposes the Grand-Place webcam and HTML5 video player; verified 2026-10-03.",
+      "rightsBasis": "Official city source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "brussels-brouckere-current": {
+      "freshnessEvidence": "Current City of Brussels page exposes the Place de Brouckère webcam and HTML5 video player; verified 2026-10-03.",
+      "rightsBasis": "Official city source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "zandvoort-current": {
+      "freshnessEvidence": "Visit Zandvoort states its circuit and beach webcams show current conditions year-round; verified 2026-10-03.",
+      "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "darmstadt-mathildenhoehe-current": {
+      "freshnessEvidence": "Current Darmstadt Tourism page explicitly invites visitors to see how Mathildenhöhe looks right now via webcam; verified 2026-10-03.",
+      "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "heidelberg-current": {
+      "freshnessEvidence": "Heidelberg Marketing's current weather/webcam page lists Old Town and Königstuhl webcam views; verified 2026-10-03.",
+      "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "nuremberg-current": {
+      "freshnessEvidence": "Current Nuremberg Tourism privacy/service documentation states that a panoramic webcam provides a real-time view of the city; verified 2026-10-03.",
+      "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "cannes-current": {
+      "freshnessEvidence": "Current official Cannes tourism site tells visitors to check conditions live and links live webcam/weather information; verified 2026-10-03.",
+      "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "plitvice-lakes-current": {
+      "freshnessEvidence": "Current official national park site exposes a Livestream entry in its primary visitor navigation; verified 2026-10-03.",
+      "rightsBasis": "Official national park source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "denmark-klitmoller-current": {
+      "freshnessEvidence": "VisitDenmark currently describes the Klitmøller webcam as a live view for checking waves and coast conditions; verified 2026-10-03.",
+      "rightsBasis": "Official national tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "denmark-ribe-current": {
+      "freshnessEvidence": "VisitDenmark currently describes the Ribe stream as a view of what is going on right now; verified 2026-10-03.",
+      "rightsBasis": "Official national tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "denmark-skjoldnaes-current": {
+      "freshnessEvidence": "Current VisitDenmark attraction page explicitly labels a webcam livefeed from the lighthouse; verified 2026-10-03.",
+      "rightsBasis": "Official national tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "denmark-lokken-current": {
+      "freshnessEvidence": "Current VisitDenmark page explicitly lists Løkken Moleleje Webcam - Live Stream; verified 2026-10-03.",
+      "rightsBasis": "Official national/regional tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "denmark-aalborg-zoo-current": {
+      "freshnessEvidence": "Current VisitDenmark Aalborg page tells visitors they can follow the zoo's polar bear family live on webcam; verified 2026-10-03.",
+      "rightsBasis": "Official tourism/zoo source family; ERN links externally; no reuse or restream rights inferred."
+    },
+    "denmark-gribskov-osprey-current": {
+      "freshnessEvidence": "Current VisitDenmark Gribskov page describes following an osprey nest through a live webcam; verified 2026-10-03.",
+      "rightsBasis": "Official national/regional tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "heidelberg-konigstuhl-current": {
+      "freshnessEvidence": "Heidelberg Marketing's current weather/webcam page explicitly lists a Königstuhl panorama; verified 2026-10-03.",
+      "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "zandvoort-circuit-current": {
+      "freshnessEvidence": "Visit Zandvoort states the circuit pitcam operates year-round except temporary broadcast-rights restrictions; verified 2026-10-03.",
+      "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "dresden-old-town-current": {
+      "freshnessEvidence": "Current Dresden Elbland Tourism weathercam page invites visitors to a live discovery and lists the Dresden Old Town camera; verified 2026-10-03.",
+      "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "radebeul-wackerbarth-current": {
+      "freshnessEvidence": "Current Dresden Elbland Tourism weathercam page lists a live Radebeul / Wackerbarth Castle vineyard camera; verified 2026-10-03.",
+      "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "farchant-zugspitze-current": {
+      "freshnessEvidence": "Current Farchant destination page says visitors can check in live and lists Farchant, Zugspitze, Wank and Garmisch-Partenkirchen livecams; verified 2026-10-03.",
+      "rightsBasis": "Official destination/tourism source; ERN links externally; no reuse or restream rights inferred."
+    },
+    "aitutaki-lagoon-current": {
+      "freshnessEvidence": "Official page labels a latest/current Aitutaki Lagoon image and recent time-of-day captures.",
+      "rightsBasis": "Official Cook Islands Airports webcam page; ERN links to the source and does not restream."
+    },
+    "aitutaki-tamanu-beach-current": {
+      "freshnessEvidence": "Official page labels the most recent/current Tamanu Beach image plus recent daypart captures.",
+      "rightsBasis": "Official Cook Islands Airports webcam page; ERN links to the source and does not restream."
+    },
+    "rarotonga-avaavaroa-current": {
+      "freshnessEvidence": "Official page publishes current/recent daylight images for Avaavaroa Beach.",
+      "rightsBasis": "Official Cook Islands Airports webcam page; ERN links to the source and does not restream."
+    },
+    "rarotonga-airport-current": {
+      "freshnessEvidence": "Official page labels the latest/current Rarotonga International Airport image.",
+      "rightsBasis": "Official Cook Islands Airports webcam page; ERN links to the source and does not restream."
     }
   },
   "prague-petrin-tower": {
