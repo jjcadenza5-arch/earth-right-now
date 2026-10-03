@@ -405,3 +405,15 @@ Travelpayouts unlocked-program checkpoint — 2026-10-03:
 - Priority for the next non-destination-specific business layer: Airalo, Radical Storage, Go City, Kiwitaxi and Aviasales; Saily is a secondary connectivity option.
 - Locked/not-yet-available programs such as Booking.com, Trip.com, Agoda, Expedia, GetYourGuide, Tripadvisor Experiences, DiscoverCars, Traveloka, Omio, 12GO, Hotels.com, Hostelworld, Vrbo and similar remain traffic/eligibility dependent and should not block current monetization work.
 - data/travelpayouts-unlocked-programs.json is the canonical priority registry for this new availability.
+
+
+Traffic-led monetization / runtime compaction checkpoint — 2026-10-03:
+- Owner Travelpayouts screenshots establish two commercial pools: account-side link generation available now vs visible-but-not-yet-unlocked programs.
+- Strategy is now traffic-led: use currently available programs and active partners to build utility/click/conversion evidence; recheck locked stays/activity/transport programs only after meaningful traction or an account-state change.
+- Removed the redundant repeated Trip.com owner-status check. Trip.com, Hotels.com, Agoda, Expedia and similar catalog programs remain future unlock targets rather than blockers.
+- Added data/travelpayouts-traffic-unlock-plan.json and data/commercial-utility-opportunities.json.
+- Next utility layer prepared, still exact-link/owner-verification gated: Airalo, Radical Storage, Go City, Kiwitaxi and Aviasales.
+- Source registry exceeded the strict release-size budget as source evidence accumulated. Verbose freshness/rights/coordinate provenance was moved into data/source-evidence.json, preserving truth and audit evidence while shrinking the runtime catalog; duplicate officialUrl fields matching sourceUrl were also removed.
+- Maintenance queue was rebuilt from actual current timestamps instead of stale checkpoint data.
+- Kaikōura Coast was revalidated from the official Environment Canterbury webcam page; provider still documents South Bay and five-minute current-image updates. Freshness debt is cleared.
+- Searchable baseline remains 202 healthy distinct places; post-200 work prioritizes source quality/freshness and business utility rather than raw count inflation.
