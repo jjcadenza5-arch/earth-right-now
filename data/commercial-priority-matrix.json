@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T02:20:00Z",
+  "principles": {
+    "existingPartnersFirst": true,
+    "exactTrackedLinkRequired": true,
+    "visitorUtilityFirst": true,
+    "commissionMayNotAffectRanking": true,
+    "automaticPlacement": false,
+    "automaticLinkRewriting": false
+  },
+  "currentVerifiedOpportunityCount": 12,
+  "exactLinkQueueCount": 13,
+  "sourceGatedQueueCount": 5,
+  "researchPriority": [
+    {
+      "placeId": "koli-lake-pielinen",
+      "title": "Koli — Lake Pielinen",
+      "country": "Finland",
+      "region": "North Karelia",
+      "quality": 98,
+      "moment": 98,
+      "categories": [
+        "Mountains",
+        "Nature",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "meads-bay-anguilla",
+      "title": "Meads Bay — Anguilla",
+      "country": "Anguilla",
+      "region": "Meads Bay",
+      "quality": 97,
+      "moment": 98,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "flam-aurlandsfjord",
+      "title": "Flåm & Aurlandsfjord — Live Views",
+      "country": "Norway",
+      "region": "Flåm / Aurland",
+      "quality": 97,
+      "moment": 98,
+      "categories": [
+        "Beautiful Earth",
+        "Cities & Harbours",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "oeschinensee",
+      "title": "Oeschinensee — Mountain & Lake Views",
+      "country": "Switzerland",
+      "region": "Bernese Oberland",
+      "quality": 97,
+      "moment": 98,
+      "categories": [
+        "Beautiful Earth",
+        "Mountains & Snow",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "druif-beach-aruba",
+      "title": "Druif Beach — Aruba",
+      "country": "Aruba",
+      "region": "Oranjestad",
+      "quality": 96,
+      "moment": 97,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "chicago-lakefront",
+      "title": "Chicago Skyline & Lakefront",
+      "country": "United States",
+      "region": "Chicago, Illinois",
+      "quality": 96,
+      "moment": 97,
+      "categories": [
+        "Cities & Streets",
+        "Beautiful Earth",
+        "Culture & Landmarks"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "little-bay-sint-maarten",
+      "title": "Little Bay Beach — Sint Maarten",
+      "country": "Sint Maarten",
+      "region": "Philipsburg",
+      "quality": 95,
+      "moment": 97,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth",
+        "Cities & Harbours"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "amden-walensee",
+      "title": "Lake Walensee & Amden — Live Panoramas",
+      "country": "Switzerland",
+      "region": "St. Gallen",
+      "quality": 96,
+      "moment": 96,
+      "categories": [
+        "Beautiful Earth",
+        "Mountains & Snow",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "new-york-harbor",
+      "title": "New York Skyline — Jersey City",
+      "country": "United States",
+      "region": "New York / New Jersey",
+      "quality": 95,
+      "moment": 96,
+      "categories": [
+        "Cities & Streets",
+        "Beautiful Earth",
+        "Interesting Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "marco-island-beach",
+      "title": "Marco Island Beach",
+      "country": "United States",
+      "region": "Florida",
+      "quality": 95,
+      "moment": 96,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "lauderdale-by-the-sea",
+      "title": "Windjammer Beach — Lauderdale-by-the-Sea",
+      "country": "United States",
+      "region": "Florida",
+      "quality": 95,
+      "moment": 94,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "kilauea-summit",
+      "title": "Kīlauea Summit",
+      "country": "United States",
+      "region": "Hawaiʻi",
+      "quality": 92,
+      "moment": 95,
+      "categories": [
+        "Volcanoes & Earth",
+        "Interesting Earth",
+        "Earth Happening Now"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "chamonix-mont-blanc",
+      "title": "Chamonix – Mont-Blanc",
+      "country": "France",
+      "region": "Chamonix",
+      "quality": 91,
+      "moment": 94,
+      "categories": [
+        "Mountains & Snow"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "maui-hale-pau-hana",
+      "title": "Maui — Hale Pau Hana Surf",
+      "country": "United States",
+      "region": "Hawaii",
+      "quality": 93,
+      "moment": 92,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "st-johns-harbour",
+      "title": "St. John's Harbour",
+      "country": "Canada",
+      "region": "Newfoundland and Labrador",
+      "quality": 93,
+      "moment": 92,
+      "categories": [
+        "Cities & Harbours",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "addo-elephant-national-park",
+      "title": "Addo Elephant National Park",
+      "country": "South Africa",
+      "region": "Eastern Cape",
+      "quality": 91,
+      "moment": 94,
+      "categories": [
+        "Wildlife",
+        "Parks & Scenic",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "kyoto-hanamikoji",
+      "title": "Kyoto — Hanamikoji Street",
+      "country": "Japan",
+      "region": "Kyoto",
+      "quality": 90,
+      "moment": 95,
+      "categories": [
+        "Cities & Streets",
+        "Culture & Landmarks",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "klook",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "seoul-plaza",
+      "title": "Seoul Plaza — 24 Hours",
+      "country": "South Korea",
+      "region": "Seoul",
+      "quality": 90,
+      "moment": 95,
+      "categories": [
+        "Cities & Streets",
+        "Culture & Landmarks",
+        "Earth Happening Now",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "klook",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "rovaniemi-santa-claus-village",
+      "title": "Rovaniemi — Santa Claus Village",
+      "country": "Finland",
+      "region": "Rovaniemi, Lapland",
+      "quality": 91,
+      "moment": 94,
+      "categories": [
+        "Cities & Streets",
+        "Culture & Landmarks",
+        "Mountains & Snow",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "boulders-beach",
+      "title": "Boulders Beach — African Penguins",
+      "country": "South Africa",
+      "region": "Table Mountain National Park",
+      "quality": 90,
+      "moment": 94,
+      "categories": [
+        "Wildlife",
+        "Beaches & Water",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "orpen-kruger",
+      "title": "Orpen — Kruger National Park",
+      "country": "South Africa",
+      "region": "Kruger National Park",
+      "quality": 90,
+      "moment": 94,
+      "categories": [
+        "Wildlife",
+        "Parks & Scenic",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "kyoto-kiyomizuzaka",
+      "title": "Kyoto — Kiyomizu-zaka",
+      "country": "Japan",
+      "region": "Kyoto",
+      "quality": 90,
+      "moment": 94,
+      "categories": [
+        "Cities & Streets",
+        "Culture & Landmarks",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "klook",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "kyoto-nishiki-market",
+      "title": "Kyoto — Nishiki Market",
+      "country": "Japan",
+      "region": "Kyoto",
+      "quality": 90,
+      "moment": 94,
+      "categories": [
+        "Cities & Streets",
+        "Culture & Landmarks",
+        "Useful Earth",
+        "Interesting Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "klook",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "kijihiki-plateau",
+      "title": "Kijihiki Plateau",
+      "country": "Japan",
+      "region": "Hokkaido",
+      "quality": 92,
+      "moment": 91,
+      "categories": [
+        "Mountains",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "klook"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "lajes-pico-harbour",
+      "title": "Lajes do Pico Harbour",
+      "country": "Portugal",
+      "region": "Pico Island",
+      "quality": 92,
+      "moment": 91,
+      "categories": [
+        "Beaches & Water"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    }
+  ],
+  "note": "Partner suggestions are research prompts only. They do not assert program inventory, create tracked links or activate public commercial placements."
+}
