@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T13:10:00Z",
+  "generatedAt": "2026-10-03T13:25:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -94,7 +94,7 @@
     ],
     "currentCommercialOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 110,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 127,
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 5,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
@@ -103,7 +103,10 @@
     "ownerLinkGenerationAvailablePrograms": 23,
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
-    "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json"
+    "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
+    "currentCommercialOpportunityCount": 150,
+    "healthyPlacesWithCommercialPath": 196,
+    "healthyPlacesWithoutCommercialPath": 60
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -130,7 +133,9 @@
     "Traffic-led unlock roadmap and currently usable utility expansion queue prepared",
     "Quality-led Istanbul expansion added Taksim Square, Maiden’s Tower and Anadolu Hisarı without weakening Watch Earth.",
     "Official Tvøroyri and Shetland current-camera pages expanded searchable coverage to 256 healthy places.",
-    "Business-place expansion matrix now prepares Kiwitaxi, Radical Storage, KKday, Localrent, QEEQ and WeGoTrip coverage across many healthy ERN places."
+    "Business-place expansion matrix now prepares Kiwitaxi, Radical Storage, KKday, Localrent, QEEQ and WeGoTrip coverage across many healthy ERN places.",
+    "High-value commercial research coverage expanded to 196 of 256 healthy ERN places.",
+    "Commercial opportunity registry expanded to 150 entries while verified/public links remain fail-closed until exact tracked-link verification."
   ],
   "humanOnlyRemaining": [
     {
