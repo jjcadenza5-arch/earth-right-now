@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T14:05:00Z",
+  "generatedAt": "2026-10-03T14:40:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 275,
     "targetRange": [
       250,
-      275
+      300
     ],
-    "strategy": "Searchable-place scale target reached. Maintain 250+ healthy distinct places, improve freshness and geographic/provider quality, and upgrade high-value quasi-live places to true live where possible.",
+    "strategy": "Scale target exceeded. Keep 250+ healthy distinct places, improve freshness, geographic/provider balance and high-value source quality. Add selectively where places fill real gaps; upgrade quasi-live to true live when worthwhile.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -27,7 +27,7 @@
     "researchCandidateCount": 181,
     "playbackGatedCandidateCount": 10,
     "centralAsia": {
-      "unresolvedGap": "pamir-mountains-tajikistan",
+      "unresolvedGap": "pamir-mountains-tajikistan-DEFERRED",
       "adjacentHighValueChecks": [
         "shymbulak-mountain-resort",
         "karakol-ski-base",
@@ -40,7 +40,7 @@
         "issyk-kul-karven-four-seasons",
         "bishkek-ala-too-square"
       ],
-      "rule": "Adjacent Central Asia cameras improve regional breadth but do not close the Pamir/Tajikistan gap."
+      "rule": "Owner approved deferring Pamir. Revisit later with quasi-live/current-image sources if quality improves; Pamir does not block other regions."
     },
     "researchBacklogCount": 96,
     "mountainExpansionFocus": [
@@ -80,9 +80,9 @@
       "minimumTarget": 250,
       "current": 275,
       "remainingToMinimum": 0,
-      "stretchTarget": 275,
-      "remainingToStretch": 0,
-      "status": "SOFT_STRETCH_REACHED_QUALITY_MAINTENANCE"
+      "stretchTarget": 300,
+      "remainingToStretch": 25,
+      "status": "QUALITY_FIRST_SELECTIVE_GROWTH"
     },
     "recentExpansionFamilies": [
       "La Réunion — four official tourism/scientific current webcam places",
@@ -93,7 +93,18 @@
       "Western/Northern Europe quality batch — Brussels, Zandvoort, Darmstadt, Heidelberg/Königstuhl, Nuremberg, Cannes, Plitvice, Denmark live-view family, Dresden/Radebeul and Farchant/Zugspitze"
     ],
     "catalogScaleStrategy": "Keep data/sources.json minified as the lean runtime catalog; retain verbose provenance/long notes in data/source-evidence.json so expansion can continue without weakening the 300 KB production budget.",
-    "nextMode": "QUALITY_AND_FRESHNESS_AFTER_SCALE_TARGET"
+    "nextMode": "QUALITY_AND_FRESHNESS_AFTER_SCALE_TARGET",
+    "currentHealthyTruth": {
+      "LIVE_VIDEO": 13,
+      "EXTERNAL_LIVE": 69,
+      "LIVE_IMAGE": 197
+    },
+    "researchCandidateStateCounts": {
+      "PROMOTED_TO_SOURCE_REGISTRY": 55,
+      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 120,
+      "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
+      "HUMAN_PLAYBACK_REQUIRED": 12
+    }
   },
   "businessLane": {
     "activePartners": [
@@ -165,8 +176,8 @@
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 16,
-    "exactLinkQueueCount": 108,
-    "sourceGatedQueueCount": 6,
+    "exactLinkQueueCount": 157,
+    "sourceGatedQueueCount": 5,
     "sourceGapBlockedCount": 2,
     "sourceGatedOpportunityCount": 31,
     "quasiLiveCommercialRule": "A healthy quasi-live searchable place may unlock downstream travel planning, but commercial value never changes truth/currentness.",
@@ -178,11 +189,11 @@
     },
     "priorityRule": "Prefer exact destination/product fit inside existing active partners before broad generic destination links. Batch owner link generation rather than interrupting one destination at a time.",
     "tripComDecision": "WAIT_FOR_TRAFFIC_UNLOCK",
-    "tripComReason": "Owner account screenshots show Trip.com is visible in Travelpayouts but not yet unlocked for ERN. It is a P1 future program because it could fill accommodation and transport gaps.",
+    "tripComReason": "Owner screenshots confirm Trip.com is visible in Travelpayouts but not yet unlocked for ERN. Keep it P1 future stay/transport coverage and recheck only after material traffic/account-state change.",
     "istanbulDenpasarUnlocked": true,
     "currentCommercialStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 156,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 157,
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 5,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
@@ -207,10 +218,10 @@
     "etoshaNote": "Official Namibia Wildlife Resorts evidence supports an Okaukuejo live-camera candidate, but ERN keeps it research-only until exact target playback is human-confirmed.",
     "trafficGrowthPlan": "data/traffic-growth-priorities.json",
     "ownerActionPacket": "data/owner-action-packet.json",
-    "currentOpportunityCount": 179,
+    "currentOpportunityCount": 180,
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "ownerWorksheet": "data/exact-link-generation-worksheet.json",
-    "nextMode": "275_PLACE_QUALITY_MAINTENANCE_PLUS_TRAFFIC_GROWTH_AND_BATCHED_LINK_CONVERSION",
+    "nextMode": "QUALITY_MAINTENANCE_TRAFFIC_GROWTH_AND_BATCHED_LINK_CONVERSION",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
     "healthyPlacesWithCommercialPath": 242,
     "healthyPlacesWithoutCommercialPath": 33,
@@ -223,7 +234,8 @@
       "primary": "Use existing verified links and already owner-account-link-generation-capable programs where they add real visitor utility.",
       "secondary": "Convert the highest-fit existing-partner destination opportunities in batches.",
       "avoid": "Do not design ERN around locked programs or repeatedly ask the owner to check them."
-    }
+    },
+    "conversionShortlist": "data/commercial-conversion-shortlist.json"
   },
   "safeguards": {
     "automaticPlacement": false,
