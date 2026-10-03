@@ -140,7 +140,7 @@ function setProfile(){
  };
  return fixed[state.mode]||automatic;
 }
-function adaptiveWatchLimit(pool,target=20){const inside=pool.filter(currentInside).length,external=Math.max(0,pool.length-inside);if(!pool.length)return 0;if(inside<5)return Math.min(target,pool.length,inside+Math.min(external,target));return Math.min(target,pool.length)}
+function adaptiveWatchLimit(pool,target=20){const inside=pool.filter(currentInside).length,external=Math.max(0,pool.length-inside);if(!pool.length)return 0;if(inside<5)return Math.min(target,pool.length,inside+Math.min(external,target));return Math.min(pool.length,target)}
 function buildWatch(sources){
  const profile=setProfile();
  let pool=sources.filter(watchEligible);
