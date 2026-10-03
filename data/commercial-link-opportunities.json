@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T02:28:00Z",
+  "generatedAt": "2026-10-03T02:42:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -513,6 +513,21 @@
       "reason": "Shitiping's official east-coast live view can naturally lead into Hualien/East Coast sightseeing and nature activities.",
       "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
       "nextAction": "After Shitiping is promoted, search Viator partner tools for a clean Hualien/East Coast destination-level link; do not use a generic Taiwan page."
+    },
+    {
+      "id": "viator-aruba",
+      "destination": "Aruba / Druif Beach",
+      "placeIds": [
+        "druif-beach-aruba"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a high-quality healthy Druif Beach live place and Viator currently exposes broad Aruba island, beach, snorkeling, sailing and off-road inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Aruba/d28-ttd",
+      "publicInventoryEvidence": "Current Viator Aruba destination inventory contains 400+ experiences including snorkeling, sailing, island tours and beach-focused activities.",
+      "nextAction": "Generate one Aruba destination-level Viator partner link and manually verify it before public activation; keep the offer downstream from Earth discovery."
     }
   ]
 }
