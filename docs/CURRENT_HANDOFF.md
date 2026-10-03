@@ -158,3 +158,10 @@ Mountain expansion checkpoint — 2026-10-03 02:45 UTC:
 - Added playback-gated mountain candidates outside the Pamir where live evidence is stronger: Gudauri, Kobi, Shymbulak, Everest/Hotel Everest View and Khumbu Glacier scientific camera.
 - New source-gated business paths prepared: Klook Pamir Highway, Klook Ala-Archa, Klook Gudauri, Klook Shymbulak and Viator Everest/Khumbu.
 - Source verification priorities and the focused expansion plan were refreshed so owner checks remain small, one-click where possible, and commercially useful only after truth verification.
+
+
+Pamir / Kyrgyz approach research — 2026-10-03:
+- Core Pamir remains intentionally unresolved: no trustworthy live feed found for Murghab, Karakul Lake, Wakhan, Ak-Baital or comparable core Tajik Pamir locations.
+- ERN will not substitute prerecorded travel videos, GNSS monitoring stations or static tourism media for live Earth truth.
+- Added research-only Kyrgyz mountain/approach candidates from kg.camera: Osh/Sulayman-Too, Batken, Razzakov, Suusamyr Valley, Ala-Archa and Karakol Ski Base.
+- These broaden Central Asia coverage without falsely labeling them as Pamir proper.
