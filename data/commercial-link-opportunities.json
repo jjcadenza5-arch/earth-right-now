@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T05:00:00Z",
+  "generatedAt": "2026-10-03T05:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1814,6 +1814,36 @@
       "reason": "Olifants is now searchable and supports Kruger safari planning.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Prefer one park-level Kruger Viator link shared across suitable ERN Kruger places rather than per-camp duplicates."
+    },
+    {
+      "id": "klook-mayon",
+      "destination": "Mayon / Albay",
+      "placeIds": [
+        "mayon-volcano"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a healthy official Mayon current-image place, and Klook currently has deep Mayon/Albay inventory including skyline tours and ATV products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-PH/destination/p50132685-mayon-volcano/5-tour/",
+      "publicInventoryEvidence": "Klook currently lists multiple Mayon/Albay tours and Mayon ATV experiences.",
+      "nextAction": "Generate one Mayon/Albay destination-level Klook tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "viator-mauna-loa",
+      "destination": "Mauna Loa / Hawaiʻi Island",
+      "placeIds": [
+        "mauna-loa-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a healthy official Mauna Loa current-image place, and Viator currently exposes dedicated Mauna Loa / Big Island volcano-tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Big-Island-of-Hawaii-attractions/Mauna-Loa/d669-a22599",
+      "publicInventoryEvidence": "Viator currently lists Mauna Loa tours and broader Hawaiʻi Volcanoes National Park experiences that include views of Mauna Loa.",
+      "nextAction": "Generate one Mauna Loa or Big Island volcano destination-level Viator partner link and manually verify it before activation."
     }
   ]
 }
