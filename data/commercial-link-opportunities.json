@@ -15,11 +15,11 @@
       "id": "klook-kyoto",
       "destination": "Kyoto",
       "placeIds": [
-        "kyoto-fushimi-inari-live",
-        "kyoto-kifune-shrine-live",
-        "kyoto-kiyomizuzaka-live",
-        "kyoto-hanamikoji-live",
-        "kyoto-nishiki-market-live"
+        "kyoto-fushimi-inari",
+        "kyoto-kifune-shrine",
+        "kyoto-kiyomizuzaka",
+        "kyoto-hanamikoji",
+        "kyoto-nishiki-market"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
@@ -34,7 +34,7 @@
       "id": "tiqets-rome",
       "destination": "Rome",
       "placeIds": [
-        "rome-spanish-steps-skylinewebcams"
+        "rome-spanish-steps"
       ],
       "partnerCandidate": "tiqets",
       "intent": "culture",
@@ -49,7 +49,7 @@
       "id": "klook-seoul",
       "destination": "Seoul",
       "placeIds": [
-        "seoul-plaza-24h-live"
+        "seoul-plaza"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
@@ -64,7 +64,7 @@
       "id": "klook-rovaniemi",
       "destination": "Rovaniemi / Santa Claus Village",
       "placeIds": [
-        "rovaniemi-santa-claus-village-live"
+        "rovaniemi-santa-claus-village"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
@@ -92,7 +92,7 @@
       "id": "tiqets-chicago",
       "destination": "Chicago",
       "placeIds": [
-        "chicago-field-skyline"
+        "chicago-lakefront"
       ],
       "partnerCandidate": "tiqets",
       "intent": "culture",
