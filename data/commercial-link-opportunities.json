@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T05:30:00Z",
+  "generatedAt": "2026-10-03T05:00:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -237,7 +237,7 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Generate one Helsinki destination-level Viator partner link and verify it manually before adding any public offer.",
       "candidateTrackedUrl": "https://www.viator.com/Helsinki/d803-ttd?pid=P00322254&mcid=42383&medium=link",
-      "candidateTrackedUrlPreparedAt": "2026-10-03T05:30:00Z",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T05:00:00Z",
       "candidateTrackedUrlEvidence": "Public Viator destination URL independently confirmed; ERN's existing direct-partner pid/mcid/medium pattern applied. Still requires owner open/redirect verification before becoming a verified offer.",
       "ownerVerificationRequired": true
     },
@@ -267,7 +267,7 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Generate and manually verify one destination-level Lucerne Viator partner link before public offer activation.",
       "candidateTrackedUrl": "https://www.viator.com/Lucerne/d576-ttd?pid=P00322254&mcid=42383&medium=link",
-      "candidateTrackedUrlPreparedAt": "2026-10-03T05:30:00Z",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T05:00:00Z",
       "candidateTrackedUrlEvidence": "Public Viator destination URL independently confirmed; ERN's existing direct-partner pid/mcid/medium pattern applied. Still requires owner open/redirect verification before becoming a verified offer.",
       "ownerVerificationRequired": true
     },
@@ -297,7 +297,7 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Generate and manually verify one Cancún Viator destination link before any public placement.",
       "candidateTrackedUrl": "https://www.viator.com/Cancun/d631-ttd?pid=P00322254&mcid=42383&medium=link",
-      "candidateTrackedUrlPreparedAt": "2026-10-03T05:30:00Z",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T05:00:00Z",
       "candidateTrackedUrlEvidence": "Public Viator destination URL independently confirmed; ERN's existing direct-partner pid/mcid/medium pattern applied. Still requires owner open/redirect verification before becoming a verified offer.",
       "ownerVerificationRequired": true
     },
@@ -397,7 +397,7 @@
       "publicInventoryEvidence": "Current Viator inventory includes Zermatt experiences such as guided Five Lakes/Matterhorn hiking products.",
       "nextAction": "Generate one Zermatt destination-level Viator partner link and manually verify it before public activation.",
       "candidateTrackedUrl": "https://www.viator.com/Zermatt/d5014-ttd?pid=P00322254&mcid=42383&medium=link",
-      "candidateTrackedUrlPreparedAt": "2026-10-03T05:30:00Z",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T05:00:00Z",
       "candidateTrackedUrlEvidence": "Public Viator destination URL independently confirmed; ERN's existing direct-partner pid/mcid/medium pattern applied. Still requires owner open/redirect verification before becoming a verified offer.",
       "ownerVerificationRequired": true
     },
@@ -562,7 +562,7 @@
       "reason": "The SANParks Kruger webcam family can support one park-level trip-planning bridge once at least one new camera is promoted; use one shared commercial action rather than one affiliate link per camp.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "generate one Kruger destination-level Viator partner link and manually verify it; reuse it across verified Kruger places without duplicate commercial density.",
-      "sourceGateResolvedAt": "2026-10-03T05:10:00Z",
+      "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
       "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
     {
@@ -627,7 +627,7 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/co1011-mauritius/1-things-to-do/",
       "publicInventoryEvidence": "Current Klook Mauritius inventory includes island tours, snorkeling/catamaran products, Chamarel/7 Coloured Earth, whale watching, kayaking and other visitor activities.",
       "nextAction": "generate one Mauritius destination-level Klook tracked link in Travelpayouts and manually verify it before public activation.",
-      "sourceGateResolvedAt": "2026-10-03T05:10:00Z",
+      "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
       "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
     {
@@ -723,7 +723,7 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Almaty/Almaty-city-tour-with-Medeo-and-Shymbulak/d32977-130849P7",
       "publicInventoryEvidence": "Current Viator inventory explicitly includes Shymbulak mountain-resort itineraries and cable-car visits.",
       "nextAction": "generate one Almaty/Shymbulak Viator partner link and manually verify it.",
-      "sourceGateResolvedAt": "2026-10-03T05:10:00Z",
+      "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
       "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
     {
@@ -753,7 +753,7 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-PH/tours/Bishkek/One-Day-Ala-Archa-National-Park-Bishkek-City-Tour/d50202-240299P2",
       "publicInventoryEvidence": "Viator currently lists full-day Bishkek + Ala-Archa National Park tours with hiking and city sightseeing.",
       "nextAction": "generate one Bishkek/Ala-Archa Viator tracked link and verify it before public activation.",
-      "sourceGateResolvedAt": "2026-10-03T05:10:00Z",
+      "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
       "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
     {
@@ -801,7 +801,7 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/activity/156338-9d-kazakhstan-kyrgyzstan-tour/",
       "publicInventoryEvidence": "Current Klook Kyrgyzstan itinerary includes Ala-Archa National Park.",
       "nextAction": "After Ala-Archa camera verification, search the ERN Klook account for a cleaner Ala-Archa/Bishkek product before any public activation.",
-      "sourceGateResolvedAt": "2026-10-03T05:10:00Z",
+      "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
       "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
     {
@@ -834,7 +834,7 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/activity/160888-almaty-private-city-tour-with-qazaq-adventure/",
       "publicInventoryEvidence": "Current Klook Almaty inventory includes a Green Bazaar & Shymbulak half-day private tour.",
       "nextAction": "After Shymbulak camera verification, search ERN's Klook account for the cleanest Shymbulak/Almaty tracked destination link.",
-      "sourceGateResolvedAt": "2026-10-03T05:10:00Z",
+      "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
       "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
     {
@@ -1438,7 +1438,7 @@
       "publicInventoryEvidence": "Current Viator Rio inventory includes 1,000+ tours and multiple headline sightseeing products covering Christ the Redeemer, Sugarloaf and Copacabana.",
       "nextAction": "Generate one Rio destination-level Viator partner link and verify it manually before public activation.",
       "candidateTrackedUrl": "https://www.viator.com/Rio-de-Janeiro/d712-ttd?pid=P00322254&mcid=42383&medium=link",
-      "candidateTrackedUrlPreparedAt": "2026-10-03T05:30:00Z",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T05:00:00Z",
       "candidateTrackedUrlEvidence": "Public Viator destination URL independently confirmed; ERN's existing direct-partner pid/mcid/medium pattern applied. Still requires owner open/redirect verification before becoming a verified offer.",
       "ownerVerificationRequired": true
     },
