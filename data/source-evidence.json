@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T15:55:00Z",
+  "generatedAt": "2026-10-03T16:15:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1674,6 +1674,21 @@
       "rightsBasis": "Hotel-published live webcam; ERN remains link-only.",
       "story": "24-hour live webcam overlooking Santa Maria Bay on Sal Island.",
       "coordinateSourceUrl": "https://odjodagua.cv/webcam/"
+    },
+    "krakow-main-square-current": {
+      "freshnessEvidence": "City of Kraków official online-camera page for Rynek Główny was updated March 2026 and remains listed in the city's active Kamery online collection.",
+      "rightsBasis": "Official City of Kraków camera page; ERN links externally and does not infer image reuse, embed or restream permission.",
+      "story": "Current city-camera view of Kraków Main Market Square."
+    },
+    "krakow-wawel-vistula-current": {
+      "freshnessEvidence": "City of Kraków official Wawel/Vistula camera page remains in the active Kamery online collection and was updated March 2026.",
+      "rightsBasis": "Official City of Kraków camera page; ERN links externally and does not infer image reuse, embed or restream permission.",
+      "story": "Current city-camera view across Wawel and the Vistula River bend."
+    },
+    "krakow-zakrzowek-current": {
+      "freshnessEvidence": "City of Kraków official Zakrzówek bathing-area camera page remains in the active Kamery online collection and was updated March 2026.",
+      "rightsBasis": "Official City of Kraków camera page; ERN links externally and does not infer image reuse, embed or restream permission.",
+      "story": "Current city-camera view over Zakrzówek."
     }
   },
   "prague-petrin-tower": {
