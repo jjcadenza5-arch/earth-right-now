@@ -180,3 +180,36 @@ Business lane:
 - Added St. Maarten/Viator exact-link research using the existing healthy Little Bay source and future reuse for any verified island cameras.
 - Boulders Beach/Viator remains queued for a tightly scoped exact tracked link.
 - Existing-partner-first remains the operating rule.
+
+
+## Quasi-live searchable expansion milestone — 106
+
+Owner policy now explicitly permits trustworthy quasi-live material for Search/Explore when continuous live video is unavailable. Accepted material includes official frequently refreshed webcam stills, current monitoring images and recent provider-published images with reliable timestamps.
+
+Production-searchable growth:
+- Previous healthy/searchable baseline: 91 distinct places
+- First quasi-live batch: +9 places
+- Second quasi-live batch: +6 places
+- New healthy/searchable baseline: **106 distinct places**
+
+The 15 quasi-live additions are held out of Watch Earth by default through `featuredHold` + `watchHold`. They remain clearly labeled `LIVE_IMAGE` / current monitoring rather than live video.
+
+New searchable places include:
+- Casey, Davis, Mawson and Macquarie Island
+- Poás, Turrialba, Irazú and Rincón de la Vieja
+- Cotopaxi and El Reventador
+- San Cristóbal, Telica, Momotombo, Masaya and Concepción/Ometepe
+
+Business side:
+- Poás, Rincón de la Vieja, Cotopaxi and Nicaragua volcano-family opportunities can now move from source-gated research to exact tracked-link research.
+- Irazú and Turrialba Viator opportunities were added as account-search/exact-link candidates.
+- No automatic placement, invented URL, paid ranking or public activation occurred.
+
+Candidate-state reconciliation:
+```json
+{
+  "PROMOTED_TO_SOURCE_REGISTRY": 4,
+  "HUMAN_PLAYBACK_REQUIRED": 93,
+  "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 15
+}
+```
