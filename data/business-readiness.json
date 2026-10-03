@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T14:40:00Z",
+  "generatedAt": "2026-10-03T09:45:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -18,7 +18,9 @@
     "automaticLinkRewritingAllowed": false,
     "paidRankingAllowed": false,
     "viatorPayoutMethodConfigured": true,
-    "viatorPayoutReadiness": "OWNER_CONFIRMED_CONFIGURED_2026-10-02"
+    "viatorPayoutReadiness": "OWNER_CONFIRMED_CONFIGURED_2026-10-02",
+    "accommodationGapStatus": "TRIP_COM_STATUS_CHECK_NOW_WARRANTED",
+    "tripComAccountStatus": "OWNER_MY_PROGRAMS_CHECK_REQUIRED"
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -33,9 +35,17 @@
   ],
   "humanOnlyRemaining": [
     {
-      "id": "travelpayouts-next-exact-links",
-      "action": "Generate exact destination-level tracked links only when ERN presents a vetted small batch",
-      "priority": "AS_NEEDED",
+      "id": "trip-com-my-programs-status",
+      "action": "Check Trip.com status in Travelpayouts → Earthrightnow Project → Programs / My Programs; report Available, Under review, or Unavailable.",
+      "priority": "P1",
+      "blocksPublicERN": false,
+      "blocksCurrentOffers": false,
+      "blocksOnlyStayExpansion": true
+    },
+    {
+      "id": "next-exact-link-batch",
+      "action": "When convenient, generate the bundled exact-link batch from data/owner-commercial-action-packet.json rather than handling destinations one-by-one.",
+      "priority": "P2",
       "blocksPublicERN": false,
       "blocksCurrentOffers": false,
       "blocksOnlyNewPlacements": true
@@ -46,6 +56,9 @@
     "Commercial state never changes Watch Earth ranking",
     "No public offer without exact verified tracked link",
     "Affiliate disclosure remains explicit",
-    "Do not activate all available programs merely because they are available"
-  ]
+    "Do not activate all available programs merely because they are available",
+    "Do not open a direct Trip.com account unless Travelpayouts project status makes that strategically useful",
+    "Accommodation links remain downstream from Earth discovery and cannot affect ranking"
+  ],
+  "currentHealthySearchablePlaces": 200
 }
