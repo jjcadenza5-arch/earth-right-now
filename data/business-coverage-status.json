@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T02:42:00Z",
+  "generatedAt": "2026-10-03T03:08:00Z",
   "healthySearchablePlaces": 91,
   "verifiedOfferRecords": 25,
   "healthyPlacesWithVerifiedOffer": 19,
@@ -9,7 +9,7 @@
   "opportunityStates": {
     "VERIFIED_LINK_ADDED": 12,
     "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 14,
-    "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 9
+    "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 10
   },
   "activePartnerStrategy": [
     "viator",
