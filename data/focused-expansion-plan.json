@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T09:25:00Z",
+  "generatedAt": "2026-10-03T09:52:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 200,
+    "currentHealthyDistinctPlaceBaseline": 202,
     "targetRange": [
       150,
       200
     ],
-    "strategy": "Maintain and selectively improve the achieved 200-place healthy searchable baseline. Prefer geographic quality, freshness, and stronger live/current evidence over raw count growth. LIVE_IMAGE truth is the canonical quasi-live label; these sources remain Search/Explore-only.",
+    "strategy": "Maintain the achieved 200+ healthy searchable baseline. Prefer freshness, geographic quality and stronger current evidence over raw count growth; degrade stale sources honestly and replace them with verified live/quasi-live places.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -25,7 +25,7 @@
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
     "researchCandidateCount": 160,
-    "playbackGatedCandidateCount": 35,
+    "playbackGatedCandidateCount": 33,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan",
       "adjacentHighValueChecks": [
@@ -167,7 +167,16 @@
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
     },
     "currentOpportunityCount": 121,
-    "priorityRule": "Prefer exact destination/product fit inside existing active partners before broad generic destination links. Batch owner link generation rather than interrupting one destination at a time."
+    "priorityRule": "Prefer exact destination/product fit inside existing active partners before broad generic destination links. Batch owner link generation rather than interrupting one destination at a time.",
+    "tripComDecision": "CHECK_OWNER_TRAVELPAYOUTS_MY_PROGRAMS_STATUS_NOW",
+    "tripComReason": "Accommodation is the largest remaining commercial gap after reaching 200+ healthy searchable places.",
+    "istanbulDenpasarUnlocked": true,
+    "currentCommercialStates": {
+      "VERIFIED_LINK_ADDED": 16,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 98,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 7,
+      "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
+    }
   },
   "safeguards": {
     "automaticPlacement": false,
