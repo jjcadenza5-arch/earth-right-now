@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:20:00Z",
+  "generatedAt": "2026-10-03T12:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2146,6 +2146,34 @@
       "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Shetland-Islands/d33624-ttd",
       "nextAction": "After at least one Shetland camera is promoted, generate one Shetland/Lerwick destination-level Viator tracked link and reuse it across verified Shetland places."
+    },
+    {
+      "id": "viator-swakopmund",
+      "destination": "Swakopmund",
+      "placeIds": [
+        "swakopmund-namibia"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Swakopmund now has a healthy current-image ERN place and Viator has extensive Swakopmund desert, Sandwich Harbour, wildlife and city-tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Swakopmund/d5541-ttd",
+      "nextAction": "Generate one Swakopmund destination-level Viator tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-windhoek",
+      "destination": "Windhoek",
+      "placeIds": [
+        "windhoek-namibia"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Windhoek now has a healthy current-image ERN place and Viator has broad city, township, transfer and safari inventory from the capital.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Windhoek/d5574-ttd",
+      "nextAction": "Generate one Windhoek destination-level Viator tracked link and manually verify it before public activation."
     }
   ]
 }
