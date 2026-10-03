@@ -371,7 +371,11 @@
       "sourcePage": "https://www.dubrovnik.hr/web-kamere",
       "evidence": "Official City of Dubrovnik livestream page lists Kamera Pile among its web cameras.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetUrl": "https://www.dubrovnik.hr/web-kamere/pile",
+      "exactTargetType": "OFFICIAL_CITY_CAMERA_PAGE",
+      "researchEvidence": "Official City of Dubrovnik camera index links directly to the Pile camera page; the page contains an ipcamlive iframe.",
+      "humanCheckHint": "Open the exact official city camera page and confirm the video moves/updates normally."
     },
     {
       "id": "dubrovnik-gruz-city",
@@ -382,7 +386,11 @@
       "sourcePage": "https://www.dubrovnik.hr/web-kamere",
       "evidence": "Official City of Dubrovnik livestream page lists Kamera Gruž among its web cameras.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetUrl": "https://www.dubrovnik.hr/web-kamere/gruz",
+      "exactTargetType": "OFFICIAL_CITY_CAMERA_PAGE",
+      "researchEvidence": "Official City of Dubrovnik camera index links directly to the Gruž camera page; the page contains an ipcamlive iframe.",
+      "humanCheckHint": "Open the exact official city camera page and confirm the video moves/updates normally."
     },
     {
       "id": "malta-live-cams",
@@ -412,6 +420,7 @@
     "Vienna, Helsinki, Koli and Turku promoted to data/sources.json after owner live-playback confirmation on 2026-10-02. Prague remains research-only pending exact camera mapping.",
     "2026-10-03 research batch added Salzburg plus four official Madeira Tourism live-camera candidates; all remain research-only until human playback verification.",
     "2026-10-03 breadth research added official-source candidates for Innsbruck, Dubrovnik, Malta and Tallinn; all remain research-only until exact playback is human-confirmed.",
-    "2026-10-03 Prague research isolated six exact camera targets from the official Prague City Tourism page, including one Panomax endpoint and five direct YouTube live targets. This removes the earlier owner burden of hunting through the page; exact-target playback still stays fail-closed until spot-checked."
+    "2026-10-03 Prague research isolated six exact camera targets from the official Prague City Tourism page, including one Panomax endpoint and five direct YouTube live targets. This removes the earlier owner burden of hunting through the page; exact-target playback still stays fail-closed until spot-checked.",
+    "2026-10-03 Dubrovnik research isolated direct official City of Dubrovnik pages for Pile and Gruž. Each exposes its own live-camera page with an ipcamlive iframe, so the owner will not need to hunt through the camera index."
   ]
 }
