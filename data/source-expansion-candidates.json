@@ -3245,6 +3245,51 @@
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "verifiedAt": "2026-10-03T16:15:00Z",
       "verification": "Official City of Kraków online-camera page confirmed current; promoted conservatively as LIVE_IMAGE/Search-Explore with Watch hold."
+    },
+    {
+      "id": "jasna-chopok-slovakia",
+      "title": "Jasná / Chopok — Low Tatras",
+      "country": "Slovakia",
+      "region": "Low Tatras",
+      "provider": "Jasná / Tatry Mountain Resorts",
+      "sourcePage": "https://www.jasna.sk/en/resort/resort-info/webcameras",
+      "exactTargetUrl": "https://www.jasna.sk/en/resort/resort-info/webcameras",
+      "exactTargetType": "OFFICIAL_RESORT_LIVE_CAMERA_FAMILY",
+      "evidence": "Official Jasná resort page states visitors are watching internet webcam live streams from the resort and lists multiple Chopok/Jasná camera positions.",
+      "researchEvidence": "Official resort camera family includes Chopok east/west, Biela Púť, Luková, Konský Grúň, Krupová and other mountain positions. Treat these as one Jasná/Chopok destination for searchable-place counting.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Jasná webcams page and confirm at least one camera plays/updates normally. Do not count multiple camera angles as separate destinations."
+    },
+    {
+      "id": "bansko-ski-resort-bulgaria",
+      "title": "Bansko — Pirin Mountains",
+      "country": "Bulgaria",
+      "region": "Blagoevgrad Province",
+      "provider": "Bansko Ski",
+      "sourcePage": "https://www.banskoski.com/en/webcam/bansko",
+      "exactTargetUrl": "https://www.banskoski.com/en/webcam/bansko",
+      "exactTargetType": "OFFICIAL_RESORT_WEBCAM_FAMILY",
+      "evidence": "Official Bansko Ski webcam page lists current resort camera positions including Bansko, Chalin Valog, Banderishka Polyana, Shiligarnik, Plato and Todorka.",
+      "researchEvidence": "Official resort-operated webcam network. Count as one Bansko destination unless a future camera represents a genuinely separate place.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Bansko webcam page and confirm one or more images visibly update/currently reflect conditions."
+    },
+    {
+      "id": "borovets-ski-resort-bulgaria",
+      "title": "Borovets — Rila Mountains",
+      "country": "Bulgaria",
+      "region": "Sofia Province",
+      "provider": "Borovets / Borosport",
+      "sourcePage": "https://www.borovets-bg.com/en/webcams",
+      "exactTargetUrl": "https://www.borovets-bg.com/en/webcams",
+      "exactTargetType": "OFFICIAL_RESORT_WEBCAM_FAMILY",
+      "evidence": "Official Borovets resort webcam page lists resort cameras for Borovets Ski Center, Sitnyakovo, Yastrebets, Martinovi Baraki and Markudjik.",
+      "researchEvidence": "Official resort-operated webcam family. Group camera angles under one Borovets place for ERN discovery.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Borovets webcam page and confirm the resort images are current/updating."
     }
   ],
   "notes": [
@@ -3310,7 +3355,8 @@
     "2026-10-03 16:10Z quality batch promoted eight official Taiwan current-image places and two New Zealand regional-council current views. All are LIVE_IMAGE/Search-Explore only with featuredHold/watchHold; no Watch Earth live-video claim.",
     "2026-10-03 15:55Z promoted Palm Beach and Eagle Beach from the official Aruba Tourism Authority live-webcam family as conservative LIVE_IMAGE Search/Explore sources; Watch Earth remains held.",
     "2026-10-03 quality-first expansion added three distinct official City of Kraków current-camera places. They are searchable LIVE_IMAGE/quasi-live sources with Watch Earth held separately.",
-    "2026-10-03 quality-first batch promoted Longyearbyen/UNIS, Wairoa River and Foxton Beach as searchable quasi-live LIVE_IMAGE sources; Watch Earth truth remains stricter."
+    "2026-10-03 quality-first batch promoted Longyearbyen/UNIS, Wairoa River and Foxton Beach as searchable quasi-live LIVE_IMAGE sources; Watch Earth truth remains stricter.",
+    "2026-10-03 post-200 geography batch added Slovakia (Jasná/Chopok) and Bulgaria (Bansko, Borovets) from official resort webcam families. These are grouped by real destination and remain playback-gated; no fake place inflation."
   ],
   "researchGaps": [
     {
