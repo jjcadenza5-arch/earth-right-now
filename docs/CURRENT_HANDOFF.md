@@ -60,3 +60,14 @@ Focused expansion authorization — 2026-10-03:
 - New York legacy affiliate place IDs were repaired to the canonical new-york-harbor place so existing verified Klook/Tiqets links can become useful again without new owner setup.
 - New commercial opportunities queued without public activation: Vienna/Tiqets, Helsinki/Viator, Turku/Viator.
 - No paid ranking, automatic placement, automatic link rewriting, or unverified affiliate link publication is permitted.
+
+
+Large focused expansion batch — 2026-10-03:
+- Visitor lane remains at 91 healthy searchable places while the private research queue expands toward 150–200 genuinely useful destinations.
+- Prague exact camera targets are isolated; Salzburg, Innsbruck, Dubrovnik, Malta and Tallinn are reduced to one-click owner verification paths.
+- Official Innsbruck Tourism family expanded in research with distinct Patscherkofel, Mieminger Plateau, Telfs, Kühtai, Lüsens, Nordkette, Stadtturm and Swarovski Kristallwelten/Wattens candidates. None are public/current until human playback verification.
+- Business opportunity queue expanded with Zermatt/Viator, San Diego Zoo/Viator and Whistler/Viator research in addition to Vienna, Helsinki, Lucerne, Tbilisi, Cancún, Yellowstone, Georgia Aquarium and San Diego Zoo/Tiqets.
+- Prague/Tiqets and Salzburg/Tiqets are explicitly gated behind successful source promotion first.
+- Accommodation partner research remains fail-closed for Hotels.com and Trip.com until ERN-owner Travelpayouts availability is checked.
+- A consolidated machine-readable operating plan now lives at data/focused-expansion-plan.json.
+- All existing public gates and commercial-neutral ranking safeguards remain unchanged.
