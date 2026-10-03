@@ -294,7 +294,11 @@
       "sourcePage": "https://www.salzburg.info/en/travel-info/webcam",
       "evidence": "Official Salzburg tourism webcam page describes a view over Mirabell Gardens toward Salzburg Cathedral and Hohensalzburg Fortress.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetUrl": "https://www.salzburg.info/en/travel-info/webcam",
+      "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "researchEvidence": "Official Salzburg Tourism webcam page describes the live view over Mirabell Gardens toward Salzburg Cathedral and Hohensalzburg Fortress.",
+      "humanCheckHint": "Open the official Salzburg webcam page and confirm the Mirabell/Old Town image or video is visibly current."
     },
     {
       "id": "funchal-madeira-live",
@@ -349,7 +353,10 @@
       "sourcePage": "https://www.innsbruck.info/en/destinations/webcams.html",
       "evidence": "Official Innsbruck tourism page states its 360-degree panorama provides real-time views of Innsbruck and the surrounding area.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
+      "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
+      "humanCheckHint": "Open the official Innsbruck webcam page and use the main 360° live panorama."
     },
     {
       "id": "innsbruck-markthalle",
@@ -360,7 +367,10 @@
       "sourcePage": "https://www.innsbruck.info/en/destinations/webcams.html",
       "evidence": "Official Innsbruck tourism page highlights a central Markthalle webcam overlooking the colourful houses along the River Inn and Nordkette.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
+      "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
+      "humanCheckHint": "On the official Innsbruck webcam page, choose the Markthalle / central Innsbruck camera overlooking the River Inn."
     },
     {
       "id": "dubrovnik-pile-city",
@@ -401,7 +411,11 @@
       "sourcePage": "https://www.visitmalta.com/en/info/live-cams-in-malta",
       "evidence": "VisitMalta's official tourism site exposes a Live Malta Cams section for checking destinations before travel.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetUrl": "https://www2.visitmalta.com/en/info/live-cams-in-malta/",
+      "exactTargetType": "OFFICIAL_TOURISM_LIVE_CAM_PAGE",
+      "researchEvidence": "VisitMalta's official traveller-information navigation links directly to a Live Malta Cams page and describes the live camera as a way to inspect destinations before travel.",
+      "humanCheckHint": "Open the official Live Malta Cams page and confirm at least one destination camera visibly updates before ERN promotes any specific Malta place."
     },
     {
       "id": "tallinn-tv-tower-panorama",
@@ -421,6 +435,7 @@
     "2026-10-03 research batch added Salzburg plus four official Madeira Tourism live-camera candidates; all remain research-only until human playback verification.",
     "2026-10-03 breadth research added official-source candidates for Innsbruck, Dubrovnik, Malta and Tallinn; all remain research-only until exact playback is human-confirmed.",
     "2026-10-03 Prague research isolated six exact camera targets from the official Prague City Tourism page, including one Panomax endpoint and five direct YouTube live targets. This removes the earlier owner burden of hunting through the page; exact-target playback still stays fail-closed until spot-checked.",
-    "2026-10-03 Dubrovnik research isolated direct official City of Dubrovnik pages for Pile and Gruž. Each exposes its own live-camera page with an ipcamlive iframe, so the owner will not need to hunt through the camera index."
+    "2026-10-03 Dubrovnik research isolated direct official City of Dubrovnik pages for Pile and Gruž. Each exposes its own live-camera page with an ipcamlive iframe, so the owner will not need to hunt through the camera index.",
+    "2026-10-03 reduced owner verification friction for Salzburg, Innsbruck and Malta by recording direct official tourism camera pages and explicit check instructions."
   ]
 }
