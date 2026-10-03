@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T09:45:00Z",
+  "generatedAt": "2026-10-03T10:32:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -20,7 +20,35 @@
     "viatorPayoutMethodConfigured": true,
     "viatorPayoutReadiness": "OWNER_CONFIRMED_CONFIGURED_2026-10-02",
     "accommodationGapStatus": "TRIP_COM_STATUS_CHECK_NOW_WARRANTED",
-    "tripComAccountStatus": "OWNER_MY_PROGRAMS_CHECK_REQUIRED"
+    "tripComAccountStatus": "OWNER_MY_PROGRAMS_CHECK_REQUIRED",
+    "ownerVisibleLinkGenerationPrograms": [
+      "klook",
+      "tiqets",
+      "welcome-pickups",
+      "yesim",
+      "kiwitaxi",
+      "localrent",
+      "kiwi-com",
+      "gigsky",
+      "airalo",
+      "gettransfer",
+      "drimsim",
+      "getrentacar",
+      "airhelp",
+      "go-city",
+      "ekta",
+      "economybookings",
+      "bikesbooking",
+      "qeeq",
+      "wegotrip",
+      "autoeurope",
+      "radical-storage",
+      "aviasales",
+      "intui-travel",
+      "compensair",
+      "saily",
+      "kkday"
+    ]
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -31,7 +59,8 @@
     "Commercial placement release preflight active",
     "Non-public exact-link opportunity queue active",
     "Travelpayouts payout method configured and email-confirmed by owner on 2026-10-02",
-    "Viator payout method configured by owner on 2026-10-02"
+    "Viator payout method configured by owner on 2026-10-02",
+    "Owner-account screenshot audit confirmed many additional Travelpayouts programs now expose Generate links controls."
   ],
   "humanOnlyRemaining": [
     {
