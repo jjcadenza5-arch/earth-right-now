@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T16:35:00Z",
+  "generatedAt": "2026-10-03T16:45:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -153,7 +153,54 @@
       "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 143,
       "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
       "HUMAN_PLAYBACK_REQUIRED": 9
-    }
+    },
+    "ownerAccountLinkGenerationAvailablePrograms": [
+      "yesim",
+      "kiwitaxi",
+      "localrent",
+      "kiwi-com",
+      "gigsky",
+      "airalo",
+      "gettransfer",
+      "drimsim",
+      "getrentacar",
+      "airhelp",
+      "go-city",
+      "ekta",
+      "economybookings",
+      "bikesbooking",
+      "qeeq",
+      "wegotrip",
+      "autoeurope",
+      "radical-storage",
+      "aviasales",
+      "intui-travel",
+      "compensair",
+      "saily",
+      "kkday"
+    ],
+    "trafficGatedPrograms": [
+      "booking-com",
+      "agoda",
+      "hotels-com",
+      "trip-com",
+      "expedia",
+      "getyourguide",
+      "tripadvisor-experiences",
+      "discovercars",
+      "traveloka",
+      "omio",
+      "12go",
+      "hostelworld",
+      "vrbo",
+      "ticketmaster",
+      "vio-com",
+      "rakuten-travel-intl"
+    ],
+    "trafficUnlockStrategy": "Use link-generation-available programs selectively now; grow traffic and visitor utility; recheck gated programs only after material traffic or account-status change.",
+    "accommodationGap": "Still unresolved: major accommodation partners visible in Travelpayouts remain traffic-gated/not active.",
+    "tripComStatus": "VISIBLE_IN_OWNER_TRAVELPAYOUTS_CATALOG_BUT_NOT_UNLOCKED",
+    "tripComNextAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -192,7 +239,10 @@
     "Official City of Kraków current-camera family added Main Market Square, Wawel/Vistula and Zakrzówek as searchable quasi-live places.",
     "UNIS Longyearbyen/Adventfjorden plus Wairoa River and Foxton Beach added under conservative LIVE_IMAGE/Search-Explore semantics.",
     "Kraków city-level Tiqets research path and Longyearbyen/Viator research path added without public activation.",
-    "Runtime sources.json re-minified after the 308-place quality batch; full provenance remains in data/source-evidence.json."
+    "Runtime sources.json re-minified after the 308-place quality batch; full provenance remains in data/source-evidence.json.",
+    "Owner Travelpayouts catalog mapped into use-now/selective/traffic-gated tiers",
+    "Post-200 affiliate access strategy written to data/affiliate-access-strategy.json",
+    "Go City identified as currently link-generation available for selective city-pass expansion"
   ],
   "humanOnlyRemaining": [
     {
@@ -231,6 +281,14 @@
       "id": "travelpayouts-unlock-recheck",
       "action": "Recheck Trip.com and other locked Travelpayouts programs only after a material traffic/account-status change or an explicit platform notification",
       "priority": "LATER_TRIGGERED",
+      "blocksPublicERN": false,
+      "blocksCurrentOffers": false,
+      "blocksOnlyNewPlacements": true
+    },
+    {
+      "id": "traffic-gated-program-recheck",
+      "action": "Recheck Trip.com, Hotels.com, Expedia, Agoda and other gated programs only after meaningful ERN traffic growth or an obvious Travelpayouts status change",
+      "priority": "LATER",
       "blocksPublicERN": false,
       "blocksCurrentOffers": false,
       "blocksOnlyNewPlacements": true
