@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T05:30:00Z",
+  "generatedAt": "2026-10-03T08:40:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1569,18 +1569,21 @@
     },
     {
       "id": "viator-misti-arequipa",
-      "destination": "Arequipa / El Misti",
+      "destination": "Arequipa / Colca / Volcano Region",
       "placeIds": [
-        "peru-misti-volcano"
+        "peru-misti-volcano",
+        "peru-sabancaya-volcano",
+        "peru-coropuna-volcano",
+        "peru-chachani-volcano"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has official real-time CENVUL imagery for El Misti and Viator currently sells multiple guided Misti climbing/trekking products from Arequipa.",
+      "reason": "ERN now has multiple healthy current/quasi-live volcano places around the Arequipa–Colca region. Viator currently has strong Arequipa and Colca Canyon inventory, so one regional link should serve these related places without duplicate commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Arequipa-attractions/El-Misti-Volcano/d5020-a7596",
-      "publicInventoryEvidence": "Current Viator El Misti inventory lists multiple trekking/climbing experiences from Arequipa.",
-      "nextAction": "Generate and manually verify an Arequipa/El Misti Viator tracked link before activation."
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Arequipa/d5020-ttd",
+      "publicInventoryEvidence": "Current Viator Arequipa inventory includes Colca Canyon day trips and high-altitude regional sightseeing; a single regional planning link is preferable to one affiliate placement per volcano.",
+      "nextAction": "Generate one Arequipa/Colca destination-level Viator tracked link and reuse it across the mapped regional volcano places only if the destination page is clean and useful."
     },
     {
       "id": "viator-popocatepetl",
@@ -1900,6 +1903,66 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/destination/c58093-chishang/",
       "publicInventoryEvidence": "Klook currently lists Chishang/Taitung experiences including Brown Boulevard, Dapo Pond and guided local tours.",
       "nextAction": "Generate one Chishang/Taitung Klook tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "klook-kenting-national-forest",
+      "destination": "Kenting National Forest / Pingtung",
+      "placeIds": [
+        "taiwan-kenting-forest"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Kenting National Forest searchable place and Klook currently sells direct Kenting National Forest Recreation Area admission, creating an unusually precise See → Decide → Go fit.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/55898-kenting-forest-pass-taiwan/",
+      "publicInventoryEvidence": "Klook currently offers direct admission for Kenting National Forest Recreation Area, including standard admission and joint-ticket options.",
+      "nextAction": "Generate one exact Kenting National Forest Klook tracked link in the ERN Travelpayouts project and manually verify it before public activation."
+    },
+    {
+      "id": "klook-green-island-taitung",
+      "destination": "Green Island / Taitung",
+      "placeIds": [
+        "taiwan-green-island-chaikou"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Green Island searchable place and Klook currently has deep Green Island activity inventory including diving, snorkeling and multi-day packages.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/3786-discover-diving-green-island-taitung/",
+      "publicInventoryEvidence": "Klook currently offers Green Island diving, snorkeling and multi-day travel products from Taitung.",
+      "nextAction": "Generate one destination-level Green Island Klook tracked link rather than multiple product-level links; manually verify before public activation."
+    },
+    {
+      "id": "viator-st-johns-newfoundland",
+      "destination": "St. John's, Newfoundland",
+      "placeIds": [
+        "st-johns-harbour"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy St. John's Harbour searchable place and Viator currently lists a broad St. John's tour catalog including city, Cape Spear, Quidi Vidi, cruises and wildlife trips.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/St-Johns/d28792-ttd",
+      "publicInventoryEvidence": "Viator currently exposes a St. John's destination page with dozens of 2026 tours and excursions.",
+      "nextAction": "Generate one St. John's destination-level Viator tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-maui-kihei",
+      "destination": "Maui / Kihei",
+      "placeIds": [
+        "maui-hale-pau-hana"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Maui/Kihei beach place and Viator currently has substantial Kihei and Maui inventory including Road to Hana and Haleakalā experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Kihei/d51007-ttd",
+      "publicInventoryEvidence": "Viator currently lists dozens of Kihei/Maui tours and excursions for 2026.",
+      "nextAction": "Generate one Maui or Kihei destination-level Viator tracked link and manually verify it before public activation."
     }
   ]
 }
