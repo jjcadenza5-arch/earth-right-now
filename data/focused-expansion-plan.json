@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T09:05:00Z",
+  "generatedAt": "2026-10-03T09:18:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 200,
@@ -8,7 +8,7 @@
       150,
       200
     ],
-    "strategy": "Maintain and selectively improve the achieved 200-place healthy searchable baseline. Prefer geographic quality, freshness, and stronger live/current evidence over raw count growth. LIVE_IMAGE sources remain Search/Explore-only and explicitly quasi-live.",
+    "strategy": "Maintain and selectively improve the achieved 200-place healthy searchable baseline. Prefer geographic quality, freshness, and stronger live/current evidence over raw count growth. LIVE_IMAGE truth is the canonical quasi-live label; these sources remain Search/Explore-only.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -72,7 +72,7 @@
       ],
       "watchEarthEligible": false,
       "labelingRequired": true,
-      "rule": "Quasi-live expands Search/Explore only; it never masquerades as continuous live video."
+      "rule": "Quasi-live/current-image sources are identified by LIVE_IMAGE truth and UI copy; redundant per-record category tags are intentionally avoided to preserve the production size budget."
     },
     "quasiLivePromotedCount": 65,
     "currentHealthyLiveImageCount": 125,
