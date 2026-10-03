@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:10:00Z",
+  "generatedAt": "2026-10-03T04:20:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 91,
@@ -131,7 +131,7 @@
       "trip-com"
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
-    "verifiedOpportunityCount": 12,
+    "verifiedOpportunityCount": 16,
     "exactLinkQueueCount": 27,
     "sourceGatedQueueCount": 37,
     "sourceGapBlockedCount": 1,
