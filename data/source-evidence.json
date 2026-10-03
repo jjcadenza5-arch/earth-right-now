@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-10-03T12:30:00Z",
-  "note": "Verbose provenance, coordinate notes, and selected long visitor stories are retained outside the runtime source catalog to preserve ERN's strict production-size budget. Runtime records keep concise visitor-facing story and required truth/freshness markers.",
+  "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog can remain within ERN's strict production-size budget. Runtime records retain concise non-empty audit markers.",
   "sources": {
     "auckland-viaduct-harbour": {
       "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Auckland Viaduct YouTube channel-live player delivers current live content after the visitor presses Play. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f). Independent provider-page recheck on 2026-09-29 confirmed the official Viaduct Harbour page still publishes an 'Auckland Viaduct View — live' stream. Source currentness refreshed independently of human playback proof. Deployed-origin human review on 2026-09-30 confirmed the exact current ERN embed target visibly playing/current (review batch 0b51cbc04e9598b8).",
@@ -1210,7 +1210,7 @@
       "story": "Official Visit Andorra live-webcam access for checking real-time mountain conditions across Grandvalira."
     },
     "reunion-roches-noires-current": {
-      "rightsBasis": "Official La Réunion Tourism webcam page; ERN links externally and does not republish imagery.",
+      "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
       "freshnessEvidence": "La Réunion Tourism states the Roches Noires panoramic photo lets visitors view current sunshine, bathing conditions and safety flags.",
       "coordinateNote": "Representative Roches Noires beach reference; not claimed as exact camera position.",
       "story": "Official La Réunion Tourism current panorama from Roches Noires toward Saint-Gilles harbour and beach."
@@ -1222,7 +1222,7 @@
       "story": "Official Visit Andorra live webcams for checking real-time conditions at Naturland in the Andorran mountains."
     },
     "reunion-boucan-canot-current": {
-      "rightsBasis": "Official La Réunion Tourism webcam page; ERN links externally and does not republish imagery.",
+      "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
       "freshnessEvidence": "La Réunion Tourism describes the Boucan Canot HD panorama as live/almost-live and provides a webcam/weather-station interface.",
       "coordinateNote": "Representative Boucan Canot beach reference; not claimed as exact camera position."
     },
@@ -1233,33 +1233,33 @@
       "story": "Official tourism/scientific current imagery of Piton de la Fournaise, refreshed on a regular monitoring cadence."
     },
     "azores-sao-miguel-current": {
-      "rightsBasis": "Official Visit Azores webcam network; ERN links externally and does not republish imagery.",
+      "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
       "freshnessEvidence": "Visit Azores maintains an official São Miguel webcam page with multiple current coastal webcam spots.",
       "coordinateNote": "Representative São Miguel island reference; not claimed as exact camera position.",
       "story": "Official Visit Azores webcam collection for São Miguel coastal spots including Mosteiros, São Roque, Milícias and Água d’Alto."
     },
     "reunion-trou-deau-current": {
-      "rightsBasis": "Official La Réunion Tourism webcam page; ERN links externally and does not republish imagery.",
+      "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
       "freshnessEvidence": "La Réunion Tourism publishes the Trou d’Eau webcam and HD panorama with current weather context.",
       "coordinateNote": "Representative Trou d’Eau beach reference; not claimed as exact camera position."
     },
     "azores-terceira-current": {
-      "rightsBasis": "Official Visit Azores webcam page; ERN links externally and does not republish imagery.",
+      "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
       "freshnessEvidence": "Visit Azores currently lists Praia da Vitória as the active webcam spot for Terceira.",
       "coordinateNote": "Representative Praia da Vitória reference; not claimed as exact camera position."
     },
     "azores-santa-maria-current": {
-      "rightsBasis": "Official Visit Azores webcam page; ERN links externally and does not republish imagery.",
+      "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
       "freshnessEvidence": "Visit Azores currently lists Formosa as the active webcam spot for Santa Maria.",
       "coordinateNote": "Representative Santa Maria island reference; not claimed as exact camera position."
     },
     "vagar-airport-faroe": {
-      "freshnessEvidence": "Official Vága Airport webcam page states pictures are updated every 30 seconds. Rechecked 2026-10-03.",
-      "rightsBasis": "Official airport current-image page; ERN uses a LINK_ONLY handoff and does not infer reuse/embed rights.",
+      "freshnessEvidence": "Vága Airport states its webcam pictures are updated every 30 seconds; verified from the official airport page on 2026-10-03.",
+      "rightsBasis": "Official airport webcam/current-image page; ERN links externally and does not infer redistribution rights.",
       "coordinateSourceUrl": "https://www.fae.fo/en/about-vagar-airport/information/webcam"
     },
     "nuuk-arcticomm": {
-      "freshnessEvidence": "ArctiComm's current webcam page states the Nuuk image is updated every five minutes. Rechecked 2026-10-03.",
+      "freshnessEvidence": "ArctiComm states its Nuuk webcam is updated every five minutes; verified from the provider page on 2026-10-03.",
       "rightsBasis": "Local Greenland communications provider current-image page; ERN uses a LINK_ONLY handoff and does not infer reuse/embed rights.",
       "coordinateSourceUrl": "https://arcticomm.gl/arcticomm-webcam/"
     },
@@ -1294,79 +1294,173 @@
       "coordinateSourceUrl": "https://skpnamibia.de/webcams/"
     },
     "prague-petrin-tower": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Prague City Tourism currently publishes this camera target."
     },
     "prague-old-town-hall": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Prague City Tourism currently publishes this camera target."
     },
     "prague-old-town-bridge-tower": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Prague City Tourism currently publishes this camera target."
     },
     "prague-powder-tower": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Prague City Tourism currently publishes this camera target."
     },
     "prague-st-nicholas-bell-tower": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Prague City Tourism currently publishes this camera target."
     },
     "prague-lesser-town-bridge-tower": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Prague City Tourism currently publishes this camera target."
     },
     "levi-ski-resort": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Visit Finland currently lists this Levi live view."
     },
     "crans-montana-la-nationale": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Switzerland Tourism currently publishes this HD Live panorama."
     },
     "schynige-platte": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Switzerland Tourism currently publishes this HD Live panorama."
     },
     "randa-valais": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Switzerland Tourism currently publishes this HD Live panorama."
     },
     "celerina-engadin": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Switzerland Tourism currently publishes this HD Live panorama."
     },
     "murren-edelweiss": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Switzerland Tourism currently publishes this HD Live panorama."
     },
     "engelberg-fuerenalp": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Switzerland Tourism currently publishes this HD Live panorama."
     },
     "wengen-bellevue": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Switzerland Tourism currently publishes this HD Live panorama."
     },
     "seoul-gwanghwamun-plaza": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Seoul Metropolitan Government lists this location in 24-hour live coverage."
     },
     "seoul-cheonggye-plaza": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Seoul Metropolitan Government lists this location in 24-hour live coverage."
     },
     "karakol-ski-base": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Provider currently publishes this short-delay camera view."
     },
     "osh-sulaiman-too": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Provider currently publishes this short-delay camera view."
     },
     "naryn-central-square": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Provider currently publishes this short-delay camera view."
     },
     "too-ashu-north": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Provider currently publishes this short-delay camera view."
     },
     "suusamyr-valley": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Provider currently publishes this short-delay camera view."
     },
     "balykchy-north-entry": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Provider currently publishes this short-delay camera view."
     },
     "bishkek-ala-too-square": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Provider currently publishes this short-delay camera view."
     },
     "mauritius-saint-felix": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Mauritius tourism sources list Saint-Félix in the current live-camera family."
     },
     "wanaka-lake-hawea-view": {
-      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position."
+      "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
+      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
+      "freshnessEvidence": "Lake Wānaka Tourism currently publishes this regional webcam view."
+    },
+    "madeira-ribeira-brava-current-image": {
+      "rightsBasis": "Official tourism webcam source; ERN links externally; no reuse rights inferred.",
+      "freshnessEvidence": "Visit Madeira presents current/live webcam imagery; checked 2026-10-03."
+    },
+    "madeira-sao-vicente-current-image": {
+      "rightsBasis": "Official tourism webcam source; ERN links externally; no reuse rights inferred.",
+      "freshnessEvidence": "Visit Madeira presents current/live webcam imagery; checked 2026-10-03."
+    },
+    "madeira-santana-current-image": {
+      "rightsBasis": "Official tourism webcam source; ERN links externally; no reuse rights inferred.",
+      "freshnessEvidence": "Visit Madeira presents current/live webcam imagery; checked 2026-10-03."
+    },
+    "madeira-santa-cruz-current-image": {
+      "rightsBasis": "Official tourism webcam source; ERN links externally; no reuse rights inferred.",
+      "freshnessEvidence": "Visit Madeira presents current/live webcam imagery; checked 2026-10-03."
+    },
+    "madeira-porto-santo-current-image": {
+      "rightsBasis": "Official tourism webcam source; ERN links externally; no reuse rights inferred.",
+      "freshnessEvidence": "Visit Madeira presents current/live webcam imagery; checked 2026-10-03."
+    },
+    "istanbul-taksim-current-page": {
+      "rightsBasis": "Official/provider camera page; ERN links externally; no reuse rights inferred.",
+      "freshnessEvidence": "Official/provider page presents the camera as live/current; rechecked 2026-10-03."
+    },
+    "istanbul-maidens-tower-current-page": {
+      "rightsBasis": "Official/provider camera page; ERN links externally; no reuse rights inferred.",
+      "freshnessEvidence": "Official/provider page presents the camera as live/current; rechecked 2026-10-03."
+    },
+    "istanbul-anadolu-hisari-current-page": {
+      "rightsBasis": "Official/provider camera page; ERN links externally; no reuse rights inferred.",
+      "freshnessEvidence": "Official/provider page presents the camera as live/current; rechecked 2026-10-03."
+    },
+    "tvoroyri-port-current-page": {
+      "rightsBasis": "Official/provider camera page; ERN links externally; no reuse rights inferred.",
+      "freshnessEvidence": "Official/provider page presents the camera as live/current; rechecked 2026-10-03."
+    },
+    "lerwick-town-hall-current-page": {
+      "rightsBasis": "Official/provider camera page; ERN links externally; no reuse rights inferred.",
+      "freshnessEvidence": "Official/provider page presents the camera as live/current; rechecked 2026-10-03."
+    },
+    "shetland-cliff-cam-current-page": {
+      "rightsBasis": "Official/provider camera page; ERN links externally; no reuse rights inferred.",
+      "freshnessEvidence": "Official/provider page presents the camera as live/current; rechecked 2026-10-03."
     }
   },
   "prague-petrin-tower": {
