@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:30:00Z",
+  "generatedAt": "2026-10-03T14:05:00Z",
   "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
-  "currentSearchableHealthyPlaces": 256,
+  "currentSearchableHealthyPlaces": 275,
   "unlockTargets": [
     "trip-com",
     "hotels-com",
@@ -27,13 +27,13 @@
     {
       "id": "destination-depth",
       "priority": "P1",
-      "action": "Maintain 250 strong searchable places with crawlable destination pages, aliases, country/region, source type, currentness, related ERN places and useful planning context. Replace weak sources rather than growing count mechanically.",
+      "action": "Maintain 275 strong searchable places with crawlable destination pages, aliases, country/region, source type, currentness, related ERN places and useful planning context. Replace or upgrade weak sources rather than growing count mechanically.",
       "successSignal": "More non-owner organic search/AI discovery landing directly on destination pages."
     },
     {
       "id": "long-tail-geography",
       "priority": "P1",
-      "action": "Prioritize distinctive places and underrepresented regions rather than adding repetitive city cameras.",
+      "action": "Use the 275-place catalog to deepen underrepresented search demand and upgrade distinctive destinations to stronger live/current sources rather than adding repetitive places.",
       "successSignal": "Broader search-query coverage across place names, islands, mountains, parks and current-condition searches."
     },
     {
@@ -62,12 +62,13 @@
     }
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
-  "note": "ERN does not know Travelpayouts' private traffic thresholds and must not invent them.",
-  "milestone": "256_SEARCHABLE_PLACES_231_COMMERCIAL_PATHS_22_VERIFIED_LINK_PLACES",
+  "note": "275-place soft stretch reached. Primary growth objective is now qualified organic discovery, deeper internal exploration and real planning clicks/conversions; Travelpayouts unlock thresholds are private and must not be invented.",
+  "milestone": "275_SEARCHABLE_PLACES_QUALITY_MAINTENANCE_TRAFFIC_GROWTH",
   "currentBusinessCoverage": {
-    "healthyPlaces": 256,
-    "placesWithCommercialPath": 231,
-    "placesWithoutCommercialPath": 25,
-    "verifiedLinkPlaces": 22
+    "healthyPlaces": 275,
+    "placesWithCommercialPath": 242,
+    "intentionallyEditorialPlaces": 33,
+    "unclassifiedHealthyPlaces": 0,
+    "verifiedLinkPlaces": 20
   }
 }
