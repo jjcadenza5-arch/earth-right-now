@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:42:00Z",
+  "generatedAt": "2026-10-03T03:55:00Z",
   "publicActivationAllowed": false,
   "currentHealthyDistinctPlaces": 91,
   "targetHealthyDistinctPlaces": [
@@ -62,6 +62,22 @@
       ],
       "rationale": "The official tourism site labels Shitiping as 運作中 (operating).",
       "humanCheckHint": "Open the official Hualien-filtered Live Taiwan page and confirm Shitiping visibly updates."
+    },
+    {
+      "id": "wanaka-lake-view-roys-peak",
+      "title": "Lake Wānaka — Roys Peak View",
+      "country": "New Zealand",
+      "region": "Wānaka / Otago",
+      "provider": "Lake Wānaka Tourism",
+      "priority": "P1",
+      "verificationUrl": "https://www.wanaka.co.nz/wanaka-webcams/",
+      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "klook-wanaka-future"
+      ],
+      "rationale": "Lake Wānaka Tourism publishes this as a current webcam view.",
+      "humanCheckHint": "Open the Wānaka webcam page and confirm the Lake Wānaka view is current."
     },
     {
       "id": "malta-live-cams",
@@ -142,6 +158,38 @@
       ],
       "rationale": "Prague City Tourism's official Prague Towers page directly links the Petřín live camera to the Prague Visitor Pass Panomax 360 endpoint. Owner previously reported the Prague camera family looked beautiful, but exact-target playback remains to be spot-checked.",
       "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
+    },
+    {
+      "id": "rotorua-skyline-city-lake",
+      "title": "Rotorua — City & Lake from Skyline",
+      "country": "New Zealand",
+      "region": "Bay of Plenty",
+      "provider": "Rotorua NZ / Skyline Rotorua",
+      "priority": "P1",
+      "verificationUrl": "https://conference.rotoruanz.com/en-NZ/visit/Weather-Webcams",
+      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "viator-rotorua-future"
+      ],
+      "rationale": "Rotorua NZ publishes this live view overlooking Rotorua city, Lake Rotorua and surrounding landscape.",
+      "humanCheckHint": "Open the Rotorua webcams page and confirm the Skyline Rotorua city/lake view is visibly current."
+    },
+    {
+      "id": "rotorua-museum-gardens-lake",
+      "title": "Rotorua — Museum, Government Gardens & Lake",
+      "country": "New Zealand",
+      "region": "Bay of Plenty",
+      "provider": "Rotorua NZ / Rotorua Lakes Council",
+      "priority": "P1",
+      "verificationUrl": "https://conference.rotoruanz.com/en-NZ/visit/Weather-Webcams",
+      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "viator-rotorua-future"
+      ],
+      "rationale": "Rotorua NZ describes the camera as showing Government Gardens, Rotorua Museum, Blue Baths and lake views.",
+      "humanCheckHint": "Open the Rotorua webcams page and confirm the Museum/Government Gardens/Lake view is visibly current."
     },
     {
       "id": "salzburg-mirabell-old-town",
@@ -240,6 +288,38 @@
       "humanCheckHint": "Open the exact municipal-published YouTube target and confirm it is still a current live harbour stream, not an archived recording."
     },
     {
+      "id": "wanaka-mt-aspiring-view",
+      "title": "Wānaka — Mt Aspiring View",
+      "country": "New Zealand",
+      "region": "Wānaka / Otago",
+      "provider": "Lake Wānaka Tourism",
+      "priority": "P1",
+      "verificationUrl": "https://www.wanaka.co.nz/wanaka-webcams/",
+      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "klook-wanaka-future"
+      ],
+      "rationale": "Lake Wānaka Tourism identifies this current webcam view toward Mt Aspiring National Park.",
+      "humanCheckHint": "Open the Wānaka webcam page and confirm the Mt Aspiring view is current."
+    },
+    {
+      "id": "wanaka-roys-peak-town-view",
+      "title": "Wānaka — Roys Peak Town View",
+      "country": "New Zealand",
+      "region": "Wānaka / Otago",
+      "provider": "Lake Wānaka Tourism",
+      "priority": "P1",
+      "verificationUrl": "https://www.wanaka.co.nz/wanaka-webcams/",
+      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "klook-wanaka-future"
+      ],
+      "rationale": "Lake Wānaka Tourism publishes this camera as a current regional webcam.",
+      "humanCheckHint": "Open the official Wānaka webcams page and confirm the Roys Peak view toward Wānaka is current."
+    },
+    {
       "id": "tallinn-tv-tower-panorama",
       "title": "Tallinn — TV Tower Panorama",
       "country": "Estonia",
@@ -284,7 +364,9 @@
       "businessUnlocks": [],
       "rationale": "Visit St. Maarten's Philipsburg area page explicitly identifies the live Philipsburg Boardwalk webcam and describes it as 24/7.",
       "humanCheckHint": "Open the official Philipsburg tourism page and confirm the Great Bay/Boardwalk webcam is visibly live."
-    },
+    }
+  ],
+  "backlog": [
     {
       "id": "innsbruck-stadtturm",
       "title": "Innsbruck — City Tower",
@@ -326,9 +408,7 @@
       "businessUnlocks": [],
       "rationale": "Official Innsbruck Tourism webcam page explicitly describes the Markthalle camera overlooking the colourful River Inn houses with the Nordkette behind them.",
       "humanCheckHint": "On the official Innsbruck webcam page, choose the Markthalle / central Innsbruck camera overlooking the River Inn."
-    }
-  ],
-  "backlog": [
+    },
     {
       "id": "innsbruck-kuhtai",
       "title": "Kühtai — Tyrol",
@@ -342,6 +422,22 @@
       "businessUnlocks": [],
       "rationale": "Innsbruck Tourism also identifies Kühtai among live ski-area camera locations.",
       "humanCheckHint": "Open the official Innsbruck webcams page and choose Kühtai."
+    },
+    {
+      "id": "wanaka-lake-hawea-view",
+      "title": "Lake Hāwea — Roys Peak View",
+      "country": "New Zealand",
+      "region": "Wānaka / Otago",
+      "provider": "Lake Wānaka Tourism",
+      "priority": "P2",
+      "verificationUrl": "https://www.wanaka.co.nz/wanaka-webcams/",
+      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "klook-wanaka-future"
+      ],
+      "rationale": "Lake Wānaka Tourism publishes the Lake Hāwea direction as a current regional webcam.",
+      "humanCheckHint": "Open the Wānaka webcam page and confirm the Lake Hāwea view is current."
     },
     {
       "id": "taichung-lishan-yingyuan-hill",
