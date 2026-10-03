@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T12:25:00Z",
+  "publicActivationAllowed": false,
+  "purpose": "Prepare currently link-generation-capable Travelpayouts utilities for ERN without waiting for traffic-gated stay programs.",
+  "currentlyUsableProgramCount": 23,
+  "rules": {
+    "ownerGeneratedTrackedLinkRequired": true,
+    "exactCoverageCheckRequired": true,
+    "oneUtilityPerIntentPreferred": true,
+    "noPaidRanking": true,
+    "noAutomaticPlacement": true,
+    "noAutomaticRewriting": true,
+    "destinationDiscoveryMustComeFirst": true
+  },
+  "priorityQueue": [
+    {
+      "id": "airalo-global",
+      "program": "airalo",
+      "intent": "connectivity",
+      "scope": "GLOBAL",
+      "priority": "P1",
+      "state": "OWNER_LINK_GENERATION_REQUIRED",
+      "use": "One optional eSIM action for international trip planning after a visitor has explored a destination.",
+      "reason": "Broad utility with minimal per-place maintenance."
+    },
+    {
+      "id": "go-city-city-passes",
+      "program": "go-city",
+      "intent": "activities",
+      "scope": "SUPPORTED_MAJOR_CITIES",
+      "priority": "P1",
+      "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED",
+      "placeCandidates": [
+        "new-york-harbor",
+        "london-savoy-place",
+        "london-abbey-road-crossing",
+        "chicago-lakefront"
+      ],
+      "use": "City pass option where Go City confirms current inventory.",
+      "reason": "Complements camera discovery with a simple multi-attraction planning step."
+    },
+    {
+      "id": "kiwitaxi-arrivals",
+      "program": "kiwitaxi",
+      "intent": "transport",
+      "scope": "AIRPORT_CITY_TRANSFER",
+      "priority": "P1",
+      "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED",
+      "placeCandidates": [
+        "vienna-city-hall-ringstrasse",
+        "helsinki-market-square-south-harbour",
+        "cape-town-waterfront",
+        "auckland-viaduct-harbour"
+      ],
+      "use": "Airport/city transfer option only where Welcome Pickups does not already provide sufficient coverage."
+    },
+    {
+      "id": "radical-storage-city",
+      "program": "radical-storage",
+      "intent": "services",
+      "scope": "CITY_STOP_OVER",
+      "priority": "P1",
+      "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED",
+      "placeCandidates": [
+        "new-york-harbor",
+        "london-savoy-place",
+        "rome-spanish-steps",
+        "dublin-temple-bar"
+      ],
+      "use": "Luggage storage for cruise, stopover and day-visit use cases."
+    },
+    {
+      "id": "aviasales-flight-search",
+      "program": "aviasales",
+      "intent": "transport",
+      "scope": "GLOBAL",
+      "priority": "P1",
+      "state": "OWNER_LINK_GENERATION_REQUIRED",
+      "use": "Secondary flight-search planning action; never attached to every camera."
+    },
+    {
+      "id": "kkday-asia-gaps",
+      "program": "kkday",
+      "intent": "activities",
+      "scope": "ASIA_DESTINATION_GAPS",
+      "priority": "P1",
+      "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED",
+      "placeCandidates": [
+        "kyoto-hanamikoji-live",
+        "seoul-plaza-24h-live",
+        "bangkok-sukhumvit-road",
+        "singapore-port-area"
+      ],
+      "use": "Activity coverage only where KKday materially improves visitor choice beyond current Klook inventory."
+    },
+    {
+      "id": "localrent-roadtrip",
+      "program": "localrent",
+      "intent": "transport",
+      "scope": "ROAD_TRIP_DESTINATIONS",
+      "priority": "P2",
+      "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED",
+      "use": "Car rental where a destination is genuinely better explored by road."
+    },
+    {
+      "id": "qeeq-rental",
+      "program": "qeeq",
+      "intent": "transport",
+      "scope": "CAR_RENTAL_GAPS",
+      "priority": "P2",
+      "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED",
+      "use": "Fallback car-rental coverage only where the first rental option has no useful inventory."
+    },
+    {
+      "id": "wegotrip-audio",
+      "program": "wegotrip",
+      "intent": "activities",
+      "scope": "CITY_CULTURE",
+      "priority": "P2",
+      "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED",
+      "use": "Self-guided/audio tour option for city and heritage destinations."
+    }
+  ],
+  "deferDuplicates": [
+    "yesim",
+    "saily",
+    "gigsky",
+    "drimsim",
+    "economybookings",
+    "autoeurope",
+    "getrentacar",
+    "gettransfer",
+    "intui-travel",
+    "airhelp",
+    "compensair",
+    "ekta",
+    "bikesbooking",
+    "kiwi-com"
+  ],
+  "note": "Deferred programs remain potentially useful but ERN should first prove demand with one strong option per intent."
+}
