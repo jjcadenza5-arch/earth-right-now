@@ -260,10 +260,66 @@
       "state": "PROMOTED_TO_SOURCE_REGISTRY",
       "verifiedAt": "2026-10-02T16:50:00Z",
       "verification": "Owner confirmed live playback working on official provider page."
+    },
+    {
+      "id": "salzburg-mirabell-old-town",
+      "title": "Salzburg — Mirabell Gardens & Old Town",
+      "country": "Austria",
+      "region": "Salzburg",
+      "provider": "Salzburg Tourism",
+      "sourcePage": "https://www.salzburg.info/en/travel-info/webcam",
+      "evidence": "Official Salzburg tourism webcam page describes a view over Mirabell Gardens toward Salzburg Cathedral and Hohensalzburg Fortress.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "funchal-madeira-live",
+      "title": "Funchal — Madeira Live View",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "evidence": "Official Madeira tourism weather page states that live webcam images cover Funchal and other municipalities.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "porto-moniz-madeira-live",
+      "title": "Porto Moniz — Madeira Live View",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "evidence": "Official Madeira tourism weather page explicitly lists Porto Moniz among its live webcam locations.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "calheta-madeira-live",
+      "title": "Calheta — Madeira Live View",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "evidence": "Official Madeira tourism weather page explicitly lists Calheta among its live webcam locations.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "machico-madeira-live",
+      "title": "Machico — Madeira Live View",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "evidence": "Official Madeira tourism weather page explicitly lists Machico among its live webcam locations.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
     }
   ],
   "notes": [
     "Registry re-check on 2026-10-02 found no current Helsinki/Market Square source record in data/sources.json; candidate restored pending owner clarification to avoid losing a potentially missing destination.",
-    "Vienna, Helsinki, Koli and Turku promoted to data/sources.json after owner live-playback confirmation on 2026-10-02. Prague remains research-only pending exact camera mapping."
+    "Vienna, Helsinki, Koli and Turku promoted to data/sources.json after owner live-playback confirmation on 2026-10-02. Prague remains research-only pending exact camera mapping.",
+    "2026-10-03 research batch added Salzburg plus four official Madeira Tourism live-camera candidates; all remain research-only until human playback verification."
   ]
 }
