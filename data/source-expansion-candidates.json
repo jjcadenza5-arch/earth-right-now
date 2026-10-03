@@ -2719,6 +2719,94 @@
       "sourcePage": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
       "verifiedAt": "2026-10-03T12:30:00Z",
       "verification": "Official municipal camera page + official FAQ describe touristic streams as real-time; promoted conservatively as LIVE_IMAGE for Search/Explore, not Watch Earth."
+    },
+    {
+      "id": "brussels-city-quasi",
+      "title": "Brussels — Grand-Place & Place de Brouckère",
+      "country": "Belgium",
+      "region": "Brussels",
+      "provider": "City of Brussels",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://www.brussels.be/live-brussels",
+      "verification": "Official City of Brussels currently exposes two city webcams; promoted conservatively as searchable LIVE_IMAGE, not Watch Earth live video."
+    },
+    {
+      "id": "zandvoort-quasi",
+      "title": "Zandvoort — Beach & Circuit",
+      "country": "Netherlands",
+      "region": "North Holland",
+      "provider": "Visit Zandvoort",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://visitzandvoort.com/circuit/webcam/",
+      "verification": "Official tourism page documents year-round circuit/beach webcams; promoted as searchable LIVE_IMAGE."
+    },
+    {
+      "id": "darmstadt-quasi",
+      "title": "Darmstadt — Mathildenhöhe",
+      "country": "Germany",
+      "region": "Hesse",
+      "provider": "Darmstadt Tourismus",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://www.darmstadt-tourismus.de/en/visit/mathildenhoehe-darmstadt.html",
+      "verification": "Official tourism page says visitors can see Mathildenhöhe right now via webcam."
+    },
+    {
+      "id": "heidelberg-quasi",
+      "title": "Heidelberg — Old Town & Königstuhl",
+      "country": "Germany",
+      "region": "Baden-Württemberg",
+      "provider": "Heidelberg Marketing",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://www.heidelberg-marketing.de/planen/wetter-und-webcams",
+      "verification": "Official tourism webcam page lists Old Town and Königstuhl current views."
+    },
+    {
+      "id": "nuremberg-quasi",
+      "title": "Nuremberg — Metropolitan Panorama",
+      "country": "Germany",
+      "region": "Bavaria",
+      "provider": "Nuremberg Convention and Tourist Office",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://tourismus.nuernberg.de/en/service-footer/data-protection/",
+      "verification": "Official tourism documentation confirms a real-time panoramic city webcam."
+    },
+    {
+      "id": "cannes-quasi",
+      "title": "Cannes — Riviera Live View",
+      "country": "France",
+      "region": "French Riviera",
+      "provider": "Cannes Tourist Office",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://en.cannes-france.com/",
+      "verification": "Official tourism site exposes live webcam/weather planning."
+    },
+    {
+      "id": "plitvice-quasi",
+      "title": "Plitvice Lakes National Park — Livestream",
+      "country": "Croatia",
+      "region": "Lika-Senj / Karlovac",
+      "provider": "Plitvice Lakes National Park",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://np-plitvicka-jezera.hr/en/plitvice-lakes-national-park/",
+      "verification": "Official national park site exposes Livestream in primary navigation."
+    },
+    {
+      "id": "denmark-live-family",
+      "title": "Denmark — official tourism live-view family",
+      "country": "Denmark",
+      "region": "Multiple regions",
+      "provider": "VisitDenmark",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://www.visitdenmark.com/denmark/things-do/livestreams",
+      "verification": "Official VisitDenmark live collection supports Klitmøller and Ribe; related official attraction pages support Skjoldnæs, Løkken, Aalborg Zoo and Gribskov."
     }
   ],
   "notes": [
@@ -2773,7 +2861,8 @@
     "2026-10-03T12:25Z quasi-live batch promoted 23 additional searchable places from already-researched provider current/live-camera evidence. Watch Earth eligibility remains unchanged.",
     "2026-10-03T12:35Z milestone batch promoted 2 more quasi-live searchable places, bringing healthy searchable distinct places to the 250 stretch target.",
     "2026-10-03 quality-led Istanbul expansion added Taksim Square, Maiden’s Tower and Anadolu Hisarı as distinct official LIVE_IMAGE/Search-Explore places. Watch Earth rules unchanged.",
-    "2026-10-03 promoted Tvøroyri Port, Lerwick Town Hall and Shetland Cliff Cam to searchable LIVE_IMAGE using current official municipal/destination evidence; Watch Earth rules unchanged."
+    "2026-10-03 promoted Tvøroyri Port, Lerwick Town Hall and Shetland Cliff Cam to searchable LIVE_IMAGE using current official municipal/destination evidence; Watch Earth rules unchanged.",
+    "2026-10-03 13:25 UTC: quality-led European gap batch promoted Belgium, Netherlands, Germany, Denmark, Cannes and Plitvice into Search/Explore using conservative LIVE_IMAGE semantics; no new Watch Earth live-video eligibility was inferred."
   ],
   "researchGaps": [
     {
