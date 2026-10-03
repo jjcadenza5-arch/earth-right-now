@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T14:40:00Z",
+  "generatedAt": "2026-10-03T15:30:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 275,
+    "currentHealthyDistinctPlaceBaseline": 283,
     "targetRange": [
       250,
       300
     ],
-    "strategy": "Scale target exceeded. Keep 250+ healthy distinct places, improve freshness, geographic/provider balance and high-value source quality. Add selectively where places fill real gaps; upgrade quasi-live to true live when worthwhile.",
+    "strategy": "Quality-first selective growth. ERN has exceeded its 250-place target and is 17 places from 300, but the runtime catalog is near its strict 300 KB ceiling. Prefer high-value swaps, source upgrades and a future supplemental-search architecture over uncontrolled catalog growth.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -78,11 +78,11 @@
     "currentHealthyLiveImageCount": 171,
     "progressToTarget": {
       "minimumTarget": 250,
-      "current": 275,
+      "current": 283,
       "remainingToMinimum": 0,
       "stretchTarget": 300,
-      "remainingToStretch": 25,
-      "status": "QUALITY_FIRST_SELECTIVE_GROWTH"
+      "remainingToStretch": 17,
+      "status": "QUALITY_FIRST_ARCHITECTURE_CONSTRAINED_GROWTH"
     },
     "recentExpansionFamilies": [
       "La Réunion — four official tourism/scientific current webcam places",
@@ -92,12 +92,12 @@
       "Namibia — Swakopmund and Windhoek frequently refreshed current-image places",
       "Western/Northern Europe quality batch — Brussels, Zandvoort, Darmstadt, Heidelberg/Königstuhl, Nuremberg, Cannes, Plitvice, Denmark live-view family, Dresden/Radebeul and Farchant/Zugspitze"
     ],
-    "catalogScaleStrategy": "Keep data/sources.json minified as the lean runtime catalog; retain verbose provenance/long notes in data/source-evidence.json so expansion can continue without weakening the 300 KB production budget.",
+    "catalogScaleStrategy": "Keep data/sources.json below the strict 300 KB runtime ceiling. Full provenance stays in data/source-evidence.json. Continue selective swaps now; design a lazy/supplemental Search-only catalog before scaling materially beyond this runtime ceiling.",
     "nextMode": "QUALITY_AND_FRESHNESS_AFTER_SCALE_TARGET",
     "currentHealthyTruth": {
       "LIVE_VIDEO": 13,
-      "EXTERNAL_LIVE": 69,
-      "LIVE_IMAGE": 197
+      "EXTERNAL_LIVE": 72,
+      "LIVE_IMAGE": 206
     },
     "researchCandidateStateCounts": {
       "PROMOTED_TO_SOURCE_REGISTRY": 55,
@@ -193,7 +193,7 @@
     "istanbulDenpasarUnlocked": true,
     "currentCommercialStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 157,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 161,
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 5,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
@@ -218,14 +218,14 @@
     "etoshaNote": "Official Namibia Wildlife Resorts evidence supports an Okaukuejo live-camera candidate, but ERN keeps it research-only until exact target playback is human-confirmed.",
     "trafficGrowthPlan": "data/traffic-growth-priorities.json",
     "ownerActionPacket": "data/owner-action-packet.json",
-    "currentOpportunityCount": 180,
+    "currentOpportunityCount": 184,
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "ownerWorksheet": "data/exact-link-generation-worksheet.json",
-    "nextMode": "QUALITY_MAINTENANCE_TRAFFIC_GROWTH_AND_BATCHED_LINK_CONVERSION",
+    "nextMode": "QUALITY_MAINTENANCE_TRAFFIC_GROWTH_BATCHED_LINK_CONVERSION_AND_UNLOCK_READINESS",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
-    "healthyPlacesWithCommercialPath": 242,
-    "healthyPlacesWithoutCommercialPath": 33,
-    "verifiedLinkHealthyPlaces": 22,
+    "healthyPlacesWithCommercialPath": 249,
+    "healthyPlacesWithoutCommercialPath": 34,
+    "verifiedLinkHealthyPlaces": 19,
     "editorialOnlyRegistry": "data/commercial-editorial-only.json",
     "intentionallyEditorialPlaces": 33,
     "unclassifiedHealthyPlaces": 0,
