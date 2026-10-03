@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T13:50:00Z",
+  "generatedAt": "2026-10-03T13:58:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 275,
@@ -211,10 +211,12 @@
     "ownerWorksheet": "data/exact-link-generation-worksheet.json",
     "nextMode": "275_PLACE_QUALITY_MAINTENANCE_PLUS_TRAFFIC_GROWTH_AND_BATCHED_LINK_CONVERSION",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
-    "healthyPlacesWithCommercialPath": 231,
-    "healthyPlacesWithoutCommercialPath": 25,
+    "healthyPlacesWithCommercialPath": 242,
+    "healthyPlacesWithoutCommercialPath": 33,
     "verifiedLinkHealthyPlaces": 22,
-    "editorialOnlyRegistry": "data/commercial-editorial-only.json"
+    "editorialOnlyRegistry": "data/commercial-editorial-only.json",
+    "intentionallyEditorialPlaces": 33,
+    "unclassifiedHealthyPlaces": 0
   },
   "safeguards": {
     "automaticPlacement": false,
