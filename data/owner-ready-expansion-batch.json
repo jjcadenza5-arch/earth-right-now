@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T02:50:00Z",
+  "generatedAt": "2026-10-03T03:20:00Z",
   "status": "READY_NOT_REQUESTED",
-  "purpose": "A single compact source-verification batch to use only when autonomous research is no longer the limiting factor.",
+  "purpose": "One compact owner batch to use only when autonomous work is no longer the limiting factor.",
   "sourceChecks": [
     {
       "id": "dubrovnik-pile-city",
@@ -38,6 +38,17 @@
       "instruction": "Open the official Live Malta Cams page and confirm at least one destination camera visibly updates before ERN promotes any specific Malta place."
     },
     {
+      "id": "sanparks-olifants",
+      "title": "Olifants — Kruger National Park",
+      "country": "South Africa",
+      "url": "https://www.sanparks.org/travel/webcams/video/olifants",
+      "type": "OFFICIAL_PARK_LIVE_VIDEO_PAGE",
+      "businessUnlocks": [
+        "viator-kruger-future"
+      ],
+      "instruction": "Open the official Olifants video page and confirm the video is actively updating."
+    },
+    {
       "id": "prague-old-town-hall",
       "title": "Prague — Old Town Hall",
       "country": "Czech Republic",
@@ -69,6 +80,17 @@
         "tiqets-salzburg-future"
       ],
       "instruction": "Open the official Salzburg webcam page and confirm the Mirabell/Old Town image or video is visibly current."
+    },
+    {
+      "id": "sanparks-satara",
+      "title": "Satara — Kruger National Park",
+      "country": "South Africa",
+      "url": "https://www.sanparks.org/travel/webcams/video/satara",
+      "type": "OFFICIAL_PARK_LIVE_VIDEO_PAGE",
+      "businessUnlocks": [
+        "viator-kruger-future"
+      ],
+      "instruction": "Open the official Satara video page and confirm the wildlife video is actively updating."
     },
     {
       "id": "taichung-techi-reservoir",
@@ -164,6 +186,27 @@
       "partner": "tiqets",
       "intent": "culture",
       "nextAction": "Generate one San Diego Zoo Tiqets tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "viator-zermatt",
+      "destination": "Zermatt / Matterhorn",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate one Zermatt destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-san-diego-zoo",
+      "destination": "San Diego / San Diego Zoo",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate one San Diego destination or Zoo-specific Viator partner link and verify it manually; avoid duplicate density if Tiqets is later activated for the same place."
+    },
+    {
+      "id": "viator-aruba",
+      "destination": "Aruba / Druif Beach",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate one Aruba destination-level Viator partner link and manually verify it before public activation; keep the offer downstream from Earth discovery."
     }
   ],
   "rules": {
