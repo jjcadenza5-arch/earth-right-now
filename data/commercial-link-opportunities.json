@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T06:05:00Z",
+  "generatedAt": "2026-10-03T06:15:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -489,8 +489,9 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Official Taipei Live Taiwan candidates can naturally connect to Klook's strong Taipei activity inventory once at least one source is verified.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "nextAction": "After a Taipei camera is promoted, generate one Taipei-level Klook tracked link and reuse it across verified Taipei places."
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "generate one Taipei-level Klook tracked link and reuse it across verified Taipei places.",
+      "sourceGateResolvedAt": "2026-10-03T06:15:00Z"
     },
     {
       "id": "klook-taichung-future",
@@ -503,8 +504,9 @@
       "intent": "activities",
       "priority": "P2",
       "reason": "The mountain/reservoir views can support trip-planning into central Taiwan if Klook exposes useful Taichung/Lishan inventory.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "nextAction": "Verify at least one source first, then search the active Klook account for a destination-level Taichung link; activate only if inventory is genuinely useful."
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify at least one source first, then search the active Klook account for a destination-level Taichung link; activate only if inventory is genuinely useful.",
+      "sourceGateResolvedAt": "2026-10-03T06:15:00Z"
     },
     {
       "id": "klook-tainan-future",
@@ -517,8 +519,9 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Tainan's sunrise and salt-field live views create a strong See Live → Explore cultural landscape path; Klook is already an active ERN partner.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "nextAction": "After a Tainan source is promoted, generate one Tainan destination-level Klook tracked link and manually verify it."
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "generate one Tainan destination-level Klook tracked link and manually verify it.",
+      "sourceGateResolvedAt": "2026-10-03T06:15:00Z"
     },
     {
       "id": "viator-hualien-future",
@@ -530,8 +533,9 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Shitiping's official east-coast live view can naturally lead into Hualien/East Coast sightseeing and nature activities.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "nextAction": "After Shitiping is promoted, search Viator partner tools for a clean Hualien/East Coast destination-level link; do not use a generic Taiwan page."
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "search Viator partner tools for a clean Hualien/East Coast destination-level link; do not use a generic Taiwan page.",
+      "sourceGateResolvedAt": "2026-10-03T06:15:00Z"
     },
     {
       "id": "viator-aruba",
