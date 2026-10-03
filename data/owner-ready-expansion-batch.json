@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:35:00Z",
+  "generatedAt": "2026-10-03T03:42:00Z",
   "status": "READY_NOT_REQUESTED",
   "purpose": "One compact owner batch to use only when autonomous work is no longer the limiting factor.",
   "sourceChecks": [
@@ -146,6 +146,15 @@
         "klook-mauritius-future"
       ],
       "instruction": "Enter the official Mauritius Now webcam experience and confirm the Grand Baie camera is present and visibly current. If the webcam link is temporarily broken, report that rather than searching third-party mirrors."
+    },
+    {
+      "id": "st-maarten-maho-beach",
+      "title": "Maho Beach — St. Maarten",
+      "country": "Sint Maarten",
+      "url": "https://www.visitstmaarten.com/your-top-three-caribbean-live-webcams-2/",
+      "type": "OFFICIAL_TOURISM_ENDORSED_LIVE_CAMERA",
+      "businessUnlocks": [],
+      "instruction": "Open the official Visit St. Maarten webcam article and confirm the Maho Beach camera is currently playing live. Do not check the other St. Maarten cameras unless this one works."
     }
   ],
   "exactAffiliateLinkActions": [
@@ -225,6 +234,13 @@
       "partner": "viator",
       "intent": "activities",
       "nextAction": "Generate a Boulders Beach or tightly scoped Cape Peninsula Viator partner link and manually verify it before public activation; avoid duplicating the generic Cape Town offer."
+    },
+    {
+      "id": "viator-st-maarten",
+      "destination": "St. Maarten / Philipsburg",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate one St. Maarten destination-level Viator partner link and verify it manually; reuse it for future verified St. Maarten cameras instead of creating duplicates."
     }
   ],
   "rules": {
