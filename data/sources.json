@@ -7268,8 +7268,8 @@
       "Hagia Sophia area",
       "Historic Istanbul"
     ],
-    "rightsBasis": "Official Istanbul Metropolitan Municipality live-camera service; ERN keeps playback link-only and does not infer embed/restream permission.",
-    "freshnessEvidence": "Official İstanbulu Seyret service rechecked 2026-10-03; its FAQ states touristic live streams can be watched only in real time, and Sultanahmet is an active camera location."
+    "rightsBasis": "Official/provider live source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Provider currently presents this as a live/current view; checked 2026-10-03."
   },
   {
     "id": "denpasar-atcs-live",
@@ -7308,8 +7308,8 @@
       "Bali traffic cameras",
       "ATCS Denpasar"
     ],
-    "rightsBasis": "Official Denpasar municipal ATCS live-streaming service; ERN keeps playback link-only and does not infer embed/restream permission.",
-    "freshnessEvidence": "Official ATCS Kota Denpasar page rechecked 2026-10-03; it explicitly states real-time live CCTV, 50+ cameras and 24/7 monitoring."
+    "rightsBasis": "Official/provider live source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Provider currently presents this as a live/current view; checked 2026-10-03."
   },
   {
     "id": "andorra-grandvalira-current",
