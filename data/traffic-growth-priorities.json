@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:20:00Z",
+  "generatedAt": "2026-10-03T12:40:00Z",
   "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
-  "currentSearchableHealthyPlaces": 223,
+  "currentSearchableHealthyPlaces": 250,
   "unlockTargets": [
     "trip-com",
     "hotels-com",
@@ -27,7 +27,7 @@
     {
       "id": "destination-depth",
       "priority": "P1",
-      "action": "Keep every strong searchable place on a crawlable destination page with aliases, country/region, source type, currentness, related ERN places and useful planning context.",
+      "action": "Maintain 250 strong searchable places with crawlable destination pages, aliases, country/region, source type, currentness, related ERN places and useful planning context. Replace weak sources rather than growing count mechanically.",
       "successSignal": "More non-owner organic search/AI discovery landing directly on destination pages."
     },
     {
@@ -62,5 +62,6 @@
     }
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
-  "note": "ERN does not know Travelpayouts' private traffic thresholds and must not invent them."
+  "note": "ERN does not know Travelpayouts' private traffic thresholds and must not invent them.",
+  "milestone": "250_SEARCHABLE_PLACES_REACHED"
 }
