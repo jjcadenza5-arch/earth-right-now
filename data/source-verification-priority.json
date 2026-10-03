@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:15:00Z",
+  "generatedAt": "2026-10-03T04:28:00Z",
   "publicActivationAllowed": false,
   "currentHealthyDistinctPlaces": 91,
   "targetHealthyDistinctPlaces": [
@@ -801,6 +801,23 @@
         "klook-wanaka-future"
       ],
       "humanCheckHint": "Open the Wānaka webcam page and confirm the Lake Wānaka view is current."
+    },
+    {
+      "id": "kenyalive-nairobi-national-park",
+      "title": "Nairobi National Park — KenyaLIVE",
+      "country": "Kenya",
+      "region": "Nairobi",
+      "provider": "Kenya Wildlife Service",
+      "priority": "P1",
+      "score": 9,
+      "verificationUrl": "https://kws.go.ke/world-tourism-day-2026-kenya-embraces-the-digital-future-of-travel/",
+      "verificationType": "OFFICIAL_GOVERNMENT_LIVE_PROGRAM",
+      "oneClick": true,
+      "countryNovel": false,
+      "businessUnlocks": [
+        "viator-nairobi-national-park-future"
+      ],
+      "humanCheckHint": "Open the KWS KenyaLIVE article, follow the official KWS YouTube route, and confirm there is a current live broadcast identified as Nairobi National Park before promotion."
     },
     {
       "id": "naryn-central-square",
