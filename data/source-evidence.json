@@ -1587,5 +1587,75 @@
     "freshnessEvidence": "Lake Wānaka Tourism publishes the Lake Hāwea direction as a current regional webcam.",
     "rightsBasis": "Official tourism/provider current-camera family; ERN links externally and does not infer image reuse, embed or restream rights.",
     "story": "Lake Wānaka Tourism publishes the Lake Hāwea direction as a current regional webcam."
+  },
+  "brussels-grand-place-current": {
+    "freshnessEvidence": "Current City of Brussels page exposes the Grand-Place webcam and HTML5 video player.",
+    "rightsBasis": "Official City of Brussels source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "Current City of Brussels page exposes the Grand-Place webcam and HTML5 video player."
+  },
+  "brussels-brouckere-current": {
+    "freshnessEvidence": "Current City of Brussels page exposes the Place de Brouckère webcam and HTML5 video player.",
+    "rightsBasis": "Official City of Brussels source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "Current City of Brussels page exposes the Place de Brouckère webcam and HTML5 video player."
+  },
+  "zandvoort-current": {
+    "freshnessEvidence": "Visit Zandvoort states its circuit and beach webcams show current conditions year-round.",
+    "rightsBasis": "Official tourism source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "Visit Zandvoort states its circuit and beach webcams show current conditions year-round."
+  },
+  "darmstadt-mathildenhoehe-current": {
+    "freshnessEvidence": "Darmstadt Tourism explicitly invites visitors to see how Mathildenhöhe looks right now via webcam.",
+    "rightsBasis": "Official tourism source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "Darmstadt Tourism explicitly invites visitors to see how Mathildenhöhe looks right now via webcam."
+  },
+  "heidelberg-current": {
+    "freshnessEvidence": "Heidelberg Marketing's current weather/webcam page lists Old Town and Königstuhl webcam views.",
+    "rightsBasis": "Official tourism source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "Heidelberg Marketing's current weather/webcam page lists Old Town and Königstuhl webcam views."
+  },
+  "nuremberg-current": {
+    "freshnessEvidence": "Nuremberg Tourism documents a real-time panoramic city webcam operated through its site.",
+    "rightsBasis": "Official tourism source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "Nuremberg Tourism documents a real-time panoramic city webcam operated through its site."
+  },
+  "cannes-current": {
+    "freshnessEvidence": "Official Cannes tourism tells visitors to check conditions live and links webcam/weather information.",
+    "rightsBasis": "Official tourism source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "Official Cannes tourism tells visitors to check conditions live and links webcam/weather information."
+  },
+  "plitvice-lakes-current": {
+    "freshnessEvidence": "Official Plitvice Lakes National Park site exposes a Livestream entry in primary visitor navigation.",
+    "rightsBasis": "Official national park source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "Official Plitvice Lakes National Park site exposes a Livestream entry in primary visitor navigation."
+  },
+  "denmark-klitmoller-current": {
+    "freshnessEvidence": "VisitDenmark describes the Klitmøller webcam as a live coast/wave view.",
+    "rightsBasis": "Official national tourism source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "VisitDenmark describes the Klitmøller webcam as a live coast/wave view."
+  },
+  "denmark-ribe-current": {
+    "freshnessEvidence": "VisitDenmark describes Ribe as a view of what is going on right now on the embankment.",
+    "rightsBasis": "Official national tourism source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "VisitDenmark describes Ribe as a view of what is going on right now on the embankment."
+  },
+  "denmark-skjoldnaes-current": {
+    "freshnessEvidence": "VisitDenmark explicitly labels a webcam livefeed from Skjoldnæs Lighthouse.",
+    "rightsBasis": "Official national tourism source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "VisitDenmark explicitly labels a webcam livefeed from Skjoldnæs Lighthouse."
+  },
+  "denmark-lokken-current": {
+    "freshnessEvidence": "VisitDenmark explicitly lists Løkken Moleleje Webcam - Live Stream.",
+    "rightsBasis": "Official national/regional tourism source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "VisitDenmark explicitly lists Løkken Moleleje Webcam - Live Stream."
+  },
+  "denmark-aalborg-zoo-current": {
+    "freshnessEvidence": "VisitDenmark says Aalborg Zoo's polar bear family can be followed live on webcam.",
+    "rightsBasis": "Official tourism/zoo source family; ERN links externally and does not infer reuse/restream rights.",
+    "story": "VisitDenmark says Aalborg Zoo's polar bear family can be followed live on webcam."
+  },
+  "denmark-gribskov-osprey-current": {
+    "freshnessEvidence": "VisitDenmark describes following an osprey nest in Gribskov through a live webcam.",
+    "rightsBasis": "Official national/regional tourism source; ERN links externally and does not infer reuse/restream rights.",
+    "story": "VisitDenmark describes following an osprey nest in Gribskov through a live webcam."
   }
 }
