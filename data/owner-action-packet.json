@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T14:10:00Z",
+  "generatedAt": "2026-10-03T15:35:00Z",
   "status": "DORMANT_UNTIL_OWNER_BATCH_IS_WORTHWHILE",
   "purpose": "Bundle owner-only affiliate link generation and playback checks into worthwhile sessions instead of interrupting ERN expansion one item at a time.",
   "sourceVerificationBatch": [
@@ -74,8 +74,8 @@
     "No automatic rewriting",
     "No source truth changes from commercial value"
   ],
-  "batchRationale": "275 searchable places are complete. The next owner session should convert a compact set of high-intent exact links plus a few global utilities; source checks are limited to the remaining truly unresolved playback candidates.",
-  "searchablePlaceMilestone": 275,
+  "batchRationale": "283 healthy searchable places are live. Owner work remains dormant until a worthwhile bundled session: prioritize a compact exact-link batch plus a few global utilities, while locked stay programs remain traffic-triggered future targets.",
+  "searchablePlaceMilestone": 283,
   "secondWaveAffiliateBatch": [
     "viator-st-moritz",
     "viator-dolomiti-superski",
@@ -93,5 +93,5 @@
     "viator-aalborg"
   ],
   "trafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
-  "futureProgramNote": "Trip.com is a P1 future addition once unlocked because it covers stays + transport + activities; no owner action is needed until Travelpayouts actually unlocks it."
+  "futureProgramNote": "Trip.com remains the P1 future stay/transport/activity addition once Travelpayouts unlocks it. Hotels.com, Booking.com, Agoda and Expedia remain parallel stay targets; no owner recheck is needed until a traffic/conversion or platform-status trigger occurs."
 }
