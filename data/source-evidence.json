@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:30:00Z",
+  "generatedAt": "2026-10-03T14:50:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog can remain within ERN's strict production-size budget. Runtime records retain concise non-empty audit markers.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1461,6 +1461,106 @@
     "shetland-cliff-cam-current-page": {
       "rightsBasis": "Official/provider camera page; ERN links externally; no reuse rights inferred.",
       "freshnessEvidence": "Official/provider page presents the camera as live/current; rechecked 2026-10-03."
+    },
+    "taiwan-maolin-live": {
+      "freshnessEvidence": "Official Maolin National Scenic Area page rechecked 2026-10-03; it labels its camera Live Camera and describes 24-hour uninterrupted real-time scenery.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.maolin-nsa.gov.tw/en/"
+    },
+    "taiwan-yehliu-live": {
+      "freshnessEvidence": "Official North Coast & Guanyinshan National Scenic Area live-camera page rechecked 2026-10-03 and lists this named location under Live Camera.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007395"
+    },
+    "taiwan-heping-island-live": {
+      "freshnessEvidence": "Official North Coast & Guanyinshan National Scenic Area live-camera page rechecked 2026-10-03 and lists this named location under Live Camera.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007395"
+    },
+    "taiwan-baisha-bay-live": {
+      "freshnessEvidence": "Official North Coast & Guanyinshan National Scenic Area live-camera page rechecked 2026-10-03 and lists this named location under Live Camera.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007395"
+    },
+    "taiwan-laomei-green-reef-live": {
+      "freshnessEvidence": "Official North Coast & Guanyinshan National Scenic Area live-camera page rechecked 2026-10-03 and lists this named location under Live Camera.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007395"
+    },
+    "taiwan-yinghanling-live": {
+      "freshnessEvidence": "Official North Coast & Guanyinshan National Scenic Area live-camera page rechecked 2026-10-03 and lists this named location under Live Camera.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007395"
+    },
+    "taiwan-taipingshan-live": {
+      "freshnessEvidence": "Taiwan government's official real-time/live-image directory rechecked 2026-10-03 and lists this named scenic location as an immediate/current camera view.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.gov.tw/taiwan/"
+    },
+    "taiwan-fenqihu-live": {
+      "freshnessEvidence": "Taiwan government's official real-time/live-image directory rechecked 2026-10-03 and lists this named scenic location as an immediate/current camera view.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.gov.tw/taiwan/"
+    },
+    "taiwan-elephant-mountain-live": {
+      "freshnessEvidence": "Taiwan government's official real-time/live-image directory rechecked 2026-10-03 and lists this named scenic location as an immediate/current camera view.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.gov.tw/taiwan/"
+    },
+    "taiwan-tamsui-fishermans-wharf-live": {
+      "freshnessEvidence": "Taiwan government's official real-time/live-image directory rechecked 2026-10-03 and lists this named scenic location as an immediate/current camera view.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.gov.tw/taiwan/"
+    },
+    "taiwan-daxi-old-street-live": {
+      "freshnessEvidence": "Taiwan government's official real-time/live-image directory rechecked 2026-10-03 and lists this named scenic location as an immediate/current camera view.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.gov.tw/taiwan/"
+    },
+    "taiwan-dongyanshan-live": {
+      "freshnessEvidence": "Taiwan government's official real-time/live-image directory rechecked 2026-10-03 and lists this named scenic location as an immediate/current camera view.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.gov.tw/taiwan/"
+    },
+    "taiwan-gaomei-wetland-live": {
+      "freshnessEvidence": "Taiwan government's official real-time/live-image directory rechecked 2026-10-03 and lists this named scenic location as an immediate/current camera view.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.gov.tw/taiwan/"
+    },
+    "taiwan-alishan-taiping-live": {
+      "freshnessEvidence": "Taiwan government's official real-time/live-image directory rechecked 2026-10-03 and lists this named scenic location as an immediate/current camera view.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.gov.tw/taiwan/"
+    },
+    "nz-lyttelton-heads-current": {
+      "freshnessEvidence": "Official Environment Canterbury regional webcam page rechecked 2026-10-03; provider states static images update every five minutes and display timestamps.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.ecan.govt.nz/webcams"
+    },
+    "nz-akaroa-heads-current": {
+      "freshnessEvidence": "Official Environment Canterbury regional webcam page rechecked 2026-10-03; provider states static images update every five minutes and display timestamps.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.ecan.govt.nz/webcams"
+    },
+    "nz-foxton-beach-current": {
+      "freshnessEvidence": "Official Horizons Regional Council webcam page rechecked 2026-10-03; provider maintains regional coastal/river webcams and describes them as current monitoring/recreation views.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.horizons.govt.nz/webcams"
+    },
+    "nz-whanganui-coast-current": {
+      "freshnessEvidence": "Official Horizons Regional Council webcam page rechecked 2026-10-03; provider maintains regional coastal/river webcams and describes them as current monitoring/recreation views.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.horizons.govt.nz/webcams"
+    },
+    "nz-wairoa-river-current": {
+      "freshnessEvidence": "Official Hawke's Bay Regional Council webcam page rechecked 2026-10-03; provider states webcam images refresh every hour with latest-capture date/time shown.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.hbrc.govt.nz/webcams"
+    },
+    "nz-te-awanga-coast-current": {
+      "freshnessEvidence": "Official Hawke's Bay Regional Council webcam page rechecked 2026-10-03; provider states webcam images refresh every hour with latest-capture date/time shown.",
+      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
+      "coordinateSourceUrl": "https://www.hbrc.govt.nz/webcams"
     }
   },
   "prague-petrin-tower": {
