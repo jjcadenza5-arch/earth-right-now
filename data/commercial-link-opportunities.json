@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T01:48:00Z",
+  "generatedAt": "2026-10-03T01:52:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -220,7 +220,9 @@
       "priority": "P1",
       "reason": "Vienna's current city/landmark window naturally connects to a deep attraction and culture inventory from an already-active ERN partner.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one Vienna destination-level Tiqets tracked link in Travelpayouts only after owner verification; keep commercial placement downstream from discovery."
+      "nextAction": "Generate one Vienna destination-level Tiqets tracked link in Travelpayouts only after owner verification; keep commercial placement downstream from discovery.",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/vienna-attractions-c60335/",
+      "publicInventoryEvidence": "Tiqets currently exposes a broad Vienna destination page spanning museums, historical sites, attractions, concerts, city tours and passes."
     },
     {
       "id": "viator-helsinki",
@@ -313,7 +315,8 @@
       "reason": "ERN has a strong healthy Georgia Aquarium window and Tiqets currently has a dedicated Georgia Aquarium ticket page with multiple active ticket options.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/georgia-aquarium-tickets-l146833/",
-      "nextAction": "Generate one Georgia Aquarium Tiqets tracked link in Travelpayouts and manually verify it before public activation."
+      "nextAction": "Generate one Georgia Aquarium Tiqets tracked link in Travelpayouts and manually verify it before public activation.",
+      "publicInventoryEvidence": "Tiqets currently exposes a dedicated Georgia Aquarium ticket page with active entry-ticket inventory."
     },
     {
       "id": "tiqets-san-diego-zoo",
@@ -327,7 +330,8 @@
       "reason": "ERN has a healthy San Diego Zoo live/source window and Tiqets currently has a dedicated San Diego Zoo ticket page with entry-ticket inventory.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/san-diego-zoo-tickets-l146256/",
-      "nextAction": "Generate one San Diego Zoo Tiqets tracked link in Travelpayouts and manually verify it before public activation."
+      "nextAction": "Generate one San Diego Zoo Tiqets tracked link in Travelpayouts and manually verify it before public activation.",
+      "publicInventoryEvidence": "Tiqets currently exposes a dedicated San Diego Zoo page with active entry-ticket inventory and related San Diego attraction passes."
     }
   ]
 }
