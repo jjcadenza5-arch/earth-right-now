@@ -2114,6 +2114,110 @@
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "SANParks states webcam still photos update every few minutes and lists Talamati among its current still webcams.",
       "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "peru-ubinas-current-image",
+      "title": "Ubinas Volcano — Peru",
+      "country": "Peru",
+      "region": "Moquegua",
+      "provider": "Instituto Geofísico del Perú / CENVUL",
+      "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/imagenes-en-tiempo-real/ubinas",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "Peru's CENVUL states Ubinas camera images are obtained in real time every minute.",
+      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "peru-sabancaya-current-image",
+      "title": "Sabancaya Volcano — Peru",
+      "country": "Peru",
+      "region": "Arequipa",
+      "provider": "Instituto Geofísico del Perú / CENVUL",
+      "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/imagenes-en-tiempo-real/sabancaya",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "Peru's CENVUL states Sabancaya camera images are obtained in real time every minute and lists four scientific cameras in its monitoring network.",
+      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "peru-misti-current-image",
+      "title": "El Misti — Arequipa",
+      "country": "Peru",
+      "region": "Arequipa",
+      "provider": "Instituto Geofísico del Perú / CENVUL",
+      "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "CENVUL lists Misti among Peru's real-time monitored volcanoes and states its digital volcano images are obtained every minute.",
+      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "peru-coropuna-current-image",
+      "title": "Coropuna — Peru",
+      "country": "Peru",
+      "region": "Arequipa",
+      "provider": "Instituto Geofísico del Perú / CENVUL",
+      "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "CENVUL lists Coropuna in its real-time monitoring network; its monitored-volcano interface provides digital images obtained every minute.",
+      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "peru-ticsani-current-image",
+      "title": "Ticsani Volcano — Peru",
+      "country": "Peru",
+      "region": "Moquegua",
+      "provider": "Instituto Geofísico del Perú / CENVUL",
+      "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "CENVUL lists Ticsani among volcanoes monitored in real time and exposes a digital-image monitoring path with minute-scale imagery.",
+      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "peru-chachani-current-image",
+      "title": "Chachani — Arequipa",
+      "country": "Peru",
+      "region": "Arequipa",
+      "provider": "Instituto Geofísico del Perú / CENVUL",
+      "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "CENVUL lists Chachani among its real-time monitored volcanoes and provides digital monitoring imagery through the official interface.",
+      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "peru-yucamane-current-image",
+      "title": "Yucamane Volcano — Peru",
+      "country": "Peru",
+      "region": "Tacna",
+      "provider": "Instituto Geofísico del Perú / CENVUL",
+      "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "CENVUL lists Yucamane among its real-time monitored volcanoes and provides digital monitoring imagery through the official interface.",
+      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "mexico-popocatepetl-current-image",
+      "title": "Popocatépetl — Mexico",
+      "country": "Mexico",
+      "region": "Puebla / State of Mexico / Morelos",
+      "provider": "CENAPRED / UNAM",
+      "sourcePage": "https://www1.cenapred.unam.mx/volcan/popocatepetl/imagen/tlamacas_hd.html",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "CENAPRED states the Tlamacas HD image is updated every minute and shows Popocatépetl's north flank.",
+      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
     }
   ],
   "notes": [
@@ -2155,7 +2259,8 @@
     "2026-10-03 added three Hong Kong Observatory five-minute quasi-live places: Victoria Harbour, Victoria Peak and Tai Mo Shan.",
     "2026-10-03 expanded Iceland beyond Reykjavík with Mývatn, Hveravellir and Surtsey from the Icelandic Meteorological Office.",
     "2026-10-03 Madeira candidate family promoted under owner-approved quasi-live policy: Funchal, Porto Moniz, Calheta and Machico are searchable LIVE_IMAGE places; old human-playback placeholder rows were superseded.",
-    "2026-10-03 added six distinct Taiwan government/scenic-area real-time-image places plus two SANParks frequently refreshed wildlife still cameras. SANParks video-only Satara/Olifants remain human-playback-gated."
+    "2026-10-03 added six distinct Taiwan government/scenic-area real-time-image places plus two SANParks frequently refreshed wildlife still cameras. SANParks video-only Satara/Olifants remain human-playback-gated.",
+    "2026-10-03 crossed the 150 healthy searchable-place milestone using seven Peru CENVUL volcano-monitoring places and Mexico CENAPRED Popocatépetl; one canonical place per volcano."
   ],
   "researchGaps": [
     {
