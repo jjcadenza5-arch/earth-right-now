@@ -1657,5 +1657,30 @@
     "freshnessEvidence": "VisitDenmark describes following an osprey nest in Gribskov through a live webcam.",
     "rightsBasis": "Official national/regional tourism source; ERN links externally and does not infer reuse/restream rights.",
     "story": "VisitDenmark describes following an osprey nest in Gribskov through a live webcam."
+  },
+  "heidelberg-konigstuhl-current": {
+    "freshnessEvidence": "Heidelberg Marketing's current webcam page lists Königstuhl as a separate panorama above Heidelberg.",
+    "rightsBasis": "Official tourism/destination source; ERN links externally and does not infer reuse, embed or restream rights.",
+    "story": "Heidelberg Marketing's current webcam page lists Königstuhl as a separate panorama above Heidelberg."
+  },
+  "zandvoort-circuit-current": {
+    "freshnessEvidence": "Visit Zandvoort documents a year-round pitcam at Circuit Zandvoort, with only temporary event-rights interruptions.",
+    "rightsBasis": "Official tourism/destination source; ERN links externally and does not infer reuse, embed or restream rights.",
+    "story": "Visit Zandvoort documents a year-round pitcam at Circuit Zandvoort, with only temporary event-rights interruptions."
+  },
+  "dresden-old-town-current": {
+    "freshnessEvidence": "Dresden Elbland Tourism currently labels its Dresden Old Town weathercam as a live discovery view.",
+    "rightsBasis": "Official tourism/destination source; ERN links externally and does not infer reuse, embed or restream rights.",
+    "story": "Dresden Elbland Tourism currently labels its Dresden Old Town weathercam as a live discovery view."
+  },
+  "radebeul-wackerbarth-current": {
+    "freshnessEvidence": "Dresden Elbland Tourism currently lists a second live weathercam over Schloss Wackerbarth vineyards in Radebeul.",
+    "rightsBasis": "Official tourism/destination source; ERN links externally and does not infer reuse, embed or restream rights.",
+    "story": "Dresden Elbland Tourism currently lists a second live weathercam over Schloss Wackerbarth vineyards in Radebeul."
+  },
+  "farchant-zugspitze-current": {
+    "freshnessEvidence": "Farchant's official destination page says visitors can check in live and lists Farchant/Zugspitze-region webcams.",
+    "rightsBasis": "Official tourism/destination source; ERN links externally and does not infer reuse, embed or restream rights.",
+    "story": "Farchant's official destination page says visitors can check in live and lists Farchant/Zugspitze-region webcams."
   }
 }
