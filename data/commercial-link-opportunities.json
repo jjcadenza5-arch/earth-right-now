@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T05:10:00Z",
+  "generatedAt": "2026-10-03T05:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1699,6 +1699,113 @@
       "reason": "Shymbulak is now searchable in ERN and aligns with Almaty mountain/day-trip inventory.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Generate and manually verify one Shymbulak/Almaty Viator link before public activation."
+    },
+    {
+      "id": "viator-mendoza",
+      "destination": "Mendoza",
+      "placeIds": [
+        "mendoza-plaza-independencia"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Mendoza is now a healthy searchable ERN city place and has strong wine/city/day-trip visitor utility.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and manually verify one Mendoza destination-level Viator link."
+    },
+    {
+      "id": "viator-maho-beach",
+      "destination": "St. Maarten / Maho Beach",
+      "placeIds": [
+        "st-maarten-maho-beach"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Maho Beach is now searchable in ERN and aligns with St. Maarten island tours/airport-beach visitor interest.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one St. Maarten/Maho-relevant Viator link and verify it before activation."
+    },
+    {
+      "id": "viator-great-bay",
+      "destination": "St. Maarten / Philipsburg",
+      "placeIds": [
+        "st-maarten-great-bay"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Great Bay/Philipsburg is now searchable in ERN and has strong cruise/island planning utility.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one Philipsburg/St. Maarten Viator link; avoid duplicate density if the Maho link already serves the same island well."
+    },
+    {
+      "id": "viator-innsbruck",
+      "destination": "Innsbruck / Tyrol",
+      "placeIds": [
+        "innsbruck-city",
+        "innsbruck-nordkette",
+        "innsbruck-patscherkofel",
+        "innsbruck-kuhtai"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has multiple searchable Innsbruck/Tyrol places and Viator can provide one destination-level planning bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one Innsbruck/Tyrol destination-level Viator link and reuse it across appropriate places without duplicate commercial density."
+    },
+    {
+      "id": "viator-montreux",
+      "destination": "Montreux / Rochers-de-Naye",
+      "placeIds": [
+        "montreux-rochers-de-naye"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Montreux/Rochers-de-Naye is now searchable and naturally connects to lake/mountain sightseeing.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Montreux/Rochers-de-Naye coverage and generate an exact Viator link only if inventory is strong."
+    },
+    {
+      "id": "viator-kilpisjarvi",
+      "destination": "Kilpisjärvi / Lapland",
+      "placeIds": [
+        "kilpisjarvi-saana"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Kilpisjärvi/Saana is now searchable and can support Arctic/Lapland activity planning.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check for a clean Kilpisjärvi or northern Lapland Viator link; do not use an overly generic Finland page."
+    },
+    {
+      "id": "viator-satara-kruger",
+      "destination": "Kruger National Park / Satara",
+      "placeIds": [
+        "sanparks-satara"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Satara is now searchable and naturally supports safari/game-drive planning.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one Kruger safari Viator link only if it is geographically suitable for Satara visitors."
+    },
+    {
+      "id": "viator-olifants-kruger",
+      "destination": "Kruger National Park / Olifants",
+      "placeIds": [
+        "sanparks-olifants"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Olifants is now searchable and supports Kruger safari planning.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Prefer one park-level Kruger Viator link shared across suitable ERN Kruger places rather than per-camp duplicates."
     }
   ]
 }
