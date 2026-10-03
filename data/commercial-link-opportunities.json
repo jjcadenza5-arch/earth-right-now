@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:40:00Z",
+  "generatedAt": "2026-10-03T04:28:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1115,10 +1115,11 @@
       "intent": "activities",
       "priority": "P2",
       "reason": "INETER provides a credible multi-volcano current-image family and Viator currently markets Nicaragua volcano experiences, including Masaya/Granada itineraries and volcano-focused adventure products.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/blog/Bucket-List-Experiences-in-Latin-America-According-to-Viator-Travelers/l114459",
       "publicInventoryEvidence": "Viator currently promotes active Nicaragua volcano experiences and also lists day-trip inventory that includes Masaya Volcano.",
-      "nextAction": "After one or more INETER volcano cameras are verified and promoted, search the partner account for one suitable Nicaragua/volcano destination link; avoid one affiliate placement per camera."
+      "nextAction": "Generate one Nicaragua volcano/country-level Viator partner link only if the inventory is strong and destination-relevant; manually verify before public activation.",
+      "sourceGateClearedAt": "2026-10-03T04:28:00Z"
     },
     {
       "id": "viator-marco-island",
