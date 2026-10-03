@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:32:00Z",
+  "generatedAt": "2026-10-03T15:35:00Z",
   "strategy": "Traffic-led unlock. Do not repeatedly apply or recheck locked programs. Improve visitor utility, searchable-place quality and qualified outbound intent first; recheck only after material traffic/engagement change or Travelpayouts status notification.",
   "activeNow": [
     {
@@ -358,9 +358,9 @@
   },
   "note": "ActiveNow is canonical from data/affiliate-partners.json; futureUnlock is derived from owner-visible but not yet unlocked Travelpayouts programs.",
   "ownerEvidence": {
-    "capturedAt": "2026-10-03T10:20:00Z",
+    "capturedAt": "2026-10-03T17:20:00+07:00",
     "source": "Owner screenshots of Travelpayouts program catalog",
-    "conclusion": "Many strategically useful programs are visible in the ERN Travelpayouts project but are not yet practically unlocked/usable; traffic growth is the gating strategy.",
+    "conclusion": "Desired programs are visible, but many remain locked/not active for ERN; traffic growth is the gating strategy.",
     "visiblePrograms": [
       "booking-com",
       "trip-com",
@@ -416,5 +416,7 @@
     "Bundle owner-only exact-link generation sessions instead of interrupting one place at a time",
     "Use currently link-generation-capable Travelpayouts utilities only where they solve a real visitor need",
     "Grow qualified visitor/search traffic so stay programs such as Trip.com, Hotels.com, Booking.com, Agoda and Expedia can unlock later"
-  ]
+  ],
+  "firstProgramToActivateWhenUnlocked": "trip-com",
+  "firstProgramReason": "Trip.com combines global accommodation with transport/activity breadth, directly addressing ERN's stay gap while serving many of the existing 287 searchable places."
 }
