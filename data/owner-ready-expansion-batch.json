@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T02:32:00Z",
+  "generatedAt": "2026-10-03T03:30:00Z",
   "status": "READY_NOT_REQUESTED",
   "purpose": "One compact owner batch to use only when autonomous work is no longer the limiting factor.",
   "sourceChecks": [
@@ -135,6 +135,17 @@
         "viator-ushuaia-future"
       ],
       "instruction": "Open the exact municipal-published YouTube target and confirm it is still a current live harbour stream, not an archived recording."
+    },
+    {
+      "id": "mauritius-grand-baie",
+      "title": "Grand Baie — Mauritius",
+      "country": "Mauritius",
+      "url": "https://mauritiusnow.com/things-to-do-in-mauritius/",
+      "type": "OFFICIAL_TOURISM_WEBCAM_FAMILY",
+      "businessUnlocks": [
+        "klook-mauritius-future"
+      ],
+      "instruction": "Enter the official Mauritius Now webcam experience and confirm the Grand Baie camera is present and visibly current. If the webcam link is temporarily broken, report that rather than searching third-party mirrors."
     }
   ],
   "exactAffiliateLinkActions": [
