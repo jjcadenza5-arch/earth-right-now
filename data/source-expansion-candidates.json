@@ -297,8 +297,9 @@
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "exactTargetUrl": "https://www.salzburg.info/en/travel-info/webcam",
       "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "researchEvidence": "Official Salzburg Tourism webcam page describes the live view over Mirabell Gardens toward Salzburg Cathedral and Hohensalzburg Fortress.",
-      "humanCheckHint": "Open the official Salzburg webcam page and confirm the Mirabell/Old Town image or video is visibly current."
+      "researchEvidence": "Official Salzburg Tourism webcam page confirms a view over Mirabell Gardens toward Salzburg Cathedral and Hohensalzburg Fortress; cookie consent may be required before the live media appears.",
+      "humanCheckHint": "Open the official Salzburg webcam page and confirm the Mirabell/Old Town image or video is visibly current.",
+      "webEvidenceConfirmedAt": "2026-10-03"
     },
     {
       "id": "funchal-madeira-live",
@@ -356,7 +357,9 @@
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "exactTargetUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
       "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
-      "humanCheckHint": "Open the official Innsbruck webcam page and use the main 360° live panorama."
+      "humanCheckHint": "Open the official Innsbruck webcam page and use the main 360° live panorama.",
+      "researchEvidence": "Official Innsbruck Tourism webcam page explicitly describes real-time 360-degree views of Innsbruck and the surrounding area.",
+      "webEvidenceConfirmedAt": "2026-10-03"
     },
     {
       "id": "innsbruck-markthalle",
@@ -370,7 +373,9 @@
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "exactTargetUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
       "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
-      "humanCheckHint": "On the official Innsbruck webcam page, choose the Markthalle / central Innsbruck camera overlooking the River Inn."
+      "humanCheckHint": "On the official Innsbruck webcam page, choose the Markthalle / central Innsbruck camera overlooking the River Inn.",
+      "researchEvidence": "Official Innsbruck Tourism webcam page explicitly describes the Markthalle camera overlooking the colourful River Inn houses with the Nordkette behind them.",
+      "webEvidenceConfirmedAt": "2026-10-03"
     },
     {
       "id": "dubrovnik-pile-city",
@@ -414,8 +419,9 @@
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "exactTargetUrl": "https://www2.visitmalta.com/en/info/live-cams-in-malta/",
       "exactTargetType": "OFFICIAL_TOURISM_LIVE_CAM_PAGE",
-      "researchEvidence": "VisitMalta's official traveller-information navigation links directly to a Live Malta Cams page and describes the live camera as a way to inspect destinations before travel.",
-      "humanCheckHint": "Open the official Live Malta Cams page and confirm at least one destination camera visibly updates before ERN promotes any specific Malta place."
+      "researchEvidence": "VisitMalta's official traveller-information page explicitly advertises Live Malta Cams as a way to inspect places before travel.",
+      "humanCheckHint": "Open the official Live Malta Cams page and confirm at least one destination camera visibly updates before ERN promotes any specific Malta place.",
+      "webEvidenceConfirmedAt": "2026-10-03"
     },
     {
       "id": "tallinn-tv-tower-panorama",
@@ -426,7 +432,9 @@
       "sourcePage": "https://teletorn.ee/en/webcam/",
       "evidence": "Tallinn TV Tower's official webcam page describes a real-time panorama of Tallinn and surrounding areas.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "researchEvidence": "Tallinn TV Tower's official webcam page explicitly describes a real-time panorama of Tallinn and surrounding areas.",
+      "webEvidenceConfirmedAt": "2026-10-03"
     }
   ],
   "notes": [
@@ -436,6 +444,7 @@
     "2026-10-03 breadth research added official-source candidates for Innsbruck, Dubrovnik, Malta and Tallinn; all remain research-only until exact playback is human-confirmed.",
     "2026-10-03 Prague research isolated six exact camera targets from the official Prague City Tourism page, including one Panomax endpoint and five direct YouTube live targets. This removes the earlier owner burden of hunting through the page; exact-target playback still stays fail-closed until spot-checked.",
     "2026-10-03 Dubrovnik research isolated direct official City of Dubrovnik pages for Pile and Gruž. Each exposes its own live-camera page with an ipcamlive iframe, so the owner will not need to hunt through the camera index.",
-    "2026-10-03 reduced owner verification friction for Salzburg, Innsbruck and Malta by recording direct official tourism camera pages and explicit check instructions."
+    "2026-10-03 reduced owner verification friction for Salzburg, Innsbruck and Malta by recording direct official tourism camera pages and explicit check instructions.",
+    "2026-10-03 public-web evidence rechecked for Salzburg, Innsbruck, Tallinn and Malta against official tourism/attraction pages. These candidates remain research-only pending human playback confirmation."
   ]
 }
