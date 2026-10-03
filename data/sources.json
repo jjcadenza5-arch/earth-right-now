@@ -129,8 +129,8 @@
     "officialUrl": "https://www.sanparks.org/travel/webcams",
     "coordinateBasis": "PLACE_REFERENCE",
     "failureReason": null,
-    "rightsBasis": "Official SANParks webcam page; retained as link-only because ERN has not documented display/embed permission.",
-    "freshnessEvidence": "Official SANParks Nossob webcam rechecked 2026-10-03; SANParks says photos are taken and updated every few minutes."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "kaikoura-coast",
@@ -163,8 +163,8 @@
     "aliases": [
       "Kaikoura"
     ],
-    "rightsBasis": "Official Environment Canterbury regional webcam page; ERN uses link-only current-image discovery and does not infer embed/restream permission.",
-    "freshnessEvidence": "Environment Canterbury official Regional webcams page retrieved 2026-10-03 confirms South Bay, Kaikōura remains in the active webcam list and states the static webcam images update every five minutes; provider warns visitors to inspect image timestamps because a last image can remain visible during outages."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "glenelg-sa",
@@ -196,8 +196,8 @@
     "officialUrl": "https://marinesafety.sa.gov.au/web-cameras",
     "coordinateBasis": "PLACE_REFERENCE",
     "failureReason": null,
-    "rightsBasis": "Official South Australia Marine Safety webcam network provides live coastal images; ERN conservatively keeps provider playback link-only.",
-    "freshnessEvidence": "Official South Australia Marine Safety camera network rechecked 2026-10-03; Glenelg Beach remains listed among live-image cameras."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "brighton-sa",
@@ -229,8 +229,8 @@
     "officialUrl": "https://marinesafety.sa.gov.au/web-cameras",
     "coordinateBasis": "PLACE_REFERENCE",
     "failureReason": null,
-    "rightsBasis": "Official South Australia Marine Safety webcam network provides live coastal images; ERN conservatively keeps provider playback link-only.",
-    "freshnessEvidence": "Official South Australia Marine Safety camera network rechecked 2026-10-03; Brighton Beach remains listed among live-image cameras."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "mpala-watering-hole",
@@ -515,8 +515,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "National Park Service",
     "failureReason": null,
-    "rightsBasis": "Current National Park Service weather/webcam page provides refreshed current views; retained LINK_ONLY because ERN does not infer display permission.",
-    "freshnessEvidence": "Official NPS Grand Canyon webcams rechecked 2026-10-03; South Entrance is Active and refreshes every minute, with other current park webcams available."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "yellowstone-national-park",
@@ -580,8 +580,8 @@
       "Mt Rainier"
     ],
     "failureReason": null,
-    "rightsBasis": "Current National Park Service weather page links live/current webcams; retained LINK_ONLY because ERN does not infer display permission.",
-    "freshnessEvidence": "Official NPS Mount Rainier webcam page rechecked 2026-10-03; NPS continues to describe Longmire/Paradise/Sunrise feeds as live webcams."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "glacier-national-park",
@@ -857,8 +857,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "Gran Telescopio CANARIAS / IAC",
     "failureReason": null,
-    "rightsBasis": "Gran Telescopio CANARIAS' official webcam page publishes current images from the Roque de los Muchachos Observatory and states that the images are taken every minute. ERN links to the official page and does not copy or republish the images.",
-    "freshnessEvidence": "Official Gran Telescopio CANARIAS webcam page rechecked 2026-10-03; current observatory images are taken every minute."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "cijin-beach-kaohsiung",
@@ -1098,8 +1098,8 @@
     "timeZone": "Asia/Tokyo",
     "coordinateBasis": "PLACE_REFERENCE",
     "failureReason": "Provider page rechecked on 2026-10-03, but latest visible Miyagawa images were dated 2026-09-21 rather than current.",
-    "rightsBasis": "The operator states the still cameras refresh about every three minutes and instructs visitors to reload for the newest image; ERN links to the provider page.",
-    "freshnessEvidence": "Hida Takayama Live Camera page remains online, but current-image timestamps observed by ERN on 2026-10-03 were stale (2026-09-21), so this source is not counted healthy/current."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "provider": "EarthCam",
@@ -1487,8 +1487,8 @@
     "timeZone": "Europe/Zurich",
     "coordinateBasis": "REGION_REFERENCE",
     "failureReason": null,
-    "rightsBasis": "Official tourism page provides live/current webcam imagery. ERN conservatively classifies the collection as current images and links to the provider.",
-    "freshnessEvidence": "Official Amden & Weesen Tourism webcam page rechecked 2026-10-03; live webcam views remain available for Amden, Weesen and Lake Walensee."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "oeschinensee-official",
@@ -1519,8 +1519,8 @@
     "timeZone": "Europe/Zurich",
     "coordinateBasis": "REGION_REFERENCE",
     "failureReason": null,
-    "rightsBasis": "Official destination page says its webcams deliver the latest live images. ERN conservatively classifies them as current images and links to the provider.",
-    "freshnessEvidence": "Official Oeschinensee webcam page rechecked 2026-10-03; provider states webcams deliver the latest live images."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "lake-lucerne-official",
@@ -1551,8 +1551,8 @@
     "timeZone": "Europe/Zurich",
     "coordinateBasis": "REGION_REFERENCE",
     "failureReason": null,
-    "rightsBasis": "Official navigation-company page provides live webcam views and current weather. ERN conservatively classifies the collection as current images and links to the provider.",
-    "freshnessEvidence": "Official Lake Lucerne Navigation Company webcam page rechecked 2026-10-03; provider states webcams provide live lake/mountain views and current weather."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "taitung-jinzun",
@@ -1615,8 +1615,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "TableMountainView.com",
     "failureReason": null,
-    "rightsBasis": "TableMountainView.com operates the direct Bloubergstrand/Table Mountain webcam page and states that its image updates every 120 seconds during its published daylight window. ERN uses a LINK_ONLY handoff and does not copy or restream the image.",
-    "freshnessEvidence": "Provider page rechecked 2026-10-03; Table Mountain image states it updates every 120 seconds during operating hours."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "perdido-key-beach",
@@ -1646,8 +1646,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "U.S. National Park Service",
     "failureReason": null,
-    "rightsBasis": "The National Park Service's official Perdido Key Beach webcam is marked Active and states that a beach photograph is taken every 15 minutes. ERN links to the NPS webcam page and does not copy or restream the image.",
-    "freshnessEvidence": "Official NPS Perdido Key webcam rechecked 2026-10-03; status Active and a beach photograph is taken every 15 minutes."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "sasagawa-nagare",
@@ -2124,8 +2124,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "Farm Tomita",
     "failureReason": null,
-    "rightsBasis": "Current official Farm Tomita site exposes a live-webcam section with current field images. ERN keeps it LINK_ONLY and does not infer image reuse or embed permission.",
-    "freshnessEvidence": "Official Farm Tomita page rechecked 2026-10-03; it continues to expose a Farm Tomita live webcam with current-field images."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "waikiki-beach",
@@ -2392,8 +2392,8 @@
       "Reykjavik"
     ],
     "failureReason": null,
-    "rightsBasis": "Official Icelandic Meteorological Office webcam page. ERN links to the provider and does not infer third-party display permission.",
-    "freshnessEvidence": "Official Icelandic Meteorological Office Reykjavík webcam page rechecked 2026-10-03; current directional webcam sequences remain available."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "boulders-penguins-sanparks",
@@ -3257,8 +3257,8 @@
     "lon": 110.527,
     "coordinateBasis": "PLACE_REFERENCE",
     "timeZone": "Antarctica/Casey",
-    "rightsBasis": "Australian Antarctic Program publishes still webcam images for public viewing; ERN links to the official page and does not copy or restream them.",
-    "freshnessEvidence": "AAD states station webcam still images are sent approximately every three minutes. ERN classifies this as quasi-live/current imagery, not continuous video."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "antarctica-davis-station",
@@ -3293,8 +3293,8 @@
     "lon": 77.968,
     "coordinateBasis": "PLACE_REFERENCE",
     "timeZone": "Antarctica/Davis",
-    "rightsBasis": "Australian Antarctic Program publishes still webcam images for public viewing; ERN links to the official page.",
-    "freshnessEvidence": "AAD states station webcam still images are transmitted approximately every three minutes; ERN treats them as quasi-live/current imagery."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "antarctica-mawson-station",
@@ -3329,8 +3329,8 @@
     "lon": 62.874,
     "coordinateBasis": "PLACE_REFERENCE",
     "timeZone": "Antarctica/Mawson",
-    "rightsBasis": "Australian Antarctic Program publishes still webcam images for public viewing; ERN links to the official page.",
-    "freshnessEvidence": "AAD documents still-image webcam updates approximately every three minutes; ERN does not label this as live video."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "antarctica-macquarie-island",
@@ -3544,8 +3544,8 @@
     "lon": -78.436,
     "coordinateBasis": "PLACE_REFERENCE",
     "timeZone": "America/Guayaquil",
-    "rightsBasis": "Official Instituto Geofísico EPN visual-monitoring page; ERN links to the provider and treats the imagery as current monitoring, not continuous video.",
-    "freshnessEvidence": "Instituto Geofísico EPN currently publishes multiple visual camera viewpoints around Cotopaxi."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "ecuador-reventador-monitoring",
@@ -3579,8 +3579,8 @@
     "lon": -77.656,
     "coordinateBasis": "PLACE_REFERENCE",
     "timeZone": "America/Guayaquil",
-    "rightsBasis": "Official Instituto Geofísico EPN visual-monitoring page; ERN links to the provider and treats the imagery as current monitoring, not continuous video.",
-    "freshnessEvidence": "Instituto Geofísico EPN currently publishes the Copete visual camera for El Reventador."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "nicaragua-san-cristobal-current-image",
@@ -3616,8 +3616,8 @@
     "lat": 12.702,
     "lon": -87.004,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official INETER public volcano webcam; ERN links to the source and does not copy or restream images.",
-    "freshnessEvidence": "INETER's current volcano camera index states Nicaragua volcano webcam images are transmitted in real time every 30 seconds or 1 minute; the San Cristóbal detail page states automatic refresh at about five minutes."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "nicaragua-telica-current-image",
@@ -3653,8 +3653,8 @@
     "lat": 12.602,
     "lon": -86.845,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official INETER public volcano webcam; ERN links to the source and does not copy or restream images.",
-    "freshnessEvidence": "INETER states the Telica crater image refreshes automatically about every five minutes; its current volcano index describes real-time images every 30 seconds or 1 minute."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "nicaragua-momotombo-current-image",
@@ -3690,8 +3690,8 @@
     "lat": 12.423,
     "lon": -86.54,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official INETER public volcano webcam; ERN links to the source and does not copy or restream images.",
-    "freshnessEvidence": "INETER states Momotombo webcam images refresh automatically about every five minutes and are used for live visual monitoring."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "nicaragua-masaya-current-image",
@@ -3728,8 +3728,8 @@
     "lat": 11.984,
     "lon": -86.161,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official INETER public volcano webcam; ERN links to the source and does not copy or restream images.",
-    "freshnessEvidence": "INETER's Masaya webcam page states automatic refresh about every five minutes; the current national volcano index describes real-time camera imagery."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "nicaragua-concepcion-current-image",
@@ -3766,8 +3766,8 @@
     "lat": 11.538,
     "lon": -85.622,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official INETER public volcano webcam; ERN links to the source and does not copy or restream images.",
-    "freshnessEvidence": "INETER states the Concepción image refreshes automatically about every five minutes and is part of its live visual volcano monitoring network."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "nicaragua-cerro-negro-current-image",
@@ -3841,8 +3841,8 @@
     "lat": 14.473,
     "lon": -90.88,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official INSIVUMEH volcanic surveillance page; ERN links to the source and does not copy or republish monitoring imagery.",
-    "freshnessEvidence": "INSIVUMEH states its Fuego/Santiaguito platform updates every minute with the most recent images and provides a six-hour photographic record."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "guatemala-santiaguito-current-image",
@@ -3878,8 +3878,8 @@
     "lat": 14.756,
     "lon": -91.552,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official INSIVUMEH volcanic surveillance page; ERN links to the source and does not copy or republish monitoring imagery.",
-    "freshnessEvidence": "INSIVUMEH states its Fuego/Santiaguito platform updates every minute with the most recent images and provides a six-hour photographic record."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "nz-ruapehu-current-image",
@@ -3916,8 +3916,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": -39.281,
     "lon": 175.57,
-    "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
-    "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "nz-ngauruhoe-current-image",
@@ -3954,8 +3954,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": -39.157,
     "lon": 175.632,
-    "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
-    "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "nz-tongariro-current-image",
@@ -3992,8 +3992,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": -39.13,
     "lon": 175.642,
-    "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
-    "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "nz-taranaki-current-image",
@@ -4031,8 +4031,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": -39.296,
     "lon": 174.064,
-    "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
-    "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "nz-raoul-island-current-image",
@@ -4070,8 +4070,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": -29.27,
     "lon": -177.92,
-    "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
-    "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "nz-whakaari-current-image",
@@ -4108,8 +4108,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": -37.52,
     "lon": 177.18,
-    "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
-    "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "yellowstone-biscuit-basin-current-image",
@@ -4145,8 +4145,8 @@
       "Biscuit Basin",
       "Black Diamond Pool"
     ],
-    "rightsBasis": "USGS Yellowstone Volcano Observatory public webcam; ERN links to the government source and does not copy or restream imagery.",
-    "freshnessEvidence": "USGS states the Biscuit Basin monitoring camera captures and publishes a new image every 15 minutes; a new camera was installed July 22, 2026."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "yellowstone-lake-current-image",
@@ -4183,8 +4183,8 @@
       "Yellowstone Lake",
       "Lake Village Yellowstone"
     ],
-    "rightsBasis": "USGS Yellowstone Volcano Observatory public webcam; ERN links to the government source and does not copy or restream imagery.",
-    "freshnessEvidence": "USGS reported the Lake camera reinstalled in September 2026 and states the current camera view updates every 15 minutes."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "mauna-loa-current-image",
@@ -4220,8 +4220,8 @@
       "Moku'aweoweo",
       "Mokuʻāweoweo"
     ],
-    "rightsBasis": "USGS HVO public webcams are official monitoring images; ERN links to the source and does not copy or restream imagery.",
-    "freshnessEvidence": "USGS HVO labels the Mauna Loa webcam pages as current/live images and states the webcams operate 24/7, subject to weather and equipment interruptions."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "alaska-shishaldin-current-image",
@@ -4257,8 +4257,8 @@
       "Shishaldin",
       "Mount Shishaldin"
     ],
-    "rightsBasis": "Official Alaska Volcano Observatory webcam/activity pages; ERN links to the source and does not copy or republish images.",
-    "freshnessEvidence": "AVO's current Shishaldin activity page lists multiple webcam views with current timestamps, and the AVO webcam index exposes frequently refreshed dated images."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "alaska-augustine-current-image",
@@ -4294,8 +4294,8 @@
       "Augustine",
       "Augustine Volcano"
     ],
-    "rightsBasis": "Official Alaska Volcano Observatory webcam page; ERN links to the source and does not copy or republish images.",
-    "freshnessEvidence": "AVO's Augustine webcam page publishes a latest-image UTC timestamp and a rolling 12-hour view; current index timestamps show regular refreshed observations."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "ecuador-sangay-current-image",
@@ -4330,8 +4330,8 @@
       "Sangay",
       "Volcan Sangay"
     ],
-    "rightsBasis": "Official Instituto Geofísico EPN volcano-camera page; ERN links to the source and does not copy or republish monitoring imagery.",
-    "freshnessEvidence": "IG-EPN maintains a current Sangay camera page with multiple monitoring cameras; its monitoring documentation says visual/thermal network acquisition varies from about 1 minute to 1 hour depending on surveillance needs."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "ecuador-tungurahua-current-image",
@@ -4366,8 +4366,8 @@
       "Tungurahua",
       "Volcan Tungurahua"
     ],
-    "rightsBasis": "Official Instituto Geofísico EPN volcano-camera page; ERN links to the source and does not copy or republish monitoring imagery.",
-    "freshnessEvidence": "IG-EPN's current Tungurahua camera page lists three monitoring views; its network documentation states camera acquisition frequency can range from about 1 minute to 1 hour."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "colombia-nevado-del-ruiz-current-image",
@@ -4403,8 +4403,8 @@
       "Nevado del Ruiz",
       "Ruiz Volcano"
     ],
-    "rightsBasis": "Official Servicio Geológico Colombiano volcanic-surveillance camera pages; ERN links to the source and does not copy monitoring imagery.",
-    "freshnessEvidence": "SGC exposes online/current volcanic surveillance cameras for Nevado del Ruiz and explicitly describes its camera service as real-time monitoring."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "colombia-galeras-current-image",
@@ -4440,8 +4440,8 @@
       "Galeras",
       "Volcan Galeras"
     ],
-    "rightsBasis": "Official Servicio Geológico Colombiano online-camera page; ERN links to the source and does not copy or republish imagery.",
-    "freshnessEvidence": "SGC maintains an online-images page for Galeras listing multiple surveillance camera stations; ERN treats this conservatively as current/quasi-live imagery rather than continuous video."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "hong-kong-victoria-harbour-current-photo",
@@ -4481,8 +4481,8 @@
       "Hong Kong Harbour",
       "Hong Kong Harbor"
     ],
-    "rightsBasis": "Official Hong Kong Observatory weather-photo service; ERN links to the source and does not copy or republish webcam imagery.",
-    "freshnessEvidence": "Hong Kong Observatory states this Victoria Harbour webcam takes a picture every five minutes and provides a six-hour animation; its regional weather page describes these as live views."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "hong-kong-victoria-peak-current-photo",
@@ -4521,8 +4521,8 @@
       "The Peak Hong Kong",
       "Hong Kong Peak"
     ],
-    "rightsBasis": "Official Hong Kong Observatory weather-photo service; ERN links to the source and does not copy or republish webcam imagery.",
-    "freshnessEvidence": "Hong Kong Observatory states the Victoria Peak camera produces real-time weather photos; the camera page takes a picture every five minutes with a six-hour animation."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "hong-kong-tai-mo-shan-current-photo",
@@ -4559,8 +4559,8 @@
       "Tai Mo Shan",
       "Tai Mo Mountain"
     ],
-    "rightsBasis": "Official Hong Kong Observatory weather-photo service; ERN links to the source and does not copy or republish webcam imagery.",
-    "freshnessEvidence": "Hong Kong Observatory states the Tai Mo Shan weather camera takes a picture every five minutes and is part of its real-time weather-photo network."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "iceland-myvatn-current-image",
@@ -4596,8 +4596,8 @@
       "Myvatn",
       "Lake Myvatn"
     ],
-    "rightsBasis": "Official Icelandic Meteorological Office webcam page; ERN links to the source and does not copy or republish images.",
-    "freshnessEvidence": "The Icelandic Meteorological Office Mývatn webcam page presents the current image plus a sequence of preceding time steps; ERN treats it as quasi-live/current imagery."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "iceland-hveravellir-current-image",
@@ -4634,8 +4634,8 @@
       "Hveravellir",
       "Iceland Highlands Hveravellir"
     ],
-    "rightsBasis": "Official Icelandic Meteorological Office webcam page; ERN links to the source and does not copy or republish images.",
-    "freshnessEvidence": "The Icelandic Meteorological Office Hveravellir page shows successive webcam frames at 10-minute intervals."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "iceland-surtsey-current-image",
@@ -4671,8 +4671,8 @@
       "Surtsey",
       "Surtsey Island"
     ],
-    "rightsBasis": "Official Icelandic Meteorological Office webcam page; ERN links to the source and does not copy or republish images.",
-    "freshnessEvidence": "The Icelandic Meteorological Office Surtsey webcam page presents the latest image and recent time-step sequence; the associated automated weather station is actively updated."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "madeira-funchal-current-image",
@@ -4708,8 +4708,8 @@
       "Funchal",
       "Funchal Madeira"
     ],
-    "rightsBasis": "Official Madeira tourism live-webcam service; ERN links to the provider page and does not copy or restream imagery.",
-    "freshnessEvidence": "The official Madeira tourism weather page explicitly presents live webcam images for Funchal and other Madeira municipalities."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "madeira-porto-moniz-current-image",
@@ -4745,8 +4745,8 @@
       "Porto Moniz",
       "Porto Moniz Madeira"
     ],
-    "rightsBasis": "Official Madeira tourism live-webcam service; ERN links to the provider page and does not copy or restream imagery.",
-    "freshnessEvidence": "The official Madeira tourism weather page explicitly lists Porto Moniz among its live webcam-image locations."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "madeira-calheta-current-image",
@@ -4855,8 +4855,8 @@
       "Jiufen",
       "Jiufen Old Street"
     ],
-    "rightsBasis": "Official Taiwan government real-time image service; ERN links to the government page and does not copy or restream imagery.",
-    "freshnessEvidence": "Taiwan's MyEGov page labels this source as Jiufen Old Street real-time imagery and identifies the camera as provided by New Taipei City Government."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "taiwan-hehuanshan-wuling-current-image",
@@ -4892,8 +4892,8 @@
       "Wuling Pass",
       "Wuling Taiwan"
     ],
-    "rightsBasis": "Official Taiwan government real-time image service; ERN links to the source and does not copy or restream imagery.",
-    "freshnessEvidence": "Taiwan MyEGov labels Wuling Pass as real-time imagery and states the camera is installed at 3,275 metres; connectivity can vary with mountain weather."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "taiwan-yangmingshan-xiaoyoukeng-current-image",
@@ -4928,8 +4928,8 @@
       "Yangmingshan",
       "Xiaoyoukeng"
     ],
-    "rightsBasis": "Official Taiwan government real-time image service; ERN links to the source and does not copy or restream imagery.",
-    "freshnessEvidence": "Taiwan MyEGov labels Xiaoyoukeng as real-time imagery and identifies the source as Yangmingshan National Park."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "taiwan-green-island-chaikou-current-image",
@@ -4965,8 +4965,8 @@
       "Chaikou",
       "Lyudao"
     ],
-    "rightsBasis": "Official Taiwan government real-time image service; ERN links to the source and does not copy or restream imagery.",
-    "freshnessEvidence": "Taiwan MyEGov explicitly labels Chaikou snorkeling area as real-time imagery supplied by the East Coast National Scenic Area Administration."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "taiwan-kenting-forest-current-image",
@@ -5002,8 +5002,8 @@
       "Kenting National Forest",
       "Kenting Ocean View Tower"
     ],
-    "rightsBasis": "Official Taiwan Forestry live-image page; ERN links to the source and does not copy or restream imagery.",
-    "freshnessEvidence": "Taiwan Forestry's current page is explicitly titled as real-time imagery for the Kenting National Forest Ocean View Tower and was updated in September 2026."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "taiwan-sun-moon-lake-current-image",
@@ -5038,8 +5038,8 @@
       "Sun Moon Lake",
       "Riyue Tan"
     ],
-    "rightsBasis": "Official Sun Moon Lake tourism live-camera service; ERN links to the source and does not copy or restream imagery.",
-    "freshnessEvidence": "The official Sun Moon Lake National Scenic Area website exposes a dedicated Live Camera page with multiple named lake viewpoints."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "sanparks-punda-maria-current-image",
@@ -5186,8 +5186,8 @@
       "Sabancaya",
       "Sabancaya Volcano"
     ],
-    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery.",
-    "freshnessEvidence": "Peru's CENVUL states Sabancaya camera images are obtained in real time every minute and lists four scientific cameras in its monitoring network."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "peru-misti-current-image",
@@ -5224,8 +5224,8 @@
       "El Misti",
       "Misti Volcano"
     ],
-    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery.",
-    "freshnessEvidence": "CENVUL lists Misti among Peru's real-time monitored volcanoes and states its digital volcano images are obtained every minute."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "peru-coropuna-current-image",
@@ -5261,8 +5261,8 @@
       "Coropuna",
       "Coropuna Volcano"
     ],
-    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery.",
-    "freshnessEvidence": "CENVUL lists Coropuna in its real-time monitoring network; its monitored-volcano interface provides digital images obtained every minute."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "peru-ticsani-current-image",
@@ -5298,8 +5298,8 @@
       "Ticsani",
       "Ticsani Volcano"
     ],
-    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery.",
-    "freshnessEvidence": "CENVUL lists Ticsani among volcanoes monitored in real time and exposes a digital-image monitoring path with minute-scale imagery."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "peru-chachani-current-image",
@@ -5335,8 +5335,8 @@
       "Chachani",
       "Chachani Volcano"
     ],
-    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery.",
-    "freshnessEvidence": "CENVUL lists Chachani among its real-time monitored volcanoes and provides digital monitoring imagery through the official interface."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "peru-yucamane-current-image",
@@ -5372,8 +5372,8 @@
       "Yucamane",
       "Yucamane Volcano"
     ],
-    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery.",
-    "freshnessEvidence": "CENVUL lists Yucamane among its real-time monitored volcanoes and provides digital monitoring imagery through the official interface."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "mexico-popocatepetl-current-image",
@@ -6485,8 +6485,8 @@
     "lat": 13.257,
     "lon": 123.685,
     "coordinateBasis": "VOLCANO_REFERENCE",
-    "rightsBasis": "Official Philippine government volcano-monitoring page; ERN links externally and does not copy or restream imagery.",
-    "freshnessEvidence": "PHIVOLCS states its IP camera views are automated snapshots sampled every minute for real-time volcano monitoring."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "bulusan-phivolcs-current-image",
@@ -6522,8 +6522,8 @@
     "lat": 12.77,
     "lon": 124.056,
     "coordinateBasis": "VOLCANO_REFERENCE",
-    "rightsBasis": "Official Philippine government volcano-monitoring page; ERN links externally and does not copy or restream imagery.",
-    "freshnessEvidence": "PHIVOLCS states its IP camera views are automated snapshots sampled every minute for real-time volcano monitoring."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "kanlaon-phivolcs-current-image",
@@ -6559,8 +6559,8 @@
     "lat": 10.412,
     "lon": 123.132,
     "coordinateBasis": "VOLCANO_REFERENCE",
-    "rightsBasis": "Official Philippine government volcano-monitoring page; ERN links externally and does not copy or restream imagery.",
-    "freshnessEvidence": "PHIVOLCS states its IP camera views are automated snapshots sampled every minute for real-time volcano monitoring."
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "taipei-dajia-riverside-current",
@@ -7344,9 +7344,9 @@
     "lat": 42.576,
     "lon": 1.667,
     "coordinateBasis": "AREA_REFERENCE",
-    "coordinateNote": "Representative Grandvalira/Soldeu resort reference; not claimed as the exact camera position.",
-    "rightsBasis": "Official Visit Andorra page exposes live webcams for real-time resort conditions; ERN links externally and does not republish imagery.",
-    "freshnessEvidence": "Visit Andorra explicitly says Grandvalira live webcams show real-time resort conditions."
+    "coordinateNote": "Representative place reference; not exact camera position.",
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "andorra-pal-arinsal-current",
@@ -7381,9 +7381,9 @@
     "lat": 42.572,
     "lon": 1.484,
     "coordinateBasis": "AREA_REFERENCE",
-    "coordinateNote": "Representative Pal Arinsal resort reference; not claimed as the exact camera position.",
-    "rightsBasis": "Official Visit Andorra page exposes live webcams for real-time resort conditions; ERN links externally and does not republish imagery.",
-    "freshnessEvidence": "Visit Andorra explicitly labels Pal Arinsal webcams as live and for checking real-time conditions."
+    "coordinateNote": "Representative place reference; not exact camera position.",
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "andorra-naturland-current",
@@ -7418,9 +7418,9 @@
     "lat": 42.442019,
     "lon": 1.502066,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateNote": "Visit Andorra publishes this coordinate for Naturland cota 1600; not claimed as the exact camera position.",
-    "rightsBasis": "Official Visit Andorra page exposes live webcams for real-time conditions; ERN links externally and does not republish imagery.",
-    "freshnessEvidence": "Visit Andorra says Naturland live webcams show real-time center conditions."
+    "coordinateNote": "Representative place reference; not exact camera position.",
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "reunion-boucan-canot-current",
@@ -7454,9 +7454,9 @@
     "lat": -21.028,
     "lon": 55.225,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateNote": "Representative Boucan Canot beach reference; not claimed as exact camera position.",
-    "rightsBasis": "Official La Réunion Tourism webcam page; ERN links externally and does not republish imagery.",
-    "freshnessEvidence": "La Réunion Tourism describes the Boucan Canot HD panorama as live/almost-live and provides a webcam/weather-station interface."
+    "coordinateNote": "Representative place reference; not exact camera position.",
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "reunion-trou-deau-current",
@@ -7491,9 +7491,9 @@
     "lat": -21.095,
     "lon": 55.232,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateNote": "Representative Trou d’Eau beach reference; not claimed as exact camera position.",
-    "rightsBasis": "Official La Réunion Tourism webcam page; ERN links externally and does not republish imagery.",
-    "freshnessEvidence": "La Réunion Tourism publishes the Trou d’Eau webcam and HD panorama with current weather context."
+    "coordinateNote": "Representative place reference; not exact camera position.",
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "reunion-roches-noires-current",
@@ -7528,9 +7528,9 @@
     "lat": -21.052,
     "lon": 55.226,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateNote": "Representative Roches Noires beach reference; not claimed as exact camera position.",
-    "rightsBasis": "Official La Réunion Tourism webcam page; ERN links externally and does not republish imagery.",
-    "freshnessEvidence": "La Réunion Tourism states the Roches Noires panoramic photo lets visitors view current sunshine, bathing conditions and safety flags."
+    "coordinateNote": "Representative place reference; not exact camera position.",
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "reunion-piton-fournaise-current",
@@ -7565,9 +7565,9 @@
     "lat": -21.244,
     "lon": 55.708,
     "coordinateBasis": "AREA_REFERENCE",
-    "coordinateNote": "Representative volcano reference; not claimed as exact camera position.",
-    "rightsBasis": "Official La Réunion Tourism / IPGP-OVPF webcam page; ERN links externally and does not republish imagery.",
-    "freshnessEvidence": "The official page states Full HD volcano video/panorama imagery is updated every 30 minutes, day and night."
+    "coordinateNote": "Representative place reference; not exact camera position.",
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "azores-sao-miguel-current",
@@ -7602,9 +7602,9 @@
     "lat": 37.78,
     "lon": -25.5,
     "coordinateBasis": "ISLAND_REFERENCE",
-    "coordinateNote": "Representative São Miguel island reference; not claimed as exact camera position.",
-    "rightsBasis": "Official Visit Azores webcam network; ERN links externally and does not republish imagery.",
-    "freshnessEvidence": "Visit Azores maintains an official São Miguel webcam page with multiple current coastal webcam spots."
+    "coordinateNote": "Representative place reference; not exact camera position.",
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "azores-terceira-current",
@@ -7638,9 +7638,9 @@
     "lat": 38.733,
     "lon": -27.067,
     "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateNote": "Representative Praia da Vitória reference; not claimed as exact camera position.",
-    "rightsBasis": "Official Visit Azores webcam page; ERN links externally and does not republish imagery.",
-    "freshnessEvidence": "Visit Azores currently lists Praia da Vitória as the active webcam spot for Terceira."
+    "coordinateNote": "Representative place reference; not exact camera position.",
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   },
   {
     "id": "azores-santa-maria-current",
@@ -7675,8 +7675,8 @@
     "lat": 36.95,
     "lon": -25.1,
     "coordinateBasis": "ISLAND_REFERENCE",
-    "coordinateNote": "Representative Santa Maria island reference; not claimed as exact camera position.",
-    "rightsBasis": "Official Visit Azores webcam page; ERN links externally and does not republish imagery.",
-    "freshnessEvidence": "Visit Azores currently lists Formosa as the active webcam spot for Santa Maria."
+    "coordinateNote": "Representative place reference; not exact camera position.",
+    "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
+    "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
   }
 ]
