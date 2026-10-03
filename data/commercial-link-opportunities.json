@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:55:00Z",
+  "generatedAt": "2026-10-03T13:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -168,7 +168,8 @@
       "id": "viator-cape-town",
       "destination": "Cape Town",
       "placeIds": [
-        "cape-town-waterfront"
+        "cape-town-waterfront",
+        "blouberg-table-mountain"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -2201,6 +2202,228 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/istanbul-attractions-c79079/",
       "nextAction": "Generate one Istanbul destination-level Tiqets tracked link in Travelpayouts and manually verify it; reuse city-wide rather than per-camera."
+    },
+    {
+      "id": "viator-st-moritz",
+      "destination": "St. Moritz",
+      "placeIds": [
+        "st-moritz"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Strong Alpine destination where sightseeing and mountain activities are natural post-discovery actions.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search Viator account for St. Moritz / Engadin coverage and generate one destination-level link only if inventory is strong."
+    },
+    {
+      "id": "viator-verbier",
+      "destination": "Verbier",
+      "placeIds": [
+        "verbier"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Mountain resort with clear seasonal activity intent.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check exact Verbier inventory before generating any tracked link."
+    },
+    {
+      "id": "viator-dolomiti-superski",
+      "destination": "Dolomites / Dolomiti Superski",
+      "placeIds": [
+        "dolomiti-superski"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Large mountain destination with strong hiking, sightseeing and seasonal activity intent.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search for Dolomites destination inventory and prefer one regional link over resort-by-resort duplication."
+    },
+    {
+      "id": "viator-queenstown-alps",
+      "destination": "Queenstown",
+      "placeIds": [
+        "queenstown-airport-alps"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "High-intent adventure destination; activity planning naturally follows current alpine/airport conditions.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one Queenstown destination link after account inventory check."
+    },
+    {
+      "id": "viator-kitzbuhel",
+      "destination": "Kitzbühel",
+      "placeIds": [
+        "kitzbuhel"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Seasonal Alpine resort with clear visitor activity intent.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Kitzbühel inventory before exact-link generation."
+    },
+    {
+      "id": "viator-ski-arlberg",
+      "destination": "Ski Arlberg / St. Anton",
+      "placeIds": [
+        "ski-arlberg"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Large Alpine destination with strong skiing and summer-mountain planning intent.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search St. Anton / Arlberg inventory and use one regional link if useful."
+    },
+    {
+      "id": "viator-glacier-national-park",
+      "destination": "Glacier National Park",
+      "placeIds": [
+        "glacier-national-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Major national-park destination with natural guided-tour and sightseeing demand.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one Glacier National Park activity link after confirming current inventory."
+    },
+    {
+      "id": "viator-kaikoura",
+      "destination": "Kaikōura",
+      "placeIds": [
+        "kaikoura-coast"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Coastal current-image source pairs naturally with whale-watching and marine-wildlife planning.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search Kaikōura tours/whale-watching inventory and generate one destination link if strong."
+    },
+    {
+      "id": "kkday-kaohsiung",
+      "destination": "Kaohsiung / Cijin",
+      "placeIds": [
+        "cijin-beach-kaohsiung"
+      ],
+      "partnerCandidate": "kkday",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Taiwan destination where KKday may fill Asia activity coverage beyond existing core partners.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check KKday Kaohsiung/Cijin coverage in Travelpayouts before link generation."
+    },
+    {
+      "id": "viator-fort-lauderdale",
+      "destination": "Fort Lauderdale / Lauderdale-by-the-Sea",
+      "placeIds": [
+        "lauderdale-by-the-sea"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Beach destination with strong cruise, water and sightseeing intent.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Use Fort Lauderdale-level inventory only if it remains genuinely useful for Lauderdale-by-the-Sea visitors."
+    },
+    {
+      "id": "viator-oeschinensee",
+      "destination": "Oeschinensee / Kandersteg",
+      "placeIds": [
+        "oeschinensee"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "High-value scenic destination with hiking/mountain visitor intent.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Kandersteg/Oeschinensee inventory; do not substitute generic Switzerland results."
+    },
+    {
+      "id": "viator-waikiki",
+      "destination": "Waikiki / Honolulu",
+      "placeIds": [
+        "waikiki-south-shore"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Major beach destination with broad water, culture and island-tour planning demand.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one Honolulu/Waikiki destination link after exact inventory check."
+    },
+    {
+      "id": "viator-boston-harbor",
+      "destination": "Boston Harbor",
+      "placeIds": [
+        "boston-harbor-islands"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Harbor/islands view naturally supports cruise, ferry and city sightseeing planning.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Use a Boston Harbor/city-level link only if it directly supports harbor/island visitors."
+    },
+    {
+      "id": "viator-reykjavik",
+      "destination": "Reykjavík",
+      "placeIds": [
+        "reykjavik"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "High-intent Iceland gateway with strong city and day-trip planning relevance.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one Reykjavík destination-level link after exact account check."
+    },
+    {
+      "id": "viator-la-palma",
+      "destination": "La Palma",
+      "placeIds": [
+        "la-palma-aridane-valley",
+        "la-palma-caldera-taburiente"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Island/volcano discovery pairs naturally with hiking and nature activity planning.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search La Palma island inventory and use one island-level link across both places if useful."
+    },
+    {
+      "id": "klook-farm-tomita",
+      "destination": "Furano / Farm Tomita",
+      "placeIds": [
+        "farm-tomita"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Japan destination with seasonal visitor demand where Klook may provide useful Furano/Hokkaido activities.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Furano/Farm Tomita coverage before generating a tracked link."
+    },
+    {
+      "id": "viator-koli",
+      "destination": "Koli / North Karelia",
+      "placeIds": [
+        "koli-lake-pielinen"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Distinct Finnish nature destination with hiking/scenic visitor intent.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Only generate if Viator exposes destination-relevant Koli/North Karelia inventory."
     }
   ]
 }
