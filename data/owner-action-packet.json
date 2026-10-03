@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T12:05:00Z",
+  "status": "DORMANT_UNTIL_AUTONOMOUS_WORK_STOPS_BEING_THE_BOTTLENECK",
+  "purpose": "Bundle owner-only affiliate link generation and playback checks into worthwhile sessions instead of interrupting ERN expansion one item at a time.",
+  "sourceVerificationBatch": [
+    "ala-archa-natural-park",
+    "denpasar-city-live",
+    "istanbul-bosphorus-live",
+    "istanbul-sultanahmet-live",
+    "karakol-ski-base",
+    "shymbulak-mountain-resort",
+    "bled-lake-tourism",
+    "dubrovnik-pile-city",
+    "everest-khumbu-hotel-view",
+    "mauritius-grand-baie",
+    "longyearbyen-unis-webcam",
+    "tvoroyri-port-live"
+  ],
+  "exactAffiliateLinkBatch": [
+    "viator-nuuk",
+    "viator-faroe-islands",
+    "klook-kenting-national-forest",
+    "klook-green-island-taitung",
+    "tiqets-vienna",
+    "tiqets-georgia-aquarium",
+    "tiqets-san-diego-zoo",
+    "viator-helsinki",
+    "viator-lucerne",
+    "viator-cancun",
+    "viator-zermatt"
+  ],
+  "utilityProgramBatch": [
+    {
+      "program": "airalo",
+      "requestedLink": "global or broad eSIM tracked link",
+      "reason": "One connectivity utility can serve many international ERN destinations without per-place clutter."
+    },
+    {
+      "program": "go-city",
+      "requestedLink": "major-city pass link or supported city-specific links",
+      "reason": "Strong fit for major ERN cities after destination discovery."
+    },
+    {
+      "program": "kiwitaxi",
+      "requestedLink": "destination/transfer links for uncovered arrival cities",
+      "reason": "Extends airport/city transfer utility beyond Welcome Pickups."
+    },
+    {
+      "program": "radical-storage",
+      "requestedLink": "global/city luggage-storage tracked link",
+      "reason": "Useful for day visitors, cruise arrivals and stopovers."
+    },
+    {
+      "program": "aviasales",
+      "requestedLink": "flight-search tracked link",
+      "reason": "Broad travel-planning utility that can remain secondary to destination-specific actions."
+    },
+    {
+      "program": "kkday",
+      "requestedLink": "Asia destination activity links for gaps not already served well by Klook",
+      "reason": "Adds Asia-heavy inventory without waiting for traffic-gated GetYourGuide/Tripadvisor programs."
+    }
+  ],
+  "lockedProgramRule": "Do not ask the owner to recheck Trip.com, Hotels.com, Booking.com, Agoda, Expedia or other traffic-gated programs until a material traffic/conversion signal or platform status change occurs.",
+  "publicActivationAllowed": false,
+  "safeguards": [
+    "No invented affiliate URLs",
+    "Exact tracked link must be owner/platform generated and manually opened",
+    "No paid ranking",
+    "No automatic rewriting",
+    "No source truth changes from commercial value"
+  ]
+}
