@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:30:00Z",
+  "generatedAt": "2026-10-03T03:35:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 106,
+    "currentHealthyDistinctPlaceBaseline": 112,
     "targetRange": [
       150,
       200
@@ -64,18 +64,15 @@
     ],
     "quasiLivePolicy": {
       "searchableAllowed": true,
-      "watchEarthDefault": false,
-      "accepted": [
-        "frequently refreshed official webcam stills",
-        "official current monitoring images",
-        "recent provider-published images with reliable timestamps"
+      "acceptedTruth": "LIVE_IMAGE",
+      "acceptedEvidence": [
+        "official refreshed webcam",
+        "frequently updated still image",
+        "provider-published current image with reliable timestamp"
       ],
-      "required": [
-        "clear LIVE_IMAGE/current-image labeling",
-        "freshness evidence",
-        "official/provider source",
-        "no prerecorded-as-live claims"
-      ]
+      "watchEarthEligible": false,
+      "labelingRequired": true,
+      "rule": "Quasi-live expands Search/Explore only; it never masquerades as continuous live video."
     },
     "quasiLivePromotedCount": 15
   },
@@ -151,7 +148,8 @@
     "exactLinkQueueCount": 33,
     "sourceGatedQueueCount": 33,
     "sourceGapBlockedCount": 1,
-    "sourceGatedOpportunityCount": 31
+    "sourceGatedOpportunityCount": 31,
+    "quasiLiveCommercialRule": "A healthy quasi-live searchable place may unlock downstream travel planning, but commercial value never changes truth/currentness."
   },
   "safeguards": {
     "automaticPlacement": false,
