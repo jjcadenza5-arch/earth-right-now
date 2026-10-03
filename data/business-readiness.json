@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T15:30:00Z",
+  "generatedAt": "2026-10-03T15:35:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -122,7 +122,30 @@
       "traveloka",
       "omio",
       "12go"
-    ]
+    ],
+    "travelpayoutsVisibleButLockedPrograms": [
+      "trip-com",
+      "hotels-com",
+      "booking-com",
+      "agoda",
+      "expedia",
+      "getyourguide",
+      "tripadvisor-experiences",
+      "discovercars",
+      "traveloka",
+      "omio",
+      "12go",
+      "hostelworld",
+      "vrbo",
+      "ticketmaster",
+      "vio-com",
+      "rakuten-travel-intl",
+      "visitorscoverage",
+      "insubuy"
+    ],
+    "travelpayoutsUnlockStrategy": "TRAFFIC_LED_RECHECK_ONLY_ON_STATUS_CHANGE_OR_MATERIAL_GROWTH",
+    "nextPreferredUnlock": "trip-com",
+    "nextPreferredUnlockReason": "Broad stay + transport + activities coverage would fill ERN's largest remaining business-category gap without requiring multiple new partner programs."
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -152,7 +175,9 @@
     "Commercial opportunity registry expanded to 150 entries while verified/public links remain fail-closed until exact tracked-link verification.",
     "Traffic-gated future programs mapped from owner Travelpayouts account screenshots",
     "Searchable coverage reconciled to 283 healthy distinct places with 249 explicit commercial paths and 34 intentionally editorial-first places.",
-    "Taiwan / New Zealand quality batch added official Maolin, Yehliu, Heping Island, Elephant Mountain, Tamsui Fisherman's Wharf, Gaomei Wetland, Lyttelton Heads and Akaroa Heads current-image places while preserving the strict runtime budget."
+    "Taiwan / New Zealand quality batch added official Maolin, Yehliu, Heping Island, Elephant Mountain, Tamsui Fisherman's Wharf, Gaomei Wetland, Lyttelton Heads and Akaroa Heads current-image places while preserving the strict runtime budget.",
+    "Owner screenshots mapped the visible Travelpayouts program catalog and confirmed many desirable programs are still not unlocked for ERN",
+    "Traffic-led unlock roadmap created; Trip.com is the P1 future stay-program target"
   ],
   "humanOnlyRemaining": [
     {
@@ -186,6 +211,14 @@
       "blocksPublicERN": false,
       "blocksCurrentOffers": false,
       "blocksOnlyFuturePrograms": true
+    },
+    {
+      "id": "travelpayouts-unlock-recheck",
+      "action": "Recheck Trip.com and other locked Travelpayouts programs only after a material traffic/account-status change or an explicit platform notification",
+      "priority": "LATER_TRIGGERED",
+      "blocksPublicERN": false,
+      "blocksCurrentOffers": false,
+      "blocksOnlyNewPlacements": true
     }
   ],
   "safeguards": [
