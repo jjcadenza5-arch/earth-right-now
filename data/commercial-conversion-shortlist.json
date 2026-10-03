@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T14:35:00Z",
+  "generatedAt": "2026-10-03T16:35:00Z",
   "purpose": "Convert the highest-value already-healthy ERN destinations using active partners, without overwhelming the owner with the full backlog.",
   "activePartners": [
     "viator",
@@ -8,8 +8,8 @@
     "tiqets",
     "welcome-pickups"
   ],
-  "totalExactLinkBacklog": 152,
-  "currentlyActionableHealthyExactLinkOpportunities": 152,
+  "totalExactLinkBacklog": 169,
+  "currentlyActionableHealthyExactLinkOpportunities": 169,
   "batchSize": 15,
   "batch": [
     {
@@ -251,5 +251,6 @@
   ],
   "completionRule": "Do not open the next batch until this batch is substantially verified or analytics show a reason to reprioritize.",
   "noInventedLinks": true,
-  "noCommissionRanking": true
+  "noCommissionRanking": true,
+  "note": "300-place baseline. Current top batch remains intentionally stable until substantially verified or analytics justify reprioritization; newly added Taiwan/New Zealand paths remain in the broader worksheet."
 }
