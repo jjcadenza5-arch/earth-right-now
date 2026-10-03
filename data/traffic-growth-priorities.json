@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:40:00Z",
+  "generatedAt": "2026-10-03T13:25:00Z",
   "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
-  "currentSearchableHealthyPlaces": 250,
+  "currentSearchableHealthyPlaces": 256,
   "unlockTargets": [
     "trip-com",
     "hotels-com",
@@ -63,5 +63,11 @@
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
   "note": "ERN does not know Travelpayouts' private traffic thresholds and must not invent them.",
-  "milestone": "250_SEARCHABLE_PLACES_REACHED"
+  "milestone": "256_SEARCHABLE_PLACES_AND_196_COMMERCIAL_PATHS",
+  "currentBusinessCoverage": {
+    "healthyPlaces": 256,
+    "placesWithCommercialPath": 196,
+    "placesWithoutCommercialPath": 60,
+    "verifiedLinkPlaces": 20
+  }
 }
