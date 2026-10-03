@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T11:56:00Z",
+  "generatedAt": "2026-10-03T12:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -399,7 +399,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/San-Diego/d736-ttd",
       "publicInventoryEvidence": "Current Viator San Diego inventory explicitly includes San Diego Zoo 1-Day Pass tickets.",
-      "nextAction": "Generate one San Diego destination or Zoo-specific Viator partner link and verify it manually; avoid duplicate density if Tiqets is later activated for the same place."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/San-Diego/d736-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-whistler",
@@ -414,7 +418,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Vancouver/d616-ttd",
       "publicInventoryEvidence": "Current Viator Vancouver inventory contains multiple Whistler + Sea-to-Sky experiences; exact Whistler destination-link suitability still requires account search.",
-      "nextAction": "Only activate if the Viator partner tools expose a clean Whistler destination-level link; do not route visitors through a generic Vancouver page."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Vancouver/d616-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "tiqets-malta-future",
@@ -444,9 +452,13 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Dubrovnik/d904-ttd",
       "publicInventoryEvidence": "Current Viator Dubrovnik inventory includes Old Town panoramic tours, island cruises and other city/Adriatic experiences.",
-      "nextAction": "Generate one city-level Dubrovnik Viator link and verify it manually; reuse it across the Pile/Gruž views without duplicate commercial density.",
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
       "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
-      "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory."
+      "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory.",
+      "candidateTrackedUrl": "https://www.viator.com/Dubrovnik/d904-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "klook-taipei-future",
@@ -520,7 +532,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Aruba/d28-ttd",
       "publicInventoryEvidence": "Current Viator Aruba destination inventory contains 400+ experiences including snorkeling, sailing, island tours and beach-focused activities.",
-      "nextAction": "Generate one Aruba destination-level Viator partner link and manually verify it before public activation; keep the offer downstream from Earth discovery."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Aruba/d28-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-kruger-future",
@@ -554,7 +570,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Big-Island-of-Hawaii/d669-ttd",
       "publicInventoryEvidence": "Current Viator Big Island inventory includes Hawaii Volcanoes National Park experiences, Kīlauea-focused eco tours and volcano helicopter products.",
-      "nextAction": "Generate one Big Island / Hawaiʻi Volcanoes National Park partner link that resolves cleanly to Kīlauea-relevant inventory; verify it manually before public activation."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Big-Island-of-Hawaii/d669-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-torres-del-paine",
@@ -811,9 +831,13 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Mykonos/d958-ttd",
       "publicInventoryEvidence": "Viator currently lists hundreds of Mykonos products across shore excursions, cruises, city tours, beaches and private sightseeing.",
-      "nextAction": "Generate one Mykonos island-level Viator partner link and verify it manually before public activation.",
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
       "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
-      "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory."
+      "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory.",
+      "candidateTrackedUrl": "https://www.viator.com/Mykonos/d958-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-santorini-future",
@@ -828,9 +852,13 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Santorini/d959-ttd",
       "publicInventoryEvidence": "Viator currently lists 1,000+ Santorini experiences including cruises, Oia/Fira sightseeing, volcanic beaches, wine, photography and private tours.",
-      "nextAction": "Generate one Santorini destination-level Viator partner link and verify it manually before public activation.",
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
       "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
-      "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory."
+      "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory.",
+      "candidateTrackedUrl": "https://www.viator.com/Santorini/d959-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-brasov-poiana",
@@ -845,7 +873,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Brasov/d23067-ttd",
       "publicInventoryEvidence": "Current Viator Brașov inventory includes tours that explicitly visit Poiana Brașov as well as broader Transylvania and mountain experiences.",
-      "nextAction": "Generate one Brașov destination-level Viator tracked link and manually verify it before public activation."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Brasov/d23067-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-flam",
@@ -890,7 +922,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Chamonix/d24269-ttd",
       "publicInventoryEvidence": "Viator currently lists 50+ Chamonix experiences and landmark tickets across the Mont Blanc area.",
-      "nextAction": "Generate one Chamonix destination-level Viator link and verify it manually."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Chamonix/d24269-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-bergen",
@@ -905,7 +941,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Bergen/d4318-ttd",
       "publicInventoryEvidence": "Viator currently lists 200+ Bergen experiences including Mostraumen cruises, Flåm/Nærøyfjord trips, city tours and kayaking.",
-      "nextAction": "Generate one Bergen destination-level Viator partner link and manually verify it."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Bergen/d4318-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-pico-island",
@@ -1003,8 +1043,12 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Panama-City/d950-ttd",
       "publicInventoryEvidence": "Current Viator Panama City inventory includes canal sightseeing, Miraflores Visitor Center, Gatún Lake and tours covering Agua Clara/Gatún Locks.",
-      "nextAction": "Generate one Panama Canal destination-level Viator partner link and manually verify it; reuse across verified lock places without duplicate commercial density.",
-      "sourceGateResolvedAt": "2026-10-03T05:30:00Z"
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "sourceGateResolvedAt": "2026-10-03T05:30:00Z",
+      "candidateTrackedUrl": "https://www.viator.com/Panama-City/d950-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-nairobi-national-park-future",
@@ -1266,7 +1310,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/San-Jose/d793-ttd",
       "publicInventoryEvidence": "Current Viator San José inventory includes Irazú Volcano + Cartago/Orosi day-trip products.",
-      "nextAction": "Generate a destination-appropriate Irazú/Cartago Viator partner link and manually verify it; do not use a generic San José link if a cleaner destination/product route is available."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/San-Jose/d793-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-turrialba",
@@ -1281,7 +1329,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/San-Jose/d793-ttd",
       "publicInventoryEvidence": "Viator currently maintains broad San José/Central Valley volcano and nature inventory; exact Turrialba-specific partner-link suitability still requires account search.",
-      "nextAction": "Search Viator partner tools for a clean Turrialba-specific destination/product link; skip activation if only weak generic inventory is available."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/San-Jose/d793-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-fuego-antigua",
@@ -1296,7 +1348,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Antigua/d4599-ttd",
       "publicInventoryEvidence": "Current Viator Antigua inventory includes multiple Acatenango overnight hikes designed around views of active Volcán de Fuego.",
-      "nextAction": "Generate one Antigua/Acatenango destination-level Viator partner link and verify it manually before public activation; keep the link downstream from Fuego discovery."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Antigua/d4599-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-cerro-negro",
@@ -1358,7 +1414,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Seattle/d704-ttd",
       "publicInventoryEvidence": "Current Viator Seattle inventory includes several Mount Rainier National Park full-day tours, hikes and scenic day trips.",
-      "nextAction": "Generate one Mount Rainier/Seattle partner link and manually verify it before public activation."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Seattle/d704-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-rio-copacabana",
@@ -1511,7 +1571,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Arequipa/d5020-ttd",
       "publicInventoryEvidence": "Current Viator Arequipa inventory includes Colca Canyon day trips and high-altitude regional sightseeing; a single regional planning link is preferable to one affiliate placement per volcano.",
-      "nextAction": "Generate one Arequipa/Colca destination-level Viator tracked link and reuse it across the mapped regional volcano places only if the destination page is clean and useful."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Arequipa/d5020-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-popocatepetl",
@@ -1875,7 +1939,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/St-Johns/d28792-ttd",
       "publicInventoryEvidence": "Viator currently exposes a St. John's destination page with dozens of 2026 tours and excursions.",
-      "nextAction": "Generate one St. John's destination-level Viator tracked link and manually verify it before public activation."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/St-Johns/d28792-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-maui-kihei",
@@ -1890,7 +1958,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Kihei/d51007-ttd",
       "publicInventoryEvidence": "Viator currently lists dozens of Kihei/Maui tours and excursions for 2026.",
-      "nextAction": "Generate one Maui or Kihei destination-level Viator tracked link and manually verify it before public activation."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Kihei/d51007-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-orpen-kruger",
@@ -1905,7 +1977,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Kruger-National-Park/d776-ttd",
       "publicInventoryEvidence": "Current Viator Kruger inventory includes full-day safaris from Hoedspruit/Orpen Gate and multi-day itineraries covering Orpen.",
-      "nextAction": "Generate one Kruger/Orpen destination-level Viator tracked link and verify it manually before public activation."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Kruger-National-Park/d776-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-hveravellir",
@@ -1970,7 +2046,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Reunion-Island/d4395-ttd",
       "publicInventoryEvidence": "Viator currently exposes Réunion Island inventory including west-coast discovery, full-island tours and Piton de la Fournaise volcano excursions.",
-      "nextAction": "Generate one Réunion island-level Viator tracked link and manually verify it; reuse across verified Réunion places rather than creating duplicate commercial density."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Reunion-Island/d4395-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-azores-sao-miguel",
@@ -1985,7 +2065,11 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Sao-Miguel/d50209-ttd",
       "publicInventoryEvidence": "Viator currently lists São Miguel experiences including Sete Cidades, Lagoa do Fogo, hiking, snorkeling and food/wine products.",
-      "nextAction": "Generate one São Miguel destination-level Viator tracked link and manually verify it before public activation."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "candidateTrackedUrl": "https://www.viator.com/Sao-Miguel/d50209-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
+      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
+      "ownerVerificationRequired": true
     }
   ]
 }
