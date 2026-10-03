@@ -34,7 +34,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "3%–5% / €1.5 flights",
+    "catalogCookieSnapshot": "One session",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "agoda",
@@ -67,7 +73,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "1–6%",
+    "catalogCookieSnapshot": "1 day",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "viator",
@@ -187,7 +199,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "1.35–3.6%",
+    "catalogCookieSnapshot": "7 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "trip-com",
@@ -228,7 +246,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "1–5.5%",
+    "catalogCookieSnapshot": "7–30 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "expedia",
@@ -266,7 +290,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "1.35–3.6%",
+    "catalogCookieSnapshot": "30 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "getyourguide",
@@ -302,7 +332,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "8%",
+    "catalogCookieSnapshot": "31 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "tripadvisor-experiences",
@@ -338,7 +374,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "8%",
+    "catalogCookieSnapshot": "14 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "discovercars",
@@ -374,7 +416,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "23–54%",
+    "catalogCookieSnapshot": "365 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "traveloka",
@@ -411,7 +459,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "0.36–3.6%",
+    "catalogCookieSnapshot": "14 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "omio",
@@ -447,7 +501,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "6%",
+    "catalogCookieSnapshot": "30 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "12go",
@@ -483,7 +543,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "4–5.5%",
+    "catalogCookieSnapshot": "30 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "hostelworld",
@@ -519,7 +585,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "40% rev share / fixed Social Pass reward",
+    "catalogCookieSnapshot": "30 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "vrbo",
@@ -555,7 +627,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "1.8%",
+    "catalogCookieSnapshot": "7 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "ticketmaster",
@@ -592,7 +670,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "0–4.15%",
+    "catalogCookieSnapshot": "7–30 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "vio-com",
@@ -628,7 +712,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "40–64% revenue share",
+    "catalogCookieSnapshot": "30 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "rakuten-travel-intl",
@@ -665,7 +755,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "0.8–5%",
+    "catalogCookieSnapshot": "30 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "visitorscoverage",
@@ -701,7 +797,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "$1–$160 fixed reward",
+    "catalogCookieSnapshot": "30 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "insubuy",
@@ -737,7 +839,13 @@
       "observedAt": "2026-10-03T10:20:00Z",
       "source": "Owner Travelpayouts screenshots",
       "note": "Display terms only; not an earnings forecast and not proof of program unlock."
-    }
+    },
+    "ownerAccountVisibility": "VISIBLE_IN_TRAVELPAYOUTS_CATALOG",
+    "ownerUnlockAssessment": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+    "ownerEvidenceAt": "2026-10-03T10:20:00Z",
+    "catalogRewardSnapshot": "$1.5–$150 fixed reward",
+    "catalogCookieSnapshot": "30 days",
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
   },
   {
     "id": "yesim",
