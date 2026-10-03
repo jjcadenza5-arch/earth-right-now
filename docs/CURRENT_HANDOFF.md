@@ -173,3 +173,9 @@ Central Europe / Aegean expansion batch — 2026-10-03:
 - Added source-gated Viator business opportunities for Bled, Mykonos, Santorini and Brașov; none can activate before the corresponding live source is human-confirmed and promoted.
 - Pamir core remains intentionally unresolved; six Kyrgyz approach/mountain candidates are research-only and do not masquerade as Pamir proper.
 - Source verification priority and focused expansion plan were refreshed after this batch.
+
+
+Scenic-place commercial expansion — 2026-10-03:
+- Added exact-link research paths for Flåm/Aurlandsfjord, Addo Elephant National Park, Chamonix/Mont Blanc, Bergen and Pico Island using the already-active Viator relationship.
+- Each remains account-search / exact-link gated; no URL is invented and no public placement occurs until owner-generated tracked-link verification.
+- Commercial priority matrix was refreshed so newly queued places stop appearing as generic uncovered research.
