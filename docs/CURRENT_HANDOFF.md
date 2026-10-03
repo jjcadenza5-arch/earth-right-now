@@ -81,3 +81,14 @@ Large-batch expansion checkpoint — 2026-10-03 02:20 UTC:
 - Business opportunity registry expanded with Tallinn/Tiqets, Malta/Tiqets, Dubrovnik/Viator, Zermatt/Viator, San Diego/Viator and Whistler/Viator research paths.
 - Commercial expansion is now additionally prioritized across uncovered healthy places in data/commercial-priority-matrix.json.
 - Existing four partners remain the preferred expansion path; accommodation candidates remain research-only; all public ranking/commercial safeguards remain unchanged.
+
+
+Large-batch expansion checkpoint — 2026-10-03 03:20 UTC:
+- Current healthy/searchable baseline remains 91 places; private playback-gated expansion queue is now 49 candidates.
+- Added official Taiwan Tourism Administration Live Taiwan research family (8 distinct places) and additional SANParks research family (Satara, Olifants, Punda Maria, Talamati) without auto-promoting any source.
+- Added data/featured-camera-rotation.json: 24-place editorial audit spanning 18 countries and 21 providers, advisory only and commercial-neutral.
+- Added/updated geographic gap planning so Europe/North America growth is controlled while South America, broader Africa, wider Asia, Oceania and Caribbean are prioritized.
+- Commercial opportunity registry now has 12 verified-link, 16 exact-link-required and 10 source-gated opportunities.
+- Added Aruba, Kīlauea and Torres del Paine Viator opportunities plus Taiwan/Klook, Hualien/Viator and Kruger/Viator source-gated paths.
+- Healthy places with verified offers remain 19; 16 additional healthy places now have an explicit commercial queue, reducing the unqueued healthy-commercial gap to 57.
+- Owner actions remain batched and dormant until truly needed; no automatic placement, rewriting, paid ranking or unverified promotion.
