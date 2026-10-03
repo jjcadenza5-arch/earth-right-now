@@ -579,3 +579,14 @@ Post-275 quality/traffic checkpoint — 2026-10-03 14:05 UTC:
 - The preferred next exact-link batch is a compact 16-item high-intent set across Tiqets, Viator and Klook; owner action is still deferred until a deliberate batch session is worthwhile.
 - data/featured-quality-priorities.json now separates a diverse true-live featured pool from a quasi-live upgrade watchlist. It is advisory only and cannot change source truth or ranking from commercial value.
 - Locked Travelpayouts programs remain event/traffic-led future targets; do not repeatedly recheck Trip.com, Hotels.com, Booking.com, Agoda, Expedia or GetYourGuide without a meaningful status/traction change.
+
+
+Scale-target reconciliation — 2026-10-03 evening:
+- Current production source registry is now 283 source records / 275 healthy distinct searchable places. This supersedes the earlier 91-place expansion baseline.
+- Searchable-place scale goal (150–200) has been exceeded. ERN should now maintain 250+ healthy places and prioritize freshness, source quality, geographic/provider balance, and upgrading strong LIVE_IMAGE/quasi-live places to true live where worthwhile.
+- Quasi-live remains acceptable for Search/Explore when clearly labeled (LIVE_IMAGE/current-image semantics); it is not automatically eligible for Watch Earth.
+- Owner Travelpayouts screenshots confirmed many desirable programs are visible but not yet unlocked for ERN at current traffic levels.
+- Added data/travelpayouts-traffic-unlock-watchlist.json. P1 future unlocks include Trip.com, Hotels.com, Booking.com, Agoda, Expedia and GetYourGuide.
+- Trip.com should be added later when Travelpayouts unlocks it; ERN should not wait for it or repeatedly recheck it now.
+- Business work now splits into: existing verified offers, currently owner-account-link-generation-capable programs, exact-link conversion for existing partners, and traffic-gated future programs.
+- No locked program is treated as active; no automatic placement/rewrite/ranking changes were introduced.
