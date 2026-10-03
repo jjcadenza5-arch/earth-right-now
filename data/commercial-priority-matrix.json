@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T02:20:00Z",
+  "generatedAt": "2026-10-03T02:42:00Z",
   "principles": {
     "existingPartnersFirst": true,
     "exactTrackedLinkRequired": true,
@@ -10,8 +10,8 @@
     "automaticLinkRewriting": false
   },
   "currentVerifiedOpportunityCount": 12,
-  "exactLinkQueueCount": 13,
-  "sourceGatedQueueCount": 5,
+  "exactLinkQueueCount": 14,
+  "sourceGatedQueueCount": 9,
   "researchPriority": [
     {
       "placeId": "koli-lake-pielinen",
@@ -80,25 +80,6 @@
       "categories": [
         "Beautiful Earth",
         "Mountains & Snow",
-        "Useful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "druif-beach-aruba",
-      "title": "Druif Beach — Aruba",
-      "country": "Aruba",
-      "region": "Oranjestad",
-      "quality": 96,
-      "moment": 97,
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth",
         "Useful Earth"
       ],
       "suggestedExistingPartners": [
@@ -502,6 +483,25 @@
       ],
       "suggestedExistingPartners": [
         "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "taitung-jinzun",
+      "title": "Taitung Jinzun — Pacific Coast",
+      "country": "Taiwan",
+      "region": "Taitung County",
+      "quality": 91,
+      "moment": 91,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "klook"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
