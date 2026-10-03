@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:25:00Z",
+  "generatedAt": "2026-10-03T11:32:00Z",
   "strategy": "Traffic-led unlock. Do not repeatedly apply or recheck locked programs. Improve visitor utility, searchable-place quality and qualified outbound intent first; recheck only after material traffic/engagement change or Travelpayouts status notification.",
   "activeNow": [
     {
@@ -356,5 +356,65 @@
     "noTrafficFabrication": true,
     "noForcedApplications": true
   },
-  "note": "ActiveNow is canonical from data/affiliate-partners.json; futureUnlock is derived from owner-visible but not yet unlocked Travelpayouts programs."
+  "note": "ActiveNow is canonical from data/affiliate-partners.json; futureUnlock is derived from owner-visible but not yet unlocked Travelpayouts programs.",
+  "ownerEvidence": {
+    "capturedAt": "2026-10-03T10:20:00Z",
+    "source": "Owner screenshots of Travelpayouts program catalog",
+    "conclusion": "Many strategically useful programs are visible in the ERN Travelpayouts project but are not yet practically unlocked/usable; traffic growth is the gating strategy.",
+    "visiblePrograms": [
+      "booking-com",
+      "trip-com",
+      "viator",
+      "agoda",
+      "expedia",
+      "getyourguide",
+      "tripadvisor-experiences",
+      "discovercars",
+      "traveloka",
+      "omio",
+      "12go",
+      "hotels-com",
+      "hostelworld",
+      "vrbo",
+      "ticketmaster",
+      "vio-com",
+      "rakuten-travel-intl",
+      "visitorscoverage",
+      "insubuy"
+    ]
+  },
+  "recheckSignals": [
+    {
+      "id": "platform-status-change",
+      "signal": "Travelpayouts explicitly changes a program to usable/approved or exposes link-generation controls",
+      "strength": "DIRECT"
+    },
+    {
+      "id": "first-affiliate-conversion",
+      "signal": "ERN records its first eligible affiliate conversion/revenue",
+      "strength": "STRONG"
+    },
+    {
+      "id": "sustained-qualified-outbound",
+      "signal": "Commercial outbound clicks become sustained across multiple destinations rather than isolated owner/testing activity",
+      "strength": "STRONG"
+    },
+    {
+      "id": "material-organic-traffic",
+      "signal": "Search/discovery traffic grows materially from the current soft-launch baseline",
+      "strength": "MEDIUM"
+    },
+    {
+      "id": "owner-manual-recheck",
+      "signal": "Owner chooses to inspect program status for another reason",
+      "strength": "OPTIONAL"
+    }
+  ],
+  "recheckRule": "Do not recheck traffic-gated programs on a calendar cadence. Recheck only when at least one direct/strong signal occurs, or when the owner voluntarily opens the account.",
+  "nearTermBusinessPriority": [
+    "Expand exact destination links with currently active Viator/Klook/Tiqets/Welcome Pickups",
+    "Bundle owner-only exact-link generation sessions instead of interrupting one place at a time",
+    "Use currently link-generation-capable Travelpayouts utilities only where they solve a real visitor need",
+    "Grow qualified visitor/search traffic so stay programs such as Trip.com, Hotels.com, Booking.com, Agoda and Expedia can unlock later"
+  ]
 }
