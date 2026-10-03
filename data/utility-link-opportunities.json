@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:40:00Z",
+  "generatedAt": "2026-10-03T16:20:00Z",
   "publicActivationAllowed": false,
   "purpose": "Prepare currently link-generation-capable Travelpayouts utilities for ERN without waiting for traffic-gated stay programs.",
   "currentlyUsableProgramCount": 23,
@@ -68,7 +68,10 @@
         "kyoto-nishiki-market",
         "prague-petrin-tower",
         "prague-old-town-hall",
-        "seoul-gwanghwamun-plaza"
+        "seoul-gwanghwamun-plaza",
+        "krakow-main-square",
+        "krakow-wawel-vistula",
+        "krakow-zakrzowek"
       ],
       "use": "Airport/city transfer option only where Welcome Pickups does not already provide sufficient coverage."
     },
@@ -100,7 +103,10 @@
         "kyoto-nishiki-market",
         "prague-petrin-tower",
         "prague-old-town-hall",
-        "seoul-gwanghwamun-plaza"
+        "seoul-gwanghwamun-plaza",
+        "krakow-main-square",
+        "krakow-wawel-vistula",
+        "krakow-zakrzowek"
       ],
       "use": "Luggage storage for cruise, stopover and day-visit use cases."
     },
@@ -247,7 +253,10 @@
         "kyoto-nishiki-market",
         "prague-petrin-tower",
         "prague-old-town-hall",
-        "seoul-gwanghwamun-plaza"
+        "seoul-gwanghwamun-plaza",
+        "krakow-main-square",
+        "krakow-wawel-vistula",
+        "krakow-zakrzowek"
       ]
     }
   ],
@@ -269,20 +278,20 @@
   ],
   "note": "Deferred programs remain potentially useful but ERN should first prove demand with one strong option per intent.",
   "coverageExpansion": {
-    "healthySearchablePlaceBaseline": 300,
+    "healthySearchablePlaceBaseline": 305,
     "purpose": "Broaden business-ready place coverage using programs that already expose link generation; this is research/preparation only.",
     "rule": "Place candidacy does not assert inventory. Exact coverage must be checked in the owner account before link generation.",
     "expandedQueues": {
       "go-city-city-passes": 4,
-      "kiwitaxi-arrivals": 21,
-      "radical-storage-city": 21,
+      "kiwitaxi-arrivals": 24,
+      "radical-storage-city": 24,
       "kkday-asia-gaps": 33,
       "localrent-roadtrip": 20,
       "qeeq-rental": 20,
-      "wegotrip-audio": 20
+      "wegotrip-audio": 23
     }
   },
-  "currentStrategy": "At 300 searchable places, convert a small number of broad/high-utility links first; do not create one affiliate action per place.",
+  "currentStrategy": "Quality-first after 300+ searchable places: add broad utility only where it clearly follows destination discovery; prefer one useful city-level action over affiliate clutter.",
   "ownerBatchPriority": [
     "airalo-global",
     "go-city-city-passes",
