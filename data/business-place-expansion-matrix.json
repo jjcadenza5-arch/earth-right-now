@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T13:55:00Z",
+  "generatedAt": "2026-10-03T15:20:00Z",
   "publicActivationAllowed": false,
-  "healthySearchablePlaceBaseline": 275,
+  "healthySearchablePlaceBaseline": 283,
   "programs": [
     {
       "program": "kiwitaxi",
@@ -33,7 +33,8 @@
         "heidelberg-old-town",
         "nuremberg",
         "cannes",
-        "dresden-old-town"
+        "dresden-old-town",
+        "taiwan-elephant-mountain"
       ],
       "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED"
     },
@@ -66,7 +67,8 @@
         "heidelberg-old-town",
         "nuremberg",
         "cannes",
-        "dresden-old-town"
+        "dresden-old-town",
+        "taiwan-elephant-mountain"
       ],
       "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED"
     },
@@ -96,7 +98,13 @@
         "singapore-port-area",
         "takayama-miyagawa",
         "cijin-beach-kaohsiung",
-        "farm-tomita"
+        "farm-tomita",
+        "taiwan-maolin",
+        "taiwan-yehliu",
+        "taiwan-heping-island",
+        "taiwan-elephant-mountain",
+        "taiwan-tamsui-fishermans-wharf",
+        "taiwan-gaomei-wetland"
       ],
       "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED"
     },
@@ -127,7 +135,9 @@
         "cannes",
         "plitvice-lakes",
         "zandvoort-beach",
-        "zandvoort-circuit"
+        "zandvoort-circuit",
+        "nz-lyttelton-heads",
+        "nz-akaroa-heads"
       ],
       "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED"
     },
@@ -158,7 +168,9 @@
         "cannes",
         "plitvice-lakes",
         "zandvoort-beach",
-        "zandvoort-circuit"
+        "zandvoort-circuit",
+        "nz-lyttelton-heads",
+        "nz-akaroa-heads"
       ],
       "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED"
     },
@@ -216,6 +228,7 @@
     "No place is commercially activated from this matrix.",
     "Exact tracked link and current destination coverage must be manually verified.",
     "One useful option per intent is preferred before adding duplicates.",
-    "Commercial candidacy never changes ERN source ranking or truth."
+    "Commercial candidacy never changes ERN source ranking or truth.",
+    "Traffic-gated stay programs remain excluded from this matrix until Travelpayouts unlocks them."
   ]
 }
