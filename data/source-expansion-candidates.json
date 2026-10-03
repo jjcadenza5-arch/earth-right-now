@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:55:00Z",
+  "generatedAt": "2026-10-03T11:40:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -2486,7 +2486,7 @@
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "priority": "P2",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
-      "promotedAt": "2026-10-03T11:55:00Z",
+      "promotedAt": "2026-10-03T11:40:00Z",
       "promotionNote": "Official Visit Madeira current/live webcam imagery promoted under ERN quasi-live Search/Explore policy; not continuous-video Watch Earth eligibility."
     },
     {
@@ -2498,7 +2498,7 @@
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "priority": "P2",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
-      "promotedAt": "2026-10-03T11:55:00Z",
+      "promotedAt": "2026-10-03T11:40:00Z",
       "promotionNote": "Official Visit Madeira current/live webcam imagery promoted under ERN quasi-live Search/Explore policy; not continuous-video Watch Earth eligibility."
     },
     {
@@ -2510,7 +2510,7 @@
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "priority": "P2",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
-      "promotedAt": "2026-10-03T11:55:00Z",
+      "promotedAt": "2026-10-03T11:40:00Z",
       "promotionNote": "Official Visit Madeira current/live webcam imagery promoted under ERN quasi-live Search/Explore policy; not continuous-video Watch Earth eligibility."
     },
     {
@@ -2522,7 +2522,7 @@
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "priority": "P2",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
-      "promotedAt": "2026-10-03T11:55:00Z",
+      "promotedAt": "2026-10-03T11:40:00Z",
       "promotionNote": "Official Visit Madeira current/live webcam imagery promoted under ERN quasi-live Search/Explore policy; not continuous-video Watch Earth eligibility."
     },
     {
@@ -2534,7 +2534,7 @@
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "priority": "P2",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
-      "promotedAt": "2026-10-03T11:55:00Z",
+      "promotedAt": "2026-10-03T11:40:00Z",
       "promotionNote": "Official Visit Madeira current/live webcam imagery promoted under ERN quasi-live Search/Explore policy; not continuous-video Watch Earth eligibility."
     }
   ],
