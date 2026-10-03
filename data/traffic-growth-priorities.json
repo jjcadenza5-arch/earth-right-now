@@ -63,11 +63,11 @@
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
   "note": "ERN does not know Travelpayouts' private traffic thresholds and must not invent them.",
-  "milestone": "256_SEARCHABLE_PLACES_AND_196_COMMERCIAL_PATHS",
+  "milestone": "256_SEARCHABLE_PLACES_231_COMMERCIAL_PATHS_22_VERIFIED_LINK_PLACES",
   "currentBusinessCoverage": {
     "healthyPlaces": 256,
-    "placesWithCommercialPath": 196,
-    "placesWithoutCommercialPath": 60,
-    "verifiedLinkPlaces": 20
+    "placesWithCommercialPath": 231,
+    "placesWithoutCommercialPath": 25,
+    "verifiedLinkPlaces": 22
   }
 }
