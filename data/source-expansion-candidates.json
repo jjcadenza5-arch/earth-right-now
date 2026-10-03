@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:30:00Z",
+  "generatedAt": "2026-10-03T11:20:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -2392,6 +2392,90 @@
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "verifiedAt": "2026-10-03T05:50:00Z",
       "verification": "Official current/live webcam semantics verified; promoted as LIVE_IMAGE/Search-Explore only."
+    },
+    {
+      "id": "reunion-boucan-canot",
+      "title": "Boucan Canot Beach — La Réunion",
+      "country": "Réunion",
+      "region": "Saint-Paul",
+      "provider": "Île de la Réunion Tourisme",
+      "sourcePage": "https://en.reunion.fr/organize/webcams/webcam-boucan-canot-beach/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T11:20:00Z",
+      "promotionNote": "Promoted to Search/Explore under the owner-approved quasi-live/current-image policy from an official tourism/scientific webcam source. Not continuous-video Watch Earth eligibility."
+    },
+    {
+      "id": "reunion-trou-deau",
+      "title": "Trou d’Eau Beach — La Réunion",
+      "country": "Réunion",
+      "region": "La Saline-les-Bains",
+      "provider": "Île de la Réunion Tourisme",
+      "sourcePage": "https://en.reunion.fr/organize/webcams/webcam-beach-of-trou-deau/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T11:20:00Z",
+      "promotionNote": "Promoted to Search/Explore under the owner-approved quasi-live/current-image policy from an official tourism/scientific webcam source. Not continuous-video Watch Earth eligibility."
+    },
+    {
+      "id": "reunion-roches-noires",
+      "title": "Roches Noires Beach — La Réunion",
+      "country": "Réunion",
+      "region": "Saint-Gilles-les-Bains",
+      "provider": "Île de la Réunion Tourisme",
+      "sourcePage": "https://www.reunion.fr/organisez/webcams/webcam-plage-des-roches-noires/",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T11:20:00Z",
+      "promotionNote": "Promoted to Search/Explore under the owner-approved quasi-live/current-image policy from an official tourism/scientific webcam source. Not continuous-video Watch Earth eligibility."
+    },
+    {
+      "id": "reunion-piton-fournaise",
+      "title": "Piton de la Fournaise — Current Volcano View",
+      "country": "Réunion",
+      "region": "Piton de la Fournaise",
+      "provider": "Île de la Réunion Tourisme / IPGP-OVPF",
+      "sourcePage": "https://www.reunion.fr/organisez/webcams/webcam-volcan-piton-de-la-fournaise/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T11:20:00Z",
+      "promotionNote": "Promoted to Search/Explore under the owner-approved quasi-live/current-image policy from an official tourism/scientific webcam source. Not continuous-video Watch Earth eligibility."
+    },
+    {
+      "id": "azores-sao-miguel",
+      "title": "São Miguel — Azores Surf & Coast Webcams",
+      "country": "Portugal",
+      "region": "Azores — São Miguel",
+      "provider": "Visit Azores",
+      "sourcePage": "https://surf.visitazores.com/en/webcams/sao-miguel",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T11:20:00Z",
+      "promotionNote": "Promoted to Search/Explore under the owner-approved quasi-live/current-image policy from an official tourism/scientific webcam source. Not continuous-video Watch Earth eligibility."
+    },
+    {
+      "id": "azores-terceira",
+      "title": "Praia da Vitória — Terceira, Azores",
+      "country": "Portugal",
+      "region": "Azores — Terceira",
+      "provider": "Visit Azores",
+      "sourcePage": "https://surf.visitazores.com/en/webcams/terceira",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T11:20:00Z",
+      "promotionNote": "Promoted to Search/Explore under the owner-approved quasi-live/current-image policy from an official tourism/scientific webcam source. Not continuous-video Watch Earth eligibility."
+    },
+    {
+      "id": "azores-santa-maria",
+      "title": "Formosa Beach — Santa Maria, Azores",
+      "country": "Portugal",
+      "region": "Azores — Santa Maria",
+      "provider": "Visit Azores",
+      "sourcePage": "https://surf.visitazores.com/en/webcams/santa-maria",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T11:20:00Z",
+      "promotionNote": "Promoted to Search/Explore under the owner-approved quasi-live/current-image policy from an official tourism/scientific webcam source. Not continuous-video Watch Earth eligibility."
     }
   ],
   "notes": [
@@ -2439,7 +2523,8 @@
     "2026-10-03 promoted eight Taiwan Tourism Administration operating live-image places across Taipei, New Taipei, Taichung, Hualien and Tainan. Search/Explore only; Watch Earth remains stricter.",
     "2026-10-03 promoted the five official Panama Canal Authority real-time lock-camera locations (Miraflores, Gatún, Pedro Miguel, Cocolí, Agua Clara) as distinct Search/Explore LIVE_IMAGE places.",
     "2026-10-03 final stretch tranche promoted Mieminger Plateau, Telfs, Lüsens, Innsbruck City Tower, Swarovski Crystal Worlds/Wattens and Simpson Bay as clearly labeled quasi-live searchable places, bringing ERN to the ~200-place target.",
-    "2026-10-03 maintenance batch: Istanbul Sultanahmet and Denpasar official municipal camera services promoted from current official-web evidence; stale Takayama Miyagawa quasi-live source degraded rather than artificially refreshed."
+    "2026-10-03 maintenance batch: Istanbul Sultanahmet and Denpasar official municipal camera services promoted from current official-web evidence; stale Takayama Miyagawa quasi-live source degraded rather than artificially refreshed.",
+    "2026-10-03 Indian Ocean/Atlantic island batch promoted seven official quasi-live searchable places: four La Réunion tourism/scientific webcams plus São Miguel, Terceira and Santa Maria from Visit Azores. Watch Earth remains stricter."
   ],
   "researchGaps": [
     {
