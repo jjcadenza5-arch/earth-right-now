@@ -2615,8 +2615,10 @@
       "evidence": "Tvøroyri Municipality publishes a Port of Tvøroyri page labeled live webcam / Beinleiðis vevmynd.",
       "researchEvidence": "Official municipal harbour page exposes a live webcam surface. Human playback confirmation is still required before ERN promotes it as EXTERNAL_LIVE.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the municipal Port of Tvøroyri webcam page and confirm the harbour view is moving/current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the municipal Port of Tvøroyri webcam page and confirm the harbour view is moving/current.",
+      "verifiedAt": "2026-10-03T12:55:00Z",
+      "verification": "Official municipal page currently exposes a live webcam; promoted conservatively as LIVE_IMAGE/Search-Explore."
     },
     {
       "id": "longyearbyen-unis-webcam",
@@ -2660,8 +2662,10 @@
       "evidence": "Shetland.org currently lists Lerwick Town Hall Cam with a Live label.",
       "researchEvidence": "Official destination site exposes a live Lerwick Town Hall camera, but exact playback should be human-confirmed before promotion.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open Shetland.org Videos and confirm Lerwick Town Hall Cam is visibly live/current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open Shetland.org Videos and confirm Lerwick Town Hall Cam is visibly live/current.",
+      "verifiedAt": "2026-10-03T12:55:00Z",
+      "verification": "Official Shetland destination page currently labels Lerwick Town Hall Cam as Live; promoted conservatively as LIVE_IMAGE/Search-Explore."
     },
     {
       "id": "shetland-cliff-cam",
@@ -2675,8 +2679,10 @@
       "evidence": "Shetland.org currently lists Cliff Cam 3 with a Live label.",
       "researchEvidence": "Official destination site exposes a live cliff camera; exact playback should be human-confirmed before promotion.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open Shetland.org Videos and confirm Cliff Cam 3 is visibly live/current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open Shetland.org Videos and confirm Cliff Cam 3 is visibly live/current.",
+      "verifiedAt": "2026-10-03T12:55:00Z",
+      "verification": "Official Shetland destination page currently labels Cliff Cam 3 as Live; promoted conservatively as LIVE_IMAGE/Search-Explore."
     },
     {
       "id": "istanbul-taksim-current-page",
@@ -2766,7 +2772,8 @@
     "2026-10-03 Namibia gap research added Okaukuejo Waterhole / Etosha as a P1 exact-target playback candidate from official Namibia Wildlife Resorts evidence.",
     "2026-10-03T12:25Z quasi-live batch promoted 23 additional searchable places from already-researched provider current/live-camera evidence. Watch Earth eligibility remains unchanged.",
     "2026-10-03T12:35Z milestone batch promoted 2 more quasi-live searchable places, bringing healthy searchable distinct places to the 250 stretch target.",
-    "2026-10-03 quality-led Istanbul expansion added Taksim Square, Maiden’s Tower and Anadolu Hisarı as distinct official LIVE_IMAGE/Search-Explore places. Watch Earth rules unchanged."
+    "2026-10-03 quality-led Istanbul expansion added Taksim Square, Maiden’s Tower and Anadolu Hisarı as distinct official LIVE_IMAGE/Search-Explore places. Watch Earth rules unchanged.",
+    "2026-10-03 promoted Tvøroyri Port, Lerwick Town Hall and Shetland Cliff Cam to searchable LIVE_IMAGE using current official municipal/destination evidence; Watch Earth rules unchanged."
   ],
   "researchGaps": [
     {
