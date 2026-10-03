@@ -603,3 +603,15 @@ Quality-first / traffic-unlock checkpoint — 2026-10-03 14:40 UTC:
 - data/commercial-conversion-shortlist.json now reduces the actionable healthy-place backlog to a 15-destination owner batch. No invented links; only exact owner-generated/verified tracked links may activate.
 - Trip.com remains P1 future business coverage but WAIT_FOR_TRAFFIC_UNLOCK. Same principle applies to Hotels.com, Booking.com, Agoda, Expedia, GetYourGuide and other owner-visible but traffic-gated Travelpayouts programs.
 - Current business priority: use active Viator/Klook/Tiqets/Welcome Pickups, grow qualified organic traffic, batch exact-link conversion, and recheck locked programs only on a real unlock/traffic/conversion signal.
+
+
+Cook Islands + traffic-unlock checkpoint — 2026-10-03 15:35 UTC:
+- Healthy/searchable production baseline is now 287 distinct places across 64 countries/territories.
+- Added four official Cook Islands Airports quasi-live/searchable LIVE_IMAGE places: Aitutaki Lagoon, Tamanu Beach, Avaavaroa Beach and Rarotonga International Airport.
+- These current-image sources are Search/Explore eligible but are not Watch Earth live-video candidates.
+- Source verification, geographic expansion and focused-expansion metrics were reconciled to the real current registry after earlier stale 200/275-place planning snapshots.
+- Owner Travelpayouts screenshots confirm a broad future program set is visible but many desired programs remain locked/not active because ERN traffic is still low.
+- Trip.com is now the first preferred future unlock because it can cover stays plus transport/activities across many ERN destinations; Hotels.com/Booking.com/Agoda/Expedia follow in the stay lane.
+- GetYourGuide, Tripadvisor Experiences, Omio, 12GO, DiscoverCars and other visible programs remain future traffic-led unlocks.
+- Do not repeatedly ask the owner to recheck locked programs. Recheck only on Travelpayouts status change, material qualified traffic growth, or first meaningful affiliate conversions.
+- Current active-partner work remains Viator, Klook, Tiqets and Welcome Pickups; exact tracked links remain manual/verified and ranking-neutral.
