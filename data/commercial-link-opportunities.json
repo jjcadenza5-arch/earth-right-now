@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:10:00Z",
+  "generatedAt": "2026-10-03T12:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2085,6 +2085,48 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Windhoek/4-Day-Etosha-Swakopmund/d5574-9289P3",
       "publicInventoryEvidence": "Current Viator inventory includes multi-day Etosha National Park safari/game-drive products from Windhoek.",
       "nextAction": "Promote the Okaukuejo source only after human playback confirmation; then research a clean Namibia/Etosha destination-level Viator link rather than using an individual tour as the commercial surface."
+    },
+    {
+      "id": "viator-nuuk",
+      "destination": "Nuuk",
+      "placeIds": [
+        "nuuk-greenland"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a healthy current-image Nuuk place and Viator currently has a dedicated Nuuk destination with fjord, culture, transfer and sightseeing inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Nuuk/d4495-ttd",
+      "nextAction": "Generate one Nuuk destination-level Viator tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-faroe-islands",
+      "destination": "Faroe Islands",
+      "placeIds": [
+        "vagar-airport-faroe"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a healthy current-image Faroe gateway place and Viator currently has a dedicated Faroe Islands destination with boat, nature and sightseeing tours.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Faroe-Islands/d37756-ttd",
+      "nextAction": "Generate one Faroe Islands destination-level Viator tracked link and use it only where the visitor has chosen Faroe trip planning; do not attach it to unrelated cameras."
+    },
+    {
+      "id": "viator-longyearbyen-future",
+      "destination": "Longyearbyen / Svalbard",
+      "placeIds": [
+        "longyearbyen-unis-webcam"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Viator has a dedicated Longyearbyen destination with Arctic sightseeing and excursion inventory, but ERN must first verify and promote a current Longyearbyen source.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Longyearbyen/d4354-ttd",
+      "nextAction": "After the UNIS/Longyearbyen source is human-confirmed and promoted, generate one Longyearbyen Viator tracked link and verify it manually."
     }
   ]
 }
