@@ -259,10 +259,7 @@ function placeCard(group){
  }
  b.onclick=()=>openViewer(best);return b;
 }
-function groupByPlace(items){
- const m=new Map();for(const s of items){const key=s.placeId||s.id;if(!m.has(key))m.set(key,[]);m.get(key).push(s)}
- return [...m.values()];
-}
+function groupByPlace(items){const m=new Map();for(const s of items){const key=s.placeId||s.id;if(!m.has(key))m.set(key,[]);m.get(key).push(s)}return[...m.values()]}
 function normalizeSearch(v){return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^\p{L}\p{N}]+/gu," ").trim()}
 function sst(s){return normalizeSearch([s.title,s.placeId,s.city,s.state,s.region,s.country,s.provider,s.story,s.categories,s.tags,s.aliases].join(" "))}
 function recentSearches(){const rows=readJSON("ern:recent-searches:v1",[]);return Array.isArray(rows)?rows.filter(v=>typeof v==="string"&&v.trim()).slice(0,4):[]}
@@ -429,11 +426,7 @@ function localPlaceSignals(s){
  const famous=["iconic","world famous","famous","major city"].some(x=>hay.includes(x));
  const score=terms.reduce((n,[term,w])=>n+(hay.includes(term)?w:0),0);return{score,worth:score>=2&&!famous};
 }
-function renderLocalEarth(){
- const picks=state.sources.filter(guideEligible).map(s=>({s,...localPlaceSignals(s)})).filter(x=>x.worth).sort((a,b)=>b.score-a.score||baseScore(b.s)-baseScore(a.s)).slice(0,6).map(x=>x.s);
- $("#localEarthGrid").replaceChildren(...picks.map(wanderCard));
- $("#localEarth").hidden=picks.length===0;
-}
+function renderLocalEarth(){const picks=state.sources.filter(guideEligible).map(s=>({s,...localPlaceSignals(s)})).filter(x=>x.worth).sort((a,b)=>b.score-a.score||baseScore(b.s)-baseScore(a.s)).slice(0,6).map(x=>x.s);$("#localEarthGrid").replaceChildren(...picks.map(wanderCard));$("#localEarth").hidden=!picks.length}
 function wanderCard(s){
  const b=document.createElement("button");b.type="button";b.className="wander-card";
  const v=document.createElement("span");v.className="wander-visual";v.style.background=generatedBackground(s);const img=cleanUrl(s.thumbnailUrl);if(img){const el=document.createElement("img");el.src=img;el.alt="";el.loading="lazy";v.append(el)}
