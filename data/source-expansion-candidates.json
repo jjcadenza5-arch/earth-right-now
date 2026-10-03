@@ -945,6 +945,66 @@
       "priority": "P1",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Open the Rotorua webcams page and confirm the Museum/Government Gardens/Lake view is visibly current."
+    },
+    {
+      "id": "shymbulak-mountain-resort",
+      "title": "Shymbulak — Trans-Ili Alatau",
+      "country": "Kazakhstan",
+      "region": "Almaty",
+      "provider": "Shymbulak Mountain Resort",
+      "sourcePage": "https://shymbulak.com/live",
+      "exactTargetUrl": "https://shymbulak.com/live",
+      "exactTargetType": "OFFICIAL_RESORT_LIVE_CAM_PAGE",
+      "evidence": "Shymbulak's official channels direct visitors to shymbulak.com/live for online mountain cameras and current weather/conditions.",
+      "researchEvidence": "Official Shymbulak Mountain Resort communications explicitly say its online cameras work around the clock and are available on the official website.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Shymbulak live page and confirm at least one mountain camera visibly updates."
+    },
+    {
+      "id": "karakol-ski-base",
+      "title": "Karakol Ski Base — Issyk-Kul",
+      "country": "Kyrgyzstan",
+      "region": "Issyk-Kul",
+      "provider": "Karakol Ski Base",
+      "sourcePage": "https://www.karakol-ski.kg/camera",
+      "exactTargetUrl": "https://www.karakol-ski.kg/camera",
+      "exactTargetType": "OFFICIAL_RESORT_CAMERA_PAGE",
+      "evidence": "The official Karakol Ski Base camera page exposes an embedded video feed.",
+      "researchEvidence": "Karakol Ski Base publishes its own camera page; a separate Kyrgyzstan camera network also identifies the ski-base camera at the lower lift.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Karakol Ski Base camera page and confirm the embedded feed is current and moving."
+    },
+    {
+      "id": "ala-archa-natural-park",
+      "title": "Ala-Archa Natural Park",
+      "country": "Kyrgyzstan",
+      "region": "Chüy",
+      "provider": "ElCat / KG Camera",
+      "sourcePage": "https://www.kg.camera/en/",
+      "exactTargetUrl": "https://www.kg.camera/en/",
+      "exactTargetType": "CURRENT_CAMERA_NETWORK",
+      "evidence": "KG Camera lists a camera in Ala-Archa Natural Park installed at 2,200 meters above sea level and states the network is live video with a 20-second delay.",
+      "researchEvidence": "KG Camera currently exposes Ala-Archa Natural Park as an active camera location and explicitly states the presented video is live surveillance without archiving.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open KG Camera, choose Natural Park 'Ala-Archa', and confirm the current mountain view is useful enough for ERN."
+    },
+    {
+      "id": "osh-sulaiman-too",
+      "title": "Osh — Sulaiman-Too Mountain",
+      "country": "Kyrgyzstan",
+      "region": "Osh",
+      "provider": "ElCat / KG Camera",
+      "sourcePage": "https://www.kg.camera/en/",
+      "exactTargetUrl": "https://www.kg.camera/en/",
+      "exactTargetType": "CURRENT_CAMERA_NETWORK",
+      "evidence": "KG Camera lists a current camera at the foot of Sulaiman-Too Mountain in Osh and states its network runs without archiving with a short delay.",
+      "researchEvidence": "The network describes the camera as a live view of Sulaiman-Too, one of Osh's principal landmarks.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open KG Camera, choose Osh / Sulaiman-Too, and confirm the landmark view updates normally."
     }
   ],
   "notes": [
@@ -962,6 +1022,7 @@
     "2026-10-03 South America gap work added Mendoza Plaza Independencia from the official municipal LIVE camera page and Ushuaia Harbour from the municipality's published 24-hour camera record. Ushuaia is deliberately held for stricter replay-vs-live verification because the municipal evidence is older.",
     "2026-10-03 large-batch expansion added a Mauritius Tourism Promotion Authority camera family using the current Mauritius Now 13-webcam claim plus MTPA annual-report location evidence for Grand Baie, Pointe d’Esny and Saint-Félix. All remain playback-gated.",
     "2026-10-03 Caribbean breadth batch added three Visit St. Maarten-endorsed 24/7 camera candidates: Maho Beach, Great Bay/Philipsburg Boardwalk and Simpson Bay. Existing Little Bay source was not duplicated.",
-    "2026-10-03 Oceania breadth batch added four official Lake Wānaka Tourism views and two Rotorua NZ webcam views. All six remain human-playback-gated."
+    "2026-10-03 Oceania breadth batch added four official Lake Wānaka Tourism views and two Rotorua NZ webcam views. All six remain human-playback-gated.",
+    "2026-10-03 Pamir-gap research uncovered stronger adjacent Central Asia live-camera opportunities: official Shymbulak (Kazakhstan), official Karakol Ski Base, Ala-Archa Natural Park and Osh/Sulaiman-Too (Kyrgyzstan). These remain playback-gated and do not substitute for the unresolved Pamir/Tajikistan gap."
   ]
 }
