@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:35:00Z",
+  "generatedAt": "2026-10-03T14:10:00Z",
   "purpose": "Use Travelpayouts programs that already expose owner-side link-generation capability without waiting for traffic-gated stay programs.",
   "publicActivationAllowed": false,
   "principle": "Only add a utility when it naturally follows Earth discovery. Never add generic affiliate clutter.",
@@ -166,5 +166,17 @@
     "One utility per intent is preferred before introducing competing duplicates.",
     "Utility programs never affect place ranking, Watch Earth, or source truth.",
     "Locked stay programs remain a future traffic-unlock objective rather than a blocker."
-  ]
+  ],
+  "trafficUnlockContext": {
+    "watchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
+    "rule": "Use currently available owner-account link-generation programs now; wait for traffic-gated stay/activity programs without repeated checks.",
+    "topFuturePrograms": [
+      "trip-com",
+      "hotels-com",
+      "booking-com",
+      "agoda",
+      "expedia",
+      "getyourguide"
+    ]
+  }
 }
