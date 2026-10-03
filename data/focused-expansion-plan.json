@@ -3,7 +3,7 @@
   "generatedAt": "2026-10-03T05:00:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 172,
+    "currentHealthyDistinctPlaceBaseline": 178,
     "targetRange": [
       150,
       200
@@ -25,7 +25,7 @@
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
     "researchCandidateCount": 156,
-    "playbackGatedCandidateCount": 61,
+    "playbackGatedCandidateCount": 54,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan",
       "adjacentHighValueChecks": [
@@ -74,14 +74,14 @@
       "labelingRequired": true,
       "rule": "Quasi-live expands Search/Explore only; it never masquerades as continuous live video."
     },
-    "quasiLivePromotedCount": 35,
-    "currentHealthyLiveImageCount": 96,
+    "quasiLivePromotedCount": 42,
+    "currentHealthyLiveImageCount": 103,
     "progressToTarget": {
       "minimumTarget": 150,
-      "current": 172,
+      "current": 178,
       "remainingToMinimum": 0,
       "stretchTarget": 200,
-      "remainingToStretch": 28
+      "remainingToStretch": 22
     }
   },
   "businessLane": {
@@ -153,15 +153,15 @@
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 16,
-    "exactLinkQueueCount": 71,
-    "sourceGatedQueueCount": 27,
+    "exactLinkQueueCount": 76,
+    "sourceGatedQueueCount": 22,
     "sourceGapBlockedCount": 1,
     "sourceGatedOpportunityCount": 31,
     "quasiLiveCommercialRule": "A healthy quasi-live searchable place may unlock downstream travel planning, but commercial value never changes truth/currentness.",
     "currentOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 71,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 27,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 76,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 22,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
     },
     "currentOpportunityCount": 115
