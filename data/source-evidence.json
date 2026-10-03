@@ -1895,5 +1895,87 @@
     "freshnessEvidence": "Farchant's official destination page says visitors can check in live and lists Farchant/Zugspitze-region webcams.",
     "rightsBasis": "Official tourism/destination source; ERN links externally and does not infer reuse, embed or restream rights.",
     "story": "Farchant's official destination page says visitors can check in live and lists Farchant/Zugspitze-region webcams."
-  }
+  },
+  "items": [
+    {
+      "id": "taiwan-baisha-bay-live",
+      "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007395",
+      "rightsBasis": "Official government/tourism current-image or webcam source; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
+      "coordinateNote": "Coordinates are representative place references, not claimed camera positions.",
+      "checkedAt": "2026-10-03T16:10:00Z"
+    },
+    {
+      "id": "taiwan-laomei-green-reef-live",
+      "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007395",
+      "rightsBasis": "Official government/tourism current-image or webcam source; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
+      "coordinateNote": "Coordinates are representative place references, not claimed camera positions.",
+      "checkedAt": "2026-10-03T16:10:00Z"
+    },
+    {
+      "id": "taiwan-yinghanling-live",
+      "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007395",
+      "rightsBasis": "Official government/tourism current-image or webcam source; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
+      "coordinateNote": "Coordinates are representative place references, not claimed camera positions.",
+      "checkedAt": "2026-10-03T16:10:00Z"
+    },
+    {
+      "id": "taiwan-taipingshan-live",
+      "sourceUrl": "https://www.gov.tw/taiwan/",
+      "rightsBasis": "Official government/tourism current-image or webcam source; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
+      "coordinateNote": "Coordinates are representative place references, not claimed camera positions.",
+      "checkedAt": "2026-10-03T16:10:00Z"
+    },
+    {
+      "id": "taiwan-fenqihu-live",
+      "sourceUrl": "https://www.gov.tw/taiwan/",
+      "rightsBasis": "Official government/tourism current-image or webcam source; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
+      "coordinateNote": "Coordinates are representative place references, not claimed camera positions.",
+      "checkedAt": "2026-10-03T16:10:00Z"
+    },
+    {
+      "id": "taiwan-daxi-old-street-live",
+      "sourceUrl": "https://www.gov.tw/taiwan/",
+      "rightsBasis": "Official government/tourism current-image or webcam source; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
+      "coordinateNote": "Coordinates are representative place references, not claimed camera positions.",
+      "checkedAt": "2026-10-03T16:10:00Z"
+    },
+    {
+      "id": "taiwan-dongyanshan-live",
+      "sourceUrl": "https://www.gov.tw/taiwan/",
+      "rightsBasis": "Official government/tourism current-image or webcam source; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
+      "coordinateNote": "Coordinates are representative place references, not claimed camera positions.",
+      "checkedAt": "2026-10-03T16:10:00Z"
+    },
+    {
+      "id": "taiwan-alishan-taiping-live",
+      "sourceUrl": "https://www.gov.tw/taiwan/",
+      "rightsBasis": "Official government/tourism current-image or webcam source; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
+      "coordinateNote": "Coordinates are representative place references, not claimed camera positions.",
+      "checkedAt": "2026-10-03T16:10:00Z"
+    },
+    {
+      "id": "nz-whanganui-coast-current",
+      "sourceUrl": "https://www.horizons.govt.nz/webcams",
+      "rightsBasis": "Official government/tourism current-image or webcam source; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
+      "coordinateNote": "Coordinates are representative place references, not claimed camera positions.",
+      "checkedAt": "2026-10-03T16:10:00Z"
+    },
+    {
+      "id": "nz-te-awanga-coast-current",
+      "sourceUrl": "https://www.hbrc.govt.nz/webcams",
+      "rightsBasis": "Official government/tourism current-image or webcam source; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
+      "coordinateNote": "Coordinates are representative place references, not claimed camera positions.",
+      "checkedAt": "2026-10-03T16:10:00Z"
+    }
+  ]
 }
