@@ -2632,8 +2632,11 @@
       "evidence": "The University Centre in Svalbard publishes a web-camera page and states an external provider operates a camera on the roof of UNIS.",
       "researchEvidence": "UNIS is authoritative for the camera location but delegates the actual feed to an external provider; exact current playback needs verification before promotion.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the UNIS webcam handoff and confirm the linked Longyearbyen/Adventfjorden camera is visibly current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the UNIS webcam handoff and confirm the linked Longyearbyen/Adventfjorden camera is visibly current.",
+      "promotedSourceId": "longyearbyen-unis-current",
+      "verifiedAt": "2026-10-03T16:25:00Z",
+      "verification": "Promoted conservatively to LIVE_IMAGE/Search-Explore from current official/institutional webcam evidence; Watch Earth remains held."
     },
     {
       "id": "faroe-islands-live-family",
@@ -3068,8 +3071,11 @@
       "evidence": "Official government/tourism webcam source confirmed 2026-10-03.",
       "researchEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "No urgent check required. Revisit when runtime catalog headroom improves or a stronger exact target is isolated."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "No urgent check required. Revisit when runtime catalog headroom improves or a stronger exact target is isolated.",
+      "promotedSourceId": "nz-wairoa-river-current",
+      "verifiedAt": "2026-10-03T16:25:00Z",
+      "verification": "Promoted conservatively to LIVE_IMAGE/Search-Explore from current official/institutional webcam evidence; Watch Earth remains held."
     },
     {
       "id": "nz-te-awanga-coast-current",
@@ -3100,8 +3106,11 @@
       "evidence": "Official Horizons Regional Council webcam network lists Foxton Beach.",
       "researchEvidence": "Useful current regional camera, but held outside active runtime in favor of a higher-utility Gaomei Wetland place under the strict source-size budget.",
       "priority": "P3",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "No urgent owner action; revisit when runtime headroom improves."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "No urgent owner action; revisit when runtime headroom improves.",
+      "promotedSourceId": "nz-foxton-beach-current",
+      "verifiedAt": "2026-10-03T16:25:00Z",
+      "verification": "Promoted conservatively to LIVE_IMAGE/Search-Explore from current official/institutional webcam evidence; Watch Earth remains held."
     },
     {
       "id": "research-aitutaki-lagoon-current",
@@ -3300,7 +3309,8 @@
     "2026-10-03 island quality batch promoted Kuredu Maldives, Paynes Bay Barbados and Santa Maria Bay Cape Verde from provider-published live webcam pages.",
     "2026-10-03 16:10Z quality batch promoted eight official Taiwan current-image places and two New Zealand regional-council current views. All are LIVE_IMAGE/Search-Explore only with featuredHold/watchHold; no Watch Earth live-video claim.",
     "2026-10-03 15:55Z promoted Palm Beach and Eagle Beach from the official Aruba Tourism Authority live-webcam family as conservative LIVE_IMAGE Search/Explore sources; Watch Earth remains held.",
-    "2026-10-03 quality-first expansion added three distinct official City of Kraków current-camera places. They are searchable LIVE_IMAGE/quasi-live sources with Watch Earth held separately."
+    "2026-10-03 quality-first expansion added three distinct official City of Kraków current-camera places. They are searchable LIVE_IMAGE/quasi-live sources with Watch Earth held separately.",
+    "2026-10-03 quality-first batch promoted Longyearbyen/UNIS, Wairoa River and Foxton Beach as searchable quasi-live LIVE_IMAGE sources; Watch Earth truth remains stricter."
   ],
   "researchGaps": [
     {
