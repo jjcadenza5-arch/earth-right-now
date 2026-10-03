@@ -1,74 +1,28 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T15:35:00Z",
-  "currentHealthyDistinctPlaces": 287,
+  "generatedAt": "2026-10-03T16:35:00Z",
+  "currentHealthyDistinctPlaces": 300,
   "targetHealthyDistinctPlaces": [
-    250,
-    300
+    300,
+    350
   ],
   "remainingToMinimum": 0,
-  "remainingToStretch": 13,
-  "humanPlaybackQueueCount": 24,
+  "remainingToStretch": 50,
+  "humanPlaybackQueueCount": 14,
   "topBatch": [
     {
-      "id": "denpasar-city-live",
-      "title": "Denpasar — Live City Streets",
-      "country": "Indonesia",
-      "region": "Bali",
-      "provider": "Denpasar City Transportation Agency (Dishub)",
+      "id": "longyearbyen-unis-webcam",
+      "title": "Longyearbyen — UNIS / Adventfjorden",
+      "country": "Svalbard",
+      "region": "Longyearbyen",
+      "provider": "University Centre in Svalbard / external webcam operator",
       "priority": "P1",
-      "verificationUrl": "https://atcs.denpasarkota.go.id/",
-      "verificationType": "OFFICIAL_CITY_REALTIME_CCTV_INDEX",
+      "verificationUrl": "https://www.unis.no/facilities/web-camera/",
+      "verificationType": "OFFICIAL_INSTITUTION_WEBCAM_HANDOFF",
       "businessUnlocks": [
-        "klook-bali-future",
-        "viator-bali-future"
+        "viator-longyearbyen-future"
       ],
-      "humanCheckHint": "Open the official Denpasar ATCS live-stream page and choose one visually useful city location; confirm real-time motion."
-    },
-    {
-      "id": "istanbul-bosphorus-live",
-      "title": "Istanbul — Bosphorus / Üsküdar",
-      "country": "Türkiye",
-      "region": "Istanbul",
-      "provider": "Istanbul Metropolitan Municipality",
-      "priority": "P1",
-      "verificationUrl": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
-      "verificationType": "OFFICIAL_MUNICIPAL_TOURISTIC_CAMERA_INDEX",
-      "businessUnlocks": [
-        "klook-istanbul-future",
-        "viator-istanbul-future"
-      ],
-      "humanCheckHint": "Choose one Bosphorus-facing camera (prefer ÜSKÜDAR or SALACAK) and confirm it visibly updates."
-    },
-    {
-      "id": "istanbul-sultanahmet-live",
-      "title": "Istanbul — Sultanahmet",
-      "country": "Türkiye",
-      "region": "Istanbul",
-      "provider": "Istanbul Metropolitan Municipality",
-      "priority": "P1",
-      "verificationUrl": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
-      "verificationType": "OFFICIAL_MUNICIPAL_TOURISTIC_CAMERA_INDEX",
-      "businessUnlocks": [
-        "klook-istanbul-future",
-        "viator-istanbul-future"
-      ],
-      "humanCheckHint": "Open the official Istanbul touristic-camera page, choose SULTANAHMET, and confirm the live stream plays."
-    },
-    {
-      "id": "karakol-ski-base",
-      "title": "Karakol Ski Base — Issyk-Kul",
-      "country": "Kyrgyzstan",
-      "region": "Issyk-Kul",
-      "provider": "Karakol Ski Base",
-      "priority": "P1",
-      "verificationUrl": "https://kg.camera/en/camera/Karakol_LyzhBaza_25_11_2019_cam1",
-      "verificationType": "CURRENT_CAMERA_NETWORK_DIRECT",
-      "businessUnlocks": [
-        "viator-karakol-future",
-        "viator-issyk-kul-future"
-      ],
-      "humanCheckHint": "Open the direct KG Camera Karakol Ski Base page and confirm the lower-lift image/video updates normally."
+      "humanCheckHint": "Open the UNIS webcam handoff and confirm the linked Longyearbyen/Adventfjorden camera is visibly current."
     },
     {
       "id": "malta-live-cams",
@@ -99,32 +53,18 @@
       "humanCheckHint": "Open the KWS KenyaLIVE article, follow the official KWS YouTube route, and confirm there is a current live broadcast identified as Nairobi National Park before promotion."
     },
     {
-      "id": "prague-old-town-hall",
-      "title": "Prague — Old Town Hall",
-      "country": "Czech Republic",
-      "region": "Prague",
-      "provider": "Prague City Tourism",
+      "id": "namibia-okaukuejo-waterhole",
+      "title": "Okaukuejo Waterhole — Etosha National Park",
+      "country": "Namibia",
+      "region": "Etosha National Park",
+      "provider": "Namibia Wildlife Resorts",
       "priority": "P1",
-      "verificationUrl": "https://www.youtube.com/watch?v=Agep3Ts7hpI",
-      "verificationType": "YOUTUBE_LIVE_TARGET",
+      "verificationUrl": "https://www.youtube.com/watch?v=6DoC2IV7OAI",
+      "verificationType": "PROVIDER_YOUTUBE_LIVE_TARGET",
       "businessUnlocks": [
-        "tiqets-prague-future"
+        "viator-etosha-future"
       ],
-      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
-    },
-    {
-      "id": "prague-petrin-tower",
-      "title": "Prague — Petřín Lookout Tower",
-      "country": "Czech Republic",
-      "region": "Prague",
-      "provider": "Prague City Tourism",
-      "priority": "P1",
-      "verificationUrl": "https://pvp.panomax.com/",
-      "verificationType": "PANOMAX_360",
-      "businessUnlocks": [
-        "tiqets-prague-future"
-      ],
-      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
+      "humanCheckHint": "Open the exact NWR YouTube target and confirm the waterhole feed is currently live/moving before promotion."
     },
     {
       "id": "ushuaia-harbour-municipal",
@@ -153,18 +93,16 @@
       "humanCheckHint": "Open kg.camera and choose Ala-Archa Natural Park."
     },
     {
-      "id": "balykchy-north-entry",
-      "title": "Balykchy — Gateway to Issyk-Kul",
-      "country": "Kyrgyzstan",
-      "region": "Issyk-Kul",
-      "provider": "ElCat / KG Camera",
-      "priority": "P2",
-      "verificationUrl": "https://kg.camera/en/camera/Balykchi",
-      "verificationType": "CURRENT_CAMERA_NETWORK_DIRECT",
-      "businessUnlocks": [
-        "viator-issyk-kul-future"
-      ],
-      "humanCheckHint": "Open the direct Balykchy page and confirm the gateway/road view updates normally."
+      "id": "aruba-eagle-beach-live-family",
+      "title": "Eagle Beach — Aruba",
+      "country": "Aruba",
+      "region": "Eagle Beach",
+      "provider": "Aruba Tourism Authority / resort webcams",
+      "priority": "P1",
+      "verificationUrl": "https://www.aruba.com/us/live-webcams-and-channels",
+      "verificationType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
+      "businessUnlocks": [],
+      "humanCheckHint": "Use the official Aruba Live Webcams page and verify any current Eagle Beach camera. Group the family under one Eagle Beach place."
     },
     {
       "id": "everest-khumbu-hotel-view",
@@ -177,140 +115,18 @@
       "verificationType": "LIVE_WEBCAM_AGGREGATOR_WITH_OPERATOR_ATTRIBUTION",
       "businessUnlocks": [],
       "humanCheckHint": "Open the Hotel Everest View live page and confirm the image/video is current before ERN promotes it."
-    }
-  ],
-  "backlog": [
-    {
-      "id": "wanaka-lake-hawea-view",
-      "title": "Lake Hāwea — Roys Peak View",
-      "country": "New Zealand",
-      "region": "Wānaka / Otago",
-      "provider": "Lake Wānaka Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.wanaka.co.nz/wanaka-webcams/",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "klook-wanaka-future"
-      ],
-      "humanCheckHint": "Open the Wānaka webcam page and confirm the Lake Hāwea view is current."
     },
     {
-      "id": "osh-sulaiman-too",
-      "title": "Osh — Sulaiman-Too Mountain",
-      "country": "Kyrgyzstan",
-      "region": "Osh",
-      "provider": "ElCat / KG Camera",
-      "priority": "P2",
-      "verificationUrl": "https://kg.camera/en/camera/Osh-Sulaiman-Too",
-      "verificationType": "CURRENT_CAMERA_NETWORK_DIRECT",
-      "businessUnlocks": [
-        "klook-pamir-highway-future"
-      ],
-      "humanCheckHint": "Open the direct Sulaiman-Too page and confirm the landmark view updates normally."
-    },
-    {
-      "id": "prague-lesser-town-bridge-tower",
-      "title": "Prague — Lesser Town Bridge Tower",
-      "country": "Czech Republic",
-      "region": "Prague",
-      "provider": "Prague City Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.youtube.com/watch?v=RLvNkbRLrIA",
-      "verificationType": "YOUTUBE_LIVE_TARGET",
-      "businessUnlocks": [
-        "tiqets-prague-future"
-      ],
-      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
-    },
-    {
-      "id": "prague-old-town-bridge-tower",
-      "title": "Prague — Old Town Bridge Tower",
-      "country": "Czech Republic",
-      "region": "Prague",
-      "provider": "Prague City Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.youtube.com/watch?v=1zRzcYmipMs",
-      "verificationType": "YOUTUBE_LIVE_TARGET",
-      "businessUnlocks": [
-        "tiqets-prague-future"
-      ],
-      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
-    },
-    {
-      "id": "prague-powder-tower",
-      "title": "Prague — Powder Tower",
-      "country": "Czech Republic",
-      "region": "Prague",
-      "provider": "Prague City Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.youtube.com/watch?v=07U63AB60g4",
-      "verificationType": "YOUTUBE_LIVE_TARGET",
-      "businessUnlocks": [
-        "tiqets-prague-future"
-      ],
-      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
-    },
-    {
-      "id": "prague-st-nicholas-bell-tower",
-      "title": "Prague — St. Nicholas Bell Tower",
-      "country": "Czech Republic",
-      "region": "Prague",
-      "provider": "Prague City Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.youtube.com/watch?v=kfygpyeJHRg",
-      "verificationType": "YOUTUBE_LIVE_TARGET",
-      "businessUnlocks": [
-        "tiqets-prague-future"
-      ],
-      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
-    },
-    {
-      "id": "seoul-cheonggye-plaza",
-      "title": "Seoul — Cheonggyecheon Plaza",
-      "country": "South Korea",
-      "region": "Seoul",
-      "provider": "Seoul Metropolitan Government",
+      "id": "aruba-palm-beach-live-family",
+      "title": "Palm Beach — Aruba",
+      "country": "Aruba",
+      "region": "Palm Beach",
+      "provider": "Aruba Tourism Authority / resort webcams",
       "priority": "P1",
-      "verificationUrl": "https://tv.seoul.go.kr/onair/seoul24.do",
-      "verificationType": "PROVIDER_PAGE",
+      "verificationUrl": "https://www.aruba.com/us/live-webcams-and-channels",
+      "verificationType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
-    },
-    {
-      "id": "seoul-gwanghwamun-plaza",
-      "title": "Seoul — Gwanghwamun Plaza",
-      "country": "South Korea",
-      "region": "Seoul",
-      "provider": "Seoul Metropolitan Government",
-      "priority": "P1",
-      "verificationUrl": "https://tv.seoul.go.kr/onair/seoul24.do",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
-    },
-    {
-      "id": "suusamyr-valley",
-      "title": "Suusamyr Valley — Bishkek–Osh Road",
-      "country": "Kyrgyzstan",
-      "region": "Suusamyr",
-      "provider": "ElCat / KG Camera",
-      "priority": "P1",
-      "verificationUrl": "https://kg.camera/en/camera/Suusamyr",
-      "verificationType": "CURRENT_CAMERA_NETWORK_DIRECT",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the direct Suusamyr page and confirm the valley/road view is current and visually useful."
-    },
-    {
-      "id": "too-ashu-north",
-      "title": "Too-Ashu Pass — Northern Tunnel Entrance",
-      "country": "Kyrgyzstan",
-      "region": "Chüy / Jalal-Abad route",
-      "provider": "ElCat / KG Camera",
-      "priority": "P1",
-      "verificationUrl": "https://kg.camera/en/camera/Too-Ashu_Tunnel_North",
-      "verificationType": "CURRENT_CAMERA_NETWORK_DIRECT",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the direct Too-Ashu north page and confirm the high-altitude road/mountain scene updates normally."
+      "humanCheckHint": "Use the official Aruba Live Webcams page and verify either Playa Linda or Aruba Marriott Palm Beach camera. Treat multiple cameras as one Palm Beach destination."
     },
     {
       "id": "batken-city-panorama",
@@ -323,138 +139,44 @@
       "verificationType": "PUBLIC_CAMERA_INDEX",
       "businessUnlocks": [],
       "humanCheckHint": "Use the kg.camera list and open Batken city panorama; confirm it updates before promotion."
+    }
+  ],
+  "backlog": [
+    {
+      "id": "faroe-islands-live-family",
+      "title": "Faroe Islands — Village Live Camera Network",
+      "country": "Faroe Islands",
+      "region": "Multiple islands",
+      "provider": "Faroe Islands Live",
+      "priority": "P2",
+      "verificationUrl": "https://www.faroeislandslive.com/",
+      "verificationType": "LIVE_CAMERA_NETWORK",
+      "businessUnlocks": [],
+      "humanCheckHint": "Use the live map to choose one visually strong village camera; promote exact places individually rather than the network."
     },
     {
-      "id": "bishkek-ala-too-square",
-      "title": "Bishkek — Ala-Too Square",
-      "country": "Kyrgyzstan",
-      "region": "Bishkek",
-      "provider": "ElCat / KG Camera",
+      "id": "nz-wairoa-river-current",
+      "title": "Wairoa River — Current View",
+      "country": "New Zealand",
+      "region": "Hawke's Bay",
+      "provider": "Hawke's Bay Regional Council",
       "priority": "P2",
-      "verificationUrl": "https://kg.camera/en/camera/Bishkek_Ala-Too_Square",
-      "verificationType": "CURRENT_CAMERA_NETWORK_DIRECT",
+      "verificationUrl": "https://www.hbrc.govt.nz/webcams",
+      "verificationType": "OFFICIAL_QUASI_LIVE_SOURCE",
       "businessUnlocks": [],
-      "humanCheckHint": "Open the direct Ala-Too Square page and confirm the city-center view updates normally."
+      "humanCheckHint": "No urgent check required. Revisit when runtime catalog headroom improves or a stronger exact target is isolated."
     },
     {
-      "id": "celerina-engadin",
-      "title": "Celerina — Engadin",
-      "country": "Switzerland",
-      "region": "Graubünden",
-      "provider": "Switzerland Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/celerina",
-      "verificationType": "PROVIDER_PAGE",
+      "id": "nz-foxton-beach-current",
+      "title": "Foxton Beach — Manawatū Coast",
+      "country": "New Zealand",
+      "region": "Manawatū-Whanganui",
+      "provider": "Horizons Regional Council",
+      "priority": "P3",
+      "verificationUrl": "https://www.horizons.govt.nz/webcams",
+      "verificationType": "OFFICIAL_REGIONAL_WEBCAM",
       "businessUnlocks": [],
-      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
-    },
-    {
-      "id": "crans-montana-la-nationale",
-      "title": "Crans-Montana — La Nationale",
-      "country": "Switzerland",
-      "region": "Valais",
-      "provider": "Switzerland Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/la-nationale/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
-    },
-    {
-      "id": "engelberg-fuerenalp",
-      "title": "Engelberg — Fürenalp",
-      "country": "Switzerland",
-      "region": "Lucerne – Lake Lucerne",
-      "provider": "Switzerland Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/fuerenalp/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
-    },
-    {
-      "id": "levi-ski-resort",
-      "title": "Levi Ski Resort",
-      "country": "Finland",
-      "region": "Lapland",
-      "provider": "Visit Finland / Levi Ski Resort",
-      "priority": "P2",
-      "verificationUrl": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
-    },
-    {
-      "id": "murren-edelweiss",
-      "title": "Mürren — Bernese Alps",
-      "country": "Switzerland",
-      "region": "Bern Region",
-      "provider": "Switzerland Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.myswitzerland.com/en-ch/destinations/panoramas/edelweiss/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
-    },
-    {
-      "id": "naryn-central-square",
-      "title": "Naryn — Central Square",
-      "country": "Kyrgyzstan",
-      "region": "Naryn",
-      "provider": "ElCat / KG Camera",
-      "priority": "P2",
-      "verificationUrl": "https://kg.camera/en/camera/Naryn",
-      "verificationType": "CURRENT_CAMERA_NETWORK_DIRECT",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the direct Naryn page and confirm the square view updates normally."
-    },
-    {
-      "id": "randa-valais",
-      "title": "Randa — Valais",
-      "country": "Switzerland",
-      "region": "Valais",
-      "provider": "Switzerland Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/randa/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
-    },
-    {
-      "id": "mauritius-saint-felix",
-      "title": "Saint-Félix — Mauritius",
-      "country": "Mauritius",
-      "region": "Savanne",
-      "provider": "Mauritius Tourism Promotion Authority / Mauritius Now",
-      "priority": "P2",
-      "verificationUrl": "https://mauritiusnow.com/things-to-do-in-mauritius/",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_FAMILY",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the official Mauritius Now webcam experience and confirm Saint-Félix is present and visibly current."
-    },
-    {
-      "id": "schynige-platte",
-      "title": "Schynige Platte — Wilderswil",
-      "country": "Switzerland",
-      "region": "Bern Region",
-      "provider": "Switzerland Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.myswitzerland.com/en-ch/destinations/panoramas/schynige-platte/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
-    },
-    {
-      "id": "wengen-bellevue",
-      "title": "Wengen — Bellevue",
-      "country": "Switzerland",
-      "region": "Bern Region",
-      "provider": "Switzerland Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/bellevue/",
-      "verificationType": "PROVIDER_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
+      "humanCheckHint": "No urgent owner action; revisit when runtime headroom improves."
     },
     {
       "id": "razzakov-center",
@@ -474,5 +196,5 @@
     "watchEarthEligible": false,
     "labelingRequired": true
   },
-  "note": "Post-target quality queue. ERN has exceeded the original 150–200 searchable-place goal; human checks now focus on stronger true-live coverage, geographic balance and source upgrades. Quasi-live LIVE_IMAGE remains Search/Explore-only."
+  "note": "300-place quality-first queue. Human checks now focus on true-live upgrades or strategically strong geographic gaps; quasi-live/search expansion no longer depends on raw-count targets."
 }
