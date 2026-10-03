@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:15:00Z",
+  "generatedAt": "2026-10-03T16:25:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1546,9 +1546,9 @@
       "coordinateSourceUrl": "https://www.ecan.govt.nz/webcams"
     },
     "nz-foxton-beach-current": {
-      "freshnessEvidence": "Official Horizons Regional Council webcam page rechecked 2026-10-03; provider maintains regional coastal/river webcams and describes them as current monitoring/recreation views.",
-      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
-      "coordinateSourceUrl": "https://www.horizons.govt.nz/webcams"
+      "freshnessEvidence": "Horizons Regional Council maintains the Foxton Beach webcam in its official regional webcam network; checked 2026-10-03.",
+      "rightsBasis": "Official regional-council webcam network; ERN links externally and does not infer image reuse rights.",
+      "story": "Current coastal conditions at Foxton Beach."
     },
     "nz-whanganui-coast-current": {
       "freshnessEvidence": "Official Horizons Regional Council webcam page rechecked 2026-10-03; provider maintains regional coastal/river webcams and describes them as current monitoring/recreation views.",
@@ -1556,9 +1556,9 @@
       "coordinateSourceUrl": "https://www.horizons.govt.nz/webcams"
     },
     "nz-wairoa-river-current": {
-      "freshnessEvidence": "Official Hawke's Bay Regional Council webcam page rechecked 2026-10-03; provider states webcam images refresh every hour with latest-capture date/time shown.",
-      "rightsBasis": "Official government/tourism webcam source; ERN keeps the provider handoff link-only and does not infer image reuse or restream permission.",
-      "coordinateSourceUrl": "https://www.hbrc.govt.nz/webcams"
+      "freshnessEvidence": "Hawke's Bay Regional Council states its webcam images refresh every hour and display the latest capture date/time; Wairoa river cameras are in the active network.",
+      "rightsBasis": "Official regional-council webcam network; ERN links externally and does not infer image reuse rights.",
+      "story": "Hourly refreshed Wairoa river imagery from Hawke's Bay Regional Council."
     },
     "nz-te-awanga-coast-current": {
       "freshnessEvidence": "Official Hawke's Bay Regional Council webcam page rechecked 2026-10-03; provider states webcam images refresh every hour with latest-capture date/time shown.",
@@ -1689,6 +1689,11 @@
       "freshnessEvidence": "City of Kraków official Zakrzówek bathing-area camera page remains in the active Kamery online collection and was updated March 2026.",
       "rightsBasis": "Official City of Kraków camera page; ERN links externally and does not infer image reuse, embed or restream permission.",
       "story": "Current city-camera view over Zakrzówek."
+    },
+    "longyearbyen-unis-current": {
+      "freshnessEvidence": "UNIS' current facilities page explicitly states that an external provider has a web camera on the roof of UNIS and links directly to that camera; checked 2026-10-03.",
+      "rightsBasis": "Official University Centre in Svalbard handoff to the roof web camera; ERN remains link-only and does not infer image reuse, embed or restream rights.",
+      "story": "Current Arctic conditions from the UNIS roof in Longyearbyen."
     }
   },
   "prague-petrin-tower": {
