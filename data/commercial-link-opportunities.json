@@ -589,6 +589,38 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/es-ES/tours/Ushuaia/Tierra-Del-Fuego-National-Park-and-End-of-the-World-Train/d933-5503706P3",
       "publicInventoryEvidence": "Current Viator inventory includes Ushuaia-based Tierra del Fuego National Park and End of the World Train experiences with hotel pickup.",
       "nextAction": "Do not create a tracked link until the Ushuaia harbour source is reconfirmed live. Then prefer a city-level Ushuaia partner link rather than a single-product link."
+    },
+    {
+      "id": "klook-mauritius-future",
+      "destination": "Mauritius",
+      "placeIds": [
+        "mauritius-grand-baie",
+        "mauritius-pointe-desny",
+        "mauritius-saint-felix"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Klook currently exposes a Mauritius destination with active tours, cruises, snorkeling, island trips and outdoor activities, and Klook is already an active ERN relationship.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/co1011-mauritius/1-things-to-do/",
+      "publicInventoryEvidence": "Current Klook Mauritius inventory includes island tours, snorkeling/catamaran products, Chamarel/7 Coloured Earth, whale watching, kayaking and other visitor activities.",
+      "nextAction": "After at least one Mauritius Tourism webcam is owner-confirmed and promoted, generate one Mauritius destination-level Klook tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "viator-boulders-beach",
+      "destination": "Boulders Beach / Cape Peninsula",
+      "placeIds": [
+        "boulders-beach"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy African penguin window at Boulders Beach and Viator currently sells multiple Boulders Beach / Cape Peninsula guided experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/tours/Cape-Town/PENQUINS-AT-BOULDERS-BEACH-SIMONSTOWN/d318-139085P4",
+      "publicInventoryEvidence": "Current Viator inventory includes Boulders Beach penguin tours and full Cape Peninsula itineraries that explicitly stop at the penguin colony.",
+      "nextAction": "Generate a Boulders Beach or tightly scoped Cape Peninsula Viator partner link and manually verify it before public activation; avoid simply duplicating the generic Cape Town offer."
     }
   ]
 }
