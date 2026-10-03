@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:50:00Z",
+  "generatedAt": "2026-10-03T12:00:00Z",
   "note": "Verbose provenance, coordinate notes, and selected long visitor stories are retained outside the runtime source catalog to preserve ERN's strict production-size budget. Runtime records keep concise visitor-facing story and required truth/freshness markers.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1252,6 +1252,16 @@
       "rightsBasis": "Official Visit Azores webcam page; ERN links externally and does not republish imagery.",
       "freshnessEvidence": "Visit Azores currently lists Formosa as the active webcam spot for Santa Maria.",
       "coordinateNote": "Representative Santa Maria island reference; not claimed as exact camera position."
+    },
+    "vagar-airport-faroe": {
+      "freshnessEvidence": "Official Vága Airport webcam page states pictures are updated every 30 seconds. Rechecked 2026-10-03.",
+      "rightsBasis": "Official airport current-image page; ERN uses a LINK_ONLY handoff and does not infer reuse/embed rights.",
+      "coordinateSourceUrl": "https://www.fae.fo/en/about-vagar-airport/information/webcam"
+    },
+    "nuuk-arcticomm": {
+      "freshnessEvidence": "ArctiComm's current webcam page states the Nuuk image is updated every five minutes. Rechecked 2026-10-03.",
+      "rightsBasis": "Local Greenland communications provider current-image page; ERN uses a LINK_ONLY handoff and does not infer reuse/embed rights.",
+      "coordinateSourceUrl": "https://arcticomm.gl/arcticomm-webcam/"
     }
   }
 }
