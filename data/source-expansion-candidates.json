@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:50:00Z",
+  "generatedAt": "2026-10-03T04:55:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -1751,6 +1751,32 @@
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "INETER states the Concepción image refreshes automatically about every five minutes and is part of its live visual volcano monitoring network.",
       "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
+    },
+    {
+      "id": "yellowstone-biscuit-basin-current-image",
+      "title": "Yellowstone — Biscuit Basin",
+      "country": "United States",
+      "region": "Yellowstone National Park",
+      "provider": "U.S. Geological Survey / Yellowstone Volcano Observatory",
+      "sourcePage": "https://www.usgs.gov/media/webcams/biscuit-basin-webcam-0",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T04:55:00Z",
+      "evidence": "USGS states the Biscuit Basin monitoring camera captures and publishes a new image every 15 minutes; a new camera was installed July 22, 2026.",
+      "verification": "Official USGS refresh cadence verified; promoted as searchable LIVE_IMAGE only, not continuous live video."
+    },
+    {
+      "id": "yellowstone-lake-current-image",
+      "title": "Yellowstone Lake — Current View",
+      "country": "United States",
+      "region": "Yellowstone National Park",
+      "provider": "U.S. Geological Survey / Yellowstone Volcano Observatory",
+      "sourcePage": "https://www.usgs.gov/media/webcams/webcam-yellowstone-lake",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T04:55:00Z",
+      "evidence": "USGS reported the Lake camera reinstalled in September 2026 and states the current camera view updates every 15 minutes.",
+      "verification": "Official USGS refresh cadence verified; promoted as searchable LIVE_IMAGE only, not continuous live video."
     }
   ],
   "notes": [
@@ -1785,7 +1811,8 @@
     "Second quasi-live batch promoted five INETER Nicaragua volcano places plus El Reventador monitoring in Ecuador. INETER explicitly states images are transmitted in real time every 30 seconds or 1 minute.",
     "2026-10-03 quasi-live policy used to promote six official INETER Nicaragua volcano cameras plus INSIVUMEH Fuego and Santiaguito into searchable LIVE_IMAGE coverage. These do not enter Watch Earth as continuous live video.",
     "2026-10-03 promoted six GeoNet New Zealand volcano/island camera places under quasi-live LIVE_IMAGE semantics: Ruapehu, Ngauruhoe, Tongariro, Taranaki Maunga, Raoul Island and Whakaari mainland views.",
-    "2026-10-03 canonicalization removed five redundant generic Nicaragua candidate rows and retained six stronger direct-camera records (including Cerro Negro). This prevents duplicate destination inflation."
+    "2026-10-03 canonicalization removed five redundant generic Nicaragua candidate rows and retained six stronger direct-camera records (including Cerro Negro). This prevents duplicate destination inflation.",
+    "2026-10-03 added Biscuit Basin and renewed Yellowstone Lake from USGS/YVO as 15-minute quasi-live LIVE_IMAGE places. Existing Yellowstone business path should serve these places rather than create duplicate commercial placements."
   ],
   "researchGaps": [
     {
