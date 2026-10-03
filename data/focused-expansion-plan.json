@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T15:30:00Z",
+  "generatedAt": "2026-10-03T15:35:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 283,
+    "currentHealthyDistinctPlaceBaseline": 287,
     "targetRange": [
       250,
       300
     ],
-    "strategy": "Quality-first selective growth. ERN has exceeded its 250-place target and is 17 places from 300, but the runtime catalog is near its strict 300 KB ceiling. Prefer high-value swaps, source upgrades and a future supplemental-search architecture over uncontrolled catalog growth.",
+    "strategy": "Quality-first selective growth. ERN now has 287 healthy searchable places across 64 countries/territories. Continue toward 300 only with high-value geographic gaps, source upgrades or quasi-live current-image places that do not weaken startup performance.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -24,8 +24,8 @@
       "mauritius-grand-baie"
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
-    "researchCandidateCount": 181,
-    "playbackGatedCandidateCount": 10,
+    "researchCandidateCount": 212,
+    "playbackGatedCandidateCount": 24,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan-DEFERRED",
       "adjacentHighValueChecks": [
@@ -78,10 +78,10 @@
     "currentHealthyLiveImageCount": 171,
     "progressToTarget": {
       "minimumTarget": 250,
-      "current": 283,
+      "current": 287,
       "remainingToMinimum": 0,
       "stretchTarget": 300,
-      "remainingToStretch": 17,
+      "remainingToStretch": 13,
       "status": "QUALITY_FIRST_ARCHITECTURE_CONSTRAINED_GROWTH"
     },
     "recentExpansionFamilies": [
@@ -96,14 +96,14 @@
     "nextMode": "QUALITY_AND_FRESHNESS_AFTER_SCALE_TARGET",
     "currentHealthyTruth": {
       "LIVE_VIDEO": 13,
-      "EXTERNAL_LIVE": 72,
-      "LIVE_IMAGE": 206
+      "EXTERNAL_LIVE": 69,
+      "LIVE_IMAGE": 209
     },
     "researchCandidateStateCounts": {
       "PROMOTED_TO_SOURCE_REGISTRY": 55,
-      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 120,
+      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 125,
       "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
-      "HUMAN_PLAYBACK_REQUIRED": 12
+      "HUMAN_PLAYBACK_REQUIRED": 24
     }
   },
   "businessLane": {
