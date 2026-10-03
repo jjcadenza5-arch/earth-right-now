@@ -3,21 +3,7 @@
   "generatedAt": "2026-10-03T10:30:00Z",
   "healthyPlaceBaseline": 202,
   "policy": "Protect the achieved 200+ place baseline. Recheck or replace sources before freshness debt forces them out of Search/Explore; never extend currentness just to preserve count.",
-  "urgent": [
-    {
-      "id": "kaikoura-coast",
-      "placeId": "kaikoura-coast",
-      "title": "Kaikōura Coast",
-      "country": "New Zealand",
-      "truth": "LIVE_IMAGE",
-      "checkedAt": "2026-09-30T07:06:30Z",
-      "ageHours": 75.4,
-      "hoursUntilNominalRecheck": -3.4,
-      "provider": "Environment Canterbury",
-      "quality": 84,
-      "moment": 80
-    }
-  ],
+  "urgent": [],
   "next72Hours": [
     {
       "id": "london-savoy-place-live",
