@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:42:00Z",
+  "generatedAt": "2026-10-03T03:55:00Z",
   "healthyDistinctPlaces": 91,
-  "playbackGatedCandidates": 57,
+  "playbackGatedCandidates": 63,
   "currentByRegion": {
     "Oceania": 7,
     "North America": 23,
@@ -19,7 +19,8 @@
     "Asia": 10,
     "Africa": 7,
     "South America": 2,
-    "Caribbean": 3
+    "Caribbean": 3,
+    "Oceania": 6
   },
   "expansionGuidance": [
     {
