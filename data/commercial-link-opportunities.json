@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T01:25:00Z",
+  "generatedAt": "2026-10-03T01:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -247,6 +247,59 @@
       "reason": "Turku's current port/archipelago view can lead naturally to walking and city activities; Viator currently has a smaller but real Turku inventory.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Only generate a Turku Viator link if the destination page remains useful enough to justify a commercial action."
+    },
+    {
+      "id": "viator-lucerne",
+      "destination": "Lucerne / Lake Lucerne",
+      "placeIds": [
+        "lake-lucerne"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Lake Lucerne is one of ERN's strongest current scenic windows and Viator has substantial Lucerne city, lake and mountain inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and manually verify one destination-level Lucerne Viator partner link before public offer activation."
+    },
+    {
+      "id": "viator-tbilisi",
+      "destination": "Tbilisi",
+      "placeIds": [
+        "tbilisi-center"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a strong current Tbilisi city/landmark view and Viator has broad Tbilisi sightseeing, culture and day-trip inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and manually verify one Tbilisi Viator destination link; keep planning downstream from discovery."
+    },
+    {
+      "id": "viator-cancun",
+      "destination": "Cancún",
+      "placeIds": [
+        "cancun-live-aqua-beach"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a strong current Cancún beach window and Viator has deep Cancún excursion inventory, creating a direct See Live → Decide → Go bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and manually verify one Cancún Viator destination link before any public placement."
+    },
+    {
+      "id": "viator-yellowstone",
+      "destination": "Yellowstone National Park",
+      "placeIds": [
+        "yellowstone-old-faithful",
+        "yellowstone-national-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN has current Yellowstone views and Viator has guided Yellowstone sightseeing and wildlife inventory; a single park-level activity link can serve both place records without duplicate density.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one park-level Yellowstone Viator link only if it cleanly serves both current ERN Yellowstone places."
     }
   ]
 }
