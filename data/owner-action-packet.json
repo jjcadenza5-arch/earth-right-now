@@ -1,12 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:25:00Z",
+  "generatedAt": "2026-10-03T16:40:00Z",
   "status": "DORMANT_UNTIL_OWNER_BATCH_IS_WORTHWHILE",
   "purpose": "Bundle owner-only affiliate link generation and playback checks into worthwhile sessions instead of interrupting ERN expansion one item at a time.",
   "sourceVerificationBatch": [
     "ala-archa-park",
     "everest-khumbu-hotel-view",
-    "longyearbyen-unis-webcam",
     "malta-live-cams",
     "kenyalive-nairobi-national-park",
     "namibia-okaukuejo-waterhole",
@@ -74,8 +73,8 @@
     "No automatic rewriting",
     "No source truth changes from commercial value"
   ],
-  "batchRationale": "300 healthy searchable places are now live. Owner work remains dormant until a worthwhile bundled session: prioritize a compact exact-link batch plus broad utilities, while Trip.com and other stay programs remain traffic-triggered future unlocks.",
-  "searchablePlaceMilestone": 300,
+  "batchRationale": "308 healthy searchable places are now classified. Owner work stays dormant until a worthwhile bundled session: prioritize a compact exact-link batch plus broad utilities; Trip.com and other stay programs remain traffic-triggered future unlocks.",
+  "searchablePlaceMilestone": 308,
   "secondWaveAffiliateBatch": [
     "viator-st-moritz",
     "viator-dolomiti-superski",
@@ -90,7 +89,9 @@
     "viator-la-palma",
     "viator-bernese-alps",
     "viator-levi",
-    "viator-aalborg"
+    "viator-aalborg",
+    "tiqets-krakow",
+    "viator-longyearbyen"
   ],
   "trafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
   "futureProgramNote": "Trip.com remains ERN's P1 future stay/transport/activity addition once Travelpayouts unlocks it. Do not recheck repeatedly; wait for material traffic/conversion growth or a platform status change."
