@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T04:15:00Z",
+  "currentHealthyCountries": [
+    "Anguilla",
+    "Aruba",
+    "Australia",
+    "Austria",
+    "Brazil",
+    "Canada",
+    "Chile",
+    "Earth",
+    "Finland",
+    "France",
+    "Georgia",
+    "Iceland",
+    "Ireland",
+    "Italy",
+    "Japan",
+    "Kenya",
+    "Mexico",
+    "New Zealand",
+    "Norway",
+    "Portugal",
+    "Singapore",
+    "Sint Maarten",
+    "South Africa",
+    "South Korea",
+    "Spain",
+    "Switzerland",
+    "Taiwan",
+    "Thailand",
+    "United Kingdom",
+    "United States"
+  ],
+  "priorities": [
+    {
+      "region": "Central Asia / Pamir",
+      "priority": "P1",
+      "state": "PAMIR_CORE_GAP_OPEN",
+      "rule": "Adjacent Kyrgyz/Kazakh/Caucasus cameras do not close the Pamir/Tajikistan gap."
+    },
+    {
+      "region": "Antarctica",
+      "priority": "P1",
+      "state": "OFFICIAL_CURRENT_IMAGE_FAMILY_RESEARCHED",
+      "candidateIds": [
+        "antarctica-casey-station",
+        "antarctica-davis-station",
+        "antarctica-mawson-station"
+      ]
+    },
+    {
+      "region": "Central America",
+      "priority": "P1",
+      "state": "PANAMA_CANAL_OFFICIAL_FAMILY_RESEARCHED",
+      "candidateIds": [
+        "panama-canal-miraflores-locks",
+        "panama-canal-gatun-locks",
+        "panama-canal-pedro-miguel-locks",
+        "panama-canal-cocoli-locks",
+        "panama-canal-agua-clara-locks"
+      ]
+    },
+    {
+      "region": "South America",
+      "priority": "P1",
+      "state": "EXPAND_SELECTIVELY",
+      "focus": [
+        "Andes",
+        "Amazon",
+        "Patagonia cities/ports",
+        "major civic plazas"
+      ],
+      "rule": "Prefer official municipal/tourism cameras."
+    },
+    {
+      "region": "Africa beyond South Africa",
+      "priority": "P1",
+      "state": "EXPAND_SELECTIVELY",
+      "focus": [
+        "East Africa",
+        "Indian Ocean islands",
+        "North Africa"
+      ],
+      "rule": "Avoid generic camera directories."
+    },
+    {
+      "region": "Oceania / South Pacific",
+      "priority": "P1",
+      "state": "EXPAND_SELECTIVELY",
+      "focus": [
+        "New Zealand gaps",
+        "Pacific islands"
+      ],
+      "rule": "Prefer tourism boards, councils, ports and resorts with direct current evidence."
+    },
+    {
+      "region": "Caribbean",
+      "priority": "P1",
+      "state": "EXPAND_SELECTIVELY",
+      "focus": [
+        "island capitals",
+        "harbours",
+        "beaches"
+      ],
+      "rule": "Do not multiply multiple angles of the same resort into fake destination growth."
+    },
+    {
+      "region": "Europe / North America",
+      "priority": "P3",
+      "state": "CONTROL_DENSITY",
+      "rule": "Add only unusually strong or commercially useful gaps until underrepresented regions catch up."
+    }
+  ],
+  "safeguards": {
+    "noPrerecordedAsLive": true,
+    "noWeatherWidgetAsScenicCamera": true,
+    "noDuplicatePlaceInflation": true,
+    "humanVerificationBeforePromotion": true
+  }
+}
