@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:40:00Z",
+  "generatedAt": "2026-10-03T12:30:00Z",
   "status": "DORMANT_UNTIL_OWNER_BATCH_IS_WORTHWHILE",
   "purpose": "Bundle owner-only affiliate link generation and playback checks into worthwhile sessions instead of interrupting ERN expansion one item at a time.",
   "sourceVerificationBatch": [
@@ -72,6 +72,19 @@
     "No automatic rewriting",
     "No source truth changes from commercial value"
   ],
-  "batchRationale": "Small high-intent cross-section across culture, nature, islands and Asia. Generate only when owner action becomes the bottleneck; measure aggregate clicks/conversions before broadening.",
-  "searchablePlaceMilestone": 250
+  "batchRationale": "First wave remains the smallest highest-intent set. Second wave is pre-researched now so ERN can expand quickly after initial click/conversion evidence without repeating discovery work.",
+  "searchablePlaceMilestone": 256,
+  "secondWaveAffiliateBatch": [
+    "viator-st-moritz",
+    "viator-dolomiti-superski",
+    "viator-queenstown-alps",
+    "viator-ski-arlberg",
+    "viator-glacier-national-park",
+    "viator-kaikoura",
+    "kkday-kaohsiung",
+    "viator-waikiki",
+    "viator-boston-harbor",
+    "viator-reykjavik",
+    "viator-la-palma"
+  ]
 }
