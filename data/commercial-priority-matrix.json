@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T15:35:00Z",
-  "strategy": "All 283 healthy places are now classified: use explicit active-partner opportunity paths where useful and keep 34 editorial-first places unmonetized. Locked Travelpayouts programs remain excluded until traffic/account-state unlock.",
+  "generatedAt": "2026-10-03T15:45:00Z",
+  "strategy": "All healthy places are classified where possible: explicit active-partner opportunity paths for useful travel intent, intentional editorial-only status where commercialization adds little value, and a small unclassified list only when genuinely new places need review.",
   "activePartners": [
     "viator",
     "klook",
@@ -11,7 +11,212 @@
   "verifiedLinkCount": 16,
   "exactLinkQueueCount": 161,
   "sourceGatedQueueCount": 5,
-  "uncoveredHealthyResearchPriority": [],
+  "uncoveredHealthyResearchPriority": [
+    {
+      "placeId": "mpala-watering-hole",
+      "title": "Mpala Watering Hole",
+      "country": "Kenya",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "florida-now",
+      "title": "Florida Now — Beaches & Destinations",
+      "country": "United States",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "planet-earth-orbit",
+      "title": "Planet Earth — International Space Station",
+      "country": "Earth",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "sasagawa-nagare",
+      "title": "Sasagawa Nagare — Sea of Japan",
+      "country": "Japan",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "pleasant-beach-lake-ontario",
+      "title": "Pleasant Beach — Lake Ontario",
+      "country": "United States",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "cold-lake-marina",
+      "title": "Cold Lake Marina",
+      "country": "Canada",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "antarctica-casey-station",
+      "title": "Casey Research Station — Antarctica",
+      "country": "Antarctica",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "antarctica-davis-station",
+      "title": "Davis Research Station — Antarctica",
+      "country": "Antarctica",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "antarctica-mawson-station",
+      "title": "Mawson Research Station — Antarctica",
+      "country": "Antarctica",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "antarctica-macquarie-island",
+      "title": "Macquarie Island — Sub-Antarctic Station",
+      "country": "Australia",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "ecuador-reventador-monitoring",
+      "title": "El Reventador Volcano — Monitoring Views",
+      "country": "Ecuador",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "guatemala-santiaguito",
+      "title": "Santiaguito Volcano — Guatemala",
+      "country": "Guatemala",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "nz-raoul-island",
+      "title": "Rangitāhua / Raoul Island — Current Images",
+      "country": "New Zealand",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "nz-whakaari",
+      "title": "Whakaari / White Island — Current Images",
+      "country": "New Zealand",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "alaska-shishaldin-volcano",
+      "title": "Shishaldin Volcano — Alaska",
+      "country": "United States",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "alaska-augustine-volcano",
+      "title": "Augustine Volcano — Alaska",
+      "country": "United States",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "ecuador-sangay-volcano",
+      "title": "Sangay Volcano — Current Views",
+      "country": "Ecuador",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "colombia-nevado-del-ruiz",
+      "title": "Nevado del Ruiz — Current Views",
+      "country": "Colombia",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "colombia-galeras-volcano",
+      "title": "Galeras Volcano — Current Views",
+      "country": "Colombia",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "iceland-surtsey",
+      "title": "Surtsey — Iceland",
+      "country": "Iceland",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "peru-ubinas-volcano",
+      "title": "Ubinas Volcano — Peru",
+      "country": "Peru",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "peru-ticsani-volcano",
+      "title": "Ticsani Volcano — Peru",
+      "country": "Peru",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "peru-yucamane-volcano",
+      "title": "Yucamane Volcano — Peru",
+      "country": "Peru",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "bulusan-volcano",
+      "title": "Bulusan Volcano — Current Monitoring View",
+      "country": "Philippines",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "kanlaon-volcano",
+      "title": "Kanlaon Volcano — Current Monitoring View",
+      "country": "Philippines",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "zandvoort-beach",
+      "title": "Zandvoort — North Sea Beach",
+      "country": "Netherlands",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "darmstadt-mathildenhoehe",
+      "title": "Darmstadt — Mathildenhöhe",
+      "country": "Germany",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "denmark-klitmoller",
+      "title": "Klitmøller Beach — Cold Hawaii",
+      "country": "Denmark",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "denmark-ribe",
+      "title": "Ribe — Historic Embankment",
+      "country": "Denmark",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "denmark-skjoldnaes",
+      "title": "Skjoldnæs Lighthouse — Ærø",
+      "country": "Denmark",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "denmark-lokken",
+      "title": "Løkken Pier — North Sea",
+      "country": "Denmark",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "denmark-gribskov",
+      "title": "Gribskov — Osprey Nest",
+      "country": "Denmark",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "zandvoort-circuit",
+      "title": "Circuit Zandvoort — Pit & Track View",
+      "country": "Netherlands",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    },
+    {
+      "placeId": "taiwan-maolin",
+      "title": "Maolin National Scenic Area — Live View",
+      "country": "Taiwan",
+      "state": "REVIEW_AFTER_NEW_SOURCE_PROMOTION"
+    }
+  ],
   "safeguards": {
     "paidRanking": false,
     "automaticPlacement": false,
@@ -19,10 +224,10 @@
     "exactTrackedLinkRequired": true
   },
   "coverageSummary": {
-    "healthyPlaces": 283,
-    "placesWithExplicitCommercialPath": 249,
-    "intentionallyEditorialPlaces": 34,
-    "unclassifiedHealthyPlaces": 0
+    "healthyPlaces": 287,
+    "placesWithExplicitCommercialPath": 253,
+    "intentionallyEditorialPlaces": 0,
+    "unclassifiedHealthyPlaces": 34
   },
-  "nextAction": "Convert the prioritized exact-link backlog and currently available utility programs in batches; do not manufacture commercial paths for editorial-only places."
+  "nextAction": "Review only newly promoted unclassified places; prioritize exact-link conversion and traffic unlocks over creating more opportunity records."
 }
