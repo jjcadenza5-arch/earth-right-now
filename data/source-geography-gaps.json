@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:08:00Z",
+  "generatedAt": "2026-10-03T03:30:00Z",
   "healthyDistinctPlaces": 91,
-  "playbackGatedCandidates": 49,
+  "playbackGatedCandidates": 54,
   "currentByRegion": {
     "Oceania": 7,
     "North America": 23,
@@ -17,7 +17,8 @@
   "candidateByRegion": {
     "Europe": 35,
     "Asia": 10,
-    "Africa": 4
+    "Africa": 7,
+    "South America": 2
   },
   "expansionGuidance": [
     {
@@ -29,6 +30,11 @@
       "region": "Africa",
       "priority": "MEDIUM_HIGH",
       "reason": "Current coverage is concentrated in South Africa plus one Kenya source; broaden countries and source families."
+    },
+    {
+      "region": "Indian Ocean",
+      "priority": "MEDIUM_HIGH",
+      "reason": "Mauritius official tourism now provides a credible multi-camera family; expand only through named verified locations rather than treating the 13-camera claim as 13 places automatically."
     },
     {
       "region": "Asia",
