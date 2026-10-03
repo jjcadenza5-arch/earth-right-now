@@ -28,7 +28,8 @@
     "lon": 174.7633,
     "timeZone": "Pacific/Auckland",
     "coordinateBasis": "PLACE_REFERENCE",
-    "playbackVerifiedAt": "2026-10-02T00:45:00Z"
+    "playbackVerifiedAt": "2026-10-02T00:45:00Z",
+    "rightsBasis": "The official Viaduct Harbour page exposes the Auckland Viaduct View through this standard YouTube channel-live player. Deployed ERN human review confirmed current playback after explicit visitor Play interaction. Keep YouTube branding/controls intact and preserve click-to-play; do not restream."
   },
   {
     "id": "kilauea-summit",
@@ -60,7 +61,8 @@
     "coordinateBasis": "REGION_REFERENCE",
     "aliases": [
       "Kilauea"
-    ]
+    ],
+    "rightsBasis": "Official USGS current-view source; retained as link-only because ERN has not documented redistribution/embed permission."
   },
   {
     "id": "pattaya-city-live",
@@ -91,7 +93,8 @@
     "lon": 100.8825,
     "timeZone": "Asia/Bangkok",
     "coordinateBasis": "REGION_REFERENCE",
-    "lastFailedCheck": "2026-09-28T17:16:00Z"
+    "lastFailedCheck": "2026-09-28T17:16:00Z",
+    "rightsBasis": "Official Pattaya City CCTV Streaming portal permits public viewing for general information; terms prohibit commercial use and republication without written authorization. ERN remains link-only."
   },
   {
     "id": "nossob-kgalagadi",
@@ -122,7 +125,8 @@
     "timeZone": "Africa/Johannesburg",
     "officialUrl": "https://www.sanparks.org/travel/webcams",
     "coordinateBasis": "PLACE_REFERENCE",
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "Official SANParks webcam page; retained as link-only because ERN has not documented display/embed permission."
   },
   {
     "id": "kaikoura-coast",
@@ -154,7 +158,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "aliases": [
       "Kaikoura"
-    ]
+    ],
+    "rightsBasis": "Official Environment Canterbury regional webcam page; ERN uses link-only current-image discovery and does not infer embed/restream permission."
   },
   {
     "id": "glenelg-sa",
@@ -185,7 +190,8 @@
     "timeZone": "Australia/Adelaide",
     "officialUrl": "https://marinesafety.sa.gov.au/web-cameras",
     "coordinateBasis": "PLACE_REFERENCE",
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "Official South Australia Marine Safety webcam network provides live coastal images; ERN conservatively keeps provider playback link-only."
   },
   {
     "id": "brighton-sa",
@@ -216,7 +222,8 @@
     "timeZone": "Australia/Adelaide",
     "officialUrl": "https://marinesafety.sa.gov.au/web-cameras",
     "coordinateBasis": "PLACE_REFERENCE",
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "Official South Australia Marine Safety webcam network provides live coastal images; ERN conservatively keeps provider playback link-only."
   },
   {
     "id": "mpala-watering-hole",
@@ -244,7 +251,8 @@
     "lat": 0.2928,
     "lon": 36.899,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Mpala Research Centre / Explore.org"
+    "attribution": "Mpala Research Centre / Explore.org",
+    "rightsBasis": "Mpala Research Centre's official Mpala Live page presents live wildlife camera views and credits Explore.org as the live-camera partner. ERN now uses the official Mpala Live page as a LINK_ONLY external handoff; no third-party embed or restream permission is inferred."
   },
   {
     "id": "kijihiki-plateau",
@@ -273,7 +281,8 @@
     "lat": 41.943912,
     "lon": 140.616395,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Hokuto City"
+    "attribution": "Hokuto City",
+    "rightsBasis": "Hokuto City's official Kijihiki Plateau live-camera page states that the city streams fixed live cameras on YouTube from the Panorama Observatory, including views toward Hakodate and Onuma, available beyond normal observatory hours. ERN uses the municipal page as a LINK_ONLY handoff and does not infer embed/restream rights."
   },
   {
     "id": "st-moritz",
@@ -303,7 +312,8 @@
     "lat": 46.497777,
     "lon": 9.838323,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "St. Moritz Tourism"
+    "attribution": "St. Moritz Tourism",
+    "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented."
   },
   {
     "id": "verbier",
@@ -335,7 +345,8 @@
     "lon": 7.229023,
     "coordinateBasis": "PLACE_REFERENCE",
     "playbackVerifiedAt": "2026-09-30T00:01:18.032Z",
-    "attribution": "Verbier – Val de Bagnes Tourism"
+    "attribution": "Verbier – Val de Bagnes Tourism",
+    "rightsBasis": "The official Verbier tourism webcam page embeds this standard YouTube player for its live mountain view. Deployed ERN human review confirmed current playback. Preserve YouTube/provider branding and controls; do not restream."
   },
   {
     "id": "dolomiti-superski",
@@ -364,7 +375,8 @@
     "story": "Browse current views across twelve Dolomites regions before choosing where to ski, hike or sightsee.",
     "mapBehavior": "MULTI_SITE_UNPINNED",
     "coordinateBasis": "MULTI_SITE_COLLECTION",
-    "attribution": "Dolomiti Superski"
+    "attribution": "Dolomiti Superski",
+    "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented."
   },
   {
     "id": "queenstown-airport-alps",
@@ -393,7 +405,8 @@
     "lat": -45.0220678,
     "lon": 168.7372513,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Queenstown Airport"
+    "attribution": "Queenstown Airport",
+    "rightsBasis": "Recovered ERN official destination/current-view page; link-only unless explicit current embed permission is documented."
   },
   {
     "id": "kitzbuhel",
@@ -425,7 +438,8 @@
     "attribution": "Bergbahn Kitzbühel / KitzSki",
     "aliases": [
       "Kitzbuhel"
-    ]
+    ],
+    "rightsBasis": "Current official KitzSki map exposes multiple Livecams; retained as LINK_ONLY because no embed permission is inferred."
   },
   {
     "id": "ski-arlberg",
@@ -455,7 +469,8 @@
     "lat": 47.116667,
     "lon": 10.266667,
     "coordinateBasis": "REGION_REFERENCE",
-    "attribution": "Ski Arlberg"
+    "attribution": "Ski Arlberg",
+    "rightsBasis": "Current official Ski Arlberg webcam page reports active webcams and live mountain views; retained as LINK_ONLY because no embed permission is inferred."
   },
   {
     "id": "grand-canyon-national-park",
@@ -484,7 +499,8 @@
     "lon": -112.108861,
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "National Park Service",
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "Current National Park Service weather/webcam page provides refreshed current views; retained LINK_ONLY because ERN does not infer display permission."
   },
   {
     "id": "yellowstone-national-park",
@@ -512,7 +528,8 @@
     "lat": 44.460364,
     "lon": -110.828219,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "National Park Service"
+    "attribution": "National Park Service",
+    "rightsBasis": "Current NPS page explicitly provides an Old Faithful livestream plus refreshed static webcams; retained LINK_ONLY."
   },
   {
     "id": "mount-rainier-national-park",
@@ -545,7 +562,8 @@
       "Mount Rainier",
       "Mt Rainier"
     ],
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "Current National Park Service weather page links live/current webcams; retained LINK_ONLY because ERN does not infer display permission."
   },
   {
     "id": "glacier-national-park",
@@ -573,7 +591,8 @@
     "lat": 48.525,
     "lon": -113.98361,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "National Park Service"
+    "attribution": "National Park Service",
+    "rightsBasis": "Current NPS pages explicitly link Glacier live webcams/current views; some individual cameras can be seasonally offline, so ERN remains LINK_ONLY at the destination page."
   },
   {
     "id": "san-diego-zoo",
@@ -601,7 +620,8 @@
     "lat": 32.7356967,
     "lon": -117.1515722,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "San Diego Zoo"
+    "attribution": "San Diego Zoo",
+    "rightsBasis": "Current official San Diego Zoo page explicitly lists live wildlife cameras; retained LINK_ONLY. Pre-recorded Red Panda content is not treated as live."
   },
   {
     "id": "zermatt-matterhorn",
@@ -632,7 +652,8 @@
     "attribution": "Zermatt Tourism",
     "aliases": [
       "Matterhorn"
-    ]
+    ],
+    "rightsBasis": "Current official Zermatt Tourism page explicitly describes live destination webcams; retained LINK_ONLY."
   },
   {
     "id": "chamonix-mont-blanc",
@@ -663,7 +684,8 @@
     "attribution": "Chamonix-Mont-Blanc Tourism",
     "aliases": [
       "Mont Blanc"
-    ]
+    ],
+    "rightsBasis": "Current official Chamonix tourism webcam page lists numerous current valley and summit panoramas; retained LINK_ONLY."
   },
   {
     "id": "georgia-aquarium",
@@ -691,7 +713,8 @@
     "lat": 33.7638778,
     "lon": -84.3979549,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Georgia Aquarium"
+    "attribution": "Georgia Aquarium",
+    "rightsBasis": "Current official Georgia Aquarium site exposes multiple animal webcams/current live views; retained LINK_ONLY because no embed permission is inferred."
   },
   {
     "id": "whistler-blackcomb",
@@ -719,7 +742,8 @@
     "lat": 50.1163889,
     "lon": -122.9541667,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Whistler Blackcomb"
+    "attribution": "Whistler Blackcomb",
+    "rightsBasis": "Current official Whistler Blackcomb mountain-cams surface is available; retained LINK_ONLY because no embed permission is inferred."
   },
   {
     "id": "florida-now",
@@ -748,7 +772,8 @@
     "coordinateBasis": "MULTI_SITE_COLLECTION",
     "travelResearchEligible": false,
     "travelResearchExclusionReason": "Statewide multi-destination collection rather than one concrete visitor destination; do not force a single travel option onto the aggregate source.",
-    "attribution": "VISIT FLORIDA"
+    "attribution": "VISIT FLORIDA",
+    "rightsBasis": "Current official VISIT FLORIDA Florida Now property provides destination webcam/current-condition views; retained LINK_ONLY."
   },
   {
     "id": "lajes-pico-harbour",
@@ -775,7 +800,8 @@
     "lat": 38.388917,
     "lon": -28.252551,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Espaço Talassa"
+    "attribution": "Espaço Talassa",
+    "rightsBasis": "Espaço Talassa's own website currently publishes a Webcam page with a live viewing surface for Lajes do Pico. ERN uses the provider's official webcam page as a LINK_ONLY external handoff and does not infer embed/restream rights."
   },
   {
     "id": "roque-observatory",
@@ -804,7 +830,8 @@
     "lon": -17.8916667,
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "Gran Telescopio CANARIAS / IAC",
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "Gran Telescopio CANARIAS' official webcam page publishes current images from the Roque de los Muchachos Observatory and states that the images are taken every minute. ERN links to the official page and does not copy or republish the images."
   },
   {
     "id": "cijin-beach-kaohsiung",
@@ -834,7 +861,8 @@
     "checkedAt": "2026-09-29T10:29:35Z",
     "lastSuccessfulCheck": "2026-09-29T10:29:35Z",
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Tourism Bureau of Kaohsiung City Government"
+    "attribution": "Tourism Bureau of Kaohsiung City Government",
+    "rightsBasis": "Kaohsiung City Government Tourism Bureau's official live-camera page publishes the Cijin Beach current view. ERN links to the provider page only; no embed/restream permission is inferred."
   },
   {
     "id": "cancun-live-aqua-beach",
@@ -866,7 +894,8 @@
     "attribution": "NIZUC Resort & Spa",
     "aliases": [
       "Cancun"
-    ]
+    ],
+    "rightsBasis": "NIZUC Resort & Spa's official Live Cam page currently presents resort-operated real-time views including NIZUC Beach 1 and the NIZUC Muelle. ERN uses the official page as a LINK_ONLY external handoff and does not infer embed or restream rights."
   },
   {
     "id": "nyc-skyline-jersey-city-earthcam",
@@ -900,7 +929,8 @@
       "New York",
       "New York City",
       "NYC"
-    ]
+    ],
+    "rightsBasis": "EarthCam publicly identifies this as live streaming video; ERN keeps playback at the provider because no ERN embed permission is inferred."
   },
   {
     "id": "statue-liberty-harbor-earthcam",
@@ -934,7 +964,8 @@
       "New York",
       "New York City",
       "NYC"
-    ]
+    ],
+    "rightsBasis": "EarthCam publicly presents the HarborCam as a live view; ERN keeps playback at the provider because no ERN embed permission is inferred."
   },
   {
     "id": "statue-liberty-earthcam",
@@ -968,7 +999,8 @@
       "New York",
       "New York City",
       "NYC"
-    ]
+    ],
+    "rightsBasis": "EarthCam publicly presents this Statue of Liberty camera as a live view; ERN keeps playback at the provider because no ERN embed permission is inferred."
   },
   {
     "id": "takayama-miyagawa-stream",
@@ -1000,7 +1032,8 @@
     "lon": 137.255,
     "timeZone": "Asia/Tokyo",
     "coordinateBasis": "PLACE_REFERENCE",
-    "playbackVerifiedAt": "2026-09-30T00:01:33.752Z"
+    "playbackVerifiedAt": "2026-09-30T00:01:33.752Z",
+    "rightsBasis": "The official Hida-Takayama streaming page itself uses this standard YouTube channel-live embed. Deployed ERN human review confirmed the exact branded player works after explicit visitor Play interaction. Keep YouTube branding/controls intact and preserve click-to-play behavior; do not restream."
   },
   {
     "id": "takayama-miyagawa-current-image",
@@ -1031,7 +1064,8 @@
     "lon": 137.255,
     "timeZone": "Asia/Tokyo",
     "coordinateBasis": "PLACE_REFERENCE",
-    "failureReason": "Provider page rechecked on 2026-10-03, but latest visible Miyagawa images were dated 2026-09-21 rather than current."
+    "failureReason": "Provider page rechecked on 2026-10-03, but latest visible Miyagawa images were dated 2026-09-21 rather than current.",
+    "rightsBasis": "The operator states the still cameras refresh about every three minutes and instructs visitors to reload for the newest image; ERN links to the provider page."
   },
   {
     "provider": "EarthCam",
@@ -1060,7 +1094,8 @@
     "lat": 18.1818,
     "lon": -63.139,
     "timeZone": "America/Anguilla",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights."
   },
   {
     "provider": "EarthCam",
@@ -1091,7 +1126,8 @@
     "timeZone": "America/New_York",
     "coordinateBasis": "PLACE_REFERENCE",
     "commercialDepthResearchHold": true,
-    "commercialDepthResearchHoldReason": "Private research already has a concrete stay. No sufficiently strong distinct official activity candidate is documented yet; hold depth rather than forcing weak or duplicate coverage."
+    "commercialDepthResearchHoldReason": "Private research already has a concrete stay. No sufficiently strong distinct official activity candidate is documented yet; hold depth rather than forcing weak or duplicate coverage.",
+    "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights."
   },
   {
     "provider": "EarthCam",
@@ -1120,7 +1156,8 @@
     "lat": 12.531,
     "lon": -70.058,
     "timeZone": "America/Aruba",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights."
   },
   {
     "provider": "EarthCam",
@@ -1149,7 +1186,8 @@
     "lat": 25.94,
     "lon": -81.734,
     "timeZone": "America/New_York",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights."
   },
   {
     "provider": "EarthCam",
@@ -1179,7 +1217,8 @@
     "lat": 53.3455,
     "lon": -6.264,
     "timeZone": "Europe/Dublin",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights."
   },
   {
     "provider": "EarthCam",
@@ -1212,7 +1251,8 @@
     "aliases": [
       "Chicago",
       "Chicago Lakefront"
-    ]
+    ],
+    "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights."
   },
   {
     "provider": "EarthCam",
@@ -1241,7 +1281,8 @@
     "lat": 18.0201,
     "lon": -63.063,
     "timeZone": "America/Lower_Princes",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights."
   },
   {
     "provider": "EarthCam",
@@ -1270,7 +1311,8 @@
     "lat": 41.693,
     "lon": 44.8015,
     "timeZone": "Asia/Tbilisi",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights."
   },
   {
     "provider": "EarthCam",
@@ -1299,7 +1341,8 @@
     "lat": 41.688,
     "lon": 44.811,
     "timeZone": "Asia/Tbilisi",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights."
   },
   {
     "provider": "EarthCam",
@@ -1333,7 +1376,8 @@
       "ISS",
       "International Space Station",
       "Space Station"
-    ]
+    ],
+    "rightsBasis": "Provider publicly identifies this as a live/current camera. ERN links to the provider and does not infer embedding rights."
   },
   {
     "id": "flam-fjord-official",
@@ -1366,7 +1410,8 @@
     "aliases": [
       "Flam",
       "Aurlandsfjord"
-    ]
+    ],
+    "rightsBasis": "Official destination operator presents these as real-time live webcam feeds. ERN links to the provider and does not infer embedding rights."
   },
   {
     "id": "amden-walensee-official",
@@ -1396,7 +1441,8 @@
     "lon": 9.142,
     "timeZone": "Europe/Zurich",
     "coordinateBasis": "REGION_REFERENCE",
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "Official tourism page provides live/current webcam imagery. ERN conservatively classifies the collection as current images and links to the provider."
   },
   {
     "id": "oeschinensee-official",
@@ -1426,7 +1472,8 @@
     "lon": 7.727,
     "timeZone": "Europe/Zurich",
     "coordinateBasis": "REGION_REFERENCE",
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "Official destination page says its webcams deliver the latest live images. ERN conservatively classifies them as current images and links to the provider."
   },
   {
     "id": "lake-lucerne-official",
@@ -1456,7 +1503,8 @@
     "lon": 8.31,
     "timeZone": "Europe/Zurich",
     "coordinateBasis": "REGION_REFERENCE",
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "Official navigation-company page provides live webcam views and current weather. ERN conservatively classifies the collection as current images and links to the provider."
   },
   {
     "id": "taitung-jinzun",
@@ -1486,7 +1534,8 @@
     "lon": 121.2799,
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "East Coast National Scenic Area",
-    "playbackVerifiedAt": "2026-10-02T00:45:00Z"
+    "playbackVerifiedAt": "2026-10-02T00:45:00Z",
+    "rightsBasis": "The official East Coast National Scenic Area Jinzun live-camera page embeds exact YouTube player ZdqHgQwvZOw. Deployed-origin human review on 2026-09-29 confirmed the exact branded player visibly playing/current in ERN. Approval is source-specific; preserve YouTube/provider branding and controls and do not restream."
   },
   {
     "id": "blouberg-table-mountain",
@@ -1516,7 +1565,8 @@
     "lon": 18.461,
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "TableMountainView.com",
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "TableMountainView.com operates the direct Bloubergstrand/Table Mountain webcam page and states that its image updates every 120 seconds during its published daylight window. ERN uses a LINK_ONLY handoff and does not copy or restream the image."
   },
   {
     "id": "perdido-key-beach",
@@ -1545,7 +1595,8 @@
     "lon": -87.440376,
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "U.S. National Park Service",
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "The National Park Service's official Perdido Key Beach webcam is marked Active and states that a beach photograph is taken every 15 minutes. ERN links to the NPS webcam page and does not copy or restream the image."
   },
   {
     "id": "sasagawa-nagare",
@@ -1573,7 +1624,8 @@
     "lat": 38.374444,
     "lon": 139.458139,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Murakami City / Niigata LIVE Camera"
+    "attribution": "Murakami City / Niigata LIVE Camera",
+    "rightsBasis": "Murakami City's official live-camera directory currently lists a Sasagawa Nagare / Samugawa-area external live camera and directs visitors to Niigata LIVE Camera for current regional conditions. ERN uses the municipal directory as a LINK_ONLY handoff and does not infer embed/restream rights."
   },
   {
     "id": "chihshang-paradise-road",
@@ -1601,7 +1653,8 @@
     "lat": 23.1166667,
     "lon": 121.2166667,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Taitung County Government Tourism / Amazing Taitung"
+    "attribution": "Taitung County Government Tourism / Amazing Taitung",
+    "rightsBasis": "Taitung County Government's official tourism site currently lists Chihshang Paradise Road as a live camera, and the county tourism channel Amazing Taitung hosts the exact live stream. ERN uses the official live-camera page as a LINK_ONLY external handoff; no third-party embed or restream permission is inferred."
   },
   {
     "id": "ponte-di-legno-adamello",
@@ -1629,7 +1682,8 @@
     "lat": 46.2586,
     "lon": 10.5087,
     "coordinateBasis": "REGION_REFERENCE",
-    "attribution": "Pontedilegno-Tonale"
+    "attribution": "Pontedilegno-Tonale",
+    "rightsBasis": "Pontedilegno-Tonale's official webcam page publishes real-time LIVE mountain and Ponte di Legno views. ERN links to the official page only; no embed/restream permission is inferred."
   },
   {
     "id": "pleasant-beach-lake-ontario",
@@ -1657,7 +1711,8 @@
     "lat": 43.31788,
     "lon": -76.70581,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Pleasant Beach Hotel"
+    "attribution": "Pleasant Beach Hotel",
+    "rightsBasis": "Pleasant Beach Hotel's official site currently advertises its own PBH Webcam and describes it as live video overlooking Little Sodus Bay. ERN uses the hotel page as a LINK_ONLY external handoff and does not infer embed/restream rights."
   },
   {
     "id": "maui-hale-pau-hana",
@@ -1685,7 +1740,8 @@
     "lat": 20.7182,
     "lon": -156.4466,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "The Hale Pau Hana"
+    "attribution": "The Hale Pau Hana",
+    "rightsBasis": "The Hale Pau Hana's official property site currently publishes a 'Live at the Hale Pau Hana' real-time stream. ERN uses the official page as a LINK_ONLY external handoff and does not infer permission to embed or restream the player."
   },
   {
     "id": "bergen-ulriken",
@@ -1714,7 +1770,8 @@
     "lat": 60.37674,
     "lon": 5.39343,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Ulriken643"
+    "attribution": "Ulriken643",
+    "rightsBasis": "Ulriken643's official webcam page publishes a current live view. ERN links to the provider page only; no embed/restream permission is inferred."
   },
   {
     "id": "waikiki-south-shore",
@@ -1747,7 +1804,8 @@
     "aliases": [
       "Honolulu",
       "Waikiki"
-    ]
+    ],
+    "rightsBasis": "Waikīkī Aquarium's official Webcams page currently features three live webcams, including the south shore of Waikīkī. ERN uses the Aquarium's own webcam page as a LINK_ONLY external handoff and does not infer permission to embed or restream its player."
   },
   {
     "id": "cold-lake-marina",
@@ -1775,7 +1833,8 @@
     "lat": 54.46578,
     "lon": -110.17009,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "City of Cold Lake"
+    "attribution": "City of Cold Lake",
+    "rightsBasis": "The City of Cold Lake's official Live Webcams page explicitly provides a Cold Lake Marina live feed and states that its webcams stream live 24/7 all year. ERN uses the municipal page as a LINK_ONLY external handoff and does not infer third-party embed or restream rights."
   },
   {
     "id": "st-johns-harbour",
@@ -1809,7 +1868,8 @@
       "St Johns Harbor",
       "Saint John's Harbour",
       "Saint Johns Harbour"
-    ]
+    ],
+    "rightsBasis": "CBC News Newfoundland and Labrador currently operates a public downtown St. John's webcam on its verified YouTube channel, with a view of the Narrows and harbour from The Rooms. ERN uses the provider's current live stream as a LINK_ONLY external handoff and does not infer embed or restream rights."
   },
   {
     "id": "metung-gippsland-lakes",
@@ -1837,7 +1897,8 @@
     "lat": -37.8921089,
     "lon": 147.8542936,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Metung Hotel"
+    "attribution": "Metung Hotel",
+    "rightsBasis": "Metung Hotel's official website currently presents a dedicated LIVE STREAM / Watch Live Stream surface for its waterfront property. ERN uses the official page as a LINK_ONLY external handoff; no third-party embed or restream permission is inferred."
   },
   {
     "id": "skeikampen-ski",
@@ -1865,7 +1926,8 @@
     "lat": 61.35,
     "lon": 10.083333,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Skeikampen"
+    "attribution": "Skeikampen",
+    "rightsBasis": "Skeikampen's official webcam page publishes current webcam views. ERN links to the provider page only; no embed/restream permission is inferred."
   },
   {
     "id": "coogee-randwick-beaches",
@@ -1899,7 +1961,8 @@
       "Coogee",
       "Randwick",
       "Sydney"
-    ]
+    ],
+    "rightsBasis": "Current official Randwick City Council beach-cam page explicitly identifies multiple live beach cams. ERN keeps this LINK_ONLY; no restream or embed permission is inferred."
   },
   {
     "id": "boston-harbor-islands",
@@ -1933,7 +1996,8 @@
     "aliases": [
       "Boston",
       "Boston Harbour Islands"
-    ]
+    ],
+    "rightsBasis": "Current official National Park Service webcam page lists four Boston Light webcam viewpoints. ERN keeps this LINK_ONLY and does not infer display permission."
   },
   {
     "id": "diano-marina",
@@ -1963,7 +2027,8 @@
     "lat": 43.9166667,
     "lon": 8.0833333,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Comune di Diano Marina Tourism"
+    "attribution": "Comune di Diano Marina Tourism",
+    "rightsBasis": "Current official municipal tourism page is titled Live Webcam and identifies five live-image webcam viewpoints. ERN keeps this LINK_ONLY and does not infer embed permission."
   },
   {
     "id": "farm-tomita",
@@ -1993,7 +2058,8 @@
     "lon": 142.42447,
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "Farm Tomita",
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "Current official Farm Tomita site exposes a live-webcam section with current field images. ERN keeps it LINK_ONLY and does not infer image reuse or embed permission."
   },
   {
     "id": "waikiki-beach",
@@ -2027,7 +2093,8 @@
     "aliases": [
       "Honolulu",
       "Waikiki"
-    ]
+    ],
+    "rightsBasis": "Current official Hilton resort webcam page explicitly offers live city and beach footage. ERN keeps it LINK_ONLY and does not infer embed permission."
   },
   {
     "id": "jungfrau-region",
@@ -2058,7 +2125,8 @@
     "mapBehavior": "MULTI_SITE_UNPINNED",
     "coordinateBasis": "MULTI_SITE_COLLECTION",
     "lastFailedCheck": "2026-09-28T17:16:00Z",
-    "attribution": "Jungfrau Railways"
+    "attribution": "Jungfrau Railways",
+    "rightsBasis": "Current official Jungfrau webcam surface exists, but camera connections were reported offline during verification. ERN keeps it LINK_ONLY and DEGRADED until fresh working-camera evidence exists."
   },
   {
     "id": "sottomarina-chioggia",
@@ -2087,7 +2155,8 @@
     "lat": 45.1926833,
     "lon": 12.2930139,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "Visit Chioggia"
+    "attribution": "Visit Chioggia",
+    "rightsBasis": "Current official Visit Chioggia page explicitly offers a Sottomarina live webcam for real-time beach weather and conditions. ERN keeps it LINK_ONLY and does not infer embed permission."
   },
   {
     "id": "chidori-sakura",
@@ -2118,7 +2187,8 @@
     "lon": 139.74496,
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "Visit Chiyoda / Chiyoda City Sakura Festival",
-    "lastFailedCheck": "2026-09-29T01:05:00Z"
+    "lastFailedCheck": "2026-09-29T01:05:00Z",
+    "rightsBasis": "Current official Visit Chiyoda Sakura Festival pages explicitly offer the Chidori-ga-fuchi live camera. ERN keeps the source LINK_ONLY and does not infer display permission."
   },
   {
     "id": "volcan-tajogaite",
@@ -2150,7 +2220,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "playbackVerifiedAt": "2026-09-30T00:01:39.808Z",
     "attribution": "Webcam La Palma — webcam-lapalma.de",
-    "attributionUrl": "https://webcam-lapalma.de/"
+    "attributionUrl": "https://webcam-lapalma.de/",
+    "rightsBasis": "Webcam La Palma's official embed page explicitly permits free iframe embedding of this live cam provided the visible webcam-lapalma.de attribution link remains present. Deployed ERN human review confirmed current playback."
   },
   {
     "id": "rio-copacabana-earthcam",
@@ -2183,7 +2254,8 @@
     "aliases": [
       "Rio",
       "Rio de Janeiro"
-    ]
+    ],
+    "rightsBasis": "Current verified EarthCam live-stream page identifies Copacabana Beach in Rio. ERN keeps this LINK_ONLY and does not infer embed rights."
   },
   {
     "id": "torres-del-paine-rio-serrano",
@@ -2212,7 +2284,8 @@
     "lat": -50.9830556,
     "lon": -72.9663889,
     "coordinateBasis": "PLACE_REFERENCE",
-    "attribution": "SkylineWebcams"
+    "attribution": "SkylineWebcams",
+    "rightsBasis": "Current provider page explicitly presents a live webcam of Torres del Paine and Río Serrano. ERN keeps this LINK_ONLY and does not infer embed rights."
   },
   {
     "id": "reykjavik-metoffice",
@@ -2245,7 +2318,8 @@
     "aliases": [
       "Reykjavik"
     ],
-    "failureReason": null
+    "failureReason": null,
+    "rightsBasis": "Official Icelandic Meteorological Office webcam page. ERN links to the provider and does not infer third-party display permission."
   },
   {
     "id": "boulders-penguins-sanparks",
@@ -2277,7 +2351,8 @@
     "story": "Official SANParks video from the Boulders African Penguin Colony; the provider notes that playback may trail real time by about ten minutes for stability.",
     "coordinateBasis": "PLACE_REFERENCE",
     "commercialDepthResearchHold": true,
-    "commercialDepthResearchHoldReason": "Private research already has a Boulders Beach gate ticket. The obvious penguin viewing/boardwalk experience is materially the same visit, so do not manufacture a second intent merely to satisfy depth."
+    "commercialDepthResearchHoldReason": "Private research already has a Boulders Beach gate ticket. The obvious penguin viewing/boardwalk experience is materially the same visit, so do not manufacture a second intent merely to satisfy depth.",
+    "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding rights."
   },
   {
     "id": "sanparks-addo-video",
@@ -2306,7 +2381,8 @@
     "freshness": 92,
     "moment": 94,
     "story": "An official SANParks wildlife video window at Addo Elephant National Park, useful for seeing activity around the park before a visit.",
-    "coordinateBasis": "REGION_REFERENCE"
+    "coordinateBasis": "REGION_REFERENCE",
+    "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding permission."
   },
   {
     "id": "sanparks-orpen-video",
@@ -2335,7 +2411,8 @@
     "freshness": 92,
     "moment": 94,
     "story": "An official SANParks wildlife video window from Orpen in Kruger National Park, where open plains and water attract changing animal activity.",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official SANParks webcam video page. ERN keeps this LINK_ONLY and does not infer embedding permission."
   },
   {
     "id": "cape-town-earthtv",
@@ -2368,7 +2445,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "aliases": [
       "Cape Town"
-    ]
+    ],
+    "rightsBasis": "Current earthTV live-stream page explicitly presents the Cape Town webcam. ERN keeps this LINK_ONLY and does not infer embedding rights."
   },
   {
     "id": "la-palma-aridane-valley",
@@ -2400,7 +2478,8 @@
     "playbackVerifiedAt": "2026-09-30T00:01:25.646Z",
     "lat": 28.6600849,
     "lon": -17.9143581,
-    "coordinateBasis": "REGION_REFERENCE"
+    "coordinateBasis": "REGION_REFERENCE",
+    "rightsBasis": "Webcam La Palma's official embed page explicitly permits free iframe embedding of this live cam provided the visible webcam-lapalma.de attribution link remains present. Deployed ERN human review confirmed current playback."
   },
   {
     "id": "la-palma-caldera-taburiente",
@@ -2432,7 +2511,8 @@
     "playbackVerifiedAt": "2026-09-30T00:01:08.323Z",
     "lat": 28.721111,
     "lon": -17.870694,
-    "coordinateBasis": "REGION_REFERENCE"
+    "coordinateBasis": "REGION_REFERENCE",
+    "rightsBasis": "Webcam La Palma's official embed page explicitly permits free iframe embedding of this live cam provided the visible webcam-lapalma.de attribution link remains present. Deployed ERN human review confirmed current playback."
   },
   {
     "id": "kyoto-fushimi-inari-live",
@@ -2464,7 +2544,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": 34.9671,
     "lon": 135.7727,
-    "playbackVerifiedAt": "2026-09-30T00:00:07.252Z"
+    "playbackVerifiedAt": "2026-09-30T00:00:07.252Z",
+    "rightsBasis": "The official Kyoto tourism live-camera system publishes this visitor-facing real-time view. ERN uses the standard branded YouTube player only. Deployed-origin human review confirmed the exact player works/current; approval is source-specific and does not grant blanket rights to other Kyoto cameras."
   },
   {
     "id": "kyoto-kifune-shrine-live",
@@ -2496,7 +2577,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": 35.1216,
     "lon": 135.763,
-    "playbackVerifiedAt": "2026-09-29T23:59:49.663Z"
+    "playbackVerifiedAt": "2026-09-29T23:59:49.663Z",
+    "rightsBasis": "The official Kyoto tourism live-camera system publishes this visitor-facing real-time view. ERN uses the standard branded YouTube player only. Deployed-origin human review confirmed the exact player works/current; approval is source-specific."
   },
   {
     "id": "kyoto-kiyomizuzaka-live",
@@ -2528,7 +2610,8 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": 34.9966,
     "lon": 135.7808,
-    "playbackVerifiedAt": "2026-10-02T00:45:00Z"
+    "playbackVerifiedAt": "2026-10-02T00:45:00Z",
+    "rightsBasis": "The official Kyoto tourism live-camera system publishes this visitor-facing real-time view. ERN uses the standard branded YouTube player only. Deployed-origin human review confirmed the exact player works/current; approval is source-specific."
   },
   {
     "id": "london-savoy-place-live",
@@ -2558,7 +2641,8 @@
     "timeZone": "Europe/London",
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": 51.51,
-    "lon": -0.11925
+    "lon": -0.11925,
+    "rightsBasis": "The IET's current official webcam page explicitly states this is a live feed, not recorded, and intended for visitor viewing with a ten-minute session limit. ERN therefore keeps the source LINK_ONLY/EXTERNAL and does not attempt to restream or defeat the provider's session limit."
   },
   {
     "id": "london-abbey-road-crossing-live",
@@ -2588,7 +2672,8 @@
     "timeZone": "Europe/London",
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": 51.532,
-    "lon": -0.17822
+    "lon": -0.17822,
+    "rightsBasis": "Abbey Road Studios' official crossing page exposes a LIVE webcam view and archive. ERN links to the official live experience and does not infer third-party embed or restream rights."
   },
   {
     "id": "kyoto-hanamikoji-live",
@@ -2620,7 +2705,8 @@
     "coordinateBasis": "REGION_REFERENCE",
     "lat": 35.011611,
     "lon": 135.768056,
-    "playbackVerifiedAt": "2026-10-02T00:45:00Z"
+    "playbackVerifiedAt": "2026-10-02T00:45:00Z",
+    "rightsBasis": "The official Kyoto tourism live-camera network publishes this visitor-facing real-time view. ERN uses only the standard branded YouTube player. Deployed human review confirmed this exact target; approval is source-specific."
   },
   {
     "id": "tonami-tulip-park-panorama",
@@ -2650,7 +2736,8 @@
     "timeZone": "Asia/Tokyo",
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": 36.6408156,
-    "lon": 136.9606446
+    "lon": 136.9606446,
+    "rightsBasis": "Tonami City's official live-camera page provides a current visitor-facing live view of the park with selectable directions. ERN links to the official page and does not infer third-party embed or restream rights."
   },
   {
     "id": "seoul-plaza-24h-live",
@@ -2685,7 +2772,8 @@
     "aliases": [
       "Seoul",
       "Seoul Plaza"
-    ]
+    ],
+    "rightsBasis": "Seoul Metropolitan Government's official Seoul Live pages publish Seoul Plaza as a 24-hour live cam. ERN keeps it LINK_ONLY/EXTERNAL and does not infer embed or restream rights."
   },
   {
     "id": "bangkok-sukhumvit-skylinewebcams",
@@ -2719,7 +2807,8 @@
     "aliases": [
       "Bangkok",
       "Sukhumvit"
-    ]
+    ],
+    "rightsBasis": "SkylineWebcams' current provider page identifies the Sukhumvit Road view as a live cam. ERN keeps the source LINK_ONLY/EXTERNAL and does not infer embed or restream rights."
   },
   {
     "id": "singapore-port-skylinewebcams",
@@ -2752,7 +2841,8 @@
     "lon": 103.835,
     "aliases": [
       "Singapore"
-    ]
+    ],
+    "rightsBasis": "SkylineWebcams' current provider page identifies the Singapore port-area view as a live cam. ERN keeps it LINK_ONLY/EXTERNAL and does not infer embed or restream rights."
   },
   {
     "id": "rome-spanish-steps-skylinewebcams",
@@ -2786,7 +2876,8 @@
     "aliases": [
       "Rome",
       "Spanish Steps"
-    ]
+    ],
+    "rightsBasis": "SkylineWebcams' current provider page identifies the Spanish Steps view as a live cam. ERN keeps the source LINK_ONLY/EXTERNAL and does not infer embed or restream rights."
   },
   {
     "id": "rovaniemi-santa-claus-village-live",
@@ -2822,7 +2913,8 @@
     "aliases": [
       "Rovaniemi",
       "Santa Claus Village"
-    ]
+    ],
+    "rightsBasis": "Santa Claus Village's official live-video page embeds the exact City of Rovaniemi-hosted YouTube player. Deployed-origin human review on 2026-09-29 confirmed that exact branded player visibly playing/current in ERN. Approval is specific to this player; keep YouTube/provider branding and controls intact and do not restream."
   },
   {
     "id": "yellowstone-old-faithful-live",
@@ -2853,7 +2945,8 @@
     "timeZone": "America/Denver",
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": 44.4604722,
-    "lon": -110.8281389
+    "lon": -110.8281389,
+    "rightsBasis": "The National Park Service's current Yellowstone webcam page identifies Old Faithful as the park's live-stream webcam and the exact NPS media page reports Status: Active. ERN keeps the live view LINK_ONLY/EXTERNAL because the live program credits Canon USA and Yellowstone Forever and no blanket embed/reuse right is inferred."
   },
   {
     "id": "kyoto-nishiki-market-live",
@@ -2891,7 +2984,8 @@
     },
     "lat": 35.011611,
     "lon": 135.768056,
-    "coordinateBasis": "REGION_REFERENCE"
+    "coordinateBasis": "REGION_REFERENCE",
+    "rightsBasis": "Kyoto City Tourism Association's official visitor-facing live-camera system publishes this exact Nishiki Market YouTube target. Deployed-origin human review on 2026-09-29, during the provider-published 11:00–18:00 JST live window, confirmed the exact branded player visibly playing/current. Approval is source-specific; preserve YouTube branding/controls and do not restream."
   },
   {
     "id": "vienna-city-hall-ringstrasse",
@@ -2925,7 +3019,8 @@
     "aliases": [
       "Wien",
       "Vienna City Hall"
-    ]
+    ],
+    "rightsBasis": "Official Vienna tourism live webcam page; ERN keeps playback link-only and does not infer embed or restream permission."
   },
   {
     "id": "helsinki-market-square-south-harbour",
@@ -2959,7 +3054,8 @@
     "aliases": [
       "Helsinki Market Square",
       "South Harbour Helsinki"
-    ]
+    ],
+    "rightsBasis": "Official Visit Finland live-camera collection; ERN keeps playback link-only and does not infer embed or restream permission."
   },
   {
     "id": "koli-lake-pielinen",
@@ -2992,7 +3088,8 @@
     "aliases": [
       "Koli",
       "Lake Pielinen"
-    ]
+    ],
+    "rightsBasis": "Official Visit Finland live-camera collection; ERN keeps playback link-only and does not infer embed or restream permission."
   },
   {
     "id": "turku-port-archipelago",
@@ -3026,7 +3123,8 @@
     "aliases": [
       "Turku Port",
       "Turku Archipelago"
-    ]
+    ],
+    "rightsBasis": "Official Visit Finland live-camera collection; ERN keeps playback link-only and does not infer embed or restream permission."
   },
   {
     "id": "antarctica-casey-station",
@@ -3060,7 +3158,8 @@
     "lat": -66.282,
     "lon": 110.527,
     "coordinateBasis": "PLACE_REFERENCE",
-    "timeZone": "Antarctica/Casey"
+    "timeZone": "Antarctica/Casey",
+    "rightsBasis": "Australian Antarctic Program publishes still webcam images for public viewing; ERN links to the official page and does not copy or restream them."
   },
   {
     "id": "antarctica-davis-station",
@@ -3094,7 +3193,8 @@
     "lat": -68.576,
     "lon": 77.968,
     "coordinateBasis": "PLACE_REFERENCE",
-    "timeZone": "Antarctica/Davis"
+    "timeZone": "Antarctica/Davis",
+    "rightsBasis": "Australian Antarctic Program publishes still webcam images for public viewing; ERN links to the official page."
   },
   {
     "id": "antarctica-mawson-station",
@@ -3128,7 +3228,8 @@
     "lat": -67.603,
     "lon": 62.874,
     "coordinateBasis": "PLACE_REFERENCE",
-    "timeZone": "Antarctica/Mawson"
+    "timeZone": "Antarctica/Mawson",
+    "rightsBasis": "Australian Antarctic Program publishes still webcam images for public viewing; ERN links to the official page."
   },
   {
     "id": "antarctica-macquarie-island",
@@ -3162,7 +3263,8 @@
     "lat": -54.499,
     "lon": 158.937,
     "coordinateBasis": "PLACE_REFERENCE",
-    "timeZone": "Antarctica/Macquarie"
+    "timeZone": "Antarctica/Macquarie",
+    "rightsBasis": "Australian Antarctic Program publishes station webcam imagery for public viewing; ERN links to the official page."
   },
   {
     "id": "costa-rica-poas-crater",
@@ -3196,7 +3298,8 @@
     "lat": 10.2,
     "lon": -84.233,
     "coordinateBasis": "PLACE_REFERENCE",
-    "timeZone": "America/Costa_Rica"
+    "timeZone": "America/Costa_Rica",
+    "rightsBasis": "Official OVSICORI-UNA volcano camera page; ERN links to the source and does not republish its image."
   },
   {
     "id": "costa-rica-turrialba-crater",
@@ -3230,7 +3333,8 @@
     "lat": 10.025,
     "lon": -83.767,
     "coordinateBasis": "PLACE_REFERENCE",
-    "timeZone": "America/Costa_Rica"
+    "timeZone": "America/Costa_Rica",
+    "rightsBasis": "Official OVSICORI-UNA camera page; ERN links to the provider."
   },
   {
     "id": "costa-rica-irazu",
@@ -3264,7 +3368,8 @@
     "lat": 9.979,
     "lon": -83.852,
     "coordinateBasis": "PLACE_REFERENCE",
-    "timeZone": "America/Costa_Rica"
+    "timeZone": "America/Costa_Rica",
+    "rightsBasis": "Official OVSICORI-UNA camera page; ERN links to the provider."
   },
   {
     "id": "costa-rica-rincon-sensoria",
@@ -3298,7 +3403,8 @@
     "lat": 10.83,
     "lon": -85.324,
     "coordinateBasis": "PLACE_REFERENCE",
-    "timeZone": "America/Costa_Rica"
+    "timeZone": "America/Costa_Rica",
+    "rightsBasis": "Official OVSICORI-UNA camera page; ERN links to the provider."
   },
   {
     "id": "ecuador-cotopaxi-monitoring",
@@ -3331,7 +3437,8 @@
     "lat": -0.683,
     "lon": -78.436,
     "coordinateBasis": "PLACE_REFERENCE",
-    "timeZone": "America/Guayaquil"
+    "timeZone": "America/Guayaquil",
+    "rightsBasis": "Official Instituto Geofísico EPN visual-monitoring page; ERN links to the provider and treats the imagery as current monitoring, not continuous video."
   },
   {
     "id": "ecuador-reventador-monitoring",
@@ -3364,7 +3471,8 @@
     "lat": -0.078,
     "lon": -77.656,
     "coordinateBasis": "PLACE_REFERENCE",
-    "timeZone": "America/Guayaquil"
+    "timeZone": "America/Guayaquil",
+    "rightsBasis": "Official Instituto Geofísico EPN visual-monitoring page; ERN links to the provider and treats the imagery as current monitoring, not continuous video."
   },
   {
     "id": "nicaragua-san-cristobal-current-image",
@@ -3399,7 +3507,8 @@
     ],
     "lat": 12.702,
     "lon": -87.004,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official INETER public volcano webcam; ERN links to the source and does not copy or restream images."
   },
   {
     "id": "nicaragua-telica-current-image",
@@ -3434,7 +3543,8 @@
     ],
     "lat": 12.602,
     "lon": -86.845,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official INETER public volcano webcam; ERN links to the source and does not copy or restream images."
   },
   {
     "id": "nicaragua-momotombo-current-image",
@@ -3469,7 +3579,8 @@
     ],
     "lat": 12.423,
     "lon": -86.54,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official INETER public volcano webcam; ERN links to the source and does not copy or restream images."
   },
   {
     "id": "nicaragua-masaya-current-image",
@@ -3505,7 +3616,8 @@
     ],
     "lat": 11.984,
     "lon": -86.161,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official INETER public volcano webcam; ERN links to the source and does not copy or restream images."
   },
   {
     "id": "nicaragua-concepcion-current-image",
@@ -3541,7 +3653,8 @@
     ],
     "lat": 11.538,
     "lon": -85.622,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official INETER public volcano webcam; ERN links to the source and does not copy or restream images."
   },
   {
     "id": "nicaragua-cerro-negro-current-image",
@@ -3577,7 +3690,8 @@
     ],
     "lat": 12.506,
     "lon": -86.702,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official INETER public volcano webcam; ERN links to the source and does not copy or restream images."
   },
   {
     "id": "guatemala-fuego-current-image",
@@ -3612,7 +3726,8 @@
     ],
     "lat": 14.473,
     "lon": -90.88,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official INSIVUMEH volcanic surveillance page; ERN links to the source and does not copy or republish monitoring imagery."
   },
   {
     "id": "guatemala-santiaguito-current-image",
@@ -3647,7 +3762,8 @@
     ],
     "lat": 14.756,
     "lon": -91.552,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official INSIVUMEH volcanic surveillance page; ERN links to the source and does not copy or republish monitoring imagery."
   },
   {
     "id": "nz-ruapehu-current-image",
@@ -3683,7 +3799,8 @@
     "refreshIntervalSeconds": 600,
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": -39.281,
-    "lon": 175.57
+    "lon": 175.57,
+    "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery."
   },
   {
     "id": "nz-ngauruhoe-current-image",
@@ -3719,7 +3836,8 @@
     "refreshIntervalSeconds": 600,
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": -39.157,
-    "lon": 175.632
+    "lon": 175.632,
+    "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery."
   },
   {
     "id": "nz-tongariro-current-image",
@@ -3755,7 +3873,8 @@
     "refreshIntervalSeconds": 600,
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": -39.13,
-    "lon": 175.642
+    "lon": 175.642,
+    "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery."
   },
   {
     "id": "nz-taranaki-current-image",
@@ -3792,7 +3911,8 @@
     "refreshIntervalSeconds": 600,
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": -39.296,
-    "lon": 174.064
+    "lon": 174.064,
+    "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery."
   },
   {
     "id": "nz-raoul-island-current-image",
@@ -3829,7 +3949,8 @@
     "refreshIntervalSeconds": 600,
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": -29.27,
-    "lon": -177.92
+    "lon": -177.92,
+    "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery."
   },
   {
     "id": "nz-whakaari-current-image",
@@ -3865,7 +3986,8 @@
     "refreshIntervalSeconds": 600,
     "coordinateBasis": "PLACE_REFERENCE",
     "lat": -37.52,
-    "lon": 177.18
+    "lon": 177.18,
+    "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery."
   },
   {
     "id": "yellowstone-biscuit-basin-current-image",
@@ -3900,7 +4022,8 @@
     "aliases": [
       "Biscuit Basin",
       "Black Diamond Pool"
-    ]
+    ],
+    "rightsBasis": "USGS Yellowstone Volcano Observatory public webcam; ERN links to the government source and does not copy or restream imagery."
   },
   {
     "id": "yellowstone-lake-current-image",
@@ -3936,7 +4059,8 @@
     "aliases": [
       "Yellowstone Lake",
       "Lake Village Yellowstone"
-    ]
+    ],
+    "rightsBasis": "USGS Yellowstone Volcano Observatory public webcam; ERN links to the government source and does not copy or restream imagery."
   },
   {
     "id": "mauna-loa-current-image",
@@ -3971,7 +4095,8 @@
       "Mauna Loa",
       "Moku'aweoweo",
       "Mokuʻāweoweo"
-    ]
+    ],
+    "rightsBasis": "USGS HVO public webcams are official monitoring images; ERN links to the source and does not copy or restream imagery."
   },
   {
     "id": "alaska-shishaldin-current-image",
@@ -4006,7 +4131,8 @@
     "aliases": [
       "Shishaldin",
       "Mount Shishaldin"
-    ]
+    ],
+    "rightsBasis": "Official Alaska Volcano Observatory webcam/activity pages; ERN links to the source and does not copy or republish images."
   },
   {
     "id": "alaska-augustine-current-image",
@@ -4041,7 +4167,8 @@
     "aliases": [
       "Augustine",
       "Augustine Volcano"
-    ]
+    ],
+    "rightsBasis": "Official Alaska Volcano Observatory webcam page; ERN links to the source and does not copy or republish images."
   },
   {
     "id": "ecuador-sangay-current-image",
@@ -4075,7 +4202,8 @@
     "aliases": [
       "Sangay",
       "Volcan Sangay"
-    ]
+    ],
+    "rightsBasis": "Official Instituto Geofísico EPN volcano-camera page; ERN links to the source and does not copy or republish monitoring imagery."
   },
   {
     "id": "ecuador-tungurahua-current-image",
@@ -4109,7 +4237,8 @@
     "aliases": [
       "Tungurahua",
       "Volcan Tungurahua"
-    ]
+    ],
+    "rightsBasis": "Official Instituto Geofísico EPN volcano-camera page; ERN links to the source and does not copy or republish monitoring imagery."
   },
   {
     "id": "colombia-nevado-del-ruiz-current-image",
@@ -4144,7 +4273,8 @@
     "aliases": [
       "Nevado del Ruiz",
       "Ruiz Volcano"
-    ]
+    ],
+    "rightsBasis": "Official Servicio Geológico Colombiano volcanic-surveillance camera pages; ERN links to the source and does not copy monitoring imagery."
   },
   {
     "id": "colombia-galeras-current-image",
@@ -4179,7 +4309,8 @@
     "aliases": [
       "Galeras",
       "Volcan Galeras"
-    ]
+    ],
+    "rightsBasis": "Official Servicio Geológico Colombiano online-camera page; ERN links to the source and does not copy or republish imagery."
   },
   {
     "id": "hong-kong-victoria-harbour-current-photo",
@@ -4218,7 +4349,8 @@
       "Victoria Harbor",
       "Hong Kong Harbour",
       "Hong Kong Harbor"
-    ]
+    ],
+    "rightsBasis": "Official Hong Kong Observatory weather-photo service; ERN links to the source and does not copy or republish webcam imagery."
   },
   {
     "id": "hong-kong-victoria-peak-current-photo",
@@ -4256,7 +4388,8 @@
       "Victoria Peak",
       "The Peak Hong Kong",
       "Hong Kong Peak"
-    ]
+    ],
+    "rightsBasis": "Official Hong Kong Observatory weather-photo service; ERN links to the source and does not copy or republish webcam imagery."
   },
   {
     "id": "hong-kong-tai-mo-shan-current-photo",
@@ -4292,7 +4425,8 @@
     "aliases": [
       "Tai Mo Shan",
       "Tai Mo Mountain"
-    ]
+    ],
+    "rightsBasis": "Official Hong Kong Observatory weather-photo service; ERN links to the source and does not copy or republish webcam imagery."
   },
   {
     "id": "iceland-myvatn-current-image",
@@ -4327,7 +4461,8 @@
     "aliases": [
       "Myvatn",
       "Lake Myvatn"
-    ]
+    ],
+    "rightsBasis": "Official Icelandic Meteorological Office webcam page; ERN links to the source and does not copy or republish images."
   },
   {
     "id": "iceland-hveravellir-current-image",
@@ -4363,7 +4498,8 @@
     "aliases": [
       "Hveravellir",
       "Iceland Highlands Hveravellir"
-    ]
+    ],
+    "rightsBasis": "Official Icelandic Meteorological Office webcam page; ERN links to the source and does not copy or republish images."
   },
   {
     "id": "iceland-surtsey-current-image",
@@ -4398,7 +4534,8 @@
     "aliases": [
       "Surtsey",
       "Surtsey Island"
-    ]
+    ],
+    "rightsBasis": "Official Icelandic Meteorological Office webcam page; ERN links to the source and does not copy or republish images."
   },
   {
     "id": "madeira-funchal-current-image",
@@ -4433,7 +4570,8 @@
     "aliases": [
       "Funchal",
       "Funchal Madeira"
-    ]
+    ],
+    "rightsBasis": "Official Madeira tourism live-webcam service; ERN links to the provider page and does not copy or restream imagery."
   },
   {
     "id": "madeira-porto-moniz-current-image",
@@ -4468,7 +4606,8 @@
     "aliases": [
       "Porto Moniz",
       "Porto Moniz Madeira"
-    ]
+    ],
+    "rightsBasis": "Official Madeira tourism live-webcam service; ERN links to the provider page and does not copy or restream imagery."
   },
   {
     "id": "madeira-calheta-current-image",
@@ -4503,7 +4642,8 @@
     "aliases": [
       "Calheta",
       "Calheta Madeira"
-    ]
+    ],
+    "rightsBasis": "Official Madeira tourism live-webcam service; ERN links to the provider page and does not copy or restream imagery."
   },
   {
     "id": "madeira-machico-current-image",
@@ -4538,7 +4678,8 @@
     "aliases": [
       "Machico",
       "Machico Madeira"
-    ]
+    ],
+    "rightsBasis": "Official Madeira tourism live-webcam service; ERN links to the provider page and does not copy or restream imagery."
   },
   {
     "id": "taiwan-jiufen-current-image",
@@ -4572,7 +4713,8 @@
     "aliases": [
       "Jiufen",
       "Jiufen Old Street"
-    ]
+    ],
+    "rightsBasis": "Official Taiwan government real-time image service; ERN links to the government page and does not copy or restream imagery."
   },
   {
     "id": "taiwan-hehuanshan-wuling-current-image",
@@ -4607,7 +4749,8 @@
       "Hehuanshan",
       "Wuling Pass",
       "Wuling Taiwan"
-    ]
+    ],
+    "rightsBasis": "Official Taiwan government real-time image service; ERN links to the source and does not copy or restream imagery."
   },
   {
     "id": "taiwan-yangmingshan-xiaoyoukeng-current-image",
@@ -4641,7 +4784,8 @@
     "aliases": [
       "Yangmingshan",
       "Xiaoyoukeng"
-    ]
+    ],
+    "rightsBasis": "Official Taiwan government real-time image service; ERN links to the source and does not copy or restream imagery."
   },
   {
     "id": "taiwan-green-island-chaikou-current-image",
@@ -4676,7 +4820,8 @@
       "Green Island",
       "Chaikou",
       "Lyudao"
-    ]
+    ],
+    "rightsBasis": "Official Taiwan government real-time image service; ERN links to the source and does not copy or restream imagery."
   },
   {
     "id": "taiwan-kenting-forest-current-image",
@@ -4711,7 +4856,8 @@
       "Kenting",
       "Kenting National Forest",
       "Kenting Ocean View Tower"
-    ]
+    ],
+    "rightsBasis": "Official Taiwan Forestry live-image page; ERN links to the source and does not copy or restream imagery."
   },
   {
     "id": "taiwan-sun-moon-lake-current-image",
@@ -4745,7 +4891,8 @@
     "aliases": [
       "Sun Moon Lake",
       "Riyue Tan"
-    ]
+    ],
+    "rightsBasis": "Official Sun Moon Lake tourism live-camera service; ERN links to the source and does not copy or restream imagery."
   },
   {
     "id": "sanparks-punda-maria-current-image",
@@ -4779,7 +4926,8 @@
     "aliases": [
       "Punda Maria",
       "Punda Maria Kruger"
-    ]
+    ],
+    "rightsBasis": "Official SANParks still-webcam page; ERN links to the source and does not copy or restream imagery."
   },
   {
     "id": "sanparks-talamati-current-image",
@@ -4813,7 +4961,8 @@
     "aliases": [
       "Talamati",
       "Talamati Kruger"
-    ]
+    ],
+    "rightsBasis": "Official SANParks still-webcam page; ERN links to the source and does not copy or restream imagery."
   },
   {
     "id": "peru-ubinas-current-image",
@@ -4849,7 +4998,8 @@
     "aliases": [
       "Ubinas",
       "Ubinas Volcano"
-    ]
+    ],
+    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery."
   },
   {
     "id": "peru-sabancaya-current-image",
@@ -4885,7 +5035,8 @@
     "aliases": [
       "Sabancaya",
       "Sabancaya Volcano"
-    ]
+    ],
+    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery."
   },
   {
     "id": "peru-misti-current-image",
@@ -4921,7 +5072,8 @@
       "Misti",
       "El Misti",
       "Misti Volcano"
-    ]
+    ],
+    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery."
   },
   {
     "id": "peru-coropuna-current-image",
@@ -4956,7 +5108,8 @@
     "aliases": [
       "Coropuna",
       "Coropuna Volcano"
-    ]
+    ],
+    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery."
   },
   {
     "id": "peru-ticsani-current-image",
@@ -4991,7 +5144,8 @@
     "aliases": [
       "Ticsani",
       "Ticsani Volcano"
-    ]
+    ],
+    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery."
   },
   {
     "id": "peru-chachani-current-image",
@@ -5026,7 +5180,8 @@
     "aliases": [
       "Chachani",
       "Chachani Volcano"
-    ]
+    ],
+    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery."
   },
   {
     "id": "peru-yucamane-current-image",
@@ -5061,7 +5216,8 @@
     "aliases": [
       "Yucamane",
       "Yucamane Volcano"
-    ]
+    ],
+    "rightsBasis": "Official Peruvian national volcano-monitoring service; ERN links to the source and does not copy or republish monitoring imagery."
   },
   {
     "id": "mexico-popocatepetl-current-image",
@@ -5097,7 +5253,8 @@
     "aliases": [
       "Popocatepetl",
       "Popo"
-    ]
+    ],
+    "rightsBasis": "Official CENAPRED/UNAM volcano-monitoring camera; ERN links to the source and does not copy or republish imagery."
   },
   {
     "id": "salzburg-mirabell-current-page",
@@ -5132,7 +5289,8 @@
       "Salzburg",
       "Mirabell Gardens",
       "Salzburg Old Town"
-    ]
+    ],
+    "rightsBasis": "Official Salzburg Tourism webcam page; ERN links to the provider and does not copy or restream media."
   },
   {
     "id": "tallinn-tv-tower-current-page",
@@ -5167,7 +5325,8 @@
       "Tallinn TV Tower",
       "Teletorn",
       "Tallinn Panorama"
-    ]
+    ],
+    "rightsBasis": "Official Tallinn TV Tower webcam page; ERN links to the source and does not republish the panorama."
   },
   {
     "id": "bled-lake-current-page",
@@ -5203,7 +5362,8 @@
       "Lake Bled",
       "Bled Castle",
       "Bled Slovenia"
-    ]
+    ],
+    "rightsBasis": "Official Bled tourism webcam page; ERN links to the provider and does not copy or restream imagery."
   },
   {
     "id": "poiana-brasov-current-page",
@@ -5236,7 +5396,8 @@
     "aliases": [
       "Poiana Brasov",
       "Brașov Ski Resort"
-    ]
+    ],
+    "rightsBasis": "Destination tourism webcam page; ERN links externally and does not reproduce camera media."
   },
   {
     "id": "mauritius-grand-baie-current-page",
@@ -5269,7 +5430,8 @@
     "aliases": [
       "Grand Bay",
       "Grand Baie Mauritius"
-    ]
+    ],
+    "rightsBasis": "Official Mauritius tourism webcam family; ERN links to the provider and does not republish media."
   },
   {
     "id": "mauritius-pointe-desny-current-page",
@@ -5302,7 +5464,8 @@
     "aliases": [
       "Pointe d'Esny",
       "Pointe desny Mauritius"
-    ]
+    ],
+    "rightsBasis": "Official Mauritius tourism webcam family; ERN links to the provider and does not republish media."
   },
   {
     "id": "rotorua-current-page",
@@ -5338,7 +5501,8 @@
       "Rotorua",
       "Lake Rotorua",
       "Government Gardens"
-    ]
+    ],
+    "rightsBasis": "Official Rotorua tourism webcam page; ERN links externally and does not republish camera media."
   },
   {
     "id": "wanaka-current-page",
@@ -5374,7 +5538,8 @@
       "Lake Wanaka",
       "Roys Peak",
       "Mt Aspiring"
-    ]
+    ],
+    "rightsBasis": "Official Lake Wānaka Tourism webcam page; ERN links to the provider and does not copy images."
   },
   {
     "id": "issyk-kul-karven-current-page",
@@ -5408,7 +5573,8 @@
       "Issyk Kul",
       "Lake Issyk-Kul",
       "KarVen Four Seasons"
-    ]
+    ],
+    "rightsBasis": "Public current-camera network page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "ala-archa-current-page",
@@ -5441,7 +5607,8 @@
     "aliases": [
       "Ala Archa",
       "Ala-Archa National Park"
-    ]
+    ],
+    "rightsBasis": "Public current-camera network page; ERN links externally and does not republish media."
   },
   {
     "id": "shymbulak-current-page",
@@ -5475,7 +5642,8 @@
       "Shymbulak",
       "Chimbulak",
       "Trans-Ili Alatau"
-    ]
+    ],
+    "rightsBasis": "Official resort live-camera page; ERN links externally and does not restream."
   },
   {
     "id": "kilpisjarvi-saana-current-page",
@@ -5508,7 +5676,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:00:00Z",
     "lat": 69.0496,
     "lon": 20.79,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Current provider/official camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "montreux-rochers-de-naye-current-page",
@@ -5541,7 +5710,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:00:00Z",
     "lat": 46.432,
     "lon": 6.979,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Current provider/official camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "innsbruck-city-current-page",
@@ -5575,7 +5745,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:00:00Z",
     "lat": 47.2692,
     "lon": 11.4041,
-    "coordinateBasis": "CITY_REFERENCE"
+    "coordinateBasis": "CITY_REFERENCE",
+    "rightsBasis": "Current provider/official camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "innsbruck-nordkette-current-page",
@@ -5608,7 +5779,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:00:00Z",
     "lat": 47.307,
     "lon": 11.379,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Current provider/official camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "innsbruck-patscherkofel-current-page",
@@ -5640,7 +5812,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:00:00Z",
     "lat": 47.208,
     "lon": 11.461,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Current provider/official camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "innsbruck-kuhtai-current-page",
@@ -5672,7 +5845,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:00:00Z",
     "lat": 47.213,
     "lon": 11.024,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Current provider/official camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "maho-beach-current-page",
@@ -5705,7 +5879,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:00:00Z",
     "lat": 18.0408,
     "lon": -63.1203,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Current provider/official camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "great-bay-current-page",
@@ -5739,7 +5914,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:00:00Z",
     "lat": 18.026,
     "lon": -63.047,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Current provider/official camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "sanparks-satara-current-page",
@@ -5772,7 +5948,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:00:00Z",
     "lat": -24.392,
     "lon": 31.779,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Current provider/official camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "sanparks-olifants-current-page",
@@ -5805,7 +5982,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:00:00Z",
     "lat": -24.005,
     "lon": 31.741,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Current provider/official camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "mendoza-plaza-current-page",
@@ -5838,7 +6016,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:00:00Z",
     "lat": -32.8895,
     "lon": -68.8458,
-    "coordinateBasis": "CITY_REFERENCE"
+    "coordinateBasis": "CITY_REFERENCE",
+    "rightsBasis": "Current provider/official camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "dubrovnik-pile-current-page",
@@ -5873,7 +6052,8 @@
     ],
     "lat": 42.6507,
     "lon": 18.0944,
-    "coordinateBasis": "CITY_REFERENCE"
+    "coordinateBasis": "CITY_REFERENCE",
+    "rightsBasis": "Official City of Dubrovnik camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "dubrovnik-gruz-current-page",
@@ -5907,7 +6087,8 @@
     ],
     "lat": 42.6507,
     "lon": 18.0944,
-    "coordinateBasis": "CITY_REFERENCE"
+    "coordinateBasis": "CITY_REFERENCE",
+    "rightsBasis": "Official City of Dubrovnik camera page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "mykonos-new-port-current-page",
@@ -5941,7 +6122,8 @@
     ],
     "lat": 37.464,
     "lon": 25.326,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official municipal port webcam page; ERN links externally and does not republish media."
   },
   {
     "id": "santorini-caldera-current-page",
@@ -5976,7 +6158,8 @@
     ],
     "lat": 36.431,
     "lon": 25.422,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Established destination webcam page; ERN links externally and does not copy or restream media."
   },
   {
     "id": "gudauri-current-page",
@@ -6009,7 +6192,8 @@
     ],
     "lat": 42.477,
     "lon": 44.476,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Public Gudauri webcam page; ERN links externally and does not restream."
   },
   {
     "id": "kobi-current-page",
@@ -6043,7 +6227,8 @@
     ],
     "lat": 42.561,
     "lon": 44.5,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Public Gudauri webcam page; ERN links externally and does not restream."
   },
   {
     "id": "khumbu-glacier-current-image",
@@ -6077,7 +6262,8 @@
     ],
     "lat": 27.98,
     "lon": 86.83,
-    "coordinateBasis": "REGION_REFERENCE"
+    "coordinateBasis": "REGION_REFERENCE",
+    "rightsBasis": "Scientific camera source surfaced through a current webcam page; ERN links externally and does not republish imagery."
   },
   {
     "id": "mayon-phivolcs-current-image",
@@ -6112,7 +6298,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:50:00Z",
     "lat": 13.257,
     "lon": 123.685,
-    "coordinateBasis": "VOLCANO_REFERENCE"
+    "coordinateBasis": "VOLCANO_REFERENCE",
+    "rightsBasis": "Official Philippine government volcano-monitoring page; ERN links externally and does not copy or restream imagery."
   },
   {
     "id": "bulusan-phivolcs-current-image",
@@ -6147,7 +6334,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:50:00Z",
     "lat": 12.77,
     "lon": 124.056,
-    "coordinateBasis": "VOLCANO_REFERENCE"
+    "coordinateBasis": "VOLCANO_REFERENCE",
+    "rightsBasis": "Official Philippine government volcano-monitoring page; ERN links externally and does not copy or restream imagery."
   },
   {
     "id": "kanlaon-phivolcs-current-image",
@@ -6182,7 +6370,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:50:00Z",
     "lat": 10.412,
     "lon": 123.132,
-    "coordinateBasis": "VOLCANO_REFERENCE"
+    "coordinateBasis": "VOLCANO_REFERENCE",
+    "rightsBasis": "Official Philippine government volcano-monitoring page; ERN links externally and does not copy or restream imagery."
   },
   {
     "id": "taipei-dajia-riverside-current",
@@ -6215,7 +6404,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
     "lat": 25.072,
     "lon": 121.535,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Taiwan tourism live-image index; ERN links externally and does not republish imagery."
   },
   {
     "id": "taipei-bishanyan-current",
@@ -6248,7 +6438,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
     "lat": 25.098,
     "lon": 121.586,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Taiwan tourism live-image index; ERN links externally and does not republish imagery."
   },
   {
     "id": "zhongjiao-bay-current",
@@ -6280,7 +6471,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
     "lat": 25.24,
     "lon": 121.636,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Taiwan tourism live-image index; ERN links externally and does not republish imagery."
   },
   {
     "id": "techi-reservoir-current",
@@ -6313,7 +6505,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
     "lat": 24.254,
     "lon": 121.165,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Taiwan tourism live-image index; ERN links externally and does not republish imagery."
   },
   {
     "id": "lishan-yingyuan-current",
@@ -6346,7 +6539,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
     "lat": 24.255,
     "lon": 121.245,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Taiwan tourism live-image index; ERN links externally and does not republish imagery."
   },
   {
     "id": "shitiping-current",
@@ -6379,7 +6573,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
     "lat": 23.492,
     "lon": 121.51,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Taiwan tourism live-image index; ERN links externally and does not republish imagery."
   },
   {
     "id": "erliao-sunrise-current",
@@ -6412,7 +6607,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
     "lat": 22.93,
     "lon": 120.41,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Taiwan tourism live-image index; ERN links externally and does not republish imagery."
   },
   {
     "id": "jingzaijiao-salt-current",
@@ -6445,7 +6641,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
     "lat": 23.164,
     "lon": 120.103,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Taiwan tourism live-image index; ERN links externally and does not republish imagery."
   },
   {
     "id": "panama-miraflores-current",
@@ -6478,7 +6675,8 @@
     "attribution": "Panama Canal Authority",
     "checkedAt": "2026-10-03T05:30:00Z",
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Panama Canal Authority real-time web-camera service; ERN links externally and does not republish imagery."
   },
   {
     "id": "panama-gatun-current",
@@ -6511,7 +6709,8 @@
     "attribution": "Panama Canal Authority",
     "checkedAt": "2026-10-03T05:30:00Z",
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Panama Canal Authority real-time web-camera service; ERN links externally and does not republish imagery."
   },
   {
     "id": "panama-pedro-miguel-current",
@@ -6544,7 +6743,8 @@
     "attribution": "Panama Canal Authority",
     "checkedAt": "2026-10-03T05:30:00Z",
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Panama Canal Authority real-time web-camera service; ERN links externally and does not republish imagery."
   },
   {
     "id": "panama-cocoli-current",
@@ -6577,7 +6777,8 @@
     "attribution": "Panama Canal Authority",
     "checkedAt": "2026-10-03T05:30:00Z",
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Panama Canal Authority real-time web-camera service; ERN links externally and does not republish imagery."
   },
   {
     "id": "panama-agua-clara-current",
@@ -6610,7 +6811,8 @@
     "attribution": "Panama Canal Authority",
     "checkedAt": "2026-10-03T05:30:00Z",
     "lastSuccessfulCheck": "2026-10-03T05:30:00Z",
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Panama Canal Authority real-time web-camera service; ERN links externally and does not republish imagery."
   },
   {
     "id": "mieminger-plateau-current",
@@ -6643,7 +6845,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:40:00Z",
     "lat": 47.31,
     "lon": 10.98,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Innsbruck Tourism webcam network; ERN links externally and does not republish imagery."
   },
   {
     "id": "telfs-current",
@@ -6676,7 +6879,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:40:00Z",
     "lat": 47.307,
     "lon": 11.068,
-    "coordinateBasis": "CITY_REFERENCE"
+    "coordinateBasis": "CITY_REFERENCE",
+    "rightsBasis": "Official Innsbruck Tourism webcam network; ERN links externally and does not republish imagery."
   },
   {
     "id": "lusens-current",
@@ -6709,7 +6913,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:40:00Z",
     "lat": 47.13,
     "lon": 11.14,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Innsbruck Tourism webcam network; ERN links externally and does not republish imagery."
   },
   {
     "id": "innsbruck-stadtturm-current",
@@ -6743,7 +6948,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:40:00Z",
     "lat": 47.268,
     "lon": 11.393,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Innsbruck Tourism webcam page; ERN links externally and does not republish imagery."
   },
   {
     "id": "swarovski-wattens-current",
@@ -6777,7 +6983,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:40:00Z",
     "lat": 47.294,
     "lon": 11.6,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official Innsbruck Tourism webcam page; ERN links externally and does not republish imagery."
   },
   {
     "id": "simpson-bay-current",
@@ -6810,7 +7017,8 @@
     "lastSuccessfulCheck": "2026-10-03T05:40:00Z",
     "lat": 18.037,
     "lon": -63.09,
-    "coordinateBasis": "PLACE_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "rightsBasis": "Official tourism-endorsed current camera source; ERN links externally and does not republish imagery."
   },
   {
     "id": "istanbul-sultanahmet-official",
@@ -6851,7 +7059,8 @@
       "Blue Mosque",
       "Hagia Sophia area",
       "Historic Istanbul"
-    ]
+    ],
+    "rightsBasis": "Official Istanbul Metropolitan Municipality live-camera service; ERN keeps playback link-only and does not infer embed/restream permission."
   },
   {
     "id": "denpasar-atcs-live",
@@ -6889,6 +7098,7 @@
       "Denpasar",
       "Bali traffic cameras",
       "ATCS Denpasar"
-    ]
+    ],
+    "rightsBasis": "Official Denpasar municipal ATCS live-streaming service; ERN keeps playback link-only and does not infer embed/restream permission."
   }
 ]
