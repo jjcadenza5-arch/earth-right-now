@@ -234,3 +234,13 @@ Candidate-state reconciliation:
 - Newly searchable: Kilpisjärvi, Rochers-de-Naye/Montreux, Innsbruck city, Nordkette, Patscherkofel, Kühtai, Maho Beach, Great Bay/Philipsburg, Satara, Olifants and Mendoza.
 - Newly advanced commercial research: Mendoza, St. Maarten, Innsbruck/Tyrol, Montreux, Kilpisjärvi and Kruger.
 - Truth and commercial safeguards unchanged.
+
+
+## Third quasi-live tranche — Croatia / Greece / Georgia / Nepal
+
+- Healthy/searchable distinct places: **178**
+- Source records: **186**
+- Remaining to 200 stretch target: **22**
+- Newly searchable: Dubrovnik, Mykonos, Santorini, Gudauri, Kobi and Khumbu Glacier.
+- Newly actionable exact-link research: Dubrovnik/Viator, Mykonos/Viator, Santorini/Viator, Gudauri/Klook and Everest/Viator.
+- Quasi-live remains Search/Explore only unless stricter live playback verification is later completed.
