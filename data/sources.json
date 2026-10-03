@@ -3696,7 +3696,8 @@
     "lon": 110.527,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/casey/"
+    "coordinateSourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/casey/",
+    "timeZone": "Antarctica/Casey"
   },
   {
     "id": "antarctica-davis-station",
@@ -3735,7 +3736,8 @@
     "lon": 77.968,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/davis/"
+    "coordinateSourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/davis/",
+    "timeZone": "Antarctica/Davis"
   },
   {
     "id": "antarctica-mawson-station",
@@ -3774,7 +3776,8 @@
     "lon": 62.874,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/mawson/"
+    "coordinateSourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/mawson/",
+    "timeZone": "Antarctica/Mawson"
   },
   {
     "id": "antarctica-macquarie-island",
@@ -3813,7 +3816,8 @@
     "lon": 158.937,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/macquarie-island/"
+    "coordinateSourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/macquarie-island/",
+    "timeZone": "Antarctica/Macquarie"
   },
   {
     "id": "costa-rica-poas-crater",
@@ -3852,7 +3856,8 @@
     "lon": -84.233,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/camara-crater-v-poas"
+    "coordinateSourceUrl": "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/camara-crater-v-poas",
+    "timeZone": "America/Costa_Rica"
   },
   {
     "id": "costa-rica-turrialba-crater",
@@ -3891,7 +3896,8 @@
     "lon": -83.767,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/camara-v-turrialba"
+    "coordinateSourceUrl": "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/camara-v-turrialba",
+    "timeZone": "America/Costa_Rica"
   },
   {
     "id": "costa-rica-irazu",
@@ -3930,7 +3936,8 @@
     "lon": -83.852,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/camara-2-v-turrialba"
+    "coordinateSourceUrl": "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/camara-2-v-turrialba",
+    "timeZone": "America/Costa_Rica"
   },
   {
     "id": "costa-rica-rincon-sensoria",
@@ -3969,7 +3976,8 @@
     "lon": -85.324,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/rincon-de-la-vieja-sensoria2"
+    "coordinateSourceUrl": "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/rincon-de-la-vieja-sensoria2",
+    "timeZone": "America/Costa_Rica"
   },
   {
     "id": "ecuador-cotopaxi-monitoring",
@@ -4007,202 +4015,8 @@
     "lon": -78.436,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www2.igepn.edu.ec/cotopaxi-camaras"
-  },
-  {
-    "id": "nicaragua-san-cristobal-volcano",
-    "placeId": "nicaragua-san-cristobal-volcano",
-    "title": "San Cristóbal Volcano",
-    "provider": "INETER",
-    "country": "Nicaragua",
-    "region": "Chinandega",
-    "categories": [
-      "Volcanoes",
-      "Nature",
-      "Science & Research",
-      "Quasi-Live"
-    ],
-    "truth": "LIVE_IMAGE",
-    "permission": "LINK_ONLY",
-    "health": "HEALTHY",
-    "playback": "EXTERNAL",
-    "sourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-    "officialUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-    "attribution": "INETER",
-    "checkedAt": "2026-10-03T04:28:00Z",
-    "lastSuccessfulCheck": "2026-10-03T04:28:00Z",
-    "quality": 90,
-    "freshness": 99,
-    "moment": 90,
-    "featuredHold": true,
-    "watchHold": true,
-    "searchOnly": true,
-    "story": "Official near-real-time volcano monitoring images for San Cristóbal Volcano.",
-    "rightsBasis": "Official INETER government volcano-camera network; ERN links to the provider and does not copy or restream the imagery.",
-    "freshnessEvidence": "INETER states its active-volcano webcam images are transmitted in real time every 30 seconds or 1 minute for public access.",
-    "refreshIntervalSeconds": 60,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
-    "lat": 12.703,
-    "lon": -87.004,
-    "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/"
-  },
-  {
-    "id": "nicaragua-telica-volcano",
-    "placeId": "nicaragua-telica-volcano",
-    "title": "Telica Volcano",
-    "provider": "INETER",
-    "country": "Nicaragua",
-    "region": "León",
-    "categories": [
-      "Volcanoes",
-      "Nature",
-      "Science & Research",
-      "Quasi-Live"
-    ],
-    "truth": "LIVE_IMAGE",
-    "permission": "LINK_ONLY",
-    "health": "HEALTHY",
-    "playback": "EXTERNAL",
-    "sourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-    "officialUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-    "attribution": "INETER",
-    "checkedAt": "2026-10-03T04:28:00Z",
-    "lastSuccessfulCheck": "2026-10-03T04:28:00Z",
-    "quality": 90,
-    "freshness": 99,
-    "moment": 90,
-    "featuredHold": true,
-    "watchHold": true,
-    "searchOnly": true,
-    "story": "Official near-real-time volcano monitoring images for Telica Volcano.",
-    "rightsBasis": "Official INETER government volcano-camera network; ERN links to the provider and does not copy or restream the imagery.",
-    "freshnessEvidence": "INETER states its active-volcano webcam images are transmitted in real time every 30 seconds or 1 minute for public access.",
-    "refreshIntervalSeconds": 60,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
-    "lat": 12.602,
-    "lon": -86.845,
-    "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/"
-  },
-  {
-    "id": "nicaragua-momotombo-volcano",
-    "placeId": "nicaragua-momotombo-volcano",
-    "title": "Momotombo Volcano",
-    "provider": "INETER",
-    "country": "Nicaragua",
-    "region": "León",
-    "categories": [
-      "Volcanoes",
-      "Nature",
-      "Science & Research",
-      "Quasi-Live"
-    ],
-    "truth": "LIVE_IMAGE",
-    "permission": "LINK_ONLY",
-    "health": "HEALTHY",
-    "playback": "EXTERNAL",
-    "sourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-    "officialUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-    "attribution": "INETER",
-    "checkedAt": "2026-10-03T04:28:00Z",
-    "lastSuccessfulCheck": "2026-10-03T04:28:00Z",
-    "quality": 90,
-    "freshness": 99,
-    "moment": 90,
-    "featuredHold": true,
-    "watchHold": true,
-    "searchOnly": true,
-    "story": "Official near-real-time volcano monitoring images for Momotombo Volcano.",
-    "rightsBasis": "Official INETER government volcano-camera network; ERN links to the provider and does not copy or restream the imagery.",
-    "freshnessEvidence": "INETER states its active-volcano webcam images are transmitted in real time every 30 seconds or 1 minute for public access.",
-    "refreshIntervalSeconds": 60,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
-    "lat": 12.422,
-    "lon": -86.54,
-    "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/"
-  },
-  {
-    "id": "nicaragua-masaya-volcano",
-    "placeId": "nicaragua-masaya-volcano",
-    "title": "Masaya Volcano",
-    "provider": "INETER",
-    "country": "Nicaragua",
-    "region": "Masaya",
-    "categories": [
-      "Volcanoes",
-      "Nature",
-      "Science & Research",
-      "Quasi-Live"
-    ],
-    "truth": "LIVE_IMAGE",
-    "permission": "LINK_ONLY",
-    "health": "HEALTHY",
-    "playback": "EXTERNAL",
-    "sourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-    "officialUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-    "attribution": "INETER",
-    "checkedAt": "2026-10-03T04:28:00Z",
-    "lastSuccessfulCheck": "2026-10-03T04:28:00Z",
-    "quality": 90,
-    "freshness": 99,
-    "moment": 90,
-    "featuredHold": true,
-    "watchHold": true,
-    "searchOnly": true,
-    "story": "Official near-real-time volcano monitoring images for Masaya Volcano.",
-    "rightsBasis": "Official INETER government volcano-camera network; ERN links to the provider and does not copy or restream the imagery.",
-    "freshnessEvidence": "INETER states its active-volcano webcam images are transmitted in real time every 30 seconds or 1 minute for public access.",
-    "refreshIntervalSeconds": 60,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
-    "lat": 11.984,
-    "lon": -86.161,
-    "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/"
-  },
-  {
-    "id": "nicaragua-concepcion-volcano",
-    "placeId": "nicaragua-concepcion-volcano",
-    "title": "Concepción Volcano — Ometepe",
-    "provider": "INETER",
-    "country": "Nicaragua",
-    "region": "Rivas",
-    "categories": [
-      "Volcanoes",
-      "Nature",
-      "Science & Research",
-      "Quasi-Live"
-    ],
-    "truth": "LIVE_IMAGE",
-    "permission": "LINK_ONLY",
-    "health": "HEALTHY",
-    "playback": "EXTERNAL",
-    "sourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-    "officialUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-    "attribution": "INETER",
-    "checkedAt": "2026-10-03T04:28:00Z",
-    "lastSuccessfulCheck": "2026-10-03T04:28:00Z",
-    "quality": 90,
-    "freshness": 99,
-    "moment": 90,
-    "featuredHold": true,
-    "watchHold": true,
-    "searchOnly": true,
-    "story": "Official near-real-time volcano monitoring images for Concepción Volcano — Ometepe.",
-    "rightsBasis": "Official INETER government volcano-camera network; ERN links to the provider and does not copy or restream the imagery.",
-    "freshnessEvidence": "INETER states its active-volcano webcam images are transmitted in real time every 30 seconds or 1 minute for public access.",
-    "refreshIntervalSeconds": 60,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
-    "lat": 11.538,
-    "lon": -85.622,
-    "coordinateBasis": "PLACE_REFERENCE",
-    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/"
+    "coordinateSourceUrl": "https://www2.igepn.edu.ec/cotopaxi-camaras",
+    "timeZone": "America/Guayaquil"
   },
   {
     "id": "ecuador-reventador-monitoring",
@@ -4240,7 +4054,8 @@
     "lon": -77.656,
     "coordinateBasis": "PLACE_REFERENCE",
     "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
-    "coordinateSourceUrl": "https://igepn.edu.ec/camaras/content/16-reventador"
+    "coordinateSourceUrl": "https://igepn.edu.ec/camaras/content/16-reventador",
+    "timeZone": "America/Guayaquil"
   },
   {
     "id": "nicaragua-san-cristobal-current-image",
