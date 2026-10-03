@@ -3273,8 +3273,10 @@
       "evidence": "Official Bansko Ski webcam page lists current resort camera positions including Bansko, Chalin Valog, Banderishka Polyana, Shiligarnik, Plato and Todorka.",
       "researchEvidence": "Official resort-operated webcam network. Count as one Bansko destination unless a future camera represents a genuinely separate place.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Bansko webcam page and confirm one or more images visibly update/currently reflect conditions."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Bansko webcam page and confirm one or more images visibly update/currently reflect conditions.",
+      "promotedAt": "2026-10-03T16:40:00Z",
+      "promotionNote": "Official resort current webcam imagery is sufficient for Search/Explore under the owner-approved quasi-live policy; Watch Earth remains held."
     },
     {
       "id": "borovets-ski-resort-bulgaria",
@@ -3288,8 +3290,25 @@
       "evidence": "Official Borovets resort webcam page lists resort cameras for Borovets Ski Center, Sitnyakovo, Yastrebets, Martinovi Baraki and Markudjik.",
       "researchEvidence": "Official resort-operated webcam family. Group camera angles under one Borovets place for ERN discovery.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Borovets webcam page and confirm the resort images are current/updating."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Borovets webcam page and confirm the resort images are current/updating.",
+      "promotedAt": "2026-10-03T16:40:00Z",
+      "promotionNote": "Official resort current webcam imagery is sufficient for Search/Explore under the owner-approved quasi-live policy; Watch Earth remains held."
+    },
+    {
+      "id": "kopaonik-serbia-current",
+      "title": "Kopaonik — Serbia",
+      "country": "Serbia",
+      "region": "Kopaonik",
+      "provider": "Ski Resorts of Serbia",
+      "sourcePage": "https://www.skijalistasrbije.rs/en/web-cams-kopaonik",
+      "exactTargetUrl": "https://www.skijalistasrbije.rs/en/web-cams-kopaonik",
+      "exactTargetType": "OFFICIAL_REFRESHED_CAMERA_FAMILY",
+      "evidence": "Official Ski Resorts of Serbia page lists Kopaonik webcam locations and states reloading refreshes the camera images.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T16:40:00Z",
+      "promotionNote": "Promoted as LIVE_IMAGE/searchable quasi-live, not continuous live video."
     }
   ],
   "notes": [
@@ -3356,7 +3375,8 @@
     "2026-10-03 15:55Z promoted Palm Beach and Eagle Beach from the official Aruba Tourism Authority live-webcam family as conservative LIVE_IMAGE Search/Explore sources; Watch Earth remains held.",
     "2026-10-03 quality-first expansion added three distinct official City of Kraków current-camera places. They are searchable LIVE_IMAGE/quasi-live sources with Watch Earth held separately.",
     "2026-10-03 quality-first batch promoted Longyearbyen/UNIS, Wairoa River and Foxton Beach as searchable quasi-live LIVE_IMAGE sources; Watch Earth truth remains stricter.",
-    "2026-10-03 post-200 geography batch added Slovakia (Jasná/Chopok) and Bulgaria (Bansko, Borovets) from official resort webcam families. These are grouped by real destination and remain playback-gated; no fake place inflation."
+    "2026-10-03 post-200 geography batch added Slovakia (Jasná/Chopok) and Bulgaria (Bansko, Borovets) from official resort webcam families. These are grouped by real destination and remain playback-gated; no fake place inflation.",
+    "2026-10-03 post-200 quasi-live batch promoted Bansko, Borovets and Kopaonik as three real searchable destinations; resort camera angles remain grouped and Watch Earth remains held."
   ],
   "researchGaps": [
     {
