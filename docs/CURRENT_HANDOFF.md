@@ -461,3 +461,13 @@ Traffic-gated business + island expansion checkpoint — 2026-10-03 11:38 UTC:
 - data/available-program-expansion-plan.json prioritizes Airalo, Kiwitaxi, Go City, Radical Storage and Aviasales as the most useful currently available utility layer.
 - Commercial opportunity states reconcile to {"VERIFIED_LINK_ADDED":16,"ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED":101,"SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK":7,"SOURCE_GAP_MUST_BE_SOLVED_FIRST":1} across 125 opportunities.
 - No affiliate program, utility, commission or traffic target affects source truth or ranking.
+
+
+217-place expansion checkpoint — 2026-10-03 12:00 UTC:
+- ERN now has **217 healthy distinct searchable places** from 225 source records.
+- Truth mix: 13 LIVE_VIDEO, 72 EXTERNAL_LIVE, 140 LIVE_IMAGE. Search/Explore may use the clearly labeled current-image layer; Watch Earth remains stricter.
+- Runtime data/sources.json is now minified, while verbose provenance/long notes remain in data/source-evidence.json. This preserves the strict 300 KB source-catalog performance ceiling and creates durable headroom toward the 250-place stretch target.
+- Official Madeira Tourism coverage expanded from four to nine distinct searchable places: Funchal, Porto Moniz, Calheta, Machico, Ribeira Brava, São Vicente, Santana, Santa Cruz and Porto Santo.
+- The existing viator-madeira opportunity now covers all nine Madeira places with one future island-level tracked link, avoiding duplicate commercial density.
+- La Réunion and Azores quasi-live additions remain retained from the prior batch.
+- Locked Travelpayouts programs remain traffic-led future targets; currently usable partners/utilities are the near-term business lane.
