@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T01:35:00Z",
+  "generatedAt": "2026-10-03T01:48:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -300,6 +300,34 @@
       "reason": "ERN has current Yellowstone views and Viator has guided Yellowstone sightseeing and wildlife inventory; a single park-level activity link can serve both place records without duplicate density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Generate one park-level Yellowstone Viator link only if it cleanly serves both current ERN Yellowstone places."
+    },
+    {
+      "id": "tiqets-georgia-aquarium",
+      "destination": "Georgia Aquarium / Atlanta",
+      "placeIds": [
+        "georgia-aquarium"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "ERN has a strong healthy Georgia Aquarium window and Tiqets currently has a dedicated Georgia Aquarium ticket page with multiple active ticket options.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/georgia-aquarium-tickets-l146833/",
+      "nextAction": "Generate one Georgia Aquarium Tiqets tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "tiqets-san-diego-zoo",
+      "destination": "San Diego Zoo",
+      "placeIds": [
+        "san-diego-zoo"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "ERN has a healthy San Diego Zoo live/source window and Tiqets currently has a dedicated San Diego Zoo ticket page with entry-ticket inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/san-diego-zoo-tickets-l146256/",
+      "nextAction": "Generate one San Diego Zoo Tiqets tracked link in Travelpayouts and manually verify it before public activation."
     }
   ]
 }
