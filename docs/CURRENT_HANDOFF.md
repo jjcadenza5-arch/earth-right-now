@@ -471,3 +471,15 @@ Traffic-gated business + island expansion checkpoint — 2026-10-03 11:38 UTC:
 - The existing viator-madeira opportunity now covers all nine Madeira places with one future island-level tracked link, avoiding duplicate commercial density.
 - La Réunion and Azores quasi-live additions remain retained from the prior batch.
 - Locked Travelpayouts programs remain traffic-led future targets; currently usable partners/utilities are the near-term business lane.
+
+
+Large continuation checkpoint — 2026-10-03 12:15 UTC:
+- Production is green after the source-catalog scaling work and Madeira clock correction.
+- ERN remains at **217 healthy distinct searchable places** from 225 source records; runtime source catalog is minified and verbose provenance is retained in data/source-evidence.json.
+- Madeira official coverage is now nine searchable places and passed Operations + Pages after timestamp correction.
+- Commercial opportunity registry now has 126 entries with states {"VERIFIED_LINK_ADDED":16,"ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED":101,"SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK":8,"SOURCE_GAP_MUST_BE_SOLVED_FIRST":1}.
+- 27 direct Viator candidate tracked URLs are prepared privately using the owner-confirmed pid/mcid/medium pattern; all remain owner-verification-required and non-public.
+- First future Viator verification batch is intentionally limited to strong destination matches; gateway/broader-city candidates stay lower priority.
+- Okaukuejo Waterhole / Etosha National Park was added as a P1 HUMAN_PLAYBACK_REQUIRED source candidate from official Namibia Wildlife Resorts evidence. Future Etosha/Viator coverage is blocked until that source is confirmed.
+- Pamir core remains deferred rather than filled with weak substitutes.
+- Traffic-gated Travelpayouts stay programs remain future unlock targets; active partners and currently available utilities remain the near-term business path.
