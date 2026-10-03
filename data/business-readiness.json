@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T10:40:00Z",
+  "generatedAt": "2026-10-03T10:45:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -48,7 +48,38 @@
       "compensair",
       "saily",
       "kkday"
-    ]
+    ],
+    "affiliatePlatformStateCounts": {
+      "active": 2,
+      "linkTools": 23,
+      "research": 19
+    },
+    "linkGenerationAvailablePrograms": [
+      "yesim",
+      "kiwitaxi",
+      "localrent",
+      "kiwi-com",
+      "gigsky",
+      "airalo",
+      "gettransfer",
+      "drimsim",
+      "getrentacar",
+      "airhelp",
+      "go-city",
+      "ekta",
+      "economybookings",
+      "bikesbooking",
+      "qeeq",
+      "wegotrip",
+      "autoeurope",
+      "radical-storage",
+      "aviasales",
+      "intui-travel",
+      "compensair",
+      "saily",
+      "kkday"
+    ],
+    "trafficGatedOrResearchPrograms": 19
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -61,7 +92,8 @@
     "Travelpayouts payout method configured and email-confirmed by owner on 2026-10-02",
     "Viator payout method configured by owner on 2026-10-02",
     "Owner-account screenshot audit confirmed many additional Travelpayouts programs now expose Generate links controls.",
-    "Travelpayouts locked-program catalog reviewed; traffic-first unlock strategy adopted on 2026-10-03"
+    "Travelpayouts locked-program catalog reviewed; traffic-first unlock strategy adopted on 2026-10-03",
+    "Affiliate state model now separates active partners, account-side link tools and traffic-gated/research programs"
   ],
   "humanOnlyRemaining": [
     {
