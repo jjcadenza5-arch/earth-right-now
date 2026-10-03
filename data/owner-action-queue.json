@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T09:25:00Z",
+  "generatedAt": "2026-10-03T16:45:00Z",
   "mode": "DORMANT_UNTIL_AUTONOMOUS_WORK_EXHAUSTED",
   "currentNeedOwner": false,
   "purpose": "Bundle future owner-only actions so ERN does not interrupt with one-off checks.",
@@ -172,6 +172,30 @@
       "destination": "Zermatt / Matterhorn",
       "partner": "viator",
       "nextAction": "Generate one Zermatt destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "go-city-new-york",
+      "destination": "New York City",
+      "partner": "go-city",
+      "nextAction": "Generate one New York Go City tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "go-city-london",
+      "destination": "London",
+      "partner": "go-city",
+      "nextAction": "Generate one London Go City tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "go-city-chicago",
+      "destination": "Chicago",
+      "partner": "go-city",
+      "nextAction": "Generate one Chicago Go City tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "go-city-sydney",
+      "destination": "Sydney",
+      "partner": "go-city",
+      "nextAction": "Generate one Sydney Go City tracked link in Travelpayouts and manually verify relevance before public activation."
     }
   ],
   "rules": {
@@ -180,5 +204,28 @@
     "noAutomaticPartnerActivation": true,
     "noAutomaticTrackedLinkGeneration": true,
     "noUnverifiedSourcePromotion": true
+  },
+  "platformUnlockWatch": {
+    "currentNeedOwner": false,
+    "reason": "No need to manually revisit locked programs yet.",
+    "programs": [
+      "trip-com",
+      "hotels-com",
+      "expedia",
+      "agoda",
+      "booking-com",
+      "getyourguide",
+      "tripadvisor-experiences",
+      "discovercars",
+      "traveloka",
+      "omio",
+      "12go",
+      "hostelworld",
+      "vrbo",
+      "ticketmaster",
+      "vio-com",
+      "rakuten-travel-intl"
+    ],
+    "trigger": "Meaningful traffic growth or visible Travelpayouts account-status change"
   }
 }
