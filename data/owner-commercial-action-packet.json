@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:35:00Z",
+  "generatedAt": "2026-10-03T11:38:00Z",
   "status": "OWNER_ACTION_DORMANT_UNTIL_BUNDLED_LINK_SESSION",
   "principle": "Bundle owner-only commercial actions; do not interrupt repeatedly.",
   "tripComCheck": {
@@ -91,8 +91,8 @@
     },
     {
       "priority": 2,
-      "id": "radical-storage-city-luggage",
-      "partner": "radical-storage"
+      "id": "kiwitaxi-city-transfer",
+      "partner": "kiwitaxi"
     },
     {
       "priority": 3,
@@ -101,13 +101,15 @@
     },
     {
       "priority": 4,
-      "id": "kiwitaxi-transfer-coverage",
-      "partner": "kiwitaxi"
+      "id": "radical-storage-city-luggage",
+      "partner": "radical-storage"
     },
     {
       "priority": 5,
       "id": "aviasales-flight-search",
       "partner": "aviasales"
     }
-  ]
+  ],
+  "trafficGatedProgramsNote": "Trip.com, Hotels.com, Booking.com, Agoda, Expedia, GetYourGuide and other visible programs are deferred until meaningful traffic/account-state change. No repeated owner checking is needed.",
+  "availableUtilityPlan": "data/available-program-expansion-plan.json"
 }
