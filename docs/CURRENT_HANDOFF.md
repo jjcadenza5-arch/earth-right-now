@@ -140,3 +140,13 @@ Central Asia expansion lane — 2026-10-03:
 - Shymbulak and Karakol have official resort camera pages; KG Camera explicitly publishes live/no-archive cameras for Ala-Archa and Osh with a short delay.
 - These adjacent cameras improve Central Asia representation but do not count as solving the Pamir gap.
 - Viator/Shymbulak and Viator/Karakol future opportunities are source-gated; Pamir/Viator remains blocked until a genuine Pamir live source exists.
+
+
+Central Asia large-batch checkpoint — 2026-10-03 03:35 UTC:
+- Pamir/Tajikistan remains an explicitly unresolved P1 source gap. Fresh English/Russian web research still found no trustworthy scenic current camera for Murghab, Khorog, Karakul Lake, Wakhan Valley or the Pamir Highway; Windfinder currently reports no nearby Murghab webcams.
+- No prerecorded Pamir travel video, weather iframe or generic directory was promoted as LIVE.
+- Kyrgyzstan adjacent coverage was deepened with direct, source-specific KG Camera targets for Karakol Ski Base, Ala-Archa Natural Park, Osh/Sulaiman-Too, Naryn central square, Too-Ashu Pass north entrance, Suusamyr Valley, Balykchy, Issyk-Kul/KarVen Four Seasons and Bishkek/Ala-Too Square.
+- KG Camera states its feeds are unarchived surveillance with about a 20-second delay; every candidate still requires owner playback confirmation before ERN promotion.
+- Viator source-gated opportunities were added for Ala-Archa/Bishkek and Issyk-Kul, based on current Viator inventory. Commercial links remain blocked until the corresponding camera/source is promoted.
+- Central Asia adjacent cameras improve regional breadth but do not count as solving the Pamir/Tajikistan gap.
+- Focused expansion counts and source-verification priorities were reconciled after the batch.
