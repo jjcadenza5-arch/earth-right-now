@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T02:30:00Z",
+  "publicActivationAllowed": false,
+  "regionScope": [
+    "Tajikistan Pamir Highway",
+    "Wakhan Corridor",
+    "Khorog",
+    "Murghab",
+    "Karakul Lake",
+    "Kyrgyz Alay Valley / Sary-Mogol / Sary-Tash",
+    "Osh and Batken gateway side",
+    "Chinese eastern Pamir approaches"
+  ],
+  "outcome": "CORE_PAMIR_LIVE_CAMERA_NOT_CONFIRMED",
+  "confirmedLiveOrNearLiveCandidates": [
+    {
+      "id": "osh-sulaiman-too",
+      "relation": "PAMIR_GATEWAY",
+      "url": "https://www.kg.camera/en/camera/Osh-Sulaiman-Too",
+      "note": "Live public camera at Sulaiman-Too in Osh; useful gateway context, not a core-Pamir claim."
+    },
+    {
+      "id": "batken-city-panorama",
+      "relation": "PAMIR_ALAY_WESTERN_CONTEXT",
+      "url": "https://www.kg.camera/en/",
+      "note": "Public Batken panorama listed by kg.camera; requires playback confirmation."
+    }
+  ],
+  "strongNonLiveContext": [
+    {
+      "place": "Alay Valley / Peak Lenin / Sary-Mogol",
+      "note": "Excellent Pamir-Alay visual geography and a major Pamir gateway, but no trustworthy live camera confirmed in this research pass."
+    },
+    {
+      "place": "Murghab / Karakul / Wakhan / Khorog",
+      "note": "Strong travel-video and tourism coverage exists, but ERN does not substitute prerecorded material for live/current truth."
+    }
+  ],
+  "rule": "Do not promote a Pamir-branded destination until a source is actually live/current and geographically honest about which side of the Pamir system it shows."
+}
