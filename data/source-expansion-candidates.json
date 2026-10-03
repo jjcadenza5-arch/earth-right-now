@@ -408,11 +408,13 @@
       "sourcePage": "https://www.dubrovnik.hr/web-kamere",
       "evidence": "Official City of Dubrovnik livestream page lists Kamera Pile among its web cameras.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "exactTargetUrl": "https://www.dubrovnik.hr/web-kamere/pile",
       "exactTargetType": "OFFICIAL_CITY_CAMERA_PAGE",
       "researchEvidence": "Official City of Dubrovnik camera index links directly to the Pile camera page; the page contains an ipcamlive iframe.",
-      "humanCheckHint": "Open the exact official city camera page and confirm the video moves/updates normally."
+      "humanCheckHint": "Open the exact official city camera page and confirm the video moves/updates normally.",
+      "promotedAt": "2026-10-03T05:00:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current provider/scientific page evidence; not treated as Watch Earth live video."
     },
     {
       "id": "dubrovnik-gruz-city",
@@ -423,11 +425,13 @@
       "sourcePage": "https://www.dubrovnik.hr/web-kamere",
       "evidence": "Official City of Dubrovnik livestream page lists Kamera Gruž among its web cameras.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "exactTargetUrl": "https://www.dubrovnik.hr/web-kamere/gruz",
       "exactTargetType": "OFFICIAL_CITY_CAMERA_PAGE",
       "researchEvidence": "Official City of Dubrovnik camera index links directly to the Gruž camera page; the page contains an ipcamlive iframe.",
-      "humanCheckHint": "Open the exact official city camera page and confirm the video moves/updates normally."
+      "humanCheckHint": "Open the exact official city camera page and confirm the video moves/updates normally.",
+      "promotedAt": "2026-10-03T05:00:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current provider/scientific page evidence; not treated as Watch Earth live video."
     },
     {
       "id": "malta-live-cams",
@@ -1187,8 +1191,10 @@
       "evidence": "Gudauri's webcam page describes real-time views of the ski area, including Gudauri/Kobi mountain terrain and ski stations.",
       "researchEvidence": "Public Gudauri webcam pages expose multiple live players, including MTA Gudauri and MTA Kobi.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the Gudauri webcam page and confirm the MTA Gudauri player is live/current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the Gudauri webcam page and confirm the MTA Gudauri player is live/current.",
+      "promotedAt": "2026-10-03T05:00:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current provider/scientific page evidence; not treated as Watch Earth live video."
     },
     {
       "id": "gudauri-kobi",
@@ -1202,8 +1208,10 @@
       "evidence": "Gudauri's live webcam page exposes MTA Kobi as a separate live player.",
       "researchEvidence": "Kobi provides a distinct Greater Caucasus mountain view from the Gudauri resort camera family.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the Gudauri webcam page and confirm the MTA Kobi player is live/current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the Gudauri webcam page and confirm the MTA Kobi player is live/current.",
+      "promotedAt": "2026-10-03T05:00:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current provider/scientific page evidence; not treated as Watch Earth live video."
     },
     {
       "id": "everest-khumbu-hotel-view",
@@ -1232,8 +1240,10 @@
       "evidence": "WorldCamera identifies the Khumbu Glacier live webcam from NCO-P station at 5,079 m in Sagarmatha National Park and reports it online.",
       "researchEvidence": "This is a scientific high-altitude current-image source rather than a tourism stream; ERN must preserve refresh/currentness semantics honestly.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the Khumbu Glacier camera and confirm the current image refreshes or has a reliable current timestamp."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the Khumbu Glacier camera and confirm the current image refreshes or has a reliable current timestamp.",
+      "promotedAt": "2026-10-03T05:00:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current provider/scientific page evidence; not treated as Watch Earth live video."
     },
     {
       "id": "razzakov-center",
@@ -1294,8 +1304,10 @@
       "evidence": "The official Municipal Port Fund of Mykonos page publishes several port live streams and explicitly labels them Live Streaming.",
       "researchEvidence": "Official municipal source with multiple live port angles; should count as one Mykonos place family unless a later camera proves a genuinely distinct destination.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the municipal Mykonos live-stream page and confirm at least one New Port camera moves normally."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the municipal Mykonos live-stream page and confirm at least one New Port camera moves normally.",
+      "promotedAt": "2026-10-03T05:00:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current provider/scientific page evidence; not treated as Watch Earth live video."
     },
     {
       "id": "santorini-caldera-imerovigli",
@@ -1309,8 +1321,10 @@
       "evidence": "Santorini.net describes two real-time video streams from Imerovigli overlooking the caldera, sea, Oia and Thirassia.",
       "researchEvidence": "Visually exceptional candidate; non-government source, so link-only treatment is preferred unless rights are explicitly established.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the Santorini live webcam page and confirm Camera A or B is currently streaming rather than only showing timelapse."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the Santorini live webcam page and confirm Camera A or B is currently streaming rather than only showing timelapse.",
+      "promotedAt": "2026-10-03T05:00:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current provider/scientific page evidence; not treated as Watch Earth live video."
     },
     {
       "id": "poiana-brasov-live",
