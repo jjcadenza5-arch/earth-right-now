@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T14:35:00Z",
+  "purpose": "Convert the highest-value already-healthy ERN destinations using active partners, without overwhelming the owner with the full backlog.",
+  "activePartners": [
+    "viator",
+    "klook",
+    "tiqets",
+    "welcome-pickups"
+  ],
+  "totalExactLinkBacklog": 152,
+  "currentlyActionableHealthyExactLinkOpportunities": 152,
+  "batchSize": 15,
+  "batch": [
+    {
+      "rank": 1,
+      "id": "viator-panama-canal-future",
+      "destination": "Panama Canal",
+      "partner": "viator",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "panama-canal-miraflores-locks",
+        "panama-canal-gatun-locks",
+        "panama-canal-pedro-miguel-locks",
+        "panama-canal-cocoli-locks",
+        "panama-canal-agua-clara-locks"
+      ],
+      "priority": "P1",
+      "score": 129.25,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Panama-City/d950-ttd",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 2,
+      "id": "viator-santorini-future",
+      "destination": "Santorini",
+      "partner": "viator",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "santorini-imerovigli"
+      ],
+      "priority": "P1",
+      "score": 129.25,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Santorini/d959-ttd",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 3,
+      "id": "tiqets-brussels",
+      "destination": "Brussels",
+      "partner": "tiqets",
+      "intent": "culture",
+      "healthyPlaceIds": [
+        "brussels-grand-place",
+        "brussels-brouckere"
+      ],
+      "priority": "P1",
+      "score": 129,
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/brussels-attractions-c60843/",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 4,
+      "id": "klook-hong-kong",
+      "destination": "Hong Kong",
+      "partner": "klook",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "hong-kong-victoria-harbour",
+        "hong-kong-victoria-peak",
+        "hong-kong-tai-mo-shan"
+      ],
+      "priority": "P1",
+      "score": 129,
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-HK/destination/c2-hong-kong/1-things-to-do/",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 5,
+      "id": "viator-reunion-island",
+      "destination": "La Réunion",
+      "partner": "viator",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "reunion-boucan-canot",
+        "reunion-trou-deau",
+        "reunion-roches-noires",
+        "reunion-piton-fournaise"
+      ],
+      "priority": "P1",
+      "score": 129,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Reunion-Island/d4395-ttd",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 6,
+      "id": "klook-mayon",
+      "destination": "Mayon / Albay",
+      "partner": "klook",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "mayon-volcano"
+      ],
+      "priority": "P1",
+      "score": 129,
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-PH/destination/p50132685-mayon-volcano/5-tour/",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 7,
+      "id": "viator-plitvice",
+      "destination": "Plitvice Lakes National Park",
+      "partner": "viator",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "plitvice-lakes"
+      ],
+      "priority": "P1",
+      "score": 129,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Plitvice-Lakes-National-Park/d27086-ttd",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 8,
+      "id": "viator-popocatepetl",
+      "destination": "Popocatépetl / Mexico City",
+      "partner": "viator",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "mexico-popocatepetl"
+      ],
+      "priority": "P1",
+      "score": 129,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Mexico-City/Trekking-Through-The-Volcanoes/d628-147652P8",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 9,
+      "id": "klook-sun-moon-lake",
+      "destination": "Sun Moon Lake",
+      "partner": "klook",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "taiwan-sun-moon-lake"
+      ],
+      "priority": "P1",
+      "score": 129,
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/p50291212-sun-moon-lake/5-tour/",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 10,
+      "id": "viator-flam",
+      "destination": "Flåm / Aurlandsfjord",
+      "partner": "viator",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "flam-aurlandsfjord"
+      ],
+      "priority": "P1",
+      "score": 128.75,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Western-Norway/Spectacular-Flam-Railway/d22278-21088P1",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 11,
+      "id": "viator-meads-bay",
+      "destination": "Meads Bay / Anguilla",
+      "partner": "viator",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "meads-bay-anguilla"
+      ],
+      "priority": "P1",
+      "score": 128.75,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Anguilla-attractions/Meads-Bay/d810-a24644",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 12,
+      "id": "viator-dresden",
+      "destination": "Dresden / Radebeul",
+      "partner": "viator",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "dresden-old-town",
+        "radebeul-wackerbarth"
+      ],
+      "priority": "P1",
+      "score": 128.5,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Dresden/d22375-ttd",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 13,
+      "id": "viator-dubrovnik-future",
+      "destination": "Dubrovnik",
+      "partner": "viator",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "dubrovnik-city"
+      ],
+      "priority": "P1",
+      "score": 128.5,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Dubrovnik/d904-ttd",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 14,
+      "id": "viator-everest-future",
+      "destination": "Everest / Khumbu",
+      "partner": "viator",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "khumbu-glacier-everest"
+      ],
+      "priority": "P1",
+      "score": 128.5,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/collections/Mt-Everest-Tours-from-Kathmandu/c28285",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    },
+    {
+      "rank": 15,
+      "id": "klook-hehuanshan-wuling",
+      "destination": "Hehuanshan / Wuling Pass",
+      "partner": "klook",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "taiwan-hehuanshan-wuling"
+      ],
+      "priority": "P1",
+      "score": 128.5,
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/54696-nantou-hehuanshan-sunrise-tour-half-day-join-tour/",
+      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false
+    }
+  ],
+  "completionRule": "Do not open the next batch until this batch is substantially verified or analytics show a reason to reprioritize.",
+  "noInventedLinks": true,
+  "noCommissionRanking": true
+}
