@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T10:32:00Z",
+  "generatedAt": "2026-10-03T10:40:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -19,8 +19,8 @@
     "paidRankingAllowed": false,
     "viatorPayoutMethodConfigured": true,
     "viatorPayoutReadiness": "OWNER_CONFIRMED_CONFIGURED_2026-10-02",
-    "accommodationGapStatus": "TRIP_COM_STATUS_CHECK_NOW_WARRANTED",
-    "tripComAccountStatus": "OWNER_MY_PROGRAMS_CHECK_REQUIRED",
+    "accommodationGapStatus": "LOCKED_PROGRAMS_TRAFFIC_GATED",
+    "tripComAccountStatus": "VISIBLE_NOT_UNLOCKED_BUILD_TRAFFIC_FIRST",
     "ownerVisibleLinkGenerationPrograms": [
       "klook",
       "tiqets",
@@ -60,17 +60,10 @@
     "Non-public exact-link opportunity queue active",
     "Travelpayouts payout method configured and email-confirmed by owner on 2026-10-02",
     "Viator payout method configured by owner on 2026-10-02",
-    "Owner-account screenshot audit confirmed many additional Travelpayouts programs now expose Generate links controls."
+    "Owner-account screenshot audit confirmed many additional Travelpayouts programs now expose Generate links controls.",
+    "Travelpayouts locked-program catalog reviewed; traffic-first unlock strategy adopted on 2026-10-03"
   ],
   "humanOnlyRemaining": [
-    {
-      "id": "trip-com-my-programs-status",
-      "action": "Check Trip.com status in Travelpayouts → Earthrightnow Project → Programs / My Programs; report Available, Under review, or Unavailable.",
-      "priority": "P1",
-      "blocksPublicERN": false,
-      "blocksCurrentOffers": false,
-      "blocksOnlyStayExpansion": true
-    },
     {
       "id": "next-exact-link-batch",
       "action": "When convenient, generate the bundled exact-link batch from data/owner-commercial-action-packet.json rather than handling destinations one-by-one.",
@@ -87,7 +80,8 @@
     "Affiliate disclosure remains explicit",
     "Do not activate all available programs merely because they are available",
     "Do not open a direct Trip.com account unless Travelpayouts project status makes that strategically useful",
-    "Accommodation links remain downstream from Earth discovery and cannot affect ranking"
+    "Accommodation links remain downstream from Earth discovery and cannot affect ranking",
+    "Do not repeatedly ask owner to recheck locked Travelpayouts programs; recheck only on meaningful traffic/account-state change"
   ],
   "currentHealthySearchablePlaces": 200
 }
