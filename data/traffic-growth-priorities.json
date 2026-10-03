@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T15:35:00Z",
+  "generatedAt": "2026-10-03T16:40:00Z",
   "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
-  "currentSearchableHealthyPlaces": 283,
+  "currentSearchableHealthyPlaces": 300,
   "unlockTargets": [
     "trip-com",
     "hotels-com",
@@ -27,13 +27,13 @@
     {
       "id": "destination-depth",
       "priority": "P1",
-      "action": "Maintain 283 strong searchable places with crawlable destination pages, aliases, country/region, source type, currentness, related ERN places and useful planning context. Replace or upgrade weak sources rather than growing count mechanically.",
+      "action": "Maintain 300 strong searchable places with crawlable destination pages, aliases, country/region, source type, currentness, related ERN places and useful planning context. Prefer stronger sources and freshness over mechanical count growth.",
       "successSignal": "More non-owner organic search/AI discovery landing directly on destination pages."
     },
     {
       "id": "long-tail-geography",
       "priority": "P1",
-      "action": "Use the 283-place catalog to deepen long-tail search demand while preparing a supplemental Search-only catalog architecture before materially exceeding the runtime source-size ceiling.",
+      "action": "Use the 300-place catalog to deepen long-tail search and AI discovery across countries, islands, cities, mountains, parks, wildlife and current-condition queries while preserving the runtime budget.",
       "successSignal": "Broader search-query coverage across place names, islands, mountains, parks and current-condition searches."
     },
     {
@@ -63,14 +63,14 @@
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
   "note": "Scale target exceeded. Primary growth objective is now qualified organic discovery, deeper internal exploration, real planning clicks/conversions and better source quality; Travelpayouts unlock thresholds are private and must not be invented.",
-  "milestone": "283_SEARCHABLE_PLACES_QUALITY_TRAFFIC_AND_UNLOCK_GROWTH",
+  "milestone": "300_SEARCHABLE_PLACES_QUALITY_TRAFFIC_AND_UNLOCK_GROWTH",
   "currentBusinessCoverage": {
-    "healthyPlaces": 283,
-    "placesWithCommercialPath": 249,
-    "intentionallyEditorialPlaces": 34,
+    "healthyPlaces": 300,
+    "placesWithCommercialPath": 265,
+    "intentionallyEditorialPlaces": 35,
     "unclassifiedHealthyPlaces": 0,
     "verifiedLinkPlaces": 19,
-    "exactLinkOpportunityBacklog": 161,
+    "exactLinkOpportunityBacklog": 169,
     "conversionShortlistSize": 15,
     "conversionShortlist": "data/commercial-conversion-shortlist.json"
   }
