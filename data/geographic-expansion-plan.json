@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:15:00Z",
+  "generatedAt": "2026-10-03T03:50:00Z",
   "currentHealthyCountries": [
     "Anguilla",
     "Aruba",
@@ -53,26 +53,35 @@
     {
       "region": "Central America",
       "priority": "P1",
-      "state": "PANAMA_CANAL_OFFICIAL_FAMILY_RESEARCHED",
+      "state": "PANAMA_PLUS_VOLCANO_FAMILIES_RESEARCHED",
       "candidateIds": [
         "panama-canal-miraflores-locks",
         "panama-canal-gatun-locks",
         "panama-canal-pedro-miguel-locks",
         "panama-canal-cocoli-locks",
         "panama-canal-agua-clara-locks"
+      ],
+      "candidateFamilies": [
+        "Panama Canal Authority locks",
+        "Costa Rica OVSICORI volcano cameras",
+        "Nicaragua INETER volcano cameras"
       ]
     },
     {
       "region": "South America",
       "priority": "P1",
-      "state": "EXPAND_SELECTIVELY",
+      "state": "EXPAND_SELECTIVELY_WITH_ECUADOR_VOLCANO_FAMILY",
       "focus": [
         "Andes",
         "Amazon",
         "Patagonia cities/ports",
         "major civic plazas"
       ],
-      "rule": "Prefer official municipal/tourism cameras."
+      "rule": "Prefer official municipal/tourism cameras.",
+      "recentResearch": [
+        "Ecuador IG-EPN Cotopaxi",
+        "Ecuador IG-EPN El Reventador"
+      ]
     },
     {
       "region": "Africa beyond South Africa",
