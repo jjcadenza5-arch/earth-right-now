@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T02:40:00Z",
+  "generatedAt": "2026-10-03T03:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -713,6 +713,37 @@
       "reason": "A verified Karakol mountain/ski camera would create a strong Central Asia trip-planning bridge; Viator account inventory must be checked before activation.",
       "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
       "nextAction": "First promote a verified Karakol live source, then search the Viator partner account for a clean Karakol/Issyk-Kul destination link. Do not use a generic Kyrgyzstan link."
+    },
+    {
+      "id": "viator-ala-archa-future",
+      "destination": "Bishkek / Ala-Archa National Park",
+      "placeIds": [
+        "ala-archa-natural-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "The Ala-Archa camera candidate maps directly to established Bishkek/Ala-Archa day-tour inventory on Viator.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-PH/tours/Bishkek/One-Day-Ala-Archa-National-Park-Bishkek-City-Tour/d50202-240299P2",
+      "publicInventoryEvidence": "Viator currently lists full-day Bishkek + Ala-Archa National Park tours with hiking and city sightseeing.",
+      "nextAction": "After Ala-Archa playback is owner-confirmed and promoted, generate one Bishkek/Ala-Archa Viator tracked link and verify it before public activation."
+    },
+    {
+      "id": "viator-issyk-kul-future",
+      "destination": "Issyk-Kul",
+      "placeIds": [
+        "balykchy-north-entry",
+        "karakol-ski-base"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Balykchy and Karakol cameras can support Issyk-Kul trip timing; Viator currently has multiple Issyk-Kul day and multi-day products.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Bishkek/Explore-Issyk-Kul-Small-Group-Day-Trip-from-Bishkek/d50202-486587P4",
+      "publicInventoryEvidence": "Current Viator Issyk-Kul inventory includes day trips from Bishkek and multi-day routes that explicitly visit Cholpon-Ata, Karakol and the lake.",
+      "nextAction": "After at least one Issyk-Kul-related camera is promoted, generate one suitable Issyk-Kul/Bishkek tracked link; avoid separate duplicate links for every camera."
     }
   ]
 }
