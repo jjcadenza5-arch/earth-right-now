@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T09:32:00Z",
+  "generatedAt": "2026-10-03T09:52:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -926,33 +926,33 @@
       "id": "klook-istanbul-future",
       "destination": "Istanbul",
       "placeIds": [
-        "istanbul-sultanahmet-live",
-        "istanbul-bosphorus-live"
+        "istanbul-sultanahmet"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
       "priority": "P1",
       "reason": "A verified official Istanbul landmark/Bosphorus live camera would connect naturally to Klook's current Istanbul museums, cruises, historical sites and guided-tour inventory.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/destination/c186-istanbul/1-things-to-do/",
       "publicInventoryEvidence": "Klook currently lists active Istanbul inventory across museums, Bosphorus cruises, guided tours, historical sites and observation decks.",
-      "nextAction": "After at least one Istanbul camera is promoted, generate one city-level Klook tracked link and verify it manually; reuse it across Istanbul places rather than duplicating commercial density."
+      "nextAction": "Generate one Istanbul city-level Klook tracked link in Travelpayouts and verify it manually; reuse it across future Istanbul views.",
+      "sourceGateClearedAt": "2026-10-03T09:50:00Z"
     },
     {
       "id": "viator-istanbul-future",
       "destination": "Istanbul",
       "placeIds": [
-        "istanbul-sultanahmet-live",
-        "istanbul-bosphorus-live"
+        "istanbul-sultanahmet"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
       "reason": "Viator currently has deep Istanbul sightseeing inventory, including Old City landmarks and Bosphorus experiences that map directly to the proposed municipal live views.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Istanbul-tours/Tours-and-Sightseeing/d585-g12",
       "publicInventoryEvidence": "Viator currently lists 1,000+ Istanbul sightseeing products across city tours, historical tours, cruises and private experiences.",
-      "nextAction": "After Istanbul source promotion, generate one destination-level Viator tracked link and verify it manually."
+      "nextAction": "Generate one Istanbul destination-level Viator tracked link and verify it manually; keep it downstream from Earth discovery.",
+      "sourceGateClearedAt": "2026-10-03T09:50:00Z"
     },
     {
       "id": "klook-bali-future",
@@ -964,10 +964,11 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "A verified Denpasar/Bali live city source can bridge into Klook's very deep Bali activity inventory, but the affiliate link must be framed as Bali planning rather than implying the camera is at a resort attraction.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/destination/c8-bali/",
       "publicInventoryEvidence": "Klook currently lists hundreds of Bali activities including Uluwatu, surfing, Ubud, Mount Batur, Nusa Penida, water sports and wildlife attractions.",
-      "nextAction": "After a Denpasar live camera is promoted, generate one Bali-level Klook tracked link and verify it; keep wording honest about the camera's urban location."
+      "nextAction": "Generate one Bali-level Klook tracked link and verify it manually; disclose that ERN's current source is urban Denpasar.",
+      "sourceGateClearedAt": "2026-10-03T09:50:00Z"
     },
     {
       "id": "viator-bali-future",
@@ -979,10 +980,11 @@
       "intent": "activities",
       "priority": "P2",
       "reason": "Viator also has deep Bali sightseeing and day-trip inventory, offering a second existing-partner path after source verification.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Bali-tours/Tours-and-Sightseeing/d98-g12",
       "publicInventoryEvidence": "Viator currently lists 1,000+ Bali sightseeing products across day trips, culture, beaches and private tours.",
-      "nextAction": "Only add if a useful Denpasar/Bali source is promoted and a clean Bali destination-level tracked link is available; avoid unnecessary duplicate commercial density with Klook."
+      "nextAction": "Only generate a Bali/Denpasar Viator link if it adds distinct visitor utility beyond Klook; verify manually before activation.",
+      "sourceGateClearedAt": "2026-10-03T09:50:00Z"
     },
     {
       "id": "viator-panama-canal-future",
