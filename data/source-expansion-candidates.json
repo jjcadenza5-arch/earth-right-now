@@ -1170,6 +1170,36 @@
       "priority": "P1",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Open the Khumbu Glacier camera and confirm the current image refreshes or has a reliable current timestamp."
+    },
+    {
+      "id": "razzakov-center",
+      "title": "Razzakov — City Center",
+      "country": "Kyrgyzstan",
+      "region": "Batken",
+      "provider": "ElCat / kg.camera",
+      "sourcePage": "https://kg.camera/en",
+      "exactTargetUrl": "https://kg.camera/en",
+      "exactTargetType": "LIVE_CAMERA_INDEX",
+      "evidence": "kg.camera lists a live camera in central Razzakov at the main roundabout.",
+      "researchEvidence": "Regional context for southwest Kyrgyzstan near the Pamir-Alai sphere; not core Pamir.",
+      "priority": "P3",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open kg.camera and choose Razzakov city center."
+    },
+    {
+      "id": "ala-archa-park",
+      "title": "Ala-Archa National Park",
+      "country": "Kyrgyzstan",
+      "region": "Chüy",
+      "provider": "ElCat / kg.camera",
+      "sourcePage": "https://kg.camera/en",
+      "exactTargetUrl": "https://kg.camera/en",
+      "exactTargetType": "LIVE_CAMERA_INDEX",
+      "evidence": "kg.camera lists a camera in Ala-Archa Natural Park at about 2,200 m elevation.",
+      "researchEvidence": "Strong mountain-landscape candidate for Kyrgyzstan coverage, but not Pamir proper.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open kg.camera and choose Ala-Archa Natural Park."
     }
   ],
   "notes": [
@@ -1192,6 +1222,31 @@
     "2026-10-03 Central Asia large batch: replaced generic KG Camera index links with direct camera pages for Karakol, Ala-Archa and Osh/Sulaiman-Too, and added direct research candidates for Naryn, Too-Ashu Pass, Suusamyr Valley and Balykchy. These remain playback-gated.",
     "2026-10-03 added direct KG Camera candidates for scenic Issyk-Kul/KarVen Four Seasons and Bishkek/Ala-Too Square. Both remain human-playback-gated.",
     "Pamir multi-side research — 2026-10-03: searched Tajikistan core Pamir Highway/Wakhan/Murghab/Karakul plus Kyrgyz Alay approaches. No trustworthy public live camera was found in the core Tajik Pamir locations during this pass. ERN therefore leaves the core Pamir as an explicit research gap rather than using prerecorded travel video. Three live-camera candidates were added around the broader Kyrgyz mountain/gateway side: Osh Sulaiman-Too, Batken city panorama and Ala-Archa National Park.",
-    "2026-10-03 large mountain-geography batch: after the Pamir core remained a truthful research gap, ERN expanded research into neighboring/global high-mountain regions with stronger live evidence: Gudauri/Kobi in Georgia, Shymbulak in Kazakhstan, and two Nepal Everest/Khumbu candidates. None are promoted until human playback/currentness verification."
+    "2026-10-03 large mountain-geography batch: after the Pamir core remained a truthful research gap, ERN expanded research into neighboring/global high-mountain regions with stronger live evidence: Gudauri/Kobi in Georgia, Shymbulak in Kazakhstan, and two Nepal Everest/Khumbu candidates. None are promoted until human playback/currentness verification.",
+    "2026-10-03 Pamir research: no trustworthy core Tajik Pamir live feed found. Added six Kyrgyz mountain/approach candidates from kg.camera while explicitly keeping Murghab/Karakul/Wakhan/Ak-Baital as an unresolved research gap."
+  ],
+  "researchGaps": [
+    {
+      "id": "core-pamir-live-camera-gap",
+      "region": "Pamir Mountains",
+      "countries": [
+        "Tajikistan",
+        "Afghanistan",
+        "China",
+        "Kyrgyzstan"
+      ],
+      "focus": [
+        "Murghab",
+        "Karakul Lake",
+        "Wakhan Corridor",
+        "Ak-Baital Pass",
+        "Sary-Tash / Alai approach",
+        "Tashkurgan / eastern approach"
+      ],
+      "state": "NO_TRUSTWORTHY_CORE_LIVE_CAMERA_FOUND",
+      "checkedAt": "2026-10-03",
+      "evidence": "Public search found official/static Pamir tourism material and nearby Kyrgyz live cameras, but no trustworthy live camera from the core Tajik Pamir itself. ERN must not substitute prerecorded travel videos or monitoring/GNSS stations for a live Earth source.",
+      "nextAction": "Revisit periodically; prefer official tourism, government, road/weather or telecom camera networks if they appear."
+    }
   ]
 }
