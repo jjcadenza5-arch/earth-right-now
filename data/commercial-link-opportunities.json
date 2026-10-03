@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:48:00Z",
+  "generatedAt": "2026-10-03T04:58:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -294,14 +294,16 @@
       "destination": "Yellowstone National Park",
       "placeIds": [
         "yellowstone-old-faithful",
-        "yellowstone-national-park"
+        "yellowstone-national-park",
+        "yellowstone-biscuit-basin",
+        "yellowstone-lake"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P2",
-      "reason": "ERN has current Yellowstone views and Viator has guided Yellowstone sightseeing and wildlife inventory; a single park-level activity link can serve both place records without duplicate density.",
+      "reason": "ERN now has multiple healthy Yellowstone views—Old Faithful, park-level coverage, Biscuit Basin and Yellowstone Lake—while one park-level Viator activity link can serve them without duplicate commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one park-level Yellowstone Viator link only if it cleanly serves both current ERN Yellowstone places."
+      "nextAction": "Generate one park-level Yellowstone Viator link and reuse it across all healthy Yellowstone places; do not create separate affiliate buttons per camera."
     },
     {
       "id": "tiqets-georgia-aquarium",
@@ -1375,6 +1377,36 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/c390-taupo/1002-day-trips/",
       "publicInventoryEvidence": "Klook currently lists a Tongariro Alpine Crossing Half-Day Shuttle under Taupo/North Island inventory and also sells Northern Explorer rail journeys through Tongariro National Park.",
       "nextAction": "Generate one Tongariro destination-level Klook tracked link in Travelpayouts and verify it manually; reuse across Tongariro/Ngauruhoe/Ruapehu rather than creating duplicate commercial density."
+    },
+    {
+      "id": "viator-mount-rainier",
+      "destination": "Mount Rainier National Park",
+      "placeIds": [
+        "mount-rainier-national-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy current-image Mount Rainier place and Viator currently offers multiple full-day Mount Rainier tours from Seattle.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Seattle/d704-ttd",
+      "publicInventoryEvidence": "Current Viator Seattle inventory includes several Mount Rainier National Park full-day tours, hikes and scenic day trips.",
+      "nextAction": "Generate one Mount Rainier/Seattle partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-rio-copacabana",
+      "destination": "Rio de Janeiro / Copacabana",
+      "placeIds": [
+        "rio-copacabana"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Copacabana current place and Viator currently exposes deep Rio inventory including tours that explicitly stop at Copacabana Beach.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Rio-de-Janeiro/d712-ttd",
+      "publicInventoryEvidence": "Current Viator Rio inventory includes 1,000+ tours and multiple headline sightseeing products covering Christ the Redeemer, Sugarloaf and Copacabana.",
+      "nextAction": "Generate one Rio destination-level Viator partner link and verify it manually before public activation."
     }
   ]
 }
