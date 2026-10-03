@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:35:00Z",
+  "generatedAt": "2026-10-03T03:48:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1358,6 +1358,23 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/es-VE/Liberia/Costa-Rica/day-trips-d22740-d747",
       "publicInventoryEvidence": "Current Viator inventory includes full-day Nicaragua itineraries with a Masaya Volcano National Park stop.",
       "nextAction": "Only activate if the partner account exposes a clean Nicaragua/Masaya destination-level link; do not route ERN through an unrelated Costa Rica landing page."
+    },
+    {
+      "id": "klook-tongariro",
+      "destination": "Tongariro National Park",
+      "placeIds": [
+        "nz-tongariro",
+        "nz-ngauruhoe",
+        "nz-ruapehu"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has official GeoNet current-image coverage across Tongariro, Ngauruhoe and Ruapehu, while Klook currently sells Tongariro Alpine Crossing shuttle access and North Island scenic transport through Tongariro National Park.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/c390-taupo/1002-day-trips/",
+      "publicInventoryEvidence": "Klook currently lists a Tongariro Alpine Crossing Half-Day Shuttle under Taupo/North Island inventory and also sells Northern Explorer rail journeys through Tongariro National Park.",
+      "nextAction": "Generate one Tongariro destination-level Klook tracked link in Travelpayouts and verify it manually; reuse across Tongariro/Ngauruhoe/Ruapehu rather than creating duplicate commercial density."
     }
   ]
 }
