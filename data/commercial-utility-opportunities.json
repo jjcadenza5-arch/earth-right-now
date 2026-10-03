@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T10:40:00Z",
+  "publicActivationAllowed": false,
+  "principle": "Utility links are optional post-discovery helpers. They do not affect which place/camera ERN ranks or recommends.",
+  "opportunities": [
+    {
+      "id": "airalo-global-esim",
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "scope": "GLOBAL_TRAVEL",
+      "priority": "P1",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Only in Before You Go / travel-planning context, never in camera ranking.",
+      "why": "Broad usefulness across international ERN destinations; low maintenance."
+    },
+    {
+      "id": "radical-storage-city-luggage",
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "scope": "CITY_DESTINATIONS",
+      "priority": "P1",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Show only for city/transport-hub destinations where luggage storage is plausibly useful.",
+      "why": "Strong utility for arrival/departure windows and day-trip visitors."
+    },
+    {
+      "id": "go-city-major-cities",
+      "partnerCandidate": "go-city",
+      "intent": "tickets",
+      "scope": "SUPPORTED_MAJOR_CITIES",
+      "priority": "P1",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Only where Go City actually supports the destination; do not show globally.",
+      "why": "Distinct city-pass option that complements, rather than duplicates, attraction links."
+    },
+    {
+      "id": "kiwitaxi-transfer-coverage",
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "scope": "SUPPORTED_AIRPORT_CITY_PAIRS",
+      "priority": "P1",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Use as fallback/coverage expansion where Welcome Pickups lacks useful service.",
+      "why": "Extends airport/city transfer coverage without opening another network."
+    },
+    {
+      "id": "aviasales-flight-search",
+      "partnerCandidate": "aviasales",
+      "intent": "transport",
+      "scope": "GLOBAL_FLIGHTS",
+      "priority": "P2",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Only after a visitor enters trip-planning context; never on Watch Earth cards.",
+      "why": "Global flight-search utility can support the See Live → Decide → Go journey."
+    }
+  ],
+  "safeguards": {
+    "exactTrackedLinkRequired": true,
+    "ownerVerificationRequired": true,
+    "noAutomaticPlacement": true,
+    "noAutomaticRewriting": true,
+    "noCommissionRanking": true,
+    "duplicateUtilitySuppression": true
+  }
+}
