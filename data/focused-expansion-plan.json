@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T06:07:00Z",
+  "generatedAt": "2026-10-03T05:45:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 181,
+    "currentHealthyDistinctPlaceBaseline": 200,
     "targetRange": [
       150,
       200
     ],
-    "strategy": "Continue from the achieved 150+ baseline toward ~200 using genuinely distinct places. Search/Explore may use clearly labeled quasi-live LIVE_IMAGE sources from trustworthy current/refreshed provider pages; Watch Earth remains stricter and live/current only.",
+    "strategy": "Maintain the achieved 200-place healthy searchable baseline while improving geographic quality, source freshness, and featured-camera curation. Search/Explore may include clearly labeled quasi-live LIVE_IMAGE sources; Watch Earth remains stricter.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -25,7 +25,7 @@
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
     "researchCandidateCount": 160,
-    "playbackGatedCandidateCount": 54,
+    "playbackGatedCandidateCount": 35,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan",
       "adjacentHighValueChecks": [
@@ -74,14 +74,15 @@
       "labelingRequired": true,
       "rule": "Quasi-live expands Search/Explore only; it never masquerades as continuous live video."
     },
-    "quasiLivePromotedCount": 46,
-    "currentHealthyLiveImageCount": 106,
+    "quasiLivePromotedCount": 65,
+    "currentHealthyLiveImageCount": 125,
     "progressToTarget": {
       "minimumTarget": 150,
-      "current": 181,
+      "current": 200,
       "remainingToMinimum": 0,
       "stretchTarget": 200,
-      "remainingToStretch": 19
+      "remainingToStretch": 0,
+      "status": "STRETCH_TARGET_REACHED"
     }
   },
   "businessLane": {
@@ -158,15 +159,15 @@
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 16,
-    "exactLinkQueueCount": 81,
-    "sourceGatedQueueCount": 22,
+    "exactLinkQueueCount": 86,
+    "sourceGatedQueueCount": 17,
     "sourceGapBlockedCount": 1,
     "sourceGatedOpportunityCount": 31,
     "quasiLiveCommercialRule": "A healthy quasi-live searchable place may unlock downstream travel planning, but commercial value never changes truth/currentness.",
     "currentOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 81,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 22,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 86,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 17,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
     },
     "currentOpportunityCount": 120
