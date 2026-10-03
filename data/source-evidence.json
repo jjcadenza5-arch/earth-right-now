@@ -1408,5 +1408,15 @@
     "freshnessEvidence": "The network identifies this as the central square of Kyrgyzstan's capital and applies the same unarchived short-delay live-surveillance policy.",
     "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
     "story": "The network identifies this as the central square of Kyrgyzstan's capital and applies the same unarchived short-delay live-surveillance policy."
+  },
+  "mauritius-saint-felix": {
+    "freshnessEvidence": "Current official tourism family plus MTPA annual-report evidence supports Saint-Félix as a named Mauritius Live camera location; current playback still requires owner verification.",
+    "rightsBasis": "Official tourism/provider current-camera family; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Current official tourism family plus MTPA annual-report evidence supports Saint-Félix as a named Mauritius Live camera location; current playback still requires owner verification."
+  },
+  "wanaka-lake-hawea-view": {
+    "freshnessEvidence": "Lake Wānaka Tourism publishes the Lake Hāwea direction as a current regional webcam.",
+    "rightsBasis": "Official tourism/provider current-camera family; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Lake Wānaka Tourism publishes the Lake Hāwea direction as a current regional webcam."
   }
 }
