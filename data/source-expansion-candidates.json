@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:20:00Z",
+  "generatedAt": "2026-10-03T11:55:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -2476,6 +2476,66 @@
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "promotedAt": "2026-10-03T11:20:00Z",
       "promotionNote": "Promoted to Search/Explore under the owner-approved quasi-live/current-image policy from an official tourism/scientific webcam source. Not continuous-video Watch Earth eligibility."
+    },
+    {
+      "id": "madeira-ribeira-brava",
+      "title": "Ribeira Brava — Madeira",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T11:55:00Z",
+      "promotionNote": "Official Visit Madeira current/live webcam imagery promoted under ERN quasi-live Search/Explore policy; not continuous-video Watch Earth eligibility."
+    },
+    {
+      "id": "madeira-sao-vicente",
+      "title": "São Vicente — Madeira",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T11:55:00Z",
+      "promotionNote": "Official Visit Madeira current/live webcam imagery promoted under ERN quasi-live Search/Explore policy; not continuous-video Watch Earth eligibility."
+    },
+    {
+      "id": "madeira-santana",
+      "title": "Santana — Madeira",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T11:55:00Z",
+      "promotionNote": "Official Visit Madeira current/live webcam imagery promoted under ERN quasi-live Search/Explore policy; not continuous-video Watch Earth eligibility."
+    },
+    {
+      "id": "madeira-santa-cruz",
+      "title": "Santa Cruz — Madeira",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T11:55:00Z",
+      "promotionNote": "Official Visit Madeira current/live webcam imagery promoted under ERN quasi-live Search/Explore policy; not continuous-video Watch Earth eligibility."
+    },
+    {
+      "id": "madeira-porto-santo",
+      "title": "Porto Santo — Madeira Archipelago",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T11:55:00Z",
+      "promotionNote": "Official Visit Madeira current/live webcam imagery promoted under ERN quasi-live Search/Explore policy; not continuous-video Watch Earth eligibility."
     }
   ],
   "notes": [
@@ -2524,7 +2584,8 @@
     "2026-10-03 promoted the five official Panama Canal Authority real-time lock-camera locations (Miraflores, Gatún, Pedro Miguel, Cocolí, Agua Clara) as distinct Search/Explore LIVE_IMAGE places.",
     "2026-10-03 final stretch tranche promoted Mieminger Plateau, Telfs, Lüsens, Innsbruck City Tower, Swarovski Crystal Worlds/Wattens and Simpson Bay as clearly labeled quasi-live searchable places, bringing ERN to the ~200-place target.",
     "2026-10-03 maintenance batch: Istanbul Sultanahmet and Denpasar official municipal camera services promoted from current official-web evidence; stale Takayama Miyagawa quasi-live source degraded rather than artificially refreshed.",
-    "2026-10-03 Indian Ocean/Atlantic island batch promoted seven official quasi-live searchable places: four La Réunion tourism/scientific webcams plus São Miguel, Terceira and Santa Maria from Visit Azores. Watch Earth remains stricter."
+    "2026-10-03 Indian Ocean/Atlantic island batch promoted seven official quasi-live searchable places: four La Réunion tourism/scientific webcams plus São Miguel, Terceira and Santa Maria from Visit Azores. Watch Earth remains stricter.",
+    "2026-10-03 Madeira family expanded with Ribeira Brava, São Vicente, Santana, Santa Cruz and Porto Santo from the official Madeira Tourism webcam/weather page."
   ],
   "researchGaps": [
     {
