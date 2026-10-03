@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T12:20:00Z",
+  "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
+  "currentSearchableHealthyPlaces": 223,
+  "unlockTargets": [
+    "trip-com",
+    "hotels-com",
+    "booking-com",
+    "agoda",
+    "expedia",
+    "getyourguide",
+    "tripadvisor-experiences",
+    "traveloka",
+    "omio",
+    "12go",
+    "discovercars"
+  ],
+  "principles": {
+    "noTrafficFabrication": true,
+    "organicDiscoveryFirst": true,
+    "sourceTruthBeforeSEO": true,
+    "affiliateLinksNeverChangeRanking": true,
+    "noNumericUnlockThresholdInvented": true
+  },
+  "workstreams": [
+    {
+      "id": "destination-depth",
+      "priority": "P1",
+      "action": "Keep every strong searchable place on a crawlable destination page with aliases, country/region, source type, currentness, related ERN places and useful planning context.",
+      "successSignal": "More non-owner organic search/AI discovery landing directly on destination pages."
+    },
+    {
+      "id": "long-tail-geography",
+      "priority": "P1",
+      "action": "Prioritize distinctive places and underrepresented regions rather than adding repetitive city cameras.",
+      "successSignal": "Broader search-query coverage across place names, islands, mountains, parks and current-condition searches."
+    },
+    {
+      "id": "see-live-to-plan",
+      "priority": "P1",
+      "action": "Keep travel options downstream from a viewed/searched place and measure aggregate travel_option_opened by destination/intent.",
+      "successSignal": "Sustained qualified outbound planning clicks across multiple destinations."
+    },
+    {
+      "id": "internal-discovery",
+      "priority": "P1",
+      "action": "Use related destinations, Browse All, geography/category discovery and Wander to move visitors beyond the landing page.",
+      "successSignal": "More place opens per visitor and lower single-page abandonment."
+    },
+    {
+      "id": "business-utility-now",
+      "priority": "P2",
+      "action": "Use currently link-generation-capable utilities such as Airalo, Go City, Kiwitaxi, Radical Storage, Aviasales and KKday only where they solve a clear visitor need.",
+      "successSignal": "First genuine non-owner utility clicks/conversions without cluttering ERN."
+    },
+    {
+      "id": "unlock-watch",
+      "priority": "P2",
+      "action": "Recheck traffic-gated Travelpayouts programs only after a platform status change, first affiliate conversion, sustained qualified outbound activity, or material organic traffic growth.",
+      "successSignal": "A previously locked program exposes usable/approved link-generation controls."
+    }
+  ],
+  "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
+  "note": "ERN does not know Travelpayouts' private traffic thresholds and must not invent them."
+}
