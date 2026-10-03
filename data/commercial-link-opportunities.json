@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:20:00Z",
+  "generatedAt": "2026-10-03T02:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -744,6 +744,36 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Bishkek/Explore-Issyk-Kul-Small-Group-Day-Trip-from-Bishkek/d50202-486587P4",
       "publicInventoryEvidence": "Current Viator Issyk-Kul inventory includes day trips from Bishkek and multi-day routes that explicitly visit Cholpon-Ata, Karakol and the lake.",
       "nextAction": "After at least one Issyk-Kul-related camera is promoted, generate one suitable Issyk-Kul/Bishkek tracked link; avoid separate duplicate links for every camera."
+    },
+    {
+      "id": "klook-pamir-highway-future",
+      "destination": "Pamir Highway / Osh–Tajikistan",
+      "placeIds": [
+        "osh-sulaiman-too"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Klook currently lists a multi-day Pamir Highway nature/adventure tour spanning Dushanbe, Khorog, Wakhan-side stops, Murghab, Karakul, Kyzyl-Art, Sary-Tash and Osh. This would be a strong See Live → Go bridge if ERN first verifies a truthful Pamir-gateway live source.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/213709-pamir-highway-7-day-nature-adventure-tour/",
+      "publicInventoryEvidence": "Klook currently lists a Pamir Highway 7-day tour covering multiple Tajik Pamir and Osh-side locations.",
+      "nextAction": "Only after Osh/Pamir-gateway source verification: generate and manually verify one Klook tracked link; label it as Pamir Highway planning, not as the camera location itself."
+    },
+    {
+      "id": "klook-ala-archa-future",
+      "destination": "Ala-Archa / Kyrgyzstan",
+      "placeIds": [
+        "ala-archa-natural-park"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Klook currently includes Ala-Archa in Kyrgyzstan multi-day nature itineraries, which could be useful after a verified Ala-Archa live mountain view.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/156338-9d-kazakhstan-kyrgyzstan-tour/",
+      "publicInventoryEvidence": "Current Klook Kyrgyzstan itinerary includes Ala-Archa National Park.",
+      "nextAction": "After Ala-Archa camera verification, search the ERN Klook account for a cleaner Ala-Archa/Bishkek product before any public activation."
     }
   ]
 }
