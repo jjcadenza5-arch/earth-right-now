@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T10:42:00Z",
+  "objective": "Use first-party aggregate behavior to decide when ERN should revisit traffic-gated affiliate programs. Do not invent program unlock thresholds.",
+  "currentMilestone": "FIRST_ELIGIBLE_TRANSACTION_AND_REPEAT_TRIP_PLANNING_USAGE",
+  "signals": [
+    {
+      "id": "travel-option-clicks",
+      "event": "travel_option_opened",
+      "meaning": "Visitors are moving from discovery into planning/commercial intent.",
+      "unlockRelevance": "HIGH"
+    },
+    {
+      "id": "external-source-engagement",
+      "event": "external_source_opened",
+      "meaning": "Visitors find source handoffs useful; supports overall discovery utility but is weaker commercial evidence.",
+      "unlockRelevance": "LOW"
+    },
+    {
+      "id": "search-demand",
+      "event": "earth_search",
+      "meaning": "Sustained destination search activity demonstrates intentional discovery rather than passive page views.",
+      "unlockRelevance": "MEDIUM"
+    },
+    {
+      "id": "search-gap-demand",
+      "event": "earth_search_zero",
+      "meaning": "Repeated gaps reveal where content expansion may unlock future planning demand.",
+      "unlockRelevance": "MEDIUM"
+    },
+    {
+      "id": "place-engagement",
+      "event": "place_opened",
+      "meaning": "Repeated place exploration helps distinguish useful destination demand from homepage impressions.",
+      "unlockRelevance": "MEDIUM"
+    },
+    {
+      "id": "affiliate-conversion",
+      "event": "PARTNER_ACCOUNT_CONFIRMED_CONVERSION",
+      "meaning": "A confirmed booking/sale/commission in a partner dashboard is the strongest evidence that ERN commercial traffic is working.",
+      "unlockRelevance": "VERY_HIGH",
+      "firstPartyEvent": false
+    }
+  ],
+  "revisitLockedProgramsWhen": [
+    "Travelpayouts changes the program state or exposes link generation",
+    "aggregate travel_option_opened activity becomes sustained across multiple destinations",
+    "ERN records its first partner-confirmed conversion/commission",
+    "organic visitor/search activity grows materially enough that a new stay/activity/transport program would solve a demonstrated gap"
+  ],
+  "doNotUse": [
+    "raw page views alone",
+    "outbound clicks as proof of bookings",
+    "commission-rate differences to change ranking",
+    "invented numeric thresholds not provided by Travelpayouts"
+  ],
+  "nextUnlockOrder": [
+    "trip-com",
+    "hotels-com",
+    "agoda",
+    "expedia",
+    "getyourguide",
+    "tripadvisor-experiences",
+    "omio",
+    "12go",
+    "traveloka",
+    "discovercars"
+  ],
+  "safeguards": {
+    "aggregateOnly": true,
+    "noRawIPStorage": true,
+    "noBookingInference": true,
+    "noPaidRanking": true,
+    "noAutomaticProgramActivation": true
+  }
+}
