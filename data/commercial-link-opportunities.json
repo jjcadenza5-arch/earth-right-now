@@ -1540,6 +1540,36 @@
       "reason": "ERN now has additional official quasi-live wildlife places in Kruger; one park-level Viator safari-planning link should serve current Kruger places without per-camera commercial duplication.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Reuse or generate one clean Kruger National Park Viator destination link and verify it manually; do not create separate commercial offers for each camp camera."
+    },
+    {
+      "id": "viator-misti-arequipa",
+      "destination": "Arequipa / El Misti",
+      "placeIds": [
+        "peru-misti-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has official real-time CENVUL imagery for El Misti and Viator currently sells multiple guided Misti climbing/trekking products from Arequipa.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Arequipa-attractions/El-Misti-Volcano/d5020-a7596",
+      "publicInventoryEvidence": "Current Viator El Misti inventory lists multiple trekking/climbing experiences from Arequipa.",
+      "nextAction": "Generate and manually verify an Arequipa/El Misti Viator tracked link before activation."
+    },
+    {
+      "id": "viator-popocatepetl",
+      "destination": "Popocatépetl / Mexico City",
+      "placeIds": [
+        "mexico-popocatepetl"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a one-minute official CENAPRED Popocatépetl current-image source and Viator currently sells Mexico City volcano treks and Puebla/Cholula day trips with Popocatépetl views.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Mexico-City/Trekking-Through-The-Volcanoes/d628-147652P8",
+      "publicInventoryEvidence": "Current Viator Mexico City inventory includes trekking in the Popocatépetl/Iztaccíhuatl area and Puebla/Cholula day trips with Popocatépetl viewpoints.",
+      "nextAction": "Generate a suitable Mexico City/Popocatépetl Viator partner link and verify it manually before activation."
     }
   ]
 }
