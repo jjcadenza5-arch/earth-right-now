@@ -94,7 +94,7 @@
     ],
     "currentCommercialOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 127,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 133,
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 5,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
@@ -104,9 +104,9 @@
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
-    "currentCommercialOpportunityCount": 150,
-    "healthyPlacesWithCommercialPath": 196,
-    "healthyPlacesWithoutCommercialPath": 60
+    "currentCommercialOpportunityCount": 156,
+    "healthyPlacesWithCommercialPath": 211,
+    "healthyPlacesWithoutCommercialPath": 45
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
