@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T04:28:00Z",
+  "generatedAt": "2026-10-03T03:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1313,6 +1313,51 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/San-Jose/d793-ttd",
       "publicInventoryEvidence": "Viator currently maintains broad San José/Central Valley volcano and nature inventory; exact Turrialba-specific partner-link suitability still requires account search.",
       "nextAction": "Search Viator partner tools for a clean Turrialba-specific destination/product link; skip activation if only weak generic inventory is available."
+    },
+    {
+      "id": "viator-fuego-antigua",
+      "destination": "Antigua / Volcán de Fuego",
+      "placeIds": [
+        "guatemala-fuego-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official near-real-time Fuego current-image source, and Viator has deep Antigua/Acatenango inventory explicitly centered on viewing neighboring Fuego eruptions.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Antigua/d4599-ttd",
+      "publicInventoryEvidence": "Current Viator Antigua inventory includes multiple Acatenango overnight hikes designed around views of active Volcán de Fuego.",
+      "nextAction": "Generate one Antigua/Acatenango destination-level Viator partner link and verify it manually before public activation; keep the link downstream from Fuego discovery."
+    },
+    {
+      "id": "viator-cerro-negro",
+      "destination": "León / Cerro Negro",
+      "placeIds": [
+        "nicaragua-cerro-negro"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official minute-refresh Cerro Negro current-image source, and Viator actively markets Cerro Negro volcano-boarding experiences from León.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/blog/Bucket-List-Experiences-in-Latin-America-According-to-Viator-Travelers/l114459",
+      "publicInventoryEvidence": "Viator's current Latin America feature highlights Cerro Negro volcano boarding and links an active private tour product.",
+      "nextAction": "Search the Viator partner account for a clean León/Cerro Negro destination or attraction link; activate only after exact tracked-link verification."
+    },
+    {
+      "id": "viator-masaya-nicaragua",
+      "destination": "Masaya Volcano / Nicaragua",
+      "placeIds": [
+        "nicaragua-masaya-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has an official refreshed Masaya current-image source and Viator carries Nicaragua day tours that include Masaya Volcano.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/es-VE/Liberia/Costa-Rica/day-trips-d22740-d747",
+      "publicInventoryEvidence": "Current Viator inventory includes full-day Nicaragua itineraries with a Masaya Volcano National Park stop.",
+      "nextAction": "Only activate if the partner account exposes a clean Nicaragua/Masaya destination-level link; do not route ERN through an unrelated Costa Rica landing page."
     }
   ]
 }
