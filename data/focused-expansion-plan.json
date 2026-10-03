@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:40:00Z",
+  "generatedAt": "2026-10-03T12:35:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 225,
+    "currentHealthyDistinctPlaceBaseline": 250,
     "targetRange": [
       200,
       250
     ],
-    "strategy": "Post-200 quality-led expansion: add distinct useful places where geography or visitor value improves ERN; quasi-live LIVE_IMAGE is acceptable for Search/Explore when provider freshness is trustworthy; Watch Earth remains stricter.",
+    "strategy": "250 searchable-place milestone reached. Continue only with quality-led geographic gaps, stronger source families, or replacements; quasi-live remains acceptable for Search/Explore while Watch Earth stays stricter.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -78,11 +78,11 @@
     "currentHealthyLiveImageCount": 125,
     "progressToTarget": {
       "minimumTarget": 200,
-      "current": 225,
+      "current": 250,
       "remainingToMinimum": 0,
       "stretchTarget": 250,
-      "remainingToStretch": 25,
-      "status": "POST_200_QUALITY_LED_EXPANSION"
+      "remainingToStretch": 0,
+      "status": "250_SEARCHABLE_MILESTONE_REACHED_QUALITY_LED_MAINTENANCE"
     },
     "recentExpansionFamilies": [
       "La Réunion — four official tourism/scientific current webcam places",
@@ -175,8 +175,8 @@
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
     },
     "priorityRule": "Prefer exact destination/product fit inside existing active partners before broad generic destination links. Batch owner link generation rather than interrupting one destination at a time.",
-    "tripComDecision": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATUS_CHANGE",
-    "tripComReason": "Owner screenshots confirm Trip.com is visible in Travelpayouts but not yet practically unlocked; ERN should grow qualified traffic first.",
+    "tripComDecision": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "tripComReason": "Owner screenshots confirm Trip.com and other strategic programs are visible in Travelpayouts but not yet practically unlocked; ERN should grow qualified traffic and conversions first.",
     "istanbulDenpasarUnlocked": true,
     "currentCommercialStates": {
       "VERIFIED_LINK_ADDED": 16,
