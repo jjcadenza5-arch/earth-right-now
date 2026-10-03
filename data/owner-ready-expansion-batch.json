@@ -1,9 +1,92 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:55:00Z",
+  "generatedAt": "2026-10-03T04:20:00Z",
   "status": "READY_NOT_REQUESTED",
   "purpose": "One compact owner batch to use only when autonomous work is no longer the limiting factor.",
   "sourceChecks": [
+    {
+      "id": "ala-archa-natural-park",
+      "title": "Ala-Archa Natural Park",
+      "country": "Kyrgyzstan",
+      "url": "https://kg.camera/en/camera/AlaArchaPark",
+      "type": "CURRENT_CAMERA_NETWORK_DIRECT",
+      "businessUnlocks": [
+        "viator-ala-archa-future",
+        "klook-ala-archa-future"
+      ],
+      "instruction": "Open the direct Ala-Archa page and confirm the mountain view updates normally."
+    },
+    {
+      "id": "denpasar-city-live",
+      "title": "Denpasar — Live City Streets",
+      "country": "Indonesia",
+      "url": "https://atcs.denpasarkota.go.id/",
+      "type": "OFFICIAL_CITY_REALTIME_CCTV_INDEX",
+      "businessUnlocks": [
+        "klook-bali-future",
+        "viator-bali-future"
+      ],
+      "instruction": "Open the official Denpasar ATCS live-stream page and choose one visually useful city location; confirm real-time motion."
+    },
+    {
+      "id": "istanbul-bosphorus-live",
+      "title": "Istanbul — Bosphorus / Üsküdar",
+      "country": "Türkiye",
+      "url": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
+      "type": "OFFICIAL_MUNICIPAL_TOURISTIC_CAMERA_INDEX",
+      "businessUnlocks": [
+        "klook-istanbul-future",
+        "viator-istanbul-future"
+      ],
+      "instruction": "Choose one Bosphorus-facing camera (prefer ÜSKÜDAR or SALACAK) and confirm it visibly updates."
+    },
+    {
+      "id": "istanbul-sultanahmet-live",
+      "title": "Istanbul — Sultanahmet",
+      "country": "Türkiye",
+      "url": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
+      "type": "OFFICIAL_MUNICIPAL_TOURISTIC_CAMERA_INDEX",
+      "businessUnlocks": [
+        "klook-istanbul-future",
+        "viator-istanbul-future"
+      ],
+      "instruction": "Open the official Istanbul touristic-camera page, choose SULTANAHMET, and confirm the live stream plays."
+    },
+    {
+      "id": "karakol-ski-base",
+      "title": "Karakol Ski Base — Issyk-Kul",
+      "country": "Kyrgyzstan",
+      "url": "https://kg.camera/en/camera/Karakol_LyzhBaza_25_11_2019_cam1",
+      "type": "CURRENT_CAMERA_NETWORK_DIRECT",
+      "businessUnlocks": [
+        "viator-karakol-future",
+        "viator-issyk-kul-future"
+      ],
+      "instruction": "Open the direct KG Camera Karakol Ski Base page and confirm the lower-lift image/video updates normally."
+    },
+    {
+      "id": "shymbulak-mountain-resort",
+      "title": "Shymbulak — Trans-Ili Alatau",
+      "country": "Kazakhstan",
+      "url": "https://shymbulak.com/live",
+      "type": "OFFICIAL_RESORT_LIVE_CAM_PAGE",
+      "businessUnlocks": [
+        "viator-shymbulak-future",
+        "klook-shymbulak-future"
+      ],
+      "instruction": "Open the official Shymbulak live page and confirm at least one mountain camera visibly updates."
+    },
+    {
+      "id": "bled-lake-tourism",
+      "title": "Bled — Lake & Castle Views",
+      "country": "Slovenia",
+      "url": "https://www.bled.si/en/information/webcam/",
+      "type": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "businessUnlocks": [
+        "viator-bled-future"
+      ],
+      "instruction": "Open the official Bled webcam page and confirm at least one Lake Bled/Straža view visibly updates."
+    },
     {
       "id": "dubrovnik-pile-city",
       "title": "Dubrovnik — Pile",
@@ -16,15 +99,37 @@
       "instruction": "Open the exact official city camera page and confirm the video moves/updates normally."
     },
     {
-      "id": "hualien-shitiping",
-      "title": "Hualien — Shitiping",
-      "country": "Taiwan",
-      "url": "https://www.taiwan.net.tw/m1.aspx?keystring=10015&sNo=0042331",
-      "type": "OFFICIAL_TOURISM_LIVE_INDEX",
+      "id": "everest-khumbu-hotel-view",
+      "title": "Everest & Khumbu — Hotel Everest View",
+      "country": "Nepal",
+      "url": "https://www.geowebcams.com/en/webcam/himalayan-panorama-from-hotel-everest-view",
+      "type": "LIVE_WEBCAM_AGGREGATOR_WITH_OPERATOR_ATTRIBUTION",
       "businessUnlocks": [
-        "viator-hualien-future"
+        "viator-everest-future"
       ],
-      "instruction": "Open the official Hualien-filtered Live Taiwan page and confirm Shitiping visibly updates."
+      "instruction": "Open the Hotel Everest View live page and confirm the image/video is current before ERN promotes it."
+    },
+    {
+      "id": "mauritius-grand-baie",
+      "title": "Grand Baie — Mauritius",
+      "country": "Mauritius",
+      "url": "https://mauritiusnow.com/things-to-do-in-mauritius/",
+      "type": "OFFICIAL_TOURISM_WEBCAM_FAMILY",
+      "businessUnlocks": [
+        "klook-mauritius-future"
+      ],
+      "instruction": "Open the official Mauritius Now page, enter the webcam experience, and confirm the Grand Baie camera is present and visibly current."
+    },
+    {
+      "id": "khumbu-glacier-nco-p",
+      "title": "Khumbu Glacier — Everest Region",
+      "country": "Nepal",
+      "url": "https://www.worldcamera.net/en/webcams/asia/nepal/246-mteverest-area-khumbu-glacier",
+      "type": "SCIENTIFIC_LIVE_IMAGE_PAGE",
+      "businessUnlocks": [
+        "viator-everest-future"
+      ],
+      "instruction": "Open the Khumbu Glacier camera and confirm the current image refreshes or has a reliable current timestamp."
     },
     {
       "id": "malta-live-cams",
@@ -38,154 +143,113 @@
       "instruction": "Open the official Live Malta Cams page and confirm at least one destination camera visibly updates before ERN promotes any specific Malta place."
     },
     {
-      "id": "sanparks-olifants",
-      "title": "Olifants — Kruger National Park",
-      "country": "South Africa",
-      "url": "https://www.sanparks.org/travel/webcams/video/olifants",
-      "type": "OFFICIAL_PARK_LIVE_VIDEO_PAGE",
+      "id": "mykonos-new-port",
+      "title": "Mykonos — New Port Live",
+      "country": "Greece",
+      "url": "https://mykonosports.gr/en/webcams/",
+      "type": "OFFICIAL_MUNICIPAL_LIVE_STREAM_PAGE",
       "businessUnlocks": [
-        "viator-kruger-future"
+        "viator-mykonos-future"
       ],
-      "instruction": "Open the official Olifants video page and confirm the video is actively updating."
+      "instruction": "Open the municipal Mykonos live-stream page and confirm at least one New Port camera moves normally."
     },
     {
-      "id": "prague-old-town-hall",
-      "title": "Prague — Old Town Hall",
-      "country": "Czech Republic",
-      "url": "https://www.youtube.com/watch?v=Agep3Ts7hpI",
-      "type": "YOUTUBE_LIVE_TARGET",
+      "id": "panama-canal-agua-clara-locks",
+      "title": "Panama Canal — Agua Clara Locks",
+      "country": "Panama",
+      "url": "https://www.pancanal.com/en/",
+      "type": "OFFICIAL_CANAL_REALTIME_CAMERA_INDEX",
       "businessUnlocks": [
-        "tiqets-prague-future"
+        "viator-panama-canal-future"
       ],
-      "instruction": "Open this exact target directly; no hunting through the Prague page is needed."
+      "instruction": "Choose Agua Clara Locks on the official Panama Canal camera service and confirm real-time ship/lock activity."
     },
     {
-      "id": "prague-petrin-tower",
-      "title": "Prague — Petřín Lookout Tower",
-      "country": "Czech Republic",
-      "url": "https://pvp.panomax.com/",
-      "type": "PANOMAX_360",
+      "id": "panama-canal-gatun-locks",
+      "title": "Panama Canal — Gatún Locks",
+      "country": "Panama",
+      "url": "https://www.pancanal.com/en/",
+      "type": "OFFICIAL_CANAL_REALTIME_CAMERA_INDEX",
       "businessUnlocks": [
-        "tiqets-prague-future"
+        "viator-panama-canal-future"
       ],
-      "instruction": "Open this exact target directly; no hunting through the Prague page is needed."
+      "instruction": "Open the official Panama Canal web-camera area, choose Gatún Locks, and confirm the view updates in real time."
     },
     {
-      "id": "salzburg-mirabell-old-town",
-      "title": "Salzburg — Mirabell Gardens & Old Town",
-      "country": "Austria",
-      "url": "https://www.salzburg.info/en/travel-info/webcam",
-      "type": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "id": "panama-canal-miraflores-locks",
+      "title": "Panama Canal — Miraflores Locks",
+      "country": "Panama",
+      "url": "https://www.pancanal.com/en/",
+      "type": "OFFICIAL_CANAL_REALTIME_CAMERA_INDEX",
       "businessUnlocks": [
-        "tiqets-salzburg-future"
+        "viator-panama-canal-future"
       ],
-      "instruction": "Open the official Salzburg webcam page and confirm the Mirabell/Old Town image or video is visibly current."
-    },
-    {
-      "id": "sanparks-satara",
-      "title": "Satara — Kruger National Park",
-      "country": "South Africa",
-      "url": "https://www.sanparks.org/travel/webcams/video/satara",
-      "type": "OFFICIAL_PARK_LIVE_VIDEO_PAGE",
-      "businessUnlocks": [
-        "viator-kruger-future"
-      ],
-      "instruction": "Open the official Satara video page and confirm the wildlife video is actively updating."
-    },
-    {
-      "id": "taichung-techi-reservoir",
-      "title": "Taichung — Techi Reservoir",
-      "country": "Taiwan",
-      "url": "https://www.taiwan.net.tw/m1.aspx?keystring=10019&sNo=0042331",
-      "type": "OFFICIAL_TOURISM_LIVE_INDEX",
-      "businessUnlocks": [
-        "klook-taichung-future"
-      ],
-      "instruction": "Open the official Taichung-filtered Live Taiwan page and confirm Techi Reservoir visibly updates."
-    },
-    {
-      "id": "tainan-erliao-sunrise",
-      "title": "Tainan — Erliao Sunrise",
-      "country": "Taiwan",
-      "url": "https://www.taiwan.net.tw/m1.aspx?keystring=10021&sNo=0042331",
-      "type": "OFFICIAL_TOURISM_LIVE_INDEX",
-      "businessUnlocks": [
-        "klook-tainan-future"
-      ],
-      "instruction": "Open the official Tainan-filtered Live Taiwan page and confirm Erliao Viewing Platform visibly updates."
-    },
-    {
-      "id": "taipei-dajia-riverside-park",
-      "title": "Taipei — Dajia Riverside Park",
-      "country": "Taiwan",
-      "url": "https://www.taiwan.net.tw/m1.aspx?keystring=63&sNo=0042331",
-      "type": "OFFICIAL_TOURISM_LIVE_INDEX",
-      "businessUnlocks": [
-        "klook-taipei-future"
-      ],
-      "instruction": "Open the official Taipei-filtered Live Taiwan page and confirm Dajia Riverside Park visibly updates."
-    },
-    {
-      "id": "ushuaia-harbour-municipal",
-      "title": "Ushuaia — Harbour & Beagle Channel",
-      "country": "Argentina",
-      "url": "https://www.youtube.com/watch?v=q9g51I3NyJQ",
-      "type": "MUNICIPAL_PUBLISHED_YOUTUBE_TARGET",
-      "businessUnlocks": [
-        "viator-ushuaia-future"
-      ],
-      "instruction": "Open the exact municipal-published YouTube target and confirm it is still a current live harbour stream, not an archived recording."
-    },
-    {
-      "id": "mauritius-grand-baie",
-      "title": "Grand Baie — Mauritius",
-      "country": "Mauritius",
-      "url": "https://mauritiusnow.com/things-to-do-in-mauritius/",
-      "type": "OFFICIAL_TOURISM_WEBCAM_FAMILY",
-      "businessUnlocks": [
-        "klook-mauritius-future"
-      ],
-      "instruction": "Enter the official Mauritius Now webcam experience and confirm the Grand Baie camera is present and visibly current. If the webcam link is temporarily broken, report that rather than searching third-party mirrors."
-    },
-    {
-      "id": "st-maarten-maho-beach",
-      "title": "Maho Beach — St. Maarten",
-      "country": "Sint Maarten",
-      "url": "https://www.visitstmaarten.com/your-top-three-caribbean-live-webcams-2/",
-      "type": "OFFICIAL_TOURISM_ENDORSED_LIVE_CAMERA",
-      "businessUnlocks": [],
-      "instruction": "Open the official Visit St. Maarten webcam article and confirm the Maho Beach camera is currently playing live. Do not check the other St. Maarten cameras unless this one works."
-    },
-    {
-      "id": "wanaka-roys-peak-town-view",
-      "title": "Wānaka — Roys Peak Town View",
-      "country": "New Zealand",
-      "url": "https://www.wanaka.co.nz/wanaka-webcams/",
-      "type": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "klook-wanaka-future"
-      ],
-      "instruction": "Open the official Wānaka webcams page and confirm the Roys Peak view toward Wānaka is current. If it works, the remaining Wānaka views can be checked in the same session."
-    },
-    {
-      "id": "rotorua-skyline-city-lake",
-      "title": "Rotorua — City & Lake from Skyline",
-      "country": "New Zealand",
-      "url": "https://conference.rotoruanz.com/en-NZ/visit/Weather-Webcams",
-      "type": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [
-        "viator-rotorua-future"
-      ],
-      "instruction": "Open the official Rotorua webcams page and confirm the Skyline Rotorua city/lake view is visibly current."
+      "instruction": "Open the Panama Canal Authority Web Cameras section, choose Miraflores Locks, and confirm ships/locks are updating in real time."
     }
   ],
   "exactAffiliateLinkActions": [
     {
-      "id": "tiqets-vienna",
-      "destination": "Vienna",
+      "id": "viator-addo",
+      "destination": "Addo Elephant National Park",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate one Addo-specific Viator partner link; keep safari planning downstream from wildlife discovery."
+    },
+    {
+      "id": "viator-aruba",
+      "destination": "Aruba / Druif Beach",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate one Aruba destination-level Viator partner link and manually verify it before public activation; keep the offer downstream from Earth discovery."
+    },
+    {
+      "id": "viator-bergen",
+      "destination": "Bergen",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate one Bergen destination-level Viator partner link and manually verify it."
+    },
+    {
+      "id": "viator-boulders-beach",
+      "destination": "Boulders Beach / Cape Peninsula",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate a Boulders Beach or tightly scoped Cape Peninsula Viator partner link and manually verify it before public activation; avoid simply duplicating the generic Cape Town offer."
+    },
+    {
+      "id": "viator-cancun",
+      "destination": "Cancún",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate and manually verify one Cancún Viator destination link before any public placement."
+    },
+    {
+      "id": "viator-chamonix",
+      "destination": "Chamonix / Mont Blanc",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate one Chamonix destination-level Viator link and verify it manually."
+    },
+    {
+      "id": "viator-flam",
+      "destination": "Flåm / Aurlandsfjord",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate one Flåm destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "tiqets-georgia-aquarium",
+      "destination": "Georgia Aquarium / Atlanta",
       "partner": "tiqets",
       "intent": "culture",
-      "nextAction": "Generate one Vienna destination-level Tiqets tracked link in Travelpayouts only after owner verification; keep commercial placement downstream from discovery."
+      "nextAction": "Generate one Georgia Aquarium Tiqets tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "viator-kilauea",
+      "destination": "Hawaiʻi Volcanoes National Park / Kīlauea",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate one Big Island / Hawaiʻi Volcanoes National Park partner link that resolves cleanly to Kīlauea-relevant inventory; verify it manually before public activation."
     },
     {
       "id": "viator-helsinki",
@@ -202,25 +266,11 @@
       "nextAction": "Generate and manually verify one destination-level Lucerne Viator partner link before public offer activation."
     },
     {
-      "id": "viator-tbilisi",
-      "destination": "Tbilisi",
+      "id": "viator-san-diego-zoo",
+      "destination": "San Diego / San Diego Zoo",
       "partner": "viator",
       "intent": "activities",
-      "nextAction": "Generate and manually verify one Tbilisi Viator destination link; keep planning downstream from discovery."
-    },
-    {
-      "id": "viator-cancun",
-      "destination": "Cancún",
-      "partner": "viator",
-      "intent": "activities",
-      "nextAction": "Generate and manually verify one Cancún Viator destination link before any public placement."
-    },
-    {
-      "id": "tiqets-georgia-aquarium",
-      "destination": "Georgia Aquarium / Atlanta",
-      "partner": "tiqets",
-      "intent": "culture",
-      "nextAction": "Generate one Georgia Aquarium Tiqets tracked link in Travelpayouts and manually verify it before public activation."
+      "nextAction": "Generate one San Diego destination or Zoo-specific Viator partner link and verify it manually; avoid duplicate density if Tiqets is later activated for the same place."
     },
     {
       "id": "tiqets-san-diego-zoo",
@@ -230,39 +280,11 @@
       "nextAction": "Generate one San Diego Zoo Tiqets tracked link in Travelpayouts and manually verify it before public activation."
     },
     {
-      "id": "viator-zermatt",
-      "destination": "Zermatt / Matterhorn",
-      "partner": "viator",
-      "intent": "activities",
-      "nextAction": "Generate one Zermatt destination-level Viator partner link and manually verify it before public activation."
-    },
-    {
-      "id": "viator-san-diego-zoo",
-      "destination": "San Diego / San Diego Zoo",
-      "partner": "viator",
-      "intent": "activities",
-      "nextAction": "Generate one San Diego destination or Zoo-specific Viator partner link and verify it manually; avoid duplicate density if Tiqets is later activated for the same place."
-    },
-    {
-      "id": "viator-aruba",
-      "destination": "Aruba / Druif Beach",
-      "partner": "viator",
-      "intent": "activities",
-      "nextAction": "Generate one Aruba destination-level Viator partner link and manually verify it before public activation; keep the offer downstream from Earth discovery."
-    },
-    {
-      "id": "viator-boulders-beach",
-      "destination": "Boulders Beach / Cape Peninsula",
-      "partner": "viator",
-      "intent": "activities",
-      "nextAction": "Generate a Boulders Beach or tightly scoped Cape Peninsula Viator partner link and manually verify it before public activation; avoid duplicating the generic Cape Town offer."
-    },
-    {
       "id": "viator-st-maarten",
       "destination": "St. Maarten / Philipsburg",
       "partner": "viator",
       "intent": "activities",
-      "nextAction": "Generate one St. Maarten destination-level Viator partner link and verify it manually; reuse it for future verified St. Maarten cameras instead of creating duplicates."
+      "nextAction": "Generate one St. Maarten destination-level Viator partner link and verify it manually. If Maho, Great Bay or Simpson Bay cameras are later promoted, reuse the same city/island-level link rather than creating duplicate commercial density."
     }
   ],
   "rules": {
