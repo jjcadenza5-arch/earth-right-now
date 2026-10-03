@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:32:00Z",
+  "generatedAt": "2026-10-03T11:38:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 212,
@@ -159,25 +159,25 @@
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 16,
-    "exactLinkQueueCount": 93,
-    "sourceGatedQueueCount": 11,
+    "exactLinkQueueCount": 101,
+    "sourceGatedQueueCount": 7,
     "sourceGapBlockedCount": 1,
     "sourceGatedOpportunityCount": 31,
     "quasiLiveCommercialRule": "A healthy quasi-live searchable place may unlock downstream travel planning, but commercial value never changes truth/currentness.",
     "currentOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 93,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 11,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 101,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 7,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
     },
-    "currentOpportunityCount": 121,
+    "currentOpportunityCount": 125,
     "priorityRule": "Prefer exact destination/product fit inside existing active partners before broad generic destination links. Batch owner link generation rather than interrupting one destination at a time.",
     "tripComDecision": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATUS_CHANGE",
     "tripComReason": "Owner screenshots confirm Trip.com is visible in Travelpayouts but not yet practically unlocked; ERN should grow qualified traffic first.",
     "istanbulDenpasarUnlocked": true,
     "currentCommercialStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 98,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 101,
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 7,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
     },
@@ -195,7 +195,8 @@
       "12go",
       "discovercars"
     ],
-    "unlockRule": "Do not repeatedly recheck locked programs. Recheck after material traffic/conversion growth or explicit Travelpayouts status change."
+    "unlockRule": "Locked Travelpayouts programs are traffic-led future targets; do not repeatedly recheck. Use active partners and currently link-generation-capable utilities first.",
+    "availableProgramExpansionPlan": "data/available-program-expansion-plan.json"
   },
   "safeguards": {
     "automaticPlacement": false,
