@@ -3078,6 +3078,62 @@
       "priority": "P3",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "No urgent owner action; revisit when runtime headroom improves."
+    },
+    {
+      "id": "research-aitutaki-lagoon-current",
+      "title": "Aitutaki Lagoon — Piraki",
+      "country": "Cook Islands",
+      "region": "Aitutaki",
+      "provider": "Cook Islands Airports Authority",
+      "sourcePage": "https://cookislandsairports.com/webcam-pir1/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedPlaceId": "aitutaki-lagoon",
+      "promotedAt": "2026-10-03T15:30:00Z",
+      "evidence": "Official page labels a latest/current Aitutaki Lagoon image and recent time-of-day captures.",
+      "verification": "Official current/latest-image page suitable for searchable LIVE_IMAGE semantics; not eligible for Watch Earth."
+    },
+    {
+      "id": "research-aitutaki-tamanu-beach-current",
+      "title": "Aitutaki — Tamanu Beach",
+      "country": "Cook Islands",
+      "region": "Aitutaki",
+      "provider": "Cook Islands Airports Authority / Tamanu Beach Resort",
+      "sourcePage": "https://cookislandsairports.com/webcam-ait/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedPlaceId": "aitutaki-tamanu-beach",
+      "promotedAt": "2026-10-03T15:30:00Z",
+      "evidence": "Official page labels the most recent/current Tamanu Beach image plus recent daypart captures.",
+      "verification": "Official current/latest-image page suitable for searchable LIVE_IMAGE semantics; not eligible for Watch Earth."
+    },
+    {
+      "id": "research-rarotonga-avaavaroa-current",
+      "title": "Rarotonga — Avaavaroa Beach",
+      "country": "Cook Islands",
+      "region": "Rarotonga",
+      "provider": "Cook Islands Airports Authority",
+      "sourcePage": "https://cookislandsairports.com/webcam-ava/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedPlaceId": "rarotonga-avaavaroa-beach",
+      "promotedAt": "2026-10-03T15:30:00Z",
+      "evidence": "Official page publishes current/recent daylight images for Avaavaroa Beach.",
+      "verification": "Official current/latest-image page suitable for searchable LIVE_IMAGE semantics; not eligible for Watch Earth."
+    },
+    {
+      "id": "research-rarotonga-airport-current",
+      "title": "Rarotonga International Airport — Current Ramp View",
+      "country": "Cook Islands",
+      "region": "Rarotonga",
+      "provider": "Cook Islands Airports Authority",
+      "sourcePage": "https://cookislandsairports.com/webcam-rar/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedPlaceId": "rarotonga-international-airport",
+      "promotedAt": "2026-10-03T15:30:00Z",
+      "evidence": "Official page labels the latest/current Rarotonga International Airport image.",
+      "verification": "Official current/latest-image page suitable for searchable LIVE_IMAGE semantics; not eligible for Watch Earth."
     }
   ],
   "notes": [
@@ -3137,7 +3193,8 @@
     "2026-10-03 13:45 UTC: ERN reached the 275 healthy-searchable soft stretch target using genuinely distinct destinations/POIs rather than duplicate views; Dresden/Radebeul, Heidelberg Königstuhl, Zandvoort Circuit and Farchant completed the batch.",
     "2026-10-03 Aruba quality-gap research added Palm Beach and Eagle Beach as two real-place candidates from the official Aruba Tourism Authority live-webcam index. Multiple resort cameras are deliberately grouped by beach/place to avoid artificial destination inflation.",
     "2026-10-03 Taiwan/New Zealand expansion activated eight high-value places while twelve additional official quasi-live candidates were retained in research to preserve the strict 300 KB runtime budget.",
-    "2026-10-03 quality swap: Gaomei Wetland promoted into searchable runtime; Foxton Beach moved to research-only to hold catalog size constant while improving visitor/business utility."
+    "2026-10-03 quality swap: Gaomei Wetland promoted into searchable runtime; Foxton Beach moved to research-only to hold catalog size constant while improving visitor/business utility.",
+    "2026-10-03 Cook Islands batch: Aitutaki Lagoon, Tamanu Beach, Avaavaroa Beach and Rarotonga Airport promoted as searchable quasi-live LIVE_IMAGE places from official Cook Islands Airports current-image pages."
   ],
   "researchGaps": [
     {
