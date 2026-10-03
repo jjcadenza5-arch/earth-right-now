@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T08:40:00Z",
+  "generatedAt": "2026-10-03T08:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -368,21 +368,6 @@
       "nextAction": "Do not generate or publish a tracked link until at least one Prague camera target is promoted to the live source registry; then create one city-level Tiqets link rather than duplicate per-camera commercial density."
     },
     {
-      "id": "tiqets-salzburg-future",
-      "destination": "Salzburg",
-      "placeIds": [
-        "salzburg-mirabell-old-town"
-      ],
-      "partnerCandidate": "tiqets",
-      "intent": "culture",
-      "priority": "P1",
-      "reason": "Salzburg's official Mirabell/Old Town camera candidate aligns closely with Tiqets Salzburg inventory including Salzburg Card, Hohensalzburg-related attractions and Mirabell concerts.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/salzburg-attractions-c60346/",
-      "publicInventoryEvidence": "Tiqets currently lists Salzburg attraction inventory including the Salzburg Card and Mirabell Palace concert combinations.",
-      "nextAction": "After Salzburg camera playback is owner-confirmed and promoted, generate one destination-level Tiqets tracked link and verify it before public activation."
-    },
-    {
       "id": "viator-zermatt",
       "destination": "Zermatt / Matterhorn",
       "placeIds": [
@@ -430,21 +415,6 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Vancouver/d616-ttd",
       "publicInventoryEvidence": "Current Viator Vancouver inventory contains multiple Whistler + Sea-to-Sky experiences; exact Whistler destination-link suitability still requires account search.",
       "nextAction": "Only activate if the Viator partner tools expose a clean Whistler destination-level link; do not route visitors through a generic Vancouver page."
-    },
-    {
-      "id": "tiqets-tallinn-future",
-      "destination": "Tallinn / TV Tower",
-      "placeIds": [
-        "tallinn-tv-tower-panorama"
-      ],
-      "partnerCandidate": "tiqets",
-      "intent": "culture",
-      "priority": "P1",
-      "reason": "The Tallinn TV Tower camera candidate aligns unusually well with current Tiqets inventory for Tallinn TV Tower and the Tallinn Card.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/tallinn-attraction-passes-l215373/",
-      "publicInventoryEvidence": "Tiqets currently sells Tallinn Card inventory and combinations that explicitly include Tallinn TV Tower.",
-      "nextAction": "After the Tallinn TV Tower live panorama is human-confirmed and promoted, generate one Tallinn/Tower Tiqets tracked link and verify it before public activation."
     },
     {
       "id": "tiqets-malta-future",
@@ -667,40 +637,6 @@
       "nextAction": "Generate one St. Maarten destination-level Viator partner link and verify it manually. If Maho, Great Bay or Simpson Bay cameras are later promoted, reuse the same city/island-level link rather than creating duplicate commercial density."
     },
     {
-      "id": "klook-wanaka-future",
-      "destination": "Wānaka",
-      "placeIds": [
-        "wanaka-roys-peak-town-view",
-        "wanaka-lake-view-roys-peak",
-        "wanaka-mt-aspiring-view",
-        "wanaka-lake-hawea-view"
-      ],
-      "partnerCandidate": "klook",
-      "intent": "activities",
-      "priority": "P1",
-      "reason": "Klook currently has active Wānaka outdoor, scenic-flight, skydive, biking and tour inventory, and Klook is already an active ERN relationship.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "publicInventoryEvidenceUrl": "https://www.klook.com/destination/c397-wanaka/1024-outdoor-and-sports-activities/",
-      "publicInventoryEvidence": "Current Klook Wānaka inventory includes tandem skydiving, biking, paragliding, scenic flights, lake/nature tours and other outdoor activities.",
-      "nextAction": "After at least one Wānaka webcam is owner-confirmed and promoted, generate one Wānaka destination-level Klook tracked link and manually verify it."
-    },
-    {
-      "id": "viator-rotorua-future",
-      "destination": "Rotorua",
-      "placeIds": [
-        "rotorua-skyline-city-lake",
-        "rotorua-museum-gardens-lake"
-      ],
-      "partnerCandidate": "viator",
-      "intent": "activities",
-      "priority": "P1",
-      "reason": "Viator currently has substantial Rotorua nature, geothermal, Māori culture and adventure inventory, closely matching the official city/lake webcam family.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Rotorua/d395-ttd",
-      "publicInventoryEvidence": "Current Viator Rotorua inventory includes 100+ results spanning Māori cultural experiences, geothermal attractions, rafting, nature and sightseeing.",
-      "nextAction": "After at least one Rotorua official webcam is promoted, generate one Rotorua destination-level Viator partner link and manually verify it before public activation."
-    },
-    {
       "id": "viator-pamir-future",
       "destination": "Pamir Mountains / Pamir Highway",
       "placeIds": [
@@ -863,21 +799,6 @@
       "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory."
     },
     {
-      "id": "viator-bled-future",
-      "destination": "Bled / Lake Bled",
-      "placeIds": [
-        "bled-lake-tourism"
-      ],
-      "partnerCandidate": "viator",
-      "intent": "activities",
-      "priority": "P1",
-      "reason": "A verified Lake Bled live view would connect naturally to strong current Viator inventory for Bled, Vintgar Gorge, Triglav National Park and castle/island visits.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Bled/d22044-ttd",
-      "publicInventoryEvidence": "Viator currently lists dozens of Bled tours including Lake Bled, Vintgar Gorge, Triglav National Park, rafting and castle/island products.",
-      "nextAction": "After Bled playback is confirmed and promoted, generate one Bled destination-level Viator tracked link and verify it manually."
-    },
-    {
       "id": "viator-mykonos-future",
       "destination": "Mykonos",
       "placeIds": [
@@ -912,19 +833,19 @@
       "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory."
     },
     {
-      "id": "viator-brasov-future",
+      "id": "viator-brasov-poiana",
       "destination": "Brașov / Poiana Brașov",
       "placeIds": [
-        "poiana-brasov-live"
+        "poiana-brasov"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "A verified Poiana Brașov mountain view can naturally lead to Brașov-region tours, castles, wildlife and mountain excursions.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "reason": "ERN now has a healthy Poiana Brașov searchable place. Viator currently lists multiple Brașov/Poiana Brașov and Transylvania day tours, so source verification is no longer the blocker.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Brasov/d23067-ttd",
-      "publicInventoryEvidence": "Viator currently lists 200+ Brașov-region experiences including Bran/Peleș trips, wildlife and mountain-road excursions.",
-      "nextAction": "After Poiana Brașov playback is confirmed and promoted, generate one appropriate Brașov-region Viator link; avoid implying the live camera itself is in central Brașov."
+      "publicInventoryEvidence": "Current Viator Brașov inventory includes tours that explicitly visit Poiana Brașov as well as broader Transylvania and mountain experiences.",
+      "nextAction": "Generate one Brașov destination-level Viator tracked link and manually verify it before public activation."
     },
     {
       "id": "viator-flam",
@@ -1963,6 +1884,36 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Kihei/d51007-ttd",
       "publicInventoryEvidence": "Viator currently lists dozens of Kihei/Maui tours and excursions for 2026.",
       "nextAction": "Generate one Maui or Kihei destination-level Viator tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-orpen-kruger",
+      "destination": "Orpen / Kruger National Park",
+      "placeIds": [
+        "orpen-kruger"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Orpen/Kruger live place and Viator currently lists multiple Kruger safaris that use Orpen Gate or explicitly include the Orpen region.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Kruger-National-Park/d776-ttd",
+      "publicInventoryEvidence": "Current Viator Kruger inventory includes full-day safaris from Hoedspruit/Orpen Gate and multi-day itineraries covering Orpen.",
+      "nextAction": "Generate one Kruger/Orpen destination-level Viator tracked link and verify it manually before public activation."
+    },
+    {
+      "id": "viator-hveravellir",
+      "destination": "Hveravellir / Icelandic Highlands",
+      "placeIds": [
+        "iceland-hveravellir"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN has a healthy Hveravellir current-image place and Viator currently sells a dedicated Hveravellir Highlands overnight tour from Reykjavík.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Reykjavik/Highland-Adventure-Overnight-Tour-in-Hveravellir-Nature-Reserve/d905-2970P91",
+      "publicInventoryEvidence": "Viator currently lists a multi-day Hveravellir Nature Reserve experience including highlands travel, geothermal bathing and accommodation.",
+      "nextAction": "If the ERN Viator partner account exposes a clean Hveravellir or Icelandic Highlands link, generate and verify one before public activation."
     }
   ]
 }
