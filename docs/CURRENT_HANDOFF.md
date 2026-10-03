@@ -348,7 +348,7 @@ Philippines / volcano quasi-live checkpoint — 2026-10-03 06:07 UTC:
 Post-200 searchable-place checkpoint — 2026-10-03 09:10 UTC:
 - Production source registry now contains 208 source records representing 200 healthy distinct searchable places across 50 countries and 111 providers.
 - Searchable-place stretch target of 200 is reached and production-deployed. Expansion strategy shifts from raw count growth to geography, freshness and source-quality upgrades.
-- Truth mix: 13 LIVE_VIDEO, 70 EXTERNAL_LIVE, 125 LIVE_IMAGE. All LIVE_IMAGE records now carry explicit Quasi-Live categorization and currentness timestamps; Watch Earth remains ineligible for quasi-live sources.
+- Truth mix: 13 LIVE_VIDEO, 70 EXTERNAL_LIVE, 125 LIVE_IMAGE. All LIVE_IMAGE records carry currentness timestamps and use the LIVE_IMAGE truth field as the canonical quasi-live/current-image label; Watch Earth remains ineligible for quasi-live sources.
 - Featured-camera editorial rotation currently resolves entirely to healthy sources and remains commercial-neutral.
 - Commercial opportunity registry now contains 121 opportunities: 16 verified-link, 93 exact-link/account-search, 11 source-gated and 1 unresolved source-gap item.
 - Newly queued healthy-place business paths include Kenting/Klook, Green Island/Klook, St. John's/Viator, Maui/Kihei/Viator, Orpen-Kruger/Viator, Hveravellir/Viator and a regionalized Arequipa/Colca/volcano Viator path.
@@ -356,3 +356,14 @@ Post-200 searchable-place checkpoint — 2026-10-03 09:10 UTC:
 - Brașov/Poiana Brașov was upgraded from source-gated to exact-link-ready research because a healthy LIVE_IMAGE place now exists.
 - data/owner-action-queue.json now bundles future human camera checks and exact tracked-link actions; owner interruption remains dormant until autonomous work is actually exhausted.
 - Existing-partner-first, no paid ranking, no automatic placement/rewriting and no unverified live promotion rules remain unchanged.
+
+
+Business expansion checkpoint — 2026-10-03 09:20 UTC:
+- Searchable-place stretch target remains achieved at 200 healthy distinct places across 50 countries and 111 providers.
+- Business registry now holds 121 explicit opportunities: 16 verified-link, 93 exact-link/account-search, 11 source-gated and 1 source-gap-blocked.
+- Added exact-link research paths for Kenting/Klook, Green Island/Klook, St. John's/Viator, Maui-Kihei/Viator, Orpen-Kruger/Viator and Hveravellir/Viator.
+- Arequipa/Colca volcano coverage was consolidated into one regional Viator path spanning Misti, Sabancaya, Coropuna and Chachani instead of multiplying duplicate affiliate placements.
+- Removed stale future-gate duplicates for Salzburg, Tallinn, Wānaka, Rotorua and Bled where canonical healthy-place exact-link records already exist.
+- Poiana Brașov is now exact-link-ready rather than source-gated because its healthy LIVE_IMAGE record is already in production.
+- A dormant owner-action queue bundles future camera checks and exact tracked-link generation; no owner interruption is needed yet.
+- Quasi-live truth is represented by LIVE_IMAGE rather than repeated category tags to preserve ERN's strict production-size ceiling.
