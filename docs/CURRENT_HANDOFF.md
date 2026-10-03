@@ -244,3 +244,13 @@ Verified-offer registry reconciliation — 2026-10-03 04:20 UTC:
 - Synced verified coverage for Auckland Viaduct Harbour, New York Harbor, Coogee/Randwick (Sydney) and Waikiki Beach from existing verified tracked offers.
 - Verified-link opportunity count is now 16; exact-link queue 27; source-gated 37; source-gap-blocked 1.
 - Commercial matrix was rebuilt after synchronization, leaving only genuinely uncovered healthy places for future research.
+
+
+Quasi-live searchable policy — 2026-10-03:
+- Owner explicitly approved frequently refreshed webcams, updated cameras and recent provider-published pictures as valid ERN Search/Explore sources when live video is unavailable.
+- Truth remains explicit: these are LIVE_IMAGE/current-monitoring or recent-image sources, never mislabeled LIVE VIDEO.
+- Watch Earth remains stricter. Quasi-live additions default to featuredHold/watchHold unless separately reviewed for the featured experience.
+- First autonomous quasi-live promotion batch added 9 distinct searchable places: Casey, Davis, Mawson, Macquarie Island, Poás, Turrialba, Irazú, Rincón de la Vieja and Cotopaxi.
+- Healthy/searchable baseline therefore moves from 91 to 100 distinct places.
+- Related business gates cleared for Poás, Rincón de la Vieja and Cotopaxi; Irazú and Turrialba Viator research was added. Exact tracked links remain owner/account-side and manually verified.
+- Pamir remains deferred; no weak substitute is required now that quasi-live is an accepted future search lane.
