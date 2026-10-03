@@ -426,3 +426,16 @@ Travelpayouts three-state model / traction checkpoint — 2026-10-03:
 - data/business-growth-signals.json defines when ERN should revisit traffic-gated programs using aggregate search/place/travel-option behavior and partner-confirmed conversions; no unlock threshold is invented.
 - Locked-program strategy remains traffic-led; account-visible catalog entries are not treated as partnerships.
 - Current priority utility programs remain Airalo, Radical Storage, Go City, Kiwitaxi and Aviasales.
+
+
+Validated 202-place / traffic-led commercial checkpoint — 2026-10-03 10:54 UTC:
+- Full Pages release and Operations checks both passed after source-catalog compaction and affiliate-state modeling.
+- Current searchable baseline: 202 healthy distinct places from 210 source records across 52 countries and 113 providers.
+- Runtime source catalog keeps the provenance fields required by release contracts: rightsBasis and freshnessEvidence. Bulk coordinate/editorial provenance remains in data/source-evidence.json. Runtime catalog remains under the strict performance budget.
+- Source maintenance queue has zero overdue sources after official Kaikōura revalidation.
+- Affiliate platform model now cleanly separates RESEARCH_CANDIDATE, LINK_GENERATION_AVAILABLE, and ACTIVE_OPERATOR_CONFIRMED.
+- Travelpayouts inventory snapshot: 23 account-side link-tool programs, 19 traffic-gated/research programs, 2 fully active platform-registry records. This is separate from the four established destination affiliate partner relationships used by ERN.
+- Traffic-led unlock strategy is canonical. Locked programs such as Trip.com / Hotels.com / Agoda / Expedia are future targets, not current owner tasks.
+- Priority account-side utility layer remains Airalo, Radical Storage, Go City, Kiwitaxi and Aviasales, all exact-link/manual-verification gated and post-discovery only.
+- Post-200 content strategy is quality-led: protect freshness, upgrade quasi-live destinations to stronger live sources when possible, and add places mainly for geographic/provider diversity or real visitor utility.
+- All ranking independence, no-auto-placement, no-auto-rewrite and public-feature gates remain unchanged.
