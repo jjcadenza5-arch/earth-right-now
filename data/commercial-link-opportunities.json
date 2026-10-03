@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:42:00Z",
+  "generatedAt": "2026-10-03T03:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -636,6 +636,40 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Philipsburg/Small-Cultural-Group-Tours/d5627-252077P2",
       "publicInventoryEvidence": "Current Viator St. Maarten sightseeing explicitly passes Little Bay Beach and covers Philipsburg, Maho, Orient Bay and other island highlights.",
       "nextAction": "Generate one St. Maarten destination-level Viator partner link and verify it manually. If Maho, Great Bay or Simpson Bay cameras are later promoted, reuse the same city/island-level link rather than creating duplicate commercial density."
+    },
+    {
+      "id": "klook-wanaka-future",
+      "destination": "Wānaka",
+      "placeIds": [
+        "wanaka-roys-peak-town-view",
+        "wanaka-lake-view-roys-peak",
+        "wanaka-mt-aspiring-view",
+        "wanaka-lake-hawea-view"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Klook currently has active Wānaka outdoor, scenic-flight, skydive, biking and tour inventory, and Klook is already an active ERN relationship.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/destination/c397-wanaka/1024-outdoor-and-sports-activities/",
+      "publicInventoryEvidence": "Current Klook Wānaka inventory includes tandem skydiving, biking, paragliding, scenic flights, lake/nature tours and other outdoor activities.",
+      "nextAction": "After at least one Wānaka webcam is owner-confirmed and promoted, generate one Wānaka destination-level Klook tracked link and manually verify it."
+    },
+    {
+      "id": "viator-rotorua-future",
+      "destination": "Rotorua",
+      "placeIds": [
+        "rotorua-skyline-city-lake",
+        "rotorua-museum-gardens-lake"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Viator currently has substantial Rotorua nature, geothermal, Māori culture and adventure inventory, closely matching the official city/lake webcam family.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Rotorua/d395-ttd",
+      "publicInventoryEvidence": "Current Viator Rotorua inventory includes 100+ results spanning Māori cultural experiences, geothermal attractions, rafting, nature and sightseeing.",
+      "nextAction": "After at least one Rotorua official webcam is promoted, generate one Rotorua destination-level Viator partner link and manually verify it before public activation."
     }
   ]
 }
