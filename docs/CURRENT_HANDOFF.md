@@ -636,3 +636,11 @@ Island quality checkpoint — 2026-10-03 16:05 UTC:
 - New business paths: Taipingshan/Klook, Alishan-region/Klook, Taoyuan Daxi-Dongyanshan/KKday and Hawke's Bay/Viator. Existing Taiwan North Coast/Klook path was extended to Baisha Bay, Laomei Green Reef and Yinghanling instead of creating duplicate commercial density.
 - Trip.com remains the P1 future Travelpayouts unlock, but owner screenshots show it visible-not-unlocked. Do not repeatedly recheck; wait for material traffic/conversion growth or an explicit platform status change.
 - ERN mode now shifts from raw scale growth to quality-first searchable expansion, stronger true-live upgrades, freshness/provider diversity and conversion of the best existing commercial research into verified exact links.
+
+
+302-place Aruba quality checkpoint — 2026-10-03 16:50 UTC:
+- Healthy searchable catalog now contains 302 distinct places from 310 source records across 67 countries/territories.
+- Added Palm Beach and Eagle Beach from the official Aruba Tourism Authority live-webcam family under conservative LIVE_IMAGE/Search-Explore semantics; Watch Earth remains held pending separate live-playback review.
+- Existing Aruba/Viator business path now spans Druif Beach, Palm Beach and Eagle Beach rather than creating duplicate per-beach affiliate density.
+- Commercial classification remains complete: 267 healthy places have a researched commercial path, 35 are explicitly editorial-first, zero are unclassified.
+- Near-term business strategy remains: active Viator/Klook/Tiqets/Welcome Pickups + currently owner-link-capable Travelpayouts utilities; Trip.com remains the preferred future unlock but should not be rechecked until traffic/conversion or platform status materially changes.
