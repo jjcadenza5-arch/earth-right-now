@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:42:00Z",
+  "generatedAt": "2026-10-03T03:55:00Z",
   "status": "READY_NOT_REQUESTED",
   "purpose": "One compact owner batch to use only when autonomous work is no longer the limiting factor.",
   "sourceChecks": [
@@ -155,6 +155,28 @@
       "type": "OFFICIAL_TOURISM_ENDORSED_LIVE_CAMERA",
       "businessUnlocks": [],
       "instruction": "Open the official Visit St. Maarten webcam article and confirm the Maho Beach camera is currently playing live. Do not check the other St. Maarten cameras unless this one works."
+    },
+    {
+      "id": "wanaka-roys-peak-town-view",
+      "title": "Wānaka — Roys Peak Town View",
+      "country": "New Zealand",
+      "url": "https://www.wanaka.co.nz/wanaka-webcams/",
+      "type": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "businessUnlocks": [
+        "klook-wanaka-future"
+      ],
+      "instruction": "Open the official Wānaka webcams page and confirm the Roys Peak view toward Wānaka is current. If it works, the remaining Wānaka views can be checked in the same session."
+    },
+    {
+      "id": "rotorua-skyline-city-lake",
+      "title": "Rotorua — City & Lake from Skyline",
+      "country": "New Zealand",
+      "url": "https://conference.rotoruanz.com/en-NZ/visit/Weather-Webcams",
+      "type": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "businessUnlocks": [
+        "viator-rotorua-future"
+      ],
+      "instruction": "Open the official Rotorua webcams page and confirm the Skyline Rotorua city/lake view is visibly current."
     }
   ],
   "exactAffiliateLinkActions": [
