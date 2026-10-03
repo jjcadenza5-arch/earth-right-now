@@ -198,3 +198,14 @@ World-gap large batch — 2026-10-03 04:20 UTC:
 - Commercial priority matrix was cleaned so places already covered by verified offers or explicit opportunity paths are no longer re-researched.
 - Added data/geographic-expansion-plan.json to control future regional density: underrepresented Antarctica, Central America, South America, Africa, Oceania and Caribbean are prioritized while Europe/North America expansion is deliberately restrained.
 - Owner-ready batch and focused expansion plan were refreshed from the canonical registries; owner work remains dormant until autonomous research is no longer the bottleneck.
+
+
+KenyaLIVE / polar / canal checkpoint — 2026-10-03:
+- Public healthy/searchable production baseline remains 91; no research-only source was auto-promoted.
+- Research registry now contains 101 candidates: 4 promoted and 97 human-playback-gated.
+- Added official Australian Antarctic Program current-image research for Casey, Davis, Mawson and Macquarie Island. AAD explicitly states station webcams refresh as still images every few minutes, so future ERN truth must be LIVE_IMAGE/current-image, not continuous-video.
+- Added official Panama Canal Authority real-time camera research for Miraflores, Gatún, Pedro Miguel, Cocolí and Agua Clara Locks; one shared future Viator canal path is source-gated behind actual camera promotion.
+- Added KWS KenyaLIVE / Nairobi National Park as a P1 official-government research candidate after Kenya Wildlife Service announced daily real-time wildlife broadcasts launched at Nairobi National Park on 22 September 2026. A Nairobi/Viator business path is source-gated behind park-specific live verification.
+- Pamir/Tajikistan remains deliberately unresolved; ERN still refuses prerecorded or generic-camera substitutes.
+- Source-verification priority, focused plan and dormant owner batch were refreshed together; autonomous research remains the active workstream.
+- Commercial states now reconcile to: 12 verified-link, 23 exact-link-required, 33 source-gated, 0 live-source-gap-blocked.
