@@ -367,3 +367,13 @@ Business expansion checkpoint — 2026-10-03 09:20 UTC:
 - Poiana Brașov is now exact-link-ready rather than source-gated because its healthy LIVE_IMAGE record is already in production.
 - A dormant owner-action queue bundles future camera checks and exact tracked-link generation; no owner interruption is needed yet.
 - Quasi-live truth is represented by LIVE_IMAGE rather than repeated category tags to preserve ERN's strict production-size ceiling.
+
+
+200-place / Trip.com decision checkpoint — 2026-10-03:
+- ERN has achieved the original focused-expansion target: 200 healthy searchable places from 208 source records.
+- Searchable truth mix currently includes LIVE_VIDEO, EXTERNAL_LIVE and LIVE_IMAGE/quasi-live sources; Watch Earth remains stricter than Search/Explore.
+- Content strategy now shifts from raw count growth to freshness, geographic quality, featured-camera strength and replacement of weak sources.
+- Commercial registry has expanded substantially while preserving exact-link and no-paid-ranking safeguards.
+- Accommodation/stay is now the largest commercial-category gap.
+- Trip.com is now worth an owner status check inside Travelpayouts My Programs; do not assume availability from the public catalog and do not open a separate direct account yet.
+- One bundled owner-commercial packet now contains the Trip.com status check plus the next eight high-value exact-link actions using existing partners.
