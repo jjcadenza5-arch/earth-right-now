@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:15:00Z",
+  "generatedAt": "2026-10-03T03:50:00Z",
   "principles": {
     "existingPartnersFirst": true,
     "exactTrackedLinkRequired": true,
@@ -10,8 +10,9 @@
     "automaticLinkRewriting": false
   },
   "currentVerifiedOpportunityCount": 12,
-  "exactLinkQueueCount": 23,
-  "sourceGatedQueueCount": 32,
+  "exactLinkQueueCount": 24,
+  "sourceGatedQueueCount": 37,
+  "sourceGapBlockedCount": 1,
   "researchPriority": [
     {
       "placeId": "koli-lake-pielinen",
@@ -71,6 +72,27 @@
       "publicActivationAllowed": false
     },
     {
+      "placeId": "chicago-lakefront",
+      "title": "Chicago Skyline & Lakefront",
+      "country": "United States",
+      "region": "Chicago, Illinois",
+      "quality": 96,
+      "moment": 97,
+      "categories": [
+        "Cities & Streets",
+        "Beautiful Earth",
+        "Culture & Landmarks"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
       "placeId": "amden-walensee",
       "title": "Lake Walensee & Amden — Live Panoramas",
       "country": "Switzerland",
@@ -90,19 +112,21 @@
       "publicActivationAllowed": false
     },
     {
-      "placeId": "marco-island-beach",
-      "title": "Marco Island Beach",
+      "placeId": "new-york-harbor",
+      "title": "New York Skyline — Jersey City",
       "country": "United States",
-      "region": "Florida",
+      "region": "New York / New Jersey",
       "quality": 95,
       "moment": 96,
       "categories": [
-        "Beaches & Water",
+        "Cities & Streets",
         "Beautiful Earth",
-        "Useful Earth"
+        "Interesting Earth"
       ],
       "suggestedExistingPartners": [
-        "viator"
+        "tiqets",
+        "viator",
+        "welcome-pickups"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
@@ -165,6 +189,74 @@
       "publicActivationAllowed": false
     },
     {
+      "placeId": "kyoto-hanamikoji",
+      "title": "Kyoto — Hanamikoji Street",
+      "country": "Japan",
+      "region": "Kyoto",
+      "quality": 90,
+      "moment": 95,
+      "categories": [
+        "Cities & Streets",
+        "Culture & Landmarks",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "klook",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "seoul-plaza",
+      "title": "Seoul Plaza — 24 Hours",
+      "country": "South Korea",
+      "region": "Seoul",
+      "quality": 90,
+      "moment": 95,
+      "categories": [
+        "Cities & Streets",
+        "Culture & Landmarks",
+        "Earth Happening Now",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "klook",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "rovaniemi-santa-claus-village",
+      "title": "Rovaniemi — Santa Claus Village",
+      "country": "Finland",
+      "region": "Rovaniemi, Lapland",
+      "quality": 91,
+      "moment": 94,
+      "categories": [
+        "Cities & Streets",
+        "Culture & Landmarks",
+        "Mountains & Snow",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
       "placeId": "orpen-kruger",
       "title": "Orpen — Kruger National Park",
       "country": "South Africa",
@@ -178,6 +270,52 @@
       ],
       "suggestedExistingPartners": [
         "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "kyoto-kiyomizuzaka",
+      "title": "Kyoto — Kiyomizu-zaka",
+      "country": "Japan",
+      "region": "Kyoto",
+      "quality": 90,
+      "moment": 94,
+      "categories": [
+        "Cities & Streets",
+        "Culture & Landmarks",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "klook",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "kyoto-nishiki-market",
+      "title": "Kyoto — Nishiki Market",
+      "country": "Japan",
+      "region": "Kyoto",
+      "quality": 90,
+      "moment": 94,
+      "categories": [
+        "Cities & Streets",
+        "Culture & Landmarks",
+        "Useful Earth",
+        "Interesting Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "klook",
+        "welcome-pickups"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
@@ -280,6 +418,28 @@
       "publicActivationAllowed": false
     },
     {
+      "placeId": "kyoto-kifune-shrine",
+      "title": "Kyoto — Kifune Shrine",
+      "country": "Japan",
+      "region": "Kyoto",
+      "quality": 90,
+      "moment": 91,
+      "categories": [
+        "Culture & Landmarks",
+        "Parks & Scenic",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "klook"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
       "placeId": "tonami-tulip-park",
       "title": "Tonami Tulip Park — Panorama Terrace",
       "country": "Japan",
@@ -319,6 +479,29 @@
       "publicActivationAllowed": false
     },
     {
+      "placeId": "kyoto-fushimi-inari",
+      "title": "Kyoto — Fushimi Inari",
+      "country": "Japan",
+      "region": "Kyoto",
+      "quality": 88,
+      "moment": 92,
+      "categories": [
+        "Culture & Landmarks",
+        "Cities & Streets",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "klook",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
       "placeId": "mount-rainier-national-park",
       "title": "Mount Rainier National Park",
       "country": "United States",
@@ -334,251 +517,7 @@
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
       "publicActivationAllowed": false
-    },
-    {
-      "placeId": "takayama-miyagawa",
-      "title": "Takayama — Miyagawa Current Images",
-      "country": "Japan",
-      "region": "Takayama, Gifu",
-      "quality": 88,
-      "moment": 90,
-      "categories": [
-        "Cities & Streets",
-        "Culture & Landmarks",
-        "Beautiful Earth",
-        "Useful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "tiqets",
-        "viator",
-        "klook",
-        "welcome-pickups"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "blouberg-table-mountain",
-      "title": "Bloubergstrand — Table Mountain",
-      "country": "South Africa",
-      "region": "Western Cape",
-      "quality": 88,
-      "moment": 90,
-      "categories": [
-        "Beaches & Water",
-        "Mountains",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "perdido-key-beach",
-      "title": "Perdido Key — Gulf Beach",
-      "country": "United States",
-      "region": "Florida",
-      "quality": 90,
-      "moment": 88,
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "sasagawa-nagare",
-      "title": "Sasagawa Nagare — Sea of Japan",
-      "country": "Japan",
-      "region": "Niigata Prefecture",
-      "quality": 89,
-      "moment": 89,
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "cold-lake-marina",
-      "title": "Cold Lake Marina",
-      "country": "Canada",
-      "region": "Alberta",
-      "quality": 90,
-      "moment": 88,
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "skeikampen-ski",
-      "title": "Skeikampen — Mountain Resort",
-      "country": "Norway",
-      "region": "Innlandet",
-      "quality": 88,
-      "moment": 90,
-      "categories": [
-        "Mountains",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "rio-copacabana",
-      "title": "Rio de Janeiro — Copacabana Beach",
-      "country": "Brazil",
-      "region": "Rio de Janeiro",
-      "quality": 88,
-      "moment": 90,
-      "categories": [
-        "Beaches & Water",
-        "Cities & Streets",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "tiqets",
-        "viator",
-        "welcome-pickups"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "florida-now",
-      "title": "Florida Now — Beaches & Destinations",
-      "country": "United States",
-      "region": "Florida",
-      "quality": 87,
-      "moment": 90,
-      "categories": [
-        "Beaches & Water"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "grand-canyon-national-park",
-      "title": "Grand Canyon National Park",
-      "country": "United States",
-      "region": "Grand Canyon Village",
-      "quality": 88,
-      "moment": 88,
-      "categories": [
-        "Parks & Scenic"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "pleasant-beach-lake-ontario",
-      "title": "Pleasant Beach — Lake Ontario",
-      "country": "United States",
-      "region": "New York",
-      "quality": 88,
-      "moment": 88,
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "nossob-kgalagadi",
-      "title": "Nossob — Kgalagadi",
-      "country": "South Africa",
-      "region": "Kgalagadi Transfrontier Park",
-      "quality": 86,
-      "moment": 88,
-      "categories": [
-        "Wildlife",
-        "Beautiful Earth",
-        "Interesting Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "ski-arlberg",
-      "title": "Ski Arlberg",
-      "country": "Austria",
-      "region": "St. Anton / Lech / Zürs",
-      "quality": 88,
-      "moment": 86,
-      "categories": [
-        "Mountains & Snow",
-        "Beautiful Earth",
-        "Useful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "glacier-national-park",
-      "title": "Glacier National Park",
-      "country": "United States",
-      "region": "West Glacier",
-      "quality": 86,
-      "moment": 88,
-      "categories": [
-        "Parks & Scenic"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
     }
   ],
-  "note": "Refreshed to exclude every place already covered by a verified offer or explicit opportunity path.",
-  "sourceGapBlockedCount": 0
+  "note": "Research prompts only. No partner inventory, tracked link or public placement is implied until manually verified."
 }
