@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T05:50:00Z",
+  "generatedAt": "2026-10-03T06:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1844,6 +1844,51 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Big-Island-of-Hawaii-attractions/Mauna-Loa/d669-a22599",
       "publicInventoryEvidence": "Viator currently lists Mauna Loa tours and broader Hawaiʻi Volcanoes National Park experiences that include views of Mauna Loa.",
       "nextAction": "Generate one Mauna Loa or Big Island volcano destination-level Viator partner link and manually verify it before activation."
+    },
+    {
+      "id": "viator-meads-bay",
+      "destination": "Meads Bay / Anguilla",
+      "placeIds": [
+        "meads-bay-anguilla"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Meads Bay view and Viator currently exposes dedicated Meads Bay / Anguilla tours and tickets.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Anguilla-attractions/Meads-Bay/d810-a24644",
+      "publicInventoryEvidence": "Viator currently lists dedicated Meads Bay inventory including Anguilla boat, beach and snorkeling experiences.",
+      "nextAction": "Generate one Meads Bay/Anguilla Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-grand-canyon",
+      "destination": "Grand Canyon National Park",
+      "placeIds": [
+        "grand-canyon-national-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Grand Canyon place and Viator currently has deep Grand Canyon sightseeing, sunset, Hummer and multi-day tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Grand-Canyon-National-Park-tours/Tours-and-Sightseeing/d815-g12",
+      "publicInventoryEvidence": "Viator currently lists extensive Grand Canyon National Park sightseeing and experience inventory.",
+      "nextAction": "Generate one Grand Canyon destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-chishang-taitung",
+      "destination": "Chishang / Taitung",
+      "placeIds": [
+        "chihshang-paradise-road"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Chishang Paradise Road place and Klook currently sells Chishang, Brown Boulevard and Taitung guided experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/destination/c58093-chishang/",
+      "publicInventoryEvidence": "Klook currently lists Chishang/Taitung experiences including Brown Boulevard, Dapo Pond and guided local tours.",
+      "nextAction": "Generate one Chishang/Taitung Klook tracked link in Travelpayouts and manually verify it before public activation."
     }
   ]
 }
