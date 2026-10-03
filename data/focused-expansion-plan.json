@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:35:00Z",
+  "generatedAt": "2026-10-03T03:42:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 91,
@@ -25,8 +25,8 @@
       "mauritius-grand-baie"
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
-    "researchCandidateCount": 58,
-    "playbackGatedCandidateCount": 54
+    "researchCandidateCount": 61,
+    "playbackGatedCandidateCount": 57
   },
   "businessLane": {
     "activePartners": [
@@ -47,7 +47,8 @@
       "viator-zermatt",
       "viator-san-diego-zoo",
       "viator-aruba",
-      "viator-boulders-beach"
+      "viator-boulders-beach",
+      "viator-st-maarten"
     ],
     "futureAfterSourceVerification": [
       "tiqets-prague-future",
@@ -69,7 +70,7 @@
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 12,
-    "exactLinkQueueCount": 17,
+    "exactLinkQueueCount": 18,
     "sourceGatedQueueCount": 12
   },
   "safeguards": {
