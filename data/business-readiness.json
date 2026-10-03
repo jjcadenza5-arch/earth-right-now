@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T14:05:00Z",
+  "generatedAt": "2026-10-03T15:30:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -94,7 +94,7 @@
     ],
     "currentCommercialOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 148,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 161,
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 5,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
@@ -104,10 +104,10 @@
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
-    "currentCommercialOpportunityCount": 171,
-    "healthyPlacesWithCommercialPath": 231,
-    "healthyPlacesWithoutCommercialPath": 25,
-    "verifiedLinkHealthyPlaces": 22,
+    "currentCommercialOpportunityCount": 184,
+    "healthyPlacesWithCommercialPath": 249,
+    "healthyPlacesWithoutCommercialPath": 34,
+    "verifiedLinkHealthyPlaces": 19,
     "travelpayoutsTrafficGatedProgramsObserved": true,
     "travelpayoutsTrafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
     "futurePriorityPrograms": [
@@ -148,11 +148,11 @@
     "23 additional Travelpayouts programs identified with owner-side link-generation availability",
     "Traffic-led unlock roadmap and currently usable utility expansion queue prepared",
     "Quality-led Istanbul expansion added Taksim Square, Maiden’s Tower and Anadolu Hisarı without weakening Watch Earth.",
-    "Official Tvøroyri and Shetland current-camera pages expanded searchable coverage to 256 healthy places.",
     "Business-place expansion matrix now prepares Kiwitaxi, Radical Storage, KKday, Localrent, QEEQ and WeGoTrip coverage across many healthy ERN places.",
-    "High-value commercial research coverage expanded to 196 of 256 healthy ERN places.",
     "Commercial opportunity registry expanded to 150 entries while verified/public links remain fail-closed until exact tracked-link verification.",
-    "Traffic-gated future programs mapped from owner Travelpayouts account screenshots"
+    "Traffic-gated future programs mapped from owner Travelpayouts account screenshots",
+    "Searchable coverage reconciled to 283 healthy distinct places with 249 explicit commercial paths and 34 intentionally editorial-first places.",
+    "Taiwan / New Zealand quality batch added official Maolin, Yehliu, Heping Island, Elephant Mountain, Tamsui Fisherman's Wharf, Gaomei Wetland, Lyttelton Heads and Akaroa Heads current-image places while preserving the strict runtime budget."
   ],
   "humanOnlyRemaining": [
     {
@@ -199,14 +199,14 @@
     "Do not repeatedly ask owner to recheck locked Travelpayouts programs; recheck only on meaningful traffic/account-state change",
     "Locked/traffic-gated programs may not be treated as active or available"
   ],
-  "currentHealthySearchablePlaces": 256,
+  "currentHealthySearchablePlaces": 283,
   "releaseHealth": {
-    "pagesDeployment": "SUCCESS_2026-10-03T10:54Z",
-    "operationsCheck": "SUCCESS_2026-10-03T10:54Z",
+    "pagesDeployment": "SUCCESS_2026-10-03T14:53Z",
+    "operationsCheck": "SUCCESS_2026-10-03T14:53Z",
     "sourceCatalogRuntimeEvidence": "RIGHTS_BASIS_AND_FRESHNESS_EVIDENCE_RETAINED",
     "verboseSourceEvidenceSidecar": "data/source-evidence.json",
     "sourceCatalogArchitecture": "MINIFIED_RUNTIME_CATALOG_PLUS_VERBOSE_EVIDENCE_SIDECAR",
-    "sourceCatalogHeadroom": "RESTORED_FOR_250_PLACE_STRETCH",
-    "lastKnownGreenBaseline": "OPERATIONS_AND_PAGES_GREEN_AFTER_MINIFICATION"
+    "sourceCatalogHeadroom": "TIGHT_NEAR_300KB_SELECTIVE_GROWTH",
+    "lastKnownGreenBaseline": "PAGES_AND_OPERATIONS_GREEN_AFTER_283_PLACE_RECONCILIATION"
   }
 }
