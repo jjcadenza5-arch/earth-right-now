@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:20:00Z",
+  "generatedAt": "2026-10-03T02:32:00Z",
   "status": "READY_NOT_REQUESTED",
   "purpose": "One compact owner batch to use only when autonomous work is no longer the limiting factor.",
   "sourceChecks": [
@@ -126,15 +126,15 @@
       "instruction": "Open the official Taipei-filtered Live Taiwan page and confirm Dajia Riverside Park visibly updates."
     },
     {
-      "id": "tallinn-tv-tower-panorama",
-      "title": "Tallinn — TV Tower Panorama",
-      "country": "Estonia",
-      "url": "https://teletorn.ee/en/webcam/",
-      "type": "PROVIDER_PAGE",
+      "id": "ushuaia-harbour-municipal",
+      "title": "Ushuaia — Harbour & Beagle Channel",
+      "country": "Argentina",
+      "url": "https://www.youtube.com/watch?v=q9g51I3NyJQ",
+      "type": "MUNICIPAL_PUBLISHED_YOUTUBE_TARGET",
       "businessUnlocks": [
-        "tiqets-tallinn-future"
+        "viator-ushuaia-future"
       ],
-      "instruction": "Confirm visible live/current playback before promotion."
+      "instruction": "Open the exact municipal-published YouTube target and confirm it is still a current live harbour stream, not an archived recording."
     }
   ],
   "exactAffiliateLinkActions": [
