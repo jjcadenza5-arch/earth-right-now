@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T05:45:00Z",
-  "currentHealthyDistinctPlaces": 200,
+  "generatedAt": "2026-10-03T15:35:00Z",
+  "currentHealthyDistinctPlaces": 287,
   "targetHealthyDistinctPlaces": [
-    150,
-    200
+    250,
+    300
   ],
   "remainingToMinimum": 0,
-  "remainingToStretch": 0,
-  "humanPlaybackQueueCount": 35,
+  "remainingToStretch": 13,
+  "humanPlaybackQueueCount": 24,
   "topBatch": [
     {
       "id": "denpasar-city-live",
@@ -474,5 +474,5 @@
     "watchEarthEligible": false,
     "labelingRequired": true
   },
-  "note": "Post-target quality queue only. No candidate is needed to preserve the 200-place searchable baseline; human checks now focus on upgrading source quality and true-live coverage."
+  "note": "Post-target quality queue. ERN has exceeded the original 150–200 searchable-place goal; human checks now focus on stronger true-live coverage, geographic balance and source upgrades. Quasi-live LIVE_IMAGE remains Search/Explore-only."
 }
