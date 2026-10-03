@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T02:42:00Z",
+  "generatedAt": "2026-10-03T03:35:00Z",
   "principles": {
     "existingPartnersFirst": true,
     "exactTrackedLinkRequired": true,
@@ -10,8 +10,8 @@
     "automaticLinkRewriting": false
   },
   "currentVerifiedOpportunityCount": 12,
-  "exactLinkQueueCount": 14,
-  "sourceGatedQueueCount": 9,
+  "exactLinkQueueCount": 17,
+  "sourceGatedQueueCount": 12,
   "researchPriority": [
     {
       "placeId": "koli-lake-pielinen",
@@ -64,6 +64,7 @@
         "Useful Earth"
       ],
       "suggestedExistingPartners": [
+        "viator",
         "welcome-pickups"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
@@ -209,25 +210,6 @@
       "publicActivationAllowed": false
     },
     {
-      "placeId": "kilauea-summit",
-      "title": "Kīlauea Summit",
-      "country": "United States",
-      "region": "Hawaiʻi",
-      "quality": 92,
-      "moment": 95,
-      "categories": [
-        "Volcanoes & Earth",
-        "Interesting Earth",
-        "Earth Happening Now"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
       "placeId": "chamonix-mont-blanc",
       "title": "Chamonix – Mont-Blanc",
       "country": "France",
@@ -274,6 +256,7 @@
         "Beautiful Earth"
       ],
       "suggestedExistingPartners": [
+        "viator",
         "welcome-pickups"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
@@ -362,26 +345,6 @@
         "tiqets",
         "viator",
         "welcome-pickups"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "boulders-beach",
-      "title": "Boulders Beach — African Penguins",
-      "country": "South Africa",
-      "region": "Table Mountain National Park",
-      "quality": 90,
-      "moment": 94,
-      "categories": [
-        "Wildlife",
-        "Beaches & Water",
-        "Beautiful Earth",
-        "Useful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
@@ -506,7 +469,47 @@
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
       "publicActivationAllowed": false
+    },
+    {
+      "placeId": "bergen-ulriken",
+      "title": "Bergen — Ulriken Mountain",
+      "country": "Norway",
+      "region": "Vestland",
+      "quality": 90,
+      "moment": 92,
+      "categories": [
+        "Mountains",
+        "Cities & Harbours",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "waikiki-south-shore",
+      "title": "Waikiki Beach — South Shore",
+      "country": "United States",
+      "region": "Hawaii",
+      "quality": 92,
+      "moment": 90,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth",
+        "Cities & Harbours"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
     }
   ],
-  "note": "Partner suggestions are research prompts only. They do not assert program inventory, create tracked links or activate public commercial placements."
+  "note": "Refreshed after Mauritius and Boulders additions. Only healthy places not already represented in the explicit commercial opportunity queue appear here."
 }
