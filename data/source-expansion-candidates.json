@@ -602,8 +602,10 @@
       "evidence": "Taiwan Tourism Administration's official Live Taiwan page lists Dajia Riverside Park as operating, supplied by Taipei City Government's Department of Information and Tourism.",
       "researchEvidence": "The official tourism site labels the Dajia Riverside Park live image as 運作中 (operating).",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Taipei-filtered Live Taiwan page and confirm Dajia Riverside Park visibly updates."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Taipei-filtered Live Taiwan page and confirm Dajia Riverside Park visibly updates.",
+      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
       "id": "taipei-bishanyan",
@@ -617,8 +619,10 @@
       "evidence": "Taiwan Tourism Administration's official Live Taiwan page lists Bishanyan as operating, supplied by Taipei City Government.",
       "researchEvidence": "The official tourism site labels Bishanyan as 運作中 (operating).",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Taipei-filtered Live Taiwan page and confirm Bishanyan visibly updates."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Taipei-filtered Live Taiwan page and confirm Bishanyan visibly updates.",
+      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
       "id": "new-taipei-zhongjiao-bay",
@@ -632,8 +636,10 @@
       "evidence": "Taiwan Tourism Administration's official Live Taiwan page lists Zhongjiao Bay as operating and identifies it as a well-known north-coast surfing beach.",
       "researchEvidence": "The official tourism site labels Zhongjiao Bay as 運作中 (operating).",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official New Taipei-filtered Live Taiwan page and confirm Zhongjiao Bay visibly updates."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official New Taipei-filtered Live Taiwan page and confirm Zhongjiao Bay visibly updates.",
+      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
       "id": "taichung-techi-reservoir",
@@ -647,8 +653,10 @@
       "evidence": "Taiwan Tourism Administration's official Live Taiwan page lists Techi Reservoir as operating with a mountain-and-river panorama.",
       "researchEvidence": "The official tourism site labels Techi Reservoir as 運作中 (operating).",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Taichung-filtered Live Taiwan page and confirm Techi Reservoir visibly updates."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Taichung-filtered Live Taiwan page and confirm Techi Reservoir visibly updates.",
+      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
       "id": "taichung-lishan-yingyuan-hill",
@@ -662,8 +670,10 @@
       "evidence": "Taiwan Tourism Administration's official Live Taiwan page lists Lishan Yingyuan Hill as operating.",
       "researchEvidence": "The official tourism site labels Lishan Yingyuan Hill as 運作中 (operating).",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Taichung-filtered Live Taiwan page and confirm Lishan Yingyuan Hill visibly updates."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Taichung-filtered Live Taiwan page and confirm Lishan Yingyuan Hill visibly updates.",
+      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
       "id": "hualien-shitiping",
@@ -677,8 +687,10 @@
       "evidence": "Taiwan Tourism Administration's official Live Taiwan page lists Shitiping as operating, showing the dramatic coastal terrace and erosion landscape.",
       "researchEvidence": "The official tourism site labels Shitiping as 運作中 (operating).",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Hualien-filtered Live Taiwan page and confirm Shitiping visibly updates."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Hualien-filtered Live Taiwan page and confirm Shitiping visibly updates.",
+      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
       "id": "tainan-erliao-sunrise",
@@ -692,8 +704,10 @@
       "evidence": "Taiwan Tourism Administration's official Live Taiwan page lists Erliao Viewing Platform as operating and describes it as a celebrated low-altitude sunrise/cloud-sea viewpoint.",
       "researchEvidence": "The official tourism site labels Erliao Viewing Platform as 運作中 (operating).",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Tainan-filtered Live Taiwan page and confirm Erliao Viewing Platform visibly updates."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Tainan-filtered Live Taiwan page and confirm Erliao Viewing Platform visibly updates.",
+      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
       "id": "tainan-jingzaijiao-salt-fields",
@@ -707,8 +721,10 @@
       "evidence": "Taiwan Tourism Administration's official Live Taiwan page lists Jingzaijiao Tile-paved Salt Fields as operating.",
       "researchEvidence": "The official tourism site labels Jingzaijiao Tile-paved Salt Fields as 運作中 (operating).",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Tainan-filtered Live Taiwan page and confirm Jingzaijiao Salt Fields visibly updates."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Tainan-filtered Live Taiwan page and confirm Jingzaijiao Salt Fields visibly updates.",
+      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
       "id": "sanparks-satara",
@@ -2391,7 +2407,8 @@
     "2026-10-03 Madeira candidate family promoted under owner-approved quasi-live policy: Funchal, Porto Moniz, Calheta and Machico are searchable LIVE_IMAGE places; old human-playback placeholder rows were superseded.",
     "2026-10-03 added six distinct Taiwan government/scenic-area real-time-image places plus two SANParks frequently refreshed wildlife still cameras. SANParks video-only Satara/Olifants remain human-playback-gated.",
     "2026-10-03 crossed the 150 healthy searchable-place milestone using seven Peru CENVUL volcano-monitoring places and Mexico CENAPRED Popocatépetl; one canonical place per volcano.",
-    "2026-10-03 added official PHIVOLCS one-minute current-image places for Mayon, Bulusan and Kanlaon plus USGS HVO Mauna Loa current webcams. All use LIVE_IMAGE/Search-Explore semantics and do not masquerade as Watch Earth continuous live video."
+    "2026-10-03 added official PHIVOLCS one-minute current-image places for Mayon, Bulusan and Kanlaon plus USGS HVO Mauna Loa current webcams. All use LIVE_IMAGE/Search-Explore semantics and do not masquerade as Watch Earth continuous live video.",
+    "2026-10-03 promoted eight Taiwan Tourism Administration operating live-image places across Taipei, New Taipei, Taichung, Hualien and Tainan. Search/Explore only; Watch Earth remains stricter."
   ],
   "researchGaps": [
     {
