@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:45:00Z",
+  "generatedAt": "2026-10-03T04:50:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -1537,91 +1537,6 @@
       "verification": "Official provider/government refresh or monitoring semantics verified; promoted for Search/Explore only with LIVE_IMAGE truth and Watch Earth hold."
     },
     {
-      "id": "nicaragua-san-cristobal-volcano",
-      "title": "San Cristóbal Volcano",
-      "country": "Nicaragua",
-      "region": "Chinandega",
-      "provider": "INETER",
-      "sourcePage": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-      "exactTargetUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-      "exactTargetType": "OFFICIAL_GOVERNMENT_REALTIME_WEBCAM_INDEX",
-      "evidence": "INETER states active-volcano webcam images are transmitted in real time every 30 seconds or 1 minute and lists San Cristóbal cameras.",
-      "researchEvidence": "Official Nicaraguan territorial institute volcano-camera network.",
-      "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
-      "humanCheckHint": "Open the official INETER volcano page, choose San Cristóbal, and confirm the image timestamp/refresh is current.",
-      "verifiedAt": "2026-10-03T04:28:00Z",
-      "verification": "Official government/science current-image network verified; Search/Explore promotion only with LIVE_IMAGE truth and Watch Earth hold."
-    },
-    {
-      "id": "nicaragua-telica-volcano",
-      "title": "Telica Volcano",
-      "country": "Nicaragua",
-      "region": "León",
-      "provider": "INETER",
-      "sourcePage": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-      "exactTargetUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-      "exactTargetType": "OFFICIAL_GOVERNMENT_REALTIME_WEBCAM_INDEX",
-      "evidence": "INETER's official real-time volcano camera page lists Telica.",
-      "researchEvidence": "Government-operated current-image network.",
-      "priority": "P2",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
-      "humanCheckHint": "Choose Telica on the INETER page and confirm current refresh.",
-      "verifiedAt": "2026-10-03T04:28:00Z",
-      "verification": "Official government/science current-image network verified; Search/Explore promotion only with LIVE_IMAGE truth and Watch Earth hold."
-    },
-    {
-      "id": "nicaragua-momotombo-volcano",
-      "title": "Momotombo Volcano",
-      "country": "Nicaragua",
-      "region": "León",
-      "provider": "INETER",
-      "sourcePage": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-      "exactTargetUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-      "exactTargetType": "OFFICIAL_GOVERNMENT_REALTIME_WEBCAM_INDEX",
-      "evidence": "INETER's official real-time volcano camera page lists Momotombo.",
-      "researchEvidence": "Government-operated current-image network.",
-      "priority": "P2",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
-      "humanCheckHint": "Choose Momotombo and confirm the latest image updates normally.",
-      "verifiedAt": "2026-10-03T04:28:00Z",
-      "verification": "Official government/science current-image network verified; Search/Explore promotion only with LIVE_IMAGE truth and Watch Earth hold."
-    },
-    {
-      "id": "nicaragua-masaya-volcano",
-      "title": "Masaya Volcano",
-      "country": "Nicaragua",
-      "region": "Masaya",
-      "provider": "INETER",
-      "sourcePage": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-      "exactTargetUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-      "exactTargetType": "OFFICIAL_GOVERNMENT_REALTIME_WEBCAM_INDEX",
-      "evidence": "INETER's official real-time volcano camera page lists Masaya.",
-      "researchEvidence": "Government-operated current-image network.",
-      "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
-      "humanCheckHint": "Choose Masaya and confirm the current image is live/current rather than archived.",
-      "verifiedAt": "2026-10-03T03:30:00Z",
-      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
-    },
-    {
-      "id": "nicaragua-concepcion-volcano",
-      "title": "Concepción Volcano — Ometepe",
-      "country": "Nicaragua",
-      "region": "Rivas",
-      "provider": "INETER",
-      "sourcePage": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-      "exactTargetUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
-      "exactTargetType": "OFFICIAL_GOVERNMENT_REALTIME_WEBCAM_INDEX",
-      "evidence": "INETER's official real-time volcano camera page lists Concepción from Altagracia.",
-      "researchEvidence": "Government-operated current-image network on Ometepe.",
-      "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
-      "humanCheckHint": "Choose Concepción and confirm the image refresh is current and visually useful.",
-      "verifiedAt": "2026-10-03T03:30:00Z",
-      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
-    },
-    {
       "id": "ecuador-cotopaxi-monitoring",
       "title": "Cotopaxi Volcano — Monitoring Views",
       "country": "Ecuador",
@@ -1666,7 +1581,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SOURCE_REGISTRY",
       "verifiedAt": "2026-10-03T03:30:00Z",
-      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
+      "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
     },
     {
       "id": "nicaragua-telica-current-image",
@@ -1679,7 +1594,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SOURCE_REGISTRY",
       "verifiedAt": "2026-10-03T03:30:00Z",
-      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
+      "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
     },
     {
       "id": "nicaragua-momotombo-current-image",
@@ -1692,7 +1607,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SOURCE_REGISTRY",
       "verifiedAt": "2026-10-03T03:30:00Z",
-      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
+      "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
     },
     {
       "id": "nicaragua-cerro-negro-current-image",
@@ -1705,7 +1620,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SOURCE_REGISTRY",
       "verifiedAt": "2026-10-03T03:30:00Z",
-      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
+      "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
     },
     {
       "id": "guatemala-fuego-current-image",
@@ -1810,6 +1725,32 @@
       "state": "PROMOTED_TO_SOURCE_REGISTRY",
       "verifiedAt": "2026-10-03T03:45:00Z",
       "verification": "Official timestamped quasi-live image source; searchable only, not continuous live video."
+    },
+    {
+      "id": "nicaragua-masaya-current-image",
+      "title": "Masaya Volcano — Nicaragua",
+      "country": "Nicaragua",
+      "region": "Masaya",
+      "provider": "INETER",
+      "sourcePage": "https://webserver2.ineter.gob.ni/geofisica/webcam/v_masaya/index.html",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "INETER's Masaya webcam page states automatic refresh about every five minutes; the current national volcano index describes real-time camera imagery.",
+      "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
+    },
+    {
+      "id": "nicaragua-concepcion-current-image",
+      "title": "Concepción Volcano — Ometepe",
+      "country": "Nicaragua",
+      "region": "Ometepe Island",
+      "provider": "INETER",
+      "sourcePage": "https://web-geofisica.ineter.gob.ni/webcam/v_concepcion2/index.html",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "INETER states the Concepción image refreshes automatically about every five minutes and is part of its live visual volcano monitoring network.",
+      "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
     }
   ],
   "notes": [
@@ -1843,7 +1784,8 @@
     "First quasi-live promotion batch added Casey, Davis, Mawson, Macquarie Island, Poás, Turrialba, Irazú, Rincón de la Vieja and Cotopaxi as searchable LIVE_IMAGE/current-monitoring places with featured/watch holds.",
     "Second quasi-live batch promoted five INETER Nicaragua volcano places plus El Reventador monitoring in Ecuador. INETER explicitly states images are transmitted in real time every 30 seconds or 1 minute.",
     "2026-10-03 quasi-live policy used to promote six official INETER Nicaragua volcano cameras plus INSIVUMEH Fuego and Santiaguito into searchable LIVE_IMAGE coverage. These do not enter Watch Earth as continuous live video.",
-    "2026-10-03 promoted six GeoNet New Zealand volcano/island camera places under quasi-live LIVE_IMAGE semantics: Ruapehu, Ngauruhoe, Tongariro, Taranaki Maunga, Raoul Island and Whakaari mainland views."
+    "2026-10-03 promoted six GeoNet New Zealand volcano/island camera places under quasi-live LIVE_IMAGE semantics: Ruapehu, Ngauruhoe, Tongariro, Taranaki Maunga, Raoul Island and Whakaari mainland views.",
+    "2026-10-03 canonicalization removed five redundant generic Nicaragua candidate rows and retained six stronger direct-camera records (including Cerro Negro). This prevents duplicate destination inflation."
   ],
   "researchGaps": [
     {
