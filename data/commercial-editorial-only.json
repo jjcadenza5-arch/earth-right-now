@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:25:00Z",
+  "generatedAt": "2026-10-03T16:30:00Z",
   "healthyPlaceBaseline": 300,
   "placesWithCommercialPath": 265,
   "intentionallyUncoveredCount": 35,
@@ -247,6 +247,20 @@
     {
       "placeId": "nz-whanganui-coast",
       "title": "Whanganui Coast — Current View",
+      "country": "New Zealand",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "nz-wairoa-river",
+      "title": "Wairoa River — Current View",
+      "country": "New Zealand",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "nz-foxton-beach",
+      "title": "Foxton Beach — Manawatū Coast",
       "country": "New Zealand",
       "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
       "commercialState": "DEFER_NO_FORCED_MONETIZATION"
