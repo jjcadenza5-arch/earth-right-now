@@ -2284,6 +2284,70 @@
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "CENAPRED states the Tlamacas HD image is updated every minute and shows Popocatépetl's north flank.",
       "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "philippines-mayon-phivolcs",
+      "title": "Mayon Volcano — Current Monitoring View",
+      "country": "Philippines",
+      "region": "Albay",
+      "provider": "DOST-PHIVOLCS",
+      "sourcePage": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=mvo",
+      "exactTargetUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=mvo",
+      "exactTargetType": "OFFICIAL_GOVERNMENT_LIVE_IMAGE_PAGE",
+      "evidence": "PHIVOLCS VOLCAN publishes Mayon IP-camera snapshots sampled every minute from representative monitoring sites.",
+      "researchEvidence": "Official Philippine government real-time monitoring data; use LIVE_IMAGE/Search-Explore semantics only.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "verifiedAt": "2026-10-03T05:50:00Z",
+      "verification": "Official one-minute current-image monitoring semantics verified."
+    },
+    {
+      "id": "philippines-bulusan-phivolcs",
+      "title": "Bulusan Volcano — Current Monitoring View",
+      "country": "Philippines",
+      "region": "Sorsogon",
+      "provider": "DOST-PHIVOLCS",
+      "sourcePage": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=bvo",
+      "exactTargetUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=bvo",
+      "exactTargetType": "OFFICIAL_GOVERNMENT_LIVE_IMAGE_PAGE",
+      "evidence": "PHIVOLCS VOLCAN publishes Bulusan IP-camera snapshots sampled every minute from Irosin and Lajong stations.",
+      "researchEvidence": "Official Philippine government real-time monitoring data; use LIVE_IMAGE/Search-Explore semantics only.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "verifiedAt": "2026-10-03T05:50:00Z",
+      "verification": "Official one-minute current-image monitoring semantics verified."
+    },
+    {
+      "id": "philippines-kanlaon-phivolcs",
+      "title": "Kanlaon Volcano — Current Monitoring View",
+      "country": "Philippines",
+      "region": "Negros Island",
+      "provider": "DOST-PHIVOLCS",
+      "sourcePage": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=kvo",
+      "exactTargetUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=kvo",
+      "exactTargetType": "OFFICIAL_GOVERNMENT_LIVE_IMAGE_PAGE",
+      "evidence": "PHIVOLCS VOLCAN publishes Kanlaon IP-camera snapshots sampled every minute from multiple observation stations.",
+      "researchEvidence": "Official Philippine government real-time monitoring data; use LIVE_IMAGE/Search-Explore semantics only.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "verifiedAt": "2026-10-03T05:50:00Z",
+      "verification": "Official one-minute current-image monitoring semantics verified."
+    },
+    {
+      "id": "hawaii-mauna-loa-usgs",
+      "title": "Mauna Loa — Current Volcano View",
+      "country": "United States",
+      "region": "Hawaiʻi Island",
+      "provider": "U.S. Geological Survey / Hawaiian Volcano Observatory",
+      "sourcePage": "https://www.usgs.gov/volcanoes/mauna-loa/webcams",
+      "exactTargetUrl": "https://www.usgs.gov/volcanoes/mauna-loa/webcams",
+      "exactTargetType": "OFFICIAL_GOVERNMENT_WEBCAM_PAGE",
+      "evidence": "USGS HVO publishes multiple current webcams around Mauna Loa and states they operate 24/7, subject to weather and equipment conditions.",
+      "researchEvidence": "Official U.S. government current webcam family; represent Mauna Loa as one searchable place rather than inflating multiple camera angles.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "verifiedAt": "2026-10-03T05:50:00Z",
+      "verification": "Official current/live webcam semantics verified; promoted as LIVE_IMAGE/Search-Explore only."
     }
   ],
   "notes": [
@@ -2326,7 +2390,8 @@
     "2026-10-03 expanded Iceland beyond Reykjavík with Mývatn, Hveravellir and Surtsey from the Icelandic Meteorological Office.",
     "2026-10-03 Madeira candidate family promoted under owner-approved quasi-live policy: Funchal, Porto Moniz, Calheta and Machico are searchable LIVE_IMAGE places; old human-playback placeholder rows were superseded.",
     "2026-10-03 added six distinct Taiwan government/scenic-area real-time-image places plus two SANParks frequently refreshed wildlife still cameras. SANParks video-only Satara/Olifants remain human-playback-gated.",
-    "2026-10-03 crossed the 150 healthy searchable-place milestone using seven Peru CENVUL volcano-monitoring places and Mexico CENAPRED Popocatépetl; one canonical place per volcano."
+    "2026-10-03 crossed the 150 healthy searchable-place milestone using seven Peru CENVUL volcano-monitoring places and Mexico CENAPRED Popocatépetl; one canonical place per volcano.",
+    "2026-10-03 added official PHIVOLCS one-minute current-image places for Mayon, Bulusan and Kanlaon plus USGS HVO Mauna Loa current webcams. All use LIVE_IMAGE/Search-Explore semantics and do not masquerade as Watch Earth continuous live video."
   ],
   "researchGaps": [
     {
