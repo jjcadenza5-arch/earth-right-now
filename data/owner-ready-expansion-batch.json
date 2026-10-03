@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T02:50:00Z",
+  "status": "READY_NOT_REQUESTED",
+  "purpose": "A single compact source-verification batch to use only when autonomous research is no longer the limiting factor.",
+  "sourceChecks": [
+    {
+      "id": "dubrovnik-pile-city",
+      "title": "Dubrovnik — Pile",
+      "country": "Croatia",
+      "url": "https://www.dubrovnik.hr/web-kamere/pile",
+      "type": "OFFICIAL_CITY_CAMERA_PAGE",
+      "businessUnlocks": [
+        "viator-dubrovnik-future"
+      ],
+      "instruction": "Open the exact official city camera page and confirm the video moves/updates normally."
+    },
+    {
+      "id": "hualien-shitiping",
+      "title": "Hualien — Shitiping",
+      "country": "Taiwan",
+      "url": "https://www.taiwan.net.tw/m1.aspx?keystring=10015&sNo=0042331",
+      "type": "OFFICIAL_TOURISM_LIVE_INDEX",
+      "businessUnlocks": [
+        "viator-hualien-future"
+      ],
+      "instruction": "Open the official Hualien-filtered Live Taiwan page and confirm Shitiping visibly updates."
+    },
+    {
+      "id": "malta-live-cams",
+      "title": "Malta — Official Live Cams",
+      "country": "Malta",
+      "url": "https://www2.visitmalta.com/en/info/live-cams-in-malta/",
+      "type": "OFFICIAL_TOURISM_LIVE_CAM_PAGE",
+      "businessUnlocks": [
+        "tiqets-malta-future"
+      ],
+      "instruction": "Open the official Live Malta Cams page and confirm at least one destination camera visibly updates before ERN promotes any specific Malta place."
+    },
+    {
+      "id": "prague-old-town-hall",
+      "title": "Prague — Old Town Hall",
+      "country": "Czech Republic",
+      "url": "https://www.youtube.com/watch?v=Agep3Ts7hpI",
+      "type": "YOUTUBE_LIVE_TARGET",
+      "businessUnlocks": [
+        "tiqets-prague-future"
+      ],
+      "instruction": "Open this exact target directly; no hunting through the Prague page is needed."
+    },
+    {
+      "id": "prague-petrin-tower",
+      "title": "Prague — Petřín Lookout Tower",
+      "country": "Czech Republic",
+      "url": "https://pvp.panomax.com/",
+      "type": "PANOMAX_360",
+      "businessUnlocks": [
+        "tiqets-prague-future"
+      ],
+      "instruction": "Open this exact target directly; no hunting through the Prague page is needed."
+    },
+    {
+      "id": "salzburg-mirabell-old-town",
+      "title": "Salzburg — Mirabell Gardens & Old Town",
+      "country": "Austria",
+      "url": "https://www.salzburg.info/en/travel-info/webcam",
+      "type": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "businessUnlocks": [
+        "tiqets-salzburg-future"
+      ],
+      "instruction": "Open the official Salzburg webcam page and confirm the Mirabell/Old Town image or video is visibly current."
+    },
+    {
+      "id": "taichung-techi-reservoir",
+      "title": "Taichung — Techi Reservoir",
+      "country": "Taiwan",
+      "url": "https://www.taiwan.net.tw/m1.aspx?keystring=10019&sNo=0042331",
+      "type": "OFFICIAL_TOURISM_LIVE_INDEX",
+      "businessUnlocks": [
+        "klook-taichung-future"
+      ],
+      "instruction": "Open the official Taichung-filtered Live Taiwan page and confirm Techi Reservoir visibly updates."
+    },
+    {
+      "id": "tainan-erliao-sunrise",
+      "title": "Tainan — Erliao Sunrise",
+      "country": "Taiwan",
+      "url": "https://www.taiwan.net.tw/m1.aspx?keystring=10021&sNo=0042331",
+      "type": "OFFICIAL_TOURISM_LIVE_INDEX",
+      "businessUnlocks": [
+        "klook-tainan-future"
+      ],
+      "instruction": "Open the official Tainan-filtered Live Taiwan page and confirm Erliao Viewing Platform visibly updates."
+    },
+    {
+      "id": "taipei-dajia-riverside-park",
+      "title": "Taipei — Dajia Riverside Park",
+      "country": "Taiwan",
+      "url": "https://www.taiwan.net.tw/m1.aspx?keystring=63&sNo=0042331",
+      "type": "OFFICIAL_TOURISM_LIVE_INDEX",
+      "businessUnlocks": [
+        "klook-taipei-future"
+      ],
+      "instruction": "Open the official Taipei-filtered Live Taiwan page and confirm Dajia Riverside Park visibly updates."
+    },
+    {
+      "id": "tallinn-tv-tower-panorama",
+      "title": "Tallinn — TV Tower Panorama",
+      "country": "Estonia",
+      "url": "https://teletorn.ee/en/webcam/",
+      "type": "PROVIDER_PAGE",
+      "businessUnlocks": [
+        "tiqets-tallinn-future"
+      ],
+      "instruction": "Confirm visible live/current playback before promotion."
+    }
+  ],
+  "exactAffiliateLinkActions": [
+    {
+      "id": "tiqets-vienna",
+      "destination": "Vienna",
+      "partner": "tiqets",
+      "intent": "culture",
+      "nextAction": "Generate one Vienna destination-level Tiqets tracked link in Travelpayouts only after owner verification; keep commercial placement downstream from discovery."
+    },
+    {
+      "id": "viator-helsinki",
+      "destination": "Helsinki",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate one Helsinki destination-level Viator partner link and verify it manually before adding any public offer."
+    },
+    {
+      "id": "viator-lucerne",
+      "destination": "Lucerne / Lake Lucerne",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate and manually verify one destination-level Lucerne Viator partner link before public offer activation."
+    },
+    {
+      "id": "viator-tbilisi",
+      "destination": "Tbilisi",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate and manually verify one Tbilisi Viator destination link; keep planning downstream from discovery."
+    },
+    {
+      "id": "viator-cancun",
+      "destination": "Cancún",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate and manually verify one Cancún Viator destination link before any public placement."
+    },
+    {
+      "id": "tiqets-georgia-aquarium",
+      "destination": "Georgia Aquarium / Atlanta",
+      "partner": "tiqets",
+      "intent": "culture",
+      "nextAction": "Generate one Georgia Aquarium Tiqets tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "tiqets-san-diego-zoo",
+      "destination": "San Diego Zoo",
+      "partner": "tiqets",
+      "intent": "culture",
+      "nextAction": "Generate one San Diego Zoo Tiqets tracked link in Travelpayouts and manually verify it before public activation."
+    }
+  ],
+  "rules": {
+    "doNotAskOwnerYet": true,
+    "combineIntoOneBatchWhenNeeded": true,
+    "noRepeatedChecks": true,
+    "noUnverifiedPromotion": true
+  }
+}
