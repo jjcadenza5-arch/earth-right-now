@@ -31,7 +31,6 @@ const translations={
 let lang=readSavedText("ern-language","en");if(!translations[lang])lang="en";
 const extraTranslations=globalThis.ERN_EXTRA_I18N||{};
 const finishTranslations=globalThis.ERN_FINISH_I18N||{};
-
 const t=k=>translations[lang]?.[k]||extraTranslations[lang]?.[k]||finishTranslations[lang]?.[k]||translations.en[k]||extraTranslations.en[k]||finishTranslations.en[k]||k;
 function guideMsg(key,vars={}){const table=globalThis.ERNGuideCopy?.[lang]||globalThis.ERNGuideCopy?.en||{},raw=table[key]||globalThis.ERNGuideCopy?.en?.[key]||key;return String(raw).replace(/\{(\w+)\}/g,(_,k)=>String(vars[k]??""))}
 function cleanUrl(v){try{const u=new URL(v,location.href);return /^https?:$/.test(u.protocol)?u.href:null}catch{return null}}
@@ -265,7 +264,6 @@ function sst(s){return normalizeSearch([s.title,s.placeId,s.city,s.state,s.regio
 function recentSearches(){const rows=readJSON("ern:recent-searches:v1",[]);return Array.isArray(rows)?rows.filter(v=>typeof v==="string"&&v.trim()).slice(0,4):[]}
 function rememberSearch(q){const raw=String(q||"").trim().replace(/\s+/g," ").slice(0,120);if(!raw)return;const next=[raw,...recentSearches().filter(x=>normalizeSearch(x)!==normalizeSearch(raw))].slice(0,8);writeSaved("ern:recent-searches:v1",JSON.stringify(next))}
 function renderQuickSearches(){const h=$(".search-suggestions");if(!h)return;const countries=[...new Set(state.sources.filter(guideEligible).sort((a,b)=>baseScore(b)-baseScore(a)).map(s=>s.country).filter(Boolean))].slice(0,3),types=visitorDaypart()==="night"?["Cities","Beaches & Water","Wildlife"]:["Beaches & Water","Mountains","Wildlife"],items=[...recentSearches(),...countries,...types].filter((q,i,a)=>a.findIndex(x=>normalizeSearch(x)===normalizeSearch(q))===i).slice(0,6);h.replaceChildren(...items.map(q=>{const b=document.createElement("button");b.type="button";b.dataset.query=q;b.textContent=q;return b}));h.querySelectorAll("button").forEach(b=>b.onclick=()=>{$("#searchInput").value=b.dataset.query||"";search($("#searchInput").value,{updateUrl:true});scrollToId("search")})}
-
 function safeExternalUrl(v){try{const u=new URL(String(v||"").trim());return["http:","https:"].includes(u.protocol)&&!u.username&&!u.password?u.toString():""}catch{return""}}
 const TP=globalThis.ERNTravelPlanning;
 function applyPlanOffer(el,offer,fallback,label){
@@ -297,7 +295,6 @@ function localDirectoryCard(x){
  const note=document.createElement("span");note.className="verify-mini";note.textContent=[x.address||"",x.verifiedAt?("ERN reviewed "+String(x.verifiedAt).slice(0,10)):"ERN reviewed"].filter(Boolean).join(" · ");
  a.append(v,truth,strong,small,note);return a;
 }
-
 function guideWords(q){return normalizeSearch(q).split(/\s+/).filter(Boolean)}
 function guideIntent(q){
  const x=normalizeSearch(q),words=guideWords(q),has=(...xs)=>xs.some(v=>x.includes(v));
@@ -338,7 +335,6 @@ function guideNearby(seed){
  return state.sources.filter(s=>s.id!==seed.id&&guideEligible(s)&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon)))
    .map(s=>({s,d:distanceKm(seed,s)})).filter(x=>Number.isFinite(x.d)).sort((a,b)=>a.d-b.d).slice(0,4).map(x=>x.s);
 }
-
 function guidePlaceMatches(q){
  const noise=new Set(["show","me","take","to","somewhere","place","places","see","earth","please","right","now","live","current","good","what","is","are","the","a","an","with","in","at","near","i","we","am","are","going","go","before","planning","plan","trip","travel","thinking","of"]);
  const intentWords=new Set(["peaceful","quiet","calm","golden","sunset","sunrise","morning","evening","daylight","night","lights","wildlife","animal","beach","sea","coast","ocean","mountain","snow","ski","city","street","busy","happening","activity","people","surprise","random","local","small","business","cafe","café","restaurant","shop","market","farm","hotel","guesthouse","bakery","food"]);
@@ -346,7 +342,6 @@ function guidePlaceMatches(q){
  if(!tokens.length)return[];
  return state.sources.filter(guideEligible).filter(s=>{const hay=sst(s);return tokens.every(t=>hay.includes(t))}).sort((a,b)=>baseScore(b)-baseScore(a));
 }
-
 function guideResponse(q){
  const intent=guideIntent(q);
  if(!intent.raw)return{text:guideMsg("welcome"),items:[]};
@@ -395,7 +390,6 @@ function openGuide(){
 function closeGuide(){
  $("#guidePanel").hidden=true;$("#guideLauncher").setAttribute("aria-expanded","false")
 }
-
 function search(q,options={updateUrl:false}){
  const raw=String(q||"").trim(),x=normalizeSearch(raw),tokens=x.split(/\s+/).filter(Boolean);
  if(options.updateUrl){const u=new URL(location.href);if(raw){u.searchParams.set("q",raw);rememberSearch(raw)}else u.searchParams.delete("q");history.replaceState(null,"",u.pathname+u.search+u.hash)}
@@ -436,7 +430,6 @@ function renderWander(){
  $("#wanderGrid").replaceChildren(...pick.map(wanderCard));$("#wanderNote").textContent=`${pick.length} places beyond the current Top 20 · healthy sources only · ${visitorDaypart()} selection context`;
 }
 function renderDiscoveryProof(){const healthy=state.sources.filter(guideEligible);healthy.filter(currentInside);const s=state.sources.filter(x=>x?.health==="HEALTHY"&&x.truth!=="PREVIEW"&&safeExternalUrl(x.sourceUrl||x.officialUrl));$("#proofPlaces").textContent=groupByPlace(s).length;$("#proofCountries").textContent=new Set(s.map(x=>x.country).filter(Boolean)).size;$("#proofCurrent").textContent=groupByPlace(healthy).length}
-
 function renderAtlasBeyond(){
  const box=$("#atlasBeyond"),grid=$("#atlasBeyondGrid"),note=$("#atlasBeyondNote");
  const dynamic=state.sources.filter(s=>guideEligible(s)&&s.mapBehavior==="DYNAMIC_UNPINNED");
@@ -450,7 +443,6 @@ function renderAtlasBeyond(){
  const buttons=pick.map(s=>{const b=document.createElement("button");b.type="button";b.className="atlas-beyond-card";const strong=document.createElement("strong");strong.textContent=s.title;const small=document.createElement("small");const kind=s.mapBehavior==="MULTI_SITE_UNPINNED"?"Multi-location collection":s.mapBehavior==="DYNAMIC_UNPINNED"?"Moving Earth view":"Awaiting map evidence";small.textContent=[kind,s.region,s.country,publicTruth(s)].filter(Boolean).join(" · ");b.append(strong,small);b.onclick=()=>openViewer(s);return b});
  grid.replaceChildren(...buttons);const parts=[];if(unmapped.length)parts.push(`${unmapped.length} current ERN place${unmapped.length===1?"":"s"} searchable but not pinned until location evidence is added`);if(multiSite.length)parts.push(`${multiSite.length} multi-location collection${multiSite.length===1?" is":"s are"} intentionally unpinned`);if(dynamic.length)parts.push(`${dynamic.length} dynamic Earth view${dynamic.length===1?" is":"s are"} intentionally unpinned`);note.textContent=parts.join(" · ")+ ".";box.hidden=false;
 }
-
 function renderMap(){
  const a=$("#atlas");a.querySelectorAll(".map-pin").forEach(x=>x.remove());let count=0,insideCount=0,externalCount=0,localCount=0;
  const mappableLocal=approvedLocalPlaces().filter(x=>Number.isFinite(Number(x.lat))&&Number.isFinite(Number(x.lon)));
@@ -627,7 +619,6 @@ $("#watchNav").onclick=()=>scrollToId("watch");$("#searchNav").onclick=()=>{scro
  document.querySelectorAll(".atlas-filter").forEach(b=>b.onclick=()=>{state.mapFilter=b.dataset.mapFilter||"all";renderMap()});
  document.querySelectorAll(".category").forEach(b=>b.onclick=()=>{stopHeroRotation();selectCategory(b.dataset.category,b);startHeroRotation()});
  $("#searchInput").oninput=e=>search(e.target.value,{updateUrl:true});$("#clearSearch").onclick=()=>{$("#searchInput").value="";search("",{updateUrl:true});$("#searchInput").focus()};
-
  $("#closeViewer").onclick=()=>{closeViewer();startHeroRotation()};$("#prevViewer").onclick=()=>move(-1,true);$("#nextViewer").onclick=()=>move(1,true);$("#journeyToggle").onclick=()=>state.journeyTimer?stopJourney():startJourney();$("#fullViewer").onclick=toggleViewerFullscreen;document.addEventListener("fullscreenchange",syncFullscreenButton);document.addEventListener("webkitfullscreenchange",syncFullscreenButton);
  $("#shareViewer").onclick=async()=>{const s=state.selected;if(!s)return;const url=currentTruthClaim(s)?location.origin+location.pathname+viewHash(s.id):placePageUrl(s);try{if(navigator.share)await navigator.share({title:s.title,text:t("sharePlaceText"),url});else{await navigator.clipboard.writeText(url);$("#shareViewer").textContent="Copied";setTimeout(()=>$("#shareViewer").textContent=t("share"),1200)}}catch{}};
  $("#shareErn").onclick=async()=>{const b=$("#shareErn"),url=location.origin+"/",payload={title:"Earth Right Now — See before you go.",text:"See Earth as it is right now. Real places, current windows, and a simple way to look before you go.",url};try{if(navigator.share)await navigator.share(payload);else if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);b.textContent="Copied";setTimeout(()=>b.textContent="Share ERN",1200)}}catch{}};
