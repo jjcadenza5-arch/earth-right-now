@@ -363,6 +363,32 @@
       ],
       "accountSearchPhrase": "La Palma Canary Islands tours",
       "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-bernese-alps",
+      "partner": "viator",
+      "destination": "Bernese Alps / Interlaken Region",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "schynige-platte",
+        "murren-edelweiss",
+        "wengen-bellevue"
+      ],
+      "accountSearchPhrase": "Interlaken Bernese Alps tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-levi",
+      "partner": "viator",
+      "destination": "Levi / Finnish Lapland",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "levi-ski-resort"
+      ],
+      "accountSearchPhrase": "Levi Lapland tours activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
     }
   ],
   "searchablePlaceMilestone": 256,
