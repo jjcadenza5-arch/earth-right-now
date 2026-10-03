@@ -1200,6 +1200,66 @@
       "priority": "P1",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Open kg.camera and choose Ala-Archa Natural Park."
+    },
+    {
+      "id": "bled-lake-tourism",
+      "title": "Bled — Lake & Castle Views",
+      "country": "Slovenia",
+      "region": "Bled",
+      "provider": "Bled Tourist Board / Infrastruktura Bled",
+      "sourcePage": "https://www.bled.si/en/information/webcam/",
+      "exactTargetUrl": "https://www.bled.si/en/information/webcam/",
+      "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "evidence": "Official Bled tourism webcam page exposes a Bled Tourist Board camera plus a Straža Bled live stream; the page identifies the stream type as LIVE.",
+      "researchEvidence": "Strong scenic gap-filler for Slovenia and the Julian Alps; one real destination with multiple views, not multiple fake places.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Bled webcam page and confirm at least one Lake Bled/Straža view visibly updates."
+    },
+    {
+      "id": "mykonos-new-port",
+      "title": "Mykonos — New Port Live",
+      "country": "Greece",
+      "region": "Cyclades",
+      "provider": "Municipal Port Fund of Mykonos",
+      "sourcePage": "https://mykonosports.gr/en/webcams/",
+      "exactTargetUrl": "https://mykonosports.gr/en/webcams/",
+      "exactTargetType": "OFFICIAL_MUNICIPAL_LIVE_STREAM_PAGE",
+      "evidence": "The official Municipal Port Fund of Mykonos page publishes several port live streams and explicitly labels them Live Streaming.",
+      "researchEvidence": "Official municipal source with multiple live port angles; should count as one Mykonos place family unless a later camera proves a genuinely distinct destination.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the municipal Mykonos live-stream page and confirm at least one New Port camera moves normally."
+    },
+    {
+      "id": "santorini-caldera-imerovigli",
+      "title": "Santorini — Caldera from Imerovigli",
+      "country": "Greece",
+      "region": "Cyclades",
+      "provider": "Santorini.net / Altana Heritage Suites",
+      "sourcePage": "https://www.santorini.net/live_webcam/",
+      "exactTargetUrl": "https://www.santorini.net/live_webcam/",
+      "exactTargetType": "LIVE_STREAM_PAGE",
+      "evidence": "Santorini.net describes two real-time video streams from Imerovigli overlooking the caldera, sea, Oia and Thirassia.",
+      "researchEvidence": "Visually exceptional candidate; non-government source, so link-only treatment is preferred unless rights are explicitly established.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the Santorini live webcam page and confirm Camera A or B is currently streaming rather than only showing timelapse."
+    },
+    {
+      "id": "poiana-brasov-live",
+      "title": "Poiana Brașov — Mountain Resort",
+      "country": "Romania",
+      "region": "Brașov",
+      "provider": "Poiana Brașov Travel / Discover Poiana",
+      "sourcePage": "https://poianabrasov.travel/webcams/",
+      "exactTargetUrl": "https://poianabrasov.travel/webcams/",
+      "exactTargetType": "TOURISM_WEBCAM_PAGE",
+      "evidence": "Poiana Brașov tourism webcam pages list multiple live resort and mountain cameras including Ruia plateau, gondola and ski-slope views.",
+      "researchEvidence": "Adds Romania and a strong mountain-resort destination; keep as one Poiana Brașov place despite multiple camera angles.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the Poiana Brașov webcam page and confirm one panoramic/mountain camera visibly updates."
     }
   ],
   "notes": [
@@ -1223,7 +1283,8 @@
     "2026-10-03 added direct KG Camera candidates for scenic Issyk-Kul/KarVen Four Seasons and Bishkek/Ala-Too Square. Both remain human-playback-gated.",
     "Pamir multi-side research — 2026-10-03: searched Tajikistan core Pamir Highway/Wakhan/Murghab/Karakul plus Kyrgyz Alay approaches. No trustworthy public live camera was found in the core Tajik Pamir locations during this pass. ERN therefore leaves the core Pamir as an explicit research gap rather than using prerecorded travel video. Three live-camera candidates were added around the broader Kyrgyz mountain/gateway side: Osh Sulaiman-Too, Batken city panorama and Ala-Archa National Park.",
     "2026-10-03 large mountain-geography batch: after the Pamir core remained a truthful research gap, ERN expanded research into neighboring/global high-mountain regions with stronger live evidence: Gudauri/Kobi in Georgia, Shymbulak in Kazakhstan, and two Nepal Everest/Khumbu candidates. None are promoted until human playback/currentness verification.",
-    "2026-10-03 Pamir research: no trustworthy core Tajik Pamir live feed found. Added six Kyrgyz mountain/approach candidates from kg.camera while explicitly keeping Murghab/Karakul/Wakhan/Ak-Baital as an unresolved research gap."
+    "2026-10-03 Pamir research: no trustworthy core Tajik Pamir live feed found. Added six Kyrgyz mountain/approach candidates from kg.camera while explicitly keeping Murghab/Karakul/Wakhan/Ak-Baital as an unresolved research gap.",
+    "2026-10-03 large-batch geographic breadth: added Bled (Slovenia), Mykonos port (Greece), Santorini caldera (Greece) and Poiana Brașov (Romania) as research-only live candidates from official or strong provider pages. Multi-camera pages remain one destination unless views are genuinely distinct places."
   ],
   "researchGaps": [
     {
