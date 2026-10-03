@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:30:00Z",
-  "healthyPlaceBaseline": 256,
-  "placesWithCommercialPath": 231,
-  "intentionallyUncoveredCount": 25,
+  "generatedAt": "2026-10-03T13:55:00Z",
+  "healthyPlaceBaseline": 275,
+  "placesWithCommercialPath": 242,
+  "intentionallyUncoveredCount": 33,
   "principle": "ERN does not need a commercial path on every place. Scientific, remote, monitoring and low-intent views remain editorial-first unless a genuinely useful visitor action emerges.",
   "rows": [
     {
@@ -179,6 +179,62 @@
       "title": "Yucamane Volcano — Peru",
       "country": "Peru",
       "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "zandvoort-beach",
+      "title": "Zandvoort — North Sea Beach",
+      "country": "Netherlands",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "zandvoort-circuit",
+      "title": "Circuit Zandvoort — Pit & Track View",
+      "country": "Netherlands",
+      "reason": "SPECIAL_EVENT_OR_TICKETING_PATH_NOT_YET_ACTIVE",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "darmstadt-mathildenhoehe",
+      "title": "Darmstadt — Mathildenhöhe",
+      "country": "Germany",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "denmark-klitmoller",
+      "title": "Klitmøller Beach — Cold Hawaii",
+      "country": "Denmark",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "denmark-ribe",
+      "title": "Ribe — Historic Embankment",
+      "country": "Denmark",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "denmark-skjoldnaes",
+      "title": "Skjoldnæs Lighthouse — Ærø",
+      "country": "Denmark",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "denmark-lokken",
+      "title": "Løkken Pier — North Sea",
+      "country": "Denmark",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "denmark-gribskov",
+      "title": "Gribskov — Osprey Nest",
+      "country": "Denmark",
+      "reason": "EDITORIAL_NATURE_FIRST",
       "commercialState": "DEFER_NO_FORCED_MONETIZATION"
     }
   ],
