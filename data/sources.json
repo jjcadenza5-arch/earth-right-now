@@ -3691,7 +3691,12 @@
     "rightsBasis": "Australian Antarctic Program publishes still webcam images for public viewing; ERN links to the official page and does not copy or restream them.",
     "freshnessEvidence": "AAD states station webcam still images are sent approximately every three minutes. ERN classifies this as quasi-live/current imagery, not continuous video.",
     "refreshIntervalSeconds": 180,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": -66.282,
+    "lon": 110.527,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/casey/"
   },
   {
     "id": "antarctica-davis-station",
@@ -3725,7 +3730,12 @@
     "rightsBasis": "Australian Antarctic Program publishes still webcam images for public viewing; ERN links to the official page.",
     "freshnessEvidence": "AAD states station webcam still images are transmitted approximately every three minutes; ERN treats them as quasi-live/current imagery.",
     "refreshIntervalSeconds": 180,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": -68.576,
+    "lon": 77.968,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/davis/"
   },
   {
     "id": "antarctica-mawson-station",
@@ -3759,7 +3769,12 @@
     "rightsBasis": "Australian Antarctic Program publishes still webcam images for public viewing; ERN links to the official page.",
     "freshnessEvidence": "AAD documents still-image webcam updates approximately every three minutes; ERN does not label this as live video.",
     "refreshIntervalSeconds": 180,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": -67.603,
+    "lon": 62.874,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/mawson/"
   },
   {
     "id": "antarctica-macquarie-island",
@@ -3793,7 +3808,12 @@
     "rightsBasis": "Australian Antarctic Program publishes station webcam imagery for public viewing; ERN links to the official page.",
     "freshnessEvidence": "AAD documents its station webcams as refreshed still images rather than continuous video.",
     "refreshIntervalSeconds": 180,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": -54.499,
+    "lon": 158.937,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/macquarie-island/"
   },
   {
     "id": "costa-rica-poas-crater",
@@ -3827,7 +3847,12 @@
     "rightsBasis": "Official OVSICORI-UNA volcano camera page; ERN links to the source and does not republish its image.",
     "freshnessEvidence": "OVSICORI states the crater image refreshes automatically every five seconds.",
     "refreshIntervalSeconds": 5,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": 10.2,
+    "lon": -84.233,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/camara-crater-v-poas"
   },
   {
     "id": "costa-rica-turrialba-crater",
@@ -3861,7 +3886,12 @@
     "rightsBasis": "Official OVSICORI-UNA camera page; ERN links to the provider.",
     "freshnessEvidence": "OVSICORI states the Turrialba crater image refreshes automatically every five seconds.",
     "refreshIntervalSeconds": 5,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": 10.025,
+    "lon": -83.767,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/camara-v-turrialba"
   },
   {
     "id": "costa-rica-irazu",
@@ -3895,7 +3925,12 @@
     "rightsBasis": "Official OVSICORI-UNA camera page; ERN links to the provider.",
     "freshnessEvidence": "OVSICORI states the Irazú image refreshes automatically every five seconds.",
     "refreshIntervalSeconds": 5,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": 9.979,
+    "lon": -83.852,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/camara-2-v-turrialba"
   },
   {
     "id": "costa-rica-rincon-sensoria",
@@ -3929,7 +3964,12 @@
     "rightsBasis": "Official OVSICORI-UNA camera page; ERN links to the provider.",
     "freshnessEvidence": "OVSICORI describes the Sensoria camera as near-real-time and automatically refreshed every five seconds.",
     "refreshIntervalSeconds": 5,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": 10.83,
+    "lon": -85.324,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/rincon-de-la-vieja-sensoria2"
   },
   {
     "id": "ecuador-cotopaxi-monitoring",
@@ -3962,7 +4002,12 @@
     "story": "Official visual-monitoring cameras around Cotopaxi from Ecuador's geophysical institute.",
     "rightsBasis": "Official Instituto Geofísico EPN visual-monitoring page; ERN links to the provider and treats the imagery as current monitoring, not continuous video.",
     "freshnessEvidence": "Instituto Geofísico EPN currently publishes multiple visual camera viewpoints around Cotopaxi.",
-    "verificationClass": "QUASI_LIVE_OFFICIAL_MONITORING"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_MONITORING",
+    "lat": -0.683,
+    "lon": -78.436,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www2.igepn.edu.ec/cotopaxi-camaras"
   },
   {
     "id": "nicaragua-san-cristobal-volcano",
@@ -3996,7 +4041,12 @@
     "rightsBasis": "Official INETER government volcano-camera network; ERN links to the provider and does not copy or restream the imagery.",
     "freshnessEvidence": "INETER states its active-volcano webcam images are transmitted in real time every 30 seconds or 1 minute for public access.",
     "refreshIntervalSeconds": 60,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": 12.703,
+    "lon": -87.004,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/"
   },
   {
     "id": "nicaragua-telica-volcano",
@@ -4030,7 +4080,12 @@
     "rightsBasis": "Official INETER government volcano-camera network; ERN links to the provider and does not copy or restream the imagery.",
     "freshnessEvidence": "INETER states its active-volcano webcam images are transmitted in real time every 30 seconds or 1 minute for public access.",
     "refreshIntervalSeconds": 60,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": 12.602,
+    "lon": -86.845,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/"
   },
   {
     "id": "nicaragua-momotombo-volcano",
@@ -4064,7 +4119,12 @@
     "rightsBasis": "Official INETER government volcano-camera network; ERN links to the provider and does not copy or restream the imagery.",
     "freshnessEvidence": "INETER states its active-volcano webcam images are transmitted in real time every 30 seconds or 1 minute for public access.",
     "refreshIntervalSeconds": 60,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": 12.422,
+    "lon": -86.54,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/"
   },
   {
     "id": "nicaragua-masaya-volcano",
@@ -4098,7 +4158,12 @@
     "rightsBasis": "Official INETER government volcano-camera network; ERN links to the provider and does not copy or restream the imagery.",
     "freshnessEvidence": "INETER states its active-volcano webcam images are transmitted in real time every 30 seconds or 1 minute for public access.",
     "refreshIntervalSeconds": 60,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": 11.984,
+    "lon": -86.161,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/"
   },
   {
     "id": "nicaragua-concepcion-volcano",
@@ -4132,7 +4197,12 @@
     "rightsBasis": "Official INETER government volcano-camera network; ERN links to the provider and does not copy or restream the imagery.",
     "freshnessEvidence": "INETER states its active-volcano webcam images are transmitted in real time every 30 seconds or 1 minute for public access.",
     "refreshIntervalSeconds": 60,
-    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+    "lat": 11.538,
+    "lon": -85.622,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/"
   },
   {
     "id": "ecuador-reventador-monitoring",
@@ -4165,6 +4235,11 @@
     "story": "Official visual-monitoring camera imagery for El Reventador from Ecuador's geophysical institute.",
     "rightsBasis": "Official Instituto Geofísico EPN visual-monitoring page; ERN links to the provider and treats the imagery as current monitoring, not continuous video.",
     "freshnessEvidence": "Instituto Geofísico EPN currently publishes the Copete visual camera for El Reventador.",
-    "verificationClass": "QUASI_LIVE_OFFICIAL_MONITORING"
+    "verificationClass": "QUASI_LIVE_OFFICIAL_MONITORING",
+    "lat": -0.078,
+    "lon": -77.656,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateNote": "Approximate destination/reference coordinate used for discovery and mapping; not claimed as the exact camera position.",
+    "coordinateSourceUrl": "https://igepn.edu.ec/camaras/content/16-reventador"
   }
 ]
