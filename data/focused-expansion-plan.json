@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T05:15:00Z",
+  "generatedAt": "2026-10-03T05:30:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 161,
+    "currentHealthyDistinctPlaceBaseline": 172,
     "targetRange": [
       150,
       200
@@ -25,7 +25,7 @@
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
     "researchCandidateCount": 156,
-    "playbackGatedCandidateCount": 73,
+    "playbackGatedCandidateCount": 61,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan",
       "adjacentHighValueChecks": [
@@ -74,14 +74,14 @@
       "labelingRequired": true,
       "rule": "Quasi-live expands Search/Explore only; it never masquerades as continuous live video."
     },
-    "quasiLivePromotedCount": 24,
-    "currentHealthyLiveImageCount": 85,
+    "quasiLivePromotedCount": 35,
+    "currentHealthyLiveImageCount": 96,
     "progressToTarget": {
       "minimumTarget": 150,
-      "current": 161,
+      "current": 172,
       "remainingToMinimum": 0,
       "stretchTarget": 200,
-      "remainingToStretch": 39
+      "remainingToStretch": 28
     }
   },
   "businessLane": {
@@ -153,18 +153,18 @@
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 16,
-    "exactLinkQueueCount": 63,
+    "exactLinkQueueCount": 71,
     "sourceGatedQueueCount": 27,
     "sourceGapBlockedCount": 1,
     "sourceGatedOpportunityCount": 31,
     "quasiLiveCommercialRule": "A healthy quasi-live searchable place may unlock downstream travel planning, but commercial value never changes truth/currentness.",
     "currentOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 63,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 71,
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 27,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
     },
-    "currentOpportunityCount": 107
+    "currentOpportunityCount": 115
   },
   "safeguards": {
     "automaticPlacement": false,
