@@ -298,12 +298,14 @@
       "sourcePage": "https://www.salzburg.info/en/travel-info/webcam",
       "evidence": "Official Salzburg tourism webcam page describes a view over Mirabell Gardens toward Salzburg Cathedral and Hohensalzburg Fortress.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "exactTargetUrl": "https://www.salzburg.info/en/travel-info/webcam",
       "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
       "researchEvidence": "Official Salzburg Tourism webcam page confirms a view over Mirabell Gardens toward Salzburg Cathedral and Hohensalzburg Fortress; cookie consent may be required before the live media appears.",
       "humanCheckHint": "Open the official Salzburg webcam page and confirm the Mirabell/Old Town image or video is visibly current.",
-      "webEvidenceConfirmedAt": "2026-10-03"
+      "webEvidenceConfirmedAt": "2026-10-03",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "funchal-madeira-live",
@@ -444,9 +446,11 @@
       "sourcePage": "https://teletorn.ee/en/webcam/",
       "evidence": "Tallinn TV Tower's official webcam page describes a real-time panorama of Tallinn and surrounding areas.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "researchEvidence": "Tallinn TV Tower's official webcam page explicitly describes a real-time panorama of Tallinn and surrounding areas.",
-      "webEvidenceConfirmedAt": "2026-10-03"
+      "webEvidenceConfirmedAt": "2026-10-03",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "innsbruck-patscherkofel",
@@ -794,8 +798,10 @@
       "evidence": "Mauritius Now, the Mauritius Tourism Promotion Authority destination site, currently advertises 13 Mauritius webcams. MTPA's annual report identifies Grand Baie among the Mauritius Live camera locations.",
       "researchEvidence": "Current official tourism page says 'See Mauritius live' and advertises 13 webcams; MTPA annual-report evidence names Grand Baie as one of the live-cam locations.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Mauritius Now page, enter the webcam experience, and confirm the Grand Baie camera is present and visibly current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Mauritius Now page, enter the webcam experience, and confirm the Grand Baie camera is present and visibly current.",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "mauritius-pointe-desny",
@@ -809,8 +815,10 @@
       "evidence": "Mauritius Now currently advertises 13 live webcams; MTPA's annual report identifies Pointe d’Esny among the Mauritius Live camera locations.",
       "researchEvidence": "Current official tourism family plus MTPA annual-report evidence supports Pointe d’Esny as a named Mauritius Live camera location; current playback still requires owner verification.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Mauritius Now webcam experience and confirm Pointe d’Esny is present and visibly current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Mauritius Now webcam experience and confirm Pointe d’Esny is present and visibly current.",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "mauritius-saint-felix",
@@ -884,8 +892,10 @@
       "evidence": "Official Wānaka tourism webcam page lists a view towards Wānaka from the top of Roys Peak.",
       "researchEvidence": "Lake Wānaka Tourism publishes this camera as a current regional webcam.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Wānaka webcams page and confirm the Roys Peak view toward Wānaka is current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Wānaka webcams page and confirm the Roys Peak view toward Wānaka is current.",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "wanaka-lake-view-roys-peak",
@@ -899,8 +909,10 @@
       "evidence": "Official Wānaka tourism page lists a Lake Wānaka view looking up the lake from Roys Peak.",
       "researchEvidence": "Lake Wānaka Tourism publishes this as a current webcam view.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the Wānaka webcam page and confirm the Lake Wānaka view is current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the Wānaka webcam page and confirm the Lake Wānaka view is current.",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "wanaka-mt-aspiring-view",
@@ -914,8 +926,10 @@
       "evidence": "Official Wānaka tourism page lists a webcam looking toward Mt Aspiring National Park.",
       "researchEvidence": "Lake Wānaka Tourism identifies this current webcam view toward Mt Aspiring National Park.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the Wānaka webcam page and confirm the Mt Aspiring view is current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the Wānaka webcam page and confirm the Mt Aspiring view is current.",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "wanaka-lake-hawea-view",
@@ -944,8 +958,10 @@
       "evidence": "Official Rotorua tourism webcam page identifies a City & Lake Rotorua view from Skyline Rotorua.",
       "researchEvidence": "Rotorua NZ publishes this live view overlooking Rotorua city, Lake Rotorua and surrounding landscape.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the Rotorua webcams page and confirm the Skyline Rotorua city/lake view is visibly current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the Rotorua webcams page and confirm the Skyline Rotorua city/lake view is visibly current.",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "rotorua-museum-gardens-lake",
@@ -959,8 +975,10 @@
       "evidence": "Official Rotorua tourism page lists the Rotorua Museum, Government Gardens & Lake Rotorua webcam, sponsored by Rotorua Lakes Council.",
       "researchEvidence": "Rotorua NZ describes the camera as showing Government Gardens, Rotorua Museum, Blue Baths and lake views.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the Rotorua webcams page and confirm the Museum/Government Gardens/Lake view is visibly current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the Rotorua webcams page and confirm the Museum/Government Gardens/Lake view is visibly current.",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "shymbulak-mountain-resort",
@@ -974,8 +992,10 @@
       "evidence": "Shymbulak's official channels direct visitors to shymbulak.com/live for online mountain cameras and current weather/conditions.",
       "researchEvidence": "Official Shymbulak Mountain Resort communications explicitly say its online cameras work around the clock and are available on the official website.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Shymbulak live page and confirm at least one mountain camera visibly updates."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Shymbulak live page and confirm at least one mountain camera visibly updates.",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "karakol-ski-base",
@@ -1004,8 +1024,10 @@
       "evidence": "KG Camera lists a camera in Ala-Archa Natural Park installed at 2,200 meters above sea level and states the network is live video with a 20-second delay.",
       "researchEvidence": "KG Camera exposes a direct Ala-Archa Natural Park page; the camera is installed at 2,200 m and the network states it is live surveillance without archiving, delayed by about 20 seconds.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the direct Ala-Archa page and confirm the mountain view updates normally."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the direct Ala-Archa page and confirm the mountain view updates normally.",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "osh-sulaiman-too",
@@ -1092,10 +1114,12 @@
       "exactTargetUrl": "https://kg.camera/en/camera/KarVen_4_Seasons",
       "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "evidence": "KG Camera publishes a direct live-surveillance page overlooking the beach at KarVen Four Seasons on the northern shore of Lake Issyk-Kul.",
       "researchEvidence": "This is one of the strongest scenic candidates in the Kyrgyzstan network: a current lake/beach view at Sary-Oy; KG Camera states feeds are unarchived with about a 20-second delay.",
-      "humanCheckHint": "Open the direct KarVen Four Seasons page and confirm the Lake Issyk-Kul beach view updates normally."
+      "humanCheckHint": "Open the direct KarVen Four Seasons page and confirm the Lake Issyk-Kul beach view updates normally.",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "bishkek-ala-too-square",
@@ -1229,8 +1253,10 @@
       "evidence": "Official Bled tourism webcam page exposes a Bled Tourist Board camera plus a Straža Bled live stream; the page identifies the stream type as LIVE.",
       "researchEvidence": "Strong scenic gap-filler for Slovenia and the Julian Alps; one real destination with multiple views, not multiple fake places.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Bled webcam page and confirm at least one Lake Bled/Straža view visibly updates."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Bled webcam page and confirm at least one Lake Bled/Straža view visibly updates.",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "mykonos-new-port",
@@ -1274,8 +1300,10 @@
       "evidence": "Poiana Brașov tourism webcam pages list multiple live resort and mountain cameras including Ruia plateau, gondola and ski-slope views.",
       "researchEvidence": "Adds Romania and a strong mountain-resort destination; keep as one Poiana Brașov place despite multiple camera angles.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the Poiana Brașov webcam page and confirm one panoramic/mountain camera visibly updates."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the Poiana Brașov webcam page and confirm one panoramic/mountain camera visibly updates.",
+      "promotedAt": "2026-10-03T05:05:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
     },
     {
       "id": "istanbul-sultanahmet-live",
