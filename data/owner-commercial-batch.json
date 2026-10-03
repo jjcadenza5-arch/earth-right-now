@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T05:45:00Z",
+  "status": "DORMANT_UNTIL_OWNER_READY",
+  "purpose": "Small high-value exact-link batch prepared after ERN reached 200 searchable places. It prevents the owner from facing the full commercial backlog at once.",
+  "rules": {
+    "manualTrackedLinkGenerationOnly": true,
+    "manualOpenAndVerify": true,
+    "automaticPlacement": false,
+    "automaticLinkRewriting": false,
+    "paidRanking": false,
+    "oneDestinationLevelLinkPreferred": true
+  },
+  "items": [
+    {
+      "id": "tiqets-vienna",
+      "destination": "Vienna",
+      "partner": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "placeIds": [
+        "vienna-city-hall-ringstrasse"
+      ],
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/vienna-attractions-c60335/",
+      "nextOwnerAction": "Generate one Vienna destination-level Tiqets tracked link in Travelpayouts only after owner verification; keep commercial placement downstream from discovery."
+    },
+    {
+      "id": "tiqets-georgia-aquarium",
+      "destination": "Georgia Aquarium / Atlanta",
+      "partner": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "placeIds": [
+        "georgia-aquarium"
+      ],
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/georgia-aquarium-tickets-l146833/",
+      "nextOwnerAction": "Generate one Georgia Aquarium Tiqets tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "tiqets-san-diego-zoo",
+      "destination": "San Diego Zoo",
+      "partner": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "placeIds": [
+        "san-diego-zoo"
+      ],
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/san-diego-zoo-tickets-l146256/",
+      "nextOwnerAction": "Generate one San Diego Zoo Tiqets tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "klook-mayon",
+      "destination": "Mayon / Albay",
+      "partner": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "mayon-volcano"
+      ],
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-PH/destination/p50132685-mayon-volcano/5-tour/",
+      "nextOwnerAction": "Generate one Mayon/Albay destination-level Klook tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "klook-chishang-taitung",
+      "destination": "Chishang / Taitung",
+      "partner": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "chihshang-paradise-road"
+      ],
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/destination/c58093-chishang/",
+      "nextOwnerAction": "Generate one Chishang/Taitung Klook tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "klook-hong-kong",
+      "destination": "Hong Kong",
+      "partner": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "hong-kong-victoria-harbour",
+        "hong-kong-victoria-peak"
+      ],
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-HK/destination/c2-hong-kong/1-things-to-do/",
+      "nextOwnerAction": "Generate one Hong Kong destination-level Klook tracked link in Travelpayouts and verify it manually; reuse it for Harbour/Peak discovery rather than creating duplicate commercial density."
+    },
+    {
+      "id": "viator-grand-canyon",
+      "destination": "Grand Canyon National Park",
+      "partner": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "grand-canyon-national-park"
+      ],
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Grand-Canyon-National-Park-tours/Tours-and-Sightseeing/d815-g12",
+      "nextOwnerAction": "Generate one Grand Canyon destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-meads-bay",
+      "destination": "Meads Bay / Anguilla",
+      "partner": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "meads-bay-anguilla"
+      ],
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Anguilla-attractions/Meads-Bay/d810-a24644",
+      "nextOwnerAction": "Generate one Meads Bay/Anguilla Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-mauna-loa",
+      "destination": "Mauna Loa / Hawaiʻi Island",
+      "partner": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "mauna-loa-volcano"
+      ],
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Big-Island-of-Hawaii-attractions/Mauna-Loa/d669-a22599",
+      "nextOwnerAction": "Generate one Mauna Loa or Big Island volcano destination-level Viator partner link and manually verify it before activation."
+    },
+    {
+      "id": "viator-panama-canal-future",
+      "destination": "Panama Canal",
+      "partner": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "panama-canal-miraflores-locks",
+        "panama-canal-gatun-locks",
+        "panama-canal-pedro-miguel-locks",
+        "panama-canal-cocoli-locks",
+        "panama-canal-agua-clara-locks"
+      ],
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Panama-City/d950-ttd",
+      "nextOwnerAction": "Generate one Panama Canal destination-level Viator partner link and manually verify it; reuse across verified lock places without duplicate commercial density."
+    },
+    {
+      "id": "viator-st-maarten",
+      "destination": "St. Maarten / Philipsburg",
+      "partner": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "little-bay-sint-maarten",
+        "st-maarten-simpson-bay"
+      ],
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Philipsburg/Small-Cultural-Group-Tours/d5627-252077P2",
+      "nextOwnerAction": "Generate one St. Maarten destination-level Viator partner link and verify it manually. If Maho, Great Bay or Simpson Bay cameras are later promoted, reuse the same city/island-level link rather than creating duplicate commercial density."
+    },
+    {
+      "id": "viator-madeira",
+      "destination": "Madeira",
+      "partner": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "madeira-funchal",
+        "madeira-porto-moniz",
+        "madeira-calheta",
+        "madeira-machico"
+      ],
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Madeira/d5392-ttd",
+      "nextOwnerAction": "Owner only needs to open and confirm the prepared direct Viator URL when ERN batches exact-link verification; one island-level link should serve all four Madeira places."
+    }
+  ],
+  "note": "No action required now. Activate this batch only when autonomous research is no longer the bottleneck or the owner explicitly asks to process affiliate links."
+}
