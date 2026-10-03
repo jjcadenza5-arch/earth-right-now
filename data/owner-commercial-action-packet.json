@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T10:40:00Z",
+  "generatedAt": "2026-10-03T11:35:00Z",
   "status": "OWNER_ACTION_DORMANT_UNTIL_BUNDLED_LINK_SESSION",
   "principle": "Bundle owner-only commercial actions; do not interrupt repeatedly.",
   "tripComCheck": {
@@ -65,9 +65,16 @@
       "destination": "Lucerne / Lake Lucerne",
       "partner": "viator",
       "reason": "High-quality scenic destination with strong visitor-planning intent."
+    },
+    {
+      "priority": 9,
+      "id": "klook-andorra",
+      "destination": "Andorra",
+      "partner": "klook",
+      "reason": "Three new official real-time searchable mountain places; one country-level Klook link can serve them without duplicate density."
     }
   ],
-  "executionRule": "Bundle destination exact links and utility links into one later owner session; do not interrupt owner one-by-one and do not recheck locked programs without a material trigger.",
+  "executionRule": "Bundle exact-link work into a later owner session only after autonomous expansion/maintenance work is exhausted; locked Travelpayouts programs are rechecked only after a material traffic or account-state trigger.",
   "safeguards": {
     "paidRanking": false,
     "automaticPlacement": false,
