@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:55:00Z",
+  "generatedAt": "2026-10-03T04:15:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1174,6 +1174,111 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/c21926-toyama/",
       "publicInventoryEvidence": "Klook currently lists Toyama Pass and multiple Toyama/Toyama Bay tours.",
       "nextAction": "Search the Travelpayouts Klook tools for a Toyama destination link; use only if the destination scope is useful for Tonami visitors."
+    },
+    {
+      "id": "synced-auckland-viaduct-harbour",
+      "destination": "auckland-viaduct-harbour",
+      "placeIds": [
+        "auckland-viaduct-harbour"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Canonical opportunity synced from 3 already-verified ERN travel offers so business coverage accounting matches the live verified inventory.",
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Maintain verification and observe aggregate commercial clicks; do not add duplicate placement density without visitor utility.",
+      "trackingUrl": "https://www.viator.com/tours/Auckland/Hobbiton-Movie-Set-and-Waitomo-Glowworm-Caves-Day-Trip-from-Auckland/d391-37991P3?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-09-27T13:24:00Z",
+      "syncedOfferIds": [
+        "viator-auckland-activities-pilot",
+        "klook-auckland-activities",
+        "welcome-pickups-auckland-transfer"
+      ],
+      "verifiedProviders": [
+        "Viator",
+        "Klook",
+        "Welcome Pickups"
+      ],
+      "verifiedPartners": [
+        "viator",
+        "klook",
+        "welcome-pickups"
+      ]
+    },
+    {
+      "id": "synced-new-york-harbor",
+      "destination": "new-york-harbor",
+      "placeIds": [
+        "new-york-harbor"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "Canonical opportunity synced from 2 already-verified ERN travel offers so business coverage accounting matches the live verified inventory.",
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Maintain verification and observe aggregate commercial clicks; do not add duplicate placement density without visitor utility.",
+      "trackingUrl": "https://tiqets.tpo.mx/cCt55uo7",
+      "verifiedAt": "2026-09-28T13:52:00Z",
+      "syncedOfferIds": [
+        "tiqets-statue-liberty-close",
+        "klook-new-york-skyline"
+      ],
+      "verifiedProviders": [
+        "Tiqets",
+        "Klook"
+      ],
+      "verifiedPartners": [
+        "tiqets",
+        "klook"
+      ]
+    },
+    {
+      "id": "synced-coogee-randwick-beaches",
+      "destination": "coogee-randwick-beaches",
+      "placeIds": [
+        "coogee-randwick-beaches"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Canonical opportunity synced from 1 already-verified ERN travel offer so business coverage accounting matches the live verified inventory.",
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Maintain verification and observe aggregate commercial clicks; do not add duplicate placement density without visitor utility.",
+      "trackingUrl": "https://klook.tpo.mx/1tpoK4dK",
+      "verifiedAt": "2026-09-28T14:18:00Z",
+      "syncedOfferIds": [
+        "klook-sydney-activities"
+      ],
+      "verifiedProviders": [
+        "Klook"
+      ],
+      "verifiedPartners": [
+        "klook"
+      ]
+    },
+    {
+      "id": "synced-waikiki-beach",
+      "destination": "waikiki-beach",
+      "placeIds": [
+        "waikiki-beach"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Canonical opportunity synced from 1 already-verified ERN travel offer so business coverage accounting matches the live verified inventory.",
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Maintain verification and observe aggregate commercial clicks; do not add duplicate placement density without visitor utility.",
+      "trackingUrl": "https://klook.tpo.mx/D2fGjnFI",
+      "verifiedAt": "2026-09-28T14:22:00Z",
+      "syncedOfferIds": [
+        "klook-honolulu-activities"
+      ],
+      "verifiedProviders": [
+        "Klook"
+      ],
+      "verifiedPartners": [
+        "klook"
+      ]
     }
   ]
 }
