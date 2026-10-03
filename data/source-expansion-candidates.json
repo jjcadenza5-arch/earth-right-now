@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:00:00Z",
+  "generatedAt": "2026-10-03T12:15:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -2596,6 +2596,36 @@
       "priority": "P2",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Use the live map to choose one visually strong village camera; promote exact places individually rather than the network."
+    },
+    {
+      "id": "shetland-lerwick-town-hall",
+      "title": "Lerwick — Town Hall",
+      "country": "Shetland Islands",
+      "region": "Lerwick",
+      "provider": "Shetland.org / Shetland Webcams",
+      "sourcePage": "https://www.shetland.org/videos",
+      "exactTargetUrl": "https://www.shetland.org/videos",
+      "exactTargetType": "DESTINATION_SITE_LIVE_WEBCAM_PAGE",
+      "evidence": "Shetland.org currently lists Lerwick Town Hall Cam with a Live label.",
+      "researchEvidence": "Official destination site exposes a live Lerwick Town Hall camera, but exact playback should be human-confirmed before promotion.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open Shetland.org Videos and confirm Lerwick Town Hall Cam is visibly live/current."
+    },
+    {
+      "id": "shetland-cliff-cam",
+      "title": "Shetland — Cliff Cam",
+      "country": "Shetland Islands",
+      "region": "Shetland",
+      "provider": "Shetland.org / Shetland Webcams",
+      "sourcePage": "https://www.shetland.org/videos",
+      "exactTargetUrl": "https://www.shetland.org/videos",
+      "exactTargetType": "DESTINATION_SITE_LIVE_WEBCAM_PAGE",
+      "evidence": "Shetland.org currently lists Cliff Cam 3 with a Live label.",
+      "researchEvidence": "Official destination site exposes a live cliff camera; exact playback should be human-confirmed before promotion.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open Shetland.org Videos and confirm Cliff Cam 3 is visibly live/current."
     }
   ],
   "notes": [
