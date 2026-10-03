@@ -1,4 +1,4 @@
-const INTENTS=new Set(["stay","eat","transport","activities","tickets","services","connectivity"]);
+const INTENTS=new Set(["stay","eat","transport","activities","tickets","services","connectivity","insurance"]);
 function https(raw){try{const u=new URL(String(raw||""));return u.protocol==="https:"&&!u.username&&!u.password&&Boolean(u.hostname)}catch{return false}}
 function commonReasons(raw,now,maxAgeDays){
  const reasons=[],reviewed=Date.parse(raw?.termsReviewedAt||""),ageDays=Number.isFinite(reviewed)?Math.max(0,(Number(now)-reviewed)/864e5):Infinity;
