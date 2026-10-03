@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:55:00Z",
+  "generatedAt": "2026-10-03T13:10:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 250,
+    "currentHealthyDistinctPlaceBaseline": 256,
     "targetRange": [
-      200,
-      250
+      250,
+      275
     ],
-    "strategy": "250 searchable-place milestone reached. Continue only with quality-led geographic gaps, stronger source families, or replacements; quasi-live remains acceptable for Search/Explore while Watch Earth stays stricter.",
+    "strategy": "250 milestone exceeded. Continue toward a soft 275 only through quality-led geographic gaps, stronger official/provider source families, and clearly labeled quasi-live/current-image discovery; Watch Earth remains stricter.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -24,8 +24,8 @@
       "mauritius-grand-baie"
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
-    "researchCandidateCount": 178,
-    "playbackGatedCandidateCount": 14,
+    "researchCandidateCount": 181,
+    "playbackGatedCandidateCount": 10,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan",
       "adjacentHighValueChecks": [
@@ -77,12 +77,12 @@
     "quasiLivePromotedCount": 102,
     "currentHealthyLiveImageCount": 171,
     "progressToTarget": {
-      "minimumTarget": 200,
-      "current": 250,
+      "minimumTarget": 250,
+      "current": 256,
       "remainingToMinimum": 0,
-      "stretchTarget": 250,
-      "remainingToStretch": 0,
-      "status": "250_SEARCHABLE_MILESTONE_REACHED"
+      "stretchTarget": 275,
+      "remainingToStretch": 19,
+      "status": "QUALITY_LED_SOFT_STRETCH"
     },
     "recentExpansionFamilies": [
       "La Réunion — four official tourism/scientific current webcam places",
@@ -180,9 +180,9 @@
     "istanbulDenpasarUnlocked": true,
     "currentCommercialStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 105,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 10,
-      "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 110,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 5,
+      "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
     "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
     "futureUnlockPriority": [
@@ -205,10 +205,11 @@
     "etoshaNote": "Official Namibia Wildlife Resorts evidence supports an Okaukuejo live-camera candidate, but ERN keeps it research-only until exact target playback is human-confirmed.",
     "trafficGrowthPlan": "data/traffic-growth-priorities.json",
     "ownerActionPacket": "data/owner-action-packet.json",
-    "currentOpportunityCount": 132,
+    "currentOpportunityCount": 133,
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "ownerWorksheet": "data/exact-link-generation-worksheet.json",
-    "nextMode": "TRAFFIC_GROWTH_AND_BATCHED_EXACT_LINK_CONVERSION"
+    "nextMode": "TRAFFIC_GROWTH_AND_BATCHED_EXACT_LINK_CONVERSION",
+    "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json"
   },
   "safeguards": {
     "automaticPlacement": false,
