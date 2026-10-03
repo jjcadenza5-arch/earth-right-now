@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:30:00Z",
+  "generatedAt": "2026-10-03T05:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -560,8 +560,10 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "The SANParks Kruger webcam family can support one park-level trip-planning bridge once at least one new camera is promoted; use one shared commercial action rather than one affiliate link per camp.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "nextAction": "After at least one new Kruger camera is promoted, generate one Kruger destination-level Viator partner link and manually verify it; reuse it across verified Kruger places without duplicate commercial density."
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "generate one Kruger destination-level Viator partner link and manually verify it; reuse it across verified Kruger places without duplicate commercial density.",
+      "sourceGateResolvedAt": "2026-10-03T05:10:00Z",
+      "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
     {
       "id": "viator-kilauea",
@@ -621,10 +623,12 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Klook currently exposes a Mauritius destination with active tours, cruises, snorkeling, island trips and outdoor activities, and Klook is already an active ERN relationship.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/co1011-mauritius/1-things-to-do/",
       "publicInventoryEvidence": "Current Klook Mauritius inventory includes island tours, snorkeling/catamaran products, Chamarel/7 Coloured Earth, whale watching, kayaking and other visitor activities.",
-      "nextAction": "After at least one Mauritius Tourism webcam is owner-confirmed and promoted, generate one Mauritius destination-level Klook tracked link in Travelpayouts and manually verify it before public activation."
+      "nextAction": "generate one Mauritius destination-level Klook tracked link in Travelpayouts and manually verify it before public activation.",
+      "sourceGateResolvedAt": "2026-10-03T05:10:00Z",
+      "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
     {
       "id": "viator-boulders-beach",
@@ -715,10 +719,12 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Viator currently has multiple Almaty/Shymbulak experiences including Medeu, Shymbulak cable-car and mountain sightseeing.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Almaty/Almaty-city-tour-with-Medeo-and-Shymbulak/d32977-130849P7",
       "publicInventoryEvidence": "Current Viator inventory explicitly includes Shymbulak mountain-resort itineraries and cable-car visits.",
-      "nextAction": "After Shymbulak live playback is owner-confirmed and promoted, generate one Almaty/Shymbulak Viator partner link and manually verify it."
+      "nextAction": "generate one Almaty/Shymbulak Viator partner link and manually verify it.",
+      "sourceGateResolvedAt": "2026-10-03T05:10:00Z",
+      "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
     {
       "id": "viator-karakol-future",
@@ -743,10 +749,12 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "The Ala-Archa camera candidate maps directly to established Bishkek/Ala-Archa day-tour inventory on Viator.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-PH/tours/Bishkek/One-Day-Ala-Archa-National-Park-Bishkek-City-Tour/d50202-240299P2",
       "publicInventoryEvidence": "Viator currently lists full-day Bishkek + Ala-Archa National Park tours with hiking and city sightseeing.",
-      "nextAction": "After Ala-Archa playback is owner-confirmed and promoted, generate one Bishkek/Ala-Archa Viator tracked link and verify it before public activation."
+      "nextAction": "generate one Bishkek/Ala-Archa Viator tracked link and verify it before public activation.",
+      "sourceGateResolvedAt": "2026-10-03T05:10:00Z",
+      "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
     {
       "id": "viator-issyk-kul-future",
@@ -789,10 +797,12 @@
       "intent": "activities",
       "priority": "P2",
       "reason": "Klook currently includes Ala-Archa in Kyrgyzstan multi-day nature itineraries, which could be useful after a verified Ala-Archa live mountain view.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/activity/156338-9d-kazakhstan-kyrgyzstan-tour/",
       "publicInventoryEvidence": "Current Klook Kyrgyzstan itinerary includes Ala-Archa National Park.",
-      "nextAction": "After Ala-Archa camera verification, search the ERN Klook account for a cleaner Ala-Archa/Bishkek product before any public activation."
+      "nextAction": "After Ala-Archa camera verification, search the ERN Klook account for a cleaner Ala-Archa/Bishkek product before any public activation.",
+      "sourceGateResolvedAt": "2026-10-03T05:10:00Z",
+      "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
     {
       "id": "klook-gudauri-future",
@@ -820,10 +830,12 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Klook currently lists Almaty tours that include Shymbulak and its cable car, aligning closely with a future verified Shymbulak live mountain view.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/activity/160888-almaty-private-city-tour-with-qazaq-adventure/",
       "publicInventoryEvidence": "Current Klook Almaty inventory includes a Green Bazaar & Shymbulak half-day private tour.",
-      "nextAction": "After Shymbulak camera verification, search ERN's Klook account for the cleanest Shymbulak/Almaty tracked destination link."
+      "nextAction": "After Shymbulak camera verification, search ERN's Klook account for the cleanest Shymbulak/Almaty tracked destination link.",
+      "sourceGateResolvedAt": "2026-10-03T05:10:00Z",
+      "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
     {
       "id": "viator-everest-future",
@@ -1570,6 +1582,123 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Mexico-City/Trekking-Through-The-Volcanoes/d628-147652P8",
       "publicInventoryEvidence": "Current Viator Mexico City inventory includes trekking in the Popocatépetl/Iztaccíhuatl area and Puebla/Cholula day trips with Popocatépetl viewpoints.",
       "nextAction": "Generate a suitable Mexico City/Popocatépetl Viator partner link and verify it manually before activation."
+    },
+    {
+      "id": "tiqets-tallinn",
+      "destination": "Tallinn / TV Tower",
+      "placeIds": [
+        "tallinn-tv-tower"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "Tallinn TV Tower is now a healthy searchable ERN place and Tiqets has Tallinn Card/TV Tower inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and manually verify one Tallinn/Tower Tiqets tracked link before public activation."
+    },
+    {
+      "id": "viator-bled",
+      "destination": "Bled",
+      "placeIds": [
+        "bled-lake"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Lake Bled is now a healthy searchable ERN place and Viator has broad Bled sightseeing/day-trip inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and manually verify one Bled destination-level Viator link."
+    },
+    {
+      "id": "tiqets-salzburg",
+      "destination": "Salzburg",
+      "placeIds": [
+        "salzburg-old-town"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "Salzburg Old Town/Mirabell is now a healthy searchable ERN place and Tiqets has Salzburg Card/attraction inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and manually verify one Salzburg destination-level Tiqets link."
+    },
+    {
+      "id": "klook-mauritius-grand-baie",
+      "destination": "Mauritius / Grand Baie",
+      "placeIds": [
+        "mauritius-grand-baie"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Grand Baie is now searchable in ERN and has strong island activity utility.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Klook Mauritius coverage and generate one exact destination/island link only if inventory quality is strong."
+    },
+    {
+      "id": "viator-rotorua",
+      "destination": "Rotorua",
+      "placeIds": [
+        "rotorua-lake-city"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Rotorua is now searchable in ERN and Viator has strong geothermal/culture/activity inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and manually verify one Rotorua destination-level Viator link."
+    },
+    {
+      "id": "klook-wanaka",
+      "destination": "Wānaka",
+      "placeIds": [
+        "wanaka-region"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Wānaka is now searchable in ERN and Klook may provide useful South Island activities.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check Wānaka coverage and only generate a tracked link if the destination inventory is clearly useful."
+    },
+    {
+      "id": "viator-ala-archa",
+      "destination": "Ala-Archa / Bishkek",
+      "placeIds": [
+        "ala-archa-natural-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Ala-Archa is now searchable in ERN and can lead naturally to hiking/day-trip planning from Bishkek.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and manually verify an Ala-Archa/Bishkek Viator destination or activity link."
+    },
+    {
+      "id": "viator-issyk-kul",
+      "destination": "Issyk-Kul",
+      "placeIds": [
+        "issyk-kul-karven"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Issyk-Kul is now searchable in ERN and can support lake/tour planning.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Check for a clean Issyk-Kul Viator destination-level link before public activation."
+    },
+    {
+      "id": "viator-shymbulak",
+      "destination": "Shymbulak / Almaty",
+      "placeIds": [
+        "shymbulak-mountain-resort"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Shymbulak is now searchable in ERN and aligns with Almaty mountain/day-trip inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and manually verify one Shymbulak/Almaty Viator link before public activation."
     }
   ]
 }
