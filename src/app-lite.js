@@ -420,12 +420,7 @@ function search(q,options={updateUrl:false}){
  $("#searchStatus").textContent=x?`${ag.length} place${ag.length===1?"":"s"} · ${cp} current${!cp&&matches.length?" · reference-only":""}${lm.length?" · "+lm.length+" local":""}`:`${ag.length} places · showing ${groups.length} · ${cp} current`;
  if(x)globalThis.ERN_SEARCH_ANALYTICS?.(raw,groups.length+lm.length);
 }
-function localPlaceSignals(s){
- const hay=[s.title,s.region,s.story,...(s.categories||[])].filter(Boolean).join(" ").toLowerCase();
- const terms=[["village",3],["small town",3],["neighbourhood",2],["neighborhood",2],["local",2],["market",1],["farm",2],["harbour",1],["harbor",1],["promenade",1],["square",1],["rest camp",2],["ski area",1],["beach",1],["pier",1],["marina",1],["waterfront",1]];
- const famous=["iconic","world famous","famous","major city"].some(x=>hay.includes(x));
- const score=terms.reduce((n,[term,w])=>n+(hay.includes(term)?w:0),0);return{score,worth:score>=2&&!famous};
-}
+function localPlaceSignals(s){const hay=[s.title,s.region,s.story,...(s.categories||[])].filter(Boolean).join(" ").toLowerCase(),terms=[["village",3],["small town",3],["neighbourhood",2],["neighborhood",2],["local",2],["market",1],["farm",2],["harbour",1],["harbor",1],["promenade",1],["square",1],["rest camp",2],["ski area",1],["beach",1],["pier",1],["marina",1],["waterfront",1]],famous=["iconic","world famous","famous","major city"].some(x=>hay.includes(x)),score=terms.reduce((n,[term,w])=>n+(hay.includes(term)?w:0),0);return{score,worth:score>=2&&!famous}}
 function renderLocalEarth(){const picks=state.sources.filter(guideEligible).map(s=>({s,...localPlaceSignals(s)})).filter(x=>x.worth).sort((a,b)=>b.score-a.score||baseScore(b.s)-baseScore(a.s)).slice(0,6).map(x=>x.s);$("#localEarthGrid").replaceChildren(...picks.map(wanderCard));$("#localEarth").hidden=!picks.length}
 function wanderCard(s){
  const b=document.createElement("button");b.type="button";b.className="wander-card";
