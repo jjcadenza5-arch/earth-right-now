@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:10:00Z",
+  "generatedAt": "2026-10-03T04:20:00Z",
   "principles": {
     "existingPartnersFirst": true,
     "exactTrackedLinkRequired": true,
@@ -9,7 +9,7 @@
     "automaticPlacement": false,
     "automaticLinkRewriting": false
   },
-  "currentVerifiedOpportunityCount": 12,
+  "currentVerifiedOpportunityCount": 16,
   "exactLinkQueueCount": 27,
   "sourceGatedQueueCount": 37,
   "sourceGapBlockedCount": 1,
@@ -85,27 +85,6 @@
       ],
       "suggestedExistingPartners": [
         "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "new-york-harbor",
-      "title": "New York Skyline — Jersey City",
-      "country": "United States",
-      "region": "New York / New Jersey",
-      "quality": 95,
-      "moment": 96,
-      "categories": [
-        "Cities & Streets",
-        "Beautiful Earth",
-        "Interesting Earth"
-      ],
-      "suggestedExistingPartners": [
-        "tiqets",
-        "viator",
-        "welcome-pickups"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
@@ -464,21 +443,38 @@
       "publicActivationAllowed": false
     },
     {
-      "placeId": "auckland-viaduct-harbour",
-      "title": "Auckland Viaduct Harbour",
-      "country": "New Zealand",
-      "region": "Auckland",
-      "quality": 90,
-      "moment": 85,
+      "placeId": "nossob-kgalagadi",
+      "title": "Nossob — Kgalagadi",
+      "country": "South Africa",
+      "region": "Kgalagadi Transfrontier Park",
+      "quality": 86,
+      "moment": 88,
       "categories": [
-        "Cities & Harbours",
+        "Wildlife",
         "Beautiful Earth",
         "Interesting Earth"
       ],
       "suggestedExistingPartners": [
-        "viator",
-        "klook",
-        "welcome-pickups"
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "ski-arlberg",
+      "title": "Ski Arlberg",
+      "country": "Austria",
+      "region": "St. Anton / Lech / Zürs",
+      "quality": 88,
+      "moment": 86,
+      "categories": [
+        "Mountains & Snow",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
