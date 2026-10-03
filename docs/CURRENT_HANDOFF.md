@@ -517,3 +517,15 @@ Arctic / Faroe / Namibia continuation checkpoint — 2026-10-03:
 - Content expansion now shifts from raw count growth to quality-led gap filling, source replacement and stronger regional balance.
 - Owner Travelpayouts screenshots were recorded as account evidence: Trip.com, Booking.com, Agoda, Expedia, Hotels.com, GetYourGuide, Tripadvisor Experiences, DiscoverCars, Traveloka, Omio, 12GO, Hostelworld, Vrbo, Ticketmaster, Vio.com, Rakuten Travel, VisitorsCoverage and Insubuy are visible in the program catalog but treated as traffic-gated/not-yet-unlocked until platform or owner confirmation changes.
 - Business priority remains: active partners first, grow qualified traffic, batch exact-link generation, then revisit high-value stay/activity programs when unlock signals occur.
+
+
+Post-250 reconciliation — 2026-10-03:
+- ERN catalog now contains 258 source records representing 250 healthy distinct searchable places.
+- Truth mix includes 13 LIVE_VIDEO, 72 EXTERNAL_LIVE and 171 LIVE_IMAGE records; quasi-live/current-image is intentionally used for Search/Explore but not treated as Watch Earth continuous live video.
+- Source expansion registry now has 178 researched candidates: 55 promoted to source registry, 102 promoted as searchable quasi-live, 7 superseded by better quasi-live promotion and only 14 still requiring human playback verification.
+- Business registry contains 132 opportunities: 16 verified-link placements, 108 exact-link/account-search items, 6 source-gated and 2 source-gap blocked.
+- Newly promoted source work legitimately unlocked Prague/Tiqets, Karakol/Viator and Issyk-Kul/Viator into the exact-link stage.
+- Pamir remains blocked: Osh is a useful gateway but does not count as a Pamir-core source.
+- Travelpayouts screenshots are preserved as account evidence that many strategic programs are visible but traffic-gated/not yet unlocked. Recheck is event-driven, not calendar-based.
+- Post-250 content work is now maintenance, regional balance and stronger-source replacement rather than raw-count expansion.
+- Next business mode is traffic growth plus batched exact-link conversion; owner actions are bundled in data/exact-link-generation-worksheet.json.
