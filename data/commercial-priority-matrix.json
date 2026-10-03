@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:20:00Z",
+  "generatedAt": "2026-10-03T04:24:00Z",
   "principles": {
     "existingPartnersFirst": true,
     "exactTrackedLinkRequired": true,
@@ -10,9 +10,8 @@
     "automaticLinkRewriting": false
   },
   "currentVerifiedOpportunityCount": 16,
-  "exactLinkQueueCount": 27,
-  "sourceGatedQueueCount": 37,
-  "sourceGapBlockedCount": 1,
+  "exactLinkQueueCount": 32,
+  "sourceGatedQueueCount": 34,
   "researchPriority": [
     {
       "placeId": "koli-lake-pielinen",
@@ -139,7 +138,6 @@
         "Beautiful Earth"
       ],
       "suggestedExistingPartners": [
-        "viator",
         "welcome-pickups"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
@@ -269,6 +267,26 @@
       "moment": 90,
       "categories": [
         "Parks & Scenic"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "antarctica-casey-station",
+      "title": "Casey Research Station — Antarctica",
+      "country": "Antarctica",
+      "region": "Windmill Islands",
+      "quality": 91,
+      "moment": 88,
+      "categories": [
+        "Polar Earth",
+        "Science & Research",
+        "Beautiful Earth",
+        "Quasi-Live"
       ],
       "suggestedExistingPartners": [
         "viator"
@@ -408,6 +426,27 @@
       "publicActivationAllowed": false
     },
     {
+      "placeId": "antarctica-macquarie-island",
+      "title": "Macquarie Island — Sub-Antarctic Station",
+      "country": "Australia",
+      "region": "Macquarie Island",
+      "quality": 90,
+      "moment": 87,
+      "categories": [
+        "Polar Earth",
+        "Islands",
+        "Science & Research",
+        "Quasi-Live"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "klook"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
       "placeId": "grand-canyon-national-park",
       "title": "Grand Canyon National Park",
       "country": "United States",
@@ -441,45 +480,7 @@
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
       "publicActivationAllowed": false
-    },
-    {
-      "placeId": "nossob-kgalagadi",
-      "title": "Nossob — Kgalagadi",
-      "country": "South Africa",
-      "region": "Kgalagadi Transfrontier Park",
-      "quality": 86,
-      "moment": 88,
-      "categories": [
-        "Wildlife",
-        "Beautiful Earth",
-        "Interesting Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "ski-arlberg",
-      "title": "Ski Arlberg",
-      "country": "Austria",
-      "region": "St. Anton / Lech / Zürs",
-      "quality": 88,
-      "moment": 86,
-      "categories": [
-        "Mountains & Snow",
-        "Beautiful Earth",
-        "Useful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
     }
   ],
-  "note": "Research prompts only. No partner inventory, tracked link or public placement is implied until manually verified."
+  "note": "Research prompts only. Quasi-live searchable places can unlock business research once their source is promoted, but commercial state never changes source truth or ranking."
 }
