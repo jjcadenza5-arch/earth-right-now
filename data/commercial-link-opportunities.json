@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T13:50:00Z",
+  "generatedAt": "2026-10-03T14:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2829,6 +2829,23 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Garmisch-Partenkirchen/d22133-ttd",
       "nextAction": "Generate one Garmisch-Partenkirchen destination-level Viator link only if it cleanly serves the Farchant/Zugspitze discovery context."
+    },
+    {
+      "id": "viator-aruba-island",
+      "destination": "Aruba",
+      "placeIds": [
+        "druif-beach-aruba",
+        "aruba-palm-beach-live-family",
+        "aruba-eagle-beach-live-family"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN already has healthy Druif Beach and is researching official-tourism Palm/Eagle Beach webcams; Viator has broad Aruba island, snorkel, cruise, off-road and shore-excursion inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Aruba/d28-ttd",
+      "publicInventoryEvidence": "Current Viator Aruba destination inventory shows hundreds of island activities including snorkeling, cruises, shore excursions and tours.",
+      "nextAction": "Generate one Aruba destination-level Viator tracked link and reuse it across verified Aruba places rather than duplicating commercial density."
     }
   ]
 }
