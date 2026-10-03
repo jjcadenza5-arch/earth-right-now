@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T02:30:00Z",
+  "publicActivationAllowed": false,
+  "gaps": [
+    {
+      "id": "pamir-mountains-tajikistan",
+      "region": "Pamir Mountains / Pamir Highway",
+      "country": "Tajikistan",
+      "priority": "P1",
+      "state": "LIVE_SOURCE_NOT_FOUND",
+      "targetPlaces": [
+        "Khorog",
+        "Murghab",
+        "Karakul Lake",
+        "Wakhan Valley",
+        "Pamir Highway"
+      ],
+      "whyImportant": "Major high-altitude world landscape gap for ERN with exceptional visual value and low representation from Central Asia.",
+      "researchEvidence": [
+        "Official Tajikistan tourism material confirms the Pamir Highway as a major high-altitude route through Gorno-Badakhshan and the Pamir landscape.",
+        "Official Khorugh city site confirms Khorugh as the administrative center of GBAO in the Pamir region.",
+        "Current web research found travel videos and webcam directories, but no sufficiently trustworthy always-current live camera source for ERN promotion."
+      ],
+      "officialReferenceUrls": [
+        "https://traveltajikistan.tj/en/the-pamir-highway-2/",
+        "https://traveltajikistan.tj/en/lake-karakul/",
+        "https://khorugh.tj/index.php/en/",
+        "https://visitpamirs.com/"
+      ],
+      "disallowedShortcuts": [
+        "Do not use prerecorded YouTube travel films as LIVE.",
+        "Do not infer live status from generic Tajikistan webcam directories.",
+        "Do not promote a weather iframe as a scenic live camera without source-specific moving/current imagery."
+      ],
+      "nextResearch": [
+        "Check Pamir tourism authority, GBAO local government, Khorugh municipality, Murghab operators, border-road/weather stations and resort/guesthouse camera pages.",
+        "Prefer Khorog, Murghab, Karakul Lake or Wakhan Valley if an official or operator-published current camera emerges."
+      ],
+      "businessPotential": [
+        "viator"
+      ],
+      "lastResearchedAt": "2026-10-03T02:30:00Z"
+    }
+  ]
+}
