@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T04:15:00Z",
+  "generatedAt": "2026-10-03T04:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1018,6 +1018,25 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Bali-tours/Tours-and-Sightseeing/d98-g12",
       "publicInventoryEvidence": "Viator currently lists 1,000+ Bali sightseeing products across day trips, culture, beaches and private tours.",
       "nextAction": "Only add if a useful Denpasar/Bali source is promoted and a clean Bali destination-level tracked link is available; avoid unnecessary duplicate commercial density with Klook."
+    },
+    {
+      "id": "viator-panama-canal-future",
+      "destination": "Panama Canal",
+      "placeIds": [
+        "panama-canal-miraflores-locks",
+        "panama-canal-gatun-locks",
+        "panama-canal-pedro-miguel-locks",
+        "panama-canal-cocoli-locks",
+        "panama-canal-agua-clara-locks"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Panama Canal Authority provides multiple official real-time lock cameras, while current Viator Panama City inventory includes Miraflores, Gatún and Agua Clara canal experiences. One canal-level link should serve the verified lock family.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Panama-City/d950-ttd",
+      "publicInventoryEvidence": "Current Viator Panama City inventory includes canal sightseeing, Miraflores Visitor Center, Gatún Lake and tours covering Agua Clara/Gatún Locks.",
+      "nextAction": "After at least one official Panama Canal lock camera is human-confirmed and promoted, generate one Panama Canal/Panama City Viator partner link and reuse it across the verified lock family."
     }
   ]
 }
