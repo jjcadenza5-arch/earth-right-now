@@ -1,35 +1,37 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:30:00Z",
+  "generatedAt": "2026-10-03T14:05:00Z",
   "status": "DORMANT_UNTIL_OWNER_BATCH_IS_WORTHWHILE",
   "purpose": "Bundle owner-only affiliate link generation and playback checks into worthwhile sessions instead of interrupting ERN expansion one item at a time.",
   "sourceVerificationBatch": [
-    "ala-archa-natural-park",
-    "denpasar-city-live",
-    "istanbul-bosphorus-live",
-    "istanbul-sultanahmet-live",
-    "karakol-ski-base",
-    "shymbulak-mountain-resort",
-    "bled-lake-tourism",
-    "dubrovnik-pile-city",
+    "ala-archa-park",
     "everest-khumbu-hotel-view",
-    "mauritius-grand-baie",
     "longyearbyen-unis-webcam",
-    "tvoroyri-port-live"
+    "malta-live-cams",
+    "kenyalive-nairobi-national-park",
+    "namibia-okaukuejo-waterhole",
+    "ushuaia-harbour-municipal",
+    "batken-city-panorama",
+    "faroe-islands-live-family",
+    "razzakov-center"
   ],
   "exactAffiliateLinkBatch": [
     "tiqets-vienna",
+    "tiqets-brussels",
     "tiqets-georgia-aquarium",
     "tiqets-san-diego-zoo",
+    "viator-plitvice",
+    "viator-cannes",
+    "viator-heidelberg",
     "viator-helsinki",
     "viator-lucerne",
-    "viator-cancun",
     "viator-zermatt",
-    "viator-aruba",
-    "viator-torres-del-paine",
-    "viator-flam",
-    "klook-takayama",
-    "klook-taitung"
+    "viator-cancun",
+    "viator-dresden",
+    "viator-garmisch-farchant",
+    "viator-nuremberg",
+    "klook-kenting-national-forest",
+    "klook-green-island-taitung"
   ],
   "utilityProgramBatch": [
     {
@@ -72,8 +74,8 @@
     "No automatic rewriting",
     "No source truth changes from commercial value"
   ],
-  "batchRationale": "First wave remains the smallest highest-intent set. Second wave is pre-researched now so ERN can expand quickly after initial click/conversion evidence without repeating discovery work.",
-  "searchablePlaceMilestone": 256,
+  "batchRationale": "275 searchable places are complete. The next owner session should convert a compact set of high-intent exact links plus a few global utilities; source checks are limited to the remaining truly unresolved playback candidates.",
+  "searchablePlaceMilestone": 275,
   "secondWaveAffiliateBatch": [
     "viator-st-moritz",
     "viator-dolomiti-superski",
@@ -85,6 +87,9 @@
     "viator-waikiki",
     "viator-boston-harbor",
     "viator-reykjavik",
-    "viator-la-palma"
+    "viator-la-palma",
+    "viator-bernese-alps",
+    "viator-levi",
+    "viator-aalborg"
   ]
 }
