@@ -1451,8 +1451,9 @@
       "evidence": "The municipal live-camera service explicitly includes Bosphorus-side touristic cameras such as Üsküdar, Salacak, Maiden's Tower and related viewpoints.",
       "researchEvidence": "Potentially distinct waterfront/strait place family; human verification should select one exact camera rather than promote the whole index.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Choose one Bosphorus-facing camera (prefer ÜSKÜDAR or SALACAK) and confirm it visibly updates."
+      "state": "SUPERSEDED_BY_QUASI_LIVE_PROMOTION",
+      "humanCheckHint": "Choose one Bosphorus-facing camera (prefer ÜSKÜDAR or SALACAK) and confirm it visibly updates.",
+      "note": "Broad Bosphorus research candidate superseded by distinct official searchable places for Maiden’s Tower and Anadolu Hisarı; no generic duplicate place created."
     },
     {
       "id": "denpasar-city-live",
@@ -2676,6 +2677,42 @@
       "priority": "P2",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Open Shetland.org Videos and confirm Cliff Cam 3 is visibly live/current."
+    },
+    {
+      "id": "istanbul-taksim-current-page",
+      "title": "Istanbul — Taksim Square",
+      "country": "Türkiye",
+      "region": "Istanbul",
+      "provider": "Istanbul Metropolitan Municipality",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
+      "verifiedAt": "2026-10-03T12:40:00Z",
+      "verification": "Official municipal camera page + official FAQ describe touristic streams as real-time; promoted conservatively as LIVE_IMAGE for Search/Explore, not Watch Earth."
+    },
+    {
+      "id": "istanbul-maidens-tower-current-page",
+      "title": "Istanbul — Maiden’s Tower",
+      "country": "Türkiye",
+      "region": "Istanbul",
+      "provider": "Istanbul Metropolitan Municipality",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
+      "verifiedAt": "2026-10-03T12:40:00Z",
+      "verification": "Official municipal camera page + official FAQ describe touristic streams as real-time; promoted conservatively as LIVE_IMAGE for Search/Explore, not Watch Earth."
+    },
+    {
+      "id": "istanbul-anadolu-hisari-current-page",
+      "title": "Istanbul — Anadolu Hisarı & Bosphorus",
+      "country": "Türkiye",
+      "region": "Istanbul",
+      "provider": "Istanbul Metropolitan Municipality",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "sourcePage": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
+      "verifiedAt": "2026-10-03T12:40:00Z",
+      "verification": "Official municipal camera page + official FAQ describe touristic streams as real-time; promoted conservatively as LIVE_IMAGE for Search/Explore, not Watch Earth."
     }
   ],
   "notes": [
@@ -2728,7 +2765,8 @@
     "2026-10-03 Madeira family expanded with Ribeira Brava, São Vicente, Santana, Santa Cruz and Porto Santo from the official Madeira Tourism webcam/weather page.",
     "2026-10-03 Namibia gap research added Okaukuejo Waterhole / Etosha as a P1 exact-target playback candidate from official Namibia Wildlife Resorts evidence.",
     "2026-10-03T12:25Z quasi-live batch promoted 23 additional searchable places from already-researched provider current/live-camera evidence. Watch Earth eligibility remains unchanged.",
-    "2026-10-03T12:35Z milestone batch promoted 2 more quasi-live searchable places, bringing healthy searchable distinct places to the 250 stretch target."
+    "2026-10-03T12:35Z milestone batch promoted 2 more quasi-live searchable places, bringing healthy searchable distinct places to the 250 stretch target.",
+    "2026-10-03 quality-led Istanbul expansion added Taksim Square, Maiden’s Tower and Anadolu Hisarı as distinct official LIVE_IMAGE/Search-Explore places. Watch Earth rules unchanged."
   ],
   "researchGaps": [
     {
