@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-10-03T16:40:00Z",
-  "healthyDistinctPlaces": 308,
-  "countryCount": 69,
+  "healthyDistinctPlaces": 311,
+  "countryCount": 71,
   "strategy": "After the 200-place milestone, growth is quality-led: add new countries/regions, replace weak quasi-live with true live where possible, and improve one-place countries before adding more density to already-rich markets.",
   "newCountryResearch": [
     {
@@ -13,12 +13,17 @@
     {
       "country": "Bulgaria",
       "candidate": "bansko-ski-resort-bulgaria",
-      "state": "RESEARCH_ADDED"
+      "state": "PROMOTED_SEARCHABLE_QUASI_LIVE"
     },
     {
       "country": "Bulgaria",
       "candidate": "borovets-ski-resort-bulgaria",
-      "state": "RESEARCH_ADDED"
+      "state": "PROMOTED_SEARCHABLE_QUASI_LIVE"
+    },
+    {
+      "country": "Serbia",
+      "candidate": "kopaonik-serbia-current",
+      "state": "PROMOTED_SEARCHABLE_QUASI_LIVE"
     }
   ],
   "onePlaceCountries": [
@@ -105,5 +110,8 @@
     "Prefer true live/external-live upgrades for countries currently represented only by LIVE_IMAGE.",
     "Keep quasi-live searchable but out of Watch Earth unless separately verified for continuous live playback.",
     "Do not use business potential to decide source truth or featured ranking."
+  ],
+  "notes": [
+    "Bulgaria and Serbia are now production-searchable via clearly labeled official LIVE_IMAGE sources; Slovakia/Jasná remains playback-gated."
   ]
 }
