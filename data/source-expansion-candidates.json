@@ -614,7 +614,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open the official Taipei-filtered Live Taiwan page and confirm Dajia Riverside Park visibly updates.",
-      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
@@ -631,7 +631,7 @@
       "priority": "P2",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open the official Taipei-filtered Live Taiwan page and confirm Bishanyan visibly updates.",
-      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
@@ -648,7 +648,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open the official New Taipei-filtered Live Taiwan page and confirm Zhongjiao Bay visibly updates.",
-      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
@@ -665,7 +665,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open the official Taichung-filtered Live Taiwan page and confirm Techi Reservoir visibly updates.",
-      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
@@ -682,7 +682,7 @@
       "priority": "P2",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open the official Taichung-filtered Live Taiwan page and confirm Lishan Yingyuan Hill visibly updates.",
-      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
@@ -699,7 +699,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open the official Hualien-filtered Live Taiwan page and confirm Shitiping visibly updates.",
-      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
@@ -716,7 +716,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open the official Tainan-filtered Live Taiwan page and confirm Erliao Viewing Platform visibly updates.",
-      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
@@ -733,7 +733,7 @@
       "priority": "P2",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open the official Tainan-filtered Live Taiwan page and confirm Jingzaijiao Salt Fields visibly updates.",
-      "verifiedAt": "2026-10-03T06:15:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Official Taiwan Tourism Administration live-image index marks the source as operating; promoted under ERN quasi-live Search/Explore policy."
     },
     {
@@ -1498,7 +1498,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open the Panama Canal Authority Web Cameras section, choose Miraflores Locks, and confirm ships/locks are updating in real time.",
-      "verifiedAt": "2026-10-03T06:25:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Panama Canal Authority explicitly states its named lock cameras show Canal operations in real time; promoted as LIVE_IMAGE/Search-Explore only."
     },
     {
@@ -1515,7 +1515,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Open the official Panama Canal web-camera area, choose Gatún Locks, and confirm the view updates in real time.",
-      "verifiedAt": "2026-10-03T06:25:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Panama Canal Authority explicitly states its named lock cameras show Canal operations in real time; promoted as LIVE_IMAGE/Search-Explore only."
     },
     {
@@ -1532,7 +1532,7 @@
       "priority": "P2",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Choose Pedro Miguel Locks on the official Panama Canal web-camera page and confirm current motion/activity.",
-      "verifiedAt": "2026-10-03T06:25:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Panama Canal Authority explicitly states its named lock cameras show Canal operations in real time; promoted as LIVE_IMAGE/Search-Explore only."
     },
     {
@@ -1549,7 +1549,7 @@
       "priority": "P2",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Choose Cocolí Locks on the official Panama Canal camera service and confirm it is current.",
-      "verifiedAt": "2026-10-03T06:25:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Panama Canal Authority explicitly states its named lock cameras show Canal operations in real time; promoted as LIVE_IMAGE/Search-Explore only."
     },
     {
@@ -1566,7 +1566,7 @@
       "priority": "P1",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Choose Agua Clara Locks on the official Panama Canal camera service and confirm real-time ship/lock activity.",
-      "verifiedAt": "2026-10-03T06:25:00Z",
+      "verifiedAt": "2026-10-03T05:30:00Z",
       "verification": "Panama Canal Authority explicitly states its named lock cameras show Canal operations in real time; promoted as LIVE_IMAGE/Search-Explore only."
     },
     {
