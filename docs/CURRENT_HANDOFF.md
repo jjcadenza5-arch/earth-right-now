@@ -529,3 +529,15 @@ Post-250 reconciliation — 2026-10-03:
 - Travelpayouts screenshots are preserved as account evidence that many strategic programs are visible but traffic-gated/not yet unlocked. Recheck is event-driven, not calendar-based.
 - Post-250 content work is now maintenance, regional balance and stronger-source replacement rather than raw-count expansion.
 - Next business mode is traffic growth plus batched exact-link conversion; owner actions are bundled in data/exact-link-generation-worksheet.json.
+
+
+256-place / 196-commercial-path checkpoint — 2026-10-03:
+- ERN now has 256 healthy distinct searchable places from 264 source records.
+- Added three official Istanbul municipal camera places for Search/Explore: Taksim Square, Maiden’s Tower and Anadolu Hisarı/Bosphorus; all are conservatively labeled LIVE_IMAGE and do not weaken Watch Earth.
+- Added official current-camera discovery for Tvøroyri Port, Lerwick Town Hall and Shetland Cliff Cam; also LIVE_IMAGE/Search-Explore only.
+- Runtime source catalog was compacted again: remaining coordinate notes moved to data/source-evidence.json, duplicate officialUrl fields and null placeholders removed, mandatory attribution/coordinate basis preserved.
+- Commercial opportunity registry expanded to 150 entries. 196 of 256 healthy places now have at least one researched commercial path; 60 remain intentionally uncovered.
+- Newly covered high-value places include St. Moritz, Verbier, Dolomiti Superski, Queenstown, Kitzbühel, Ski Arlberg, Glacier National Park, Kaikōura, Cijin/Kaohsiung, Lauderdale-by-the-Sea, Oeschinensee, Waikiki, Boston Harbor, Reykjavík, La Palma, Farm Tomita and Koli.
+- Existing Cape Town/Viator path was extended to Blouberg/Table Mountain rather than creating duplicate commercial density.
+- Business-place matrix now prepares broader Kiwitaxi, Radical Storage, KKday, Localrent, QEEQ and WeGoTrip coverage across healthy ERN places, all owner/exact-link gated.
+- Trip.com / Hotels.com / Booking.com / Agoda / Expedia and similar stay programs remain traffic-led future unlocks; no repeated owner recheck is required.
