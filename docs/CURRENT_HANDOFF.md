@@ -221,3 +221,11 @@ Americas official-camera expansion checkpoint — 2026-10-03 03:50 UTC:
 - New business paths: Poás/Klook, Rincón de la Vieja/Viator, Cotopaxi/Viator, Nicaragua volcano family/Viator, plus Marco Island/Viator from an already-healthy ERN place.
 - Source verification priority, commercial matrix, geographic plan and focused expansion plan were rebuilt from the canonical registries after the batch.
 - Pamir/Tajikistan remains deliberately unresolved; adjacent or unrelated mountain cameras do not count as solving that gap.
+
+
+Healthy-place business expansion checkpoint — 2026-10-03 04:00 UTC:
+- Business growth is no longer waiting only on future camera verification.
+- Added explicit Klook exact-link queues for already-healthy Takayama, Taitung and Toyama/Tonami ERN places after confirming current Klook destination inventory.
+- Commercial registry now contains 77 opportunities: 12 verified-link, 27 exact-link-required, 37 source-gated and 1 source-gap-blocked.
+- Commercial priority matrix and focused plan were rebuilt so these places are not repeatedly rediscovered as uncovered opportunities.
+- Existing-partner-first rule remains active; exact tracked-link generation is still owner/account-side and no URL is invented.
