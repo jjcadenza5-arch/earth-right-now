@@ -676,3 +676,16 @@ Bulgaria / Serbia quasi-live checkpoint — 2026-10-03:
 - Healthy searchable baseline moves from 308 to 311 distinct places; country coverage grows from 69 to 71 with Bulgaria and Serbia added.
 - Bansko and Borovets Viator paths moved from source-gated to exact-link/account-search state; Kopaonik/Viator research was added with a fail-closed rule if no clean Kopaonik destination link exists.
 - Jasná/Slovakia remains research-only because the official page advertises live streams but actual playback still needs human confirmation.
+
+
+Selective utility-stack checkpoint — 2026-10-03:
+- ERN will not activate every Travelpayouts program simply because link generation is available.
+- A small utility stack is now canonical in data/business-utility-stack.json:
+  - connectivity: Yesim primary candidate (observed 18% / 90-day cookie), with Saily/Airalo only as alternatives;
+  - transfers: Welcome Pickups first, Kiwitaxi only where Welcome Pickups lacks useful coverage;
+  - car rental: Localrent primary selective candidate, with QEEQ/Economybookings/AutoEurope as alternatives;
+  - city passes: Go City for major-city attraction bundles;
+  - secondary activities: KKday only where existing Klook/Viator/Tiqets coverage is weak;
+  - luggage storage: Radical Storage only for relevant major-city contexts.
+- Reward/cookie observations are owner-account snapshots, not revenue forecasts.
+- Exact tracked links remain manual/verified before public use; owner-action queue remains dormant.
