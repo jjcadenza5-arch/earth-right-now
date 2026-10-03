@@ -244,3 +244,14 @@ Candidate-state reconciliation:
 - Newly searchable: Dubrovnik, Mykonos, Santorini, Gudauri, Kobi and Khumbu Glacier.
 - Newly actionable exact-link research: Dubrovnik/Viator, Mykonos/Viator, Santorini/Viator, Gudauri/Klook and Everest/Viator.
 - Quasi-live remains Search/Explore only unless stricter live playback verification is later completed.
+
+
+Traffic-led business + Andorra expansion checkpoint — 2026-10-03 11:30 UTC:
+- ERN now has 205 healthy distinct searchable places from 213 source records across 53 countries.
+- Added three official Visit Andorra real-time/quasi-live searchable destinations: Grandvalira, Pal Arinsal and Naturland. These are labeled LIVE_IMAGE/Search-Explore content and do not weaken Watch Earth live-video rules.
+- Added one Klook/Andorra commercial research path spanning the three Andorra places; exact tracked-link generation remains owner/account-side and manually verified.
+- Owner Travelpayouts screenshots confirm 18 strategically relevant programs are visible but not currently activated/unlocked for ERN.
+- Created data/traffic-unlock-roadmap.json to separate four active partners from future traffic-gated programs.
+- Future unlock priority is led by Trip.com, Hotels.com, Booking.com, Agoda, Expedia and GetYourGuide; no repeated account checking is required until material traffic/conversion growth or an explicit Travelpayouts status change.
+- Business readiness and focused expansion plan now use a traffic-led unlock rule rather than treating every visible Travelpayouts program as immediately actionable.
+- Post-200 searchable expansion is now quality/geography-led, with a soft 200–250 range rather than raw-count growth.
