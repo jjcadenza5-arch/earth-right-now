@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T15:20:00Z",
+  "generatedAt": "2026-10-03T16:40:00Z",
   "publicActivationAllowed": false,
-  "healthySearchablePlaceBaseline": 283,
+  "healthySearchablePlaceBaseline": 300,
   "programs": [
     {
       "program": "kiwitaxi",
@@ -104,7 +104,15 @@
         "taiwan-heping-island",
         "taiwan-elephant-mountain",
         "taiwan-tamsui-fishermans-wharf",
-        "taiwan-gaomei-wetland"
+        "taiwan-gaomei-wetland",
+        "taiwan-baisha-bay",
+        "taiwan-laomei-green-reef",
+        "taiwan-yinghanling-guanyinshan",
+        "taiwan-taipingshan",
+        "taiwan-fenqihu",
+        "taiwan-daxi-old-street",
+        "taiwan-dongyanshan",
+        "taiwan-taiping-suspension-bridge"
       ],
       "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED"
     },
