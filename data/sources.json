@@ -3517,9 +3517,9 @@
     "checkedAt": "2026-10-02T16:50:00Z",
     "lastSuccessfulCheck": "2026-10-02T16:50:00Z",
     "failureReason": null,
-    "quality": 91,
+    "quality": 94,
     "freshness": 99,
-    "moment": 90,
+    "moment": 93,
     "story": "Official Vienna live panorama looking across central Vienna landmarks around City Hall and the Ringstrasse.",
     "lat": 48.2082,
     "lon": 16.3738,
@@ -3531,7 +3531,8 @@
     "aliases": [
       "Wien",
       "Vienna City Hall"
-    ]
+    ],
+    "editorialNote": "Owner-confirmed working and visually strong during 2026-10-02 expansion review; eligible for normal ERN quality-based featuring while currentness remains independently gated."
   },
   {
     "id": "helsinki-market-square-south-harbour",
@@ -3558,9 +3559,9 @@
     "checkedAt": "2026-10-02T16:50:00Z",
     "lastSuccessfulCheck": "2026-10-02T16:50:00Z",
     "failureReason": null,
-    "quality": 90,
+    "quality": 94,
     "freshness": 99,
-    "moment": 90,
+    "moment": 92,
     "story": "A real-time view across Helsinki Market Square and the South Harbour from Visit Finland's official live-camera collection.",
     "lat": 60.1699,
     "lon": 24.9384,
@@ -3572,7 +3573,8 @@
     "aliases": [
       "Helsinki Market Square",
       "South Harbour Helsinki"
-    ]
+    ],
+    "editorialNote": "Owner-confirmed working and visually strong during 2026-10-02 expansion review; eligible for normal ERN quality-based featuring while currentness remains independently gated."
   },
   {
     "id": "koli-lake-pielinen",
@@ -3598,9 +3600,9 @@
     "checkedAt": "2026-10-02T16:50:00Z",
     "lastSuccessfulCheck": "2026-10-02T16:50:00Z",
     "failureReason": null,
-    "quality": 94,
+    "quality": 98,
     "freshness": 99,
-    "moment": 94,
+    "moment": 98,
     "story": "A scenic live view from Koli over Lake Pielinen and the surrounding North Karelian landscape.",
     "lat": 63.095,
     "lon": 29.805,
@@ -3612,7 +3614,8 @@
     "aliases": [
       "Koli",
       "Lake Pielinen"
-    ]
+    ],
+    "editorialNote": "Owner-confirmed working and visually strong during 2026-10-02 expansion review; eligible for normal ERN quality-based featuring while currentness remains independently gated."
   },
   {
     "id": "turku-port-archipelago",
@@ -3639,9 +3642,9 @@
     "checkedAt": "2026-10-02T16:50:00Z",
     "lastSuccessfulCheck": "2026-10-02T16:50:00Z",
     "failureReason": null,
-    "quality": 91,
+    "quality": 96,
     "freshness": 99,
-    "moment": 90,
+    "moment": 95,
     "story": "A live view from Turku's port toward the Finnish archipelago and waterfront.",
     "lat": 60.4518,
     "lon": 22.2666,
@@ -3653,6 +3656,7 @@
     "aliases": [
       "Turku Port",
       "Turku Archipelago"
-    ]
+    ],
+    "editorialNote": "Owner-confirmed working and visually strong during 2026-10-02 expansion review; eligible for normal ERN quality-based featuring while currentness remains independently gated."
   }
 ]
