@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T16:00:00Z",
+  "generatedAt": "2026-10-03T16:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2853,15 +2853,18 @@
       "placeIds": [
         "taiwan-yehliu",
         "taiwan-heping-island",
-        "taiwan-tamsui-fishermans-wharf"
+        "taiwan-tamsui-fishermans-wharf",
+        "taiwan-baisha-bay",
+        "taiwan-laomei-green-reef",
+        "taiwan-yinghanling-guanyinshan"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has healthy searchable North Coast/New Taipei places. Klook currently has high-volume Yehliu/NE Coast day tours departing Taipei, making this a strong See → Plan bridge.",
+      "reason": "ERN now has a broader healthy Taiwan north-coast cluster—Yehliu, Heping Island, Tamsui, Baisha Bay, Laomei Green Reef and Guanyinshan—so one Klook north-coast planning link can serve the region without duplicate commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/93318-yehliu-jiufen-shifen-shifen-waterfall-day-tour/",
-      "nextAction": "Generate one Taipei/North Coast Klook tracked link that genuinely serves these places; verify destination and tracking before public activation."
+      "nextAction": "Generate one Taiwan North Coast / Yehliu-region Klook tracked link and reuse it across the healthy north-coast place cluster only if the account destination page is clean and useful."
     },
     {
       "id": "klook-taipei-elephant-mountain",
@@ -2965,6 +2968,66 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Sal/d28618-ttd",
       "nextAction": "Generate one Sal Island destination-level Viator tracked link and verify it manually."
+    },
+    {
+      "id": "klook-taipingshan-yilan",
+      "destination": "Taipingshan / Yilan",
+      "placeIds": [
+        "taiwan-taipingshan"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official current Taipingshan view and Klook currently sells Taipingshan admission and day-tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/40635-taipingshan-national-forest-recreation-area-ticket-yilan/",
+      "publicInventoryEvidence": "Klook currently lists Taipingshan National Forest Recreation Area tickets and related Taipingshan day-tour products.",
+      "nextAction": "Generate one Taipingshan/Yilan Klook tracked link and manually verify it before activation."
+    },
+    {
+      "id": "klook-alishan-region",
+      "destination": "Alishan / Chiayi Mountains",
+      "placeIds": [
+        "taiwan-fenqihu",
+        "taiwan-taiping-suspension-bridge"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Fenqihu and Taiping Suspension Bridge are both healthy current-image ERN places in the Alishan/Chiayi mountain region, where Klook has active Alishan tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/498-discover-alishan-mountain-kaohsiung/",
+      "publicInventoryEvidence": "Klook currently lists Alishan ecological/cultural day-tour inventory in Chiayi's mountain region.",
+      "nextAction": "Generate one Alishan/Chiayi mountain-region Klook tracked link and reuse it across Fenqihu and Taiping Suspension Bridge if the destination page is appropriately broad."
+    },
+    {
+      "id": "kkday-taoyuan-daxi-dongyanshan",
+      "destination": "Taoyuan — Daxi & Dongyanshan",
+      "placeIds": [
+        "taiwan-daxi-old-street",
+        "taiwan-dongyanshan"
+      ],
+      "partnerCandidate": "kkday",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has healthy Daxi Old Street and Dongyanshan current-image places. KKday is owner-account link-generation-capable and is a natural Asia inventory research path without waiting for traffic-gated programs.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search the ERN Travelpayouts KKday tools for Taoyuan / Daxi / Dongyanshan coverage; create a tracked link only if the destination or product page cleanly serves these places."
+    },
+    {
+      "id": "viator-hawkes-bay",
+      "destination": "Hawke's Bay / Te Awanga",
+      "placeIds": [
+        "nz-te-awanga-coast"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has a healthy Te Awanga/Hawke's Bay current coastal view, while Viator currently carries Hawke's Bay and Napier sightseeing/winery inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Napier/Hawkes-Bay-Morning-Wine-Tour-Te-Mata-Peak-and-Winery-Lunch/d4760-184165P7",
+      "publicInventoryEvidence": "Viator currently lists Hawke's Bay experiences from the Napier/Hastings area, including Te Mata Peak and winery tours.",
+      "nextAction": "Generate a Hawke's Bay or Napier destination-level Viator tracked link only if it cleanly supports Te Awanga visitors; avoid a mismatched generic New Zealand link."
     }
   ]
 }
