@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T04:25:00Z",
+  "generatedAt": "2026-10-03T03:45:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1052,6 +1052,83 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Nairobi/d5280-ttd",
       "publicInventoryEvidence": "Current Viator Nairobi inventory includes multiple Nairobi National Park half-day and full-day safari products.",
       "nextAction": "After KenyaLIVE is human-confirmed as a current Nairobi National Park feed and promoted, generate one Nairobi National Park Viator partner link and verify it manually before public activation."
+    },
+    {
+      "id": "klook-poas-future",
+      "destination": "Poás Volcano / Costa Rica",
+      "placeIds": [
+        "costa-rica-poas-crater"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Poás has an official observatory current-image source candidate and Klook currently lists a Poás Volcano full-day tour from San José.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/203114-poas-volcano-la-paz-waterfall-coffee-full-day-tour/",
+      "publicInventoryEvidence": "Klook currently lists a Poás Volcano, La Paz Waterfall and coffee full-day tour with 2026 availability.",
+      "nextAction": "After Poás current-image verification and promotion, generate one Costa Rica/Poás Klook tracked link and verify it manually."
+    },
+    {
+      "id": "viator-rincon-costa-rica-future",
+      "destination": "Rincón de la Vieja / Guanacaste",
+      "placeIds": [
+        "costa-rica-rincon-sensoria"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Rincón has an official near-real-time OVSICORI camera candidate and Viator currently lists Rincón de la Vieja nature/day-trip inventory from Liberia/Guanacaste.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Liberia/Costa-Rica/day-trips-d22740-d747",
+      "publicInventoryEvidence": "Current Viator Liberia/Costa Rica inventory includes Rincón de la Vieja nature day trips.",
+      "nextAction": "After the Rincón camera is promoted, generate one destination-level Viator link and verify it before activation."
+    },
+    {
+      "id": "viator-cotopaxi-future",
+      "destination": "Cotopaxi / Ecuador",
+      "placeIds": [
+        "ecuador-cotopaxi-monitoring"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Cotopaxi has an official IG-EPN camera family and Viator currently sells Ecuador itineraries and day-trip products featuring Cotopaxi.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/es-ES/tours/Cuenca/4-Day-Magic-Tour-Cuenca-Devils-Nose-Train-Banos-Quilotoa-Cotopaxi-and-Quito/d23726-30796P43",
+      "publicInventoryEvidence": "Current Viator inventory includes active Cotopaxi itineraries in Ecuador.",
+      "nextAction": "After a reliable Cotopaxi visual source is promoted, generate a clean Cotopaxi/Quito destination link rather than a mismatched product URL."
+    },
+    {
+      "id": "viator-nicaragua-volcanoes-future",
+      "destination": "Nicaragua Volcanoes",
+      "placeIds": [
+        "nicaragua-san-cristobal-volcano",
+        "nicaragua-telica-volcano",
+        "nicaragua-momotombo-volcano",
+        "nicaragua-masaya-volcano",
+        "nicaragua-concepcion-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "INETER provides a credible multi-volcano current-image family and Viator currently markets Nicaragua volcano experiences, including Masaya/Granada itineraries and volcano-focused adventure products.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/blog/Bucket-List-Experiences-in-Latin-America-According-to-Viator-Travelers/l114459",
+      "publicInventoryEvidence": "Viator currently promotes active Nicaragua volcano experiences and also lists day-trip inventory that includes Masaya Volcano.",
+      "nextAction": "After one or more INETER volcano cameras are verified and promoted, search the partner account for one suitable Nicaragua/volcano destination link; avoid one affiliate placement per camera."
+    },
+    {
+      "id": "viator-marco-island",
+      "destination": "Marco Island",
+      "placeIds": [
+        "marco-island-beach"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN already has a healthy Marco Island beach place and commercial research already documents an active local dolphin eco-tour; Viator is the preferred existing activity partner for a destination-level link search.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search the Viator partner tools for a clean Marco Island destination-level link and manually verify it before public activation."
     }
   ]
 }
