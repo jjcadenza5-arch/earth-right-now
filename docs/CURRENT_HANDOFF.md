@@ -496,3 +496,14 @@ Traffic-unlock / Arctic-island expansion checkpoint — 2026-10-03:
 - A single dormant owner-action batch now lives at data/owner-action-packet.json so exact-link work can be done in one worthwhile session later.
 - Trip.com / Hotels.com / Booking.com / Agoda / Expedia remain WAIT-for-traffic/status-change targets; ERN should not repeatedly recheck them.
 - No automatic placement, rewriting, paid ranking, fabricated traffic, or unverified source promotion occurred.
+
+
+Arctic / Faroe / Namibia continuation checkpoint — 2026-10-03:
+- Healthy searchable catalog now stands at 225 distinct places.
+- Added clearly labeled quasi-live/current-image places for Nuuk, Vágar Airport, Mykines, Klaksvík, Gjáarskarð, Hvalba, Swakopmund and Windhoek.
+- Faroe live research now includes Tvøroyri Port and an exact-place extraction lane from Faroe Islands Live; Longyearbyen/UNIS and Shetland remain playback-gated.
+- Viator business paths added for Nuuk, Faroe Islands, Swakopmund and Windhoek; Longyearbyen and Shetland remain source-gated.
+- Travelpayouts strategy is now split cleanly: 23 programs expose owner-side link-generation capability, while 18 useful programs are owner-visible but not unlocked/activated.
+- Trip.com, Hotels.com, Booking.com, Agoda and Expedia remain traffic-led future targets rather than current blockers.
+- data/utility-link-opportunities.json prioritizes Airalo, Go City, Kiwitaxi, Radical Storage, Aviasales and KKday for later bundled exact-link generation.
+- data/owner-action-packet.json keeps all owner-only playback/link tasks dormant until they are worth doing in one batch.
