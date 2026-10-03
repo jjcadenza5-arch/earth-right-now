@@ -230,7 +230,141 @@
       ],
       "accountSearchPhrase": "Shetland Islands tours",
       "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-st-moritz",
+      "partner": "viator",
+      "destination": "St. Moritz",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "st-moritz"
+      ],
+      "accountSearchPhrase": "St Moritz Engadin tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-dolomiti-superski",
+      "partner": "viator",
+      "destination": "Dolomites / Dolomiti Superski",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "dolomiti-superski"
+      ],
+      "accountSearchPhrase": "Dolomites tours activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-queenstown-alps",
+      "partner": "viator",
+      "destination": "Queenstown",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "queenstown-airport-alps"
+      ],
+      "accountSearchPhrase": "Queenstown New Zealand tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-ski-arlberg",
+      "partner": "viator",
+      "destination": "Ski Arlberg / St. Anton",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "ski-arlberg"
+      ],
+      "accountSearchPhrase": "St Anton Arlberg tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-glacier-national-park",
+      "partner": "viator",
+      "destination": "Glacier National Park",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "glacier-national-park"
+      ],
+      "accountSearchPhrase": "Glacier National Park tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-kaikoura",
+      "partner": "viator",
+      "destination": "Kaikōura",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "kaikoura-coast"
+      ],
+      "accountSearchPhrase": "Kaikoura whale watching tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "kkday-kaohsiung",
+      "partner": "kkday",
+      "destination": "Kaohsiung / Cijin",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "cijin-beach-kaohsiung"
+      ],
+      "accountSearchPhrase": "Kaohsiung Cijin activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-waikiki",
+      "partner": "viator",
+      "destination": "Waikiki / Honolulu",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "waikiki-south-shore"
+      ],
+      "accountSearchPhrase": "Waikiki Honolulu tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-boston-harbor",
+      "partner": "viator",
+      "destination": "Boston Harbor",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "boston-harbor-islands"
+      ],
+      "accountSearchPhrase": "Boston Harbor tours cruises",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-reykjavik",
+      "partner": "viator",
+      "destination": "Reykjavík",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "reykjavik"
+      ],
+      "accountSearchPhrase": "Reykjavik Iceland tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-la-palma",
+      "partner": "viator",
+      "destination": "La Palma",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "la-palma-aridane-valley",
+        "la-palma-caldera-taburiente"
+      ],
+      "accountSearchPhrase": "La Palma Canary Islands tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
     }
   ],
-  "searchablePlaceMilestone": 256
+  "searchablePlaceMilestone": 256,
+  "note": "Worksheet is intentionally broader than the immediate owner-action packet. Generate links in batches only after autonomous preparation makes the session worthwhile."
 }
