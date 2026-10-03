@@ -4180,8 +4180,7 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "refreshIntervalSeconds": 900,
     "aliases": [
-      "Yellowstone Lake",
-      "Lake Village Yellowstone"
+      "Yellowstone Lake"
     ],
     "rightsBasis": "Official provider current-image/webcam source; ERN links externally; no reuse rights inferred.",
     "freshnessEvidence": "Official provider documents current/refreshed imagery; verified 2026-10-03."
