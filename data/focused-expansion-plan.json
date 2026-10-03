@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:25:00Z",
+  "generatedAt": "2026-10-03T03:35:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 91,
@@ -28,8 +28,8 @@
       "shymbulak-mountain-resort"
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
-    "researchCandidateCount": 75,
-    "playbackGatedCandidateCount": 71,
+    "researchCandidateCount": 77,
+    "playbackGatedCandidateCount": 73,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan",
       "adjacentHighValueChecks": [
@@ -40,7 +40,9 @@
         "suusamyr-valley",
         "naryn-central-square",
         "balykchy-north-entry",
-        "osh-sulaiman-too"
+        "osh-sulaiman-too",
+        "issyk-kul-karven-four-seasons",
+        "bishkek-ala-too-square"
       ],
       "rule": "Adjacent Central Asia cameras improve regional breadth but do not close the Pamir/Tajikistan gap."
     }
