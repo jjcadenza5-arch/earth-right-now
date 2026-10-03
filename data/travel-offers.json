@@ -45,9 +45,9 @@
     "verified": true,
     "verifiedAt": "2026-09-28T13:52:00Z",
     "expiresAt": "2026-12-27T13:52:00Z",
-    "evidence": "Human generated a destination-specific Tiqets/Statue of Liberty link through the verified Travelpayouts ERN Project and confirmed it opens the Statue of Liberty Tiqets page correctly.",
+    "evidence": "Human generated a destination-specific Tiqets/Statue of Liberty link through the verified Travelpayouts ERN Project and confirmed it opens the Statue of Liberty Tiqets page correctly. ERN place IDs were consolidated on 2026-10-03; this verified Statue of Liberty link now maps to the canonical New York Harbor place.",
     "id": "tiqets-statue-liberty-close",
-    "placeId": "statue-liberty-earthcam"
+    "placeId": "new-york-harbor"
   },
   {
     "title": "Statue of Liberty tickets & tours",
@@ -59,12 +59,14 @@
     "destinationScope": "Statue of Liberty",
     "url": "https://tiqets.tpo.mx/cCt55uo7",
     "disclosure": "Affiliate link",
-    "verified": true,
+    "verified": false,
     "verifiedAt": "2026-09-28T13:52:00Z",
     "expiresAt": "2026-12-27T13:52:00Z",
     "evidence": "Human generated a destination-specific Tiqets/Statue of Liberty link through the verified Travelpayouts ERN Project and confirmed it opens the Statue of Liberty Tiqets page correctly.",
     "id": "tiqets-statue-liberty-harbor",
-    "placeId": "statue-liberty-harbor-earthcam"
+    "placeId": "statue-liberty-harbor-earthcam",
+    "retiredReason": "Duplicate legacy place-level record retired after New York views were consolidated under new-york-harbor; canonical verified offer remains active.",
+    "retiredAt": "2026-10-03T01:30:00Z"
   },
   {
     "id": "welcome-pickups-auckland-transfer",
@@ -96,9 +98,9 @@
     "verified": true,
     "verifiedAt": "2026-09-28T14:02:00Z",
     "expiresAt": "2026-12-27T14:02:00Z",
-    "evidence": "Human generated a destination-specific Klook/New York link through the verified Travelpayouts ERN Project and confirmed it opens the New York destination page correctly.",
+    "evidence": "Human generated a destination-specific Klook/New York link through the verified Travelpayouts ERN Project and confirmed it opens the New York destination page correctly. ERN place IDs were consolidated on 2026-10-03; this verified destination link now maps to the canonical New York Harbor place.",
     "id": "klook-new-york-skyline",
-    "placeId": "nyc-skyline-jersey-city-earthcam"
+    "placeId": "new-york-harbor"
   },
   {
     "title": "Explore New York activities",
@@ -110,12 +112,14 @@
     "destinationScope": "New York",
     "url": "https://klook.tpo.mx/9ofY8SDC",
     "disclosure": "Affiliate link",
-    "verified": true,
+    "verified": false,
     "verifiedAt": "2026-09-28T14:02:00Z",
     "expiresAt": "2026-12-27T14:02:00Z",
     "evidence": "Human generated a destination-specific Klook/New York link through the verified Travelpayouts ERN Project and confirmed it opens the New York destination page correctly.",
     "id": "klook-new-york-statue-close",
-    "placeId": "statue-liberty-earthcam"
+    "placeId": "statue-liberty-earthcam",
+    "retiredReason": "Duplicate legacy place-level record retired after New York views were consolidated under new-york-harbor; canonical verified offer remains active.",
+    "retiredAt": "2026-10-03T01:30:00Z"
   },
   {
     "title": "Explore New York activities",
@@ -127,12 +131,14 @@
     "destinationScope": "New York",
     "url": "https://klook.tpo.mx/9ofY8SDC",
     "disclosure": "Affiliate link",
-    "verified": true,
+    "verified": false,
     "verifiedAt": "2026-09-28T14:02:00Z",
     "expiresAt": "2026-12-27T14:02:00Z",
     "evidence": "Human generated a destination-specific Klook/New York link through the verified Travelpayouts ERN Project and confirmed it opens the New York destination page correctly.",
     "id": "klook-new-york-statue-harbor",
-    "placeId": "statue-liberty-harbor-earthcam"
+    "placeId": "statue-liberty-harbor-earthcam",
+    "retiredReason": "Duplicate legacy place-level record retired after New York views were consolidated under new-york-harbor; canonical verified offer remains active.",
+    "retiredAt": "2026-10-03T01:30:00Z"
   },
   {
     "id": "klook-tokyo-activities",
