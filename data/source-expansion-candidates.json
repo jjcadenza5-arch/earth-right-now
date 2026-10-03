@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T05:25:00Z",
+  "generatedAt": "2026-10-03T05:35:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -1907,6 +1907,45 @@
       "verifiedAt": "2026-10-03T05:25:00Z",
       "evidence": "Hong Kong Observatory states the Tai Mo Shan weather camera takes a picture every five minutes and is part of its real-time weather-photo network.",
       "verification": "Official five-minute weather-photo source; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "iceland-myvatn-current-image",
+      "title": "Lake Mývatn — Iceland",
+      "country": "Iceland",
+      "region": "North Iceland",
+      "provider": "Icelandic Meteorological Office",
+      "sourcePage": "https://en.vedur.is/weather/observations/webcams/myvatn/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:35:00Z",
+      "evidence": "The Icelandic Meteorological Office Mývatn webcam page presents the current image plus a sequence of preceding time steps; ERN treats it as quasi-live/current imagery.",
+      "verification": "Official national meteorological webcam sequence verified; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "iceland-hveravellir-current-image",
+      "title": "Hveravellir — Icelandic Highlands",
+      "country": "Iceland",
+      "region": "Icelandic Highlands",
+      "provider": "Icelandic Meteorological Office",
+      "sourcePage": "https://en.vedur.is/weather/observations/webcams/hveravellir/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:35:00Z",
+      "evidence": "The Icelandic Meteorological Office Hveravellir page shows successive webcam frames at 10-minute intervals.",
+      "verification": "Official national meteorological webcam sequence verified; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "iceland-surtsey-current-image",
+      "title": "Surtsey — Iceland",
+      "country": "Iceland",
+      "region": "Vestmannaeyjar / South Iceland",
+      "provider": "Icelandic Meteorological Office",
+      "sourcePage": "https://en.vedur.is/weather/observations/webcams/surtsey/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:35:00Z",
+      "evidence": "The Icelandic Meteorological Office Surtsey webcam page presents the latest image and recent time-step sequence; the associated automated weather station is actively updated.",
+      "verification": "Official national meteorological webcam sequence verified; promoted as searchable LIVE_IMAGE only."
     }
   ],
   "notes": [
@@ -1945,7 +1984,8 @@
     "2026-10-03 added Biscuit Basin and renewed Yellowstone Lake from USGS/YVO as 15-minute quasi-live LIVE_IMAGE places. Existing Yellowstone business path should serve these places rather than create duplicate commercial placements.",
     "2026-10-03 promoted one canonical searchable place each for Mauna Loa, Shishaldin and Augustine rather than inflating the catalog with multiple monitoring-camera angles.",
     "2026-10-03 expanded underrepresented South America with official scientific/government quasi-live sources for Sangay, Tungurahua, Nevado del Ruiz and Galeras.",
-    "2026-10-03 added three Hong Kong Observatory five-minute quasi-live places: Victoria Harbour, Victoria Peak and Tai Mo Shan."
+    "2026-10-03 added three Hong Kong Observatory five-minute quasi-live places: Victoria Harbour, Victoria Peak and Tai Mo Shan.",
+    "2026-10-03 expanded Iceland beyond Reykjavík with Mývatn, Hveravellir and Surtsey from the Icelandic Meteorological Office."
   ],
   "researchGaps": [
     {
