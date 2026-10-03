@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T02:00:00Z",
+  "generatedAt": "2026-10-03T02:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -367,6 +367,51 @@
       "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/salzburg-attractions-c60346/",
       "publicInventoryEvidence": "Tiqets currently lists Salzburg attraction inventory including the Salzburg Card and Mirabell Palace concert combinations.",
       "nextAction": "After Salzburg camera playback is owner-confirmed and promoted, generate one destination-level Tiqets tracked link and verify it before public activation."
+    },
+    {
+      "id": "viator-zermatt",
+      "destination": "Zermatt / Matterhorn",
+      "placeIds": [
+        "zermatt-matterhorn"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Matterhorn/Zermatt place and Viator currently sells multiple Zermatt hiking, sightseeing and mountain experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Zermatt/d5014-ttd",
+      "publicInventoryEvidence": "Current Viator inventory includes Zermatt experiences such as guided Five Lakes/Matterhorn hiking products.",
+      "nextAction": "Generate one Zermatt destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-san-diego-zoo",
+      "destination": "San Diego / San Diego Zoo",
+      "placeIds": [
+        "san-diego-zoo"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy San Diego Zoo place and Viator currently sells San Diego Zoo admission within broad San Diego inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/San-Diego/d736-ttd",
+      "publicInventoryEvidence": "Current Viator San Diego inventory explicitly includes San Diego Zoo 1-Day Pass tickets.",
+      "nextAction": "Generate one San Diego destination or Zoo-specific Viator partner link and verify it manually; avoid duplicate density if Tiqets is later activated for the same place."
+    },
+    {
+      "id": "viator-whistler",
+      "destination": "Whistler",
+      "placeIds": [
+        "whistler-blackcomb"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN has a healthy Whistler Blackcomb place and current Viator inventory includes Whistler day trips and Sea-to-Sky mountain experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Vancouver/d616-ttd",
+      "publicInventoryEvidence": "Current Viator Vancouver inventory contains multiple Whistler + Sea-to-Sky experiences; exact Whistler destination-link suitability still requires account search.",
+      "nextAction": "Only activate if the Viator partner tools expose a clean Whistler destination-level link; do not route visitors through a generic Vancouver page."
     }
   ]
 }
