@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T02:45:00Z",
+  "generatedAt": "2026-10-03T03:45:00Z",
   "publicActivationAllowed": false,
   "currentHealthyDistinctPlaces": 91,
   "targetHealthyDistinctPlaces": [
@@ -62,6 +62,21 @@
         "klook-shymbulak-future"
       ],
       "humanCheckHint": "Open the official Shymbulak live page and confirm at least one mountain camera visibly updates."
+    },
+    {
+      "id": "bled-lake-tourism",
+      "title": "Bled — Lake & Castle Views",
+      "country": "Slovenia",
+      "region": "Bled",
+      "provider": "Bled Tourist Board / Infrastruktura Bled",
+      "priority": "P1",
+      "verificationUrl": "https://www.bled.si/en/information/webcam/",
+      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "viator-bled-future"
+      ],
+      "humanCheckHint": "Open the official Bled webcam page and confirm at least one Lake Bled/Straža view visibly updates."
     },
     {
       "id": "dubrovnik-pile-city",
@@ -182,7 +197,9 @@
         "klook-wanaka-future"
       ],
       "humanCheckHint": "Open the Wānaka webcam page and confirm the Lake Wānaka view is current."
-    },
+    }
+  ],
+  "backlog": [
     {
       "id": "malta-live-cams",
       "title": "Malta — Official Live Cams",
@@ -197,6 +214,21 @@
         "tiqets-malta-future"
       ],
       "humanCheckHint": "Open the official Live Malta Cams page and confirm at least one destination camera visibly updates before ERN promotes any specific Malta place."
+    },
+    {
+      "id": "mykonos-new-port",
+      "title": "Mykonos — New Port Live",
+      "country": "Greece",
+      "region": "Cyclades",
+      "provider": "Municipal Port Fund of Mykonos",
+      "priority": "P1",
+      "verificationUrl": "https://mykonosports.gr/en/webcams/",
+      "verificationType": "OFFICIAL_MUNICIPAL_LIVE_STREAM_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "viator-mykonos-future"
+      ],
+      "humanCheckHint": "Open the municipal Mykonos live-stream page and confirm at least one New Port camera moves normally."
     },
     {
       "id": "sanparks-olifants",
@@ -214,6 +246,21 @@
       "humanCheckHint": "Open the official Olifants video page and confirm the video is actively updating."
     },
     {
+      "id": "poiana-brasov-live",
+      "title": "Poiana Brașov — Mountain Resort",
+      "country": "Romania",
+      "region": "Brașov",
+      "provider": "Poiana Brașov Travel / Discover Poiana",
+      "priority": "P1",
+      "verificationUrl": "https://poianabrasov.travel/webcams/",
+      "verificationType": "TOURISM_WEBCAM_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "viator-brasov-future"
+      ],
+      "humanCheckHint": "Open the Poiana Brașov webcam page and confirm one panoramic/mountain camera visibly updates."
+    },
+    {
       "id": "mauritius-pointe-desny",
       "title": "Pointe d’Esny — Mauritius",
       "country": "Mauritius",
@@ -227,9 +274,7 @@
         "klook-mauritius-future"
       ],
       "humanCheckHint": "Open the official Mauritius Now webcam experience and confirm Pointe d’Esny is present and visibly current."
-    }
-  ],
-  "backlog": [
+    },
     {
       "id": "prague-old-town-hall",
       "title": "Prague — Old Town Hall",
@@ -304,6 +349,21 @@
         "tiqets-salzburg-future"
       ],
       "humanCheckHint": "Open the official Salzburg webcam page and confirm the Mirabell/Old Town image or video is visibly current."
+    },
+    {
+      "id": "santorini-caldera-imerovigli",
+      "title": "Santorini — Caldera from Imerovigli",
+      "country": "Greece",
+      "region": "Cyclades",
+      "provider": "Santorini.net / Altana Heritage Suites",
+      "priority": "P1",
+      "verificationUrl": "https://www.santorini.net/live_webcam/",
+      "verificationType": "LIVE_STREAM_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "viator-santorini-future"
+      ],
+      "humanCheckHint": "Open the Santorini live webcam page and confirm Camera A or B is currently streaming rather than only showing timelapse."
     },
     {
       "id": "sanparks-satara",
@@ -424,6 +484,19 @@
         "tiqets-tallinn-future"
       ],
       "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
+    },
+    {
+      "id": "ala-archa-park",
+      "title": "Ala-Archa National Park",
+      "country": "Kyrgyzstan",
+      "region": "Chüy",
+      "provider": "ElCat / kg.camera",
+      "priority": "P1",
+      "verificationUrl": "https://kg.camera/en",
+      "verificationType": "LIVE_CAMERA_INDEX",
+      "oneClick": true,
+      "businessUnlocks": [],
+      "humanCheckHint": "Open kg.camera and choose Ala-Archa Natural Park."
     },
     {
       "id": "balykchy-north-entry",
@@ -1115,7 +1188,20 @@
       "oneClick": false,
       "businessUnlocks": [],
       "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
+    },
+    {
+      "id": "razzakov-center",
+      "title": "Razzakov — City Center",
+      "country": "Kyrgyzstan",
+      "region": "Batken",
+      "provider": "ElCat / kg.camera",
+      "priority": "P3",
+      "verificationUrl": "https://kg.camera/en",
+      "verificationType": "LIVE_CAMERA_INDEX",
+      "oneClick": true,
+      "businessUnlocks": [],
+      "humanCheckHint": "Open kg.camera and choose Razzakov city center."
     }
   ],
-  "note": "Rebuilt after the expanded Central Asia batch. Research priority only; no candidate becomes LIVE/CURRENT/HEALTHY from this file."
+  "note": "Research priority only. No candidate becomes LIVE/CURRENT/HEALTHY from this file. Pamir core remains a separate unresolved research gap."
 }
