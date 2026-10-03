@@ -618,7 +618,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Yesim via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Yesim via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "kiwitaxi",
@@ -643,7 +644,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Kiwitaxi via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Kiwitaxi via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "localrent",
@@ -668,7 +670,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Localrent.com via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Localrent.com via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "kiwi-com",
@@ -693,7 +696,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Kiwi.com via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Kiwi.com via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "gigsky",
@@ -718,7 +722,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms GigSky via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms GigSky via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "airalo",
@@ -743,7 +748,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Airalo via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Airalo via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "gettransfer",
@@ -768,7 +774,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms GetTransfer.com via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms GetTransfer.com via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "drimsim",
@@ -793,7 +800,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Drimsim via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Drimsim via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "getrentacar",
@@ -818,7 +826,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms GetRentacar.com via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms GetRentacar.com via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "airhelp",
@@ -843,7 +852,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms AirHelp via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms AirHelp via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "go-city",
@@ -869,7 +879,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Go City via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Go City via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "ekta",
@@ -895,7 +906,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms EKTA via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms EKTA via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "economybookings",
@@ -920,7 +932,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Economybookings.com via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Economybookings.com via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "bikesbooking",
@@ -945,7 +958,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms BikesBooking.com via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms BikesBooking.com via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "qeeq",
@@ -970,7 +984,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms QEEQ via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms QEEQ via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "wegotrip",
@@ -996,7 +1011,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms WeGoTrip via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms WeGoTrip via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "autoeurope",
@@ -1021,7 +1037,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms AutoEurope (EU,UK) via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms AutoEurope (EU,UK) via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "radical-storage",
@@ -1046,7 +1063,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Radical Storage via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Radical Storage via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "aviasales",
@@ -1071,7 +1089,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Aviasales via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Aviasales via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "intui-travel",
@@ -1096,7 +1115,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms intui.travel via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms intui.travel via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "compensair",
@@ -1121,7 +1141,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Compensair via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Compensair via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "saily",
@@ -1146,7 +1167,8 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Saily via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms Saily via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   },
   {
     "id": "kkday",
@@ -1173,6 +1195,7 @@
     "automaticLinkRewritingAllowed": false,
     "rankingAffectedByCommission": false,
     "driveAutomationAllowed": false,
-    "operatorEvidence": "Owner screenshot 2026-10-03 confirms KKday via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually."
+    "operatorEvidence": "Owner screenshot 2026-10-03 confirms KKday via Travelpayouts exposes Generate links inside the Earthrightnow Travelpayouts project. Public ERN placement remains disabled until an exact tracked link is generated and verified manually.",
+    "stateModel": "LINK_GENERATION_AVAILABLE_FAIL_CLOSED"
   }
 ]
