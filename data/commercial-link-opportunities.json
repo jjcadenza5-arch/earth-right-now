@@ -970,12 +970,15 @@
       "id": "klook-istanbul-future",
       "destination": "Istanbul",
       "placeIds": [
-        "istanbul-sultanahmet"
+        "istanbul-sultanahmet",
+        "istanbul-taksim-square",
+        "istanbul-maidens-tower",
+        "istanbul-anadolu-hisari"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
       "priority": "P1",
-      "reason": "A verified official Istanbul landmark/Bosphorus live camera would connect naturally to Klook's current Istanbul museums, cruises, historical sites and guided-tour inventory.",
+      "reason": "A verified official Istanbul landmark/Bosphorus live camera would connect naturally to Klook's current Istanbul museums, cruises, historical sites and guided-tour inventory. One city-level tracked link should serve the expanded official Istanbul camera family without duplicate commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/destination/c186-istanbul/1-things-to-do/",
       "publicInventoryEvidence": "Klook currently lists active Istanbul inventory across museums, Bosphorus cruises, guided tours, historical sites and observation decks.",
@@ -986,12 +989,15 @@
       "id": "viator-istanbul-future",
       "destination": "Istanbul",
       "placeIds": [
-        "istanbul-sultanahmet"
+        "istanbul-sultanahmet",
+        "istanbul-taksim-square",
+        "istanbul-maidens-tower",
+        "istanbul-anadolu-hisari"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "Viator currently has deep Istanbul sightseeing inventory, including Old City landmarks and Bosphorus experiences that map directly to the proposed municipal live views.",
+      "reason": "Viator currently has deep Istanbul sightseeing inventory, including Old City landmarks and Bosphorus experiences that map directly to the proposed municipal live views. One city-level tracked link should serve the expanded official Istanbul camera family without duplicate commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Istanbul-tours/Tours-and-Sightseeing/d585-g12",
       "publicInventoryEvidence": "Viator currently lists 1,000+ Istanbul sightseeing products across city tours, historical tours, cruises and private experiences.",
@@ -2178,6 +2184,23 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Windhoek/d5574-ttd",
       "nextAction": "Generate one Windhoek destination-level Viator tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "tiqets-istanbul",
+      "destination": "Istanbul",
+      "placeIds": [
+        "istanbul-sultanahmet",
+        "istanbul-taksim-square",
+        "istanbul-maidens-tower",
+        "istanbul-anadolu-hisari"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "ERN now has four distinct official Istanbul searchable places; Tiqets currently has broad Istanbul inventory across landmarks, museums, cruises and city tours.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/istanbul-attractions-c79079/",
+      "nextAction": "Generate one Istanbul destination-level Tiqets tracked link in Travelpayouts and manually verify it; reuse city-wide rather than per-camera."
     }
   ]
 }
