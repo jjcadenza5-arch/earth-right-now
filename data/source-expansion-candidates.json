@@ -37,11 +37,13 @@
       "sourcePage": "https://prague.eu/cs/prazske-veze/",
       "evidence": "Official Prague City Tourism page states its cameras look around Prague live and lists Petřín Lookout Tower.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "exactTargetUrl": "https://pvp.panomax.com/",
       "exactTargetType": "PANOMAX_360",
       "researchEvidence": "Prague City Tourism's official Prague Towers page directly links the Petřín live camera to the Prague Visitor Pass Panomax 360 endpoint. Owner previously reported the Prague camera family looked beautiful, but exact-target playback remains to be spot-checked.",
-      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
+      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "prague-old-town-hall",
@@ -52,11 +54,13 @@
       "sourcePage": "https://prague.eu/cs/prazske-veze/",
       "evidence": "Official Prague City Tourism page lists a live-looking camera for Old Town Hall.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "exactTargetUrl": "https://www.youtube.com/watch?v=Agep3Ts7hpI",
       "exactTargetType": "YOUTUBE_LIVE_TARGET",
       "researchEvidence": "Official Prague City Tourism page directly links Old Town Hall under 'our cameras look live around Prague' to YouTube video Agep3Ts7hpI.",
-      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
+      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "prague-old-town-bridge-tower",
@@ -67,11 +71,13 @@
       "sourcePage": "https://prague.eu/cs/prazske-veze/",
       "evidence": "Official Prague City Tourism page lists a live-looking camera for Old Town Bridge Tower.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "exactTargetUrl": "https://www.youtube.com/watch?v=1zRzcYmipMs",
       "exactTargetType": "YOUTUBE_LIVE_TARGET",
       "researchEvidence": "Official Prague City Tourism page links the Old Town Bridge Tower camera via CamStreamer to YouTube video 1zRzcYmipMs.",
-      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
+      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "prague-powder-tower",
@@ -82,11 +88,13 @@
       "sourcePage": "https://prague.eu/cs/prazske-veze/",
       "evidence": "Official Prague City Tourism page lists a live-looking camera for Powder Tower.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "exactTargetUrl": "https://www.youtube.com/watch?v=07U63AB60g4",
       "exactTargetType": "YOUTUBE_LIVE_TARGET",
       "researchEvidence": "Official Prague City Tourism page directly links Powder Tower to YouTube video 07U63AB60g4.",
-      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
+      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "prague-st-nicholas-bell-tower",
@@ -97,11 +105,13 @@
       "sourcePage": "https://prague.eu/cs/prazske-veze/",
       "evidence": "Official Prague City Tourism page lists a live-looking camera for St. Nicholas Bell Tower.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "exactTargetUrl": "https://www.youtube.com/watch?v=kfygpyeJHRg",
       "exactTargetType": "YOUTUBE_LIVE_TARGET",
       "researchEvidence": "Official Prague City Tourism page directly links St. Nicholas Bell Tower to YouTube video kfygpyeJHRg.",
-      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
+      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "prague-lesser-town-bridge-tower",
@@ -112,11 +122,13 @@
       "sourcePage": "https://prague.eu/cs/prazske-veze/",
       "evidence": "Official Prague City Tourism page lists a live-looking camera for Lesser Town Bridge Tower.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "exactTargetUrl": "https://www.youtube.com/watch?v=RLvNkbRLrIA",
       "exactTargetType": "YOUTUBE_LIVE_TARGET",
       "researchEvidence": "Official Prague City Tourism page directly links Lesser Town Bridge Tower to YouTube video RLvNkbRLrIA.",
-      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
+      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "koli-lake-pielinen",
@@ -140,7 +152,9 @@
       "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
       "evidence": "Visit Finland describes a live view of the slopes, lifts and fells.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "turku-port-archipelago",
@@ -177,7 +191,9 @@
       "sourcePage": "https://www.myswitzerland.com/en-us/destinations/panoramas/la-nationale/",
       "evidence": "Switzerland Tourism publishes an HD Live panorama page for Crans-Montana.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "schynige-platte",
@@ -188,7 +204,9 @@
       "sourcePage": "https://www.myswitzerland.com/en-ch/destinations/panoramas/schynige-platte/",
       "evidence": "Switzerland Tourism publishes an HD Live panorama page for Schynige Platte.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "randa-valais",
@@ -199,7 +217,9 @@
       "sourcePage": "https://www.myswitzerland.com/en-us/destinations/panoramas/randa/",
       "evidence": "Switzerland Tourism publishes an HD Live panorama page for Randa.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "celerina-engadin",
@@ -210,7 +230,9 @@
       "sourcePage": "https://www.myswitzerland.com/en-us/destinations/panoramas/celerina",
       "evidence": "Switzerland Tourism publishes an HD Live panorama page for Celerina.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "murren-edelweiss",
@@ -221,7 +243,9 @@
       "sourcePage": "https://www.myswitzerland.com/en-ch/destinations/panoramas/edelweiss/",
       "evidence": "Switzerland Tourism publishes an HD Live panorama page for Mürren.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "montreux-rochers-de-naye",
@@ -245,7 +269,9 @@
       "sourcePage": "https://www.myswitzerland.com/en-us/destinations/panoramas/fuerenalp/",
       "evidence": "Switzerland Tourism publishes an HD Live panorama page for Fürenalp.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "wengen-bellevue",
@@ -256,7 +282,9 @@
       "sourcePage": "https://www.myswitzerland.com/en-us/destinations/panoramas/bellevue/",
       "evidence": "Switzerland Tourism publishes an HD Live panorama page for Wengen.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "seoul-gwanghwamun-plaza",
@@ -267,7 +295,9 @@
       "sourcePage": "https://tv.seoul.go.kr/onair/seoul24.do",
       "evidence": "Official Live Seoul page lists Gwanghwamun Plaza under 24-hour live coverage.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "seoul-cheonggye-plaza",
@@ -278,7 +308,9 @@
       "sourcePage": "https://tv.seoul.go.kr/onair/seoul24.do",
       "evidence": "Official Live Seoul page lists Cheonggyecheon under 24-hour live coverage.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "helsinki-market-square",
@@ -1065,8 +1097,10 @@
       "evidence": "The official Karakol Ski Base camera page exposes an embedded video feed.",
       "researchEvidence": "KG Camera exposes a direct Karakol Ski Base camera page at the lower lift and states its video surveillance runs without archiving with a 20-second delay. The official Karakol Ski Base also publishes a camera page.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the direct KG Camera Karakol Ski Base page and confirm the lower-lift image/video updates normally."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the direct KG Camera Karakol Ski Base page and confirm the lower-lift image/video updates normally.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "ala-archa-natural-park",
@@ -1097,8 +1131,10 @@
       "evidence": "KG Camera lists a current camera at the foot of Sulaiman-Too Mountain in Osh and states its network runs without archiving with a short delay.",
       "researchEvidence": "KG Camera exposes a direct camera at the foot of Sulaiman-Too in Osh and states its video surveillance is unarchived with about a 20-second delay.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the direct Sulaiman-Too page and confirm the landmark view updates normally."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the direct Sulaiman-Too page and confirm the landmark view updates normally.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "naryn-central-square",
@@ -1110,10 +1146,12 @@
       "exactTargetUrl": "https://kg.camera/en/camera/Naryn",
       "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "evidence": "KG Camera publishes a direct camera page showing Naryn's central square on Lenin Street.",
       "researchEvidence": "KG Camera describes the camera as the central square of Naryn and applies its network-wide unarchived, short-delay live-surveillance policy.",
-      "humanCheckHint": "Open the direct Naryn page and confirm the square view updates normally."
+      "humanCheckHint": "Open the direct Naryn page and confirm the square view updates normally.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "too-ashu-north",
@@ -1125,10 +1163,12 @@
       "exactTargetUrl": "https://kg.camera/en/camera/Too-Ashu_Tunnel_North",
       "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "evidence": "KG Camera publishes a direct camera at the northern entrance to the Kolbaev tunnel on Too-Ashu Pass at 3,120 m.",
       "researchEvidence": "This is a high-altitude road/mountain camera on the Bishkek–Osh route; KG Camera states its surveillance feeds are unarchived and delayed by about 20 seconds.",
-      "humanCheckHint": "Open the direct Too-Ashu north page and confirm the high-altitude road/mountain scene updates normally."
+      "humanCheckHint": "Open the direct Too-Ashu north page and confirm the high-altitude road/mountain scene updates normally.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "suusamyr-valley",
@@ -1140,10 +1180,12 @@
       "exactTargetUrl": "https://kg.camera/en/camera/Suusamyr",
       "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "evidence": "KG Camera publishes a direct camera in the Suusamyr Valley on the Bishkek–Osh highway at about 2,268 m.",
       "researchEvidence": "The Suusamyr page identifies a high-elevation valley camera; the network states its surveillance feeds are unarchived with a short delay.",
-      "humanCheckHint": "Open the direct Suusamyr page and confirm the valley/road view is current and visually useful."
+      "humanCheckHint": "Open the direct Suusamyr page and confirm the valley/road view is current and visually useful.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "balykchy-north-entry",
@@ -1155,10 +1197,12 @@
       "exactTargetUrl": "https://kg.camera/en/camera/Balykchi",
       "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "evidence": "KG Camera publishes a direct camera at the entrance to Balykchy in the Issyk-Kul region.",
       "researchEvidence": "The Balykchy camera covers the roundabout at the city's entrance and can serve as a current gateway/road condition view for Issyk-Kul.",
-      "humanCheckHint": "Open the direct Balykchy page and confirm the gateway/road view updates normally."
+      "humanCheckHint": "Open the direct Balykchy page and confirm the gateway/road view updates normally.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "issyk-kul-karven-four-seasons",
@@ -1187,10 +1231,12 @@
       "exactTargetUrl": "https://kg.camera/en/camera/Bishkek_Ala-Too_Square",
       "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "evidence": "KG Camera publishes a direct camera page for Ala-Too Square in central Bishkek.",
       "researchEvidence": "The network identifies this as the central square of Kyrgyzstan's capital and applies the same unarchived short-delay live-surveillance policy.",
-      "humanCheckHint": "Open the direct Ala-Too Square page and confirm the city-center view updates normally."
+      "humanCheckHint": "Open the direct Ala-Too Square page and confirm the city-center view updates normally.",
+      "promotedAt": "2026-10-03T12:25:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from provider-published current/live-camera evidence; not Watch Earth eligible without stricter continuous-live/current verification."
     },
     {
       "id": "batken-city-panorama",
@@ -2676,7 +2722,8 @@
     "2026-10-03 maintenance batch: Istanbul Sultanahmet and Denpasar official municipal camera services promoted from current official-web evidence; stale Takayama Miyagawa quasi-live source degraded rather than artificially refreshed.",
     "2026-10-03 Indian Ocean/Atlantic island batch promoted seven official quasi-live searchable places: four La Réunion tourism/scientific webcams plus São Miguel, Terceira and Santa Maria from Visit Azores. Watch Earth remains stricter.",
     "2026-10-03 Madeira family expanded with Ribeira Brava, São Vicente, Santana, Santa Cruz and Porto Santo from the official Madeira Tourism webcam/weather page.",
-    "2026-10-03 Namibia gap research added Okaukuejo Waterhole / Etosha as a P1 exact-target playback candidate from official Namibia Wildlife Resorts evidence."
+    "2026-10-03 Namibia gap research added Okaukuejo Waterhole / Etosha as a P1 exact-target playback candidate from official Namibia Wildlife Resorts evidence.",
+    "2026-10-03T12:25Z quasi-live batch promoted 23 additional searchable places from already-researched provider current/live-camera evidence. Watch Earth eligibility remains unchanged."
   ],
   "researchGaps": [
     {
