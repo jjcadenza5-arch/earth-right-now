@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T16:30:00Z",
+  "generatedAt": "2026-10-03T16:50:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -105,7 +105,7 @@
     "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
     "currentCommercialOpportunityCount": 192,
-    "healthyPlacesWithCommercialPath": 265,
+    "healthyPlacesWithCommercialPath": 267,
     "healthyPlacesWithoutCommercialPath": 35,
     "verifiedLinkHealthyPlaces": 19,
     "travelpayoutsTrafficGatedProgramsObserved": true,
@@ -179,7 +179,8 @@
     "Owner screenshots mapped the visible Travelpayouts program catalog and confirmed many desirable programs are still not unlocked for ERN",
     "Traffic-led unlock roadmap created; Trip.com is the P1 future stay-program target",
     "300 healthy searchable places reached with all places intentionally classified as commercial-path or editorial-first",
-    "Final 300-place batch added official Taiwan and New Zealand current-image sources without weakening Watch Earth"
+    "Final 300-place batch added official Taiwan and New Zealand current-image sources without weakening Watch Earth",
+    "Palm Beach and Eagle Beach added as Aruba Tourism Authority searchable current-image places and folded into the existing Aruba business path"
   ],
   "humanOnlyRemaining": [
     {
@@ -234,7 +235,7 @@
     "Do not repeatedly ask owner to recheck locked Travelpayouts programs; recheck only on meaningful traffic/account-state change",
     "Locked/traffic-gated programs may not be treated as active or available"
   ],
-  "currentHealthySearchablePlaces": 300,
+  "currentHealthySearchablePlaces": 302,
   "releaseHealth": {
     "pagesDeployment": "SUCCESS_2026-10-03T14:53Z",
     "operationsCheck": "SUCCESS_2026-10-03T14:53Z",
