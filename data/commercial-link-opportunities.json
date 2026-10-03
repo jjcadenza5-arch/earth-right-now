@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T02:30:00Z",
+  "generatedAt": "2026-10-03T02:40:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -774,6 +774,53 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/activity/156338-9d-kazakhstan-kyrgyzstan-tour/",
       "publicInventoryEvidence": "Current Klook Kyrgyzstan itinerary includes Ala-Archa National Park.",
       "nextAction": "After Ala-Archa camera verification, search the ERN Klook account for a cleaner Ala-Archa/Bishkek product before any public activation."
+    },
+    {
+      "id": "klook-gudauri-future",
+      "destination": "Gudauri",
+      "placeIds": [
+        "gudauri-ski-area",
+        "gudauri-kobi"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Klook currently sells Gudauri day trips/ski-resort tours from Tbilisi, creating a strong planning bridge if ERN first verifies the Gudauri/Kobi live-camera family.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/158746-tbilisi-to-gudauri-ski-resort/",
+      "publicInventoryEvidence": "Klook currently lists Gudauri Ski Resort day-tour inventory with mountain-view, ski and cable-car experiences.",
+      "nextAction": "After one Gudauri-family source is promoted, generate one city/resort-level Klook tracked link and reuse it across verified Gudauri/Kobi views."
+    },
+    {
+      "id": "klook-shymbulak-future",
+      "destination": "Shymbulak / Almaty",
+      "placeIds": [
+        "shymbulak-mountain-resort"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Klook currently lists Almaty tours that include Shymbulak and its cable car, aligning closely with a future verified Shymbulak live mountain view.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/160888-almaty-private-city-tour-with-qazaq-adventure/",
+      "publicInventoryEvidence": "Current Klook Almaty inventory includes a Green Bazaar & Shymbulak half-day private tour.",
+      "nextAction": "After Shymbulak camera verification, search ERN's Klook account for the cleanest Shymbulak/Almaty tracked destination link."
+    },
+    {
+      "id": "viator-everest-future",
+      "destination": "Everest / Khumbu",
+      "placeIds": [
+        "everest-khumbu-hotel-view",
+        "khumbu-glacier-nco-p"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Viator currently has a dedicated Mt. Everest collection spanning scenic flights, helicopter tours and Everest Base Camp treks; this is a natural planning layer after a verified Everest-region live/current view.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/collections/Mt-Everest-Tours-from-Kathmandu/c28285",
+      "publicInventoryEvidence": "Viator currently lists multiple Mt. Everest products from Kathmandu, including scenic flights, helicopter tours and multi-day trekking.",
+      "nextAction": "After at least one Everest/Khumbu source is promoted, generate one Everest-region Viator partner link and verify it manually."
     }
   ]
 }
