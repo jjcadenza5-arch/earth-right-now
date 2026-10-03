@@ -1497,6 +1497,49 @@
       "candidateTrackedUrlEvidence": "Public Viator Madeira destination URL confirmed; existing ERN direct-partner pid/mcid/medium pattern applied. Owner open/redirect verification still required before offer activation.",
       "ownerVerificationRequired": true,
       "nextAction": "Owner only needs to open and confirm the prepared direct Viator URL when ERN batches exact-link verification; one island-level link should serve all four Madeira places."
+    },
+    {
+      "id": "klook-jiufen-yangmingshan",
+      "destination": "Northern Taiwan / Jiufen & Yangmingshan",
+      "placeIds": [
+        "taiwan-jiufen",
+        "taiwan-yangmingshan-xiaoyoukeng"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has official real-time government views of Jiufen and Yangmingshan, both high-intent Taipei day-trip destinations with deep Klook inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one suitable Northern Taiwan/Taipei day-trip Klook tracked link only if it clearly covers Jiufen/Yangmingshan; otherwise keep separate destination links."
+    },
+    {
+      "id": "klook-sun-moon-lake",
+      "destination": "Sun Moon Lake",
+      "placeIds": [
+        "taiwan-sun-moon-lake"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Sun Moon Lake live-camera place and Klook currently lists dozens of Sun Moon Lake tours, cruises, cable-car and day-trip products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/p50291212-sun-moon-lake/5-tour/",
+      "publicInventoryEvidence": "Current Klook Sun Moon Lake inventory lists 30+ tours, with heavily booked day tours from Taipei and Taichung.",
+      "nextAction": "Generate and manually verify one Sun Moon Lake Klook tracked link in Travelpayouts."
+    },
+    {
+      "id": "viator-kruger-current-images",
+      "destination": "Kruger National Park",
+      "placeIds": [
+        "sanparks-punda-maria",
+        "sanparks-talamati"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has additional official quasi-live wildlife places in Kruger; one park-level Viator safari-planning link should serve current Kruger places without per-camera commercial duplication.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Reuse or generate one clean Kruger National Park Viator destination link and verify it manually; do not create separate commercial offers for each camp camera."
     }
   ]
 }
