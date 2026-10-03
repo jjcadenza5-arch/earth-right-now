@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T10:45:00Z",
+  "publicActivationAllowed": false,
+  "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
+  "programs": {
+    "airalo": {
+      "intent": "connectivity",
+      "eligibleScope": "international-destinations",
+      "rule": "May appear in Before You Go for international travel contexts once exact tracked link is verified; suppress duplicate eSIM brands by default."
+    },
+    "radical-storage": {
+      "intent": "services",
+      "eligibleScope": "city-and-transport-hub-destinations",
+      "rule": "Only surface where luggage storage is plausibly useful and partner coverage is confirmed."
+    },
+    "go-city": {
+      "intent": "tickets",
+      "eligibleScope": "supported-major-cities-only",
+      "rule": "Only surface after destination support is confirmed; never use as a generic city-pass link."
+    },
+    "kiwitaxi": {
+      "intent": "transport",
+      "eligibleScope": "supported-airport-city-pairs",
+      "rule": "Use where destination transfer coverage is confirmed; prefer Welcome Pickups where already verified to avoid duplicate clutter."
+    },
+    "aviasales": {
+      "intent": "transport",
+      "eligibleScope": "trip-planning-global",
+      "rule": "Only in explicit trip-planning context; never on live-camera cards or Watch Earth."
+    }
+  },
+  "priorityCityPlaces": [
+    {
+      "placeId": "panama-canal-miraflores-locks",
+      "title": "Panama Canal — Miraflores Locks",
+      "country": "Panama",
+      "region": "Panama Canal",
+      "quality": 98,
+      "moment": 99
+    },
+    {
+      "placeId": "hong-kong-victoria-peak",
+      "title": "Hong Kong — Victoria Peak",
+      "country": "Hong Kong",
+      "region": "Hong Kong Island",
+      "quality": 98,
+      "moment": 98
+    },
+    {
+      "placeId": "bled-lake",
+      "title": "Bled — Lake & Castle Views",
+      "country": "Slovenia",
+      "region": "Upper Carniola",
+      "quality": 98,
+      "moment": 98
+    },
+    {
+      "placeId": "flam-aurlandsfjord",
+      "title": "Flåm & Aurlandsfjord — Live Views",
+      "country": "Norway",
+      "region": "Flåm / Aurland",
+      "quality": 97,
+      "moment": 98
+    },
+    {
+      "placeId": "panama-canal-gatun-locks",
+      "title": "Panama Canal — Gatún Locks",
+      "country": "Panama",
+      "region": "Panama Canal",
+      "quality": 97,
+      "moment": 98
+    },
+    {
+      "placeId": "panama-canal-agua-clara-locks",
+      "title": "Panama Canal — Agua Clara Locks",
+      "country": "Panama",
+      "region": "Panama Canal",
+      "quality": 97,
+      "moment": 98
+    },
+    {
+      "placeId": "tbilisi-center",
+      "title": "Mtkvari River & Narikala — Tbilisi",
+      "country": "Georgia",
+      "region": "Tbilisi",
+      "quality": 96,
+      "moment": 98
+    },
+    {
+      "placeId": "hong-kong-victoria-harbour",
+      "title": "Hong Kong — Victoria Harbour",
+      "country": "Hong Kong",
+      "region": "Victoria Harbour",
+      "quality": 97,
+      "moment": 97
+    },
+    {
+      "placeId": "madeira-porto-moniz",
+      "title": "Porto Moniz — Madeira",
+      "country": "Portugal",
+      "region": "Madeira",
+      "quality": 97,
+      "moment": 97
+    },
+    {
+      "placeId": "montreux-rochers-de-naye",
+      "title": "Montreux — Rochers-de-Naye",
+      "country": "Switzerland",
+      "region": "Vaud",
+      "quality": 97,
+      "moment": 97
+    },
+    {
+      "placeId": "dubrovnik-city",
+      "title": "Dubrovnik — Pile & Old Town Gate",
+      "country": "Croatia",
+      "region": "Dubrovnik",
+      "quality": 97,
+      "moment": 97
+    },
+    {
+      "placeId": "mykonos-new-port",
+      "title": "Mykonos — New Port",
+      "country": "Greece",
+      "region": "Cyclades",
+      "quality": 97,
+      "moment": 97
+    },
+    {
+      "placeId": "st-maarten-simpson-bay",
+      "title": "Simpson Bay — St. Maarten",
+      "country": "Sint Maarten",
+      "region": "Simpson Bay",
+      "quality": 97,
+      "moment": 97
+    },
+    {
+      "placeId": "istanbul-sultanahmet",
+      "title": "Istanbul — Sultanahmet",
+      "country": "Türkiye",
+      "region": "Istanbul",
+      "quality": 97,
+      "moment": 97
+    },
+    {
+      "placeId": "chicago-lakefront",
+      "title": "Chicago Skyline & Lakefront",
+      "country": "United States",
+      "region": "Chicago, Illinois",
+      "quality": 96,
+      "moment": 97
+    },
+    {
+      "placeId": "lake-lucerne",
+      "title": "Lake Lucerne — Lake & Mountain Views",
+      "country": "Switzerland",
+      "region": "Lucerne",
+      "quality": 96,
+      "moment": 97
+    },
+    {
+      "placeId": "panama-canal-pedro-miguel-locks",
+      "title": "Panama Canal — Pedro Miguel Locks",
+      "country": "Panama",
+      "region": "Panama Canal",
+      "quality": 96,
+      "moment": 97
+    },
+    {
+      "placeId": "panama-canal-cocoli-locks",
+      "title": "Panama Canal — Cocolí Locks",
+      "country": "Panama",
+      "region": "Panama Canal",
+      "quality": 96,
+      "moment": 97
+    },
+    {
+      "placeId": "dublin-temple-bar",
+      "title": "Temple Bar — Dublin",
+      "country": "Ireland",
+      "region": "Dublin",
+      "quality": 94,
+      "moment": 98
+    },
+    {
+      "placeId": "little-bay-sint-maarten",
+      "title": "Little Bay Beach — Sint Maarten",
+      "country": "Sint Maarten",
+      "region": "Philipsburg",
+      "quality": 95,
+      "moment": 97
+    },
+    {
+      "placeId": "madeira-funchal",
+      "title": "Funchal — Madeira",
+      "country": "Portugal",
+      "region": "Madeira",
+      "quality": 96,
+      "moment": 96
+    },
+    {
+      "placeId": "taiwan-jiufen",
+      "title": "Jiufen Old Street — Taiwan",
+      "country": "Taiwan",
+      "region": "New Taipei City",
+      "quality": 96,
+      "moment": 96
+    },
+    {
+      "placeId": "mauritius-pointe-desny",
+      "title": "Pointe d’Esny — Mauritius",
+      "country": "Mauritius",
+      "region": "Grand Port",
+      "quality": 96,
+      "moment": 96
+    },
+    {
+      "placeId": "rotorua-lake-city",
+      "title": "Rotorua — City, Gardens & Lake",
+      "country": "New Zealand",
+      "region": "Bay of Plenty",
+      "quality": 96,
+      "moment": 96
+    },
+    {
+      "placeId": "innsbruck-city",
+      "title": "Innsbruck — City & River Inn",
+      "country": "Austria",
+      "region": "Tyrol",
+      "quality": 96,
+      "moment": 96
+    },
+    {
+      "placeId": "st-maarten-great-bay",
+      "title": "Great Bay & Philipsburg Boardwalk — St. Maarten",
+      "country": "Sint Maarten",
+      "region": "Philipsburg",
+      "quality": 96,
+      "moment": 96
+    },
+    {
+      "placeId": "new-taipei-zhongjiao-bay",
+      "title": "New Taipei — Zhongjiao Bay",
+      "country": "Taiwan",
+      "region": "New Taipei City",
+      "quality": 96,
+      "moment": 96
+    },
+    {
+      "placeId": "innsbruck-stadtturm",
+      "title": "Innsbruck — City Tower",
+      "country": "Austria",
+      "region": "Tyrol",
+      "quality": 96,
+      "moment": 96
+    },
+    {
+      "placeId": "new-york-harbor",
+      "title": "New York Skyline — Jersey City",
+      "country": "United States",
+      "region": "New York / New Jersey",
+      "quality": 95,
+      "moment": 96
+    },
+    {
+      "placeId": "turku-port-archipelago",
+      "title": "Turku — Port & Archipelago",
+      "country": "Finland",
+      "region": "Turku",
+      "quality": 96,
+      "moment": 95
+    }
+  ],
+  "duplicateSuppression": [
+    "one eSIM option by default",
+    "one airport-transfer option by default",
+    "one city-pass option per supported destination",
+    "flight search does not replace destination-specific activity links"
+  ],
+  "safeguards": {
+    "exactTrackedLinkRequired": true,
+    "ownerVerificationRequired": true,
+    "affiliateDisclosureRequired": true,
+    "noAutomaticPlacement": true,
+    "noPaidRanking": true
+  }
+}
