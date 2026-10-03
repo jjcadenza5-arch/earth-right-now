@@ -1383,8 +1383,11 @@
       "evidence": "Istanbul Metropolitan Municipality says it streams live from historical and touristic spots and lists Sultanahmet among its touristic cameras.",
       "researchEvidence": "Official municipal live-camera system covering landmark views. Treat each camera as a distinct place only when it represents a genuinely distinct destination.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Istanbul touristic-camera page, choose SULTANAHMET, and confirm the live stream plays."
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "humanCheckHint": "Open the official Istanbul touristic-camera page, choose SULTANAHMET, and confirm the live stream plays.",
+      "promotedPlaceId": "istanbul-sultanahmet",
+      "verifiedAt": "2026-10-03T09:50:00Z",
+      "verification": "Promoted from current official public-web evidence: provider explicitly exposes live/real-time camera service."
     },
     {
       "id": "istanbul-bosphorus-live",
@@ -1413,8 +1416,11 @@
       "evidence": "Denpasar City's official ATCS site states it provides real-time traffic monitoring with 100+ integrated CCTV cameras and live streaming at strategic locations.",
       "researchEvidence": "Strong official-government real-time source for urban Bali. It is traffic-oriented rather than scenic, so only a visually useful location should be promoted.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Denpasar ATCS live-stream page and choose one visually useful city location; confirm real-time motion."
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "humanCheckHint": "Open the official Denpasar ATCS live-stream page and choose one visually useful city location; confirm real-time motion.",
+      "promotedPlaceId": "denpasar-city-live",
+      "verifiedAt": "2026-10-03T09:50:00Z",
+      "verification": "Promoted from current official public-web evidence: provider explicitly exposes live/real-time camera service."
     },
     {
       "id": "antarctica-casey-station",
@@ -2432,7 +2438,8 @@
     "2026-10-03 added official PHIVOLCS one-minute current-image places for Mayon, Bulusan and Kanlaon plus USGS HVO Mauna Loa current webcams. All use LIVE_IMAGE/Search-Explore semantics and do not masquerade as Watch Earth continuous live video.",
     "2026-10-03 promoted eight Taiwan Tourism Administration operating live-image places across Taipei, New Taipei, Taichung, Hualien and Tainan. Search/Explore only; Watch Earth remains stricter.",
     "2026-10-03 promoted the five official Panama Canal Authority real-time lock-camera locations (Miraflores, Gatún, Pedro Miguel, Cocolí, Agua Clara) as distinct Search/Explore LIVE_IMAGE places.",
-    "2026-10-03 final stretch tranche promoted Mieminger Plateau, Telfs, Lüsens, Innsbruck City Tower, Swarovski Crystal Worlds/Wattens and Simpson Bay as clearly labeled quasi-live searchable places, bringing ERN to the ~200-place target."
+    "2026-10-03 final stretch tranche promoted Mieminger Plateau, Telfs, Lüsens, Innsbruck City Tower, Swarovski Crystal Worlds/Wattens and Simpson Bay as clearly labeled quasi-live searchable places, bringing ERN to the ~200-place target.",
+    "2026-10-03 maintenance batch: Istanbul Sultanahmet and Denpasar official municipal camera services promoted from current official-web evidence; stale Takayama Miyagawa quasi-live source degraded rather than artificially refreshed."
   ],
   "researchGaps": [
     {
