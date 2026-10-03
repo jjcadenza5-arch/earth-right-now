@@ -562,3 +562,10 @@ Post-250 reconciliation — 2026-10-03:
 - Remaining low-intent/nature/special-event places are explicitly editorial-only rather than being forced into weak monetization.
 - Locked Travelpayouts programs remain traffic-led future targets. Trip.com/Hotels.com/Booking.com/Agoda/Expedia/GetYourGuide are not blockers and should only be revisited after traction or an explicit account-state change.
 - Pamir remains deferred; quasi-live/current-image sources remain acceptable for Search/Explore when clearly labeled and evidenced.
+
+
+275-place commercial reconciliation — 2026-10-03 13:58 UTC:
+- All 275 healthy searchable places are now intentionally classified: 242 have a commercial research/path record and 33 are explicitly editorial-first; zero healthy places remain unclassified.
+- Commercial registry contains 179 opportunities: 16 verified-link, 156 account-search/exact-link, 5 source-verification-gated and 2 source-gap-blocked.
+- Editorial-first places are mostly remote science/monitoring, low-intent nature, generic aggregate discovery or special-event views where monetization would be artificial.
+- This is not a claim that 242 places have live affiliate links; most remain exact-link/manual-verification research only.
