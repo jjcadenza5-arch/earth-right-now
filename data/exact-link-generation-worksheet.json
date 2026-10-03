@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T15:40:00Z",
+  "generatedAt": "2026-10-03T16:00:00Z",
   "status": "OWNER_ACTION_NOT_YET_REQUIRED",
   "purpose": "One efficient owner session for exact tracked-link generation after autonomous research is complete.",
   "rule": "Never invent URLs. Use the named partner account/tool, search the exact phrase, generate the tracked link, open it manually, then record it.",
@@ -503,8 +503,44 @@
       ],
       "accountSearchPhrase": "Cook Islands Rarotonga Aitutaki tours",
       "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-maldives",
+      "partner": "viator",
+      "destination": "Maldives",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "kuredu-island-maldives"
+      ],
+      "accountSearchPhrase": "Maldives tours activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-barbados-paynes-bay",
+      "partner": "viator",
+      "destination": "Barbados / Paynes Bay",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "barbados-paynes-bay"
+      ],
+      "accountSearchPhrase": "Barbados Paynes Bay tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-cape-verde-sal",
+      "partner": "viator",
+      "destination": "Sal Island / Santa Maria Cape Verde",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "cape-verde-santa-maria-bay"
+      ],
+      "accountSearchPhrase": "Sal Cape Verde tours Santa Maria",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
     }
   ],
-  "searchablePlaceMilestone": 287,
+  "searchablePlaceMilestone": 290,
   "note": "Worksheet refreshed at the 287-place quality-growth stage. Generate links only in deliberate owner batches; locked Travelpayouts programs remain traffic-led future targets."
 }
