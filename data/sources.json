@@ -115,8 +115,7 @@
     "categories": [
       "Wildlife",
       "Beautiful Earth",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -149,8 +148,7 @@
     "categories": [
       "Beaches & Water",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -188,8 +186,7 @@
     "categories": [
       "Beaches & Water",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -222,8 +219,7 @@
     "categories": [
       "Beaches & Water",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -530,8 +526,7 @@
     "freshness": 97,
     "moment": 88,
     "categories": [
-      "Parks & Scenic",
-      "Quasi-Live"
+      "Parks & Scenic"
     ],
     "story": "See current canyon visibility, entrance traffic and road/weather conditions before committing to the drive.",
     "rightsBasis": "Current National Park Service weather/webcam page provides refreshed current views; retained LINK_ONLY because ERN does not infer display permission.",
@@ -594,8 +589,7 @@
     "freshness": 97,
     "moment": 90,
     "categories": [
-      "Parks & Scenic",
-      "Quasi-Live"
+      "Parks & Scenic"
     ],
     "story": "Check whether the mountain is visible and see current Paradise, Longmire and seasonal Sunrise conditions before the drive.",
     "rightsBasis": "Current National Park Service weather page links live/current webcams; retained LINK_ONLY because ERN does not infer display permission.",
@@ -891,8 +885,7 @@
     "moment": 90,
     "categories": [
       "Beautiful Earth",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "rightsBasis": "Gran Telescopio CANARIAS' official webcam page publishes current images from the Roque de los Muchachos Observatory and states that the images are taken every minute. ERN links to the official page and does not copy or republish the images.",
     "checkedAt": "2026-09-30T07:06:30Z",
@@ -1137,8 +1130,7 @@
       "Cities & Streets",
       "Culture & Landmarks",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -1550,8 +1542,7 @@
     "categories": [
       "Beautiful Earth",
       "Mountains & Snow",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -1584,8 +1575,7 @@
     "categories": [
       "Beautiful Earth",
       "Mountains & Snow",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -1618,8 +1608,7 @@
     "categories": [
       "Beautiful Earth",
       "Cities & Harbours",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -1690,8 +1679,7 @@
     "categories": [
       "Beaches & Water",
       "Mountains",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "provider": "TableMountainView.com",
     "truth": "LIVE_IMAGE",
@@ -1722,8 +1710,7 @@
     "officialUrl": "https://www.nps.gov/media/webcam/view.htm?id=81B4662E-1DD8-B71B-0B01D8503D5C98F4",
     "categories": [
       "Beaches & Water",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "provider": "U.S. National Park Service / Gulf Islands National Seashore",
     "truth": "LIVE_IMAGE",
@@ -2248,8 +2235,7 @@
     "categories": [
       "Farms & Seasonal",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "story": "Check the fields as they actually look now before making the trip.",
     "rightsBasis": "Current official Farm Tomita site exposes a live-webcam section with current field images. ERN keeps it LINK_ONLY and does not infer image reuse or embed permission.",
@@ -2528,8 +2514,7 @@
     "categories": [
       "Cities & Streets",
       "Useful Earth",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3452,8 +3437,7 @@
     "categories": [
       "Polar Earth",
       "Science & Research",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3492,8 +3476,7 @@
     "categories": [
       "Polar Earth",
       "Science & Research",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3532,8 +3515,7 @@
     "categories": [
       "Polar Earth",
       "Science & Research",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3572,8 +3554,7 @@
     "categories": [
       "Polar Earth",
       "Islands",
-      "Science & Research",
-      "Quasi-Live"
+      "Science & Research"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3612,8 +3593,7 @@
     "categories": [
       "Volcanoes",
       "Nature",
-      "Science & Research",
-      "Quasi-Live"
+      "Science & Research"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3652,8 +3632,7 @@
     "categories": [
       "Volcanoes",
       "Nature",
-      "Science & Research",
-      "Quasi-Live"
+      "Science & Research"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3692,8 +3671,7 @@
     "categories": [
       "Volcanoes",
       "Nature",
-      "Science & Research",
-      "Quasi-Live"
+      "Science & Research"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3732,8 +3710,7 @@
     "categories": [
       "Volcanoes",
       "Nature",
-      "Science & Research",
-      "Quasi-Live"
+      "Science & Research"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3772,8 +3749,7 @@
     "categories": [
       "Volcanoes",
       "Mountains",
-      "Science & Research",
-      "Quasi-Live"
+      "Science & Research"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3811,8 +3787,7 @@
     "categories": [
       "Volcanoes",
       "Mountains",
-      "Science & Research",
-      "Quasi-Live"
+      "Science & Research"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3851,8 +3826,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3891,8 +3865,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3931,8 +3904,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -3971,8 +3943,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4012,8 +3983,7 @@
       "Mountains",
       "Nature",
       "Islands",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4053,8 +4023,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Adventure",
-      "Quasi-Live"
+      "Adventure"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4094,8 +4063,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4135,8 +4103,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4183,8 +4150,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4224,8 +4190,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4265,8 +4230,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4307,8 +4271,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4349,8 +4312,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4390,8 +4352,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4424,8 +4385,7 @@
     "categories": [
       "Parks & Scenic",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4465,8 +4425,7 @@
       "Parks & Scenic",
       "Beaches & Water",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4506,8 +4465,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4547,8 +4505,7 @@
       "Mountains",
       "Nature",
       "Remote Earth",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4587,8 +4544,7 @@
       "Mountains",
       "Nature",
       "Remote Earth",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4627,8 +4583,7 @@
       "Mountains",
       "Nature",
       "Remote Earth",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4667,8 +4622,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4707,8 +4661,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4747,8 +4700,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4788,8 +4740,7 @@
       "Cities & Streets",
       "Beaches & Water",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4832,8 +4783,7 @@
       "Cities & Streets",
       "Mountains",
       "Landmarks",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4874,8 +4824,7 @@
       "Mountains",
       "Nature",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4915,8 +4864,7 @@
       "Beaches & Water",
       "Nature",
       "Beautiful Earth",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4955,8 +4903,7 @@
       "Mountains",
       "Nature",
       "Remote Earth",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -4996,8 +4943,7 @@
       "Islands",
       "Nature",
       "Remote Earth",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5037,8 +4983,7 @@
       "Cities & Streets",
       "Beaches & Water",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5078,8 +5023,7 @@
       "Beaches & Water",
       "Nature",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5119,8 +5063,7 @@
       "Beaches & Water",
       "Nature",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5160,8 +5103,7 @@
       "Beaches & Water",
       "Cities & Streets",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5200,8 +5142,7 @@
     "categories": [
       "Cities & Streets",
       "Landmarks",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5240,8 +5181,7 @@
       "Mountains",
       "Nature",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5281,8 +5221,7 @@
       "Mountains",
       "Nature",
       "Parks & Scenic",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5321,8 +5260,7 @@
       "Islands",
       "Beaches & Water",
       "Nature",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5362,8 +5300,7 @@
       "Parks & Scenic",
       "Nature",
       "Beaches & Water",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5403,8 +5340,7 @@
       "Beaches & Water",
       "Nature",
       "Beautiful Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5443,8 +5379,7 @@
       "Wildlife",
       "Parks & Scenic",
       "Nature",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5483,8 +5418,7 @@
       "Wildlife",
       "Parks & Scenic",
       "Nature",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5523,8 +5457,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5564,8 +5497,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5605,8 +5537,7 @@
       "Mountains",
       "Nature",
       "Landmarks",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5647,8 +5578,7 @@
       "Mountains",
       "Nature",
       "Remote Earth",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5688,8 +5618,7 @@
       "Mountains",
       "Nature",
       "Remote Earth",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5729,8 +5658,7 @@
       "Mountains",
       "Nature",
       "Beautiful Earth",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5770,8 +5698,7 @@
       "Mountains",
       "Nature",
       "Remote Earth",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5811,8 +5738,7 @@
       "Mountains",
       "Nature",
       "Interesting Earth",
-      "Useful Earth",
-      "Quasi-Live"
+      "Useful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5852,8 +5778,7 @@
     "categories": [
       "Cities & Streets",
       "Landmarks",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5892,8 +5817,7 @@
     "categories": [
       "Cities & Streets",
       "Landmarks",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5933,8 +5857,7 @@
       "Beaches & Water",
       "Mountains",
       "Landmarks",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -5972,8 +5895,7 @@
     "categories": [
       "Mountains",
       "Snow",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6010,8 +5932,7 @@
     "categories": [
       "Beaches & Water",
       "Islands",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6048,8 +5969,7 @@
     "categories": [
       "Beaches & Water",
       "Islands",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6088,8 +6008,7 @@
       "Cities & Streets",
       "Beaches & Water",
       "Parks & Scenic",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6128,8 +6047,7 @@
     "categories": [
       "Mountains",
       "Beaches & Water",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6168,8 +6086,7 @@
     "categories": [
       "Beaches & Water",
       "Mountains",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6207,8 +6124,7 @@
     "categories": [
       "Mountains",
       "Parks & Scenic",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6245,8 +6161,7 @@
     "categories": [
       "Mountains",
       "Snow",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6284,8 +6199,7 @@
     "categories": [
       "Mountains",
       "Snow",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
     "quality": 95,
@@ -6322,8 +6236,7 @@
     "categories": [
       "Mountains",
       "Landmarks",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/rochers-de-naye/",
     "quality": 97,
@@ -6360,8 +6273,7 @@
     "categories": [
       "Cities & Streets",
       "Mountains",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
     "quality": 96,
@@ -6399,8 +6311,7 @@
     "categories": [
       "Mountains",
       "Snow",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.innsbruck.info/en/destinations/webcams/webcams-region.html",
     "quality": 97,
@@ -6437,8 +6348,7 @@
     "categories": [
       "Mountains",
       "Snow",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
     "quality": 96,
@@ -6474,8 +6384,7 @@
     "categories": [
       "Mountains",
       "Snow",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
     "quality": 96,
@@ -6511,8 +6420,7 @@
     "categories": [
       "Beaches & Water",
       "Islands",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "sourceUrl": "https://www.visitstmaarten.com/your-top-three-caribbean-live-webcams-2/",
     "quality": 98,
@@ -6550,8 +6458,7 @@
       "Beaches & Water",
       "Cities & Streets",
       "Islands",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.visitstmaarten.com/areas/philipsburg/",
     "quality": 96,
@@ -6588,8 +6495,7 @@
     "categories": [
       "Wildlife",
       "Parks & Scenic",
-      "Nature",
-      "Quasi-Live"
+      "Nature"
     ],
     "sourceUrl": "https://www.sanparks.org/travel/webcams/video/satara",
     "quality": 96,
@@ -6626,8 +6532,7 @@
     "categories": [
       "Wildlife",
       "Parks & Scenic",
-      "Nature",
-      "Quasi-Live"
+      "Nature"
     ],
     "sourceUrl": "https://www.sanparks.org/travel/webcams/video/olifants",
     "quality": 96,
@@ -6664,8 +6569,7 @@
     "categories": [
       "Cities & Streets",
       "Landmarks",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "sourceUrl": "https://camarasmunicapital.ciudaddemendoza.gov.ar/index.html",
     "quality": 94,
@@ -6703,8 +6607,7 @@
     "categories": [
       "Cities & Streets",
       "Landmarks",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6743,8 +6646,7 @@
     "categories": [
       "Cities & Harbours",
       "Beaches & Water",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6782,8 +6684,7 @@
       "Beaches & Water",
       "Islands",
       "Cities & Harbours",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6821,8 +6722,7 @@
       "Islands",
       "Mountains",
       "Beaches & Water",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6860,8 +6760,7 @@
     "categories": [
       "Mountains",
       "Snow",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6899,8 +6798,7 @@
       "Mountains",
       "Snow",
       "Remote Earth",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6937,8 +6835,7 @@
     "categories": [
       "Mountains",
       "Science & Research",
-      "Remote Earth",
-      "Quasi-Live"
+      "Remote Earth"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
@@ -6976,8 +6873,7 @@
     "categories": [
       "Mountains",
       "Volcanoes",
-      "Science & Research",
-      "Quasi-Live"
+      "Science & Research"
     ],
     "sourceUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=mvo",
     "officialUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=mvo",
@@ -7016,8 +6912,7 @@
     "categories": [
       "Mountains",
       "Volcanoes",
-      "Science & Research",
-      "Quasi-Live"
+      "Science & Research"
     ],
     "sourceUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=bvo",
     "officialUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=bvo",
@@ -7056,8 +6951,7 @@
     "categories": [
       "Mountains",
       "Volcanoes",
-      "Science & Research",
-      "Quasi-Live"
+      "Science & Research"
     ],
     "sourceUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=kvo",
     "officialUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=kvo",
@@ -7096,8 +6990,7 @@
     "categories": [
       "Cities & Streets",
       "Parks & Scenic",
-      "Beaches & Water",
-      "Quasi-Live"
+      "Beaches & Water"
     ],
     "sourceUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=63&sNo=0042331",
     "officialUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=63&sNo=0042331",
@@ -7134,8 +7027,7 @@
     "categories": [
       "Mountains",
       "Cities & Streets",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=63&sNo=0042331",
     "officialUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=63&sNo=0042331",
@@ -7171,8 +7063,7 @@
     "timeZone": "Asia/Taipei",
     "categories": [
       "Beaches & Water",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10001&sNo=0042331",
     "officialUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10001&sNo=0042331",
@@ -7209,8 +7100,7 @@
     "categories": [
       "Mountains",
       "Beaches & Water",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10019&sNo=0042331",
     "officialUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10019&sNo=0042331",
@@ -7247,8 +7137,7 @@
     "categories": [
       "Mountains",
       "Nature",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10019&sNo=0042331",
     "officialUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10019&sNo=0042331",
@@ -7285,8 +7174,7 @@
     "categories": [
       "Beaches & Water",
       "Nature",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10015&sNo=0042331",
     "officialUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10015&sNo=0042331",
@@ -7323,8 +7211,7 @@
     "categories": [
       "Mountains",
       "Beautiful Earth",
-      "Sunrise",
-      "Quasi-Live"
+      "Sunrise"
     ],
     "sourceUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10021&sNo=0042331",
     "officialUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10021&sNo=0042331",
@@ -7361,8 +7248,7 @@
     "categories": [
       "Coast & Water",
       "Culture",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10021&sNo=0042331",
     "officialUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10021&sNo=0042331",
@@ -7403,8 +7289,7 @@
     "categories": [
       "Engineering & Infrastructure",
       "Cities & Harbours",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "sourceUrl": "https://pancanal.com/en/history-of-the-panama-canal/",
     "officialUrl": "https://pancanal.com/en/history-of-the-panama-canal/",
@@ -7441,8 +7326,7 @@
     "categories": [
       "Engineering & Infrastructure",
       "Cities & Harbours",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "sourceUrl": "https://pancanal.com/en/history-of-the-panama-canal/",
     "officialUrl": "https://pancanal.com/en/history-of-the-panama-canal/",
@@ -7479,8 +7363,7 @@
     "categories": [
       "Engineering & Infrastructure",
       "Cities & Harbours",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "sourceUrl": "https://pancanal.com/en/history-of-the-panama-canal/",
     "officialUrl": "https://pancanal.com/en/history-of-the-panama-canal/",
@@ -7517,8 +7400,7 @@
     "categories": [
       "Engineering & Infrastructure",
       "Cities & Harbours",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "sourceUrl": "https://pancanal.com/en/history-of-the-panama-canal/",
     "officialUrl": "https://pancanal.com/en/history-of-the-panama-canal/",
@@ -7555,8 +7437,7 @@
     "categories": [
       "Engineering & Infrastructure",
       "Cities & Harbours",
-      "Interesting Earth",
-      "Quasi-Live"
+      "Interesting Earth"
     ],
     "sourceUrl": "https://pancanal.com/en/history-of-the-panama-canal/",
     "officialUrl": "https://pancanal.com/en/history-of-the-panama-canal/",
@@ -7589,8 +7470,7 @@
     "categories": [
       "Mountains",
       "Nature",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
     "officialUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
@@ -7627,8 +7507,7 @@
     "categories": [
       "Mountains",
       "Towns & Villages",
-      "Beautiful Earth",
-      "Quasi-Live"
+      "Beautiful Earth"
     ],
     "sourceUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
     "officialUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
@@ -7665,8 +7544,7 @@
     "categories": [
       "Mountains",
       "Snow",
-      "Remote Earth",
-      "Quasi-Live"
+      "Remote Earth"
     ],
     "sourceUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
     "officialUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
@@ -7704,8 +7582,7 @@
     "categories": [
       "Cities & Streets",
       "Landmarks",
-      "Mountains",
-      "Quasi-Live"
+      "Mountains"
     ],
     "sourceUrl": "https://www.innsbruck.info/en/destinations/webcams/webcams-region.html",
     "officialUrl": "https://www.innsbruck.info/en/destinations/webcams/webcams-region.html",
@@ -7742,8 +7619,7 @@
     "categories": [
       "Landmarks",
       "Art & Culture",
-      "Mountains",
-      "Quasi-Live"
+      "Mountains"
     ],
     "sourceUrl": "https://www.innsbruck.info/en/destinations/webcams/webcams-region.html",
     "officialUrl": "https://www.innsbruck.info/en/destinations/webcams/webcams-region.html",
@@ -7781,8 +7657,7 @@
     "categories": [
       "Beaches & Water",
       "Cities & Harbours",
-      "Islands",
-      "Quasi-Live"
+      "Islands"
     ],
     "sourceUrl": "https://www.visitstmaarten.com/business/show-me-caribbean/",
     "officialUrl": "https://www.visitstmaarten.com/business/show-me-caribbean/",
