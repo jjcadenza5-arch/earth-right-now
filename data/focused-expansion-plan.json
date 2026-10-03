@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:38:00Z",
+  "generatedAt": "2026-10-03T12:00:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 212,
+    "currentHealthyDistinctPlaceBaseline": 217,
     "targetRange": [
       200,
       250
@@ -78,16 +78,18 @@
     "currentHealthyLiveImageCount": 125,
     "progressToTarget": {
       "minimumTarget": 200,
-      "current": 212,
+      "current": 217,
       "remainingToMinimum": 0,
       "stretchTarget": 250,
-      "remainingToStretch": 38,
+      "remainingToStretch": 33,
       "status": "POST_200_QUALITY_LED_EXPANSION"
     },
     "recentExpansionFamilies": [
       "La Réunion — four official tourism/scientific current webcam places",
-      "Azores — São Miguel, Terceira and Santa Maria official Visit Azores webcam places"
-    ]
+      "Azores — São Miguel, Terceira and Santa Maria official Visit Azores webcam places",
+      "Madeira — nine official tourism webcam places across Funchal, Porto Moniz, Calheta, Machico, Ribeira Brava, São Vicente, Santana, Santa Cruz and Porto Santo"
+    ],
+    "catalogScaleStrategy": "Keep data/sources.json minified as the lean runtime catalog; retain verbose provenance/long notes in data/source-evidence.json so expansion can continue without weakening the 300 KB production budget."
   },
   "businessLane": {
     "activePartners": [
