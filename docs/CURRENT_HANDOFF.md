@@ -569,3 +569,13 @@ Post-250 reconciliation — 2026-10-03:
 - Commercial registry contains 179 opportunities: 16 verified-link, 156 account-search/exact-link, 5 source-verification-gated and 2 source-gap-blocked.
 - Editorial-first places are mostly remote science/monitoring, low-intent nature, generic aggregate discovery or special-event views where monetization would be artificial.
 - This is not a claim that 242 places have live affiliate links; most remain exact-link/manual-verification research only.
+
+
+Post-275 quality/traffic checkpoint — 2026-10-03 14:05 UTC:
+- Raw searchable-place expansion is complete at the 275 soft stretch. New work mode is quality maintenance, stronger live upgrades, qualified traffic growth and batched commercial-link conversion.
+- data/traffic-growth-priorities.json now uses the 275-place baseline: 242 places have a commercial research/path classification, 33 are intentionally editorial-first, zero are unclassified, and 20 distinct places currently have verified offer records.
+- data/exact-link-generation-worksheet.json is refreshed for the 275-place catalog and now includes Brussels, Plitvice, Cannes, Heidelberg, Nuremberg, Dresden/Radebeul, Garmisch/Farchant and Aalborg research rows.
+- data/owner-action-packet.json is refreshed but remains dormant. Its source batch now contains only the 10 genuinely unresolved human-playback candidates rather than already-promoted sources.
+- The preferred next exact-link batch is a compact 16-item high-intent set across Tiqets, Viator and Klook; owner action is still deferred until a deliberate batch session is worthwhile.
+- data/featured-quality-priorities.json now separates a diverse true-live featured pool from a quasi-live upgrade watchlist. It is advisory only and cannot change source truth or ranking from commercial value.
+- Locked Travelpayouts programs remain event/traffic-led future targets; do not repeatedly recheck Trip.com, Hotels.com, Booking.com, Agoda, Expedia or GetYourGuide without a meaningful status/traction change.
