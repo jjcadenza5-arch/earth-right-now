@@ -315,11 +315,78 @@
       "evidence": "Official Madeira tourism weather page explicitly lists Machico among its live webcam locations.",
       "priority": "P2",
       "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "innsbruck-live-panorama",
+      "title": "Innsbruck — Live Panorama",
+      "country": "Austria",
+      "region": "Tyrol",
+      "provider": "Innsbruck Tourism",
+      "sourcePage": "https://www.innsbruck.info/en/destinations/webcams.html",
+      "evidence": "Official Innsbruck tourism page states its 360-degree panorama provides real-time views of Innsbruck and the surrounding area.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "innsbruck-markthalle",
+      "title": "Innsbruck — Markthalle & River Inn",
+      "country": "Austria",
+      "region": "Tyrol",
+      "provider": "Innsbruck Tourism",
+      "sourcePage": "https://www.innsbruck.info/en/destinations/webcams.html",
+      "evidence": "Official Innsbruck tourism page highlights a central Markthalle webcam overlooking the colourful houses along the River Inn and Nordkette.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "dubrovnik-pile-city",
+      "title": "Dubrovnik — Pile",
+      "country": "Croatia",
+      "region": "Dubrovnik",
+      "provider": "City of Dubrovnik",
+      "sourcePage": "https://www.dubrovnik.hr/web-kamere",
+      "evidence": "Official City of Dubrovnik livestream page lists Kamera Pile among its web cameras.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "dubrovnik-gruz-city",
+      "title": "Dubrovnik — Gruž",
+      "country": "Croatia",
+      "region": "Dubrovnik",
+      "provider": "City of Dubrovnik",
+      "sourcePage": "https://www.dubrovnik.hr/web-kamere",
+      "evidence": "Official City of Dubrovnik livestream page lists Kamera Gruž among its web cameras.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "malta-live-cams",
+      "title": "Malta — Official Live Cams",
+      "country": "Malta",
+      "region": "Maltese Islands",
+      "provider": "VisitMalta",
+      "sourcePage": "https://www.visitmalta.com/en/info/live-cams-in-malta",
+      "evidence": "VisitMalta's official tourism site exposes a Live Malta Cams section for checking destinations before travel.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
+    },
+    {
+      "id": "tallinn-tv-tower-panorama",
+      "title": "Tallinn — TV Tower Panorama",
+      "country": "Estonia",
+      "region": "Tallinn",
+      "provider": "Tallinn TV Tower",
+      "sourcePage": "https://teletorn.ee/en/webcam/",
+      "evidence": "Tallinn TV Tower's official webcam page describes a real-time panorama of Tallinn and surrounding areas.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED"
     }
   ],
   "notes": [
     "Registry re-check on 2026-10-02 found no current Helsinki/Market Square source record in data/sources.json; candidate restored pending owner clarification to avoid losing a potentially missing destination.",
     "Vienna, Helsinki, Koli and Turku promoted to data/sources.json after owner live-playback confirmation on 2026-10-02. Prague remains research-only pending exact camera mapping.",
-    "2026-10-03 research batch added Salzburg plus four official Madeira Tourism live-camera candidates; all remain research-only until human playback verification."
+    "2026-10-03 research batch added Salzburg plus four official Madeira Tourism live-camera candidates; all remain research-only until human playback verification.",
+    "2026-10-03 breadth research added official-source candidates for Innsbruck, Dubrovnik, Malta and Tallinn; all remain research-only until exact playback is human-confirmed."
   ]
 }
