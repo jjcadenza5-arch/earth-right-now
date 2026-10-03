@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T08:55:00Z",
+  "generatedAt": "2026-10-03T09:32:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1914,6 +1914,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Reykjavik/Highland-Adventure-Overnight-Tour-in-Hveravellir-Nature-Reserve/d905-2970P91",
       "publicInventoryEvidence": "Viator currently lists a multi-day Hveravellir Nature Reserve experience including highlands travel, geothermal bathing and accommodation.",
       "nextAction": "If the ERN Viator partner account exposes a clean Hveravellir or Icelandic Highlands link, generate and verify one before public activation."
+    },
+    {
+      "id": "klook-hehuanshan-wuling",
+      "destination": "Hehuanshan / Wuling Pass",
+      "placeIds": [
+        "taiwan-hehuanshan-wuling"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Hehuanshan/Wuling Pass current-image place and Klook currently sells Hehuanshan sunrise and half-day tours that explicitly visit Wuling.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/54696-nantou-hehuanshan-sunrise-tour-half-day-join-tour/",
+      "publicInventoryEvidence": "Klook currently lists Hehuanshan sunrise and half-day tours with Wuling and Songsyue Lodge stops.",
+      "nextAction": "Generate one Hehuanshan/Wuling destination-level Klook tracked link and manually verify it before public activation."
     }
   ]
 }
