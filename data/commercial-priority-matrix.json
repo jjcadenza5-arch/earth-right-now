@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:50:00Z",
+  "generatedAt": "2026-10-03T04:00:00Z",
   "principles": {
     "existingPartnersFirst": true,
     "exactTrackedLinkRequired": true,
@@ -10,7 +10,7 @@
     "automaticLinkRewriting": false
   },
   "currentVerifiedOpportunityCount": 12,
-  "exactLinkQueueCount": 24,
+  "exactLinkQueueCount": 27,
   "sourceGatedQueueCount": 37,
   "sourceGapBlockedCount": 1,
   "researchPriority": [
@@ -341,25 +341,6 @@
       "publicActivationAllowed": false
     },
     {
-      "placeId": "taitung-jinzun",
-      "title": "Taitung Jinzun — Pacific Coast",
-      "country": "Taiwan",
-      "region": "Taitung County",
-      "quality": 91,
-      "moment": 91,
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
       "placeId": "waikiki-south-shore",
       "title": "Waikiki Beach — South Shore",
       "country": "United States",
@@ -440,27 +421,6 @@
       "publicActivationAllowed": false
     },
     {
-      "placeId": "tonami-tulip-park",
-      "title": "Tonami Tulip Park — Panorama Terrace",
-      "country": "Japan",
-      "region": "Toyama",
-      "quality": 88,
-      "moment": 93,
-      "categories": [
-        "Farms & Seasonal",
-        "Parks & Scenic",
-        "Beautiful Earth",
-        "Useful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
       "placeId": "ponte-di-legno-adamello",
       "title": "Ponte di Legno — Adamello",
       "country": "Italy",
@@ -510,6 +470,43 @@
       "moment": 90,
       "categories": [
         "Parks & Scenic"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "blouberg-table-mountain",
+      "title": "Bloubergstrand — Table Mountain",
+      "country": "South Africa",
+      "region": "Western Cape",
+      "quality": 88,
+      "moment": 90,
+      "categories": [
+        "Beaches & Water",
+        "Mountains",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "perdido-key-beach",
+      "title": "Perdido Key — Gulf Beach",
+      "country": "United States",
+      "region": "Florida",
+      "quality": 90,
+      "moment": 88,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth"
       ],
       "suggestedExistingPartners": [
         "viator"
