@@ -1065,6 +1065,36 @@
       "evidence": "KG Camera publishes a direct camera at the entrance to Balykchy in the Issyk-Kul region.",
       "researchEvidence": "The Balykchy camera covers the roundabout at the city's entrance and can serve as a current gateway/road condition view for Issyk-Kul.",
       "humanCheckHint": "Open the direct Balykchy page and confirm the gateway/road view updates normally."
+    },
+    {
+      "id": "issyk-kul-karven-four-seasons",
+      "title": "Issyk-Kul — KarVen Four Seasons Beach",
+      "country": "Kyrgyzstan",
+      "region": "Issyk-Kul",
+      "provider": "ElCat / KG Camera",
+      "sourcePage": "https://kg.camera/en/camera/KarVen_4_Seasons",
+      "exactTargetUrl": "https://kg.camera/en/camera/KarVen_4_Seasons",
+      "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "evidence": "KG Camera publishes a direct live-surveillance page overlooking the beach at KarVen Four Seasons on the northern shore of Lake Issyk-Kul.",
+      "researchEvidence": "This is one of the strongest scenic candidates in the Kyrgyzstan network: a current lake/beach view at Sary-Oy; KG Camera states feeds are unarchived with about a 20-second delay.",
+      "humanCheckHint": "Open the direct KarVen Four Seasons page and confirm the Lake Issyk-Kul beach view updates normally."
+    },
+    {
+      "id": "bishkek-ala-too-square",
+      "title": "Bishkek — Ala-Too Square",
+      "country": "Kyrgyzstan",
+      "region": "Bishkek",
+      "provider": "ElCat / KG Camera",
+      "sourcePage": "https://kg.camera/en/camera/Bishkek_Ala-Too_Square",
+      "exactTargetUrl": "https://kg.camera/en/camera/Bishkek_Ala-Too_Square",
+      "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "evidence": "KG Camera publishes a direct camera page for Ala-Too Square in central Bishkek.",
+      "researchEvidence": "The network identifies this as the central square of Kyrgyzstan's capital and applies the same unarchived short-delay live-surveillance policy.",
+      "humanCheckHint": "Open the direct Ala-Too Square page and confirm the city-center view updates normally."
     }
   ],
   "notes": [
@@ -1084,6 +1114,7 @@
     "2026-10-03 Caribbean breadth batch added three Visit St. Maarten-endorsed 24/7 camera candidates: Maho Beach, Great Bay/Philipsburg Boardwalk and Simpson Bay. Existing Little Bay source was not duplicated.",
     "2026-10-03 Oceania breadth batch added four official Lake Wānaka Tourism views and two Rotorua NZ webcam views. All six remain human-playback-gated.",
     "2026-10-03 Pamir-gap research uncovered stronger adjacent Central Asia live-camera opportunities: official Shymbulak (Kazakhstan), official Karakol Ski Base, Ala-Archa Natural Park and Osh/Sulaiman-Too (Kyrgyzstan). These remain playback-gated and do not substitute for the unresolved Pamir/Tajikistan gap.",
-    "2026-10-03 Central Asia large batch: replaced generic KG Camera index links with direct camera pages for Karakol, Ala-Archa and Osh/Sulaiman-Too, and added direct research candidates for Naryn, Too-Ashu Pass, Suusamyr Valley and Balykchy. These remain playback-gated."
+    "2026-10-03 Central Asia large batch: replaced generic KG Camera index links with direct camera pages for Karakol, Ala-Archa and Osh/Sulaiman-Too, and added direct research candidates for Naryn, Too-Ashu Pass, Suusamyr Valley and Balykchy. These remain playback-gated.",
+    "2026-10-03 added direct KG Camera candidates for scenic Issyk-Kul/KarVen Four Seasons and Bishkek/Ala-Too Square. Both remain human-playback-gated."
   ]
 }
