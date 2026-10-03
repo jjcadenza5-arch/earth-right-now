@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T11:22:00Z",
+  "generatedAt": "2026-10-03T11:56:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1432,12 +1432,17 @@
         "madeira-funchal",
         "madeira-porto-moniz",
         "madeira-calheta",
-        "madeira-machico"
+        "madeira-machico",
+        "madeira-ribeira-brava",
+        "madeira-sao-vicente",
+        "madeira-santana",
+        "madeira-santa-cruz",
+        "madeira-porto-santo"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has four healthy official Madeira current-image places, while Viator has deep Madeira inventory spanning Funchal, Porto Moniz, island tours, levada hikes and marine activities.",
+      "reason": "ERN now has nine healthy official Madeira current-image places, while Viator has deep Madeira inventory spanning Funchal, Porto Moniz, island tours, levada hikes and marine activities.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Madeira/d5392-ttd",
       "publicInventoryEvidence": "Current Viator Madeira inventory contains 900+ activities, including Funchal experiences and west-island tours that explicitly visit Porto Moniz.",
@@ -1445,7 +1450,7 @@
       "candidateTrackedUrlPreparedAt": "2026-10-03T03:30:00Z",
       "candidateTrackedUrlEvidence": "Public Viator Madeira destination URL confirmed; existing ERN direct-partner pid/mcid/medium pattern applied. Owner open/redirect verification still required before offer activation.",
       "ownerVerificationRequired": true,
-      "nextAction": "Owner only needs to open and confirm the prepared direct Viator URL when ERN batches exact-link verification; one island-level link should serve all four Madeira places."
+      "nextAction": "Owner only needs to open and confirm the prepared direct Viator URL when ERN batches exact-link verification; one island-level link should serve all nine Madeira places."
     },
     {
       "id": "klook-jiufen-yangmingshan",
