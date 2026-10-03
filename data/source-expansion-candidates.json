@@ -2867,7 +2867,7 @@
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Use the official Aruba Live Webcams page and verify either Playa Linda or Aruba Marriott Palm Beach camera. Treat multiple cameras as one Palm Beach destination.",
       "promotedAt": "2026-10-03T15:55:00Z",
-      "promotionNote": "Promoted from official Aruba Tourism live-webcam family as LIVE_IMAGE/Search-Explore; Watch Earth held pending separate playback review."
+      "promotionNote": "Promoted as Aruba Tourism Authority current/live webcam family under conservative LIVE_IMAGE Search/Explore semantics; Watch Earth held."
     },
     {
       "id": "aruba-eagle-beach-live-family",
@@ -2884,7 +2884,7 @@
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "Use the official Aruba Live Webcams page and verify any current Eagle Beach camera. Group the family under one Eagle Beach place.",
       "promotedAt": "2026-10-03T15:55:00Z",
-      "promotionNote": "Promoted from official Aruba Tourism live-webcam family as LIVE_IMAGE/Search-Explore; Watch Earth held pending separate playback review."
+      "promotionNote": "Promoted as Aruba Tourism Authority current/live webcam family under conservative LIVE_IMAGE Search/Explore semantics; Watch Earth held."
     },
     {
       "id": "taiwan-baisha-bay-live",
