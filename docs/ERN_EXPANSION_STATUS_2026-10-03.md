@@ -143,3 +143,21 @@ Business lane:
 - New exact-link opportunities include Aruba/Viator, Kīlauea/Viator and Torres del Paine/Viator.
 - New source-gated opportunities include Taiwan/Klook, Hualien/Viator, Kruger/Viator and Ushuaia/Viator.
 - Owner actions remain consolidated in data/owner-ready-expansion-batch.json and are intentionally not being requested yet.
+
+
+## Large-batch checkpoint — 03:46 UTC
+
+Visitor/source lane:
+- Healthy searchable production baseline remains 91 distinct places.
+- Private source research registry: 61 candidates total — 4 promoted and 57 still human-playback-gated.
+- Added Mauritius Tourism Promotion Authority research for Grand Baie, Pointe d’Esny and Saint-Félix using the current official 13-webcam claim plus MTPA named-location evidence.
+- Added official Visit St. Maarten-endorsed 24/7 research candidates for Maho Beach, Great Bay/Philipsburg Boardwalk and Simpson Bay without duplicating the existing Little Bay source.
+- Geography-gap counts were rebuilt from the actual registry; new-country and underrepresented-region expansion remains preferred over raw count growth.
+- Source verification queue now ranks the expanded backlog and keeps owner checks dormant until autonomous research ceases to be the limiting factor.
+
+Business lane:
+- Opportunity registry: 42 entries — 12 verified-link, 18 exact-link-required, 12 source-gated.
+- Mauritius/Klook is source-gated behind live-camera promotion.
+- Boulders Beach/Viator is queued for an exact tracked link because current Viator inventory explicitly covers the penguin colony/Cape Peninsula.
+- St. Maarten/Viator is queued using the existing healthy Little Bay place; future verified Maho/Great Bay/Simpson Bay places should reuse the same island-level link rather than multiply commercial density.
+- Commercial priority matrix was refreshed after these additions so queued destinations are removed from future research.
