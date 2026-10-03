@@ -1110,6 +1110,66 @@
       "priority": "P2",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Use the kg.camera list and open Batken city panorama; confirm it updates before promotion."
+    },
+    {
+      "id": "gudauri-ski-area",
+      "title": "Gudauri — Ski Area",
+      "country": "Georgia",
+      "region": "Mtskheta-Mtianeti",
+      "provider": "Gudauri live camera network",
+      "sourcePage": "https://gudauri.com/about-gudauri/webcams-gudauri.html",
+      "exactTargetUrl": "https://gudauri.com/about-gudauri/webcams-gudauri.html",
+      "exactTargetType": "LIVE_WEBCAM_PAGE",
+      "evidence": "Gudauri's webcam page describes real-time views of the ski area, including Gudauri/Kobi mountain terrain and ski stations.",
+      "researchEvidence": "Public Gudauri webcam pages expose multiple live players, including MTA Gudauri and MTA Kobi.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the Gudauri webcam page and confirm the MTA Gudauri player is live/current."
+    },
+    {
+      "id": "gudauri-kobi",
+      "title": "Kobi — Greater Caucasus",
+      "country": "Georgia",
+      "region": "Mtskheta-Mtianeti",
+      "provider": "Gudauri live camera network",
+      "sourcePage": "https://gudauri.com/about-gudauri/webcams-gudauri.html",
+      "exactTargetUrl": "https://gudauri.com/about-gudauri/webcams-gudauri.html",
+      "exactTargetType": "LIVE_WEBCAM_PAGE",
+      "evidence": "Gudauri's live webcam page exposes MTA Kobi as a separate live player.",
+      "researchEvidence": "Kobi provides a distinct Greater Caucasus mountain view from the Gudauri resort camera family.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the Gudauri webcam page and confirm the MTA Kobi player is live/current."
+    },
+    {
+      "id": "everest-khumbu-hotel-view",
+      "title": "Everest & Khumbu — Hotel Everest View",
+      "country": "Nepal",
+      "region": "Solukhumbu",
+      "provider": "Webcam Nepal",
+      "sourcePage": "https://www.geowebcams.com/en/webcam/himalayan-panorama-from-hotel-everest-view",
+      "exactTargetUrl": "https://www.geowebcams.com/en/webcam/himalayan-panorama-from-hotel-everest-view",
+      "exactTargetType": "LIVE_WEBCAM_AGGREGATOR_WITH_OPERATOR_ATTRIBUTION",
+      "evidence": "GeoWebcams identifies a live Himalayan panorama from Hotel Everest View operated by Webcam Nepal Live, showing Everest, Lhotse and Ama Dablam.",
+      "researchEvidence": "Webcam Nepal describes a broader 24/7 live-camera network across Everest/Khumbu, Annapurna, Mustang, Manang, Dolpo and Humla.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the Hotel Everest View live page and confirm the image/video is current before ERN promotes it."
+    },
+    {
+      "id": "khumbu-glacier-nco-p",
+      "title": "Khumbu Glacier — Everest Region",
+      "country": "Nepal",
+      "region": "Sagarmatha National Park",
+      "provider": "EvK2CNR / ISAC CNR",
+      "sourcePage": "https://www.worldcamera.net/en/webcams/asia/nepal/246-mteverest-area-khumbu-glacier",
+      "exactTargetUrl": "https://www.worldcamera.net/en/webcams/asia/nepal/246-mteverest-area-khumbu-glacier",
+      "exactTargetType": "SCIENTIFIC_LIVE_IMAGE_PAGE",
+      "evidence": "WorldCamera identifies the Khumbu Glacier live webcam from NCO-P station at 5,079 m in Sagarmatha National Park and reports it online.",
+      "researchEvidence": "This is a scientific high-altitude current-image source rather than a tourism stream; ERN must preserve refresh/currentness semantics honestly.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the Khumbu Glacier camera and confirm the current image refreshes or has a reliable current timestamp."
     }
   ],
   "notes": [
@@ -1131,6 +1191,7 @@
     "2026-10-03 Pamir-gap research uncovered stronger adjacent Central Asia live-camera opportunities: official Shymbulak (Kazakhstan), official Karakol Ski Base, Ala-Archa Natural Park and Osh/Sulaiman-Too (Kyrgyzstan). These remain playback-gated and do not substitute for the unresolved Pamir/Tajikistan gap.",
     "2026-10-03 Central Asia large batch: replaced generic KG Camera index links with direct camera pages for Karakol, Ala-Archa and Osh/Sulaiman-Too, and added direct research candidates for Naryn, Too-Ashu Pass, Suusamyr Valley and Balykchy. These remain playback-gated.",
     "2026-10-03 added direct KG Camera candidates for scenic Issyk-Kul/KarVen Four Seasons and Bishkek/Ala-Too Square. Both remain human-playback-gated.",
-    "Pamir multi-side research — 2026-10-03: searched Tajikistan core Pamir Highway/Wakhan/Murghab/Karakul plus Kyrgyz Alay approaches. No trustworthy public live camera was found in the core Tajik Pamir locations during this pass. ERN therefore leaves the core Pamir as an explicit research gap rather than using prerecorded travel video. Three live-camera candidates were added around the broader Kyrgyz mountain/gateway side: Osh Sulaiman-Too, Batken city panorama and Ala-Archa National Park."
+    "Pamir multi-side research — 2026-10-03: searched Tajikistan core Pamir Highway/Wakhan/Murghab/Karakul plus Kyrgyz Alay approaches. No trustworthy public live camera was found in the core Tajik Pamir locations during this pass. ERN therefore leaves the core Pamir as an explicit research gap rather than using prerecorded travel video. Three live-camera candidates were added around the broader Kyrgyz mountain/gateway side: Osh Sulaiman-Too, Batken city panorama and Ala-Archa National Park.",
+    "2026-10-03 large mountain-geography batch: after the Pamir core remained a truthful research gap, ERN expanded research into neighboring/global high-mountain regions with stronger live evidence: Gudauri/Kobi in Georgia, Shymbulak in Kazakhstan, and two Nepal Everest/Khumbu candidates. None are promoted until human playback/currentness verification."
   ]
 }
