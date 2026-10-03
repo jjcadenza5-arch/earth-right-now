@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:30:00Z",
+  "generatedAt": "2026-10-03T11:32:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 205,
+    "currentHealthyDistinctPlaceBaseline": 212,
     "targetRange": [
       200,
       250
@@ -77,13 +77,17 @@
     "quasiLivePromotedCount": 65,
     "currentHealthyLiveImageCount": 125,
     "progressToTarget": {
-      "minimumTarget": 150,
-      "current": 200,
+      "minimumTarget": 200,
+      "current": 212,
       "remainingToMinimum": 0,
-      "stretchTarget": 200,
-      "remainingToStretch": 0,
-      "status": "STRETCH_TARGET_REACHED"
-    }
+      "stretchTarget": 250,
+      "remainingToStretch": 38,
+      "status": "POST_200_QUALITY_LED_EXPANSION"
+    },
+    "recentExpansionFamilies": [
+      "La Réunion — four official tourism/scientific current webcam places",
+      "Azores — São Miguel, Terceira and Santa Maria official Visit Azores webcam places"
+    ]
   },
   "businessLane": {
     "activePartners": [
@@ -168,8 +172,8 @@
     },
     "currentOpportunityCount": 121,
     "priorityRule": "Prefer exact destination/product fit inside existing active partners before broad generic destination links. Batch owner link generation rather than interrupting one destination at a time.",
-    "tripComDecision": "CHECK_OWNER_TRAVELPAYOUTS_MY_PROGRAMS_STATUS_NOW",
-    "tripComReason": "Accommodation is the largest remaining commercial gap after reaching 200+ healthy searchable places.",
+    "tripComDecision": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATUS_CHANGE",
+    "tripComReason": "Owner screenshots confirm Trip.com is visible in Travelpayouts but not yet practically unlocked; ERN should grow qualified traffic first.",
     "istanbulDenpasarUnlocked": true,
     "currentCommercialStates": {
       "VERIFIED_LINK_ADDED": 16,
@@ -184,7 +188,12 @@
       "booking-com",
       "agoda",
       "expedia",
-      "getyourguide"
+      "getyourguide",
+      "tripadvisor-experiences",
+      "traveloka",
+      "omio",
+      "12go",
+      "discovercars"
     ],
     "unlockRule": "Do not repeatedly recheck locked programs. Recheck after material traffic/conversion growth or explicit Travelpayouts status change."
   },
