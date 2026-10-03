@@ -5,10 +5,14 @@
   "publicActivationAllowed": false,
   "rules": {
     "sourceSpecificVerificationRequired": true,
-    "humanPlaybackCheckRequired": true,
     "doNotPromoteResearchAsLive": true,
     "officialOrProviderPublishedPagesPreferred": true,
-    "duplicatePlaceInflationForbidden": true
+    "duplicatePlaceInflationForbidden": true,
+    "humanPlaybackRequiredForLiveVideo": true,
+    "freshnessVerificationSufficientForQuasiLive": true,
+    "quasiLiveSearchAllowed": true,
+    "quasiLiveWatchEarthAllowed": false,
+    "quasiLiveMustBeClearlyLabeled": true
   },
   "candidates": [
     {
@@ -1318,8 +1322,10 @@
       "evidence": "Australian Antarctic Program publishes the Casey station webcam with a current timestamp, weather context and station imagery.",
       "researchEvidence": "AAD explains that Antarctic station webcams send still images approximately every three minutes; this must be treated as LIVE_IMAGE/current-image truth, not live video.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Casey webcam page and confirm the image timestamp is recent/current. Treat it as a refreshing live image, not continuous video."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Casey webcam page and confirm the image timestamp is recent/current. Treat it as a refreshing live image, not continuous video.",
+      "verifiedAt": "2026-10-03T03:40:00Z",
+      "verification": "Official provider/government refresh or monitoring semantics verified; promoted for Search/Explore only with LIVE_IMAGE truth and Watch Earth hold."
     },
     {
       "id": "antarctica-davis-station",
@@ -1333,8 +1339,10 @@
       "evidence": "Australian Antarctic Program publishes the Davis station webcam with current timestamp/weather context plus timelapse.",
       "researchEvidence": "AAD station webcams update as still images rather than continuous video; future ERN promotion should use LIVE_IMAGE semantics.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Davis webcam page and confirm the webcam image timestamp is current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Davis webcam page and confirm the webcam image timestamp is current.",
+      "verifiedAt": "2026-10-03T03:40:00Z",
+      "verification": "Official provider/government refresh or monitoring semantics verified; promoted for Search/Explore only with LIVE_IMAGE truth and Watch Earth hold."
     },
     {
       "id": "antarctica-mawson-station",
@@ -1348,8 +1356,10 @@
       "evidence": "Australian Antarctic Program publishes a current Mawson station webcam and weather context.",
       "researchEvidence": "AAD states its station webcams provide still images every few minutes due to bandwidth limits; classify honestly as refreshing current imagery.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Mawson webcam page and confirm its timestamp/image is current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Mawson webcam page and confirm its timestamp/image is current.",
+      "verifiedAt": "2026-10-03T03:40:00Z",
+      "verification": "Official provider/government refresh or monitoring semantics verified; promoted for Search/Explore only with LIVE_IMAGE truth and Watch Earth hold."
     },
     {
       "id": "antarctica-macquarie-island",
@@ -1357,14 +1367,16 @@
       "country": "Australia",
       "region": "Macquarie Island",
       "provider": "Australian Antarctic Program",
-      "sourcePage": "https://www.antarctica.gov.au/antarctic-operations/webcams/",
-      "exactTargetUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/",
+      "sourcePage": "https://www.antarctica.gov.au/antarctic-operations/webcams/macquarie-island/",
+      "exactTargetUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/macquarie-island/",
       "exactTargetType": "OFFICIAL_GOVERNMENT_WEBCAM_INDEX",
       "evidence": "Australian Antarctic Program lists Macquarie Island among its permanent-station webcams.",
       "researchEvidence": "Sub-Antarctic rather than continental Antarctica; useful for polar/ocean breadth and must remain a distinct place from the Antarctic stations.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official AAD webcam index, choose Macquarie Island, and confirm the current image is updating/recent."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official AAD webcam index, choose Macquarie Island, and confirm the current image is updating/recent.",
+      "verifiedAt": "2026-10-03T03:40:00Z",
+      "verification": "Official provider/government refresh or monitoring semantics verified; promoted for Search/Explore only with LIVE_IMAGE truth and Watch Earth hold."
     },
     {
       "id": "panama-canal-miraflores-locks",
@@ -1468,8 +1480,10 @@
       "evidence": "OVSICORI-UNA states the Poás crater webcam refreshes automatically every 5 seconds.",
       "researchEvidence": "Official Costa Rican volcano observatory camera; current-image semantics only, not continuous video.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Confirm the crater image is current and refreshing; promote as LIVE_IMAGE/current image, not continuous video."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Confirm the crater image is current and refreshing; promote as LIVE_IMAGE/current image, not continuous video.",
+      "verifiedAt": "2026-10-03T03:40:00Z",
+      "verification": "Official provider/government refresh or monitoring semantics verified; promoted for Search/Explore only with LIVE_IMAGE truth and Watch Earth hold."
     },
     {
       "id": "costa-rica-turrialba-crater",
@@ -1483,8 +1497,10 @@
       "evidence": "OVSICORI-UNA states the Turrialba crater image refreshes every 5 seconds.",
       "researchEvidence": "Official observatory camera positioned near the active crater.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Confirm the image timestamp/refresh is current; use LIVE_IMAGE semantics."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Confirm the image timestamp/refresh is current; use LIVE_IMAGE semantics.",
+      "verifiedAt": "2026-10-03T03:40:00Z",
+      "verification": "Official provider/government refresh or monitoring semantics verified; promoted for Search/Explore only with LIVE_IMAGE truth and Watch Earth hold."
     },
     {
       "id": "costa-rica-irazu",
@@ -1498,8 +1514,10 @@
       "evidence": "OVSICORI-UNA publishes an Irazú volcano camera that refreshes automatically every 5 seconds.",
       "researchEvidence": "Official observatory current-image camera.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Confirm current refresh and visually useful volcano view before promotion."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Confirm current refresh and visually useful volcano view before promotion.",
+      "verifiedAt": "2026-10-03T03:40:00Z",
+      "verification": "Official provider/government refresh or monitoring semantics verified; promoted for Search/Explore only with LIVE_IMAGE truth and Watch Earth hold."
     },
     {
       "id": "costa-rica-rincon-sensoria",
@@ -1513,8 +1531,10 @@
       "evidence": "OVSICORI-UNA describes the Sensoria camera as near-real-time and automatically refreshing every 5 seconds.",
       "researchEvidence": "Official Costa Rican volcano observatory webcam.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Confirm current image refresh; promote as LIVE_IMAGE/current image only."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Confirm current image refresh; promote as LIVE_IMAGE/current image only.",
+      "verifiedAt": "2026-10-03T03:40:00Z",
+      "verification": "Official provider/government refresh or monitoring semantics verified; promoted for Search/Explore only with LIVE_IMAGE truth and Watch Earth hold."
     },
     {
       "id": "nicaragua-san-cristobal-volcano",
@@ -1603,8 +1623,10 @@
       "evidence": "Instituto Geofísico EPN publishes multiple visual cameras around Cotopaxi, including Sincholagua, Lasso, Rumiñahui and other viewpoints.",
       "researchEvidence": "Official Ecuadorian geophysical institute visual-monitoring camera family.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Confirm at least one visual camera is current, scenic and useful; represent Cotopaxi as one destination rather than inflating camera-angle count."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Confirm at least one visual camera is current, scenic and useful; represent Cotopaxi as one destination rather than inflating camera-angle count.",
+      "verifiedAt": "2026-10-03T03:40:00Z",
+      "verification": "Official provider/government refresh or monitoring semantics verified; promoted for Search/Explore only with LIVE_IMAGE truth and Watch Earth hold."
     },
     {
       "id": "ecuador-reventador-monitoring",
@@ -1648,7 +1670,9 @@
     "2026-10-03 world-gap batch added official municipal live-camera candidates for Istanbul and Denpasar/Bali. Istanbul uses the metropolitan municipality's touristic-camera system; Denpasar uses the city transportation agency's real-time CCTV platform. Both remain human-playback gated.",
     "2026-10-03 large-batch world-gap research added four Australian Antarctic Program current-image candidates and five Panama Canal Authority real-time lock-camera candidates. All remain human-verification-gated; Antarctic sources must use LIVE_IMAGE semantics rather than continuous-video claims.",
     "2026-10-03 added KenyaLIVE / Nairobi National Park as a P1 official-government research candidate. KWS launched KenyaLIVE on 22 September 2026 for daily real-time wildlife broadcasts; ERN still requires a current park-specific broadcast confirmation before promotion.",
-    "2026-10-03 Central/South America official-volcano batch added Costa Rica OVSICORI, Nicaragua INETER and Ecuador IG-EPN camera families. These are current-image/scientific monitoring sources; ERN must use LIVE_IMAGE/current-image semantics where appropriate and never imply continuous video."
+    "2026-10-03 Central/South America official-volcano batch added Costa Rica OVSICORI, Nicaragua INETER and Ecuador IG-EPN camera families. These are current-image/scientific monitoring sources; ERN must use LIVE_IMAGE/current-image semantics where appropriate and never imply continuous video.",
+    "2026-10-03 owner explicitly approved quasi-live searchable sources: frequently refreshed webcams, updated cameras and recent provider-published images are acceptable for Search/Explore when clearly labeled. Watch Earth remains stricter.",
+    "First quasi-live promotion batch added Casey, Davis, Mawson, Macquarie Island, Poás, Turrialba, Irazú, Rincón de la Vieja and Cotopaxi as searchable LIVE_IMAGE/current-monitoring places with featured/watch holds."
   ],
   "researchGaps": [
     {
