@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:25:00Z",
+  "generatedAt": "2026-10-03T16:50:00Z",
   "mode": "QUALITY_FIRST_AND_BUSINESS_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 300,
+    "currentHealthyDistinctPlaceBaseline": 302,
     "targetRange": [
       300,
       350
     ],
-    "strategy": "300 healthy searchable places achieved. Continue selectively only when a new place improves geography, freshness, provider diversity or true-live quality; prioritize upgrades over raw count.",
+    "strategy": "302 healthy searchable places. Continue selectively when a source improves true-live quality, geography, freshness or provider diversity; business expansion proceeds in parallel using active/link-generation-capable programs.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
