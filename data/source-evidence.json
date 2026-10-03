@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:00:00Z",
+  "generatedAt": "2026-10-03T12:15:00Z",
   "note": "Verbose provenance, coordinate notes, and selected long visitor stories are retained outside the runtime source catalog to preserve ERN's strict production-size budget. Runtime records keep concise visitor-facing story and required truth/freshness markers.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1262,6 +1262,26 @@
       "freshnessEvidence": "ArctiComm's current webcam page states the Nuuk image is updated every five minutes. Rechecked 2026-10-03.",
       "rightsBasis": "Local Greenland communications provider current-image page; ERN uses a LINK_ONLY handoff and does not infer reuse/embed rights.",
       "coordinateSourceUrl": "https://arcticomm.gl/arcticomm-webcam/"
+    },
+    "faroe-mykines-landsverk": {
+      "freshnessEvidence": "Official Landsverk website currently lists Mykines / Mykines in the Faroese Webcameras network; rechecked 2026-10-03.",
+      "rightsBasis": "Official public-infrastructure weather-camera network; ERN keeps playback/source external and does not infer image reuse rights.",
+      "coordinateSourceUrl": "https://www.landsverk.fo/?id=1"
+    },
+    "faroe-klaksvik-landsverk": {
+      "freshnessEvidence": "Official Landsverk website currently lists Klaksvík / Klaksvík in the Faroese Webcameras network; rechecked 2026-10-03.",
+      "rightsBasis": "Official public-infrastructure weather-camera network; ERN keeps playback/source external and does not infer image reuse rights.",
+      "coordinateSourceUrl": "https://www.landsverk.fo/?id=1"
+    },
+    "faroe-gjaarskard-landsverk": {
+      "freshnessEvidence": "Official Landsverk website currently lists Eysturoy / Gjáarskarð in the Faroese Webcameras network; rechecked 2026-10-03.",
+      "rightsBasis": "Official public-infrastructure weather-camera network; ERN keeps playback/source external and does not infer image reuse rights.",
+      "coordinateSourceUrl": "https://www.landsverk.fo/?id=1"
+    },
+    "faroe-hvalba-landsverk": {
+      "freshnessEvidence": "Official Landsverk website currently lists Suðuroy / Hvalba in the Faroese Webcameras network; rechecked 2026-10-03.",
+      "rightsBasis": "Official public-infrastructure weather-camera network; ERN keeps playback/source external and does not infer image reuse rights.",
+      "coordinateSourceUrl": "https://www.landsverk.fo/?id=1"
     }
   }
 }
