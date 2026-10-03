@@ -164,7 +164,9 @@
       "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
       "evidence": "Visit Finland describes a webcam from Kilpisjärvi with Saana Fell and Arctic sky.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T05:25:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
     },
     {
       "id": "crans-montana-la-nationale",
@@ -230,7 +232,9 @@
       "sourcePage": "https://www.myswitzerland.com/en-us/destinations/panoramas/rochers-de-naye/",
       "evidence": "Switzerland Tourism publishes a webcam panorama page for Rochers-de-Naye above Montreux.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-03T05:25:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
     },
     {
       "id": "engelberg-fuerenalp",
@@ -368,12 +372,14 @@
       "sourcePage": "https://www.innsbruck.info/en/destinations/webcams.html",
       "evidence": "Official Innsbruck tourism page states its 360-degree panorama provides real-time views of Innsbruck and the surrounding area.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "exactTargetUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
       "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
       "humanCheckHint": "Open the official Innsbruck webcam page and use the main 360° live panorama.",
       "researchEvidence": "Official Innsbruck Tourism webcam page explicitly describes real-time 360-degree views of Innsbruck and the surrounding area.",
-      "webEvidenceConfirmedAt": "2026-10-03"
+      "webEvidenceConfirmedAt": "2026-10-03",
+      "promotedAt": "2026-10-03T05:25:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
     },
     {
       "id": "innsbruck-markthalle",
@@ -384,12 +390,14 @@
       "sourcePage": "https://www.innsbruck.info/en/destinations/webcams.html",
       "evidence": "Official Innsbruck tourism page highlights a central Markthalle webcam overlooking the colourful houses along the River Inn and Nordkette.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "SUPERSEDED_BY_QUASI_LIVE_PROMOTION",
       "exactTargetUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
       "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
       "humanCheckHint": "On the official Innsbruck webcam page, choose the Markthalle / central Innsbruck camera overlooking the River Inn.",
       "researchEvidence": "Official Innsbruck Tourism webcam page explicitly describes the Markthalle camera overlooking the colourful River Inn houses with the Nordkette behind them.",
-      "webEvidenceConfirmedAt": "2026-10-03"
+      "webEvidenceConfirmedAt": "2026-10-03",
+      "promotedAt": "2026-10-03T05:25:00Z",
+      "promotionNote": "Grouped into the single Innsbruck city searchable place to avoid duplicate-place inflation."
     },
     {
       "id": "dubrovnik-pile-city",
@@ -464,8 +472,10 @@
       "evidence": "Official Innsbruck Tourism webcam index lists Patscherkofel as a live regional webcam location.",
       "researchEvidence": "Innsbruck Tourism states that its webcams provide real-time views across the region and lists Patscherkofel among the live locations.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Innsbruck webcams page and choose Patscherkofel."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Innsbruck webcams page and choose Patscherkofel.",
+      "promotedAt": "2026-10-03T05:25:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
     },
     {
       "id": "innsbruck-mieminger-plateau",
@@ -509,8 +519,10 @@
       "evidence": "Official Innsbruck Tourism webcam index lists Kühtai in the Kühtai-Sellraintal live-camera group.",
       "researchEvidence": "Innsbruck Tourism also identifies Kühtai among live ski-area camera locations.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Innsbruck webcams page and choose Kühtai."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Innsbruck webcams page and choose Kühtai.",
+      "promotedAt": "2026-10-03T05:25:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
     },
     {
       "id": "innsbruck-lusens",
@@ -539,8 +551,10 @@
       "evidence": "Official Innsbruck Tourism regional webcam page exposes Innsbrucker Nordkettenbahnen as a live iframe.",
       "researchEvidence": "The regional webcam page lists an active iframe for the Nordkette cable-car/mountain view.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the regional Innsbruck webcam page and verify the Nordkette iframe updates normally."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the regional Innsbruck webcam page and verify the Nordkette iframe updates normally.",
+      "promotedAt": "2026-10-03T05:25:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
     },
     {
       "id": "innsbruck-stadtturm",
@@ -704,8 +718,10 @@
       "evidence": "SANParks' official Satara webcam page publishes live video from Satara Rest Camp in Kruger National Park and notes an approximately ten-minute video-time difference for stream stability.",
       "researchEvidence": "Official SANParks webcam index lists Satara under live Videos.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Satara video page and confirm the wildlife video is actively updating."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Satara video page and confirm the wildlife video is actively updating.",
+      "promotedAt": "2026-10-03T05:25:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
     },
     {
       "id": "sanparks-olifants",
@@ -719,8 +735,10 @@
       "evidence": "SANParks' official Olifants webcam page publishes live video from Olifants Rest Camp overlooking the Olifants River landscape.",
       "researchEvidence": "Official SANParks webcam index lists Olifants under live Videos.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Olifants video page and confirm the video is actively updating."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Olifants video page and confirm the video is actively updating.",
+      "promotedAt": "2026-10-03T05:25:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
     },
     {
       "id": "sanparks-punda-maria",
@@ -768,8 +786,10 @@
       "evidence": "The City of Mendoza municipal camera page identifies Plaza Independencia as Stream Type LIVE and exposes the city camera directly.",
       "researchEvidence": "Official municipal live-camera page currently shows Plaza Independencia as LIVE.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official municipal camera page and confirm Plaza Independencia is visibly live/current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official municipal camera page and confirm Plaza Independencia is visibly live/current.",
+      "promotedAt": "2026-10-03T05:25:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
     },
     {
       "id": "ushuaia-harbour-municipal",
@@ -847,8 +867,10 @@
       "evidence": "Official Visit St. Maarten describes Maho Beach as a 24/7 live webcam overlooking the airport approach and beach.",
       "researchEvidence": "Visit St. Maarten explicitly endorses the ShowMe Caribbean Maho webcam as a 24/7 live stream.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Visit St. Maarten webcam article and confirm the Maho Beach live stream is currently playing."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Visit St. Maarten webcam article and confirm the Maho Beach live stream is currently playing.",
+      "promotedAt": "2026-10-03T05:25:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
     },
     {
       "id": "st-maarten-great-bay-boardwalk",
@@ -862,8 +884,10 @@
       "evidence": "Official Visit St. Maarten says the Philipsburg Boardwalk webcam provides a 24/7 overview of Great Bay Beach and the Boardwalk.",
       "researchEvidence": "Visit St. Maarten's Philipsburg area page explicitly identifies the live Philipsburg Boardwalk webcam and describes it as 24/7.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Philipsburg tourism page and confirm the Great Bay/Boardwalk webcam is visibly live."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Philipsburg tourism page and confirm the Great Bay/Boardwalk webcam is visibly live.",
+      "promotedAt": "2026-10-03T05:25:00Z",
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
     },
     {
       "id": "st-maarten-simpson-bay",
