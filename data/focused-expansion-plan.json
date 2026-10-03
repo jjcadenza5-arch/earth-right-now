@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:15:00Z",
+  "generatedAt": "2026-10-03T04:20:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 91,
@@ -20,12 +20,12 @@
       "dubrovnik-pile-city",
       "everest-khumbu-hotel-view",
       "mauritius-grand-baie",
-      "gudauri-ski-area",
-      "hualien-shitiping"
+      "khumbu-glacier-nco-p",
+      "malta-live-cams"
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
-    "researchCandidateCount": 91,
-    "playbackGatedCandidateCount": 73,
+    "researchCandidateCount": 100,
+    "playbackGatedCandidateCount": 96,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan",
       "adjacentHighValueChecks": [
@@ -52,6 +52,11 @@
     ],
     "researchGaps": [
       "core-pamir-live-camera-gap"
+    ],
+    "worldGapFamilies": [
+      "Antarctica — Australian Antarctic Program current-image stations",
+      "Panama Canal — Panama Canal Authority real-time lock cameras",
+      "Central Asia — Pamir core unresolved; adjacent verified research only"
     ]
   },
   "businessLane": {
@@ -97,7 +102,16 @@
       "klook-ala-archa-future",
       "klook-gudauri-future",
       "klook-shymbulak-future",
-      "viator-everest-future"
+      "viator-everest-future",
+      "viator-bled-future",
+      "viator-mykonos-future",
+      "viator-santorini-future",
+      "viator-brasov-future",
+      "klook-istanbul-future",
+      "viator-istanbul-future",
+      "klook-bali-future",
+      "viator-bali-future",
+      "viator-panama-canal-future"
     ],
     "accommodationResearch": [
       "hotels-com",
@@ -106,8 +120,8 @@
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 12,
     "exactLinkQueueCount": 23,
-    "sourceGatedQueueCount": 18,
-    "sourceGapBlockedCount": 1,
+    "sourceGatedQueueCount": 32,
+    "sourceGapBlockedCount": 0,
     "sourceGatedOpportunityCount": 31
   },
   "safeguards": {
