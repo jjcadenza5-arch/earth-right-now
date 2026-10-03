@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:30:00Z",
+  "generatedAt": "2026-10-03T14:05:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -107,7 +107,22 @@
     "currentCommercialOpportunityCount": 171,
     "healthyPlacesWithCommercialPath": 231,
     "healthyPlacesWithoutCommercialPath": 25,
-    "verifiedLinkHealthyPlaces": 22
+    "verifiedLinkHealthyPlaces": 22,
+    "travelpayoutsTrafficGatedProgramsObserved": true,
+    "travelpayoutsTrafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
+    "futurePriorityPrograms": [
+      "trip-com",
+      "hotels-com",
+      "booking-com",
+      "agoda",
+      "expedia",
+      "getyourguide",
+      "tripadvisor-experiences",
+      "discovercars",
+      "traveloka",
+      "omio",
+      "12go"
+    ]
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -136,7 +151,8 @@
     "Official Tvøroyri and Shetland current-camera pages expanded searchable coverage to 256 healthy places.",
     "Business-place expansion matrix now prepares Kiwitaxi, Radical Storage, KKday, Localrent, QEEQ and WeGoTrip coverage across many healthy ERN places.",
     "High-value commercial research coverage expanded to 196 of 256 healthy ERN places.",
-    "Commercial opportunity registry expanded to 150 entries while verified/public links remain fail-closed until exact tracked-link verification."
+    "Commercial opportunity registry expanded to 150 entries while verified/public links remain fail-closed until exact tracked-link verification.",
+    "Traffic-gated future programs mapped from owner Travelpayouts account screenshots"
   ],
   "humanOnlyRemaining": [
     {
@@ -162,6 +178,14 @@
       "blocksPublicERN": false,
       "blocksCurrentOffers": false,
       "blocksOnlyNewPlacements": true
+    },
+    {
+      "id": "future-program-unlocks",
+      "action": "Do not repeatedly check locked Travelpayouts programs. Revisit only when Travelpayouts changes access, ERN traffic materially increases, or owner receives an unlock invitation.",
+      "priority": "LATER_TRAFFIC_TRIGGERED",
+      "blocksPublicERN": false,
+      "blocksCurrentOffers": false,
+      "blocksOnlyFuturePrograms": true
     }
   ],
   "safeguards": [
@@ -172,7 +196,8 @@
     "Do not activate all available programs merely because they are available",
     "Do not open a direct Trip.com account unless Travelpayouts project status makes that strategically useful",
     "Accommodation links remain downstream from Earth discovery and cannot affect ranking",
-    "Do not repeatedly ask owner to recheck locked Travelpayouts programs; recheck only on meaningful traffic/account-state change"
+    "Do not repeatedly ask owner to recheck locked Travelpayouts programs; recheck only on meaningful traffic/account-state change",
+    "Locked/traffic-gated programs may not be treated as active or available"
   ],
   "currentHealthySearchablePlaces": 256,
   "releaseHealth": {
