@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T14:10:00Z",
+  "generatedAt": "2026-10-03T16:40:00Z",
   "publicActivationAllowed": false,
   "purpose": "Prepare currently link-generation-capable Travelpayouts utilities for ERN without waiting for traffic-gated stay programs.",
   "currentlyUsableProgramCount": 23,
@@ -145,7 +145,15 @@
         "kyoto-fushimi-inari",
         "takayama-miyagawa",
         "cijin-beach-kaohsiung",
-        "farm-tomita"
+        "farm-tomita",
+        "taiwan-baisha-bay",
+        "taiwan-laomei-green-reef",
+        "taiwan-yinghanling-guanyinshan",
+        "taiwan-taipingshan",
+        "taiwan-fenqihu",
+        "taiwan-daxi-old-street",
+        "taiwan-dongyanshan",
+        "taiwan-taiping-suspension-bridge"
       ],
       "use": "Activity coverage only where KKday materially improves visitor choice beyond current Klook inventory."
     },
@@ -261,20 +269,20 @@
   ],
   "note": "Deferred programs remain potentially useful but ERN should first prove demand with one strong option per intent.",
   "coverageExpansion": {
-    "healthySearchablePlaceBaseline": 275,
+    "healthySearchablePlaceBaseline": 300,
     "purpose": "Broaden business-ready place coverage using programs that already expose link generation; this is research/preparation only.",
     "rule": "Place candidacy does not assert inventory. Exact coverage must be checked in the owner account before link generation.",
     "expandedQueues": {
       "go-city-city-passes": 4,
       "kiwitaxi-arrivals": 21,
       "radical-storage-city": 21,
-      "kkday-asia-gaps": 25,
+      "kkday-asia-gaps": 33,
       "localrent-roadtrip": 20,
       "qeeq-rental": 20,
       "wegotrip-audio": 20
     }
   },
-  "currentStrategy": "Convert a small number of broad/high-utility links first; do not create one affiliate action for every one of 275 places.",
+  "currentStrategy": "At 300 searchable places, convert a small number of broad/high-utility links first; do not create one affiliate action per place.",
   "ownerBatchPriority": [
     "airalo-global",
     "go-city-city-passes",
