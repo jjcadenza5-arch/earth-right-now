@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:28:00Z",
+  "generatedAt": "2026-10-03T03:50:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 91,
@@ -17,15 +17,15 @@
       "karakol-ski-base",
       "shymbulak-mountain-resort",
       "bled-lake-tourism",
+      "nicaragua-concepcion-volcano",
+      "ecuador-cotopaxi-monitoring",
       "dubrovnik-pile-city",
       "everest-khumbu-hotel-view",
-      "mauritius-grand-baie",
-      "khumbu-glacier-nco-p",
-      "malta-live-cams"
+      "mauritius-grand-baie"
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
-    "researchCandidateCount": 101,
-    "playbackGatedCandidateCount": 97,
+    "researchCandidateCount": 112,
+    "playbackGatedCandidateCount": 108,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan",
       "adjacentHighValueChecks": [
@@ -42,7 +42,7 @@
       ],
       "rule": "Adjacent Central Asia cameras improve regional breadth but do not close the Pamir/Tajikistan gap."
     },
-    "researchBacklogCount": 79,
+    "researchBacklogCount": 96,
     "mountainExpansionFocus": [
       "Pamir gateways",
       "Gudauri/Kobi",
@@ -57,7 +57,10 @@
       "Pamir core — still unresolved; no weak substitute",
       "Antarctica — Australian Antarctic Program current-image stations",
       "Panama Canal — official real-time lock cameras",
-      "KenyaLIVE — KWS daily wildlife live program, Nairobi launch"
+      "Costa Rica — OVSICORI volcano current-image family",
+      "Nicaragua — INETER real-time volcano image family",
+      "Ecuador — IG-EPN volcano visual-monitoring family",
+      "KenyaLIVE — KWS daily wildlife live program"
     ]
   },
   "businessLane": {
@@ -113,7 +116,11 @@
       "klook-bali-future",
       "viator-bali-future",
       "viator-panama-canal-future",
-      "viator-nairobi-national-park-future"
+      "viator-nairobi-national-park-future",
+      "klook-poas-future",
+      "viator-rincon-costa-rica-future",
+      "viator-cotopaxi-future",
+      "viator-nicaragua-volcanoes-future"
     ],
     "accommodationResearch": [
       "hotels-com",
@@ -121,9 +128,9 @@
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 12,
-    "exactLinkQueueCount": 23,
-    "sourceGatedQueueCount": 33,
-    "sourceGapBlockedCount": 0,
+    "exactLinkQueueCount": 24,
+    "sourceGatedQueueCount": 37,
+    "sourceGapBlockedCount": 1,
     "sourceGatedOpportunityCount": 31
   },
   "safeguards": {
