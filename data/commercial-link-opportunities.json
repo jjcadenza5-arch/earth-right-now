@@ -528,12 +528,14 @@
       "id": "viator-aruba",
       "destination": "Aruba / Druif Beach",
       "placeIds": [
-        "druif-beach-aruba"
+        "druif-beach-aruba",
+        "aruba-palm-beach",
+        "aruba-eagle-beach"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN has a high-quality healthy Druif Beach live place and Viator currently exposes broad Aruba island, beach, snorkeling, sailing and off-road inventory.",
+      "reason": "ERN now has healthy Druif Beach, Palm Beach and Eagle Beach discovery places. One Aruba-wide Viator planning link should serve the island cluster without duplicate per-beach commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Aruba/d28-ttd",
       "publicInventoryEvidence": "Current Viator Aruba destination inventory contains 400+ experiences including snorkeling, sailing, island tours and beach-focused activities.",
