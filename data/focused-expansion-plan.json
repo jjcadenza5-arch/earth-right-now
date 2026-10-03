@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T02:10:00Z",
+  "mode": "FOCUSED_EXPANSION",
+  "visitorLane": {
+    "currentHealthyDistinctPlaceBaseline": 91,
+    "targetRange": [
+      150,
+      200
+    ],
+    "strategy": "Add only genuinely distinct useful places; prefer official tourism/government/provider pages; human playback verification required before promotion.",
+    "nextHumanCheckBatch": [
+      "prague-petrin-tower",
+      "prague-old-town-hall",
+      "salzburg-mirabell-old-town",
+      "innsbruck-live-panorama",
+      "innsbruck-nordkette",
+      "dubrovnik-pile-city",
+      "malta-live-cams",
+      "tallinn-tv-tower-panorama"
+    ],
+    "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed."
+  },
+  "businessLane": {
+    "activePartners": [
+      "viator",
+      "klook",
+      "tiqets",
+      "welcome-pickups"
+    ],
+    "verifiedOfferStrategy": "Prefer destination-level links and one useful commercial action per intent; no commission ranking.",
+    "nextExactLinkBatch": [
+      "tiqets-vienna",
+      "tiqets-georgia-aquarium",
+      "tiqets-san-diego-zoo",
+      "viator-helsinki",
+      "viator-lucerne",
+      "viator-cancun",
+      "viator-zermatt"
+    ],
+    "futureAfterSourceVerification": [
+      "tiqets-prague-future",
+      "tiqets-salzburg-future"
+    ],
+    "accommodationResearch": [
+      "hotels-com",
+      "trip-com"
+    ],
+    "accommodationRule": "Research-only until owner-project availability is confirmed."
+  },
+  "safeguards": {
+    "automaticPlacement": false,
+    "automaticLinkRewriting": false,
+    "paidRanking": false,
+    "unverifiedLivePromotion": false,
+    "publicGenerativeGuide": false,
+    "publicNowMoments": false
+  }
+}
