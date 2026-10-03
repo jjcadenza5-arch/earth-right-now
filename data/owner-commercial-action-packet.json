@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:08:00Z",
+  "generatedAt": "2026-10-03T16:40:00Z",
   "status": "OWNER_ACTION_DORMANT_UNTIL_BUNDLED_LINK_SESSION",
   "principle": "Bundle owner-only commercial actions; do not interrupt repeatedly.",
   "tripComCheck": {
@@ -72,9 +72,23 @@
       "destination": "Andorra",
       "partner": "klook",
       "reason": "Three new official real-time searchable mountain places; one country-level Klook link can serve them without duplicate density."
+    },
+    {
+      "priority": 10,
+      "id": "tiqets-krakow",
+      "destination": "Kraków",
+      "partner": "tiqets",
+      "reason": "Three official current-camera places; one city-level Tiqets link can serve all three."
+    },
+    {
+      "priority": 11,
+      "id": "viator-longyearbyen",
+      "destination": "Longyearbyen / Svalbard",
+      "partner": "viator",
+      "reason": "New high-value Arctic discovery place with relevant Svalbard activity inventory."
     }
   ],
-  "executionRule": "Bundle exact-link work into a later owner session only after autonomous expansion/maintenance work is exhausted; locked Travelpayouts programs are rechecked only after a material traffic or account-state trigger.",
+  "executionRule": "Keep owner work bundled and dormant. Next session should convert the highest-value exact links and broad utilities only; do not recheck Trip.com or other traffic-gated programs without a material traffic/account-state trigger.",
   "safeguards": {
     "paidRanking": false,
     "automaticPlacement": false,
