@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:30:00Z",
+  "generatedAt": "2026-10-03T03:35:00Z",
   "status": "READY_NOT_REQUESTED",
   "purpose": "One compact owner batch to use only when autonomous work is no longer the limiting factor.",
   "sourceChecks": [
@@ -218,6 +218,13 @@
       "partner": "viator",
       "intent": "activities",
       "nextAction": "Generate one Aruba destination-level Viator partner link and manually verify it before public activation; keep the offer downstream from Earth discovery."
+    },
+    {
+      "id": "viator-boulders-beach",
+      "destination": "Boulders Beach / Cape Peninsula",
+      "partner": "viator",
+      "intent": "activities",
+      "nextAction": "Generate a Boulders Beach or tightly scoped Cape Peninsula Viator partner link and manually verify it before public activation; avoid duplicating the generic Cape Town offer."
     }
   ],
   "rules": {
