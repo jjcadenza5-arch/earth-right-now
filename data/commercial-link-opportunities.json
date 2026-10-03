@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T16:20:00Z",
+  "generatedAt": "2026-10-03T16:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3047,6 +3047,21 @@
       "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/krakow-attractions-c46/",
       "publicInventoryEvidence": "Current Tiqets Kraków destination inventory includes Wawel Castle, Rynek Underground Museum, city tours, museums, excursions and cruises.",
       "nextAction": "Generate one Kraków city-level Tiqets tracked link in the owner account and verify it manually before public activation; reuse it across the three Kraków places rather than creating duplicate per-camera offers."
+    },
+    {
+      "id": "viator-longyearbyen",
+      "destination": "Longyearbyen / Svalbard",
+      "placeIds": [
+        "longyearbyen-adventfjorden"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a current institutional Longyearbyen/Svalbard view, and Viator currently lists guided Svalbard snowmobile and Arctic-wilderness experiences starting from Longyearbyen.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Norway-tours/Adrenaline-and-Extreme/d61-g9-c87/3",
+      "publicInventoryEvidence": "Current Viator Norway inventory includes Svalbard/Longyearbyen Arctic experiences, including guided snowmobile and ice-cave products.",
+      "nextAction": "Search the Viator partner account for a clean Svalbard or Longyearbyen destination-level tracked link and verify it manually before activation."
     }
   ]
 }
