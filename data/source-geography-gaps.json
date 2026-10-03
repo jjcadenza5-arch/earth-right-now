@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T02:50:00Z",
+  "healthyDistinctPlaces": 91,
+  "playbackGatedCandidates": 45,
+  "currentByRegion": {
+    "Oceania": 7,
+    "North America": 23,
+    "Africa": 7,
+    "Asia": 16,
+    "Europe": 31,
+    "Caribbean": 3,
+    "Europe / Caucasus": 1,
+    "Global": 1,
+    "South America": 2
+  },
+  "candidateByRegion": {
+    "Europe": 35,
+    "Asia": 10
+  },
+  "expansionGuidance": [
+    {
+      "region": "South America",
+      "priority": "HIGH",
+      "reason": "Current healthy coverage is thin relative to Europe/North America; seek official tourism, parks and city live sources."
+    },
+    {
+      "region": "Africa",
+      "priority": "MEDIUM_HIGH",
+      "reason": "Current coverage is concentrated in South Africa plus one Kenya source; broaden countries and source families."
+    },
+    {
+      "region": "Asia",
+      "priority": "MEDIUM_HIGH",
+      "reason": "Japan is deep, while most other Asian countries remain sparse. Taiwan official Tourism Administration family is the current expansion anchor."
+    },
+    {
+      "region": "Oceania",
+      "priority": "MEDIUM",
+      "reason": "Australia and New Zealand have useful coverage but can broaden beyond existing city/coast clusters."
+    },
+    {
+      "region": "Caribbean",
+      "priority": "MEDIUM",
+      "reason": "Existing beach destinations are strong but country count is still small."
+    },
+    {
+      "region": "Europe",
+      "priority": "CONTROLLED",
+      "reason": "Research backlog is already large; add only unusually strong or commercially useful official sources."
+    },
+    {
+      "region": "North America",
+      "priority": "CONTROLLED",
+      "reason": "Existing healthy inventory is already deep, especially the United States; prioritize quality over count."
+    }
+  ],
+  "antiConcentrationRules": {
+    "doNotChaseRawCount": true,
+    "preferNewCountryOrDistinctLandscape": true,
+    "officialSourcesFirst": true,
+    "humanPlaybackStillRequired": true
+  }
+}
