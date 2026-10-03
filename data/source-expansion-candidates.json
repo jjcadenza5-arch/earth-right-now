@@ -3001,7 +3001,7 @@
       "priority": "P2",
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "humanCheckHint": "No urgent check required. Revisit when runtime catalog headroom improves or a stronger exact target is isolated.",
-      "verifiedAt": "2026-10-03T15:15:00Z",
+      "verifiedAt": "2026-10-03T14:20:00Z",
       "verification": "Promoted from Taiwan government official live-image directory."
     },
     {
