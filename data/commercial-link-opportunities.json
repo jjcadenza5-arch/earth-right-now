@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T16:30:00Z",
+  "generatedAt": "2026-10-03T01:25:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -208,6 +208,45 @@
       "nextAction": "Observe aggregate Rome transport clicks; keep transfer options downstream from Earth discovery.",
       "trackingUrl": "https://tpo.mx/nXA1do8a",
       "verifiedAt": "2026-10-02T16:30:00Z"
+    },
+    {
+      "id": "tiqets-vienna",
+      "destination": "Vienna",
+      "placeIds": [
+        "vienna-city-hall-ringstrasse"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "Vienna's current city/landmark window naturally connects to a deep attraction and culture inventory from an already-active ERN partner.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one Vienna destination-level Tiqets tracked link in Travelpayouts only after owner verification; keep commercial placement downstream from discovery."
+    },
+    {
+      "id": "viator-helsinki",
+      "destination": "Helsinki",
+      "placeIds": [
+        "helsinki-market-square-south-harbour"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Helsinki's current harbour/city window has strong visitor-planning utility and Viator has broad Helsinki tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one Helsinki destination-level Viator partner link and verify it manually before adding any public offer."
+    },
+    {
+      "id": "viator-turku",
+      "destination": "Turku",
+      "placeIds": [
+        "turku-port-archipelago"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Turku's current port/archipelago view can lead naturally to walking and city activities; Viator currently has a smaller but real Turku inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Only generate a Turku Viator link if the destination page remains useful enough to justify a commercial action."
     }
   ]
 }
