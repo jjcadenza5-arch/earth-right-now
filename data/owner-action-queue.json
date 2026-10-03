@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T09:10:00Z",
+  "generatedAt": "2026-10-03T09:25:00Z",
   "mode": "DORMANT_UNTIL_AUTONOMOUS_WORK_EXHAUSTED",
   "currentNeedOwner": false,
   "purpose": "Bundle future owner-only actions so ERN does not interrupt with one-off checks.",
@@ -84,34 +84,22 @@
   ],
   "exactLinkActions": [
     {
+      "id": "klook-kenting-national-forest",
+      "destination": "Kenting National Forest / Pingtung",
+      "partner": "klook",
+      "nextAction": "Generate one exact Kenting National Forest Klook tracked link in the ERN Travelpayouts project and manually verify it before public activation."
+    },
+    {
+      "id": "klook-green-island-taitung",
+      "destination": "Green Island / Taitung",
+      "partner": "klook",
+      "nextAction": "Generate one destination-level Green Island Klook tracked link rather than multiple product-level links; manually verify before public activation."
+    },
+    {
       "id": "tiqets-vienna",
       "destination": "Vienna",
       "partner": "tiqets",
       "nextAction": "Generate one Vienna destination-level Tiqets tracked link in Travelpayouts only after owner verification; keep commercial placement downstream from discovery."
-    },
-    {
-      "id": "viator-helsinki",
-      "destination": "Helsinki",
-      "partner": "viator",
-      "nextAction": "Generate one Helsinki destination-level Viator partner link and verify it manually before adding any public offer."
-    },
-    {
-      "id": "viator-lucerne",
-      "destination": "Lucerne / Lake Lucerne",
-      "partner": "viator",
-      "nextAction": "Generate and manually verify one destination-level Lucerne Viator partner link before public offer activation."
-    },
-    {
-      "id": "viator-tbilisi",
-      "destination": "Tbilisi",
-      "partner": "viator",
-      "nextAction": "Generate and manually verify one Tbilisi Viator destination link; keep planning downstream from discovery."
-    },
-    {
-      "id": "viator-cancun",
-      "destination": "Cancún",
-      "partner": "viator",
-      "nextAction": "Generate and manually verify one Cancún Viator destination link before any public placement."
     },
     {
       "id": "tiqets-georgia-aquarium",
@@ -126,34 +114,64 @@
       "nextAction": "Generate one San Diego Zoo Tiqets tracked link in Travelpayouts and manually verify it before public activation."
     },
     {
+      "id": "viator-st-johns-newfoundland",
+      "destination": "St. John's, Newfoundland",
+      "partner": "viator",
+      "nextAction": "Generate one St. John's destination-level Viator tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-maui-kihei",
+      "destination": "Maui / Kihei",
+      "partner": "viator",
+      "nextAction": "Generate one Maui or Kihei destination-level Viator tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-orpen-kruger",
+      "destination": "Orpen / Kruger National Park",
+      "partner": "viator",
+      "nextAction": "Generate one Kruger/Orpen destination-level Viator tracked link and verify it manually before public activation."
+    },
+    {
+      "id": "viator-hveravellir",
+      "destination": "Hveravellir / Icelandic Highlands",
+      "partner": "viator",
+      "nextAction": "If the ERN Viator partner account exposes a clean Hveravellir or Icelandic Highlands link, generate and verify one before public activation."
+    },
+    {
+      "id": "viator-brasov-poiana",
+      "destination": "Brașov / Poiana Brașov",
+      "partner": "viator",
+      "nextAction": "Generate one Brașov destination-level Viator tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-misti-arequipa",
+      "destination": "Arequipa / Colca / Volcano Region",
+      "partner": "viator",
+      "nextAction": "Generate one Arequipa/Colca destination-level Viator tracked link and reuse it across the mapped regional volcano places only if the destination page is clean and useful."
+    },
+    {
+      "id": "viator-helsinki",
+      "destination": "Helsinki",
+      "partner": "viator",
+      "nextAction": "Generate one Helsinki destination-level Viator partner link and verify it manually before adding any public offer."
+    },
+    {
+      "id": "viator-lucerne",
+      "destination": "Lucerne / Lake Lucerne",
+      "partner": "viator",
+      "nextAction": "Generate and manually verify one destination-level Lucerne Viator partner link before public offer activation."
+    },
+    {
+      "id": "viator-cancun",
+      "destination": "Cancún",
+      "partner": "viator",
+      "nextAction": "Generate and manually verify one Cancún Viator destination link before any public placement."
+    },
+    {
       "id": "viator-zermatt",
       "destination": "Zermatt / Matterhorn",
       "partner": "viator",
       "nextAction": "Generate one Zermatt destination-level Viator partner link and manually verify it before public activation."
-    },
-    {
-      "id": "viator-san-diego-zoo",
-      "destination": "San Diego / San Diego Zoo",
-      "partner": "viator",
-      "nextAction": "Generate one San Diego destination or Zoo-specific Viator partner link and verify it manually; avoid duplicate density if Tiqets is later activated for the same place."
-    },
-    {
-      "id": "viator-aruba",
-      "destination": "Aruba / Druif Beach",
-      "partner": "viator",
-      "nextAction": "Generate one Aruba destination-level Viator partner link and manually verify it before public activation; keep the offer downstream from Earth discovery."
-    },
-    {
-      "id": "viator-kilauea",
-      "destination": "Hawaiʻi Volcanoes National Park / Kīlauea",
-      "partner": "viator",
-      "nextAction": "Generate one Big Island / Hawaiʻi Volcanoes National Park partner link that resolves cleanly to Kīlauea-relevant inventory; verify it manually before public activation."
-    },
-    {
-      "id": "viator-torres-del-paine",
-      "destination": "Torres del Paine",
-      "partner": "viator",
-      "nextAction": "Prefer a clean Torres del Paine or Puerto Natales destination-level partner link over a single-product link; verify manually before public activation."
     }
   ],
   "rules": {
