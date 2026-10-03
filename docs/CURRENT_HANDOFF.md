@@ -541,3 +541,13 @@ Post-250 reconciliation — 2026-10-03:
 - Existing Cape Town/Viator path was extended to Blouberg/Table Mountain rather than creating duplicate commercial density.
 - Business-place matrix now prepares broader Kiwitaxi, Radical Storage, KKday, Localrent, QEEQ and WeGoTrip coverage across healthy ERN places, all owner/exact-link gated.
 - Trip.com / Hotels.com / Booking.com / Agoda / Expedia and similar stay programs remain traffic-led future unlocks; no repeated owner recheck is required.
+
+
+231-commercial-path checkpoint — 2026-10-03:
+- Searchable catalog remains 256 healthy distinct places and is production-green.
+- Runtime source catalog now stores concise rights/freshness audit markers while full provenance is preserved in data/source-evidence.json, creating durable headroom under the strict 300 KB source budget.
+- Commercial opportunity registry now contains 171 researched opportunities: 16 verified-link opportunities, 148 exact-link/account-search paths, 5 source-gated paths and 2 unresolved source-gap paths.
+- 231 of 256 healthy places now have at least one useful commercial research path; the remaining 25 are intentionally editorial-first/deferred in data/commercial-editorial-only.json rather than being force-monetized.
+- Seoul Gwanghwamun and Cheonggyecheon were consolidated under the already-verified Seoul/Klook city path. Tvøroyri was consolidated under the Faroe Islands path, and Lerwick/Shetland place IDs were corrected under the existing Shetland path.
+- Go City research paths added for New York, London and Chicago; other new research paths include Adelaide coast, Taranaki, Kyrgyz highlands, Hakodate/Kijihiki, Gippsland Lakes, Ponte di Legno, Skeikampen, Diano Marina, Chioggia/Sottomarina, Perdido Key and Kgalagadi.
+- Trip.com, Hotels.com, Booking.com, Agoda, Expedia and other traffic-gated programs remain future unlocks, not current owner tasks.
