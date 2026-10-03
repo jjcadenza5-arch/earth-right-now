@@ -590,3 +590,16 @@ Scale-target reconciliation — 2026-10-03 evening:
 - Trip.com should be added later when Travelpayouts unlocks it; ERN should not wait for it or repeatedly recheck it now.
 - Business work now splits into: existing verified offers, currently owner-account-link-generation-capable programs, exact-link conversion for existing partners, and traffic-gated future programs.
 - No locked program is treated as active; no automatic placement/rewrite/ranking changes were introduced.
+
+
+Quality-first / traffic-unlock checkpoint — 2026-10-03 14:40 UTC:
+- ERN now has 275 healthy distinct searchable places across 63 countries from 283 source records; raw scale target is exceeded.
+- Search/Explore truth mix is 13 LIVE_VIDEO, 69 EXTERNAL_LIVE and 197 LIVE_IMAGE/current-image source records among healthy sources. Watch Earth remains stricter than Search/Explore.
+- Geographic plan reconciled to the actual 63-country catalog. Pamir/Tajikistan is now explicitly DEFERRED_OWNER_APPROVED; revisit later if better live/quasi-live sources appear, but it no longer consumes active expansion cycles.
+- Aruba quality-gap research added Palm Beach and Eagle Beach from the official Aruba Tourism Authority live-webcam index. Multiple resort cameras are grouped by real beach/place rather than counted as fake destinations.
+- Aruba-wide Viator opportunity added using existing healthy Druif Beach plus future Palm/Eagle Beach coverage; one island-level tracked link is preferred over duplicate per-camera offers.
+- Commercial registry contains 180 opportunities: 16 VERIFIED_LINK_ADDED, 157 ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED, 5 SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK, 2 SOURCE_GAP_MUST_BE_SOLVED_FIRST.
+- Existing travel-offer registry currently has 25 verified records covering 19 healthy ERN places.
+- data/commercial-conversion-shortlist.json now reduces the actionable healthy-place backlog to a 15-destination owner batch. No invented links; only exact owner-generated/verified tracked links may activate.
+- Trip.com remains P1 future business coverage but WAIT_FOR_TRAFFIC_UNLOCK. Same principle applies to Hotels.com, Booking.com, Agoda, Expedia, GetYourGuide and other owner-visible but traffic-gated Travelpayouts programs.
+- Current business priority: use active Viator/Klook/Tiqets/Welcome Pickups, grow qualified organic traffic, batch exact-link conversion, and recheck locked programs only on a real unlock/traffic/conversion signal.
