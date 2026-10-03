@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:55:00Z",
+  "generatedAt": "2026-10-03T03:30:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -1599,10 +1599,10 @@
       "evidence": "INETER's official real-time volcano camera page lists Masaya.",
       "researchEvidence": "Government-operated current-image network.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
       "humanCheckHint": "Choose Masaya and confirm the current image is live/current rather than archived.",
-      "verifiedAt": "2026-10-03T04:28:00Z",
-      "verification": "Official government/science current-image network verified; Search/Explore promotion only with LIVE_IMAGE truth and Watch Earth hold."
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
     },
     {
       "id": "nicaragua-concepcion-volcano",
@@ -1616,10 +1616,10 @@
       "evidence": "INETER's official real-time volcano camera page lists Concepción from Altagracia.",
       "researchEvidence": "Government-operated current-image network on Ometepe.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
       "humanCheckHint": "Choose Concepción and confirm the image refresh is current and visually useful.",
-      "verifiedAt": "2026-10-03T04:28:00Z",
-      "verification": "Official government/science current-image network verified; Search/Explore promotion only with LIVE_IMAGE truth and Watch Earth hold."
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
     },
     {
       "id": "ecuador-cotopaxi-monitoring",
@@ -1654,6 +1654,84 @@
       "humanCheckHint": "Confirm a current visual frame with reliable timestamp/refresh before promotion.",
       "verifiedAt": "2026-10-03T04:28:00Z",
       "verification": "Official government/science current-image network verified; Search/Explore promotion only with LIVE_IMAGE truth and Watch Earth hold."
+    },
+    {
+      "id": "nicaragua-san-cristobal-current-image",
+      "title": "San Cristóbal Volcano — Nicaragua",
+      "country": "Nicaragua",
+      "region": "Chinandega",
+      "provider": "INETER",
+      "sourcePage": "https://webserver2.ineter.gob.ni/webcam/v_sancristobal/index.html",
+      "evidence": "INETER's current volcano camera index states Nicaragua volcano webcam images are transmitted in real time every 30 seconds or 1 minute; the San Cristóbal detail page states automatic refresh at about five minutes.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
+    },
+    {
+      "id": "nicaragua-telica-current-image",
+      "title": "Telica Volcano — Nicaragua",
+      "country": "Nicaragua",
+      "region": "León",
+      "provider": "INETER",
+      "sourcePage": "https://webserver2.ineter.gob.ni/geofisica/geofisica/webcam/v_telica2/index.html",
+      "evidence": "INETER states the Telica crater image refreshes automatically about every five minutes; its current volcano index describes real-time images every 30 seconds or 1 minute.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
+    },
+    {
+      "id": "nicaragua-momotombo-current-image",
+      "title": "Momotombo Volcano — Nicaragua",
+      "country": "Nicaragua",
+      "region": "León",
+      "provider": "INETER",
+      "sourcePage": "https://web-geofisica.ineter.gob.ni/webcam/v_momotombo/index.html",
+      "evidence": "INETER states Momotombo webcam images refresh automatically about every five minutes and are used for live visual monitoring.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
+    },
+    {
+      "id": "nicaragua-cerro-negro-current-image",
+      "title": "Cerro Negro Volcano — Nicaragua",
+      "country": "Nicaragua",
+      "region": "León",
+      "provider": "INETER",
+      "sourcePage": "https://www.ineter.gob.ni/volcanes-en-nicaragua/volcan-cerro-negro-nicaragua/",
+      "evidence": "INETER's current Cerro Negro page says the image updates automatically about every minute.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
+    },
+    {
+      "id": "guatemala-fuego-current-image",
+      "title": "Volcán de Fuego — Guatemala",
+      "country": "Guatemala",
+      "region": "Sacatepéquez / Escuintla",
+      "provider": "INSIVUMEH",
+      "sourcePage": "https://insivumeh.gob.gt/camaras-de-vigilancia-volcanica/",
+      "evidence": "INSIVUMEH states its Fuego/Santiaguito platform updates every minute with the most recent images and provides a six-hour photographic record.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
+    },
+    {
+      "id": "guatemala-santiaguito-current-image",
+      "title": "Santiaguito Volcano — Guatemala",
+      "country": "Guatemala",
+      "region": "Quetzaltenango",
+      "provider": "INSIVUMEH",
+      "sourcePage": "https://insivumeh.gob.gt/camaras-de-vigilancia-volcanica/",
+      "evidence": "INSIVUMEH states its Fuego/Santiaguito platform updates every minute with the most recent images and provides a six-hour photographic record.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
     }
   ],
   "notes": [
@@ -1685,7 +1763,8 @@
     "2026-10-03 Central/South America official-volcano batch added Costa Rica OVSICORI, Nicaragua INETER and Ecuador IG-EPN camera families. These are current-image/scientific monitoring sources; ERN must use LIVE_IMAGE/current-image semantics where appropriate and never imply continuous video.",
     "2026-10-03 owner explicitly approved quasi-live searchable sources: frequently refreshed webcams, updated cameras and recent provider-published images are acceptable for Search/Explore when clearly labeled. Watch Earth remains stricter.",
     "First quasi-live promotion batch added Casey, Davis, Mawson, Macquarie Island, Poás, Turrialba, Irazú, Rincón de la Vieja and Cotopaxi as searchable LIVE_IMAGE/current-monitoring places with featured/watch holds.",
-    "Second quasi-live batch promoted five INETER Nicaragua volcano places plus El Reventador monitoring in Ecuador. INETER explicitly states images are transmitted in real time every 30 seconds or 1 minute."
+    "Second quasi-live batch promoted five INETER Nicaragua volcano places plus El Reventador monitoring in Ecuador. INETER explicitly states images are transmitted in real time every 30 seconds or 1 minute.",
+    "2026-10-03 quasi-live policy used to promote six official INETER Nicaragua volcano cameras plus INSIVUMEH Fuego and Santiaguito into searchable LIVE_IMAGE coverage. These do not enter Watch Earth as continuous live video."
   ],
   "researchGaps": [
     {
