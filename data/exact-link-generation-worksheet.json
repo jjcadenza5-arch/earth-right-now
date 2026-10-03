@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T14:05:00Z",
+  "generatedAt": "2026-10-03T15:40:00Z",
   "status": "OWNER_ACTION_NOT_YET_REQUIRED",
   "purpose": "One efficient owner session for exact tracked-link generation after autonomous research is complete.",
   "rule": "Never invent URLs. Use the named partner account/tool, search the exact phrase, generate the tracked link, open it manually, then record it.",
@@ -488,8 +488,23 @@
       ],
       "accountSearchPhrase": "Aalborg tours activities",
       "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-cook-islands",
+      "partner": "viator",
+      "destination": "Cook Islands — Rarotonga & Aitutaki",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "aitutaki-lagoon",
+        "aitutaki-tamanu-beach",
+        "rarotonga-avaavaroa-beach",
+        "rarotonga-international-airport"
+      ],
+      "accountSearchPhrase": "Cook Islands Rarotonga Aitutaki tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
     }
   ],
-  "searchablePlaceMilestone": 275,
-  "note": "Worksheet updated at the 275-place soft stretch. Generate links only in a deliberate owner batch; locked Travelpayouts programs remain traffic-led future targets."
+  "searchablePlaceMilestone": 287,
+  "note": "Worksheet refreshed at the 287-place quality-growth stage. Generate links only in deliberate owner batches; locked Travelpayouts programs remain traffic-led future targets."
 }
