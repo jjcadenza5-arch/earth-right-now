@@ -2851,6 +2851,36 @@
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "sourcePage": "https://visitzandvoort.com/circuit/webcam/",
       "verification": "Official tourism page documents a dedicated year-round circuit pitcam."
+    },
+    {
+      "id": "aruba-palm-beach-live-family",
+      "title": "Palm Beach — Aruba",
+      "country": "Aruba",
+      "region": "Palm Beach",
+      "provider": "Aruba Tourism Authority / resort webcams",
+      "sourcePage": "https://www.aruba.com/us/live-webcams-and-channels",
+      "exactTargetUrl": "https://www.aruba.com/us/live-webcams-and-channels",
+      "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
+      "evidence": "Official Aruba tourism page lists live webcams for Playa Linda and Aruba Marriott on Palm Beach.",
+      "researchEvidence": "Aruba Tourism Authority explicitly presents multiple Palm Beach resort webcams as live webcams.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Use the official Aruba Live Webcams page and verify either Playa Linda or Aruba Marriott Palm Beach camera. Treat multiple cameras as one Palm Beach destination."
+    },
+    {
+      "id": "aruba-eagle-beach-live-family",
+      "title": "Eagle Beach — Aruba",
+      "country": "Aruba",
+      "region": "Eagle Beach",
+      "provider": "Aruba Tourism Authority / resort webcams",
+      "sourcePage": "https://www.aruba.com/us/live-webcams-and-channels",
+      "exactTargetUrl": "https://www.aruba.com/us/live-webcams-and-channels",
+      "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
+      "evidence": "Official Aruba tourism page lists live webcams for Bucuti & Tara, Amsterdam Manor and Costa Linda around Eagle Beach.",
+      "researchEvidence": "Aruba Tourism Authority explicitly presents multiple Eagle Beach resort webcams as live webcams.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Use the official Aruba Live Webcams page and verify any current Eagle Beach camera. Group the family under one Eagle Beach place."
     }
   ],
   "notes": [
@@ -2907,7 +2937,8 @@
     "2026-10-03 quality-led Istanbul expansion added Taksim Square, Maiden’s Tower and Anadolu Hisarı as distinct official LIVE_IMAGE/Search-Explore places. Watch Earth rules unchanged.",
     "2026-10-03 promoted Tvøroyri Port, Lerwick Town Hall and Shetland Cliff Cam to searchable LIVE_IMAGE using current official municipal/destination evidence; Watch Earth rules unchanged.",
     "2026-10-03 13:25 UTC: quality-led European gap batch promoted Belgium, Netherlands, Germany, Denmark, Cannes and Plitvice into Search/Explore using conservative LIVE_IMAGE semantics; no new Watch Earth live-video eligibility was inferred.",
-    "2026-10-03 13:45 UTC: ERN reached the 275 healthy-searchable soft stretch target using genuinely distinct destinations/POIs rather than duplicate views; Dresden/Radebeul, Heidelberg Königstuhl, Zandvoort Circuit and Farchant completed the batch."
+    "2026-10-03 13:45 UTC: ERN reached the 275 healthy-searchable soft stretch target using genuinely distinct destinations/POIs rather than duplicate views; Dresden/Radebeul, Heidelberg Königstuhl, Zandvoort Circuit and Farchant completed the batch.",
+    "2026-10-03 Aruba quality-gap research added Palm Beach and Eagle Beach as two real-place candidates from the official Aruba Tourism Authority live-webcam index. Multiple resort cameras are deliberately grouped by beach/place to avoid artificial destination inflation."
   ],
   "researchGaps": [
     {
