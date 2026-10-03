@@ -968,13 +968,13 @@
       "region": "Issyk-Kul",
       "provider": "Karakol Ski Base",
       "sourcePage": "https://www.karakol-ski.kg/camera",
-      "exactTargetUrl": "https://www.karakol-ski.kg/camera",
-      "exactTargetType": "OFFICIAL_RESORT_CAMERA_PAGE",
+      "exactTargetUrl": "https://kg.camera/en/camera/Karakol_LyzhBaza_25_11_2019_cam1",
+      "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
       "evidence": "The official Karakol Ski Base camera page exposes an embedded video feed.",
-      "researchEvidence": "Karakol Ski Base publishes its own camera page; a separate Kyrgyzstan camera network also identifies the ski-base camera at the lower lift.",
+      "researchEvidence": "KG Camera exposes a direct Karakol Ski Base camera page at the lower lift and states its video surveillance runs without archiving with a 20-second delay. The official Karakol Ski Base also publishes a camera page.",
       "priority": "P1",
       "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Karakol Ski Base camera page and confirm the embedded feed is current and moving."
+      "humanCheckHint": "Open the direct KG Camera Karakol Ski Base page and confirm the lower-lift image/video updates normally."
     },
     {
       "id": "ala-archa-natural-park",
@@ -983,13 +983,13 @@
       "region": "Chüy",
       "provider": "ElCat / KG Camera",
       "sourcePage": "https://www.kg.camera/en/",
-      "exactTargetUrl": "https://www.kg.camera/en/",
-      "exactTargetType": "CURRENT_CAMERA_NETWORK",
+      "exactTargetUrl": "https://kg.camera/en/camera/AlaArchaPark",
+      "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
       "evidence": "KG Camera lists a camera in Ala-Archa Natural Park installed at 2,200 meters above sea level and states the network is live video with a 20-second delay.",
-      "researchEvidence": "KG Camera currently exposes Ala-Archa Natural Park as an active camera location and explicitly states the presented video is live surveillance without archiving.",
+      "researchEvidence": "KG Camera exposes a direct Ala-Archa Natural Park page; the camera is installed at 2,200 m and the network states it is live surveillance without archiving, delayed by about 20 seconds.",
       "priority": "P1",
       "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open KG Camera, choose Natural Park 'Ala-Archa', and confirm the current mountain view is useful enough for ERN."
+      "humanCheckHint": "Open the direct Ala-Archa page and confirm the mountain view updates normally."
     },
     {
       "id": "osh-sulaiman-too",
@@ -998,13 +998,73 @@
       "region": "Osh",
       "provider": "ElCat / KG Camera",
       "sourcePage": "https://www.kg.camera/en/",
-      "exactTargetUrl": "https://www.kg.camera/en/",
-      "exactTargetType": "CURRENT_CAMERA_NETWORK",
+      "exactTargetUrl": "https://kg.camera/en/camera/Osh-Sulaiman-Too",
+      "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
       "evidence": "KG Camera lists a current camera at the foot of Sulaiman-Too Mountain in Osh and states its network runs without archiving with a short delay.",
-      "researchEvidence": "The network describes the camera as a live view of Sulaiman-Too, one of Osh's principal landmarks.",
+      "researchEvidence": "KG Camera exposes a direct camera at the foot of Sulaiman-Too in Osh and states its video surveillance is unarchived with about a 20-second delay.",
       "priority": "P2",
       "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open KG Camera, choose Osh / Sulaiman-Too, and confirm the landmark view updates normally."
+      "humanCheckHint": "Open the direct Sulaiman-Too page and confirm the landmark view updates normally."
+    },
+    {
+      "id": "naryn-central-square",
+      "title": "Naryn — Central Square",
+      "country": "Kyrgyzstan",
+      "region": "Naryn",
+      "provider": "ElCat / KG Camera",
+      "sourcePage": "https://kg.camera/en/camera/Naryn",
+      "exactTargetUrl": "https://kg.camera/en/camera/Naryn",
+      "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "evidence": "KG Camera publishes a direct camera page showing Naryn's central square on Lenin Street.",
+      "researchEvidence": "KG Camera describes the camera as the central square of Naryn and applies its network-wide unarchived, short-delay live-surveillance policy.",
+      "humanCheckHint": "Open the direct Naryn page and confirm the square view updates normally."
+    },
+    {
+      "id": "too-ashu-north",
+      "title": "Too-Ashu Pass — Northern Tunnel Entrance",
+      "country": "Kyrgyzstan",
+      "region": "Chüy / Jalal-Abad route",
+      "provider": "ElCat / KG Camera",
+      "sourcePage": "https://kg.camera/en/camera/Too-Ashu_Tunnel_North",
+      "exactTargetUrl": "https://kg.camera/en/camera/Too-Ashu_Tunnel_North",
+      "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "evidence": "KG Camera publishes a direct camera at the northern entrance to the Kolbaev tunnel on Too-Ashu Pass at 3,120 m.",
+      "researchEvidence": "This is a high-altitude road/mountain camera on the Bishkek–Osh route; KG Camera states its surveillance feeds are unarchived and delayed by about 20 seconds.",
+      "humanCheckHint": "Open the direct Too-Ashu north page and confirm the high-altitude road/mountain scene updates normally."
+    },
+    {
+      "id": "suusamyr-valley",
+      "title": "Suusamyr Valley — Bishkek–Osh Road",
+      "country": "Kyrgyzstan",
+      "region": "Suusamyr",
+      "provider": "ElCat / KG Camera",
+      "sourcePage": "https://kg.camera/en/camera/Suusamyr",
+      "exactTargetUrl": "https://kg.camera/en/camera/Suusamyr",
+      "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "evidence": "KG Camera publishes a direct camera in the Suusamyr Valley on the Bishkek–Osh highway at about 2,268 m.",
+      "researchEvidence": "The Suusamyr page identifies a high-elevation valley camera; the network states its surveillance feeds are unarchived with a short delay.",
+      "humanCheckHint": "Open the direct Suusamyr page and confirm the valley/road view is current and visually useful."
+    },
+    {
+      "id": "balykchy-north-entry",
+      "title": "Balykchy — Gateway to Issyk-Kul",
+      "country": "Kyrgyzstan",
+      "region": "Issyk-Kul",
+      "provider": "ElCat / KG Camera",
+      "sourcePage": "https://kg.camera/en/camera/Balykchi",
+      "exactTargetUrl": "https://kg.camera/en/camera/Balykchi",
+      "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "evidence": "KG Camera publishes a direct camera at the entrance to Balykchy in the Issyk-Kul region.",
+      "researchEvidence": "The Balykchy camera covers the roundabout at the city's entrance and can serve as a current gateway/road condition view for Issyk-Kul.",
+      "humanCheckHint": "Open the direct Balykchy page and confirm the gateway/road view updates normally."
     }
   ],
   "notes": [
@@ -1023,6 +1083,7 @@
     "2026-10-03 large-batch expansion added a Mauritius Tourism Promotion Authority camera family using the current Mauritius Now 13-webcam claim plus MTPA annual-report location evidence for Grand Baie, Pointe d’Esny and Saint-Félix. All remain playback-gated.",
     "2026-10-03 Caribbean breadth batch added three Visit St. Maarten-endorsed 24/7 camera candidates: Maho Beach, Great Bay/Philipsburg Boardwalk and Simpson Bay. Existing Little Bay source was not duplicated.",
     "2026-10-03 Oceania breadth batch added four official Lake Wānaka Tourism views and two Rotorua NZ webcam views. All six remain human-playback-gated.",
-    "2026-10-03 Pamir-gap research uncovered stronger adjacent Central Asia live-camera opportunities: official Shymbulak (Kazakhstan), official Karakol Ski Base, Ala-Archa Natural Park and Osh/Sulaiman-Too (Kyrgyzstan). These remain playback-gated and do not substitute for the unresolved Pamir/Tajikistan gap."
+    "2026-10-03 Pamir-gap research uncovered stronger adjacent Central Asia live-camera opportunities: official Shymbulak (Kazakhstan), official Karakol Ski Base, Ala-Archa Natural Park and Osh/Sulaiman-Too (Kyrgyzstan). These remain playback-gated and do not substitute for the unresolved Pamir/Tajikistan gap.",
+    "2026-10-03 Central Asia large batch: replaced generic KG Camera index links with direct camera pages for Karakol, Ala-Archa and Osh/Sulaiman-Too, and added direct research candidates for Naryn, Too-Ashu Pass, Suusamyr Valley and Balykchy. These remain playback-gated."
   ]
 }
