@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:50:00Z",
+  "generatedAt": "2026-10-03T13:10:00Z",
   "status": "OWNER_ACTION_NOT_YET_REQUIRED",
   "purpose": "One efficient owner session for exact tracked-link generation after autonomous research is complete.",
   "rule": "Never invent URLs. Use the named partner account/tool, search the exact phrase, generate the tracked link, open it manually, then record it.",
@@ -190,6 +190,47 @@
       ],
       "accountSearchPhrase": "Issyk-Kul tours",
       "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "tiqets-istanbul",
+      "partner": "tiqets",
+      "destination": "Istanbul",
+      "intent": "culture",
+      "priority": "P1",
+      "placeIds": [
+        "istanbul-sultanahmet",
+        "istanbul-taksim-square",
+        "istanbul-maidens-tower",
+        "istanbul-anadolu-hisari"
+      ],
+      "accountSearchPhrase": "Istanbul attractions",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-faroe-islands",
+      "partner": "viator",
+      "destination": "Faroe Islands",
+      "intent": "activities",
+      "priority": "P2",
+      "placeIds": [
+        "tvoroyri-port"
+      ],
+      "accountSearchPhrase": "Faroe Islands tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-shetland-future",
+      "partner": "viator",
+      "destination": "Shetland Islands",
+      "intent": "activities",
+      "priority": "P2",
+      "placeIds": [
+        "lerwick-town-hall",
+        "shetland-cliff-cam"
+      ],
+      "accountSearchPhrase": "Shetland Islands tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
     }
-  ]
+  ],
+  "searchablePlaceMilestone": 256
 }
