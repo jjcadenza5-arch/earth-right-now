@@ -248,7 +248,7 @@ function card(s,compact=false,index=-1){
  b.onclick=()=>openViewer(s);return b;
 }
 function renderModeChips(){document.querySelectorAll(".mode-chip").forEach(b=>b.classList.toggle("active",b.dataset.mode===state.mode))}
-function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map((s,i)=>card(s,false,i)));$("#watchCount").textContent=state.watch.length;$("#watchEmpty").hidden=state.watch.length>0;renderModeChips();state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(heroPool()[0]||state.watch[0])}
+function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map((s,i)=>card(s,false,i)));$("#watchCount").textContent=state.watch.length;$("#watchEmpty").hidden=!state.watch.length;renderModeChips();state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(heroPool()[0]||state.watch[0])}
 function placeCard(group){
  const best=[...group].sort((a,b)=>(guideEligible(b)?1:0)-(guideEligible(a)?1:0)||baseScore(b)-baseScore(a))[0];
  const b=card(best,true);b.classList.add("place-card");
