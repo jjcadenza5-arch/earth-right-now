@@ -914,8 +914,10 @@
       "evidence": "Mauritius Now currently advertises 13 live webcams; MTPA's annual report identifies Saint-Félix among the Mauritius Live camera locations.",
       "researchEvidence": "Current official tourism family plus MTPA annual-report evidence supports Saint-Félix as a named Mauritius Live camera location; current playback still requires owner verification.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Mauritius Now webcam experience and confirm Saint-Félix is present and visibly current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Mauritius Now webcam experience and confirm Saint-Félix is present and visibly current.",
+      "promotedAt": "2026-10-03T12:35:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from official tourism/current-camera evidence; not Watch Earth eligible without stricter current/live verification."
     },
     {
       "id": "st-maarten-maho-beach",
@@ -1031,8 +1033,10 @@
       "evidence": "Official Wānaka tourism page lists a view toward Lake Hāwea from Roys Peak.",
       "researchEvidence": "Lake Wānaka Tourism publishes the Lake Hāwea direction as a current regional webcam.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the Wānaka webcam page and confirm the Lake Hāwea view is current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the Wānaka webcam page and confirm the Lake Hāwea view is current.",
+      "promotedAt": "2026-10-03T12:35:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from official tourism/current-camera evidence; not Watch Earth eligible without stricter current/live verification."
     },
     {
       "id": "rotorua-skyline-city-lake",
@@ -2723,7 +2727,8 @@
     "2026-10-03 Indian Ocean/Atlantic island batch promoted seven official quasi-live searchable places: four La Réunion tourism/scientific webcams plus São Miguel, Terceira and Santa Maria from Visit Azores. Watch Earth remains stricter.",
     "2026-10-03 Madeira family expanded with Ribeira Brava, São Vicente, Santana, Santa Cruz and Porto Santo from the official Madeira Tourism webcam/weather page.",
     "2026-10-03 Namibia gap research added Okaukuejo Waterhole / Etosha as a P1 exact-target playback candidate from official Namibia Wildlife Resorts evidence.",
-    "2026-10-03T12:25Z quasi-live batch promoted 23 additional searchable places from already-researched provider current/live-camera evidence. Watch Earth eligibility remains unchanged."
+    "2026-10-03T12:25Z quasi-live batch promoted 23 additional searchable places from already-researched provider current/live-camera evidence. Watch Earth eligibility remains unchanged.",
+    "2026-10-03T12:35Z milestone batch promoted 2 more quasi-live searchable places, bringing healthy searchable distinct places to the 250 stretch target."
   ],
   "researchGaps": [
     {
