@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:00:00Z",
+  "generatedAt": "2026-10-03T12:25:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -98,7 +98,11 @@
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 7,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
     },
-    "availableUtilityExpansionPlan": "data/available-program-expansion-plan.json"
+    "availableUtilityExpansionPlan": "data/available-program-expansion-plan.json",
+    "ownerVisibleTrafficGatedPrograms": 18,
+    "ownerLinkGenerationAvailablePrograms": 23,
+    "utilityExpansionPlan": "data/utility-link-opportunities.json",
+    "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json"
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -119,7 +123,10 @@
     "Available-program expansion plan created for Airalo, Kiwitaxi, Go City, Radical Storage and Aviasales before locked stay programs unlock",
     "Official La Réunion and Azores quasi-live places expanded searchable coverage to 212 healthy distinct places",
     "Runtime source catalog minified without changing data semantics, creating scalable headroom under the strict 300 KB budget",
-    "Official Madeira webcam family expanded from four to nine searchable places"
+    "Official Madeira webcam family expanded from four to nine searchable places",
+    "Owner Travelpayouts screenshots reconciled: 18 strategically useful programs visible but not unlocked/activated",
+    "23 additional Travelpayouts programs identified with owner-side link-generation availability",
+    "Traffic-led unlock roadmap and currently usable utility expansion queue prepared"
   ],
   "humanOnlyRemaining": [
     {
@@ -137,6 +144,14 @@
       "blocksPublicERN": false,
       "blocksCurrentOffers": false,
       "blocksOnlyFuturePartnerExpansion": true
+    },
+    {
+      "id": "utility-links-batch",
+      "action": "When ERN autonomous prep is complete, generate the bundled Airalo / Go City / Kiwitaxi / Radical Storage / Aviasales / KKday links from data/owner-action-packet.json",
+      "priority": "BATCH_LATER",
+      "blocksPublicERN": false,
+      "blocksCurrentOffers": false,
+      "blocksOnlyNewPlacements": true
     }
   ],
   "safeguards": [
