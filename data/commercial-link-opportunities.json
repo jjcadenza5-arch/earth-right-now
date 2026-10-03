@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T09:52:00Z",
+  "generatedAt": "2026-10-03T11:25:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1931,6 +1931,23 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/activity/54696-nantou-hehuanshan-sunrise-tour-half-day-join-tour/",
       "publicInventoryEvidence": "Klook currently lists Hehuanshan sunrise and half-day tours with Wuling and Songsyue Lodge stops.",
       "nextAction": "Generate one Hehuanshan/Wuling destination-level Klook tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-andorra",
+      "destination": "Andorra",
+      "placeIds": [
+        "andorra-grandvalira",
+        "andorra-pal-arinsal",
+        "andorra-naturland"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has three official Andorra real-time searchable mountain places. Klook currently carries Andorra day-tour and Caldea products, so one destination-level link can serve the country without duplicate commercial density.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/87346-andorra-and-france-from-barcelona-one-day-tour/",
+      "publicInventoryEvidence": "Klook currently sells Andorra-focused day tours from Barcelona and Andorra Caldea products.",
+      "nextAction": "Generate one clean Andorra destination-level Klook tracked link in Travelpayouts if available; otherwise use no commercial placement rather than a generic unrelated link."
     }
   ]
 }
