@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:45:00Z",
+  "generatedAt": "2026-10-03T16:48:00Z",
   "mode": "DORMANT_UNTIL_AUTONOMOUS_WORK_EXHAUSTED",
   "currentNeedOwner": false,
   "purpose": "Bundle future owner-only actions so ERN does not interrupt with one-off checks.",
@@ -196,6 +196,30 @@
       "destination": "Sydney",
       "partner": "go-city",
       "nextAction": "Generate one Sydney Go City tracked link in Travelpayouts and manually verify relevance before public activation."
+    },
+    {
+      "id": "yesim-global",
+      "destination": "Global travel connectivity",
+      "partner": "yesim",
+      "nextAction": "Generate one general Yesim tracked link in Travelpayouts and manually verify it. ERN should use one eSIM option by default, not multiple competing eSIM CTAs."
+    },
+    {
+      "id": "kiwitaxi-coverage-batch",
+      "destination": "Selected airport/city destinations without Welcome Pickups coverage",
+      "partner": "kiwitaxi",
+      "nextAction": "Generate Kiwitaxi links only for destinations where Welcome Pickups has no useful coverage; verify each destination before activation."
+    },
+    {
+      "id": "localrent-selective",
+      "destination": "Selected self-drive destinations",
+      "partner": "localrent",
+      "nextAction": "Generate Localrent links only for destinations where renting a car is materially useful; do not create blanket placement."
+    },
+    {
+      "id": "radical-storage-major-cities",
+      "destination": "Selected major cities",
+      "partner": "radical-storage",
+      "nextAction": "Generate Radical Storage links only for major-city arrival/departure contexts after checking coverage."
     }
   ],
   "rules": {
