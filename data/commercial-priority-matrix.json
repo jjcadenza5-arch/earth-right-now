@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T15:50:00Z",
+  "generatedAt": "2026-10-03T16:05:00Z",
   "strategy": "All healthy places are classified where possible: explicit active-partner opportunity paths for useful travel intent, intentional editorial-only status where commercialization adds little value, and a small unclassified list only when genuinely new places need review.",
   "activePartners": [
     "viator",
@@ -19,8 +19,8 @@
     "exactTrackedLinkRequired": true
   },
   "coverageSummary": {
-    "healthyPlaces": 287,
-    "placesWithExplicitCommercialPath": 253,
+    "healthyPlaces": 290,
+    "placesWithExplicitCommercialPath": 256,
     "intentionallyEditorialPlaces": 34,
     "unclassifiedHealthyPlaces": 0
   },
