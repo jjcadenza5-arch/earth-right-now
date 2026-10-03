@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T10:30:00Z",
+  "source": "Owner screenshots from ERN Travelpayouts account on 2026-10-03",
+  "principle": "Build traffic and visitor utility with active partners first. Recheck locked catalog programs later; do not force applications merely because a program is visible.",
+  "tiers": [
+    {
+      "tier": "P1_STAYS",
+      "reason": "Accommodation is ERN's largest commercial coverage gap and has broad relevance across destination pages.",
+      "programs": [
+        "trip-com",
+        "hotels-com",
+        "agoda",
+        "expedia"
+      ],
+      "trigger": "Recheck when Travelpayouts unlocks eligibility or ERN traffic materially improves."
+    },
+    {
+      "tier": "P1_ACTIVITIES",
+      "reason": "Adds breadth beyond Viator/Klook/Tiqets and can cover destinations where current active partners are thin.",
+      "programs": [
+        "getyourguide",
+        "tripadvisor-experiences"
+      ],
+      "trigger": "Recheck after traffic growth or when a strong destination lacks useful active-partner inventory."
+    },
+    {
+      "tier": "P2_TRANSPORT",
+      "reason": "Useful after destination discovery, especially rail/bus/car-heavy destinations.",
+      "programs": [
+        "omio",
+        "12go",
+        "traveloka",
+        "discovercars"
+      ],
+      "trigger": "Recheck when ERN begins seeing meaningful trip-planning clicks in transport-relevant destinations."
+    },
+    {
+      "tier": "P2_ALT_STAYS",
+      "reason": "Useful for specific audience segments or regions after core accommodation coverage is solved.",
+      "programs": [
+        "hostelworld",
+        "vrbo",
+        "vio-com",
+        "rakuten-travel-intl"
+      ],
+      "trigger": "Recheck after core hotel partners are active or destination demand warrants specialized inventory."
+    },
+    {
+      "tier": "P3_TICKETS_SERVICES",
+      "reason": "Useful but not a current monetization bottleneck.",
+      "programs": [
+        "ticketmaster",
+        "visitorscoverage",
+        "insubuy"
+      ],
+      "trigger": "Recheck only when ERN has enough traffic and user behavior to justify event-ticket or insurance/service placements."
+    },
+    {
+      "tier": "VISIBLE_BUT_SEPARATE_REVIEW",
+      "reason": "Booking.com remains visible in the catalog, but ERN should preserve its existing inactive/rejected caution until account eligibility and program status are explicitly rechecked.",
+      "programs": [
+        "booking-com"
+      ],
+      "trigger": "Do not assume availability from catalog visibility alone."
+    }
+  ],
+  "safeguards": {
+    "noPaidRanking": true,
+    "noAutomaticPlacement": true,
+    "noAutomaticLinkRewriting": true,
+    "noPublicClaimOfPartnershipUntilActive": true,
+    "noAssumedUnlockDate": true
+  }
+}
