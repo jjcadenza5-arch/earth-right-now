@@ -84,3 +84,23 @@ Additional high-intent opportunities prepared, still non-public and exact-link g
 - Yellowstone → Viator
 
 Accommodation research remains fail-closed. Hotels.com and Trip.com were added only as research candidates; owner-project availability is not assumed and no tracked links are allowed until account-level confirmation.
+
+
+## Large-batch checkpoint — 02:20 UTC
+
+Release health:
+- The strict runtime-size blocker was resolved without raising the performance ceiling.
+- A subsequent Pages deployment completed successfully after the fix.
+- Operations and syntax checks were green for the repaired runtime.
+
+Source lane:
+- Current live/searchable baseline remains 91 healthy distinct places from 98 source records.
+- Expansion research queue now has 41 candidates: 4 promoted, 37 still requiring human playback verification.
+- Official Innsbruck Tourism family now contributes eight distinct research candidates beyond the earlier city panorama/Markthalle work: Patscherkofel, Mieminger Plateau, Telfs, Kühtai, Lüsens, Nordkette, Stadtturm and Swarovski Kristallwelten/Wattens.
+- data/source-verification-priority.json now ranks the complete playback-verification queue so the next owner checks are compact and high-value.
+
+Business lane:
+- Commercial opportunity registry now contains 30 opportunities before the new priority matrix layer: 12 verified-link placements, 13 exact-link/account-search items, and 5 source-gated items.
+- New future source-gated opportunities: Tallinn/Tiqets, Malta/Tiqets and Dubrovnik/Viator.
+- data/commercial-priority-matrix.json now ranks up to 25 additional healthy ERN places for research against the four existing partners before any new affiliate network is considered.
+- No commercial signal affects Earth ranking; exact tracked links and manual verification remain mandatory.
