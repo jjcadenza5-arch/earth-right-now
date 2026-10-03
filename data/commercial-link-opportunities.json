@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T16:30:00Z",
+  "generatedAt": "2026-10-03T16:40:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3062,6 +3062,63 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Norway-tours/Adrenaline-and-Extreme/d61-g9-c87/3",
       "publicInventoryEvidence": "Current Viator Norway inventory includes Svalbard/Longyearbyen Arctic experiences, including guided snowmobile and ice-cave products.",
       "nextAction": "Search the Viator partner account for a clean Svalbard or Longyearbyen destination-level tracked link and verify it manually before activation."
+    },
+    {
+      "id": "go-city-sydney",
+      "destination": "Sydney",
+      "placeIds": [
+        "coogee-randwick-beaches"
+      ],
+      "partnerCandidate": "go-city",
+      "intent": "tickets",
+      "priority": "P2",
+      "reason": "ERN has a healthy Sydney-region place and Go City currently offers Sydney passes covering city attractions, harbour experiences and Taronga Zoo.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://gocity.com/en/sydney",
+      "publicInventoryEvidence": "Go City currently lists Sydney Essentials, Explorer and All-Inclusive passes with city/harbour attractions.",
+      "nextAction": "Generate one Sydney Go City tracked link and manually verify destination relevance before public activation."
+    },
+    {
+      "id": "viator-bansko-future",
+      "destination": "Bansko",
+      "placeIds": [
+        "bansko-ski-resort-bulgaria"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Viator currently has Bansko-specific experiences. Commercial work remains source-gated until ERN verifies the official Bansko camera family.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Bansko/Bansko-Thermal-pool-escape/d31481-16415P9",
+      "nextAction": "After Bansko source verification, generate one Bansko destination-level Viator partner link rather than a single-product link."
+    },
+    {
+      "id": "viator-borovets-future",
+      "destination": "Borovets",
+      "placeIds": [
+        "borovets-ski-resort-bulgaria"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Viator currently has Borovets-specific snow and mountain experiences. Keep commercial activation source-gated until the official resort cameras are verified.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Borovets/Borovets-Ultimate-Snowmobile-Experience/d36672-118846P2",
+      "nextAction": "After Borovets source verification, generate one Borovets destination-level Viator link and verify it manually."
+    },
+    {
+      "id": "viator-jasna-slovakia-future",
+      "destination": "Jasná / Low Tatras",
+      "placeIds": [
+        "jasna-chopok-slovakia"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Viator has Slovakia travel inventory, but a clean Jasná/Low Tatras destination link must be confirmed in the owner account after source verification.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/blog/Slovakia/d66",
+      "nextAction": "After Jasná playback verification, search the Viator partner account for a clean Low Tatras/Jasná destination-level link. Do not force a generic Slovakia link if it is not useful."
     }
   ]
 }
