@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:25:00Z",
+  "generatedAt": "2026-10-03T13:10:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -94,15 +94,16 @@
     ],
     "currentCommercialOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 101,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 7,
-      "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 110,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 5,
+      "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
     "availableUtilityExpansionPlan": "data/available-program-expansion-plan.json",
     "ownerVisibleTrafficGatedPrograms": 18,
     "ownerLinkGenerationAvailablePrograms": 23,
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
-    "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json"
+    "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
+    "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json"
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -126,7 +127,10 @@
     "Official Madeira webcam family expanded from four to nine searchable places",
     "Owner Travelpayouts screenshots reconciled: 18 strategically useful programs visible but not unlocked/activated",
     "23 additional Travelpayouts programs identified with owner-side link-generation availability",
-    "Traffic-led unlock roadmap and currently usable utility expansion queue prepared"
+    "Traffic-led unlock roadmap and currently usable utility expansion queue prepared",
+    "Quality-led Istanbul expansion added Taksim Square, Maiden’s Tower and Anadolu Hisarı without weakening Watch Earth.",
+    "Official Tvøroyri and Shetland current-camera pages expanded searchable coverage to 256 healthy places.",
+    "Business-place expansion matrix now prepares Kiwitaxi, Radical Storage, KKday, Localrent, QEEQ and WeGoTrip coverage across many healthy ERN places."
   ],
   "humanOnlyRemaining": [
     {
@@ -164,7 +168,7 @@
     "Accommodation links remain downstream from Earth discovery and cannot affect ranking",
     "Do not repeatedly ask owner to recheck locked Travelpayouts programs; recheck only on meaningful traffic/account-state change"
   ],
-  "currentHealthySearchablePlaces": 217,
+  "currentHealthySearchablePlaces": 256,
   "releaseHealth": {
     "pagesDeployment": "SUCCESS_2026-10-03T10:54Z",
     "operationsCheck": "SUCCESS_2026-10-03T10:54Z",
