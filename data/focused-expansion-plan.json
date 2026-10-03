@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:15:00Z",
+  "generatedAt": "2026-10-03T12:20:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 217,
+    "currentHealthyDistinctPlaceBaseline": 223,
     "targetRange": [
       200,
       250
@@ -78,16 +78,17 @@
     "currentHealthyLiveImageCount": 125,
     "progressToTarget": {
       "minimumTarget": 200,
-      "current": 217,
+      "current": 223,
       "remainingToMinimum": 0,
       "stretchTarget": 250,
-      "remainingToStretch": 33,
+      "remainingToStretch": 27,
       "status": "POST_200_QUALITY_LED_EXPANSION"
     },
     "recentExpansionFamilies": [
       "La Réunion — four official tourism/scientific current webcam places",
       "Azores — São Miguel, Terceira and Santa Maria official Visit Azores webcam places",
-      "Madeira — nine official tourism webcam places across Funchal, Porto Moniz, Calheta, Machico, Ribeira Brava, São Vicente, Santana, Santa Cruz and Porto Santo"
+      "Madeira — nine official tourism webcam places across Funchal, Porto Moniz, Calheta, Machico, Ribeira Brava, São Vicente, Santana, Santa Cruz and Porto Santo",
+      "Faroe/Greenland — Vágar Airport, Nuuk and four Landsverk Faroese current-image places"
     ],
     "catalogScaleStrategy": "Keep data/sources.json minified as the lean runtime catalog; retain verbose provenance/long notes in data/source-evidence.json so expansion can continue without weakening the 300 KB production budget."
   },
@@ -201,7 +202,9 @@
     "availableProgramExpansionPlan": "data/available-program-expansion-plan.json",
     "preparedDirectViatorCandidates": 27,
     "etoshaStatus": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-    "etoshaNote": "Official Namibia Wildlife Resorts evidence supports an Okaukuejo live-camera candidate, but ERN keeps it research-only until exact target playback is human-confirmed."
+    "etoshaNote": "Official Namibia Wildlife Resorts evidence supports an Okaukuejo live-camera candidate, but ERN keeps it research-only until exact target playback is human-confirmed.",
+    "trafficGrowthPlan": "data/traffic-growth-priorities.json",
+    "ownerActionPacket": "data/owner-action-packet.json"
   },
   "safeguards": {
     "automaticPlacement": false,
