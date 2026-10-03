@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T10:30:00Z",
+  "evidenceBasis": "Owner screenshots from Travelpayouts Earthrightnow project showing Generate links controls.",
+  "rule": "A Generate links control confirms account-side link generation is available. It does not authorize automatic public placement; ERN still requires utility review, exact-link verification and disclosure.",
+  "currentCorePartners": [
+    "klook",
+    "tiqets",
+    "welcome-pickups",
+    "viator"
+  ],
+  "priorityTiers": {
+    "nextBest": [
+      {
+        "id": "airalo",
+        "why": "Global eSIM utility can serve many ERN destinations with low destination-specific maintenance."
+      },
+      {
+        "id": "radical-storage",
+        "why": "Luggage storage is highly complementary to city discovery and can be destination-agnostic."
+      },
+      {
+        "id": "go-city",
+        "why": "City-pass utility fits major city destinations and can complement Tiqets/Viator without replacing them."
+      },
+      {
+        "id": "kiwitaxi",
+        "why": "Transfer coverage can broaden transport beyond Welcome Pickups where destination coverage differs."
+      },
+      {
+        "id": "aviasales",
+        "why": "Flight-search utility can support trip planning at a global level without affecting camera ranking."
+      },
+      {
+        "id": "saily",
+        "why": "Global eSIM alternative; keep only if materially useful versus Airalo/GigSky/Yesim to avoid clutter."
+      }
+    ],
+    "usefulLater": [
+      "gigsky",
+      "yesim",
+      "localrent",
+      "qeeq",
+      "autoeurope",
+      "economybookings",
+      "getrentacar",
+      "bikesbooking",
+      "kiwi-com",
+      "intui-travel",
+      "gettransfer",
+      "kkday",
+      "wegotrip",
+      "ekta",
+      "airhelp",
+      "compensair",
+      "drimsim"
+    ]
+  },
+  "activationPrinciples": {
+    "utilityBeforeCommission": true,
+    "avoidDuplicateCommercialDensity": true,
+    "exactTrackedLinkVerificationRequired": true,
+    "disclosureRequired": true,
+    "commissionCannotAffectEditorialRanking": true,
+    "automaticPlacement": false,
+    "automaticLinkRewriting": false
+  }
+}
