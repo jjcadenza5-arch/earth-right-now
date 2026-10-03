@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:05:00Z",
+  "generatedAt": "2026-10-03T12:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2104,12 +2104,16 @@
       "id": "viator-faroe-islands",
       "destination": "Faroe Islands",
       "placeIds": [
-        "vagar-airport-faroe"
+        "vagar-airport-faroe",
+        "faroe-mykines",
+        "faroe-klaksvik",
+        "faroe-gjaarskard",
+        "faroe-hvalba"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a healthy current-image Faroe gateway place and Viator currently has a dedicated Faroe Islands destination with boat, nature and sightseeing tours.",
+      "reason": "ERN now has five healthy Faroese current-image places. One destination-level Viator Faroe Islands link can serve trip planning across the family without duplicating affiliate density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Faroe-Islands/d37756-ttd",
       "nextAction": "Generate one Faroe Islands destination-level Viator tracked link and use it only where the visitor has chosen Faroe trip planning; do not attach it to unrelated cameras."
@@ -2127,6 +2131,21 @@
       "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Longyearbyen/d4354-ttd",
       "nextAction": "After the UNIS/Longyearbyen source is human-confirmed and promoted, generate one Longyearbyen Viator tracked link and verify it manually."
+    },
+    {
+      "id": "viator-shetland-future",
+      "destination": "Shetland Islands / Lerwick",
+      "placeIds": [
+        "shetland-lerwick-town-hall",
+        "shetland-cliff-cam"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Viator has dedicated Lerwick/Shetland sightseeing, wildlife and shore-excursion inventory, but ERN must first human-confirm and promote at least one Shetland live camera.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Shetland-Islands/d33624-ttd",
+      "nextAction": "After at least one Shetland camera is promoted, generate one Shetland/Lerwick destination-level Viator tracked link and reuse it across verified Shetland places."
     }
   ]
 }
