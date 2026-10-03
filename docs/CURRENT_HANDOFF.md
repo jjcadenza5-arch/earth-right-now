@@ -4,7 +4,7 @@ Use `docs/ERN_SOFT_LAUNCH_STAGE1_HANDOFF_2026-10-02.md` as the canonical Soft La
 
 Current operating state:
 - **ERN Soft Launch / Operating Stage 1**
-- **OPERATE · VERIFY · MAINTAIN · DO NOT EXPAND**
+- **OPERATE · VERIFY · MAINTAIN · FOCUSED EXPANSION AUTHORIZED**
 - AI Search Discovery Readiness is complete and production-validated.
 - Minimal first-party aggregate analytics and search-gap logging are active.
 - Affiliate Coverage Expansion Batch A is complete: Kyoto/Klook, Seoul/Klook, Rome/Tiqets and Rovaniemi/Klook exact destination links are human-verified and recorded.
@@ -49,3 +49,14 @@ Affiliate Expansion Batch B:
 - Welcome Pickups: Bangkok, Rome.
 - Exact tracked links are still owner-side evidence; no fabricated or automatic partner links are allowed.
 - See `docs/AFFILIATE_EXPANSION_BATCH_B_2026-10-02.md`.
+
+
+Focused expansion authorization — 2026-10-03:
+- Owner explicitly asked ERN to continue on two parallel lanes: (1) featured cameras + more healthy searchable places, and (2) business-side expansion.
+- Current healthy searchable destination baseline after Vienna/Helsinki/Koli/Turku promotion: 91 distinct places from 98 source records.
+- Content goal: grow carefully toward roughly 150–200 genuinely useful searchable destinations; candidates remain research-only until source-specific live/playback verification.
+- Current next source-verification pool includes Prague tower cameras, additional Finland/Switzerland candidates, Salzburg, and official Madeira Tourism webcams.
+- Business expansion should still prefer the four already-active relationships before opening new partner accounts.
+- New York legacy affiliate place IDs were repaired to the canonical new-york-harbor place so existing verified Klook/Tiqets links can become useful again without new owner setup.
+- New commercial opportunities queued without public activation: Vienna/Tiqets, Helsinki/Viator, Turku/Viator.
+- No paid ranking, automatic placement, automatic link rewriting, or unverified affiliate link publication is permitted.
