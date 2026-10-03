@@ -615,3 +615,13 @@ Cook Islands + traffic-unlock checkpoint — 2026-10-03 15:35 UTC:
 - GetYourGuide, Tripadvisor Experiences, Omio, 12GO, DiscoverCars and other visible programs remain future traffic-led unlocks.
 - Do not repeatedly ask the owner to recheck locked programs. Recheck only on Travelpayouts status change, material qualified traffic growth, or first meaningful affiliate conversions.
 - Current active-partner work remains Viator, Klook, Tiqets and Welcome Pickups; exact tracked links remain manual/verified and ranking-neutral.
+
+
+Island quality checkpoint — 2026-10-03 16:05 UTC:
+- Production/searchable baseline is now 290 healthy distinct places across 67 countries/territories.
+- Added three true-live island destinations from direct provider live pages: Kuredu Island (Maldives), Paynes Bay (Barbados), and Santa Maria Bay on Sal (Cape Verde).
+- Cook Islands current-image batch remains Search/Explore quasi-live; these three new island additions are true EXTERNAL_LIVE sources and may participate in Watch Earth subject to normal currentness gates.
+- Runtime sources.json remains minified and comfortably below the strict 300 KB source budget after the earlier provenance-sidecar architecture fix.
+- Active-partner business paths added for Maldives/Viator, Barbados Paynes Bay/Viator, and Cape Verde Sal/Viator; exact tracked links remain owner-generated and manually verified.
+- Commercial registry now has 16 verified-link opportunities, 165 exact-link/account-search opportunities, 5 source-gated opportunities, and 2 source-gap-blocked opportunities.
+- Trip.com remains ERN's first preferred future Travelpayouts unlock once traffic/account state permits; no repeated owner recheck is needed before then.
