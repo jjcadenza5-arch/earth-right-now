@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:20:00Z",
+  "generatedAt": "2026-10-03T04:28:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 91,
@@ -24,8 +24,8 @@
       "malta-live-cams"
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
-    "researchCandidateCount": 100,
-    "playbackGatedCandidateCount": 96,
+    "researchCandidateCount": 101,
+    "playbackGatedCandidateCount": 97,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan",
       "adjacentHighValueChecks": [
@@ -42,7 +42,7 @@
       ],
       "rule": "Adjacent Central Asia cameras improve regional breadth but do not close the Pamir/Tajikistan gap."
     },
-    "researchBacklogCount": 78,
+    "researchBacklogCount": 79,
     "mountainExpansionFocus": [
       "Pamir gateways",
       "Gudauri/Kobi",
@@ -54,9 +54,10 @@
       "core-pamir-live-camera-gap"
     ],
     "worldGapFamilies": [
+      "Pamir core — still unresolved; no weak substitute",
       "Antarctica — Australian Antarctic Program current-image stations",
-      "Panama Canal — Panama Canal Authority real-time lock cameras",
-      "Central Asia — Pamir core unresolved; adjacent verified research only"
+      "Panama Canal — official real-time lock cameras",
+      "KenyaLIVE — KWS daily wildlife live program, Nairobi launch"
     ]
   },
   "businessLane": {
@@ -111,7 +112,8 @@
       "viator-istanbul-future",
       "klook-bali-future",
       "viator-bali-future",
-      "viator-panama-canal-future"
+      "viator-panama-canal-future",
+      "viator-nairobi-national-park-future"
     ],
     "accommodationResearch": [
       "hotels-com",
@@ -120,7 +122,7 @@
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 12,
     "exactLinkQueueCount": 23,
-    "sourceGatedQueueCount": 32,
+    "sourceGatedQueueCount": 33,
     "sourceGapBlockedCount": 0,
     "sourceGatedOpportunityCount": 31
   },
