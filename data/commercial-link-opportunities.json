@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:15:00Z",
+  "generatedAt": "2026-10-03T03:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -574,6 +574,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Punta-Arenas/Full-Day-Torres-del-Paine/d4416-225783P1",
       "publicInventoryEvidence": "Current Viator inventory includes a full-day Torres del Paine viewpoints tour covering Lake Sarmiento, Lake Pehoé and Lake Grey with pickup from Punta Arenas or Puerto Natales.",
       "nextAction": "Prefer a clean Torres del Paine or Puerto Natales destination-level partner link over a single-product link; verify manually before public activation."
+    },
+    {
+      "id": "viator-ushuaia-future",
+      "destination": "Ushuaia / Tierra del Fuego",
+      "placeIds": [
+        "ushuaia-harbour-municipal"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "If the municipal Ushuaia harbour stream is reconfirmed current, it can naturally connect to strong Tierra del Fuego sightseeing inventory already present on Viator.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/es-ES/tours/Ushuaia/Tierra-Del-Fuego-National-Park-and-End-of-the-World-Train/d933-5503706P3",
+      "publicInventoryEvidence": "Current Viator inventory includes Ushuaia-based Tierra del Fuego National Park and End of the World Train experiences with hotel pickup.",
+      "nextAction": "Do not create a tracked link until the Ushuaia harbour source is reconfirmed live. Then prefer a city-level Ushuaia partner link rather than a single-product link."
     }
   ]
 }
