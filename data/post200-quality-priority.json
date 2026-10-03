@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T16:40:00Z",
+  "healthyDistinctPlaces": 308,
+  "countryCount": 69,
+  "strategy": "After the 200-place milestone, growth is quality-led: add new countries/regions, replace weak quasi-live with true live where possible, and improve one-place countries before adding more density to already-rich markets.",
+  "newCountryResearch": [
+    {
+      "country": "Slovakia",
+      "candidate": "jasna-chopok-slovakia",
+      "state": "RESEARCH_ADDED"
+    },
+    {
+      "country": "Bulgaria",
+      "candidate": "bansko-ski-resort-bulgaria",
+      "state": "RESEARCH_ADDED"
+    },
+    {
+      "country": "Bulgaria",
+      "candidate": "borovets-ski-resort-bulgaria",
+      "state": "RESEARCH_ADDED"
+    }
+  ],
+  "onePlaceCountries": [
+    {
+      "country": "Kenya",
+      "quasiOnly": false
+    },
+    {
+      "country": "Anguilla",
+      "quasiOnly": false
+    },
+    {
+      "country": "Ireland",
+      "quasiOnly": false
+    },
+    {
+      "country": "Brazil",
+      "quasiOnly": false
+    },
+    {
+      "country": "Chile",
+      "quasiOnly": false
+    },
+    {
+      "country": "Thailand",
+      "quasiOnly": false
+    },
+    {
+      "country": "Singapore",
+      "quasiOnly": false
+    },
+    {
+      "country": "Estonia",
+      "quasiOnly": true
+    },
+    {
+      "country": "Slovenia",
+      "quasiOnly": true
+    },
+    {
+      "country": "Romania",
+      "quasiOnly": true
+    },
+    {
+      "country": "Kazakhstan",
+      "quasiOnly": true
+    },
+    {
+      "country": "Argentina",
+      "quasiOnly": true
+    },
+    {
+      "country": "Nepal",
+      "quasiOnly": true
+    },
+    {
+      "country": "Indonesia",
+      "quasiOnly": false
+    },
+    {
+      "country": "Greenland",
+      "quasiOnly": true
+    },
+    {
+      "country": "Maldives",
+      "quasiOnly": false
+    },
+    {
+      "country": "Barbados",
+      "quasiOnly": false
+    },
+    {
+      "country": "Cape Verde",
+      "quasiOnly": false
+    },
+    {
+      "country": "Svalbard",
+      "quasiOnly": true
+    }
+  ],
+  "priorities": [
+    "Add genuinely new countries before increasing already-dense Japan/US/Austria coverage.",
+    "Upgrade one-place countries with a second useful view only when it represents a genuinely different destination.",
+    "Prefer true live/external-live upgrades for countries currently represented only by LIVE_IMAGE.",
+    "Keep quasi-live searchable but out of Watch Earth unless separately verified for continuous live playback.",
+    "Do not use business potential to decide source truth or featured ranking."
+  ]
+}
