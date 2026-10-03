@@ -417,3 +417,12 @@ Traffic-led monetization / runtime compaction checkpoint — 2026-10-03:
 - Maintenance queue was rebuilt from actual current timestamps instead of stale checkpoint data.
 - Kaikōura Coast was revalidated from the official Environment Canterbury webcam page; provider still documents South Bay and five-minute current-image updates. Freshness debt is cleared.
 - Searchable baseline remains 202 healthy distinct places; post-200 work prioritizes source quality/freshness and business utility rather than raw count inflation.
+
+
+Travelpayouts three-state model / traction checkpoint — 2026-10-03:
+- Affiliate platform model now distinguishes three states: RESEARCH_CANDIDATE, LINK_GENERATION_AVAILABLE, and ACTIVE_OPERATOR_CONFIRMED.
+- LINK_GENERATION_AVAILABLE is intentionally fail-closed for public placement: exact tracked link generation, owner/open verification and disclosure are still required.
+- Connectivity is now a recognized utility intent for eSIM programs.
+- data/business-growth-signals.json defines when ERN should revisit traffic-gated programs using aggregate search/place/travel-option behavior and partner-confirmed conversions; no unlock threshold is invented.
+- Locked-program strategy remains traffic-led; account-visible catalog entries are not treated as partnerships.
+- Current priority utility programs remain Airalo, Radical Storage, Go City, Kiwitaxi and Aviasales.
