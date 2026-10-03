@@ -123,3 +123,23 @@ Business lane:
 - New source-gated additions include Taipei/Klook, Taichung/Klook, Tainan/Klook, Hualien/Viator and Kruger/Viator.
 - Existing-partner-first remains the rule. No new partner activation was performed.
 - Owner work remains intentionally deferred and consolidated in data/owner-ready-expansion-batch.json.
+
+
+## Large-batch checkpoint — 02:32 UTC
+
+Source/featured lane:
+- Current public healthy searchable baseline remains 91 distinct places; no unverified source was promoted merely to increase count.
+- Private playback-verification queue is now 51 candidates.
+- Added eight official Taiwan Tourism Administration Live Taiwan candidates across Taipei, New Taipei, Taichung, Hualien and Tainan; selected official pages currently mark these streams as operating.
+- Added four additional official SANParks candidates (Satara, Olifants, Punda Maria, Talamati) without duplicating the already-live Nossob place.
+- Added South America candidates for Mendoza Plaza Independencia (official City of Mendoza live camera) and Ushuaia Harbour/Beagle Channel (municipal-published camera, intentionally held for stricter live-vs-archive recheck).
+- Featured-camera editorial audit remains 24 places spanning 18 countries and 21 providers; advisory only, currentness still wins.
+- Geographic expansion priorities now explicitly favor South America, broader Africa, wider Asia, Oceania and Caribbean before adding more Europe/North America density.
+
+Business lane:
+- Explicit opportunity registry now has 12 VERIFIED_LINK_ADDED, 16 ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED and 11 SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK entries.
+- Verified offers currently cover 19 healthy ERN places.
+- 16 additional healthy places are already in an explicit commercial queue; 57 healthy places remain intentionally unqueued for later evidence-led research.
+- New exact-link opportunities include Aruba/Viator, Kīlauea/Viator and Torres del Paine/Viator.
+- New source-gated opportunities include Taiwan/Klook, Hualien/Viator, Kruger/Viator and Ushuaia/Viator.
+- Owner actions remain consolidated in data/owner-ready-expansion-batch.json and are intentionally not being requested yet.
