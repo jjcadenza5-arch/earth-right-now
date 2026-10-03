@@ -96,6 +96,7 @@ const releaseTests=[
   "distribution-readiness.smoke.js",
   "local-directory-status.smoke.js",
   "travel-offer-expiry.smoke.js",
+  "affiliate-platform-project-status.smoke.js",
   "travel-bridge.smoke.js",
   "travel-planning-client.smoke.js",
   "viator-taxonomy-operator.smoke.js",
