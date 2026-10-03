@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:05:00Z",
-  "mode": "FOCUSED_EXPANSION",
+  "generatedAt": "2026-10-03T16:25:00Z",
+  "mode": "QUALITY_FIRST_AND_BUSINESS_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 290,
+    "currentHealthyDistinctPlaceBaseline": 300,
     "targetRange": [
-      250,
-      300
+      300,
+      350
     ],
-    "strategy": "Quality-first selective growth. ERN now has 290 healthy searchable places across 67 countries/territories. Only 10 places remain to the 300-place soft stretch; prioritize underrepresented regions, stronger true-live sources, and quasi-live current-image places that justify their runtime cost.",
+    "strategy": "300 healthy searchable places achieved. Continue selectively only when a new place improves geography, freshness, provider diversity or true-live quality; prioritize upgrades over raw count.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -235,7 +235,9 @@
       "secondary": "Convert the highest-fit existing-partner destination opportunities in batches.",
       "avoid": "Do not design ERN around locked programs or repeatedly ask the owner to check them."
     },
-    "conversionShortlist": "data/commercial-conversion-shortlist.json"
+    "conversionShortlist": "data/commercial-conversion-shortlist.json",
+    "tripComStatus": "VISIBLE_NOT_UNLOCKED_WAIT_FOR_TRAFFIC",
+    "tripComRule": "Do not open a separate direct account or repeatedly recheck Travelpayouts. Revisit only on meaningful traffic/conversion growth or explicit unlock."
   },
   "safeguards": {
     "automaticPlacement": false,
