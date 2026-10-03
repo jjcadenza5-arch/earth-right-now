@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:40:00Z",
+  "generatedAt": "2026-10-03T12:10:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -2536,6 +2536,21 @@
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "promotedAt": "2026-10-03T11:40:00Z",
       "promotionNote": "Official Visit Madeira current/live webcam imagery promoted under ERN quasi-live Search/Explore policy; not continuous-video Watch Earth eligibility."
+    },
+    {
+      "id": "namibia-okaukuejo-waterhole",
+      "title": "Okaukuejo Waterhole — Etosha National Park",
+      "country": "Namibia",
+      "region": "Etosha National Park",
+      "provider": "Namibia Wildlife Resorts",
+      "sourcePage": "https://www.nwr.com.na/resorts/okaukuejo-resort/",
+      "exactTargetUrl": "https://www.youtube.com/watch?v=6DoC2IV7OAI",
+      "exactTargetType": "PROVIDER_YOUTUBE_LIVE_TARGET",
+      "evidence": "Namibia Wildlife Resorts' current Okaukuejo resort page exposes View Wildlife Live Cam; NWR official material describes the Okaukuejo waterhole camera as a 24/7 live wildlife stream.",
+      "researchEvidence": "Official NWR source family supports the live-camera claim, but ERN keeps it research-only until the exact current target is human-playback confirmed.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the exact NWR YouTube target and confirm the waterhole feed is currently live/moving before promotion."
     }
   ],
   "notes": [
@@ -2585,7 +2600,8 @@
     "2026-10-03 final stretch tranche promoted Mieminger Plateau, Telfs, Lüsens, Innsbruck City Tower, Swarovski Crystal Worlds/Wattens and Simpson Bay as clearly labeled quasi-live searchable places, bringing ERN to the ~200-place target.",
     "2026-10-03 maintenance batch: Istanbul Sultanahmet and Denpasar official municipal camera services promoted from current official-web evidence; stale Takayama Miyagawa quasi-live source degraded rather than artificially refreshed.",
     "2026-10-03 Indian Ocean/Atlantic island batch promoted seven official quasi-live searchable places: four La Réunion tourism/scientific webcams plus São Miguel, Terceira and Santa Maria from Visit Azores. Watch Earth remains stricter.",
-    "2026-10-03 Madeira family expanded with Ribeira Brava, São Vicente, Santana, Santa Cruz and Porto Santo from the official Madeira Tourism webcam/weather page."
+    "2026-10-03 Madeira family expanded with Ribeira Brava, São Vicente, Santana, Santa Cruz and Porto Santo from the official Madeira Tourism webcam/weather page.",
+    "2026-10-03 Namibia gap research added Okaukuejo Waterhole / Etosha as a P1 exact-target playback candidate from official Namibia Wildlife Resorts evidence."
   ],
   "researchGaps": [
     {
