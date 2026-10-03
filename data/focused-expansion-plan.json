@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:40:00Z",
+  "generatedAt": "2026-10-03T04:28:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 100,
+    "currentHealthyDistinctPlaceBaseline": 106,
     "targetRange": [
       150,
       200
@@ -25,7 +25,7 @@
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
     "researchCandidateCount": 112,
-    "playbackGatedCandidateCount": 99,
+    "playbackGatedCandidateCount": 93,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan",
       "adjacentHighValueChecks": [
@@ -147,8 +147,8 @@
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 16,
-    "exactLinkQueueCount": 32,
-    "sourceGatedQueueCount": 34,
+    "exactLinkQueueCount": 33,
+    "sourceGatedQueueCount": 33,
     "sourceGapBlockedCount": 1,
     "sourceGatedOpportunityCount": 31
   },
