@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T09:10:00Z",
+  "mode": "DORMANT_UNTIL_AUTONOMOUS_WORK_EXHAUSTED",
+  "currentNeedOwner": false,
+  "purpose": "Bundle future owner-only actions so ERN does not interrupt with one-off checks.",
+  "cameraChecks": [
+    {
+      "id": "denpasar-city-live",
+      "title": "Denpasar — Live City Streets",
+      "url": "https://atcs.denpasarkota.go.id/",
+      "hint": "Open the official Denpasar ATCS live-stream page and choose one visually useful city location; confirm real-time motion.",
+      "businessUnlocks": [
+        "klook-bali-future",
+        "viator-bali-future"
+      ]
+    },
+    {
+      "id": "istanbul-bosphorus-live",
+      "title": "Istanbul — Bosphorus / Üsküdar",
+      "url": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
+      "hint": "Choose one Bosphorus-facing camera (prefer ÜSKÜDAR or SALACAK) and confirm it visibly updates.",
+      "businessUnlocks": [
+        "klook-istanbul-future",
+        "viator-istanbul-future"
+      ]
+    },
+    {
+      "id": "istanbul-sultanahmet-live",
+      "title": "Istanbul — Sultanahmet",
+      "url": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
+      "hint": "Open the official Istanbul touristic-camera page, choose SULTANAHMET, and confirm the live stream plays.",
+      "businessUnlocks": [
+        "klook-istanbul-future",
+        "viator-istanbul-future"
+      ]
+    },
+    {
+      "id": "karakol-ski-base",
+      "title": "Karakol Ski Base — Issyk-Kul",
+      "url": "https://kg.camera/en/camera/Karakol_LyzhBaza_25_11_2019_cam1",
+      "hint": "Open the direct KG Camera Karakol Ski Base page and confirm the lower-lift image/video updates normally.",
+      "businessUnlocks": [
+        "viator-karakol-future",
+        "viator-issyk-kul-future"
+      ]
+    },
+    {
+      "id": "malta-live-cams",
+      "title": "Malta — Official Live Cams",
+      "url": "https://www2.visitmalta.com/en/info/live-cams-in-malta/",
+      "hint": "Open the official Live Malta Cams page and confirm at least one destination camera visibly updates before ERN promotes any specific Malta place.",
+      "businessUnlocks": [
+        "tiqets-malta-future"
+      ]
+    },
+    {
+      "id": "kenyalive-nairobi-national-park",
+      "title": "Nairobi National Park — KenyaLIVE",
+      "url": "https://kws.go.ke/world-tourism-day-2026-kenya-embraces-the-digital-future-of-travel/",
+      "hint": "Open the KWS KenyaLIVE article, follow the official KWS YouTube route, and confirm there is a current live broadcast identified as Nairobi National Park before promotion.",
+      "businessUnlocks": [
+        "viator-nairobi-national-park-future"
+      ]
+    },
+    {
+      "id": "prague-old-town-hall",
+      "title": "Prague — Old Town Hall",
+      "url": "https://www.youtube.com/watch?v=Agep3Ts7hpI",
+      "hint": "Open this exact target directly; no hunting through the Prague page is needed.",
+      "businessUnlocks": [
+        "tiqets-prague-future"
+      ]
+    },
+    {
+      "id": "prague-petrin-tower",
+      "title": "Prague — Petřín Lookout Tower",
+      "url": "https://pvp.panomax.com/",
+      "hint": "Open this exact target directly; no hunting through the Prague page is needed.",
+      "businessUnlocks": [
+        "tiqets-prague-future"
+      ]
+    }
+  ],
+  "exactLinkActions": [
+    {
+      "id": "tiqets-vienna",
+      "destination": "Vienna",
+      "partner": "tiqets",
+      "nextAction": "Generate one Vienna destination-level Tiqets tracked link in Travelpayouts only after owner verification; keep commercial placement downstream from discovery."
+    },
+    {
+      "id": "viator-helsinki",
+      "destination": "Helsinki",
+      "partner": "viator",
+      "nextAction": "Generate one Helsinki destination-level Viator partner link and verify it manually before adding any public offer."
+    },
+    {
+      "id": "viator-lucerne",
+      "destination": "Lucerne / Lake Lucerne",
+      "partner": "viator",
+      "nextAction": "Generate and manually verify one destination-level Lucerne Viator partner link before public offer activation."
+    },
+    {
+      "id": "viator-tbilisi",
+      "destination": "Tbilisi",
+      "partner": "viator",
+      "nextAction": "Generate and manually verify one Tbilisi Viator destination link; keep planning downstream from discovery."
+    },
+    {
+      "id": "viator-cancun",
+      "destination": "Cancún",
+      "partner": "viator",
+      "nextAction": "Generate and manually verify one Cancún Viator destination link before any public placement."
+    },
+    {
+      "id": "tiqets-georgia-aquarium",
+      "destination": "Georgia Aquarium / Atlanta",
+      "partner": "tiqets",
+      "nextAction": "Generate one Georgia Aquarium Tiqets tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "tiqets-san-diego-zoo",
+      "destination": "San Diego Zoo",
+      "partner": "tiqets",
+      "nextAction": "Generate one San Diego Zoo Tiqets tracked link in Travelpayouts and manually verify it before public activation."
+    },
+    {
+      "id": "viator-zermatt",
+      "destination": "Zermatt / Matterhorn",
+      "partner": "viator",
+      "nextAction": "Generate one Zermatt destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-san-diego-zoo",
+      "destination": "San Diego / San Diego Zoo",
+      "partner": "viator",
+      "nextAction": "Generate one San Diego destination or Zoo-specific Viator partner link and verify it manually; avoid duplicate density if Tiqets is later activated for the same place."
+    },
+    {
+      "id": "viator-aruba",
+      "destination": "Aruba / Druif Beach",
+      "partner": "viator",
+      "nextAction": "Generate one Aruba destination-level Viator partner link and manually verify it before public activation; keep the offer downstream from Earth discovery."
+    },
+    {
+      "id": "viator-kilauea",
+      "destination": "Hawaiʻi Volcanoes National Park / Kīlauea",
+      "partner": "viator",
+      "nextAction": "Generate one Big Island / Hawaiʻi Volcanoes National Park partner link that resolves cleanly to Kīlauea-relevant inventory; verify it manually before public activation."
+    },
+    {
+      "id": "viator-torres-del-paine",
+      "destination": "Torres del Paine",
+      "partner": "viator",
+      "nextAction": "Prefer a clean Torres del Paine or Puerto Natales destination-level partner link over a single-product link; verify manually before public activation."
+    }
+  ],
+  "rules": {
+    "askOwnerOnlyWhenNeeded": true,
+    "batchActions": true,
+    "noAutomaticPartnerActivation": true,
+    "noAutomaticTrackedLinkGeneration": true,
+    "noUnverifiedSourcePromotion": true
+  }
+}
