@@ -3030,6 +3030,23 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Napier/Hawkes-Bay-Morning-Wine-Tour-Te-Mata-Peak-and-Winery-Lunch/d4760-184165P7",
       "publicInventoryEvidence": "Viator currently lists Hawke's Bay experiences from the Napier/Hastings area, including Te Mata Peak and winery tours.",
       "nextAction": "Generate a Hawke's Bay or Napier destination-level Viator tracked link only if it cleanly supports Te Awanga visitors; avoid a mismatched generic New Zealand link."
+    },
+    {
+      "id": "tiqets-krakow",
+      "destination": "Kraków",
+      "placeIds": [
+        "krakow-main-square",
+        "krakow-wawel-vistula",
+        "krakow-zakrzowek"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "ERN now has three official City of Kraków current-camera places. Tiqets currently exposes broad Kraków inventory spanning Wawel Castle, Rynek Underground, city tours, museums and cruises.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/krakow-attractions-c46/",
+      "publicInventoryEvidence": "Current Tiqets Kraków destination inventory includes Wawel Castle, Rynek Underground Museum, city tours, museums, excursions and cruises.",
+      "nextAction": "Generate one Kraków city-level Tiqets tracked link in the owner account and verify it manually before public activation; reuse it across the three Kraków places rather than creating duplicate per-camera offers."
     }
   ]
 }
