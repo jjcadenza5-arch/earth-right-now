@@ -26,7 +26,15 @@
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Booking.com visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "3%–5% / €1.5 flights",
+      "cookieDisplay": "One session",
+      "mobileTracking": "Mobile web & app",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "agoda",
@@ -51,7 +59,15 @@
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Agoda visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "1–6%",
+      "cookieDisplay": "1 day",
+      "mobileTracking": "Mobile web & app",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "viator",
@@ -163,7 +179,15 @@
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Hotels.com visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "1.35–3.6%",
+      "cookieDisplay": "7 days",
+      "mobileTracking": "Mobile web & app",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "trip-com",
@@ -196,7 +220,15 @@
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Trip.com visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "1–5.5%",
+      "cookieDisplay": "7–30 days",
+      "mobileTracking": "Mobile web & app",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "expedia",
@@ -226,7 +258,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Expedia visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "1.35–3.6%",
+      "cookieDisplay": "30 days",
+      "mobileTracking": "Mobile web & app",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "getyourguide",
@@ -254,7 +294,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows GetYourGuide visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "8%",
+      "cookieDisplay": "31 days",
+      "mobileTracking": "Mobile web only",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "tripadvisor-experiences",
@@ -282,7 +330,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Tripadvisor Experiences visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "8%",
+      "cookieDisplay": "14 days",
+      "mobileTracking": "Mobile web only",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "discovercars",
@@ -310,7 +366,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows DiscoverCars visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "23–54%",
+      "cookieDisplay": "365 days",
+      "mobileTracking": "Mobile web & app",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "traveloka",
@@ -339,7 +403,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Traveloka visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "0.36–3.6% of booking amount",
+      "cookieDisplay": "14 days",
+      "mobileTracking": "Mobile web & app",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "omio",
@@ -367,7 +439,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Omio visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "6%",
+      "cookieDisplay": "30 days",
+      "mobileTracking": "Mobile web & app",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "12go",
@@ -395,7 +475,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows 12GO visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "4–5.5%",
+      "cookieDisplay": "30 days",
+      "mobileTracking": "Mobile web only",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "hostelworld",
@@ -423,7 +511,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Hostelworld visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "40% revenue share / fixed Social Pass reward",
+      "cookieDisplay": "30 days",
+      "mobileTracking": "Mobile web & app",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "vrbo",
@@ -451,7 +547,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Vrbo visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "1.8%",
+      "cookieDisplay": "7 days",
+      "mobileTracking": "Mobile web only",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "ticketmaster",
@@ -480,7 +584,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Ticketmaster visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "0–4.15%",
+      "cookieDisplay": "7–30 days",
+      "mobileTracking": "Mobile web only",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "vio-com",
@@ -508,7 +620,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Vio.com visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "40–64% revenue share",
+      "cookieDisplay": "30 days",
+      "mobileTracking": "Mobile web & app",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "rakuten-travel-intl",
@@ -537,7 +657,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Rakuten Travel (INTL) visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "0.8–5%",
+      "cookieDisplay": "30 days",
+      "mobileTracking": "Mobile web & app",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "visitorscoverage",
@@ -565,7 +693,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows VisitorsCoverage visible in the ERN Travelpayouts program catalog; treat as future travel-insurance/service coverage only if it later fits ERN visitor utility.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "$1–$160 fixed reward",
+      "cookieDisplay": "30 days",
+      "mobileTracking": "Mobile web only",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "insubuy",
@@ -593,7 +729,15 @@
     "ownerAccountAvailability": "VISIBLE_NOT_ACTIVATED_OR_UNLOCKED",
     "ownerAccountCheckedAt": "2026-10-03T10:25:00Z",
     "ownerAccountEvidence": "Owner screenshot 2026-10-03 shows Insubuy visible in the ERN Travelpayouts program catalog; treat as future travel-insurance/service coverage only if it later fits ERN visitor utility.",
-    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later."
+    "activationStrategy": "Do not force activation. Build ERN traffic and visitor utility first; recheck eligibility later.",
+    "ownerObservedProgramCard": {
+      "rewardDisplay": "$1.5–$150 fixed reward",
+      "cookieDisplay": "30 days",
+      "mobileTracking": "Mobile web only",
+      "observedAt": "2026-10-03T10:20:00Z",
+      "source": "Owner Travelpayouts screenshots",
+      "note": "Display terms only; not an earnings forecast and not proof of program unlock."
+    }
   },
   {
     "id": "yesim",
