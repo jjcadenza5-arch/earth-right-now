@@ -4276,9 +4276,13 @@
     "refreshIntervalSeconds": 300,
     "freshnessEvidence": "INETER's current volcano camera index states Nicaragua volcano webcam images are transmitted in real time every 30 seconds or 1 minute; the San Cristóbal detail page states automatic refresh at about five minutes.",
     "aliases": [
-      "Volcan San Cristobal",
-      "Volcán San Cristóbal"
-    ]
+      "Volcan San Cristobal"
+    ],
+    "lat": 12.702,
+    "lon": -87.004,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "nicaragua-telica-current-image",
@@ -4314,9 +4318,13 @@
     "refreshIntervalSeconds": 300,
     "freshnessEvidence": "INETER states the Telica crater image refreshes automatically about every five minutes; its current volcano index describes real-time images every 30 seconds or 1 minute.",
     "aliases": [
-      "Volcan Telica",
-      "Volcán Telica"
-    ]
+      "Volcan Telica"
+    ],
+    "lat": 12.602,
+    "lon": -86.845,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "nicaragua-momotombo-current-image",
@@ -4352,9 +4360,13 @@
     "refreshIntervalSeconds": 300,
     "freshnessEvidence": "INETER states Momotombo webcam images refresh automatically about every five minutes and are used for live visual monitoring.",
     "aliases": [
-      "Volcan Momotombo",
-      "Volcán Momotombo"
-    ]
+      "Volcan Momotombo"
+    ],
+    "lat": 12.423,
+    "lon": -86.54,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "nicaragua-masaya-current-image",
@@ -4391,9 +4403,13 @@
     "freshnessEvidence": "INETER's Masaya webcam page states automatic refresh about every five minutes; the current national volcano index describes real-time camera imagery.",
     "aliases": [
       "Volcan Masaya",
-      "Volcán Masaya",
       "Masaya Volcano National Park"
-    ]
+    ],
+    "lat": 11.984,
+    "lon": -86.161,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "nicaragua-concepcion-current-image",
@@ -4430,9 +4446,13 @@
     "freshnessEvidence": "INETER states the Concepción image refreshes automatically about every five minutes and is part of its live visual volcano monitoring network.",
     "aliases": [
       "Volcan Concepcion",
-      "Volcán Concepción",
       "Ometepe"
-    ]
+    ],
+    "lat": 11.538,
+    "lon": -85.622,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "nicaragua-cerro-negro-current-image",
@@ -4469,9 +4489,13 @@
     "freshnessEvidence": "INETER's current Cerro Negro page says the image updates automatically about every minute.",
     "aliases": [
       "Cerro Negro",
-      "Volcan Cerro Negro",
-      "Volcán Cerro Negro"
-    ]
+      "Volcan Cerro Negro"
+    ],
+    "lat": 12.506,
+    "lon": -86.702,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "guatemala-fuego-current-image",
@@ -4508,9 +4532,13 @@
     "freshnessEvidence": "INSIVUMEH states its Fuego/Santiaguito platform updates every minute with the most recent images and provides a six-hour photographic record.",
     "aliases": [
       "Fuego Volcano",
-      "Volcan de Fuego",
-      "Volcán de Fuego"
-    ]
+      "Volcan de Fuego"
+    ],
+    "lat": 14.473,
+    "lon": -90.88,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://insivumeh.gob.gt/camaras-de-vigilancia-volcanica/",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "guatemala-santiaguito-current-image",
@@ -4547,9 +4575,13 @@
     "freshnessEvidence": "INSIVUMEH states its Fuego/Santiaguito platform updates every minute with the most recent images and provides a six-hour photographic record.",
     "aliases": [
       "Santiaguito",
-      "Volcan Santiaguito",
-      "Volcán Santiaguito"
-    ]
+      "Volcan Santiaguito"
+    ],
+    "lat": 14.756,
+    "lon": -91.552,
+    "coordinateBasis": "PLACE_REFERENCE",
+    "coordinateSourceUrl": "https://insivumeh.gob.gt/camaras-de-vigilancia-volcanica/",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "nz-ruapehu-current-image",
@@ -4588,7 +4620,11 @@
     "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
     "refreshIntervalSeconds": 600,
     "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
-    "coordinateBasis": "REGION_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "lat": -39.281,
+    "lon": 175.57,
+    "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "nz-ngauruhoe-current-image",
@@ -4627,7 +4663,11 @@
     "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
     "refreshIntervalSeconds": 600,
     "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
-    "coordinateBasis": "REGION_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "lat": -39.157,
+    "lon": 175.632,
+    "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "nz-tongariro-current-image",
@@ -4666,7 +4706,11 @@
     "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
     "refreshIntervalSeconds": 600,
     "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
-    "coordinateBasis": "REGION_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "lat": -39.13,
+    "lon": 175.642,
+    "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "nz-taranaki-current-image",
@@ -4706,7 +4750,11 @@
     "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
     "refreshIntervalSeconds": 600,
     "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
-    "coordinateBasis": "REGION_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "lat": -39.296,
+    "lon": 174.064,
+    "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "nz-raoul-island-current-image",
@@ -4746,7 +4794,11 @@
     "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
     "refreshIntervalSeconds": 600,
     "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
-    "coordinateBasis": "REGION_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "lat": -29.27,
+    "lon": -177.92,
+    "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   },
   {
     "id": "nz-whakaari-current-image",
@@ -4785,6 +4837,10 @@
     "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
     "refreshIntervalSeconds": 600,
     "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
-    "coordinateBasis": "REGION_REFERENCE"
+    "coordinateBasis": "PLACE_REFERENCE",
+    "lat": -37.52,
+    "lon": 177.18,
+    "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras",
+    "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point."
   }
 ]
