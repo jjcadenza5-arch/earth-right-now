@@ -3309,6 +3309,36 @@
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "promotedAt": "2026-10-03T16:40:00Z",
       "promotionNote": "Promoted as LIVE_IMAGE/searchable quasi-live, not continuous live video."
+    },
+    {
+      "id": "kekesteto-hungary",
+      "title": "Kékestető — Mátra Mountains",
+      "country": "Hungary",
+      "region": "Mátra",
+      "provider": "Kékestető",
+      "sourcePage": "https://kekesteto.hu/webcam/?lang=en",
+      "exactTargetUrl": "https://kekesteto.hu/webcam/?lang=en",
+      "exactTargetType": "OFFICIAL_DESTINATION_WEBCAM_PAGE",
+      "evidence": "Official Kékestető destination site exposes webcams for the South Ski Resort and Tower Lookout – North-West.",
+      "researchEvidence": "Kékestető's official site presents the webcams alongside current mountain/destination information. Human check is still required before ERN promotes it as current/live.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Kékestető webcam page and confirm the South Ski Resort or Tower Lookout camera visibly updates/currently reflects conditions."
+    },
+    {
+      "id": "bratislava-city-live",
+      "title": "Bratislava — Danube & City Views",
+      "country": "Slovakia",
+      "region": "Bratislava",
+      "provider": "Visit Bratislava",
+      "sourcePage": "https://www.visitbratislava.com/sk/podujatia/zive-kamery-bratislava-2/",
+      "exactTargetUrl": "https://www.visitbratislava.com/sk/podujatia/zive-kamery-bratislava-2/",
+      "exactTargetType": "OFFICIAL_TOURISM_LIVE_CAMERA_PAGE",
+      "evidence": "Official Visit Bratislava page advertises live online views of Apollo Bridge, Old Bridge and panorama/sunset views from SNP Bridge.",
+      "researchEvidence": "Official city tourism source explicitly describes live cameras/online city views. ERN still requires a working camera target to be confirmed before promotion.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Visit Bratislava live-camera page and confirm at least one city/Danube view is currently working."
     }
   ],
   "notes": [
@@ -3376,7 +3406,8 @@
     "2026-10-03 quality-first expansion added three distinct official City of Kraków current-camera places. They are searchable LIVE_IMAGE/quasi-live sources with Watch Earth held separately.",
     "2026-10-03 quality-first batch promoted Longyearbyen/UNIS, Wairoa River and Foxton Beach as searchable quasi-live LIVE_IMAGE sources; Watch Earth truth remains stricter.",
     "2026-10-03 post-200 geography batch added Slovakia (Jasná/Chopok) and Bulgaria (Bansko, Borovets) from official resort webcam families. These are grouped by real destination and remain playback-gated; no fake place inflation.",
-    "2026-10-03 post-200 quasi-live batch promoted Bansko, Borovets and Kopaonik as three real searchable destinations; resort camera angles remain grouped and Watch Earth remains held."
+    "2026-10-03 post-200 quasi-live batch promoted Bansko, Borovets and Kopaonik as three real searchable destinations; resort camera angles remain grouped and Watch Earth remains held.",
+    "2026-10-03 post-200 geography research added Hungary/Kékestető and Bratislava city live-camera routes from official destination/tourism sources; both remain human-check gated."
   ],
   "researchGaps": [
     {
