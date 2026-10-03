@@ -40,7 +40,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "3%–5% / €1.5 flights",
     "catalogCookieSnapshot": "One session",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "VISIBLE_NOT_ACTIVE",
+    "ownerObservedRewardDisplay": "3–5% / €1.5 flights",
+    "ownerObservedCookie": "One session",
+    "ownerObservedMobileTracking": "Mobile web & app",
+    "trafficUnlockWatch": true
   },
   {
     "id": "agoda",
@@ -79,7 +85,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "1–6%",
     "catalogCookieSnapshot": "1 day",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "1–6%",
+    "ownerObservedCookie": "1 day",
+    "ownerObservedMobileTracking": "Mobile web & app",
+    "trafficUnlockWatch": true
   },
   {
     "id": "viator",
@@ -205,7 +217,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "1.35–3.6%",
     "catalogCookieSnapshot": "7 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "1.35–3.6%",
+    "ownerObservedCookie": "7 days",
+    "ownerObservedMobileTracking": "Mobile web & app",
+    "trafficUnlockWatch": true
   },
   {
     "id": "trip-com",
@@ -252,7 +270,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "1–5.5%",
     "catalogCookieSnapshot": "7–30 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "1–5.5%",
+    "ownerObservedCookie": "7–30 days",
+    "ownerObservedMobileTracking": "Mobile web & app",
+    "trafficUnlockWatch": true
   },
   {
     "id": "expedia",
@@ -296,7 +320,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "1.35–3.6%",
     "catalogCookieSnapshot": "30 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "1.35–3.6%",
+    "ownerObservedCookie": "30 days",
+    "ownerObservedMobileTracking": "Mobile web & app",
+    "trafficUnlockWatch": true
   },
   {
     "id": "getyourguide",
@@ -338,7 +368,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "8%",
     "catalogCookieSnapshot": "31 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "8%",
+    "ownerObservedCookie": "31 days",
+    "ownerObservedMobileTracking": "Mobile web only",
+    "trafficUnlockWatch": true
   },
   {
     "id": "tripadvisor-experiences",
@@ -380,7 +416,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "8%",
     "catalogCookieSnapshot": "14 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "8%",
+    "ownerObservedCookie": "14 days",
+    "ownerObservedMobileTracking": "Mobile web only",
+    "trafficUnlockWatch": true
   },
   {
     "id": "discovercars",
@@ -422,7 +464,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "23–54%",
     "catalogCookieSnapshot": "365 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "23–54%",
+    "ownerObservedCookie": "365 days",
+    "ownerObservedMobileTracking": "Mobile web & app",
+    "trafficUnlockWatch": true
   },
   {
     "id": "traveloka",
@@ -465,7 +513,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "0.36–3.6%",
     "catalogCookieSnapshot": "14 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "0.36–3.6% of booking amount",
+    "ownerObservedCookie": "14 days",
+    "ownerObservedMobileTracking": "Mobile web & app",
+    "trafficUnlockWatch": true
   },
   {
     "id": "omio",
@@ -507,7 +561,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "6%",
     "catalogCookieSnapshot": "30 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "6%",
+    "ownerObservedCookie": "30 days",
+    "ownerObservedMobileTracking": "Mobile web & app",
+    "trafficUnlockWatch": true
   },
   {
     "id": "12go",
@@ -549,7 +609,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "4–5.5%",
     "catalogCookieSnapshot": "30 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "4–5.5%",
+    "ownerObservedCookie": "30 days",
+    "ownerObservedMobileTracking": "Mobile web only",
+    "trafficUnlockWatch": true
   },
   {
     "id": "hostelworld",
@@ -591,7 +657,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "40% rev share / fixed Social Pass reward",
     "catalogCookieSnapshot": "30 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "40% revenue share / fixed Social Pass reward",
+    "ownerObservedCookie": "30 days",
+    "ownerObservedMobileTracking": "Mobile web & app",
+    "trafficUnlockWatch": true
   },
   {
     "id": "vrbo",
@@ -633,7 +705,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "1.8%",
     "catalogCookieSnapshot": "7 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "1.8%",
+    "ownerObservedCookie": "7 days",
+    "ownerObservedMobileTracking": "Mobile web only",
+    "trafficUnlockWatch": true
   },
   {
     "id": "ticketmaster",
@@ -676,7 +754,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "0–4.15%",
     "catalogCookieSnapshot": "7–30 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "0–4.15%",
+    "ownerObservedCookie": "7–30 days",
+    "ownerObservedMobileTracking": "Mobile web only",
+    "trafficUnlockWatch": true
   },
   {
     "id": "vio-com",
@@ -718,7 +802,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "40–64% revenue share",
     "catalogCookieSnapshot": "30 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "40–64% revenue share",
+    "ownerObservedCookie": "30 days",
+    "ownerObservedMobileTracking": "Mobile web & app",
+    "trafficUnlockWatch": true
   },
   {
     "id": "rakuten-travel-intl",
@@ -761,7 +851,13 @@
     "ownerEvidenceAt": "2026-10-03T10:20:00Z",
     "catalogRewardSnapshot": "0.8–5%",
     "catalogCookieSnapshot": "30 days",
-    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "accountAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "ownerCatalogObservedAt": "2026-10-03T17:20:00+07:00",
+    "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+    "ownerObservedRewardDisplay": "0.8–5%",
+    "ownerObservedCookie": "30 days",
+    "ownerObservedMobileTracking": "Mobile web & app",
+    "trafficUnlockWatch": true
   },
   {
     "id": "visitorscoverage",
