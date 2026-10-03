@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T02:15:00Z",
+  "generatedAt": "2026-10-03T02:28:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -458,6 +458,61 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Dubrovnik/d904-ttd",
       "publicInventoryEvidence": "Current Viator Dubrovnik inventory includes Old Town panoramic tours, island cruises and other city/Adriatic experiences.",
       "nextAction": "After at least one Dubrovnik camera is promoted, generate one city-level Viator link and reuse it across the verified Dubrovnik places without duplicate commercial density."
+    },
+    {
+      "id": "klook-taipei-future",
+      "destination": "Taipei",
+      "placeIds": [
+        "taipei-dajia-riverside-park",
+        "taipei-bishanyan"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Official Taipei Live Taiwan candidates can naturally connect to Klook's strong Taipei activity inventory once at least one source is verified.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "nextAction": "After a Taipei camera is promoted, generate one Taipei-level Klook tracked link and reuse it across verified Taipei places."
+    },
+    {
+      "id": "klook-taichung-future",
+      "destination": "Taichung / Lishan",
+      "placeIds": [
+        "taichung-techi-reservoir",
+        "taichung-lishan-yingyuan-hill"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "The mountain/reservoir views can support trip-planning into central Taiwan if Klook exposes useful Taichung/Lishan inventory.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "nextAction": "Verify at least one source first, then search the active Klook account for a destination-level Taichung link; activate only if inventory is genuinely useful."
+    },
+    {
+      "id": "klook-tainan-future",
+      "destination": "Tainan",
+      "placeIds": [
+        "tainan-erliao-sunrise",
+        "tainan-jingzaijiao-salt-fields"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Tainan's sunrise and salt-field live views create a strong See Live → Explore cultural landscape path; Klook is already an active ERN partner.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "nextAction": "After a Tainan source is promoted, generate one Tainan destination-level Klook tracked link and manually verify it."
+    },
+    {
+      "id": "viator-hualien-future",
+      "destination": "Hualien / East Coast",
+      "placeIds": [
+        "hualien-shitiping"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Shitiping's official east-coast live view can naturally lead into Hualien/East Coast sightseeing and nature activities.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "nextAction": "After Shitiping is promoted, search Viator partner tools for a clean Hualien/East Coast destination-level link; do not use a generic Taiwan page."
     }
   ]
 }
