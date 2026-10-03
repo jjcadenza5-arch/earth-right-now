@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:30:00Z",
+  "generatedAt": "2026-10-03T14:05:00Z",
   "status": "OWNER_ACTION_NOT_YET_REQUIRED",
   "purpose": "One efficient owner session for exact tracked-link generation after autonomous research is complete.",
   "rule": "Never invent URLs. Use the named partner account/tool, search the exact phrase, generate the tracked link, open it manually, then record it.",
@@ -389,8 +389,107 @@
       ],
       "accountSearchPhrase": "Levi Lapland tours activities",
       "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "tiqets-brussels",
+      "partner": "tiqets",
+      "destination": "Brussels",
+      "intent": "culture",
+      "priority": "P1",
+      "placeIds": [
+        "brussels-grand-place",
+        "brussels-brouckere"
+      ],
+      "accountSearchPhrase": "Brussels attractions",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-plitvice",
+      "partner": "viator",
+      "destination": "Plitvice Lakes National Park",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "plitvice-lakes"
+      ],
+      "accountSearchPhrase": "Plitvice Lakes tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-cannes",
+      "partner": "viator",
+      "destination": "Cannes",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "cannes"
+      ],
+      "accountSearchPhrase": "Cannes French Riviera tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-heidelberg",
+      "partner": "viator",
+      "destination": "Heidelberg",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "heidelberg-old-town",
+        "heidelberg-konigstuhl"
+      ],
+      "accountSearchPhrase": "Heidelberg tours castle",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-nuremberg",
+      "partner": "viator",
+      "destination": "Nuremberg",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "nuremberg"
+      ],
+      "accountSearchPhrase": "Nuremberg tours Old Town",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-dresden",
+      "partner": "viator",
+      "destination": "Dresden / Radebeul",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "dresden-old-town",
+        "radebeul-wackerbarth"
+      ],
+      "accountSearchPhrase": "Dresden tours activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-garmisch-farchant",
+      "partner": "viator",
+      "destination": "Garmisch-Partenkirchen / Zugspitze",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "farchant-zugspitze"
+      ],
+      "accountSearchPhrase": "Garmisch Partenkirchen Zugspitze tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-aalborg",
+      "partner": "viator",
+      "destination": "Aalborg",
+      "intent": "activities",
+      "priority": "P2",
+      "placeIds": [
+        "denmark-aalborg-zoo"
+      ],
+      "accountSearchPhrase": "Aalborg tours activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
     }
   ],
-  "searchablePlaceMilestone": 256,
-  "note": "Worksheet is intentionally broader than the immediate owner-action packet. Generate links in batches only after autonomous preparation makes the session worthwhile."
+  "searchablePlaceMilestone": 275,
+  "note": "Worksheet updated at the 275-place soft stretch. Generate links only in a deliberate owner batch; locked Travelpayouts programs remain traffic-led future targets."
 }
