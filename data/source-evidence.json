@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T10:45:00Z",
+  "generatedAt": "2026-10-03T10:30:00Z",
   "note": "Verbose provenance/evidence moved out of runtime source catalog to preserve ERN's strict production-size budget. Truth fields, URLs, timestamps, location, health and visitor-facing content remain in data/sources.json.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -24,8 +24,8 @@
       "coordinateSourceUrl": "https://www.sanparks.org/travel/webcams"
     },
     "kaikoura-coast": {
-      "freshnessEvidence": "Official Environment Canterbury webcam page rechecked on 2026-09-30; it still lists South Bay, Kaikōura and states static webcam images update every five minutes.",
-      "rightsBasis": "Official Environment Canterbury regional webcam page; retained as link-only because ERN has not documented display/embed permission.",
+      "freshnessEvidence": "Environment Canterbury official Regional webcams page retrieved 2026-10-03 confirms South Bay, Kaikōura remains in the active webcam list and states the static webcam images update every five minutes; provider warns visitors to inspect image timestamps because a last image can remain visible during outages.",
+      "rightsBasis": "Official Environment Canterbury regional webcam page; ERN uses link-only current-image discovery and does not infer embed/restream permission.",
       "coordinateSourceUrl": "https://www.ecan.govt.nz/webcams"
     },
     "glenelg-sa": {
