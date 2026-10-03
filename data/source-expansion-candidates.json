@@ -1095,6 +1095,21 @@
       "evidence": "KG Camera publishes a direct camera page for Ala-Too Square in central Bishkek.",
       "researchEvidence": "The network identifies this as the central square of Kyrgyzstan's capital and applies the same unarchived short-delay live-surveillance policy.",
       "humanCheckHint": "Open the direct Ala-Too Square page and confirm the city-center view updates normally."
+    },
+    {
+      "id": "batken-city-panorama",
+      "title": "Batken — City Panorama",
+      "country": "Kyrgyzstan",
+      "region": "Batken",
+      "provider": "ElCat / kg.camera",
+      "sourcePage": "https://www.kg.camera/en/",
+      "exactTargetUrl": "https://www.kg.camera/en/",
+      "exactTargetType": "PUBLIC_CAMERA_INDEX",
+      "evidence": "kg.camera lists a panorama of Batken city in southern Kyrgyzstan.",
+      "researchEvidence": "Batken gives ERN broader southern Kyrgyz/Pamir-Alay geographic coverage, but it is not presented as a camera inside the Pamir core.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Use the kg.camera list and open Batken city panorama; confirm it updates before promotion."
     }
   ],
   "notes": [
@@ -1115,6 +1130,7 @@
     "2026-10-03 Oceania breadth batch added four official Lake Wānaka Tourism views and two Rotorua NZ webcam views. All six remain human-playback-gated.",
     "2026-10-03 Pamir-gap research uncovered stronger adjacent Central Asia live-camera opportunities: official Shymbulak (Kazakhstan), official Karakol Ski Base, Ala-Archa Natural Park and Osh/Sulaiman-Too (Kyrgyzstan). These remain playback-gated and do not substitute for the unresolved Pamir/Tajikistan gap.",
     "2026-10-03 Central Asia large batch: replaced generic KG Camera index links with direct camera pages for Karakol, Ala-Archa and Osh/Sulaiman-Too, and added direct research candidates for Naryn, Too-Ashu Pass, Suusamyr Valley and Balykchy. These remain playback-gated.",
-    "2026-10-03 added direct KG Camera candidates for scenic Issyk-Kul/KarVen Four Seasons and Bishkek/Ala-Too Square. Both remain human-playback-gated."
+    "2026-10-03 added direct KG Camera candidates for scenic Issyk-Kul/KarVen Four Seasons and Bishkek/Ala-Too Square. Both remain human-playback-gated.",
+    "Pamir multi-side research — 2026-10-03: searched Tajikistan core Pamir Highway/Wakhan/Murghab/Karakul plus Kyrgyz Alay approaches. No trustworthy public live camera was found in the core Tajik Pamir locations during this pass. ERN therefore leaves the core Pamir as an explicit research gap rather than using prerecorded travel video. Three live-camera candidates were added around the broader Kyrgyz mountain/gateway side: Osh Sulaiman-Too, Batken city panorama and Ala-Archa National Park."
   ]
 }
