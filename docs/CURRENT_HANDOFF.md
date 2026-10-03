@@ -237,3 +237,10 @@ Commercial canonical-ID cleanup — 2026-10-03 04:10 UTC:
 - Commercial priority matrix was rebuilt from canonical place IDs so future business research focuses on genuinely uncovered healthy places instead of rediscovering already-covered destinations.
 - Future research-only candidate IDs remain untouched because they do not yet have canonical active-source place IDs.
 - Current top genuinely-uncovered healthy-place queue begins with: koli-lake-pielinen, meads-bay-anguilla, oeschinensee, amden-walensee, new-york-harbor, lauderdale-by-the-sea, maui-hale-pau-hana, st-johns-harbour, orpen-kruger, kijihiki-plateau, waikiki-south-shore, metung-gippsland-lakes.
+
+
+Verified-offer registry reconciliation — 2026-10-03 04:20 UTC:
+- Commercial opportunity registry was reconciled against data/travel-offers.json so already-verified offer places no longer appear falsely uncovered.
+- Synced verified coverage for Auckland Viaduct Harbour, New York Harbor, Coogee/Randwick (Sydney) and Waikiki Beach from existing verified tracked offers.
+- Verified-link opportunity count is now 16; exact-link queue 27; source-gated 37; source-gap-blocked 1.
+- Commercial matrix was rebuilt after synchronization, leaving only genuinely uncovered healthy places for future research.
