@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T11:25:00Z",
+  "generatedAt": "2026-10-03T11:22:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1948,6 +1948,39 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/87346-andorra-and-france-from-barcelona-one-day-tour/",
       "publicInventoryEvidence": "Klook currently sells Andorra-focused day tours from Barcelona and Andorra Caldea products.",
       "nextAction": "Generate one clean Andorra destination-level Klook tracked link in Travelpayouts if available; otherwise use no commercial placement rather than a generic unrelated link."
+    },
+    {
+      "id": "viator-reunion-island",
+      "destination": "La Réunion",
+      "placeIds": [
+        "reunion-boucan-canot",
+        "reunion-trou-deau",
+        "reunion-roches-noires",
+        "reunion-piton-fournaise"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Four new official searchable Réunion places now connect naturally to Viator's current Réunion inventory, including west-coast, island and Piton de la Fournaise tours.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Reunion-Island/d4395-ttd",
+      "publicInventoryEvidence": "Viator currently exposes Réunion Island inventory including west-coast discovery, full-island tours and Piton de la Fournaise volcano excursions.",
+      "nextAction": "Generate one Réunion island-level Viator tracked link and manually verify it; reuse across verified Réunion places rather than creating duplicate commercial density."
+    },
+    {
+      "id": "viator-azores-sao-miguel",
+      "destination": "São Miguel, Azores",
+      "placeIds": [
+        "azores-sao-miguel"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "The official São Miguel webcam collection now gives ERN a current discovery surface and Viator has substantial São Miguel hiking, volcano, food and island-tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Sao-Miguel/d50209-ttd",
+      "publicInventoryEvidence": "Viator currently lists São Miguel experiences including Sete Cidades, Lagoa do Fogo, hiking, snorkeling and food/wine products.",
+      "nextAction": "Generate one São Miguel destination-level Viator tracked link and manually verify it before public activation."
     }
   ]
 }
