@@ -689,3 +689,11 @@ Selective utility-stack checkpoint — 2026-10-03:
   - luggage storage: Radical Storage only for relevant major-city contexts.
 - Reward/cookie observations are owner-account snapshots, not revenue forecasts.
 - Exact tracked links remain manual/verified before public use; owner-action queue remains dormant.
+
+
+Post-200 Europe / traffic-unlock checkpoint — 2026-10-03:
+- New official-source research added for Hungary/Kékestető and Bratislava/Slovakia. Both remain human-playback gated and are not counted as production searchable yet.
+- Bratislava/Viator commercial planning is source-gated behind a working official city camera.
+- ERN now has a dedicated data/traffic-unlock-evidence-plan.json. It deliberately does not invent private Travelpayouts traffic thresholds.
+- Priority gated programs for later recheck: Trip.com, Hotels.com, Expedia, Agoda, GetYourGuide and DiscoverCars.
+- Current action is to grow real visitor traffic and utility using accessible programs rather than repeatedly probing locked catalog cards.
