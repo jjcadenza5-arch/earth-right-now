@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T15:35:00Z",
+  "generatedAt": "2026-10-03T16:05:00Z",
   "currentHealthyCountries": [
     "Andorra",
     "Anguilla",
@@ -9,9 +9,11 @@
     "Aruba",
     "Australia",
     "Austria",
+    "Barbados",
     "Belgium",
     "Brazil",
     "Canada",
+    "Cape Verde",
     "Chile",
     "Colombia",
     "Cook Islands",
@@ -39,6 +41,7 @@
     "Kazakhstan",
     "Kenya",
     "Kyrgyzstan",
+    "Maldives",
     "Mauritius",
     "Mexico",
     "Namibia",
@@ -191,6 +194,15 @@
         "Rarotonga International Airport"
       ],
       "state": "PROMOTED_SEARCHABLE_QUASI_LIVE"
+    },
+    {
+      "region": "Island quality batch — Indian Ocean / Caribbean / Atlantic",
+      "places": [
+        "Kuredu Island — Maldives",
+        "Paynes Bay — Barbados",
+        "Santa Maria Bay — Cape Verde"
+      ],
+      "state": "PROMOTED_TRUE_LIVE"
     }
   ],
   "nextQualityGaps": [
@@ -201,8 +213,8 @@
     "Middle East / North Africa civic and coastal gaps",
     "Central Asia quality upgrades outside deferred Pamir core"
   ],
-  "currentHealthyCountryCount": 64,
-  "currentHealthyDistinctPlaces": 287,
+  "currentHealthyCountryCount": 67,
+  "currentHealthyDistinctPlaces": 290,
   "countryCounts": {
     "New Zealand": 14,
     "United States": 26,
@@ -267,6 +279,9 @@
     "Netherlands": 2,
     "Germany": 7,
     "Denmark": 6,
-    "Cook Islands": 4
+    "Cook Islands": 4,
+    "Maldives": 1,
+    "Barbados": 1,
+    "Cape Verde": 1
   }
 }
