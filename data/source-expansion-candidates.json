@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:55:00Z",
+  "generatedAt": "2026-10-03T05:05:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -1777,6 +1777,45 @@
       "verifiedAt": "2026-10-03T04:55:00Z",
       "evidence": "USGS reported the Lake camera reinstalled in September 2026 and states the current camera view updates every 15 minutes.",
       "verification": "Official USGS refresh cadence verified; promoted as searchable LIVE_IMAGE only, not continuous live video."
+    },
+    {
+      "id": "mauna-loa-current-image",
+      "title": "Mauna Loa — Current View",
+      "country": "United States",
+      "region": "Hawaiʻi Island",
+      "provider": "U.S. Geological Survey / Hawaiian Volcano Observatory",
+      "sourcePage": "https://www.usgs.gov/volcanoes/mauna-loa/webcams",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:05:00Z",
+      "evidence": "USGS HVO labels the Mauna Loa webcam pages as current/live images and states the webcams operate 24/7, subject to weather and equipment interruptions.",
+      "verification": "Official observatory current/timestamped imagery verified; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "alaska-shishaldin-current-image",
+      "title": "Shishaldin Volcano — Alaska",
+      "country": "United States",
+      "region": "Aleutian Islands, Alaska",
+      "provider": "Alaska Volcano Observatory",
+      "sourcePage": "https://avo.alaska.edu/volcano/shishaldin/activity",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:05:00Z",
+      "evidence": "AVO's current Shishaldin activity page lists multiple webcam views with current timestamps, and the AVO webcam index exposes frequently refreshed dated images.",
+      "verification": "Official observatory current/timestamped imagery verified; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "alaska-augustine-current-image",
+      "title": "Augustine Volcano — Alaska",
+      "country": "United States",
+      "region": "Cook Inlet, Alaska",
+      "provider": "Alaska Volcano Observatory",
+      "sourcePage": "https://avo.alaska.edu/webcam/view/1036",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:05:00Z",
+      "evidence": "AVO's Augustine webcam page publishes a latest-image UTC timestamp and a rolling 12-hour view; current index timestamps show regular refreshed observations.",
+      "verification": "Official observatory current/timestamped imagery verified; promoted as searchable LIVE_IMAGE only."
     }
   ],
   "notes": [
@@ -1812,7 +1851,8 @@
     "2026-10-03 quasi-live policy used to promote six official INETER Nicaragua volcano cameras plus INSIVUMEH Fuego and Santiaguito into searchable LIVE_IMAGE coverage. These do not enter Watch Earth as continuous live video.",
     "2026-10-03 promoted six GeoNet New Zealand volcano/island camera places under quasi-live LIVE_IMAGE semantics: Ruapehu, Ngauruhoe, Tongariro, Taranaki Maunga, Raoul Island and Whakaari mainland views.",
     "2026-10-03 canonicalization removed five redundant generic Nicaragua candidate rows and retained six stronger direct-camera records (including Cerro Negro). This prevents duplicate destination inflation.",
-    "2026-10-03 added Biscuit Basin and renewed Yellowstone Lake from USGS/YVO as 15-minute quasi-live LIVE_IMAGE places. Existing Yellowstone business path should serve these places rather than create duplicate commercial placements."
+    "2026-10-03 added Biscuit Basin and renewed Yellowstone Lake from USGS/YVO as 15-minute quasi-live LIVE_IMAGE places. Existing Yellowstone business path should serve these places rather than create duplicate commercial placements.",
+    "2026-10-03 promoted one canonical searchable place each for Mauna Loa, Shishaldin and Augustine rather than inflating the catalog with multiple monitoring-camera angles."
   ],
   "researchGaps": [
     {
