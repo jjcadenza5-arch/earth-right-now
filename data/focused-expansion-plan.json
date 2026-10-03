@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:00:00Z",
+  "generatedAt": "2026-10-03T12:15:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 217,
@@ -172,7 +172,7 @@
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 7,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
     },
-    "currentOpportunityCount": 125,
+    "currentOpportunityCount": 126,
     "priorityRule": "Prefer exact destination/product fit inside existing active partners before broad generic destination links. Batch owner link generation rather than interrupting one destination at a time.",
     "tripComDecision": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATUS_CHANGE",
     "tripComReason": "Owner screenshots confirm Trip.com is visible in Travelpayouts but not yet practically unlocked; ERN should grow qualified traffic first.",
@@ -180,7 +180,7 @@
     "currentCommercialStates": {
       "VERIFIED_LINK_ADDED": 16,
       "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 101,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 7,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 8,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
     },
     "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
@@ -198,7 +198,10 @@
       "discovercars"
     ],
     "unlockRule": "Locked Travelpayouts programs are traffic-led future targets; do not repeatedly recheck. Use active partners and currently link-generation-capable utilities first.",
-    "availableProgramExpansionPlan": "data/available-program-expansion-plan.json"
+    "availableProgramExpansionPlan": "data/available-program-expansion-plan.json",
+    "preparedDirectViatorCandidates": 27,
+    "etoshaStatus": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+    "etoshaNote": "Official Namibia Wildlife Resorts evidence supports an Okaukuejo live-camera candidate, but ERN keeps it research-only until exact target playback is human-confirmed."
   },
   "safeguards": {
     "automaticPlacement": false,
