@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:38:00Z",
+  "generatedAt": "2026-10-03T12:00:00Z",
   "status": "OWNER_ACTION_DORMANT_UNTIL_BUNDLED_LINK_SESSION",
   "principle": "Bundle owner-only commercial actions; do not interrupt repeatedly.",
   "tripComCheck": {
@@ -50,7 +50,7 @@
       "id": "viator-madeira",
       "destination": "Madeira",
       "partner": "viator",
-      "reason": "One island-level link can serve four healthy Madeira places."
+      "reason": "One island-level Viator link can now serve nine healthy official Madeira searchable places."
     },
     {
       "priority": 7,
