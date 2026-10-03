@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T14:40:00Z",
+  "generatedAt": "2026-10-03T15:35:00Z",
   "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
-  "currentSearchableHealthyPlaces": 275,
+  "currentSearchableHealthyPlaces": 283,
   "unlockTargets": [
     "trip-com",
     "hotels-com",
@@ -27,13 +27,13 @@
     {
       "id": "destination-depth",
       "priority": "P1",
-      "action": "Maintain 275 strong searchable places with crawlable destination pages, aliases, country/region, source type, currentness, related ERN places and useful planning context. Replace or upgrade weak sources rather than growing count mechanically.",
+      "action": "Maintain 283 strong searchable places with crawlable destination pages, aliases, country/region, source type, currentness, related ERN places and useful planning context. Replace or upgrade weak sources rather than growing count mechanically.",
       "successSignal": "More non-owner organic search/AI discovery landing directly on destination pages."
     },
     {
       "id": "long-tail-geography",
       "priority": "P1",
-      "action": "Use the 275-place catalog to deepen underrepresented search demand and upgrade distinctive destinations to stronger live/current sources rather than adding repetitive places.",
+      "action": "Use the 283-place catalog to deepen long-tail search demand while preparing a supplemental Search-only catalog architecture before materially exceeding the runtime source-size ceiling.",
       "successSignal": "Broader search-query coverage across place names, islands, mountains, parks and current-condition searches."
     },
     {
@@ -63,14 +63,14 @@
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
   "note": "Scale target exceeded. Primary growth objective is now qualified organic discovery, deeper internal exploration, real planning clicks/conversions and better source quality; Travelpayouts unlock thresholds are private and must not be invented.",
-  "milestone": "275_SEARCHABLE_PLACES_QUALITY_MAINTENANCE_TRAFFIC_GROWTH",
+  "milestone": "283_SEARCHABLE_PLACES_QUALITY_TRAFFIC_AND_UNLOCK_GROWTH",
   "currentBusinessCoverage": {
-    "healthyPlaces": 275,
-    "placesWithCommercialPath": 242,
-    "intentionallyEditorialPlaces": 33,
+    "healthyPlaces": 283,
+    "placesWithCommercialPath": 249,
+    "intentionallyEditorialPlaces": 34,
     "unclassifiedHealthyPlaces": 0,
     "verifiedLinkPlaces": 19,
-    "exactLinkOpportunityBacklog": 157,
+    "exactLinkOpportunityBacklog": 161,
     "conversionShortlistSize": 15,
     "conversionShortlist": "data/commercial-conversion-shortlist.json"
   }
