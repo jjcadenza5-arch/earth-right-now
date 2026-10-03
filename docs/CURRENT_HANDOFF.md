@@ -125,3 +125,10 @@ Large-batch expansion checkpoint — 2026-10-03 03:55 UTC:
 - Boulders Beach/Viator is queued as an exact-link opportunity from an already-healthy ERN place.
 - Geography gaps, verification priority, commercial matrix, focused plan and dormant owner batch were refreshed after each expansion family.
 - Public ranking remains commercial-neutral; no automatic placement, rewriting, new partner activation or unverified source promotion occurred.
+
+
+Pamir Mountains gap — 2026-10-03:
+- ERN currently has no Pamir Mountains / Tajikistan live camera in the active source registry or research candidates.
+- Public-web research found official Tajikistan/Pamir destination material and current commercial Pamir Highway inventory, but no trustworthy source-specific always-current live camera suitable for promotion.
+- Pamir is now tracked as a P1 source gap in data/source-gap-watchlist.json, targeting Khorog, Murghab, Karakul Lake, Wakhan Valley and the Pamir Highway.
+- A future Viator Pamir opportunity is recorded, but it is explicitly blocked until ERN first obtains and verifies a genuine Pamir current/live source.
