@@ -3134,6 +3134,48 @@
       "promotedAt": "2026-10-03T15:30:00Z",
       "evidence": "Official page labels the latest/current Rarotonga International Airport image.",
       "verification": "Official current/latest-image page suitable for searchable LIVE_IMAGE semantics; not eligible for Watch Earth."
+    },
+    {
+      "id": "research-kuredu-maldives-live",
+      "title": "Kuredu Island — Maldives",
+      "country": "Maldives",
+      "region": "Lhaviyani Atoll",
+      "provider": "Kuredu Island Resort & Spa",
+      "sourcePage": "https://www.kuredu.com/webcams/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "promotedPlaceId": "kuredu-island-maldives",
+      "promotedAt": "2026-10-03T15:55:00Z",
+      "evidence": "Kuredu's official webcam page explicitly describes multiple views as live.",
+      "verification": "Provider-published live page; added LINK_ONLY."
+    },
+    {
+      "id": "research-barbados-paynes-bay-live",
+      "title": "Paynes Bay Beach — Barbados",
+      "country": "Barbados",
+      "region": "St. James",
+      "provider": "Beach View Hotel",
+      "sourcePage": "https://www.beachviewbarbados.com/live-webcam/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "promotedPlaceId": "barbados-paynes-bay",
+      "promotedAt": "2026-10-03T15:55:00Z",
+      "evidence": "Beach View Hotel explicitly identifies the Paynes Bay feed as a live webcam.",
+      "verification": "Provider-published live page; added LINK_ONLY."
+    },
+    {
+      "id": "research-cape-verde-santa-maria-bay-live",
+      "title": "Santa Maria Bay — Sal, Cape Verde",
+      "country": "Cape Verde",
+      "region": "Sal Island",
+      "provider": "Odjo d'Água Hotel",
+      "sourcePage": "https://odjodagua.cv/webcam/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "promotedPlaceId": "cape-verde-santa-maria-bay",
+      "promotedAt": "2026-10-03T15:55:00Z",
+      "evidence": "Odjo d'Água states its Santa Maria Bay webcam is live daily and 24 hours a day.",
+      "verification": "Provider-published live page; added LINK_ONLY."
     }
   ],
   "notes": [
@@ -3194,7 +3236,8 @@
     "2026-10-03 Aruba quality-gap research added Palm Beach and Eagle Beach as two real-place candidates from the official Aruba Tourism Authority live-webcam index. Multiple resort cameras are deliberately grouped by beach/place to avoid artificial destination inflation.",
     "2026-10-03 Taiwan/New Zealand expansion activated eight high-value places while twelve additional official quasi-live candidates were retained in research to preserve the strict 300 KB runtime budget.",
     "2026-10-03 quality swap: Gaomei Wetland promoted into searchable runtime; Foxton Beach moved to research-only to hold catalog size constant while improving visitor/business utility.",
-    "2026-10-03 Cook Islands batch: Aitutaki Lagoon, Tamanu Beach, Avaavaroa Beach and Rarotonga Airport promoted as searchable quasi-live LIVE_IMAGE places from official Cook Islands Airports current-image pages."
+    "2026-10-03 Cook Islands batch: Aitutaki Lagoon, Tamanu Beach, Avaavaroa Beach and Rarotonga Airport promoted as searchable quasi-live LIVE_IMAGE places from official Cook Islands Airports current-image pages.",
+    "2026-10-03 island quality batch promoted Kuredu Maldives, Paynes Bay Barbados and Santa Maria Bay Cape Verde from provider-published live webcam pages."
   ],
   "researchGaps": [
     {
