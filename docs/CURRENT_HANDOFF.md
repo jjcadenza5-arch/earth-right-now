@@ -263,3 +263,15 @@ Second quasi-live searchable batch — 2026-10-03:
 - All six new places default to featuredHold + watchHold, keeping Watch Earth stricter than Search/Explore.
 - Healthy/searchable baseline increases to 106 distinct places.
 - Nicaragua/Viator commercial path moved from source-gated to exact-link research; no tracked URL is invented or activated automatically.
+
+
+Central America quasi-live expansion — 2026-10-03:
+- Owner explicitly approved quasi-live searchable content: refreshed webcams/current images/recent provider-published pictures are acceptable when clearly labeled; Watch Earth remains stricter and continuous-live/current.
+- Added eight official-government LIVE_IMAGE searchable places without pretending they are continuous video:
+  - Nicaragua / INETER: San Cristóbal, Telica, Momotombo, Masaya, Concepción/Ometepe and Cerro Negro.
+  - Guatemala / INSIVUMEH: Volcán de Fuego and Santiaguito.
+- INETER documents real-time/current volcano images at 30-second/1-minute network cadence, with several detail pages around five-minute refresh; INSIVUMEH states its volcano platform updates every minute.
+- These sources are LINK_ONLY and searchable; they do not enter Watch Earth as live video.
+- New business paths from the already-active Viator relationship: Fuego/Antigua, Cerro Negro/León and Masaya/Nicaragua. Exact tracked-link verification remains mandatory.
+- Quasi-live discovery may unlock commercial planning, but commercial value cannot affect source truth, ranking or currentness.
+- Healthy/searchable distinct-place baseline after this batch: 112.
