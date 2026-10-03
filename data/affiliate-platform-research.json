@@ -131,8 +131,8 @@
     ],
     "programUrl": "https://www.travelpayouts.com/en/offers/hotels-com-partner-program/",
     "termsUrl": "https://www.travelpayouts.com/en/offers/hotels-com-partner-program/",
-    "programStatus": "PUBLIC_CATALOG_RESEARCH_ONLY_OWNER_ACCOUNT_CHECK_REQUIRED",
-    "applicationRequired": false,
+    "programStatus": "AVAILABLE_APPLICATION_REQUIRED",
+    "applicationRequired": true,
     "networkOrAccount": "Travelpayouts",
     "commissionEvidence": "Travelpayouts public catalog currently advertises Hotels.com accommodation inventory and a variable conventional-lodging reward. ERN does not assume owner-project availability or a fixed payout until checked in the ERN account.",
     "termsReviewedAt": "2026-10-03T01:30:00Z",
@@ -144,7 +144,8 @@
     "manualToolsOnly": true,
     "automaticPlacementAllowed": false,
     "automaticLinkRewritingAllowed": false,
-    "rankingAffectedByCommission": false
+    "rankingAffectedByCommission": false,
+    "researchNote": "Public catalog research only. ERN has not confirmed that this program is enabled or selectable in the owner's Travelpayouts project; owner account check is still required before any application/activation or tracked link."
   },
   {
     "id": "trip-com",
@@ -156,8 +157,8 @@
     ],
     "programUrl": "https://www.travelpayouts.com/en/offers/trip-com-affiliate-program/",
     "termsUrl": "https://www.travelpayouts.com/en/offers/trip-com-affiliate-program/",
-    "programStatus": "PUBLIC_CATALOG_RESEARCH_ONLY_OWNER_ACCOUNT_CHECK_REQUIRED",
-    "applicationRequired": false,
+    "programStatus": "AVAILABLE_APPLICATION_REQUIRED",
+    "applicationRequired": true,
     "networkOrAccount": "Travelpayouts",
     "commissionEvidence": "Travelpayouts public catalog currently lists Trip.com for hotels and other travel products. ERN stores no assumed reward rate; exact availability, terms and tools must be checked in the owner project before activation.",
     "termsReviewedAt": "2026-10-03T01:30:00Z",
@@ -169,6 +170,7 @@
     "manualToolsOnly": true,
     "automaticPlacementAllowed": false,
     "automaticLinkRewritingAllowed": false,
-    "rankingAffectedByCommission": false
+    "rankingAffectedByCommission": false,
+    "researchNote": "Public catalog research only. ERN has not confirmed that this program is enabled or selectable in the owner's Travelpayouts project; owner account check is still required before any application/activation or tracked link."
   }
 ]
