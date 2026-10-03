@@ -12,9 +12,9 @@ function commonReasons(raw,now,maxAgeDays){
  return{reasons,ageDays};
 }
 function researchReasons(raw){
- const reasons=[];
- if(!String(raw?.programStatus||"").startsWith("AVAILABLE_"))reasons.push("PROGRAM_NOT_RESEARCH_AVAILABLE");
- if(raw?.applicationRequired!==true)reasons.push("APPLICATION_REQUIRED_MUST_BE_TRUE");
+ const reasons=[],status=String(raw?.programStatus||""),projectCheck=status.startsWith("AVAILABLE_PROJECT_");
+ if(!status.startsWith("AVAILABLE_"))reasons.push("PROGRAM_NOT_RESEARCH_AVAILABLE");
+ if(projectCheck?raw?.applicationRequired!==false:raw?.applicationRequired!==true)reasons.push(projectCheck?"PROJECT_STATUS_CHECK_MUST_NOT_REQUIRE_APPLICATION":"APPLICATION_REQUIRED_MUST_BE_TRUE");
  if(raw?.relationshipActive!==false)reasons.push("RELATIONSHIP_MUST_BE_INACTIVE");
  if(raw?.credentialsConfigured!==false)reasons.push("CREDENTIALS_MUST_BE_FALSE");
  if(raw?.publicActivationAllowed!==false)reasons.push("PUBLIC_ACTIVATION_MUST_BE_FALSE");
