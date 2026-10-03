@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T05:05:00Z",
+  "generatedAt": "2026-10-03T05:15:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -1816,6 +1816,58 @@
       "verifiedAt": "2026-10-03T05:05:00Z",
       "evidence": "AVO's Augustine webcam page publishes a latest-image UTC timestamp and a rolling 12-hour view; current index timestamps show regular refreshed observations.",
       "verification": "Official observatory current/timestamped imagery verified; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "ecuador-sangay-current-image",
+      "title": "Sangay Volcano — Current Views",
+      "country": "Ecuador",
+      "region": "Morona Santiago",
+      "provider": "Instituto Geofísico EPN",
+      "sourcePage": "https://www.igepn.edu.ec/sangay-camaras",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:15:00Z",
+      "evidence": "IG-EPN maintains a current Sangay camera page with multiple monitoring cameras; its monitoring documentation says visual/thermal network acquisition varies from about 1 minute to 1 hour depending on surveillance needs.",
+      "verification": "Official scientific/government current-image network verified; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "ecuador-tungurahua-current-image",
+      "title": "Tungurahua Volcano — Current Views",
+      "country": "Ecuador",
+      "region": "Tungurahua",
+      "provider": "Instituto Geofísico EPN",
+      "sourcePage": "https://www.igepn.edu.ec/tungurahua-camaras",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:15:00Z",
+      "evidence": "IG-EPN's current Tungurahua camera page lists three monitoring views; its network documentation states camera acquisition frequency can range from about 1 minute to 1 hour.",
+      "verification": "Official scientific/government current-image network verified; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "colombia-nevado-del-ruiz-current-image",
+      "title": "Nevado del Ruiz — Current Views",
+      "country": "Colombia",
+      "region": "Caldas / Tolima",
+      "provider": "Servicio Geológico Colombiano",
+      "sourcePage": "https://amenazas.sgc.gov.co/ovsm/camaras/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:15:00Z",
+      "evidence": "SGC exposes online/current volcanic surveillance cameras for Nevado del Ruiz and explicitly describes its camera service as real-time monitoring.",
+      "verification": "Official scientific/government current-image network verified; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "colombia-galeras-current-image",
+      "title": "Galeras Volcano — Current Views",
+      "country": "Colombia",
+      "region": "Nariño",
+      "provider": "Servicio Geológico Colombiano",
+      "sourcePage": "https://www2.sgc.gov.co/sgc/volcanes/VolcanGaleras/Paginas/imagenes-en-linea.aspx",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:15:00Z",
+      "evidence": "SGC maintains an online-images page for Galeras listing multiple surveillance camera stations; ERN treats this conservatively as current/quasi-live imagery rather than continuous video.",
+      "verification": "Official scientific/government current-image network verified; promoted as searchable LIVE_IMAGE only."
     }
   ],
   "notes": [
@@ -1852,7 +1904,8 @@
     "2026-10-03 promoted six GeoNet New Zealand volcano/island camera places under quasi-live LIVE_IMAGE semantics: Ruapehu, Ngauruhoe, Tongariro, Taranaki Maunga, Raoul Island and Whakaari mainland views.",
     "2026-10-03 canonicalization removed five redundant generic Nicaragua candidate rows and retained six stronger direct-camera records (including Cerro Negro). This prevents duplicate destination inflation.",
     "2026-10-03 added Biscuit Basin and renewed Yellowstone Lake from USGS/YVO as 15-minute quasi-live LIVE_IMAGE places. Existing Yellowstone business path should serve these places rather than create duplicate commercial placements.",
-    "2026-10-03 promoted one canonical searchable place each for Mauna Loa, Shishaldin and Augustine rather than inflating the catalog with multiple monitoring-camera angles."
+    "2026-10-03 promoted one canonical searchable place each for Mauna Loa, Shishaldin and Augustine rather than inflating the catalog with multiple monitoring-camera angles.",
+    "2026-10-03 expanded underrepresented South America with official scientific/government quasi-live sources for Sangay, Tungurahua, Nevado del Ruiz and Galeras."
   ],
   "researchGaps": [
     {
