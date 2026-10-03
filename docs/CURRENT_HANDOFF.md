@@ -667,3 +667,12 @@ Travelpayouts access-tier checkpoint — 2026-10-03:
 - Searchable-place research added two new-country lanes: Slovakia (Jasná/Chopok) and Bulgaria (Bansko, Borovets), using official resort camera families and grouped by real destination.
 - Post-200 source growth is now quality-led via data/post200-quality-priority.json: new countries, true-live upgrades, geographic balance, and one-place-country depth before raw count.
 - Owner-action queue remains dormant; no owner interruption is required yet.
+
+
+Bulgaria / Serbia quasi-live checkpoint — 2026-10-03:
+- Promoted three official resort-camera destinations into searchable production under the owner-approved quasi-live policy: Bansko, Borovets and Kopaonik.
+- Truth is LIVE_IMAGE/searchable-current imagery, not continuous LIVE VIDEO; all three remain featuredHold/watchHold by default.
+- Multiple resort camera angles are grouped under one real destination each to avoid artificial place-count inflation.
+- Healthy searchable baseline moves from 308 to 311 distinct places; country coverage grows from 69 to 71 with Bulgaria and Serbia added.
+- Bansko and Borovets Viator paths moved from source-gated to exact-link/account-search state; Kopaonik/Viator research was added with a fail-closed rule if no clean Kopaonik destination link exists.
+- Jasná/Slovakia remains research-only because the official page advertises live streams but actual playback still needs human confirmation.
