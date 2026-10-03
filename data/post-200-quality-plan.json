@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T10:50:00Z",
+  "current": {
+    "sourceRecords": 210,
+    "healthyRecords": 206,
+    "healthyDistinctPlaces": 202,
+    "countries": 52,
+    "trueLiveOrExternalLivePlaces": 79,
+    "quasiLiveOnlyPlaces": 123
+  },
+  "priorities": [
+    "Protect freshness and source truth for all current 202 healthy searchable places.",
+    "Prefer upgrading quasi-live-only destinations to true live/external live when trustworthy official sources become available.",
+    "Add new places primarily when they improve geographic diversity, provider diversity, or a genuine visitor-use gap.",
+    "Do not chase raw place count beyond 200 as a KPI.",
+    "Keep Watch Earth stricter than Search/Explore."
+  ],
+  "underrepresentedCountries": [
+    {
+      "country": "Anguilla",
+      "places": 1
+    },
+    {
+      "country": "Argentina",
+      "places": 1
+    },
+    {
+      "country": "Aruba",
+      "places": 1
+    },
+    {
+      "country": "Brazil",
+      "places": 1
+    },
+    {
+      "country": "Chile",
+      "places": 1
+    },
+    {
+      "country": "Croatia",
+      "places": 1
+    },
+    {
+      "country": "Estonia",
+      "places": 1
+    },
+    {
+      "country": "France",
+      "places": 1
+    },
+    {
+      "country": "Indonesia",
+      "places": 1
+    },
+    {
+      "country": "Ireland",
+      "places": 1
+    },
+    {
+      "country": "Kazakhstan",
+      "places": 1
+    },
+    {
+      "country": "Kenya",
+      "places": 1
+    },
+    {
+      "country": "Nepal",
+      "places": 1
+    },
+    {
+      "country": "Romania",
+      "places": 1
+    },
+    {
+      "country": "Singapore",
+      "places": 1
+    },
+    {
+      "country": "Slovenia",
+      "places": 1
+    },
+    {
+      "country": "South Korea",
+      "places": 1
+    },
+    {
+      "country": "Thailand",
+      "places": 1
+    },
+    {
+      "country": "Türkiye",
+      "places": 1
+    },
+    {
+      "country": "Colombia",
+      "places": 2
+    },
+    {
+      "country": "Greece",
+      "places": 2
+    },
+    {
+      "country": "Guatemala",
+      "places": 2
+    },
+    {
+      "country": "Kyrgyzstan",
+      "places": 2
+    },
+    {
+      "country": "Mauritius",
+      "places": 2
+    },
+    {
+      "country": "Mexico",
+      "places": 2
+    },
+    {
+      "country": "United Kingdom",
+      "places": 2
+    }
+  ],
+  "providerRule": "Avoid creating new dependence on a single provider family; new research should improve provider diversity when quality is comparable.",
+  "businessRule": "Commercial value may help prioritize maintenance/research only after truth and visitor utility are satisfied; it never changes ranking or truth state."
+}
