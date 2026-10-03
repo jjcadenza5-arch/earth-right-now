@@ -179,3 +179,10 @@ Scenic-place commercial expansion — 2026-10-03:
 - Added exact-link research paths for Flåm/Aurlandsfjord, Addo Elephant National Park, Chamonix/Mont Blanc, Bergen and Pico Island using the already-active Viator relationship.
 - Each remains account-search / exact-link gated; no URL is invented and no public placement occurs until owner-generated tracked-link verification.
 - Commercial priority matrix was refreshed so newly queued places stop appearing as generic uncovered research.
+
+
+Istanbul / Bali world-gap batch — 2026-10-03:
+- Added official Istanbul Metropolitan Municipality touristic-camera candidates for Sultanahmet and a Bosphorus-side view family.
+- Added official Denpasar City ATCS real-time CCTV as a Bali urban live-source candidate; only a visually useful camera should be promoted.
+- Added source-gated Klook + Viator business paths for Istanbul and Klook/Viator paths for Bali/Denpasar, with duplicate commercial density explicitly discouraged.
+- Source verification priority and focused expansion plan refreshed.
