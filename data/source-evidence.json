@@ -1293,5 +1293,120 @@
       "rightsBasis": "Provider-published Namibia webcam service; ERN keeps a LINK_ONLY handoff and does not infer reuse rights.",
       "coordinateSourceUrl": "https://skpnamibia.de/webcams/"
     }
+  },
+  "prague-petrin-tower": {
+    "freshnessEvidence": "Prague City Tourism's official Prague Towers page directly links the Petřín live camera to the Prague Visitor Pass Panomax 360 endpoint. Owner previously reported the Prague camera family looked beautiful, but exact-target playback remains to be spot-checked.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Prague City Tourism's official Prague Towers page directly links the Petřín live camera to the Prague Visitor Pass Panomax 360 endpoint. Owner previously reported the Prague camera family..."
+  },
+  "prague-old-town-hall": {
+    "freshnessEvidence": "Official Prague City Tourism page directly links Old Town Hall under 'our cameras look live around Prague' to YouTube video Agep3Ts7hpI.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Official Prague City Tourism page directly links Old Town Hall under 'our cameras look live around Prague' to YouTube video Agep3Ts7hpI."
+  },
+  "prague-old-town-bridge-tower": {
+    "freshnessEvidence": "Official Prague City Tourism page links the Old Town Bridge Tower camera via CamStreamer to YouTube video 1zRzcYmipMs.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Official Prague City Tourism page links the Old Town Bridge Tower camera via CamStreamer to YouTube video 1zRzcYmipMs."
+  },
+  "prague-powder-tower": {
+    "freshnessEvidence": "Official Prague City Tourism page directly links Powder Tower to YouTube video 07U63AB60g4.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Official Prague City Tourism page directly links Powder Tower to YouTube video 07U63AB60g4."
+  },
+  "prague-st-nicholas-bell-tower": {
+    "freshnessEvidence": "Official Prague City Tourism page directly links St. Nicholas Bell Tower to YouTube video kfygpyeJHRg.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Official Prague City Tourism page directly links St. Nicholas Bell Tower to YouTube video kfygpyeJHRg."
+  },
+  "prague-lesser-town-bridge-tower": {
+    "freshnessEvidence": "Official Prague City Tourism page directly links Lesser Town Bridge Tower to YouTube video RLvNkbRLrIA.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Official Prague City Tourism page directly links Lesser Town Bridge Tower to YouTube video RLvNkbRLrIA."
+  },
+  "levi-ski-resort": {
+    "freshnessEvidence": "Visit Finland describes a live view of the slopes, lifts and fells.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Visit Finland describes a live view of the slopes, lifts and fells."
+  },
+  "crans-montana-la-nationale": {
+    "freshnessEvidence": "Switzerland Tourism publishes an HD Live panorama page for Crans-Montana.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Switzerland Tourism publishes an HD Live panorama page for Crans-Montana."
+  },
+  "schynige-platte": {
+    "freshnessEvidence": "Switzerland Tourism publishes an HD Live panorama page for Schynige Platte.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Switzerland Tourism publishes an HD Live panorama page for Schynige Platte."
+  },
+  "randa-valais": {
+    "freshnessEvidence": "Switzerland Tourism publishes an HD Live panorama page for Randa.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Switzerland Tourism publishes an HD Live panorama page for Randa."
+  },
+  "celerina-engadin": {
+    "freshnessEvidence": "Switzerland Tourism publishes an HD Live panorama page for Celerina.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Switzerland Tourism publishes an HD Live panorama page for Celerina."
+  },
+  "murren-edelweiss": {
+    "freshnessEvidence": "Switzerland Tourism publishes an HD Live panorama page for Mürren.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Switzerland Tourism publishes an HD Live panorama page for Mürren."
+  },
+  "engelberg-fuerenalp": {
+    "freshnessEvidence": "Switzerland Tourism publishes an HD Live panorama page for Fürenalp.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Switzerland Tourism publishes an HD Live panorama page for Fürenalp."
+  },
+  "wengen-bellevue": {
+    "freshnessEvidence": "Switzerland Tourism publishes an HD Live panorama page for Wengen.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Switzerland Tourism publishes an HD Live panorama page for Wengen."
+  },
+  "seoul-gwanghwamun-plaza": {
+    "freshnessEvidence": "Official Live Seoul page lists Gwanghwamun Plaza under 24-hour live coverage.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Official Live Seoul page lists Gwanghwamun Plaza under 24-hour live coverage."
+  },
+  "seoul-cheonggye-plaza": {
+    "freshnessEvidence": "Official Live Seoul page lists Cheonggyecheon under 24-hour live coverage.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "Official Live Seoul page lists Cheonggyecheon under 24-hour live coverage."
+  },
+  "karakol-ski-base": {
+    "freshnessEvidence": "KG Camera exposes a direct Karakol Ski Base camera page at the lower lift and states its video surveillance runs without archiving with a 20-second delay. The official Karakol Ski Base also publishes a camera page.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "KG Camera exposes a direct Karakol Ski Base camera page at the lower lift and states its video surveillance runs without archiving with a 20-second delay. The official Karakol Ski Base al..."
+  },
+  "osh-sulaiman-too": {
+    "freshnessEvidence": "KG Camera exposes a direct camera at the foot of Sulaiman-Too in Osh and states its video surveillance is unarchived with about a 20-second delay.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "KG Camera exposes a direct camera at the foot of Sulaiman-Too in Osh and states its video surveillance is unarchived with about a 20-second delay."
+  },
+  "naryn-central-square": {
+    "freshnessEvidence": "KG Camera describes the camera as the central square of Naryn and applies its network-wide unarchived, short-delay live-surveillance policy.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "KG Camera describes the camera as the central square of Naryn and applies its network-wide unarchived, short-delay live-surveillance policy."
+  },
+  "too-ashu-north": {
+    "freshnessEvidence": "This is a high-altitude road/mountain camera on the Bishkek–Osh route; KG Camera states its surveillance feeds are unarchived and delayed by about 20 seconds.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "This is a high-altitude road/mountain camera on the Bishkek–Osh route; KG Camera states its surveillance feeds are unarchived and delayed by about 20 seconds."
+  },
+  "suusamyr-valley": {
+    "freshnessEvidence": "The Suusamyr page identifies a high-elevation valley camera; the network states its surveillance feeds are unarchived with a short delay.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "The Suusamyr page identifies a high-elevation valley camera; the network states its surveillance feeds are unarchived with a short delay."
+  },
+  "balykchy-north-entry": {
+    "freshnessEvidence": "The Balykchy camera covers the roundabout at the city's entrance and can serve as a current gateway/road condition view for Issyk-Kul.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "The Balykchy camera covers the roundabout at the city's entrance and can serve as a current gateway/road condition view for Issyk-Kul."
+  },
+  "bishkek-ala-too-square": {
+    "freshnessEvidence": "The network identifies this as the central square of Kyrgyzstan's capital and applies the same unarchived short-delay live-surveillance policy.",
+    "rightsBasis": "Provider-published current/live camera page or direct camera target; ERN links externally and does not infer image reuse, embed or restream rights.",
+    "story": "The network identifies this as the central square of Kyrgyzstan's capital and applies the same unarchived short-delay live-surveillance policy."
   }
 }
