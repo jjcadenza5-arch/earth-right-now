@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:38:00Z",
+  "generatedAt": "2026-10-03T03:55:00Z",
   "principles": {
     "existingPartnersFirst": true,
     "exactTrackedLinkRequired": true,
@@ -10,8 +10,8 @@
     "automaticLinkRewriting": false
   },
   "currentVerifiedOpportunityCount": 12,
-  "exactLinkQueueCount": 18,
-  "sourceGatedQueueCount": 18,
+  "exactLinkQueueCount": 23,
+  "sourceGatedQueueCount": 27,
   "researchPriority": [
     {
       "placeId": "koli-lake-pielinen",
@@ -46,26 +46,6 @@
       ],
       "suggestedExistingPartners": [
         "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "flam-aurlandsfjord",
-      "title": "Flåm & Aurlandsfjord — Live Views",
-      "country": "Norway",
-      "region": "Flåm / Aurland",
-      "quality": 97,
-      "moment": 98,
-      "categories": [
-        "Beautiful Earth",
-        "Cities & Harbours",
-        "Useful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "welcome-pickups"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
@@ -190,23 +170,6 @@
       "publicActivationAllowed": false
     },
     {
-      "placeId": "chamonix-mont-blanc",
-      "title": "Chamonix – Mont-Blanc",
-      "country": "France",
-      "region": "Chamonix",
-      "quality": 91,
-      "moment": 94,
-      "categories": [
-        "Mountains & Snow"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
       "placeId": "maui-hale-pau-hana",
       "title": "Maui — Hale Pau Hana Surf",
       "country": "United States",
@@ -238,25 +201,6 @@
       "suggestedExistingPartners": [
         "viator",
         "welcome-pickups"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "addo-elephant-national-park",
-      "title": "Addo Elephant National Park",
-      "country": "South Africa",
-      "region": "Eastern Cape",
-      "quality": 91,
-      "moment": 94,
-      "categories": [
-        "Wildlife",
-        "Parks & Scenic",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
@@ -415,23 +359,6 @@
       "publicActivationAllowed": false
     },
     {
-      "placeId": "lajes-pico-harbour",
-      "title": "Lajes do Pico Harbour",
-      "country": "Portugal",
-      "region": "Pico Island",
-      "quality": 92,
-      "moment": 91,
-      "categories": [
-        "Beaches & Water"
-      ],
-      "suggestedExistingPartners": [
-        "viator"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
       "placeId": "taitung-jinzun",
       "title": "Taitung Jinzun — Pacific Coast",
       "country": "Taiwan",
@@ -445,26 +372,6 @@
       "suggestedExistingPartners": [
         "viator",
         "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "bergen-ulriken",
-      "title": "Bergen — Ulriken Mountain",
-      "country": "Norway",
-      "region": "Vestland",
-      "quality": 90,
-      "moment": 92,
-      "categories": [
-        "Mountains",
-        "Cities & Harbours",
-        "Beautiful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "welcome-pickups"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
@@ -510,6 +417,6 @@
       "publicActivationAllowed": false
     }
   ],
-  "note": "Counts reconciled after Central Asia source/business expansion. Research priority only; exact-link and source-verification gates remain mandatory.",
+  "note": "Refreshed after large-batch expansion. Rows disappear once a place has a concrete opportunity path; remaining rows are research prompts only.",
   "sourceGapBlockedCount": 1
 }
