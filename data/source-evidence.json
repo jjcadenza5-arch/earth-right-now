@@ -1976,6 +1976,22 @@
       "freshnessEvidence": "Strong quasi-live/search candidate held out of the active runtime only to preserve ERN's strict 300 KB catalog budget.",
       "coordinateNote": "Coordinates are representative place references, not claimed camera positions.",
       "checkedAt": "2026-10-03T15:50:00Z"
+    },
+    {
+      "id": "aruba-palm-beach-current",
+      "sourceUrl": "https://www.aruba.com/us/live-webcams-and-channels",
+      "rightsBasis": "Official Aruba Tourism Authority webcam index; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Aruba Tourism Authority explicitly lists Palm Beach/Eagle Beach resort webcams as live webcams; ERN conservatively exposes them as LIVE_IMAGE until direct playback is separately reviewed.",
+      "coordinateNote": "Representative beach-place coordinate, not claimed camera position.",
+      "checkedAt": "2026-10-03T15:55:00Z"
+    },
+    {
+      "id": "aruba-eagle-beach-current",
+      "sourceUrl": "https://www.aruba.com/us/live-webcams-and-channels",
+      "rightsBasis": "Official Aruba Tourism Authority webcam index; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Aruba Tourism Authority explicitly lists Palm Beach/Eagle Beach resort webcams as live webcams; ERN conservatively exposes them as LIVE_IMAGE until direct playback is separately reviewed.",
+      "coordinateNote": "Representative beach-place coordinate, not claimed camera position.",
+      "checkedAt": "2026-10-03T15:55:00Z"
     }
   ]
 }
