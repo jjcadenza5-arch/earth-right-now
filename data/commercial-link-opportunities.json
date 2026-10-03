@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T05:40:00Z",
+  "generatedAt": "2026-10-03T05:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -491,7 +491,7 @@
       "reason": "Official Taipei Live Taiwan candidates can naturally connect to Klook's strong Taipei activity inventory once at least one source is verified.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "generate one Taipei-level Klook tracked link and reuse it across verified Taipei places.",
-      "sourceGateResolvedAt": "2026-10-03T06:15:00Z"
+      "sourceGateResolvedAt": "2026-10-03T05:30:00Z"
     },
     {
       "id": "klook-taichung-future",
@@ -521,7 +521,7 @@
       "reason": "Tainan's sunrise and salt-field live views create a strong See Live → Explore cultural landscape path; Klook is already an active ERN partner.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "generate one Tainan destination-level Klook tracked link and manually verify it.",
-      "sourceGateResolvedAt": "2026-10-03T06:15:00Z"
+      "sourceGateResolvedAt": "2026-10-03T05:30:00Z"
     },
     {
       "id": "viator-hualien-future",
@@ -535,7 +535,7 @@
       "reason": "Shitiping's official east-coast live view can naturally lead into Hualien/East Coast sightseeing and nature activities.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "search Viator partner tools for a clean Hualien/East Coast destination-level link; do not use a generic Taiwan page.",
-      "sourceGateResolvedAt": "2026-10-03T06:15:00Z"
+      "sourceGateResolvedAt": "2026-10-03T05:30:00Z"
     },
     {
       "id": "viator-aruba",
@@ -1081,7 +1081,7 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Panama-City/d950-ttd",
       "publicInventoryEvidence": "Current Viator Panama City inventory includes canal sightseeing, Miraflores Visitor Center, Gatún Lake and tours covering Agua Clara/Gatún Locks.",
       "nextAction": "Generate one Panama Canal destination-level Viator partner link and manually verify it; reuse across verified lock places without duplicate commercial density.",
-      "sourceGateResolvedAt": "2026-10-03T06:25:00Z"
+      "sourceGateResolvedAt": "2026-10-03T05:30:00Z"
     },
     {
       "id": "viator-nairobi-national-park-future",
