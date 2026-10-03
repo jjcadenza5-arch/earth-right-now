@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T11:15:00Z",
+  "strategy": "Traffic-led unlock. Do not repeatedly apply or recheck locked programs. Improve visitor utility, searchable-place quality and qualified outbound intent first; recheck only after material traffic/engagement change or Travelpayouts status notification.",
+  "activeNow": [
+    {
+      "id": "viator",
+      "name": "Viator Partner Program",
+      "intents": [
+        "activities",
+        "tickets"
+      ],
+      "network": "Viator Partner Program"
+    },
+    {
+      "id": "travelpayouts",
+      "name": "Travelpayouts — Earthrightnow Project",
+      "intents": [
+        "activities",
+        "tickets",
+        "transport",
+        "services"
+      ],
+      "network": "Travelpayouts Earthrightnow Project"
+    }
+  ],
+  "futureUnlock": [
+    {
+      "id": "trip-com",
+      "name": "Trip.com via Travelpayouts",
+      "intents": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "lane": "STAYS",
+      "priority": 100,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "hotels-com",
+      "name": "Hotels.com via Travelpayouts",
+      "intents": [
+        "stay"
+      ],
+      "lane": "STAYS",
+      "priority": 95,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "booking-com",
+      "name": "Booking.com via Travelpayouts",
+      "intents": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "lane": "STAYS",
+      "priority": 94,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "agoda",
+      "name": "Agoda via Travelpayouts",
+      "intents": [
+        "stay",
+        "activities"
+      ],
+      "lane": "STAYS",
+      "priority": 92,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "expedia",
+      "name": "Expedia via Travelpayouts",
+      "intents": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "lane": "STAYS",
+      "priority": 90,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "getyourguide",
+      "name": "GetYourGuide via Travelpayouts",
+      "intents": [
+        "activities"
+      ],
+      "lane": "ACTIVITIES",
+      "priority": 88,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "tripadvisor-experiences",
+      "name": "Tripadvisor Experiences via Travelpayouts",
+      "intents": [
+        "activities"
+      ],
+      "lane": "ACTIVITIES",
+      "priority": 84,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "traveloka",
+      "name": "Traveloka via Travelpayouts",
+      "intents": [
+        "stay",
+        "transport"
+      ],
+      "lane": "STAYS",
+      "priority": 82,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "hostelworld",
+      "name": "Hostelworld via Travelpayouts",
+      "intents": [
+        "stay"
+      ],
+      "lane": "STAYS",
+      "priority": 80,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "vrbo",
+      "name": "Vrbo via Travelpayouts",
+      "intents": [
+        "stay"
+      ],
+      "lane": "STAYS",
+      "priority": 78,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "omio",
+      "name": "Omio via Travelpayouts",
+      "intents": [
+        "transport"
+      ],
+      "lane": "TRANSPORT",
+      "priority": 76,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "12go",
+      "name": "12GO via Travelpayouts",
+      "intents": [
+        "transport"
+      ],
+      "lane": "TRANSPORT",
+      "priority": 75,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "discovercars",
+      "name": "DiscoverCars via Travelpayouts",
+      "intents": [
+        "transport"
+      ],
+      "lane": "TRANSPORT",
+      "priority": 74,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "rakuten-travel-intl",
+      "name": "Rakuten Travel (INTL) via Travelpayouts",
+      "intents": [
+        "stay",
+        "transport"
+      ],
+      "lane": "STAYS",
+      "priority": 72,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster via Travelpayouts",
+      "intents": [
+        "tickets",
+        "activities"
+      ],
+      "lane": "ACTIVITIES",
+      "priority": 68,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "vio-com",
+      "name": "Vio.com via Travelpayouts",
+      "intents": [
+        "stay"
+      ],
+      "lane": "STAYS",
+      "priority": 66,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "visitorscoverage",
+      "name": "VisitorsCoverage via Travelpayouts",
+      "intents": [
+        "services"
+      ],
+      "lane": "SERVICES",
+      "priority": 58,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    },
+    {
+      "id": "insubuy",
+      "name": "Insubuy via Travelpayouts",
+      "intents": [
+        "services"
+      ],
+      "lane": "SERVICES",
+      "priority": 56,
+      "state": "VISIBLE_TRAFFIC_GATED_OR_NOT_UNLOCKED",
+      "ownerEvidenceAt": "2026-10-03T10:25:00Z",
+      "action": "WAIT_FOR_TRAFFIC_OR_ACCOUNT_STATE_CHANGE",
+      "recheckTrigger": "Material ERN traffic/engagement growth, first meaningful affiliate conversions, or explicit Travelpayouts unlock/status change.",
+      "activationRule": "No public placement until account unlock/activation is confirmed and exact tracked-link capability is verified."
+    }
+  ],
+  "unlockPhases": [
+    {
+      "phase": "A",
+      "goal": "Monetize current traffic with already-active partners",
+      "focus": [
+        "viator",
+        "klook",
+        "tiqets",
+        "welcome-pickups"
+      ]
+    },
+    {
+      "phase": "B",
+      "goal": "Unlock broad stay inventory",
+      "focus": [
+        "trip-com",
+        "hotels-com",
+        "booking-com",
+        "agoda",
+        "expedia"
+      ]
+    },
+    {
+      "phase": "C",
+      "goal": "Broaden activities and transport after traffic proves out",
+      "focus": [
+        "getyourguide",
+        "tripadvisor-experiences",
+        "traveloka",
+        "omio",
+        "12go",
+        "discovercars"
+      ]
+    },
+    {
+      "phase": "D",
+      "goal": "Add niche travel utilities only when demand exists",
+      "focus": [
+        "hostelworld",
+        "vrbo",
+        "ticketmaster",
+        "rakuten-travel-intl",
+        "visitorscoverage",
+        "insubuy",
+        "vio-com"
+      ]
+    }
+  ],
+  "safeguards": {
+    "paidRanking": false,
+    "automaticPlacement": false,
+    "automaticLinkRewriting": false,
+    "unlockStatusMustBeOwnerOrPlatformConfirmed": true,
+    "noTrafficFabrication": true,
+    "noForcedApplications": true
+  }
+}
