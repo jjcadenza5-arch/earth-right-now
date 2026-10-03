@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T11:30:00Z",
+  "generatedAt": "2026-10-03T11:38:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -91,7 +91,14 @@
       "getyourguide",
       "tripadvisor-experiences",
       "traveloka"
-    ]
+    ],
+    "currentCommercialOpportunityStates": {
+      "VERIFIED_LINK_ADDED": 16,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 101,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 7,
+      "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
+    },
+    "availableUtilityExpansionPlan": "data/available-program-expansion-plan.json"
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -106,7 +113,11 @@
     "Owner-account screenshot audit confirmed many additional Travelpayouts programs now expose Generate links controls.",
     "Travelpayouts locked-program catalog reviewed; traffic-first unlock strategy adopted on 2026-10-03",
     "Affiliate state model now separates active partners, account-side link tools and traffic-gated/research programs",
-    "Traffic-gated Travelpayouts roadmap recorded"
+    "Traffic-gated Travelpayouts roadmap recorded",
+    "Owner screenshots confirmed broad Travelpayouts future-program visibility and practical traffic gating",
+    "Traffic-unlock roadmap now prioritizes Trip.com/Hotels.com/Booking.com/Agoda/Expedia after meaningful traction",
+    "Available-program expansion plan created for Airalo, Kiwitaxi, Go City, Radical Storage and Aviasales before locked stay programs unlock",
+    "Official La Réunion and Azores quasi-live places expanded searchable coverage to 212 healthy distinct places"
   ],
   "humanOnlyRemaining": [
     {
@@ -136,7 +147,7 @@
     "Accommodation links remain downstream from Earth discovery and cannot affect ranking",
     "Do not repeatedly ask owner to recheck locked Travelpayouts programs; recheck only on meaningful traffic/account-state change"
   ],
-  "currentHealthySearchablePlaces": 202,
+  "currentHealthySearchablePlaces": 212,
   "releaseHealth": {
     "pagesDeployment": "SUCCESS_2026-10-03T10:54Z",
     "operationsCheck": "SUCCESS_2026-10-03T10:54Z",
