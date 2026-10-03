@@ -213,3 +213,14 @@ Candidate-state reconciliation:
   "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 15
 }
 ```
+
+
+## Quasi-live searchable tranche — 05:15 UTC
+
+- ERN now has **161 healthy/searchable distinct places**.
+- Search/Explore may include clearly labeled quasi-live LIVE_IMAGE sources from trustworthy current/refreshed provider pages.
+- Watch Earth remains stricter; quasi-live pages are not promoted as continuous live video.
+- Newly added searchable destinations: Salzburg, Tallinn TV Tower, Lake Bled, Poiana Brașov, Grand Baie, Pointe d’Esny, Rotorua, Wānaka, Ala-Archa, Issyk-Kul and Shymbulak.
+- Business-source gates were advanced only where the corresponding ERN place is now searchable.
+- Current commercial queue state: {"VERIFIED_LINK_ADDED":16,"ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED":63,"SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK":27,"SOURCE_GAP_MUST_BE_SOLVED_FIRST":1}.
+- Stretch target remains ~200 useful searchable places; current gap to 200 is 39.
