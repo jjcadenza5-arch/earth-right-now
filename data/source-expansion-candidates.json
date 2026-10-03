@@ -730,8 +730,10 @@
       "evidence": "SANParks' official Punda Maria webcam page publishes still images from Punda Maria Rest Camp and states that webcam photos update every few minutes.",
       "researchEvidence": "Official SANParks webcam index lists Punda Maria among current still webcams.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Punda Maria still-cam page and confirm the image timestamp/content refreshes."
+      "state": "SUPERSEDED_BY_QUASI_LIVE_PROMOTION",
+      "humanCheckHint": "Open the official Punda Maria still-cam page and confirm the image timestamp/content refreshes.",
+      "supersededBy": "sanparks-punda-maria-current-image",
+      "supersededAt": "2026-10-03T03:30:00Z"
     },
     {
       "id": "sanparks-talamati",
@@ -745,8 +747,10 @@
       "evidence": "SANParks' official Talamati webcam page publishes still images from Talamati Bushveld Camp and states webcam photos update every few minutes.",
       "researchEvidence": "Official SANParks webcam index lists Talamati among current still webcams.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Talamati still-cam page and confirm the image refreshes."
+      "state": "SUPERSEDED_BY_QUASI_LIVE_PROMOTION",
+      "humanCheckHint": "Open the official Talamati still-cam page and confirm the image refreshes.",
+      "supersededBy": "sanparks-talamati-current-image",
+      "supersededAt": "2026-10-03T03:30:00Z"
     },
     {
       "id": "mendoza-plaza-independencia-live",
@@ -2006,6 +2010,110 @@
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "The official Madeira tourism weather page explicitly lists Machico among its live webcam-image locations.",
       "verification": "Official tourism live-image semantics satisfy ERN quasi-live searchable policy; not promoted as continuous Watch Earth video."
+    },
+    {
+      "id": "taiwan-jiufen-current-image",
+      "title": "Jiufen Old Street — Taiwan",
+      "country": "Taiwan",
+      "region": "New Taipei City",
+      "provider": "Taiwan MyEGov / New Taipei City Government",
+      "sourcePage": "https://www.gov.tw/taiwan/index_284467",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "Taiwan's MyEGov page labels this source as Jiufen Old Street real-time imagery and identifies the camera as provided by New Taipei City Government.",
+      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "taiwan-hehuanshan-wuling-current-image",
+      "title": "Hehuanshan — Wuling Pass",
+      "country": "Taiwan",
+      "region": "Nantou / Hualien",
+      "provider": "Taiwan MyEGov / Directorate General of Highways",
+      "sourcePage": "https://www.gov.tw/taiwan/index_262969",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "Taiwan MyEGov labels Wuling Pass as real-time imagery and states the camera is installed at 3,275 metres; connectivity can vary with mountain weather.",
+      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "taiwan-yangmingshan-xiaoyoukeng-current-image",
+      "title": "Yangmingshan — Xiaoyoukeng",
+      "country": "Taiwan",
+      "region": "Taipei",
+      "provider": "Taiwan MyEGov / National Park Service",
+      "sourcePage": "https://www.gov.tw/taiwan/index_298580",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "Taiwan MyEGov labels Xiaoyoukeng as real-time imagery and identifies the source as Yangmingshan National Park.",
+      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "taiwan-green-island-chaikou-current-image",
+      "title": "Green Island — Chaikou",
+      "country": "Taiwan",
+      "region": "Taitung County",
+      "provider": "Taiwan MyEGov / East Coast National Scenic Area",
+      "sourcePage": "https://www.gov.tw/taiwan/index_653552",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "Taiwan MyEGov explicitly labels Chaikou snorkeling area as real-time imagery supplied by the East Coast National Scenic Area Administration.",
+      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "taiwan-kenting-forest-current-image",
+      "title": "Kenting National Forest — Ocean View Tower",
+      "country": "Taiwan",
+      "region": "Pingtung County",
+      "provider": "Taiwan Forestry and Nature Conservation Agency",
+      "sourcePage": "https://www.forest.gov.tw/0010159/0010159",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "Taiwan Forestry's current page is explicitly titled as real-time imagery for the Kenting National Forest Ocean View Tower and was updated in September 2026.",
+      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "taiwan-sun-moon-lake-current-image",
+      "title": "Sun Moon Lake — Taiwan",
+      "country": "Taiwan",
+      "region": "Nantou County",
+      "provider": "Sun Moon Lake National Scenic Area Administration",
+      "sourcePage": "https://www.sunmoonlake.gov.tw/EN/attractions/Livecams?a=22",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "The official Sun Moon Lake National Scenic Area website exposes a dedicated Live Camera page with multiple named lake viewpoints.",
+      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "sanparks-punda-maria-current-image",
+      "title": "Punda Maria — Kruger National Park",
+      "country": "South Africa",
+      "region": "Kruger National Park",
+      "provider": "SANParks",
+      "sourcePage": "https://www.sanparks.org/travel/webcams/still/punda-maria",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "SANParks states webcam still photos update every few minutes and lists Punda Maria among its current still webcams.",
+      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+    },
+    {
+      "id": "sanparks-talamati-current-image",
+      "title": "Talamati — Kruger National Park",
+      "country": "South Africa",
+      "region": "Kruger National Park",
+      "provider": "SANParks",
+      "sourcePage": "https://www.sanparks.org/travel/webcams/still/talamati",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "SANParks states webcam still photos update every few minutes and lists Talamati among its current still webcams.",
+      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
     }
   ],
   "notes": [
@@ -2046,7 +2154,8 @@
     "2026-10-03 expanded underrepresented South America with official scientific/government quasi-live sources for Sangay, Tungurahua, Nevado del Ruiz and Galeras.",
     "2026-10-03 added three Hong Kong Observatory five-minute quasi-live places: Victoria Harbour, Victoria Peak and Tai Mo Shan.",
     "2026-10-03 expanded Iceland beyond Reykjavík with Mývatn, Hveravellir and Surtsey from the Icelandic Meteorological Office.",
-    "2026-10-03 Madeira candidate family promoted under owner-approved quasi-live policy: Funchal, Porto Moniz, Calheta and Machico are searchable LIVE_IMAGE places; old human-playback placeholder rows were superseded."
+    "2026-10-03 Madeira candidate family promoted under owner-approved quasi-live policy: Funchal, Porto Moniz, Calheta and Machico are searchable LIVE_IMAGE places; old human-playback placeholder rows were superseded.",
+    "2026-10-03 added six distinct Taiwan government/scenic-area real-time-image places plus two SANParks frequently refreshed wildlife still cameras. SANParks video-only Satara/Olifants remain human-playback-gated."
   ],
   "researchGaps": [
     {
