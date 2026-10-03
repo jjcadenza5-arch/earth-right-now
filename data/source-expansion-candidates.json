@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:30:00Z",
+  "generatedAt": "2026-10-03T03:42:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -810,6 +810,51 @@
       "priority": "P2",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Open the official Mauritius Now webcam experience and confirm Saint-Félix is present and visibly current."
+    },
+    {
+      "id": "st-maarten-maho-beach",
+      "title": "Maho Beach — St. Maarten",
+      "country": "Sint Maarten",
+      "region": "Maho",
+      "provider": "Visit St. Maarten / ShowMe Caribbean",
+      "sourcePage": "https://www.visitstmaarten.com/your-top-three-caribbean-live-webcams-2/",
+      "exactTargetUrl": "https://www.visitstmaarten.com/your-top-three-caribbean-live-webcams-2/",
+      "exactTargetType": "OFFICIAL_TOURISM_ENDORSED_LIVE_CAMERA",
+      "evidence": "Official Visit St. Maarten describes Maho Beach as a 24/7 live webcam overlooking the airport approach and beach.",
+      "researchEvidence": "Visit St. Maarten explicitly endorses the ShowMe Caribbean Maho webcam as a 24/7 live stream.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Visit St. Maarten webcam article and confirm the Maho Beach live stream is currently playing."
+    },
+    {
+      "id": "st-maarten-great-bay-boardwalk",
+      "title": "Great Bay & Philipsburg Boardwalk — St. Maarten",
+      "country": "Sint Maarten",
+      "region": "Philipsburg",
+      "provider": "Visit St. Maarten / ShowMe Caribbean",
+      "sourcePage": "https://www.visitstmaarten.com/your-top-three-caribbean-live-webcams-2/",
+      "exactTargetUrl": "https://www.visitstmaarten.com/areas/philipsburg/",
+      "exactTargetType": "OFFICIAL_TOURISM_ENDORSED_LIVE_CAMERA",
+      "evidence": "Official Visit St. Maarten says the Philipsburg Boardwalk webcam provides a 24/7 overview of Great Bay Beach and the Boardwalk.",
+      "researchEvidence": "Visit St. Maarten's Philipsburg area page explicitly identifies the live Philipsburg Boardwalk webcam and describes it as 24/7.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Philipsburg tourism page and confirm the Great Bay/Boardwalk webcam is visibly live."
+    },
+    {
+      "id": "st-maarten-simpson-bay",
+      "title": "Simpson Bay — St. Maarten",
+      "country": "Sint Maarten",
+      "region": "Simpson Bay",
+      "provider": "Visit St. Maarten / ShowMe Caribbean",
+      "sourcePage": "https://www.visitstmaarten.com/business/show-me-caribbean/",
+      "exactTargetUrl": "https://www.visitstmaarten.com/business/show-me-caribbean/",
+      "exactTargetType": "OFFICIAL_TOURISM_ENDORSED_LIVE_CAMERA",
+      "evidence": "Visit St. Maarten's official ShowMe Caribbean partner page says its 24/7 live streams include Simpson Bay.",
+      "researchEvidence": "Official tourism partner listing names Maho Beach, Simpson Bay and the Great Bay Boardwalk as real-time feeds.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Visit St. Maarten ShowMe Caribbean page and confirm the Simpson Bay live stream is still available and current."
     }
   ],
   "notes": [
@@ -825,6 +870,7 @@
     "2026-10-03 large-batch Asia expansion added eight distinct Taiwan Tourism Administration Live Taiwan candidates spanning Taipei, New Taipei, Taichung, Hualien and Tainan. Official pages mark each selected camera as operating; ERN still requires human playback confirmation before promotion.",
     "2026-10-03 Africa expansion added four official SANParks camera candidates: Satara, Olifants, Punda Maria and Talamati. Nossob was intentionally not duplicated because it already exists in the live ERN registry.",
     "2026-10-03 South America gap work added Mendoza Plaza Independencia from the official municipal LIVE camera page and Ushuaia Harbour from the municipality's published 24-hour camera record. Ushuaia is deliberately held for stricter replay-vs-live verification because the municipal evidence is older.",
-    "2026-10-03 large-batch expansion added a Mauritius Tourism Promotion Authority camera family using the current Mauritius Now 13-webcam claim plus MTPA annual-report location evidence for Grand Baie, Pointe d’Esny and Saint-Félix. All remain playback-gated."
+    "2026-10-03 large-batch expansion added a Mauritius Tourism Promotion Authority camera family using the current Mauritius Now 13-webcam claim plus MTPA annual-report location evidence for Grand Baie, Pointe d’Esny and Saint-Félix. All remain playback-gated.",
+    "2026-10-03 Caribbean breadth batch added three Visit St. Maarten-endorsed 24/7 camera candidates: Maho Beach, Great Bay/Philipsburg Boardwalk and Simpson Bay. Existing Little Bay source was not duplicated."
   ]
 }
