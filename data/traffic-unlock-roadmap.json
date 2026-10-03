@@ -1,27 +1,39 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:15:00Z",
+  "generatedAt": "2026-10-03T11:25:00Z",
   "strategy": "Traffic-led unlock. Do not repeatedly apply or recheck locked programs. Improve visitor utility, searchable-place quality and qualified outbound intent first; recheck only after material traffic/engagement change or Travelpayouts status notification.",
   "activeNow": [
     {
       "id": "viator",
       "name": "Viator Partner Program",
       "intents": [
-        "activities",
         "tickets"
       ],
-      "network": "Viator Partner Program"
+      "network": "Direct"
     },
     {
-      "id": "travelpayouts",
-      "name": "Travelpayouts — Earthrightnow Project",
+      "id": "klook",
+      "name": "Klook via Travelpayouts",
       "intents": [
-        "activities",
-        "tickets",
-        "transport",
-        "services"
+        "tickets"
       ],
-      "network": "Travelpayouts Earthrightnow Project"
+      "network": "Travelpayouts"
+    },
+    {
+      "id": "tiqets",
+      "name": "Tiqets via Travelpayouts",
+      "intents": [
+        "tickets"
+      ],
+      "network": "Travelpayouts"
+    },
+    {
+      "id": "welcome-pickups",
+      "name": "Welcome Pickups via Travelpayouts",
+      "intents": [
+        "transport"
+      ],
+      "network": "Travelpayouts"
     }
   ],
   "futureUnlock": [
@@ -343,5 +355,6 @@
     "unlockStatusMustBeOwnerOrPlatformConfirmed": true,
     "noTrafficFabrication": true,
     "noForcedApplications": true
-  }
+  },
+  "note": "ActiveNow is canonical from data/affiliate-partners.json; futureUnlock is derived from owner-visible but not yet unlocked Travelpayouts programs."
 }
