@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:55:00Z",
+  "generatedAt": "2026-10-03T02:40:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 91,
@@ -26,7 +26,17 @@
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
     "researchCandidateCount": 67,
-    "playbackGatedCandidateCount": 63
+    "playbackGatedCandidateCount": 63,
+    "centralAsia": {
+      "unresolvedGap": "pamir-mountains-tajikistan",
+      "adjacentHighValueChecks": [
+        "shymbulak-mountain-resort",
+        "karakol-ski-base",
+        "ala-archa-natural-park",
+        "osh-sulaiman-too"
+      ],
+      "rule": "Adjacent Central Asia cameras improve regional breadth but do not close the Pamir/Tajikistan gap."
+    }
   },
   "businessLane": {
     "activePartners": [
@@ -64,7 +74,10 @@
       "viator-ushuaia-future",
       "klook-mauritius-future",
       "klook-wanaka-future",
-      "viator-rotorua-future"
+      "viator-rotorua-future",
+      "viator-shymbulak-future",
+      "viator-karakol-future",
+      "viator-pamir-future"
     ],
     "accommodationResearch": [
       "hotels-com",
