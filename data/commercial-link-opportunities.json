@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:30:00Z",
+  "generatedAt": "2026-10-03T03:42:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -621,6 +621,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/tours/Cape-Town/PENQUINS-AT-BOULDERS-BEACH-SIMONSTOWN/d318-139085P4",
       "publicInventoryEvidence": "Current Viator inventory includes Boulders Beach penguin tours and full Cape Peninsula itineraries that explicitly stop at the penguin colony.",
       "nextAction": "Generate a Boulders Beach or tightly scoped Cape Peninsula Viator partner link and manually verify it before public activation; avoid simply duplicating the generic Cape Town offer."
+    },
+    {
+      "id": "viator-st-maarten",
+      "destination": "St. Maarten / Philipsburg",
+      "placeIds": [
+        "little-bay-sint-maarten"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN already has a healthy Little Bay St. Maarten window, and current Viator inventory includes broad St. Maarten sightseeing with Little Bay on island itineraries.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Philipsburg/Small-Cultural-Group-Tours/d5627-252077P2",
+      "publicInventoryEvidence": "Current Viator St. Maarten sightseeing explicitly passes Little Bay Beach and covers Philipsburg, Maho, Orient Bay and other island highlights.",
+      "nextAction": "Generate one St. Maarten destination-level Viator partner link and verify it manually. If Maho, Great Bay or Simpson Bay cameras are later promoted, reuse the same city/island-level link rather than creating duplicate commercial density."
     }
   ]
 }
