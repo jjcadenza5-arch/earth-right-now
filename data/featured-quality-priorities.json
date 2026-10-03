@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T14:05:00Z",
+  "generatedAt": "2026-10-03T16:35:00Z",
   "publicActivationAllowed": false,
-  "purpose": "Post-275 featured-discovery maintenance: protect strong true-live diversity and identify high-value quasi-live places worth upgrading when stronger sources appear.",
-  "currentHealthyDistinctPlaces": 275,
+  "purpose": "Post-300 quality maintenance: protect geographically diverse true-live discovery and identify the strongest quasi-live places for future live-source upgrades.",
+  "currentHealthyDistinctPlaces": 300,
   "trueLiveFeaturedPool": [
     {
       "id": "iss-planet-earth",
@@ -26,13 +26,13 @@
       "moment": 98
     },
     {
-      "id": "meads-bay-anguilla",
-      "placeId": "meads-bay-anguilla",
-      "title": "Meads Bay — Anguilla",
-      "country": "Anguilla",
-      "provider": "EarthCam",
+      "id": "kuredu-maldives-live",
+      "placeId": "kuredu-island-maldives",
+      "title": "Kuredu Island — Maldives",
+      "country": "Maldives",
+      "provider": "Kuredu Island Resort & Spa",
       "truth": "EXTERNAL_LIVE",
-      "quality": 97,
+      "quality": 98,
       "moment": 98
     },
     {
@@ -56,6 +56,26 @@
       "moment": 97
     },
     {
+      "id": "barbados-paynes-bay-live",
+      "placeId": "barbados-paynes-bay",
+      "title": "Paynes Bay Beach — Barbados",
+      "country": "Barbados",
+      "provider": "Beach View Hotel",
+      "truth": "EXTERNAL_LIVE",
+      "quality": 96,
+      "moment": 97
+    },
+    {
+      "id": "cape-verde-santa-maria-bay-live",
+      "placeId": "cape-verde-santa-maria-bay",
+      "title": "Santa Maria Bay — Sal, Cape Verde",
+      "country": "Cape Verde",
+      "provider": "Odjo d'Água Hotel",
+      "truth": "EXTERNAL_LIVE",
+      "quality": 96,
+      "moment": 97
+    },
+    {
       "id": "yellowstone-old-faithful-live",
       "placeId": "yellowstone-old-faithful",
       "title": "Yellowstone — Old Faithful",
@@ -64,26 +84,6 @@
       "truth": "EXTERNAL_LIVE",
       "quality": 93,
       "moment": 98
-    },
-    {
-      "id": "turku-port-archipelago",
-      "placeId": "turku-port-archipelago",
-      "title": "Turku — Port & Archipelago",
-      "country": "Finland",
-      "provider": "Visit Finland / Port of Turku",
-      "truth": "EXTERNAL_LIVE",
-      "quality": 96,
-      "moment": 95
-    },
-    {
-      "id": "san-diego-zoo",
-      "placeId": "san-diego-zoo",
-      "title": "San Diego Zoo",
-      "country": "United States",
-      "provider": "San Diego Zoo",
-      "truth": "EXTERNAL_LIVE",
-      "quality": 92,
-      "moment": 96
     },
     {
       "id": "cancun-live-aqua-beach",
@@ -166,16 +166,6 @@
       "moment": 92
     },
     {
-      "id": "sanparks-addo-video",
-      "placeId": "addo-elephant-national-park",
-      "title": "Addo Elephant National Park",
-      "country": "South Africa",
-      "provider": "SANParks",
-      "truth": "EXTERNAL_LIVE",
-      "quality": 91,
-      "moment": 94
-    },
-    {
       "id": "kyoto-hanamikoji-live",
       "placeId": "kyoto-hanamikoji",
       "title": "Kyoto — Hanamikoji Street",
@@ -196,16 +186,6 @@
       "moment": 95
     },
     {
-      "id": "kyoto-kiyomizuzaka-live",
-      "placeId": "kyoto-kiyomizuzaka",
-      "title": "Kyoto — Kiyomizu-zaka",
-      "country": "Japan",
-      "provider": "Kyoto City Tourism Association",
-      "truth": "LIVE_VIDEO",
-      "quality": 90,
-      "moment": 94
-    },
-    {
       "id": "london-abbey-road-crossing-live",
       "placeId": "london-abbey-road-crossing",
       "title": "London — Abbey Road Crossing",
@@ -214,16 +194,6 @@
       "truth": "EXTERNAL_LIVE",
       "quality": 89,
       "moment": 95
-    },
-    {
-      "id": "bangkok-sukhumvit-skylinewebcams",
-      "placeId": "bangkok-sukhumvit-road",
-      "title": "Bangkok — Sukhumvit Road",
-      "country": "Thailand",
-      "provider": "SkylineWebcams",
-      "truth": "EXTERNAL_LIVE",
-      "quality": 88,
-      "moment": 96
     },
     {
       "id": "lajes-pico-harbour",
@@ -266,6 +236,16 @@
       "moment": 92
     },
     {
+      "id": "waikiki-south-shore",
+      "placeId": "waikiki-south-shore",
+      "title": "Waikiki Beach — South Shore",
+      "country": "United States",
+      "provider": "Waikīkī Aquarium",
+      "truth": "EXTERNAL_LIVE",
+      "quality": 92,
+      "moment": 90
+    },
+    {
       "id": "metung-gippsland-lakes",
       "placeId": "metung-gippsland-lakes",
       "title": "Metung — Gippsland Lakes",
@@ -294,6 +274,26 @@
       "truth": "EXTERNAL_LIVE",
       "quality": 92,
       "moment": 89
+    },
+    {
+      "id": "kyoto-kifune-shrine-live",
+      "placeId": "kyoto-kifune-shrine",
+      "title": "Kyoto — Kifune Shrine",
+      "country": "Japan",
+      "provider": "Kyoto City Tourism Association",
+      "truth": "LIVE_VIDEO",
+      "quality": 90,
+      "moment": 91
+    },
+    {
+      "id": "tonami-tulip-park-panorama",
+      "placeId": "tonami-tulip-park",
+      "title": "Tonami Tulip Park — Panorama Terrace",
+      "country": "Japan",
+      "provider": "Tonami City",
+      "truth": "EXTERNAL_LIVE",
+      "quality": 88,
+      "moment": 93
     },
     {
       "id": "ponte-di-legno-adamello",
@@ -428,6 +428,16 @@
       "moment": 98
     },
     {
+      "id": "taiwan-elephant-mountain-live",
+      "placeId": "taiwan-elephant-mountain",
+      "title": "Elephant Mountain — Taipei Skyline",
+      "country": "Taiwan",
+      "provider": "Taiwan Tourism Administration / official government live-camera network",
+      "truth": "LIVE_IMAGE",
+      "quality": 98,
+      "moment": 98
+    },
+    {
       "id": "oeschinensee-official",
       "placeId": "oeschinensee",
       "title": "Oeschinensee — Mountain & Lake Views",
@@ -441,6 +451,16 @@
       "id": "panama-gatun-current",
       "placeId": "panama-canal-gatun-locks",
       "title": "Panama Canal — Gatún Locks",
+      "country": "Panama",
+      "provider": "Panama Canal Authority",
+      "truth": "LIVE_IMAGE",
+      "quality": 97,
+      "moment": 98
+    },
+    {
+      "id": "panama-agua-clara-current",
+      "placeId": "panama-canal-agua-clara-locks",
+      "title": "Panama Canal — Agua Clara Locks",
       "country": "Panama",
       "provider": "Panama Canal Authority",
       "truth": "LIVE_IMAGE",
@@ -548,6 +568,36 @@
       "moment": 98
     },
     {
+      "id": "techi-reservoir-current",
+      "placeId": "taichung-techi-reservoir",
+      "title": "Taichung — Techi Reservoir",
+      "country": "Taiwan",
+      "provider": "Taiwan Tourism Administration / Tri-Mountain National Scenic Area",
+      "truth": "LIVE_IMAGE",
+      "quality": 97,
+      "moment": 97
+    },
+    {
+      "id": "shitiping-current",
+      "placeId": "hualien-shitiping",
+      "title": "Hualien — Shitiping",
+      "country": "Taiwan",
+      "provider": "Taiwan Tourism Administration / East Coast National Scenic Area",
+      "truth": "LIVE_IMAGE",
+      "quality": 97,
+      "moment": 97
+    },
+    {
+      "id": "erliao-sunrise-current",
+      "placeId": "tainan-erliao-sunrise",
+      "title": "Tainan — Erliao Sunrise",
+      "country": "Taiwan",
+      "provider": "Taiwan Tourism Administration / Siraya National Scenic Area",
+      "truth": "LIVE_IMAGE",
+      "quality": 96,
+      "moment": 98
+    },
+    {
       "id": "simpson-bay-current",
       "placeId": "st-maarten-simpson-bay",
       "title": "Simpson Bay — St. Maarten",
@@ -588,24 +638,24 @@
       "moment": 97
     },
     {
-      "id": "peru-sabancaya-current-image",
-      "placeId": "peru-sabancaya-volcano",
-      "title": "Sabancaya Volcano — Peru",
-      "country": "Peru",
-      "provider": "Instituto Geofísico del Perú / CENVUL",
+      "id": "taiwan-yehliu-live",
+      "placeId": "taiwan-yehliu",
+      "title": "Yehliu Geopark — Taiwan North Coast",
+      "country": "Taiwan",
+      "provider": "Taiwan Tourism Administration / official government live-camera network",
       "truth": "LIVE_IMAGE",
-      "quality": 96,
+      "quality": 97,
       "moment": 97
     },
     {
-      "id": "iceland-myvatn-current-image",
-      "placeId": "iceland-myvatn",
-      "title": "Lake Mývatn — Iceland",
-      "country": "Iceland",
-      "provider": "Icelandic Meteorological Office",
+      "id": "taiwan-tamsui-fishermans-wharf-live",
+      "placeId": "taiwan-tamsui-fishermans-wharf",
+      "title": "Tamsui Fisherman's Wharf — Taiwan",
+      "country": "Taiwan",
+      "provider": "Taiwan Tourism Administration / official government live-camera network",
       "truth": "LIVE_IMAGE",
-      "quality": 96,
-      "moment": 96
+      "quality": 97,
+      "moment": 97
     }
   ],
   "rules": {
