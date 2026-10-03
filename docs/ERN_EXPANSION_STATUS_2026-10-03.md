@@ -57,3 +57,30 @@ These remain non-public until the owner generates and manually verifies the exac
 
 Operating principle:
 Commercial options appear only after Earth discovery and never influence which camera/place ERN ranks.
+
+
+## Prague exact-target isolation
+
+The earlier Prague verification burden has been reduced. The official Prague City Tourism page now resolves to six direct camera targets recorded in `data/source-expansion-candidates.json`:
+- Petřín Tower — Panomax 360 endpoint
+- Old Town Hall — direct YouTube live target
+- Old Town Bridge Tower — direct YouTube target
+- Powder Tower — direct YouTube target
+- St. Nicholas Bell Tower — direct YouTube target
+- Lesser Town Bridge Tower — direct YouTube target
+
+These remain research-only until exact-target playback is spot-checked, but the owner no longer needs to hunt through the Prague page.
+
+## Business queue refinement
+
+Additional high-intent opportunities prepared, still non-public and exact-link gated:
+- Georgia Aquarium → Tiqets
+- San Diego Zoo → Tiqets
+- Vienna → Tiqets (public inventory evidence reconfirmed)
+- Helsinki → Viator
+- Lucerne → Viator
+- Tbilisi → Viator
+- Cancún → Viator
+- Yellowstone → Viator
+
+Accommodation research remains fail-closed. Hotels.com and Trip.com were added only as research candidates; owner-project availability is not assumed and no tracked links are allowed until account-level confirmation.
