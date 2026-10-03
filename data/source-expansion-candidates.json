@@ -1440,6 +1440,21 @@
       "priority": "P1",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Choose Agua Clara Locks on the official Panama Canal camera service and confirm real-time ship/lock activity."
+    },
+    {
+      "id": "kenyalive-nairobi-national-park",
+      "title": "Nairobi National Park — KenyaLIVE",
+      "country": "Kenya",
+      "region": "Nairobi",
+      "provider": "Kenya Wildlife Service",
+      "sourcePage": "https://kws.go.ke/world-tourism-day-2026-kenya-embraces-the-digital-future-of-travel/",
+      "exactTargetUrl": "https://kws.go.ke/world-tourism-day-2026-kenya-embraces-the-digital-future-of-travel/",
+      "exactTargetType": "OFFICIAL_GOVERNMENT_LIVE_PROGRAM",
+      "evidence": "Kenya Wildlife Service states that KenyaLIVE launched at Nairobi National Park on 22 September 2026 and brings daily live wildlife experiences from Kenya parks through the KWS YouTube channel.",
+      "researchEvidence": "KWS explicitly describes viewers watching elephants, lions, flamingos and other wildlife in real time. ERN must verify the currently active KWS broadcast and park identity before promoting a place-specific live source.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the KWS KenyaLIVE article, follow the official KWS YouTube route, and confirm there is a current live broadcast identified as Nairobi National Park before promotion."
     }
   ],
   "notes": [
@@ -1466,7 +1481,8 @@
     "2026-10-03 Pamir research: no trustworthy core Tajik Pamir live feed found. Added six Kyrgyz mountain/approach candidates from kg.camera while explicitly keeping Murghab/Karakul/Wakhan/Ak-Baital as an unresolved research gap.",
     "2026-10-03 large-batch geographic breadth: added Bled (Slovenia), Mykonos port (Greece), Santorini caldera (Greece) and Poiana Brașov (Romania) as research-only live candidates from official or strong provider pages. Multi-camera pages remain one destination unless views are genuinely distinct places.",
     "2026-10-03 world-gap batch added official municipal live-camera candidates for Istanbul and Denpasar/Bali. Istanbul uses the metropolitan municipality's touristic-camera system; Denpasar uses the city transportation agency's real-time CCTV platform. Both remain human-playback gated.",
-    "2026-10-03 large-batch world-gap research added four Australian Antarctic Program current-image candidates and five Panama Canal Authority real-time lock-camera candidates. All remain human-verification-gated; Antarctic sources must use LIVE_IMAGE semantics rather than continuous-video claims."
+    "2026-10-03 large-batch world-gap research added four Australian Antarctic Program current-image candidates and five Panama Canal Authority real-time lock-camera candidates. All remain human-verification-gated; Antarctic sources must use LIVE_IMAGE semantics rather than continuous-video claims.",
+    "2026-10-03 added KenyaLIVE / Nairobi National Park as a P1 official-government research candidate. KWS launched KenyaLIVE on 22 September 2026 for daily real-time wildlife broadcasts; ERN still requires a current park-specific broadcast confirmation before promotion."
   ],
   "researchGaps": [
     {
