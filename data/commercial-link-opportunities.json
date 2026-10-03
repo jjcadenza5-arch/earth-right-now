@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T16:40:00Z",
+  "generatedAt": "2026-10-03T16:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3137,6 +3137,21 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Serbia/d21912",
       "nextAction": "Search the Viator partner account for a clean Kopaonik destination-level link. If none exists, leave this opportunity dormant rather than using an unrelated generic Serbia page."
+    },
+    {
+      "id": "viator-bratislava-future",
+      "destination": "Bratislava",
+      "placeIds": [
+        "bratislava-city-live"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Official Bratislava live-camera research aligns with substantial current Viator Bratislava/Slovakia sightseeing inventory.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/blog/Slovakia/d66",
+      "publicInventoryEvidence": "Viator currently lists Bratislava Old Town, Bratislava Castle and Devin Castle among Slovakia attractions, with multiple Bratislava-based activities.",
+      "nextAction": "After a Bratislava camera is promoted, search for a clean Bratislava destination-level Viator partner link and manually verify it before public activation."
     }
   ]
 }
