@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T06:00:00Z",
-  "currentHealthyDistinctPlaces": 181,
+  "generatedAt": "2026-10-03T05:45:00Z",
+  "currentHealthyDistinctPlaces": 200,
   "targetHealthyDistinctPlaces": [
     150,
     200
   ],
   "remainingToMinimum": 0,
-  "remainingToStretch": 19,
-  "humanPlaybackQueueCount": 54,
+  "remainingToStretch": 0,
+  "humanPlaybackQueueCount": 35,
   "topBatch": [
     {
       "id": "denpasar-city-live",
@@ -71,20 +71,6 @@
       "humanCheckHint": "Open the direct KG Camera Karakol Ski Base page and confirm the lower-lift image/video updates normally."
     },
     {
-      "id": "hualien-shitiping",
-      "title": "Hualien — Shitiping",
-      "country": "Taiwan",
-      "region": "Hualien County",
-      "provider": "Taiwan Tourism Administration / East Coast National Scenic Area",
-      "priority": "P1",
-      "verificationUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10015&sNo=0042331",
-      "verificationType": "OFFICIAL_TOURISM_LIVE_INDEX",
-      "businessUnlocks": [
-        "viator-hualien-future"
-      ],
-      "humanCheckHint": "Open the official Hualien-filtered Live Taiwan page and confirm Shitiping visibly updates."
-    },
-    {
       "id": "malta-live-cams",
       "title": "Malta — Official Live Cams",
       "country": "Malta",
@@ -113,48 +99,6 @@
       "humanCheckHint": "Open the KWS KenyaLIVE article, follow the official KWS YouTube route, and confirm there is a current live broadcast identified as Nairobi National Park before promotion."
     },
     {
-      "id": "panama-canal-agua-clara-locks",
-      "title": "Panama Canal — Agua Clara Locks",
-      "country": "Panama",
-      "region": "Panama Canal",
-      "provider": "Panama Canal Authority",
-      "priority": "P1",
-      "verificationUrl": "https://www.pancanal.com/en/",
-      "verificationType": "OFFICIAL_CANAL_REALTIME_CAMERA_INDEX",
-      "businessUnlocks": [
-        "viator-panama-canal-future"
-      ],
-      "humanCheckHint": "Choose Agua Clara Locks on the official Panama Canal camera service and confirm real-time ship/lock activity."
-    },
-    {
-      "id": "panama-canal-gatun-locks",
-      "title": "Panama Canal — Gatún Locks",
-      "country": "Panama",
-      "region": "Panama Canal",
-      "provider": "Panama Canal Authority",
-      "priority": "P1",
-      "verificationUrl": "https://www.pancanal.com/en/",
-      "verificationType": "OFFICIAL_CANAL_REALTIME_CAMERA_INDEX",
-      "businessUnlocks": [
-        "viator-panama-canal-future"
-      ],
-      "humanCheckHint": "Open the official Panama Canal web-camera area, choose Gatún Locks, and confirm the view updates in real time."
-    },
-    {
-      "id": "panama-canal-miraflores-locks",
-      "title": "Panama Canal — Miraflores Locks",
-      "country": "Panama",
-      "region": "Panama Canal",
-      "provider": "Panama Canal Authority",
-      "priority": "P1",
-      "verificationUrl": "https://www.pancanal.com/en/",
-      "verificationType": "OFFICIAL_CANAL_REALTIME_CAMERA_INDEX",
-      "businessUnlocks": [
-        "viator-panama-canal-future"
-      ],
-      "humanCheckHint": "Open the Panama Canal Authority Web Cameras section, choose Miraflores Locks, and confirm ships/locks are updating in real time."
-    },
-    {
       "id": "prague-old-town-hall",
       "title": "Prague — Old Town Hall",
       "country": "Czech Republic",
@@ -181,50 +125,6 @@
         "tiqets-prague-future"
       ],
       "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
-    }
-  ],
-  "backlog": [
-    {
-      "id": "taichung-techi-reservoir",
-      "title": "Taichung — Techi Reservoir",
-      "country": "Taiwan",
-      "region": "Taichung",
-      "provider": "Taiwan Tourism Administration / Tri-Mountain National Scenic Area",
-      "priority": "P1",
-      "verificationUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10019&sNo=0042331",
-      "verificationType": "OFFICIAL_TOURISM_LIVE_INDEX",
-      "businessUnlocks": [
-        "klook-taichung-future"
-      ],
-      "humanCheckHint": "Open the official Taichung-filtered Live Taiwan page and confirm Techi Reservoir visibly updates."
-    },
-    {
-      "id": "tainan-erliao-sunrise",
-      "title": "Tainan — Erliao Sunrise",
-      "country": "Taiwan",
-      "region": "Tainan",
-      "provider": "Taiwan Tourism Administration / Siraya National Scenic Area",
-      "priority": "P1",
-      "verificationUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10021&sNo=0042331",
-      "verificationType": "OFFICIAL_TOURISM_LIVE_INDEX",
-      "businessUnlocks": [
-        "klook-tainan-future"
-      ],
-      "humanCheckHint": "Open the official Tainan-filtered Live Taiwan page and confirm Erliao Viewing Platform visibly updates."
-    },
-    {
-      "id": "taipei-dajia-riverside-park",
-      "title": "Taipei — Dajia Riverside Park",
-      "country": "Taiwan",
-      "region": "Taipei",
-      "provider": "Taiwan Tourism Administration / Taipei City Government",
-      "priority": "P1",
-      "verificationUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=63&sNo=0042331",
-      "verificationType": "OFFICIAL_TOURISM_LIVE_INDEX",
-      "businessUnlocks": [
-        "klook-taipei-future"
-      ],
-      "humanCheckHint": "Open the official Taipei-filtered Live Taiwan page and confirm Dajia Riverside Park visibly updates."
     },
     {
       "id": "ushuaia-harbour-municipal",
@@ -277,19 +177,9 @@
       "verificationType": "LIVE_WEBCAM_AGGREGATOR_WITH_OPERATOR_ATTRIBUTION",
       "businessUnlocks": [],
       "humanCheckHint": "Open the Hotel Everest View live page and confirm the image/video is current before ERN promotes it."
-    },
-    {
-      "id": "innsbruck-stadtturm",
-      "title": "Innsbruck — City Tower",
-      "country": "Austria",
-      "region": "Tyrol",
-      "provider": "Innsbruck Tourism",
-      "priority": "P1",
-      "verificationUrl": "https://www.innsbruck.info/en/destinations/webcams/webcams-region.html",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the regional Innsbruck webcam page and verify the Stadtturm iframe."
-    },
+    }
+  ],
+  "backlog": [
     {
       "id": "wanaka-lake-hawea-view",
       "title": "Lake Hāwea — Roys Peak View",
@@ -305,32 +195,6 @@
       "humanCheckHint": "Open the Wānaka webcam page and confirm the Lake Hāwea view is current."
     },
     {
-      "id": "taichung-lishan-yingyuan-hill",
-      "title": "Lishan — Yingyuan Hill",
-      "country": "Taiwan",
-      "region": "Taichung",
-      "provider": "Taiwan Tourism Administration / Tri-Mountain National Scenic Area",
-      "priority": "P2",
-      "verificationUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10019&sNo=0042331",
-      "verificationType": "OFFICIAL_TOURISM_LIVE_INDEX",
-      "businessUnlocks": [
-        "klook-taichung-future"
-      ],
-      "humanCheckHint": "Open the official Taichung-filtered Live Taiwan page and confirm Lishan Yingyuan Hill visibly updates."
-    },
-    {
-      "id": "new-taipei-zhongjiao-bay",
-      "title": "New Taipei — Zhongjiao Bay",
-      "country": "Taiwan",
-      "region": "New Taipei City",
-      "provider": "Taiwan Tourism Administration / North Coast and Guanyinshan National Scenic Area",
-      "priority": "P1",
-      "verificationUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10001&sNo=0042331",
-      "verificationType": "OFFICIAL_TOURISM_LIVE_INDEX",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the official New Taipei-filtered Live Taiwan page and confirm Zhongjiao Bay visibly updates."
-    },
-    {
       "id": "osh-sulaiman-too",
       "title": "Osh — Sulaiman-Too Mountain",
       "country": "Kyrgyzstan",
@@ -343,34 +207,6 @@
         "klook-pamir-highway-future"
       ],
       "humanCheckHint": "Open the direct Sulaiman-Too page and confirm the landmark view updates normally."
-    },
-    {
-      "id": "panama-canal-cocoli-locks",
-      "title": "Panama Canal — Cocolí Locks",
-      "country": "Panama",
-      "region": "Panama Canal",
-      "provider": "Panama Canal Authority",
-      "priority": "P2",
-      "verificationUrl": "https://www.pancanal.com/en/",
-      "verificationType": "OFFICIAL_CANAL_REALTIME_CAMERA_INDEX",
-      "businessUnlocks": [
-        "viator-panama-canal-future"
-      ],
-      "humanCheckHint": "Choose Cocolí Locks on the official Panama Canal camera service and confirm it is current."
-    },
-    {
-      "id": "panama-canal-pedro-miguel-locks",
-      "title": "Panama Canal — Pedro Miguel Locks",
-      "country": "Panama",
-      "region": "Panama Canal",
-      "provider": "Panama Canal Authority",
-      "priority": "P2",
-      "verificationUrl": "https://www.pancanal.com/en/",
-      "verificationType": "OFFICIAL_CANAL_REALTIME_CAMERA_INDEX",
-      "businessUnlocks": [
-        "viator-panama-canal-future"
-      ],
-      "humanCheckHint": "Choose Pedro Miguel Locks on the official Panama Canal web-camera page and confirm current motion/activity."
     },
     {
       "id": "prague-lesser-town-bridge-tower",
@@ -453,18 +289,6 @@
       "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
     },
     {
-      "id": "st-maarten-simpson-bay",
-      "title": "Simpson Bay — St. Maarten",
-      "country": "Sint Maarten",
-      "region": "Simpson Bay",
-      "provider": "Visit St. Maarten / ShowMe Caribbean",
-      "priority": "P1",
-      "verificationUrl": "https://www.visitstmaarten.com/business/show-me-caribbean/",
-      "verificationType": "OFFICIAL_TOURISM_ENDORSED_LIVE_CAMERA",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the official Visit St. Maarten ShowMe Caribbean page and confirm the Simpson Bay live stream is still available and current."
-    },
-    {
       "id": "suusamyr-valley",
       "title": "Suusamyr Valley — Bishkek–Osh Road",
       "country": "Kyrgyzstan",
@@ -475,34 +299,6 @@
       "verificationType": "CURRENT_CAMERA_NETWORK_DIRECT",
       "businessUnlocks": [],
       "humanCheckHint": "Open the direct Suusamyr page and confirm the valley/road view is current and visually useful."
-    },
-    {
-      "id": "tainan-jingzaijiao-salt-fields",
-      "title": "Tainan — Jingzaijiao Salt Fields",
-      "country": "Taiwan",
-      "region": "Tainan",
-      "provider": "Taiwan Tourism Administration / Southwest Coast National Scenic Area",
-      "priority": "P2",
-      "verificationUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10021&sNo=0042331",
-      "verificationType": "OFFICIAL_TOURISM_LIVE_INDEX",
-      "businessUnlocks": [
-        "klook-tainan-future"
-      ],
-      "humanCheckHint": "Open the official Tainan-filtered Live Taiwan page and confirm Jingzaijiao Salt Fields visibly updates."
-    },
-    {
-      "id": "taipei-bishanyan",
-      "title": "Taipei — Bishanyan",
-      "country": "Taiwan",
-      "region": "Taipei",
-      "provider": "Taiwan Tourism Administration / Taipei City Government",
-      "priority": "P2",
-      "verificationUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=63&sNo=0042331",
-      "verificationType": "OFFICIAL_TOURISM_LIVE_INDEX",
-      "businessUnlocks": [
-        "klook-taipei-future"
-      ],
-      "humanCheckHint": "Open the official Taipei-filtered Live Taiwan page and confirm Bishanyan visibly updates."
     },
     {
       "id": "too-ashu-north",
@@ -589,30 +385,6 @@
       "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
     },
     {
-      "id": "innsbruck-lusens",
-      "title": "Lüsens — Sellraintal",
-      "country": "Austria",
-      "region": "Tyrol",
-      "provider": "Innsbruck Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the official Innsbruck webcams page and choose Lüsens."
-    },
-    {
-      "id": "innsbruck-mieminger-plateau",
-      "title": "Mieminger Plateau — Tyrol",
-      "country": "Austria",
-      "region": "Tyrol",
-      "provider": "Innsbruck Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the official Innsbruck webcams page and choose Mieminger Plateau."
-    },
-    {
       "id": "murren-edelweiss",
       "title": "Mürren — Bernese Alps",
       "country": "Switzerland",
@@ -673,30 +445,6 @@
       "humanCheckHint": "Confirm the source is visibly current/live and useful before promotion."
     },
     {
-      "id": "innsbruck-swarovski-wattens",
-      "title": "Swarovski Crystal Worlds — Wattens",
-      "country": "Austria",
-      "region": "Tyrol",
-      "provider": "Innsbruck Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.innsbruck.info/en/destinations/webcams/webcams-region.html",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the regional Innsbruck webcam page and verify the Swarovski Kristallwelten Wattens iframe."
-    },
-    {
-      "id": "innsbruck-telfs",
-      "title": "Telfs — Tyrol",
-      "country": "Austria",
-      "region": "Tyrol",
-      "provider": "Innsbruck Tourism",
-      "priority": "P2",
-      "verificationUrl": "https://www.innsbruck.info/en/destinations/webcams.html",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
-      "businessUnlocks": [],
-      "humanCheckHint": "Open the official Innsbruck webcams page and choose Telfs."
-    },
-    {
       "id": "wengen-bellevue",
       "title": "Wengen — Bellevue",
       "country": "Switzerland",
@@ -726,5 +474,5 @@
     "watchEarthEligible": false,
     "labelingRequired": true
   },
-  "note": "Human verification queue only. Research or business value never changes source truth/currentness."
+  "note": "Post-target quality queue only. No candidate is needed to preserve the 200-place searchable baseline; human checks now focus on upgrading source quality and true-live coverage."
 }
