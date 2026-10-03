@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T04:05:00Z",
+  "purpose": "Editorial featured-camera curation support. This file does not bypass live/currentness gates and does not affect commercial ranking.",
+  "rules": {
+    "healthyOnly": true,
+    "maxPerCountry": 2,
+    "maxPerMajorCategory": 6,
+    "commercialNeutral": true,
+    "currentnessStillRequiredAtRuntime": true
+  },
+  "healthyDistinctPlaces": 91,
+  "selections": [
+    {
+      "placeId": "planet-earth-orbit",
+      "title": "Planet Earth — International Space Station",
+      "country": "Earth",
+      "region": "Low Earth Orbit",
+      "provider": "EarthCam",
+      "quality": 96,
+      "moment": 100,
+      "category": "Other",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "koli-lake-pielinen",
+      "title": "Koli — Lake Pielinen",
+      "country": "Finland",
+      "region": "North Karelia",
+      "provider": "Visit Finland / Koli Ski",
+      "quality": 98,
+      "moment": 98,
+      "category": "Mountains",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "meads-bay-anguilla",
+      "title": "Meads Bay — Anguilla",
+      "country": "Anguilla",
+      "region": "Meads Bay",
+      "provider": "EarthCam",
+      "quality": 97,
+      "moment": 98,
+      "category": "Water",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "flam-aurlandsfjord",
+      "title": "Flåm & Aurlandsfjord — Live Views",
+      "country": "Norway",
+      "region": "Flåm / Aurland",
+      "provider": "Norway's Best",
+      "quality": 97,
+      "moment": 98,
+      "category": "Water",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "oeschinensee",
+      "title": "Oeschinensee — Mountain & Lake Views",
+      "country": "Switzerland",
+      "region": "Bernese Oberland",
+      "provider": "Oeschinensee",
+      "quality": 97,
+      "moment": 98,
+      "category": "Mountains",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "tbilisi-center",
+      "title": "Mtkvari River & Narikala — Tbilisi",
+      "country": "Georgia",
+      "region": "Tbilisi",
+      "provider": "EarthCam",
+      "quality": 96,
+      "moment": 98,
+      "category": "Water",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "druif-beach-aruba",
+      "title": "Druif Beach — Aruba",
+      "country": "Aruba",
+      "region": "Oranjestad",
+      "provider": "EarthCam",
+      "quality": 96,
+      "moment": 97,
+      "category": "Water",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "chicago-lakefront",
+      "title": "Chicago Skyline & Lakefront",
+      "country": "United States",
+      "region": "Chicago, Illinois",
+      "provider": "EarthCam",
+      "quality": 96,
+      "moment": 97,
+      "category": "Cities & Culture",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "lake-lucerne",
+      "title": "Lake Lucerne — Lake & Mountain Views",
+      "country": "Switzerland",
+      "region": "Lucerne",
+      "provider": "Lake Lucerne Navigation Company",
+      "quality": 96,
+      "moment": 97,
+      "category": "Water",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "dublin-temple-bar",
+      "title": "Temple Bar — Dublin",
+      "country": "Ireland",
+      "region": "Dublin",
+      "provider": "EarthCam",
+      "quality": 94,
+      "moment": 98,
+      "category": "Cities & Culture",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "little-bay-sint-maarten",
+      "title": "Little Bay Beach — Sint Maarten",
+      "country": "Sint Maarten",
+      "region": "Philipsburg",
+      "provider": "EarthCam",
+      "quality": 95,
+      "moment": 97,
+      "category": "Water",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "new-york-harbor",
+      "title": "New York Skyline — Jersey City",
+      "country": "United States",
+      "region": "New York / New Jersey",
+      "provider": "EarthCam",
+      "quality": 95,
+      "moment": 96,
+      "category": "Cities & Culture",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "rome-spanish-steps",
+      "title": "Rome — Spanish Steps",
+      "country": "Italy",
+      "region": "Rome",
+      "provider": "SkylineWebcams",
+      "quality": 91,
+      "moment": 96,
+      "category": "Cities & Culture",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "vienna-city-hall-ringstrasse",
+      "title": "Vienna — City Hall & Ringstrasse",
+      "country": "Austria",
+      "region": "Vienna",
+      "provider": "Vienna Tourist Board",
+      "quality": 94,
+      "moment": 93,
+      "category": "Cities & Culture",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "chamonix-mont-blanc",
+      "title": "Chamonix – Mont-Blanc",
+      "country": "France",
+      "region": "Chamonix",
+      "provider": "Chamonix-Mont-Blanc Tourism",
+      "quality": 91,
+      "moment": 94,
+      "category": "Mountains",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "addo-elephant-national-park",
+      "title": "Addo Elephant National Park",
+      "country": "South Africa",
+      "region": "Eastern Cape",
+      "provider": "SANParks",
+      "quality": 91,
+      "moment": 94,
+      "category": "Wildlife",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "kyoto-hanamikoji",
+      "title": "Kyoto — Hanamikoji Street",
+      "country": "Japan",
+      "region": "Kyoto",
+      "provider": "Kyoto City Tourism Association",
+      "quality": 90,
+      "moment": 95,
+      "category": "Cities & Culture",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "rovaniemi-santa-claus-village",
+      "title": "Rovaniemi — Santa Claus Village",
+      "country": "Finland",
+      "region": "Rovaniemi, Lapland",
+      "provider": "Santa Claus Village / City of Rovaniemi",
+      "quality": 91,
+      "moment": 94,
+      "category": "Mountains",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "boulders-beach",
+      "title": "Boulders Beach — African Penguins",
+      "country": "South Africa",
+      "region": "Table Mountain National Park",
+      "provider": "SANParks",
+      "quality": 90,
+      "moment": 94,
+      "category": "Wildlife",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "kijihiki-plateau",
+      "title": "Kijihiki Plateau",
+      "country": "Japan",
+      "region": "Hokkaido",
+      "provider": "Hokuto City, Hokkaido",
+      "quality": 92,
+      "moment": 91,
+      "category": "Mountains",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "roque-observatory",
+      "title": "Roque de los Muchachos Observatory",
+      "country": "Spain",
+      "region": "La Palma",
+      "provider": "Instituto de Astrofísica de Canarias / Gran Telescopio CANARIAS",
+      "quality": 93,
+      "moment": 90,
+      "category": "Other",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "whistler-blackcomb",
+      "title": "Whistler Blackcomb",
+      "country": "Canada",
+      "region": "Whistler",
+      "provider": "Whistler Blackcomb",
+      "quality": 90,
+      "moment": 92,
+      "category": "Mountains",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "queenstown-airport-alps",
+      "title": "Queenstown Airport & Alps",
+      "country": "New Zealand",
+      "region": "Queenstown",
+      "provider": "Queenstown Airport",
+      "quality": 83,
+      "moment": 80,
+      "category": "Other",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    },
+    {
+      "placeId": "mpala-watering-hole",
+      "title": "Mpala Watering Hole",
+      "country": "Kenya",
+      "region": "Laikipia",
+      "provider": "Mpala Research Centre / Explore.org",
+      "quality": 90,
+      "moment": 0,
+      "category": "Wildlife",
+      "rationale": "Healthy source; high editorial quality/moment score; selected under country/category diversity caps."
+    }
+  ]
+}
