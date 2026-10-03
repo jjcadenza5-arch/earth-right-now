@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T04:20:00Z",
+  "generatedAt": "2026-10-03T03:40:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 91,
+    "currentHealthyDistinctPlaceBaseline": 100,
     "targetRange": [
       150,
       200
     ],
-    "strategy": "Add only genuinely distinct useful places; prefer official tourism/government/provider pages; human playback verification required before promotion.",
+    "strategy": "Add genuinely distinct useful places using two truth lanes: verified live/current sources for Watch/featured experiences, plus clearly labeled quasi-live refreshed images/recent official imagery for Search/Explore. Quasi-live never masquerades as live video.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -25,7 +25,7 @@
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
     "researchCandidateCount": 112,
-    "playbackGatedCandidateCount": 108,
+    "playbackGatedCandidateCount": 99,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan",
       "adjacentHighValueChecks": [
@@ -61,7 +61,22 @@
       "Nicaragua — INETER real-time volcano image family",
       "Ecuador — IG-EPN volcano visual-monitoring family",
       "KenyaLIVE — KWS daily wildlife live program"
-    ]
+    ],
+    "quasiLivePolicy": {
+      "searchableAllowed": true,
+      "watchEarthDefault": false,
+      "accepted": [
+        "frequently refreshed official webcam stills",
+        "official current monitoring images",
+        "recent provider-published images with reliable timestamps"
+      ],
+      "required": [
+        "clear LIVE_IMAGE/current-image labeling",
+        "freshness evidence",
+        "official/provider source",
+        "no prerecorded-as-live claims"
+      ]
+    }
   },
   "businessLane": {
     "activePartners": [
@@ -132,8 +147,8 @@
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 16,
-    "exactLinkQueueCount": 27,
-    "sourceGatedQueueCount": 37,
+    "exactLinkQueueCount": 32,
+    "sourceGatedQueueCount": 34,
     "sourceGapBlockedCount": 1,
     "sourceGatedOpportunityCount": 31
   },
