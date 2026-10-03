@@ -224,3 +224,13 @@ Candidate-state reconciliation:
 - Business-source gates were advanced only where the corresponding ERN place is now searchable.
 - Current commercial queue state: {"VERIFIED_LINK_ADDED":16,"ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED":63,"SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK":27,"SOURCE_GAP_MUST_BE_SOLVED_FIRST":1}.
 - Stretch target remains ~200 useful searchable places; current gap to 200 is 39.
+
+
+## Second quasi-live tranche — 05:30 UTC
+
+- Healthy/searchable distinct places: **172**
+- Source records: **179**
+- Remaining to 200-place stretch target: **28**
+- Newly searchable: Kilpisjärvi, Rochers-de-Naye/Montreux, Innsbruck city, Nordkette, Patscherkofel, Kühtai, Maho Beach, Great Bay/Philipsburg, Satara, Olifants and Mendoza.
+- Newly advanced commercial research: Mendoza, St. Maarten, Innsbruck/Tyrol, Montreux, Kilpisjärvi and Kruger.
+- Truth and commercial safeguards unchanged.
