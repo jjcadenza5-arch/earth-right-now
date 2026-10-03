@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:30:00Z",
+  "generatedAt": "2026-10-03T13:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2714,6 +2714,90 @@
       "reason": "City-pass utility naturally follows Chicago skyline/museum-campus discovery.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Confirm Chicago Go City coverage and generate one tracked link."
+    },
+    {
+      "id": "tiqets-brussels",
+      "destination": "Brussels",
+      "placeIds": [
+        "brussels-city"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "ERN now has official City of Brussels current views and Tiqets has deep Brussels attraction/pass inventory including Grand Place-related city experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/brussels-attractions-c60843/",
+      "nextAction": "Generate one Brussels destination-level Tiqets tracked link and verify it manually before public activation."
+    },
+    {
+      "id": "viator-heidelberg",
+      "destination": "Heidelberg",
+      "placeIds": [
+        "heidelberg"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Heidelberg tourism current-view place and Viator has substantial Heidelberg walking, castle and city-tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Heidelberg/d24030-ttd",
+      "nextAction": "Generate one Heidelberg destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-nuremberg",
+      "destination": "Nuremberg",
+      "placeIds": [
+        "nuremberg"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Nuremberg real-time panorama and Viator has broad Nuremberg Old Town/history/sightseeing inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Nuremberg/d5628-ttd",
+      "nextAction": "Generate one Nuremberg destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-cannes",
+      "destination": "Cannes",
+      "placeIds": [
+        "cannes"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Cannes live/current discovery view and Viator has extensive Cannes/French Riviera cruise, boat and sightseeing inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Cannes/d786-ttd",
+      "nextAction": "Generate one Cannes destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-plitvice",
+      "destination": "Plitvice Lakes National Park",
+      "placeIds": [
+        "plitvice-lakes"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Plitvice Lakes livestream discovery place and Viator has dedicated park admission and guided-tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Plitvice-Lakes-National-Park/d27086-ttd",
+      "nextAction": "Generate one Plitvice Lakes destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-aalborg",
+      "destination": "Aalborg",
+      "placeIds": [
+        "denmark-aalborg-zoo"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has a current Aalborg Zoo wildlife view and Viator has active Aalborg walking, culture and transfer inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Aalborg/d4186-ttd",
+      "nextAction": "Only activate if the destination-level Aalborg link is clean and useful; keep the zoo camera editorially independent."
     }
   ]
 }
