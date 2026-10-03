@@ -675,6 +675,66 @@
       "priority": "P2",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Open the official Tainan-filtered Live Taiwan page and confirm Jingzaijiao Salt Fields visibly updates."
+    },
+    {
+      "id": "sanparks-satara",
+      "title": "Satara — Kruger National Park",
+      "country": "South Africa",
+      "region": "Kruger National Park",
+      "provider": "SANParks",
+      "sourcePage": "https://www.sanparks.org/travel/webcams/video/satara",
+      "exactTargetUrl": "https://www.sanparks.org/travel/webcams/video/satara",
+      "exactTargetType": "OFFICIAL_PARK_LIVE_VIDEO_PAGE",
+      "evidence": "SANParks' official Satara webcam page publishes live video from Satara Rest Camp in Kruger National Park and notes an approximately ten-minute video-time difference for stream stability.",
+      "researchEvidence": "Official SANParks webcam index lists Satara under live Videos.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Satara video page and confirm the wildlife video is actively updating."
+    },
+    {
+      "id": "sanparks-olifants",
+      "title": "Olifants — Kruger National Park",
+      "country": "South Africa",
+      "region": "Kruger National Park",
+      "provider": "SANParks",
+      "sourcePage": "https://www.sanparks.org/travel/webcams/video/olifants",
+      "exactTargetUrl": "https://www.sanparks.org/travel/webcams/video/olifants",
+      "exactTargetType": "OFFICIAL_PARK_LIVE_VIDEO_PAGE",
+      "evidence": "SANParks' official Olifants webcam page publishes live video from Olifants Rest Camp overlooking the Olifants River landscape.",
+      "researchEvidence": "Official SANParks webcam index lists Olifants under live Videos.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Olifants video page and confirm the video is actively updating."
+    },
+    {
+      "id": "sanparks-punda-maria",
+      "title": "Punda Maria — Kruger National Park",
+      "country": "South Africa",
+      "region": "Kruger National Park",
+      "provider": "SANParks",
+      "sourcePage": "https://www.sanparks.org/travel/webcams/still/punda-maria",
+      "exactTargetUrl": "https://www.sanparks.org/travel/webcams/still/punda-maria",
+      "exactTargetType": "OFFICIAL_PARK_LIVE_IMAGE_PAGE",
+      "evidence": "SANParks' official Punda Maria webcam page publishes still images from Punda Maria Rest Camp and states that webcam photos update every few minutes.",
+      "researchEvidence": "Official SANParks webcam index lists Punda Maria among current still webcams.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Punda Maria still-cam page and confirm the image timestamp/content refreshes."
+    },
+    {
+      "id": "sanparks-talamati",
+      "title": "Talamati — Kruger National Park",
+      "country": "South Africa",
+      "region": "Kruger National Park",
+      "provider": "SANParks",
+      "sourcePage": "https://www.sanparks.org/travel/webcams/still/talamati",
+      "exactTargetUrl": "https://www.sanparks.org/travel/webcams/still/talamati",
+      "exactTargetType": "OFFICIAL_PARK_LIVE_IMAGE_PAGE",
+      "evidence": "SANParks' official Talamati webcam page publishes still images from Talamati Bushveld Camp and states webcam photos update every few minutes.",
+      "researchEvidence": "Official SANParks webcam index lists Talamati among current still webcams.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the official Talamati still-cam page and confirm the image refreshes."
     }
   ],
   "notes": [
@@ -687,6 +747,7 @@
     "2026-10-03 reduced owner verification friction for Salzburg, Innsbruck and Malta by recording direct official tourism camera pages and explicit check instructions.",
     "2026-10-03 public-web evidence rechecked for Salzburg, Innsbruck, Tallinn and Malta against official tourism/attraction pages. These candidates remain research-only pending human playback confirmation.",
     "2026-10-03 large-batch research expanded the official Innsbruck Tourism family into eight distinct, non-duplicate place candidates spanning city, mountain, village and attraction views. All remain fail-closed until playback is human-confirmed.",
-    "2026-10-03 large-batch Asia expansion added eight distinct Taiwan Tourism Administration Live Taiwan candidates spanning Taipei, New Taipei, Taichung, Hualien and Tainan. Official pages mark each selected camera as operating; ERN still requires human playback confirmation before promotion."
+    "2026-10-03 large-batch Asia expansion added eight distinct Taiwan Tourism Administration Live Taiwan candidates spanning Taipei, New Taipei, Taichung, Hualien and Tainan. Official pages mark each selected camera as operating; ERN still requires human playback confirmation before promotion.",
+    "2026-10-03 Africa expansion added four official SANParks camera candidates: Satara, Olifants, Punda Maria and Talamati. Nossob was intentionally not duplicated because it already exists in the live ERN registry."
   ]
 }
