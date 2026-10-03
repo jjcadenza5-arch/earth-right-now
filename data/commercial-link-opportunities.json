@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T04:05:00Z",
+  "generatedAt": "2026-10-03T04:25:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1037,6 +1037,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Panama-City/d950-ttd",
       "publicInventoryEvidence": "Current Viator Panama City inventory includes canal sightseeing, Miraflores Visitor Center, Gatún Lake and tours covering Agua Clara/Gatún Locks.",
       "nextAction": "After at least one official Panama Canal lock camera is human-confirmed and promoted, generate one Panama Canal/Panama City Viator partner link and reuse it across the verified lock family."
+    },
+    {
+      "id": "viator-nairobi-national-park-future",
+      "destination": "Nairobi National Park",
+      "placeIds": [
+        "kenyalive-nairobi-national-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "KWS has launched KenyaLIVE at Nairobi National Park, while current Viator Nairobi inventory has extensive Nairobi National Park safari products. Commercial activation must wait until ERN verifies a park-specific current KWS live source.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Nairobi/d5280-ttd",
+      "publicInventoryEvidence": "Current Viator Nairobi inventory includes multiple Nairobi National Park half-day and full-day safari products.",
+      "nextAction": "After KenyaLIVE is human-confirmed as a current Nairobi National Park feed and promoted, generate one Nairobi National Park Viator partner link and verify it manually before public activation."
     }
   ]
 }
