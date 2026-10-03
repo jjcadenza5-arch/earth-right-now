@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T04:15:00Z",
+  "generatedAt": "2026-10-03T03:40:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1063,10 +1063,11 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Poás has an official observatory current-image source candidate and Klook currently lists a Poás Volcano full-day tour from San José.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/activity/203114-poas-volcano-la-paz-waterfall-coffee-full-day-tour/",
       "publicInventoryEvidence": "Klook currently lists a Poás Volcano, La Paz Waterfall and coffee full-day tour with 2026 availability.",
-      "nextAction": "After Poás current-image verification and promotion, generate one Costa Rica/Poás Klook tracked link and verify it manually."
+      "nextAction": "After Poás current-image verification and promotion, generate one Costa Rica/Poás Klook tracked link and verify it manually. Generate and manually verify one exact tracked link before public activation.",
+      "sourceGateClearedAt": "2026-10-03T03:40:00Z"
     },
     {
       "id": "viator-rincon-costa-rica-future",
@@ -1078,10 +1079,11 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Rincón has an official near-real-time OVSICORI camera candidate and Viator currently lists Rincón de la Vieja nature/day-trip inventory from Liberia/Guanacaste.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Liberia/Costa-Rica/day-trips-d22740-d747",
       "publicInventoryEvidence": "Current Viator Liberia/Costa Rica inventory includes Rincón de la Vieja nature day trips.",
-      "nextAction": "After the Rincón camera is promoted, generate one destination-level Viator link and verify it before activation."
+      "nextAction": "generate one destination-level Viator link and verify it before activation. Generate and manually verify one exact tracked link before public activation.",
+      "sourceGateClearedAt": "2026-10-03T03:40:00Z"
     },
     {
       "id": "viator-cotopaxi-future",
@@ -1093,10 +1095,11 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Cotopaxi has an official IG-EPN camera family and Viator currently sells Ecuador itineraries and day-trip products featuring Cotopaxi.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/es-ES/tours/Cuenca/4-Day-Magic-Tour-Cuenca-Devils-Nose-Train-Banos-Quilotoa-Cotopaxi-and-Quito/d23726-30796P43",
       "publicInventoryEvidence": "Current Viator inventory includes active Cotopaxi itineraries in Ecuador.",
-      "nextAction": "After a reliable Cotopaxi visual source is promoted, generate a clean Cotopaxi/Quito destination link rather than a mismatched product URL."
+      "nextAction": "generate a clean Cotopaxi/Quito destination link rather than a mismatched product URL. Generate and manually verify one exact tracked link before public activation.",
+      "sourceGateClearedAt": "2026-10-03T03:40:00Z"
     },
     {
       "id": "viator-nicaragua-volcanoes-future",
@@ -1279,6 +1282,36 @@
       "verifiedPartners": [
         "klook"
       ]
+    },
+    {
+      "id": "viator-irazu",
+      "destination": "Irazú Volcano / Cartago",
+      "placeIds": [
+        "costa-rica-irazu"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official refreshed Irazú monitoring source and Viator currently carries Irazú/Cartago day-tour inventory from San José.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/San-Jose/d793-ttd",
+      "publicInventoryEvidence": "Current Viator San José inventory includes Irazú Volcano + Cartago/Orosi day-trip products.",
+      "nextAction": "Generate a destination-appropriate Irazú/Cartago Viator partner link and manually verify it; do not use a generic San José link if a cleaner destination/product route is available."
+    },
+    {
+      "id": "viator-turrialba",
+      "destination": "Turrialba Volcano",
+      "placeIds": [
+        "costa-rica-turrialba-crater"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has an official refreshed Turrialba crater source. Visitor utility exists for volcano/nature planning, but exact Viator inventory fit should be confirmed before activation.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/San-Jose/d793-ttd",
+      "publicInventoryEvidence": "Viator currently maintains broad San José/Central Valley volcano and nature inventory; exact Turrialba-specific partner-link suitability still requires account search.",
+      "nextAction": "Search Viator partner tools for a clean Turrialba-specific destination/product link; skip activation if only weak generic inventory is available."
     }
   ]
 }
