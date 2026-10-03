@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T10:40:00Z",
+  "evidenceBasis": "Owner screenshots of the Earthrightnow Travelpayouts account on 2026-10-03 show a large visible program catalog, with some programs exposing Generate links and others remaining not yet unlocked/activated for ERN.",
+  "strategy": "Do not chase locked programs. Grow useful traffic and measurable trip-planning engagement with already-available partners; recheck the highest-value locked programs only after meaningful growth.",
+  "currentGoal": "FIRST_ELIGIBLE_TRANSACTION_AND_TRAFFIC_EVIDENCE",
+  "unlockLaterPriority": [
+    {
+      "tier": "P1_STAYS",
+      "programs": [
+        "trip-com",
+        "hotels-com",
+        "agoda",
+        "expedia"
+      ],
+      "why": "Accommodation is ERN's largest commercial-category gap."
+    },
+    {
+      "tier": "P1_EXPERIENCE_BREADTH",
+      "programs": [
+        "getyourguide",
+        "tripadvisor-experiences"
+      ],
+      "why": "Useful where Viator/Klook/Tiqets inventory is thin."
+    },
+    {
+      "tier": "P2_TRANSPORT",
+      "programs": [
+        "omio",
+        "12go",
+        "traveloka",
+        "discovercars"
+      ],
+      "why": "Useful after destination intent is established."
+    },
+    {
+      "tier": "P2_ALT_STAYS",
+      "programs": [
+        "hostelworld",
+        "vrbo",
+        "vio-com",
+        "rakuten-travel-intl"
+      ],
+      "why": "Specialized lodging once core hotel coverage unlocks."
+    },
+    {
+      "tier": "P3_SERVICES",
+      "programs": [
+        "ticketmaster",
+        "visitorscoverage",
+        "insubuy"
+      ],
+      "why": "Potentially useful later, but not a current monetization bottleneck."
+    }
+  ],
+  "recheckTriggers": {
+    "noInventedTrafficThreshold": true,
+    "triggerOnMeaningfulGrowth": [
+      "sustained organic visitor growth",
+      "repeat travel_option_opened activity across multiple destinations",
+      "first confirmed affiliate conversion or commission",
+      "Travelpayouts account itself changes a program to an available/link-generation state"
+    ],
+    "note": "Do not invent numeric unlock thresholds because Travelpayouts has not provided ERN-specific thresholds in the owner evidence."
+  },
+  "useNowPriority": [
+    {
+      "id": "airalo",
+      "role": "connectivity",
+      "why": "Global eSIM utility across many destinations."
+    },
+    {
+      "id": "radical-storage",
+      "role": "city utility",
+      "why": "Luggage storage is useful after city discovery and requires little destination-specific editorial maintenance."
+    },
+    {
+      "id": "go-city",
+      "role": "city pass",
+      "why": "Useful in major cities where it adds a distinct visitor-planning option."
+    },
+    {
+      "id": "kiwitaxi",
+      "role": "airport transfer",
+      "why": "Can extend transfer coverage where Welcome Pickups is absent."
+    },
+    {
+      "id": "aviasales",
+      "role": "flights",
+      "why": "Global flight planning can sit downstream from destination discovery."
+    }
+  ],
+  "safeguards": {
+    "publicPlacementRequiresExactTrackedLink": true,
+    "ownerOpenVerificationRequired": true,
+    "affiliateDisclosureRequired": true,
+    "noPaidRanking": true,
+    "noAutomaticPlacement": true,
+    "noAutomaticLinkRewriting": true,
+    "destinationDiscoveryComesFirst": true
+  }
+}
