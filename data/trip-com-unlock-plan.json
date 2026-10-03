@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T16:55:00Z",
+  "program": "trip-com",
+  "currentState": "VISIBLE_NOT_UNLOCKED_WAIT_FOR_TRAFFIC",
+  "publicActivationAllowed": false,
+  "activationTrigger": "Travelpayouts explicitly unlocks/enables Trip.com for ERN and owner confirms tracked-link generation works.",
+  "reason": "Trip.com is the preferred future unlock because one program can potentially cover accommodation plus transport/activity planning across many ERN destinations.",
+  "rules": {
+    "doNotRecheckOnCalendar": true,
+    "exactCoverageCheckAfterUnlock": true,
+    "exactTrackedLinkRequired": true,
+    "oneDestinationLevelLinkPreferred": true,
+    "noPaidRanking": true,
+    "noAutomaticPlacement": true,
+    "noAutomaticRewriting": true,
+    "discoveryBeforeCommerce": true
+  },
+  "firstWave": [
+    {
+      "rank": 1,
+      "destination": "Bangkok",
+      "placeIds": [
+        "bangkok-sukhumvit-road"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "High travel intent, active ERN place, broad trip-planning utility."
+    },
+    {
+      "rank": 2,
+      "destination": "Singapore",
+      "placeIds": [
+        "singapore-port-area"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Strong city/arrival planning fit."
+    },
+    {
+      "rank": 3,
+      "destination": "Kyoto",
+      "placeIds": [
+        "kyoto-hanamikoji",
+        "kyoto-kiyomizuzaka",
+        "kyoto-nishiki-market",
+        "kyoto-kifune-shrine",
+        "kyoto-fushimi-inari"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "ERN has a deep Kyoto place family and high trip-planning intent."
+    },
+    {
+      "rank": 4,
+      "destination": "Seoul",
+      "placeIds": [
+        "seoul-plaza",
+        "seoul-gwanghwamun-plaza",
+        "seoul-cheonggye-plaza"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Strong East Asia city coverage and high visitor utility."
+    },
+    {
+      "rank": 5,
+      "destination": "Hong Kong",
+      "placeIds": [
+        "hong-kong-victoria-harbour",
+        "hong-kong-victoria-peak",
+        "hong-kong-tai-mo-shan"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Major Asia destination with multiple ERN discovery places."
+    },
+    {
+      "rank": 6,
+      "destination": "Rome",
+      "placeIds": [
+        "rome-spanish-steps"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "High-value city destination already proven useful for downstream planning."
+    },
+    {
+      "rank": 7,
+      "destination": "London",
+      "placeIds": [
+        "london-savoy-place",
+        "london-abbey-road-crossing"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Major city with multiple healthy ERN places."
+    },
+    {
+      "rank": 8,
+      "destination": "Vienna",
+      "placeIds": [
+        "vienna-city-hall-ringstrasse"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Strong culture/city planning fit."
+    },
+    {
+      "rank": 9,
+      "destination": "Prague",
+      "placeIds": [
+        "prague-petrin-tower",
+        "prague-old-town-hall",
+        "prague-old-town-bridge-tower",
+        "prague-powder-tower",
+        "prague-st-nicholas-bell-tower",
+        "prague-lesser-town-bridge-tower"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Deep ERN landmark family and high city visitor intent."
+    },
+    {
+      "rank": 10,
+      "destination": "Helsinki",
+      "placeIds": [
+        "helsinki-market-square-south-harbour"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "City/harbour discovery can naturally lead to trip planning."
+    },
+    {
+      "rank": 11,
+      "destination": "Auckland",
+      "placeIds": [
+        "auckland-viaduct-harbour"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Established ERN affiliate destination with strong arrival/stay utility."
+    },
+    {
+      "rank": 12,
+      "destination": "Cape Town",
+      "placeIds": [
+        "cape-town-waterfront",
+        "blouberg-table-mountain"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Strong destination depth and visitor-planning relevance."
+    },
+    {
+      "rank": 13,
+      "destination": "Cancún",
+      "placeIds": [
+        "cancun-live-aqua-beach"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Resort destination where accommodation is a core visitor need."
+    },
+    {
+      "rank": 14,
+      "destination": "Aruba",
+      "placeIds": [
+        "druif-beach-aruba",
+        "aruba-palm-beach",
+        "aruba-eagle-beach"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Three healthy beach places make stay planning especially relevant."
+    },
+    {
+      "rank": 15,
+      "destination": "Maldives",
+      "placeIds": [
+        "kuredu-island-maldives"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Accommodation is central to island travel intent."
+    },
+    {
+      "rank": 16,
+      "destination": "Santorini",
+      "placeIds": [
+        "santorini-imerovigli"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Strong accommodation-led destination intent."
+    },
+    {
+      "rank": 17,
+      "destination": "Dubrovnik",
+      "placeIds": [
+        "dubrovnik-city"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "City/coast discovery with strong visitor-planning potential."
+    },
+    {
+      "rank": 18,
+      "destination": "Zermatt",
+      "placeIds": [
+        "zermatt-matterhorn"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Mountain destination where lodging/transport planning is essential."
+    },
+    {
+      "rank": 19,
+      "destination": "Barbados",
+      "placeIds": [
+        "barbados-paynes-bay"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Beach/resort discovery maps naturally to accommodation planning."
+    },
+    {
+      "rank": 20,
+      "destination": "Taipei / North Taiwan",
+      "placeIds": [
+        "taiwan-elephant-mountain",
+        "taiwan-tamsui-fishermans-wharf",
+        "taiwan-yehliu",
+        "taiwan-baisha-bay",
+        "taiwan-laomei-green-reef"
+      ],
+      "intent": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "reason": "Strong Taiwan cluster suitable for a broad first-wave account coverage test."
+    }
+  ],
+  "afterUnlockWorkflow": [
+    "Confirm Trip.com status is active/unlocked in Travelpayouts.",
+    "Generate one tracked destination-level link for 3–5 first-wave destinations, not all 20.",
+    "Open each generated link manually and verify destination + attribution/tracking.",
+    "Add only verified links to ERN planning surfaces downstream from discovery.",
+    "Measure aggregate outbound clicks/conversions before expanding the next wave."
+  ],
+  "note": "Preparation only. This file does not assert current Trip.com coverage or activate any public commercial surface."
+}
