@@ -3200,6 +3200,42 @@
       "promotedAt": "2026-10-03T15:55:00Z",
       "evidence": "Odjo d'Água states its Santa Maria Bay webcam is live daily and 24 hours a day.",
       "verification": "Provider-published live page; added LINK_ONLY."
+    },
+    {
+      "id": "krakow-main-square-current",
+      "title": "Kraków — Main Market Square",
+      "country": "Poland",
+      "region": "Kraków",
+      "provider": "City of Kraków",
+      "sourcePage": "https://krakow.pl/250165,artykul,rynek-glowny--z-palacu-krzysztofory-.html",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "verifiedAt": "2026-10-03T16:15:00Z",
+      "verification": "Official City of Kraków online-camera page confirmed current; promoted conservatively as LIVE_IMAGE/Search-Explore with Watch hold."
+    },
+    {
+      "id": "krakow-wawel-vistula-current",
+      "title": "Kraków — Wawel & Vistula Bend",
+      "country": "Poland",
+      "region": "Kraków",
+      "provider": "City of Kraków",
+      "sourcePage": "https://www.krakow.pl/start/1849,artykul,kamery_-_wawel.html",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "verifiedAt": "2026-10-03T16:15:00Z",
+      "verification": "Official City of Kraków online-camera page confirmed current; promoted conservatively as LIVE_IMAGE/Search-Explore with Watch hold."
+    },
+    {
+      "id": "krakow-zakrzowek-current",
+      "title": "Kraków — Zakrzówek",
+      "country": "Poland",
+      "region": "Kraków",
+      "provider": "City of Kraków",
+      "sourcePage": "https://www.krakow.pl/273326,artykul,zakrzowek--widok-na-kapielisko-.html",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "verifiedAt": "2026-10-03T16:15:00Z",
+      "verification": "Official City of Kraków online-camera page confirmed current; promoted conservatively as LIVE_IMAGE/Search-Explore with Watch hold."
     }
   ],
   "notes": [
@@ -3263,7 +3299,8 @@
     "2026-10-03 Cook Islands batch: Aitutaki Lagoon, Tamanu Beach, Avaavaroa Beach and Rarotonga Airport promoted as searchable quasi-live LIVE_IMAGE places from official Cook Islands Airports current-image pages.",
     "2026-10-03 island quality batch promoted Kuredu Maldives, Paynes Bay Barbados and Santa Maria Bay Cape Verde from provider-published live webcam pages.",
     "2026-10-03 16:10Z quality batch promoted eight official Taiwan current-image places and two New Zealand regional-council current views. All are LIVE_IMAGE/Search-Explore only with featuredHold/watchHold; no Watch Earth live-video claim.",
-    "2026-10-03 15:55Z promoted Palm Beach and Eagle Beach from the official Aruba Tourism Authority live-webcam family as conservative LIVE_IMAGE Search/Explore sources; Watch Earth remains held."
+    "2026-10-03 15:55Z promoted Palm Beach and Eagle Beach from the official Aruba Tourism Authority live-webcam family as conservative LIVE_IMAGE Search/Explore sources; Watch Earth remains held.",
+    "2026-10-03 quality-first expansion added three distinct official City of Kraków current-camera places. They are searchable LIVE_IMAGE/quasi-live sources with Watch Earth held separately."
   ],
   "researchGaps": [
     {
