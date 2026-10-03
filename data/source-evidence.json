@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T10:30:00Z",
-  "note": "Verbose provenance/evidence moved out of runtime source catalog to preserve ERN's strict production-size budget. Truth fields, URLs, timestamps, location, health and visitor-facing content remain in data/sources.json.",
+  "generatedAt": "2026-10-03T11:42:00Z",
+  "note": "Verbose provenance/evidence moved out of runtime source catalog to preserve ERN's strict production-size budget. Runtime records retain concise nonempty truth/provenance/freshness markers; full evidence remains here.",
   "sources": {
     "auckland-viaduct-harbour": {
       "freshnessEvidence": "Deployed-origin human review on 2026-09-25 confirmed the official Auckland Viaduct YouTube channel-live player delivers current live content after the visitor presses Play. Deployed-origin human review on 2026-09-27 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-28 confirmed the exact current ERN embed target was visibly playing/current. Deployed-origin human review on 2026-09-29 confirmed the exact current ERN embed target was visibly playing/current (review batch bd51ac5733059f3f). Independent provider-page recheck on 2026-09-29 confirmed the official Viaduct Harbour page still publishes an 'Auckland Viaduct View — live' stream. Source currentness refreshed independently of human playback proof. Deployed-origin human review on 2026-09-30 confirmed the exact current ERN embed target visibly playing/current (review batch 0b51cbc04e9598b8).",
@@ -1155,6 +1155,56 @@
       "freshnessEvidence": "Official ATCS Kota Denpasar page rechecked 2026-10-03; it explicitly states real-time live CCTV, 50+ cameras and 24/7 monitoring.",
       "rightsBasis": "Official Denpasar municipal ATCS live-streaming service; ERN keeps playback link-only and does not infer embed/restream permission.",
       "coordinateNote": "Denpasar city reference for map discovery; camera network contains multiple locations."
+    },
+    "andorra-pal-arinsal-current": {
+      "rightsBasis": "Official Visit Andorra page exposes live webcams for real-time resort conditions; ERN links externally and does not republish imagery.",
+      "freshnessEvidence": "Visit Andorra explicitly labels Pal Arinsal webcams as live and for checking real-time conditions.",
+      "coordinateNote": "Representative Pal Arinsal resort reference; not claimed as the exact camera position."
+    },
+    "andorra-grandvalira-current": {
+      "rightsBasis": "Official Visit Andorra page exposes live webcams for real-time resort conditions; ERN links externally and does not republish imagery.",
+      "freshnessEvidence": "Visit Andorra explicitly says Grandvalira live webcams show real-time resort conditions.",
+      "coordinateNote": "Representative Grandvalira/Soldeu resort reference; not claimed as the exact camera position."
+    },
+    "reunion-roches-noires-current": {
+      "rightsBasis": "Official La Réunion Tourism webcam page; ERN links externally and does not republish imagery.",
+      "freshnessEvidence": "La Réunion Tourism states the Roches Noires panoramic photo lets visitors view current sunshine, bathing conditions and safety flags.",
+      "coordinateNote": "Representative Roches Noires beach reference; not claimed as exact camera position."
+    },
+    "andorra-naturland-current": {
+      "rightsBasis": "Official Visit Andorra page exposes live webcams for real-time conditions; ERN links externally and does not republish imagery.",
+      "freshnessEvidence": "Visit Andorra says Naturland live webcams show real-time center conditions.",
+      "coordinateNote": "Visit Andorra publishes this coordinate for Naturland cota 1600; not claimed as the exact camera position."
+    },
+    "reunion-boucan-canot-current": {
+      "rightsBasis": "Official La Réunion Tourism webcam page; ERN links externally and does not republish imagery.",
+      "freshnessEvidence": "La Réunion Tourism describes the Boucan Canot HD panorama as live/almost-live and provides a webcam/weather-station interface.",
+      "coordinateNote": "Representative Boucan Canot beach reference; not claimed as exact camera position."
+    },
+    "reunion-piton-fournaise-current": {
+      "rightsBasis": "Official La Réunion Tourism / IPGP-OVPF webcam page; ERN links externally and does not republish imagery.",
+      "freshnessEvidence": "The official page states Full HD volcano video/panorama imagery is updated every 30 minutes, day and night.",
+      "coordinateNote": "Representative volcano reference; not claimed as exact camera position."
+    },
+    "azores-sao-miguel-current": {
+      "rightsBasis": "Official Visit Azores webcam network; ERN links externally and does not republish imagery.",
+      "freshnessEvidence": "Visit Azores maintains an official São Miguel webcam page with multiple current coastal webcam spots.",
+      "coordinateNote": "Representative São Miguel island reference; not claimed as exact camera position."
+    },
+    "reunion-trou-deau-current": {
+      "rightsBasis": "Official La Réunion Tourism webcam page; ERN links externally and does not republish imagery.",
+      "freshnessEvidence": "La Réunion Tourism publishes the Trou d’Eau webcam and HD panorama with current weather context.",
+      "coordinateNote": "Representative Trou d’Eau beach reference; not claimed as exact camera position."
+    },
+    "azores-terceira-current": {
+      "rightsBasis": "Official Visit Azores webcam page; ERN links externally and does not republish imagery.",
+      "freshnessEvidence": "Visit Azores currently lists Praia da Vitória as the active webcam spot for Terceira.",
+      "coordinateNote": "Representative Praia da Vitória reference; not claimed as exact camera position."
+    },
+    "azores-santa-maria-current": {
+      "rightsBasis": "Official Visit Azores webcam page; ERN links externally and does not republish imagery.",
+      "freshnessEvidence": "Visit Azores currently lists Formosa as the active webcam spot for Santa Maria.",
+      "coordinateNote": "Representative Santa Maria island reference; not claimed as exact camera position."
     }
   }
 }
