@@ -71,3 +71,13 @@ Large focused expansion batch — 2026-10-03:
 - Accommodation partner research remains fail-closed for Hotels.com and Trip.com until ERN-owner Travelpayouts availability is checked.
 - A consolidated machine-readable operating plan now lives at data/focused-expansion-plan.json.
 - All existing public gates and commercial-neutral ranking safeguards remain unchanged.
+
+
+Large-batch expansion checkpoint — 2026-10-03 02:20 UTC:
+- Performance/release issue resolved without weakening the strict size budget; Pages subsequently achieved a successful deployment with syntax/Operations safeguards intact.
+- Healthy searchable baseline remains 91 distinct places; source research queue expanded to 41 total candidates (4 promoted, 37 playback-gated).
+- Innsbruck official source family expanded with eight distinct city/mountain/village/attraction candidates; no candidate was promoted automatically.
+- Source verification is now prioritized in data/source-verification-priority.json.
+- Business opportunity registry expanded with Tallinn/Tiqets, Malta/Tiqets, Dubrovnik/Viator, Zermatt/Viator, San Diego/Viator and Whistler/Viator research paths.
+- Commercial expansion is now additionally prioritized across uncovered healthy places in data/commercial-priority-matrix.json.
+- Existing four partners remain the preferred expansion path; accommodation candidates remain research-only; all public ranking/commercial safeguards remain unchanged.
