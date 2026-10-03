@@ -644,3 +644,14 @@ Island quality checkpoint — 2026-10-03 16:05 UTC:
 - Existing Aruba/Viator business path now spans Druif Beach, Palm Beach and Eagle Beach rather than creating duplicate per-beach affiliate density.
 - Commercial classification remains complete: 267 healthy places have a researched commercial path, 35 are explicitly editorial-first, zero are unclassified.
 - Near-term business strategy remains: active Viator/Klook/Tiqets/Welcome Pickups + currently owner-link-capable Travelpayouts utilities; Trip.com remains the preferred future unlock but should not be rechecked until traffic/conversion or platform status materially changes.
+
+
+308-place quality/business checkpoint — 2026-10-03 16:35 UTC:
+- Production registry now contains 316 source records / 308 healthy distinct searchable places across 69 countries/territories.
+- Quality-first additions: official City of Kraków Main Market Square, Wawel/Vistula and Zakrzówek current-camera places; UNIS Longyearbyen/Adventfjorden; Hawke's Bay Regional Council Wairoa River; Horizons Regional Council Foxton Beach.
+- All six are conservatively exposed as LIVE_IMAGE/Search-Explore quasi-live sources with Watch Earth held separately; no live-video semantics were weakened.
+- Poland and Svalbard improve geographic breadth. Kraków is grouped under one future Tiqets city-level business path; Longyearbyen gains a Viator research path. Wairoa and Foxton remain intentionally editorial-first.
+- Commercial classification is complete for all 308 healthy places: 271 have a researched commercial path and 37 are explicitly editorial-first; zero remain unclassified.
+- Commercial opportunity registry now contains 194 records: 16 verified-link, 171 exact-link/account-search, 5 source-gated and 2 source-gap records.
+- Runtime sources.json was re-minified after expansion, restoring headroom while keeping verbose provenance in data/source-evidence.json.
+- Travelpayouts strategy remains traffic-led: use current active/link-generation-capable programs now; Trip.com remains the preferred future stay unlock but is not an owner task until traffic/account state changes.
