@@ -655,3 +655,15 @@ Island quality checkpoint — 2026-10-03 16:05 UTC:
 - Commercial opportunity registry now contains 194 records: 16 verified-link, 171 exact-link/account-search, 5 source-gated and 2 source-gap records.
 - Runtime sources.json was re-minified after expansion, restoring headroom while keeping verbose provenance in data/source-evidence.json.
 - Travelpayouts strategy remains traffic-led: use current active/link-generation-capable programs now; Trip.com remains the preferred future stay unlock but is not an owner task until traffic/account state changes.
+
+
+Travelpayouts access-tier checkpoint — 2026-10-03:
+- Owner screenshots and current account mapping confirm ERN should distinguish three states: usable/link-generation available now, selective utility programs, and traffic-gated programs visible but not active.
+- Major stay/travel brands currently traffic-gated include Trip.com, Hotels.com, Expedia, Agoda, Booking.com, Vio.com, Hostelworld, Vrbo and Rakuten Travel; do not force activation or open duplicate direct accounts merely because the catalog card is visible.
+- Trip.com decision: WAIT. It remains strategically attractive because it could fill the stay/transport gap, but recheck only after meaningful traffic growth or a Travelpayouts status change.
+- Current link-generation-available pool is broader than the original four and includes Go City, KKday, Kiwi.com, Kiwitaxi, Localrent, QEEQ, Economybookings, Radical Storage and several eSIM/travel-utility programs.
+- ERN will expand selectively, not by activating every accessible program. data/affiliate-access-strategy.json is canonical for this policy.
+- New immediate business queue uses Go City for New York, London, Chicago and Sydney city-pass coverage; exact tracked links remain owner/account-side and manually verified.
+- Searchable-place research added two new-country lanes: Slovakia (Jasná/Chopok) and Bulgaria (Bansko, Borovets), using official resort camera families and grouped by real destination.
+- Post-200 source growth is now quality-led via data/post200-quality-priority.json: new countries, true-live upgrades, geographic balance, and one-place-country depth before raw count.
+- Owner-action queue remains dormant; no owner interruption is required yet.
