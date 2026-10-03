@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:35:00Z",
+  "generatedAt": "2026-10-03T12:45:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -362,10 +362,11 @@
       "intent": "culture",
       "priority": "P1",
       "reason": "Official Prague camera family is now mapped to exact source targets, and Tiqets has broad Prague attraction inventory including Prague Visitor Pass, castle, towers and river products.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/prague-attractions-c64162/",
       "publicInventoryEvidence": "Tiqets currently lists broad Prague attraction inventory and official Prague Visitor Pass products covering many of the same tower/Old Town landmarks represented by the camera family.",
-      "nextAction": "Do not generate or publish a tracked link until at least one Prague camera target is promoted to the live source registry; then create one city-level Tiqets link rather than duplicate per-camera commercial density."
+      "nextAction": "Generate one Prague city-level Tiqets tracked link and verify it manually; reuse across the verified Prague camera family without duplicate commercial density.",
+      "unlockedBySourceAt": "2026-10-03T12:45:00Z"
     },
     {
       "id": "viator-zermatt",
@@ -698,8 +699,9 @@
       "intent": "activities",
       "priority": "P2",
       "reason": "A verified Karakol mountain/ski camera would create a strong Central Asia trip-planning bridge; Viator account inventory must be checked before activation.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "nextAction": "First promote a verified Karakol live source, then search the Viator partner account for a clean Karakol/Issyk-Kul destination link. Do not use a generic Kyrgyzstan link."
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one Karakol/Issyk-Kul Viator destination-level tracked link and verify it manually before public activation.",
+      "unlockedBySourceAt": "2026-10-03T12:45:00Z"
     },
     {
       "id": "viator-ala-archa-future",
@@ -729,10 +731,11 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Balykchy and Karakol cameras can support Issyk-Kul trip timing; Viator currently has multiple Issyk-Kul day and multi-day products.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Bishkek/Explore-Issyk-Kul-Small-Group-Day-Trip-from-Bishkek/d50202-486587P4",
       "publicInventoryEvidence": "Current Viator Issyk-Kul inventory includes day trips from Bishkek and multi-day routes that explicitly visit Cholpon-Ata, Karakol and the lake.",
-      "nextAction": "After at least one Issyk-Kul-related camera is promoted, generate one suitable Issyk-Kul/Bishkek tracked link; avoid separate duplicate links for every camera."
+      "nextAction": "Generate one Issyk-Kul region Viator tracked link only if it cleanly serves the verified Balykchy/Karakol places; verify manually before public activation.",
+      "unlockedBySourceAt": "2026-10-03T12:45:00Z"
     },
     {
       "id": "klook-pamir-highway-future",
@@ -744,10 +747,11 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Klook currently lists a multi-day Pamir Highway nature/adventure tour spanning Dushanbe, Khorog, Wakhan-side stops, Murghab, Karakul, Kyzyl-Art, Sary-Tash and Osh. This would be a strong See Live → Go bridge if ERN first verifies a truthful Pamir-gateway live source.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "SOURCE_GAP_MUST_BE_SOLVED_FIRST",
       "publicInventoryEvidenceUrl": "https://www.klook.com/activity/213709-pamir-highway-7-day-nature-adventure-tour/",
       "publicInventoryEvidence": "Klook currently lists a Pamir Highway 7-day tour covering multiple Tajik Pamir and Osh-side locations.",
-      "nextAction": "Only after Osh/Pamir-gateway source verification: generate and manually verify one Klook tracked link; label it as Pamir Highway planning, not as the camera location itself."
+      "nextAction": "Only after Osh/Pamir-gateway source verification: generate and manually verify one Klook tracked link; label it as Pamir Highway planning, not as the camera location itself.",
+      "blockReason": "Osh/Sulaiman-Too is a useful Kyrgyz gateway but does not constitute a verified Pamir Mountains/Tajikistan source. Keep Pamir Highway commercial work blocked until ERN has a genuine Pamir-core searchable/current source."
     },
     {
       "id": "klook-ala-archa-future",
