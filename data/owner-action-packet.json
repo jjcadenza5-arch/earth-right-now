@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:05:00Z",
-  "status": "DORMANT_UNTIL_AUTONOMOUS_WORK_STOPS_BEING_THE_BOTTLENECK",
+  "generatedAt": "2026-10-03T12:40:00Z",
+  "status": "DORMANT_UNTIL_OWNER_BATCH_IS_WORTHWHILE",
   "purpose": "Bundle owner-only affiliate link generation and playback checks into worthwhile sessions instead of interrupting ERN expansion one item at a time.",
   "sourceVerificationBatch": [
     "ala-archa-natural-park",
@@ -18,17 +18,18 @@
     "tvoroyri-port-live"
   ],
   "exactAffiliateLinkBatch": [
-    "viator-nuuk",
-    "viator-faroe-islands",
-    "klook-kenting-national-forest",
-    "klook-green-island-taitung",
     "tiqets-vienna",
     "tiqets-georgia-aquarium",
     "tiqets-san-diego-zoo",
     "viator-helsinki",
     "viator-lucerne",
     "viator-cancun",
-    "viator-zermatt"
+    "viator-zermatt",
+    "viator-aruba",
+    "viator-torres-del-paine",
+    "viator-flam",
+    "klook-takayama",
+    "klook-taitung"
   ],
   "utilityProgramBatch": [
     {
@@ -62,7 +63,7 @@
       "reason": "Adds Asia-heavy inventory without waiting for traffic-gated GetYourGuide/Tripadvisor programs."
     }
   ],
-  "lockedProgramRule": "Do not ask the owner to recheck Trip.com, Hotels.com, Booking.com, Agoda, Expedia or other traffic-gated programs until a material traffic/conversion signal or platform status change occurs.",
+  "lockedProgramRule": "Do not ask the owner to recheck Trip.com, Hotels.com, Booking.com, Agoda, Expedia, GetYourGuide or other traffic-gated programs until a material traffic/conversion signal or explicit Travelpayouts status change occurs.",
   "publicActivationAllowed": false,
   "safeguards": [
     "No invented affiliate URLs",
@@ -70,5 +71,7 @@
     "No paid ranking",
     "No automatic rewriting",
     "No source truth changes from commercial value"
-  ]
+  ],
+  "batchRationale": "Small high-intent cross-section across culture, nature, islands and Asia. Generate only when owner action becomes the bottleneck; measure aggregate clicks/conversions before broadening.",
+  "searchablePlaceMilestone": 250
 }
