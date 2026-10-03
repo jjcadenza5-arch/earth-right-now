@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T16:50:00Z",
+  "generatedAt": "2026-10-03T16:35:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -94,7 +94,7 @@
     ],
     "currentCommercialOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 161,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 171,
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 5,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
@@ -104,9 +104,9 @@
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
-    "currentCommercialOpportunityCount": 192,
-    "healthyPlacesWithCommercialPath": 267,
-    "healthyPlacesWithoutCommercialPath": 35,
+    "currentCommercialOpportunityCount": 194,
+    "healthyPlacesWithCommercialPath": 271,
+    "healthyPlacesWithoutCommercialPath": 37,
     "verifiedLinkHealthyPlaces": 19,
     "travelpayoutsTrafficGatedProgramsObserved": true,
     "travelpayoutsTrafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
@@ -145,7 +145,15 @@
     ],
     "travelpayoutsUnlockStrategy": "TRAFFIC_LED_RECHECK_ONLY_ON_STATUS_CHANGE_OR_MATERIAL_GROWTH",
     "nextPreferredUnlock": "trip-com",
-    "nextPreferredUnlockReason": "Trip.com remains the highest-value future unlock because one program could add stay plus transport/activity utility across many ERN destinations; current account state is visible but not unlocked."
+    "nextPreferredUnlockReason": "Trip.com remains the highest-value future unlock because one program could add stay plus transport/activity utility across many ERN destinations; current account state is visible but not unlocked.",
+    "currentSearchableCountries": 69,
+    "sourceRuntimeCatalogChars": 286471,
+    "sourceExpansionCandidateStates": {
+      "PROMOTED_TO_SOURCE_REGISTRY": 58,
+      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 143,
+      "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
+      "HUMAN_PLAYBACK_REQUIRED": 9
+    }
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -180,7 +188,11 @@
     "Traffic-led unlock roadmap created; Trip.com is the P1 future stay-program target",
     "300 healthy searchable places reached with all places intentionally classified as commercial-path or editorial-first",
     "Final 300-place batch added official Taiwan and New Zealand current-image sources without weakening Watch Earth",
-    "Palm Beach and Eagle Beach added as Aruba Tourism Authority searchable current-image places and folded into the existing Aruba business path"
+    "Palm Beach and Eagle Beach added as Aruba Tourism Authority searchable current-image places and folded into the existing Aruba business path",
+    "Official City of Kraków current-camera family added Main Market Square, Wawel/Vistula and Zakrzówek as searchable quasi-live places.",
+    "UNIS Longyearbyen/Adventfjorden plus Wairoa River and Foxton Beach added under conservative LIVE_IMAGE/Search-Explore semantics.",
+    "Kraków city-level Tiqets research path and Longyearbyen/Viator research path added without public activation.",
+    "Runtime sources.json re-minified after the 308-place quality batch; full provenance remains in data/source-evidence.json."
   ],
   "humanOnlyRemaining": [
     {
@@ -235,14 +247,14 @@
     "Do not repeatedly ask owner to recheck locked Travelpayouts programs; recheck only on meaningful traffic/account-state change",
     "Locked/traffic-gated programs may not be treated as active or available"
   ],
-  "currentHealthySearchablePlaces": 302,
+  "currentHealthySearchablePlaces": 308,
   "releaseHealth": {
     "pagesDeployment": "SUCCESS_2026-10-03T14:53Z",
     "operationsCheck": "SUCCESS_2026-10-03T14:53Z",
     "sourceCatalogRuntimeEvidence": "RIGHTS_BASIS_AND_FRESHNESS_EVIDENCE_RETAINED",
     "verboseSourceEvidenceSidecar": "data/source-evidence.json",
     "sourceCatalogArchitecture": "MINIFIED_RUNTIME_CATALOG_PLUS_VERBOSE_EVIDENCE_SIDECAR",
-    "sourceCatalogHeadroom": "HEALTHY_AFTER_MINIFIED_300_PLACE_BATCH",
+    "sourceCatalogHeadroom": "RESTORED_AFTER_308_PLACE_QUALITY_BATCH",
     "lastKnownGreenBaseline": "PAGES_AND_OPERATIONS_GREEN_AFTER_283_PLACE_RECONCILIATION"
   }
 }
