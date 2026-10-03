@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T04:58:00Z",
+  "generatedAt": "2026-10-03T05:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -551,12 +551,13 @@
       "id": "viator-kilauea",
       "destination": "Hawaiʻi Volcanoes National Park / Kīlauea",
       "placeIds": [
-        "kilauea-summit"
+        "kilauea-summit",
+        "mauna-loa-volcano"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN has a healthy Kīlauea Summit source and Viator currently offers multiple Big Island Volcanoes National Park experiences that explicitly visit Kīlauea.",
+      "reason": "ERN has healthy volcano coverage for Kīlauea and Mauna Loa; a Hawaiʻi Volcanoes National Park-level Viator planning link can serve both without duplicating commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Big-Island-of-Hawaii/d669-ttd",
       "publicInventoryEvidence": "Current Viator Big Island inventory includes Hawaii Volcanoes National Park experiences, Kīlauea-focused eco tours and volcano helicopter products.",
@@ -1107,16 +1108,17 @@
       "id": "viator-nicaragua-volcanoes-future",
       "destination": "Nicaragua Volcanoes",
       "placeIds": [
-        "nicaragua-san-cristobal-volcano",
-        "nicaragua-telica-volcano",
-        "nicaragua-momotombo-volcano",
+        "nicaragua-san-cristobal",
+        "nicaragua-telica",
+        "nicaragua-momotombo",
         "nicaragua-masaya-volcano",
-        "nicaragua-concepcion-volcano"
+        "nicaragua-concepcion-volcano",
+        "nicaragua-cerro-negro"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P2",
-      "reason": "INETER provides a credible multi-volcano current-image family and Viator currently markets Nicaragua volcano experiences, including Masaya/Granada itineraries and volcano-focused adventure products.",
+      "reason": "ERN now has canonical official INETER current-image coverage across six Nicaragua volcano places; any eventual Viator link should serve useful Nicaragua volcano planning without duplicate source IDs.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/blog/Bucket-List-Experiences-in-Latin-America-According-to-Viator-Travelers/l114459",
       "publicInventoryEvidence": "Viator currently promotes active Nicaragua volcano experiences and also lists day-trip inventory that includes Masaya Volcano.",
