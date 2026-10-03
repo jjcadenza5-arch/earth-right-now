@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T16:40:00Z",
+  "principle": "Use programs ERN can access now; do not spend owner time trying to force traffic-gated programs. Recheck locked programs only after meaningful traffic growth or a platform status change.",
+  "useNowCore": [
+    {
+      "id": "viator",
+      "role": "activities/tours",
+      "why": "Direct verified relationship and existing tracked-link pattern."
+    },
+    {
+      "id": "klook",
+      "role": "activities/tickets",
+      "why": "Existing verified ERN links and strong Asia/global inventory."
+    },
+    {
+      "id": "tiqets",
+      "role": "attractions/tickets",
+      "why": "Existing verified ERN links and strong attraction coverage."
+    },
+    {
+      "id": "welcome-pickups",
+      "role": "airport/city transfers",
+      "why": "Existing verified ERN links; distinct transport utility."
+    },
+    {
+      "id": "go-city",
+      "role": "city passes",
+      "why": "Owner account currently exposes link generation; complements tours/tickets without duplicating ranking."
+    },
+    {
+      "id": "kkday",
+      "role": "activities",
+      "why": "Owner account currently exposes link generation; useful where Klook/Viator coverage is weak."
+    }
+  ],
+  "useSelectively": [
+    {
+      "id": "kiwi-com",
+      "role": "flights",
+      "rule": "Use only as a post-discovery trip-planning utility, not on every place."
+    },
+    {
+      "id": "kiwitaxi",
+      "role": "transfers",
+      "rule": "Use only where Welcome Pickups lacks useful coverage."
+    },
+    {
+      "id": "localrent",
+      "role": "car rental",
+      "rule": "Use for destinations where a car materially helps the trip."
+    },
+    {
+      "id": "qeeq",
+      "role": "car rental",
+      "rule": "Alternative only where Localrent/Economybookings coverage is better."
+    },
+    {
+      "id": "economybookings",
+      "role": "car rental",
+      "rule": "Avoid stacking multiple rental CTAs on one place."
+    },
+    {
+      "id": "radical-storage",
+      "role": "luggage storage",
+      "rule": "Useful for major city arrival/departure contexts only."
+    },
+    {
+      "id": "yesim",
+      "role": "eSIM",
+      "rule": "Potential global travel utility; choose one primary eSIM partner rather than showing multiple competing eSIM offers."
+    },
+    {
+      "id": "saily",
+      "role": "eSIM",
+      "rule": "Research alternative to Yesim; do not activate both by default."
+    },
+    {
+      "id": "airalo",
+      "role": "eSIM",
+      "rule": "Research alternative; avoid commercial clutter."
+    },
+    {
+      "id": "aviasales",
+      "role": "flights",
+      "rule": "Use selectively where flight search adds real trip-planning value."
+    },
+    {
+      "id": "wegotrip",
+      "role": "self-guided tours",
+      "rule": "Use only for cities with strong matching inventory."
+    },
+    {
+      "id": "bikesbooking",
+      "role": "mobility",
+      "rule": "Destination-specific use only."
+    }
+  ],
+  "trafficGated": [
+    {
+      "id": "booking-com",
+      "name": "Booking.com via Travelpayouts",
+      "ownerState": "VISIBLE_NOT_ACTIVE",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "agoda",
+      "name": "Agoda via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "hotels-com",
+      "name": "Hotels.com via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "trip-com",
+      "name": "Trip.com via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "expedia",
+      "name": "Expedia via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "getyourguide",
+      "name": "GetYourGuide via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "tripadvisor-experiences",
+      "name": "Tripadvisor Experiences via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "discovercars",
+      "name": "DiscoverCars via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "traveloka",
+      "name": "Traveloka via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "omio",
+      "name": "Omio via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "12go",
+      "name": "12GO via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "hostelworld",
+      "name": "Hostelworld via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "vrbo",
+      "name": "Vrbo via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "vio-com",
+      "name": "Vio.com via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    },
+    {
+      "id": "rakuten-travel-intl",
+      "name": "Rakuten Travel (INTL) via Travelpayouts",
+      "ownerState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "action": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+      "trafficUnlockWatch": true
+    }
+  ],
+  "unlockedProgramCount": 24,
+  "trafficGatedProgramCount": 16,
+  "tripComDecision": "WAIT. Trip.com is strategically valuable because it could fill the stay/transport gap, but ERN should not open a separate direct account while the Travelpayouts program is visible but traffic-gated.",
+  "bookingDecision": "WAIT. Booking.com remains visible but inactive/rejected; do not reapply until there is a material traffic/status change.",
+  "stayGap": "Accommodation remains the largest business-category gap until Trip.com, Hotels.com, Agoda, Expedia, Vio.com, Hostelworld, Vrbo or Rakuten Travel becomes genuinely available.",
+  "visitorRule": "Commercial options remain downstream from discovery and never influence source ranking."
+}
