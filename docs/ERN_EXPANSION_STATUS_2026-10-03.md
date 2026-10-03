@@ -161,3 +161,22 @@ Business lane:
 - Boulders Beach/Viator is queued for an exact tracked link because current Viator inventory explicitly covers the penguin colony/Cape Peninsula.
 - St. Maarten/Viator is queued using the existing healthy Little Bay place; future verified Maho/Great Bay/Simpson Bay places should reuse the same island-level link rather than multiply commercial density.
 - Commercial priority matrix was refreshed after these additions so queued destinations are removed from future research.
+
+
+## Large-batch checkpoint — 03:55 UTC
+
+Visitor/source lane:
+- Production baseline remains 91 healthy searchable places.
+- Private source research registry is now 67 candidates total: 4 promoted and 63 awaiting human playback verification.
+- Mauritius Tourism Promotion Authority family added: Grand Baie, Pointe d’Esny and Saint-Félix.
+- Visit St. Maarten-endorsed 24/7 family added: Maho Beach, Great Bay/Philipsburg Boardwalk and Simpson Bay.
+- Official Lake Wānaka Tourism family added: town view, Lake Wānaka, Mt Aspiring and Lake Hāwea views.
+- Official Rotorua NZ family added: Skyline city/lake view and Museum/Government Gardens/Lake view.
+- All new sources remain fail-closed until human playback verification.
+
+Business lane:
+- Commercial registry now contains 44 opportunities: 12 verified-link, 18 exact-link-required and 14 source-gated.
+- Added Mauritius/Klook, Wānaka/Klook and Rotorua/Viator source-gated paths.
+- Added St. Maarten/Viator exact-link research using the existing healthy Little Bay source and future reuse for any verified island cameras.
+- Boulders Beach/Viator remains queued for a tightly scoped exact tracked link.
+- Existing-partner-first remains the operating rule.
