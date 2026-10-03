@@ -33,7 +33,11 @@
       "sourcePage": "https://prague.eu/cs/prazske-veze/",
       "evidence": "Official Prague City Tourism page states its cameras look around Prague live and lists Petřín Lookout Tower.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetUrl": "https://pvp.panomax.com/",
+      "exactTargetType": "PANOMAX_360",
+      "researchEvidence": "Prague City Tourism's official Prague Towers page directly links the Petřín live camera to the Prague Visitor Pass Panomax 360 endpoint. Owner previously reported the Prague camera family looked beautiful, but exact-target playback remains to be spot-checked.",
+      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
     },
     {
       "id": "prague-old-town-hall",
@@ -44,7 +48,11 @@
       "sourcePage": "https://prague.eu/cs/prazske-veze/",
       "evidence": "Official Prague City Tourism page lists a live-looking camera for Old Town Hall.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetUrl": "https://www.youtube.com/watch?v=Agep3Ts7hpI",
+      "exactTargetType": "YOUTUBE_LIVE_TARGET",
+      "researchEvidence": "Official Prague City Tourism page directly links Old Town Hall under 'our cameras look live around Prague' to YouTube video Agep3Ts7hpI.",
+      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
     },
     {
       "id": "prague-old-town-bridge-tower",
@@ -55,7 +63,11 @@
       "sourcePage": "https://prague.eu/cs/prazske-veze/",
       "evidence": "Official Prague City Tourism page lists a live-looking camera for Old Town Bridge Tower.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetUrl": "https://www.youtube.com/watch?v=1zRzcYmipMs",
+      "exactTargetType": "YOUTUBE_LIVE_TARGET",
+      "researchEvidence": "Official Prague City Tourism page links the Old Town Bridge Tower camera via CamStreamer to YouTube video 1zRzcYmipMs.",
+      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
     },
     {
       "id": "prague-powder-tower",
@@ -66,7 +78,11 @@
       "sourcePage": "https://prague.eu/cs/prazske-veze/",
       "evidence": "Official Prague City Tourism page lists a live-looking camera for Powder Tower.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetUrl": "https://www.youtube.com/watch?v=07U63AB60g4",
+      "exactTargetType": "YOUTUBE_LIVE_TARGET",
+      "researchEvidence": "Official Prague City Tourism page directly links Powder Tower to YouTube video 07U63AB60g4.",
+      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
     },
     {
       "id": "prague-st-nicholas-bell-tower",
@@ -77,7 +93,11 @@
       "sourcePage": "https://prague.eu/cs/prazske-veze/",
       "evidence": "Official Prague City Tourism page lists a live-looking camera for St. Nicholas Bell Tower.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetUrl": "https://www.youtube.com/watch?v=kfygpyeJHRg",
+      "exactTargetType": "YOUTUBE_LIVE_TARGET",
+      "researchEvidence": "Official Prague City Tourism page directly links St. Nicholas Bell Tower to YouTube video kfygpyeJHRg.",
+      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
     },
     {
       "id": "prague-lesser-town-bridge-tower",
@@ -88,7 +108,11 @@
       "sourcePage": "https://prague.eu/cs/prazske-veze/",
       "evidence": "Official Prague City Tourism page lists a live-looking camera for Lesser Town Bridge Tower.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetUrl": "https://www.youtube.com/watch?v=RLvNkbRLrIA",
+      "exactTargetType": "YOUTUBE_LIVE_TARGET",
+      "researchEvidence": "Official Prague City Tourism page directly links Lesser Town Bridge Tower to YouTube video RLvNkbRLrIA.",
+      "humanCheckHint": "Open this exact target directly; no hunting through the Prague page is needed."
     },
     {
       "id": "koli-lake-pielinen",
@@ -387,6 +411,7 @@
     "Registry re-check on 2026-10-02 found no current Helsinki/Market Square source record in data/sources.json; candidate restored pending owner clarification to avoid losing a potentially missing destination.",
     "Vienna, Helsinki, Koli and Turku promoted to data/sources.json after owner live-playback confirmation on 2026-10-02. Prague remains research-only pending exact camera mapping.",
     "2026-10-03 research batch added Salzburg plus four official Madeira Tourism live-camera candidates; all remain research-only until human playback verification.",
-    "2026-10-03 breadth research added official-source candidates for Innsbruck, Dubrovnik, Malta and Tallinn; all remain research-only until exact playback is human-confirmed."
+    "2026-10-03 breadth research added official-source candidates for Innsbruck, Dubrovnik, Malta and Tallinn; all remain research-only until exact playback is human-confirmed.",
+    "2026-10-03 Prague research isolated six exact camera targets from the official Prague City Tourism page, including one Panomax endpoint and five direct YouTube live targets. This removes the earlier owner burden of hunting through the page; exact-target playback still stays fail-closed until spot-checked."
   ]
 }
