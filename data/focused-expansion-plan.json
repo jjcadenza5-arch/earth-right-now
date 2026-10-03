@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T09:18:00Z",
+  "generatedAt": "2026-10-03T09:25:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 200,
@@ -94,25 +94,21 @@
     ],
     "verifiedOfferStrategy": "Prefer destination-level links and one useful commercial action per intent; no commission ranking.",
     "nextExactLinkBatch": [
+      "klook-kenting-national-forest",
+      "klook-green-island-taitung",
       "tiqets-vienna",
-      "viator-helsinki",
-      "viator-lucerne",
-      "viator-tbilisi",
-      "viator-cancun",
       "tiqets-georgia-aquarium",
       "tiqets-san-diego-zoo",
-      "viator-zermatt",
-      "viator-san-diego-zoo",
-      "viator-aruba",
-      "viator-kilauea",
-      "viator-torres-del-paine",
-      "viator-boulders-beach",
-      "viator-st-maarten",
-      "klook-mayon",
-      "viator-mauna-loa",
-      "viator-meads-bay",
-      "viator-grand-canyon",
-      "klook-chishang-taitung"
+      "viator-st-johns-newfoundland",
+      "viator-maui-kihei",
+      "viator-orpen-kruger",
+      "viator-hveravellir",
+      "viator-brasov-poiana",
+      "viator-misti-arequipa",
+      "viator-helsinki",
+      "viator-lucerne",
+      "viator-cancun",
+      "viator-zermatt"
     ],
     "futureAfterSourceVerification": [
       "tiqets-prague-future",
@@ -170,7 +166,8 @@
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 11,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
     },
-    "currentOpportunityCount": 121
+    "currentOpportunityCount": 121,
+    "priorityRule": "Prefer exact destination/product fit inside existing active partners before broad generic destination links. Batch owner link generation rather than interrupting one destination at a time."
   },
   "safeguards": {
     "automaticPlacement": false,
