@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T05:15:00Z",
+  "generatedAt": "2026-10-03T05:25:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -1868,6 +1868,45 @@
       "verifiedAt": "2026-10-03T05:15:00Z",
       "evidence": "SGC maintains an online-images page for Galeras listing multiple surveillance camera stations; ERN treats this conservatively as current/quasi-live imagery rather than continuous video.",
       "verification": "Official scientific/government current-image network verified; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "hong-kong-victoria-harbour-current-photo",
+      "title": "Hong Kong — Victoria Harbour",
+      "country": "Hong Kong",
+      "region": "Victoria Harbour",
+      "provider": "Hong Kong Observatory",
+      "sourcePage": "https://www.hko.gov.hk/en/wxinfo/ts/webcam/HMM_photo.htm",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:25:00Z",
+      "evidence": "Hong Kong Observatory states this Victoria Harbour webcam takes a picture every five minutes and provides a six-hour animation; its regional weather page describes these as live views.",
+      "verification": "Official five-minute weather-photo source; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "hong-kong-victoria-peak-current-photo",
+      "title": "Hong Kong — Victoria Peak",
+      "country": "Hong Kong",
+      "region": "Hong Kong Island",
+      "provider": "Hong Kong Observatory",
+      "sourcePage": "https://www.hko.gov.hk/en/wxinfo/ts/webcam/VPB_photo.htm",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:25:00Z",
+      "evidence": "Hong Kong Observatory states the Victoria Peak camera produces real-time weather photos; the camera page takes a picture every five minutes with a six-hour animation.",
+      "verification": "Official five-minute weather-photo source; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "hong-kong-tai-mo-shan-current-photo",
+      "title": "Tai Mo Shan — Hong Kong",
+      "country": "Hong Kong",
+      "region": "New Territories",
+      "provider": "Hong Kong Observatory",
+      "sourcePage": "https://www.hko.gov.hk/en/wxinfo/ts/webcam/TM2_photo.htm",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T05:25:00Z",
+      "evidence": "Hong Kong Observatory states the Tai Mo Shan weather camera takes a picture every five minutes and is part of its real-time weather-photo network.",
+      "verification": "Official five-minute weather-photo source; promoted as searchable LIVE_IMAGE only."
     }
   ],
   "notes": [
@@ -1905,7 +1944,8 @@
     "2026-10-03 canonicalization removed five redundant generic Nicaragua candidate rows and retained six stronger direct-camera records (including Cerro Negro). This prevents duplicate destination inflation.",
     "2026-10-03 added Biscuit Basin and renewed Yellowstone Lake from USGS/YVO as 15-minute quasi-live LIVE_IMAGE places. Existing Yellowstone business path should serve these places rather than create duplicate commercial placements.",
     "2026-10-03 promoted one canonical searchable place each for Mauna Loa, Shishaldin and Augustine rather than inflating the catalog with multiple monitoring-camera angles.",
-    "2026-10-03 expanded underrepresented South America with official scientific/government quasi-live sources for Sangay, Tungurahua, Nevado del Ruiz and Galeras."
+    "2026-10-03 expanded underrepresented South America with official scientific/government quasi-live sources for Sangay, Tungurahua, Nevado del Ruiz and Galeras.",
+    "2026-10-03 added three Hong Kong Observatory five-minute quasi-live places: Victoria Harbour, Victoria Peak and Tai Mo Shan."
   ],
   "researchGaps": [
     {
