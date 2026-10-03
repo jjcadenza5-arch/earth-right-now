@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T15:05:00Z",
+  "generatedAt": "2026-10-03T15:16:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2891,6 +2891,20 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Akaroa/Akaroa-Shore-Excursion-Banks-Peninsula-and-Christchurch-City-Sights/d23350-2950PRTCHCCLT65CS",
       "nextAction": "Generate one Akaroa/Banks Peninsula Viator tracked link and verify it can appropriately serve both ERN places."
+    },
+    {
+      "id": "klook-gaomei-wetland",
+      "destination": "Gaomei Wetland / Taichung",
+      "placeIds": [
+        "taiwan-gaomei-wetland"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy searchable Gaomei Wetland current-image place and Klook currently sells day tours that explicitly include Gaomei Wetlands.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/experiences/list/taiwan-tours/g14-cate9/",
+      "nextAction": "Generate one exact Gaomei/Taichung Klook tracked link, open it, confirm destination + tracking, then activate only after verification."
     }
   ]
 }
