@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T01:52:00Z",
+  "generatedAt": "2026-10-03T02:00:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -332,6 +332,41 @@
       "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/san-diego-zoo-tickets-l146256/",
       "nextAction": "Generate one San Diego Zoo Tiqets tracked link in Travelpayouts and manually verify it before public activation.",
       "publicInventoryEvidence": "Tiqets currently exposes a dedicated San Diego Zoo page with active entry-ticket inventory and related San Diego attraction passes."
+    },
+    {
+      "id": "tiqets-prague-future",
+      "destination": "Prague",
+      "placeIds": [
+        "prague-petrin-tower",
+        "prague-old-town-hall",
+        "prague-old-town-bridge-tower",
+        "prague-powder-tower",
+        "prague-st-nicholas-bell-tower",
+        "prague-lesser-town-bridge-tower"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "Official Prague camera family is now mapped to exact source targets, and Tiqets has broad Prague attraction inventory including Prague Visitor Pass, castle, towers and river products.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/prague-attractions-c64162/",
+      "publicInventoryEvidence": "Tiqets currently lists broad Prague attraction inventory and official Prague Visitor Pass products covering many of the same tower/Old Town landmarks represented by the camera family.",
+      "nextAction": "Do not generate or publish a tracked link until at least one Prague camera target is promoted to the live source registry; then create one city-level Tiqets link rather than duplicate per-camera commercial density."
+    },
+    {
+      "id": "tiqets-salzburg-future",
+      "destination": "Salzburg",
+      "placeIds": [
+        "salzburg-mirabell-old-town"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "Salzburg's official Mirabell/Old Town camera candidate aligns closely with Tiqets Salzburg inventory including Salzburg Card, Hohensalzburg-related attractions and Mirabell concerts.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/salzburg-attractions-c60346/",
+      "publicInventoryEvidence": "Tiqets currently lists Salzburg attraction inventory including the Salzburg Card and Mirabell Palace concert combinations.",
+      "nextAction": "After Salzburg camera playback is owner-confirmed and promoted, generate one destination-level Tiqets tracked link and verify it before public activation."
     }
   ]
 }
