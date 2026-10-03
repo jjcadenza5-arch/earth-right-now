@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-10-03T17:20:00+07:00",
+  "source": "OWNER_TRAVELPAYOUTS_ACCOUNT_SCREENSHOTS",
+  "accountContext": "Earthrightnow Travelpayouts project",
+  "rule": "Presence in the Travelpayouts catalog does not mean ERN may activate or publish tracked links. Owner reported that many desired programs are not yet unlocked because traffic is still too low.",
+  "currentStrategy": "Grow qualified ERN traffic and use already available/active programs; re-check this watchlist only when Travelpayouts unlock status changes or traffic reaches a materially higher level.",
+  "programs": [
+    {
+      "id": "trip-com",
+      "name": "Trip.com",
+      "priority": "P1",
+      "intents": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "displayedReward": "1–5.5%",
+      "cookie": "7–30 days",
+      "mobileTracking": "Mobile web & app",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Strong global accommodation + transport breadth; could fill ERN's largest stay gap."
+    },
+    {
+      "id": "hotels-com",
+      "name": "Hotels.com",
+      "priority": "P1",
+      "intents": [
+        "stay"
+      ],
+      "displayedReward": "1.35–3.6%",
+      "cookie": "7 days",
+      "mobileTracking": "Mobile web & app",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Simple global hotel coverage for destination pages."
+    },
+    {
+      "id": "expedia",
+      "name": "Expedia",
+      "priority": "P1",
+      "intents": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "displayedReward": "1.35–3.6%",
+      "cookie": "30 days",
+      "mobileTracking": "Mobile web & app",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Broad multi-product coverage; useful when ERN needs one general travel bridge."
+    },
+    {
+      "id": "agoda",
+      "name": "Agoda",
+      "priority": "P1",
+      "intents": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "displayedReward": "1–6%",
+      "cookie": "1 day",
+      "mobileTracking": "Mobile web & app",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Especially useful for Asian destinations and accommodation."
+    },
+    {
+      "id": "getyourguide",
+      "name": "GetYourGuide",
+      "priority": "P1",
+      "intents": [
+        "activities"
+      ],
+      "displayedReward": "8%",
+      "cookie": "31 days",
+      "mobileTracking": "Mobile web only",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "High-quality activity/tour complement to Viator/Klook/Tiqets."
+    },
+    {
+      "id": "tripadvisor-experiences",
+      "name": "Tripadvisor – Experiences",
+      "priority": "P2",
+      "intents": [
+        "activities"
+      ],
+      "displayedReward": "8%",
+      "cookie": "14 days",
+      "mobileTracking": "Mobile web only",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Broad activity coverage and strong consumer familiarity."
+    },
+    {
+      "id": "discovercars",
+      "name": "DiscoverCars",
+      "priority": "P2",
+      "intents": [
+        "transport"
+      ],
+      "displayedReward": "23–54%",
+      "cookie": "365 days",
+      "mobileTracking": "Mobile web & app",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Potentially strong car-rental utility for scenic/rural destinations."
+    },
+    {
+      "id": "traveloka",
+      "name": "Traveloka",
+      "priority": "P2",
+      "intents": [
+        "stay",
+        "transport"
+      ],
+      "displayedReward": "0.36–3.6% of booking amount",
+      "cookie": "14 days",
+      "mobileTracking": "Mobile web & app",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Useful Southeast Asia travel coverage."
+    },
+    {
+      "id": "omio",
+      "name": "Omio",
+      "priority": "P2",
+      "intents": [
+        "transport"
+      ],
+      "displayedReward": "6%",
+      "cookie": "30 days",
+      "mobileTracking": "Mobile web & app",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Excellent rail/bus/flight bridge for European destination discovery."
+    },
+    {
+      "id": "12go",
+      "name": "12GO",
+      "priority": "P2",
+      "intents": [
+        "transport"
+      ],
+      "displayedReward": "4–5.5%",
+      "cookie": "30 days",
+      "mobileTracking": "Mobile web only",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Useful ground/sea/air transport in Asia."
+    },
+    {
+      "id": "hostelworld",
+      "name": "Hostelworld",
+      "priority": "P2",
+      "intents": [
+        "stay"
+      ],
+      "displayedReward": "40% revenue share / fixed Social Pass reward",
+      "cookie": "30 days",
+      "mobileTracking": "Mobile web & app",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Budget accommodation coverage for city/backpacker destinations."
+    },
+    {
+      "id": "vrbo",
+      "name": "Vrbo",
+      "priority": "P2",
+      "intents": [
+        "stay"
+      ],
+      "displayedReward": "1.8%",
+      "cookie": "7 days",
+      "mobileTracking": "Mobile web only",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Vacation-rental option for beaches, islands and nature destinations."
+    },
+    {
+      "id": "vio-com",
+      "name": "Vio.com",
+      "priority": "P2",
+      "intents": [
+        "stay"
+      ],
+      "displayedReward": "40–64% revenue share",
+      "cookie": "30 days",
+      "mobileTracking": "Mobile web & app",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Alternative hotel-search coverage."
+    },
+    {
+      "id": "rakuten-travel-intl",
+      "name": "Rakuten Travel (INTL)",
+      "priority": "P2",
+      "intents": [
+        "stay",
+        "transport"
+      ],
+      "displayedReward": "0.8–5%",
+      "cookie": "30 days",
+      "mobileTracking": "Mobile web & app",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Particularly relevant to Japan-heavy ERN inventory."
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster",
+      "priority": "P3",
+      "intents": [
+        "tickets",
+        "activities"
+      ],
+      "displayedReward": "0–4.15%",
+      "cookie": "7–30 days",
+      "mobileTracking": "Mobile web only",
+      "ownerObserved": true,
+      "accessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "whyERNWantsIt": "Useful later for event-led destinations, but lower priority than stays/transport."
+    },
+    {
+      "id": "booking-com",
+      "name": "Booking.com",
+      "priority": "P1",
+      "intents": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "displayedReward": "3–5% / €1.5 flights",
+      "cookie": "One session",
+      "mobileTracking": "Mobile web & app",
+      "ownerObserved": true,
+      "accessState": "VISIBLE_NOT_ACTIVE",
+      "whyERNWantsIt": "Strategic global accommodation coverage, but ERN should not depend on it."
+    }
+  ],
+  "excludedFromUnlockWait": [
+    {
+      "id": "viator",
+      "reason": "Already separately active/verified for ERN; screenshot confirms catalog presence but it is not a future unlock dependency."
+    }
+  ],
+  "revisitTriggers": [
+    "Travelpayouts account explicitly shows one watched program as available to join/use",
+    "ERN reaches a materially higher traffic tier",
+    "Qualified commercial clicks or first conversions show accommodation/transport demand",
+    "Owner receives an unlock/invitation email from Travelpayouts"
+  ]
+}
