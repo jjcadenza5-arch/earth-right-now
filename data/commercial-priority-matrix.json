@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:35:00Z",
+  "generatedAt": "2026-10-03T03:46:00Z",
   "principles": {
     "existingPartnersFirst": true,
     "exactTrackedLinkRequired": true,
@@ -10,7 +10,7 @@
     "automaticLinkRewriting": false
   },
   "currentVerifiedOpportunityCount": 12,
-  "exactLinkQueueCount": 17,
+  "exactLinkQueueCount": 18,
   "sourceGatedQueueCount": 12,
   "researchPriority": [
     {
@@ -104,26 +104,6 @@
       ],
       "suggestedExistingPartners": [
         "tiqets",
-        "viator",
-        "welcome-pickups"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
-    },
-    {
-      "placeId": "little-bay-sint-maarten",
-      "title": "Little Bay Beach — Sint Maarten",
-      "country": "Sint Maarten",
-      "region": "Philipsburg",
-      "quality": 95,
-      "moment": 97,
-      "categories": [
-        "Beaches & Water",
-        "Beautiful Earth",
-        "Cities & Harbours"
-      ],
-      "suggestedExistingPartners": [
         "viator",
         "welcome-pickups"
       ],
@@ -505,6 +485,25 @@
       "suggestedExistingPartners": [
         "viator",
         "welcome-pickups"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "metung-gippsland-lakes",
+      "title": "Metung — Gippsland Lakes",
+      "country": "Australia",
+      "region": "Victoria",
+      "quality": 91,
+      "moment": 91,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth"
+      ],
+      "suggestedExistingPartners": [
+        "viator",
+        "klook"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
