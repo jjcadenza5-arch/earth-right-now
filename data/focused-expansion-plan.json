@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:35:00Z",
+  "generatedAt": "2026-10-03T02:45:00Z",
   "mode": "FOCUSED_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 91,
@@ -10,22 +10,18 @@
     ],
     "strategy": "Add only genuinely distinct useful places; prefer official tourism/government/provider pages; human playback verification required before promotion.",
     "nextHumanCheckBatch": [
-      "karakol-ski-base",
       "ala-archa-natural-park",
+      "karakol-ski-base",
+      "shymbulak-mountain-resort",
       "dubrovnik-pile-city",
+      "everest-khumbu-hotel-view",
       "mauritius-grand-baie",
+      "gudauri-ski-area",
       "hualien-shitiping",
+      "khumbu-glacier-nco-p",
+      "gudauri-kobi",
       "wanaka-lake-view-roys-peak",
-      "malta-live-cams",
-      "sanparks-olifants",
-      "mauritius-pointe-desny",
-      "prague-old-town-hall",
-      "prague-petrin-tower",
-      "rotorua-skyline-city-lake",
-      "rotorua-museum-gardens-lake",
-      "salzburg-mirabell-old-town",
-      "sanparks-satara",
-      "shymbulak-mountain-resort"
+      "malta-live-cams"
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
     "researchCandidateCount": 77,
@@ -45,7 +41,15 @@
         "bishkek-ala-too-square"
       ],
       "rule": "Adjacent Central Asia cameras improve regional breadth but do not close the Pamir/Tajikistan gap."
-    }
+    },
+    "researchBacklogCount": 78,
+    "mountainExpansionFocus": [
+      "Pamir gateways",
+      "Gudauri/Kobi",
+      "Shymbulak",
+      "Everest/Khumbu",
+      "Innsbruck family"
+    ]
   },
   "businessLane": {
     "activePartners": [
@@ -56,18 +60,16 @@
     ],
     "verifiedOfferStrategy": "Prefer destination-level links and one useful commercial action per intent; no commission ranking.",
     "nextExactLinkBatch": [
+      "klook-dublin",
       "tiqets-vienna",
       "viator-helsinki",
+      "viator-turku",
       "viator-lucerne",
       "viator-tbilisi",
       "viator-cancun",
+      "viator-yellowstone",
       "tiqets-georgia-aquarium",
-      "tiqets-san-diego-zoo",
-      "viator-zermatt",
-      "viator-san-diego-zoo",
-      "viator-aruba",
-      "viator-boulders-beach",
-      "viator-st-maarten"
+      "tiqets-san-diego-zoo"
     ],
     "futureAfterSourceVerification": [
       "tiqets-prague-future",
@@ -86,9 +88,13 @@
       "viator-rotorua-future",
       "viator-shymbulak-future",
       "viator-karakol-future",
-      "viator-pamir-future",
       "viator-ala-archa-future",
-      "viator-issyk-kul-future"
+      "viator-issyk-kul-future",
+      "klook-pamir-highway-future",
+      "klook-ala-archa-future",
+      "klook-gudauri-future",
+      "klook-shymbulak-future",
+      "viator-everest-future"
     ],
     "accommodationResearch": [
       "hotels-com",
