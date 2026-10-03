@@ -1,24 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T09:45:00Z",
-  "status": "OWNER_ACTION_READY_WHEN_CONVENIENT",
+  "generatedAt": "2026-10-03T10:40:00Z",
+  "status": "OWNER_ACTION_DORMANT_UNTIL_BUNDLED_LINK_SESSION",
   "principle": "Bundle owner-only commercial actions; do not interrupt repeatedly.",
   "tripComCheck": {
-    "priority": "P1",
-    "reason": "ERN has achieved 200 healthy searchable places and accommodation is the largest monetization gap.",
-    "action": "In Travelpayouts, open Earthrightnow Project → Programs / My Programs and check Trip.com.",
-    "reportBackAsOneOf": [
-      "AVAILABLE",
-      "UNDER_REVIEW",
-      "UNAVAILABLE"
-    ],
-    "secondaryOptionalCheck": "Hotels.com status on the same screen",
-    "doNotDoYet": [
-      "Do not create a separate direct Trip.com account yet.",
-      "Do not accept new terms outside Travelpayouts yet.",
-      "Do not generate public Trip.com links yet."
-    ],
-    "fallbackIfUnavailable": "Keep existing four partners active and consider direct Trip.com only after reviewing account/terms deliberately."
+    "priority": "DEFERRED",
+    "state": "VISIBLE_NOT_UNLOCKED",
+    "action": "No action now.",
+    "reason": "Owner Travelpayouts screenshots already establish the practical state: Trip.com is visible but not currently unlocked for ERN. Build traffic first and recheck only when account state or visitor traction changes."
   },
   "nextExistingPartnerExactLinks": [
     {
@@ -78,7 +67,7 @@
       "reason": "High-quality scenic destination with strong visitor-planning intent."
     }
   ],
-  "executionRule": "Generate/verify exact links in one later owner session; do not ask for them one-by-one.",
+  "executionRule": "Bundle destination exact links and utility links into one later owner session; do not interrupt owner one-by-one and do not recheck locked programs without a material trigger.",
   "safeguards": {
     "paidRanking": false,
     "automaticPlacement": false,
@@ -86,5 +75,32 @@
     "exactTrackedLinkRequired": true,
     "affiliateDisclosureRequired": true,
     "rankingIndependentOfCommission": true
-  }
+  },
+  "nextUtilityLinks": [
+    {
+      "priority": 1,
+      "id": "airalo-global-esim",
+      "partner": "airalo"
+    },
+    {
+      "priority": 2,
+      "id": "radical-storage-city-luggage",
+      "partner": "radical-storage"
+    },
+    {
+      "priority": 3,
+      "id": "go-city-major-cities",
+      "partner": "go-city"
+    },
+    {
+      "priority": 4,
+      "id": "kiwitaxi-transfer-coverage",
+      "partner": "kiwitaxi"
+    },
+    {
+      "priority": 5,
+      "id": "aviasales-flight-search",
+      "partner": "aviasales"
+    }
+  ]
 }
