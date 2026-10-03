@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:45:00Z",
+  "generatedAt": "2026-10-03T04:15:00Z",
   "publicActivationAllowed": false,
   "currentHealthyDistinctPlaces": 91,
   "targetHealthyDistinctPlaces": [
@@ -30,6 +30,54 @@
         "klook-ala-archa-future"
       ],
       "humanCheckHint": "Open the direct Ala-Archa page and confirm the mountain view updates normally."
+    },
+    {
+      "id": "denpasar-city-live",
+      "title": "Denpasar — Live City Streets",
+      "country": "Indonesia",
+      "region": "Bali",
+      "provider": "Denpasar City Transportation Agency (Dishub)",
+      "priority": "P1",
+      "verificationUrl": "https://atcs.denpasarkota.go.id/",
+      "verificationType": "OFFICIAL_CITY_REALTIME_CCTV_INDEX",
+      "oneClick": true,
+      "businessUnlocks": [
+        "klook-bali-future",
+        "viator-bali-future"
+      ],
+      "humanCheckHint": "Open the official Denpasar ATCS live-stream page and choose one visually useful city location; confirm real-time motion."
+    },
+    {
+      "id": "istanbul-bosphorus-live",
+      "title": "Istanbul — Bosphorus / Üsküdar",
+      "country": "Türkiye",
+      "region": "Istanbul",
+      "provider": "Istanbul Metropolitan Municipality",
+      "priority": "P1",
+      "verificationUrl": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
+      "verificationType": "OFFICIAL_MUNICIPAL_TOURISTIC_CAMERA_INDEX",
+      "oneClick": true,
+      "businessUnlocks": [
+        "klook-istanbul-future",
+        "viator-istanbul-future"
+      ],
+      "humanCheckHint": "Choose one Bosphorus-facing camera (prefer ÜSKÜDAR or SALACAK) and confirm it visibly updates."
+    },
+    {
+      "id": "istanbul-sultanahmet-live",
+      "title": "Istanbul — Sultanahmet",
+      "country": "Türkiye",
+      "region": "Istanbul",
+      "provider": "Istanbul Metropolitan Municipality",
+      "priority": "P1",
+      "verificationUrl": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
+      "verificationType": "OFFICIAL_MUNICIPAL_TOURISTIC_CAMERA_INDEX",
+      "oneClick": true,
+      "businessUnlocks": [
+        "klook-istanbul-future",
+        "viator-istanbul-future"
+      ],
+      "humanCheckHint": "Open the official Istanbul touristic-camera page, choose SULTANAHMET, and confirm the live stream plays."
     },
     {
       "id": "karakol-ski-base",
@@ -152,7 +200,9 @@
         "viator-hualien-future"
       ],
       "humanCheckHint": "Open the official Hualien-filtered Live Taiwan page and confirm Shitiping visibly updates."
-    },
+    }
+  ],
+  "backlog": [
     {
       "id": "khumbu-glacier-nco-p",
       "title": "Khumbu Glacier — Everest Region",
@@ -197,9 +247,7 @@
         "klook-wanaka-future"
       ],
       "humanCheckHint": "Open the Wānaka webcam page and confirm the Lake Wānaka view is current."
-    }
-  ],
-  "backlog": [
+    },
     {
       "id": "malta-live-cams",
       "title": "Malta — Official Live Cams",
