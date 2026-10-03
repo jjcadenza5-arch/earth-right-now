@@ -1484,8 +1484,10 @@
       "evidence": "Panama Canal Authority explicitly offers web cameras to follow canal transits in real time and lists Miraflores Locks.",
       "researchEvidence": "Official government canal source; one of five lock-camera locations. Promote as a distinct place only after direct camera playback is human-confirmed.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the Panama Canal Authority Web Cameras section, choose Miraflores Locks, and confirm ships/locks are updating in real time."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the Panama Canal Authority Web Cameras section, choose Miraflores Locks, and confirm ships/locks are updating in real time.",
+      "verifiedAt": "2026-10-03T06:25:00Z",
+      "verification": "Panama Canal Authority explicitly states its named lock cameras show Canal operations in real time; promoted as LIVE_IMAGE/Search-Explore only."
     },
     {
       "id": "panama-canal-gatun-locks",
@@ -1499,8 +1501,10 @@
       "evidence": "Panama Canal Authority's official web-camera service lists Gatún Locks among its real-time canal cameras.",
       "researchEvidence": "Distinct Caribbean-side lock complex; useful as a separate destination from Miraflores.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Panama Canal web-camera area, choose Gatún Locks, and confirm the view updates in real time."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Panama Canal web-camera area, choose Gatún Locks, and confirm the view updates in real time.",
+      "verifiedAt": "2026-10-03T06:25:00Z",
+      "verification": "Panama Canal Authority explicitly states its named lock cameras show Canal operations in real time; promoted as LIVE_IMAGE/Search-Explore only."
     },
     {
       "id": "panama-canal-pedro-miguel-locks",
@@ -1514,8 +1518,10 @@
       "evidence": "Panama Canal Authority lists Pedro Miguel Locks in its official live-camera system.",
       "researchEvidence": "A distinct operational lock location between Miraflores and Culebra Cut; human confirmation required before ERN promotion.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Choose Pedro Miguel Locks on the official Panama Canal web-camera page and confirm current motion/activity."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Choose Pedro Miguel Locks on the official Panama Canal web-camera page and confirm current motion/activity.",
+      "verifiedAt": "2026-10-03T06:25:00Z",
+      "verification": "Panama Canal Authority explicitly states its named lock cameras show Canal operations in real time; promoted as LIVE_IMAGE/Search-Explore only."
     },
     {
       "id": "panama-canal-cocoli-locks",
@@ -1529,8 +1535,10 @@
       "evidence": "Panama Canal Authority lists Cocolí Locks among official real-time canal cameras.",
       "researchEvidence": "Pacific-side expanded-canal lock complex; distinct enough for ERN if the direct camera proves useful.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Choose Cocolí Locks on the official Panama Canal camera service and confirm it is current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Choose Cocolí Locks on the official Panama Canal camera service and confirm it is current.",
+      "verifiedAt": "2026-10-03T06:25:00Z",
+      "verification": "Panama Canal Authority explicitly states its named lock cameras show Canal operations in real time; promoted as LIVE_IMAGE/Search-Explore only."
     },
     {
       "id": "panama-canal-agua-clara-locks",
@@ -1544,8 +1552,10 @@
       "evidence": "Panama Canal Authority lists Agua Clara Locks in its official real-time camera system.",
       "researchEvidence": "Caribbean-side expanded-canal lock complex with strong visitor utility and a direct future tour-planning bridge.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Choose Agua Clara Locks on the official Panama Canal camera service and confirm real-time ship/lock activity."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Choose Agua Clara Locks on the official Panama Canal camera service and confirm real-time ship/lock activity.",
+      "verifiedAt": "2026-10-03T06:25:00Z",
+      "verification": "Panama Canal Authority explicitly states its named lock cameras show Canal operations in real time; promoted as LIVE_IMAGE/Search-Explore only."
     },
     {
       "id": "kenyalive-nairobi-national-park",
@@ -2408,7 +2418,8 @@
     "2026-10-03 added six distinct Taiwan government/scenic-area real-time-image places plus two SANParks frequently refreshed wildlife still cameras. SANParks video-only Satara/Olifants remain human-playback-gated.",
     "2026-10-03 crossed the 150 healthy searchable-place milestone using seven Peru CENVUL volcano-monitoring places and Mexico CENAPRED Popocatépetl; one canonical place per volcano.",
     "2026-10-03 added official PHIVOLCS one-minute current-image places for Mayon, Bulusan and Kanlaon plus USGS HVO Mauna Loa current webcams. All use LIVE_IMAGE/Search-Explore semantics and do not masquerade as Watch Earth continuous live video.",
-    "2026-10-03 promoted eight Taiwan Tourism Administration operating live-image places across Taipei, New Taipei, Taichung, Hualien and Tainan. Search/Explore only; Watch Earth remains stricter."
+    "2026-10-03 promoted eight Taiwan Tourism Administration operating live-image places across Taipei, New Taipei, Taichung, Hualien and Tainan. Search/Explore only; Watch Earth remains stricter.",
+    "2026-10-03 promoted the five official Panama Canal Authority real-time lock-camera locations (Miraflores, Gatún, Pedro Miguel, Cocolí, Agua Clara) as distinct Search/Explore LIVE_IMAGE places."
   ],
   "researchGaps": [
     {
