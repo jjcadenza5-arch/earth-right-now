@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T12:50:00Z",
+  "status": "OWNER_ACTION_NOT_YET_REQUIRED",
+  "purpose": "One efficient owner session for exact tracked-link generation after autonomous research is complete.",
+  "rule": "Never invent URLs. Use the named partner account/tool, search the exact phrase, generate the tracked link, open it manually, then record it.",
+  "rows": [
+    {
+      "id": "tiqets-vienna",
+      "partner": "tiqets",
+      "destination": "Vienna",
+      "intent": "culture",
+      "priority": "P1",
+      "placeIds": [
+        "vienna-city-hall-ringstrasse"
+      ],
+      "accountSearchPhrase": "Vienna attractions",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "tiqets-georgia-aquarium",
+      "partner": "tiqets",
+      "destination": "Georgia Aquarium / Atlanta",
+      "intent": "culture",
+      "priority": "P1",
+      "placeIds": [
+        "georgia-aquarium"
+      ],
+      "accountSearchPhrase": "Georgia Aquarium Atlanta",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "tiqets-san-diego-zoo",
+      "partner": "tiqets",
+      "destination": "San Diego Zoo",
+      "intent": "culture",
+      "priority": "P1",
+      "placeIds": [
+        "san-diego-zoo"
+      ],
+      "accountSearchPhrase": "San Diego Zoo",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-helsinki",
+      "partner": "viator",
+      "destination": "Helsinki",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "helsinki-market-square-south-harbour"
+      ],
+      "accountSearchPhrase": "Helsinki tours activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-lucerne",
+      "partner": "viator",
+      "destination": "Lucerne / Lake Lucerne",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "lake-lucerne"
+      ],
+      "accountSearchPhrase": "Lucerne Switzerland tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-cancun",
+      "partner": "viator",
+      "destination": "Cancún",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "cancun-live-aqua-beach"
+      ],
+      "accountSearchPhrase": "Cancun tours activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-zermatt",
+      "partner": "viator",
+      "destination": "Zermatt / Matterhorn",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "zermatt-matterhorn"
+      ],
+      "accountSearchPhrase": "Zermatt Matterhorn tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-aruba",
+      "partner": "viator",
+      "destination": "Aruba / Druif Beach",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "druif-beach-aruba"
+      ],
+      "accountSearchPhrase": "Aruba tours activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-torres-del-paine",
+      "partner": "viator",
+      "destination": "Torres del Paine",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "torres-del-paine"
+      ],
+      "accountSearchPhrase": "Torres del Paine tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-flam",
+      "partner": "viator",
+      "destination": "Flåm / Aurlandsfjord",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "flam-aurlandsfjord"
+      ],
+      "accountSearchPhrase": "Flam Norway tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "klook-takayama",
+      "partner": "klook",
+      "destination": "Takayama",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "takayama-miyagawa"
+      ],
+      "accountSearchPhrase": "Takayama activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "klook-taitung",
+      "partner": "klook",
+      "destination": "Taitung",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "taitung-jinzun"
+      ],
+      "accountSearchPhrase": "Taitung activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "tiqets-prague-future",
+      "partner": "tiqets",
+      "destination": "Prague",
+      "intent": "culture",
+      "priority": "P1",
+      "placeIds": [
+        "prague-petrin-tower",
+        "prague-old-town-hall",
+        "prague-old-town-bridge-tower",
+        "prague-powder-tower",
+        "prague-st-nicholas-bell-tower",
+        "prague-lesser-town-bridge-tower"
+      ],
+      "accountSearchPhrase": "Prague attractions",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-karakol-future",
+      "partner": "viator",
+      "destination": "Karakol / Issyk-Kul",
+      "intent": "activities",
+      "priority": "P2",
+      "placeIds": [
+        "karakol-ski-base"
+      ],
+      "accountSearchPhrase": "Karakol Issyk-Kul tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-issyk-kul-future",
+      "partner": "viator",
+      "destination": "Issyk-Kul",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "balykchy-north-entry",
+        "karakol-ski-base"
+      ],
+      "accountSearchPhrase": "Issyk-Kul tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    }
+  ]
+}
