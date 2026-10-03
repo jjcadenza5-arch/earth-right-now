@@ -2864,8 +2864,10 @@
       "evidence": "Official Aruba tourism page lists live webcams for Playa Linda and Aruba Marriott on Palm Beach.",
       "researchEvidence": "Aruba Tourism Authority explicitly presents multiple Palm Beach resort webcams as live webcams.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Use the official Aruba Live Webcams page and verify either Playa Linda or Aruba Marriott Palm Beach camera. Treat multiple cameras as one Palm Beach destination."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Use the official Aruba Live Webcams page and verify either Playa Linda or Aruba Marriott Palm Beach camera. Treat multiple cameras as one Palm Beach destination.",
+      "promotedAt": "2026-10-03T15:55:00Z",
+      "promotionNote": "Promoted from official Aruba Tourism live-webcam family as LIVE_IMAGE/Search-Explore; Watch Earth held pending separate playback review."
     },
     {
       "id": "aruba-eagle-beach-live-family",
@@ -2879,8 +2881,10 @@
       "evidence": "Official Aruba tourism page lists live webcams for Bucuti & Tara, Amsterdam Manor and Costa Linda around Eagle Beach.",
       "researchEvidence": "Aruba Tourism Authority explicitly presents multiple Eagle Beach resort webcams as live webcams.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Use the official Aruba Live Webcams page and verify any current Eagle Beach camera. Group the family under one Eagle Beach place."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Use the official Aruba Live Webcams page and verify any current Eagle Beach camera. Group the family under one Eagle Beach place.",
+      "promotedAt": "2026-10-03T15:55:00Z",
+      "promotionNote": "Promoted from official Aruba Tourism live-webcam family as LIVE_IMAGE/Search-Explore; Watch Earth held pending separate playback review."
     },
     {
       "id": "taiwan-baisha-bay-live",
@@ -3258,7 +3262,8 @@
     "2026-10-03 quality swap: Gaomei Wetland promoted into searchable runtime; Foxton Beach moved to research-only to hold catalog size constant while improving visitor/business utility.",
     "2026-10-03 Cook Islands batch: Aitutaki Lagoon, Tamanu Beach, Avaavaroa Beach and Rarotonga Airport promoted as searchable quasi-live LIVE_IMAGE places from official Cook Islands Airports current-image pages.",
     "2026-10-03 island quality batch promoted Kuredu Maldives, Paynes Bay Barbados and Santa Maria Bay Cape Verde from provider-published live webcam pages.",
-    "2026-10-03 16:10Z quality batch promoted eight official Taiwan current-image places and two New Zealand regional-council current views. All are LIVE_IMAGE/Search-Explore only with featuredHold/watchHold; no Watch Earth live-video claim."
+    "2026-10-03 16:10Z quality batch promoted eight official Taiwan current-image places and two New Zealand regional-council current views. All are LIVE_IMAGE/Search-Explore only with featuredHold/watchHold; no Watch Earth live-video claim.",
+    "2026-10-03 15:55Z promoted Palm Beach and Eagle Beach from the official Aruba Tourism Authority live-webcam family as conservative LIVE_IMAGE Search/Explore sources; Watch Earth remains held."
   ],
   "researchGaps": [
     {
