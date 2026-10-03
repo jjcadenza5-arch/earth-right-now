@@ -8,13 +8,13 @@ function writeSaved(key,value){try{localStorage.setItem(key,value)}catch{}}
 function readJSON(key,fallback){try{const v=JSON.parse(localStorage.getItem(key)||"null");return v??fallback}catch{return fallback}}
 function interactionProfile(){const p=readJSON("ern-profile",{countries:{},categories:{},views:0});return p&&typeof p==="object"?p:{countries:{},categories:{},views:0}}
 function recordInterest(s){
- const now=Date.now();if(state.lastInterestId===s.id&&now-state.lastInterestAt<60000)return;state.lastInterestId=s.id;state.lastInterestAt=now;
- const p=interactionProfile();p.countries=p.countries||{};p.categories=p.categories||{};p.views=Number(p.views||0)+1;
- if(s.country)p.countries[s.country]=(p.countries[s.country]||0)+1;
- for(const c of (s.categories||[]).slice(0,4))p.categories[c]=(p.categories[c]||0)+1;
- const trim=o=>Object.fromEntries(Object.entries(o).sort((a,b)=>b[1]-a[1]).slice(0,12));p.countries=trim(p.countries);p.categories=trim(p.categories);
- writeSaved("ern-profile",JSON.stringify(p));
- const recent=readJSON("ern-recent",[]);const next=[s.id,...recent.filter(id=>id!==s.id)].slice(0,8);writeSaved("ern-recent",JSON.stringify(next));
+const now=Date.now();if(state.lastInterestId===s.id&&now-state.lastInterestAt<60000)return;state.lastInterestId=s.id;state.lastInterestAt=now;
+const p=interactionProfile();p.countries=p.countries||{};p.categories=p.categories||{};p.views=Number(p.views||0)+1;
+if(s.country)p.countries[s.country]=(p.countries[s.country]||0)+1;
+for(const c of (s.categories||[]).slice(0,4))p.categories[c]=(p.categories[c]||0)+1;
+const trim=o=>Object.fromEntries(Object.entries(o).sort((a,b)=>b[1]-a[1]).slice(0,12));p.countries=trim(p.countries);p.categories=trim(p.categories);
+writeSaved("ern-profile",JSON.stringify(p));
+const recent=readJSON("ern-recent",[]);const next=[s.id,...recent.filter(id=>id!==s.id)].slice(0,8);writeSaved("ern-recent",JSON.stringify(next));
 }
 const savedMode=readSavedText("ern-mode","auto");
 const savedCategory=readSavedText("ern-category","all");
@@ -70,31 +70,31 @@ const momentWords={
 };
 function momentLabel(s){const w=momentWords[lang]||momentWords.en,h=localHour(s);if(h===null)return w[0];if(h>=5&&h<8)return w[1];if(h>=8&&h<17)return w[2];if(h>=17&&h<20)return w[3];return w[4];}
 function momentSignal(s){
- const h=localHour(s),c=cats(s);if(h===null)return{score:0,label:"Current view",reason:"What is this place showing right now?"};
- const scenic=isScenic(s),city=isCity(s),wild=/wildlife|animal|zoo/.test(c),water=/beach|water|sea|coast|harbour/.test(c),mountain=/mountain|snow|ski|volcano|alps/.test(c);
- if(h>=5&&h<8){let score=18+(scenic?16:0)+(wild?9:0);return{score,label:"Morning light",reason:wild?"Who is already awake here at dawn?":"What does this place look like before the day fully arrives?"}}
- if(h>=17&&h<20){let score=20+(scenic?18:0)+(water?7:0)+(mountain?6:0);return{score,label:"Evening light",reason:"What changes here when the day starts to soften?"}}
- if((h>=20||h<5)&&city){return{score:34,label:"Night lights",reason:"What is still moving here after dark?"}}
- if((h>=20||h<5)&&!city){return{score:-26,label:"Night",reason:"What can this place still reveal in the dark?"}}
- if(h>=8&&h<17){let score=10+(scenic?12:0);return{score,label:"Daylight",reason:"What is happening here in full daylight?"}}
- return{score:0,label:momentLabel(s),reason:"What is this place doing right now?"};
+const h=localHour(s),c=cats(s);if(h===null)return{score:0,label:"Current view",reason:"What is this place showing right now?"};
+const scenic=isScenic(s),city=isCity(s),wild=/wildlife|animal|zoo/.test(c),water=/beach|water|sea|coast|harbour/.test(c),mountain=/mountain|snow|ski|volcano|alps/.test(c);
+if(h>=5&&h<8){let score=18+(scenic?16:0)+(wild?9:0);return{score,label:"Morning light",reason:wild?"Who is already awake here at dawn?":"What does this place look like before the day fully arrives?"}}
+if(h>=17&&h<20){let score=20+(scenic?18:0)+(water?7:0)+(mountain?6:0);return{score,label:"Evening light",reason:"What changes here when the day starts to soften?"}}
+if((h>=20||h<5)&&city){return{score:34,label:"Night lights",reason:"What is still moving here after dark?"}}
+if((h>=20||h<5)&&!city){return{score:-26,label:"Night",reason:"What can this place still reveal in the dark?"}}
+if(h>=8&&h<17){let score=10+(scenic?12:0);return{score,label:"Daylight",reason:"What is happening here in full daylight?"}}
+return{score:0,label:momentLabel(s),reason:"What is this place doing right now?"};
 }
 function cats(s){return(s.categories||[]).join(" ").toLowerCase()}
 function isDay(s){const h=localHour(s);return h===null?true:h>=6&&h<19}
 function isCity(s){return/city|cities|street|skyline|harbour|landmark|culture/.test(cats(s))}
 function isScenic(s){return/beautiful|beach|water|mountain|nature|park|island|wildlife/.test(cats(s))}
 function categoryMatch(s,cat){
- const c=cats(s);if(cat==="all")return true;if(cat==="mountain")return/mountain|snow|ski|volcano|alps/.test(c);
- if(cat==="beach")return/beach|water|sea|coast|surf|harbour/.test(c);if(cat==="city")return/city|cities|street|skyline|harbour/.test(c);
- if(cat==="nature")return/nature|forest|garden|earth|scenic/.test(c);if(cat==="wildlife")return/wildlife|zoo|animal|aquarium/.test(c);
- if(cat==="island")return/island|beach|coast/.test(c);if(cat==="park")return/park|nature|forest/.test(c);if(cat==="landmark")return/landmark|culture/.test(c);
- if(cat==="weather")return/useful|weather|mountain|beach/.test(c);return true;
+const c=cats(s);if(cat==="all")return true;if(cat==="mountain")return/mountain|snow|ski|volcano|alps/.test(c);
+if(cat==="beach")return/beach|water|sea|coast|surf|harbour/.test(c);if(cat==="city")return/city|cities|street|skyline|harbour/.test(c);
+if(cat==="nature")return/nature|forest|garden|earth|scenic/.test(c);if(cat==="wildlife")return/wildlife|zoo|animal|aquarium/.test(c);
+if(cat==="island")return/island|beach|coast/.test(c);if(cat==="park")return/park|nature|forest/.test(c);if(cat==="landmark")return/landmark|culture/.test(c);
+if(cat==="weather")return/useful|weather|mountain|beach/.test(c);return true;
 }
 function personalBoost(s){
- if(state.mode!=="auto")return 0;
- const p=interactionProfile();let n=state.favorites.has(s.id)?14:0;
- if(Number(p.views||0)>=3){
-   if(s.country)n+=Math.min(8,Number(p.countries?.[s.country]||0)*1.5);
+if(state.mode!=="auto")return 0;
+const p=interactionProfile();let n=state.favorites.has(s.id)?14:0;
+if(Number(p.views||0)>=3){
+  if(s.country)n+=Math.min(8,Number(p.countries?.[s.country]||0)*1.5);
    for(const c of s.categories||[])n+=Math.min(3,Number(p.categories?.[c]||0));
    const recent=readJSON("ern-recent",[]);if(recent.includes(s.id))n+=3;
  }
