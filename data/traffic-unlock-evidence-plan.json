@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T16:50:00Z",
+  "objective": "Build credible ERN traffic and visitor-utility evidence so traffic-gated Travelpayouts programs can be rechecked later without guessing their private unlock thresholds.",
+  "noInventedThresholds": true,
+  "gatedPriority": [
+    {
+      "id": "trip-com",
+      "why": "Largest strategic fit because it can cover stays plus other travel needs."
+    },
+    {
+      "id": "hotels-com",
+      "why": "Direct accommodation gap coverage."
+    },
+    {
+      "id": "expedia",
+      "why": "Broad stay/transport/activities fit."
+    },
+    {
+      "id": "agoda",
+      "why": "Strong Asia accommodation relevance."
+    },
+    {
+      "id": "getyourguide",
+      "why": "Useful activity breadth if ERN later needs a second/third activities source."
+    },
+    {
+      "id": "discovercars",
+      "why": "Potential car-rental depth after visitor traffic is larger."
+    }
+  ],
+  "evidenceToAccumulate": [
+    "rolling aggregate unique visitors",
+    "page views",
+    "Earth searches",
+    "zero-result searches",
+    "destination/place opens",
+    "external source opens",
+    "travel option opens",
+    "number of healthy searchable places",
+    "country/provider breadth",
+    "organic search/AI discovery evidence where available",
+    "first eligible affiliate transaction when it eventually occurs"
+  ],
+  "recheckTriggers": [
+    "Travelpayouts visibly changes a program from unavailable/locked to link-generation available",
+    "ERN traffic is materially higher than the owner-observed baseline",
+    "ERN demonstrates sustained visitor use rather than internal testing",
+    "a gated program becomes necessary to fill a real visitor need that accessible programs cannot serve"
+  ],
+  "doNotDo": [
+    "Do not repeatedly apply or click around gated programs.",
+    "Do not open duplicate direct affiliate accounts merely because Travelpayouts is locked.",
+    "Do not claim a program is unlocked from its catalog card alone.",
+    "Do not alter ERN editorial ranking to chase program access."
+  ],
+  "currentAction": "GROW_TRAFFIC_AND_UTILITY_WITH_ACCESSIBLE_PROGRAMS",
+  "tripCom": "WAIT_FOR_TRAFFIC_OR_STATUS_CHANGE"
+}
