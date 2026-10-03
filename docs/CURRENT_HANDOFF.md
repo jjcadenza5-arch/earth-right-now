@@ -483,3 +483,16 @@ Large continuation checkpoint — 2026-10-03 12:15 UTC:
 - Okaukuejo Waterhole / Etosha National Park was added as a P1 HUMAN_PLAYBACK_REQUIRED source candidate from official Namibia Wildlife Resorts evidence. Future Etosha/Viator coverage is blocked until that source is confirmed.
 - Pamir core remains deferred rather than filled with weak substitutes.
 - Traffic-gated Travelpayouts stay programs remain future unlock targets; active partners and currently available utilities remain the near-term business path.
+
+
+Traffic-unlock / Arctic-island expansion checkpoint — 2026-10-03:
+- Healthy/searchable catalog advanced from 217 to 223 places.
+- New quasi-live/current-image searchable places: Nuuk (ArctiComm), Vágar Airport, plus Landsverk current-image views for Mykines, Klaksvík, Gjáarskarð and Hvalba.
+- Faroe/Svalbard live research added for Tvøroyri Port, Longyearbyen/UNIS and the Faroe Islands Live village-camera family; these remain human-playback gated.
+- Business paths added for Nuuk/Viator and Faroe Islands/Viator; Longyearbyen/Viator and Shetland/Viator remain source-gated.
+- Owner Travelpayouts screenshots reconciled: 18 useful programs are visible but not unlocked/activated; 23 other programs expose owner-side link-generation availability.
+- New traffic-led unlock plan lives at data/traffic-growth-priorities.json and data/traffic-unlock-roadmap.json.
+- New currently-usable utility expansion queue lives at data/utility-link-opportunities.json.
+- A single dormant owner-action batch now lives at data/owner-action-packet.json so exact-link work can be done in one worthwhile session later.
+- Trip.com / Hotels.com / Booking.com / Agoda / Expedia remain WAIT-for-traffic/status-change targets; ERN should not repeatedly recheck them.
+- No automatic placement, rewriting, paid ranking, fabricated traffic, or unverified source promotion occurred.
