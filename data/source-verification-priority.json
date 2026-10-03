@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:25:00Z",
+  "generatedAt": "2026-10-03T03:38:00Z",
   "publicActivationAllowed": false,
   "currentHealthyDistinctPlaces": 91,
   "targetHealthyDistinctPlaces": [
@@ -459,6 +459,20 @@
       "humanCheckHint": "On the official Innsbruck webcam page, choose the Markthalle / central Innsbruck camera overlooking the River Inn."
     },
     {
+      "id": "issyk-kul-karven-four-seasons",
+      "title": "Issyk-Kul — KarVen Four Seasons Beach",
+      "country": "Kyrgyzstan",
+      "region": "Issyk-Kul",
+      "provider": "ElCat / KG Camera",
+      "priority": "P1",
+      "verificationUrl": "https://kg.camera/en/camera/KarVen_4_Seasons",
+      "verificationType": "CURRENT_CAMERA_NETWORK_DIRECT",
+      "oneClick": true,
+      "businessUnlocks": [],
+      "rationale": "This is one of the strongest scenic candidates in the Kyrgyzstan network: a current lake/beach view at Sary-Oy; KG Camera states feeds are unarchived with about a 20-second delay.",
+      "humanCheckHint": "Open the direct KarVen Four Seasons page and confirm the Lake Issyk-Kul beach view updates normally."
+    },
+    {
       "id": "innsbruck-kuhtai",
       "title": "Kühtai — Tyrol",
       "country": "Austria",
@@ -777,6 +791,20 @@
       "humanCheckHint": "Open the direct Too-Ashu north page and confirm the high-altitude road/mountain scene updates normally."
     },
     {
+      "id": "bishkek-ala-too-square",
+      "title": "Bishkek — Ala-Too Square",
+      "country": "Kyrgyzstan",
+      "region": "Bishkek",
+      "provider": "ElCat / KG Camera",
+      "priority": "P2",
+      "verificationUrl": "https://kg.camera/en/camera/Bishkek_Ala-Too_Square",
+      "verificationType": "CURRENT_CAMERA_NETWORK_DIRECT",
+      "oneClick": true,
+      "businessUnlocks": [],
+      "rationale": "The network identifies this as the central square of Kyrgyzstan's capital and applies the same unarchived short-delay live-surveillance policy.",
+      "humanCheckHint": "Open the direct Ala-Too Square page and confirm the city-center view updates normally."
+    },
+    {
       "id": "funchal-madeira-live",
       "title": "Funchal — Madeira Live View",
       "country": "Portugal",
@@ -1085,5 +1113,5 @@
       "humanCheckHint": "Confirm visibly current/live and useful before promotion."
     }
   ],
-  "note": "Rebuilt after Central Asia expansion. Research priority only; no candidate becomes LIVE/CURRENT/HEALTHY from this file."
+  "note": "Rebuilt after the expanded Central Asia batch. Research priority only; no candidate becomes LIVE/CURRENT/HEALTHY from this file."
 }
