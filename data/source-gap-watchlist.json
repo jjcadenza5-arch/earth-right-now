@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T02:30:00Z",
+  "generatedAt": "2026-10-03T03:20:00Z",
   "publicActivationAllowed": false,
   "gaps": [
     {
@@ -18,9 +18,10 @@
       ],
       "whyImportant": "Major high-altitude world landscape gap for ERN with exceptional visual value and low representation from Central Asia.",
       "researchEvidence": [
-        "Official Tajikistan tourism material confirms the Pamir Highway as a major high-altitude route through Gorno-Badakhshan and the Pamir landscape.",
-        "Official Khorugh city site confirms Khorugh as the administrative center of GBAO in the Pamir region.",
-        "Current web research found travel videos and webcam directories, but no sufficiently trustworthy always-current live camera source for ERN promotion."
+        "Official Tajikistan/Pamir references confirm Murghab, Khorog, Karakul Lake, the Wakhan Valley and the Pamir Highway as high-value target landscapes.",
+        "Current Tajik hydrometeorology and Murghab district sites provide official regional/weather information but no source-specific scenic live feed suitable for ERN.",
+        "Windfinder's Murghab webcam page currently reports that no nearby webcams are available.",
+        "Current web searches surface prerecorded Pamir travel films and generic camera directories, but no sufficiently trustworthy always-current scenic Pamir camera."
       ],
       "officialReferenceUrls": [
         "https://traveltajikistan.tj/en/the-pamir-highway-2/",
@@ -34,13 +35,14 @@
         "Do not promote a weather iframe as a scenic live camera without source-specific moving/current imagery."
       ],
       "nextResearch": [
-        "Check Pamir tourism authority, GBAO local government, Khorugh municipality, Murghab operators, border-road/weather stations and resort/guesthouse camera pages.",
-        "Prefer Khorog, Murghab, Karakul Lake or Wakhan Valley if an official or operator-published current camera emerges."
+        "Continue checking official Pamir/GBAO tourism, Khorog and Murghab local-government pages, hydrometeorological stations, hotels/guesthouses, road operators and high-altitude research stations.",
+        "Prefer Khorog, Murghab, Karakul Lake, Wakhan Valley or a Pamir Highway weather/road camera if a source-specific current feed appears.",
+        "Do not substitute adjacent Kyrgyzstan/Kazakhstan cameras for the unresolved Tajikistan/Pamir gap."
       ],
       "businessPotential": [
         "viator"
       ],
-      "lastResearchedAt": "2026-10-03T02:30:00Z"
+      "lastResearchedAt": "2026-10-03T03:20:00Z"
     }
   ]
 }
