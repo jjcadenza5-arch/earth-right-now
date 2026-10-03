@@ -507,3 +507,13 @@ Arctic / Faroe / Namibia continuation checkpoint — 2026-10-03:
 - Trip.com, Hotels.com, Booking.com, Agoda and Expedia remain traffic-led future targets rather than current blockers.
 - data/utility-link-opportunities.json prioritizes Airalo, Go City, Kiwitaxi, Radical Storage, Aviasales and KKday for later bundled exact-link generation.
 - data/owner-action-packet.json keeps all owner-only playback/link tasks dormant until they are worth doing in one batch.
+
+
+250 searchable-place milestone — 2026-10-03:
+- ERN reached 250 healthy distinct searchable places.
+- The final stretch used only clearly labeled quasi-live/current-image additions backed by official/provider camera evidence; Watch Earth live/current rules were not relaxed.
+- New milestone additions include Prague tower views, Levi, multiple Switzerland Tourism panoramas, Seoul live plazas, Kyrgyz current-camera locations, Saint-Félix Mauritius and Lake Hāwea/Wānaka.
+- data/sources.json remains under the production catalog-size ceiling after the batch.
+- Content expansion now shifts from raw count growth to quality-led gap filling, source replacement and stronger regional balance.
+- Owner Travelpayouts screenshots were recorded as account evidence: Trip.com, Booking.com, Agoda, Expedia, Hotels.com, GetYourGuide, Tripadvisor Experiences, DiscoverCars, Traveloka, Omio, 12GO, Hostelworld, Vrbo, Ticketmaster, Vio.com, Rakuten Travel, VisitorsCoverage and Insubuy are visible in the program catalog but treated as traffic-gated/not-yet-unlocked until platform or owner confirmation changes.
+- Business priority remains: active partners first, grow qualified traffic, batch exact-link generation, then revisit high-value stay/activity programs when unlock signals occur.
