@@ -7442,7 +7442,6 @@
     "story": "Official La Réunion Tourism panoramic beach webcam, described as HD and almost live.",
     "aliases": [
       "Boucan Canot",
-      "Boucan-Canot",
       "Saint-Gilles-les-Bains"
     ],
     "truth": "LIVE_IMAGE",
@@ -7590,7 +7589,6 @@
     "story": "Official Visit Azores webcam collection for São Miguel coastal spots including Mosteiros, São Roque, Milícias and Água d’Alto.",
     "aliases": [
       "São Miguel",
-      "Sao Miguel",
       "Azores São Miguel",
       "Mosteiros"
     ],
@@ -7628,8 +7626,7 @@
     "story": "Official Visit Azores webcam page for Praia da Vitória on Terceira Island.",
     "aliases": [
       "Terceira",
-      "Praia da Vitória",
-      "Praia da Vitoria"
+      "Praia da Vitória"
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
