@@ -3088,9 +3088,11 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Viator currently has Bansko-specific experiences. Commercial work remains source-gated until ERN verifies the official Bansko camera family.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Bansko/Bansko-Thermal-pool-escape/d31481-16415P9",
-      "nextAction": "After Bansko source verification, generate one Bansko destination-level Viator partner link rather than a single-product link."
+      "nextAction": "After Bansko source verification, generate one Bansko destination-level Viator partner link rather than a single-product link.",
+      "sourceGateResolvedAt": "2026-10-03T16:40:00Z",
+      "sourceGateNote": "ERN now has a healthy searchable LIVE_IMAGE/quasi-live destination; exact tracked-link generation and manual verification remain required."
     },
     {
       "id": "viator-borovets-future",
@@ -3102,9 +3104,11 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Viator currently has Borovets-specific snow and mountain experiences. Keep commercial activation source-gated until the official resort cameras are verified.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Borovets/Borovets-Ultimate-Snowmobile-Experience/d36672-118846P2",
-      "nextAction": "After Borovets source verification, generate one Borovets destination-level Viator link and verify it manually."
+      "nextAction": "After Borovets source verification, generate one Borovets destination-level Viator link and verify it manually.",
+      "sourceGateResolvedAt": "2026-10-03T16:40:00Z",
+      "sourceGateNote": "ERN now has a healthy searchable LIVE_IMAGE/quasi-live destination; exact tracked-link generation and manual verification remain required."
     },
     {
       "id": "viator-jasna-slovakia-future",
@@ -3119,6 +3123,20 @@
       "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/blog/Slovakia/d66",
       "nextAction": "After Jasná playback verification, search the Viator partner account for a clean Low Tatras/Jasná destination-level link. Do not force a generic Slovakia link if it is not useful."
+    },
+    {
+      "id": "viator-kopaonik-serbia",
+      "destination": "Kopaonik / Serbia",
+      "placeIds": [
+        "kopaonik-serbia"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has a healthy official Kopaonik quasi-live place. Viator has broad Serbia inventory, but a clean Kopaonik-specific destination path must be checked in the partner account before activation.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Serbia/d21912",
+      "nextAction": "Search the Viator partner account for a clean Kopaonik destination-level link. If none exists, leave this opportunity dormant rather than using an unrelated generic Serbia page."
     }
   ]
 }
