@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T05:15:00Z",
+  "generatedAt": "2026-10-03T05:25:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1424,6 +1424,22 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Banos/Pailon-of-Diablo-and-Casa-del-Arbol/d22150-114084P8",
       "publicInventoryEvidence": "Current Viator Baños inventory includes tours with direct Tungurahua viewpoints as well as a promoted Tungurahua volcano ascent.",
       "nextAction": "Generate one Baños/Tungurahua destination-level Viator partner link and verify it manually before public activation."
+    },
+    {
+      "id": "klook-hong-kong",
+      "destination": "Hong Kong",
+      "placeIds": [
+        "hong-kong-victoria-harbour",
+        "hong-kong-victoria-peak"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has official five-minute current views of Victoria Harbour and Victoria Peak, while Klook has deep Hong Kong inventory directly matching both locations.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-HK/destination/c2-hong-kong/1-things-to-do/",
+      "publicInventoryEvidence": "Current Klook Hong Kong inventory includes Victoria Harbour cruises, Peak Tram, Sky Terrace and Victoria Peak tours with very high booking volume.",
+      "nextAction": "Generate one Hong Kong destination-level Klook tracked link in Travelpayouts and verify it manually; reuse it for Harbour/Peak discovery rather than creating duplicate commercial density."
     }
   ]
 }
