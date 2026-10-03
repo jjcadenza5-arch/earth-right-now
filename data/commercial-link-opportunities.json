@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T14:30:00Z",
+  "generatedAt": "2026-10-03T15:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2846,6 +2846,51 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Aruba/d28-ttd",
       "publicInventoryEvidence": "Current Viator Aruba destination inventory shows hundreds of island activities including snorkeling, cruises, shore excursions and tours.",
       "nextAction": "Generate one Aruba destination-level Viator tracked link and reuse it across verified Aruba places rather than duplicating commercial density."
+    },
+    {
+      "id": "klook-yehliu-north-coast",
+      "destination": "Yehliu / Taiwan North Coast",
+      "placeIds": [
+        "taiwan-yehliu",
+        "taiwan-heping-island",
+        "taiwan-tamsui-fishermans-wharf"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has healthy searchable North Coast/New Taipei places. Klook currently has high-volume Yehliu/NE Coast day tours departing Taipei, making this a strong See → Plan bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/93318-yehliu-jiufen-shifen-shifen-waterfall-day-tour/",
+      "nextAction": "Generate one Taipei/North Coast Klook tracked link that genuinely serves these places; verify destination and tracking before public activation."
+    },
+    {
+      "id": "klook-taipei-elephant-mountain",
+      "destination": "Taipei / Elephant Mountain",
+      "placeIds": [
+        "taiwan-elephant-mountain"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Elephant Mountain is a strong Taipei planning surface and Klook currently exposes broad Taipei tour inventory including North Coast/city products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/destination/c19-taipei/1001-tours/",
+      "nextAction": "Generate one Taipei destination-level Klook tracked link or a closer Elephant Mountain/Taipei city product if available; verify before activation."
+    },
+    {
+      "id": "viator-akaroa-lyttelton",
+      "destination": "Akaroa / Lyttelton / Banks Peninsula",
+      "placeIds": [
+        "nz-akaroa-heads",
+        "nz-lyttelton-heads"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has official current-image views at both harbour entrances. Viator currently sells Akaroa/Banks Peninsula shore excursions that explicitly include Akaroa Harbour and Lyttelton.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Akaroa/Akaroa-Shore-Excursion-Banks-Peninsula-and-Christchurch-City-Sights/d23350-2950PRTCHCCLT65CS",
+      "nextAction": "Generate one Akaroa/Banks Peninsula Viator tracked link and verify it can appropriately serve both ERN places."
     }
   ]
 }
