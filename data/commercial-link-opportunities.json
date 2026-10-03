@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T02:30:00Z",
+  "generatedAt": "2026-10-03T02:40:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -685,6 +685,34 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/tours/Dushanbe/Pamir-Highway/d50471-220481P1",
       "publicInventoryEvidence": "Current Viator inventory includes Pamir Highway itineraries through Khorog, Wakhan Corridor, Murghab and Karakul Lake.",
       "nextAction": "Do not create or publish an affiliate link until ERN has a verified Pamir live/current place. Once source truth exists, prefer one Pamir Highway destination-level Viator link."
+    },
+    {
+      "id": "viator-shymbulak-future",
+      "destination": "Almaty / Shymbulak",
+      "placeIds": [
+        "shymbulak-mountain-resort"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Viator currently has multiple Almaty/Shymbulak experiences including Medeu, Shymbulak cable-car and mountain sightseeing.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Almaty/Almaty-city-tour-with-Medeo-and-Shymbulak/d32977-130849P7",
+      "publicInventoryEvidence": "Current Viator inventory explicitly includes Shymbulak mountain-resort itineraries and cable-car visits.",
+      "nextAction": "After Shymbulak live playback is owner-confirmed and promoted, generate one Almaty/Shymbulak Viator partner link and manually verify it."
+    },
+    {
+      "id": "viator-karakol-future",
+      "destination": "Karakol / Issyk-Kul",
+      "placeIds": [
+        "karakol-ski-base"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "A verified Karakol mountain/ski camera would create a strong Central Asia trip-planning bridge; Viator account inventory must be checked before activation.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "nextAction": "First promote a verified Karakol live source, then search the Viator partner account for a clean Karakol/Issyk-Kul destination link. Do not use a generic Kyrgyzstan link."
     }
   ]
 }
