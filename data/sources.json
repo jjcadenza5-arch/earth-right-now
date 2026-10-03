@@ -512,7 +512,7 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "National Park Service",
     "rightsBasis": "See source evidence.",
-    "freshnessEvidence": "Fresh official National Park Service; see source evidence."
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "yellowstone-national-park",
@@ -576,7 +576,7 @@
       "Mt Rainier"
     ],
     "rightsBasis": "See source evidence.",
-    "freshnessEvidence": "Fresh official National Park Service; see source evidence."
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "glacier-national-park",
@@ -606,7 +606,7 @@
     "coordinateBasis": "PLACE_REFERENCE",
     "attribution": "National Park Service",
     "rightsBasis": "See source evidence.",
-    "freshnessEvidence": "Fresh official National Park Service; see source evidence."
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "san-diego-zoo",
@@ -8100,7 +8100,7 @@
     "quality": 92,
     "freshness": 98,
     "moment": 92,
-    "story": "Prague City Tourism's official Prague Towers page directly links the Petřín live camera to the Prague Visitor Pass Panomax 360 endpoint. Owner previously reported the Prague camera family...",
+    "story": "Prague City Tourism's official Prague Towers page directly links the Petřín live camera to the Prague Visitor Pass Panomax 360 endpoint. Owner previously…",
     "lat": 50.0835,
     "lon": 14.3954,
     "coordinateBasis": "PLACE_REFERENCE",
@@ -8602,7 +8602,7 @@
     "quality": 92,
     "freshness": 98,
     "moment": 92,
-    "story": "KG Camera exposes a direct Karakol Ski Base camera page at the lower lift and states its video surveillance runs without archiving with a 20-second delay. The official Karakol Ski Base al...",
+    "story": "KG Camera exposes a direct Karakol Ski Base camera page at the lower lift and states its video surveillance runs without archiving with a 20-second delay.…",
     "lat": 42.41,
     "lon": 78.395,
     "coordinateBasis": "DESTINATION_REFERENCE",
@@ -8820,7 +8820,7 @@
     "quality": 90,
     "freshness": 97,
     "moment": 90,
-    "story": "Current official tourism family plus MTPA annual-report evidence supports Saint-Félix as a named Mauritius Live camera location; current playback still requires owner verification.",
+    "story": "Current official tourism family plus MTPA annual-report evidence supports Saint-Félix as a named Mauritius Live camera location; current playback still…",
     "lat": -20.487,
     "lon": 57.558,
     "coordinateBasis": "DESTINATION_REFERENCE",
@@ -9106,8 +9106,8 @@
     "lat": 50.8467,
     "lon": 4.3525,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official city source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current City of Brussels page exposes the Grand-Place webcam and HTML5 video player; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "brussels-brouckere-current",
@@ -9140,8 +9140,8 @@
     "lat": 50.8515,
     "lon": 4.3523,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official city source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current City of Brussels page exposes the Place de Brouckère webcam and HTML5 video player; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "zandvoort-current",
@@ -9174,8 +9174,8 @@
     "lat": 52.374,
     "lon": 4.525,
     "coordinateBasis": "AREA_REFERENCE",
-    "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Visit Zandvoort states its circuit and beach webcams show current conditions year-round; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "darmstadt-mathildenhoehe-current",
@@ -9209,8 +9209,8 @@
     "lat": 49.8763,
     "lon": 8.668,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current Darmstadt Tourism page explicitly invites visitors to see how Mathildenhöhe looks right now via webcam; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "heidelberg-current",
@@ -9244,8 +9244,8 @@
     "lat": 49.4122,
     "lon": 8.71,
     "coordinateBasis": "CITY_REFERENCE",
-    "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Heidelberg Marketing's current weather/webcam page lists Old Town and Königstuhl webcam views; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "nuremberg-current",
@@ -9278,8 +9278,8 @@
     "lat": 49.4521,
     "lon": 11.0767,
     "coordinateBasis": "CITY_REFERENCE",
-    "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current Nuremberg Tourism privacy/service documentation states that a panoramic webcam provides a real-time view of the city; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "cannes-current",
@@ -9313,8 +9313,8 @@
     "lat": 43.5528,
     "lon": 7.0174,
     "coordinateBasis": "CITY_REFERENCE",
-    "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current official Cannes tourism site tells visitors to check conditions live and links live webcam/weather information; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "plitvice-lakes-current",
@@ -9348,8 +9348,8 @@
     "lat": 44.88,
     "lon": 15.616,
     "coordinateBasis": "AREA_REFERENCE",
-    "rightsBasis": "Official national park source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current official national park site exposes a Livestream entry in its primary visitor navigation; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "denmark-klitmoller-current",
@@ -9383,8 +9383,8 @@
     "lat": 57.04,
     "lon": 8.486,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official national tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "VisitDenmark currently describes the Klitmøller webcam as a live view for checking waves and coast conditions; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "denmark-ribe-current",
@@ -9418,8 +9418,8 @@
     "lat": 55.328,
     "lon": 8.762,
     "coordinateBasis": "CITY_REFERENCE",
-    "rightsBasis": "Official national tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "VisitDenmark currently describes the Ribe stream as a view of what is going on right now; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "denmark-skjoldnaes-current",
@@ -9453,8 +9453,8 @@
     "lat": 54.97,
     "lon": 10.173,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official national tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current VisitDenmark attraction page explicitly labels a webcam livefeed from the lighthouse; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "denmark-lokken-current",
@@ -9488,8 +9488,8 @@
     "lat": 57.37,
     "lon": 9.714,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official national/regional tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current VisitDenmark page explicitly lists Løkken Moleleje Webcam - Live Stream; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "denmark-aalborg-zoo-current",
@@ -9523,8 +9523,8 @@
     "lat": 57.037,
     "lon": 9.899,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official tourism/zoo source family; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current VisitDenmark Aalborg page tells visitors they can follow the zoo's polar bear family live on webcam; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "denmark-gribskov-osprey-current",
@@ -9558,8 +9558,8 @@
     "lat": 56.02,
     "lon": 12.32,
     "coordinateBasis": "AREA_REFERENCE",
-    "rightsBasis": "Official national/regional tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current VisitDenmark Gribskov page describes following an osprey nest through a live webcam; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "heidelberg-konigstuhl-current",
@@ -9593,8 +9593,8 @@
     "lat": 49.402,
     "lon": 8.729,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Heidelberg Marketing's current weather/webcam page explicitly lists a Königstuhl panorama; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "zandvoort-circuit-current",
@@ -9627,8 +9627,8 @@
     "lat": 52.3888,
     "lon": 4.5409,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Visit Zandvoort states the circuit pitcam operates year-round except temporary broadcast-rights restrictions; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "dresden-old-town-current",
@@ -9662,8 +9662,8 @@
     "lat": 51.0504,
     "lon": 13.7373,
     "coordinateBasis": "CITY_REFERENCE",
-    "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current Dresden Elbland Tourism weathercam page invites visitors to a live discovery and lists the Dresden Old Town camera; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "radebeul-wackerbarth-current",
@@ -9697,8 +9697,8 @@
     "lat": 51.106,
     "lon": 13.629,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current Dresden Elbland Tourism weathercam page lists a live Radebeul / Wackerbarth Castle vineyard camera; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "farchant-zugspitze-current",
@@ -9733,8 +9733,8 @@
     "lat": 47.5308,
     "lon": 11.1118,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official destination/tourism source; ERN links externally; no reuse or restream rights inferred.",
-    "freshnessEvidence": "Current Farchant destination page says visitors can check in live and lists Farchant, Zugspitze, Wank and Garmisch-Partenkirchen livecams; verified 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "provider": "Taiwan Tourism Administration / official government live-camera network",
@@ -9763,8 +9763,8 @@
     "story": "Official current view.",
     "lat": 22.886,
     "lon": 120.663,
-    "rightsBasis": "Official; link-only.",
-    "freshnessEvidence": "Fresh 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "provider": "Taiwan Tourism Administration / official government live-camera network",
@@ -9793,8 +9793,8 @@
     "story": "Official current view.",
     "lat": 25.205,
     "lon": 121.69,
-    "rightsBasis": "Official; link-only.",
-    "freshnessEvidence": "Fresh 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "provider": "Taiwan Tourism Administration / official government live-camera network",
@@ -9823,8 +9823,8 @@
     "story": "Official current view.",
     "lat": 25.162,
     "lon": 121.763,
-    "rightsBasis": "Official; link-only.",
-    "freshnessEvidence": "Fresh 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "provider": "Taiwan Tourism Administration / official government live-camera network",
@@ -9853,8 +9853,8 @@
     "story": "Official current view.",
     "lat": 25.027,
     "lon": 121.571,
-    "rightsBasis": "Official; link-only.",
-    "freshnessEvidence": "Fresh 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "provider": "Taiwan Tourism Administration / official government live-camera network",
@@ -9883,8 +9883,8 @@
     "story": "Official current view.",
     "lat": 25.183,
     "lon": 121.411,
-    "rightsBasis": "Official; link-only.",
-    "freshnessEvidence": "Fresh 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "country": "New Zealand",
@@ -9914,8 +9914,8 @@
     "lat": -43.61,
     "lon": 172.81,
     "refreshIntervalSeconds": 300,
-    "rightsBasis": "Official; link-only.",
-    "freshnessEvidence": "Fresh 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "country": "New Zealand",
@@ -9945,8 +9945,8 @@
     "lat": -43.86,
     "lon": 172.96,
     "refreshIntervalSeconds": 300,
-    "rightsBasis": "Official; link-only.",
-    "freshnessEvidence": "Fresh 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "taiwan-gaomei-wetland-live",
@@ -9975,8 +9975,8 @@
     "lat": 24.312,
     "lon": 120.55,
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official; link-only.",
-    "freshnessEvidence": "Fresh 2026-10-03."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "aitutaki-lagoon-current",
@@ -9995,7 +9995,6 @@
     "health": "HEALTHY",
     "playback": "EXTERNAL",
     "sourceUrl": "https://cookislandsairports.com/webcam-pir1/",
-    "officialUrl": "https://cookislandsairports.com/webcam-pir1/",
     "attribution": "Cook Islands Airports Authority",
     "checkedAt": "2026-10-03T15:30:00Z",
     "lastSuccessfulCheck": "2026-10-03T15:30:00Z",
@@ -10007,8 +10006,8 @@
     "lon": -159.785,
     "timeZone": "Pacific/Rarotonga",
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official Cook Islands Airports webcam page; ERN links to the source and does not restream.",
-    "freshnessEvidence": "Official page labels a latest/current Aitutaki Lagoon image and recent time-of-day captures."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "aitutaki-tamanu-beach-current",
@@ -10026,7 +10025,6 @@
     "health": "HEALTHY",
     "playback": "EXTERNAL",
     "sourceUrl": "https://cookislandsairports.com/webcam-ait/",
-    "officialUrl": "https://cookislandsairports.com/webcam-ait/",
     "attribution": "Cook Islands Airports Authority / Tamanu Beach Resort",
     "checkedAt": "2026-10-03T15:30:00Z",
     "lastSuccessfulCheck": "2026-10-03T15:30:00Z",
@@ -10038,8 +10036,8 @@
     "lon": -159.79,
     "timeZone": "Pacific/Rarotonga",
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official Cook Islands Airports webcam page; ERN links to the source and does not restream.",
-    "freshnessEvidence": "Official page labels the most recent/current Tamanu Beach image plus recent daypart captures."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "rarotonga-avaavaroa-current",
@@ -10057,7 +10055,6 @@
     "health": "HEALTHY",
     "playback": "EXTERNAL",
     "sourceUrl": "https://cookislandsairports.com/webcam-ava/",
-    "officialUrl": "https://cookislandsairports.com/webcam-ava/",
     "attribution": "Cook Islands Airports Authority",
     "checkedAt": "2026-10-03T15:30:00Z",
     "lastSuccessfulCheck": "2026-10-03T15:30:00Z",
@@ -10069,8 +10066,8 @@
     "lon": -159.725,
     "timeZone": "Pacific/Rarotonga",
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official Cook Islands Airports webcam page; ERN links to the source and does not restream.",
-    "freshnessEvidence": "Official page publishes current/recent daylight images for Avaavaroa Beach."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   },
   {
     "id": "rarotonga-airport-current",
@@ -10089,7 +10086,6 @@
     "health": "HEALTHY",
     "playback": "EXTERNAL",
     "sourceUrl": "https://cookislandsairports.com/webcam-rar/",
-    "officialUrl": "https://cookislandsairports.com/webcam-rar/",
     "attribution": "Cook Islands Airports Authority",
     "checkedAt": "2026-10-03T15:30:00Z",
     "lastSuccessfulCheck": "2026-10-03T15:30:00Z",
@@ -10101,7 +10097,7 @@
     "lon": -159.8056,
     "timeZone": "Pacific/Rarotonga",
     "coordinateBasis": "PLACE_REFERENCE",
-    "rightsBasis": "Official Cook Islands Airports webcam page; ERN links to the source and does not restream.",
-    "freshnessEvidence": "Official page labels the latest/current Rarotonga International Airport image."
+    "rightsBasis": "See source evidence.",
+    "freshnessEvidence": "Fresh source evidence."
   }
 ]
