@@ -49,7 +49,9 @@
       "id": "klook-seoul",
       "destination": "Seoul",
       "placeIds": [
-        "seoul-plaza"
+        "seoul-plaza",
+        "seoul-gwanghwamun-plaza",
+        "seoul-cheonggye-plaza"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
@@ -2122,7 +2124,8 @@
         "faroe-mykines",
         "faroe-klaksvik",
         "faroe-gjaarskard",
-        "faroe-hvalba"
+        "faroe-hvalba",
+        "tvoroyri-port"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -2150,8 +2153,8 @@
       "id": "viator-shetland-future",
       "destination": "Shetland Islands / Lerwick",
       "placeIds": [
-        "shetland-lerwick-town-hall",
-        "shetland-cliff-cam"
+        "shetland-cliff-cam",
+        "lerwick-town-hall"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
