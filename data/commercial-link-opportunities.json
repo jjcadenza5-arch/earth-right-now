@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T02:42:00Z",
+  "generatedAt": "2026-10-03T03:00:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -528,6 +528,22 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Aruba/d28-ttd",
       "publicInventoryEvidence": "Current Viator Aruba destination inventory contains 400+ experiences including snorkeling, sailing, island tours and beach-focused activities.",
       "nextAction": "Generate one Aruba destination-level Viator partner link and manually verify it before public activation; keep the offer downstream from Earth discovery."
+    },
+    {
+      "id": "viator-kruger-future",
+      "destination": "Kruger National Park",
+      "placeIds": [
+        "sanparks-satara",
+        "sanparks-olifants",
+        "sanparks-punda-maria",
+        "sanparks-talamati"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "The SANParks Kruger webcam family can support one park-level trip-planning bridge once at least one new camera is promoted; use one shared commercial action rather than one affiliate link per camp.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "nextAction": "After at least one new Kruger camera is promoted, generate one Kruger destination-level Viator partner link and manually verify it; reuse it across verified Kruger places without duplicate commercial density."
     }
   ]
 }
