@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:46:00Z",
+  "generatedAt": "2026-10-03T03:38:00Z",
   "principles": {
     "existingPartnersFirst": true,
     "exactTrackedLinkRequired": true,
@@ -11,7 +11,7 @@
   },
   "currentVerifiedOpportunityCount": 12,
   "exactLinkQueueCount": 18,
-  "sourceGatedQueueCount": 12,
+  "sourceGatedQueueCount": 18,
   "researchPriority": [
     {
       "placeId": "koli-lake-pielinen",
@@ -510,5 +510,6 @@
       "publicActivationAllowed": false
     }
   ],
-  "note": "Refreshed after Mauritius and Boulders additions. Only healthy places not already represented in the explicit commercial opportunity queue appear here."
+  "note": "Counts reconciled after Central Asia source/business expansion. Research priority only; exact-link and source-verification gates remain mandatory.",
+  "sourceGapBlockedCount": 1
 }
