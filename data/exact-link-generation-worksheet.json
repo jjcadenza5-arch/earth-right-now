@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:00:00Z",
+  "generatedAt": "2026-10-03T16:25:00Z",
   "status": "OWNER_ACTION_NOT_YET_REQUIRED",
   "purpose": "One efficient owner session for exact tracked-link generation after autonomous research is complete.",
   "rule": "Never invent URLs. Use the named partner account/tool, search the exact phrase, generate the tracked link, open it manually, then record it.",
@@ -539,8 +539,58 @@
       ],
       "accountSearchPhrase": "Sal Cape Verde tours Santa Maria",
       "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "klook-taipingshan-yilan",
+      "partner": "klook",
+      "destination": "Taipingshan / Yilan",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "taiwan-taipingshan"
+      ],
+      "accountSearchPhrase": "Taipingshan Yilan activities tickets",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "klook-alishan-region",
+      "partner": "klook",
+      "destination": "Alishan / Chiayi Mountains",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "taiwan-fenqihu",
+        "taiwan-taiping-suspension-bridge"
+      ],
+      "accountSearchPhrase": "Alishan Chiayi tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "kkday-taoyuan-daxi-dongyanshan",
+      "partner": "kkday",
+      "destination": "Taoyuan — Daxi & Dongyanshan",
+      "intent": "activities",
+      "priority": "P2",
+      "placeIds": [
+        "taiwan-daxi-old-street",
+        "taiwan-dongyanshan"
+      ],
+      "accountSearchPhrase": "Taoyuan Daxi Dongyanshan",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-hawkes-bay",
+      "partner": "viator",
+      "destination": "Hawke's Bay / Te Awanga",
+      "intent": "activities",
+      "priority": "P2",
+      "placeIds": [
+        "nz-te-awanga-coast"
+      ],
+      "accountSearchPhrase": "Hawke's Bay Napier tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
     }
   ],
-  "searchablePlaceMilestone": 290,
-  "note": "Worksheet refreshed at the 287-place quality-growth stage. Generate links only in deliberate owner batches; locked Travelpayouts programs remain traffic-led future targets."
+  "searchablePlaceMilestone": 300,
+  "note": "Worksheet refreshed at the 300-place quality milestone. Generate links only in deliberate owner batches; traffic-gated stay programs remain future unlocks."
 }
