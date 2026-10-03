@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03T12:30:00Z",
+  "healthyPlaceBaseline": 256,
+  "placesWithCommercialPath": 227,
+  "intentionallyUncoveredCount": 29,
+  "principle": "ERN does not need a commercial path on every place. Scientific, remote, monitoring and low-intent views remain editorial-first unless a genuinely useful visitor action emerges.",
+  "rows": [
+    {
+      "placeId": "florida-now",
+      "title": "Florida Now — Beaches & Destinations",
+      "country": "United States",
+      "reason": "EDITORIAL_OR_AGGREGATE_DISCOVERY_SURFACE",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "planet-earth-orbit",
+      "title": "Planet Earth — International Space Station",
+      "country": "Earth",
+      "reason": "EDITORIAL_OR_AGGREGATE_DISCOVERY_SURFACE",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "cold-lake-marina",
+      "title": "Cold Lake Marina",
+      "country": "Canada",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "colombia-galeras-volcano",
+      "title": "Galeras Volcano — Current Views",
+      "country": "Colombia",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "lerwick-town-hall",
+      "title": "Lerwick — Town Hall",
+      "country": "Shetland Islands",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "mpala-watering-hole",
+      "title": "Mpala Watering Hole",
+      "country": "Kenya",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "colombia-nevado-del-ruiz",
+      "title": "Nevado del Ruiz — Current Views",
+      "country": "Colombia",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "pleasant-beach-lake-ontario",
+      "title": "Pleasant Beach — Lake Ontario",
+      "country": "United States",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "nz-raoul-island",
+      "title": "Rangitāhua / Raoul Island — Current Images",
+      "country": "New Zealand",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "guatemala-santiaguito",
+      "title": "Santiaguito Volcano — Guatemala",
+      "country": "Guatemala",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "sasagawa-nagare",
+      "title": "Sasagawa Nagare — Sea of Japan",
+      "country": "Japan",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "seoul-cheonggye-plaza",
+      "title": "Seoul — Cheonggyecheon Plaza",
+      "country": "South Korea",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "seoul-gwanghwamun-plaza",
+      "title": "Seoul — Gwanghwamun Plaza",
+      "country": "South Korea",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "tvoroyri-port",
+      "title": "Tvøroyri — Port",
+      "country": "Faroe Islands",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "peru-ubinas-volcano",
+      "title": "Ubinas Volcano — Peru",
+      "country": "Peru",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "nz-whakaari",
+      "title": "Whakaari / White Island — Current Images",
+      "country": "New Zealand",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "alaska-augustine-volcano",
+      "title": "Augustine Volcano — Alaska",
+      "country": "United States",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "bulusan-volcano",
+      "title": "Bulusan Volcano — Current Monitoring View",
+      "country": "Philippines",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "antarctica-casey-station",
+      "title": "Casey Research Station — Antarctica",
+      "country": "Antarctica",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "antarctica-davis-station",
+      "title": "Davis Research Station — Antarctica",
+      "country": "Antarctica",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "ecuador-reventador-monitoring",
+      "title": "El Reventador Volcano — Monitoring Views",
+      "country": "Ecuador",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "kanlaon-volcano",
+      "title": "Kanlaon Volcano — Current Monitoring View",
+      "country": "Philippines",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "antarctica-macquarie-island",
+      "title": "Macquarie Island — Sub-Antarctic Station",
+      "country": "Australia",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "antarctica-mawson-station",
+      "title": "Mawson Research Station — Antarctica",
+      "country": "Antarctica",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "ecuador-sangay-volcano",
+      "title": "Sangay Volcano — Current Views",
+      "country": "Ecuador",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "alaska-shishaldin-volcano",
+      "title": "Shishaldin Volcano — Alaska",
+      "country": "United States",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "iceland-surtsey",
+      "title": "Surtsey — Iceland",
+      "country": "Iceland",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "peru-ticsani-volcano",
+      "title": "Ticsani Volcano — Peru",
+      "country": "Peru",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "peru-yucamane-volcano",
+      "title": "Yucamane Volcano — Peru",
+      "country": "Peru",
+      "reason": "SCIENCE_REMOTE_OR_MONITORING_FIRST",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    }
+  ],
+  "recheckRule": "Reconsider only when a destination gains clear visitor-planning utility or a suitable active/link-generation-capable partner has destination-specific inventory."
+}
