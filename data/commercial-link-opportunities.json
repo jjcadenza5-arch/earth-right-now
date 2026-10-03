@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T02:40:00Z",
+  "generatedAt": "2026-10-03T03:45:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -821,6 +821,66 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/collections/Mt-Everest-Tours-from-Kathmandu/c28285",
       "publicInventoryEvidence": "Viator currently lists multiple Mt. Everest products from Kathmandu, including scenic flights, helicopter tours and multi-day trekking.",
       "nextAction": "After at least one Everest/Khumbu source is promoted, generate one Everest-region Viator partner link and verify it manually."
+    },
+    {
+      "id": "viator-bled-future",
+      "destination": "Bled / Lake Bled",
+      "placeIds": [
+        "bled-lake-tourism"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "A verified Lake Bled live view would connect naturally to strong current Viator inventory for Bled, Vintgar Gorge, Triglav National Park and castle/island visits.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Bled/d22044-ttd",
+      "publicInventoryEvidence": "Viator currently lists dozens of Bled tours including Lake Bled, Vintgar Gorge, Triglav National Park, rafting and castle/island products.",
+      "nextAction": "After Bled playback is confirmed and promoted, generate one Bled destination-level Viator tracked link and verify it manually."
+    },
+    {
+      "id": "viator-mykonos-future",
+      "destination": "Mykonos",
+      "placeIds": [
+        "mykonos-new-port"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "A verified Mykonos port live view aligns closely with deep current Viator inventory for shore excursions, island tours, beaches, cruises and city exploration.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Mykonos/d958-ttd",
+      "publicInventoryEvidence": "Viator currently lists hundreds of Mykonos products across shore excursions, cruises, city tours, beaches and private sightseeing.",
+      "nextAction": "After Mykonos playback is confirmed and promoted, generate one city/island-level Viator partner link and verify it manually."
+    },
+    {
+      "id": "viator-santorini-future",
+      "destination": "Santorini",
+      "placeIds": [
+        "santorini-caldera-imerovigli"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "A verified Santorini caldera stream creates an unusually strong See Live → Decide → Go bridge into deep Viator Santorini cruise, sightseeing and island-tour inventory.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Santorini/d959-ttd",
+      "publicInventoryEvidence": "Viator currently lists 1,000+ Santorini experiences including cruises, Oia/Fira sightseeing, volcanic beaches, wine, photography and private tours.",
+      "nextAction": "After the Santorini stream is confirmed current and promoted, generate one Santorini destination-level Viator partner link and verify it manually."
+    },
+    {
+      "id": "viator-brasov-future",
+      "destination": "Brașov / Poiana Brașov",
+      "placeIds": [
+        "poiana-brasov-live"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "A verified Poiana Brașov mountain view can naturally lead to Brașov-region tours, castles, wildlife and mountain excursions.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Brasov/d23067-ttd",
+      "publicInventoryEvidence": "Viator currently lists 200+ Brașov-region experiences including Bran/Peleș trips, wildlife and mountain-road excursions.",
+      "nextAction": "After Poiana Brașov playback is confirmed and promoted, generate one appropriate Brașov-region Viator link; avoid implying the live camera itself is in central Brașov."
     }
   ]
 }
