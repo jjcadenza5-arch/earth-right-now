@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:25:00Z",
+  "generatedAt": "2026-10-03T13:05:00Z",
   "publicActivationAllowed": false,
   "purpose": "Prepare currently link-generation-capable Travelpayouts utilities for ERN without waiting for traffic-gated stay programs.",
   "currentlyUsableProgramCount": 23,
@@ -51,7 +51,24 @@
         "vienna-city-hall-ringstrasse",
         "helsinki-market-square-south-harbour",
         "cape-town-waterfront",
-        "auckland-viaduct-harbour"
+        "auckland-viaduct-harbour",
+        "istanbul-sultanahmet",
+        "istanbul-maidens-tower",
+        "chicago-lakefront",
+        "dublin-temple-bar",
+        "istanbul-anadolu-hisari",
+        "new-york-harbor",
+        "istanbul-taksim-square",
+        "rome-spanish-steps",
+        "kyoto-hanamikoji",
+        "seoul-plaza",
+        "kyoto-kiyomizuzaka",
+        "london-abbey-road-crossing",
+        "bangkok-sukhumvit-road",
+        "kyoto-nishiki-market",
+        "prague-petrin-tower",
+        "prague-old-town-hall",
+        "seoul-gwanghwamun-plaza"
       ],
       "use": "Airport/city transfer option only where Welcome Pickups does not already provide sufficient coverage."
     },
@@ -66,7 +83,24 @@
         "new-york-harbor",
         "london-savoy-place",
         "rome-spanish-steps",
-        "dublin-temple-bar"
+        "dublin-temple-bar",
+        "istanbul-sultanahmet",
+        "istanbul-maidens-tower",
+        "chicago-lakefront",
+        "istanbul-anadolu-hisari",
+        "istanbul-taksim-square",
+        "vienna-city-hall-ringstrasse",
+        "cape-town-waterfront",
+        "helsinki-market-square-south-harbour",
+        "kyoto-hanamikoji",
+        "seoul-plaza",
+        "kyoto-kiyomizuzaka",
+        "london-abbey-road-crossing",
+        "bangkok-sukhumvit-road",
+        "kyoto-nishiki-market",
+        "prague-petrin-tower",
+        "prague-old-town-hall",
+        "seoul-gwanghwamun-plaza"
       ],
       "use": "Luggage storage for cruise, stopover and day-visit use cases."
     },
@@ -90,7 +124,28 @@
         "kyoto-hanamikoji-live",
         "seoul-plaza-24h-live",
         "bangkok-sukhumvit-road",
-        "singapore-port-area"
+        "singapore-port-area",
+        "hong-kong-victoria-peak",
+        "taiwan-sun-moon-lake",
+        "hong-kong-victoria-harbour",
+        "taiwan-hehuanshan-wuling",
+        "taiwan-jiufen",
+        "taipei-dajia-riverside-park",
+        "hong-kong-tai-mo-shan",
+        "taipei-bishanyan",
+        "denpasar-city-live",
+        "kyoto-hanamikoji",
+        "seoul-plaza",
+        "kyoto-kiyomizuzaka",
+        "kyoto-nishiki-market",
+        "seoul-gwanghwamun-plaza",
+        "seoul-cheonggye-plaza",
+        "kyoto-kifune-shrine",
+        "tonami-tulip-park",
+        "kyoto-fushimi-inari",
+        "takayama-miyagawa",
+        "cijin-beach-kaohsiung",
+        "farm-tomita"
       ],
       "use": "Activity coverage only where KKday materially improves visitor choice beyond current Klook inventory."
     },
@@ -101,7 +156,29 @@
       "scope": "ROAD_TRIP_DESTINATIONS",
       "priority": "P2",
       "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED",
-      "use": "Car rental where a destination is genuinely better explored by road."
+      "use": "Car rental where a destination is genuinely better explored by road.",
+      "placeCandidates": [
+        "wanaka-region",
+        "madeira-porto-moniz",
+        "sanparks-satara",
+        "sanparks-olifants",
+        "druif-beach-aruba",
+        "iceland-myvatn",
+        "madeira-funchal",
+        "mauritius-grand-baie",
+        "mauritius-pointe-desny",
+        "rotorua-lake-city",
+        "madeira-porto-santo",
+        "sanparks-punda-maria",
+        "sanparks-talamati",
+        "nz-taranaki-maunga",
+        "iceland-surtsey",
+        "madeira-machico",
+        "azores-sao-miguel",
+        "madeira-sao-vicente",
+        "madeira-santana",
+        "nz-ruapehu"
+      ]
     },
     {
       "id": "qeeq-rental",
@@ -110,7 +187,29 @@
       "scope": "CAR_RENTAL_GAPS",
       "priority": "P2",
       "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED",
-      "use": "Fallback car-rental coverage only where the first rental option has no useful inventory."
+      "use": "Fallback car-rental coverage only where the first rental option has no useful inventory.",
+      "placeCandidates": [
+        "wanaka-region",
+        "madeira-porto-moniz",
+        "sanparks-satara",
+        "sanparks-olifants",
+        "iceland-myvatn",
+        "madeira-funchal",
+        "rotorua-lake-city",
+        "madeira-porto-santo",
+        "marco-island-beach",
+        "yellowstone-old-faithful",
+        "sanparks-punda-maria",
+        "sanparks-talamati",
+        "nz-taranaki-maunga",
+        "yellowstone-biscuit-basin",
+        "yellowstone-lake",
+        "mauna-loa-volcano",
+        "iceland-surtsey",
+        "madeira-machico",
+        "azores-sao-miguel",
+        "madeira-sao-vicente"
+      ]
     },
     {
       "id": "wegotrip-audio",
@@ -119,7 +218,29 @@
       "scope": "CITY_CULTURE",
       "priority": "P2",
       "state": "OWNER_COVERAGE_CHECK_AND_LINK_REQUIRED",
-      "use": "Self-guided/audio tour option for city and heritage destinations."
+      "use": "Self-guided/audio tour option for city and heritage destinations.",
+      "placeCandidates": [
+        "istanbul-sultanahmet",
+        "istanbul-maidens-tower",
+        "chicago-lakefront",
+        "dublin-temple-bar",
+        "istanbul-anadolu-hisari",
+        "new-york-harbor",
+        "istanbul-taksim-square",
+        "rome-spanish-steps",
+        "vienna-city-hall-ringstrasse",
+        "cape-town-waterfront",
+        "helsinki-market-square-south-harbour",
+        "kyoto-hanamikoji",
+        "seoul-plaza",
+        "kyoto-kiyomizuzaka",
+        "london-abbey-road-crossing",
+        "bangkok-sukhumvit-road",
+        "kyoto-nishiki-market",
+        "prague-petrin-tower",
+        "prague-old-town-hall",
+        "seoul-gwanghwamun-plaza"
+      ]
     }
   ],
   "deferDuplicates": [
@@ -138,5 +259,19 @@
     "bikesbooking",
     "kiwi-com"
   ],
-  "note": "Deferred programs remain potentially useful but ERN should first prove demand with one strong option per intent."
+  "note": "Deferred programs remain potentially useful but ERN should first prove demand with one strong option per intent.",
+  "coverageExpansion": {
+    "healthySearchablePlaceBaseline": 256,
+    "purpose": "Broaden business-ready place coverage using programs that already expose link generation; this is research/preparation only.",
+    "rule": "Place candidacy does not assert inventory. Exact coverage must be checked in the owner account before link generation.",
+    "expandedQueues": {
+      "go-city-city-passes": 4,
+      "kiwitaxi-arrivals": 21,
+      "radical-storage-city": 21,
+      "kkday-asia-gaps": 25,
+      "localrent-roadtrip": 20,
+      "qeeq-rental": 20,
+      "wegotrip-audio": 20
+    }
+  }
 }
