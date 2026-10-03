@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:45:00Z",
+  "generatedAt": "2026-10-03T12:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2153,9 +2153,9 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Viator has dedicated Lerwick/Shetland sightseeing, wildlife and shore-excursion inventory, but ERN must first human-confirm and promote at least one Shetland live camera.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Shetland-Islands/d33624-ttd",
-      "nextAction": "After at least one Shetland camera is promoted, generate one Shetland/Lerwick destination-level Viator tracked link and reuse it across verified Shetland places."
+      "nextAction": "Source gap cleared by official searchable current-image promotion. Generate and manually verify one destination-level tracked link before any public placement."
     },
     {
       "id": "viator-swakopmund",
