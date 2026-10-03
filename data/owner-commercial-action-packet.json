@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:00:00Z",
+  "generatedAt": "2026-10-03T12:08:00Z",
   "status": "OWNER_ACTION_DORMANT_UNTIL_BUNDLED_LINK_SESSION",
   "principle": "Bundle owner-only commercial actions; do not interrupt repeatedly.",
   "tripComCheck": {
@@ -111,5 +111,73 @@
     }
   ],
   "trafficGatedProgramsNote": "Trip.com, Hotels.com, Booking.com, Agoda, Expedia, GetYourGuide and other visible programs are deferred until meaningful traffic/account-state change. No repeated owner checking is needed.",
-  "availableUtilityPlan": "data/available-program-expansion-plan.json"
+  "availableUtilityPlan": "data/available-program-expansion-plan.json",
+  "preparedDirectViatorCandidates": {
+    "count": 27,
+    "status": "NON_PUBLIC_OWNER_VERIFICATION_REQUIRED",
+    "method": "Known owner-confirmed Viator pid/mcid/medium pattern applied only to researched public Viator pages.",
+    "firstVerificationBatch": [
+      {
+        "id": "viator-reunion-island",
+        "destination": "La Réunion",
+        "url": "https://www.viator.com/Reunion-Island/d4395-ttd?pid=P00322254&mcid=42383&medium=link"
+      },
+      {
+        "id": "viator-azores-sao-miguel",
+        "destination": "São Miguel, Azores",
+        "url": "https://www.viator.com/Sao-Miguel/d50209-ttd?pid=P00322254&mcid=42383&medium=link"
+      },
+      {
+        "id": "viator-dubrovnik-future",
+        "destination": "Dubrovnik",
+        "url": "https://www.viator.com/Dubrovnik/d904-ttd?pid=P00322254&mcid=42383&medium=link"
+      },
+      {
+        "id": "viator-aruba",
+        "destination": "Aruba / Druif Beach",
+        "url": "https://www.viator.com/Aruba/d28-ttd?pid=P00322254&mcid=42383&medium=link"
+      },
+      {
+        "id": "viator-mykonos-future",
+        "destination": "Mykonos",
+        "url": "https://www.viator.com/Mykonos/d958-ttd?pid=P00322254&mcid=42383&medium=link"
+      },
+      {
+        "id": "viator-santorini-future",
+        "destination": "Santorini",
+        "url": "https://www.viator.com/Santorini/d959-ttd?pid=P00322254&mcid=42383&medium=link"
+      },
+      {
+        "id": "viator-chamonix",
+        "destination": "Chamonix / Mont Blanc",
+        "url": "https://www.viator.com/Chamonix/d24269-ttd?pid=P00322254&mcid=42383&medium=link"
+      },
+      {
+        "id": "viator-bergen",
+        "destination": "Bergen",
+        "url": "https://www.viator.com/Bergen/d4318-ttd?pid=P00322254&mcid=42383&medium=link"
+      },
+      {
+        "id": "viator-brasov-poiana",
+        "destination": "Brașov / Poiana Brașov",
+        "url": "https://www.viator.com/Brasov/d23067-ttd?pid=P00322254&mcid=42383&medium=link"
+      },
+      {
+        "id": "viator-orpen-kruger",
+        "destination": "Orpen / Kruger National Park",
+        "url": "https://www.viator.com/Kruger-National-Park/d776-ttd?pid=P00322254&mcid=42383&medium=link"
+      },
+      {
+        "id": "viator-st-johns-newfoundland",
+        "destination": "St. John's, Newfoundland",
+        "url": "https://www.viator.com/St-Johns/d28792-ttd?pid=P00322254&mcid=42383&medium=link"
+      },
+      {
+        "id": "viator-maui-kihei",
+        "destination": "Maui / Kihei",
+        "url": "https://www.viator.com/Kihei/d51007-ttd?pid=P00322254&mcid=42383&medium=link"
+      }
+    ],
+    "deferBroaderGatewayCandidates": "Candidates pointing to a nearby/gateway destination page remain lower priority and should be checked only after exact destination matches."
+  }
 }
