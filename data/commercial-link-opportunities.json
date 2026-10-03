@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T02:10:00Z",
+  "generatedAt": "2026-10-03T02:15:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -412,6 +412,52 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Vancouver/d616-ttd",
       "publicInventoryEvidence": "Current Viator Vancouver inventory contains multiple Whistler + Sea-to-Sky experiences; exact Whistler destination-link suitability still requires account search.",
       "nextAction": "Only activate if the Viator partner tools expose a clean Whistler destination-level link; do not route visitors through a generic Vancouver page."
+    },
+    {
+      "id": "tiqets-tallinn-future",
+      "destination": "Tallinn / TV Tower",
+      "placeIds": [
+        "tallinn-tv-tower-panorama"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "The Tallinn TV Tower camera candidate aligns unusually well with current Tiqets inventory for Tallinn TV Tower and the Tallinn Card.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/tallinn-attraction-passes-l215373/",
+      "publicInventoryEvidence": "Tiqets currently sells Tallinn Card inventory and combinations that explicitly include Tallinn TV Tower.",
+      "nextAction": "After the Tallinn TV Tower live panorama is human-confirmed and promoted, generate one Tallinn/Tower Tiqets tracked link and verify it before public activation."
+    },
+    {
+      "id": "tiqets-malta-future",
+      "destination": "Malta / Valletta",
+      "placeIds": [
+        "malta-live-cams"
+      ],
+      "partnerCandidate": "tiqets",
+      "intent": "culture",
+      "priority": "P1",
+      "reason": "VisitMalta's official live-camera candidate can naturally lead to Malta sightseeing; Tiqets currently offers Malta/Valletta sightseeing products including hop-on-hop-off + harbour cruise.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/valletta-attractions-c73787/",
+      "publicInventoryEvidence": "Current Tiqets inventory includes Malta sightseeing products spanning Valletta, waterfronts, Blue Grotto, Mdina, beaches and harbour travel.",
+      "nextAction": "After a specific Malta live camera is verified and promoted, scope the affiliate link to that destination or Malta-wide planning; do not attach a country-wide offer to an unverified generic camera family."
+    },
+    {
+      "id": "viator-dubrovnik-future",
+      "destination": "Dubrovnik",
+      "placeIds": [
+        "dubrovnik-pile-city",
+        "dubrovnik-gruz-city"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "The official City of Dubrovnik Pile/Gruž camera candidates map directly to strong Viator Dubrovnik sightseeing inventory.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Dubrovnik/d904-ttd",
+      "publicInventoryEvidence": "Current Viator Dubrovnik inventory includes Old Town panoramic tours, island cruises and other city/Adriatic experiences.",
+      "nextAction": "After at least one Dubrovnik camera is promoted, generate one city-level Viator link and reuse it across the verified Dubrovnik places without duplicate commercial density."
     }
   ]
 }
