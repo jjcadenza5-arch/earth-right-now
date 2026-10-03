@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T06:15:00Z",
+  "generatedAt": "2026-10-03T06:25:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1076,10 +1076,11 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Panama Canal Authority provides multiple official real-time lock cameras, while current Viator Panama City inventory includes Miraflores, Gatún and Agua Clara canal experiences. One canal-level link should serve the verified lock family.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Panama-City/d950-ttd",
       "publicInventoryEvidence": "Current Viator Panama City inventory includes canal sightseeing, Miraflores Visitor Center, Gatún Lake and tours covering Agua Clara/Gatún Locks.",
-      "nextAction": "After at least one official Panama Canal lock camera is human-confirmed and promoted, generate one Panama Canal/Panama City Viator partner link and reuse it across the verified lock family."
+      "nextAction": "Generate one Panama Canal destination-level Viator partner link and manually verify it; reuse across verified lock places without duplicate commercial density.",
+      "sourceGateResolvedAt": "2026-10-03T06:25:00Z"
     },
     {
       "id": "viator-nairobi-national-park-future",
