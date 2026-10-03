@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T06:10:00Z",
+  "generatedAt": "2026-10-03T05:45:00Z",
   "principles": {
     "existingPartnersFirst": true,
     "exactTrackedLinkRequired": true,
@@ -11,8 +11,8 @@
   },
   "currentOpportunityStates": {
     "VERIFIED_LINK_ADDED": 16,
-    "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 81,
-    "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 22,
+    "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 86,
+    "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 17,
     "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 1
   },
   "researchPriority": [
@@ -176,6 +176,28 @@
       "suggestedExistingPartners": [
         "viator",
         "klook"
+      ],
+      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
+      "exactTrackedLinkRequired": true,
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "new-taipei-zhongjiao-bay",
+      "title": "New Taipei — Zhongjiao Bay",
+      "country": "Taiwan",
+      "region": "New Taipei City",
+      "quality": 96,
+      "moment": 96,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth",
+        "Quasi-Live"
+      ],
+      "suggestedExistingPartners": [
+        "tiqets",
+        "viator",
+        "klook",
+        "welcome-pickups"
       ],
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
@@ -607,28 +629,7 @@
       "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
       "exactTrackedLinkRequired": true,
       "publicActivationAllowed": false
-    },
-    {
-      "placeId": "nz-raoul-island",
-      "title": "Rangitāhua / Raoul Island — Current Images",
-      "country": "New Zealand",
-      "region": "Kermadec Islands",
-      "quality": 91,
-      "moment": 92,
-      "categories": [
-        "Mountains",
-        "Nature",
-        "Interesting Earth",
-        "Useful Earth"
-      ],
-      "suggestedExistingPartners": [
-        "viator",
-        "klook"
-      ],
-      "state": "PARTNER_ACCOUNT_SEARCH_REQUIRED",
-      "exactTrackedLinkRequired": true,
-      "publicActivationAllowed": false
     }
   ],
-  "note": "Research prompts only. Quasi-live searchable places may unlock business research, but commercial state never changes source truth, currentness or ranking."
+  "note": "Post-200-place business research queue. Existing partners first; exact links and manual verification remain mandatory."
 }
