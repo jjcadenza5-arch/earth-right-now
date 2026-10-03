@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:10:00Z",
+  "generatedAt": "2026-10-03T12:00:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -2551,6 +2551,51 @@
       "priority": "P1",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Open the exact NWR YouTube target and confirm the waterhole feed is currently live/moving before promotion."
+    },
+    {
+      "id": "tvoroyri-port-live",
+      "title": "Tvøroyri — Port",
+      "country": "Faroe Islands",
+      "region": "Suðuroy",
+      "provider": "Tvøroyri Municipality",
+      "sourcePage": "https://tvk.fo/kommunal-arbeidsplass/port-of-tvoeroyri/vevmyndatol-webcam/",
+      "exactTargetUrl": "https://tvk.fo/kommunal-arbeidsplass/port-of-tvoeroyri/vevmyndatol-webcam/",
+      "exactTargetType": "OFFICIAL_MUNICIPAL_LIVE_WEBCAM",
+      "evidence": "Tvøroyri Municipality publishes a Port of Tvøroyri page labeled live webcam / Beinleiðis vevmynd.",
+      "researchEvidence": "Official municipal harbour page exposes a live webcam surface. Human playback confirmation is still required before ERN promotes it as EXTERNAL_LIVE.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the municipal Port of Tvøroyri webcam page and confirm the harbour view is moving/current."
+    },
+    {
+      "id": "longyearbyen-unis-webcam",
+      "title": "Longyearbyen — UNIS / Adventfjorden",
+      "country": "Svalbard",
+      "region": "Longyearbyen",
+      "provider": "University Centre in Svalbard / external webcam operator",
+      "sourcePage": "https://www.unis.no/facilities/web-camera/",
+      "exactTargetUrl": "https://www.unis.no/facilities/web-camera/",
+      "exactTargetType": "OFFICIAL_INSTITUTION_WEBCAM_HANDOFF",
+      "evidence": "The University Centre in Svalbard publishes a web-camera page and states an external provider operates a camera on the roof of UNIS.",
+      "researchEvidence": "UNIS is authoritative for the camera location but delegates the actual feed to an external provider; exact current playback needs verification before promotion.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Open the UNIS webcam handoff and confirm the linked Longyearbyen/Adventfjorden camera is visibly current."
+    },
+    {
+      "id": "faroe-islands-live-family",
+      "title": "Faroe Islands — Village Live Camera Network",
+      "country": "Faroe Islands",
+      "region": "Multiple islands",
+      "provider": "Faroe Islands Live",
+      "sourcePage": "https://www.faroeislandslive.com/",
+      "exactTargetUrl": "https://www.faroeislandslive.com/",
+      "exactTargetType": "LIVE_CAMERA_NETWORK",
+      "evidence": "Faroe Islands Live currently exposes village/town webcams and a location map; its 2026 app listing describes live feeds across Faroese villages and towns.",
+      "researchEvidence": "Useful discovery family for future exact-place extraction, but ERN should add specific villages individually rather than one generic network entry.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Use the live map to choose one visually strong village camera; promote exact places individually rather than the network."
     }
   ],
   "notes": [
