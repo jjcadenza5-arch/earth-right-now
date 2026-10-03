@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T03:45:00Z",
+  "generatedAt": "2026-10-03T03:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -881,6 +881,81 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Brasov/d23067-ttd",
       "publicInventoryEvidence": "Viator currently lists 200+ Brașov-region experiences including Bran/Peleș trips, wildlife and mountain-road excursions.",
       "nextAction": "After Poiana Brașov playback is confirmed and promoted, generate one appropriate Brașov-region Viator link; avoid implying the live camera itself is in central Brașov."
+    },
+    {
+      "id": "viator-flam",
+      "destination": "Flåm / Aurlandsfjord",
+      "placeIds": [
+        "flam-aurlandsfjord"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has one of its strongest scenic live places at Flåm/Aurlandsfjord and Viator has substantial current Flåm Railway, fjord-cruise and shore-excursion inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Western-Norway/Spectacular-Flam-Railway/d22278-21088P1",
+      "publicInventoryEvidence": "Current Viator products include Flåm Railway shore excursions, Nærøyfjord cruises and multi-modal Flåm day tours.",
+      "nextAction": "Generate one Flåm destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-addo",
+      "destination": "Addo Elephant National Park",
+      "placeIds": [
+        "addo-elephant-national-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN's live wildlife view naturally connects to guided Addo safari inventory and visitor planning.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-CA/Garden-Route-attractions/Addo-Elephant-National-Park/d5613-a12749",
+      "publicInventoryEvidence": "Viator currently lists dozens of Addo Elephant National Park safari and ticket products.",
+      "nextAction": "Generate one Addo-specific Viator partner link; keep safari planning downstream from wildlife discovery."
+    },
+    {
+      "id": "viator-chamonix",
+      "destination": "Chamonix / Mont Blanc",
+      "placeIds": [
+        "chamonix-mont-blanc"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Mont Blanc mountain place and Viator currently has deep Chamonix activity inventory including Aiguille du Midi, hiking and paragliding.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Chamonix/d24269-ttd",
+      "publicInventoryEvidence": "Viator currently lists 50+ Chamonix experiences and landmark tickets across the Mont Blanc area.",
+      "nextAction": "Generate one Chamonix destination-level Viator link and verify it manually."
+    },
+    {
+      "id": "viator-bergen",
+      "destination": "Bergen",
+      "placeIds": [
+        "bergen-ulriken"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN's Bergen/Ulriken mountain-city view connects naturally to current Viator Bergen fjord cruises and city/day-trip inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Bergen/d4318-ttd",
+      "publicInventoryEvidence": "Viator currently lists 200+ Bergen experiences including Mostraumen cruises, Flåm/Nærøyfjord trips, city tours and kayaking.",
+      "nextAction": "Generate one Bergen destination-level Viator partner link and manually verify it."
+    },
+    {
+      "id": "viator-pico-island",
+      "destination": "Pico Island / Azores",
+      "placeIds": [
+        "lajes-pico-harbour"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN has a healthy Pico Island harbour view and Viator currently lists Pico volcanic-landscape and island-tour products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Pico/Mountain-Route/d50346-150568P1",
+      "publicInventoryEvidence": "Current Viator Pico products include small-group volcanic-landscape and island tours.",
+      "nextAction": "Only activate if partner tools expose a clean Pico/Azores destination-level link; do not route through an unrelated broad Portugal page."
     }
   ]
 }
