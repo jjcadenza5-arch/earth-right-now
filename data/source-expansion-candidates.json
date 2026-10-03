@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T05:35:00Z",
+  "generatedAt": "2026-10-03T03:30:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -314,7 +314,9 @@
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "evidence": "Official Madeira tourism weather page states that live webcam images cover Funchal and other municipalities.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "SUPERSEDED_BY_QUASI_LIVE_PROMOTION",
+      "supersededBy": "madeira-funchal-current-image",
+      "supersededAt": "2026-10-03T03:30:00Z"
     },
     {
       "id": "porto-moniz-madeira-live",
@@ -325,7 +327,9 @@
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "evidence": "Official Madeira tourism weather page explicitly lists Porto Moniz among its live webcam locations.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "SUPERSEDED_BY_QUASI_LIVE_PROMOTION",
+      "supersededBy": "madeira-porto-moniz-current-image",
+      "supersededAt": "2026-10-03T03:30:00Z"
     },
     {
       "id": "calheta-madeira-live",
@@ -336,7 +340,9 @@
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "evidence": "Official Madeira tourism weather page explicitly lists Calheta among its live webcam locations.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "SUPERSEDED_BY_QUASI_LIVE_PROMOTION",
+      "supersededBy": "madeira-calheta-current-image",
+      "supersededAt": "2026-10-03T03:30:00Z"
     },
     {
       "id": "machico-madeira-live",
@@ -347,7 +353,9 @@
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "evidence": "Official Madeira tourism weather page explicitly lists Machico among its live webcam locations.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED"
+      "state": "SUPERSEDED_BY_QUASI_LIVE_PROMOTION",
+      "supersededBy": "madeira-machico-current-image",
+      "supersededAt": "2026-10-03T03:30:00Z"
     },
     {
       "id": "innsbruck-live-panorama",
@@ -1946,6 +1954,58 @@
       "verifiedAt": "2026-10-03T05:35:00Z",
       "evidence": "The Icelandic Meteorological Office Surtsey webcam page presents the latest image and recent time-step sequence; the associated automated weather station is actively updated.",
       "verification": "Official national meteorological webcam sequence verified; promoted as searchable LIVE_IMAGE only."
+    },
+    {
+      "id": "madeira-funchal-current-image",
+      "title": "Funchal — Madeira",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "The official Madeira tourism weather page explicitly presents live webcam images for Funchal and other Madeira municipalities.",
+      "verification": "Official tourism live-image semantics satisfy ERN quasi-live searchable policy; not promoted as continuous Watch Earth video."
+    },
+    {
+      "id": "madeira-porto-moniz-current-image",
+      "title": "Porto Moniz — Madeira",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "The official Madeira tourism weather page explicitly lists Porto Moniz among its live webcam-image locations.",
+      "verification": "Official tourism live-image semantics satisfy ERN quasi-live searchable policy; not promoted as continuous Watch Earth video."
+    },
+    {
+      "id": "madeira-calheta-current-image",
+      "title": "Calheta — Madeira",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "The official Madeira tourism weather page explicitly lists Calheta among its live webcam-image locations.",
+      "verification": "Official tourism live-image semantics satisfy ERN quasi-live searchable policy; not promoted as continuous Watch Earth video."
+    },
+    {
+      "id": "madeira-machico-current-image",
+      "title": "Machico — Madeira",
+      "country": "Portugal",
+      "region": "Madeira",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "verifiedAt": "2026-10-03T03:30:00Z",
+      "evidence": "The official Madeira tourism weather page explicitly lists Machico among its live webcam-image locations.",
+      "verification": "Official tourism live-image semantics satisfy ERN quasi-live searchable policy; not promoted as continuous Watch Earth video."
     }
   ],
   "notes": [
@@ -1985,7 +2045,8 @@
     "2026-10-03 promoted one canonical searchable place each for Mauna Loa, Shishaldin and Augustine rather than inflating the catalog with multiple monitoring-camera angles.",
     "2026-10-03 expanded underrepresented South America with official scientific/government quasi-live sources for Sangay, Tungurahua, Nevado del Ruiz and Galeras.",
     "2026-10-03 added three Hong Kong Observatory five-minute quasi-live places: Victoria Harbour, Victoria Peak and Tai Mo Shan.",
-    "2026-10-03 expanded Iceland beyond Reykjavík with Mývatn, Hveravellir and Surtsey from the Icelandic Meteorological Office."
+    "2026-10-03 expanded Iceland beyond Reykjavík with Mývatn, Hveravellir and Surtsey from the Icelandic Meteorological Office.",
+    "2026-10-03 Madeira candidate family promoted under owner-approved quasi-live policy: Funchal, Porto Moniz, Calheta and Machico are searchable LIVE_IMAGE places; old human-playback placeholder rows were superseded."
   ],
   "researchGaps": [
     {
