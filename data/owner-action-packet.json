@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T02:02:00Z",
+  "generatedAt": "2026-10-04T03:40:00Z",
   "status": "DORMANT_UNTIL_OWNER_BATCH_IS_WORTHWHILE",
   "purpose": "Bundle owner-only affiliate link generation and playback checks into worthwhile sessions instead of interrupting ERN expansion one item at a time.",
   "sourceVerificationBatch": [
@@ -73,8 +73,8 @@
     "No automatic rewriting",
     "No source truth changes from commercial value"
   ],
-  "batchRationale": "313 healthy searchable places are fully classified: 275 have an explicit commercial path and 38 are intentionally editorial-only. Owner work remains batched; traffic-gated programs stay event-driven future unlocks.",
-  "searchablePlaceMilestone": 313,
+  "batchRationale": "314 healthy searchable places are intentionally classified: 276 have an explicit commercial path and 38 are editorial-only. Owner work remains batched; traffic-gated programs stay event-driven future unlocks.",
+  "searchablePlaceMilestone": 314,
   "secondWaveAffiliateBatch": [
     "viator-st-moritz",
     "viator-dolomiti-superski",
@@ -91,7 +91,8 @@
     "viator-levi",
     "viator-aalborg",
     "tiqets-krakow",
-    "viator-longyearbyen"
+    "viator-longyearbyen",
+    "wegotrip-darmstadt"
   ],
   "trafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
   "futureProgramNote": "Trip.com remains ERN's P1 future stay/transport/activity addition once Travelpayouts unlocks it. Do not recheck repeatedly; wait for material traffic/conversion growth or a platform status change.",
