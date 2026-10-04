@@ -965,3 +965,13 @@ while preserving the startup/performance ceiling and existing product gates.
 - Owner also confirmed sitemap submission and URL Inspection checks were already completed.
 - Treat the Google owner-side indexing setup as DONE. Do not ask the owner to repeat verification, sitemap submission, or the initial URL Inspection pass.
 - Continue with autonomous ERN work; only request owner input for genuinely new external actions or when real index/crawl feedback requires a decision.
+
+
+### First-impression regression repair — 2026-10-04
+- Reconciled against the immediately preceding ERN chat: broad first-impression/homepage work is CLOSED and remains frozen.
+- The 12-vs-20 Watch Earth discrepancy was a real regression, not a reason to reopen design work.
+- Root cause: runtime narrowed the entire Watch Earth pool to proven inside-ERN items whenever at least six existed, undoing the earlier approved behavior that fills up to 20 truthful current windows while still preferring inside playback.
+- Repair: removed that narrowing. Proven inside-ERN windows remain preferred for the hero/open-now action and reserved early in the Watch Earth set; external/current windows may again fill the truthful 20-window target.
+- Added a regression guard so release smoke fails if the full current set is collapsed back to proven-only inventory.
+- Cache-busted the public app runtime so browsers receive the repaired behavior.
+- Do not resume general homepage polishing. Only fix reproducible defects; continue toward completion/operations.
