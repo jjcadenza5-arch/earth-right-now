@@ -44,3 +44,6 @@ assert.match(builder,/editorialCollectionRows/,"Phase 8 collection membership sh
 assert.match(builder,/Share this collection/,"Phase 8 crawlable collection pages should expose channel-neutral sharing");
 assert.match(builder,/navigator\.share/,"Collection sharing should prefer native Web Share");
 assert.match(builder,/navigator\.clipboard/,"Collection sharing should retain a copy-link fallback");
+
+assert.match(builder,/search-supplemental\.json/,"crawlable destination build must include the lazy supplemental Search catalog");
+assert.match(builder,/const sources=\[\.\.\.coreSources,\.\.\.searchSupplemental\]/,"supplemental Search places should gain destination pages without changing startup catalog loading");
