@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T02:10:00Z",
+  "generatedAt": "2026-10-04T02:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3272,6 +3272,21 @@
       "publicInventoryEvidenceUrl": "https://gocity.com/en/dublin",
       "publicInventoryEvidence": "Current Go City Dublin page offers Essentials, Explorer and All-Inclusive passes covering 30+ attractions such as Guinness Storehouse, Big Bus Dublin and Jameson Distillery.",
       "nextAction": "Generate one owner-side Go City Dublin tracked link and manually verify it; avoid showing duplicate activity CTAs simultaneously."
+    },
+    {
+      "id": "viator-montevideo-future",
+      "destination": "Montevideo",
+      "placeIds": [
+        "uruguay-montevideo-pocitos",
+        "uruguay-montevideo-plaza-independencia",
+        "uruguay-montevideo-mercado-del-puerto"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "If at least one Montevideo camera is promoted, Viator can provide a useful downstream city/activity path without affecting Earth ranking.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "nextAction": "After source promotion, generate one city-level Montevideo Viator partner link and reuse it across verified Montevideo places."
     }
   ]
 }
