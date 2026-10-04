@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T16:50:00Z",
+  "generatedAt": "2026-10-04T01:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3152,6 +3152,36 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/blog/Slovakia/d66",
       "publicInventoryEvidence": "Viator currently lists Bratislava Old Town, Bratislava Castle and Devin Castle among Slovakia attractions, with multiple Bratislava-based activities.",
       "nextAction": "After a Bratislava camera is promoted, search for a clean Bratislava destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-bansko",
+      "destination": "Bansko / Pirin Mountains",
+      "placeIds": [
+        "bansko-pirin"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Bansko/Pirin current-image place and current Viator inventory includes Bansko thermal-pool and mountain activities.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Bansko/Bansko-Thermal-pool-escape/d31481-16415P9",
+      "publicInventoryEvidence": "Viator currently exposes bookable Bansko experiences with Bansko as the meeting point/destination.",
+      "nextAction": "Generate one Bansko destination/product-level Viator tracked link in the owner account and manually verify it before public activation."
+    },
+    {
+      "id": "viator-borovets",
+      "destination": "Borovets / Rila Mountains",
+      "placeIds": [
+        "borovets-rila"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has a healthy Borovets/Rila current-image place and current Viator inventory includes Borovets snowmobile and mountain experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Borovets/Borovets-Ultimate-Snowmobile-Experience/d36672-118846P2",
+      "publicInventoryEvidence": "Viator currently exposes a bookable Borovets snowmobile experience covering Borovets Ski Resort and the Rila Mountains.",
+      "nextAction": "Generate one Borovets destination/product-level Viator tracked link in the owner account and manually verify it before public activation."
     }
   ]
 }
