@@ -779,3 +779,15 @@ Planning reconciliation — 316 places / 76 countries:
 - Geographic plan rebuilt from the active healthy place registry, including newer country coverage such as Bosnia and Herzegovina, Bulgaria, Hungary, Latvia, Montenegro, Poland, Serbia, Slovakia and Svalbard.
 - New explicit P1 quality gaps: Middle East/North Africa scenic current/quasi-live sources and broader South Pacific island coverage.
 - Virtual tours, prerecorded tourism films, weather/radar loops and untimestamped marketing images remain disallowed as substitutes for current Earth views.
+
+
+Visual Trust & Premium UI Refinement — 2026-10-04:
+- Completed a focused premium/trust presentation pass without redesigning ERN or changing discovery/source truth logic.
+- Hero now has stronger visual depth, clearer typography hierarchy, more premium CTA treatment and a more refined current-window status card.
+- Navigation, category controls, discovery proof cards, Watch Earth cards, Search/Explore results, Atlas, participation cards and supporting surfaces received tighter spacing, radius, shadow and interaction consistency.
+- ERN Stories doorway contrast was corrected so the heading remains clearly readable on the light editorial background.
+- Loading/empty states were softened and made intentional rather than broken-looking.
+- Hero catalog-load failure now fails truthfully: it no longer leaves a green CURRENT indicator visible; it shows a neutral RETRY state and directs visitors to still-available Explore/Destination surfaces.
+- Mobile/reduced-motion/focus-visible safeguards were preserved.
+- Full JavaScript syntax, Operations and GitHub Pages release checks all passed after the refinement.
+- No source ranking, commercial ranking, search, Atlas data, live-current semantics, public Guide gate or Now Moments gate was changed.
