@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T04:30:00Z",
+  "generatedAt": "2026-10-04T04:50:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -210,7 +210,11 @@
       "expedia",
       "getyourguide",
       "booking-com"
-    ]
+    ],
+    "searchableUniverseWithSupplemental": 339,
+    "coreHealthySearchablePlaces": 319,
+    "searchSupplementalPlaces": 20,
+    "searchSupplementalLoadMode": "LAZY_ON_SEARCH_NO_WATCH_EARTH_IMPACT"
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -262,7 +266,8 @@
     "Maolin National Scenic Area added to Klook exact-link research using current public Maolin activity inventory.",
     "Middle East / South Pacific research batch queued Petra (two views), Muscat Aida Beach and two Fiji provider webcams behind human playback gates; source-gated Viator/Klook paths prepared without public activation.",
     "Owner playback confirmation promoted Petra Visitor Center, Muscat Aida Beach and two Malolo Lailai/Fiji live views; Fiji views share one canonical place, bringing healthy searchable coverage to 319 distinct places / 79 countries.",
-    "Petra/Viator, Muscat/Viator and Fiji/Klook owner-generated tracked links were manually opened and confirmed correct on 2026-10-04; all three moved to VERIFIED_LINK_ADDED."
+    "Petra/Viator, Muscat/Viator and Fiji/Klook owner-generated tracked links were manually opened and confirmed correct on 2026-10-04; all three moved to VERIFIED_LINK_ADDED.",
+    "Lazy Search-only supplemental catalog deployed with 20 held-from-featured/watch places, expanding searchable universe from 319 core places to 339 without raising the 300 KB sources.json ceiling."
   ],
   "humanOnlyRemaining": [
     {
@@ -311,6 +316,7 @@
     "verboseSourceEvidenceSidecar": "data/source-evidence.json",
     "sourceCatalogArchitecture": "MINIFIED_RUNTIME_CATALOG_PLUS_VERBOSE_EVIDENCE_SIDECAR",
     "sourceCatalogHeadroom": "299076_CHARS_AT_319_PLACE_BASELINE_NEAR_300KB_CEILING",
-    "lastKnownGreenBaseline": "319_SEARCHABLE_PLACES_SOURCE_CATALOG_UNDER_300KB_PENDING_AUTOMATED_RELEASE_CONFIRMATION"
+    "lastKnownGreenBaseline": "319_SEARCHABLE_PLACES_SOURCE_CATALOG_UNDER_300KB_PENDING_AUTOMATED_RELEASE_CONFIRMATION",
+    "searchSupplementalArchitecture": "IMPLEMENTED_PENDING_PAGES_WORKFLOW_CONFIRMATION"
   }
 }
