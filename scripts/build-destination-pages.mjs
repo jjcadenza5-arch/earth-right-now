@@ -12,6 +12,8 @@ import fs from "node:fs";
 const discoverDefinitions=EDITORIAL_COLLECTIONS;
 const coreSources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
 const searchSupplemental=JSON.parse(fs.readFileSync("data/search-supplemental.json","utf8"));
+const placeSearchAliases=JSON.parse(fs.readFileSync("data/place-search-aliases.json","utf8"));
+const placeAliases=id=>Array.isArray(placeSearchAliases?.places?.[id])?placeSearchAliases.places[id]:[];
 const sources=[...coreSources,...searchSupplemental];
 const travelOffers=JSON.parse(fs.readFileSync("data/travel-offers.json","utf8"));
 const localDirectory=JSON.parse(fs.readFileSync("data/local-directory.json","utf8"));
@@ -62,7 +64,7 @@ for(const [id,items] of map){
   const title=preferred.title;
   const destinationName=seoName(preferred);
   const pageName=String(title||"").startsWith(destinationName+" — ")?destinationName+" "+String(title).slice((destinationName+" — ").length):destinationName;
-  const aliases=[...(preferred.aliases||[])].filter(Boolean);
+  const aliases=[...(preferred.aliases||[]),...placeAliases(id)].filter((x,i,a)=>x&&a.indexOf(x)===i);
   const city=preferred.city||"";
   const state=preferred.state||"";
   const where=[city,state||preferred.region,preferred.country].filter(Boolean).join(", ");
