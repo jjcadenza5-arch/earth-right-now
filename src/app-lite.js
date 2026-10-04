@@ -251,7 +251,7 @@ b.setAttribute("aria-label",`${best.title}, ${count} available views`);
 b.onclick=()=>openViewer(best);return b;
 }
 function groupByPlace(items){const m=new Map();for(const s of items){const key=s.placeId||s.id;if(!m.has(key))m.set(key,[]);m.get(key).push(s)}return[...m.values()]}
-function normalizeSearch(v){return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^\p{L}\p{N}]+/gu," ").trim()}
+const SEARCH_EQUIV=[["纽约","new york"],["紐約","new york"],["山与雪","mountains snow"],["山與雪","mountains snow"],["海滩与水","beaches water"],["海灘與水","beaches water"],["城市与街道","cities streets"],["城市與街道","cities streets"],["野生动物与自然","wildlife nature"],["野生動物與自然","wildlife nature"]];function normalizeSearch(v){let q=String(v||"");for(const [a,b] of SEARCH_EQUIV)q=q.replaceAll(a,b);return q.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^\p{L}\p{N}]+/gu," ").trim()}
 function sst(s){return normalizeSearch([s.title,s.placeId,s.city,s.state,s.region,s.country,s.provider,s.story,s.categories,s.tags,s.aliases].join(" "))}
 function recentSearches(){const rows=readJSON("ern:recent-searches:v1",[]);return Array.isArray(rows)?rows.filter(v=>typeof v==="string"&&v.trim()).slice(0,4):[]}
 function rememberSearch(q){const raw=String(q||"").trim().replace(/\s+/g," ").slice(0,120);if(!raw)return;const next=[raw,...recentSearches().filter(x=>normalizeSearch(x)!==normalizeSearch(raw))].slice(0,8);writeSaved("ern:recent-searches:v1",JSON.stringify(next))}
