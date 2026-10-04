@@ -802,3 +802,12 @@ Middle East / South Pacific gap batch — 2026-10-04:
 - Source research registry now has 235 candidates with 18 remaining human-playback-gated; commercial opportunity registry now has 213 entries (16 verified-link, 184 exact-link-required, 11 source-gated, 2 source-gap-blocked).
 - Public Guide and Now Moments gates remain OFF; no runtime performance ceiling or ranking/currentness safeguard was changed.
 
+
+Owner playback promotion — 2026-10-04:
+- Owner confirmed all four requested checks good: Petra Visitor Center, Muscat Aida Beach, Plantation Island Resort and Lomani Island Resort.
+- Promoted all four as HEALTHY EXTERNAL_LIVE / LINK_ONLY sources. The two Fiji feeds share canonical place `fiji-malolo-lailai`, so they count as one searchable destination.
+- Healthy searchable coverage is now 319 distinct places across 79 countries.
+- Petra/Viator, Muscat/Viator and Fiji/Klook moved from source-gated to exact-link-required; no public affiliate placement occurred.
+- Runtime source catalog is 299,076 characters, still below the strict 300 KB ceiling but now near capacity. Do not raise the ceiling; next scaling work should use supplemental/lazy Search-only catalog architecture or selective swaps.
+- Public Guide and Now Moments remain OFF; ranking remains commercial-neutral.
+
