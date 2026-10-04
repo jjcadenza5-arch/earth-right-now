@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:20:00Z",
+  "generatedAt": "2026-10-04T03:43:00Z",
   "currentHealthyDistinctPlaces": 316,
   "targetHealthyDistinctPlaces": [
     350,
@@ -8,7 +8,7 @@
   ],
   "remainingToMinimum": 34,
   "remainingToStretch": 84,
-  "humanPlaybackQueueCount": 13,
+  "humanPlaybackQueueCount": 18,
   "topBatch": [
     {
       "id": "bratislava-city-live",
@@ -183,6 +183,76 @@
       "oneClick": true,
       "businessUnlocks": [],
       "humanCheckHint": "Open kg.camera and choose Razzakov city center."
+    },
+    {
+      "id": "jordan-petra-treasury-skyline",
+      "title": "Petra — Treasury (Al-Khazneh)",
+      "country": "Jordan",
+      "provider": "SkylineWebcams",
+      "priority": "P1",
+      "verificationUrl": "https://www.skylinewebcams.com/en/webcam/jordan/maan/amman/petra.html",
+      "verificationType": "STRONG_PROVIDER_LIVE_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "viator-petra-jordan-future"
+      ],
+      "humanCheckHint": "Open the exact Petra Treasury page and confirm the view is currently moving/live rather than archived or offline."
+    },
+    {
+      "id": "jordan-petra-visitor-center-skyline",
+      "title": "Petra — Visitor Center",
+      "country": "Jordan",
+      "provider": "SkylineWebcams",
+      "priority": "P1",
+      "verificationUrl": "https://www.skylinewebcams.com/en/webcam/jordan/maan/amman/petra-visitor-center.html",
+      "verificationType": "STRONG_PROVIDER_LIVE_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "viator-petra-jordan-future"
+      ],
+      "humanCheckHint": "Confirm the Visitor Center feed is currently moving/live. If both Petra views work, keep one canonical Petra searchable place with multiple views."
+    },
+    {
+      "id": "oman-muscat-aida-beach-skyline",
+      "title": "Muscat — Aida Beach",
+      "country": "Oman",
+      "provider": "SkylineWebcams",
+      "priority": "P1",
+      "verificationUrl": "https://www.skylinewebcams.com/en/webcam/oman/muscat/muscat/aida-beach.html",
+      "verificationType": "STRONG_PROVIDER_LIVE_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "viator-muscat-oman-future"
+      ],
+      "humanCheckHint": "Open the Aida Beach page and confirm the feed is currently moving/live before ERN promotion."
+    },
+    {
+      "id": "fiji-plantation-island-resort-live",
+      "title": "Malolo Lailai — Plantation Island Resort",
+      "country": "Fiji",
+      "provider": "Plantation Island Resort",
+      "priority": "P1",
+      "verificationUrl": "https://www.plantationisland.com/webcam/",
+      "verificationType": "PROVIDER_LIVE_WEBCAM_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "klook-fiji-future"
+      ],
+      "humanCheckHint": "Press play and confirm the resort webcam is currently moving/live."
+    },
+    {
+      "id": "fiji-lomani-island-resort-live",
+      "title": "Malolo Lailai — Lomani Island Resort",
+      "country": "Fiji",
+      "provider": "Lomani Island Resort & Spa",
+      "priority": "P2",
+      "verificationUrl": "https://www.lomaniisland.com/webcam/",
+      "verificationType": "PROVIDER_LIVE_WEBCAM_PAGE",
+      "oneClick": true,
+      "businessUnlocks": [
+        "klook-fiji-future"
+      ],
+      "humanCheckHint": "Confirm the embedded LIVE FEED is currently moving/live. If both Malolo Lailai resort cameras work, group them under one island/place where appropriate."
     }
   ],
   "quasiLivePolicy": {
@@ -191,5 +261,5 @@
     "labelingRequired": true
   },
   "note": "Only the remaining genuinely playback-gated candidates are listed. Quasi-live/current-image promotions already completed are not re-queued.",
-  "remainingHumanPlaybackRequired": 13
+  "remainingHumanPlaybackRequired": 18
 }
