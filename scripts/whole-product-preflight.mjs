@@ -50,7 +50,7 @@ must(css.includes("Landscape action dock: always reachable"),"landscape action c
 must(css.includes("ordinary action row; iPhone Safari uses provider/player fullscreen"),"final fullscreen policy missing");
 must(app.includes('s?.querySelector("iframe,img,video")')&&app.includes("state.journeyTimer?s:m||s")&&css.includes("Fullscreen the media itself"),"desktop fullscreen must remain media-first outside Journey and stable-stage during Journey");
 must(app.includes('$("#heroWatch").onclick=()=>scrollToId("watch")')&&index.includes('id="heroWatch"'),"Watch Earth Now must lead directly to the truthful Watch Earth section");
-must(app.includes("function heroLivePreviewAllowed(")&&app.includes('s.playback==="EMBED"')&&app.includes("currentTruthClaim(s)")&&app.includes("saveData===true"),"Hero live preview lost its proven-embed/data-saver safety gate");
+must(!app.includes("heroLivePreviewAllowed")&&index.includes('id="heroLive"')&&css.includes(".hero-live"),"Approved editorial hero must remain static and free of live-preview runtime");
 must(css.includes(".local-earth-section"),"Local Earth styling missing");
 must(css.includes(".participate-section"),"places/cameras/moments participation surface missing");
 must(/(payment or partner status never buys editorial ranking|no ranking for sale)/i.test(places),"commercial no-paid-ranking guardrail missing");
