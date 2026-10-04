@@ -32,3 +32,21 @@
   .mobile-dock a span{font-size:8px!important;line-height:1.05!important}
 }
 /*Mockup fidelity lock*/
+/* Lightweight Earth-realism refinement: local Natural Earth map, no new runtime dependency */
+.atlas{
+  background-color:#dcebe9;
+  background-image:
+    radial-gradient(ellipse at 50% 48%,rgba(255,255,255,.34),rgba(255,255,255,0) 58%),
+    linear-gradient(180deg,rgba(205,231,232,.72),rgba(231,239,234,.46)),
+    url("../assets/world-map-natural-earth.svg");
+  background-size:100% 100%,100% 100%,100% 100%;
+  background-position:center;
+  background-repeat:no-repeat;
+  box-shadow:inset 0 0 54px rgba(43,88,82,.08),0 14px 34px rgba(29,76,67,.06)
+}
+.atlas:before{
+  background-image:
+    linear-gradient(rgba(11,42,37,.032) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(11,42,37,.032) 1px,transparent 1px);
+  opacity:.7
+}
