@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:40:00Z",
-  "healthyDistinctPlaces": 314,
-  "countryCount": 74,
+  "generatedAt": "2026-10-04T04:00:00Z",
+  "healthyDistinctPlaces": 316,
+  "countryCount": 76,
   "strategy": "After the 200-place milestone, growth is quality-led: add new countries/regions, replace weak quasi-live with true live where possible, and improve one-place countries before adding more density to already-rich markets.",
   "newCountryResearch": [
     {
@@ -28,6 +28,16 @@
     {
       "country": "Latvia",
       "candidate": "latvia-valmiera-old-town",
+      "state": "PROMOTED_SEARCHABLE_QUASI_LIVE"
+    },
+    {
+      "country": "Montenegro",
+      "candidate": "montenegro-kolasin-1600",
+      "state": "PROMOTED_SEARCHABLE_QUASI_LIVE"
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "candidate": "bosnia-jahorina-olympic-center",
       "state": "PROMOTED_SEARCHABLE_QUASI_LIVE"
     }
   ],
@@ -118,6 +128,7 @@
   ],
   "notes": [
     "Bulgaria and Serbia are now production-searchable via clearly labeled official LIVE_IMAGE sources; Slovakia/Jasná remains playback-gated.",
-    "Latvia added via official Latvia Travel / Valmiera tourism webcam evidence; treated as LIVE_IMAGE Search/Explore only under the quasi-live policy."
+    "Latvia added via official Latvia Travel / Valmiera tourism webcam evidence; treated as LIVE_IMAGE Search/Explore only under the quasi-live policy.",
+    "Montenegro and Bosnia and Herzegovina added through official mountain live-camera surfaces, conservatively held to Search/Explore LIVE_IMAGE semantics pending stricter live-playback verification."
   ]
 }
