@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T01:50:00Z",
+  "generatedAt": "2026-10-04T03:58:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1712,6 +1712,30 @@
       "rightsBasis": "Official Olympic Center Jahorina public live-camera surface. ERN remains LINK_ONLY and does not infer embed/restream permission.",
       "coordinateSourceUrl": "https://www.oc-jahorina.com/en/",
       "coordinateNote": "Jahorina resort reference; not claimed as a specific camera coordinate."
+    },
+    "jordan-petra-visitor-center-live": {
+      "freshnessEvidence": "Owner directly confirmed the Petra Visitor Center camera was visibly current/moving on 2026-10-04 after ERN isolated the exact provider target.",
+      "rightsBasis": "SkylineWebcams provider page exposes public live viewing. ERN remains LINK_ONLY and does not infer embed or restream permission.",
+      "coordinateNote": "Representative Petra archaeological-site reference, not claimed camera position.",
+      "coordinateSourceUrl": "https://www.skylinewebcams.com/en/webcam/jordan/maan/amman/petra-visitor-center.html"
+    },
+    "oman-muscat-aida-beach-live": {
+      "freshnessEvidence": "Owner directly confirmed the Muscat Aida Beach camera was visibly current/moving on 2026-10-04.",
+      "rightsBasis": "SkylineWebcams provider page exposes public live viewing. ERN remains LINK_ONLY and does not infer embed or restream permission.",
+      "coordinateNote": "Representative Muscat coastal reference, not claimed camera position.",
+      "coordinateSourceUrl": "https://www.skylinewebcams.com/en/webcam/oman/muscat/muscat/aida-beach.html"
+    },
+    "fiji-plantation-island-resort-live": {
+      "freshnessEvidence": "Owner directly confirmed the first-party Plantation Island Resort webcam was visibly current/moving on 2026-10-04.",
+      "rightsBasis": "First-party resort webcam page; ERN remains LINK_ONLY and does not infer embed or restream permission.",
+      "coordinateNote": "Representative Malolo Lailai island reference, not claimed camera position.",
+      "coordinateSourceUrl": "https://www.plantationisland.com/webcam/"
+    },
+    "fiji-lomani-island-resort-live": {
+      "freshnessEvidence": "Owner directly confirmed the first-party Lomani Island Resort LIVE FEED was visibly current/moving on 2026-10-04.",
+      "rightsBasis": "First-party resort live-feed page; ERN remains LINK_ONLY and does not infer embed or restream permission.",
+      "coordinateNote": "Representative Malolo Lailai island reference, not claimed camera position. This feed shares the same canonical ERN place as Plantation Island Resort to prevent fake destination inflation.",
+      "coordinateSourceUrl": "https://www.lomaniisland.com/webcam/"
     }
   },
   "prague-petrin-tower": {
