@@ -113,7 +113,8 @@
     "atlas:reference-audit": "node scripts/reference-handoff-audit.mjs",
     "search:metadata-audit": "node scripts/search-metadata-audit.mjs",
     "seo:indexing-audit": "node scripts/seo-indexing-audit.mjs",
-    "ai-search:readiness": "node scripts/ai-search-readiness.mjs"
+    "ai-search:readiness": "node scripts/ai-search-readiness.mjs",
+    "search:supplemental-status": "node scripts/search-supplemental-status.mjs"
   },
   "engines": {
     "node": ">=20"
