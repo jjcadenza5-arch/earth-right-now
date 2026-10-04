@@ -162,9 +162,14 @@ const setLimit=adaptiveWatchLimit(sorted,20);
 const out=[],countries=new Map(),providers=new Map(),places=new Map();
 const reserveInside=sorted.filter(currentInside);
 for(const s of reserveInside){
-if(out.length>=Math.min(5,setLimit))break;const place=s.placeId||s.id,provider=s.provider||"";
-if(places.has(place)||(providers.get(provider)||0)>=3)continue;
-out.push(s);places.set(place,1);countries.set(s.country||"", (countries.get(s.country||"")||0)+1);providers.set(provider,(providers.get(provider)||0)+1)
+if(out.length>=Math.min(5,setLimit))break;const place=s.placeId||s.id,provider=s.provider||"",country=s.country||"";
+if(places.has(place)||(providers.get(provider)||0)>=2||(countries.get(country)||0)>=1)continue;
+out.push(s);places.set(place,1);countries.set(country,1);providers.set(provider,(providers.get(provider)||0)+1)
+}
+if(out.length<Math.min(5,setLimit))for(const s of reserveInside){
+if(out.length>=Math.min(5,setLimit))break;if(out.some(x=>x.id===s.id))continue;const place=s.placeId||s.id,provider=s.provider||"",country=s.country||"";
+if(places.has(place)||(providers.get(provider)||0)>=2)continue;
+out.push(s);places.set(place,1);countries.set(country,(countries.get(country)||0)+1);providers.set(provider,(providers.get(provider)||0)+1)
 }
 for(const s of sorted){
 if(out.length>=setLimit)break;if(out.some(x=>x.id===s.id))continue;
@@ -235,7 +240,7 @@ b.dataset.truth=truthTone(s);b.querySelector(".card-kicker span:first-child").te
 b.onclick=()=>openViewer(s);return b;
 }
 function renderModeChips(){document.querySelectorAll(".mode-chip").forEach(b=>b.classList.toggle("active",b.dataset.mode===state.mode))}
-function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map((s,i)=>card(s,false,i)));$("#watchCount").textContent=state.watch.length;$("#watchEmpty").hidden=!state.watch.length;renderModeChips();state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(heroPool()[0]||state.watch[0])}
+function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map((s,i)=>card(s,false,i)));$("#watchCount").textContent=state.watch.length;const empty=$("#watchEmpty");empty.hidden=state.watch.length>0;empty.style.display=state.watch.length?"none":"";renderModeChips();state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(heroPool()[0]||state.watch[0])}
 function placeCard(group){
 const best=[...group].sort((a,b)=>(guideEligible(b)?1:0)-(guideEligible(a)?1:0)||baseScore(b)-baseScore(a))[0];
 const b=card(best,true);b.classList.add("place-card");
