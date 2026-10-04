@@ -975,3 +975,13 @@ while preserving the startup/performance ceiling and existing product gates.
 - Added a regression guard so release smoke fails if the full current set is collapsed back to proven-only inventory.
 - Cache-busted the public app runtime so browsers receive the repaired behavior.
 - Do not resume general homepage polishing. Only fix reproducible defects; continue toward completion/operations.
+
+
+### Owner visual approval + continuation — 2026-10-05
+- Owner approved the current photographic Mount Fuji hero as visually good. Treat the hero as ACCEPTED for now.
+- Do not reopen hero replacement unless there is a reproducible defect. A future optional enhancement may rotate a small curated set of editorial hero photographs on a slow cadence (day/week), screensaver-like, while preserving editorial/FEATURED truth and the existing layout.
+- Continued first-impression work only where it improves evidence/credibility rather than redesigning: Watch Earth now preferentially reserves up to four current inside-ERN sources with valid real thumbnails before filling the rest of the first row, while keeping provider/country/place diversity and truth gates.
+- Expanded lazy multilingual/local-name retrieval coverage for 17 additional destinations, including Salzburg, Innsbruck, Dubrovnik, Tallinn, Mendoza, Wānaka, Rotorua, Issyk-Kul, Khumbu/Everest, Poiana Brașov, Mayon/Bulusan/Kanlaon, Mauna Loa, Tvøroyri, Longyearbyen and Lerwick.
+- Expanded search-metadata audit samples to cover the new local-language/transliteration cases.
+- Public generative Guide and public Now Moments remain OFF; ranking remains commercial-neutral; startup/core payload ceilings remain hard.
+- Continue autonomously into remaining completion/operations work rather than repeated homepage polishing.
