@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T01:50:00Z",
+  "generatedAt": "2026-10-04T01:58:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3182,6 +3182,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Borovets/Borovets-Ultimate-Snowmobile-Experience/d36672-118846P2",
       "publicInventoryEvidence": "Viator currently exposes a bookable Borovets snowmobile experience covering Borovets Ski Resort and the Rila Mountains.",
       "nextAction": "Generate one Borovets destination/product-level Viator tracked link in the owner account and manually verify it before public activation."
+    },
+    {
+      "id": "viator-jasna-chopok",
+      "destination": "Jasná / Chopok / Low Tatras",
+      "placeIds": [
+        "jasna-chopok"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN has a healthy Jasná/Chopok searchable current-image place and current Viator Slovakia inventory includes multi-day and outdoor mountain experiences covering the Tatras.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Slovakia-tours/Outdoor-Activities/d66-g9",
+      "publicInventoryEvidence": "Viator currently lists Slovakia outdoor and mountain experiences, including Tatra itineraries. Exact Jasná/Low Tatras partner-link suitability still requires owner-account search.",
+      "nextAction": "Only activate if the Viator partner tools expose a clean Slovakia/Low Tatras/Jasná link. Do not force a generic Bratislava product onto this mountain place."
     }
   ]
 }
