@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T04:15:00Z",
+  "generatedAt": "2026-10-04T04:18:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3354,8 +3354,12 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Muscat/d4389-ttd",
       "publicInventoryEvidence": "Current Viator Muscat inventory shows 700+ tours/excursions, including city, sightseeing, snorkeling and day-trip products.",
-      "nextAction": "Generate one Muscat Viator tracked link in the owner account and manually verify it before public activation.",
-      "unlockedBySourceAt": "2026-10-04T03:58:00Z"
+      "nextAction": "Owner must open the generated tracked link once and confirm it lands on relevant Muscat/Oman inventory before ERN marks it verified/public-eligible.",
+      "unlockedBySourceAt": "2026-10-04T03:58:00Z",
+      "candidateTrackedUrl": "https://www.viator.com/searchResults/all?text=Muscat+Oman+tours+activities&pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-04T04:18:00Z",
+      "candidateTrackedUrlEvidence": "Owner-generated Viator tracked search link supplied in chat on 2026-10-04.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "klook-fiji-future",
