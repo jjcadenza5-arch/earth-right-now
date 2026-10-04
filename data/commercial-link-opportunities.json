@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T03:15:00Z",
+  "generatedAt": "2026-10-04T03:18:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3305,6 +3305,21 @@
       "reason": "If at least one Montevideo camera is promoted, Viator can provide a useful downstream city/activity path without affecting Earth ranking.",
       "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
       "nextAction": "After source promotion, generate one city-level Montevideo Viator partner link and reuse it across verified Montevideo places."
+    },
+    {
+      "id": "klook-maolin-kaohsiung",
+      "destination": "Maolin National Scenic Area / Kaohsiung",
+      "placeIds": [
+        "taiwan-maolin"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN has a healthy searchable Maolin place and Klook currently exposes Maolin-specific outdoor activity inventory, creating a direct discovery-to-activity path without changing ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/zh-TW/activity/70663-river-tracing-kaohsiung/",
+      "publicInventoryEvidence": "Current Klook inventory includes a Maolin river-tracing experience in Kaohsiung's Maolin District.",
+      "nextAction": "Generate one Maolin/Kaohsiung Klook tracked link in the ERN Travelpayouts project and manually verify it before public activation."
     }
   ]
 }
