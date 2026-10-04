@@ -880,3 +880,75 @@ New-chat continuation checkpoint — 2026-10-04 22:11 ICT:
 - First-impression work should now be treated as CLOSED unless there is a reproducible functional or responsive defect. Do not keep polishing the same homepage by preference alone.
 - Next productive phase should resume AI Search Discovery Readiness / destination understanding: strengthen crawlable destination metadata, aliases/local-language search equivalence, structured public facts, related-destination links, and retrieval quality without bloating first load. The latest successful release already includes the repaired search-alias smoke test and shared multilingual search-intent work.
 - Working style remains large autonomous batches. Do not return for micro-decisions. Come back only for a real owner playback check, exact affiliate-account action, legal/payment decision, or a substantial review point.
+
+
+---
+
+## 2026-10-04 — AI Search Discovery Readiness: destination-understanding checkpoint
+
+### Reconciliation
+- Reconciled current `main` against this handoff before implementation.
+- Preserved all later valid work. Homepage / first-impression polishing remains CLOSED unless a reproducible defect is found.
+- No public generative Guide activation, Now Moments activation, paid-ranking change, source-truth relaxation or core source-budget increase was introduced.
+
+### Completed in this tranche
+- Added `data/place-search-aliases.json` as a lazy, non-ranking multilingual/local-name retrieval layer.
+  - 26 curated destination/place records.
+  - 109 curated aliases after folded-form deduplication.
+  - Includes local-script and common-name examples across Thai, Japanese, Korean, Chinese, Arabic, Turkish, Greek, Slovenian and common European transliterations.
+- Visitor search loads the alias sidecar only after a visitor starts searching.
+  - Startup catalog payload remains unchanged.
+  - `src/app-lite.js` release size: **99,815 bytes**, below the hard 100 KB gate.
+- Crawlable destination pages now merge curated aliases into:
+  - visible “Also known as” text,
+  - JSON-LD `alternateName`,
+  - existing destination search/filter text.
+- Strengthened structured destination facts with:
+  - ERN source provider,
+  - playback mode,
+  - latest reliable ERN check timestamp when available,
+  - machine-readable related-destination links.
+- Search metadata audit now covers the combined core + lazy supplemental searchable universe and tests multilingual/local-script queries.
+- Public `llms.txt` now explicitly describes ERN destination understanding, local-language aliases, related destinations, verification facts and the rule that retrieval metadata never changes source truth or commercial ranking.
+- Added/strengthened release gates for:
+  - multilingual alias integrity,
+  - multilingual search retrieval,
+  - crawlable alias visibility,
+  - structured destination context,
+  - AI-search orientation.
+- Workflow now reruns Pages validation when the search-metadata audit contract changes.
+
+### Current searchable baseline
+- Core place IDs reported by release: **322**
+- Lazy Search-only supplemental places: **20**
+- Combined searchable places: **342**
+- Supplemental places remain Search-only and cannot enter Watch Earth / hero / Atlas merely because they are searchable.
+
+### Release validation
+- Production Pages release head: `d4e81d2658f82e39edb4be284487fbde6136955b`
+- Final Pages run: **SUCCESS**
+- Release smoke: PASS
+- Performance preflight: PASS
+- SEO indexing readiness: PASS
+- AI-search discovery readiness: PASS
+- Multilingual place-alias integrity: PASS
+- Search metadata retrieval integrity: PASS
+- Public feature gates remain fail-closed as before.
+
+### Genuine next owner gate
+The next meaningful search-discovery step is external ownership/indexing setup and cannot be completed safely from code alone:
+1. Verify/select `https://earthrightnow.app/` in Google Search Console using the owner Google account and existing site-verification path (or exact DNS token supplied by Google).
+2. Submit `https://earthrightnow.app/sitemap.xml`.
+3. Inspect the homepage, `/places/`, `/discover/`, and representative destination URLs.
+4. After Google is verified, connect/import into Bing Webmaster Tools where available and submit/confirm the sitemap.
+
+Do not invent verification tokens or alter DNS without the exact owner-provider value. Search-engine verification must not change ERN source truth, ranking, privacy or gated-feature state.
+
+### Next autonomous lane after owner verification
+Use real indexing/crawl feedback to prioritize:
+- destination-query alias gaps,
+- index coverage issues,
+- crawlable destination metadata gaps,
+- search-result quality improvements,
+- local-language retrieval expansion,
+while preserving the startup/performance ceiling and existing product gates.
