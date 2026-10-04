@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T04:10:00Z",
-  "status": "OWNER_ACTION_ACTIVE_SMALL_BATCH",
+  "generatedAt": "2026-10-04T04:30:00Z",
+  "status": "DORMANT_UNTIL_OWNER_BATCH_IS_WORTHWHILE",
   "purpose": "Bundle owner-only affiliate link generation and playback checks into worthwhile sessions instead of interrupting ERN expansion one item at a time.",
   "sourceVerificationBatch": [
     "ala-archa-park",
@@ -99,10 +99,15 @@
   "trafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
   "futureProgramNote": "Trip.com remains ERN's P1 future stay/transport/activity addition once Travelpayouts unlocks it. Do not recheck repeatedly; wait for material traffic/conversion growth or a platform status change.",
   "trafficUnlockReadiness": "data/travelpayouts-unlock-readiness.json",
-  "currentExactAffiliateLinkBatch": [
-    "viator-petra-jordan-future",
-    "viator-muscat-oman-future",
-    "klook-fiji-future"
-  ],
-  "currentBatchReason": "Owner completed source verification for Petra, Muscat and Fiji; these three are now ready for exact tracked-link generation using existing active partners."
+  "currentExactAffiliateLinkBatch": [],
+  "currentBatchReason": "Owner completed source verification for Petra, Muscat and Fiji; these three are now ready for exact tracked-link generation using existing active partners.",
+  "lastCompletedOwnerBatch": {
+    "completedAt": "2026-10-04T04:30:00Z",
+    "ids": [
+      "viator-petra-jordan-future",
+      "viator-muscat-oman-future",
+      "klook-fiji-future"
+    ],
+    "result": "All three owner-generated tracked links manually opened and confirmed correct."
+  }
 }
