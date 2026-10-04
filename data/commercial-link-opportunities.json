@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T01:58:00Z",
+  "generatedAt": "2026-10-04T03:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3197,6 +3197,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Slovakia-tours/Outdoor-Activities/d66-g9",
       "publicInventoryEvidence": "Viator currently lists Slovakia outdoor and mountain experiences, including Tatra itineraries. Exact Jasná/Low Tatras partner-link suitability still requires owner-account search.",
       "nextAction": "Only activate if the Viator partner tools expose a clean Slovakia/Low Tatras/Jasná link. Do not force a generic Bratislava product onto this mountain place."
+    },
+    {
+      "id": "wegotrip-darmstadt",
+      "destination": "Darmstadt / Mathildenhöhe",
+      "placeIds": [
+        "darmstadt-mathildenhoehe"
+      ],
+      "partnerCandidate": "wegotrip",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN has a searchable Mathildenhöhe place and WeGoTrip currently exposes a Darmstadt self-guided audio tour whose route explicitly includes Mathildenhöhe.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://wegotrip.com/luisenplatz-a22279/",
+      "publicInventoryEvidence": "Current WeGoTrip listing shows a Darmstadt self-guided audio tour beginning at Luisenplatz and explicitly including Mathildenhöhe among its route highlights.",
+      "nextAction": "Use the owner-accessible WeGoTrip link tool to search Darmstadt/Mathildenhöhe, generate one tracked link if the product is available in the owner account, and manually open it before any public activation."
     }
   ]
 }
