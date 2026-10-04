@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T03:46:00Z",
+  "generatedAt": "2026-10-04T04:05:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -94,8 +94,8 @@
     ],
     "currentCommercialOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 184,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 11,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 187,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 8,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
     "availableUtilityExpansionPlan": "data/available-program-expansion-plan.json",
@@ -146,13 +146,13 @@
     "travelpayoutsUnlockStrategy": "TRAFFIC_LED_RECHECK_ONLY_ON_STATUS_CHANGE_OR_MATERIAL_GROWTH",
     "nextPreferredUnlock": "trip-com",
     "nextPreferredUnlockReason": "Trip.com remains the highest-value future unlock because one program could add stay plus transport/activity utility across many ERN destinations; current account state is visible but not unlocked.",
-    "currentSearchableCountries": 76,
-    "sourceRuntimeCatalogChars": 295036,
+    "currentSearchableCountries": 79,
+    "sourceRuntimeCatalogChars": 299076,
     "sourceExpansionCandidateStates": {
-      "PROMOTED_TO_SOURCE_REGISTRY": 58,
+      "PROMOTED_TO_SOURCE_REGISTRY": 62,
       "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 151,
       "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
-      "HUMAN_PLAYBACK_REQUIRED": 18
+      "HUMAN_PLAYBACK_REQUIRED": 14
     },
     "ownerAccountLinkGenerationAvailablePrograms": [
       "yesim",
@@ -260,7 +260,8 @@
     "Travelpayouts traffic-gated program roadmap established from owner account evidence",
     "Quality-led searchable-place target advanced beyond original 150–200 milestone",
     "Maolin National Scenic Area added to Klook exact-link research using current public Maolin activity inventory.",
-    "Middle East / South Pacific research batch queued Petra (two views), Muscat Aida Beach and two Fiji provider webcams behind human playback gates; source-gated Viator/Klook paths prepared without public activation."
+    "Middle East / South Pacific research batch queued Petra (two views), Muscat Aida Beach and two Fiji provider webcams behind human playback gates; source-gated Viator/Klook paths prepared without public activation.",
+    "Owner playback confirmation promoted Petra Visitor Center, Muscat Aida Beach and two Malolo Lailai/Fiji live views; Fiji views share one canonical place, bringing healthy searchable coverage to 319 distinct places / 79 countries."
   ],
   "humanOnlyRemaining": [
     {
@@ -301,14 +302,14 @@
     "Do not chase locked programs merely because they appear in the Travelpayouts catalog",
     "Traffic-gated programs remain non-public until owner account unlock/eligibility is confirmed"
   ],
-  "currentHealthySearchablePlaces": 316,
+  "currentHealthySearchablePlaces": 319,
   "releaseHealth": {
     "pagesDeployment": "SUCCESS_2026-10-04T02:05Z",
     "operationsCheck": "SUCCESS_2026-10-04T02:05Z",
     "sourceCatalogRuntimeEvidence": "RIGHTS_BASIS_AND_FRESHNESS_EVIDENCE_RETAINED",
     "verboseSourceEvidenceSidecar": "data/source-evidence.json",
     "sourceCatalogArchitecture": "MINIFIED_RUNTIME_CATALOG_PLUS_VERBOSE_EVIDENCE_SIDECAR",
-    "sourceCatalogHeadroom": "295036_CHARS_AT_316_PLACE_BASELINE",
-    "lastKnownGreenBaseline": "PAGES_AND_OPERATIONS_GREEN_AT_316_SEARCHABLE_PLACES"
+    "sourceCatalogHeadroom": "299076_CHARS_AT_319_PLACE_BASELINE_NEAR_300KB_CEILING",
+    "lastKnownGreenBaseline": "319_SEARCHABLE_PLACES_SOURCE_CATALOG_UNDER_300KB_PENDING_AUTOMATED_RELEASE_CONFIRMATION"
   }
 }
