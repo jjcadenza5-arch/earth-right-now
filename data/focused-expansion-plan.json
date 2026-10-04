@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T14:18:00Z",
+  "generatedAt": "2026-10-04T14:24:00Z",
   "mode": "QUALITY_FIRST_AND_BUSINESS_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 319,
@@ -81,7 +81,7 @@
       "current": 319,
       "remainingToMinimum": 0,
       "stretchTarget": 350,
-      "remainingToStretch": 9,
+      "remainingToStretch": 11,
       "status": "QUALITY_FIRST_POST_300_RUNTIME_NEAR_CEILING"
     },
     "recentExpansionFamilies": [
@@ -106,8 +106,8 @@
       "HUMAN_PLAYBACK_REQUIRED": 14
     },
     "currentHealthyCountryCount": 79,
-    "remainingTo350": 9,
-    "remainingTo400": 59,
+    "remainingTo350": 11,
+    "remainingTo400": 61,
     "remainingHumanPlaybackQueue": 14,
     "currentPriorityGaps": [
       "Middle East / North Africa",
@@ -116,10 +116,10 @@
       "Caribbean capitals/harbours",
       "South America civic/coastal"
     ],
-    "searchableUniverseWithSupplemental": 341,
+    "searchableUniverseWithSupplemental": 339,
     "searchSupplementalCatalog": {
       "file": "data/search-supplemental.json",
-      "places": 22,
+      "places": 20,
       "loadMode": "LAZY_ON_NONEMPTY_SEARCH",
       "watchEarthEligible": false,
       "featuredEligible": false,
