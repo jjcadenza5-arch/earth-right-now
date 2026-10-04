@@ -6,4 +6,7 @@ assert.match(app,/function wanderCard\(s\)[\s\S]*installVisualFallback\(el,v,s\)
 assert.match(app,/else v\.append\(scenicPoster\(s\)\)/,"wander cards without thumbnails need truthful illustrative fallback");
 assert.match(css,/grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/,"mobile feeling/place cards should stay compact in two columns");
 assert.match(css,/\.mobile-dock a\{[^}]*flex-direction:row/,"mobile dock links should stay compact");
+assert.match(css,/content:"ILLUSTRATIVE"/,"illustrative card artwork must be labeled");
+assert.match(css,/ern-fuji-mockup-hero\.jpg/,"approved Mount Fuji hero asset must remain active");
+assert.match(app,/data\.scene="snow"|dataset\.scene="snow"/,"fallback card system should retain snow visual family");
 console.log("ERN visual fallback and compact mobile discovery regression checks passed");
