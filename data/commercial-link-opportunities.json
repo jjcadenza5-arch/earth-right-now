@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T01:50:00Z",
+  "generatedAt": "2026-10-04T02:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3242,6 +3242,36 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Sarajevo/Skiing-at-Sarajevo-Olympic-Mountains-Full-Day-Tour-from-Sarajevo/d22427-12030P24",
       "publicInventoryEvidence": "Current Viator product explicitly visits Jahorina and includes Sarajevo pickup, ski equipment and ski instruction.",
       "nextAction": "Search the owner Viator partner tools for Jahorina/Sarajevo Olympic Mountains and generate one tracked link; manually verify before public activation."
+    },
+    {
+      "id": "go-city-rome",
+      "destination": "Rome",
+      "placeIds": [
+        "rome-spanish-steps"
+      ],
+      "partnerCandidate": "go-city",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Go City is currently owner-link-generation capable and its current Rome Explorer Pass covers 30+ attractions, creating a useful multi-attraction planning option after ERN Rome discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://gocity.com/en/rome",
+      "publicInventoryEvidence": "Current Go City Rome page lists 30+ attractions including the Colosseum, Vatican Museums, hop-on-hop-off, Castel Sant'Angelo and Pantheon.",
+      "nextAction": "Generate one owner-side Go City Rome tracked link and manually verify it; keep it in planning, not discovery ranking."
+    },
+    {
+      "id": "go-city-dublin",
+      "destination": "Dublin",
+      "placeIds": [
+        "dublin-temple-bar"
+      ],
+      "partnerCandidate": "go-city",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Go City is currently owner-link-generation capable and its Dublin passes cover 30+ attractions, complementing ERN's Temple Bar discovery and existing Viator activity path.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://gocity.com/en/dublin",
+      "publicInventoryEvidence": "Current Go City Dublin page offers Essentials, Explorer and All-Inclusive passes covering 30+ attractions such as Guinness Storehouse, Big Bus Dublin and Jameson Distillery.",
+      "nextAction": "Generate one owner-side Go City Dublin tracked link and manually verify it; avoid showing duplicate activity CTAs simultaneously."
     }
   ]
 }
