@@ -823,3 +823,19 @@ Supplemental Search architecture — 2026-10-04:
 - This architecture expands Search capacity without weakening the app-lite, startup JS, lean-core or sources.json performance ceilings.
 - Public Guide and Now Moments remain OFF; commercial ranking remains neutral.
 
+
+First Impression / Homepage Refinement — 2026-10-04:
+- Owner approved the Mount Fuji homepage direction and requested a premium first-impression pass before further catalog expansion.
+- Homepage information hierarchy is now Hero → Watch Earth Now → one Explore-by-feeling/place section → supporting discovery. The duplicate early “What kind of Earth do you want to see?” collection block was removed.
+- The previous discovery-breadth stats block was moved below Search so it supports depth rather than competing with the first screen.
+- Hero is now a fixed Mount Fuji editorial/brand anchor using a public-domain/CC0 Wikimedia image. It is explicitly labeled editorial/FEATURED and does not pretend the Mount Fuji image itself is a live/current ERN source.
+- Hero primary action now scrolls directly to Watch Earth; secondary action moves to Explore by Feeling & Place. The public Guide remains gated and is not promoted as a hero action.
+- Watch Earth now sits directly under the hero. Category controls remain available but are compact/contextual inside Watch Earth rather than occupying a separate heavy navigation band.
+- Featured-set scoring now gives a modest visual-quality boost to verified sources with real thumbnail imagery. Commercial value does not affect this ranking.
+- Source-backed card images receive stronger crops and subtle zoom; fallback illustration scenes now vary by destination ID so no-image cards are less repetitive while remaining clearly illustrative.
+- ERN brand mark was simplified from a glossy placeholder style to a flatter, cleaner window/earth mark; brand spacing and navigation weight were reduced.
+- Typography, spacing, shadows, card radii and section density were reduced toward the approved lighter premium mockup direction.
+- Existing truth/currentness, provider-diversity, commercial-neutrality, Watch Earth eligibility, SEO/AI-search, crawlability, Guide/Now Moments gates and the strict performance ceilings were not relaxed.
+- Current changed-file sizes remain under individual preflight limits: index ~25 KB (<45 KB), app-lite ~94 KB (<100 KB), styles-lite ~83 KB (<100 KB), and sources.json remains below 300 KB.
+- This is now a substantial owner visual-review point; continue from owner screenshots/approval rather than layering further visual change blindly.
+
