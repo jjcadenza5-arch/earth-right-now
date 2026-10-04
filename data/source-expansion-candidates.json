@@ -3345,6 +3345,19 @@
       "priority": "P1",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Open the official Visit Bratislava live-camera page and confirm at least one city/Danube view is currently working."
+    },
+    {
+      "id": "latvia-valmiera-old-town",
+      "title": "Valmiera — Old Town",
+      "country": "Latvia",
+      "region": "Valmiera Municipality",
+      "provider": "Latvia Travel / Valmiera Tourism",
+      "sourcePage": "https://www.latvia.travel/en/sight/valmiera-old-town",
+      "evidence": "Official Latvia tourism page explicitly invites visitors to watch Valmiera city life on the webcam.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-04T03:30:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from official tourism webcam evidence; featuredHold/watchHold remain true."
     }
   ],
   "notes": [
@@ -3414,7 +3427,8 @@
     "2026-10-03 post-200 geography batch added Slovakia (Jasná/Chopok) and Bulgaria (Bansko, Borovets) from official resort webcam families. These are grouped by real destination and remain playback-gated; no fake place inflation.",
     "2026-10-03 post-200 quasi-live batch promoted Bansko, Borovets and Kopaonik as three real searchable destinations; resort camera angles remain grouped and Watch Earth remains held.",
     "2026-10-03 post-200 geography research added Hungary/Kékestető and Bratislava city live-camera routes from official destination/tourism sources; both remain human-check gated.",
-    "2026-10-04 Jasná/Chopok and Kékestető promoted conservatively to searchable LIVE_IMAGE based on official webcam pages. Both remain held out of Watch Earth pending direct playback review."
+    "2026-10-04 Jasná/Chopok and Kékestető promoted conservatively to searchable LIVE_IMAGE based on official webcam pages. Both remain held out of Watch Earth pending direct playback review.",
+    "2026-10-04: Latvia added through the official Valmiera Old Town tourism webcam reference. Search/Explore only; no continuous-live claim."
   ],
   "researchGaps": [
     {
