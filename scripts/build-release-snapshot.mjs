@@ -28,6 +28,7 @@ await cp(new URL("../src/submission-review-contract.js",import.meta.url),new URL
 await cp(new URL("../src/for-places-page.js",import.meta.url),new URL("src/for-places-page.js",dist));
 await mkdir(new URL("data/",dist),{recursive:true});
 await cp(new URL("../data/sources.json",import.meta.url),new URL("data/sources.json",dist));
+await cp(new URL("../data/search-supplemental.json",import.meta.url),new URL("data/search-supplemental.json",dist));
 await cp(new URL("../data/local-directory.json",import.meta.url),new URL("data/local-directory.json",dist));
 await cp(new URL("../data/travel-offers.json",import.meta.url),new URL("data/travel-offers.json",dist));
 await cp(new URL("../data/viator-api-deployment.json",import.meta.url),new URL("data/viator-api-deployment.json",dist));
