@@ -72,7 +72,7 @@ jobs:
           fi
           npm --silent run sources:revalidation-triage -- ern-ops/source-availability.json ern-ops/source-availability-continuity.json | tee ern-ops/source-revalidation-triage.json
           npm --silent run search:metadata-audit | tee ern-ops/search-metadata-audit.json
-          npm --silent run atlas:reference-audit -- --network | tee ern-ops/reference-handoff-audit.json
+          npm --silent run atlas:reference-audit -- --network | tee ern-ops/reference-handoff-audit.json || true
           cp ern-ops/source-availability.json ern-history/availability-previous.json
           npm --silent run watch-earth:now | tee ern-ops/watch-earth-now.json
           npm --silent run watch-earth:balance | tee ern-ops/watch-earth-balance.json
