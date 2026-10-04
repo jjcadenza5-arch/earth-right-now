@@ -28,6 +28,8 @@ on:
       - "src/styles-lite.css"
       - "data/sources.json"
       - "data/search-supplemental.json"
+      - "data/place-search-aliases.json"
+      - "scripts/place-search-alias-status.mjs"
       - "data/source-research-priorities.json"
       - "data/visitor-source-expansion-candidates.json"
       - "data/realtime-context-sources.json"
@@ -239,6 +241,8 @@ jobs:
         run: node scripts/source-recency-summary.mjs
       - name: Source research priority integrity
         run: node scripts/source-research-priority-status.mjs
+      - name: Multilingual place alias integrity
+        run: npm --silent run search:place-alias-status
       - name: Supplemental Search catalog integrity
         run: npm --silent run search:supplemental-status
       - name: Provider concentration resilience
