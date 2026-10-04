@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:05:00Z",
+  "generatedAt": "2026-10-04T03:15:00Z",
   "principle": "Convert a small high-value batch of exact links from programs already available before adding traffic-gated partners.",
   "topExactLinkBatch": [
     {
@@ -19,9 +19,9 @@
       ],
       "priority": "P1",
       "nextAction": "Generate one Faroe Islands destination-level Viator tracked link and use it only where the visitor has chosen Faroe trip planning; do not attach it to unrelated cameras.",
-      "preparedTrackedUrlCandidate": null,
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Faroe-Islands/d37756-ttd",
-      "readiness": "ACCOUNT_SEARCH_REQUIRED"
+      "preparedTrackedUrlCandidate": "https://www.viator.com/Torshavn/d4191-ttd?pid=P00322254&mcid=42383&medium=link",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Torshavn/d4191-ttd",
+      "readiness": "PREPARED_NOT_OWNER_VERIFIED"
     },
     {
       "rank": 2,
@@ -42,9 +42,9 @@
       ],
       "priority": "P1",
       "nextAction": "Generate one Innsbruck/Tyrol destination-level Viator link and reuse it across appropriate places without duplicate commercial density.",
-      "preparedTrackedUrlCandidate": null,
-      "publicInventoryEvidenceUrl": null,
-      "readiness": "ACCOUNT_SEARCH_REQUIRED"
+      "preparedTrackedUrlCandidate": "https://www.viator.com/Innsbruck/d5173-ttd?pid=P00322254&mcid=42383&medium=link",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Innsbruck/d5173-ttd",
+      "readiness": "PREPARED_NOT_OWNER_VERIFIED"
     },
     {
       "rank": 3,
@@ -120,9 +120,9 @@
       ],
       "priority": "P1",
       "nextAction": "Generate one Cook Islands or Rarotonga/Aitutaki destination-level Viator partner link and verify it manually; reuse it across relevant Cook Islands places instead of duplicating commercial density.",
-      "preparedTrackedUrlCandidate": null,
+      "preparedTrackedUrlCandidate": "https://www.viator.com/Cook-Islands/d4788-ttd?pid=P00322254&mcid=42383&medium=link",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Cook-Islands/d4788-ttd",
-      "readiness": "ACCOUNT_SEARCH_REQUIRED"
+      "readiness": "PREPARED_NOT_OWNER_VERIFIED"
     },
     {
       "rank": 7,
@@ -384,5 +384,12 @@
     "noCommissionRanking": true,
     "noDuplicateCommercialDensity": true
   },
-  "ownerActionRule": "Do not request owner verification until several prepared candidates form one coherent batch; current autonomous research should continue first."
+  "ownerActionRule": "Do not request owner verification until several prepared candidates form one coherent batch; current autonomous research should continue first.",
+  "preparedTrackedCandidates": [
+    "viator-faroe-islands",
+    "viator-innsbruck",
+    "viator-madeira",
+    "viator-cook-islands",
+    "viator-istanbul-future"
+  ]
 }
