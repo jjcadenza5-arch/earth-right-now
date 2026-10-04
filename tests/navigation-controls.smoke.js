@@ -14,4 +14,5 @@ for(const [id,target] of required){
 }
 assert.match(app,/document\.querySelectorAll\("\[data-query\]"\)/,"search suggestion chips must be wired");
 assert.match(app,/function scrollToId\(id\)/,"enhanced section scrolling must remain available");
+assert.match(app,/\$\("#heroWatch"\)\.onclick=e=>\{[\s\S]*openViewer\(target\)/,"hero Watch Earth Now must open a current window");
 console.log("ERN visible navigation controls retain native fallbacks and dynamic search-chip wiring");
