@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T03:18:00Z",
+  "generatedAt": "2026-10-04T03:43:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3320,6 +3320,51 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/zh-TW/activity/70663-river-tracing-kaohsiung/",
       "publicInventoryEvidence": "Current Klook inventory includes a Maolin river-tracing experience in Kaohsiung's Maolin District.",
       "nextAction": "Generate one Maolin/Kaohsiung Klook tracked link in the ERN Travelpayouts project and manually verify it before public activation."
+    },
+    {
+      "id": "viator-petra-jordan-future",
+      "destination": "Petra, Jordan",
+      "placeIds": [
+        "jordan-petra"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Petra is a high-value Earth discovery destination and Viator has current Jordan/Petra activity inventory; commercial placement must wait until ERN has a verified Petra source and an owner-generated exact tracked link.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Jordan/d744-ttd",
+      "publicInventoryEvidence": "Viator currently markets Jordan/Petra tours and experiences.",
+      "nextAction": "After one Petra camera is human-verified and promoted, generate one clean Petra/Jordan Viator tracked link in the owner account and manually verify it before public activation."
+    },
+    {
+      "id": "viator-muscat-oman-future",
+      "destination": "Muscat, Oman",
+      "placeIds": [
+        "oman-muscat-aida-beach"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Muscat fills a major Middle East geographic gap and Viator currently exposes hundreds of Muscat tours, including city tours and day trips.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Muscat/d4389-ttd",
+      "publicInventoryEvidence": "Current Viator Muscat inventory shows 700+ tours/excursions, including city, sightseeing, snorkeling and day-trip products.",
+      "nextAction": "After Aida Beach is human-verified/promoted, generate one clean Muscat Viator tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-fiji-future",
+      "destination": "Fiji / Mamanuca Islands",
+      "placeIds": [
+        "fiji-malolo-lailai"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Fiji materially improves South Pacific coverage and Klook currently has a broad Fiji activity catalog including island cruises and water activities.",
+      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/c189-fiji/",
+      "publicInventoryEvidence": "Current Klook Fiji destination inventory lists dozens of activities including South Sea Island cruises, Malamala Beach Club, Cloud 9 and other water experiences.",
+      "nextAction": "After a Fiji/Malolo Lailai webcam is human-verified/promoted, generate one destination-level Fiji Klook tracked link and manually verify it before public activation."
     }
   ]
 }
