@@ -1,10 +1,46 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T01:50:00Z",
-  "status": "OWNER_ACTION_NOT_YET_REQUIRED",
+  "generatedAt": "2026-10-04T04:10:00Z",
+  "status": "OWNER_ACTION_ACTIVE_SMALL_BATCH",
   "purpose": "One efficient owner session for exact tracked-link generation after autonomous research is complete.",
   "rule": "Never invent URLs. Use the named partner account/tool, search the exact phrase, generate the tracked link, open it manually, then record it.",
   "rows": [
+    {
+      "id": "klook-fiji-future",
+      "partner": "klook",
+      "destination": "Fiji / Mamanuca Islands",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "fiji-malolo-lailai"
+      ],
+      "accountSearchPhrase": "Fiji Mamanuca Islands activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-muscat-oman-future",
+      "partner": "viator",
+      "destination": "Muscat, Oman",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "oman-muscat-aida-beach"
+      ],
+      "accountSearchPhrase": "Muscat Oman tours activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-petra-jordan-future",
+      "partner": "viator",
+      "destination": "Petra, Jordan",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "jordan-petra"
+      ],
+      "accountSearchPhrase": "Petra Jordan tours activities",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
     {
       "id": "tiqets-vienna",
       "partner": "tiqets",
@@ -628,5 +664,10 @@
     }
   ],
   "searchablePlaceMilestone": 316,
-  "note": "Worksheet refreshed at the 316-place quality-first baseline. Generate links only in deliberate owner batches; traffic-gated stay programs remain future unlocks."
+  "note": "Worksheet refreshed at the 316-place quality-first baseline. Generate links only in deliberate owner batches; traffic-gated stay programs remain future unlocks.",
+  "currentOwnerBatch": [
+    "viator-petra-jordan-future",
+    "viator-muscat-oman-future",
+    "klook-fiji-future"
+  ]
 }
