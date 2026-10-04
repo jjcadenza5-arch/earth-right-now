@@ -577,14 +577,7 @@ const current=hp.findIndex(x=>x.id===state.selected?.id);
 const next=hp[(current+1+hp.length)%hp.length];state.watchIndex=Math.max(0,state.watch.findIndex(x=>x.id===next.id));renderHero(next);
 },45000);
 }
-function scrollToId(id){
-const el=document.getElementById(id);if(!el)return;
-const topbar=document.querySelector(".topbar"),offset=(topbar?.getBoundingClientRect().height||0)+8;
-const top=Math.max(0,el.getBoundingClientRect().top+window.scrollY-offset);
-try{window.scrollTo({top,behavior:"smooth"})}catch{window.scrollTo(0,top)}
-if(history?.replaceState)history.replaceState(null,"",location.pathname+location.search+"#"+id);
-setTimeout(()=>{const delta=Math.abs((el.getBoundingClientRect().top)-(offset));if(delta>28){const retry=Math.max(0,el.getBoundingClientRect().top+window.scrollY-offset);window.scrollTo(0,retry)}},450);
-}
+function scrollToId(id){const el=document.getElementById(id);if(!el)return;const h=document.querySelector(".topbar")?.offsetHeight||0;window.scrollTo({top:Math.max(0,el.offsetTop-h-8),behavior:"smooth"})}
 function applyLanguage(){
 document.documentElement.lang=lang;$("#languageSelect").value=lang;
 document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;const value=t(key);if(value!==key)el.textContent=value});
@@ -612,9 +605,9 @@ $("#homeBtn").onclick=()=>scrollToId("home");$("#homeNav").onclick=()=>scrollToI
 $("#guideLauncher").onclick=()=>$("#guidePanel").hidden?openGuide():closeGuide();$("#guideClose").onclick=closeGuide;$("#heroGuide").onclick=openGuide;
 $("#guideForm").onsubmit=e=>{e.preventDefault();const q=$("#guideInput").value.trim();if(q)runGuide(q)};
 document.querySelectorAll("[data-guide]").forEach(b=>b.onclick=()=>{$("#guideInput").value=b.dataset.guide||"";runGuide($("#guideInput").value)});
-$("#watchNav").onclick=()=>{state.category="all";state.mode="auto";renderWatch();scrollToId("watch")};$("#searchNav").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#destinationsNav").onclick=()=>scrollToId("destinations");$("#mapNav").onclick=()=>{renderMapStable();scrollToId("map")};$("#savedNav").onclick=()=>scrollToId("saved");
-$("#mobileWatch").onclick=()=>{state.category="all";state.mode="auto";renderWatch();scrollToId("watch")};$("#mobileExplore").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#mobileMap").onclick=()=>{renderMapStable();scrollToId("map")};$("#mobileSaved").onclick=()=>scrollToId("saved");
-$("#heroWatch").onclick=()=>{state.category="all";state.mode="auto";renderWatch();scrollToId("watch")};$("#heroNext").onclick=()=>scrollToId("editorialCollections");
+$("#watchNav").onclick=()=>scrollToId("watch");$("#searchNav").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#destinationsNav").onclick=()=>scrollToId("destinations");$("#mapNav").onclick=()=>{renderMapStable();scrollToId("map")};$("#savedNav").onclick=()=>scrollToId("saved");
+$("#mobileWatch").onclick=()=>scrollToId("watch");$("#mobileExplore").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#mobileMap").onclick=()=>{renderMapStable();scrollToId("map")};$("#mobileSaved").onclick=()=>scrollToId("saved");
+$("#heroWatch").onclick=()=>scrollToId("watch");$("#heroNext").onclick=()=>scrollToId("editorialCollections");
 $("#refreshSet").onclick=()=>{stopHeroRotation();state.mode="auto";writeSaved("ern-mode","auto");state.setOffset++;renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}startHeroRotation()};
 document.querySelectorAll(".mode-chip").forEach(b=>b.onclick=()=>{stopHeroRotation();state.mode=b.dataset.mode||"auto";writeSaved("ern-mode",state.mode);renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}startHeroRotation()});
 $("#wanderRefresh").onclick=()=>{state.wanderOffset++;renderWander()};
