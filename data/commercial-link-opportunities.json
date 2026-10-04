@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T03:58:00Z",
+  "generatedAt": "2026-10-04T04:15:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3334,8 +3334,12 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Jordan/d744-ttd",
       "publicInventoryEvidence": "Viator currently markets Jordan/Petra tours and experiences.",
-      "nextAction": "Generate one Petra/Jordan Viator tracked link in the owner account and manually verify it before public activation.",
-      "unlockedBySourceAt": "2026-10-04T03:58:00Z"
+      "nextAction": "Owner must open the generated tracked link once and confirm it lands on relevant Petra/Jordan inventory before ERN marks it verified/public-eligible.",
+      "unlockedBySourceAt": "2026-10-04T03:58:00Z",
+      "candidateTrackedUrl": "https://www.viator.com/searchResults/all?text=Petra+Jordan+tours+activities&pid=P00322254&mcid=42383&medium=link",
+      "candidateTrackedUrlPreparedAt": "2026-10-04T04:15:00Z",
+      "candidateTrackedUrlEvidence": "Owner-generated Viator tracked search link supplied in chat on 2026-10-04.",
+      "ownerVerificationRequired": true
     },
     {
       "id": "viator-muscat-oman-future",
