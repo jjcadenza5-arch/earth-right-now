@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-04T03:30:00Z",
+  "goal": "Grow ERN Search/Explore breadth without weakening Watch Earth truth.",
+  "tiers": {
+    "watchEarth": {
+      "allowedTruth": [
+        "LIVE_VIDEO",
+        "EXTERNAL_LIVE"
+      ],
+      "rule": "Continuous/current playback must satisfy the canonical currentness and playback gates. Search-only evidence never upgrades Watch Earth eligibility."
+    },
+    "searchableQuasiLive": {
+      "allowedTruth": [
+        "LIVE_IMAGE"
+      ],
+      "rule": "Official/provider-published webcams, refreshed still cameras and current-image pages may be searchable when provider identity, place identity and freshness evidence are explicit. They must carry featuredHold/watchHold unless separately live-verified."
+    },
+    "recentPicturesResearch": {
+      "publicPromotionRule": "A one-off recent provider photo is not automatically LIVE_IMAGE. Research it, but do not publish it as quasi-live unless it belongs to a regularly refreshed/timestamped current-image surface or ERN adds a separate RECENT_IMAGE visitor label."
+    }
+  },
+  "safeguards": [
+    "Never call a static/recent picture LIVE.",
+    "Never use business value to determine source truth or ranking.",
+    "Group multiple camera angles of one real place under one placeId.",
+    "Prefer official tourism, government, scientific, resort or direct-provider sources.",
+    "Link-only by default unless embed/reuse permission is explicit.",
+    "Pamir remains deferred until a genuinely useful live/quasi-live source appears."
+  ]
+}
