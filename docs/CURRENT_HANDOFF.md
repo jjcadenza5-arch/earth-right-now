@@ -958,3 +958,10 @@ while preserving the startup/performance ceiling and existing product gates.
 - Owner confirmed Google Search Console ownership verification for `https://earthrightnow.app/` was already completed before this checkpoint.
 - Do not ask the owner to repeat property verification.
 - Next owner-side evidence to collect is sitemap/indexing state: sitemap submission/acceptance and URL Inspection results for the homepage, `/places/`, `/discover/`, and a representative destination page.
+
+
+### Owner update — Google indexing setup complete
+- Owner confirmed Google Search Console ownership verification was already complete.
+- Owner also confirmed sitemap submission and URL Inspection checks were already completed.
+- Treat the Google owner-side indexing setup as DONE. Do not ask the owner to repeat verification, sitemap submission, or the initial URL Inspection pass.
+- Continue with autonomous ERN work; only request owner input for genuinely new external actions or when real index/crawl feedback requires a decision.
