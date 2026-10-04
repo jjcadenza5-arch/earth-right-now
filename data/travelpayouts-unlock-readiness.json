@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-04T01:50:00Z",
+  "searchableHealthyPlaces": 311,
+  "strategy": "EVENT_DRIVEN_TRAFFIC_UNLOCK",
+  "currentDecision": "DO_NOT_RECHECK_LOCKED_PROGRAMS_YET",
+  "firstFutureProgram": "trip-com",
+  "signals": {
+    "platformStatusChanged": {
+      "state": "NOT_OBSERVED",
+      "weight": "DIRECT",
+      "meaning": "Travelpayouts explicitly unlocks/approves a program or exposes link-generation controls."
+    },
+    "firstAffiliateConversion": {
+      "state": "NOT_CONFIRMED",
+      "weight": "STRONG",
+      "meaning": "First real non-owner eligible affiliate conversion/revenue."
+    },
+    "sustainedQualifiedOutbound": {
+      "state": "NOT_CONFIRMED",
+      "weight": "STRONG",
+      "meaning": "Travel-option clicks occur repeatedly across multiple destinations from real visitors."
+    },
+    "materialOrganicTraffic": {
+      "state": "NOT_CONFIRMED",
+      "weight": "MEDIUM",
+      "meaning": "Search/AI/direct discovery traffic materially exceeds the soft-launch baseline."
+    },
+    "catalogUtility": {
+      "state": "STRONG",
+      "weight": "CONTEXT",
+      "meaning": "ERN now has 311 healthy searchable places, making broad stay coverage increasingly useful once unlocked."
+    }
+  },
+  "recheckWhen": [
+    "Travelpayouts sends an approval/unlock/status-change signal",
+    "ERN gets its first real affiliate conversion",
+    "Qualified travel-option clicks become sustained across multiple destinations",
+    "Organic discovery traffic materially grows"
+  ],
+  "doNotUse": [
+    "calendar-based repeated account checking",
+    "invented traffic thresholds",
+    "owner/test clicks as evidence of market traction",
+    "opening duplicate direct affiliate accounts merely to bypass a Travelpayouts traffic gate"
+  ],
+  "lockedPriority": [
+    "trip-com",
+    "hotels-com",
+    "booking-com",
+    "agoda",
+    "expedia",
+    "getyourguide",
+    "tripadvisor-experiences",
+    "traveloka",
+    "omio",
+    "12go",
+    "discovercars"
+  ],
+  "meanwhile": [
+    "convert high-fit Viator/Klook/Tiqets/Welcome Pickups destination opportunities",
+    "use currently link-generation-capable utilities only where visitor utility is clear",
+    "grow qualified organic discovery and destination-page depth",
+    "measure genuine travel-planning intent separately from owner testing"
+  ]
+}
