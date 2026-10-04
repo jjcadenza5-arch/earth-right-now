@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:43:00Z",
+  "generatedAt": "2026-10-04T03:58:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -3450,13 +3450,17 @@
       "sourcePage": "https://www.skylinewebcams.com/en/webcam/jordan/maan/amman/petra-visitor-center.html",
       "evidence": "Current SkylineWebcams page identifies a live cam viewing the entrance to Petra archaeological site.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
       "exactTargetType": "STRONG_PROVIDER_LIVE_PAGE",
       "researchEvidence": "Current provider page is live-labeled and separately identifies the Visitor Center entrance; treat as a second view of Petra, not a second fake destination count.",
       "humanCheckHint": "Confirm the Visitor Center feed is currently moving/live. If both Petra views work, keep one canonical Petra searchable place with multiple views.",
       "businessUnlocks": [
         "viator-petra-jordan-future"
-      ]
+      ],
+      "verifiedAt": "2026-10-04T03:58:00Z",
+      "verification": "Owner confirmed current moving/live playback.",
+      "promotedAt": "2026-10-04T03:58:00Z",
+      "promotionNote": "Promoted as owner-verified external live/link-only source."
     },
     {
       "id": "oman-muscat-aida-beach-skyline",
@@ -3467,13 +3471,17 @@
       "sourcePage": "https://www.skylinewebcams.com/en/webcam/oman/muscat/muscat/aida-beach.html",
       "evidence": "Current SkylineWebcams page exposes a live view over Aida Beach in Muscat.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
       "exactTargetType": "STRONG_PROVIDER_LIVE_PAGE",
       "researchEvidence": "Current provider page remains live-labeled and fills an important Middle East scenic-current gap.",
       "humanCheckHint": "Open the Aida Beach page and confirm the feed is currently moving/live before ERN promotion.",
       "businessUnlocks": [
         "viator-muscat-oman-future"
-      ]
+      ],
+      "verifiedAt": "2026-10-04T03:58:00Z",
+      "verification": "Owner confirmed current moving/live playback.",
+      "promotedAt": "2026-10-04T03:58:00Z",
+      "promotionNote": "Promoted as owner-verified external live/link-only source."
     },
     {
       "id": "fiji-plantation-island-resort-live",
@@ -3484,13 +3492,17 @@
       "sourcePage": "https://www.plantationisland.com/webcam/",
       "evidence": "Provider webcam page explicitly says it is a live webcam with real-time views and a play-to-start feed.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
       "exactTargetType": "PROVIDER_LIVE_WEBCAM_PAGE",
       "researchEvidence": "Strong first-party resort source with explicit real-time wording; useful for South Pacific coverage.",
       "humanCheckHint": "Press play and confirm the resort webcam is currently moving/live.",
       "businessUnlocks": [
         "klook-fiji-future"
-      ]
+      ],
+      "verifiedAt": "2026-10-04T03:58:00Z",
+      "verification": "Owner confirmed current moving/live playback.",
+      "promotedAt": "2026-10-04T03:58:00Z",
+      "promotionNote": "Promoted as an external-live source sharing canonical placeId fiji-malolo-lailai; multiple resort views count as one searchable place."
     },
     {
       "id": "fiji-lomani-island-resort-live",
@@ -3501,13 +3513,17 @@
       "sourcePage": "https://www.lomaniisland.com/webcam/",
       "evidence": "Provider webcam page labels the embedded view LIVE FEED and describes it as showing what is happening at the resort.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SOURCE_REGISTRY",
       "exactTargetType": "PROVIDER_LIVE_WEBCAM_PAGE",
       "researchEvidence": "First-party resort live-feed page; likely same island as Plantation Island and therefore should become an alternate view, not fake place inflation, if both verify.",
       "humanCheckHint": "Confirm the embedded LIVE FEED is currently moving/live. If both Malolo Lailai resort cameras work, group them under one island/place where appropriate.",
       "businessUnlocks": [
         "klook-fiji-future"
-      ]
+      ],
+      "verifiedAt": "2026-10-04T03:58:00Z",
+      "verification": "Owner confirmed current moving/live playback.",
+      "promotedAt": "2026-10-04T03:58:00Z",
+      "promotionNote": "Promoted as an external-live source sharing canonical placeId fiji-malolo-lailai; multiple resort views count as one searchable place."
     }
   ],
   "notes": [
