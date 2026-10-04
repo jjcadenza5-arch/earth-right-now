@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T02:02:00Z",
-  "currentHealthyDistinctPlaces": 313,
+  "generatedAt": "2026-10-04T02:45:00Z",
+  "currentHealthyDistinctPlaces": 316,
   "targetHealthyDistinctPlaces": [
-    300,
-    350
+    350,
+    400
   ],
   "remainingToMinimum": 0,
   "remainingToStretch": 37,
@@ -196,5 +196,5 @@
     "watchEarthEligible": false,
     "labelingRequired": true
   },
-  "note": "311-place quality-first queue. Human checks now focus on true-live upgrades, high-value geographic gaps, or strong commercially useful destinations; quasi-live/search expansion does not depend on raw-count targets."
+  "note": "Quality-led research only. Quasi-live/current-image sources may be promoted to Search/Explore when timestamps/freshness are reliable; Watch Earth remains stricter."
 }
