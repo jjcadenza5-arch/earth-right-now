@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T01:50:00Z",
+  "generatedAt": "2026-10-04T01:58:00Z",
   "healthyPlaceBaseline": 311,
   "placesWithCommercialPath": 274,
   "intentionallyUncoveredCount": 37,
@@ -262,6 +262,13 @@
       "placeId": "nz-foxton-beach",
       "title": "Foxton Beach — Manawatū Coast",
       "country": "New Zealand",
+      "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
+      "commercialState": "DEFER_NO_FORCED_MONETIZATION"
+    },
+    {
+      "placeId": "kekesteto-matra",
+      "title": "Kékestető — Mátra Mountains",
+      "country": "Hungary",
       "reason": "LOWER_COMMERCIAL_INTENT_DEFER",
       "commercialState": "DEFER_NO_FORCED_MONETIZATION"
     }
