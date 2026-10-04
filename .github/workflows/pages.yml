@@ -49,6 +49,7 @@ on:
       - "scripts/distribution-readiness.mjs"
       - "scripts/seo-indexing-audit.mjs"
       - "scripts/ai-search-readiness.mjs"
+      - "scripts/search-metadata-audit.mjs"
       - "llms.txt"
       - "how-ern-works.html"
       - "source-policy.html"
