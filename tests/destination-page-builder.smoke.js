@@ -47,3 +47,10 @@ assert.match(builder,/navigator\.clipboard/,"Collection sharing should retain a 
 
 assert.match(builder,/search-supplemental\.json/,"crawlable destination build must include the lazy supplemental Search catalog");
 assert.match(builder,/const sources=\[\.\.\.coreSources,\.\.\.searchSupplemental\]/,"supplemental Search places should gain destination pages without changing startup catalog loading");
+
+assert.match(builder,/ERN source provider/,"structured destination facts should expose provider");
+assert.match(builder,/ERN playback mode/,"structured destination facts should expose playback mode");
+assert.match(builder,/ERN last checked/,"structured destination facts should expose reliable verification time when available");
+assert.match(builder,/relatedLink/,"related destination links should also be machine-readable");
+assert.match(builder,/place-search-aliases\.json/,"crawlable destination pages must consume multilingual alias sidecar");
+console.log("Destination understanding enrichment contract passed");
