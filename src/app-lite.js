@@ -564,7 +564,7 @@ function move(d,record=true){if(!state.watch.length)return;state.watchIndex=(sta
 function updateJourneyButton(){$("#journeyToggle").textContent=state.journeyTimer?t("pauseJourney"):t("playJourney")}
 function startJourney(){if(state.journeyTimer)return;state.journeyTimer=setInterval(()=>move(1,false),30000);updateJourneyButton()}
 function stopJourney(){if(state.journeyTimer){clearInterval(state.journeyTimer);state.journeyTimer=null}updateJourneyButton();}
-function scrollToId(id){const el=document.getElementById(id);if(!el)return;const h=document.querySelector(".topbar")?.offsetHeight||0;window.scrollTo({top:Math.max(0,el.offsetTop-h-8),behavior:"smooth"})}
+function scrollToId(id){const el=document.getElementById(id);if(!el)return;const h=document.querySelector(".topbar")?.getBoundingClientRect().height||0;const top=window.scrollY+el.getBoundingClientRect().top-h-8;try{history.replaceState(null,"",location.pathname+location.search+"#"+id)}catch{}window.scrollTo({top:Math.max(0,top),behavior:"smooth"});setTimeout(()=>{const y=window.scrollY+el.getBoundingClientRect().top-h-8;if(Math.abs(y-window.scrollY)>12)window.scrollTo({top:Math.max(0,y),behavior:"auto"})},420)}
 function applyLanguage(){
 document.documentElement.lang=lang;$("#languageSelect").value=lang;
 document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;const value=t(key);if(value!==key)el.textContent=value});
