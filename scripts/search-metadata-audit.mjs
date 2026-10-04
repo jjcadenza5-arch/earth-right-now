@@ -6,7 +6,7 @@ const core=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
 const supplemental=JSON.parse(fs.readFileSync("data/search-supplemental.json","utf8"));
 const aliasDoc=JSON.parse(fs.readFileSync("data/place-search-aliases.json","utf8"));
 const placeAliases=aliasDoc?.places&&typeof aliasDoc.places==="object"?aliasDoc.places:{};
-const rows=[...core,...supplemental].map(s=>({...s,aliases:[...(s.aliases||[]),...(placeAliases[s.placeId||s.id]||[])].filter((x,i,a)=>x&&a.indexOf(x)===i)}));
+const rows=[...core,...supplemental].map(s=>{const seen=new Set();return{...s,aliases:[...(s.aliases||[]),...(placeAliases[s.placeId||s.id]||[])].filter(x=>{const n=foldEarthSearchText(x);if(!n||seen.has(n))return false;seen.add(n);return true})}});
 const now=new Date();
 const norm=foldEarthSearchText;
 const issues=[],aliasChecks=[];
