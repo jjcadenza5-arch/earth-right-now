@@ -21,6 +21,7 @@ for(const phrase of ["Quality over quantity","Editorial independence","Useful co
 const faq=read("faq.html");must(/FAQPage/.test(faq),"FAQ_STRUCTURED_DATA_MISSING");
 const llms=read("llms.txt");
 for(const u of ["/places/","/discover/","/how-ern-works.html","/source-policy.html","/editorial-principles.html","/faq.html","/sitemap.xml"])must(llms.includes("https://earthrightnow.app"+u),"LLMS_GUIDE_LINK_MISSING",{url:u});
+for(const phrase of ["Destination understanding","local-language aliases","Related destinations","do not change source health"])must(llms.includes(phrase),"LLMS_DESTINATION_CONTEXT_MISSING",{phrase});
 
 const placesRoot=path.join(root,"places");
 const dirs=fs.readdirSync(placesRoot,{withFileTypes:true}).filter(x=>x.isDirectory()).map(x=>x.name);
