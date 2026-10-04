@@ -35,6 +35,8 @@ for(const d of dirs){
     placeSchema:/"@type":"Place"/.test(html),
     citation:/"citation":\[/.test(html),
     provider:/Provider:/.test(html),
+    structuredProvider:/ERN source provider/.test(html),
+    structuredPlayback:/ERN playback mode/.test(html),
     sourceType:/Source type:/.test(html),
     playback:/Playback:/.test(html),
     checkTime:/ERN checked <time datetime="/.test(html)||/Outside published live hours/.test(html),
@@ -49,7 +51,24 @@ for(const d of dirs){
   if(representative.length<6)representative.push({rel,...checks});
 }
 must(indexable>0,"NO_INDEXABLE_DESTINATIONS");
+must(exists("data/place-search-aliases.json"),"PLACE_ALIAS_SIDECAR_MISSING");
+let aliasPlacesChecked=0;
+if(exists("data/place-search-aliases.json")){
+  const aliasDoc=JSON.parse(read("data/place-search-aliases.json"));
+  const placeAliases=aliasDoc?.places&&typeof aliasDoc.places==="object"?aliasDoc.places:{};
+  for(const [placeId,aliases] of Object.entries(placeAliases)){
+    const rel="places/"+placeId.replace(/[^a-zA-Z0-9_-]/g,"-")+"/index.html";
+    if(!exists(rel))continue;
+    const html=read(rel);
+    if(!/<meta name="robots" content="index,follow"/i.test(html))continue;
+    aliasPlacesChecked++;
+    must(/"alternateName":\[/.test(html),"DESTINATION_ALTERNATE_NAME_SCHEMA_MISSING",{rel,placeId});
+    const visibleAliases=(Array.isArray(aliases)?aliases:[]).filter(a=>a&&html.includes(String(a).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")));
+    must(visibleAliases.length>0,"DESTINATION_VISIBLE_ALIAS_MISSING",{rel,placeId});
+  }
+}
+must(aliasPlacesChecked>=10,"PLACE_ALIAS_INDEXABLE_COVERAGE_TOO_SMALL",{aliasPlacesChecked});
 const sitemap=read("sitemap.xml");
 for(const rel of ["how-ern-works.html","source-policy.html","editorial-principles.html","faq.html"])must(sitemap.includes("https://earthrightnow.app/"+rel),"AI_GUIDE_NOT_IN_SITEMAP",{rel});
-const report={schemaVersion:1,checkedAt:new Date().toISOString(),ready:issues.length===0,indexableDestinations:indexable,representative,issues,warnings,boundaries:{publicGenerativeGuideActivated:false,publicNowMomentsActivated:false,privatePathsExposed:false,llmsTxtAuthoritative:false}};
+const report={schemaVersion:1,checkedAt:new Date().toISOString(),ready:issues.length===0,indexableDestinations:indexable,aliasPlacesChecked,representative,issues,warnings,boundaries:{publicGenerativeGuideActivated:false,publicNowMomentsActivated:false,privatePathsExposed:false,llmsTxtAuthoritative:false}};
 console.log(JSON.stringify(report,null,2));if(!report.ready)process.exitCode=1;
