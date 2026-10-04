@@ -198,7 +198,9 @@ return"radial-gradient(circle at 65% 24%,rgba(155,220,190,.62),transparent 20%),
 function posterMarkup(s){const img=cleanUrl(s.thumbnailUrl);return img?`<img src="${img.replace(/"/g,"&quot;")}" alt="" loading="lazy">`:""}
 function scenicPoster(s){
 const c=(cats(s)+" "+(s?.title||"")).toLowerCase(),wrap=document.createElement("div");wrap.className="scenic-poster";
-if(/volcano|crater|lava/.test(c))wrap.dataset.scene="volcano";
+if(/science|research|engineering|infrastructure|observatory/.test(c))wrap.dataset.scene="science";
+else if(/farm|garden|seasonal/.test(c))wrap.dataset.scene="farm";
+else if(/volcano|crater|lava/.test(c))wrap.dataset.scene="volcano";
 else if(/snow|ski|glacier|arctic/.test(c))wrap.dataset.scene="snow";
 else if(/island|lagoon/.test(c))wrap.dataset.scene="island";
 else if(/wildlife|animal|zoo|aquarium/.test(c))wrap.dataset.scene="wildlife";
