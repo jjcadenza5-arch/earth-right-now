@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T16:45:00Z",
+  "generatedAt": "2026-10-04T02:05:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -94,8 +94,8 @@
     ],
     "currentCommercialOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 171,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 5,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 178,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 7,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
     "availableUtilityExpansionPlan": "data/available-program-expansion-plan.json",
@@ -104,9 +104,9 @@
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
-    "currentCommercialOpportunityCount": 194,
-    "healthyPlacesWithCommercialPath": 271,
-    "healthyPlacesWithoutCommercialPath": 37,
+    "currentCommercialOpportunityCount": 203,
+    "healthyPlacesWithCommercialPath": 275,
+    "healthyPlacesWithoutCommercialPath": 38,
     "verifiedLinkHealthyPlaces": 19,
     "travelpayoutsTrafficGatedProgramsObserved": true,
     "travelpayoutsTrafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
@@ -147,12 +147,12 @@
     "nextPreferredUnlock": "trip-com",
     "nextPreferredUnlockReason": "Trip.com remains the highest-value future unlock because one program could add stay plus transport/activity utility across many ERN destinations; current account state is visible but not unlocked.",
     "currentSearchableCountries": 69,
-    "sourceRuntimeCatalogChars": 286471,
+    "sourceRuntimeCatalogChars": 292196,
     "sourceExpansionCandidateStates": {
       "PROMOTED_TO_SOURCE_REGISTRY": 58,
-      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 143,
+      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 148,
       "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
-      "HUMAN_PLAYBACK_REQUIRED": 9
+      "HUMAN_PLAYBACK_REQUIRED": 10
     },
     "ownerAccountLinkGenerationAvailablePrograms": [
       "yesim",
@@ -200,7 +200,8 @@
     "trafficUnlockStrategy": "Use link-generation-available programs selectively now; grow traffic and visitor utility; recheck gated programs only after material traffic or account-status change.",
     "accommodationGap": "Still unresolved: major accommodation partners visible in Travelpayouts remain traffic-gated/not active.",
     "tripComStatus": "VISIBLE_IN_OWNER_TRAVELPAYOUTS_CATALOG_BUT_NOT_UNLOCKED",
-    "tripComNextAction": "WAIT_FOR_TRAFFIC_OR_PLATFORM_STATUS_CHANGE"
+    "tripComNextAction": "WAIT_FOR_EVENT_DRIVEN_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
+    "travelpayoutsUnlockReadiness": "data/travelpayouts-unlock-readiness.json"
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -247,51 +248,27 @@
   "humanOnlyRemaining": [
     {
       "id": "next-exact-link-batch",
-      "action": "When convenient, generate the bundled exact-link batch from data/owner-commercial-action-packet.json rather than handling destinations one-by-one.",
+      "action": "When convenient, generate the bundled exact-link batch from the owner action packet rather than handling destinations one-by-one.",
       "priority": "P2",
       "blocksPublicERN": false,
       "blocksCurrentOffers": false,
       "blocksOnlyNewPlacements": true
     },
     {
-      "id": "travelpayouts-program-unlock-recheck",
-      "action": "Recheck visible locked Travelpayouts programs only after material ERN traffic/conversion growth or an explicit platform status change",
-      "priority": "DEFERRED_UNTIL_TRIGGER",
-      "blocksPublicERN": false,
-      "blocksCurrentOffers": false,
-      "blocksOnlyFuturePartnerExpansion": true
-    },
-    {
       "id": "utility-links-batch",
-      "action": "When ERN autonomous prep is complete, generate the bundled Airalo / Go City / Kiwitaxi / Radical Storage / Aviasales / KKday links from data/owner-action-packet.json",
+      "action": "Later, generate a bundled small set of currently link-generation-capable utilities only where visitor value is clear.",
       "priority": "BATCH_LATER",
       "blocksPublicERN": false,
       "blocksCurrentOffers": false,
       "blocksOnlyNewPlacements": true
     },
     {
-      "id": "future-program-unlocks",
-      "action": "Do not repeatedly check locked Travelpayouts programs. Revisit only when Travelpayouts changes access, ERN traffic materially increases, or owner receives an unlock invitation.",
-      "priority": "LATER_TRAFFIC_TRIGGERED",
+      "id": "traffic-gated-program-recheck",
+      "action": "Recheck Trip.com and other locked Travelpayouts programs only after a platform status change, first affiliate conversion, sustained qualified outbound activity, or material organic traffic growth.",
+      "priority": "EVENT_DRIVEN_LATER",
       "blocksPublicERN": false,
       "blocksCurrentOffers": false,
       "blocksOnlyFuturePrograms": true
-    },
-    {
-      "id": "travelpayouts-unlock-recheck",
-      "action": "Recheck Trip.com and other locked Travelpayouts programs only after a material traffic/account-status change or an explicit platform notification",
-      "priority": "LATER_TRIGGERED",
-      "blocksPublicERN": false,
-      "blocksCurrentOffers": false,
-      "blocksOnlyNewPlacements": true
-    },
-    {
-      "id": "traffic-gated-program-recheck",
-      "action": "Recheck Trip.com, Hotels.com, Expedia, Agoda and other gated programs only after meaningful ERN traffic growth or an obvious Travelpayouts status change",
-      "priority": "LATER",
-      "blocksPublicERN": false,
-      "blocksCurrentOffers": false,
-      "blocksOnlyNewPlacements": true
     }
   ],
   "safeguards": [
@@ -305,14 +282,14 @@
     "Do not repeatedly ask owner to recheck locked Travelpayouts programs; recheck only on meaningful traffic/account-state change",
     "Locked/traffic-gated programs may not be treated as active or available"
   ],
-  "currentHealthySearchablePlaces": 308,
+  "currentHealthySearchablePlaces": 313,
   "releaseHealth": {
-    "pagesDeployment": "SUCCESS_2026-10-03T14:53Z",
-    "operationsCheck": "SUCCESS_2026-10-03T14:53Z",
+    "pagesDeployment": "SUCCESS_2026-10-04T01:46Z",
+    "operationsCheck": "SUCCESS_AFTER_RECOMPACT_2026-10-04T01:46Z",
     "sourceCatalogRuntimeEvidence": "RIGHTS_BASIS_AND_FRESHNESS_EVIDENCE_RETAINED",
     "verboseSourceEvidenceSidecar": "data/source-evidence.json",
     "sourceCatalogArchitecture": "MINIFIED_RUNTIME_CATALOG_PLUS_VERBOSE_EVIDENCE_SIDECAR",
-    "sourceCatalogHeadroom": "RESTORED_AFTER_308_PLACE_QUALITY_BATCH",
-    "lastKnownGreenBaseline": "PAGES_AND_OPERATIONS_GREEN_AFTER_283_PLACE_RECONCILIATION"
+    "sourceCatalogHeadroom": "RESTORED_AT_292196_CHARS_AFTER_313_PLACE_BATCH",
+    "lastKnownGreenBaseline": "PAGES_AND_OPERATIONS_GREEN_AT_313_SEARCHABLE_PLACES"
   }
 }
