@@ -93,6 +93,7 @@ const releaseTests=[
   "guide-ai-deployment-readiness.smoke.js",
   "destination-page-builder.smoke.js",
   "public-trust-discovery.smoke.js",
+  "navigation-controls.smoke.js",
   "distribution-readiness.smoke.js",
   "local-directory-status.smoke.js",
   "travel-offer-expiry.smoke.js",
