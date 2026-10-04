@@ -31,10 +31,12 @@ const commonAlias=s=>(s.aliases||[]).find(a=>a&&a.length>=3&&!/^(st|mt)\.?\s/i.t
 const seoName=s=>s.seoName||s.city||(s.region&&!/[\/,]/.test(s.region)&&String(s.title||"").toLowerCase().startsWith(String(s.region).toLowerCase())?s.region:"")||commonAlias(s)||String(s.title||"").split(" — ")[0]||s.title;
 const sourceKind=s=>s.truth==="LIVE_VIDEO"?"live video":s.truth==="LIVE_IMAGE"?"current image":s.truth==="EXTERNAL_LIVE"?"official external live source":s.truth==="PARTNER"?"partner source":"reference source";
 
-const latestDate=items=>{
+const latestTimestamp=items=>{
   const times=items.map(s=>Date.parse(s.lastSuccessfulCheck||s.checkedAt||"")).filter(Number.isFinite).sort((a,b)=>b-a);
-  return times[0]?new Date(times[0]).toISOString().slice(0,10):null;
+  return times[0]?new Date(times[0]).toISOString():null;
 };
+const latestDate=items=>latestTimestamp(items)?.slice(0,10)||null;
+const playbackMode=s=>s.playback==="EMBED"?"embedded in ERN":s.playback==="EXTERNAL"?"provider-hosted external live source":s.playback==="IMAGE_REFRESH"?"refreshed current image":"provider source";
 
 const map=new Map();
 for(const s of sources){
@@ -76,7 +78,8 @@ for(const [id,items] of map){
       :("ERN currently has provider source information for "+title+", but no active current-source verification is available right now. Open the provider source directly or check back after ERN revalidates it.").slice(0,220);
   const url=base+"places/"+encodeURIComponent(id)+"/";
   const lat=Number(preferred.lat),lon=Number(preferred.lon);
-  const lastmod=latestDate(items);
+  const lastChecked=latestTimestamp(items);
+  const lastmod=lastChecked?.slice(0,10)||null;
   const placeData={
     "@type":"Place",
     "@id":url+"#place",
@@ -89,7 +92,10 @@ for(const [id,items] of map){
     ...(city||state||preferred.region||preferred.country?{"address":{"@type":"PostalAddress",...(city?{"addressLocality":city}:{}),...(state||preferred.region?{"addressRegion":state||preferred.region}:{}),...(preferred.country?{"addressCountry":preferred.country}:{})}}:{}),
     "additionalProperty":[
       {"@type":"PropertyValue","name":"ERN source status","value":currentItems.length?"Current verified view available":scheduledClosedItems.length?"Verified source outside published live hours":"Reference only / recheck due"},
-      {"@type":"PropertyValue","name":"ERN source type","value":sourceKind(preferred)}
+      {"@type":"PropertyValue","name":"ERN source type","value":sourceKind(preferred)},
+      {"@type":"PropertyValue","name":"ERN source provider","value":preferred.provider||"Provider"},
+      {"@type":"PropertyValue","name":"ERN playback mode","value":playbackMode(preferred)},
+      ...(lastChecked?[{"@type":"PropertyValue","name":"ERN last checked","value":lastChecked}]:[])
     ]
   };
   if(Number.isFinite(lat)&&Number.isFinite(lon))placeData.geo={"@type":"GeoCoordinates","latitude":lat,"longitude":lon};
@@ -121,6 +127,7 @@ for(const [id,items] of map){
     .filter(x=>x.score>0)
     .sort((a,b)=>b.score-a.score||a.title.localeCompare(b.title))
     .slice(0,6);
+  if(related.length)graph["@graph"][0].relatedLink=related.map(x=>base+"places/"+encodeURIComponent(x.id)+"/");
   const relatedHtml=related.length
     ?'<h2>Explore related places</h2><p class="ern-note">Chosen by place/category similarity and current ERN availability — never by payment.</p><ul>'+related.map(x=>'<li><a href="'+base+'places/'+encodeURIComponent(x.id)+'/">'+esc(x.title)+'</a>'+(x.country?' — '+esc(x.country):'')+'</li>').join("")+'</ul>'
     :"";
