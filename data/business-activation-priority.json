@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T02:45:00Z",
+  "generatedAt": "2026-10-04T03:05:00Z",
   "principle": "Convert a small high-value batch of exact links from programs already available before adding traffic-gated partners.",
   "topExactLinkBatch": [
     {
@@ -18,7 +18,10 @@
         "tvoroyri-port"
       ],
       "priority": "P1",
-      "nextAction": "Generate one Faroe Islands destination-level Viator tracked link and use it only where the visitor has chosen Faroe trip planning; do not attach it to unrelated cameras."
+      "nextAction": "Generate one Faroe Islands destination-level Viator tracked link and use it only where the visitor has chosen Faroe trip planning; do not attach it to unrelated cameras.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Faroe-Islands/d37756-ttd",
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 2,
@@ -38,7 +41,10 @@
         "innsbruck-swarovski-wattens"
       ],
       "priority": "P1",
-      "nextAction": "Generate one Innsbruck/Tyrol destination-level Viator link and reuse it across appropriate places without duplicate commercial density."
+      "nextAction": "Generate one Innsbruck/Tyrol destination-level Viator link and reuse it across appropriate places without duplicate commercial density.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": null,
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 3,
@@ -58,7 +64,10 @@
         "madeira-porto-santo"
       ],
       "priority": "P1",
-      "nextAction": "Owner only needs to open and confirm the prepared direct Viator URL when ERN batches exact-link verification; one island-level link should serve all nine Madeira places."
+      "nextAction": "Owner only needs to open and confirm the prepared direct Viator URL when ERN batches exact-link verification; one island-level link should serve all nine Madeira places.",
+      "preparedTrackedUrlCandidate": "https://www.viator.com/en-GB/Madeira/d5392-ttd?pid=P00322254&mcid=42383&medium=link",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Madeira/d5392-ttd",
+      "readiness": "PREPARED_NOT_OWNER_VERIFIED"
     },
     {
       "rank": 4,
@@ -74,7 +83,10 @@
         "panama-canal-agua-clara-locks"
       ],
       "priority": "P1",
-      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Panama-City/Day-Tour-Panama-Canal-Railway-and-San-Lorenzo-Fort-in-Colon/d950-71405P14",
+      "readiness": "PUBLIC_INVENTORY_CONFIRMED_DESTINATION_LINK_STILL_REQUIRED"
     },
     {
       "rank": 5,
@@ -89,7 +101,10 @@
         "peru-chachani-volcano"
       ],
       "priority": "P1",
-      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Arequipa/Full-Day-Tour-to-Colca-from-Arequipa/d5020-248584P4",
+      "readiness": "PUBLIC_INVENTORY_CONFIRMED_DESTINATION_LINK_STILL_REQUIRED"
     },
     {
       "rank": 6,
@@ -104,7 +119,10 @@
         "rarotonga-international-airport"
       ],
       "priority": "P1",
-      "nextAction": "Generate one Cook Islands or Rarotonga/Aitutaki destination-level Viator partner link and verify it manually; reuse it across relevant Cook Islands places instead of duplicating commercial density."
+      "nextAction": "Generate one Cook Islands or Rarotonga/Aitutaki destination-level Viator partner link and verify it manually; reuse it across relevant Cook Islands places instead of duplicating commercial density.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Cook-Islands/d4788-ttd",
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 7,
@@ -119,7 +137,10 @@
         "istanbul-anadolu-hisari"
       ],
       "priority": "P1",
-      "nextAction": "Generate one Istanbul destination-level Viator tracked link and verify it manually; keep it downstream from Earth discovery."
+      "nextAction": "Generate one Istanbul destination-level Viator tracked link and verify it manually; keep it downstream from Earth discovery.",
+      "preparedTrackedUrlCandidate": "https://www.viator.com/Istanbul/d585-ttd?pid=P00322254&mcid=42383&medium=link",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Istanbul/d585-ttd",
+      "readiness": "PREPARED_NOT_OWNER_VERIFIED"
     },
     {
       "rank": 8,
@@ -134,7 +155,10 @@
         "sanparks-talamati"
       ],
       "priority": "P1",
-      "nextAction": "generate one Kruger destination-level Viator partner link and manually verify it; reuse it across verified Kruger places without duplicate commercial density."
+      "nextAction": "generate one Kruger destination-level Viator partner link and manually verify it; reuse it across verified Kruger places without duplicate commercial density.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/tours/Kruger-National-Park/5-Night-Kruger-Park-Golf-Safari/d776-112124P5",
+      "readiness": "PUBLIC_INVENTORY_CONFIRMED_DESTINATION_LINK_STILL_REQUIRED"
     },
     {
       "rank": 9,
@@ -149,7 +173,10 @@
         "volcan-tajogaite"
       ],
       "priority": "P1",
-      "nextAction": "Search La Palma island inventory and use one island-level link across both places if useful."
+      "nextAction": "Search La Palma island inventory and use one island-level link across both places if useful.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": null,
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 10,
@@ -164,7 +191,10 @@
         "reunion-piton-fournaise"
       ],
       "priority": "P1",
-      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Reunion-Island/d4395-ttd",
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     }
   ],
   "reserveExactLinkBatch": [
@@ -180,7 +210,10 @@
         "aruba-eagle-beach"
       ],
       "priority": "P1",
-      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Aruba/d28-ttd",
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 12,
@@ -194,7 +227,10 @@
         "wengen-bellevue"
       ],
       "priority": "P1",
-      "nextAction": "Search Interlaken/Bernese Alps inventory; use one regional link only if it is directly useful for these places."
+      "nextAction": "Search Interlaken/Bernese Alps inventory; use one regional link only if it is directly useful for these places.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": null,
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 13,
@@ -207,7 +243,10 @@
         "brighton-sa"
       ],
       "priority": "P1",
-      "nextAction": "Search Adelaide/Glenelg coastal activities and generate one regional link if useful."
+      "nextAction": "Search Adelaide/Glenelg coastal activities and generate one regional link if useful.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": null,
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 14,
@@ -220,7 +259,10 @@
         "nz-lyttelton-heads"
       ],
       "priority": "P1",
-      "nextAction": "Generate one Akaroa/Banks Peninsula Viator tracked link and verify it can appropriately serve both ERN places."
+      "nextAction": "Generate one Akaroa/Banks Peninsula Viator tracked link and verify it can appropriately serve both ERN places.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Akaroa/Akaroa-Shore-Excursion-Banks-Peninsula-and-Christchurch-City-Sights/d23350-2950PRTCHCCLT65CS",
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 15,
@@ -233,7 +275,10 @@
         "radebeul-wackerbarth"
       ],
       "priority": "P1",
-      "nextAction": "Generate one Dresden destination-level Viator link; reuse it across the two related ERN places if it cleanly serves both."
+      "nextAction": "Generate one Dresden destination-level Viator link; reuse it across the two related ERN places if it cleanly serves both.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Dresden/d22375-ttd",
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 16,
@@ -246,7 +291,10 @@
         "mauna-loa-volcano"
       ],
       "priority": "P1",
-      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation."
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Big-Island-of-Hawaii/d669-ttd",
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 17,
@@ -259,7 +307,10 @@
         "heidelberg-konigstuhl"
       ],
       "priority": "P1",
-      "nextAction": "Generate one Heidelberg destination-level Viator partner link and manually verify it before public activation."
+      "nextAction": "Generate one Heidelberg destination-level Viator partner link and manually verify it before public activation.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Heidelberg/d24030-ttd",
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 18,
@@ -272,7 +323,10 @@
         "karakol-ski-base"
       ],
       "priority": "P1",
-      "nextAction": "Generate one Issyk-Kul region Viator tracked link only if it cleanly serves the verified Balykchy/Karakol places; verify manually before public activation."
+      "nextAction": "Generate one Issyk-Kul region Viator tracked link only if it cleanly serves the verified Balykchy/Karakol places; verify manually before public activation.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Bishkek/Explore-Issyk-Kul-Small-Group-Day-Trip-from-Bishkek/d50202-486587P4",
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 19,
@@ -285,7 +339,10 @@
         "sanparks-talamati"
       ],
       "priority": "P1",
-      "nextAction": "Reuse or generate one clean Kruger National Park Viator destination link and verify it manually; do not create separate commercial offers for each camp camera."
+      "nextAction": "Reuse or generate one clean Kruger National Park Viator destination link and verify it manually; do not create separate commercial offers for each camp camera.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": null,
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     },
     {
       "rank": 20,
@@ -298,7 +355,10 @@
         "lerwick-town-hall"
       ],
       "priority": "P1",
-      "nextAction": "Source gap cleared by official searchable current-image promotion. Generate and manually verify one destination-level tracked link before any public placement."
+      "nextAction": "Source gap cleared by official searchable current-image promotion. Generate and manually verify one destination-level tracked link before any public placement.",
+      "preparedTrackedUrlCandidate": null,
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Shetland-Islands/d33624-ttd",
+      "readiness": "ACCOUNT_SEARCH_REQUIRED"
     }
   ],
   "futureTrafficUnlocks": [
@@ -323,5 +383,6 @@
     "manualOwnerVerificationRequired": true,
     "noCommissionRanking": true,
     "noDuplicateCommercialDensity": true
-  }
+  },
+  "ownerActionRule": "Do not request owner verification until several prepared candidates form one coherent batch; current autonomous research should continue first."
 }
