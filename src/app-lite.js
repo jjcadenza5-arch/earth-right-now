@@ -159,6 +159,12 @@ const sorted=[...pool].sort((a,b)=>(baseScore(b)+profile.boost(b))-(baseScore(a)
 const setLimit=adaptiveWatchLimit(sorted,20);
 const out=[],countries=new Map(),providers=new Map(),places=new Map();
 const reserveInside=sorted.filter(currentInside);
+const visualInside=reserveInside.filter(s=>cleanUrl(s.thumbnailUrl));
+for(const s of visualInside){
+if(out.length>=Math.min(4,setLimit))break;const place=s.placeId||s.id,provider=s.provider||"",country=s.country||"";
+if(places.has(place)||(providers.get(provider)||0)>=2||(countries.get(country)||0)>=1)continue;
+out.push(s);places.set(place,1);countries.set(country,1);providers.set(provider,(providers.get(provider)||0)+1)
+}
 for(const s of reserveInside){
 if(out.length>=Math.min(5,setLimit))break;const place=s.placeId||s.id,provider=s.provider||"",country=s.country||"";
 if(places.has(place)||(providers.get(provider)||0)>=2||(countries.get(country)||0)>=1)continue;
