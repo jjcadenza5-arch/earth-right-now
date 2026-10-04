@@ -12,3 +12,5 @@ section[id]{scroll-margin-top:86px}
 @media(max-width:700px){section[id]{scroll-margin-top:68px}.mobile-dock{bottom:max(8px,env(safe-area-inset-bottom));box-shadow:0 10px 30px rgba(2,24,21,.28)}.mobile-dock button.active{background:rgba(255,255,255,.08)}}
 
 .hero-actions a{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}.hero-actions a.primary{background:#238df2;color:#fff;border:1px solid rgba(255,255,255,.26);border-radius:999px;font-weight:800;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+
+.mobile-dock a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:42px;color:inherit;text-decoration:none;border-radius:999px}.mobile-dock a.active{background:rgba(255,255,255,.08)}.hero-actions a.quiet-hero{text-decoration:none}.topbar nav a.icon-nav{display:inline-flex;align-items:center;justify-content:center}
