@@ -1,0 +1,13 @@
+import fs from "node:fs";
+const aliases=JSON.parse(fs.readFileSync(new URL("../data/place-search-aliases.json",import.meta.url),"utf8"));
+console.assert(aliases.schemaVersion===1,"alias schema version");
+console.assert(Array.isArray(aliases.places["bangkok-sukhumvit-road"]),"Bangkok aliases present");
+console.assert(aliases.places["bangkok-sukhumvit-road"].includes("กรุงเทพ"),"Thai Bangkok alias present");
+console.assert(aliases.places["kyoto-nishiki-market"].includes("錦市場"),"Japanese Nishiki alias present");
+console.assert(aliases.places["jordan-petra"].includes("البتراء"),"Arabic Petra alias present");
+const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
+console.assert(app.includes("place-search-aliases.json"),"lazy alias file wired into visitor search");
+console.assert(app.includes("state.searchAliases?.[s.placeId||s.id]"),"place aliases included in search document");
+const builder=fs.readFileSync(new URL("../scripts/build-destination-pages.mjs",import.meta.url),"utf8");
+console.assert(builder.includes("place-search-aliases.json"),"destination builder consumes alias sidecar");
+console.log("place search aliases smoke ok");
