@@ -412,7 +412,7 @@ function localPlaceSignals(s){const hay=[s.title,s.region,s.story,...(s.categori
 function renderLocalEarth(){const picks=state.sources.filter(guideEligible).map(s=>({s,...localPlaceSignals(s)})).filter(x=>x.worth).sort((a,b)=>b.score-a.score||baseScore(b.s)-baseScore(a.s)).slice(0,6).map(x=>x.s);$("#localEarthGrid").replaceChildren(...picks.map(wanderCard));$("#localEarth").hidden=!picks.length}
 function wanderCard(s){
 const b=document.createElement("button");b.type="button";b.className="wander-card";
-const v=document.createElement("span");v.className="wander-visual";v.style.background=generatedBackground(s);const img=cleanUrl(s.thumbnailUrl);if(img){const el=document.createElement("img");el.src=img;el.alt="";el.loading="lazy";v.append(el)}
+const v=document.createElement("span");v.className="wander-visual";v.style.background=generatedBackground(s);const img=cleanUrl(s.thumbnailUrl);v.dataset.visualKind=img?"source":"illustrative";if(img){const el=document.createElement("img");el.src=img;el.alt="";el.loading="lazy";installVisualFallback(el,v,s);v.append(el)}else v.append(scenicPoster(s));
 const copy=document.createElement("span");copy.className="wander-copy";const k=document.createElement("small");k.textContent=[truthLabel(s),localTime(s)].filter(Boolean).join(" · ");const strong=document.createElement("strong");strong.textContent=s.title;const meta=document.createElement("em");meta.textContent=[s.region,s.country].filter(Boolean).join(", ");copy.append(k,strong,meta);b.append(v,copy);b.onclick=()=>openViewer(s);return b;
 }
 function renderWander(){
