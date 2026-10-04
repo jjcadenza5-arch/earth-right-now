@@ -811,3 +811,15 @@ Owner playback promotion — 2026-10-04:
 - Runtime source catalog is 299,076 characters, still below the strict 300 KB ceiling but now near capacity. Do not raise the ceiling; next scaling work should use supplemental/lazy Search-only catalog architecture or selective swaps.
 - Public Guide and Now Moments remain OFF; ranking remains commercial-neutral.
 
+
+Supplemental Search architecture — 2026-10-04:
+- Owner manually opened and confirmed the Petra/Viator, Muscat/Viator and Fiji/Klook tracked links; all three are now VERIFIED_LINK_ADDED and the owner batch is closed.
+- Core runtime remains 319 healthy searchable places across 79 countries; data/sources.json remains below the strict 300 KB ceiling.
+- Added data/search-supplemental.json with 20 distinct, already-qualified Search-only places. The combined searchable universe is now 339 places.
+- Supplemental data is fetched only after a non-empty visitor search. It is not part of startup first paint.
+- Every supplemental row is HEALTHY + LINK_ONLY with featuredHold=true and watchHold=true, so it cannot enter Watch Earth, hero/featured ranking or Atlas through this path.
+- Added scripts/search-supplemental-status.mjs and a Pages workflow gate to reject duplicate core IDs/places, unsafe URLs, non-healthy rows, missing holds, non-link-only rows or an oversized supplemental batch.
+- Static release build now copies the supplemental file; Pages path triggers include it.
+- This architecture expands Search capacity without weakening the app-lite, startup JS, lean-core or sources.json performance ceilings.
+- Public Guide and Now Moments remain OFF; commercial ranking remains neutral.
+
