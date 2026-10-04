@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:30:00Z",
+  "generatedAt": "2026-10-04T03:50:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1700,6 +1700,18 @@
       "rightsBasis": "Official Latvia tourism destination page publicly references the Valmiera webcam. ERN remains LINK_ONLY and does not copy, embed or infer redistribution rights.",
       "coordinateSourceUrl": "https://visit.valmiera.lv/content/uploads/2026/05/web_valmiera_karte_2026_visit.valmiera.lv_.pdf",
       "coordinateNote": "Old Town reference near the Livonian castle ruins/central historic area; not claimed as exact camera position."
+    },
+    "montenegro-kolasin-1600": {
+      "freshnessEvidence": "Official Ski Resorts of Montenegro site checked 2026-10-04. The current homepage exposes a 'Live cameras' section with multiple Kolašin 1600 views, including K8 station, Troglava restaurant, departure station and ski-lift camera labels.",
+      "rightsBasis": "Official Ski Resorts of Montenegro public live-camera surface. ERN remains LINK_ONLY and does not infer embed/restream permission.",
+      "coordinateSourceUrl": "https://skijalista.me/",
+      "coordinateNote": "Kolašin 1600 / Jezerine ski-area reference; not claimed as a specific camera coordinate."
+    },
+    "bosnia-jahorina-olympic-center": {
+      "freshnessEvidence": "Official Olympic Center Jahorina site checked 2026-10-04. The current English site exposes a LIVE CAM entry alongside current resort operating information.",
+      "rightsBasis": "Official Olympic Center Jahorina public live-camera surface. ERN remains LINK_ONLY and does not infer embed/restream permission.",
+      "coordinateSourceUrl": "https://www.oc-jahorina.com/en/",
+      "coordinateNote": "Jahorina resort reference; not claimed as a specific camera coordinate."
     }
   },
   "prague-petrin-tower": {
