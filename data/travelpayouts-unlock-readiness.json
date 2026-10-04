@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T01:50:00Z",
-  "searchableHealthyPlaces": 311,
+  "generatedAt": "2026-10-04T02:02:00Z",
+  "searchableHealthyPlaces": 313,
   "strategy": "EVENT_DRIVEN_TRAFFIC_UNLOCK",
   "currentDecision": "DO_NOT_RECHECK_LOCKED_PROGRAMS_YET",
   "firstFutureProgram": "trip-com",
