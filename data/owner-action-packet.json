@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T01:55:00Z",
+  "generatedAt": "2026-10-04T02:02:00Z",
   "status": "DORMANT_UNTIL_OWNER_BATCH_IS_WORTHWHILE",
   "purpose": "Bundle owner-only affiliate link generation and playback checks into worthwhile sessions instead of interrupting ERN expansion one item at a time.",
   "sourceVerificationBatch": [
@@ -73,8 +73,8 @@
     "No automatic rewriting",
     "No source truth changes from commercial value"
   ],
-  "batchRationale": "311 healthy searchable places are fully classified: 274 have an explicit commercial path and 37 remain intentionally editorial-only. Owner work stays dormant until a worthwhile bundled session; Trip.com and other stay programs remain event-driven future unlocks.",
-  "searchablePlaceMilestone": 311,
+  "batchRationale": "313 healthy searchable places are fully classified: 275 have an explicit commercial path and 38 are intentionally editorial-only. Owner work remains batched; traffic-gated programs stay event-driven future unlocks.",
+  "searchablePlaceMilestone": 313,
   "secondWaveAffiliateBatch": [
     "viator-st-moritz",
     "viator-dolomiti-superski",
