@@ -1,6 +1,6 @@
 # ERN Search Engine Owner Readiness
 
-Status: prepared for owner verification after the technical SEO release passes.
+Status: Google owner setup complete; Bing remains optional next external search-engine setup.
 
 ## Public URLs
 - Site: https://earthrightnow.app/
@@ -10,17 +10,13 @@ Status: prepared for owner verification after the technical SEO release passes.
 - Crawlable discovery directory: https://earthrightnow.app/discover/
 
 ## Google Search Console
-The ERN homepage already contains a Google site-verification meta token. That can support a URL-prefix property if the matching Search Console verification flow is used.
 
-Recommended owner action:
-1. Open Google Search Console while signed into the owner Google account.
-2. Add or select `https://earthrightnow.app/`.
-3. If Google recognizes the existing HTML meta verification, complete verification.
-4. If you prefer a Domain property, Google will require a DNS verification record; copy the exact TXT value Google supplies into the DNS provider. Do not invent a token.
-5. Submit `https://earthrightnow.app/sitemap.xml`.
-6. Use URL Inspection on the homepage, `/places/`, `/discover/`, and a few representative indexable destination pages after deployment.
+Owner-confirmed complete:
+- Search Console ownership/property verification for `https://earthrightnow.app/`
+- sitemap submission
+- initial URL Inspection pass
 
-ERN code must not create the Search Console account, alter DNS, or claim verification without owner confirmation.
+Do not ask the owner to repeat these setup steps. Future Google work should be driven by actual crawl/index reports, coverage changes, or query/search-performance evidence.
 
 ## Bing Webmaster Tools
 Recommended owner action after Google Search Console is verified:
