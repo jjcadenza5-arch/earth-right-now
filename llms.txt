@@ -29,6 +29,11 @@ ERN distinguishes:
 
 A reachable provider page is not by itself proof that a stream or image is current. Destination pages expose provider attribution and the latest reliable ERN verification time where available.
 
+## Destination understanding
+Crawlable ERN destination pages expose common and local-language aliases where curated, city/region/country context, source/provider attribution, source type, playback mode, current verification state and the latest reliable check time where available. Related destinations are linked in both visible HTML and structured page data.
+
+ERN search is accent-insensitive and can use curated local-language place aliases. These aliases improve retrieval only; they do not change source health, source truth, editorial ranking or commercial treatment.
+
 ## Attribution
 Third-party cameras, streams and source pages remain owned/operated by their providers unless explicitly stated otherwise. ERN acts as a discovery bridge and curator.
 
