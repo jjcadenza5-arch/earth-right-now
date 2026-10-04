@@ -208,7 +208,7 @@ else if(/city|street|skyline|town|village/.test(c))wrap.dataset.scene="city";
 else if(/beach|water|sea|harbour|coast|surf|lake/.test(c))wrap.dataset.scene="water";
 else if(/mountain|alps|peak/.test(c))wrap.dataset.scene="mountain";
 else wrap.dataset.scene="earth";
-wrap.dataset.variant=String([...String(s?.id||s?.title||"earth")].reduce((n,c)=>n+c.charCodeAt(0),0)%4);wrap.innerHTML='<span class="scene-sun"></span><span class="scene-back"></span><span class="scene-front"></span>';return wrap;
+wrap.dataset.variant=String([...String(s?.id||s?.title||"earth")].reduce((n,c)=>n+c.charCodeAt(0),0)%4);if(!isDay(s))wrap.dataset.night="true";wrap.innerHTML='<span class="scene-sun"></span><span class="scene-back"></span><span class="scene-front"></span>';return wrap;
 }
 function createMediaFrame(s,{preview=false,onload=null,onerror=null}={}){
 const url=cleanUrl(s?.embedUrl);if(!url)return null;
