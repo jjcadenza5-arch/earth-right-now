@@ -3384,6 +3384,45 @@
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "promotedAt": "2026-10-04T01:50:00Z",
       "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy; continuous-live playback not independently human-verified, so Watch Earth remains held."
+    },
+    {
+      "id": "uruguay-montevideo-pocitos",
+      "title": "Montevideo — Pocitos Beach",
+      "country": "Uruguay",
+      "region": "Montevideo",
+      "provider": "Antel TV",
+      "sourcePage": "https://www.antel.com.uy/web/antel-tv",
+      "exactTargetType": "OFFICIAL_TELECOM_CAMERA_PLATFORM",
+      "evidence": "Antel officially states Antel TV includes cameras located at different points around Uruguay. Public AntelTV camera listings historically include Pocitos Beach; exact current external playback still needs verification.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Verify that AntelTV exposes the Pocitos Beach camera without an Uruguay-only/login restriction before promotion."
+    },
+    {
+      "id": "uruguay-montevideo-plaza-independencia",
+      "title": "Montevideo — Plaza Independencia",
+      "country": "Uruguay",
+      "region": "Montevideo",
+      "provider": "Antel TV",
+      "sourcePage": "https://www.antel.com.uy/web/antel-tv",
+      "exactTargetType": "OFFICIAL_TELECOM_CAMERA_PLATFORM",
+      "evidence": "Antel officially operates cameras around Uruguay; Plaza Independencia appears in public AntelTV camera listings. External-access playback must be confirmed before ERN promotion.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Confirm current AntelTV Plaza Independencia camera accessibility and visible updating."
+    },
+    {
+      "id": "uruguay-montevideo-mercado-del-puerto",
+      "title": "Montevideo — Mercado del Puerto",
+      "country": "Uruguay",
+      "region": "Montevideo",
+      "provider": "Antel TV",
+      "sourcePage": "https://www.antel.com.uy/web/antel-tv",
+      "exactTargetType": "OFFICIAL_TELECOM_CAMERA_PLATFORM",
+      "evidence": "Antel's official platform states it carries cameras around Uruguay; Mercado del Puerto is publicly listed among AntelTV cameras. Verify current feed/access before promotion.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "humanCheckHint": "Confirm AntelTV Mercado del Puerto is externally playable/current."
     }
   ],
   "notes": [
@@ -3455,7 +3494,8 @@
     "2026-10-03 post-200 geography research added Hungary/Kékestető and Bratislava city live-camera routes from official destination/tourism sources; both remain human-check gated.",
     "2026-10-04 Jasná/Chopok and Kékestető promoted conservatively to searchable LIVE_IMAGE based on official webcam pages. Both remain held out of Watch Earth pending direct playback review.",
     "2026-10-04: Latvia added through the official Valmiera Old Town tourism webcam reference. Search/Explore only; no continuous-live claim.",
-    "2026-10-04: Montenegro and Bosnia and Herzegovina added via official ski-resort live-camera surfaces, conservatively exposed as LIVE_IMAGE Search/Explore places."
+    "2026-10-04: Montenegro and Bosnia and Herzegovina added via official ski-resort live-camera surfaces, conservatively exposed as LIVE_IMAGE Search/Explore places.",
+    "2026-10-04 Uruguay research added three AntelTV official-network candidates (Pocitos Beach, Plaza Independencia, Mercado del Puerto). Antel officially confirms its platform includes cameras around Uruguay, but each remains human-playback-gated because external access/login restrictions are not yet resolved."
   ],
   "researchGaps": [
     {
