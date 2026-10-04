@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:50:00Z",
+  "generatedAt": "2026-10-04T01:55:00Z",
   "mode": "QUALITY_FIRST_AND_BUSINESS_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 302,
+    "currentHealthyDistinctPlaceBaseline": 311,
     "targetRange": [
       300,
       350
     ],
-    "strategy": "302 healthy searchable places. Continue selectively when a source improves true-live quality, geography, freshness or provider diversity; business expansion proceeds in parallel using active/link-generation-capable programs.",
+    "strategy": "311 healthy searchable places. Continue selectively for source quality, geography, freshness, provider diversity and useful quasi-live/current-image discovery rather than raw-count growth.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -24,8 +24,8 @@
       "mauritius-grand-baie"
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
-    "researchCandidateCount": 215,
-    "playbackGatedCandidateCount": 24,
+    "researchCandidateCount": 224,
+    "playbackGatedCandidateCount": 12,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan-DEFERRED",
       "adjacentHighValueChecks": [
@@ -77,12 +77,12 @@
     "quasiLivePromotedCount": 102,
     "currentHealthyLiveImageCount": 171,
     "progressToTarget": {
-      "minimumTarget": 250,
-      "current": 290,
+      "minimumTarget": 300,
+      "current": 311,
       "remainingToMinimum": 0,
-      "stretchTarget": 300,
-      "remainingToStretch": 10,
-      "status": "QUALITY_FIRST_NEAR_300"
+      "stretchTarget": 350,
+      "remainingToStretch": 39,
+      "status": "QUALITY_FIRST_POST_300"
     },
     "recentExpansionFamilies": [
       "La Réunion — four official tourism/scientific current webcam places",
@@ -97,13 +97,13 @@
     "currentHealthyTruth": {
       "LIVE_VIDEO": 13,
       "EXTERNAL_LIVE": 72,
-      "LIVE_IMAGE": 209
+      "LIVE_IMAGE": 230
     },
     "researchCandidateStateCounts": {
       "PROMOTED_TO_SOURCE_REGISTRY": 58,
-      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 125,
+      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 146,
       "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
-      "HUMAN_PLAYBACK_REQUIRED": 24
+      "HUMAN_PLAYBACK_REQUIRED": 12
     }
   },
   "businessLane": {
@@ -188,7 +188,7 @@
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
     "priorityRule": "Prefer exact destination/product fit inside existing active partners before broad generic destination links. Batch owner link generation rather than interrupting one destination at a time.",
-    "tripComDecision": "WAIT_FOR_TRAFFIC_UNLOCK",
+    "tripComDecision": "WAIT_FOR_EVENT_DRIVEN_UNLOCK_SIGNAL",
     "tripComReason": "Owner screenshots confirm Trip.com is visible in Travelpayouts but not yet unlocked for ERN. Keep it P1 future stay/transport coverage and recheck only after material traffic/account-state change.",
     "istanbulDenpasarUnlocked": true,
     "currentCommercialStates": {
@@ -218,16 +218,16 @@
     "etoshaNote": "Official Namibia Wildlife Resorts evidence supports an Okaukuejo live-camera candidate, but ERN keeps it research-only until exact target playback is human-confirmed.",
     "trafficGrowthPlan": "data/traffic-growth-priorities.json",
     "ownerActionPacket": "data/owner-action-packet.json",
-    "currentOpportunityCount": 188,
+    "currentOpportunityCount": 202,
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "ownerWorksheet": "data/exact-link-generation-worksheet.json",
     "nextMode": "QUALITY_MAINTENANCE_TRAFFIC_GROWTH_BATCHED_LINK_CONVERSION_AND_UNLOCK_READINESS",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
-    "healthyPlacesWithCommercialPath": 249,
-    "healthyPlacesWithoutCommercialPath": 34,
+    "healthyPlacesWithCommercialPath": 274,
+    "healthyPlacesWithoutCommercialPath": 37,
     "verifiedLinkHealthyPlaces": 19,
     "editorialOnlyRegistry": "data/commercial-editorial-only.json",
-    "intentionallyEditorialPlaces": 33,
+    "intentionallyEditorialPlaces": 37,
     "unclassifiedHealthyPlaces": 0,
     "trafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
     "currentNowStrategy": {
@@ -237,7 +237,8 @@
     },
     "conversionShortlist": "data/commercial-conversion-shortlist.json",
     "tripComStatus": "VISIBLE_NOT_UNLOCKED_WAIT_FOR_TRAFFIC",
-    "tripComRule": "Do not open a separate direct account or repeatedly recheck Travelpayouts. Revisit only on meaningful traffic/conversion growth or explicit unlock."
+    "tripComRule": "Do not open a separate direct account or repeatedly recheck Travelpayouts. Revisit only on meaningful traffic/conversion growth or explicit unlock.",
+    "trafficUnlockReadiness": "data/travelpayouts-unlock-readiness.json"
   },
   "safeguards": {
     "automaticPlacement": false,
