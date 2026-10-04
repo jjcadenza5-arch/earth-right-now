@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T02:05:00Z",
+  "generatedAt": "2026-10-04T02:30:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -201,7 +201,16 @@
     "accommodationGap": "Still unresolved: major accommodation partners visible in Travelpayouts remain traffic-gated/not active.",
     "tripComStatus": "VISIBLE_IN_OWNER_TRAVELPAYOUTS_CATALOG_BUT_NOT_UNLOCKED",
     "tripComNextAction": "WAIT_FOR_EVENT_DRIVEN_TRAFFIC_OR_PLATFORM_STATUS_CHANGE",
-    "travelpayoutsUnlockReadiness": "data/travelpayouts-unlock-readiness.json"
+    "travelpayoutsUnlockReadiness": "data/travelpayouts-unlock-readiness.json",
+    "trafficUnlockStrategyActive": true,
+    "priorityFutureUnlocks": [
+      "trip-com",
+      "hotels-com",
+      "agoda",
+      "expedia",
+      "getyourguide",
+      "booking-com"
+    ]
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -247,7 +256,9 @@
     "Latvia / Valmiera added as a new-country searchable quasi-live place under explicit Search/Explore-only truth rules.",
     "Darmstadt / Mathildenhöhe moved from editorial-only to a WeGoTrip exact-link research path using currently visible product evidence.",
     "Montenegro / Kolašin 1600 and Bosnia and Herzegovina / Jahorina added as new-country Search/Explore quasi-live places from official resort live-camera surfaces.",
-    "Kolašin and Jahorina paired with Viator research paths; exact tracked links remain owner-generated/manual-verification only."
+    "Kolašin and Jahorina paired with Viator research paths; exact tracked links remain owner-generated/manual-verification only.",
+    "Travelpayouts traffic-gated program roadmap established from owner account evidence",
+    "Quality-led searchable-place target advanced beyond original 150–200 milestone"
   ],
   "humanOnlyRemaining": [
     {
@@ -284,7 +295,9 @@
     "Do not open a direct Trip.com account unless Travelpayouts project status makes that strategically useful",
     "Accommodation links remain downstream from Earth discovery and cannot affect ranking",
     "Do not repeatedly ask owner to recheck locked Travelpayouts programs; recheck only on meaningful traffic/account-state change",
-    "Locked/traffic-gated programs may not be treated as active or available"
+    "Locked/traffic-gated programs may not be treated as active or available",
+    "Do not chase locked programs merely because they appear in the Travelpayouts catalog",
+    "Traffic-gated programs remain non-public until owner account unlock/eligibility is confirmed"
   ],
   "currentHealthySearchablePlaces": 316,
   "releaseHealth": {
