@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-04T02:45:00Z",
+  "principle": "Convert a small high-value batch of exact links from programs already available before adding traffic-gated partners.",
+  "topExactLinkBatch": [
+    {
+      "rank": 1,
+      "id": "viator-faroe-islands",
+      "destination": "Faroe Islands",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "vagar-airport-faroe",
+        "faroe-mykines",
+        "faroe-klaksvik",
+        "faroe-gjaarskard",
+        "faroe-hvalba",
+        "tvoroyri-port"
+      ],
+      "priority": "P1",
+      "nextAction": "Generate one Faroe Islands destination-level Viator tracked link and use it only where the visitor has chosen Faroe trip planning; do not attach it to unrelated cameras."
+    },
+    {
+      "rank": 2,
+      "id": "viator-innsbruck",
+      "destination": "Innsbruck / Tyrol",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "innsbruck-city",
+        "innsbruck-nordkette",
+        "innsbruck-patscherkofel",
+        "innsbruck-kuhtai",
+        "innsbruck-mieminger-plateau",
+        "innsbruck-telfs",
+        "innsbruck-lusens",
+        "innsbruck-stadtturm",
+        "innsbruck-swarovski-wattens"
+      ],
+      "priority": "P1",
+      "nextAction": "Generate one Innsbruck/Tyrol destination-level Viator link and reuse it across appropriate places without duplicate commercial density."
+    },
+    {
+      "rank": 3,
+      "id": "viator-madeira",
+      "destination": "Madeira",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "madeira-funchal",
+        "madeira-porto-moniz",
+        "madeira-calheta",
+        "madeira-machico",
+        "madeira-ribeira-brava",
+        "madeira-sao-vicente",
+        "madeira-santana",
+        "madeira-santa-cruz",
+        "madeira-porto-santo"
+      ],
+      "priority": "P1",
+      "nextAction": "Owner only needs to open and confirm the prepared direct Viator URL when ERN batches exact-link verification; one island-level link should serve all nine Madeira places."
+    },
+    {
+      "rank": 4,
+      "id": "viator-panama-canal-future",
+      "destination": "Panama Canal",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "panama-canal-miraflores-locks",
+        "panama-canal-gatun-locks",
+        "panama-canal-pedro-miguel-locks",
+        "panama-canal-cocoli-locks",
+        "panama-canal-agua-clara-locks"
+      ],
+      "priority": "P1",
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation."
+    },
+    {
+      "rank": 5,
+      "id": "viator-misti-arequipa",
+      "destination": "Arequipa / Colca / Volcano Region",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "peru-misti-volcano",
+        "peru-sabancaya-volcano",
+        "peru-coropuna-volcano",
+        "peru-chachani-volcano"
+      ],
+      "priority": "P1",
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation."
+    },
+    {
+      "rank": 6,
+      "id": "viator-cook-islands",
+      "destination": "Cook Islands — Rarotonga & Aitutaki",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "aitutaki-lagoon",
+        "aitutaki-tamanu-beach",
+        "rarotonga-avaavaroa-beach",
+        "rarotonga-international-airport"
+      ],
+      "priority": "P1",
+      "nextAction": "Generate one Cook Islands or Rarotonga/Aitutaki destination-level Viator partner link and verify it manually; reuse it across relevant Cook Islands places instead of duplicating commercial density."
+    },
+    {
+      "rank": 7,
+      "id": "viator-istanbul-future",
+      "destination": "Istanbul",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "istanbul-sultanahmet",
+        "istanbul-taksim-square",
+        "istanbul-maidens-tower",
+        "istanbul-anadolu-hisari"
+      ],
+      "priority": "P1",
+      "nextAction": "Generate one Istanbul destination-level Viator tracked link and verify it manually; keep it downstream from Earth discovery."
+    },
+    {
+      "rank": 8,
+      "id": "viator-kruger-future",
+      "destination": "Kruger National Park",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "sanparks-satara",
+        "sanparks-olifants",
+        "sanparks-punda-maria",
+        "sanparks-talamati"
+      ],
+      "priority": "P1",
+      "nextAction": "generate one Kruger destination-level Viator partner link and manually verify it; reuse it across verified Kruger places without duplicate commercial density."
+    },
+    {
+      "rank": 9,
+      "id": "viator-la-palma",
+      "destination": "La Palma",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "la-palma-aridane-valley",
+        "la-palma-caldera-taburiente",
+        "roque-observatory",
+        "volcan-tajogaite"
+      ],
+      "priority": "P1",
+      "nextAction": "Search La Palma island inventory and use one island-level link across both places if useful."
+    },
+    {
+      "rank": 10,
+      "id": "viator-reunion-island",
+      "destination": "La Réunion",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "reunion-boucan-canot",
+        "reunion-trou-deau",
+        "reunion-roches-noires",
+        "reunion-piton-fournaise"
+      ],
+      "priority": "P1",
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation."
+    }
+  ],
+  "reserveExactLinkBatch": [
+    {
+      "rank": 11,
+      "id": "viator-aruba",
+      "destination": "Aruba / Druif Beach",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "druif-beach-aruba",
+        "aruba-palm-beach",
+        "aruba-eagle-beach"
+      ],
+      "priority": "P1",
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation."
+    },
+    {
+      "rank": 12,
+      "id": "viator-bernese-alps",
+      "destination": "Bernese Alps / Interlaken Region",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "schynige-platte",
+        "murren-edelweiss",
+        "wengen-bellevue"
+      ],
+      "priority": "P1",
+      "nextAction": "Search Interlaken/Bernese Alps inventory; use one regional link only if it is directly useful for these places."
+    },
+    {
+      "rank": 13,
+      "id": "viator-adelaide-coast",
+      "destination": "Adelaide Coast",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "glenelg-sa",
+        "brighton-sa"
+      ],
+      "priority": "P1",
+      "nextAction": "Search Adelaide/Glenelg coastal activities and generate one regional link if useful."
+    },
+    {
+      "rank": 14,
+      "id": "viator-akaroa-lyttelton",
+      "destination": "Akaroa / Lyttelton / Banks Peninsula",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "nz-akaroa-heads",
+        "nz-lyttelton-heads"
+      ],
+      "priority": "P1",
+      "nextAction": "Generate one Akaroa/Banks Peninsula Viator tracked link and verify it can appropriately serve both ERN places."
+    },
+    {
+      "rank": 15,
+      "id": "viator-dresden",
+      "destination": "Dresden / Radebeul",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "dresden-old-town",
+        "radebeul-wackerbarth"
+      ],
+      "priority": "P1",
+      "nextAction": "Generate one Dresden destination-level Viator link; reuse it across the two related ERN places if it cleanly serves both."
+    },
+    {
+      "rank": 16,
+      "id": "viator-kilauea",
+      "destination": "Hawaiʻi Volcanoes National Park / Kīlauea",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "kilauea-summit",
+        "mauna-loa-volcano"
+      ],
+      "priority": "P1",
+      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation."
+    },
+    {
+      "rank": 17,
+      "id": "viator-heidelberg",
+      "destination": "Heidelberg",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "heidelberg-old-town",
+        "heidelberg-konigstuhl"
+      ],
+      "priority": "P1",
+      "nextAction": "Generate one Heidelberg destination-level Viator partner link and manually verify it before public activation."
+    },
+    {
+      "rank": 18,
+      "id": "viator-issyk-kul-future",
+      "destination": "Issyk-Kul",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "balykchy-north-entry",
+        "karakol-ski-base"
+      ],
+      "priority": "P1",
+      "nextAction": "Generate one Issyk-Kul region Viator tracked link only if it cleanly serves the verified Balykchy/Karakol places; verify manually before public activation."
+    },
+    {
+      "rank": 19,
+      "id": "viator-kruger-current-images",
+      "destination": "Kruger National Park",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "sanparks-punda-maria",
+        "sanparks-talamati"
+      ],
+      "priority": "P1",
+      "nextAction": "Reuse or generate one clean Kruger National Park Viator destination link and verify it manually; do not create separate commercial offers for each camp camera."
+    },
+    {
+      "rank": 20,
+      "id": "viator-shetland-future",
+      "destination": "Shetland Islands / Lerwick",
+      "partner": "viator",
+      "intent": "activities",
+      "placeIds": [
+        "shetland-cliff-cam",
+        "lerwick-town-hall"
+      ],
+      "priority": "P1",
+      "nextAction": "Source gap cleared by official searchable current-image promotion. Generate and manually verify one destination-level tracked link before any public placement."
+    }
+  ],
+  "futureTrafficUnlocks": [
+    "trip-com",
+    "hotels-com",
+    "agoda",
+    "expedia",
+    "getyourguide",
+    "booking-com"
+  ],
+  "globalUtilityProgramsToEvaluateLater": [
+    "yesim",
+    "airalo",
+    "saily",
+    "kiwitaxi",
+    "kiwi-com",
+    "radical-storage"
+  ],
+  "rules": {
+    "noBulkActivation": true,
+    "exactTrackedLinkRequired": true,
+    "manualOwnerVerificationRequired": true,
+    "noCommissionRanking": true,
+    "noDuplicateCommercialDensity": true
+  }
+}
