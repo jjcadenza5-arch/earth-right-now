@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T03:18:00Z",
+  "generatedAt": "2026-10-04T03:46:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -95,7 +95,7 @@
     "currentCommercialOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
       "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 184,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 8,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 11,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
     "availableUtilityExpansionPlan": "data/available-program-expansion-plan.json",
@@ -104,7 +104,7 @@
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
-    "currentCommercialOpportunityCount": 210,
+    "currentCommercialOpportunityCount": 213,
     "healthyPlacesWithCommercialPath": 279,
     "healthyPlacesWithoutCommercialPath": 37,
     "verifiedLinkHealthyPlaces": 19,
@@ -152,7 +152,7 @@
       "PROMOTED_TO_SOURCE_REGISTRY": 58,
       "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 151,
       "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
-      "HUMAN_PLAYBACK_REQUIRED": 10
+      "HUMAN_PLAYBACK_REQUIRED": 18
     },
     "ownerAccountLinkGenerationAvailablePrograms": [
       "yesim",
@@ -259,7 +259,8 @@
     "Kolašin and Jahorina paired with Viator research paths; exact tracked links remain owner-generated/manual-verification only.",
     "Travelpayouts traffic-gated program roadmap established from owner account evidence",
     "Quality-led searchable-place target advanced beyond original 150–200 milestone",
-    "Maolin National Scenic Area added to Klook exact-link research using current public Maolin activity inventory."
+    "Maolin National Scenic Area added to Klook exact-link research using current public Maolin activity inventory.",
+    "Middle East / South Pacific research batch queued Petra (two views), Muscat Aida Beach and two Fiji provider webcams behind human playback gates; source-gated Viator/Klook paths prepared without public activation."
   ],
   "humanOnlyRemaining": [
     {
