@@ -764,3 +764,10 @@ Global utility business layer — 2026-10-04:
 - Go City remains destination-specific and already queued for New York, London, Chicago, Sydney, Rome and Dublin; KKday remains targeted where it adds distinctive Asia inventory.
 - Trip.com/Hotels.com/Agoda/Expedia/GetYourGuide/Booking.com remain future traffic-unlock targets, not current owner tasks.
 - No utility offer may influence Earth discovery ranking or appear before a visitor has chosen a place/trip-planning action.
+
+
+Prepared Viator link batch — 2026-10-04:
+- Public destination/inventory pages have now been isolated for Faroe Islands/Tórshavn, Innsbruck, Madeira, Cook Islands/Rarotonga and Istanbul.
+- Standard partner-parameter candidate URLs were prepared privately for these destinations using ERN's established Viator partner ID, but remain PREPARED_NOT_OWNER_VERIFIED and cannot become public offers until owner redirect/tracking confirmation.
+- Panama Canal, Arequipa/Colca and Kruger public inventory was also confirmed; clean destination-level tracked links are still preferred over product-specific links.
+- This reduces future owner work to opening/confirming a compact prepared batch rather than searching destinations manually.
