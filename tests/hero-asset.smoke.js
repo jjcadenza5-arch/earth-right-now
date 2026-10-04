@@ -1,8 +1,9 @@
 import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
-const svg=readFileSync(new URL("../assets/ern-fuji-hero.svg",import.meta.url),"utf8");
-assert.match(svg,/^<svg\b/,"Mount Fuji hero must be a valid SVG document");
-assert.match(svg,/Mount Fuji at sunrise/,"Mount Fuji hero title missing");
-assert.match(svg,/Same Planet/,"Approved editorial hero phrase missing");
-assert.match(svg,/Brighter Perspectives/,"Approved editorial hero phrase missing");
-console.log("ERN Mount Fuji hero asset integrity passed");
+const img=readFileSync(new URL("../assets/ern-fuji-mockup-hero.jpg",import.meta.url));
+assert.ok(img.length>50000,"Mount Fuji mockup hero asset is unexpectedly small");
+assert.equal(img[0],0xff,"Mount Fuji hero must begin with JPEG marker");
+assert.equal(img[1],0xd8,"Mount Fuji hero must begin with JPEG marker");
+assert.equal(img.at(-2),0xff,"Mount Fuji hero must end with JPEG marker");
+assert.equal(img.at(-1),0xd9,"Mount Fuji hero must end with JPEG marker");
+console.log("ERN photographic Mount Fuji hero asset integrity passed");
