@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:50:00Z",
+  "generatedAt": "2026-10-04T01:55:00Z",
   "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
-  "currentSearchableHealthyPlaces": 302,
+  "currentSearchableHealthyPlaces": 311,
   "unlockTargets": [
     "trip-com",
     "hotels-com",
@@ -63,15 +63,16 @@
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
   "note": "Scale target exceeded. Primary growth objective is now qualified organic discovery, deeper internal exploration, real planning clicks/conversions and better source quality; Travelpayouts unlock thresholds are private and must not be invented.",
-  "milestone": "302_SEARCHABLE_PLACES_QUALITY_TRAFFIC_AND_UNLOCK_GROWTH",
+  "milestone": "311_SEARCHABLE_PLACES_QUALITY_TRAFFIC_AND_UNLOCK_GROWTH",
   "currentBusinessCoverage": {
-    "healthyPlaces": 302,
-    "placesWithCommercialPath": 267,
-    "intentionallyEditorialPlaces": 35,
+    "healthyPlaces": 311,
+    "placesWithCommercialPath": 274,
+    "intentionallyEditorialPlaces": 37,
     "unclassifiedHealthyPlaces": 0,
     "verifiedLinkPlaces": 19,
-    "exactLinkOpportunityBacklog": 169,
+    "exactLinkOpportunityBacklog": 177,
     "conversionShortlistSize": 15,
     "conversionShortlist": "data/commercial-conversion-shortlist.json"
-  }
+  },
+  "unlockReadiness": "data/travelpayouts-unlock-readiness.json"
 }
