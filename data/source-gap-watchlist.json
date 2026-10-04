@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:20:00Z",
+  "generatedAt": "2026-10-04T03:20:00Z",
   "publicActivationAllowed": false,
   "gaps": [
     {
@@ -43,6 +43,64 @@
         "viator"
       ],
       "lastResearchedAt": "2026-10-03T03:20:00Z"
+    },
+    {
+      "id": "middle-east-north-africa-current-scenic",
+      "region": "Middle East / North Africa",
+      "priority": "P1",
+      "state": "QUALITY_CURRENT_SOURCE_GAP",
+      "targetPlaces": [
+        "Muscat",
+        "Salalah",
+        "Doha",
+        "Amman",
+        "Petra/Wadi Musa",
+        "Marrakech",
+        "Casablanca",
+        "Tangier"
+      ],
+      "whyImportant": "ERN now has broad Europe/Asia/Americas coverage but still lacks strong scenic current/quasi-live representation across the Middle East and North Africa.",
+      "researchEvidence": [
+        "Official tourism/government pages for Oman, Jordan, Qatar and Morocco provide strong destination material but recent searches did not surface sufficiently trustworthy scenic current cameras suitable for immediate promotion.",
+        "Virtual tours and prerecorded destination films are intentionally excluded from LIVE/current semantics."
+      ],
+      "disallowedShortcuts": [
+        "Do not use virtual tours as current cameras.",
+        "Do not use generic weather widgets as scenic Earth windows.",
+        "Do not treat prerecorded tourism video as quasi-live."
+      ],
+      "nextResearch": [
+        "Prefer official tourism, port, airport, municipality, observatory or resort current-image feeds.",
+        "Use quasi-live/current-image semantics when timestamped still imagery is reliable."
+      ],
+      "lastResearchedAt": "2026-10-04T03:20:00Z"
+    },
+    {
+      "id": "south-pacific-islands-current-scenic",
+      "region": "South Pacific islands beyond current Cook Islands coverage",
+      "priority": "P1",
+      "state": "QUALITY_CURRENT_SOURCE_GAP",
+      "targetPlaces": [
+        "Fiji",
+        "Samoa",
+        "Tonga",
+        "French Polynesia",
+        "Vanuatu",
+        "New Caledonia"
+      ],
+      "whyImportant": "ERN has strong New Zealand/Australia coverage and a Cook Islands foothold, but broader Pacific island coverage remains thin.",
+      "researchEvidence": [
+        "Official meteorological sources are useful for weather/radar but generally do not provide scenic Earth imagery suitable for ERN.",
+        "A current Fiji resort webcam was found under maintenance and therefore was not promoted."
+      ],
+      "disallowedShortcuts": [
+        "Do not use radar loops as scenic camera substitutes.",
+        "Do not count static resort marketing images as quasi-live without timestamp/freshness evidence."
+      ],
+      "nextResearch": [
+        "Prefer tourism boards, ports, airports, councils and resorts with timestamped refreshed scenic images or live video."
+      ],
+      "lastResearchedAt": "2026-10-04T03:20:00Z"
     }
   ]
 }
