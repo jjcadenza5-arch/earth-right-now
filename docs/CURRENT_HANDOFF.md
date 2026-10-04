@@ -710,3 +710,14 @@ Post-200 Europe / traffic-unlock checkpoint — 2026-10-03:
 - Bansko and Borovets received Viator research paths; Jasná received a cautious Viator/Slovakia mountain path; Kékestető remains intentionally editorial-first.
 - Travelpayouts traffic-gated programs remain event-driven future unlocks. New readiness file: data/travelpayouts-unlock-readiness.json.
 - Trip.com remains the first future unlock target once Travelpayouts account state or real traffic/conversion evidence materially changes.
+
+
+314-place Latvia / Darmstadt checkpoint — 2026-10-04:
+- Production source registry now targets 314 healthy distinct searchable places across 74 countries/territories after adding Valmiera Old Town as Latvia's first ERN place.
+- Valmiera is based on Latvia's official tourism page explicitly directing visitors to watch city life on the webcam. It is conservatively labeled LIVE_IMAGE, LINK_ONLY, featuredHold/watchHold: Search/Explore yes, Watch Earth no.
+- Canonical quasi-live policy is now explicit in data/source-expansion-policy.json. Regularly refreshed/current webcam stills are acceptable for Search/Explore; one-off recent photos are not mislabeled LIVE and remain research-only unless ERN adds a separate RECENT_IMAGE visitor truth label.
+- Pamir remains deferred by owner choice; it should not consume active cycles until better live/quasi-live evidence appears.
+- Darmstadt / Mathildenhöhe moved from editorial-only to a real WeGoTrip research path because WeGoTrip currently exposes a Darmstadt self-guided audio-tour product including Mathildenhöhe.
+- Commercial registry is now 204 opportunities: 16 verified-link, 179 exact-link/account-search, 7 source-verification-gated, 2 source-gap-blocked.
+- All 314 healthy places remain intentionally classified: 276 have commercial research paths and 38 are editorial-first; zero are unclassified.
+- Travelpayouts traffic-gated strategy is unchanged: Trip.com remains the preferred future unlock, but no gated program should be rechecked until material traffic/conversion or an explicit platform status change.
