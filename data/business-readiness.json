@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T01:50:00Z",
+  "generatedAt": "2026-10-04T02:05:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -147,7 +147,7 @@
     "nextPreferredUnlock": "trip-com",
     "nextPreferredUnlockReason": "Trip.com remains the highest-value future unlock because one program could add stay plus transport/activity utility across many ERN destinations; current account state is visible but not unlocked.",
     "currentSearchableCountries": 76,
-    "sourceRuntimeCatalogChars": 295051,
+    "sourceRuntimeCatalogChars": 295036,
     "sourceExpansionCandidateStates": {
       "PROMOTED_TO_SOURCE_REGISTRY": 58,
       "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 151,
@@ -288,12 +288,12 @@
   ],
   "currentHealthySearchablePlaces": 316,
   "releaseHealth": {
-    "pagesDeployment": "PENDING_RECHECK_AFTER_316_PLACE_BATCH",
-    "operationsCheck": "PENDING_RECHECK_AFTER_316_PLACE_BATCH",
+    "pagesDeployment": "SUCCESS_2026-10-04T02:05Z",
+    "operationsCheck": "SUCCESS_2026-10-04T02:05Z",
     "sourceCatalogRuntimeEvidence": "RIGHTS_BASIS_AND_FRESHNESS_EVIDENCE_RETAINED",
     "verboseSourceEvidenceSidecar": "data/source-evidence.json",
     "sourceCatalogArchitecture": "MINIFIED_RUNTIME_CATALOG_PLUS_VERBOSE_EVIDENCE_SIDECAR",
-    "sourceCatalogHeadroom": "295051_CHARS_AFTER_316_PLACE_BATCH",
-    "lastKnownGreenBaseline": "PAGES_GREEN_AT_313_PLACES; OPERATIONS_GREEN_DURING_314_LATVIA_BATCH"
+    "sourceCatalogHeadroom": "295036_CHARS_AT_316_PLACE_BASELINE",
+    "lastKnownGreenBaseline": "PAGES_AND_OPERATIONS_GREEN_AT_316_SEARCHABLE_PLACES"
   }
 }
