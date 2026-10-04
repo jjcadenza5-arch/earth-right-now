@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-05",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -163,6 +163,104 @@
       "Ημεροβίγλι",
       "Santorini Greece",
       "Imerovigli Greece"
+    ],
+    "salzburg-mirabell-old-town": [
+      "Salzburg Österreich",
+      "Mirabellgarten",
+      "Mirabell Gardens",
+      "Salzburg Altstadt"
+    ],
+    "innsbruck-live-panorama": [
+      "Innsbruck Österreich",
+      "Innsbruck Tirol",
+      "Tirol",
+      "Tyrol"
+    ],
+    "dubrovnik-pile-city": [
+      "Dubrovnik Hrvatska",
+      "Dubrovnik Croatia",
+      "Pile Gate",
+      "Vrata od Pila"
+    ],
+    "tallinn-tv-tower-panorama": [
+      "Tallinn Eesti",
+      "Tallinn Estonia",
+      "Tallinna Teletorn",
+      "Teletorn"
+    ],
+    "mendoza-plaza-independencia-live": [
+      "Mendoza Argentina",
+      "Plaza Independencia Mendoza",
+      "Ciudad de Mendoza"
+    ],
+    "wanaka-roys-peak-town-view": [
+      "Wānaka",
+      "Wanaka",
+      "Roys Peak",
+      "Wānaka New Zealand"
+    ],
+    "rotorua-skyline-city-lake": [
+      "Rotorua Aotearoa",
+      "Rotorua New Zealand",
+      "Lake Rotorua",
+      "Skyline Rotorua"
+    ],
+    "issyk-kul-karven-four-seasons": [
+      "Ысык-Көл",
+      "Иссык-Куль",
+      "Issyk Kul",
+      "Lake Issyk-Kul"
+    ],
+    "khumbu-glacier-nco-p": [
+      "खुम्बु हिमनदी",
+      "Khumbu Glacier",
+      "Everest Region",
+      "Sagarmatha"
+    ],
+    "poiana-brasov-live": [
+      "Poiana Brașov",
+      "Poiana Brasov",
+      "Brașov",
+      "Brasov Romania"
+    ],
+    "philippines-mayon-phivolcs": [
+      "Bulkang Mayon",
+      "Mayon Volcano",
+      "Albay Philippines"
+    ],
+    "philippines-bulusan-phivolcs": [
+      "Bulkang Bulusan",
+      "Bulusan Volcano",
+      "Sorsogon Philippines"
+    ],
+    "philippines-kanlaon-phivolcs": [
+      "Bulkang Kanlaon",
+      "Kanlaon Volcano",
+      "Negros Philippines"
+    ],
+    "hawaii-mauna-loa-usgs": [
+      "Mauna Loa Hawaiʻi",
+      "Mauna Loa Hawaii",
+      "Hawaiʻi Island",
+      "Big Island Hawaii"
+    ],
+    "tvoroyri-port-live": [
+      "Tvøroyri Føroyar",
+      "Tvøroyri Faroe Islands",
+      "Suðuroy",
+      "Suduroy"
+    ],
+    "longyearbyen-unis-webcam": [
+      "Longyearbyen Svalbard",
+      "Adventfjorden",
+      "Spitsbergen",
+      "Svalbard Norway"
+    ],
+    "shetland-lerwick-town-hall": [
+      "Lerwick Shetland",
+      "Lerwick Scotland",
+      "Shetland Islands",
+      "Lerwick Town Hall"
     ]
   }
 }
