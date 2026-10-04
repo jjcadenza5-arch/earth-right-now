@@ -755,3 +755,12 @@ Green 316-place baseline — 2026-10-04:
 - Commercial matrix was reconciled against all current healthy places and no longer uses the stale 313-place baseline.
 - Uruguay AntelTV camera family added as research-only because Antel officially confirms cameras around Uruguay, but external playback/access must be verified before promotion.
 - Pamir remains deferred by owner approval; revisit later if better live or trustworthy quasi-live sources appear.
+
+
+Global utility business layer — 2026-10-04:
+- Prepared a separate post-discovery utility layer using programs already available for owner link generation; it is not public yet.
+- Tier-1 future tests: Yesim (eSIM), Kiwitaxi (transfers), Kiwi.com (flights) and Radical Storage (luggage).
+- Tier-2 alternatives include Airalo/Saily, Localrent/Economybookings and GetTransfer; ERN should show one primary provider per intent rather than stacking equivalent affiliate choices.
+- Go City remains destination-specific and already queued for New York, London, Chicago, Sydney, Rome and Dublin; KKday remains targeted where it adds distinctive Asia inventory.
+- Trip.com/Hotels.com/Agoda/Expedia/GetYourGuide/Booking.com remain future traffic-unlock targets, not current owner tasks.
+- No utility offer may influence Earth discovery ranking or appear before a visitor has chosen a place/trip-planning action.
