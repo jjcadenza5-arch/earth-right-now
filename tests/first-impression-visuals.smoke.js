@@ -8,7 +8,7 @@ assert.match(css,/grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/,"mobile fee
 assert.match(css,/\.mobile-dock\{[^}]*display:flex!important/s,"mobile dock should use flex layout on small screens");
 assert.match(css,/flex-wrap:nowrap!important/,"mobile dock should stay on one compact four-item row");
 assert.match(css,/content:"ILLUSTRATIVE"/,"illustrative card artwork must be labeled");
-assert.match(css,/ern-fuji-mockup-hero\\.jpg/,"approved photographic Mount Fuji hero image must remain active");
+assert.match(css,/ern-fuji-mockup-hero\.jpg/,"approved photographic Mount Fuji hero image must remain active");
 assert.doesNotMatch(css,/commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\/FujiSunriseKawaguchiko2025WP/,"hero must not depend on a remote image URL");
 assert.match(app,/data\.scene="snow"|dataset\.scene="snow"/,"fallback card system should retain snow visual family");
 console.log("ERN visual fallback and compact mobile discovery regression checks passed");
