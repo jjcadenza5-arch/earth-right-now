@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T04:22:00Z",
+  "generatedAt": "2026-10-04T04:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3331,15 +3331,18 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Petra is a high-value Earth discovery destination and Viator has current Jordan/Petra activity inventory; commercial placement must wait until ERN has a verified Petra source and an owner-generated exact tracked link.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Jordan/d744-ttd",
       "publicInventoryEvidence": "Viator currently markets Jordan/Petra tours and experiences.",
-      "nextAction": "Owner must open the generated tracked link once and confirm it lands on relevant Petra/Jordan inventory before ERN marks it verified/public-eligible.",
+      "nextAction": "Observe aggregate outbound clicks and preserve one-useful-action placement; do not let commercial value affect ranking.",
       "unlockedBySourceAt": "2026-10-04T03:58:00Z",
       "candidateTrackedUrl": "https://www.viator.com/searchResults/all?text=Petra+Jordan+tours+activities&pid=P00322254&mcid=42383&medium=link",
       "candidateTrackedUrlPreparedAt": "2026-10-04T04:15:00Z",
       "candidateTrackedUrlEvidence": "Owner-generated Viator tracked search link supplied in chat on 2026-10-04.",
-      "ownerVerificationRequired": true
+      "ownerVerificationRequired": false,
+      "trackingUrl": "https://www.viator.com/searchResults/all?text=Petra+Jordan+tours+activities&pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-04T04:30:00Z",
+      "manualOpenVerified": true
     },
     {
       "id": "viator-muscat-oman-future",
@@ -3351,15 +3354,18 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Muscat fills a major Middle East geographic gap and Viator currently exposes hundreds of Muscat tours, including city tours and day trips.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Muscat/d4389-ttd",
       "publicInventoryEvidence": "Current Viator Muscat inventory shows 700+ tours/excursions, including city, sightseeing, snorkeling and day-trip products.",
-      "nextAction": "Owner must open the generated tracked link once and confirm it lands on relevant Muscat/Oman inventory before ERN marks it verified/public-eligible.",
+      "nextAction": "Observe aggregate outbound clicks and preserve one-useful-action placement; do not let commercial value affect ranking.",
       "unlockedBySourceAt": "2026-10-04T03:58:00Z",
       "candidateTrackedUrl": "https://www.viator.com/searchResults/all?text=Muscat+Oman+tours+activities&pid=P00322254&mcid=42383&medium=link",
       "candidateTrackedUrlPreparedAt": "2026-10-04T04:18:00Z",
       "candidateTrackedUrlEvidence": "Owner-generated Viator tracked search link supplied in chat on 2026-10-04.",
-      "ownerVerificationRequired": true
+      "ownerVerificationRequired": false,
+      "trackingUrl": "https://www.viator.com/searchResults/all?text=Muscat+Oman+tours+activities&pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-04T04:30:00Z",
+      "manualOpenVerified": true
     },
     {
       "id": "klook-fiji-future",
@@ -3371,15 +3377,18 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Fiji materially improves South Pacific coverage and Klook currently has a broad Fiji activity catalog including island cruises and water activities.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/c189-fiji/",
       "publicInventoryEvidence": "Current Klook Fiji destination inventory lists dozens of activities including South Sea Island cruises, Malamala Beach Club, Cloud 9 and other water experiences.",
-      "nextAction": "Owner must open the generated tracked link once and confirm it lands on relevant Fiji/Mamanuca inventory before ERN marks it verified/public-eligible.",
+      "nextAction": "Observe aggregate outbound clicks and preserve one-useful-action placement; do not let commercial value affect ranking.",
       "unlockedBySourceAt": "2026-10-04T03:58:00Z",
       "candidateTrackedUrl": "https://klook.tpo.mx/DjkpjcEv",
       "candidateTrackedUrlPreparedAt": "2026-10-04T04:22:00Z",
       "candidateTrackedUrlEvidence": "Owner-generated Klook/Travelpayouts tracked link supplied in chat on 2026-10-04.",
-      "ownerVerificationRequired": true
+      "ownerVerificationRequired": false,
+      "trackingUrl": "https://klook.tpo.mx/DjkpjcEv",
+      "verifiedAt": "2026-10-04T04:30:00Z",
+      "manualOpenVerified": true
     }
   ]
 }
