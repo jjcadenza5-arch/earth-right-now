@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T03:05:00Z",
+  "generatedAt": "2026-10-04T03:15:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1794,7 +1794,11 @@
       "priority": "P1",
       "reason": "ERN now has a broad healthy Innsbruck/Tyrol searchable family; use one destination-level Viator planning bridge across appropriate places without duplicate commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one Innsbruck/Tyrol destination-level Viator link and reuse it across appropriate places without duplicate commercial density."
+      "nextAction": "Generate one Innsbruck/Tyrol destination-level Viator link and reuse it across appropriate places without duplicate commercial density.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Innsbruck/d5173-ttd",
+      "publicInventoryEvidence": "Viator currently exposes an Innsbruck destination page with 100+ results spanning city sightseeing, Nordkette, paragliding and Tyrol experiences.",
+      "preparedTrackedUrlCandidate": "https://www.viator.com/Innsbruck/d5173-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateStatus": "PREPARED_NOT_OWNER_VERIFIED"
     },
     {
       "id": "viator-montreux",
@@ -2143,8 +2147,11 @@
       "priority": "P1",
       "reason": "ERN now has five healthy Faroese current-image places. One destination-level Viator Faroe Islands link can serve trip planning across the family without duplicating affiliate density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Faroe-Islands/d37756-ttd",
-      "nextAction": "Generate one Faroe Islands destination-level Viator tracked link and use it only where the visitor has chosen Faroe trip planning; do not attach it to unrelated cameras."
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Torshavn/d4191-ttd",
+      "nextAction": "Generate one Faroe Islands destination-level Viator tracked link and use it only where the visitor has chosen Faroe trip planning; do not attach it to unrelated cameras.",
+      "publicInventoryEvidence": "Viator currently exposes a Tórshavn/Faroe Islands destination page with current boat, cultural and island sightseeing inventory.",
+      "preparedTrackedUrlCandidate": "https://www.viator.com/Torshavn/d4191-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateStatus": "PREPARED_NOT_OWNER_VERIFIED"
     },
     {
       "id": "viator-longyearbyen-future",
@@ -2935,8 +2942,10 @@
       "reason": "ERN now has four official quasi-live Cook Islands places, and Viator currently has a broad Cook Islands/Rarotonga activity inventory including lagoon cruises, snorkeling, cultural tours and island experiences.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Cook-Islands/d4788-ttd",
-      "publicInventoryEvidence": "Current Viator Cook Islands destination inventory includes Rarotonga and Aitutaki tours and excursions.",
-      "nextAction": "Generate one Cook Islands or Rarotonga/Aitutaki destination-level Viator partner link and verify it manually; reuse it across relevant Cook Islands places instead of duplicating commercial density."
+      "publicInventoryEvidence": "Viator currently exposes a Cook Islands destination page with current Rarotonga/Aitutaki lagoon, culture and sightseeing inventory.",
+      "nextAction": "Generate one Cook Islands or Rarotonga/Aitutaki destination-level Viator partner link and verify it manually; reuse it across relevant Cook Islands places instead of duplicating commercial density.",
+      "preparedTrackedUrlCandidate": "https://www.viator.com/Cook-Islands/d4788-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateStatus": "PREPARED_NOT_OWNER_VERIFIED"
     },
     {
       "id": "viator-maldives",
