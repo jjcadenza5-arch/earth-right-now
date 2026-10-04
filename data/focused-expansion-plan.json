@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T04:05:00Z",
+  "generatedAt": "2026-10-04T04:50:00Z",
   "mode": "QUALITY_FIRST_AND_BUSINESS_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 319,
@@ -92,8 +92,8 @@
       "Namibia — Swakopmund and Windhoek frequently refreshed current-image places",
       "Western/Northern Europe quality batch — Brussels, Zandvoort, Darmstadt, Heidelberg/Königstuhl, Nuremberg, Cannes, Plitvice, Denmark live-view family, Dresden/Radebeul and Farchant/Zugspitze"
     ],
-    "catalogScaleStrategy": "Runtime data/sources.json is now ~299 KB under the strict 300 KB ceiling. Do not weaken the limit. Further scale should use a lazy/supplemental Search-only catalog or selective source swaps while keeping Watch Earth/current-first runtime lean.",
-    "nextMode": "SUPPLEMENTAL_SEARCH_CATALOG_ARCHITECTURE_PLUS_QUALITY_MAINTENANCE",
+    "catalogScaleStrategy": "Core data/sources.json remains below the strict 300 KB ceiling. New scale uses a separately deployed, lazy-on-search supplemental catalog; do not raise the core ceiling.",
+    "nextMode": "QUALITY_EXPANSION_VIA_SUPPLEMENTAL_SEARCH_PLUS_CORE_MAINTENANCE",
     "currentHealthyTruth": {
       "LIVE_VIDEO": 13,
       "EXTERNAL_LIVE": 72,
@@ -106,8 +106,8 @@
       "HUMAN_PLAYBACK_REQUIRED": 14
     },
     "currentHealthyCountryCount": 79,
-    "remainingTo350": 31,
-    "remainingTo400": 81,
+    "remainingTo350": 11,
+    "remainingTo400": 61,
     "remainingHumanPlaybackQueue": 14,
     "currentPriorityGaps": [
       "Middle East / North Africa",
@@ -115,7 +115,18 @@
       "Africa beyond current coverage",
       "Caribbean capitals/harbours",
       "South America civic/coastal"
-    ]
+    ],
+    "searchableUniverseWithSupplemental": 339,
+    "searchSupplementalCatalog": {
+      "file": "data/search-supplemental.json",
+      "places": 20,
+      "loadMode": "LAZY_ON_NONEMPTY_SEARCH",
+      "watchEarthEligible": false,
+      "featuredEligible": false,
+      "atlasEligible": false,
+      "startupPayloadImpact": "NONE_UNTIL_SEARCH",
+      "rule": "Supplemental places must remain HEALTHY, LINK_ONLY, featuredHold=true and watchHold=true. They expand Search without entering Watch Earth or first-screen ranking."
+    }
   },
   "businessLane": {
     "activePartners": [
