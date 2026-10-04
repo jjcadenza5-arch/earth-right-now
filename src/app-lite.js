@@ -144,8 +144,6 @@ function adaptiveWatchLimit(pool,target=20){const inside=pool.filter(currentInsi
 function buildWatch(sources){
 const profile=setProfile();
 let pool=sources.filter(watchEligible);
-const proven=sources.filter(provenWatchHere);
-if(proven.length>=6)pool=proven;
 if(state.category!=="all"&&state.category!=="random")pool=pool.filter(s=>categoryMatch(s,state.category));
 if(state.category==="all"){
 const strict={
