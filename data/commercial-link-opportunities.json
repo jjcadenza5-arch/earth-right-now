@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T03:35:00Z",
+  "generatedAt": "2026-10-04T03:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3212,6 +3212,36 @@
       "publicInventoryEvidenceUrl": "https://wegotrip.com/luisenplatz-a22279/",
       "publicInventoryEvidence": "Current WeGoTrip listing shows a Darmstadt self-guided audio tour beginning at Luisenplatz and explicitly including Mathildenhöhe among its route highlights.",
       "nextAction": "Use the owner-accessible WeGoTrip link tool to search Darmstadt/Mathildenhöhe, generate one tracked link if the product is available in the owner account, and manually open it before any public activation."
+    },
+    {
+      "id": "viator-kolasin-montenegro",
+      "destination": "Kolašin / Bjelasica",
+      "placeIds": [
+        "montenegro-kolasin-1600"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Kolašin 1600 mountain source and Viator currently lists multiple Kolašin/Biogradska Gora mountain experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Podgorica/Jeep-safari-National-park-Biogradska-gora/d26108-143035P4",
+      "publicInventoryEvidence": "Current Viator listing starts in Kolašin and includes a Jeep safari through Biogradska Gora/Bjelasica, mountain villages and ski-resort scenery.",
+      "nextAction": "Search the owner Viator partner tools for Kolašin/Montenegro and generate one clean destination-level or best-fit tracked link; manually verify before public activation."
+    },
+    {
+      "id": "viator-jahorina-bosnia",
+      "destination": "Jahorina / Sarajevo Olympic Mountains",
+      "placeIds": [
+        "bosnia-jahorina-olympic-center"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Jahorina mountain source and Viator currently sells a dedicated Jahorina Olympic Mountain full-day skiing tour from Sarajevo.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Sarajevo/Skiing-at-Sarajevo-Olympic-Mountains-Full-Day-Tour-from-Sarajevo/d22427-12030P24",
+      "publicInventoryEvidence": "Current Viator product explicitly visits Jahorina and includes Sarajevo pickup, ski equipment and ski instruction.",
+      "nextAction": "Search the owner Viator partner tools for Jahorina/Sarajevo Olympic Mountains and generate one tracked link; manually verify before public activation."
     }
   ]
 }
