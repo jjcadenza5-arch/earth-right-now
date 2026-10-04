@@ -3358,6 +3358,32 @@
       "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "promotedAt": "2026-10-04T03:30:00Z",
       "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy from official tourism webcam evidence; featuredHold/watchHold remain true."
+    },
+    {
+      "id": "montenegro-kolasin-1600",
+      "title": "Kolašin 1600 — Bjelasica Mountains",
+      "country": "Montenegro",
+      "region": "Kolašin / Bjelasica",
+      "provider": "Ski Resorts of Montenegro",
+      "sourcePage": "https://skijalista.me/",
+      "evidence": "Official Ski Resorts of Montenegro site exposes multiple Live Cam views for Kolašin 1600.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-04T03:50:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy; continuous-live playback not independently human-verified, so Watch Earth remains held."
+    },
+    {
+      "id": "bosnia-jahorina-olympic-center",
+      "title": "Jahorina — Olympic Mountain",
+      "country": "Bosnia and Herzegovina",
+      "region": "Jahorina / East Sarajevo",
+      "provider": "Olympic Center Jahorina",
+      "sourcePage": "https://www.oc-jahorina.com/en/",
+      "evidence": "Official Olympic Center Jahorina site exposes a LIVE CAM surface.",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "promotedAt": "2026-10-04T03:50:00Z",
+      "promotionNote": "Promoted to Search/Explore under ERN quasi-live policy; continuous-live playback not independently human-verified, so Watch Earth remains held."
     }
   ],
   "notes": [
@@ -3428,7 +3454,8 @@
     "2026-10-03 post-200 quasi-live batch promoted Bansko, Borovets and Kopaonik as three real searchable destinations; resort camera angles remain grouped and Watch Earth remains held.",
     "2026-10-03 post-200 geography research added Hungary/Kékestető and Bratislava city live-camera routes from official destination/tourism sources; both remain human-check gated.",
     "2026-10-04 Jasná/Chopok and Kékestető promoted conservatively to searchable LIVE_IMAGE based on official webcam pages. Both remain held out of Watch Earth pending direct playback review.",
-    "2026-10-04: Latvia added through the official Valmiera Old Town tourism webcam reference. Search/Explore only; no continuous-live claim."
+    "2026-10-04: Latvia added through the official Valmiera Old Town tourism webcam reference. Search/Explore only; no continuous-live claim.",
+    "2026-10-04: Montenegro and Bosnia and Herzegovina added via official ski-resort live-camera surfaces, conservatively exposed as LIVE_IMAGE Search/Explore places."
   ],
   "researchGaps": [
     {
