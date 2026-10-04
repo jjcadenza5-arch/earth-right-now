@@ -732,3 +732,15 @@ Post-200 Europe / traffic-unlock checkpoint — 2026-10-03:
 - Commercial classification remains complete at 316 places: 278 commercial-path places + 38 editorial-first places; zero unclassified.
 - Trip.com remains ERN's P1 future Travelpayouts unlock. The larger destination catalog strengthens the eventual value of accommodation coverage, but does not justify repeated unlock checks before traffic/conversion/account signals.
 - Pamir remains deferred; quasi-live/current-image policy is canonical in data/source-expansion-policy.json.
+
+
+Green 316-place baseline — 2026-10-04:
+- Canonical production registry: 324 source records, 320 healthy source records, 316 healthy distinct searchable places across 76 countries/territories.
+- Source runtime catalog is 295036 characters, still inside the strict production budget; verbose provenance remains in data/source-evidence.json.
+- Source expansion states: 58 PROMOTED_TO_SOURCE_REGISTRY, 151 PROMOTED_TO_SEARCHABLE_QUASI_LIVE, 8 SUPERSEDED_BY_QUASI_LIVE_PROMOTION, 10 HUMAN_PLAYBACK_REQUIRED.
+- Commercial registry: 206 opportunities = 16 VERIFIED_LINK_ADDED, 181 ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED, 7 SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK, 2 SOURCE_GAP_MUST_BE_SOLVED_FIRST.
+- Commercial classification remains complete: 278 healthy places have a commercial research path and 38 are intentionally editorial-first.
+- Kolašin duplicate normalized alias was repaired and all new batch timestamps were normalized to real UTC after release guards correctly rejected the earlier local-time-as-Z values.
+- Latest Operations packet is green and latest Pages release job completed the full release suite, static build and Deploy step successfully.
+- Current mode remains quality-first searchable expansion + stronger true-live upgrades + batched commercial conversion; raw-count growth is no longer the primary goal.
+- Travelpayouts traffic-gated programs remain event-driven future unlocks. Trip.com stays P1 future unlock, not a current owner task.
