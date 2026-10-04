@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:20:00Z",
+  "generatedAt": "2026-10-04T03:43:00Z",
   "publicActivationAllowed": false,
   "gaps": [
     {
@@ -62,7 +62,8 @@
       "whyImportant": "ERN now has broad Europe/Asia/Americas coverage but still lacks strong scenic current/quasi-live representation across the Middle East and North Africa.",
       "researchEvidence": [
         "Official tourism/government pages for Oman, Jordan, Qatar and Morocco provide strong destination material but recent searches did not surface sufficiently trustworthy scenic current cameras suitable for immediate promotion.",
-        "Virtual tours and prerecorded destination films are intentionally excluded from LIVE/current semantics."
+        "Virtual tours and prerecorded destination films are intentionally excluded from LIVE/current semantics.",
+        "2026-10-04 research found current strong-provider live pages for Petra (Treasury + Visitor Center) and Muscat Aida Beach; these are now playback-gated candidates. Marrakech/Koutoubia and Tahanaout provider pages were observed OFFLINE and were not promoted."
       ],
       "disallowedShortcuts": [
         "Do not use virtual tours as current cameras.",
@@ -73,7 +74,7 @@
         "Prefer official tourism, port, airport, municipality, observatory or resort current-image feeds.",
         "Use quasi-live/current-image semantics when timestamped still imagery is reliable."
       ],
-      "lastResearchedAt": "2026-10-04T03:20:00Z"
+      "lastResearchedAt": "2026-10-04T03:43:00Z"
     },
     {
       "id": "south-pacific-islands-current-scenic",
@@ -91,7 +92,8 @@
       "whyImportant": "ERN has strong New Zealand/Australia coverage and a Cook Islands foothold, but broader Pacific island coverage remains thin.",
       "researchEvidence": [
         "Official meteorological sources are useful for weather/radar but generally do not provide scenic Earth imagery suitable for ERN.",
-        "A current Fiji resort webcam was found under maintenance and therefore was not promoted."
+        "A current Fiji resort webcam was found under maintenance and therefore was not promoted.",
+        "2026-10-04 research found first-party live webcam pages at Plantation Island Resort and Lomani Island Resort on Malolo Lailai, Fiji; both are playback-gated candidates. Vomo Island's webcam page explicitly says the camera is under maintenance, so it was not queued as current."
       ],
       "disallowedShortcuts": [
         "Do not use radar loops as scenic camera substitutes.",
@@ -100,7 +102,7 @@
       "nextResearch": [
         "Prefer tourism boards, ports, airports, councils and resorts with timestamped refreshed scenic images or live video."
       ],
-      "lastResearchedAt": "2026-10-04T03:20:00Z"
+      "lastResearchedAt": "2026-10-04T03:43:00Z"
     }
   ]
 }
