@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T02:30:00Z",
+  "generatedAt": "2026-10-04T03:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -561,7 +561,10 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "generate one Kruger destination-level Viator partner link and manually verify it; reuse it across verified Kruger places without duplicate commercial density.",
       "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
-      "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
+      "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/tours/Kruger-National-Park/5-Night-Kruger-Park-Golf-Safari/d776-112124P5",
+      "publicInventoryEvidence": "Viator currently carries Kruger National Park safari inventory with multi-day and day-safari products; a park-level tracked destination link should serve all ERN Kruger places.",
+      "candidateStatus": "PUBLIC_INVENTORY_CONFIRMED_DESTINATION_LINK_STILL_REQUIRED"
     },
     {
       "id": "viator-kilauea",
@@ -1005,10 +1008,12 @@
       "priority": "P1",
       "reason": "Viator currently has deep Istanbul sightseeing inventory, including Old City landmarks and Bosphorus experiences that map directly to the proposed municipal live views. One city-level tracked link should serve the expanded official Istanbul camera family without duplicate commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Istanbul-tours/Tours-and-Sightseeing/d585-g12",
-      "publicInventoryEvidence": "Viator currently lists 1,000+ Istanbul sightseeing products across city tours, historical tours, cruises and private experiences.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Istanbul/d585-ttd",
+      "publicInventoryEvidence": "Viator currently exposes an Istanbul destination page with 1,000+ results including Sultanahmet, Bosphorus, Hagia Sophia, Blue Mosque and city tours.",
       "nextAction": "Generate one Istanbul destination-level Viator tracked link and verify it manually; keep it downstream from Earth discovery.",
-      "sourceGateClearedAt": "2026-10-03T09:50:00Z"
+      "sourceGateClearedAt": "2026-10-03T09:50:00Z",
+      "preparedTrackedUrlCandidate": "https://www.viator.com/Istanbul/d585-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateStatus": "PREPARED_NOT_OWNER_VERIFIED"
     },
     {
       "id": "klook-bali-future",
@@ -1057,14 +1062,15 @@
       "priority": "P1",
       "reason": "Panama Canal Authority provides multiple official real-time lock cameras, while current Viator Panama City inventory includes Miraflores, Gatún and Agua Clara canal experiences. One canal-level link should serve the verified lock family.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Panama-City/d950-ttd",
-      "publicInventoryEvidence": "Current Viator Panama City inventory includes canal sightseeing, Miraflores Visitor Center, Gatún Lake and tours covering Agua Clara/Gatún Locks.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Panama-City/Day-Tour-Panama-Canal-Railway-and-San-Lorenzo-Fort-in-Colon/d950-71405P14",
+      "publicInventoryEvidence": "Viator currently carries Panama Canal experiences spanning Gatun Lake, Agua Clara Locks and canal crossings; a city/destination-level tracked link is still preferable to one product.",
       "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
       "sourceGateResolvedAt": "2026-10-03T05:30:00Z",
       "candidateTrackedUrl": "https://www.viator.com/Panama-City/d950-ttd?pid=P00322254&mcid=42383&medium=link",
       "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
       "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
-      "ownerVerificationRequired": true
+      "ownerVerificationRequired": true,
+      "candidateStatus": "PUBLIC_INVENTORY_CONFIRMED_DESTINATION_LINK_STILL_REQUIRED"
     },
     {
       "id": "viator-nairobi-national-park-future",
@@ -1521,13 +1527,15 @@
       "priority": "P1",
       "reason": "ERN now has nine healthy official Madeira current-image places, while Viator has deep Madeira inventory spanning Funchal, Porto Moniz, island tours, levada hikes and marine activities.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Madeira/d5392-ttd",
-      "publicInventoryEvidence": "Current Viator Madeira inventory contains 900+ activities, including Funchal experiences and west-island tours that explicitly visit Porto Moniz.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Madeira/d5392-ttd",
+      "publicInventoryEvidence": "Viator currently exposes a Madeira destination page with 900+ results spanning island tours, Porto Moniz, Pico do Arieiro, cruises and whale watching.",
       "candidateTrackedUrl": "https://www.viator.com/Madeira/d5392-ttd?pid=P00322254&mcid=42383&medium=link",
       "candidateTrackedUrlPreparedAt": "2026-10-03T03:30:00Z",
       "candidateTrackedUrlEvidence": "Public Viator Madeira destination URL confirmed; existing ERN direct-partner pid/mcid/medium pattern applied. Owner open/redirect verification still required before offer activation.",
       "ownerVerificationRequired": true,
-      "nextAction": "Owner only needs to open and confirm the prepared direct Viator URL when ERN batches exact-link verification; one island-level link should serve all nine Madeira places."
+      "nextAction": "Owner only needs to open and confirm the prepared direct Viator URL when ERN batches exact-link verification; one island-level link should serve all nine Madeira places.",
+      "preparedTrackedUrlCandidate": "https://www.viator.com/en-GB/Madeira/d5392-ttd?pid=P00322254&mcid=42383&medium=link",
+      "candidateStatus": "PREPARED_NOT_OWNER_VERIFIED"
     },
     {
       "id": "klook-jiufen-yangmingshan",
@@ -1586,13 +1594,14 @@
       "priority": "P1",
       "reason": "ERN now has multiple healthy current/quasi-live volcano places around the Arequipa–Colca region. Viator currently has strong Arequipa and Colca Canyon inventory, so one regional link should serve these related places without duplicate commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Arequipa/d5020-ttd",
-      "publicInventoryEvidence": "Current Viator Arequipa inventory includes Colca Canyon day trips and high-altitude regional sightseeing; a single regional planning link is preferable to one affiliate placement per volcano.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Arequipa/Full-Day-Tour-to-Colca-from-Arequipa/d5020-248584P4",
+      "publicInventoryEvidence": "Viator currently carries Arequipa/Colca inventory with Andean landscapes and regional excursions; a clean Arequipa destination link should be used instead of a single product if available.",
       "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
       "candidateTrackedUrl": "https://www.viator.com/Arequipa/d5020-ttd?pid=P00322254&mcid=42383&medium=link",
       "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
       "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
-      "ownerVerificationRequired": true
+      "ownerVerificationRequired": true,
+      "candidateStatus": "PUBLIC_INVENTORY_CONFIRMED_DESTINATION_LINK_STILL_REQUIRED"
     },
     {
       "id": "viator-popocatepetl",
