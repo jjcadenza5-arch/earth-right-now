@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T01:55:00Z",
+  "generatedAt": "2026-10-04T02:02:00Z",
   "mode": "QUALITY_FIRST_AND_BUSINESS_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 311,
+    "currentHealthyDistinctPlaceBaseline": 313,
     "targetRange": [
       300,
       350
@@ -25,7 +25,7 @@
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
     "researchCandidateCount": 224,
-    "playbackGatedCandidateCount": 12,
+    "playbackGatedCandidateCount": 10,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan-DEFERRED",
       "adjacentHighValueChecks": [
@@ -78,10 +78,10 @@
     "currentHealthyLiveImageCount": 171,
     "progressToTarget": {
       "minimumTarget": 300,
-      "current": 311,
+      "current": 313,
       "remainingToMinimum": 0,
       "stretchTarget": 350,
-      "remainingToStretch": 39,
+      "remainingToStretch": 37,
       "status": "QUALITY_FIRST_POST_300"
     },
     "recentExpansionFamilies": [
@@ -97,13 +97,13 @@
     "currentHealthyTruth": {
       "LIVE_VIDEO": 13,
       "EXTERNAL_LIVE": 72,
-      "LIVE_IMAGE": 230
+      "LIVE_IMAGE": 232
     },
     "researchCandidateStateCounts": {
       "PROMOTED_TO_SOURCE_REGISTRY": 58,
-      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 146,
+      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 148,
       "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
-      "HUMAN_PLAYBACK_REQUIRED": 12
+      "HUMAN_PLAYBACK_REQUIRED": 10
     }
   },
   "businessLane": {
@@ -218,16 +218,16 @@
     "etoshaNote": "Official Namibia Wildlife Resorts evidence supports an Okaukuejo live-camera candidate, but ERN keeps it research-only until exact target playback is human-confirmed.",
     "trafficGrowthPlan": "data/traffic-growth-priorities.json",
     "ownerActionPacket": "data/owner-action-packet.json",
-    "currentOpportunityCount": 202,
+    "currentOpportunityCount": 203,
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "ownerWorksheet": "data/exact-link-generation-worksheet.json",
     "nextMode": "QUALITY_MAINTENANCE_TRAFFIC_GROWTH_BATCHED_LINK_CONVERSION_AND_UNLOCK_READINESS",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
-    "healthyPlacesWithCommercialPath": 274,
-    "healthyPlacesWithoutCommercialPath": 37,
+    "healthyPlacesWithCommercialPath": 275,
+    "healthyPlacesWithoutCommercialPath": 38,
     "verifiedLinkHealthyPlaces": 19,
     "editorialOnlyRegistry": "data/commercial-editorial-only.json",
-    "intentionallyEditorialPlaces": 37,
+    "intentionallyEditorialPlaces": 38,
     "unclassifiedHealthyPlaces": 0,
     "trafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
     "currentNowStrategy": {
