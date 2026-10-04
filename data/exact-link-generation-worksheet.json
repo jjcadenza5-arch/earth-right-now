@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:35:00Z",
+  "generatedAt": "2026-10-04T03:55:00Z",
   "status": "OWNER_ACTION_NOT_YET_REQUIRED",
   "purpose": "One efficient owner session for exact tracked-link generation after autonomous research is complete.",
   "rule": "Never invent URLs. Use the named partner account/tool, search the exact phrase, generate the tracked link, open it manually, then record it.",
@@ -601,8 +601,32 @@
       ],
       "accountSearchPhrase": "Darmstadt Mathildenhöhe audio tour",
       "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-kolasin-montenegro",
+      "partner": "viator",
+      "destination": "Kolašin / Bjelasica",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "montenegro-kolasin-1600"
+      ],
+      "accountSearchPhrase": "Kolasin Montenegro Biogradska Gora tours",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "viator-jahorina-bosnia",
+      "partner": "viator",
+      "destination": "Jahorina / Sarajevo Olympic Mountains",
+      "intent": "activities",
+      "priority": "P1",
+      "placeIds": [
+        "bosnia-jahorina-olympic-center"
+      ],
+      "accountSearchPhrase": "Jahorina Sarajevo Olympic Mountain skiing",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
     }
   ],
-  "searchablePlaceMilestone": 314,
-  "note": "Worksheet refreshed at the 314-place quality-first baseline. Generate links only in deliberate owner batches; traffic-gated stay programs remain future unlocks."
+  "searchablePlaceMilestone": 316,
+  "note": "Worksheet refreshed at the 316-place quality-first baseline. Generate links only in deliberate owner batches; traffic-gated stay programs remain future unlocks."
 }
