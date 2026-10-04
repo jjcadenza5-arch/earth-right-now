@@ -771,3 +771,11 @@ Prepared Viator link batch — 2026-10-04:
 - Standard partner-parameter candidate URLs were prepared privately for these destinations using ERN's established Viator partner ID, but remain PREPARED_NOT_OWNER_VERIFIED and cannot become public offers until owner redirect/tracking confirmation.
 - Panama Canal, Arequipa/Colca and Kruger public inventory was also confirmed; clean destination-level tracked links are still preferred over product-specific links.
 - This reduces future owner work to opening/confirming a compact prepared batch rather than searching destinations manually.
+
+
+Planning reconciliation — 316 places / 76 countries:
+- Source-verification arithmetic corrected: 34 places remain to the 350 quality target and 84 to the 400 stretch target.
+- Remaining genuinely human-playback-gated queue is 13, not the earlier stale count of 10.
+- Geographic plan rebuilt from the active healthy place registry, including newer country coverage such as Bosnia and Herzegovina, Bulgaria, Hungary, Latvia, Montenegro, Poland, Serbia, Slovakia and Svalbard.
+- New explicit P1 quality gaps: Middle East/North Africa scenic current/quasi-live sources and broader South Pacific island coverage.
+- Virtual tours, prerecorded tourism films, weather/radar loops and untimestamped marketing images remain disallowed as substitutes for current Earth views.
