@@ -565,18 +565,7 @@ function move(d,record=true){if(!state.watch.length)return;state.watchIndex=(sta
 function updateJourneyButton(){$("#journeyToggle").textContent=state.journeyTimer?t("pauseJourney"):t("playJourney")}
 function startJourney(){if(state.journeyTimer)return;stopHeroRotation();state.journeyTimer=setInterval(()=>move(1,false),30000);updateJourneyButton()}
 function stopJourney(){if(state.journeyTimer){clearInterval(state.journeyTimer);state.journeyTimer=null}updateJourneyButton();startHeroRotation()}
-function stopHeroRotation(){if(state.heroTimer){clearInterval(state.heroTimer);state.heroTimer=null}}
-function startHeroRotation(){
-stopHeroRotation();
-const reduce=globalThis.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches===true;
-if(reduce||state.watch.length<2)return;
-state.heroTimer=setInterval(()=>{
-if(document.visibilityState!=="visible"||!$("#viewer").hidden)return;
-const hp=heroPool();if(!hp.length)return;
-const current=hp.findIndex(x=>x.id===state.selected?.id);
-const next=hp[(current+1+hp.length)%hp.length];state.watchIndex=Math.max(0,state.watch.findIndex(x=>x.id===next.id));renderHero(next);
-},45000);
-}
+function stopHeroRotation(){}function startHeroRotation(){}
 function scrollToId(id){const el=document.getElementById(id);if(!el)return;const h=document.querySelector(".topbar")?.offsetHeight||0;window.scrollTo({top:Math.max(0,el.offsetTop-h-8),behavior:"smooth"})}
 function applyLanguage(){
 document.documentElement.lang=lang;$("#languageSelect").value=lang;
