@@ -19,7 +19,7 @@ function cleanPunctuation(s){return s.replace(/[!-/:-@[-`{-~]/g," ")}
 export function normalizeEarthText(x){return cleanPunctuation((x||"").toString().normalize("NFC").toLowerCase()).replace(/\s+/g," ").trim()}
 const COMPACT_SCRIPT=/[\u0E00-\u0E7F\u3040-\u30FF\u3400-\u9FFF]/;
 function phrasePresent(text,tokens,phrase){if(phrase.includes(" "))return (" "+text+" ").includes(" "+phrase+" ");if(COMPACT_SCRIPT.test(phrase)&&[...phrase].length>1)return text.includes(phrase);return tokens.includes(phrase)}
-export function foldEarthSearchText(x){return normalizeEarthText(x).split(/(\s+)/).map(token=>/[A-Za-zÀ-ž]/.test(token)?token.normalize("NFD").replace(marks,"").normalize("NFC"):token).join("")}
+const SEARCH_EQUIV=[["纽约","new york"],["紐約","new york"],["山与雪","mountains snow"],["山與雪","mountains snow"],["海滩与水","beaches water"],["海灘與水","beaches water"],["城市与街道","cities streets"],["城市與街道","cities streets"],["野生动物与自然","wildlife nature"],["野生動物與自然","wildlife nature"]];export function foldEarthSearchText(x){let q=normalizeEarthText(x);for(const [a,b] of SEARCH_EQUIV)q=q.replaceAll(a,b);return q.split(/(\s+)/).map(token=>/[A-Za-zÀ-ž]/.test(token)?token.normalize("NFD").replace(marks,"").normalize("NFC"):token).join("")}
 export function interpretEarthIntent(q){
  const text=normalizeEarthText(q),tokens=text.split(" ").filter(Boolean),intents=[];
  for(const [intent,words] of Object.entries(SYNONYMS))if(words.some(w=>phrasePresent(text,tokens,w)))intents.push(intent);
