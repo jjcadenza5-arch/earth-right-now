@@ -1,0 +1,674 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-04T02:30:00Z",
+  "principle": "Traffic first, unlock later. ERN should grow visitor utility and real usage instead of opening every visible program.",
+  "useNow": {
+    "verifiedActiveRelationships": [
+      {
+        "id": "viator",
+        "name": "Viator Partner Program",
+        "intents": [
+          "activities",
+          "tickets"
+        ],
+        "status": "ACTIVE_PARTNER_VERIFIED"
+      },
+      {
+        "id": "travelpayouts",
+        "name": "Travelpayouts — Earthrightnow Project",
+        "intents": [
+          "activities",
+          "tickets",
+          "transport",
+          "services"
+        ],
+        "status": "ACTIVE_PROJECT_OPERATOR_CONFIRMED"
+      },
+      {
+        "id": "yesim",
+        "name": "Yesim via Travelpayouts",
+        "intents": [
+          "connectivity"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "kiwitaxi",
+        "name": "Kiwitaxi via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "localrent",
+        "name": "Localrent.com via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "kiwi-com",
+        "name": "Kiwi.com via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "gigsky",
+        "name": "GigSky via Travelpayouts",
+        "intents": [
+          "connectivity"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "airalo",
+        "name": "Airalo via Travelpayouts",
+        "intents": [
+          "connectivity"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "gettransfer",
+        "name": "GetTransfer.com via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "drimsim",
+        "name": "Drimsim via Travelpayouts",
+        "intents": [
+          "connectivity"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "getrentacar",
+        "name": "GetRentacar.com via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "airhelp",
+        "name": "AirHelp via Travelpayouts",
+        "intents": [
+          "services"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "go-city",
+        "name": "Go City via Travelpayouts",
+        "intents": [
+          "activities",
+          "tickets"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "ekta",
+        "name": "EKTA via Travelpayouts",
+        "intents": [
+          "insurance",
+          "services"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "economybookings",
+        "name": "Economybookings.com via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "bikesbooking",
+        "name": "BikesBooking.com via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "qeeq",
+        "name": "QEEQ via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "wegotrip",
+        "name": "WeGoTrip via Travelpayouts",
+        "intents": [
+          "activities",
+          "tickets"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "autoeurope",
+        "name": "AutoEurope (EU,UK) via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "radical-storage",
+        "name": "Radical Storage via Travelpayouts",
+        "intents": [
+          "services"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "aviasales",
+        "name": "Aviasales via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "intui-travel",
+        "name": "intui.travel via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "compensair",
+        "name": "Compensair via Travelpayouts",
+        "intents": [
+          "services"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "saily",
+        "name": "Saily via Travelpayouts",
+        "intents": [
+          "connectivity"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      },
+      {
+        "id": "kkday",
+        "name": "KKday via Travelpayouts",
+        "intents": [
+          "activities",
+          "tickets",
+          "transport"
+        ],
+        "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE"
+      }
+    ],
+    "accountLinkGenerationAvailable": [
+      {
+        "id": "yesim",
+        "name": "Yesim via Travelpayouts",
+        "intents": [
+          "connectivity"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "kiwitaxi",
+        "name": "Kiwitaxi via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "localrent",
+        "name": "Localrent.com via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "kiwi-com",
+        "name": "Kiwi.com via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "gigsky",
+        "name": "GigSky via Travelpayouts",
+        "intents": [
+          "connectivity"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "airalo",
+        "name": "Airalo via Travelpayouts",
+        "intents": [
+          "connectivity"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "gettransfer",
+        "name": "GetTransfer.com via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "drimsim",
+        "name": "Drimsim via Travelpayouts",
+        "intents": [
+          "connectivity"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "getrentacar",
+        "name": "GetRentacar.com via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "airhelp",
+        "name": "AirHelp via Travelpayouts",
+        "intents": [
+          "services"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "go-city",
+        "name": "Go City via Travelpayouts",
+        "intents": [
+          "activities",
+          "tickets"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "ekta",
+        "name": "EKTA via Travelpayouts",
+        "intents": [
+          "insurance",
+          "services"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "economybookings",
+        "name": "Economybookings.com via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "bikesbooking",
+        "name": "BikesBooking.com via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "qeeq",
+        "name": "QEEQ via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "wegotrip",
+        "name": "WeGoTrip via Travelpayouts",
+        "intents": [
+          "activities",
+          "tickets"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "autoeurope",
+        "name": "AutoEurope (EU,UK) via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "radical-storage",
+        "name": "Radical Storage via Travelpayouts",
+        "intents": [
+          "services"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "aviasales",
+        "name": "Aviasales via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "intui-travel",
+        "name": "intui.travel via Travelpayouts",
+        "intents": [
+          "transport"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "compensair",
+        "name": "Compensair via Travelpayouts",
+        "intents": [
+          "services"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "saily",
+        "name": "Saily via Travelpayouts",
+        "intents": [
+          "connectivity"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      },
+      {
+        "id": "kkday",
+        "name": "KKday via Travelpayouts",
+        "intents": [
+          "activities",
+          "tickets",
+          "transport"
+        ],
+        "status": "AVAILABLE_FOR_OWNER_LINK_GENERATION"
+      }
+    ]
+  },
+  "unlockLater": [
+    {
+      "id": "booking-com",
+      "name": "Booking.com via Travelpayouts",
+      "intents": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "VISIBLE_NOT_ACTIVE",
+      "observedRewardDisplay": "3–5% / €1.5 flights",
+      "observedCookie": "One session",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "agoda",
+      "name": "Agoda via Travelpayouts",
+      "intents": [
+        "stay",
+        "activities"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "1–6%",
+      "observedCookie": "1 day",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "hotels-com",
+      "name": "Hotels.com via Travelpayouts",
+      "intents": [
+        "stay"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "1.35–3.6%",
+      "observedCookie": "7 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "trip-com",
+      "name": "Trip.com via Travelpayouts",
+      "intents": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "1–5.5%",
+      "observedCookie": "7–30 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "expedia",
+      "name": "Expedia via Travelpayouts",
+      "intents": [
+        "stay",
+        "transport",
+        "activities"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "1.35–3.6%",
+      "observedCookie": "30 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "getyourguide",
+      "name": "GetYourGuide via Travelpayouts",
+      "intents": [
+        "activities"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "8%",
+      "observedCookie": "31 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "tripadvisor-experiences",
+      "name": "Tripadvisor Experiences via Travelpayouts",
+      "intents": [
+        "activities"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "8%",
+      "observedCookie": "14 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "discovercars",
+      "name": "DiscoverCars via Travelpayouts",
+      "intents": [
+        "transport"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "23–54%",
+      "observedCookie": "365 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "traveloka",
+      "name": "Traveloka via Travelpayouts",
+      "intents": [
+        "stay",
+        "transport"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "0.36–3.6% of booking amount",
+      "observedCookie": "14 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "omio",
+      "name": "Omio via Travelpayouts",
+      "intents": [
+        "transport"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "6%",
+      "observedCookie": "30 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "12go",
+      "name": "12GO via Travelpayouts",
+      "intents": [
+        "transport"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "4–5.5%",
+      "observedCookie": "30 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "hostelworld",
+      "name": "Hostelworld via Travelpayouts",
+      "intents": [
+        "stay"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "40% revenue share / fixed Social Pass reward",
+      "observedCookie": "30 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "vrbo",
+      "name": "Vrbo via Travelpayouts",
+      "intents": [
+        "stay"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "1.8%",
+      "observedCookie": "7 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster via Travelpayouts",
+      "intents": [
+        "tickets",
+        "activities"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "0–4.15%",
+      "observedCookie": "7–30 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "vio-com",
+      "name": "Vio.com via Travelpayouts",
+      "intents": [
+        "stay"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "40–64% revenue share",
+      "observedCookie": "30 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    },
+    {
+      "id": "rakuten-travel-intl",
+      "name": "Rakuten Travel (INTL) via Travelpayouts",
+      "intents": [
+        "stay",
+        "transport"
+      ],
+      "status": "TRAFFIC_GATED_OR_NOT_YET_UNLOCKED",
+      "ownerReportedAccessState": "OWNER_REPORTED_NOT_UNLOCKED_YET",
+      "observedRewardDisplay": "0.8–5%",
+      "observedCookie": "30 days",
+      "action": "WAIT_AND_RECHECK_AFTER_MEANINGFUL_TRAFFIC_GROWTH",
+      "note": "Catalog visibility is not activation. Do not treat displayed reward terms as an earnings forecast."
+    }
+  ],
+  "priorityUnlocks": [
+    {
+      "id": "trip-com",
+      "reason": "Broad stay + transport + activities coverage; high strategic value once unlocked."
+    },
+    {
+      "id": "hotels-com",
+      "reason": "Fills ERN's accommodation gap with global inventory."
+    },
+    {
+      "id": "agoda",
+      "reason": "Strong Asia-Pacific accommodation coverage matching ERN's geographic strengths."
+    },
+    {
+      "id": "expedia",
+      "reason": "Broad lodging/travel utility; useful as ERN traffic becomes more global."
+    },
+    {
+      "id": "getyourguide",
+      "reason": "Activities/tours complement Viator/Klook/Tiqets once traffic supports another large experiences partner."
+    },
+    {
+      "id": "booking-com",
+      "reason": "High-value global travel coverage but prior rejection means wait for materially stronger account/traffic state."
+    }
+  ],
+  "doNotChaseYet": [
+    "tripadvisor-experiences",
+    "discovercars",
+    "traveloka",
+    "omio",
+    "12go",
+    "hostelworld",
+    "vrbo",
+    "ticketmaster",
+    "vio-com",
+    "rakuten-travel-intl"
+  ],
+  "recheckTrigger": "Material traffic growth, a Travelpayouts status change, or owner-visible unlock/application eligibility.",
+  "safeguards": {
+    "paidRanking": false,
+    "automaticPlacement": false,
+    "automaticLinkRewriting": false,
+    "revenueForecast": false
+  }
+}
