@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T04:18:00Z",
+  "generatedAt": "2026-10-04T04:22:00Z",
   "status": "OWNER_ACTION_ACTIVE_SMALL_BATCH",
   "purpose": "One efficient owner session for exact tracked-link generation after autonomous research is complete.",
   "rule": "Never invent URLs. Use the named partner account/tool, search the exact phrase, generate the tracked link, open it manually, then record it.",
@@ -15,7 +15,10 @@
         "fiji-malolo-lailai"
       ],
       "accountSearchPhrase": "Fiji Mamanuca Islands activities",
-      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+      "currentState": "OWNER_LINK_GENERATED_MANUAL_OPEN_REQUIRED",
+      "generatedTrackedUrl": "https://klook.tpo.mx/DjkpjcEv",
+      "generatedAt": "2026-10-04T04:22:00Z",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-muscat-oman-future",
