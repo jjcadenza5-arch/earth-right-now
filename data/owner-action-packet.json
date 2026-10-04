@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:40:00Z",
+  "generatedAt": "2026-10-04T01:55:00Z",
   "status": "DORMANT_UNTIL_OWNER_BATCH_IS_WORTHWHILE",
   "purpose": "Bundle owner-only affiliate link generation and playback checks into worthwhile sessions instead of interrupting ERN expansion one item at a time.",
   "sourceVerificationBatch": [
@@ -73,8 +73,8 @@
     "No automatic rewriting",
     "No source truth changes from commercial value"
   ],
-  "batchRationale": "308 healthy searchable places are now classified. Owner work stays dormant until a worthwhile bundled session: prioritize a compact exact-link batch plus broad utilities; Trip.com and other stay programs remain traffic-triggered future unlocks.",
-  "searchablePlaceMilestone": 308,
+  "batchRationale": "311 healthy searchable places are fully classified: 274 have an explicit commercial path and 37 remain intentionally editorial-only. Owner work stays dormant until a worthwhile bundled session; Trip.com and other stay programs remain event-driven future unlocks.",
+  "searchablePlaceMilestone": 311,
   "secondWaveAffiliateBatch": [
     "viator-st-moritz",
     "viator-dolomiti-superski",
@@ -94,5 +94,6 @@
     "viator-longyearbyen"
   ],
   "trafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
-  "futureProgramNote": "Trip.com remains ERN's P1 future stay/transport/activity addition once Travelpayouts unlocks it. Do not recheck repeatedly; wait for material traffic/conversion growth or a platform status change."
+  "futureProgramNote": "Trip.com remains ERN's P1 future stay/transport/activity addition once Travelpayouts unlocks it. Do not recheck repeatedly; wait for material traffic/conversion growth or a platform status change.",
+  "trafficUnlockReadiness": "data/travelpayouts-unlock-readiness.json"
 }
