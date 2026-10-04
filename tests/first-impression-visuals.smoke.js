@@ -7,6 +7,6 @@ assert.match(app,/else v\.append\(scenicPoster\(s\)\)/,"wander cards without thu
 assert.match(css,/grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/,"mobile feeling/place cards should stay compact in two columns");
 assert.match(css,/grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/,"mobile dock should stay on one compact four-item row");
 assert.match(css,/content:"ILLUSTRATIVE"/,"illustrative card artwork must be labeled");
-assert.match(css,/ern-fuji-mockup-hero\.jpg/,"approved Mount Fuji hero asset must remain active");
+assert.match(css,/ern-fuji-hero\\.svg/,"approved Mount Fuji hero asset must remain active");
 assert.match(app,/data\.scene="snow"|dataset\.scene="snow"/,"fallback card system should retain snow visual family");
 console.log("ERN visual fallback and compact mobile discovery regression checks passed");
