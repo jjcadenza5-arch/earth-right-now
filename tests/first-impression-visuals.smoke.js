@@ -5,7 +5,8 @@ const css=readFileSync(new URL("../src/styles-lite.css",import.meta.url),"utf8")
 assert.match(app,/function wanderCard\(s\)[\s\S]*installVisualFallback\(el,v,s\)/,"wander cards must fall back when thumbnails fail");
 assert.match(app,/else v\.append\(scenicPoster\(s\)\)/,"wander cards without thumbnails need truthful illustrative fallback");
 assert.match(css,/grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/,"mobile feeling/place cards should stay compact in two columns");
-assert.match(css,/\.mobile-dock\{[^}]*display:flex!important/s,"mobile dock should use flex layout on small screens");\nassert.match(css,/flex-wrap:nowrap!important/,"mobile dock should stay on one compact four-item row");
+assert.match(css,/\.mobile-dock\{[^}]*display:flex!important/s,"mobile dock should use flex layout on small screens");
+assert.match(css,/flex-wrap:nowrap!important/,"mobile dock should stay on one compact four-item row");
 assert.match(css,/content:"ILLUSTRATIVE"/,"illustrative card artwork must be labeled");
 assert.match(css,/ern-fuji-mockup-hero\.jpg/,"approved photographic Mount Fuji mockup hero asset must remain active");
 assert.match(app,/data\.scene="snow"|dataset\.scene="snow"/,"fallback card system should retain snow visual family");
