@@ -3258,8 +3258,11 @@
       "evidence": "Official Jasná resort page states visitors are watching internet webcam live streams from the resort and lists multiple Chopok/Jasná camera positions.",
       "researchEvidence": "Official resort camera family includes Chopok east/west, Biela Púť, Luková, Konský Grúň, Krupová and other mountain positions. Treat these as one Jasná/Chopok destination for searchable-place counting.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Jasná webcams page and confirm at least one camera plays/updates normally. Do not count multiple camera angles as separate destinations."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Jasná webcams page and confirm at least one camera plays/updates normally. Do not count multiple camera angles as separate destinations.",
+      "promotedAt": "2026-10-04T01:45:00Z",
+      "promotionTruth": "LIVE_IMAGE",
+      "verification": "Official provider/destination webcam page evidence; Search/Explore only, Watch Earth held."
     },
     {
       "id": "bansko-ski-resort-bulgaria",
@@ -3322,8 +3325,11 @@
       "evidence": "Official Kékestető destination site exposes webcams for the South Ski Resort and Tower Lookout – North-West.",
       "researchEvidence": "Kékestető's official site presents the webcams alongside current mountain/destination information. Human check is still required before ERN promotes it as current/live.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Kékestető webcam page and confirm the South Ski Resort or Tower Lookout camera visibly updates/currently reflects conditions."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Kékestető webcam page and confirm the South Ski Resort or Tower Lookout camera visibly updates/currently reflects conditions.",
+      "promotedAt": "2026-10-04T01:45:00Z",
+      "promotionTruth": "LIVE_IMAGE",
+      "verification": "Official provider/destination webcam page evidence; Search/Explore only, Watch Earth held."
     },
     {
       "id": "bratislava-city-live",
@@ -3407,7 +3413,8 @@
     "2026-10-03 quality-first batch promoted Longyearbyen/UNIS, Wairoa River and Foxton Beach as searchable quasi-live LIVE_IMAGE sources; Watch Earth truth remains stricter.",
     "2026-10-03 post-200 geography batch added Slovakia (Jasná/Chopok) and Bulgaria (Bansko, Borovets) from official resort webcam families. These are grouped by real destination and remain playback-gated; no fake place inflation.",
     "2026-10-03 post-200 quasi-live batch promoted Bansko, Borovets and Kopaonik as three real searchable destinations; resort camera angles remain grouped and Watch Earth remains held.",
-    "2026-10-03 post-200 geography research added Hungary/Kékestető and Bratislava city live-camera routes from official destination/tourism sources; both remain human-check gated."
+    "2026-10-03 post-200 geography research added Hungary/Kékestető and Bratislava city live-camera routes from official destination/tourism sources; both remain human-check gated.",
+    "2026-10-04 Jasná/Chopok and Kékestető promoted conservatively to searchable LIVE_IMAGE based on official webcam pages. Both remain held out of Watch Earth pending direct playback review."
   ],
   "researchGaps": [
     {
