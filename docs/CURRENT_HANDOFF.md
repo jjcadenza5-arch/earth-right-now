@@ -985,3 +985,13 @@ while preserving the startup/performance ceiling and existing product gates.
 - Expanded search-metadata audit samples to cover the new local-language/transliteration cases.
 - Public generative Guide and public Now Moments remain OFF; ranking remains commercial-neutral; startup/core payload ceilings remain hard.
 - Continue autonomously into remaining completion/operations work rather than repeated homepage polishing.
+
+
+### Lightweight brand / Atlas refinement + autonomous continuation — 2026-10-05
+- Preserved the accepted photographic Mount Fuji hero; do not reopen it by preference alone.
+- Added a lightweight globe-based ERN brand mark at `assets/ern-mark-globe.svg` and switched the homepage plus core public brand pages to it. The mark keeps the existing rounded-window identity but uses a recognizable globe/Earth treatment that stays legible at small header sizes.
+- Refined the Living Atlas using the existing local Natural Earth public-domain vector only: more Earth-like ocean/land presentation, softer atmospheric depth and subtle inset relief, with no new runtime map library or network dependency.
+- Pin semantics, coordinate provenance, map filtering, source truth and performance boundaries are unchanged.
+- First-impression refinement remains bounded: no layout redesign, no accepted-hero changes, no feature-gate changes.
+- Continued retrieval/discovery work from the previous tranche; public Guide and Now Moments remain OFF and ranking remains commercial-neutral.
+- Future optional idea only: a slow curated editorial hero rotation (daily/weekly), screensaver-like. Do not activate unless it can preserve the accepted layout, editorial truth and performance without introducing fragility.
