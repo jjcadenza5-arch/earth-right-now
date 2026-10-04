@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:30:00Z",
-  "healthyPlaceBaseline": 300,
-  "placesWithCommercialPath": 265,
-  "intentionallyUncoveredCount": 35,
+  "generatedAt": "2026-10-04T01:50:00Z",
+  "healthyPlaceBaseline": 311,
+  "placesWithCommercialPath": 274,
+  "intentionallyUncoveredCount": 37,
   "principle": "ERN does not need a commercial path on every place. Scientific, remote, monitoring and low-intent views remain editorial-first unless a genuinely useful visitor action emerges.",
   "rows": [
     {
@@ -266,5 +266,6 @@
       "commercialState": "DEFER_NO_FORCED_MONETIZATION"
     }
   ],
-  "recheckRule": "Reconsider only when a destination gains clear visitor-planning utility or a suitable active/link-generation-capable partner has destination-specific inventory."
+  "recheckRule": "Reconsider editorial-only places only when a destination gains clear visitor-planning utility or a suitable active/link-generation-capable partner has destination-specific inventory.",
+  "unclassifiedHealthyCount": 0
 }
