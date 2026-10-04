@@ -866,3 +866,17 @@ First-impression close-out / release reliability — 2026-10-04:
 - Supplemental Search destinations are included in crawlable destination-page generation and sitemap/discovery output without entering startup payload, Watch Earth, hero ranking or Atlas.
 - Repaired Dresden Old Town and Radebeul weathercam links to the current official Dresden Elbland weathercam endpoint after the old endpoint returned 410.
 - All source-truth, commercial-neutrality, public Guide/Now Moments gates and strict performance ceilings remain unchanged.
+
+
+New-chat continuation checkpoint — 2026-10-04 22:11 ICT:
+- Canonical repo remains jjcadenza5-arch/earth-right-now on main. Current production head: 43f36526a8f2b319d662834d7dfa05dc2a053699.
+- Latest GitHub Pages deployment for that exact head completed successfully at 2026-10-04T14:48:06Z. Earlier failed deploys in the same hour were superseded by this successful release.
+- Owner screenshots from roughly 19:47–19:50 ICT still showed two visible defects in the then-served build: a visibly pixelated Mount Fuji hero and an oversized 2x2 mobile dock. Subsequent current-main fixes replaced the hero dependency with the local crisp assets/ern-fuji-hero.svg editorial artwork and standardized the mobile dock as one compact four-action row. Owner has not yet supplied a screenshot after the final 21:48 ICT successful deployment, so do not reopen these items unless the current production view still reproduces them.
+- Hero truth contract: Mount Fuji is editorial/FEATURED, not a claimed live Fuji feed. Do not label the hero LIVE/CURRENT.
+- Hero CTA contract: the large Watch Earth Now action opens an eligible current ERN window immediately when one exists; header/mobile Watch remains the browse/jump-to-Watch-section action.
+- Card truth contract: use a real source thumbnail when valid; otherwise use a deterministic scenic fallback marked ILLUSTRATIVE. Never turn illustrative art into a fake camera frame.
+- Core inventory remains 319 healthy searchable places across 79 countries/territories plus 20 lazy Search-only supplemental places = 339 combined searchable destinations. The core sources.json 300 KB ceiling remains hard and must not be raised.
+- Public Guide and public Now Moments remain OFF. Affiliate/commercial value must never affect Earth ranking.
+- First-impression work should now be treated as CLOSED unless there is a reproducible functional or responsive defect. Do not keep polishing the same homepage by preference alone.
+- Next productive phase should resume AI Search Discovery Readiness / destination understanding: strengthen crawlable destination metadata, aliases/local-language search equivalence, structured public facts, related-destination links, and retrieval quality without bloating first load. The latest successful release already includes the repaired search-alias smoke test and shared multilingual search-intent work.
+- Working style remains large autonomous batches. Do not return for micro-decisions. Come back only for a real owner playback check, exact affiliate-account action, legal/payment decision, or a substantial review point.
