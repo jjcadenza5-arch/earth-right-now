@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-04T02:55:00Z",
+  "publicActivationAllowed": false,
+  "principle": "Useful global planning utilities should appear only after a visitor has chosen a place or trip-planning action. They never influence Earth discovery ranking.",
+  "tiers": [
+    {
+      "tier": 1,
+      "label": "Best near-term utility tests",
+      "programs": [
+        {
+          "id": "yesim",
+          "use": "eSIM / connectivity",
+          "scope": "global",
+          "why": "Low-friction post-discovery utility; useful across many ERN destinations without destination-specific inventory."
+        },
+        {
+          "id": "kiwitaxi",
+          "use": "airport/city transfers",
+          "scope": "destination-aware",
+          "why": "Complements live destination discovery with a practical arrival action."
+        },
+        {
+          "id": "kiwi-com",
+          "use": "flights",
+          "scope": "global",
+          "why": "Broad transport utility once a visitor decides to go."
+        },
+        {
+          "id": "radical-storage",
+          "use": "luggage storage",
+          "scope": "city destinations",
+          "why": "Useful in major cities without competing with the core camera experience."
+        }
+      ]
+    },
+    {
+      "tier": 2,
+      "label": "Useful after initial utility test",
+      "programs": [
+        {
+          "id": "airalo",
+          "use": "eSIM / connectivity",
+          "scope": "global",
+          "why": "Alternative eSIM inventory; avoid showing multiple equivalent providers at once."
+        },
+        {
+          "id": "saily",
+          "use": "eSIM / connectivity",
+          "scope": "global",
+          "why": "Alternative eSIM; should be tested against one primary provider rather than stacked."
+        },
+        {
+          "id": "localrent",
+          "use": "car rental",
+          "scope": "selected destinations",
+          "why": "Strong fit for islands, rural regions and scenic road-trip places."
+        },
+        {
+          "id": "economybookings",
+          "use": "car rental",
+          "scope": "global",
+          "why": "Broad car-rental option, but should not duplicate Localrent density."
+        },
+        {
+          "id": "gettransfer",
+          "use": "transfers",
+          "scope": "global",
+          "why": "Alternative transfer provider; use only when Kiwitaxi/Welcome Pickups coverage is weak."
+        }
+      ]
+    },
+    {
+      "tier": 3,
+      "label": "Destination products",
+      "programs": [
+        {
+          "id": "go-city",
+          "use": "city attraction passes",
+          "scope": "supported cities",
+          "why": "Already queued for New York, London, Chicago, Sydney, Rome and Dublin."
+        },
+        {
+          "id": "kkday",
+          "use": "activities/tickets",
+          "scope": "Asia-heavy destinations",
+          "why": "Already queued where it adds useful inventory such as Taiwan."
+        }
+      ]
+    }
+  ],
+  "availableProgramEvidence": [
+    {
+      "id": "yesim",
+      "name": "Yesim via Travelpayouts",
+      "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE",
+      "relationshipActive": true,
+      "publicActivationAllowed": false,
+      "trackedLinksAllowed": true
+    },
+    {
+      "id": "airalo",
+      "name": "Airalo via Travelpayouts",
+      "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE",
+      "relationshipActive": true,
+      "publicActivationAllowed": false,
+      "trackedLinksAllowed": true
+    },
+    {
+      "id": "saily",
+      "name": "Saily via Travelpayouts",
+      "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE",
+      "relationshipActive": true,
+      "publicActivationAllowed": false,
+      "trackedLinksAllowed": true
+    },
+    {
+      "id": "kiwitaxi",
+      "name": "Kiwitaxi via Travelpayouts",
+      "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE",
+      "relationshipActive": true,
+      "publicActivationAllowed": false,
+      "trackedLinksAllowed": true
+    },
+    {
+      "id": "kiwi-com",
+      "name": "Kiwi.com via Travelpayouts",
+      "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE",
+      "relationshipActive": true,
+      "publicActivationAllowed": false,
+      "trackedLinksAllowed": true
+    },
+    {
+      "id": "radical-storage",
+      "name": "Radical Storage via Travelpayouts",
+      "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE",
+      "relationshipActive": true,
+      "publicActivationAllowed": false,
+      "trackedLinksAllowed": true
+    },
+    {
+      "id": "economybookings",
+      "name": "Economybookings.com via Travelpayouts",
+      "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE",
+      "relationshipActive": true,
+      "publicActivationAllowed": false,
+      "trackedLinksAllowed": true
+    },
+    {
+      "id": "localrent",
+      "name": "Localrent.com via Travelpayouts",
+      "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE",
+      "relationshipActive": true,
+      "publicActivationAllowed": false,
+      "trackedLinksAllowed": true
+    },
+    {
+      "id": "gettransfer",
+      "name": "GetTransfer.com via Travelpayouts",
+      "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE",
+      "relationshipActive": true,
+      "publicActivationAllowed": false,
+      "trackedLinksAllowed": true
+    },
+    {
+      "id": "go-city",
+      "name": "Go City via Travelpayouts",
+      "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE",
+      "relationshipActive": true,
+      "publicActivationAllowed": false,
+      "trackedLinksAllowed": true
+    },
+    {
+      "id": "kkday",
+      "name": "KKday via Travelpayouts",
+      "status": "OWNER_ACCOUNT_LINK_GENERATION_AVAILABLE",
+      "relationshipActive": true,
+      "publicActivationAllowed": false,
+      "trackedLinksAllowed": true
+    }
+  ],
+  "rules": {
+    "onePrimaryProviderPerIntent": true,
+    "exactVerifiedLinkRequired": true,
+    "noAutomaticPlacement": true,
+    "noAutomaticRewriting": true,
+    "noCommissionRanking": true,
+    "noUtilityCardBeforePlaceChoice": true
+  },
+  "nextOwnerBatch": [
+    "yesim",
+    "kiwitaxi",
+    "kiwi-com",
+    "radical-storage"
+  ],
+  "note": "Prepared only. Do not ask owner for links until source/content work no longer has higher autonomous value or a coherent batch is ready."
+}
