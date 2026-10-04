@@ -7,7 +7,7 @@ console.assert(aliases.places["kyoto-nishiki-market"].includes("錦市場"),"Jap
 console.assert(aliases.places["jordan-petra"].includes("البتراء"),"Arabic Petra alias present");
 const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
 console.assert(app.includes("place-search-aliases.json"),"lazy alias file wired into visitor search");
-console.assert(app.includes("state.searchAliases?.[s.placeId||s.id]"),"place aliases included in search document");
+console.assert(app.includes("state.sa?.[s.placeId||s.id]"),"place aliases included in search document");
 const builder=fs.readFileSync(new URL("../scripts/build-destination-pages.mjs",import.meta.url),"utf8");
 console.assert(builder.includes("place-search-aliases.json"),"destination builder consumes alias sidecar");
 console.log("place search aliases smoke ok");
