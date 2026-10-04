@@ -697,3 +697,16 @@ Post-200 Europe / traffic-unlock checkpoint — 2026-10-03:
 - ERN now has a dedicated data/traffic-unlock-evidence-plan.json. It deliberately does not invent private Travelpayouts traffic thresholds.
 - Priority gated programs for later recheck: Trip.com, Hotels.com, Expedia, Agoda, GetYourGuide and DiscoverCars.
 - Current action is to grow real visitor traffic and utility using accessible programs rather than repeatedly probing locked catalog cards.
+
+
+313-place checkpoint — 2026-10-04:
+- Canonical healthy searchable catalog is now 313 distinct places from 321 source records.
+- Healthy truth mix: 13 LIVE_VIDEO, 72 EXTERNAL_LIVE, 232 LIVE_IMAGE.
+- New searchable quasi-live places: Jasná / Chopok (Slovakia) and Kékestető / Mátra Mountains (Hungary). Both are Search/Explore only and held out of Watch Earth pending direct playback review.
+- Source catalog was re-compacted to stay below the strict 300 KB production source-file limit; normalized duplicate aliases were removed.
+- Research registry now has 224 candidates: 58 promoted to source registry, 148 promoted to searchable quasi-live, 8 superseded, 10 still human-playback-gated.
+- Commercial classification is complete at this checkpoint: 275 healthy places have an explicit commercial path, 38 are intentionally editorial-only, 0 are unclassified.
+- Commercial opportunity registry now has 203 opportunities: 16 verified-link, 178 exact-link/account-search, 7 source-gated, 2 source-gap-blocked.
+- Bansko and Borovets received Viator research paths; Jasná received a cautious Viator/Slovakia mountain path; Kékestető remains intentionally editorial-first.
+- Travelpayouts traffic-gated programs remain event-driven future unlocks. New readiness file: data/travelpayouts-unlock-readiness.json.
+- Trip.com remains the first future unlock target once Travelpayouts account state or real traffic/conversion evidence materially changes.
