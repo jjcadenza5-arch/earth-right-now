@@ -952,3 +952,9 @@ Use real indexing/crawl feedback to prioritize:
 - search-result quality improvements,
 - local-language retrieval expansion,
 while preserving the startup/performance ceiling and existing product gates.
+
+
+### Owner update — Google Search Console verification already complete
+- Owner confirmed Google Search Console ownership verification for `https://earthrightnow.app/` was already completed before this checkpoint.
+- Do not ask the owner to repeat property verification.
+- Next owner-side evidence to collect is sitemap/indexing state: sitemap submission/acceptance and URL Inspection results for the homepage, `/places/`, `/discover/`, and a representative destination page.
