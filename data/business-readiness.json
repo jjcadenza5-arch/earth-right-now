@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T02:05:00Z",
+  "generatedAt": "2026-10-04T03:40:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -94,7 +94,7 @@
     ],
     "currentCommercialOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 178,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 179,
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 7,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
@@ -104,8 +104,8 @@
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
-    "currentCommercialOpportunityCount": 203,
-    "healthyPlacesWithCommercialPath": 275,
+    "currentCommercialOpportunityCount": 204,
+    "healthyPlacesWithCommercialPath": 276,
     "healthyPlacesWithoutCommercialPath": 38,
     "verifiedLinkHealthyPlaces": 19,
     "travelpayoutsTrafficGatedProgramsObserved": true,
@@ -146,11 +146,11 @@
     "travelpayoutsUnlockStrategy": "TRAFFIC_LED_RECHECK_ONLY_ON_STATUS_CHANGE_OR_MATERIAL_GROWTH",
     "nextPreferredUnlock": "trip-com",
     "nextPreferredUnlockReason": "Trip.com remains the highest-value future unlock because one program could add stay plus transport/activity utility across many ERN destinations; current account state is visible but not unlocked.",
-    "currentSearchableCountries": 69,
-    "sourceRuntimeCatalogChars": 292196,
+    "currentSearchableCountries": 74,
+    "sourceRuntimeCatalogChars": 293157,
     "sourceExpansionCandidateStates": {
       "PROMOTED_TO_SOURCE_REGISTRY": 58,
-      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 148,
+      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 149,
       "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
       "HUMAN_PLAYBACK_REQUIRED": 10
     },
@@ -243,7 +243,9 @@
     "Runtime sources.json re-minified after the 308-place quality batch; full provenance remains in data/source-evidence.json.",
     "Owner Travelpayouts catalog mapped into use-now/selective/traffic-gated tiers",
     "Post-200 affiliate access strategy written to data/affiliate-access-strategy.json",
-    "Go City identified as currently link-generation available for selective city-pass expansion"
+    "Go City identified as currently link-generation available for selective city-pass expansion",
+    "Latvia / Valmiera added as a new-country searchable quasi-live place under explicit Search/Explore-only truth rules.",
+    "Darmstadt / Mathildenhöhe moved from editorial-only to a WeGoTrip exact-link research path using currently visible product evidence."
   ],
   "humanOnlyRemaining": [
     {
@@ -282,14 +284,14 @@
     "Do not repeatedly ask owner to recheck locked Travelpayouts programs; recheck only on meaningful traffic/account-state change",
     "Locked/traffic-gated programs may not be treated as active or available"
   ],
-  "currentHealthySearchablePlaces": 313,
+  "currentHealthySearchablePlaces": 314,
   "releaseHealth": {
-    "pagesDeployment": "SUCCESS_2026-10-04T01:46Z",
-    "operationsCheck": "SUCCESS_AFTER_RECOMPACT_2026-10-04T01:46Z",
+    "pagesDeployment": "PENDING_RECHECK_AFTER_314_PLACE_BATCH",
+    "operationsCheck": "PENDING_RECHECK_AFTER_314_PLACE_BATCH",
     "sourceCatalogRuntimeEvidence": "RIGHTS_BASIS_AND_FRESHNESS_EVIDENCE_RETAINED",
     "verboseSourceEvidenceSidecar": "data/source-evidence.json",
     "sourceCatalogArchitecture": "MINIFIED_RUNTIME_CATALOG_PLUS_VERBOSE_EVIDENCE_SIDECAR",
-    "sourceCatalogHeadroom": "RESTORED_AT_292196_CHARS_AFTER_313_PLACE_BATCH",
-    "lastKnownGreenBaseline": "PAGES_AND_OPERATIONS_GREEN_AT_313_SEARCHABLE_PLACES"
+    "sourceCatalogHeadroom": "293157_CHARS_AFTER_314_PLACE_BATCH",
+    "lastKnownGreenBaseline": "PAGES_GREEN_AT_313_SEARCHABLE_PLACES_BEFORE_LATVIA_BATCH"
   }
 }
