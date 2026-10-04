@@ -1,24 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="t d">
-<title id="t">Earth Right Now</title><desc id="d">A window onto the blue Earth</desc>
-<defs>
-  <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dff5ff"/><stop offset=".42" stop-color="#7aaad1"/><stop offset="1" stop-color="#d9eef7"/></linearGradient>
-  <radialGradient id="space" cx=".72" cy=".18" r=".92"><stop stop-color="#315f79"/><stop offset=".42" stop-color="#102b3b"/><stop offset="1" stop-color="#031119"/></radialGradient>
-  <radialGradient id="earth" cx=".56" cy=".2" r=".9"><stop stop-color="#9ee8ff"/><stop offset=".24" stop-color="#42a8df"/><stop offset=".68" stop-color="#0a5f9a"/><stop offset="1" stop-color="#05345f"/></radialGradient>
-  <linearGradient id="land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9fd08c"/><stop offset=".55" stop-color="#3d8d69"/><stop offset="1" stop-color="#1f5a48"/></linearGradient>
-  <filter id="glow"><feGaussianBlur stdDeviation="3.2"/></filter>
-  <clipPath id="clip"><rect x="28" y="22" width="104" height="116" rx="25"/></clipPath>
-</defs>
-<rect x="10" y="8" width="140" height="144" rx="36" fill="#0d3040"/>
-<rect x="18" y="14" width="124" height="132" rx="31" fill="none" stroke="url(#frame)" stroke-width="6"/>
-<g clip-path="url(#clip)">
-  <rect x="28" y="22" width="104" height="116" fill="url(#space)"/>
-  <circle cx="119" cy="44" r="23" fill="#bfe9ff" opacity=".2" filter="url(#glow)"/>
-  <circle cx="80" cy="123" r="67" fill="url(#earth)"/>
-  <path d="M33 110c13-9 21-3 31-11 8-6 10-18 23-17 9 1 13 9 22 9 9 0 16-7 28-10v48H31z" fill="url(#land)" opacity=".95"/>
-  <path d="M28 86c25-14 66-17 103-5" fill="none" stroke="#e8fbff" stroke-width="3.5" opacity=".78"/>
-  <path d="M30 91c27-11 63-12 100-2" fill="none" stroke="#fff" stroke-width="1.2" opacity=".35"/>
-  <circle cx="109" cy="63" r="3" fill="#fff" opacity=".8"/>
-  <circle cx="115" cy="58" r="1.2" fill="#fff" opacity=".75"/>
-</g>
-<rect x="28" y="22" width="104" height="116" rx="25" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/>
+<title id="t">Earth Right Now</title><desc id="d">A simple window onto Earth</desc>
+<rect x="12" y="12" width="136" height="136" rx="34" fill="#092d2a"/>
+<rect x="22" y="22" width="116" height="116" rx="27" fill="#0b3b3b" stroke="#d8f0ee" stroke-width="4"/>
+<rect x="30" y="30" width="100" height="100" rx="21" fill="#102f45"/>
+<path d="M30 92c22-16 43-20 63-15 14 4 24 13 37 15v38H30z" fill="#147db1"/>
+<path d="M30 105c20-8 35-7 50-2 13 4 24 12 50 10v17H30z" fill="#4a9d71"/>
+<path d="M30 88c24-11 51-12 100-1" fill="none" stroke="#e7fbff" stroke-width="3.2" stroke-linecap="round" opacity=".9"/>
+<circle cx="111" cy="54" r="5" fill="#f4fbff"/>
 </svg>
