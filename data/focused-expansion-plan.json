@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:20:00Z",
+  "generatedAt": "2026-10-04T03:46:00Z",
   "mode": "QUALITY_FIRST_AND_BUSINESS_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 316,
@@ -24,8 +24,8 @@
       "mauritius-grand-baie"
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
-    "researchCandidateCount": 224,
-    "playbackGatedCandidateCount": 10,
+    "researchCandidateCount": 235,
+    "playbackGatedCandidateCount": 18,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan-DEFERRED",
       "adjacentHighValueChecks": [
@@ -101,14 +101,14 @@
     },
     "researchCandidateStateCounts": {
       "PROMOTED_TO_SOURCE_REGISTRY": 58,
-      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 148,
+      "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 151,
       "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
-      "HUMAN_PLAYBACK_REQUIRED": 10
+      "HUMAN_PLAYBACK_REQUIRED": 18
     },
     "currentHealthyCountryCount": 76,
     "remainingTo350": 34,
     "remainingTo400": 84,
-    "remainingHumanPlaybackQueue": 13,
+    "remainingHumanPlaybackQueue": 18,
     "currentPriorityGaps": [
       "Middle East / North Africa",
       "South Pacific islands",
@@ -179,7 +179,10 @@
       "klook-poas-future",
       "viator-rincon-costa-rica-future",
       "viator-cotopaxi-future",
-      "viator-nicaragua-volcanoes-future"
+      "viator-nicaragua-volcanoes-future",
+      "viator-petra-jordan-future",
+      "viator-muscat-oman-future",
+      "klook-fiji-future"
     ],
     "accommodationResearch": [
       "hotels-com",
@@ -187,15 +190,15 @@
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 16,
-    "exactLinkQueueCount": 165,
-    "sourceGatedQueueCount": 5,
+    "exactLinkQueueCount": 184,
+    "sourceGatedQueueCount": 11,
     "sourceGapBlockedCount": 2,
     "sourceGatedOpportunityCount": 31,
     "quasiLiveCommercialRule": "A healthy quasi-live searchable place may unlock downstream travel planning, but commercial value never changes truth/currentness.",
     "currentOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 108,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 6,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 184,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 11,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
     "priorityRule": "Prefer exact destination/product fit inside existing active partners before broad generic destination links. Batch owner link generation rather than interrupting one destination at a time.",
@@ -204,8 +207,8 @@
     "istanbulDenpasarUnlocked": true,
     "currentCommercialStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 165,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 5,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 184,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 11,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
     "trafficUnlockRoadmap": "data/travelpayouts-unlock-roadmap.json",
@@ -229,7 +232,7 @@
     "etoshaNote": "Official Namibia Wildlife Resorts evidence supports an Okaukuejo live-camera candidate, but ERN keeps it research-only until exact target playback is human-confirmed.",
     "trafficGrowthPlan": "data/traffic-growth-priorities.json",
     "ownerActionPacket": "data/owner-action-packet.json",
-    "currentOpportunityCount": 203,
+    "currentOpportunityCount": 213,
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "ownerWorksheet": "data/exact-link-generation-worksheet.json",
     "nextMode": "QUALITY_MAINTENANCE_TRAFFIC_GROWTH_BATCHED_LINK_CONVERSION_AND_UNLOCK_READINESS",
