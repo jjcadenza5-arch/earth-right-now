@@ -791,3 +791,14 @@ Visual Trust & Premium UI Refinement — 2026-10-04:
 - Mobile/reduced-motion/focus-visible safeguards were preserved.
 - Full JavaScript syntax, Operations and GitHub Pages release checks all passed after the refinement.
 - No source ranking, commercial ranking, search, Atlas data, live-current semantics, public Guide gate or Now Moments gate was changed.
+
+
+Middle East / South Pacific gap batch — 2026-10-04:
+- Reconciled actual `main` before continuing: ERN is already at 316 healthy searchable places, well beyond the older 91-place handoff snapshot; later valid work was preserved.
+- Added five research-only, human-playback-gated camera candidates: Petra Treasury, Petra Visitor Center, Muscat Aida Beach, Plantation Island Resort (Fiji) and Lomani Island Resort (Fiji).
+- Petra's two cameras and Fiji's two Malolo Lailai resort cameras are explicitly subject to duplicate-place consolidation; multiple views must not inflate distinct-place counts.
+- Current provider evidence showed Marrakech/Koutoubia and Tahanaout cameras offline; they were not promoted or queued as current.
+- Added source-gated commercial paths using existing partners only: Petra/Viator, Muscat/Viator and Fiji/Klook. Exact tracked links remain owner-generated and manually verified before any public placement.
+- Source research registry now has 235 candidates with 18 remaining human-playback-gated; commercial opportunity registry now has 213 entries (16 verified-link, 184 exact-link-required, 11 source-gated, 2 source-gap-blocked).
+- Public Guide and Now Moments gates remain OFF; no runtime performance ceiling or ranking/currentness safeguard was changed.
+
