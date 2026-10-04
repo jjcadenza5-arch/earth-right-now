@@ -10,7 +10,7 @@ const rows=[...core,...supplemental].map(s=>{const seen=new Set();return{...s,al
 const now=new Date();
 const norm=foldEarthSearchText;
 const issues=[],aliasChecks=[];
-const sampleQueries=["New York","NYC","纽约","กรุงเทพ","京都","錦市場","서울","البتراء","Krakow","Cracow","New York City","Mount Rainier","Mt Rainier","ISS","Rio","Cancun","Reykjavik","Sydney","Bangkok","Seoul","Rome","Rovaniemi"];
+const sampleQueries=["New York","NYC","纽约","กรุงเทพ","京都","錦市場","서울","البتراء","Krakow","Cracow","New York City","Mount Rainier","Mt Rainier","ISS","Rio","Cancun","Reykjavik","Sydney","Bangkok","Seoul","Rome","Rovaniemi","Wānaka","Ысык-Көл","Poiana Brasov","Bulkang Mayon","Longyearbyen","Lerwick"];
 
 for(const s of rows){
   const doc=norm([s.title,s.placeId,s.city,s.state,s.region,s.country,s.provider,s.story,...(s.categories||[]),...(s.tags||[]),...(s.aliases||[])].filter(Boolean).join(" "));
