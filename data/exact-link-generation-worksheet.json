@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:25:00Z",
+  "generatedAt": "2026-10-04T03:35:00Z",
   "status": "OWNER_ACTION_NOT_YET_REQUIRED",
   "purpose": "One efficient owner session for exact tracked-link generation after autonomous research is complete.",
   "rule": "Never invent URLs. Use the named partner account/tool, search the exact phrase, generate the tracked link, open it manually, then record it.",
@@ -589,8 +589,20 @@
       ],
       "accountSearchPhrase": "Hawke's Bay Napier tours",
       "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "wegotrip-darmstadt",
+      "partner": "wegotrip",
+      "destination": "Darmstadt / Mathildenhöhe",
+      "intent": "activities",
+      "priority": "P2",
+      "placeIds": [
+        "darmstadt-mathildenhoehe"
+      ],
+      "accountSearchPhrase": "Darmstadt Mathildenhöhe audio tour",
+      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
     }
   ],
-  "searchablePlaceMilestone": 300,
-  "note": "Worksheet refreshed at the 300-place quality milestone. Generate links only in deliberate owner batches; traffic-gated stay programs remain future unlocks."
+  "searchablePlaceMilestone": 314,
+  "note": "Worksheet refreshed at the 314-place quality-first baseline. Generate links only in deliberate owner batches; traffic-gated stay programs remain future unlocks."
 }
