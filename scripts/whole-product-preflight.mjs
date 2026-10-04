@@ -49,7 +49,7 @@ must(css.includes("Landscape mobile viewer: keep the Earth window visible"),"lan
 must(css.includes("Landscape action dock: always reachable"),"landscape action controls are not protected");
 must(css.includes("ordinary action row; iPhone Safari uses provider/player fullscreen"),"final fullscreen policy missing");
 must(app.includes('s?.querySelector("iframe,img,video")')&&app.includes("state.journeyTimer?s:m||s")&&css.includes("Fullscreen the media itself"),"desktop fullscreen must remain media-first outside Journey and stable-stage during Journey");
-must(app.includes('$("#heroWatch").onclick=()=>scrollToId("watch")')&&index.includes('id="heroWatch"'),"Watch Earth Now must lead directly to the truthful Watch Earth section");
+must(app.includes('$("#heroWatch").onclick=e=>')&&app.includes("openViewer(target)")&&index.includes('id="heroWatch"')&&index.includes('href="#watch"'),"Hero Watch Earth Now must open a truthful current window while retaining a native Watch-section fallback");
 must(!app.includes("heroLivePreviewAllowed")&&index.includes('id="heroLive"')&&css.includes(".hero-live"),"Approved editorial hero must remain static and free of live-preview runtime");
 must(css.includes(".local-earth-section"),"Local Earth styling missing");
 must(css.includes(".participate-section"),"places/cameras/moments participation surface missing");
