@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T04:18:00Z",
+  "generatedAt": "2026-10-04T04:22:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3374,8 +3374,12 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/c189-fiji/",
       "publicInventoryEvidence": "Current Klook Fiji destination inventory lists dozens of activities including South Sea Island cruises, Malamala Beach Club, Cloud 9 and other water experiences.",
-      "nextAction": "Generate one Fiji/Mamanuca Islands Klook tracked link in the ERN Travelpayouts project and manually verify it before public activation.",
-      "unlockedBySourceAt": "2026-10-04T03:58:00Z"
+      "nextAction": "Owner must open the generated tracked link once and confirm it lands on relevant Fiji/Mamanuca inventory before ERN marks it verified/public-eligible.",
+      "unlockedBySourceAt": "2026-10-04T03:58:00Z",
+      "candidateTrackedUrl": "https://klook.tpo.mx/DjkpjcEv",
+      "candidateTrackedUrlPreparedAt": "2026-10-04T04:22:00Z",
+      "candidateTrackedUrlEvidence": "Owner-generated Klook/Travelpayouts tracked link supplied in chat on 2026-10-04.",
+      "ownerVerificationRequired": true
     }
   ]
 }
