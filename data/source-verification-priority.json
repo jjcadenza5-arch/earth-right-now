@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:05:00Z",
+  "generatedAt": "2026-10-04T03:20:00Z",
   "currentHealthyDistinctPlaces": 316,
   "targetHealthyDistinctPlaces": [
     350,
     400
   ],
-  "remainingToMinimum": 0,
-  "remainingToStretch": 37,
-  "humanPlaybackQueueCount": 10,
+  "remainingToMinimum": 34,
+  "remainingToStretch": 84,
+  "humanPlaybackQueueCount": 13,
   "topBatch": [
     {
       "id": "bratislava-city-live",
