@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T04:10:00Z",
+  "generatedAt": "2026-10-04T04:15:00Z",
   "status": "OWNER_ACTION_ACTIVE_SMALL_BATCH",
   "purpose": "One efficient owner session for exact tracked-link generation after autonomous research is complete.",
   "rule": "Never invent URLs. Use the named partner account/tool, search the exact phrase, generate the tracked link, open it manually, then record it.",
@@ -39,7 +39,10 @@
         "jordan-petra"
       ],
       "accountSearchPhrase": "Petra Jordan tours activities",
-      "currentState": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED"
+      "currentState": "OWNER_LINK_GENERATED_MANUAL_OPEN_REQUIRED",
+      "generatedTrackedUrl": "https://www.viator.com/searchResults/all?text=Petra+Jordan+tours+activities&pid=P00322254&mcid=42383&medium=link",
+      "generatedAt": "2026-10-04T04:15:00Z",
+      "manualOpenVerified": false
     },
     {
       "id": "tiqets-vienna",
