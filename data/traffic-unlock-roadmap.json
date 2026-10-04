@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:40:00Z",
+  "generatedAt": "2026-10-04T01:55:00Z",
   "strategy": "Traffic-led unlock. Do not repeatedly apply or recheck locked programs. Improve visitor utility, searchable-place quality and qualified outbound intent first; recheck only after material traffic/engagement change or Travelpayouts status notification.",
   "activeNow": [
     {
@@ -410,7 +410,7 @@
       "strength": "OPTIONAL"
     }
   ],
-  "recheckRule": "Do not recheck traffic-gated programs on a calendar cadence. Recheck only when at least one direct/strong signal occurs, or when the owner voluntarily opens the account.",
+  "recheckRule": "Do not recheck traffic-gated programs on a calendar cadence. Recheck only after a platform status change, first affiliate conversion, sustained qualified outbound activity, or material organic traffic growth.",
   "nearTermBusinessPriority": [
     "Expand exact destination links with currently active Viator/Klook/Tiqets/Welcome Pickups",
     "Bundle owner-only exact-link generation sessions instead of interrupting one place at a time",
@@ -419,5 +419,6 @@
   ],
   "firstProgramToActivateWhenUnlocked": "trip-com",
   "firstProgramReason": "Trip.com combines accommodation with transport/activity breadth, directly addressing ERN's largest remaining commercial gap while potentially serving much of the 300-place catalog.",
-  "currentSearchableHealthyPlaces": 300
+  "currentSearchableHealthyPlaces": 311,
+  "unlockReadiness": "data/travelpayouts-unlock-readiness.json"
 }
