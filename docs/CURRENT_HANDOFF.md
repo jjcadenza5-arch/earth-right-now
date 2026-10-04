@@ -995,3 +995,13 @@ while preserving the startup/performance ceiling and existing product gates.
 - First-impression refinement remains bounded: no layout redesign, no accepted-hero changes, no feature-gate changes.
 - Continued retrieval/discovery work from the previous tranche; public Guide and Now Moments remain OFF and ranking remains commercial-neutral.
 - Future optional idea only: a slow curated editorial hero rotation (daily/weekly), screensaver-like. Do not activate unless it can preserve the accepted layout, editorial truth and performance without introducing fragility.
+
+
+### Release-budget repair after visual refinements — 2026-10-05
+- Continued autonomously after the globe-mark / Atlas refinement.
+- A Pages release gate caught a real performance regression: `app-lite.js` was 100,163 bytes (>100 KB) and lean core was 576,069 bytes (>575 KB).
+- The budgets were NOT raised.
+- Compacted the new Watch Earth real-thumbnail preference logic without changing behavior.
+- Compacted the Atlas refinement CSS without changing its visual intent.
+- JavaScript syntax validation is green; Pages / Operations validation is running on the repaired build.
+- Phase 10 workplan remains COMPLETE. Do not invent a new phase merely to avoid an appropriate autonomous hold after all local release/operations blockers are green.
