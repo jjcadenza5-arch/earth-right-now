@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T02:02:00Z",
+  "generatedAt": "2026-10-04T02:45:00Z",
   "strategy": "All healthy places are classified where possible: explicit active-partner opportunity paths for useful travel intent, intentional editorial-only status where commercialization adds little value, and a small unclassified list only when genuinely new places need review.",
   "activePartners": [
     "viator",
@@ -9,9 +9,303 @@
     "welcome-pickups"
   ],
   "verifiedLinkCount": 16,
-  "exactLinkQueueCount": 178,
-  "sourceGatedQueueCount": 7,
-  "uncoveredHealthyResearchPriority": [],
+  "exactLinkQueueCount": 183,
+  "sourceGatedQueueCount": 8,
+  "uncoveredHealthyResearchPriority": [
+    {
+      "placeId": "denmark-klitmoller",
+      "title": "Klitmøller Beach — Cold Hawaii",
+      "country": "Denmark",
+      "region": "North Jutland / Thy",
+      "quality": 96,
+      "moment": 96,
+      "categories": [
+        "Beaches & Water",
+        "Nature",
+        "Beautiful Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "iceland-surtsey",
+      "title": "Surtsey — Iceland",
+      "country": "Iceland",
+      "region": "Vestmannaeyjar / South Iceland",
+      "quality": 95,
+      "moment": 95,
+      "categories": [
+        "Islands",
+        "Nature",
+        "Remote Earth",
+        "Interesting Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "zandvoort-beach",
+      "title": "Zandvoort — North Sea Beach",
+      "country": "Netherlands",
+      "region": "North Holland",
+      "quality": 95,
+      "moment": 95,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "denmark-lokken",
+      "title": "Løkken Pier — North Sea",
+      "country": "Denmark",
+      "region": "North Jutland",
+      "quality": 95,
+      "moment": 95,
+      "categories": [
+        "Beaches & Water",
+        "Landmarks",
+        "Beautiful Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "taiwan-maolin",
+      "title": "Maolin National Scenic Area — Live View",
+      "country": "Taiwan",
+      "region": "Kaohsiung",
+      "quality": 95,
+      "moment": 95,
+      "categories": [
+        "Mountains",
+        "Nature"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "colombia-nevado-del-ruiz",
+      "title": "Nevado del Ruiz — Current Views",
+      "country": "Colombia",
+      "region": "Caldas / Tolima",
+      "quality": 94,
+      "moment": 95,
+      "categories": [
+        "Mountains",
+        "Nature",
+        "Interesting Earth",
+        "Useful Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "denmark-ribe",
+      "title": "Ribe — Historic Embankment",
+      "country": "Denmark",
+      "region": "South Jutland",
+      "quality": 94,
+      "moment": 94,
+      "categories": [
+        "Cities & Streets",
+        "Beaches & Water",
+        "Beautiful Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "denmark-skjoldnaes",
+      "title": "Skjoldnæs Lighthouse — Ærø",
+      "country": "Denmark",
+      "region": "Ærø / Funen and Islands",
+      "quality": 94,
+      "moment": 94,
+      "categories": [
+        "Islands",
+        "Beaches & Water",
+        "Landmarks"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "denmark-gribskov",
+      "title": "Gribskov — Osprey Nest",
+      "country": "Denmark",
+      "region": "North Zealand",
+      "quality": 94,
+      "moment": 94,
+      "categories": [
+        "Wildlife",
+        "Nature",
+        "Parks"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "zandvoort-circuit",
+      "title": "Circuit Zandvoort — Pit & Track View",
+      "country": "Netherlands",
+      "region": "North Holland",
+      "quality": 94,
+      "moment": 94,
+      "categories": [
+        "Sports",
+        "Interesting Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "kekesteto-matra",
+      "title": "Kékestető — Mátra Mountains",
+      "country": "Hungary",
+      "region": "Mátra Mountains",
+      "quality": 94,
+      "moment": 94,
+      "categories": [
+        "Mountains",
+        "Nature",
+        "Beautiful Earth",
+        "Useful Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "colombia-galeras-volcano",
+      "title": "Galeras Volcano — Current Views",
+      "country": "Colombia",
+      "region": "Nariño",
+      "quality": 92,
+      "moment": 93,
+      "categories": [
+        "Mountains",
+        "Nature",
+        "Interesting Earth",
+        "Useful Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "nz-whanganui-coast",
+      "title": "Whanganui Coast — Current View",
+      "country": "New Zealand",
+      "region": "Manawatū-Whanganui",
+      "quality": 93,
+      "moment": 92,
+      "categories": [
+        "Beaches & Water",
+        "Nature"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "nz-foxton-beach",
+      "title": "Foxton Beach — Manawatū Coast",
+      "country": "New Zealand",
+      "region": "Manawatū-Whanganui",
+      "quality": 93,
+      "moment": 92,
+      "categories": [
+        "Beaches & Water",
+        "Nature",
+        "Local Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "sasagawa-nagare",
+      "title": "Sasagawa Nagare — Sea of Japan",
+      "country": "Japan",
+      "region": "Niigata Prefecture",
+      "quality": 89,
+      "moment": 89,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "cold-lake-marina",
+      "title": "Cold Lake Marina",
+      "country": "Canada",
+      "region": "Alberta",
+      "quality": 90,
+      "moment": 88,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "florida-now",
+      "title": "Florida Now — Beaches & Destinations",
+      "country": "United States",
+      "region": "Florida",
+      "quality": 87,
+      "moment": 90,
+      "categories": [
+        "Beaches & Water"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "pleasant-beach-lake-ontario",
+      "title": "Pleasant Beach — Lake Ontario",
+      "country": "United States",
+      "region": "New York",
+      "quality": 88,
+      "moment": 88,
+      "categories": [
+        "Beaches & Water",
+        "Beautiful Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "latvia-valmiera-old-town",
+      "title": "Valmiera — Old Town",
+      "country": "Latvia",
+      "region": "Valmiera Municipality",
+      "quality": 88,
+      "moment": 87,
+      "categories": [
+        "Cities & Streets",
+        "Architecture",
+        "Local Earth"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    },
+    {
+      "placeId": "mpala-watering-hole",
+      "title": "Mpala Watering Hole",
+      "country": "Kenya",
+      "region": "Laikipia",
+      "quality": 90,
+      "moment": 0,
+      "categories": [
+        "Wildlife"
+      ],
+      "state": "PARTNER_MATCH_RESEARCH",
+      "publicActivationAllowed": false
+    }
+  ],
   "safeguards": {
     "paidRanking": false,
     "automaticPlacement": false,
@@ -19,10 +313,10 @@
     "exactTrackedLinkRequired": true
   },
   "coverageSummary": {
-    "healthyPlaces": 313,
-    "placesWithExplicitCommercialPath": 275,
-    "intentionallyEditorialPlaces": 38,
-    "unclassifiedHealthyPlaces": 0
+    "healthyPlaces": 316,
+    "placesWithExplicitCommercialPath": 278,
+    "intentionallyEditorialPlaces": 18,
+    "unclassifiedHealthyPlaces": 20
   },
-  "nextAction": "Convert prioritized exact-link backlog and traffic-unlock targets; no healthy place is currently unclassified."
+  "nextAction": "Research the small remaining unclassified healthy-place set while converting the ranked exact-link backlog; do not expand partner count merely to eliminate every gap."
 }
