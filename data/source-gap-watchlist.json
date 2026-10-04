@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:43:00Z",
+  "generatedAt": "2026-10-04T14:30:00Z",
   "publicActivationAllowed": false,
   "gaps": [
     {
@@ -103,6 +103,41 @@
         "Prefer tourism boards, ports, airports, councils and resorts with timestamped refreshed scenic images or live video."
       ],
       "lastResearchedAt": "2026-10-04T03:43:00Z"
+    },
+    {
+      "id": "chiang-mai-current-window",
+      "region": "Chiang Mai",
+      "country": "Thailand",
+      "priority": "P1",
+      "state": "ANALYTICS_DEMAND_CURRENT_SOURCE_GAP",
+      "targetPlaces": [
+        "Chiang Mai Old City",
+        "Tha Phae Gate",
+        "Ping River",
+        "Doi Suthep",
+        "Nimman / city skyline"
+      ],
+      "whyImportant": "ERN aggregate search telemetry recorded a Chiang Mai search with no result. A trustworthy current city or scenic window would close a real observed visitor-discovery gap.",
+      "researchEvidence": [
+        "Fresh public research found Chiang Mai Provincial Administrative Organization real-time CCTV surfaces, but the visible camera cards were in STANDBY / WAITING FOR FEED and therefore are not suitable for ERN current promotion.",
+        "Tourism Authority of Thailand provides authoritative Chiang Mai destination context but not a current scenic camera on the destination page.",
+        "No weak directory, prerecorded video or generic weather view should be substituted for a verified current Chiang Mai window."
+      ],
+      "officialReferenceUrls": [
+        "https://chiangmaipao.go.th/all_cctv.php",
+        "https://www.tourismthailand.org/Destinations/Provinces/Chiang-Mai/101"
+      ],
+      "disallowedShortcuts": [
+        "Do not label STANDBY/WAITING FOR FEED camera cards as live.",
+        "Do not use prerecorded Chiang Mai travel video as a current window.",
+        "Do not use a city-information page without current imagery as a camera source."
+      ],
+      "nextResearch": [
+        "Recheck Chiang Mai PAO/municipal smart-city camera surfaces for an actually moving or reliably refreshed public feed.",
+        "Check official university, park, airport, river/traffic and attraction sources for a source-specific current view.",
+        "Prefer one strong canonical Chiang Mai place rather than many traffic-camera records."
+      ],
+      "lastResearchedAt": "2026-10-04T14:30:00Z"
     }
   ]
 }
