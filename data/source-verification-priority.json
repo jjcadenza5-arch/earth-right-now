@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T02:45:00Z",
+  "generatedAt": "2026-10-04T03:05:00Z",
   "currentHealthyDistinctPlaces": 316,
   "targetHealthyDistinctPlaces": [
     350,
@@ -11,28 +11,28 @@
   "humanPlaybackQueueCount": 10,
   "topBatch": [
     {
-      "id": "longyearbyen-unis-webcam",
-      "title": "Longyearbyen — UNIS / Adventfjorden",
-      "country": "Svalbard",
-      "region": "Longyearbyen",
-      "provider": "University Centre in Svalbard / external webcam operator",
+      "id": "bratislava-city-live",
+      "title": "Bratislava — Danube & City Views",
+      "country": "Slovakia",
+      "provider": "Visit Bratislava",
       "priority": "P1",
-      "verificationUrl": "https://www.unis.no/facilities/web-camera/",
-      "verificationType": "OFFICIAL_INSTITUTION_WEBCAM_HANDOFF",
+      "verificationUrl": "https://www.visitbratislava.com/sk/podujatia/zive-kamery-bratislava-2/",
+      "verificationType": "OFFICIAL_TOURISM_LIVE_CAMERA_PAGE",
+      "oneClick": true,
       "businessUnlocks": [
-        "viator-longyearbyen-future"
+        "viator-bratislava-future"
       ],
-      "humanCheckHint": "Open the UNIS webcam handoff and confirm the linked Longyearbyen/Adventfjorden camera is visibly current."
+      "humanCheckHint": "Open the official Visit Bratislava live-camera page and confirm at least one city/Danube view is currently working."
     },
     {
       "id": "malta-live-cams",
       "title": "Malta — Official Live Cams",
       "country": "Malta",
-      "region": "Maltese Islands",
       "provider": "VisitMalta",
       "priority": "P1",
       "verificationUrl": "https://www2.visitmalta.com/en/info/live-cams-in-malta/",
       "verificationType": "OFFICIAL_TOURISM_LIVE_CAM_PAGE",
+      "oneClick": true,
       "businessUnlocks": [
         "tiqets-malta-future"
       ],
@@ -42,11 +42,11 @@
       "id": "kenyalive-nairobi-national-park",
       "title": "Nairobi National Park — KenyaLIVE",
       "country": "Kenya",
-      "region": "Nairobi",
       "provider": "Kenya Wildlife Service",
       "priority": "P1",
       "verificationUrl": "https://kws.go.ke/world-tourism-day-2026-kenya-embraces-the-digital-future-of-travel/",
       "verificationType": "OFFICIAL_GOVERNMENT_LIVE_PROGRAM",
+      "oneClick": true,
       "businessUnlocks": [
         "viator-nairobi-national-park-future"
       ],
@@ -56,11 +56,11 @@
       "id": "namibia-okaukuejo-waterhole",
       "title": "Okaukuejo Waterhole — Etosha National Park",
       "country": "Namibia",
-      "region": "Etosha National Park",
       "provider": "Namibia Wildlife Resorts",
       "priority": "P1",
       "verificationUrl": "https://www.youtube.com/watch?v=6DoC2IV7OAI",
       "verificationType": "PROVIDER_YOUTUBE_LIVE_TARGET",
+      "oneClick": true,
       "businessUnlocks": [
         "viator-etosha-future"
       ],
@@ -70,123 +70,117 @@
       "id": "ushuaia-harbour-municipal",
       "title": "Ushuaia — Harbour & Beagle Channel",
       "country": "Argentina",
-      "region": "Tierra del Fuego",
       "provider": "Municipalidad de Ushuaia / Secretaría de Turismo",
       "priority": "P1",
       "verificationUrl": "https://www.youtube.com/watch?v=q9g51I3NyJQ",
       "verificationType": "MUNICIPAL_PUBLISHED_YOUTUBE_TARGET",
+      "oneClick": true,
       "businessUnlocks": [
         "viator-ushuaia-future"
       ],
       "humanCheckHint": "Open the exact municipal-published YouTube target and confirm it is still a current live harbour stream, not an archived recording."
     },
     {
+      "id": "uruguay-montevideo-pocitos",
+      "title": "Montevideo — Pocitos Beach",
+      "country": "Uruguay",
+      "provider": "Antel TV",
+      "priority": "P1",
+      "verificationUrl": "https://www.antel.com.uy/web/antel-tv",
+      "verificationType": "OFFICIAL_TELECOM_CAMERA_PLATFORM",
+      "oneClick": false,
+      "businessUnlocks": [
+        "viator-montevideo-future"
+      ],
+      "humanCheckHint": "Verify that AntelTV exposes the Pocitos Beach camera without an Uruguay-only/login restriction before promotion."
+    },
+    {
       "id": "ala-archa-park",
       "title": "Ala-Archa National Park",
       "country": "Kyrgyzstan",
-      "region": "Chüy",
       "provider": "ElCat / kg.camera",
       "priority": "P1",
       "verificationUrl": "https://kg.camera/en",
       "verificationType": "LIVE_CAMERA_INDEX",
+      "oneClick": true,
       "businessUnlocks": [],
       "humanCheckHint": "Open kg.camera and choose Ala-Archa Natural Park."
-    },
-    {
-      "id": "aruba-eagle-beach-live-family",
-      "title": "Eagle Beach — Aruba",
-      "country": "Aruba",
-      "region": "Eagle Beach",
-      "provider": "Aruba Tourism Authority / resort webcams",
-      "priority": "P1",
-      "verificationUrl": "https://www.aruba.com/us/live-webcams-and-channels",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
-      "businessUnlocks": [],
-      "humanCheckHint": "Use the official Aruba Live Webcams page and verify any current Eagle Beach camera. Group the family under one Eagle Beach place."
     },
     {
       "id": "everest-khumbu-hotel-view",
       "title": "Everest & Khumbu — Hotel Everest View",
       "country": "Nepal",
-      "region": "Solukhumbu",
       "provider": "Webcam Nepal",
       "priority": "P1",
       "verificationUrl": "https://www.geowebcams.com/en/webcam/himalayan-panorama-from-hotel-everest-view",
       "verificationType": "LIVE_WEBCAM_AGGREGATOR_WITH_OPERATOR_ATTRIBUTION",
+      "oneClick": true,
       "businessUnlocks": [],
       "humanCheckHint": "Open the Hotel Everest View live page and confirm the image/video is current before ERN promotes it."
+    }
+  ],
+  "backlog": [
+    {
+      "id": "uruguay-montevideo-mercado-del-puerto",
+      "title": "Montevideo — Mercado del Puerto",
+      "country": "Uruguay",
+      "provider": "Antel TV",
+      "priority": "P2",
+      "verificationUrl": "https://www.antel.com.uy/web/antel-tv",
+      "verificationType": "OFFICIAL_TELECOM_CAMERA_PLATFORM",
+      "oneClick": false,
+      "businessUnlocks": [
+        "viator-montevideo-future"
+      ],
+      "humanCheckHint": "Confirm AntelTV Mercado del Puerto is externally playable/current."
     },
     {
-      "id": "aruba-palm-beach-live-family",
-      "title": "Palm Beach — Aruba",
-      "country": "Aruba",
-      "region": "Palm Beach",
-      "provider": "Aruba Tourism Authority / resort webcams",
-      "priority": "P1",
-      "verificationUrl": "https://www.aruba.com/us/live-webcams-and-channels",
-      "verificationType": "OFFICIAL_TOURISM_WEBCAM_INDEX",
-      "businessUnlocks": [],
-      "humanCheckHint": "Use the official Aruba Live Webcams page and verify either Playa Linda or Aruba Marriott Palm Beach camera. Treat multiple cameras as one Palm Beach destination."
+      "id": "uruguay-montevideo-plaza-independencia",
+      "title": "Montevideo — Plaza Independencia",
+      "country": "Uruguay",
+      "provider": "Antel TV",
+      "priority": "P2",
+      "verificationUrl": "https://www.antel.com.uy/web/antel-tv",
+      "verificationType": "OFFICIAL_TELECOM_CAMERA_PLATFORM",
+      "oneClick": false,
+      "businessUnlocks": [
+        "viator-montevideo-future"
+      ],
+      "humanCheckHint": "Confirm current AntelTV Plaza Independencia camera accessibility and visible updating."
     },
     {
       "id": "batken-city-panorama",
       "title": "Batken — City Panorama",
       "country": "Kyrgyzstan",
-      "region": "Batken",
       "provider": "ElCat / kg.camera",
       "priority": "P2",
       "verificationUrl": "https://www.kg.camera/en/",
       "verificationType": "PUBLIC_CAMERA_INDEX",
+      "oneClick": true,
       "businessUnlocks": [],
       "humanCheckHint": "Use the kg.camera list and open Batken city panorama; confirm it updates before promotion."
-    }
-  ],
-  "backlog": [
+    },
     {
       "id": "faroe-islands-live-family",
       "title": "Faroe Islands — Village Live Camera Network",
       "country": "Faroe Islands",
-      "region": "Multiple islands",
       "provider": "Faroe Islands Live",
       "priority": "P2",
       "verificationUrl": "https://www.faroeislandslive.com/",
       "verificationType": "LIVE_CAMERA_NETWORK",
+      "oneClick": true,
       "businessUnlocks": [],
       "humanCheckHint": "Use the live map to choose one visually strong village camera; promote exact places individually rather than the network."
-    },
-    {
-      "id": "nz-wairoa-river-current",
-      "title": "Wairoa River — Current View",
-      "country": "New Zealand",
-      "region": "Hawke's Bay",
-      "provider": "Hawke's Bay Regional Council",
-      "priority": "P2",
-      "verificationUrl": "https://www.hbrc.govt.nz/webcams",
-      "verificationType": "OFFICIAL_QUASI_LIVE_SOURCE",
-      "businessUnlocks": [],
-      "humanCheckHint": "No urgent check required. Revisit when runtime catalog headroom improves or a stronger exact target is isolated."
-    },
-    {
-      "id": "nz-foxton-beach-current",
-      "title": "Foxton Beach — Manawatū Coast",
-      "country": "New Zealand",
-      "region": "Manawatū-Whanganui",
-      "provider": "Horizons Regional Council",
-      "priority": "P3",
-      "verificationUrl": "https://www.horizons.govt.nz/webcams",
-      "verificationType": "OFFICIAL_REGIONAL_WEBCAM",
-      "businessUnlocks": [],
-      "humanCheckHint": "No urgent owner action; revisit when runtime headroom improves."
     },
     {
       "id": "razzakov-center",
       "title": "Razzakov — City Center",
       "country": "Kyrgyzstan",
-      "region": "Batken",
       "provider": "ElCat / kg.camera",
       "priority": "P3",
       "verificationUrl": "https://kg.camera/en",
       "verificationType": "LIVE_CAMERA_INDEX",
+      "oneClick": true,
       "businessUnlocks": [],
       "humanCheckHint": "Open kg.camera and choose Razzakov city center."
     }
@@ -196,5 +190,6 @@
     "watchEarthEligible": false,
     "labelingRequired": true
   },
-  "note": "Quality-led research only. Quasi-live/current-image sources may be promoted to Search/Explore when timestamps/freshness are reliable; Watch Earth remains stricter."
+  "note": "Only the remaining genuinely playback-gated candidates are listed. Quasi-live/current-image promotions already completed are not re-queued.",
+  "remainingHumanPlaybackRequired": 13
 }
