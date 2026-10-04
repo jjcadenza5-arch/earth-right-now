@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T02:30:00Z",
+  "generatedAt": "2026-10-04T03:20:00Z",
   "mode": "QUALITY_FIRST_AND_BUSINESS_EXPANSION",
   "visitorLane": {
     "currentHealthyDistinctPlaceBaseline": 316,
@@ -104,7 +104,18 @@
       "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 148,
       "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
       "HUMAN_PLAYBACK_REQUIRED": 10
-    }
+    },
+    "currentHealthyCountryCount": 76,
+    "remainingTo350": 34,
+    "remainingTo400": 84,
+    "remainingHumanPlaybackQueue": 13,
+    "currentPriorityGaps": [
+      "Middle East / North Africa",
+      "South Pacific islands",
+      "Africa beyond current coverage",
+      "Caribbean capitals/harbours",
+      "South America civic/coastal"
+    ]
   },
   "businessLane": {
     "activePartners": [
