@@ -243,6 +243,8 @@ jobs:
         run: node scripts/source-research-priority-status.mjs
       - name: Multilingual place alias integrity
         run: npm --silent run search:place-alias-status
+      - name: Search metadata retrieval integrity
+        run: npm --silent run search:metadata-audit
       - name: Supplemental Search catalog integrity
         run: npm --silent run search:supplemental-status
       - name: Provider concentration resilience
