@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T04:22:00Z",
-  "status": "OWNER_ACTION_ACTIVE_SMALL_BATCH",
+  "generatedAt": "2026-10-04T04:30:00Z",
+  "status": "OWNER_BATCH_COMPLETE",
   "purpose": "One efficient owner session for exact tracked-link generation after autonomous research is complete.",
   "rule": "Never invent URLs. Use the named partner account/tool, search the exact phrase, generate the tracked link, open it manually, then record it.",
   "rows": [
@@ -15,10 +15,11 @@
         "fiji-malolo-lailai"
       ],
       "accountSearchPhrase": "Fiji Mamanuca Islands activities",
-      "currentState": "OWNER_LINK_GENERATED_MANUAL_OPEN_REQUIRED",
+      "currentState": "VERIFIED_LINK_ADDED",
       "generatedTrackedUrl": "https://klook.tpo.mx/DjkpjcEv",
       "generatedAt": "2026-10-04T04:22:00Z",
-      "manualOpenVerified": false
+      "manualOpenVerified": true,
+      "verifiedAt": "2026-10-04T04:30:00Z"
     },
     {
       "id": "viator-muscat-oman-future",
@@ -30,10 +31,11 @@
         "oman-muscat-aida-beach"
       ],
       "accountSearchPhrase": "Muscat Oman tours activities",
-      "currentState": "OWNER_LINK_GENERATED_MANUAL_OPEN_REQUIRED",
+      "currentState": "VERIFIED_LINK_ADDED",
       "generatedTrackedUrl": "https://www.viator.com/searchResults/all?text=Muscat+Oman+tours+activities&pid=P00322254&mcid=42383&medium=link",
       "generatedAt": "2026-10-04T04:18:00Z",
-      "manualOpenVerified": false
+      "manualOpenVerified": true,
+      "verifiedAt": "2026-10-04T04:30:00Z"
     },
     {
       "id": "viator-petra-jordan-future",
@@ -45,10 +47,11 @@
         "jordan-petra"
       ],
       "accountSearchPhrase": "Petra Jordan tours activities",
-      "currentState": "OWNER_LINK_GENERATED_MANUAL_OPEN_REQUIRED",
+      "currentState": "VERIFIED_LINK_ADDED",
       "generatedTrackedUrl": "https://www.viator.com/searchResults/all?text=Petra+Jordan+tours+activities&pid=P00322254&mcid=42383&medium=link",
       "generatedAt": "2026-10-04T04:15:00Z",
-      "manualOpenVerified": false
+      "manualOpenVerified": true,
+      "verifiedAt": "2026-10-04T04:30:00Z"
     },
     {
       "id": "tiqets-vienna",
@@ -674,9 +677,5 @@
   ],
   "searchablePlaceMilestone": 316,
   "note": "Worksheet refreshed at the 316-place quality-first baseline. Generate links only in deliberate owner batches; traffic-gated stay programs remain future unlocks.",
-  "currentOwnerBatch": [
-    "viator-petra-jordan-future",
-    "viator-muscat-oman-future",
-    "klook-fiji-future"
-  ]
+  "currentOwnerBatch": []
 }
