@@ -254,9 +254,11 @@
     "Qualified commercial clicks or first conversions show accommodation/transport demand",
     "Owner receives an unlock/invitation email from Travelpayouts"
   ],
-  "generatedAt": "2026-10-03T16:30:00Z",
-  "currentSearchablePlaceBaseline": 300,
+  "generatedAt": "2026-10-04T03:40:00Z",
+  "currentSearchablePlaceBaseline": 314,
   "recheckPolicy": "Do not manually recheck locked programs on a schedule. Recheck only after material qualified-traffic growth, first meaningful affiliate conversions, or an explicit Travelpayouts unlock/status notification.",
   "preferredNextUnlock": "trip-com",
-  "preferredNextUnlockReason": "Broad stay + transport + activities coverage fills ERN's largest commercial-category gap with one future program."
+  "preferredNextUnlockReason": "Broad stay + transport + activities coverage fills ERN's largest commercial-category gap with one future program.",
+  "strategyReviewedAt": "2026-10-04T03:40:00Z",
+  "strategyReviewNote": "Owner screenshots remain authoritative for visible-but-not-unlocked programs. No gated program is reclassified merely because ERN source coverage grew; next recheck remains event-driven by traffic/conversion or platform status."
 }
