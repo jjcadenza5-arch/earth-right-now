@@ -744,3 +744,14 @@ Green 316-place baseline — 2026-10-04:
 - Latest Operations packet is green and latest Pages release job completed the full release suite, static build and Deploy step successfully.
 - Current mode remains quality-first searchable expansion + stronger true-live upgrades + batched commercial conversion; raw-count growth is no longer the primary goal.
 - Travelpayouts traffic-gated programs remain event-driven future unlocks. Trip.com stays P1 future unlock, not a current owner task.
+
+
+316-place quality-led expansion checkpoint — 2026-10-04:
+- ERN now has 324 source records and 316 healthy distinct searchable places across 76 country/territory labels; the original 150–200 searchable-place milestone is surpassed.
+- Next visitor goal is quality-led 350–400, not count inflation. New additions should improve geographic breadth, source quality, or visitor utility.
+- Quasi-live/current-image sources remain valid for Search/Explore when freshness is reliable and clearly labeled; Watch Earth stays stricter.
+- Travelpayouts owner evidence is now formalized in data/travelpayouts-unlock-roadmap.json: Trip.com, Hotels.com, Agoda, Expedia, GetYourGuide and Booking.com are strategic future unlocks, not current activation targets.
+- Programs already available for owner link generation remain the preferred near-term path; exact-link work is ranked in data/business-activation-priority.json.
+- Commercial matrix was reconciled against all current healthy places and no longer uses the stale 313-place baseline.
+- Uruguay AntelTV camera family added as research-only because Antel officially confirms cameras around Uruguay, but external playback/access must be verified before promotion.
+- Pamir remains deferred by owner approval; revisit later if better live or trustworthy quasi-live sources appear.
