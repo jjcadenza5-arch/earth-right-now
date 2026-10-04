@@ -2012,6 +2012,22 @@
       "freshnessEvidence": "Aruba Tourism Authority explicitly lists Palm Beach/Eagle Beach resort webcams as live webcams; ERN conservatively exposes them as LIVE_IMAGE until direct playback is separately reviewed.",
       "coordinateNote": "Representative beach-place coordinate, not claimed camera position.",
       "checkedAt": "2026-10-03T15:55:00Z"
+    },
+    {
+      "id": "jasna-chopok-current",
+      "sourceUrl": "https://www.jasna.sk/en/resort/resort-info/webcameras",
+      "rightsBasis": "Official Jasná/Tatry Mountain Resorts webcam page; link-only in ERN.",
+      "freshnessEvidence": "Official page states visitors are watching live internet webcam broadcasts from the resort. ERN uses conservative LIVE_IMAGE semantics until direct playback is reviewed.",
+      "coordinateNote": "Representative Jasná/Chopok place coordinate, not claimed exact camera position.",
+      "checkedAt": "2026-10-04T01:45:00Z"
+    },
+    {
+      "id": "kekesteto-matra-current",
+      "sourceUrl": "https://kekesteto.hu/webcam/?lang=en",
+      "rightsBasis": "Official Kékestető destination webcam page; link-only in ERN.",
+      "freshnessEvidence": "Official site exposes South Ski Resort and Tower Lookout webcams. ERN uses conservative LIVE_IMAGE semantics.",
+      "coordinateNote": "Representative Kékestető place coordinate, not claimed exact camera position.",
+      "checkedAt": "2026-10-04T01:45:00Z"
     }
   ]
 }
