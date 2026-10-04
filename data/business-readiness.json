@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T04:50:00Z",
+  "generatedAt": "2026-10-04T13:50:00Z",
   "publicSurface": false,
   "revenueInfrastructure": {
     "travelpayoutsProjectActive": true,
@@ -107,7 +107,7 @@
     "currentCommercialOpportunityCount": 213,
     "healthyPlacesWithCommercialPath": 279,
     "healthyPlacesWithoutCommercialPath": 37,
-    "verifiedLinkHealthyPlaces": 19,
+    "verifiedLinkHealthyPlaces": 25,
     "travelpayoutsTrafficGatedProgramsObserved": true,
     "travelpayoutsTrafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
     "futurePriorityPrograms": [
@@ -214,7 +214,8 @@
     "searchableUniverseWithSupplemental": 339,
     "coreHealthySearchablePlaces": 319,
     "searchSupplementalPlaces": 20,
-    "searchSupplementalLoadMode": "LAZY_ON_SEARCH_NO_WATCH_EARTH_IMPACT"
+    "searchSupplementalLoadMode": "LAZY_ON_SEARCH_NO_WATCH_EARTH_IMPACT",
+    "publicVerifiedTravelOfferMappings": 31
   },
   "completed": [
     "Travelpayouts Earthrightnow project active/green",
@@ -267,7 +268,8 @@
     "Middle East / South Pacific research batch queued Petra (two views), Muscat Aida Beach and two Fiji provider webcams behind human playback gates; source-gated Viator/Klook paths prepared without public activation.",
     "Owner playback confirmation promoted Petra Visitor Center, Muscat Aida Beach and two Malolo Lailai/Fiji live views; Fiji views share one canonical place, bringing healthy searchable coverage to 319 distinct places / 79 countries.",
     "Petra/Viator, Muscat/Viator and Fiji/Klook owner-generated tracked links were manually opened and confirmed correct on 2026-10-04; all three moved to VERIFIED_LINK_ADDED.",
-    "Lazy Search-only supplemental catalog deployed with 20 held-from-featured/watch places, expanding searchable universe from 319 core places to 339 without raising the 300 KB sources.json ceiling."
+    "Lazy Search-only supplemental catalog deployed with 20 held-from-featured/watch places, expanding searchable universe from 319 core places to 339 without raising the 300 KB sources.json ceiling.",
+    "Verified destination-level partner links are now mapped onto all 25 healthy ERN place IDs covered by the verified-link registry, including Petra, Muscat, Fiji, Seoul variants and Blouberg/Cape Town."
   ],
   "humanOnlyRemaining": [
     {
