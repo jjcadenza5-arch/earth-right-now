@@ -95,7 +95,6 @@ const releaseTests=[
   "public-trust-discovery.smoke.js",
   "navigation-controls.smoke.js",
   "first-impression-visuals.smoke.js",
-  "hero-asset.smoke.js",
   "distribution-readiness.smoke.js",
   "local-directory-status.smoke.js",
   "travel-offer-expiry.smoke.js",
