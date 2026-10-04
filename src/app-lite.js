@@ -602,7 +602,7 @@ $("#guideForm").onsubmit=e=>{e.preventDefault();const q=$("#guideInput").value.t
 document.querySelectorAll("[data-guide]").forEach(b=>b.onclick=()=>{$("#guideInput").value=b.dataset.guide||"";runGuide($("#guideInput").value)});
 $("#watchNav").onclick=()=>scrollToId("watch");$("#searchNav").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#destinationsNav").onclick=()=>scrollToId("destinations");$("#mapNav").onclick=()=>{renderMapStable();scrollToId("map")};$("#savedNav").onclick=()=>scrollToId("saved");
 $("#mobileWatch").onclick=()=>scrollToId("watch");$("#mobileExplore").onclick=()=>{scrollToId("search");setTimeout(()=>$("#searchInput").focus(),300)};$("#mobileMap").onclick=()=>{renderMapStable();scrollToId("map")};$("#mobileSaved").onclick=()=>scrollToId("saved");
-$("#heroWatch").onclick=()=>scrollToId("watch");$("#heroNext").onclick=()=>scrollToId("exploreByFeeling");
+$("#heroWatch").onclick=()=>scrollToId("watch");$("#heroNext").onclick=()=>scrollToId("editorialCollections");
 $("#refreshSet").onclick=()=>{stopHeroRotation();state.mode="auto";writeSaved("ern-mode","auto");state.setOffset++;renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}startHeroRotation()};
 document.querySelectorAll(".mode-chip").forEach(b=>b.onclick=()=>{stopHeroRotation();state.mode=b.dataset.mode||"auto";writeSaved("ern-mode",state.mode);renderWatch();renderWander();if(state.watch.length){state.watchIndex=0;renderHero(heroPool()[0]||state.watch[0])}startHeroRotation()});
 $("#wanderRefresh").onclick=()=>{state.wanderOffset++;renderWander()};
