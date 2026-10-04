@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:15:00Z",
+  "generatedAt": "2026-10-04T03:43:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -3423,6 +3423,91 @@
       "priority": "P2",
       "state": "HUMAN_PLAYBACK_REQUIRED",
       "humanCheckHint": "Confirm AntelTV Mercado del Puerto is externally playable/current."
+    },
+    {
+      "id": "jordan-petra-treasury-skyline",
+      "title": "Petra — Treasury (Al-Khazneh)",
+      "country": "Jordan",
+      "region": "Ma'an Governorate",
+      "provider": "SkylineWebcams",
+      "sourcePage": "https://www.skylinewebcams.com/en/webcam/jordan/maan/amman/petra.html",
+      "evidence": "Current SkylineWebcams Jordan inventory lists a live view over Petra's Treasury / Al-Khazneh.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetType": "STRONG_PROVIDER_LIVE_PAGE",
+      "researchEvidence": "Current provider index exposes Petra Treasury as a live camera; ERN must still confirm moving/current playback before promotion.",
+      "humanCheckHint": "Open the exact Petra Treasury page and confirm the view is currently moving/live rather than archived or offline.",
+      "businessUnlocks": [
+        "viator-petra-jordan-future"
+      ]
+    },
+    {
+      "id": "jordan-petra-visitor-center-skyline",
+      "title": "Petra — Visitor Center",
+      "country": "Jordan",
+      "region": "Ma'an Governorate",
+      "provider": "SkylineWebcams",
+      "sourcePage": "https://www.skylinewebcams.com/en/webcam/jordan/maan/amman/petra-visitor-center.html",
+      "evidence": "Current SkylineWebcams page identifies a live cam viewing the entrance to Petra archaeological site.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetType": "STRONG_PROVIDER_LIVE_PAGE",
+      "researchEvidence": "Current provider page is live-labeled and separately identifies the Visitor Center entrance; treat as a second view of Petra, not a second fake destination count.",
+      "humanCheckHint": "Confirm the Visitor Center feed is currently moving/live. If both Petra views work, keep one canonical Petra searchable place with multiple views.",
+      "businessUnlocks": [
+        "viator-petra-jordan-future"
+      ]
+    },
+    {
+      "id": "oman-muscat-aida-beach-skyline",
+      "title": "Muscat — Aida Beach",
+      "country": "Oman",
+      "region": "Muscat",
+      "provider": "SkylineWebcams",
+      "sourcePage": "https://www.skylinewebcams.com/en/webcam/oman/muscat/muscat/aida-beach.html",
+      "evidence": "Current SkylineWebcams page exposes a live view over Aida Beach in Muscat.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetType": "STRONG_PROVIDER_LIVE_PAGE",
+      "researchEvidence": "Current provider page remains live-labeled and fills an important Middle East scenic-current gap.",
+      "humanCheckHint": "Open the Aida Beach page and confirm the feed is currently moving/live before ERN promotion.",
+      "businessUnlocks": [
+        "viator-muscat-oman-future"
+      ]
+    },
+    {
+      "id": "fiji-plantation-island-resort-live",
+      "title": "Malolo Lailai — Plantation Island Resort",
+      "country": "Fiji",
+      "region": "Mamanuca Islands",
+      "provider": "Plantation Island Resort",
+      "sourcePage": "https://www.plantationisland.com/webcam/",
+      "evidence": "Provider webcam page explicitly says it is a live webcam with real-time views and a play-to-start feed.",
+      "priority": "P1",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetType": "PROVIDER_LIVE_WEBCAM_PAGE",
+      "researchEvidence": "Strong first-party resort source with explicit real-time wording; useful for South Pacific coverage.",
+      "humanCheckHint": "Press play and confirm the resort webcam is currently moving/live.",
+      "businessUnlocks": [
+        "klook-fiji-future"
+      ]
+    },
+    {
+      "id": "fiji-lomani-island-resort-live",
+      "title": "Malolo Lailai — Lomani Island Resort",
+      "country": "Fiji",
+      "region": "Mamanuca Islands",
+      "provider": "Lomani Island Resort & Spa",
+      "sourcePage": "https://www.lomaniisland.com/webcam/",
+      "evidence": "Provider webcam page labels the embedded view LIVE FEED and describes it as showing what is happening at the resort.",
+      "priority": "P2",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "exactTargetType": "PROVIDER_LIVE_WEBCAM_PAGE",
+      "researchEvidence": "First-party resort live-feed page; likely same island as Plantation Island and therefore should become an alternate view, not fake place inflation, if both verify.",
+      "humanCheckHint": "Confirm the embedded LIVE FEED is currently moving/live. If both Malolo Lailai resort cameras work, group them under one island/place where appropriate.",
+      "businessUnlocks": [
+        "klook-fiji-future"
+      ]
     }
   ],
   "notes": [
@@ -3495,7 +3580,8 @@
     "2026-10-04 Jasná/Chopok and Kékestető promoted conservatively to searchable LIVE_IMAGE based on official webcam pages. Both remain held out of Watch Earth pending direct playback review.",
     "2026-10-04: Latvia added through the official Valmiera Old Town tourism webcam reference. Search/Explore only; no continuous-live claim.",
     "2026-10-04: Montenegro and Bosnia and Herzegovina added via official ski-resort live-camera surfaces, conservatively exposed as LIVE_IMAGE Search/Explore places.",
-    "2026-10-04 Uruguay research added three AntelTV official-network candidates (Pocitos Beach, Plaza Independencia, Mercado del Puerto). Antel officially confirms its platform includes cameras around Uruguay, but each remains human-playback-gated because external access/login restrictions are not yet resolved."
+    "2026-10-04 Uruguay research added three AntelTV official-network candidates (Pocitos Beach, Plaza Independencia, Mercado del Puerto). Antel officially confirms its platform includes cameras around Uruguay, but each remains human-playback-gated because external access/login restrictions are not yet resolved.",
+    "Middle East / South Pacific verification batch 2026-10-04: added playback-gated Petra Treasury + Visitor Center, Muscat Aida Beach, and two Fiji/Malolo Lailai provider webcams. No public/live promotion occurred; duplicate-place inflation rules still apply."
   ],
   "researchGaps": [
     {
