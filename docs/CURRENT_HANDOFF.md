@@ -854,3 +854,15 @@ First-Impression refinement continuation — 2026-10-04:
 - Release smoke now includes navigation-controls.smoke.js and first-impression-visuals.smoke.js.
 - Latest corrected Pages deployment after static-hero guard reconciliation completed successfully.
 
+
+
+First-impression close-out / release reliability — 2026-10-04:
+- Closed the recurring stale-browser problem at the release layer: production snapshots now rewrite homepage CSS and app-lite URLs with the current build SHA, so every deployed build receives unique asset URLs without manual query-string maintenance.
+- ERN Operations now records Atlas/reference reachability attention without aborting the rest of the daily packet; the first corrected Operations run completed successfully.
+- The homepage hero no longer depends on a remote Wikimedia image URL. It uses the local crisp Mount Fuji SVG editorial artwork, preserving FEATURED/editorial truth rather than implying a live Fuji feed.
+- Hero Watch Earth Now remains an immediate viewing action when an eligible current window exists; top/mobile Watch navigation remains the browse-section action.
+- Mobile bottom navigation is standardized as one compact four-action row (Watch / Explore / Map / Saved) instead of the older large 2x2 overlay.
+- Supplemental Search remains deduplicated at 20 Search-only places, for 339 combined searchable places (319 core + 20 supplemental); duplicate-place checks remain a hard release gate.
+- Supplemental Search destinations are included in crawlable destination-page generation and sitemap/discovery output without entering startup payload, Watch Earth, hero ranking or Atlas.
+- Repaired Dresden Old Town and Radebeul weathercam links to the current official Dresden Elbland weathercam endpoint after the old endpoint returned 410.
+- All source-truth, commercial-neutrality, public Guide/Now Moments gates and strict performance ceilings remain unchanged.
