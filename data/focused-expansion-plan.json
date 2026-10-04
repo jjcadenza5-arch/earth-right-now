@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T02:02:00Z",
+  "generatedAt": "2026-10-04T02:30:00Z",
   "mode": "QUALITY_FIRST_AND_BUSINESS_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 313,
+    "currentHealthyDistinctPlaceBaseline": 316,
     "targetRange": [
-      300,
-      350
+      350,
+      400
     ],
-    "strategy": "311 healthy searchable places. Continue selectively for source quality, geography, freshness, provider diversity and useful quasi-live/current-image discovery rather than raw-count growth.",
+    "strategy": "Quality-led expansion toward 350–400 distinct searchable places. Prefer underrepresented countries/regions, official current-image/quasi-live sources, and unusually strong live views; do not add places merely to increase the count.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -197,7 +197,7 @@
       "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 5,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
-    "trafficUnlockRoadmap": "data/traffic-unlock-roadmap.json",
+    "trafficUnlockRoadmap": "data/travelpayouts-unlock-roadmap.json",
     "futureUnlockPriority": [
       "trip-com",
       "hotels-com",
@@ -238,7 +238,16 @@
     "conversionShortlist": "data/commercial-conversion-shortlist.json",
     "tripComStatus": "VISIBLE_NOT_UNLOCKED_WAIT_FOR_TRAFFIC",
     "tripComRule": "Do not open a separate direct account or repeatedly recheck Travelpayouts. Revisit only on meaningful traffic/conversion growth or explicit unlock.",
-    "trafficUnlockReadiness": "data/travelpayouts-unlock-readiness.json"
+    "trafficUnlockReadiness": "data/travelpayouts-unlock-readiness.json",
+    "priorityFutureUnlocks": [
+      "trip-com",
+      "hotels-com",
+      "agoda",
+      "expedia",
+      "getyourguide",
+      "booking-com"
+    ],
+    "rule": "Use active/available programs now; do not chase traffic-gated programs until material traffic or account eligibility changes."
   },
   "safeguards": {
     "automaticPlacement": false,
