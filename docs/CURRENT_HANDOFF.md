@@ -839,3 +839,18 @@ First Impression / Homepage Refinement — 2026-10-04:
 - Current changed-file sizes remain under individual preflight limits: index ~25 KB (<45 KB), app-lite ~94 KB (<100 KB), styles-lite ~83 KB (<100 KB), and sources.json remains below 300 KB.
 - This is now a substantial owner visual-review point; continue from owner screenshots/approval rather than layering further visual change blindly.
 
+First-Impression refinement continuation — 2026-10-04:
+- The approved editorial hero is now static by design; obsolete dynamic hero rotation/live-preview hooks were removed and the whole-product guard was updated to enforce the static editorial contract.
+- The approved Mount Fuji mockup-derived hero asset is stored locally at assets/ern-fuji-mockup-hero.jpg and is the homepage hero source.
+- Main desktop/mobile navigation controls now retain native hash-link fallbacks in addition to JS enhancement. Release smoke covers those visible navigation contracts.
+- Search suggestion chips are wired; visible homepage controls were audited for missing handlers/targets.
+- Card visual policy is now layered: real source thumbnail when available; truthful category/destination-specific illustrative fallback otherwise; generic fallback only as last resort.
+- Illustrative card art is explicitly labeled ILLUSTRATIVE so artwork cannot be mistaken for a current camera frame.
+- Lightweight fallback families now include snow/glacier, volcano, island/lagoon, wildlife, city/town, water/coast/lake, mountain and general Earth, with small deterministic composition variants.
+- Watch Earth first-row selection preserves place/country/provider diversity and gives a modest non-commercial preference to valid source thumbnails.
+- Broken destination thumbnails fail to scenic illustrative artwork instead of browser broken-image UI.
+- Mobile Explore-by-feeling cards use compact two-column presentation and the mobile navigation dock remains small/centered.
+- Performance remains a hard gate. Obsolete hero runtime code was removed and compact source metadata retained to create meaningful core-budget headroom.
+- Release smoke now includes navigation-controls.smoke.js and first-impression-visuals.smoke.js.
+- Latest corrected Pages deployment after static-hero guard reconciliation completed successfully.
+
