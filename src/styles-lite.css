@@ -638,3 +638,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .world-shelf-note{margin:13px 1px 0;font-size:10px;color:#667f78}
 @media(max-width:1100px){.discovery-proof{grid-template-columns:1.4fr repeat(3,.7fr)}.discovery-proof>button{grid-column:1/-1;justify-self:start}.world-shelf-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:720px){.discovery-proof{grid-template-columns:repeat(3,1fr);padding:13px}.proof-intro{grid-column:1/-1}.proof-stat{padding:12px 5px}.proof-stat>strong{font-size:30px}.proof-stat>span{font-size:7px}.discovery-proof>button{width:100%;justify-self:stretch}.world-shelf{padding:28px 14px}.world-shelf-head{align-items:flex-start;flex-direction:column;gap:5px}.world-shelf-grid{grid-template-columns:1fr 1fr}.world-shelf-card{min-height:155px}.world-shelf-card:last-child{grid-column:1/-1}.world-shelf-card>strong{font-size:18px}}
+
+/* Atlas visibility hardening */
+.atlas{isolation:isolate}.atlas:before{z-index:1}.map-pin{z-index:5!important;width:16px;height:16px;display:block!important;box-shadow:0 0 0 3px rgba(255,255,255,.72),0 4px 14px rgba(7,42,34,.38)}.map-pin.external{box-shadow:0 0 0 3px rgba(255,255,255,.72),0 4px 14px rgba(93,57,14,.35)}
