@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:46:00Z",
+  "generatedAt": "2026-10-04T04:05:00Z",
   "mode": "QUALITY_FIRST_AND_BUSINESS_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 316,
+    "currentHealthyDistinctPlaceBaseline": 319,
     "targetRange": [
       350,
       400
@@ -25,7 +25,7 @@
     ],
     "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
     "researchCandidateCount": 235,
-    "playbackGatedCandidateCount": 18,
+    "playbackGatedCandidateCount": 14,
     "centralAsia": {
       "unresolvedGap": "pamir-mountains-tajikistan-DEFERRED",
       "adjacentHighValueChecks": [
@@ -78,11 +78,11 @@
     "currentHealthyLiveImageCount": 171,
     "progressToTarget": {
       "minimumTarget": 300,
-      "current": 313,
+      "current": 319,
       "remainingToMinimum": 0,
       "stretchTarget": 350,
-      "remainingToStretch": 37,
-      "status": "QUALITY_FIRST_POST_300"
+      "remainingToStretch": 31,
+      "status": "QUALITY_FIRST_POST_300_RUNTIME_NEAR_CEILING"
     },
     "recentExpansionFamilies": [
       "La Réunion — four official tourism/scientific current webcam places",
@@ -92,23 +92,23 @@
       "Namibia — Swakopmund and Windhoek frequently refreshed current-image places",
       "Western/Northern Europe quality batch — Brussels, Zandvoort, Darmstadt, Heidelberg/Königstuhl, Nuremberg, Cannes, Plitvice, Denmark live-view family, Dresden/Radebeul and Farchant/Zugspitze"
     ],
-    "catalogScaleStrategy": "Keep data/sources.json below the strict 300 KB runtime ceiling. Full provenance stays in data/source-evidence.json. Continue selective swaps now; design a lazy/supplemental Search-only catalog before scaling materially beyond this runtime ceiling.",
-    "nextMode": "QUALITY_AND_FRESHNESS_AFTER_SCALE_TARGET",
+    "catalogScaleStrategy": "Runtime data/sources.json is now ~299 KB under the strict 300 KB ceiling. Do not weaken the limit. Further scale should use a lazy/supplemental Search-only catalog or selective source swaps while keeping Watch Earth/current-first runtime lean.",
+    "nextMode": "SUPPLEMENTAL_SEARCH_CATALOG_ARCHITECTURE_PLUS_QUALITY_MAINTENANCE",
     "currentHealthyTruth": {
       "LIVE_VIDEO": 13,
       "EXTERNAL_LIVE": 72,
       "LIVE_IMAGE": 232
     },
     "researchCandidateStateCounts": {
-      "PROMOTED_TO_SOURCE_REGISTRY": 58,
+      "PROMOTED_TO_SOURCE_REGISTRY": 62,
       "PROMOTED_TO_SEARCHABLE_QUASI_LIVE": 151,
       "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
-      "HUMAN_PLAYBACK_REQUIRED": 18
+      "HUMAN_PLAYBACK_REQUIRED": 14
     },
-    "currentHealthyCountryCount": 76,
-    "remainingTo350": 34,
-    "remainingTo400": 84,
-    "remainingHumanPlaybackQueue": 18,
+    "currentHealthyCountryCount": 79,
+    "remainingTo350": 31,
+    "remainingTo400": 81,
+    "remainingHumanPlaybackQueue": 14,
     "currentPriorityGaps": [
       "Middle East / North Africa",
       "South Pacific islands",
@@ -190,15 +190,15 @@
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
     "verifiedOpportunityCount": 16,
-    "exactLinkQueueCount": 184,
-    "sourceGatedQueueCount": 11,
+    "exactLinkQueueCount": 187,
+    "sourceGatedQueueCount": 8,
     "sourceGapBlockedCount": 2,
     "sourceGatedOpportunityCount": 31,
     "quasiLiveCommercialRule": "A healthy quasi-live searchable place may unlock downstream travel planning, but commercial value never changes truth/currentness.",
     "currentOpportunityStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 184,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 11,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 187,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 8,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
     "priorityRule": "Prefer exact destination/product fit inside existing active partners before broad generic destination links. Batch owner link generation rather than interrupting one destination at a time.",
@@ -207,8 +207,8 @@
     "istanbulDenpasarUnlocked": true,
     "currentCommercialStates": {
       "VERIFIED_LINK_ADDED": 16,
-      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 184,
-      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 11,
+      "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED": 187,
+      "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK": 8,
       "SOURCE_GAP_MUST_BE_SOLVED_FIRST": 2
     },
     "trafficUnlockRoadmap": "data/travelpayouts-unlock-roadmap.json",
