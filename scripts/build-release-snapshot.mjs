@@ -7,6 +7,15 @@ await mkdir(dist,{recursive:true});
 await import("./build-destination-pages.mjs");
 await import("./build-operator-review.mjs");
 await cp(new URL("../index.html",import.meta.url),new URL("index.html",dist));
+const ERN_BUILD_CACHE_BUST=String(process.env.GITHUB_SHA||process.env.ERN_COMMIT_SHA||Date.now()).slice(0,12);
+{
+  const indexPath=new URL("index.html",dist);
+  let html=await readFile(indexPath,"utf8");
+  html=html
+    .replace(/(\.\/src\/styles-lite\.css)(?:\?v=[^"']*)?/g,`$1?v=${ERN_BUILD_CACHE_BUST}`)
+    .replace(/(\.\/src\/app-lite\.js)(?:\?v=[^"']*)?/g,`$1?v=${ERN_BUILD_CACHE_BUST}`);
+  await writeFile(indexPath,html);
+}
 await mkdir(new URL("src/",dist),{recursive:true});
 await cp(new URL("../src/guide-public-copy.js",import.meta.url),new URL("src/guide-public-copy.js",dist));
 await cp(new URL("../src/guide-ai-client.js",import.meta.url),new URL("src/guide-ai-client.js",dist));
