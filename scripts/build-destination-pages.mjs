@@ -10,7 +10,9 @@ import { DISCOVERY_LOCALES,discoveryLocale,localizedCollection } from "../src/ed
 import fs from "node:fs";
 
 const discoverDefinitions=EDITORIAL_COLLECTIONS;
-const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
+const coreSources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
+const searchSupplemental=JSON.parse(fs.readFileSync("data/search-supplemental.json","utf8"));
+const sources=[...coreSources,...searchSupplemental];
 const travelOffers=JSON.parse(fs.readFileSync("data/travel-offers.json","utf8"));
 const localDirectory=JSON.parse(fs.readFileSync("data/local-directory.json","utf8"));
 const affiliatePartners=JSON.parse(fs.readFileSync("data/affiliate-partners.json","utf8"));
