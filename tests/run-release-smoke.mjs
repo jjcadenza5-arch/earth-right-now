@@ -13,6 +13,7 @@ const releaseTests=[
   "seo-indexing-audit.smoke.js",
   "ai-search-readiness.smoke.js",
   "search-alias-metadata.smoke.js",
+  "place-search-aliases.smoke.js",
   "search-reference-discovery.smoke.js",
   "research-review-queue.smoke.js",
   "embed-research-preflight.smoke.js",
