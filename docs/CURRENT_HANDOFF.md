@@ -721,3 +721,14 @@ Post-200 Europe / traffic-unlock checkpoint — 2026-10-03:
 - Commercial registry is now 204 opportunities: 16 verified-link, 179 exact-link/account-search, 7 source-verification-gated, 2 source-gap-blocked.
 - All 314 healthy places remain intentionally classified: 276 have commercial research paths and 38 are editorial-first; zero are unclassified.
 - Travelpayouts traffic-gated strategy is unchanged: Trip.com remains the preferred future unlock, but no gated program should be rechecked until material traffic/conversion or an explicit platform status change.
+
+
+316-place Montenegro / Bosnia checkpoint — 2026-10-04:
+- ERN now targets 316 healthy distinct searchable places across 76 countries/territories.
+- New-country quality additions: Kolašin 1600 in Montenegro from the official Ski Resorts of Montenegro Live Cameras surface, and Jahorina Olympic Mountain in Bosnia and Herzegovina from the official Olympic Center Jahorina LIVE CAM surface.
+- Both are intentionally LIVE_IMAGE + LINK_ONLY + featuredHold/watchHold until continuous playback is separately human-verified. Search/Explore gains breadth; Watch Earth truth does not loosen.
+- Commercial registry now has 206 opportunities with states {"VERIFIED_LINK_ADDED":16,"ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED":181,"SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK":7,"SOURCE_GAP_MUST_BE_SOLVED_FIRST":2}.
+- Kolašin and Jahorina each gain a Viator research path backed by current public product inventory; exact tracked links remain owner/account-side and manually verified before public activation.
+- Commercial classification remains complete at 316 places: 278 commercial-path places + 38 editorial-first places; zero unclassified.
+- Trip.com remains ERN's P1 future Travelpayouts unlock. The larger destination catalog strengthens the eventual value of accommodation coverage, but does not justify repeated unlock checks before traffic/conversion/account signals.
+- Pamir remains deferred; quasi-live/current-image policy is canonical in data/source-expansion-policy.json.
