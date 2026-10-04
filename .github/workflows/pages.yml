@@ -25,6 +25,7 @@ on:
       - "scripts/local-directory-status.mjs"
       - "src/styles-lite.css"
       - "data/sources.json"
+      - "data/search-supplemental.json"
       - "data/source-research-priorities.json"
       - "data/visitor-source-expansion-candidates.json"
       - "data/realtime-context-sources.json"
