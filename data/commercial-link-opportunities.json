@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T21:10:00Z",
+  "generatedAt": "2026-10-05T21:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -626,12 +626,13 @@
       "placeIds": [
         "mauritius-grand-baie",
         "mauritius-pointe-desny",
-        "mauritius-saint-felix"
+        "mauritius-saint-felix",
+        "mauritius-shanti-maurice"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN has multiple healthy official Mauritius current-view places and Klook has broad Mauritius island activity inventory; one island-level planning path should serve the cluster without duplicate commercial density.",
+      "reason": "ERN now has four healthy Mauritius current/live places spanning north, east and south-coast discovery; one island-level Klook planning path should serve the cluster without duplicate commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/co1011-mauritius/1-things-to-do/",
       "publicInventoryEvidence": "Current Klook Mauritius inventory includes island tours, snorkeling/catamaran products, Chamarel/7 Coloured Earth, whale watching, kayaking and other visitor activities.",
