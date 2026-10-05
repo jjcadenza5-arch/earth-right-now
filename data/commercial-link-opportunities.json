@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T13:42:00Z",
+  "generatedAt": "2026-10-05T13:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3586,6 +3586,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Yogyakarta/Merapi-Volcano-4WD-Jeep-Tour-From-Yogyakarta/d22560-339870P7",
       "publicInventoryEvidence": "Current Viator inventory includes multiple Mount Merapi experiences from Yogyakarta, including guided hiking and private 4WD lava-field tours.",
       "nextAction": "Generate one owner-side Mount Merapi / Yogyakarta Viator tracked destination/search link and manually verify it before public activation; public copy must preserve current official safety restrictions and operator itinerary boundaries."
+    },
+    {
+      "id": "viator-mount-st-helens-portland",
+      "destination": "Mount St. Helens / Portland",
+      "placeIds": [
+        "us-mount-st-helens"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official USGS current Mount St. Helens view, and Viator currently lists a dedicated full-day Mount St. Helens adventure from Portland. This is a direct current-view-to-visit planning bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Portland/The-Mt-St-Helens-Adventure-Tour/d5065-120361P1",
+      "publicInventoryEvidence": "Current Viator inventory includes a guided Mount St. Helens day trip from Portland with Mount St. Helens, Ape Cave, Trail of Two Forests and viewpoints in the itinerary.",
+      "nextAction": "Generate one owner-side Mount St. Helens / Portland Viator tracked destination or product link and manually verify it before public activation."
     }
   ]
 }
