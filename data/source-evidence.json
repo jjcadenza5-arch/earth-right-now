@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:08:00Z",
+  "generatedAt": "2026-10-05T13:22:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1917,6 +1917,18 @@
       "rightsBasis": "Official national government monitoring surface. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream the player.",
       "coordinateSourceUrl": "https://www.snet.gob.sv/informacion/areas/vulcanologia/contenido/monitoreo.php",
       "story": "Official current monitoring view of San Miguel / Chaparrastique volcano."
+    },
+    "ecuador-guagua-pichincha-monitoring": {
+      "freshnessEvidence": "Instituto Geofísico EPN Guagua Pichincha camera page checked 2026-10-05 exposes the crater camera under the volcano monitoring section.",
+      "rightsBasis": "Official scientific monitoring page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream the camera media.",
+      "coordinateSourceUrl": "https://www2.igepn.edu.ec/ggp-camaras/content/11-guagua-pichincha",
+      "story": "Official current crater-camera view of Guagua Pichincha near Quito."
+    },
+    "peru-sara-sara-current-image": {
+      "freshnessEvidence": "Instituto Geofísico del Perú / CENVUL Sara Sara camera page checked 2026-10-05 states that real-time volcano images are obtained every minute.",
+      "rightsBasis": "Official Peruvian national volcano-monitoring page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream the image feed.",
+      "coordinateSourceUrl": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/imagenes-en-tiempo-real/sarasara",
+      "story": "Official one-minute monitoring view of Sara Sara volcano in Ayacucho."
     }
   },
   "prague-petrin-tower": {
