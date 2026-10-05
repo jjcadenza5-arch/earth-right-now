@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T19:00:00Z",
+  "generatedAt": "2026-10-05T19:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4335,6 +4335,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Cabarete/d31317-ttd",
       "publicInventoryEvidence": "Current Viator Cabarete inventory includes water sports, 4WD, nature and excursion products.",
       "nextAction": "Generate one owner-side Cabarete destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-seychelles-beau-vallon",
+      "destination": "Beau Vallon / Mahé, Seychelles",
+      "placeIds": [
+        "seychelles-beau-vallon"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a current Beau Vallon live window and Viator has dedicated Beau Vallon/Mahé island, marine and sightseeing inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Beau-Vallon/d50351-ttd",
+      "publicInventoryEvidence": "Current Viator Beau Vallon inventory includes reef safaris, island tours, marine excursions and transfers.",
+      "nextAction": "Generate one owner-side Beau Vallon or Mahé destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
