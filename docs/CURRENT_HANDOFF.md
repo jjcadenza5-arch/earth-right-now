@@ -1126,3 +1126,53 @@ while preserving the startup/performance ceiling and existing product gates.
 - The retrievable image target is a dated archive JPEG, not a documented stable latest/current alias.
 - ERN therefore keeps AVO camera sources LINK_ONLY for now and explicitly avoids freezing a dated archive JPEG as if it were a current-image endpoint.
 - Revisit only when a stable provider latest-image endpoint/API is documented or an exact current alias is confirmed.
+
+
+
+### Machine-verified reusable current-image pipeline — 2026-10-05
+- Added a fail-closed current-image network verifier to daily ERN Operations.
+- Verifier checks staged exact current-image targets for:
+  - successful HTTP response,
+  - real image content (including JPEG/PNG signature fallback when Content-Type is absent),
+  - image byte size,
+  - ETag / Last-Modified / cache headers,
+  - provider metadata endpoints where available,
+  - temporal freshness evidence.
+- GeoNet initially exposed a useful edge case: valid JPEGs omitted Content-Type. The verifier was corrected to inspect image signatures and use trustworthy Last-Modified timestamps as freshness evidence.
+- Corrected Operations evidence at 2026-10-05T06:43Z showed 5/5 machine-current:
+  - USGS Yellowstone Biscuit Basin,
+  - USGS Yellowstone Lake,
+  - GeoNet Ruapehu North,
+  - GeoNet Taranaki Maunga,
+  - USGS/HVO Kīlauea V3cam.
+- GeoNet staging then expanded using documented camera IDs and stable latest-image patterns to:
+  - Ngauruhoe from West,
+  - Tongariro from North,
+  - Whakaari / White Island from Te Kaha.
+- Operations evidence at 2026-10-05T06:48Z showed 8/8 staged exact targets machine-current, with zero invalid targets and zero temporal-sample debt.
+- Machine verification evidence for the public-source-bound candidates is recorded in data/source-evidence.json.
+- Added an Operations current-image promotion-readiness layer. It requires BOTH:
+  - explicit reusable-rights evidence, and
+  - passing machine-current image evidence.
+- This readiness layer is advisory only:
+  - catalogMutationAllowed=false;
+  - automaticPromotionAllowed=false;
+  - linkOnlyAutoUpgradeAllowed=false.
+- Current promotion readiness:
+  - 7 sources are READY_FOR_EDITORIAL_PROMOTION_REVIEW:
+    - Yellowstone Biscuit Basin,
+    - Yellowstone Lake,
+    - GeoNet Ruapehu North,
+    - GeoNet Taranaki Maunga,
+    - GeoNet Ngauruhoe,
+    - GeoNet Tongariro,
+    - GeoNet Whakaari / White Island.
+  - Kīlauea V3cam is machine-current and Public Domain but remains staged because its existing public source record is EXTERNAL_LIVE rather than LIVE_IMAGE.
+- A temporary attempt to add a dedicated Kīlauea current-image core source proved why the performance gate matters:
+  - lean core increased to 576,243 bytes;
+  - hard ceiling remains 575 KB;
+  - Pages release correctly failed;
+  - the ceiling was NOT raised.
+- The extra Kīlauea core row was rolled back. Subsequent Pages and Operations on the rollback path returned green. Kīlauea remains private staging only until a zero-bloat public binding strategy is available.
+- Existing public visitor behavior remains unchanged: all seven review-ready sources are still LINK_ONLY / EXTERNAL. No automatic inside-ERN promotion occurred.
+- This is now a genuine substantial review/approval point: ERN can either keep the seven sources link-only or deliberately transition a controlled pilot subset to inside-ERN IMAGE_REFRESH with attribution, rollback guards and an evidence-renewal policy.
