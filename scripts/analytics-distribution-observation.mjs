@@ -24,6 +24,21 @@ const current={
 };
 const baseline=latest?.baseline&&typeof latest.baseline==="object"?latest.baseline:null;
 const deltaMetric=k=>baseline&&Number.isFinite(Number(baseline[k]))?current[k]-Number(baseline[k]):null;
+const ratio=(n,d)=>Number(d)>0?Number((Number(n||0)/Number(d)).toFixed(4)):null;
+const intensityFor=m=>({
+ pageViewsPerApproxVisitor:ratio(m.pageViews,m.approximateUniqueVisitors),
+ searchesPerApproxVisitor:ratio(m.earthSearches,m.approximateUniqueVisitors),
+ windowOpensPerApproxVisitor:ratio(m.windowOpens,m.approximateUniqueVisitors),
+ externalSourceOpensPerApproxVisitor:ratio(m.externalSourceOpens,m.approximateUniqueVisitors),
+ travelOptionOpensPerApproxVisitor:ratio(m.travelOptionOpens,m.approximateUniqueVisitors),
+ zeroResultSearchRate:ratio(m.zeroResultSearches,m.earthSearches)
+});
+const currentIntensity=intensityFor(current);
+const baselineIntensity=baseline?intensityFor(baseline):null;
+const intensityDelta=baselineIntensity?Object.fromEntries(Object.keys(currentIntensity).map(k=>[
+ k,
+ currentIntensity[k]===null||baselineIntensity[k]===null?null:Number((currentIntensity[k]-baselineIntensity[k]).toFixed(4))
+])):null;
 const generatedAt=x.generatedAt||new Date().toISOString();
 const baselineAt=baseline?.observedAt?Date.parse(baseline.observedAt):NaN,nowAt=Date.parse(generatedAt);
 const elapsedHours=Number.isFinite(baselineAt)&&Number.isFinite(nowAt)?Math.max(0,(nowAt-baselineAt)/36e5):null;
@@ -32,7 +47,7 @@ const completedMilestones=elapsedHours===null?[]:milestones.filter(h=>elapsedHou
 const nextMilestoneHours=elapsedHours===null?null:(milestones.find(h=>elapsedHours<h)??null);
 const phase=elapsedHours===null?"NO_BASELINE_TIME":elapsedHours<24?"EARLY_UNDER_24H":elapsedHours<72?"POST_24H":elapsedHours<168?"POST_72H":"POST_7D";
 const out={
- schemaVersion:2,
+ schemaVersion:3,
  generatedAt,
  analyticsWindowDays:x.windowDays||null,
  latestOrganicDistributionEvent:latest,
@@ -70,6 +85,13 @@ const out={
  exploration:{
    currentTopSearches:current.topSearches,
    currentTopPlaces:current.topPlaces,
+   intensity:{
+     current:currentIntensity,
+     baseline:baselineIntensity,
+     delta:intensityDelta,
+     denominator:"approximateUniqueVisitors",
+     interpretationBoundary:"Aggregate intensity ratios describe exploration volume relative to approximate visitors. They are not per-person histories, sessions, conversion rates or causal attribution."
+   },
    interpretationBoundary:"Aggregate behavior only. Search/place activity cannot identify an individual visitor as a nomad or prove that Facebook caused the activity."
  },
  safety:{
