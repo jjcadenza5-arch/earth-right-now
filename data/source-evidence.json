@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T14:16:00Z",
+  "generatedAt": "2026-10-05T13:50:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2085,6 +2085,36 @@
       "rightsBasis": "Official INGV surveillance-camera page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
       "coordinateSourceUrl": "https://sowebapp.ct.ingv.it/oldweb/stromboli/WEBCAM.ASP",
       "story": "Official current visible and thermal surveillance views of Stromboli."
+    },
+    "us-grand-teton-live": {
+      "freshnessEvidence": "Grand Teton National Park official page checked 2026-10-05 explicitly describes a real-time live webcam of the Teton Range from Moose, Wyoming.",
+      "rightsBasis": "Official NPS live-webcam page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream the video.",
+      "coordinateSourceUrl": "https://www.nps.gov/grte/learn/photosmultimedia/tetonrangewebcam.htm",
+      "story": "Official real-time panoramic view of the Teton Range."
+    },
+    "us-devils-tower-live": {
+      "freshnessEvidence": "Devils Tower National Monument official webcams page checked 2026-10-05 states its current webcams update every 60 seconds and includes Prairie Dog Town / tower views.",
+      "rightsBasis": "Official NPS webcam page. ERN remains LINK_ONLY and does not infer permission to copy or embed the camera imagery.",
+      "coordinateSourceUrl": "https://www.nps.gov/deto/learn/photosmultimedia/webcams.htm",
+      "story": "Official current Devils Tower and prairie dog town views."
+    },
+    "us-rocky-mountain-alpine-live": {
+      "freshnessEvidence": "Rocky Mountain National Park Alpine Visitor Center webcam checked 2026-10-05 is listed by NPS as Active and refreshing every 60 seconds.",
+      "rightsBasis": "Official NPS webcam page. ERN remains LINK_ONLY and does not infer permission to copy or embed the camera imagery.",
+      "coordinateSourceUrl": "https://www.nps.gov/media/webcam/view.htm?id=81B4681E-1DD8-B71B-0B8311E4FAC15EF4",
+      "story": "Official current alpine-tundra view from Fall River Pass."
+    },
+    "us-pearl-harbor-arizona-live": {
+      "freshnessEvidence": "NPS USS Arizona Memorial webcam checked 2026-10-05 is listed as Active and described as a 24/7 live stream.",
+      "rightsBasis": "Official NPS live-stream page. ERN remains LINK_ONLY and does not infer permission to restream or embed the stream.",
+      "coordinateSourceUrl": "https://www.nps.gov/media/webcam/view.htm?id=4B50339E-FB5C-4549-8130-94C84466395A",
+      "story": "Official 24/7 live stream of the USS Arizona Memorial at Pearl Harbor."
+    },
+    "us-crater-lake-live": {
+      "freshnessEvidence": "Crater Lake National Park webcam checked 2026-10-05 is listed as Active by NPS; the page states the image updates every 4–6 minutes.",
+      "rightsBasis": "Official NPS webcam page. ERN remains LINK_ONLY and does not infer permission to copy or embed the camera imagery.",
+      "coordinateSourceUrl": "https://www.nps.gov/media/webcam/view.htm?id=88F5EE0B-04BA-2C9C-83226089ADFC8005",
+      "story": "Official current view across Crater Lake from Rim Village."
     }
   },
   "prague-petrin-tower": {
