@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T20:15:00Z",
+  "generatedAt": "2026-10-05T20:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4181,6 +4181,24 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Agadir/d4383-ttd",
       "publicInventoryEvidence": "Viator currently exposes substantial Agadir-area sightseeing, surf-coast and day-trip inventory.",
       "nextAction": "Generate one owner-side Agadir/Taghazout destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-merida-yucatan",
+      "destination": "Mérida / Yucatán, Mexico",
+      "placeIds": [
+        "mexico-merida-yucatan",
+        "mexico-izamal-yucatan",
+        "mexico-progreso-yucatan",
+        "mexico-valladolid-yucatan"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has four government-backed real-time Yucatán destination windows. Viator has deep Mérida/Yucatán inventory spanning Uxmal, Chichén Itzá, cenotes, Progreso and regional cultural trips, so one regional bridge can serve this cluster without per-camera commercial density.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Merida/d5195-ttd",
+      "publicInventoryEvidence": "Current Viator Mérida inventory includes Uxmal, Chichén Itzá, cenotes and broader Yucatán excursions, including Progreso-region products.",
+      "nextAction": "Generate one owner-side Mérida/Yucatán destination-level tracked link and manually verify it before public activation; reuse it only where the regional planning context is useful."
     }
   ]
 }
