@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T19:05:00Z",
+  "generatedAt": "2026-10-05T19:25:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4423,6 +4423,90 @@
       "verifiedAt": "2026-10-05T19:05:00Z",
       "promotedAt": "2026-10-05T19:05:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "cayman-seven-mile-sunshine-live",
+      "title": "Seven Mile Beach — Grand Cayman",
+      "country": "Cayman Islands",
+      "region": "Grand Cayman / Seven Mile Beach",
+      "provider": "Sunshine Hotel & Suites / Sister Beachfront Resort",
+      "sourcePage": "https://sunshinesuites.com/live-webcam/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current Sunshine Hotel & Suites page explicitly asks 'What is it Like at Seven Mile Beach Right Now?' and embeds East and West live views.",
+      "verifiedAt": "2026-10-05T19:25:00Z",
+      "promotedAt": "2026-10-05T19:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "jamaica-montego-bay-s-hotel-live",
+      "title": "Montego Bay — S Hotel Live View",
+      "country": "Jamaica",
+      "region": "Montego Bay",
+      "provider": "S Hotel Montego Bay",
+      "sourcePage": "https://www.shotelsjamaica.com/s-hotel-montego-bay/live-webcam",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "S Hotel Montego Bay currently labels the page LIVE Webcam and states it provides real-time visuals.",
+      "verifiedAt": "2026-10-05T19:25:00Z",
+      "promotedAt": "2026-10-05T19:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "jamaica-kingston-s-hotel-live",
+      "title": "Kingston — S Hotel Live View",
+      "country": "Jamaica",
+      "region": "Kingston",
+      "provider": "S Hotel Kingston",
+      "sourcePage": "https://www.shotelsjamaica.com/s-hotel-kingston/live-webcam",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "S Hotel Kingston currently labels the page LIVE Webcam and states it provides real-time visuals.",
+      "verifiedAt": "2026-10-05T19:25:00Z",
+      "promotedAt": "2026-10-05T19:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "st-lucia-calabash-cove-live",
+      "title": "St. Lucia — Calabash Cove",
+      "country": "Saint Lucia",
+      "region": "Gros Islet / Marisule",
+      "provider": "Calabash Cove Resort & Spa",
+      "sourcePage": "https://www.calabashcove.com/live-webcam",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Calabash Cove currently describes the page as its live webcam and says paradise comes to life before your eyes.",
+      "verifiedAt": "2026-10-05T19:25:00Z",
+      "promotedAt": "2026-10-05T19:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "zanzibar-paje-white-sand-live",
+      "title": "Paje — Zanzibar White Sand",
+      "country": "Tanzania",
+      "region": "Zanzibar / Paje",
+      "provider": "Zanzibar White Sand Luxury Villas & Spa",
+      "sourcePage": "https://www.whitesandvillas.com/en/resort",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current Zanzibar White Sand resort navigation explicitly includes Live Webcam alongside its Paje beach resort information.",
+      "verifiedAt": "2026-10-05T19:25:00Z",
+      "promotedAt": "2026-10-05T19:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "bvi-jost-van-dyke-soggy-live",
+      "title": "Jost Van Dyke — White Bay",
+      "country": "British Virgin Islands",
+      "region": "Jost Van Dyke / White Bay",
+      "provider": "Soggy Dollar Bar & Sandcastle Hotel",
+      "sourcePage": "https://www.soggydollar.com/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current official site explicitly offers its webcam and labels it LIVE STREAMING from White Bay.",
+      "verifiedAt": "2026-10-05T19:25:00Z",
+      "promotedAt": "2026-10-05T19:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
