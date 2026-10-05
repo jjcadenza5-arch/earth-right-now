@@ -1,6 +1,6 @@
 const target=process.argv[2]||"https://earthrightnow.app/";
-const expectedImage="https://earthrightnow.app/assets/ern-social-card.png?v=20261005-social2";
-const expected={"og:title":"Earth Right Now — The Live Discovery Engine","og:description":"Search real places, see truthful live and current windows, discover, decide and go. See before you go.","og:url":"https://earthrightnow.app/","og:image":expectedImage,"og:image:width":"1200","og:image:height":"630","og:image:alt":"Earth Right Now — The Live Discovery Engine. See before you go.","twitter:card":"summary_large_image","twitter:image":expectedImage};
+const expectedImage="https://earthrightnow.app/assets/ern-social-card-v2.png?v=20261005-social3";
+const expected={"og:title":"Earth Right Now — The Live Discovery Engine","og:description":"See before you go. Search real places and open truthful live and current views from around the world.","og:url":"https://earthrightnow.app/","og:image":expectedImage,"og:image:width":"1200","og:image:height":"630","og:image:alt":"Earth Right Now — The Live Discovery Engine. See before you go.","twitter:card":"summary_large_image","twitter:image":expectedImage};
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function getWithRetry(url,tries=5){let last;for(let i=0;i<tries;i++){try{const r=await fetch(url,{redirect:"follow"});if(r.ok)return r;last=new Error(r.status+" "+r.statusText)}catch(e){last=e}if(i<tries-1)await sleep(5000)}throw last||new Error("request failed")}
 const htmlRes=await getWithRetry(target,5);
