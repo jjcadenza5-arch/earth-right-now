@@ -10,6 +10,9 @@ const ids=[
   "usgs-yellowstone-lake-current-image",
   "geonet-ruapehu-north-current-image",
   "geonet-taranaki-current-image",
+  "geonet-ngauruhoe-current-image",
+  "geonet-tongariro-current-image",
+  "geonet-whakaari-tekaha-current-image",
   "usgs-kilauea-v3cam-current-image"
 ];
 
@@ -37,7 +40,7 @@ assert.equal(usgs.length,3);
 assert.ok(usgs.every(x=>/USGS|U.S. Geological Survey|Yellowstone|Volcano Observatory/i.test(x.provider)));
 
 const geonet=targets.filter(x=>ids.includes(x.id)&&x.providerFamilyId==="geonet-volcano-cameras");
-assert.equal(geonet.length,2);
+assert.equal(geonet.length,5);
 assert.ok(geonet.every(x=>/GeoNet/i.test(x.provider)));
 assert.ok(geonet.every(x=>/10_MINUTES/.test(x.refreshSemantics)));
 
