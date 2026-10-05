@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T13:00:00Z",
+  "generatedAt": "2026-10-05T13:08:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3466,6 +3466,36 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Reykjavik/Westman-Islands-Private-Tour-by-Minibus-with-lunch/d905-420898P13",
       "publicInventoryEvidence": "Current Viator Westman Islands inventory includes tours whose itineraries reference Surtsey alongside Heimaey and other island stops.",
       "nextAction": "Generate one owner-side Westman Islands Viator tracked destination/search link and manually verify it; public wording must not imply unrestricted visitor access to Surtsey."
+    },
+    {
+      "id": "viator-santa-ana-el-salvador",
+      "destination": "Santa Ana Volcano / Ilamatepec",
+      "placeIds": [
+        "el-salvador-santa-ana-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official current Santa Ana volcano monitoring view, and Viator has deep current Santa Ana hiking inventory. This creates a direct current-conditions-to-guided-visit planning path without affecting Earth ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Santa-Ana-attractions/Santa-Ana-Volcano/d25291-a100327",
+      "publicInventoryEvidence": "Current Viator El Salvador inventory includes many guided Santa Ana / Ilamatepec hikes and Lake Coatepeque combinations.",
+      "nextAction": "Generate one owner-side Santa Ana Volcano Viator tracked destination/search link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-san-miguel-volcano-el-salvador",
+      "destination": "San Miguel Volcano / Chaparrastique",
+      "placeIds": [
+        "el-salvador-san-miguel-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has an official current Chaparrastique monitoring view, and Viator currently sells a dedicated guided San Miguel Volcano trek. Keep commercial planning downstream from Earth discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/San-Salvador/Chaparrastique-Volcano-Hiking-Nature-Crater-Outdoors/d5585-140810P8",
+      "publicInventoryEvidence": "Current Viator inventory includes a private full-day San Miguel / Chaparrastique volcano trek with local guide and pickup.",
+      "nextAction": "Generate one owner-side San Miguel / Chaparrastique Viator tracked destination/search link and manually verify it before public activation."
     }
   ]
 }
