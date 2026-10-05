@@ -88,8 +88,10 @@ export async function validateOperationsPacket(dir="ern-ops"){
   const organicDistribution=files["organic-distribution-observation.json"];
   if(organicDistribution){
     const s=organicDistribution.safety||{};
-    if(s.impressionsInferred!==false||s.groupReachInferred!==false||s.conversionsInferred!==false||s.bookingsInferred!==false||s.revenueInferred!==false||s.paidPromotionAssumed!==false)issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_INFERENCE_BOUNDARY_VIOLATION"});
+    if(s.impressionsInferred!==false||s.groupReachInferred!==false||s.audienceIdentityInferred!==false||s.causationInferred!==false||s.conversionsInferred!==false||s.bookingsInferred!==false||s.revenueInferred!==false||s.paidPromotionAssumed!==false)issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_INFERENCE_BOUNDARY_VIOLATION"});
     if(!Number.isFinite(Number(organicDistribution?.observation?.facebookReferralViews)))issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_FACEBOOK_COUNT_INVALID"});
+    if(organicDistribution?.sinceBaseline&&typeof organicDistribution.sinceBaseline!=="object")issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_BASELINE_DELTA_INVALID"});
+    if(organicDistribution?.sinceBaseline?.deltas&&Object.values(organicDistribution.sinceBaseline.deltas).some(v=>v!==null&&!Number.isFinite(Number(v))))issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_DELTA_METRIC_INVALID"});
   }
 
   const localDirectory=files["local-directory-status.json"];
