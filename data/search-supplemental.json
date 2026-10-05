@@ -4829,5 +4829,36 @@
     "searchSupplemental": true,
     "rightsBasis": "First-party resort webcam page; link-only.",
     "freshnessEvidence": "Shanti Maurice currently describes the beach view as its live webcam."
+  },
+  {
+    "id": "kenya-ol-donyo-waterhole-live",
+    "placeId": "kenya-ol-donyo-chyulu",
+    "title": "Chyulu Hills — ol Donyo Waterhole",
+    "provider": "Great Plains Conservation / Big Life Foundation",
+    "country": "Kenya",
+    "region": "Chyulu Hills / Amboseli Ecosystem",
+    "categories": [
+      "Wildlife",
+      "Safari",
+      "Parks",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://biglife.org/program-updates/big-life-news/watch-a-waterhole",
+    "attribution": "Great Plains Conservation / Big Life Foundation",
+    "checkedAt": "2026-10-05T21:30:00Z",
+    "lastSuccessfulCheck": "2026-10-05T21:30:00Z",
+    "quality": 99,
+    "freshness": 99,
+    "moment": 99,
+    "story": "Live wildlife waterhole view from ol Donyo Lodge in the Chyulu Hills with the Amboseli ecosystem and Kilimanjaro beyond.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "Conservation-partner page describing the Great Plains live webcam; link-only.",
+    "freshnessEvidence": "Big Life Foundation documents the live webcam at ol Donyo Lodge waterhole; current live-camera directories continue to show the stream active."
   }
 ]
