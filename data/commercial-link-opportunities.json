@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T21:30:00Z",
+  "generatedAt": "2026-10-05T21:40:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4413,6 +4413,22 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Kenya-tours/Safaris/d801-g9-c37",
       "publicInventoryEvidence": "Current Viator Kenya inventory includes Amboseli safari and wildlife experiences.",
       "nextAction": "Generate one owner-side Amboseli/Chyulu destination-level tracked link if useful and manually verify it before public activation."
+    },
+    {
+      "id": "viator-jasper",
+      "destination": "Jasper National Park, Canada",
+      "placeIds": [
+        "canada-jasper-skytram",
+        "canada-maligne-lake"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has first-party current views from Jasper SkyTram and Maligne Lake; one Jasper destination-level visitor-planning path should serve both without duplicating commercial density.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Jasper/d5421-ttd",
+      "publicInventoryEvidence": "Viator currently exposes Jasper destination inventory spanning sightseeing, wildlife, Maligne Lake and mountain experiences.",
+      "nextAction": "Generate one owner-side Jasper destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
