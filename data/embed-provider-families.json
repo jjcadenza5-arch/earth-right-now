@@ -3441,13 +3441,13 @@
     "familyLabel": "Tri-Mountain National Scenic Area real-time camera network",
     "researchUrl": "https://www.trimt-nsa.gov.tw/en/",
     "termsUrl": "https://www.trimt-nsa.gov.tw/en/copyright/",
-    "verifiedAt": "2026-10-05T04:50:00Z",
-    "permissionEvidence": "Tri-Mountain National Scenic Area publishes a government information disclosure statement placing publicly published copyrightable data/materials under Taiwan Open Government Data License 1.0, permitting reproduction, adaptation, public transmission and product/service use with attribution, subject to exclusions for third-party works requiring extra approval. Because its own pages explicitly describe real-time cameras, ERN may consider one exact camera current-image path after confirming the asset is administration-owned and not excluded.",
+    "verifiedAt": "2026-10-05T09:08:00Z",
+    "permissionEvidence": "Tri-Mountain National Scenic Area Headquarters' own government news states that the headquarters installed three new 4K tourism real-time cameras, including Emei Lake, Baguashan and Deji Reservoir. Its government information disclosure statement places publicly published copyrightable data/materials under Taiwan Open Government Data License 1.0 with attribution, subject to exclusions for third-party works. Agency camera ownership is therefore materially strengthened for these named cameras, but ERN still must resolve the exact delivered player/image asset and confirm that the reusable target itself is not a separately controlled third-party stream.",
     "permissionStatus": "OGDL_TAIWAN_1_0_WITH_ATTRIBUTION_SUBJECT_TO_THIRD_PARTY_EXCLUSIONS",
-    "technicalStatus": "SPECIFIC_CAMERA_OWNERSHIP_AND_CURRENT_IMAGE_TARGET_REVIEW_REQUIRED",
+    "technicalStatus": "AGENCY_CAMERA_OWNERSHIP_SUPPORTED_EXACT_PLAYER_OR_CURRENT_IMAGE_TARGET_UNRESOLVED",
     "humanPlaybackStatus": "NOT_APPLICABLE_CURRENT_IMAGE",
-    "promotion": "BLOCKED_UNTIL_SPECIFIC_CAMERA_OWNERSHIP_CHECK",
-    "nextAction": "VERIFY_ONE_EXACT_ADMINISTRATION_OWNED_CAMERA_TARGET_THEN_STAGE_ATTRIBUTED_CURRENT_IMAGE_PATH",
+    "promotion": "BLOCKED_UNTIL_EXACT_REUSABLE_TARGET_AND_DELIVERY_RIGHTS_CONFIRMED",
+    "nextAction": "RESOLVE ONE EXACT EMEI_OR_DEJI PLAYER/IMAGE TARGET; IF THE TARGET IS AGENCY_HOSTED_OR_CLEARLY_OGDL_COVERED, STAGE WITH ATTRIBUTION; IF THIRD_PARTY_PLAYER_TERMS_CONTROL IT, KEEP LINK_ONLY",
     "networkFamily": "trimt-nsa.gov.tw",
     "termsEffectiveAt": null,
     "termsReviewedAt": "2026-10-05T04:50:00Z",
@@ -3461,7 +3461,11 @@
     "permissionConfirmed": false,
     "researchSources": [
       "https://www.trimt-nsa.gov.tw/en/copyright/",
-      "https://www.trimt-nsa.gov.tw/en/attraction/457/"
+      "https://www.trimt-nsa.gov.tw/en/attraction/457/",
+      "https://www.trimt-nsa.gov.tw/en/live-camera/1032/",
+      "https://www.trimt-nsa.gov.tw/en/live-camera/29/",
+      "https://www.trimt-nsa.gov.tw/zh-tw/news/2584/",
+      "https://www.trimt-nsa.gov.tw/zh-tw/news/2509/"
     ],
     "discoveryProviderAliases": [
       "Taiwan Tourism Administration / Tri-Mountain National Scenic Area",
