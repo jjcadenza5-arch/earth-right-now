@@ -93,6 +93,11 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(!Number.isFinite(Number(organicDistribution?.observation?.facebookReferralViews)))issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_FACEBOOK_COUNT_INVALID"});
     if(organicDistribution?.sinceBaseline&&typeof organicDistribution.sinceBaseline!=="object")issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_BASELINE_DELTA_INVALID"});
     if(organicDistribution?.sinceBaseline?.deltas&&Object.values(organicDistribution.sinceBaseline.deltas).some(v=>v!==null&&!Number.isFinite(Number(v))))issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_DELTA_METRIC_INVALID"});
+    const intensity=organicDistribution?.exploration?.intensity;
+    for(const bucket of ["current","baseline","delta"]){
+      if(intensity?.[bucket]&&Object.values(intensity[bucket]).some(v=>v!==null&&!Number.isFinite(Number(v))))issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_INTENSITY_METRIC_INVALID",bucket});
+    }
+    if(intensity&&intensity.denominator!=="approximateUniqueVisitors")issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_INTENSITY_DENOMINATOR_INVALID"});
   }
 
   const searchGapTriage=files["search-gap-triage.json"];
