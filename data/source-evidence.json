@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:36:00Z",
+  "generatedAt": "2026-10-05T13:42:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1965,6 +1965,12 @@
       "rightsBasis": "Official Colombian Geological Service online-camera page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
       "coordinateSourceUrl": "https://www2.sgc.gov.co/sgc/volcanes/VolcanNevadoTolima/Paginas/imagenesLinea.aspx",
       "story": "Official current monitoring view of Nevado del Tolima."
+    },
+    "indonesia-merapi-official-live": {
+      "freshnessEvidence": "Badan Geologi / BPPTKG page checked 2026-10-05 currently lists 'Merapi Activity Live Streaming' described as seismic and visual (CCTV) monitoring of Mount Merapi.",
+      "rightsBasis": "Official Indonesian geological-agency monitoring service. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream the live service.",
+      "coordinateSourceUrl": "https://geologi.esdm.go.id/bpptkg",
+      "story": "Official live seismic and CCTV monitoring surface for Mount Merapi."
     }
   },
   "prague-petrin-tower": {
