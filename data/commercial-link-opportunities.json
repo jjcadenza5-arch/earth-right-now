@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T21:20:00Z",
+  "generatedAt": "2026-10-05T21:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4398,6 +4398,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Kruger-National-Park-tours/Safaris/d776-g9-c37",
       "publicInventoryEvidence": "Viator currently lists a large catalog of Kruger-area safaris and game drives.",
       "nextAction": "Only activate if the owner-side partner search yields a useful Klaserie/Greater Kruger destination path; otherwise leave dormant rather than forcing a generic product."
+    },
+    {
+      "id": "viator-amboseli-chyulu",
+      "destination": "Amboseli / Chyulu Hills, Kenya",
+      "placeIds": [
+        "kenya-ol-donyo-chyulu"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a live Chyulu Hills wildlife waterhole view with Kilimanjaro context, and Viator has substantial Amboseli safari inventory. The commercial path stays destination-level and downstream from discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Kenya-tours/Safaris/d801-g9-c37",
+      "publicInventoryEvidence": "Current Viator Kenya inventory includes Amboseli safari and wildlife experiences.",
+      "nextAction": "Generate one owner-side Amboseli/Chyulu destination-level tracked link if useful and manually verify it before public activation."
     }
   ]
 }
