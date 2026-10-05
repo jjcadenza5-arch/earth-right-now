@@ -3145,5 +3145,297 @@
       "Heidelberg Marketing",
       "Heidelberg Marketing GmbH"
     ]
+  },
+  {
+    "id": "horizons-regional-council-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Horizons Regional Council",
+    "familyLabel": "Horizons environmental webcam/current-image network",
+    "researchUrl": "https://www.horizons.govt.nz/webcams",
+    "termsUrl": "https://www.horizons.govt.nz/terms-and-conditions",
+    "verifiedAt": "2026-10-05T04:50:00Z",
+    "permissionEvidence": "Horizons Regional Council states its website content is copyrighted and may be used for personal and business purposes, but copying or republishing a substantial amount requires prior written consent. ERN therefore keeps Horizons webcam imagery LINK_ONLY unless a camera-specific reuse path is documented.",
+    "permissionStatus": "REPUBLISHING_REQUIRES_PRIOR_WRITTEN_CONSENT",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_CAMERA_SPECIFIC_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_HORIZONS_GRANTS_WEBCAM_REUSE_PERMISSION",
+    "networkFamily": "horizons.govt.nz",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T04:50:00Z",
+    "communityGuidelinesUrl": "https://www.horizons.govt.nz/terms-and-conditions",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "REPUBLISHING_REQUIRES_WRITTEN_CONSENT",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.horizons.govt.nz/terms-and-conditions",
+      "https://www.horizons.govt.nz/webcams"
+    ],
+    "discoveryProviderAliases": [
+      "Horizons Regional Council"
+    ]
+  },
+  {
+    "id": "insivumeh-volcano-cameras",
+    "status": "RESEARCH_ONLY",
+    "provider": "INSIVUMEH",
+    "familyLabel": "INSIVUMEH Guatemala volcano camera network",
+    "researchUrl": "https://insivumeh.gob.gt/camaras-de-vigilancia-volcanica/",
+    "termsUrl": "https://insivumeh.gob.gt/",
+    "verifiedAt": "2026-10-05T04:50:00Z",
+    "permissionEvidence": "INSIVUMEH publicly operates real-time volcano surveillance cameras for Fuego and Santiaguito and explains their monitoring purpose and live transmission. The reviewed public camera surface does not provide a clear commercial third-party image reuse or embed grant. ERN therefore keeps these cameras LINK_ONLY pending explicit reuse terms.",
+    "permissionStatus": "PUBLIC_REALTIME_MONITORING_NO_THIRD_PARTY_REUSE_GRANT_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_INSIVUMEH_PUBLISHES_OR_GRANTS_CAMERA_REUSE_PERMISSION",
+    "networkFamily": "insivumeh.gob.gt",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T04:50:00Z",
+    "communityGuidelinesUrl": "https://insivumeh.gob.gt/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "CAMERA_SPECIFIC_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://insivumeh.gob.gt/camaras-de-vigilancia-volcanica/"
+    ],
+    "discoveryProviderAliases": [
+      "INSIVUMEH"
+    ]
+  },
+  {
+    "id": "lake-wanaka-tourism-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Lake Wānaka Tourism",
+    "familyLabel": "Lake Wānaka Tourism webcam/current-image pages",
+    "researchUrl": "https://www.wanaka.co.nz/wanaka-webcams/",
+    "termsUrl": "https://www.wanaka.co.nz/terms-of-service/",
+    "verifiedAt": "2026-10-05T04:50:00Z",
+    "permissionEvidence": "Lake Wānaka Tourism's current terms protect site images and other media and say images may be used or reproduced only with express consent in each instance. Commercialisation or broader dealing with website intellectual property is prohibited without permission. ERN therefore keeps Wānaka webcam imagery LINK_ONLY.",
+    "permissionStatus": "IMAGE_REUSE_REQUIRES_EXPRESS_CONSENT_EACH_INSTANCE",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPRESS_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPRESS_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_LAKE_WANAKA_TOURISM_GRANTS_SPECIFIC_WEBCAM_REUSE_PERMISSION",
+    "networkFamily": "wanaka.co.nz",
+    "termsEffectiveAt": "2026-08-20",
+    "termsReviewedAt": "2026-10-05T04:50:00Z",
+    "communityGuidelinesUrl": "https://www.wanaka.co.nz/terms-of-service/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "EXPRESS_CONSENT_REQUIRED_PER_IMAGE",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.wanaka.co.nz/terms-of-service/",
+      "https://www.wanaka.co.nz/wanaka-webcams/"
+    ],
+    "discoveryProviderAliases": [
+      "Lake Wānaka Tourism",
+      "Lake Wanaka Tourism"
+    ]
+  },
+  {
+    "id": "servicio-geologico-colombiano-volcano-cameras",
+    "status": "RESEARCH_ONLY",
+    "provider": "Servicio Geológico Colombiano",
+    "familyLabel": "SGC Colombia volcano current-camera network",
+    "researchUrl": "https://www.sgc.gov.co/volcanes",
+    "termsUrl": "https://www2.sgc.gov.co/Paginas/terminos-y-condiciones.aspx",
+    "verifiedAt": "2026-10-05T04:50:00Z",
+    "permissionEvidence": "Servicio Geológico Colombiano terms state that website content may not be copied, reproduced, published, transmitted, distributed or used to create derivative services without prior written consent, except personal non-commercial viewing. ERN therefore keeps volcano camera imagery LINK_ONLY.",
+    "permissionStatus": "PRIOR_WRITTEN_CONSENT_REQUIRED_NONCOMMERCIAL_VIEWING_ONLY",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_WRITTEN_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_COMMERCIAL_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_SGC_GRANTS_CAMERA_SPECIFIC_REUSE_PERMISSION",
+    "networkFamily": "sgc.gov.co",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T04:50:00Z",
+    "communityGuidelinesUrl": "https://www2.sgc.gov.co/Paginas/terminos-y-condiciones.aspx",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "PRIOR_WRITTEN_CONSENT_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www2.sgc.gov.co/Paginas/terminos-y-condiciones.aspx",
+      "https://www.sgc.gov.co/volcanes"
+    ],
+    "discoveryProviderAliases": [
+      "Servicio Geológico Colombiano",
+      "SGC"
+    ]
+  },
+  {
+    "id": "shetland-org-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Shetland.org / Shetland Webcams",
+    "familyLabel": "Shetland.org public webcam/current-image pages",
+    "researchUrl": "https://www.shetland.org/videos",
+    "termsUrl": "https://www.shetland.org/terms",
+    "verifiedAt": "2026-10-05T04:50:00Z",
+    "permissionEvidence": "Shetland.org terms state that site content is copyright of Shetland Islands Council, personal use is allowed, and commercial distribution or copying is prohibited without express written consent. ERN therefore keeps Shetland webcam/current-image assets LINK_ONLY.",
+    "permissionStatus": "COMMERCIAL_DISTRIBUTION_REQUIRES_EXPRESS_WRITTEN_CONSENT",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_WRITTEN_LICENSE",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_COMMERCIAL_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_SHETLAND_ISLANDS_COUNCIL_GRANTS_WEBCAM_REUSE_PERMISSION",
+    "networkFamily": "shetland.org",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T04:50:00Z",
+    "communityGuidelinesUrl": "https://www.shetland.org/terms",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "EXPRESS_WRITTEN_CONSENT_REQUIRED_FOR_COMMERCIAL_COPYING",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.shetland.org/terms",
+      "https://www.shetland.org/videos"
+    ],
+    "discoveryProviderAliases": [
+      "Shetland.org / Shetland Webcams",
+      "Shetland.org",
+      "Shetland Webcams"
+    ]
+  },
+  {
+    "id": "sonnenkinderprojekt-namibia-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Sonnenkinderprojekt Namibia e.V.",
+    "familyLabel": "Sonnenkinderprojekt Namibia public webcam network",
+    "researchUrl": "https://skpnamibia.de/webcams/",
+    "termsUrl": "https://skpnamibia.de/informationen/impressum/",
+    "verifiedAt": "2026-10-05T04:50:00Z",
+    "permissionEvidence": "Sonnenkinderprojekt Namibia's imprint says all site text, photos and design elements are copyright-protected and exploitation outside narrow copyright exceptions is prohibited without consent. ERN therefore keeps the Namibia webcams LINK_ONLY.",
+    "permissionStatus": "COPYRIGHT_PROTECTED_REUSE_REQUIRES_CONSENT",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_SONNENKINDERPROJEKT_GRANTS_WEBCAM_REUSE_PERMISSION",
+    "networkFamily": "skpnamibia.de",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T04:50:00Z",
+    "communityGuidelinesUrl": "https://skpnamibia.de/informationen/impressum/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "CONSENT_REQUIRED_FOR_REUSE",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://skpnamibia.de/informationen/impressum/",
+      "https://skpnamibia.de/webcams/"
+    ],
+    "discoveryProviderAliases": [
+      "Sonnenkinderprojekt Namibia e.V.",
+      "Sonnenkinderprojekt Namibia"
+    ]
+  },
+  {
+    "id": "taiwan-tourism-administration-camera-network",
+    "status": "RESEARCH_ONLY",
+    "provider": "Taiwan Tourism Administration / Taipei City Government",
+    "familyLabel": "Taiwan Tourism Administration official camera/current-image pages",
+    "researchUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=63&sNo=0042331",
+    "termsUrl": "https://eng.taiwan.net.tw/m1.aspx?sNo=0042571",
+    "verifiedAt": "2026-10-05T04:50:00Z",
+    "permissionEvidence": "The Tourism Administration's current Copyright Notice states that website images have one-time use rights and are not authorized for broader use; audio/video is personal-use only unless official authorization is obtained. This specific camera family therefore remains LINK_ONLY despite broader open-government declarations elsewhere.",
+    "permissionStatus": "TOURISM_SITE_IMAGES_NOT_AUTHORIZED_FOR_BROADER_USE_AUDIO_VIDEO_PERSONAL_ONLY",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_OFFICIAL_AUTHORIZATION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_OFFICIAL_AUTHORIZATION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_EXACT_CAMERA_ASSET_IS_COVERED_BY_A_SEPARATE_OPEN_LICENSE_OR_OFFICIAL_AUTHORIZATION",
+    "networkFamily": "taiwan.net.tw",
+    "termsEffectiveAt": "2024-09-16",
+    "termsReviewedAt": "2026-10-05T04:50:00Z",
+    "communityGuidelinesUrl": "https://eng.taiwan.net.tw/m1.aspx?sNo=0042571",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "TOURISM_SITE_COPYRIGHT_NOTICE_RESTRICTS_MEDIA_REUSE",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://eng.taiwan.net.tw/m1.aspx?sNo=0042571",
+      "https://www.taiwan.net.tw/m1.aspx?keystring=63&sNo=0042331"
+    ],
+    "discoveryProviderAliases": [
+      "Taiwan Tourism Administration / Taipei City Government",
+      "Taiwan Tourism Administration"
+    ]
+  },
+  {
+    "id": "tri-mountain-scenic-area-cameras",
+    "status": "RESEARCH_ONLY",
+    "provider": "Taiwan Tourism Administration / Tri-Mountain National Scenic Area",
+    "familyLabel": "Tri-Mountain National Scenic Area real-time camera network",
+    "researchUrl": "https://www.trimt-nsa.gov.tw/en/",
+    "termsUrl": "https://www.trimt-nsa.gov.tw/en/copyright/",
+    "verifiedAt": "2026-10-05T04:50:00Z",
+    "permissionEvidence": "Tri-Mountain National Scenic Area publishes a government information disclosure statement placing publicly published copyrightable data/materials under Taiwan Open Government Data License 1.0, permitting reproduction, adaptation, public transmission and product/service use with attribution, subject to exclusions for third-party works requiring extra approval. Because its own pages explicitly describe real-time cameras, ERN may consider one exact camera current-image path after confirming the asset is administration-owned and not excluded.",
+    "permissionStatus": "OGDL_TAIWAN_1_0_WITH_ATTRIBUTION_SUBJECT_TO_THIRD_PARTY_EXCLUSIONS",
+    "technicalStatus": "SPECIFIC_CAMERA_OWNERSHIP_AND_CURRENT_IMAGE_TARGET_REVIEW_REQUIRED",
+    "humanPlaybackStatus": "NOT_APPLICABLE_CURRENT_IMAGE",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_CAMERA_OWNERSHIP_CHECK",
+    "nextAction": "VERIFY_ONE_EXACT_ADMINISTRATION_OWNED_CAMERA_TARGET_THEN_STAGE_ATTRIBUTED_CURRENT_IMAGE_PATH",
+    "networkFamily": "trimt-nsa.gov.tw",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T04:50:00Z",
+    "communityGuidelinesUrl": "https://www.trimt-nsa.gov.tw/en/copyright/",
+    "usageMode": "PROVIDER_AUTHORIZED_CURRENT_IMAGE",
+    "embeddingCondition": "OGDL_TAIWAN_1_0_ATTRIBUTION_REQUIRED_THIRD_PARTY_EXCLUSIONS_APPLY",
+    "playerBrandingRequired": false,
+    "imageReuseAllowed": true,
+    "attributionRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.trimt-nsa.gov.tw/en/copyright/",
+      "https://www.trimt-nsa.gov.tw/en/attraction/457/"
+    ],
+    "discoveryProviderAliases": [
+      "Taiwan Tourism Administration / Tri-Mountain National Scenic Area",
+      "Tri-Mountain National Scenic Area Headquarters"
+    ]
+  },
+  {
+    "id": "usgs-yellowstone-volcano-cameras",
+    "status": "RESEARCH_ONLY",
+    "provider": "U.S. Geological Survey / Yellowstone Volcano Observatory",
+    "familyLabel": "USGS/YVO Yellowstone current-image webcam network",
+    "researchUrl": "https://www.usgs.gov/volcanoes/yellowstone/multimedia/webcams",
+    "termsUrl": "https://www.usgs.gov/media/webcams/webcam-yellowstone-lake",
+    "verifiedAt": "2026-10-05T04:50:00Z",
+    "permissionEvidence": "USGS Yellowstone webcam pages explicitly label current camera imagery as Public Domain. The Yellowstone Lake page also describes it as a single image from a research camera and warns of possible outages/weather obscuration. ERN may therefore reuse exact public-domain current images with accurate source attribution, while preserving CURRENT IMAGE rather than live-video semantics.",
+    "permissionStatus": "PUBLIC_DOMAIN_CURRENT_IMAGE_REUSE_ALLOWED",
+    "technicalStatus": "EXACT_CURRENT_IMAGE_TARGET_AND_REFRESH_CHECK_REQUIRED",
+    "humanPlaybackStatus": "NOT_APPLICABLE_CURRENT_IMAGE",
+    "promotion": "CURRENT_IMAGE_INTEGRATION_ELIGIBLE_AFTER_EXACT_TARGET_REVIEW",
+    "nextAction": "STAGE_ONE_EXACT_PUBLIC_DOMAIN_USGS_CURRENT_IMAGE_ENDPOINT_WITH_SOURCE_ATTRIBUTION_AND_REFRESH_VERIFICATION",
+    "networkFamily": "usgs.gov",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T04:50:00Z",
+    "communityGuidelinesUrl": "https://www.usgs.gov/media/webcams/webcam-yellowstone-lake",
+    "usageMode": "PROVIDER_AUTHORIZED_CURRENT_IMAGE",
+    "embeddingCondition": "PUBLIC_DOMAIN",
+    "playerBrandingRequired": false,
+    "imageReuseAllowed": true,
+    "attributionRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.usgs.gov/volcanoes/yellowstone/multimedia/webcams",
+      "https://www.usgs.gov/media/webcams/webcam-yellowstone-lake",
+      "https://www.usgs.gov/media/images/view-yellowstone-lake-2026-edition-lake-camera"
+    ],
+    "discoveryProviderAliases": [
+      "U.S. Geological Survey / Yellowstone Volcano Observatory",
+      "USGS",
+      "Yellowstone Volcano Observatory"
+    ]
   }
 ]
