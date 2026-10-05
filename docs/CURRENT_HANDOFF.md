@@ -2437,3 +2437,81 @@ Tests updated to encode the new contract:
 - mixed inside/external curation now expects only in-ERN playable items.
 
 This change does not remove external/current sources from ERN Search/Explore and does not reduce their searchable value. It only raises the quality bar for the featured Watch Earth experience.
+
+### Watch Earth correction + continued two-sided expansion checkpoint — 2026-10-05
+
+#### Watch Earth correction is production-validated
+Owner reported Popocatépetl and Karakol Ski Base appearing in Watch Earth as external-source cards.
+
+Root cause:
+- Watch Earth previously preferred in-ERN playback but allowed truthful external-only sources to fill remaining slots.
+
+Permanent product correction:
+- `watchEarthEligible()` now requires `playbackCapability(...).action === PLAY`.
+- `LINK_ONLY / EXTERNAL` sources remain searchable in Search/Explore but cannot fill Watch Earth.
+- Approved in-ERN EMBED and approved IMAGE_REFRESH experiences may remain eligible when all existing currentness/health/truth gates pass.
+- If fewer qualifying in-ERN sources exist, Watch Earth intentionally shows fewer items rather than external-source filler.
+
+Exact regression protection covers:
+- `mexico-popocatepetl-current-image`
+- `karakol-ski-base`
+
+Pages run **2483** completed SUCCESS after the correction. The 575 KB hard ceiling was preserved; a transient 58-byte overage from redundant per-source hold flags was resolved by removing those redundant flags rather than raising the ceiling.
+
+#### Searchable-place expansion after the Watch Earth fix
+All following additions are Search/Explore-only (`LINK_ONLY / EXTERNAL`) and therefore cannot enter Watch Earth under the new PLAY-only rule:
+- Guagua Pichincha — Ecuador — Instituto Geofísico EPN crater-camera monitoring.
+- Sara Sara — Peru — IGP/CENVUL real-time images every minute.
+- Puracé — Colombia — Servicio Geológico Colombiano online camera network.
+- Nevado del Huila — Colombia — Servicio Geológico Colombiano online camera network.
+- Cerro Machín — Colombia — Servicio Geológico Colombiano online cameras.
+- Sotará — Colombia — Servicio Geológico Colombiano online cameras.
+- Cumbal — Colombia — Servicio Geológico Colombiano online cameras.
+- Nevado del Tolima — Colombia — Servicio Geológico Colombiano online camera.
+- Mount Merapi — Indonesia — Badan Geologi/BPPTKG official seismic + visual CCTV live-streaming service.
+
+Searchable growth state:
+- healthy distinct searchable places: **338**
+- remaining to 350 milestone: **12**
+- remaining to 400 stretch: **62**
+- unresolved human-playback queue remains **12**; this queue is no longer allowed to degrade Watch Earth.
+
+#### Business expansion after the Watch Earth fix
+New research-ready downstream paths, all still `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`:
+- Quito / Pichincha → Viator
+- Ayacucho Region → Viator (regional only; must not imply Sara Sara access)
+- Puracé National Natural Park / Popayán → Viator
+- Cerro Machín / Salento → Viator
+- Nevado del Tolima / Salento → Viator
+- Mount Merapi / Yogyakarta → Viator
+
+These opportunities are supported by current public Viator inventory. No tracked URL was invented, no account action occurred, no automatic placement occurred, and commercial value remains prohibited from affecting Earth ranking.
+
+#### Final validation
+Latest runtime/business implementation head before bookkeeping-only commits:
+`9fe892952f34f116aa8826835cac6f42a930632c`
+
+Pages run **2491** completed **SUCCESS**.
+Successful checks included:
+- current release smoke suite
+- lean launch preflight
+- public launch/mobile/accessibility
+- hard performance preflight
+- featured curation preflight
+- search metadata + supplemental search integrity
+- commercial placement integrity
+- SEO indexing readiness
+- AI search discovery readiness
+- public discoverability
+- deployment + deployed social preview verification
+
+Hard lean-core ceiling remains exactly **575 KB**.
+
+#### Boundaries unchanged
+- Controlled IMAGE_REFRESH pilot remains exactly two sources and 0/2 scheduled observations at this checkpoint.
+- No manual IMAGE_REFRESH renewal was triggered.
+- Public generative ERN Guide remains OFF.
+- Public Now Moments media remains OFF.
+- No automatic social posting/account creation.
+- No paid ranking.
+- No automatic commercial placement or link rewriting.
