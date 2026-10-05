@@ -86,6 +86,7 @@ jobs:
           npm --silent run inside:research-preflight | tee ern-ops/embed-research-preflight.json
           npm --silent run inside:provider-family-research | tee ern-ops/provider-family-research.json
           npm --silent run inside:provider-generated-targets | tee ern-ops/provider-generated-targets.json
+          npm --silent run inside:current-image-verification | tee ern-ops/provider-current-image-verification.json
           npm --silent run inside:provider-discovery | tee ern-ops/provider-discovery-queue.json
           npm --silent run inside:research-review-queue -- ern-ops/embed-research-preflight.json ern-ops/provider-family-research.json | tee ern-ops/research-review-queue.json
           npm --silent run business:inventory | tee ern-ops/commercial-inventory.json
