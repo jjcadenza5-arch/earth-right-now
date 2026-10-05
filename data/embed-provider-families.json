@@ -948,13 +948,13 @@
     "familyLabel": "IMO current webcam images",
     "researchUrl": "https://en.vedur.is/weather/observations/webcams/reykjavik/",
     "termsUrl": "https://en.vedur.is/about-imo/the-web/conditions/",
-    "verifiedAt": "2026-09-25T14:26:00Z",
-    "permissionEvidence": "The Icelandic Meteorological Office explicitly states that, unless otherwise noted, its photographs and data may be used for private or commercial purposes, with attribution to the Icelandic Meteorological Office and the data-download date. It also says low-resolution images may be downloaded as they appear on the website. The Reykjavík webcam page states that the web cameras belong to IMO. This creates an explicit current-image reuse path, but ERN must still identify the exact current image target and review deployed rendering before any catalog promotion.",
+    "verifiedAt": "2026-10-05T09:20:00Z",
+    "permissionEvidence": "IMO explicitly allows photographs/data to be used for private or commercial purposes unless otherwise stated, with IMO attribution and download date, and the Reykjavík webcam page states that the web cameras belong to IMO. Re-check on 2026-10-05 confirmed the official page and ownership statement, but the public page still exposes camera frames through dynamic time-slot UI rather than a stable documented current-image asset. ERN therefore has a clear rights basis but no technically safe reusable target yet.",
     "permissionStatus": "EXPLICIT_PHOTO_AND_DATA_REUSE_ALLOWED_WITH_ATTRIBUTION_INCLUDING_COMMERCIAL_USE",
-    "technicalStatus": "EXACT_CURRENT_IMAGE_TARGET_REQUIRED",
-    "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN_FOR_CURRENT_IMAGE_RENDERING",
-    "promotion": "BLOCKED_UNTIL_SPECIFIC_IMAGE_TARGET_AND_RENDERING_REVIEW",
-    "nextAction": "IDENTIFY_EXACT_CURRENT_REYKJAVIK_WEBCAM_IMAGE_TARGET_THEN_STAGE_FOR_DEPLOYED_RENDERING_REVIEW",
+    "technicalStatus": "OFFICIAL_CAMERA_OWNERSHIP_AND_REUSE_TERMS_CONFIRMED_STABLE_CURRENT_IMAGE_ASSET_NOT_EXPOSED",
+    "humanPlaybackStatus": "NOT_YET_APPLICABLE_EXACT_TARGET_UNRESOLVED",
+    "promotion": "BLOCKED_UNTIL_STABLE_CURRENT_IMAGE_ASSET_IS_RESOLVED",
+    "nextAction": "KEEP RESEARCH_ONLY UNTIL IMO EXPOSES OR DOCUMENTS A STABLE CURRENT-IMAGE ASSET/API; DO NOT GUESS DYNAMIC /0..7 ROUTES OR TREAT A TIME-SLOT PAGE AS A REUSABLE IMAGE ENDPOINT",
     "networkFamily": "en.vedur.is",
     "termsEffectiveAt": null,
     "termsReviewedAt": "2026-09-25T14:26:00Z",
@@ -968,7 +968,8 @@
     "permissionConfirmed": false,
     "researchSources": [
       "https://en.vedur.is/about-imo/the-web/conditions/",
-      "https://en.vedur.is/weather/observations/webcams/reykjavik/"
+      "https://en.vedur.is/weather/observations/webcams/reykjavik/",
+      "https://en.vedur.is/weather/aviation/webcams/"
     ]
   },
   {
