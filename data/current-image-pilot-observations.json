@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "pilot": "CONTROLLED_IMAGE_REFRESH_2_SOURCE",
+  "activatedAt": "2026-10-05T07:20:00Z",
+  "requiredSuccessfulRenewalDates": 2,
+  "allowedSourceIds": [
+    "yellowstone-biscuit-basin-current-image",
+    "nz-ruapehu-current-image"
+  ],
+  "observations": []
+}
