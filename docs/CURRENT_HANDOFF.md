@@ -2008,3 +2008,191 @@ Do not infer reach or conversion merely from number of Facebook groups posted.
 
 The current-image pilot's next independent event remains the first scheduled renewal at:
 `2026-10-06T00:37:00Z` / 07:37 Thailand time.
+
+
+
+### Facebook organic wave learning cycle + search-gap triage — 2026-10-05
+Owner reported manually sharing Earth Right Now to approximately **50–60 Facebook groups**, mostly nomad/travel-oriented groups. This is now treated as a real organic-distribution learning event, without inferring group reach, impressions, visitor identity, causation, conversion, bookings or revenue.
+
+#### Organic distribution event + baseline
+Event:
+- id: `2026-10-05-facebook-groups-organic-wave-01`
+- date: 2026-10-05
+- channel: Facebook
+- method: manual group posting
+- approximate group count: 50–60
+- paid: false
+- automatic posting: false
+- user-reported audience context: nomad/travel groups
+- no group names, member data or post content stored.
+
+Baseline captured from retained Operations packet `ern-operations-1328` around `2026-10-05T10:54:55Z`:
+- approximate unique visitors: **43**
+- page views: **257**
+- Facebook-family referral page views: **22**
+- Facebook share of page views: **8.56%**
+- Earth searches: **22**
+- zero-result searches: **6**
+- place/window opens: **193**
+- external-source opens: **38**
+- travel-option opens: **1**
+
+Baseline top searches:
+- new (2)
+- new york (2)
+- af (1)
+- africa (1)
+- biscuit basin (1)
+
+Baseline top places opened:
+- Kyoto Hanamikoji (27)
+- Rovaniemi Santa Claus Village (27)
+- Taitung Jinzun (17)
+- Kyoto Kiyomizuzaka (14)
+- Auckland Viaduct Harbour (13)
+
+Observation milestones:
+- 24 hours
+- 72 hours
+- 168 hours / 7 days.
+
+#### Distribution delta reporting
+`analytics:distribution-observation` now emits schemaVersion 2 and includes:
+- current aggregate visitors/page views;
+- Facebook-family referral views/share;
+- Earth searches;
+- zero-result searches;
+- place/window opens;
+- external-source opens;
+- travel-option opens;
+- current top searches/places;
+- captured baseline;
+- elapsed hours;
+- phase:
+  - EARLY_UNDER_24H
+  - POST_24H
+  - POST_72H
+  - POST_7D
+- completed and next milestone;
+- aggregate deltas from the captured same-day baseline.
+
+Safety remains explicit:
+- `impressionsInferred=false`
+- `groupReachInferred=false`
+- `audienceIdentityInferred=false`
+- `causationInferred=false`
+- `conversionsInferred=false`
+- `bookingsInferred=false`
+- `revenueInferred=false`
+- `paidPromotionAssumed=false`.
+
+The daily operator brief now surfaces this distribution observation and exploration deltas.
+
+First post-baseline packet `ern-operations-1332`, only about 0.17h after the baseline, showed **no metric movement yet**. This is expected and is not evidence of success/failure. The first useful comparison is the first Operations run after 24 hours.
+
+#### Search-gap triage
+Historical aggregate zero-result telemetry is no longer treated as an automatic request to add content.
+
+Added:
+- `scripts/analytics-search-gap-triage.mjs`
+- package command `analytics:search-gap-triage`
+- retained Operations artifact `search-gap-triage.json`
+- operator-brief section **Search-gap triage**
+- packet-integrity safety validation.
+
+The triage replays historical zero-result terms against the **current** ERN catalog + supplemental destinations + place-search aliases.
+
+Allowed states:
+- `CURRENTLY_RESOLVES`
+- `LOW_CONFIDENCE_PARTIAL`
+- `GENUINE_CURRENT_GAP`.
+
+Safety:
+- no automatic catalog mutation;
+- no automatic alias mutation;
+- no inferred demand forecast.
+
+Live retained Operations packet `ern-operations-1338` reported:
+- historical zero-result events: **5**
+- currently resolves today: **4**
+- genuine current gaps: **1**
+- low-confidence partials: **0**.
+
+Results:
+- `new yo` → CURRENTLY_RESOLVES
+- `new york` → CURRENTLY_RESOLVES
+- `山与雪` → CURRENTLY_RESOLVES
+- `纽约` → CURRENTLY_RESOLVES
+- `chiangmai` → **GENUINE_CURRENT_GAP**
+
+Therefore do **not** add more New York/Chinese aliases merely because old telemetry contains zero results. Those searches resolve under the current metadata/search system.
+
+#### Chiang Mai research-backed demand gap
+The single genuine current search gap, `chiangmai`, is now recorded in `data/source-research-priorities.json` as:
+- normalized place: Chiang Mai, Thailand
+- priority: `RESEARCH_NOW`
+- status: `RESEARCH_ONLY_NO_HEALTHY_DESTINATION_CAMERA_CONFIRMED`.
+
+Fresh official-source research:
+1. Chiang Mai Provincial Administrative Organization real-time CCTV center:
+   `https://www.chiangmaipao.go.th/all_cctv.php`
+   - official real-time CCTV network exists;
+   - current retrieved public camera cards show STANDBY / WAITING FOR FEED;
+   - therefore **not** publishable as a current/live ERN destination camera now.
+2. Thai Meteorological Department Chiang Mai weather:
+   `https://tmd.go.th/en/weather/province/chiang-mai`
+   - useful current context, not a destination camera.
+3. Thai Meteorological Department Chiang Mai radar:
+   `https://weather.tmd.go.th/cmi240.php`
+   - useful current weather/radar imagery, not a destination camera.
+
+Broader source research did not find a reliable continuously current Chiang Mai destination camera meeting ERN truth/currentness standards. A past/one-off Doi Suthep YouTube stream is not treated as current.
+
+No Chiang Mai public source was added.
+
+Next action:
+- continue research only when a materially credible Chiang Mai current-view candidate appears;
+- prefer official/reputable tourism, municipal, university, weather or destination providers;
+- use LINK_ONLY unless permission is explicit;
+- never use standby CCTV or weather radar as a substitute for a destination webcam.
+
+#### Validation
+Search-gap triage / distribution-learning validation:
+- Operations for safe search-gap triage: **SUCCESS**
+- Pages for `5d8c7ba642ead69a66c58e0814926b4d11bf5ab5`: **SUCCESS**
+- Pages for Chiang Mai research-priority commit `ab6b12cf40eed03ea6cedc04454e11fef0d29c99`: **SUCCESS**
+- prior Facebook delta Pages/Operations: **SUCCESS**
+- hard 575 KB performance ceiling unchanged
+- no paid marketing activated
+- no social automation activated
+- no social/commercial ranking influence
+- public generative Guide remains OFF
+- public Now Moments remains OFF.
+
+#### Independent current-image pilot boundary
+The controlled 2-source IMAGE_REFRESH pilot remains separate from this distribution work and remains exactly two sources.
+
+As of this checkpoint:
+- scheduled observation count remains **0 / 2**
+- first natural scheduled renewal is still expected at:
+  `2026-10-06T00:37:00Z` / **07:37 Thailand time**
+- do not manually trigger merely to advance the count;
+- no automatic pilot expansion is allowed.
+
+#### Next evidence points
+Facebook organic wave:
+- first Operations run after 24h;
+- first run after 72h;
+- first run after 7d.
+
+Compare aggregate:
+- approximate visitors;
+- page views;
+- Facebook-family referrals/share;
+- searches;
+- place/window opens;
+- external-source opens;
+- zero-result triage;
+- verified outbound actions.
+
+Treat all movement as correlation evidence only, not causal attribution.
