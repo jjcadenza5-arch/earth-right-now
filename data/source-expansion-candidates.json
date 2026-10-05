@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T16:10:00Z",
+  "generatedAt": "2026-10-05T16:35:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4045,6 +4045,48 @@
       "verifiedAt": "2026-10-05T16:10:00Z",
       "promotedAt": "2026-10-05T16:10:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "madeira-camara-lobos-current-image",
+      "title": "Câmara de Lobos — Madeira",
+      "country": "Portugal",
+      "region": "Madeira / South Coast",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://www.visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Madeira Tourism weather page currently includes this named area among live webcam/current-weather views.",
+      "verifiedAt": "2026-10-05T16:35:00Z",
+      "promotedAt": "2026-10-05T16:35:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "madeira-ponta-sol-current-image",
+      "title": "Ponta do Sol — Madeira",
+      "country": "Portugal",
+      "region": "Madeira / South Coast",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://www.visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Madeira Tourism weather page currently includes this named area among live webcam/current-weather views.",
+      "verifiedAt": "2026-10-05T16:35:00Z",
+      "promotedAt": "2026-10-05T16:35:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "madeira-pico-areeiro-current-image",
+      "title": "Pico do Areeiro — Madeira",
+      "country": "Portugal",
+      "region": "Madeira Peaks",
+      "provider": "Madeira Islands Tourism Board",
+      "sourcePage": "https://www.visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Madeira Tourism weather page currently includes this named area among live webcam/current-weather views.",
+      "verifiedAt": "2026-10-05T16:35:00Z",
+      "promotedAt": "2026-10-05T16:35:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
