@@ -23,6 +23,7 @@ function targetMatches(item,current,type){
 export function reviewEvidenceProposals(packet,{
   knownSourceIds=[],
   researchIds=[],
+  generatedTargetIds=[],
   availabilityReport=null,
   researchPreflight=null,
   maxEvidenceSeparationHours=24,
@@ -30,13 +31,15 @@ export function reviewEvidenceProposals(packet,{
   maxReviewAgeHours=null,
   now=new Date(),
   knownSources=null,
-  researchCandidates=null
+  researchCandidates=null,
+  generatedTargets=null
 }={}){
-  const validated=validateOperatorReviewEvidence(packet,{knownSourceIds,researchIds,expectedReviewOrigins,maxItemAgeHours:maxReviewAgeHours,now});
+  const validated=validateOperatorReviewEvidence(packet,{knownSourceIds,researchIds,generatedTargetIds,expectedReviewOrigins,maxItemAgeHours:maxReviewAgeHours,now});
   const availability=availabilityById(availabilityReport),preflight=preflightById(researchPreflight);
   const sourceMap=Array.isArray(knownSources)?new Map(knownSources.map(x=>[String(x.id),x])):null;
   const researchMap=Array.isArray(researchCandidates)?new Map(researchCandidates.map(x=>[String(x.id),x])):null;
-  const sourceProposals=[],researchProposals=[];
+  const generatedMap=Array.isArray(generatedTargets)?new Map(generatedTargets.map(x=>[String(x.id),x])):null;
+  const sourceProposals=[],researchProposals=[],generatedProposals=[];
 
   for(const item of validated.sourceEvidence||[]){
     const a=availability.get(item.id)||null;
@@ -149,6 +152,23 @@ export function reviewEvidenceProposals(packet,{
     });
   }
 
+
+  for(const item of validated.generatedEvidence||[]){
+    const current=generatedMap?.get(item.id)||null;
+    const expectedSource=normalizedUrl(current?.generatorUrl),reviewedSource=normalizedUrl(item.sourceUrl);
+    const expectedEmbed=normalizedUrl(current?.exactTargetUrl),reviewedEmbed=normalizedUrl(item.embedUrl);
+    const targetMatchesCurrent=Boolean(current&&expectedSource&&reviewedSource&&expectedSource===reviewedSource&&expectedEmbed&&reviewedEmbed&&expectedEmbed===reviewedEmbed);
+    if(!targetMatchesCurrent){
+      generatedProposals.push({id:item.id,outcome:item.outcome,status:"EVIDENCE_TARGET_CHANGED",reviewObservedAt:item.observedAt,reviewedSourceUrl:item.sourceUrl||null,reviewedEmbedUrl:item.embedUrl||null,stagedSourceUrl:current?.generatorUrl||null,stagedEmbedUrl:current?.exactTargetUrl||null,catalogPromotionAllowed:false,automaticWriteAllowed:false,note:"Generated-target evidence must match the exact staged official source page and player URL."});
+      continue;
+    }
+    if(item.outcome==="HUMAN_PLAYBACK_CONFIRMED"){
+      generatedProposals.push({id:item.id,outcome:item.outcome,status:"READY_TO_RECORD_HUMAN_PLAYBACK_PENDING_EDITORIAL_REVIEW",reviewObservedAt:item.observedAt,reviewedSourceUrl:item.sourceUrl,reviewedEmbedUrl:item.embedUrl,truthIfApproved:current?.truthIfApproved||null,catalogPromotionAllowed:false,automaticWriteAllowed:false,note:"Exact staged player was human-confirmed in deployed ERN. Record proof on the staged target only; public catalog truth/permission/playback transition remains a separate editorial decision."});
+      continue;
+    }
+    generatedProposals.push({id:item.id,outcome:item.outcome,status:item.outcome==="PLAYBACK_FAILED"?"GENERATED_TARGET_PLAYBACK_FAILED":"NO_AUTOMATIC_ACTION",reviewObservedAt:item.observedAt,catalogPromotionAllowed:false,automaticWriteAllowed:false});
+  }
+
   return{
     schemaVersion:1,
     generatedAt:new Date().toISOString(),
@@ -159,6 +179,7 @@ export function reviewEvidenceProposals(packet,{
     playbackProofUpdateAtomicityRequired:true,
     sourceProposals,
     researchProposals,
+    generatedProposals,
     summary:{
       sourceReady:sourceProposals.filter(x=>x.status==="READY_FOR_PROVIDER_OBSERVATION_PROPOSAL").length,
       sourceNeedsAvailability:sourceProposals.filter(x=>x.status==="NEEDS_FRESH_AVAILABILITY_EVIDENCE").length,
@@ -166,7 +187,9 @@ export function reviewEvidenceProposals(packet,{
       sourceTargetChanged:sourceProposals.filter(x=>x.status==="EVIDENCE_TARGET_CHANGED").length,
       researchReadyForReview:researchProposals.filter(x=>x.status==="READY_FOR_PERMISSION_AND_EDITORIAL_REVIEW").length,
       researchNeedsPreflight:researchProposals.filter(x=>x.status==="NEEDS_TECHNICAL_PREFLIGHT").length,
-      researchTargetChanged:researchProposals.filter(x=>x.status==="EVIDENCE_TARGET_CHANGED").length
+      researchTargetChanged:researchProposals.filter(x=>x.status==="EVIDENCE_TARGET_CHANGED").length,
+      generatedReadyToRecord:generatedProposals.filter(x=>x.status==="READY_TO_RECORD_HUMAN_PLAYBACK_PENDING_EDITORIAL_REVIEW").length,
+      generatedTargetChanged:generatedProposals.filter(x=>x.status==="EVIDENCE_TARGET_CHANGED").length
     },
     note:"Proposal layer only. When current target records are supplied, reviewed source/embed URLs must still match before evidence can progress. Confirmed playback proposals remain manual and atomic."
   };
