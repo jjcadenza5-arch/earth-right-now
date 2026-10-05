@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T19:10:00Z",
+  "generatedAt": "2026-10-05T20:55:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -5151,6 +5151,76 @@
       "verifiedAt": "2026-10-05T19:10:00Z",
       "promotedAt": "2026-10-05T19:10:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "thailand-koh-samui-crystal-bay-live",
+      "title": "Koh Samui — Crystal Bay / Silver Beach",
+      "country": "Thailand",
+      "region": "Koh Samui / Surat Thani",
+      "provider": "Crystal Bay Beach Resort",
+      "sourcePage": "https://crystalbaysamui.com/beachresort/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Crystal Bay states the Silver Beach view is live and streaming around the clock.",
+      "verifiedAt": "2026-10-05T20:55:00Z",
+      "promotedAt": "2026-10-05T20:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "south-africa-tau-madikwe-waterhole-live",
+      "title": "Madikwe — Tau Game Lodge Waterhole",
+      "country": "South Africa",
+      "region": "Madikwe Game Reserve / North West",
+      "provider": "Tau Game Lodge",
+      "sourcePage": "https://taugamelodge.co.za/main-lodge/live-webcam/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Tau Game Lodge currently labels the waterhole view Live Webcam.",
+      "verifiedAt": "2026-10-05T20:55:00Z",
+      "promotedAt": "2026-10-05T20:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "south-africa-klaserie-simbavati-live",
+      "title": "Klaserie — Simbavati Waterside Dam",
+      "country": "South Africa",
+      "region": "Klaserie Private Nature Reserve",
+      "provider": "Simbavati Lodge Collection",
+      "sourcePage": "https://www.simbavati.com/lodges/waterside/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Simbavati describes the camera as a live-streaming Africam with real-time scenes and a live feed.",
+      "verifiedAt": "2026-10-05T20:55:00Z",
+      "promotedAt": "2026-10-05T20:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "namibia-kambaku-waterhole-live",
+      "title": "Kambaku — Namibia Waterhole",
+      "country": "Namibia",
+      "region": "Otjozondjupa",
+      "provider": "Kambaku Wildlife Reserve / Safari Lodge",
+      "sourcePage": "https://www.kambaku.com/ueber-kambaku/kambaku-wildlife-reserve/live-webcam/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Kambaku currently presents a Live Webcam showing wildlife around the lodge waterhole.",
+      "verifiedAt": "2026-10-05T20:55:00Z",
+      "promotedAt": "2026-10-05T20:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "sri-lanka-pasikudah-live-weather",
+      "title": "Pasikudah — Sun Siyam Live Weather View",
+      "country": "Sri Lanka",
+      "region": "Eastern Province / Pasikudah",
+      "provider": "Sun Siyam Pasikudah",
+      "sourcePage": "https://www.sunsiyam.com/sun-siyam-pasikudah/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "EXACT_LIVE_TARGET_VERIFICATION_REQUIRED",
+      "evidence": "Sun Siyam Pasikudah publicly launched a live weather webcam in 2026 for real-time pre-trip weather familiarisation, but ERN has not yet resolved a stable first-party current webcam route on the production resort site.",
+      "verifiedAt": "2026-10-05T20:55:00Z",
+      "verification": "Research-only until the exact current first-party webcam endpoint/page is independently resolved. Do not promote from press coverage alone.",
+      "nextAction": "Resolve the live webcam target on Sun Siyam's current production site and verify playback/currentness before promotion."
     }
   ],
   "notes": [
