@@ -3532,6 +3532,40 @@
       "verification": "Owner confirmed current moving/live playback.",
       "promotedAt": "2026-10-04T03:58:00Z",
       "promotionNote": "Promoted as an external-live source sharing canonical placeId fiji-malolo-lailai; multiple resort views count as one searchable place."
+    },
+    {
+      "id": "el-salvador-santa-ana-volcano",
+      "title": "Santa Ana Volcano — Ilamatepec",
+      "country": "El Salvador",
+      "region": "Santa Ana",
+      "provider": "MARN / Dirección General del Observatorio de Amenazas",
+      "sourcePage": "https://www.snet.gob.sv/informacion/areas/vulcanologia/contenido/monitoreo.php",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official DGOA/MARN volcano-monitoring page currently lists environmental monitoring cameras for Ilamatepec / Izalco and real-time seismic monitoring.",
+      "verifiedAt": "2026-10-05T13:08:00Z",
+      "promotedAt": "2026-10-05T13:08:00Z",
+      "verification": "Official government monitoring source; promoted conservatively as LIVE_IMAGE / LINK_ONLY / Search-Explore with Watch hold.",
+      "businessUnlocks": [
+        "viator-santa-ana-el-salvador"
+      ]
+    },
+    {
+      "id": "el-salvador-san-miguel-volcano",
+      "title": "San Miguel Volcano — Chaparrastique",
+      "country": "El Salvador",
+      "region": "San Miguel",
+      "provider": "MARN / Dirección General del Observatorio de Amenazas",
+      "sourcePage": "https://www.snet.gob.sv/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official DGOA/MARN homepage currently exposes CÁMARA VOLCÁN SAN MIGUEL in a YouTube player; the volcano-monitoring page also lists Chaparrastique among environmental monitoring cameras.",
+      "verifiedAt": "2026-10-05T13:08:00Z",
+      "promotedAt": "2026-10-05T13:08:00Z",
+      "verification": "Official government monitoring source; promoted conservatively as EXTERNAL_LIVE / LINK_ONLY / Search-Explore with Watch hold.",
+      "businessUnlocks": [
+        "viator-san-miguel-volcano-el-salvador"
+      ]
     }
   ],
   "notes": [
