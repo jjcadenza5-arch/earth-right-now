@@ -1,0 +1,17 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const build=fs.readFileSync("scripts/build-operator-review.mjs","utf8");
+const targets=JSON.parse(fs.readFileSync("data/provider-generated-targets.json","utf8"));
+const y=targets.find(x=>x.id==="north-coast-yehliu-youtube-player");
+assert.ok(y);
+assert.match(build,/provider-generated-targets\.json/);
+assert.match(build,/Exact provider-generated targets/);
+assert.match(build,/generatedReview/);
+assert.match(build,/type==="generated"/);
+assert.match(build,/allowedResearchEmbedUrl/);
+assert.match(build,/candidateEmbedUrl:x\.exactTargetUrl/);
+assert.match(build,/generatedReview:generatedReview\.map/);
+assert.equal(y.integrationKind,"PROVIDER_GENERATED_WIDGET");
+assert.equal(y.exactTargetUrl,"https://www.youtube.com/embed/ZjuY4qKaj40");
+assert.equal(y.promotionAllowed,false);
+assert.equal(y.catalogMutationAllowed,false);
+console.log("Exact provider-generated targets render in the noindex operator review lab without public promotion");
