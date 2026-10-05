@@ -301,15 +301,16 @@
     "exactCode": null,
     "exactTargetUrl": "https://www.youtube.com/embed/ZjuY4qKaj40",
     "generatedAt": "2026-10-05T10:00:00Z",
-    "reviewedAt": null,
-    "reviewOutcome": null,
+    "reviewedAt": "2026-10-05T10:05:03.929Z",
+    "reviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
     "promotionAllowed": false,
     "catalogMutationAllowed": false,
     "automaticGenerationAllowed": false,
-    "notes": "Exact branded YouTube embed resolved from the official Yehliu Geopark live-camera page. Preserve YouTube branding and do not restream. Public ERN source remains LINK_ONLY and currently typed LIVE_IMAGE until deployed human review confirms the exact player is live/current and an editorial truth-type transition is explicitly approved.",
+    "notes": "Exact branded YouTube embed resolved from the official Yehliu Geopark live-camera page. Deployed ERN operator review confirmed the player was playing/current at 2026-10-05T10:05:03.929Z. Preserve YouTube branding and do not restream. Public ERN source remains LINK_ONLY and typed LIVE_IMAGE until a separate editorial truth/permission/catalog transition is approved.",
     "extractionMode": "OFFICIAL_PAGE_EXACT_YOUTUBE_EMBED",
     "manualInteractionRequired": false,
     "blockerReason": null,
-    "lastExtractionAttemptAt": "2026-10-05T10:00:00Z"
+    "lastExtractionAttemptAt": "2026-10-05T10:00:00Z",
+    "reviewEvidencePath": "data/review-evidence/yehliu-generated-2026-10-05.json"
   }
 ]
