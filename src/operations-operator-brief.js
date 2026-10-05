@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness,phase5OperatingStatus,phase6OperatingStatus,phase7OperatingStatus,phase8OperatingStatus,phase9OperatingStatus,phase10OperatingStatus,currentImagePilotObservation}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness,phase5OperatingStatus,phase6OperatingStatus,phase7OperatingStatus,phase8OperatingStatus,phase9OperatingStatus,phase10OperatingStatus,currentImagePilotObservation,organicDistributionObservation}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -70,6 +70,22 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     if(currentImagePilotObservation.missingExpectedScheduledRenewalDates?.length)lines.push(`- Missing expected scheduled date(s): ${currentImagePilotObservation.missingExpectedScheduledRenewalDates.join(", ")}.`);
     lines.push(`- Next action: ${currentImagePilotObservation.nextAction||"KEEP_TWO_SOURCE_PILOT_AND_WAIT_FOR_SCHEDULED_RENEWALS"}.`);
     lines.push("- Automatic expansion remains forbidden; scheduled renewal evidence only determines whether editorial review may open.","");
+  }
+  if(organicDistributionObservation){
+    const o=organicDistributionObservation.observation||{},s=organicDistributionObservation.sinceBaseline||{},d=s.deltas||{};
+    const signed=n=>Number.isFinite(n)?(n>0?"+"+n:String(n)):"n/a";
+    lines.push("## Organic distribution observation");
+    lines.push(`- Latest event: ${organicDistributionObservation.latestOrganicDistributionEvent?.id||"unknown"}; phase ${s.phase||"UNKNOWN"}; elapsed ${Number.isFinite(s.elapsedHours)?s.elapsedHours+"h":"unknown"}.`);
+    lines.push(`- Current aggregate: ${o.approximateUniqueVisitors||0} approximate unique visitors; ${o.pageViews||0} page views; ${o.facebookReferralViews||0} Facebook-family referral views (${Math.round((o.facebookReferralShareOfPageViews||0)*10000)/100}%).`);
+    lines.push(`- Since captured baseline: visitors ${signed(d.approximateUniqueVisitors)}; page views ${signed(d.pageViews)}; Facebook referral views ${signed(d.facebookReferralViews)}; searches ${signed(d.earthSearches)}; place/window opens ${signed(d.windowOpens)}; external-source opens ${signed(d.externalSourceOpens)}.`);
+    lines.push(`- Exploration now: ${o.earthSearches||0} searches; ${o.zeroResultSearches||0} zero-result searches; ${o.windowOpens||0} place/window opens; ${o.externalSourceOpens||0} external-source opens.`);
+    if(s.nextMilestoneHours!==null&&s.nextMilestoneHours!==undefined)lines.push(`- Next observation milestone: ${s.nextMilestoneHours}h after baseline.`);
+    else lines.push("- All configured observation milestones have elapsed; use the 7-day-plus result for the first stable comparison.");
+    const topSearches=(organicDistributionObservation.exploration?.currentTopSearches||[]).slice(0,5).map(x=>`${x.value} (${x.count})`).join(", ");
+    const topPlaces=(organicDistributionObservation.exploration?.currentTopPlaces||[]).slice(0,5).map(x=>`${x.value} (${x.count})`).join(", ");
+    if(topSearches)lines.push(`- Top aggregate searches: ${topSearches}.`);
+    if(topPlaces)lines.push(`- Top aggregate places opened: ${topPlaces}.`);
+    lines.push("- Interpretation boundary: referral and exploration deltas are correlation evidence only; they do not identify visitors as nomads or prove Facebook caused visits, searches, bookings, conversions or revenue.","");
   }
   if(providerGeneratedTargets?.items?.length){
     lines.push("## Provider-generated target staging");
