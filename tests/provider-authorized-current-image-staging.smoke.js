@@ -12,9 +12,9 @@ const ids=[
   "geonet-taranaki-current-image",
   "geonet-ngauruhoe-current-image",
   "geonet-tongariro-current-image",
-  "geonet-whakaari-tekaha-current-image",
-  "usgs-kilauea-v3cam-current-image"
+  "geonet-whakaari-tekaha-current-image"
 ];
+const kilaueaId="usgs-kilauea-v3cam-current-image";
 
 for(const id of ids){
   const t=targets.find(x=>x.id===id);
@@ -35,8 +35,16 @@ for(const id of ids){
   assert.equal(s.playback,"EXTERNAL");
 }
 
-const usgs=targets.filter(x=>ids.includes(x.id)&&["usgs-yellowstone-volcano-cameras","usgs-kilauea-live"].includes(x.providerFamilyId));
-assert.equal(usgs.length,3);
+const kilauea=targets.find(x=>x.id===kilaueaId);
+assert.ok(kilauea,kilaueaId+" target");
+assert.equal(kilauea.integrationKind,"PROVIDER_AUTHORIZED_CURRENT_IMAGE");
+assert.equal(kilauea.truthIfApproved,"LIVE_IMAGE");
+assert.equal(kilauea.promotionAllowed,false);
+assert.equal(kilauea.catalogMutationAllowed,false);
+assert.equal(sources.find(x=>x.id===kilauea.sourceId)?.truth,"EXTERNAL_LIVE");
+
+const usgs=targets.filter(x=>ids.includes(x.id)&&x.providerFamilyId==="usgs-yellowstone-volcano-cameras");
+assert.equal(usgs.length,2);
 assert.ok(usgs.every(x=>/USGS|U.S. Geological Survey|Yellowstone|Volcano Observatory/i.test(x.provider)));
 
 const geonet=targets.filter(x=>ids.includes(x.id)&&x.providerFamilyId==="geonet-volcano-cameras");
