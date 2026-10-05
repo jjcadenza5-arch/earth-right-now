@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T16:10:00Z",
+  "generatedAt": "2026-10-05T16:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -448,7 +448,8 @@
       "id": "viator-dubrovnik-future",
       "destination": "Dubrovnik",
       "placeIds": [
-        "dubrovnik-city"
+        "dubrovnik-city",
+        "dubrovnik-pile-city"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -856,7 +857,8 @@
       "id": "viator-santorini-future",
       "destination": "Santorini",
       "placeIds": [
-        "santorini-imerovigli"
+        "santorini-imerovigli",
+        "santorini-caldera-imerovigli"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -877,7 +879,8 @@
       "id": "viator-brasov-poiana",
       "destination": "Brașov / Poiana Brașov",
       "placeIds": [
-        "poiana-brasov"
+        "poiana-brasov",
+        "poiana-brasov-live"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -1520,12 +1523,15 @@
         "madeira-sao-vicente",
         "madeira-santana",
         "madeira-santa-cruz",
-        "madeira-porto-santo"
+        "madeira-porto-santo",
+        "madeira-camara-de-lobos",
+        "madeira-ponta-do-sol",
+        "madeira-pico-do-areeiro"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has nine healthy official Madeira current-image places, while Viator has deep Madeira inventory spanning Funchal, Porto Moniz, island tours, levada hikes and marine activities.",
+      "reason": "ERN now has twelve healthy official Madeira current-image places, while Viator has deep Madeira inventory spanning Funchal, Porto Moniz, island tours, levada hikes, Pico do Areeiro and marine activities.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Madeira/d5392-ttd",
       "publicInventoryEvidence": "Viator currently exposes a Madeira destination page with 900+ results spanning island tours, Porto Moniz, Pico do Arieiro, cruises and whale watching.",
@@ -1533,7 +1539,7 @@
       "candidateTrackedUrlPreparedAt": "2026-10-03T03:30:00Z",
       "candidateTrackedUrlEvidence": "Public Viator Madeira destination URL confirmed; existing ERN direct-partner pid/mcid/medium pattern applied. Owner open/redirect verification still required before offer activation.",
       "ownerVerificationRequired": true,
-      "nextAction": "Owner only needs to open and confirm the prepared direct Viator URL when ERN batches exact-link verification; one island-level link should serve all nine Madeira places.",
+      "nextAction": "Owner only needs to open and confirm the prepared direct Viator URL when ERN batches exact-link verification; one island-level link should serve all twelve Madeira places.",
       "preparedTrackedUrlCandidate": "https://www.viator.com/en-GB/Madeira/d5392-ttd?pid=P00322254&mcid=42383&medium=link",
       "candidateStatus": "PREPARED_NOT_OWNER_VERIFIED"
     },
@@ -1622,7 +1628,8 @@
       "id": "tiqets-tallinn",
       "destination": "Tallinn / TV Tower",
       "placeIds": [
-        "tallinn-tv-tower"
+        "tallinn-tv-tower",
+        "tallinn-tv-tower-panorama"
       ],
       "partnerCandidate": "tiqets",
       "intent": "culture",
@@ -1635,7 +1642,8 @@
       "id": "viator-bled",
       "destination": "Bled",
       "placeIds": [
-        "bled-lake"
+        "bled-lake",
+        "bled-lake-tourism"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -1674,7 +1682,8 @@
       "id": "viator-rotorua",
       "destination": "Rotorua",
       "placeIds": [
-        "rotorua-lake-city"
+        "rotorua-lake-city",
+        "rotorua-skyline-city-lake"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -1688,7 +1697,8 @@
       "destination": "Wānaka",
       "placeIds": [
         "wanaka-region",
-        "wanaka-lake-hawea-view"
+        "wanaka-lake-hawea-view",
+        "wanaka-roys-peak-town-view"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
