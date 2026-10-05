@@ -176,26 +176,41 @@
     "familyLabel": "USGS Kīlauea official livestream network",
     "researchUrl": "https://www.usgs.gov/volcanoes/kilauea/summit-webcams",
     "termsUrl": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
-    "verifiedAt": "2026-09-25T06:36:00Z",
-    "permissionEvidence": "USGS Kīlauea webcam and multimedia pages identify the livestreams as official USGS content; USGS webcam media is commonly marked Public Domain and current USGS volcano notices point to official USGS YouTube livestreams. However, ERN has not yet resolved a stable specific reusable YouTube player target from the official short-link/live pages, so no embed is staged.",
-    "permissionStatus": "PUBLIC_DOMAIN_SOURCE_PROMISING_SPECIFIC_PLAYER_TARGET_UNRESOLVED",
-    "technicalStatus": "SPECIFIC_STABLE_YOUTUBE_TARGET_REQUIRED",
-    "humanPlaybackStatus": "BLOCKED_UNTIL_SPECIFIC_PLAYER_STAGED",
-    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
-    "nextAction": "RESOLVE_STABLE_OFFICIAL_USGS_LIVE_PLAYER_TARGET",
+    "verifiedAt": "2026-10-05T06:20:00Z",
+    "permissionEvidence": "USGS Kīlauea webcam pages expose official current still images and label the camera media Public Domain. The V3cam media record exposes a direct current image at https://volcanoes.usgs.gov/cams/V3cam/images/M.jpg and the image carries a visible capture timestamp/USGS mark. ERN may stage this as a provider-authorized CURRENT_IMAGE path; this does not imply rights to restream or substitute for the separate YouTube livestream.",
+    "permissionStatus": "PUBLIC_DOMAIN_CURRENT_IMAGE_PATH_CONFIRMED_SEPARATE_LIVESTREAM_TARGET_REMAINS_OPTIONAL",
+    "technicalStatus": "EXACT_V3CAM_CURRENT_IMAGE_ENDPOINT_RESOLVED",
+    "humanPlaybackStatus": "NOT_APPLICABLE_CURRENT_IMAGE",
+    "promotion": "CURRENT_IMAGE_INTEGRATION_ELIGIBLE_AFTER_STAGING_REFRESH_REVIEW",
+    "nextAction": "STAGE V3CAM EXACT CURRENT IMAGE WITH PUBLIC DOMAIN SOURCE ATTRIBUTION; VERIFY REFRESH/CACHE BEHAVIOR BEFORE CATALOG MUTATION",
     "networkFamily": "youtube.com",
     "termsEffectiveAt": null,
     "termsReviewedAt": "2026-09-25T06:36:00Z",
     "communityGuidelinesUrl": "https://www.usgs.gov/volcanoes/kilauea/summit-webcams",
-    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
-    "embeddingCondition": "SPECIFIC_PLAYER_UNRESOLVED",
+    "usageMode": "PROVIDER_AUTHORIZED_CURRENT_IMAGE",
+    "embeddingCondition": "PUBLIC_DOMAIN_CURRENT_IMAGE",
     "playerBrandingRequired": true,
     "restreamAllowed": false,
-    "permissionConfirmed": false,
+    "permissionConfirmed": true,
     "researchSources": [
       "https://www.usgs.gov/volcanoes/kilauea",
       "https://www.usgs.gov/volcanoes/kilauea/summit-webcams",
-      "https://www.usgs.gov/programs/VHP/volcano-updates"
+      "https://www.usgs.gov/programs/VHP/volcano-updates",
+      "https://www.usgs.gov/volcanoes/kilauea/webcams",
+      "https://www.usgs.gov/observatories/hvo/v3cam-kilauea-volcano-hawaii-south-halemaumau-crater",
+      "https://www.usgs.gov/media/webcams/v3cam-kilauea-volcano-hawaii-south-halemaumau-crater"
+    ],
+    "imageReuseAllowed": true,
+    "attributionRequired": true,
+    "exactCandidates": [
+      {
+        "label": "V3cam — south Halemaʻumaʻu crater",
+        "currentImageUrl": "https://volcanoes.usgs.gov/cams/V3cam/images/M.jpg",
+        "sourcePage": "https://www.usgs.gov/observatories/hvo/v3cam-kilauea-volcano-hawaii-south-halemaumau-crater",
+        "semantics": "CURRENT_IMAGE",
+        "rights": "PUBLIC_DOMAIN_USGS",
+        "refreshEvidence": "Official USGS media exposes a current image with visible timestamp; exact refresh/cache behavior still requires ERN staging verification."
+      }
     ]
   },
   {
