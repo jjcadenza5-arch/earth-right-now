@@ -1116,3 +1116,13 @@ while preserving the startup/performance ceiling and existing product gates.
   - JavaScript syntax check SUCCESS;
   - ERN Operations Check SUCCESS.
 - Takayama and any genuinely expired inside-ERN playback evidence remain the real human-media gates. Do not renew them from URL reachability alone.
+
+
+
+### AVO reusable-image follow-up — 2026-10-05
+- Alaska Volcano Observatory rights/source research was deepened without public promotion.
+- AVO states AVO-staff media are Public Domain but warns that some database media are third-party copyrighted, so ERN must remain asset-specific.
+- The official Augustine/Homer webcam currently exposes a timestamped current image and USGS marks the corresponding webcam media Public Domain.
+- The retrievable image target is a dated archive JPEG, not a documented stable latest/current alias.
+- ERN therefore keeps AVO camera sources LINK_ONLY for now and explicitly avoids freezing a dated archive JPEG as if it were a current-image endpoint.
+- Revisit only when a stable provider latest-image endpoint/API is documented or an exact current alias is confirmed.
