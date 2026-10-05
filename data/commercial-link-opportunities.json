@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T19:40:00Z",
+  "generatedAt": "2026-10-05T19:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -312,7 +312,8 @@
         "yellowstone-old-faithful",
         "yellowstone-national-park",
         "yellowstone-biscuit-basin",
-        "yellowstone-lake"
+        "yellowstone-lake",
+        "us-yellowstone-mount-washburn"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -1490,7 +1491,11 @@
         "hong-kong-victoria-peak",
         "hong-kong-tai-mo-shan",
         "hong-kong-clear-water-bay",
-        "hong-kong-cheung-chau"
+        "hong-kong-cheung-chau",
+        "hong-kong-lamma-island",
+        "hong-kong-peng-chau",
+        "hong-kong-wetland-park",
+        "hong-kong-sai-kung"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
@@ -2252,14 +2257,17 @@
       "id": "viator-glacier-national-park",
       "destination": "Glacier National Park",
       "placeIds": [
-        "glacier-national-park"
+        "glacier-national-park",
+        "us-glacier-many-glacier"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
       "reason": "Major national-park destination with natural guided-tour and sightseeing demand.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one Glacier National Park activity link after confirming current inventory."
+      "nextAction": "Generate one Glacier National Park activity link after confirming current inventory.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Glacier-National-Park/d22221-ttd",
+      "publicInventoryEvidence": "Viator currently exposes Glacier National Park sightseeing and outdoor activity inventory."
     },
     {
       "id": "viator-kaikoura",
