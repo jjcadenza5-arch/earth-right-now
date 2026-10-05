@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T13:22:00Z",
+  "generatedAt": "2026-10-05T13:28:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3526,6 +3526,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Ayacucho/d50613-ttd",
       "publicInventoryEvidence": "Current Viator Ayacucho inventory includes regional day trips, cultural tours and outdoor experiences.",
       "nextAction": "Generate one owner-side Ayacucho destination/search link only if the regional inventory remains useful; public wording must not imply that Viator sells Sara Sara volcano access."
+    },
+    {
+      "id": "viator-purace-national-park",
+      "destination": "Puracé National Natural Park / Popayán",
+      "placeIds": [
+        "colombia-purace-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has official SGC current Puracé monitoring views, and Viator currently lists guided Puracé National Natural Park trips from Popayán/Cali. This is a strong current-conditions-to-visit planning bridge without affecting Earth ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/es-CO/tours/Colombia/Purace-National-Natural-Park/d4497-164214P1",
+      "publicInventoryEvidence": "Current Viator inventory includes guided full-day Puracé National Natural Park trips with Popayán pickup and park-focused itinerary.",
+      "nextAction": "Generate one owner-side Puracé / Popayán Viator tracked destination or search link and manually verify it before public activation; do not imply volcano access beyond the operator's stated itinerary."
     }
   ]
 }
