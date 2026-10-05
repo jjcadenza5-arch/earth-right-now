@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T20:35:00Z",
+  "generatedAt": "2026-10-05T17:40:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4941,6 +4941,62 @@
       "verifiedAt": "2026-10-05T20:35:00Z",
       "promotedAt": "2026-10-05T20:35:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-zion-temples-towers-current",
+      "title": "Zion National Park — Temples & Towers of the Virgin",
+      "country": "United States",
+      "region": "Utah",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/media/webcam/view.htm?id=A4068FB2-DB05-82B5-F242852BBAA0A971",
+      "priority": "P1_VISITOR_UTILITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS marks the webcam Active and refreshes the image every 60 seconds.",
+      "verifiedAt": "2026-10-05T17:40:00Z",
+      "promotedAt": "2026-10-05T17:40:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-arches-entrance-current",
+      "title": "Arches National Park — Entrance Station",
+      "country": "United States",
+      "region": "Utah",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/media/webcam/view.htm?id=81B46BDB-1DD8-B71B-0B250E8F4CC1E74A",
+      "priority": "P1_VISITOR_UTILITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS marks the Entrance Station webcam Active and auto-refreshing every 60 seconds.",
+      "verifiedAt": "2026-10-05T17:40:00Z",
+      "promotedAt": "2026-10-05T17:40:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-canyonlands-island-sky-current",
+      "title": "Canyonlands National Park — Island in the Sky",
+      "country": "United States",
+      "region": "Utah",
+      "provider": "U.S. National Park Service / U.S. Geological Survey",
+      "sourcePage": "https://www.nps.gov/cany/learn/photosmultimedia/webcams.htm",
+      "priority": "P1_VISITOR_UTILITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS currently publishes the Island in the Sky webcam on its Canyonlands webcam page.",
+      "verifiedAt": "2026-10-05T17:40:00Z",
+      "promotedAt": "2026-10-05T17:40:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-olympic-hurricane-ridge-current",
+      "title": "Olympic National Park — Hurricane Ridge",
+      "country": "United States",
+      "region": "Washington",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/olym/learn/photosmultimedia/webcams.htm",
+      "priority": "P1_VISITOR_UTILITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS currently presents Hurricane Ridge webcams for current weather and mountain conditions.",
+      "verifiedAt": "2026-10-05T17:40:00Z",
+      "promotedAt": "2026-10-05T17:40:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
