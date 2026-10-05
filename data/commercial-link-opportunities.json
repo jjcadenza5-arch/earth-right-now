@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T19:25:00Z",
+  "generatedAt": "2026-10-05T19:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3953,6 +3953,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-NZ/British-Virgin-Islands-attractions/Jost-Van-Dyke/d809-a1911",
       "publicInventoryEvidence": "Current Viator Jost Van Dyke catalog lists 35 results and multiple sailing tours visiting White Bay and Soggy Dollar.",
       "nextAction": "Generate one owner-side Jost Van Dyke/BVI destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-kingston-jamaica",
+      "destination": "Kingston, Jamaica",
+      "placeIds": [
+        "jamaica-kingston-s-hotel"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party real-time Kingston view, and Viator currently has a substantial Kingston cultural, historical, city and transfer catalog.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Kingston/d22634-ttd",
+      "publicInventoryEvidence": "Current Viator Kingston destination inventory contains 300+ experiences across cultural, historical, sightseeing and transport categories.",
+      "nextAction": "Generate one owner-side Kingston destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
