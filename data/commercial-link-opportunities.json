@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T19:05:00Z",
+  "generatedAt": "2026-10-05T19:25:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3878,6 +3878,81 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Isafjordur/Svalvogar-circle-supertruck-tour/d4349-143817P1",
       "publicInventoryEvidence": "Current Viator inventory includes Westfjords sightseeing from Ísafjörður through remote fjord and mountain landscapes.",
       "nextAction": "Search the owner account for a clean Westfjords/Ísafjörður destination-level link; leave dormant if only overly narrow products are available."
+    },
+    {
+      "id": "viator-grand-cayman-seven-mile",
+      "destination": "Grand Cayman / Seven Mile Beach",
+      "placeIds": [
+        "cayman-seven-mile-beach"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a strong first-party Seven Mile Beach live view, and Viator has current Grand Cayman/Seven Mile Beach shore, water and sightseeing inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Seven-Mile-Beach/d50498-ttd",
+      "publicInventoryEvidence": "Current Viator Seven Mile Beach inventory includes dozens of water, shore-excursion and island experiences.",
+      "nextAction": "Generate one owner-side Seven Mile Beach/Grand Cayman destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-montego-bay",
+      "destination": "Montego Bay, Jamaica",
+      "placeIds": [
+        "jamaica-montego-bay-s-hotel"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party real-time Montego Bay view, and Viator has deep Montego Bay activity and excursion inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Montego-Bay/d432-ttd",
+      "publicInventoryEvidence": "Current Viator Montego Bay catalog contains 1,000+ tours and excursions.",
+      "nextAction": "Generate one owner-side Montego Bay destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-st-lucia",
+      "destination": "Saint Lucia / Gros Islet",
+      "placeIds": [
+        "st-lucia-calabash-cove"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party St. Lucia live coastal view, and Viator has extensive current Gros Islet and island-wide land/sea activity inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/tours/Gros-Islet/Land-and-Sea-Tour/d50301-130032P1",
+      "publicInventoryEvidence": "Current Viator St. Lucia inventory includes highly active Gros Islet land-and-sea, waterfall, Pitons and snorkeling experiences.",
+      "nextAction": "Generate one owner-side St. Lucia destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-zanzibar-paje",
+      "destination": "Zanzibar / Paje, Tanzania",
+      "placeIds": [
+        "zanzibar-paje-white-sand"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party Paje/Zanzibar current-view source; Zanzibar has strong visitor planning value for island tours, water activities and culture.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Zanzibar/d5590-ttd",
+      "publicInventoryEvidence": "Viator currently maintains a Zanzibar destination catalog with island, marine and cultural experiences.",
+      "nextAction": "Generate one owner-side Zanzibar destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-jost-van-dyke",
+      "destination": "Jost Van Dyke / British Virgin Islands",
+      "placeIds": [
+        "bvi-jost-van-dyke-white-bay"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party live White Bay/Jost Van Dyke source, and Viator currently has dedicated Jost Van Dyke sailing and beach inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-NZ/British-Virgin-Islands-attractions/Jost-Van-Dyke/d809-a1911",
+      "publicInventoryEvidence": "Current Viator Jost Van Dyke catalog lists 35 results and multiple sailing tours visiting White Bay and Soggy Dollar.",
+      "nextAction": "Generate one owner-side Jost Van Dyke/BVI destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
