@@ -1918,13 +1918,13 @@
     "familyLabel": "GeoNet volcano current-image network",
     "researchUrl": "https://www.geonet.org.nz/volcano/cameras/map",
     "termsUrl": "https://www.geonet.org.nz/policy",
-    "verifiedAt": "2026-10-05T01:20:00Z",
+    "verifiedAt": "2026-10-05T05:20:00Z",
     "permissionEvidence": "GeoNet publishes latest volcano-camera images and metadata through documented stable image and GeoJSON endpoints. GeoNet's current Data Policy says data and images are available free of charge, requests attribution to GeoNet and programme sponsors, lists the volcano webcam image dataset DOI, and states GeoNet content is licensed under Creative Commons Attribution 3.0 New Zealand. This supports a provider-authorized current-image path with attribution; ERN must preserve source attribution and must not imply live video.",
     "permissionStatus": "CC_BY_3_0_NZ_CURRENT_IMAGE_USE_WITH_ATTRIBUTION",
-    "technicalStatus": "DOCUMENTED_LATEST_IMAGE_ENDPOINTS_AVAILABLE",
+    "technicalStatus": "DOCUMENTED_STABLE_LATEST_IMAGE_ENDPOINT_PATTERN_CONFIRMED_EXACT_STAGE_CANDIDATES_IDENTIFIED",
     "humanPlaybackStatus": "NOT_APPLICABLE_CURRENT_IMAGE",
     "promotion": "CURRENT_IMAGE_INTEGRATION_ELIGIBLE_WITH_ATTRIBUTION_AND_REFRESH_REVIEW",
-    "nextAction": "STAGE_ONE_EXACT_DOCUMENTED_LATEST_IMAGE_ENDPOINT_WITH_VISIBLE_GEONET_ATTRIBUTION_AND_VERIFY_REFRESH_BEHAVIOR_BEFORE_ANY_CATALOG_PROMOTION",
+    "nextAction": "STAGE_ONE_DOCUMENTED_LATEST_IMAGE_ENDPOINT WITH VISIBLE GEONET ATTRIBUTION; VERIFY IMAGE FETCH/CACHE/10-MINUTE REFRESH BEHAVIOR BEFORE CATALOG PROMOTION",
     "networkFamily": "geonet.org.nz",
     "termsEffectiveAt": null,
     "termsReviewedAt": "2026-10-05T01:20:00Z",
@@ -1935,7 +1935,7 @@
     "imageReuseAllowed": true,
     "attributionRequired": true,
     "restreamAllowed": false,
-    "permissionConfirmed": false,
+    "permissionConfirmed": true,
     "researchSources": [
       "https://www.geonet.org.nz/policy",
       "https://www.geonet.org.nz/data/types/camera",
@@ -1945,7 +1945,29 @@
       "GeoNet / Earth Sciences New Zealand",
       "GeoNet",
       "Earth Sciences New Zealand"
-    ]
+    ],
+    "exactCandidates": [
+      {
+        "label": "Ruapehu from North",
+        "currentImageUrl": "https://images.geonet.org.nz/volcano/cameras/latest/ruapehunorth.jpg",
+        "metadataUrl": "https://images.geonet.org.nz/volcano/cameras/images/ruapehunorth.json",
+        "sourcePage": "https://www.geonet.org.nz/volcano/cameras",
+        "semantics": "CURRENT_IMAGE",
+        "rights": "CC_BY_3_0_NZ_ATTRIBUTION_REQUIRED",
+        "expectedRefresh": "ABOUT_10_MINUTES"
+      },
+      {
+        "label": "Taranaki Maunga",
+        "currentImageUrl": "https://images.geonet.org.nz/volcano/cameras/latest/taranaki.jpg",
+        "metadataUrl": "https://images.geonet.org.nz/volcano/cameras/images/taranaki.json",
+        "sourcePage": "https://www.geonet.org.nz/volcano/cameras",
+        "semantics": "CURRENT_IMAGE",
+        "rights": "CC_BY_3_0_NZ_ATTRIBUTION_REQUIRED",
+        "expectedRefresh": "ABOUT_10_MINUTES"
+      }
+    ],
+    "attributionText": "GeoNet programme and sponsors NHC, Earth Sciences NZ, LINZ, NEMA and MBIE",
+    "datasetDoi": "https://doi.org/10.21420/vq6s-w222"
   },
   {
     "id": "igp-peru-volcano-cameras",
@@ -3409,13 +3431,13 @@
     "familyLabel": "USGS/YVO Yellowstone current-image webcam network",
     "researchUrl": "https://www.usgs.gov/volcanoes/yellowstone/multimedia/webcams",
     "termsUrl": "https://www.usgs.gov/media/webcams/webcam-yellowstone-lake",
-    "verifiedAt": "2026-10-05T04:50:00Z",
+    "verifiedAt": "2026-10-05T05:20:00Z",
     "permissionEvidence": "USGS Yellowstone webcam pages explicitly label current camera imagery as Public Domain. The Yellowstone Lake page also describes it as a single image from a research camera and warns of possible outages/weather obscuration. ERN may therefore reuse exact public-domain current images with accurate source attribution, while preserving CURRENT IMAGE rather than live-video semantics.",
     "permissionStatus": "PUBLIC_DOMAIN_CURRENT_IMAGE_REUSE_ALLOWED",
-    "technicalStatus": "EXACT_CURRENT_IMAGE_TARGET_AND_REFRESH_CHECK_REQUIRED",
+    "technicalStatus": "EXACT_PUBLIC_DOMAIN_CURRENT_IMAGE_ENDPOINTS_IDENTIFIED_REFRESH_STILL_REQUIRES_STAGING_REVIEW",
     "humanPlaybackStatus": "NOT_APPLICABLE_CURRENT_IMAGE",
     "promotion": "CURRENT_IMAGE_INTEGRATION_ELIGIBLE_AFTER_EXACT_TARGET_REVIEW",
-    "nextAction": "STAGE_ONE_EXACT_PUBLIC_DOMAIN_USGS_CURRENT_IMAGE_ENDPOINT_WITH_SOURCE_ATTRIBUTION_AND_REFRESH_VERIFICATION",
+    "nextAction": "STAGE_ONE_EXACT_PUBLIC_DOMAIN_USGS_CURRENT_IMAGE_ENDPOINT_WITH_SOURCE_ATTRIBUTION_AND VERIFY_REFRESH/CACHE_BEHAVIOR BEFORE CATALOG PROMOTION",
     "networkFamily": "usgs.gov",
     "termsEffectiveAt": null,
     "termsReviewedAt": "2026-10-05T04:50:00Z",
@@ -3426,7 +3448,7 @@
     "imageReuseAllowed": true,
     "attributionRequired": true,
     "restreamAllowed": false,
-    "permissionConfirmed": false,
+    "permissionConfirmed": true,
     "researchSources": [
       "https://www.usgs.gov/volcanoes/yellowstone/multimedia/webcams",
       "https://www.usgs.gov/media/webcams/webcam-yellowstone-lake",
@@ -3436,6 +3458,24 @@
       "U.S. Geological Survey / Yellowstone Volcano Observatory",
       "USGS",
       "Yellowstone Volcano Observatory"
+    ],
+    "exactCandidates": [
+      {
+        "label": "Biscuit Basin",
+        "currentImageUrl": "https://volcview.wr.usgs.gov/ashcam-api/images/webcams/ys-bbsn2/current.jpg",
+        "sourcePage": "https://www.usgs.gov/volcanoes/yellowstone/multimedia/webcams",
+        "semantics": "CURRENT_IMAGE",
+        "rights": "PUBLIC_DOMAIN_USGS",
+        "refreshEvidence": "USGS describes Yellowstone research camera images as periodically updated; exact cache/refresh behavior must be verified in ERN staging."
+      },
+      {
+        "label": "Yellowstone Lake",
+        "currentImageUrl": "https://volcanoes.usgs.gov/vsc/captures/yellowstone/current_ylake.jpg",
+        "sourcePage": "https://www.usgs.gov/media/webcams/webcam-yellowstone-lake",
+        "semantics": "CURRENT_IMAGE",
+        "rights": "PUBLIC_DOMAIN_USGS",
+        "refreshEvidence": "USGS identifies this URL as the current Yellowstone Lake camera view; exact cache/refresh behavior must be verified in ERN staging."
+      }
     ]
   },
   {
