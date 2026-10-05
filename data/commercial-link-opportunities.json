@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T16:35:00Z",
+  "generatedAt": "2026-10-05T16:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3813,6 +3813,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Gibraltar/Rock-Tour-in-Gibraltar-Guided-Tour-by-Bus-Including-Tickets/d50813-8512P103",
       "publicInventoryEvidence": "Current Viator inventory includes Rock of Gibraltar tours visiting Europa Point, St Michael's Cave and the Apes Den.",
       "nextAction": "Generate one owner-side Gibraltar destination or Rock-tour tracked link and manually verify it before public activation; reuse one Gibraltar-level path rather than multiplying beach-specific commercial placements."
+    },
+    {
+      "id": "viator-usvi-st-john",
+      "destination": "St. John / Virgin Islands National Park, U.S. Virgin Islands",
+      "placeIds": [
+        "usvi-st-john-windswept"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official NPS-referenced St. John current-conditions webcam, and Viator currently has extensive St. John snorkeling, island-tour and Virgin Islands National Park inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/St-John/St-John-Lime-Out-Snorkel-Sail-w-Floating-Taco-Bar-Lunch-and-Swim-Up-Bar-Westin/d4521-114771P35",
+      "publicInventoryEvidence": "Current Viator St. John inventory includes snorkeling, island sightseeing and experiences that pass or operate around Virgin Islands National Park.",
+      "nextAction": "Generate one owner-side St. John destination-level Viator tracked link and manually verify it before public activation; do not imply park admission or specific bay stops unless exact itinerary evidence supports them."
     }
   ]
 }
