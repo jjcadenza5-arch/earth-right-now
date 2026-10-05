@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T06:43:10.584Z",
+  "generatedAt": "2026-10-05T06:48:40.683Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -688,13 +688,31 @@
       "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
       "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
       "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point.",
-      "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras"
+      "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras",
+      "machineCurrentImageVerification": {
+        "verifiedAt": "2026-10-05T06:48:40.683Z",
+        "state": "FETCH_OK_TEMPORAL_EVIDENCE_CURRENT",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 31331,
+        "lastModified": "Mon, 05 Oct 2026 06:41:03 GMT",
+        "evidenceAgeMinutes": 7.6
+      }
     },
     "nz-tongariro-current-image": {
       "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
       "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
       "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point.",
-      "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras"
+      "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras",
+      "machineCurrentImageVerification": {
+        "verifiedAt": "2026-10-05T06:48:40.683Z",
+        "state": "FETCH_OK_TEMPORAL_EVIDENCE_CURRENT",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 47782,
+        "lastModified": "Mon, 05 Oct 2026 06:41:03 GMT",
+        "evidenceAgeMinutes": 7.6
+      }
     },
     "nz-taranaki-current-image": {
       "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
@@ -721,7 +739,16 @@
       "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
       "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
       "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point.",
-      "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras"
+      "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras",
+      "machineCurrentImageVerification": {
+        "verifiedAt": "2026-10-05T06:48:40.683Z",
+        "state": "FETCH_OK_TEMPORAL_EVIDENCE_CURRENT",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 39244,
+        "lastModified": "Mon, 05 Oct 2026 06:41:05 GMT",
+        "evidenceAgeMinutes": 7.6
+      }
     },
     "yellowstone-biscuit-basin-current-image": {
       "freshnessEvidence": "USGS states the Biscuit Basin monitoring camera captures and publishes a new image every 15 minutes; a new camera was installed July 22, 2026.",
