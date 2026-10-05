@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T18:35:00Z",
+  "generatedAt": "2026-10-05T19:05:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4394,6 +4394,34 @@
       "evidence": "IRCA currently publishes east, road and west views at Vatnsfjarðarháls.",
       "verifiedAt": "2026-10-05T18:35:00Z",
       "promotedAt": "2026-10-05T18:35:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "maldives-veligandu-live",
+      "title": "Veligandu — North Ari Atoll",
+      "country": "Maldives",
+      "region": "North Ari Atoll",
+      "provider": "Veligandu Maldives Resort Island",
+      "sourcePage": "https://veligandu.com/veligandu-web-cams/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The official resort currently publishes dedicated Sunrise Cam and Sunset Cam live webcam embeds.",
+      "verifiedAt": "2026-10-05T19:05:00Z",
+      "promotedAt": "2026-10-05T19:05:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "maldives-komandoo-live",
+      "title": "Komandoo — Lhaviyani Atoll",
+      "country": "Maldives",
+      "region": "Lhaviyani Atoll",
+      "provider": "Komandoo Maldives Island Resort",
+      "sourcePage": "https://www.komandoo.com/de/webcam/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The official resort states its webcam updates every 60 seconds and is intended to show the island before visitors arrive.",
+      "verifiedAt": "2026-10-05T19:05:00Z",
+      "promotedAt": "2026-10-05T19:05:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
