@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T18:35:00Z",
+  "generatedAt": "2026-10-05T18:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -558,7 +558,7 @@
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "The SANParks Kruger webcam family can support one park-level trip-planning bridge once at least one new camera is promoted; use one shared commercial action rather than one affiliate link per camp.",
+      "reason": "ERN has multiple healthy/quasi-live Kruger places. Use one park-level Viator safari-planning bridge across verified Kruger places without per-camera commercial duplication.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "generate one Kruger destination-level Viator partner link and manually verify it; reuse it across verified Kruger places without duplicate commercial density.",
       "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
@@ -656,12 +656,13 @@
       "destination": "St. Maarten / Philipsburg",
       "placeIds": [
         "little-bay-sint-maarten",
-        "st-maarten-simpson-bay"
+        "st-maarten-simpson-bay",
+        "st-maarten-great-bay"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN already has a healthy Little Bay St. Maarten window, and current Viator inventory includes broad St. Maarten sightseeing with Little Bay on island itineraries.",
+      "reason": "ERN has multiple healthy St. Maarten discovery places. Use one island/Philipsburg Viator planning bridge for appropriate island places instead of duplicating commercial density by beach.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Philipsburg/Small-Cultural-Group-Tours/d5627-252077P2",
       "publicInventoryEvidence": "Current Viator St. Maarten sightseeing explicitly passes Little Bay Beach and covers Philipsburg, Maho, Orient Bay and other island highlights.",
@@ -691,11 +692,11 @@
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "Viator currently has multiple Almaty/Shymbulak experiences including Medeu, Shymbulak cable-car and mountain sightseeing.",
+      "reason": "ERN has a healthy first-party Shymbulak live/current mountain place, while Viator has current Almaty/Shymbulak cable-car and mountain sightseeing inventory.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Almaty/Almaty-city-tour-with-Medeo-and-Shymbulak/d32977-130849P7",
       "publicInventoryEvidence": "Current Viator inventory explicitly includes Shymbulak mountain-resort itineraries and cable-car visits.",
-      "nextAction": "generate one Almaty/Shymbulak Viator partner link and manually verify it.",
+      "nextAction": "Generate one Almaty/Shymbulak Viator destination-level tracked link and manually verify it before public activation.",
       "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
       "sourceGateNote": "Corresponding ERN place is now searchable as clearly labeled quasi-live/current-image content. Exact tracked-link verification is still mandatory before any public affiliate placement."
     },
@@ -735,12 +736,13 @@
       "destination": "Issyk-Kul",
       "placeIds": [
         "balykchy-north-entry",
-        "karakol-ski-base"
+        "karakol-ski-base",
+        "issyk-kul-karven"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "Balykchy and Karakol cameras can support Issyk-Kul trip timing; Viator currently has multiple Issyk-Kul day and multi-day products.",
+      "reason": "ERN has multiple healthy Issyk-Kul region places spanning Balykchy, Karakol and the lake; one regional Viator planning path should serve them without camera-specific duplication.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Bishkek/Explore-Issyk-Kul-Small-Group-Day-Trip-from-Bishkek/d50202-486587P4",
       "publicInventoryEvidence": "Current Viator Issyk-Kul inventory includes day trips from Bishkek and multi-day routes that explicitly visit Cholpon-Ata, Karakol and the lake.",
@@ -1573,20 +1575,6 @@
       "nextAction": "Generate and manually verify one Sun Moon Lake Klook tracked link in Travelpayouts."
     },
     {
-      "id": "viator-kruger-current-images",
-      "destination": "Kruger National Park",
-      "placeIds": [
-        "sanparks-punda-maria",
-        "sanparks-talamati"
-      ],
-      "partnerCandidate": "viator",
-      "intent": "activities",
-      "priority": "P1",
-      "reason": "ERN now has additional official quasi-live wildlife places in Kruger; one park-level Viator safari-planning link should serve current Kruger places without per-camera commercial duplication.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Reuse or generate one clean Kruger National Park Viator destination link and verify it manually; do not create separate commercial offers for each camp camera."
-    },
-    {
       "id": "viator-misti-arequipa",
       "destination": "Arequipa / Colca / Volcano Region",
       "placeIds": [
@@ -1711,32 +1699,6 @@
       "nextAction": "Generate and manually verify an Ala-Archa/Bishkek Viator destination or activity link."
     },
     {
-      "id": "viator-issyk-kul",
-      "destination": "Issyk-Kul",
-      "placeIds": [
-        "issyk-kul-karven"
-      ],
-      "partnerCandidate": "viator",
-      "intent": "activities",
-      "priority": "P2",
-      "reason": "Issyk-Kul is now searchable in ERN and can support lake/tour planning.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Check for a clean Issyk-Kul Viator destination-level link before public activation."
-    },
-    {
-      "id": "viator-shymbulak",
-      "destination": "Shymbulak / Almaty",
-      "placeIds": [
-        "shymbulak-mountain-resort"
-      ],
-      "partnerCandidate": "viator",
-      "intent": "activities",
-      "priority": "P1",
-      "reason": "Shymbulak is now searchable in ERN and aligns with Almaty mountain/day-trip inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate and manually verify one Shymbulak/Almaty Viator link before public activation."
-    },
-    {
       "id": "viator-mendoza",
       "destination": "Mendoza",
       "placeIds": [
@@ -1761,19 +1723,6 @@
       "reason": "Maho Beach is now searchable in ERN and aligns with St. Maarten island tours/airport-beach visitor interest.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Generate one St. Maarten/Maho-relevant Viator link and verify it before activation."
-    },
-    {
-      "id": "viator-great-bay",
-      "destination": "St. Maarten / Philipsburg",
-      "placeIds": [
-        "st-maarten-great-bay"
-      ],
-      "partnerCandidate": "viator",
-      "intent": "activities",
-      "priority": "P1",
-      "reason": "Great Bay/Philipsburg is now searchable in ERN and has strong cruise/island planning utility.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one Philipsburg/St. Maarten Viator link; avoid duplicate density if the Maho link already serves the same island well."
     },
     {
       "id": "viator-innsbruck",
