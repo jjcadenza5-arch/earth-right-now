@@ -1876,5 +1876,171 @@
       "ElCat",
       "KG Camera"
     ]
+  },
+  {
+    "id": "switzerland-tourism-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Switzerland Tourism",
+    "familyLabel": "MySwitzerland official panorama/webcam pages",
+    "researchUrl": "https://www.myswitzerland.com/en-us/planning/weather/webcam/",
+    "termsUrl": "https://www.myswitzerland.com/en-us/planning/about-switzerland/terms-of-use/",
+    "verifiedAt": "2026-10-05T01:20:00Z",
+    "permissionEvidence": "Switzerland Tourism publishes official panorama/webcam pages, but its current Terms of Use say the MySwitzerland.com content is protected and that reproduction, transfer, amendment, linking or public/commercial use requires prior written consent. ERN therefore keeps Switzerland Tourism webcam pages as LINK_ONLY and does not copy, frame or reuse their imagery without explicit permission.",
+    "permissionStatus": "PUBLIC_OR_COMMERCIAL_REUSE_REQUIRES_PRIOR_WRITTEN_CONSENT",
+    "technicalStatus": "DO_NOT_STAGE_PLAYER_OR_IMAGE",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_WRITTEN_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_SWITZERLAND_TOURISM_OR_THE_UNDERLYING_CAMERA_PROVIDER_GRANTS_EXPLICIT_REUSE_PERMISSION",
+    "networkFamily": "myswitzerland.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:20:00Z",
+    "communityGuidelinesUrl": "https://www.myswitzerland.com/en-us/planning/about-switzerland/terms-of-use/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "WRITTEN_PERMISSION_REQUIRED_FOR_PUBLIC_OR_COMMERCIAL_REUSE",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.myswitzerland.com/en-us/planning/about-switzerland/terms-of-use/",
+      "https://www.myswitzerland.com/en-ch/destinations/panoramas/schynige-platte/",
+      "https://www.myswitzerland.com/en-us/destinations/panoramas/la-nationale/"
+    ],
+    "discoveryProviderAliases": [
+      "Switzerland Tourism",
+      "Schweiz Tourismus",
+      "Suisse Tourisme"
+    ]
+  },
+  {
+    "id": "geonet-volcano-cameras",
+    "status": "RESEARCH_ONLY",
+    "provider": "GeoNet / Earth Sciences New Zealand",
+    "familyLabel": "GeoNet volcano current-image network",
+    "researchUrl": "https://www.geonet.org.nz/volcano/cameras/map",
+    "termsUrl": "https://www.geonet.org.nz/policy",
+    "verifiedAt": "2026-10-05T01:20:00Z",
+    "permissionEvidence": "GeoNet publishes latest volcano-camera images and metadata through documented stable image and GeoJSON endpoints. GeoNet's current Data Policy says data and images are available free of charge, requests attribution to GeoNet and programme sponsors, lists the volcano webcam image dataset DOI, and states GeoNet content is licensed under Creative Commons Attribution 3.0 New Zealand. This supports a provider-authorized current-image path with attribution; ERN must preserve source attribution and must not imply live video.",
+    "permissionStatus": "CC_BY_3_0_NZ_CURRENT_IMAGE_USE_WITH_ATTRIBUTION",
+    "technicalStatus": "DOCUMENTED_LATEST_IMAGE_ENDPOINTS_AVAILABLE",
+    "humanPlaybackStatus": "NOT_APPLICABLE_CURRENT_IMAGE",
+    "promotion": "CURRENT_IMAGE_INTEGRATION_ELIGIBLE_WITH_ATTRIBUTION_AND_REFRESH_REVIEW",
+    "nextAction": "STAGE_ONE_EXACT_DOCUMENTED_LATEST_IMAGE_ENDPOINT_WITH_VISIBLE_GEONET_ATTRIBUTION_AND_VERIFY_REFRESH_BEHAVIOR_BEFORE_ANY_CATALOG_PROMOTION",
+    "networkFamily": "geonet.org.nz",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:20:00Z",
+    "communityGuidelinesUrl": "https://www.geonet.org.nz/policy",
+    "usageMode": "PROVIDER_AUTHORIZED_CURRENT_IMAGE",
+    "embeddingCondition": "CC_BY_3_0_NZ_ATTRIBUTION_REQUIRED",
+    "playerBrandingRequired": false,
+    "imageReuseAllowed": true,
+    "attributionRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.geonet.org.nz/policy",
+      "https://www.geonet.org.nz/data/types/camera",
+      "https://www.geonet.org.nz/volcano/cameras/map"
+    ],
+    "discoveryProviderAliases": [
+      "GeoNet / Earth Sciences New Zealand",
+      "GeoNet",
+      "Earth Sciences New Zealand"
+    ]
+  },
+  {
+    "id": "igp-peru-volcano-cameras",
+    "status": "RESEARCH_ONLY",
+    "provider": "Instituto Geofísico del Perú / CENVUL",
+    "familyLabel": "IGP/CENVUL monitored-volcano current-image pages",
+    "researchUrl": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
+    "termsUrl": "https://www.igp.gob.pe/",
+    "verifiedAt": "2026-10-05T01:20:00Z",
+    "permissionEvidence": "IGP/CENVUL publicly exposes monitored-volcano information and camera-derived data, but the reviewed official pages do not provide a clear third-party commercial image-embed or redistribution grant for the current camera imagery itself. Open-access or publication-specific Creative Commons terms are not treated as blanket permission for live/current camera assets. ERN therefore keeps these sources LINK_ONLY until exact current-image reuse terms are documented.",
+    "permissionStatus": "PUBLIC_MONITORING_DATA_NO_CAMERA_ASSET_REUSE_GRANT_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXACT_IMAGE_RIGHTS",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXACT_IMAGE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_IGP_PUBLISHES_EXPLICIT_CAMERA_IMAGE_REUSE_TERMS_OR_GRANTS_PERMISSION",
+    "networkFamily": "igp.gob.pe",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:20:00Z",
+    "communityGuidelinesUrl": "https://www.igp.gob.pe/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "EXACT_CAMERA_IMAGE_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
+      "https://www.igp.gob.pe/"
+    ],
+    "discoveryProviderAliases": [
+      "Instituto Geofísico del Perú / CENVUL",
+      "Instituto Geofísico del Perú",
+      "CENVUL"
+    ]
+  },
+  {
+    "id": "ineter-volcano-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "INETER",
+    "familyLabel": "INETER Nicaragua volcano webcam network",
+    "researchUrl": "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
+    "termsUrl": "https://www.ineter.gob.ni/",
+    "verifiedAt": "2026-10-05T01:20:00Z",
+    "permissionEvidence": "INETER's official volcano pages say webcam images are transmitted to the web server for public access every 30 seconds or one minute. An INETER web-authoring guidance page also states that web content is protected by author rights and should not simply be copied into another site. Public viewing therefore does not establish reuse permission. ERN keeps INETER sources LINK_ONLY unless explicit image reuse or embedding permission is documented.",
+    "permissionStatus": "PUBLIC_VIEWING_CONFIRMED_REUSE_PERMISSION_NOT_GRANTED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_REUSE_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_INETER_PUBLISHES_EXPLICIT_WEBCAM_IMAGE_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "ineter.gob.ni",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:20:00Z",
+    "communityGuidelinesUrl": "https://www.ineter.gob.ni/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "PUBLIC_ACCESS_DOES_NOT_ESTABLISH_REUSE_PERMISSION",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.ineter.gob.ni/volcanes-en-nicaragua/",
+      "https://webserver2.ineter.gob.ni/info/como_web.htm"
+    ],
+    "discoveryProviderAliases": [
+      "INETER",
+      "Instituto Nicaragüense de Estudios Territoriales"
+    ]
+  },
+  {
+    "id": "prague-city-tourism-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Prague City Tourism",
+    "familyLabel": "Prague City Tourism tower/current-image pages",
+    "researchUrl": "https://prague.eu/",
+    "termsUrl": "https://prague.eu/en/terms-and-conditions/",
+    "verifiedAt": "2026-10-05T01:20:00Z",
+    "permissionEvidence": "Prague City Tourism publishes current visitor/tower content, but the reviewed terms do not provide a general third-party right to redistribute or embed the site's webcam/current-image assets. The terms explicitly preserve copyright in multimedia materials. ERN therefore treats the current-image pages as LINK_ONLY unless a specific public reuse or embed grant is later documented.",
+    "permissionStatus": "NO_GENERAL_THIRD_PARTY_WEBCAM_REUSE_GRANT_FOUND",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_MEDIA_REUSE_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_MEDIA_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_PRAGUE_CITY_TOURISM_PUBLISHES_SPECIFIC_WEBCAM_IMAGE_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "prague.eu",
+    "termsEffectiveAt": "2024-06-12",
+    "termsReviewedAt": "2026-10-05T01:20:00Z",
+    "communityGuidelinesUrl": "https://prague.eu/en/terms-and-conditions/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_WEBCAM_MEDIA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://prague.eu/en/terms-and-conditions/",
+      "https://prague.eu/cs/prazske-veze/"
+    ],
+    "discoveryProviderAliases": [
+      "Prague City Tourism"
+    ]
   }
 ]
