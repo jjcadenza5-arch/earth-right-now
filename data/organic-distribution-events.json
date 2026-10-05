@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "events": [
+    {
+      "id": "2026-10-05-facebook-groups-organic-wave-01",
+      "date": "2026-10-05",
+      "channel": "facebook",
+      "method": "manual-group-posting",
+      "destination": "https://earthrightnow.app",
+      "approximateGroupCount": {
+        "min": 50,
+        "max": 60
+      },
+      "paid": false,
+      "automaticPosting": false,
+      "userReported": true,
+      "privacy": {
+        "groupNamesStored": false,
+        "memberDataStored": false,
+        "postContentStored": false
+      },
+      "note": "Owner reported manually sharing ERN to approximately 50–60 Facebook groups. Use only as context for aggregate referral/traffic observation; do not infer reach, impressions, conversions or revenue."
+    }
+  ]
+}
