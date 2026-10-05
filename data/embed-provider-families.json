@@ -1842,5 +1842,39 @@
       "Visit Madeira",
       "Direção Regional de Turismo da Madeira"
     ]
+  },
+  {
+    "id": "elcat-kg-camera",
+    "status": "RESEARCH_ONLY",
+    "provider": "ElCat / KG Camera",
+    "familyLabel": "KG Camera delayed live surveillance player network",
+    "researchUrl": "https://kg.camera/en/",
+    "termsUrl": "https://kg.camera/en/",
+    "verifiedAt": "2026-10-05T01:15:00Z",
+    "permissionEvidence": "KG Camera's current English pages state that its video surveillance is shown without archiving and with about a 20-second delay. The provider also states that video retransmission from cameras on the site is possible only when LLC ElCat is identified as the copyright holder and a link to the page is provided. ERN treats this as promising reuse evidence but does not interpret it as permission to copy or restream raw video. Any future inside-ERN integration must preserve ElCat attribution and use an exact provider-authorized/branded player or other documented target, followed by deployed human playback review.",
+    "permissionStatus": "PROVIDER_STATES_RETRANSMISSION_ALLOWED_WITH_ELCAT_ATTRIBUTION_AND_LINK_SPECIFIC_PLAYER_STILL_REQUIRED",
+    "technicalStatus": "EXACT_PROVIDER_BRANDED_PLAYER_OR_AUTHORIZED_TARGET_REQUIRED",
+    "humanPlaybackStatus": "BLOCKED_UNTIL_EXACT_TARGET_STAGED_AND_DEPLOYED_REVIEWED",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_PLAYER_REVIEW",
+    "nextAction": "IDENTIFY_EXACT_PROVIDER_AUTHORIZED_PLAYER_TARGET_THEN_DEPLOYED_HUMAN_PLAYBACK_REVIEW_WITH_VISIBLE_ELCAT_ATTRIBUTION",
+    "networkFamily": "kg.camera",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:15:00Z",
+    "communityGuidelinesUrl": "https://kg.camera/en/",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "ATTRIBUTION_AND_SOURCE_LINK_REQUIRED_EXACT_TARGET_UNRESOLVED",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://kg.camera/en/",
+      "https://kg.camera/en/camera/AlaArchaPark",
+      "https://kg.camera/en/camera/Kyrchyn-2"
+    ],
+    "discoveryProviderAliases": [
+      "ElCat / KG Camera",
+      "ElCat",
+      "KG Camera"
+    ]
   }
 ]
