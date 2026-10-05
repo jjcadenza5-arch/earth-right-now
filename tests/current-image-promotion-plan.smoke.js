@@ -1,0 +1,11 @@
+import assert from "node:assert/strict";
+import {currentImagePromotionPlan} from "../src/current-image-promotion-plan.js";
+const target={id:"t",providerFamilyId:"f",provider:"P",sourceId:"s",integrationKind:"PROVIDER_AUTHORIZED_CURRENT_IMAGE",exactTargetUrl:"https://example.com/current.jpg"};
+const family={id:"f",permissionConfirmed:true,permissionStatus:"PUBLIC_DOMAIN_CURRENT_IMAGE_REUSE_ALLOWED"};
+const source={id:"s",truth:"LIVE_IMAGE",permission:"LINK_ONLY",playback:"EXTERNAL"};
+const verification={items:[{id:"t",state:"FETCH_OK_TEMPORAL_EVIDENCE_CURRENT",automatedReviewPassed:true,evidenceTimestamp:"2026-10-05T06:00:00Z",evidenceAgeMinutes:5}]};
+const plan=currentImagePromotionPlan({targets:[target],families:[family],sources:[source],verification});
+assert.equal(plan.ready,1);assert.equal(plan.items[0].state,"READY_FOR_EDITORIAL_PROMOTION_REVIEW");assert.equal(plan.safety.automaticPromotionAllowed,false);
+const noRights=currentImagePromotionPlan({targets:[target],families:[{id:"f",permissionConfirmed:false,permissionStatus:"UNKNOWN"}],sources:[source],verification});
+assert.equal(noRights.blocked,1);assert.equal(noRights.items[0].nextAction,"RESOLVE_REUSE_RIGHTS");
+console.log("Current-image promotion readiness stays review-only and fail-closed");
