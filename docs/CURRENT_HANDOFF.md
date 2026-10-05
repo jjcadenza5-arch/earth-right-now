@@ -2697,3 +2697,48 @@ The hard lean-core ceiling remains exactly **575 KB**.
 - No automatic commercial placement or link rewriting.
 
 Post-350 strategy: continue **quality-first** expansion rather than mechanical counting, prioritizing strong official/current sources, new geography, useful related-place discovery, and genuine downstream planning value.
+
+### NPS quality-first expansion tranche — 2026-10-05
+
+Continued expansion after reconciling newer builder work that had already moved ERN beyond the 350 searchable-place milestone.
+
+#### Searchable places added
+Added five official U.S. National Park Service current-view destinations through the supplemental Search/Explore layer:
+- Grand Teton National Park — Teton Range — official NPS / Grand Teton National Park Foundation real-time live webcam.
+- Devils Tower — Prairie Dog Town — official NPS webcams updating every 60 seconds.
+- Rocky Mountain National Park — Alpine Visitor Center — official NPS active webcam refreshing every 60 seconds.
+- Pearl Harbor — USS Arizona Memorial — official NPS active 24/7 live stream.
+- Crater Lake — Sinnott Overlook — official NPS active current webcam; image updates every 4–6 minutes.
+
+All five remain `LINK_ONLY / EXTERNAL` and therefore cannot enter Watch Earth under the production `PLAY`-only rule.
+
+Quality-first rejection:
+- Haleakalā was deliberately **not** promoted because the official NPS live crater webcam currently reports technical issues. Do not count or promote it until the official status is healthy again.
+
+Searchable growth state after this tranche:
+- healthy distinct searchable places: **357**
+- remaining to 400 stretch target: **43**
+
+#### Business expansion
+Added four existing-partner Viator planning paths, all still `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`:
+- Grand Teton National Park / Jackson Hole
+- Rocky Mountain National Park / Denver
+- Pearl Harbor / USS Arizona Memorial
+- Crater Lake National Park / Oregon
+
+No business path was fabricated for Devils Tower because no sufficiently direct current existing-partner product was confirmed in this tranche.
+
+No tracked URL was invented, no automatic placement occurred, and commercial value remains excluded from Earth ranking.
+
+#### Validation
+Pages run **2506** completed **SUCCESS**.
+Successful release path included supplemental Search integrity, commercial placement integrity, hard performance preflight, SEO indexing, AI-search readiness, public discoverability, deployment and deployed social-preview verification.
+
+#### Boundaries unchanged
+- Watch Earth remains in-ERN `PLAY`-only.
+- External/link-only current sources remain Search/Explore-only.
+- Hard lean-core ceiling remains exactly 575 KB.
+- Controlled IMAGE_REFRESH pilot was not manually triggered or altered.
+- Public generative Guide remains OFF.
+- Public Now Moments media remains OFF.
+- No automatic commercial placement or link rewriting.
