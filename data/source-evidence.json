@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T11:37:30Z",
+  "generatedAt": "2026-10-05T12:35:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1869,6 +1869,18 @@
       "rightsBasis": "First-party resort webcam page. ERN remains LINK_ONLY and does not claim public embed permission.",
       "coordinateSourceUrl": "https://catedralaltapatagonia.com/webcams/",
       "story": "First-party current Cerro Catedral mountain conditions."
+    },
+    "changhua-white-dolphin-house": {
+      "freshnessEvidence": "Changhua Tourism official live-camera materials checked 2026-10-05 state that the White Dolphin House stream provides a 24/7 real-time view of the Changhua coast and wetlands.",
+      "rightsBasis": "Official Changhua County tourism live-camera source. ERN remains LINK_ONLY and does not infer permission to copy, restream or embed the raw stream.",
+      "coordinateSourceUrl": "https://tourism.chcg.gov.tw/live.aspx",
+      "story": "Official current coastal and wetland view at the Changhua County Natural Ecology Education Center."
+    },
+    "changhua-baguashan-great-buddha": {
+      "freshnessEvidence": "Changhua Tourism official live-camera materials checked 2026-10-05 describe the Baguashan Great Buddha camera as a 4K live stream showing the landmark and Changhua city conditions.",
+      "rightsBasis": "Official Changhua County tourism live-camera source. ERN remains LINK_ONLY and does not infer permission to copy, restream or embed the raw stream.",
+      "coordinateSourceUrl": "https://tourism.chcg.gov.tw/liveContent_baguashan.aspx?l=TW",
+      "story": "Official current landmark and city view from Baguashan Great Buddha."
     }
   },
   "prague-petrin-tower": {
