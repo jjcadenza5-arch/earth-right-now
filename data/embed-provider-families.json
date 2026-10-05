@@ -1808,5 +1808,39 @@
       "Innsbruck Tourism",
       "Innsbruck Tourismus"
     ]
+  },
+  {
+    "id": "madeira-tourism-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Madeira Islands Tourism Board",
+    "familyLabel": "Official Visit Madeira real-time webcam network",
+    "researchUrl": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+    "termsUrl": "https://visitmadeira.com/en/legal-warnings/",
+    "verifiedAt": "2026-10-05T01:10:00Z",
+    "permissionEvidence": "Visit Madeira's official weather page presents live webcam images with real-time updates across Madeira and renders some camera content via iframes. Its current Legal Warnings protect portal content and permit copying/import/use of information and Gallery photos only for personal or public use without lucrative purposes and with source citation. ERN is designed to support a commercial small-business model, so that limited reuse permission is not sufficient for ERN to copy or embed webcam media. ERN therefore keeps Visit Madeira webcam sources LINK_ONLY unless explicit commercial third-party embed/reuse permission or a license is documented. Provider-side iframe use does not itself grant third-party embedding rights.",
+    "permissionStatus": "OFFICIAL_REALTIME_WEBCAMS_COMMERCIAL_REUSE_NOT_GRANTED_LINK_ONLY",
+    "technicalStatus": "KEEP_LINK_ONLY_NO_AUTHORIZED_COMMERCIAL_EMBED_PATH",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_SPECIFIC_COMMERCIAL_EMBED_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_EXPLICIT COMMERCIAL THIRD-PARTY EMBED OR REUSE PERMISSION IS DOCUMENTED",
+    "networkFamily": "visitmadeira.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:10:00Z",
+    "communityGuidelinesUrl": "https://visitmadeira.com/en/legal-warnings/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "LICENSE_REQUIRED_FOR_COMMERCIAL_REUSE_UNLESS_EXPLICITLY_GRANTED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "https://visitmadeira.com/en/travel-info/useful-information/",
+      "https://visitmadeira.com/en/legal-warnings/"
+    ],
+    "discoveryProviderAliases": [
+      "Madeira Islands Tourism Board",
+      "Visit Madeira",
+      "Direção Regional de Turismo da Madeira"
+    ]
   }
 ]
