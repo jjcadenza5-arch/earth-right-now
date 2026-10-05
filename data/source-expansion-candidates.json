@@ -3797,6 +3797,88 @@
       "verifiedAt": "2026-10-05T13:52:00Z",
       "promotedAt": "2026-10-05T13:52:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only."
+    },
+    {
+      "id": "us-grand-teton-live",
+      "title": "Grand Teton National Park — Teton Range",
+      "country": "United States",
+      "region": "Wyoming",
+      "provider": "U.S. National Park Service / Grand Teton National Park Foundation",
+      "sourcePage": "https://www.nps.gov/grte/learn/photosmultimedia/tetonrangewebcam.htm",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official NPS page explicitly describes a real-time live webcam.",
+      "verifiedAt": "2026-10-05T13:50:00Z",
+      "promotedAt": "2026-10-05T13:50:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by PLAY-only rule.",
+      "businessUnlocks": [
+        "viator-grand-teton-jackson"
+      ]
+    },
+    {
+      "id": "us-devils-tower-live",
+      "title": "Devils Tower — Prairie Dog Town",
+      "country": "United States",
+      "region": "Wyoming",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/deto/learn/photosmultimedia/webcams.htm",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official NPS webcams update every 60 seconds.",
+      "verifiedAt": "2026-10-05T13:50:00Z",
+      "promotedAt": "2026-10-05T13:50:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only."
+    },
+    {
+      "id": "us-rocky-mountain-alpine-live",
+      "title": "Rocky Mountain National Park — Alpine Visitor Center",
+      "country": "United States",
+      "region": "Colorado",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/media/webcam/view.htm?id=81B4681E-1DD8-B71B-0B8311E4FAC15EF4",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official NPS webcam is Active and refreshes every 60 seconds.",
+      "verifiedAt": "2026-10-05T13:50:00Z",
+      "promotedAt": "2026-10-05T13:50:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only.",
+      "businessUnlocks": [
+        "viator-rocky-mountain-denver"
+      ]
+    },
+    {
+      "id": "us-pearl-harbor-arizona-live",
+      "title": "Pearl Harbor — USS Arizona Memorial",
+      "country": "United States",
+      "region": "Oʻahu, Hawaiʻi",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/media/webcam/view.htm?id=4B50339E-FB5C-4549-8130-94C84466395A",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official NPS page lists an Active 24/7 live stream.",
+      "verifiedAt": "2026-10-05T13:50:00Z",
+      "promotedAt": "2026-10-05T13:50:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only.",
+      "businessUnlocks": [
+        "viator-pearl-harbor-arizona"
+      ]
+    },
+    {
+      "id": "us-crater-lake-live",
+      "title": "Crater Lake — Sinnott Overlook",
+      "country": "United States",
+      "region": "Oregon",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/media/webcam/view.htm?id=88F5EE0B-04BA-2C9C-83226089ADFC8005",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official NPS page lists the webcam as Active with 4–6 minute image updates.",
+      "verifiedAt": "2026-10-05T13:50:00Z",
+      "promotedAt": "2026-10-05T13:50:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only.",
+      "businessUnlocks": [
+        "viator-crater-lake-oregon"
+      ]
     }
   ],
   "notes": [
