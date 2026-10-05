@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T20:35:00Z",
+  "generatedAt": "2026-10-05T17:40:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4199,6 +4199,52 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Merida/d5195-ttd",
       "publicInventoryEvidence": "Current Viator Mérida inventory includes Uxmal, Chichén Itzá, cenotes and broader Yucatán excursions, including Progreso-region products.",
       "nextAction": "Generate one owner-side Mérida/Yucatán destination-level tracked link and manually verify it before public activation; reuse it only where the regional planning context is useful."
+    },
+    {
+      "id": "viator-zion",
+      "destination": "Zion National Park, Utah",
+      "placeIds": [
+        "us-zion-national-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official current view for Zion National Park, Utah; this creates a useful downstream trip-planning bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Zion-National-Park/d5610-ttd",
+      "publicInventoryEvidence": "Current Viator inventory includes Zion sightseeing, hiking and day-tour experiences.",
+      "nextAction": "Generate one owner-side destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-moab-arches-canyonlands",
+      "destination": "Moab / Arches / Canyonlands, Utah",
+      "placeIds": [
+        "us-arches-national-park",
+        "us-canyonlands-national-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official current view for Moab / Arches / Canyonlands, Utah; this creates a useful downstream trip-planning bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Moab/d5600-ttd",
+      "publicInventoryEvidence": "Current Viator Moab inventory includes Arches and Canyonlands tours and outdoor activities.",
+      "nextAction": "Generate one owner-side destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-olympic-national-park",
+      "destination": "Olympic National Park, Washington",
+      "placeIds": [
+        "us-olympic-national-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official current view for Olympic National Park, Washington; this creates a useful downstream trip-planning bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Seattle/d704-ttd",
+      "publicInventoryEvidence": "Current Viator Seattle inventory includes Olympic National Park day trips and guided experiences.",
+      "nextAction": "Generate one owner-side destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
