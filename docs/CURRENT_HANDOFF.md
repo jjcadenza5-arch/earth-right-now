@@ -2816,3 +2816,17 @@ These are not considered broken merely because automated access was blocked; the
 - Watch Earth in-ERN-only rule remains unchanged
 - hard 575 KB lean-core ceiling remains unchanged
 - IMAGE_REFRESH pilot was not manually triggered or modified.
+
+
+### Searchable + business expansion continuation — 2026-10-05
+- Reconciled canonical `main` at the start of this continuation against `6a807c80482a2c96d38db1ad861f43d9b1d6a6c8`, Operations 1353 SUCCESS, Pages 2508 SUCCESS and this handoff; no completed work was discarded or reopened.
+- Actual pre-expansion searchable inventory already exceeded the former 350-place milestone: 382 healthy distinct places across core + supplemental Search/Explore catalogs.
+- Added four new-country Vanuatu Search/Explore destinations from the official Vanuatu Meteorology and Geohazards Department (VMGD): Mount Yasur, Lopevi, Ambrym/Benbow-Marum and Manaro Voui.
+- All four Vanuatu additions are `LIVE_IMAGE` + `LINK_ONLY` + `EXTERNAL` with `watchHold: true`; they are intentionally excluded from Watch Earth and do not change the in-ERN-only Watch Earth rule.
+- Healthy distinct searchable-place count is now 386. Supplemental searchable catalog is 67 records.
+- Added one new downstream business opportunity for Tanna Island / Mount Yasur using the already-approved Viator relationship. State remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`; no tracked link was invented or activated.
+- Mount Merapi was rechecked during expansion and found already represented by the canonical official Badan Geologi/BPPTKG searchable source and existing `viator-merapi-yogyakarta` commercial opportunity. A temporary duplicate commercial record was removed before finalization; the canonical path remains singular.
+- Commercial opportunity registry now contains 236 records. Commercial value did not affect Earth/source ranking or truth state.
+- Operations run 1354 completed SUCCESS after the Vanuatu catalog addition. Rotating searchable-source health now covers 395 eligible searchable sources / 301 unique URLs; today's cohort checked 54 sources / 41 unique URLs: 47 reachable, 0 missing, 5 access-blocked, 2 temporary/network failures, 0 recovered.
+- Health queue remains conservative: 0 REPAIR, 5 REVIEW, 2 WATCH. Bishkek Ala-Too Square and Too-Ashu Pass remain WATCH for transient failures; access-blocked sources remain REVIEW and are not treated as broken.
+- Protected gates remain unchanged: Watch Earth in-ERN playback only; 575 KB lean-core ceiling; IMAGE_REFRESH untouched until natural renewal; public generative Guide OFF; public Now Moments media OFF; no automatic social posting/account creation; no paid ranking.
