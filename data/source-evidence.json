@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T12:35:00Z",
+  "generatedAt": "2026-10-05T12:40:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1881,6 +1881,18 @@
       "rightsBasis": "Official Changhua County tourism live-camera source. ERN remains LINK_ONLY and does not infer permission to copy, restream or embed the raw stream.",
       "coordinateSourceUrl": "https://tourism.chcg.gov.tw/liveContent_baguashan.aspx?l=TW",
       "story": "Official current landmark and city view from Baguashan Great Buddha."
+    },
+    "taiwan-emei-lake": {
+      "freshnessEvidence": "Tri-Mountain National Scenic Area official page checked 2026-10-05 explicitly labels Emei Lake as a 4K live cam and describes a live-streaming, changing panoramic view.",
+      "rightsBasis": "Official Tourism Administration live-camera page. ERN remains LINK_ONLY and does not infer permission to copy or restream the video.",
+      "coordinateSourceUrl": "https://www.trimt-nsa.gov.tw/en/attraction/416/",
+      "story": "Official real-time panoramic view across Emei Lake in Hsinchu County."
+    },
+    "taiwan-deji-reservoir": {
+      "freshnessEvidence": "Tri-Mountain National Scenic Area official Deji Reservoir page checked 2026-10-05 explicitly describes real-time imagery and links the official 4K live cam.",
+      "rightsBasis": "Official Tourism Administration attraction/live-camera page. ERN remains LINK_ONLY and does not infer permission to copy or restream the video.",
+      "coordinateSourceUrl": "https://www.trimt-nsa.gov.tw/en/attraction/457/",
+      "story": "Official real-time reservoir and mountain view in the Lishan area."
     }
   },
   "prague-petrin-tower": {
