@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T13:08:00Z",
+  "generatedAt": "2026-10-05T13:22:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3496,6 +3496,36 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/San-Salvador/Chaparrastique-Volcano-Hiking-Nature-Crater-Outdoors/d5585-140810P8",
       "publicInventoryEvidence": "Current Viator inventory includes a private full-day San Miguel / Chaparrastique volcano trek with local guide and pickup.",
       "nextAction": "Generate one owner-side San Miguel / Chaparrastique Viator tracked destination/search link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-quito-pichincha",
+      "destination": "Quito / Pichincha",
+      "placeIds": [
+        "ecuador-guagua-pichincha"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has an official Guagua Pichincha monitoring window near Quito, and Viator has broad current Quito and Pichincha-region inventory. Use a destination-level planning path without implying guaranteed access to the monitored crater.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Quito/d735-ttd",
+      "publicInventoryEvidence": "Current Viator Quito inventory includes broad city, mountain, equator and surrounding-region experiences.",
+      "nextAction": "Generate one owner-side Quito / Pichincha Viator destination/search link and manually verify it; public copy must not imply that the linked products provide access to Guagua Pichincha crater."
+    },
+    {
+      "id": "viator-ayacucho-region",
+      "destination": "Ayacucho Region",
+      "placeIds": [
+        "peru-sara-sara-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P3",
+      "reason": "ERN now has an official Sara Sara monitoring window in Ayacucho Region, and Viator has current Ayacucho regional day-trip inventory. This is a regional trip-planning bridge only, not a Sara Sara volcano-access claim.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Ayacucho/d50613-ttd",
+      "publicInventoryEvidence": "Current Viator Ayacucho inventory includes regional day trips, cultural tours and outdoor experiences.",
+      "nextAction": "Generate one owner-side Ayacucho destination/search link only if the regional inventory remains useful; public wording must not imply that Viator sells Sara Sara volcano access."
     }
   ]
 }
