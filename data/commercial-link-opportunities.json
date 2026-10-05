@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T17:40:00Z",
+  "generatedAt": "2026-10-05T18:45:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4245,6 +4245,51 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Seattle/d704-ttd",
       "publicInventoryEvidence": "Current Viator Seattle inventory includes Olympic National Park day trips and guided experiences.",
       "nextAction": "Generate one owner-side destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-ilulissat",
+      "destination": "Ilulissat / Disko Bay, Greenland",
+      "placeIds": [
+        "greenland-ilulissat-airport"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Greenland Airports live Ilulissat window, while Viator currently has dedicated Ilulissat Icefjord, hiking, kayaking and cultural inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Ilulissat/d4493",
+      "publicInventoryEvidence": "Current Viator Ilulissat inventory includes Icefjord cruises, hiking, kayaking and city experiences.",
+      "nextAction": "Generate one owner-side Ilulissat destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-tahiti-papeete",
+      "destination": "Tahiti / Papeete, French Polynesia",
+      "placeIds": [
+        "french-polynesia-tahiti-faaa"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party current Tahiti window, and Viator currently has substantial Tahiti/Papeete cultural, island and nature-tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Papeete/Discover-Polynesia-in-a-Half-Day-Tour/d5181-5565542P3",
+      "publicInventoryEvidence": "Current Viator Tahiti inventory includes island circuits, cultural tours and nature experiences from Papeete.",
+      "nextAction": "Generate one owner-side Tahiti/Papeete destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-moorea",
+      "destination": "Moorea, French Polynesia",
+      "placeIds": [
+        "french-polynesia-moorea"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a live Moorea island view and Viator currently has extensive Moorea snorkeling, lagoon, 4WD, whale-watching and sightseeing inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Moorea/d5182-ttd",
+      "publicInventoryEvidence": "Current Viator Moorea destination inventory includes 100+ tours and excursions.",
+      "nextAction": "Generate one owner-side Moorea destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
