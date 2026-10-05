@@ -2574,13 +2574,13 @@
     "familyLabel": "North Coast & Guanyinshan official live-camera network",
     "researchUrl": "https://www.northguan-nsa.gov.tw/user/main.aspx?lang=2",
     "termsUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&sno=03006586",
-    "verifiedAt": "2026-10-05T09:12:00Z",
-    "permissionEvidence": "The official North Coast & Guanyinshan National Scenic Area website directly publishes a dedicated Live Camera gallery and named camera pages for Yehliu Geopark, Jhongjiao Bay, Heping Island, Baisha Bay, Yinghanling and Laomei Green Reef. This confirms the administration itself is the public source surface for the camera collection. The site's open-information reuse policy remains subject to third-party exceptions, so ERN still must resolve the exact delivered player/image asset and determine whether that specific target is administration-controlled or separately licensed.",
+    "verifiedAt": "2026-10-05T10:00:00Z",
+    "permissionEvidence": "The official North Coast & Guanyinshan National Scenic Area site publishes named live-camera pages. On the official Yehliu Geopark page, the live-camera element resolves to a provider-branded YouTube embed (video id ZjuY4qKaj40). This means Yehliu should be evaluated under the official-page YouTube player lane, not as an OGDL-reusable raw image. The site's open-information policy remains relevant to agency-owned page materials, but YouTube player use must preserve the branded player and YouTube terms.",
     "permissionStatus": "BROAD_OPEN_INFORMATION_REUSE_WITH_SOURCE_ATTRIBUTION_SUBJECT_TO_THIRD_PARTY_EXCEPTIONS",
-    "technicalStatus": "OFFICIAL_CAMERA_PAGES_CONFIRMED_EXACT_MEDIA_TARGET_UNRESOLVED",
+    "technicalStatus": "YEHLIU_OFFICIAL_PAGE_EXACT_YOUTUBE_EMBED_RESOLVED_OTHER_CAMERA_TARGETS_UNRESOLVED",
     "humanPlaybackStatus": "NOT_APPLICABLE_CURRENT_IMAGE",
-    "promotion": "BLOCKED_UNTIL_EXACT_MEDIA_TARGET_AND_ASSET_RIGHTS_CONFIRMED",
-    "nextAction": "RESOLVE ONE EXACT YEHLIU_OR_JHONGJIAO_MEDIA TARGET FROM THE OFFICIAL LIVE CAMERA PAGE; STAGE ONLY IF THE TARGET IS ADMINISTRATION_CONTROLLED_OR_CLEARLY_COVERED_BY_THE_OPEN_REUSE POLICY",
+    "promotion": "YEHLIU_EXACT_PLAYER_REVIEW_READY_OTHERS_BLOCKED",
+    "nextAction": "STAGE THE EXACT YEHLIU YOUTUBE EMBED FOR DEPLOYED HUMAN PLAYBACK REVIEW; KEEP PUBLIC SOURCE LINK_ONLY AND DO NOT CHANGE LIVE_IMAGE/LIVE_VIDEO TRUTH UNTIL PLAYBACK IS CONFIRMED. CONTINUE OTHER NORTH-COAST CAMERAS ONLY WHEN THEIR EXACT MEDIA TARGETS ARE RESOLVED.",
     "networkFamily": "northguan-nsa.gov.tw",
     "termsEffectiveAt": "2021-03-08",
     "termsReviewedAt": "2026-10-05T02:15:00Z",
@@ -2598,7 +2598,8 @@
       "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&sno=04007412",
       "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007395",
       "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007411",
-      "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007854"
+      "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007854",
+      "https://www.youtube.com/embed/ZjuY4qKaj40"
     ],
     "discoveryProviderAliases": [
       "North Coast & Guanyinshan National Scenic Area",
