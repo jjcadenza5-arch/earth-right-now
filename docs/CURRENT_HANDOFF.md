@@ -2938,3 +2938,97 @@ Protected gates remain unchanged:
 - no automatic social posting/account creation;
 - no paid ranking;
 - commercial value never affects Earth ranking.
+
+
+### Balanced large expansion batch — 2026-10-05
+Owner clarified the long-term operating principle: Earth is large, so ERN should steadily build meaningful searchable-place breadth and useful downstream business coverage in substantial batches, without rushing or weakening source quality. Report only after a genuinely meaningful body of work.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **403 to 414 places** (**419 healthy source records** total; **95 supplemental Search/Explore records**).
+
+This batch added **11 healthy searchable places** across two deliberately underrepresented geographic lanes rather than mechanically adding more records from already-dense regions.
+
+**Brazil — 3 official/local-government current views**
+- Águas de Lindóia — official Circuito das Águas Paulista regional-tourism live camera;
+- Itaipulândia / Balneário Jacutinga — official municipal live beach camera;
+- Rio do Sul / Elevado José Thomé — official Civil Defense live camera paired with real-time river conditions.
+
+All three are external/link-only Search/Explore sources. None can fill Watch Earth.
+
+**Chile / Patagonia / far south — 8 official DGAC current views**
+- Rapa Nui / Mataveri;
+- Arica / Chacalluta;
+- Teniente Rodolfo Marsh Martin in Antarctica;
+- Viña del Mar;
+- Pucón;
+- Puerto Natales;
+- Punta Arenas;
+- Puerto Williams / Navarino Island.
+
+All eight use the official Chilean Dirección General de Aeronáutica Civil (DGAC/IFIS) operational-camera network and are conservatively classified as `LIVE_IMAGE` + `LINK_ONLY` + external playback. DGAC's current camera inventory explicitly lists the corresponding aerodromes/camera directions as operational; the Rodolfo Marsh page additionally exposes current UTC image timestamps.
+
+Provider concentration was consciously limited: DGAC has many more active cameras, but only a geographically useful subset was promoted in this batch so ERN gains meaningful Chile/Patagonia/Rapa Nui/Antarctic breadth without flooding Search with one provider family.
+
+#### Research queue — quality before promotion
+Mauritius was added to the high-priority research queue rather than prematurely promoted.
+- The official Mauritius Tourism Promotion Authority / Mauritius Now site currently states that it provides **13 webcams** and invites visitors to “See Mauritius live”.
+- The current public webcam handoff is not resolving durably in automated retrieval, and exact named live targets have not yet been independently extracted/verified.
+- State remains `EXACT_CAMERA_ROUTE_AND_TARGET_VERIFICATION_REQUIRED`.
+- No generic Mauritius place was created merely to inflate country coverage.
+
+Existing verification-gated research for Vatican City, Malta, Montserrat and Île des Pins/New Caledonia remains fail-closed until exact current targets/freshness evidence are strong enough.
+
+#### Business-side expansion and reconciliation
+Commercial registry advanced from **239 to 244 opportunities** while preserving the one-useful-action principle and exact-link gate.
+
+New or materially strengthened downstream paths in this batch:
+- Mendoza, Argentina → Viator, mapped to the healthy official Plaza Independencia current view;
+- Rapa Nui / Easter Island → Viator;
+- Viña del Mar / Valparaíso → Viator;
+- Pucón / Villarrica region → Viator;
+- Puerto Natales / Torres del Paine gateway → Viator;
+- Punta Arenas / Magallanes → Viator.
+
+Existing Salzburg/Tiqets mapping was reconciled to the newer healthy `salzburg-mirabell-old-town` place ID and current Salzburg inventory evidence.
+
+Puerto Williams was intentionally left without a new commercial action because sufficiently clear destination-level partner inventory was not established. The Earth place remains valuable independently of monetization.
+
+Every new business record remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`. No owner-side tracked URL, offer or availability was invented. Commercial relevance remained downstream from Earth discovery and did not influence source ranking or promotion.
+
+#### Health and release validation
+Source additions were exercised through the existing canonical Operations workflow, not a duplicate health process.
+
+Operations runs **1362, 1363 and 1364 completed SUCCESS** across the staged batch.
+
+Latest validated health state from Operations 1364:
+- eligible searchable sources: **423**;
+- eligible unique URLs: **316**;
+- current rotating cohort: **58 sources / 43 unique URLs**;
+- reachable: **51**;
+- missing: **0**;
+- access-blocked: **5**;
+- temporary/network: **2**;
+- recovered: **0**;
+- repair: **2**;
+- review: **5**;
+- watch: **0**.
+
+The two REPAIR records remain Bishkek Ala-Too Square and Too-Ashu Pass. Their provider pages were previously independently confirmed active, so no catalog deletion, source-truth mutation or health downgrade is justified from automated network failures alone. The five access-blocked records remain REVIEW only.
+
+Pages run **2530 completed SUCCESS** after the Rapa Nui/Arica/Antarctica stage. The final current release, Pages run **2532, completed SUCCESS** after the Patagonia/business expansion.
+
+Pages 2532 validation:
+- all **112 current ERN release smoke tests passed**;
+- Supplemental Search catalog integrity passed;
+- commercial placement integrity preflight passed;
+- hard lean-core budget remains exactly **575000 bytes**;
+- release artifact built and deployed successfully.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**; all new LINK_ONLY/EXTERNAL places stay Search/Explore-only.
+- IMAGE_REFRESH was not manually triggered or altered.
+- Public generative ERN Guide remains OFF.
+- Public Now Moments media remains OFF.
+- No automatic social posting/account creation.
+- No paid ranking.
+- Commercial value never affects Earth ranking, truth, currentness or health.
