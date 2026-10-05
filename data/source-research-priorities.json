@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T10:31:00Z",
+  "generatedAt": "2026-10-05T11:15:00Z",
   "mission": "See before you go",
   "productTest": "Would this current view help someone understand the place better before deciding whether, when, or how to go?",
   "hardGates": [
@@ -93,6 +93,43 @@
         "class": "EDITORIAL_CURRENTNESS_DEBT",
         "priority": "ROUTINE",
         "action": "Reconfirm explicit provider evidence that the exact Mtkvari/Narikala view is live/current before refreshing lastSuccessfulCheck. Page reachability alone is insufficient."
+      }
+    ]
+  },
+  "searchDemandGaps": {
+    "principle": "Use aggregate zero-result demand to prioritize research, but never auto-create a source. A candidate must still pass truth, currentness, permission, attribution and quality gates.",
+    "items": [
+      {
+        "query": "chiangmai",
+        "normalizedPlace": "Chiang Mai, Thailand",
+        "evidence": {
+          "zeroResultCount": 1,
+          "triageState": "GENUINE_CURRENT_GAP",
+          "observedWindowDays": 30
+        },
+        "priority": "RESEARCH_NOW",
+        "status": "RESEARCH_ONLY_NO_HEALTHY_DESTINATION_CAMERA_CONFIRMED",
+        "officialCandidates": [
+          {
+            "provider": "Chiang Mai Provincial Administrative Organization",
+            "url": "https://www.chiangmaipao.go.th/all_cctv.php",
+            "role": "official real-time CCTV center",
+            "currentFinding": "Public camera center exists, but retrieved camera cards currently show STANDBY / WAITING FOR FEED. Do not publish as live until a real current feed is independently observed."
+          },
+          {
+            "provider": "Thai Meteorological Department",
+            "url": "https://tmd.go.th/en/weather/province/chiang-mai",
+            "role": "official current weather context",
+            "currentFinding": "Useful current conditions, but not a destination camera."
+          },
+          {
+            "provider": "Thai Meteorological Department",
+            "url": "https://weather.tmd.go.th/cmi240.php",
+            "role": "official Chiang Mai weather radar",
+            "currentFinding": "Current radar imagery is useful context but should not be mislabeled as a destination webcam."
+          }
+        ],
+        "nextAction": "Continue research for one truthful Chiang Mai destination/current-view source. Prefer official or reputable tourism/city/weather/university sources. Keep LINK_ONLY unless permission is explicit; do not use standby CCTV or weather radar as a substitute for a destination camera."
       }
     ]
   }
