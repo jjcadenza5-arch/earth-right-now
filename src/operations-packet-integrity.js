@@ -34,6 +34,7 @@ const requiredJson=[
  "submission-transport-readiness.json",
  "earth-signals-status.json",
  "guide-ai-status.json",
+ "organic-distribution-observation.json",
  "local-directory-status.json",
  "participation-infrastructure.json",
  "now-moment-media-status.json",
@@ -82,6 +83,13 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(s.broadFeatureExpansionAllowed!==false||s.majorPromotionAllowed!==false||s.paidMarketingAllowed!==false||s.automaticExternalAccountActionAllowed!==false||s.automaticCommercialPlacementAllowed!==false||s.automaticLinkRewritingAllowed!==false||s.paidRankingAllowed!==false||s.bookingInferenceAllowed!==false||s.revenueInferenceAllowed!==false)issues.push({file:"soft-launch-stage1-status.json",code:"SOFT_LAUNCH_BOUNDARY_VIOLATION"});
     const g=softLaunch?.gates||{};
     if(g.pilot2!==false||g.submissionPublic!==false||g.nowMomentMediaPublic!==false||g.generativeGuidePublic!==false||g.analytics!==true||g.analyticsMode!=="AGGREGATE_ONLY"||g.socialAccountActions!==false||g.payoutAccountActions!==false||g.otherSeparateFeatureGates!==false)issues.push({file:"soft-launch-stage1-status.json",code:"SOFT_LAUNCH_GATE_VIOLATION"});
+  }
+
+  const organicDistribution=files["organic-distribution-observation.json"];
+  if(organicDistribution){
+    const s=organicDistribution.safety||{};
+    if(s.impressionsInferred!==false||s.groupReachInferred!==false||s.conversionsInferred!==false||s.bookingsInferred!==false||s.revenueInferred!==false||s.paidPromotionAssumed!==false)issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_INFERENCE_BOUNDARY_VIOLATION"});
+    if(!Number.isFinite(Number(organicDistribution?.observation?.facebookReferralViews)))issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_FACEBOOK_COUNT_INVALID"});
   }
 
   const localDirectory=files["local-directory-status.json"];
