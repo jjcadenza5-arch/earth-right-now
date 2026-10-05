@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T19:25:00Z",
+  "generatedAt": "2026-10-05T19:45:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4507,6 +4507,76 @@
       "verifiedAt": "2026-10-05T19:25:00Z",
       "promotedAt": "2026-10-05T19:25:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "ireland-dublin-port-live",
+      "title": "Dublin Port — River Liffey & Bay",
+      "country": "Ireland",
+      "region": "Dublin",
+      "provider": "Dublin Port Company",
+      "sourcePage": "https://www.dublinport.ie/webcam/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Dublin Port explicitly describes real-time live streams, with an approximately 10-minute delay.",
+      "verifiedAt": "2026-10-05T19:45:00Z",
+      "promotedAt": "2026-10-05T19:45:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "ireland-inis-mor-aran-hotel-live",
+      "title": "Inis Mór — Aran Islands",
+      "country": "Ireland",
+      "region": "County Galway / Inis Mór",
+      "provider": "Aran Islands Hotel",
+      "sourcePage": "https://www.aranislandshotel.com/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current Aran Islands Hotel homepage exposes a Live Webcam.",
+      "verifiedAt": "2026-10-05T19:45:00Z",
+      "promotedAt": "2026-10-05T19:45:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "ireland-killarney-lakes-live",
+      "title": "Killarney — Lakes View",
+      "country": "Ireland",
+      "region": "County Kerry / Killarney",
+      "provider": "Aghadoe Heights Hotel & Spa",
+      "sourcePage": "https://www.aghadoeheights.com/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Aghadoe Heights currently labels its Lakes of Killarney view as a live webcam.",
+      "verifiedAt": "2026-10-05T19:45:00Z",
+      "promotedAt": "2026-10-05T19:45:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "botswana-elephant-valley-waterhole-live",
+      "title": "Chobe — Elephant Valley Waterhole",
+      "country": "Botswana",
+      "region": "Chobe District / Lesoma Valley",
+      "provider": "Elephant Valley Lodge",
+      "sourcePage": "https://elephantvalleylodge.com/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Elephant Valley Lodge states its live camera shows the waterhole 24 hours a day.",
+      "verifiedAt": "2026-10-05T19:45:00Z",
+      "promotedAt": "2026-10-05T19:45:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "kenya-mara-siria-live",
+      "title": "Masai Mara — Siria Escarpment",
+      "country": "Kenya",
+      "region": "Masai Mara / Siria Escarpment",
+      "provider": "Mara Siria Safari Camp",
+      "sourcePage": "https://mara-siria-camp.com/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current camp site exposes a Live Webcam View together with current local weather/time context.",
+      "verifiedAt": "2026-10-05T19:45:00Z",
+      "promotedAt": "2026-10-05T19:45:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
