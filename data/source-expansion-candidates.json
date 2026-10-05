@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:58:00Z",
+  "generatedAt": "2026-10-05T15:30:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -3879,6 +3879,74 @@
       "businessUnlocks": [
         "viator-crater-lake-oregon"
       ]
+    },
+    {
+      "id": "san-marino-monte-titano-live",
+      "title": "San Marino — Mount Titano & Three Towers",
+      "country": "San Marino",
+      "region": "City of San Marino",
+      "provider": "San Marino Tourism Office (Ufficio del Turismo)",
+      "sourcePage": "https://visitsanmarino.com/pub1/VisitSM/en/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Visit San Marino tourism site states three webcams at main points of interest are active 24 hours a day.",
+      "verifiedAt": "2026-10-05T15:30:00Z",
+      "promotedAt": "2026-10-05T15:30:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "san-marino-cableway-sea-live",
+      "title": "San Marino — Cableway & Adriatic View",
+      "country": "San Marino",
+      "region": "City of San Marino",
+      "provider": "San Marino Tourism Office (Ufficio del Turismo)",
+      "sourcePage": "https://visitsanmarino.com/pub1/VisitSM/en/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Visit San Marino tourism site states three webcams at main points of interest are active 24 hours a day.",
+      "verifiedAt": "2026-10-05T15:30:00Z",
+      "promotedAt": "2026-10-05T15:30:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "san-marino-palazzo-pubblico-live",
+      "title": "San Marino — Palazzo Pubblico & Piazza della Libertà",
+      "country": "San Marino",
+      "region": "City of San Marino",
+      "provider": "San Marino Tourism Office (Ufficio del Turismo)",
+      "sourcePage": "https://visitsanmarino.com/pub1/VisitSM/en/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Visit San Marino tourism site states three webcams at main points of interest are active 24 hours a day.",
+      "verifiedAt": "2026-10-05T15:30:00Z",
+      "promotedAt": "2026-10-05T15:30:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "montserrat-soufriere-hills-remote-cameras",
+      "title": "Soufrière Hills Volcano — Remote Monitoring Cameras",
+      "country": "Montserrat",
+      "region": "Soufrière Hills",
+      "provider": "Montserrat Volcano Observatory",
+      "sourcePage": "https://www.mvo.ms/monitoring/observations/",
+      "priority": "P1",
+      "state": "CURRENT_IMAGE_VERIFICATION_REQUIRED",
+      "evidence": "MVO says remote cameras monitor Soufrière Hills 24 hours a day and continuously record video; public page shows still-image pairs from monitoring cameras, but ERN has not yet verified that the displayed public stills are current enough for promotion.",
+      "verifiedAt": "2026-10-05T15:30:00Z",
+      "verification": "Research-only until public current-image timestamp/refresh behavior is independently confirmed."
+    },
+    {
+      "id": "new-caledonia-kuto-tourism-office-webcam",
+      "title": "Île des Pins — Baie de Kuto Tourism Office",
+      "country": "New Caledonia",
+      "region": "Île des Pins / Kuto",
+      "provider": "Île des Pins Tourism Office / Sud Tourisme Nouvelle-Calédonie",
+      "sourcePage": "https://idp.st.securical.nc/last.jpg",
+      "priority": "P1",
+      "state": "CURRENT_IMAGE_VERIFICATION_REQUIRED",
+      "evidence": "A current destination-information page identifies a webcam image distributed from the official Île des Pins tourism office at Kuto; Sud Tourisme confirms the official tourism office location. ERN still needs direct freshness/timestamp verification before promotion.",
+      "verifiedAt": "2026-10-05T15:30:00Z",
+      "verification": "Research-only; do not infer currentness solely from a last.jpg endpoint."
     }
   ],
   "notes": [
