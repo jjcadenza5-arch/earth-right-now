@@ -3437,5 +3437,378 @@
       "USGS",
       "Yellowstone Volcano Observatory"
     ]
+  },
+  {
+    "id": "visit-zandvoort-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Visit Zandvoort",
+    "familyLabel": "Visit Zandvoort webcam/current-image pages",
+    "researchUrl": "https://visitzandvoort.com/circuit/webcam/",
+    "termsUrl": "https://visitzandvoort.com/",
+    "verifiedAt": "2026-10-05T05:10:00Z",
+    "permissionEvidence": "Visit Zandvoort publishes public webcam/current-image views, but the reviewed public surface does not expose a clear commercial third-party image reuse or embed grant. ERN keeps these views LINK_ONLY pending an explicit reusable-license basis.",
+    "permissionStatus": "PUBLIC_WEBCAMS_NO_THIRD_PARTY_REUSE_GRANT_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_VISIT_ZANDVOORT_GRANTS_CAMERA_REUSE_PERMISSION",
+    "networkFamily": "visitzandvoort.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T05:10:00Z",
+    "communityGuidelinesUrl": "https://visitzandvoort.com/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://visitzandvoort.com/circuit/webcam/"
+    ],
+    "discoveryProviderAliases": [
+      "Visit Zandvoort"
+    ]
+  },
+  {
+    "id": "arcticomm-nuuk-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "ArctiComm",
+    "familyLabel": "ArctiComm Nuuk public webcam",
+    "researchUrl": "https://arcticomm.gl/arcticomm-webcam/",
+    "termsUrl": "https://arcticomm.gl/",
+    "verifiedAt": "2026-10-05T05:10:00Z",
+    "permissionEvidence": "ArctiComm publishes a public Nuuk webcam, but no explicit third-party commercial image reuse or embed license was confirmed on the reviewed public surface. ERN keeps it LINK_ONLY.",
+    "permissionStatus": "PUBLIC_WEBCAM_NO_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_ARCTICOMM_GRANTS_EXPLICIT_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "arcticomm.gl",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T05:10:00Z",
+    "communityGuidelinesUrl": "https://arcticomm.gl/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://arcticomm.gl/arcticomm-webcam/"
+    ],
+    "discoveryProviderAliases": [
+      "ArctiComm"
+    ]
+  },
+  {
+    "id": "bansko-ski-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Bansko Ski",
+    "familyLabel": "Bansko Ski public mountain webcam",
+    "researchUrl": "https://www.banskoski.com/en",
+    "termsUrl": "https://www.banskoski.com/en",
+    "verifiedAt": "2026-10-05T05:10:00Z",
+    "permissionEvidence": "Bansko Ski publishes public mountain/current conditions, but the reviewed public site does not provide a reusable third-party commercial camera license for ERN. Keep LINK_ONLY.",
+    "permissionStatus": "PUBLIC_CAMERA_ACCESS_NO_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_BANSKO_SKI_GRANTS_CAMERA_REUSE_PERMISSION",
+    "networkFamily": "banskoski.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T05:10:00Z",
+    "communityGuidelinesUrl": "https://www.banskoski.com/en",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.banskoski.com/en"
+    ],
+    "discoveryProviderAliases": [
+      "Bansko Ski"
+    ]
+  },
+  {
+    "id": "bled-tourism-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Bled Tourist Board / Infrastruktura Bled",
+    "familyLabel": "Bled official lake/current-image webcam",
+    "researchUrl": "https://www.bled.si/en/information/webcam/",
+    "termsUrl": "https://www.bled.si/en/",
+    "verifiedAt": "2026-10-05T05:10:00Z",
+    "permissionEvidence": "Bled's official tourism surface publishes a webcam/current view, but the reviewed public pages do not provide ERN a general commercial reuse or embed license. Keep LINK_ONLY.",
+    "permissionStatus": "PUBLIC_WEBCAM_NO_COMMERCIAL_REUSE_GRANT_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_BLED_TOURIST_BOARD_OR_CAMERA_OPERATOR_GRANTS_PERMISSION",
+    "networkFamily": "bled.si",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T05:10:00Z",
+    "communityGuidelinesUrl": "https://www.bled.si/en/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.bled.si/en/information/webcam/"
+    ],
+    "discoveryProviderAliases": [
+      "Bled Tourist Board / Infrastruktura Bled",
+      "Bled Tourist Board",
+      "Infrastruktura Bled"
+    ]
+  },
+  {
+    "id": "borovets-borosport-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Borovets / Borosport",
+    "familyLabel": "Borovets/Borosport public mountain webcam",
+    "researchUrl": "https://www.borovets-bg.com/en/",
+    "termsUrl": "https://www.borovets-bg.com/en/",
+    "verifiedAt": "2026-10-05T05:10:00Z",
+    "permissionEvidence": "Borovets/Borosport publishes public resort/current conditions but no explicit reusable third-party commercial camera license was confirmed. ERN keeps the view LINK_ONLY.",
+    "permissionStatus": "PUBLIC_CAMERA_ACCESS_NO_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_BOROSPORT_GRANTS_EXPLICIT_CAMERA_REUSE_PERMISSION",
+    "networkFamily": "borovets-bg.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T05:10:00Z",
+    "communityGuidelinesUrl": "https://www.borovets-bg.com/en/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.borovets-bg.com/en/"
+    ],
+    "discoveryProviderAliases": [
+      "Borovets / Borosport",
+      "Borosport",
+      "Borovets"
+    ]
+  },
+  {
+    "id": "cannes-tourist-office-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Cannes Tourist Office",
+    "familyLabel": "Cannes tourism current-image/webcam surface",
+    "researchUrl": "https://en.cannes-france.com/",
+    "termsUrl": "https://en.cannes-france.com/",
+    "verifiedAt": "2026-10-05T05:10:00Z",
+    "permissionEvidence": "Cannes Tourist Office publishes current visitor imagery but no blanket third-party commercial webcam reuse or embed license was confirmed on the reviewed public surface. ERN keeps this source LINK_ONLY.",
+    "permissionStatus": "PUBLIC_TOURISM_MEDIA_NO_CAMERA_REUSE_GRANT_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_CANNES_TOURIST_OFFICE_GRANTS_WEBCAM_REUSE_PERMISSION",
+    "networkFamily": "cannes-france.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T05:10:00Z",
+    "communityGuidelinesUrl": "https://en.cannes-france.com/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://en.cannes-france.com/"
+    ],
+    "discoveryProviderAliases": [
+      "Cannes Tourist Office"
+    ]
+  },
+  {
+    "id": "cenapred-popocatepetl-camera",
+    "status": "RESEARCH_ONLY",
+    "provider": "CENAPRED / UNAM",
+    "familyLabel": "CENAPRED Popocatépetl current-image monitoring camera",
+    "researchUrl": "https://www1.cenapred.unam.mx/volcan/popocatepetl/imagen/tlamacas_hd.html",
+    "termsUrl": "https://www.cenapred.unam.mx/",
+    "verifiedAt": "2026-10-05T05:10:00Z",
+    "permissionEvidence": "CENAPRED exposes a Popocatépetl image updated every minute for monitoring, but the reviewed official camera surface does not itself grant third-party commercial reuse or redistribution rights. ERN therefore keeps the image LINK_ONLY pending explicit permission.",
+    "permissionStatus": "OFFICIAL_MINUTE_REFRESH_CAMERA_NO_REUSE_GRANT_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_CENAPRED_UNAM_PUBLISHES_OR_GRANTS_CAMERA_REUSE_PERMISSION",
+    "networkFamily": "cenapred.unam.mx",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T05:10:00Z",
+    "communityGuidelinesUrl": "https://www.cenapred.unam.mx/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www1.cenapred.unam.mx/volcan/popocatepetl/imagen/tlamacas_hd.html"
+    ],
+    "discoveryProviderAliases": [
+      "CENAPRED / UNAM",
+      "CENAPRED",
+      "UNAM"
+    ]
+  },
+  {
+    "id": "cook-islands-tamanu-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Cook Islands Airports Authority / Tamanu Beach Resort",
+    "familyLabel": "Aitutaki Tamanu Beach current-image webcam",
+    "researchUrl": "https://cookislandsairports.com/webcam-ait/",
+    "termsUrl": "https://cookislandsairports.com/",
+    "verifiedAt": "2026-10-05T05:10:00Z",
+    "permissionEvidence": "Cook Islands Airports Authority presents recent Tamanu Beach Resort webcam images and credits the resort, but the public page does not provide a third-party commercial reuse license. Because rights may sit with the resort, ERN keeps it LINK_ONLY.",
+    "permissionStatus": "THIRD_PARTY_RESORT_CAMERA_REUSE_RIGHTS_UNRESOLVED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_TAMANU_BEACH_OR_AIRPORTS_AUTHORITY_GRANTS_EXPLICIT_REUSE_PERMISSION",
+    "networkFamily": "cookislandsairports.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T05:10:00Z",
+    "communityGuidelinesUrl": "https://cookislandsairports.com/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://cookislandsairports.com/webcam-ait/"
+    ],
+    "discoveryProviderAliases": [
+      "Cook Islands Airports Authority / Tamanu Beach Resort",
+      "Tamanu Beach Resort"
+    ]
+  },
+  {
+    "id": "darmstadt-tourism-current-view",
+    "status": "RESEARCH_ONLY",
+    "provider": "Darmstadt Tourismus",
+    "familyLabel": "Darmstadt tourism current-view surface",
+    "researchUrl": "https://www.darmstadt-tourismus.de/en/visit/mathildenhoehe-darmstadt.html",
+    "termsUrl": "https://www.darmstadt-tourismus.de/en/",
+    "verifiedAt": "2026-10-05T05:10:00Z",
+    "permissionEvidence": "Darmstadt Tourismus publishes visitor imagery/current information but no clear commercial third-party camera reuse or embed grant was confirmed. ERN keeps this view LINK_ONLY.",
+    "permissionStatus": "PUBLIC_TOURISM_MEDIA_NO_CAMERA_REUSE_GRANT_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_DARMSTADT_TOURISM_GRANTS_CAMERA_REUSE_PERMISSION",
+    "networkFamily": "darmstadt-tourismus.de",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T05:10:00Z",
+    "communityGuidelinesUrl": "https://www.darmstadt-tourismus.de/en/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.darmstadt-tourismus.de/en/visit/mathildenhoehe-darmstadt.html"
+    ],
+    "discoveryProviderAliases": [
+      "Darmstadt Tourismus"
+    ]
+  },
+  {
+    "id": "evk2cnr-khumbu-camera",
+    "status": "RESEARCH_ONLY",
+    "provider": "EvK2CNR / ISAC CNR",
+    "familyLabel": "Khumbu Glacier scientific webcam/current-image source",
+    "researchUrl": "https://www.worldcamera.net/en/webcams/asia/nepal/246-mteverest-area-khumbu-glacier",
+    "termsUrl": "https://www.worldcamera.net/en/webcams/asia/nepal/246-mteverest-area-khumbu-glacier",
+    "verifiedAt": "2026-10-05T05:10:00Z",
+    "permissionEvidence": "WorldCamera identifies the Khumbu Glacier source as copyrighted EvK2CNR-ISAC CNR. No explicit third-party commercial reuse license for ERN was found on the reviewed surface, so it remains LINK_ONLY.",
+    "permissionStatus": "COPYRIGHT_IDENTIFIED_NO_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_EVK2CNR_OR_ISAC_CNR_GRANTS_EXPLICIT_CAMERA_REUSE_PERMISSION",
+    "networkFamily": "worldcamera.net",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T05:10:00Z",
+    "communityGuidelinesUrl": "https://www.worldcamera.net/en/webcams/asia/nepal/246-mteverest-area-khumbu-glacier",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.worldcamera.net/en/webcams/asia/nepal/246-mteverest-area-khumbu-glacier"
+    ],
+    "discoveryProviderAliases": [
+      "EvK2CNR / ISAC CNR",
+      "EvK2CNR",
+      "ISAC CNR"
+    ]
+  },
+  {
+    "id": "reunion-piton-fournaise-camera",
+    "status": "RESEARCH_ONLY",
+    "provider": "Île de la Réunion Tourisme / IPGP-OVPF",
+    "familyLabel": "Piton de la Fournaise half-hour current-video/panorama webcam",
+    "researchUrl": "https://en.reunion.fr/organize/webcams/piton-de-la-fournaise-volcano-webcam/",
+    "termsUrl": "https://en.reunion.fr/legal-notices/",
+    "verifiedAt": "2026-10-05T05:10:00Z",
+    "permissionEvidence": "The official Réunion Tourism webcam page identifies the panoramic camera media as property of IRT and IPGP-OVPF and updates it about every 30 minutes. Réunion Tourism's legal notices require authorization for image/site reuse, so ERN keeps the media LINK_ONLY.",
+    "permissionStatus": "OWNED_BY_IRT_IPGP_OVPF_REUSE_AUTHORIZATION_REQUIRED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_IRT_IPGP_OVPF_GRANTS_SPECIFIC_REUSE_PERMISSION",
+    "networkFamily": "reunion.fr",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T05:10:00Z",
+    "communityGuidelinesUrl": "https://en.reunion.fr/legal-notices/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://en.reunion.fr/organize/webcams/piton-de-la-fournaise-volcano-webcam/",
+      "https://en.reunion.fr/legal-notices/"
+    ],
+    "discoveryProviderAliases": [
+      "Île de la Réunion Tourisme / IPGP-OVPF",
+      "IRT / IPGP-OVPF"
+    ]
+  },
+  {
+    "id": "jasna-tatry-mountain-resorts-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Jasná / Tatry Mountain Resorts",
+    "familyLabel": "Jasná resort current-image/webcam surface",
+    "researchUrl": "https://www.jasna.sk/en/",
+    "termsUrl": "https://www.jasna.sk/en/",
+    "verifiedAt": "2026-10-05T05:10:00Z",
+    "permissionEvidence": "Jasná/Tatry Mountain Resorts publishes public resort current conditions but no explicit third-party commercial camera reuse or embed license was confirmed on the reviewed public surface. ERN keeps it LINK_ONLY.",
+    "permissionStatus": "PUBLIC_RESORT_CAMERA_NO_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_TMR_GRANTS_EXPLICIT_CAMERA_REUSE_PERMISSION",
+    "networkFamily": "jasna.sk",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T05:10:00Z",
+    "communityGuidelinesUrl": "https://www.jasna.sk/en/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.jasna.sk/en/"
+    ],
+    "discoveryProviderAliases": [
+      "Jasná / Tatry Mountain Resorts",
+      "Jasná",
+      "Tatry Mountain Resorts"
+    ]
   }
 ]
