@@ -1061,3 +1061,23 @@ while preserving the startup/performance ceiling and existing product gates.
 - All other reviewed families remain fail-closed LINK_ONLY unless exact rights/permission supports more.
 - Current provider-discovery backlog among healthy/current external sources is down to 39 provider families; continue in large batches, prioritizing leverage and explicit public reuse paths rather than volume.
 - Existing owner gates remain unchanged: Takayama current-image review and any expired inside-ERN playback renewal still require genuine human review; do not auto-renew from reachability.
+
+
+
+### Exact reusable current-image candidate resolution — 2026-10-05
+- Reconciled the canonical handoff against current main before continuing. Preserved accepted Mount Fuji hero, globe logo, Natural Earth Atlas, social-preview repair, Search Console completion, existing human playback evidence and all public feature gates.
+- Continued the provider-discovery lane without promoting research-only sources.
+- USGS / Yellowstone Volcano Observatory:
+  - exact current-image endpoints were resolved for Biscuit Basin and Yellowstone Lake;
+  - USGS Yellowstone material used for this path is explicitly Public Domain;
+  - semantics remain CURRENT_IMAGE, never live-video;
+  - catalog promotion is still blocked until ERN staging verifies refresh/cache behavior and source attribution presentation.
+- GeoNet / Earth Sciences New Zealand:
+  - documented stable latest-image endpoint patterns were resolved for Ruapehu North and Taranaki Maunga;
+  - GeoNet states volcano camera images are updated about every 10 minutes;
+  - GeoNet content is licensed CC BY 3.0 NZ and requires GeoNet/programme-sponsor acknowledgement;
+  - catalog promotion is still blocked until ERN staging verifies fetch/cache/refresh behavior with visible attribution.
+- Provider registry updated in commit `9d80608b9074b63ba99f593e5512f80c3b99d7c2`.
+- GitHub Pages for that commit completed SUCCESS. ERN Operations was still running at the time this checkpoint was written; do not infer failure from that in-progress state.
+- No public ranking, Watch Earth selection, source-health state, playback proof, Guide/Now Moments gate or performance budget was changed.
+- Next productive provider-rights lane remains explicit reusable current-image/player paths, including Icelandic Meteorological Office and eligible Taiwan scenic-area assets, while keeping ambiguous sources LINK_ONLY.
