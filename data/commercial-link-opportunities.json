@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T21:40:00Z",
+  "generatedAt": "2026-10-05T21:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4429,6 +4429,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Jasper/d5421-ttd",
       "publicInventoryEvidence": "Viator currently exposes Jasper destination inventory spanning sightseeing, wildlife, Maligne Lake and mountain experiences.",
       "nextAction": "Generate one owner-side Jasper destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-taupo",
+      "destination": "Taupō, New Zealand",
+      "placeIds": [
+        "nz-taupo-lakefront"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official live Taupō lakefront view, and Viator has strong Lake Taupō sailing, Māori rock-carving, kayaking and regional activity inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Taupo/Maori-Rock-Carvings-Sailing-Tour-Taupo/d5241-18556P5",
+      "publicInventoryEvidence": "Current Viator Taupō inventory includes Lake Taupō sailing, Māori rock-carving, kayaking and sightseeing products.",
+      "nextAction": "Generate one owner-side Taupō destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
