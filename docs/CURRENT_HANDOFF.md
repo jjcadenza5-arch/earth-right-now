@@ -1036,3 +1036,15 @@ while preserving the startup/performance ceiling and existing product gates.
 - This research does NOT alter visitor ranking, source health, source truth or commercial placement.
 - The accepted hero remains frozen. Globe logo and Natural Earth Atlas refinement remain preserved.
 - Remaining local autonomous lanes are still provider discovery, one immediate Takayama current-image human-media review, and inside-ERN playback renewal debt. The latter two require real human playback/media confirmation and must not be auto-renewed from reachability alone.
+
+
+### Watch Earth product principle + readability refinement — 2026-10-05
+- Owner clarified the enduring ERN product split:
+  - Watch Earth is a curated rotating front shelf for beautiful, interesting or time-sensitive views, especially sunrise/morning light, sunset/evening light, strong daytime scenery and city/skyline night views.
+  - It does not need to show every source. A small excellent set is better than a large repetitive set.
+  - The wider catalog belongs in Search/Explore so visitors can intentionally find destinations and "see before you go."
+- Preserve this distinction in future ranking and UI work. Do not turn Watch Earth into a catalog dump.
+- Watch Earth automatic editorial profile now rotates hourly while remaining deterministic within the hour; quality/truth/freshness gates and geographic/provider diversity still apply.
+- Country clustering in the inside-ERN reserve is capped to reduce repeated Japan/Kyoto-heavy presentation.
+- Small visible UI text received a conservative readability increase only; no structural spacing/layout redesign was performed.
+- Future typography/spacing work should be incremental and guarded. Prefer small selector-level adjustments over broad restyling because the current layout is accepted and regression risk matters more than pixel-perfect polishing.
