@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T16:55:00Z",
+  "generatedAt": "2026-10-05T17:10:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4114,6 +4114,34 @@
       "evidence": "NPS currently presents Windswept Point as a webcam for checking current conditions at St. John.",
       "verifiedAt": "2026-10-05T16:55:00Z",
       "promotedAt": "2026-10-05T16:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-acadia-frenchman-bay-current",
+      "title": "Acadia National Park — Frenchman Bay",
+      "country": "United States",
+      "region": "Maine",
+      "provider": "U.S. National Park Service / CAMNET",
+      "sourcePage": "https://www.nps.gov/acad/learn/photosmultimedia/webcams.htm",
+      "priority": "P2_QUALITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS currently states the Frenchman Bay camera updates every 15 minutes.",
+      "verifiedAt": "2026-10-05T17:10:00Z",
+      "promotedAt": "2026-10-05T17:10:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-channel-islands-live",
+      "title": "Channel Islands National Park — Live",
+      "country": "United States",
+      "region": "California",
+      "provider": "U.S. National Park Service / Channel Islands National Marine Sanctuary",
+      "sourcePage": "https://www.nps.gov/chis/planyourvisit/channel-islands-live-nps.htm",
+      "priority": "P2_QUALITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS currently marks Channel Islands Live broadcasts as active and describes live broadcasts/webcams from the park.",
+      "verifiedAt": "2026-10-05T17:10:00Z",
+      "promotedAt": "2026-10-05T17:10:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
