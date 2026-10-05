@@ -196,7 +196,7 @@
     "id": "usgs-kilauea-v3cam-current-image",
     "providerFamilyId": "usgs-kilauea-live",
     "provider": "U.S. Geological Survey / Hawaiian Volcano Observatory",
-    "sourceId": "kilauea-summit",
+    "sourceId": "kilauea-v3cam-current-image",
     "integrationKind": "PROVIDER_AUTHORIZED_CURRENT_IMAGE",
     "truthIfApproved": "LIVE_IMAGE",
     "refreshSemantics": "OFFICIAL_TIMESTAMPED_CURRENT_IMAGE",
