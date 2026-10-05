@@ -2367,3 +2367,53 @@ The hard lean-core ceiling remains exactly **575 KB**.
 - No paid ranking.
 - No automatic commercial placement or link rewriting.
 - Searchable expansion should continue through supplemental/search infrastructure when that preserves the 575 KB lean core.
+
+### South America, Africa and Central America expansion checkpoint — 2026-10-05
+Owner asked ERN to continue expanding searchable places and business opportunities without weakening truth, performance or commercial-neutral ranking.
+
+#### Searchable places added
+- Ushuaia — Harbour & Beagle Channel, Argentina: official Secretaría de Turismo de Ushuaia live-webcam page; `EXTERNAL_LIVE / LINK_ONLY / EXTERNAL`; Search/Explore only.
+- Okaukuejo Waterhole — Etosha National Park, Namibia: first-party Namibia Wildlife Resorts wildlife live-cam surface and official 24/7 stream evidence; `EXTERNAL_LIVE / LINK_ONLY / EXTERNAL`; Search/Explore only.
+- Santa Ana Volcano — Ilamatepec, El Salvador: official MARN/DGOA volcano-monitoring camera network; `LIVE_IMAGE / LINK_ONLY / EXTERNAL`; Search/Explore only.
+- San Miguel Volcano — Chaparrastique, El Salvador: official MARN/DGOA current San Miguel camera player and volcano-monitoring network; `EXTERNAL_LIVE / LINK_ONLY / EXTERNAL`; Search/Explore only.
+
+Full provenance is retained in `data/source-evidence.json`. No embed, media-copying or restream rights were inferred.
+
+#### Searchable growth state
+- healthy distinct searchable places: **329**
+- remaining to 350 milestone: **21**
+- remaining to 400 stretch: **71**
+- unresolved human playback queue: **12**
+- Ushuaia and Okaukuejo were removed from stale playback queues and their research records were reconciled as promoted external/searchable sources.
+
+#### Business expansion
+Existing partner relationships only; all new paths remain owner-link gated:
+- Ushuaia / Tierra del Fuego → Viator — `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`
+- Etosha National Park → Viator — `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`
+- Nevado del Ruiz / Manizales → Viator — `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`
+- Surtsey / Westman Islands → Viator — `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`; public wording must not imply unrestricted access to Surtsey.
+- Santa Ana Volcano / Ilamatepec → Viator — `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`
+- San Miguel Volcano / Chaparrastique → Viator — `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`
+
+No tracked URL was invented, no new affiliate account was opened, no automatic placement occurred, and commission remains prohibited from influencing Earth ranking.
+
+#### Duplicate-growth avoidance
+Fresh checks confirmed the main SANParks family, Guatemala INSIVUMEH volcano cameras and Costa Rica OVSICORI volcano cameras are already represented in ERN, so they were deliberately not duplicated.
+
+KenyaLIVE remains a promising current KWS/WildEarth live program, but its broadcasts rotate among parks. Do not promote a fixed Nairobi National Park place until source-specific park identity/current playback is sufficiently bound.
+
+#### Validation
+- Pages run **2474** completed SUCCESS for the Ushuaia/Etosha source + business tranche.
+- Pages run **2475** completed SUCCESS for the Colombia/Iceland business expansion.
+- Pages run **2477** completed SUCCESS for the El Salvador source + business tranche.
+- Final 2477 deployment, public metadata verification, search integrity, commercial-placement integrity, SEO and AI-search readiness all passed.
+- Hard lean-core ceiling remains exactly **575 KB**.
+
+#### Product boundaries unchanged
+- Controlled IMAGE_REFRESH pilot remains exactly two sources and **0/2** scheduled observations.
+- No manual pilot renewal was triggered.
+- Public generative ERN Guide remains OFF.
+- Public Now Moments media remains OFF.
+- No automatic social posting/account creation.
+- No paid ranking.
+- No automatic commercial placement or link rewriting.
