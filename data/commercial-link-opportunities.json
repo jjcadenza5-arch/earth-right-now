@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T15:30:00Z",
+  "generatedAt": "2026-10-05T15:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3768,6 +3768,24 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-NZ/Nairobi-attractions/Ol-Pejeta-Conservancy/d5280-a28950",
       "publicInventoryEvidence": "Viator currently lists Kenya itineraries that include Laikipia and Ol Pejeta conservation/safari experiences.",
       "nextAction": "Generate one owner-side Laikipia/Ol Pejeta or Kenya conservation-safari tracked link only if the resulting destination scope is clearly disclosed; do not imply Mpala admission or direct tour access unless exact inventory proves it."
+    },
+    {
+      "id": "viator-liechtenstein-vaduz-malbun",
+      "destination": "Liechtenstein / Vaduz / Malbun",
+      "placeIds": [
+        "liechtenstein-malbun-sareis",
+        "liechtenstein-malbun-center",
+        "liechtenstein-malbun-taeli",
+        "liechtenstein-steg-reservoir"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has official current Malbun/Steg mountain views, while Viator currently offers Liechtenstein/Vaduz day trips from Zurich. This provides useful post-discovery trip planning without changing Earth ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/tours/Zurich/Zurich-Private-Car-Tour-to-4-Countries-in-a-Day-with-Rhine-Falls/d577-207305P455",
+      "publicInventoryEvidence": "Current Viator Zurich inventory includes day trips that visit Vaduz and Liechtenstein.",
+      "nextAction": "Generate one owner-side Liechtenstein/Vaduz Viator tracked destination or product link and manually verify it before public activation; do not imply the selected tour includes Malbun unless exact itinerary evidence says so."
     }
   ]
 }
