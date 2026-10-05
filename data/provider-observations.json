@@ -651,5 +651,40 @@
     "confirmation": "HUMAN_PLAYBACK",
     "observedAt": "2026-10-02T00:45:00Z",
     "reason": "Operator visibly confirmed playback in the deployed ERN review route on 2026-10-02; source-specific evidence only."
+  },
+  {
+    "id": "kyoto-fushimi-inari-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-10-05T02:11:42.640Z",
+    "reason": "Operator confirmed deployed playback on the exact current source/embed target; provider page independently verified reachable."
+  },
+  {
+    "id": "kyoto-kifune-shrine-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-10-05T02:11:38.039Z",
+    "reason": "Operator confirmed deployed playback on the exact current source/embed target; provider page independently verified reachable."
+  },
+  {
+    "id": "kyoto-nishiki-market-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-10-05T02:11:32.473Z",
+    "reason": "Operator confirmed deployed playback on the exact current source/embed target; provider page independently verified reachable."
+  },
+  {
+    "id": "la-palma-caldera-taburiente",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-10-05T02:11:54.841Z",
+    "reason": "Operator confirmed deployed playback on the exact current source/embed target; provider page independently verified reachable."
+  },
+  {
+    "id": "verbier",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-10-05T02:11:49.173Z",
+    "reason": "Operator confirmed deployed playback on the exact current source/embed target; provider page independently verified reachable."
   }
 ]
