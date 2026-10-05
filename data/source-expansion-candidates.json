@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T21:40:00Z",
+  "generatedAt": "2026-10-05T21:50:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -5305,6 +5305,20 @@
       "verifiedAt": "2026-10-05T21:40:00Z",
       "promotedAt": "2026-10-05T21:40:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "nz-taupo-lakefront-live",
+      "title": "Taupō — Lakefront Live View",
+      "country": "New Zealand",
+      "region": "Waikato / Taupō",
+      "provider": "Love Taupō / Suncourt Hotel & Conference Centre",
+      "sourcePage": "https://www.lovetaupo.com/en/plan/webcam/",
+      "priority": "P1_VISITOR_UTILITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Love Taupō currently says the webcam shows what is happening on Taupō town's lakefront right now.",
+      "verifiedAt": "2026-10-05T21:50:00Z",
+      "promotedAt": "2026-10-05T21:50:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
