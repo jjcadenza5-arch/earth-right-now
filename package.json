@@ -117,7 +117,8 @@
     "search:supplemental-status": "node scripts/search-supplemental-status.mjs",
     "search:place-alias-status": "node scripts/place-search-alias-status.mjs",
     "inside:current-image-verification": "node scripts/provider-current-image-verification.mjs",
-    "inside:current-image-promotion-plan": "node scripts/current-image-promotion-plan.mjs"
+    "inside:current-image-promotion-plan": "node scripts/current-image-promotion-plan.mjs",
+    "inside:current-image-pilot-observation": "node scripts/current-image-pilot-observation-status.mjs"
   },
   "engines": {
     "node": ">=20"
