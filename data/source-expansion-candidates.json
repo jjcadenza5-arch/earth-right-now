@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T15:30:00Z",
+  "generatedAt": "2026-10-05T15:55:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -3947,6 +3947,62 @@
       "evidence": "A current destination-information page identifies a webcam image distributed from the official Île des Pins tourism office at Kuto; Sud Tourisme confirms the official tourism office location. ERN still needs direct freshness/timestamp verification before promotion.",
       "verifiedAt": "2026-10-05T15:30:00Z",
       "verification": "Research-only; do not infer currentness solely from a last.jpg endpoint."
+    },
+    {
+      "id": "liechtenstein-malbun-sareis-live",
+      "title": "Malbun — Sareis",
+      "country": "Liechtenstein",
+      "region": "Malbun / Triesenberg",
+      "provider": "Bergbahnen Malbun AG",
+      "sourcePage": "https://www.bergbahnen.li/meta/webcams",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Bergbahnen Malbun webcam network currently lists Sareis, Malbun center/Hotel Turna, Täli valley station and Steg reservoir views.",
+      "verifiedAt": "2026-10-05T15:55:00Z",
+      "promotedAt": "2026-10-05T15:55:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "liechtenstein-malbun-turna-live",
+      "title": "Malbun — Village Center",
+      "country": "Liechtenstein",
+      "region": "Malbun / Triesenberg",
+      "provider": "Bergbahnen Malbun AG / Hotel Turna",
+      "sourcePage": "https://www.bergbahnen.li/meta/webcams",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Bergbahnen Malbun webcam network currently lists Sareis, Malbun center/Hotel Turna, Täli valley station and Steg reservoir views.",
+      "verifiedAt": "2026-10-05T15:55:00Z",
+      "promotedAt": "2026-10-05T15:55:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "liechtenstein-malbun-taeli-live",
+      "title": "Malbun — Täli Valley Station",
+      "country": "Liechtenstein",
+      "region": "Malbun / Triesenberg",
+      "provider": "Bergbahnen Malbun AG",
+      "sourcePage": "https://www.bergbahnen.li/meta/webcams",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Bergbahnen Malbun webcam network currently lists Sareis, Malbun center/Hotel Turna, Täli valley station and Steg reservoir views.",
+      "verifiedAt": "2026-10-05T15:55:00Z",
+      "promotedAt": "2026-10-05T15:55:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "liechtenstein-steg-reservoir-live",
+      "title": "Steg — Reservoir",
+      "country": "Liechtenstein",
+      "region": "Steg / Triesenberg",
+      "provider": "Bergbahnen Malbun AG",
+      "sourcePage": "https://www.bergbahnen.li/meta/webcams",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Bergbahnen Malbun webcam network currently lists Sareis, Malbun center/Hotel Turna, Täli valley station and Steg reservoir views.",
+      "verifiedAt": "2026-10-05T15:55:00Z",
+      "promotedAt": "2026-10-05T15:55:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
