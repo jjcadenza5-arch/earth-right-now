@@ -10,7 +10,7 @@ async function get(url,{json=false}={}){
     const contentType=res.headers.get("content-type")||"";
     let body=null,bytes=0;
     if(json){try{body=await res.json()}catch{body=null}}
-    else{const buf=await res.arrayBuffer();bytes=buf.byteLength}
+    else{const buf=await res.arrayBuffer();bytes=buf.byteLength;const b=new Uint8Array(buf);let magicType=null;if(b.length>=3&&b[0]===0xff&&b[1]===0xd8&&b[2]===0xff)magicType="image/jpeg";else if(b.length>=8&&b[0]===0x89&&b[1]===0x50&&b[2]===0x4e&&b[3]===0x47)magicType="image/png";return{status:res.status,contentType,magicType,bytes,body,etag:res.headers.get("etag"),lastModified:res.headers.get("last-modified"),cacheControl:res.headers.get("cache-control")}}
     return{status:res.status,contentType,bytes,body,etag:res.headers.get("etag"),lastModified:res.headers.get("last-modified"),cacheControl:res.headers.get("cache-control")};
   }catch(error){return{status:0,contentType:null,bytes:0,error:String(error?.message||error)}}finally{clearTimeout(timer)}
 }
@@ -21,5 +21,5 @@ for(const target of candidates){
   items.push({id:target.id,provider:target.provider,sourceId:target.sourceId,exactTargetUrl:target.exactTargetUrl,metadataUrl:target.metadataUrl||null,...assessCurrentImageProbe(target,{image,metadata,now:new Date()})});
 }
 const invalid=items.filter(x=>x.state==="FETCH_OR_IMAGE_INVALID");
-const report={generatedAt:new Date().toISOString(),total:items.length,invalid:invalid.length,machineCurrent:items.filter(x=>x.state==="FETCH_OK_METADATA_CURRENT").length,temporalSampleRequired:items.filter(x=>x.state==="FETCH_OK_TEMPORAL_SAMPLE_REQUIRED").length,state:invalid.length?"ATTENTION":"OK",items,safety:{catalogMutationAllowed:false,automaticPromotionAllowed:false}};
+const report={generatedAt:new Date().toISOString(),total:items.length,invalid:invalid.length,machineCurrent:items.filter(x=>x.state==="FETCH_OK_TEMPORAL_EVIDENCE_CURRENT").length,temporalSampleRequired:items.filter(x=>x.state==="FETCH_OK_TEMPORAL_SAMPLE_REQUIRED").length,state:invalid.length?"ATTENTION":"OK",items,safety:{catalogMutationAllowed:false,automaticPromotionAllowed:false}};
 console.log(JSON.stringify(report,null,2));
