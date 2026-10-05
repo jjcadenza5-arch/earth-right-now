@@ -3234,3 +3234,102 @@ Pages run **2554 completed SUCCESS** for this full batch.
 - commercial placement integrity passed;
 - lean-core performance preflight passed with the hard budget still exactly **575000 bytes**;
 - deployment and deployed social-preview verification completed successfully.
+
+
+### Hong Kong + US parks + Morocco + Yucatán large expansion — 2026-10-05
+This continuation follows the owner's preferred operating balance: substantial batches, no rush, broad Earth coverage, and parallel business development without weakening truth, currentness, permission or commercial-neutrality standards.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **440 to 458 places** (**463 healthy source records** total).
+Supplemental lazy Search/Explore catalog advanced from **121 to 139 rows**, still safely below the bounded 250-row capacity.
+
+This batch added **18 healthy searchable places**:
+
+**Hong Kong Observatory — 6 official current views**
+- Clear Water Bay;
+- Cheung Chau;
+- Lamma Island;
+- Peng Chau;
+- Hong Kong Wetland Park;
+- Sai Kung.
+
+HKO current-image evidence includes its latest live weather-photo network and exact pages that state images are captured every five minutes. Existing Hong Kong Klook planning coverage was extended to this cluster rather than creating duplicate business records.
+
+**United States National Park Service — 6 official current views**
+- Yosemite High Sierra / Half Dome;
+- Haleakalā Summit Crater;
+- Grand Canyon — Yavapai Point;
+- Grand Canyon — Kolb Studio;
+- Yellowstone — Mount Washburn;
+- Glacier National Park — Many Glacier.
+
+All six use official NPS current/live webcam surfaces. Business mappings were reconciled at park or island level: Grand Canyon, Maui/Haleakalā, Yellowstone and Glacier existing paths were extended; a new Yosemite Viator opportunity was added.
+
+**Morocco — 2 first-party real-time surf/coast views**
+- Dakhla Lagoon — Dakhla Attitude first-party webcam, explicitly described as real-time;
+- Paradis Plage / Agadir-Taghazout coast — first-party resort webcam for live swell/sunset conditions.
+
+New downstream Viator opportunities were added for Dakhla and Agadir/Taghazout, both remaining `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`.
+
+**Yucatán, Mexico — 4 government-backed real-time destinations**
+- Mérida;
+- Izamal;
+- Progreso;
+- Valladolid.
+
+The Government of Yucatán announced on 2026-09-27 that all four destinations are available through Webcams de México **24 hours a day in real time** as part of the state's tourism-promotion strategy. Mérida's exact current camera is at Palacio Municipal; the current platform also lists Izamal, Progreso and Valladolid. One regional Mérida/Yucatán Viator planning bridge was added rather than creating four separate commercial records.
+
+All 18 new places remain `LINK_ONLY` / external Search/Explore sources with `watchHold: true`. None may fill Watch Earth under the in-ERN playback rule.
+
+#### Business-side expansion + reconciliation
+Commercial registry advanced from **258 to 263 opportunities**.
+
+New opportunities created in this continuation:
+- Yosemite National Park → Viator;
+- San Marino → Viator, one destination-level path serving all three official San Marino current views;
+- Dakhla → Viator;
+- Agadir / Taghazout → Viator;
+- Mérida / Yucatán → Viator, one regional path serving the four new state-backed Yucatán destinations.
+
+Existing mappings expanded without duplicate commercial density:
+- Hong Kong Klook path now covers the broader HKO place cluster;
+- Grand Canyon Viator path now includes Yavapai Point and Kolb Studio;
+- Maui/Kihei path now includes Haleakalā;
+- Yellowstone path now includes Mount Washburn;
+- Glacier National Park path now includes Many Glacier.
+
+No tracked URL, offer, availability or partner relationship was invented. All unverified new paths remain owner-side exact-link gated. Commercial value remained downstream from Earth discovery and did not affect source ranking, truth, currentness or health.
+
+#### Health + release validation
+Operations runs **1379, 1380, 1381 and 1382 completed SUCCESS** across the staged additions.
+
+Latest validated searchable-source health from Operations 1382:
+- eligible searchable sources: **467**;
+- eligible unique URLs: **355**;
+- current rotating cohort: **65 sources / 50 unique URLs**;
+- reachable: **58**;
+- missing: **0**;
+- access-blocked: **5**;
+- temporary/network: **2**;
+- recovered: **0**;
+- repair: **2**;
+- review: **5**;
+- watch: **0**.
+
+The two REPAIR records remain Bishkek Ala-Too Square and Too-Ashu Pass; their provider pages were independently confirmed active earlier, so source truth remains unchanged. The five repeated access-limited records remain REVIEW only. No new missing-source or repair regression appeared in this batch.
+
+Pages run **2563 completed SUCCESS** for the full 458-place state.
+- all **112 current ERN release smoke tests passed**;
+- Supplemental Search integrity passed with **139** records;
+- commercial placement integrity passed;
+- hard lean-core performance budget remains exactly **575000 bytes**;
+- deployment and deployed social-preview verification completed successfully.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- IMAGE_REFRESH was not manually triggered or altered;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no paid ranking;
+- commercial value never affects Earth ranking, truth, currentness or health.
