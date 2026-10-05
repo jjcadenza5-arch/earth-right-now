@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:50:00Z",
+  "generatedAt": "2026-10-05T13:55:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2007,6 +2007,42 @@
       "rightsBasis": "Official AVO/USGS volcano and webcam surface. ERN remains Search/Explore LINK_ONLY.",
       "coordinateSourceUrl": "https://avo.alaska.edu/volcano/Katmai",
       "story": "Official current monitoring views of the Katmai volcanic area."
+    },
+    "alaska-akutan-current-image": {
+      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed multiple Akutan cameras with Oct. 5, 2026 timestamps.",
+      "rightsBasis": "Official Alaska Volcano Observatory / USGS webcam index. ERN remains Search/Explore LINK_ONLY and does not infer embed or media-reuse permission.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
+      "story": "Official current monitoring view of Akutan."
+    },
+    "alaska-cleveland-current-image": {
+      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed multiple Cleveland visual/IR cameras with Oct. 5, 2026 timestamps.",
+      "rightsBasis": "Official Alaska Volcano Observatory / USGS webcam index. ERN remains Search/Explore LINK_ONLY and does not infer embed or media-reuse permission.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
+      "story": "Official current monitoring view of Cleveland."
+    },
+    "alaska-little-sitkin-current-image": {
+      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed Little Sitkin LSPA with an Oct. 5, 2026 timestamp.",
+      "rightsBasis": "Official Alaska Volcano Observatory / USGS webcam index. ERN remains Search/Explore LINK_ONLY and does not infer embed or media-reuse permission.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
+      "story": "Official current monitoring view of Little Sitkin."
+    },
+    "alaska-spurr-current-image": {
+      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed multiple Mount Spurr and regional cameras with Oct. 5, 2026 timestamps.",
+      "rightsBasis": "Official Alaska Volcano Observatory / USGS webcam index. ERN remains Search/Explore LINK_ONLY and does not infer embed or media-reuse permission.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
+      "story": "Official current monitoring view of Mount Spurr."
+    },
+    "alaska-tanaga-current-image": {
+      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed Tanaga TAPA with an Oct. 5, 2026 timestamp.",
+      "rightsBasis": "Official Alaska Volcano Observatory / USGS webcam index. ERN remains Search/Explore LINK_ONLY and does not infer embed or media-reuse permission.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
+      "story": "Official current monitoring view of Tanaga."
+    },
+    "alaska-aniakchak-current-image": {
+      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed Aniakchak ANNQ and Port Heiden views with Oct. 5, 2026 timestamps.",
+      "rightsBasis": "Official Alaska Volcano Observatory / USGS webcam index. ERN remains Search/Explore LINK_ONLY and does not infer embed or media-reuse permission.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
+      "story": "Official current monitoring view of Aniakchak."
     }
   },
   "prague-petrin-tower": {
