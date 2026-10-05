@@ -48,6 +48,14 @@ await cp(new URL("../data/earth-signal-deployment.json",import.meta.url),new URL
 await cp(new URL("../data/submission-transport.json",import.meta.url),new URL("data/submission-transport.json",dist));
 try{await cp(new URL("../data/release-evidence.json",import.meta.url),new URL("data/release-evidence.json",dist))}catch{await writeFile(new URL("data/release-evidence.json",dist),"{}\n")}
 await cp(new URL("../assets/",import.meta.url),new URL("assets/",dist),{recursive:true});
+{
+  const chunks=[];
+  for(let i=0;i<4;i++)chunks.push((await readFile(new URL("../assets/ern-social-card-v2.b64."+i,import.meta.url),"utf8")).trim());
+  const socialCard=Buffer.from(chunks.join(""),"base64");
+  if(socialCard.length<1000||socialCard[0]!==137||socialCard[1]!==80||socialCard[2]!==78||socialCard[3]!==71)throw new Error("invalid ERN social card build asset");
+  await writeFile(new URL("assets/ern-social-card-v2.png",dist),socialCard);
+  for(let i=0;i<4;i++)await rm(new URL("assets/ern-social-card-v2.b64."+i,dist),{force:true});
+}
 await cp(new URL("../places/",import.meta.url),new URL("places/",dist),{recursive:true});
 await cp(new URL("../discover/",import.meta.url),new URL("discover/",dist),{recursive:true});
 for(const locale of ["th","de","fr","ja","zh","es"])await cp(new URL("../"+locale+"/",import.meta.url),new URL(locale+"/",dist),{recursive:true});
