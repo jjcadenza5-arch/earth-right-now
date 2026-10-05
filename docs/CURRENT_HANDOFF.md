@@ -1005,3 +1005,34 @@ while preserving the startup/performance ceiling and existing product gates.
 - Compacted the Atlas refinement CSS without changing its visual intent.
 - JavaScript syntax validation is green; Pages / Operations validation is running on the repaired build.
 - Phase 10 workplan remains COMPLETE. Do not invent a new phase merely to avoid an appropriate autonomous hold after all local release/operations blockers are green.
+
+
+### Large provider-discovery batch — 2026-10-05
+- Continued autonomously in larger batches without reopening the accepted homepage/hero.
+- Resolved release/operations cleanup first: playback evidence consistency is clean, folded duplicate aliases were removed, whole-product guards now validate behavior instead of comment/variable-name text, and Operations packet integrity is green.
+- Provider-family research expanded substantially from the existing catalog, always fail-closed and commercial-neutral. Newly reviewed families include:
+  - Switzerland Tourism — LINK_ONLY; public/commercial reuse requires prior written consent.
+  - GeoNet / Earth Sciences New Zealand — documented CC BY 3.0 NZ current-image path with attribution; exact image integration still requires a single-source staging/review step.
+  - IGP/CENVUL Peru — LINK_ONLY pending camera-specific reuse rights.
+  - INETER Nicaragua — LINK_ONLY; public viewing does not establish reuse permission.
+  - Prague City Tourism — LINK_ONLY pending webcam-specific reuse permission.
+  - Panama Canal Authority — LINK_ONLY; commercial/image cross-site reuse requires explicit authorization.
+  - Australian Antarctic Program — LINK_ONLY pending station-webcam image licensing.
+  - Taiwan government camera families — conservative agency-specific permission boundary.
+  - Istanbul Metropolitan Municipality — LINK_ONLY pending explicit municipal camera reuse permission.
+  - IG-EPN Ecuador — LINK_ONLY; reviewed data terms do not support ERN republication.
+  - Landsverk — LINK_ONLY pending explicit camera reuse terms.
+  - Hong Kong Observatory — LINK_ONLY for ERN unless prior written commercial authorization is obtained.
+  - Île de la Réunion Tourisme — LINK_ONLY; image/site reuse requires written authorization.
+  - Visit Azores and VisitDenmark — LINK_ONLY pending camera-specific commercial/player permission.
+  - OVSICORI-UNA and City of Kraków — LINK_ONLY pending specific camera reuse basis.
+  - DOST-PHIVOLCS — LINK_ONLY; redistribution/commercial constraints require camera-specific permission.
+  - North Coast & Guanyinshan National Scenic Area — broad open-information reuse exists with source attribution, but exact camera ownership must be checked before any current-image promotion.
+  - Cook Islands Airports Authority, Mauritius Now, Visit St. Maarten / ShowMe Caribbean — LINK_ONLY pending explicit originating-provider permission.
+  - Beach View Barbados — LINK_ONLY; site terms are personal/non-commercial and webcam operation is third-party.
+  - Vienna Tourist Board — LINK_ONLY; all rights reserved / express consent boundary.
+  - Plantation Island, Lomani Island, Kuredu Island, Odjo d'Água, Denpasar ATCS — public live views retained LINK_ONLY because no explicit third-party commercial embed/reuse grant was confirmed.
+  - Visit Finland family — curated third-party views remain LINK_ONLY unless the originating provider grants embed/reuse rights.
+- This research does NOT alter visitor ranking, source health, source truth or commercial placement.
+- The accepted hero remains frozen. Globe logo and Natural Earth Atlas refinement remain preserved.
+- Remaining local autonomous lanes are still provider discovery, one immediate Takayama current-image human-media review, and inside-ERN playback renewal debt. The latter two require real human playback/media confirmation and must not be auto-renewed from reachability alone.
