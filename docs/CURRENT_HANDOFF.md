@@ -1176,3 +1176,90 @@ while preserving the startup/performance ceiling and existing product gates.
 - The extra Kīlauea core row was rolled back. Subsequent Pages and Operations on the rollback path returned green. Kīlauea remains private staging only until a zero-bloat public binding strategy is available.
 - Existing public visitor behavior remains unchanged: all seven review-ready sources are still LINK_ONLY / EXTERNAL. No automatic inside-ERN promotion occurred.
 - This is now a genuine substantial review/approval point: ERN can either keep the seven sources link-only or deliberately transition a controlled pilot subset to inside-ERN IMAGE_REFRESH with attribution, rollback guards and an evidence-renewal policy.
+
+
+
+### Two-source controlled IMAGE_REFRESH pilot — ACTIVE — 2026-10-05
+Owner explicitly approved proceeding with the two-source controlled inside-ERN current-image pilot.
+
+#### Active public pilot sources
+1. **Yellowstone — Biscuit Basin**
+   - source id: `yellowstone-biscuit-basin-current-image`
+   - provider: U.S. Geological Survey / Yellowstone Volcano Observatory
+   - public runtime state: `LIVE_IMAGE / EMBED_ALLOWED / IMAGE_REFRESH`
+   - exact image: `https://volcview.wr.usgs.gov/ashcam-api/images/webcams/ys-bbsn2/current.jpg`
+   - provider page remains the visitor-facing Source link
+   - nominal refresh: 15 minutes
+   - rights basis: USGS Public Domain
+   - concise runtime attribution: `USGS / YVO`
+   - full rights/freshness evidence remains in `data/source-evidence.json`
+
+2. **Mount Ruapehu — Current Images**
+   - source id: `nz-ruapehu-current-image`
+   - provider: GeoNet / Earth Sciences New Zealand
+   - public runtime state: `LIVE_IMAGE / EMBED_ALLOWED / IMAGE_REFRESH`
+   - exact image: `https://images.geonet.org.nz/volcano/cameras/latest/ruapehunorth.jpg`
+   - provider page remains the visitor-facing Source link
+   - nominal refresh: 10 minutes
+   - rights basis: GeoNet CC BY 3.0 NZ
+   - concise visible attribution: `GeoNet — NHC, ESNZ, LINZ, NEMA & MBIE`
+   - full attribution/rights evidence remains in `data/source-evidence.json`
+
+#### Source-link and attribution boundary
+- The image viewer uses the exact current-image endpoint.
+- Visitor-facing Source/attribution links prefer `officialUrl`, not the raw JPEG.
+- No current-image source is represented as live video.
+- Commercial/affiliate ranking remains completely separate and cannot influence Earth ranking.
+
+#### Automated maintenance
+- Added `.github/workflows/current-image-pilot-renewal.yml`.
+- Schedule: daily at 00:37 UTC plus manual workflow dispatch.
+- Workflow has `contents: write` only because it must renew verification timestamps after a successful machine-current probe.
+- It is NOT push-triggered, preventing renewal loops.
+- Renewal is hard-scoped to exactly:
+  - `yellowstone-biscuit-basin-current-image`
+  - `nz-ruapehu-current-image`
+- Renewal checks exact target binding plus:
+  - `IMAGE_REFRESH`
+  - `EMBED_ALLOWED`
+  - exact staged image URL
+  - valid current image response
+  - fresh temporal evidence
+- On any mismatch/freshness failure the renewal job fails closed and does not update evidence.
+- Renewal may update only `checkedAt`, `lastSuccessfulCheck` and clear a resolved failure marker. It must not change permission, playback, ranking, provider set, or promote any additional source.
+
+#### Performance regression handling
+- First pilot version exceeded the hard 575 KB lean-core ceiling.
+- The limit was NOT raised.
+- Audit/pilot metadata was moved out of the runtime catalog into `data/source-evidence.json`.
+- Runtime attribution/card copy was compacted without removing required attribution.
+- Final production Pages release at commit `e1ddbe43159c72a7b88626d24452c62b55dae57b` completed **SUCCESS** and passed the unchanged hard performance gate.
+- This preserves the standing rule: optimize to fit; never raise the performance limit merely to pass a release.
+
+#### Latest Operations evidence
+Operations packet generated around 2026-10-05T07:35:59Z reports:
+- exact staged current-image targets: **8**
+- machine-current: **8 / 8**
+- invalid: **0**
+- temporal-sample debt: **0**
+- public IMAGE_REFRESH maintenance-eligible: **2**
+  - Yellowstone Biscuit Basin
+  - GeoNet Ruapehu North
+- still READY_FOR_EDITORIAL_PROMOTION_REVIEW: **5**
+  - Yellowstone Lake
+  - GeoNet Taranaki Maunga
+  - GeoNet Ngauruhoe
+  - GeoNet Tongariro
+  - GeoNet Whakaari / White Island
+- blocked staged candidate: **1**
+  - Kīlauea V3cam: rights/currentness pass, but source binding remains intentionally unresolved to avoid duplicate-core/runtime bloat.
+
+#### Public gates unchanged
+- Public generative ERN Guide remains OFF.
+- Public Now Moments uploads remain OFF.
+- No general automatic source promotion was enabled.
+- The other five review-ready sources remain LINK_ONLY / EXTERNAL.
+- Takayama and genuinely expired inside-ERN playback proof remain real human-media gates.
+
+#### Pilot observation rule
+Do not expand beyond these two IMAGE_REFRESH sources merely because the first deployment is green. Observe production behavior and automated renewal first. Expand only after the pilot remains healthy under real scheduled renewal and normal visitor use.
