@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T21:20:00Z",
+  "generatedAt": "2026-10-05T21:30:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -5263,6 +5263,20 @@
       "verifiedAt": "2026-10-05T21:20:00Z",
       "verification": "Research-only until the exact current webcam route and live behavior are independently resolved.",
       "nextAction": "Resolve Azura's current Live Webcam target and verify currentness before promotion."
+    },
+    {
+      "id": "kenya-ol-donyo-waterhole-live",
+      "title": "Chyulu Hills — ol Donyo Waterhole",
+      "country": "Kenya",
+      "region": "Chyulu Hills / Amboseli Ecosystem",
+      "provider": "Great Plains Conservation / Big Life Foundation",
+      "sourcePage": "https://biglife.org/program-updates/big-life-news/watch-a-waterhole",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Big Life Foundation documents the live webcam at ol Donyo Lodge waterhole; current live-camera directories continue to show the stream active.",
+      "verifiedAt": "2026-10-05T21:30:00Z",
+      "promotedAt": "2026-10-05T21:30:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
