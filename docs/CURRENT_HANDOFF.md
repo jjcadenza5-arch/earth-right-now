@@ -3430,3 +3430,79 @@ Pages run **2571 completed SUCCESS** for the full 473-place state.
 - no automatic social posting/account creation;
 - no paid ranking;
 - commercial value never affects Earth ranking, truth, currentness or health.
+
+
+### Thailand + southern Africa + Indian Ocean + Canada/New Zealand expansion — 2026-10-05
+Owner continues to prefer substantial, balanced expansion batches rather than frequent small reports. This checkpoint preserves that operating mode: widen Earth coverage, grow useful downstream commercial mapping, avoid weak source inflation, and validate the whole batch before handoff.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **473 to 483 places** (**488 healthy source records** total). The lazy supplemental Search/Explore catalog is now **164 / 250** records, leaving significant room under the current bounded capacity without increasing first-load core size.
+
+This continuation added **10 healthy searchable places**:
+- **Thailand** — Koh Samui / Crystal Bay (Silver Beach), first-party Crystal Bay Beach Resort live stream;
+- **South Africa** — Madikwe / Tau Game Lodge waterhole;
+- **South Africa** — Klaserie / Simbavati Waterside dam live stream;
+- **South Africa** — Cape Town / Camps Bay first-party POD live coastal stream;
+- **Namibia** — Kambaku Wildlife Reserve waterhole;
+- **Mauritius** — Shanti Maurice south-coast live beach view;
+- **Kenya** — Chyulu Hills / ol Donyo Lodge wildlife waterhole;
+- **Canada** — Jasper SkyTram upper-station live view;
+- **Canada** — Maligne Lake 360° live/current view;
+- **New Zealand** — Taupō lakefront official destination live view.
+
+All new records remain `LINK_ONLY` / external Search/Explore content with `watchHold: true`. None may fill Watch Earth because Watch Earth remains in-ERN playback only.
+
+Two additional geographies were researched conservatively but not promoted:
+- **Sri Lanka / Pasikudah** — credible 2026 evidence confirms Sun Siyam launched a 24-hour real-time weather webcam, but the exact durable current first-party production route still requires independent resolution; candidate remains `EXACT_LIVE_TARGET_VERIFICATION_REQUIRED`.
+- **Bermuda / Azura** — current property surfaces expose a Live Webcam handoff, but ERN has not resolved and independently verified the exact durable webcam endpoint; candidate remains research-only.
+
+#### Business-side expansion + reconciliation
+Commercial registry advanced from **273 to 279 opportunities**.
+
+New downstream opportunities:
+- Koh Samui → Viator;
+- Madikwe Game Reserve → Viator;
+- Klaserie / Greater Kruger → Viator, activation only if the owner-side search yields a genuinely useful scoped path;
+- Amboseli / Chyulu Hills → Viator;
+- Jasper National Park → one destination-level Viator path serving both Jasper SkyTram and Maligne Lake;
+- Taupō → Viator.
+
+Existing business mappings were extended rather than duplicated:
+- the already-verified Cape Town Viator path now also serves Camps Bay;
+- the existing Etosha/Namibia safari research path now includes Kambaku where scope is clearly disclosed;
+- the Mauritius Klook path now covers four healthy island discovery places including Shanti Maurice.
+
+No tracked affiliate URL was fabricated or activated. Existing already-verified links were preserved unchanged. Every new unverified opportunity remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`.
+
+#### Health + release validation
+Operations runs **1387, 1388, 1389, 1390, 1391 and 1392** completed SUCCESS across the staged source additions.
+
+Latest validated health from Operations **1392**:
+- eligible searchable sources: **492**;
+- eligible unique URLs: **380**;
+- current rotating cohort: **69 sources / 54 unique URLs**;
+- reachable: **62**;
+- missing: **0**;
+- access-blocked: **5**;
+- temporary/network: **2**;
+- recovered: **4**;
+- repair: **2**;
+- review: **5**;
+- watch: **0**.
+
+The temporary San Marino Cableway WATCH cleared naturally on recheck. The two REPAIR records remain Bishkek Ala-Too Square and Too-Ashu Pass; provider evidence already confirmed those pages active, so no source truth change is justified. The five repeated access-limited sources remain REVIEW only.
+
+Pages run **2583 completed SUCCESS** on the final commercial state:
+- all **112 current ERN release smoke tests passed**;
+- Supplemental Search integrity passed with **164** records;
+- hard lean-core budget remains exactly **575000 bytes**;
+- release build/deployment completed with no release errors.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- IMAGE_REFRESH remains untouched until its natural scheduled renewal;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no paid ranking;
+- commercial value never affects Earth ranking, source truth, currentness or health.
