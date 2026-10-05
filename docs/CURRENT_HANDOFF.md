@@ -3227,3 +3227,10 @@ Protected invariants remain unchanged:
 - no automatic social posting/account creation;
 - no paid ranking;
 - commercial value never affects Earth ranking, truth, currentness or health.
+
+Pages run **2554 completed SUCCESS** for this full batch.
+- all **112 current ERN release smoke tests passed**;
+- Supplemental Search integrity passed with **121** lazy records;
+- commercial placement integrity passed;
+- lean-core performance preflight passed with the hard budget still exactly **575000 bytes**;
+- deployment and deployed social-preview verification completed successfully.
