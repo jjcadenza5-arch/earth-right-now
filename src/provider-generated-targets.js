@@ -18,8 +18,11 @@ export function providerGeneratedTargetStatus(rows=[]){
       integrationKind:raw?.integrationKind||null,truthIfApproved:raw?.truthIfApproved||null,refreshSemantics:raw?.refreshSemantics||null,
       generatorUrl:raw?.generatorUrl||null,extractionMode:raw?.extractionMode||null,manualInteractionRequired:raw?.manualInteractionRequired===true,blockerReason:raw?.blockerReason||null,lastExtractionAttemptAt:raw?.lastExtractionAttemptAt||null,hasExactCode,hasExactTarget,generated,reviewed,reviewOutcome:raw?.reviewOutcome||null,
       state,valid,safetyOk,promotionAllowed:false,catalogMutationAllowed:false,automaticGenerationAllowed:false,
+      reviewMode:raw?.integrationKind==="PROVIDER_GENERATED_WIDGET"?"DEPLOYED_HUMAN_RENDERING_REQUIRED":
+        ["PROVIDER_GENERATED_CURRENT_IMAGE","PROVIDER_AUTHORIZED_CURRENT_IMAGE"].includes(raw?.integrationKind)?"AUTOMATED_FETCH_REFRESH_ATTRIBUTION_FIRST":"UNRESOLVED",
       nextAction:state==="EXACT_PROVIDER_CODE_REQUIRED"?"GENERATE_EXACT_CODE_ON_OFFICIAL_PROVIDER_SURFACE":
         state==="EXACT_PROVIDER_TARGET_URL_REQUIRED"?"IDENTIFY_EXACT_AUTHORIZED_CURRENT_IMAGE_URL":
+        state==="DEPLOYED_REVIEW_REQUIRED"&&["PROVIDER_GENERATED_CURRENT_IMAGE","PROVIDER_AUTHORIZED_CURRENT_IMAGE"].includes(raw?.integrationKind)?"VERIFY_CURRENT_IMAGE_FETCH_REFRESH_AND_ATTRIBUTION":
         state==="DEPLOYED_REVIEW_REQUIRED"?"STAGE_EXACT_TARGET_FOR_DEPLOYED_RENDERING_REVIEW":
         state==="REVIEW_APPROVED_NOT_PROMOTED"?"EDITORIAL_AND_CATALOG_PROMOTION_REVIEW":
         state==="REVIEW_FAILED"?"KEEP_RESEARCH_ONLY_OR_REGENERATE_MATERIALLY_CHANGED_TARGET":"FIX_INVALID_STAGING_RECORD"
@@ -40,6 +43,6 @@ export function providerGeneratedTargetStatus(rows=[]){
     state:invalid.length?"INVALID_STAGING":reviewReady.length?"DEPLOYED_REVIEW_READY":preparation.length?"PREPARATION_REQUIRED":"NO_ACTIVE_PREPARATION",
     items,
     safety:{catalogMutationAllowed:false,automaticGenerationAllowed:false,automaticPromotionAllowed:false,permissionInferred:false,playbackInferred:false},
-    note:"Provider-generated target staging only. Family-level permission evidence never promotes a source. Extraction blockers are recorded so interactive provider generators are not repeatedly treated as machine-retrievable. Exact generated code/targets still require deployed review before any catalog change."
+    note:"Provider-generated target staging only. Family-level permission evidence never promotes a source. Extraction blockers are recorded so interactive provider generators are not repeatedly treated as machine-retrievable. Exact image targets receive automated fetch/refresh/attribution verification first; interactive widgets/players still require deployed human rendering review before any catalog change."
   };
 }
