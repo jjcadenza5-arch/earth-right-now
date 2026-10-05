@@ -4617,5 +4617,35 @@
     "searchSupplemental": true,
     "rightsBasis": "First-party Villa Taina live-webcam page; link-only.",
     "freshnessEvidence": "Villa Taina currently promotes its Cabarete webcam as a real-time/current Wind, Waves & Weather view and featured it again in September 2026 site content."
+  },
+  {
+    "id": "seychelles-beau-vallon-koek-live",
+    "placeId": "seychelles-beau-vallon",
+    "title": "Beau Vallon — Mahé",
+    "provider": "KOEK Seychelles",
+    "country": "Seychelles",
+    "region": "Mahé / Beau Vallon",
+    "categories": [
+      "Beaches & Water",
+      "Islands",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://koek.sc/livecam",
+    "attribution": "KOEK Seychelles",
+    "checkedAt": "2026-10-05T19:10:00Z",
+    "lastSuccessfulCheck": "2026-10-05T19:10:00Z",
+    "quality": 97,
+    "freshness": 99,
+    "moment": 99,
+    "story": "Active 4K live view across Beau Vallon Bay on Mahé, Seychelles.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "Current Seychelles travel/booking platform live-camera page; link-only.",
+    "freshnessEvidence": "KOEK currently marks the Beau Vallon stream Active, describes it as 24/7 and publishes recent snapshots."
   }
 ]
