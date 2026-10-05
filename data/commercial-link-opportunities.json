@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T13:50:00Z",
+  "generatedAt": "2026-10-05T14:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3722,6 +3722,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/es-AR/Oregon-tours/Nature-and-Wildlife/d5064-g9-c36",
       "publicInventoryEvidence": "Current Viator Oregon inventory includes Crater Lake National Park self-guided driving and audio tours.",
       "nextAction": "Generate one owner-side Crater Lake Viator tracked destination/search link only if the current inventory remains useful; keep it clearly downstream from Earth discovery."
+    },
+    {
+      "id": "viator-vanuatu-tanna-yasur",
+      "destination": "Tanna Island / Mount Yasur, Vanuatu",
+      "placeIds": [
+        "vanuatu-yasur-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Vanuatu government current camera for Mount Yasur, and Viator has current Mount Yasur / Tanna Island guided-tour inventory. Commercial utility remains downstream from Earth discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Tanna-Island/Mt-Yasur-Volcano-Afternoon-Guided-Tour-Tanna-Island/d25079-209502P3",
+      "publicInventoryEvidence": "Current Viator inventory includes guided Mount Yasur volcano tours on Tanna Island.",
+      "nextAction": "Generate one owner-side Tanna Island / Mount Yasur Viator tracked destination or product link and manually verify it before public activation."
     }
   ]
 }
