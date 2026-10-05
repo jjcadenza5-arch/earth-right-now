@@ -3,8 +3,10 @@ import {assessCurrentImageProbe} from "../src/provider-current-image-verificatio
 
 const sourcesPath=new URL("../data/sources.json",import.meta.url);
 const targetsPath=new URL("../data/provider-generated-targets.json",import.meta.url);
+const observationsPath=new URL("../data/current-image-pilot-observations.json",import.meta.url);
 const rows=JSON.parse(await readFile(sourcesPath,"utf8"));
 const targets=JSON.parse(await readFile(targetsPath,"utf8"));
+const observationLedger=JSON.parse(await readFile(observationsPath,"utf8"));
 const pilotIds=new Set(["yellowstone-biscuit-basin-current-image","nz-ruapehu-current-image"]);
 const pilotTargets=targets.filter(t=>pilotIds.has(t.sourceId));
 if(pilotTargets.length!==2)throw new Error("Expected exactly two controlled current-image pilot targets");
@@ -31,5 +33,16 @@ for(const t of pilotTargets){
  renewed.push({id:source.id,checkedAt:stamp,evidenceTimestamp:probe.evidenceTimestamp,evidenceAgeMinutes:probe.evidenceAgeMinutes});
 }
 if(blocked.length)throw new Error("Pilot renewal blocked: "+JSON.stringify(blocked));
+const stamp=now.toISOString(),date=stamp.slice(0,10),event=process.env.GITHUB_EVENT_NAME||"local";
+observationLedger.observations=Array.isArray(observationLedger.observations)?observationLedger.observations:[];
+observationLedger.observations.push({
+  observedAt:stamp,
+  utcDate:date,
+  event,
+  state:"RENEWED",
+  items:renewed.map(x=>({id:x.id,evidenceTimestamp:x.evidenceTimestamp,evidenceAgeMinutes:x.evidenceAgeMinutes}))
+});
+observationLedger.observations=observationLedger.observations.slice(-30);
 await writeFile(sourcesPath,JSON.stringify(rows)+"\n","utf8");
-console.log(JSON.stringify({state:"RENEWED",renewed,blocked:[],safety:{allowedSourceIds:[...pilotIds],permissionMutationAllowed:false,playbackMutationAllowed:false,rankingMutationAllowed:false}},null,2));
+await writeFile(observationsPath,JSON.stringify(observationLedger,null,2)+"\n","utf8");
+console.log(JSON.stringify({state:"RENEWED",renewed,blocked:[],observation:{utcDate:date,event,total:observationLedger.observations.length},safety:{allowedSourceIds:[...pilotIds],permissionMutationAllowed:false,playbackMutationAllowed:false,rankingMutationAllowed:false}},null,2));
