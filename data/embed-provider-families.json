@@ -2400,5 +2400,73 @@
     "discoveryProviderAliases": [
       "VisitDenmark"
     ]
+  },
+  {
+    "id": "ovsicori-volcano-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "OVSICORI-UNA",
+    "familyLabel": "OVSICORI-UNA Costa Rica volcano webcam network",
+    "researchUrl": "https://www.ovsicori.una.ac.cr/index.php/camaras",
+    "termsUrl": "https://www.ovsicori.una.ac.cr/",
+    "verifiedAt": "2026-10-05T02:05:00Z",
+    "permissionEvidence": "OVSICORI-UNA publishes near-real-time volcano webcam imagery and identifies itself as operator of the monitoring cameras. The reviewed public pages explain the camera operation and refresh behavior but do not provide a third-party commercial image reuse or embed license. ERN therefore keeps the camera pages LINK_ONLY until explicit reuse permission is documented.",
+    "permissionStatus": "PUBLIC_NEAR_REALTIME_WEBCAMS_NO_THIRD_PARTY_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_CAMERA_REUSE_TERMS",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_OVSICORI_UNA_PUBLISHES_OR_GRANTS_EXPLICIT_CAMERA_IMAGE_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "ovsicori.una.ac.cr",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:05:00Z",
+    "communityGuidelinesUrl": "https://www.ovsicori.una.ac.cr/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.ovsicori.una.ac.cr/index.php/camaras",
+      "https://www.ovsicori.una.ac.cr/index.php/vulcanologia/camara-volcanes-2/rincon-de-la-vieja-sensoria2",
+      "https://www.ovsicori.una.ac.cr/"
+    ],
+    "discoveryProviderAliases": [
+      "OVSICORI-UNA",
+      "OVSICORI",
+      "Universidad Nacional Costa Rica"
+    ]
+  },
+  {
+    "id": "krakow-city-camera-pages",
+    "status": "RESEARCH_ONLY",
+    "provider": "City of Kraków",
+    "familyLabel": "City of Kraków municipal camera/current-image pages",
+    "researchUrl": "https://krakow.pl/",
+    "termsUrl": "https://bip.krakow.pl/",
+    "verifiedAt": "2026-10-05T02:05:00Z",
+    "permissionEvidence": "Kraków publishes municipal current-camera pages and also has a public-sector-information reuse framework. The reviewed city reuse material shows that reuse conditions can vary by item and may require source attribution or additional consent, especially for photographs. No camera-specific commercial reuse license was confirmed for the live/current camera assets. ERN therefore keeps the camera pages LINK_ONLY pending an exact reusable-license basis.",
+    "permissionStatus": "PUBLIC_SECTOR_REUSE_FRAMEWORK_EXISTS_CAMERA_SPECIFIC_LICENSE_UNRESOLVED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXACT_CAMERA_REUSE_BASIS",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_CAMERA_SPECIFIC_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_CITY_OF_KRAKOW_PUBLISHES_EXPLICIT_REUSE_TERMS_FOR_THE_SPECIFIC_CAMERA_IMAGES",
+    "networkFamily": "krakow.pl",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:05:00Z",
+    "communityGuidelinesUrl": "https://bip.krakow.pl/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "CAMERA_SPECIFIC_PUBLIC_SECTOR_REUSE_TERMS_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://krakow.pl/250165,artykul,rynek-glowny--z-palacu-krzysztofory-.html",
+      "https://www.krakow.pl/start/1849,artykul,kamery_-_wawel.html",
+      "https://bip.krakow.pl/"
+    ],
+    "discoveryProviderAliases": [
+      "City of Kraków",
+      "Gmina Miejska Kraków",
+      "Miasto Kraków"
+    ]
   }
 ]
