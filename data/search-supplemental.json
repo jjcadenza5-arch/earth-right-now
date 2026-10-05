@@ -4769,5 +4769,35 @@
     "searchSupplemental": true,
     "rightsBasis": "First-party reserve/lodge live-webcam page; link-only.",
     "freshnessEvidence": "Kambaku currently presents a Live Webcam showing wildlife around the lodge waterhole."
+  },
+  {
+    "id": "south-africa-camps-bay-pod-live",
+    "placeId": "south-africa-camps-bay",
+    "title": "Cape Town — Camps Bay Live Coast",
+    "provider": "POD Camps Bay / Oyster Collection",
+    "country": "South Africa",
+    "region": "Cape Town / Camps Bay",
+    "categories": [
+      "Beaches & Water",
+      "Cities & Harbours",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.oystercollection.co.za/pod-camps-bay-boutique-hotel/webcam/",
+    "attribution": "POD Camps Bay / Oyster Collection",
+    "checkedAt": "2026-10-05T21:10:00Z",
+    "lastSuccessfulCheck": "2026-10-05T21:10:00Z",
+    "quality": 98,
+    "freshness": 99,
+    "moment": 99,
+    "story": "First-party live coastal stream from POD Camps Bay in Cape Town.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "First-party hotel webcam page; link-only.",
+    "freshnessEvidence": "POD Camps Bay currently describes the view as a Live Webcam and live stream from the coast."
   }
 ]
