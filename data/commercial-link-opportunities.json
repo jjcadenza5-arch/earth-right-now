@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T14:12:00Z",
+  "generatedAt": "2026-10-05T14:16:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3632,6 +3632,36 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Luzon-attractions/Bicol/d26182-a23019",
       "publicInventoryEvidence": "Current Viator Bicol inventory includes multi-city Albay-Sorsogon tours with Lake Bulusan and other Sorsogon attractions.",
       "nextAction": "Generate one owner-side Sorsogon / Bulusan-region Viator tracked destination/search link and manually verify it; public copy must not imply direct Bulusan crater access."
+    },
+    {
+      "id": "viator-etna-sicily",
+      "destination": "Mount Etna / Sicily",
+      "placeIds": [
+        "italy-mount-etna"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official INGV current Etna surveillance surface, and Viator currently has extensive Mount Etna guided hiking, 4WD and wine-tour inventory. This is a strong current-conditions-to-visit planning bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Catania/Etna-trekking-and-wine-tasting/d22664-266409P5",
+      "publicInventoryEvidence": "Current Viator inventory includes multiple Mount Etna guided hikes, jeep/4WD tours, cable-car experiences and wine-focused excursions.",
+      "nextAction": "Generate one owner-side Mount Etna / Sicily Viator tracked destination or product link and manually verify it before public activation; preserve current safety and access restrictions."
+    },
+    {
+      "id": "viator-stromboli-aeolian",
+      "destination": "Stromboli / Aeolian Islands",
+      "placeIds": [
+        "italy-stromboli-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official INGV current Stromboli surveillance surface, and Viator has active Aeolian Islands / Stromboli boat and volcano-viewing inventory. Keep trip planning downstream from monitoring and preserve official access restrictions.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Sicily-attractions/Stromboli/d205-a11267",
+      "publicInventoryEvidence": "Current Viator inventory includes Stromboli and Aeolian Islands excursions, including boat trips and volcano-viewing experiences.",
+      "nextAction": "Generate one owner-side Stromboli / Aeolian Islands Viator tracked destination/search link and manually verify it before public activation; public wording must not imply unrestricted summit access."
     }
   ]
 }
