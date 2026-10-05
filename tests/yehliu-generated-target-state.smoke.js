@@ -1,0 +1,11 @@
+import fs from "node:fs";import assert from "node:assert/strict";import {providerGeneratedTargetStatus} from "../src/provider-generated-targets.js";
+const rows=JSON.parse(fs.readFileSync("data/provider-generated-targets.json","utf8"));
+const report=providerGeneratedTargetStatus(rows);
+const y=report.items.find(x=>x.id==="north-coast-yehliu-youtube-player");
+assert.ok(y);
+assert.equal(y.state,"HUMAN_PLAYBACK_CONFIRMED_PENDING_EDITORIAL");
+assert.equal(y.reviewOutcome,"HUMAN_PLAYBACK_CONFIRMED");
+assert.equal(y.nextAction,"EDITORIAL_TRUTH_PERMISSION_AND_CATALOG_REVIEW");
+assert.equal(y.promotionAllowed,false);
+assert.equal(y.catalogMutationAllowed,false);
+console.log("Yehliu generated target remains human-confirmed but editorial-pending and non-promotional");
