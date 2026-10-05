@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:48:00Z",
+  "generatedAt": "2026-10-05T13:52:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1979,28 +1979,28 @@
       "story": "Official near-real-time Mount St. Helens research-camera view from Johnston Ridge Observatory."
     },
     "alaska-pavlof-current-image": {
-      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 showed multiple Pavlof cameras with image timestamps from Oct. 5, 2026.",
-      "rightsBasis": "Official AVO/USGS monitoring surface. ERN remains Search/Explore LINK_ONLY and does not infer embed permission.",
-      "coordinateSourceUrl": "https://avo.alaska.edu/volcano/312030",
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 shows timestamped 2026-10-05 imagery for Pavlof.",
+      "rightsBasis": "Official AVO/USGS webcam network. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
       "story": "Official current monitoring views of Pavlof Volcano."
     },
     "alaska-makushin-current-image": {
-      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed Makushin MREP with a current Oct. 5, 2026 image timestamp.",
-      "rightsBasis": "Official AVO/USGS webcam index. ERN remains Search/Explore LINK_ONLY.",
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 shows timestamped 2026-10-05 imagery for Makushin.",
+      "rightsBasis": "Official AVO/USGS webcam network. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
       "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
       "story": "Official current monitoring view of Makushin Volcano."
     },
     "alaska-veniaminof-current-image": {
-      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed multiple Veniaminof cameras with current Oct. 5, 2026 image timestamps.",
-      "rightsBasis": "Official AVO/USGS webcam index. ERN remains Search/Explore LINK_ONLY.",
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 shows timestamped 2026-10-05 imagery for Veniaminof.",
+      "rightsBasis": "Official AVO/USGS webcam network. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
       "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
       "story": "Official current monitoring views of Veniaminof Volcano."
     },
     "alaska-okmok-current-image": {
-      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed Okmok cameras with current Oct. 5, 2026 image timestamps.",
-      "rightsBasis": "Official AVO/USGS webcam index. ERN remains Search/Explore LINK_ONLY.",
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 shows timestamped 2026-10-05 imagery for Okmok.",
+      "rightsBasis": "Official AVO/USGS webcam network. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
       "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
-      "story": "Official current monitoring views of Okmok caldera."
+      "story": "Official current monitoring views of Okmok Volcano."
     },
     "alaska-katmai-current-image": {
       "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed Katmai cameras with current Oct. 5, 2026 image timestamps.",
@@ -2009,22 +2009,22 @@
       "story": "Official current monitoring views of the Katmai volcanic area."
     },
     "alaska-akutan-current-image": {
-      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 lists multiple Akutan cameras with current Oct 5, 2026 UTC timestamps.",
-      "rightsBasis": "Official AVO monitoring network. ERN remains LINK_ONLY and does not infer embed/restream permission.",
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 shows timestamped 2026-10-05 imagery for Akutan.",
+      "rightsBasis": "Official AVO/USGS webcam network. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
       "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
-      "story": "Official current Akutan volcano monitoring views."
+      "story": "Official current monitoring views of Akutan Volcano."
     },
     "alaska-cleveland-current-image": {
-      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 lists multiple Cleveland cameras with current Oct 5, 2026 UTC timestamps.",
-      "rightsBasis": "Official AVO monitoring network. ERN remains LINK_ONLY and does not infer embed/restream permission.",
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 shows timestamped 2026-10-05 imagery for Cleveland.",
+      "rightsBasis": "Official AVO/USGS webcam network. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
       "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
-      "story": "Official current Cleveland volcano monitoring views."
+      "story": "Official current visible/infrared monitoring views of Cleveland Volcano."
     },
     "alaska-little-sitkin-current-image": {
-      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed Little Sitkin LSPA with an Oct. 5, 2026 timestamp.",
-      "rightsBasis": "Official Alaska Volcano Observatory / USGS webcam index. ERN remains Search/Explore LINK_ONLY and does not infer embed or media-reuse permission.",
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 shows timestamped 2026-10-05 imagery for Little Sitkin.",
+      "rightsBasis": "Official AVO/USGS webcam network. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
       "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
-      "story": "Official current monitoring view of Little Sitkin."
+      "story": "Official current monitoring view of Little Sitkin Volcano."
     },
     "alaska-spurr-current-image": {
       "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed multiple Mount Spurr and regional cameras with Oct. 5, 2026 timestamps.",
@@ -2039,10 +2039,10 @@
       "story": "Official current monitoring view of Tanaga."
     },
     "alaska-aniakchak-current-image": {
-      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed Aniakchak ANNQ and Port Heiden views with Oct. 5, 2026 timestamps.",
-      "rightsBasis": "Official Alaska Volcano Observatory / USGS webcam index. ERN remains Search/Explore LINK_ONLY and does not infer embed or media-reuse permission.",
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 shows timestamped 2026-10-05 imagery for Aniakchak.",
+      "rightsBasis": "Official AVO/USGS webcam network. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
       "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
-      "story": "Official current monitoring view of Aniakchak."
+      "story": "Official current monitoring views of Aniakchak."
     },
     "alaska-redoubt-current-image": {
       "freshnessEvidence": "Alaska Volcano Observatory webcam page checked 2026-10-05 publishes current timestamped Redoubt imagery.",
@@ -2067,6 +2067,12 @@
       "rightsBasis": "Official USGS/CVO webcam page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
       "coordinateSourceUrl": "https://www.usgs.gov/observatories/cvo/mount-st-helens-webcam",
       "story": "Official current five-minute monitoring view of Mount St. Helens."
+    },
+    "alaska-korovin-current-image": {
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 shows timestamped 2026-10-05 imagery for Korovin / Atka volcanic complex.",
+      "rightsBasis": "Official AVO/USGS webcam network. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
+      "story": "Official current monitoring view of Korovin in the Atka volcanic complex."
     }
   },
   "prague-petrin-tower": {
