@@ -1457,3 +1457,118 @@ Continued autonomously without expanding the two-source IMAGE_REFRESH pilot.
 
 #### Genuine next human gate
 The next action is one deployed human playback review of the Yehliu exact YouTube player from the ERN operator review page. Do not change the public Yehliu source before this check. If playback is confirmed current/live, record human evidence first; only then evaluate truth-type and catalog transition separately.
+
+
+
+### Yehliu human evidence applied — external-live truth corrected — 2026-10-05
+Owner completed the deployed ERN operator-review human gate for the exact Yehliu provider-generated player.
+
+#### Human evidence packet
+- review batch: `7287d11ededefd73`
+- review origin: `https://earthrightnow.app/review/inside-ern.html`
+- target id: `north-coast-yehliu-youtube-player`
+- type: `generated`
+- outcome: `HUMAN_PLAYBACK_CONFIRMED`
+- observedAt: `2026-10-05T10:05:03.929Z`
+- official source page:
+  `https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007411`
+- exact reviewed player:
+  `https://www.youtube.com/embed/ZjuY4qKaj40`
+- packet preserved at:
+  `data/review-evidence/yehliu-generated-2026-10-05.json`
+
+#### Evidence-system extension
+- `generated` is now a first-class operator-review evidence type in the validation layer.
+- Generated evidence must use a known staged provider-generated target id.
+- Proposal processing now binds generated review evidence to both:
+  - exact staged official source page (`generatorUrl`);
+  - exact staged player/embed URL (`exactTargetUrl`).
+- Target mismatch fails closed with `EVIDENCE_TARGET_CHANGED`.
+- Confirmed generated playback produces:
+  `READY_TO_RECORD_HUMAN_PLAYBACK_PENDING_EDITORIAL_REVIEW`
+  and never authorizes automatic catalog writes or promotion.
+
+#### Staged target state
+Yehliu target now records:
+- `reviewedAt=2026-10-05T10:05:03.929Z`
+- `reviewOutcome=HUMAN_PLAYBACK_CONFIRMED`
+- `reviewEvidencePath=data/review-evidence/yehliu-generated-2026-10-05.json`
+- provider-generated status:
+  `HUMAN_PLAYBACK_CONFIRMED_PENDING_EDITORIAL`
+- next action:
+  `EDITORIAL_TRUTH_PERMISSION_AND_CATALOG_REVIEW`
+- `promotionAllowed=false`
+- `catalogMutationAllowed=false`
+- `automaticGenerationAllowed=false`
+
+This intermediate state is intentional. Human playback proof does not equal full permission/catalog approval.
+
+#### Public Yehliu truth correction
+Separate editorial review concluded that the public catalog's old `LIVE_IMAGE` label was no longer the most truthful description because deployed human review proved that the official government source page is serving a current/live YouTube player.
+
+The public source was therefore corrected narrowly to:
+- id: `taiwan-yehliu-live`
+- truth: **EXTERNAL_LIVE**
+- permission: **LINK_ONLY**
+- playback: **EXTERNAL**
+- sourceUrl:
+  `https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007411`
+- checkedAt / lastSuccessfulCheck:
+  `2026-10-05T10:05:03.929Z`
+- no `embedUrl`
+- no inside-ERN permission escalation.
+
+This is a truth correction, not an inside-ERN promotion.
+
+#### Evidence boundary
+`data/source-evidence.json` now records:
+- exact official source page;
+- exact reviewed player;
+- human playback outcome/time/batch/origin;
+- permission boundary:
+  public Yehliu remains `LINK_ONLY / EXTERNAL`;
+- player boundary:
+  preserve YouTube/provider branding and do not restream.
+
+Regression coverage now requires:
+- generated packets validate only against exact staged ids;
+- Yehliu exact target remains branded/non-promotional;
+- human-confirmed target state remains editorial-pending;
+- public Yehliu remains `EXTERNAL_LIVE / LINK_ONLY / EXTERNAL`;
+- no public Yehliu `embedUrl`;
+- source evidence retains the human playback proof and permission boundary.
+
+#### Latest validated operations state
+Operations packet `ern-operations-1313` confirms:
+- current-image pilot: `OBSERVING`
+- successful scheduled renewal dates: **0 / 2**
+- renewal overdue: **false**
+- next expected scheduled renewal:
+  `2026-10-06T00:37:00Z`
+- current-image targets: 8 total
+  - maintenance eligible: 2
+  - editorial review ready: 5
+  - blocked: 1
+- Watch Earth:
+  - `CURATED`
+  - 13 current shelf items
+  - 7 countries
+  - 8 providers
+  - shortfall 0
+  - balance `BALANCED`
+- Yehliu staged target:
+  `HUMAN_PLAYBACK_CONFIRMED_PENDING_EDITORIAL`
+  with no automatic promotion/catalog mutation.
+
+#### Validation
+- Operations for the public Yehliu truth correction: **SUCCESS**.
+- Final Pages run for the corrected test set at commit
+  `18124042a03597d84ba73f136f5c338738c8566e`: **SUCCESS**.
+- Hard performance budgets remain unchanged.
+- Two-source IMAGE_REFRESH pilot was not expanded.
+- Public generative ERN Guide remains OFF.
+- Public Now Moments uploads remain OFF.
+
+#### Next autonomous boundary
+No further owner action is required for Yehliu now.
+Do not embed Yehliu inside ERN merely because playback was confirmed. Any future transition from LINK_ONLY/EXTERNAL to EMBED_ALLOWED/EMBED must be a separate permission/platform/editorial decision with its own safeguards.
