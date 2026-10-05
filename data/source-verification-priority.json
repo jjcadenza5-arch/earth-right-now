@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:52:00Z",
-  "currentHealthyDistinctPlaces": 350,
+  "generatedAt": "2026-10-05T14:16:00Z",
+  "currentHealthyDistinctPlaces": 352,
   "targetHealthyDistinctPlaces": [
     350,
     400
   ],
   "remainingToMinimum": 0,
-  "remainingToStretch": 50,
+  "remainingToStretch": 48,
   "humanPlaybackQueueCount": 12,
   "topBatch": [
     {
@@ -176,6 +176,6 @@
     "watchEarthEligible": false,
     "labelingRequired": true
   },
-  "note": "350 searchable-place milestone reached using official current scientific/tourism/provider sources. Watch Earth remains in-ERN PLAY-only; external/link-only growth belongs in Search/Explore.",
+  "note": "350 milestone exceeded. Continue quality-first expansion using official/current sources; Watch Earth stays in-ERN PLAY-only and external/link-only sources stay in Search/Explore.",
   "remainingHumanPlaybackRequired": 12
 }
