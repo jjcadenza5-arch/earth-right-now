@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T17:50:00Z",
+  "generatedAt": "2026-10-05T18:05:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4198,6 +4198,48 @@
       "evidence": "The portal labels the camera Câmera ao Vivo and publishes a current update time alongside real-time river measurements.",
       "verifiedAt": "2026-10-05T17:50:00Z",
       "promotedAt": "2026-10-05T17:50:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "chile-rapa-nui-mataveri-current",
+      "title": "Rapa Nui — Mataveri Current View",
+      "country": "Chile",
+      "region": "Rapa Nui / Easter Island",
+      "provider": "Dirección General de Aeronáutica Civil de Chile (DGAC)",
+      "sourcePage": "https://aipchile.dgac.gob.cl/camara/index.html",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "DGAC's current aerodrome camera index lists Mataveri (SCIP) with an operational west-facing camera.",
+      "verifiedAt": "2026-10-05T18:05:00Z",
+      "promotedAt": "2026-10-05T18:05:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "chile-antarctica-rodolfo-marsh-current",
+      "title": "Chilean Antarctica — Teniente Rodolfo Marsh",
+      "country": "Antarctica",
+      "region": "King George Island / Chilean Antarctic Territory",
+      "provider": "Dirección General de Aeronáutica Civil de Chile (DGAC)",
+      "sourcePage": "https://aipchile.dgac.gob.cl/index.php/camara_ubicacion/show/designador/SCRM",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "DGAC currently lists two active cameras at SCRM with UTC image timestamps.",
+      "verifiedAt": "2026-10-05T18:05:00Z",
+      "promotedAt": "2026-10-05T18:05:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "chile-arica-chacalluta-current",
+      "title": "Arica — Chacalluta Current View",
+      "country": "Chile",
+      "region": "Arica y Parinacota",
+      "provider": "Dirección General de Aeronáutica Civil de Chile (DGAC)",
+      "sourcePage": "https://aipchile.dgac.gob.cl/camara/index.html",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "DGAC's current aerodrome camera index lists Chacalluta / Arica with operational southwest and north cameras.",
+      "verifiedAt": "2026-10-05T18:05:00Z",
+      "promotedAt": "2026-10-05T18:05:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
