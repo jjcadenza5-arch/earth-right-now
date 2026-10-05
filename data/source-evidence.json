@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:52:00Z",
+  "generatedAt": "2026-10-05T14:16:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2073,6 +2073,18 @@
       "rightsBasis": "Official AVO/USGS webcam network. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
       "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
       "story": "Official current monitoring view of Korovin in the Atka volcanic complex."
+    },
+    "italy-etna-ingv-current-image": {
+      "freshnessEvidence": "INGV Osservatorio Etneo Etna surveillance page checked 2026-10-05 exposes timestamped imagery from multiple volcanic surveillance stations.",
+      "rightsBasis": "Official INGV surveillance-camera page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://www.ct.ingv.it/sezioniesterne/webcam/WebcamEtna.php",
+      "story": "Official current volcano-surveillance views of Mount Etna."
+    },
+    "italy-stromboli-ingv-current-image": {
+      "freshnessEvidence": "INGV Stromboli webcam page checked 2026-10-05 exposes infrared, thermal and visible cameras and states automatic refresh every 180 seconds.",
+      "rightsBasis": "Official INGV surveillance-camera page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://sowebapp.ct.ingv.it/oldweb/stromboli/WEBCAM.ASP",
+      "story": "Official current visible and thermal surveillance views of Stromboli."
     }
   },
   "prague-petrin-tower": {
