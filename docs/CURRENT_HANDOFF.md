@@ -2844,3 +2844,13 @@ These are not considered broken merely because automated access was blocked; the
 - Added Viator Laikipia / Mpala as `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`; current Viator evidence supports Laikipia/Ol Pejeta conservation-safari inventory, but ERN must never imply that a tour directly enters Mpala unless exact inventory proves it.
 - No tracked link was fabricated or activated. No commercial factor changed source truth, health or Earth ranking.
 - Protected gates remain unchanged: Watch Earth in-ERN playback only; hard 575 KB lean-core ceiling; IMAGE_REFRESH untouched until natural renewal; public generative Guide OFF; public Now Moments media OFF; no automatic social posting/account creation; no paid ranking.
+
+
+### Searchable-source repair investigation — 2026-10-05
+- Operations run 1355 completed SUCCESS after the San Marino expansion. Searchable-source health now covers 398 eligible sources / 302 unique URLs; today's cohort checked 57 sources / 42 unique URLs: 50 reachable, 0 missing, 5 access-blocked and 2 temporary/network failures.
+- Bishkek Ala-Too Square and Too-Ashu Pass naturally escalated from WATCH to REPAIR after repeated network/server failures.
+- Both REPAIR items were independently investigated against the official KG Camera provider. Their public provider pages remain active and still describe current no-archive surveillance with about a 20-second delay.
+- Therefore no source deletion, replacement, health downgrade or truth change was justified. The repair disposition is KEEP SOURCE / preserve truth / recheck provider access behavior and the next rotating cohort.
+- The five repeated access-blocked sources remain REVIEW only and are not treated as broken.
+- Repair findings were recorded in data/provider-observations.json and data/source-maintenance-priority.json so the investigation is durable rather than repeated ad hoc.
+- Pages run 2514 completed SUCCESS for the current San Marino + commercial expansion release. All protected product and commercial-neutrality gates remain unchanged.
