@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:55:00Z",
+  "generatedAt": "2026-10-05T13:46:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1973,10 +1973,10 @@
       "story": "Official live seismic and CCTV monitoring surface for Mount Merapi."
     },
     "us-mount-st-helens-current-image": {
-      "freshnessEvidence": "USGS Cascades Volcano Observatory webcam page checked 2026-10-05 states that the Johnston Ridge research-camera image refreshes every five minutes.",
-      "rightsBasis": "Official USGS webcam page. ERN remains Search/Explore LINK_ONLY and does not infer permission to embed the camera.",
+      "freshnessEvidence": "USGS Johnston Ridge Observatory webcam page checked 2026-10-05 states the Mount St. Helens camera image refreshes every five minutes.",
+      "rightsBasis": "USGS marks the webcam media Public Domain. This tranche still keeps ERN treatment LINK_ONLY until a separate in-ERN image-refresh implementation is intentionally approved.",
       "coordinateSourceUrl": "https://www.usgs.gov/media/webcams/johnston-ridge-observatory-mount-st-helens",
-      "story": "Official current crater view of Mount St. Helens from Johnston Ridge."
+      "story": "Official near-real-time Mount St. Helens research-camera view from Johnston Ridge Observatory."
     },
     "alaska-pavlof-current-image": {
       "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 showed multiple Pavlof cameras with image timestamps from Oct. 5, 2026.",
@@ -2043,6 +2043,18 @@
       "rightsBasis": "Official Alaska Volcano Observatory / USGS webcam index. ERN remains Search/Explore LINK_ONLY and does not infer embed or media-reuse permission.",
       "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
       "story": "Official current monitoring view of Aniakchak."
+    },
+    "alaska-redoubt-current-image": {
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 shows multiple Redoubt cameras with current Oct 5, 2026 UTC timestamps.",
+      "rightsBasis": "Official AVO monitoring network. ERN remains LINK_ONLY and does not infer permission to embed or restream AVO media.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
+      "story": "Official current Redoubt volcano monitoring views around Cook Inlet."
+    },
+    "alaska-iliamna-current-image": {
+      "freshnessEvidence": "Alaska Volcano Observatory Iliamna page checked 2026-10-05 lists Iliamna webcam stations and recent imagery.",
+      "rightsBasis": "Official AVO monitoring network. ERN remains LINK_ONLY and does not infer permission to embed or restream AVO media.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/volcano/iliamna",
+      "story": "Official current Iliamna volcano monitoring views."
     }
   },
   "prague-petrin-tower": {
