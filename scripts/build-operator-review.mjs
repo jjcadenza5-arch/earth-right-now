@@ -9,6 +9,7 @@ const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
 let observations=[];try{observations=JSON.parse(fs.readFileSync("data/provider-observations.json","utf8"))}catch{}
 const research=JSON.parse(fs.readFileSync("data/embed-research-candidates.json","utf8"));
 const providerFamilies=JSON.parse(fs.readFileSync("data/embed-provider-families.json","utf8"));
+const providerGeneratedTargets=JSON.parse(fs.readFileSync("data/provider-generated-targets.json","utf8"));
 const familyResearch=providerFamilyResearchStatus(providerFamilies,{now:new Date()});
 const researchQueue=researchReviewQueue(research,{providerFamilyReport:familyResearch,primaryCount:4});
 const reviewQueue=operatorReviewQueue(sources,observations,{now:new Date(),limit:10,targetReady:5});
@@ -17,13 +18,14 @@ const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>
 const safe=u=>{try{const x=new URL(String(u||""));return /^https:$/.test(x.protocol)?x.toString():""}catch{return""}};
 const card=(x,type)=>{
  const rawEmbed=x.embedUrl||x.candidateEmbedUrl;
- const embed=(type==="research"?allowedResearchEmbedUrl(rawEmbed):allowedEmbedUrl(rawEmbed))||"";
+ const researchLike=type==="research"||type==="generated";
+ const embed=(researchLike?allowedResearchEmbedUrl(rawEmbed):allowedEmbedUrl(rawEmbed))||"";
  const source=safe(x.sourceUrl);
  const sandbox=embed?embedSandbox({embedUrl:embed}):"";
- const status=type==="research"?"Research-only · technical review required":[x.reason,x.action,Number.isFinite(x.remainingHours)?`${x.remainingHours}h remaining`:null].filter(Boolean).join(" · ");
+ const status=type==="generated"?"Exact provider target · deployed human playback required":type==="research"?"Research-only · technical review required":[x.reason,x.action,Number.isFinite(x.remainingHours)?`${x.remainingHours}h remaining`:null].filter(Boolean).join(" · ");
  const attribution=(type==="research"&&String(x.permissionReview||"").includes("ATTRIBUTION"))?`<p class="required-attribution">Source: <a href="https://webcam-lapalma.de/" target="_blank" rel="noopener noreferrer">webcam-lapalma.de</a></p>`:"";
  return `<article class="card" data-type="${esc(type)}" data-id="${esc(x.id)}" data-title="${esc(x.title||x.id)}" data-provider="${esc(x.provider||"Unknown provider")}" data-source="${esc(source)}" data-embed="${esc(embed)}">
-   <div class="meta"><span>${esc(type==="research"?"SECOND PROVIDER":x.reviewMode==="RENEW"?"RENEW LIVE HERE":"RESTORE INSIDE ERN")}</span><strong>${esc(x.title||x.id)}</strong><small>${esc(x.provider||"Unknown provider")} · ${esc(status)}</small></div>
+   <div class="meta"><span>${esc(type==="generated"?"EXACT PROVIDER TARGET":type==="research"?"SECOND PROVIDER":x.reviewMode==="RENEW"?"RENEW LIVE HERE":"RESTORE INSIDE ERN")}</span><strong>${esc(x.title||x.id)}</strong><small>${esc(x.provider||"Unknown provider")} · ${esc(status)}</small></div>
    <div class="stage" data-embed="${esc(embed)}" data-sandbox="${esc(sandbox)}"><div class="placeholder">Not loaded. Human playback proof is still required.</div></div>${attribution}
    <div class="actions"><button class="load" type="button" ${embed?"":"disabled"}>Load candidate</button>${source?`<a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Open provider ↗</a>`:""}</div>
    <div class="review-actions" aria-label="Record local human review"><button type="button" data-outcome="HUMAN_PLAYBACK_CONFIRMED" disabled>Playing & current</button><button type="button" data-outcome="PLAYBACK_FAILED" disabled>Failed / not playing</button><button type="button" data-outcome="INCONCLUSIVE" disabled>Inconclusive</button></div>
@@ -39,11 +41,20 @@ const researchPrimary=researchQueue.primary.map(x=>({...x,title:x.provider+" —
 const researchAlternates=researchQueue.alternates.map(x=>({...x,title:x.provider+" — "+x.id}));
 const researchFallbacks=researchAlternates.filter(x=>x.requiredHumanAction!=="WAIT_FOR_TARGET_OR_PROVIDER_CHANGE");
 const researchDeferred=researchAlternates.filter(x=>x.requiredHumanAction==="WAIT_FOR_TARGET_OR_PROVIDER_CHANGE");
+const generatedReview=providerGeneratedTargets.filter(x=>x.integrationKind==="PROVIDER_GENERATED_WIDGET"&&x.exactTargetUrl&&!x.reviewedAt&&!x.reviewOutcome&&x.promotionAllowed===false&&x.catalogMutationAllowed===false&&x.automaticGenerationAllowed===false).map(x=>({
+ ...x,
+ title:x.provider+" — "+x.id,
+ sourceUrl:x.generatorUrl,
+ candidateEmbedUrl:x.exactTargetUrl,
+ playbackReview:"HUMAN_PLAYBACK_REQUIRED",
+ reviewMode:"GENERATED_TARGET"
+}));
 const generatedAt=new Date().toISOString();
 const reviewBatchMaterial=[
  ...insideReview.map(x=>["restore",x.id,x.reviewMode||"",x.playbackVerifiedAt||"",x.embedUrl||""].join("|")),
  ...evergreenRenewals.map(x=>["renew-anytime",x.id,x.reviewMode||"",x.playbackVerifiedAt||"",x.embedUrl||""].join("|")),
- ...[...researchPrimary,...researchFallbacks].map(x=>["research",x.id,x.playbackReview||"",x.lastHumanReviewAt||"",x.candidateEmbedUrl||""].join("|"))
+ ...[...researchPrimary,...researchFallbacks].map(x=>["research",x.id,x.playbackReview||"",x.lastHumanReviewAt||"",x.candidateEmbedUrl||""].join("|")),
+ ...generatedReview.map(x=>["generated",x.id,x.reviewMode||"",x.reviewedAt||"",x.candidateEmbedUrl||""].join("|"))
 ].sort().join("\n");
 const reviewBatch=createHash("sha256").update(reviewBatchMaterial).digest("hex").slice(0,16);
 const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -53,6 +64,7 @@ const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta nam
 <div class="warning"><strong>Unlinked / noindex review surface.</strong> This page is not authentication-protected. All candidates are public sources, but nothing here is visitor-approved. Human playback confirmation and source/provider review remain mandatory before promotion.<br><br><strong>This review is batch-isolated.</strong> Evidence from an older review batch is not reused here. Primary human checks currently shown: ${insideReview.length+researchPrimary.length}.</div>\n<div id="staleWarning" class="stale" role="alert"><strong>This review page is stale.</strong> A newer ERN review batch is deployed. Reload this page before recording more evidence.</div>
 <div class="evidence"><strong>Local review evidence</strong><span id="reviewCount">0 observations</span><span class="kicker">Batch ${esc(reviewBatch)}</span><button id="copyEvidence" type="button">Copy JSON</button><button id="downloadEvidence" type="button">Download JSON</button><button id="clearEvidence" type="button">Clear local</button><small id="evidenceStatus">Stored only in this browser for this exact review batch. Nothing is uploaded or written to ERN.</small></div>
 <section><h2>Renew / restore inside ERN</h2><p>Primary batch: ${reviewQueue.renewalRequiredCount??reviewQueue.renewalCount??0} required renewal + ${reviewQueue.recommendedRestorationCount||0} restoration review${(reviewQueue.recommendedRestorationCount||0)===1?"":"s"} to protect current proof and close the ${reviewQueue.readyShortfall||0}-window shortfall.</p><div class="grid">${insideReview.length?insideReview.map(x=>card(x,"restore")).join(""):'<p class="empty">No renewal or restoration candidates right now.</p>'}</div>${evergreenRenewals.length?`<details><summary>Renew verified LIVE HERE windows anytime (${evergreenRenewals.length})</summary><p class="note">These currently verified windows stay available for manual renewal even if their proof becomes due after this page was deployed. Recording evidence here is still local-only and never renews the catalog automatically.</p><div class="grid">${evergreenRenewals.map(x=>card(x,"restore")).join("")}</div></details>`:""}${insideBacklog.length?`<details><summary>Additional restoration backlog (${insideBacklog.length})</summary><ul class="backlog">${insideBacklog.map(x=>`<li>${esc(x.title||x.id)} — ${esc(x.reason||x.action||"REVIEW")}</li>`).join("")}</ul></details>`:""}</section>
+<section><h2>Exact provider-generated targets</h2><p>These exact player/widget targets were resolved from official provider surfaces. Loading or playback confirmation is review evidence only; it never changes the public catalog automatically.</p><div class="grid">${generatedReview.length?generatedReview.map(x=>card(x,"generated")).join(""):'<p class="empty">No exact provider-generated playback targets currently await review.</p>'}</div></section>
 <section><h2>Second-provider research</h2><p>${researchQueue.exhausted?"All staged second-provider candidates have failed deployed playback. Human review is paused until ERN stages a genuinely new provider family or materially changed target.":"Review the staged provider-family candidates below. Up to four independent candidates may be tested in one session; each observation remains separate and technical loading never approves permission or playback."}</p>${researchPrimary.length>1?`<div class="batch-tools"><button id="loadResearchBatch" type="button">Load all ${researchPrimary.length} research candidates</button><small>Loading does not record evidence. Review and mark every stream separately.</small></div>`:""}<div class="grid">${researchPrimary.length?researchPrimary.map(x=>card(x,"research")).join(""):'<p class="empty">No active human playback candidate right now.</p>'}</div>${researchFallbacks.length?`<details><summary>Additional provider tests (${researchFallbacks.length})</summary><p class="note">These unfailed alternates are loadable here so a blocked primary does not require another code/deploy cycle. Testing an alternate still creates only local human-review evidence and never grants permission or promotion.</p><div class="grid">${researchFallbacks.map(x=>card(x,"research")).join("")}</div></details>`:""}${researchDeferred.length?`<details><summary>Previously failed / deferred research (${researchDeferred.length})</summary><p class="note">These targets already have failed deployed human-playback evidence. They are retained for history and must not be casually retested until the target/provider changes or an explicit retest is justified.</p><ul class="backlog">${researchDeferred.map(x=>`<li>${esc(x.title||x.id)} — ${esc(x.requiredHumanAction||"DEFERRED")}</li>`).join("")}</ul></details>`:""}</section>
 <p class="foot">Generated ${esc(generatedAt)}. This page never writes to ERN data and cannot mark a source healthy, live, or approved.</p>
 </main><script>
@@ -112,6 +124,7 @@ fs.writeFileSync("review/current.json",JSON.stringify({
  primaryInside:insideReview.map(x=>x.id),
  renewableInside:evergreenRenewals.map(x=>x.id),
  researchPrimary:researchPrimary.map(x=>x.id),
- researchFallbacks:researchFallbacks.map(x=>x.id)
+ researchFallbacks:researchFallbacks.map(x=>x.id),
+ generatedReview:generatedReview.map(x=>x.id)
 },null,2)+"\n");
-console.log(JSON.stringify({generated:true,reviewBatch,researchState:researchQueue.state,researchNextAction:researchQueue.nextAction,ready:reviewQueue.ready,targetReady:reviewQueue.targetReady,readyShortfall:reviewQueue.readyShortfall,recommendedRestorationCount:reviewQueue.recommendedRestorationCount,renewal:reviewQueue.renewal.map(x=>x.id),primary:insideReview.map(x=>x.id),renewable:evergreenRenewals.map(x=>x.id),backlog:insideBacklog.map(x=>x.id),researchPrimary:researchPrimary.map(x=>x.id),researchFallbacks:researchFallbacks.map(x=>x.id),researchDeferred:researchDeferred.map(x=>x.id),localEvidence:true},null,2));
+console.log(JSON.stringify({generated:true,reviewBatch,researchState:researchQueue.state,researchNextAction:researchQueue.nextAction,ready:reviewQueue.ready,targetReady:reviewQueue.targetReady,readyShortfall:reviewQueue.readyShortfall,recommendedRestorationCount:reviewQueue.recommendedRestorationCount,renewal:reviewQueue.renewal.map(x=>x.id),primary:insideReview.map(x=>x.id),renewable:evergreenRenewals.map(x=>x.id),backlog:insideBacklog.map(x=>x.id),researchPrimary:researchPrimary.map(x=>x.id),researchFallbacks:researchFallbacks.map(x=>x.id),researchDeferred:researchDeferred.map(x=>x.id),generatedReview:generatedReview.map(x=>x.id),localEvidence:true},null,2));
