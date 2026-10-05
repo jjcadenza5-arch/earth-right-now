@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:52:00Z",
+  "generatedAt": "2026-10-05T13:48:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2045,22 +2045,28 @@
       "story": "Official current monitoring view of Aniakchak."
     },
     "alaska-redoubt-current-image": {
-      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 shows multiple Redoubt cameras with current Oct 5, 2026 UTC timestamps.",
-      "rightsBasis": "Official AVO monitoring network. ERN remains LINK_ONLY and does not infer permission to embed or restream AVO media.",
-      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
-      "story": "Official current Redoubt volcano monitoring views around Cook Inlet."
+      "freshnessEvidence": "Alaska Volcano Observatory webcam page checked 2026-10-05 publishes current timestamped Redoubt imagery.",
+      "rightsBasis": "Official AVO/USGS webcam page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/Redoubt.php",
+      "story": "Official current monitoring view of Redoubt Volcano."
     },
     "alaska-iliamna-current-image": {
-      "freshnessEvidence": "Alaska Volcano Observatory Iliamna page checked 2026-10-05 lists Iliamna webcam stations and recent imagery.",
-      "rightsBasis": "Official AVO monitoring network. ERN remains LINK_ONLY and does not infer permission to embed or restream AVO media.",
-      "coordinateSourceUrl": "https://avo.alaska.edu/volcano/iliamna",
-      "story": "Official current Iliamna volcano monitoring views."
+      "freshnessEvidence": "Alaska Volcano Observatory webcam page checked 2026-10-05 publishes current timestamped Iliamna imagery.",
+      "rightsBasis": "Official AVO/USGS webcam page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/Iliamna.php",
+      "story": "Official current monitoring view of Iliamna Volcano."
     },
     "alaska-semisopochnoi-current-image": {
       "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 lists Semisopochnoi cameras with current Oct 5, 2026 UTC timestamps.",
       "rightsBasis": "Official AVO monitoring network. ERN remains LINK_ONLY and does not infer embed/restream permission.",
       "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
       "story": "Official current Semisopochnoi volcanic-island monitoring views."
+    },
+    "washington-mount-st-helens-current-image": {
+      "freshnessEvidence": "USGS Cascades Volcano Observatory webcam page checked 2026-10-05 states the Mount St. Helens webcam refreshes every five minutes.",
+      "rightsBasis": "Official USGS/CVO webcam page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://www.usgs.gov/observatories/cvo/mount-st-helens-webcam",
+      "story": "Official current five-minute monitoring view of Mount St. Helens."
     }
   },
   "prague-petrin-tower": {
