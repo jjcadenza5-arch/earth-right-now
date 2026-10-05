@@ -6,10 +6,11 @@ if(!packetPath)throw new Error("usage: node scripts/review-evidence-proposals.mj
 
 const read=async p=>JSON.parse(await readFile(p,"utf8"));
 const optional=async p=>{if(!p||p==="-")return null;try{return await read(p)}catch(error){if(error?.code==="ENOENT")return null;throw error}};
-const [packet,sources,research,availability,researchPreflight]=await Promise.all([
+const [packet,sources,research,generated,availability,researchPreflight]=await Promise.all([
   read(packetPath),
   read(new URL("../data/sources.json",import.meta.url)),
   read(new URL("../data/embed-research-candidates.json",import.meta.url)),
+  read(new URL("../data/provider-generated-targets.json",import.meta.url)),
   optional(availabilityPath),
   optional(preflightPath)
 ]);
@@ -17,8 +18,10 @@ const [packet,sources,research,availability,researchPreflight]=await Promise.all
 console.log(JSON.stringify(reviewEvidenceProposals(packet,{
   knownSourceIds:sources.map(x=>x.id),
   researchIds:research.map(x=>x.id),
+  generatedTargetIds:generated.map(x=>x.id),
   knownSources:sources,
   researchCandidates:research,
+  generatedTargets:generated,
   availabilityReport:availability,
   researchPreflight,
   expectedReviewOrigins:["https://earthrightnow.app/review/inside-ern.html"],
