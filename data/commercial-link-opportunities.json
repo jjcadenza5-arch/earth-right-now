@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T17:10:00Z",
+  "generatedAt": "2026-10-05T17:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2164,30 +2164,17 @@
       "candidateStatus": "PREPARED_NOT_OWNER_VERIFIED"
     },
     {
-      "id": "viator-longyearbyen-future",
-      "destination": "Longyearbyen / Svalbard",
-      "placeIds": [
-        "longyearbyen-unis-webcam"
-      ],
-      "partnerCandidate": "viator",
-      "intent": "activities",
-      "priority": "P1",
-      "reason": "Viator has a dedicated Longyearbyen destination with Arctic sightseeing and excursion inventory, but ERN must first verify and promote a current Longyearbyen source.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Longyearbyen/d4354-ttd",
-      "nextAction": "After the UNIS/Longyearbyen source is human-confirmed and promoted, generate one Longyearbyen Viator tracked link and verify it manually."
-    },
-    {
       "id": "viator-shetland-future",
       "destination": "Shetland Islands / Lerwick",
       "placeIds": [
         "shetland-cliff-cam",
-        "lerwick-town-hall"
+        "lerwick-town-hall",
+        "shetland-lerwick-town-hall"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "Viator has dedicated Lerwick/Shetland sightseeing, wildlife and shore-excursion inventory, but ERN must first human-confirm and promote at least one Shetland live camera.",
+      "reason": "ERN now has healthy Shetland/Lerwick current-image places, and Viator has dedicated Shetland sightseeing, wildlife and shore-excursion inventory.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Shetland-Islands/d33624-ttd",
       "nextAction": "Source gap cleared by official searchable current-image promotion. Generate and manually verify one destination-level tracked link before any public placement."
@@ -3080,16 +3067,17 @@
       "id": "viator-longyearbyen",
       "destination": "Longyearbyen / Svalbard",
       "placeIds": [
-        "longyearbyen-adventfjorden"
+        "longyearbyen-adventfjorden",
+        "longyearbyen-unis-webcam"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has a current institutional Longyearbyen/Svalbard view, and Viator currently lists guided Svalbard snowmobile and Arctic-wilderness experiences starting from Longyearbyen.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Norway-tours/Adrenaline-and-Extreme/d61-g9-c87/3",
-      "publicInventoryEvidence": "Current Viator Norway inventory includes Svalbard/Longyearbyen Arctic experiences, including guided snowmobile and ice-cave products.",
-      "nextAction": "Search the Viator partner account for a clean Svalbard or Longyearbyen destination-level tracked link and verify it manually before activation."
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Longyearbyen/d4354-ttd",
+      "publicInventoryEvidence": "Viator currently exposes a dedicated Longyearbyen destination with Arctic sightseeing and excursion inventory.",
+      "nextAction": "Generate one clean Longyearbyen/Svalbard destination-level tracked link in the owner account and manually verify it before activation."
     },
     {
       "id": "go-city-sydney",
