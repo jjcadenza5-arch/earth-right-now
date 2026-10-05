@@ -2468,5 +2468,170 @@
       "Gmina Miejska Kraków",
       "Miasto Kraków"
     ]
+  },
+  {
+    "id": "phivolcs-volcano-cameras",
+    "status": "RESEARCH_ONLY",
+    "provider": "DOST-PHIVOLCS",
+    "familyLabel": "DOST-PHIVOLCS volcano camera/current-image network",
+    "researchUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments",
+    "termsUrl": "https://wovodat.phivolcs.dost.gov.ph/user/policy",
+    "verifiedAt": "2026-10-05T02:15:00Z",
+    "permissionEvidence": "DOST-PHIVOLCS publishes public volcano monitoring data and camera imagery. Its volcano-data policy requires attribution and prohibits redistribution or charging for access, and current data-user agreements can prohibit commercial use or third-party transfer without prior consent. ERN therefore keeps PHIVOLCS current-camera assets LINK_ONLY unless a camera-specific reuse permission is documented.",
+    "permissionStatus": "PUBLIC_MONITORING_DATA_REDISTRIBUTION_AND_COMMERCIAL_REUSE_RESTRICTED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_CAMERA_SPECIFIC_REUSE_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_DOST_PHIVOLCS_PUBLISHES_OR_GRANTS_CAMERA_SPECIFIC_REUSE_PERMISSION_COMPATIBLE_WITH_ERN",
+    "networkFamily": "phivolcs.dost.gov.ph",
+    "termsEffectiveAt": "2020-07-01",
+    "termsReviewedAt": "2026-10-05T02:15:00Z",
+    "communityGuidelinesUrl": "https://wovodat.phivolcs.dost.gov.ph/user/policy",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "REDISTRIBUTION_RESTRICTED_CAMERA_SPECIFIC_PERMISSION_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://wovodat.phivolcs.dost.gov.ph/user/policy",
+      "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=mvo",
+      "https://maps.phivolcs.dost.gov.ph/"
+    ],
+    "discoveryProviderAliases": [
+      "DOST-PHIVOLCS",
+      "PHIVOLCS"
+    ]
+  },
+  {
+    "id": "north-coast-taiwan-live-cameras",
+    "status": "RESEARCH_ONLY",
+    "provider": "North Coast & Guanyinshan National Scenic Area",
+    "familyLabel": "North Coast & Guanyinshan official live-camera network",
+    "researchUrl": "https://www.northguan-nsa.gov.tw/user/main.aspx?lang=2",
+    "termsUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&sno=03006586",
+    "verifiedAt": "2026-10-05T02:15:00Z",
+    "permissionEvidence": "The North Coast & Guanyinshan National Scenic Area publishes official live-camera pages and an Open Information Announcement granting broad reuse of publicly released copyright-protected information without cost, including reproduction, adaptation and public transmission, with source attribution. However, the same notice excludes some third-party videos/images that require separate approval. ERN therefore treats the family as promising but requires a specific-camera ownership check before any image reuse; no blanket promotion is automatic.",
+    "permissionStatus": "BROAD_OPEN_INFORMATION_REUSE_WITH_SOURCE_ATTRIBUTION_SUBJECT_TO_THIRD_PARTY_EXCEPTIONS",
+    "technicalStatus": "CAMERA_SPECIFIC_OWNERSHIP_AND_ASSET_REUSE_CHECK_REQUIRED",
+    "humanPlaybackStatus": "NOT_APPLICABLE_CURRENT_IMAGE",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_CAMERA_OWNERSHIP_CHECK",
+    "nextAction": "VERIFY_ONE_SPECIFIC_LIVE_CAMERA_AS_ADMINISTRATION_OWNED_THEN_STAGE_A_SINGLE_ATTRIBUTED_CURRENT_IMAGE_PATH_FOR_REVIEW",
+    "networkFamily": "northguan-nsa.gov.tw",
+    "termsEffectiveAt": "2021-03-08",
+    "termsReviewedAt": "2026-10-05T02:15:00Z",
+    "communityGuidelinesUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&sno=03006586",
+    "usageMode": "PROVIDER_AUTHORIZED_CURRENT_IMAGE",
+    "embeddingCondition": "OPEN_INFORMATION_WITH_SOURCE_ATTRIBUTION_SUBJECT_TO_THIRD_PARTY_EXCLUSIONS",
+    "playerBrandingRequired": false,
+    "imageReuseAllowed": true,
+    "attributionRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&sno=03006586",
+      "https://www.northguan-nsa.gov.tw/user/main.aspx?lang=2",
+      "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&sno=04007412"
+    ],
+    "discoveryProviderAliases": [
+      "North Coast & Guanyinshan National Scenic Area",
+      "North Coast and Guanyinshan National Scenic Area"
+    ]
+  },
+  {
+    "id": "cook-islands-airports-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Cook Islands Airports Authority",
+    "familyLabel": "Cook Islands Airports Authority public webcam pages",
+    "researchUrl": "https://cookislandsairports.com/webcam-rar/",
+    "termsUrl": "https://cookislandsairports.com/",
+    "verifiedAt": "2026-10-05T02:15:00Z",
+    "permissionEvidence": "Cook Islands Airports Authority publishes public webcam pages for airport and island views. The reviewed public pages expose viewing access but no clear third-party commercial reuse, image hotlink or embed license was found. ERN therefore keeps these sources LINK_ONLY until explicit reuse terms are documented.",
+    "permissionStatus": "PUBLIC_WEBCAM_ACCESS_NO_THIRD_PARTY_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_CAMERA_REUSE_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_COOK_ISLANDS_AIRPORTS_AUTHORITY_PUBLISHES_OR_GRANTS_CAMERA_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "cookislandsairports.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:15:00Z",
+    "communityGuidelinesUrl": "https://cookislandsairports.com/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://cookislandsairports.com/webcam-pir1/",
+      "https://cookislandsairports.com/webcam-ava/",
+      "https://cookislandsairports.com/webcam-rar/"
+    ],
+    "discoveryProviderAliases": [
+      "Cook Islands Airports Authority"
+    ]
+  },
+  {
+    "id": "mauritius-now-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Mauritius Tourism Promotion Authority / Mauritius Now",
+    "familyLabel": "Mauritius Now destination webcam network",
+    "researchUrl": "https://mauritiusnow.com/things-to-do-in-mauritius/",
+    "termsUrl": "https://mauritiusnow.com/",
+    "verifiedAt": "2026-10-05T02:15:00Z",
+    "permissionEvidence": "Mauritius Now publicly presents a multi-camera 'See Mauritius live' experience, but the reviewed public pages do not provide ERN a clear commercial third-party image reuse or embed license. Public viewing is therefore not treated as reuse permission. ERN keeps the family LINK_ONLY unless explicit camera-provider or tourism-authority permission is documented.",
+    "permissionStatus": "PUBLIC_MULTI_CAMERA_VIEWING_NO_THIRD_PARTY_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_CAMERA_REUSE_TERMS",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_MAURITIUS_NOW_OR_THE_ORIGINATING_CAMERA_PROVIDER_GRANTS_EXPLICIT_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "mauritiusnow.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:15:00Z",
+    "communityGuidelinesUrl": "https://mauritiusnow.com/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://mauritiusnow.com/things-to-do-in-mauritius/"
+    ],
+    "discoveryProviderAliases": [
+      "Mauritius Tourism Promotion Authority / Mauritius Now",
+      "Mauritius Now",
+      "Mauritius Tourism Promotion Authority"
+    ]
+  },
+  {
+    "id": "visit-st-maarten-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Visit St. Maarten / ShowMe Caribbean",
+    "familyLabel": "Visit St. Maarten / ShowMe Caribbean webcam pages",
+    "researchUrl": "https://www.visitstmaarten.com/your-top-three-caribbean-live-webcams-2/",
+    "termsUrl": "https://www.visitstmaarten.com/",
+    "verifiedAt": "2026-10-05T02:15:00Z",
+    "permissionEvidence": "Visit St. Maarten promotes public Caribbean webcam views, including third-party ShowMe Caribbean sources. The reviewed pages do not provide a general third-party commercial embed/reuse grant to ERN, and some imagery/player rights may belong to the originating provider. ERN keeps these sources LINK_ONLY unless the exact camera provider grants reuse.",
+    "permissionStatus": "PUBLIC_WEBCAM_DISCOVERY_THIRD_PARTY_PLAYER_RIGHTS_UNRESOLVED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_ORIGINATING_PROVIDER_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_SPECIFIC_PROVIDER_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_SHOWME_CARIBBEAN_OR_THE_EXACT_CAMERA_PROVIDER_GRANTS_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "visitstmaarten.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:15:00Z",
+    "communityGuidelinesUrl": "https://www.visitstmaarten.com/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "ORIGINATING_CAMERA_PROVIDER_PERMISSION_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.visitstmaarten.com/your-top-three-caribbean-live-webcams-2/",
+      "https://www.visitstmaarten.com/business/show-me-caribbean/"
+    ],
+    "discoveryProviderAliases": [
+      "Visit St. Maarten / ShowMe Caribbean",
+      "Visit St. Maarten",
+      "ShowMe Caribbean"
+    ]
   }
 ]
