@@ -3755,6 +3755,48 @@
       "businessUnlocks": [
         "viator-mount-st-helens-portland"
       ]
+    },
+    {
+      "id": "alaska-akutan-current-image",
+      "title": "Akutan Volcano — Alaska",
+      "country": "United States",
+      "region": "Alaska / Aleutian Islands",
+      "provider": "Alaska Volcano Observatory",
+      "sourcePage": "https://avo.alaska.edu/webcam/",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "AVO webcam index shows multiple Akutan cameras with current Oct 5, 2026 UTC timestamps.",
+      "verifiedAt": "2026-10-05T13:52:00Z",
+      "promotedAt": "2026-10-05T13:52:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only."
+    },
+    {
+      "id": "alaska-cleveland-current-image",
+      "title": "Cleveland Volcano — Alaska",
+      "country": "United States",
+      "region": "Alaska / Aleutian Islands",
+      "provider": "Alaska Volcano Observatory",
+      "sourcePage": "https://avo.alaska.edu/webcam/",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "AVO webcam index shows multiple Cleveland cameras with current Oct 5, 2026 UTC timestamps.",
+      "verifiedAt": "2026-10-05T13:52:00Z",
+      "promotedAt": "2026-10-05T13:52:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only."
+    },
+    {
+      "id": "alaska-semisopochnoi-current-image",
+      "title": "Semisopochnoi — Alaska",
+      "country": "United States",
+      "region": "Alaska / Aleutian Islands",
+      "provider": "Alaska Volcano Observatory",
+      "sourcePage": "https://avo.alaska.edu/webcam/",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "AVO webcam index shows current Semisopochnoi cameras with Oct 5, 2026 UTC timestamps.",
+      "verifiedAt": "2026-10-05T13:52:00Z",
+      "promotedAt": "2026-10-05T13:52:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only."
     }
   ],
   "notes": [
