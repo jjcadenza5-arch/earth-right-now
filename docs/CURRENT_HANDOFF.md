@@ -2307,3 +2307,63 @@ Boundaries unchanged:
 - No automatic social posting/account creation.
 - No paid ranking.
 - No automatic commercial placement or link rewriting.
+
+### Continued expansion checkpoint — 2026-10-05
+Owner requested further expansion of both searchable places and the business side.
+
+#### Searchable-place expansion
+Added four additional high-confidence searchable external/live places to `data/search-supplemental.json`, keeping the lean runtime source catalog unchanged:
+- White Dolphin House — Changhua Coast, Taiwan — official Changhua County Tourism 24/7 real-time/4K live source.
+- Baguashan Great Buddha — Changhua, Taiwan — official Changhua County Tourism 4K live/current landmark and city source.
+- Emei Lake — Hsinchu, Taiwan — official Tourism Administration / Tri-Mountain 4K live-stream page.
+- Deji Reservoir — Lishan, Taiwan — official Tourism Administration / Tri-Mountain real-time imagery / 4K live-camera path.
+
+Together with the previous batch, the newly added searchable supplemental set now includes six places:
+- Wang Gong Fishing Port — Changhua
+- Cerro Catedral — Bariloche
+- White Dolphin House — Changhua Coast
+- Baguashan Great Buddha — Changhua
+- Emei Lake — Hsinchu
+- Deji Reservoir — Lishan
+
+All remain conservative external/link-only sources; no public embed permission, media copying or restream permission is inferred. Full provenance is retained in `data/source-evidence.json`.
+
+#### Business expansion
+The Changhua Klook opportunity was expanded from one place into a three-place destination cluster:
+- Wang Gong Fishing Port
+- White Dolphin House
+- Baguashan Great Buddha
+
+Added a new Klook Hsinchu/Emei research opportunity backed by current Emei-specific Klook inventory. It remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`.
+
+Existing Bariloche / Cerro Catedral Viator research remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`.
+
+No tracked link was invented, no new external partner account was opened, and no commercial signal may affect Earth ranking.
+
+#### Validation
+Final implementation head before this handoff update:
+`7d5707356bc3570c5fc6f784a69ea47b4bd795eb`
+
+Pages run **2472** completed **SUCCESS**.
+Validated successfully:
+- JavaScript syntax preflight
+- ERN current release smoke suite
+- hard performance preflight
+- search metadata integrity
+- SEO indexing readiness
+- AI search discovery readiness
+- public discoverability preflight
+- commercial placement integrity
+- final deployment
+
+The hard lean-core ceiling remains exactly **575 KB**.
+
+#### Pilot and product boundaries unchanged
+- Controlled IMAGE_REFRESH pilot remains exactly two sources and 0/2 scheduled observations.
+- No manual pilot renewal was triggered.
+- Public generative ERN Guide remains OFF.
+- Public Now Moments media remains OFF.
+- No automatic social posting/account creation.
+- No paid ranking.
+- No automatic commercial placement or link rewriting.
+- Searchable expansion should continue through supplemental/search infrastructure when that preserves the 575 KB lean core.
