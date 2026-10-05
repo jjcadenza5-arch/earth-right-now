@@ -2196,3 +2196,80 @@ Compare aggregate:
 - verified outbound actions.
 
 Treat all movement as correlation evidence only, not causal attribution.
+
+### Organic-distribution exploration-intensity checkpoint — 2026-10-05
+Continued autonomously before the first scheduled current-image pilot renewal. No catalog growth, public redesign, Guide activation, Now Moments activation, social automation, paid ranking or pilot mutation occurred.
+
+#### Why this batch was added
+The Facebook organic wave should be judged not only by raw visitor/referral growth but by whether aggregate visitors actually explore ERN. The retained Operations packet now reports privacy-safe exploration-intensity ratios relative to approximate unique visitors.
+
+`analytics:distribution-observation` schemaVersion 3 now includes aggregate-only:
+- page views per approximate visitor;
+- Earth searches per approximate visitor;
+- place/window opens per approximate visitor;
+- external-source opens per approximate visitor;
+- travel-option opens per approximate visitor;
+- zero-result share of Earth searches;
+- baseline values and deltas for the same ratios.
+
+These are explicitly **not** per-person histories, sessions, conversion rates or causal attribution. Facebook distribution and aggregate behavior may move together, but ERN does not infer visitor identity, impressions, group reach, causation, bookings, conversions or revenue.
+
+The daily operator brief now surfaces these ratios and baseline deltas. Operations packet integrity rejects malformed intensity metrics or a changed denominator.
+
+#### First post-change Operations evidence
+Operations run **1342** completed **SUCCESS**.
+Packet integrity:
+- valid: **true**
+- issue count: **0**
+
+At about 0.68h after the recorded Facebook baseline, the retained aggregate observation showed:
+- approximate unique visitors: **44** (baseline +1)
+- page views: **259** (baseline +2)
+- Facebook-family referral views: **23** (baseline +1)
+- Earth searches: **22**
+- place/window opens: **193**
+- external-source opens: **38**
+- travel-option opens: **1**
+
+Exploration intensity at that very-early point:
+- searches / approximate visitor: **0.50**
+- place/window opens / approximate visitor: **4.39**
+- external-source opens / approximate visitor: **0.86**
+- travel-option opens / approximate visitor: **0.02**
+- zero-result share of searches: **27.27%**
+
+This remains **EARLY_UNDER_24H** evidence and must not be interpreted as success or failure of the Facebook wave. The first useful comparison remains the first Operations packet after the 24h milestone.
+
+#### Validation
+Final implementation head before this handoff update:
+`dc10b24dc94c837fad1d2f4837f65886c8a037ae`
+
+- Pages run **2462**: **SUCCESS**
+- JavaScript syntax preflight: SUCCESS
+- current release smoke suite: SUCCESS
+- hard performance preflight: SUCCESS
+- AI search discovery readiness: SUCCESS
+- public discoverability preflight: SUCCESS
+- deployed social-preview verification: SUCCESS
+- Operations run **1342**: **SUCCESS**
+- Operations packet integrity: valid / 0 issues
+
+Hard lean-core ceiling remains exactly **575 KB** and was not raised.
+
+#### Current-image pilot boundary unchanged
+The controlled IMAGE_REFRESH pilot remains exactly:
+1. Yellowstone — Biscuit Basin
+2. Mount Ruapehu — Current Images
+
+State remains:
+- scheduled observation count: **0 / 2**
+- automatic expansion: forbidden
+- next natural scheduled renewal: `2026-10-06T00:37:00Z` / **07:37 Thailand time**
+
+Do not manually trigger the renewal merely to advance the count.
+After the natural scheduled run, verify:
+- workflow event is genuinely `schedule`;
+- only approved source evidence/timestamps plus the observation ledger changed;
+- status becomes **1/2**, not expansion-ready;
+- Pages and Operations succeed;
+- no automatic expansion occurs.
