@@ -3631,6 +3631,68 @@
       "verifiedAt": "2026-10-05T13:28:00Z",
       "promotedAt": "2026-10-05T13:28:00Z",
       "verification": "Official national geological monitoring source; LIVE_IMAGE / LINK_ONLY / Search-Explore only."
+    },
+    {
+      "id": "colombia-cerro-machin-current-image",
+      "title": "Cerro Machín — Colombia",
+      "country": "Colombia",
+      "region": "Tolima",
+      "provider": "Servicio Geológico Colombiano",
+      "sourcePage": "https://www2.sgc.gov.co/sgc/volcanes/VolcanCerroMachin/Paginas/Imagenes-en-linea.aspx",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official SGC online-images page exposes Cerro Machín monitoring cameras.",
+      "verifiedAt": "2026-10-05T13:36:00Z",
+      "promotedAt": "2026-10-05T13:36:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only.",
+      "businessUnlocks": [
+        "viator-cerro-machin-salento"
+      ]
+    },
+    {
+      "id": "colombia-sotara-current-image",
+      "title": "Sotará Volcano — Colombia",
+      "country": "Colombia",
+      "region": "Cauca",
+      "provider": "Servicio Geológico Colombiano",
+      "sourcePage": "https://www2.sgc.gov.co/sgc/volcanes/VolcanSotara/Paginas/imagenes-en-linea.aspx",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official SGC online-images page exposes Sotará monitoring cameras.",
+      "verifiedAt": "2026-10-05T13:36:00Z",
+      "promotedAt": "2026-10-05T13:36:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only."
+    },
+    {
+      "id": "colombia-cumbal-current-image",
+      "title": "Cumbal Volcano — Colombia",
+      "country": "Colombia",
+      "region": "Nariño",
+      "provider": "Servicio Geológico Colombiano",
+      "sourcePage": "https://www2.sgc.gov.co/sgc/volcanes/VolcanCumbal/Paginas/imagenes-en-linea.aspx",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official SGC online-images page exposes Cumbal and Boliche monitoring cameras.",
+      "verifiedAt": "2026-10-05T13:36:00Z",
+      "promotedAt": "2026-10-05T13:36:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only."
+    },
+    {
+      "id": "colombia-nevado-tolima-current-image",
+      "title": "Nevado del Tolima — Colombia",
+      "country": "Colombia",
+      "region": "Tolima / Quindío",
+      "provider": "Servicio Geológico Colombiano",
+      "sourcePage": "https://www2.sgc.gov.co/sgc/volcanes/VolcanNevadoTolima/Paginas/imagenesLinea.aspx",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official SGC online-images page exposes the Totarito-sector monitoring camera.",
+      "verifiedAt": "2026-10-05T13:36:00Z",
+      "promotedAt": "2026-10-05T13:36:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only.",
+      "businessUnlocks": [
+        "viator-nevado-del-tolima"
+      ]
     }
   ],
   "notes": [
