@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T18:45:00Z",
+  "generatedAt": "2026-10-05T19:00:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -5094,6 +5094,48 @@
       "evidence": "Moorea.com currently labels the resource as LIVE webcam from Moorea Pearl Beach Resort.",
       "verifiedAt": "2026-10-05T18:45:00Z",
       "promotedAt": "2026-10-05T18:45:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "bahamas-nassau-baha-mar-live",
+      "title": "Nassau — Baha Mar / Cable Beach",
+      "country": "The Bahamas",
+      "region": "Nassau / New Providence",
+      "provider": "Baha Mar",
+      "sourcePage": "https://bahamar.com/live-webcam/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Baha Mar currently maintains a dedicated Live Webcam page; HDOnTap documents the active Baha Mar partnership and current 2026 snapshots.",
+      "verifiedAt": "2026-10-05T19:00:00Z",
+      "promotedAt": "2026-10-05T19:00:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "puerto-rico-isla-verde-sonesta-live",
+      "title": "Isla Verde — Royal Sonesta San Juan",
+      "country": "Puerto Rico",
+      "region": "Carolina / Isla Verde",
+      "provider": "The Royal Sonesta San Juan",
+      "sourcePage": "https://www.sonesta.com/royal-sonesta/pr/carolina/royal-sonesta-san-juan/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current Royal Sonesta page explicitly labels a Resort Live Feed and says its live webcam shows Isla Verde Beach.",
+      "verifiedAt": "2026-10-05T19:00:00Z",
+      "promotedAt": "2026-10-05T19:00:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "dominican-cabarete-villa-taina-live",
+      "title": "Cabarete Beach — Villa Taina",
+      "country": "Dominican Republic",
+      "region": "Cabarete / Puerto Plata",
+      "provider": "Hotel Villa Taina",
+      "sourcePage": "https://villataina.com/blog/live-webcam-cabarete",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Villa Taina currently promotes its Cabarete webcam as a real-time/current Wind, Waves & Weather view and featured it again in September 2026 site content.",
+      "verifiedAt": "2026-10-05T19:00:00Z",
+      "promotedAt": "2026-10-05T19:00:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
