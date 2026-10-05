@@ -2633,5 +2633,254 @@
       "Visit St. Maarten",
       "ShowMe Caribbean"
     ]
+  },
+  {
+    "id": "beach-view-barbados-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Beach View Hotel",
+    "familyLabel": "Beach View Barbados live webcam",
+    "researchUrl": "https://www.beachviewbarbados.com/live-webcam/",
+    "termsUrl": "https://www.beachviewbarbados.com/terms-conditions/",
+    "verifiedAt": "2026-10-05T02:25:00Z",
+    "permissionEvidence": "Beach View operates a public live webcam, but its current Terms of Use state that site material is for personal, non-commercial use and may not be distributed, copied, extracted or commercially exploited. The terms also note that the webcam section is operated by a third party. ERN therefore keeps the webcam LINK_ONLY unless both site and underlying player permissions are established.",
+    "permissionStatus": "PERSONAL_NONCOMMERCIAL_SITE_USE_THIRD_PARTY_WEBCAM_OPERATOR",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_SITE_AND_PLAYER_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_BEACH_VIEW_AND_THE_WEBCAM_OPERATOR_GRANT_EXPLICIT_THIRD_PARTY_EMBED_OR_REUSE_PERMISSION",
+    "networkFamily": "beachviewbarbados.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:25:00Z",
+    "communityGuidelinesUrl": "https://www.beachviewbarbados.com/terms-conditions/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "PERSONAL_NONCOMMERCIAL_USE_ONLY_AND_THIRD_PARTY_OPERATOR",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.beachviewbarbados.com/live-webcam/",
+      "https://www.beachviewbarbados.com/terms-conditions/"
+    ],
+    "discoveryProviderAliases": [
+      "Beach View Hotel",
+      "Beach View Barbados"
+    ]
+  },
+  {
+    "id": "vienna-tourism-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Vienna Tourist Board",
+    "familyLabel": "Vienna Tourist Board City Hall/Ringstrasse webcam",
+    "researchUrl": "https://www.wien.info/en/see-do/discover-vienna/webcam-379930",
+    "termsUrl": "https://www.wien.info/en/imprint-348892",
+    "verifiedAt": "2026-10-05T02:25:00Z",
+    "permissionEvidence": "Vienna Tourist Board publishes the public city webcam, but its imprint states Vienna Tourist Board copyright and all rights reserved. Related app terms require prior express consent for reproduction or public distribution of copyrighted content. ERN therefore keeps the webcam LINK_ONLY unless the Board grants specific embed/reuse permission.",
+    "permissionStatus": "ALL_RIGHTS_RESERVED_SPECIFIC_REUSE_CONSENT_REQUIRED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_VTB_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_VIENNA_TOURIST_BOARD_GRANTS_SPECIFIC_WEBCAM_EMBED_OR_REUSE_PERMISSION",
+    "networkFamily": "wien.info",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:25:00Z",
+    "communityGuidelinesUrl": "https://www.wien.info/en/imprint-348892",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_EXPRESS_CONSENT_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.wien.info/en/see-do/discover-vienna/webcam-379930",
+      "https://www.wien.info/en/imprint-348892"
+    ],
+    "discoveryProviderAliases": [
+      "Vienna Tourist Board",
+      "Wiener Tourismusverband"
+    ]
+  },
+  {
+    "id": "plantation-island-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Plantation Island Resort",
+    "familyLabel": "Plantation Island Resort public live-camera surface",
+    "researchUrl": "https://www.plantationisland.com/webcam/",
+    "termsUrl": "https://www.plantationisland.com/webcam/",
+    "verifiedAt": "2026-10-05T02:25:00Z",
+    "permissionEvidence": "Plantation Island Resort publishes a public live-camera surface, but the reviewed public page does not provide ERN a clear third-party commercial embed, redistribution or restream license. Public playback alone is not treated as reuse permission. ERN therefore keeps this source LINK_ONLY until an exact provider-authorized player or written reuse basis is documented.",
+    "permissionStatus": "PUBLIC_LIVE_CAMERA_NO_THIRD_PARTY_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PLAYER_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_THE_PROVIDER_PUBLISHES_OR_GRANTS_EXPLICIT_THIRD_PARTY_EMBED_OR_REUSE_PERMISSION",
+    "networkFamily": "plantationisland.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:25:00Z",
+    "communityGuidelinesUrl": "https://www.plantationisland.com/webcam/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_PROVIDER_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.plantationisland.com/webcam/"
+    ],
+    "discoveryProviderAliases": [
+      "Plantation Island Resort"
+    ]
+  },
+  {
+    "id": "lomani-island-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Lomani Island Resort & Spa",
+    "familyLabel": "Lomani Island Resort & Spa public live-camera surface",
+    "researchUrl": "https://www.lomaniisland.com/webcam/",
+    "termsUrl": "https://www.lomaniisland.com/webcam/",
+    "verifiedAt": "2026-10-05T02:25:00Z",
+    "permissionEvidence": "Lomani Island Resort & Spa publishes a public live-camera surface, but the reviewed public page does not provide ERN a clear third-party commercial embed, redistribution or restream license. Public playback alone is not treated as reuse permission. ERN therefore keeps this source LINK_ONLY until an exact provider-authorized player or written reuse basis is documented.",
+    "permissionStatus": "PUBLIC_LIVE_CAMERA_NO_THIRD_PARTY_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PLAYER_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_THE_PROVIDER_PUBLISHES_OR_GRANTS_EXPLICIT_THIRD_PARTY_EMBED_OR_REUSE_PERMISSION",
+    "networkFamily": "lomaniisland.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:25:00Z",
+    "communityGuidelinesUrl": "https://www.lomaniisland.com/webcam/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_PROVIDER_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.lomaniisland.com/webcam/"
+    ],
+    "discoveryProviderAliases": [
+      "Lomani Island Resort & Spa"
+    ]
+  },
+  {
+    "id": "kuredu-island-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Kuredu Island Resort & Spa",
+    "familyLabel": "Kuredu Island Resort & Spa public live-camera surface",
+    "researchUrl": "https://www.kuredu.com/webcams/",
+    "termsUrl": "https://www.kuredu.com/webcams/",
+    "verifiedAt": "2026-10-05T02:25:00Z",
+    "permissionEvidence": "Kuredu Island Resort & Spa publishes a public live-camera surface, but the reviewed public page does not provide ERN a clear third-party commercial embed, redistribution or restream license. Public playback alone is not treated as reuse permission. ERN therefore keeps this source LINK_ONLY until an exact provider-authorized player or written reuse basis is documented.",
+    "permissionStatus": "PUBLIC_LIVE_CAMERA_NO_THIRD_PARTY_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PLAYER_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_THE_PROVIDER_PUBLISHES_OR_GRANTS_EXPLICIT_THIRD_PARTY_EMBED_OR_REUSE_PERMISSION",
+    "networkFamily": "kuredu.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:25:00Z",
+    "communityGuidelinesUrl": "https://www.kuredu.com/webcams/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_PROVIDER_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.kuredu.com/webcams/"
+    ],
+    "discoveryProviderAliases": [
+      "Kuredu Island Resort & Spa"
+    ]
+  },
+  {
+    "id": "odjo-dagua-webcam",
+    "status": "RESEARCH_ONLY",
+    "provider": "Odjo d'Água Hotel",
+    "familyLabel": "Odjo d'Água Hotel public live-camera surface",
+    "researchUrl": "https://odjodagua.cv/webcam/",
+    "termsUrl": "https://odjodagua.cv/webcam/",
+    "verifiedAt": "2026-10-05T02:25:00Z",
+    "permissionEvidence": "Odjo d'Água Hotel publishes a public live-camera surface, but the reviewed public page does not provide ERN a clear third-party commercial embed, redistribution or restream license. Public playback alone is not treated as reuse permission. ERN therefore keeps this source LINK_ONLY until an exact provider-authorized player or written reuse basis is documented.",
+    "permissionStatus": "PUBLIC_LIVE_CAMERA_NO_THIRD_PARTY_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PLAYER_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_THE_PROVIDER_PUBLISHES_OR_GRANTS_EXPLICIT_THIRD_PARTY_EMBED_OR_REUSE_PERMISSION",
+    "networkFamily": "odjodagua.cv",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:25:00Z",
+    "communityGuidelinesUrl": "https://odjodagua.cv/webcam/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_PROVIDER_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://odjodagua.cv/webcam/"
+    ],
+    "discoveryProviderAliases": [
+      "Odjo d'Água Hotel",
+      "Odjo d'Agua Hotel"
+    ]
+  },
+  {
+    "id": "denpasar-atcs-camera",
+    "status": "RESEARCH_ONLY",
+    "provider": "Denpasar City Transportation Agency (Dishub)",
+    "familyLabel": "Denpasar City Transportation Agency (Dishub) public live-camera surface",
+    "researchUrl": "https://atcs.denpasarkota.go.id/",
+    "termsUrl": "https://atcs.denpasarkota.go.id/",
+    "verifiedAt": "2026-10-05T02:25:00Z",
+    "permissionEvidence": "Denpasar City Transportation Agency (Dishub) publishes a public live-camera surface, but the reviewed public page does not provide ERN a clear third-party commercial embed, redistribution or restream license. Public playback alone is not treated as reuse permission. ERN therefore keeps this source LINK_ONLY until an exact provider-authorized player or written reuse basis is documented.",
+    "permissionStatus": "PUBLIC_LIVE_CAMERA_NO_THIRD_PARTY_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_PLAYER_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_THE_PROVIDER_PUBLISHES_OR_GRANTS_EXPLICIT_THIRD_PARTY_EMBED_OR_REUSE_PERMISSION",
+    "networkFamily": "atcs.denpasarkota.go.id",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:25:00Z",
+    "communityGuidelinesUrl": "https://atcs.denpasarkota.go.id/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_PROVIDER_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://atcs.denpasarkota.go.id/"
+    ],
+    "discoveryProviderAliases": [
+      "Denpasar City Transportation Agency (Dishub)",
+      "Dishub Denpasar"
+    ]
+  },
+  {
+    "id": "visit-finland-live",
+    "status": "RESEARCH_ONLY",
+    "provider": "Visit Finland / EK",
+    "familyLabel": "Visit Finland curated live-view provider links",
+    "researchUrl": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
+    "termsUrl": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
+    "verifiedAt": "2026-10-05T02:25:00Z",
+    "permissionEvidence": "Visit Finland curates live views that may originate from third-party operators. The reviewed page does not provide a blanket third-party commercial embed or reuse grant covering those originating streams. ERN therefore treats each originating provider as rights-holder and keeps the curated views LINK_ONLY unless a specific player permission is documented.",
+    "permissionStatus": "CURATED_THIRD_PARTY_LIVE_VIEWS_NO_BLANKET_EMBED_GRANT",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_ORIGINATING_PROVIDER_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_ORIGINATING_PROVIDER_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_THE_ORIGINATING_PROVIDER_GRANTS_EXPLICIT_EMBED_OR_REUSE_PERMISSION",
+    "networkFamily": "visitfinland.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T02:25:00Z",
+    "communityGuidelinesUrl": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "ORIGINATING_PROVIDER_PERMISSION_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.visitfinland.com/en/practical-tips/live-from-finland/"
+    ],
+    "discoveryProviderAliases": [
+      "Visit Finland / EK",
+      "Visit Finland / Koli Ski",
+      "Visit Finland / Port of Turku",
+      "Visit Finland"
+    ]
   }
 ]
