@@ -2928,7 +2928,7 @@ Latest validated searchable-source health at Operations 1361:
 
 The two REPAIR items remain Bishkek Ala-Too Square and Too-Ashu Pass. Their provider pages were already independently confirmed active, so no deletion, replacement, truth change or health downgrade is justified from the automated network failures alone. Five access-limited sources remain REVIEW only.
 
-Pages run 2525 completed SUCCESS with all **112 current ERN release smoke tests passing**, Supplemental Search integrity passing, and the hard lean-core budget remaining exactly **575000 bytes**. A subsequent Pages serialization for the final commercial reconciliation is proceeding through the same canonical workflow; all completed preflight stages through artifact upload have passed.
+Pages run 2525 completed SUCCESS with all **112 current ERN release smoke tests passing**, Supplemental Search integrity passing, and the hard lean-core budget remaining exactly **575000 bytes**. Pages run 2526 also completed SUCCESS for the final commercial reconciliation through the same canonical workflow.
 
 Protected gates remain unchanged:
 - Watch Earth = in-ERN playback only;
