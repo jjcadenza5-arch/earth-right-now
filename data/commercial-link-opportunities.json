@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T11:37:30Z",
+  "generatedAt": "2026-10-05T12:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3407,18 +3407,20 @@
     },
     {
       "id": "klook-changhua-wanggong",
-      "destination": "Changhua / Wang Gong Fishing Port",
+      "destination": "Changhua",
       "placeIds": [
-        "taiwan-wanggong-fishing-port"
+        "taiwan-wanggong-fishing-port",
+        "changhua-white-dolphin-house",
+        "changhua-baguashan-great-buddha"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
       "priority": "P2",
-      "reason": "ERN now has an official operating Changhua live window and Klook carries current Changhua attraction inventory. Commercial value stays downstream from discovery.",
+      "reason": "ERN now has three official current Changhua windows (Wang Gong Fishing Port, White Dolphin House and Baguashan Great Buddha). Klook currently carries Changhua attraction inventory, so one destination-level planning link can serve the cluster without changing Earth ranking.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/91085-changhua-paleontology-wonderland/",
       "publicInventoryEvidence": "Current Klook inventory includes bookable Changhua attractions, confirming destination-level activity coverage.",
-      "nextAction": "Check Changhua destination coverage in the owner Klook/Travelpayouts tools and generate one exact tracked link only if the inventory is useful."
+      "nextAction": "Check Changhua destination coverage in the owner Klook/Travelpayouts tools and generate one exact tracked destination/search link only if the inventory is useful across the cluster."
     }
   ]
 }
