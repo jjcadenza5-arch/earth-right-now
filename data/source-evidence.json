@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:58:00Z",
+  "generatedAt": "2026-10-05T06:43:10.584Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -11,7 +11,16 @@
     "kilauea-summit": {
       "freshnessEvidence": "Official USGS Kīlauea webcams page was rechecked on 2026-09-28 and continues to list multiple live views and live images of Kīlauea, including Halemaʻumaʻu summit cameras.",
       "rightsBasis": "Official USGS current-view source; retained as link-only because ERN has not documented redistribution/embed permission.",
-      "coordinateSourceUrl": "https://www.usgs.gov/volcanoes/kilauea"
+      "coordinateSourceUrl": "https://www.usgs.gov/volcanoes/kilauea",
+      "machineCurrentImageVerification": {
+        "verifiedAt": "2026-10-05T06:43:10.584Z",
+        "state": "FETCH_OK_TEMPORAL_EVIDENCE_CURRENT",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 54588,
+        "lastModified": "Mon, 05 Oct 2026 06:39:02 GMT",
+        "evidenceAgeMinutes": 4.1
+      }
     },
     "pattaya-city-live": {
       "freshnessEvidence": "Pattaya City's official CCTV Streaming portal was rechecked on 2026-09-29. It reports Total 600 cameras, while the public Live View and Camera List currently show 0 cameras. This is provider-offline evidence for the public live collection, so ERN keeps the source DEGRADED and defers recheck until a material provider change; no successful playback/currentness claim is made.",
@@ -664,7 +673,16 @@
       "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
       "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
       "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point.",
-      "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras"
+      "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras",
+      "machineCurrentImageVerification": {
+        "verifiedAt": "2026-10-05T06:43:10.584Z",
+        "state": "FETCH_OK_TEMPORAL_EVIDENCE_CURRENT",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 46831,
+        "lastModified": "Mon, 05 Oct 2026 06:41:02 GMT",
+        "evidenceAgeMinutes": 2.1
+      }
     },
     "nz-ngauruhoe-current-image": {
       "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
@@ -682,7 +700,16 @@
       "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
       "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
       "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point.",
-      "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras"
+      "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras",
+      "machineCurrentImageVerification": {
+        "verifiedAt": "2026-10-05T06:43:10.584Z",
+        "state": "FETCH_OK_TEMPORAL_EVIDENCE_CURRENT",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 54143,
+        "lastModified": "Mon, 05 Oct 2026 06:41:05 GMT",
+        "evidenceAgeMinutes": 2.1
+      }
     },
     "nz-raoul-island-current-image": {
       "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
@@ -701,14 +728,32 @@
       "rightsBasis": "USGS Yellowstone Volcano Observatory public webcam; ERN links to the government source and does not copy or restream imagery.",
       "coordinateNote": "Representative Biscuit Basin location for map placement; not claimed as the exact camera mast coordinate.",
       "coordinateSourceUrl": "https://www.usgs.gov/observatories/yvo/news/a-new-camera-now-observing-activity-biscuit-basin",
-      "story": "Current research-camera view across Biscuit Basin and Black Diamond Pool, updated every 15 minutes."
+      "story": "Current research-camera view across Biscuit Basin and Black Diamond Pool, updated every 15 minutes.",
+      "machineCurrentImageVerification": {
+        "verifiedAt": "2026-10-05T06:43:10.584Z",
+        "state": "FETCH_OK_TEMPORAL_EVIDENCE_CURRENT",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 304029,
+        "lastModified": "Mon, 05 Oct 2026 06:30:06 GMT",
+        "evidenceAgeMinutes": 13
+      }
     },
     "yellowstone-lake-current-image": {
       "freshnessEvidence": "USGS reported the Lake camera reinstalled in September 2026 and states the current camera view updates every 15 minutes.",
       "rightsBasis": "USGS Yellowstone Volcano Observatory public webcam; ERN links to the government source and does not copy or restream imagery.",
       "coordinateNote": "Representative Yellowstone Lake/Lake Village location for map placement; not claimed as the exact camera-tower coordinate.",
       "coordinateSourceUrl": "https://www.usgs.gov/observatories/yvo/news/yellowstones-newest-hydrothermal-monitoring-station-and-renewed-camera",
-      "story": "Current view across Yellowstone Lake toward Stevenson Island from the renewed Lake Village monitoring camera."
+      "story": "Current view across Yellowstone Lake toward Stevenson Island from the renewed Lake Village monitoring camera.",
+      "machineCurrentImageVerification": {
+        "verifiedAt": "2026-10-05T06:43:10.584Z",
+        "state": "FETCH_OK_TEMPORAL_EVIDENCE_CURRENT",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 314163,
+        "lastModified": "Mon, 05 Oct 2026 06:40:30 GMT",
+        "evidenceAgeMinutes": 2.6
+      }
     },
     "mauna-loa-current-image": {
       "freshnessEvidence": "USGS HVO labels the Mauna Loa webcam pages as current/live images and states the webcams operate 24/7, subject to weather and equipment interruptions.",
