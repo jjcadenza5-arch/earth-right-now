@@ -1,0 +1,11 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const script=fs.readFileSync("scripts/operations-operator-brief.mjs","utf8");
+const src=fs.readFileSync("src/operations-operator-brief.js","utf8");
+const yml=fs.readFileSync(".github/workflows/operations-watch.yml","utf8");
+assert.match(script,/currentImagePilotObservation/);
+assert.match(src,/## Current-image pilot observation/);
+assert.match(src,/renewalOverdue/);
+assert.match(src,/nextExpectedScheduledAt/);
+assert.match(src,/Automatic expansion remains forbidden/);
+assert.match(yml,/ern-ops\/current-image-pilot-observation\.json \| tee ern-ops\/operator-brief\.md/);
+console.log("Operations brief exposes current-image pilot renewal and overdue state");
