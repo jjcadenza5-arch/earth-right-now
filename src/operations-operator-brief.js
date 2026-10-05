@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness,phase5OperatingStatus,phase6OperatingStatus,phase7OperatingStatus,phase8OperatingStatus,phase9OperatingStatus,phase10OperatingStatus,currentImagePilotObservation,organicDistributionObservation}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness,phase5OperatingStatus,phase6OperatingStatus,phase7OperatingStatus,phase8OperatingStatus,phase9OperatingStatus,phase10OperatingStatus,currentImagePilotObservation,organicDistributionObservation,searchGapTriage}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -86,6 +86,15 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     if(topSearches)lines.push(`- Top aggregate searches: ${topSearches}.`);
     if(topPlaces)lines.push(`- Top aggregate places opened: ${topPlaces}.`);
     lines.push("- Interpretation boundary: referral and exploration deltas are correlation evidence only; they do not identify visitors as nomads or prove Facebook caused visits, searches, bookings, conversions or revenue.","");
+  }
+  if(searchGapTriage){
+    lines.push("## Search-gap triage");
+    lines.push(`- Historical zero-result events: ${searchGapTriage.totalZeroResultEvents||0}; currently resolves: ${searchGapTriage.currentlyResolves||0}; genuine current gaps: ${searchGapTriage.genuineCurrentGaps||0}; low-confidence partials: ${searchGapTriage.lowConfidencePartial||0}.`);
+    for(const item of (searchGapTriage.rows||[]).slice(0,8)){
+      const matches=(item.matches||[]).slice(0,2).map(x=>x.title||x.placeId).join(", ");
+      lines.push(`- "${item.query}" ×${item.count||0} — ${item.state}${matches?" → "+matches:""}.`);
+    }
+    lines.push("- Read-only triage only: historical zero results that resolve today do not justify new catalog entries or aliases automatically.","");
   }
   if(providerGeneratedTargets?.items?.length){
     lines.push("## Provider-generated target staging");
