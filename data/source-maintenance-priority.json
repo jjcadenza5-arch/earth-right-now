@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T12:50:00Z",
-  "healthyDistinctBaseline": 250,
+  "generatedAt": "2026-10-05T15:40:00Z",
+  "healthyDistinctBaseline": 389,
   "strategy": "Post-250 maintenance: repair or replace degraded sources only when they add unique visitor value; do not inflate count mechanically.",
   "items": [
     {
@@ -47,6 +47,28 @@
       "failureReason": "OFF_SEASON_OFFICIAL_SURFACE_STILL_SHOWS_2026_APRIL_STATE",
       "action": "SEASONAL_WAIT_FOR_NEXT_VALID_OFFICIAL_STATE",
       "blocks250Milestone": false
+    },
+    {
+      "id": "bishkek-ala-too-square",
+      "placeId": "bishkek-ala-too-square",
+      "title": "Bishkek — Ala-Too Square",
+      "country": "Kyrgyzstan",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_PROVIDER_PAGE_INDEPENDENTLY_CONFIRMED_ACTIVE",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocks389Baseline": false
+    },
+    {
+      "id": "too-ashu-north",
+      "placeId": "too-ashu-north",
+      "title": "Too-Ashu Pass — Northern Tunnel Entrance",
+      "country": "Kyrgyzstan",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_PROVIDER_PAGE_INDEPENDENTLY_CONFIRMED_ACTIVE",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocks389Baseline": false
     }
   ]
 }
