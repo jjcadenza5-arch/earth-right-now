@@ -4799,5 +4799,35 @@
     "searchSupplemental": true,
     "rightsBasis": "First-party hotel webcam page; link-only.",
     "freshnessEvidence": "POD Camps Bay currently describes the view as a Live Webcam and live stream from the coast."
+  },
+  {
+    "id": "mauritius-shanti-maurice-live",
+    "placeId": "mauritius-shanti-maurice",
+    "title": "Mauritius — Shanti Maurice Sunset Coast",
+    "provider": "Shanti Maurice Resort & Spa",
+    "country": "Mauritius",
+    "region": "Saint-Félix / South Coast",
+    "categories": [
+      "Beaches & Water",
+      "Islands",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://shantimaurice.com/webcam/",
+    "attribution": "Shanti Maurice Resort & Spa",
+    "checkedAt": "2026-10-05T21:20:00Z",
+    "lastSuccessfulCheck": "2026-10-05T21:20:00Z",
+    "quality": 98,
+    "freshness": 99,
+    "moment": 99,
+    "story": "First-party live beach webcam from Shanti Maurice on Mauritius' south coast.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "First-party resort webcam page; link-only.",
+    "freshnessEvidence": "Shanti Maurice currently describes the beach view as its live webcam."
   }
 ]
