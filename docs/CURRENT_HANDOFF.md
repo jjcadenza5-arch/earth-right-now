@@ -1048,3 +1048,16 @@ while preserving the startup/performance ceiling and existing product gates.
 - Country clustering in the inside-ERN reserve is capped to reduce repeated Japan/Kyoto-heavy presentation.
 - Small visible UI text received a conservative readability increase only; no structural spacing/layout redesign was performed.
 - Future typography/spacing work should be incremental and guarded. Prefer small selector-level adjustments over broad restyling because the current layout is accepted and regression risk matters more than pixel-perfect polishing.
+
+
+### Post-social-preview continuation — provider discovery expansion — 2026-10-05
+- Social-preview repair is complete and production is green; autonomous ERN work resumed from the previously open lanes.
+- The operator's 2026-10-05 human playback evidence for Kyoto Fushimi Inari, Kyoto Kifune Shrine, Kyoto Nishiki Market, La Palma Caldera de Taburiente and Verbier is already atomically reflected in both catalog playback markers and provider-observation ledger; playback-evidence consistency is clean.
+- Continued provider-discovery research in three large batches. Newly classified families include Alaska Volcano Observatory, Aruba Tourism Authority, City of Brussels, City of Dubrovnik, Dresden Elbland Tourism, Gudauri, Hawke's Bay Regional Council, Heidelberg Marketing, Horizons Regional Council, INSIVUMEH, Lake Wānaka Tourism, Servicio Geológico Colombiano, Shetland.org, Sonnenkinderprojekt Namibia, Taiwan Tourism Administration, Tri-Mountain National Scenic Area, USGS/Yellowstone, Visit Zandvoort, ArctiComm, Bansko Ski, Bled, Borovets, Cannes, CENAPRED/UNAM, Cook Islands Airports/Tamanu Beach, Darmstadt Tourismus, EvK2CNR/ISAC CNR, Réunion/IPGP-OVPF and Jasná/Tatry Mountain Resorts.
+- Strong reusable current-image opportunities identified:
+  - Alaska Volcano Observatory: AVO-staff media can be public domain; specific camera ownership still must be checked.
+  - Tri-Mountain National Scenic Area: OGDL Taiwan 1.0 can support reuse with attribution, subject to third-party exclusions.
+  - USGS Yellowstone Volcano Observatory: exact current camera imagery is explicitly Public Domain; one exact endpoint can be staged later with refresh/truth checks.
+- All other reviewed families remain fail-closed LINK_ONLY unless exact rights/permission supports more.
+- Current provider-discovery backlog among healthy/current external sources is down to 39 provider families; continue in large batches, prioritizing leverage and explicit public reuse paths rather than volume.
+- Existing owner gates remain unchanged: Takayama current-image review and any expired inside-ERN playback renewal still require genuine human review; do not auto-renew from reachability.
