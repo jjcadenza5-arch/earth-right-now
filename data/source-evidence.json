@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T10:43:00Z",
+  "generatedAt": "2026-10-05T11:37:30Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1857,6 +1857,18 @@
         "lastModified": "Mon, 05 Oct 2026 06:39:02 GMT",
         "evidenceAgeMinutes": 4.1
       }
+    },
+    "taiwan-wanggong-fishing-port": {
+      "freshnessEvidence": "Taiwan Tourism Administration official live-camera page checked 2026-10-05 lists Wang Gong Fishing Port in Changhua as operating and identifies Changhua County Government as the provider.",
+      "rightsBasis": "Official tourism live-camera listing. ERN remains LINK_ONLY and does not claim public embed permission.",
+      "coordinateSourceUrl": "https://www.tad.gov.tw/m1.aspx?keystring=10007&sNo=0042331",
+      "story": "Official current view of Wang Gong Fishing Port."
+    },
+    "bariloche-cerro-catedral": {
+      "freshnessEvidence": "Catedral Alta Patagonia first-party webcams page checked 2026-10-05 presents live streaming for Punta Princesa plus resort images updating every five minutes.",
+      "rightsBasis": "First-party resort webcam page. ERN remains LINK_ONLY and does not claim public embed permission.",
+      "coordinateSourceUrl": "https://catedralaltapatagonia.com/webcams/",
+      "story": "First-party current Cerro Catedral mountain conditions."
     }
   },
   "prague-petrin-tower": {
