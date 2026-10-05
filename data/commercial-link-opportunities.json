@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T19:35:00Z",
+  "generatedAt": "2026-10-05T19:45:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -155,7 +155,8 @@
       "id": "viator-dublin",
       "destination": "Dublin",
       "placeIds": [
-        "dublin-temple-bar"
+        "dublin-temple-bar",
+        "ireland-dublin-port"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -3968,6 +3969,66 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Kingston/d22634-ttd",
       "publicInventoryEvidence": "Current Viator Kingston destination inventory contains 300+ experiences across cultural, historical, sightseeing and transport categories.",
       "nextAction": "Generate one owner-side Kingston destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-aran-islands",
+      "destination": "Aran Islands / Galway, Ireland",
+      "placeIds": [
+        "ireland-inis-mor"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party current Inis Mór view and Viator currently offers Aran Islands day trips/cruises from Galway.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Galway/Aran-Islands-and-Cliffs-of-Moher-Centre-and-Cruise-Day-Trip-from-Galway-City/d5156-24984P5",
+      "publicInventoryEvidence": "Current Viator inventory includes Aran Islands excursions and cruises from Galway.",
+      "nextAction": "Generate one owner-side Aran Islands/Galway destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-killarney-lakes",
+      "destination": "Killarney / Ring of Kerry, Ireland",
+      "placeIds": [
+        "ireland-killarney-lakes"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party current Killarney Lakes view and Viator has extensive Killarney/Ring of Kerry inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Killarney/Ring-of-Kerry-Daytour/d911-7672P1",
+      "publicInventoryEvidence": "Current Viator inventory includes Ring of Kerry tours from Killarney with Killarney National Park and lake-region sightseeing.",
+      "nextAction": "Generate one owner-side Killarney destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-chobe-botswana",
+      "destination": "Chobe National Park / Kasane, Botswana",
+      "placeIds": [
+        "botswana-elephant-valley"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party 24-hour Chobe-region wildlife waterhole view and Viator has strong Chobe safari inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Victoria-Falls/Chobe-National-Park-Full-Day-Big-5-Safari-Botswana/d5309-176453P1",
+      "publicInventoryEvidence": "Current Viator inventory includes Chobe National Park game-drive and river-cruise safaris.",
+      "nextAction": "Generate one owner-side Chobe/Kasane destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-masai-mara",
+      "destination": "Masai Mara, Kenya",
+      "placeIds": [
+        "kenya-masai-mara-siria"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party Masai Mara current landscape view and Viator has deep Masai Mara safari inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Nairobi/3-Days-Gamedrive-Safari-In-Masai-Mara-From-Nairobi/d5280-404276P1",
+      "publicInventoryEvidence": "Current Viator inventory includes multi-day Masai Mara game-drive safaris from Nairobi.",
+      "nextAction": "Generate one owner-side Masai Mara destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
