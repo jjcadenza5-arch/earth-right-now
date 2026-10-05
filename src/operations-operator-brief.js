@@ -79,6 +79,15 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     lines.push(`- Current aggregate: ${o.approximateUniqueVisitors||0} approximate unique visitors; ${o.pageViews||0} page views; ${o.facebookReferralViews||0} Facebook-family referral views (${Math.round((o.facebookReferralShareOfPageViews||0)*10000)/100}%).`);
     lines.push(`- Since captured baseline: visitors ${signed(d.approximateUniqueVisitors)}; page views ${signed(d.pageViews)}; Facebook referral views ${signed(d.facebookReferralViews)}; searches ${signed(d.earthSearches)}; place/window opens ${signed(d.windowOpens)}; external-source opens ${signed(d.externalSourceOpens)}.`);
     lines.push(`- Exploration now: ${o.earthSearches||0} searches; ${o.zeroResultSearches||0} zero-result searches; ${o.windowOpens||0} place/window opens; ${o.externalSourceOpens||0} external-source opens.`);
+    const intensity=organicDistributionObservation.exploration?.intensity;
+    if(intensity?.current){
+      const f=n=>Number.isFinite(n)?n.toFixed(2):"n/a";
+      const di=intensity.delta||{};
+      const fd=n=>Number.isFinite(n)?`${n>0?"+":""}${n.toFixed(2)}`:"n/a";
+      lines.push(`- Exploration intensity per approximate visitor: ${f(intensity.current.searchesPerApproxVisitor)} searches; ${f(intensity.current.windowOpensPerApproxVisitor)} place/window opens; ${f(intensity.current.externalSourceOpensPerApproxVisitor)} external-source opens; ${f(intensity.current.travelOptionOpensPerApproxVisitor)} travel-option opens.`);
+      if(intensity.baseline)lines.push(`- Intensity vs baseline: searches ${fd(di.searchesPerApproxVisitor)}; place/window opens ${fd(di.windowOpensPerApproxVisitor)}; external-source opens ${fd(di.externalSourceOpensPerApproxVisitor)}; travel-option opens ${fd(di.travelOptionOpensPerApproxVisitor)}.`);
+      if(Number.isFinite(intensity.current.zeroResultSearchRate))lines.push(`- Zero-result share of searches: ${Math.round(intensity.current.zeroResultSearchRate*10000)/100}%.`);
+    }
     if(s.nextMilestoneHours!==null&&s.nextMilestoneHours!==undefined)lines.push(`- Next observation milestone: ${s.nextMilestoneHours}h after baseline.`);
     else lines.push("- All configured observation milestones have elapsed; use the 7-day-plus result for the first stable comparison.");
     const topSearches=(organicDistributionObservation.exploration?.currentTopSearches||[]).slice(0,5).map(x=>`${x.value} (${x.count})`).join(", ");
