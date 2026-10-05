@@ -1870,3 +1870,141 @@ Do not infer inside-ERN embed permission from successful playback. Any future He
 
 The next current-image pilot event remains the first scheduled renewal at:
 `2026-10-06T00:37:00Z` / 07:37 Thailand time.
+
+
+
+### Facebook organic-distribution observation + analytics hardening — 2026-10-05
+Owner reported manually posting `https://earthrightnow.app` to approximately **50–60 Facebook groups** on 2026-10-05.
+
+This is treated as an organic-distribution learning event, not as evidence of reach, impressions, conversion, booking or revenue.
+
+#### Manual distribution event recorded
+Added `data/organic-distribution-events.json` with:
+- channel: Facebook;
+- method: manual group posting;
+- approximate group count: 50–60;
+- paid: false;
+- automatic posting: false;
+- user-reported: true;
+- no Facebook group names stored;
+- no member data stored;
+- no post text stored.
+
+This event exists only to contextualize aggregate analytics.
+
+#### Existing first-party analytics confirmed suitable
+ERN's existing first-party analytics already measures:
+- approximate visitors;
+- page views;
+- new/returning use;
+- coarse country/region;
+- device class;
+- referrer hostname;
+- place/source opens;
+- privacy-filtered search;
+- verified commercial outbound opens.
+
+Privacy boundary remains:
+- no raw IP storage;
+- no precise location storage;
+- no per-event row retention;
+- no cross-site advertising profiles;
+- DNT/GPC honored;
+- no booking/purchase/revenue inference.
+
+#### Facebook referrer family reporting
+The private owner analytics report now groups Facebook-related hosts into a combined **Facebook-family page views** metric while preserving the raw host table.
+
+This prevents Facebook traffic from being fragmented across hosts such as:
+- `l.facebook.com`
+- `m.facebook.com`
+- `facebook.com`.
+
+Google-family referral views are also summarized separately.
+
+These are referral page views only; they are not impressions, group reach, downstream conversion or revenue.
+
+#### Organic distribution Operations observation
+Added `analytics:distribution-observation`.
+
+Each Operations run now generates:
+`ern-ops/organic-distribution-observation.json`
+
+The artifact combines:
+- latest manually recorded organic-distribution event;
+- aggregate page views;
+- approximate unique visitors;
+- Facebook-family referral page views;
+- Facebook referral share of aggregate page views.
+
+It explicitly forbids inference of:
+- impressions;
+- Facebook group reach;
+- conversion;
+- bookings;
+- revenue;
+- paid promotion.
+
+Operations packet integrity now **requires** this artifact and fails closed if those inference boundaries are violated or the Facebook referral count is malformed.
+
+Regression coverage was added for:
+- grouped Facebook referral reporting;
+- workflow artifact generation;
+- packet integrity boundaries;
+- daily Operations retention.
+
+#### First observed Facebook baseline
+Retained Operations packet `ern-operations-1328`, generated around `2026-10-05T10:54:55Z`, reports:
+- approximate unique visitors: **43**
+- page views: **257**
+- Facebook-family referral page views: **22**
+- Facebook-family share of page views: **8.56%**
+
+Raw Facebook hosts at the same observation:
+- `l.facebook.com`: 16
+- `m.facebook.com`: 4
+- `facebook.com`: 2
+
+Other observed context:
+- Google-family page views: 17
+- Thailand page views: 232
+- US page views: 22
+- one verified commercial outbound open was recorded for the Klook Fushimi Inari offer.
+
+Do **not** interpret the unchanged same-day 22 Facebook referral views as success or failure of the new 50–60-group posting wave. The posting occurred on the same day and analytics may not yet reflect later visits. Use later Operations runs for comparison.
+
+#### Validation
+Latest Operations run for distribution packet integrity:
+- **SUCCESS**
+- retained packet: `ern-operations-1328`
+- packet integrity: **valid**
+- issue count: **0**
+- `organic-distribution-observation.json` appears in required retained files.
+
+Latest Pages run for commit `b64ce40d76b4197c2d6f87e644efe18d2dbb0f62`:
+- **SUCCESS**
+
+Safety/product state unchanged:
+- no paid marketing activated;
+- no social account automation activated;
+- no ranking changes from social/commercial signals;
+- 575 KB performance ceiling unchanged;
+- current-image pilot remains two-source only;
+- public generative Guide remains OFF;
+- public Now Moments remains OFF.
+
+#### Next evidence point
+Allow the organic Facebook wave to produce real traffic evidence before changing product/distribution strategy.
+
+On later Operations runs compare:
+- approximate unique visitors;
+- total page views;
+- Facebook-family referral page views;
+- Facebook share of page views;
+- popular destinations/searches;
+- verified outbound actions.
+
+Do not infer reach or conversion merely from number of Facebook groups posted.
+
+The current-image pilot's next independent event remains the first scheduled renewal at:
+`2026-10-06T00:37:00Z` / 07:37 Thailand time.
