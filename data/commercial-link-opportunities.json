@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T15:55:00Z",
+  "generatedAt": "2026-10-05T16:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3786,6 +3786,23 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/tours/Zurich/Zurich-Private-Car-Tour-to-4-Countries-in-a-Day-with-Rhine-Falls/d577-207305P455",
       "publicInventoryEvidence": "Current Viator Zurich inventory includes day trips that visit Vaduz and Liechtenstein.",
       "nextAction": "Generate one owner-side Liechtenstein/Vaduz Viator tracked destination or product link and manually verify it before public activation; do not imply the selected tour includes Malbun unless exact itinerary evidence says so."
+    },
+    {
+      "id": "viator-gibraltar-rock",
+      "destination": "Gibraltar / Rock of Gibraltar",
+      "placeIds": [
+        "gibraltar-eastern-beach",
+        "gibraltar-camp-little-bay",
+        "gibraltar-sandy-bay"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has three official Gibraltar live beach views, and Viator currently lists in-Gibraltar Rock tours plus day trips from southern Spain. This is strong post-discovery visitor utility and remains commercially downstream.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Gibraltar/Rock-Tour-in-Gibraltar-Guided-Tour-by-Bus-Including-Tickets/d50813-8512P103",
+      "publicInventoryEvidence": "Current Viator inventory includes Rock of Gibraltar tours visiting Europa Point, St Michael's Cave and the Apes Den.",
+      "nextAction": "Generate one owner-side Gibraltar destination or Rock-tour tracked link and manually verify it before public activation; reuse one Gibraltar-level path rather than multiplying beach-specific commercial placements."
     }
   ]
 }
