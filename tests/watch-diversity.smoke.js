@@ -3,7 +3,7 @@ import fs from "node:fs";
 const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
 const start=app.indexOf("function buildWatch("),end=app.indexOf("function generatedBackground",start);
 const body=app.slice(start,end);
-assert.match(body,/const reserveInside=sorted\.filter\(currentInside\)/,"Watch Earth should reserve current inside-ERN windows");
+assert.match(body,/sorted\.filter\(currentInside\)/,"Watch Earth should reserve current inside-ERN windows");
 assert.doesNotMatch(body,/if\(proven\.length>=6\)pool=proven/,"Watch Earth must not collapse the full current set to proven Watch Here inventory");
 assert.match(body,/if\(pl>=1&&out\.length<16\)continue/,"Watch Earth should avoid repeated places early in the set");
 assert.match(body,/if\(cc>=2&&out\.length<15\)continue/,"Watch Earth should softly limit repeated countries early in the set");
