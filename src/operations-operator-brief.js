@@ -1,5 +1,5 @@
 function fmtList(items=[],limit=5){return items.slice(0,limit).map(x=>`- ${x.metric}: ${x.previous} → ${x.current} (${x.delta>0?"+":""}${x.delta})`).join("\n")}
-export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness,phase5OperatingStatus,phase6OperatingStatus,phase7OperatingStatus,phase8OperatingStatus,phase9OperatingStatus,phase10OperatingStatus}={}){
+export function operationsOperatorBrief({snapshot,delta,availability,recovery,research,playbackHorizon,researchPreflight,availabilityContinuity,commercialInventory,commercialOnboarding,submissionTransport,commercialVerificationHorizon,playbackEvidenceConsistency,providerFamilyResearch,providerGeneratedTargets,providerDiscoveryQueue,operatorReviewQueue,researchReviewQueue,sourceRevalidationTriage,commercialResearch,commercialResearchDepth,affiliatePlatformResearch,affiliateApplicationReadiness,earthSignals,guideAi,localDirectory,participationInfrastructure,nowMomentMedia,businessControl,externalGates,earthSignalsLiveHealth,phase4Observation,phase5Readiness,phase5OperatingStatus,phase6OperatingStatus,phase7OperatingStatus,phase8OperatingStatus,phase9OperatingStatus,phase10OperatingStatus,currentImagePilotObservation}={}){
   const direction=delta?.direction||"BASELINE",lines=[];
   lines.push("# ERN Daily Operations Brief","");
   lines.push(`Generated: ${snapshot?.generatedAt||new Date().toISOString()}`);
@@ -62,6 +62,14 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
     for(const item of providerFamilyResearch.items.slice(0,5))lines.push(`- ${item.provider||item.id} — ${item.permissionStatus||"permission review"}; terms ${item.termsEvidenceState||"UNKNOWN"}${Number.isFinite(item.termsAgeDays)?` (${item.termsAgeDays}d)`:""}; ${item.technicalStatus||"technical review"}; next: ${item.nextAction||"manual research"}.`);
     if(providerFamilyResearch.needsTermsReview)lines.push(`- ${providerFamilyResearch.needsTermsReview} provider-family terms review(s) need refresh.`);
     lines.push("- Research-family entries are not public sources. ERN uses provider-branded players only; re-streaming/rebroadcasting remains prohibited.","");
+  }
+  if(currentImagePilotObservation){
+    lines.push("## Current-image pilot observation");
+    lines.push(`- State: ${currentImagePilotObservation.state||"UNKNOWN"}; scheduled renewal dates ${currentImagePilotObservation.successfulScheduledRenewalDates||0}/${currentImagePilotObservation.requiredSuccessfulRenewalDates||2}; expansion ready ${currentImagePilotObservation.expansionReady===true?"YES":"NO"}.`);
+    lines.push(`- Renewal overdue: ${currentImagePilotObservation.renewalOverdue===true?"YES":"NO"}; next expected scheduled renewal: ${currentImagePilotObservation.nextExpectedScheduledAt||"unknown"}.`);
+    if(currentImagePilotObservation.missingExpectedScheduledRenewalDates?.length)lines.push(`- Missing expected scheduled date(s): ${currentImagePilotObservation.missingExpectedScheduledRenewalDates.join(", ")}.`);
+    lines.push(`- Next action: ${currentImagePilotObservation.nextAction||"KEEP_TWO_SOURCE_PILOT_AND_WAIT_FOR_SCHEDULED_RENEWALS"}.`);
+    lines.push("- Automatic expansion remains forbidden; scheduled renewal evidence only determines whether editorial review may open.","");
   }
   if(providerGeneratedTargets?.items?.length){
     lines.push("## Provider-generated target staging");
