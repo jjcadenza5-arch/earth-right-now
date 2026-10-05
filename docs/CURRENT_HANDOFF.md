@@ -1572,3 +1572,102 @@ Operations packet `ern-operations-1313` confirms:
 #### Next autonomous boundary
 No further owner action is required for Yehliu now.
 Do not embed Yehliu inside ERN merely because playback was confirmed. Any future transition from LINK_ONLY/EXTERNAL to EMBED_ALLOWED/EMBED must be a separate permission/platform/editorial decision with its own safeguards.
+
+
+
+### Pre-renewal operations hardening — 2026-10-05
+Continued autonomously after Yehliu human evidence was applied. No pilot expansion or new public feature activation occurred.
+
+#### Pilot state surfaced in operator brief
+The current-image pilot observation report was already generated in Operations but was not included in the human-readable operator brief. This is now fixed.
+
+`operations:brief` now receives `ern-ops/current-image-pilot-observation.json` and renders a dedicated **Current-image pilot observation** section with:
+- current state;
+- successful scheduled renewal dates vs required dates;
+- expansion-ready status;
+- renewal-overdue status;
+- next expected scheduled renewal;
+- missing expected scheduled dates when applicable;
+- exact next action;
+- reminder that automatic expansion remains forbidden.
+
+Retained Operations packet `ern-operations-1318` verifies the rendered brief currently says:
+- state: `OBSERVING`
+- scheduled renewal dates: **0 / 2**
+- expansion ready: **NO**
+- renewal overdue: **NO**
+- next expected renewal:
+  `2026-10-06T00:37:00.000Z`
+  (07:37 Thailand time)
+- next:
+  `KEEP_TWO_SOURCE_PILOT_AND_WAIT_FOR_SCHEDULED_RENEWALS`.
+
+#### Operations packet integrity strengthened
+`current-image-pilot-observation.json` is now a required retained Operations artifact.
+
+Packet-integrity validation now fails closed if:
+- `safety.automaticExpansionAllowed` is not false;
+- `expansionReady=true` while `renewalOverdue=true`;
+- `renewalOverdue=true` without a missing expected scheduled date;
+- the missing-date field is not an array.
+
+Retained packet `ern-operations-1318` result:
+- `valid=true`
+- `issueCount=0`
+- current-image pilot observation file present in required files.
+
+#### Renewal ledger contract strengthened
+The scheduled renewal script no longer silently tolerates malformed pilot-ledger structure.
+
+Before touching either pilot source, it now requires:
+- `schemaVersion === 1`;
+- pilot identity exactly `CONTROLLED_IMAGE_REFRESH_2_SOURCE`;
+- valid `activatedAt`;
+- `requiredSuccessfulRenewalDates === 2`;
+- ledger `allowedSourceIds` exactly equal the two approved pilot source ids;
+- `observations` is already a valid array.
+
+Any mismatch aborts renewal before source timestamps/evidence are changed.
+
+Existing source-level fail-closed requirements remain:
+- exactly two controlled target records;
+- public source already `IMAGE_REFRESH`;
+- permission already `EMBED_ALLOWED`;
+- source URL exactly equals the staged target;
+- image fetch/currentness probe must pass;
+- no permission/playback/ranking mutation.
+
+Regression tests now cover the ledger contract explicitly.
+
+#### Yehliu completed human gate remains closed
+Added a regression guard proving the reviewed Yehliu generated target no longer appears in future generated-target human review batches once:
+- `reviewedAt` exists;
+- `reviewOutcome=HUMAN_PLAYBACK_CONFIRMED`.
+
+The human gate must not be repeated unless the target materially changes.
+
+#### Validation
+Latest operational/release validation for this batch:
+- Operations run for ledger fail-closed change: **SUCCESS**
+- retained Operations packet: `ern-operations-1318`
+- packet integrity: **valid / 0 issues**
+- final Pages run for commit `08fba6beee91433e2b31af477acc0e973465eaa4`: **SUCCESS**
+- hard performance budgets unchanged
+- Watch Earth curation semantics unchanged
+- two-source IMAGE_REFRESH pilot remains exactly two sources
+- public Guide remains OFF
+- public Now Moments media remains OFF
+- Yehliu remains external-only.
+
+#### Next real boundary
+Do not expand the current-image pilot before scheduled evidence exists.
+
+First expected scheduled renewal:
+`2026-10-06T00:37:00Z` / **07:37 Thailand time**.
+
+After that run:
+- if successful, the observation ledger should show **1 / 2** successful scheduled dates;
+- if the run fails or does not occur, the overdue guard should eventually surface the missing date after its grace period;
+- either outcome is now visible directly in the retained operator brief and Operations packet.
+
+No owner action is required before that scheduled event.
