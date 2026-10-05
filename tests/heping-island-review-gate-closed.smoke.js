@@ -1,0 +1,10 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const build=fs.readFileSync("scripts/build-operator-review.mjs","utf8");
+const targets=JSON.parse(fs.readFileSync("data/provider-generated-targets.json","utf8"));
+const h=targets.find(x=>x.id==="north-coast-heping-island-youtube-player");
+assert.ok(h?.reviewedAt);
+assert.equal(h.reviewOutcome,"HUMAN_PLAYBACK_CONFIRMED");
+assert.match(build,/!x\.reviewedAt&&!x\.reviewOutcome/);
+const generatedReview=targets.filter(x=>x.integrationKind==="PROVIDER_GENERATED_WIDGET"&&x.exactTargetUrl&&!x.reviewedAt&&!x.reviewOutcome&&x.promotionAllowed===false&&x.catalogMutationAllowed===false&&x.automaticGenerationAllowed===false);
+assert.equal(generatedReview.some(x=>x.id==="north-coast-heping-island-youtube-player"),false);
+console.log("Reviewed Heping Island target is removed from future generated-target human review batches");
