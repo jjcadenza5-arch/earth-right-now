@@ -22,7 +22,7 @@ async function getImage(url){
 const now=new Date(),renewed=[],blocked=[];
 for(const t of pilotTargets){
  const source=rows.find(s=>s.id===t.sourceId);
- if(!source||source.currentImagePilot!==true||source.playback!=="IMAGE_REFRESH"||source.permission!=="EMBED_ALLOWED"){blocked.push({id:t.sourceId,reason:"PILOT_CONTRACT_MISMATCH"});continue}
+ if(!source||source.playback!=="IMAGE_REFRESH"||source.permission!=="EMBED_ALLOWED"||source.sourceUrl!==t.exactTargetUrl){blocked.push({id:t.sourceId,reason:"PILOT_CONTRACT_MISMATCH"});continue}
  let image;try{image=await getImage(t.exactTargetUrl)}catch(error){blocked.push({id:t.sourceId,reason:"FETCH_FAILED",error:String(error?.message||error)});continue}
  const probe=assessCurrentImageProbe(t,{image,now});
  if(probe.state!=="FETCH_OK_TEMPORAL_EVIDENCE_CURRENT"||probe.automatedReviewPassed!==true){blocked.push({id:t.sourceId,reason:probe.state,probe});continue}
