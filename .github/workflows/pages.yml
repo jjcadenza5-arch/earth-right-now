@@ -120,6 +120,7 @@ on:
       - "scripts/mobile-layout-preflight.mjs"
       - "scripts/accessibility-preflight.mjs"
       - "scripts/performance-preflight.mjs"
+      - "scripts/social-preview-production-check.mjs"
       - "scripts/rollback-preflight.mjs"
       - "scripts/participation-preflight.mjs"
       - "scripts/participation-infrastructure-status.mjs"
@@ -292,3 +293,5 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify deployed social preview metadata
+        run: node scripts/social-preview-production-check.mjs https://earthrightnow.app/
