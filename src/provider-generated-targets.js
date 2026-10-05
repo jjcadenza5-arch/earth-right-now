@@ -12,7 +12,7 @@ export function providerGeneratedTargetStatus(rows=[]){
     let state="INVALID";
     if(valid&&safetyOk&&!generated)state=exactTargetState;
     else if(valid&&safetyOk&&generated&&!reviewed)state="DEPLOYED_REVIEW_REQUIRED";
-    else if(valid&&safetyOk&&generated&&reviewed)state=raw.reviewOutcome==="APPROVED"?"REVIEW_APPROVED_NOT_PROMOTED":"REVIEW_FAILED";
+    else if(valid&&safetyOk&&generated&&reviewed)state=raw.reviewOutcome==="APPROVED"?"REVIEW_APPROVED_NOT_PROMOTED":raw.reviewOutcome==="HUMAN_PLAYBACK_CONFIRMED"?"HUMAN_PLAYBACK_CONFIRMED_PENDING_EDITORIAL":"REVIEW_FAILED";
     return{
       id:clean(raw?.id),providerFamilyId:clean(raw?.providerFamilyId),provider:clean(raw?.provider),sourceId:clean(raw?.sourceId),
       integrationKind:raw?.integrationKind||null,truthIfApproved:raw?.truthIfApproved||null,refreshSemantics:raw?.refreshSemantics||null,
@@ -24,6 +24,7 @@ export function providerGeneratedTargetStatus(rows=[]){
         state==="EXACT_PROVIDER_TARGET_URL_REQUIRED"?"IDENTIFY_EXACT_AUTHORIZED_CURRENT_IMAGE_URL":
         state==="DEPLOYED_REVIEW_REQUIRED"&&["PROVIDER_GENERATED_CURRENT_IMAGE","PROVIDER_AUTHORIZED_CURRENT_IMAGE"].includes(raw?.integrationKind)?"VERIFY_CURRENT_IMAGE_FETCH_REFRESH_AND_ATTRIBUTION":
         state==="DEPLOYED_REVIEW_REQUIRED"?"STAGE_EXACT_TARGET_FOR_DEPLOYED_RENDERING_REVIEW":
+        state==="HUMAN_PLAYBACK_CONFIRMED_PENDING_EDITORIAL"?"EDITORIAL_TRUTH_PERMISSION_AND_CATALOG_REVIEW":
         state==="REVIEW_APPROVED_NOT_PROMOTED"?"EDITORIAL_AND_CATALOG_PROMOTION_REVIEW":
         state==="REVIEW_FAILED"?"KEEP_RESEARCH_ONLY_OR_REGENERATE_MATERIALLY_CHANGED_TARGET":"FIX_INVALID_STAGING_RECORD"
     };
