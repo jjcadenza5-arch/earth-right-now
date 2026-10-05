@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T14:16:00Z",
+  "generatedAt": "2026-10-05T13:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3662,6 +3662,66 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Sicily-attractions/Stromboli/d205-a11267",
       "publicInventoryEvidence": "Current Viator inventory includes Stromboli and Aeolian Islands excursions, including boat trips and volcano-viewing experiences.",
       "nextAction": "Generate one owner-side Stromboli / Aeolian Islands Viator tracked destination/search link and manually verify it before public activation; public wording must not imply unrestricted summit access."
+    },
+    {
+      "id": "viator-grand-teton-jackson",
+      "destination": "Grand Teton National Park / Jackson Hole",
+      "placeIds": [
+        "us-grand-teton-national-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official real-time Grand Teton view, and Viator has extensive current Grand Teton wildlife and sightseeing inventory from Jackson.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Jackson-Hole-attractions/Grand-Teton-National-Park/d5261-a10722",
+      "publicInventoryEvidence": "Current Viator inventory lists dozens of Grand Teton National Park tours, including wildlife safaris and full-day sightseeing from Jackson.",
+      "nextAction": "Generate one owner-side Grand Teton / Jackson Viator tracked destination or product link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-rocky-mountain-denver",
+      "destination": "Rocky Mountain National Park / Denver",
+      "placeIds": [
+        "us-rocky-mountain-national-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official active Alpine Visitor Center view, and Viator has current guided Rocky Mountain National Park day trips from Denver.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Denver/Rocky-Mountain-National-Park-Tour-Nature-at-its-Finest/d4837-72188P2",
+      "publicInventoryEvidence": "Current Viator inventory includes guided small-group Rocky Mountain National Park day trips from Denver using Trail Ridge Road and park viewpoints.",
+      "nextAction": "Generate one owner-side Rocky Mountain National Park / Denver Viator tracked destination or product link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-pearl-harbor-arizona",
+      "destination": "Pearl Harbor / USS Arizona Memorial",
+      "placeIds": [
+        "us-pearl-harbor-uss-arizona"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official 24/7 USS Arizona Memorial live stream, and Viator has extensive current Pearl Harbor and USS Arizona tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-CA/tours/Honolulu/Pearl-Harbor-USS-Arizona-Memorial-Tour/d59070-452226P1",
+      "publicInventoryEvidence": "Current Viator inventory includes multiple USS Arizona Memorial and Pearl Harbor tours from Honolulu.",
+      "nextAction": "Generate one owner-side Pearl Harbor / USS Arizona Viator tracked destination or product link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-crater-lake-oregon",
+      "destination": "Crater Lake National Park / Oregon",
+      "placeIds": [
+        "us-crater-lake-national-park"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has an official active Crater Lake current view, and Viator currently lists Crater Lake self-guided driving/audio experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/es-AR/Oregon-tours/Nature-and-Wildlife/d5064-g9-c36",
+      "publicInventoryEvidence": "Current Viator Oregon inventory includes Crater Lake National Park self-guided driving and audio tours.",
+      "nextAction": "Generate one owner-side Crater Lake Viator tracked destination/search link only if the current inventory remains useful; keep it clearly downstream from Earth discovery."
     }
   ]
 }
