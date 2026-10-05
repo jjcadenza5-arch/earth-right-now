@@ -23,21 +23,21 @@ jobs:
           node-version: 22
       - name: Renew only approved pilot evidence
         run: node scripts/renew-current-image-pilot.mjs
-      - name: Confirm only verification timestamps changed
+      - name: Confirm scoped pilot evidence changes
         run: |
           set -euo pipefail
           node tests/current-image-pilot.smoke.js
           node tests/current-image-pilot-renewal.smoke.js
-          git diff -- data/sources.json
+          git diff -- data/sources.json data/current-image-pilot-observations.json
       - name: Commit renewed evidence when changed
         run: |
           set -euo pipefail
-          if git diff --quiet -- data/sources.json; then
-            echo "No evidence timestamp change."
+          if git diff --quiet -- data/sources.json data/current-image-pilot-observations.json; then
+            echo "No pilot evidence change."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/sources.json
+          git add data/sources.json data/current-image-pilot-observations.json
           git commit -m "Renew current-image pilot evidence"
           git push
