@@ -8,6 +8,14 @@ const rows=JSON.parse(await readFile(sourcesPath,"utf8"));
 const targets=JSON.parse(await readFile(targetsPath,"utf8"));
 const observationLedger=JSON.parse(await readFile(observationsPath,"utf8"));
 const pilotIds=new Set(["yellowstone-biscuit-basin-current-image","nz-ruapehu-current-image"]);
+const allowedLedgerIds=Array.isArray(observationLedger.allowedSourceIds)?observationLedger.allowedSourceIds.map(String).sort():[];
+const expectedLedgerIds=[...pilotIds].sort();
+if(observationLedger.schemaVersion!==1)throw new Error("Pilot observation ledger schema mismatch");
+if(observationLedger.pilot!=="CONTROLLED_IMAGE_REFRESH_2_SOURCE")throw new Error("Pilot observation ledger identity mismatch");
+if(!Number.isFinite(Date.parse(observationLedger.activatedAt||"")))throw new Error("Pilot observation ledger activation time invalid");
+if(Number(observationLedger.requiredSuccessfulRenewalDates)!==2)throw new Error("Pilot observation ledger renewal requirement mismatch");
+if(JSON.stringify(allowedLedgerIds)!==JSON.stringify(expectedLedgerIds))throw new Error("Pilot observation ledger allowed source ids mismatch");
+if(!Array.isArray(observationLedger.observations))throw new Error("Pilot observation ledger observations must be an array");
 const pilotTargets=targets.filter(t=>pilotIds.has(t.sourceId));
 if(pilotTargets.length!==2)throw new Error("Expected exactly two controlled current-image pilot targets");
 
@@ -34,7 +42,6 @@ for(const t of pilotTargets){
 }
 if(blocked.length)throw new Error("Pilot renewal blocked: "+JSON.stringify(blocked));
 const stamp=now.toISOString(),date=stamp.slice(0,10),event=process.env.GITHUB_EVENT_NAME||"local";
-observationLedger.observations=Array.isArray(observationLedger.observations)?observationLedger.observations:[];
 observationLedger.observations.push({
   observedAt:stamp,
   utcDate:date,
