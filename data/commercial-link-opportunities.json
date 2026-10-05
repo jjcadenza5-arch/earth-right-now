@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T13:48:00Z",
+  "generatedAt": "2026-10-05T14:12:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3602,6 +3602,36 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Portland/The-Mt-St-Helens-Adventure-Tour/d5065-120361P1",
       "publicInventoryEvidence": "Current Viator inventory includes a full-day guided Mount St. Helens adventure from Portland with Mount St. Helens, Ape Cave, Trail of Two Forests and Windy Ridge/other viewpoints depending on conditions.",
       "nextAction": "Generate one owner-side Mount St. Helens / Portland Viator tracked destination or product link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-mayon-albay",
+      "destination": "Mayon Volcano / Albay",
+      "placeIds": [
+        "mayon-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN already has an official PHIVOLCS current Mayon monitoring view, and Viator currently lists multiple Mayon-specific experiences from Legazpi/Albay. This is a strong current-conditions-to-visit planning bridge without affecting Earth ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-IN/tours/Legazpi/Ultimate-Full-Day-Albay-Bicol-Tour-with-Mayon-Skyline/d51547-236293P3",
+      "publicInventoryEvidence": "Current Viator inventory includes full-day Albay/Mayon sightseeing and Mayon ATV products.",
+      "nextAction": "Generate one owner-side Mayon / Albay Viator tracked destination or product link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-bulusan-sorsogon",
+      "destination": "Bulusan / Sorsogon",
+      "placeIds": [
+        "bulusan-volcano"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN already has an official PHIVOLCS current Bulusan monitoring view, and Viator currently lists Sorsogon/Bicol itineraries that include Lake Bulusan and wider provincial attractions. Keep this as a regional planning path rather than implying volcano access.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Luzon-attractions/Bicol/d26182-a23019",
+      "publicInventoryEvidence": "Current Viator Bicol inventory includes multi-city Albay-Sorsogon tours with Lake Bulusan and other Sorsogon attractions.",
+      "nextAction": "Generate one owner-side Sorsogon / Bulusan-region Viator tracked destination/search link and manually verify it; public copy must not imply direct Bulusan crater access."
     }
   ]
 }
