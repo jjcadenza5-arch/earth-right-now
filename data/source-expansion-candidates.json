@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T19:45:00Z",
+  "generatedAt": "2026-10-05T20:05:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4577,6 +4577,62 @@
       "verifiedAt": "2026-10-05T19:45:00Z",
       "promotedAt": "2026-10-05T19:45:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "tci-grace-bay-somerset-live",
+      "title": "Grace Bay — Providenciales",
+      "country": "Turks and Caicos Islands",
+      "region": "Providenciales / Grace Bay",
+      "provider": "The Somerset on Grace Bay",
+      "sourcePage": "https://livecam.thesomerset.com/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The Somerset currently publishes a dedicated livecam surface for its Grace Bay resort.",
+      "verifiedAt": "2026-10-05T20:05:00Z",
+      "promotedAt": "2026-10-05T20:05:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "bermuda-st-george-town-live",
+      "title": "St. George's — Town Square",
+      "country": "Bermuda",
+      "region": "St. George's",
+      "provider": "Corporation of St. George's / SkylineWebcams",
+      "sourcePage": "https://www.skylinewebcams.com/en/webcam/bermuda/st-george-s-parish/st-george-s-parish/st-george-s-town-square-bermuda.html",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The Corporation of St. George's states the Town of St. George is viewable 24/7, 365 days a year via its webcam.",
+      "verifiedAt": "2026-10-05T20:05:00Z",
+      "promotedAt": "2026-10-05T20:05:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "curacao-avila-beach-live",
+      "title": "Willemstad — Avila Beach",
+      "country": "Curaçao",
+      "region": "Willemstad",
+      "provider": "Avila Beach Hotel",
+      "sourcePage": "https://www.avilabeachhotel.com/plan-your-stay/location-transportation-how-to-get-here/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Avila Beach Hotel states its live webcam cycles through three angles every 30 seconds and can be checked day and night.",
+      "verifiedAt": "2026-10-05T20:05:00Z",
+      "promotedAt": "2026-10-05T20:05:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "curacao-lionsdive-live",
+      "title": "Willemstad — LionsDive & Mambo Beach",
+      "country": "Curaçao",
+      "region": "Willemstad / Mambo Beach",
+      "provider": "LionsDive Beach Resort",
+      "sourcePage": "https://www.lionsdive.com/the-resort/live-webcam/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "LionsDive explicitly describes the stream as live, unedited and real-time.",
+      "verifiedAt": "2026-10-05T20:05:00Z",
+      "promotedAt": "2026-10-05T20:05:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
