@@ -287,5 +287,29 @@
     "notes": "Documented GeoNet latest image for Whakaari/White Island from Te Kaha. Attribution required; verify current image freshness automatically before any catalog mutation.",
     "state": "DEPLOYED_REVIEW_REQUIRED",
     "generatedAt": "2026-10-05T06:50:00Z"
+  },
+  {
+    "id": "north-coast-yehliu-youtube-player",
+    "providerFamilyId": "north-coast-taiwan-live-cameras",
+    "provider": "Taiwan Tourism Administration / North Coast & Guanyinshan National Scenic Area",
+    "sourceId": "taiwan-yehliu-live",
+    "integrationKind": "PROVIDER_GENERATED_WIDGET",
+    "truthIfApproved": "LIVE_VIDEO",
+    "refreshSemantics": "OFFICIAL_PAGE_YOUTUBE_LIVE_PLAYER",
+    "state": "DEPLOYED_REVIEW_REQUIRED",
+    "generatorUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007411",
+    "exactCode": null,
+    "exactTargetUrl": "https://www.youtube.com/embed/ZjuY4qKaj40",
+    "generatedAt": "2026-10-05T10:00:00Z",
+    "reviewedAt": null,
+    "reviewOutcome": null,
+    "promotionAllowed": false,
+    "catalogMutationAllowed": false,
+    "automaticGenerationAllowed": false,
+    "notes": "Exact branded YouTube embed resolved from the official Yehliu Geopark live-camera page. Preserve YouTube branding and do not restream. Public ERN source remains LINK_ONLY and currently typed LIVE_IMAGE until deployed human review confirms the exact player is live/current and an editorial truth-type transition is explicitly approved.",
+    "extractionMode": "OFFICIAL_PAGE_EXACT_YOUTUBE_EMBED",
+    "manualInteractionRequired": false,
+    "blockerReason": null,
+    "lastExtractionAttemptAt": "2026-10-05T10:00:00Z"
   }
 ]
