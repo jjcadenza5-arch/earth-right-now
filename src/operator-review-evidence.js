@@ -1,5 +1,5 @@
 const OUTCOMES=new Set(["HUMAN_PLAYBACK_CONFIRMED","PLAYBACK_FAILED","INCONCLUSIVE"]);
-const TYPES=new Set(["restore","research"]);
+const TYPES=new Set(["restore","research","generated"]);
 function normalizeOriginPath(raw){
  try{
    const u=new URL(String(raw||""));
@@ -11,12 +11,13 @@ function normalizeOriginPath(raw){
 export function validateOperatorReviewEvidence(packet,{
  knownSourceIds=[],
  researchIds=[],
+ generatedTargetIds=[],
  expectedReviewOrigins=[],
  maxItemAgeHours=null,
  now=new Date(),
  futureSkewMinutes=5
 }={}){
- const accepted=[],rejected=[],seen=new Set(),known=new Set([...knownSourceIds].map(String)),research=new Set([...researchIds].map(String));
+ const accepted=[],rejected=[],seen=new Set(),known=new Set([...knownSourceIds].map(String)),research=new Set([...researchIds].map(String)),generated=new Set([...generatedTargetIds].map(String));
  const expectedOrigins=new Set((expectedReviewOrigins||[]).map(normalizeOriginPath).filter(Boolean));
  const nowMs=now instanceof Date?now.getTime():Number(now);
  if(!packet||typeof packet!=="object")return{ok:false,accepted,rejected:[{reason:"INVALID_PACKET"}],sourceEvidence:[],researchEvidence:[]};
@@ -38,6 +39,7 @@ export function validateOperatorReviewEvidence(packet,{
    seen.add(key);
    if(type==="restore"&&!known.has(id)){rejected.push({id,reason:"UNKNOWN_SOURCE_ID"});continue}
    if(type==="research"&&!research.has(id)){rejected.push({id,reason:"UNKNOWN_RESEARCH_ID"});continue}
+   if(type==="generated"&&!generated.has(id)){rejected.push({id,reason:"UNKNOWN_GENERATED_TARGET_ID"});continue}
    if(!OUTCOMES.has(item.outcome)){rejected.push({id,reason:"INVALID_OUTCOME"});continue}
    const t=Date.parse(item.observedAt||"");if(!Number.isFinite(t)){rejected.push({id,reason:"INVALID_OBSERVED_AT"});continue}
    if(Number.isFinite(nowMs)){
@@ -49,10 +51,10 @@ export function validateOperatorReviewEvidence(packet,{
    if(item.networkStatus!=="UNKNOWN_NOT_RECORDED"){rejected.push({id,reason:"ITEM_NETWORK_STATUS_MUST_BE_UNKNOWN"});continue}
    accepted.push({id,type,outcome:item.outcome,observedAt:new Date(t).toISOString(),title:item.title||null,provider:item.provider||null,sourceUrl:item.sourceUrl||null,embedUrl:item.embedUrl||null,evidenceKind:"HUMAN_REVIEW",networkStatus:"UNKNOWN_NOT_RECORDED"});
  }
- const sourceEvidence=accepted.filter(x=>x.type==="restore"),researchEvidence=accepted.filter(x=>x.type==="research");
+ const sourceEvidence=accepted.filter(x=>x.type==="restore"),researchEvidence=accepted.filter(x=>x.type==="research"),generatedEvidence=accepted.filter(x=>x.type==="generated");
  return{
    ok:rejected.length===0,
-   accepted,rejected,sourceEvidence,researchEvidence,
+   accepted,rejected,sourceEvidence,researchEvidence,generatedEvidence,
    reviewOrigin:normalizedReviewOrigin,
    originTrusted:expectedOrigins.size?Boolean(normalizedReviewOrigin&&expectedOrigins.has(normalizedReviewOrigin)):null,
    summary:{accepted:accepted.length,rejected:rejected.length,confirmed:accepted.filter(x=>x.outcome==="HUMAN_PLAYBACK_CONFIRMED").length,failed:accepted.filter(x=>x.outcome==="PLAYBACK_FAILED").length,inconclusive:accepted.filter(x=>x.outcome==="INCONCLUSIVE").length},
