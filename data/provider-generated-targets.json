@@ -326,15 +326,16 @@
     "exactCode": null,
     "exactTargetUrl": "https://www.youtube.com/embed/g-T8NbF9xlQ?si=3jcSZd3ho7HNEYKk",
     "generatedAt": "2026-10-05T10:22:00Z",
-    "reviewedAt": null,
-    "reviewOutcome": null,
+    "reviewedAt": "2026-10-05T10:40:42.619Z",
+    "reviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
     "promotionAllowed": false,
     "catalogMutationAllowed": false,
     "automaticGenerationAllowed": false,
-    "notes": "Exact branded YouTube embed resolved from the official Heping Island Geopark live-camera page. Stage for deployed human playback review only. Public ERN source remains LINK_ONLY / EXTERNAL and typed LIVE_IMAGE until human playback evidence and a separate truth/editorial decision exist. Preserve YouTube branding and do not restream.",
+    "notes": "Exact branded YouTube embed resolved from the official Heping Island Geopark live-camera page. Deployed ERN operator review confirmed the player was playing/current at 2026-10-05T10:40:42.619Z. Preserve YouTube branding and do not restream. Public ERN source remains LINK_ONLY / EXTERNAL until a separate truth/permission/catalog decision is applied.",
     "extractionMode": "OFFICIAL_PAGE_EXACT_YOUTUBE_EMBED",
     "manualInteractionRequired": false,
     "blockerReason": null,
-    "lastExtractionAttemptAt": "2026-10-05T10:22:00Z"
+    "lastExtractionAttemptAt": "2026-10-05T10:22:00Z",
+    "reviewEvidencePath": "data/review-evidence/heping-island-generated-2026-10-05.json"
   }
 ]
