@@ -3143,3 +3143,87 @@ Pages run **2548 completed SUCCESS** after restoring compact core serialization 
 - No automatic social posting/account creation.
 - No paid ranking.
 - Commercial value never affects Earth ranking, truth, currentness or health.
+
+
+### Ireland + Africa + Caribbean + Central/Eastern Europe large expansion — 2026-10-05
+This continuation follows the owner's preferred operating balance: substantial batches, no rush, broad Earth coverage, and parallel business development without weakening truth or quality standards.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **427 to 440 places** (**445 healthy source records** total).
+Supplemental lazy Search/Explore catalog advanced from **108 to 121 rows** under the existing bounded 250-row capacity.
+
+This batch added **13 healthy searchable places** across nine countries/territories:
+
+**Ireland — 3 current/live places**
+- Dublin Port — official Dublin Port Company live views toward Poolbeg Lighthouse, Dublin Bay and Dublin City; provider documents real-time streams with an approximately 10-minute delay;
+- Inis Mór / Aran Islands — first-party Aran Islands Hotel live webcam;
+- Killarney Lakes — first-party Aghadoe Heights Lakes of Killarney live webcam.
+
+**Africa — 2 safari/wildlife places**
+- Chobe / Elephant Valley, Botswana — Elephant Valley Lodge's first-party waterhole camera, explicitly available 24 hours a day;
+- Masai Mara / Siria Escarpment, Kenya — Mara Siria Safari Camp's first-party current webcam view with current local conditions context.
+
+**Caribbean islands — 4 first-party / officially supported live places**
+- Grace Bay, Providenciales — The Somerset on Grace Bay first-party livecam;
+- St. George's, Bermuda — municipal-supported 24/7 Town Square live view; the Corporation of St. George's explicitly documents the public webcam;
+- Avila Beach, Curaçao — first-party Avila Beach Hotel live webcam rotating through three angles every 30 seconds;
+- LionsDive / Mambo Beach, Curaçao — first-party LionsDive real-time unedited live resort webcam.
+
+**Central / Eastern Europe — 4 current places**
+- Budapest — Boutique Hotel Victoria first-party 24-hour live Danube/Buda city view;
+- Constanța — official Visit Constanța multi-camera Black Sea live page;
+- Ljubljana — official Slovenian Environment Agency / ARSO current webcam;
+- Triglav / Kredarica — official ARSO current high-Alpine webcam.
+
+All 13 additions remain `LINK_ONLY` / external Search/Explore sources with `watchHold: true`. None can fill Watch Earth under the in-ERN playback rule.
+
+#### Business-side expansion
+Commercial registry advanced from **249 to 258 opportunities**.
+
+New opportunities created:
+- Aran Islands / Galway → Viator;
+- Killarney / Ring of Kerry → Viator;
+- Chobe National Park / Kasane → Viator;
+- Masai Mara → Viator;
+- Grace Bay / Providenciales → Viator;
+- Bermuda / St. George's → Viator;
+- Curaçao / Willemstad → Viator, one island-level path serving both Curaçao live places;
+- Budapest → Viator;
+- Ljubljana / Triglav National Park → Viator, one regional path serving the city/mountain discovery cluster when context is appropriate.
+
+The existing verified Dublin Viator opportunity was extended to include Dublin Port rather than creating a duplicate Dublin commercial path. Existing Klook and Go City Dublin relationships remain separate because they are distinct partner relationships.
+
+Every new opportunity remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`. No tracked URL, product availability or partner claim was invented or activated.
+
+Constanța was deliberately left without a commercial path in this batch because source quality is sufficient but no equally clear already-approved partner fit was strong enough to justify adding one merely for count.
+
+#### Health + release validation
+Operations run **1376 completed SUCCESS** after the Ireland/Africa additions.
+Operations run **1377 completed SUCCESS** after the Caribbean additions.
+Operations run **1378 completed SUCCESS** after the Central/Eastern Europe additions.
+
+Latest validated searchable-source health from Operations 1378:
+- eligible searchable sources: **449**;
+- eligible unique URLs: **342**;
+- rotating cohort: **62 sources / 47 unique URLs**;
+- reachable: **55**;
+- missing: **0**;
+- access-blocked: **5**;
+- temporary/network: **2**;
+- recovered: **0**;
+- repair: **2**;
+- review: **5**;
+- watch: **0**.
+
+The known Bishkek Ala-Too Square and Too-Ashu Pass items remain REPAIR after repeated automated network/server failures, but their provider pages were independently confirmed active earlier, so source truth remains unchanged. The five access-limited records remain REVIEW only. Sara Sara Volcano's prior one-off transient WATCH cleared naturally on the subsequent cohort without catalog mutation.
+
+The hard **575000-byte lean-core ceiling** and lazy supplemental architecture remain unchanged. The expanded supplemental catalog is still well below its 250-row bound.
+
+Protected invariants remain unchanged:
+- Watch Earth = in-ERN playback only;
+- IMAGE_REFRESH untouched until natural renewal;
+- public generative ERN Guide OFF;
+- public Now Moments media OFF;
+- no automatic social posting/account creation;
+- no paid ranking;
+- commercial value never affects Earth ranking, truth, currentness or health.
