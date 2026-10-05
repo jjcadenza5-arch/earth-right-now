@@ -9,7 +9,8 @@ const ids=[
   "usgs-yellowstone-biscuit-basin-current-image",
   "usgs-yellowstone-lake-current-image",
   "geonet-ruapehu-north-current-image",
-  "geonet-taranaki-current-image"
+  "geonet-taranaki-current-image",
+  "usgs-kilauea-v3cam-current-image"
 ];
 
 for(const id of ids){
@@ -31,9 +32,9 @@ for(const id of ids){
   assert.equal(s.playback,"EXTERNAL");
 }
 
-const usgs=targets.filter(x=>ids.includes(x.id)&&x.providerFamilyId==="usgs-yellowstone-volcano-cameras");
-assert.equal(usgs.length,2);
-assert.ok(usgs.every(x=>/USGS|Yellowstone/i.test(x.provider)));
+const usgs=targets.filter(x=>ids.includes(x.id)&&["usgs-yellowstone-volcano-cameras","usgs-kilauea-live"].includes(x.providerFamilyId));
+assert.equal(usgs.length,3);
+assert.ok(usgs.every(x=>/USGS|U.S. Geological Survey|Yellowstone|Volcano Observatory/i.test(x.provider)));
 
 const geonet=targets.filter(x=>ids.includes(x.id)&&x.providerFamilyId==="geonet-volcano-cameras");
 assert.equal(geonet.length,2);
