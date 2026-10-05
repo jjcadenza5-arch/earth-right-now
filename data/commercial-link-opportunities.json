@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T20:20:00Z",
+  "generatedAt": "2026-10-05T19:40:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1488,7 +1488,9 @@
       "placeIds": [
         "hong-kong-victoria-harbour",
         "hong-kong-victoria-peak",
-        "hong-kong-tai-mo-shan"
+        "hong-kong-tai-mo-shan",
+        "hong-kong-clear-water-bay",
+        "hong-kong-cheung-chau"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
@@ -1851,7 +1853,9 @@
       "id": "viator-grand-canyon",
       "destination": "Grand Canyon National Park",
       "placeIds": [
-        "grand-canyon-national-park"
+        "grand-canyon-national-park",
+        "us-grand-canyon-yavapai",
+        "us-grand-canyon-kolb-studio"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -1930,12 +1934,13 @@
       "id": "viator-maui-kihei",
       "destination": "Maui / Kihei",
       "placeIds": [
-        "maui-hale-pau-hana"
+        "maui-hale-pau-hana",
+        "us-haleakala-crater"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN has a healthy Maui/Kihei beach place and Viator currently has substantial Kihei and Maui inventory including Road to Hana and Haleakalā experiences.",
+      "reason": "ERN now has healthy Maui/Kihei beach and Haleakalā summit current views, while Viator has substantial Maui inventory including Haleakalā and Road to Hana experiences.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Kihei/d51007-ttd",
       "publicInventoryEvidence": "Viator currently lists dozens of Kihei/Maui tours and excursions for 2026.",
@@ -4106,6 +4111,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Ljubljana/Ljubljana-Triglav-National-Park-Tour/d5257-15264P17",
       "publicInventoryEvidence": "Current Viator inventory includes Triglav National Park tours from Ljubljana and Bled.",
       "nextAction": "Generate one owner-side Ljubljana/Slovenia destination-level tracked link and verify it; use one useful regional path across both city and mountain discovery only where context makes sense."
+    },
+    {
+      "id": "viator-yosemite",
+      "destination": "Yosemite National Park, California",
+      "placeIds": [
+        "us-yosemite-high-sierra"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Yosemite High Sierra current view, and Viator currently has Yosemite guided-tour and day-trip inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Yosemite-National-Park/d5265-ttd",
+      "publicInventoryEvidence": "Viator currently exposes Yosemite National Park sightseeing and guided experience inventory.",
+      "nextAction": "Generate one owner-side Yosemite destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
