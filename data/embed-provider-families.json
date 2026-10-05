@@ -2172,5 +2172,103 @@
       "Taiwan Tourism Administration / official government live-camera network",
       "Taiwan Tourism Administration"
     ]
+  },
+  {
+    "id": "istanbul-municipality-touristic-cameras",
+    "status": "RESEARCH_ONLY",
+    "provider": "Istanbul Metropolitan Municipality",
+    "familyLabel": "İBB Istanbul touristic-camera network",
+    "researchUrl": "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
+    "termsUrl": "https://www.ibb.istanbul/",
+    "verifiedAt": "2026-10-05T01:45:00Z",
+    "permissionEvidence": "Istanbul Metropolitan Municipality publishes public touristic-camera pages. Reviewed İBB legal/privacy surfaces state that İBB intellectual-property elements and images may not be reused without authorization, and a municipal disclaimer says owned logos/information may not be used for another purpose without permission. ERN therefore keeps İBB camera pages LINK_ONLY and does not infer embed/reuse rights from public availability.",
+    "permissionStatus": "PUBLIC_CAMERA_ACCESS_NO_THIRD_PARTY_REUSE_GRANT_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_İBB_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_İBB_PUBLISHES_OR_GRANTS_EXPLICIT_THIRD_PARTY_CAMERA_EMBED_OR_REUSE_PERMISSION",
+    "networkFamily": "ibb.istanbul",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:45:00Z",
+    "communityGuidelinesUrl": "https://www.ibb.istanbul/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "EXPLICIT_MUNICIPAL_PERMISSION_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://istanbuluseyret.ibb.istanbul/en/touristic-cameras",
+      "https://finansman.ibb.istanbul/en/impermissible-declaration/",
+      "https://tesislerimiz.ibb.istanbul/gizlilik-politikasi/"
+    ],
+    "discoveryProviderAliases": [
+      "Istanbul Metropolitan Municipality",
+      "İstanbul Büyükşehir Belediyesi",
+      "İBB"
+    ]
+  },
+  {
+    "id": "igepn-ecuador-volcano-cameras",
+    "status": "RESEARCH_ONLY",
+    "provider": "Instituto Geofísico EPN",
+    "familyLabel": "IG-EPN Ecuador volcano camera/current-image network",
+    "researchUrl": "https://www.igepn.edu.ec/camaras/",
+    "termsUrl": "https://www2.igepn.edu.ec/publicaciones-instrumentacion/desarrollo/content/80-descargas",
+    "verifiedAt": "2026-10-05T01:45:00Z",
+    "permissionEvidence": "IG-EPN publishes camera and monitoring data, but its current data-use terms state that downloaded geophysical, seismic and volcanic data are for exclusive, non-transferable, non-profit use; sale, commercialization and redistribution of original data via the Internet are prohibited, with source citation required. ERN is a commercial-capable public service, so these terms do not support republishing current camera assets. Keep LINK_ONLY unless a camera-specific commercial reuse grant is documented.",
+    "permissionStatus": "NON_PROFIT_NON_TRANSFERABLE_DATA_TERMS_DO_NOT_SUPPORT_ERN_REPUBLICATION",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_CAMERA_SPECIFIC_COMMERCIAL_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_COMMERCIAL_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_IG_EPN_GRANTS_OR_PUBLISHES_CAMERA_SPECIFIC_COMMERCIAL_REUSE_PERMISSION",
+    "networkFamily": "igepn.edu.ec",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:45:00Z",
+    "communityGuidelinesUrl": "https://www2.igepn.edu.ec/publicaciones-instrumentacion/desarrollo/content/80-descargas",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "NON_PROFIT_ONLY_DATA_TERMS",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www2.igepn.edu.ec/publicaciones-instrumentacion/desarrollo/content/80-descargas",
+      "https://www.igepn.edu.ec/camaras/"
+    ],
+    "discoveryProviderAliases": [
+      "Instituto Geofísico EPN",
+      "IG-EPN",
+      "Instituto Geofísico de la Escuela Politécnica Nacional"
+    ]
+  },
+  {
+    "id": "landsverk-faroe-road-cameras",
+    "status": "RESEARCH_ONLY",
+    "provider": "Landsverk",
+    "familyLabel": "Landsverk Faroe Islands road/current-camera network",
+    "researchUrl": "https://www.landsverk.fo/",
+    "termsUrl": "https://www.landsverk.fo/",
+    "verifiedAt": "2026-10-05T01:45:00Z",
+    "permissionEvidence": "Landsverk publishes public road, weather and infrastructure information including camera views, but the reviewed official surfaces do not expose a clear third-party image reuse, embed or commercial redistribution license for the camera assets. Public access is therefore not treated as reuse permission. ERN keeps Landsverk sources LINK_ONLY unless explicit terms are later found.",
+    "permissionStatus": "PUBLIC_CAMERA_ACCESS_NO_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_EXPLICIT_CAMERA_REUSE_TERMS",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_EXPLICIT_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_LANDSVERK_PUBLISHES_EXPLICIT_CAMERA_IMAGE_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "landsverk.fo",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:45:00Z",
+    "communityGuidelinesUrl": "https://www.landsverk.fo/privatpolitikkur",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_REUSE_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.landsverk.fo/",
+      "https://www.landsverk.fo/privatpolitikkur"
+    ],
+    "discoveryProviderAliases": [
+      "Landsverk"
+    ]
   }
 ]
