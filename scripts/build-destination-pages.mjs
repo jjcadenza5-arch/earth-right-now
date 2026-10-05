@@ -102,7 +102,7 @@ for(const [id,items] of map){
   const graph={
     "@context":"https://schema.org",
     "@graph":[
-      {"@type":"WebPage","@id":url,"url":url,"name":pageName+(currentItems.length?" Live Now":" Live View")+" | Earth Right Now","description":desc,"isPartOf":{"@id":base+"#website"},"mainEntity":{"@id":url+"#place"},"about":{"@id":url+"#place"},"breadcrumb":{"@id":url+"#breadcrumb"},"citation":[...new Set(items.map(s=>safe(s.sourceUrl||s.officialUrl)).filter(Boolean))],...(lastmod?{"dateModified":lastmod}: {})},
+      {"@type":"WebPage","@id":url,"url":url,"name":pageName+(currentItems.length?" Live Now":" Live View")+" | Earth Right Now","description":desc,"isPartOf":{"@id":base+"#website"},"mainEntity":{"@id":url+"#place"},"about":{"@id":url+"#place"},"breadcrumb":{"@id":url+"#breadcrumb"},"citation":[...new Set(items.map(s=>safe(s.officialUrl||s.sourceUrl)).filter(Boolean))],...(lastmod?{"dateModified":lastmod}: {})},
       placeData,
       {"@type":"BreadcrumbList","@id":url+"#breadcrumb","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Earth Right Now","item":base},
@@ -133,7 +133,7 @@ for(const [id,items] of map){
     :"";
 
   const cardFor=s=>{
-    const href=safe(s.sourceUrl||s.officialUrl);
+    const href=safe(s.officialUrl||s.sourceUrl);
     const checked=date(s.lastSuccessfulCheck||s.checkedAt);
     const fresh=checked?' · ERN checked <time datetime="'+esc(checked)+'">'+esc(checked.slice(0,10))+'</time>':" · verification time unavailable";
     const playbackChecked=s.playback==="EMBED"?date(s.playbackVerifiedAt):null;
