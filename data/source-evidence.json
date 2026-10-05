@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T07:00:27.350Z",
+  "generatedAt": "2026-10-05T07:32:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -661,8 +661,8 @@
       "coordinateSourceUrl": "https://insivumeh.gob.gt/camaras-de-vigilancia-volcanica/"
     },
     "nz-ruapehu-current-image": {
-      "freshnessEvidence": "GeoNet states its remotely operated volcano cameras send/display a new image about every 10 minutes; latest images and metadata include date-time labels.",
-      "rightsBasis": "Official GeoNet volcano camera network; ERN links to provider pages and does not copy or restream monitoring imagery.",
+      "freshnessEvidence": "GeoNet documents stable latest-image endpoints with typical updates about every 10 minutes. ERN Operations machine verification checks the exact Ruapehu North JPEG and temporal evidence before renewal.",
+      "rightsBasis": "GeoNet content is licensed CC BY 3.0 NZ. ERN preserves visible acknowledgement of the GeoNet programme and sponsors NHC, Earth Sciences NZ, LINZ, NEMA and MBIE.",
       "coordinateNote": "Representative place/volcano coordinate for map placement; not claimed as the exact camera installation point.",
       "coordinateSourceUrl": "https://www.geonet.org.nz/volcano/cameras",
       "machineCurrentImageVerification": {
@@ -673,6 +673,16 @@
         "bytes": 46831,
         "lastModified": "Mon, 05 Oct 2026 06:41:02 GMT",
         "evidenceAgeMinutes": 2.1
+      },
+      "currentImagePilot": {
+        "state": "ACTIVE_CONTROLLED_PILOT",
+        "activatedAt": "2026-10-05T07:20:00Z",
+        "exactImageUrl": "https://images.geonet.org.nz/volcano/cameras/latest/ruapehunorth.jpg",
+        "officialSourcePage": "https://www.geonet.org.nz/data/types/camera",
+        "refreshMs": 600000,
+        "attribution": "GeoNet programme and sponsors: NHC, Earth Sciences NZ, LINZ, NEMA & MBIE",
+        "automaticEvidenceRenewal": true,
+        "rollbackOn": "freshness probe failure, rights change, source contract mismatch, release regression or performance regression"
       }
     },
     "nz-ngauruhoe-current-image": {
@@ -742,8 +752,8 @@
       }
     },
     "yellowstone-biscuit-basin-current-image": {
-      "freshnessEvidence": "USGS states the Biscuit Basin monitoring camera captures and publishes a new image every 15 minutes; a new camera was installed July 22, 2026.",
-      "rightsBasis": "USGS Yellowstone Volcano Observatory public webcam; ERN links to the government source and does not copy or restream imagery.",
+      "freshnessEvidence": "USGS documents the Biscuit Basin static research-camera image as updating approximately every 15 minutes. ERN Operations machine verification checks image validity and fresh temporal evidence before renewal.",
+      "rightsBasis": "USGS / Yellowstone Volcano Observatory identifies the Biscuit Basin research-camera media as Public Domain. ERN displays the exact current-image endpoint without restreaming or relabeling it as live video.",
       "coordinateNote": "Representative Biscuit Basin location for map placement; not claimed as the exact camera mast coordinate.",
       "coordinateSourceUrl": "https://www.usgs.gov/observatories/yvo/news/a-new-camera-now-observing-activity-biscuit-basin",
       "story": "Current research-camera view across Biscuit Basin and Black Diamond Pool, updated every 15 minutes.",
@@ -755,6 +765,16 @@
         "bytes": 304029,
         "lastModified": "Mon, 05 Oct 2026 06:30:06 GMT",
         "evidenceAgeMinutes": 13
+      },
+      "currentImagePilot": {
+        "state": "ACTIVE_CONTROLLED_PILOT",
+        "activatedAt": "2026-10-05T07:20:00Z",
+        "exactImageUrl": "https://volcview.wr.usgs.gov/ashcam-api/images/webcams/ys-bbsn2/current.jpg",
+        "officialSourcePage": "https://www.usgs.gov/media/webcams/biscuit-basin-webcam-0",
+        "refreshMs": 900000,
+        "attribution": "U.S. Geological Survey / Yellowstone Volcano Observatory",
+        "automaticEvidenceRenewal": true,
+        "rollbackOn": "freshness probe failure, rights change, source contract mismatch, release regression or performance regression"
       }
     },
     "yellowstone-lake-current-image": {
