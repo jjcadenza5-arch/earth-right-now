@@ -2042,5 +2042,135 @@
     "discoveryProviderAliases": [
       "Prague City Tourism"
     ]
+  },
+  {
+    "id": "panama-canal-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Panama Canal Authority",
+    "familyLabel": "Panama Canal official web-camera/current-image pages",
+    "researchUrl": "https://pancanal.com/en/",
+    "termsUrl": "https://pancanal.com/en/terms-of-use/",
+    "verifiedAt": "2026-10-05T01:40:00Z",
+    "permissionEvidence": "The Panama Canal Authority operates official web cameras, but its current Terms of Use prohibit commercial or for-profit copying, distribution, transmission, reproduction or publication without prior express authorization. Its image terms also prohibit using images as content of another platform/site without prior written consent. ERN therefore keeps Panama Canal camera pages LINK_ONLY.",
+    "permissionStatus": "COMMERCIAL_REUSE_AND_CROSS_SITE_IMAGE_USE_REQUIRE_PRIOR_EXPRESS_WRITTEN_AUTHORIZATION",
+    "technicalStatus": "DO_NOT_STAGE_IMAGE_OR_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_WRITTEN_AUTHORIZATION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_PANAMA_CANAL_AUTHORITY_GRANTS_EXPLICIT_COMMERCIAL_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "pancanal.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:40:00Z",
+    "communityGuidelinesUrl": "https://pancanal.com/en/terms-of-use/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "PRIOR_EXPRESS_AUTHORIZATION_REQUIRED_FOR_COMMERCIAL_REUSE",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://pancanal.com/en/terms-of-use/",
+      "https://pancanal.com/en/"
+    ],
+    "discoveryProviderAliases": [
+      "Panama Canal Authority",
+      "Autoridad del Canal de Panamá"
+    ]
+  },
+  {
+    "id": "australian-antarctic-program-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Australian Antarctic Program",
+    "familyLabel": "Australian Antarctic Division station current-image webcams",
+    "researchUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/",
+    "termsUrl": "https://www.antarctica.gov.au/about-us/contact/",
+    "verifiedAt": "2026-10-05T01:40:00Z",
+    "permissionEvidence": "The Australian Antarctic Division publishes station webcam still images approximately every three minutes and explicitly says the feeds are still images rather than live video. The reviewed public material does not provide a blanket commercial reuse grant for the station webcam images; the AAD provides a dedicated image/video licensing contact. ERN therefore keeps these station webcam pages LINK_ONLY unless a specific licensing basis is documented.",
+    "permissionStatus": "PUBLIC_CURRENT_IMAGES_SPECIFIC_COMMERCIAL_REUSE_LICENSE_NOT_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_IMAGE_VIDEO_LICENSE",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_SPECIFIC_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_AAD_GRANTS_OR_PUBLISHES_EXPLICIT_REUSE_PERMISSION_FOR_STATION_WEBCAM_IMAGES",
+    "networkFamily": "antarctica.gov.au",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:40:00Z",
+    "communityGuidelinesUrl": "https://www.antarctica.gov.au/about-us/contact/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_WEBCAM_IMAGE_REUSE_LICENSE_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.antarctica.gov.au/antarctic-operations/webcams/",
+      "https://www.antarctica.gov.au/antarctic-operations/webcams/faqs-on-station-webcams/",
+      "https://www.antarctica.gov.au/about-us/contact/"
+    ],
+    "discoveryProviderAliases": [
+      "Australian Antarctic Program",
+      "Australian Antarctic Division"
+    ]
+  },
+  {
+    "id": "taiwan-government-camera-network",
+    "status": "RESEARCH_ONLY",
+    "provider": "Taiwan government live-camera network",
+    "familyLabel": "Taiwan public-sector destination/current-camera pages",
+    "researchUrl": "https://www.gov.tw/taiwan/",
+    "termsUrl": "https://www.tipo.gov.tw/tw/copyright/692-14247.html",
+    "verifiedAt": "2026-10-05T01:40:00Z",
+    "permissionEvidence": "Taiwan government sources publish many destination camera views, but Taiwan's Intellectual Property Office explains that photographs on government websites may still be protected and that reuse outside statutory fair-use bounds generally requires authorization. ERN therefore does not infer reusable image or embed rights from government ownership alone and keeps this family LINK_ONLY unless a specific agency grants reuse.",
+    "permissionStatus": "GOVERNMENT_PUBLICATION_DOES_NOT_CREATE_BLANKET_CAMERA_IMAGE_REUSE_RIGHT",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_AGENCY_SPECIFIC_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_AGENCY_SPECIFIC_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_THE_SPECIFIC_CAMERA_AGENCY_PUBLISHES_EXPLICIT_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "gov.tw",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:40:00Z",
+    "communityGuidelinesUrl": "https://www.tipo.gov.tw/tw/copyright/692-14247.html",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "AGENCY_SPECIFIC_PERMISSION_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.gov.tw/taiwan/",
+      "https://www.tipo.gov.tw/tw/copyright/692-14247.html"
+    ],
+    "discoveryProviderAliases": [
+      "Taiwan government live-camera network",
+      "Taiwan government live camera network"
+    ]
+  },
+  {
+    "id": "taiwan-tourism-official-camera-network",
+    "status": "RESEARCH_ONLY",
+    "provider": "Taiwan Tourism Administration / official government live-camera network",
+    "familyLabel": "Taiwan Tourism Administration and scenic-area official camera pages",
+    "researchUrl": "https://www.maolin-nsa.gov.tw/en/",
+    "termsUrl": "https://www.tipo.gov.tw/tw/copyright/692-14247.html",
+    "verifiedAt": "2026-10-05T01:40:00Z",
+    "permissionEvidence": "Tourism Administration and scenic-area government sites expose public camera views, but government-hosted photographs remain potentially copyright protected under Taiwan guidance. ERN therefore treats these views as LINK_ONLY until a camera-specific reuse license, embed grant or agency permission is confirmed.",
+    "permissionStatus": "OFFICIAL_PUBLIC_CAMERA_PAGES_NO_BLANKET_REUSE_LICENSE_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_AGENCY_SPECIFIC_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_AGENCY_SPECIFIC_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_THE_RELEVANT_TOURISM_OR_SCENIC_AREA_AGENCY_GRANTS_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "gov.tw",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:40:00Z",
+    "communityGuidelinesUrl": "https://www.tipo.gov.tw/tw/copyright/692-14247.html",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "AGENCY_SPECIFIC_PERMISSION_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.maolin-nsa.gov.tw/en/",
+      "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007395",
+      "https://www.tipo.gov.tw/tw/copyright/692-14247.html"
+    ],
+    "discoveryProviderAliases": [
+      "Taiwan Tourism Administration / official government live-camera network",
+      "Taiwan Tourism Administration"
+    ]
   }
 ]
