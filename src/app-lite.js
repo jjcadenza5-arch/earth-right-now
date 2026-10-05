@@ -77,7 +77,7 @@ function visitorHour(){return new Date().getHours()}
 function visitorDaypart(){const h=visitorHour();if(h>=5&&h<10)return"morning";if(h>=10&&h<17)return"day";if(h>=17&&h<21)return"evening";return"night"}
 function setProfile(){
 const part=visitorDaypart();const daypartOffset={morning:0,day:1,evening:2,night:3}[part]||0;const autoSlot=(Math.floor(Date.now()/3600000)+daypartOffset+state.setOffset)%4;const automatic=[
-{id:"beautiful",label:"Beautiful Earth",reason:"What part of Earth looks unexpectedly beautiful right now?",boost:s=>isScenic(s)?28:0},
+{id:"beautiful",label:"Beautiful Earth",reason:"What part of Earth looks beautiful right now?",boost:s=>isScenic(s)?28:0},
 {id:"live",label:"Live Around the World",reason:"What is unfolding somewhere else on Earth right now?",boost:s=>currentInside(s)?34:0},
 {id:"cities",label:"Earth in Motion",reason:"Where is the world still moving right now?",boost:s=>isCity(s)?34:0},
 {id:"wander",label:"Keep Wandering",reason:"What might you find if you keep looking?",boost:s=>(/interesting|useful/.test(cats(s))?24:0)}
