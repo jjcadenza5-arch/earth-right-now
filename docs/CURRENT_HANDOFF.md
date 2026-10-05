@@ -1362,3 +1362,98 @@ Newest canonical main after this continuation:
 - Hard performance limits were not raised.
 - Public generative Guide and Now Moments uploads remain OFF.
 - No pilot expansion occurred.
+
+
+
+### Scheduled-renewal overdue guard + Yehliu exact-player human gate — 2026-10-05
+Continued autonomously without expanding the two-source IMAGE_REFRESH pilot.
+
+#### Scheduled renewal resilience
+- Added an explicit regression test for the current-image pilot renewal workflow:
+  - schedule/manual only;
+  - no push trigger;
+  - exact two-source scope;
+  - fail-closed freshness verification;
+  - observation-ledger persistence;
+  - no permission/playback/ranking mutation.
+- Enhanced the pilot observation status so it distinguishes:
+  - normal pre-schedule waiting,
+  - successful scheduled renewal,
+  - a missed/overdue scheduled renewal.
+- First expected scheduled renewal after pilot activation:
+  - 2026-10-06T00:37:00Z
+  - 07:37 Thailand time.
+- A scheduled slot gets a two-hour grace period before it is considered missing.
+- If an expected scheduled date has no successful scheduled observation, state becomes `RENEWAL_OVERDUE`, expansion remains false, and next action is to inspect the renewal workflow while keeping the pilot fail-closed.
+- Current state remains:
+  - `OBSERVING`
+  - 0 / 2 successful scheduled renewal dates
+  - no expected dates missing yet
+  - `renewalOverdue=false`
+  - `expansionReady=false`.
+- Added a regression test preserving the machine-vs-human boundary:
+  - `IMAGE_REFRESH` is machine-first and does not require EMBED playback proof;
+  - real `EMBED` playback continues to require human proof.
+
+#### Icelandic Meteorological Office research loop
+- Rechecked the official Reykjavík webcam page and IMO rights basis.
+- Ownership and reuse rights remain strong:
+  - cameras belong to IMO;
+  - photos/data may be reused, including commercial use, with attribution/download-date requirements unless otherwise stated.
+- The public webcam UI still exposes dynamic time-slot frames and does not document a stable reusable current-image asset/API.
+- Updated status to stop repeated probing:
+  - rights basis confirmed;
+  - exact stable asset unresolved;
+  - keep RESEARCH_ONLY;
+  - do not guess dynamic /0..7 routes or scrape an unstable asset.
+
+#### Yehliu exact target resolution
+- Resolved the official North Coast & Guanyinshan National Scenic Area **Yehliu Geopark Live Camera** page to an exact provider-branded YouTube embed:
+  - video/player id: `ZjuY4qKaj40`
+  - exact embed: `https://www.youtube.com/embed/ZjuY4qKaj40`
+  - source surface: official North Coast government live-camera page.
+- This clarified the correct rights/technical lane:
+  - do NOT treat the YouTube player as an OGDL-reusable raw image;
+  - preserve YouTube-branded player behavior and YouTube terms;
+  - do not restream.
+- Added private staged target:
+  - id: `north-coast-yehliu-youtube-player`
+  - integration kind: `PROVIDER_GENERATED_WIDGET`
+  - truth if approved: `LIVE_VIDEO`
+  - state: `DEPLOYED_REVIEW_REQUIRED`
+  - review mode: `DEPLOYED_HUMAN_RENDERING_REQUIRED`
+  - promotionAllowed=false
+  - catalogMutationAllowed=false
+  - automaticGenerationAllowed=false.
+- Public Yehliu catalog source remains unchanged:
+  - `LIVE_IMAGE`
+  - `LINK_ONLY`
+  - `EXTERNAL`.
+- Added regression coverage ensuring the exact YouTube target cannot be auto-promoted or mistaken for a current-image target.
+
+#### Operator review lab
+- Extended the existing noindex operator review lab with a separate **Exact provider-generated targets** lane.
+- This lane reads exact staged provider targets only when:
+  - integration kind is `PROVIDER_GENERATED_WIDGET`;
+  - exact target URL exists;
+  - target is unreviewed;
+  - all promotion/catalog/automatic-generation flags remain false.
+- Generated-target cards use the research-safe embed allowlist and remain local-evidence only.
+- Exact generated targets now participate in the review-batch hash so stale review pages cannot submit evidence against a newer batch.
+- Release preflight confirms:
+  - review page exists;
+  - loadable embed count is coherent;
+  - current batch manifest matches;
+  - Yehliu exact target is present.
+- Latest deployed release logs explicitly show:
+  - `generatedReview: ["north-coast-yehliu-youtube-player"]`
+  - Yehliu included among loadable embeds.
+- Latest Pages run for commit `52cbafe0addf43f80214d93dc9745cc674699a0e`: **SUCCESS**.
+- Operations for the generated-target staging path: **SUCCESS**.
+- Operations classified Yehliu exactly as:
+  - `DEPLOYED_REVIEW_REQUIRED`
+  - `DEPLOYED_HUMAN_RENDERING_REQUIRED`
+  - no promotion/catalog mutation.
+
+#### Genuine next human gate
+The next action is one deployed human playback review of the Yehliu exact YouTube player from the ERN operator review page. Do not change the public Yehliu source before this check. If playback is confirmed current/live, record human evidence first; only then evaluate truth-type and catalog transition separately.
