@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T18:45:00Z",
+  "generatedAt": "2026-10-05T19:00:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4290,6 +4290,51 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Moorea/d5182-ttd",
       "publicInventoryEvidence": "Current Viator Moorea destination inventory includes 100+ tours and excursions.",
       "nextAction": "Generate one owner-side Moorea destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-nassau-bahamas",
+      "destination": "Nassau / New Providence, The Bahamas",
+      "placeIds": [
+        "bahamas-nassau-cable-beach"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party live Cable Beach/Nassau window and Viator has strong Nassau/New Providence excursion and transfer inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/tours/New-Providence-Island/Baha-Mar-Private-Airport-Transfers/d24115-103110P13",
+      "publicInventoryEvidence": "Current Viator inventory includes Baha Mar/Nassau transfers and New Providence activities.",
+      "nextAction": "Generate one owner-side Nassau/New Providence destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-puerto-rico-isla-verde",
+      "destination": "San Juan / Isla Verde, Puerto Rico",
+      "placeIds": [
+        "puerto-rico-isla-verde"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party live Isla Verde Beach window, and Viator currently has San Juan and Isla Verde coastal activity inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/San-Juan/Jet-Ski-Adventure-in-Carolina-Puerto-Rico/d903-48979P1",
+      "publicInventoryEvidence": "Current Viator inventory includes Isla Verde coastal activities and broader San Juan tours.",
+      "nextAction": "Generate one owner-side San Juan / Isla Verde destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-cabarete",
+      "destination": "Cabarete, Dominican Republic",
+      "placeIds": [
+        "dominican-cabarete-beach"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party current Cabarete Beach window, and Viator has a dedicated Cabarete destination with 100+ current activities.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Cabarete/d31317-ttd",
+      "publicInventoryEvidence": "Current Viator Cabarete inventory includes water sports, 4WD, nature and excursion products.",
+      "nextAction": "Generate one owner-side Cabarete destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
