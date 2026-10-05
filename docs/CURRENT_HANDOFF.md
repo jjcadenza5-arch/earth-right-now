@@ -1081,3 +1081,38 @@ while preserving the startup/performance ceiling and existing product gates.
 - GitHub Pages for that commit completed SUCCESS. ERN Operations was still running at the time this checkpoint was written; do not infer failure from that in-progress state.
 - No public ranking, Watch Earth selection, source-health state, playback proof, Guide/Now Moments gate or performance budget was changed.
 - Next productive provider-rights lane remains explicit reusable current-image/player paths, including Icelandic Meteorological Office and eligible Taiwan scenic-area assets, while keeping ambiguous sources LINK_ONLY.
+
+
+
+### Reusable current-image staging + machine-first review — 2026-10-05
+- Continued autonomously from the exact USGS/GeoNet candidate checkpoint.
+- Private staging now contains exact fail-closed targets for:
+  - USGS/YVO Yellowstone Biscuit Basin current image;
+  - USGS/YVO Yellowstone Lake current image;
+  - GeoNet Ruapehu North current image;
+  - GeoNet Taranaki Maunga current image;
+  - USGS/HVO Kīlauea V3cam current image.
+- Existing public catalog entries remain LINK_ONLY / EXTERNAL. No automatic public promotion occurred.
+- USGS Kīlauea V3cam:
+  - official USGS media identifies the camera image as Public Domain;
+  - exact direct current-image target resolved to `https://volcanoes.usgs.gov/cams/V3cam/images/M.jpg`;
+  - image is timestamped and USGS-branded;
+  - preserve CURRENT_IMAGE semantics; do not conflate the still image with the separate livestream.
+- Icelandic Meteorological Office Reykjavík:
+  - official page confirms the web cameras belong to IMO;
+  - IMO terms allow private and commercial reuse unless otherwise stated, with Icelandic Meteorological Office attribution and download date;
+  - exact stable current-image asset URL remains unresolved, so the candidate stays preparation-only and fail-closed.
+- Taiwan Tri-Mountain National Scenic Area:
+  - official government website disclosure uses OGDL Taiwan 1.0 with attribution for publicly published copyrightable materials, subject to exclusions for third-party works;
+  - official Emei Lake live-camera page confirmed, but exact current player/asset ownership is not exposed clearly enough to establish that the live player itself falls within the open license;
+  - candidate therefore remains research-only until the exact agency-owned target/player is resolved.
+- Added `tests/provider-authorized-current-image-staging.smoke.js` to ensure exact reusable image targets remain source-bound, unreviewed, non-promotable and non-mutating until review completes.
+- Improved provider-generated-target operations semantics:
+  - exact current-image targets now use `AUTOMATED_FETCH_REFRESH_ATTRIBUTION_FIRST`;
+  - interactive widgets/players continue to use `DEPLOYED_HUMAN_RENDERING_REQUIRED`;
+  - this reduces unnecessary owner checks and preserves human review only where media/player judgment is actually required.
+- Validation after the review-mode change:
+  - latest GitHub Pages deployment SUCCESS;
+  - JavaScript syntax check SUCCESS;
+  - ERN Operations Check SUCCESS.
+- Takayama and any genuinely expired inside-ERN playback evidence remain the real human-media gates. Do not renew them from URL reachability alone.
