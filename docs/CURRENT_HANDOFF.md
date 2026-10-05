@@ -2273,3 +2273,37 @@ After the natural scheduled run, verify:
 - status becomes **1/2**, not expansion-ready;
 - Pages and Operations succeed;
 - no automatic expansion occurs.
+
+### Searchable-place and business expansion checkpoint — 2026-10-05
+Owner authorized continued expansion of both searchable places and business opportunities.
+
+New searchable places added through `data/search-supplemental.json`:
+- Wang Gong Fishing Port — Changhua, Taiwan — official Taiwan Tourism Administration live-camera listing, currently marked operating; `EXTERNAL_LIVE / LINK_ONLY / EXTERNAL`; search/discovery only.
+- Cerro Catedral — Bariloche, Argentina — first-party Catedral Alta Patagonia webcam page with current live/current mountain views; `EXTERNAL_LIVE / LINK_ONLY / EXTERNAL`; search/discovery only.
+
+Full provenance remains in `data/source-evidence.json`. No public embed permission was inferred.
+
+Business opportunities added using existing partner relationships:
+- `viator-bariloche-cerro-catedral` — exact owner-side tracked link still required.
+- `klook-changhua-wanggong` — exact owner-side tracked link still required.
+
+Current public inventory evidence confirms active Bariloche/Patagonia inventory on Viator and active Changhua attraction inventory on Klook. No tracked URL was invented and commercial value remains excluded from Earth ranking.
+
+Performance guard:
+- Pages run 2465 correctly failed when both new places were temporarily placed in the lean runtime catalog: 576,621 bytes against the hard 575 KB ceiling.
+- The ceiling was not raised.
+- Both places were moved to the existing searchable supplemental catalog instead.
+- Final Pages run 2468 completed SUCCESS with the hard 575 KB ceiling intact.
+- Operations runs 1343–1345 remained successful through the adjustment path.
+
+Final implementation head before this handoff update:
+`b47eaaf2f17a2320cf899399f079f7123c05e402`
+
+Boundaries unchanged:
+- IMAGE_REFRESH remains exactly two sources and 0/2 scheduled observations.
+- No manual renewal trigger occurred.
+- Public generative Guide remains OFF.
+- Public Now Moments media remains OFF.
+- No automatic social posting/account creation.
+- No paid ranking.
+- No automatic commercial placement or link rewriting.
