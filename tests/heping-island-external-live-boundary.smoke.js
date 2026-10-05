@@ -1,0 +1,14 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
+const evidence=JSON.parse(fs.readFileSync("data/source-evidence.json","utf8"));
+const s=sources.find(x=>x.id==="taiwan-heping-island-live");
+assert.ok(s);
+assert.equal(s.truth,"EXTERNAL_LIVE");
+assert.equal(s.permission,"LINK_ONLY");
+assert.equal(s.playback,"EXTERNAL");
+assert.equal(s.sourceUrl,"https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007412");
+assert.ok(!s.embedUrl);
+const e=evidence.sources["taiwan-heping-island-live"];
+assert.equal(e.humanPlaybackEvidence.outcome,"HUMAN_PLAYBACK_CONFIRMED");
+assert.equal(e.permissionBoundary.includes("LINK_ONLY / EXTERNAL"),true);
+console.log("Heping Island stays truthful external live with human evidence and no embed escalation");
