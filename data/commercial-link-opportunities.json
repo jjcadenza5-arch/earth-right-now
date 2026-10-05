@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T19:10:00Z",
+  "generatedAt": "2026-10-05T20:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2066,12 +2066,13 @@
       "id": "viator-etosha-future",
       "destination": "Etosha National Park / Namibia",
       "placeIds": [
-        "namibia-okaukuejo-waterhole"
+        "namibia-okaukuejo-waterhole",
+        "namibia-kambaku-waterhole"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a first-party NWR live Okaukuejo Waterhole window, and Viator currently has Etosha safari inventory. One destination-level Etosha planning link can serve the wildlife-discovery journey without affecting Earth ranking.",
+      "reason": "ERN now has healthy Namibia wildlife views at Okaukuejo and Kambaku; one Namibia/Etosha safari planning bridge can serve the wildlife-discovery journey where the exact itinerary scope is clearly disclosed.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Windhoek/4-Day-Etosha-Swakopmund/d5574-9289P3",
       "publicInventoryEvidence": "Current Viator inventory includes multi-day Etosha National Park safari/game-drive products from Windhoek.",
@@ -4350,6 +4351,51 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Beau-Vallon/d50351-ttd",
       "publicInventoryEvidence": "Current Viator Beau Vallon inventory includes reef safaris, island tours, marine excursions and transfers.",
       "nextAction": "Generate one owner-side Beau Vallon or Mahé destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-koh-samui",
+      "destination": "Koh Samui, Thailand",
+      "placeIds": [
+        "thailand-koh-samui-crystal-bay"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party live Silver Beach view on Koh Samui, and Viator has substantial Koh Samui island, jungle, snorkeling and sightseeing inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Koh-Samui/d347-ttd",
+      "publicInventoryEvidence": "Current Viator Koh Samui inventory includes island sightseeing, jungle safaris, snorkeling and boat trips.",
+      "nextAction": "Generate one owner-side Koh Samui destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-madikwe",
+      "destination": "Madikwe Game Reserve, South Africa",
+      "placeIds": [
+        "south-africa-madikwe-tau"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party Tau Game Lodge live waterhole view in Madikwe, and Viator has current Madikwe safari inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-ZA/tours/Gaborone/Madikwe-Game-Reserve-Day-Tour/d50578-194302P2",
+      "publicInventoryEvidence": "Current Viator inventory includes Madikwe Game Reserve day and overnight safari products.",
+      "nextAction": "Generate one owner-side Madikwe destination/product tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-klaserie-kruger",
+      "destination": "Klaserie / Greater Kruger, South Africa",
+      "placeIds": [
+        "south-africa-klaserie-waterside"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has a first-party Klaserie waterhole live view; Viator has deep Greater Kruger safari inventory, but exact Klaserie-specific usefulness must be verified before activation.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Kruger-National-Park-tours/Safaris/d776-g9-c37",
+      "publicInventoryEvidence": "Viator currently lists a large catalog of Kruger-area safaris and game drives.",
+      "nextAction": "Only activate if the owner-side partner search yields a useful Klaserie/Greater Kruger destination path; otherwise leave dormant rather than forcing a generic product."
     }
   ]
 }
