@@ -2742,3 +2742,77 @@ Successful release path included supplemental Search integrity, commercial place
 - Public generative Guide remains OFF.
 - Public Now Moments media remains OFF.
 - No automatic commercial placement or link rewriting.
+
+### Searchable-source health system checkpoint — 2026-10-05
+Owner asked how ERN will know when searchable camera/source links break and approved formalizing an automated health loop.
+
+#### New rotating health architecture
+ERN now checks the searchable catalog through a deterministic 7-day rotating coverage cycle.
+
+Implementation:
+- combines `data/sources.json` and `data/search-supplemental.json`;
+- excludes catalog rows already marked OFFLINE;
+- every eligible searchable URL belongs to exactly one daily cohort in the 7-day cycle;
+- duplicate/shared URLs are probed once and mapped back to all source IDs using them;
+- persistent state is cached across daily Operations runs;
+- repeated failures escalate into a repair/review queue;
+- recoveries are recorded;
+- no catalog mutation, truth change or automatic health downgrade is allowed from reachability evidence alone.
+
+Failure policy:
+- first 404/410 → WATCH / recheck next cohort;
+- repeated 404/410 → REPAIR / verify provider page or replacement;
+- repeated network/server failures → REPAIR;
+- repeated access blocks → REVIEW provider access pattern;
+- recovered pages are recorded as recovered.
+
+Critical evidence boundary:
+`PAGE_REACHABLE` proves only that the page responded. It does **not** prove that the camera/video itself is live. Media/currentness remains a separate evidence lane through existing playback/current-image/revalidation systems.
+
+Daily Operations now:
+- restores prior searchable-source health state;
+- runs the rotating cohort check;
+- writes `ern-ops/searchable-source-health.json`;
+- appends a Searchable Source Health section to `operator-brief.md`;
+- saves updated persistent health state for the next run;
+- triggers when either core sources or supplemental searchable catalog changes.
+
+#### First real production cohort
+Operations run **1353** completed **SUCCESS**.
+
+Coverage:
+- eligible searchable sources: **391**
+- eligible unique URLs: **297**
+- today's cohort: **53 sources / 40 unique URLs**
+- target: **100% of eligible searchable URLs once per 7-day cycle**
+
+First-cohort result:
+- reachable: **46**
+- missing: **0**
+- access-blocked: **5**
+- temporary/network failures: **2**
+- recovered: **0**
+- repair: **0**
+- review: **0**
+- watch: **2**
+
+Current WATCH items:
+- Bishkek — Ala-Too Square — transient failure;
+- Too-Ashu Pass — Northern Tunnel Entrance — transient failure.
+
+Current NOTICE/access-limited items include:
+- Guagua Pichincha Volcano — Ecuador;
+- El Reventador Volcano — Ecuador;
+- Nossob — Kgalagadi;
+- Punda Maria — Kruger National Park;
+- Talamati — Kruger National Park.
+
+These are not considered broken merely because automated access was blocked; they stay in review/recheck status unless stronger evidence appears.
+
+#### Validation
+- Operations run **1353**: SUCCESS
+- Pages run **2508**: SUCCESS
+- operations packet integrity remained valid
+- Watch Earth in-ERN-only rule remains unchanged
+- hard 575 KB lean-core ceiling remains unchanged
+- IMAGE_REFRESH pilot was not manually triggered or modified.
