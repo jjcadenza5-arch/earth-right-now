@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T15:05:00Z",
+  "generatedAt": "2026-10-05T15:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3737,21 +3737,6 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Tanna-Island/Mt-Yasur-Volcano-Afternoon-Guided-Tour-Tanna-Island/d25079-209502P3",
       "publicInventoryEvidence": "Current Viator inventory includes guided Mount Yasur volcano tours on Tanna Island.",
       "nextAction": "Generate one owner-side Tanna Island / Mount Yasur Viator tracked destination or product link and manually verify it before public activation."
-    },
-    {
-      "id": "viator-indonesia-merapi-yogyakarta",
-      "destination": "Mount Merapi / Yogyakarta, Indonesia",
-      "placeIds": [
-        "indonesia-mount-merapi"
-      ],
-      "partnerCandidate": "viator",
-      "intent": "activities",
-      "priority": "P1",
-      "reason": "ERN now has an official Indonesian Geological Agency live-monitoring source for Mount Merapi, and Viator has current Merapi hiking and 4WD inventory from Yogyakarta.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Yogyakarta/Merapi-Volcano-4WD-Jeep-Tour-From-Yogyakarta/d22560-339870P7",
-      "publicInventoryEvidence": "Current Viator inventory includes Mount Merapi hiking and 4WD/jeep experiences from Yogyakarta.",
-      "nextAction": "Generate one owner-side Mount Merapi / Yogyakarta Viator tracked destination or product link and manually verify it before public activation."
     }
   ]
 }
