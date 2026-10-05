@@ -3710,6 +3710,51 @@
       "businessUnlocks": [
         "viator-merapi-yogyakarta"
       ]
+    },
+    {
+      "id": "alaska-redoubt-current-image",
+      "title": "Redoubt Volcano — Alaska",
+      "country": "United States",
+      "region": "Alaska / Cook Inlet",
+      "provider": "Alaska Volcano Observatory",
+      "sourcePage": "https://avo.alaska.edu/webcam/",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "AVO webcam index shows multiple Redoubt cameras with current Oct 5, 2026 UTC timestamps.",
+      "verifiedAt": "2026-10-05T13:46:00Z",
+      "promotedAt": "2026-10-05T13:46:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only."
+    },
+    {
+      "id": "alaska-iliamna-current-image",
+      "title": "Iliamna Volcano — Alaska",
+      "country": "United States",
+      "region": "Alaska / Cook Inlet",
+      "provider": "Alaska Volcano Observatory",
+      "sourcePage": "https://avo.alaska.edu/volcano/iliamna",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "AVO Iliamna page lists active webcam stations and recent imagery.",
+      "verifiedAt": "2026-10-05T13:46:00Z",
+      "promotedAt": "2026-10-05T13:46:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only."
+    },
+    {
+      "id": "us-mount-st-helens-current-image",
+      "title": "Mount St. Helens — Current View",
+      "country": "United States",
+      "region": "Washington",
+      "provider": "U.S. Geological Survey / Cascades Volcano Observatory",
+      "sourcePage": "https://www.usgs.gov/media/webcams/johnston-ridge-observatory-mount-st-helens",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "USGS states the Johnston Ridge camera image refreshes every five minutes and marks the media Public Domain.",
+      "verifiedAt": "2026-10-05T13:46:00Z",
+      "promotedAt": "2026-10-05T13:46:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; separate in-ERN image-refresh implementation not inferred.",
+      "businessUnlocks": [
+        "viator-mount-st-helens-portland"
+      ]
     }
   ],
   "notes": [
