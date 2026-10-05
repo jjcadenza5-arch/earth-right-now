@@ -2417,3 +2417,23 @@ KenyaLIVE remains a promising current KWS/WildEarth live program, but its broadc
 - No automatic social posting/account creation.
 - No paid ranking.
 - No automatic commercial placement or link rewriting.
+
+### Watch Earth in-ERN playback rule — 2026-10-05
+Owner reported two Watch Earth cards — Popocatépetl and Karakol Ski Base — that opened external live-source pages rather than playing inside ERN.
+
+Product correction:
+- Watch Earth is now defined as an **in-ERN viewing surface**, not a discovery fallback list.
+- A source must have `playbackCapability(...).action === PLAY` to be Watch Earth eligible.
+- `LINK_ONLY / EXTERNAL` sources remain searchable and discoverable in Search/Explore, but must not be used to fill Watch Earth merely to reach a target item count.
+- Approved in-ERN `EMBED` playback and approved `IMAGE_REFRESH` experiences remain eligible when all existing truth/currentness/health gates pass.
+- If fewer qualifying in-ERN sources exist, Watch Earth should intentionally show fewer items rather than degrade into external-source cards.
+
+Specific defensive holds added:
+- `mexico-popocatepetl-current-image`: `featuredHold=true`, `watchHold=true`
+- `karakol-ski-base`: `featuredHold=true`, `watchHold=true`
+
+Tests updated to encode the new contract:
+- external-only Watch Earth fallback now expects zero Watch Earth items rather than external filler;
+- mixed inside/external curation now expects only in-ERN playable items.
+
+This change does not remove external/current sources from ERN Search/Explore and does not reduce their searchable value. It only raises the quality bar for the featured Watch Earth experience.
