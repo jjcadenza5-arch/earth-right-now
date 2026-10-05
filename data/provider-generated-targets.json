@@ -140,7 +140,8 @@
     "extractionMode": "DOCUMENTED_PROVIDER_CURRENT_IMAGE",
     "manualInteractionRequired": false,
     "blockerReason": null,
-    "lastExtractionAttemptAt": "2026-10-05T05:45:00Z"
+    "lastExtractionAttemptAt": "2026-10-05T05:45:00Z",
+    "metadataUrl": "https://images.geonet.org.nz/volcano/cameras/images/ruapehunorth.json"
   },
   {
     "id": "geonet-taranaki-current-image",
@@ -164,7 +165,8 @@
     "extractionMode": "DOCUMENTED_PROVIDER_CURRENT_IMAGE",
     "manualInteractionRequired": false,
     "blockerReason": null,
-    "lastExtractionAttemptAt": "2026-10-05T05:45:00Z"
+    "lastExtractionAttemptAt": "2026-10-05T05:45:00Z",
+    "metadataUrl": "https://images.geonet.org.nz/volcano/cameras/images/taranaki.json"
   },
   {
     "id": "trimountain-emei-lake-live-camera",
