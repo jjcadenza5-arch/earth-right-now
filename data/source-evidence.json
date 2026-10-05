@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:22:00Z",
+  "generatedAt": "2026-10-05T13:28:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1929,6 +1929,18 @@
       "rightsBasis": "Official Peruvian national volcano-monitoring page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream the image feed.",
       "coordinateSourceUrl": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/imagenes-en-tiempo-real/sarasara",
       "story": "Official one-minute monitoring view of Sara Sara volcano in Ayacucho."
+    },
+    "colombia-purace-current-image": {
+      "freshnessEvidence": "Servicio Geológico Colombiano Puracé online-images page checked 2026-10-05 currently exposes multiple monitoring cameras including Curiquinga, El Púlpito, Lavas Rojas, Mina 2 and Piocollo.",
+      "rightsBasis": "Official Colombian Geological Service online-camera page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://www2.sgc.gov.co/sgc/volcanes/VolcanPurace/Paginas/imagenes-en-linea.aspx",
+      "story": "Official current monitoring views across Puracé and the Los Coconucos volcanic chain."
+    },
+    "colombia-nevado-huila-current-image": {
+      "freshnessEvidence": "Servicio Geológico Colombiano Nevado del Huila online-images page checked 2026-10-05 currently exposes Tafxnú, Maravillas, La Palma and Caloto monitoring cameras.",
+      "rightsBasis": "Official Colombian Geological Service online-camera page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://www2.sgc.gov.co/sgc/volcanes/VolcanNevadoHuila/Paginas/imagenes-en-linea.aspx",
+      "story": "Official current monitoring views of Nevado del Huila."
     }
   },
   "prague-petrin-tower": {
