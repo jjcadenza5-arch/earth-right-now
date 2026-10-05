@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T12:50:00Z",
+  "generatedAt": "2026-10-05T13:00:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3436,6 +3436,36 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/activity/72452-emei-tea-booth-afternoon-tea-experience/",
       "publicInventoryEvidence": "Current Klook inventory includes Emei Township experiences and explicitly references Emei Lake and nearby trails/boating as local attractions.",
       "nextAction": "Generate one owner-side Hsinchu/Emei Klook tracked destination or search link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-nevado-del-ruiz",
+      "destination": "Nevado del Ruiz / Manizales",
+      "placeIds": [
+        "colombia-nevado-del-ruiz"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN already has an official current Nevado del Ruiz monitoring view, and Viator has current guided Nevado del Ruiz inventory from Manizales and Pereira. This is a strong current-conditions-to-safe-guided-visit planning path without affecting Earth ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Manizales-attractions/Nevado-del-Ruiz/d50311-a100019",
+      "publicInventoryEvidence": "Current Viator inventory lists multiple Nevado del Ruiz guided experiences, including full-day Manizales and Pereira departures.",
+      "nextAction": "Generate one owner-side Nevado del Ruiz / Manizales Viator tracked destination or search link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-surtsey-westman-islands",
+      "destination": "Surtsey / Westman Islands",
+      "placeIds": [
+        "iceland-surtsey"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN has an official current Surtsey monitoring view, while Viator has current Westman Islands experiences including itineraries that reference Surtsey. Use one regional planning path rather than pretending Surtsey itself is freely visitable.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Reykjavik/Westman-Islands-Private-Tour-by-Minibus-with-lunch/d905-420898P13",
+      "publicInventoryEvidence": "Current Viator Westman Islands inventory includes tours whose itineraries reference Surtsey alongside Heimaey and other island stops.",
+      "nextAction": "Generate one owner-side Westman Islands Viator tracked destination/search link and manually verify it; public wording must not imply unrestricted visitor access to Surtsey."
     }
   ]
 }
