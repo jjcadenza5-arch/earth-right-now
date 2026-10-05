@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "ERN_OPERATOR_REVIEW_EVIDENCE",
+  "generatedAt": "2026-10-05T10:40:54.635Z",
+  "reviewOrigin": "https://earthrightnow.app/review/inside-ern.html",
+  "reviewBatch": "8676e155772b31c5",
+  "catalogMutationAllowed": false,
+  "networkStatus": "UNKNOWN_NOT_RECORDED",
+  "items": [
+    {
+      "id": "north-coast-heping-island-youtube-player",
+      "type": "generated",
+      "title": "Taiwan Tourism Administration / North Coast & Guanyinshan National Scenic Area — north-coast-heping-island-youtube-player",
+      "provider": "Taiwan Tourism Administration / North Coast & Guanyinshan National Scenic Area",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-10-05T10:40:42.619Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007412",
+      "embedUrl": "https://www.youtube.com/embed/g-T8NbF9xlQ?si=3jcSZd3ho7HNEYKk"
+    }
+  ]
+}
