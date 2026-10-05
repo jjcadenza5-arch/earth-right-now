@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-10-05T13:52:00Z",
-  "currentHealthyDistinctPlaces": 344,
+  "currentHealthyDistinctPlaces": 350,
   "targetHealthyDistinctPlaces": [
     350,
     400
   ],
-  "remainingToMinimum": 6,
-  "remainingToStretch": 56,
+  "remainingToMinimum": 0,
+  "remainingToStretch": 50,
   "humanPlaybackQueueCount": 12,
   "topBatch": [
     {
@@ -176,6 +176,6 @@
     "watchEarthEligible": false,
     "labelingRequired": true
   },
-  "note": "Only genuinely playback-gated candidates remain listed. Ushuaia harbour and Okaukuejo Waterhole were resolved for conservative external/link-only searchable publication from first-party official live surfaces; this does not imply ERN embed permission.",
+  "note": "350 searchable-place milestone reached using official current scientific/tourism/provider sources. Watch Earth remains in-ERN PLAY-only; external/link-only growth belongs in Search/Explore.",
   "remainingHumanPlaybackRequired": 12
 }
