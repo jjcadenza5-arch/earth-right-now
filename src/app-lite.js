@@ -104,7 +104,7 @@ for(const s of ri){
 if(out.length>=Math.min(5,setLimit))break;const place=s.placeId||s.id,provider=s.provider||"",country=s.country||"";if(places.has(place)||(providers.get(provider)||0)>=2||(countries.get(country)||0)>=1)continue;out.push(s);places.set(place,1);countries.set(country,1);providers.set(provider,(providers.get(provider)||0)+1)
 }
 if(out.length<Math.min(5,setLimit))for(const s of ri){
-if(out.length>=Math.min(5,setLimit))break;if(out.some(x=>x.id===s.id))continue;const place=s.placeId||s.id,provider=s.provider||"",country=s.country||"";if(places.has(place)||(providers.get(provider)||0)>=2)continue;out.push(s);places.set(place,1);countries.set(country,(countries.get(country)||0)+1);providers.set(provider,(providers.get(provider)||0)+1)
+if(out.length>=Math.min(5,setLimit))break;if(out.some(x=>x.id===s.id))continue;const place=s.placeId||s.id,provider=s.provider||"",country=s.country||"";if(places.has(place)||(providers.get(provider)||0)>=2||(countries.get(country)||0)>=2)continue;out.push(s);places.set(place,1);countries.set(country,(countries.get(country)||0)+1);providers.set(provider,(providers.get(provider)||0)+1)
 }
 for(const s of sorted){
 if(out.length>=setLimit)break;if(out.some(x=>x.id===s.id))continue;const country=s.country||"",provider=s.provider||"",place=s.placeId||s.id;const cc=countries.get(country)||0,pc=providers.get(provider)||0,pl=places.get(place)||0;if(pl>=1&&out.length<16)continue;if(cc>=2&&out.length<15)continue;if(pc>=4&&out.length<15)continue;out.push(s);places.set(place,pl+1);countries.set(country,cc+1);providers.set(provider,pc+1);}
