@@ -2854,3 +2854,19 @@ These are not considered broken merely because automated access was blocked; the
 - The five repeated access-blocked sources remain REVIEW only and are not treated as broken.
 - Repair findings were recorded in data/provider-observations.json and data/source-maintenance-priority.json so the investigation is durable rather than repeated ad hoc.
 - Pages run 2514 completed SUCCESS for the current San Marino + commercial expansion release. All protected product and commercial-neutrality gates remain unchanged.
+
+
+### Liechtenstein + Gibraltar expansion checkpoint — 2026-10-05
+- Continued both ERN growth lanes from the canonical repair checkpoint without reopening completed homepage/design/SEO work.
+- Search/Explore added four official Liechtenstein mountain/current-view sources from Bergbahnen Malbun AG: Sareis, Malbun village center / Hotel Turna, Täli valley station and Steg reservoir.
+- These Liechtenstein additions are `LIVE_IMAGE` + `LINK_ONLY` + `EXTERNAL` + `watchHold: true`; they cannot fill Watch Earth.
+- Search/Explore then added three official Gibraltar Tourist Board Live Cams: Eastern Beach, Camp Bay & Little Bay, and Sandy Bay.
+- Gibraltar additions are `EXTERNAL_LIVE` + `LINK_ONLY` + `watchHold: true`; they are also excluded from Watch Earth by the in-ERN playback rule.
+- Healthy distinct searchable-place count is now **396** from 401 healthy source records. Supplemental searchable catalog is 77 records.
+- Commercial registry expanded from 238 to **240** opportunities.
+- Added a Viator Liechtenstein/Vaduz opportunity using current Viator Liechtenstein day-trip inventory. State remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`; public copy must not imply Malbun is part of an itinerary unless exact product evidence proves it.
+- Added one Gibraltar-level Viator opportunity tied to all three live-beach places rather than multiplying beach-specific affiliate density. State remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`.
+- No tracked affiliate URL was invented or activated. Commercial value did not alter source truth, source health or Earth ranking.
+- Operations run 1357 completed SUCCESS for the Liechtenstein source addition. Operations run 1358 and the latest Pages serialization were allowed to proceed naturally after the Gibraltar addition; no manual workflow trigger was used.
+- Malta official tourism research was refreshed: VisitMalta continues to expose a Live Malta Cams destination surface and explicitly describes live-camera use for pre-trip viewing, but ERN still lacks sufficiently resolved named camera targets/currentness evidence to promote a Malta place. Existing Malta commercial opportunity remains source-gated.
+- Protected gates remain unchanged: Watch Earth in-ERN playback only; hard 575 KB lean-core ceiling; IMAGE_REFRESH untouched until natural renewal; public generative Guide OFF; public Now Moments media OFF; no automatic social posting/account creation; no paid ranking.
