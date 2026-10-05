@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T17:25:00Z",
+  "generatedAt": "2026-10-05T17:50:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4157,6 +4157,48 @@
       "verifiedAt": "2026-10-05T17:25:00Z",
       "verification": "Research-only. Do not promote event live streams, archived video, VR tours or inferred camera targets as continuous current webcams.",
       "nextAction": "Resolve the Governorate's current webcam route after the 2026 redesign, enumerate exact named real-time views, and independently verify currentness/permission before promotion."
+    },
+    {
+      "id": "brazil-aguas-lindoia-live",
+      "title": "Águas de Lindóia — City Live Camera",
+      "country": "Brazil",
+      "region": "São Paulo",
+      "provider": "Circuito das Águas Paulista / Governo do Estado de São Paulo",
+      "sourcePage": "https://circuitodasaguaspaulista.sp.gov.br/circuito/aguas-de-lindoia/index.php",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current Circuito das Águas Paulista page explicitly exposes a Câmera ao Vivo for Águas de Lindóia.",
+      "verifiedAt": "2026-10-05T17:50:00Z",
+      "promotedAt": "2026-10-05T17:50:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "brazil-itaipulandia-jacutinga-live",
+      "title": "Itaipulândia — Balneário Jacutinga Beach",
+      "country": "Brazil",
+      "region": "Paraná",
+      "provider": "Município de Itaipulândia",
+      "sourcePage": "https://itaipulandia.pr.gov.br/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current municipal homepage exposes Câmera Ao Vivo Praia alongside Balneário Jacutinga.",
+      "verifiedAt": "2026-10-05T17:50:00Z",
+      "promotedAt": "2026-10-05T17:50:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "brazil-rio-sul-jose-thome-live",
+      "title": "Rio do Sul — Elevado José Thomé",
+      "country": "Brazil",
+      "region": "Santa Catarina",
+      "provider": "Defesa Civil de Rio do Sul / Governo de Rio do Sul",
+      "sourcePage": "https://defesacivil.riodosul.sc.gov.br/index.php?r=externo%2Fplanilha%3E",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The portal labels the camera Câmera ao Vivo and publishes a current update time alongside real-time river measurements.",
+      "verifiedAt": "2026-10-05T17:50:00Z",
+      "promotedAt": "2026-10-05T17:50:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
