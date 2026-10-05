@@ -1760,3 +1760,113 @@ If playback is confirmed current/live:
 2. preserve LINK_ONLY/EXTERNAL while evidence is applied;
 3. evaluate any truth correction separately;
 4. do not infer inside-ERN embed permission from successful playback.
+
+
+
+### Heping Island human evidence applied — external-live truth corrected — 2026-10-05
+Owner completed the deployed ERN operator-review human gate for the exact Heping Island provider-generated player.
+
+#### Human evidence packet
+- review batch: `8676e155772b31c5`
+- review origin: `https://earthrightnow.app/review/inside-ern.html`
+- target id: `north-coast-heping-island-youtube-player`
+- type: `generated`
+- outcome: `HUMAN_PLAYBACK_CONFIRMED`
+- observedAt: `2026-10-05T10:40:42.619Z`
+- official source page:
+  `https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007412`
+- exact reviewed player:
+  `https://www.youtube.com/embed/g-T8NbF9xlQ?si=3jcSZd3ho7HNEYKk`
+- packet preserved at:
+  `data/review-evidence/heping-island-generated-2026-10-05.json`
+
+#### Evidence validation / staged target
+The packet validates against the exact staged target:
+- known generated target id;
+- deployed ERN review origin;
+- exact official source page;
+- exact YouTube player URL;
+- fresh HUMAN_REVIEW timestamp.
+
+Proposal status:
+`READY_TO_RECORD_HUMAN_PLAYBACK_PENDING_EDITORIAL_REVIEW`
+
+Staged target now records:
+- `reviewedAt=2026-10-05T10:40:42.619Z`
+- `reviewOutcome=HUMAN_PLAYBACK_CONFIRMED`
+- `reviewEvidencePath=data/review-evidence/heping-island-generated-2026-10-05.json`
+- promotion/catalog/automatic-generation flags remain false.
+
+The completed Heping generated target is excluded from future generated-target human review batches unless the target materially changes.
+
+#### Public Heping truth correction
+Separate editorial review found the old `LIVE_IMAGE` label no longer accurately described the official Heping page because deployed human review proved it is currently serving a YouTube live player.
+
+Public source is now:
+- id: `taiwan-heping-island-live`
+- truth: **EXTERNAL_LIVE**
+- permission: **LINK_ONLY**
+- playback: **EXTERNAL**
+- sourceUrl:
+  `https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007412`
+- checkedAt / lastSuccessfulCheck:
+  `2026-10-05T10:40:42.619Z`
+- no public `embedUrl`.
+
+This is a truth correction only. It is **not** an inside-ERN promotion.
+
+#### Evidence boundary
+`data/source-evidence.json` now preserves:
+- official Heping source page;
+- exact reviewed YouTube player;
+- human playback time/outcome/batch/origin;
+- evidence packet path;
+- explicit permission boundary:
+  public Heping remains `LINK_ONLY / EXTERNAL`;
+- platform boundary:
+  preserve YouTube/provider branding and do not restream.
+
+Regression coverage requires:
+- public Heping stays `EXTERNAL_LIVE / LINK_ONLY / EXTERNAL`;
+- no Heping public `embedUrl`;
+- staged Heping human proof remains recorded;
+- completed Heping review gate remains closed.
+
+#### Hard performance ceiling incident
+The first final Pages validation after applying Heping evidence failed only because lean core reached:
+- **575,090 bytes**
+- hard ceiling: **575 KB**
+- excess: **90 bytes**
+
+The ceiling was **not raised**.
+
+Resolution:
+- compacted only Heping runtime catalog prose:
+  - story -> `Official Heping Island live view.`
+  - `freshnessEvidence -> OK`
+- full human/provenance detail remains in `data/source-evidence.json`.
+
+This restored hard-budget compliance without weakening source truth or evidence.
+
+#### Final validation
+Canonical post-fix commit:
+`772e46d1e1bd10cd6be83c6de592fd4958d46ac7`
+
+- Pages run `37298507621`: **SUCCESS**
+- Operations run `37298507598`: **SUCCESS**
+- hard performance budget unchanged
+- Heping human gate closed
+- Heping remains external-only
+- no automatic catalog/embed promotion
+- current-image pilot remains frozen at two sources
+- current-image scheduled-renewal observation remains 0 / 2 until the first scheduled slot
+- public Guide remains OFF
+- public Now Moments media remains OFF.
+
+#### Next boundary
+No further owner action is required for Heping.
+
+Do not infer inside-ERN embed permission from successful playback. Any future Heping transition from LINK_ONLY/EXTERNAL to EMBED_ALLOWED/EMBED requires a separate permission/platform/editorial decision.
+
+The next current-image pilot event remains the first scheduled renewal at:
+`2026-10-06T00:37:00Z` / 07:37 Thailand time.
