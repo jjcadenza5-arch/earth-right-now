@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T12:40:00Z",
+  "generatedAt": "2026-10-05T12:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -610,11 +610,11 @@
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "If the municipal Ushuaia harbour stream is reconfirmed current, it can naturally connect to strong Tierra del Fuego sightseeing inventory already present on Viator.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "reason": "ERN now has an official Ushuaia tourism live harbour window, and Viator currently has strong Tierra del Fuego sightseeing inventory. One city-level planning link can serve the destination without affecting Earth ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/es-ES/tours/Ushuaia/Tierra-Del-Fuego-National-Park-and-End-of-the-World-Train/d933-5503706P3",
       "publicInventoryEvidence": "Current Viator inventory includes Ushuaia-based Tierra del Fuego National Park and End of the World Train experiences with hotel pickup.",
-      "nextAction": "Do not create a tracked link until the Ushuaia harbour source is reconfirmed live. Then prefer a city-level Ushuaia partner link rather than a single-product link."
+      "nextAction": "Generate one owner-side Ushuaia / Tierra del Fuego Viator tracked destination/search link and manually verify it before public activation."
     },
     {
       "id": "klook-mauritius-future",
@@ -2111,11 +2111,11 @@
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "Okaukuejo would give ERN a high-value Namibia wildlife discovery surface, and Viator currently has Etosha safari inventory from Windhoek.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "reason": "ERN now has a first-party NWR live Okaukuejo Waterhole window, and Viator currently has Etosha safari inventory. One destination-level Etosha planning link can serve the wildlife-discovery journey without affecting Earth ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Windhoek/4-Day-Etosha-Swakopmund/d5574-9289P3",
       "publicInventoryEvidence": "Current Viator inventory includes multi-day Etosha National Park safari/game-drive products from Windhoek.",
-      "nextAction": "Promote the Okaukuejo source only after human playback confirmation; then research a clean Namibia/Etosha destination-level Viator link rather than using an individual tour as the commercial surface."
+      "nextAction": "Generate one owner-side Etosha National Park Viator tracked destination/search link and manually verify it before public activation."
     },
     {
       "id": "viator-nuuk",
