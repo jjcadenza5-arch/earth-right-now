@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T20:05:00Z",
+  "generatedAt": "2026-10-05T20:20:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4633,6 +4633,62 @@
       "verifiedAt": "2026-10-05T20:05:00Z",
       "promotedAt": "2026-10-05T20:05:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "hungary-budapest-victoria-live",
+      "title": "Budapest — Danube & Buda Castle View",
+      "country": "Hungary",
+      "region": "Budapest",
+      "provider": "Boutique Hotel Victoria Budapest",
+      "sourcePage": "https://www.victoria.hu/webcam",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Hotel Victoria explicitly labels the feed a 24-hour Live Budapest Webcam.",
+      "verifiedAt": "2026-10-05T20:20:00Z",
+      "promotedAt": "2026-10-05T20:20:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "romania-constanta-tourism-live",
+      "title": "Constanța — Black Sea City Views",
+      "country": "Romania",
+      "region": "Constanța / Black Sea",
+      "provider": "Visit Constanța",
+      "sourcePage": "https://visitconstanta.ro/webcam/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Visit Constanța currently publishes multiple live image streams and states the cameras provide live-only image flows.",
+      "verifiedAt": "2026-10-05T20:20:00Z",
+      "promotedAt": "2026-10-05T20:20:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "slovenia-ljubljana-arso-current",
+      "title": "Ljubljana — Current City Conditions",
+      "country": "Slovenia",
+      "region": "Ljubljana",
+      "provider": "Slovenian Environment Agency (ARSO)",
+      "sourcePage": "https://meteo.arso.gov.si/pda/kamere/ljubljana/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "ARSO operates Ljubljana webcams and documents automated image capture at regular intervals.",
+      "verifiedAt": "2026-10-05T20:20:00Z",
+      "promotedAt": "2026-10-05T20:20:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "slovenia-kredarica-arso-current",
+      "title": "Triglav — Kredarica Current View",
+      "country": "Slovenia",
+      "region": "Julian Alps / Triglav",
+      "provider": "Slovenian Environment Agency (ARSO)",
+      "sourcePage": "https://meteo.arso.gov.si/pda/kamere/kredarica/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "ARSO lists Kredarica among its current webcam network and documents regularly recorded images.",
+      "verifiedAt": "2026-10-05T20:20:00Z",
+      "promotedAt": "2026-10-05T20:20:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
