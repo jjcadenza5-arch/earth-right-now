@@ -3333,3 +3333,100 @@ Pages run **2563 completed SUCCESS** for the full 458-place state.
 - no automatic social posting/account creation;
 - no paid ranking;
 - commercial value never affects Earth ranking, truth, currentness or health.
+
+
+### Western US + Greenland + French Polynesia + Caribbean + Seychelles large expansion — 2026-10-05
+This continuation follows the owner's preferred ERN cadence: broad but disciplined batches, no rush, and parallel Search/Explore + business growth with validation before reporting.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **458 to 473 places** (**478 healthy source records** total).
+Supplemental lazy Search/Explore catalog advanced from **139 to 154 rows**, still safely below the bounded 250-row capacity.
+
+This batch added **15 healthy searchable places**:
+
+**United States National Park Service — 4 official current views**
+- Zion National Park — Temples & Towers of the Virgin;
+- Arches National Park — Entrance Station;
+- Canyonlands National Park — Island in the Sky;
+- Olympic National Park — Hurricane Ridge.
+
+All four use official NPS current webcam surfaces and remain `LIVE_IMAGE` + `LINK_ONLY` + Search/Explore-only. New downstream Viator opportunities were added for Zion, Moab/Arches/Canyonlands and Olympic National Park.
+
+**Greenland — 5 official Greenland Airports live destinations**
+- Ilulissat;
+- Kangerlussuaq;
+- Kulusuk;
+- Qaarsut;
+- Sisimiut.
+
+All five use Greenland Airports' official airport pages with current live streams. ERN already had Nuuk through a different current provider, so Nuuk was not duplicated. A dedicated Ilulissat Viator planning opportunity was added because current Icefjord/cultural/outdoor inventory is strong; the other airport views remain Earth-discovery sources without forced commercial placement.
+
+**French Polynesia — 2 new searchable places**
+- Tahiti / Faa'a — first-party Tahiti Airport Motel webcam;
+- Moorea — Moorea.com destination resource currently labels a LIVE webcam from Moorea Pearl Beach Resort.
+
+Both remain external/link-only Search/Explore sources. New downstream Viator opportunities were added for Tahiti/Papeete and Moorea.
+
+**Caribbean — 3 first-party live places**
+- Nassau / Cable Beach, The Bahamas — Baha Mar first-party live webcam;
+- Isla Verde, Puerto Rico — Royal Sonesta San Juan first-party Resort Live Feed;
+- Cabarete Beach, Dominican Republic — Hotel Villa Taina first-party live webcam/current wind-wave-weather view.
+
+Destination-level Viator opportunities were added for Nassau/New Providence, San Juan/Isla Verde and Cabarete; each remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`.
+
+**Seychelles — 1 new-country live place**
+- Beau Vallon / Mahé — KOEK Seychelles active 4K live stream, explicitly described as active/24-7 with recent snapshots.
+
+One Beau Vallon/Mahé Viator planning opportunity was added rather than multiplying commercial density.
+
+All 15 new sources remain `LINK_ONLY` / external Search/Explore sources with Watch hold. None may fill Watch Earth under the in-ERN playback rule.
+
+#### Business-side growth
+Commercial registry advanced from **263 to 273 opportunities**.
+New opportunities in this batch:
+- Zion National Park → Viator;
+- Moab / Arches / Canyonlands → Viator, one regional path for the two parks;
+- Olympic National Park → Viator;
+- Ilulissat / Disko Bay → Viator;
+- Tahiti / Papeete → Viator;
+- Moorea → Viator;
+- Nassau / New Providence → Viator;
+- San Juan / Isla Verde → Viator;
+- Cabarete → Viator;
+- Beau Vallon / Mahé, Seychelles → Viator.
+
+Cross-partner destination overlaps in the existing registry were reviewed. They represent distinct approved partner relationships (for example Tiqets vs Go City vs Klook vs Viator) rather than duplicate canonical records, so they were preserved. No tracked URL, offer, availability or partner relationship was invented. All newly added paths remain owner-side exact-link gated.
+
+#### Health + release validation
+Operations runs **1383, 1384, 1385 and 1386 completed SUCCESS** across the staged additions.
+
+Latest validated searchable-source health from Operations 1386:
+- eligible searchable sources: **482**;
+- eligible unique URLs: **370**;
+- current rotating cohort: **68 sources / 53 unique URLs**;
+- reachable: **61**;
+- missing: **0**;
+- access-blocked: **5**;
+- temporary/network: **2**;
+- recovered: **0**;
+- repair: **2**;
+- review: **5**;
+- watch: **0**.
+
+The two REPAIR records remain Bishkek Ala-Too Square and Too-Ashu Pass; earlier independent provider checks confirmed those pages are active, so automated network failures still do not justify truth or health mutation. The five repeated access-limited sources remain REVIEW only. No new missing-source or WATCH regression appeared in the final cohort.
+
+Pages run **2571 completed SUCCESS** for the full 473-place state.
+- all **112 current ERN release smoke tests passed**;
+- Supplemental Search integrity passed with **154** records;
+- commercial placement integrity passed;
+- hard lean-core performance budget remains exactly **575000 bytes**;
+- deployment completed with zero reported errors.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- IMAGE_REFRESH was not manually triggered or altered;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no paid ranking;
+- commercial value never affects Earth ranking, truth, currentness or health.
