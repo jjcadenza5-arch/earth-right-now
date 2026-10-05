@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T16:55:00Z",
+  "generatedAt": "2026-10-05T17:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3107,22 +3107,6 @@
       "nextAction": "Generate one Sydney Go City tracked link and manually verify destination relevance before public activation."
     },
     {
-      "id": "viator-bansko-future",
-      "destination": "Bansko",
-      "placeIds": [
-        "bansko-ski-resort-bulgaria"
-      ],
-      "partnerCandidate": "viator",
-      "intent": "activities",
-      "priority": "P1",
-      "reason": "Viator currently has Bansko-specific experiences. Commercial work remains source-gated until ERN verifies the official Bansko camera family.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Bansko/Bansko-Thermal-pool-escape/d31481-16415P9",
-      "nextAction": "After Bansko source verification, generate one Bansko destination-level Viator partner link rather than a single-product link.",
-      "sourceGateResolvedAt": "2026-10-03T16:40:00Z",
-      "sourceGateNote": "ERN now has a healthy searchable LIVE_IMAGE/quasi-live destination; exact tracked-link generation and manual verification remain required."
-    },
-    {
       "id": "viator-borovets-future",
       "destination": "Borovets",
       "placeIds": [
@@ -3137,20 +3121,6 @@
       "nextAction": "After Borovets source verification, generate one Borovets destination-level Viator link and verify it manually.",
       "sourceGateResolvedAt": "2026-10-03T16:40:00Z",
       "sourceGateNote": "ERN now has a healthy searchable LIVE_IMAGE/quasi-live destination; exact tracked-link generation and manual verification remain required."
-    },
-    {
-      "id": "viator-jasna-slovakia-future",
-      "destination": "Jasná / Low Tatras",
-      "placeIds": [
-        "jasna-chopok-slovakia"
-      ],
-      "partnerCandidate": "viator",
-      "intent": "activities",
-      "priority": "P2",
-      "reason": "Viator has Slovakia travel inventory, but a clean Jasná/Low Tatras destination link must be confirmed in the owner account after source verification.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/blog/Slovakia/d66",
-      "nextAction": "After Jasná playback verification, search the Viator partner account for a clean Low Tatras/Jasná destination-level link. Do not force a generic Slovakia link if it is not useful."
     },
     {
       "id": "viator-kopaonik-serbia",
@@ -3828,6 +3798,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/St-John/St-John-Lime-Out-Snorkel-Sail-w-Floating-Taco-Bar-Lunch-and-Swim-Up-Bar-Westin/d4521-114771P35",
       "publicInventoryEvidence": "Current Viator St. John inventory includes snorkeling, island sightseeing and experiences that pass or operate around Virgin Islands National Park.",
       "nextAction": "Generate one owner-side St. John destination-level Viator tracked link and manually verify it before public activation; do not imply park admission or specific bay stops unless exact itinerary evidence supports them."
+    },
+    {
+      "id": "viator-acadia-bar-harbor",
+      "destination": "Acadia National Park / Bar Harbor, Maine",
+      "placeIds": [
+        "us-acadia-frenchman-bay"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official NPS current view across Frenchman Bay, and Viator currently has broad Acadia/Bar Harbor guided and self-guided inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-AU/tours/Bar-Harbor/Best-of-Bar-Harbor-w-Thunder-Hole-and-Acadia-National-Park/d4371-87115P76",
+      "publicInventoryEvidence": "Current Viator inventory includes Acadia National Park and Bar Harbor tours with Cadillac Mountain, Thunder Hole and other park highlights.",
+      "nextAction": "Generate one owner-side Acadia/Bar Harbor destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
