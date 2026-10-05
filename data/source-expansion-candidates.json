@@ -3566,6 +3566,71 @@
       "businessUnlocks": [
         "viator-san-miguel-volcano-el-salvador"
       ]
+    },
+    {
+      "id": "ecuador-guagua-pichincha-monitoring",
+      "title": "Guagua Pichincha Volcano — Ecuador",
+      "country": "Ecuador",
+      "region": "Pichincha / Quito",
+      "provider": "Instituto Geofísico EPN",
+      "sourcePage": "https://www2.igepn.edu.ec/ggp-camaras/content/11-guagua-pichincha",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official IG-EPN crater-camera page for Guagua Pichincha.",
+      "verifiedAt": "2026-10-05T13:22:00Z",
+      "promotedAt": "2026-10-05T13:22:00Z",
+      "verification": "Official scientific monitoring source; LIVE_IMAGE / LINK_ONLY / Search-Explore only.",
+      "businessUnlocks": [
+        "viator-quito-pichincha"
+      ]
+    },
+    {
+      "id": "peru-sara-sara-current-image",
+      "title": "Sara Sara Volcano — Peru",
+      "country": "Peru",
+      "region": "Ayacucho",
+      "provider": "Instituto Geofísico del Perú / CENVUL",
+      "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/imagenes-en-tiempo-real/sarasara",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official CENVUL page states real-time Sara Sara images are obtained every minute.",
+      "verifiedAt": "2026-10-05T13:22:00Z",
+      "promotedAt": "2026-10-05T13:22:00Z",
+      "verification": "Official national monitoring source; LIVE_IMAGE / LINK_ONLY / Search-Explore only.",
+      "businessUnlocks": [
+        "viator-ayacucho-region"
+      ]
+    },
+    {
+      "id": "colombia-purace-current-image",
+      "title": "Puracé Volcano — Colombia",
+      "country": "Colombia",
+      "region": "Cauca / Puracé",
+      "provider": "Servicio Geológico Colombiano",
+      "sourcePage": "https://www2.sgc.gov.co/sgc/volcanes/VolcanPurace/Paginas/imagenes-en-linea.aspx",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official SGC online-images page exposes multiple current Puracé monitoring cameras.",
+      "verifiedAt": "2026-10-05T13:28:00Z",
+      "promotedAt": "2026-10-05T13:28:00Z",
+      "verification": "Official national geological monitoring source; LIVE_IMAGE / LINK_ONLY / Search-Explore only.",
+      "businessUnlocks": [
+        "viator-purace-national-park"
+      ]
+    },
+    {
+      "id": "colombia-nevado-huila-current-image",
+      "title": "Nevado del Huila — Colombia",
+      "country": "Colombia",
+      "region": "Huila / Cauca / Tolima",
+      "provider": "Servicio Geológico Colombiano",
+      "sourcePage": "https://www2.sgc.gov.co/sgc/volcanes/VolcanNevadoHuila/Paginas/imagenes-en-linea.aspx",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official SGC online-images page exposes current Nevado del Huila monitoring cameras.",
+      "verifiedAt": "2026-10-05T13:28:00Z",
+      "promotedAt": "2026-10-05T13:28:00Z",
+      "verification": "Official national geological monitoring source; LIVE_IMAGE / LINK_ONLY / Search-Explore only."
     }
   ],
   "notes": [
