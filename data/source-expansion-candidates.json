@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T21:30:00Z",
+  "generatedAt": "2026-10-05T21:40:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -5277,6 +5277,34 @@
       "verifiedAt": "2026-10-05T21:30:00Z",
       "promotedAt": "2026-10-05T21:30:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "canada-jasper-skytram-live",
+      "title": "Jasper — SkyTram Summit",
+      "country": "Canada",
+      "region": "Jasper National Park / Alberta",
+      "provider": "Jasper SkyTram / Pursuit",
+      "sourcePage": "https://www.banffjaspercollection.com/attractions/jasper-skytram/",
+      "priority": "P1_VISITOR_UTILITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current Jasper SkyTram page embeds a Live Webcam from the upper station.",
+      "verifiedAt": "2026-10-05T21:40:00Z",
+      "promotedAt": "2026-10-05T21:40:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "canada-jasper-maligne-lake-live",
+      "title": "Jasper — Maligne Lake 360°",
+      "country": "Canada",
+      "region": "Jasper National Park / Alberta",
+      "provider": "Maligne Lake / Pursuit",
+      "sourcePage": "https://www.banffjaspercollection.com/attractions/maligne-lake-cruise/webcam/",
+      "priority": "P1_VISITOR_UTILITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Pursuit describes the Maligne Lake webcam as live with real-time images and a visible live image timestamp.",
+      "verifiedAt": "2026-10-05T21:40:00Z",
+      "promotedAt": "2026-10-05T21:40:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
