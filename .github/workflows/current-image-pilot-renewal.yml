@@ -1,0 +1,43 @@
+name: ERN Current Image Pilot Renewal
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 0 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ern-current-image-pilot-renewal
+  cancel-in-progress: false
+
+jobs:
+  renew:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Renew only approved pilot evidence
+        run: node scripts/renew-current-image-pilot.mjs
+      - name: Confirm only verification timestamps changed
+        run: |
+          set -euo pipefail
+          node tests/current-image-pilot.smoke.js
+          node tests/current-image-pilot-renewal.smoke.js
+          git diff -- data/sources.json
+      - name: Commit renewed evidence when changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/sources.json; then
+            echo "No evidence timestamp change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sources.json
+          git commit -m "Renew current-image pilot evidence"
+          git push
