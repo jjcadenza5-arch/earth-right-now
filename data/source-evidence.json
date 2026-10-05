@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:28:00Z",
+  "generatedAt": "2026-10-05T13:36:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1941,6 +1941,30 @@
       "rightsBasis": "Official Colombian Geological Service online-camera page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
       "coordinateSourceUrl": "https://www2.sgc.gov.co/sgc/volcanes/VolcanNevadoHuila/Paginas/imagenes-en-linea.aspx",
       "story": "Official current monitoring views of Nevado del Huila."
+    },
+    "colombia-cerro-machin-current-image": {
+      "freshnessEvidence": "Servicio Geológico Colombiano Cerro Machín online-images page checked 2026-10-05 exposes Lajas Machín and Anillo monitoring cameras.",
+      "rightsBasis": "Official Colombian Geological Service online-camera page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://www2.sgc.gov.co/sgc/volcanes/VolcanCerroMachin/Paginas/Imagenes-en-linea.aspx",
+      "story": "Official current monitoring views of Cerro Machín."
+    },
+    "colombia-sotara-current-image": {
+      "freshnessEvidence": "Servicio Geológico Colombiano Sotará online-images page checked 2026-10-05 exposes Cerro Crespo and Majuas Sotará monitoring cameras.",
+      "rightsBasis": "Official Colombian Geological Service online-camera page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://www2.sgc.gov.co/sgc/volcanes/VolcanSotara/Paginas/imagenes-en-linea.aspx",
+      "story": "Official current monitoring views of Sotará volcano."
+    },
+    "colombia-cumbal-current-image": {
+      "freshnessEvidence": "Servicio Geológico Colombiano Cumbal online-images page checked 2026-10-05 exposes Cumbal and Boliche cameras.",
+      "rightsBasis": "Official Colombian Geological Service online-camera page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://www2.sgc.gov.co/sgc/volcanes/VolcanCumbal/Paginas/imagenes-en-linea.aspx",
+      "story": "Official current monitoring views of Cumbal volcano."
+    },
+    "colombia-nevado-tolima-current-image": {
+      "freshnessEvidence": "Servicio Geológico Colombiano Nevado del Tolima online-images page checked 2026-10-05 exposes the Totarito-sector monitoring camera.",
+      "rightsBasis": "Official Colombian Geological Service online-camera page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream camera media.",
+      "coordinateSourceUrl": "https://www2.sgc.gov.co/sgc/volcanes/VolcanNevadoTolima/Paginas/imagenesLinea.aspx",
+      "story": "Official current monitoring view of Nevado del Tolima."
     }
   },
   "prague-petrin-tower": {
