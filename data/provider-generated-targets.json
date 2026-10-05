@@ -64,11 +64,11 @@
     "promotionAllowed": false,
     "catalogMutationAllowed": false,
     "automaticGenerationAllowed": false,
-    "notes": "IMO terms explicitly allow photographs/data for private and commercial use with IMO attribution and download date unless otherwise stated. Identify only the exact stable current-image URL exposed by the provider; do not guess, scrape an unstable asset path, or alter the image.",
+    "notes": "IMO states the Reykjavik web cameras belong to IMO. Unless otherwise stated, IMO photographs/data may be used for private or commercial use with Icelandic Meteorological Office attribution and the data-download date. Resolve only the exact stable image target; preserve CURRENT_IMAGE semantics.",
     "extractionMode": "DYNAMIC_PROVIDER_IMAGE_TARGET",
     "manualInteractionRequired": false,
-    "blockerReason": "The provider page is public and reuse rights are documented, but the stable current-image asset URL is produced through the dynamic camera UI and was not exposed by the retrievable public page. Do not infer an asset path.",
-    "lastExtractionAttemptAt": "2026-09-25T14:50:00Z"
+    "blockerReason": "The official page and rights basis are confirmed, but the stable per-camera current-image asset URL is not exposed in the retrievable page text. Do not infer or scrape an unstable asset path.",
+    "lastExtractionAttemptAt": "2026-10-05T06:05:00Z"
   },
   {
     "id": "usgs-yellowstone-biscuit-basin-current-image",
@@ -165,5 +165,29 @@
     "manualInteractionRequired": false,
     "blockerReason": null,
     "lastExtractionAttemptAt": "2026-10-05T05:45:00Z"
+  },
+  {
+    "id": "trimountain-emei-lake-live-camera",
+    "providerFamilyId": "tri-mountain-scenic-area-cameras",
+    "provider": "Taiwan Tourism Administration / Tri-Mountain National Scenic Area",
+    "sourceId": "techi-reservoir-current",
+    "integrationKind": "PROVIDER_GENERATED_CURRENT_IMAGE",
+    "truthIfApproved": "LIVE_IMAGE",
+    "refreshSemantics": "OFFICIAL_LIVE_CAMERA_PAGE_DYNAMIC_PLAYER",
+    "state": "EXACT_PROVIDER_CODE_REQUIRED",
+    "generatorUrl": "https://www.trimt-nsa.gov.tw/en/live-camera/1032/",
+    "exactCode": null,
+    "exactTargetUrl": null,
+    "generatedAt": null,
+    "reviewedAt": null,
+    "reviewOutcome": null,
+    "promotionAllowed": false,
+    "catalogMutationAllowed": false,
+    "automaticGenerationAllowed": false,
+    "notes": "Tri-Mountain publishes an official Emei Lake live-camera page and its general website disclosure applies OGDL Taiwan 1.0 with attribution, subject to third-party exclusions. The retrievable page also links YouTube retrospective clips, so the current live player's ownership/embedding path must be resolved before any reuse. Do not infer that the live player is covered merely because the page is official.",
+    "extractionMode": "DYNAMIC_PROVIDER_PLAYER_TARGET",
+    "manualInteractionRequired": false,
+    "blockerReason": "Exact current player/image target and ownership are not exposed in retrievable page text. Resolve agency-owned asset/player identity before staging any reusable target.",
+    "lastExtractionAttemptAt": "2026-10-05T06:05:00Z"
   }
 ]
