@@ -120,7 +120,9 @@
     "inside:current-image-promotion-plan": "node scripts/current-image-promotion-plan.mjs",
     "inside:current-image-pilot-observation": "node scripts/current-image-pilot-observation-status.mjs",
     "analytics:distribution-observation": "node scripts/analytics-distribution-observation.mjs",
-    "analytics:search-gap-triage": "node scripts/analytics-search-gap-triage.mjs"
+    "analytics:search-gap-triage": "node scripts/analytics-search-gap-triage.mjs",
+    "sources:searchable-health": "node scripts/searchable-source-health.mjs",
+    "sources:searchable-health-summary": "node scripts/searchable-source-health-summary.mjs"
   },
   "engines": {
     "node": ">=20"
