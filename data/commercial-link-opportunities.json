@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T13:46:00Z",
+  "generatedAt": "2026-10-05T13:48:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3591,15 +3591,16 @@
       "id": "viator-mount-st-helens-portland",
       "destination": "Mount St. Helens / Portland",
       "placeIds": [
-        "us-mount-st-helens"
+        "us-mount-st-helens",
+        "washington-mount-st-helens"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has an official USGS current Mount St. Helens view, and Viator currently lists a dedicated full-day Mount St. Helens adventure from Portland. This is a direct current-view-to-visit planning bridge.",
+      "reason": "ERN now has an official USGS five-minute current Mount St. Helens monitoring view, and Viator currently lists guided Mount St. Helens trips from Portland. This is a direct current-conditions-to-visit planning bridge without affecting Earth ranking.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Portland/The-Mt-St-Helens-Adventure-Tour/d5065-120361P1",
-      "publicInventoryEvidence": "Current Viator inventory includes a guided Mount St. Helens day trip from Portland with Mount St. Helens, Ape Cave, Trail of Two Forests and viewpoints in the itinerary.",
+      "publicInventoryEvidence": "Current Viator inventory includes a full-day guided Mount St. Helens adventure from Portland with Mount St. Helens, Ape Cave, Trail of Two Forests and Windy Ridge/other viewpoints depending on conditions.",
       "nextAction": "Generate one owner-side Mount St. Helens / Portland Viator tracked destination or product link and manually verify it before public activation."
     }
   ]
