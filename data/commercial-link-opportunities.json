@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T15:10:00Z",
+  "generatedAt": "2026-10-05T15:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3737,6 +3737,37 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Tanna-Island/Mt-Yasur-Volcano-Afternoon-Guided-Tour-Tanna-Island/d25079-209502P3",
       "publicInventoryEvidence": "Current Viator inventory includes guided Mount Yasur volcano tours on Tanna Island.",
       "nextAction": "Generate one owner-side Tanna Island / Mount Yasur Viator tracked destination or product link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-zandvoort-dutch-grand-prix",
+      "destination": "Zandvoort / Circuit Zandvoort, Netherlands",
+      "placeIds": [
+        "zandvoort-beach",
+        "zandvoort-circuit"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2_SEASONAL",
+      "reason": "ERN already has healthy official Visit Zandvoort current views for the beach and circuit, while Klook currently lists Dutch Grand Prix tickets at Circuit Zandvoort. This is useful only when the event inventory is current and should never affect Earth ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-MY/activity/120020-formula-1-dutch-grand-prix-ticket/",
+      "publicInventoryEvidence": "Klook currently lists Formula 1 Dutch Grand Prix ticket inventory for Circuit Zandvoort.",
+      "nextAction": "Generate and manually verify one owner-side Klook Zandvoort / Dutch Grand Prix tracked link only while current event inventory remains useful; keep seasonal and downstream from discovery."
+    },
+    {
+      "id": "viator-laikipia-mpala",
+      "destination": "Laikipia / Mpala wildlife region, Kenya",
+      "placeIds": [
+        "mpala-watering-hole"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN has a healthy Mpala Research Centre wildlife watering-hole live view. Viator currently carries Kenya itineraries explicitly including Laikipia/Ol Pejeta and broader conservation safari experiences, creating useful post-discovery planning value without implying a tour visits Mpala itself.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-NZ/Nairobi-attractions/Ol-Pejeta-Conservancy/d5280-a28950",
+      "publicInventoryEvidence": "Viator currently lists Kenya itineraries that include Laikipia and Ol Pejeta conservation/safari experiences.",
+      "nextAction": "Generate one owner-side Laikipia/Ol Pejeta or Kenya conservation-safari tracked link only if the resulting destination scope is clearly disclosed; do not imply Mpala admission or direct tour access unless exact inventory proves it."
     }
   ]
 }
