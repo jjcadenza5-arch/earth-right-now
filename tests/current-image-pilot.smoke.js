@@ -15,7 +15,7 @@ for(const id of pilotIds){
   assert.ok(Number(s.refreshMs)>=600000);
 }
 const ruapehu=rows.find(x=>x.id==="nz-ruapehu-current-image");
-assert.match(ruapehu.attribution,/GeoNet programme and sponsors/i);
+assert.match(ruapehu.attribution,/GeoNet.*NHC.*ESNZ.*LINZ.*NEMA.*MBIE/i);
 
 const nonPilotReviewReady=[
  "yellowstone-lake-current-image",
