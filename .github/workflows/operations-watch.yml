@@ -126,6 +126,7 @@ jobs:
           npm --silent run analytics:summary -- 30 > ern-ops/analytics-private.json
           npm --silent run analytics:redact -- ern-ops/analytics-private.json | tee ern-ops/analytics-summary.json
           npm --silent run analytics:owner-report -- ern-ops/analytics-private.json ern-ops/analytics-owner-report.md
+          npm --silent run analytics:distribution-observation -- ern-ops/analytics-private.json data/organic-distribution-events.json | tee ern-ops/organic-distribution-observation.json
       - name: Compare operations trend
         if: always()
         run: |
