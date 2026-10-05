@@ -19,6 +19,7 @@ const requiredJson=[
  "embed-research-preflight.json",
  "provider-family-research.json",
  "provider-generated-targets.json",
+ "current-image-pilot-observation.json",
  "provider-discovery-queue.json",
  "research-review-queue.json",
  "commercial-inventory.json",
@@ -158,6 +159,14 @@ export async function validateOperationsPacket(dir="ern-ops"){
     for(const item of providerGeneratedTargets?.items||[]){
       if(item?.promotionAllowed!==false||item?.catalogMutationAllowed!==false||item?.automaticGenerationAllowed!==false)issues.push({file:"provider-generated-targets.json",code:"PROVIDER_TARGET_ITEM_BOUNDARY_VIOLATION",id:item?.id||null});
     }
+  }
+
+  const currentImagePilot=files["current-image-pilot-observation.json"];
+  if(currentImagePilot){
+    if(currentImagePilot?.safety?.automaticExpansionAllowed!==false)issues.push({file:"current-image-pilot-observation.json",code:"CURRENT_IMAGE_PILOT_AUTO_EXPANSION_BOUNDARY_VIOLATION"});
+    if(currentImagePilot?.expansionReady===true&&currentImagePilot?.renewalOverdue===true)issues.push({file:"current-image-pilot-observation.json",code:"CURRENT_IMAGE_PILOT_EXPANSION_OVERDUE_CONTRADICTION"});
+    if(currentImagePilot?.renewalOverdue===true&&!(currentImagePilot?.missingExpectedScheduledRenewalDates||[]).length)issues.push({file:"current-image-pilot-observation.json",code:"CURRENT_IMAGE_PILOT_OVERDUE_WITHOUT_MISSING_DATE"});
+    if(!Array.isArray(currentImagePilot?.missingExpectedScheduledRenewalDates))issues.push({file:"current-image-pilot-observation.json",code:"CURRENT_IMAGE_PILOT_MISSING_DATE_LIST_INVALID"});
   }
 
   const providerDiscovery=files["provider-discovery-queue.json"];
