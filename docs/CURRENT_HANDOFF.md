@@ -2591,3 +2591,40 @@ Hard lean-core ceiling remains exactly **575 KB**.
 - No automatic social posting/account creation.
 - No paid ranking.
 - No automatic commercial placement or link rewriting.
+
+### Alaska + Cascades expansion checkpoint — 2026-10-05
+
+#### Searchable places added
+Added six new Search/Explore-only current places, all kept out of Watch Earth by the in-ERN PLAY-only rule:
+- Redoubt Volcano — Alaska — Alaska Volcano Observatory current webcam network.
+- Iliamna Volcano — Alaska — Alaska Volcano Observatory webcam network.
+- Mount St. Helens — Washington — USGS Cascades Volcano Observatory Johnston Ridge camera; official page states a five-minute refresh and Public Domain media.
+- Akutan Volcano — Alaska — AVO current webcam network.
+- Cleveland Volcano — Alaska — AVO current webcam network.
+- Semisopochnoi — Alaska — AVO current webcam network.
+
+All are `LINK_ONLY / EXTERNAL` in this tranche. No embed or in-ERN playback permission was inferred.
+
+#### Searchable growth state
+- healthy distinct searchable places: **344**
+- remaining to 350 milestone: **6**
+- remaining to 400 stretch: **56**
+
+#### Business expansion
+Added one high-confidence direct planning path:
+- Mount St. Helens / Portland → Viator — `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`
+
+Public inventory evidence confirms a current guided Mount St. Helens day tour from Portland with Mount St. Helens, Ape Cave, Trail of Two Forests and Windy Ridge in the itinerary.
+
+No business path was fabricated for Redoubt, Iliamna, Akutan, Cleveland or Semisopochnoi because no sufficiently direct existing-partner visitor-planning fit was confirmed.
+
+#### Validation
+Pages run **2498** completed the release path successfully through deployment and deployed social-preview verification.
+Successful checks included current release smoke suite, lean launch, performance, featured curation, supplemental search integrity, commercial placement integrity, SEO, AI-search readiness and public discoverability.
+
+#### Boundaries unchanged
+- Watch Earth remains in-ERN PLAY-only.
+- External/link-only sources remain Search/Explore-only.
+- Hard lean-core ceiling remains 575 KB.
+- Controlled IMAGE_REFRESH pilot remains untouched; no manual renewal trigger.
+- No automatic commercial placement or link rewriting.
