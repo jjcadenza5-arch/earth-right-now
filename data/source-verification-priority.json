@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:55:00Z",
-  "currentHealthyDistinctPlaces": 350,
+  "generatedAt": "2026-10-05T13:46:00Z",
+  "currentHealthyDistinctPlaces": 341,
   "targetHealthyDistinctPlaces": [
     350,
     400
   ],
-  "remainingToMinimum": 0,
-  "remainingToStretch": 50,
+  "remainingToMinimum": 9,
+  "remainingToStretch": 59,
   "humanPlaybackQueueCount": 12,
   "topBatch": [
     {
