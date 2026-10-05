@@ -31,7 +31,56 @@
         "pageViews": 257,
         "facebookReferralViews": 22,
         "facebookReferralShareOfPageViews": 0.0856,
-        "note": "Same-day aggregate baseline captured after the owner reported the Facebook group posting wave. Use only for later deltas; it is not a pre-campaign control and cannot prove causation."
+        "note": "Same-day aggregate baseline captured after the owner reported the Facebook group posting wave. Use only for later deltas; it is not a pre-campaign control and cannot prove causation.",
+        "earthSearches": 22,
+        "zeroResultSearches": 6,
+        "windowOpens": 193,
+        "externalSourceOpens": 38,
+        "travelOptionOpens": 1,
+        "topSearches": [
+          {
+            "value": "new",
+            "count": 2
+          },
+          {
+            "value": "new york",
+            "count": 2
+          },
+          {
+            "value": "af",
+            "count": 1
+          },
+          {
+            "value": "africa",
+            "count": 1
+          },
+          {
+            "value": "biscuit basin",
+            "count": 1
+          }
+        ],
+        "topPlaces": [
+          {
+            "value": "kyoto-hanamikoji",
+            "count": 27
+          },
+          {
+            "value": "rovaniemi-santa-claus-village",
+            "count": 27
+          },
+          {
+            "value": "taitung-jinzun",
+            "count": 17
+          },
+          {
+            "value": "kyoto-kiyomizuzaka",
+            "count": 14
+          },
+          {
+            "value": "auckland-viaduct-harbour",
+            "count": 13
+          }
+        ]
       },
       "observationWindowsHours": [
         24,
