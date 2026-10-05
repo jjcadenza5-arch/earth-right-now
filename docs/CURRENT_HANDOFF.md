@@ -2628,3 +2628,72 @@ Successful checks included current release smoke suite, lean launch, performance
 - Hard lean-core ceiling remains 575 KB.
 - Controlled IMAGE_REFRESH pilot remains untouched; no manual renewal trigger.
 - No automatic commercial placement or link rewriting.
+
+### 350 searchable-place milestone + quality-first expansion — 2026-10-05
+
+#### Searchable milestone
+ERN reached and exceeded the **350 healthy searchable-place milestone**.
+
+New official scientific/searchable sources added in this tranche include:
+- Redoubt Volcano — Alaska — Alaska Volcano Observatory / USGS
+- Iliamna Volcano — Alaska — Alaska Volcano Observatory / USGS
+- Mount St. Helens — Washington — USGS Cascades Volcano Observatory
+- Makushin Volcano — Alaska — AVO
+- Okmok Volcano — Alaska — AVO
+- Pavlof Volcano — Alaska — AVO
+- Veniaminof Volcano — Alaska — AVO
+- Akutan Volcano — Alaska — AVO
+- Aniakchak — Alaska — AVO
+- Korovin / Atka volcanic complex — Alaska — AVO
+- Cleveland Volcano — Alaska — AVO
+- Little Sitkin Volcano — Alaska — AVO
+- Mount Etna — Sicily — INGV Osservatorio Etneo
+- Stromboli — Aeolian Islands — INGV Osservatorio Etneo
+
+AVO webcam evidence was rechecked on 2026-10-05 and showed timestamped same-day imagery across the promoted Alaska sources. USGS states the Mount St. Helens webcam refreshes every five minutes. INGV exposes current/timestamped Etna surveillance-camera imagery and Stromboli visible/thermal webcams with automatic refresh.
+
+Current searchable growth state:
+- healthy distinct searchable places: **352**
+- remaining to 350 milestone: **0**
+- remaining to 400 stretch: **48**
+
+These sources are `LINK_ONLY / EXTERNAL` and therefore remain Search/Explore-only under the permanent Watch Earth `PLAY` requirement.
+
+#### Business expansion
+Business paths strengthened or added in this tranche:
+- Mount St. Helens / Portland → Viator — current guided Mount St. Helens inventory confirmed
+- Mayon Volcano / Albay → Viator — current Mayon-specific sightseeing and ATV inventory confirmed
+- Bulusan / Sorsogon → Viator — current Bicol/Sorsogon regional inventory including Lake Bulusan confirmed
+- Mount Etna / Sicily → Viator — broad current guided hike, 4WD, cable-car and wine-tour inventory confirmed
+- Stromboli / Aeolian Islands → Viator — current Stromboli/Aeolian excursion inventory confirmed
+
+All remain `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`. No tracked URL was invented or activated. Commercial relevance remains downstream from discovery and prohibited from influencing Earth ranking.
+
+#### Validation
+Pages run **2504** completed **SUCCESS**.
+Successful release checks included:
+- current release smoke suite
+- hard performance preflight
+- featured curation preflight
+- supplemental Search catalog integrity
+- provider concentration resilience
+- commercial placement integrity
+- SEO indexing readiness
+- AI search discovery readiness
+- public discoverability
+- final deployment and social-preview verification
+
+The hard lean-core ceiling remains exactly **575 KB**.
+
+#### Boundaries preserved
+- Watch Earth remains in-ERN `PLAY` only; external-source filler is forbidden.
+- Popocatépetl and Karakol remain Search/Explore-only while external.
+- Controlled IMAGE_REFRESH pilot remains untouched by this expansion work.
+- No manual IMAGE_REFRESH renewal trigger.
+- Public generative ERN Guide remains OFF.
+- Public Now Moments media remains OFF.
+- No automatic social posting/account creation.
+- No paid ranking.
+- No automatic commercial placement or link rewriting.
+
+Post-350 strategy: continue **quality-first** expansion rather than mechanical counting, prioritizing strong official/current sources, new geography, useful related-place discovery, and genuine downstream planning value.
