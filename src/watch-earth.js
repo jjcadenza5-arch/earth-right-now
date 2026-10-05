@@ -17,7 +17,7 @@ export function watchEarthEligible(s,{now=new Date()}={}) {
     s.permission !== "UNKNOWN" &&
     recencyState(s,{now}) === "CURRENT_CHECK" &&
     embedPlaybackCurrent(s,{now}) &&
-    playbackCapability(s,{now}).action !== "UNAVAILABLE" &&
+    playbackCapability(s,{now}).action === "PLAY" &&
     watchEarthExperienceEligible(s);
 }
 
@@ -44,9 +44,9 @@ export function buildWatchEarth(
   const externalCount=pool.filter(source=>playbackCapability(source,{now}).action==="EXTERNAL").length;
   const effectiveLimit=adaptiveWatchEarthLimit({insideCount,externalCount,target:limit,preferredInside:5,externalSoftCap:12});
 
-  // Fresh inside-ERN windows are the preferred product experience. Reserve a
-  // small truthful core before filling the rest of the journey with the best
-  // current external windows. This never bypasses watchEarthEligible().
+  // Watch Earth is an in-ERN viewing product. Only sources that can actually
+  // play/render inside ERN are eligible; external-only sources belong in
+  // Search/Explore and must never be used merely to fill the journey.
   const insidePool=pool.filter(source=>playbackCapability(source,{now}).action==="PLAY");
   for(const source of insidePool){
     if(out.length>=Math.min(5,effectiveLimit))break;
