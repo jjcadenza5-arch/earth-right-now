@@ -865,8 +865,12 @@
       "evidence": "The Municipality of Ushuaia documented a permanent 24-hour live camera from the tourism office overlooking the harbour and Beagle Channel, published through its official YouTube stream.",
       "researchEvidence": "Municipal evidence is older than the current ERN verification window, so this remains research-only until the exact YouTube target is reconfirmed working in 2026.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the exact municipal-published YouTube target and confirm it is still a current live harbour stream, not an archived recording."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the exact municipal-published YouTube target and confirm it is still a current live harbour stream, not an archived recording.",
+      "verifiedAt": "2026-10-05T12:50:00Z",
+      "promotedAt": "2026-10-05T12:50:00Z",
+      "verification": "Official Ushuaia tourism live-webcam page independently rechecked; promoted conservatively as EXTERNAL_LIVE / LINK_ONLY / Search-Explore with Watch hold.",
+      "promotionNote": "Official city tourism live surface is sufficient for searchable external publication; no ERN embed permission inferred."
     },
     {
       "id": "mauritius-grand-baie",
@@ -2600,8 +2604,12 @@
       "evidence": "Namibia Wildlife Resorts' current Okaukuejo resort page exposes View Wildlife Live Cam; NWR official material describes the Okaukuejo waterhole camera as a 24/7 live wildlife stream.",
       "researchEvidence": "Official NWR source family supports the live-camera claim, but ERN keeps it research-only until the exact current target is human-playback confirmed.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the exact NWR YouTube target and confirm the waterhole feed is currently live/moving before promotion."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the exact NWR YouTube target and confirm the waterhole feed is currently live/moving before promotion.",
+      "verifiedAt": "2026-10-05T12:50:00Z",
+      "promotedAt": "2026-10-05T12:50:00Z",
+      "verification": "Current Namibia Wildlife Resorts site exposes the Wildlife Live Cam and the official NWR stream identifies Okaukuejo as 24/7; promoted conservatively as EXTERNAL_LIVE / LINK_ONLY / Search-Explore with Watch hold.",
+      "promotionNote": "First-party live surface is sufficient for searchable external publication; no ERN embed permission inferred."
     },
     {
       "id": "tvoroyri-port-live",
