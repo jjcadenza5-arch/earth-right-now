@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T13:36:00Z",
+  "generatedAt": "2026-10-05T13:42:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3571,6 +3571,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/es-ES/tours/Salento/Snowy-Tour-of-Tolima/d26165-190310P1",
       "publicInventoryEvidence": "Current Viator inventory includes a four-day Nevado del Tolima trek with high-mountain equipment and Los Nevados park entry.",
       "nextAction": "Generate one owner-side Nevado del Tolima / Salento Viator tracked destination or search link and manually verify it before public activation; keep mountain-safety and operator eligibility wording accurate."
+    },
+    {
+      "id": "viator-merapi-yogyakarta",
+      "destination": "Mount Merapi / Yogyakarta",
+      "placeIds": [
+        "indonesia-mount-merapi"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Badan Geologi/BPPTKG Merapi monitoring surface, and Viator has broad current Merapi hiking and jeep-tour inventory from Yogyakarta. This is a strong current-conditions-to-trip-planning bridge without changing Earth ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Yogyakarta/Merapi-Volcano-4WD-Jeep-Tour-From-Yogyakarta/d22560-339870P7",
+      "publicInventoryEvidence": "Current Viator inventory includes multiple Mount Merapi experiences from Yogyakarta, including guided hiking and private 4WD lava-field tours.",
+      "nextAction": "Generate one owner-side Mount Merapi / Yogyakarta Viator tracked destination/search link and manually verify it before public activation; public copy must preserve current official safety restrictions and operator itinerary boundaries."
     }
   ]
 }
