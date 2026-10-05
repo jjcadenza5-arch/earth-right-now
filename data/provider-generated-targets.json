@@ -189,5 +189,29 @@
     "manualInteractionRequired": false,
     "blockerReason": "Exact current player/image target and ownership are not exposed in retrievable page text. Resolve agency-owned asset/player identity before staging any reusable target.",
     "lastExtractionAttemptAt": "2026-10-05T06:05:00Z"
+  },
+  {
+    "id": "usgs-kilauea-v3cam-current-image",
+    "providerFamilyId": "usgs-kilauea-live",
+    "provider": "U.S. Geological Survey / Hawaiian Volcano Observatory",
+    "sourceId": "kilauea-summit",
+    "integrationKind": "PROVIDER_AUTHORIZED_CURRENT_IMAGE",
+    "truthIfApproved": "LIVE_IMAGE",
+    "refreshSemantics": "OFFICIAL_TIMESTAMPED_CURRENT_IMAGE",
+    "state": "DEPLOYED_REVIEW_REQUIRED",
+    "generatorUrl": "https://www.usgs.gov/observatories/hvo/v3cam-kilauea-volcano-hawaii-south-halemaumau-crater",
+    "exactCode": null,
+    "exactTargetUrl": "https://volcanoes.usgs.gov/cams/V3cam/images/M.jpg",
+    "generatedAt": "2026-10-05T06:20:00Z",
+    "reviewedAt": null,
+    "reviewOutcome": null,
+    "promotionAllowed": false,
+    "catalogMutationAllowed": false,
+    "automaticGenerationAllowed": false,
+    "notes": "Official USGS/HVO V3cam current still image. Public Domain. Image carries visible timestamp and USGS mark. Treat as CURRENT_IMAGE only; do not conflate with the separate livestream.",
+    "extractionMode": "DOCUMENTED_PROVIDER_CURRENT_IMAGE",
+    "manualInteractionRequired": false,
+    "blockerReason": null,
+    "lastExtractionAttemptAt": "2026-10-05T06:20:00Z"
   }
 ]
