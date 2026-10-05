@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T20:55:00Z",
+  "generatedAt": "2026-10-05T21:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -172,12 +172,13 @@
       "destination": "Cape Town",
       "placeIds": [
         "cape-town-waterfront",
-        "blouberg-table-mountain"
+        "blouberg-table-mountain",
+        "south-africa-camps-bay"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN has a current Cape Town waterfront/Table Mountain view and Viator has extensive Cape Town activities; this is a strong trip-planning bridge.",
+      "reason": "ERN has current Cape Town waterfront/Table Mountain and Camps Bay coastal views, while the already-verified Viator Cape Town destination link provides broad trip-planning utility downstream from Earth discovery.",
       "state": "VERIFIED_LINK_ADDED",
       "nextAction": "Observe aggregate Cape Town commercial clicks; keep Viator planning downstream from Earth discovery.",
       "trackingUrl": "https://www.viator.com/Cape-Town/d318-ttd?pid=P00322254&mcid=42383&medium=link",
