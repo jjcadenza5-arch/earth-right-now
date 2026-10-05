@@ -1671,3 +1671,92 @@ After that run:
 - either outcome is now visible directly in the retained operator brief and Operations packet.
 
 No owner action is required before that scheduled event.
+
+
+
+### Taiwan exact-player research + Heping Island human gate — 2026-10-05
+Continued autonomously before the first current-image pilot scheduled renewal. The pilot itself remained frozen at two sources.
+
+#### Additional Taiwan exact-player research
+Official provider pages were rechecked for additional exact player targets.
+
+**North Coast & Guanyinshan**
+- Heping Island Geopark official live-camera page:
+  `https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007412`
+- exact official-page YouTube embed:
+  `https://www.youtube.com/embed/g-T8NbF9xlQ?si=3jcSZd3ho7HNEYKk`
+- Jhongjiao Bay official page remains publicly accessible but the retrieved page structure does not expose a comparable player target; keep unresolved rather than guessing.
+
+North Coast family status now distinguishes:
+- Yehliu: human-confirmed external live;
+- Heping Island: exact YouTube target resolved / deployed human review ready;
+- Jhongjiao and other unresolved cameras: remain blocked until exact media target is exposed.
+
+**Tri-Mountain**
+Official pages now resolve exact provider/player targets:
+- Emei Lake official page:
+  `https://www.trimt-nsa.gov.tw/en/live-camera/1032/`
+  - YouTube target: `https://www.youtube.com/watch?v=PCVJi8sGKZk`
+- Deji Reservoir official page:
+  `https://www.trimt-nsa.gov.tw/en/live-camera/14/`
+  - YouTube target: `https://www.youtube.com/watch?v=YAsrUuENlGg`
+
+These are recorded as provider/platform-branded player research targets, **not** raw OGDL reusable image assets. ERN currently has no justified public source rows for these exact Tri-Mountain player targets, so no catalog source was created and no human review was requested.
+
+#### Heping Island staged exact target
+Created provider-generated target:
+- id: `north-coast-heping-island-youtube-player`
+- source id: `taiwan-heping-island-live`
+- integration kind: `PROVIDER_GENERATED_WIDGET`
+- truth if approved: `LIVE_VIDEO`
+- generator/official page:
+  `https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007412`
+- exact target:
+  `https://www.youtube.com/embed/g-T8NbF9xlQ?si=3jcSZd3ho7HNEYKk`
+- state: `DEPLOYED_REVIEW_REQUIRED`
+- review mode: `DEPLOYED_HUMAN_RENDERING_REQUIRED`
+- `promotionAllowed=false`
+- `catalogMutationAllowed=false`
+- `automaticGenerationAllowed=false`
+- `reviewedAt=null`
+- `reviewOutcome=null`
+
+Public Heping Island source remains unchanged:
+- `LIVE_IMAGE`
+- `LINK_ONLY`
+- `EXTERNAL`
+- no public `embedUrl`.
+
+Regression coverage requires this boundary.
+
+#### Validation
+Operations packet `ern-operations-1320`:
+- packet integrity: valid / 0 issues;
+- Heping target is valid/safetyOk;
+- Heping state: `DEPLOYED_REVIEW_REQUIRED`;
+- Heping review mode: `DEPLOYED_HUMAN_RENDERING_REQUIRED`;
+- no promotion/catalog/automatic-generation authority.
+
+Current-image pilot remains:
+- `OBSERVING`
+- 0 / 2 scheduled renewal dates
+- no overdue state
+- next expected renewal:
+  `2026-10-06T00:37:00Z`
+- automatic expansion false.
+
+Latest Pages run for commit `c8699f9758e3b82643cd3dcbf7146c1f154bc5d2`: **SUCCESS**.
+
+Deployed release logs explicitly show:
+- `generatedReview: ["north-coast-heping-island-youtube-player"]`
+- Heping target included among loadable operator-review embeds.
+
+#### Genuine next human gate
+The next owner action is one deployed human playback review of the Heping Island exact YouTube player in the ERN operator review page.
+
+Do not change public Heping Island truth/permission/playback before human evidence is returned.
+If playback is confirmed current/live:
+1. record generated-target human evidence;
+2. preserve LINK_ONLY/EXTERNAL while evidence is applied;
+3. evaluate any truth correction separately;
+4. do not infer inside-ERN embed permission from successful playback.
