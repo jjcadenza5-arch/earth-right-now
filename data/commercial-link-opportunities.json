@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T17:35:00Z",
+  "generatedAt": "2026-10-05T17:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1656,14 +1656,17 @@
       "id": "tiqets-salzburg",
       "destination": "Salzburg",
       "placeIds": [
-        "salzburg-old-town"
+        "salzburg-old-town",
+        "salzburg-mirabell-old-town"
       ],
       "partnerCandidate": "tiqets",
       "intent": "culture",
       "priority": "P1",
       "reason": "Salzburg Old Town/Mirabell is now a healthy searchable ERN place and Tiqets has Salzburg Card/attraction inventory.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate and manually verify one Salzburg destination-level Tiqets link."
+      "nextAction": "Generate and manually verify one Salzburg destination-level Tiqets link.",
+      "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/salzburg-attractions-c60382/",
+      "publicInventoryEvidence": "Current Tiqets Salzburg inventory includes the Salzburg Card and major city attractions."
     },
     {
       "id": "klook-mauritius-grand-baie",
