@@ -35,6 +35,7 @@ const requiredJson=[
  "earth-signals-status.json",
  "guide-ai-status.json",
  "organic-distribution-observation.json",
+ "search-gap-triage.json",
  "local-directory-status.json",
  "participation-infrastructure.json",
  "now-moment-media-status.json",
@@ -92,6 +93,17 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(!Number.isFinite(Number(organicDistribution?.observation?.facebookReferralViews)))issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_FACEBOOK_COUNT_INVALID"});
     if(organicDistribution?.sinceBaseline&&typeof organicDistribution.sinceBaseline!=="object")issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_BASELINE_DELTA_INVALID"});
     if(organicDistribution?.sinceBaseline?.deltas&&Object.values(organicDistribution.sinceBaseline.deltas).some(v=>v!==null&&!Number.isFinite(Number(v))))issues.push({file:"organic-distribution-observation.json",code:"ORGANIC_DISTRIBUTION_DELTA_METRIC_INVALID"});
+  }
+
+  const searchGapTriage=files["search-gap-triage.json"];
+  if(searchGapTriage){
+    const s=searchGapTriage.safety||{};
+    if(s.automaticCatalogMutationAllowed!==false||s.automaticAliasMutationAllowed!==false||s.demandForecastInferred!==false)issues.push({file:"search-gap-triage.json",code:"SEARCH_GAP_TRIAGE_SAFETY_BOUNDARY_VIOLATION"});
+    if(!Array.isArray(searchGapTriage.rows))issues.push({file:"search-gap-triage.json",code:"SEARCH_GAP_TRIAGE_ROWS_INVALID"});
+    for(const row of searchGapTriage.rows||[]){
+      if(row?.automaticCatalogMutationAllowed!==false)issues.push({file:"search-gap-triage.json",code:"SEARCH_GAP_TRIAGE_ITEM_MUTATION_BOUNDARY_VIOLATION",query:row?.query||null});
+      if(!["CURRENTLY_RESOLVES","LOW_CONFIDENCE_PARTIAL","GENUINE_CURRENT_GAP"].includes(row?.state))issues.push({file:"search-gap-triage.json",code:"SEARCH_GAP_TRIAGE_STATE_INVALID",query:row?.query||null});
+    }
   }
 
   const localDirectory=files["local-directory-status.json"];
