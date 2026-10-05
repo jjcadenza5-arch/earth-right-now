@@ -2,6 +2,10 @@ import fs from "node:fs";
 const input=process.argv[2],output=process.argv[3];if(!input||!output)throw new Error("usage: analytics-owner-report <input.json> <output.md>");
 const x=JSON.parse(fs.readFileSync(input,"utf8"));
 const rows=(arr=[])=>arr.map(r=>`| ${String(r.value||"—").replace(/\|/g,"/")} | ${Number(r.count)||0} |`).join("\n")||"| — | 0 |";
+const referrers=Array.isArray(x.referrers)?x.referrers:[];
+const referrerCount=matcher=>referrers.filter(r=>matcher(String(r.value||"").toLowerCase())).reduce((n,r)=>n+(Number(r.count)||0),0);
+const facebookReferralViews=referrerCount(v=>v==="facebook.com"||v.endsWith(".facebook.com")||v==="fb.com"||v.endsWith(".fb.com"));
+const googleReferralViews=referrerCount(v=>v==="google.com"||v.endsWith(".google.com"));
 const v=x.visitors||{};
 const md=`# ERN Soft Launch Analytics — Private Owner Report
 
@@ -47,6 +51,12 @@ ${rows(x.countries)}
 | Device | Page views |
 |---|---:|
 ${rows(x.devices)}
+
+## Referrer families
+- Facebook-family page views: **${facebookReferralViews}**
+- Google-family page views: **${googleReferralViews}**
+
+These are aggregate referral page views only. They are not impressions, group reach, clicks-to-conversion, bookings, or revenue.
 
 ## Referrer host
 | Referrer | Page views |
