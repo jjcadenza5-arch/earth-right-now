@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T06:48:40.683Z",
+  "generatedAt": "2026-10-05T07:00:27.350Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -11,16 +11,7 @@
     "kilauea-summit": {
       "freshnessEvidence": "Official USGS Kīlauea webcams page was rechecked on 2026-09-28 and continues to list multiple live views and live images of Kīlauea, including Halemaʻumaʻu summit cameras.",
       "rightsBasis": "Official USGS current-view source; retained as link-only because ERN has not documented redistribution/embed permission.",
-      "coordinateSourceUrl": "https://www.usgs.gov/volcanoes/kilauea",
-      "machineCurrentImageVerification": {
-        "verifiedAt": "2026-10-05T06:43:10.584Z",
-        "state": "FETCH_OK_TEMPORAL_EVIDENCE_CURRENT",
-        "status": 200,
-        "contentType": "image/jpeg",
-        "bytes": 54588,
-        "lastModified": "Mon, 05 Oct 2026 06:39:02 GMT",
-        "evidenceAgeMinutes": 4.1
-      }
+      "coordinateSourceUrl": "https://www.usgs.gov/volcanoes/kilauea"
     },
     "pattaya-city-live": {
       "freshnessEvidence": "Pattaya City's official CCTV Streaming portal was rechecked on 2026-09-29. It reports Total 600 cameras, while the public Live View and Camera List currently show 0 cameras. This is provider-offline evidence for the public live collection, so ERN keeps the source DEGRADED and defers recheck until a material provider change; no successful playback/currentness claim is made.",
@@ -1808,6 +1799,20 @@
       "rightsBasis": "First-party resort live-feed page; ERN remains LINK_ONLY and does not infer embed or restream permission.",
       "coordinateNote": "Representative Malolo Lailai island reference, not claimed camera position. This feed shares the same canonical ERN place as Plantation Island Resort to prevent fake destination inflation.",
       "coordinateSourceUrl": "https://www.lomaniisland.com/webcam/"
+    },
+    "kilauea-v3cam-current-image": {
+      "freshnessEvidence": "Official USGS/HVO V3cam direct current-image endpoint was machine-verified by ERN Operations on 2026-10-05 as a valid JPEG with a fresh Last-Modified timestamp. Public catalog remains LINK_ONLY until an explicit IMAGE_REFRESH transition is reviewed.",
+      "rightsBasis": "USGS/HVO V3cam media is identified by USGS as Public Domain. Preserve source attribution and CURRENT_IMAGE semantics; do not represent the still image as a livestream.",
+      "coordinateSourceUrl": "https://www.usgs.gov/volcanoes/kilauea",
+      "machineCurrentImageVerification": {
+        "verifiedAt": "2026-10-05T06:43:10.584Z",
+        "state": "FETCH_OK_TEMPORAL_EVIDENCE_CURRENT",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 54588,
+        "lastModified": "Mon, 05 Oct 2026 06:39:02 GMT",
+        "evidenceAgeMinutes": 4.1
+      }
     }
   },
   "prague-petrin-tower": {
