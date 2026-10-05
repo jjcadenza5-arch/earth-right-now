@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:42:00Z",
+  "generatedAt": "2026-10-05T13:50:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1971,6 +1971,42 @@
       "rightsBasis": "Official Indonesian geological-agency monitoring service. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream the live service.",
       "coordinateSourceUrl": "https://geologi.esdm.go.id/bpptkg",
       "story": "Official live seismic and CCTV monitoring surface for Mount Merapi."
+    },
+    "us-mount-st-helens-current-image": {
+      "freshnessEvidence": "USGS Cascades Volcano Observatory webcam page checked 2026-10-05 states that the Johnston Ridge research-camera image refreshes every five minutes.",
+      "rightsBasis": "Official USGS webcam page. ERN remains Search/Explore LINK_ONLY and does not infer permission to embed the camera.",
+      "coordinateSourceUrl": "https://www.usgs.gov/media/webcams/johnston-ridge-observatory-mount-st-helens",
+      "story": "Official current crater view of Mount St. Helens from Johnston Ridge."
+    },
+    "alaska-pavlof-current-image": {
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 showed multiple Pavlof cameras with image timestamps from Oct. 5, 2026.",
+      "rightsBasis": "Official AVO/USGS monitoring surface. ERN remains Search/Explore LINK_ONLY and does not infer embed permission.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/volcano/312030",
+      "story": "Official current monitoring views of Pavlof Volcano."
+    },
+    "alaska-makushin-current-image": {
+      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed Makushin MREP with a current Oct. 5, 2026 image timestamp.",
+      "rightsBasis": "Official AVO/USGS webcam index. ERN remains Search/Explore LINK_ONLY.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
+      "story": "Official current monitoring view of Makushin Volcano."
+    },
+    "alaska-veniaminof-current-image": {
+      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed multiple Veniaminof cameras with current Oct. 5, 2026 image timestamps.",
+      "rightsBasis": "Official AVO/USGS webcam index. ERN remains Search/Explore LINK_ONLY.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
+      "story": "Official current monitoring views of Veniaminof Volcano."
+    },
+    "alaska-okmok-current-image": {
+      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed Okmok cameras with current Oct. 5, 2026 image timestamps.",
+      "rightsBasis": "Official AVO/USGS webcam index. ERN remains Search/Explore LINK_ONLY.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
+      "story": "Official current monitoring views of Okmok caldera."
+    },
+    "alaska-katmai-current-image": {
+      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed Katmai cameras with current Oct. 5, 2026 image timestamps.",
+      "rightsBasis": "Official AVO/USGS volcano and webcam surface. ERN remains Search/Explore LINK_ONLY.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/volcano/Katmai",
+      "story": "Official current monitoring views of the Katmai volcanic area."
     }
   },
   "prague-petrin-tower": {
