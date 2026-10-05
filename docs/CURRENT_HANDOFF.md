@@ -2870,3 +2870,71 @@ These are not considered broken merely because automated access was blocked; the
 - Operations run 1357 completed SUCCESS for the Liechtenstein source addition. Operations run 1358 and the latest Pages serialization were allowed to proceed naturally after the Gibraltar addition; no manual workflow trigger was used.
 - Malta official tourism research was refreshed: VisitMalta continues to expose a Live Malta Cams destination surface and explicitly describes live-camera use for pre-trip viewing, but ERN still lacks sufficiently resolved named camera targets/currentness evidence to promote a Malta place. Existing Malta commercial opportunity remains source-gated.
 - Protected gates remain unchanged: Watch Earth in-ERN playback only; hard 575 KB lean-core ceiling; IMAGE_REFRESH untouched until natural renewal; public generative Guide OFF; public Now Moments media OFF; no automatic social posting/account creation; no paid ranking.
+
+
+### Large expansion batch — 2026-10-05
+Owner requested that ERN expansion proceed in substantially larger autonomous batches instead of returning after every few additions. This checkpoint follows that operating mode.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **396 to 403 places** (408 healthy source records total; 84 supplemental Search/Explore records).
+
+New promoted places in this batch:
+- Madeira official tourism: Câmara de Lobos, Ponta do Sol and Pico do Areeiro;
+- American Samoa: Ofu Ranger Station current view from the U.S. National Park Service;
+- U.S. Virgin Islands: St. John / Windswept Point current-conditions view referenced by the U.S. National Park Service;
+- Acadia National Park: Frenchman Bay current image from the official NPS webcam surface;
+- Channel Islands National Park: official NPS Channel Islands Live surface.
+
+All new external/current-image sources remain fail-closed for Watch Earth: `LINK_ONLY` / `EXTERNAL`, with Watch Earth still requiring in-ERN playback.
+
+Research was also expanded without premature promotion:
+- Vatican City official webcam research is now queued after current Vatican News documentation confirmed that the Governorate provides real-time webcams of significant Vatican City places. The exact post-September-2026 Governorate webcam route and named targets still require resolution, so no Vatican place was promoted.
+- Malta official Live Malta Cams research was refreshed. The official tourism surface remains real, but exact named-camera/currentness extraction is still insufficient for promotion; Malta remains source-gated.
+- Previously queued Montserrat and Île des Pins/New Caledonia candidates remain verification-gated rather than being promoted on weak freshness evidence.
+
+#### Business expansion + reconciliation
+Business work emphasized useful mapping and deduplication rather than raw opportunity count.
+
+New downstream opportunities added:
+- St. John / U.S. Virgin Islands → Viator;
+- Acadia National Park / Bar Harbor → Viator.
+
+Existing business mappings were reconciled to current promoted place IDs for Madeira, Bled, Tallinn, Wānaka, Rotorua, Santorini, Poiana Brașov and Dubrovnik.
+
+Madeira's single island-level Viator opportunity now serves **12** healthy Madeira places, preserving one useful commercial bridge instead of multiplying affiliate density.
+
+Commercial cleanup/consolidation:
+- removed duplicate Bansko future record; canonical `viator-bansko` retained;
+- removed duplicate Jasná future record; canonical `viator-jasna-chopok` retained;
+- merged the stale source-gated Longyearbyen future record into canonical `viator-longyearbyen`, which now covers both healthy UNIS/Adventfjorden place IDs and remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`;
+- Shetland commercial mapping now includes the newer promoted Lerwick Town Hall place ID.
+
+Commercial registry is now **239 opportunities**. The lower count reflects deliberate deduplication, not contraction of useful coverage. No new tracked link was fabricated or activated.
+
+#### Health + release validation
+Operations runs 1359, 1360 and 1361 all completed SUCCESS across the staged source additions.
+
+Latest validated searchable-source health at Operations 1361:
+- eligible searchable sources: **412**;
+- eligible unique URLs: **311**;
+- current cohort: **58 sources / 43 unique URLs**;
+- reachable: **51**;
+- missing: **0**;
+- access-blocked: **5**;
+- temporary/network: **2**;
+- repair: **2**;
+- review: **5**;
+- watch: **0**.
+
+The two REPAIR items remain Bishkek Ala-Too Square and Too-Ashu Pass. Their provider pages were already independently confirmed active, so no deletion, replacement, truth change or health downgrade is justified from the automated network failures alone. Five access-limited sources remain REVIEW only.
+
+Pages run 2525 completed SUCCESS with all **112 current ERN release smoke tests passing**, Supplemental Search integrity passing, and the hard lean-core budget remaining exactly **575000 bytes**. A subsequent Pages serialization for the final commercial reconciliation is proceeding through the same canonical workflow; all completed preflight stages through artifact upload have passed.
+
+Protected gates remain unchanged:
+- Watch Earth = in-ERN playback only;
+- IMAGE_REFRESH pilot untouched until its natural renewal;
+- public generative ERN Guide OFF;
+- public Now Moments media OFF;
+- no automatic social posting/account creation;
+- no paid ranking;
+- commercial value never affects Earth ranking.
