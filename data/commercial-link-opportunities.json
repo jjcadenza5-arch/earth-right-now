@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T18:20:00Z",
+  "generatedAt": "2026-10-05T18:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -628,7 +628,7 @@
       "partnerCandidate": "klook",
       "intent": "activities",
       "priority": "P1",
-      "reason": "Klook currently exposes a Mauritius destination with active tours, cruises, snorkeling, island trips and outdoor activities, and Klook is already an active ERN relationship.",
+      "reason": "ERN has multiple healthy official Mauritius current-view places and Klook has broad Mauritius island activity inventory; one island-level planning path should serve the cluster without duplicate commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/co1011-mauritius/1-things-to-do/",
       "publicInventoryEvidence": "Current Klook Mauritius inventory includes island tours, snorkeling/catamaran products, Chamarel/7 Coloured Earth, whale watching, kayaking and other visitor activities.",
@@ -1667,19 +1667,6 @@
       "nextAction": "Generate and manually verify one Salzburg destination-level Tiqets link.",
       "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/salzburg-attractions-c60382/",
       "publicInventoryEvidence": "Current Tiqets Salzburg inventory includes the Salzburg Card and major city attractions."
-    },
-    {
-      "id": "klook-mauritius-grand-baie",
-      "destination": "Mauritius / Grand Baie",
-      "placeIds": [
-        "mauritius-grand-baie"
-      ],
-      "partnerCandidate": "klook",
-      "intent": "activities",
-      "priority": "P2",
-      "reason": "Grand Baie is now searchable in ERN and has strong island activity utility.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Check Klook Mauritius coverage and generate one exact destination/island link only if inventory quality is strong."
     },
     {
       "id": "viator-rotorua",
@@ -3879,6 +3866,67 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Punta-Arenas/d4416-ttd",
       "publicInventoryEvidence": "Current Viator Punta Arenas inventory includes Patagonia sightseeing, King Penguin, Tierra del Fuego and marine excursions.",
       "nextAction": "Generate one owner-side Punta Arenas destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-akureyri-north-iceland",
+      "destination": "Akureyri / North Iceland",
+      "placeIds": [
+        "iceland-vikurskard",
+        "iceland-saudarkrokur"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has additional official North Iceland current road/landscape views, while Viator has deep Akureyri/North Iceland waterfall, Mývatn and shore-excursion inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Akureyri/d4341-ttd",
+      "publicInventoryEvidence": "Current Viator Akureyri inventory includes Lake Mývatn, Goðafoss and broader North Iceland excursions.",
+      "nextAction": "Generate one owner-side Akureyri/North Iceland destination-level tracked link and manually verify it before public activation; reuse it across appropriate North Iceland places rather than creating camera-specific commercial links."
+    },
+    {
+      "id": "viator-snaefellsnes",
+      "destination": "Snæfellsnes Peninsula, Iceland",
+      "placeIds": [
+        "iceland-bulandshofdi"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official current Búlandshöfði/Snæfellsnes road-and-coast view, and Viator has strong Snæfellsnes sightseeing inventory from Reykjavík and Grundarfjörður.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/tours/Western-Region/Snaefellsnes-Peninsula-Tour-from-Grundarfjordur-Port/d50969-16698P60",
+      "publicInventoryEvidence": "Current Viator inventory includes Snæfellsnes Peninsula tours covering Kirkjufell, Djúpalónssandur, Arnarstapi and other regional highlights.",
+      "nextAction": "Generate one owner-side Snæfellsnes destination/search tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-east-iceland",
+      "destination": "East Iceland / Egilsstaðir region",
+      "placeIds": [
+        "iceland-faskrudsfjordur-vikurgerdi"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has an official current Fáskrúðsfjörður/East Iceland view and Viator has current East Iceland hiking and sightseeing inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/East-Iceland/Full-Day-Canyon-Hiking-Tour-Egilsstadir/d22630-23027P11",
+      "publicInventoryEvidence": "Current Viator inventory includes guided East Iceland hiking and sightseeing from the Egilsstaðir/East Region area.",
+      "nextAction": "Only activate if the owner account exposes a clean East Iceland destination-level link; do not force a single product if a broader useful link is unavailable."
+    },
+    {
+      "id": "viator-westfjords",
+      "destination": "Westfjords, Iceland",
+      "placeIds": [
+        "iceland-vatnsfjardarhals"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has an official current Westfjords mountain-road view and Viator carries current Isafjordur/Westfjords sightseeing products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Isafjordur/Svalvogar-circle-supertruck-tour/d4349-143817P1",
+      "publicInventoryEvidence": "Current Viator inventory includes Westfjords sightseeing from Ísafjörður through remote fjord and mountain landscapes.",
+      "nextAction": "Search the owner account for a clean Westfjords/Ísafjörður destination-level link; leave dormant if only overly narrow products are available."
     }
   ]
 }
