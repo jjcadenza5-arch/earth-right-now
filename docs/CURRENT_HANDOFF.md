@@ -3032,3 +3032,114 @@ Pages 2532 validation:
 - No automatic social posting/account creation.
 - No paid ranking.
 - Commercial value never affects Earth ranking, truth, currentness or health.
+
+
+### Iceland + Maldives + Caribbean/East Africa large expansion — 2026-10-05
+Owner reiterated the long-term ERN operating principle: build truly broad Earth coverage and useful downstream business coverage in substantial but careful batches. Do not rush, but do not return after only a few cases. Preserve source quality, provenance, currentness, permission boundaries and commercial neutrality.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **414 to 427 places** (**432 healthy source records** total).
+
+This batch added **13 healthy searchable places** across underrepresented or high-visitor-utility geographies:
+
+**Iceland — 5 official IRCA current views**
+- Víkurskarð — North Iceland;
+- Sauðárkrókur — Skagafjörður;
+- Víkurgerði / Fáskrúðsfjörður — East Iceland;
+- Búlandshöfði — Snæfellsnes;
+- Vatnsfjarðarháls — Westfjords.
+
+All five use the Icelandic Road and Coastal Administration's official current camera service and remain `LIVE_IMAGE` + `LINK_ONLY` + external playback. They are Search/Explore-only and do not affect Watch Earth eligibility.
+
+**Maldives — 2 additional first-party island views**
+- Veligandu — North Ari Atoll, using Veligandu Maldives Resort Island's official Sunrise/Sunset live webcams;
+- Komandoo — Lhaviyani Atoll, using the resort's official webcam that states it refreshes every 60 seconds.
+
+Together with Kuredu, ERN now has three strong first-party Maldives live/current island places. One Maldives-level business bridge serves the cluster rather than creating commercial density per resort.
+
+**Caribbean + East Africa — 6 first-party live views**
+- Seven Mile Beach — Grand Cayman, via Sunshine Hotel & Suites' first-party live East/West beachfront views;
+- Montego Bay — Jamaica, via S Hotel Montego Bay's real-time live webcam;
+- Kingston — Jamaica, via S Hotel Kingston's real-time live webcam;
+- Calabash Cove — Saint Lucia, via the resort's first-party live webcam;
+- Paje — Zanzibar, Tanzania, via Zanzibar White Sand Luxury Villas & Spa's first-party Live Webcam surface;
+- White Bay / Jost Van Dyke — British Virgin Islands, via Soggy Dollar Bar & Sandcastle Hotel's first-party LIVE STREAMING webcam.
+
+All six remain `LINK_ONLY` / external Search/Explore sources. None can be used to fill Watch Earth.
+
+#### Business-side expansion + cleanup
+Commercial registry moved from **244 to 249 opportunities**. The modest net increase reflects both new coverage and deliberate deduplication.
+
+New or materially expanded paths:
+- Akureyri / North Iceland → Viator;
+- Snæfellsnes → Viator;
+- East Iceland → Viator, only if a useful destination-level owner-side link exists;
+- Westfjords → Viator, only if a useful destination-level owner-side link exists;
+- Grand Cayman / Seven Mile Beach → Viator;
+- Montego Bay → Viator;
+- Kingston → Viator;
+- Saint Lucia → Viator;
+- Zanzibar / Paje → Viator;
+- Jost Van Dyke / BVI → Viator.
+
+Existing Maldives mapping was extended to cover Kuredu, Veligandu and Komandoo with one island-country-level planning path.
+
+Commercial consolidation performed in the same batch:
+- duplicate Mauritius Grand Baie Klook opportunity folded into the canonical Mauritius island-level opportunity;
+- duplicate Kruger Viator records consolidated into one park-level path;
+- duplicate St. Maarten / Great Bay Viator records consolidated into one island/Philipsburg path;
+- duplicate Issyk-Kul Viator records consolidated into one regional path;
+- duplicate Shymbulak Viator records consolidated into one canonical Almaty/Shymbulak path; the distinct Klook path remains because it is a separate approved partner relationship.
+
+All newly created or consolidated unverified opportunities remain `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`. No tracked URL, offer or availability was invented. Commercial value remained downstream from Earth discovery and did not affect source ranking, truth or health.
+
+#### Search scaling architecture — resolved without weakening performance
+During this batch ERN crossed the original **100-row supplemental Search integrity ceiling**.
+
+The first release failure was correctly caused by the bounded supplemental guard when the catalog reached 102 rows. An initial attempt to graduate mature supplemental records into `data/sources.json` preserved search integrity but made the lean core exceed the hard 575 KB performance ceiling. That approach was rejected.
+
+Final scalable solution:
+- keep Search/Explore expansion in the lazy supplemental layer rather than bloating first-load core;
+- restore the exact canonical compact serialization of `data/sources.json` from the last known-good release; logical source content is unchanged;
+- raise the bounded lazy supplemental capacity from **100 to 250 rows**;
+- keep all existing supplemental hard gates: HEALTHY only, LINK_ONLY only, held from Featured/Watch Earth, HTTPS source URL, no core ID/place duplication;
+- current supplemental catalog: **108 / 250** rows;
+- current core catalog: **328** rows;
+- combined catalog rows: **436**;
+- no place was deleted during the scaling correction.
+
+This capacity change does **not** loosen truth, permission, currentness, Watch Earth or commercial rules. It only allows the lazy Search/Explore layer to continue growing while preserving initial-load performance.
+
+#### Health and validation
+Operations run **1374 completed SUCCESS** after the scaling change.
+
+Latest validated searchable-source health from Operations 1374:
+- eligible searchable sources: **436**;
+- eligible unique URLs: **329**;
+- current rotating cohort: **60 sources / 45 unique URLs**;
+- reachable: **52**;
+- missing: **0**;
+- access-blocked: **5**;
+- temporary/network: **3**;
+- recovered: **0**;
+- repair: **2**;
+- review: **5**;
+- watch: **1**.
+
+The two REPAIR records remain Bishkek Ala-Too Square and Too-Ashu Pass; their provider pages were independently confirmed active, so source truth remains unchanged. The five repeated access-limited records remain REVIEW only. A new first transient WATCH is Sara Sara Volcano — Peru; it should recheck naturally on its next cohort and must not be treated as broken from one transient failure.
+
+Pages run **2548 completed SUCCESS** after restoring compact core serialization and expanding lazy Search capacity.
+- all **112 current ERN release smoke tests passed**;
+- Supplemental Search integrity passed with 108 records;
+- commercial placement integrity passed;
+- lean-core performance preflight passed with the hard budget still exactly **575000 bytes**;
+- release artifact built and deployed successfully.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**; all new LINK_ONLY/EXTERNAL places stay Search/Explore-only.
+- IMAGE_REFRESH was not manually triggered or altered.
+- Public generative ERN Guide remains OFF.
+- Public Now Moments media remains OFF.
+- No automatic social posting/account creation.
+- No paid ranking.
+- Commercial value never affects Earth ranking, truth, currentness or health.
