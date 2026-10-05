@@ -53,4 +53,5 @@ assert.match(builder,/ERN playback mode/,"structured destination facts should ex
 assert.match(builder,/ERN last checked/,"structured destination facts should expose reliable verification time when available");
 assert.match(builder,/relatedLink/,"related destination links should also be machine-readable");
 assert.match(builder,/place-search-aliases\.json/,"crawlable destination pages must consume multilingual alias sidecar");
+assert.match(builder,/safe\(s\.officialUrl\|\|s\.sourceUrl\)/,"crawlable destination source and citation links must prefer official provider pages over raw current-image endpoints");
 console.log("Destination understanding enrichment contract passed");
