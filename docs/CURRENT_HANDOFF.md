@@ -1263,3 +1263,102 @@ Operations packet generated around 2026-10-05T07:35:59Z reports:
 
 #### Pilot observation rule
 Do not expand beyond these two IMAGE_REFRESH sources merely because the first deployment is green. Observe production behavior and automated renewal first. Expand only after the pilot remains healthy under real scheduled renewal and normal visitor use.
+
+
+
+### Pilot observation gate + curation semantics + provider provenance — 2026-10-05
+Continued autonomously after activation of the two-source controlled IMAGE_REFRESH pilot.
+
+#### Pilot observation gate
+- Added `data/current-image-pilot-observations.json` as a non-runtime observation ledger.
+- Successful renewal runs now append a bounded audit sample containing:
+  - observation time,
+  - UTC date,
+  - GitHub event type,
+  - exact two pilot source ids,
+  - machine freshness timestamps/ages.
+- The ledger is capped to the latest 30 observations.
+- Added `current-image-pilot-observation` Operations status.
+- Expansion rule is now enforceable:
+  - requires at least **2 distinct successful scheduled renewal UTC dates**;
+  - manual `workflow_dispatch` runs do **not** count toward expansion readiness;
+  - latest scheduled renewal must remain recent;
+  - automatic expansion remains forbidden.
+- Current state:
+  - `OBSERVING`
+  - successful scheduled renewal dates: **0 / 2**
+  - `expansionReady=false`
+  - next action: `KEEP_TWO_SOURCE_PILOT_AND_WAIT_FOR_SCHEDULED_RENEWALS`
+- The renewal workflow was created after the 2026-10-05 00:37 UTC schedule slot, so no scheduled renewal is expected in today's ledger.
+- Renewal workflow remains hard-scoped to:
+  - `yellowstone-biscuit-basin-current-image`
+  - `nz-ruapehu-current-image`
+- Successful renewal may update verification timestamps and the observation ledger only; it cannot change permissions, playback mode, ranking, or promote additional sources.
+
+#### Latest pilot/source health
+Operations packet around 2026-10-05T09:03Z:
+- exact staged current-image targets: **8**
+- machine-current: **8 / 8**
+- invalid: **0**
+- temporal-sample debt: **0**
+- public IMAGE_REFRESH maintenance-eligible: **2**
+- still READY_FOR_EDITORIAL_PROMOTION_REVIEW: **5**
+- blocked: **1 Kīlauea V3cam source-binding case**
+- Pilot sources remained freshly machine-verified:
+  - Biscuit Basin current image: fresh temporal evidence;
+  - Ruapehu North current image: fresh temporal evidence.
+
+#### Watch Earth: target is now a ceiling, not a quota
+- Corrected `watchEarthLiveNowStatus` operational semantics to match the approved product principle:
+  - **20 is a maximum/ceiling, not a fill target**;
+  - **5 excellent diverse views > 20 repetitive/weaker views**.
+- Status model now uses:
+  - `FULL` when the ceiling is reached,
+  - `CURATED` when the healthy curated floor is met,
+  - `THIN` only when the shelf is genuinely too small,
+  - `EMPTY` when no current shelf exists.
+- Operations now reports:
+  - status: **CURATED**
+  - target role: `CEILING_NOT_QUOTA`
+  - curated floor: 5
+  - current count: **13**
+  - places: 13
+  - countries: 7
+  - providers: 8
+  - inside-ERN: 13
+  - shortfall: **0**
+  - capacity remaining: 7
+- This prevents future autonomous work from trying to fill Watch Earth to 20 merely to make an operational report look complete.
+
+#### Crawlable destination/source-link consistency
+- For IMAGE_REFRESH sources the runtime `sourceUrl` is the exact current-image JPEG.
+- Public visitor-facing Source links already preferred `officialUrl`.
+- Found and fixed a remaining inconsistency in `scripts/build-destination-pages.mjs`:
+  - destination-page Provider Source links now prefer `officialUrl || sourceUrl`;
+  - structured WebPage `citation` values also prefer official provider pages.
+- This prevents raw current-image JPEG endpoints from being exposed as the authoritative public source/citation in crawlable destination pages or AI-search surfaces.
+- Added a regression test enforcing official-provider-page preference.
+
+#### Taiwan reusable-source research
+**Tri-Mountain National Scenic Area**
+- Official Tri-Mountain government news states the headquarters installed new 4K tourism real-time cameras including Emei Lake, Baguashan and Deji Reservoir.
+- This materially strengthens agency camera ownership/provenance.
+- General website materials remain under OGDL Taiwan 1.0 with attribution, subject to third-party exclusions.
+- Remaining blocker is now the exact delivered media/player target and whether that target is agency-hosted/OGDL-covered or separately controlled by a third-party platform.
+- Status remains fail-closed; no promotion.
+
+**North Coast & Guanyinshan National Scenic Area**
+- Official site directly publishes a dedicated Live Camera gallery and named pages including Yehliu Geopark, Jhongjiao Bay, Heping Island, Baisha Bay, Yinghanling and Laomei Green Reef.
+- This confirms the administration's official public source surface.
+- Exact delivered media/player target is still unresolved and open-information reuse remains subject to third-party exceptions.
+- Status remains fail-closed; no promotion.
+
+#### Validation
+Newest canonical main after this continuation:
+- `dfee96983a4592c4e3906e318e492f81760aee81`
+- latest Pages run for the destination-source-link guard: **SUCCESS**
+- corresponding Operations run for the source-link correction: **SUCCESS**
+- previous Tri-Mountain and North Coast provider-research commits also passed Pages and Operations.
+- Hard performance limits were not raised.
+- Public generative Guide and Now Moments uploads remain OFF.
+- No pilot expansion occurred.
