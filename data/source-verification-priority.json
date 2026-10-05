@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:58:00Z",
-  "currentHealthyDistinctPlaces": 319,
+  "generatedAt": "2026-10-05T12:50:00Z",
+  "currentHealthyDistinctPlaces": 327,
   "targetHealthyDistinctPlaces": [
     350,
     400
   ],
-  "remainingToMinimum": 31,
-  "remainingToStretch": 81,
-  "humanPlaybackQueueCount": 14,
+  "remainingToMinimum": 23,
+  "remainingToStretch": 73,
+  "humanPlaybackQueueCount": 12,
   "topBatch": [
     {
       "id": "bratislava-city-live",
@@ -51,34 +51,6 @@
         "viator-nairobi-national-park-future"
       ],
       "humanCheckHint": "Open the KWS KenyaLIVE article, follow the official KWS YouTube route, and confirm there is a current live broadcast identified as Nairobi National Park before promotion."
-    },
-    {
-      "id": "namibia-okaukuejo-waterhole",
-      "title": "Okaukuejo Waterhole — Etosha National Park",
-      "country": "Namibia",
-      "provider": "Namibia Wildlife Resorts",
-      "priority": "P1",
-      "verificationUrl": "https://www.youtube.com/watch?v=6DoC2IV7OAI",
-      "verificationType": "PROVIDER_YOUTUBE_LIVE_TARGET",
-      "oneClick": true,
-      "businessUnlocks": [
-        "viator-etosha-future"
-      ],
-      "humanCheckHint": "Open the exact NWR YouTube target and confirm the waterhole feed is currently live/moving before promotion."
-    },
-    {
-      "id": "ushuaia-harbour-municipal",
-      "title": "Ushuaia — Harbour & Beagle Channel",
-      "country": "Argentina",
-      "provider": "Municipalidad de Ushuaia / Secretaría de Turismo",
-      "priority": "P1",
-      "verificationUrl": "https://www.youtube.com/watch?v=q9g51I3NyJQ",
-      "verificationType": "MUNICIPAL_PUBLISHED_YOUTUBE_TARGET",
-      "oneClick": true,
-      "businessUnlocks": [
-        "viator-ushuaia-future"
-      ],
-      "humanCheckHint": "Open the exact municipal-published YouTube target and confirm it is still a current live harbour stream, not an archived recording."
     },
     {
       "id": "uruguay-montevideo-pocitos",
@@ -204,6 +176,6 @@
     "watchEarthEligible": false,
     "labelingRequired": true
   },
-  "note": "Only the remaining genuinely playback-gated candidates are listed. Quasi-live/current-image promotions already completed are not re-queued.",
-  "remainingHumanPlaybackRequired": 14
+  "note": "Only genuinely playback-gated candidates remain listed. Ushuaia harbour and Okaukuejo Waterhole were resolved for conservative external/link-only searchable publication from first-party official live surfaces; this does not imply ERN embed permission.",
+  "remainingHumanPlaybackRequired": 12
 }
