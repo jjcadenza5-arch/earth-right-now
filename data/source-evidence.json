@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T12:50:00Z",
+  "generatedAt": "2026-10-05T13:08:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1905,6 +1905,18 @@
       "rightsBasis": "First-party NWR live-camera surface and official NWR stream. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream the stream.",
       "coordinateSourceUrl": "https://www.nwr.com.na/resorts/okaukuejo-resort/",
       "story": "Official live wildlife view at the Okaukuejo waterhole in Etosha National Park."
+    },
+    "el-salvador-santa-ana-volcano": {
+      "freshnessEvidence": "El Salvador DGOA/MARN volcano-monitoring page checked 2026-10-05 currently lists environmental monitoring cameras for Volcán Ilamatepec / Izalco (Santa Ana) and states its seismic monitoring data are transmitted in real time.",
+      "rightsBasis": "Official national government volcano-monitoring page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream monitoring media.",
+      "coordinateSourceUrl": "https://www.snet.gob.sv/informacion/areas/vulcanologia/contenido/monitoreo.php",
+      "story": "Official current monitoring view of Santa Ana / Ilamatepec, El Salvador's highest volcano."
+    },
+    "el-salvador-san-miguel-volcano": {
+      "freshnessEvidence": "El Salvador DGOA/MARN homepage checked 2026-10-05 currently exposes CÁMARA VOLCÁN SAN MIGUEL in a YouTube player; the official volcano-monitoring page also lists Chaparrastique among environmental monitoring cameras.",
+      "rightsBasis": "Official national government monitoring surface. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream the player.",
+      "coordinateSourceUrl": "https://www.snet.gob.sv/informacion/areas/vulcanologia/contenido/monitoreo.php",
+      "story": "Official current monitoring view of San Miguel / Chaparrastique volcano."
     }
   },
   "prague-petrin-tower": {
