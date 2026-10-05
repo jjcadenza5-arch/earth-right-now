@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T20:05:00Z",
+  "generatedAt": "2026-10-05T20:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4075,6 +4075,37 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Curacao/d725-ttd",
       "publicInventoryEvidence": "Current Viator Curaçao inventory includes 300+ sightseeing, beach, sailing, snorkeling and island experiences.",
       "nextAction": "Generate one owner-side Curaçao/Willemstad destination-level tracked link and manually verify it before public activation; reuse it across both Curaçao places rather than duplicating commercial density."
+    },
+    {
+      "id": "viator-budapest",
+      "destination": "Budapest, Hungary",
+      "placeIds": [
+        "hungary-budapest-danube"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party 24-hour Budapest city view and Viator has very deep Budapest sightseeing, Danube-cruise and cultural inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Budapest/d499-ttd",
+      "publicInventoryEvidence": "Current Viator Budapest inventory contains 1,000+ city, cruise, walking and cultural experiences.",
+      "nextAction": "Generate one owner-side Budapest destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-ljubljana-triglav",
+      "destination": "Ljubljana / Triglav National Park, Slovenia",
+      "placeIds": [
+        "slovenia-ljubljana",
+        "slovenia-triglav-kredarica"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has official national-meteorological current views for Ljubljana and Kredarica, while Viator offers Ljubljana city and Triglav/Julian Alps day-tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Ljubljana/Ljubljana-Triglav-National-Park-Tour/d5257-15264P17",
+      "publicInventoryEvidence": "Current Viator inventory includes Triglav National Park tours from Ljubljana and Bled.",
+      "nextAction": "Generate one owner-side Ljubljana/Slovenia destination-level tracked link and verify it; use one useful regional path across both city and mountain discovery only where context makes sense."
     }
   ]
 }
