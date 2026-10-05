@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T19:55:00Z",
+  "generatedAt": "2026-10-05T20:15:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4857,6 +4857,34 @@
       "verifiedAt": "2026-10-05T19:55:00Z",
       "promotedAt": "2026-10-05T19:55:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "morocco-dakhla-attitude-live",
+      "title": "Dakhla Lagoon — Live View",
+      "country": "Morocco",
+      "region": "Dakhla-Oued Ed-Dahab",
+      "provider": "Dakhla Attitude / Dakhla Surf Hotels",
+      "sourcePage": "https://www.dakhlasurfhotels.com/hotels/dakhla-attitude",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Dakhla Attitude explicitly labels the page Live Webcam and says visitors can watch surfers in real time.",
+      "verifiedAt": "2026-10-05T20:15:00Z",
+      "promotedAt": "2026-10-05T20:15:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "morocco-paradis-plage-live",
+      "title": "Paradis Plage — Agadir / Taghazout Coast",
+      "country": "Morocco",
+      "region": "Agadir / Imi Ouaddar / Taghazout coast",
+      "provider": "Paradis Plage Surf Yoga & Spa Resort",
+      "sourcePage": "https://www.paradisplage.com/en/surfhouse/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Paradis Plage invites visitors to experience the beach live, check the swell and enjoy sunset in real time through its webcam.",
+      "verifiedAt": "2026-10-05T20:15:00Z",
+      "promotedAt": "2026-10-05T20:15:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
