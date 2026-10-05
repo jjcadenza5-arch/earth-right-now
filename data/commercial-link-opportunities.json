@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T04:30:00Z",
+  "generatedAt": "2026-10-05T11:37:30Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3389,6 +3389,36 @@
       "trackingUrl": "https://klook.tpo.mx/DjkpjcEv",
       "verifiedAt": "2026-10-04T04:30:00Z",
       "manualOpenVerified": true
+    },
+    {
+      "id": "viator-bariloche-cerro-catedral",
+      "destination": "Bariloche / Cerro Catedral",
+      "placeIds": [
+        "bariloche-cerro-catedral"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party current Cerro Catedral window and Viator has current Bariloche/Patagonia excursion inventory. This is a strong downstream trip-planning fit without affecting Earth ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/es-AR/tours/Bariloche/San-Martin-de-los-Andes-and-the-Seven-Lakes-Day-Trip-from-Bariloche/d938-5674BRCMARTIN",
+      "publicInventoryEvidence": "Current Viator Bariloche inventory includes Seven Lakes and other Patagonia excursions departing from Bariloche.",
+      "nextAction": "Generate one owner-side Bariloche Viator tracked destination/search link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-changhua-wanggong",
+      "destination": "Changhua / Wang Gong Fishing Port",
+      "placeIds": [
+        "taiwan-wanggong-fishing-port"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has an official operating Changhua live window and Klook carries current Changhua attraction inventory. Commercial value stays downstream from discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/91085-changhua-paleontology-wonderland/",
+      "publicInventoryEvidence": "Current Klook inventory includes bookable Changhua attractions, confirming destination-level activity coverage.",
+      "nextAction": "Check Changhua destination coverage in the owner Klook/Travelpayouts tools and generate one exact tracked link only if the inventory is useful."
     }
   ]
 }
