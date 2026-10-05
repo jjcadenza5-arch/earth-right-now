@@ -3111,22 +3111,22 @@ Final scalable solution:
 This capacity change does **not** loosen truth, permission, currentness, Watch Earth or commercial rules. It only allows the lazy Search/Explore layer to continue growing while preserving initial-load performance.
 
 #### Health and validation
-Operations run **1374 completed SUCCESS** after the scaling change.
+Operations runs **1374 and 1375 completed SUCCESS** after the scaling change and canonical compact-core restoration.
 
-Latest validated searchable-source health from Operations 1374:
+Latest validated searchable-source health from Operations 1375:
 - eligible searchable sources: **436**;
 - eligible unique URLs: **329**;
 - current rotating cohort: **60 sources / 45 unique URLs**;
-- reachable: **52**;
+- reachable: **53**;
 - missing: **0**;
 - access-blocked: **5**;
-- temporary/network: **3**;
-- recovered: **0**;
+- temporary/network: **2**;
+- recovered: **1**;
 - repair: **2**;
 - review: **5**;
-- watch: **1**.
+- watch: **0**.
 
-The two REPAIR records remain Bishkek Ala-Too Square and Too-Ashu Pass; their provider pages were independently confirmed active, so source truth remains unchanged. The five repeated access-limited records remain REVIEW only. A new first transient WATCH is Sara Sara Volcano — Peru; it should recheck naturally on its next cohort and must not be treated as broken from one transient failure.
+The two REPAIR records remain Bishkek Ala-Too Square and Too-Ashu Pass; their provider pages were independently confirmed active, so source truth remains unchanged. The five repeated access-limited records remain REVIEW only. Sara Sara Volcano — Peru recovered on the subsequent Operations run, so its one transient WATCH cleared naturally without catalog mutation.
 
 Pages run **2548 completed SUCCESS** after restoring compact core serialization and expanding lazy Search capacity.
 - all **112 current ERN release smoke tests passed**;
