@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T19:55:00Z",
+  "generatedAt": "2026-10-05T20:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4134,6 +4134,23 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Yosemite-National-Park/d5265-ttd",
       "publicInventoryEvidence": "Viator currently exposes Yosemite National Park sightseeing and guided experience inventory.",
       "nextAction": "Generate one owner-side Yosemite destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-san-marino",
+      "destination": "San Marino",
+      "placeIds": [
+        "san-marino-monte-titano",
+        "san-marino-cableway",
+        "san-marino-piazza-liberta"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has three official San Marino current views, while Viator currently exposes dedicated San Marino inventory covering Piazza della Libertà, Mount Titano, the towers and historic center.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/San-Marino/d21911-ttd",
+      "publicInventoryEvidence": "Current Viator San Marino destination inventory contains guided historic-center, Mount Titano and Three Towers experiences.",
+      "nextAction": "Generate one owner-side San Marino destination-level tracked link and manually verify it before public activation; reuse it across the three San Marino discovery places."
     }
   ]
 }
