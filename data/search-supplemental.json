@@ -4922,5 +4922,36 @@
     "searchSupplemental": true,
     "rightsBasis": "First-party attraction live-webcam page; link-only.",
     "freshnessEvidence": "Pursuit describes the Maligne Lake webcam as live with real-time images and a visible live image timestamp."
+  },
+  {
+    "id": "nz-taupo-lakefront-live",
+    "placeId": "nz-taupo-lakefront",
+    "title": "Taupō — Lakefront Live View",
+    "provider": "Love Taupō / Suncourt Hotel & Conference Centre",
+    "country": "New Zealand",
+    "region": "Waikato / Taupō",
+    "categories": [
+      "Lakes",
+      "Cities & Streets",
+      "Beautiful Earth",
+      "Useful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.lovetaupo.com/en/plan/webcam/",
+    "attribution": "Love Taupō / Suncourt Hotel & Conference Centre",
+    "checkedAt": "2026-10-05T21:50:00Z",
+    "lastSuccessfulCheck": "2026-10-05T21:50:00Z",
+    "quality": 98,
+    "freshness": 99,
+    "moment": 98,
+    "story": "Official destination live view of Taupō town's lakefront.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "Official Taupō destination webcam page; link-only.",
+    "freshnessEvidence": "Love Taupō currently says the webcam shows what is happening on Taupō town's lakefront right now."
   }
 ]
