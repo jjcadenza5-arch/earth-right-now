@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T20:05:00Z",
+  "generatedAt": "2026-10-05T20:15:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4151,6 +4151,36 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/San-Marino/d21911-ttd",
       "publicInventoryEvidence": "Current Viator San Marino destination inventory contains guided historic-center, Mount Titano and Three Towers experiences.",
       "nextAction": "Generate one owner-side San Marino destination-level tracked link and manually verify it before public activation; reuse it across the three San Marino discovery places."
+    },
+    {
+      "id": "viator-dakhla",
+      "destination": "Dakhla, Morocco",
+      "placeIds": [
+        "morocco-dakhla-lagoon"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party real-time Dakhla lagoon view, and Viator currently has dedicated Dakhla inventory spanning lagoon, desert, White Dune, Dragon Island and water activities.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Dakhla/d51256-ttd",
+      "publicInventoryEvidence": "Current Viator Dakhla inventory contains dozens of lagoon, desert, kitesurf, catamaran and White Dune experiences.",
+      "nextAction": "Generate one owner-side Dakhla destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-agadir-taghazout",
+      "destination": "Agadir / Taghazout, Morocco",
+      "placeIds": [
+        "morocco-paradis-plage-tamri"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party real-time surf-coast view near Taghazout/Agadir; use a destination-level Agadir/Taghazout planning path only if current partner inventory is useful.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Agadir/d4383-ttd",
+      "publicInventoryEvidence": "Viator currently exposes substantial Agadir-area sightseeing, surf-coast and day-trip inventory.",
+      "nextAction": "Generate one owner-side Agadir/Taghazout destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
