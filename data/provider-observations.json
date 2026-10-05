@@ -686,5 +686,19 @@
     "confirmation": "HUMAN_PLAYBACK",
     "observedAt": "2026-10-05T02:11:49.173Z",
     "reason": "Operator confirmed deployed playback on the exact current source/embed target; provider page independently verified reachable."
+  },
+  {
+    "id": "bishkek-ala-too-square",
+    "httpStatus": 200,
+    "confirmation": "INDEPENDENT_PROVIDER_PAGE_ACTIVE",
+    "observedAt": "2026-10-05T15:40:00Z",
+    "reason": "REPAIR investigation: official KG Camera page remains publicly active and describes no-archive surveillance with about a 20-second delay. Preserve source truth; repeated Operations network/server failures are not sufficient evidence of a broken camera."
+  },
+  {
+    "id": "too-ashu-north",
+    "httpStatus": 200,
+    "confirmation": "INDEPENDENT_PROVIDER_PAGE_ACTIVE",
+    "observedAt": "2026-10-05T15:40:00Z",
+    "reason": "REPAIR investigation: official KG Camera page remains publicly active and describes the Too-Ashu north tunnel camera with no-archive surveillance and about a 20-second delay. Preserve source truth; repeated Operations network/server failures are not sufficient evidence of a broken camera."
   }
 ]
