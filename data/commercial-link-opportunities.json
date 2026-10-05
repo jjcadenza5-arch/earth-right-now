@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T18:05:00Z",
+  "generatedAt": "2026-10-05T18:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3819,6 +3819,66 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Easter-Island/d306",
       "publicInventoryEvidence": "Current Viator Easter Island inventory includes private and group Rapa Nui heritage tours, Tongariki sunrise and stargazing experiences.",
       "nextAction": "Generate one owner-side Easter Island/Rapa Nui destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-vina-del-mar-valparaiso",
+      "destination": "Viña del Mar / Valparaíso, Chile",
+      "placeIds": [
+        "chile-vina-del-mar"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official current Viña del Mar conditions view, and Viator currently offers substantial Valparaíso/Viña del Mar sightseeing inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Valparaiso/d22148-ttd",
+      "publicInventoryEvidence": "Current Viator inventory includes Valparaíso and Viña del Mar city/coastal sightseeing experiences.",
+      "nextAction": "Generate one owner-side Valparaíso/Viña del Mar destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-pucon",
+      "destination": "Pucón / Villarrica Region, Chile",
+      "placeIds": [
+        "chile-pucon"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official current Pucón conditions view, and Viator currently has Pucón adventure and Villarrica-region activity inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Pucon/d22217-ttd",
+      "publicInventoryEvidence": "Current Viator Pucón inventory includes outdoor activities and experiences in the Villarrica volcano/lake region.",
+      "nextAction": "Generate one owner-side Pucón destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-puerto-natales",
+      "destination": "Puerto Natales / Torres del Paine Gateway, Chile",
+      "placeIds": [
+        "chile-puerto-natales"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official current Puerto Natales conditions view; Viator has strong Puerto Natales and Torres del Paine excursion inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Puerto-Natales/d23619-ttd",
+      "publicInventoryEvidence": "Current Viator inventory includes Torres del Paine full-day and Patagonia excursions departing from Puerto Natales.",
+      "nextAction": "Generate one owner-side Puerto Natales destination-level tracked link and manually verify it before public activation; keep it distinct from the existing Torres del Paine planning path only if visitor utility warrants both."
+    },
+    {
+      "id": "viator-punta-arenas",
+      "destination": "Punta Arenas / Magallanes, Chile",
+      "placeIds": [
+        "chile-punta-arenas"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official current Punta Arenas view, and Viator currently offers substantial Magallanes, penguin, Tierra del Fuego, whale and glacier inventory from Punta Arenas.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Punta-Arenas/d4416-ttd",
+      "publicInventoryEvidence": "Current Viator Punta Arenas inventory includes Patagonia sightseeing, King Penguin, Tierra del Fuego and marine excursions.",
+      "nextAction": "Generate one owner-side Punta Arenas destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
