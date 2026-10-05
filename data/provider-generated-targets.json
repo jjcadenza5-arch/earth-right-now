@@ -312,5 +312,29 @@
     "blockerReason": null,
     "lastExtractionAttemptAt": "2026-10-05T10:00:00Z",
     "reviewEvidencePath": "data/review-evidence/yehliu-generated-2026-10-05.json"
+  },
+  {
+    "id": "north-coast-heping-island-youtube-player",
+    "providerFamilyId": "north-coast-taiwan-live-cameras",
+    "provider": "Taiwan Tourism Administration / North Coast & Guanyinshan National Scenic Area",
+    "sourceId": "taiwan-heping-island-live",
+    "integrationKind": "PROVIDER_GENERATED_WIDGET",
+    "truthIfApproved": "LIVE_VIDEO",
+    "refreshSemantics": "OFFICIAL_PAGE_YOUTUBE_LIVE_PLAYER",
+    "state": "DEPLOYED_REVIEW_REQUIRED",
+    "generatorUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007412",
+    "exactCode": null,
+    "exactTargetUrl": "https://www.youtube.com/embed/g-T8NbF9xlQ?si=3jcSZd3ho7HNEYKk",
+    "generatedAt": "2026-10-05T10:22:00Z",
+    "reviewedAt": null,
+    "reviewOutcome": null,
+    "promotionAllowed": false,
+    "catalogMutationAllowed": false,
+    "automaticGenerationAllowed": false,
+    "notes": "Exact branded YouTube embed resolved from the official Heping Island Geopark live-camera page. Stage for deployed human playback review only. Public ERN source remains LINK_ONLY / EXTERNAL and typed LIVE_IMAGE until human playback evidence and a separate truth/editorial decision exist. Preserve YouTube branding and do not restream.",
+    "extractionMode": "OFFICIAL_PAGE_EXACT_YOUTUBE_EMBED",
+    "manualInteractionRequired": false,
+    "blockerReason": null,
+    "lastExtractionAttemptAt": "2026-10-05T10:22:00Z"
   }
 ]
