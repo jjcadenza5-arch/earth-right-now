@@ -2830,3 +2830,17 @@ These are not considered broken merely because automated access was blocked; the
 - Operations run 1354 completed SUCCESS after the Vanuatu catalog addition. Rotating searchable-source health now covers 395 eligible searchable sources / 301 unique URLs; today's cohort checked 54 sources / 41 unique URLs: 47 reachable, 0 missing, 5 access-blocked, 2 temporary/network failures, 0 recovered.
 - Health queue remains conservative: 0 REPAIR, 5 REVIEW, 2 WATCH. Bishkek Ala-Too Square and Too-Ashu Pass remain WATCH for transient failures; access-blocked sources remain REVIEW and are not treated as broken.
 - Protected gates remain unchanged: Watch Earth in-ERN playback only; 575 KB lean-core ceiling; IMAGE_REFRESH untouched until natural renewal; public generative Guide OFF; public Now Moments media OFF; no automatic social posting/account creation; no paid ranking.
+
+
+### San Marino + business expansion checkpoint — 2026-10-05
+- Continued from canonical main after the Vanuatu/health checkpoint without reopening completed homepage/design/SEO work.
+- Search/Explore expanded by three official San Marino Tourism Office webcams: Mount Titano / three Towers, Cableway / Adriatic view, and Palazzo Pubblico / Piazza della Libertà.
+- Official Visit San Marino states all three webcams are installed at main points of interest and active 24 hours a day.
+- All three are intentionally `EXTERNAL_LIVE` + `LINK_ONLY` + `watchHold: true`; they remain Search/Explore-only and cannot fill Watch Earth under the in-ERN playback rule.
+- Healthy distinct searchable-place count is now **389** from 394 healthy source records; supplemental searchable catalog is 70 records.
+- Source-research queue also expanded conservatively with Montserrat Soufrière Hills (official MVO remote-camera system) and Île des Pins / Baie de Kuto (tourism-office webcam) as `CURRENT_IMAGE_VERIFICATION_REQUIRED`; neither was promoted because public freshness behavior still needs independent confirmation.
+- Commercial registry expanded from 236 to **238** opportunities.
+- Added Klook Zandvoort / Dutch Grand Prix as `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`, using current Klook Circuit Zandvoort event inventory only; the opportunity is seasonal and must remain downstream from Earth discovery.
+- Added Viator Laikipia / Mpala as `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`; current Viator evidence supports Laikipia/Ol Pejeta conservation-safari inventory, but ERN must never imply that a tour directly enters Mpala unless exact inventory proves it.
+- No tracked link was fabricated or activated. No commercial factor changed source truth, health or Earth ranking.
+- Protected gates remain unchanged: Watch Earth in-ERN playback only; hard 575 KB lean-core ceiling; IMAGE_REFRESH untouched until natural renewal; public generative Guide OFF; public Now Moments media OFF; no automatic social posting/account creation; no paid ranking.
