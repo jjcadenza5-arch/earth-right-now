@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T13:28:00Z",
+  "generatedAt": "2026-10-05T13:36:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3541,6 +3541,36 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/es-CO/tours/Colombia/Purace-National-Natural-Park/d4497-164214P1",
       "publicInventoryEvidence": "Current Viator inventory includes guided full-day Puracé National Natural Park trips with Popayán pickup and park-focused itinerary.",
       "nextAction": "Generate one owner-side Puracé / Popayán Viator tracked destination or search link and manually verify it before public activation; do not imply volcano access beyond the operator's stated itinerary."
+    },
+    {
+      "id": "viator-cerro-machin-salento",
+      "destination": "Cerro Machín / Salento",
+      "placeIds": [
+        "colombia-cerro-machin"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official current Cerro Machín monitoring view, and Viator currently lists a Cerro Machín excursion from Salento with the volcano in the itinerary. This is a direct current-conditions-to-visit planning bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-NZ/tours/Salento/Walk-through-the-palm-trees-in-the-Cocora-Valley/d26165-181196P2",
+      "publicInventoryEvidence": "Current Viator inventory includes a private Cerro Machín excursion from Salento with a volcano stop.",
+      "nextAction": "Generate one owner-side Cerro Machín / Salento Viator tracked destination or search link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-nevado-del-tolima",
+      "destination": "Nevado del Tolima / Salento",
+      "placeIds": [
+        "colombia-nevado-del-tolima"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official current Nevado del Tolima monitoring view, and Viator currently lists multi-day guided Nevado del Tolima trekking from Salento. This is a strong trip-planning bridge for experienced visitors.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/es-ES/tours/Salento/Snowy-Tour-of-Tolima/d26165-190310P1",
+      "publicInventoryEvidence": "Current Viator inventory includes a four-day Nevado del Tolima trek with high-mountain equipment and Los Nevados park entry.",
+      "nextAction": "Generate one owner-side Nevado del Tolima / Salento Viator tracked destination or search link and manually verify it before public activation; keep mountain-safety and operator eligibility wording accurate."
     }
   ]
 }
