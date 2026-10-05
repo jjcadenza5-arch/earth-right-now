@@ -3693,6 +3693,23 @@
       "businessUnlocks": [
         "viator-nevado-del-tolima"
       ]
+    },
+    {
+      "id": "indonesia-merapi-official-live",
+      "title": "Mount Merapi — Indonesia",
+      "country": "Indonesia",
+      "region": "Yogyakarta / Central Java",
+      "provider": "Badan Geologi / BPPTKG",
+      "sourcePage": "https://geologi.esdm.go.id/bpptkg",
+      "priority": "P1",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Badan Geologi/BPPTKG service lists Merapi Activity Live Streaming for seismic and visual CCTV monitoring.",
+      "verifiedAt": "2026-10-05T13:42:00Z",
+      "promotedAt": "2026-10-05T13:42:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN PLAY rule.",
+      "businessUnlocks": [
+        "viator-merapi-yogyakarta"
+      ]
     }
   ],
   "notes": [
