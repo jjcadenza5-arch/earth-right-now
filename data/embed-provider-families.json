@@ -2270,5 +2270,135 @@
     "discoveryProviderAliases": [
       "Landsverk"
     ]
+  },
+  {
+    "id": "hong-kong-observatory-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Hong Kong Observatory",
+    "familyLabel": "Hong Kong Observatory public webcam/current-photo network",
+    "researchUrl": "https://www.hko.gov.hk/en/wxinfo/ts/index_webcam.htm",
+    "termsUrl": "https://www.hko.gov.hk/en/readme/readme.htm",
+    "verifiedAt": "2026-10-05T01:55:00Z",
+    "permissionEvidence": "Hong Kong Observatory materials are copyright-protected. HKO provides a non-commercial reuse pathway with attribution and disclaimer requirements, but commercial use requires compliance with separate conditions and prior written authorization. ERN is commercial-capable, so current webcam photos remain LINK_ONLY unless HKO grants the required commercial authorization.",
+    "permissionStatus": "COMMERCIAL_USE_REQUIRES_PRIOR_WRITTEN_HKO_AUTHORIZATION",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_COMMERCIAL_AUTHORIZATION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_WRITTEN_COMMERCIAL_AUTHORIZATION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_HKO_GRANTS_PRIOR_WRITTEN_COMMERCIAL_USE_AUTHORIZATION_FOR_THE_SPECIFIC_WEBCAM_MATERIAL",
+    "networkFamily": "hko.gov.hk",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:55:00Z",
+    "communityGuidelinesUrl": "https://www.hko.gov.hk/en/readme/readme.htm",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "PRIOR_WRITTEN_AUTHORIZATION_REQUIRED_FOR_COMMERCIAL_USE",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.hko.gov.hk/en/wxinfo/ts/index_webcam.htm",
+      "https://www.hko.gov.hk/en/readme/readme.htm",
+      "https://www.hko.gov.hk/en/appweb/applink.htm"
+    ],
+    "discoveryProviderAliases": [
+      "Hong Kong Observatory",
+      "HKO"
+    ]
+  },
+  {
+    "id": "reunion-tourism-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Île de la Réunion Tourisme",
+    "familyLabel": "Île de la Réunion Tourisme webcam/current-image pages",
+    "researchUrl": "https://en.reunion.fr/organize/webcams/",
+    "termsUrl": "https://en.reunion.fr/legal-notices/",
+    "verifiedAt": "2026-10-05T01:55:00Z",
+    "permissionEvidence": "Île de la Réunion Tourisme's current legal notices state that site text, images and sounds may not be used, distributed, copied, reproduced, modified or transmitted without prior written consent, and image use is forbidden without specific authorization. ERN therefore keeps Reunion webcam pages LINK_ONLY.",
+    "permissionStatus": "IMAGE_AND_SITE_REUSE_REQUIRE_PRIOR_WRITTEN_SPECIFIC_AUTHORIZATION",
+    "technicalStatus": "DO_NOT_STAGE_IMAGE_OR_PLAYER",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_WRITTEN_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_ILE_DE_LA_REUNION_TOURISME_GRANTS_SPECIFIC_WEBCAM_REUSE_PERMISSION",
+    "networkFamily": "reunion.fr",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:55:00Z",
+    "communityGuidelinesUrl": "https://en.reunion.fr/legal-notices/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_WRITTEN_AUTHORIZATION_REQUIRED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://en.reunion.fr/organize/webcams/",
+      "https://en.reunion.fr/legal-notices/"
+    ],
+    "discoveryProviderAliases": [
+      "Île de la Réunion Tourisme",
+      "Ile de la Réunion Tourisme",
+      "IRT"
+    ]
+  },
+  {
+    "id": "visit-azores-webcams",
+    "status": "RESEARCH_ONLY",
+    "provider": "Visit Azores",
+    "familyLabel": "Visit Azores surf/webcam current-image pages",
+    "researchUrl": "https://surf.visitazores.com/en/webcams/",
+    "termsUrl": "https://azoresphotos.visitazores.com/",
+    "verifiedAt": "2026-10-05T01:55:00Z",
+    "permissionEvidence": "Visit Azores' associated photo library states that photographs are copyrighted and that use, reproduction, transfer or distribution is personal-only and not commercial except for defined associates/tour operators. No camera-specific commercial reuse grant was found for ERN. ERN therefore keeps Visit Azores webcam imagery LINK_ONLY unless explicit commercial reuse terms are documented.",
+    "permissionStatus": "ASSOCIATED_IMAGE_TERMS_PERSONAL_ONLY_NO_CAMERA_COMMERCIAL_REUSE_GRANT_CONFIRMED",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_SPECIFIC_COMMERCIAL_WEBCAM_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_COMMERCIAL_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_VISIT_AZORES_PUBLISHES_OR_GRANTS_SPECIFIC_COMMERCIAL_WEBCAM_REUSE_PERMISSION",
+    "networkFamily": "visitazores.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:55:00Z",
+    "communityGuidelinesUrl": "https://azoresphotos.visitazores.com/",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "COMMERCIAL_REUSE_NOT_CONFIRMED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://surf.visitazores.com/en/webcams/sao-miguel",
+      "https://surf.visitazores.com/en/webcams/terceira",
+      "https://azoresphotos.visitazores.com/"
+    ],
+    "discoveryProviderAliases": [
+      "Visit Azores",
+      "Turismo Açores"
+    ]
+  },
+  {
+    "id": "visitdenmark-livestreams",
+    "status": "RESEARCH_ONLY",
+    "provider": "VisitDenmark",
+    "familyLabel": "VisitDenmark destination livestream/current-image pages",
+    "researchUrl": "https://www.visitdenmark.com/denmark/things-do/livestreams",
+    "termsUrl": "https://www.visitdenmark.com/press/photo-videos/media",
+    "verifiedAt": "2026-10-05T01:55:00Z",
+    "permissionEvidence": "VisitDenmark's media library materials are rights-managed for Denmark tourism marketing, and its upload terms emphasize that copyright and platform rights must be cleared for third-party use. The reviewed public livestream pages do not provide ERN a general third-party embed/reuse license. ERN therefore keeps VisitDenmark camera/livestream pages LINK_ONLY unless a specific reusable player or permission path is documented.",
+    "permissionStatus": "RIGHTS_MANAGED_TOURISM_MEDIA_NO_GENERAL_THIRD_PARTY_CAMERA_REUSE_GRANT",
+    "technicalStatus": "KEEP_LINK_ONLY_PENDING_SPECIFIC_PLAYER_OR_PERMISSION",
+    "humanPlaybackStatus": "NOT_APPLICABLE_LINK_ONLY",
+    "promotion": "BLOCKED_SPECIFIC_REUSE_PERMISSION_REQUIRED",
+    "nextAction": "KEEP_LINK_ONLY_UNLESS_VISITDENMARK_OR_THE_ORIGINATING_CAMERA_PROVIDER_PUBLISHES_EXPLICIT_THIRD_PARTY_REUSE_OR_EMBED_PERMISSION",
+    "networkFamily": "visitdenmark.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-05T01:55:00Z",
+    "communityGuidelinesUrl": "https://www.visitdenmark.com/press/photo-videos/media",
+    "usageMode": "LINK_ONLY_UNLESS_LICENSED",
+    "embeddingCondition": "SPECIFIC_CAMERA_OR_PLAYER_PERMISSION_UNRESOLVED",
+    "playerBrandingRequired": false,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.visitdenmark.com/denmark/things-do/livestreams",
+      "https://www.visitdenmark.com/press/photo-videos/media"
+    ],
+    "discoveryProviderAliases": [
+      "VisitDenmark"
+    ]
   }
 ]
