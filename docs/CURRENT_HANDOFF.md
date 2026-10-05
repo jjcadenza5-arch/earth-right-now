@@ -2515,3 +2515,79 @@ Hard lean-core ceiling remains exactly **575 KB**.
 - No automatic social posting/account creation.
 - No paid ranking.
 - No automatic commercial placement or link rewriting.
+
+### 350 searchable-place milestone — 2026-10-05
+
+Owner asked ERN to continue both searchable-place and business expansion after the Watch Earth correction.
+
+#### Searchable expansion
+Added twelve further official scientific/current camera destinations through the supplemental Search/Explore catalog:
+- Mount St. Helens — Johnston Ridge — USGS/Cascades Volcano Observatory; official camera refreshes every five minutes.
+- Pavlof Volcano — Alaska — Alaska Volcano Observatory / USGS.
+- Makushin Volcano — Alaska — Alaska Volcano Observatory / USGS.
+- Veniaminof Volcano — Alaska — Alaska Volcano Observatory / USGS.
+- Okmok Volcano — Alaska — Alaska Volcano Observatory / USGS.
+- Katmai Volcano — Alaska — Alaska Volcano Observatory / USGS.
+- Akutan Volcano — Alaska — Alaska Volcano Observatory / USGS.
+- Cleveland Volcano — Alaska — Alaska Volcano Observatory / USGS.
+- Little Sitkin Volcano — Alaska — Alaska Volcano Observatory / USGS.
+- Mount Spurr — Alaska — Alaska Volcano Observatory / USGS.
+- Tanaga Volcano — Alaska — Alaska Volcano Observatory / USGS.
+- Aniakchak Caldera — Alaska — Alaska Volcano Observatory / USGS.
+
+AVO webcam index checks on 2026-10-05 showed current same-day timestamps for the promoted Alaska camera families. Mount St. Helens is supported by the official USGS webcam page and its stated five-minute refresh.
+
+All twelve remain Search/Explore-only (`LINK_ONLY / EXTERNAL`). Under the production Watch Earth rule requiring `playbackCapability === PLAY`, none can enter Watch Earth as external filler.
+
+#### Searchable growth milestone
+- healthy distinct searchable places: **350**
+- 350 milestone: **REACHED**
+- remaining to 400 stretch: **50**
+- unresolved human playback queue remains separate from Watch Earth quality.
+
+#### Business expansion
+Added:
+- `viator-mount-st-helens-portland` — Mount St. Helens / Portland → Viator — `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`.
+
+Current Viator inventory includes a dedicated full-day Mount St. Helens adventure from Portland with Mount St. Helens, Ape Cave, Trail of Two Forests and viewpoints in the itinerary.
+
+No tracked link was invented, no external account action occurred, no automatic placement occurred, and commercial value remains excluded from Earth ranking.
+
+#### Validation
+Searchable milestone implementation head validated by Pages:
+`37f532bc929f8821e7782dcdad54461e6d4d4580`
+
+Pages run **2494** completed **SUCCESS**.
+Validated successfully:
+- JavaScript syntax
+- current release smoke suite
+- lean launch preflight
+- hard performance preflight
+- featured curation
+- source research and recency integrity
+- supplemental search integrity
+- commercial placement integrity
+- SEO indexing readiness
+- AI search discovery readiness
+- public discoverability
+- deployment and deployed social-preview verification
+
+Bookkeeping/provenance commits after that validated source payload advanced the pre-handoff main head to:
+`cd35cdf0767fa229dcce364b69ba90e49b070b21`
+
+Hard lean-core ceiling remains exactly **575 KB**.
+
+#### Next expansion posture
+- Continue from 350 toward the 400 searchable stretch target.
+- Prefer genuinely new geography and first-party/official current sources over provider duplication.
+- Watch Earth remains in-ERN-only; external/current sources belong in Search/Explore.
+- Continue business expansion only where a current existing-partner path has a useful destination fit.
+
+#### Boundaries unchanged
+- Controlled IMAGE_REFRESH pilot remains exactly two sources and 0/2 scheduled observations at this checkpoint.
+- No manual IMAGE_REFRESH renewal was triggered.
+- Public generative ERN Guide remains OFF.
+- Public Now Moments media remains OFF.
+- No automatic social posting/account creation.
+- No paid ranking.
+- No automatic commercial placement or link rewriting.
