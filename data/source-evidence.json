@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:46:00Z",
+  "generatedAt": "2026-10-05T13:52:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2009,16 +2009,16 @@
       "story": "Official current monitoring views of the Katmai volcanic area."
     },
     "alaska-akutan-current-image": {
-      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed multiple Akutan cameras with Oct. 5, 2026 timestamps.",
-      "rightsBasis": "Official Alaska Volcano Observatory / USGS webcam index. ERN remains Search/Explore LINK_ONLY and does not infer embed or media-reuse permission.",
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 lists multiple Akutan cameras with current Oct 5, 2026 UTC timestamps.",
+      "rightsBasis": "Official AVO monitoring network. ERN remains LINK_ONLY and does not infer embed/restream permission.",
       "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
-      "story": "Official current monitoring view of Akutan."
+      "story": "Official current Akutan volcano monitoring views."
     },
     "alaska-cleveland-current-image": {
-      "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed multiple Cleveland visual/IR cameras with Oct. 5, 2026 timestamps.",
-      "rightsBasis": "Official Alaska Volcano Observatory / USGS webcam index. ERN remains Search/Explore LINK_ONLY and does not infer embed or media-reuse permission.",
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 lists multiple Cleveland cameras with current Oct 5, 2026 UTC timestamps.",
+      "rightsBasis": "Official AVO monitoring network. ERN remains LINK_ONLY and does not infer embed/restream permission.",
       "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
-      "story": "Official current monitoring view of Cleveland."
+      "story": "Official current Cleveland volcano monitoring views."
     },
     "alaska-little-sitkin-current-image": {
       "freshnessEvidence": "AVO webcam index checked 2026-10-05 showed Little Sitkin LSPA with an Oct. 5, 2026 timestamp.",
@@ -2055,6 +2055,12 @@
       "rightsBasis": "Official AVO monitoring network. ERN remains LINK_ONLY and does not infer permission to embed or restream AVO media.",
       "coordinateSourceUrl": "https://avo.alaska.edu/volcano/iliamna",
       "story": "Official current Iliamna volcano monitoring views."
+    },
+    "alaska-semisopochnoi-current-image": {
+      "freshnessEvidence": "Alaska Volcano Observatory webcam index checked 2026-10-05 lists Semisopochnoi cameras with current Oct 5, 2026 UTC timestamps.",
+      "rightsBasis": "Official AVO monitoring network. ERN remains LINK_ONLY and does not infer embed/restream permission.",
+      "coordinateSourceUrl": "https://avo.alaska.edu/webcam/",
+      "story": "Official current Semisopochnoi volcanic-island monitoring views."
     }
   },
   "prague-petrin-tower": {
