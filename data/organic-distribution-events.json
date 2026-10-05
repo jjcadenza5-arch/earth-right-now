@@ -19,7 +19,25 @@
         "memberDataStored": false,
         "postContentStored": false
       },
-      "note": "Owner reported manually sharing ERN to approximately 50–60 Facebook groups. Use only as context for aggregate referral/traffic observation; do not infer reach, impressions, conversions or revenue."
+      "note": "Owner reported manually sharing ERN to approximately 50–60 Facebook groups. Use only as context for aggregate referral/traffic observation; do not infer reach, impressions, conversions or revenue.",
+      "audienceContext": {
+        "userReportedPrimaryAudience": "nomad-and-travel-groups",
+        "inferenceBoundary": "Audience identity is contextual only; ERN analytics does not identify individual visitors as nomads."
+      },
+      "baseline": {
+        "observedAt": "2026-10-05T10:54:55Z",
+        "analyticsWindowDays": 30,
+        "approximateUniqueVisitors": 43,
+        "pageViews": 257,
+        "facebookReferralViews": 22,
+        "facebookReferralShareOfPageViews": 0.0856,
+        "note": "Same-day aggregate baseline captured after the owner reported the Facebook group posting wave. Use only for later deltas; it is not a pre-campaign control and cannot prove causation."
+      },
+      "observationWindowsHours": [
+        24,
+        72,
+        168
+      ]
     }
   ]
 }
