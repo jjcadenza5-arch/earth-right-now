@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T12:40:00Z",
+  "generatedAt": "2026-10-05T12:50:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1893,6 +1893,18 @@
       "rightsBasis": "Official Tourism Administration attraction/live-camera page. ERN remains LINK_ONLY and does not infer permission to copy or restream the video.",
       "coordinateSourceUrl": "https://www.trimt-nsa.gov.tw/en/attraction/457/",
       "story": "Official real-time reservoir and mountain view in the Lishan area."
+    },
+    "ushuaia-harbour-municipal": {
+      "freshnessEvidence": "Official Ushuaia tourism page checked 2026-10-05 explicitly presents 'Webcam en vivo' from the Port of Ushuaia.",
+      "rightsBasis": "Official city tourism live-webcam page. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream the video.",
+      "coordinateSourceUrl": "https://turismoushuaia.com/contenidos/webcam-en-vivo-desde-ushuaia/",
+      "story": "Official current view across Ushuaia harbour and the Beagle Channel."
+    },
+    "namibia-okaukuejo-waterhole": {
+      "freshnessEvidence": "Namibia Wildlife Resorts current site checked 2026-10-05 exposes a Wildlife Live Cam. The official NWR YouTube stream identifies the Okaukuejo camera as live 24 hours a day, 365 days a year.",
+      "rightsBasis": "First-party NWR live-camera surface and official NWR stream. ERN remains LINK_ONLY and does not infer permission to copy, embed or restream the stream.",
+      "coordinateSourceUrl": "https://www.nwr.com.na/resorts/okaukuejo-resort/",
+      "story": "Official live wildlife view at the Okaukuejo waterhole in Etosha National Park."
     }
   },
   "prague-petrin-tower": {
