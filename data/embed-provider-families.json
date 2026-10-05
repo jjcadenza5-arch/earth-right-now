@@ -2927,13 +2927,13 @@
     "familyLabel": "AVO volcano current-image webcam network",
     "researchUrl": "https://avo.alaska.edu/webcam/",
     "termsUrl": "https://avo.alaska.edu/image/",
-    "verifiedAt": "2026-10-05T04:40:00Z",
-    "permissionEvidence": "AVO states that media taken by AVO staff are in the public domain and may be used freely, while some third-party media in its database remain copyrighted and must be checked individually. The webcam surfaces expose current images, so ERN may only promote an exact current-image target after confirming that the specific camera image is AVO/USGS-owned or otherwise explicitly reusable; no live-video claim is inferred.",
-    "permissionStatus": "PUBLIC_DOMAIN_FOR_AVO_STAFF_MEDIA_SPECIFIC_CAMERA_OWNERSHIP_CHECK_REQUIRED",
-    "technicalStatus": "CAMERA_SPECIFIC_CURRENT_IMAGE_TARGET_REVIEW_REQUIRED",
+    "verifiedAt": "2026-10-05T06:35:00Z",
+    "permissionEvidence": "AVO states media taken by AVO staff are public domain but warns its database also includes copyrighted third-party media, so each exact camera/media item must be checked. The official Augustine Homer webcam page currently exposes a timestamped current image and USGS also marks the Augustine webcam media Public Domain. However, the image URL exposed by the page is a dated archive object rather than a stable latest/current alias. ERN therefore does not stage a reusable endpoint yet.",
+    "permissionStatus": "PUBLIC_DOMAIN_CAMERA_MEDIA_CONFIRMED_FOR_CHECKED_USGS_AVO_ITEMS_STABLE_LATEST_ENDPOINT_UNRESOLVED",
+    "technicalStatus": "CURRENT_DATED_IMAGE_OBJECTS_VISIBLE_NO_STABLE_LATEST_ALIAS_CONFIRMED",
     "humanPlaybackStatus": "NOT_APPLICABLE_CURRENT_IMAGE",
     "promotion": "BLOCKED_UNTIL_SPECIFIC_CAMERA_OWNERSHIP_AND_REFRESH_CHECK",
-    "nextAction": "VERIFY_ONE_EXACT_VOLCANO_CAMERA_IMAGE_IS_AVO_OWNED_PUBLIC_DOMAIN_THEN_STAGE_ATTRIBUTED_CURRENT_IMAGE_WITH_REFRESH_CHECK",
+    "nextAction": "KEEP AVO LINK_ONLY UNTIL A STABLE PROVIDER CURRENT-IMAGE ENDPOINT OR DOCUMENTED LATEST-IMAGE API IS FOUND; DO NOT FREEZE A DATED ARCHIVE JPEG AS CURRENT",
     "networkFamily": "avo.alaska.edu",
     "termsEffectiveAt": null,
     "termsReviewedAt": "2026-10-05T04:40:00Z",
@@ -2948,7 +2948,9 @@
     "researchSources": [
       "https://avo.alaska.edu/image/",
       "https://avo.alaska.edu/about/faq",
-      "https://avo.alaska.edu/webcam/"
+      "https://avo.alaska.edu/webcam/",
+      "https://avo.alaska.edu/webcam/view/1036",
+      "https://www.usgs.gov/media/webcams/augustine-homer"
     ],
     "discoveryProviderAliases": [
       "Alaska Volcano Observatory",
