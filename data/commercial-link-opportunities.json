@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T19:45:00Z",
+  "generatedAt": "2026-10-05T20:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4029,6 +4029,52 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Nairobi/3-Days-Gamedrive-Safari-In-Masai-Mara-From-Nairobi/d5280-404276P1",
       "publicInventoryEvidence": "Current Viator inventory includes multi-day Masai Mara game-drive safaris from Nairobi.",
       "nextAction": "Generate one owner-side Masai Mara destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-turks-caicos-grace-bay",
+      "destination": "Grace Bay / Providenciales, Turks and Caicos",
+      "placeIds": [
+        "tci-grace-bay"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party Grace Bay live view and Viator has strong Providenciales/Grace Bay marine and island inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Providenciales/All-Day-Adventure-with-a-Beach-BBQ-Feast-from-Providenciales/d969-370693P3",
+      "publicInventoryEvidence": "Current Viator inventory includes Grace Bay cruises, snorkeling and island activities.",
+      "nextAction": "Generate one owner-side Providenciales/Grace Bay destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-bermuda-st-george",
+      "destination": "Bermuda / St. George's",
+      "placeIds": [
+        "bermuda-st-george-town"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a municipal-supported live view of historic St. George's, and Viator currently offers Bermuda island tours explicitly visiting St. George.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-CA/tours/Bermuda/Crystal-Cave-Discover-St-George-and-Swim-at-Tobacco-Bay/d966-31697P25",
+      "publicInventoryEvidence": "Current Viator Bermuda inventory includes St. George, Crystal Cave and Tobacco Bay experiences.",
+      "nextAction": "Generate one owner-side Bermuda destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-curacao-willemstad",
+      "destination": "Curaçao / Willemstad",
+      "placeIds": [
+        "curacao-avila-beach",
+        "curacao-lionsdive-mambo-beach"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has two first-party real-time Curaçao waterfront views, while Viator has deep Willemstad, beach, snorkeling and island-tour inventory. One island-level path should serve both places.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Curacao/d725-ttd",
+      "publicInventoryEvidence": "Current Viator Curaçao inventory includes 300+ sightseeing, beach, sailing, snorkeling and island experiences.",
+      "nextAction": "Generate one owner-side Curaçao/Willemstad destination-level tracked link and manually verify it before public activation; reuse it across both Curaçao places rather than duplicating commercial density."
     }
   ]
 }
