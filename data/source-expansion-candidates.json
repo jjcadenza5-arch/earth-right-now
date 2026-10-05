@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T20:15:00Z",
+  "generatedAt": "2026-10-05T20:35:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4884,6 +4884,62 @@
       "evidence": "Paradis Plage invites visitors to experience the beach live, check the swell and enjoy sunset in real time through its webcam.",
       "verifiedAt": "2026-10-05T20:15:00Z",
       "promotedAt": "2026-10-05T20:15:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "mexico-merida-yucatan-live",
+      "title": "Mérida — Yucatán",
+      "country": "Mexico",
+      "region": "Yucatán",
+      "provider": "Webcams de México / Gobierno del Estado de Yucatán",
+      "sourcePage": "https://webcamsdemexico.com/webcam/merida/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Yucatán's government states Mérida is viewable 24 hours a day in real time via Webcams de México; the exact Mérida page is labeled En vivo.",
+      "verifiedAt": "2026-10-05T20:35:00Z",
+      "promotedAt": "2026-10-05T20:35:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "mexico-izamal-yucatan-live",
+      "title": "Izamal — Yucatán",
+      "country": "Mexico",
+      "region": "Yucatán",
+      "provider": "Webcams de México / Gobierno del Estado de Yucatán",
+      "sourcePage": "https://webcamsdemexico.com/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Yucatán's government states Izamal is available 24 hours a day in real time through Webcams de México; the current platform lists Izamal, Yucatán.",
+      "verifiedAt": "2026-10-05T20:35:00Z",
+      "promotedAt": "2026-10-05T20:35:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "mexico-progreso-yucatan-live",
+      "title": "Progreso — Yucatán Coast",
+      "country": "Mexico",
+      "region": "Yucatán",
+      "provider": "Webcams de México / Gobierno del Estado de Yucatán",
+      "sourcePage": "https://webcamsdemexico.com/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Yucatán's government states Progreso is available 24 hours a day in real time; the current Webcams de México platform lists Progreso, Yucatán.",
+      "verifiedAt": "2026-10-05T20:35:00Z",
+      "promotedAt": "2026-10-05T20:35:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "mexico-valladolid-yucatan-live",
+      "title": "Valladolid — Yucatán",
+      "country": "Mexico",
+      "region": "Yucatán",
+      "provider": "Webcams de México / Gobierno del Estado de Yucatán",
+      "sourcePage": "https://webcamsdemexico.com/webcams/en/valladolid/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Yucatán's government states Valladolid is viewable 24 hours a day in real time; the current Webcams de México Valladolid listing includes Valladolid, Yucatán.",
+      "verifiedAt": "2026-10-05T20:35:00Z",
+      "promotedAt": "2026-10-05T20:35:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
