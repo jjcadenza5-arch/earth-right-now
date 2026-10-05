@@ -119,7 +119,8 @@
     "inside:current-image-verification": "node scripts/provider-current-image-verification.mjs",
     "inside:current-image-promotion-plan": "node scripts/current-image-promotion-plan.mjs",
     "inside:current-image-pilot-observation": "node scripts/current-image-pilot-observation-status.mjs",
-    "analytics:distribution-observation": "node scripts/analytics-distribution-observation.mjs"
+    "analytics:distribution-observation": "node scripts/analytics-distribution-observation.mjs",
+    "analytics:search-gap-triage": "node scripts/analytics-search-gap-triage.mjs"
   },
   "engines": {
     "node": ">=20"
