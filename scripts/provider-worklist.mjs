@@ -2,7 +2,9 @@ import { readFile } from "node:fs/promises";
 import { operationsReport } from "../src/operations-report.js";
 
 const readJson=async url=>JSON.parse(await readFile(url,"utf8"));
-const coreSources=await readJson(new URL("../data/sources.json",import.meta.url));\nconst supplementalSources=await readJson(new URL("../data/search-supplemental.json",import.meta.url));\nconst sources=[...coreSources,...supplementalSources];
+const coreSources=await readJson(new URL("../data/sources.json",import.meta.url));
+const supplementalSources=await readJson(new URL("../data/search-supplemental.json",import.meta.url));
+const sources=[...coreSources,...supplementalSources];
 let providerObservations=[];
 try{providerObservations=await readJson(new URL("../data/provider-observations.json",import.meta.url));}
 catch(error){if(error?.code!=="ENOENT")throw error;}
