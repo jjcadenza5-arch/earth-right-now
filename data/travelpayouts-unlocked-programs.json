@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T04:40:00Z",
+  "generatedAt": "2026-10-06T05:15:00Z",
   "evidenceBasis": "Owner screenshots from Travelpayouts Earthrightnow project showing Generate links controls.",
   "rule": "A Generate links control confirms account-side link generation is available. It does not authorize automatic public placement; ERN still requires utility review, exact-link verification and disclosure.",
   "currentCorePartners": [
@@ -72,7 +72,7 @@
     "automaticLinkRewriting": false
   },
   "researchProgress": {
-    "radical-storage": "City-arrival utility mapped to six high-traffic ERN city contexts; exact city links remain owner-gated.",
+    "radical-storage": "City-arrival utility now also maps Bangkok using current public Radical Storage Bangkok inventory; existing mapped cities remain owner-link gated.",
     "localrent": "Independent-driving utility mapped to Georgia, Montenegro, Greek islands and Türkiye contexts; exact inventory remains owner-gated.",
     "wegotrip": "Self-guided culture utility mapped to Rome, Dublin, Istanbul and Darmstadt contexts; exact destination inventory remains owner-gated.",
     "economybookings": "Mapped as car-rental reserve only; activate only where primary rental partners lack useful exact coverage.",
@@ -85,7 +85,8 @@
     "kkday": "Singapore and other Asia-led activity contexts are now being mapped selectively; use only where owner-side inventory adds something distinct from an existing Klook/Viator path.",
     "go-city": "Singapore and other dense attraction cities are mapped as city-pass research; exact supported-city inventory and owner-side link remain required.",
     "kiwi-com": "Remote/island flight-planning cluster now includes Arctic/Faroe/Greenland/Rapa Nui contexts; trip-planning only and never a camera-ranking signal.",
-    "airalo": "Caribbean connectivity cluster is mapped for owner-side country coverage comparison; one-connectivity-option rule remains in force."
+    "airalo": "Caribbean connectivity cluster is mapped for owner-side country coverage comparison; one-connectivity-option rule remains in force.",
+    "bikesbooking": "Local-mobility research now includes Bali/Denpasar in addition to Madeira/Rome; exact owner-side tracked link and duplicate-suppression review remain required."
   },
   "platformModel2026": {
     "verifiedFromOfficialTravelpayoutsDocumentation": true,
