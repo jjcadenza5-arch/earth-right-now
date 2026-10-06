@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T14:48:30Z",
+  "updatedAt": "2026-10-06T15:03:38Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -339,6 +339,12 @@
       "澳门",
       "Macau SAR",
       "Macao China"
+    ],
+    "kenya-nairobi-national-park": [
+      "Nairobi National Park",
+      "Nairobi wildlife park",
+      "KenyaLIVE Nairobi",
+      "KWS Nairobi National Park"
     ]
   }
 }

@@ -11398,5 +11398,36 @@
     "rightsBasis": "Official government real-time WeatherCam module; ERN links externally and does not rehost imagery.",
     "freshnessEvidence": "The current official SMG real-time monitoring page exposes weather-image-cam-0 through multiple camera slots and an update-time field.",
     "searchSupplemental": true
+  },
+  {
+    "id": "kenya-nairobi-national-park-kenyalive",
+    "placeId": "kenya-nairobi-national-park",
+    "title": "Nairobi National Park — KenyaLIVE",
+    "provider": "Kenya Wildlife Service / WildEarth",
+    "country": "Kenya",
+    "region": "Nairobi",
+    "categories": [
+      "Wildlife",
+      "National Parks",
+      "Africa",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://kws.go.ke/world-tourism-day-2026-kenya-embraces-the-digital-future-of-travel/",
+    "attribution": "Kenya Wildlife Service / KenyaLIVE / WildEarth",
+    "checkedAt": "2026-10-06T15:03:38Z",
+    "lastSuccessfulCheck": "2026-10-06T15:03:38Z",
+    "quality": 97,
+    "freshness": 99,
+    "moment": 99,
+    "story": "KenyaLIVE brings scheduled daily real-time wildlife broadcasts from Kenya's protected areas; Nairobi National Park was the launch park.",
+    "featuredHold": true,
+    "watchHold": true,
+    "rightsBasis": "Official KWS digital-tourism programme; ERN links externally and does not restream or imply continuous 24/7 playback.",
+    "freshnessEvidence": "KWS states KenyaLIVE launched at Nairobi National Park on 22 September 2026 and brings daily live wildlife experiences from Kenyan parks through the KWS YouTube channel. Independent October 2026 reporting describes morning and afternoon live sessions in a six-month KWS/KTB/WildEarth programme.",
+    "searchSupplemental": true
   }
 ]

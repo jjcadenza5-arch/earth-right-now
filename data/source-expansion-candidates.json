@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T14:48:30Z",
+  "generatedAt": "2026-10-06T15:03:38Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -1366,11 +1366,13 @@
       "sourcePage": "https://kg.camera/en",
       "exactTargetUrl": "https://kg.camera/en",
       "exactTargetType": "LIVE_CAMERA_INDEX",
-      "evidence": "kg.camera lists a camera in Ala-Archa Natural Park at about 2,200 m elevation.",
+      "evidence": "Duplicate research candidate consolidated into canonical core place ala-archa-natural-park.",
       "researchEvidence": "Strong mountain-landscape candidate for Kyrgyzstan coverage, but not Pamir proper.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open kg.camera and choose Ala-Archa Natural Park."
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
+      "humanCheckHint": "Open kg.camera and choose Ala-Archa Natural Park.",
+      "verifiedAt": "2026-10-06T15:03:38Z",
+      "verification": "Canonical core source ala-archa-current-page already represents Ala-Archa Natural Park with current kg.camera evidence."
     },
     {
       "id": "bled-lake-tourism",
@@ -1657,11 +1659,14 @@
       "sourcePage": "https://kws.go.ke/world-tourism-day-2026-kenya-embraces-the-digital-future-of-travel/",
       "exactTargetUrl": "https://kws.go.ke/world-tourism-day-2026-kenya-embraces-the-digital-future-of-travel/",
       "exactTargetType": "OFFICIAL_GOVERNMENT_LIVE_PROGRAM",
-      "evidence": "Kenya Wildlife Service states that KenyaLIVE launched at Nairobi National Park on 22 September 2026 and brings daily live wildlife experiences from Kenya parks through the KWS YouTube channel.",
+      "evidence": "Kenya Wildlife Service says KenyaLIVE launched at Nairobi National Park on 22 September 2026 and brings daily live wildlife experiences through the KWS YouTube channel. Current October reporting confirms morning/afternoon sessions and a six-month programme.",
       "researchEvidence": "KWS explicitly describes viewers watching elephants, lions, flamingos and other wildlife in real time. ERN must verify the currently active KWS broadcast and park identity before promoting a place-specific live source.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the KWS KenyaLIVE article, follow the official KWS YouTube route, and confirm there is a current live broadcast identified as Nairobi National Park before promotion."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the KWS KenyaLIVE article, follow the official KWS YouTube route, and confirm there is a current live broadcast identified as Nairobi National Park before promotion.",
+      "verifiedAt": "2026-10-06T15:03:38Z",
+      "promotedAt": "2026-10-06T15:03:38Z",
+      "verification": "Official KWS evidence confirms a current six-month KenyaLIVE programme with daily live wildlife broadcasts; Nairobi National Park is the launch park. Promoted as EXTERNAL_LIVE / LINK_ONLY / Search-Explore only, not continuous Watch Earth playback."
     },
     {
       "id": "costa-rica-poas-crater",
@@ -3464,15 +3469,17 @@
       "region": "Ma'an Governorate",
       "provider": "SkylineWebcams",
       "sourcePage": "https://www.skylinewebcams.com/en/webcam/jordan/maan/amman/petra.html",
-      "evidence": "Current SkylineWebcams Jordan inventory lists a live view over Petra's Treasury / Al-Khazneh.",
+      "evidence": "Official Visit Petra coverage supersedes the third-party Petra candidate for canonical ERN discovery.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "exactTargetType": "STRONG_PROVIDER_LIVE_PAGE",
       "researchEvidence": "Current provider index exposes Petra Treasury as a live camera; ERN must still confirm moving/current playback before promotion.",
       "humanCheckHint": "Open the exact Petra Treasury page and confirm the view is currently moving/live rather than archived or offline.",
       "businessUnlocks": [
         "viator-petra-jordan-future"
-      ]
+      ],
+      "verifiedAt": "2026-10-06T15:03:38Z",
+      "verification": "Petra is already represented by canonical official Visit Petra source jordan-petra-visitor-center-live; third-party Skyline candidate is retained only as provenance history."
     },
     {
       "id": "jordan-petra-visitor-center-skyline",
@@ -6656,11 +6663,12 @@
       "provider": "Falkland Islands Tourist Board",
       "sourcePage": "https://www.falklandislands.com/plan-your-trip/visitor-information/tourist-information-centre",
       "priority": "P1_NEW_TERRITORY",
-      "state": "EXACT_WEBCAM_ROUTE_AND_CURRENTNESS_VERIFICATION_REQUIRED",
-      "evidence": "The official Falkland Islands Tourist Board states that a webcam looks out from the Stanley Tourist Information Centre so visitors can connect live from overseas.",
-      "verifiedAt": "2026-10-06T06:20:00Z",
-      "verification": "Research-only. Official webcam existence is confirmed, but ERN has not yet resolved the exact durable feed/image route or independently verified its current refresh behavior.",
-      "nextAction": "Resolve the exact Falkland Tourist Board webcam target and verify currentness before promotion."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Tourist Board page currently describes the Visitor Centre webcam; canonical searchable record already exists.",
+      "verifiedAt": "2026-10-06T15:03:38Z",
+      "verification": "Already promoted as falklands-stanley-visitor-centre-current / falklands-stanley-jetty. Official Falkland Islands Tourist Board states a webcam looks out from the front of the Jetty Visitor Centre.",
+      "nextAction": "Resolve the exact Falkland Tourist Board webcam target and verify currentness before promotion.",
+      "promotedAt": "2026-10-06T15:03:38Z"
     },
     {
       "id": "cayman-port-authority-webcams",

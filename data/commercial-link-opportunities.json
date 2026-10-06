@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T14:48:30Z",
+  "generatedAt": "2026-10-06T15:03:38Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1088,16 +1088,16 @@
       "id": "viator-nairobi-national-park-future",
       "destination": "Nairobi National Park",
       "placeIds": [
-        "kenyalive-nairobi-national-park"
+        "kenya-nairobi-national-park"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "KWS has launched KenyaLIVE at Nairobi National Park, while current Viator Nairobi inventory has extensive Nairobi National Park safari products. Commercial activation must wait until ERN verifies a park-specific current KWS live source.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Nairobi/d5280-ttd",
-      "publicInventoryEvidence": "Current Viator Nairobi inventory includes multiple Nairobi National Park half-day and full-day safari products.",
-      "nextAction": "After KenyaLIVE is human-confirmed as a current Nairobi National Park feed and promoted, generate one Nairobi National Park Viator partner link and verify it manually before public activation."
+      "reason": "Current Viator inventory has extensive Nairobi National Park safari products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Nairobi-attractions/Nairobi-National-Park/d5280-a11268",
+      "publicInventoryEvidence": "Current Viator Nairobi National Park destination inventory shows hundreds of bookable safari results and 2026 reviews.",
+      "nextAction": "Generate one exact owner-side Nairobi National Park tracked link and verify attribution before activation."
     },
     {
       "id": "klook-poas-future",
@@ -7217,6 +7217,40 @@
       "publicInventoryEvidenceUrl": "https://www.airalo.com/macao-esim/",
       "publicInventoryEvidence": "Current Airalo Macao page lists Macao-specific data packages.",
       "nextAction": "Confirm Airalo availability in the Earthrightnow owner project and generate one Macao tracked link only if available; keep connectivity post-discovery."
+    },
+    {
+      "id": "klook-nairobi-national-park",
+      "destination": "Nairobi National Park",
+      "placeIds": [
+        "kenya-nairobi-national-park"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Klook currently has Nairobi National Park safari inventory available in 2026.",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/203930-nairobi-national-park-giraffe-centre-half-day-safari/",
+      "publicInventoryEvidence": "Current Klook listing offers a Nairobi National Park and Giraffe Centre half-day safari with 2026 availability.",
+      "nextAction": "Confirm owner-project Klook availability, then generate one exact tracked Nairobi National Park activity link only if attribution validates."
+    },
+    {
+      "id": "airalo-kenya-connectivity",
+      "destination": "Kenya connectivity utility",
+      "placeIds": [
+        "kenya-nairobi-national-park",
+        "kenya-masai-mara-siria",
+        "kenya-ol-donyo-chyulu",
+        "kenya-ol-pejeta-porini",
+        "kenya-sirikoi-waterhole"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P1_UTILITY",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Airalo currently exposes Kenya-specific eSIM inventory.",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/kenya-esim",
+      "publicInventoryEvidence": "Current Airalo Kenya country page exposes Kenya-specific eSIM packages.",
+      "nextAction": "Verify Airalo availability in the owner project and create one Kenya tracked connectivity link only if available; keep post-discovery."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T14:48:30Z",
+  "generatedAt": "2026-10-06T15:03:38Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1697,6 +1697,20 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_DESTINATION_LINK_AND_TRACKING_REQUIRED",
       "rule": "After Macao is chosen, expose at most one activity action and one connectivity action. Never let commercial availability change WeatherCam ranking, source truth or currentness."
+    },
+    {
+      "id": "nairobi-national-park-planning",
+      "intent": "multi-utility",
+      "preferredProgramCandidates": [
+        "viator",
+        "klook",
+        "airalo"
+      ],
+      "placeIds": [
+        "kenya-nairobi-national-park"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_DESTINATION_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After a user chooses Nairobi National Park, show at most one exact safari activity and one Kenya connectivity utility. Commercial availability never affects source ranking, truth or health."
     }
   ],
   "islandTravelClusters": [
