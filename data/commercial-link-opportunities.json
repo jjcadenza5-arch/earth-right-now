@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T01:50:00Z",
+  "generatedAt": "2026-10-06T01:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4552,6 +4552,41 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Riga/d4480-ttd",
       "publicInventoryEvidence": "Current Viator Riga inventory includes city sightseeing, canal cruises, Old Town, Art Nouveau and regional day trips.",
       "nextAction": "Generate one owner-side Riga destination-level tracked link and manually verify it before public activation; reuse it across the Riga cluster."
+    },
+    {
+      "id": "viator-isle-of-man",
+      "destination": "Isle of Man",
+      "placeIds": [
+        "iom-douglas-promenade",
+        "iom-douglas-marina",
+        "iom-peel-breakwater",
+        "iom-port-erin-bay",
+        "iom-ramsey"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has five official Isle of Man Government current views, while Viator currently lists a dedicated Isle of Man catalog spanning Douglas, Peel, Castletown, wildlife, Viking/Celtic heritage and TT-themed sightseeing.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Isle-of-Man/d5017-ttd",
+      "publicInventoryEvidence": "Current Viator Isle of Man inventory contains dozens of sightseeing, wildlife, heritage and shore-excursion products.",
+      "nextAction": "Generate one owner-side Isle of Man destination-level tracked link and manually verify it before public activation; reuse one island-level path across the current-view cluster."
+    },
+    {
+      "id": "viator-guernsey",
+      "destination": "Guernsey",
+      "placeIds": [
+        "guernsey-harbour",
+        "guernsey-havelet-bay"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has two first-party current Guernsey coastal views and Viator currently lists dedicated Guernsey sightseeing, coastal and shore-excursion inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-MY/Guernsey/d4329-ttd",
+      "publicInventoryEvidence": "Current Viator Guernsey inventory includes coastal, historical, walking and shore-excursion products.",
+      "nextAction": "Generate one owner-side Guernsey destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
