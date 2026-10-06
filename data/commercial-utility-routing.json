@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T13:05:00Z",
+  "generatedAt": "2026-10-06T12:30:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1423,6 +1423,105 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
       "rule": "Accommodation research only. No public placement until the program is actually available to Earthrightnow and a destination-specific tracked link is verified."
+    },
+    {
+      "id": "austria-alps-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "qeeq",
+        "autoeurope"
+      ],
+      "placeIds": [
+        "austria-ischgl",
+        "austria-solden",
+        "austria-saalbach-hinterglemm",
+        "austria-obertauern",
+        "austria-zell-am-see-kaprun",
+        "austria-nassfeld"
+      ],
+      "activationGate": "EXACT_ROUTE_OR_PICKUP_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After destination choice, use one verified transfer or one rental action appropriate to the trip. Never infer winter equipment or route support."
+    },
+    {
+      "id": "italy-alps-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "autoeurope",
+        "kiwitaxi"
+      ],
+      "placeIds": [
+        "italy-livigno",
+        "italy-cervinia"
+      ],
+      "activationGate": "EXACT_PICKUP_OR_TRANSFER_ROUTE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "Use one verified arrival/rental utility per Alpine trip context. Keep Cervinia and Livigno coverage separate unless one exact route/product truly serves both."
+    },
+    {
+      "id": "france-alps-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "qeeq",
+        "autoeurope"
+      ],
+      "placeIds": [
+        "france-tignes",
+        "france-les-deux-alpes",
+        "france-alpe-dhuez",
+        "france-val-thorens"
+      ],
+      "activationGate": "EXACT_ROUTE_OR_PICKUP_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "Geneva-to-Les Deux Alpes is verified as a public route example; every other resort requires exact owner-side route verification. One transport option by default."
+    },
+    {
+      "id": "western-alps-connectivity",
+      "intent": "connectivity",
+      "preferredProgramCandidates": [
+        "airalo",
+        "saily",
+        "yesim"
+      ],
+      "placeIds": [
+        "austria-ischgl",
+        "austria-solden",
+        "austria-saalbach-hinterglemm",
+        "austria-obertauern",
+        "austria-zell-am-see-kaprun",
+        "austria-nassfeld",
+        "italy-livigno",
+        "italy-cervinia",
+        "france-tignes",
+        "france-les-deux-alpes",
+        "france-alpe-dhuez",
+        "france-val-thorens"
+      ],
+      "activationGate": "COUNTRY_COVERAGE_AND_EXACT_TRACKED_LINK_REQUIRED",
+      "rule": "Connectivity is country-specific. Default to one verified eSIM provider per country; never let connectivity availability affect Earth ranking."
+    },
+    {
+      "id": "western-alps-stay-research",
+      "intent": "stay",
+      "preferredProgramCandidates": [
+        "booking-com",
+        "trip-com",
+        "agoda"
+      ],
+      "placeIds": [
+        "austria-ischgl",
+        "austria-solden",
+        "austria-saalbach-hinterglemm",
+        "austria-zell-am-see-kaprun",
+        "italy-livigno",
+        "italy-cervinia",
+        "france-tignes",
+        "france-les-deux-alpes",
+        "france-alpe-dhuez",
+        "france-val-thorens"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
+      "rule": "Research-only until an accommodation program is genuinely available to Earthrightnow. One useful stay action per destination cluster by default."
     }
   ],
   "islandTravelClusters": [

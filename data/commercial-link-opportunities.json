@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T13:05:00Z",
+  "generatedAt": "2026-10-06T12:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -6825,6 +6825,176 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Epirus/Easy-Hiking-Tour-near-to-Metsovo/d51394-267852P5",
       "publicInventoryEvidence": "Current Viator Metsovo inventory includes guided hiking and e-bike experiences operating through 2027.",
       "nextAction": "Generate one owner-side Metsovo destination-level tracked link and manually verify it; do not imply ski-resort access unless exact itinerary evidence supports it."
+    },
+    {
+      "id": "viator-zell-am-see",
+      "destination": "Zell am See / Salzburg Alps",
+      "placeIds": [
+        "austria-zell-am-see-kaprun"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Zell am See-Kaprun current-view source, and current Viator inventory explicitly includes Zell am See day trips and paragliding.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Salzburg/Zell-am-See-Alpine-Village-Private-Day-Trip-from-Salzburg/d451-7617P7",
+      "publicInventoryEvidence": "Current Viator inventory explicitly visits Zell am See and also includes local paragliding products from Schmittenhöhe.",
+      "nextAction": "Generate one owner-side Zell am See destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-livigno-bormio",
+      "destination": "Livigno / Bormio, Italy",
+      "placeIds": [
+        "italy-livigno"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Livigno current-view source, and Viator currently maintains a dedicated Livigno & Bormio destination catalog with winter sports, transfers and self-guided experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-AU/Livigno-and-Bormio/d25873-ttd",
+      "publicInventoryEvidence": "Current Viator Livigno/Bormio inventory includes ski/snowboard lessons, transfers, Bernina experiences and a Livigno self-guided tour.",
+      "nextAction": "Generate one owner-side Livigno/Bormio destination tracked link and manually verify it; keep one regional action rather than multiple product buttons."
+    },
+    {
+      "id": "viator-cervinia-aosta",
+      "destination": "Breuil-Cervinia / Aosta Valley",
+      "placeIds": [
+        "italy-cervinia"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Cervinia/Matterhorn current-view source, and current Viator Valle d'Aosta inventory includes Cervinia/Zermatt ski experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Valle-dAosta/d27407-ttd",
+      "publicInventoryEvidence": "Current Viator Valle d'Aosta catalog includes a Cervinia-to-Zermatt ski safari and other mountain experiences.",
+      "nextAction": "Generate one owner-side Cervinia/Aosta destination tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "kiwitaxi-austria-alps",
+      "destination": "Austria Alps arrival transfers",
+      "placeIds": [
+        "austria-obertauern",
+        "austria-zell-am-see-kaprun",
+        "austria-saalbach-hinterglemm"
+      ],
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "Kiwitaxi currently exposes Salzburg transfer coverage including an exact Salzburg-to-Zell am See route. This can support selected Austrian mountain arrivals after destination choice.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://kiwitaxi.com/en/austria/salzburg",
+      "publicInventoryEvidence": "Current Salzburg coverage includes Salzburg Airport and Zell am See among listed routes.",
+      "nextAction": "Verify each exact airport/resort route owner-side and activate at most one relevant transfer action per destination."
+    },
+    {
+      "id": "kiwitaxi-french-alps",
+      "destination": "French Alps arrival transfers",
+      "placeIds": [
+        "france-les-deux-alpes",
+        "france-alpe-dhuez",
+        "france-tignes",
+        "france-val-thorens"
+      ],
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "Kiwitaxi currently exposes exact Geneva Airport-to-Les Deux Alpes transfer inventory, proving useful French-Alps route coverage; other resort routes still require exact verification.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://kiwitaxi.com/en/switzerland/taxi-from-geneva-airport-to-les-deux-alpes",
+      "publicInventoryEvidence": "Current Kiwitaxi inventory provides a specific Geneva Airport to Les Deux Alpes transfer.",
+      "nextAction": "Generate one owner-side tracked link only for exact supported resort routes; never infer Val Thorens/Tignes/Alpe d'Huez coverage from the Les Deux Alpes route."
+    },
+    {
+      "id": "airalo-austria-alps",
+      "destination": "Austria connectivity",
+      "placeIds": [
+        "austria-ischgl",
+        "austria-solden",
+        "austria-saalbach-hinterglemm",
+        "austria-obertauern",
+        "austria-zell-am-see-kaprun",
+        "austria-nassfeld"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Airalo currently publishes Austria-specific eSIM coverage. Connectivity is a distinct optional post-discovery utility for international visitors.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/austria-esim/",
+      "publicInventoryEvidence": "Airalo currently publishes Austria-specific eSIM plans.",
+      "nextAction": "Generate one Austria-specific tracked link owner-side if supported; default to one public eSIM option for Austria."
+    },
+    {
+      "id": "airalo-italy-alps",
+      "destination": "Italy Alps connectivity",
+      "placeIds": [
+        "italy-livigno",
+        "italy-cervinia"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Airalo currently publishes Italy-specific eSIM coverage. This is an optional post-discovery utility for Alpine visitors.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/italy-esim",
+      "publicInventoryEvidence": "Airalo currently publishes Italy-specific eSIM plans.",
+      "nextAction": "Generate one Italy-specific owner tracked link if supported; do not add competing eSIM buttons by default."
+    },
+    {
+      "id": "airalo-france-alps",
+      "destination": "France Alps connectivity",
+      "placeIds": [
+        "france-tignes",
+        "france-les-deux-alpes",
+        "france-alpe-dhuez",
+        "france-val-thorens"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Airalo currently publishes France-specific eSIM coverage. This is an optional visitor utility after destination choice.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/france-esim",
+      "publicInventoryEvidence": "Airalo currently publishes France-specific eSIM plans.",
+      "nextAction": "Generate one France-specific owner tracked link if supported and keep one connectivity option by default."
+    },
+    {
+      "id": "qeeq-western-alps-roadtrip",
+      "destination": "Western Alps road-trip rental research",
+      "placeIds": [
+        "austria-ischgl",
+        "austria-solden",
+        "italy-livigno",
+        "italy-cervinia",
+        "france-tignes",
+        "france-les-deux-alpes",
+        "france-alpe-dhuez",
+        "france-val-thorens"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "QEEQ is already an owner-available Travelpayouts rental program. The Western Alps are a plausible road-trip context, but exact pickup coverage and winter-equipment terms must be verified per route.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify one genuinely useful airport/city pickup context per country owner-side and generate one tracked rental link per trip context only; never imply snow equipment or cross-border rights."
+    },
+    {
+      "id": "autoeurope-western-alps-roadtrip",
+      "destination": "Western Alps car-rental fallback",
+      "placeIds": [
+        "austria-zell-am-see-kaprun",
+        "italy-livigno",
+        "italy-cervinia",
+        "france-les-deux-alpes"
+      ],
+      "partnerCandidate": "autoeurope",
+      "intent": "transport",
+      "priority": "P2_UTILITY_RESERVE",
+      "reason": "AutoEurope is already owner-available and can serve as a rental fallback where exact destination coverage is better than the preferred option.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Compare owner-side coverage against QEEQ. Publicly surface at most one rental provider per trip context."
     }
   ]
 }

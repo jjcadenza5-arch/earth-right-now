@@ -5342,3 +5342,60 @@ The connected GitHub interface still does not expose generic push-triggered Page
 #### Protected invariants
 Watch Earth remains in-ERN playback only; external/link-only additions remain out of Watch Earth; IMAGE_REFRESH remains natural-schedule only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic social posting, automatic Travelpayouts placement or link rewriting; commercial value cannot affect Earth ranking/source truth/health/currentness; hard lean-core ceiling remains 575 KB.
 
+### Western Alps provider-diverse current-view + multi-program travel expansion — 2026-10-06
+Continued from reconciled canonical main `a85ca18b654eb295c0736103978186ec78545d05` after preserving all previously landed Finland/Japan/Canada/Spain/Sri Lanka/Andes/Caucasus/Korea/Greece work.
+
+#### Search/Explore expansion
+Added **12 healthy official/current Western Alps destinations** across three countries and multiple providers.
+
+**Austria — 6**
+- Ischgl / Silvretta Arena;
+- Sölden / Ötztal;
+- Saalbach Hinterglemm;
+- Obertauern;
+- Zell am See–Kaprun;
+- Nassfeld–Pressegger See.
+
+**Italy — 2**
+- Livigno;
+- Breuil-Cervinia / Matterhorn.
+
+**France — 4**
+- Tignes;
+- Les 2 Alpes;
+- Alpe d'Huez;
+- Val Thorens.
+
+All new records remain HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold. Official resort/destination webcam surfaces were used, with seasonal/offline camera states preserved honestly where providers expose them.
+
+#### Commercial + Travelpayouts diversification
+Added fit-first owner-link-gated paths across multiple program families:
+- Viator Zell am See;
+- Viator Livigno/Bormio;
+- Viator Cervinia/Aosta Valley;
+- Kiwitaxi Austrian Alps arrivals;
+- Kiwitaxi French Alps arrivals;
+- Airalo Austria connectivity;
+- Airalo Italy connectivity;
+- Airalo France connectivity;
+- QEEQ Western Alps road-trip research;
+- AutoEurope Western Alps rental fallback.
+
+Utility routing added:
+- Austria Alps access;
+- Italy Alps access;
+- France Alps access;
+- Western Alps country-specific connectivity;
+- Western Alps stay research using Booking.com / Trip.com / Agoda only after actual owner-project availability is confirmed.
+
+No tracked link, exact unsupported transfer route, rental winter-equipment entitlement, cross-border rental permission, accommodation availability or owner-program approval was invented.
+
+#### Combined state after this tranche
+- supplemental Search/Explore: **372 / 500**;
+- commercial opportunities: **435**;
+- utility-routing clusters: **64**;
+- Watch Earth impact: **0**;
+- first-load core unchanged.
+
+Protected invariants remain unchanged: Watch Earth is in-ERN playback only; LINK_ONLY/EXTERNAL additions remain Search/Explore-only; IMAGE_REFRESH remains natural-schedule only; public Guide and Now Moments remain OFF; no paid ranking, automatic social posting, automatic Travelpayouts placement or link rewriting; commercial value cannot affect Earth ranking/source truth/health/currentness; hard lean-core ceiling remains 575 KB.
+

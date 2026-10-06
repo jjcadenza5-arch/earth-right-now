@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T13:05:00Z",
+  "generatedAt": "2026-10-06T12:30:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2766,6 +2766,90 @@
       "freshnessEvidence": "Anilio's official page labels the service SNOW CAM ΑΝΗΛΙΟ LIVE / live transmission. Automated access can be bot-gated, which does not by itself invalidate the source.",
       "coordinateNote": "Destination-level reference only; ERN does not claim exact camera coordinates.",
       "checkedAt": "2026-10-06T13:05:00Z"
+    },
+    "austria-ischgl-live": {
+      "sourceUrl": "https://www.ischgl.com/en/plan-your-trip/webcams",
+      "rightsBasis": "Official destination webcam page; ERN links externally and does not infer embed or image reuse rights.",
+      "freshnessEvidence": "Ischgl states its webcams provide around-the-clock live images and up-to-the-minute footage from the village and mountain sectors.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:30:00Z"
+    },
+    "austria-solden-live": {
+      "sourceUrl": "https://www.soelden.com/en/live-information",
+      "rightsBasis": "Official destination live-information page; ERN links externally.",
+      "freshnessEvidence": "Sölden's official live-information page explicitly presents live cameras in the valley and on the mountain alongside current lift, slope and weather status.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:30:00Z"
+    },
+    "austria-saalbach-live": {
+      "sourceUrl": "https://www.saalbach.com/en/live-info/livecams",
+      "rightsBasis": "Official tourism livecam page; ERN links externally.",
+      "freshnessEvidence": "The official livecam page exposes multiple interactive live panoramas and current named mountain-camera locations.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:30:00Z"
+    },
+    "austria-obertauern-live": {
+      "sourceUrl": "https://www.obertauern.com/service-info/webcams.html",
+      "rightsBasis": "Official tourism webcam page; ERN links externally.",
+      "freshnessEvidence": "Obertauern explicitly directs visitors to current live images from numerous named resort webcams.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:30:00Z"
+    },
+    "austria-zell-am-see-kaprun-live": {
+      "sourceUrl": "https://www.zellamsee-kaprun.com/en/service/live/webcams",
+      "rightsBasis": "Official tourism webcam page; ERN links externally.",
+      "freshnessEvidence": "The official region page describes live videos from webcams on Kitzsteinhorn, Schmittenhöhe, the village and Lake Zell viewpoints.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:30:00Z"
+    },
+    "austria-nassfeld-live": {
+      "sourceUrl": "https://www.nassfeld.at/en/Service/Live-aus-der-Region/Webcam",
+      "rightsBasis": "Official destination webcam page; ERN links externally.",
+      "freshnessEvidence": "The official region page lists current webcams and live footage for mountain and lake viewpoints including Gartnerkofel, Tressdorfer Höhe and Pressegger See.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:30:00Z"
+    },
+    "italy-livigno-live": {
+      "sourceUrl": "https://www.livigno.eu/en/webcam",
+      "rightsBasis": "Official destination webcam page; ERN links externally.",
+      "freshnessEvidence": "Livigno's official INFOLIVE webcam page exposes multiple named current viewpoints including Carosello 3000, Mottolino and central Livigno.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:30:00Z"
+    },
+    "italy-cervinia-live": {
+      "sourceUrl": "https://www.cervinia.it/en/webcam",
+      "rightsBasis": "Official resort webcam page; ERN links externally.",
+      "freshnessEvidence": "Cervinia's official page publishes multiple current webcams across Breuil-Cervinia, Valtournenche, Chamois, Torgnon and Plateau Rosa.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:30:00Z"
+    },
+    "france-tignes-live": {
+      "sourceUrl": "https://en.tignes.net/webcams",
+      "rightsBasis": "Official resort webcam page; ERN links externally.",
+      "freshnessEvidence": "Tignes states its webcams cover Grande-Motte, Les Brévières, Val Claret, Tignes 1800, Tovière, Snowpark and Le Lac in high definition and 360-degree vision.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:30:00Z"
+    },
+    "france-les-deux-alpes-live": {
+      "sourceUrl": "https://www.les2alpes.com/winter/live-info/",
+      "rightsBasis": "Official destination live-information page; ERN links externally.",
+      "freshnessEvidence": "Les 2 Alpes explicitly exposes webcams and livecams together with realtime piste, lift and weather information.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:30:00Z"
+    },
+    "france-alpe-dhuez-live": {
+      "sourceUrl": "https://www.alpedhuez.com/en/webcams",
+      "rightsBasis": "Official tourism webcam page; ERN links externally.",
+      "freshnessEvidence": "Alpe d'Huez's official webcam page exposes numerous named viewpoints with explicit 'View live' playback.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:30:00Z"
+    },
+    "france-val-thorens-live": {
+      "sourceUrl": "https://www.valthorens.com/en/webcams/",
+      "rightsBasis": "Official destination webcam page; ERN links externally.",
+      "freshnessEvidence": "Val Thorens states the thumbnails show the latest webcam captures and clearly separates currently active cameras from seasonal offline cameras.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:30:00Z"
     }
   },
   "prague-petrin-tower": {
