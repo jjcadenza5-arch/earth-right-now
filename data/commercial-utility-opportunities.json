@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T02:20:00Z",
+  "generatedAt": "2026-10-06T06:10:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility links are optional post-discovery helpers. They do not affect which place/camera ERN ranks or recommends.",
   "opportunities": [
@@ -183,6 +183,46 @@
       "state": "OWNER_EXACT_LINK_REQUIRED",
       "placementRule": "Keep as research reserve; never show alongside another eSIM by default.",
       "why": "Adds a final owner-available connectivity fallback without affecting Earth discovery."
+    },
+    {
+      "id": "booking-com-stay-research",
+      "partnerCandidate": "booking-com",
+      "intent": "stay",
+      "scope": "GLOBAL_ACCOMMODATION_AFTER_DESTINATION_CHOICE",
+      "priority": "P1_RESEARCH",
+      "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+      "placementRule": "Only after Earth discovery and only if the Earthrightnow Project has Booking.com access. Prefer one destination/property deep link; never auto-place lodging on camera cards.",
+      "why": "Travelpayouts publicly lists Booking.com in accommodations; lodging is ERN's largest remaining business-category gap."
+    },
+    {
+      "id": "trip-com-multivertical-research",
+      "partnerCandidate": "trip-com",
+      "intent": "mixed",
+      "scope": "STAY_FLIGHTS_TRAINS_ATTRACTIONS_TRANSFERS",
+      "priority": "P1_RESEARCH",
+      "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+      "placementRule": "Use only for a clearly distinct visitor need after owner-project access and exact deep-link support are confirmed; do not replace better specialist partners just for consolidation.",
+      "why": "Official Travelpayouts 2026 documentation shows Trip.com spanning hotels, flights, trains, attractions, experiences, transfers and car rental."
+    },
+    {
+      "id": "12go-regional-transport-research",
+      "partnerCandidate": "12go",
+      "intent": "transport",
+      "scope": "ASIA_AND_ISLAND_INTERCITY_FERRY_RAIL_BUS",
+      "priority": "P1_RESEARCH",
+      "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+      "placementRule": "Use only in explicit Get There / Move There contexts with exact route or destination relevance; never on live-camera cards.",
+      "why": "12Go can fill ferry/rail/bus gaps that tours and flight partners do not solve."
+    },
+    {
+      "id": "getyourguide-activity-gap-research",
+      "partnerCandidate": "getyourguide",
+      "intent": "activities",
+      "scope": "DESTINATION_ACTIVITY_GAPS",
+      "priority": "P2_RESEARCH",
+      "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+      "placementRule": "Use only where owner access exists and inventory materially improves on existing Viator/Klook/KKday/Tiqets options.",
+      "why": "Travelpayouts publicly lists GetYourGuide; it can serve as a selective activity fallback rather than another default button."
     }
   ],
   "safeguards": {
