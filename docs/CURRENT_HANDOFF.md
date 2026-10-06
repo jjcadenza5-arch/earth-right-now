@@ -5264,3 +5264,81 @@ Extended the same large batch beyond tours/transfers into additional owner-avail
 
 These are downstream gateway-city utilities for Andes/Caucasus itineraries, not destination-ranking signals. Exact tracked links remain owner-side gated and one-useful-option suppression still applies.
 
+### South Korea + expanded Greece current-view / multi-program batch — 2026-10-06
+Continued from the reconciled advanced main after preserving all intervening Finland/Japan/Canada/Spain/Sri Lanka/Andes/Caucasus/gateway-utility work.
+
+#### Search/Explore expansion
+Added **10 healthy current destinations**.
+
+**South Korea — 3**
+- Pyeongchang Alpensia Resort;
+- Muju Deogyusan Resort;
+- Hallasan National Park / Baengnokdam on Jeju.
+
+**Greece — 7**
+- Kalavrita Ski Resort / Mount Helmos;
+- Parnassos / Fterolaka live slope;
+- 3–5 Pigadia / Naousa;
+- Pelion Ski Centre / Agriolefkes;
+- Mainalo / Ostrakina;
+- Seli National Ski Center;
+- Anilio / Metsovo.
+
+All new rows remain HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold. First-party government/resort sources were preferred; Parnassos uses a credible regional destination portal carrying the ski-center camera. Automated access blocking on Anilio is documented as an access characteristic, not evidence that the source is broken.
+
+Current catalog state:
+- healthy distinct searchable places: **679**;
+- healthy source records: **684**;
+- supplemental Search/Explore: **360 / 500**;
+- remaining supplemental headroom: **140**;
+- Watch Earth impact: **0**;
+- first-load core unchanged.
+
+#### Commercial + broader Travelpayouts diversification
+Commercial opportunity registry advanced to **425 records**.
+
+New owner-link-gated research paths:
+- Klook Jeju / Hallasan;
+- Viator Jeju / Hallasan;
+- QEEQ Jeju road-trip rental;
+- Radical Storage Seoul;
+- Airalo South Korea connectivity;
+- Viator Parnassos / Delphi / Arachova;
+- Viator Kalavrita / Helmos;
+- Viator Metsovo / Anilio.
+
+Current partner-mapping counts include:
+- Viator: **260**;
+- Klook: **59**;
+- QEEQ: **13**;
+- Radical Storage: **17**;
+- Airalo: **10**.
+
+New/expanded utility routing covers:
+- South Korea mountain access;
+- Jeju island access;
+- Seoul city utilities;
+- mainland-Greece mountain road-trip research;
+- mainland-Greece stay research.
+
+Mainalo, Seli and Anilio were folded into the existing Greece road-trip/stay clusters rather than creating redundant utility records.
+
+No tracked URL, exact transfer route, rental eligibility, winter-equipment inclusion, accommodation availability, price or owner-program approval was invented.
+
+#### Structural validation
+Current main passes a direct catalog integrity check:
+- no duplicate supplemental IDs;
+- no supplemental/core source-ID duplication;
+- no supplemental/core place-ID duplication;
+- every supplemental record remains HEALTHY;
+- every supplemental record remains LINK_ONLY + EXTERNAL;
+- every supplemental record remains Featured/Watch held;
+- supplemental count remains below the 500-row guard;
+- commercial public activation remains OFF;
+- utility public activation remains OFF.
+
+The connected GitHub interface still does not expose generic push-triggered Pages/Operations workflow runs, so no unobserved run result is claimed here.
+
+#### Protected invariants
+Watch Earth remains in-ERN playback only; external/link-only additions remain out of Watch Earth; IMAGE_REFRESH remains natural-schedule only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic social posting, automatic Travelpayouts placement or link rewriting; commercial value cannot affect Earth ranking/source truth/health/currentness; hard lean-core ceiling remains 575 KB.
+
