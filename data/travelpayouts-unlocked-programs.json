@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T02:20:00Z",
+  "generatedAt": "2026-10-06T04:40:00Z",
   "evidenceBasis": "Owner screenshots from Travelpayouts Earthrightnow project showing Generate links controls.",
   "rule": "A Generate links control confirms account-side link generation is available. It does not authorize automatic public placement; ERN still requires utility review, exact-link verification and disclosure.",
   "currentCorePartners": [
@@ -81,6 +81,19 @@
     "yesim": "Mapped as eSIM fallback for owner-side coverage comparison; not an automatic replacement for Airalo.",
     "gigsky": "Mapped as specialized connectivity reserve; no public placement without differentiated coverage.",
     "drimsim": "Mapped as specialized connectivity reserve; no public placement without differentiated coverage.",
-    "compensair": "Mapped as post-disruption fallback behind AirHelp; never a normal destination-discovery action."
+    "compensair": "Mapped as post-disruption fallback behind AirHelp; never a normal destination-discovery action.",
+    "kkday": "Singapore and other Asia-led activity contexts are now being mapped selectively; use only where owner-side inventory adds something distinct from an existing Klook/Viator path.",
+    "go-city": "Singapore and other dense attraction cities are mapped as city-pass research; exact supported-city inventory and owner-side link remain required.",
+    "kiwi-com": "Remote/island flight-planning cluster now includes Arctic/Faroe/Greenland/Rapa Nui contexts; trip-planning only and never a camera-ranking signal.",
+    "airalo": "Caribbean connectivity cluster is mapped for owner-side country coverage comparison; one-connectivity-option rule remains in force."
+  },
+  "platformModel2026": {
+    "verifiedFromOfficialTravelpayoutsDocumentation": true,
+    "marketplaceScale": "90+ trusted brands",
+    "connectionModel": "Since 2026-04-27, projects are automatically connected to relevant programs when available; some programs/tools are instant, some require project review, and some may be unavailable under brand requirements.",
+    "exactLinkWorkflow": "Travelpayouts Links can generate a partner deep link to a specific supported brand page once that program is available to the selected Project. SubID is optional and can be used for ERN placement analytics.",
+    "safetyForERN": "Program availability does not equal public-placement approval. ERN still requires distinct visitor utility, exact destination/coverage review, generated tracked-link verification and disclosure.",
+    "automationBoundary": "Travelpayouts also offers Drive/LinkSwitcher-style automation, but ERN keeps automatic placement and automatic link rewriting disabled to preserve editorial control and commercial-neutral Earth ranking.",
+    "ownerActionWhenReady": "For a selected opportunity, open Travelpayouts Tools > Links for the Earthrightnow Project, choose the available program, paste the exact destination/brand page, optionally assign an ERN SubID, generate the tracked link, then manually verify the result before public activation."
   }
 }
