@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T13:50:00Z",
+  "generatedAt": "2026-10-06T06:55:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2115,6 +2115,48 @@
       "rightsBasis": "Official NPS webcam page. ERN remains LINK_ONLY and does not infer permission to copy or embed the camera imagery.",
       "coordinateSourceUrl": "https://www.nps.gov/media/webcam/view.htm?id=88F5EE0B-04BA-2C9C-83226089ADFC8005",
       "story": "Official current view across Crater Lake from Rim Village."
+    },
+    "zimbabwe-hwange-linkwasha": {
+      "sourceUrl": "https://www.wildernessdestinations.com/africa/zimbabwe/hwange-national-park/linkwasha-camp/live",
+      "rightsBasis": "First-party Wilderness destination page presents the Africam live feed; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Wilderness explicitly describes the camera as live/continuous from Linkwasha and identifies the waterhole shown.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim the exact camera coordinate.",
+      "checkedAt": "2026-10-06T06:55:00Z"
+    },
+    "zimbabwe-victoria-falls-safari-lodge-waterhole": {
+      "sourceUrl": "https://victoria-falls-safari-collection.com/en-US",
+      "rightsBasis": "First-party lodge site offers the live waterhole stream; ERN links externally and does not infer embed/restream permission.",
+      "freshnessEvidence": "The current first-party site labels the feature LIVE and invites visitors to play the lodge waterhole live stream.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim the exact camera coordinate.",
+      "checkedAt": "2026-10-06T06:55:00Z"
+    },
+    "kenya-sirikoi-waterhole": {
+      "sourceUrl": "https://www.sirikoi.com/the-lodge/",
+      "rightsBasis": "First-party lodge page exposes a Live Cam for the waterhole; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Sirikoi's current lodge page directs visitors to a Live Cam while describing the wildlife using the waterhole.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim the exact camera coordinate.",
+      "checkedAt": "2026-10-06T06:55:00Z"
+    },
+    "south-africa-kwa-maritane-waterhole": {
+      "sourceUrl": "https://www.legacyhotels.co.za/kwa-maritane-bush-lodge",
+      "rightsBasis": "First-party lodge page provides a Live Hide Camera feature; ERN links externally and does not infer rebroadcast rights.",
+      "freshnessEvidence": "The current official lodge page describes its live video feed as a front-row view of wildlife interactions at the waterhole.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim the exact camera coordinate.",
+      "checkedAt": "2026-10-06T06:55:00Z"
+    },
+    "south-africa-kruger-shalati-bridge": {
+      "sourceUrl": "https://www.krugerselati.com/live-camera/",
+      "rightsBasis": "First-party property page presents Africam live streams; ERN links externally and does not infer restream rights.",
+      "freshnessEvidence": "Kruger Shalati states the cameras provide live streams and record uninterrupted 24 hours a day.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim the exact camera coordinate.",
+      "checkedAt": "2026-10-06T06:55:00Z"
+    },
+    "fiji-castaway-island-live": {
+      "sourceUrl": "https://www.outrigger.com/fr-fr/fiji/castaway-island-fiji",
+      "rightsBasis": "First-party resort page identifies a live webcam; ERN links externally and does not infer third-party embed/restream rights.",
+      "freshnessEvidence": "The current Outrigger/Castaway Island page explicitly labels the feature 'Live from Castaway Island, Fiji' and 'Live webcam'.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim the exact camera coordinate.",
+      "checkedAt": "2026-10-06T06:55:00Z"
     }
   },
   "prague-petrin-tower": {

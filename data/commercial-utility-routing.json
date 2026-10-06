@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T06:45:00Z",
+  "generatedAt": "2026-10-06T06:55:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -688,6 +688,40 @@
       ],
       "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
       "rule": "Use at most one car-rental option and one connectivity option per country/context; only after the visitor chooses the destination. Never place these utilities on live-camera ranking surfaces."
+    },
+    {
+      "id": "southern-africa-safari-arrivals",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "intui-travel",
+        "gettransfer"
+      ],
+      "placeIds": [
+        "zimbabwe-victoria-falls-safari-lodge-waterhole",
+        "zimbabwe-hwange-linkwasha",
+        "south-africa-kwa-maritane-waterhole",
+        "south-africa-kruger-shalati-bridge"
+      ],
+      "activationGate": "EXACT_AIRPORT_DESTINATION_PAIR_AND_OWNER_TRACKED_LINK_REQUIRED",
+      "rule": "Arrival-transfer research only after the visitor chooses the destination. Use at most one verified transfer option for a route; never imply service to remote lodges or parks unless the exact airport/destination pair is supported."
+    },
+    {
+      "id": "south-pacific-island-connectivity",
+      "intent": "connectivity",
+      "preferredProgramCandidates": [
+        "airalo",
+        "saily",
+        "yesim"
+      ],
+      "placeIds": [
+        "fiji-malolo-lailai",
+        "fiji-castaway-island-live",
+        "french-polynesia-tahiti-faaa",
+        "french-polynesia-moorea"
+      ],
+      "activationGate": "PROGRAM_COUNTRY_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Optional connectivity only after destination choice. Default to one verified eSIM option per country/territory context and never place connectivity utilities on live-camera ranking surfaces."
     }
   ],
   "islandTravelClusters": [

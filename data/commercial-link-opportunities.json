@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T06:35:00Z",
+  "generatedAt": "2026-10-06T06:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -559,12 +559,13 @@
         "sanparks-satara",
         "sanparks-olifants",
         "sanparks-punda-maria",
-        "sanparks-talamati"
+        "sanparks-talamati",
+        "south-africa-kruger-shalati-bridge"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN has multiple healthy/quasi-live Kruger places. Use one park-level Viator safari-planning bridge across verified Kruger places without per-camera commercial duplication.",
+      "reason": "ERN has multiple healthy Kruger discovery places, now including Kruger Shalati at Skukuza. Use one park-level Viator safari-planning bridge without per-camera commercial duplication.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "generate one Kruger destination-level Viator partner link and manually verify it; reuse it across verified Kruger places without duplicate commercial density.",
       "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
@@ -3316,12 +3317,13 @@
       "id": "klook-fiji-future",
       "destination": "Fiji / Mamanuca Islands",
       "placeIds": [
-        "fiji-malolo-lailai"
+        "fiji-malolo-lailai",
+        "fiji-castaway-island-live"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
       "priority": "P1",
-      "reason": "Fiji materially improves South Pacific coverage and Klook currently has a broad Fiji activity catalog including island cruises and water activities.",
+      "reason": "ERN now has multiple Mamanuca/Fiji live discovery places. Reuse the already-verified Fiji Klook destination bridge across relevant Fiji places rather than multiplying activity buttons; commercial value remains downstream from discovery.",
       "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/c189-fiji/",
       "publicInventoryEvidence": "Current Klook Fiji destination inventory lists dozens of activities including South Sea Island cruises, Malamala Beach Club, Cloud 9 and other water experiences.",
@@ -3705,19 +3707,20 @@
     },
     {
       "id": "viator-laikipia-mpala",
-      "destination": "Laikipia / Ol Pejeta, Kenya",
+      "destination": "Laikipia / Lewa / Ol Pejeta, Kenya",
       "placeIds": [
         "mpala-watering-hole",
-        "kenya-ol-pejeta-porini"
+        "kenya-ol-pejeta-porini",
+        "kenya-sirikoi-waterhole"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P2",
-      "reason": "ERN has healthy wildlife views at Mpala and Porini Rhino Camp / Ol Pejeta. Viator carries Kenya itineraries and conservation-safari experiences covering Laikipia/Ol Pejeta; one regional path should serve both without implying that a tour visits Mpala or Porini unless exact inventory proves it.",
+      "reason": "ERN has healthy wildlife views across Laikipia-area conservation landscapes including Mpala, Porini/Ol Pejeta and Sirikoi/Lewa. Keep one regional safari-planning path and never imply that a tour directly visits a specific lodge or conservancy unless exact inventory proves it.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-NZ/Nairobi-attractions/Ol-Pejeta-Conservancy/d5280-a28950",
       "publicInventoryEvidence": "Viator currently lists Kenya itineraries that include Laikipia and Ol Pejeta conservation/safari experiences.",
-      "nextAction": "Generate one owner-side Laikipia/Ol Pejeta or Kenya conservation-safari tracked link only if scope is clearly disclosed; do not imply direct access to Mpala or Porini Rhino Camp unless exact inventory proves it."
+      "nextAction": "Generate one owner-side Laikipia/Lewa/Ol Pejeta or Kenya conservation-safari tracked link only if scope is clearly disclosed; do not imply direct access to Mpala, Porini or Sirikoi unless exact inventory proves it."
     },
     {
       "id": "viator-liechtenstein-vaduz-malbun",
@@ -5684,6 +5687,51 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Salalah/d4391-ttd",
       "publicInventoryEvidence": "Current Viator Salalah destination inventory contains 100+ excursions across day trips, safaris, nature, history and coastal experiences.",
       "nextAction": "Generate one owner-side Salalah destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-victoria-falls-zimbabwe",
+      "destination": "Victoria Falls, Zimbabwe",
+      "placeIds": [
+        "zimbabwe-victoria-falls-safari-lodge-waterhole"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party live waterhole view in Victoria Falls, and current Viator inventory includes Victoria Falls sightseeing, river, tram and flight experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Victoria-Falls/12-15-minute-Scenic-Helicopter-Flights-over-the-Victoria-Falls/d5309-219939P1",
+      "publicInventoryEvidence": "Current Viator inventory includes highly active Victoria Falls sightseeing products; use one destination-level planning bridge rather than product-specific promotional density.",
+      "nextAction": "Generate one owner-side Victoria Falls destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-hwange-zimbabwe",
+      "destination": "Hwange National Park, Zimbabwe",
+      "placeIds": [
+        "zimbabwe-hwange-linkwasha"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party live Linkwasha/Hwange wildlife view, and current Viator inventory includes full-day Hwange safaris from Victoria Falls.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Victoria-Falls/Hwange-national-park-full-day-trip/d5309-331888P2",
+      "publicInventoryEvidence": "Current Viator inventory includes a full-day Hwange National Park safari from Victoria Falls with game drives and transport.",
+      "nextAction": "Generate one owner-side Hwange or clearly scoped Victoria Falls-to-Hwange tracked link and manually verify it; do not imply access to Wilderness Linkwasha unless exact inventory proves it."
+    },
+    {
+      "id": "viator-pilanesberg",
+      "destination": "Pilanesberg National Park, South Africa",
+      "placeIds": [
+        "south-africa-kwa-maritane-waterhole"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party Kwa Maritane/Pilanesberg live waterhole view, and Viator currently carries dedicated Pilanesberg game drives and Johannesburg/Pretoria day safaris.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/North-West/3-Hour-Shared-Game-Drive-in-Pilanesberg-National-Park/d23345-30052P114",
+      "publicInventoryEvidence": "Current Viator inventory includes dedicated Pilanesberg National Park game drives and pickup options from Sun City or park gates.",
+      "nextAction": "Generate one owner-side Pilanesberg destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
