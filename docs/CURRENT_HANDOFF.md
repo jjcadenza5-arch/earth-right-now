@@ -5454,3 +5454,60 @@ The existing Petra source was upgraded from a third-party SkylineWebcams URL to 
 
 Protected invariants remain unchanged.
 
+
+
+## Large-batch canonical checkpoint — 2026-10-06 13:30 UTC
+
+Canonical reconciliation:
+- Repository content state validated on `c4d19f82d07f96fd3e2d1f419312bf29f1c06159`.
+- The latest successful non-superseded Pages deployment for that content is **Deploy ERN to GitHub Pages #2673** (run 37471028814), completed SUCCESS.
+- The matching latest Operations validation is **ERN Operations Check #1454** (run 37471028756), completed SUCCESS.
+- The immediately preceding clean production checkpoint was Pages #2672 on `a4a1736495cf034beaea9c836567af4d23d465ca`; the #2673 release supersedes it.
+- Earlier Pages failures on the Oct. 6 expansion line were reconciled rather than ignored: one future-dated Petra verification timestamp was corrected; AI-search alias coverage was restored; two normalization-equivalent aliases were removed. All pre-deploy guards subsequently passed.
+
+Current validated catalog:
+- **693 healthy distinct searchable places**
+- **698 healthy source records**
+- **374 supplemental Search/Explore records**
+- **443 commercial opportunity records**
+- **71 commercial utility-routing clusters**
+- **479 source-research candidates**
+- **12 source-maintenance priority records**
+- No duplicate source IDs across core + supplemental catalogs.
+- Four pre-existing core records remain intentionally DEGRADED and fail-closed: `pattaya-city-live`, `takayama-miyagawa-current-image`, `jungfrau-region`, and `chidori-sakura`. Do not relabel them healthy without fresh source evidence.
+
+Search/Explore expansion in this tranche:
+- Added official/current external discovery coverage for Lake Bohinj / Orožnova Koča (Slovenia), Kruševo / Mihajlovo (North Macedonia), North Chesterman / Mackenzie / Cox Bay (Tofino, Canada), Selinda Reserve (Botswana), and Hwange Safari Lodge / The Hide (Zimbabwe).
+- These ten records are all `EXTERNAL_LIVE` + `LINK_ONLY` + `playback: EXTERNAL`, remain Search/Explore-only, and are explicitly held out of Watch Earth.
+- Corresponding source-research records remain preserved as promoted searchable quasi-live evidence.
+
+Commercial diversification:
+- Bohinj expanded the existing Viator Ljubljana/Triglav path and added a Klook Bohinj/Triglav research path.
+- North Macedonia Viator coverage now includes the new Kruševo/Mihajlovo places.
+- Added a Tofino/Vancouver Island Viator research path and a conservative Selinda/Botswana Viator research path.
+- Existing Hwange Viator coverage now includes the two new Hwange views.
+- Added utility-routing research for Slovenian alpine access (Omio/QEEQ/Kiwitaxi), Vancouver Island west-coast access (QEEQ/DiscoverCars/Kiwi.com), and North Macedonia mountain access (QEEQ/Kiwitaxi/GetTransfer); Southern Africa safari-arrival routing was extended to the new Botswana/Zimbabwe places.
+- All new commercial paths remain owner-project availability + exact tracked-link gated. No automatic placement, link rewriting, commission-based ranking, or inferred program availability was introduced.
+
+Architecture / deduplication:
+- Consolidated 12 clear duplicate supplemental destination representations into their existing canonical core places: Salzburg Mirabell, Tallinn TV Tower, Lake Bled, Poiana Brașov, Tvøroyri Port, Lerwick Town Hall, Santorini Imerovigli, Mayon, Bulusan, Khumbu Glacier, Longyearbyen Adventfjorden, and Mauna Loa.
+- Commercial `placeIds` were remapped to canonical IDs and de-duplicated.
+- Source-research history was preserved with state `SUPERSEDED_BY_CANONICAL_CORE`; provenance was not discarded.
+- Multilingual aliases were merged onto canonical place IDs and normalization-equivalent duplicates were removed.
+- The lower aggregate place/source counts versus the previous handoff are intentional catalog correction, not lost coverage: ten genuinely new searchable records were added while twelve duplicate representations were removed.
+
+Protected invariants remain unchanged:
+- Watch Earth stays in-ERN-playback-only; LINK_ONLY / EXTERNAL records never enter Watch Earth merely because they are healthy/searchable.
+- IMAGE_REFRESH stays natural-schedule-only.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- Commercial value cannot alter source truth, currentness, health, ranking, or editorial prominence.
+- No paid ranking, automatic affiliate placement, automatic tracked-link rewriting, or unverified partner activation.
+- Existing performance / lean-core release ceilings remain enforced.
+
+Next autonomous lane:
+- Continue broad but geography-conscious Search/Explore expansion from trustworthy current/live sources.
+- Keep widening Viator and Travelpayouts-compatible utility research without assuming owner-side program availability.
+- Prefer genuinely new place/source coverage over alternate IDs for sources already represented in core.
+- Continue source-health maintenance and consolidate duplicate representations before they become public architecture debt.
+- Treat Pages + Operations success on the same content SHA as the release-validation standard before declaring a new canonical production checkpoint.
