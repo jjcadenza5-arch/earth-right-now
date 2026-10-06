@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T15:40:00Z",
-  "healthyDistinctBaseline": 389,
+  "generatedAt": "2026-10-06T01:55:00Z",
+  "healthyDistinctBaseline": 500,
   "strategy": "Post-250 maintenance: repair or replace degraded sources only when they add unique visitor value; do not inflate count mechanically.",
   "items": [
     {
@@ -69,6 +69,28 @@
       "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_PROVIDER_PAGE_INDEPENDENTLY_CONFIRMED_ACTIVE",
       "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
       "blocks389Baseline": false
+    },
+    {
+      "id": "balykchy-entry",
+      "placeId": "balykchy-entry",
+      "title": "Balykchy — Gateway to Issyk-Kul",
+      "country": "Kyrgyzstan",
+      "health": "HEALTHY",
+      "truth": "EXTERNAL_LIVE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_PROVIDER_PAGE_INDEPENDENTLY_CONFIRMED_ACTIVE",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocks500Baseline": false
+    },
+    {
+      "id": "kanlaon-phivolcs-current-image",
+      "placeId": "kanlaon-volcano",
+      "title": "Kanlaon Volcano — Current Monitoring View",
+      "country": "Philippines",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_PHIVOLCS_REAL_TIME_CAMERA_SURFACE_CONFIRMED_ACTIVE",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocks500Baseline": false
     }
   ]
 }
