@@ -3835,3 +3835,123 @@ Pages **2606 SUCCESS** for the first 517-place / 312-opportunity state and Pages
 - no automatic Travelpayouts placement or link rewriting;
 - no paid ranking;
 - commercial value never affects Earth ranking, source truth, health or currentness.
+
+
+### High Tatras + Serbia + Barbados + Travelpayouts diversification — 2026-10-06
+Owner explicitly asked ERN to keep growing in large balanced batches across three coordinated lanes: searchable Earth coverage, destination/business mapping, and broader Travelpayouts program discovery beyond the existing Viator/Klook-heavy mix. Quality, currentness, provenance, permission boundaries and visitor simplicity remain ahead of raw count.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **521 to 531 places** (**536 healthy source records** total).
+- lazy supplemental Search/Explore catalog: **212 / 250 rows**;
+- remaining bounded supplemental capacity before another architecture review: **38 rows**.
+
+New searchable places in this batch:
+
+**Slovakia — High Tatras, 4 official live places**
+- Lomnický štít;
+- Tatranská Lomnica;
+- Hrebienok;
+- Solisko / Štrbské Pleso.
+
+All four use Tatry Mountain Resorts / Vysoké Tatry official live-webcam surfaces. The official resort pages explicitly describe live webcams/live streams. ERN keeps them `EXTERNAL_LIVE` + `LINK_ONLY` + Search/Explore-only with Watch hold.
+
+**Serbia — 2 official current mountain places**
+- Stara Planina / Babin Zub;
+- Tornik / Zlatibor.
+
+Both use Ski Resorts of Serbia official webcam pages with refreshed resort images. ERN treats them conservatively as `LIVE_IMAGE` + `LINK_ONLY` + Search/Explore-only.
+
+**Barbados — 4 official public beach-camera places**
+- Worthing Beach;
+- Dover Beach;
+- Accra Beach;
+- Folkestone Marine Park.
+
+All four use the National Conservation Commission Barbados current beach-camera directory operated through IWCP. NCC states its network includes 25 live cameras across 12 locations. The same source also states re-use/re-streaming requires permission, so ERN keeps all four as external `LINK_ONLY` sources and does not embed/rebroadcast them into Watch Earth.
+
+#### Destination/business expansion
+Commercial opportunity registry advanced from **312 to 317 records**.
+
+New destination/business bridges:
+- High Tatras → one regional Viator path serving all four Slovak mountain places;
+- Stara Planina → Viator, exact useful owner-side path required;
+- Zlatibor / Tornik → Viator;
+- BikesBooking → Madeira/Funchal local-mobility candidate;
+- BikesBooking → Rome bicycle/local-mobility candidate.
+
+The existing Barbados Viator opportunity was deliberately expanded to serve Paynes Bay plus the four new NCC beach places rather than creating one commercial record per beach.
+
+All new records remain `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`. No tracked URL, approval, price, inventory or availability was invented.
+
+#### Travelpayouts program diversification
+The program-level utility research layer expanded from **11 to 18** records. Seven previously unexplored/explicitly deferred owner-available programs now have defined reserve/fallback roles:
+- Economybookings — car-rental coverage gaps;
+- GetRentacar — road-trip coverage gaps;
+- Saily — eSIM fallback;
+- Yesim — eSIM fallback / owner-side coverage comparison;
+- GigSky — specialized connectivity fallback;
+- Drimsim — specialized connectivity fallback;
+- Compensair — post-flight-disruption fallback behind AirHelp.
+
+These are **research/routing records, not public placements**. ERN still follows one-useful-option-per-need by default. More available affiliate programs should not produce more buttons unless they solve a real visitor problem.
+
+Two new utility-routing clusters were added:
+- Caribbean island local mobility → BikesBooking / Localrent / QEEQ candidates, exact destination inventory required;
+- Atlantic-island car-rental reserve → Economybookings / GetRentacar / AutoEurope / QEEQ, used only after owner-side coverage comparison.
+
+BikesBooking moved beyond generic research into two destination-specific opportunity records only because current public BikesBooking inventory was found for Madeira/Funchal and Rome. Exact ERN tracked links remain owner-gated.
+
+#### Searchable-source health and repair handling
+Operations **1408 SUCCESS** after the Slovakia/Serbia source expansion:
+- eligible searchable sources: **536**;
+- eligible unique URLs: **409**;
+- rotating cohort: **80 sources / 57 URLs**;
+- reachable: **74**;
+- missing: **0**;
+- blocked: **4**;
+- temporary/network: **2**;
+- recovered: **2**;
+- repair: **2**;
+- review: **4**;
+- watch: **0**.
+
+Operations **1409 SUCCESS** after the Barbados expansion:
+- eligible searchable sources: **540**;
+- eligible unique URLs: **410**;
+- cohort: **84 sources / 58 URLs**;
+- reachable: **76**;
+- missing: **0**;
+- blocked: **4**;
+- temporary/network: **4**;
+- repair: **4**;
+- review: **4**;
+- watch: **0**.
+
+Guernsey Harbour Entrance and Guernsey Havelet Bay / Castle Cornet naturally escalated into REPAIR after repeated automated network failures. Both were independently investigated against Guernsey Yacht Club's official webcam page, which remains active and explicitly states its webcams automatically refresh every 10 seconds. Therefore both sources remain HEALTHY/current in source truth; no deletion, replacement or downgrade was justified. Durable provider observations and maintenance records were added.
+
+The maintenance registry also corrected an old Balykchy maintenance ID from stale `balykchy-entry` to canonical source ID `balykchy-north-entry`, without changing place identity, source truth or health.
+
+Operations **1410** failed closed during daily packet construction because a broad set of external availability probes simultaneously returned transient `TypeError` / `AbortError` failures. Packet-integrity therefore failed as designed. This was not treated as catalog/source-truth evidence and caused no automatic mutation. The last clean source-health result remains Operations 1409; Guernsey was independently verified separately as described above.
+
+#### Release validation
+Pages **2612 SUCCESS** after the Barbados/commercial consolidation and Pages **2614 SUCCESS** after the Guernsey provider-observation update.
+
+Pages 2614 validation:
+- all **112 current ERN release smoke tests passed**;
+- lean core: **573649 bytes**;
+- hard lean-core ceiling remains exactly **575000 bytes**;
+- Supplemental Search integrity passed with **212** records;
+- deployment completed successfully with reported `errors: []`.
+
+The final maintenance-record-only commit followed the validated provider-observation release and does not alter public catalog/source content.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- all new LINK_ONLY / external views stay Search/Explore-only;
+- IMAGE_REFRESH / Current Image renewal remains natural-schedule only; no manual trigger;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no automatic Travelpayouts public placement or link rewriting;
+- no paid ranking;
+- commercial value never affects Earth ranking, source truth, health or currentness.
