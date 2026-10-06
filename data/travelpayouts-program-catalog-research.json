@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-06T05:55:00Z",
+  "publicActivationAllowed": false,
+  "purpose": "Track promising Travelpayouts catalog programs separately from ERN-approved/unlocked programs so platform availability is never confused with owner-project access.",
+  "evidenceBasis": [
+    "Official Travelpayouts Help Center: platform includes flights, hotels/accommodation, transfers, tours, insurance, car rentals and other travel services.",
+    "Official Travelpayouts documentation: Projects are automatically connected only to relevant programs; some are instant, some require review, and some may remain unavailable.",
+    "Official Travelpayouts brand directory / program pages reviewed 2026-10-06."
+  ],
+  "hardRules": [
+    "PROGRAM_CATALOG_PRESENCE_IS_NOT_ERN_APPROVAL",
+    "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+    "EXACT_DESTINATION_OR_PRODUCT_LINK_REQUIRED",
+    "TRACKED_LINK_GENERATION_AND_MANUAL_VERIFICATION_REQUIRED",
+    "DISCLOSURE_REQUIRED",
+    "NO_AUTOMATIC_PLACEMENT_OR_LINK_REWRITING",
+    "COMMERCIAL_VALUE_CANNOT_AFFECT_EARTH_RANKING"
+  ],
+  "categories": {
+    "accommodation": [
+      {
+        "id": "booking-com",
+        "brand": "Booking.com",
+        "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+        "why": "Broad global accommodation coverage; potentially useful after a visitor chooses a destination.",
+        "officialEvidence": "Travelpayouts accommodation catalog currently lists Booking.com with hotel and other travel products.",
+        "placementRule": "One accommodation action per destination context by default; never compete with Earth discovery."
+      },
+      {
+        "id": "hotels-com",
+        "brand": "Hotels.com",
+        "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+        "why": "Global lodging inventory with a Travelpayouts program page and link-generation workflow.",
+        "officialEvidence": "Travelpayouts currently exposes a Hotels.com Partner Program for accommodations.",
+        "placementRule": "Use only if owner project access exists and destination deep-linking is clean; suppress if another lodging partner is clearly better."
+      },
+      {
+        "id": "trip-com",
+        "brand": "Trip.com",
+        "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+        "why": "Potentially useful multi-vertical option for hotels, flights, trains, attractions and transfers.",
+        "officialEvidence": "Travelpayouts official 2026 reward documentation lists Trip.com hotel, flight, train, attraction, experience, transfer and car-rental categories.",
+        "placementRule": "Use only for a distinct visitor need; avoid duplicating separate stronger programs."
+      },
+      {
+        "id": "agoda",
+        "brand": "Agoda",
+        "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+        "why": "Strong lodging candidate, especially in Asia, if ERN project access is available.",
+        "officialEvidence": "Travelpayouts official 2026 reward documentation lists Agoda.",
+        "placementRule": "Accommodation only after destination choice; exact owner-side availability and link required."
+      },
+      {
+        "id": "expedia",
+        "brand": "Expedia",
+        "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+        "why": "Broad travel inventory can fill accommodation/package gaps if owner access exists.",
+        "officialEvidence": "Travelpayouts official 2026 reward documentation lists Expedia.",
+        "placementRule": "Prefer destination-specific deep links and avoid generic homepage actions."
+      },
+      {
+        "id": "rakuten-travel",
+        "brand": "Rakuten Travel",
+        "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+        "why": "Potentially strong Japan lodging/car-rental utility.",
+        "officialEvidence": "Travelpayouts official 2026 reward documentation lists Rakuten Travel for Japan hotel and car-rental bookings.",
+        "placementRule": "Japan-focused use only where owner access and destination deep links are verified."
+      }
+    ],
+    "transport": [
+      {
+        "id": "12go",
+        "brand": "12Go",
+        "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+        "why": "Useful for trains, buses, ferries and regional transport, especially in Asia.",
+        "officialEvidence": "Travelpayouts official 2026 reward documentation lists 12Go.",
+        "placementRule": "Use only for explicit intercity/island transport planning after destination choice."
+      },
+      {
+        "id": "aviasales",
+        "brand": "Aviasales",
+        "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+        "why": "Flight-search alternative for remote destinations and trip-planning contexts.",
+        "officialEvidence": "Travelpayouts platform documentation uses Aviasales as a supported program example.",
+        "placementRule": "One flight-search action per trip-planning context; never on camera cards."
+      }
+    ],
+    "activities": [
+      {
+        "id": "getyourguide",
+        "brand": "GetYourGuide",
+        "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+        "why": "Potential complement where Klook/Viator inventory is weak or materially different.",
+        "officialEvidence": "Travelpayouts official 2026 reward documentation lists GetYourGuide.",
+        "placementRule": "Do not duplicate an existing stronger activity action without clear incremental visitor value."
+      }
+    ]
+  },
+  "nextOwnerResearch": [
+    "In Travelpayouts Earthrightnow Project > My Programs, check whether Booking.com, Hotels.com, Trip.com, Agoda, Expedia, Rakuten Travel, 12Go, Aviasales and GetYourGuide are Available, Under Review or Unavailable.",
+    "For any available program, test one representative ERN destination deep link before creating public placement.",
+    "Record exact owner-side status and only then graduate a program into travelpayouts-unlocked-programs.json."
+  ]
+}
