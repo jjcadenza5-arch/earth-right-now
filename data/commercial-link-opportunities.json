@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T03:40:00Z",
+  "generatedAt": "2026-10-06T03:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1847,15 +1847,16 @@
       "id": "viator-meads-bay",
       "destination": "Meads Bay / Anguilla",
       "placeIds": [
-        "meads-bay-anguilla"
+        "meads-bay-anguilla",
+        "anguilla-sandy-ground"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN has a healthy Meads Bay view and Viator currently exposes dedicated Meads Bay / Anguilla tours and tickets.",
+      "reason": "ERN now has healthy live views for Meads Bay and Sandy Ground, and Viator has Anguilla sailing, sightseeing and beach inventory including experiences departing from Sandy Ground. One Anguilla-level bridge should serve both.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Anguilla-attractions/Meads-Bay/d810-a24644",
-      "publicInventoryEvidence": "Viator currently lists dedicated Meads Bay inventory including Anguilla boat, beach and snorkeling experiences.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Anguilla/d810-ttd",
+      "publicInventoryEvidence": "Current Viator Anguilla inventory includes sailing and island experiences, with multiple products meeting or departing at Sandy Ground.",
       "nextAction": "Generate one Meads Bay/Anguilla Viator partner link and manually verify it before public activation."
     },
     {
@@ -4061,15 +4062,16 @@
       "id": "viator-turks-caicos-grace-bay",
       "destination": "Grace Bay / Providenciales, Turks and Caicos",
       "placeIds": [
-        "tci-grace-bay"
+        "tci-grace-bay",
+        "tci-long-bay"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a first-party Grace Bay live view and Viator has strong Providenciales/Grace Bay marine and island inventory.",
+      "reason": "ERN has healthy current views for Grace Bay and Long Bay on Providenciales, while Viator has deep Providenciales/Turks & Caicos water, island and beach inventory. One Providenciales-level bridge should serve both rather than duplicating commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Providenciales/All-Day-Adventure-with-a-Beach-BBQ-Feast-from-Providenciales/d969-370693P3",
-      "publicInventoryEvidence": "Current Viator inventory includes Grace Bay cruises, snorkeling and island activities.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Providenciales/d969-ttd",
+      "publicInventoryEvidence": "Current Viator Providenciales inventory has 300+ results including snorkeling, sailing, kayaking and tours that visit Long Bay Beach.",
       "nextAction": "Generate one owner-side Providenciales/Grace Bay destination-level tracked link and manually verify it before public activation."
     },
     {
@@ -5120,6 +5122,21 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/hotels/detail/491623-hotel-listel-inawashiro-wing-tower/",
       "publicInventoryEvidence": "Klook currently exposes bookable accommodation inventory near Inawashiro and the ski area.",
       "nextAction": "Confirm in the owner Travelpayouts/Klook tools whether hotel deep-link attribution is supported for ERN before creating any public stay link. If not, keep dormant."
+    },
+    {
+      "id": "viator-bonaire",
+      "destination": "Bonaire / Lac Bay",
+      "placeIds": [
+        "bonaire-sorobon-lac-bay"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party live Sorobon/Lac Bay view, and Viator currently has 100+ Bonaire tours spanning snorkeling, mangroves, island sightseeing, water sports and beach experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Bonaire/d4308-ttd",
+      "publicInventoryEvidence": "Current Viator Bonaire inventory includes snorkeling, Lac Bay mangrove kayaking, island tours and products that visit Sorobon Beach.",
+      "nextAction": "Generate one owner-side Bonaire destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
