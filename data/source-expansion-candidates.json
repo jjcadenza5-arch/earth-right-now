@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T01:05:00Z",
+  "generatedAt": "2026-10-06T01:20:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -2428,9 +2428,13 @@
       "evidence": "PHIVOLCS VOLCAN publishes Kanlaon IP-camera snapshots sampled every minute from multiple observation stations.",
       "researchEvidence": "Official Philippine government real-time monitoring data; use LIVE_IMAGE/Search-Explore semantics only.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:50:00Z",
-      "verification": "Official one-minute current-image monitoring semantics verified."
+      "verification": "Official one-minute current-image monitoring semantics verified.",
+      "canonicalSourceId": "kanlaon-phivolcs-current-image",
+      "canonicalPlaceId": "kanlaon-volcano",
+      "supersededAt": "2026-10-06T01:20:00Z",
+      "supersessionNote": "Duplicate Search/Explore record used the same PHIVOLCS target and title as the existing canonical core source. Removed supplemental duplicate; retained this research record for provenance."
     },
     {
       "id": "hawaii-mauna-loa-usgs",
