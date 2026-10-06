@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T05:30:00Z",
+  "generatedAt": "2026-10-06T05:45:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -6513,6 +6513,34 @@
       "verifiedAt": "2026-10-06T05:30:00Z",
       "promotedAt": "2026-10-06T05:30:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "kenya-porini-rhino-waterhole-live",
+      "title": "Ol Pejeta — Porini Rhino Camp Waterhole",
+      "country": "Kenya",
+      "region": "Ol Pejeta Conservancy / Laikipia",
+      "provider": "Gamewatchers Safaris / Porini Camps",
+      "sourcePage": "https://www.porini.com/blog/",
+      "priority": "P1_WILDLIFE_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Porini's current 2026 blog explicitly announces a 24/7 live wildlife camera at Porini Rhino Camp; August 2026 industry coverage describes the stream as real-time and unedited.",
+      "verifiedAt": "2026-10-06T05:45:00Z",
+      "promotedAt": "2026-10-06T05:45:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "zambia-shenton-mwamba-live-webcams",
+      "title": "South Luangwa — Mwamba / Kaingo Live Wildlife Cams",
+      "country": "Zambia",
+      "region": "South Luangwa National Park",
+      "provider": "Shenton Safaris",
+      "sourcePage": "https://www.shentonsafaris.com/",
+      "priority": "P1_NEW_COUNTRY_RESEARCH",
+      "state": "EXACT_CURRENT_WEBCAM_ROUTE_VERIFICATION_REQUIRED",
+      "evidence": "Shenton Safaris states it launched Zambia's first live-streaming webcams at its Hippo and Mwamba Last Waterhole hides and current site/blog material still refers to the camps and waterhole wildlife; exact durable current public webcam route is not yet resolved.",
+      "verifiedAt": "2026-10-06T05:45:00Z",
+      "verification": "Research-only. Do not promote until an exact current public live route is resolved and current playback/freshness is independently verified.",
+      "nextAction": "Resolve the current Shenton Safaris live-webcam route for Mwamba Last Waterhole and/or Hippo Hide, then promote one or two distinct South Luangwa places only if the feeds are currently live."
     }
   ],
   "notes": [
