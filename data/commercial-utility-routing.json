@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T13:18:17Z",
+  "generatedAt": "2026-10-06T13:42:45Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1639,6 +1639,38 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_COUNTRY_COVERAGE_AND_EXACT_TRACKED_LINK_REQUIRED",
       "rule": "One verified transfer or rental action per North Macedonia mountain context; never infer winter equipment or road conditions."
+    },
+    {
+      "id": "malta-valletta-planning",
+      "intent": "multi-utility",
+      "preferredProgramCandidates": [
+        "tiqets",
+        "viator",
+        "kiwitaxi",
+        "airalo"
+      ],
+      "placeIds": [
+        "malta-valletta-panorama"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_DESTINATION_OR_ROUTE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After Valletta is chosen, expose at most one activity, one relevant airport-transfer action and one connectivity action. Commercial availability never affects Earth ranking."
+    },
+    {
+      "id": "southern-kyrgyzstan-discovery-access",
+      "intent": "transport-research",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "qeeq",
+        "viator"
+      ],
+      "placeIds": [
+        "kyrgyz-razzakov-center",
+        "kyrgyz-batken-city",
+        "kyrgyz-talas-center",
+        "kyrgyz-kyzyl-kiya"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_ROUTE_OR_DESTINATION_COVERAGE_REQUIRED",
+      "rule": "Research only. Southern/western Kyrgyzstan access is geographically sparse; do not infer transfer, rental or tour coverage from national-level inventory. Leave dormant unless an exact useful route exists."
     }
   ],
   "islandTravelClusters": [

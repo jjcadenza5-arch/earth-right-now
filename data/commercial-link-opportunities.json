@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T13:25:47Z",
+  "generatedAt": "2026-10-06T13:42:45Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -437,18 +437,18 @@
     },
     {
       "id": "tiqets-malta-future",
-      "destination": "Malta / Valletta",
+      "destination": "Valletta / Malta",
       "placeIds": [
-        "malta-live-cams"
+        "malta-valletta-panorama"
       ],
       "partnerCandidate": "tiqets",
-      "intent": "culture",
+      "intent": "activities",
       "priority": "P1",
-      "reason": "VisitMalta's official live-camera candidate can naturally lead to Malta sightseeing; Tiqets currently offers Malta/Valletta sightseeing products including hop-on-hop-off + harbour cruise.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "reason": "Tiqets currently has a Valletta destination page and current walking-tour / city-access inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/valletta-attractions-c73787/",
-      "publicInventoryEvidence": "Current Tiqets inventory includes Malta sightseeing products spanning Valletta, waterfronts, Blue Grotto, Mdina, beaches and harbour travel.",
-      "nextAction": "After a specific Malta live camera is verified and promoted, scope the affiliate link to that destination or Malta-wide planning; do not attach a country-wide offer to an unverified generic camera family."
+      "publicInventoryEvidence": "Current Tiqets Valletta inventory includes walking tours, audio tours and Malta sightseeing products.",
+      "nextAction": "Generate one exact owner-side Valletta tracked link and verify attribution before activation."
     },
     {
       "id": "viator-dubrovnik-future",
@@ -7112,6 +7112,51 @@
       "reason": "ERN now has a verified Selinda wildlife live stream, but commercial inventory must be geographically exact before any activity link is exposed.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Search the owner-side Viator account for Selinda/Linyanti/nearby northern Botswana inventory; leave dormant if exact fit is weak."
+    },
+    {
+      "id": "viator-valletta-malta",
+      "destination": "Valletta / Malta",
+      "placeIds": [
+        "malta-valletta-panorama"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Viator currently has active Valletta walking tours and broader Malta inventory.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Malta/Valletta-City-Walking-Tour-with-St-Johns-Co-Cathedral/d4141-70054P14",
+      "publicInventoryEvidence": "Current Viator Valletta inventory includes a 2026 walking tour with St. John's Co-Cathedral and multiple other active Valletta experiences.",
+      "nextAction": "Generate one exact owner-side Valletta destination or activity link and manually verify it before public activation."
+    },
+    {
+      "id": "airalo-malta-connectivity",
+      "destination": "Malta connectivity utility",
+      "placeIds": [
+        "malta-valletta-panorama"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P1_UTILITY",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Airalo currently exposes Malta-specific eSIM inventory.",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/malta-esim",
+      "publicInventoryEvidence": "Current Airalo Malta page offers country-specific data packages.",
+      "nextAction": "Verify Airalo availability in the Earthrightnow owner project and generate one Malta tracked link only if available; keep connectivity post-discovery."
+    },
+    {
+      "id": "kiwitaxi-malta-valletta",
+      "destination": "Malta Airport / Valletta transfer",
+      "placeIds": [
+        "malta-valletta-panorama"
+      ],
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Kiwitaxi currently exposes an exact Malta Airport to Valletta Port route.",
+      "publicInventoryEvidenceUrl": "https://kiwitaxi.com/en/malta/valletta-airport-valletta-port",
+      "publicInventoryEvidence": "Current Kiwitaxi inventory exposes Malta Airport → Valletta Port transfer options.",
+      "nextAction": "Confirm owner-project availability and generate one exact tracked Malta Airport / Valletta route; never infer broader island transfer coverage."
     }
   ]
 }

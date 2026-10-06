@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T13:25:47Z",
+  "updatedAt": "2026-10-06T13:42:45Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -303,6 +303,30 @@
       "Mauna Loa Hawaiʻi",
       "Hawaiʻi Island",
       "Big Island Hawaii"
+    ],
+    "malta-valletta-panorama": [
+      "Valletta Malta",
+      "Il-Belt Valletta",
+      "Valletta city",
+      "La Valletta"
+    ],
+    "kyrgyz-razzakov-center": [
+      "Razzakov Kyrgyzstan",
+      "Раззаков",
+      "Isfana"
+    ],
+    "kyrgyz-batken-city": [
+      "Batken Kyrgyzstan",
+      "Баткен"
+    ],
+    "kyrgyz-talas-center": [
+      "Talas Kyrgyzstan",
+      "Талас"
+    ],
+    "kyrgyz-kyzyl-kiya": [
+      "Kyzyl-Kiya",
+      "Кызыл-Кыя",
+      "Kyzyl-Kiya Kyrgyzstan"
     ]
   }
 }

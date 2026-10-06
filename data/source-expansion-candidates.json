@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T13:25:47Z",
+  "generatedAt": "2026-10-06T13:42:45Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -473,14 +473,17 @@
       "region": "Maltese Islands",
       "provider": "VisitMalta",
       "sourcePage": "https://www.visitmalta.com/en/info/live-cams-in-malta",
-      "evidence": "VisitMalta's official tourism site exposes a Live Malta Cams section for checking destinations before travel.",
+      "evidence": "VisitMalta currently publishes Live Malta Cams and a Valletta panorama is currently live on the linked provider network.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
       "exactTargetUrl": "https://www2.visitmalta.com/en/info/live-cams-in-malta/",
       "exactTargetType": "OFFICIAL_TOURISM_LIVE_CAM_PAGE",
       "researchEvidence": "VisitMalta's official traveller-information page explicitly advertises Live Malta Cams as a way to inspect places before travel.",
       "humanCheckHint": "Open the official Live Malta Cams page and confirm at least one destination camera visibly updates before ERN promotes any specific Malta place.",
-      "webEvidenceConfirmedAt": "2026-10-03"
+      "webEvidenceConfirmedAt": "2026-10-03",
+      "verifiedAt": "2026-10-06T13:42:45Z",
+      "promotedAt": "2026-10-06T13:42:45Z",
+      "verification": "Resolved to Valletta live panorama; EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
     },
     {
       "id": "tallinn-tv-tower-panorama",
@@ -1254,14 +1257,17 @@
       "country": "Kyrgyzstan",
       "region": "Batken",
       "provider": "ElCat / kg.camera",
-      "sourcePage": "https://www.kg.camera/en/",
+      "sourcePage": "https://kg.camera/en/camera/sulukta",
       "exactTargetUrl": "https://www.kg.camera/en/",
       "exactTargetType": "PUBLIC_CAMERA_INDEX",
-      "evidence": "kg.camera lists a panorama of Batken city in southern Kyrgyzstan.",
+      "evidence": "kg.camera currently exposes the Batken city panorama within its active near-live network.",
       "researchEvidence": "Batken gives ERN broader southern Kyrgyz/Pamir-Alay geographic coverage, but it is not presented as a camera inside the Pamir core.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Use the kg.camera list and open Batken city panorama; confirm it updates before promotion."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Use the kg.camera list and open Batken city panorama; confirm it updates before promotion.",
+      "verifiedAt": "2026-10-06T13:42:45Z",
+      "promotedAt": "2026-10-06T13:42:45Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
     },
     {
       "id": "gudauri-ski-area",
@@ -1336,14 +1342,17 @@
       "country": "Kyrgyzstan",
       "region": "Batken",
       "provider": "ElCat / kg.camera",
-      "sourcePage": "https://kg.camera/en",
+      "sourcePage": "https://kg.camera/en/camera/Razzakov-Center",
       "exactTargetUrl": "https://kg.camera/en",
       "exactTargetType": "LIVE_CAMERA_INDEX",
-      "evidence": "kg.camera lists a live camera in central Razzakov at the main roundabout.",
+      "evidence": "kg.camera currently exposes the Razzakov center camera and states its video is near-live with about a 20-second delay and no archive.",
       "researchEvidence": "Regional context for southwest Kyrgyzstan near the Pamir-Alai sphere; not core Pamir.",
       "priority": "P3",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open kg.camera and choose Razzakov city center."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open kg.camera and choose Razzakov city center.",
+      "verifiedAt": "2026-10-06T13:42:45Z",
+      "promotedAt": "2026-10-06T13:42:45Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
     },
     {
       "id": "ala-archa-park",
@@ -6995,6 +7004,34 @@
       "verifiedAt": "2026-10-06T13:18:17Z",
       "promotedAt": "2026-10-06T13:18:17Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "kyrgyz-talas-center-live",
+      "title": "Talas — Central Square",
+      "country": "Kyrgyzstan",
+      "region": "Talas Region",
+      "provider": "ElCat / kg.camera",
+      "sourcePage": "https://www.kg.camera/en/camera/Talas-Center",
+      "priority": "P2_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "kg.camera currently exposes the Talas center camera and states the feed runs with about a 20-second delay and no archive.",
+      "verifiedAt": "2026-10-06T13:42:45Z",
+      "promotedAt": "2026-10-06T13:42:45Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "kyrgyz-kyzyl-kiya-live",
+      "title": "Kyzyl-Kiya — Kulatov Street",
+      "country": "Kyrgyzstan",
+      "region": "Batken Region",
+      "provider": "ElCat / kg.camera",
+      "sourcePage": "https://kg.camera/en/camera/Kyzyl-Kiya",
+      "priority": "P2_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "kg.camera currently exposes the Kyzyl-Kiya city camera and states the feed runs with about a 20-second delay and no archive.",
+      "verifiedAt": "2026-10-06T13:42:45Z",
+      "promotedAt": "2026-10-06T13:42:45Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
     }
   ],
   "notes": [
