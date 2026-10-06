@@ -4602,3 +4602,108 @@ Operations **1430 completed SUCCESS** after the repair-evidence commit; no manua
 - no automatic Travelpayouts public placement or link rewriting;
 - no paid ranking;
 - commercial value never affects Earth ranking, source truth, health or currentness.
+
+
+### Indian Ocean + Central America + Falklands + Belgium/Oman/Bosnia + Travelpayouts utility expansion — 2026-10-06
+This continuation follows the owner's preferred large-batch mode: expand truthful Search/Explore coverage and useful downstream business coverage together, while deliberately researching Travelpayouts beyond tours/activities without treating public catalog presence as owner-project approval.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **578 to 586 places** (**591 healthy source records** total).
+- lazy supplemental Search/Explore catalog: **267 rows** under the existing 500-row bounded capacity;
+- core first-load catalog remains unchanged/lean;
+- all new records remain external / LINK_ONLY with Featured/Watch hold and cannot fill Watch Earth.
+
+Eight healthy searchable places were added:
+
+**Seychelles — 2 additional Mahé views**
+- Mahé — Quincy Village / Chez Lorna, first-party property camera with live/current corroboration;
+- Anse Parnel — Mahé, current live beach view attributed to Surfers Beach Chalets / SkylineWebcams.
+
+The existing Mahé/Seychelles Viator research bridge was expanded to serve Beau Vallon, Quincy Village and Anse Parnel rather than creating one affiliate action per camera.
+
+**Honduras — Roatán diversification**
+- Roatán — West End, first-party Roatan Divers Live Webcam showing day-to-day operations in real time.
+
+The existing Roatán Viator opportunity now serves both West Bay and West End.
+
+**Tanzania / Zanzibar — second island view**
+- Kiwengwa — Zanzibar, first-party Duotone Pro Center Zanzibar / Mvuvi Boutique Resort LIVE WEBCAM.
+
+The existing Zanzibar Viator bridge now serves Paje and Kiwengwa at island level instead of duplicating activity buttons.
+
+**Falkland Islands — first ERN Falklands place**
+- Stanley — Jetty Visitor Centre, based on the official Falkland Islands Tourist Board statement that a webcam looks out from the front of the Stanley Tourist Information Centre, with current public-camera corroboration for Stanley Public Jetty.
+
+A Kiwi.com flight-planning research path was added because Falklands access is flight-dependent, but it remains ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED and must not imply direct routes that do not exist.
+
+**Belgium — geographic strengthening**
+- Wirtzfeld — Belgian Ardennes, using Wirtzfeld.be's local destination network. The provider currently labels five village/valley cameras Live and states the images refresh every five minutes.
+
+**Oman — second ERN Oman place**
+- Salalah — Fanar Hotel & Marina, using a live-camera page explicitly hosted/attributed to Fanar Hotel & Residences and described as live 24/7.
+
+A Salalah/Dhofar Viator opportunity was added because current Viator Salalah inventory contains 100+ tours across nature, Khareef, Wadi Darbat, desert, history and coastal experiences. It remains owner exact-link gated.
+
+**Bosnia and Herzegovina — second official Olympic-mountain place**
+- Bjelašnica — Olympic Mountain, using the official OC Bjelašnica-Igman / ZOI84 live-camera surface. The official page currently exposes three live transmissions including Babin Do and the lift middle station.
+
+The existing Sarajevo Olympic Mountains business bridge was expanded to cover both Jahorina and Bjelašnica rather than creating duplicated regional affiliate density.
+
+#### Travelpayouts diversification
+Commercial opportunity registry is now **359 records**. New/expanded business work in this batch emphasized consolidation and distinct visitor utility rather than raw count.
+
+Travelpayouts utility research advanced to **29 program-level opportunities**.
+
+New research layers:
+- **12Go → Zanzibar ferry/regional transport research**, owner-project availability required. This is a genuine Get There / Move There need, distinct from tours and airport transfers.
+- **Booking.com → island stay research** for Seychelles, Roatán and Zanzibar, owner-project availability required.
+- **Booking.com → European mountain/ski stay research**, owner-project availability required.
+- **Omio → European intercity rail/bus/ferry/flight comparison research**, current owner-project availability/catalog recheck required.
+- **VisitorsCoverage / Insubuy → optional travel-medical-insurance research**, current owner-project availability/catalog recheck required and never fear-based.
+
+The Travelpayouts program-catalog research registry now explicitly includes Omio plus VisitorsCoverage and Insubuy as research-only candidates. Official Travelpayouts documentation continues to support the broader transport/accommodation/insurance model, but ERN's rule remains stricter: public catalog documentation is not owner approval.
+
+Routing safeguards were expanded:
+- one stay action per destination cluster by default;
+- one intercity transport-comparison action per route context;
+- one insurance option at most after owner-side comparison;
+- insurance is optional planning/help only, never required or fear-based;
+- no automatic program placement or link rewriting.
+
+#### Health + release validation
+Operations **1431 SUCCESS** after the first five-source island batch.
+
+Operations **1432 SUCCESS** after the Belgium/Oman/Bosnia source expansion.
+Latest searchable-source health:
+- eligible searchable sources: **595**;
+- eligible unique URLs: **451**;
+- rotating cohort: **90 sources / 64 unique URLs**;
+- reachable: **81**;
+- missing: **0**;
+- access-blocked: **4**;
+- temporary/network: **5**;
+- recovered: **2**;
+- repair: **4**;
+- review: **4**;
+- watch: **1**.
+
+REPAIR remains Balykchy, Águas de Lindóia, Kanlaon and Yellowstone Lake. Each has already been separately investigated/provider-supported in earlier work, so automated failures still do not justify source deletion or truth mutation. REVIEW remains access-pattern-only. The sole new WATCH is Bergen — Ulriken Mountain after one timeout following a reachable observation; it must recheck naturally and is not treated as broken.
+
+Pages **2645 SUCCESS** validated the first island/commercial state. Pages **2647 SUCCESS** validated the final public source/commercial state:
+- all **112 current ERN release smoke tests passed**;
+- Supplemental Search integrity passed at **267 records**;
+- hard lean-core budget remains exactly **575000 bytes**;
+- deployment completed with reported `errors: []`.
+
+The later Travelpayouts catalog/utility research commits are non-public research/routing metadata and do not alter Earth ranking or source truth.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- all LINK_ONLY / external additions remain Search/Explore-only;
+- IMAGE_REFRESH / Current Image renewal remains natural-schedule only;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no automatic Travelpayouts placement or link rewriting;
+- no paid ranking;
+- commercial value never affects Earth ranking, source truth, health or currentness.
