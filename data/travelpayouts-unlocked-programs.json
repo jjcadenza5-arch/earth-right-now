@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T10:30:00Z",
+  "generatedAt": "2026-10-06T01:35:00Z",
   "evidenceBasis": "Owner screenshots from Travelpayouts Earthrightnow project showing Generate links controls.",
   "rule": "A Generate links control confirms account-side link generation is available. It does not authorize automatic public placement; ERN still requires utility review, exact-link verification and disclosure.",
   "currentCorePartners": [
@@ -13,42 +13,48 @@
     "nextBest": [
       {
         "id": "airalo",
-        "why": "Global eSIM utility can serve many ERN destinations with low destination-specific maintenance."
+        "why": "Global eSIM utility; low-maintenance if country coverage and exact tracked link are verified."
       },
       {
         "id": "radical-storage",
-        "why": "Luggage storage is highly complementary to city discovery and can be destination-agnostic."
-      },
-      {
-        "id": "go-city",
-        "why": "City-pass utility fits major city destinations and can complement Tiqets/Viator without replacing them."
+        "why": "Strong city-arrival/departure utility for walkable cities and transport hubs."
       },
       {
         "id": "kiwitaxi",
-        "why": "Transfer coverage can broaden transport beyond Welcome Pickups where destination coverage differs."
+        "why": "Airport/resort transfer utility where exact route coverage exists."
       },
       {
-        "id": "aviasales",
-        "why": "Flight-search utility can support trip planning at a global level without affecting camera ranking."
+        "id": "localrent",
+        "why": "Useful in islands and independent-driving destinations if destination coverage is confirmed."
       },
       {
-        "id": "saily",
-        "why": "Global eSIM alternative; keep only if materially useful versus Airalo/GigSky/Yesim to avoid clutter."
+        "id": "qeeq",
+        "why": "Broad car-rental candidate for road-trip destinations; use only as one selected rental option."
+      },
+      {
+        "id": "kiwi-com",
+        "why": "Flight-planning layer for remote destinations; never a camera-ranking driver."
+      },
+      {
+        "id": "kkday",
+        "why": "Strong Asia activities/transport complement where inventory materially differs from existing partners."
+      },
+      {
+        "id": "go-city",
+        "why": "City-pass utility for supported major cities."
       }
     ],
     "usefulLater": [
+      "saily",
       "gigsky",
       "yesim",
-      "localrent",
-      "qeeq",
       "autoeurope",
       "economybookings",
       "getrentacar",
       "bikesbooking",
-      "kiwi-com",
+      "aviasales",
       "intui-travel",
       "gettransfer",
-      "kkday",
       "wegotrip",
       "ekta",
       "airhelp",
