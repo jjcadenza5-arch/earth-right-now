@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T04:45:00Z",
-  "healthyDistinctBaseline": 550,
+  "generatedAt": "2026-10-06T05:45:00Z",
+  "healthyDistinctBaseline": 562,
   "strategy": "Post-250 maintenance: repair or replace degraded sources only when they add unique visitor value; do not inflate count mechanically.",
   "items": [
     {
@@ -99,9 +99,9 @@
       "country": "Guernsey",
       "health": "HEALTHY",
       "truth": "LIVE_IMAGE",
-      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_OFFICIAL_10_SECOND_REFRESH_WEBCAM_PAGE_CONFIRMED_ACTIVE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_FIRST_PARTY_WEBCAM_PAGE_INDEPENDENTLY_CONFIRMED_ACTIVE",
       "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
-      "blocks531Baseline": false
+      "blocks562Baseline": false
     },
     {
       "id": "guernsey-havelet-bay-live",
@@ -110,9 +110,9 @@
       "country": "Guernsey",
       "health": "HEALTHY",
       "truth": "LIVE_IMAGE",
-      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_OFFICIAL_10_SECOND_REFRESH_WEBCAM_PAGE_CONFIRMED_ACTIVE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_FIRST_PARTY_WEBCAM_PAGE_INDEPENDENTLY_CONFIRMED_ACTIVE",
       "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
-      "blocks531Baseline": false
+      "blocks562Baseline": false
     },
     {
       "id": "brazil-aguas-lindoia-live",
@@ -121,9 +121,9 @@
       "country": "Brazil",
       "health": "HEALTHY",
       "truth": "EXTERNAL_LIVE",
-      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_OFFICIAL_PROVIDER_PAGE_INDEPENDENTLY_CONFIRMED_ACTIVE_AND_LIVE_LABELED",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_OFFICIAL_PROVIDER_PAGE_INDEPENDENTLY_CONFIRMED_ACTIVE",
       "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
-      "blocks550Baseline": false
+      "blocks562Baseline": false
     }
   ]
 }
