@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T04:20:00Z",
+  "generatedAt": "2026-10-06T04:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -124,7 +124,9 @@
       "id": "klook-singapore",
       "destination": "Singapore",
       "placeIds": [
-        "singapore-port-area"
+        "singapore-port-area",
+        "singapore-sentosa-gateway",
+        "singapore-woodlands-causeway"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
@@ -3910,14 +3912,15 @@
     },
     {
       "id": "viator-grand-cayman-seven-mile",
-      "destination": "Grand Cayman / Seven Mile Beach",
+      "destination": "Grand Cayman",
       "placeIds": [
-        "cayman-seven-mile-beach"
+        "cayman-seven-mile-beach",
+        "cayman-george-town-port"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a strong first-party Seven Mile Beach live view, and Viator has current Grand Cayman/Seven Mile Beach shore, water and sightseeing inventory.",
+      "reason": "ERN now has current Grand Cayman discovery at Seven Mile Beach and George Town Port; one Grand Cayman Viator planning bridge should serve both without per-camera affiliate density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Seven-Mile-Beach/d50498-ttd",
       "publicInventoryEvidence": "Current Viator Seven Mile Beach inventory includes dozens of water, shore-excursion and island experiences.",
@@ -5318,6 +5321,49 @@
       "reason": "Remote destinations may benefit from explicit flight-planning support after discovery; exact search/destination links must be generated owner-side.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Confirm exact kiwi-com destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
+    },
+    {
+      "id": "kkday-singapore",
+      "destination": "Singapore activities",
+      "placeIds": [
+        "singapore-port-area",
+        "singapore-sentosa-gateway",
+        "singapore-woodlands-causeway"
+      ],
+      "partnerCandidate": "kkday",
+      "intent": "activities",
+      "priority": "P2_UTILITY",
+      "reason": "KKday is available for owner-side link generation and may complement existing Klook only where it provides meaningfully different Singapore inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search owner-side KKday Singapore inventory; generate and verify one destination-level link only if it adds visitor value beyond the existing verified Klook option."
+    },
+    {
+      "id": "go-city-singapore",
+      "destination": "Singapore city pass",
+      "placeIds": [
+        "singapore-port-area",
+        "singapore-sentosa-gateway"
+      ],
+      "partnerCandidate": "go-city",
+      "intent": "activities",
+      "priority": "P2_UTILITY",
+      "reason": "Go City is available in the Travelpayouts program set and may provide a useful multi-attraction planning action after Singapore discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm current Singapore Go City coverage in the owner account and generate one exact tracked city-pass link only if available; do not duplicate individual attraction links."
+    },
+    {
+      "id": "radical-storage-singapore",
+      "destination": "Singapore luggage storage",
+      "placeIds": [
+        "singapore-port-area",
+        "singapore-sentosa-gateway"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2_UTILITY",
+      "reason": "Luggage storage can be useful around cruise, airport and city arrival/departure windows after Singapore discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact Singapore city coverage in Radical Storage via the owner Travelpayouts project, generate one tracked city link and manually verify it before placement."
     }
   ]
 }
