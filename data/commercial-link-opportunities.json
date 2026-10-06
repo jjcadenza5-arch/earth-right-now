@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T01:35:00Z",
+  "generatedAt": "2026-10-06T01:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4715,6 +4715,25 @@
       "reason": "Airalo link generation is available in the owner Travelpayouts project. Connectivity may be useful after a visitor chooses a remote international destination, but must remain one optional Before You Go utility rather than a destination-card promotion.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Verify country/region eSIM coverage for each intended destination and generate one exact tracked utility link only where coverage is clear; suppress competing eSIM brands by default."
+    },
+    {
+      "id": "viator-north-macedonia-mountains",
+      "destination": "North Macedonia — Ohrid / Galičica / Mavrovo / Skopje",
+      "placeIds": [
+        "north-macedonia-mavrovo",
+        "north-macedonia-popova-sapka",
+        "north-macedonia-galicica",
+        "north-macedonia-pelister",
+        "north-macedonia-vodno"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has five live mountain/current-view destinations across North Macedonia. Current Viator inventory includes Galičica National Park activities and tours linking Skopje, Mavrovo and Ohrid, so one regional planning bridge is preferable to camera-level affiliate density.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Ohrid/d28588-ttd",
+      "publicInventoryEvidence": "Current Viator Ohrid/North Macedonia inventory includes Galičica activities and Skopje–Mavrovo–Ohrid touring.",
+      "nextAction": "Generate one useful owner-side North Macedonia/Ohrid destination-level tracked link and manually verify it. Do not imply every mountain camera is included in a tour itinerary."
     }
   ]
 }
