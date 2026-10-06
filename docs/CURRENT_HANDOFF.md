@@ -5184,3 +5184,37 @@ No tracked URL, transfer route, rental legality/terms, accommodation availabilit
 
 Protected invariants remain unchanged.
 
+### Southern Andes official-current + diversified travel-routing expansion — 2026-10-06
+Continued from canonical main `e6ff3bcefd36ad7b3e90d17b41915ba3c5f62238` in large-batch mode after reconciling all intervening Finland/Japan/Canada/Spain/Sri Lanka work.
+
+#### Search/Explore
+Added **5 official/current Southern Andes destinations**:
+- Las Leñas, Argentina;
+- Valle Nevado, Chile;
+- Nevados de Chillán, Chile;
+- El Colorado, Chile;
+- Portillo / Laguna del Inca, Chile.
+
+All use first-party resort live/current-camera surfaces and remain HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold.
+
+#### Commercial + Travelpayouts
+Added seven fit-first owner-link-gated opportunities:
+- Viator Valle Nevado / El Colorado / Farellones;
+- Viator Portillo / Laguna del Inca;
+- Klook Portillo / Laguna del Inca as an alternative active-program path;
+- QEEQ Chile Andes road-trip research;
+- Kiwitaxi Chile mountain-transfer research;
+- Airalo Chile connectivity;
+- Viator Las Leñas / Mendoza research, deliberately dormant if exact Las Leñas inventory is weak.
+
+Added three utility-routing clusters:
+- Chile Andes access;
+- Chile Andes connectivity;
+- South America mountain stay research.
+
+The stay lane remains project-access gated. Rental/transfer routes require exact route and terms. Connectivity defaults to one eSIM provider.
+
+Corralco and Chapelco remain exact-target research only; neither was promoted without a stable first-party camera route.
+
+Protected invariants remain unchanged: Watch Earth in-ERN only; external/link-only additions stay Search/Explore-only; Current Image renewal natural-schedule only; Guide/Now Moments OFF; no paid ranking, automatic social posting, automatic Travelpayouts placement or link rewriting; hard lean-core ceiling remains 575 KB.
+

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T11:35:00Z",
+  "generatedAt": "2026-10-06T11:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -6387,6 +6387,112 @@
       "publicInventoryEvidenceUrl": "https://www.airalo.com/sri-lanka-esim",
       "publicInventoryEvidence": "Airalo currently exposes Sri Lanka eSIM packages and network details.",
       "nextAction": "Generate one owner-side Sri Lanka tracked link if supported; retain one eSIM option per country by default."
+    },
+    {
+      "id": "viator-valle-nevado-el-colorado",
+      "destination": "Valle Nevado / El Colorado / Farellones, Chile",
+      "placeIds": [
+        "chile-valle-nevado",
+        "chile-el-colorado"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has official current views at Valle Nevado and El Colorado, and current Viator Santiago mountain inventory explicitly includes Valle Nevado, Farellones and El Colorado.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Santiago/Full-Day-The-Andes-Mountains-Tour-Valle-Nevado/d713-20268P7",
+      "publicInventoryEvidence": "Current Viator inventory includes Andes day trips that explicitly serve Valle Nevado and El Colorado/Farellones contexts.",
+      "nextAction": "Generate one owner-side Santiago Andes destination-level Viator tracked link and manually verify it; do not create separate buttons per resort unless exact visitor value differs."
+    },
+    {
+      "id": "viator-portillo-chile",
+      "destination": "Portillo / Laguna del Inca, Chile",
+      "placeIds": [
+        "chile-portillo"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has official live/current Portillo mountain views and current Viator inventory includes multiple Portillo/Laguna del Inca trips from Santiago.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Santiago/Portillo-bridge-of-the-Inca-and-mirador-del-aconcagua/d713-12646P121",
+      "publicInventoryEvidence": "Current Viator inventory includes Portillo/Laguna del Inca day trips and private excursions from Santiago.",
+      "nextAction": "Generate one owner-side Portillo destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-portillo-chile",
+      "destination": "Portillo / Laguna del Inca, Chile",
+      "placeIds": [
+        "chile-portillo"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Klook currently carries a Portillo & Laguna del Inca guided day trip from Santiago, giving ERN a distinct active-program alternative to Viator.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/198031-santiago-portillo-laguna-del-inca-full-day-guided-adventure/",
+      "publicInventoryEvidence": "Current Klook inventory includes a Portillo/Laguna del Inca full-day guided adventure from Santiago.",
+      "nextAction": "Generate one owner-side Portillo Klook tracked link only if it adds distinct visitor value; do not show both Klook and Viator by default."
+    },
+    {
+      "id": "qeeq-chile-andes-roadtrip",
+      "destination": "Chile Andes road-trip rental research",
+      "placeIds": [
+        "chile-valle-nevado",
+        "chile-el-colorado",
+        "chile-portillo",
+        "chile-nevados-chillan"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "QEEQ has Chile rental coverage. Independent driving can be useful for selected Andes destinations after route/road conditions are understood.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify one useful Santiago/Chillán pickup context owner-side and generate one exact tracked link only if current rental terms support the trip. Never imply chains, winter tires, border crossing or mountain-road suitability without exact terms."
+    },
+    {
+      "id": "kiwitaxi-chile-andes-transfers",
+      "destination": "Chile mountain arrival transfers",
+      "placeIds": [
+        "chile-valle-nevado",
+        "chile-el-colorado",
+        "chile-portillo"
+      ],
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "Transfer utility may be useful for Santiago-to-Andes trips, but exact resort route support must be confirmed before public use.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify exact airport/city-to-resort route support owner-side and generate one tracked link only for a real supported route."
+    },
+    {
+      "id": "airalo-chile-connectivity",
+      "destination": "Chile connectivity",
+      "placeIds": [
+        "chile-valle-nevado",
+        "chile-el-colorado",
+        "chile-portillo",
+        "chile-nevados-chillan"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Optional Chile eSIM connectivity can be useful after destination selection for international travelers.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify current Chile country coverage and generate one owner-side country-specific tracked link if useful; default to one eSIM provider."
+    },
+    {
+      "id": "viator-las-lenas-mendoza",
+      "destination": "Las Leñas / Mendoza Andes",
+      "placeIds": [
+        "argentina-las-lenas"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has a first-party Las Leñas live view. Mendoza remains an established Viator destination and mountain activity context, but exact Las Leñas fit must be verified owner-side.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search owner-side Viator inventory for Las Leñas/Malargüe/Mendoza mountain products. If no useful exact destination coverage exists, keep dormant rather than forcing a generic Mendoza link."
     }
   ]
 }

@@ -880,6 +880,24 @@
       "evidenceUrls": [
         "https://www.turismefgc.cat/en/actualitat/noticies/ferrocarrils-caser-test-with-ski-system-safety-slopes/"
       ]
+    },
+    {
+      "id": "chile-corralco-exact-camera",
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "Corralco's official resort is current and active, but this pass did not resolve a durable named public webcam target from the official site.",
+      "next": "Resolve a stable first-party current-camera route before Search/Explore promotion.",
+      "evidenceUrls": [
+        "https://corralco.com/"
+      ]
+    },
+    {
+      "id": "argentina-chapelco-exact-camera",
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "Chapelco remains a high-value Patagonia mountain target but no stable first-party webcam route was confirmed in this pass.",
+      "next": "Continue exact first-party webcam research; do not substitute third-party aggregator imagery.",
+      "evidenceUrls": [
+        "https://www.chapelco.com/"
+      ]
     }
   ],
   "guardrails": {

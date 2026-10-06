@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T11:35:00Z",
+  "generatedAt": "2026-10-06T11:10:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1202,6 +1202,57 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
       "rule": "Accommodation remains research-only until program access exists in the Earthrightnow project. One stay action per destination context by default."
+    },
+    {
+      "id": "chile-andes-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "qeeq",
+        "autoeurope"
+      ],
+      "placeIds": [
+        "chile-valle-nevado",
+        "chile-el-colorado",
+        "chile-portillo",
+        "chile-nevados-chillan"
+      ],
+      "activationGate": "EXACT_ROUTE_OR_PICKUP_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "Use one verified transfer or rental action appropriate to the chosen Andes destination. Never infer snow-chain, winter-tire, border-crossing or high-mountain suitability."
+    },
+    {
+      "id": "chile-andes-connectivity",
+      "intent": "connectivity",
+      "preferredProgramCandidates": [
+        "airalo",
+        "saily",
+        "yesim"
+      ],
+      "placeIds": [
+        "chile-valle-nevado",
+        "chile-el-colorado",
+        "chile-portillo",
+        "chile-nevados-chillan"
+      ],
+      "activationGate": "COUNTRY_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Optional connectivity after destination choice; one verified eSIM provider by default."
+    },
+    {
+      "id": "south-america-mountain-stay-research",
+      "intent": "stay",
+      "preferredProgramCandidates": [
+        "booking-com",
+        "trip-com",
+        "agoda"
+      ],
+      "placeIds": [
+        "argentina-las-lenas",
+        "chile-valle-nevado",
+        "chile-portillo",
+        "chile-nevados-chillan"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
+      "rule": "Research-only until the Earthrightnow project actually has access to a suitable stay program. One useful stay action per destination cluster by default."
     }
   ],
   "islandTravelClusters": [
