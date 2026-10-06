@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T02:35:00Z",
+  "generatedAt": "2026-10-06T02:45:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4994,6 +4994,39 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Belgrade/WESTERN-SERBIA-Zlatibor-Mountain-Day-Tour/d22817-44140P34",
       "publicInventoryEvidence": "Current Viator Zlatibor inventory includes mountain day trips and tours using the Gold Gondola toward Tornik.",
       "nextAction": "Generate one owner-side Zlatibor destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "bikesbooking-madeira",
+      "destination": "Madeira / Funchal",
+      "placeIds": [
+        "madeira-funchal",
+        "madeira-camara-de-lobos",
+        "madeira-ponta-do-sol",
+        "madeira-pico-do-areeiro"
+      ],
+      "partnerCandidate": "bikesbooking",
+      "intent": "transport",
+      "priority": "P2",
+      "reason": "ERN has strong official Madeira current-view coverage, and BikesBooking currently exposes bicycle, scooter and motorcycle rental inventory for Madeira/Funchal. This is a distinct local-mobility option, not a replacement for the existing car-rental path.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://bikesbooking.com/en/rent-a-scooter-in-Madeira/",
+      "publicInventoryEvidence": "BikesBooking currently exposes Madeira and Funchal bicycle/scooter/motorcycle rental inventory.",
+      "nextAction": "Generate and verify one owner-side Madeira/Funchal BikesBooking tracked link only if it adds useful local-mobility choice beyond the selected car-rental option."
+    },
+    {
+      "id": "bikesbooking-rome",
+      "destination": "Rome, Italy",
+      "placeIds": [
+        "rome-spanish-steps"
+      ],
+      "partnerCandidate": "bikesbooking",
+      "intent": "transport",
+      "priority": "P2",
+      "reason": "ERN has a healthy Rome city place and BikesBooking currently exposes Rome bicycle rental inventory. This can support a self-paced local-mobility context distinct from tours and attraction tickets.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://bikesbooking.com/en/rent-a-bicycle-in-Rome/",
+      "publicInventoryEvidence": "BikesBooking currently lists Rome bicycle rentals and related local-mobility inventory.",
+      "nextAction": "Generate one owner-side Rome BikesBooking tracked link and manually verify it before public activation; suppress it if the visitor is already shown a better transport action."
     }
   ]
 }
