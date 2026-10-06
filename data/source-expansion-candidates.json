@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T06:15:00Z",
+  "generatedAt": "2026-10-06T06:35:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -6807,6 +6807,48 @@
       "verifiedAt": "2026-10-06T06:15:00Z",
       "promotedAt": "2026-10-06T06:15:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "belgium-wirtzfeld-valley-live",
+      "title": "Wirtzfeld — Belgian Ardennes",
+      "country": "Belgium",
+      "region": "East Cantons / Belgian Ardennes",
+      "provider": "Wirtzfeld.be",
+      "sourcePage": "https://www.wirtzfeld.be/webcams/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Wirtzfeld.be currently labels five village/valley views Live and states images refresh every five minutes.",
+      "verifiedAt": "2026-10-06T06:35:00Z",
+      "promotedAt": "2026-10-06T06:35:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "oman-salalah-fanar-live",
+      "title": "Salalah — Fanar Hotel & Marina",
+      "country": "Oman",
+      "region": "Dhofar / Salalah",
+      "provider": "Fanar Hotel & Residences / IPLiveCams",
+      "sourcePage": "https://www.iplivecams.com/live-cams/fanar-hotel-residences-salalah-sultanate-oman/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current hosted page identifies Fanar Hotel & Residences as host and describes the Salalah stream as live 24 hours a day, seven days a week.",
+      "verifiedAt": "2026-10-06T06:35:00Z",
+      "promotedAt": "2026-10-06T06:35:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "bosnia-bjelasnica-babin-do-live",
+      "title": "Bjelašnica — Olympic Mountain",
+      "country": "Bosnia and Herzegovina",
+      "region": "Bjelašnica / Sarajevo Canton",
+      "provider": "OC Bjelašnica-Igman / ZOI84",
+      "sourcePage": "https://ocbjelasnica.com/web-kamere/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The official OC Bjelašnica webcam page currently exposes three live transmissions, including Babin Do and the six-seat lift middle station.",
+      "verifiedAt": "2026-10-06T06:35:00Z",
+      "promotedAt": "2026-10-06T06:35:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
