@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T04:35:00Z",
+  "generatedAt": "2026-10-06T05:35:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -469,7 +469,9 @@
         "rome-spanish-steps",
         "dublin-temple-bar",
         "chicago-lakefront",
-        "istanbul-sultanahmet"
+        "istanbul-sultanahmet",
+        "bangkok-sukhumvit-road",
+        "puerto-rico-isla-verde"
       ],
       "activationGate": "OWNER_CITY_COVERAGE_AND_EXACT_LINK_REQUIRED"
     },
@@ -628,6 +630,24 @@
       ],
       "activationGate": "EXACT_OWNER_LINK_AND_DISTINCT_VISITOR_VALUE_REQUIRED",
       "rule": "Keep the verified Klook bridge primary where useful; add KKday, Go City or Radical Storage only for a distinct visitor need. Never stack duplicate activity buttons or let utility availability affect Earth ranking."
+    },
+    {
+      "id": "caribbean-airport-road-trip",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "localrent",
+        "economybookings"
+      ],
+      "placeIds": [
+        "puerto-rico-isla-verde",
+        "puerto-rico-palomino-island",
+        "puerto-rico-fajardo-el-yunque-view",
+        "curacao-avila-beach",
+        "curacao-lionsdive-mambo-beach"
+      ],
+      "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Use one verified island car-rental option per context. Puerto Rico and Curaçao have current QEEQ airport inventory evidence, but public activation still requires the owner-side tracked link."
     }
   ]
 }
