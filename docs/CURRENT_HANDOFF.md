@@ -3955,3 +3955,103 @@ The final maintenance-record-only commit followed the validated provider-observa
 - no automatic Travelpayouts public placement or link rewriting;
 - no paid ranking;
 - commercial value never affects Earth ranking, source truth, health or currentness.
+
+
+### Balanced Search + Travelpayouts diversification batch — 2026-10-06
+Owner reaffirmed the operating model: continue expanding searchable Earth coverage and the business layer in substantial balanced batches, with Travelpayouts programs explored beyond tours/activities. Do not rush; do not return after only a few additions.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **531 to 542 places** (**547 healthy source records** total).
+
+This batch added **11 healthy Search/Explore places**:
+
+**Taiwan — official Tourism Administration East Coast live cameras**
+- Green Island — Fanchuanbi Grassland;
+- Dashibi Hill — Hualien East Coast;
+- Torik Park — Taitung East Coast.
+
+**Cyprus**
+- Troodos / Mount Olympus North Face — official Cyprus Ski Federation webcam.
+
+**South Korea**
+- YongPyong / Pyeongchang — official MONA YongPyong 24-hour real-time webcam network.
+
+**Japan**
+- Inawashiro Ski Resort — Fukushima;
+- Ishiuchi Maruyama — Niigata;
+- Togari Onsen Ski Resort — Nagano.
+
+**Caribbean diversification**
+- Long Bay Beach — Providenciales, Turks and Caicos, first-party Villa Esencia livestream;
+- Sandy Ground — Anguilla, first-party Elvis' Beach Bar live webcam;
+- Sorobon / Lac Bay — Bonaire, first-party Sorobon Luxury Beach Resort live webcam.
+
+All 11 remain `LINK_ONLY` + external/current-image Search/Explore sources with `featuredHold: true` and `watchHold: true`. None can fill Watch Earth.
+
+Supplemental Search is now **223 records**.
+
+#### Search scaling
+The lazy supplemental Search guard was raised from **250 to 500 rows**. This is a capacity-only change to the lazy-on-search layer; it does not move records into first-load core and does not loosen any content gate.
+
+Existing supplemental requirements remain intact: HEALTHY only, LINK_ONLY only, HTTPS source URL, held from Featured/Watch Earth, no duplicate core ID/place. The hard first-load lean-core ceiling remains exactly **575000 bytes**.
+
+#### Business + Travelpayouts expansion
+Commercial registry advanced from **317 to 324 opportunities** while existing destination-level mappings were extended instead of duplicated where possible.
+
+New or materially expanded paths include:
+- Green Island / Taitung → existing Klook cluster expanded to Fanchuanbi;
+- Hualien → existing Viator cluster expanded to Dashibi Hill;
+- Taitung → existing Klook cluster expanded to Torik Park;
+- Troodos / Cyprus → Viator activities;
+- Cyprus road-trip planning → Localrent candidate, one car-rental utility only;
+- YongPyong / Pyeongchang → Klook ski products;
+- Ishiuchi Maruyama → Klook lift/gondola products;
+- Togari Onsen → Klook ski-resort tickets;
+- Inawashiro → Klook **stay-attribution research only**;
+- Turks & Caicos / Providenciales → existing Viator path expanded to Long Bay rather than creating beach-level affiliate duplication;
+- Anguilla → existing Viator path expanded from Meads Bay to Sandy Ground;
+- Bonaire / Lac Bay → new Viator destination-level research path.
+
+Every newly unverified path remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`. No tracked URL, offer, availability or partner approval was invented.
+
+A controlled accommodation-attribution experiment is now documented in `docs/TRAVELPAYOUTS_EXPANSION.md`: Klook publicly exposes Inawashiro lodging inventory, but ERN must not assume the Earthrightnow Travelpayouts program attributes hotel bookings. Owner-side program/tool support and an exact tracked hotel/destination link must be verified before any public stay placement. If unsupported, keep dormant and continue separate stay-partner research.
+
+This extends the Travelpayouts strategy beyond tour links into activities, transfers, car rental, connectivity and carefully gated stay research while preserving the principle of **one useful visitor action per need rather than affiliate density**.
+
+#### Release validation
+JavaScript Syntax Check **1063 SUCCESS**.
+
+Pages **2617 SUCCESS** validated the first half of this batch, including the new 500-row lazy Search guard.
+Pages **2619 SUCCESS** validated the final source + commercial state:
+- all **112 current ERN release smoke tests passed**;
+- Supplemental Search integrity passed with **223** records;
+- commercial placement integrity passed;
+- lean launch/performance preflight passed with hard budget **575000 bytes**;
+- static release built and deployed successfully;
+- deployed metadata verification reported zero errors.
+
+#### Operations / health diagnostics
+Operations **1412** and **1413** failed closed during broad external availability packet construction with many simultaneous `TypeError` / `AbortError` probe failures. This is treated as an operations/external-network availability incident, **not** as evidence that the catalog sources are broken. No source truth or health was automatically changed.
+
+The searchable-source-health stage inside Operations 1413 still completed and recorded:
+- eligible searchable sources: **551**;
+- eligible unique URLs: **421**;
+- current cohort: **87 sources / 61 unique URLs**;
+- reachable: **79**;
+- missing: **0**;
+- access-blocked: **4**;
+- temporary/network: **4**;
+- repair: **2**;
+- review: **4**;
+- watch: **2**.
+
+REPAIR remains Balykchy / Issyk-Kul gateway (KG Camera) and Kanlaon (PHIVOLCS), both already independently provider-confirmed in earlier work; automated network failures alone do not justify mutation. REVIEW remains access-pattern-only for Dolomiti Superski, Sangay/IG-EPN, Addo/SANParks and Satara/SANParks. Guernsey Harbour Entrance and Havelet Bay are WATCH after a single new timeout following a reachable observation; recheck naturally, no mutation.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**.
+- IMAGE_REFRESH pilot remains untouched until natural renewal.
+- Public generative ERN Guide remains OFF.
+- Public Now Moments media remains OFF.
+- No automatic social posting/account creation.
+- No paid ranking.
+- Commercial value never affects Earth ranking, truth, health or currentness.
