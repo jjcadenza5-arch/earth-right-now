@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T06:15:00Z",
+  "generatedAt": "2026-10-06T06:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3192,18 +3192,19 @@
     },
     {
       "id": "viator-jahorina-bosnia",
-      "destination": "Jahorina / Sarajevo Olympic Mountains",
+      "destination": "Sarajevo Olympic Mountains — Jahorina & Bjelašnica",
       "placeIds": [
-        "bosnia-jahorina-olympic-center"
+        "bosnia-jahorina-olympic-center",
+        "bosnia-bjelasnica-olympic-mountain"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has an official Jahorina mountain source and Viator currently sells a dedicated Jahorina Olympic Mountain full-day skiing tour from Sarajevo.",
+      "reason": "ERN now has official current/live views from both Jahorina and Bjelašnica. Current Viator Sarajevo inventory includes Olympic-mountain experiences, so one regional planning bridge should serve both without duplicate affiliate density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Sarajevo/Skiing-at-Sarajevo-Olympic-Mountains-Full-Day-Tour-from-Sarajevo/d22427-12030P24",
-      "publicInventoryEvidence": "Current Viator product explicitly visits Jahorina and includes Sarajevo pickup, ski equipment and ski instruction.",
-      "nextAction": "Search the owner Viator partner tools for Jahorina/Sarajevo Olympic Mountains and generate one tracked link; manually verify before public activation."
+      "publicInventoryEvidence": "Current Viator Sarajevo inventory includes products visiting Bjelašnica and dedicated Jahorina Olympic Mountain experiences.",
+      "nextAction": "Generate one clean Sarajevo Olympic Mountains / destination-level tracked link if owner tools provide useful scope; otherwise keep exact mountain links separate only where genuinely useful."
     },
     {
       "id": "go-city-rome",
@@ -5668,6 +5669,21 @@
       "reason": "Falkland Islands access is flight-dependent and ERN now has a current Stanley tourism window. Kiwi.com is an owner-available Travelpayouts flight-planning program, but exact route usefulness must be verified.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Verify owner-side flight search usefulness for Stanley/Falklands routing and generate one exact tracked search link only if practical; do not imply direct flight availability that is not present."
+    },
+    {
+      "id": "viator-salalah-oman",
+      "destination": "Salalah / Dhofar, Oman",
+      "placeIds": [
+        "oman-salalah-fanar"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a current Salalah/Dhofar live view and Viator currently exposes 100+ Salalah tours across nature, Khareef, Wadi Darbat, desert and coastal experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Salalah/d4391-ttd",
+      "publicInventoryEvidence": "Current Viator Salalah destination inventory contains 100+ excursions across day trips, safaris, nature, history and coastal experiences.",
+      "nextAction": "Generate one owner-side Salalah destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
