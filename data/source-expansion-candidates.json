@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T04:20:00Z",
+  "generatedAt": "2026-10-06T04:35:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -6247,6 +6247,48 @@
       "verifiedAt": "2026-10-06T04:20:00Z",
       "promotedAt": "2026-10-06T04:20:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "singapore-sentosa-gateway-current",
+      "title": "Singapore — Sentosa Gateway",
+      "country": "Singapore",
+      "region": "Sentosa Gateway",
+      "provider": "Land Transport Authority Singapore (OneMotoring)",
+      "sourcePage": "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras.html",
+      "priority": "P1_BALANCED_EXPANSION",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "OneMotoring displayed the Sentosa Gateway camera with a current 06/10/2026 timestamp during verification.",
+      "verifiedAt": "2026-10-06T04:35:00Z",
+      "promotedAt": "2026-10-06T04:35:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "singapore-woodlands-causeway-current",
+      "title": "Singapore — Woodlands Causeway",
+      "country": "Singapore",
+      "region": "Woodlands / Johor Causeway",
+      "provider": "Land Transport Authority Singapore (OneMotoring)",
+      "sourcePage": "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras.html",
+      "priority": "P1_BALANCED_EXPANSION",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "OneMotoring displayed the Woodlands Causeway camera with a current 06/10/2026 timestamp during verification.",
+      "verifiedAt": "2026-10-06T04:35:00Z",
+      "promotedAt": "2026-10-06T04:35:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "cayman-george-town-port-current",
+      "title": "George Town — Grand Cayman Port",
+      "country": "Cayman Islands",
+      "region": "George Town / Grand Cayman",
+      "provider": "Port Authority of the Cayman Islands",
+      "sourcePage": "https://www.caymanport.com/webcams/",
+      "priority": "P1_BALANCED_EXPANSION",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The official Port Authority currently maintains a dedicated Webcams page; independent current-camera indexing identifies the feed as Grand Cayman Port / George Town and attributes it to caymanport.com.",
+      "verifiedAt": "2026-10-06T04:35:00Z",
+      "promotedAt": "2026-10-06T04:35:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
