@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T12:30:00Z",
+  "generatedAt": "2026-10-06T13:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -6995,6 +6995,79 @@
       "reason": "AutoEurope is already owner-available and can serve as a rental fallback where exact destination coverage is better than the preferred option.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Compare owner-side coverage against QEEQ. Publicly surface at most one rental provider per trip context."
+    },
+    {
+      "id": "klook-erciyes",
+      "destination": "Mount Erciyes / Kayseri",
+      "placeIds": [
+        "turkey-erciyes"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Erciyes live source, and Klook currently sells a specific Mount Erciyes skiing day experience from Cappadocia.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-SG/activity/136959-full-day-skiing-experience-in-cappadocia-all-inclusive/",
+      "publicInventoryEvidence": "Current Klook inventory explicitly operates a Mount Erciyes skiing day experience with transport from Cappadocia.",
+      "nextAction": "Generate one owner-side Erciyes/Cappadocia Klook tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-erciyes-kayseri",
+      "destination": "Mount Erciyes / Kayseri",
+      "placeIds": [
+        "turkey-erciyes"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities-transport",
+      "priority": "P1",
+      "reason": "Viator currently has Kayseri inventory including a Cappadocia tour starting from Erciyes Ski Center plus Kayseri transfer products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Kayseri/d50298-ttd",
+      "publicInventoryEvidence": "Current Viator Kayseri inventory includes a Cappadocia tour from Erciyes Ski Center and airport/hotel transfers.",
+      "nextAction": "Generate one owner-side Kayseri/Erciyes destination link only if the landing scope is clearly useful; do not imply generic Cappadocia products include skiing."
+    },
+    {
+      "id": "qeeq-kayseri-erciyes",
+      "destination": "Kayseri / Erciyes car rental",
+      "placeIds": [
+        "turkey-erciyes"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "QEEQ currently exposes active rental inventory at Kayseri International Airport, making road access a plausible post-discovery utility.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.qeeq.com/stores/store-1215852-supplier-123",
+      "publicInventoryEvidence": "QEEQ currently lists an active Kayseri International Airport rental location with recent September 2026 customer reviews.",
+      "nextAction": "Generate one exact owner-side Kayseri pickup tracked link if suitable. Never imply winter tires/chains or mountain-road suitability unless exact terms support it."
+    },
+    {
+      "id": "viator-spindleruv",
+      "destination": "Špindlerův Mlýn / Krkonoše",
+      "placeIds": [
+        "czech-spindleruv-mlyn"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities-transport",
+      "priority": "P2",
+      "reason": "Current Viator Bohemia inventory includes products involving Špindlerův Mlýn and private transport between the resort and Prague.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Bohemia/DOWNHILL-KICK-SCOOTER-TOUR-IN-BOHEMIAN-SWITZERLAND/d22153-70189P1",
+      "publicInventoryEvidence": "Current Viator Bohemia inventory visibly includes a private transfer from Špindlerův Mlýn to Prague alongside regional outdoor products.",
+      "nextAction": "Search owner-side for one useful Špindlerův Mlýn destination/transfer link and leave dormant if exact inventory is weak."
+    },
+    {
+      "id": "viator-pamporovo",
+      "destination": "Pamporovo / Rhodope Mountains",
+      "placeIds": [
+        "bulgaria-pamporovo"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has an official Pamporovo live source. Keep a Viator research path only if current owner-side Bulgaria/Rhodope inventory is geographically useful.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search owner-side Viator for Pamporovo/Smolyan/Rhodope inventory. If exact useful coverage is absent, leave this dormant rather than forcing a generic Bulgaria link."
     }
   ]
 }

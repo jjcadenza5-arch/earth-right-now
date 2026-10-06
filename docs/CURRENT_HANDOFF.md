@@ -5399,3 +5399,35 @@ No tracked link, exact unsupported transfer route, rental winter-equipment entit
 
 Protected invariants remain unchanged: Watch Earth is in-ERN playback only; LINK_ONLY/EXTERNAL additions remain Search/Explore-only; IMAGE_REFRESH remains natural-schedule only; public Guide and Now Moments remain OFF; no paid ranking, automatic social posting, automatic Travelpayouts placement or link rewriting; commercial value cannot affect Earth ranking/source truth/health/currentness; hard lean-core ceiling remains 575 KB.
 
+### Central Anatolia + Bulgaria + Czechia live-current continuation — 2026-10-06
+Continued the same large checkpoint after the Western Alps tranche.
+
+#### Search/Explore
+Added **3 additional official live/current mountain destinations**:
+- Mount Erciyes / Kayseri, Turkey;
+- Pamporovo / Rhodope Mountains, Bulgaria;
+- Špindlerův Mlýn / Krkonoše, Czech Republic.
+
+All remain HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold.
+
+#### Commercial / Travelpayouts diversification
+Added:
+- Klook Erciyes, based on a current specific Mount Erciyes skiing product;
+- Viator Erciyes/Kayseri research;
+- QEEQ Kayseri/Erciyes rental research backed by current Kayseri Airport inventory;
+- Viator Špindlerův Mlýn research;
+- Viator Pamporovo research, explicitly dormant if exact Rhodope inventory is weak.
+
+Utility routing added Central Anatolia mountain access, Central Europe mountain access, and project-gated mountain stay research.
+
+#### Combined batch state
+Across the Western Alps + this continuation, **15 new healthy searchable places** were added in this checkpoint.
+Current state after this continuation:
+- supplemental Search/Explore: **375 / 500**;
+- commercial opportunities: **440**;
+- utility-routing clusters: **67**;
+- Watch Earth impact: **0**;
+- first-load core unchanged.
+
+No tracked URL, exact unsupported transfer route, snow-equipment entitlement, rental road suitability, accommodation availability or owner-program approval was invented.
+

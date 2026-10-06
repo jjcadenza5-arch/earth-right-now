@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T12:30:00Z",
+  "generatedAt": "2026-10-06T13:05:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1522,6 +1522,54 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
       "rule": "Research-only until an accommodation program is genuinely available to Earthrightnow. One useful stay action per destination cluster by default."
+    },
+    {
+      "id": "central-anatolia-mountain-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "kiwitaxi",
+        "intui-travel"
+      ],
+      "placeIds": [
+        "turkey-erciyes"
+      ],
+      "activationGate": "EXACT_KAYSERI_PICKUP_OR_TRANSFER_ROUTE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After Erciyes destination choice, use one verified rental or transfer option. Never infer snow equipment, road suitability or Cappadocia transfer inclusion."
+    },
+    {
+      "id": "central-europe-mountain-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "autoeurope",
+        "kiwitaxi"
+      ],
+      "placeIds": [
+        "czech-spindleruv-mlyn",
+        "bulgaria-pamporovo",
+        "bansko-pirin",
+        "borovets-rila"
+      ],
+      "activationGate": "COUNTRY_SPECIFIC_PICKUP_OR_TRANSFER_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "Research country-specific mountain access only. Czech and Bulgarian coverage must be verified independently; one transport option per trip context."
+    },
+    {
+      "id": "central-europe-mountain-stay-research",
+      "intent": "stay",
+      "preferredProgramCandidates": [
+        "booking-com",
+        "trip-com",
+        "agoda"
+      ],
+      "placeIds": [
+        "czech-spindleruv-mlyn",
+        "bulgaria-pamporovo",
+        "bansko-pirin",
+        "borovets-rila"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
+      "rule": "Research-only until an accommodation program is genuinely available to Earthrightnow; one useful stay action per destination by default."
     }
   ],
   "islandTravelClusters": [
