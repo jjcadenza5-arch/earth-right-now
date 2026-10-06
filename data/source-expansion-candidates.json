@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T03:40:00Z",
+  "generatedAt": "2026-10-06T03:55:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -6135,6 +6135,48 @@
       "verifiedAt": "2026-10-06T03:40:00Z",
       "promotedAt": "2026-10-06T03:40:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "tci-long-bay-villa-esencia-live",
+      "title": "Long Bay Beach — Providenciales",
+      "country": "Turks and Caicos Islands",
+      "region": "Providenciales / Long Bay",
+      "provider": "Villa Esencia",
+      "sourcePage": "https://www.villaesencia.com/live/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Villa Esencia currently labels the page 'Turks & Caicos Live Cam and Weather' and invites visitors to check its live webcam from Long Bay Beach.",
+      "verifiedAt": "2026-10-06T03:55:00Z",
+      "promotedAt": "2026-10-06T03:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "anguilla-sandy-ground-elvis-live",
+      "title": "Sandy Ground — Elvis' Beach Bar",
+      "country": "Anguilla",
+      "region": "Sandy Ground / Road Bay",
+      "provider": "Elvis' Beach Bar",
+      "sourcePage": "https://www.elvisbeachbar.com/webcam",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Elvis' Beach Bar currently publishes a dedicated Anguilla Live Webcam page; its official site identifies the venue at Sandy Ground / Road Bay.",
+      "verifiedAt": "2026-10-06T03:55:00Z",
+      "promotedAt": "2026-10-06T03:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "bonaire-sorobon-live",
+      "title": "Sorobon / Lac Bay — Bonaire",
+      "country": "Bonaire",
+      "region": "Lac Bay",
+      "provider": "Sorobon Luxury Beach Resort",
+      "sourcePage": "https://www.sorobonbeachresort.com/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Sorobon's current official site prominently publishes a 'Live Webcam at Our Private Beach'.",
+      "verifiedAt": "2026-10-06T03:55:00Z",
+      "promotedAt": "2026-10-06T03:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
