@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T02:05:00Z",
+  "generatedAt": "2026-10-06T02:35:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -5826,6 +5826,62 @@
       "evidence": "NPS lists Look Rock as a current webcam and states the park's digital webcam images update approximately every 15 minutes.",
       "verifiedAt": "2026-10-06T02:05:00Z",
       "promotedAt": "2026-10-06T02:05:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-crater-lake-annie-spring-current",
+      "title": "Crater Lake — Annie Spring Entrance",
+      "country": "United States",
+      "region": "Crater Lake National Park / Oregon",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/crla/learn/photosmultimedia/webcams.htm",
+      "priority": "P2_QUALITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS currently lists the Annie Spring Entrance Station webcam as a current road-conditions view.",
+      "verifiedAt": "2026-10-06T02:35:00Z",
+      "promotedAt": "2026-10-06T02:35:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-crater-lake-steel-center-current",
+      "title": "Crater Lake — Steel Information Center",
+      "country": "United States",
+      "region": "Crater Lake National Park / Oregon",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/crla/learn/photosmultimedia/webcams.htm",
+      "priority": "P2_QUALITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS currently lists the Steel Information Center webcam and says it is useful for showing current snow on the ground.",
+      "verifiedAt": "2026-10-06T02:35:00Z",
+      "promotedAt": "2026-10-06T02:35:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-rocky-mountain-kawuneeche-current",
+      "title": "Rocky Mountain National Park — Kawuneeche Valley",
+      "country": "United States",
+      "region": "Colorado",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/romo/learn/photosmultimedia/webcams.htm",
+      "priority": "P2_QUALITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS currently lists Kawuneeche Valley as an active webcam showing Harbison Meadow and the Never Summer Mountains.",
+      "verifiedAt": "2026-10-06T02:35:00Z",
+      "promotedAt": "2026-10-06T02:35:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-rocky-mountain-longs-peak-current",
+      "title": "Rocky Mountain National Park — Longs Peak",
+      "country": "United States",
+      "region": "Colorado",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/romo/learn/photosmultimedia/webcams.htm",
+      "priority": "P2_QUALITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS currently lists the Longs Peak webcam as active and identifies its view from Tahosa Valley.",
+      "verifiedAt": "2026-10-06T02:35:00Z",
+      "promotedAt": "2026-10-06T02:35:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
