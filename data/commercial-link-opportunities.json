@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T08:20:00Z",
+  "generatedAt": "2026-10-06T08:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3765,12 +3765,13 @@
       "id": "viator-usvi-st-john",
       "destination": "St. John / Virgin Islands National Park, U.S. Virgin Islands",
       "placeIds": [
-        "usvi-st-john-windswept"
+        "usvi-st-john-windswept",
+        "usvi-st-john-cruz-bay-beach-bar"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has an official NPS-referenced St. John current-conditions webcam, and Viator currently has extensive St. John snorkeling, island-tour and Virgin Islands National Park inventory.",
+      "reason": "ERN now has both NPS-referenced St. John current conditions and a first-party Cruz Bay live beach view. Keep one St. John planning bridge across both.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/St-John/St-John-Lime-Out-Snorkel-Sail-w-Floating-Taco-Bar-Lunch-and-Swim-Up-Bar-Westin/d4521-114771P35",
       "publicInventoryEvidence": "Current Viator St. John inventory includes snorkeling, island sightseeing and experiences that pass or operate around Virgin Islands National Park.",
@@ -3991,18 +3992,20 @@
     },
     {
       "id": "viator-jost-van-dyke",
-      "destination": "Jost Van Dyke / British Virgin Islands",
+      "destination": "British Virgin Islands — Jost Van Dyke / Scrub Island / Virgin Gorda",
       "placeIds": [
-        "bvi-jost-van-dyke-white-bay"
+        "bvi-jost-van-dyke-white-bay",
+        "bvi-scrub-island",
+        "bvi-saba-rock"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a first-party live White Bay/Jost Van Dyke source, and Viator currently has dedicated Jost Van Dyke sailing and beach inventory.",
+      "reason": "ERN now has healthy live/current views across several BVI islands. Use one BVI-level Viator planning bridge across Jost Van Dyke, Scrub Island and Saba Rock rather than camera-level commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/en-NZ/British-Virgin-Islands-attractions/Jost-Van-Dyke/d809-a1911",
-      "publicInventoryEvidence": "Current Viator Jost Van Dyke catalog lists 35 results and multiple sailing tours visiting White Bay and Soggy Dollar.",
-      "nextAction": "Generate one owner-side Jost Van Dyke/BVI destination-level tracked link and manually verify it before public activation."
+      "publicInventoryEvidenceUrl": "https://www.viator.com/British-Virgin-Islands/d809",
+      "publicInventoryEvidence": "Current Viator British Virgin Islands inventory spans Tortola, Jost Van Dyke, Virgin Gorda, sailing, snorkeling, sightseeing and island-hopping products.",
+      "nextAction": "Generate one owner-side BVI destination-level tracked link and manually verify it. Never imply that a tour visits Scrub Island or Saba Rock unless exact itinerary evidence proves it."
     },
     {
       "id": "viator-kingston-jamaica",

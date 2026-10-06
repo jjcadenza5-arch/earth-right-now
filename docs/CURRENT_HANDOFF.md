@@ -4911,3 +4911,31 @@ No weak substitute was promoted for those gaps.
 #### Invariants
 Watch Earth remains in-ERN playback only; LINK_ONLY/external sources remain out of Watch Earth; IMAGE_REFRESH remains natural-schedule only; public Guide and Now Moments remain OFF; no social automation, paid ranking, automatic Travelpayouts placement or link rewriting; commercial value cannot affect Earth ranking/source truth/health/currentness; hard lean-core ceiling remains 575 KB.
 
+### Caribbean / Virgin Islands continuation — 2026-10-06
+Continued the same large batch after the alpine tranche rather than stopping at a small checkpoint.
+
+Added three first-party island/current-view places:
+- **Scrub Island — Marina Village, BVI** from the resort's own webcam page;
+- **Saba Rock — North Sound, BVI** from Saba Rock's first-party live webcam, including underwater scenes;
+- **St. John — Cruz Bay Beach, USVI** from The Beach Bar's first-party live panoramic beach webcams.
+
+All remain HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold.
+
+Commercial mapping was consolidated rather than multiplied:
+- the existing BVI/Viator path now spans Jost Van Dyke, Scrub Island and Saba Rock using one BVI-level destination bridge;
+- the existing St. John/Viator path now also covers Cruz Bay Beach.
+
+Travelpayouts utility research added:
+- **BVI island-hopping/access** research, fail-closed on exact owner-project route support;
+- **Virgin Islands connectivity** research using one verified eSIM option per territory context.
+
+Combined state after the alpine + Caribbean continuation:
+- healthy distinct searchable places: **612**;
+- healthy source records: **617**;
+- supplemental Search/Explore: **293 / 500**;
+- commercial opportunities: **367** (regional consolidation avoided unnecessary count inflation);
+- general utility-routing clusters: **29**;
+- Watch Earth impact: **0**.
+
+No tracked link, ferry availability, transfer coverage or eSIM territory coverage was invented.
+

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T08:20:00Z",
+  "generatedAt": "2026-10-06T08:55:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2276,6 +2276,27 @@
       "freshnessEvidence": "Official page labels the cameras Live Stream and says visitors can view current resort atmosphere and weather at Jezerine and Viline Vode.",
       "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
       "checkedAt": "2026-10-06T08:20:00Z"
+    },
+    "bvi-scrub-island-webcam": {
+      "sourceUrl": "https://www.scrubisland.com/webcam/",
+      "rightsBasis": "First-party resort webcam page; ERN links externally and does not infer embed/restream rights.",
+      "freshnessEvidence": "Scrub Island's official site provides a dedicated Webcam page and identifies the webcam as showcasing marina-village views daily.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:55:00Z"
+    },
+    "bvi-saba-rock-live": {
+      "sourceUrl": "https://sabarock.com/livecam",
+      "rightsBasis": "First-party Saba Rock live-cam page; ERN links externally and does not infer rebroadcast rights.",
+      "freshnessEvidence": "Saba Rock explicitly labels the page Live Web Cam and says its underwater cam moves through scenes day and night, with daily tarpon feeding at 5pm.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:55:00Z"
+    },
+    "usvi-st-john-beach-bar-cruz-bay": {
+      "sourceUrl": "https://beachbarstjohn.com/",
+      "rightsBasis": "First-party venue live-webcam page; ERN links externally and does not infer platform/embed rights.",
+      "freshnessEvidence": "The Beach Bar states it currently has two HD webcams streaming live to YouTube, including a 180-degree panoramic Cruz Bay beach camera.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:55:00Z"
     }
   },
   "prague-petrin-tower": {

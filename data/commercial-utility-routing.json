@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T08:20:00Z",
+  "generatedAt": "2026-10-06T08:55:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -840,6 +840,40 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
       "rule": "Research-only until an accommodation program is actually available to the Earthrightnow project. Default to one useful stay action per destination cluster; never let lodging inventory affect Earth ranking."
+    },
+    {
+      "id": "bvi-island-hopping",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "12go",
+        "kiwitaxi",
+        "gettransfer"
+      ],
+      "placeIds": [
+        "bvi-jost-van-dyke-white-bay",
+        "bvi-scrub-island",
+        "bvi-saba-rock"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_ROUTE_LINK_REQUIRED",
+      "rule": "Research island/ferry/transfer utility only after the visitor chooses the BVI. Do not imply that 12Go or transfer programs cover inter-island routes unless owner-side exact route inventory proves it; one useful transport action at most."
+    },
+    {
+      "id": "virgin-islands-connectivity",
+      "intent": "connectivity",
+      "preferredProgramCandidates": [
+        "airalo",
+        "saily",
+        "yesim"
+      ],
+      "placeIds": [
+        "bvi-jost-van-dyke-white-bay",
+        "bvi-scrub-island",
+        "bvi-saba-rock",
+        "usvi-st-john-windswept",
+        "usvi-st-john-cruz-bay-beach-bar"
+      ],
+      "activationGate": "PROGRAM_COUNTRY_TERRITORY_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Optional connectivity only after destination selection. Verify BVI and USVI coverage separately and default to one eSIM provider per territory context."
     }
   ],
   "islandTravelClusters": [
