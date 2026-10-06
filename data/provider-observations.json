@@ -700,5 +700,19 @@
     "confirmation": "INDEPENDENT_PROVIDER_PAGE_ACTIVE",
     "observedAt": "2026-10-05T15:40:00Z",
     "reason": "REPAIR investigation: official KG Camera page remains publicly active and describes the Too-Ashu north tunnel camera with no-archive surveillance and about a 20-second delay. Preserve source truth; repeated Operations network/server failures are not sufficient evidence of a broken camera."
+  },
+  {
+    "id": "balykchy-entry",
+    "httpStatus": 200,
+    "confirmation": "INDEPENDENT_PROVIDER_PAGE_ACTIVE",
+    "observedAt": "2026-10-06T01:55:00Z",
+    "reason": "REPAIR investigation: KG Camera's Balykchy provider page remains publicly active, lists the camera in the live network and states surveillance is shown with about a 20-second delay. Preserve source truth; repeated Operations network/server failures alone do not prove a broken camera."
+  },
+  {
+    "id": "kanlaon-phivolcs-current-image",
+    "httpStatus": 200,
+    "confirmation": "INDEPENDENT_PROVIDER_PAGE_ACTIVE",
+    "observedAt": "2026-10-06T01:55:00Z",
+    "reason": "REPAIR investigation: PHIVOLCS' current Kanlaon monitoring surface remains active and explicitly publishes real-time monitoring data with IP-camera snapshots sampled every minute. Preserve source truth; automated probe failures do not prove the camera source is broken."
   }
 ]
