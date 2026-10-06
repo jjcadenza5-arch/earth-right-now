@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T04:20:00Z",
+  "generatedAt": "2026-10-06T04:35:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -611,6 +611,23 @@
       ],
       "activationGate": "EXACT_ROUTE_OR_DESTINATION_SEARCH_LINK_REQUIRED",
       "rule": "Trip-planning only; never promoted on camera cards or used to rank destinations."
+    },
+    {
+      "id": "singapore-trip-utilities",
+      "intent": "mixed",
+      "preferredProgramCandidates": [
+        "klook",
+        "kkday",
+        "go-city",
+        "radical-storage"
+      ],
+      "placeIds": [
+        "singapore-port-area",
+        "singapore-sentosa-gateway",
+        "singapore-woodlands-causeway"
+      ],
+      "activationGate": "EXACT_OWNER_LINK_AND_DISTINCT_VISITOR_VALUE_REQUIRED",
+      "rule": "Keep the verified Klook bridge primary where useful; add KKday, Go City or Radical Storage only for a distinct visitor need. Never stack duplicate activity buttons or let utility availability affect Earth ranking."
     }
   ]
 }
