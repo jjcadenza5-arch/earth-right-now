@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T12:10:00Z",
+  "generatedAt": "2026-10-06T12:45:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -6703,6 +6703,113 @@
       "publicInventoryEvidenceUrl": "https://wegotrip.com/tbilisi-d611717/tbilisi-self-guided-audio-walk-through-old-town-and-river-views-p26317/",
       "publicInventoryEvidence": "Current WeGoTrip inventory includes Tbilisi Old Town and riverfront self-guided audio routes.",
       "nextAction": "Generate one owner-side Tbilisi self-guided tracked link only if it adds distinct value after destination choice."
+    },
+    {
+      "id": "klook-jeju-hallasan",
+      "destination": "Jeju / Hallasan National Park",
+      "placeIds": [
+        "south-korea-jeju-hallasan"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official live Hallasan current-view source, and Klook currently carries extensive Jeju and Hallasan-specific activity inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/183600-hallasan-national-park-half-day-national-park-winter-tour/",
+      "publicInventoryEvidence": "Current Klook inventory includes Hallasan-specific guided products and a broad Jeju destination catalog.",
+      "nextAction": "Generate one owner-side Jeju/Hallasan Klook tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-jeju-hallasan",
+      "destination": "Jeju / Hallasan National Park",
+      "placeIds": [
+        "south-korea-jeju-hallasan"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN has an official Hallasan live source and Jeju is a major destination where a broad island-level activity path can be useful after discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search owner-side Viator Jeju/Hallasan inventory and generate one exact destination-level tracked link only if inventory remains useful; do not force a generic Korea link."
+    },
+    {
+      "id": "qeeq-jeju-roadtrip",
+      "destination": "Jeju road-trip car rental",
+      "placeIds": [
+        "south-korea-jeju-hallasan"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "QEEQ currently has deep Jeju rental coverage. Independent driving can be useful for connecting Jeju's dispersed natural sites after destination choice.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.qeeq.com/car/car-rental-pro/city/jeju-do-2735",
+      "publicInventoryEvidence": "QEEQ currently exposes Jeju-do rental inventory and current 2026 user activity.",
+      "nextAction": "Generate one owner-side Jeju QEEQ tracked link and verify local license/pickup requirements before public use."
+    },
+    {
+      "id": "radical-storage-seoul",
+      "destination": "Seoul luggage storage",
+      "placeIds": [
+        "seoul-plaza",
+        "seoul-gwanghwamun-plaza",
+        "seoul-cheonggye-plaza"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2_UTILITY",
+      "reason": "Radical Storage currently lists a broad Seoul storage network including Seoul Station, Myeongdong, Gangnam and other major visitor nodes.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://radicalstorage.com/luggage-storage/seoul",
+      "publicInventoryEvidence": "Current Radical Storage Seoul inventory lists storage options across major visitor districts and transport nodes.",
+      "nextAction": "Generate one Seoul city-level owner tracked link if available; keep luggage storage downstream from city discovery."
+    },
+    {
+      "id": "airalo-south-korea-connectivity",
+      "destination": "South Korea connectivity",
+      "placeIds": [
+        "south-korea-yongpyong",
+        "south-korea-alpensia",
+        "south-korea-muju-deogyusan",
+        "south-korea-jeju-hallasan",
+        "seoul-plaza"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Airalo currently publishes South Korea-specific eSIM inventory. Connectivity is a distinct optional post-discovery utility.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/south-korea-esim-esim",
+      "publicInventoryEvidence": "Airalo currently exposes South Korea-specific fixed-data and unlimited eSIM plans.",
+      "nextAction": "Generate one owner-side South Korea Airalo tracked link if country deep-linking is supported; default to one connectivity provider."
+    },
+    {
+      "id": "viator-parnassos-delphi",
+      "destination": "Mount Parnassus / Delphi / Arachova",
+      "placeIds": [
+        "greece-parnassos-fterolaka"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a current Parnassus live source, and Viator currently carries substantial Delphi/Arachova itineraries that pass Mount Parnassus.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Athens/Delfi-Full-Day-Private-Sightseeing-Tour/d496-286487P12",
+      "publicInventoryEvidence": "Current Viator itineraries explicitly include Arachova and pass Mount Parnassus on Delphi day trips.",
+      "nextAction": "Generate one owner-side Delphi/Arachova destination tracked link only if the scope is clearly disclosed."
+    },
+    {
+      "id": "viator-kalavrita-greece",
+      "destination": "Kalavrita / Mount Helmos, Greece",
+      "placeIds": [
+        "greece-kalavrita-ski"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has an official Kalavrita current-view source. Keep a research path for Kalavrita/Helmos experiences but activate only if exact owner-side inventory is useful.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search owner-side Viator inventory for Kalavrita/Helmos; if exact useful inventory is weak, leave dormant rather than using a generic Greece link."
     }
   ]
 }
