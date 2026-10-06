@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T12:45:00Z",
+  "generatedAt": "2026-10-06T13:05:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2745,6 +2745,27 @@
       "freshnessEvidence": "The current official site exposes Live Cams and a recently updated 2026 operating-status panel.",
       "coordinateNote": "Destination-level reference only; ERN does not claim exact camera coordinates.",
       "checkedAt": "2026-10-06T12:45:00Z"
+    },
+    "greece-mainalo-live": {
+      "sourceUrl": "https://mainaloski.gr/live-feed/",
+      "rightsBasis": "First-party ski-center Live Feed page; ERN links externally.",
+      "freshnessEvidence": "Mainalo states its cameras provide a live image and allow visitors to monitor slope conditions, snow and resort traffic in real time.",
+      "coordinateNote": "Destination-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T13:05:00Z"
+    },
+    "greece-seli-live": {
+      "sourceUrl": "https://seli-ski.gr/live-camera/",
+      "rightsBasis": "First-party national ski-center live-camera page; ERN links externally.",
+      "freshnessEvidence": "Seli's official site currently exposes a dedicated LIVE CAMERA page with named mountain/lift views.",
+      "coordinateNote": "Destination-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T13:05:00Z"
+    },
+    "greece-anilio-live": {
+      "sourceUrl": "https://anilio-ski.gr/wordpress/?page_id=422",
+      "rightsBasis": "First-party resort Snow Cam page; ERN links externally.",
+      "freshnessEvidence": "Anilio's official page labels the service SNOW CAM ΑΝΗΛΙΟ LIVE / live transmission. Automated access can be bot-gated, which does not by itself invalidate the source.",
+      "coordinateNote": "Destination-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T13:05:00Z"
     }
   },
   "prague-petrin-tower": {
