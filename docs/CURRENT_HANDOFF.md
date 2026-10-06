@@ -4386,3 +4386,117 @@ Pages **2629, 2631 and 2632 completed SUCCESS** across this continuation. Latest
 - no automatic Travelpayouts placement or link rewriting;
 - no paid ranking;
 - commercial value never affects Earth ranking, source truth, health or currentness.
+
+
+### Honduras + Central America + Kenya wildlife + Travelpayouts catalog research — 2026-10-06
+This continuation follows the owner's preferred large-batch operating mode: broaden truthful Earth coverage, deepen downstream business utility, and deliberately explore the wider Travelpayouts ecosystem without confusing platform catalog presence with ERN owner-project approval.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **562 to 567 places** (**572 healthy source records** total).
+- lazy supplemental Search/Explore catalog: **248 rows**;
+- current supplemental guard remains **500 rows**;
+- all new external sources remain LINK_ONLY / Search-Explore-only with Watch hold.
+
+Five healthy searchable places were added:
+
+**Honduras — new ERN country**
+- Roatán — West Bay Beach, using Las Rocas Resort & Dive Center's first-party page explicitly labeled “Live from our Beach Cam”.
+
+**Costa Rica — visitor-type diversification**
+- Punta Leona — Playa Blanca, using Punta Leona Beach Club & Nature Resort's first-party Live Cams surface. This broadens Costa Rica beyond ERN's existing volcano-heavy monitoring coverage.
+
+**Panama — visitor-type diversification**
+- Las Lajas Beach — Chiriquí, using Las Lajas Beach Resort's first-party LIVE WEBCAM;
+- Camaroncito — Caribbean Beach, using Camaroncito EcoResort & Beach's first-party LIVE Video Feed described as showing the Caribbean beach in real time.
+
+**Kenya — conservation/wildlife strengthening**
+- Ol Pejeta — Porini Rhino Camp Waterhole, using Gamewatchers Safaris / Porini Camps' current 2026 announcement of a **24/7 live wildlife camera** at Porini Rhino Camp.
+
+All five remain external / `LINK_ONLY`; none can fill Watch Earth.
+
+Research-only expansion also continued:
+- **Zambia / South Luangwa:** Shenton Safaris documents live-streaming cameras at its Mwamba/Kaingo waterhole hides, but ERN has not yet resolved a durable current public webcam route. Candidate remains `EXACT_CURRENT_WEBCAM_ROUTE_VERIFICATION_REQUIRED`; no Zambia place was promoted from historical/ambiguous evidence.
+
+#### Business-side expansion
+Commercial opportunity registry advanced from **349 to 354 records**.
+
+New downstream planning opportunities:
+- Roatán / Honduras → Viator;
+- Punta Leona / Jacó / Costa Rica → Viator, with explicit wording that ERN must not imply Punta Leona admission or resort access;
+- Costa Rica independent-driving utility → QEEQ;
+- Panama independent-driving utility → QEEQ;
+- Central America optional connectivity → Airalo.
+
+The existing Laikipia / Mpala Viator opportunity was **expanded rather than duplicated** to include Porini Rhino Camp / Ol Pejeta. Its scope now explicitly forbids implying direct tour access to Mpala or Porini unless exact inventory proves it.
+
+A new `central-america-independent-travel` utility-routing cluster now coordinates QEEQ / Localrent / EconomyBookings / Airalo research with explicit duplicate suppression:
+- normally one car-rental option per country/context;
+- normally one connectivity option per country/context;
+- utilities appear only after destination choice, never on Earth-ranking or live-camera surfaces.
+
+#### Wider Travelpayouts program research — separated from owner approval
+Created `data/travelpayouts-program-catalog-research.json` as a dedicated **research-only** registry for promising Travelpayouts programs that must not be treated as ERN-approved until owner-project access is confirmed.
+
+Official Travelpayouts documentation currently supports broader program research across accommodation, transport and activities. Research registry now includes:
+- Booking.com;
+- Hotels.com;
+- Trip.com;
+- Agoda;
+- Expedia;
+- Rakuten Travel;
+- 12Go;
+- Aviasales;
+- GetYourGuide.
+
+Every one is currently marked `OWNER_PROJECT_AVAILABILITY_REQUIRED`.
+
+Hard rule preserved:
+**Travelpayouts catalog presence ≠ ERN owner-project approval.**
+Before any program graduates into ERN's unlocked/usable registry, owner-side Project availability, exact destination/product linking, tracked-link generation, manual verification and disclosure are required. No catalog program was publicly activated in this batch.
+
+The existing unlocked-program research was also extended:
+- QEEQ research now includes Costa Rica and Panama road-trip contexts;
+- Airalo research now includes Honduras, Costa Rica and Panama connectivity contexts;
+- one-rental-option and one-connectivity-option suppression remain in force.
+
+#### Health and validation
+Operations **1425 SUCCESS** after the Central America additions.
+- eligible searchable sources: **575**;
+- unique URLs: **440**;
+- current cohort: **88 sources / 62 unique URLs**;
+- reachable: **80**;
+- missing: **0**;
+- access-blocked: **4**;
+- temporary/network: **4**;
+- recovered: **3**;
+- repair: **3**;
+- review: **4**;
+- watch: **1**.
+
+Operations **1426 SUCCESS** after the Porini / Ol Pejeta addition.
+- eligible searchable sources: **576**;
+- unique URLs: **441**;
+- current cohort: **89 sources / 63 unique URLs**;
+- reachable: **79**;
+- missing: **0**;
+- access-blocked: **4**;
+- temporary/network: **6**;
+- recovered: **3**;
+- repair: **3**;
+- review: **4**;
+- watch: **3**.
+
+The three REPAIR items remain Balykchy, Águas de Lindóia and Kanlaon. Each already has separate provider evidence indicating an active official/provider surface, so automated probe failures still do not justify deletion or truth mutation. The four REVIEW items remain access-pattern-only. New transient WATCH observations are allowed to recheck naturally and are not treated as broken sources.
+
+Pages **2636 completed SUCCESS** for the final public source/commercial state in this batch. The broader Travelpayouts catalog-research file added afterward is research-only and does not alter public placement or Earth ranking.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- all LINK_ONLY / external additions remain Search/Explore-only;
+- IMAGE_REFRESH / Current Image renewal remains natural-schedule only;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no automatic Travelpayouts placement or link rewriting;
+- no paid ranking;
+- commercial value never affects Earth ranking, source truth, health or currentness.
