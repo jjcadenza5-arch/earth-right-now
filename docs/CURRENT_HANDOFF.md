@@ -3742,3 +3742,96 @@ Pages **2604 SUCCESS** for the final 513-place state.
 - deployment completed with reported `errors: []`.
 
 Protected invariants remain unchanged: Watch Earth in-ERN playback only; natural Current Image renewal only; public generative Guide OFF; public Now Moments media OFF; no automatic social posting/account creation; no automatic Travelpayouts Drive/link rewriting; no paid ranking; commercial value never affects Earth ranking, source truth, health or currentness.
+
+
+### Great Smoky Mountains + Travelpayouts diversification batch — 2026-10-06
+Owner asked ERN to keep expanding both Earth coverage and business coverage in large balanced batches, with explicit attention to the many Travelpayouts programs beyond Klook/Viator.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **513 to 521 places** (**526 healthy source records** total).
+- lazy supplemental Search/Explore catalog: **202 / 250 rows**;
+- remaining bounded supplemental capacity before another architecture review: **48 rows**.
+
+New official NPS current-image places:
+- Great Smoky Mountains — Kuwohi;
+- Great Smoky Mountains — Newfound Gap;
+- Great Smoky Mountains — Purchase Knob;
+- Great Smoky Mountains — Look Rock;
+- Crater Lake — Annie Spring Entrance;
+- Crater Lake — Steel Information Center;
+- Rocky Mountain National Park — Kawuneeche Valley;
+- Rocky Mountain National Park — Longs Peak.
+
+The Great Smoky Mountains NPS page states the park's digital webcam images update approximately every 15 minutes. Crater Lake and Rocky Mountain additions use current official NPS webcam surfaces. All eight remain `LIVE_IMAGE` + `LINK_ONLY` + Search/Explore-only with Watch hold. They do not change Watch Earth eligibility.
+
+Existing park-level business bridges were extended rather than duplicated:
+- one Great Smoky Mountains / Gatlinburg Viator opportunity serves the four Smokies viewpoints;
+- existing Crater Lake opportunity now also maps Annie Spring and Steel Information Center;
+- existing Rocky Mountain National Park opportunity now also maps Kawuneeche Valley and Longs Peak.
+
+#### Travelpayouts diversification — destination mappings
+Commercial opportunity registry advanced from **298 to 312 records**.
+
+New differentiated Travelpayouts destination mappings:
+- Radical Storage → New York, London, Rome, Dublin, Chicago, Istanbul;
+- Localrent → Georgia/Tbilisi, Montenegro/Kolašin, Greek islands (Santorini/Mykonos), Türkiye/Istanbul onward-road-trip context;
+- WeGoTrip → Rome, Dublin, Istanbul self-guided cultural contexts.
+
+All remain `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`. No tracked URL or coverage claim was invented. Owner-side city/destination inventory and exact tracked link must be confirmed before public placement.
+
+#### Travelpayouts diversification — utility research layer
+The generic utility research layer was expanded from 5 to **11** program-level opportunities. Added:
+- Localrent road-trip coverage;
+- WeGoTrip self-guided city utility;
+- BikesBooking local mobility;
+- AirHelp post-flight-disruption recovery;
+- EKTA optional travel protection;
+- GetTransfer as a transfer-coverage fallback.
+
+These utilities remain planning-only and fail closed. AirHelp is explicitly post-disruption only; EKTA is optional and must never use fear-based presentation; GetTransfer is reserved for gaps not already served by Welcome Pickups/Kiwitaxi/intui.travel; BikesBooking is destination-specific, not global auto-placement.
+
+Utility routing now includes explicit clusters for major-city luggage storage, Caucasus/Balkans/Greek-island independent driving, and historic-city self-guided culture.
+
+#### Travelpayouts program coverage matrix
+`data/travelpayouts-program-ranking.json` was normalized so WeGoTrip uses canonical id `wegotrip` consistently. A coverage matrix now distinguishes:
+- destination-mapped programs;
+- utility-research-mapped programs;
+- programs intentionally left unmapped in reserve.
+
+Programs currently left in reserve include GetRentacar, Economybookings and secondary eSIM/recovery alternatives where ERN already has a clearer utility choice. This is deliberate duplicate suppression, not unfinished activation. ERN should not use every available affiliate program merely because it exists.
+
+Accommodation remains a distinct business gap. Existing Trip.com/Hotels.com research stays owner-account-status gated; no stay partner was invented or activated from public catalog presence alone.
+
+#### Health + release validation
+Operations **1406 SUCCESS** after the first Smokies/source expansion and Operations **1407 SUCCESS** after the final 521-place source state.
+
+Latest Operations 1407 searchable-source health:
+- eligible searchable sources: **530**;
+- eligible unique URLs: **405**;
+- rotating cohort: **80 sources / 57 unique URLs**;
+- reachable: **72**;
+- missing: **0**;
+- access-blocked: **4**;
+- temporary/network: **4**;
+- recovered: **0**;
+- repair: **2**;
+- review: **4**;
+- watch: **2**.
+
+REPAIR remains Balykchy and Kanlaon, both previously supported by separate provider evidence and therefore not automatically removed. REVIEW remains Dolomiti Superski, Sangay, Addo and Satara for repeated access limitation. The two Guernsey sources are transient WATCH only and must recheck naturally rather than being treated as broken.
+
+Pages **2606 SUCCESS** for the first 517-place / 312-opportunity state and Pages **2608 SUCCESS** for the final 521-place state.
+- all **112 current ERN release smoke tests passed**;
+- Supplemental Search integrity passed at **202 rows**;
+- hard lean-core budget remains exactly **575000 bytes**;
+- deployment completed with reported `errors: []`.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- IMAGE_REFRESH / Current Image renewal remains natural-schedule only;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no automatic Travelpayouts placement or link rewriting;
+- no paid ranking;
+- commercial value never affects Earth ranking, source truth, health or currentness.
