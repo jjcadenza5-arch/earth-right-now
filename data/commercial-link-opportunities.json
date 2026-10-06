@@ -4749,6 +4749,195 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Lesotho/d21903-ttd",
       "publicInventoryEvidence": "Current Viator Lesotho inventory includes multi-day Lesotho cultural/mountain tours and multiple Sani Pass day trips.",
       "nextAction": "Generate one owner-side Lesotho destination-level tracked link and manually verify it; do not imply that a specific tour visits Afriski unless the itinerary explicitly says so."
+    },
+    {
+      "id": "viator-great-smoky-mountains",
+      "destination": "Great Smoky Mountains National Park / Gatlinburg",
+      "placeIds": [
+        "us-smokies-kuwohi",
+        "us-smokies-newfound-gap",
+        "us-smokies-purchase-knob",
+        "us-smokies-look-rock"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has four official NPS current-image viewpoints across Great Smoky Mountains National Park. One park-level planning bridge is more useful than four repetitive commercial placements.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Gatlinburg/d24151-ttd",
+      "publicInventoryEvidence": "Viator maintains Gatlinburg / Great Smoky Mountains sightseeing and activity inventory.",
+      "nextAction": "Generate one owner-side Great Smoky Mountains or Gatlinburg destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "radical-storage-new-york",
+      "destination": "New York luggage storage",
+      "placeIds": [
+        "new-york-harbor"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2",
+      "reason": "Unlocked Travelpayouts luggage-storage utility can be useful after city discovery, especially around arrival/departure windows. It must remain a secondary trip-planning action rather than a discovery driver.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm owner-side Radical Storage coverage for this exact city, generate a tracked city/destination link, and manually verify it before any public placement."
+    },
+    {
+      "id": "radical-storage-london",
+      "destination": "London luggage storage",
+      "placeIds": [
+        "london-savoy-place",
+        "london-abbey-road-crossing"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2",
+      "reason": "Unlocked Travelpayouts luggage-storage utility can be useful after city discovery, especially around arrival/departure windows. It must remain a secondary trip-planning action rather than a discovery driver.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm owner-side Radical Storage coverage for this exact city, generate a tracked city/destination link, and manually verify it before any public placement."
+    },
+    {
+      "id": "radical-storage-rome",
+      "destination": "Rome luggage storage",
+      "placeIds": [
+        "rome-spanish-steps"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2",
+      "reason": "Unlocked Travelpayouts luggage-storage utility can be useful after city discovery, especially around arrival/departure windows. It must remain a secondary trip-planning action rather than a discovery driver.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm owner-side Radical Storage coverage for this exact city, generate a tracked city/destination link, and manually verify it before any public placement."
+    },
+    {
+      "id": "radical-storage-dublin",
+      "destination": "Dublin luggage storage",
+      "placeIds": [
+        "dublin-temple-bar"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2",
+      "reason": "Unlocked Travelpayouts luggage-storage utility can be useful after city discovery, especially around arrival/departure windows. It must remain a secondary trip-planning action rather than a discovery driver.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm owner-side Radical Storage coverage for this exact city, generate a tracked city/destination link, and manually verify it before any public placement."
+    },
+    {
+      "id": "radical-storage-chicago",
+      "destination": "Chicago luggage storage",
+      "placeIds": [
+        "chicago-lakefront"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2",
+      "reason": "Unlocked Travelpayouts luggage-storage utility can be useful after city discovery, especially around arrival/departure windows. It must remain a secondary trip-planning action rather than a discovery driver.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm owner-side Radical Storage coverage for this exact city, generate a tracked city/destination link, and manually verify it before any public placement."
+    },
+    {
+      "id": "radical-storage-istanbul",
+      "destination": "Istanbul luggage storage",
+      "placeIds": [
+        "istanbul-sultanahmet"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2",
+      "reason": "Unlocked Travelpayouts luggage-storage utility can be useful after city discovery, especially around arrival/departure windows. It must remain a secondary trip-planning action rather than a discovery driver.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm owner-side Radical Storage coverage for this exact city, generate a tracked city/destination link, and manually verify it before any public placement."
+    },
+    {
+      "id": "localrent-georgia-road-trip",
+      "destination": "Georgia / Tbilisi road-trip car rental",
+      "placeIds": [
+        "tbilisi-center"
+      ],
+      "partnerCandidate": "localrent",
+      "intent": "transport",
+      "priority": "P2",
+      "reason": "Unlocked Travelpayouts car-rental program may add visitor value in independent-driving destinations. Use only if exact destination inventory is available and no clearer approved rental partner already serves the same context.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm Localrent inventory for the exact destination cluster in the owner account, generate and verify one tracked link, and suppress it if a stronger existing rental option already covers the same need."
+    },
+    {
+      "id": "localrent-montenegro-road-trip",
+      "destination": "Montenegro / Kolašin road-trip car rental",
+      "placeIds": [
+        "montenegro-kolasin-1600"
+      ],
+      "partnerCandidate": "localrent",
+      "intent": "transport",
+      "priority": "P2",
+      "reason": "Unlocked Travelpayouts car-rental program may add visitor value in independent-driving destinations. Use only if exact destination inventory is available and no clearer approved rental partner already serves the same context.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm Localrent inventory for the exact destination cluster in the owner account, generate and verify one tracked link, and suppress it if a stronger existing rental option already covers the same need."
+    },
+    {
+      "id": "localrent-greece-islands",
+      "destination": "Greece island car rental",
+      "placeIds": [
+        "santorini-imerovigli",
+        "mykonos-new-port"
+      ],
+      "partnerCandidate": "localrent",
+      "intent": "transport",
+      "priority": "P2",
+      "reason": "Unlocked Travelpayouts car-rental program may add visitor value in independent-driving destinations. Use only if exact destination inventory is available and no clearer approved rental partner already serves the same context.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm Localrent inventory for the exact destination cluster in the owner account, generate and verify one tracked link, and suppress it if a stronger existing rental option already covers the same need."
+    },
+    {
+      "id": "localrent-turkiye-road-trip",
+      "destination": "Türkiye / Istanbul onward car rental",
+      "placeIds": [
+        "istanbul-sultanahmet"
+      ],
+      "partnerCandidate": "localrent",
+      "intent": "transport",
+      "priority": "P2",
+      "reason": "Unlocked Travelpayouts car-rental program may add visitor value in independent-driving destinations. Use only if exact destination inventory is available and no clearer approved rental partner already serves the same context.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm Localrent inventory for the exact destination cluster in the owner account, generate and verify one tracked link, and suppress it if a stronger existing rental option already covers the same need."
+    },
+    {
+      "id": "wegotrip-rome",
+      "destination": "Rome self-guided culture",
+      "placeIds": [
+        "rome-spanish-steps"
+      ],
+      "partnerCandidate": "wegotrip",
+      "intent": "activities",
+      "priority": "P3",
+      "reason": "Unlocked Travelpayouts self-guided audio-tour utility may complement live place discovery in walkable historic cities without duplicating full-service tour products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact destination inventory and generate a verified tracked link owner-side before any public placement; suppress if the visitor action is weaker than existing city-pass or tour options."
+    },
+    {
+      "id": "wegotrip-dublin",
+      "destination": "Dublin self-guided culture",
+      "placeIds": [
+        "dublin-temple-bar"
+      ],
+      "partnerCandidate": "wegotrip",
+      "intent": "activities",
+      "priority": "P3",
+      "reason": "Unlocked Travelpayouts self-guided audio-tour utility may complement live place discovery in walkable historic cities without duplicating full-service tour products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact destination inventory and generate a verified tracked link owner-side before any public placement; suppress if the visitor action is weaker than existing city-pass or tour options."
+    },
+    {
+      "id": "wegotrip-istanbul",
+      "destination": "Istanbul self-guided culture",
+      "placeIds": [
+        "istanbul-sultanahmet"
+      ],
+      "partnerCandidate": "wegotrip",
+      "intent": "activities",
+      "priority": "P3",
+      "reason": "Unlocked Travelpayouts self-guided audio-tour utility may complement live place discovery in walkable historic cities without duplicating full-service tour products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact destination inventory and generate a verified tracked link owner-side before any public placement; suppress if the visitor action is weaker than existing city-pass or tour options."
     }
   ]
 }
