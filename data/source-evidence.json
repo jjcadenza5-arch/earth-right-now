@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T11:45:00Z",
+  "generatedAt": "2026-10-06T12:45:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2696,6 +2696,55 @@
       "freshnessEvidence": "The official Tsaghkadzor Ropeway site currently exposes two 'Watch Online' views and current 2026 operating information.",
       "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
       "checkedAt": "2026-10-06T11:45:00Z"
+    },
+    "south-korea-alpensia-webcam": {
+      "sourceUrl": "https://m.alpensia.com/ski/web-cam.do",
+      "rightsBasis": "First-party Alpensia field-webcam page; ERN links externally.",
+      "freshnessEvidence": "Alpensia's official ski site exposes a dedicated field webcam page and current ski-season information.",
+      "coordinateNote": "Destination-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:45:00Z"
+    },
+    "south-korea-muju-deogyusan-webcam": {
+      "sourceUrl": "https://www.mdysresort.com/english/about/etc_webcam.asp",
+      "rightsBasis": "First-party resort webcam page; ERN links externally.",
+      "freshnessEvidence": "Muju Deogyusan's current official resort site includes a webcam service and current operations information.",
+      "coordinateNote": "Destination-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:45:00Z"
+    },
+    "south-korea-jeju-hallasan-live": {
+      "sourceUrl": "https://m.visitjeju.net/en/detail/view?contentsid=CONT_000000000500685&menuId=DOM_700000000010774",
+      "rightsBasis": "Official tourism/government live source; ERN links externally.",
+      "freshnessEvidence": "Visit Jeju labels the Hallasan view Live Now and attributes it to the Hallasan National Park Management Office.",
+      "coordinateNote": "Destination-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:45:00Z"
+    },
+    "greece-kalavrita-ski-live": {
+      "sourceUrl": "https://kalavritaski.gr/en/",
+      "rightsBasis": "First-party resort website; ERN links externally.",
+      "freshnessEvidence": "Kalavrita Ski Resort's current official site exposes Weather & Webcams, Live Cameras and live operation status.",
+      "coordinateNote": "Destination-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:45:00Z"
+    },
+    "greece-parnassos-fterolaka-live": {
+      "sourceUrl": "https://onparnassos.gr/en/cameras/parnassos-ski-resort-fterolaka-slope-iniohos-live/",
+      "rightsBasis": "Credible regional destination portal carrying the Parnassos Ski Center camera; ERN links externally.",
+      "freshnessEvidence": "On Parnassos currently labels the Fterolaka Iniohos slope view Live.",
+      "coordinateNote": "Destination-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:45:00Z"
+    },
+    "greece-3-5-pigadia-live": {
+      "sourceUrl": "https://35pigadia.com/en/kameres/",
+      "rightsBasis": "First-party ski-center cameras page; ERN links externally.",
+      "freshnessEvidence": "The current official Cameras page exposes live-streaming video and current resort operating-status information.",
+      "coordinateNote": "Destination-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:45:00Z"
+    },
+    "greece-pelion-ski-live": {
+      "sourceUrl": "https://pelionskicentre.gr/",
+      "rightsBasis": "First-party ski-center site; ERN links externally.",
+      "freshnessEvidence": "The current official site exposes Live Cams and a recently updated 2026 operating-status panel.",
+      "coordinateNote": "Destination-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T12:45:00Z"
     }
   },
   "prague-petrin-tower": {
