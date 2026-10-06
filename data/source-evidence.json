@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T10:05:00Z",
+  "generatedAt": "2026-10-06T10:40:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2500,6 +2500,55 @@
       "freshnessEvidence": "Togakushi's official page currently exposes four named live cameras and describes its digital map as linked to live cameras for real-time conditions.",
       "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
       "checkedAt": "2026-10-06T10:05:00Z"
+    },
+    "canada-banff-sunshine-webcams": {
+      "sourceUrl": "https://www.skibanff.com/conditions/",
+      "rightsBasis": "First-party Banff Sunshine current-conditions/webcam page; ERN links externally and does not infer content reuse rights.",
+      "freshnessEvidence": "Banff Sunshine's official conditions page currently exposes several timestamped webcams including Standish Express, Aurora, Mount Assiniboine and Strawberry Express.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:40:00Z"
+    },
+    "canada-lake-louise-ski-cams": {
+      "sourceUrl": "https://cams.skilouise.com/",
+      "rightsBasis": "First-party Lake Louise Ski Resort camera site; ERN links externally.",
+      "freshnessEvidence": "The official camera site currently exposes multiple named current images including Gondola Top, base area, Ptarmigan, Whitehorn Lodge and Paradise viewpoints.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:40:00Z"
+    },
+    "canada-revelstoke-webcams": {
+      "sourceUrl": "https://www.revelstokemountainresort.com/mountain/conditions/webcams/",
+      "rightsBasis": "First-party Revelstoke Mountain Resort webcam page; ERN links externally.",
+      "freshnessEvidence": "Revelstoke's official page currently lists Village, Skywalk, Top of Stoke Chair and Top of Upper Gondola webcams.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:40:00Z"
+    },
+    "canada-big-white-webcams": {
+      "sourceUrl": "https://www.bigwhite.com/mountain-conditions/webcams",
+      "rightsBasis": "First-party Big White webcam page; ERN links externally.",
+      "freshnessEvidence": "Big White currently publishes a broad webcam family including Village Centre, Bullet, The Cliff, Happy Valley, Snow Ghost, Gem Lake and other viewpoints.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:40:00Z"
+    },
+    "canada-silverstar-webcams": {
+      "sourceUrl": "https://www.skisilverstar.com/the-mountain/webcams/",
+      "rightsBasis": "First-party SilverStar webcam page; ERN links externally.",
+      "freshnessEvidence": "SilverStar's current official page exposes an interactive summit webcam plus Pow Cam, Village Cam and several named mountain cameras.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:40:00Z"
+    },
+    "canada-kicking-horse-webcams": {
+      "sourceUrl": "https://kickinghorseresort.com/conditions/mountain-cam/",
+      "rightsBasis": "First-party Kicking Horse mountain-cam page; ERN links externally.",
+      "freshnessEvidence": "The current Kicking Horse page exposes multiple mountain cams including Stairway, Terminator, Eagle's Eye, Crystal Bowl, Base and Catamount.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:40:00Z"
+    },
+    "canada-panorama-webcams": {
+      "sourceUrl": "https://www.panoramaresort.com/panorama-today/mountain-webcams",
+      "rightsBasis": "First-party Panorama Mountain Resort webcam page; ERN links externally.",
+      "freshnessEvidence": "Panorama's current official page publishes named Summit, Champagne Express, Mile 1, Goldie plateau, Village and Showoff camera views with current temperatures.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:40:00Z"
     }
   },
   "prague-petrin-tower": {

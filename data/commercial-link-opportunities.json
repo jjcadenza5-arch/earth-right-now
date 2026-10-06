@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T10:05:00Z",
+  "generatedAt": "2026-10-06T10:40:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -6130,6 +6130,81 @@
       "reason": "Kiwitaxi is already an owner-available transfer program. Select Japanese mountain gateways may be useful only where an exact airport/station-to-resort route exists.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Verify exact owner-side routes such as airport/station-to-resort before creating any tracked link; do not infer coverage from country availability alone."
+    },
+    {
+      "id": "viator-banff-lake-louise",
+      "destination": "Banff National Park / Lake Louise",
+      "placeIds": [
+        "canada-banff-sunshine",
+        "canada-lake-louise-ski"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities-transport",
+      "priority": "P1",
+      "reason": "ERN now has official current mountain views at Banff Sunshine and Lake Louise, and Viator currently has deep Banff/Lake Louise sightseeing and shuttle inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Banff/From-Canmore-Moraine-Lake-Lake-Louise-Round-Trip-Transfer/d611-423398P1",
+      "publicInventoryEvidence": "Current Viator inventory includes highly reviewed Banff/Lake Louise shuttles and full-day Banff National Park tours.",
+      "nextAction": "Generate one owner-side Banff/Lake Louise destination-level tracked link and manually verify it; do not imply ski-resort admission or lift access unless exact product evidence supports it."
+    },
+    {
+      "id": "qeeq-canadian-rockies-roadtrip",
+      "destination": "Canadian Rockies / BC mountain road-trip rental",
+      "placeIds": [
+        "canada-banff-sunshine",
+        "canada-lake-louise-ski",
+        "canada-revelstoke-mountain",
+        "canada-big-white",
+        "canada-silverstar",
+        "canada-kicking-horse",
+        "canada-panorama-mountain"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "Canada's mountain destinations are often road-trip contexts, and QEEQ is already an owner-available rental program. Exact pickup/drop-off and winter terms must be verified before public use.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify a practical Calgary/Kelowna/Vancouver or other gateway pickup context and generate one exact tracked link only for supported trips; do not infer winter tires, chains, one-way fees or mountain-road suitability."
+    },
+    {
+      "id": "kiwitaxi-canadian-rockies-transfers",
+      "destination": "Canadian Rockies / BC mountain transfers",
+      "placeIds": [
+        "canada-banff-sunshine",
+        "canada-lake-louise-ski",
+        "canada-revelstoke-mountain",
+        "canada-big-white",
+        "canada-silverstar",
+        "canada-kicking-horse",
+        "canada-panorama-mountain"
+      ],
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "Arrival transfers can be useful for selected mountain destinations, but only where exact airport/city-to-resort coverage exists.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify exact owner-side supported routes before generating any tracked link; never make generic Canada-wide resort transfer claims."
+    },
+    {
+      "id": "airalo-canada-mountain-connectivity",
+      "destination": "Canada mountain connectivity",
+      "placeIds": [
+        "canada-banff-sunshine",
+        "canada-lake-louise-ski",
+        "canada-revelstoke-mountain",
+        "canada-big-white",
+        "canada-silverstar",
+        "canada-kicking-horse",
+        "canada-panorama-mountain"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Airalo currently publishes Canada-specific eSIM coverage and explicitly positions it for Banff/Rockies travel. Keep it as an optional post-discovery utility.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/canada-esim",
+      "publicInventoryEvidence": "Airalo currently offers Canada-specific eSIM plans and explicitly cites Banff/Rockies travel use cases.",
+      "nextAction": "Generate one owner-side Canada Airalo tracked link if supported. Default to one connectivity provider in public UI."
     }
   ]
 }

@@ -5066,3 +5066,37 @@ No tracked link, rental condition, transfer route, accommodation availability or
 #### Invariants
 Watch Earth remains in-ERN only; external/link-only sources stay out of Watch Earth; Current Image renewal remains natural-schedule only; public Guide/Now Moments remain OFF; no automatic social posting, paid ranking, Travelpayouts placement or link rewriting; hard lean-core ceiling remains 575 KB.
 
+### Canadian Rockies / BC mountain continuation — 2026-10-06
+Continued the same large batch with a North American tranche.
+
+#### Search/Explore
+Added **7 official/current Canadian mountain destinations**:
+- Banff Sunshine Village;
+- Lake Louise Ski Resort;
+- Revelstoke Mountain Resort;
+- Big White;
+- SilverStar;
+- Kicking Horse;
+- Panorama Mountain Resort.
+
+All use first-party resort current-condition/webcam surfaces and remain HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold.
+
+#### Commercial + Travelpayouts
+Added:
+- **Viator Banff/Lake Louise** destination research using current Banff/Lake Louise sightseeing/shuttle inventory;
+- **QEEQ Canadian Rockies/BC road-trip** research;
+- **Kiwitaxi Canadian mountain transfers** research;
+- **Airalo Canada mountain connectivity**, supported by current Canada-specific eSIM inventory.
+
+New utility clusters coordinate road-trip rental, exact-route transfers, stay research and connectivity with one-useful-option suppression.
+
+Combined state after Finland + Japan + Canada continuation:
+- healthy distinct searchable places: **648**;
+- healthy source records: **653**;
+- supplemental Search/Explore: **329 / 500**;
+- commercial opportunities: **387**;
+- utility-routing clusters: **40**;
+- Watch Earth impact: **0**.
+
+No tracked URL, transfer route, rental term, stay availability or owner-program approval was invented.
+

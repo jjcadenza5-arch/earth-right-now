@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T10:05:00Z",
+  "generatedAt": "2026-10-06T10:40:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1007,6 +1007,86 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
       "rule": "Research-only accommodation routing. Rakuten Travel/Trip.com/Booking.com require owner-project availability and exact deep links before public use; default to one stay action."
+    },
+    {
+      "id": "canadian-rockies-roadtrip",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "economybookings",
+        "autoeurope"
+      ],
+      "placeIds": [
+        "canada-banff-sunshine",
+        "canada-lake-louise-ski",
+        "canada-revelstoke-mountain",
+        "canada-big-white",
+        "canada-silverstar",
+        "canada-kicking-horse",
+        "canada-panorama-mountain"
+      ],
+      "activationGate": "OWNER_EXACT_PICKUP_DESTINATION_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "Use one verified rental action after the visitor chooses the mountain region. Do not stack competing rental providers or infer winter equipment."
+    },
+    {
+      "id": "canadian-mountain-arrivals",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "intui-travel",
+        "gettransfer"
+      ],
+      "placeIds": [
+        "canada-banff-sunshine",
+        "canada-lake-louise-ski",
+        "canada-revelstoke-mountain",
+        "canada-big-white",
+        "canada-silverstar",
+        "canada-kicking-horse",
+        "canada-panorama-mountain"
+      ],
+      "activationGate": "EXACT_AIRPORT_CITY_RESORT_PAIR_AND_TRACKED_LINK_REQUIRED",
+      "rule": "One verified transfer option per supported route. Generic country support is insufficient."
+    },
+    {
+      "id": "canadian-mountain-stay-research",
+      "intent": "stay",
+      "preferredProgramCandidates": [
+        "booking-com",
+        "trip-com",
+        "hotels-com"
+      ],
+      "placeIds": [
+        "canada-banff-sunshine",
+        "canada-lake-louise-ski",
+        "canada-revelstoke-mountain",
+        "canada-big-white",
+        "canada-silverstar",
+        "canada-kicking-horse",
+        "canada-panorama-mountain"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
+      "rule": "Research-only until a stay program is actually available to Earthrightnow. One stay action per destination cluster by default."
+    },
+    {
+      "id": "canada-connectivity",
+      "intent": "connectivity",
+      "preferredProgramCandidates": [
+        "airalo",
+        "saily",
+        "yesim"
+      ],
+      "placeIds": [
+        "canada-banff-sunshine",
+        "canada-lake-louise-ski",
+        "canada-revelstoke-mountain",
+        "canada-big-white",
+        "canada-silverstar",
+        "canada-kicking-horse",
+        "canada-panorama-mountain"
+      ],
+      "activationGate": "PROGRAM_COUNTRY_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Optional connectivity after destination selection. Default to one verified eSIM provider for Canada."
     }
   ],
   "islandTravelClusters": [
