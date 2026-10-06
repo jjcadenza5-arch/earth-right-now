@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T04:36:00Z",
+  "generatedAt": "2026-10-06T02:45:00Z",
   "basis": "Fit-first assessment from the complete 26-program Travelpayouts Available inventory shown by the operator. Commission is secondary to ERN visitor utility and editorial fit.",
   "strategy": {
     "principle": "Camera quality and live/current truth come first. Commercial usefulness may help prioritize destinations, but never changes editorial ranking or truth labels.",
@@ -91,7 +91,7 @@
       "cameraSignal": "Favor cities with dense attraction clusters and multi-attraction visitor behavior."
     },
     {
-      "id": "wego-trip",
+      "id": "wegotrip",
       "name": "WeGoTrip",
       "fit": "HIGH",
       "group": "EXPERIENCES",
@@ -395,5 +395,163 @@
     "availableProgramCount": 26,
     "payoutMethodConfigured": false,
     "note": "Operator screenshot confirms the Earthrightnow Travelpayouts project is active/green with 26 available programs. The account still shows a prompt to set the payout method."
+  },
+  "coverageStatus": {
+    "klook": {
+      "commercialRecords": 45,
+      "utilityRecords": 0,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "tiqets": {
+      "commercialRecords": 14,
+      "utilityRecords": 0,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "kkday": {
+      "commercialRecords": 4,
+      "utilityRecords": 0,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "go-city": {
+      "commercialRecords": 6,
+      "utilityRecords": 1,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "wegotrip": {
+      "commercialRecords": 4,
+      "utilityRecords": 1,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "welcome-pickups": {
+      "commercialRecords": 2,
+      "utilityRecords": 0,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "kiwitaxi": {
+      "commercialRecords": 1,
+      "utilityRecords": 1,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "intui-travel": {
+      "commercialRecords": 1,
+      "utilityRecords": 0,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "radical-storage": {
+      "commercialRecords": 6,
+      "utilityRecords": 1,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "localrent": {
+      "commercialRecords": 4,
+      "utilityRecords": 1,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "getrentacar": {
+      "commercialRecords": 0,
+      "utilityRecords": 0,
+      "state": "PROGRAM_NOT_YET_MAPPED",
+      "note": "Keep in reserve until a differentiated visitor-use case and owner-side exact-link path are justified."
+    },
+    "qeeq": {
+      "commercialRecords": 1,
+      "utilityRecords": 0,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "economybookings": {
+      "commercialRecords": 0,
+      "utilityRecords": 0,
+      "state": "PROGRAM_NOT_YET_MAPPED",
+      "note": "Keep in reserve until a differentiated visitor-use case and owner-side exact-link path are justified."
+    },
+    "autoeurope": {
+      "commercialRecords": 1,
+      "utilityRecords": 0,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "bikesbooking": {
+      "commercialRecords": 0,
+      "utilityRecords": 1,
+      "state": "UTILITY_RESEARCH_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "aviasales": {
+      "commercialRecords": 0,
+      "utilityRecords": 1,
+      "state": "UTILITY_RESEARCH_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "kiwi-com": {
+      "commercialRecords": 2,
+      "utilityRecords": 0,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "airalo": {
+      "commercialRecords": 1,
+      "utilityRecords": 1,
+      "state": "DESTINATION_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "yesim": {
+      "commercialRecords": 0,
+      "utilityRecords": 0,
+      "state": "PROGRAM_NOT_YET_MAPPED",
+      "note": "Keep in reserve until a differentiated visitor-use case and owner-side exact-link path are justified."
+    },
+    "gigsky": {
+      "commercialRecords": 0,
+      "utilityRecords": 0,
+      "state": "PROGRAM_NOT_YET_MAPPED",
+      "note": "Keep in reserve until a differentiated visitor-use case and owner-side exact-link path are justified."
+    },
+    "drimsim": {
+      "commercialRecords": 0,
+      "utilityRecords": 0,
+      "state": "PROGRAM_NOT_YET_MAPPED",
+      "note": "Keep in reserve until a differentiated visitor-use case and owner-side exact-link path are justified."
+    },
+    "saily": {
+      "commercialRecords": 0,
+      "utilityRecords": 0,
+      "state": "PROGRAM_NOT_YET_MAPPED",
+      "note": "Keep in reserve until a differentiated visitor-use case and owner-side exact-link path are justified."
+    },
+    "airhelp": {
+      "commercialRecords": 0,
+      "utilityRecords": 1,
+      "state": "UTILITY_RESEARCH_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "compensair": {
+      "commercialRecords": 0,
+      "utilityRecords": 0,
+      "state": "PROGRAM_NOT_YET_MAPPED",
+      "note": "Keep in reserve until a differentiated visitor-use case and owner-side exact-link path are justified."
+    },
+    "ekta": {
+      "commercialRecords": 0,
+      "utilityRecords": 1,
+      "state": "UTILITY_RESEARCH_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    },
+    "gettransfer": {
+      "commercialRecords": 0,
+      "utilityRecords": 1,
+      "state": "UTILITY_RESEARCH_MAPPED",
+      "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
+    }
   }
 }
