@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T10:40:00Z",
+  "generatedAt": "2026-10-06T02:25:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility links are optional post-discovery helpers. They do not affect which place/camera ERN ranks or recommends.",
   "opportunities": [
@@ -53,6 +53,66 @@
       "state": "OWNER_EXACT_LINK_REQUIRED",
       "placementRule": "Only after a visitor enters trip-planning context; never on Watch Earth cards.",
       "why": "Global flight-search utility can support the See Live → Decide → Go journey."
+    },
+    {
+      "id": "localrent-road-trip-coverage",
+      "partnerCandidate": "localrent",
+      "intent": "transport",
+      "scope": "SUPPORTED_ROAD_TRIP_DESTINATIONS",
+      "priority": "P1",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Use only in road-trip/island trip-planning contexts after owner-side destination coverage is confirmed; suppress competing rental brands by default.",
+      "why": "Potentially strong visitor utility in Georgia, Montenegro, island/coastal destinations and other self-drive contexts."
+    },
+    {
+      "id": "wegotrip-self-guided-city",
+      "partnerCandidate": "wegotrip",
+      "intent": "activities",
+      "scope": "WALKABLE_HISTORIC_CITIES",
+      "priority": "P2",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Only where exact self-guided audio-tour inventory exists and the action adds something distinct from city passes/full tours.",
+      "why": "Low-friction cultural utility for visitors already exploring a city through ERN."
+    },
+    {
+      "id": "bikesbooking-local-mobility",
+      "partnerCandidate": "bikesbooking",
+      "intent": "transport",
+      "scope": "BIKE_FRIENDLY_CITIES_ISLANDS_RESORTS",
+      "priority": "P2",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Use only where exact bike/scooter/motorcycle inventory is useful; never auto-place globally.",
+      "why": "Adds a different local-mobility layer in destinations where a bicycle or scooter is a natural way to explore."
+    },
+    {
+      "id": "airhelp-flight-recovery",
+      "partnerCandidate": "airhelp",
+      "intent": "services",
+      "scope": "POST_FLIGHT_DISRUPTION_ONLY",
+      "priority": "P3",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Never show during normal Earth discovery. Only surface in a clearly relevant flight-disruption/help context after exact partner access is verified.",
+      "why": "Potentially useful after a real travel disruption, but unrelated to destination ranking."
+    },
+    {
+      "id": "ekta-optional-travel-protection",
+      "partnerCandidate": "ekta",
+      "intent": "insurance",
+      "scope": "OPTIONAL_TRIP_PLANNING",
+      "priority": "P3",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Optional planning utility only; never fear-based, never presented as required, and never shown on live-view ranking surfaces.",
+      "why": "May fill a later trip-protection gap if owner terms and exact link are acceptable."
+    },
+    {
+      "id": "gettransfer-coverage-gap",
+      "partnerCandidate": "gettransfer",
+      "intent": "transport",
+      "scope": "TRANSFER_COVERAGE_GAPS_ONLY",
+      "priority": "P3",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Reserve for airports/cities/resorts not well served by Welcome Pickups, Kiwitaxi or intui.travel; suppress duplicates.",
+      "why": "Potential fallback transfer coverage without changing the primary transfer choice."
     }
   ],
   "safeguards": {
