@@ -4707,3 +4707,103 @@ The later Travelpayouts catalog/utility research commits are non-public research
 - no automatic Travelpayouts placement or link rewriting;
 - no paid ranking;
 - commercial value never affects Earth ranking, source truth, health or currentness.
+
+### Southern Africa + South Pacific + New Zealand/Thailand balanced expansion — 2026-10-06
+This batch continued ERN in the owner's large-batch operating mode after reconciling the canonical main/handoff checkpoint. It expanded truthful Earth coverage, consolidated downstream commercial paths, and diversified useful travel-utility routing without changing Watch Earth eligibility, public feature gates or the lean first-load core.
+
+#### Canonical reconciliation at batch start
+- starting `main`: **429ce6015647edf241fc54f1d7ec3c2dd1100ec1**, exactly matching the owner's stated checkpoint;
+- latest non-superseded successful runs recorded in the canonical handoff at that checkpoint: Pages **2647 SUCCESS** and Operations **1432 SUCCESS**;
+- starting healthy searchable places: **586**;
+- starting healthy source records: **591**;
+- starting supplemental Search/Explore: **267**;
+- starting commercial opportunities: **359**;
+- source-research candidate backlog remained **469**.
+
+#### Searchable Earth expansion
+Eight new healthy Search/Explore places were added, all through the lazy supplemental layer and all held out of Featured/Watch:
+- **Zimbabwe — Hwange / Linkwasha Waterhole**: first-party Wilderness Linkwasha page with the Africam live waterhole view on the Ngamo Plains.
+- **Zimbabwe — Victoria Falls Safari Lodge Waterhole**: first-party Victoria Falls Safari Collection live lodge-waterhole stream.
+- **Kenya — Sirikoi / Lewa Waterhole**: first-party Sirikoi Lodge live-cam surface in the Lewa/Laikipia conservation landscape.
+- **South Africa — Pilanesberg / Kwa Maritane Waterhole**: first-party Legacy Hotels live-hide camera.
+- **South Africa — Kruger Shalati / Sabie River**: first-party Kruger Shalati live-camera page with Africam streams from the bridge/surrounding landscape.
+- **Fiji — Castaway Island / Mamanuca Islands**: first-party Outrigger/Castaway Island live webcam.
+- **New Zealand — Lake Pukaki / Aoraki-Mount Cook**: first-party Lakestone Lodge current webcam, explicitly updated every five minutes in daylight.
+- **Thailand — Koh Samui / Lipa Noi Beach**: first-party Mandarin Beach Villa public live beachfront webcam.
+
+Every addition is `LINK_ONLY` + `EXTERNAL`, with `featuredHold: true`, `watchHold: true` and no inferred rebroadcast permission.
+
+Current catalog counts after the batch:
+- healthy distinct searchable places: **594**;
+- healthy source records: **599**;
+- supplemental Search/Explore records: **275 / 500**;
+- total searchable source records including non-healthy core states: **603**;
+- first-load/core source catalog was not modified.
+
+A direct mirror of `scripts/search-supplemental-status.mjs` against current main passed:
+- no duplicate supplemental IDs;
+- no duplicate core place IDs;
+- all supplemental rows HEALTHY;
+- all remain LINK_ONLY;
+- all remain Featured/Watch held;
+- all source URLs remain HTTPS;
+- supplemental capacity remains below 500;
+- Watch Earth impact remains zero.
+
+#### Destination/business expansion
+Commercial opportunity registry advanced from **359 to 363 records**.
+
+New exact-link-gated opportunities:
+- Victoria Falls, Zimbabwe → Viator;
+- Hwange National Park, Zimbabwe → Viator;
+- Pilanesberg National Park, South Africa → Viator;
+- Aoraki / Mount Cook & Lake Pukaki, New Zealand → Viator.
+
+Existing regional paths were consolidated instead of duplicated:
+- Laikipia / Lewa / Ol Pejeta Viator research path now also covers Sirikoi;
+- park-level Kruger Viator path now also covers Kruger Shalati;
+- already-verified Fiji/Klook destination bridge now also covers Castaway Island;
+- existing Koh Samui/Viator path now also covers Lipa Noi.
+
+All newly created opportunities remain `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`. No tracked URL, partner approval, price, offer or availability was invented.
+
+A commercial-registry structural preflight against current main passed:
+- unique opportunity IDs;
+- required destination/partner/state fields present;
+- `publicActivationAllowed: false`;
+- automatic placement remains false;
+- automatic link rewriting remains false;
+- commission remains prohibited from affecting editorial ranking;
+- no new public/tracked placement data was inserted.
+
+#### Travelpayouts diversification
+Utility routing expanded from **18 to 21 general utility clusters** while remaining research/routing metadata only.
+
+New routing clusters:
+- **Southern Africa safari arrivals** → Kiwitaxi / intui.travel / GetTransfer research, requiring an exact supported airport-destination pair and owner tracked link before use.
+- **South Pacific island connectivity** → Airalo / Saily / Yesim research for Fiji/French Polynesia contexts, with one verified eSIM option per destination context by default.
+- **Thailand island arrival/connectivity** → Kiwitaxi / intui.travel / Airalo research for Koh Samui, requiring exact route/country coverage and tracked-link verification.
+
+These are post-discovery utilities only. They do not affect Earth ranking, source truth, health/currentness, Featured selection or Watch Earth.
+
+#### Validation / release state
+Two source/business commits were made:
+- `f5d0fea8e60fb6dcc413ff45006fc89d395d917c` — Southern Africa/Fiji source + business/utility expansion;
+- `966c2f8f38e2c9314ea09b1113981b4030748514` — New Zealand/Thailand continuation and consolidated business routing.
+
+The final current-state structural checks described above passed against `966c2f8f38e2c9314ea09b1113981b4030748514`.
+
+The connected GitHub interface available in this session does not expose generic push-triggered Actions run listing, and commit combined-status currently does not return Pages/Operations run records. Therefore this handoff deliberately **does not invent a new Pages or Operations run number or claim an unobserved workflow result**. The last independently reconciled successful canonical run numbers remain Pages **2647** and Operations **1432** until a later canonical reconciliation can observe newer completed runs. Because only the lazy supplemental/business-routing files were changed, the first-load core was untouched; the protected hard lean-core ceiling remains **575 KB**.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- LINK_ONLY / EXTERNAL sources remain out of Watch Earth;
+- IMAGE_REFRESH / Current Image renewal remains natural-schedule only and was not manually triggered;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no automatic Travelpayouts public placement or link rewriting;
+- no paid ranking;
+- commercial value never affects Earth ranking, source truth, health or currentness;
+- hard lean-core ceiling remains **575 KB**.
+
