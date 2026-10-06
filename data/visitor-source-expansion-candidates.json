@@ -898,6 +898,24 @@
       "evidenceUrls": [
         "https://www.chapelco.com/"
       ]
+    },
+    {
+      "id": "turkey-uludag-camera-recovery",
+      "state": "HOLD_FEEDS_NOT_READY",
+      "why": "Uludaginfo documents a substantial official/current camera network but the retrieved camera page currently reports the live streams offline during infrastructure work.",
+      "next": "Recheck naturally when the provider restores live streams; do not promote an offline camera network as current.",
+      "evidenceUrls": [
+        "https://www.uludaginfo.com/en/webcam"
+      ]
+    },
+    {
+      "id": "turkey-erciyes-official-camera-route",
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "Current Erciyes research points to Kayseri Metropolitan Municipality's official live-camera portal, but ERN has not yet bound a stable exact resort-camera target from that portal.",
+      "next": "Resolve exact official Kayseri/Erciyes camera URLs and currentness before promotion.",
+      "evidenceUrls": [
+        "https://izle.kayseri.bel.tr/kategori/erciyes"
+      ]
     }
   ],
   "guardrails": {

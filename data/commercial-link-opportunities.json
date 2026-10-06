@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T11:10:00Z",
+  "generatedAt": "2026-10-06T11:45:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -6493,6 +6493,150 @@
       "reason": "ERN now has a first-party Las Leñas live view. Mendoza remains an established Viator destination and mountain activity context, but exact Las Leñas fit must be verified owner-side.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Search owner-side Viator inventory for Las Leñas/Malargüe/Mendoza mountain products. If no useful exact destination coverage exists, keep dormant rather than forcing a generic Mendoza link."
+    },
+    {
+      "id": "viator-shahdag-azerbaijan",
+      "destination": "Shahdag / Quba, Azerbaijan",
+      "placeIds": [
+        "azerbaijan-shahdag"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Shahdag live-camera source and current Viator inventory includes heavily reviewed Shahdag/Quba alpine day tours from Baku.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Baku/Azerbaijans-Alpine-Odyssey-Shahdag-and-Qusar-Exploration/d22974-90200P39",
+      "publicInventoryEvidence": "Current Viator inventory directly serves Shahdag/Quba/Candy Cane Mountain day-trip contexts.",
+      "nextAction": "Generate one owner-side Shahdag/Quba destination-level Viator tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-shahdag-azerbaijan",
+      "destination": "Shahdag / Quba, Azerbaijan",
+      "placeIds": [
+        "azerbaijan-shahdag"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Klook currently carries a Shahdag Mountain Resort & Candy Cane Mountains full-day tour, providing an alternative active-program path.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/232713-shahdag-mountain-resort-candy-cane-mountains-full-day-tour/",
+      "publicInventoryEvidence": "Current Klook inventory explicitly includes Shahdag Mountain Resort.",
+      "nextAction": "Generate one owner-side Shahdag Klook tracked link only if it adds distinct value versus Viator; do not show both by default."
+    },
+    {
+      "id": "viator-tufandag-gabala",
+      "destination": "Tufandag / Gabala, Azerbaijan",
+      "placeIds": [
+        "azerbaijan-tufandag"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party Tufandag live-camera source and current Viator Gabala tours explicitly include Tufandag Mountain Resort.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Baku/Gabala-and-Shamakhi-Group-tour-All-Inclusive/d22974-349399P1",
+      "publicInventoryEvidence": "Current Viator inventory explicitly includes Tufandag Mountain Resort on Gabala itineraries.",
+      "nextAction": "Generate one owner-side Gabala/Tufandag tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-gudauri-georgia",
+      "destination": "Gudauri / Kazbegi, Georgia",
+      "placeIds": [
+        "gudauri-ski-area",
+        "gudauri-kobi"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN already has Gudauri/Kobi current-view coverage and Viator currently has dedicated Gudauri/Kazbegi mountain-tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Tbilisi/Full-day-private-trip-to-Gudauri-ski-resort-and-Mtskheta/d22516-33227P33",
+      "publicInventoryEvidence": "Current Viator inventory directly visits Gudauri Ski Resort and the Kazbegi/Gudauri corridor.",
+      "nextAction": "Generate one owner-side Gudauri/Kazbegi destination-level tracked link and manually verify it; reuse across Gudauri/Kobi rather than creating camera-level links."
+    },
+    {
+      "id": "viator-bakuriani-georgia",
+      "destination": "Bakuriani / Borjomi, Georgia",
+      "placeIds": [
+        "georgia-bakuriani"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a current Bakuriani live stream and Viator has current Bakuriani/Borjomi day-trip inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-IN/tours/Tbilisi/Bakuriani-Borjomi-full-day-trip/d22516-248624P2",
+      "publicInventoryEvidence": "Current Viator inventory includes Bakuriani/Borjomi trips with winter sports and mountain contexts.",
+      "nextAction": "Generate one owner-side Bakuriani/Borjomi destination-level tracked link and manually verify it."
+    },
+    {
+      "id": "viator-tsaghkadzor-armenia",
+      "destination": "Tsaghkadzor / Lake Sevan, Armenia",
+      "placeIds": [
+        "armenia-tsaghkadzor"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has first-party Tsaghkadzor Ropeway live/current views and Viator currently has multiple Tsaghkadzor/Lake Sevan day trips from Yerevan.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-PH/tours/Yerevan/Tsaghkadzor-ski-resort/d22425-24362P20",
+      "publicInventoryEvidence": "Current Viator inventory directly includes Tsaghkadzor Ropeway/ski-town visits.",
+      "nextAction": "Generate one owner-side Tsaghkadzor destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "localrent-caucasus-roadtrip",
+      "destination": "Caucasus mountain road-trip research",
+      "placeIds": [
+        "gudauri-ski-area",
+        "gudauri-kobi",
+        "georgia-bakuriani",
+        "armenia-tsaghkadzor",
+        "azerbaijan-shahdag",
+        "azerbaijan-tufandag"
+      ],
+      "partnerCandidate": "localrent",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "ERN already uses Localrent for Georgia/Tbilisi road-trip research. The Caucasus mountain expansion creates a broader road-trip research context, but country inventory must be checked individually.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify owner-side Localrent coverage country by country. Use only where exact pickup and destination coverage is real; never imply Armenia/Azerbaijan coverage from Georgia availability."
+    },
+    {
+      "id": "kiwitaxi-caucasus-mountain-transfers",
+      "destination": "Caucasus mountain arrival transfers",
+      "placeIds": [
+        "gudauri-ski-area",
+        "gudauri-kobi",
+        "georgia-bakuriani",
+        "armenia-tsaghkadzor",
+        "azerbaijan-shahdag",
+        "azerbaijan-tufandag"
+      ],
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "Airport/city-to-resort transfer utility may be valuable for Caucasus mountain trips, but every exact route must be verified owner-side.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify exact Tbilisi/Yerevan/Baku gateway-to-resort routes owner-side; publish only a genuinely supported route."
+    },
+    {
+      "id": "airalo-caucasus-connectivity",
+      "destination": "Caucasus connectivity",
+      "placeIds": [
+        "gudauri-ski-area",
+        "georgia-bakuriani",
+        "armenia-tsaghkadzor",
+        "azerbaijan-shahdag",
+        "azerbaijan-tufandag"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Optional connectivity may be useful for international Caucasus trips after destination choice.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify country-specific Georgia, Armenia and Azerbaijan coverage owner-side and generate at most one verified eSIM option per country context."
     }
   ]
 }

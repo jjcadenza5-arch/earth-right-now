@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T11:10:00Z",
+  "generatedAt": "2026-10-06T11:45:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1253,6 +1253,61 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
       "rule": "Research-only until the Earthrightnow project actually has access to a suitable stay program. One useful stay action per destination cluster by default."
+    },
+    {
+      "id": "caucasus-mountain-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "localrent",
+        "qeeq"
+      ],
+      "placeIds": [
+        "gudauri-ski-area",
+        "gudauri-kobi",
+        "georgia-bakuriani",
+        "armenia-tsaghkadzor",
+        "azerbaijan-shahdag",
+        "azerbaijan-tufandag"
+      ],
+      "activationGate": "COUNTRY_AND_EXACT_ROUTE_OR_PICKUP_COVERAGE_REQUIRED",
+      "rule": "Use one verified transfer or rental action appropriate to the chosen country/resort. Never assume cross-border or winter-equipment terms."
+    },
+    {
+      "id": "caucasus-connectivity",
+      "intent": "connectivity",
+      "preferredProgramCandidates": [
+        "airalo",
+        "saily",
+        "yesim"
+      ],
+      "placeIds": [
+        "gudauri-ski-area",
+        "georgia-bakuriani",
+        "armenia-tsaghkadzor",
+        "azerbaijan-shahdag",
+        "azerbaijan-tufandag"
+      ],
+      "activationGate": "COUNTRY_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Optional connectivity after destination choice; default to one verified eSIM provider per country."
+    },
+    {
+      "id": "caucasus-mountain-stay-research",
+      "intent": "stay",
+      "preferredProgramCandidates": [
+        "booking-com",
+        "trip-com",
+        "agoda"
+      ],
+      "placeIds": [
+        "gudauri-ski-area",
+        "georgia-bakuriani",
+        "armenia-tsaghkadzor",
+        "azerbaijan-shahdag",
+        "azerbaijan-tufandag"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
+      "rule": "Research-only until an accommodation program is actually available to Earthrightnow. One stay action per destination cluster by default."
     }
   ],
   "islandTravelClusters": [

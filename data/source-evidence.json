@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T11:10:00Z",
+  "generatedAt": "2026-10-06T11:45:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2668,6 +2668,34 @@
       "freshnessEvidence": "Ski Portillo currently publishes live/current Mountain Cams for Laguna del Inca, Escuela, Roca Jack, Conejo, Plateau and Tío Bob's together with 2026 snow and lift conditions.",
       "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
       "checkedAt": "2026-10-06T11:10:00Z"
+    },
+    "azerbaijan-shahdag-live": {
+      "sourceUrl": "https://www.shahdag.az/en/live-camera",
+      "rightsBasis": "First-party Shahdag live-camera page; ERN links externally.",
+      "freshnessEvidence": "Shahdag's official site currently exposes named live-camera views including Central Viewpoint, Alpine Horizon, Lake View and 360 Panorama Eye.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:45:00Z"
+    },
+    "azerbaijan-tufandag-live": {
+      "sourceUrl": "https://www.tufandag.com/en/live-cameras",
+      "rightsBasis": "First-party Tufandag live-camera page; ERN links externally.",
+      "freshnessEvidence": "Tufandag currently maintains an official live-cameras page and named live resort camera views.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:45:00Z"
+    },
+    "georgia-bakuriani-live": {
+      "sourceUrl": "https://bakuriani.ski/webcam",
+      "rightsBasis": "Bakuriani resort webcam page; ERN links externally and does not infer rebroadcast rights.",
+      "freshnessEvidence": "The Bakuriani resort page explicitly labels the feed a live stream from the town center and describes it as a 24/7 current look at resort weather.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:45:00Z"
+    },
+    "armenia-tsaghkadzor-ropeway-live": {
+      "sourceUrl": "https://www.ropeway.am/index-en.html",
+      "rightsBasis": "First-party Tsaghkadzor Ropeway site; ERN links externally.",
+      "freshnessEvidence": "The official Tsaghkadzor Ropeway site currently exposes two 'Watch Online' views and current 2026 operating information.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:45:00Z"
     }
   },
   "prague-petrin-tower": {

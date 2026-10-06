@@ -5218,3 +5218,40 @@ Corralco and Chapelco remain exact-target research only; neither was promoted wi
 
 Protected invariants remain unchanged: Watch Earth in-ERN only; external/link-only additions stay Search/Explore-only; Current Image renewal natural-schedule only; Guide/Now Moments OFF; no paid ranking, automatic social posting, automatic Travelpayouts placement or link rewriting; hard lean-core ceiling remains 575 KB.
 
+### Caucasus official-live + Viator/Travelpayouts diversification — 2026-10-06
+Continued the same large batch after the Southern Andes tranche.
+
+#### Search/Explore
+Added **4 new official/current Caucasus destinations**:
+- Shahdag, Azerbaijan;
+- Tufandag / Gabala, Azerbaijan;
+- Bakuriani, Georgia;
+- Tsaghkadzor Ropeway, Armenia.
+
+Existing Gudauri/Kobi current-view coverage was preserved and reused commercially rather than duplicated.
+
+All four new records remain HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold.
+
+#### Commercial / Travelpayouts
+Added nine fit-first research paths:
+- Viator Shahdag/Quba;
+- Klook Shahdag as an alternative program path;
+- Viator Tufandag/Gabala;
+- Viator Gudauri/Kazbegi;
+- Viator Bakuriani/Borjomi;
+- Viator Tsaghkadzor/Lake Sevan;
+- Localrent Caucasus road-trip research;
+- Kiwitaxi Caucasus mountain transfers;
+- Airalo Caucasus connectivity.
+
+New utility clusters coordinate Caucasus access, connectivity and stay research. Country-specific coverage is required; Georgia availability never implies Armenia/Azerbaijan availability.
+
+Uludağ remains HOLD because the provider currently reports its camera network offline. Erciyes remains exact-target research until a stable official Kayseri municipality camera target is bound.
+
+Combined across the Southern Andes + Caucasus continuation:
+- added searchable places in this continuation: **9**;
+- all additions external/link-only and held out of Watch Earth;
+- commercial expansion deliberately spans Viator, Klook, QEEQ, Kiwitaxi, Localrent and Airalo rather than concentrating only on tours.
+
+Protected invariants remain unchanged.
+
