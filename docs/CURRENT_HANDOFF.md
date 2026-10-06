@@ -5605,3 +5605,59 @@ Continue from this checkpoint in the same large-batch rhythm:
 6. require matching successful Pages + Operations validation on the same content SHA before declaring the next canonical production checkpoint.
 
 Current high-value unresolved research includes Everest/Khumbu Hotel View, KenyaLIVE/Nairobi National Park, Montevideo/Pocitos, Montserrat MVO current imagery, New Caledonia/Kuto, Vatican City official webcam routing, Mauritius official webcam targets, Pasikudah/Sri Lanka, Macao SMG WeatherCam target resolution, Zambia/South Luangwa current webcam route, and Falklands Stanley exact-current route.
+
+
+## Autonomous large-batch checkpoint — 2026-10-06 14:54 UTC
+
+Canonical validated content:
+- Content commit: `f5d689a7205ceda0716c65f5e430eabfb50ff8b6`.
+- **Deploy ERN to GitHub Pages #2677** (run 37482422321): SUCCESS.
+- **ERN Operations Check #1458** (run 37482422266): SUCCESS.
+- All Pages pre-deploy guards passed, including release smoke, lean/whole-product, currentness, multilingual aliases, Search/Explore integrity, commercial placement, build, SEO, AI-search readiness, discoverability, operator preflight and production deployment/social-preview verification.
+- Operations completed successfully with the existing fail-closed safety boundaries preserved.
+
+### New-country / territory expansion
+Added **Macao — Government WeatherCam Network** as one new healthy searchable place using the official Meteorological and Geophysical Bureau of Macao SAR Government real-time monitoring surface.
+- Truth: `LIVE_IMAGE`.
+- Playback: `EXTERNAL`.
+- Permission: `LINK_ONLY`.
+- Featured/Watch hold remains ON, so this is Search/Explore-only.
+- The official SMG page exposes a real-time WeatherCam module with ten camera slots plus update-time metadata.
+- ERN intentionally promotes this at network level and does not invent individual camera names/locations that SMG's crawlable surface does not expose.
+
+### Macao commercial / utility diversification
+Added owner-link-gated research paths:
+- Klook Macao — current dedicated destination page with active 2026 inventory.
+- Viator Macao SAR — current active 2026 tours / sightseeing inventory.
+- Airalo Macao — current Macao-specific eSIM inventory.
+- Added `macao-city-planning` routing with at most one useful activity action and one connectivity action after destination choice.
+
+No tracked URL, owner-project approval, public affiliate activation, price promise or program availability was invented. Exact tracked-link generation remains owner-side gated.
+
+### Current validated catalog
+- **697 healthy distinct searchable places**
+- **702 healthy source records**
+- **378 supplemental Search/Explore records**
+- **450 commercial opportunity records**
+- **75 utility-routing clusters**
+- **481 source-research candidates**
+- unresolved research queue: **18**
+- degraded fail-closed core records remain: `pattaya-city-live`, `takayama-miyagawa-current-image`, `jungfrau-region`, `chidori-sakura`
+
+### Preserved invariants
+- Watch Earth remains in-ERN-playback-only.
+- LINK_ONLY / EXTERNAL sources remain outside Watch Earth.
+- IMAGE_REFRESH remains natural-schedule-only.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- Commercial value cannot alter source truth, health, currentness, ranking or editorial prominence.
+- No paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation.
+- Existing lean-core / performance ceilings remain enforced.
+
+### Next autonomous lane
+Continue from this checkpoint with:
+1. unresolved P1/new-country exact-current source resolution where evidence is strong enough;
+2. New Caledonia / Kuto, Vatican City, Montserrat, Zambia/South Luangwa, KenyaLIVE and remaining island/territory gaps only when current truth can be resolved conservatively;
+3. Viator + Travelpayouts-compatible utility diversification only after real destination utility is established;
+4. architecture dedupe / source-health maintenance before further volume growth;
+5. matching successful Pages + Operations validation before the next canonical checkpoint.
