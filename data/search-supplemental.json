@@ -5826,5 +5826,36 @@
     "searchSupplemental": true,
     "rightsBasis": "Provider live-camera page; link-only.",
     "freshnessEvidence": "Ski Macedonia currently labels Vodno 360 and Vodno Karadzica LIVE."
+  },
+  {
+    "id": "lesotho-afriski-current",
+    "placeId": "lesotho-afriski",
+    "title": "Afriski — Maluti Mountains",
+    "provider": "Afriski Mountain Resort / SnowReport SA",
+    "country": "Lesotho",
+    "region": "Maluti Mountains",
+    "categories": [
+      "Mountains",
+      "Snow",
+      "Resorts",
+      "Beautiful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://snowreport.co.za/afriski-mountain-lodge-webcams/",
+    "attribution": "Afriski Mountain Resort / SnowReport SA",
+    "checkedAt": "2026-10-06T02:05:00Z",
+    "lastSuccessfulCheck": "2026-10-06T02:05:00Z",
+    "quality": 96,
+    "freshness": 99,
+    "moment": 97,
+    "story": "Current Afriski mountain webcam in Lesotho's Maluti Mountains, linked directly from Afriski's official resort site.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "Official Afriski site links to the current Snow Report webcam surface; link-only.",
+    "freshnessEvidence": "Afriski's official site exposes a Snow Report Webcam link, whose current page identifies the Afriski Mountain Resort webcam in Lesotho."
   }
 ]
