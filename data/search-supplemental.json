@@ -7188,5 +7188,35 @@
     "searchSupplemental": true,
     "rightsBasis": "Destination webcam surface; link-only.",
     "freshnessEvidence": "CapeVerde.com currently publishes two Praia do Estoril webcam images and states that each refreshes every 10 minutes."
+  },
+  {
+    "id": "dominican-juan-dolio-coral-costa-live",
+    "placeId": "dominican-juan-dolio",
+    "title": "Juan Dolio — Coral Costa Caribe Beach",
+    "provider": "Coral Costa Caribe Beach Resort",
+    "country": "Dominican Republic",
+    "region": "Juan Dolio",
+    "categories": [
+      "Beaches & Water",
+      "Resorts",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://coralcostacaribebeachresort.com/en/",
+    "attribution": "Coral Costa Caribe Beach Resort",
+    "checkedAt": "2026-10-06T05:10:00Z",
+    "lastSuccessfulCheck": "2026-10-06T05:10:00Z",
+    "quality": 95,
+    "freshness": 99,
+    "moment": 97,
+    "story": "First-party real-time beach view from Coral Costa Caribe in Juan Dolio.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "First-party resort live beach cam; link-only.",
+    "freshnessEvidence": "The current Coral Costa Caribe official site labels its beach camera LIVE BEACH CAM and states it is a real-time view."
   }
 ]
