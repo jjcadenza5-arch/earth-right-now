@@ -85,9 +85,9 @@
     "kkday": "Singapore and other Asia-led activity contexts are now being mapped selectively; use only where owner-side inventory adds something distinct from an existing Klook/Viator path.",
     "go-city": "Singapore and other dense attraction cities are mapped as city-pass research; exact supported-city inventory and owner-side link remain required.",
     "kiwi-com": "Remote/island flight-planning cluster now includes Arctic/Faroe/Greenland/Rapa Nui contexts; trip-planning only and never a camera-ranking signal.",
-    "airalo": "Caribbean connectivity cluster is mapped for owner-side country coverage comparison; one-connectivity-option rule remains in force.",
+    "airalo": "Connectivity research now includes Central America (Honduras, Costa Rica, Panama) alongside Caribbean/remote-island contexts. Country coverage must be verified owner-side; one-connectivity-option rule remains in force.",
     "bikesbooking": "Local-mobility research now includes Bali/Denpasar in addition to Madeira/Rome; exact owner-side tracked link and duplicate-suppression review remain required.",
-    "qeeq": "Destination car-rental mapping now covers Iceland plus Puerto Rico/SJU and Curaçao/Hato. One-car-rental-option rule remains in force and exact owner-side tracked links are still required."
+    "qeeq": "Destination car-rental research now includes Costa Rica and Panama in addition to Iceland, Puerto Rico and Curaçao. Exact owner-side inventory and tracked links remain mandatory; one-car-rental-option suppression stays in force."
   },
   "platformModel2026": {
     "verifiedFromOfficialTravelpayoutsDocumentation": true,
