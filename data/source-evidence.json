@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T07:08:00Z",
+  "generatedAt": "2026-10-06T07:30:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2171,6 +2171,27 @@
       "freshnessEvidence": "The provider describes a real public first-party live view of the beachfront and explicitly states visitors can see conditions as they are today.",
       "coordinateNote": "Destination-level place reference only; ERN does not claim the exact camera coordinate.",
       "checkedAt": "2026-10-06T07:08:00Z"
+    },
+    "greenland-tasiilaq-live-views": {
+      "sourceUrl": "https://eastgreenland.com/resources/",
+      "rightsBasis": "Official destination-tourism resource page; ERN links externally and does not infer rebroadcast rights.",
+      "freshnessEvidence": "Visit East Greenland currently identifies multiple Tasiilaq views explicitly as live webcams.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim the exact camera coordinate.",
+      "checkedAt": "2026-10-06T07:30:00Z"
+    },
+    "new-zealand-glentanner-aoraki": {
+      "sourceUrl": "https://www.glentanner.co.nz/web-cam/",
+      "rightsBasis": "First-party destination webcam page; ERN links externally and does not infer image republication rights.",
+      "freshnessEvidence": "Glentanner states its webcam takes a new photo every 10 minutes.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim the exact camera coordinate.",
+      "checkedAt": "2026-10-06T07:30:00Z"
+    },
+    "new-zealand-hermitage-mount-cook-village": {
+      "sourceUrl": "https://www.hermitage.co.nz/webcam?view=Wide+View",
+      "rightsBasis": "First-party hotel/destination webcam page; ERN links externally and does not infer republication rights.",
+      "freshnessEvidence": "The Hermitage labels the view Live and currently publishes five images per hour, with multiple Mount Cook-area webcam angles.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim the exact camera coordinate.",
+      "checkedAt": "2026-10-06T07:30:00Z"
     }
   },
   "prague-petrin-tower": {

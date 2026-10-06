@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T07:08:00Z",
+  "generatedAt": "2026-10-06T07:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -5738,16 +5738,32 @@
       "id": "viator-aoraki-mount-cook",
       "destination": "Aoraki / Mount Cook & Lake Pukaki, New Zealand",
       "placeIds": [
-        "new-zealand-lake-pukaki-lakestone"
+        "new-zealand-lake-pukaki-lakestone",
+        "new-zealand-glentanner-aoraki",
+        "new-zealand-hermitage-mount-cook-village"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a first-party current Lake Pukaki/Aoraki view, and current Viator inventory includes Mount Cook, Tasman Glacier and Lake Pukaki sightseeing and hiking products.",
+      "reason": "ERN now has three complementary Aoraki/Lake Pukaki current-view places: Lake Pukaki, Glentanner and Mount Cook Village. Keep one destination-level Viator bridge across the cluster instead of camera-level affiliate density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Mount-Cook/Glentanner-High-Country-Heli-Hike/d405-429877P1",
       "publicInventoryEvidence": "Current Viator inventory includes Aoraki/Mount Cook experiences whose itineraries explicitly include or pass Lake Pukaki.",
       "nextAction": "Generate one owner-side Aoraki/Mount Cook destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "kiwi-east-greenland-flight-planning",
+      "destination": "East Greenland — Tasiilaq / Kulusuk",
+      "placeIds": [
+        "greenland-tasiilaq",
+        "greenland-kulusuk-airport"
+      ],
+      "partnerCandidate": "kiwi-com",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "ERN now has current East Greenland discovery views in Tasiilaq and Kulusuk. Flight planning is a natural downstream utility for this remote destination, but practical routing must be verified owner-side.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify owner-side Kiwi.com search usefulness for Kulusuk/Tasiilaq access and generate one exact tracked search link only if routing is practical. Do not imply direct service to Tasiilaq when the itinerary actually requires a Kulusuk transfer."
     }
   ]
 }

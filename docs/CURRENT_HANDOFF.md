@@ -4807,3 +4807,43 @@ The connected GitHub interface available in this session does not expose generic
 - commercial value never affects Earth ranking, source truth, health or currentness;
 - hard lean-core ceiling remains **575 KB**.
 
+### East Greenland + Aoraki quality expansion and exact-target research — 2026-10-06
+Continued from canonical main `0774305acc1ce3e837657bb3356e6291465f7262` without reopening completed homepage/design/SEO work.
+
+#### Searchable Earth expansion
+Three high-confidence Search/Explore places were added through the lazy supplemental layer:
+- **Tasiilaq — East Greenland Live Views** from official Visit East Greenland resource pages, which currently identify multiple Tasiilaq webcams as live;
+- **Glentanner — Aoraki / Mount Cook** from Glentanner Park Centre, whose first-party webcam states a new image is captured every 10 minutes;
+- **Aoraki / Mount Cook Village — Hermitage** from The Hermitage Hotel, whose first-party page labels the view Live and currently publishes five images per hour.
+
+All three remain HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold. No rebroadcast/image-reuse permission was inferred.
+
+Current structural catalog state after this tranche:
+- healthy searchable places: **597**;
+- healthy source records: **602**;
+- supplemental Search/Explore records: **278 / 500**;
+- Watch Earth impact: **0**;
+- first-load core unchanged.
+
+#### Business / utility expansion
+Commercial opportunity registry advanced to **364** records.
+- Existing `viator-aoraki-mount-cook` now serves Lake Pukaki, Glentanner and Mount Cook Village as one regional bridge.
+- Added `kiwi-east-greenland-flight-planning` for Tasiilaq/Kulusuk as an exact-link-gated flight-planning utility.
+
+Travelpayouts utility routing expanded to **23** clusters:
+- **East Greenland access** → Kiwi.com / Aviasales / Airalo research with explicit route/coverage verification;
+- **New Zealand South Island road trip** → QEEQ / Economybookings / GetRentacar research with one-rental-option suppression.
+
+No tracked link or route availability was invented.
+
+#### Research-only exact-target work
+Added fail-closed research candidates for:
+- Mt Hutt;
+- Coronet Peak;
+- The Remarkables.
+
+NZSki's official site confirms the three mountain operations and current mountain/weather surfaces, while current external indexing indicates official webcam views. ERN still lacks durable exact first-party webcam targets for these three, so none was promoted. Their state remains `EXACT_TARGET_RESEARCH_REQUIRED`.
+
+#### Safeguards unchanged
+Watch Earth remains in-ERN only; external/link-only sources remain Search/Explore-only; Current Image renewal remains natural-schedule only; public Guide and Now Moments remain OFF; no automatic social posting, paid ranking, automatic Travelpayouts placement or link rewriting; commercial value does not affect Earth ranking, source truth, health or currentness; hard lean-core ceiling remains 575 KB.
+

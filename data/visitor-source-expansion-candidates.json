@@ -795,6 +795,36 @@
         "officialPage": "https://www.youtube.com/watch?v=3x04ElCJNxg",
         "permissionState": "LINK_ONLY_SAFE_PATH_EMBED_NOT_INFERRED"
       }
+    },
+    {
+      "id": "nzski-mt-hutt-webcams",
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "NZSki operates Mt Hutt and current third-party camera indexing confirms multiple official Mt Hutt webcam views, but ERN has not yet resolved the exact durable first-party webcam route from the official site.",
+      "next": "Resolve the exact NZSki Mt Hutt webcam/snow-report target, confirm currentness and keep LINK_ONLY unless permission supports more.",
+      "evidenceUrls": [
+        "https://www.nzski.com/",
+        "https://www.nzski.com/our-mountains"
+      ]
+    },
+    {
+      "id": "nzski-coronet-peak-webcams",
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "NZSki's official Queenstown mountain surface confirms Coronet Peak current mountain/weather reporting; webcam-specific first-party target still needs exact resolution.",
+      "next": "Resolve the exact Coronet Peak webcam target and verify current imagery before any Search/Explore promotion.",
+      "evidenceUrls": [
+        "https://www.nzski.com/queenstown",
+        "https://www.nzski.com/our-mountains"
+      ]
+    },
+    {
+      "id": "nzski-remarkables-webcams",
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "NZSki officially operates The Remarkables and current public mountain reporting confirms active mountain conditions; exact first-party webcam route remains unresolved in ERN.",
+      "next": "Resolve the exact The Remarkables webcam target and verify current imagery before promotion.",
+      "evidenceUrls": [
+        "https://www.nzski.com/queenstown",
+        "https://www.nzski.com/our-mountains"
+      ]
     }
   ],
   "guardrails": {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T07:08:00Z",
+  "generatedAt": "2026-10-06T07:30:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -737,6 +737,38 @@
       ],
       "activationGate": "EXACT_AIRPORT_DESTINATION_PAIR_OR_COUNTRY_COVERAGE_AND_TRACKED_LINK_REQUIRED",
       "rule": "After Koh Samui destination choice, surface at most one verified arrival-transfer action and one verified connectivity action. Never infer resort transfer coverage from island popularity."
+    },
+    {
+      "id": "east-greenland-access",
+      "intent": "transport-connectivity",
+      "preferredProgramCandidates": [
+        "kiwi-com",
+        "aviasales",
+        "airalo"
+      ],
+      "placeIds": [
+        "greenland-tasiilaq",
+        "greenland-kulusuk-airport"
+      ],
+      "activationGate": "EXACT_ROUTE_OR_DESTINATION_SEARCH_AND_COUNTRY_COVERAGE_REQUIRED",
+      "rule": "Use only after East Greenland destination choice. One flight-search action plus at most one verified connectivity option. Do not imply direct Tasiilaq flights if access requires Kulusuk plus local transfer."
+    },
+    {
+      "id": "new-zealand-south-island-road-trip",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "economybookings",
+        "getrentacar"
+      ],
+      "placeIds": [
+        "new-zealand-lake-pukaki-lakestone",
+        "new-zealand-glentanner-aoraki",
+        "new-zealand-hermitage-mount-cook-village",
+        "queenstown-airport"
+      ],
+      "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Road-trip planning only after the visitor chooses the region. Use one verified car-rental option for the trip context; never stack competing rental buttons."
     }
   ],
   "islandTravelClusters": [
