@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T11:45:00Z",
+  "generatedAt": "2026-10-06T12:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -6637,6 +6637,72 @@
       "reason": "Optional connectivity may be useful for international Caucasus trips after destination choice.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Verify country-specific Georgia, Armenia and Azerbaijan coverage owner-side and generate at most one verified eSIM option per country context."
+    },
+    {
+      "id": "radical-storage-santiago",
+      "destination": "Santiago luggage storage",
+      "placeIds": [
+        "chile-valle-nevado",
+        "chile-el-colorado",
+        "chile-portillo"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2_UTILITY",
+      "reason": "Radical Storage currently has verified Santiago locations. Luggage storage can be useful before/after Andes day trips when travelers are between accommodation and transport.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://radicalstorage.com/luggage-storage/santiago/plaza-de-armas-de-santiago/luggage-storage-plaza-de-armas-de-santiago",
+      "publicInventoryEvidence": "Current Radical Storage inventory includes verified Santiago storage locations around Plaza de Armas and Providencia.",
+      "nextAction": "Generate one owner-side Santiago city-level tracked link and use it only in arrival/departure contexts, never on live-camera cards."
+    },
+    {
+      "id": "wegotrip-santiago",
+      "destination": "Santiago self-guided culture",
+      "placeIds": [
+        "chile-valle-nevado",
+        "chile-el-colorado",
+        "chile-portillo"
+      ],
+      "partnerCandidate": "wegotrip",
+      "intent": "activities",
+      "priority": "P2_UTILITY",
+      "reason": "WeGoTrip currently offers Santiago historical-center/cultural audio walks. This is a distinct city-use case for travelers combining Santiago with Andes destinations.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://wegotrip.com/metropolitan-cathedral-of-santiago-de-chile-a8805/",
+      "publicInventoryEvidence": "Current WeGoTrip Santiago inventory includes self-guided cultural and historical walking tours.",
+      "nextAction": "Generate one Santiago self-guided tracked link only if owner-side inventory remains useful; suppress against stronger city-tour choices if redundant."
+    },
+    {
+      "id": "radical-storage-yerevan",
+      "destination": "Yerevan luggage storage",
+      "placeIds": [
+        "armenia-tsaghkadzor"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2_UTILITY",
+      "reason": "Radical Storage currently has verified Yerevan city locations. Storage can help travelers combining Yerevan with a Tsaghkadzor day trip.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://radicalstorage.com/luggage-storage/yerevan/republic-square/luggage-storage-republic-square",
+      "publicInventoryEvidence": "Current Radical Storage inventory includes verified luggage storage near Republic Square and Old Yerevan.",
+      "nextAction": "Generate one owner-side Yerevan city-level tracked link and use only where arrival/departure timing makes storage useful."
+    },
+    {
+      "id": "wegotrip-tbilisi",
+      "destination": "Tbilisi self-guided culture",
+      "placeIds": [
+        "gudauri-ski-area",
+        "gudauri-kobi",
+        "georgia-bakuriani"
+      ],
+      "partnerCandidate": "wegotrip",
+      "intent": "activities",
+      "priority": "P2_UTILITY",
+      "reason": "WeGoTrip currently offers multiple Tbilisi Old Town self-guided audio walks. This is a distinct city-use case for travelers pairing Tbilisi with Gudauri/Bakuriani.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://wegotrip.com/tbilisi-d611717/tbilisi-self-guided-audio-walk-through-old-town-and-river-views-p26317/",
+      "publicInventoryEvidence": "Current WeGoTrip inventory includes Tbilisi Old Town and riverfront self-guided audio routes.",
+      "nextAction": "Generate one owner-side Tbilisi self-guided tracked link only if it adds distinct value after destination choice."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T11:45:00Z",
+  "generatedAt": "2026-10-06T12:10:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1308,6 +1308,37 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
       "rule": "Research-only until an accommodation program is actually available to Earthrightnow. One stay action per destination cluster by default."
+    },
+    {
+      "id": "santiago-city-utilities",
+      "intent": "services-activities",
+      "preferredProgramCandidates": [
+        "radical-storage",
+        "wegotrip"
+      ],
+      "placeIds": [
+        "chile-valle-nevado",
+        "chile-el-colorado",
+        "chile-portillo"
+      ],
+      "activationGate": "OWNER_CITY_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Use only after Santiago/Andes itinerary choice. One city utility/action per need; never stack storage and self-guided content without a real use case."
+    },
+    {
+      "id": "caucasus-gateway-city-utilities",
+      "intent": "services-activities",
+      "preferredProgramCandidates": [
+        "radical-storage",
+        "wegotrip"
+      ],
+      "placeIds": [
+        "armenia-tsaghkadzor",
+        "gudauri-ski-area",
+        "gudauri-kobi",
+        "georgia-bakuriani"
+      ],
+      "activationGate": "OWNER_CITY_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Use Yerevan storage and Tbilisi self-guided culture only as gateway-city utilities after destination choice; never let city utilities affect mountain ranking."
     }
   ],
   "islandTravelClusters": [

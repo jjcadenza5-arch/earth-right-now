@@ -5255,3 +5255,12 @@ Combined across the Southern Andes + Caucasus continuation:
 
 Protected invariants remain unchanged.
 
+### Gateway-city utility diversification — 2026-10-06
+Extended the same large batch beyond tours/transfers into additional owner-available Travelpayouts-style utility lanes:
+- Radical Storage Santiago;
+- WeGoTrip Santiago;
+- Radical Storage Yerevan;
+- WeGoTrip Tbilisi.
+
+These are downstream gateway-city utilities for Andes/Caucasus itineraries, not destination-ranking signals. Exact tracked links remain owner-side gated and one-useful-option suppression still applies.
+
