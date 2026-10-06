@@ -5284,5 +5284,35 @@
     "searchSupplemental": true,
     "rightsBasis": "Dedicated Lithuania live-camera portal; link-only.",
     "freshnessEvidence": "The current Lithuania camera index lists Kaunas Old Town as a live video camera."
+  },
+  {
+    "id": "luxembourg-wasserbillig-moselle-live",
+    "placeId": "luxembourg-wasserbillig-moselle",
+    "title": "Wasserbillig — Moselle & Sûre",
+    "provider": "Deutsch-Luxemburgische Tourist Information / Tourism Commission",
+    "country": "Luxembourg",
+    "region": "Wasserbillig / Moselle",
+    "categories": [
+      "Rivers & Waterways",
+      "Villages",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.lux-trier.info/en/webcam",
+    "attribution": "Deutsch-Luxemburgische Tourist Information",
+    "checkedAt": "2026-10-06T01:05:00Z",
+    "lastSuccessfulCheck": "2026-10-06T01:05:00Z",
+    "quality": 95,
+    "freshness": 99,
+    "moment": 96,
+    "story": "Real-time tourism webcam over the Moselle and the town of Wasserbillig on Luxembourg's eastern border.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "Cross-border official tourism commission webcam page; link-only.",
+    "freshnessEvidence": "The tourism commission states the webcam shows the Moselle and Wasserbillig in real time with high-resolution current images."
   }
 ]
