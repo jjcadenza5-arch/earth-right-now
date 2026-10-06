@@ -11367,5 +11367,36 @@
     "rightsBasis": "Official city tourism live-camera page; ERN links externally.",
     "freshnessEvidence": "Visit Bratislava currently states that online views are available for Apollo Bridge, Old Bridge, and panorama/sunset views from SNP Bridge.",
     "searchSupplemental": true
+  },
+  {
+    "id": "macao-smg-weathercam-live",
+    "placeId": "macao-smg-weathercams",
+    "title": "Macao — Government WeatherCam Network",
+    "provider": "Meteorological and Geophysical Bureau of Macao SAR Government",
+    "country": "Macao",
+    "region": "Macao SAR",
+    "categories": [
+      "Cities & Streets",
+      "Weather & Sky",
+      "Useful Earth",
+      "Asia"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.smg.gov.mo/en",
+    "attribution": "Meteorological and Geophysical Bureau of Macao SAR Government",
+    "checkedAt": "2026-10-06T14:48:30Z",
+    "lastSuccessfulCheck": "2026-10-06T14:48:30Z",
+    "quality": 98,
+    "freshness": 99,
+    "moment": 95,
+    "story": "Official Macao government real-time WeatherCam network with multiple current camera slots and update-time metadata.",
+    "featuredHold": true,
+    "watchHold": true,
+    "rightsBasis": "Official government real-time WeatherCam module; ERN links externally and does not rehost imagery.",
+    "freshnessEvidence": "The current official SMG real-time monitoring page exposes weather-image-cam-0 through multiple camera slots and an update-time field.",
+    "searchSupplemental": true
   }
 ]

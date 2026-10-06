@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T13:50:39Z",
+  "generatedAt": "2026-10-06T14:48:30Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -7172,6 +7172,51 @@
       "publicInventoryEvidenceUrl": "https://www.omio.com/travel/bratislava/vienna",
       "publicInventoryEvidence": "Current Omio route inventory compares direct train, bus and ferry options between Bratislava and Vienna.",
       "nextAction": "Confirm Omio availability to Earthrightnow and create one exact tracked Bratislava–Vienna route only if available; suppress overlapping intercity options."
+    },
+    {
+      "id": "klook-macao",
+      "destination": "Macao / Macau",
+      "placeIds": [
+        "macao-smg-weathercams"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Klook currently has a dedicated Macau destination page with active 2026 inventory across tours, observation decks, museums and shows.",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-SG/destination/c3-macau/1-things-to-do/",
+      "publicInventoryEvidence": "Current Klook Macau inventory shows dozens of bookable 2026 activities including Macau Tower, open-top bus tours and museums.",
+      "nextAction": "Generate one exact owner-side Klook Macau destination link and verify attribution before public activation."
+    },
+    {
+      "id": "viator-macao",
+      "destination": "Macao / Macau",
+      "placeIds": [
+        "macao-smg-weathercams"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Viator currently exposes active Macau SAR tours and excursions for 2026.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Macau-SAR/d4460-ttd",
+      "publicInventoryEvidence": "Current Viator Macau SAR inventory lists active sightseeing, tours and transportation products.",
+      "nextAction": "Generate one exact owner-side Viator Macau destination link and manually verify it before public activation."
+    },
+    {
+      "id": "airalo-macao-connectivity",
+      "destination": "Macao connectivity utility",
+      "placeIds": [
+        "macao-smg-weathercams"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P1_UTILITY",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Airalo currently exposes a dedicated Macao eSIM product page.",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/macao-esim/",
+      "publicInventoryEvidence": "Current Airalo Macao page lists Macao-specific data packages.",
+      "nextAction": "Confirm Airalo availability in the Earthrightnow owner project and generate one Macao tracked link only if available; keep connectivity post-discovery."
     }
   ]
 }

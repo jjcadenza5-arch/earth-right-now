@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T13:50:39Z",
+  "generatedAt": "2026-10-06T14:48:30Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1683,6 +1683,20 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_BRATISLAVA_VIENNA_TRACKED_LINK_REQUIRED",
       "rule": "Use only after Bratislava is selected and only for the exact Bratislava–Vienna intercity context. One route-comparison action; no generic Europe transport clutter."
+    },
+    {
+      "id": "macao-city-planning",
+      "intent": "multi-utility",
+      "preferredProgramCandidates": [
+        "klook",
+        "viator",
+        "airalo"
+      ],
+      "placeIds": [
+        "macao-smg-weathercams"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_DESTINATION_LINK_AND_TRACKING_REQUIRED",
+      "rule": "After Macao is chosen, expose at most one activity action and one connectivity action. Never let commercial availability change WeatherCam ranking, source truth or currentness."
     }
   ],
   "islandTravelClusters": [
