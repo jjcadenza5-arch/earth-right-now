@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T10:45:00Z",
+  "generatedAt": "2026-10-06T01:35:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -28,6 +28,61 @@
       "intent": "transport",
       "eligibleScope": "trip-planning-global",
       "rule": "Only in explicit trip-planning context; never on live-camera cards or Watch Earth."
+    },
+    "localrent": {
+      "intent": "transport",
+      "eligibleScope": "road-trip-and-island-destinations",
+      "rule": "Use only where Localrent owner-side inventory confirms the destination; prefer one car-rental option per place cluster and never rank Earth views by rental economics."
+    },
+    "qeeq": {
+      "intent": "transport",
+      "eligibleScope": "car-dependent-global-destinations",
+      "rule": "Use only after exact destination coverage and owner-side tracked link are verified. Suppress if another approved car-rental partner is already the clearer visitor choice."
+    },
+    "economybookings": {
+      "intent": "transport",
+      "eligibleScope": "airport-and-road-trip-destinations",
+      "rule": "Use as a car-rental alternative only when destination coverage is confirmed and it materially improves visitor utility."
+    },
+    "autoeurope": {
+      "intent": "transport",
+      "eligibleScope": "europe-and-uk-road-trips",
+      "rule": "Use for European/UK road-trip destinations only after exact owner-side destination coverage is confirmed."
+    },
+    "kiwi-com": {
+      "intent": "transport",
+      "eligibleScope": "remote-and-international-flight-planning",
+      "rule": "Only surface in explicit Get There / trip-planning context after a destination/search tracked link is generated and verified; never on live-camera cards."
+    },
+    "intui-travel": {
+      "intent": "transport",
+      "eligibleScope": "supported-airport-resort-transfers",
+      "rule": "Use as a transfer option only where the exact airport/destination pair is available; suppress duplicate transfer brands."
+    },
+    "gettransfer": {
+      "intent": "transport",
+      "eligibleScope": "supported-airport-city-and-resort-transfers",
+      "rule": "Reserve for transfer-coverage gaps; exact route usefulness must be confirmed owner-side."
+    },
+    "saily": {
+      "intent": "connectivity",
+      "eligibleScope": "international-connectivity-fallback",
+      "rule": "Keep as a secondary eSIM candidate; default ERN to one connectivity partner per context and activate only after exact tracked-link verification."
+    },
+    "kkday": {
+      "intent": "activities",
+      "eligibleScope": "asia-led-cities-attractions-and-transport",
+      "rule": "Use where KKday inventory is materially useful for the destination; do not duplicate a stronger existing Klook/Viator action without reason."
+    },
+    "wegotrip": {
+      "intent": "activities",
+      "eligibleScope": "walkable-historic-and-cultural-cities",
+      "rule": "Use for self-guided city/museum contexts only where exact destination inventory exists."
+    },
+    "ekta": {
+      "intent": "insurance",
+      "eligibleScope": "optional-higher-friction-travel-planning",
+      "rule": "Optional travel-protection utility only. Never fear-based, never presented as required, and never on Earth-view ranking surfaces."
     }
   },
   "priorityCityPlaces": [
@@ -276,7 +331,10 @@
     "one eSIM option by default",
     "one airport-transfer option by default",
     "one city-pass option per supported destination",
-    "flight search does not replace destination-specific activity links"
+    "flight search does not replace destination-specific activity links",
+    "one car-rental option per destination cluster by default",
+    "one flight-search option per trip-planning context by default",
+    "insurance/protection never competes with destination discovery or activities"
   ],
   "safeguards": {
     "exactTrackedLinkRequired": true,
@@ -284,5 +342,119 @@
     "affiliateDisclosureRequired": true,
     "noAutomaticPlacement": true,
     "noPaidRanking": true
-  }
+  },
+  "utilityClusters": [
+    {
+      "id": "iceland-road-trip",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "economybookings",
+        "autoeurope"
+      ],
+      "placeIds": [
+        "reykjavik",
+        "iceland-myvatn",
+        "iceland-hveravellir",
+        "iceland-vikurskard",
+        "iceland-saudarkrokur",
+        "iceland-faskrudsfjordur-vikurgerdi",
+        "iceland-bulandshofdi",
+        "iceland-vatnsfjardarhals"
+      ],
+      "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "madeira-road-trip",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "autoeurope",
+        "qeeq",
+        "economybookings"
+      ],
+      "placeIds": [
+        "madeira-funchal",
+        "madeira-porto-moniz",
+        "madeira-calheta",
+        "madeira-machico",
+        "madeira-ribeira-brava",
+        "madeira-sao-vicente",
+        "madeira-santana",
+        "madeira-santa-cruz",
+        "madeira-camara-de-lobos",
+        "madeira-ponta-do-sol",
+        "madeira-pico-do-areeiro"
+      ],
+      "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "greenland-flight-planning",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwi-com",
+        "aviasales"
+      ],
+      "placeIds": [
+        "nuuk-greenland",
+        "greenland-ilulissat-airport",
+        "greenland-kangerlussuaq-airport",
+        "greenland-kulusuk-airport",
+        "greenland-qaarsut-airport",
+        "greenland-sisimiut-airport"
+      ],
+      "activationGate": "EXACT_ROUTE_OR_DESTINATION_SEARCH_LINK_REQUIRED"
+    },
+    {
+      "id": "remote-islands-flight-connectivity",
+      "intent": "transport-connectivity",
+      "preferredProgramCandidates": [
+        "kiwi-com",
+        "airalo",
+        "saily"
+      ],
+      "placeIds": [
+        "chile-rapa-nui-mataveri",
+        "seychelles-beau-vallon",
+        "french-polynesia-tahiti-faaa",
+        "french-polynesia-moorea",
+        "kuredu-island-maldives",
+        "maldives-veligandu",
+        "maldives-komandoo"
+      ],
+      "activationGate": "PROGRAM_COVERAGE_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "mauritius-arrival",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "intui-travel",
+        "gettransfer"
+      ],
+      "placeIds": [
+        "mauritius-grand-baie",
+        "mauritius-pointe-desny",
+        "mauritius-saint-felix",
+        "mauritius-shanti-maurice"
+      ],
+      "activationGate": "EXACT_AIRPORT_DESTINATION_PAIR_REQUIRED"
+    },
+    {
+      "id": "taiwan-activities",
+      "intent": "activities",
+      "preferredProgramCandidates": [
+        "kkday",
+        "klook"
+      ],
+      "placeIds": [
+        "taiwan-jiufen",
+        "taiwan-sun-moon-lake",
+        "taiwan-yehliu",
+        "taiwan-elephant-mountain",
+        "taiwan-tamsui-fishermans-wharf",
+        "taiwan-gaomei-wetland"
+      ],
+      "activationGate": "EXACT_DESTINATION_INVENTORY_AND_LINK_REQUIRED"
+    }
+  ]
 }
