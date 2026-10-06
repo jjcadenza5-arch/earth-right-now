@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T05:25:00Z",
+  "generatedAt": "2026-10-06T05:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -5522,6 +5522,82 @@
       "publicInventoryEvidenceUrl": "https://radicalstorage.com/luggage-storage/san-juan/condado/luggage-storage-condado",
       "publicInventoryEvidence": "Radical Storage currently lists verified bookable storage in San Juan's Condado area.",
       "nextAction": "Generate one owner-side San Juan city-level tracked link and verify it before placement; do not show alongside redundant arrival utilities by default."
+    },
+    {
+      "id": "viator-roatan-honduras",
+      "destination": "Roatán / Bay Islands, Honduras",
+      "placeIds": [
+        "honduras-roatan-west-bay"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party live West Bay / Roatán beach view, and Viator currently has substantial Roatán snorkeling, island-tour, wildlife and shore-excursion inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Roatan/d4132-ttd",
+      "publicInventoryEvidence": "Current Viator Roatán inventory includes island tours, snorkeling, beach and wildlife experiences.",
+      "nextAction": "Generate one owner-side Roatán destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-punta-leona-jaco",
+      "destination": "Punta Leona / Jacó, Costa Rica",
+      "placeIds": [
+        "costa-rica-punta-leona"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party live Punta Leona beach/nature view. A Jacó/Puntarenas planning bridge can add visitor value if owner-side inventory cleanly covers Punta Leona or nearby Central Pacific activities.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Jaco/d4144-ttd",
+      "publicInventoryEvidence": "Viator currently exposes broad Jacó/Central Pacific outdoor, wildlife, beach and adventure inventory.",
+      "nextAction": "Generate one owner-side Jacó/Central Pacific tracked link only if the destination scope is clear; do not imply Punta Leona admission or resort access."
+    },
+    {
+      "id": "qeeq-costa-rica-road-trip",
+      "destination": "Costa Rica road-trip utility",
+      "placeIds": [
+        "costa-rica-punta-leona",
+        "costa-rica-poas-crater",
+        "costa-rica-rincon-sensoria"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "QEEQ link generation is available in the owner Travelpayouts project. Costa Rica is a strong independent-driving context connecting beaches, volcanoes and national-park regions.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm Costa Rica airport/city inventory owner-side, select one useful car-rental search/deep link and manually verify it. Suppress competing rental programs by default."
+    },
+    {
+      "id": "qeeq-panama-road-trip",
+      "destination": "Panama road-trip utility",
+      "placeIds": [
+        "panama-las-lajas-beach",
+        "panama-camaroncito-beach",
+        "panama-canal-miraflores-locks"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "QEEQ link generation is available in the owner Travelpayouts project. Panama's dispersed canal, Pacific-beach and Caribbean destinations can benefit from one optional car-rental planning utility after Earth discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm Panama owner-side rental inventory and generate one exact tracked search/deep link only if it materially helps independent travel; keep one rental option per context."
+    },
+    {
+      "id": "airalo-central-america-connectivity",
+      "destination": "Central America connectivity utility",
+      "placeIds": [
+        "honduras-roatan-west-bay",
+        "costa-rica-punta-leona",
+        "panama-las-lajas-beach",
+        "panama-camaroncito-beach"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Airalo link generation is available in the owner Travelpayouts project. Optional connectivity may be useful for international Central America trips after destination selection.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify country-specific eSIM coverage for Honduras, Costa Rica and Panama in the owner account and generate one exact tracked utility link per supported country only when useful; default to one eSIM brand."
     }
   ]
 }
