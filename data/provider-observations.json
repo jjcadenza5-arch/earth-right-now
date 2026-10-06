@@ -756,5 +756,12 @@
     "confirmation": "INDEPENDENT_PROVIDER_PAGE_ACTIVE",
     "observedAt": "2026-10-06T05:45:00Z",
     "reason": "REPAIR investigation: first-party Guernsey Yacht Club Club Webcams page remains active and states the Havelet Bay / Castle Cornet camera refreshes every 10 seconds. Preserve source truth; automated failures do not prove the camera is broken."
+  },
+  {
+    "id": "yellowstone-lake-current-image",
+    "httpStatus": 200,
+    "confirmation": "INDEPENDENT_PROVIDER_PAGE_ACTIVE",
+    "observedAt": "2026-10-06T06:40:00Z",
+    "reason": "REPAIR investigation: USGS Yellowstone Volcano Observatory confirms the Yellowstone Lake camera was reinstalled in September 2026, publishes the current view at the canonical webcam URL, and states that it updates every 15 minutes. Preserve source truth; repeated automated network/server failures are not sufficient evidence of a broken current-image source."
   }
 ]
