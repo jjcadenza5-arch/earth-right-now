@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T12:45:00Z",
+  "generatedAt": "2026-10-06T13:05:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1397,7 +1397,10 @@
         "greece-kalavrita-ski",
         "greece-parnassos-fterolaka",
         "greece-3-5-pigadia",
-        "greece-pelion-ski"
+        "greece-pelion-ski",
+        "greece-mainalo",
+        "greece-seli",
+        "greece-anilio"
       ],
       "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
       "rule": "Research mainland-Greece mountain driving only after destination choice. One rental option by default; do not infer road/weather suitability or winter equipment."
@@ -1413,7 +1416,10 @@
         "greece-kalavrita-ski",
         "greece-parnassos-fterolaka",
         "greece-3-5-pigadia",
-        "greece-pelion-ski"
+        "greece-pelion-ski",
+        "greece-mainalo",
+        "greece-seli",
+        "greece-anilio"
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
       "rule": "Accommodation research only. No public placement until the program is actually available to Earthrightnow and a destination-specific tracked link is verified."
