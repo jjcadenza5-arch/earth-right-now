@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T05:45:00Z",
+  "generatedAt": "2026-10-06T06:40:00Z",
   "healthyDistinctBaseline": 562,
   "strategy": "Post-250 maintenance: repair or replace degraded sources only when they add unique visitor value; do not inflate count mechanically.",
   "items": [
@@ -124,6 +124,17 @@
       "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_OFFICIAL_PROVIDER_PAGE_INDEPENDENTLY_CONFIRMED_ACTIVE",
       "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
       "blocks562Baseline": false
+    },
+    {
+      "id": "yellowstone-lake-current-image",
+      "placeId": "yellowstone-lake",
+      "title": "Yellowstone Lake — Current View",
+      "country": "United States",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_USGS_PROVIDER_EVIDENCE_CONFIRMS_ACTIVE_15_MINUTE_CAMERA",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocks578Baseline": false
     }
   ]
 }
