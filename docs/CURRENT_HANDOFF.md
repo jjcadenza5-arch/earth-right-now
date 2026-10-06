@@ -4151,3 +4151,110 @@ REPAIR remains Balykchy and Kanlaon, both previously supported by separate provi
 - no automatic Travelpayouts placement or link rewriting;
 - no paid ranking;
 - commercial value never affects Earth ranking, source truth, health or currentness.
+
+
+### 550-place milestone + Singapore/Cayman + Travelpayouts diversification — 2026-10-06
+This batch continued the owner's preferred balanced cadence: meaningful Earth coverage growth plus commercially useful but strictly downstream Travelpayouts diversification, with operational reliability repaired rather than bypassed.
+
+#### Searchable-place expansion
+ERN reached **550 healthy distinct searchable places** from **555 healthy source records**.
+- lazy supplemental Search/Explore catalog: **231 rows**;
+- current supplemental hard ceiling: **500 rows**;
+- all supplemental gates remain unchanged: HEALTHY, LINK_ONLY, HTTPS, Featured/Watch hold, no core ID/place duplication;
+- core first-paint performance remains protected.
+
+Eight new places were added across this combined continuation:
+
+**Cyprus**
+- Paphos — Sea Front;
+- Polemi — Vineyard View.
+
+**Bermuda**
+- Cooper's Island — official Bermuda Weather Service current view;
+- Royal Naval Dockyard — official live port webcam;
+- Nonsuch Island — current Cahow conservation livestream.
+
+**Singapore**
+- Sentosa Gateway — official Singapore Land Transport Authority / OneMotoring current image;
+- Woodlands Causeway — official LTA current image toward Johor.
+
+During verification, OneMotoring displayed both Singapore cameras with current 06/10/2026 timestamps. They remain `LIVE_IMAGE` + `LINK_ONLY` + Search/Explore-only.
+
+**Cayman Islands**
+- George Town — Grand Cayman Port, using the official Port Authority of the Cayman Islands webcam surface. The official port page maintains a dedicated Webcams section; current external camera indexing identifies the active feed as Grand Cayman Port / George Town and attributes it to caymanport.com.
+
+All new places remain external / `LINK_ONLY`; none can fill Watch Earth.
+
+#### Business-side expansion and Travelpayouts exploration
+Commercial registry advanced to **339 opportunities**.
+
+Existing mappings were broadened conservatively:
+- verified Klook Singapore bridge now covers the two new Singapore gateway/current-condition places in addition to the existing port/skyline place;
+- one Grand Cayman Viator bridge now serves Seven Mile Beach and George Town Port rather than creating one affiliate action per camera;
+- Bermuda and Cyprus mappings from the previous batch remain island/region-level rather than per-camera commercial density.
+
+New Travelpayouts research opportunities added:
+- KKday → Singapore activities, only if owner-side inventory adds differentiated value beyond Klook;
+- Go City → Singapore city-pass utility, only if current Singapore coverage exists in the owner project;
+- Radical Storage → Singapore luggage-storage utility for arrival/departure contexts;
+- prior batch also added Radical Storage and WeGoTrip mappings across Prague, Vienna, Budapest, Vilnius and Salzburg, plus Airalo Caribbean connectivity and Kiwi.com Arctic/remote-island flight planning.
+
+A dedicated Singapore utility-routing cluster now enforces distinct visitor need: keep the verified Klook bridge primary where useful; add KKday, Go City or Radical Storage only if the action is meaningfully different. Never stack duplicate activity buttons.
+
+#### Travelpayouts platform research refreshed from official documentation
+Official Travelpayouts documentation was reviewed and recorded in `data/travelpayouts-unlocked-programs.json`:
+- Travelpayouts currently markets access to **90+ trusted brands**;
+- since **2026-04-27**, Projects are automatically connected to relevant programs when available; some are instant, some require project review and some may remain unavailable under brand requirements;
+- the Links tool can generate a tracked deep link to an exact supported brand/destination page once that program is available to the selected Project;
+- optional SubIDs can support ERN placement analytics;
+- Travelpayouts offers automated monetization/link tools, but ERN deliberately keeps automatic placement and automatic link rewriting OFF to preserve editorial control and commercial-neutral Earth ranking.
+
+ERN's owner-side activation rule remains stricter than platform availability: exact destination/program coverage + generated tracked link + manual verification + disclosure are required before any new public placement.
+
+#### Operations architecture repair finalized
+The earlier supplemental-source provider-observation mismatch is fully resolved.
+
+Root cause was that provider-review helper scripts still validated observations only against the core catalog while Search/Explore had already expanded through the supplemental catalog. Valid Guernsey observations were therefore rejected as unknown IDs.
+
+Final repair:
+- `scripts/provider-worklist.mjs` now loads core + supplemental sources;
+- `scripts/operations-status.mjs` now loads core + supplemental sources;
+- provider-safety rejection logic remains intact;
+- no evidence or source was deleted to force a green run.
+
+Validation:
+- JavaScript Syntax Check **1067 SUCCESS**;
+- Operations **1418 SUCCESS** after the architectural correction;
+- Operations **1419 SUCCESS** after the Singapore/Cayman source addition;
+- Operations **1420 SUCCESS** after the Águas de Lindóia repair investigation evidence was recorded;
+- Pages **2623 SUCCESS** for the Singapore/Cayman + commercial mapping release;
+- Pages **2624 SUCCESS** after the health-evidence update;
+- all **112 current ERN release smoke tests passed**;
+- lean-core budget remains exactly **575000 bytes**;
+- Supplemental Search integrity passed with **231** rows.
+
+Latest Operations 1420 searchable-source health:
+- eligible searchable sources: **559**;
+- eligible unique URLs: **427**;
+- current cohort: **87 sources / 61 unique URLs**;
+- reachable: **80**;
+- missing: **0**;
+- access-blocked: **4**;
+- temporary/network: **3**;
+- recovered: **0**;
+- repair: **3**;
+- review: **4**;
+- watch: **0**.
+
+Current REPAIR queue: Balykchy, Águas de Lindóia and Kanlaon. Águas de Lindóia was independently rechecked after escalation: the official Circuito das Águas Paulista page remains publicly active and explicitly labels the source `Câmera ao Vivo`. Therefore source truth and HEALTHY catalog state were preserved; repair disposition is KEEP SOURCE / recheck automated access behavior naturally. Balykchy and Kanlaon likewise remain evidence-review cases rather than automatic removals. The four repeated access-limited sources remain REVIEW only.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- LINK_ONLY / external additions remain Search/Explore-only;
+- Current Image / IMAGE_REFRESH renewal remains natural-schedule only;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no automatic Travelpayouts Drive/LinkSwitcher activation or link rewriting;
+- no paid ranking;
+- commercial value never affects Earth ranking, source truth, health or currentness.
