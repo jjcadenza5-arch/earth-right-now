@@ -11336,5 +11336,36 @@
     "rightsBasis": "Provider permits retransmission only with attribution/link; ERN remains link-only.",
     "freshnessEvidence": "kg.camera currently exposes the Kyzyl-Kiya city camera and states its surveillance video has about a 20-second delay.",
     "searchSupplemental": true
+  },
+  {
+    "id": "slovakia-bratislava-city-live",
+    "placeId": "slovakia-bratislava-city",
+    "title": "Bratislava — Danube & City Views",
+    "provider": "Visit Bratislava",
+    "country": "Slovakia",
+    "region": "Bratislava",
+    "categories": [
+      "Cities & Streets",
+      "Rivers & Water",
+      "Architecture",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.visitbratislava.com/sk/podujatia/zive-kamery-bratislava-2/",
+    "attribution": "Bratislava Tourist Board",
+    "checkedAt": "2026-10-06T13:50:39Z",
+    "lastSuccessfulCheck": "2026-10-06T13:50:39Z",
+    "quality": 96,
+    "freshness": 99,
+    "moment": 96,
+    "story": "Official Bratislava tourism live-camera page with online city views around the Danube bridges and skyline.",
+    "featuredHold": true,
+    "watchHold": true,
+    "rightsBasis": "Official city tourism live-camera page; ERN links externally.",
+    "freshnessEvidence": "Visit Bratislava currently states that online views are available for Apollo Bridge, Old Bridge, and panorama/sunset views from SNP Bridge.",
+    "searchSupplemental": true
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T13:42:45Z",
+  "generatedAt": "2026-10-06T13:50:39Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3112,16 +3112,16 @@
       "id": "viator-bratislava-future",
       "destination": "Bratislava",
       "placeIds": [
-        "bratislava-city-live"
+        "slovakia-bratislava-city"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "Official Bratislava live-camera research aligns with substantial current Viator Bratislava/Slovakia sightseeing inventory.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
+      "reason": "Bratislava now has a verified official live source; owner-side Viator destination inventory should be checked before activation.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/blog/Slovakia/d66",
       "publicInventoryEvidence": "Viator currently lists Bratislava Old Town, Bratislava Castle and Devin Castle among Slovakia attractions, with multiple Bratislava-based activities.",
-      "nextAction": "After a Bratislava camera is promoted, search for a clean Bratislava destination-level Viator partner link and manually verify it before public activation."
+      "nextAction": "Generate one exact owner-side Bratislava destination/activity link only if it is geographically useful; verify attribution before activation."
     },
     {
       "id": "viator-bansko",
@@ -7157,6 +7157,21 @@
       "publicInventoryEvidenceUrl": "https://kiwitaxi.com/en/malta/valletta-airport-valletta-port",
       "publicInventoryEvidence": "Current Kiwitaxi inventory exposes Malta Airport → Valletta Port transfer options.",
       "nextAction": "Confirm owner-project availability and generate one exact tracked Malta Airport / Valletta route; never infer broader island transfer coverage."
+    },
+    {
+      "id": "omio-bratislava-vienna",
+      "destination": "Bratislava ↔ Vienna",
+      "placeIds": [
+        "slovakia-bratislava-city"
+      ],
+      "partnerCandidate": "omio",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "state": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_LINK_REQUIRED",
+      "reason": "Omio currently exposes direct Bratislava–Vienna train, bus and ferry comparison, a natural post-discovery route between two nearby capitals.",
+      "publicInventoryEvidenceUrl": "https://www.omio.com/travel/bratislava/vienna",
+      "publicInventoryEvidence": "Current Omio route inventory compares direct train, bus and ferry options between Bratislava and Vienna.",
+      "nextAction": "Confirm Omio availability to Earthrightnow and create one exact tracked Bratislava–Vienna route only if available; suppress overlapping intercity options."
     }
   ]
 }

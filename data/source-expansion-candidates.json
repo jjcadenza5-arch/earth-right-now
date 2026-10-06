@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T13:46:23Z",
+  "generatedAt": "2026-10-06T13:50:39Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -3370,11 +3370,14 @@
       "sourcePage": "https://www.visitbratislava.com/sk/podujatia/zive-kamery-bratislava-2/",
       "exactTargetUrl": "https://www.visitbratislava.com/sk/podujatia/zive-kamery-bratislava-2/",
       "exactTargetType": "OFFICIAL_TOURISM_LIVE_CAMERA_PAGE",
-      "evidence": "Official Visit Bratislava page advertises live online views of Apollo Bridge, Old Bridge and panorama/sunset views from SNP Bridge.",
+      "evidence": "Official Visit Bratislava currently states that online live views are available for Apollo Bridge, Old Bridge and panorama/sunset views from SNP Bridge.",
       "researchEvidence": "Official city tourism source explicitly describes live cameras/online city views. ERN still requires a working camera target to be confirmed before promotion.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the official Visit Bratislava live-camera page and confirm at least one city/Danube view is currently working."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the official Visit Bratislava live-camera page and confirm at least one city/Danube view is currently working.",
+      "verifiedAt": "2026-10-06T13:50:39Z",
+      "promotedAt": "2026-10-06T13:50:39Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
     },
     {
       "id": "latvia-valmiera-old-town",

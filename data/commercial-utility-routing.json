@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T13:42:45Z",
+  "generatedAt": "2026-10-06T13:50:39Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1671,6 +1671,18 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_ROUTE_OR_DESTINATION_COVERAGE_REQUIRED",
       "rule": "Research only. Southern/western Kyrgyzstan access is geographically sparse; do not infer transfer, rental or tour coverage from national-level inventory. Leave dormant unless an exact useful route exists."
+    },
+    {
+      "id": "bratislava-vienna-intercity",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "omio"
+      ],
+      "placeIds": [
+        "slovakia-bratislava-city"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_BRATISLAVA_VIENNA_TRACKED_LINK_REQUIRED",
+      "rule": "Use only after Bratislava is selected and only for the exact Bratislava–Vienna intercity context. One route-comparison action; no generic Europe transport clutter."
     }
   ],
   "islandTravelClusters": [
