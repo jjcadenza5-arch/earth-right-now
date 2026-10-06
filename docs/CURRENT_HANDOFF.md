@@ -4258,3 +4258,129 @@ Current REPAIR queue: Balykchy, Águas de Lindóia and Kanlaon. Águas de Lindó
 - no automatic Travelpayouts Drive/LinkSwitcher activation or link rewriting;
 - no paid ranking;
 - commercial value never affects Earth ranking, source truth, health or currentness.
+
+
+### Caribbean + Botswana + Travelpayouts utility diversification — 2026-10-06
+Owner continues to prefer large balanced batches: broaden truthful Earth coverage, deepen genuinely useful business mapping, explore the wider Travelpayouts program set, and report only at meaningful checkpoints.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **550 to 562 places** (**567 healthy source records** total).
+- supplemental lazy Search/Explore catalog: **243 rows**;
+- current supplemental guard supports up to **500 rows**, so this batch does not require another scaling change;
+- all new records remain LINK_ONLY / external Search/Explore content with Watch hold.
+
+This batch added **12 healthy searchable places**:
+
+**Botswana — 3 new wildlife places**
+- Chobe — Senyati Waterhole, current Africam/Senyati live stream;
+- Makgadikgadi — Kalahari Salt Pan, current Africam/Natural Selection Foundation live stream;
+- Khwai — Elephant Pan, current Africam/Khwai Private Reserve live stream.
+
+These complement the existing Elephant Valley / Chobe discovery place without collapsing distinct ecosystems into one fake place count.
+
+**Dominican Republic — 3 first-party live places**
+- Casa de Campo — Minitas Beach;
+- Casa de Campo — Teeth of the Dog coastal view;
+- Juan Dolio — Coral Costa Caribe Beach.
+
+All use first-party resort live-camera surfaces and remain external/link-only.
+
+**Puerto Rico — 2 first-party live places**
+- Palomino Island;
+- Fajardo — El Yunque view.
+
+Both use El Conquistador Resort's first-party live-camera surface and extend Puerto Rico beyond the existing Isla Verde view.
+
+**Bonaire — 1 first-party wildlife place**
+- Donkey Sanctuary Bonaire, with the sanctuary's current live animal webcams.
+
+**Cape Verde — 3 current/live places**
+- Boa Vista — Praia do Estoril, refreshed current image;
+- Sal — Ponta Preta Beach, real-time live stream;
+- Sal — Kitesurf Beach, real-time live stream.
+
+The two Sal additions extend the existing Santa Maria Bay place while remaining distinct named beach/surf locations.
+
+#### Business-side expansion and consolidation
+Commercial registry advanced from **339 to 349 opportunities**.
+
+New or materially expanded visitor-planning paths:
+- one canonical Chobe/Kasane Viator path now also covers Senyati rather than creating per-waterhole affiliate duplication;
+- new Makgadikgadi/Botswana Viator research path;
+- new Khwai/Okavango/Maun Viator research path;
+- one canonical Bonaire Viator path now also serves Donkey Sanctuary;
+- Puerto Rico Viator mapping was broadened from Isla Verde to the healthy Fajardo/Palomino/El Yunque places instead of adding redundant Puerto Rico activity records;
+- new La Romana / Casa de Campo Viator path;
+- new Juan Dolio Viator research path, deliberately fail-closed if owner-side destination scope is poor;
+- new Boa Vista Viator path;
+- existing Sal Island Viator mapping now also serves Ponta Preta and Kitesurf Beach.
+
+No tracked URL, offer, inventory claim or partner relationship was invented. New paths remain ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED.
+
+#### Travelpayouts diversification
+The Travelpayouts layer was expanded with differentiated utility mappings rather than more activity-link density:
+- Radical Storage → Bangkok luggage-storage research path;
+- BikesBooking → Bali / Denpasar scooter-motorcycle local-mobility research path;
+- QEEQ → Puerto Rico / SJU island road-trip research path;
+- QEEQ → Curaçao / Hato island road-trip research path;
+- Radical Storage → San Juan luggage-storage research path.
+
+Current public inventory was independently checked before these research mappings were added. Public activation still requires owner-side exact tracked links and manual verification.
+
+Travelpayouts program coverage counts were reconciled to the actual commercial registry. Current mapped commercial counts include:
+- Viator 230;
+- Klook 49;
+- Radical Storage 14;
+- Tiqets 14;
+- WeGoTrip 9;
+- Go City 7;
+- KKday 5;
+- Localrent 5;
+- QEEQ 3;
+- BikesBooking 3;
+- Kiwi.com 3;
+- Welcome Pickups 2;
+- Airalo 2;
+- AutoEurope, Kiwitaxi and intui.travel 1 each.
+
+Utility routing now explicitly includes a Caribbean airport/road-trip cluster for Puerto Rico and Curaçao, with the one-car-rental-option rule preserved. Bangkok and San Juan were also added to the city luggage-storage utility cluster. Availability of more affiliate programs still does not justify more visible buttons by default.
+
+#### Health / repair investigation
+Operations **1421, 1422 and 1423 completed SUCCESS** across staged source additions.
+
+Latest completed searchable-source health from Operations 1423:
+- eligible searchable sources: **571**;
+- eligible unique URLs: **436**;
+- current rotating cohort: **88 sources / 62 unique URLs**;
+- reachable: **79**;
+- missing: **0**;
+- access-blocked: **4**;
+- temporary/network: **5**;
+- recovered: **3**;
+- repair: **5**;
+- review: **4**;
+- watch: **0**.
+
+The health system escalated Águas de Lindóia and the two Guernsey webcam records after repeated automated network/server failures. They were independently investigated rather than automatically mutated:
+- the official Circuito das Águas Paulista page remains active and still explicitly exposes Câmera ao Vivo for Águas de Lindóia;
+- the first-party Guernsey Yacht Club Club Webcams page remains active and explicitly says both cameras refresh every 10 seconds.
+Therefore these three records were preserved as healthy source truth; durable provider observations and maintenance dispositions now document that the automated failures do not prove the cameras are broken.
+
+Balykchy and Kanlaon remain the other two REPAIR records with earlier separate provider evidence supporting continued preservation. Repeated access-limited sources remain REVIEW only.
+
+#### Release validation
+Pages **2629, 2631 and 2632 completed SUCCESS** across this continuation. Latest completed Pages 2632:
+- all **112 current ERN release smoke tests passed**;
+- Supplemental Search integrity passed with **243** records;
+- hard lean-core budget remains exactly **575000 bytes**;
+- deployment completed with reported `errors: []`.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- IMAGE_REFRESH / Current Image renewal remains natural-schedule only;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no automatic Travelpayouts placement or link rewriting;
+- no paid ranking;
+- commercial value never affects Earth ranking, source truth, health or currentness.
