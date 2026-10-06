@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T02:05:00Z",
+  "generatedAt": "2026-10-06T02:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3608,7 +3608,9 @@
       "id": "viator-rocky-mountain-denver",
       "destination": "Rocky Mountain National Park / Denver",
       "placeIds": [
-        "us-rocky-mountain-national-park"
+        "us-rocky-mountain-national-park",
+        "us-rocky-mountain-kawuneeche",
+        "us-rocky-mountain-longs-peak"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -3638,7 +3640,9 @@
       "id": "viator-crater-lake-oregon",
       "destination": "Crater Lake National Park / Oregon",
       "placeIds": [
-        "us-crater-lake-national-park"
+        "us-crater-lake-national-park",
+        "us-crater-lake-annie-spring",
+        "us-crater-lake-steel-center"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
