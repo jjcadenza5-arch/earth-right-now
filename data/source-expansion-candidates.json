@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T05:25:00Z",
+  "generatedAt": "2026-10-06T05:30:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -6456,6 +6456,62 @@
       "evidence": "CapeVerde.com currently labels Kitesurf Beach as a Live stream / Real-time video.",
       "verifiedAt": "2026-10-06T05:25:00Z",
       "promotedAt": "2026-10-06T05:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "honduras-roatan-las-rocas-live",
+      "title": "Roatán — West Bay Beach",
+      "country": "Honduras",
+      "region": "Roatán / Bay Islands",
+      "provider": "Las Rocas Resort & Dive Center",
+      "sourcePage": "https://www.lasrocasresort.com/beachcam/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Las Rocas currently labels the page 'Live from our Beach Cam' and 'Catch a glimpse of paradise… LIVE!'.",
+      "verifiedAt": "2026-10-06T05:30:00Z",
+      "promotedAt": "2026-10-06T05:30:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "costa-rica-punta-leona-live",
+      "title": "Punta Leona — Playa Blanca",
+      "country": "Costa Rica",
+      "region": "Puntarenas / Central Pacific",
+      "provider": "Punta Leona Beach Club & Nature Resort",
+      "sourcePage": "https://www.puntaleona.com/",
+      "priority": "P1_TYPE_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Punta Leona currently invites visitors to view its live cameras and experience Playa Blanca from anywhere in the world.",
+      "verifiedAt": "2026-10-06T05:30:00Z",
+      "promotedAt": "2026-10-06T05:30:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "panama-las-lajas-beach-live",
+      "title": "Las Lajas Beach — Chiriquí",
+      "country": "Panama",
+      "region": "Chiriquí",
+      "provider": "Las Lajas Beach Resort",
+      "sourcePage": "https://laslajasbeachresort.com/en/home/",
+      "priority": "P1_TYPE_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current Las Lajas Beach Resort homepage explicitly exposes a LIVE WEBCAM section.",
+      "verifiedAt": "2026-10-06T05:30:00Z",
+      "promotedAt": "2026-10-06T05:30:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "panama-camaroncito-live",
+      "title": "Camaroncito — Caribbean Beach",
+      "country": "Panama",
+      "region": "Caribbean Coast",
+      "provider": "Camaroncito EcoResort & Beach",
+      "sourcePage": "https://www.camaroncito.net/beachfront-resort-panama",
+      "priority": "P1_TYPE_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Camaroncito currently labels the embedded camera as LIVE Video Feed and states it shows the Caribbean beach in real time.",
+      "verifiedAt": "2026-10-06T05:30:00Z",
+      "promotedAt": "2026-10-06T05:30:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
