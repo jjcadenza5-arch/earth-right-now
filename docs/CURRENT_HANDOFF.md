@@ -4348,25 +4348,27 @@ Utility routing now explicitly includes a Caribbean airport/road-trip cluster fo
 #### Health / repair investigation
 Operations **1421, 1422 and 1423 completed SUCCESS** across staged source additions.
 
-Latest completed searchable-source health from Operations 1423:
+Operations **1424 also completed SUCCESS** after the independent repair evidence was recorded.
+
+Latest completed searchable-source health from Operations 1424:
 - eligible searchable sources: **571**;
 - eligible unique URLs: **436**;
 - current rotating cohort: **88 sources / 62 unique URLs**;
-- reachable: **79**;
+- reachable: **78**;
 - missing: **0**;
 - access-blocked: **4**;
-- temporary/network: **5**;
-- recovered: **3**;
-- repair: **5**;
+- temporary/network: **6**;
+- recovered: **2**;
+- repair: **3**;
 - review: **4**;
-- watch: **0**.
+- watch: **3**.
 
 The health system escalated Águas de Lindóia and the two Guernsey webcam records after repeated automated network/server failures. They were independently investigated rather than automatically mutated:
 - the official Circuito das Águas Paulista page remains active and still explicitly exposes Câmera ao Vivo for Águas de Lindóia;
 - the first-party Guernsey Yacht Club Club Webcams page remains active and explicitly says both cameras refresh every 10 seconds.
-Therefore these three records were preserved as healthy source truth; durable provider observations and maintenance dispositions now document that the automated failures do not prove the cameras are broken.
+Therefore these three records were preserved as healthy source truth; durable provider observations and maintenance dispositions now document that the automated failures do not prove the cameras are broken. On Operations 1424, both Guernsey records recovered naturally and dropped out of REPAIR.
 
-Balykchy and Kanlaon remain the other two REPAIR records with earlier separate provider evidence supporting continued preservation. Repeated access-limited sources remain REVIEW only.
+The remaining REPAIR records are Balykchy, Águas de Lindóia and Kanlaon. Each has separate provider evidence supporting preservation rather than automatic deletion. Repeated access-limited sources remain REVIEW only. Three first-transient WATCH items should recheck naturally on their next cohort and must not be treated as broken from a single transient result.
 
 #### Release validation
 Pages **2629, 2631 and 2632 completed SUCCESS** across this continuation. Latest completed Pages 2632:
