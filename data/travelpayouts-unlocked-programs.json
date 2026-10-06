@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T02:15:00Z",
+  "generatedAt": "2026-10-06T02:20:00Z",
   "evidenceBasis": "Owner screenshots from Travelpayouts Earthrightnow project showing Generate links controls.",
   "rule": "A Generate links control confirms account-side link generation is available. It does not authorize automatic public placement; ERN still requires utility review, exact-link verification and disclosure.",
   "currentCorePartners": [
@@ -74,6 +74,13 @@
   "researchProgress": {
     "radical-storage": "City-arrival utility mapped to six high-traffic ERN city contexts; exact city links remain owner-gated.",
     "localrent": "Independent-driving utility mapped to Georgia, Montenegro, Greek islands and Türkiye contexts; exact inventory remains owner-gated.",
-    "wegotrip": "Self-guided culture utility mapped to Rome, Dublin, Istanbul and Darmstadt contexts; exact destination inventory remains owner-gated."
+    "wegotrip": "Self-guided culture utility mapped to Rome, Dublin, Istanbul and Darmstadt contexts; exact destination inventory remains owner-gated.",
+    "economybookings": "Mapped as car-rental reserve only; activate only where primary rental partners lack useful exact coverage.",
+    "getrentacar": "Mapped as road-trip reserve only; exact destination coverage and owner link remain required.",
+    "saily": "Mapped as eSIM fallback; one-connectivity-option rule remains in force.",
+    "yesim": "Mapped as eSIM fallback for owner-side coverage comparison; not an automatic replacement for Airalo.",
+    "gigsky": "Mapped as specialized connectivity reserve; no public placement without differentiated coverage.",
+    "drimsim": "Mapped as specialized connectivity reserve; no public placement without differentiated coverage.",
+    "compensair": "Mapped as post-disruption fallback behind AirHelp; never a normal destination-discovery action."
   }
 }
