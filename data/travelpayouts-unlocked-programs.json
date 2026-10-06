@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T01:35:00Z",
+  "generatedAt": "2026-10-06T02:15:00Z",
   "evidenceBasis": "Owner screenshots from Travelpayouts Earthrightnow project showing Generate links controls.",
   "rule": "A Generate links control confirms account-side link generation is available. It does not authorize automatic public placement; ERN still requires utility review, exact-link verification and disclosure.",
   "currentCorePartners": [
@@ -70,5 +70,10 @@
     "commissionCannotAffectEditorialRanking": true,
     "automaticPlacement": false,
     "automaticLinkRewriting": false
+  },
+  "researchProgress": {
+    "radical-storage": "City-arrival utility mapped to six high-traffic ERN city contexts; exact city links remain owner-gated.",
+    "localrent": "Independent-driving utility mapped to Georgia, Montenegro, Greek islands and Türkiye contexts; exact inventory remains owner-gated.",
+    "wegotrip": "Self-guided culture utility mapped to Rome, Dublin, Istanbul and Darmstadt contexts; exact destination inventory remains owner-gated."
   }
 }
