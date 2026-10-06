@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T06:25:00Z",
+  "generatedAt": "2026-10-06T06:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2055,12 +2055,16 @@
       "id": "viator-azores-sao-miguel",
       "destination": "São Miguel, Azores",
       "placeIds": [
-        "azores-sao-miguel"
+        "azores-sao-miguel",
+        "azores-ponta-delgada",
+        "azores-sete-cidades",
+        "azores-furnas",
+        "azores-lagoa-do-fogo"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "The official São Miguel webcam collection now gives ERN a current discovery surface and Viator has substantial São Miguel hiking, volcano, food and island-tour inventory.",
+      "reason": "ERN now has multiple official Visit Azores current views across São Miguel, while Viator has deep São Miguel inventory spanning Ponta Delgada, Sete Cidades, Furnas, Lagoa do Fogo and island tours.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Sao-Miguel/d50209-ttd",
       "publicInventoryEvidence": "Viator currently lists São Miguel experiences including Sete Cidades, Lagoa do Fogo, hiking, snorkeling and food/wine products.",
