@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T02:15:00Z",
+  "generatedAt": "2026-10-06T02:35:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -503,6 +503,48 @@
         "darmstadt-mathildenhoehe"
       ],
       "activationGate": "EXACT_DESTINATION_INVENTORY_AND_LINK_REQUIRED"
+    },
+    {
+      "id": "caribbean-island-local-mobility",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "bikesbooking",
+        "localrent",
+        "qeeq"
+      ],
+      "placeIds": [
+        "barbados-paynes-bay",
+        "barbados-worthing-beach",
+        "barbados-dover-beach",
+        "barbados-accra-beach",
+        "barbados-folkestone-marine-park",
+        "druif-beach-aruba",
+        "aruba-palm-beach",
+        "aruba-eagle-beach",
+        "st-maarten-great-bay",
+        "st-maarten-simpson-bay"
+      ],
+      "activationGate": "OWNER_DESTINATION_INVENTORY_AND_EXACT_LINK_REQUIRED",
+      "rule": "Use only one mobility option per island context and only if inventory genuinely supports local exploration; never assume bike/scooter/car availability from destination popularity."
+    },
+    {
+      "id": "atlantic-island-car-rental-reserve",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "economybookings",
+        "getrentacar",
+        "autoeurope",
+        "qeeq"
+      ],
+      "placeIds": [
+        "cape-verde-santa-maria-bay",
+        "madeira-funchal",
+        "azores-sao-miguel",
+        "iceland-myvatn",
+        "iceland-bulandshofdi"
+      ],
+      "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Reserve/fallback routing only; choose one car-rental partner after owner-side coverage comparison, not several competing links."
     }
   ]
 }
