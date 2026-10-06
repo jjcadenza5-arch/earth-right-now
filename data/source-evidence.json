@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T11:10:00Z",
+  "generatedAt": "2026-10-06T11:35:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2619,6 +2619,20 @@
       "freshnessEvidence": "Aramón's current resort site maintains camera-selectable mountain information for Cerler and current resort conditions.",
       "coordinateNote": "Destination/resort-level reference only; ERN does not claim exact camera coordinates.",
       "checkedAt": "2026-10-06T11:10:00Z"
+    },
+    "sri-lanka-karpaha-sands-live": {
+      "sourceUrl": "https://www.karpahasands.com/faq/",
+      "rightsBasis": "First-party resort page explicitly links its active live beach webcam; ERN links externally and does not infer embed/restream rights.",
+      "freshnessEvidence": "Karpaha Sands states its active live beach webcam can be viewed at any time to see current east-coast weather and beach conditions.",
+      "coordinateNote": "Destination/property-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:35:00Z"
+    },
+    "sri-lanka-maho-ayurveda-live": {
+      "sourceUrl": "https://ayurvedaparadisemaho.com/en/A-window-to-Maho%3A-Our-new-live-webcam-brings-Sri-Lanka-directly-to-your-home./",
+      "rightsBasis": "First-party retreat live-webcam page; ERN links externally and does not infer rebroadcast rights.",
+      "freshnessEvidence": "Ayurveda Paradise Maho explicitly states its new live webcam shows part of the spa park in real time.",
+      "coordinateNote": "Destination/property-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:35:00Z"
     }
   },
   "prague-petrin-tower": {

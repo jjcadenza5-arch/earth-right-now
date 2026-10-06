@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T11:10:00Z",
+  "generatedAt": "2026-10-06T11:35:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1173,6 +1173,35 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
       "rule": "Accommodation remains research-only until the Earthrightnow project actually has program access. One stay action per mountain cluster by default."
+    },
+    {
+      "id": "sri-lanka-east-coast-access",
+      "intent": "transport-connectivity",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "qeeq",
+        "airalo"
+      ],
+      "placeIds": [
+        "sri-lanka-karpaha-sands"
+      ],
+      "activationGate": "EXACT_ROUTE_OR_PICKUP_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After choosing Sri Lanka's east coast, use one verified arrival/intercity or rental action plus at most one connectivity option. Never imply resort access or transfer coverage without exact route evidence."
+    },
+    {
+      "id": "sri-lanka-stay-research",
+      "intent": "stay",
+      "preferredProgramCandidates": [
+        "booking-com",
+        "trip-com",
+        "agoda"
+      ],
+      "placeIds": [
+        "sri-lanka-karpaha-sands",
+        "sri-lanka-maho-ayurveda"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
+      "rule": "Accommodation remains research-only until program access exists in the Earthrightnow project. One stay action per destination context by default."
     }
   ],
   "islandTravelClusters": [

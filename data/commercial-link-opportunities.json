@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T11:10:00Z",
+  "generatedAt": "2026-10-06T11:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -6324,6 +6324,69 @@
       "publicInventoryEvidenceUrl": "https://www.airalo.com/es-419/spain-esim",
       "publicInventoryEvidence": "Airalo currently publishes Spain-specific eSIM packages.",
       "nextAction": "Generate one owner-side Spain-specific tracked link if supported; keep one connectivity option per country context by default."
+    },
+    {
+      "id": "viator-pasikudah-east-sri-lanka",
+      "destination": "Pasikudah / Batticaloa, Sri Lanka",
+      "placeIds": [
+        "sri-lanka-karpaha-sands"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party live east-coast Sri Lanka beach source and Viator currently lists Pasikudah scuba diving plus Batticaloa/Pasikudah excursions.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Sri-Lanka-tours/Scuba-Diving/d19-g17-c28901",
+      "publicInventoryEvidence": "Current Viator Sri Lanka inventory includes Pasikudah scuba-diving experiences and Batticaloa-area excursions.",
+      "nextAction": "Generate one owner-side Pasikudah/Batticaloa destination-level tracked link if exact inventory remains useful; do not imply resort access to Karpaha Sands."
+    },
+    {
+      "id": "qeeq-sri-lanka-roadtrip",
+      "destination": "Sri Lanka road-trip car rental",
+      "placeIds": [
+        "sri-lanka-karpaha-sands",
+        "sri-lanka-maho-ayurveda"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "QEEQ currently exposes Sri Lanka rental coverage and ERN now has live/current east-coast and inland discovery places.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.qeeq.com/locations/countries/car-rental-sri-lanka",
+      "publicInventoryEvidence": "QEEQ currently publishes Sri Lanka rental coverage and license/permit requirements.",
+      "nextAction": "Verify owner-side pickup coverage and license requirements before generating one tracked rental link; do not imply that an international license alone is sufficient if local endorsement/temporary-license rules apply."
+    },
+    {
+      "id": "kiwitaxi-sri-lanka-transfers",
+      "destination": "Sri Lanka intercity / resort transfers",
+      "placeIds": [
+        "sri-lanka-karpaha-sands",
+        "sri-lanka-maho-ayurveda"
+      ],
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "Kiwitaxi currently documents Sri Lanka transfer coverage including airport and intercity routes; this can be useful after destination selection.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://kiwitaxi.com/en/guide/sri-lanka",
+      "publicInventoryEvidence": "Kiwitaxi's current Sri Lanka guide states it covers private transfers on major Sri Lanka routes.",
+      "nextAction": "Verify an exact airport/intercity-to-destination route owner-side before generating a tracked link; one transfer option per route."
+    },
+    {
+      "id": "airalo-sri-lanka-connectivity",
+      "destination": "Sri Lanka connectivity",
+      "placeIds": [
+        "sri-lanka-karpaha-sands",
+        "sri-lanka-maho-ayurveda"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Airalo currently publishes Sri Lanka-specific eSIM inventory, providing a distinct optional post-discovery utility.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/sri-lanka-esim",
+      "publicInventoryEvidence": "Airalo currently exposes Sri Lanka eSIM packages and network details.",
+      "nextAction": "Generate one owner-side Sri Lanka tracked link if supported; retain one eSIM option per country by default."
     }
   ]
 }

@@ -5153,3 +5153,34 @@ Combined state after this tranche:
 #### Invariants
 Watch Earth remains in-ERN only; LINK_ONLY/EXTERNAL additions stay out of Watch Earth; IMAGE_REFRESH remains natural-schedule only; public Guide/Now Moments remain OFF; no paid ranking, automatic social posting, automatic Travelpayouts placement or link rewriting; hard lean-core ceiling remains 575 KB.
 
+### Sri Lanka first-country live coverage + utility diversification — 2026-10-06
+Continued the same large batch beyond Spain to avoid overconcentrating new coverage in Europe.
+
+#### Search/Explore
+Added ERN's first healthy Sri Lanka live/current destinations:
+- **Karpaha Sands — Kalkudah/East Coast**, whose first-party site explicitly links an active live beach webcam;
+- **Ayurveda Paradise Maho**, whose first-party site explicitly states its new live webcam shows the spa park in real time.
+
+Both remain HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold.
+
+#### Commercial / Travelpayouts
+Added owner-link-gated paths for:
+- Viator Pasikudah / Batticaloa activities;
+- QEEQ Sri Lanka road-trip rental;
+- Kiwitaxi Sri Lanka transfers;
+- Airalo Sri Lanka connectivity.
+
+Added two routing clusters:
+- Sri Lanka east-coast access;
+- Sri Lanka stay research using Booking.com / Trip.com / Agoda only after owner-project availability is confirmed.
+
+No tracked URL, transfer route, rental legality/terms, accommodation availability or owner-program approval was invented.
+
+#### Combined current state
+- supplemental Search/Explore: **341 / 500**;
+- commercial opportunities: **397**;
+- utility-routing clusters: **46**;
+- Watch Earth impact: **0**.
+
+Protected invariants remain unchanged.
+
