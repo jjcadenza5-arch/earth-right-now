@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T05:45:00Z",
+  "generatedAt": "2026-10-06T06:10:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -6541,6 +6541,90 @@
       "verifiedAt": "2026-10-06T05:45:00Z",
       "verification": "Research-only. Do not promote until an exact current public live route is resolved and current playback/freshness is independently verified.",
       "nextAction": "Resolve the current Shenton Safaris live-webcam route for Mwamba Last Waterhole and/or Hippo Hide, then promote one or two distinct South Luangwa places only if the feeds are currently live."
+    },
+    {
+      "id": "belize-zoo-live-cam",
+      "title": "Belize Zoo — Live Wildlife Cam",
+      "country": "Belize",
+      "region": "Belize District",
+      "provider": "The Belize Zoo",
+      "sourcePage": "https://www.belizezoo.org/postlivecam/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The Belize Zoo states its live cam is online every day from 9am to 4pm Belize time and rotates between animal habitats.",
+      "verifiedAt": "2026-10-06T06:10:00Z",
+      "promotedAt": "2026-10-06T06:10:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "azores-angra-heroismo-current",
+      "title": "Angra do Heroísmo — Terceira",
+      "country": "Portugal",
+      "region": "Terceira / Azores",
+      "provider": "Visit Azores",
+      "sourcePage": "https://api.visitazores.com/en/webcams",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Visit Azores currently lists Angra do Heroísmo among its webcam locations.",
+      "verifiedAt": "2026-10-06T06:10:00Z",
+      "promotedAt": "2026-10-06T06:10:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "azores-horta-current",
+      "title": "Horta — Faial",
+      "country": "Portugal",
+      "region": "Faial / Azores",
+      "provider": "Visit Azores",
+      "sourcePage": "https://api.visitazores.com/en/webcams",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Visit Azores currently lists Horta among its webcam locations.",
+      "verifiedAt": "2026-10-06T06:10:00Z",
+      "promotedAt": "2026-10-06T06:10:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "azores-velas-current",
+      "title": "Velas — São Jorge",
+      "country": "Portugal",
+      "region": "São Jorge / Azores",
+      "provider": "Visit Azores",
+      "sourcePage": "https://api.visitazores.com/en/webcams",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Visit Azores currently lists Velas among its São Jorge webcam locations.",
+      "verifiedAt": "2026-10-06T06:10:00Z",
+      "promotedAt": "2026-10-06T06:10:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "azores-faja-grande-current",
+      "title": "Fajã Grande — Flores",
+      "country": "Portugal",
+      "region": "Flores / Azores",
+      "provider": "Visit Azores",
+      "sourcePage": "https://api.visitazores.com/en/webcams",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Visit Azores currently lists Fajã Grande among its Flores webcam locations.",
+      "verifiedAt": "2026-10-06T06:10:00Z",
+      "promotedAt": "2026-10-06T06:10:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "azores-vila-corvo-current",
+      "title": "Vila do Corvo — Corvo",
+      "country": "Portugal",
+      "region": "Corvo / Azores",
+      "provider": "Visit Azores",
+      "sourcePage": "https://api.visitazores.com/en/webcams",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Visit Azores currently lists Vila do Corvo among its webcam locations.",
+      "verifiedAt": "2026-10-06T06:10:00Z",
+      "promotedAt": "2026-10-06T06:10:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
