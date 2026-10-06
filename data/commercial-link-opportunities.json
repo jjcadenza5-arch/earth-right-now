@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T01:35:00Z",
+  "generatedAt": "2026-10-06T01:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4536,6 +4536,22 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Riga/Full-Day-Private-Tour-to-Jurmala-Fisherman-Villages-and-Nature-Trails-from-Riga/d4480-21659P5",
       "publicInventoryEvidence": "Current Viator inventory includes Jūrmala Beach, Dzintari, Kemeri and Baltic-coast day trips from Riga.",
       "nextAction": "Generate one owner-side Jūrmala destination/search tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-riga",
+      "destination": "Riga, Latvia",
+      "placeIds": [
+        "latvia-riga-port-panorama",
+        "latvia-riga-daugavgriva-lighthouse"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has two official Freeport of Riga live discovery views. Viator has deep Riga Old Town, canal, Art Nouveau and day-trip inventory, creating a natural downstream planning bridge.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Riga/d4480-ttd",
+      "publicInventoryEvidence": "Current Viator Riga inventory includes city sightseeing, canal cruises, Old Town, Art Nouveau and regional day trips.",
+      "nextAction": "Generate one owner-side Riga destination-level tracked link and manually verify it before public activation; reuse it across the Riga cluster."
     }
   ]
 }
