@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T06:55:00Z",
+  "generatedAt": "2026-10-06T07:08:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4396,12 +4396,13 @@
       "id": "viator-koh-samui",
       "destination": "Koh Samui, Thailand",
       "placeIds": [
-        "thailand-koh-samui-crystal-bay"
+        "thailand-koh-samui-crystal-bay",
+        "thailand-koh-samui-lipa-noi-mandarin"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a first-party live Silver Beach view on Koh Samui, and Viator has substantial Koh Samui island, jungle, snorkeling and sightseeing inventory.",
+      "reason": "ERN has multiple healthy Koh Samui live/current beach views. Keep one island-level Viator activity bridge across the cluster rather than adding a commercial action per camera.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Koh-Samui/d347-ttd",
       "publicInventoryEvidence": "Current Viator Koh Samui inventory includes island sightseeing, jungle safaris, snorkeling and boat trips.",
@@ -5732,6 +5733,21 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/North-West/3-Hour-Shared-Game-Drive-in-Pilanesberg-National-Park/d23345-30052P114",
       "publicInventoryEvidence": "Current Viator inventory includes dedicated Pilanesberg National Park game drives and pickup options from Sun City or park gates.",
       "nextAction": "Generate one owner-side Pilanesberg destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-aoraki-mount-cook",
+      "destination": "Aoraki / Mount Cook & Lake Pukaki, New Zealand",
+      "placeIds": [
+        "new-zealand-lake-pukaki-lakestone"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party current Lake Pukaki/Aoraki view, and current Viator inventory includes Mount Cook, Tasman Glacier and Lake Pukaki sightseeing and hiking products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Mount-Cook/Glentanner-High-Country-Heli-Hike/d405-429877P1",
+      "publicInventoryEvidence": "Current Viator inventory includes Aoraki/Mount Cook experiences whose itineraries explicitly include or pass Lake Pukaki.",
+      "nextAction": "Generate one owner-side Aoraki/Mount Cook destination-level tracked link and manually verify it before public activation."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T06:55:00Z",
+  "generatedAt": "2026-10-06T07:08:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -722,6 +722,21 @@
       ],
       "activationGate": "PROGRAM_COUNTRY_COVERAGE_AND_EXACT_LINK_REQUIRED",
       "rule": "Optional connectivity only after destination choice. Default to one verified eSIM option per country/territory context and never place connectivity utilities on live-camera ranking surfaces."
+    },
+    {
+      "id": "thailand-island-arrival-connectivity",
+      "intent": "transport-connectivity",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "intui-travel",
+        "airalo"
+      ],
+      "placeIds": [
+        "thailand-koh-samui-lipa-noi-mandarin",
+        "thailand-koh-samui-crystal-bay"
+      ],
+      "activationGate": "EXACT_AIRPORT_DESTINATION_PAIR_OR_COUNTRY_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After Koh Samui destination choice, surface at most one verified arrival-transfer action and one verified connectivity action. Never infer resort transfer coverage from island popularity."
     }
   ],
   "islandTravelClusters": [
