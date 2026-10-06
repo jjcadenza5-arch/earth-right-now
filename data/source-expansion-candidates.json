@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T06:10:00Z",
+  "generatedAt": "2026-10-06T06:20:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -6625,6 +6625,48 @@
       "verifiedAt": "2026-10-06T06:10:00Z",
       "promotedAt": "2026-10-06T06:10:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "falklands-stanley-tourist-centre-webcam",
+      "title": "Stanley — Tourist Information Centre Webcam",
+      "country": "Falkland Islands",
+      "region": "Stanley",
+      "provider": "Falkland Islands Tourist Board",
+      "sourcePage": "https://www.falklandislands.com/plan-your-trip/visitor-information/tourist-information-centre",
+      "priority": "P1_NEW_TERRITORY",
+      "state": "EXACT_WEBCAM_ROUTE_AND_CURRENTNESS_VERIFICATION_REQUIRED",
+      "evidence": "The official Falkland Islands Tourist Board states that a webcam looks out from the Stanley Tourist Information Centre so visitors can connect live from overseas.",
+      "verifiedAt": "2026-10-06T06:20:00Z",
+      "verification": "Research-only. Official webcam existence is confirmed, but ERN has not yet resolved the exact durable feed/image route or independently verified its current refresh behavior.",
+      "nextAction": "Resolve the exact Falkland Tourist Board webcam target and verify currentness before promotion."
+    },
+    {
+      "id": "cayman-port-authority-webcams",
+      "title": "Cayman Islands — Port Authority Webcams",
+      "country": "Cayman Islands",
+      "region": "Grand Cayman / Port Area",
+      "provider": "Port Authority of the Cayman Islands",
+      "sourcePage": "https://www.caymanport.com/webcams/",
+      "priority": "P2_OFFICIAL_PORT",
+      "state": "EXACT_CAMERA_TARGET_VERIFICATION_REQUIRED",
+      "evidence": "The current official Port Authority website exposes a public Webcams page and active port information, but automated retrieval does not enumerate the individual camera targets.",
+      "verifiedAt": "2026-10-06T06:20:00Z",
+      "verification": "Research-only. Do not infer specific camera locations or currentness from the generic Webcams page.",
+      "nextAction": "Resolve the individual public webcam target(s), names and refresh behavior before ERN promotion."
+    },
+    {
+      "id": "guam-government-live-streaming",
+      "title": "Guam — Government Live Streaming Surface",
+      "country": "Guam",
+      "region": "Guam",
+      "provider": "Government of Guam",
+      "sourcePage": "https://sgc.guam.gov/live-streaming",
+      "priority": "P2_NEW_TERRITORY",
+      "state": "EXACT_PUBLIC_CAMERA_PURPOSE_AND_TARGET_VERIFICATION_REQUIRED",
+      "evidence": "A current Government of Guam live-streaming surface exists, but ERN has not yet established that it provides a scenic/current destination camera rather than an event or institutional stream.",
+      "verifiedAt": "2026-10-06T06:20:00Z",
+      "verification": "Research-only. Never classify institutional/event streaming as Earth current-view content without a source-specific scenic target.",
+      "nextAction": "Verify the live-stream surface purpose, exact target and continuous/current semantics before any promotion."
     }
   ],
   "notes": [
