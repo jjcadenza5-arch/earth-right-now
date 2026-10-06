@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T06:10:00Z",
+  "generatedAt": "2026-10-06T06:35:00Z",
   "publicActivationAllowed": false,
   "purpose": "Track promising Travelpayouts catalog programs separately from ERN-approved/unlocked programs so platform availability is never confused with owner-project access.",
   "evidenceBasis": [
@@ -94,6 +94,24 @@
         "why": "Potential complement where Klook/Viator inventory is weak or materially different.",
         "officialEvidence": "Travelpayouts official 2026 reward documentation lists GetYourGuide.",
         "placementRule": "Do not duplicate an existing stronger activity action without clear incremental visitor value."
+      }
+    ],
+    "carRental": [
+      {
+        "id": "rentalcars-com",
+        "brand": "Rentalcars.com",
+        "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+        "why": "Broad global car-rental inventory could improve coverage where ERN's currently unlocked rental programs are weak.",
+        "officialEvidence": "Travelpayouts' current-accessible advertiser/car-rental overview lists Rentalcars.com as a car-rental program with links/widgets.",
+        "placementRule": "Research only until Earthrightnow Project availability and exact destination deep-link support are confirmed; choose at most one rental option per destination cluster."
+      },
+      {
+        "id": "discover-cars",
+        "brand": "Discover Cars",
+        "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED_AND_CURRENT_CATALOG_RECHECK",
+        "why": "Potential broad car-rental alternative for island/road-trip destinations if the program remains available to Earthrightnow.",
+        "officialEvidence": "Travelpayouts' car-rental program materials continue to document Discover Cars; owner-side current Program Catalog status must be checked before ERN treats it as available.",
+        "placementRule": "Do not activate from public documentation alone. Verify current owner-project access, exact destination coverage and tracked-link generation; suppress against a clearer existing rental partner."
       }
     ]
   },
