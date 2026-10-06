@@ -5431,3 +5431,26 @@ Current state after this continuation:
 
 No tracked URL, exact unsupported transfer route, snow-equipment entitlement, rental road suitability, accommodation availability or owner-program approval was invented.
 
+### Scientific monitoring + provenance-maintenance continuation — 2026-10-06
+Closed the same large checkpoint with a non-resort quality tranche.
+
+#### Scientific/current Earth expansion
+Added **Vulcano — Aeolian Islands** using INGV's official volcanic-surveillance current-image page. INGV explicitly lists webcam/thermal imagery for Etna, Stromboli and Vulcano in its real-time volcano system. Vulcano remains HEALTHY + LIVE_IMAGE + LINK_ONLY + EXTERNAL with Featured/Watch hold.
+
+The existing Viator Aeolian Islands planning path was consolidated to serve both Stromboli and Vulcano rather than creating another near-duplicate affiliate action.
+
+A research-only **12Go Aeolian ferry** utility cluster was added with a strict owner-project-availability + exact-route + tracked-link gate. Travelpayouts catalog presence alone does not authorize activation.
+
+#### Provenance repair
+The existing Petra source was upgraded from a third-party SkylineWebcams URL to the official **Visit Petra** destination surface, which currently exposes its own Live Cam. Place identity and truth class were preserved; only provenance/currentness evidence was improved.
+
+#### Current state after the full checkpoint
+- healthy distinct searchable places: **695**;
+- healthy source records: **700**;
+- supplemental Search/Explore: **376 / 500**;
+- commercial opportunities: **440**;
+- utility-routing clusters: **68**;
+- Watch Earth impact from new external/search additions: **0**.
+
+Protected invariants remain unchanged.
+

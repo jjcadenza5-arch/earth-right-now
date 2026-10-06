@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T13:05:00Z",
+  "generatedAt": "2026-10-06T13:40:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1570,6 +1570,19 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
       "rule": "Research-only until an accommodation program is genuinely available to Earthrightnow; one useful stay action per destination by default."
+    },
+    {
+      "id": "aeolian-islands-ferry-research",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "12go"
+      ],
+      "placeIds": [
+        "italy-stromboli-volcano",
+        "italy-vulcano-volcano"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_FERRY_ROUTE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "Research-only until 12Go is genuinely available to the Earthrightnow project and an exact supported Sicily/Aeolian route exists. Do not imply ferry schedules or availability from catalog presence alone."
     }
   ],
   "islandTravelClusters": [

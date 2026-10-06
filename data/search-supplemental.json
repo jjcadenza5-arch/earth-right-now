@@ -11304,5 +11304,35 @@
     "rightsBasis": "Official resort/TMR live-webcam page; ERN links externally.",
     "freshnessEvidence": "The official resort page explicitly provides live online webcams and current footage from multiple named mountain sectors.",
     "searchSupplemental": true
+  },
+  {
+    "id": "italy-vulcano-ingv-current-image",
+    "placeId": "italy-vulcano-volcano",
+    "title": "Vulcano — Aeolian Islands",
+    "provider": "INGV Osservatorio Etneo",
+    "country": "Italy",
+    "region": "Aeolian Islands / Sicily",
+    "categories": [
+      "Volcanoes & Earth",
+      "Islands",
+      "Scientific Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.ct.ingv.it/sezioniesterne/webcam/WebcamE.php?Vulcano=Vvt",
+    "attribution": "INGV Osservatorio Etneo",
+    "checkedAt": "2026-10-06T13:40:00Z",
+    "lastSuccessfulCheck": "2026-10-06T13:40:00Z",
+    "quality": 95,
+    "freshness": 99,
+    "moment": 95,
+    "story": "Official INGV current volcanic-surveillance image for Vulcano in the Aeolian Islands.",
+    "featuredHold": true,
+    "watchHold": true,
+    "rightsBasis": "Official INGV volcanic-surveillance current-image page; link-only.",
+    "freshnessEvidence": "INGV states webcam and thermal-camera images are available for Vulcano in its real-time volcano system; the exact camera page publishes a current last-update timestamp.",
+    "searchSupplemental": true
   }
 ]

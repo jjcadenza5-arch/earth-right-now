@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T13:05:00Z",
+  "generatedAt": "2026-10-06T13:40:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3612,18 +3612,19 @@
     },
     {
       "id": "viator-stromboli-aeolian",
-      "destination": "Stromboli / Aeolian Islands",
+      "destination": "Stromboli / Vulcano / Aeolian Islands",
       "placeIds": [
-        "italy-stromboli-volcano"
+        "italy-stromboli-volcano",
+        "italy-vulcano-volcano"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has an official INGV current Stromboli surveillance surface, and Viator has active Aeolian Islands / Stromboli boat and volcano-viewing inventory. Keep trip planning downstream from monitoring and preserve official access restrictions.",
+      "reason": "ERN now has official INGV current-monitoring views for Stromboli and Vulcano. Keep one Aeolian Islands Viator planning bridge across both monitoring places; trip planning remains downstream from scientific monitoring and access restrictions.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Sicily-attractions/Stromboli/d205-a11267",
-      "publicInventoryEvidence": "Current Viator inventory includes Stromboli and Aeolian Islands excursions, including boat trips and volcano-viewing experiences.",
-      "nextAction": "Generate one owner-side Stromboli / Aeolian Islands Viator tracked destination/search link and manually verify it before public activation; public wording must not imply unrestricted summit access."
+      "publicInventoryEvidenceUrl": "https://www.viator.com/it-IT/tours/Cefalu/Aeolian-Islands-Lipari-and-Vulcano-Day-Tour-from-Cefalu/d26110-6552P11",
+      "publicInventoryEvidence": "Current Viator inventory includes Aeolian Islands tours that explicitly visit Lipari and Vulcano, alongside separate Stromboli/Panarea products.",
+      "nextAction": "Generate one owner-side Aeolian Islands tracked destination/search link and manually verify it before public activation; never imply unrestricted crater/summit access."
     },
     {
       "id": "viator-grand-teton-jackson",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T13:05:00Z",
+  "generatedAt": "2026-10-06T13:40:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -1821,10 +1821,11 @@
       "coordinateNote": "Jahorina resort reference; not claimed as a specific camera coordinate."
     },
     "jordan-petra-visitor-center-live": {
-      "freshnessEvidence": "Owner directly confirmed the Petra Visitor Center camera was visibly current/moving on 2026-10-04 after ERN isolated the exact provider target.",
-      "rightsBasis": "SkylineWebcams provider page exposes public live viewing. ERN remains LINK_ONLY and does not infer embed or restream permission.",
-      "coordinateNote": "Representative Petra archaeological-site reference, not claimed camera position.",
-      "coordinateSourceUrl": "https://www.skylinewebcams.com/en/webcam/jordan/maan/amman/petra-visitor-center.html"
+      "sourceUrl": "https://visitpetra.jo/en",
+      "rightsBasis": "Official Visit Petra Live Cam surface; link-only.",
+      "freshnessEvidence": "Official Visit Petra site currently exposes a Live Cam.",
+      "coordinateNote": "Existing Petra place reference retained; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T13:40:00Z"
     },
     "oman-muscat-aida-beach-live": {
       "freshnessEvidence": "Owner directly confirmed the Muscat Aida Beach camera was visibly current/moving on 2026-10-04.",
@@ -2871,6 +2872,13 @@
       "freshnessEvidence": "The official resort page explicitly provides live online webcams and current footage from multiple named mountain sectors.",
       "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
       "checkedAt": "2026-10-06T13:05:00Z"
+    },
+    "italy-vulcano-ingv-current-image": {
+      "sourceUrl": "https://www.ct.ingv.it/sezioniesterne/webcam/WebcamE.php?Vulcano=Vvt",
+      "rightsBasis": "Official INGV volcanic-surveillance current-image page; link-only.",
+      "freshnessEvidence": "INGV states webcam and thermal-camera images are available for Vulcano in its real-time volcano system; the exact camera page publishes a current last-update timestamp.",
+      "coordinateNote": "Vulcano island/volcano place reference only; ERN does not claim exact surveillance-camera coordinates.",
+      "checkedAt": "2026-10-06T13:40:00Z"
     }
   },
   "prague-petrin-tower": {
