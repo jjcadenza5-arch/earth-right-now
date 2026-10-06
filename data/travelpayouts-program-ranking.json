@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T08:20:00Z",
+  "generatedAt": "2026-10-06T09:15:00Z",
   "basis": "Fit-first assessment from the complete 26-program Travelpayouts Available inventory shown by the operator. Commission is secondary to ERN visitor utility and editorial fit.",
   "strategy": {
     "principle": "Camera quality and live/current truth come first. Commercial usefulness may help prioritize destinations, but never changes editorial ranking or truth labels.",
@@ -434,7 +434,7 @@
       "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
     },
     "kiwitaxi": {
-      "commercialRecords": 1,
+      "commercialRecords": 2,
       "utilityRecords": 1,
       "state": "DESTINATION_MAPPED",
       "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
@@ -464,7 +464,7 @@
       "note": "Owner-side exact link and differentiated visitor-use case remain required; reserve mapping does not authorize public placement."
     },
     "qeeq": {
-      "commercialRecords": 5,
+      "commercialRecords": 6,
       "utilityRecords": 0,
       "state": "DESTINATION_MAPPED",
       "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
@@ -500,7 +500,7 @@
       "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
     },
     "airalo": {
-      "commercialRecords": 3,
+      "commercialRecords": 4,
       "utilityRecords": 1,
       "state": "DESTINATION_MAPPED",
       "note": "Mapping does not imply public activation; exact tracked-link and owner verification gates still apply where required."
@@ -524,7 +524,7 @@
       "note": "Owner-side exact link and differentiated visitor-use case remain required; reserve mapping does not authorize public placement."
     },
     "saily": {
-      "commercialRecords": 0,
+      "commercialRecords": 1,
       "utilityRecords": 1,
       "state": "UTILITY_RESERVE_MAPPED",
       "note": "Owner-side exact link and differentiated visitor-use case remain required; reserve mapping does not authorize public placement."

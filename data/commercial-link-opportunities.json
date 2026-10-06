@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T08:55:00Z",
+  "generatedAt": "2026-10-06T09:15:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2020,12 +2020,21 @@
       "placeIds": [
         "andorra-grandvalira",
         "andorra-pal-arinsal",
-        "andorra-naturland"
+        "andorra-naturland",
+        "andorra-encamp",
+        "andorra-canillo",
+        "andorra-el-tarter",
+        "andorra-soldeu-estadi",
+        "andorra-soldeu-espiolets",
+        "andorra-grau-roig",
+        "andorra-pas-casa-2540",
+        "andorra-pas-casa-2100",
+        "andorra-ordino-arcalis"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has three official Andorra real-time searchable mountain places. Klook currently carries Andorra day-tour and Caldea products, so one destination-level link can serve the country without duplicate commercial density.",
+      "reason": "ERN now has broad official current-view coverage across Andorra's Grandvalira sectors, Ordino Arcalís, Pal Arinsal and Naturland. Preserve one Andorra-level Klook activity bridge rather than resort-by-resort affiliate density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/87346-andorra-and-france-from-barcelona-one-day-tour/",
       "publicInventoryEvidence": "Klook currently sells Andorra-focused day tours from Barcelona and Andorra Caldea products.",
@@ -5818,6 +5827,121 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/229344-3-day-perisher-thredbo-snow-mountain-tour-from-sydney/",
       "publicInventoryEvidence": "Current Klook product explicitly visits both Perisher and Thredbo with Snowy Mountains transport and accommodation.",
       "nextAction": "Generate one owner-side Snowy Mountains/Perisher-Thredbo tracked link and manually verify it; do not imply Charlotte Pass or Selwyn coverage from this product."
+    },
+    {
+      "id": "viator-andorra",
+      "destination": "Andorra — Grandvalira / Ordino / Pas de la Casa",
+      "placeIds": [
+        "andorra-encamp",
+        "andorra-canillo",
+        "andorra-el-tarter",
+        "andorra-soldeu-estadi",
+        "andorra-soldeu-espiolets",
+        "andorra-grau-roig",
+        "andorra-pas-casa-2540",
+        "andorra-pas-casa-2100",
+        "andorra-ordino-arcalis"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has detailed official current-view coverage across Andorra, and current Viator inventory includes Andorra sightseeing/day-trip products that explicitly visit Pas de la Casa and Andorra la Vella.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/es-ES/tours/Barcelona/Andorra-France-and-Spain-The-Original-Three-Countries-Tour/d562-3142THREECOUNTRIES",
+      "publicInventoryEvidence": "Current Viator inventory includes heavily reviewed Andorra day tours with Pas de la Casa and Andorra la Vella stops.",
+      "nextAction": "Generate one owner-side Andorra destination-level Viator tracked link and manually verify it; do not imply a tour enters a specific ski sector unless its itinerary proves it."
+    },
+    {
+      "id": "qeeq-andorra-road-trip",
+      "destination": "Andorra road-trip car rental",
+      "placeIds": [
+        "andorra-encamp",
+        "andorra-canillo",
+        "andorra-el-tarter",
+        "andorra-soldeu-estadi",
+        "andorra-soldeu-espiolets",
+        "andorra-grau-roig",
+        "andorra-pas-casa-2540",
+        "andorra-pas-casa-2100",
+        "andorra-ordino-arcalis"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "QEEQ currently exposes Andorra/Andorra la Vella rental coverage and ERN now has multiple mountain sectors where independent road access can be useful after destination choice.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.qeeq.com/car/car-rental-pro/city/andorra-la-vella-2",
+      "publicInventoryEvidence": "QEEQ currently publishes Andorra la Vella car-rental coverage and explicitly discusses access to Andorra ski areas and mountain routes.",
+      "nextAction": "Generate one owner-side Andorra QEEQ tracked link and verify pickup coverage/terms before public use; never imply winter tires/chains or mountain-road suitability unless exact rental terms support it."
+    },
+    {
+      "id": "kiwitaxi-andorra-transfers",
+      "destination": "Andorra arrival transfers",
+      "placeIds": [
+        "andorra-encamp",
+        "andorra-canillo",
+        "andorra-el-tarter",
+        "andorra-soldeu-estadi",
+        "andorra-soldeu-espiolets",
+        "andorra-grau-roig",
+        "andorra-pas-casa-2540",
+        "andorra-pas-casa-2100",
+        "andorra-ordino-arcalis"
+      ],
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "Kiwitaxi currently lists Andorra among supported European transfer countries. Arrival transfer can be useful because Andorra lacks a commercial airport and many visitors arrive from Spanish/French gateways.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://kiwitaxi.com/en/taxi-transfers-worldwide",
+      "publicInventoryEvidence": "Kiwitaxi's current worldwide coverage list explicitly includes Andorra.",
+      "nextAction": "Verify an exact supported gateway-to-Andorra route owner-side and generate one tracked transfer link only for a real route; do not publish generic unsupported airport claims."
+    },
+    {
+      "id": "airalo-andorra-connectivity",
+      "destination": "Andorra connectivity",
+      "placeIds": [
+        "andorra-encamp",
+        "andorra-canillo",
+        "andorra-el-tarter",
+        "andorra-soldeu-estadi",
+        "andorra-soldeu-espiolets",
+        "andorra-grau-roig",
+        "andorra-pas-casa-2540",
+        "andorra-pas-casa-2100",
+        "andorra-ordino-arcalis"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Airalo currently has Andorra-specific eSIM inventory using Andorra Telecom. This is a distinct optional post-discovery utility for international visitors.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/andorra-esim/",
+      "publicInventoryEvidence": "Airalo currently exposes Andorra-specific eSIM plans with Andorra Telecom network coverage.",
+      "nextAction": "Generate one owner-side Airalo Andorra tracked link if country-specific deep-linking is supported; default to one eSIM option in public UI."
+    },
+    {
+      "id": "saily-andorra-connectivity",
+      "destination": "Andorra connectivity fallback",
+      "placeIds": [
+        "andorra-encamp",
+        "andorra-canillo",
+        "andorra-el-tarter",
+        "andorra-soldeu-estadi",
+        "andorra-soldeu-espiolets",
+        "andorra-grau-roig",
+        "andorra-pas-casa-2540",
+        "andorra-pas-casa-2100",
+        "andorra-ordino-arcalis"
+      ],
+      "partnerCandidate": "saily",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY_RESERVE",
+      "reason": "Saily currently publishes Andorra-specific eSIM coverage. Keep as a verified coverage alternative for owner-side comparison rather than an additional public button by default.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://saily.com/es/esim-andorra/",
+      "publicInventoryEvidence": "Saily currently publishes Andorra eSIM plans and describes current Andorra network coverage.",
+      "nextAction": "Compare owner-side program/link availability against Airalo. Activate at most one eSIM provider for Andorra unless there is a materially distinct visitor benefit."
     }
   ]
 }

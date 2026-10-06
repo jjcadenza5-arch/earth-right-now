@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T08:55:00Z",
+  "generatedAt": "2026-10-06T09:15:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2297,6 +2297,69 @@
       "freshnessEvidence": "The Beach Bar states it currently has two HD webcams streaming live to YouTube, including a 180-degree panoramic Cruz Bay beach camera.",
       "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
       "checkedAt": "2026-10-06T08:55:00Z"
+    },
+    "andorra-encamp-grandvalira": {
+      "sourceUrl": "https://www.ordinoarcalis.com/en/resort/webcams",
+      "rightsBasis": "Official Grandvalira Resorts webcam surface; ERN links externally and does not infer image/embed reuse rights.",
+      "freshnessEvidence": "The current official Grandvalira Resorts webcam surface lists named live/current webcam views for Encamp, Canillo, El Tarter, Soldeu, Grau Roig and Pas de la Casa. ERN links externally and keeps conservative LIVE_IMAGE semantics.",
+      "coordinateNote": "Named resort sector/place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:15:00Z"
+    },
+    "andorra-canillo-grandvalira": {
+      "sourceUrl": "https://www.ordinoarcalis.com/en/resort/webcams",
+      "rightsBasis": "Official Grandvalira Resorts webcam surface; ERN links externally and does not infer image/embed reuse rights.",
+      "freshnessEvidence": "The current official Grandvalira Resorts webcam surface lists named live/current webcam views for Encamp, Canillo, El Tarter, Soldeu, Grau Roig and Pas de la Casa. ERN links externally and keeps conservative LIVE_IMAGE semantics.",
+      "coordinateNote": "Named resort sector/place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:15:00Z"
+    },
+    "andorra-el-tarter-grandvalira": {
+      "sourceUrl": "https://www.ordinoarcalis.com/en/resort/webcams",
+      "rightsBasis": "Official Grandvalira Resorts webcam surface; ERN links externally and does not infer image/embed reuse rights.",
+      "freshnessEvidence": "The current official Grandvalira Resorts webcam surface lists named live/current webcam views for Encamp, Canillo, El Tarter, Soldeu, Grau Roig and Pas de la Casa. ERN links externally and keeps conservative LIVE_IMAGE semantics.",
+      "coordinateNote": "Named resort sector/place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:15:00Z"
+    },
+    "andorra-soldeu-estadi-grandvalira": {
+      "sourceUrl": "https://www.ordinoarcalis.com/en/resort/webcams",
+      "rightsBasis": "Official Grandvalira Resorts webcam surface; ERN links externally and does not infer image/embed reuse rights.",
+      "freshnessEvidence": "The current official Grandvalira Resorts webcam surface lists named live/current webcam views for Encamp, Canillo, El Tarter, Soldeu, Grau Roig and Pas de la Casa. ERN links externally and keeps conservative LIVE_IMAGE semantics.",
+      "coordinateNote": "Named resort sector/place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:15:00Z"
+    },
+    "andorra-soldeu-espiolets-grandvalira": {
+      "sourceUrl": "https://www.ordinoarcalis.com/en/resort/webcams",
+      "rightsBasis": "Official Grandvalira Resorts webcam surface; ERN links externally and does not infer image/embed reuse rights.",
+      "freshnessEvidence": "The current official Grandvalira Resorts webcam surface lists named live/current webcam views for Encamp, Canillo, El Tarter, Soldeu, Grau Roig and Pas de la Casa. ERN links externally and keeps conservative LIVE_IMAGE semantics.",
+      "coordinateNote": "Named resort sector/place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:15:00Z"
+    },
+    "andorra-grau-roig-grandvalira": {
+      "sourceUrl": "https://www.ordinoarcalis.com/en/resort/webcams",
+      "rightsBasis": "Official Grandvalira Resorts webcam surface; ERN links externally and does not infer image/embed reuse rights.",
+      "freshnessEvidence": "The current official Grandvalira Resorts webcam surface lists named live/current webcam views for Encamp, Canillo, El Tarter, Soldeu, Grau Roig and Pas de la Casa. ERN links externally and keeps conservative LIVE_IMAGE semantics.",
+      "coordinateNote": "Named resort sector/place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:15:00Z"
+    },
+    "andorra-pas-casa-2540-grandvalira": {
+      "sourceUrl": "https://www.ordinoarcalis.com/en/resort/webcams",
+      "rightsBasis": "Official Grandvalira Resorts webcam surface; ERN links externally and does not infer image/embed reuse rights.",
+      "freshnessEvidence": "The current official Grandvalira Resorts webcam surface lists named live/current webcam views for Encamp, Canillo, El Tarter, Soldeu, Grau Roig and Pas de la Casa. ERN links externally and keeps conservative LIVE_IMAGE semantics.",
+      "coordinateNote": "Named resort sector/place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:15:00Z"
+    },
+    "andorra-pas-casa-2100-grandvalira": {
+      "sourceUrl": "https://www.ordinoarcalis.com/en/resort/webcams",
+      "rightsBasis": "Official Grandvalira Resorts webcam surface; ERN links externally and does not infer image/embed reuse rights.",
+      "freshnessEvidence": "The current official Grandvalira Resorts webcam surface lists named live/current webcam views for Encamp, Canillo, El Tarter, Soldeu, Grau Roig and Pas de la Casa. ERN links externally and keeps conservative LIVE_IMAGE semantics.",
+      "coordinateNote": "Named resort sector/place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:15:00Z"
+    },
+    "andorra-ordino-arcalis-webcams": {
+      "sourceUrl": "https://www.ordinoarcalis.com/en/resort",
+      "rightsBasis": "Official resort surface; ERN links externally and does not infer playback/embed rights.",
+      "freshnessEvidence": "Ordino Arcalís explicitly offers live webcams and real-time piste conditions from its official resort site.",
+      "coordinateNote": "Named resort sector/place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:15:00Z"
     }
   },
   "prague-petrin-tower": {

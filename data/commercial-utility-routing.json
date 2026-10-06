@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T08:55:00Z",
+  "generatedAt": "2026-10-06T09:15:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -874,6 +874,29 @@
       ],
       "activationGate": "PROGRAM_COUNTRY_TERRITORY_COVERAGE_AND_EXACT_LINK_REQUIRED",
       "rule": "Optional connectivity only after destination selection. Verify BVI and USVI coverage separately and default to one eSIM provider per territory context."
+    },
+    {
+      "id": "andorra-mountain-access",
+      "intent": "transport-connectivity",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "kiwitaxi",
+        "airalo",
+        "saily"
+      ],
+      "placeIds": [
+        "andorra-encamp",
+        "andorra-canillo",
+        "andorra-el-tarter",
+        "andorra-soldeu-estadi",
+        "andorra-soldeu-espiolets",
+        "andorra-grau-roig",
+        "andorra-pas-casa-2540",
+        "andorra-pas-casa-2100",
+        "andorra-ordino-arcalis"
+      ],
+      "activationGate": "OWNER_EXACT_ROUTE_OR_DESTINATION_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After the visitor chooses Andorra, use at most one transport/rental action appropriate to the trip and one connectivity action. Never stack QEEQ + Kiwitaxi + multiple eSIM buttons merely because programs exist."
     }
   ],
   "islandTravelClusters": [

@@ -4939,3 +4939,38 @@ Combined state after the alpine + Caribbean continuation:
 
 No tracked link, ferry availability, transfer coverage or eSIM territory coverage was invented.
 
+### Andorra + multi-program Travelpayouts/Viator expansion — 2026-10-06
+Continued the large-batch expansion with an explicit multi-program business pass rather than relying primarily on Viator/Klook.
+
+#### Search/Explore
+Added **9 official Andorra current-view places**:
+- Grandvalira sectors: Encamp, Canillo, El Tarter, Soldeu Estadi Creand, Soldeu Espiolets, Grau Roig, Pas de la Casa 2540 m and Pas de la Casa 2100 m;
+- Ordino Arcalís live-slope/current-condition surface.
+
+All remain HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold. The broader existing Andorra aggregate places remain preserved; these additions provide named sector-level intentional Search/Explore discovery.
+
+#### Business and Travelpayouts diversification
+Added five distinct owner-link-gated opportunities:
+- **Viator Andorra** — destination/activity planning based on current Andorra/Pas de la Casa inventory;
+- **QEEQ Andorra road-trip rental** — current Andorra la Vella rental coverage;
+- **Kiwitaxi Andorra transfers** — current country support, exact gateway route still required;
+- **Airalo Andorra connectivity** — current Andorra-specific eSIM coverage;
+- **Saily Andorra connectivity fallback** — current Andorra-specific eSIM coverage, retained as a comparison/reserve path rather than a second default public eSIM button.
+
+Existing Klook Andorra mapping was extended across the new sector IDs instead of creating resort-specific duplicate opportunities.
+
+A new `andorra-mountain-access` utility cluster coordinates rental/transfer/connectivity with explicit one-useful-option suppression.
+
+Combined state after this continuation:
+- healthy distinct searchable places: **621**;
+- healthy source records: **626**;
+- supplemental Search/Explore: **302 / 500**;
+- commercial opportunities: **372**;
+- utility-routing clusters: **30**;
+- Watch Earth impact from this batch: **0**.
+
+No tracked link, exact transfer route, rental term or public eSIM choice was invented. All new actions remain owner-side verification gated.
+
+#### Invariants
+Watch Earth remains in-ERN only; external/link-only places stay Search/Explore-only; IMAGE_REFRESH remains natural-schedule only; public Guide/Now Moments remain OFF; no automatic social posting, paid ranking, automatic Travelpayouts placement or link rewriting; hard lean-core ceiling remains 575 KB.
+
