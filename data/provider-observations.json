@@ -728,5 +728,12 @@
     "confirmation": "INDEPENDENT_PROVIDER_PAGE_ACTIVE",
     "observedAt": "2026-10-06T02:50:00Z",
     "reason": "REPAIR investigation: Guernsey Yacht Club's official Club Webcams page remains active and explicitly says its webcams automatically refresh every 10 seconds; one looks over Havelet Bay and Castle Cornet. Preserve source truth; repeated automated network/server failures are not sufficient evidence of a broken source."
+  },
+  {
+    "id": "brazil-aguas-lindoia-live",
+    "httpStatus": 200,
+    "confirmation": "INDEPENDENT_PROVIDER_PAGE_ACTIVE",
+    "observedAt": "2026-10-06T04:45:00Z",
+    "reason": "REPAIR investigation: official Circuito das Águas Paulista page remains publicly active and explicitly labels the Águas de Lindóia surface 'Câmera ao Vivo'. Preserve source truth; repeated automated network failures are not sufficient evidence of a broken current-view source."
   }
 ]
