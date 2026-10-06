@@ -450,36 +450,6 @@
     "searchSupplemental": true
   },
   {
-    "id": "philippines-kanlaon-phivolcs",
-    "placeId": "philippines-kanlaon-phivolcs",
-    "title": "Kanlaon Volcano — Current Monitoring View",
-    "provider": "DOST-PHIVOLCS",
-    "country": "Philippines",
-    "region": "Negros Island",
-    "categories": [
-      "Volcanoes & Earth",
-      "Mountains",
-      "Scientific Earth"
-    ],
-    "truth": "LIVE_IMAGE",
-    "permission": "LINK_ONLY",
-    "health": "HEALTHY",
-    "playback": "EXTERNAL",
-    "sourceUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=kvo",
-    "attribution": "DOST-PHIVOLCS",
-    "checkedAt": "2026-10-03T05:00:00Z",
-    "lastSuccessfulCheck": "2026-10-03T05:00:00Z",
-    "quality": 93,
-    "freshness": 99,
-    "moment": 94,
-    "story": "Current Kanlaon monitoring imagery from PHIVOLCS.",
-    "featuredHold": true,
-    "watchHold": true,
-    "rightsBasis": "Official government monitoring page; link-only.",
-    "freshnessEvidence": "IP-camera snapshots from observation stations.",
-    "searchSupplemental": true
-  },
-  {
     "id": "hawaii-mauna-loa-usgs",
     "placeId": "hawaii-mauna-loa-usgs",
     "title": "Mauna Loa — Current Volcano View",
