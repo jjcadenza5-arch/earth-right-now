@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T03:55:00Z",
+  "generatedAt": "2026-10-06T04:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4076,14 +4076,17 @@
     },
     {
       "id": "viator-bermuda-st-george",
-      "destination": "Bermuda / St. George's",
+      "destination": "Bermuda",
       "placeIds": [
-        "bermuda-st-george-town"
+        "bermuda-st-george-town",
+        "bermuda-coopers-island",
+        "bermuda-royal-naval-dockyard",
+        "bermuda-nonsuch-island-cahow"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a municipal-supported live view of historic St. George's, and Viator currently offers Bermuda island tours explicitly visiting St. George.",
+      "reason": "ERN now has multiple healthy Bermuda current/live places spanning historic St. George's, Cooper's Island, Royal Naval Dockyard and Nonsuch Island wildlife. One Bermuda-level Viator planning bridge should serve the island rather than creating per-camera affiliate density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-CA/tours/Bermuda/Crystal-Cave-Discover-St-George-and-Swim-at-Tobacco-Bay/d966-31697P25",
       "publicInventoryEvidence": "Current Viator Bermuda inventory includes St. George, Crystal Cave and Tobacco Bay experiences.",
@@ -5035,14 +5038,16 @@
     },
     {
       "id": "viator-cyprus-troodos",
-      "destination": "Troodos Mountains / Cyprus",
+      "destination": "Cyprus / Troodos / Paphos",
       "placeIds": [
-        "cyprus-troodos-mount-olympus"
+        "cyprus-troodos-mount-olympus",
+        "cyprus-paphos-seafront",
+        "cyprus-polemi-vineyard"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has an official Troodos current-conditions webcam, while Viator has extensive Troodos mountain and village touring inventory from Cyprus resort cities.",
+      "reason": "ERN now has healthy Cyprus mountain, Paphos seafront and countryside current views. One Cyprus-level Viator planning bridge can serve appropriate activity discovery without changing Earth ranking.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Cyprus/d47-ttd",
       "publicInventoryEvidence": "Current Viator Cyprus inventory includes multiple Troodos Mountains, villages, winery and monastery tours.",
@@ -5052,7 +5057,9 @@
       "id": "localrent-cyprus-roadtrip",
       "destination": "Cyprus road-trip planning",
       "placeIds": [
-        "cyprus-troodos-mount-olympus"
+        "cyprus-troodos-mount-olympus",
+        "cyprus-paphos-seafront",
+        "cyprus-polemi-vineyard"
       ],
       "partnerCandidate": "localrent",
       "intent": "transport",
@@ -5137,6 +5144,180 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Bonaire/d4308-ttd",
       "publicInventoryEvidence": "Current Viator Bonaire inventory includes snorkeling, Lac Bay mangrove kayaking, island tours and products that visit Sorobon Beach.",
       "nextAction": "Generate one owner-side Bonaire destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "radical-storage-prague",
+      "destination": "Prague luggage storage",
+      "placeIds": [
+        "prague-petrin-tower",
+        "prague-old-town-hall",
+        "prague-old-town-bridge-tower",
+        "prague-powder-tower",
+        "prague-st-nicholas-bell-tower",
+        "prague-lesser-town-bridge-tower"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2_UTILITY",
+      "reason": "Useful around arrival/departure windows in Prague after city discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact radical-storage destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
+    },
+    {
+      "id": "radical-storage-vienna",
+      "destination": "Vienna luggage storage",
+      "placeIds": [
+        "vienna-city-hall-ringstrasse"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2_UTILITY",
+      "reason": "Useful around arrival/departure windows in Vienna after city discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact radical-storage destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
+    },
+    {
+      "id": "radical-storage-budapest",
+      "destination": "Budapest luggage storage",
+      "placeIds": [
+        "hungary-budapest-danube"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2_UTILITY",
+      "reason": "Useful around arrival/departure windows in Budapest after city discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact radical-storage destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
+    },
+    {
+      "id": "radical-storage-vilnius",
+      "destination": "Vilnius luggage storage",
+      "placeIds": [
+        "lithuania-vilnius-cathedral-square"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2_UTILITY",
+      "reason": "Useful around arrival/departure windows in Vilnius after city discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact radical-storage destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
+    },
+    {
+      "id": "radical-storage-salzburg",
+      "destination": "Salzburg luggage storage",
+      "placeIds": [
+        "salzburg-old-town",
+        "salzburg-mirabell-old-town"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2_UTILITY",
+      "reason": "Useful around rail-arrival/departure windows in Salzburg after city discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact radical-storage destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
+    },
+    {
+      "id": "wegotrip-prague",
+      "destination": "Prague self-guided culture",
+      "placeIds": [
+        "prague-petrin-tower",
+        "prague-old-town-hall",
+        "prague-old-town-bridge-tower"
+      ],
+      "partnerCandidate": "wegotrip",
+      "intent": "activities",
+      "priority": "P2_UTILITY",
+      "reason": "Prague's compact historic core is a natural self-guided cultural context if owner-side inventory exists.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact wegotrip destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
+    },
+    {
+      "id": "wegotrip-vienna",
+      "destination": "Vienna self-guided culture",
+      "placeIds": [
+        "vienna-city-hall-ringstrasse"
+      ],
+      "partnerCandidate": "wegotrip",
+      "intent": "activities",
+      "priority": "P2_UTILITY",
+      "reason": "Vienna's historic-center discovery can lead naturally to self-guided culture if exact inventory exists.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact wegotrip destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
+    },
+    {
+      "id": "wegotrip-budapest",
+      "destination": "Budapest self-guided culture",
+      "placeIds": [
+        "hungary-budapest-danube"
+      ],
+      "partnerCandidate": "wegotrip",
+      "intent": "activities",
+      "priority": "P2_UTILITY",
+      "reason": "Budapest's walkable historic core is suitable for self-guided culture if exact inventory exists.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact wegotrip destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
+    },
+    {
+      "id": "wegotrip-vilnius",
+      "destination": "Vilnius self-guided culture",
+      "placeIds": [
+        "lithuania-vilnius-cathedral-square"
+      ],
+      "partnerCandidate": "wegotrip",
+      "intent": "activities",
+      "priority": "P2_UTILITY",
+      "reason": "Vilnius Old Town/cathedral discovery may support self-guided culture if exact owner-side inventory exists.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact wegotrip destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
+    },
+    {
+      "id": "wegotrip-salzburg",
+      "destination": "Salzburg self-guided culture",
+      "placeIds": [
+        "salzburg-old-town",
+        "salzburg-mirabell-old-town"
+      ],
+      "partnerCandidate": "wegotrip",
+      "intent": "activities",
+      "priority": "P2_UTILITY",
+      "reason": "Salzburg's walkable historic center is suitable for self-guided cultural inventory if exact coverage exists.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact wegotrip destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
+    },
+    {
+      "id": "airalo-caribbean-connectivity",
+      "destination": "Caribbean island connectivity utility",
+      "placeIds": [
+        "bermuda-st-george-town",
+        "bermuda-coopers-island",
+        "bermuda-royal-naval-dockyard",
+        "barbados-paynes-bay",
+        "st-maarten-great-bay",
+        "druif-beach-aruba"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Optional post-discovery connectivity utility for supported island destinations; use one eSIM option only after country coverage is verified.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact airalo destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
+    },
+    {
+      "id": "kiwi-com-arctic-island-flights",
+      "destination": "Arctic and remote-island flight planning",
+      "placeIds": [
+        "longyearbyen-adventfjorden",
+        "greenland-ilulissat-airport",
+        "greenland-kangerlussuaq-airport",
+        "vagar-airport-faroe",
+        "chile-rapa-nui-mataveri"
+      ],
+      "partnerCandidate": "kiwi-com",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "Remote destinations may benefit from explicit flight-planning support after discovery; exact search/destination links must be generated owner-side.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm exact kiwi-com destination/utility coverage in the owner Travelpayouts project, generate one tracked link, and manually verify it before public placement. Suppress duplicate utilities by default."
     }
   ]
 }
