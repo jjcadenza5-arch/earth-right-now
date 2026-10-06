@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T06:30:00Z",
+  "generatedAt": "2026-10-06T06:15:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3967,14 +3967,15 @@
     },
     {
       "id": "viator-zanzibar-paje",
-      "destination": "Zanzibar / Paje, Tanzania",
+      "destination": "Zanzibar, Tanzania",
       "placeIds": [
-        "zanzibar-paje-white-sand"
+        "zanzibar-paje-white-sand",
+        "zanzibar-kiwengwa"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a first-party Paje/Zanzibar current-view source; Zanzibar has strong visitor planning value for island tours, water activities and culture.",
+      "reason": "ERN now has healthy Paje and Kiwengwa current/live island views; one Zanzibar-level Viator planning bridge should serve both rather than duplicate commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Zanzibar/d5590-ttd",
       "publicInventoryEvidence": "Viator currently maintains a Zanzibar destination catalog with island, marine and cultural experiences.",
@@ -4372,14 +4373,16 @@
     },
     {
       "id": "viator-seychelles-beau-vallon",
-      "destination": "Beau Vallon / Mahé, Seychelles",
+      "destination": "Mahé / Seychelles",
       "placeIds": [
-        "seychelles-beau-vallon"
+        "seychelles-beau-vallon",
+        "seychelles-mahe-quincy-village",
+        "seychelles-anse-parnel"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a current Beau Vallon live window and Viator has dedicated Beau Vallon/Mahé island, marine and sightseeing inventory.",
+      "reason": "ERN now has three healthy Mahé discovery places spanning Beau Vallon, Quincy Village and Anse Parnel. One Seychelles/Mahé Viator planning bridge should serve the cluster without per-camera affiliate density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Beau-Vallon/d50351-ttd",
       "publicInventoryEvidence": "Current Viator Beau Vallon inventory includes reef safaris, island tours, marine excursions and transfers.",
@@ -5534,7 +5537,8 @@
       "id": "viator-roatan-honduras",
       "destination": "Roatán / Bay Islands, Honduras",
       "placeIds": [
-        "honduras-roatan-west-bay"
+        "honduras-roatan-west-bay",
+        "honduras-roatan-west-end"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -5651,6 +5655,19 @@
       "reason": "ERN now has official current views on São Jorge, Flores and Corvo. Keep a single outer-islands research path and only activate if owner-side Viator inventory is genuinely useful for one or more of these islands.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Search owner-side Viator inventory for São Jorge, Flores and Corvo. If no useful exact destination inventory exists, leave this opportunity dormant rather than forcing a generic Azores link."
+    },
+    {
+      "id": "kiwi-falklands-flight-planning",
+      "destination": "Falkland Islands / Stanley",
+      "placeIds": [
+        "falklands-stanley-jetty"
+      ],
+      "partnerCandidate": "kiwi-com",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "Falkland Islands access is flight-dependent and ERN now has a current Stanley tourism window. Kiwi.com is an owner-available Travelpayouts flight-planning program, but exact route usefulness must be verified.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify owner-side flight search usefulness for Stanley/Falklands routing and generate one exact tracked search link only if practical; do not imply direct flight availability that is not present."
     }
   ]
 }
