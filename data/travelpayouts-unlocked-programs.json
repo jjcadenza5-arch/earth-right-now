@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T05:15:00Z",
+  "generatedAt": "2026-10-06T05:30:00Z",
   "evidenceBasis": "Owner screenshots from Travelpayouts Earthrightnow project showing Generate links controls.",
   "rule": "A Generate links control confirms account-side link generation is available. It does not authorize automatic public placement; ERN still requires utility review, exact-link verification and disclosure.",
   "currentCorePartners": [
@@ -72,7 +72,7 @@
     "automaticLinkRewriting": false
   },
   "researchProgress": {
-    "radical-storage": "City-arrival utility now also maps Bangkok using current public Radical Storage Bangkok inventory; existing mapped cities remain owner-link gated.",
+    "radical-storage": "City-arrival utility now includes Bangkok and San Juan in addition to prior mapped cities; exact city links remain owner-gated and should be suppressed when not useful.",
     "localrent": "Independent-driving utility mapped to Georgia, Montenegro, Greek islands and Türkiye contexts; exact inventory remains owner-gated.",
     "wegotrip": "Self-guided culture utility mapped to Rome, Dublin, Istanbul and Darmstadt contexts; exact destination inventory remains owner-gated.",
     "economybookings": "Mapped as car-rental reserve only; activate only where primary rental partners lack useful exact coverage.",
@@ -86,7 +86,8 @@
     "go-city": "Singapore and other dense attraction cities are mapped as city-pass research; exact supported-city inventory and owner-side link remain required.",
     "kiwi-com": "Remote/island flight-planning cluster now includes Arctic/Faroe/Greenland/Rapa Nui contexts; trip-planning only and never a camera-ranking signal.",
     "airalo": "Caribbean connectivity cluster is mapped for owner-side country coverage comparison; one-connectivity-option rule remains in force.",
-    "bikesbooking": "Local-mobility research now includes Bali/Denpasar in addition to Madeira/Rome; exact owner-side tracked link and duplicate-suppression review remain required."
+    "bikesbooking": "Local-mobility research now includes Bali/Denpasar in addition to Madeira/Rome; exact owner-side tracked link and duplicate-suppression review remain required.",
+    "qeeq": "Destination car-rental mapping now covers Iceland plus Puerto Rico/SJU and Curaçao/Hato. One-car-rental-option rule remains in force and exact owner-side tracked links are still required."
   },
   "platformModel2026": {
     "verifiedFromOfficialTravelpayoutsDocumentation": true,
