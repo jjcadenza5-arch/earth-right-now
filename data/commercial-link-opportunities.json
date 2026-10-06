@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T04:35:00Z",
+  "generatedAt": "2026-10-06T04:55:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4035,12 +4035,13 @@
       "id": "viator-chobe-botswana",
       "destination": "Chobe National Park / Kasane, Botswana",
       "placeIds": [
-        "botswana-elephant-valley"
+        "botswana-elephant-valley",
+        "botswana-senyati-chobe"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a first-party 24-hour Chobe-region wildlife waterhole view and Viator has strong Chobe safari inventory.",
+      "reason": "ERN now has multiple live Chobe-region wildlife waterhole views, while Viator has strong Chobe safari inventory. One Chobe/Kasane bridge should serve the cluster without per-camera commercial duplication.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Victoria-Falls/Chobe-National-Park-Full-Day-Big-5-Safari-Botswana/d5309-176453P1",
       "publicInventoryEvidence": "Current Viator inventory includes Chobe National Park game-drive and river-cruise safaris.",
@@ -4330,14 +4331,16 @@
     },
     {
       "id": "viator-puerto-rico-isla-verde",
-      "destination": "San Juan / Isla Verde, Puerto Rico",
+      "destination": "San Juan / Fajardo / Puerto Rico",
       "placeIds": [
-        "puerto-rico-isla-verde"
+        "puerto-rico-isla-verde",
+        "puerto-rico-palomino-island",
+        "puerto-rico-fajardo-el-yunque-view"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a first-party live Isla Verde Beach window, and Viator currently has San Juan and Isla Verde coastal activity inventory.",
+      "reason": "ERN now has healthy Puerto Rico live views spanning Isla Verde plus Fajardo/Palomino/El Yunque contexts, while Viator has strong San Juan, Fajardo, El Yunque and island-excursion inventory. Keep one Puerto Rico-level planning bridge unless owner-side inventory warrants a distinct Fajardo path.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/San-Juan/Jet-Ski-Adventure-in-Carolina-Puerto-Rico/d903-48979P1",
       "publicInventoryEvidence": "Current Viator inventory includes Isla Verde coastal activities and broader San Juan tours.",
@@ -5137,12 +5140,13 @@
       "id": "viator-bonaire",
       "destination": "Bonaire / Lac Bay",
       "placeIds": [
-        "bonaire-sorobon-lac-bay"
+        "bonaire-sorobon-lac-bay",
+        "bonaire-donkey-sanctuary"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a first-party live Sorobon/Lac Bay view, and Viator currently has 100+ Bonaire tours spanning snorkeling, mangroves, island sightseeing, water sports and beach experiences.",
+      "reason": "ERN now has healthy Bonaire beach/nature and wildlife discovery places; one Bonaire-level Viator planning bridge should serve them without per-place commercial density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Bonaire/d4308-ttd",
       "publicInventoryEvidence": "Current Viator Bonaire inventory includes snorkeling, Lac Bay mangrove kayaking, island tours and products that visit Sorobon Beach.",
@@ -5364,6 +5368,37 @@
       "reason": "Luggage storage can be useful around cruise, airport and city arrival/departure windows after Singapore discovery.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Confirm exact Singapore city coverage in Radical Storage via the owner Travelpayouts project, generate one tracked city link and manually verify it before placement."
+    },
+    {
+      "id": "viator-la-romana-casa-de-campo",
+      "destination": "La Romana / Casa de Campo, Dominican Republic",
+      "placeIds": [
+        "dominican-minitas-beach",
+        "dominican-teeth-of-the-dog"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has two first-party Casa de Campo live views in La Romana, and Viator has current La Romana/Casa de Campo shore-excursion and sightseeing inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/La-Romana/d4176-ttd",
+      "publicInventoryEvidence": "Current Viator La Romana inventory includes Casa de Campo, Altos de Chavón, beach and island excursions.",
+      "nextAction": "Generate one owner-side La Romana/Casa de Campo destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-cape-verde-boa-vista",
+      "destination": "Boa Vista, Cape Verde",
+      "placeIds": [
+        "cape-verde-boa-vista-estoril"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a current Boa Vista beach view and Viator has destination-level Boa Vista island, beach, 4x4 and nature inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Boa-Vista/d50204-ttd",
+      "publicInventoryEvidence": "Current Viator Boa Vista inventory includes island tours, 4x4, beaches and nature excursions.",
+      "nextAction": "Generate one owner-side Boa Vista destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
