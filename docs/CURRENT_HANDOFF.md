@@ -4591,7 +4591,7 @@ Pages **2642 completed SUCCESS** for the final searchable/business catalog state
 - supplemental Search remains lazy/gated;
 - no Watch Earth eligibility rule was relaxed.
 
-Operations 1430 was allowed to continue naturally after the repair-evidence commit; no manual workflow trigger was used.
+Operations **1430 completed SUCCESS** after the repair-evidence commit; no manual workflow trigger was used.
 
 #### Protected invariants unchanged
 - Watch Earth remains **in-ERN playback only**;
