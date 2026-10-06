@@ -102,3 +102,14 @@ Every route stays `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED` until exact owner-sid
 
 ### Data/API research
 Travelpayouts' current documentation confirms that several brands expose structured data or APIs that could later make ERN's business layer more useful without hand-curating every destination. Examples include Airalo country/region eSIM feeds, Kiwi.com flight APIs (subject to brand approval), GetTransfer API (approval required), WeGoTrip API, Tiqets data and Viator tour data. These remain research paths only; API availability does not authorize a public integration by itself.
+
+
+## Accommodation attribution experiment — 2026-10-06
+
+ERN has begun a tightly scoped accommodation-attribution research lane rather than assuming that any existing activities partner also tracks hotel inventory.
+
+- Inawashiro/Fukushima is the first Klook stay-research case because Klook currently exposes nearby lodging inventory and ERN already has a first-party live resort view.
+- This does **not** mean Klook hotel attribution is available to the Earthrightnow Travelpayouts project.
+- No public stay link may be created until the owner-side Travelpayouts/Klook tools confirm that hotel deep-link attribution is supported and an exact tracked lodging/destination link can be verified.
+- If attribution is unavailable, keep the stay path dormant and continue the separate Trip.com / Hotels.com account-status research rather than inventing a substitute.
+- Stay offers remain downstream from Earth discovery and should normally be one useful destination-level option, not hotel-card clutter.
