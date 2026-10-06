@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T06:15:00Z",
+  "generatedAt": "2026-10-06T06:45:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -93,6 +93,16 @@
       "intent": "stay",
       "eligibleScope": "supported-destination-accommodation",
       "rule": "Only after destination choice and owner-project availability/exact tracked link verification; never rank cameras by lodging economics."
+    },
+    "omio": {
+      "intent": "transport",
+      "eligibleScope": "europe-intercity-routes",
+      "rule": "Research-only until owner-project availability is confirmed. If available, use for explicit rail/bus/ferry/flight route planning and suppress overlapping transport options."
+    },
+    "travel-medical-insurance": {
+      "intent": "insurance",
+      "eligibleScope": "optional-international-trip-planning",
+      "rule": "Research-only; choose at most one provider after owner-side availability/terms review. Never fear-based or required."
     }
   },
   "priorityCityPlaces": [
