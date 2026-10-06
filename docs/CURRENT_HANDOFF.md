@@ -3575,7 +3575,7 @@ Pages **2588 completed SUCCESS** before the final milestone additions:
 - supplemental Search integrity passed;
 - hard lean-core budget remained exactly **575000 bytes**.
 
-Intermediate Pages 2589 failed only because the search-alias registry still referenced the deliberately removed duplicate Kanlaon supplemental place; the alias was repointed to canonical `kanlaon-volcano`. Later canonical Pages serialization is validating that correction and the final 500-place release.
+Intermediate Pages 2589 failed only because the search-alias registry still referenced the deliberately removed duplicate Kanlaon supplemental place; the alias was repointed to canonical `kanlaon-volcano`. Pages run **2595 completed SUCCESS** for the final 500-place release: all **112 current ERN release smoke tests passed**, Supplemental Search integrity passed with **181** records, the hard lean-core budget remained exactly **575000 bytes**, deployment completed successfully and deployed social-preview verification reported no errors.
 
 #### Protected invariants unchanged
 - Watch Earth remains **in-ERN playback only**;
@@ -3585,3 +3585,9 @@ Intermediate Pages 2589 failed only because the search-alias registry still refe
 - no automatic social posting/account creation;
 - no paid ranking;
 - commercial value never affects Earth ranking, source truth, currentness or health.
+
+
+Operational note after the 500-place release:
+- Operations run **1399** failed during daily packet construction because a broad set of external availability probes returned transient `TypeError` / `AbortError` network failures and packet-integrity consequently failed closed.
+- This was not treated as source-truth evidence and caused no automatic catalog or health mutation.
+- The last clean searchable-health result remains Operations **1398 SUCCESS**; provider evidence for Balykchy and Kanlaon was separately rechecked and recorded as active.
