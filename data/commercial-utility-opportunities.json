@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T06:35:00Z",
+  "generatedAt": "2026-10-06T06:45:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility links are optional post-discovery helpers. They do not affect which place/camera ERN ranks or recommends.",
   "opportunities": [
@@ -273,6 +273,26 @@
       "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
       "placementRule": "Only after a mountain destination is chosen and only if Booking.com is available to Earthrightnow in Travelpayouts; use one exact destination/property deep link, never a generic hotel button on live-view cards.",
       "why": "ERN's growing mountain/ski coverage creates strong lodging intent, while accommodation remains the largest underdeveloped business vertical."
+    },
+    {
+      "id": "omio-europe-intercity-research",
+      "partnerCandidate": "omio",
+      "intent": "transport",
+      "scope": "EUROPE_INTERCITY_RAIL_BUS_FERRY_FLIGHT_COMPARISON",
+      "priority": "P1_RESEARCH",
+      "state": "OWNER_PROJECT_AVAILABILITY_AND_CURRENT_CATALOG_RECHECK_REQUIRED",
+      "placementRule": "Only after a European destination/route is chosen; use one multi-modal transport action per route context and suppress overlapping 12Go/flight-only actions where Omio is clearly more useful.",
+      "why": "ERN now covers hundreds of European places; a route-planning layer could connect nearby destinations without adding activity-button clutter."
+    },
+    {
+      "id": "travel-medical-insurance-research",
+      "partnerCandidate": "visitorscoverage-or-insubuy",
+      "intent": "insurance",
+      "scope": "OPTIONAL_INTERNATIONAL_TRIP_PLANNING",
+      "priority": "P3_RESEARCH",
+      "state": "OWNER_PROJECT_AVAILABILITY_AND_CURRENT_CATALOG_RECHECK_REQUIRED",
+      "placementRule": "Only in explicit optional planning/help context; never fear-based, never required, and choose at most one insurance option after owner-side comparison.",
+      "why": "Travelpayouts documents insurance as a supported vertical; ERN should understand the category but avoid commercial pressure."
     }
   ],
   "safeguards": {
