@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T05:35:00Z",
+  "generatedAt": "2026-10-06T05:30:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -648,6 +648,26 @@
       ],
       "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
       "rule": "Use one verified island car-rental option per context. Puerto Rico and Curaçao have current QEEQ airport inventory evidence, but public activation still requires the owner-side tracked link."
+    },
+    {
+      "id": "central-america-independent-travel",
+      "intent": "transport-connectivity",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "localrent",
+        "economybookings",
+        "airalo"
+      ],
+      "placeIds": [
+        "honduras-roatan-west-bay",
+        "costa-rica-punta-leona",
+        "costa-rica-poas-crater",
+        "panama-las-lajas-beach",
+        "panama-camaroncito-beach",
+        "panama-canal-miraflores-locks"
+      ],
+      "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Use at most one car-rental option and one connectivity option per country/context; only after the visitor chooses the destination. Never place these utilities on live-camera ranking surfaces."
     }
   ]
 }
