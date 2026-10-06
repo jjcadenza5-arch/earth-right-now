@@ -2,7 +2,9 @@ import { readFile } from "node:fs/promises";
 import { operationsReport } from "../src/operations-report.js";
 
 const readJson=async url=>JSON.parse(await readFile(url,"utf8"));
-const coreRows=await readJson(new URL("../data/sources.json",import.meta.url));\nconst supplementalRows=await readJson(new URL("../data/search-supplemental.json",import.meta.url));\nconst rows=[...coreRows,...supplementalRows];
+const coreRows=await readJson(new URL("../data/sources.json",import.meta.url));
+const supplementalRows=await readJson(new URL("../data/search-supplemental.json",import.meta.url));
+const rows=[...coreRows,...supplementalRows];
 const evidence=await readJson(new URL("../data/release-evidence.json",import.meta.url));
 let providerObservations=null;
 try{providerObservations=await readJson(new URL("../data/provider-observations.json",import.meta.url));}
