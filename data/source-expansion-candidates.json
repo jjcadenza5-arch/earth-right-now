@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T04:55:00Z",
+  "generatedAt": "2026-10-06T05:10:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -6387,6 +6387,20 @@
       "verifiedAt": "2026-10-06T04:55:00Z",
       "promotedAt": "2026-10-06T04:55:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "dominican-juan-dolio-coral-costa-live",
+      "title": "Juan Dolio — Coral Costa Caribe Beach",
+      "country": "Dominican Republic",
+      "region": "Juan Dolio",
+      "provider": "Coral Costa Caribe Beach Resort",
+      "sourcePage": "https://coralcostacaribebeachresort.com/en/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current Coral Costa Caribe official site labels its beach camera LIVE BEACH CAM and states it is a real-time view.",
+      "verifiedAt": "2026-10-06T05:10:00Z",
+      "promotedAt": "2026-10-06T05:10:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
