@@ -5511,3 +5511,97 @@ Next autonomous lane:
 - Prefer genuinely new place/source coverage over alternate IDs for sources already represented in core.
 - Continue source-health maintenance and consolidate duplicate representations before they become public architecture debt.
 - Treat Pages + Operations success on the same content SHA as the release-validation standard before declaring a new canonical production checkpoint.
+
+
+## Autonomous large-batch checkpoint — 2026-10-06 13:56 UTC
+
+Canonical validated content:
+- Content commit: `7751053f4fb96f663e6b24e9aa310baca7b5e760`.
+- **Deploy ERN to GitHub Pages #2676** (run 37474398085): SUCCESS.
+- **ERN Operations Check #1457** (run 37474397965): SUCCESS.
+- Pages validation included release smoke, lean/whole-product guards, mobile/accessibility/performance, featured/catalog/currentness, multilingual aliases, search metadata, supplemental catalog, provider concentration, commercial placement, static build, SEO, AI-search readiness, brand/distribution, discoverability and production deployment/social-preview verification.
+- Operations packet validated with zero issues and retained safety boundaries: no automatic catalog mutation, health changes, permission approval or source promotion.
+
+### Search/Explore expansion
+Added **6 new healthy distinct searchable places** in this large batch:
+- Valletta — City Panorama, Malta;
+- Razzakov — City Center, Kyrgyzstan;
+- Batken — City Panorama, Kyrgyzstan;
+- Talas — Central Square, Kyrgyzstan;
+- Kyzyl-Kiya — Kulatov Street, Kyrgyzstan;
+- Bratislava — Danube & City Views, Slovakia.
+
+Truth/placement rules:
+- all six are HEALTHY + LINK_ONLY + EXTERNAL playback;
+- all remain Featured/Watch held and therefore Search/Explore-only;
+- Malta uses the official VisitMalta Live Malta Cams gateway with current Valletta provider playback;
+- Kyrgyzstan additions use direct ElCat/kg.camera current camera pages; provider states surveillance is near-live with about a 20-second delay and no archive;
+- Bratislava uses the official Visit Bratislava page, which currently states online views are available for Apollo Bridge, Old Bridge and panorama/sunset views from SNP Bridge.
+
+### Commercial and Travelpayouts-compatible diversification
+Malta:
+- Tiqets Valletta moved from source-gated to `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED` after source promotion.
+- Added Viator Valletta research from current active Valletta inventory.
+- Added Airalo Malta connectivity research from current Malta-specific eSIM inventory.
+- Added Kiwitaxi Malta Airport → Valletta research from a current exact route.
+- Added `malta-valletta-planning` utility routing: at most one activity, one relevant transfer and one connectivity action after destination choice.
+
+Bratislava:
+- Existing Viator Bratislava placeholder moved to `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`.
+- Added Omio Bratislava ↔ Vienna utility research from current direct train/bus/ferry comparison inventory.
+- Added `bratislava-vienna-intercity` routing: one exact intercity comparison action only, no generic Europe transport clutter.
+
+Kyrgyzstan:
+- Added `southern-kyrgyzstan-discovery-access` as research-only routing across Razzakov, Batken, Talas and Kyzyl-Kiya.
+- This lane intentionally does **not** infer transfer, rental or tour coverage from national-level inventory; it remains dormant unless exact useful coverage exists.
+
+No tracked link, owner-program approval, unsupported route, transfer entitlement, rental coverage, price guarantee or public commercial activation was invented.
+
+### Architecture and deduplication
+After the new source tranche, a cross-core/supplemental duplicate audit found three remaining clear duplicate destination representations and consolidated them:
+- Issyk-Kul / KarVen Four Seasons → canonical `issyk-kul-karven`;
+- Great Bay & Philipsburg Boardwalk → canonical `st-maarten-great-bay`;
+- Mendoza / Plaza Independencia → canonical `mendoza-plaza-independencia`.
+
+Maintenance rules:
+- duplicate supplemental records were removed;
+- source-research history was preserved as `SUPERSEDED_BY_CANONICAL_CORE`;
+- aliases were merged onto canonical IDs with normalization dedupe;
+- no commercial place references required remapping in this pass;
+- after consolidation there are no duplicate source IDs and no cross-core/supplemental title duplicates.
+
+### Current validated catalog
+- **696 healthy distinct searchable places**
+- **701 healthy source records**
+- **377 supplemental Search/Explore records**
+- **447 commercial opportunity records**
+- **74 utility-routing clusters**
+- **481 source-research candidates**
+- unresolved research queue reduced to **19** candidates
+- four pre-existing degraded core records remain intentionally fail-closed:
+  - `pattaya-city-live`
+  - `takayama-miyagawa-current-image`
+  - `jungfrau-region`
+  - `chidori-sakura`
+
+The count movement is intentional: six genuine new places were added while three old duplicate supplemental representations were removed during architecture maintenance.
+
+### Preserved invariants
+- Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources do not enter Watch Earth merely because they are healthy.
+- IMAGE_REFRESH remains natural-schedule-only.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- Commercial value cannot alter source truth, health, currentness, ranking or editorial prominence.
+- No paid ranking, automatic affiliate placement, automatic link rewriting, automatic social posting or unverified partner activation.
+- Existing lean-core/performance ceilings remain enforced.
+
+### Next autonomous lane
+Continue from this checkpoint in the same large-batch rhythm:
+1. prioritize unresolved P1/new-country source gaps where exact current/live evidence can actually be resolved;
+2. prefer genuinely new countries/territories and new place coverage over alternate IDs;
+3. continue Viator plus Travelpayouts-compatible diversification only where a destination has real post-discovery utility;
+4. keep exact owner-project availability and tracked-link generation gated;
+5. maintain source-health / deduplication passes before architecture debt reaches the public catalog;
+6. require matching successful Pages + Operations validation on the same content SHA before declaring the next canonical production checkpoint.
+
+Current high-value unresolved research includes Everest/Khumbu Hotel View, KenyaLIVE/Nairobi National Park, Montevideo/Pocitos, Montserrat MVO current imagery, New Caledonia/Kuto, Vatican City official webcam routing, Mauritius official webcam targets, Pasikudah/Sri Lanka, Macao SMG WeatherCam target resolution, Zambia/South Luangwa current webcam route, and Falklands Stanley exact-current route.
