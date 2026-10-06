@@ -7670,5 +7670,35 @@
     "searchSupplemental": true,
     "rightsBasis": "Official Azores tourism webcam API; link-only.",
     "freshnessEvidence": "Visit Azores currently lists Vila do Corvo among its webcam locations."
+  },
+  {
+    "id": "azores-santa-cruz-graciosa-current",
+    "placeId": "azores-santa-cruz-graciosa",
+    "title": "Santa Cruz da Graciosa — Graciosa",
+    "provider": "Visit Azores",
+    "country": "Portugal",
+    "region": "Graciosa / Azores",
+    "categories": [
+      "Islands",
+      "Villages",
+      "Beautiful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://api.visitazores.com/en/webcams",
+    "attribution": "Visit Azores",
+    "checkedAt": "2026-10-06T06:25:00Z",
+    "lastSuccessfulCheck": "2026-10-06T06:25:00Z",
+    "quality": 96,
+    "freshness": 99,
+    "moment": 97,
+    "story": "Official Visit Azores current webcam view for Santa Cruz da Graciosa.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "Official Azores tourism webcam API; link-only.",
+    "freshnessEvidence": "Visit Azores currently lists Santa Cruz da Graciosa among its webcam locations."
   }
 ]
