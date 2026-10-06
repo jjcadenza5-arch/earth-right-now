@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T21:50:00Z",
+  "generatedAt": "2026-10-06T00:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4444,6 +4444,37 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Taupo/Maori-Rock-Carvings-Sailing-Tour-Taupo/d5241-18556P5",
       "publicInventoryEvidence": "Current Viator Taupō inventory includes Lake Taupō sailing, Māori rock-carving, kayaking and sightseeing products.",
       "nextAction": "Generate one owner-side Taupō destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-monaco",
+      "destination": "Monaco / Monte-Carlo",
+      "placeIds": [
+        "monaco-port-hercule",
+        "monaco-monte-carlo-beach"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has two live Monaco discovery views, while Viator currently has substantial Monaco/Monte-Carlo walking, Formula 1, shore-excursion and Riviera inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Monte-Carlo/d50269-ttd",
+      "publicInventoryEvidence": "Current Viator Monaco/Monte-Carlo inventory includes self-guided and private city tours, Formula 1 circuit walks, shore excursions and Riviera experiences.",
+      "nextAction": "Generate one owner-side Monaco/Monte-Carlo destination-level tracked link and manually verify it before public activation; reuse it across the Monaco cluster."
+    },
+    {
+      "id": "viator-farallon-wildlife",
+      "destination": "Farallon Islands / San Francisco Pacific wildlife",
+      "placeIds": [
+        "us-farallon-islands"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2_SEASONAL",
+      "reason": "ERN now has a live Farallon Islands wildlife view. Viator's current San Francisco whale-watching guidance explicitly notes seasonal full-day excursions to waters around the Farallon Islands, but exact current partner inventory must be confirmed before activation.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-HK/blog/How-to-Prepare-for-Whale-Watching-in-the-San-Francisco-Bay/l93983",
+      "publicInventoryEvidence": "Viator's current San Francisco whale-watching guide identifies seasonal excursions to waters around the Farallon Islands.",
+      "nextAction": "Search the owner-side partner account for a current Farallon Islands or appropriately scoped San Francisco offshore wildlife/whale-watching link. If no exact useful inventory exists, leave dormant."
     }
   ]
 }
