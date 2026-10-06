@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T09:15:00Z",
+  "generatedAt": "2026-10-06T09:45:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2478,7 +2478,7 @@
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "High-intent Lapland resort with strong seasonal activity relevance.",
+      "reason": "ERN has a healthy Levi live/current resort source and current Viator inventory for Finnish Lapland. Keep one Levi/Viator activity bridge; do not add duplicate camera-level commercial actions.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Search Levi/Lapland activity inventory and generate one useful destination link if coverage is strong."
     },
@@ -5942,6 +5942,79 @@
       "publicInventoryEvidenceUrl": "https://saily.com/es/esim-andorra/",
       "publicInventoryEvidence": "Saily currently publishes Andorra eSIM plans and describes current Andorra network coverage.",
       "nextAction": "Compare owner-side program/link availability against Airalo. Activate at most one eSIM provider for Andorra unless there is a materially distinct visitor benefit."
+    },
+    {
+      "id": "viator-ruka-kuusamo",
+      "destination": "Ruka / Kuusamo, Finland",
+      "placeIds": [
+        "finland-ruka"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Ruka current-view source and Viator currently maintains a dedicated Ruka destination catalog with winter sports and nature experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Ruka/d51806-ttd",
+      "publicInventoryEvidence": "Current Viator Ruka destination inventory includes snowshoeing, nature/wildlife and winter-sports experiences.",
+      "nextAction": "Generate one owner-side Ruka destination tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-levi-lapland",
+      "destination": "Levi / Finnish Lapland",
+      "placeIds": [
+        "levi-ski-resort"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Klook currently carries Levi-specific northern-lights, snowshoeing, skiing and wilderness experiences, providing a differentiated active-program path alongside Viator.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/176507-levi-half-day-northern-lights-and-photography-tour/",
+      "publicInventoryEvidence": "Current Klook Levi inventory includes specific activities operating from Levi/Kittilä in the 2026 season.",
+      "nextAction": "Generate one owner-side Levi/Lapland Klook tracked link and manually verify it. Prefer one clear Levi activity bridge rather than multiple product buttons."
+    },
+    {
+      "id": "qeeq-nordic-ski-roadtrip",
+      "destination": "Nordic mountain road-trip rental research",
+      "placeIds": [
+        "finland-ruka",
+        "finland-yllas",
+        "sweden-idre-fjall",
+        "sweden-are",
+        "sweden-salen",
+        "norway-trysil",
+        "norway-hemsedal",
+        "sweden-vemdalen"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "QEEQ's current global rental coverage includes Finland, Sweden and Norway. Rental utility can be useful for selected Nordic mountain trips after destination choice.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.qeeq.com/deals",
+      "publicInventoryEvidence": "QEEQ's current country coverage includes Finland, Sweden and Norway; exact pickup locations and winter-equipment terms must still be verified owner-side.",
+      "nextAction": "Verify one genuinely useful pickup/destination context owner-side and generate one tracked link for that context only. Never imply winter tires, chains or cross-border suitability unless exact terms prove it."
+    },
+    {
+      "id": "kiwitaxi-nordic-arrivals",
+      "destination": "Nordic mountain arrival transfers",
+      "placeIds": [
+        "finland-ruka",
+        "finland-yllas",
+        "sweden-are",
+        "sweden-salen",
+        "norway-trysil",
+        "norway-hemsedal",
+        "sweden-vemdalen"
+      ],
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "Kiwitaxi currently supports Finland, Sweden and Norway. Transfer utility may be useful for specific airport-to-resort routes after destination selection.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://kiwitaxi.com/en/taxi-transfers-worldwide",
+      "publicInventoryEvidence": "Kiwitaxi's current worldwide coverage explicitly includes Finland, Sweden and Norway, with dedicated country transfer pages.",
+      "nextAction": "Verify exact airport-to-resort routes owner-side before generating any tracked link; one transfer action per supported route, never generic country-wide claims."
     }
   ]
 }

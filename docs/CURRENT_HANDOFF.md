@@ -4974,3 +4974,37 @@ No tracked link, exact transfer route, rental term or public eSIM choice was inv
 #### Invariants
 Watch Earth remains in-ERN only; external/link-only places stay Search/Explore-only; IMAGE_REFRESH remains natural-schedule only; public Guide/Now Moments remain OFF; no automatic social posting, paid ranking, automatic Travelpayouts placement or link rewriting; hard lean-core ceiling remains 575 KB.
 
+### Nordic mountain + Viator/Klook/QEEQ/Kiwitaxi continuation — 2026-10-06
+Continued the same large autonomous batch with a geographically separate Nordic tranche.
+
+#### Search/Explore
+Added **8 official/current Nordic mountain destinations**:
+- Finland: Ruka and Ylläs;
+- Sweden: Idre Fjäll, Åre, Sälen and Vemdalen;
+- Norway: Trysil and Hemsedal.
+
+Each uses a first-party resort webcam/current-conditions surface. Ylläs explicitly states five-minute image updates, Idre states its cameras run year-round 24/7, and SkiStar maintains current webcam networks across Åre, Sälen, Trysil, Hemsedal and Vemdalen.
+
+All remain HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold.
+
+#### Commercial/program diversification
+Added four distinct owner-link-gated paths:
+- **Viator Ruka/Kuusamo** — current dedicated Ruka tour inventory;
+- **Klook Levi/Lapland** — current Levi-specific activity inventory;
+- **QEEQ Nordic ski road-trip research** — country coverage exists, exact pickup/winter terms still required;
+- **Kiwitaxi Nordic arrivals** — Finland/Sweden/Norway are supported countries, exact airport-resort route still required.
+
+Utility routing also added:
+- Finland/Lapland mountain access;
+- Scandinavia ski connectivity, with one-eSIM-provider suppression.
+
+Combined state after Andorra + Nordic continuation:
+- healthy distinct searchable places: **629**;
+- healthy source records: **634**;
+- supplemental Search/Explore: **310 / 500**;
+- commercial opportunities: **376**;
+- utility-routing clusters: **32**;
+- Watch Earth impact: **0**.
+
+No exact rental pickup, transfer route, winter-equipment inclusion, tracked URL or eSIM public choice was invented.
+

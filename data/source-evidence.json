@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T09:15:00Z",
+  "generatedAt": "2026-10-06T09:45:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2360,6 +2360,62 @@
       "freshnessEvidence": "Ordino Arcalís explicitly offers live webcams and real-time piste conditions from its official resort site.",
       "coordinateNote": "Named resort sector/place reference only; ERN does not claim exact camera coordinates.",
       "checkedAt": "2026-10-06T09:15:00Z"
+    },
+    "finland-ruka-webcams": {
+      "sourceUrl": "https://www.ruka.fi/en/skiresort/slopes/webcameras",
+      "rightsBasis": "First-party Ruka webcam page; ERN links externally.",
+      "freshnessEvidence": "Ruka's official page currently exposes a broad named webcam set including the summit, village, Vuosseli, Pessari, Ruka Park and other slopes.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:45:00Z"
+    },
+    "finland-yllas-webcams": {
+      "sourceUrl": "https://ski.yllas.fi/en/about-us/webcams/",
+      "rightsBasis": "First-party Ylläs webcam page; ERN links externally.",
+      "freshnessEvidence": "Ylläs states its web cameras show what the fell looks like right now; images refresh every five minutes and several cameras are explicitly LIVE.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:45:00Z"
+    },
+    "sweden-idre-fjall-webcams": {
+      "sourceUrl": "https://www.idrefjall.se/en/about-us/information/webcams/",
+      "rightsBasis": "First-party Idre Fjäll webcam page; ERN links externally.",
+      "freshnessEvidence": "Idre Fjäll states the webcams show the mountain in real time and operate year-round, 24 hours a day.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:45:00Z"
+    },
+    "sweden-are-skistar-webcams": {
+      "sourceUrl": "https://www.skistar.com/en/ski-destinations/are/winter-in-are/weather-and-slopes/webcams-are/",
+      "rightsBasis": "First-party SkiStar webcam page; ERN links externally.",
+      "freshnessEvidence": "SkiStar's current Åre webcam page exposes named resort views including Tväråvalvet, Kabinbanan, Duved, VM Platån and Åreskutan.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:45:00Z"
+    },
+    "sweden-salen-skistar-webcams": {
+      "sourceUrl": "https://www.skistar.com/en/ski-destinations/salen/winter-in-salen/weather-slopes/webcams-salen/",
+      "rightsBasis": "First-party SkiStar webcam page; ERN links externally.",
+      "freshnessEvidence": "SkiStar currently maintains a dedicated Sälen webcam page and current weather/slopes surface covering the resort's four ski areas.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:45:00Z"
+    },
+    "norway-trysil-skistar-webcams": {
+      "sourceUrl": "https://www.skistar.com/en/ski-destinations/trysil/winter-in-trysil/weather-and-slopes/webcams-trysil/",
+      "rightsBasis": "First-party SkiStar webcam page; ERN links externally.",
+      "freshnessEvidence": "SkiStar's current Trysil page exposes named webcams including Trysilgondolen, Trysil Høyfjellssenter and Trysil Turistsenter.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:45:00Z"
+    },
+    "norway-hemsedal-skistar-webcams": {
+      "sourceUrl": "https://www.skistar.com/en/ski-destinations/hemsedal/winter-in-hemsedal/weather-and-slopes/webcams-hemsedal/",
+      "rightsBasis": "First-party SkiStar webcam page; ERN links externally.",
+      "freshnessEvidence": "SkiStar's official Hemsedal weather/slopes pages currently expose webcams plus live mountain weather and lift/trail status.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:45:00Z"
+    },
+    "sweden-vemdalen-skistar-webcams": {
+      "sourceUrl": "https://www.skistar.com/en/ski-destinations/vemdalen/winter-in-vemdalen/weather-and-slopes/webcams-vemdalen/",
+      "rightsBasis": "First-party SkiStar webcam page; ERN links externally.",
+      "freshnessEvidence": "SkiStar maintains a current dedicated Vemdalen webcam page and includes Vemdalen in its active mountain webcam network.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T09:45:00Z"
     }
   },
   "prague-petrin-tower": {

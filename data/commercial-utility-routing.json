@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T09:15:00Z",
+  "generatedAt": "2026-10-06T09:45:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -897,6 +897,43 @@
       ],
       "activationGate": "OWNER_EXACT_ROUTE_OR_DESTINATION_COVERAGE_AND_TRACKED_LINK_REQUIRED",
       "rule": "After the visitor chooses Andorra, use at most one transport/rental action appropriate to the trip and one connectivity action. Never stack QEEQ + Kiwitaxi + multiple eSIM buttons merely because programs exist."
+    },
+    {
+      "id": "finland-lapland-mountain-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "qeeq",
+        "economybookings"
+      ],
+      "placeIds": [
+        "levi-ski-resort",
+        "finland-ruka",
+        "finland-yllas"
+      ],
+      "activationGate": "EXACT_AIRPORT_RESORT_OR_PICKUP_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After choosing a Lapland destination, use one verified transfer or rental option. Do not stack transport programs or infer winter equipment."
+    },
+    {
+      "id": "scandinavia-ski-connectivity",
+      "intent": "connectivity",
+      "preferredProgramCandidates": [
+        "airalo",
+        "saily",
+        "yesim"
+      ],
+      "placeIds": [
+        "finland-ruka",
+        "finland-yllas",
+        "sweden-idre-fjall",
+        "sweden-are",
+        "sweden-salen",
+        "norway-trysil",
+        "norway-hemsedal",
+        "sweden-vemdalen"
+      ],
+      "activationGate": "PROGRAM_COUNTRY_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Optional eSIM utility only after destination choice. Default to one verified provider per country context."
     }
   ],
   "islandTravelClusters": [
