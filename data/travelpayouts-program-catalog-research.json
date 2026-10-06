@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T05:55:00Z",
+  "generatedAt": "2026-10-06T06:10:00Z",
   "publicActivationAllowed": false,
   "purpose": "Track promising Travelpayouts catalog programs separately from ERN-approved/unlocked programs so platform availability is never confused with owner-project access.",
   "evidenceBasis": [
@@ -101,5 +101,12 @@
     "In Travelpayouts Earthrightnow Project > My Programs, check whether Booking.com, Hotels.com, Trip.com, Agoda, Expedia, Rakuten Travel, 12Go, Aviasales and GetYourGuide are Available, Under Review or Unavailable.",
     "For any available program, test one representative ERN destination deep link before creating public placement.",
     "Record exact owner-side status and only then graduate a program into travelpayouts-unlocked-programs.json."
-  ]
+  ],
+  "platformCheckpoint2026": {
+    "verifiedAt": "2026-10-06T06:10:00Z",
+    "marketplace": "Travelpayouts currently advertises 90+ trusted brands and broad service families including transport, accommodation, tours/activities, insurance, packages and cruises.",
+    "connectionModel": "Since 2026-04-27, projects are automatically connected to relevant programs when available; some tools/programs are instant, some require review, and some can remain unavailable.",
+    "deepLinkRule": "Travelpayouts Links can generate partner deep links to specific brand pages only after the program is available to the selected Project.",
+    "ernRule": "Catalog presence is research evidence only. Owner-project availability, exact destination coverage, generated tracked link and manual verification remain mandatory before public activation."
+  }
 }
