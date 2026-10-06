@@ -68,3 +68,37 @@ During each large ERN expansion batch:
 - create research/opportunity records only when public inventory and visitor value are real;
 - defer exact tracked-link activation to owner-side verification when required;
 - consolidate duplicate commercial routes instead of inflating opportunity count.
+
+
+## Current utility-expansion checkpoint — 2026-10-06
+
+Travelpayouts research has now moved beyond a tour-first model into a fit-based utility layer.
+
+### Owner-account link-generation programs currently recorded as available
+ERN's internal owner-evidence registry currently records link-generation access for: Airalo, Yesim, Saily, GigSky, Drimsim, Kiwitaxi, intui.travel, GetTransfer, Localrent, QEEQ, Economybookings, AutoEurope, GetRentacar, BikesBooking, Kiwi.com, Aviasales, KKday, Go City, WeGoTrip, Radical Storage, EKTA, AirHelp and Compensair. Viator remains separately verified as an active direct partner.
+
+This list is not a mandate to use every program. It is an inventory of possible utilities. ERN should normally choose the single clearest option for a visitor need.
+
+### Initial routed pilots
+Research/opportunity records now exist for:
+- Iceland road trips → QEEQ candidate;
+- Madeira road trips → AutoEurope candidate;
+- Greenland and Rapa Nui flight planning → Kiwi.com candidates;
+- Mauritius arrival transfers → Kiwitaxi candidate;
+- Tahiti/Papeete transfers → intui.travel candidate;
+- Taiwan activities/transport → KKday candidate;
+- remote-island connectivity → Airalo candidate.
+
+Every route stays `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED` until exact owner-side destination coverage and tracked-link behavior are manually verified.
+
+### Program-selection rules
+- car rental: normally choose one partner per destination cluster, not several competing buttons;
+- transfers: prefer an existing verified transfer partner where useful; use alternatives to fill coverage gaps;
+- flights: only in an explicit trip-planning/Get There context, never on live-camera cards;
+- eSIM: normally one provider per context and only after country/region coverage is confirmed;
+- insurance/protection: optional only, never fear-based or presented as required;
+- activities: KKday/Go City/WeGoTrip may complement existing partners when inventory or product format materially improves visitor value;
+- no program commission or reward rate may influence Earth/source ranking.
+
+### Data/API research
+Travelpayouts' current documentation confirms that several brands expose structured data or APIs that could later make ERN's business layer more useful without hand-curating every destination. Examples include Airalo country/region eSIM feeds, Kiwi.com flight APIs (subject to brand approval), GetTransfer API (approval required), WeGoTrip API, Tiqets data and Viator tour data. These remain research paths only; API availability does not authorize a public integration by itself.
