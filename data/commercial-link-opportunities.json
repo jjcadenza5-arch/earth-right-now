@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T01:20:00Z",
+  "generatedAt": "2026-10-06T01:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4587,6 +4587,134 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-MY/Guernsey/d4329-ttd",
       "publicInventoryEvidence": "Current Viator Guernsey inventory includes coastal, historical, walking and shore-excursion products.",
       "nextAction": "Generate one owner-side Guernsey destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "qeeq-iceland-road-trip",
+      "destination": "Iceland road-trip planning",
+      "placeIds": [
+        "reykjavik",
+        "iceland-myvatn",
+        "iceland-vikurskard",
+        "iceland-bulandshofdi",
+        "iceland-vatnsfjardarhals"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "ERN has broad current Iceland road and destination coverage; independent driving is a natural post-discovery planning need. QEEQ is owner-account link-generation available, but exact Iceland coverage and the tracked destination link must be verified.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "In the owner Travelpayouts project, confirm QEEQ Iceland inventory and generate one Iceland-level tracked link only if destination coverage is useful."
+    },
+    {
+      "id": "autoeurope-madeira-road-trip",
+      "destination": "Madeira car rental",
+      "placeIds": [
+        "madeira-funchal",
+        "madeira-porto-moniz",
+        "madeira-calheta",
+        "madeira-machico",
+        "madeira-pico-do-areeiro"
+      ],
+      "partnerCandidate": "autoeurope",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "ERN has twelve healthy Madeira discovery places and road travel is a natural island-planning action. AutoEurope is owner-account link-generation available for EU/UK car rental.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm Madeira/Funchal rental coverage owner-side and generate one island-level tracked link; suppress other rental brands by default if this is selected."
+    },
+    {
+      "id": "kiwi-greenland-flight-planning",
+      "destination": "Greenland flight planning",
+      "placeIds": [
+        "nuuk-greenland",
+        "greenland-ilulissat-airport",
+        "greenland-kangerlussuaq-airport",
+        "greenland-kulusuk-airport",
+        "greenland-qaarsut-airport",
+        "greenland-sisimiut-airport"
+      ],
+      "partnerCandidate": "kiwi-com",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "Six ERN Greenland current views include five airport gateways. Kiwi.com link generation is available in the owner Travelpayouts project, making flight planning a natural downstream utility if a useful Greenland search/destination link can be generated.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate and manually verify a Greenland flight/search tracked link only if it resolves to useful bookable routing."
+    },
+    {
+      "id": "kiwi-rapa-nui-flight-planning",
+      "destination": "Rapa Nui / Easter Island flight planning",
+      "placeIds": [
+        "chile-rapa-nui-mataveri"
+      ],
+      "partnerCandidate": "kiwi-com",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "Rapa Nui is a remote air-dependent destination and ERN's Mataveri current view naturally leads to Get There planning. Kiwi.com is owner-account link-generation available.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one Rapa Nui / IPC flight-search tracked link and verify destination resolution before activation."
+    },
+    {
+      "id": "kiwitaxi-mauritius-arrival-transfer",
+      "destination": "Mauritius airport-to-resort transfers",
+      "placeIds": [
+        "mauritius-grand-baie",
+        "mauritius-pointe-desny",
+        "mauritius-saint-felix",
+        "mauritius-shanti-maurice"
+      ],
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "ERN has four healthy Mauritius discovery places and airport-to-resort transfer planning is a natural next action. Kiwitaxi link generation is available in the owner account.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm MRU-to-relevant-resort coverage and generate one useful tracked transfer link; do not add if route coverage is weak."
+    },
+    {
+      "id": "intui-tahiti-arrival-transfer",
+      "destination": "Tahiti / Papeete arrival transfers",
+      "placeIds": [
+        "french-polynesia-tahiti-faaa"
+      ],
+      "partnerCandidate": "intui-travel",
+      "intent": "transport",
+      "priority": "P1_UTILITY",
+      "reason": "ERN's Tahiti/Faa'a current view is directly adjacent to the island's main arrival gateway; intui.travel owner-side link generation is available and may provide a practical airport-transfer action.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Confirm PPT airport transfer coverage to Papeete/resort zones and generate an exact tracked link only if useful."
+    },
+    {
+      "id": "kkday-taiwan-discovery",
+      "destination": "Taiwan destination activities",
+      "placeIds": [
+        "taiwan-jiufen",
+        "taiwan-sun-moon-lake",
+        "taiwan-yehliu",
+        "taiwan-elephant-mountain",
+        "taiwan-tamsui-fishermans-wharf",
+        "taiwan-gaomei-wetland"
+      ],
+      "partnerCandidate": "kkday",
+      "intent": "activities",
+      "priority": "P1_UTILITY",
+      "reason": "ERN has exceptionally broad Taiwan current-view coverage and KKday is owner-account link-generation available with strong Asia activities/transport fit. Use a small number of destination-level bridges rather than camera-level affiliate density.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search owner-side KKday inventory for one or more high-utility Taiwan destination links; activate only exact verified links and suppress duplicate Klook placements where they add no value."
+    },
+    {
+      "id": "airalo-remote-islands-connectivity",
+      "destination": "International island connectivity utility",
+      "placeIds": [
+        "chile-rapa-nui-mataveri",
+        "seychelles-beau-vallon",
+        "french-polynesia-tahiti-faaa",
+        "french-polynesia-moorea"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Airalo link generation is available in the owner Travelpayouts project. Connectivity may be useful after a visitor chooses a remote international destination, but must remain one optional Before You Go utility rather than a destination-card promotion.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify country/region eSIM coverage for each intended destination and generate one exact tracked utility link only where coverage is clear; suppress competing eSIM brands by default."
     }
   ]
 }
