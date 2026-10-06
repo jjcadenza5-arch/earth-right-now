@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T06:10:00Z",
+  "generatedAt": "2026-10-06T06:35:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility links are optional post-discovery helpers. They do not affect which place/camera ERN ranks or recommends.",
   "opportunities": [
@@ -223,6 +223,26 @@
       "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
       "placementRule": "Use only where owner access exists and inventory materially improves on existing Viator/Klook/KKday/Tiqets options.",
       "why": "Travelpayouts publicly lists GetYourGuide; it can serve as a selective activity fallback rather than another default button."
+    },
+    {
+      "id": "rentalcars-global-coverage-research",
+      "partnerCandidate": "rentalcars-com",
+      "intent": "transport",
+      "scope": "GLOBAL_CAR_RENTAL_COVERAGE_GAPS",
+      "priority": "P2_RESEARCH",
+      "state": "OWNER_PROJECT_AVAILABILITY_REQUIRED",
+      "placementRule": "Only if current Earthrightnow project access exists and destination coverage is stronger than the selected existing rental option; never stack multiple car-rental buttons.",
+      "why": "Potential broad coverage complement for airports, islands and road-trip destinations."
+    },
+    {
+      "id": "discover-cars-global-coverage-research",
+      "partnerCandidate": "discover-cars",
+      "intent": "transport",
+      "scope": "GLOBAL_CAR_RENTAL_COVERAGE_GAPS",
+      "priority": "P2_RESEARCH",
+      "state": "OWNER_PROJECT_AVAILABILITY_AND_CURRENT_CATALOG_RECHECK_REQUIRED",
+      "placementRule": "Research-only until current program availability is confirmed owner-side. If available, use only where it wins a utility comparison against Localrent/QEEQ/AutoEurope/etc.",
+      "why": "Could expand rental coverage while keeping ERN's one-useful-rental-option rule."
     }
   ],
   "safeguards": {
