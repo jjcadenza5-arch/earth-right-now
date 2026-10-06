@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T02:35:00Z",
+  "generatedAt": "2026-10-06T04:20:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -545,6 +545,72 @@
       ],
       "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
       "rule": "Reserve/fallback routing only; choose one car-rental partner after owner-side coverage comparison, not several competing links."
+    },
+    {
+      "id": "central-europe-city-luggage",
+      "intent": "services",
+      "preferredProgramCandidates": [
+        "radical-storage"
+      ],
+      "placeIds": [
+        "prague-old-town-hall",
+        "vienna-city-hall-ringstrasse",
+        "hungary-budapest-danube",
+        "lithuania-vilnius-cathedral-square",
+        "salzburg-old-town"
+      ],
+      "activationGate": "OWNER_CITY_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "One luggage-storage utility per supported city context; never on live-camera cards."
+    },
+    {
+      "id": "central-europe-self-guided-culture",
+      "intent": "activities",
+      "preferredProgramCandidates": [
+        "wegotrip"
+      ],
+      "placeIds": [
+        "prague-old-town-hall",
+        "vienna-city-hall-ringstrasse",
+        "hungary-budapest-danube",
+        "lithuania-vilnius-cathedral-square",
+        "salzburg-old-town"
+      ],
+      "activationGate": "EXACT_DESTINATION_INVENTORY_AND_LINK_REQUIRED",
+      "rule": "Use only after the visitor has chosen the city; do not duplicate stronger attraction/tour actions without a clear self-guided use case."
+    },
+    {
+      "id": "caribbean-connectivity",
+      "intent": "connectivity",
+      "preferredProgramCandidates": [
+        "airalo",
+        "saily",
+        "yesim"
+      ],
+      "placeIds": [
+        "bermuda-st-george-town",
+        "barbados-paynes-bay",
+        "st-maarten-great-bay",
+        "druif-beach-aruba"
+      ],
+      "activationGate": "PROGRAM_COUNTRY_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Default to one verified eSIM option per country/island context."
+    },
+    {
+      "id": "arctic-remote-flight-planning",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwi-com",
+        "aviasales"
+      ],
+      "placeIds": [
+        "longyearbyen-adventfjorden",
+        "greenland-ilulissat-airport",
+        "greenland-kangerlussuaq-airport",
+        "vagar-airport-faroe",
+        "chile-rapa-nui-mataveri"
+      ],
+      "activationGate": "EXACT_ROUTE_OR_DESTINATION_SEARCH_LINK_REQUIRED",
+      "rule": "Trip-planning only; never promoted on camera cards or used to rank destinations."
     }
   ]
 }
