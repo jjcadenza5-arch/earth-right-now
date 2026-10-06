@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T12:45:00Z",
+  "generatedAt": "2026-10-06T13:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -6810,6 +6810,21 @@
       "reason": "ERN now has an official Kalavrita current-view source. Keep a research path for Kalavrita/Helmos experiences but activate only if exact owner-side inventory is useful.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Search owner-side Viator inventory for Kalavrita/Helmos; if exact useful inventory is weak, leave dormant rather than using a generic Greece link."
+    },
+    {
+      "id": "viator-metsovo-anilio",
+      "destination": "Metsovo / Anilio, Epirus",
+      "placeIds": [
+        "greece-anilio"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a live Anilio/Metsovo mountain source, and Viator currently carries Metsovo hiking and e-bike activities with current operating windows.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Epirus/Easy-Hiking-Tour-near-to-Metsovo/d51394-267852P5",
+      "publicInventoryEvidence": "Current Viator Metsovo inventory includes guided hiking and e-bike experiences operating through 2027.",
+      "nextAction": "Generate one owner-side Metsovo destination-level tracked link and manually verify it; do not imply ski-resort access unless exact itinerary evidence supports it."
     }
   ]
 }
