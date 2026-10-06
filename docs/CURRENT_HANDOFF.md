@@ -4055,3 +4055,99 @@ REPAIR remains Balykchy / Issyk-Kul gateway (KG Camera) and Kanlaon (PHIVOLCS), 
 - No automatic social posting/account creation.
 - No paid ranking.
 - Commercial value never affects Earth ranking, truth, health or currentness.
+
+
+### Cyprus + Bermuda + Travelpayouts utility diversification + Operations architecture repair — 2026-10-06
+This continuation follows the owner's preferred ERN cadence: expand Earth coverage and business coverage in substantial balanced batches, while deliberately exploring the wider Travelpayouts ecosystem beyond the Viator/Klook-heavy mix.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced to **547 places** from **552 healthy source records**.
+- lazy supplemental Search/Explore catalog: **228 rows**;
+- the current supplemental integrity guard supports up to **500 rows** while preserving all existing hard gates and lazy-on-search behavior;
+- core catalog remains protected from first-paint growth.
+
+Five healthy searchable places were added:
+
+**Cyprus — 2 current views**
+- Paphos — Sea Front;
+- Polemi — Vineyard View.
+
+Both use Paphos Life's current webcam service, which states its images update every minute. They remain `LIVE_IMAGE` + `LINK_ONLY` + Search/Explore-only with Watch hold.
+
+**Bermuda — 3 current/live views**
+- Cooper's Island — official Bermuda Weather Service current view, with the service stating the image updates every two minutes;
+- Royal Naval Dockyard — official Royal Naval Dockyard live port webcam;
+- Nonsuch Island — CahowCam conservation livestream from Nonsuch Expeditions / LookBermuda for the current 2025/26 Cahow season.
+
+All remain external / `LINK_ONLY` and cannot fill Watch Earth.
+
+Existing Bermuda and Cyprus commercial mappings were extended rather than multiplied:
+- one Bermuda-level Viator planning bridge now serves St. George's, Cooper's Island, Royal Naval Dockyard and Nonsuch Island;
+- the existing Cyprus/Troodos Viator bridge now also includes Paphos and Polemi;
+- the existing Localrent Cyprus road-trip utility now includes Paphos/Polemi as appropriate island-driving contexts.
+
+#### Travelpayouts diversification — 12 new utility opportunities
+Commercial opportunity registry advanced to **336 records**.
+
+Added city-utility and self-guided-culture research mappings:
+- Radical Storage → Prague, Vienna, Budapest, Vilnius and Salzburg;
+- WeGoTrip → Prague, Vienna, Budapest, Vilnius and Salzburg.
+
+Added broader utility mappings:
+- Airalo → Caribbean island connectivity context;
+- Kiwi.com → Arctic / remote-island flight-planning context.
+
+New utility-routing clusters were added for:
+- Central Europe city luggage storage;
+- Central Europe self-guided culture;
+- Caribbean connectivity;
+- Arctic / remote-island flight planning.
+
+All remain `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`. No tracked link, price, availability, coverage claim or approval was invented. Owner-side exact inventory/coverage and tracked-link verification remain mandatory before public placement. Duplicate suppression remains explicit: one luggage-storage option per city context, one self-guided option only where useful, one eSIM option by default and one flight-search action per trip-planning context.
+
+A ChatGPT plugin-directory check did not surface a Travelpayouts connector; Booking.com and Tripadvisor apps appeared, but neither provides the owner-side Travelpayouts link-generation workflow needed by ERN. Therefore ERN continues to use the repository's owner-account evidence / exact-link gating rather than pretending an integration exists.
+
+#### Operations architecture repair
+Operations runs 1411–1414 had exposed a real architectural mismatch after Search/Explore became scalable through the supplemental catalog.
+
+Root cause:
+- provider observations for valid supplemental sources `guernsey-harbour-live` and `guernsey-havelet-bay-live` were being rejected as `UNKNOWN_SOURCE_ID`;
+- `scripts/provider-worklist.mjs` and `scripts/operations-status.mjs` were still loading only `data/sources.json` rather than the full core + supplemental searchable catalog.
+
+Corrective action:
+- both scripts now build their operational source universe from `data/sources.json` + `data/search-supplemental.json`;
+- existing provider-safety rejection logic was preserved rather than disabled;
+- no Guernsey observation was deleted and no safety check was weakened.
+
+An initial patch accidentally inserted literal escaped newline sequences and correctly failed JavaScript syntax checks. That patch was immediately corrected before finalization.
+
+Final validation:
+- JavaScript Syntax Check **1067 SUCCESS**;
+- Operations **1418 SUCCESS** with the full core + supplemental catalog recognized;
+- Pages **2621 SUCCESS** for the public source/business release preceding the operations-helper-only repair.
+
+Latest Operations 1418 searchable-source health:
+- eligible searchable sources: **556**;
+- eligible unique URLs: **425**;
+- current cohort: **87 sources / 61 unique URLs**;
+- reachable: **80**;
+- missing: **0**;
+- access-blocked: **4**;
+- temporary/network: **3**;
+- recovered: **0**;
+- repair: **2**;
+- review: **4**;
+- watch: **1**.
+
+REPAIR remains Balykchy and Kanlaon, both previously supported by separate provider evidence and therefore not automatically removed or truth-mutated. REVIEW remains Dolomiti Superski, Sangay, Addo and Satara for repeated access limitation. Águas de Lindóia entered first-transient WATCH only and must recheck naturally rather than being treated as broken.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- all LINK_ONLY / external additions remain Search/Explore-only;
+- Current Image / IMAGE_REFRESH renewal remains natural-schedule only;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no automatic Travelpayouts placement or link rewriting;
+- no paid ranking;
+- commercial value never affects Earth ranking, source truth, health or currentness.
