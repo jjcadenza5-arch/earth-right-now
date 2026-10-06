@@ -4500,3 +4500,105 @@ Pages **2636 completed SUCCESS** for the final public source/commercial state in
 - no automatic Travelpayouts placement or link rewriting;
 - no paid ranking;
 - commercial value never affects Earth ranking, source truth, health or currentness.
+
+
+### Belize + Azores + Travelpayouts diversification batch — 2026-10-06
+This batch continued the owner's preferred ERN operating model: grow searchable Earth coverage and the business side in meaningful balanced batches, while deliberately expanding Travelpayouts research beyond tours/activities. Quality, provenance, currentness, permission boundaries and commercial neutrality remained ahead of raw count.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **567 to 578 places** (**583 healthy source records** total).
+- lazy supplemental Search/Explore catalog: **259 rows** under the existing 500-row bounded capacity;
+- core first-load catalog remains unchanged/lean.
+
+This batch added **11 healthy Search/Explore places**:
+
+**Belize — first ERN Belize place**
+- Belize Zoo — first-party daily live wildlife camera. The Belize Zoo states the camera is online every day from 9am–4pm Belize time and rotates among animal habitats.
+
+**Azores — 10 additional official Visit Azores current views**
+- Angra do Heroísmo — Terceira;
+- Horta — Faial;
+- Velas — São Jorge;
+- Fajã Grande — Flores;
+- Vila do Corvo — Corvo;
+- Santa Cruz da Graciosa — Graciosa;
+- Ponta Delgada — São Miguel;
+- Sete Cidades — São Miguel;
+- Furnas — São Miguel;
+- Lagoa do Fogo — São Miguel.
+
+All 11 remain external / `LINK_ONLY` Search/Explore content with `watchHold: true`. None can fill Watch Earth.
+
+Research-only geography also expanded conservatively:
+- Falkland Islands Tourist Board officially confirms a Stanley Tourist Information Centre webcam, but the exact durable live target/currentness still needs resolution;
+- Cayman Islands Port Authority has an official Webcams surface, but individual named targets/currentness still need extraction;
+- Government of Guam has a live-streaming surface, but ERN has not established that it is a continuous scenic/current destination camera rather than an event/institutional stream.
+No research-only lead was promoted without source-specific current-view evidence.
+
+#### Destination/business expansion
+Commercial opportunity registry is now **357 records**.
+
+New destination-level paths:
+- Belize Zoo / Belize City → Viator;
+- Faial / Horta → Viator;
+- Azores outer islands (São Jorge / Flores / Corvo / Graciosa) → one Viator research path, deliberately dormant if useful exact island inventory is absent.
+
+Existing mappings were expanded rather than duplicated:
+- Terceira / Santa Maria Viator path now includes Angra do Heroísmo;
+- São Miguel Viator path now also serves Ponta Delgada, Sete Cidades, Furnas and Lagoa do Fogo.
+
+Every new/unverified path remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`. No tracked URL, price, approval, offer or availability was invented.
+
+#### Travelpayouts diversification
+The commercial utility research registry advanced to **24 records**.
+
+New program research lanes added:
+- Booking.com — accommodation/stay research;
+- Trip.com — multi-vertical stay/flight/train/attraction/transfer research;
+- 12Go — rail/bus/ferry/intercity transport research;
+- GetYourGuide — selective activity-gap research;
+- Rentalcars.com — broad car-rental coverage-gap research;
+- Discover Cars — car-rental research with explicit current owner-catalog recheck required before treating it as available.
+
+These are **research/opportunity records only**, not public placements. Travelpayouts public catalog presence never proves Earthrightnow Project access. Owner-project availability, exact destination coverage, generated tracked link and manual verification remain mandatory before activation.
+
+The Travelpayouts catalog research file was refreshed with the current 2026 platform model: 90+ trusted brands, project-specific program availability, review/unavailable states and exact deep-link gating. ERN continues to disable automatic placement and automatic link rewriting.
+
+#### Source-health / repair handling
+Operations 1427, 1428 and 1429 completed SUCCESS across the staged searchable expansion.
+
+Latest fully completed searchable health before the final metadata-only repair note (Operations **1428**) recorded:
+- eligible searchable sources: **583**;
+- eligible unique URLs: **443**;
+- rotating cohort: **89 sources / 63 unique URLs**;
+- reachable: **81**;
+- missing: **0**;
+- blocked: **4**;
+- temporary/network: **4**;
+- recovered: **3**;
+- repair: **4**;
+- review: **4**;
+- watch: **0**.
+
+Yellowstone Lake naturally escalated to REPAIR from repeated automated network/server failures. It was independently investigated against the official USGS/YVO source: USGS confirms the Yellowstone Lake camera was reinstalled in September 2026, the canonical current-view page remains active and the camera updates every 15 minutes. Therefore ERN preserved HEALTHY/LIVE_IMAGE source truth and recorded durable provider/maintenance evidence rather than deleting or downgrading it.
+
+Águas de Lindóia likewise remains preserved: the official Circuito das Águas Paulista page remains active and explicitly exposes `Câmera ao Vivo`. Balykchy and Kanlaon retain their previously documented active-provider evidence. Access-blocked sources remain review-only.
+
+#### Release validation
+Pages **2642 completed SUCCESS** for the final searchable/business catalog state and Pages **2643 completed SUCCESS** after the Yellowstone provider-observation repair record.
+- all canonical release guards passed on the validated release path;
+- hard lean-core budget remains exactly **575000 bytes**;
+- supplemental Search remains lazy/gated;
+- no Watch Earth eligibility rule was relaxed.
+
+Operations 1430 was allowed to continue naturally after the repair-evidence commit; no manual workflow trigger was used.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- IMAGE_REFRESH / Current Image renewal remains natural-schedule only;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no automatic Travelpayouts public placement or link rewriting;
+- no paid ranking;
+- commercial value never affects Earth ranking, source truth, health or currentness.
