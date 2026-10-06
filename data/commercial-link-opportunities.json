@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T02:20:00Z",
+  "generatedAt": "2026-10-06T02:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2918,17 +2918,21 @@
     },
     {
       "id": "viator-barbados-paynes-bay",
-      "destination": "Barbados / Paynes Bay",
+      "destination": "Barbados — West & South Coast Beaches",
       "placeIds": [
-        "barbados-paynes-bay"
+        "barbados-paynes-bay",
+        "barbados-worthing-beach",
+        "barbados-dover-beach",
+        "barbados-accra-beach",
+        "barbados-folkestone-marine-park"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "Paynes Bay has a strong live beach view and Viator currently has Paynes Bay-specific catamaran/snorkel inventory plus broad Barbados activities.",
+      "reason": "ERN now has five healthy Barbados beach/current-view places across the west and south coasts. One Barbados-level Viator planning bridge should serve the cluster rather than multiplying beach-specific affiliate density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Barbados-attractions/Paynes-Bay/d30-a13288",
-      "nextAction": "Generate one Barbados or Paynes Bay Viator tracked link and verify it manually."
+      "nextAction": "Generate one Barbados destination-level Viator tracked link and verify it manually; use beach-specific products only when a visitor explicitly drills into that place."
     },
     {
       "id": "viator-cape-verde-sal",
