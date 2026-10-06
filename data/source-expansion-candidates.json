@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T05:10:00Z",
+  "generatedAt": "2026-10-06T05:25:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -6400,6 +6400,62 @@
       "evidence": "The current Coral Costa Caribe official site labels its beach camera LIVE BEACH CAM and states it is a real-time view.",
       "verifiedAt": "2026-10-06T05:10:00Z",
       "promotedAt": "2026-10-06T05:10:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "botswana-kalahari-salt-pan-live",
+      "title": "Makgadikgadi — Kalahari Salt Pan",
+      "country": "Botswana",
+      "region": "Makgadikgadi Pans",
+      "provider": "Africam / Natural Selection Foundation",
+      "sourcePage": "https://africam.com/lodge/kalahari/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Africam currently labels the Makgadikgadi Kalahari Salt Pan page as a Live Stream.",
+      "verifiedAt": "2026-10-06T05:25:00Z",
+      "promotedAt": "2026-10-06T05:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "botswana-khwai-elephant-pan-live",
+      "title": "Khwai — Elephant Pan",
+      "country": "Botswana",
+      "region": "Khwai Private Reserve",
+      "provider": "Africam / Khwai Private Reserve",
+      "sourcePage": "https://africam.com/lodge/elephant-pan/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Africam currently exposes Elephant Pan Live Stream on the Khwai Private Reserve page.",
+      "verifiedAt": "2026-10-06T05:25:00Z",
+      "promotedAt": "2026-10-06T05:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "cape-verde-ponta-preta-live",
+      "title": "Sal — Ponta Preta Beach",
+      "country": "Cape Verde",
+      "region": "Sal Island / Santa Maria",
+      "provider": "CapeVerde.com",
+      "sourcePage": "https://www.capeverde.com/live-webcams/sal-island-live-webcams",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "CapeVerde.com currently labels Ponta Preta as a Live stream / Real-time video.",
+      "verifiedAt": "2026-10-06T05:25:00Z",
+      "promotedAt": "2026-10-06T05:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "cape-verde-kitesurf-beach-live",
+      "title": "Sal — Kitesurf Beach",
+      "country": "Cape Verde",
+      "region": "Sal Island",
+      "provider": "CapeVerde.com",
+      "sourcePage": "https://www.capeverde.com/live-webcams/sal-island-live-webcams",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "CapeVerde.com currently labels Kitesurf Beach as a Live stream / Real-time video.",
+      "verifiedAt": "2026-10-06T05:25:00Z",
+      "promotedAt": "2026-10-06T05:25:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
