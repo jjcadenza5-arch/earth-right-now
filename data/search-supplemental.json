@@ -7458,5 +7458,36 @@
     "searchSupplemental": true,
     "rightsBasis": "First-party resort page linking its live video feed; link-only.",
     "freshnessEvidence": "Camaroncito currently labels the embedded camera as LIVE Video Feed and states it shows the Caribbean beach in real time."
+  },
+  {
+    "id": "kenya-porini-rhino-waterhole-live",
+    "placeId": "kenya-ol-pejeta-porini",
+    "title": "Ol Pejeta — Porini Rhino Camp Waterhole",
+    "provider": "Gamewatchers Safaris / Porini Camps",
+    "country": "Kenya",
+    "region": "Ol Pejeta Conservancy / Laikipia",
+    "categories": [
+      "Wildlife",
+      "Safari",
+      "Conservation",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.porini.com/blog/",
+    "attribution": "Gamewatchers Safaris / Porini Camps",
+    "checkedAt": "2026-10-06T05:45:00Z",
+    "lastSuccessfulCheck": "2026-10-06T05:45:00Z",
+    "quality": 99,
+    "freshness": 99,
+    "moment": 99,
+    "story": "24/7 wildlife waterhole camera at Porini Rhino Camp in Ol Pejeta Conservancy, Kenya.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "First-party Porini/Gamewatchers live-camera announcement and camp source; link-only.",
+    "freshnessEvidence": "Porini's current 2026 blog explicitly announces a 24/7 live wildlife camera at Porini Rhino Camp; August 2026 industry coverage describes the stream as real-time and unedited."
   }
 ]
