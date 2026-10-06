@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06",
+  "updatedAt": "2026-10-06T13:18:17Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -259,6 +259,56 @@
       "Bulkang Kanlaon",
       "Kanlaon Volcano",
       "Negros Philippines"
+    ],
+    "italy-vulcano-volcano": [
+      "Vulcano Island",
+      "Isola di Vulcano",
+      "Isole Eolie",
+      "Aeolian Islands"
+    ],
+    "turkey-erciyes": [
+      "Erciyes Dağı",
+      "Mount Erciyes",
+      "Kayseri Erciyes",
+      "Erciyes Turkey"
+    ],
+    "france-val-thorens": [
+      "Val Thorens France",
+      "Les 3 Vallées",
+      "Les Trois Vallées"
+    ],
+    "slovenia-bohinj-lake-colnarna": [
+      "Bohinjsko jezero",
+      "Lake Bohinj",
+      "Bohinj Slovenia",
+      "Čolnarna Bohinj"
+    ],
+    "slovenia-bohinj-oroznova-hut": [
+      "Orožnova koča",
+      "Oroznova Koca",
+      "Bohinj Alps",
+      "Črna Prst"
+    ],
+    "north-macedonia-krusevo": [
+      "Крушево",
+      "Kruševo North Macedonia",
+      "Krusevo Macedonia"
+    ],
+    "north-macedonia-mihajlovo": [
+      "Михајлово",
+      "Mihajlovo Macedonia",
+      "Kožuf",
+      "Kozuf"
+    ],
+    "canada-tofino-north-chesterman": [
+      "North Chesterman Beach",
+      "Nanukuʔwa",
+      "Tofino BC"
+    ],
+    "botswana-selinda-basin": [
+      "Selinda Reserve",
+      "The Basin Selinda",
+      "Selinda Camp Botswana"
     ]
   }
 }

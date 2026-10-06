@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T13:40:00Z",
+  "generatedAt": "2026-10-06T13:18:17Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -701,7 +701,10 @@
         "zimbabwe-victoria-falls-safari-lodge-waterhole",
         "zimbabwe-hwange-linkwasha",
         "south-africa-kwa-maritane-waterhole",
-        "south-africa-kruger-shalati-bridge"
+        "south-africa-kruger-shalati-bridge",
+        "zimbabwe-hwange-safari-lodge",
+        "zimbabwe-hwange-the-hide",
+        "botswana-selinda-basin"
       ],
       "activationGate": "EXACT_AIRPORT_DESTINATION_PAIR_AND_OWNER_TRACKED_LINK_REQUIRED",
       "rule": "Arrival-transfer research only after the visitor chooses the destination. Use at most one verified transfer option for a route; never imply service to remote lodges or parks unless the exact airport/destination pair is supported."
@@ -1583,6 +1586,59 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_FERRY_ROUTE_AND_TRACKED_LINK_REQUIRED",
       "rule": "Research-only until 12Go is genuinely available to the Earthrightnow project and an exact supported Sicily/Aeolian route exists. Do not imply ferry schedules or availability from catalog presence alone."
+    },
+    {
+      "id": "slovenia-alpine-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "omio",
+        "qeeq",
+        "kiwitaxi"
+      ],
+      "placeIds": [
+        "slovenia-bohinj-lake-colnarna",
+        "slovenia-bohinj-oroznova-hut",
+        "bled-lake",
+        "slovenia-triglav-kredarica"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_ROUTE_OR_PICKUP_AND_TRACKED_LINK_REQUIRED",
+      "rule": "Use only after a Slovenian alpine destination is chosen. Prefer one verified intercity, rental or transfer action; never imply mountain-road suitability."
+    },
+    {
+      "id": "vancouver-island-west-coast-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "discover-cars",
+        "kiwi-com"
+      ],
+      "placeIds": [
+        "canada-tofino-north-chesterman",
+        "canada-tofino-mackenzie-beach",
+        "canada-tofino-cox-bay"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_PICKUP_OR_ROUTE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "Research one useful Vancouver Island west-coast access path after destination choice; suppress overlapping transport buttons."
+    },
+    {
+      "id": "north-macedonia-mountain-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "kiwitaxi",
+        "gettransfer"
+      ],
+      "placeIds": [
+        "north-macedonia-mavrovo",
+        "north-macedonia-popova-sapka",
+        "north-macedonia-galicica",
+        "north-macedonia-pelister",
+        "north-macedonia-vodno",
+        "north-macedonia-krusevo",
+        "north-macedonia-mihajlovo"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_COUNTRY_COVERAGE_AND_EXACT_TRACKED_LINK_REQUIRED",
+      "rule": "One verified transfer or rental action per North Macedonia mountain context; never infer winter equipment or road conditions."
     }
   ],
   "islandTravelClusters": [

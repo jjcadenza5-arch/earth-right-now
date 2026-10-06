@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T13:40:00Z",
+  "generatedAt": "2026-10-06T13:18:17Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4165,7 +4165,9 @@
       "destination": "Ljubljana / Triglav National Park, Slovenia",
       "placeIds": [
         "slovenia-ljubljana",
-        "slovenia-triglav-kredarica"
+        "slovenia-triglav-kredarica",
+        "slovenia-bohinj-lake-colnarna",
+        "slovenia-bohinj-oroznova-hut"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -4173,8 +4175,8 @@
       "reason": "ERN now has official national-meteorological current views for Ljubljana and Kredarica, while Viator offers Ljubljana city and Triglav/Julian Alps day-tour inventory.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Ljubljana/Ljubljana-Triglav-National-Park-Tour/d5257-15264P17",
-      "publicInventoryEvidence": "Current Viator inventory includes Triglav National Park tours from Ljubljana and Bled.",
-      "nextAction": "Generate one owner-side Ljubljana/Slovenia destination-level tracked link and verify it; use one useful regional path across both city and mountain discovery only where context makes sense."
+      "publicInventoryEvidence": "Current Viator Triglav National Park inventory explicitly includes Lake Bohinj.",
+      "nextAction": "Generate and manually verify one owner-side Ljubljana/Triglav or Lake Bohinj tracked link; keep it post-discovery and destination-relevant."
     },
     {
       "id": "viator-yosemite",
@@ -4782,16 +4784,18 @@
         "north-macedonia-popova-sapka",
         "north-macedonia-galicica",
         "north-macedonia-pelister",
-        "north-macedonia-vodno"
+        "north-macedonia-vodno",
+        "north-macedonia-krusevo",
+        "north-macedonia-mihajlovo"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has five live mountain/current-view destinations across North Macedonia. Current Viator inventory includes Galičica National Park activities and tours linking Skopje, Mavrovo and Ohrid, so one regional planning bridge is preferable to camera-level affiliate density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Ohrid/d28588-ttd",
-      "publicInventoryEvidence": "Current Viator Ohrid/North Macedonia inventory includes Galičica activities and Skopje–Mavrovo–Ohrid touring.",
-      "nextAction": "Generate one useful owner-side North Macedonia/Ohrid destination-level tracked link and manually verify it. Do not imply every mountain camera is included in a tour itinerary."
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Skopje-attractions/Skopje-Kale-Fortress/d26711-a23356",
+      "publicInventoryEvidence": "Current Viator North Macedonia inventory includes Mavrovo and a multi-day itinerary that visits Kruševo.",
+      "nextAction": "Generate one owner-side North Macedonia destination-level link only if it cleanly covers the selected mountain context; do not force a generic Skopje attraction link."
     },
     {
       "id": "viator-lesotho",
@@ -5727,7 +5731,9 @@
       "id": "viator-hwange-zimbabwe",
       "destination": "Hwange National Park, Zimbabwe",
       "placeIds": [
-        "zimbabwe-hwange-linkwasha"
+        "zimbabwe-hwange-linkwasha",
+        "zimbabwe-hwange-safari-lodge",
+        "zimbabwe-hwange-the-hide"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -7069,6 +7075,52 @@
       "reason": "ERN now has an official Pamporovo live source. Keep a Viator research path only if current owner-side Bulgaria/Rhodope inventory is geographically useful.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Search owner-side Viator for Pamporovo/Smolyan/Rhodope inventory. If exact useful coverage is absent, leave this dormant rather than forcing a generic Bulgaria link."
+    },
+    {
+      "id": "klook-bohinj-slovenia",
+      "destination": "Lake Bohinj / Triglav National Park, Slovenia",
+      "placeIds": [
+        "slovenia-bohinj-lake-colnarna",
+        "slovenia-bohinj-oroznova-hut"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Klook currently lists a Lake Bled & Lake Bohinj full-day tour from Ljubljana with 2026 availability.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/177656-lake-bled-lake-bohinj-one-day-tour-from-ljubljana/",
+      "publicInventoryEvidence": "Current Klook inventory explicitly includes Lake Bohinj and Savica Waterfall in a Ljubljana day tour.",
+      "nextAction": "Generate one exact owner-side Klook Lake Bohinj/Triglav link and manually verify attribution before public activation."
+    },
+    {
+      "id": "viator-vancouver-island-nature",
+      "destination": "Vancouver Island / Tofino, British Columbia",
+      "placeIds": [
+        "canada-tofino-north-chesterman",
+        "canada-tofino-mackenzie-beach",
+        "canada-tofino-cox-bay"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "Viator currently exposes 200+ Vancouver Island activities, especially nature and wildlife experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-CA/Vancouver-Island/d30423-ttd",
+      "publicInventoryEvidence": "Current Viator Vancouver Island inventory has extensive nature, wildlife and on-water products.",
+      "nextAction": "Search owner-side for a Tofino-specific or west-coast Vancouver Island activity link; activate only if geographic fit is exact."
+    },
+    {
+      "id": "viator-selinda-botswana-research",
+      "destination": "Selinda Reserve / northern Botswana",
+      "placeIds": [
+        "botswana-selinda-basin"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2_RESEARCH",
+      "reason": "ERN now has a verified Selinda wildlife live stream, but commercial inventory must be geographically exact before any activity link is exposed.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search the owner-side Viator account for Selinda/Linyanti/nearby northern Botswana inventory; leave dormant if exact fit is weak."
     }
   ]
 }
