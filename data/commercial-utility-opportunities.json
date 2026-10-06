@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T02:25:00Z",
+  "generatedAt": "2026-10-06T02:20:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility links are optional post-discovery helpers. They do not affect which place/camera ERN ranks or recommends.",
   "opportunities": [
@@ -113,6 +113,76 @@
       "state": "OWNER_EXACT_LINK_REQUIRED",
       "placementRule": "Reserve for airports/cities/resorts not well served by Welcome Pickups, Kiwitaxi or intui.travel; suppress duplicates.",
       "why": "Potential fallback transfer coverage without changing the primary transfer choice."
+    },
+    {
+      "id": "economybookings-car-rental-reserve",
+      "partnerCandidate": "economybookings",
+      "intent": "transport",
+      "scope": "CAR_RENTAL_COVERAGE_GAPS",
+      "priority": "P3",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Reserve alternative only when the preferred rental partner lacks useful destination coverage; never stack multiple car-rental buttons.",
+      "why": "Broadens owner-side fallback coverage without changing the one-rental-option rule."
+    },
+    {
+      "id": "getrentacar-roadtrip-reserve",
+      "partnerCandidate": "getrentacar",
+      "intent": "transport",
+      "scope": "ROAD_TRIP_COVERAGE_GAPS",
+      "priority": "P3",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Reserve for destinations where Localrent/QEEQ/AutoEurope do not provide a useful exact option; suppress duplicates.",
+      "why": "Adds a differentiated fallback in road-trip markets while preserving visitor simplicity."
+    },
+    {
+      "id": "saily-esim-reserve",
+      "partnerCandidate": "saily",
+      "intent": "connectivity",
+      "scope": "GLOBAL_CONNECTIVITY_FALLBACK",
+      "priority": "P3",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Connectivity fallback only; normally show one eSIM provider, never several competing options.",
+      "why": "Provides a second global connectivity path if the chosen primary lacks country coverage or terms become unsuitable."
+    },
+    {
+      "id": "compensair-flight-recovery-reserve",
+      "partnerCandidate": "compensair",
+      "intent": "services",
+      "scope": "POST_FLIGHT_DISRUPTION_FALLBACK",
+      "priority": "P3",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Only after an actual/relevant flight disruption and only if AirHelp is unavailable or unsuitable; never surface during normal destination discovery.",
+      "why": "Maintains a recovery fallback without creating normal-travel commercial clutter."
+    },
+    {
+      "id": "yesim-esim-reserve",
+      "partnerCandidate": "yesim",
+      "intent": "connectivity",
+      "scope": "GLOBAL_CONNECTIVITY_FALLBACK",
+      "priority": "P3",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Research/coverage alternative only; one eSIM option should be shown by default after owner coverage comparison.",
+      "why": "Owner account exposes link generation and the program may outperform the primary on some countries; selection remains utility-first."
+    },
+    {
+      "id": "gigsky-esim-reserve",
+      "partnerCandidate": "gigsky",
+      "intent": "connectivity",
+      "scope": "SPECIAL_CONNECTIVITY_FALLBACK",
+      "priority": "P3",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Use only for a differentiated coverage case; do not stack with other eSIM programs.",
+      "why": "Potential specialized connectivity coverage for destinations where the primary eSIM option is weak."
+    },
+    {
+      "id": "drimsim-esim-reserve",
+      "partnerCandidate": "drimsim",
+      "intent": "connectivity",
+      "scope": "SPECIAL_CONNECTIVITY_FALLBACK",
+      "priority": "P3",
+      "state": "OWNER_EXACT_LINK_REQUIRED",
+      "placementRule": "Keep as research reserve; never show alongside another eSIM by default.",
+      "why": "Adds a final owner-available connectivity fallback without affecting Earth discovery."
     }
   ],
   "safeguards": {
