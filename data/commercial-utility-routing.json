@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T12:10:00Z",
+  "generatedAt": "2026-10-06T12:45:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1339,6 +1339,84 @@
       ],
       "activationGate": "OWNER_CITY_COVERAGE_AND_EXACT_LINK_REQUIRED",
       "rule": "Use Yerevan storage and Tbilisi self-guided culture only as gateway-city utilities after destination choice; never let city utilities affect mountain ranking."
+    },
+    {
+      "id": "south-korea-mountain-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "qeeq",
+        "economybookings"
+      ],
+      "placeIds": [
+        "south-korea-yongpyong",
+        "south-korea-alpensia",
+        "south-korea-muju-deogyusan"
+      ],
+      "activationGate": "EXACT_AIRPORT_CITY_OR_PICKUP_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After choosing a Korean mountain destination, use at most one verified transfer or rental option. Do not infer resort transfer coverage from country availability."
+    },
+    {
+      "id": "jeju-island-access",
+      "intent": "transport-connectivity",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "airalo",
+        "saily"
+      ],
+      "placeIds": [
+        "south-korea-jeju-hallasan"
+      ],
+      "activationGate": "EXACT_JEJU_RENTAL_OR_COUNTRY_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After Jeju destination choice, use at most one rental action and one connectivity action. Preserve local driver-license and rental requirements."
+    },
+    {
+      "id": "south-korea-city-utility",
+      "intent": "services",
+      "preferredProgramCandidates": [
+        "radical-storage",
+        "airalo"
+      ],
+      "placeIds": [
+        "seoul-plaza",
+        "seoul-gwanghwamun-plaza",
+        "seoul-cheonggye-plaza"
+      ],
+      "activationGate": "OWNER_CITY_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Use luggage/connectivity only after Seoul discovery; never on live-camera ranking surfaces."
+    },
+    {
+      "id": "greece-mainland-mountain-roadtrip",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "autoeurope",
+        "economybookings"
+      ],
+      "placeIds": [
+        "greece-kalavrita-ski",
+        "greece-parnassos-fterolaka",
+        "greece-3-5-pigadia",
+        "greece-pelion-ski"
+      ],
+      "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Research mainland-Greece mountain driving only after destination choice. One rental option by default; do not infer road/weather suitability or winter equipment."
+    },
+    {
+      "id": "greece-mainland-stay-research",
+      "intent": "stay",
+      "preferredProgramCandidates": [
+        "booking-com",
+        "trip-com"
+      ],
+      "placeIds": [
+        "greece-kalavrita-ski",
+        "greece-parnassos-fterolaka",
+        "greece-3-5-pigadia",
+        "greece-pelion-ski"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
+      "rule": "Accommodation research only. No public placement until the program is actually available to Earthrightnow and a destination-specific tracked link is verified."
     }
   ],
   "islandTravelClusters": [
