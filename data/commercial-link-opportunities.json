@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T05:10:00Z",
+  "generatedAt": "2026-10-06T05:25:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2944,7 +2944,9 @@
       "id": "viator-cape-verde-sal",
       "destination": "Sal Island / Santa Maria, Cape Verde",
       "placeIds": [
-        "cape-verde-santa-maria-bay"
+        "cape-verde-santa-maria-bay",
+        "cape-verde-ponta-preta",
+        "cape-verde-kitesurf-beach"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -5442,6 +5444,84 @@
       "reason": "ERN now has a first-party current Juan Dolio beach view; Viator carries Dominican Republic coastal and day-trip inventory that may be useful if owner-side Juan Dolio scoping is clean.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Search the owner-side Viator account for a genuinely useful Juan Dolio/Santo Domingo east-coast destination link. Do not force Punta Cana or unrelated Dominican inventory if the scope is poor."
+    },
+    {
+      "id": "viator-botswana-makgadikgadi",
+      "destination": "Makgadikgadi Pans / Botswana",
+      "placeIds": [
+        "botswana-makgadikgadi-salt-pan"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a live Makgadikgadi Salt Pan wildlife view and current Viator Botswana inventory includes Makgadikgadi Pans experiences and itineraries.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Kasane-tours/Safaris/d24110-g9-c37",
+      "publicInventoryEvidence": "Current Viator Botswana/Kasane inventory includes Makgadikgadi Salt Pans overnight and safari itineraries.",
+      "nextAction": "Search the owner account for a clean Makgadikgadi/Maun/Botswana tracked destination path; do not force a Chobe-only link."
+    },
+    {
+      "id": "viator-botswana-khwai-okavango",
+      "destination": "Khwai / Okavango Delta, Botswana",
+      "placeIds": [
+        "botswana-khwai-elephant-pan"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a live Khwai Private Reserve waterhole view and current Viator Maun inventory includes Okavango Delta experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Maun/Full-Day-Mokoro-Experience-in-the-Okavango-Delta/d25875-5494594P1",
+      "publicInventoryEvidence": "Current Viator Maun inventory includes full-day Okavango Delta safari/mokoro experiences.",
+      "nextAction": "Search the owner account for a clean Khwai/Okavango/Maun destination path and manually verify it before activation."
+    },
+    {
+      "id": "qeeq-puerto-rico-roadtrip",
+      "destination": "Puerto Rico road-trip car rental",
+      "placeIds": [
+        "puerto-rico-isla-verde",
+        "puerto-rico-palomino-island",
+        "puerto-rico-fajardo-el-yunque-view"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "ERN has multiple healthy Puerto Rico discovery places, and QEEQ currently exposes SJU airport car-rental inventory suitable for independent island travel.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.qeeq.com/car/car-rental-pro/airport/pr-san-juan-sju",
+      "publicInventoryEvidence": "QEEQ currently exposes multiple rental suppliers and vehicles at San Juan SJU.",
+      "nextAction": "Generate one owner-side Puerto Rico/SJU QEEQ tracked link and verify it manually; suppress if another car-rental option is selected for the same context."
+    },
+    {
+      "id": "qeeq-curacao-roadtrip",
+      "destination": "Curaçao road-trip car rental",
+      "placeIds": [
+        "curacao-avila-beach",
+        "curacao-lionsdive-mambo-beach"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "ERN has healthy Curaçao discovery places and QEEQ currently exposes multiple car-rental suppliers at Curaçao Hato Airport.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.qeeq.com/car/car-rental-pro/airport/cw-willemstad-cur",
+      "publicInventoryEvidence": "QEEQ currently exposes multiple Hato Airport/Curaçao rental suppliers and current rates.",
+      "nextAction": "Generate one owner-side Curaçao/Hato QEEQ tracked link and verify it manually; keep only one car-rental action in the visitor context."
+    },
+    {
+      "id": "radical-storage-san-juan",
+      "destination": "San Juan luggage storage",
+      "placeIds": [
+        "puerto-rico-isla-verde"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2_UTILITY",
+      "reason": "Radical Storage currently lists verified San Juan/Condado luggage-storage locations, making this a useful arrival/departure utility after Puerto Rico discovery.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://radicalstorage.com/luggage-storage/san-juan/condado/luggage-storage-condado",
+      "publicInventoryEvidence": "Radical Storage currently lists verified bookable storage in San Juan's Condado area.",
+      "nextAction": "Generate one owner-side San Juan city-level tracked link and verify it before placement; do not show alongside redundant arrival utilities by default."
     }
   ]
 }
