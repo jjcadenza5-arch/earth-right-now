@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T01:20:00Z",
+  "generatedAt": "2026-10-06T01:55:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -5687,6 +5687,76 @@
       "verifiedAt": "2026-10-06T01:20:00Z",
       "promotedAt": "2026-10-06T01:20:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "north-macedonia-mavrovo-live",
+      "title": "Mavrovo — Bistra & Ski Slopes",
+      "country": "North Macedonia",
+      "region": "Mavrovo",
+      "provider": "Ski Macedonia",
+      "sourcePage": "https://skimacedonia.mk/en/livecamera/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Ski Macedonia currently labels three Mavrovo cameras LIVE and publishes current weather beside them.",
+      "verifiedAt": "2026-10-06T01:55:00Z",
+      "promotedAt": "2026-10-06T01:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "north-macedonia-popova-sapka-live",
+      "title": "Popova Šapka — Šar Mountains",
+      "country": "North Macedonia",
+      "region": "Šar Mountains / Tetovo",
+      "provider": "Ski Macedonia",
+      "sourcePage": "https://skimacedonia.mk/en/livecamera/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Ski Macedonia currently labels three Popova Šapka cameras LIVE and publishes current conditions.",
+      "verifiedAt": "2026-10-06T01:55:00Z",
+      "promotedAt": "2026-10-06T01:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "north-macedonia-galicica-live",
+      "title": "Galičica — Magaro",
+      "country": "North Macedonia",
+      "region": "Galičica National Park / Ohrid",
+      "provider": "Ski Macedonia",
+      "sourcePage": "https://skimacedonia.mk/en/livecamera/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Ski Macedonia currently labels the Galičica Magaro camera LIVE.",
+      "verifiedAt": "2026-10-06T01:55:00Z",
+      "promotedAt": "2026-10-06T01:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "north-macedonia-pelister-live",
+      "title": "Pelister — Niže Pole",
+      "country": "North Macedonia",
+      "region": "Pelister / Bitola",
+      "provider": "Ski Macedonia",
+      "sourcePage": "https://skimacedonia.mk/en/livecamera/nizhepole-pelister/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The Ski Macedonia Pelister page currently labels Nizepole Pelister LIVE and shows current conditions.",
+      "verifiedAt": "2026-10-06T01:55:00Z",
+      "promotedAt": "2026-10-06T01:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "north-macedonia-vodno-live",
+      "title": "Vodno — Skopje Mountain View",
+      "country": "North Macedonia",
+      "region": "Skopje / Vodno",
+      "provider": "Ski Macedonia",
+      "sourcePage": "https://skimacedonia.mk/en/livecamera/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Ski Macedonia currently labels Vodno 360 and Vodno Karadzica LIVE.",
+      "verifiedAt": "2026-10-06T01:55:00Z",
+      "promotedAt": "2026-10-06T01:55:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
