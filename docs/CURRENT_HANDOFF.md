@@ -3601,3 +3601,78 @@ Operational note after the 500-place release:
 - Travelpayouts project/program availability must be verified in the owner account before public use; presence in the platform catalog is not sufficient proof of ERN access.
 - Exact tracked links remain owner-verification gated when required. No program, tracked URL, offer, approval, price or availability may be invented.
 - Existing verified/direct partner links remain valid; do not replace them merely for network consolidation without a clear advantage.
+
+
+### Isle of Man + Guernsey + Travelpayouts utility expansion — 2026-10-06
+This continuation follows the owner's preferred large-batch cadence: meaningful Earth coverage growth, business-side diversification, operational repair, and full validation before reporting.
+
+#### Searchable-place expansion
+Healthy distinct searchable coverage advanced from **500 to 507 places** (**512 healthy source records** total). The lazy supplemental Search/Explore catalog advanced from **181 to 188 rows**, still inside the bounded 250-row capacity.
+
+New searchable coverage:
+- **Isle of Man — new ERN territory:** Douglas Promenade, Douglas Marina, Peel Breakwater, Port Erin Bay, and Ramsey, all from the official Isle of Man Government webcam network.
+- **Guernsey — new ERN territory:** Guernsey Harbour Entrance and Havelet Bay / Castle Cornet, both from Guernsey Yacht Club's first-party webcam page, which states its views refresh every 10 seconds.
+
+All seven remain `LIVE_IMAGE` + `LINK_ONLY` + external playback with `watchHold: true`; none can fill Watch Earth.
+
+New downstream Viator planning opportunities were added at island level for Isle of Man and Guernsey rather than one commercial record per camera.
+
+#### Travelpayouts business diversification
+The commercial opportunity registry advanced from **288 to 296 opportunities**, with eight new non-Viator utility paths using programs that owner evidence already records as link-generation capable in the Earthrightnow Travelpayouts project:
+- QEEQ → Iceland road-trip planning;
+- AutoEurope → Madeira car rental;
+- Kiwi.com → Greenland flight planning;
+- Kiwi.com → Rapa Nui flight planning;
+- Kiwitaxi → Mauritius airport/resort transfers;
+- intui.travel → Tahiti/Papeete arrival transfers;
+- KKday → Taiwan destination activities/transport;
+- Airalo → optional remote-island connectivity.
+
+All eight remain `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`. Their existence is a research/routing decision only: exact destination coverage, route usefulness and tracked link must be generated and verified owner-side before any public placement.
+
+`data/commercial-utility-routing.json` was broadened beyond the original small utility set to include car rental, flight planning, alternate transfers, activities, connectivity and optional travel-protection routing. Duplicate suppression remains explicit: normally one car-rental option, one flight-search action, one transfer action and one eSIM option per relevant context.
+
+`data/travelpayouts-unlocked-programs.json` now prioritizes the useful unlocked programs by visitor utility rather than commission. Commercial value remains downstream from Earth discovery and cannot affect ranking.
+
+#### Operations repair
+Operations failures 1399/1400 were investigated. Run 1400 exposed a deterministic data-integrity problem in provider observations: the Balykchy observation used stale id `balykchy-entry`, while the canonical source id is `balykchy-north-entry`.
+- corrected the observation id;
+- did not change Balykchy source truth or health;
+- Operations **1401, 1402 and 1403 completed SUCCESS** after correction.
+
+Latest Operations 1403 searchable-source health:
+- eligible searchable sources: **516**;
+- eligible unique URLs: **399**;
+- rotating cohort: **78 sources / 56 unique URLs**;
+- reachable: **72**;
+- missing: **0**;
+- access-blocked: **4**;
+- temporary/network: **2**;
+- recovered: **2**;
+- repair: **2**;
+- review: **4**;
+- watch: **0**.
+
+The two REPAIR records are Balykchy and Kanlaon. Both have separate provider evidence indicating active official/provider surfaces, so automated network failures still do not justify catalog deletion or truth mutation.
+
+#### Lean-core repair + release validation
+The natural scheduled Current Image Pilot renewal completed successfully and was not manually triggered. Subsequent releases exposed a small **42-byte** lean-core overage (575042 bytes). Rather than remove places or raise the ceiling, ERN compacted the existing `data/local-directory.json` serialization with no logical content removed.
+
+Final Pages **2600 completed SUCCESS**:
+- all **112 current ERN release smoke tests passed**;
+- lean core: **573649 bytes**;
+- hard budget remains exactly **575000 bytes**;
+- core sources: **328**;
+- supplemental sources: **188**;
+- commercial placement integrity passed;
+- deployment and deployed social-preview verification completed with no reported errors.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- IMAGE_REFRESH / Current Image renewal was allowed to run only on its natural schedule; no manual trigger;
+- public generative ERN Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no paid ranking;
+- no automatic Travelpayouts link rewriting or placement;
+- commercial value never affects Earth ranking, source truth, currentness or health.
