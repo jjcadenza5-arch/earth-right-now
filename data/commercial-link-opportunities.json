@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T04:55:00Z",
+  "generatedAt": "2026-10-06T05:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -5399,6 +5399,36 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/Boa-Vista/d50204-ttd",
       "publicInventoryEvidence": "Current Viator Boa Vista inventory includes island tours, 4x4, beaches and nature excursions.",
       "nextAction": "Generate one owner-side Boa Vista destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "radical-storage-bangkok",
+      "destination": "Bangkok luggage storage",
+      "placeIds": [
+        "bangkok-sukhumvit-road"
+      ],
+      "partnerCandidate": "radical-storage",
+      "intent": "services",
+      "priority": "P2_UTILITY",
+      "reason": "ERN has a healthy Bangkok city discovery place and Radical Storage currently exposes verified luggage-storage locations around Bangkok transit districts. This is an arrival/departure utility, not a discovery driver.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://radicalstorage.com/luggage-storage/bangkok/sathon/luggage-storage-sala-daeng-bts-station",
+      "publicInventoryEvidence": "Radical Storage currently lists verified Bangkok luggage-storage locations including Sala Daeng BTS.",
+      "nextAction": "Generate one owner-side Bangkok city-level Radical Storage tracked link and manually verify it before placement; keep it secondary to destination discovery."
+    },
+    {
+      "id": "bikesbooking-bali",
+      "destination": "Bali / Denpasar scooter and motorcycle rental",
+      "placeIds": [
+        "denpasar-city-live"
+      ],
+      "partnerCandidate": "bikesbooking",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "ERN has a healthy Denpasar/Bali current city place and BikesBooking currently exposes Bali scooter and motorcycle rental inventory. This is a distinct local-mobility option for independent island travel.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://bikesbooking.com/en/rent-a-scooter-in-Bali/",
+      "publicInventoryEvidence": "BikesBooking currently lists Bali scooter rental inventory and related motorcycle options.",
+      "nextAction": "Generate one owner-side Bali BikesBooking tracked link and manually verify it before placement; suppress if a clearer car-rental or activity action already serves the visitor."
     }
   ]
 }
