@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T13:23:08Z",
+  "updatedAt": "2026-10-06T13:25:47Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -159,16 +159,8 @@
       "Lake Bled Slovenia"
     ],
     "santorini-imerovigli": [
-      "Σαντορίνη",
-      "Ημεροβίγλι",
       "Santorini Greece",
       "Imerovigli Greece"
-    ],
-    "salzburg-mirabell-old-town": [
-      "Salzburg Österreich",
-      "Mirabellgarten",
-      "Mirabell Gardens",
-      "Salzburg Altstadt"
     ],
     "innsbruck-live-panorama": [
       "Innsbruck Österreich",
@@ -181,12 +173,6 @@
       "Dubrovnik Croatia",
       "Pile Gate",
       "Vrata od Pila"
-    ],
-    "tallinn-tv-tower-panorama": [
-      "Tallinn Eesti",
-      "Tallinn Estonia",
-      "Tallinna Teletorn",
-      "Teletorn"
     ],
     "mendoza-plaza-independencia-live": [
       "Mendoza Argentina",
@@ -209,51 +195,6 @@
       "Иссык-Куль",
       "Issyk Kul",
       "Lake Issyk-Kul"
-    ],
-    "khumbu-glacier-nco-p": [
-      "खुम्बु हिमनदी",
-      "Khumbu Glacier",
-      "Everest Region",
-      "Sagarmatha"
-    ],
-    "poiana-brasov-live": [
-      "Poiana Brașov",
-      "Brașov",
-      "Brasov Romania"
-    ],
-    "philippines-mayon-phivolcs": [
-      "Bulkang Mayon",
-      "Mayon Volcano",
-      "Albay Philippines"
-    ],
-    "philippines-bulusan-phivolcs": [
-      "Bulkang Bulusan",
-      "Bulusan Volcano",
-      "Sorsogon Philippines"
-    ],
-    "hawaii-mauna-loa-usgs": [
-      "Mauna Loa Hawaiʻi",
-      "Mauna Loa Hawaii",
-      "Hawaiʻi Island",
-      "Big Island Hawaii"
-    ],
-    "tvoroyri-port-live": [
-      "Tvøroyri Føroyar",
-      "Tvøroyri Faroe Islands",
-      "Suðuroy",
-      "Suduroy"
-    ],
-    "longyearbyen-unis-webcam": [
-      "Longyearbyen Svalbard",
-      "Adventfjorden",
-      "Spitsbergen",
-      "Svalbard Norway"
-    ],
-    "shetland-lerwick-town-hall": [
-      "Lerwick Shetland",
-      "Lerwick Scotland",
-      "Shetland Islands",
-      "Lerwick Town Hall"
     ],
     "kanlaon-volcano": [
       "Bulkang Kanlaon",
@@ -307,6 +248,61 @@
       "Selinda Reserve",
       "The Basin Selinda",
       "Selinda Camp Botswana"
+    ],
+    "salzburg-old-town": [
+      "Salzburg Österreich",
+      "Mirabellgarten",
+      "Mirabell Gardens",
+      "Salzburg Altstadt"
+    ],
+    "tallinn-tv-tower": [
+      "Tallinn Eesti",
+      "Tallinn Estonia",
+      "Tallinna Teletorn",
+      "Teletorn"
+    ],
+    "poiana-brasov": [
+      "Poiana Brașov",
+      "Brașov",
+      "Brasov Romania"
+    ],
+    "tvoroyri-port": [
+      "Tvøroyri Føroyar",
+      "Tvøroyri Faroe Islands",
+      "Suðuroy",
+      "Suduroy"
+    ],
+    "lerwick-town-hall": [
+      "Lerwick Shetland",
+      "Lerwick Scotland",
+      "Shetland Islands",
+      "Lerwick Town Hall"
+    ],
+    "mayon-volcano": [
+      "Bulkang Mayon",
+      "Mayon Volcano",
+      "Albay Philippines"
+    ],
+    "bulusan-volcano": [
+      "Bulkang Bulusan",
+      "Bulusan Volcano",
+      "Sorsogon Philippines"
+    ],
+    "khumbu-glacier-everest": [
+      "Khumbu Glacier",
+      "Everest Region",
+      "Sagarmatha"
+    ],
+    "longyearbyen-adventfjorden": [
+      "Longyearbyen Svalbard",
+      "Adventfjorden",
+      "Spitsbergen",
+      "Svalbard Norway"
+    ],
+    "mauna-loa-volcano": [
+      "Mauna Loa Hawaiʻi",
+      "Hawaiʻi Island",
+      "Big Island Hawaii"
     ]
   }
 }

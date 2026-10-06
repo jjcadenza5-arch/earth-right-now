@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T13:18:17Z",
+  "generatedAt": "2026-10-06T13:25:47Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -868,8 +868,7 @@
       "id": "viator-santorini-future",
       "destination": "Santorini",
       "placeIds": [
-        "santorini-imerovigli",
-        "santorini-caldera-imerovigli"
+        "santorini-imerovigli"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -890,8 +889,7 @@
       "id": "viator-brasov-poiana",
       "destination": "Brașov / Poiana Brașov",
       "placeIds": [
-        "poiana-brasov",
-        "poiana-brasov-live"
+        "poiana-brasov"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -1633,8 +1631,7 @@
       "id": "tiqets-tallinn",
       "destination": "Tallinn / TV Tower",
       "placeIds": [
-        "tallinn-tv-tower",
-        "tallinn-tv-tower-panorama"
+        "tallinn-tv-tower"
       ],
       "partnerCandidate": "tiqets",
       "intent": "culture",
@@ -1647,8 +1644,7 @@
       "id": "viator-bled",
       "destination": "Bled",
       "placeIds": [
-        "bled-lake",
-        "bled-lake-tourism"
+        "bled-lake"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -1661,8 +1657,7 @@
       "id": "tiqets-salzburg",
       "destination": "Salzburg",
       "placeIds": [
-        "salzburg-old-town",
-        "salzburg-mirabell-old-town"
+        "salzburg-old-town"
       ],
       "partnerCandidate": "tiqets",
       "intent": "culture",
@@ -2143,8 +2138,7 @@
       "destination": "Shetland Islands / Lerwick",
       "placeIds": [
         "shetland-cliff-cam",
-        "lerwick-town-hall",
-        "shetland-lerwick-town-hall"
+        "lerwick-town-hall"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -3058,8 +3052,7 @@
       "id": "viator-longyearbyen",
       "destination": "Longyearbyen / Svalbard",
       "placeIds": [
-        "longyearbyen-adventfjorden",
-        "longyearbyen-unis-webcam"
+        "longyearbyen-adventfjorden"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -5253,8 +5246,7 @@
       "id": "radical-storage-salzburg",
       "destination": "Salzburg luggage storage",
       "placeIds": [
-        "salzburg-old-town",
-        "salzburg-mirabell-old-town"
+        "salzburg-old-town"
       ],
       "partnerCandidate": "radical-storage",
       "intent": "services",
@@ -5321,8 +5313,7 @@
       "id": "wegotrip-salzburg",
       "destination": "Salzburg self-guided culture",
       "placeIds": [
-        "salzburg-old-town",
-        "salzburg-mirabell-old-town"
+        "salzburg-old-town"
       ],
       "partnerCandidate": "wegotrip",
       "intent": "activities",

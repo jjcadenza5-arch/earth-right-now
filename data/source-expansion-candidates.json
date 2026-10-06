@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T13:18:17Z",
+  "generatedAt": "2026-10-06T13:25:47Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -332,16 +332,17 @@
       "region": "Salzburg",
       "provider": "Salzburg Tourism",
       "sourcePage": "https://www.salzburg.info/en/travel-info/webcam",
-      "evidence": "Official Salzburg tourism webcam page describes a view over Mirabell Gardens toward Salzburg Cathedral and Hohensalzburg Fortress.",
+      "evidence": "Official Salzburg tourism webcam page describes a view over Mirabell Gardens toward Salzburg Cathedral and Hohensalzburg Fortress. Catalog deduplication consolidated this research record into the canonical core place salzburg-old-town.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "exactTargetUrl": "https://www.salzburg.info/en/travel-info/webcam",
       "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
       "researchEvidence": "Official Salzburg Tourism webcam page confirms a view over Mirabell Gardens toward Salzburg Cathedral and Hohensalzburg Fortress; cookie consent may be required before the live media appears.",
       "humanCheckHint": "Open the official Salzburg webcam page and confirm the Mirabell/Old Town image or video is visibly current.",
       "webEvidenceConfirmedAt": "2026-10-03",
       "promotedAt": "2026-10-03T05:05:00Z",
-      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification.",
+      "verification": "Canonical core source retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "funchal-madeira-live",
@@ -488,13 +489,14 @@
       "region": "Tallinn",
       "provider": "Tallinn TV Tower",
       "sourcePage": "https://teletorn.ee/en/webcam/",
-      "evidence": "Tallinn TV Tower's official webcam page describes a real-time panorama of Tallinn and surrounding areas.",
+      "evidence": "Tallinn TV Tower's official webcam page describes a real-time panorama of Tallinn and surrounding areas. Catalog deduplication consolidated this research record into the canonical core place tallinn-tv-tower.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "researchEvidence": "Tallinn TV Tower's official webcam page explicitly describes a real-time panorama of Tallinn and surrounding areas.",
       "webEvidenceConfirmedAt": "2026-10-03",
       "promotedAt": "2026-10-03T05:05:00Z",
-      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification.",
+      "verification": "Canonical core source retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "innsbruck-patscherkofel",
@@ -1319,13 +1321,14 @@
       "sourcePage": "https://www.worldcamera.net/en/webcams/asia/nepal/246-mteverest-area-khumbu-glacier",
       "exactTargetUrl": "https://www.worldcamera.net/en/webcams/asia/nepal/246-mteverest-area-khumbu-glacier",
       "exactTargetType": "SCIENTIFIC_LIVE_IMAGE_PAGE",
-      "evidence": "WorldCamera identifies the Khumbu Glacier live webcam from NCO-P station at 5,079 m in Sagarmatha National Park and reports it online.",
+      "evidence": "WorldCamera identifies the Khumbu Glacier live webcam from NCO-P station at 5,079 m in Sagarmatha National Park and reports it online. Catalog deduplication consolidated this research record into the canonical core place khumbu-glacier-everest.",
       "researchEvidence": "This is a scientific high-altitude current-image source rather than a tourism stream; ERN must preserve refresh/currentness semantics honestly.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "humanCheckHint": "Open the Khumbu Glacier camera and confirm the current image refreshes or has a reliable current timestamp.",
       "promotedAt": "2026-10-03T05:00:00Z",
-      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current provider/scientific page evidence; not treated as Watch Earth live video."
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current provider/scientific page evidence; not treated as Watch Earth live video.",
+      "verification": "Canonical core source retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "razzakov-center",
@@ -1366,13 +1369,14 @@
       "sourcePage": "https://www.bled.si/en/information/webcam/",
       "exactTargetUrl": "https://www.bled.si/en/information/webcam/",
       "exactTargetType": "OFFICIAL_TOURISM_WEBCAM_PAGE",
-      "evidence": "Official Bled tourism webcam page exposes a Bled Tourist Board camera plus a Straža Bled live stream; the page identifies the stream type as LIVE.",
+      "evidence": "Official Bled tourism webcam page exposes a Bled Tourist Board camera plus a Straža Bled live stream; the page identifies the stream type as LIVE. Catalog deduplication consolidated this research record into the canonical core place bled-lake.",
       "researchEvidence": "Strong scenic gap-filler for Slovenia and the Julian Alps; one real destination with multiple views, not multiple fake places.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "humanCheckHint": "Open the official Bled webcam page and confirm at least one Lake Bled/Straža view visibly updates.",
       "promotedAt": "2026-10-03T05:05:00Z",
-      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification.",
+      "verification": "Canonical core source retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "mykonos-new-port",
@@ -1400,13 +1404,14 @@
       "sourcePage": "https://www.santorini.net/live_webcam/",
       "exactTargetUrl": "https://www.santorini.net/live_webcam/",
       "exactTargetType": "LIVE_STREAM_PAGE",
-      "evidence": "Santorini.net describes two real-time video streams from Imerovigli overlooking the caldera, sea, Oia and Thirassia.",
+      "evidence": "Santorini.net describes two real-time video streams from Imerovigli overlooking the caldera, sea, Oia and Thirassia. Catalog deduplication consolidated this research record into the canonical core place santorini-imerovigli.",
       "researchEvidence": "Visually exceptional candidate; non-government source, so link-only treatment is preferred unless rights are explicitly established.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "humanCheckHint": "Open the Santorini live webcam page and confirm Camera A or B is currently streaming rather than only showing timelapse.",
       "promotedAt": "2026-10-03T05:00:00Z",
-      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current provider/scientific page evidence; not treated as Watch Earth live video."
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current provider/scientific page evidence; not treated as Watch Earth live video.",
+      "verification": "Canonical core source retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "poiana-brasov-live",
@@ -1417,13 +1422,14 @@
       "sourcePage": "https://poianabrasov.travel/webcams/",
       "exactTargetUrl": "https://poianabrasov.travel/webcams/",
       "exactTargetType": "TOURISM_WEBCAM_PAGE",
-      "evidence": "Poiana Brașov tourism webcam pages list multiple live resort and mountain cameras including Ruia plateau, gondola and ski-slope views.",
+      "evidence": "Poiana Brașov tourism webcam pages list multiple live resort and mountain cameras including Ruia plateau, gondola and ski-slope views. Catalog deduplication consolidated this research record into the canonical core place poiana-brasov.",
       "researchEvidence": "Adds Romania and a strong mountain-resort destination; keep as one Poiana Brașov place despite multiple camera angles.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "humanCheckHint": "Open the Poiana Brașov webcam page and confirm one panoramic/mountain camera visibly updates.",
       "promotedAt": "2026-10-03T05:05:00Z",
-      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification.",
+      "verification": "Canonical core source retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "istanbul-sultanahmet-live",
@@ -2393,12 +2399,12 @@
       "sourcePage": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=mvo",
       "exactTargetUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=mvo",
       "exactTargetType": "OFFICIAL_GOVERNMENT_LIVE_IMAGE_PAGE",
-      "evidence": "PHIVOLCS VOLCAN publishes Mayon IP-camera snapshots sampled every minute from representative monitoring sites.",
+      "evidence": "PHIVOLCS VOLCAN publishes Mayon IP-camera snapshots sampled every minute from representative monitoring sites. Catalog deduplication consolidated this research record into the canonical core place mayon-volcano.",
       "researchEvidence": "Official Philippine government real-time monitoring data; use LIVE_IMAGE/Search-Explore semantics only.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:50:00Z",
-      "verification": "Official one-minute current-image monitoring semantics verified."
+      "verification": "Canonical core source retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "philippines-bulusan-phivolcs",
@@ -2409,12 +2415,12 @@
       "sourcePage": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=bvo",
       "exactTargetUrl": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=bvo",
       "exactTargetType": "OFFICIAL_GOVERNMENT_LIVE_IMAGE_PAGE",
-      "evidence": "PHIVOLCS VOLCAN publishes Bulusan IP-camera snapshots sampled every minute from Irosin and Lajong stations.",
+      "evidence": "PHIVOLCS VOLCAN publishes Bulusan IP-camera snapshots sampled every minute from Irosin and Lajong stations. Catalog deduplication consolidated this research record into the canonical core place bulusan-volcano.",
       "researchEvidence": "Official Philippine government real-time monitoring data; use LIVE_IMAGE/Search-Explore semantics only.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:50:00Z",
-      "verification": "Official one-minute current-image monitoring semantics verified."
+      "verification": "Canonical core source retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "philippines-kanlaon-phivolcs",
@@ -2445,12 +2451,12 @@
       "sourcePage": "https://www.usgs.gov/volcanoes/mauna-loa/webcams",
       "exactTargetUrl": "https://www.usgs.gov/volcanoes/mauna-loa/webcams",
       "exactTargetType": "OFFICIAL_GOVERNMENT_WEBCAM_PAGE",
-      "evidence": "USGS HVO publishes multiple current webcams around Mauna Loa and states they operate 24/7, subject to weather and equipment conditions.",
+      "evidence": "USGS HVO publishes multiple current webcams around Mauna Loa and states they operate 24/7, subject to weather and equipment conditions. Catalog deduplication consolidated this research record into the canonical core place mauna-loa-volcano.",
       "researchEvidence": "Official U.S. government current webcam family; represent Mauna Loa as one searchable place rather than inflating multiple camera angles.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:50:00Z",
-      "verification": "Official current/live webcam semantics verified; promoted as LIVE_IMAGE/Search-Explore only."
+      "verification": "Canonical core source retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "reunion-boucan-canot",
@@ -2624,13 +2630,13 @@
       "sourcePage": "https://tvk.fo/kommunal-arbeidsplass/port-of-tvoeroyri/vevmyndatol-webcam/",
       "exactTargetUrl": "https://tvk.fo/kommunal-arbeidsplass/port-of-tvoeroyri/vevmyndatol-webcam/",
       "exactTargetType": "OFFICIAL_MUNICIPAL_LIVE_WEBCAM",
-      "evidence": "Tvøroyri Municipality publishes a Port of Tvøroyri page labeled live webcam / Beinleiðis vevmynd.",
+      "evidence": "Tvøroyri Municipality publishes a Port of Tvøroyri page labeled live webcam / Beinleiðis vevmynd. Catalog deduplication consolidated this research record into the canonical core place tvoroyri-port.",
       "researchEvidence": "Official municipal harbour page exposes a live webcam surface. Human playback confirmation is still required before ERN promotes it as EXTERNAL_LIVE.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "humanCheckHint": "Open the municipal Port of Tvøroyri webcam page and confirm the harbour view is moving/current.",
       "verifiedAt": "2026-10-03T12:30:00Z",
-      "verification": "Official municipal page currently exposes a live webcam; promoted conservatively as LIVE_IMAGE/Search-Explore."
+      "verification": "Canonical core source retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "longyearbyen-unis-webcam",
@@ -2641,14 +2647,14 @@
       "sourcePage": "https://www.unis.no/facilities/web-camera/",
       "exactTargetUrl": "https://www.unis.no/facilities/web-camera/",
       "exactTargetType": "OFFICIAL_INSTITUTION_WEBCAM_HANDOFF",
-      "evidence": "The University Centre in Svalbard publishes a web-camera page and states an external provider operates a camera on the roof of UNIS.",
+      "evidence": "The University Centre in Svalbard publishes a web-camera page and states an external provider operates a camera on the roof of UNIS. Catalog deduplication consolidated this research record into the canonical core place longyearbyen-adventfjorden.",
       "researchEvidence": "UNIS is authoritative for the camera location but delegates the actual feed to an external provider; exact current playback needs verification before promotion.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "humanCheckHint": "Open the UNIS webcam handoff and confirm the linked Longyearbyen/Adventfjorden camera is visibly current.",
       "promotedSourceId": "longyearbyen-unis-current",
       "verifiedAt": "2026-10-03T16:25:00Z",
-      "verification": "Promoted conservatively to LIVE_IMAGE/Search-Explore from current official/institutional webcam evidence; Watch Earth remains held."
+      "verification": "Canonical core source retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "faroe-islands-live-family",
@@ -2674,13 +2680,13 @@
       "sourcePage": "https://www.shetland.org/videos",
       "exactTargetUrl": "https://www.shetland.org/videos",
       "exactTargetType": "DESTINATION_SITE_LIVE_WEBCAM_PAGE",
-      "evidence": "Shetland.org currently lists Lerwick Town Hall Cam with a Live label.",
+      "evidence": "Shetland.org currently lists Lerwick Town Hall Cam with a Live label. Catalog deduplication consolidated this research record into the canonical core place lerwick-town-hall.",
       "researchEvidence": "Official destination site exposes a live Lerwick Town Hall camera, but exact playback should be human-confirmed before promotion.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "humanCheckHint": "Open Shetland.org Videos and confirm Lerwick Town Hall Cam is visibly live/current.",
       "verifiedAt": "2026-10-03T12:30:00Z",
-      "verification": "Official Shetland destination page currently labels Lerwick Town Hall Cam as Live; promoted conservatively as LIVE_IMAGE/Search-Explore."
+      "verification": "Canonical core source retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "shetland-cliff-cam",
