@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T13:42:45Z",
+  "updatedAt": "2026-10-06T13:46:23Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -174,11 +174,6 @@
       "Pile Gate",
       "Vrata od Pila"
     ],
-    "mendoza-plaza-independencia-live": [
-      "Mendoza Argentina",
-      "Plaza Independencia Mendoza",
-      "Ciudad de Mendoza"
-    ],
     "wanaka-roys-peak-town-view": [
       "Wānaka",
       "Roys Peak",
@@ -189,12 +184,6 @@
       "Rotorua New Zealand",
       "Lake Rotorua",
       "Skyline Rotorua"
-    ],
-    "issyk-kul-karven-four-seasons": [
-      "Ысык-Көл",
-      "Иссык-Куль",
-      "Issyk Kul",
-      "Lake Issyk-Kul"
     ],
     "kanlaon-volcano": [
       "Bulkang Kanlaon",
@@ -327,6 +316,15 @@
       "Kyzyl-Kiya",
       "Кызыл-Кыя",
       "Kyzyl-Kiya Kyrgyzstan"
+    ],
+    "issyk-kul-karven": [
+      "Issyk Kul",
+      "Lake Issyk-Kul"
+    ],
+    "mendoza-plaza-independencia": [
+      "Mendoza Argentina",
+      "Plaza Independencia Mendoza",
+      "Ciudad de Mendoza"
     ]
   }
 }

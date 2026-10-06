@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T13:42:45Z",
+  "generatedAt": "2026-10-06T13:46:23Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -850,13 +850,14 @@
       "sourcePage": "https://camarasmunicapital.ciudaddemendoza.gov.ar/index.html",
       "exactTargetUrl": "https://camarasmunicapital.ciudaddemendoza.gov.ar/index.html",
       "exactTargetType": "OFFICIAL_CITY_LIVE_VIDEO_PAGE",
-      "evidence": "The City of Mendoza municipal camera page identifies Plaza Independencia as Stream Type LIVE and exposes the city camera directly.",
+      "evidence": "The City of Mendoza municipal camera page identifies Plaza Independencia as Stream Type LIVE and exposes the city camera directly. Catalog maintenance consolidated this duplicate record into canonical place mendoza-plaza-independencia.",
       "researchEvidence": "Official municipal live-camera page currently shows Plaza Independencia as LIVE.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "humanCheckHint": "Open the official municipal camera page and confirm Plaza Independencia is visibly live/current.",
       "promotedAt": "2026-10-03T05:00:00Z",
-      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video.",
+      "verification": "Canonical core destination retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "ushuaia-harbour-municipal",
@@ -954,13 +955,14 @@
       "sourcePage": "https://www.visitstmaarten.com/your-top-three-caribbean-live-webcams-2/",
       "exactTargetUrl": "https://www.visitstmaarten.com/areas/philipsburg/",
       "exactTargetType": "OFFICIAL_TOURISM_ENDORSED_LIVE_CAMERA",
-      "evidence": "Official Visit St. Maarten says the Philipsburg Boardwalk webcam provides a 24/7 overview of Great Bay Beach and the Boardwalk.",
+      "evidence": "Official Visit St. Maarten says the Philipsburg Boardwalk webcam provides a 24/7 overview of Great Bay Beach and the Boardwalk. Catalog maintenance consolidated this duplicate record into canonical place st-maarten-great-bay.",
       "researchEvidence": "Visit St. Maarten's Philipsburg area page explicitly identifies the live Philipsburg Boardwalk webcam and describes it as 24/7.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "humanCheckHint": "Open the official Philipsburg tourism page and confirm the Great Bay/Boardwalk webcam is visibly live.",
       "promotedAt": "2026-10-03T05:00:00Z",
-      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video."
+      "promotionNote": "Promoted to Search/Explore as clearly labeled quasi-live LIVE_IMAGE based on current official/provider evidence; not treated as Watch Earth live video.",
+      "verification": "Canonical core destination retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "st-maarten-simpson-bay",
@@ -1227,12 +1229,13 @@
       "exactTargetUrl": "https://kg.camera/en/camera/KarVen_4_Seasons",
       "exactTargetType": "CURRENT_CAMERA_NETWORK_DIRECT",
       "priority": "P1",
-      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
-      "evidence": "KG Camera publishes a direct live-surveillance page overlooking the beach at KarVen Four Seasons on the northern shore of Lake Issyk-Kul.",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
+      "evidence": "KG Camera publishes a direct live-surveillance page overlooking the beach at KarVen Four Seasons on the northern shore of Lake Issyk-Kul. Catalog maintenance consolidated this duplicate record into canonical place issyk-kul-karven.",
       "researchEvidence": "This is one of the strongest scenic candidates in the Kyrgyzstan network: a current lake/beach view at Sary-Oy; KG Camera states feeds are unarchived with about a 20-second delay.",
       "humanCheckHint": "Open the direct KarVen Four Seasons page and confirm the Lake Issyk-Kul beach view updates normally.",
       "promotedAt": "2026-10-03T05:05:00Z",
-      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification."
+      "promotionNote": "Promoted to Search/Explore as clearly labeled LIVE_IMAGE/quasi-live based on provider provenance and current-page evidence. Not Watch Earth eligible without stricter live/current verification.",
+      "verification": "Canonical core destination retained; duplicate Search/Explore representation removed."
     },
     {
       "id": "bishkek-ala-too-square",
