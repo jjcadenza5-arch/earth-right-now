@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T02:35:00Z",
+  "generatedAt": "2026-10-06T02:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4942,6 +4942,54 @@
       "reason": "Unlocked Travelpayouts self-guided audio-tour utility may complement live place discovery in walkable historic cities without duplicating full-service tour products.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Confirm exact destination inventory and generate a verified tracked link owner-side before any public placement; suppress if the visitor action is weaker than existing city-pass or tour options."
+    },
+    {
+      "id": "viator-high-tatras",
+      "destination": "High Tatras, Slovakia",
+      "placeIds": [
+        "slovakia-lomnicky-stit",
+        "slovakia-tatranska-lomnica",
+        "slovakia-hrebienok",
+        "slovakia-solisko"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has four official live High Tatras places. Current Viator inventory includes High Tatras hiking, mountain and multi-day experiences, including Lomnický Peak and Štrbské Pleso.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Poprad/Bike-and-Hike-Tours-in-High-Tatras-with-transfer-from-Bratislava-Vienna/d24205-120122P6",
+      "publicInventoryEvidence": "Current Viator inventory includes High Tatras hiking/biking and sightseeing products; exact owner-side destination-level link still requires verification.",
+      "nextAction": "Generate one clean High Tatras/Poprad destination-level tracked link and manually verify it before public activation; serve the four camera places with one regional bridge."
+    },
+    {
+      "id": "viator-stara-planina-serbia",
+      "destination": "Stara Planina, Serbia",
+      "placeIds": [
+        "serbia-stara-planina"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has an official current Stara Planina mountain view, and Viator currently lists a Stara Planina day tour from Niš.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Nis/Stara-Plana-Day-Tour/d50941-47471P2",
+      "publicInventoryEvidence": "Current Viator inventory includes a Stara Planina nature/hiking day tour from Niš.",
+      "nextAction": "Generate an owner-side Stara Planina or Niš-region tracked link only if it remains genuinely useful; otherwise leave dormant."
+    },
+    {
+      "id": "viator-zlatibor-tornik",
+      "destination": "Zlatibor / Tornik, Serbia",
+      "placeIds": [
+        "serbia-tornik-zlatibor"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Tornik/Zlatibor current view, and current Viator inventory includes Zlatibor mountain tours and Gold Gondola/Tornik-region itineraries.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Belgrade/WESTERN-SERBIA-Zlatibor-Mountain-Day-Tour/d22817-44140P34",
+      "publicInventoryEvidence": "Current Viator Zlatibor inventory includes mountain day trips and tours using the Gold Gondola toward Tornik.",
+      "nextAction": "Generate one owner-side Zlatibor destination-level tracked link and manually verify it before public activation."
     }
   ]
 }
