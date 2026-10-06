@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05",
+  "updatedAt": "2026-10-06",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -231,11 +231,6 @@
       "Bulusan Volcano",
       "Sorsogon Philippines"
     ],
-    "philippines-kanlaon-phivolcs": [
-      "Bulkang Kanlaon",
-      "Kanlaon Volcano",
-      "Negros Philippines"
-    ],
     "hawaii-mauna-loa-usgs": [
       "Mauna Loa Hawaiʻi",
       "Mauna Loa Hawaii",
@@ -259,6 +254,11 @@
       "Lerwick Scotland",
       "Shetland Islands",
       "Lerwick Town Hall"
+    ],
+    "kanlaon-volcano": [
+      "Bulkang Kanlaon",
+      "Kanlaon Volcano",
+      "Negros Philippines"
     ]
   }
 }
