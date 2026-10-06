@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T00:35:00Z",
+  "generatedAt": "2026-10-06T00:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4475,6 +4475,36 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-HK/blog/How-to-Prepare-for-Whale-Watching-in-the-San-Francisco-Bay/l93983",
       "publicInventoryEvidence": "Viator's current San Francisco whale-watching guide identifies seasonal excursions to waters around the Farallon Islands.",
       "nextAction": "Search the owner-side partner account for a current Farallon Islands or appropriately scoped San Francisco offshore wildlife/whale-watching link. If no exact useful inventory exists, leave dormant."
+    },
+    {
+      "id": "viator-vilnius",
+      "destination": "Vilnius, Lithuania",
+      "placeIds": [
+        "lithuania-vilnius-cathedral-square"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a live Vilnius Cathedral Square discovery view, while Viator currently has substantial Vilnius Old Town, city, food and cultural tour inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Vilnius/Regular-walking-tour-of-Vilnius-Old-Town/d5479-10841P19",
+      "publicInventoryEvidence": "Current Viator Vilnius inventory includes Old Town walking tours, private city tours and cultural experiences.",
+      "nextAction": "Generate one owner-side Vilnius destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-klaipeda-curonian",
+      "destination": "Klaipėda / Curonian Lagoon / Nida, Lithuania",
+      "placeIds": [
+        "lithuania-nida-port"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has a live Nida/Curonian Lagoon discovery view, and Viator currently has Klaipėda Old Town and lagoon/coastal sightseeing inventory. Exact Nida/Curonian scope must be confirmed before activation.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Klaipeda/Walking-Tour-through-the-Klaipeda-Old-Town/d4209-39534P2",
+      "publicInventoryEvidence": "Current Viator Klaipėda inventory includes Old Town and Curonian Lagoon-area sightseeing.",
+      "nextAction": "Search the owner-side account for a clean Klaipėda/Curonian Spit/Nida link. Activate only if destination scope is genuinely useful and clear."
     }
   ]
 }
