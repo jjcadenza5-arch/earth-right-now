@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T05:30:00Z",
+  "generatedAt": "2026-10-06T06:15:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -83,6 +83,16 @@
       "intent": "insurance",
       "eligibleScope": "optional-higher-friction-travel-planning",
       "rule": "Optional travel-protection utility only. Never fear-based, never presented as required, and never on Earth-view ranking surfaces."
+    },
+    "12go": {
+      "intent": "transport",
+      "eligibleScope": "asia-and-island-ferry-rail-bus-routes",
+      "rule": "Use only for exact route/destination utility after owner-project availability is confirmed; never on live-view cards."
+    },
+    "booking-com": {
+      "intent": "stay",
+      "eligibleScope": "supported-destination-accommodation",
+      "rule": "Only after destination choice and owner-project availability/exact tracked link verification; never rank cameras by lodging economics."
     }
   },
   "priorityCityPlaces": [
@@ -668,6 +678,27 @@
       ],
       "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
       "rule": "Use at most one car-rental option and one connectivity option per country/context; only after the visitor chooses the destination. Never place these utilities on live-camera ranking surfaces."
+    }
+  ],
+  "islandTravelClusters": [
+    {
+      "id": "western-indian-ocean-and-caribbean-islands",
+      "placeIds": [
+        "seychelles-beau-vallon",
+        "seychelles-mahe-quincy-village",
+        "seychelles-anse-parnel",
+        "zanzibar-paje-white-sand",
+        "zanzibar-kiwengwa",
+        "honduras-roatan-west-bay",
+        "honduras-roatan-west-end"
+      ],
+      "routing": [
+        "booking-com",
+        "12go",
+        "airalo",
+        "kiwi-com"
+      ],
+      "rule": "After destination choice, choose at most one stay action, one relevant transport action and one connectivity action. 12Go is Zanzibar-specific unless exact coverage proves otherwise."
     }
   ]
 }
