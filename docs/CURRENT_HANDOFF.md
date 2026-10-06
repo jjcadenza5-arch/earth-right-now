@@ -3591,3 +3591,13 @@ Operational note after the 500-place release:
 - Operations run **1399** failed during daily packet construction because a broad set of external availability probes returned transient `TypeError` / `AbortError` network failures and packet-integrity consequently failed closed.
 - This was not treated as source-truth evidence and caused no automatic catalog or health mutation.
 - The last clean searchable-health result remains Operations **1398 SUCCESS**; provider evidence for Balykchy and Kanlaon was separately rechecked and recorded as active.
+
+
+### Travelpayouts expansion framework — 2026-10-06
+- Owner explicitly confirmed that ERN should keep expanding both searchable Earth coverage and the business side, and asked that the wider Travelpayouts program ecosystem not be overlooked.
+- Added `docs/TRAVELPAYOUTS_EXPANSION.md` as the canonical research/routing framework for exploring Travelpayouts beyond the already-used Viator/Klook-heavy mix.
+- Current commercial registry is heavily concentrated in Viator (215), with smaller Klook (45), Tiqets (14), Go City (6), KKday (3), Welcome Pickups (2), and WeGoTrip (1) paths. Future business expansion should therefore deliberately audit accommodation, transport, car rental, insurance, cruises/packages and other useful Travelpayouts categories where they fit visitor intent.
+- Preserve the downstream rule: first Earth discovery, then one genuinely useful travel action. Do not add commercial density for its own sake.
+- Travelpayouts project/program availability must be verified in the owner account before public use; presence in the platform catalog is not sufficient proof of ERN access.
+- Exact tracked links remain owner-verification gated when required. No program, tracked URL, offer, approval, price or availability may be invented.
+- Existing verified/direct partner links remain valid; do not replace them merely for network consolidation without a clear advantage.
