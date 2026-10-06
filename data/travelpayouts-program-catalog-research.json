@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T06:35:00Z",
+  "generatedAt": "2026-10-06T06:45:00Z",
   "publicActivationAllowed": false,
   "purpose": "Track promising Travelpayouts catalog programs separately from ERN-approved/unlocked programs so platform availability is never confused with owner-project access.",
   "evidenceBasis": [
@@ -84,6 +84,14 @@
         "why": "Flight-search alternative for remote destinations and trip-planning contexts.",
         "officialEvidence": "Travelpayouts platform documentation uses Aviasales as a supported program example.",
         "placementRule": "One flight-search action per trip-planning context; never on camera cards."
+      },
+      {
+        "id": "omio",
+        "brand": "Omio",
+        "state": "OWNER_PROJECT_AVAILABILITY_AND_CURRENT_CATALOG_RECHECK_REQUIRED",
+        "why": "Potentially strong Europe rail/bus/ferry/flight comparison utility for ERN city-to-city planning.",
+        "officialEvidence": "Travelpayouts publishes an Omio affiliate-program page and train-program overview documenting deep-link support and multi-modal European transport coverage; current Earthrightnow Project availability still requires owner-side confirmation.",
+        "placementRule": "Use only for explicit European intercity transport after destination choice; one transport-comparison action per route context."
       }
     ],
     "activities": [
@@ -112,6 +120,24 @@
         "why": "Potential broad car-rental alternative for island/road-trip destinations if the program remains available to Earthrightnow.",
         "officialEvidence": "Travelpayouts' car-rental program materials continue to document Discover Cars; owner-side current Program Catalog status must be checked before ERN treats it as available.",
         "placementRule": "Do not activate from public documentation alone. Verify current owner-project access, exact destination coverage and tracked-link generation; suppress against a clearer existing rental partner."
+      }
+    ],
+    "insurance": [
+      {
+        "id": "visitorscoverage",
+        "brand": "VisitorsCoverage",
+        "why": "Potential travel/visitor medical insurance option if owner-project access exists.",
+        "state": "OWNER_PROJECT_AVAILABILITY_AND_CURRENT_CATALOG_RECHECK_REQUIRED",
+        "officialEvidence": "Travelpayouts' insurance-program guidance identifies this brand among insurance programs on the platform; current Earthrightnow Project availability must be confirmed owner-side.",
+        "placementRule": "Optional trip-planning only, never fear-based, never required, and never on live-view ranking surfaces."
+      },
+      {
+        "id": "insubuy",
+        "brand": "Insubuy",
+        "why": "Potential international travel/medical insurance option if owner-project access exists.",
+        "state": "OWNER_PROJECT_AVAILABILITY_AND_CURRENT_CATALOG_RECHECK_REQUIRED",
+        "officialEvidence": "Travelpayouts' insurance-program guidance identifies this brand among insurance programs on the platform; current Earthrightnow Project availability must be confirmed owner-side.",
+        "placementRule": "Optional trip-planning only, never fear-based, never required, and never on live-view ranking surfaces."
       }
     ]
   },
