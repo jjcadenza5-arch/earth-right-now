@@ -5771,6 +5771,62 @@
       "verifiedAt": "2026-10-06T02:05:00Z",
       "promotedAt": "2026-10-06T02:05:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-smokies-kuwohi-current",
+      "title": "Great Smoky Mountains — Kuwohi",
+      "country": "United States",
+      "region": "Great Smoky Mountains National Park",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/grsm/learn/photosmultimedia/webcams.htm",
+      "priority": "P2_QUALITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS states its park web cameras update digital images approximately every 15 minutes and lists Kuwohi as a current webcam.",
+      "verifiedAt": "2026-10-06T02:05:00Z",
+      "promotedAt": "2026-10-06T02:05:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-smokies-newfound-gap-current",
+      "title": "Great Smoky Mountains — Newfound Gap",
+      "country": "United States",
+      "region": "Great Smoky Mountains National Park",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/grsm/learn/photosmultimedia/webcams.htm",
+      "priority": "P2_QUALITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS states its park web cameras update digital images approximately every 15 minutes and lists Newfound Gap as a current webcam.",
+      "verifiedAt": "2026-10-06T02:05:00Z",
+      "promotedAt": "2026-10-06T02:05:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-smokies-purchase-knob-current",
+      "title": "Great Smoky Mountains — Purchase Knob",
+      "country": "United States",
+      "region": "Great Smoky Mountains National Park",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/grsm/learn/photosmultimedia/webcams.htm",
+      "priority": "P2_QUALITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS lists Purchase Knob as a current webcam and states the park's digital webcam images update approximately every 15 minutes.",
+      "verifiedAt": "2026-10-06T02:05:00Z",
+      "promotedAt": "2026-10-06T02:05:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "us-smokies-look-rock-current",
+      "title": "Great Smoky Mountains — Look Rock",
+      "country": "United States",
+      "region": "Great Smoky Mountains National Park",
+      "provider": "U.S. National Park Service",
+      "sourcePage": "https://www.nps.gov/grsm/learn/photosmultimedia/webcams.htm",
+      "priority": "P2_QUALITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NPS lists Look Rock as a current webcam and states the park's digital webcam images update approximately every 15 minutes.",
+      "verifiedAt": "2026-10-06T02:05:00Z",
+      "promotedAt": "2026-10-06T02:05:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
