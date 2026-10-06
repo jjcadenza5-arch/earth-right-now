@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T09:45:00Z",
+  "generatedAt": "2026-10-06T10:05:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2416,6 +2416,90 @@
       "freshnessEvidence": "SkiStar maintains a current dedicated Vemdalen webcam page and includes Vemdalen in its active mountain webcam network.",
       "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
       "checkedAt": "2026-10-06T09:45:00Z"
+    },
+    "finland-ounasvaara-webcam": {
+      "sourceUrl": "https://ounasvaara.fi/en/kamerat/",
+      "rightsBasis": "First-party Ounasvaara webcam page; ERN links externally.",
+      "freshnessEvidence": "Ounasvaara's official site maintains a dedicated webcam page alongside current slope and cross-country status.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:05:00Z"
+    },
+    "finland-pyha-webcams": {
+      "sourceUrl": "https://www.pyha.fi/en/webcameras",
+      "rightsBasis": "First-party Pyhä webcam page; ERN links externally.",
+      "freshnessEvidence": "Pyhä states its webcam page shows what Pyhätunturi looks like right now and includes several mountain cameras plus a live aurora camera.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:05:00Z"
+    },
+    "finland-luosto-webcams": {
+      "sourceUrl": "https://www.luosto.fi/en/page/luosto-webcams",
+      "rightsBasis": "First-party Luosto webcam page; ERN links externally.",
+      "freshnessEvidence": "Luosto's current official webcam page exposes named Ahvenlampi, Main Slope, Sunny Slope and Family Slope cameras plus an aurora live view.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:05:00Z"
+    },
+    "finland-tahko-live-cameras": {
+      "sourceUrl": "https://www.tahko.com/en/",
+      "rightsBasis": "Official Tahko destination site; ERN links externally.",
+      "freshnessEvidence": "Tahko's current official site exposes Live cameras inside its Tahko Now conditions section.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:05:00Z"
+    },
+    "finland-himos-webcams": {
+      "sourceUrl": "https://himos.fi/en/skiing/webcams/",
+      "rightsBasis": "First-party Himos webcam page; ERN links externally.",
+      "freshnessEvidence": "The current Himos webcam page exposes multiple named slope images and current resort conditions.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:05:00Z"
+    },
+    "finland-vuokatti-live-cameras": {
+      "sourceUrl": "https://vuokatti.fi/en/vuokatti-slopes/",
+      "rightsBasis": "First-party Vuokatti slope page; ERN links externally.",
+      "freshnessEvidence": "Vuokatti's current official resort page explicitly exposes Live cameras for western and northern slopes.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:05:00Z"
+    },
+    "japan-rusutsu-live-mountain": {
+      "sourceUrl": "https://rusutsu.com/en/snow-and-weather-report/",
+      "rightsBasis": "First-party Rusutsu Resort current conditions/live-camera page; ERN links externally.",
+      "freshnessEvidence": "Rusutsu's current official snow/weather report includes Live Mountain Camera views and current resort conditions.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:05:00Z"
+    },
+    "japan-furano-ski-live": {
+      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/livecamera/",
+      "rightsBasis": "First-party Furano Ski Resort live-camera page; ERN links externally.",
+      "freshnessEvidence": "Prince Hotels' official Furano page labels both Furano Ropeway summit and Kaze-no Garden as Live Camera views.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:05:00Z"
+    },
+    "japan-shiga-kogen-live": {
+      "sourceUrl": "https://www.shigakogen.gr.jp/english/live/index.html",
+      "rightsBasis": "Official Shiga Kogen Tourism Association live-camera directory; ERN links externally.",
+      "freshnessEvidence": "The official association currently lists multiple live video and still-image camera feeds around Shiga Kogen, including ski areas and summit views.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:05:00Z"
+    },
+    "japan-nozawa-onsen-live": {
+      "sourceUrl": "https://nozawaski.com/winter/course/livecam_map/",
+      "rightsBasis": "First-party Nozawa Onsen Snow Resort live-camera map; ERN links externally.",
+      "freshnessEvidence": "Nozawa's official live-camera map currently publishes multiple camera locations. Some individual cameras may be temporarily under adjustment, so ERN treats the resort as a current camera family rather than claiming every angle is active.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:05:00Z"
+    },
+    "japan-yuzawa-kogen-live": {
+      "sourceUrl": "https://www.yuzawakogen.com/live_camera/",
+      "rightsBasis": "First-party Yuzawa Kogen live-camera page; ERN links externally.",
+      "freshnessEvidence": "Yuzawa Kogen's official page exposes current live-camera images and the resort's main site was updating operating conditions on 2026-10-06.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:05:00Z"
+    },
+    "japan-togakushi-live": {
+      "sourceUrl": "https://www.togakusi.com/ski/?page_id=2601",
+      "rightsBasis": "First-party Togakushi Ski Area live-camera page; ERN links externally.",
+      "freshnessEvidence": "Togakushi's official page currently exposes four named live cameras and describes its digital map as linked to live cameras for real-time conditions.",
+      "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T10:05:00Z"
     }
   },
   "prague-petrin-tower": {

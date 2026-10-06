@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T09:45:00Z",
+  "generatedAt": "2026-10-06T10:05:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -66,12 +66,13 @@
       "id": "klook-rovaniemi",
       "destination": "Rovaniemi / Santa Claus Village",
       "placeIds": [
-        "rovaniemi-santa-claus-village"
+        "rovaniemi-santa-claus-village",
+        "finland-ounasvaara"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
       "priority": "P1",
-      "reason": "The live Arctic Circle window directly supports trip timing and activity planning in a seasonal destination.",
+      "reason": "ERN now has both Santa Claus Village and Ounasvaara current views in Rovaniemi. Preserve one Klook Rovaniemi bridge rather than separate commercial actions for each camera.",
       "state": "VERIFIED_LINK_ADDED",
       "nextAction": "Observe aggregate commercial clicks and maintain verification; preserve seasonal visitor-utility focus.",
       "trackingUrl": "https://klook.tpo.mx/6p7bRKjH",
@@ -2404,14 +2405,15 @@
     },
     {
       "id": "klook-farm-tomita",
-      "destination": "Furano / Farm Tomita",
+      "destination": "Furano, Hokkaido",
       "placeIds": [
-        "farm-tomita"
+        "farm-tomita",
+        "japan-furano-ski"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
       "priority": "P2",
-      "reason": "Japan destination with seasonal visitor demand where Klook may provide useful Furano/Hokkaido activities.",
+      "reason": "ERN now has both Farm Tomita and Furano Ski Resort current discovery places. Reuse one broad Furano Klook destination bridge across seasonal nature and winter mountain contexts.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Check Furano/Farm Tomita coverage before generating a tracked link."
     },
@@ -6015,6 +6017,119 @@
       "publicInventoryEvidenceUrl": "https://kiwitaxi.com/en/taxi-transfers-worldwide",
       "publicInventoryEvidence": "Kiwitaxi's current worldwide coverage explicitly includes Finland, Sweden and Norway, with dedicated country transfer pages.",
       "nextAction": "Verify exact airport-to-resort routes owner-side before generating any tracked link; one transfer action per supported route, never generic country-wide claims."
+    },
+    {
+      "id": "viator-pyha-luosto",
+      "destination": "Pyhä-Luosto, Finnish Lapland",
+      "placeIds": [
+        "finland-pyha",
+        "finland-luosto"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has official current views in both Pyhä and Luosto, and Viator currently has Pyhä-Luosto National Park cross-country skiing and Luosto amethyst-mine experiences.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Lapland/Cross-country-skiing/d5581-70171P3",
+      "publicInventoryEvidence": "Current Viator inventory includes Pyhä-Luosto-specific guided cross-country skiing plus other Luosto/Pyhä-Luosto experiences.",
+      "nextAction": "Generate one owner-side Pyhä-Luosto tracked destination/product link and manually verify it; keep one regional activity bridge."
+    },
+    {
+      "id": "viator-rovaniemi-ounasvaara",
+      "destination": "Rovaniemi / Ounasvaara",
+      "placeIds": [
+        "rovaniemi-santa-claus-village",
+        "finland-ounasvaara"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Viator currently has deep Rovaniemi inventory, including products with Ounasvaara pickup or activity context. One Rovaniemi-level bridge can serve both current views.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Rovaniemi/Family-Snowmobile-Safari-From-Rovaniemi/d22130-13975P11",
+      "publicInventoryEvidence": "Current Rovaniemi Viator products include pickup from Ounasvaara hotels/chalets and extensive winter/northern-lights inventory.",
+      "nextAction": "Generate one owner-side Rovaniemi destination-level Viator tracked link; do not imply a product specifically visits Ounasvaara unless exact itinerary evidence supports it."
+    },
+    {
+      "id": "klook-rusutsu",
+      "destination": "Rusutsu, Hokkaido",
+      "placeIds": [
+        "japan-rusutsu"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "transport-activities",
+      "priority": "P1",
+      "reason": "ERN now has a first-party Rusutsu current live mountain view, and Klook currently sells Rusutsu lift-pass/gear products and New Chitose Airport shuttle transport.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/129716-rusutsu-ski-resort-lift-pass-and-gear-rental/",
+      "publicInventoryEvidence": "Current Klook inventory includes Rusutsu lift passes/gear rental and a current New Chitose Airport-to-Rusutsu shuttle product.",
+      "nextAction": "Generate one owner-side Rusutsu Klook tracked destination or the single most useful supported product link and manually verify it; avoid duplicate lift/shuttle buttons."
+    },
+    {
+      "id": "klook-nozawa-onsen",
+      "destination": "Nozawa Onsen, Nagano",
+      "placeIds": [
+        "japan-nozawa-onsen"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has the official Nozawa current-camera map, and Klook currently sells Nozawa Onsen ski/snowboard lessons with 2026 reviews.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-SG/activity/175578-ski-snowboard-in-nozawaonsen/",
+      "publicInventoryEvidence": "Current Klook inventory includes Nozawa Onsen ski/snowboard lessons with recent 2026 bookings/reviews.",
+      "nextAction": "Generate one owner-side Nozawa Onsen tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-furano-ski",
+      "destination": "Furano Ski Resort, Hokkaido",
+      "placeIds": [
+        "japan-furano-ski"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Klook currently has a broad Furano destination catalog and active ski/snowboard products at Furano Ski Resort.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-HK/destination/c85051-furano/1-things-to-do/",
+      "publicInventoryEvidence": "Current Klook Furano destination inventory includes winter outdoor/ski products and Furano Ski Resort lessons.",
+      "nextAction": "Generate one owner-side Furano destination-level Klook tracked link and reuse it across Furano discovery places if exact coverage is clean."
+    },
+    {
+      "id": "qeeq-japan-ski-roadtrip",
+      "destination": "Japan mountain road-trip rental research",
+      "placeIds": [
+        "japan-rusutsu",
+        "japan-furano-ski",
+        "japan-shiga-kogen",
+        "japan-nozawa-onsen",
+        "japan-yuzawa-kogen",
+        "japan-togakushi-ski"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "QEEQ is an owner-available rental program and Japan mountain destinations can benefit from selective road-trip planning after destination choice, subject to exact pickup/winter equipment verification.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify one practical owner-side Japan pickup/destination context and exact tracked link. Never imply winter tires, chains, toll coverage, cross-prefecture one-way terms or mountain-road suitability unless exact rental terms prove it."
+    },
+    {
+      "id": "kiwitaxi-japan-ski-arrivals",
+      "destination": "Japan mountain arrival transfers",
+      "placeIds": [
+        "japan-rusutsu",
+        "japan-furano-ski",
+        "japan-shiga-kogen",
+        "japan-nozawa-onsen",
+        "japan-yuzawa-kogen",
+        "japan-togakushi-ski"
+      ],
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "Kiwitaxi is already an owner-available transfer program. Select Japanese mountain gateways may be useful only where an exact airport/station-to-resort route exists.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify exact owner-side routes such as airport/station-to-resort before creating any tracked link; do not infer coverage from country availability alone."
     }
   ]
 }

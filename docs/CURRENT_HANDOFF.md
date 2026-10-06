@@ -5008,3 +5008,61 @@ Combined state after Andorra + Nordic continuation:
 
 No exact rental pickup, transfer route, winter-equipment inclusion, tracked URL or eSIM public choice was invented.
 
+### Finland + Japan mountain expansion with broader partner routing — 2026-10-06
+Continued in large-batch mode with two geographically distinct mountain/current-view families and parallel commercial diversification.
+
+#### Search/Explore
+Added **12 healthy official/current destinations**.
+
+**Finland — 6**
+- Ounasvaara / Rovaniemi;
+- Pyhä;
+- Luosto;
+- Tahko;
+- Himos;
+- Vuokatti.
+
+**Japan — 6**
+- Rusutsu;
+- Furano Ski Resort;
+- Shiga Kogen;
+- Nozawa Onsen;
+- Yuzawa Kogen;
+- Togakushi Ski Area.
+
+All are first-party resort/tourism current-camera surfaces. Every new source remains HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold.
+
+#### Commercial expansion
+Commercial opportunity registry advanced with distinct fit-first paths:
+- Viator Pyhä-Luosto;
+- Viator Rovaniemi/Ounasvaara;
+- Klook Rusutsu;
+- Klook Nozawa Onsen;
+- Klook Furano Ski;
+- QEEQ Japan mountain road-trip research;
+- Kiwitaxi Japan mountain arrival-transfer research.
+
+Existing Klook Rovaniemi and Furano mappings were expanded instead of duplicated.
+
+#### Travelpayouts diversification
+New routing clusters:
+- Finnish secondary-resort access;
+- Finnish resort stay research;
+- Japan mountain access;
+- Japan mountain stay research using Rakuten Travel / Trip.com / Booking.com only after owner-project availability is confirmed.
+
+No stay program was promoted from public catalog presence alone.
+
+Combined state after this tranche:
+- healthy distinct searchable places: **641**;
+- healthy source records: **646**;
+- supplemental Search/Explore: **322 / 500**;
+- commercial opportunities: **383**;
+- utility-routing clusters: **36**;
+- Watch Earth impact: **0**.
+
+No tracked link, rental condition, transfer route, accommodation availability or owner-program approval was invented.
+
+#### Invariants
+Watch Earth remains in-ERN only; external/link-only sources stay out of Watch Earth; Current Image renewal remains natural-schedule only; public Guide/Now Moments remain OFF; no automatic social posting, paid ranking, Travelpayouts placement or link rewriting; hard lean-core ceiling remains 575 KB.
+

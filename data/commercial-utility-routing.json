@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T09:45:00Z",
+  "generatedAt": "2026-10-06T10:05:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -934,6 +934,79 @@
       ],
       "activationGate": "PROGRAM_COUNTRY_COVERAGE_AND_EXACT_LINK_REQUIRED",
       "rule": "Optional eSIM utility only after destination choice. Default to one verified provider per country context."
+    },
+    {
+      "id": "finland-secondary-resort-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "kiwitaxi",
+        "economybookings"
+      ],
+      "placeIds": [
+        "finland-tahko",
+        "finland-himos",
+        "finland-vuokatti",
+        "finland-pyha",
+        "finland-luosto"
+      ],
+      "activationGate": "EXACT_PICKUP_ROUTE_OR_DESTINATION_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "For Finnish secondary resorts, use one verified rental or transfer action after destination choice. Do not infer winter equipment, resort shuttle or airport coverage."
+    },
+    {
+      "id": "finland-resort-stay-research",
+      "intent": "stay",
+      "preferredProgramCandidates": [
+        "booking-com",
+        "trip-com"
+      ],
+      "placeIds": [
+        "finland-pyha",
+        "finland-luosto",
+        "finland-tahko",
+        "finland-himos",
+        "finland-vuokatti"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
+      "rule": "Accommodation research only until an owner-accessible stay program is confirmed. One useful stay action per destination cluster."
+    },
+    {
+      "id": "japan-mountain-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "kiwitaxi",
+        "localrent"
+      ],
+      "placeIds": [
+        "japan-rusutsu",
+        "japan-furano-ski",
+        "japan-shiga-kogen",
+        "japan-nozawa-onsen",
+        "japan-yuzawa-kogen",
+        "japan-togakushi-ski"
+      ],
+      "activationGate": "OWNER_EXACT_ROUTE_OR_PICKUP_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "Use one verified transport/rental action only after the visitor chooses the Japanese mountain destination. Never infer snow equipment or last-mile coverage."
+    },
+    {
+      "id": "japan-mountain-stay-research",
+      "intent": "stay",
+      "preferredProgramCandidates": [
+        "rakuten-travel",
+        "trip-com",
+        "booking-com"
+      ],
+      "placeIds": [
+        "japan-rusutsu",
+        "japan-furano-ski",
+        "japan-shiga-kogen",
+        "japan-nozawa-onsen",
+        "japan-yuzawa-kogen",
+        "japan-togakushi-ski"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
+      "rule": "Research-only accommodation routing. Rakuten Travel/Trip.com/Booking.com require owner-project availability and exact deep links before public use; default to one stay action."
     }
   ],
   "islandTravelClusters": [
