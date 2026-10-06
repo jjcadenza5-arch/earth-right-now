@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T00:50:00Z",
+  "generatedAt": "2026-10-06T01:35:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4505,6 +4505,37 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Klaipeda/Walking-Tour-through-the-Klaipeda-Old-Town/d4209-39534P2",
       "publicInventoryEvidence": "Current Viator Klaipėda inventory includes Old Town and Curonian Lagoon-area sightseeing.",
       "nextAction": "Search the owner-side account for a clean Klaipėda/Curonian Spit/Nida link. Activate only if destination scope is genuinely useful and clear."
+    },
+    {
+      "id": "viator-jersey",
+      "destination": "Jersey, Channel Islands",
+      "placeIds": [
+        "jersey-st-ouens-bay",
+        "jersey-st-aubins-bay"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has two official Visit Jersey live coastal views, while Viator currently exposes dedicated Channel Islands/Jersey sightseeing and Jersey Heritage inventory.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-IN/Channel-Islands/d32314-ttd",
+      "publicInventoryEvidence": "Current Viator Channel Islands inventory includes Jersey Heritage Pass and island sightseeing products.",
+      "nextAction": "Generate one owner-side Jersey/Channel Islands destination-level tracked link and manually verify it before public activation; reuse across the two Jersey live bays."
+    },
+    {
+      "id": "viator-jurmala",
+      "destination": "Jūrmala, Latvia",
+      "placeIds": [
+        "latvia-jurmala-dzintari-beach"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official municipal Dzintari Beach live view, while Viator currently has multiple Jūrmala beach/Kemeri/coastal day-trip products from Riga.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Riga/Full-Day-Private-Tour-to-Jurmala-Fisherman-Villages-and-Nature-Trails-from-Riga/d4480-21659P5",
+      "publicInventoryEvidence": "Current Viator inventory includes Jūrmala Beach, Dzintari, Kemeri and Baltic-coast day trips from Riga.",
+      "nextAction": "Generate one owner-side Jūrmala destination/search tracked link and manually verify it before public activation."
     }
   ]
 }
