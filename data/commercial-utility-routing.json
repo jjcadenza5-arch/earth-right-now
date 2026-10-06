@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T01:35:00Z",
+  "generatedAt": "2026-10-06T02:15:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -453,6 +453,54 @@
         "taiwan-elephant-mountain",
         "taiwan-tamsui-fishermans-wharf",
         "taiwan-gaomei-wetland"
+      ],
+      "activationGate": "EXACT_DESTINATION_INVENTORY_AND_LINK_REQUIRED"
+    },
+    {
+      "id": "major-city-luggage-storage",
+      "intent": "services",
+      "preferredProgramCandidates": [
+        "radical-storage"
+      ],
+      "placeIds": [
+        "new-york-harbor",
+        "london-savoy-place",
+        "london-abbey-road-crossing",
+        "rome-spanish-steps",
+        "dublin-temple-bar",
+        "chicago-lakefront",
+        "istanbul-sultanahmet"
+      ],
+      "activationGate": "OWNER_CITY_COVERAGE_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "caucasus-balkans-independent-driving",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "localrent",
+        "qeeq",
+        "economybookings"
+      ],
+      "placeIds": [
+        "tbilisi-center",
+        "montenegro-kolasin-1600",
+        "santorini-imerovigli",
+        "mykonos-new-port",
+        "istanbul-sultanahmet"
+      ],
+      "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED"
+    },
+    {
+      "id": "historic-city-self-guided",
+      "intent": "activities",
+      "preferredProgramCandidates": [
+        "wegotrip"
+      ],
+      "placeIds": [
+        "rome-spanish-steps",
+        "dublin-temple-bar",
+        "istanbul-sultanahmet",
+        "darmstadt-mathildenhoehe"
       ],
       "activationGate": "EXACT_DESTINATION_INVENTORY_AND_LINK_REQUIRED"
     }
