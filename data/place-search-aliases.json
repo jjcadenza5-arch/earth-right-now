@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T13:18:17Z",
+  "updatedAt": "2026-10-06T13:23:08Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -285,7 +285,6 @@
     ],
     "slovenia-bohinj-oroznova-hut": [
       "Orožnova koča",
-      "Oroznova Koca",
       "Bohinj Alps",
       "Črna Prst"
     ],
@@ -297,8 +296,7 @@
     "north-macedonia-mihajlovo": [
       "Михајлово",
       "Mihajlovo Macedonia",
-      "Kožuf",
-      "Kozuf"
+      "Kožuf"
     ],
     "canada-tofino-north-chesterman": [
       "North Chesterman Beach",
