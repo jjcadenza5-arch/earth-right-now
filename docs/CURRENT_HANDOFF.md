@@ -5661,3 +5661,75 @@ Continue from this checkpoint with:
 3. Viator + Travelpayouts-compatible utility diversification only after real destination utility is established;
 4. architecture dedupe / source-health maintenance before further volume growth;
 5. matching successful Pages + Operations validation before the next canonical checkpoint.
+
+
+## Autonomous KenyaLIVE + research reconciliation checkpoint — 2026-10-06 15:09 UTC
+
+Canonical validated content:
+- Content commit: `cdd17edf154ceee149f2364f78d1e81025e93a3b`.
+- **Deploy ERN to GitHub Pages #2678** (run 37484526768): SUCCESS.
+- **ERN Operations Check #1459** (run 37484526889): SUCCESS.
+- Pages and Operations validated the same content SHA before this handoff-only commit.
+
+### Search / Explore expansion
+Added **Nairobi National Park — KenyaLIVE** as one new healthy searchable place.
+- Provider: Kenya Wildlife Service / WildEarth.
+- Truth: `EXTERNAL_LIVE`.
+- Permission: `LINK_ONLY`.
+- Featured/Watch hold remains ON.
+- KWS states KenyaLIVE launched at Nairobi National Park on 22 September 2026 and provides daily real-time wildlife experiences from Kenyan parks through the KWS YouTube channel.
+- Current October 2026 reporting confirms the programme is a six-month KWS/KTB/WildEarth initiative with morning and afternoon live sessions.
+- ERN does not imply 24/7 continuous playback and does not restream it.
+
+### Commercial / utility diversification
+Nairobi National Park now has:
+- Viator research promoted from source-gated to owner-account exact-link-gated after current 2026 inventory verification.
+- Klook Nairobi National Park activity research added after current 2026 inventory verification.
+- Airalo Kenya connectivity research added as a post-discovery utility.
+- New `nairobi-national-park-planning` routing cluster limits output to one exact safari activity plus one Kenya connectivity utility after destination choice.
+
+All remain owner-project availability + exact tracked-link gated. No public affiliate activation, automatic rewriting, ranking boost, price promise or inferred partner availability was introduced.
+
+### Research / architecture reconciliation
+Three stale unresolved candidates were reconciled without adding duplicate public places:
+- `ala-archa-park` → `SUPERSEDED_BY_CANONICAL_CORE`; canonical core Ala-Archa source already exists.
+- `jordan-petra-treasury-skyline` → `SUPERSEDED_BY_CANONICAL_CORE`; official Visit Petra coverage remains canonical.
+- `falklands-stanley-tourist-centre-webcam` → promoted/reconciled to the already-existing Stanley Jetty Visitor Centre searchable record.
+
+This reduces unresolved research from 18 to **14** while preserving provenance.
+
+### Current validated catalog
+- **698 healthy distinct searchable places**
+- **703 healthy source records**
+- **379 supplemental Search/Explore records**
+- **452 commercial opportunity records**
+- **76 utility-routing clusters**
+- **481 source-research candidates**
+- **14 unresolved research candidates**
+- **12 source-maintenance priority records**
+- Four degraded fail-closed core records remain unchanged: `pattaya-city-live`, `takayama-miyagawa-current-image`, `jungfrau-region`, `chidori-sakura`.
+
+### Conservative unresolved-source checks
+- Mauritius official tourism still advertises 13 webcams, but its current **Watch Now** handoff resolves to a dead `/webcams-mauritius/` route; keep unresolved.
+- New Caledonia / Kuto still has a known tourism-office image endpoint, but reliable current timestamp/freshness verification remains unresolved.
+- Vatican News still confirms Governorate webcams show significant Vatican places in real time, but the redesigned Governorate site's exact webcam route/individual targets remain unresolved.
+- Montserrat MVO clearly confirms active remote monitoring cameras, but the public still-image freshness requirement remains unresolved.
+- Zambia / Shenton Safaris retains historical/current references to Mwamba/Kaingo webcam use, but an exact durable current public webcam route remains unresolved.
+
+### Preserved invariants
+- Watch Earth remains in-ERN-playback-only.
+- LINK_ONLY / EXTERNAL sources remain outside Watch Earth.
+- IMAGE_REFRESH remains natural-schedule-only.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- Commercial value cannot affect source truth, currentness, health, ranking or editorial prominence.
+- No paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation.
+- Existing lean-core / performance ceilings remain enforced.
+
+### Next autonomous lane
+Continue from this checkpoint by:
+1. resolving the remaining 14 research candidates only where exact current/live evidence is strong enough;
+2. prioritizing genuinely new countries/territories and provider diversity rather than alternate IDs;
+3. continuing Viator + Travelpayouts-compatible diversification only after real destination utility is established;
+4. performing source-health / dedupe maintenance before additional volume growth;
+5. requiring matching successful Pages + Operations validation on the same content SHA before declaring the next canonical checkpoint.
