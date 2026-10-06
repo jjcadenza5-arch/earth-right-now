@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T01:20:00Z",
+  "generatedAt": "2026-10-06T01:35:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -5505,6 +5505,62 @@
       "verifiedAt": "2026-10-06T01:05:00Z",
       "verification": "Research-only. Government current-camera infrastructure is confirmed, but ERN has not yet resolved the individual camera labels/locations and durable public target routes.",
       "nextAction": "Resolve exact SMG camera names, locations and public URLs. Promote only named place-specific views whose currentness and direct access can be verified."
+    },
+    {
+      "id": "latvia-liepaja-kalpaks-bridge-live",
+      "title": "Liepāja — Oskars Kalpaks Bridge",
+      "country": "Latvia",
+      "region": "Liepāja / Karosta",
+      "provider": "Liepāja Tourism",
+      "sourcePage": "https://liepaja.travel/en/see-and-do/oskars-kalpaks-bridge/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current official attraction page explicitly directs visitors to the live stream webcam to see whether the bridge is open.",
+      "verifiedAt": "2026-10-06T01:35:00Z",
+      "promotedAt": "2026-10-06T01:35:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "latvia-jurmala-dzintari-beach-live",
+      "title": "Jūrmala — Dzintari Beach",
+      "country": "Latvia",
+      "region": "Jūrmala",
+      "provider": "Jūrmala Port Authority",
+      "sourcePage": "https://www.jurmalasosta.lv/dzintaru-pludmale/",
+      "priority": "P1_GEO_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current municipal port page presents Dzintari Beach with a Baltic Live Cam surface.",
+      "verifiedAt": "2026-10-06T01:35:00Z",
+      "promotedAt": "2026-10-06T01:35:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "jersey-st-ouens-bay-live",
+      "title": "Jersey — St. Ouen's Bay",
+      "country": "Jersey",
+      "region": "West Coast",
+      "provider": "Visit Jersey",
+      "sourcePage": "https://www.jersey.com/plan-your-break/general-information/beach-cam/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Visit Jersey explicitly says the beach cam shows St. Ouen's Bay live and provides live west-coast views.",
+      "verifiedAt": "2026-10-06T01:35:00Z",
+      "promotedAt": "2026-10-06T01:35:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "jersey-st-aubins-bay-live",
+      "title": "Jersey — St. Aubin's Bay",
+      "country": "Jersey",
+      "region": "South Coast",
+      "provider": "Visit Jersey",
+      "sourcePage": "https://www.jersey.com/plan-your-break/general-information/st-aubin-bay-cam/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Visit Jersey explicitly describes this as a live webcam with live south-coast views.",
+      "verifiedAt": "2026-10-06T01:35:00Z",
+      "promotedAt": "2026-10-06T01:35:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
