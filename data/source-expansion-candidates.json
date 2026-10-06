@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T01:55:00Z",
+  "generatedAt": "2026-10-06T02:05:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -5757,6 +5757,20 @@
       "verifiedAt": "2026-10-06T01:55:00Z",
       "promotedAt": "2026-10-06T01:55:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "lesotho-afriski-current",
+      "title": "Afriski — Maluti Mountains",
+      "country": "Lesotho",
+      "region": "Maluti Mountains",
+      "provider": "Afriski Mountain Resort / SnowReport SA",
+      "sourcePage": "https://snowreport.co.za/afriski-mountain-lodge-webcams/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Afriski's official site exposes a Snow Report Webcam link, whose current page identifies the Afriski Mountain Resort webcam in Lesotho.",
+      "verifiedAt": "2026-10-06T02:05:00Z",
+      "promotedAt": "2026-10-06T02:05:00Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [
