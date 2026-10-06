@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T02:45:00Z",
+  "generatedAt": "2026-10-06T03:40:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -518,7 +518,8 @@
       "id": "viator-hualien-future",
       "destination": "Hualien / East Coast",
       "placeIds": [
-        "hualien-shitiping"
+        "hualien-shitiping",
+        "taiwan-dashibi-hill"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -1197,7 +1198,8 @@
       "id": "klook-taitung",
       "destination": "Taitung",
       "placeIds": [
-        "taitung-jinzun"
+        "taitung-jinzun",
+        "taiwan-torik-park"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
@@ -1907,7 +1909,8 @@
       "id": "klook-green-island-taitung",
       "destination": "Green Island / Taitung",
       "placeIds": [
-        "taiwan-green-island-chaikou"
+        "taiwan-green-island-chaikou",
+        "taiwan-green-island-fanchuanbi"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
@@ -5027,6 +5030,96 @@
       "publicInventoryEvidenceUrl": "https://bikesbooking.com/en/rent-a-bicycle-in-Rome/",
       "publicInventoryEvidence": "BikesBooking currently lists Rome bicycle rentals and related local-mobility inventory.",
       "nextAction": "Generate one owner-side Rome BikesBooking tracked link and manually verify it before public activation; suppress it if the visitor is already shown a better transport action."
+    },
+    {
+      "id": "viator-cyprus-troodos",
+      "destination": "Troodos Mountains / Cyprus",
+      "placeIds": [
+        "cyprus-troodos-mount-olympus"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Troodos current-conditions webcam, while Viator has extensive Troodos mountain and village touring inventory from Cyprus resort cities.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Cyprus/d47-ttd",
+      "publicInventoryEvidence": "Current Viator Cyprus inventory includes multiple Troodos Mountains, villages, winery and monastery tours.",
+      "nextAction": "Generate one owner-side Troodos/Cyprus destination or search tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "localrent-cyprus-roadtrip",
+      "destination": "Cyprus road-trip planning",
+      "placeIds": [
+        "cyprus-troodos-mount-olympus"
+      ],
+      "partnerCandidate": "localrent",
+      "intent": "transport",
+      "priority": "P2",
+      "reason": "Troodos and Cyprus island exploration are car-relevant, and Localrent currently exposes Cyprus inventory including Paphos, Larnaca, Ayia Napa, Platres and other island locations.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.localrent.com/en/cyprus/",
+      "publicInventoryEvidence": "Localrent currently exposes Cyprus car-rental coverage across major airports, resort towns and inland destinations.",
+      "nextAction": "Use only if owner-side Travelpayouts access exposes a clean Cyprus tracked link; keep this as one road-trip utility option rather than adding multiple competing car-rental buttons."
+    },
+    {
+      "id": "klook-yongpyong-ski",
+      "destination": "YongPyong / Pyeongchang, South Korea",
+      "placeIds": [
+        "south-korea-yongpyong"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has the official YongPyong live webcam network and Klook currently sells YongPyong ski day tours and shuttle/ski packages from Seoul.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/96908-yongpyong-ski-tour/",
+      "publicInventoryEvidence": "Klook currently lists YongPyong ski tour packages including round-trip Seoul transport, equipment/lesson options and cable-car choices.",
+      "nextAction": "Generate one owner-side YongPyong Klook tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-ishiuchi-maruyama",
+      "destination": "Ishiuchi Maruyama / Niigata, Japan",
+      "placeIds": [
+        "japan-ishiuchi-maruyama"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Ishiuchi Maruyama current-view source and Klook currently sells resort lift/gondola products.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-IN/activity/82610-1-day-join-skiing-ishiuchi-maruyama-ski-resort/",
+      "publicInventoryEvidence": "Klook currently lists Ishiuchi Maruyama lift tickets and sightseeing gondola products.",
+      "nextAction": "Generate one owner-side Ishiuchi Maruyama Klook tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-togari-onsen",
+      "destination": "Togari Onsen / Nagano, Japan",
+      "placeIds": [
+        "japan-togari-onsen"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has the official Togari live-camera surface and Klook currently sells Togari Onsen ski-resort admission/tickets.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/84393-togari-onsen-ski-resort-admission-nagano/",
+      "publicInventoryEvidence": "Klook currently lists Togari Onsen Ski Resort ticket inventory in Nagano.",
+      "nextAction": "Generate one owner-side Togari Onsen Klook tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "klook-inawashiro-stay-research",
+      "destination": "Inawashiro / Fukushima, Japan",
+      "placeIds": [
+        "japan-inawashiro-ski"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "stay",
+      "priority": "P2",
+      "reason": "ERN now has an official Inawashiro live view and Klook currently exposes lodging inventory in the Inawashiro area. This is a stay-use-case research path rather than an assumption that ERN's Klook program tracks hotels.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/hotels/detail/491623-hotel-listel-inawashiro-wing-tower/",
+      "publicInventoryEvidence": "Klook currently exposes bookable accommodation inventory near Inawashiro and the ski area.",
+      "nextAction": "Confirm in the owner Travelpayouts/Klook tools whether hotel deep-link attribution is supported for ERN before creating any public stay link. If not, keep dormant."
     }
   ]
 }
