@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T05:45:00Z",
+  "generatedAt": "2026-10-06T06:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2470,14 +2470,16 @@
       "destination": "Azores — Terceira / Santa Maria",
       "placeIds": [
         "azores-terceira",
-        "azores-santa-maria"
+        "azores-santa-maria",
+        "azores-angra-heroismo"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P2",
-      "reason": "Two distinct Azores island destinations with visitor-planning potential not covered by the São Miguel-specific path.",
+      "reason": "ERN has official Visit Azores current views on Terceira and Santa Maria, while Viator has substantial Angra do Heroísmo/Terceira sightseeing inventory.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Check island-specific Viator inventory; do not substitute São Miguel products."
+      "nextAction": "Check island-specific Viator inventory; do not substitute São Miguel products.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Angra-do-Heroismo/d51008-ttd"
     },
     {
       "id": "kkday-new-taipei-zhongjiao",
@@ -5599,6 +5601,51 @@
       "reason": "Airalo link generation is available in the owner Travelpayouts project. Optional connectivity may be useful for international Central America trips after destination selection.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Verify country-specific eSIM coverage for Honduras, Costa Rica and Panama in the owner account and generate one exact tracked utility link per supported country only when useful; default to one eSIM brand."
+    },
+    {
+      "id": "viator-belize-zoo",
+      "destination": "Belize Zoo / Belize City",
+      "placeIds": [
+        "belize-zoo"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has The Belize Zoo's first-party live wildlife cam, and Viator currently lists Belize Zoo tours from Belize City and San Ignacio.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Belize-City/Belize-Zoo-And-Baboon-Sanctuary-Excursion/d5094-9025P19",
+      "publicInventoryEvidence": "Current Viator inventory includes Belize Zoo visits with transport from Belize City and San Ignacio.",
+      "nextAction": "Generate one owner-side Belize Zoo or Belize City destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-azores-faial-horta",
+      "destination": "Faial / Horta, Azores",
+      "placeIds": [
+        "azores-horta-faial"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Visit Azores Horta current view, and Viator currently lists dedicated Faial/Horta island tours.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Horta/d50450-ttd",
+      "publicInventoryEvidence": "Current Viator Horta inventory includes Faial island sightseeing, whale-watching and day tours.",
+      "nextAction": "Generate one owner-side Horta/Faial destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-azores-outer-islands",
+      "destination": "Azores outer islands — São Jorge / Flores / Corvo",
+      "placeIds": [
+        "azores-velas-sao-jorge",
+        "azores-faja-grande-flores",
+        "azores-vila-corvo"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P2",
+      "reason": "ERN now has official current views on São Jorge, Flores and Corvo. Keep a single outer-islands research path and only activate if owner-side Viator inventory is genuinely useful for one or more of these islands.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Search owner-side Viator inventory for São Jorge, Flores and Corvo. If no useful exact destination inventory exists, leave this opportunity dormant rather than forcing a generic Azores link."
     }
   ]
 }
