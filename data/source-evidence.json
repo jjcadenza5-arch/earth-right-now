@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T07:30:00Z",
+  "generatedAt": "2026-10-06T08:20:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2192,6 +2192,90 @@
       "freshnessEvidence": "The Hermitage labels the view Live and currently publishes five images per hour, with multiple Mount Cook-area webcam angles.",
       "coordinateNote": "Destination-level place reference only; ERN does not claim the exact camera coordinate.",
       "checkedAt": "2026-10-06T07:30:00Z"
+    },
+    "nz-coronet-peak-webcams": {
+      "sourceUrl": "https://www.coronetpeak.co.nz/weather-report",
+      "rightsBasis": "First-party NZSki/Coronet Peak webcam surface; ERN links externally and does not infer image reuse rights.",
+      "freshnessEvidence": "Official Coronet Peak report exposes multiple named WEBCAMS including Coronet Peak, Meadows Base, Coronet Express and Summit.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:20:00Z"
+    },
+    "nz-remarkables-webcams": {
+      "sourceUrl": "https://www.theremarkables.co.nz/weather-report?site=theremarkables",
+      "rightsBasis": "First-party NZSki/The Remarkables current-conditions page; ERN links externally.",
+      "freshnessEvidence": "Official report explicitly exposes WEBCAMS alongside current mountain conditions.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:20:00Z"
+    },
+    "nz-mt-hutt-webcams": {
+      "sourceUrl": "https://www.mthutt.co.nz/weather-report?site=mthutt",
+      "rightsBasis": "First-party NZSki/Mt Hutt webcam surface; ERN links externally.",
+      "freshnessEvidence": "Official Mt Hutt report exposes current mountain reporting and webcam imagery; ERN retains conservative LIVE_IMAGE semantics.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:20:00Z"
+    },
+    "nz-whakapapa-webcams": {
+      "sourceUrl": "https://www.whakapapa.com/report",
+      "rightsBasis": "First-party Whakapapa current report; ERN links externally.",
+      "freshnessEvidence": "Official report on 2026-10-06 lists current operational status and webcams including Happy Valley, Snowland, Pinnacles, Far West, Te Heuheu Valley and Hut Flat.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:20:00Z"
+    },
+    "au-mt-buller-webcams": {
+      "sourceUrl": "https://www.mtbuller.com.au/winter/weather/web-cams",
+      "rightsBasis": "First-party Mt Buller web-cam page; ERN links externally.",
+      "freshnessEvidence": "Official page currently exposes Bourke Street, Skyline, Village, Summit and other named web cams.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:20:00Z"
+    },
+    "au-falls-creek-webcams": {
+      "sourceUrl": "https://www.fallscreek.com.au/snow-cams-summer/",
+      "rightsBasis": "First-party Falls Creek mountain-cam page; ERN links externally.",
+      "freshnessEvidence": "Official page labels the surface Live Mountain Cams and lists multiple current named camera views.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:20:00Z"
+    },
+    "au-perisher-webcams": {
+      "sourceUrl": "https://www.perisher.com.au/reports-cams/reports/snow-report",
+      "rightsBasis": "First-party Perisher snow-report/camera surface; ERN links externally.",
+      "freshnessEvidence": "Official report exposes multiple named Snow Cam images and current mountain weather.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:20:00Z"
+    },
+    "au-thredbo-webcams": {
+      "sourceUrl": "https://www.thredbo.com.au/weather/snow-cams/",
+      "rightsBasis": "First-party Thredbo snow-cam page; ERN links externally.",
+      "freshnessEvidence": "Current official page exposes named cams including Kosciuszko Walking Track, Central Spur, Alpine Coaster and Friday Flat.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:20:00Z"
+    },
+    "au-mt-hotham-webcams": {
+      "sourceUrl": "https://www.mthotham.com.au/mountain/conditions/snow-cams",
+      "rightsBasis": "First-party Mt Hotham live-camera page; ERN links externally.",
+      "freshnessEvidence": "Official Mt Hotham page labels real-time mountain views and exposes multiple Snow Cams including Summit, Hotham Heights and Snake Gully.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:20:00Z"
+    },
+    "au-charlotte-pass-webcams": {
+      "sourceUrl": "https://charlottepass.com.au/on-mountain/",
+      "rightsBasis": "First-party Charlotte Pass current mountain-cam page; ERN links externally.",
+      "freshnessEvidence": "Official page states live cameras update every five minutes between 6am and 5pm, with the Kosciuszko Triple Chair camera updating every five minutes 24/7.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:20:00Z"
+    },
+    "au-selwyn-snow-webcams": {
+      "sourceUrl": "https://selwynsnow.com.au/snow-and-weather/",
+      "rightsBasis": "First-party Selwyn live-video/current-cam page; ERN links externally.",
+      "freshnessEvidence": "Official page states a 24/7 live video stream is available and webcams update every 10 minutes between 6am and 5pm; resort operations are closed for the remainder of winter 2026.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:20:00Z"
+    },
+    "montenegro-kolasin1450-webcams": {
+      "sourceUrl": "https://www.kolasin1450.com/webcams2.php",
+      "rightsBasis": "First-party Kolašin 1450 webcam/live-stream page; ERN links externally.",
+      "freshnessEvidence": "Official page labels the cameras Live Stream and says visitors can view current resort atmosphere and weather at Jezerine and Viline Vode.",
+      "coordinateNote": "Destination-level place reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T08:20:00Z"
     }
   },
   "prague-petrin-tower": {

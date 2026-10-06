@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T07:30:00Z",
+  "generatedAt": "2026-10-06T08:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1426,12 +1426,13 @@
       "placeIds": [
         "nz-tongariro",
         "nz-ngauruhoe",
-        "nz-ruapehu"
+        "nz-ruapehu",
+        "nz-whakapapa"
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has official GeoNet current-image coverage across Tongariro, Ngauruhoe and Ruapehu, while Klook currently sells Tongariro Alpine Crossing shuttle access and North Island scenic transport through Tongariro National Park.",
+      "reason": "ERN now has a current Whakapapa/Ruapehu mountain-view source within Tongariro National Park. Reuse the existing Tongariro Klook path rather than creating a separate generic park action.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/c390-taupo/1002-day-trips/",
       "publicInventoryEvidence": "Klook currently lists a Tongariro Alpine Crossing Half-Day Shuttle under Taupo/North Island inventory and also sells Northern Explorer rail journeys through Tongariro National Park.",
@@ -2232,12 +2233,14 @@
       "id": "viator-queenstown-alps",
       "destination": "Queenstown",
       "placeIds": [
-        "queenstown-airport-alps"
+        "queenstown-airport-alps",
+        "nz-coronet-peak",
+        "nz-remarkables"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "High-intent adventure destination; activity planning naturally follows current alpine/airport conditions.",
+      "reason": "ERN now has Queenstown-area live/current alpine views including Coronet Peak and The Remarkables. Preserve one broad Queenstown Viator bridge rather than per-camera activity density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Generate one Queenstown destination link after account inventory check."
     },
@@ -3180,12 +3183,13 @@
       "id": "viator-kolasin-montenegro",
       "destination": "Kolašin / Bjelasica",
       "placeIds": [
-        "montenegro-kolasin-1600"
+        "montenegro-kolasin-1600",
+        "montenegro-kolasin-1450"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has an official Kolašin 1600 mountain source and Viator currently lists multiple Kolašin/Biogradska Gora mountain experiences.",
+      "reason": "ERN now covers both Kolašin 1600 and Kolašin 1450/Bjelasica current mountain views. Keep one regional Montenegro mountain-planning bridge.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Podgorica/Jeep-safari-National-park-Biogradska-gora/d26108-143035P4",
       "publicInventoryEvidence": "Current Viator listing starts in Kolašin and includes a Jeep safari through Biogradska Gora/Bjelasica, mountain villages and ski-resort scenery.",
@@ -5764,6 +5768,53 @@
       "reason": "ERN now has current East Greenland discovery views in Tasiilaq and Kulusuk. Flight planning is a natural downstream utility for this remote destination, but practical routing must be verified owner-side.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "nextAction": "Verify owner-side Kiwi.com search usefulness for Kulusuk/Tasiilaq access and generate one exact tracked search link only if routing is practical. Do not imply direct service to Tasiilaq when the itinerary actually requires a Kulusuk transfer."
+    },
+    {
+      "id": "klook-queenstown-ski-fields",
+      "destination": "Queenstown ski fields — Coronet Peak / The Remarkables",
+      "placeIds": [
+        "nz-coronet-peak",
+        "nz-remarkables"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "transport-activities",
+      "priority": "P1",
+      "reason": "Current Klook inventory directly covers Coronet Peak and The Remarkables ski passes and resort transfers, providing a distinct ski-field utility beyond general Queenstown tours.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/destination/c83-queenstown/1033-skiing-snowboarding/",
+      "publicInventoryEvidence": "Klook currently lists Coronet Peak and The Remarkables ski passes, lessons and resort transport for the 2026 season.",
+      "nextAction": "Generate one owner-side Queenstown ski-fields Klook tracked link or the single clearest supported destination/product link; avoid stacking separate Coronet and Remarkables buttons."
+    },
+    {
+      "id": "klook-mt-buller",
+      "destination": "Mt Buller, Victoria",
+      "placeIds": [
+        "au-mt-buller"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "transport-activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Mt Buller current-view source and Klook currently carries multiple Mt Buller snow-day products from Melbourne.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-AU/activity/51130-mt-buller-snow-trip-tour-melbourne/",
+      "publicInventoryEvidence": "Current Klook Mt Buller inventory includes seasonal day transport/snow trips from Melbourne and other Mt Buller winter products.",
+      "nextAction": "Generate one owner-side Mt Buller Klook tracked link and manually verify it; use one alpine action rather than multiple competing products."
+    },
+    {
+      "id": "klook-snowy-mountains-ski",
+      "destination": "Snowy Mountains — Perisher / Thredbo",
+      "placeIds": [
+        "au-perisher",
+        "au-thredbo"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "transport-activities",
+      "priority": "P1",
+      "reason": "ERN now has current Perisher and Thredbo official camera sources and Klook currently has a multi-day product explicitly serving both resorts.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/activity/229344-3-day-perisher-thredbo-snow-mountain-tour-from-sydney/",
+      "publicInventoryEvidence": "Current Klook product explicitly visits both Perisher and Thredbo with Snowy Mountains transport and accommodation.",
+      "nextAction": "Generate one owner-side Snowy Mountains/Perisher-Thredbo tracked link and manually verify it; do not imply Charlotte Pass or Selwyn coverage from this product."
     }
   ]
 }

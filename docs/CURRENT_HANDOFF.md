@@ -4847,3 +4847,67 @@ NZSki's official site confirms the three mountain operations and current mountai
 #### Safeguards unchanged
 Watch Earth remains in-ERN only; external/link-only sources remain Search/Explore-only; Current Image renewal remains natural-schedule only; public Guide and Now Moments remain OFF; no automatic social posting, paid ranking, automatic Travelpayouts placement or link rewriting; commercial value does not affect Earth ranking, source truth, health or currentness; hard lean-core ceiling remains 575 KB.
 
+### Large alpine + travel-utility expansion batch — 2026-10-06
+Continued autonomously from canonical main `105c3ace6b7dcea9964626cf60ee5bddc40689aa` in the owner's requested large-batch mode.
+
+#### Search/Explore expansion
+Added **12 healthy searchable places** through the lazy supplemental catalog:
+- New Zealand: Coronet Peak, The Remarkables, Mt Hutt and Whakapapa/Ruapehu;
+- Australia: Mt Buller, Falls Creek, Perisher, Thredbo, Mt Hotham, Charlotte Pass and Selwyn Snow Resort;
+- Montenegro: Kolašin 1450.
+
+All are first-party official resort/current-condition camera surfaces. Every new row remains HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold, so the batch expands intentional Search/Explore discovery without weakening Watch Earth.
+
+Current catalog state:
+- healthy distinct searchable places: **609**;
+- healthy source records: **614**;
+- supplemental Search/Explore: **290 / 500**;
+- first-load core unchanged;
+- Watch Earth impact: **0**.
+
+Notable truth/currentness boundaries:
+- Whakapapa's official 2026-10-06 report exposes multiple current webcam views;
+- Charlotte Pass states live cameras refresh every five minutes;
+- Selwyn states its live video remains 24/7 and image cams refresh every 10 minutes even though resort operations have closed for the remainder of winter 2026;
+- seasonal operational closure is not treated as a broken current-view source.
+
+#### Business expansion + consolidation
+Commercial opportunity registry advanced to **367 records**.
+
+Existing regional paths expanded:
+- Queenstown/Viator now covers Coronet Peak + The Remarkables;
+- Tongariro/Klook now includes Whakapapa;
+- Kolašin/Montenegro Viator path now includes Kolašin 1450.
+
+New differentiated exact-link-gated opportunities:
+- Klook Queenstown ski fields — Coronet Peak / The Remarkables;
+- Klook Mt Buller;
+- Klook Snowy Mountains — Perisher / Thredbo.
+
+These mappings are based on current public Klook inventory that directly names the resorts. No tracked URL, price guarantee, availability guarantee or owner approval was invented. All remain `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`.
+
+#### Travelpayouts diversification
+General utility routing expanded to **27 clusters**.
+
+New clusters:
+- Queenstown ski access — Kiwitaxi / intui.travel / QEEQ research;
+- Victorian Alps road trip — QEEQ / Economybookings / GetRentacar research;
+- Snowy Mountains access — the same rental-program family, with an explicit rule never to imply direct winter vehicle access to Charlotte Pass;
+- Alpine stay research — Booking.com / Trip.com research only, gated on actual Earthrightnow project availability and exact destination links.
+
+This keeps Travelpayouts diversification active beyond tours while preserving one-useful-action-per-need and owner-link verification.
+
+#### Research queue
+The three earlier NZSki exact-target research records for Mt Hutt, Coronet Peak and The Remarkables were resolved to `RESOLVED_PROMOTED_OFFICIAL_LINK_ONLY` after exact first-party webcam pages were confirmed.
+
+Research-only global gaps were also recorded for:
+- Malta — official Live Malta Cams surface confirmed, but named stable targets remain unresolved;
+- Guam — no durable first-party scenic webcam confirmed yet;
+- Samoa — no durable current resort/destination webcam confirmed yet;
+- Tonga — no durable current resort/destination webcam confirmed yet.
+
+No weak substitute was promoted for those gaps.
+
+#### Invariants
+Watch Earth remains in-ERN playback only; LINK_ONLY/external sources remain out of Watch Earth; IMAGE_REFRESH remains natural-schedule only; public Guide and Now Moments remain OFF; no social automation, paid ranking, automatic Travelpayouts placement or link rewriting; commercial value cannot affect Earth ranking/source truth/health/currentness; hard lean-core ceiling remains 575 KB.
+

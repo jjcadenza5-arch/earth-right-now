@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T07:30:00Z",
+  "generatedAt": "2026-10-06T08:20:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -769,6 +769,77 @@
       ],
       "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
       "rule": "Road-trip planning only after the visitor chooses the region. Use one verified car-rental option for the trip context; never stack competing rental buttons."
+    },
+    {
+      "id": "queenstown-ski-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "intui-travel",
+        "qeeq"
+      ],
+      "placeIds": [
+        "nz-coronet-peak",
+        "nz-remarkables"
+      ],
+      "activationGate": "EXACT_AIRPORT_CITY_OR_RENTAL_COVERAGE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After Queenstown ski-field choice, use at most one verified airport/city transfer or one rental-car option. Klook ski transport remains a distinct activity/field-transfer use case; do not stack redundant transport buttons."
+    },
+    {
+      "id": "australia-victorian-alps-road-trip",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "economybookings",
+        "getrentacar"
+      ],
+      "placeIds": [
+        "au-mt-buller",
+        "au-falls-creek",
+        "au-mt-hotham"
+      ],
+      "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Road-trip planning only after destination choice. Choose one verified car-rental option for the Victoria alpine context; never imply mountain-road suitability or snow-chain inclusion unless the exact rental terms prove it."
+    },
+    {
+      "id": "australia-snowy-mountains-access",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "economybookings",
+        "getrentacar"
+      ],
+      "placeIds": [
+        "au-perisher",
+        "au-thredbo",
+        "au-charlotte-pass",
+        "au-selwyn-snow"
+      ],
+      "activationGate": "OWNER_DESTINATION_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Use one verified rental/arrival option for the Snowy Mountains trip context. Never imply direct vehicle access to Charlotte Pass in winter; visitors must follow the resort's oversnow-access rules."
+    },
+    {
+      "id": "alpine-stay-research",
+      "intent": "stay",
+      "preferredProgramCandidates": [
+        "booking-com",
+        "trip-com"
+      ],
+      "placeIds": [
+        "nz-coronet-peak",
+        "nz-remarkables",
+        "nz-mt-hutt",
+        "nz-whakapapa",
+        "au-mt-buller",
+        "au-falls-creek",
+        "au-perisher",
+        "au-thredbo",
+        "au-mt-hotham",
+        "au-charlotte-pass",
+        "montenegro-kolasin-1450"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
+      "rule": "Research-only until an accommodation program is actually available to the Earthrightnow project. Default to one useful stay action per destination cluster; never let lodging inventory affect Earth ranking."
     }
   ],
   "islandTravelClusters": [

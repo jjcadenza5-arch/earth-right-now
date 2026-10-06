@@ -798,9 +798,9 @@
     },
     {
       "id": "nzski-mt-hutt-webcams",
-      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "state": "RESOLVED_PROMOTED_OFFICIAL_LINK_ONLY",
       "why": "NZSki operates Mt Hutt and current third-party camera indexing confirms multiple official Mt Hutt webcam views, but ERN has not yet resolved the exact durable first-party webcam route from the official site.",
-      "next": "Resolve the exact NZSki Mt Hutt webcam/snow-report target, confirm currentness and keep LINK_ONLY unless permission supports more.",
+      "next": "Maintain as external Search/Explore source; revalidate current provider webcam surface naturally and do not infer embed/reuse rights.",
       "evidenceUrls": [
         "https://www.nzski.com/",
         "https://www.nzski.com/our-mountains"
@@ -808,9 +808,9 @@
     },
     {
       "id": "nzski-coronet-peak-webcams",
-      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "state": "RESOLVED_PROMOTED_OFFICIAL_LINK_ONLY",
       "why": "NZSki's official Queenstown mountain surface confirms Coronet Peak current mountain/weather reporting; webcam-specific first-party target still needs exact resolution.",
-      "next": "Resolve the exact Coronet Peak webcam target and verify current imagery before any Search/Explore promotion.",
+      "next": "Maintain as external Search/Explore source; revalidate current provider webcam surface naturally and do not infer embed/reuse rights.",
       "evidenceUrls": [
         "https://www.nzski.com/queenstown",
         "https://www.nzski.com/our-mountains"
@@ -818,12 +818,49 @@
     },
     {
       "id": "nzski-remarkables-webcams",
-      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "state": "RESOLVED_PROMOTED_OFFICIAL_LINK_ONLY",
       "why": "NZSki officially operates The Remarkables and current public mountain reporting confirms active mountain conditions; exact first-party webcam route remains unresolved in ERN.",
-      "next": "Resolve the exact The Remarkables webcam target and verify current imagery before promotion.",
+      "next": "Maintain as external Search/Explore source; revalidate current provider webcam surface naturally and do not infer embed/reuse rights.",
       "evidenceUrls": [
         "https://www.nzski.com/queenstown",
         "https://www.nzski.com/our-mountains"
+      ]
+    },
+    {
+      "id": "malta-official-live-cams",
+      "state": "OFFICIAL_LIVE_CAMERA_PLATFORM_CONFIRMED_PUBLIC_SITE_DEEP_LINKS_UNRESOLVED",
+      "why": "Visit Malta's official Traveller Information and Live Malta Cams pages explicitly advertise live cameras for pre-trip viewing, but the retrieved public page does not expose stable named camera targets in crawlable HTML.",
+      "next": "Resolve one or more named stable camera targets from the official Visit Malta live-cam surface before promotion; do not create a generic Malta camera place.",
+      "evidenceUrls": [
+        "https://www.visitmalta.com/en/traveller-info/",
+        "https://www2.visitmalta.com/en/info/live-cams-in-malta/"
+      ]
+    },
+    {
+      "id": "guam-destination-camera-gap",
+      "state": "NO_VERIFIED_CURRENT_CAMERA_YET",
+      "why": "Visit Guam currently documents major beachfront resorts and destination areas, but this research pass did not confirm a stable first-party continuous scenic webcam suitable for ERN.",
+      "next": "Continue first-party resort/tourism research for a durable Tumon or other Guam current-view source; do not substitute promotional video.",
+      "evidenceUrls": [
+        "https://www.visitguam.com/things-to-do/beaches/"
+      ]
+    },
+    {
+      "id": "samoa-destination-camera-gap",
+      "state": "NO_VERIFIED_CURRENT_CAMERA_YET",
+      "why": "Samoa Tourism Authority has current first-party resort/destination listings, but this pass did not establish a durable public live webcam from the official tourism/resort surfaces reviewed.",
+      "next": "Continue exact first-party webcam research for Upolu or Savai'i; do not promote static resort media as current.",
+      "evidenceUrls": [
+        "https://www.samoa.travel/plan-book/samoa-accommodation/"
+      ]
+    },
+    {
+      "id": "tonga-destination-camera-gap",
+      "state": "NO_VERIFIED_CURRENT_CAMERA_YET",
+      "why": "Tonga Tourism Authority currently documents active resorts and destination infrastructure, but no durable public live/current webcam meeting ERN truth gates was confirmed in this pass.",
+      "next": "Continue exact provider/tourism webcam research for Tongatapu, Vava'u or Ha'apai; preserve research-only state until a current visual target is verified.",
+      "evidenceUrls": [
+        "https://www.tongatourism.travel/stay/resorts"
       ]
     }
   ],
