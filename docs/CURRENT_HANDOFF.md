@@ -3676,3 +3676,69 @@ Final Pages **2600 completed SUCCESS**:
 - no paid ranking;
 - no automatic Travelpayouts link rewriting or placement;
 - commercial value never affects Earth ranking, source truth, currentness or health.
+
+
+### North Macedonia + Lesotho extension — 2026-10-06
+The same large batch continued beyond the 507-place checkpoint to prioritize genuinely new-country coverage rather than further concentrating already dense providers/countries.
+
+#### Searchable expansion
+Healthy distinct searchable coverage is now **513 places** from **518 healthy source records**.
+- lazy supplemental Search/Explore: **194 / 250 rows**;
+- remaining bounded supplemental capacity before another architectural review: **56 rows**.
+
+**North Macedonia — 5 new places**
+Using the current Ski Macedonia live-camera network:
+- Mavrovo — Bistra & ski slopes;
+- Popova Šapka — Šar Mountains;
+- Galičica — Magaro / Ohrid region;
+- Pelister — Niže Pole;
+- Vodno — Skopje mountain view.
+
+The provider currently labels these camera families LIVE and exposes current weather/conditions. ERN treats all five as `EXTERNAL_LIVE` + `LINK_ONLY` + Search/Explore-only with Watch hold.
+
+One regional Viator opportunity (`viator-north-macedonia-mountains`) serves the cluster rather than creating five repetitive affiliate placements. Current public Viator inventory supports Galičica/Ohrid activities and Mavrovo/Ohrid touring, but ERN must not imply that every camera location is included in an itinerary.
+
+**Lesotho — 1 new place**
+- Afriski — Maluti Mountains.
+
+Afriski's official resort site directly exposes a Snow Report Webcam handoff; the current linked surface identifies the Afriski Mountain Resort webcam in Lesotho. ERN promotes it conservatively as `LIVE_IMAGE` + `LINK_ONLY` + Search/Explore-only.
+
+One Lesotho-level Viator planning opportunity was added. Current public Viator inventory includes Lesotho and Sani Pass products, but the commercial record explicitly forbids implying that Afriski itself is visited unless exact itinerary evidence proves it.
+
+#### Final business state for this large batch
+Commercial opportunity registry: **298 records**.
+This includes the earlier eight new Travelpayouts utility opportunities (QEEQ, AutoEurope, Kiwi.com, Kiwitaxi, intui.travel, KKday, Airalo) plus the Isle of Man, Guernsey, North Macedonia and Lesotho visitor-planning bridges.
+
+No new tracked URL was invented or publicly activated. Every new utility/affiliate record that lacks owner verification remains `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`.
+
+#### Final validation
+Operations **1404 SUCCESS** after the North Macedonia addition.
+- cohort: 78 / 521 eligible searchable sources;
+- 56 / 401 unique URLs;
+- reachable 70, missing 0, blocked 4, temporary/network 4;
+- repair 2, review 4, watch 2.
+The two Guernsey URLs entered first-transient WATCH only and were not mutated.
+
+Operations **1405 SUCCESS** after the Lesotho addition.
+- total eligible searchable sources: **522**;
+- unique URLs: **402**;
+- current cohort: **78 sources / 56 unique URLs**;
+- reachable: **72**;
+- missing: **0**;
+- blocked: **4**;
+- temporary/network: **2**;
+- recovered: **2**;
+- repair: **2**;
+- review: **4**;
+- watch: **0**.
+The transient Guernsey WATCH states cleared naturally on subsequent health observations.
+
+Pages **2604 SUCCESS** for the final 513-place state.
+- all **112 current ERN release smoke tests passed**;
+- lean core: **573649 bytes**;
+- hard ceiling remains **575000 bytes**;
+- supplemental Search integrity passed at **194 rows**;
+- commercial placement integrity passed;
+- deployment completed with reported `errors: []`.
+
+Protected invariants remain unchanged: Watch Earth in-ERN playback only; natural Current Image renewal only; public generative Guide OFF; public Now Moments media OFF; no automatic social posting/account creation; no automatic Travelpayouts Drive/link rewriting; no paid ranking; commercial value never affects Earth ranking, source truth, health or currentness.
