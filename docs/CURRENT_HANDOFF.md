@@ -3506,3 +3506,82 @@ Pages run **2583 completed SUCCESS** on the final commercial state:
 - no automatic social posting/account creation;
 - no paid ranking;
 - commercial value never affects Earth ranking, source truth, currentness or health.
+
+
+### 500-place searchable milestone — balanced Europe/islands/wildlife expansion — 2026-10-06
+Owner's operating direction remains: expand both ERN sides in large, careful batches; do not rush, but do not return after only a few additions. This batch prioritised underrepresented countries/regions, high-value live/current views, commercial reconciliation and cleanup before counting growth.
+
+#### Searchable-place expansion
+After removing one duplicate Kanlaon supplemental record, ERN reached **500 healthy distinct searchable places** from **505 healthy source records**. Supplemental Search/Explore currently contains **181 rows** within the bounded lazy capacity of 250.
+
+New searchable coverage in this batch includes:
+- **Monaco — new ERN country:** Port Hercule and Monte-Carlo Beach live views;
+- **France / Les Arcs:** Arc 1600, Arc 1800, Arc 1950 and Arc 2000 official destination livecams;
+- **United States:** Farallon Islands live scientific/wildlife view from the California Academy of Sciences;
+- **Lithuania — new ERN country:** Vilnius Cathedral Square, Palanga Pier/Baltic Sea, Nida marina/Curonian Lagoon and Kaunas Old Town;
+- **Luxembourg — new ERN country:** Wasserbillig / Moselle-Sûre real-time tourism webcam;
+- **Latvia:** Liepāja Oskars Kalpaks Bridge live stream, Jūrmala Dzintari Beach municipal live cam, Riga Port Panorama and Daugavgrīva Lighthouse live port views;
+- **Jersey — new ERN country/territory:** St. Ouen's Bay and St. Aubin's Bay official Visit Jersey live beach cameras.
+
+All additions remain `LINK_ONLY` / external playback with `watchHold: true`. They are Search/Explore-only and cannot fill Watch Earth.
+
+Research-only coverage also expanded without premature promotion:
+- **Macao:** official Meteorological and Geophysical Bureau WeatherCam network confirmed, but exact named camera locations/routes remain unresolved; candidate stays `EXACT_CAMERA_ROUTE_AND_TARGET_VERIFICATION_REQUIRED`.
+- Malta official Live Malta Cams remains real but exact named camera extraction/current target evidence is still insufficient for promotion.
+
+#### Catalog cleanup / truth preservation
+The health system exposed a duplicate Kanlaon representation: canonical core source `kanlaon-phivolcs-current-image` / place `kanlaon-volcano` and a supplemental record pointing to the same PHIVOLCS target under `philippines-kanlaon-phivolcs`.
+- removed the supplemental duplicate rather than inflating the searchable-place count;
+- retained candidate provenance as `SUPERSEDED_BY_CANONICAL_CORE`;
+- repointed multilingual/search aliases to canonical place `kanlaon-volcano`.
+This cleanup caused an intermediate Pages failure because the alias registry still referenced the removed supplemental place ID. The alias was corrected immediately; all other smoke tests and the lean guard had already passed in that failed run.
+
+#### Business-side expansion
+Commercial registry now contains **286 opportunities**.
+New opportunities in this batch:
+- Monaco / Monte-Carlo → Viator;
+- Farallon Islands / San Francisco offshore wildlife → Viator, explicitly seasonal/dormant unless exact useful inventory exists;
+- Vilnius → Viator;
+- Klaipėda / Curonian Lagoon / Nida → Viator, only if exact scope is useful;
+- Jersey / Channel Islands → Viator;
+- Jūrmala → Viator;
+- Riga → Viator.
+
+All remain `ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED`. No tracked link, availability or offer was invented. Liepāja and Luxembourg/Wasserbillig were intentionally left without a new commercial mapping where current partner inventory was not cleanly destination-relevant.
+
+#### Health / repair review
+Operations **1398 completed SUCCESS** at the 500-place expansion stage.
+Latest observed searchable-source cohort:
+- eligible searchable sources: **509**;
+- eligible unique URLs: **395**;
+- current cohort: **75 sources / 54 unique URLs**;
+- reachable: **69**;
+- missing: **0**;
+- blocked: **4**;
+- temporary/network: **2**;
+- recovered: **0**;
+- current cohort repair queue: **2 REPAIR / 4 REVIEW / 0 WATCH**.
+
+The two REPAIR items were independently investigated rather than automatically mutated:
+- **Balykchy — Gateway to Issyk-Kul:** KG Camera's provider page remains active, lists the camera and states live surveillance with about a 20-second delay;
+- **Kanlaon Volcano:** PHIVOLCS' current VOLCAN surface remains active and explicitly publishes real-time monitoring data with IP-camera snapshots sampled every minute.
+Therefore neither source was deleted, replaced, downgraded or truth-changed. Durable investigation notes were added to provider observations and source-maintenance priority data.
+
+An earlier Operations 1394 failure was an external/private analytics health-fetch failure, not a catalog/source validation failure. Subsequent Operations runs recovered successfully.
+
+#### Release validation
+Pages **2588 completed SUCCESS** before the final milestone additions:
+- all **112 current ERN release smoke tests passed**;
+- supplemental Search integrity passed;
+- hard lean-core budget remained exactly **575000 bytes**.
+
+Intermediate Pages 2589 failed only because the search-alias registry still referenced the deliberately removed duplicate Kanlaon supplemental place; the alias was repointed to canonical `kanlaon-volcano`. Later canonical Pages serialization is validating that correction and the final 500-place release.
+
+#### Protected invariants unchanged
+- Watch Earth remains **in-ERN playback only**;
+- IMAGE_REFRESH remains untouched until natural renewal;
+- public generative Guide remains OFF;
+- public Now Moments media remains OFF;
+- no automatic social posting/account creation;
+- no paid ranking;
+- commercial value never affects Earth ranking, source truth, currentness or health.
