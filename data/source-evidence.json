@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T10:40:00Z",
+  "generatedAt": "2026-10-06T11:10:00Z",
   "note": "Full source provenance, rights/freshness evidence, coordinate notes and selected long-form context live here so the runtime catalog remains within ERN's strict production-size budget. Runtime records retain concise audit markers where required.",
   "sources": {
     "auckland-viaduct-harbour": {
@@ -2549,6 +2549,76 @@
       "freshnessEvidence": "Panorama's current official page publishes named Summit, Champagne Express, Mile 1, Goldie plateau, Village and Showoff camera views with current temperatures.",
       "coordinateNote": "Destination/resort-level place reference only; ERN does not claim exact camera coordinates.",
       "checkedAt": "2026-10-06T10:40:00Z"
+    },
+    "spain-sierra-nevada-webcams": {
+      "sourceUrl": "https://sierranevada.es/en/invierno/the-station/live/webcams/",
+      "rightsBasis": "First-party Sierra Nevada webcam page; ERN links externally and does not infer republication rights.",
+      "freshnessEvidence": "Official Sierra Nevada page explicitly labels the webcams as real-time images of slopes and ski lifts.",
+      "coordinateNote": "Destination/resort-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:10:00Z"
+    },
+    "spain-masella-webcams": {
+      "sourceUrl": "https://www.masella.com/en/webcam",
+      "rightsBasis": "First-party Masella webcam page; ERN links externally.",
+      "freshnessEvidence": "Masella's official site currently exposes multiple named webcams and same-day mountain weather information.",
+      "coordinateNote": "Destination/resort-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:10:00Z"
+    },
+    "spain-astun-webcams": {
+      "sourceUrl": "https://astun.com/webcams-astun/",
+      "rightsBasis": "First-party Astún webcam page; ERN links externally.",
+      "freshnessEvidence": "Astún explicitly describes its cameras as direct/live webcams for seeing current resort conditions in real time.",
+      "coordinateNote": "Destination/resort-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:10:00Z"
+    },
+    "spain-candanchu-webcams": {
+      "sourceUrl": "https://www.candanchu.com/webcams/",
+      "rightsBasis": "First-party Candanchú webcam page; ERN links externally.",
+      "freshnessEvidence": "Candanchú labels the camera surface 'en tiempo real' and provides multiple named live camera positions.",
+      "coordinateNote": "Destination/resort-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:10:00Z"
+    },
+    "spain-la-molina-webcams": {
+      "sourceUrl": "https://www.lamolina.cat/es/invierno/servicios/app-la-molina/",
+      "rightsBasis": "Official FGC/La Molina current-information surface; ERN links externally.",
+      "freshnessEvidence": "La Molina states its official app/web information provides real-time resort status and webcam views of piste conditions.",
+      "coordinateNote": "Destination/resort-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:10:00Z"
+    },
+    "spain-vall-de-nuria-webcams": {
+      "sourceUrl": "https://www.valldenuria.cat/es/verano/",
+      "rightsBasis": "Official Vall de Núria/FGC surface; ERN links externally.",
+      "freshnessEvidence": "The official Vall de Núria site exposes Webcams alongside current meteorological and resort information.",
+      "coordinateNote": "Destination/resort-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:10:00Z"
+    },
+    "spain-espot-webcam": {
+      "sourceUrl": "https://www.espotesqui.cat/webcams/",
+      "rightsBasis": "Official Espot/FGC webcam page; ERN links externally.",
+      "freshnessEvidence": "Espot's official webcam page says it opens a window on the resort so visitors can see its state at any moment and provides a 360-degree webcam.",
+      "coordinateNote": "Destination/resort-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:10:00Z"
+    },
+    "spain-port-aine-webcams": {
+      "sourceUrl": "https://www.portaine.cat/es/",
+      "rightsBasis": "Official Port Ainé/FGC resort surface; ERN links externally.",
+      "freshnessEvidence": "Port Ainé's official site exposes Webcams together with current meteorological and resort information.",
+      "coordinateNote": "Destination/resort-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:10:00Z"
+    },
+    "spain-formigal-panticosa-current": {
+      "sourceUrl": "https://www.aramon.com/?camara=1&zona=4",
+      "rightsBasis": "Official Aramón camera/current resort surface; ERN links externally.",
+      "freshnessEvidence": "Aramón's current resort site maintains camera-selectable mountain information for Formigal-Panticosa and current resort conditions.",
+      "coordinateNote": "Destination/resort-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:10:00Z"
+    },
+    "spain-cerler-current": {
+      "sourceUrl": "https://www.aramon.com/?camara=3&zona=5",
+      "rightsBasis": "Official Aramón camera/current resort surface; ERN links externally.",
+      "freshnessEvidence": "Aramón's current resort site maintains camera-selectable mountain information for Cerler and current resort conditions.",
+      "coordinateNote": "Destination/resort-level reference only; ERN does not claim exact camera coordinates.",
+      "checkedAt": "2026-10-06T11:10:00Z"
     }
   },
   "prague-petrin-tower": {

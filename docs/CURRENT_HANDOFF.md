@@ -5100,3 +5100,56 @@ Combined state after Finland + Japan + Canada continuation:
 
 No tracked URL, transfer route, rental term, stay availability or owner-program approval was invented.
 
+### Spain / Pyrenees official-current expansion + diversified travel routing — 2026-10-06
+Continued from canonical main `906b405968b2ef6a9f1649d9c7fcc51dd759d269` after reconciling the already-landed Finland/Japan/Canada work.
+
+#### Search/Explore
+Added **10 official/current Spain mountain destinations**:
+- Sierra Nevada;
+- Masella;
+- Astún;
+- Candanchú;
+- La Molina;
+- Vall de Núria;
+- Espot;
+- Port Ainé;
+- Formigal-Panticosa;
+- Cerler.
+
+All remain HEALTHY + LINK_ONLY + EXTERNAL with Featured/Watch hold. No image or stream reuse permission was inferred.
+
+The strongest provider evidence includes:
+- Sierra Nevada explicitly publishes real-time images of slopes and lifts;
+- Astún and Candanchú explicitly describe real-time/live camera surfaces;
+- Espot publishes an official 360-degree webcam;
+- Masella publishes multiple named current webcams;
+- FGC's La Molina/Vall de Núria/Port Ainé ecosystem exposes webcams alongside current resort information.
+
+Boí Taüll and Vallter remain exact-target research only; they were not promoted without stable public webcam routes.
+
+#### Commercial + Travelpayouts
+Added six owner-link-gated opportunities:
+- Viator Sierra Nevada / Granada;
+- Viator Catalan Pyrenees;
+- QEEQ Spain mountain road-trip;
+- AutoEurope Spain mountain road-trip fallback;
+- Kiwitaxi Spain mountain arrival transfers;
+- Airalo Spain connectivity.
+
+Travelpayouts routing added four clusters:
+- Spain Pyrenees road-trip;
+- Spain mountain arrivals;
+- Spain mountain connectivity;
+- Spain mountain stay research.
+
+The stay cluster remains owner-project-access gated. Rental and transfer clusters require exact pickup/route evidence. Connectivity defaults to one provider.
+
+Combined state after this tranche:
+- supplemental Search/Explore: **339 / 500**;
+- commercial opportunities: **393**;
+- utility-routing clusters: **44**;
+- Watch Earth impact: **0**.
+
+#### Invariants
+Watch Earth remains in-ERN only; LINK_ONLY/EXTERNAL additions stay out of Watch Earth; IMAGE_REFRESH remains natural-schedule only; public Guide/Now Moments remain OFF; no paid ranking, automatic social posting, automatic Travelpayouts placement or link rewriting; hard lean-core ceiling remains 575 KB.
+

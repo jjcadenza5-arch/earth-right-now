@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T10:40:00Z",
+  "generatedAt": "2026-10-06T11:10:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1087,6 +1087,92 @@
       ],
       "activationGate": "PROGRAM_COUNTRY_COVERAGE_AND_EXACT_LINK_REQUIRED",
       "rule": "Optional connectivity after destination selection. Default to one verified eSIM provider for Canada."
+    },
+    {
+      "id": "spain-pyrenees-roadtrip",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "qeeq",
+        "autoeurope",
+        "economybookings"
+      ],
+      "placeIds": [
+        "spain-masella",
+        "spain-astun",
+        "spain-candanchu",
+        "spain-la-molina",
+        "spain-vall-de-nuria",
+        "spain-espot",
+        "spain-port-aine",
+        "spain-formigal-panticosa",
+        "spain-cerler"
+      ],
+      "activationGate": "OWNER_PICKUP_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "After a visitor chooses a mountain region, show at most one verified rental action. Never infer winter tires/chains, cross-border permission or mountain-road suitability."
+    },
+    {
+      "id": "spain-mountain-arrivals",
+      "intent": "transport",
+      "preferredProgramCandidates": [
+        "kiwitaxi",
+        "intui-travel",
+        "gettransfer"
+      ],
+      "placeIds": [
+        "spain-sierra-nevada",
+        "spain-formigal-panticosa",
+        "spain-cerler",
+        "spain-la-molina",
+        "spain-masella"
+      ],
+      "activationGate": "EXACT_AIRPORT_OR_CITY_DESTINATION_PAIR_AND_TRACKED_LINK_REQUIRED",
+      "rule": "Use only for an exact supported transfer route; one transfer action per context."
+    },
+    {
+      "id": "spain-mountain-connectivity",
+      "intent": "connectivity",
+      "preferredProgramCandidates": [
+        "airalo",
+        "saily",
+        "yesim"
+      ],
+      "placeIds": [
+        "spain-sierra-nevada",
+        "spain-masella",
+        "spain-astun",
+        "spain-candanchu",
+        "spain-la-molina",
+        "spain-vall-de-nuria",
+        "spain-espot",
+        "spain-port-aine",
+        "spain-formigal-panticosa",
+        "spain-cerler"
+      ],
+      "activationGate": "PROGRAM_COUNTRY_COVERAGE_AND_EXACT_LINK_REQUIRED",
+      "rule": "Optional connectivity only after destination choice; default to one verified eSIM provider for Spain."
+    },
+    {
+      "id": "spain-mountain-stay-research",
+      "intent": "stay",
+      "preferredProgramCandidates": [
+        "booking-com",
+        "trip-com",
+        "hotels-com"
+      ],
+      "placeIds": [
+        "spain-sierra-nevada",
+        "spain-masella",
+        "spain-astun",
+        "spain-candanchu",
+        "spain-la-molina",
+        "spain-vall-de-nuria",
+        "spain-espot",
+        "spain-port-aine",
+        "spain-formigal-panticosa",
+        "spain-cerler"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
+      "rule": "Accommodation remains research-only until the Earthrightnow project actually has program access. One stay action per mountain cluster by default."
     }
   ],
   "islandTravelClusters": [

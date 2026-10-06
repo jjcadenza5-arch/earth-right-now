@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T10:40:00Z",
+  "generatedAt": "2026-10-06T11:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -6205,6 +6205,125 @@
       "publicInventoryEvidenceUrl": "https://www.airalo.com/canada-esim",
       "publicInventoryEvidence": "Airalo currently offers Canada-specific eSIM plans and explicitly cites Banff/Rockies travel use cases.",
       "nextAction": "Generate one owner-side Canada Airalo tracked link if supported. Default to one connectivity provider in public UI."
+    },
+    {
+      "id": "viator-sierra-nevada-spain",
+      "destination": "Sierra Nevada / Granada, Spain",
+      "placeIds": [
+        "spain-sierra-nevada"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has an official Sierra Nevada real-time source and Viator currently has multiple Sierra Nevada National Park tours from Granada.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Granada/Sierra-Nevada-Day-Trip-from-Granada/d554-121471P5",
+      "publicInventoryEvidence": "Current Viator inventory includes full-day and half-day Sierra Nevada National Park experiences from Granada, including hiking and 4x4 sightseeing.",
+      "nextAction": "Generate one owner-side Sierra Nevada/Granada destination-level tracked link and manually verify it before public activation."
+    },
+    {
+      "id": "viator-catalan-pyrenees",
+      "destination": "Catalan Pyrenees — Vall de Núria / La Molina / Masella",
+      "placeIds": [
+        "spain-vall-de-nuria",
+        "spain-la-molina",
+        "spain-masella",
+        "spain-espot",
+        "spain-port-aine"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has multiple official Catalan Pyrenees current views. Viator currently carries Barcelona-to-Pyrenees products that explicitly include Vall de Núria and a ski-day product serving La Molina + Masella.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/es-ES/tours/Barcelona/Pyrenees-and-Medieval-Towns-Small-Group-Tour-from-Barcelona/d562-3142PYREN",
+      "publicInventoryEvidence": "Current Viator inventory explicitly includes Vall de Núria day tours and La Molina + Masella ski-day products.",
+      "nextAction": "Generate one owner-side Catalan Pyrenees destination-level link only if the resulting inventory remains broad enough; do not imply Espot or Port Ainé itinerary inclusion unless exact products prove it."
+    },
+    {
+      "id": "qeeq-spain-mountain-roadtrip",
+      "destination": "Spain mountain road-trip rental research",
+      "placeIds": [
+        "spain-sierra-nevada",
+        "spain-masella",
+        "spain-astun",
+        "spain-candanchu",
+        "spain-la-molina",
+        "spain-vall-de-nuria",
+        "spain-espot",
+        "spain-port-aine",
+        "spain-formigal-panticosa",
+        "spain-cerler"
+      ],
+      "partnerCandidate": "qeeq",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "QEEQ is already an owner-available rental program and Spain mountain destinations can benefit from independent road-trip planning after destination selection.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify a useful Spain pickup context owner-side and generate one tracked rental link only if destination coverage and terms are clear; never imply winter equipment or mountain-road suitability."
+    },
+    {
+      "id": "autoeurope-spain-mountain-roadtrip",
+      "destination": "Spain mountain road-trip rental fallback",
+      "placeIds": [
+        "spain-sierra-nevada",
+        "spain-masella",
+        "spain-astun",
+        "spain-candanchu",
+        "spain-la-molina",
+        "spain-vall-de-nuria",
+        "spain-espot",
+        "spain-port-aine",
+        "spain-formigal-panticosa",
+        "spain-cerler"
+      ],
+      "partnerCandidate": "autoeurope",
+      "intent": "transport",
+      "priority": "P2_UTILITY_RESERVE",
+      "reason": "AutoEurope provides a differentiated rental comparison fallback for Spain if owner-side coverage is materially better than QEEQ for the chosen pickup city.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Compare owner-side Spain pickup coverage against QEEQ and activate at most one rental option for a trip context."
+    },
+    {
+      "id": "kiwitaxi-spain-mountain-arrivals",
+      "destination": "Spain mountain arrival transfers",
+      "placeIds": [
+        "spain-sierra-nevada",
+        "spain-formigal-panticosa",
+        "spain-cerler",
+        "spain-la-molina",
+        "spain-masella"
+      ],
+      "partnerCandidate": "kiwitaxi",
+      "intent": "transport",
+      "priority": "P2_UTILITY",
+      "reason": "Kiwitaxi is an owner-available transfer program and can be useful for exact airport/city-to-mountain routes if supported.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Verify one exact supported airport/city-to-resort route owner-side before creating a tracked link; do not publish generic Spain transfer claims."
+    },
+    {
+      "id": "airalo-spain-connectivity",
+      "destination": "Spain connectivity",
+      "placeIds": [
+        "spain-sierra-nevada",
+        "spain-masella",
+        "spain-astun",
+        "spain-candanchu",
+        "spain-la-molina",
+        "spain-vall-de-nuria",
+        "spain-espot",
+        "spain-port-aine",
+        "spain-formigal-panticosa",
+        "spain-cerler"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "reason": "Airalo currently exposes Spain-specific eSIM inventory, providing an optional distinct post-discovery utility.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/es-419/spain-esim",
+      "publicInventoryEvidence": "Airalo currently publishes Spain-specific eSIM packages.",
+      "nextAction": "Generate one owner-side Spain-specific tracked link if supported; keep one connectivity option per country context by default."
     }
   ]
 }

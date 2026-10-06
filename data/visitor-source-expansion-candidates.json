@@ -862,6 +862,24 @@
       "evidenceUrls": [
         "https://www.tongatourism.travel/stay/resorts"
       ]
+    },
+    {
+      "id": "spain-fgc-vallter-webcam",
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "FGC Turisme confirms Vallter as one of its six active mountain resorts and its ecosystem uses webcams/current conditions, but this pass did not resolve a sufficiently explicit public webcam route.",
+      "next": "Resolve Vallter's exact first-party webcam URL/current target before Search/Explore promotion.",
+      "evidenceUrls": [
+        "https://www.turismefgc.cat/en/actualitat/noticies/ferrocarrils-caser-test-with-ski-system-safety-slopes/"
+      ]
+    },
+    {
+      "id": "spain-fgc-boi-taull-webcam",
+      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "why": "FGC Turisme confirms Boí Taüll as an active FGC mountain resort, but this pass did not resolve a sufficiently explicit stable first-party webcam URL.",
+      "next": "Resolve the exact Boí Taüll webcam/current-view route before promotion.",
+      "evidenceUrls": [
+        "https://www.turismefgc.cat/en/actualitat/noticies/ferrocarrils-caser-test-with-ski-system-safety-slopes/"
+      ]
     }
   ],
   "guardrails": {
