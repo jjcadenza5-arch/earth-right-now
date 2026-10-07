@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T10:20:00Z",
+  "generatedAt": "2026-10-07T10:40:00Z",
   "purpose": "Make ERN monetization truth explicit: distinguish research coverage from links that can actually earn affiliate commission.",
   "earningRule": "ERN can earn only when a visitor follows a valid tracked affiliate link (or other approved tracked affiliate surface) and completes an eligible transaction under that partner's attribution and commission rules.",
   "states": {
@@ -151,21 +151,21 @@
     "Preserve one-best-provider-per-user-need presentation and commission-neutral Earth ranking."
   ],
   "currentPublicRevenueActive": {
-    "offerCount": 217,
-    "uniquePlaceCount": 212,
+    "offerCount": 222,
+    "uniquePlaceCount": 216,
     "byProgram": {
-      "viator": 188,
+      "viator": 193,
       "klook": 21,
       "tiqets": 5,
       "welcome-pickups": 3
     },
     "uniqueTrackedUrlsByProgram": {
-      "viator": 82,
+      "viator": 87,
       "klook": 10,
       "tiqets": 4,
       "welcome-pickups": 3
     },
     "definition": "Verified current affiliate offers exposed through ERN's public travel-offer layer, backed by an enabled current affiliate partner, and attached to a currently HEALTHY LIVE_VIDEO / LIVE_IMAGE / EXTERNAL_LIVE ERN place across core or supplemental discovery.",
-    "note": "Destination-family batch E added exact/current Viator actions for Da Nang, Mumbai, Jaipur, Varanasi and Chișinău after current 2026 inventory was independently rechecked. The tracked URLs reuse ERN's owner-verified Viator partner identity; manualOpenVerified remains false for these exact URLs. Commercial placement remains downstream from Earth discovery and commission-neutral for ranking."
+    "note": "Destination-family batch F added exact/current Viator actions for Lake Bled, Torres del Paine, St. Moritz, Waikiki/Honolulu and Kaikōura after current 2026 inventory was independently rechecked. The tracked URLs reuse ERN's owner-verified Viator partner identity; manualOpenVerified remains false for these exact URLs. Commercial placement remains downstream from Earth discovery and commission-neutral for ranking."
   }
 }
