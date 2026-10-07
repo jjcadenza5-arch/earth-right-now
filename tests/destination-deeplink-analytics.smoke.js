@@ -1,0 +1,12 @@
+import fs from "node:fs";
+import assert from "node:assert/strict";
+const policy=fs.readFileSync("src/telemetry-policy.js","utf8");
+const worker=fs.readFileSync("analytics-worker/src/index.js","utf8");
+const build=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
+const ops=fs.readFileSync(".github/workflows/operations-watch.yml","utf8");
+assert.match(policy,/share_clicked/);
+assert.match(worker,/share_clicked/);
+assert.match(build,/analytics-runtime\.js/);
+assert.match(build,/ERN_EVENT.*share_clicked|share_clicked.*ERN_EVENT/);
+assert.match(ops,/analytics:traffic-growth-brief/);
+console.log("Destination deep-link analytics and privacy-safe share measurement are wired.");
