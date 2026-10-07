@@ -3961,5 +3961,26 @@
     "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
     "evidence": "Current Viator 2026 Kaikōura inventory was rechecked; the active marine-wildlife day tour includes dolphin swimming in Kaikōura and coastal wildlife viewing. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact product URL was not separately owner-click-verified.",
     "verificationBatch": "2026-10-07-destination-family-batch-f"
+  },
+  {
+    "id": "viator-taitung-east-coast-public",
+    "title": "Explore Taitung & Taiwan's East Coast",
+    "placeId": "taitung-jinzun",
+    "provider": "Viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "viator",
+    "destinationScope": "Taitung / East Coast National Scenic Area",
+    "url": "https://www.viator.com/tours/Taipei/5-Day-Best-of-Taiwan-Tour-from-Taipei-Sun-Moon-Lake-Taroko-Gorge-Kaohsiung-and-Taitung/d5262-30715A?pid=P00322254&mcid=42383&medium=link",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-07T13:40:00Z",
+    "expiresAt": "2026-12-26T13:40:00Z",
+    "verificationEvidenceUrl": "https://www.viator.com/tours/Taipei/5-Day-Best-of-Taiwan-Tour-from-Taipei-Sun-Moon-Lake-Taroko-Gorge-Kaohsiung-and-Taitung/d5262-30715A",
+    "manualOpenVerified": false,
+    "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+    "evidence": "Current Viator 2026 inventory was rechecked: the active 5-day Taiwan tour includes Taitung and the East Coast National Scenic Area, with current bookings and 2026 traveler reviews. The tracked URL reuses ERN's owner-verified Viator identity P00322254 / mcid 42383. It is an optional downstream planning action and does not imply that the itinerary visits Jinzun specifically.",
+    "verificationBatch": "2026-10-07-reality-reconciliation"
   }
 ]
