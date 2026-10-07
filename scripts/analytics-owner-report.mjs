@@ -23,6 +23,7 @@ Window: ${x.windowDays||30} days
 - Zero-result searches: **${eventCount("earth_search_zero")}**
 - Live-source outbound clicks: **${eventCount("external_source_opened")}**
 - Verified commercial outbound clicks: **${eventCount("travel_option_opened")}**
+- Destination shares/copies: **${eventCount("share_clicked")}**
 
 ## Daily visitors
 | Day (UTC) | Visitors | Page views |
