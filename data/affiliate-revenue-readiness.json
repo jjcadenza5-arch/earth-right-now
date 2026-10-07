@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T03:15:00Z",
+  "generatedAt": "2026-10-07T03:26:00Z",
   "purpose": "Make ERN monetization truth explicit: distinguish research coverage from links that can actually earn affiliate commission.",
   "earningRule": "ERN can earn only when a visitor follows a valid tracked affiliate link (or other approved tracked affiliate surface) and completes an eligible transaction under that partner's attribution and commission rules.",
   "states": {
@@ -151,11 +151,11 @@
     "Preserve one-best-provider-per-user-need presentation and commission-neutral Earth ranking."
   ],
   "currentPublicRevenueActive": {
-    "offerCount": 49,
-    "uniquePlaceCount": 44,
+    "offerCount": 53,
+    "uniquePlaceCount": 48,
     "byProgram": {
-      "viator": 24,
-      "klook": 17,
+      "viator": 26,
+      "klook": 19,
       "tiqets": 5,
       "welcome-pickups": 3
     },
@@ -166,6 +166,6 @@
       "welcome-pickups": 3
     },
     "definition": "Verified current affiliate offers exposed through ERN's public travel-offer layer and backed by an enabled, current affiliate partner.",
-    "note": "This is the public revenue-capable offer count, not the commercial research-opportunity count. Eligible commission still depends on click attribution, an eligible purchase and partner rules."
+    "note": "53 verified current affiliate offer placements are revenue-capable across 48 ERN places. Four new placements reuse already owner-verified destination-level links for genuinely same-destination places (Ounasvaara/Rovaniemi, Sentosa/Singapore, Dublin Port/Dublin, Camps Bay/Cape Town); no new tracking URL was invented. Eligible commission still depends on click attribution, an eligible purchase and partner rules."
   }
 }
