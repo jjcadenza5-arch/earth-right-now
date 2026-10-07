@@ -7253,3 +7253,82 @@ Fresh rechecks still do not justify promotion:
 5. Prioritize visitor re-entry, discovery usefulness and traffic growth over raw affiliate-link count.
 6. Keep affiliate-revenue readiness counts synchronized with the computed public-offer layer in the same atomic tranche.
 7. Require matching successful Pages + Operations on the same content SHA before declaring the next canonical production checkpoint.
+
+
+## Five-family Viator activation checkpoint — 2026-10-07 10:33 UTC
+
+Canonical validated content:
+- Content SHA: `dcd67847e2bdd11dd4e17bc8cbe6c601eb82c9ff`.
+- **Deploy ERN to GitHub Pages #2749** (run 37607800478): SUCCESS.
+- **ERN Operations Check #1522** (run 37607800580): SUCCESS.
+- Pages and Operations validated the same final content SHA before this handoff-only commit.
+
+### Revenue expansion
+Activated five additional exact/current Viator destination families for healthy ERN places:
+- Da Nang / My Khe Beach;
+- Mumbai / Maharashtra;
+- Jaipur / Rajasthan;
+- Varanasi / Kashi Vishwanath / Ganges;
+- Chișinău / Moldova.
+
+All five use ERN's existing owner-verified Viator affiliate identity `pid=P00322254 / mcid=42383 / medium=link` on independently rechecked current 2026 destination or category inventory pages. The exact destination URLs remain explicitly `manualOpenVerified: false`; no new owner click-through, booking, price, conversion or partner-account state is claimed.
+
+Public revenue-active state is now:
+- **217 public revenue-active offers**
+- **212 healthy ERN places** with an active offer
+- by program:
+  - Viator: **188**
+  - Klook: **21**
+  - Tiqets: **5**
+  - Welcome Pickups: **3**
+- distinct active tracked URLs:
+  - Viator: **82**
+  - Klook: **10**
+  - Tiqets: **4**
+  - Welcome Pickups: **3**
+- travel-offer registry total: **218** records.
+
+The one-record registry/public-active difference remains intentional: Tokyo/Chidori stays fail-closed while its underlying source remains degraded/off-season.
+
+### Source truth / unresolved research
+No unresolved Earth-source candidate was force-promoted.
+
+The remaining four exact-current source-research gaps stay fail-closed:
+- Montevideo — Pocitos Beach;
+- Montevideo — Plaza Independencia;
+- Soufrière Hills Volcano / Montserrat;
+- Île des Pins — Baie de Kuto / New Caledonia.
+
+Fresh rechecks still support the conservative position:
+- Antel confirms that Antel TV carries cameras around Uruguay, but exact current Pocitos / Plaza Independencia public playback targets remain unresolved.
+- Montserrat Volcano Observatory confirms active 24-hour remote-camera monitoring and current volcano operations, but ERN still lacks reliable public still-image freshness evidence suitable for a current-image claim.
+- Kuto remains a strong destination candidate, but the known image endpoint could not be independently timestamp/freshness-verified through the available retrieval path.
+
+### Catalog / architecture
+- core source records: **328**
+- supplemental Search/Explore records: **415**
+- healthy source records: **739**
+- healthy distinct searchable places: **734**
+- source-maintenance priority records: **20**
+- unresolved exact-current research candidates: **4**
+- no duplicate source IDs were found.
+- Intentional multi-view place families (for example New York Harbor, Tbilisi, Dubrovnik and Malolo Lailai) remain legitimate distinct camera/view records rather than duplicate architecture debt.
+
+The four intentionally degraded core records remain unchanged:
+- `pattaya-city-live`;
+- `takayama-miyagawa-current-image`;
+- `jungfrau-region`;
+- `chidori-sakura`.
+
+### Next autonomous lane
+1. Keep the four unresolved exact-current source gaps fail-closed unless target/currentness evidence materially improves.
+2. Continue high-fit destination-family activation from already-active partner programs only where exact current inventory genuinely matches healthy ERN places.
+3. Prefer one useful action per coherent destination family rather than per-camera affiliate density.
+4. Continue source-health / recency maintenance and architecture deduplication before raw volume growth.
+5. Favor genuinely new countries/territories and provider diversity for future Search/Explore expansion.
+6. Prioritize visitor re-entry, discovery usefulness and traffic growth over raw affiliate-link count.
+7. Keep affiliate-revenue readiness counts synchronized with the computed public-offer layer in the same atomic tranche.
+8. Require matching successful Pages + Operations validation on the same content SHA before declaring the next canonical production checkpoint.
+
+### Protected invariants
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide remains OFF; public Now Moments remains OFF; no fake LIVE, paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; commercial value cannot alter Earth truth/currentness/health/ranking; clicks are not bookings; existing lean/performance ceilings remain enforced.
