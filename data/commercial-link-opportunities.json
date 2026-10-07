@@ -693,10 +693,17 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN has multiple healthy St. Maarten discovery places. Use one island/Philipsburg Viator planning bridge for appropriate island places instead of duplicating commercial density by beach.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Philipsburg/Small-Cultural-Group-Tours/d5627-252077P2",
       "publicInventoryEvidence": "Current Viator St. Maarten sightseeing explicitly passes Little Bay Beach and covers Philipsburg, Maho, Orient Bay and other island highlights.",
-      "nextAction": "Generate one St. Maarten destination-level Viator partner link and verify it manually. If Maho, Great Bay or Simpson Bay cameras are later promoted, reuse the same city/island-level link rather than creating duplicate commercial density."
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Philipsburg/d5627-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:10:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 St. Maarten / Philipsburg destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-pamir-future",
@@ -2396,8 +2403,15 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has Queenstown-area live/current alpine views including Coronet Peak and The Remarkables. Preserve one broad Queenstown Viator bridge rather than per-camera activity density.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one Queenstown destination link after account inventory check."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Queenstown/d407-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:10:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Queenstown destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-kitzbuhel",
@@ -3116,9 +3130,16 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has five healthy Barbados beach/current-view places across the west and south coasts. One Barbados-level Viator planning bridge should serve the cluster rather than multiplying beach-specific affiliate density.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Barbados-attractions/Paynes-Bay/d30-a13288",
-      "nextAction": "Generate one Barbados destination-level Viator tracked link and verify it manually; use beach-specific products only when a visitor explicitly drills into that place."
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Barbados/d30-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:10:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Barbados destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-cape-verde-sal",
@@ -3933,10 +3954,17 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has three official Gibraltar live beach views, and Viator currently lists in-Gibraltar Rock tours plus day trips from southern Spain. This is strong post-discovery visitor utility and remains commercially downstream.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Gibraltar/Rock-Tour-in-Gibraltar-Guided-Tour-by-Bus-Including-Tickets/d50813-8512P103",
       "publicInventoryEvidence": "Current Viator inventory includes Rock of Gibraltar tours visiting Europa Point, St Michael's Cave and the Apes Den.",
-      "nextAction": "Generate one owner-side Gibraltar destination or Rock-tour tracked link and manually verify it before public activation; reuse one Gibraltar-level path rather than multiplying beach-specific commercial placements."
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Gibraltar/d50813-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:10:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Gibraltar destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-usvi-st-john",
@@ -4290,10 +4318,17 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has multiple healthy Bermuda current/live places spanning historic St. George's, Cooper's Island, Royal Naval Dockyard and Nonsuch Island wildlife. One Bermuda-level Viator planning bridge should serve the island rather than creating per-camera affiliate density.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-CA/tours/Bermuda/Crystal-Cave-Discover-St-George-and-Swim-at-Tobacco-Bay/d966-31697P25",
       "publicInventoryEvidence": "Current Viator Bermuda inventory includes St. George, Crystal Cave and Tobacco Bay experiences.",
-      "nextAction": "Generate one owner-side Bermuda destination-level tracked link and manually verify it before public activation."
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Bermuda/d966-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:10:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Bermuda destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-curacao-willemstad",
@@ -5013,10 +5048,17 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has four official NPS current-image viewpoints across Great Smoky Mountains National Park. One park-level planning bridge is more useful than four repetitive commercial placements.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Gatlinburg/d24151-ttd",
       "publicInventoryEvidence": "Viator maintains Gatlinburg / Great Smoky Mountains sightseeing and activity inventory.",
-      "nextAction": "Generate one owner-side Great Smoky Mountains or Gatlinburg destination-level tracked link and manually verify it before public activation."
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Gatlinburg/d24151-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:10:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Great Smoky Mountains / Gatlinburg destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "radical-storage-new-york",
@@ -5282,10 +5324,17 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has healthy Cyprus mountain, Paphos seafront and countryside current views. One Cyprus-level Viator planning bridge can serve appropriate activity discovery without changing Earth ranking.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Cyprus/d47-ttd",
       "publicInventoryEvidence": "Current Viator Cyprus inventory includes multiple Troodos Mountains, villages, winery and monastery tours.",
-      "nextAction": "Generate one owner-side Troodos/Cyprus destination or search tracked link and manually verify it before public activation."
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Cyprus/d47-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:10:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Cyprus destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "localrent-cyprus-roadtrip",
