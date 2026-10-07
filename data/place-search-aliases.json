@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T02:17:45Z",
+  "updatedAt": "2026-10-07T02:20:41Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -399,6 +399,12 @@
       "Murchison Falls Chobe Lodge",
       "Chobe Bush Lounge",
       "Murchison Falls National Park"
+    ],
+    "malawi-majete-wildlife-reserve": [
+      "Majete Wildlife Reserve",
+      "Majete Malawi",
+      "Majete Reserve",
+      "Chikwawa Majete"
     ]
   }
 }

@@ -11739,5 +11739,36 @@
     "rightsBasis": "First-party lodge live-camera page; ERN links externally and does not restream.",
     "freshnessEvidence": "Chobe Safari Lodge currently exposes a dedicated LIVE CAM page with live camera footage from its hidden Bush Lounge.",
     "searchSupplemental": true
+  },
+  {
+    "id": "malawi-majete-wildlife-live",
+    "placeId": "malawi-majete-wildlife-reserve",
+    "title": "Majete Wildlife Reserve — Live Wildlife Cameras",
+    "provider": "PixCams / Majete Wildlife Reserve",
+    "country": "Malawi",
+    "region": "Chikwawa / Southern Region",
+    "categories": [
+      "Wildlife",
+      "National Parks",
+      "Conservation",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://pixcams.com/majete-wildlife.reserve/",
+    "attribution": "PixCams / Majete Wildlife Reserve / African Parks",
+    "checkedAt": "2026-10-07T02:20:41Z",
+    "lastSuccessfulCheck": "2026-10-07T02:20:41Z",
+    "quality": 96,
+    "freshness": 100,
+    "moment": 99,
+    "story": "A network of live wildlife cameras from Majete Wildlife Reserve in Malawi, deployed off-grid with solar power and Starlink satellite connectivity.",
+    "featuredHold": true,
+    "watchHold": true,
+    "rightsBasis": "Public live-camera network operated by PixCams in partnership with Majete Wildlife Reserve; ERN links externally and does not restream.",
+    "freshnessEvidence": "PixCams currently lists five Majete live cameras, and MajeteWatch states six off-grid camera stations transmit continuous 24/7 live video to YouTube via Starlink.",
+    "searchSupplemental": true
   }
 ]
