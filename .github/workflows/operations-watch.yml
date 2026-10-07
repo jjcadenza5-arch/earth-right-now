@@ -26,6 +26,7 @@ on:
       - "data/phase10-*.json"
       - "data/soft-launch-stage1-*.json"
       - "data/analytics-deployment.json"
+      - "data/business-growth-signals.json"
       - "data/soft-launch-analytics-approval.json"
       - "analytics-worker/**"
   workflow_dispatch:
