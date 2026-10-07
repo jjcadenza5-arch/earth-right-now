@@ -24,6 +24,7 @@ must(app.includes('offer=i=>current?TP.offerFor(state.travelOffers,s,i,state.aff
 must(requireExists("src/travel-planning-client.js")&&read("src/travel-planning-client.js").includes("expires<=now"),"Public travel offer gate must enforce explicit expiry");
 must(read("src/travel-planning-client.js").includes("partnerCurrent")&&read("src/travel-planning-client.js").includes("sourceEligible"),"Public travel offer gate must enforce active-partner and source-eligibility boundaries");
 must(app.includes("function watchEligible(")&&app.includes("sources.filter(watchEligible)"),"Watch Earth must exclude PREVIEW-only sources from the curated Top 20");
+must(app.includes('(providers.get(r)||0)>=2||(countries.get(c)||0)>=2')&&app.includes('countries.set(c,(countries.get(c)||0)+1)'),"Visitor Watch Earth opening source-image pass lost provider/country diversity limits");
 must(app.includes("function currentInside(s)")&&app.includes("sorted.filter(currentInside)")&&app.includes('currentTruthClaim(s)&&watchExperienceEligible(s)'),"Visitor Play here/Watch Earth paths lost the current-proven inside boundary");
 must(app.includes("function provenWatchHere(s)")&&app.includes("sorted.filter(currentInside)")&&app.includes("state.watch.find(s=>provenWatchHere(s)&&s.playback===\"EMBED\")"),"Watch Earth lost proven in-ERN preference");
 must(app.includes("function atlasEligible(s)")&&app.includes("state.sources.filter(atlasEligible)"),"Living Atlas lost broader truthful mapped-catalog coverage");
