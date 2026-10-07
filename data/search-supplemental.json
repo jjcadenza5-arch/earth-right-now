@@ -11922,7 +11922,7 @@
     "watchHold": true,
     "searchSupplemental": true,
     "rightsBasis": "Public community-run live webcam; ERN links externally and does not restream or imply ownership.",
-    "freshnessEvidence": "The current Da Nang Surf Cam site identifies itself as a free community-run live webcam for My Khe Beach and exposes a live-stream route plus current surf conditions."
+    "freshnessEvidence": "Current Da Nang Surf Cam page identifies the service as a free community-run live webcam for My Khe Beach, exposes its live-stream route, and publishes current surf-condition context."
   },
   {
     "id": "malaysia-kuala-lumpur-klccc-live",
@@ -11953,6 +11953,6 @@
     "watchHold": true,
     "searchSupplemental": true,
     "rightsBasis": "Official DBKL/KLCCC public live CCTV service; ERN links externally and does not rehost footage.",
-    "freshnessEvidence": "KLCCC's current official portal explicitly offers 'Watch Live CCTV Feed' and describes live public CCTV streams from key Kuala Lumpur roads and intersections in real time."
+    "freshnessEvidence": "Current official KLCCC portal explicitly offers 'Watch Live CCTV Feed' with real-time public road/intersection streams; DBKL's official KLCCC service page separately lists both CCTV image and Live CCTV display."
   }
 ]
