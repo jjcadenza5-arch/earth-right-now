@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T04:12:43Z",
+  "generatedAt": "2026-10-07T04:16:38Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -3495,10 +3495,11 @@
       "provider": "Antel TV",
       "sourcePage": "https://www.antel.com.uy/web/antel-tv",
       "exactTargetType": "OFFICIAL_TELECOM_CAMERA_PLATFORM",
-      "evidence": "Antel officially states Antel TV includes cameras located at different points around Uruguay. Public AntelTV camera listings historically include Pocitos Beach; exact current external playback still needs verification.",
+      "evidence": "Antel's current platform confirms cameras across Uruguay and its official user guide historically shows Playa Pocitos Panorámica. However, a 2026 third-party camera check reported a Pocitos webcam offline in July, so ERN requires a fresh exact AntelTV playback confirmation before promotion.",
       "priority": "P1",
       "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Verify that AntelTV exposes the Pocitos Beach camera without an Uruguay-only/login restriction before promotion."
+      "humanCheckHint": "Verify that AntelTV exposes the Pocitos Beach camera without an Uruguay-only/login restriction before promotion.",
+      "verifiedAt": "2026-10-07T04:16:38Z"
     },
     {
       "id": "uruguay-montevideo-plaza-independencia",
@@ -3508,10 +3509,11 @@
       "provider": "Antel TV",
       "sourcePage": "https://www.antel.com.uy/web/antel-tv",
       "exactTargetType": "OFFICIAL_TELECOM_CAMERA_PLATFORM",
-      "evidence": "Antel officially operates cameras around Uruguay; Plaza Independencia appears in public AntelTV camera listings. External-access playback must be confirmed before ERN promotion.",
+      "evidence": "Antel's current platform confirms public camera content, and current external Montevideo camera indexes show active AntelTV cameras near Plaza Independencia such as Teatro Solís. ERN has not verified an exact current Plaza Independencia camera target, so this candidate remains unresolved rather than being substituted with a nearby view.",
       "priority": "P2",
       "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Confirm current AntelTV Plaza Independencia camera accessibility and visible updating."
+      "humanCheckHint": "Confirm current AntelTV Plaza Independencia camera accessibility and visible updating.",
+      "verifiedAt": "2026-10-07T04:16:38Z"
     },
     {
       "id": "uruguay-montevideo-mercado-del-puerto",
@@ -4034,8 +4036,8 @@
       "sourcePage": "https://www.mvo.ms/monitoring/observations/",
       "priority": "P1",
       "state": "CURRENT_IMAGE_VERIFICATION_REQUIRED",
-      "evidence": "MVO says remote cameras monitor Soufrière Hills 24 hours a day and continuously record video; public page shows still-image pairs from monitoring cameras, but ERN has not yet verified that the displayed public stills are current enough for promotion.",
-      "verifiedAt": "2026-10-05T15:30:00Z",
+      "evidence": "MVO's current site confirms remote cameras continuously monitor Soufrière Hills 24 hours a day and its observatory site remains active in 2026. A current site description also notes live remote video and thermal camera views, but ERN still lacks a reliable public freshness timestamp or stable current-image endpoint for promotion.",
+      "verifiedAt": "2026-10-07T04:16:38Z",
       "verification": "Research-only until public current-image timestamp/refresh behavior is independently confirmed."
     },
     {
@@ -4047,8 +4049,8 @@
       "sourcePage": "https://idp.st.securical.nc/last.jpg",
       "priority": "P1",
       "state": "CURRENT_IMAGE_VERIFICATION_REQUIRED",
-      "evidence": "A current destination-information page identifies a webcam image distributed from the official Île des Pins tourism office at Kuto; Sud Tourisme confirms the official tourism office location. ERN still needs direct freshness/timestamp verification before promotion.",
-      "verifiedAt": "2026-10-05T15:30:00Z",
+      "evidence": "New Caledonia Tourism currently maintains Kuto Beach as an official 2026 destination, and a current local destination guide still identifies the tourism-office webcam endpoint at idp.st.securical.nc/last.jpg. ERN cannot verify the direct image's current timestamp/freshness through automated retrieval, so promotion remains blocked.",
+      "verifiedAt": "2026-10-07T04:16:38Z",
       "verification": "Research-only; do not infer currentness solely from a last.jpg endpoint."
     },
     {
@@ -4423,10 +4425,10 @@
       "provider": "Mauritius Tourism Promotion Authority / Mauritius Now",
       "sourcePage": "https://mauritiusnow.com/things-to-do-in-mauritius/",
       "priority": "P1_NEW_COUNTRY",
-      "state": "EXACT_CAMERA_ROUTE_AND_TARGET_VERIFICATION_REQUIRED",
-      "evidence": "The current official Mauritius Now tourism site explicitly says 'Our 13 webcams in Mauritius' and 'See Mauritius live'. Its current Web CAM/Watch Now handoff resolves to an outdated or unavailable route in automated retrieval, so ERN has not promoted an island-level or named camera without resolving the live targets.",
-      "verifiedAt": "2026-10-05T18:35:00Z",
-      "verification": "Research-only. Official webcam network is confirmed, but exact named current targets and durable routes must be independently resolved before promotion.",
+      "state": "SUPERSEDED_BY_CURRENT_BROKEN_OFFICIAL_ROUTE",
+      "evidence": "Mauritius Now currently states 'Our 13 webcams in Mauritius' and 'See Mauritius live', but its current Watch Now link resolves to /webcams-mauritius/ and returns 404. This is truthful negative evidence, not a live-source promotion.",
+      "verifiedAt": "2026-10-07T04:16:38Z",
+      "verification": "Official tourism still advertises 13 webcams, but the current Web CAM / Watch Now target returns HTTP 404. Keep out of public discovery until the official route is repaired or a current named target is independently resolved.",
       "nextAction": "Resolve the 13 current camera targets from the official MTPA surface, verify individual freshness and retain LINK_ONLY unless explicit embedding permission is documented."
     },
     {
@@ -6638,10 +6640,10 @@
       "provider": "Shenton Safaris",
       "sourcePage": "https://www.shentonsafaris.com/",
       "priority": "P1_NEW_COUNTRY_RESEARCH",
-      "state": "EXACT_CURRENT_WEBCAM_ROUTE_VERIFICATION_REQUIRED",
-      "evidence": "Shenton Safaris states it launched Zambia's first live-streaming webcams at its Hippo and Mwamba Last Waterhole hides and current site/blog material still refers to the camps and waterhole wildlife; exact durable current public webcam route is not yet resolved.",
-      "verifiedAt": "2026-10-06T05:45:00Z",
-      "verification": "Research-only. Do not promote until an exact current public live route is resolved and current playback/freshness is independently verified.",
+      "state": "SUPERSEDED_BY_CURRENT_OFFLINE_EVIDENCE",
+      "evidence": "Shenton Safaris remains active in 2026 and current site content still features Kaingo and Mwamba. Skyline's Mwamba Last Waterhole and Kaingo Hippo Hide camera pages are both currently marked OFFLINE, so ERN must not promote them as live.",
+      "verifiedAt": "2026-10-07T04:16:38Z",
+      "verification": "Known Shenton / Skyline wildlife cameras are currently offline. Revisit if a durable public live route returns.",
       "nextAction": "Resolve the current Shenton Safaris live-webcam route for Mwamba Last Waterhole and/or Hippo Hide, then promote one or two distinct South Luangwa places only if the feeds are currently live."
     },
     {

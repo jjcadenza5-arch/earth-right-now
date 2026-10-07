@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T06:40:00Z",
+  "generatedAt": "2026-10-07T04:16:38Z",
   "healthyDistinctBaseline": 562,
   "strategy": "Post-250 maintenance: repair or replace degraded sources only when they add unique visitor value; do not inflate count mechanically.",
   "items": [
@@ -135,6 +135,94 @@
       "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_USGS_PROVIDER_EVIDENCE_CONFIRMS_ACTIVE_15_MINUTE_CAMERA",
       "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
       "blocks578Baseline": false
+    },
+    {
+      "id": "karakol-ski-base",
+      "placeId": "karakol-ski-base",
+      "title": "Karakol Ski Base — Issyk-Kul",
+      "country": "Kyrgyzstan",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_PROVIDER_PAGE_CURRENTLY_CONFIRMED_ACTIVE",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocksBaseline": false
+    },
+    {
+      "id": "kyrgyz-razzakov-center-live",
+      "placeId": "kyrgyz-razzakov-center",
+      "title": "Razzakov — City Center",
+      "country": "Kyrgyzstan",
+      "health": "HEALTHY",
+      "truth": "EXTERNAL_LIVE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_PROVIDER_PAGE_CURRENTLY_CONFIRMED_ACTIVE",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocksBaseline": false
+    },
+    {
+      "id": "nicaragua-cerro-negro-current-image",
+      "placeId": "nicaragua-cerro-negro",
+      "title": "Cerro Negro Volcano — Nicaragua",
+      "country": "Nicaragua",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_INETER_REAL_TIME_WEBCAM_NETWORK_CURRENTLY_CONFIRMED_ACTIVE",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocksBaseline": false
+    },
+    {
+      "id": "nicaragua-concepcion-current-image",
+      "placeId": "nicaragua-concepcion-volcano",
+      "title": "Concepción Volcano — Ometepe",
+      "country": "Nicaragua",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_INETER_REAL_TIME_WEBCAM_NETWORK_CURRENTLY_CONFIRMED_ACTIVE",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocksBaseline": false
+    },
+    {
+      "id": "nicaragua-san-cristobal-current-image",
+      "placeId": "nicaragua-san-cristobal",
+      "title": "San Cristóbal Volcano — Nicaragua",
+      "country": "Nicaragua",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_INETER_REAL_TIME_WEBCAM_NETWORK_CURRENTLY_CONFIRMED_ACTIVE",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocksBaseline": false
+    },
+    {
+      "id": "boulders-penguins-sanparks",
+      "placeId": "boulders-beach",
+      "title": "Boulders Beach — African Penguins",
+      "country": "South Africa",
+      "health": "HEALTHY",
+      "truth": "EXTERNAL_LIVE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_ACCESS_BLOCK_BUT_SANPARKS_CURRENT_WEBCAM_PAGE_CONFIRMED_ACTIVE",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocksBaseline": false
+    },
+    {
+      "id": "glenelg-sa",
+      "placeId": "glenelg-sa",
+      "title": "Glenelg Beach — South Australia",
+      "country": "Australia",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_ACCESS_BLOCK_BUT_SOUTH_AUSTRALIA_GOVERNMENT_CURRENT_WEBCAM_PAGE_CONFIRMED_ACTIVE",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocksBaseline": false
+    },
+    {
+      "id": "malta-valletta-panorama-live",
+      "placeId": "malta-valletta-panorama",
+      "title": "Valletta — City Panorama",
+      "country": "Malta",
+      "health": "HEALTHY",
+      "truth": "EXTERNAL_LIVE",
+      "failureReason": "AUTOMATED_HEALTH_REPEATED_ACCESS_BLOCK_BUT_OFFICIAL_VISITMALTA_LIVE_CAM_GATEWAY_CURRENTLY_CONFIRMED",
+      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
+      "blocksBaseline": false
     }
   ]
 }
