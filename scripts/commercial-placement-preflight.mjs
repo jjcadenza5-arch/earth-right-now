@@ -3,7 +3,7 @@ import {affiliatePartner,activeAffiliatePartner} from "../src/affiliate-partners
 import {currentTravelOffer} from "../src/travel-offer-verification.js";
 
 const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
-const partners=read("data/affiliate-partners.json"),offers=read("data/travel-offers.json"),platforms=read("data/affiliate-platform-research.json"),opportunities=read("data/commercial-link-opportunities.json"),business=read("data/business-readiness.json"),activation=read("data/affiliate-activation.json"),revenueReadiness=read("data/affiliate-revenue-readiness.json"),index=fs.readFileSync("index.html","utf8"),destinationBuilder=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
+const partners=read("data/affiliate-partners.json"),offers=read("data/travel-offers.json"),coreSources=read("data/sources.json"),supplementalSources=read("data/search-supplemental.json"),platforms=read("data/affiliate-platform-research.json"),opportunities=read("data/commercial-link-opportunities.json"),business=read("data/business-readiness.json"),activation=read("data/affiliate-activation.json"),revenueReadiness=read("data/affiliate-revenue-readiness.json"),index=fs.readFileSync("index.html","utf8"),destinationBuilder=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
 const now=Date.now(),fail=[],warn=[],partnerMap=new Map();
 for(const raw of partners){
   const p=affiliatePartner(raw);
@@ -55,10 +55,12 @@ for(const [program,count] of Object.entries(verifiedTpByProgram)){
 }
 const activationViator=(activation?.waves||[]).flatMap(w=>w?.programs||[]).find(p=>p?.id==="viator");
 if(revenueReadiness?.currentVerifiedEvidence?.viator?.relationshipActive!==(activationViator?.state==="ACTIVE_TRACKED_LINK_CREATED"))fail.push("affiliate revenue readiness Viator state drift");
-const publicRevenueActiveOffers=offers.filter(o=>o?.affiliate&&currentTravelOffer(o,{now})&&partnerMap.get(o.partnerId)?.active);
+const sourceByPlaceId=new Map([...coreSources,...supplementalSources].map(s=>[String(s?.placeId||s?.id||""),s]).filter(([id])=>Boolean(id)));
+const sourceRevenueEligible=s=>Boolean(s)&&s.health==="HEALTHY"&&["LIVE_VIDEO","LIVE_IMAGE","EXTERNAL_LIVE"].includes(s.truth);
+const publicRevenueActiveOffers=offers.filter(o=>o?.affiliate&&currentTravelOffer(o,{now})&&partnerMap.get(o.partnerId)?.active&&sourceRevenueEligible(sourceByPlaceId.get(String(o.placeId||""))));
 const publicRevenueActiveByProgram={};
 for(const o of publicRevenueActiveOffers)publicRevenueActiveByProgram[o.partnerId]=(publicRevenueActiveByProgram[o.partnerId]||0)+1;
-if(revenueReadiness?.currentPublicRevenueActive?.offerCount!==publicRevenueActiveOffers.length)fail.push("affiliate revenue readiness public-active offer count drift");
+if(revenueReadiness?.currentPublicRevenueActive?.offerCount!==publicRevenueActiveOffers.length)fail.push("affiliate revenue readiness public-active source-eligible offer count drift");
 for(const [program,count] of Object.entries(publicRevenueActiveByProgram)){
   if(revenueReadiness?.currentPublicRevenueActive?.byProgram?.[program]!==count)fail.push("affiliate revenue readiness public-active program count drift: "+program);
 }

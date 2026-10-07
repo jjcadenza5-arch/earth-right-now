@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T03:26:00Z",
+  "generatedAt": "2026-10-07T03:36:00Z",
   "purpose": "Make ERN monetization truth explicit: distinguish research coverage from links that can actually earn affiliate commission.",
   "earningRule": "ERN can earn only when a visitor follows a valid tracked affiliate link (or other approved tracked affiliate surface) and completes an eligible transaction under that partner's attribution and commission rules.",
   "states": {
@@ -151,11 +151,11 @@
     "Preserve one-best-provider-per-user-need presentation and commission-neutral Earth ranking."
   ],
   "currentPublicRevenueActive": {
-    "offerCount": 53,
-    "uniquePlaceCount": 48,
+    "offerCount": 52,
+    "uniquePlaceCount": 47,
     "byProgram": {
       "viator": 26,
-      "klook": 19,
+      "klook": 18,
       "tiqets": 5,
       "welcome-pickups": 3
     },
@@ -165,7 +165,7 @@
       "tiqets": 4,
       "welcome-pickups": 3
     },
-    "definition": "Verified current affiliate offers exposed through ERN's public travel-offer layer and backed by an enabled, current affiliate partner.",
-    "note": "53 verified current affiliate offer placements are revenue-capable across 48 ERN places. Four new placements reuse already owner-verified destination-level links for genuinely same-destination places (Ounasvaara/Rovaniemi, Sentosa/Singapore, Dublin Port/Dublin, Camps Bay/Cape Town); no new tracking URL was invented. Eligible commission still depends on click attribution, an eligible purchase and partner rules."
+    "definition": "Verified current affiliate offers exposed through ERN's public travel-offer layer, backed by an enabled current affiliate partner, and attached to a currently HEALTHY LIVE_VIDEO / LIVE_IMAGE / EXTERNAL_LIVE ERN place across core or supplemental discovery.",
+    "note": "52 affiliate placements across 47 currently healthy ERN places are revenue-eligible today. The 53rd verified offer (Tokyo/Chidori) remains fail-closed while its Earth source is degraded/off-season. Four recent placements reuse already owner-verified destination-level links for genuinely same-destination places; no tracking URL was invented."
   }
 }
