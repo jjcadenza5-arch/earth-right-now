@@ -122,7 +122,8 @@
     "analytics:distribution-observation": "node scripts/analytics-distribution-observation.mjs",
     "analytics:search-gap-triage": "node scripts/analytics-search-gap-triage.mjs",
     "sources:searchable-health": "node scripts/searchable-source-health.mjs",
-    "sources:searchable-health-summary": "node scripts/searchable-source-health-summary.mjs"
+    "sources:searchable-health-summary": "node scripts/searchable-source-health-summary.mjs",
+    "analytics:owner-dashboard": "node scripts/analytics-owner-dashboard.mjs"
   },
   "engines": {
     "node": ">=20"

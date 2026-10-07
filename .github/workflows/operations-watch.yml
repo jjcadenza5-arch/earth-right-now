@@ -135,6 +135,8 @@ jobs:
           npm --silent run analytics:summary -- 30 > ern-ops/analytics-private.json
           npm --silent run analytics:redact -- ern-ops/analytics-private.json | tee ern-ops/analytics-summary.json
           npm --silent run analytics:owner-report -- ern-ops/analytics-private.json ern-ops/analytics-owner-report.md
+          npm --silent run analytics:owner-dashboard -- ern-ops/analytics-private.json ern-ops/analytics-owner-dashboard.html
+          cat ern-ops/analytics-owner-report.md >> "$GITHUB_STEP_SUMMARY"
           npm --silent run analytics:distribution-observation -- ern-ops/analytics-private.json data/organic-distribution-events.json | tee ern-ops/organic-distribution-observation.json
           npm --silent run analytics:search-gap-triage -- ern-ops/analytics-private.json | tee ern-ops/search-gap-triage.json
       - name: Compare operations trend

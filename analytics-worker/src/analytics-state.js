@@ -78,9 +78,16 @@ export class AnalyticsState{
     const uniqueVisitors=Number([...this.sql.exec("SELECT COUNT(*) AS n FROM visitors WHERE last_seen>=?",since)][0]?.n||0);
     const newVisitors=Number([...this.sql.exec("SELECT COUNT(*) AS n FROM visitors WHERE first_seen>=?",since)][0]?.n||0);
     const dailyUnique=Number([...this.sql.exec("SELECT COUNT(*) AS n FROM daily_visitors WHERE day>=?",sinceDay)][0]?.n||0);
+    const dailyVisitorRows=[...this.sql.exec("SELECT day,COUNT(*) AS visitors FROM daily_visitors WHERE day>=? GROUP BY day ORDER BY day ASC",sinceDay)];
+    const dailyPageRows=[...this.sql.exec("SELECT day,SUM(count) AS pageViews FROM counters WHERE dimension='event' AND value='page_view' AND day>=? GROUP BY day ORDER BY day ASC",sinceDay)];
+    const byDay=new Map();
+    for(let i=0;i<n;i++){const day=dayOf(since+i*86400000);byDay.set(day,{day,visitors:0,pageViews:0})}
+    for(const r of dailyVisitorRows){if(byDay.has(r.day))byDay.get(r.day).visitors=Number(r.visitors)||0}
+    for(const r of dailyPageRows){if(byDay.has(r.day))byDay.get(r.day).pageViews=Number(r.pageViews)||0}
     return{
       ok:true,generatedAt:new Date(now).toISOString(),windowDays:n,
       visitors:{approxUnique:uniqueVisitors,new:newVisitors,returningApprox:Math.max(0,uniqueVisitors-newVisitors),dailyUniqueSum:dailyUnique,pageViews},
+      daily:[...byDay.values()],
       devices:this.top("device",sinceDay,8),countries:this.top("country",sinceDay,30),regions:this.top("region",sinceDay,30),
       referrers:this.top("referrer",sinceDay,20),places:this.top("place",sinceDay,30),sources:this.top("source",sinceDay,30),
       searches:this.top("search",sinceDay,50),searchGaps:this.top("search_zero",sinceDay,50),
