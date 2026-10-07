@@ -1,9 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T02:39:09Z",
+  "generatedAt": "2026-10-06T06:40:00Z",
   "healthyDistinctBaseline": 562,
   "strategy": "Post-250 maintenance: repair or replace degraded sources only when they add unique visitor value; do not inflate count mechanically.",
   "items": [
+    {
+      "id": "pattaya-city-live",
+      "placeId": "pattaya-city-live",
+      "title": "Pattaya Beach — City Live View",
+      "country": "Thailand",
+      "health": "DEGRADED",
+      "truth": "EXTERNAL_LIVE",
+      "failureReason": "OFFICIAL_COLLECTION_WEBCAMS_OFFLINE_PUBLIC_LIVE_VIEW_ZERO_CAMERAS",
+      "action": "SEARCH_FOR_REPLACEMENT_OR_WAIT_FOR_OFFICIAL_RECOVERY",
+      "blocks250Milestone": false
+    },
     {
       "id": "takayama-miyagawa-current-image",
       "placeId": "takayama-miyagawa",
