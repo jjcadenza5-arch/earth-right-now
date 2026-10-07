@@ -7833,3 +7833,69 @@ A substantial ERN checkpoint is not complete merely because code merged or Pages
 3. Keep public counts and handoff claims derived from the same unified catalog.
 4. Verify downstream planning actions on high-value destinations only when they add genuine visitor utility.
 5. Do not resume raw broad source expansion until the visible-product catch-up is substantially complete.
+
+
+## Public-product + traffic reconciliation checkpoint — 2026-10-07 14:33 UTC
+
+### Canonical production state
+- Canonical production content SHA: `d4c0e1a72ea6cf24fcd3fc7c65497d06d6c21141`.
+- **Deploy ERN to GitHub Pages #2795**: SUCCESS.
+- **ERN Operations Check #1564**: SUCCESS.
+- **ERN JavaScript Syntax Check #1117**: SUCCESS.
+- This checkpoint follows the Oct. 7 Reality Reconciliation and validates the visitor-facing Watch Earth diversity logic on the live runtime.
+
+### What is now reconciled on the public-product side
+- Supplemental Search/Explore discovery is wired into the public discovery state rather than remaining hidden until a search is typed.
+- Public discovery breadth is based on the unified catalog instead of the old core-only subset.
+- Watch Earth keeps its stricter truth/currentness/playback boundary but now prioritizes more real source imagery in the opening viewport and guards opening provider/country diversity.
+- Taitung Jinzun remains an ERN quality benchmark and has a current downstream Viator Taitung/East Coast planning action. The commercial action is optional and cannot influence editorial ranking.
+- Living Atlas continues to pin only coordinate-supported places, while the beyond-pins layer exposes truthful unmapped discovery instead of pretending exact map coordinates.
+- Performance ceilings remain unchanged; reconciliation work was trimmed to fit the existing lean budget.
+
+### Traffic / analytics state on the same operating checkpoint
+Latest private aggregate 30-day evidence from Operations #1564:
+- approximate unique visitors: **53**
+- page views: **330**
+- Facebook-family referral views: **32**
+- Google-family referral views: **18**
+- Earth searches: **83**
+- zero-result searches: **36**
+- place/window opens: **284**
+- external-source opens: **79**
+- verified travel-option opens: **8**
+- destination share/copy events: **0**
+
+Current strongest aggregate search demand:
+1. `taitung jinzun` — 5
+2. `arches` — 2
+3. `chicago` — 2
+4. `new` — 2
+5. `new york` — 2
+
+Current strongest aggregate destination opens:
+1. `kyoto-hanamikoji` — 33
+2. `rovaniemi-santa-claus-village` — 32
+3. `taitung-jinzun` — 20
+4. `auckland-viaduct-harbour` — 18
+5. `kyoto-kiyomizuzaka` — 16
+
+Interpretation boundary:
+- These are aggregate privacy-preserving counters, not session histories.
+- Referral movement does not prove channel causation.
+- A travel-option click does not prove booking, purchase, conversion, commission or revenue.
+- Traffic may guide research priority but may never override source truth, rights, currentness, health or editorial ranking.
+
+### Current reality
+- Unified production discovery universe: **760 source records**.
+- Healthy searchable distinct places: **751**.
+- The catalog is no longer the primary bottleneck.
+- The present bottlenecks are visitor-facing quality, genuine search-gap reduction, organic discovery, repeat exploration, sharing and qualified planning intent.
+
+### Catch-up lane from here
+1. Keep public product and traffic evidence synchronized at each substantial checkpoint.
+2. Resolve genuine repeated search gaps from aggregate demand only after source truth/currentness/rights pass independently.
+3. Continue Watch Earth first-impression improvement with real current visuals and provider/geographic diversity.
+4. Improve destination-entry and related-place journeys so referral visitors explore more than one place.
+5. Preserve Jinzun as a benchmark for live quality + useful downstream planning, without pinning commercial value to editorial prominence.
+6. Do not resume raw catalog-count expansion as a primary goal; expand only for real geographic/provider/visitor utility gaps.
+7. Continue traffic-gated partner monitoring event-driven only; do not invent thresholds or force applications.
