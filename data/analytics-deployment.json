@@ -39,5 +39,15 @@
     "commission",
     "revenue"
   ],
-  "state": "ACTIVE_VERIFIED"
+  "state": "ACTIVE_VERIFIED",
+  "metricSemanticsVersion": 2,
+  "metricSemanticsUpdatedAt": "2026-10-07T14:55:03Z",
+  "metricSemanticsDeploymentRunId": 37640665295,
+  "metricSemantics": {
+    "destinationOpens": "window_opened/place_opened only",
+    "externalSourceOpens": "separate external_source dimension",
+    "commercialOpens": "separate commercial_place/offer dimensions",
+    "destinationShares": "separate share_place dimension",
+    "historicalBoundary": "legacy place counters before v2 may mix multiple placeId-bearing event types; new clean place rankings start from v2 deployment"
+  }
 }
