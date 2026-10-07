@@ -6754,3 +6754,82 @@ The unresolved exact-current research queue remains:
 
 ### Protected invariants
 Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
+
+
+## Third exact Viator activation checkpoint — 2026-10-07 06:27 UTC
+
+Canonical validated content:
+- Content SHA: `e2a30f6b2947f9a3b057de587d63b740b35bcca6`.
+- **Deploy ERN to GitHub Pages #2719** (run 37581324208): SUCCESS.
+- **ERN Operations Check #1496** (run 37581324379): SUCCESS.
+- Pages and Operations validated the same content SHA before this handoff-only commit.
+
+### Revenue activation
+Activated a third exact-destination Viator batch across **7 destination families / 15 healthy ERN places**:
+- Lucerne / Lake Lucerne — 1 place;
+- Cancún — 1;
+- Yellowstone National Park — 5;
+- Mykonos — 1;
+- Ushuaia / Tierra del Fuego — 1;
+- Longyearbyen / Svalbard — 1;
+- Kruger National Park — 5.
+
+Each destination route was independently rechecked against current Viator 2026 inventory and uses ERN's existing owner-verified Viator affiliate identity (`pid=P00322254`, `mcid=42383`, `medium=link`).
+
+Verification truth is explicit:
+- `exactDestinationPageVerified: true`;
+- affiliate identity is reused from the existing owner-verified ERN Viator relationship;
+- `manualOpenVerified: false` for these newly constructed exact destination URLs;
+- no separate owner click-through is falsely claimed.
+
+### Public revenue-active state
+The release guard and an independent reconciliation now agree exactly:
+- **168 public revenue-active offers**
+- **163 healthy ERN places**
+- by program:
+  - Viator: **139**
+  - Klook: **21**
+  - Tiqets: **5**
+  - Welcome Pickups: **3**
+- distinct active tracked URLs:
+  - Viator: **46**
+  - Klook: **10**
+  - Tiqets: **4**
+  - Welcome Pickups: **3**
+
+The travel-offer registry contains **169** verified records total; the Klook Tokyo/Chidori record remains fail-closed from public revenue-active counts because the underlying Earth source is currently degraded/off-season.
+
+### Release-guard repair
+The first version of this tranche, content SHA `d799593a4194d61f2906af6c7cca20da3aedbf37`, was correctly blocked by **Pages #2718**.
+- Root cause: the newly added offer verification timestamps were several minutes ahead of the workflow clock, so `currentTravelOffer` correctly rejected them as future-dated.
+- The apparent public-active count drift was therefore a verification-currentness issue, not a source-truth or affiliate-link-identity failure.
+- Timestamps were corrected to a non-future verified time without weakening any guard.
+- Replacement SHA `e2a30f6...` passed the release smoke suite, commercial preflight, Phase 10 audits, subsequent release guards, deployment and Operations.
+
+### Source-truth state
+No unresolved exact-current source was promoted merely to increase catalog size.
+The unresolved queue remains:
+- Montevideo / Pocitos Beach;
+- Montevideo / Plaza Independencia;
+- Soufrière Hills / Montserrat;
+- Île des Pins / Kuto, New Caledonia.
+
+Fresh rechecks still do not provide strong enough exact playback/freshness evidence for safe promotion.
+
+The four degraded/fail-closed core records remain unchanged:
+- `pattaya-city-live`;
+- `takayama-miyagawa-current-image`;
+- `jungfrau-region`;
+- `chidori-sakura`.
+
+### Next autonomous lane
+1. Continue exact revenue activation from already-active programs where destination scope and current inventory are genuinely matched.
+2. Prefer one useful destination-level action across a place cluster instead of per-camera affiliate density.
+3. Continue trustworthy live/current geography expansion, prioritizing new countries/providers over duplicate representations.
+4. Keep the four unresolved exact-current candidates fail-closed unless fresh evidence resolves the exact target/currentness requirement.
+5. Continue source-health and architecture maintenance before volume for its own sake.
+6. Never future-date verification evidence; release guards remain authoritative.
+7. Require matching successful Pages + Operations on the same content SHA before the next canonical production checkpoint.
+
+### Protected invariants
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
