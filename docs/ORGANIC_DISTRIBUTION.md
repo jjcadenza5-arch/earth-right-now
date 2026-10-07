@@ -41,3 +41,10 @@ Destination pages also expose a native share/copy-link action and, when eligible
 ERN publishes `/updates.xml` as a bounded Atom feed containing up to 50 recently updated, crawlable destination pages. It is advertised from `robots.txt` as an additional sitemap-compatible discovery surface and from the homepage with an Atom alternate link.
 
 The feed is generated from the same source-derived destination `lastmod` evidence as the main sitemap. It is not a fake news stream, does not manufacture freshness, and never includes a destination merely because it has commercial value.
+
+
+## IndexNow freshness notifications
+
+After a successful production deploy, ERN submits a bounded set of recently updated crawlable URLs to IndexNow. The public verification key is deployed at `/indexnow-key.txt`. The submission set comes from ERN's recent-update feed plus core discovery entry points; it does not bulk-submit the entire catalog on every release.
+
+IndexNow is a discovery notification, not a ranking or indexing guarantee. Google discovery continues through the crawlable site, sitemap and owner-verified Search Console. Search-engine treatment never changes ERN source truth or ranking.
