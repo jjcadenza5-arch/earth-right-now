@@ -2957,8 +2957,8 @@
       "destination": "Aruba",
       "placeIds": [
         "druif-beach-aruba",
-        "aruba-palm-beach-live-family",
-        "aruba-eagle-beach-live-family"
+        "aruba-palm-beach",
+        "aruba-eagle-beach"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -3212,7 +3212,7 @@
       "id": "viator-borovets-future",
       "destination": "Borovets",
       "placeIds": [
-        "borovets-ski-resort-bulgaria"
+        "borovets-rila"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
