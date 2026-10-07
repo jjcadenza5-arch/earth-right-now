@@ -7497,3 +7497,101 @@ Traffic work landed:
 4. Use aggregate destination demand to reprioritize exact-link backlog while keeping commercial value separate from editorial ranking.
 5. Continue unresolved new-country/current-source research conservatively (Montserrat, New Caledonia and other verified gaps) and preserve fail-closed states where freshness cannot be proved.
 6. Require matching successful Pages + Operations on the same public-content SHA before the next canonical production checkpoint.
+
+
+## Jinzun-quality source expansion checkpoint — 2026-10-07 12:07 UTC
+
+### Canonical validation
+- Final validated content SHA: `5f2956dca00e07344a6468277ac631ba7233a71e`.
+- **Deploy ERN to GitHub Pages #2760** (run 37618439091): SUCCESS.
+- **ERN Operations Check #1532** (run 37618439058): SUCCESS.
+- Pages and Operations validated the same content SHA.
+- The first quality tranche on `d2b1e98d91f1e1d587751b40dc76726e9d542e49` also validated cleanly on Pages #2759 and Operations #1531 before the second tranche landed.
+
+### New quality benchmark
+Owner feedback explicitly identifies **Taitung Jinzun — Pacific Coast** as one of ERN's strongest current experiences.
+
+Use that as a standing curation benchmark for future expansion:
+1. **Visual impact first** — a destination should be interesting to watch even before planning or affiliate context.
+2. **Currentness must be obvious and defensible** — prefer true 24/7 live video, high-frequency current imagery, or clearly scheduled/seasonal real-time feeds with truthful labeling.
+3. **Trustworthy provenance** — prioritize government, official tourism, national parks, scientific institutions, conservation bodies and first-party destination operators.
+4. **Variety over volume** — deliberately mix coast, mountains, wildlife, cities, harbors, science/volcano/weather, night sky, farms/fields, islands and unusual landscapes.
+5. **High-quality source surfaces** — prefer 4K/HD, strong composition, useful weather/condition visibility, stable camera placement and clear source attribution.
+6. **No downgrade for quantity** — do not fill the catalog with weak, stale or ambiguous webcams merely to increase place count.
+7. **Watch Earth remains stricter than Search/Explore** — a Jinzun-quality LINK_ONLY source can be excellent ERN discovery content without being eligible for Watch Earth.
+
+### Search / Explore quality expansion
+Added **10 new high-quality searchable places** across Taiwan, Canada, Chile and Hawaiʻi.
+
+**Taiwan**
+- Kinmen — Liaoluo Port 4K: official county-government 4K harbor/coast livestream announced as 24-hour continuous live.
+- Hualien — Liyu Lake: official Tourism Administration operational current view of Hualien's largest inland lake.
+- Hualien — Chike Mountain: official operational mountain/agricultural landscape camera with strong seasonal daylily character.
+
+**Canada**
+- Wapusk — Cape Churchill Polar Bears: current seasonal real-time polar-bear window from Parks Canada / Polar Bears International / explore.org during October–November.
+- Nahanni — Sunblood Mountain: remote Parks Canada mountain webcam updated several times per day.
+- Banff — Lake Louise Lakeshore: official Parks Canada destination page links the current lakeshore webcam.
+- Grasslands National Park — Wild Bison: official Parks Canada / explore.org live wildlife cameras at a watering hole and remote calving-area landscape.
+
+**Chile**
+- Cerro Paranal — Very Large Telescope: ESO 24/7 live observatory/desert view.
+- Chajnantor Plateau — ALMA: ESO live high-altitude Atacama observatory view at ~5,000 m.
+
+**United States / Hawaiʻi**
+- Maunakea — Subaru StarCam: NAOJ / Asahi ultra-sensitive summit camera; official operating agreement describes 24/7 livestreaming.
+
+All ten remain HEALTHY and Search/Explore-first. No LINK_ONLY source was promoted into Watch Earth merely because its content is visually excellent.
+
+### Current catalog after this checkpoint
+- core source records: **328**
+- supplemental Search/Explore records: **427**
+- healthy source records: **751**
+- healthy distinct searchable places: **746**
+- commercial opportunity records: **475**
+- utility-routing clusters: **87**
+- source-research candidates: **524**
+- unresolved exact-current research candidates: **5**
+- source-maintenance priority records: **20**
+- duplicate source IDs: **0**
+- duplicate exact titles across the combined catalog: **0**
+
+The five unresolved source gaps remain intentionally fail-closed:
+- Montevideo — Pocitos Beach;
+- Montevideo — Plaza Independencia;
+- Soufrière Hills Volcano / Montserrat;
+- Île des Pins / Baie de Kuto / New Caledonia;
+- Chiang Mai PAO Smart City CCTV (current public slots remain standby/waiting-for-feed until real recovery is verified).
+
+The four intentionally degraded core records remain unchanged:
+- `pattaya-city-live`;
+- `takayama-miyagawa-current-image`;
+- `jungfrau-region`;
+- `chidori-sakura`.
+
+### Research already identified for the next premium-source lane
+Do not auto-promote without fresh exact-current verification, but prioritize these high-potential families:
+- official Port of Oslo live harbor cameras;
+- Port of Akureyri live pier cameras;
+- official Helgoland 24/7 HD harbor / North Sea view;
+- SANParks live/current wildlife cameras, with truthful handling of the stated ~10-minute video delay;
+- additional official Taiwan Tourism 4K operational cameras where they add a genuinely different visual category rather than more of the same.
+
+### Protected invariants
+- Watch Earth stays in-ERN-playback-only.
+- LINK_ONLY / EXTERNAL sources remain outside Watch Earth unless playback rights/technical proof independently qualify them.
+- IMAGE_REFRESH remains natural-schedule-only.
+- Scheduled/seasonal live feeds must never be presented as continuously live outside their verified live window.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- Commercial value cannot affect Earth truth/currentness/health/ranking or editorial prominence.
+- No paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation.
+- Existing lean-core / performance ceilings remain enforced.
+
+### Next autonomous lane
+1. Continue **Jinzun-quality-first** expansion rather than raw place-count growth.
+2. Seek category diversity: urban/harbor, wildlife, astronomy/science, mountains, water, weather and culturally distinctive live places.
+3. Prefer high-impact official 24/7 or clearly current feeds and reject weak/stale/ambiguous sources.
+4. Keep unresolved gaps fail-closed until exact target/currentness evidence improves.
+5. Maintain source-health, dedupe and provider-diversity checks before volume growth.
+6. Require matching successful Pages + Operations on the same content SHA before the next canonical checkpoint.
