@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T11:20:00Z",
+  "generatedAt": "2026-10-07T11:58:40Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -7577,6 +7577,90 @@
       "nextAction": "RECHECK_OFFICIAL_CCTV_ONLY_AFTER_FEED_RECOVERY_AND_VERIFY_DESTINATION_USEFUL_TARGET",
       "searchDemandEvidence": "Aggregate ERN zero-result triage currently contains a genuine 'chiangmai' search gap. Demand evidence does not override source truth.",
       "publicPromotionAllowed": false
+    },
+    {
+      "id": "taiwan-kinmen-liaoluo-port-live",
+      "title": "Kinmen — Liaoluo Port 4K",
+      "country": "Taiwan",
+      "region": "Kinmen County",
+      "provider": "Kinmen County Government / Kinmen Tourism",
+      "sourcePage": "https://www.youtube.com/live/6zOsnHxN7_I",
+      "priority": "P1_QUALITY_BENCHMARK",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Kinmen County Government launched this 4K elevated port/coast camera in May 2026 as a 24-hour uninterrupted livestream.",
+      "verifiedAt": "2026-10-07T11:58:40Z",
+      "promotedAt": "2026-10-07T11:58:40Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "taiwan-hualien-liyu-lake-live",
+      "title": "Hualien — Liyu Lake",
+      "country": "Taiwan",
+      "region": "Hualien County",
+      "provider": "Taiwan Tourism Administration / East Rift Valley National Scenic Area",
+      "sourcePage": "https://www.tad.gov.tw/m1.aspx?keystring=10015&sNo=0042331",
+      "priority": "P1_QUALITY_BENCHMARK",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Live Taiwan catalogue currently lists Liyu Lake as operational.",
+      "verifiedAt": "2026-10-07T11:58:40Z",
+      "promotedAt": "2026-10-07T11:58:40Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "taiwan-hualien-chike-mountain-live",
+      "title": "Hualien — Chike Mountain",
+      "country": "Taiwan",
+      "region": "Hualien County",
+      "provider": "Taiwan Tourism Administration / East Rift Valley National Scenic Area",
+      "sourcePage": "https://www.tad.gov.tw/m1.aspx?keystring=10015&sNo=0042331",
+      "priority": "P1_QUALITY_BENCHMARK",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Live Taiwan catalogue currently lists Chike Mountain as operational.",
+      "verifiedAt": "2026-10-07T11:58:40Z",
+      "promotedAt": "2026-10-07T11:58:40Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "canada-wapusk-cape-churchill-polar-bear-live",
+      "title": "Wapusk — Cape Churchill Polar Bears",
+      "country": "Canada",
+      "region": "Manitoba",
+      "provider": "Parks Canada / Polar Bears International / explore.org",
+      "sourcePage": "https://www.parks.canada.ca/pn-np/mb/wapusk/activ/camera",
+      "priority": "P1_QUALITY_BENCHMARK",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Parks Canada currently states October-November viewers can watch Cape Churchill polar bears in real time.",
+      "verifiedAt": "2026-10-07T11:58:40Z",
+      "promotedAt": "2026-10-07T11:58:40Z",
+      "verification": "Seasonal EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "canada-nahanni-sunblood-mountain-current",
+      "title": "Nahanni — Sunblood Mountain",
+      "country": "Canada",
+      "region": "Northwest Territories",
+      "provider": "Parks Canada",
+      "sourcePage": "https://parks.canada.ca/pn-np/nt/nahanni/securite-safety/feu-fire",
+      "priority": "P2_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Parks Canada currently lists Sunblood Mountain among webcams that update several times a day.",
+      "verifiedAt": "2026-10-07T11:58:40Z",
+      "promotedAt": "2026-10-07T11:58:40Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "canada-banff-lake-louise-lakeshore-current",
+      "title": "Banff — Lake Louise Lakeshore",
+      "country": "Canada",
+      "region": "Alberta",
+      "provider": "Parks Canada",
+      "sourcePage": "https://parks.canada.ca/pn-np/ab/banff/visit/les10-top10/louise.aspx",
+      "priority": "P1_QUALITY_BENCHMARK",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Parks Canada's current Lake Louise visitor page links a live webcam from the lakeshore.",
+      "verifiedAt": "2026-10-07T11:58:40Z",
+      "promotedAt": "2026-10-07T11:58:40Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
     }
   ],
   "notes": [

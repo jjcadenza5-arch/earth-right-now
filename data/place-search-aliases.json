@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T11:17:13Z",
+  "updatedAt": "2026-10-07T11:58:40Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -543,6 +543,33 @@
     "uruguay-montevideo-antel-arena": [
       "Antel Arena",
       "Antel Arena Montevideo"
+    ],
+    "taiwan-kinmen-liaoluo-port": [
+      "Liaoluo Port",
+      "Liaoluo Harbour",
+      "Kinmen Port"
+    ],
+    "taiwan-hualien-liyu-lake": [
+      "Liyu Lake",
+      "Carp Lake Hualien"
+    ],
+    "taiwan-hualien-chike-mountain": [
+      "Chike Mountain",
+      "Chike Shan"
+    ],
+    "canada-wapusk-cape-churchill-polar-bears": [
+      "Cape Churchill",
+      "Wapusk polar bears",
+      "Churchill polar bear cam"
+    ],
+    "canada-nahanni-sunblood-mountain": [
+      "Sunblood Mountain",
+      "Nahanni webcam"
+    ],
+    "canada-banff-lake-louise-lakeshore": [
+      "Lake Louise lakeshore",
+      "Lake Louise Banff",
+      "Lake Louise webcam"
     ]
   }
 }
