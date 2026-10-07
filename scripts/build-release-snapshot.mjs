@@ -63,6 +63,7 @@ for(const locale of ["th","de","fr","ja","zh","es"])await cp(new URL("../"+local
 await cp(new URL("../review/",import.meta.url),new URL("review/",dist),{recursive:true});
 await cp(new URL("../sitemap.xml",import.meta.url),new URL("sitemap.xml",dist));
 await cp(new URL("../updates.xml",import.meta.url),new URL("updates.xml",dist));
+await cp(new URL("../updates/",import.meta.url),new URL("updates/",dist),{recursive:true});
 await cp(new URL("../robots.txt",import.meta.url),new URL("robots.txt",dist));
 await cp(new URL("../indexnow-key.txt",import.meta.url),new URL("indexnow-key.txt",dist));
 await cp(new URL("../CNAME",import.meta.url),new URL("CNAME",dist));
