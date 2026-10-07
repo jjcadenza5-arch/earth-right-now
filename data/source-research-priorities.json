@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T17:08:00Z",
+  "generatedAt": "2026-10-07T17:15:00Z",
   "mission": "See before you go",
   "productTest": "Would this current view help someone understand the place better before deciding whether, when, or how to go?",
   "hardGates": [
@@ -109,7 +109,8 @@
     ]
   },
   "searchDemandGaps": {
-    "principle": "Use aggregate zero-result demand to prioritize research, but never auto-create a source. A candidate must still pass truth, currentness, permission, attribution and quality gates.",
+    "principle": "Use aggregate zero-result demand to prioritize research, but never auto-create a source. A candidate must still pass truth, currentness, permission, attribution and quality gates. Generic or ambiguous terms are not automatically destination gaps.",
+    "observedFrom": "ERN Operations #1591 aggregate search-gap triage, reconciled with stricter multi-term matching and the public museum typo fix",
     "items": [
       {
         "query": "chiangmai",
@@ -121,27 +122,55 @@
         },
         "priority": "RESEARCH_NOW",
         "status": "RESEARCH_ONLY_NO_HEALTHY_DESTINATION_CAMERA_CONFIRMED",
-        "officialCandidates": [
-          {
-            "provider": "Chiang Mai Provincial Administrative Organization",
-            "url": "https://www.chiangmaipao.go.th/all_cctv.php",
-            "role": "official real-time CCTV center",
-            "currentFinding": "Public camera center exists, but retrieved camera cards currently show STANDBY / WAITING FOR FEED. Do not publish as live until a real current feed is independently observed."
-          },
-          {
-            "provider": "Thai Meteorological Department",
-            "url": "https://tmd.go.th/en/weather/province/chiang-mai",
-            "role": "official current weather context",
-            "currentFinding": "Useful current conditions, but not a destination camera."
-          },
-          {
-            "provider": "Thai Meteorological Department",
-            "url": "https://weather.tmd.go.th/cmi240.php",
-            "role": "official Chiang Mai weather radar",
-            "currentFinding": "Current radar imagery is useful context but should not be mislabeled as a destination webcam."
-          }
-        ],
-        "nextAction": "Continue research for one truthful Chiang Mai destination/current-view source. Prefer official or reputable tourism/city/weather/university sources. Keep LINK_ONLY unless permission is explicit; do not use standby CCTV or weather radar as a substitute for a destination camera."
+        "nextAction": "Continue research for one truthful Chiang Mai current-view source; never promote standby CCTV or weather radar as a destination camera."
+      },
+      {
+        "query": "museaum",
+        "normalizedIntent": "museum",
+        "evidence": {
+          "zeroResultCount": 1,
+          "triageState": "RESOLVED_BY_SEARCH_NORMALIZATION",
+          "observedWindowDays": 30
+        },
+        "priority": "CLOSED_BY_PRODUCT_FIX",
+        "status": "PUBLIC_SEARCH_TYPO_NORMALIZATION_ADDED",
+        "nextAction": "No catalog mutation. Preserve museaum→museum normalization and let the current catalog answer where truthful museum/culture metadata exists."
+      },
+      {
+        "query": "outlet",
+        "normalizedIntent": "outlet / outlet mall",
+        "evidence": {
+          "zeroResultCount": 1,
+          "triageState": "GENUINE_GENERIC_PLACE_TYPE_GAP",
+          "observedWindowDays": 30
+        },
+        "priority": "MONITOR",
+        "status": "NO_TRUSTWORTHY_CURRENT_OUTLET_SOURCE_CONFIRMED",
+        "nextAction": "Do not invent a retail source. Revisit only if the term repeats or a trustworthy mall/outlet current view independently qualifies."
+      },
+      {
+        "query": "outlet malls",
+        "normalizedIntent": "outlet / outlet mall",
+        "evidence": {
+          "zeroResultCount": 1,
+          "triageState": "GENUINE_GENERIC_PLACE_TYPE_GAP",
+          "observedWindowDays": 30
+        },
+        "priority": "MONITOR",
+        "status": "NO_TRUSTWORTHY_CURRENT_OUTLET_SOURCE_CONFIRMED",
+        "nextAction": "Treat together with outlet demand; do not duplicate research rows or force a mall source."
+      },
+      {
+        "query": "symphony orchestra",
+        "normalizedIntent": "performing-arts venue / orchestra",
+        "evidence": {
+          "zeroResultCount": 1,
+          "triageState": "AMBIGUOUS_NON_DESTINATION_QUERY",
+          "observedWindowDays": 30
+        },
+        "priority": "MONITOR_ONLY",
+        "status": "NOT_ENOUGH_EVIDENCE_FOR_DESTINATION_RESEARCH",
+        "nextAction": "Do not interpret one generic arts query as a demand mandate. Revisit only if repeated searches identify a place or venue."
       }
     ]
   }
