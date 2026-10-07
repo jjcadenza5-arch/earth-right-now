@@ -37,6 +37,7 @@ must(app.includes('mount.dataset.visualKind="reference"')&&app.includes('Source 
 must(app.includes('Live stream available at the source')&&app.includes('Open live source'),"Verified external live streams must use positive intentional handoff wording");
 must(app.includes('b.querySelector("small").textContent=publicTruth(alt)'),"Viewer alternates must use currentness-aware truth labels");
 must(index.includes('id="atlasBeyond"')&&app.includes("renderAtlasBeyond(")&&css.includes(".atlas-beyond"),"Living Atlas lost honest unmapped-place discovery");
+must(app.includes('note=$("#atlasBeyondNote"),cat=dc()')&&app.includes("unmapped=cat.filter(s=>de(s)"),"Living Atlas beyond-pins layer is not reconciled with unified public discovery");
 must(app.includes('DYNAMIC_UNPINNED'),"Living Atlas must distinguish dynamic Earth views from missing-coordinate places");
 must(index.includes("atlas-legend")&&app.includes("coordinate provenance")&&css.includes(".atlas-legend"),"Living Atlas lost coordinate-honesty cues");
 must(app.includes("renderWatch();renderWander();renderMap()")&&app.includes("categoryMatch(s,state.category)"),"Living Atlas no longer follows the visitor category context");
