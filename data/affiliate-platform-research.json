@@ -13,7 +13,7 @@
     "applicationRequired": true,
     "networkOrAccount": "Awin/CJ depending on region",
     "commissionEvidence": "Official affiliate page confirms commission on qualified bookings; no fixed ERN commission assumption stored.",
-    "termsReviewedAt": "2026-10-03T10:25:00Z",
+    "termsReviewedAt": "2026-10-07T01:25:00Z",
     "relationshipActive": false,
     "credentialsConfigured": false,
     "publicActivationAllowed": false,
@@ -46,7 +46,15 @@
     "ownerObservedRewardDisplay": "3–5% / €1.5 flights",
     "ownerObservedCookie": "One session",
     "ownerObservedMobileTracking": "Mobile web & app",
-    "trafficUnlockWatch": true
+    "trafficUnlockWatch": true,
+    "directProgramAlternative": {
+      "name": "Booking.com Affiliate Partner Programme",
+      "networkOrAccount": "CJ / official regional affiliate networks",
+      "programUrl": "https://www.booking.com/affiliate-program/v2/index.en-gb.html",
+      "status": "DIRECT_APPLICATION_AVAILABLE",
+      "evidence": "Official Booking.com affiliate page currently invites publishers to join via its official affiliate networks and earn on qualified bookings.",
+      "reviewedAt": "2026-10-07T01:25:00Z"
+    }
   },
   {
     "id": "agoda",
@@ -61,7 +69,7 @@
     "applicationRequired": true,
     "networkOrAccount": "Agoda Partner Center",
     "commissionEvidence": "Official Agoda affiliate materials currently describe tiered commission based on completed stays/bookings; rates can change and are not treated as a forecast.",
-    "termsReviewedAt": "2026-10-03T10:25:00Z",
+    "termsReviewedAt": "2026-10-07T01:25:00Z",
     "relationshipActive": false,
     "credentialsConfigured": false,
     "publicActivationAllowed": false,
@@ -91,7 +99,15 @@
     "ownerObservedRewardDisplay": "1–6%",
     "ownerObservedCookie": "1 day",
     "ownerObservedMobileTracking": "Mobile web & app",
-    "trafficUnlockWatch": true
+    "trafficUnlockWatch": true,
+    "directProgramAlternative": {
+      "name": "Agoda Affiliate Program",
+      "networkOrAccount": "Agoda Partner Center",
+      "programUrl": "https://partners.agoda.com/",
+      "status": "DIRECT_APPLICATION_AVAILABLE",
+      "evidence": "Agoda's current affiliate center accepts applications and provides direct tracking/dashboard tools; separate creator Ambassador route also exists.",
+      "reviewedAt": "2026-10-07T01:25:00Z"
+    }
   },
   {
     "id": "viator",
@@ -239,7 +255,7 @@
     "applicationRequired": true,
     "networkOrAccount": "Travelpayouts",
     "commissionEvidence": "Travelpayouts public catalog currently lists Trip.com for hotels and other travel products. ERN stores no assumed reward rate; exact availability, terms and tools must be checked in the owner project before activation.",
-    "termsReviewedAt": "2026-10-03T10:25:00Z",
+    "termsReviewedAt": "2026-10-07T01:25:00Z",
     "relationshipActive": false,
     "credentialsConfigured": false,
     "publicActivationAllowed": false,
@@ -276,7 +292,15 @@
     "ownerObservedRewardDisplay": "1–5.5%",
     "ownerObservedCookie": "7–30 days",
     "ownerObservedMobileTracking": "Mobile web & app",
-    "trafficUnlockWatch": true
+    "trafficUnlockWatch": true,
+    "directProgramAlternative": {
+      "name": "Trip.com Affiliate Program",
+      "networkOrAccount": "Trip.com direct",
+      "programUrl": "https://www.trip.com/partners/index",
+      "status": "DIRECT_APPLICATION_AVAILABLE",
+      "evidence": "Trip.com currently operates a direct affiliate program covering hotels, flights, trains, tours and tickets with link-generation tools.",
+      "reviewedAt": "2026-10-07T01:25:00Z"
+    }
   },
   {
     "id": "expedia",
@@ -292,7 +316,7 @@
     "applicationRequired": true,
     "networkOrAccount": "Travelpayouts",
     "commissionEvidence": "Owner screenshot 2026-10-03 shows Expedia visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "termsReviewedAt": "2026-10-03T10:25:00Z",
+    "termsReviewedAt": "2026-10-07T01:25:00Z",
     "relationshipActive": false,
     "credentialsConfigured": false,
     "publicActivationAllowed": false,
@@ -326,7 +350,15 @@
     "ownerObservedRewardDisplay": "1.35–3.6%",
     "ownerObservedCookie": "30 days",
     "ownerObservedMobileTracking": "Mobile web & app",
-    "trafficUnlockWatch": true
+    "trafficUnlockWatch": true,
+    "directProgramAlternative": {
+      "name": "Expedia Group Travel Creator Program",
+      "networkOrAccount": "Expedia Group direct",
+      "programUrl": "https://creator.expediagroup.com/",
+      "status": "DIRECT_APPLICATION_AVAILABLE",
+      "evidence": "Expedia Group currently offers the Travel Creator Program with affiliate links across Expedia, Hotels.com and Vrbo plus broader travel inventory.",
+      "reviewedAt": "2026-10-07T01:25:00Z"
+    }
   },
   {
     "id": "getyourguide",
@@ -340,7 +372,7 @@
     "applicationRequired": true,
     "networkOrAccount": "Travelpayouts",
     "commissionEvidence": "Owner screenshot 2026-10-03 shows GetYourGuide visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "termsReviewedAt": "2026-10-03T10:25:00Z",
+    "termsReviewedAt": "2026-10-07T01:25:00Z",
     "relationshipActive": false,
     "credentialsConfigured": false,
     "publicActivationAllowed": false,
@@ -374,7 +406,15 @@
     "ownerObservedRewardDisplay": "8%",
     "ownerObservedCookie": "31 days",
     "ownerObservedMobileTracking": "Mobile web only",
-    "trafficUnlockWatch": true
+    "trafficUnlockWatch": true,
+    "directProgramAlternative": {
+      "name": "GetYourGuide Partner Program",
+      "networkOrAccount": "GetYourGuide partner portal / API",
+      "programUrl": "https://api.getyourguide.com/",
+      "status": "DIRECT_PARTNER_APPLICATION_AVAILABLE",
+      "evidence": "GetYourGuide currently provides a partner portal/API route for marketplace access; partner account approval is required.",
+      "reviewedAt": "2026-10-07T01:25:00Z"
+    }
   },
   {
     "id": "tripadvisor-experiences",
@@ -533,7 +573,7 @@
     "applicationRequired": true,
     "networkOrAccount": "Travelpayouts",
     "commissionEvidence": "Owner screenshot 2026-10-03 shows Omio visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "termsReviewedAt": "2026-10-03T10:25:00Z",
+    "termsReviewedAt": "2026-10-07T01:25:00Z",
     "relationshipActive": false,
     "credentialsConfigured": false,
     "publicActivationAllowed": false,
@@ -567,7 +607,15 @@
     "ownerObservedRewardDisplay": "6%",
     "ownerObservedCookie": "30 days",
     "ownerObservedMobileTracking": "Mobile web & app",
-    "trafficUnlockWatch": true
+    "trafficUnlockWatch": true,
+    "directProgramAlternative": {
+      "name": "Omio Affiliate Programme",
+      "networkOrAccount": "Omio direct",
+      "programUrl": "https://www.omio.com/affiliate",
+      "status": "DIRECT_APPLICATION_AVAILABLE",
+      "evidence": "Omio currently operates a direct affiliate programme with deeplinks, widgets, banners and search/API options.",
+      "reviewedAt": "2026-10-07T01:25:00Z"
+    }
   },
   {
     "id": "12go",
@@ -581,7 +629,7 @@
     "applicationRequired": true,
     "networkOrAccount": "Travelpayouts",
     "commissionEvidence": "Owner screenshot 2026-10-03 shows 12GO visible in the ERN Travelpayouts program catalog, but not currently activated/unlocked for ERN.",
-    "termsReviewedAt": "2026-10-03T10:25:00Z",
+    "termsReviewedAt": "2026-10-07T01:25:00Z",
     "relationshipActive": false,
     "credentialsConfigured": false,
     "publicActivationAllowed": false,
@@ -615,7 +663,15 @@
     "ownerObservedRewardDisplay": "4–5.5%",
     "ownerObservedCookie": "30 days",
     "ownerObservedMobileTracking": "Mobile web only",
-    "trafficUnlockWatch": true
+    "trafficUnlockWatch": true,
+    "directProgramAlternative": {
+      "name": "12Go Affiliate Program",
+      "networkOrAccount": "12Go direct",
+      "programUrl": "https://agent.12go.asia/",
+      "status": "DIRECT_APPLICATION_AVAILABLE",
+      "evidence": "12Go currently operates a direct affiliate program with route inventory, search/timetable tools and tracked referral links.",
+      "reviewedAt": "2026-10-07T01:25:00Z"
+    }
   },
   {
     "id": "hostelworld",

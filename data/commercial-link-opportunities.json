@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T00:51:38Z",
+  "generatedAt": "2026-10-07T01:25:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -7296,6 +7296,57 @@
       "publicInventoryEvidenceUrl": "https://www.tiqets.com/en/vatican-museums-tickets-l145158/",
       "publicInventoryEvidence": "Current Tiqets Vatican Museums page exposes multiple 2026 ticket, guided-tour and Vatican City Pass options.",
       "nextAction": "Generate one exact owner-side Vatican tracked link only after owner-project availability and attribution are verified."
+    },
+    {
+      "id": "getyourguide-san-marino",
+      "destination": "San Marino historic center / Mount Titano",
+      "placeIds": [
+        "san-marino-monte-titano",
+        "san-marino-cableway",
+        "san-marino-piazza-liberta"
+      ],
+      "partnerCandidate": "getyourguide",
+      "intent": "activities",
+      "priority": "P1_DIVERSIFICATION",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "GetYourGuide currently exposes active San Marino tours, museum/tower products and historic-center experiences.",
+      "publicInventoryEvidenceUrl": "https://www.getyourguide.com/en-gb/san-marino-l1506/culture-history-tc27/",
+      "publicInventoryEvidence": "Current GetYourGuide San Marino inventory includes guided historic-center tours, UNESCO/private tours, museum/tower products and other activities.",
+      "nextAction": "Use the direct GetYourGuide partner route only after owner application/account approval and exact tracked-link verification; otherwise leave dormant."
+    },
+    {
+      "id": "booking-com-san-marino-stays",
+      "destination": "San Marino stays",
+      "placeIds": [
+        "san-marino-monte-titano",
+        "san-marino-cableway",
+        "san-marino-piazza-liberta"
+      ],
+      "partnerCandidate": "booking-com",
+      "intent": "stay",
+      "priority": "P1_STAY_DIVERSIFICATION",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Booking.com currently exposes a dedicated San Marino country inventory with dozens of accommodation options.",
+      "publicInventoryEvidenceUrl": "https://www.booking.com/country/sm.en-gb.html",
+      "publicInventoryEvidence": "Current Booking.com San Marino inventory lists hotels and other stays across San Marino, including properties near the historic center.",
+      "nextAction": "Do not activate from Travelpayouts visibility alone. Recheck direct/CJ or owner-project approval, then generate one exact destination/stay link."
+    },
+    {
+      "id": "expedia-san-marino-stays",
+      "destination": "San Marino stays",
+      "placeIds": [
+        "san-marino-monte-titano",
+        "san-marino-cableway",
+        "san-marino-piazza-liberta"
+      ],
+      "partnerCandidate": "expedia",
+      "intent": "stay",
+      "priority": "P2_STAY_DIVERSIFICATION",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Expedia currently exposes active San Marino lodging inventory, and Expedia Group's Travel Creator Program provides a direct creator/affiliate route.",
+      "publicInventoryEvidenceUrl": "https://www.expedia.com/Destinations-In-San-Marino.d11720.Hotel-Destinations",
+      "publicInventoryEvidence": "Current Expedia San Marino destination inventory exposes bookable hotels and recent guest-review activity.",
+      "nextAction": "Prefer the Expedia Group Travel Creator Program only after owner account approval; generate an exact tracked destination/property link before any public placement."
     }
   ]
 }

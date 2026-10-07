@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T00:51:38Z",
+  "generatedAt": "2026-10-07T01:25:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -7054,6 +7054,48 @@
       "evidence": "kg.camera currently exposes the Kyzyl-Kiya city camera and states the feed runs with about a 20-second delay and no archive.",
       "verifiedAt": "2026-10-06T13:42:45Z",
       "promotedAt": "2026-10-06T13:42:45Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "liechtenstein-pfaelzerhuette-live",
+      "title": "Pfälzerhütte — Alpine Hut View",
+      "country": "Liechtenstein",
+      "region": "Malbun / Naaftal",
+      "provider": "Liechtenstein Tourism",
+      "sourcePage": "https://en.tourismus.li/webcams.html",
+      "priority": "P2_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Liechtenstein Tourism currently lists Pfälzerhütte among its public webcams with a View now action.",
+      "verifiedAt": "2026-10-07T01:25:00Z",
+      "promotedAt": "2026-10-07T01:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "liechtenstein-balzers-live",
+      "title": "Balzers — Rhine Valley View",
+      "country": "Liechtenstein",
+      "region": "Balzers",
+      "provider": "Liechtenstein Tourism",
+      "sourcePage": "https://en.tourismus.li/webcams.html",
+      "priority": "P2_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Liechtenstein Tourism currently lists Balzers as a public webcam at about 470 m elevation.",
+      "verifiedAt": "2026-10-07T01:25:00Z",
+      "promotedAt": "2026-10-07T01:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "liechtenstein-eschen-live",
+      "title": "Eschen — Unterland View",
+      "country": "Liechtenstein",
+      "region": "Eschen / Unterland",
+      "provider": "Liechtenstein Tourism",
+      "sourcePage": "https://en.tourismus.li/webcams.html",
+      "priority": "P2_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Liechtenstein Tourism currently lists Eschen as a public webcam at about 450 m elevation.",
+      "verifiedAt": "2026-10-07T01:25:00Z",
+      "promotedAt": "2026-10-07T01:25:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
     }
   ],

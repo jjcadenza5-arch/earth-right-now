@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T00:51:38Z",
+  "updatedAt": "2026-10-07T01:25:00Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -373,6 +373,20 @@
       "Azura Bermuda",
       "Bermuda South Shore",
       "Warwick Bermuda"
+    ],
+    "liechtenstein-pfaelzerhuette": [
+      "Pfälzerhütte",
+      "Pfaelzerhuette",
+      "Pfälzerhütte Liechtenstein",
+      "Naaftal hut"
+    ],
+    "liechtenstein-balzers": [
+      "Balzers Liechtenstein",
+      "Balzers Rhine Valley"
+    ],
+    "liechtenstein-eschen": [
+      "Eschen Liechtenstein",
+      "Eschen Unterland"
     ]
   }
 }

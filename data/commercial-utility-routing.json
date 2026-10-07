@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T00:51:38Z",
+  "generatedAt": "2026-10-07T01:25:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1760,6 +1760,44 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_VATICAN_TRACKED_LINK_REQUIRED",
       "rule": "After Vatican City is selected, expose at most one exact ticket or guided-visit action. Never mix religious/live-feed prominence with commercial ranking, and never imply access to events or areas not included by the selected product."
+    },
+    {
+      "id": "san-marino-diversified-planning",
+      "intent": "stay-and-activities",
+      "preferredProgramCandidates": [
+        "viator",
+        "getyourguide",
+        "booking-com",
+        "expedia"
+      ],
+      "placeIds": [
+        "san-marino-monte-titano",
+        "san-marino-cableway",
+        "san-marino-piazza-liberta"
+      ],
+      "activationGate": "OWNER_ACCOUNT_OR_PROGRAM_APPROVAL_AND_EXACT_TRACKED_LINK_REQUIRED",
+      "rule": "After a visitor chooses San Marino, show at most one activity provider and one stay provider. Direct-program availability is a fallback/diversification path only; commission must never influence Earth ranking."
+    },
+    {
+      "id": "liechtenstein-broader-planning",
+      "intent": "stay-and-activities-research",
+      "preferredProgramCandidates": [
+        "viator",
+        "booking-com",
+        "expedia",
+        "trip-com"
+      ],
+      "placeIds": [
+        "liechtenstein-malbun-sareis",
+        "liechtenstein-malbun-center",
+        "liechtenstein-malbun-taeli",
+        "liechtenstein-steg-reservoir",
+        "liechtenstein-pfaelzerhuette",
+        "liechtenstein-balzers",
+        "liechtenstein-eschen"
+      ],
+      "activationGate": "OWNER_ACCOUNT_OR_PROGRAM_APPROVAL_AND_EXACT_DESTINATION_LINK_REQUIRED",
+      "rule": "Research only until exact useful inventory is verified. Expose at most one activity and one stay option after destination choice; no generic affiliate wall."
     }
   ],
   "islandTravelClusters": [
