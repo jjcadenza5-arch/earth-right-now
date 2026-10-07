@@ -24,9 +24,12 @@ if(!Array.isArray(data.placeUniverse)||data.placeUniverse.length<8) fail.push("p
 const stale=data.currentStaleDebt;
 const staleItems=Array.isArray(stale?.items)?stale.items:[];
 if(!stale||!staleItems.length||Number(stale.total)!==staleItems.length)fail.push("current stale-debt classification missing or count mismatch");
-const allowedClasses=new Set(["PLAYBACK_EVIDENCE_DEBT","SEASONAL_OFF_SEASON","EDITORIAL_CURRENTNESS_DEBT"]);
-const allowedPriorities=/^(HIGH|LOW_UNTIL_SEASON_OR_MATERIAL_CHANGE|ROUTINE)$/;
+const allowedClasses=new Set(["PLAYBACK_EVIDENCE_DEBT","SEASONAL_OFF_SEASON","EDITORIAL_CURRENTNESS_DEBT","STALE_COMPANION_IMAGE","PROVIDER_OFFLINE"]);
+const allowedPriorities=/^(HIGH|LOW|LOW_UNTIL_SEASON_OR_MATERIAL_CHANGE|ROUTINE)$/;
 const sourceById=new Map(sources.map(x=>[String(x.id),x]));
+const declaredProductionPlaces=Number(data.operationalResearchModifiers?.productionReality?.currentHealthyDistinctPlaces);
+const actualHealthyPlaces=new Set(sources.filter(x=>x.health==="HEALTHY").map(x=>x.placeId||x.id)).size;
+if(Number.isFinite(declaredProductionPlaces)&&declaredProductionPlaces<actualHealthyPlaces)fail.push("production-reality baseline trails core healthy-place reality");
 for(const item of staleItems){
   if(!allowedClasses.has(String(item.class||"")))fail.push("stale debt class invalid: "+String(item.class||""));
   if(!allowedPriorities.test(String(item.priority||"")))fail.push("stale debt priority label invalid: "+String(item.priority||""));
