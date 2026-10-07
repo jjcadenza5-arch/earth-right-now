@@ -6,12 +6,16 @@ async function waitText(url,predicate,label,tries=18){let last="no response";for
 async function get(url,tries=8){let last;for(let i=0;i<tries;i++){try{const r=await fetchFresh(url);if(r.ok)return r;last=new Error(url+" -> "+r.status)}catch(e){last=e}await wait(4000)}throw last}
 const home=await waitText(base+"/",t=>t.includes("app-lite.js?v="+build),"production home");
 const app=await waitText(base+"/src/app-lite.js?v="+build,t=>t.includes("setTimeout(()=>loadSearchExtra(initialQ),0)"),"production app");
-for(const marker of ["setTimeout(()=>loadSearchExtra(initialQ),0)","const dc=()=>state.sources.concat(state.sx),ds=s=>","renderDiscoveryProof();renderWander();renderLocalEarth();renderSaved()"])if(!app.includes(marker))throw new Error("production app missing reality-sync marker: "+marker);
+for(const marker of ["setTimeout(()=>loadSearchExtra(initialQ),0)","const dc=()=>state.sources.concat(state.sx),ds=s=>","renderDiscoveryProof();renderWander();renderLocalEarth();renderSaved()","Math.min(8,setLimit)"])if(!app.includes(marker))throw new Error("production app missing reality-sync marker: "+marker);
 const core=await (await get(base+"/data/sources.json")).json();
 const extra=await (await get(base+"/data/search-supplemental.json")).json();
 if(!Array.isArray(core)||!Array.isArray(extra))throw new Error("production catalogs are not arrays");
 if(extra.length<400)throw new Error("production supplemental catalog unexpectedly small: "+extra.length);
-const ids=new Set([...core,...extra].map(x=>x?.id).filter(Boolean));
+const all=[...core,...extra],ids=new Set(all.map(x=>x?.id).filter(Boolean));
+const searchable=all.filter(x=>x?.health==="HEALTHY"&&x.truth!=="PREVIEW"&&String(x.sourceUrl||x.officialUrl||"").startsWith("https://"));
+const places=new Set(searchable.map(x=>x.placeId||x.id)),countries=new Set(searchable.map(x=>x.country).filter(Boolean));
+if(places.size<740||countries.size<120)throw new Error("production discovery breadth below reconciled floor: "+places.size+" places / "+countries.size+" countries");
+if(!home.includes('id="proofPlaces">751</strong>')||!home.includes('id="proofCountries">130</strong>'))throw new Error("production home fallback counts do not match reconciled catalog");
 for(const id of ["taitung-jinzun","norway-oslo-port-live","iceland-akureyri-port-live","germany-helgoland-harbor-live","south-africa-kruger-orpen-live"])if(!ids.has(id))throw new Error("production catalog missing expected reconciled source: "+id);
 if(!app.includes('$("#proofPlaces").textContent=groupByPlace(s).length')||!app.includes('$("#proofCountries").textContent=new Set(s.map(x=>x.country).filter(Boolean)).size')||!app.includes('$("#proofCurrent").textContent=groupByPlace(h).length'))throw new Error("production app missing reconciled visitor-count semantics");
-console.log(JSON.stringify({ok:true,homeRevision:build,core:core.length,supplemental:extra.length,combined:core.length+extra.length,taitungBenchmark:ids.has("taitung-jinzun"),checked:[...ids].filter(id=>["taitung-jinzun","norway-oslo-port-live","iceland-akureyri-port-live","germany-helgoland-harbor-live","south-africa-kruger-orpen-live"].includes(id))},null,2));
+console.log(JSON.stringify({ok:true,homeRevision:build,core:core.length,supplemental:extra.length,combined:core.length+extra.length,healthySearchablePlaces:places.size,healthyCountries:countries.size,taitungBenchmark:ids.has("taitung-jinzun"),checked:[...ids].filter(id=>["taitung-jinzun","norway-oslo-port-live","iceland-akureyri-port-live","germany-helgoland-harbor-live","south-africa-kruger-orpen-live"].includes(id))},null,2));
