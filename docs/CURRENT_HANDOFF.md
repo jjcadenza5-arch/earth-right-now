@@ -6471,3 +6471,64 @@ Keep all four unresolved until exact current/playback or reliable freshness evid
 ### Protected invariants
 Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
 
+
+
+## Same-scope Klook propagation + canonical commercial cleanup checkpoint — 2026-10-07 05:03 UTC
+
+Canonical validated content:
+- Content SHA: `4119cf78ad14946886ac56b0baafb092fc3c4526`.
+- **Deploy ERN to GitHub Pages #2705** (run 37574227976): SUCCESS.
+- **ERN Operations Check #1485** (run 37574228031): SUCCESS.
+- Pages and Operations validated the same content SHA before this handoff-only commit.
+
+### Verified same-scope Klook propagation
+Reused two already owner-verified Travelpayouts/Klook destination links only where the new ERN place is genuinely inside the same destination scope:
+- Singapore → `singapore-woodlands-causeway`, reusing the existing verified Singapore Klook destination link.
+- Fiji / Mamanuca Islands → `fiji-castaway-island-live`, reusing the existing verified Fiji/Mamanuca Klook destination link. Official Fiji / Outrigger sources confirm Castaway Island is in the Mamanuca Islands.
+
+No new tracked URL, partner approval, payout state or automatic placement was invented.
+
+Current travel-offer state:
+- travel-offer registry: **97 verified offers**
+- current revenue-eligible affiliate placements: **96**
+- healthy ERN places with current affiliate placements: **91**
+- by program: **Viator 68 / Klook 20 / Tiqets 5 / Welcome Pickups 3**
+- unique tracked URLs remain unchanged: **Viator 23 / Klook 10 / Tiqets 4 / Welcome Pickups 3**
+- Tokyo / Chidori remains fail-closed while its Earth source is degraded/off-season.
+
+### Release repair
+The first release attempt, Pages #2704 on `9680cb9882a8a83b9dd82878929ea35cad9c0c76`, failed the commercial smoke suite because the two newly-added Klook records carried a verification timestamp a few minutes ahead of the workflow clock.
+- The guard correctly treated future-dated verification evidence as not current.
+- The repair changed only the verification timing to an already-valid UTC timestamp.
+- No commercial rule, verification horizon, performance ceiling, truth gate or ranking safeguard was weakened.
+- The repaired content then passed the complete Pages release suite and Operations validation on `4119cf78...`.
+
+### Architecture maintenance
+Two stale commercial-research place references were remapped to canonical public place IDs:
+- Aruba opportunity now uses `druif-beach-aruba`, `aruba-palm-beach`, and `aruba-eagle-beach`.
+- Borovets opportunity now uses `borovets-rila`.
+
+The Pamir commercial research placeholder remains intentionally source-gated because ERN still has no trustworthy live/current core Tajik Pamir place. Do not convert that research row into a public commercial placement until source truth exists.
+
+### Exact-current research queue
+The unresolved queue remains **4** and stays fail-closed:
+- Montevideo / Pocitos Beach;
+- Montevideo / Plaza Independencia;
+- Soufrière Hills / Montserrat;
+- Île des Pins / Kuto, New Caledonia.
+
+Current rechecks still do not justify promotion:
+- Antel confirms its platform carries cameras around Uruguay, but exact public playback for the two named Montevideo targets remains unresolved.
+- MVO confirms continuous 24-hour remote-camera monitoring at Soufrière Hills, but ERN still lacks a stable public current-image freshness timestamp/endpoint.
+- Kuto's tourism-office webcam endpoint is still referenced by current destination material, but direct image freshness cannot be independently verified.
+
+### Next autonomous lane
+1. Continue qualified audience/re-entry improvements before increasing commercial density.
+2. Continue exact-current research for the four unresolved candidates without weakening fail-closed truth.
+3. Prefer verified same-destination reuse of existing active-program links before opening new programs or generating new tracked URLs.
+4. Continue source-health and commercial-reference dedupe/maintenance.
+5. Keep Pamir source-gap research explicit; never substitute prerecorded/static material for live/current Earth.
+6. Require matching successful Pages + Operations validation on the same content SHA before the next canonical production checkpoint.
+
+### Protected invariants
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
