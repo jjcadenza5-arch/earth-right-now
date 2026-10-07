@@ -7710,3 +7710,73 @@ This checkpoint does not claim that every one of the 760 records appears simulta
 4. Verify Jinzun and other high-value destinations have useful, visible planning/commercial actions only where already-authorized verified links exist.
 5. Continue Home / Watch Earth / Explore / Living Atlas / Destinations / My Earth production checks.
 6. Do not resume broad raw source expansion until this visible-product catch-up stage is substantially complete.
+
+
+## ERN Reality Reconciliation — visible-product catch-up checkpoint — 2026-10-07 14:10 UTC
+
+### Canonical production validation
+Final validated content SHA: `a993fc32cf159d18ecfb7a92349b81f46f5417fc`.
+
+Matching successful validation:
+- **Deploy ERN to GitHub Pages #2792** (run 37634051783): SUCCESS.
+- **ERN Operations Check #1561** (run 37634051606): SUCCESS.
+- live-domain **Verify deployed visitor reality sync**: SUCCESS on `https://earthrightnow.app/`.
+
+Production reality result:
+- core source records: **328**
+- supplemental public discovery records: **432**
+- combined runtime discovery catalog: **760**
+- healthy searchable places: **751**
+- healthy country/territory labels: **130**
+- Taitung Jinzun benchmark present: **true**
+- Jinzun commission/planning path visible in production: **true**
+- current Watch Earth source-image candidates checked by production guard: **9**
+- distinct source-image providers represented by that guard: **6**
+
+### Visible-product catch-up completed in this tranche
+- Public discovery counters now derive from the unified discovery catalog rather than the core-only catalog.
+- Initial HTML fallbacks now truthfully expose **751 healthy searchable places / 130 countries & territories** instead of stale core-only counts.
+- Search/Explore, More Places, Local Earth, saved/recent discovery and the Living Atlas beyond-pins layer now share the unified public discovery state.
+- Supplemental sources without coordinates remain honestly discoverable beyond the pinned Atlas rather than being falsely mapped.
+- Watch Earth opening selection now prioritizes up to eight proven in-ERN current sources with genuine source-backed imagery before illustrative fallback cards.
+- Source-backed thumbnails were added for Auckland Viaduct Harbour and Takayama Miyagawa/Kaji Bridge.
+- Verbier was revalidated and restored as a current source-image Watch Earth candidate.
+- Taitung Jinzun was revalidated against the official East Coast National Scenic Area 24-hour live-camera evidence and remains the practical visual-quality benchmark.
+
+### Jinzun commercial reality
+- A current Viator planning action for **Taitung / Taiwan's East Coast** is now attached downstream from the Jinzun destination experience.
+- The exact planning action is commission-capable through ERN's already owner-verified Viator affiliate identity.
+- Production verification confirms the Jinzun destination page actually exposes the affiliate planning action and commission-neutral disclosure.
+- The linked Viator itinerary includes Taitung and the East Coast National Scenic Area; ERN does **not** claim that this particular itinerary visits Jinzun itself.
+- Klook Taitung has been demoted to an optional second-provider opportunity and removed from the owner's current exact-link action batch; no owner action is needed for Jinzun monetization at this stage.
+- Commercial availability remains downstream from Earth discovery and cannot affect source ranking or Watch Earth prominence.
+
+### Validation discipline strengthened
+The live-production reality guard now verifies, after deployment:
+- exact release revision on the public home page;
+- unified catalog availability;
+- minimum public discovery breadth;
+- truthful fallback count wiring;
+- Taitung Jinzun benchmark presence;
+- visible Jinzun affiliate/planning path;
+- minimum source-image Watch Earth breadth/provider diversity;
+- selected reconciled premium sources.
+
+This closes the specific repository-vs-real-website gap identified by the owner's screenshots for this tranche. A successful repository build alone is no longer enough to declare these visitor-facing changes canonical.
+
+### Protected invariants preserved
+- Watch Earth remains current/truth-gated and in-ERN-playback-first.
+- LINK_ONLY / EXTERNAL supplemental sources do not enter Watch Earth merely because they are discoverable.
+- No false coordinates were invented for supplemental Atlas records.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- Existing lean/performance ceilings were preserved; failed over-budget attempts were repaired rather than raising limits.
+- No paid ranking, automatic affiliate placement, automatic tracked-link rewriting or unverified partner activation.
+- Commission cannot affect Earth truth, currentness, ranking or editorial prominence.
+
+### Remaining reconciliation lane
+1. Continue production-facing review of the first 30 seconds of Home and Watch Earth, especially real-source imagery versus illustrative fallback.
+2. Continue checking Explore/Search, Living Atlas, destination pages and My Earth for any remaining core-only or stale-state assumptions.
+3. Keep Jinzun as the practical quality benchmark while improving provider/country diversity among genuinely current in-ERN visual candidates.
+4. Do not resume broad raw catalog expansion until visible-product reconciliation is substantially complete.
+5. Require matching Pages + Operations on the same content SHA plus live production-reality verification before the next canonical checkpoint.
