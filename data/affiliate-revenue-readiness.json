@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T08:20:00Z",
+  "generatedAt": "2026-10-07T08:50:00Z",
   "purpose": "Make ERN monetization truth explicit: distinguish research coverage from links that can actually earn affiliate commission.",
   "earningRule": "ERN can earn only when a visitor follows a valid tracked affiliate link (or other approved tracked affiliate surface) and completes an eligible transaction under that partner's attribution and commission rules.",
   "states": {
@@ -151,21 +151,21 @@
     "Preserve one-best-provider-per-user-need presentation and commission-neutral Earth ranking."
   ],
   "currentPublicRevenueActive": {
-    "offerCount": 199,
-    "uniquePlaceCount": 194,
+    "offerCount": 209,
+    "uniquePlaceCount": 204,
     "byProgram": {
-      "viator": 170,
+      "viator": 180,
       "klook": 21,
       "tiqets": 5,
       "welcome-pickups": 3
     },
     "uniqueTrackedUrlsByProgram": {
-      "viator": 68,
+      "viator": 74,
       "klook": 10,
       "tiqets": 4,
       "welcome-pickups": 3
     },
     "definition": "Verified current affiliate offers exposed through ERN's public travel-offer layer, backed by an enabled current affiliate partner, and attached to a currently HEALTHY LIVE_VIDEO / LIVE_IMAGE / EXTERNAL_LIVE ERN place across core or supplemental discovery.",
-    "note": "Nólsoy now reuses ERN's existing current Faroe Islands Viator destination action, bringing public revenue-active coverage to 199 offers across 194 healthy places. No new destination URL was introduced; commercial placement remains downstream from Earth discovery and commission-neutral for ranking."
+    "note": "Expanded exact/current Viator revenue coverage across Flåm/Aurlandsfjord, the Panama Canal lock family, Rio/Copacabana, Santa Ana Volcano, Puracé National Natural Park and Boulders Beach/Cape Peninsula. Ten healthy ERN places gain six destination-level actions. Current public inventory was independently rechecked; manualOpenVerified remains false for reused direct-partner URLs. Commercial placement remains downstream from Earth discovery and commission-neutral for ranking."
   }
 }
