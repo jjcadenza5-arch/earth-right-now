@@ -7964,3 +7964,54 @@ The major repository/public-site split identified from the owner's screenshots i
 3. Let clean v2 traffic accumulate before drawing conclusions from destination-open/share rankings.
 4. Resolve repeated real zero-result demand only when an independently truthful current source exists.
 5. Do not return to count-driven catalog growth; prioritize visitor utility, source/provider diversity and qualified organic discovery.
+
+
+## Public-product + traffic synchronization refinement — 2026-10-07 16:44 UTC
+
+### Canonical shared SHA
+- Final validated content SHA: `c92c05f42484a9ebb6ea9ce82bc21052efd3fcdd`.
+- **Deploy ERN to GitHub Pages #2823** (run 37653415748): SUCCESS.
+- **ERN Operations Check #1591** (run 37653415769): SUCCESS.
+- **ERN JavaScript Syntax Check #1138**: SUCCESS.
+- Pages and Operations validated the exact same SHA.
+- Post-deploy visitor reality verification on `earthrightnow.app`: SUCCESS.
+
+### Traffic/business catch-up closed
+The traffic side and public-product side now use the same production-coupled operating baseline:
+- `data/traffic-growth-priorities.json` remains the canonical traffic-growth baseline.
+- `data/business-growth-signals.json` is now synchronized to the same metric-semantics-v2 operating evidence and is included in the public release artifact.
+- The production reality checker verifies that the two public traffic/business baseline files agree on key live operating metrics before a release is accepted.
+- Operations now watches business-growth signal changes as part of its normal scope.
+
+Current reconciled rolling evidence retained as aggregate/privacy-preserving:
+- approximate unique visitors: **53**
+- page views: **333**
+- Earth searches: **84**
+- zero-result searches: **36**
+- place/window opens: **284**
+- external-source opens: **79**
+- verified travel-option opens: **8**
+- Google-family referral views: **18**
+- Facebook-family referral views: **32**
+
+### Interpretation boundary
+- Traffic metric semantics v2 remains the clean attribution boundary for future destination-open/share conclusions.
+- Legacy rolling place activity remains historical context only.
+- No traffic metric may override source truth, rights, currentness, health, playback proof or editorial ranking.
+- Commercial clicks remain intent signals only; they do not prove booking, conversion, commission or revenue.
+
+### Catch-up status
+The major repository / public-site / traffic split identified from owner screenshots is now substantially reconciled and production-guarded:
+- public discovery breadth and counts are unified;
+- Watch Earth has a production-enforced real/source-backed visual floor;
+- Living Atlas beyond-pin discovery reflects the unified catalog;
+- Jinzun remains the benchmark and has a truthful downstream commission-capable planning path;
+- first-party analytics and traffic semantics are active and production-verified;
+- traffic-growth and business-growth baselines are now shipped and checked together on the real site.
+
+### Remaining refinement lane
+1. Continue first-30-seconds visual refinement only where trustworthy current imagery materially improves the live experience.
+2. Let clean post-v2 destination-open/share evidence accumulate before making ranking or demand conclusions.
+3. Resolve repeated genuine zero-result demand only when a truthful current source independently passes ERN gates.
+4. Improve related-place / return-visitor journeys when production evidence shows a real friction point.
+5. Continue autonomous source-health maintenance and provider diversity work without returning to count-driven expansion.
