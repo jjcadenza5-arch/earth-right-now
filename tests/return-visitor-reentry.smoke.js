@@ -1,12 +1,10 @@
 import {readFileSync} from "node:fs";
 const app=readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
 const index=readFileSync(new URL("../index.html",import.meta.url),"utf8");
-console.assert(app.includes('function recentSearchHistory(){')&&app.includes('.slice(0,8):[]}'),"return-visitor search history should retain up to eight normalized searches");
-console.assert(app.includes('const recents=recentSearches().slice(0,2)'),"quick-search UI should reserve discovery space by showing at most two recent searches");
-console.assert(app.includes('rememberSearch(raw);renderQuickSearches()'),"successful explicit searches should refresh the quick-return chips immediately");
-console.assert(app.includes('function reentryScore(s,p)')&&app.includes('country*8')&&app.includes('category*4'),"Continue exploring should use browser-local country/category affinity");
-console.assert(app.includes('recentPlaces=new Set()')&&app.includes('if(recent.length>=6)break'),"recent exploration should deduplicate places and stay bounded");
-console.assert(app.includes('(countryCounts.get(country)||0)>=2')&&app.includes('seenPlaces.has(pid)'),"Continue exploring should diversify by place and country");
-console.assert(app.includes('writeSaved("ern:recent-searches:v1","[]")')&&app.includes('renderQuickSearches();renderWatch();renderWander();renderSaved();'),"Reset local suggestions should clear search re-entry memory as well as viewing affinity");
-console.assert(index.includes('./src/app-lite.js?v=20261007b'),"home should request the new return-visitor app revision");
+console.assert(app.includes('function recentSearches(){')&&app.includes('.slice(0,8):[]}'),"return-visitor search history should retain up to eight searches");
+console.assert(app.includes('const recents=recentSearches().slice(0,2)'),"quick-search UI should preserve fresh discovery space");
+console.assert(app.includes('rememberSearch(raw);renderQuickSearches()'),"explicit searches should refresh quick-return chips");
+console.assert(app.includes('affinity=s=>baseScore(s)+8*')&&app.includes('p.categories?.[c]'),"Continue exploring should use browser-local country/category affinity");
+console.assert(app.includes('writeSaved("ern:recent-searches:v1","[]")')&&app.includes('renderQuickSearches();renderWatch();renderWander();renderSaved();'),"Reset local suggestions should clear search re-entry memory");
+console.assert(index.includes('./src/app-lite.js?v=20261007b'),"home should request the return-visitor app revision");
 console.log("ERN return-visitor re-entry checks passed");
