@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T00:45:41Z",
+  "updatedAt": "2026-10-07T00:47:54Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -354,7 +354,6 @@
     ],
     "faroe-torshavn": [
       "Tórshavn",
-      "Torshavn",
       "Thorshavn",
       "Faroe Islands capital"
     ]
