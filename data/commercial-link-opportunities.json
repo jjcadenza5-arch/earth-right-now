@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T07:52:00Z",
+  "generatedAt": "2026-10-07T07:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1942,8 +1942,16 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Satara is now searchable and naturally supports safari/game-drive planning.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one Kruger safari Viator link only if it is geographically suitable for Satara visitors."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Maintain current destination-level coverage; do not create a duplicate place-specific offer unless visitor utility clearly requires it.",
+      "trackingUrl": "https://www.viator.com/Kruger-National-Park/d776-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:20:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Reconciled to an already-active ERN Viator destination offer using the established owner-verified affiliate identity.",
+      "verificationMethod": "RECONCILED_TO_EXISTING_VERIFIED_PUBLIC_OFFER",
+      "verificationEvidence": "Planning row reconciled to existing verified/current ERN public offer coverage; no new affiliate placement was created.",
+      "verificationEvidenceUrl": "https://www.viator.com/Kruger-National-Park/d776-ttd",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-olifants-kruger",
@@ -1955,8 +1963,16 @@
       "intent": "activities",
       "priority": "P2",
       "reason": "Olifants is now searchable and supports Kruger safari planning.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Prefer one park-level Kruger Viator link shared across suitable ERN Kruger places rather than per-camp duplicates."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Maintain current destination-level coverage; do not create a duplicate place-specific offer unless visitor utility clearly requires it.",
+      "trackingUrl": "https://www.viator.com/Kruger-National-Park/d776-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:20:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Reconciled to an already-active ERN Viator destination offer using the established owner-verified affiliate identity.",
+      "verificationMethod": "RECONCILED_TO_EXISTING_VERIFIED_PUBLIC_OFFER",
+      "verificationEvidence": "Planning row reconciled to existing verified/current ERN public offer coverage; no new affiliate placement was created.",
+      "verificationEvidenceUrl": "https://www.viator.com/Kruger-National-Park/d776-ttd",
+      "manualOpenVerified": false
     },
     {
       "id": "klook-mayon",
@@ -3126,10 +3142,18 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN already has healthy Druif Beach and is researching official-tourism Palm/Eagle Beach webcams; Viator has broad Aruba island, snorkel, cruise, off-road and shore-excursion inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Aruba/d28-ttd",
       "publicInventoryEvidence": "Current Viator Aruba destination inventory shows hundreds of island activities including snorkeling, cruises, shore excursions and tours.",
-      "nextAction": "Generate one Aruba destination-level Viator tracked link and reuse it across verified Aruba places rather than duplicating commercial density."
+      "nextAction": "Maintain current destination-level coverage; do not create a duplicate place-specific offer unless visitor utility clearly requires it.",
+      "trackingUrl": "https://www.viator.com/Aruba/d28-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T03:00:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Reconciled to an already-active ERN Viator destination offer using the established owner-verified affiliate identity.",
+      "verificationMethod": "RECONCILED_TO_EXISTING_VERIFIED_PUBLIC_OFFER",
+      "verificationEvidence": "Planning row reconciled to existing verified/current ERN public offer coverage; no new affiliate placement was created.",
+      "verificationEvidenceUrl": "https://www.viator.com/Aruba/d28-ttd",
+      "manualOpenVerified": false
     },
     {
       "id": "klook-yehliu-north-coast",

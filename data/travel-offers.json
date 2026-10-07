@@ -574,7 +574,11 @@
     "verified": true,
     "verifiedAt": "2026-10-07T03:00:00Z",
     "expiresAt": "2027-01-05T03:00:00Z",
-    "evidence": "Current Viator 2026 Aruba destination inventory was rechecked; 400+ tours and excursions are indexed. Exact tracked URL uses the same owner-verified ERN Viator affiliate identity already validated on Auckland, Dublin, Cape Town, Petra and Muscat. This maintenance pass manually reviewed the destination fit and current inventory; it does not claim a new owner click-through for this exact URL."
+    "evidence": "Current Viator 2026 Aruba destination inventory was rechecked; 400+ tours and excursions are indexed. Exact tracked URL uses the same owner-verified ERN Viator affiliate identity already validated on Auckland, Dublin, Cape Town, Petra and Muscat. This maintenance pass manually reviewed the destination fit and current inventory; it does not claim a new owner click-through for this exact URL.",
+    "opportunityQueueReconciledAt": "2026-10-07T07:50:00Z",
+    "opportunityQueueReconciledIds": [
+      "viator-aruba-island"
+    ]
   },
   {
     "id": "viator-santorini-future-public",
@@ -2801,7 +2805,11 @@
     "verified": true,
     "verifiedAt": "2026-10-07T06:20:00Z",
     "expiresAt": "2026-12-26T13:17:00Z",
-    "evidence": "Current Viator 2026 Kruger National Park destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified."
+    "evidence": "Current Viator 2026 Kruger National Park destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+    "opportunityQueueReconciledAt": "2026-10-07T07:50:00Z",
+    "opportunityQueueReconciledIds": [
+      "viator-satara-kruger"
+    ]
   },
   {
     "id": "viator-kruger-public--sanparks-olifants",
@@ -2818,7 +2826,11 @@
     "verified": true,
     "verifiedAt": "2026-10-07T06:20:00Z",
     "expiresAt": "2026-12-26T13:17:00Z",
-    "evidence": "Reuses ERN's current verified Kruger National Park Viator destination link for another healthy ERN place inside the same destination scope. Tracking parameters are unchanged."
+    "evidence": "Reuses ERN's current verified Kruger National Park Viator destination link for another healthy ERN place inside the same destination scope. Tracking parameters are unchanged.",
+    "opportunityQueueReconciledAt": "2026-10-07T07:50:00Z",
+    "opportunityQueueReconciledIds": [
+      "viator-olifants-kruger"
+    ]
   },
   {
     "id": "viator-kruger-public--sanparks-punda-maria",
