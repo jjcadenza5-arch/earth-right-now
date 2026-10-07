@@ -5977,3 +5977,65 @@ Watch Earth remains in-ERN-playback-only; public Guide and Now Moments remain OF
 
 ### Next autonomous lane
 Continue converting a small number of high-fit already-active-partner opportunities into exact verified links when owner-side link generation is available; keep direct-program diversification as research until real owner approval exists; continue geographically diverse current/live expansion, source-health/dedupe maintenance, and require matching Pages + Operations SUCCESS on the same content SHA before the next canonical checkpoint.
+
+
+## Africa live-discovery expansion checkpoint — 2026-10-07 02:25 UTC
+
+Canonical validated content:
+- Content commit: `39c4189b0af5abe708c9920516cf6224c1b34cdb`.
+- **Deploy ERN to GitHub Pages #2686** (run 37561710727): SUCCESS.
+- **ERN Operations Check #1467** (run 37561710733): SUCCESS.
+- Pages and Operations validated the same content SHA before this handoff-only commit.
+
+### Search / Explore expansion
+Added three strong current/live destinations while preserving Search/Explore-only truth boundaries:
+- **Maliba Lodge — Tsehlanyane National Park, Lesotho**: first-party lodge webcams; Maliba states two cameras update every 15 minutes. Truth remains `LIVE_IMAGE` + `LINK_ONLY` + external playback.
+- **Chobe Safari Lodge — Bush Lounge Live Cam, Uganda**: first-party live camera from the lodge's hidden Bush Lounge in the Murchison Falls area. Truth remains `EXTERNAL_LIVE` + `LINK_ONLY`.
+- **Majete Wildlife Reserve — Live Wildlife Cameras, Malawi**: PixCams / Majete Wildlife Reserve live wildlife network. MajeteWatch documents six solar-powered, Starlink-connected camera stations with continuous 24/7 live video. Truth remains `EXTERNAL_LIVE` + `LINK_ONLY`.
+
+All three remain Featured/Watch held and do not enter Watch Earth.
+
+### Commercial / utility diversification
+- Existing Lesotho Viator research was extended to Maliba rather than creating duplicate camera-level offers.
+- Added Murchison Falls / Uganda Viator research after current destination inventory verification, still owner-account + exact tracked-link gated.
+- Added optional Uganda connectivity research and one `uganda-murchison-planning` routing cluster, limited to one useful safari/activity action plus one optional connectivity action after destination choice.
+- No tracked URL, program approval, price promise, public affiliate activation, ranking boost or inferred owner-side availability was invented.
+
+### Current validated catalog
+- **709 healthy distinct searchable places**
+- **714 healthy source records**
+- **390 supplemental Search/Explore records**
+- **459 commercial opportunity records**
+- **82 utility-routing clusters**
+- **487 source-research candidates**
+- **8 unresolved research candidates**
+- **12 source-maintenance priority records**
+- No duplicate source IDs.
+- No remaining cross-core/supplemental title duplicates.
+- Four degraded fail-closed core records remain unchanged: `pattaya-city-live`, `takayama-miyagawa-current-image`, `jungfrau-region`, and `chidori-sakura`.
+
+### Remaining unresolved-source truth
+The unresolved queue was rechecked rather than promoted for volume:
+- Uruguay / AntelTV: Antel still confirms cameras around Uruguay, but exact candidate playback may require login/registration and current public target resolution is not clean enough; keep unresolved.
+- Montserrat / MVO: official remote cameras remain active 24 hours and record imagery, but the public still-image freshness timestamp remains unresolved; keep unresolved.
+- Mauritius: official tourism still advertises 13 webcams / “See Mauritius live,” but the current webcam handoff remains unreliable; keep unresolved.
+- New Caledonia / Kuto: known tourism-office image endpoint remains insufficiently timestamped for ERN currentness certification; keep unresolved.
+- Zambia / Shenton: historical/current webcam references remain, but no durable currently-live public target is verified; keep unresolved.
+- Guam: government live-streaming surface exists, but scenic destination-camera purpose/target is still not established; keep unresolved.
+
+### Revenue truth preserved
+- Affiliate revenue readiness remains governed by `data/affiliate-revenue-readiness.json` and `data/affiliate-activation.json`.
+- Do not inflate the human-verified Travelpayouts destination-link count without owner verification evidence.
+- Research-only opportunities are not revenue-active links.
+- Public commercial activation, disclosure, exact-link verification and commission-neutral ranking safeguards remain unchanged.
+
+### Protected invariants
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; commercial value cannot affect Earth truth, health, currentness, ranking or editorial prominence; existing lean-core / performance ceilings remain enforced.
+
+### Next autonomous lane
+Continue from this checkpoint by:
+1. resolving the remaining eight research candidates only when exact current/live evidence becomes strong enough;
+2. prioritizing genuinely new countries/territories and provider diversity over alternate IDs;
+3. favoring exact verified links from already-active partners over accumulating more commercial program names;
+4. continuing source-health and dedupe maintenance before volume growth;
+5. requiring matching successful Pages + Operations on the same content SHA before the next canonical production checkpoint.
