@@ -3,7 +3,8 @@ const x=JSON.parse(fs.readFileSync("data/distribution-channels.json","utf8"));
 const connected=(x.channels||[]).filter(c=>c.state==="CONNECTED");
 const pending=(x.channels||[]).filter(c=>c.state!=="CONNECTED");
 const websiteShareReady=x.website?.storyDeepLinks===true&&x.website?.nativeWebShare===true&&x.website?.copyLinkFallback===true;
-const aiSearchReady=x.aiSearch?.robotsPublished===true&&x.aiSearch?.sitemapPublished===true&&x.aiSearch?.oaiSearchBotAllowed===true&&x.aiSearch?.structuredSiteIdentity===true;
+const indexNowReady=x.aiSearch?.indexNowPublished===true&&String(x.aiSearch?.indexNowKeyLocation||"").startsWith("https://earthrightnow.app/");
+const aiSearchReady=x.aiSearch?.robotsPublished===true&&x.aiSearch?.sitemapPublished===true&&x.aiSearch?.oaiSearchBotAllowed===true&&x.aiSearch?.structuredSiteIdentity===true&&indexNowReady;
 const fail=[];
 if(!websiteShareReady)fail.push("website share readiness incomplete");
 if(!aiSearchReady)fail.push("AI/search discovery readiness incomplete");
@@ -17,6 +18,7 @@ const report={
   phase:"PHASE_5_DISTRIBUTION_READINESS",
   websiteShareReady,
   aiSearchReady,
+  indexNowReady,
   connectedChannels:connected.map(x=>x.id),
   externalConnectionRequired:pending.map(x=>x.id),
   safety:x.safety,
