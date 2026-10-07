@@ -6379,3 +6379,95 @@ No truth, safety, ranking or performance guard was weakened.
 
 ### Protected invariants
 Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
+
+## Verified offer propagation + fail-closed source-health checkpoint — 2026-10-07 04:46 UTC
+
+Canonical validated content:
+- Content SHA: `8963809c2486e36b15ff716c498533a5ab350a3b`.
+- **Deploy ERN to GitHub Pages #2703** (run 37572781275): SUCCESS.
+- **ERN Operations Check #1483** (run 37572781159): SUCCESS.
+- Pages and Operations validated the same content SHA before this handoff-only commit.
+
+### Sustainable-funding improvement
+Expanded the public travel-offer registry from **53 to 95 verified offers** by propagating already-verified Viator destination links only to ERN places that are genuinely inside the same destination scope.
+
+Added **42 same-scope placements** across:
+- Zermatt / Matterhorn;
+- Dubrovnik;
+- Aruba;
+- Istanbul;
+- Madeira;
+- Innsbruck / Tyrol;
+- Grand Canyon National Park;
+- São Miguel / Azores;
+- Etosha National Park;
+- Faroe Islands / Tórshavn;
+- Shetland Islands / Lerwick.
+
+No new tracked Viator URL was invented. The Viator layer still uses **23 distinct tracked destination URLs**; the new placements simply allow matching live places inside those destinations to surface the same verified destination-level action.
+
+Current revenue-eligible truth model is synchronized to:
+- **94 current public affiliate placements**
+- **89 healthy ERN places**
+- by program: **Viator 68 / Klook 18 / Tiqets 5 / Welcome Pickups 3**
+- one verified offer remains fail-closed where its Earth source is degraded/off-season.
+
+The visitor model remains **discover → explore → plan**. Commercial availability remains downstream from Earth discovery and cannot affect source truth, health, currentness, ranking or editorial prominence.
+
+### Release-guard repairs
+Two failed Pages attempts were intentionally resolved without weakening safeguards.
+
+**Pages #2701**
+- commercial preflight correctly detected that the public revenue-readiness counts had not been synchronized after the 42 new same-scope placements;
+- fixed by updating `data/affiliate-revenue-readiness.json` to the actual current source-eligible placement counts.
+
+**Pages #2702**
+- performance preflight correctly detected accidental pretty-serialization of compact `data/sources.json`, which pushed `sources.json` and the lean core over their fixed ceilings;
+- source-research stale-debt guard also correctly rejected treating Pattaya as current before exact individual-camera playback proof existed;
+- fixed by restoring compact core serialization below the existing 300 KB source-file limit and retaining Pattaya fail-closed.
+
+No performance ceiling, commercial gate, research-debt rule or truth rule was raised or relaxed.
+
+### Pattaya source-health truth
+Pattaya City's official CCTV portal is reachable again and currently reports a 600-camera system with named Pattaya Beach/Jomtien targets. However, the public **Live View currently reports 0 active cameras**, and exact individual-camera playback was not independently verified.
+
+Therefore:
+- `pattaya-city-live` remains **DEGRADED**;
+- it remains LINK_ONLY / EXTERNAL;
+- it stays in persistent playback-evidence debt;
+- do not promote it HEALTHY until one or more exact public camera targets can be independently confirmed playing current footage.
+
+### Current catalog / operating state
+- core source records: **328**
+- supplemental Search/Explore records: **394**
+- combined source records: **722**
+- healthy source records: **718**
+- healthy distinct searchable places: **713**
+- travel-offer registry: **95 verified offers**
+- current revenue-eligible affiliate placements: **94**
+- commercial research opportunities: **462**
+- utility-routing clusters: **84**
+- source-research candidates: **490**
+- unresolved exact-current research queue: **4**
+- source-maintenance priority records: **20**
+- intentionally degraded/fail-closed core records: `pattaya-city-live`, `takayama-miyagawa-current-image`, `jungfrau-region`, `chidori-sakura`.
+
+Remaining unresolved exact-current research:
+- Montevideo / Pocitos Beach;
+- Montevideo / Plaza Independencia;
+- Soufrière Hills / Montserrat;
+- Île des Pins / Kuto, New Caledonia.
+
+Keep all four unresolved until exact current/playback or reliable freshness evidence is strong enough.
+
+### Next autonomous lane
+1. Continue qualified audience growth and destination re-entry improvements before adding commercial density.
+2. Reuse an existing verified destination link only when a place is genuinely inside the same geographic destination scope.
+3. The only obvious remaining same-scope non-Viator propagations identified in this pass are Singapore/Klook → Woodlands Causeway and Fiji/Klook → Castaway Island; validate carefully before landing.
+4. Continue exact-current source repair for the four unresolved research candidates and the four degraded core records without weakening fail-closed truth.
+5. Continue source-health / dedupe maintenance before large catalog growth.
+6. Require matching successful Pages + Operations validation on the same content SHA before the next canonical checkpoint.
+
+### Protected invariants
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
+
