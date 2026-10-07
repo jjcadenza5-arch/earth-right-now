@@ -64,6 +64,7 @@ await cp(new URL("../review/",import.meta.url),new URL("review/",dist),{recursiv
 await cp(new URL("../sitemap.xml",import.meta.url),new URL("sitemap.xml",dist));
 await cp(new URL("../updates.xml",import.meta.url),new URL("updates.xml",dist));
 await cp(new URL("../robots.txt",import.meta.url),new URL("robots.txt",dist));
+await cp(new URL("../indexnow-key.txt",import.meta.url),new URL("indexnow-key.txt",dist));
 await cp(new URL("../CNAME",import.meta.url),new URL("CNAME",dist));
 await cp(new URL("../manifest.webmanifest",import.meta.url),new URL("manifest.webmanifest",dist));
 await cp(new URL("../service-worker.js",import.meta.url),new URL("service-worker.js",dist));
