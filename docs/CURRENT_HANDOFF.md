@@ -5879,3 +5879,69 @@ Continue expanding both sides:
 5. prefer one best provider per user need at a destination, with alternatives retained as fallbacks/research;
 6. continue dedupe/source-health maintenance;
 7. require matching Pages + Operations SUCCESS on the same content SHA before each new canonical checkpoint.
+
+
+## Affiliate revenue-readiness truth checkpoint — 2026-10-07 01:54 UTC
+
+Canonical validated content:
+- Content commit: `0810a83e753b87ed637b073cd673cd3a616308b7`.
+- **Deploy ERN to GitHub Pages #2684** (run 37559140274): SUCCESS.
+- **ERN Operations Check #1465** (run 37559140277): SUCCESS.
+- **ERN JavaScript Syntax Check #1068** (run 37559140285): SUCCESS.
+- Pages, Operations, and syntax validation all passed on the same content SHA before this handoff-only commit.
+
+### Revenue truth layer
+Added `data/affiliate-revenue-readiness.json` so ERN now explicitly separates:
+1. research-only commercial opportunities;
+2. account/program availability;
+3. exact tracked-link verification;
+4. actual public revenue-active placement;
+5. rejected/unavailable programs.
+
+The core earning rule is now encoded in repository truth:
+- ERN can earn only when a visitor uses a valid tracked affiliate surface and completes an eligible attributed transaction under that partner's rules.
+- A commercial research record, ordinary untracked link, or merely available program does **not** count as revenue-producing.
+
+Current verified evidence recorded in the truth layer:
+- Viator relationship/tracked-link capability remains active.
+- Travelpayouts human-verified destination links: **11 total**
+  - Klook: **8**
+  - Tiqets: **2**
+  - Welcome Pickups: **1**
+- These are verified tracking-capable destination links; revenue still depends on actual public placement, visitor click attribution, eligible purchase, and the partner's rules.
+
+### Release guard strengthened
+`scripts/commercial-placement-preflight.mjs` now cross-checks the revenue-readiness file against canonical activation evidence:
+- verified Travelpayouts destination-link totals and per-program counts must match `affiliate-activation.json`;
+- Viator active state must match canonical activation evidence;
+- exact tracked-link and manual-verification gates must remain ON;
+- automatic affiliate placement and link rewriting must remain OFF;
+- commission cannot affect Earth ranking.
+
+The build now fails if ERN's revenue-readiness claims drift away from the actual verified affiliate state.
+
+### Research queue discipline
+During this checkpoint, remaining unresolved source candidates were rechecked conservatively:
+- Mauritius Now still advertises a Web CAM entry, but the official `/webcams-mauritius/` handoff currently returns 404; keep unresolved.
+- Shenton Safaris / Zambia remains operational and current as a safari provider, but no durable current public webcam route was resolved; keep unresolved.
+- Montserrat, New Caledonia and Guam remain unresolved under their existing exact-currentness/purpose gates.
+
+No questionable source was promoted merely to increase count.
+
+### Protected invariants
+- Watch Earth remains in-ERN-playback-only.
+- LINK_ONLY / EXTERNAL sources remain outside Watch Earth.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- No paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting, or unverified partner activation.
+- Commercial value cannot affect Earth source truth, health, currentness, ranking or editorial prominence.
+- Existing performance / lean-core ceilings remain enforced.
+
+### Next autonomous lane
+Continue from this checkpoint by:
+1. converting a small number of the best already-active-partner opportunities into exact verified links when owner-side link generation is available, rather than simply accumulating partner names;
+2. keeping direct-program diversification as research until real owner approval exists;
+3. continuing geographically diverse current/live source expansion and unresolved-source resolution conservatively;
+4. preserving one-best-provider-per-user-need presentation with fallbacks held in research;
+5. continuing source-health / dedupe maintenance;
+6. requiring matching Pages + Operations SUCCESS on the same content SHA before the next canonical production checkpoint.
