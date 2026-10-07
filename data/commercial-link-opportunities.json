@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T01:25:00Z",
+  "generatedAt": "2026-10-07T02:17:45Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4797,16 +4797,17 @@
       "id": "viator-lesotho",
       "destination": "Lesotho / Maluti Mountains",
       "placeIds": [
-        "lesotho-afriski"
+        "lesotho-afriski",
+        "lesotho-maliba-lodge"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "ERN now has a current Lesotho mountain view. Viator currently lists dedicated Lesotho tours and Sani Pass experiences reaching the mountain kingdom, so a country-level planning bridge is useful without implying Afriski itself is included.",
+      "reason": "Lesotho now has both Afriski and Maliba current-view coverage; keep one country/highlands Viator planning path rather than duplicate camera-level offers.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Lesotho/d21903-ttd",
       "publicInventoryEvidence": "Current Viator Lesotho inventory includes multi-day Lesotho cultural/mountain tours and multiple Sani Pass day trips.",
-      "nextAction": "Generate one owner-side Lesotho destination-level tracked link and manually verify it; do not imply that a specific tour visits Afriski unless the itinerary explicitly says so."
+      "nextAction": "Generate one exact owner-side Lesotho/highlands link only if current inventory is useful; keep placement downstream from discovery."
     },
     {
       "id": "viator-great-smoky-mountains",
@@ -7347,6 +7348,34 @@
       "publicInventoryEvidenceUrl": "https://www.expedia.com/Destinations-In-San-Marino.d11720.Hotel-Destinations",
       "publicInventoryEvidence": "Current Expedia San Marino destination inventory exposes bookable hotels and recent guest-review activity.",
       "nextAction": "Prefer the Expedia Group Travel Creator Program only after owner account approval; generate an exact tracked destination/property link before any public placement."
+    },
+    {
+      "id": "viator-murchison-falls-uganda",
+      "destination": "Murchison Falls National Park / Uganda",
+      "placeIds": [
+        "uganda-chobe-safari-lodge"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "safari-activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Current Viator inventory has 100+ Murchison Falls National Park tours and current 2026 safari products; this is a strong post-discovery bridge for the Chobe live view.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Uganda-attractions/Murchison-Falls-National-Park/d5575-a22144",
+      "publicInventoryEvidence": "Current Viator Murchison Falls inventory shows 100+ results and active 2026 safari products.",
+      "nextAction": "Generate one exact owner-side Murchison Falls destination or safari link and manually verify it before any public activation."
+    },
+    {
+      "id": "airalo-uganda-connectivity",
+      "destination": "Uganda connectivity utility",
+      "placeIds": [
+        "uganda-chobe-safari-lodge"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P2_UTILITY",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Connectivity can be useful after a visitor chooses Uganda; keep it secondary to the safari/activity path.",
+      "nextAction": "Confirm Uganda inventory and owner-project availability before generating any tracked link; use at most one connectivity provider."
     }
   ]
 }

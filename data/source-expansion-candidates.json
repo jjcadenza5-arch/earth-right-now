@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T01:25:00Z",
+  "generatedAt": "2026-10-07T02:17:45Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -7096,6 +7096,34 @@
       "evidence": "Liechtenstein Tourism currently lists Eschen as a public webcam at about 450 m elevation.",
       "verifiedAt": "2026-10-07T01:25:00Z",
       "promotedAt": "2026-10-07T01:25:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "lesotho-maliba-lodge-live",
+      "title": "Maliba Lodge — Tsehlanyane National Park",
+      "country": "Lesotho",
+      "region": "Tsehlanyane National Park / Leribe",
+      "provider": "Maliba Lodge",
+      "sourcePage": "https://maliba-lodge.com/live-webcams/",
+      "priority": "P1_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Maliba Lodge currently exposes two first-party live webcams and states they update every 15 minutes.",
+      "verifiedAt": "2026-10-07T02:17:45Z",
+      "promotedAt": "2026-10-07T02:17:45Z",
+      "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "uganda-chobe-safari-lodge-live",
+      "title": "Chobe Safari Lodge — Bush Lounge Live Cam",
+      "country": "Uganda",
+      "region": "Murchison Falls National Park",
+      "provider": "Chobe Safari Lodge",
+      "sourcePage": "https://chobelodgeuganda.com/live-cam/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Chobe Safari Lodge currently exposes a dedicated LIVE CAM page with live footage from its hidden Bush Lounge.",
+      "verifiedAt": "2026-10-07T02:17:45Z",
+      "promotedAt": "2026-10-07T02:17:45Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
     }
   ],
