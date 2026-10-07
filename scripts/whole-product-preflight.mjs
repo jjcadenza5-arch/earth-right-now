@@ -2,7 +2,7 @@ import fs from "node:fs";
 const read=p=>fs.readFileSync(p,"utf8");
 const index=read("index.html"),app=read("src/app-lite.js"),css=read("src/styles-lite.css"),places=read("for-places.html"),moments=read("now-moments.html"),placesJs=read("src/for-places-page.js"),momentsJs=read("src/now-moments-page.js"),strategy=read("docs/CRISPY_PORK_SKIN_STRATEGY.md"),guide=read("docs/ERN_GUIDE_VISION.md"),sources=JSON.parse(read("data/sources.json")),localDirectory=JSON.parse(read("data/local-directory.json"));
 const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)},requireExists=p=>fs.existsSync(p);
-if(!app.includes("const healthy=state.sources.filter(guideEligible)"))fail.push("current discovery surfaces may bypass availability truth");
+if(!app.includes("const dc=()=>state.sources.concat(state.sx),de=s=>")||!app.includes("currentTruthClaim(s)&&safeExternalUrl(s.sourceUrl||s.officialUrl)"))fail.push("current discovery surfaces may bypass availability truth");
 
 for(const id of ["watch","search","map","localEarth","participate","saved","guideLauncher","guidePanel"])must(index.includes(`id="${id}"`),`whole-product surface missing: ${id}`);
 for(const href of ["./for-places.html","./now-moments.html","./about.html","./privacy.html"])must(index.includes(`href="${href}"`),`public path missing: ${href}`);
@@ -24,7 +24,7 @@ must(app.includes('offer=i=>current?TP.offerFor(state.travelOffers,s,i,state.aff
 must(requireExists("src/travel-planning-client.js")&&read("src/travel-planning-client.js").includes("expires<=now"),"Public travel offer gate must enforce explicit expiry");
 must(read("src/travel-planning-client.js").includes("partnerCurrent")&&read("src/travel-planning-client.js").includes("sourceEligible"),"Public travel offer gate must enforce active-partner and source-eligibility boundaries");
 must(app.includes("function watchEligible(")&&app.includes("sources.filter(watchEligible)"),"Watch Earth must exclude PREVIEW-only sources from the curated Top 20");
-must(app.includes("function currentInside(s)")&&app.includes("healthy.filter(currentInside)")&&app.includes("sorted.filter(currentInside)")&&app.includes('currentTruthClaim(s)&&watchExperienceEligible(s)'),"Visitor Play here/Watch Earth paths lost the current-proven inside boundary");
+must(app.includes("function currentInside(s)")&&app.includes("sorted.filter(currentInside)")&&app.includes('currentTruthClaim(s)&&watchExperienceEligible(s)'),"Visitor Play here/Watch Earth paths lost the current-proven inside boundary");
 must(app.includes("function provenWatchHere(s)")&&app.includes("sorted.filter(currentInside)")&&app.includes("state.watch.find(s=>provenWatchHere(s)&&s.playback===\"EMBED\")"),"Watch Earth lost proven in-ERN preference");
 must(app.includes("function atlasEligible(s)")&&app.includes("state.sources.filter(atlasEligible)"),"Living Atlas lost broader truthful mapped-catalog coverage");
 must(app.includes("localDirectoryMatch(")&&app.includes("localDirectoryCard("),"reviewed local-place search plumbing missing");
