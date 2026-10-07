@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T02:51:50Z",
+  "generatedAt": "2026-10-07T03:00:00Z",
   "purpose": "Make ERN monetization truth explicit: distinguish research coverage from links that can actually earn affiliate commission.",
   "earningRule": "ERN can earn only when a visitor follows a valid tracked affiliate link (or other approved tracked affiliate surface) and completes an eligible transaction under that partner's attribution and commission rules.",
   "states": {
@@ -144,22 +144,23 @@
     "doNotPromiseCommissionOnEveryPurchase": true
   },
   "nextAutonomousWork": [
-    "Keep the public revenue-active count synchronized with current verified travel offers and enabled partners.",
-    "Prefer converting a small number of high-fit existing partner opportunities into verified exact links over accumulating undifferentiated partner names.",
-    "Do not activate direct partner programs until owner approval/account acceptance is real.",
-    "Preserve one-best-provider-per-user-need presentation and keep alternative programs as fallback research."
+    "Prefer converting high-fit existing opportunities from already-active partners into exact destination-level tracked links over adding more research rows.",
+    "For Viator, reuse only the owner-verified ERN affiliate identity on exact current destination routes; record whether each exact URL received a separate owner click-through instead of implying it.",
+    "For Travelpayouts short links, do not invent URLs: generate and verify them through the owner project before activation.",
+    "Keep public revenue-active counts synchronized with current offers and partner verification horizons.",
+    "Preserve one-best-provider-per-user-need presentation and commission-neutral Earth ranking."
   ],
   "currentPublicRevenueActive": {
-    "offerCount": 31,
-    "uniquePlaceCount": 31,
+    "offerCount": 41,
+    "uniquePlaceCount": 36,
     "byProgram": {
-      "viator": 6,
+      "viator": 16,
       "klook": 17,
       "tiqets": 5,
       "welcome-pickups": 3
     },
     "uniqueTrackedUrlsByProgram": {
-      "viator": 5,
+      "viator": 15,
       "klook": 11,
       "tiqets": 4,
       "welcome-pickups": 3
