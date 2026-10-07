@@ -62,6 +62,8 @@ on:
       - "scripts/autonomous-work-status.mjs"
       - "data/distribution-channels.json"
       - "data/affiliate-partners.json"
+      - "data/analytics-deployment.json"
+      - "data/traffic-growth-priorities.json"
       - "data/affiliate-platform-research.json"
       - "data/commercial-link-opportunities.json"
       - "data/business-readiness.json"
