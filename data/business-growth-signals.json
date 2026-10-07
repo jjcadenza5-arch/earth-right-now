@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T03:45:00Z",
+  "generatedAt": "2026-10-07T15:50:00Z",
   "objective": "Balance visitor value, organic audience growth and sustainable commission funding. Use first-party aggregate behavior and partner-confirmed evidence; never let commercial value change Earth ranking, source truth or currentness.",
   "currentMilestone": "GROW_ORGANIC_VISITORS_REPEAT_USE_AND_USEFUL_TRIP_PLANNING_WHILE_SEEKING_FIRST_PARTNER_CONFIRMED_COMMISSION",
   "signals": [
@@ -74,21 +74,22 @@
     "noAutomaticProgramActivation": true
   },
   "currentOperatingEvidence": {
-    "evidenceSource": "ERN Operations #1459 aggregate analytics snapshot",
+    "evidenceSource": "ERN Operations #1587 aggregate analytics snapshot / traffic semantics v2 production checkpoint",
     "windowDays": 30,
-    "observedAt": "2026-10-06T15:08:23Z",
-    "approximateUniqueVisitors": 52,
-    "pageViews": 294,
-    "returningVisitorsApprox": 0,
-    "googleReferralViews": 17,
+    "observedAt": "2026-10-07T15:42:27Z",
+    "approximateUniqueVisitors": 53,
+    "pageViews": 333,
+    "googleReferralViews": 18,
     "facebookReferralViews": 32,
-    "earthSearches": 25,
-    "zeroResultSearches": 6,
-    "windowOpens": 261,
-    "externalSourceOpens": 72,
-    "travelOptionOpens": 2,
-    "interpretation": "ERN is demonstrating real discovery use, but audience scale and repeat usage are currently a larger constraint than affiliate-program count. Improve the discover → explore → plan path before broadening commercial density.",
-    "caveat": "This is a time-bounded aggregate operating snapshot, not a promise of current traffic, reach, conversion or revenue."
+    "earthSearches": 84,
+    "zeroResultSearches": 36,
+    "windowOpens": 284,
+    "externalSourceOpens": 79,
+    "travelOptionOpens": 8,
+    "metricSemanticsVersion": 2,
+    "cleanDestinationAttributionStartsAt": "2026-10-07T14:55:03Z",
+    "interpretation": "ERN has real discovery and planning activity, but audience scale, repeat use, share behavior and clean post-v2 destination attribution remain the main growth constraints. Use the new v2 boundary for future place/share conclusions rather than mixing legacy place counters with new destination events.",
+    "caveat": "Privacy-preserving rolling aggregate evidence only. Historical rolling totals can contain pre-v2 activity. Clicks do not prove bookings, conversions, commission or revenue."
   },
   "balanceRules": [
     "Visitor value comes first within each experience: show the truthful Earth window before planning actions.",
