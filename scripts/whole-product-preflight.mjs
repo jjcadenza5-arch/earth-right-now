@@ -1,6 +1,6 @@
 import fs from "node:fs";
 const read=p=>fs.readFileSync(p,"utf8");
-const index=read("index.html"),app=read("src/app-lite.js"),css=read("src/styles-lite.css"),places=read("for-places.html"),moments=read("now-moments.html"),placesJs=read("src/for-places-page.js"),momentsJs=read("src/now-moments-page.js"),strategy=read("docs/CRISPY_PORK_SKIN_STRATEGY.md"),guide=read("docs/ERN_GUIDE_VISION.md"),sources=JSON.parse(read("data/sources.json")),localDirectory=JSON.parse(read("data/local-directory.json"));
+const index=read("index.html"),app=read("src/app-lite.js"),css=read("src/styles-lite.css"),places=read("for-places.html"),moments=read("now-moments.html"),placesJs=read("src/for-places-page.js"),momentsJs=read("src/now-moments-page.js"),strategy=read("docs/CRISPY_PORK_SKIN_STRATEGY.md"),guide=read("docs/ERN_GUIDE_VISION.md"),destinationBuilder=read("scripts/build-destination-pages.mjs"),sources=JSON.parse(read("data/sources.json")),localDirectory=JSON.parse(read("data/local-directory.json"));
 const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)},requireExists=p=>fs.existsSync(p);
 if(!app.includes("const dc=()=>state.sources.concat(state.sx),ds=s=>")||!app.includes("de=s=>ds(s)&&currentTruthClaim(s)"))fail.push("current discovery surfaces may bypass availability truth");
 
