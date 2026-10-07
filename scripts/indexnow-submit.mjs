@@ -5,7 +5,7 @@ const key=fs.readFileSync("indexnow-key.txt","utf8").trim();
 if(!/^[A-Za-z0-9-]{8,128}$/.test(key))throw new Error("invalid IndexNow key");
 const feedPath=root.replace(/\/$/,"")+"/updates.xml";
 const xml=fs.readFileSync(feedPath,"utf8");
-const urls=new Set([base+"/",base+"/places/",base+"/countries/",base+"/discover/",base+"/updates.xml"]);
+const urls=new Set([base+"/",base+"/places/",base+"/countries/",base+"/discover/",base+"/updates/",base+"/updates.xml"]);
 for(const m of xml.matchAll(/href="(https:\/\/earthrightnow\.app\/[^"]*)"/g))urls.add(m[1].replace(/&amp;/g,"&"));
 const urlList=[...urls].filter(u=>{try{return new URL(u).host==="earthrightnow.app"}catch{return false}}).slice(0,100);
 const payload={host:"earthrightnow.app",key,keyLocation:base+"/indexnow-key.txt",urlList};
