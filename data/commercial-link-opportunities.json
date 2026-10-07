@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T05:00:00Z",
+  "generatedAt": "2026-10-07T05:53:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -7616,6 +7616,136 @@
       "publicInventoryEvidenceUrl": "https://www.klook.com/en-MY/destination/c49-kuala-lumpur/1-things-to-do/",
       "publicInventoryEvidence": "Current Klook Kuala Lumpur inventory lists roughly 280 activities including major observation decks, museums, tours and attractions.",
       "nextAction": "Confirm owner-project Klook availability, then generate or reuse one exact tracked Kuala Lumpur link only if attribution validates."
+    },
+    {
+      "id": "viator-mumbai-india",
+      "destination": "Mumbai / Maharashtra",
+      "placeIds": [
+        "india-mumbai-siddhivinayak"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Viator currently exposes broad 2026 Mumbai sightseeing, cultural, cruise and transfer inventory.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Mumbai/d953-ttd",
+      "publicInventoryEvidence": "Current Viator Mumbai destination inventory shows 600+ tours and excursions for 2026.",
+      "nextAction": "Generate or reuse one exact owner-side Mumbai tracked destination/activity link after attribution validation; keep placement post-discovery."
+    },
+    {
+      "id": "klook-mumbai-india",
+      "destination": "Mumbai / Maharashtra",
+      "placeIds": [
+        "india-mumbai-siddhivinayak"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Klook currently has a dedicated Mumbai destination page with active 2026 tours, airport transfers and visitor activities.",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-IN/destination/c132-mumbai/",
+      "publicInventoryEvidence": "Current Klook Mumbai destination inventory includes active city tours, Elephanta experiences, transfers and other bookable activities.",
+      "nextAction": "Confirm owner-project Klook availability and generate or reuse one exact Mumbai tracked destination link only after attribution validation."
+    },
+    {
+      "id": "viator-jaipur-india",
+      "destination": "Jaipur / Rajasthan",
+      "placeIds": [
+        "india-jaipur-govind-devji"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Viator currently exposes extensive 2026 Jaipur sightseeing and cultural activity inventory.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Jaipur/d4627-ttd",
+      "publicInventoryEvidence": "Current Viator Jaipur destination inventory lists 700+ results including city tours and major heritage attractions.",
+      "nextAction": "Generate or reuse one exact owner-side Jaipur tracked destination/activity link after attribution validation."
+    },
+    {
+      "id": "klook-jaipur-india",
+      "destination": "Jaipur / Rajasthan",
+      "placeIds": [
+        "india-jaipur-govind-devji"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Klook currently exposes active 2026 Jaipur tours and attraction inventory.",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-US/destination/c149-jaipur/1-things-to-do/",
+      "publicInventoryEvidence": "Current Klook Jaipur activity page lists 71 results including guided city tours and heritage-attraction access.",
+      "nextAction": "Confirm owner-project Klook availability and generate or reuse one exact Jaipur tracked link only after attribution validation."
+    },
+    {
+      "id": "viator-varanasi-india",
+      "destination": "Varanasi / Uttar Pradesh",
+      "placeIds": [
+        "india-varanasi-kashi-vishwanath"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Viator currently exposes active 2026 Varanasi cultural, religious and Ganges-tour inventory.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Varanasi-tours/Cultural-and-Theme-Tours/d22015-g4",
+      "publicInventoryEvidence": "Current Viator Varanasi cultural inventory shows 100+ results, and current tours explicitly include Kashi Vishwanath Corridor and Ganges experiences.",
+      "nextAction": "Generate or reuse one exact owner-side Varanasi tracked destination/activity link after attribution validation."
+    },
+    {
+      "id": "viator-chisinau-moldova",
+      "destination": "Chișinău / Moldova",
+      "placeIds": [
+        "moldova-chisinau-roadcam"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Viator currently exposes active 2026 Chișinău city, cultural and Moldova day-tour inventory.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Chisinau-tours/City-Tours/d25271-g12-c5330",
+      "publicInventoryEvidence": "Current Viator Chișinău city-tour inventory lists 24 results, with broader Moldova cultural and winery inventory also active.",
+      "nextAction": "Generate or reuse one exact owner-side Chișinău tracked destination/activity link only after attribution validation."
+    },
+    {
+      "id": "airalo-india-connectivity",
+      "destination": "India connectivity utility",
+      "placeIds": [
+        "india-varanasi-kashi-vishwanath",
+        "india-mumbai-siddhivinayak",
+        "india-ujjain-mahakaleshwar",
+        "india-tirupati-tirumala",
+        "india-bhuj-swaminarayan",
+        "india-jaipur-govind-devji"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P1_UTILITY",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Airalo currently exposes India-specific eSIM inventory.",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/india-esim",
+      "publicInventoryEvidence": "Current Airalo India page exposes country-specific fixed-data and unlimited eSIM packages.",
+      "nextAction": "Verify Airalo availability in the ERN owner project and generate one India tracked link only if available; keep connectivity optional and post-discovery."
+    },
+    {
+      "id": "airalo-moldova-connectivity",
+      "destination": "Moldova connectivity utility",
+      "placeIds": [
+        "moldova-chisinau-roadcam",
+        "moldova-balti-roadcam",
+        "moldova-soroca-roadcam",
+        "moldova-cahul-roadcam",
+        "moldova-briceni-roadcam",
+        "moldova-ialoveni-roadcam"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P1_UTILITY",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Airalo currently exposes Moldova-specific eSIM inventory.",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/moldova-esim/soroca-mobile-in-5days-unlimited",
+      "publicInventoryEvidence": "Current Airalo Moldova page exposes country-specific eSIM packages on the Orange network.",
+      "nextAction": "Verify Airalo availability in the ERN owner project and generate one Moldova tracked link only if available; keep connectivity optional and post-discovery."
     }
   ]
 }
