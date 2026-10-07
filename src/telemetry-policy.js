@@ -1,4 +1,4 @@
-const ALLOWED=new Set(["page_view","window_opened","place_opened","watch_earth_started","earth_search","earth_search_zero","external_source_opened","travel_option_opened"]);
+const ALLOWED=new Set(["page_view","window_opened","place_opened","watch_earth_started","earth_search","earth_search_zero","external_source_opened","travel_option_opened","share_clicked"]);
 const SEARCH_EVENTS=new Set(["earth_search","earth_search_zero"]);
 function safeSearch(v){
  const s=String(v||"").normalize("NFKC").replace(/\s+/g," ").trim().slice(0,80);
