@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T03:36:00Z",
+  "generatedAt": "2026-10-07T04:38:08Z",
   "purpose": "Make ERN monetization truth explicit: distinguish research coverage from links that can actually earn affiliate commission.",
   "earningRule": "ERN can earn only when a visitor follows a valid tracked affiliate link (or other approved tracked affiliate surface) and completes an eligible transaction under that partner's attribution and commission rules.",
   "states": {
@@ -151,21 +151,21 @@
     "Preserve one-best-provider-per-user-need presentation and commission-neutral Earth ranking."
   ],
   "currentPublicRevenueActive": {
-    "offerCount": 52,
-    "uniquePlaceCount": 47,
+    "offerCount": 94,
+    "uniquePlaceCount": 89,
     "byProgram": {
-      "viator": 26,
+      "viator": 68,
       "klook": 18,
       "tiqets": 5,
       "welcome-pickups": 3
     },
     "uniqueTrackedUrlsByProgram": {
       "viator": 23,
-      "klook": 11,
+      "klook": 10,
       "tiqets": 4,
       "welcome-pickups": 3
     },
     "definition": "Verified current affiliate offers exposed through ERN's public travel-offer layer, backed by an enabled current affiliate partner, and attached to a currently HEALTHY LIVE_VIDEO / LIVE_IMAGE / EXTERNAL_LIVE ERN place across core or supplemental discovery.",
-    "note": "52 affiliate placements across 47 currently healthy ERN places are revenue-eligible today. The 53rd verified offer (Tokyo/Chidori) remains fail-closed while its Earth source is degraded/off-season. Four recent placements reuse already owner-verified destination-level links for genuinely same-destination places; no tracking URL was invented."
+    "note": "94 affiliate placements across 89 currently healthy ERN places are revenue-eligible today. The Tokyo/Chidori offer remains fail-closed while its Earth source is degraded/off-season. Forty-two new placements reuse already-verified Viator destination-level links only for genuinely same-destination places; no new tracked URL or partner approval was invented."
   }
 }
