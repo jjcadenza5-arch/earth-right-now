@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T02:17:45Z",
+  "generatedAt": "2026-10-07T02:34:31Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1811,6 +1811,22 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_DESTINATION_AND_TRACKED_LINK_REQUIRED",
       "rule": "After the visitor chooses Murchison Falls, expose at most one exact safari/activity action and one optional connectivity action. Commercial availability must not affect Earth ranking."
+    },
+    {
+      "id": "namibia-etosha-planning",
+      "intent": "safari-and-connectivity",
+      "preferredProgramCandidates": [
+        "viator",
+        "airalo"
+      ],
+      "placeIds": [
+        "namibia-okaukuejo-waterhole",
+        "namibia-kambaku-waterhole",
+        "namibia-safarihoek-etosha",
+        "namibia-onguma-fort"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_DESTINATION_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After a visitor chooses Etosha/Namibia, expose at most one exact safari/activity action and one optional connectivity action. Do not infer lodge transfers or pickup coverage; commercial availability never affects Earth ranking."
     }
   ],
   "islandTravelClusters": [

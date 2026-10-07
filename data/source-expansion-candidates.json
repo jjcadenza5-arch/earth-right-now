@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T02:20:41Z",
+  "generatedAt": "2026-10-07T02:34:31Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -7139,6 +7139,34 @@
       "verifiedAt": "2026-10-07T02:20:41Z",
       "promotedAt": "2026-10-07T02:20:41Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "namibia-safarihoek-etosha-live",
+      "title": "Safarihoek — Etosha Heights Waterhole",
+      "country": "Namibia",
+      "region": "Etosha Heights",
+      "provider": "Africam / Safarihoek",
+      "sourcePage": "https://africam.com/lodge/safarihoek/",
+      "priority": "P1_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Africam's current Safarihoek page explicitly presents an Africam live camera/live stream and recent September 2026 wildlife highlights.",
+      "verifiedAt": "2026-10-07T02:34:31Z",
+      "promotedAt": "2026-10-07T02:34:31Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "namibia-onguma-fort-live",
+      "title": "Onguma — The Fort Waterhole",
+      "country": "Namibia",
+      "region": "Etosha eastern border",
+      "provider": "Africam / Onguma",
+      "sourcePage": "https://africam.com/lodge/onguma-the-fort-live-stream-africam-live-camera-bordering-etosha-namibia/",
+      "priority": "P1_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Africam's current Onguma page explicitly presents the Onguma live stream and recent September 2026 wildlife highlights.",
+      "verifiedAt": "2026-10-07T02:34:31Z",
+      "promotedAt": "2026-10-07T02:34:31Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
     }
   ],
   "notes": [

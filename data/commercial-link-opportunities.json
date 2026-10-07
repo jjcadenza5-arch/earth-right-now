@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T02:17:45Z",
+  "generatedAt": "2026-10-07T02:34:31Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2087,16 +2087,18 @@
       "destination": "Etosha National Park / Namibia",
       "placeIds": [
         "namibia-okaukuejo-waterhole",
-        "namibia-kambaku-waterhole"
+        "namibia-kambaku-waterhole",
+        "namibia-safarihoek-etosha",
+        "namibia-onguma-fort"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has healthy Namibia wildlife views at Okaukuejo and Kambaku; one Namibia/Etosha safari planning bridge can serve the wildlife-discovery journey where the exact itinerary scope is clearly disclosed.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Windhoek/4-Day-Etosha-Swakopmund/d5574-9289P3",
-      "publicInventoryEvidence": "Current Viator inventory includes multi-day Etosha National Park safari/game-drive products from Windhoek.",
-      "nextAction": "Generate one owner-side Etosha National Park Viator tracked destination/search link and manually verify it before public activation."
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Etosha-National-Park/d50343-ttd",
+      "publicInventoryEvidence": "Current 2026 Viator Etosha inventory includes safari/game-drive products centered on Etosha National Park and its waterholes.",
+      "nextAction": "Generate one owner-side Etosha tracked destination/search link and manually verify attribution before public activation; do not imply a specific lodge pickup unless the chosen product states it."
     },
     {
       "id": "viator-nuuk",
@@ -7376,6 +7378,26 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "reason": "Connectivity can be useful after a visitor chooses Uganda; keep it secondary to the safari/activity path.",
       "nextAction": "Confirm Uganda inventory and owner-project availability before generating any tracked link; use at most one connectivity provider."
+    },
+    {
+      "id": "airalo-namibia-connectivity",
+      "destination": "Namibia connectivity utility",
+      "placeIds": [
+        "namibia-okaukuejo-waterhole",
+        "namibia-kambaku-waterhole",
+        "namibia-safarihoek-etosha",
+        "namibia-onguma-fort",
+        "swakopmund-namibia",
+        "windhoek-namibia"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P1_UTILITY",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Airalo currently exposes Namibia-specific eSIM inventory; this is a useful post-discovery utility for remote-road and safari planning.",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/namibia-esim",
+      "publicInventoryEvidence": "Current Airalo Namibia page offers country-specific data packages.",
+      "nextAction": "Verify Airalo availability in the ERN owner project and generate one Namibia tracked link only if available; never let connectivity affect discovery ranking."
     }
   ]
 }
