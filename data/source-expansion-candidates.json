@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T02:37:27Z",
+  "generatedAt": "2026-10-07T03:30:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -24,9 +24,10 @@
       "sourcePage": "https://www.wien.info/en/see-do/discover-vienna/webcam-379930",
       "evidence": "Official Vienna tourism page describes a live webcam covering University of Vienna, City Hall, Parliament, Volksgarten and museums.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-02T16:50:00Z",
-      "verification": "Owner confirmed live playback working on official provider page."
+      "verification": "Canonical core source vienna-city-hall-ringstrasse already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "prague-petrin-tower",
@@ -139,9 +140,10 @@
       "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
       "evidence": "Visit Finland describes a live webcam over Lake Pielinen from Koli.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-02T16:50:00Z",
-      "verification": "Owner confirmed live playback working on official provider page."
+      "verification": "Canonical core source koli-lake-pielinen already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "levi-ski-resort",
@@ -165,9 +167,10 @@
       "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
       "evidence": "Visit Finland describes a live stream from Turku port toward the archipelago.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-02T16:50:00Z",
-      "verification": "Owner confirmed live playback working on official provider page."
+      "verification": "Canonical core source turku-port-archipelago already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "kilpisjarvi-saana",
@@ -321,9 +324,10 @@
       "sourcePage": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
       "evidence": "Visit Finland explicitly describes this as a real-time webcam overlooking Market Square and South Harbour.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-02T16:50:00Z",
-      "verification": "Owner confirmed live playback working on official provider page."
+      "verification": "Canonical core source helsinki-market-square-south-harbour already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "salzburg-mirabell-old-town",
@@ -1460,11 +1464,12 @@
       "evidence": "Istanbul Metropolitan Municipality says it streams live from historical and touristic spots and lists Sultanahmet among its touristic cameras.",
       "researchEvidence": "Official municipal live-camera system covering landmark views. Treat each camera as a distinct place only when it represents a genuinely distinct destination.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "humanCheckHint": "Open the official Istanbul touristic-camera page, choose SULTANAHMET, and confirm the live stream plays.",
       "promotedPlaceId": "istanbul-sultanahmet",
       "verifiedAt": "2026-10-03T09:50:00Z",
-      "verification": "Promoted from current official public-web evidence: provider explicitly exposes live/real-time camera service."
+      "verification": "Canonical core source istanbul-sultanahmet-official already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "istanbul-bosphorus-live",
@@ -1494,11 +1499,12 @@
       "evidence": "Denpasar City's official ATCS site states it provides real-time traffic monitoring with 100+ integrated CCTV cameras and live streaming at strategic locations.",
       "researchEvidence": "Strong official-government real-time source for urban Bali. It is traffic-oriented rather than scenic, so only a visually useful location should be promoted.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "humanCheckHint": "Open the official Denpasar ATCS live-stream page and choose one visually useful city location; confirm real-time motion.",
       "promotedPlaceId": "denpasar-city-live",
       "verifiedAt": "2026-10-03T09:50:00Z",
-      "verification": "Promoted from current official public-web evidence: provider explicitly exposes live/real-time camera service."
+      "verification": "Canonical core source denpasar-atcs-live already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "antarctica-casey-station",
@@ -1782,9 +1788,10 @@
       "sourcePage": "https://webserver2.ineter.gob.ni/webcam/v_sancristobal/index.html",
       "evidence": "INETER's current volcano camera index states Nicaragua volcano webcam images are transmitted in real time every 30 seconds or 1 minute; the San Cristóbal detail page states automatic refresh at about five minutes.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
-      "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
+      "verification": "Canonical core source nicaragua-san-cristobal-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "nicaragua-telica-current-image",
@@ -1795,9 +1802,10 @@
       "sourcePage": "https://webserver2.ineter.gob.ni/geofisica/geofisica/webcam/v_telica2/index.html",
       "evidence": "INETER states the Telica crater image refreshes automatically about every five minutes; its current volcano index describes real-time images every 30 seconds or 1 minute.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
-      "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
+      "verification": "Canonical core source nicaragua-telica-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "nicaragua-momotombo-current-image",
@@ -1808,9 +1816,10 @@
       "sourcePage": "https://web-geofisica.ineter.gob.ni/webcam/v_momotombo/index.html",
       "evidence": "INETER states Momotombo webcam images refresh automatically about every five minutes and are used for live visual monitoring.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
-      "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
+      "verification": "Canonical core source nicaragua-momotombo-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "nicaragua-cerro-negro-current-image",
@@ -1821,9 +1830,10 @@
       "sourcePage": "https://www.ineter.gob.ni/volcanes-en-nicaragua/volcan-cerro-negro-nicaragua/",
       "evidence": "INETER's current Cerro Negro page says the image updates automatically about every minute.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
-      "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
+      "verification": "Canonical core source nicaragua-cerro-negro-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "guatemala-fuego-current-image",
@@ -1834,9 +1844,10 @@
       "sourcePage": "https://insivumeh.gob.gt/camaras-de-vigilancia-volcanica/",
       "evidence": "INSIVUMEH states its Fuego/Santiaguito platform updates every minute with the most recent images and provides a six-hour photographic record.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
-      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
+      "verification": "Canonical core source guatemala-fuego-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "guatemala-santiaguito-current-image",
@@ -1847,9 +1858,10 @@
       "sourcePage": "https://insivumeh.gob.gt/camaras-de-vigilancia-volcanica/",
       "evidence": "INSIVUMEH states its Fuego/Santiaguito platform updates every minute with the most recent images and provides a six-hour photographic record.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
-      "verification": "Official provider documents refreshed current imagery; promoted under ERN quasi-live/searchable policy as LIVE_IMAGE, not Watch Earth live video."
+      "verification": "Canonical core source guatemala-santiaguito-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "nz-ruapehu-current-image",
@@ -1860,9 +1872,10 @@
       "sourcePage": "https://beta.geonet.org.nz/volcano/monitoring/ruapehu",
       "evidence": "GeoNet documents latest timestamped volcano-camera images updated about every 10 minutes.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:45:00Z",
-      "verification": "Official timestamped quasi-live image source; searchable only, not continuous live video."
+      "verification": "Canonical core source nz-ruapehu-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "nz-ngauruhoe-current-image",
@@ -1873,9 +1886,10 @@
       "sourcePage": "https://www.geonet.org.nz/volcano/cameras/ngauruhoe",
       "evidence": "GeoNet documents latest timestamped volcano-camera images updated about every 10 minutes.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:45:00Z",
-      "verification": "Official timestamped quasi-live image source; searchable only, not continuous live video."
+      "verification": "Canonical core source nz-ngauruhoe-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "nz-tongariro-current-image",
@@ -1886,9 +1900,10 @@
       "sourcePage": "https://beta.geonet.org.nz/volcano/monitoring/tongariro",
       "evidence": "GeoNet documents latest timestamped volcano-camera images updated about every 10 minutes.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:45:00Z",
-      "verification": "Official timestamped quasi-live image source; searchable only, not continuous live video."
+      "verification": "Canonical core source nz-tongariro-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "nz-taranaki-current-image",
@@ -1899,9 +1914,10 @@
       "sourcePage": "https://beta.geonet.org.nz/volcano/monitoring/taranakiegmont",
       "evidence": "GeoNet documents latest timestamped volcano-camera images updated about every 10 minutes.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:45:00Z",
-      "verification": "Official timestamped quasi-live image source; searchable only, not continuous live video."
+      "verification": "Canonical core source nz-taranaki-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "nz-raoul-island-current-image",
@@ -1912,9 +1928,10 @@
       "sourcePage": "https://beta.geonet.org.nz/volcano/monitoring/kermadecislands",
       "evidence": "GeoNet documents latest timestamped volcano-camera images updated about every 10 minutes.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:45:00Z",
-      "verification": "Official timestamped quasi-live image source; searchable only, not continuous live video."
+      "verification": "Canonical core source nz-raoul-island-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "nz-whakaari-current-image",
@@ -1925,9 +1942,10 @@
       "sourcePage": "https://beta.geonet.org.nz/volcano/monitoring/whiteisland",
       "evidence": "GeoNet documents latest timestamped volcano-camera images updated about every 10 minutes.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:45:00Z",
-      "verification": "Official timestamped quasi-live image source; searchable only, not continuous live video."
+      "verification": "Canonical core source nz-whakaari-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "nicaragua-masaya-current-image",
@@ -1937,10 +1955,11 @@
       "provider": "INETER",
       "sourcePage": "https://webserver2.ineter.gob.ni/geofisica/webcam/v_masaya/index.html",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "INETER's Masaya webcam page states automatic refresh about every five minutes; the current national volcano index describes real-time camera imagery.",
-      "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
+      "verification": "Canonical core source nicaragua-masaya-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "nicaragua-concepcion-current-image",
@@ -1950,10 +1969,11 @@
       "provider": "INETER",
       "sourcePage": "https://web-geofisica.ineter.gob.ni/webcam/v_concepcion2/index.html",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "INETER states the Concepción image refreshes automatically about every five minutes and is part of its live visual volcano monitoring network.",
-      "verification": "Canonical direct INETER quasi-live source retained in active registry under LIVE_IMAGE/searchable semantics."
+      "verification": "Canonical core source nicaragua-concepcion-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "yellowstone-biscuit-basin-current-image",
@@ -1963,10 +1983,11 @@
       "provider": "U.S. Geological Survey / Yellowstone Volcano Observatory",
       "sourcePage": "https://www.usgs.gov/media/webcams/biscuit-basin-webcam-0",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T04:55:00Z",
       "evidence": "USGS states the Biscuit Basin monitoring camera captures and publishes a new image every 15 minutes; a new camera was installed July 22, 2026.",
-      "verification": "Official USGS refresh cadence verified; promoted as searchable LIVE_IMAGE only, not continuous live video."
+      "verification": "Canonical core source yellowstone-biscuit-basin-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "yellowstone-lake-current-image",
@@ -1976,10 +1997,11 @@
       "provider": "U.S. Geological Survey / Yellowstone Volcano Observatory",
       "sourcePage": "https://www.usgs.gov/media/webcams/webcam-yellowstone-lake",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T04:55:00Z",
       "evidence": "USGS reported the Lake camera reinstalled in September 2026 and states the current camera view updates every 15 minutes.",
-      "verification": "Official USGS refresh cadence verified; promoted as searchable LIVE_IMAGE only, not continuous live video."
+      "verification": "Canonical core source yellowstone-lake-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "mauna-loa-current-image",
@@ -1989,10 +2011,11 @@
       "provider": "U.S. Geological Survey / Hawaiian Volcano Observatory",
       "sourcePage": "https://www.usgs.gov/volcanoes/mauna-loa/webcams",
       "priority": "P2",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:05:00Z",
       "evidence": "USGS HVO labels the Mauna Loa webcam pages as current/live images and states the webcams operate 24/7, subject to weather and equipment interruptions.",
-      "verification": "Official observatory current/timestamped imagery verified; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source mauna-loa-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "alaska-shishaldin-current-image",
@@ -2002,10 +2025,11 @@
       "provider": "Alaska Volcano Observatory",
       "sourcePage": "https://avo.alaska.edu/volcano/shishaldin/activity",
       "priority": "P2",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:05:00Z",
       "evidence": "AVO's current Shishaldin activity page lists multiple webcam views with current timestamps, and the AVO webcam index exposes frequently refreshed dated images.",
-      "verification": "Official observatory current/timestamped imagery verified; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source alaska-shishaldin-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "alaska-augustine-current-image",
@@ -2015,10 +2039,11 @@
       "provider": "Alaska Volcano Observatory",
       "sourcePage": "https://avo.alaska.edu/webcam/view/1036",
       "priority": "P2",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:05:00Z",
       "evidence": "AVO's Augustine webcam page publishes a latest-image UTC timestamp and a rolling 12-hour view; current index timestamps show regular refreshed observations.",
-      "verification": "Official observatory current/timestamped imagery verified; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source alaska-augustine-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "ecuador-sangay-current-image",
@@ -2028,10 +2053,11 @@
       "provider": "Instituto Geofísico EPN",
       "sourcePage": "https://www.igepn.edu.ec/sangay-camaras",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:00:00Z",
       "evidence": "IG-EPN maintains a current Sangay camera page with multiple monitoring cameras; its monitoring documentation says visual/thermal network acquisition varies from about 1 minute to 1 hour depending on surveillance needs.",
-      "verification": "Official scientific/government current-image network verified; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source ecuador-sangay-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "ecuador-tungurahua-current-image",
@@ -2041,10 +2067,11 @@
       "provider": "Instituto Geofísico EPN",
       "sourcePage": "https://www.igepn.edu.ec/tungurahua-camaras",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:00:00Z",
       "evidence": "IG-EPN's current Tungurahua camera page lists three monitoring views; its network documentation states camera acquisition frequency can range from about 1 minute to 1 hour.",
-      "verification": "Official scientific/government current-image network verified; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source ecuador-tungurahua-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "colombia-nevado-del-ruiz-current-image",
@@ -2054,10 +2081,11 @@
       "provider": "Servicio Geológico Colombiano",
       "sourcePage": "https://amenazas.sgc.gov.co/ovsm/camaras/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:00:00Z",
       "evidence": "SGC exposes online/current volcanic surveillance cameras for Nevado del Ruiz and explicitly describes its camera service as real-time monitoring.",
-      "verification": "Official scientific/government current-image network verified; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source colombia-nevado-del-ruiz-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "colombia-galeras-current-image",
@@ -2067,10 +2095,11 @@
       "provider": "Servicio Geológico Colombiano",
       "sourcePage": "https://www2.sgc.gov.co/sgc/volcanes/VolcanGaleras/Paginas/imagenes-en-linea.aspx",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:00:00Z",
       "evidence": "SGC maintains an online-images page for Galeras listing multiple surveillance camera stations; ERN treats this conservatively as current/quasi-live imagery rather than continuous video.",
-      "verification": "Official scientific/government current-image network verified; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source colombia-galeras-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "hong-kong-victoria-harbour-current-photo",
@@ -2080,10 +2109,11 @@
       "provider": "Hong Kong Observatory",
       "sourcePage": "https://www.hko.gov.hk/en/wxinfo/ts/webcam/HMM_photo.htm",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:00:00Z",
       "evidence": "Hong Kong Observatory states this Victoria Harbour webcam takes a picture every five minutes and provides a six-hour animation; its regional weather page describes these as live views.",
-      "verification": "Official five-minute weather-photo source; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source hong-kong-victoria-harbour-current-photo already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "hong-kong-victoria-peak-current-photo",
@@ -2093,10 +2123,11 @@
       "provider": "Hong Kong Observatory",
       "sourcePage": "https://www.hko.gov.hk/en/wxinfo/ts/webcam/VPB_photo.htm",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:00:00Z",
       "evidence": "Hong Kong Observatory states the Victoria Peak camera produces real-time weather photos; the camera page takes a picture every five minutes with a six-hour animation.",
-      "verification": "Official five-minute weather-photo source; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source hong-kong-victoria-peak-current-photo already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "hong-kong-tai-mo-shan-current-photo",
@@ -2106,10 +2137,11 @@
       "provider": "Hong Kong Observatory",
       "sourcePage": "https://www.hko.gov.hk/en/wxinfo/ts/webcam/TM2_photo.htm",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:00:00Z",
       "evidence": "Hong Kong Observatory states the Tai Mo Shan weather camera takes a picture every five minutes and is part of its real-time weather-photo network.",
-      "verification": "Official five-minute weather-photo source; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source hong-kong-tai-mo-shan-current-photo already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "iceland-myvatn-current-image",
@@ -2119,10 +2151,11 @@
       "provider": "Icelandic Meteorological Office",
       "sourcePage": "https://en.vedur.is/weather/observations/webcams/myvatn/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:35:00Z",
       "evidence": "The Icelandic Meteorological Office Mývatn webcam page presents the current image plus a sequence of preceding time steps; ERN treats it as quasi-live/current imagery.",
-      "verification": "Official national meteorological webcam sequence verified; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source iceland-myvatn-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "iceland-hveravellir-current-image",
@@ -2132,10 +2165,11 @@
       "provider": "Icelandic Meteorological Office",
       "sourcePage": "https://en.vedur.is/weather/observations/webcams/hveravellir/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:35:00Z",
       "evidence": "The Icelandic Meteorological Office Hveravellir page shows successive webcam frames at 10-minute intervals.",
-      "verification": "Official national meteorological webcam sequence verified; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source iceland-hveravellir-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "iceland-surtsey-current-image",
@@ -2145,10 +2179,11 @@
       "provider": "Icelandic Meteorological Office",
       "sourcePage": "https://en.vedur.is/weather/observations/webcams/surtsey/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T05:35:00Z",
       "evidence": "The Icelandic Meteorological Office Surtsey webcam page presents the latest image and recent time-step sequence; the associated automated weather station is actively updated.",
-      "verification": "Official national meteorological webcam sequence verified; promoted as searchable LIVE_IMAGE only."
+      "verification": "Canonical core source iceland-surtsey-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "madeira-funchal-current-image",
@@ -2158,10 +2193,11 @@
       "provider": "Madeira Islands Tourism Board",
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "The official Madeira tourism weather page explicitly presents live webcam images for Funchal and other Madeira municipalities.",
-      "verification": "Official tourism live-image semantics satisfy ERN quasi-live searchable policy; not promoted as continuous Watch Earth video."
+      "verification": "Canonical core source madeira-funchal-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "madeira-porto-moniz-current-image",
@@ -2171,10 +2207,11 @@
       "provider": "Madeira Islands Tourism Board",
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "The official Madeira tourism weather page explicitly lists Porto Moniz among its live webcam-image locations.",
-      "verification": "Official tourism live-image semantics satisfy ERN quasi-live searchable policy; not promoted as continuous Watch Earth video."
+      "verification": "Canonical core source madeira-porto-moniz-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "madeira-calheta-current-image",
@@ -2184,10 +2221,11 @@
       "provider": "Madeira Islands Tourism Board",
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "The official Madeira tourism weather page explicitly lists Calheta among its live webcam-image locations.",
-      "verification": "Official tourism live-image semantics satisfy ERN quasi-live searchable policy; not promoted as continuous Watch Earth video."
+      "verification": "Canonical core source madeira-calheta-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "madeira-machico-current-image",
@@ -2197,10 +2235,11 @@
       "provider": "Madeira Islands Tourism Board",
       "sourcePage": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "The official Madeira tourism weather page explicitly lists Machico among its live webcam-image locations.",
-      "verification": "Official tourism live-image semantics satisfy ERN quasi-live searchable policy; not promoted as continuous Watch Earth video."
+      "verification": "Canonical core source madeira-machico-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "taiwan-jiufen-current-image",
@@ -2210,10 +2249,11 @@
       "provider": "Taiwan MyEGov / New Taipei City Government",
       "sourcePage": "https://www.gov.tw/taiwan/index_284467",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "Taiwan's MyEGov page labels this source as Jiufen Old Street real-time imagery and identifies the camera as provided by New Taipei City Government.",
-      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source taiwan-jiufen-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "taiwan-hehuanshan-wuling-current-image",
@@ -2223,10 +2263,11 @@
       "provider": "Taiwan MyEGov / Directorate General of Highways",
       "sourcePage": "https://www.gov.tw/taiwan/index_262969",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "Taiwan MyEGov labels Wuling Pass as real-time imagery and states the camera is installed at 3,275 metres; connectivity can vary with mountain weather.",
-      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source taiwan-hehuanshan-wuling-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "taiwan-yangmingshan-xiaoyoukeng-current-image",
@@ -2236,10 +2277,11 @@
       "provider": "Taiwan MyEGov / National Park Service",
       "sourcePage": "https://www.gov.tw/taiwan/index_298580",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "Taiwan MyEGov labels Xiaoyoukeng as real-time imagery and identifies the source as Yangmingshan National Park.",
-      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source taiwan-yangmingshan-xiaoyoukeng-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "taiwan-green-island-chaikou-current-image",
@@ -2249,10 +2291,11 @@
       "provider": "Taiwan MyEGov / East Coast National Scenic Area",
       "sourcePage": "https://www.gov.tw/taiwan/index_653552",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "Taiwan MyEGov explicitly labels Chaikou snorkeling area as real-time imagery supplied by the East Coast National Scenic Area Administration.",
-      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source taiwan-green-island-chaikou-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "taiwan-kenting-forest-current-image",
@@ -2262,10 +2305,11 @@
       "provider": "Taiwan Forestry and Nature Conservation Agency",
       "sourcePage": "https://www.forest.gov.tw/0010159/0010159",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "Taiwan Forestry's current page is explicitly titled as real-time imagery for the Kenting National Forest Ocean View Tower and was updated in September 2026.",
-      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source taiwan-kenting-forest-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "taiwan-sun-moon-lake-current-image",
@@ -2275,10 +2319,11 @@
       "provider": "Sun Moon Lake National Scenic Area Administration",
       "sourcePage": "https://www.sunmoonlake.gov.tw/EN/attractions/Livecams?a=22",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "The official Sun Moon Lake National Scenic Area website exposes a dedicated Live Camera page with multiple named lake viewpoints.",
-      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source taiwan-sun-moon-lake-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "sanparks-punda-maria-current-image",
@@ -2288,10 +2333,11 @@
       "provider": "SANParks",
       "sourcePage": "https://www.sanparks.org/travel/webcams/still/punda-maria",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "SANParks states webcam still photos update every few minutes and lists Punda Maria among its current still webcams.",
-      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source sanparks-punda-maria-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "sanparks-talamati-current-image",
@@ -2301,10 +2347,11 @@
       "provider": "SANParks",
       "sourcePage": "https://www.sanparks.org/travel/webcams/still/talamati",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "SANParks states webcam still photos update every few minutes and lists Talamati among its current still webcams.",
-      "verification": "Official government/park current-image semantics satisfy ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source sanparks-talamati-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "peru-ubinas-current-image",
@@ -2314,10 +2361,11 @@
       "provider": "Instituto Geofísico del Perú / CENVUL",
       "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/imagenes-en-tiempo-real/ubinas",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "Peru's CENVUL states Ubinas camera images are obtained in real time every minute.",
-      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source peru-ubinas-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "peru-sabancaya-current-image",
@@ -2327,10 +2375,11 @@
       "provider": "Instituto Geofísico del Perú / CENVUL",
       "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/imagenes-en-tiempo-real/sabancaya",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "Peru's CENVUL states Sabancaya camera images are obtained in real time every minute and lists four scientific cameras in its monitoring network.",
-      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source peru-sabancaya-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "peru-misti-current-image",
@@ -2340,10 +2389,11 @@
       "provider": "Instituto Geofísico del Perú / CENVUL",
       "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "CENVUL lists Misti among Peru's real-time monitored volcanoes and states its digital volcano images are obtained every minute.",
-      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source peru-misti-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "peru-coropuna-current-image",
@@ -2353,10 +2403,11 @@
       "provider": "Instituto Geofísico del Perú / CENVUL",
       "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "CENVUL lists Coropuna in its real-time monitoring network; its monitored-volcano interface provides digital images obtained every minute.",
-      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source peru-coropuna-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "peru-ticsani-current-image",
@@ -2366,10 +2417,11 @@
       "provider": "Instituto Geofísico del Perú / CENVUL",
       "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "CENVUL lists Ticsani among volcanoes monitored in real time and exposes a digital-image monitoring path with minute-scale imagery.",
-      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source peru-ticsani-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "peru-chachani-current-image",
@@ -2379,10 +2431,11 @@
       "provider": "Instituto Geofísico del Perú / CENVUL",
       "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "CENVUL lists Chachani among its real-time monitored volcanoes and provides digital monitoring imagery through the official interface.",
-      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source peru-chachani-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "peru-yucamane-current-image",
@@ -2392,10 +2445,11 @@
       "provider": "Instituto Geofísico del Perú / CENVUL",
       "sourcePage": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "CENVUL lists Yucamane among its real-time monitored volcanoes and provides digital monitoring imagery through the official interface.",
-      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source peru-yucamane-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "mexico-popocatepetl-current-image",
@@ -2405,10 +2459,11 @@
       "provider": "CENAPRED / UNAM",
       "sourcePage": "https://www1.cenapred.unam.mx/volcan/popocatepetl/imagen/tlamacas_hd.html",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "verifiedAt": "2026-10-03T03:30:00Z",
       "evidence": "CENAPRED states the Tlamacas HD image is updated every minute and shows Popocatépetl's north flank.",
-      "verification": "Official government/scientific real-time image evidence satisfies ERN quasi-live searchable policy; not continuous Watch Earth video."
+      "verification": "Canonical core source mexico-popocatepetl-current-image already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "philippines-mayon-phivolcs",
@@ -3217,11 +3272,12 @@
       "provider": "Kuredu Island Resort & Spa",
       "sourcePage": "https://www.kuredu.com/webcams/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "promotedPlaceId": "kuredu-island-maldives",
       "promotedAt": "2026-10-03T15:55:00Z",
       "evidence": "Kuredu's official webcam page explicitly describes multiple views as live.",
-      "verification": "Provider-published live page; added LINK_ONLY."
+      "verification": "Canonical core source kuredu-maldives-live already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "research-barbados-paynes-bay-live",
@@ -3231,11 +3287,12 @@
       "provider": "Beach View Hotel",
       "sourcePage": "https://www.beachviewbarbados.com/live-webcam/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "promotedPlaceId": "barbados-paynes-bay",
       "promotedAt": "2026-10-03T15:55:00Z",
       "evidence": "Beach View Hotel explicitly identifies the Paynes Bay feed as a live webcam.",
-      "verification": "Provider-published live page; added LINK_ONLY."
+      "verification": "Canonical core source barbados-paynes-bay-live already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "research-cape-verde-santa-maria-bay-live",
@@ -3245,11 +3302,12 @@
       "provider": "Odjo d'Água Hotel",
       "sourcePage": "https://odjodagua.cv/webcam/",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "promotedPlaceId": "cape-verde-santa-maria-bay",
       "promotedAt": "2026-10-03T15:55:00Z",
       "evidence": "Odjo d'Água states its Santa Maria Bay webcam is live daily and 24 hours a day.",
-      "verification": "Provider-published live page; added LINK_ONLY."
+      "verification": "Canonical core source cape-verde-santa-maria-bay-live already represents this promoted research candidate.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "krakow-main-square-current",
@@ -3496,7 +3554,7 @@
       "sourcePage": "https://www.skylinewebcams.com/en/webcam/jordan/maan/amman/petra-visitor-center.html",
       "evidence": "Current SkylineWebcams page identifies a live cam viewing the entrance to Petra archaeological site.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "exactTargetType": "STRONG_PROVIDER_LIVE_PAGE",
       "researchEvidence": "Current provider page is live-labeled and separately identifies the Visitor Center entrance; treat as a second view of Petra, not a second fake destination count.",
       "humanCheckHint": "Confirm the Visitor Center feed is currently moving/live. If both Petra views work, keep one canonical Petra searchable place with multiple views.",
@@ -3504,9 +3562,10 @@
         "viator-petra-jordan-future"
       ],
       "verifiedAt": "2026-10-04T03:58:00Z",
-      "verification": "Owner confirmed current moving/live playback.",
+      "verification": "Canonical core source jordan-petra-visitor-center-live already represents this promoted research candidate.",
       "promotedAt": "2026-10-04T03:58:00Z",
-      "promotionNote": "Promoted as owner-verified external live/link-only source."
+      "promotionNote": "Promoted as owner-verified external live/link-only source.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "oman-muscat-aida-beach-skyline",
@@ -3517,7 +3576,7 @@
       "sourcePage": "https://www.skylinewebcams.com/en/webcam/oman/muscat/muscat/aida-beach.html",
       "evidence": "Current SkylineWebcams page exposes a live view over Aida Beach in Muscat.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "exactTargetType": "STRONG_PROVIDER_LIVE_PAGE",
       "researchEvidence": "Current provider page remains live-labeled and fills an important Middle East scenic-current gap.",
       "humanCheckHint": "Open the Aida Beach page and confirm the feed is currently moving/live before ERN promotion.",
@@ -3525,9 +3584,10 @@
         "viator-muscat-oman-future"
       ],
       "verifiedAt": "2026-10-04T03:58:00Z",
-      "verification": "Owner confirmed current moving/live playback.",
+      "verification": "Canonical core source oman-muscat-aida-beach-live already represents this promoted research candidate.",
       "promotedAt": "2026-10-04T03:58:00Z",
-      "promotionNote": "Promoted as owner-verified external live/link-only source."
+      "promotionNote": "Promoted as owner-verified external live/link-only source.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "fiji-plantation-island-resort-live",
@@ -3538,7 +3598,7 @@
       "sourcePage": "https://www.plantationisland.com/webcam/",
       "evidence": "Provider webcam page explicitly says it is a live webcam with real-time views and a play-to-start feed.",
       "priority": "P1",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "exactTargetType": "PROVIDER_LIVE_WEBCAM_PAGE",
       "researchEvidence": "Strong first-party resort source with explicit real-time wording; useful for South Pacific coverage.",
       "humanCheckHint": "Press play and confirm the resort webcam is currently moving/live.",
@@ -3546,9 +3606,10 @@
         "klook-fiji-future"
       ],
       "verifiedAt": "2026-10-04T03:58:00Z",
-      "verification": "Owner confirmed current moving/live playback.",
+      "verification": "Canonical core source fiji-plantation-island-resort-live already represents this promoted research candidate.",
       "promotedAt": "2026-10-04T03:58:00Z",
-      "promotionNote": "Promoted as an external-live source sharing canonical placeId fiji-malolo-lailai; multiple resort views count as one searchable place."
+      "promotionNote": "Promoted as an external-live source sharing canonical placeId fiji-malolo-lailai; multiple resort views count as one searchable place.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "fiji-lomani-island-resort-live",
@@ -3559,7 +3620,7 @@
       "sourcePage": "https://www.lomaniisland.com/webcam/",
       "evidence": "Provider webcam page labels the embedded view LIVE FEED and describes it as showing what is happening at the resort.",
       "priority": "P2",
-      "state": "PROMOTED_TO_SOURCE_REGISTRY",
+      "state": "SUPERSEDED_BY_CANONICAL_CORE",
       "exactTargetType": "PROVIDER_LIVE_WEBCAM_PAGE",
       "researchEvidence": "First-party resort live-feed page; likely same island as Plantation Island and therefore should become an alternate view, not fake place inflation, if both verify.",
       "humanCheckHint": "Confirm the embedded LIVE FEED is currently moving/live. If both Malolo Lailai resort cameras work, group them under one island/place where appropriate.",
@@ -3567,9 +3628,10 @@
         "klook-fiji-future"
       ],
       "verifiedAt": "2026-10-04T03:58:00Z",
-      "verification": "Owner confirmed current moving/live playback.",
+      "verification": "Canonical core source fiji-lomani-island-resort-live already represents this promoted research candidate.",
       "promotedAt": "2026-10-04T03:58:00Z",
-      "promotionNote": "Promoted as an external-live source sharing canonical placeId fiji-malolo-lailai; multiple resort views count as one searchable place."
+      "promotionNote": "Promoted as an external-live source sharing canonical placeId fiji-malolo-lailai; multiple resort views count as one searchable place.",
+      "reconciledAt": "2026-10-07T03:30:00Z"
     },
     {
       "id": "el-salvador-santa-ana-volcano",
