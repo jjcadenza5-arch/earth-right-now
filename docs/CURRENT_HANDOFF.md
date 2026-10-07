@@ -7332,3 +7332,84 @@ The four intentionally degraded core records remain unchanged:
 
 ### Protected invariants
 Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide remains OFF; public Now Moments remains OFF; no fake LIVE, paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; commercial value cannot alter Earth truth/currentness/health/ranking; clicks are not bookings; existing lean/performance ceilings remain enforced.
+
+
+## Visitor-fit Viator destination-family checkpoint — 2026-10-07 10:45 UTC
+
+Canonical validated content:
+- Content SHA: `6729e74a42bf6a38040565f0abdaffa9f496fe4d`.
+- **Deploy ERN to GitHub Pages #2752** (run 37609124238): SUCCESS.
+- **ERN Operations Check #1524** (run 37609124246): SUCCESS.
+- Pages and Operations validated the same final content SHA before this handoff-only commit.
+
+### Revenue expansion
+Activated five additional exact/current Viator destination-family actions:
+- Lake Bled / Triglav National Park;
+- Torres del Paine / Puerto Natales;
+- St. Moritz / Engadin;
+- Waikiki / Honolulu;
+- Kaikōura / Canterbury Coast.
+
+Each activation uses ERN's existing owner-verified Viator identity `pid=P00322254 / mcid=42383 / medium=link` on independently rechecked current 2026 destination or product inventory. Exact destination/product URLs remain `manualOpenVerified: false`; no owner click-through, booking, price, conversion or new account state is claimed.
+
+Public revenue-active state is now:
+- **222 public revenue-active offers**
+- **216 healthy ERN places** with an active offer
+- by program:
+  - Viator: **193**
+  - Klook: **21**
+  - Tiqets: **5**
+  - Welcome Pickups: **3**
+- distinct active tracked URLs:
+  - Viator: **87**
+  - Klook: **10**
+  - Tiqets: **4**
+  - Welcome Pickups: **3**
+- travel-offer registry total: **223** records.
+
+The one-record registry/public-active difference remains intentional: Tokyo/Chidori stays fail-closed while its underlying source remains degraded/off-season.
+
+### Release repair / audit trail
+The first expansion commit `f5108f1141b9510535de3871a94a8fe8b22c175e` correctly failed Pages #2750 and Operations #1523 because `data/affiliate-revenue-readiness.json` still carried the pre-batch counts. This was not ignored.
+
+Repair sequence:
+1. recomputed the active public-offer layer from current offers + HEALTHY live/current ERN places;
+2. synchronized readiness to 222 offers / 216 places / 193 Viator / 87 unique Viator tracked URLs;
+3. triggered a new release/operations validation on the final travel-offer state;
+4. obtained matching SUCCESS on Pages #2752 and Operations #1524 for SHA `6729e74...`.
+
+An intermediate Pages-only validation on `ec5f6d3...` was cancelled/superseded and is not canonical.
+
+### Catalog / source truth
+Earth-source catalog remains unchanged by this business tranche:
+- core source records: **328**
+- supplemental Search/Explore records: **415**
+- healthy source records: **739**
+- healthy distinct searchable places: **734**
+- source-maintenance priority records: **20**
+- unresolved exact-current research candidates: **4**
+
+The four unresolved source gaps remain fail-closed:
+- Montevideo — Pocitos Beach;
+- Montevideo — Plaza Independencia;
+- Soufrière Hills Volcano / Montserrat;
+- Île des Pins — Baie de Kuto / New Caledonia.
+
+The four intentionally degraded core records remain unchanged:
+- `pattaya-city-live`;
+- `takayama-miyagawa-current-image`;
+- `jungfrau-region`;
+- `chidori-sakura`.
+
+### Preserved invariants
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide remains OFF; public Now Moments remains OFF; no fake LIVE, paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; commercial value cannot alter Earth truth/currentness/health/ranking; clicks are not bookings; existing lean/performance ceilings remain enforced.
+
+### Next autonomous lane
+1. Continue high-fit destination-family activation from already-active partner programs where exact current inventory genuinely matches healthy ERN places.
+2. Prefer one useful action per coherent destination family rather than per-camera affiliate density.
+3. Keep the four unresolved exact-current source gaps fail-closed unless target/currentness evidence materially improves.
+4. Continue source-health / recency maintenance and architecture deduplication before raw volume growth.
+5. Favor genuinely new countries/territories and provider diversity for future Search/Explore expansion.
+6. Prioritize visitor re-entry, discovery usefulness and traffic growth over raw affiliate-link count.
+7. Keep affiliate-revenue readiness counts synchronized with the computed public-offer layer in the same atomic tranche.
+8. Require matching successful Pages + Operations on the same content SHA before the next canonical checkpoint.
