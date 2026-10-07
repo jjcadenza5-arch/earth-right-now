@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T00:45:41Z",
+  "generatedAt": "2026-10-07T00:49:14Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1186,7 +1186,8 @@
         "airalo"
       ],
       "placeIds": [
-        "sri-lanka-karpaha-sands"
+        "sri-lanka-karpaha-sands",
+        "sri-lanka-pasikudah-sun-siyam"
       ],
       "activationGate": "EXACT_ROUTE_OR_PICKUP_AND_TRACKED_LINK_REQUIRED",
       "rule": "After choosing Sri Lanka's east coast, use one verified arrival/intercity or rental action plus at most one connectivity option. Never imply resort access or transfer coverage without exact route evidence."
@@ -1201,7 +1202,8 @@
       ],
       "placeIds": [
         "sri-lanka-karpaha-sands",
-        "sri-lanka-maho-ayurveda"
+        "sri-lanka-maho-ayurveda",
+        "sri-lanka-pasikudah-sun-siyam"
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_DESTINATION_LINK_REQUIRED",
       "rule": "Accommodation remains research-only until program access exists in the Earthrightnow project. One stay action per destination context by default."
@@ -1744,6 +1746,18 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_KHUMBU_DESTINATION_AND_TRACKED_LINK_REQUIRED",
       "rule": "Use only after Everest/Khumbu is selected. One exact relevant activity or planning action maximum; do not infer trekking permits, flights, lodging, guide availability, altitude safety, or route access from affiliate inventory."
+    },
+    {
+      "id": "vatican-city-planning",
+      "intent": "tickets",
+      "preferredProgramCandidates": [
+        "tiqets"
+      ],
+      "placeIds": [
+        "vatican-st-peters-square"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_VATICAN_TRACKED_LINK_REQUIRED",
+      "rule": "After Vatican City is selected, expose at most one exact ticket or guided-visit action. Never mix religious/live-feed prominence with commercial ranking, and never imply access to events or areas not included by the selected product."
     }
   ],
   "islandTravelClusters": [

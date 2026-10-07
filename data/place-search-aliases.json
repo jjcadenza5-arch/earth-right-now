@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T00:47:54Z",
+  "updatedAt": "2026-10-07T00:49:14Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -356,6 +356,18 @@
       "Tórshavn",
       "Thorshavn",
       "Faroe Islands capital"
+    ],
+    "sri-lanka-pasikudah-sun-siyam": [
+      "Pasikudah",
+      "Passikudah",
+      "Sun Siyam Pasikudah",
+      "Batticaloa east coast"
+    ],
+    "vatican-st-peters-square": [
+      "St. Peter's Square",
+      "Saint Peter's Square",
+      "Piazza San Pietro",
+      "Vatican City square"
     ]
   }
 }

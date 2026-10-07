@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T00:45:41Z",
+  "generatedAt": "2026-10-07T00:49:14Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -4190,10 +4190,10 @@
       "provider": "Governorate of Vatican City State",
       "sourcePage": "https://www.vaticanstate.va/en/",
       "priority": "P1_NEW_COUNTRY",
-      "state": "EXACT_WEBCAM_ROUTE_AND_TARGET_VERIFICATION_REQUIRED",
-      "evidence": "Vatican News' current FAQ explicitly says Vatican City has webcams showing significant places in real time and directs visitors to the Governorate webcam page. The newly redesigned Governorate site is current, but ERN has not yet resolved the exact new webcam route and individual named targets after the September 2026 site redesign.",
-      "verifiedAt": "2026-10-05T17:25:00Z",
-      "verification": "Research-only. Do not promote event live streams, archived video, VR tours or inferred camera targets as continuous current webcams.",
+      "state": "SUPERSEDED_BY_QUASI_LIVE_PROMOTION",
+      "evidence": "Current GeoWebcams metadata identifies an Online St. Peter's Square live feed operated by Vatican News - English. ERN therefore promotes that distinct official-media feed without claiming the unresolved Governorate route was solved.",
+      "verifiedAt": "2026-10-07T00:49:14Z",
+      "verification": "The redesigned Governorate webcam route remains unresolved, but the destination gap is now covered conservatively by a separately verified official Vatican Media live feed for St. Peter's Square.",
       "nextAction": "Resolve the Governorate's current webcam route after the 2026 redesign, enumerate exact named real-time views, and independently verify currentness/permission before promotion."
     },
     {
@@ -5252,13 +5252,14 @@
       "country": "Sri Lanka",
       "region": "Eastern Province / Pasikudah",
       "provider": "Sun Siyam Pasikudah",
-      "sourcePage": "https://www.sunsiyam.com/sun-siyam-pasikudah/",
+      "sourcePage": "https://www.youtube.com/live/L0I0vA2XjXw",
       "priority": "P1_NEW_COUNTRY",
-      "state": "EXACT_LIVE_TARGET_VERIFICATION_REQUIRED",
-      "evidence": "Sun Siyam Pasikudah publicly launched a live weather webcam in 2026 for real-time pre-trip weather familiarisation, but ERN has not yet resolved a stable first-party current webcam route on the production resort site.",
-      "verifiedAt": "2026-10-05T20:55:00Z",
-      "verification": "Research-only until the exact current first-party webcam endpoint/page is independently resolved. Do not promote from press coverage alone.",
-      "nextAction": "Resolve the live webcam target on Sun Siyam's current production site and verify playback/currentness before promotion."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "March 2026 reporting identifies the exact Sun Siyam Pasikudah YouTube live URL as the resort's 24-hour real-time weather webcam; later 2026 reporting confirms the live weather webcam remains part of the current resort experience.",
+      "verifiedAt": "2026-10-07T00:49:14Z",
+      "verification": "Exact live target resolved; EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded.",
+      "nextAction": "Resolve the live webcam target on Sun Siyam's current production site and verify playback/currentness before promotion.",
+      "promotedAt": "2026-10-07T00:49:14Z"
     },
     {
       "id": "south-africa-camps-bay-pod-live",
