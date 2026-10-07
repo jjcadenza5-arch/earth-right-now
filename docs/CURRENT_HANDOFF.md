@@ -7658,3 +7658,55 @@ No commercial link was activated in this source tranche. Commercial actions rema
 3. Continue source-health repair and deduplication before raw catalog growth.
 4. Convert Oslo/Akureyri/Kruger commercial utility only if one coherent destination-family action adds real visitor value without affiliate density.
 5. Preserve the same-sha Pages + Operations rule before the next canonical checkpoint.
+
+
+## ERN Reality Reconciliation checkpoint — 2026-10-07 13:06 UTC
+
+### Why this checkpoint exists
+Owner screenshots exposed a real gap between repository/catalog progress and the public visitor experience. The project therefore paused raw expansion and reconciled visible production behavior against the canonical repository.
+
+### Reconciliation completed
+- Public discovery now loads the supplemental Search/Explore catalog into visible discovery state instead of keeping it hidden until a visitor types a search.
+- Home discovery breadth counters, More Places, Local Earth, saved/recent discovery and Explore search now share the unified public discovery catalog while Watch Earth remains intentionally core-only and truth-gated.
+- Existing lean/performance ceilings were preserved; the first integration attempt failed the size guard and was repaired without increasing thresholds.
+- The product guard was updated to recognize the unified discovery path while preserving currentness and Watch Earth truth boundaries.
+- A new production-reality verifier was added to the Pages workflow. Canonical production checkpoints now require a live-domain reality check after deployment rather than treating successful build/deploy alone as sufficient.
+
+### Canonical production validation
+Final deployed content SHA: `4b8d93041e68b5f831d048d9afb69b28fa45fdbc`.
+
+Matching successful validation:
+- **Deploy ERN to GitHub Pages #2772** (run 37625553673): SUCCESS.
+- **ERN Operations Check #1543** (run 37625553696): SUCCESS.
+- **ERN JavaScript Syntax Check #1103** (run 37625553844): SUCCESS.
+- **Verify deployed visitor reality sync**: SUCCESS on the live `earthrightnow.app` domain.
+
+Live production reality result:
+- home revision: `4b8d93041e68`;
+- core source records visible to runtime: **328**;
+- supplemental discovery records reachable by production runtime: **432**;
+- combined production discovery catalog: **760**;
+- Taitung Jinzun benchmark present: **true**;
+- exact production checks passed for Taitung Jinzun, Oslo Port, Akureyri Port, Helgoland and Kruger Orpen.
+
+This is the first ERN checkpoint where the same release is validated by repository tests, Pages, Operations and an explicit post-deploy live-domain visitor-reality check.
+
+### Important interpretation
+This checkpoint does not claim that every one of the 760 records appears simultaneously on the first screen or Living Atlas. It confirms that the public runtime can actually reach the unified catalog and that the visible discovery surfaces are wired to it. Watch Earth remains a stricter curated subset and must not be inflated by supplemental LINK_ONLY records.
+
+### Protected invariants preserved
+- Watch Earth remains truth/currentness-gated and prioritizes proven in-ERN playback.
+- Supplemental LINK_ONLY sources do not enter Watch Earth merely because they are now visible to discovery.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- Commercial value remains excluded from truth/currentness/ranking.
+- Existing performance ceilings were not raised.
+- No paid ranking, automatic affiliate placement, automatic tracked-link rewriting or unverified partner activation.
+
+### Next autonomous lane
+1. Continue the reality-reconciliation stage, prioritizing what visitors actually see over hidden catalog growth.
+2. Improve Watch Earth first-screen visual quality toward the Taitung Jinzun benchmark, reducing weak illustrative cards where stronger real/current imagery is available.
+3. Verify production discovery counters and visitor-facing counts after the unified catalog load.
+4. Verify Jinzun and other high-value destinations have useful, visible planning/commercial actions only where already-authorized verified links exist.
+5. Continue Home / Watch Earth / Explore / Living Atlas / Destinations / My Earth production checks.
+6. Do not resume broad raw source expansion until this visible-product catch-up stage is substantially complete.
