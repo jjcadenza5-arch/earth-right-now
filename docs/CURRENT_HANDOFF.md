@@ -6833,3 +6833,93 @@ The four degraded/fail-closed core records remain unchanged:
 
 ### Protected invariants
 Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
+
+
+## Traffic + discovery + city revenue checkpoint — 2026-10-07 06:45 UTC
+
+Canonical validated content:
+- Content SHA: `eeb9fa754d443b708071d8cb1d164f781c5a057a`.
+- **Deploy ERN to GitHub Pages #2724** (run 37583012638): SUCCESS.
+- **ERN Operations Check #1500** (run 37583012729): SUCCESS.
+- Pages and Operations validated the same final content SHA.
+
+### Traffic / organic-discovery expansion
+
+ERN traffic growth is now treated as a first-class product workstream rather than a later marketing add-on.
+
+Added **21 substantial country discovery hubs** generated only for countries with at least six current or schedule-verified indexable ERN destinations.
+- The validated build currently has **426 indexable destination pages** plus reference-only noindex pages.
+- Country hubs are crawlable `CollectionPage` / `ItemList` pages with canonical URLs, useful destination lists, current/scheduled state, common ERN view types and source-truth-derived last-modified dates.
+- Destination pages link back to eligible country hubs.
+- Country inclusion is source-truth-driven; affiliate value cannot affect inclusion or order.
+- No thin city/keyword doorway-page expansion was introduced.
+
+Destination pages now expose a native **Share this place** action using the canonical destination URL with copy-link fallback.
+
+Added **`/updates.xml`**, a bounded Atom feed containing up to 50 recently updated crawlable destination pages.
+- The feed is generated from the same source-derived `lastmod` evidence as the main sitemap.
+- `robots.txt` advertises both `sitemap.xml` and `updates.xml`.
+- The homepage advertises the feed through an Atom alternate link.
+- SEO release guards validate feed presence, format, self-link and maximum size.
+- The feed does not manufacture freshness and cannot include places based on commercial value.
+
+Google Search guidance used for this tranche favors people-first useful content, crawlable internal links, accurate last-modified signals, and sitemap/feed discovery rather than mass search-engine-first page creation.
+
+### Operating traffic evidence
+
+Operations #1500 reported the latest 30-day aggregate observation:
+- **52 approximate unique visitors**
+- **307 page views**
+- **32 Facebook-family referral views** (**10.42%** of page views)
+- versus the captured Oct. 5 distribution baseline: **+9 visitors, +50 page views, +10 Facebook referral views, +3 searches, +78 place/window opens, +36 external-source opens**
+
+These are correlation/aggregate operating signals only. Do not infer Facebook caused the change, identify individual visitors, or treat outbound activity as bookings/revenue.
+
+### Revenue-side expansion
+
+Activated exact current Viator destination coverage for **7 high-intent destination families / 9 healthy ERN places**:
+- Helsinki — 1 place;
+- Tbilisi — 1;
+- San Diego — 1;
+- Rotorua — 2;
+- Reykjavík — 1;
+- Cannes — 1;
+- Heidelberg — 2.
+
+Each route was independently rechecked against current 2026 Viator destination inventory and uses ERN's existing owner-verified Viator affiliate identity `P00322254 / mcid=42383 / medium=link`.
+- `exactDestinationPageVerified: true` on the corresponding commercial opportunity rows;
+- `manualOpenVerified: false` remains explicit for these newly reused direct-partner URLs;
+- no new partner account state or Travelpayouts short link was invented.
+
+Public revenue-active state after this tranche:
+- **177 offers**
+- **172 healthy ERN places**
+- Viator: **148 active offers**
+- Klook: 21
+- Tiqets: 5
+- Welcome Pickups: 3
+- distinct active Viator destination URLs: **53**
+
+### Current product/catalog state
+
+Source catalog truth is unchanged by this traffic/revenue batch:
+- healthy distinct searchable places: **733**
+- healthy source records: **738**
+- four degraded/fail-closed core records remain unchanged: `pattaya-city-live`, `takayama-miyagawa-current-image`, `jungfrau-region`, `chidori-sakura`.
+
+No unresolved source was promoted merely to create traffic.
+
+### Next autonomous lane
+
+1. Continue traffic growth as a product loop: destination landing → country/category exploration → multiple place opens → optional planning action.
+2. Watch aggregate referral/search/place-open behavior for evidence that country/share entry points are helping; do not infer causation from small samples.
+3. Continue exact current destination activation from already-active partner programs only where the ERN place scope genuinely matches.
+4. Improve qualified re-entry / repeat utility before increasing commercial density.
+5. Continue trustworthy geography/provider expansion, but prioritize source quality and new-country value over raw count.
+6. Keep destination/country pages people-first and substantial; do not create thin keyword doorway pages.
+7. Preserve canonical URLs, source-derived `lastmod`, crawlable links, sitemap/feed integrity and release guards.
+8. Require matching successful Pages + Operations on the same content SHA before the next production checkpoint.
+
+### Protected invariants
+
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
