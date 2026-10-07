@@ -1,5 +1,5 @@
 (() => {
-"use strict";const $=s=>document.querySelector(s);const featuredHold=s=>s?.featuredHold===true
+"use strict";// public-reality-sync:20261007cconst $=s=>document.querySelector(s);const featuredHold=s=>s?.featuredHold===true
 function readSavedSet(key){try{return new Set(JSON.parse(localStorage.getItem(key)||"[]"))}catch{return new Set()}}
 function readSavedText(key,fallback){try{return localStorage.getItem(key)||fallback}catch{return fallback}}
 function writeSaved(key,value){try{localStorage.setItem(key,value)}catch{}}
