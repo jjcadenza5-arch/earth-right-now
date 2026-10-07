@@ -78,7 +78,7 @@
   ],
   "next": "EXPAND_VERIFIED_COMMISSION_COVERAGE_FROM_EXISTING_ACTIVE_PROGRAMS_AND_MEASURE_AGGREGATE_OUTBOUND_CLICKS",
   "note": "ERN now has active verified destination-specific commission links. Public placement is allowed only for those exact verified links while automatic rewriting/Drive remains off. Expand by reusing a verified destination link only for genuinely same-destination ERN places, or by generating and verifying a new owner-side tracked link.",
-  "updatedAt": "2026-10-07T03:20:00Z",
+  "updatedAt": "2026-10-07T05:58:00Z",
   "travelpayoutsVerifiedPrograms": {
     "klook": {
       "state": "MANUAL_LINK_HUMAN_VERIFIED",
@@ -134,7 +134,8 @@
           "verifiedAt": "2026-09-28T14:22:00Z",
           "publicPlacementAllowed": true,
           "placeIds": [
-            "waikiki-beach"
+            "waikiki-beach",
+            "waikiki-south-shore"
           ]
         },
         "kyoto": {

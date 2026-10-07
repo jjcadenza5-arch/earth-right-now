@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T05:35:00Z",
+  "generatedAt": "2026-10-07T05:58:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -7432,6 +7432,90 @@
       "verifiedAt": "2026-10-07T05:35:00Z",
       "promotedAt": "2026-10-07T05:35:00Z",
       "verification": "LIVE_IMAGE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "india-dongargarh-bamleshwari-live",
+      "title": "Dongargarh — Maa Bamleshwari Live Darshan",
+      "country": "India",
+      "region": "Dongargarh / Chhattisgarh",
+      "provider": "Ministry of Tourism, Government of India / Utsav",
+      "sourcePage": "https://www.utsav.gov.in/livedarshan",
+      "priority": "P2_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Utsav currently lists Maa Bamleshwari Mandir, Dongargarh as Live Darshan with near-full-day published viewing hours.",
+      "verifiedAt": "2026-10-07T05:58:00Z",
+      "promotedAt": "2026-10-07T05:58:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded; devotional footage is not restreamed."
+    },
+    {
+      "id": "india-kolhapur-ambabai-live",
+      "title": "Kolhapur — Ambabai Temple Live Darshan",
+      "country": "India",
+      "region": "Kolhapur / Maharashtra",
+      "provider": "Ministry of Tourism, Government of India / Utsav",
+      "sourcePage": "https://www.utsav.gov.in/livedarshan",
+      "priority": "P2_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Utsav currently lists Shree Karveer Niwasini Ambabai Temple, Kolhapur with published live viewing hours.",
+      "verifiedAt": "2026-10-07T05:58:00Z",
+      "promotedAt": "2026-10-07T05:58:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded; devotional footage is not restreamed."
+    },
+    {
+      "id": "india-pandharpur-vitthal-live",
+      "title": "Pandharpur — Vitthal Rukmini Live Darshan",
+      "country": "India",
+      "region": "Pandharpur / Maharashtra",
+      "provider": "Ministry of Tourism, Government of India / Utsav",
+      "sourcePage": "https://www.utsav.gov.in/livedarshan",
+      "priority": "P2_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Utsav currently lists Shri Vitthal Rukmini Temple Pandharpur with published live viewing hours.",
+      "verifiedAt": "2026-10-07T05:58:00Z",
+      "promotedAt": "2026-10-07T05:58:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded; devotional footage is not restreamed."
+    },
+    {
+      "id": "india-vijayawada-kanaka-durga-live",
+      "title": "Vijayawada — Kanaka Durga Live Darshan",
+      "country": "India",
+      "region": "Vijayawada / Andhra Pradesh",
+      "provider": "Ministry of Tourism, Government of India / Utsav",
+      "sourcePage": "https://www.utsav.gov.in/livedarshan",
+      "priority": "P2_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current Ministry Live Darshan directory lists Sri Kanakadurga Temple in Andhra Pradesh with a Live Darshan schedule.",
+      "verifiedAt": "2026-10-07T05:58:00Z",
+      "promotedAt": "2026-10-07T05:58:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded; devotional footage is not restreamed."
+    },
+    {
+      "id": "india-puttaparthi-sathya-sai-live",
+      "title": "Puttaparthi — Sri Sathya Sai Live Darshan",
+      "country": "India",
+      "region": "Puttaparthi / Andhra Pradesh",
+      "provider": "Ministry of Tourism, Government of India / Utsav",
+      "sourcePage": "https://www.utsav.gov.in/livedarshan",
+      "priority": "P2_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current Ministry Live Darshan directory lists Sri Sathya Sai temple in Andhra Pradesh as a live-darshan destination.",
+      "verifiedAt": "2026-10-07T05:58:00Z",
+      "promotedAt": "2026-10-07T05:58:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded; devotional footage is not restreamed."
+    },
+    {
+      "id": "india-nashik-trimbakeshwar-live",
+      "title": "Nashik — Trimbakeshwar Live Darshan",
+      "country": "India",
+      "region": "Nashik / Maharashtra",
+      "provider": "Ministry of Tourism, Government of India / Utsav",
+      "sourcePage": "https://www.utsav.gov.in/livedarshan",
+      "priority": "P2_PROVIDER_DIVERSITY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "The current Ministry Live Darshan directory lists Trimbakeshwar Devasthan Trust in Nashik with published live viewing hours.",
+      "verifiedAt": "2026-10-07T05:58:00Z",
+      "promotedAt": "2026-10-07T05:58:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded; devotional footage is not restreamed."
     }
   ],
   "notes": [

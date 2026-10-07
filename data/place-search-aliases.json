@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T05:52:00Z",
+  "updatedAt": "2026-10-07T05:58:00Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -499,6 +499,36 @@
     ],
     "moldova-ialoveni-roadcam": [
       "Ialoveni Moldova"
+    ],
+    "india-dongargarh-bamleshwari": [
+      "Dongargarh Bambleshwari",
+      "Maa Bamleshwari",
+      "Bambleshwari Temple"
+    ],
+    "india-kolhapur-ambabai": [
+      "Kolhapur Ambabai",
+      "Karveer Niwasini Ambabai",
+      "Mahalakshmi Temple Kolhapur"
+    ],
+    "india-pandharpur-vitthal": [
+      "Pandharpur Vitthal Rukmini",
+      "Vitthal Temple Pandharpur",
+      "Vithoba Temple"
+    ],
+    "india-vijayawada-kanaka-durga": [
+      "Vijayawada Kanaka Durga",
+      "Kanaka Durga Temple",
+      "Indrakeeladri"
+    ],
+    "india-puttaparthi-sathya-sai": [
+      "Puttaparthi Sathya Sai",
+      "Prasanthi Nilayam",
+      "Sri Sathya Sai Temple"
+    ],
+    "india-nashik-trimbakeshwar": [
+      "Nashik Trimbakeshwar",
+      "Trimbakeshwar Temple",
+      "Trimbakeshwar Jyotirlinga"
     ]
   }
 }
