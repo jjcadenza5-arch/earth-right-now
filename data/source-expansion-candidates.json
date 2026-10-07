@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T04:16:38Z",
+  "generatedAt": "2026-10-07T05:00:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -7248,6 +7248,34 @@
       "verifiedAt": "2026-10-07T02:37:27Z",
       "promotedAt": "2026-10-07T02:37:27Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded by in-ERN playback rule."
+    },
+    {
+      "id": "vietnam-da-nang-my-khe-live",
+      "title": "Da Nang — My Khe Beach",
+      "country": "Vietnam",
+      "region": "Da Nang / My Khe Beach",
+      "provider": "Da Nang Surf Cam",
+      "sourcePage": "https://danangsurfcam.com/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Current Da Nang Surf Cam site identifies itself as a free community-run live webcam for My Khe Beach, exposes a live-stream route and publishes current surf conditions.",
+      "verifiedAt": "2026-10-07T05:00:00Z",
+      "promotedAt": "2026-10-07T05:00:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; community-run source; Watch Earth excluded."
+    },
+    {
+      "id": "malaysia-kuala-lumpur-klccc-live",
+      "title": "Kuala Lumpur — Live City Traffic Views",
+      "country": "Malaysia",
+      "region": "Kuala Lumpur",
+      "provider": "Dewan Bandaraya Kuala Lumpur / KLCCC",
+      "sourcePage": "https://klccc.dbkl.gov.my/",
+      "priority": "P1_NEW_COUNTRY",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official KLCCC portal currently exposes 'Watch Live CCTV Feed' and states that live public CCTV streams from key roads and intersections across Kuala Lumpur are available in real time. DBKL's official KLCCC service page separately lists Live CCTV display.",
+      "verifiedAt": "2026-10-07T05:00:00Z",
+      "promotedAt": "2026-10-07T05:00:00Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; official city traffic CCTV collection; Watch Earth excluded."
     }
   ],
   "notes": [

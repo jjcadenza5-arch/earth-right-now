@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T04:12:43Z",
+  "generatedAt": "2026-10-07T05:00:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -7556,6 +7556,66 @@
       "publicInventoryEvidenceUrl": "https://www.airalo.com/Tanzania-esim",
       "publicInventoryEvidence": "Current Airalo Tanzania page offers Tanzania-specific data packages.",
       "nextAction": "Verify Airalo availability in the ERN owner project and generate one Tanzania tracked link only if available; connectivity must never affect Earth ranking."
+    },
+    {
+      "id": "viator-da-nang",
+      "destination": "Da Nang / My Khe Beach",
+      "placeIds": [
+        "vietnam-da-nang-my-khe"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Viator currently exposes extensive 2026 Da Nang destination inventory across sightseeing, day trips, culture and outdoor activities.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Da-Nang/d4680-ttd",
+      "publicInventoryEvidence": "Current Viator Da Nang inventory lists 1,000+ tours and excursions for 2026.",
+      "nextAction": "Reuse or generate one exact owner-side Da Nang tracked link only after attribution validation; commercial placement remains post-discovery."
+    },
+    {
+      "id": "klook-da-nang",
+      "destination": "Da Nang / My Khe Beach",
+      "placeIds": [
+        "vietnam-da-nang-my-khe"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Klook currently has a dedicated Da Nang destination page with active 2026 inventory and explicitly includes My Khe Beach in destination guidance.",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/destination/c74-da-nang/1-things-to-do/",
+      "publicInventoryEvidence": "Current Klook Da Nang page lists roughly 246 activities and identifies My Khe Beach among the city's visitor highlights.",
+      "nextAction": "Confirm owner-project Klook availability and generate or reuse an exact tracked Da Nang destination link only if attribution validates."
+    },
+    {
+      "id": "viator-kuala-lumpur",
+      "destination": "Kuala Lumpur",
+      "placeIds": [
+        "malaysia-kuala-lumpur-klccc"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Viator currently exposes extensive 2026 Kuala Lumpur city and regional activity inventory.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Kuala-Lumpur/d335-ttd",
+      "publicInventoryEvidence": "Current Viator Kuala Lumpur inventory lists 1,000+ tours and excursions, including 300+ city-tour results.",
+      "nextAction": "Generate or reuse one exact owner-side Kuala Lumpur tracked destination/activity link after attribution validation."
+    },
+    {
+      "id": "klook-kuala-lumpur",
+      "destination": "Kuala Lumpur",
+      "placeIds": [
+        "malaysia-kuala-lumpur-klccc"
+      ],
+      "partnerCandidate": "klook",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Klook currently has a dedicated Kuala Lumpur destination page with broad active 2026 inventory.",
+      "publicInventoryEvidenceUrl": "https://www.klook.com/en-MY/destination/c49-kuala-lumpur/1-things-to-do/",
+      "publicInventoryEvidence": "Current Klook Kuala Lumpur inventory lists roughly 280 activities including major observation decks, museums, tours and attractions.",
+      "nextAction": "Confirm owner-project Klook availability, then generate or reuse one exact tracked Kuala Lumpur link only if attribution validates."
     }
   ]
 }

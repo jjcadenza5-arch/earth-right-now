@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T04:12:43Z",
+  "updatedAt": "2026-10-07T05:00:00Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -427,6 +427,22 @@
       "Port Market Montevideo",
       "Mercado del Puerto Uruguay",
       "Ciudad Vieja Mercado del Puerto"
+    ],
+    "vietnam-da-nang-my-khe": [
+      "Da Nang",
+      "Danang",
+      "My Khe Beach",
+      "Mỹ Khê Beach",
+      "Đà Nẵng",
+      "Da Nang Vietnam"
+    ],
+    "malaysia-kuala-lumpur-klccc": [
+      "Kuala Lumpur",
+      "KL",
+      "Kuala Lumpur Malaysia",
+      "KLCCC",
+      "DBKL CCTV",
+      "吉隆坡"
     ]
   }
 }
