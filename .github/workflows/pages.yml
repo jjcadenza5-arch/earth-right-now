@@ -64,6 +64,7 @@ on:
       - "data/affiliate-partners.json"
       - "data/analytics-deployment.json"
       - "data/traffic-growth-priorities.json"
+      - "data/business-growth-signals.json"
       - "data/affiliate-platform-research.json"
       - "data/commercial-link-opportunities.json"
       - "data/business-readiness.json"
