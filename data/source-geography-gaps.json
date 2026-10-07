@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:55:00Z",
-  "healthyDistinctPlaces": 91,
+  "generatedAt": "2026-10-07T17:06:00Z",
+  "healthyDistinctPlaces": 751,
   "playbackGatedCandidates": 63,
   "currentByRegion": {
     "Oceania": 7,
@@ -26,12 +26,12 @@
     {
       "region": "South America",
       "priority": "HIGH",
-      "reason": "Current healthy coverage is thin relative to Europe/North America; seek official tourism, parks and city live sources."
+      "reason": "Prioritize only genuinely underrepresented South American countries/providers or strong visitor-demand gaps; the overall catalog is no longer count-constrained."
     },
     {
       "region": "Africa",
       "priority": "MEDIUM_HIGH",
-      "reason": "Current coverage is concentrated in South Africa plus one Kenya source; broaden countries and source families."
+      "reason": "Broaden African country/provider diversity only with unusually strong current sources; do not chase regional count targets."
     },
     {
       "region": "Indian Ocean",
@@ -41,7 +41,7 @@
     {
       "region": "Asia",
       "priority": "MEDIUM_HIGH",
-      "reason": "Japan is deep, while most other Asian countries remain sparse. Taiwan official Tourism Administration family is the current expansion anchor."
+      "reason": "Keep Asia diversification focused on non-Japan provider/country gaps and real visitor utility; avoid adding volume for its own sake."
     },
     {
       "region": "Oceania",
@@ -69,5 +69,9 @@
     "preferNewCountryOrDistinctLandscape": true,
     "officialSourcesFirst": true,
     "humanPlaybackStillRequired": true
-  }
+  },
+  "healthyCountryTerritoryLabels": 130,
+  "combinedSourceRecords": 760,
+  "previousRegionalCountsStatus": "SUPERSEDED_BY_751_PLACE_REALITY_RECONCILIATION",
+  "currentGuidance": "Do not use the old 91-place regional counts for planning. The current production catalog is 751 healthy searchable places across 130 country/territory labels. Geography research is now gap-led, provider-diversity-led and visitor-demand-led rather than count-led."
 }
