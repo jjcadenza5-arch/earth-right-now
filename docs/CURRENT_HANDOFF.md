@@ -6999,3 +6999,68 @@ This batch changed commercial coverage only; it did not promote unresolved Earth
 ### Protected invariants
 
 Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
+
+
+## Destination-family revenue expansion checkpoint — 2026-10-07 07:50 UTC
+
+Canonical validated content:
+- Content SHA: `54dd60a04094b1b78cd37e1890f846e54ce3c55b`.
+- **Deploy ERN to GitHub Pages #2731** (run 37589482481): SUCCESS.
+- **ERN Operations Check #1506** (run 37589482390): SUCCESS.
+- Pages and Operations validated the same corrected content SHA before this handoff-only commit.
+
+### High-fit destination-family activation
+
+Activated **5 additional Viator destination families covering 9 healthy ERN places**, while keeping one destination-level action per coherent geography:
+- Monaco / Monte-Carlo — Port Hercule + Monte-Carlo Beach;
+- Koh Samui — Crystal Bay + Lipa Noi / Mandarin;
+- Jasper — Jasper SkyTram + Maligne Lake;
+- Budapest — Danube city view;
+- Zanzibar — Paje + Kiwengwa.
+
+Current exact Viator destination inventory was independently rechecked before activation. Each tracked URL reuses ERN's already owner-verified Viator identity `pid=P00322254 / mcid=42383 / medium=link`; `manualOpenVerified: false` remains explicit because these exact destination URLs were not separately owner-click-verified.
+
+Aruba was deliberately **not** duplicated in this tranche: all three ERN Aruba places already had active Viator coverage despite the older research row still appearing pending. This is a useful architecture-maintenance signal for future opportunity-queue reconciliation.
+
+### Public revenue-active state
+
+Canonical readiness and computed current-offer state now agree on:
+- **192 public revenue-active offers**
+- **187 healthy ERN places** with an active offer
+- by program:
+  - Viator: **163**
+  - Klook: **21**
+  - Tiqets: **5**
+  - Welcome Pickups: **3**
+- distinct active tracked URLs:
+  - Viator: **63**
+  - Klook: **10**
+  - Tiqets: **4**
+  - Welcome Pickups: **3**
+- travel-offer registry total: **193** records.
+
+The one-record registry/public-active difference remains the intentionally fail-closed Tokyo/Chidori Klook record while its underlying current-source state is degraded/off-season.
+
+### Guard catches and repair
+
+The first attempt for this tranche did not deploy. The anti-future verification guard correctly rejected the nine new rows because their initial `verifiedAt` value was several minutes ahead of the GitHub runner clock.
+- Five primary rows were corrected first; a local recomputation then exposed four same-destination secondary rows that still retained the future timestamp.
+- Those four were corrected as well.
+- The canonical computed layer then matched readiness exactly at **192 offers / 187 places / 163 Viator offers / 63 Viator URLs**.
+- No future-time tolerance, offer verification horizon, commercial preflight rule, or safety boundary was weakened.
+
+Intermediate runs on the uncorrected/superseded candidate are non-canonical. The only production checkpoint for this tranche is the final successful same-SHA pair #2731 / #1506.
+
+### Next autonomous lane
+
+1. Reconcile stale research/opportunity rows where public coverage is already active (Aruba is the immediate known example) so the planning queue remains truthful.
+2. Continue high-fit destination-level activation only where current exact inventory is independently verifiable and multiple related ERN places can share one action when appropriate.
+3. Prefer visitor re-entry, search/discovery usefulness and traffic growth over raw affiliate-link count.
+4. Continue source/geography expansion only from strong current/live evidence; unresolved Earth-source candidates remain fail-closed.
+5. Compute public revenue-active state from the candidate data before every commit and bind readiness counts in the same atomic tranche.
+6. Use a verification time safely behind the actual runner clock; never future-date evidence.
+7. Require matching successful Pages + Operations on the same final content SHA before the next canonical checkpoint.
+
+### Protected invariants
+
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources stay outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; commercial value cannot alter Earth truth/currentness/health/ranking; exact destination evidence remains distinct from owner-click verification; clicks are not bookings; lean/performance ceilings remain enforced.
