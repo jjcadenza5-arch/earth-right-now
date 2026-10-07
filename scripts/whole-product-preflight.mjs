@@ -8,6 +8,9 @@ for(const id of ["watch","search","map","localEarth","participate","saved","guid
 for(const href of ["./for-places.html","./now-moments.html","./about.html","./privacy.html"])must(index.includes(`href="${href}"`),`public path missing: ${href}`);
 for(const fn of ["function search(","function renderMap(","function renderLocalEarth(","function guideResponse(","function runGuide("])must(app.includes(fn),`runtime capability missing: ${fn}`);
 must(index.includes("src/travel-planning-client.js")&&app.includes("const TP=globalThis.ERNTravelPlanning"),"travel planning helper is not wired before app runtime");
+must(destinationBuilder.includes("src/commercial-attribution-runtime.js")&&destinationBuilder.includes("data-offer-id="),"crawlable destination planning links are not wired to commercial attribution telemetry");
+const commercialRuntime=read("src/commercial-attribution-runtime.js");
+must(commercialRuntime.includes('"/data/travel-offers.json"')&&commercialRuntime.includes('"/data/affiliate-partners.json"')&&commercialRuntime.includes('"/data/search-supplemental.json"'),"commercial attribution runtime must use root-relative data paths on destination routes");
 must(!/Real conditions/i.test(index),"Homepage must not imply independent real-condition telemetry while public context is OFF");
 must(app.includes("guidePlaceMatches(")&&app.includes('params.get("guide")'),"ERN Guide place/deep-link routing missing");
 must(read("src/release-verification-console.js").includes('./#view='),"release verification provider links do not match viewer routing");
