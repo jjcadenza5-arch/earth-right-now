@@ -295,10 +295,13 @@ jobs:
         run: node scripts/operator-review-page-preflight.mjs
       - uses: actions/upload-pages-artifact@v4
         with:
+          name: github-pages-${{ github.run_attempt }}
           path: dist
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
       - name: Verify deployed social preview metadata
         run: node scripts/social-preview-production-check.mjs https://earthrightnow.app/
       - name: Verify deployed visitor reality sync
