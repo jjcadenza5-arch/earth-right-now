@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T11:15:00Z",
+  "generatedAt": "2026-10-07T17:08:00Z",
   "mission": "See before you go",
   "productTest": "Would this current view help someone understand the place better before deciding whether, when, or how to go?",
   "hardGates": [
@@ -70,29 +70,41 @@
       "mayOverrideQuality": false,
       "currentSignal": "Expired recency debt remains zero and no active catalog source now depends on CouchTourist. The final four records were moved to official/provider live-camera pages using conservative EXTERNAL_LIVE + LINK_ONLY treatment where ERN-specific embed rights were not independently established. Continue provider diversification opportunistically for any future concentration; never weaken truth, permission or visual quality to force a provider count.",
       "currentActiveCouchTouristSources": 0
+    },
+    "productionReality": {
+      "enabled": true,
+      "currentHealthyDistinctPlaces": 751,
+      "currentCountryTerritoryLabels": 130,
+      "rule": "Research queues must use production-reconciled counts and live visitor evidence. Historical smaller baselines are superseded and must not drive count-chasing."
     }
   },
   "currentStaleDebt": {
-    "total": 3,
-    "principle": "Stale debt is heterogeneous. Do not treat seasonal closure, playback-proof debt and editorial currentness debt as the same maintenance problem.",
+    "total": 4,
+    "principle": "Use the current 760-record / 751-place production baseline. Degraded debt is heterogeneous; repair only when it adds unique visitor value and never promote without current evidence.",
     "items": [
       {
         "id": "pattaya-city-live",
         "class": "PLAYBACK_EVIDENCE_DEBT",
         "priority": "HIGH",
-        "action": "Independently verify real public playback for one or more individual Pattaya City cameras before any health/currentness promotion. Portal reachability and camera inventory alone do not prove playback."
+        "action": "Independently verify exact public camera playback before any health/currentness promotion."
+      },
+      {
+        "id": "takayama-miyagawa-current-image",
+        "class": "STALE_COMPANION_IMAGE",
+        "priority": "LOW",
+        "action": "Keep degraded; the healthy Takayama live stream already covers the place. Repair only if the image source becomes truly current again."
+      },
+      {
+        "id": "jungfrau-region",
+        "class": "PROVIDER_OFFLINE",
+        "priority": "LOW",
+        "action": "Do not rush replacement while stronger Swiss mountain sources already cover the visitor need; recheck official collection periodically."
       },
       {
         "id": "chidori-sakura",
         "class": "SEASONAL_OFF_SEASON",
         "priority": "LOW_UNTIL_SEASON_OR_MATERIAL_CHANGE",
-        "action": "Keep off current-discovery surfaces. Recheck when Sakura-season content materially changes or the official provider publishes a year-round current visual path."
-      },
-      {
-        "id": "tbilisi-mtkvari-river",
-        "class": "EDITORIAL_CURRENTNESS_DEBT",
-        "priority": "ROUTINE",
-        "action": "Reconfirm explicit provider evidence that the exact Mtkvari/Narikala view is live/current before refreshing lastSuccessfulCheck. Page reachability alone is insufficient."
+        "action": "Keep off current surfaces until the official seasonal state becomes current again."
       }
     ]
   },
