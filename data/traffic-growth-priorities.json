@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T15:42:27Z",
+  "generatedAt": "2026-10-07T17:21:08Z",
   "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
   "currentSearchableHealthyPlaces": 751,
   "unlockTargets": [
@@ -104,7 +104,7 @@
     }
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
-  "note": "Catalog scale is no longer the bottleneck. Public product, destination planning telemetry and traffic collection are reconciled against live production. Traffic metric semantics v2 separates destination opens, external-source opens, commercial opens and shares; clean destination/share rankings begin at the v2 deployment boundary. Traffic never overrides source truth/currentness and traffic-gated partner thresholds remain private.",
+  "note": "Catalog scale is no longer the bottleneck. Public product, traffic collection and metric semantics v2 are production-reconciled. Clean v2 destination-open attribution is now accumulating; use it only as aggregate directional evidence and never let traffic override source truth/currentness.",
   "milestone": "751_HEALTHY_SEARCHABLE_PLACES_REALITY_AND_TRAFFIC_RECONCILED",
   "currentBusinessCoverage": {
     "healthyPlaces": 751,
@@ -120,21 +120,21 @@
   },
   "unlockReadiness": "data/travelpayouts-unlock-readiness.json",
   "latestObservedTraffic": {
-    "observedAt": "2026-10-07T15:42:27Z",
+    "observedAt": "2026-10-07T17:21:08Z",
     "windowDays": 30,
     "approximateUniqueVisitors": 53,
-    "pageViews": 333,
+    "pageViews": 340,
     "googleFamilyReferrals": 18,
     "facebookFamilyReferrals": 32,
-    "earthSearches": 84,
+    "earthSearches": 87,
     "zeroResultSearches": 36,
-    "windowOpens": 284,
-    "externalSourceOpens": 79,
-    "travelOptionOpens": 8,
+    "windowOpens": 300,
+    "externalSourceOpens": 80,
+    "travelOptionOpens": 9,
     "topSearches": [
       {
         "value": "taitung jinzun",
-        "count": 6
+        "count": 9
       },
       {
         "value": "arches",
@@ -155,30 +155,51 @@
     ],
     "topPlaces": [
       {
-        "value": "kyoto-hanamikoji",
-        "count": 33
+        "value": "nz-ruapehu",
+        "count": 2
       },
       {
-        "value": "rovaniemi-santa-claus-village",
-        "count": 32
+        "value": "addo-elephant-national-park",
+        "count": 1
       },
       {
-        "value": "taitung-jinzun",
-        "count": 20
+        "value": "barbados-paynes-bay",
+        "count": 1
       },
       {
-        "value": "auckland-viaduct-harbour",
-        "count": 18
+        "value": "cape-verde-santa-maria-bay",
+        "count": 1
       },
       {
-        "value": "kyoto-kiyomizuzaka",
-        "count": 16
+        "value": "denpasar-city-live",
+        "count": 1
       }
     ],
-    "interpretationBoundary": "Aggregate privacy-preserving evidence only. Traffic metric semantics v2 is active. Rolling event totals still include pre-v2 history where applicable; clean v2 destination-open and share-by-place dimensions currently contain no recorded rows. The retained topPlaces list is legacy pre-v2 source/place activity for historical context only. No counts identify individual visitors or prove channel causation, bookings, conversions or revenue.",
+    "interpretationBoundary": "Aggregate privacy-preserving evidence only. Traffic metric semantics v2 is active. Rolling totals still contain historical window activity, while destination ranking now uses clean v2 place-open attribution. No counts identify individual visitors or prove channel causation, bookings, conversions or revenue.",
     "metricSemanticsAtObservation": "V2_ACTIVE_WITH_LEGACY_WINDOW_TOTALS",
-    "topPlacesInterpretation": "Legacy pre-v2 source/place activity retained only as historical context. Clean v2 destination-open ranking is currently empty and begins only with post-2026-10-07T14:55:03Z destination-open events.",
-    "cleanV2DestinationOpens": [],
+    "topPlacesInterpretation": "Clean v2 destination-open attribution is now non-empty. Current ranking begins after the 2026-10-07T14:55:03Z attribution boundary and should remain separate from older legacy place counters.",
+    "cleanV2DestinationOpens": [
+      {
+        "value": "nz-ruapehu",
+        "count": 2
+      },
+      {
+        "value": "addo-elephant-national-park",
+        "count": 1
+      },
+      {
+        "value": "barbados-paynes-bay",
+        "count": 1
+      },
+      {
+        "value": "cape-verde-santa-maria-bay",
+        "count": 1
+      },
+      {
+        "value": "denpasar-city-live",
+        "count": 1
+      }
+    ],
     "cleanV2DestinationShares": []
   },
   "trafficMetricSemanticsVersion": 2,
