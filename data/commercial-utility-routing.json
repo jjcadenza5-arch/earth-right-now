@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T00:49:14Z",
+  "generatedAt": "2026-10-07T00:51:38Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -612,7 +612,9 @@
         "bermuda-st-george-town",
         "barbados-paynes-bay",
         "st-maarten-great-bay",
-        "druif-beach-aruba"
+        "druif-beach-aruba",
+        "bermuda-azura-south-shore",
+        "cayman-george-town-port"
       ],
       "activationGate": "PROGRAM_COUNTRY_COVERAGE_AND_EXACT_LINK_REQUIRED",
       "rule": "Default to one verified eSIM option per country/island context."

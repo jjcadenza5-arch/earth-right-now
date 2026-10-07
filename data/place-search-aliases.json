@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T00:49:14Z",
+  "updatedAt": "2026-10-07T00:51:38Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -368,6 +368,11 @@
       "Saint Peter's Square",
       "Piazza San Pietro",
       "Vatican City square"
+    ],
+    "bermuda-azura-south-shore": [
+      "Azura Bermuda",
+      "Bermuda South Shore",
+      "Warwick Bermuda"
     ]
   }
 }

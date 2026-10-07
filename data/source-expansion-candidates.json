@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T00:49:14Z",
+  "generatedAt": "2026-10-07T00:51:38Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -5295,13 +5295,14 @@
       "country": "Bermuda",
       "region": "Warwick / South Shore",
       "provider": "Azura Bermuda",
-      "sourcePage": "https://www.azurabermuda.com/",
+      "sourcePage": "https://rtsp.me/embed/AD7rHi2G/",
       "priority": "P2_GEO_DIVERSITY",
-      "state": "EXACT_LIVE_TARGET_VERIFICATION_REQUIRED",
-      "evidence": "Azura's current booking/site surfaces expose a Live Webcam link and the property is on Bermuda's South Shore, but ERN has not yet resolved the exact durable webcam endpoint from the current public site.",
-      "verifiedAt": "2026-10-05T21:20:00Z",
-      "verification": "Research-only until the exact current webcam route and live behavior are independently resolved.",
-      "nextAction": "Resolve Azura's current Live Webcam target and verify currentness before promotion."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Azura Bermuda's current public reservation surface exposes a Live Webcam link that resolves to https://rtsp.me/embed/AD7rHi2G/.",
+      "verifiedAt": "2026-10-07T00:51:38Z",
+      "verification": "Exact live endpoint resolved from Azura's current public booking/site surface; EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded.",
+      "nextAction": "Resolve Azura's current Live Webcam target and verify currentness before promotion.",
+      "promotedAt": "2026-10-07T00:51:38Z"
     },
     {
       "id": "kenya-ol-donyo-waterhole-live",
@@ -6685,10 +6686,10 @@
       "provider": "Port Authority of the Cayman Islands",
       "sourcePage": "https://www.caymanport.com/webcams/",
       "priority": "P2_OFFICIAL_PORT",
-      "state": "EXACT_CAMERA_TARGET_VERIFICATION_REQUIRED",
-      "evidence": "The current official Port Authority website exposes a public Webcams page and active port information, but automated retrieval does not enumerate the individual camera targets.",
-      "verifiedAt": "2026-10-06T06:20:00Z",
-      "verification": "Research-only. Do not infer specific camera locations or currentness from the generic Webcams page.",
+      "state": "SUPERSEDED_BY_QUASI_LIVE_PROMOTION",
+      "evidence": "ERN already has `cayman-george-town-port-current` using the official Port Authority webcam surface. Independent current webcam indexing identifies Grand Cayman Port / George Town imagery from caymanport.com with recent refreshes.",
+      "verifiedAt": "2026-10-07T00:51:38Z",
+      "verification": "A canonical searchable George Town / Grand Cayman Port LIVE_IMAGE record already exists; the generic research candidate is reconciled rather than duplicated.",
       "nextAction": "Resolve the individual public webcam target(s), names and refresh behavior before ERN promotion."
     },
     {

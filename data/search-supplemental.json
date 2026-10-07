@@ -11553,5 +11553,36 @@
     "rightsBasis": "Official Vatican Media footage is externally hosted; ERN links externally and does not embed, restream, or imply reuse rights.",
     "freshnessEvidence": "GeoWebcams currently marks the St. Peter's Square view Online and live and identifies Vatican News - English as operator; current Vatican-related live-camera directories corroborate an active Vatican Media feed.",
     "searchSupplemental": true
+  },
+  {
+    "id": "bermuda-azura-south-shore-live",
+    "placeId": "bermuda-azura-south-shore",
+    "title": "Azura — Bermuda South Shore",
+    "provider": "Azura Bermuda / RTSP.ME",
+    "country": "Bermuda",
+    "region": "Warwick / South Shore",
+    "categories": [
+      "Beaches & Coasts",
+      "Resorts",
+      "Atlantic Islands",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://rtsp.me/embed/AD7rHi2G/",
+    "attribution": "Azura Bermuda",
+    "checkedAt": "2026-10-07T00:51:38Z",
+    "lastSuccessfulCheck": "2026-10-07T00:51:38Z",
+    "quality": 96,
+    "freshness": 99,
+    "moment": 97,
+    "story": "Current South Shore live webcam linked directly from Azura Bermuda's own booking/site surface.",
+    "featuredHold": true,
+    "watchHold": true,
+    "rightsBasis": "Azura's current public booking surface links to this exact external live-webcam endpoint; ERN links externally and does not restream.",
+    "freshnessEvidence": "Azura Bermuda's current reservation/site footer exposes a Live Webcam link that resolves directly to the active RTSP.ME embed endpoint.",
+    "searchSupplemental": true
   }
 ]

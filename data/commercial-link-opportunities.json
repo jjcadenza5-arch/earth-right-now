@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T00:49:14Z",
+  "generatedAt": "2026-10-07T00:51:38Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -4113,7 +4113,8 @@
         "bermuda-st-george-town",
         "bermuda-coopers-island",
         "bermuda-royal-naval-dockyard",
-        "bermuda-nonsuch-island-cahow"
+        "bermuda-nonsuch-island-cahow",
+        "bermuda-azura-south-shore"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -5333,7 +5334,9 @@
         "bermuda-royal-naval-dockyard",
         "barbados-paynes-bay",
         "st-maarten-great-bay",
-        "druif-beach-aruba"
+        "druif-beach-aruba",
+        "bermuda-azura-south-shore",
+        "cayman-george-town-port"
       ],
       "partnerCandidate": "airalo",
       "intent": "connectivity",
