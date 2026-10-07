@@ -47,6 +47,8 @@ on:
       - "data/viator-api-deployment.json"
       - "scripts/public-brand-facts-status.mjs"
       - "scripts/distribution-readiness.mjs"
+      - "scripts/indexnow-submit.mjs"
+      - "indexnow-key.txt"
       - "scripts/seo-indexing-audit.mjs"
       - "scripts/ai-search-readiness.mjs"
       - "scripts/search-metadata-audit.mjs"
@@ -295,3 +297,5 @@ jobs:
         uses: actions/deploy-pages@v4
       - name: Verify deployed social preview metadata
         run: node scripts/social-preview-production-check.mjs https://earthrightnow.app/
+      - name: IndexNow recent URL notification
+        run: node scripts/indexnow-submit.mjs dist
