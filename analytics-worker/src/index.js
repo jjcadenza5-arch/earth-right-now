@@ -1,5 +1,5 @@
 import {AnalyticsState} from "./analytics-state.js";export {AnalyticsState};
-const ALLOWED=new Set(["page_view","window_opened","place_opened","watch_earth_started","earth_search","earth_search_zero","external_source_opened","travel_option_opened"]);
+const ALLOWED=new Set(["page_view","window_opened","place_opened","watch_earth_started","earth_search","earth_search_zero","external_source_opened","travel_option_opened","share_clicked"]);
 const headers=origin=>({"content-type":"application/json; charset=utf-8","cache-control":"no-store",...(origin?{"access-control-allow-origin":origin,"vary":"Origin"}:{})});
 const reply=(status,body,origin)=>new Response(JSON.stringify(body),{status,headers:headers(origin)});
 const clean=s=>String(s??"").trim();
@@ -17,6 +17,7 @@ const cleanData=(name,data={})=>{
   if(name==="watch_earth_started"){text("sourceId");text("placeId")}
   if(["earth_search","earth_search_zero"].includes(name)){const q=safeSearch(data.query);if(q)out.query=q;if(Number.isFinite(+data.resultCount))out.resultCount=Math.max(0,Math.min(+data.resultCount,1000))}
   if(name==="travel_option_opened"){text("offerId");text("placeId");text("intent",60);text("linkScope",30);out.affiliate=data.affiliate===true;out.sponsored=data.sponsored===true}
+  if(name==="share_clicked"){text("placeId");text("route",120)}
   return out;
 };
 const constantTimeEqual=(a,b)=>{const x=String(a||""),y=String(b||""),n=Math.max(x.length,y.length,1);let diff=x.length^y.length;for(let i=0;i<n;i++)diff|=(x.charCodeAt(i%x.length||0)||0)^(y.charCodeAt(i%y.length||0)||0);return diff===0};
