@@ -3039,7 +3039,8 @@
     "verified": true,
     "verifiedAt": "2026-10-07T07:10:00Z",
     "expiresAt": "2026-12-26T07:10:00Z",
-    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified."
+    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+    "verificationEvidenceUrl": "https://www.viator.com/Nuremberg/d5628-ttd"
   },
   {
     "id": "viator-plitvice-lakes-public",
@@ -3056,7 +3057,8 @@
     "verified": true,
     "verifiedAt": "2026-10-07T07:10:00Z",
     "expiresAt": "2026-12-26T07:10:00Z",
-    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified."
+    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+    "verificationEvidenceUrl": "https://www.viator.com/Plitvice-Lakes-National-Park/d27086-ttd"
   },
   {
     "id": "viator-dresden-public",
@@ -3073,7 +3075,8 @@
     "verified": true,
     "verifiedAt": "2026-10-07T07:10:00Z",
     "expiresAt": "2026-12-26T07:10:00Z",
-    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified."
+    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+    "verificationEvidenceUrl": "https://www.viator.com/Dresden/d22375-ttd"
   },
   {
     "id": "viator-dresden-public--radebeul-wackerbarth",
@@ -3107,7 +3110,8 @@
     "verified": true,
     "verifiedAt": "2026-10-07T07:10:00Z",
     "expiresAt": "2026-12-26T07:10:00Z",
-    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified."
+    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+    "verificationEvidenceUrl": "https://www.viator.com/Garmisch-Partenkirchen/d22133-ttd"
   },
   {
     "id": "viator-brasov-public",
@@ -3124,6 +3128,7 @@
     "verified": true,
     "verifiedAt": "2026-10-07T07:10:00Z",
     "expiresAt": "2026-12-26T07:10:00Z",
-    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified."
+    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+    "verificationEvidenceUrl": "https://www.viator.com/Brasov/d23067-ttd"
   }
 ]
