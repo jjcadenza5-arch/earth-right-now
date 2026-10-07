@@ -6296,3 +6296,86 @@ Four degraded core sources remain intentionally fail-closed:
 ### Protected invariants
 Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
 
+
+
+## Balanced visitor-growth + sustainable-funding checkpoint — 2026-10-07 03:53 UTC
+
+Canonical validated content:
+- Content SHA: `ae02c65cc5d35f76fad47e1ee24ffa9ed996cedf`.
+- **Deploy ERN to GitHub Pages #2699** (run 37568609182): SUCCESS.
+- **ERN Operations Check #1479** (run 37568609125): SUCCESS.
+- **ERN JavaScript Syntax Check #1074** (run 37568609120): SUCCESS.
+- Pages, Operations and syntax validation all closed successfully on the same content SHA.
+
+### Product balance now encoded
+ERN now treats three operating goals as equal priorities:
+1. **Visitor value** — truthful current Earth windows remain the reason to visit.
+2. **Audience growth** — grow qualified organic discovery, destination sharing and repeat use.
+3. **Sustainable funding** — use clearly disclosed, verified post-discovery affiliate actions to fund maintenance and expansion.
+
+This balance is codified in `data/growth-funding-balance.json` and reinforced in `data/business-growth-signals.json`. Commercial value still cannot influence source truth, health, currentness, Earth ranking or editorial prominence.
+
+### Audience-growth improvement
+Viewer sharing now uses the canonical crawlable `/places/<placeId>/` destination page rather than a hash-only current-window route.
+- Destination pages already carry place-specific title, description, canonical URL, Open Graph, Twitter metadata and structured Place/WebPage data.
+- This gives social/search crawlers a durable destination URL and improves the chance that shared ERN places generate useful previews and re-entry paths.
+- Deep-link truth remains fail-closed: the destination page describes current/source status and links back into the strongest truthful ERN window.
+
+### Funding / conversion improvement
+The main **Before You Go** viewer path now makes better use of ERN's already-verified commercial inventory without increasing commercial pressure:
+- Added a natural **Getting there** action.
+- Verified `transport` offers can now surface there after a current healthy place is opened.
+- **Things to do** now prefers a verified activity offer and can fall back to a verified `culture` offer, allowing appropriate Tiqets-style inventory to appear instead of remaining invisible.
+- Existing stay/eat fallbacks remain useful external planning links when no verified affiliate offer exists.
+- Reference-only/non-current viewer states remain explicitly non-commercial.
+- All affiliate/sponsored links remain disclosed and current-partner/source gated.
+
+### Current operating evidence and interpretation
+The strategy uses the 30-day first-party aggregate snapshot retained from Operations #1459 as a bounded baseline:
+- approx. **52 unique visitors**
+- **294 page views**
+- **17 Google referral views**
+- **32 Facebook referral views**
+- **25 Earth searches**
+- **261 window opens**
+- **72 external-source opens**
+- **2 travel-option opens**
+
+Interpretation recorded in the operating model: ERN is showing real discovery use, but **audience scale and repeat use are currently a larger constraint than affiliate-program count**. The immediate growth path is therefore **discover → explore → plan**, not commercial button density. Clicks remain intent evidence only; bookings/commissions require partner-side evidence.
+
+### Current catalog / business state
+- core source records: **328**
+- supplemental Search/Explore records: **393**
+- combined source records: **721**
+- healthy source records: **717**
+- healthy distinct searchable places: **712**
+- commercial research opportunities: **462**
+- utility-routing clusters: **84**
+- source-research candidates: **490**
+- travel-offer registry: **53 verified current offers**
+- unresolved exact-current research queue remains **8**
+- four degraded core records remain intentionally fail-closed: `pattaya-city-live`, `takayama-miyagawa-current-image`, `jungfrau-region`, `chidori-sakura`.
+
+### Release repairs completed in this checkpoint
+The first Pages attempt exposed three stale guard assumptions during the intentional product change:
+- deep-link test still expected hash-based current-window sharing;
+- app-lite briefly exceeded the 100 KB hard ceiling by 102 bytes;
+- reference-only commercial guards still matched the old literal offer wiring.
+
+Repairs were conservative:
+- canonical place sharing is now the tested rule;
+- offer selection was compacted below the existing performance ceiling rather than raising the ceiling;
+- reference-only commercial guards were updated to verify the equivalent compact `current` gate.
+No truth, safety, ranking or performance guard was weakened.
+
+### Next autonomous lane
+1. Grow qualified organic traffic through useful canonical destination sharing, search/AI discovery and trustworthy Earth coverage.
+2. Improve repeat use and destination re-entry before chasing raw catalog volume.
+3. Use real search/place/planning behavior to prioritize which existing active-program offers deserve exact-link conversion.
+4. Prefer conversion from Viator/Klook/Tiqets/Welcome Pickups coverage already available before opening more partner programs.
+5. Revisit traffic-gated stay/transport programs when real audience/planning evidence or partner invitations justify it; invent no thresholds.
+6. Continue broad Earth/source-health work in parallel so commercial optimization never crowds out visitor value.
+7. Require same-content SHA successful Pages + Operations validation before the next canonical production checkpoint.
+
+### Protected invariants
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
