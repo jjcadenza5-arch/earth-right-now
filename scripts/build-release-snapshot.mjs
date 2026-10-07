@@ -57,6 +57,7 @@ await cp(new URL("../assets/",import.meta.url),new URL("assets/",dist),{recursiv
   for(let i=0;i<4;i++)await rm(new URL("assets/ern-social-card-v2.b64."+i,dist),{force:true});
 }
 await cp(new URL("../places/",import.meta.url),new URL("places/",dist),{recursive:true});
+await cp(new URL("../countries/",import.meta.url),new URL("countries/",dist),{recursive:true});
 await cp(new URL("../discover/",import.meta.url),new URL("discover/",dist),{recursive:true});
 for(const locale of ["th","de","fr","ja","zh","es"])await cp(new URL("../"+locale+"/",import.meta.url),new URL(locale+"/",dist),{recursive:true});
 await cp(new URL("../review/",import.meta.url),new URL("review/",dist),{recursive:true});

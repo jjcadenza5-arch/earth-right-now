@@ -70,6 +70,11 @@ for(const rel of files){
     if(text.length<120)issues.push({code:"INDEXABLE_THIN_VISIBLE_TEXT",rel,length:text.length});
     const blocks=jsonLdBlocks(html);if(blocks.some(x=>x===null))issues.push({code:"INVALID_JSONLD",rel});
   }
+  if(rel.startsWith("countries/")&&rel!=="countries/index.html"){
+    if(isIndexable&&!/"@type":"CollectionPage"/.test(html))issues.push({code:"COUNTRY_COLLECTION_SCHEMA_MISSING",rel});
+    if(isIndexable&&!/"@type":"ItemList"/.test(html))issues.push({code:"COUNTRY_ITEMLIST_SCHEMA_MISSING",rel});
+    if(isIndexable&&!/Countries/.test(html))warnings.push({code:"COUNTRY_CONTEXT_WEAK",rel});
+  }
   if(rel.startsWith("places/")&&rel!=="places/index.html"){
     destinations++;
     const inSitemap=canonical&&sitemapUrls.includes(canonical);
@@ -89,6 +94,7 @@ for(const [description,rels] of descMap)if(rels.length>2)warnings.push({code:"DU
 const sitemapSet=new Set(sitemapUrls);
 if(!sitemapSet.has(base))issues.push({code:"HOME_MISSING_FROM_SITEMAP"});
 if(!sitemapSet.has(base+"places/"))issues.push({code:"PLACES_MISSING_FROM_SITEMAP"});
+if(!sitemapSet.has(base+"countries/"))issues.push({code:"COUNTRIES_MISSING_FROM_SITEMAP"});
 if(!sitemapSet.has(base+"discover/"))issues.push({code:"DISCOVER_MISSING_FROM_SITEMAP"});
 
 const report={schemaVersion:1,checkedAt:new Date().toISOString(),root,ready:issues.length===0,filesChecked:files.length,indexablePages:indexable,destinationPages:destinations,indexedDestinations,sitemapUrls:sitemapUrls.length,issueCount:issues.length,warningCount:warnings.length,issues,warnings,boundaries:{sourceTruthChanged:false,paidRankingChanged:false,thinPageExpansionAllowed:false,accountActionPerformed:false}};

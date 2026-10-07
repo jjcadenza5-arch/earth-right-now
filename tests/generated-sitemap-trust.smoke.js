@@ -11,5 +11,8 @@ assert.match(src,/CollectionPage/);
 assert.match(src,/ItemList/);
 assert.match(src,/dateModified/);
 assert.match(src,/base\+"places\/"/);
+assert.match(src,/base\+"countries\/"/);
+assert.match(src,/countryHubEligible/);
+assert.match(src,/substantial country hubs/);
 assert.match(src,/mainEntity/);
 console.log("generated sitemap and destination hierarchy guard passed");

@@ -1,0 +1,11 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const b=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
+assert.match(b,/countryPlaceCounts/);
+assert.match(b,/countryHubEligible=country=>Boolean\(country&&countryPlaceCounts\.get\(country\)>=6\)/);
+assert.match(b,/fs\.rmSync\("countries"/);
+assert.match(b,/Countries on Earth Right Now/);
+assert.match(b,/Payment or affiliate availability never changes which places appear here/);
+assert.match(b,/Share this place/);
+assert.match(b,/Share .*country/);
+console.log("Country discovery hubs are depth-gated, crawlable and share-ready without paid ranking");
