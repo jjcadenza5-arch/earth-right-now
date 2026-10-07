@@ -18,7 +18,7 @@ Window: ${x.windowDays||30} days
 ## Owner snapshot
 - Approximate unique visitors: **${v.approxUnique||0}**
 - Page views: **${v.pageViews||0}**
-- Place/window opens: **${total(x.places)}**
+- Place/window opens: **${eventCount("window_opened")+eventCount("place_opened")}**
 - Searches: **${eventCount("earth_search")}**
 - Zero-result searches: **${eventCount("earth_search_zero")}**
 - Live-source outbound clicks: **${eventCount("external_source_opened")}**
@@ -34,6 +34,8 @@ ${dailyRows(x.daily)}
 | Place ID | Opens |
 |---|---:|
 ${rows(x.places)}
+
+Top-destination attribution uses clean v2 place-open counters. Older legacy place counters may have mixed other event types and are intentionally excluded here.
 
 ## Top searches
 | Search | Count |
@@ -53,6 +55,11 @@ Zero-result terms are demand evidence, not automatic catalog instructions.
 ${rows(x.externalSources)}
 
 These are outbound opens to live/current provider sources, not proof that the provider stream actually played.
+
+## Shared destinations
+| Place ID | Shares/copies |
+|---|---:|
+${rows(x.sharePlaces)}
 
 ## Affiliate / commercial clicks
 | Offer ID | Opens |
