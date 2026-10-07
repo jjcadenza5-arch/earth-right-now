@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T06:20:00Z",
+  "generatedAt": "2026-10-07T06:40:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -242,12 +242,19 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Helsinki's current harbour/city window has strong visitor-planning utility and Viator has broad Helsinki tour inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one Helsinki destination-level Viator partner link and verify it manually before adding any public offer.",
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
       "candidateTrackedUrl": "https://www.viator.com/Helsinki/d803-ttd?pid=P00322254&mcid=42383&medium=link",
       "candidateTrackedUrlPreparedAt": "2026-10-03T05:00:00Z",
       "candidateTrackedUrlEvidence": "Public Viator destination URL independently confirmed; ERN's existing direct-partner pid/mcid/medium pattern applied. Still requires owner open/redirect verification before becoming a verified offer.",
-      "ownerVerificationRequired": true
+      "ownerVerificationRequired": true,
+      "trackingUrl": "https://www.viator.com/Helsinki/d803-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:40:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Helsinki destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-turku",
@@ -296,8 +303,15 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN has a strong current Tbilisi city/landmark view and Viator has broad Tbilisi sightseeing, culture and day-trip inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate and manually verify one Tbilisi Viator destination link; keep planning downstream from discovery."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Tbilisi/d22516-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:40:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Tbilisi destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-cancun",
@@ -435,14 +449,21 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN has a healthy San Diego Zoo place and Viator currently sells San Diego Zoo admission within broad San Diego inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/San-Diego/d736-ttd",
       "publicInventoryEvidence": "Current Viator San Diego inventory explicitly includes San Diego Zoo 1-Day Pass tickets.",
-      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
       "candidateTrackedUrl": "https://www.viator.com/San-Diego/d736-ttd?pid=P00322254&mcid=42383&medium=link",
       "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
       "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
-      "ownerVerificationRequired": true
+      "ownerVerificationRequired": true,
+      "trackingUrl": "https://www.viator.com/San-Diego/d736-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:40:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 San Diego destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-whistler",
@@ -1785,8 +1806,15 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Rotorua is now searchable in ERN and Viator has strong geothermal/culture/activity inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate and manually verify one Rotorua destination-level Viator link."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Rotorua/d395-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:40:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Rotorua destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "klook-wanaka",
@@ -2585,8 +2613,15 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "High-intent Iceland gateway with strong city and day-trip planning relevance.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one Reykjavík destination-level link after exact account check."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Reykjavik/d905-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:40:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Reykjavík destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-la-palma",
@@ -2940,9 +2975,16 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has an official Heidelberg tourism current-view place and Viator has substantial Heidelberg walking, castle and city-tour inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Heidelberg/d24030-ttd",
-      "nextAction": "Generate one Heidelberg destination-level Viator partner link and manually verify it before public activation."
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Heidelberg/d24030-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:40:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Heidelberg destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-nuremberg",
@@ -2968,9 +3010,16 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has an official Cannes live/current discovery view and Viator has extensive Cannes/French Riviera cruise, boat and sightseeing inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Cannes/d786-ttd",
-      "nextAction": "Generate one Cannes destination-level Viator partner link and manually verify it before public activation."
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Cannes/d786-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T06:40:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Cannes destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-plitvice",
