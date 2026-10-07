@@ -9,9 +9,14 @@ const table=(arr=[],a="Item",b="Count")=>`<table><thead><tr><th>${esc(a)}</th><t
 const daily=(x.daily||[]).slice().reverse();
 const maxV=Math.max(1,...daily.map(r=>num(r.visitors)));
 const dailyTable=`<table><thead><tr><th>Day (UTC)</th><th>Visitors</th><th>Page views</th></tr></thead><tbody>${(daily.length?daily:[{day:"—",visitors:0,pageViews:0}]).map(r=>`<tr><td>${esc(r.day)}</td><td>${num(r.visitors)}<span class="bar" style="--w:${Math.round(num(r.visitors)/maxV*100)}%"></span></td><td>${num(r.pageViews)}</td></tr>`).join("")}</tbody></table>`;
+const hostCount=(hosts=[])=>{const set=new Set(hosts);return (x.referrers||[]).filter(r=>set.has(String(r.value||"").toLowerCase())||hosts.some(h=>String(r.value||"").toLowerCase().endsWith("."+h))).reduce((n,r)=>n+num(r.count),0)};
+const googleRefs=hostCount(["google.com","google.co.th","google.co.uk","google.de","google.fr","google.co.jp"]);
+const facebookRefs=hostCount(["facebook.com","fb.com"]);
 const cards=[
  ["Visitors",num(x.visitors?.approxUnique),"Approx. unique"],
  ["Page views",num(x.visitors?.pageViews),"All ERN pages"],
+ ["Google referrals",googleRefs,"Search referral page views"],
+ ["Facebook referrals",facebookRefs,"Social referral page views"],
  ["Place opens",total(x.places),"Destination/window opens"],
  ["Searches",eventCount("earth_search"),"Search events"],
  ["Zero results",eventCount("earth_search_zero"),"Search gaps"],
