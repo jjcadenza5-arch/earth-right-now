@@ -29,3 +29,10 @@ ERN code must not create the Bing account, change DNS, or add a placeholder veri
 
 ## Operating rule
 Search-engine verification never changes ERN source truth, ranking, partner treatment, analytics privacy, or gated-feature state.
+
+
+## IndexNow
+
+ERN now publishes a public IndexNow verification key and notifies IndexNow after successful production deploys with a bounded set of recently updated crawlable URLs. This improves freshness discovery for participating search engines without changing ranking or guaranteeing indexing.
+
+Google remains driven by the verified Search Console property, sitemap and normal crawl/index processing. Bing Webmaster Tools remains useful for inspecting IndexNow reception and Bing indexing, but ERN no longer depends on manual URL-by-URL submission for routine freshness.
