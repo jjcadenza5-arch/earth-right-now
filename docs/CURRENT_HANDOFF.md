@@ -7780,3 +7780,56 @@ This closes the specific repository-vs-real-website gap identified by the owner'
 3. Keep Jinzun as the practical quality benchmark while improving provider/country diversity among genuinely current in-ERN visual candidates.
 4. Do not resume broad raw catalog expansion until visible-product reconciliation is substantially complete.
 5. Require matching Pages + Operations on the same content SHA plus live production-reality verification before the next canonical checkpoint.
+
+
+## Reality reconciliation catch-up checkpoint — 2026-10-07 14:10 UTC
+
+### Canonical production validation
+Final validated content SHA: `a993fc32cf159d18ecfb7a92349b81f46f5417fc`.
+
+Matching successful validation:
+- **Deploy ERN to GitHub Pages #2792** (run 37634051783): SUCCESS.
+- **ERN Operations Check #1561** (run 37634051606): SUCCESS.
+- production post-deploy visitor-reality verification: SUCCESS on `earthrightnow.app`.
+
+The live production reality verifier confirmed:
+- home revision: `a993fc32cf15`;
+- healthy searchable places: **751**;
+- healthy country / territory labels: **130**;
+- Taitung Jinzun benchmark present;
+- Jinzun commission-capable planning path visible on its generated destination page;
+- Watch Earth source-backed visual pool: **9** current inside-ERN source images from **6** providers.
+
+### Visitor-facing reconciliation delivered
+- Supplemental Search/Explore records are now part of the visible discovery runtime rather than remaining search-trigger-only.
+- Home public breadth fallback counts now match the unified catalog: **751 places / 130 countries & territories**.
+- More Places, Local Earth, saved/recent discovery and Explore share the unified public discovery catalog.
+- Living Atlas preserves coordinate honesty: core mapped records stay pinned, while unified current unmapped discovery is exposed honestly in the beyond-pins layer instead of fabricating coordinates.
+- Watch Earth now prioritizes source-backed current imagery for up to the first eight positions where eligible; source-backed Auckland and Takayama thumbnails were restored and Verbier was revalidated.
+- The production verifier enforces a source-image reality floor rather than accepting illustrative placeholders as proof of first-impression quality.
+
+### Taitung Jinzun benchmark + commercial utility
+- Jinzun live playback/currentness was independently revalidated against the official East Coast National Scenic Area live-camera page.
+- The live destination page now exposes one truthful downstream commission-capable planning action:
+  **Explore Taitung & Taiwan's East Coast** via Viator.
+- This action is explicitly broader Taitung / East Coast utility and does not claim the itinerary specifically visits Jinzun.
+- Commercial placement remains downstream from Earth discovery and cannot influence ranking.
+- The separate Klook Taitung conversion item has been demoted to an optional second-provider backlog item; it is no longer an owner task during reality reconciliation.
+
+### Lean-performance discipline
+- Several intermediate reconciliation attempts correctly failed the release gate when the lean-core budget was exceeded.
+- The final validated checkpoint stays within the existing performance ceilings; no threshold was raised to make reconciliation pass.
+
+### Reality-check rule now canonical
+A substantial ERN checkpoint is not complete merely because code merged or Pages deployed. For visitor-facing changes, the checkpoint must pass:
+1. repository release tests,
+2. Pages deployment,
+3. Operations validation on the same content SHA,
+4. explicit post-deploy live-domain reality verification for the intended visible behavior.
+
+### Remaining reality-reconciliation lane
+1. Continue checking Home, Watch Earth, Explore/Search, Living Atlas, Destinations and My Earth against visible production behavior.
+2. Continue replacing weak first-screen illustrative Watch Earth cards only when trustworthy current source-backed imagery exists; never fabricate or mislabel thumbnails.
+3. Keep public counts and handoff claims derived from the same unified catalog.
+4. Verify downstream planning actions on high-value destinations only when they add genuine visitor utility.
+5. Do not resume raw broad source expansion until the visible-product catch-up is substantially complete.
