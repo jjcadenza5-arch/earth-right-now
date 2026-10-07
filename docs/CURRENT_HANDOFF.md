@@ -7178,3 +7178,78 @@ The four intentionally degraded core records remain unchanged:
 ### Protected invariants
 
 Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no fake LIVE, paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; commercial value cannot alter Earth truth/currentness/health/ranking; clicks are not bookings; existing lean/performance ceilings remain enforced.
+
+
+## Six-family Viator activation checkpoint — 2026-10-07 09:09 UTC
+
+Canonical validated content:
+- Content SHA: `ff56834d208ab1bd535de33a297da06d90a197e8`.
+- **Deploy ERN to GitHub Pages #2739** (run 37598328013): SUCCESS.
+- **ERN Operations Check #1513** (run 37598328080): SUCCESS.
+- Pages and Operations validated the same final content SHA before this handoff-only commit.
+
+### Revenue expansion
+Activated six exact/current Viator destination families covering **10 healthy ERN places**:
+- Flåm / Aurlandsfjord;
+- Panama Canal, using one canal-level action across Miraflores, Gatún, Pedro Miguel, Cocolí and Agua Clara lock views;
+- Rio de Janeiro / Copacabana;
+- Santa Ana Volcano / Ilamatepec;
+- Puracé National Natural Park / Popayán;
+- Boulders Beach / Cape Peninsula.
+
+All six use ERN's existing owner-verified Viator affiliate identity `pid=P00322254 / mcid=42383 / medium=link` on independently rechecked current Viator destination, attraction or active-inventory pages. The exact destination URLs remain explicitly `manualOpenVerified: false`; no new owner click-through, booking, price, conversion or partner-account state is claimed.
+
+Public revenue-active state is now:
+- **209 public revenue-active offers**
+- **204 healthy ERN places** with an active offer
+- by program:
+  - Viator: **180**
+  - Klook: **21**
+  - Tiqets: **5**
+  - Welcome Pickups: **3**
+- distinct active tracked URLs:
+  - Viator: **74**
+  - Klook: **10**
+  - Tiqets: **4**
+  - Welcome Pickups: **3**
+- travel-offer registry total: **210** records.
+
+The one-record registry/public-active difference remains intentional: Tokyo/Chidori stays fail-closed while its underlying source remains degraded/off-season.
+
+### Source truth / maintenance
+No unresolved Earth-source candidate was force-promoted in this tranche.
+
+The remaining four unresolved exact-current research candidates stay fail-closed:
+- Montevideo — Pocitos Beach;
+- Montevideo — Plaza Independencia;
+- Soufrière Hills Volcano / Montserrat;
+- Île des Pins — Baie de Kuto / New Caledonia.
+
+Fresh rechecks still do not justify promotion:
+- Antel confirms camera content exists across Uruguay, but exact current Pocitos / Plaza Independencia playback targets remain unresolved.
+- MVO confirms 24-hour remote-camera monitoring and public still pairs, but ERN still lacks reliable public freshness evidence suitable for a current-image claim.
+- Kuto's tourism-office image endpoint remains referenced by a current local destination guide, but direct timestamp/freshness verification is still unavailable.
+- Pattaya's official CCTV surface was also rechecked: a recent snapshot showed 600 cameras, but the current surface showed 0 live cameras, so the existing DEGRADED fail-closed state remains correct rather than being prematurely repaired.
+
+### Architecture / product principles
+- One coherent destination action is preferred over per-camera commercial density.
+- Commercial placement stays downstream from Earth discovery.
+- Commission cannot affect source truth, health, currentness, ranking or editorial prominence.
+- Existing owner-verified Viator identity may be reused only on independently rechecked exact/current destination or attraction pages, with `manualOpenVerified: false` unless the owner actually opens/verifies that exact URL.
+- Travelpayouts short links remain owner-generation/human-verification gated; they are never invented.
+- Watch Earth remains in-ERN-playback-only.
+- LINK_ONLY / EXTERNAL sources remain outside Watch Earth.
+- IMAGE_REFRESH remains natural-schedule-only.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- No paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation.
+- Lean-core and performance ceilings remain enforced.
+
+### Next autonomous lane
+1. Continue high-fit destination-family activation from already-active programs only where exact current inventory genuinely matches healthy ERN places.
+2. Prefer one useful action per coherent destination family rather than per-camera affiliate density.
+3. Keep the four unresolved current-source gaps fail-closed until target/currentness evidence materially improves.
+4. Continue source-health / recency maintenance and architecture deduplication before raw volume growth.
+5. Prioritize visitor re-entry, discovery usefulness and traffic growth over raw affiliate-link count.
+6. Keep affiliate-revenue readiness counts synchronized with the computed public-offer layer in the same atomic tranche.
+7. Require matching successful Pages + Operations on the same content SHA before declaring the next canonical production checkpoint.
