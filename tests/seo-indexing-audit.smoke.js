@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";import fs from "node:fs";
 const s=fs.readFileSync("scripts/seo-indexing-audit.mjs","utf8"),b=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
-for(const x of ["SITEMAP_DUPLICATE_URLS","CANONICAL_ROUTE_MISSING","DUPLICATE_CANONICAL","INDEXABLE_DESTINATION_NOT_IN_SITEMAP","NOINDEX_DESTINATION_IN_SITEMAP","DESTINATION_TITLE_PATTERN_WEAK","COUNTRIES_MISSING_FROM_SITEMAP","COUNTRY_COLLECTION_SCHEMA_MISSING","COUNTRY_ITEMLIST_SCHEMA_MISSING","INVALID_JSONLD"])assert.ok(s.includes(x),x+" SEO guard missing");
+for(const x of ["SITEMAP_DUPLICATE_URLS","CANONICAL_ROUTE_MISSING","DUPLICATE_CANONICAL","INDEXABLE_DESTINATION_NOT_IN_SITEMAP","NOINDEX_DESTINATION_IN_SITEMAP","DESTINATION_TITLE_PATTERN_WEAK","COUNTRIES_MISSING_FROM_SITEMAP","COUNTRY_COLLECTION_SCHEMA_MISSING","COUNTRY_ITEMLIST_SCHEMA_MISSING","ROBOTS_RECENT_FEED_MISSING","RECENT_FEED_INVALID","RECENT_FEED_SELF_LINK_MISSING","INVALID_JSONLD"])assert.ok(s.includes(x),x+" SEO guard missing");
 assert.ok(b.includes(" Live Now"),"destination title logic missing");
 assert.ok(b.includes('"alternateName"'),"destination aliases must reach structured data");
 assert.ok(b.includes('"citation"'),"provider citations must reach structured data");

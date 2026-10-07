@@ -27,9 +27,13 @@ function routeForCanonical(url){
 function jsonLdBlocks(html){
   const blocks=[];for(const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi)){try{blocks.push(JSON.parse(m[1]))}catch{blocks.push(null)}}return blocks
 }
-const robots=await read("robots.txt"),sitemap=await read("sitemap.xml");
+const robots=await read("robots.txt"),sitemap=await read("sitemap.xml"),updates=await read("updates.xml");
 if(!/User-agent:\s*\*[\s\S]*?Allow:\s*\//i.test(robots))issues.push({code:"ROBOTS_PUBLIC_ROOT_NOT_ALLOWED"});
 if(!/Sitemap:\s*https:\/\/earthrightnow\.app\/sitemap\.xml/i.test(robots))issues.push({code:"ROBOTS_SITEMAP_MISSING"});
+if(!/Sitemap:\s*https:\/\/earthrightnow\.app\/updates\.xml/i.test(robots))issues.push({code:"ROBOTS_RECENT_FEED_MISSING"});
+if(!/<feed xmlns="http:\/\/www\.w3\.org\/2005\/Atom">/.test(updates))issues.push({code:"RECENT_FEED_INVALID"});
+if(!/<link rel="self" href="https:\/\/earthrightnow\.app\/updates\.xml"\/>/.test(updates))issues.push({code:"RECENT_FEED_SELF_LINK_MISSING"});
+if((updates.match(/<entry>/g)||[]).length>50)issues.push({code:"RECENT_FEED_TOO_LARGE"});
 if(/Disallow:\s*\/\s*(?:\r?\n|$)/i.test(robots))issues.push({code:"ROBOTS_ROOT_BLOCKED"});
 const sitemapUrls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
 const sitemapDup=sitemapUrls.filter((u,i,a)=>a.indexOf(u)!==i);
