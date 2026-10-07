@@ -13,7 +13,7 @@ function clean(name,data={}){
   if(k==="query"&&SEARCH_EVENTS.has(name)){const q=safeSearch(v);if(q)out.query=q;continue}
   if(!["sourceId","placeId","truth","playback","provider","length","resultCount","offerId","intent","linkScope","affiliate","sponsored","route"].includes(k))continue;
   if(typeof v==="number")out[k]=Math.max(0,Math.min(v,1000));
-  else if(typeof v==="string")out[k]=v.slice(0,k==="route"?120:120);
+  else if(typeof v==="string")out[k]=v.slice(0,120);
   else if(typeof v==="boolean")out[k]=v;
  }
  return out;
