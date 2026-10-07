@@ -6039,3 +6039,63 @@ Continue from this checkpoint by:
 3. favoring exact verified links from already-active partners over accumulating more commercial program names;
 4. continuing source-health and dedupe maintenance before volume growth;
 5. requiring matching successful Pages + Operations on the same content SHA before the next canonical production checkpoint.
+
+
+## Autonomous Namibia + Serengeti expansion checkpoint — 2026-10-07 02:47 UTC
+
+Canonical validated content:
+- Content commit: `fb1d568ab079df632cf7de82016e54f8fa540c03`.
+- **Deploy ERN to GitHub Pages #2690** (run 37563437674): SUCCESS.
+- **ERN Operations Check #1471** (run 37563437651): SUCCESS.
+- Pages and Operations validated the same content SHA before this handoff-only commit.
+
+### Search / Explore expansion
+Added three healthy Search/Explore-only live wildlife destinations:
+- **Safarihoek — Etosha Heights Waterhole**, Namibia — Africam / Safarihoek.
+- **Onguma — The Fort Waterhole**, Namibia — Africam / Onguma.
+- **Serengeti — Elewana Explorer Live Stream**, Tanzania — Africam / Elewana Serengeti Explorer.
+
+All three are `EXTERNAL_LIVE` + `LINK_ONLY`, remain Featured/Watch held, and do not enter Watch Earth because Watch Earth remains in-ERN-playback-only.
+
+### Commercial / utility diversification
+- Existing Viator Etosha planning now covers the new Safarihoek and Onguma discovery places after current 2026 Etosha inventory verification.
+- Added Namibia Airalo connectivity research; activation remains owner-project + exact tracked-link gated.
+- Added a bounded `namibia-etosha-planning` route with at most one exact safari/activity action plus one optional connectivity action.
+- Added Viator Serengeti planning after current 2026 Serengeti inventory verification.
+- Added Tanzania Airalo connectivity research and `tanzania-serengeti-planning` with the same one-activity + one-connectivity limit.
+- No lodge pickup, transfer inclusion, park access, price, affiliate availability or tracked-link attribution was invented.
+
+### Source-health maintenance / false-recovery guard
+A Pattaya City recovery attempt was intentionally rejected by ERN's release guard:
+- the official Pattaya portal currently advertises **600 cameras** and lists many beach/city camera locations;
+- however, the public per-camera retrieval path still resolves to **0 playable cameras** in current automated verification;
+- Pages #2689 correctly failed `source-research-stale-debt.smoke.js` when Pattaya was prematurely marked current;
+- the health promotion was reverted in `fb1d568...`;
+- `pattaya-city-live` therefore remains DEGRADED / fail-closed until real public playback for an individual camera is independently verified.
+
+Jungfrau remains correctly DEGRADED because the current official Jungfrau live page still reports its webcam set offline. Chidori-ga-fuchi remains seasonal/off-season, and Takayama Miyagawa remains a stale companion current-image source.
+
+### Current validated catalog
+- **712 healthy distinct searchable places**
+- **717 healthy source records**
+- **393 supplemental Search/Explore records**
+- **462 commercial opportunity records**
+- **84 utility-routing clusters**
+- **490 source-research candidates**
+- **8 unresolved research candidates**
+- **12 source-maintenance priority records**
+- Four degraded fail-closed core records remain: `pattaya-city-live`, `takayama-miyagawa-current-image`, `jungfrau-region`, and `chidori-sakura`.
+
+Remaining unresolved research is limited to Montevideo/Antel (3), Montserrat, New Caledonia/Kuto, Mauritius official webcam network, Zambia/Shenton Safaris, and Guam government live-streaming. Keep these unresolved until exact current/live destination evidence satisfies the existing truth rules.
+
+### Protected invariants
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; commercial value cannot affect Earth truth, health, currentness, ranking or editorial prominence; existing lean-core / performance ceilings remain enforced.
+
+### Next autonomous lane
+Continue from this checkpoint by:
+1. resolving the remaining eight research candidates only with exact current/live proof;
+2. prioritizing genuinely new geography and provider diversity rather than alternate IDs;
+3. favoring useful exact planning bridges from already-active/verified partner families;
+4. continuing source-health and dedupe maintenance before raw volume growth;
+5. treating the Pattaya incident as a permanent guardrail: collection inventory or portal reachability alone does not prove playable live output;
+6. requiring matching successful Pages + Operations on the same content SHA before the next canonical production checkpoint.
