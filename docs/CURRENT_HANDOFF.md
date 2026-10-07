@@ -6644,3 +6644,113 @@ Current rechecks still do not justify promotion:
 
 ### Protected invariants
 Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
+
+
+## Discovery + revenue activation checkpoint — 2026-10-07 06:13 UTC
+
+Canonical validated content:
+- Content SHA: `54011fc6806c6f880c0924a60bbb4bc388152658`.
+- **Deploy ERN to GitHub Pages #2717** (run 37580052929): SUCCESS.
+- **ERN Operations Check #1494** (run 37580052831): SUCCESS.
+- Pages and Operations validated the same content SHA before this handoff-only commit.
+
+### Live-Earth / discovery side
+Added **6 additional healthy Government of India Live Darshan destinations**:
+- Dongargarh — Maa Bamleshwari;
+- Kolhapur — Ambabai / Karveer Niwasini;
+- Pandharpur — Vitthal Rukmini;
+- Vijayawada — Kanaka Durga;
+- Puttaparthi — Sri Sathya Sai / Prasanthi Nilayam;
+- Nashik — Trimbakeshwar.
+
+All six remain:
+- `EXTERNAL_LIVE`;
+- `LINK_ONLY`;
+- Search/Explore-only;
+- Featured/Watch held;
+- not restreamed by ERN;
+- backed by the current Ministry of Tourism / Utsav Live Darshan directory, which exposes 75 live-darshan results.
+
+Search aliases and promoted research provenance were added for the six places.
+
+### Revenue / active commission side
+Public revenue-active coverage increased from **96 offers / 91 healthy places** at the previous baseline to:
+- **153 public revenue-active offers**
+- **148 healthy ERN places**
+- by active program: **124 Viator, 21 Klook, 5 Tiqets, 3 Welcome Pickups**
+- distinct active tracked URLs: **39 Viator, 10 Klook, 4 Tiqets, 3 Welcome Pickups**
+
+The travel-offer registry now contains **154 verified offers** total; one Klook Tokyo/Chidori placement remains fail-closed because the underlying Earth source is currently degraded/off-season, so it is not counted as public revenue-active.
+
+### Exact commission activation completed in this checkpoint
+Using ERN's already owner-verified Viator partner identity (`P00322254` / `mcid=42383`), exact current destination pages were independently rechecked and activated across these healthy ERN destination families:
+
+**Batch A**
+- Isle of Man — 5 places;
+- La Réunion — 4;
+- Cook Islands — 4;
+- Mérida / Yucatán — 4;
+- Maldives — 3;
+- Sal Island / Cape Verde — 3;
+- San Marino — 3;
+- Anguilla — 2;
+- Maui / Kihei — 2.
+
+**Batch B**
+- Barbados — 5 places;
+- Bermuda — 5;
+- St. Maarten / Philipsburg — 3;
+- Cyprus — 3;
+- Gibraltar — 3;
+- Queenstown — 3;
+- Great Smoky Mountains / Gatlinburg — 4.
+
+Also reused the already human-verified Klook Honolulu/Waikiki destination link for `waikiki-south-shore`, another healthy place inside the same exact destination scope.
+
+No new partner account approval was invented. No Travelpayouts short link was fabricated. Direct Viator expansion uses the same existing owner-verified affiliate identity and exact current destination routes only.
+
+### Release-guard repair
+The first expansion SHA `85a4682d...` was correctly blocked by Pages #2716 because the public revenue-active aggregate was undercounted by one Viator offer after the expanded registry.
+- This was an accounting drift only; link/source integrity was not the issue.
+- `data/affiliate-revenue-readiness.json` was reconciled against the exact same current-offer + active-partner + healthy-source logic used by the commercial preflight.
+- A second exact-destination commission batch was then landed.
+- Final SHA `54011fc6...` passed the current release smoke suite, commercial placement preflight, SEO/AI-search guards, deployment, social-preview verification and Operations.
+
+### Current canonical catalog
+- core source records: **328**
+- supplemental Search/Explore records: **414**
+- combined source records: **742**
+- healthy source records: **738**
+- healthy distinct searchable places: **733**
+- commercial research opportunities: **474**
+- utility-routing clusters: **86**
+- source-research candidates: **510**
+- unresolved exact-current research queue: **4**
+- source-maintenance priority records: **20**
+- verified travel offers: **154**
+- public revenue-active offers: **153**
+
+The four degraded/fail-closed core records remain unchanged:
+- `pattaya-city-live`;
+- `takayama-miyagawa-current-image`;
+- `jungfrau-region`;
+- `chidori-sakura`.
+
+The unresolved exact-current research queue remains:
+- Montevideo / Pocitos Beach;
+- Montevideo / Plaza Independencia;
+- Soufrière Hills / Montserrat;
+- Île des Pins / Kuto, New Caledonia.
+
+### Next autonomous lane
+1. Continue ERN on both sides: trustworthy live/current geography expansion **and** income activation.
+2. Prefer converting exact destination coverage from already-active programs before adding more research-only commercial rows.
+3. Continue exact Viator destination activation where the route is current and the ERN place scope is genuinely matched.
+4. Reuse human-verified Travelpayouts destination links only for additional ERN places in the same exact destination scope; never invent new short links.
+5. Keep commercial placement downstream from discovery and one-best-useful-action oriented; do not increase clutter merely to increase link count.
+6. Continue qualified-audience / repeat-use / destination re-entry improvements so more visitors reach useful planning actions naturally.
+7. Preserve the four fail-closed degraded sources and resolve the remaining four exact-current source candidates only with strong fresh evidence.
+8. Require matching successful Pages + Operations validation on the same content SHA before declaring the next canonical production checkpoint.
+
+### Protected invariants
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
