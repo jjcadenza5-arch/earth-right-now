@@ -4,9 +4,9 @@ import {currentTravelOffer} from "./travel-offer-verification.js";
 
 let offersPromise=null,partnersPromise=null,sourcesPromise=null;
 async function json(path){return fetch(path,{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[])}
-async function offers(){if(!offersPromise)offersPromise=json("./data/travel-offers.json");const list=await offersPromise;return Array.isArray(list)?list:[]}
-async function partners(){if(!partnersPromise)partnersPromise=json("./data/affiliate-partners.json");const list=await partnersPromise;return Array.isArray(list)?list:[]}
-async function sources(){if(!sourcesPromise)sourcesPromise=Promise.all([json("./data/sources.json"),json("./data/search-supplemental.json")]).then(([core,supplemental])=>[...(Array.isArray(core)?core:[]),...(Array.isArray(supplemental)?supplemental:[])]);return sourcesPromise}
+async function offers(){if(!offersPromise)offersPromise=json("/data/travel-offers.json");const list=await offersPromise;return Array.isArray(list)?list:[]}
+async function partners(){if(!partnersPromise)partnersPromise=json("/data/affiliate-partners.json");const list=await partnersPromise;return Array.isArray(list)?list:[]}
+async function sources(){if(!sourcesPromise)sourcesPromise=Promise.all([json("/data/sources.json"),json("/data/search-supplemental.json")]).then(([core,supplemental])=>[...(Array.isArray(core)?core:[]),...(Array.isArray(supplemental)?supplemental:[])]);return sourcesPromise}
 function sourceEligible(source){return Boolean(source)&&source.health==="HEALTHY"&&["LIVE_VIDEO","LIVE_IMAGE","EXTERNAL_LIVE"].includes(source.truth)}
 function currentPartner(raw){const parsed=affiliatePartner(raw);return Boolean(parsed&&activeAffiliatePartner(parsed,{now:Date.now()}))}
 async function attributable(offer){
