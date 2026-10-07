@@ -104,7 +104,7 @@
     }
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
-  "note": "Catalog scale is no longer the bottleneck. The Oct. 7 reality-reconciliation connected the unified public discovery catalog to production and aligned the traffic lane to the same operating state. Primary growth objective is now qualified organic discovery, better Watch Earth first impression, lower genuine search-gap rate, destination-level sharing, repeat use and real planning clicks. Traffic never overrides source truth/currentness and traffic-gated partner thresholds remain private.",
+  "note": "Catalog scale is no longer the bottleneck. Public product, destination planning telemetry and traffic collection are being reconciled against live production. Traffic metric semantics v2 separates destination opens, external-source opens, commercial opens and shares; clean destination ranking begins at the v2 deployment boundary. Traffic never overrides source truth/currentness and traffic-gated partner thresholds remain private.",
   "milestone": "751_HEALTHY_SEARCHABLE_PLACES_REALITY_AND_TRAFFIC_RECONCILED",
   "currentBusinessCoverage": {
     "healthyPlaces": 751,
@@ -175,6 +175,10 @@
         "count": 16
       }
     ],
-    "interpretationBoundary": "Aggregate correlation evidence only. These counts do not identify individual visitors or prove channel causation, bookings, conversions or revenue."
-  }
+    "interpretationBoundary": "Aggregate privacy-preserving evidence only. Page views, searches, external-source opens and travel-option opens remain valid event totals. The listed topPlaces ranking is legacy pre-v2 mixed place activity; clean destination-open and share-by-place rankings begin after the v2 analytics deployment at 2026-10-07T14:55:03Z. No counts identify individual visitors or prove channel causation, bookings, conversions or revenue.",
+    "metricSemanticsAtObservation": "LEGACY_V1_MIXED_PLACE_DIMENSION",
+    "topPlacesInterpretation": "Legacy pre-v2 place activity: placeId-bearing events could include destination/window opens plus some external-source/share activity. Preserve as historical context only; do not treat this ranking as clean destination opens."
+  },
+  "trafficMetricSemanticsVersion": 2,
+  "cleanDestinationAttributionStartsAt": "2026-10-07T14:55:03Z"
 }
