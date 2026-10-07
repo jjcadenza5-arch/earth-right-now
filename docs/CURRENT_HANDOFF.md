@@ -5945,3 +5945,35 @@ Continue from this checkpoint by:
 4. preserving one-best-provider-per-user-need presentation with fallbacks held in research;
 5. continuing source-health / dedupe maintenance;
 6. requiring matching Pages + Operations SUCCESS on the same content SHA before the next canonical production checkpoint.
+
+
+## Affiliate revenue-readiness truth checkpoint — 2026-10-07 01:54 UTC
+
+Canonical validated content:
+- Content commit: `0810a83e753b87ed637b073cd673cd3a616308b7`.
+- **Deploy ERN to GitHub Pages #2684** (run 37559140274): SUCCESS.
+- **ERN Operations Check #1465** (run 37559140277): SUCCESS.
+- **ERN JavaScript Syntax Check #1068** (run 37559140285): SUCCESS.
+- Pages, Operations, and syntax validation all passed on the same content SHA before this handoff-only commit.
+
+### Revenue truth layer
+Added `data/affiliate-revenue-readiness.json` so ERN now explicitly separates research-only, account/program availability, exact tracked-link verification, actual public revenue-active placement, and rejected/unavailable programs.
+
+The earning rule is now encoded in repository truth: ERN can earn only when a visitor uses a valid tracked affiliate surface and completes an eligible attributed transaction under that partner's rules. A research record, ordinary untracked link, or merely available program does not count as revenue-producing.
+
+Current verified evidence:
+- Viator relationship/tracked-link capability remains active.
+- Travelpayouts human-verified destination links: **11 total** — Klook 8, Tiqets 2, Welcome Pickups 1.
+- Revenue still depends on public placement, click attribution, eligible purchase, and partner rules.
+
+### Release guard strengthened
+`scripts/commercial-placement-preflight.mjs` now cross-checks the revenue-readiness file against canonical activation evidence. Verified counts, Viator active state, exact-link/manual-verification gates, no-auto-placement/no-auto-rewrite rules, and commission-neutral ranking must remain consistent or the build fails.
+
+### Research queue discipline
+Mauritius remains unresolved because the official Web CAM handoff currently returns 404. Zambia/Shenton remains unresolved because no durable current public webcam route was resolved. Montserrat, New Caledonia and Guam remain unresolved under their existing exact-currentness/purpose gates. No questionable source was promoted merely to increase count.
+
+### Protected invariants
+Watch Earth remains in-ERN-playback-only; public Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting, or unverified partner activation; commercial value cannot affect Earth truth, health, currentness, ranking or editorial prominence.
+
+### Next autonomous lane
+Continue converting a small number of high-fit already-active-partner opportunities into exact verified links when owner-side link generation is available; keep direct-program diversification as research until real owner approval exists; continue geographically diverse current/live expansion, source-health/dedupe maintenance, and require matching Pages + Operations SUCCESS on the same content SHA before the next canonical checkpoint.
