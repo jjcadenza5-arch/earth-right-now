@@ -5804,3 +5804,78 @@ Continue from this checkpoint by:
 3. continuing Viator + Travelpayouts-compatible diversification only after real destination utility is established;
 4. performing source-health and dedupe maintenance before additional volume growth;
 5. requiring matching successful Pages + Operations validation on the same content SHA before declaring the next canonical checkpoint.
+
+
+## Dual expansion + direct business-program diversification checkpoint — 2026-10-07 01:35 UTC
+
+Canonical validated content:
+- Content commit: `bb2a0e6655d3e61fa40ce1db6cafad247a0b5b92`.
+- **Deploy ERN to GitHub Pages #2683** (run 37557635829): SUCCESS.
+- **ERN Operations Check #1464** (run 37557635833): SUCCESS.
+- Pages and Operations validated the same content SHA before this handoff-only commit.
+
+### Search / Explore expansion
+Added **3 genuinely new healthy official Liechtenstein Tourism destinations**:
+- **Pfälzerhütte — Alpine Hut View**
+- **Balzers — Rhine Valley View**
+- **Eschen — Unterland View**
+
+All remain HEALTHY + EXTERNAL_LIVE + LINK_ONLY + EXTERNAL playback with Featured/Watch hold. They expand the existing official Liechtenstein webcam cluster without changing Watch Earth eligibility.
+
+### Business expansion beyond the usual paths
+Added current, exact-fit San Marino research paths for:
+- **GetYourGuide** activities;
+- **Booking.com** stays;
+- **Expedia** stays.
+
+Added routing that limits San Marino to at most one useful activity provider plus one stay provider after a visitor chooses the destination.
+
+More importantly, ERN now explicitly records **direct-program alternatives** alongside Travelpayouts for:
+- Booking.com Affiliate Partner Programme;
+- Agoda Affiliate Program / Partner Center;
+- Trip.com direct Affiliate Program;
+- Expedia Group Travel Creator Program;
+- GetYourGuide Partner Program;
+- Omio direct Affiliate Programme;
+- 12Go direct Affiliate Program.
+
+These are diversification routes only. They are not treated as active until the owner account/application is approved and an exact tracked link is verified. Existing Travelpayouts routes remain available where useful.
+
+### Current catalog / business state
+- **706 healthy distinct searchable places**
+- **711 healthy source records**
+- **387 supplemental Search/Explore records**
+- **457 commercial opportunity records**
+- **81 utility-routing clusters**
+- **484 source-research candidates**
+- **8 unresolved research candidates**
+- no duplicate source IDs;
+- no duplicate place IDs across core/supplemental;
+- no cross-core/supplemental duplicate titles.
+
+### Commercial architecture principle strengthened
+ERN should not become dependent on one affiliate network. For useful programs, preserve both:
+1. a network route (for example Travelpayouts) when available; and
+2. a direct partner/creator route when a legitimate current program exists.
+
+Choose the route later based on actual owner approval, tracking reliability, geographic/product fit and user utility — **never commission size or payout as a discovery-ranking signal**.
+
+### Protected invariants
+- Watch Earth remains in-ERN-playback-only.
+- LINK_ONLY / EXTERNAL records remain outside Watch Earth.
+- IMAGE_REFRESH remains natural-schedule-only.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- No paid ranking, automatic affiliate placement, tracked-link rewriting, automatic social posting or unverified partner activation.
+- Commercial value cannot alter source truth, currentness, health, ranking or editorial prominence.
+- Existing lean-core and performance ceilings remain enforced.
+
+### Next autonomous lane
+Continue expanding both sides:
+1. add genuinely new, trustworthy current/live Earth coverage with geographic and provider diversity;
+2. keep resolving the remaining source-research queue conservatively;
+3. widen business-program research beyond Viator/Travelpayouts, including direct programs where legitimate and useful;
+4. strengthen stays, transport, connectivity, tickets/activities and niche destination utilities without affiliate clutter;
+5. prefer one best provider per user need at a destination, with alternatives retained as fallbacks/research;
+6. continue dedupe/source-health maintenance;
+7. require matching Pages + Operations SUCCESS on the same content SHA before each new canonical checkpoint.
