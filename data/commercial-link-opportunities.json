@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T09:50:00Z",
+  "generatedAt": "2026-10-07T10:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -7978,11 +7978,19 @@
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "reason": "Viator currently exposes extensive 2026 Da Nang destination inventory across sightseeing, day trips, culture and outdoor activities.",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Da-Nang/d4680-ttd",
       "publicInventoryEvidence": "Current Viator Da Nang inventory lists 1,000+ tours and excursions for 2026.",
-      "nextAction": "Reuse or generate one exact owner-side Da Nang tracked link only after attribution validation; commercial placement remains post-discovery."
+      "nextAction": "Maintain one useful destination-level action for this destination family; do not add camera-specific duplicate offers unless visitor utility clearly requires it.",
+      "trackingUrl": "https://www.viator.com/Da-Nang/d4680-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T10:20:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's already owner-verified Viator affiliate identity P00322254 / mcid 42383 on an independently rechecked exact destination or active inventory page.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Da Nang inventory was rechecked and includes 1,000+ tours plus My Khe Beach and major Da Nang attractions. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+      "verificationEvidenceUrl": "https://www.viator.com/Da-Nang/d4680-ttd",
+      "manualOpenVerified": false
     },
     {
       "id": "klook-da-nang",
@@ -8038,11 +8046,19 @@
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "reason": "Viator currently exposes broad 2026 Mumbai sightseeing, cultural, cruise and transfer inventory.",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Mumbai/d953-ttd",
       "publicInventoryEvidence": "Current Viator Mumbai destination inventory shows 600+ tours and excursions for 2026.",
-      "nextAction": "Generate or reuse one exact owner-side Mumbai tracked destination/activity link after attribution validation; keep placement post-discovery."
+      "nextAction": "Maintain one useful destination-level action for this destination family; do not add camera-specific duplicate offers unless visitor utility clearly requires it.",
+      "trackingUrl": "https://www.viator.com/Mumbai/d953-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T10:20:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's already owner-verified Viator affiliate identity P00322254 / mcid 42383 on an independently rechecked exact destination or active inventory page.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator October 2026 Mumbai destination inventory was rechecked and remains active across sightseeing, culture, cruises and transfers. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+      "verificationEvidenceUrl": "https://www.viator.com/Mumbai/d953-ttd",
+      "manualOpenVerified": false
     },
     {
       "id": "klook-mumbai-india",
@@ -8068,11 +8084,19 @@
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "reason": "Viator currently exposes extensive 2026 Jaipur sightseeing and cultural activity inventory.",
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Jaipur/d4627-ttd",
       "publicInventoryEvidence": "Current Viator Jaipur destination inventory lists 700+ results including city tours and major heritage attractions.",
-      "nextAction": "Generate or reuse one exact owner-side Jaipur tracked destination/activity link after attribution validation."
+      "nextAction": "Maintain one useful destination-level action for this destination family; do not add camera-specific duplicate offers unless visitor utility clearly requires it.",
+      "trackingUrl": "https://www.viator.com/en-GB/Jaipur/d4627-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T10:20:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's already owner-verified Viator affiliate identity P00322254 / mcid 42383 on an independently rechecked exact destination or active inventory page.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Jaipur destination inventory was rechecked and remains active with extensive city and heritage-tour coverage. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+      "verificationEvidenceUrl": "https://www.viator.com/en-GB/Jaipur/d4627-ttd",
+      "manualOpenVerified": false
     },
     {
       "id": "klook-jaipur-india",
@@ -8098,11 +8122,19 @@
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "reason": "Viator currently exposes active 2026 Varanasi cultural, religious and Ganges-tour inventory.",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Varanasi-tours/Cultural-and-Theme-Tours/d22015-g4",
       "publicInventoryEvidence": "Current Viator Varanasi cultural inventory shows 100+ results, and current tours explicitly include Kashi Vishwanath Corridor and Ganges experiences.",
-      "nextAction": "Generate or reuse one exact owner-side Varanasi tracked destination/activity link after attribution validation."
+      "nextAction": "Maintain one useful destination-level action for this destination family; do not add camera-specific duplicate offers unless visitor utility clearly requires it.",
+      "trackingUrl": "https://www.viator.com/Varanasi-tours/Cultural-and-Theme-Tours/d22015-g4?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T10:20:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's already owner-verified Viator affiliate identity P00322254 / mcid 42383 on an independently rechecked exact destination or active inventory page.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Varanasi cultural inventory was rechecked and includes active Ganges, heritage and Kashi Vishwanath-area experiences. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+      "verificationEvidenceUrl": "https://www.viator.com/Varanasi-tours/Cultural-and-Theme-Tours/d22015-g4",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-chisinau-moldova",
@@ -8113,11 +8145,19 @@
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "reason": "Viator currently exposes active 2026 Chișinău city, cultural and Moldova day-tour inventory.",
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Chisinau-tours/City-Tours/d25271-g12-c5330",
       "publicInventoryEvidence": "Current Viator Chișinău city-tour inventory lists 24 results, with broader Moldova cultural and winery inventory also active.",
-      "nextAction": "Generate or reuse one exact owner-side Chișinău tracked destination/activity link only after attribution validation."
+      "nextAction": "Maintain one useful destination-level action for this destination family; do not add camera-specific duplicate offers unless visitor utility clearly requires it.",
+      "trackingUrl": "https://www.viator.com/en-GB/Chisinau-tours/City-Tours/d25271-g12-c5330?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T10:20:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's already owner-verified Viator affiliate identity P00322254 / mcid 42383 on an independently rechecked exact destination or active inventory page.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator October 2026 Chișinău city-tour inventory was rechecked and remains active, with broader Moldova cultural and day-tour coverage available. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+      "verificationEvidenceUrl": "https://www.viator.com/en-GB/Chisinau-tours/City-Tours/d25271-g12-c5330",
+      "manualOpenVerified": false
     },
     {
       "id": "airalo-india-connectivity",
