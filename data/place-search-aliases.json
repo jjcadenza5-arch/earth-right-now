@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T11:58:40Z",
+  "updatedAt": "2026-10-07T12:02:12Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -570,6 +570,29 @@
       "Lake Louise lakeshore",
       "Lake Louise Banff",
       "Lake Louise webcam"
+    ],
+    "canada-grasslands-bison": [
+      "Grasslands bison cam",
+      "Grasslands National Park bison",
+      "Saskatchewan bison live"
+    ],
+    "chile-eso-paranal-vlt": [
+      "Paranal Observatory",
+      "Very Large Telescope",
+      "VLT webcam",
+      "Cerro Paranal"
+    ],
+    "chile-eso-chajnantor-alma": [
+      "ALMA Observatory",
+      "Chajnantor Plateau",
+      "ALMA webcam",
+      "Atacama ALMA"
+    ],
+    "hawaii-maunakea-subaru-starcam": [
+      "Subaru StarCam",
+      "Subaru-Asahi StarCam",
+      "Maunakea star cam",
+      "Subaru Telescope webcam"
     ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T11:58:40Z",
+  "generatedAt": "2026-10-07T12:02:12Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -7660,6 +7660,62 @@
       "evidence": "Parks Canada's current Lake Louise visitor page links a live webcam from the lakeshore.",
       "verifiedAt": "2026-10-07T11:58:40Z",
       "promotedAt": "2026-10-07T11:58:40Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "canada-grasslands-bison-live",
+      "title": "Grasslands National Park — Wild Bison",
+      "country": "Canada",
+      "region": "Saskatchewan",
+      "provider": "Parks Canada / explore.org",
+      "sourcePage": "https://parks.canada.ca/pn-np/sk/grasslands/nature/faune-wildlife/photos-cameras",
+      "priority": "P1_QUALITY_BENCHMARK",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "Official Parks Canada page currently confirms two live bison/wildlife cameras in Grasslands National Park.",
+      "verifiedAt": "2026-10-07T12:02:12Z",
+      "promotedAt": "2026-10-07T12:02:12Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "chile-eso-paranal-vlt-live",
+      "title": "Cerro Paranal — Very Large Telescope",
+      "country": "Chile",
+      "region": "Atacama Desert",
+      "provider": "European Southern Observatory",
+      "sourcePage": "https://eso.org/public/outreach/webcams/",
+      "priority": "P1_QUALITY_BENCHMARK",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "ESO currently labels the Paranal VLT webcam LIVE and describes 24/7 webcam transmission.",
+      "verifiedAt": "2026-10-07T12:02:12Z",
+      "promotedAt": "2026-10-07T12:02:12Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "chile-eso-chajnantor-alma-live",
+      "title": "Chajnantor Plateau — ALMA",
+      "country": "Chile",
+      "region": "Atacama Desert",
+      "provider": "European Southern Observatory / ALMA",
+      "sourcePage": "https://eso.org/public/outreach/webcams/",
+      "priority": "P1_QUALITY_BENCHMARK",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "ESO currently labels its Chajnantor ALMA view LIVE and describes the 5,000-metre plateau webcam.",
+      "verifiedAt": "2026-10-07T12:02:12Z",
+      "promotedAt": "2026-10-07T12:02:12Z",
+      "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "hawaii-maunakea-subaru-starcam-live",
+      "title": "Maunakea — Subaru StarCam",
+      "country": "United States",
+      "region": "Hawaiʻi",
+      "provider": "National Astronomical Observatory of Japan / Asahi Shimbun",
+      "sourcePage": "https://www.nao.ac.jp/en/livecam/",
+      "priority": "P1_QUALITY_BENCHMARK",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "evidence": "NAOJ currently lists Subaru-Asahi StarCam in its live-camera directory; the formal operating agreement describes 24/7 summit livestreaming.",
+      "verifiedAt": "2026-10-07T12:02:12Z",
+      "promotedAt": "2026-10-07T12:02:12Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
     }
   ],
