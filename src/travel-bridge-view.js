@@ -6,7 +6,7 @@ const LABELS={stay:"Places to stay",eat:"Food nearby",transport:"Getting there &
 export function travelOfferView(offer,{now=Date.now()}={}){
  if(!currentTravelOffer(offer,{now}))return null;const href=safeHttpUrl(offer.url);if(!href)return null;
  const card=element("article",{className:"travel-offer"}),title=element("strong",{text:offer.title}),provider=element("span",{className:"travel-provider",text:offer.provider}),disclosure=element("small",{className:"travel-disclosure",text:travelOfferDisclosureText(offer)}),link=element("a",{text:travelOfferActionText(offer),attrs:{"aria-label":`${travelOfferActionText(offer)}: ${offer.title} from ${offer.provider}`}});
- link.href=href;Object.assign(link,externalAttrs());card.append(title,provider,disclosure,link);return card;
+ link.href=href;link.dataset.offerId=String(offer.id||"");link.dataset.offerKind=offer.sponsored?"sponsored":offer.affiliate?"affiliate":"external";Object.assign(link,externalAttrs());if(offer.affiliate||offer.sponsored)link.rel="noopener noreferrer sponsored";card.append(title,provider,disclosure,link);return card;
 }
 export function travelBridgeView(place,{onIntent,offers=[],now=Date.now()}={}){
  const section=element("section",{className:"travel-bridge"}),context=travelContext(place);

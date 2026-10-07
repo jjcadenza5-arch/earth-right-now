@@ -43,9 +43,9 @@
       "programs": [
         {
           "id": "travelpayouts-platform",
-          "state": "PROJECT_ACTIVE_INITIAL_REVIEW_COMPLETE",
+          "state": "PROJECT_ACTIVE_MANUAL_TRACKED_LINKS_ALLOWED",
           "relationshipActive": true,
-          "trackedLinksAllowed": false,
+          "trackedLinksAllowed": true,
           "projectDomain": "https://earthrightnow.app",
           "availableProgramsObserved": 26,
           "unlockMoreObserved": 20,
@@ -59,7 +59,7 @@
             "links",
             "widgets"
           ],
-          "note": "Travelpayouts Project remains verified. Drive auto-monetization is disabled/removed from ERN; use explicit affiliate links/widgets only after program-level eligibility is confirmed.",
+          "note": "Travelpayouts Project is verified and manual destination-specific tracked links are already in active ERN inventory. Drive auto-monetization remains disabled; only deliberately generated, verified links/widgets may be published.",
           "manualToolsOnly": true,
           "reviewEvidence": "Travelpayouts email states the ERN project was reviewed and connected to relevant brands; dashboard shows 26 available programs with Generate links, while a banner still indicates broader matching/review continues."
         }
@@ -76,9 +76,9 @@
       "rationale": "Direct large-brand applications remain on hold while ERN builds traffic, social proof and commercial history through Viator and Travelpayouts-accessible programs."
     }
   ],
-  "next": "OBSERVE_EXPANDED_VERIFIED_LINKS_AND_PRIORITIZE_FUTURE_COVERAGE_FROM_REAL_DEMAND",
-  "note": "Verified destination-specific links now include Auckland, New York/Statue of Liberty, Tokyo, Sydney, Honolulu, Kyoto, Seoul, Rome and Rovaniemi. Travelpayouts Drive remains off; new placements still require deliberate verified destination-level links.",
-  "updatedAt": "2026-10-02T00:00:00Z",
+  "next": "EXPAND_VERIFIED_COMMISSION_COVERAGE_FROM_EXISTING_ACTIVE_PROGRAMS_AND_MEASURE_AGGREGATE_OUTBOUND_CLICKS",
+  "note": "ERN now has active verified destination-specific commission links. Public placement is allowed only for those exact verified links while automatic rewriting/Drive remains off. Expand by reusing a verified destination link only for genuinely same-destination ERN places, or by generating and verifying a new owner-side tracked link.",
+  "updatedAt": "2026-10-07T03:20:00Z",
   "travelpayoutsVerifiedPrograms": {
     "klook": {
       "state": "MANUAL_LINK_HUMAN_VERIFIED",
@@ -233,7 +233,8 @@
       "welcome-pickups"
     ],
     "completedAt": "2026-09-28T13:41:00Z",
-    "publicPlacementAllowed": false,
-    "next": "MAINTAIN_VERIFICATION_HORIZON_AND_VET_NEXT_SMALL_BATCH"
+    "publicPlacementAllowed": true,
+    "next": "EXPAND_VERIFIED_DESTINATION_COVERAGE_AND_MEASURE_AGGREGATE_OUTBOUND_CLICKS",
+    "publicPlacementScope": "VERIFIED_DESTINATION_LINKS_ONLY"
   }
 }
