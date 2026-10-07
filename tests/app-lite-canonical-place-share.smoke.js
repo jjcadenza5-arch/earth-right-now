@@ -1,0 +1,10 @@
+import fs from "node:fs";import assert from "node:assert/strict";
+const app=fs.readFileSync("src/app-lite.js","utf8");
+const start=app.indexOf('$("#shareViewer").onclick');
+assert.ok(start>=0,"share handler missing");
+const end=app.indexOf('$("#shareErn").onclick',start);
+const handler=app.slice(start,end);
+assert.match(handler,/const url=placePageUrl\(s\)/);
+assert.doesNotMatch(handler,/viewHash\(s\.id\)/);
+assert.match(app,/function placePageUrl\(s\).*\/places\//s);
+console.log("ERN viewer sharing uses canonical destination pages for crawlable social previews");

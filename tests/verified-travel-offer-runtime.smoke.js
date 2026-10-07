@@ -5,6 +5,6 @@ assert.match(app,/function currentClientTravelOffer/);assert.match(app,/u\.proto
 assert.match(app,/function travelOfferFor/);assert.match(app,/Date\.parse\(b\.verifiedAt\)-Date\.parse\(a\.verifiedAt\)/);
 assert.match(app,/function travelOfferDisclosure/);assert.match(app,/Affiliate link/);assert.match(app,/Sponsored/);
 assert.match(app,/noopener noreferrer sponsored/);assert.match(app,/applyPlanOffer\(\$\("#planStay"\)/);assert.match(app,/applyPlanOffer\(\$\("#planEat"\)/);assert.match(app,/applyPlanOffer\(\$\("#planDo"\)/);
-assert.match(html,/id="planCommercialDisclosure"/);assert.match(html,/id="planPlanningNote"/);assert.match(css,/plan-commercial-disclosure\[hidden\]/);
+assert.match(html,/id="planTransport"/);assert.match(html,/data-i18n="gettingThere"/);assert.match(html,/id="planCommercialDisclosure"/);assert.match(html,/id="planPlanningNote"/);assert.match(css,/plan-commercial-disclosure\[hidden\]/);
 new Function(app);
 console.log("ERN verified travel offer runtime wiring passed");
