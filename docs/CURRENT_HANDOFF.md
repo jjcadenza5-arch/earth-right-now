@@ -7595,3 +7595,66 @@ Do not auto-promote without fresh exact-current verification, but prioritize the
 4. Keep unresolved gaps fail-closed until exact target/currentness evidence improves.
 5. Maintain source-health, dedupe and provider-diversity checks before volume growth.
 6. Require matching successful Pages + Operations on the same content SHA before the next canonical checkpoint.
+
+
+## Premium harbor + wildlife expansion checkpoint — 2026-10-07 12:18 UTC
+
+### Canonical validation
+- Final validated content SHA: `5b30a90a65d67179d23f9a3b2050ed73dda3a5cd`.
+- **Deploy ERN to GitHub Pages #2761** (run 37619725906): SUCCESS.
+- **ERN Operations Check #1533** (run 37619725850): SUCCESS.
+- Pages and Operations validated the same content SHA.
+- Supplemental-catalog integrity, provider resilience, release smoke, performance, SEO/AI-search, public-module and commercial-placement safeguards all passed inside the Pages release path.
+
+### Search / Explore expansion
+Promoted five strong first-party/current sources conservatively:
+- Oslo — Port Harbor Cameras: Port of Oslo official Raadhuskaia, Kavringen and Vippetangen camera family.
+- Akureyri — Port Live Piers: Port of Akureyri official LIVE Fiskihöfn, Oddeyrarbryggja, Krossanes and Torfunefsbryggja pier family.
+- Helgoland — Harbor & North Sea: official Helgoland Tourism round-the-clock HD harbor / island / North Sea webcam.
+- Kruger — Orpen Wildlife Cam: official SANParks current wildlife video, truthfully retaining SANParks' stated ~10-minute cache delay.
+- Kruger — Olifants River Wildlife Cam: official SANParks current wildlife video with the same truthful ~10-minute cache-delay handling.
+
+All five are **Search/Explore-first LINK_ONLY / EXTERNAL** sources. None were promoted into Watch Earth.
+
+### Catalog after this checkpoint
+- core source records: **328**
+- supplemental Search/Explore records: **432**
+- combined source records: **760**
+- healthy source records: **756**
+- healthy distinct searchable places: **751**
+- healthy provider labels: **426**
+- healthy country/territory labels: **130**
+- duplicate supplemental source IDs: **0**
+- duplicate exact supplemental titles: **0**
+
+### New-country / territory research disposition
+A fresh pass explicitly favored missing countries/territories before adding more same-country volume.
+- Guam: NOAA/NWS provides frequently refreshed satellite/radar imagery, but no sufficiently place-specific high-impact live visual was promoted in this batch.
+- Samoa / Tonga / Micronesia / New Caledonia: no newly found exact-current first-party live target met ERN's premium-source threshold during this pass.
+- Existing unresolved New Caledonia and Montserrat gaps therefore remain fail-closed; no directory, prerecorded video or weak third-party listing was substituted.
+
+### Commercial utility research
+Fresh Viator evidence confirms real current destination utility for:
+- Oslo / Oslofjord;
+- Akureyri / North Iceland;
+- Kruger National Park.
+
+No commercial link was activated in this source tranche. Commercial actions remain downstream from Earth truth and will only be added as a separate synchronized tranche when the exact ERN destination-family mapping is useful and non-duplicative.
+
+### Protected invariants
+- Watch Earth remains in-ERN-playback-only.
+- LINK_ONLY / EXTERNAL sources remain outside Watch Earth.
+- IMAGE_REFRESH remains natural-schedule-only.
+- Scheduled, delayed or seasonal sources retain truthful timing semantics.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- Commercial value cannot affect Earth truth/currentness/health/ranking/editorial prominence.
+- No paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation.
+- Existing lean/performance ceilings remain enforced.
+
+### Next autonomous lane
+1. Continue premium-source research with first preference for genuinely new countries/territories and genuinely different providers.
+2. Revisit the unresolved exact-current gaps only when source evidence materially improves; keep them fail-closed otherwise.
+3. Continue source-health repair and deduplication before raw catalog growth.
+4. Convert Oslo/Akureyri/Kruger commercial utility only if one coherent destination-family action adds real visitor value without affiliate density.
+5. Preserve the same-sha Pages + Operations rule before the next canonical checkpoint.
