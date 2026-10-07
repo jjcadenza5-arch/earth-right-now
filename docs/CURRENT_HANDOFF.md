@@ -7064,3 +7064,117 @@ Intermediate runs on the uncorrected/superseded candidate are non-canonical. The
 ### Protected invariants
 
 Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources stay outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; commercial value cannot alter Earth truth/currentness/health/ranking; exact destination evidence remains distinct from owner-click verification; clicks are not bookings; lean/performance ceilings remain enforced.
+
+
+## Nólsoy + destination-family revenue checkpoint — 2026-10-07 08:46 UTC
+
+Canonical validated content:
+- Content SHA: `0fed5f18db89dd0208ea719f8f52e1eeb3539c89`.
+- **Deploy ERN to GitHub Pages #2738** (run 37595705101): SUCCESS.
+- **ERN Operations Check #1512** (run 37595705027): SUCCESS.
+- Pages and Operations validated the same final content SHA before this handoff-only commit.
+
+### Revenue expansion
+
+Activated five additional exact/current Viator destination families covering **6 healthy ERN places**:
+- Whistler;
+- Addo Elephant National Park;
+- Mount Rainier National Park;
+- Glacier National Park, sharing one destination action across the main park view and Many Glacier;
+- Montevideo / Ciudad Vieja.
+
+All use ERN's existing owner-verified Viator affiliate identity `pid=P00322254 / mcid=42383 / medium=link` on independently rechecked exact destination/attraction pages. The exact destination URLs remain explicitly `manualOpenVerified: false`; no new owner click-through, booking, price, conversion or partner-account state is claimed.
+
+The public revenue-active layer after the full checkpoint is:
+- **199 public revenue-active offers**
+- **194 healthy ERN places** with an active offer
+- by program:
+  - Viator: **170**
+  - Klook: **21**
+  - Tiqets: **5**
+  - Welcome Pickups: **3**
+- distinct active tracked URLs:
+  - Viator: **68**
+  - Klook: **10**
+  - Tiqets: **4**
+  - Welcome Pickups: **3**
+- travel-offer registry total: **200** records.
+
+The one-record registry/public-active difference remains intentional: Tokyo/Chidori stays fail-closed while its underlying source is degraded/off-season.
+
+### Source-quality / Search-Explore expansion
+
+Added **Nólsoy — Faroe Islands Live** as a new healthy Search/Explore place:
+- provider: Faroe Islands Live;
+- truth: `EXTERNAL_LIVE`;
+- permission: `LINK_ONLY`;
+- playback: external;
+- Featured/Watch hold remains ON;
+- exact place route: `https://www.faroeislandslive.com/?id=113`.
+
+The existing single Faroe Islands Viator destination action now serves Nólsoy as part of the coherent Faroe place family. No new destination URL was created. The Faroe planning cluster and connectivity research were extended to include Nólsoy.
+
+Official/current source evidence was also refreshed for:
+- Whistler Blackcomb;
+- Addo Elephant National Park;
+- Mount Rainier National Park;
+- Glacier National Park;
+- Many Glacier.
+
+### Release-guard catches and repair
+
+The release system caught two issues during this tranche and both were repaired without weakening any guard:
+1. Refreshed core source copy initially pushed the lean core above the hard **575 KB** ceiling. The wording was compacted while preserving source truth/currentness; the final performance preflight passed.
+2. `Nólsoy` and `Nolsoy` normalized to the same alias key. The redundant ASCII alias was removed while retaining the canonical accented name and a disambiguated Faroe alias.
+
+Intermediate failed/superseded Pages runs are non-canonical:
+- #2734 failed the lean-core performance guard;
+- #2735 remained over the lean-core ceiling;
+- #2736 passed performance but correctly failed duplicate-alias integrity;
+- #2737 then validated the corrected source-only state;
+- final commercial-consistency SHA `0fed5f18...` passed both Pages #2738 and Operations #1512.
+
+No performance ceiling, alias-integrity rule, source-truth rule, commercial-neutrality rule or fail-closed boundary was weakened.
+
+### Current catalog / research state
+
+- core source records: **328**
+- supplemental Search/Explore records: **415**
+- combined source records: **743**
+- healthy source records: **739**
+- healthy distinct searchable places: **734**
+- commercial opportunities: **474**
+- utility-routing clusters: **86**
+- source-research candidates: **511**
+- source-maintenance priority records: **20**
+- unresolved exact-current research candidates: **4**
+- travel-offer registry: **200**
+
+The only remaining unresolved source-research candidates are:
+- Montevideo — Pocitos Beach;
+- Montevideo — Plaza Independencia;
+- Soufrière Hills Volcano / Montserrat;
+- Île des Pins — Baie de Kuto / New Caledonia.
+
+These remain fail-closed until exact current playback/freshness evidence is strong enough.
+
+The four intentionally degraded core records remain unchanged:
+- `pattaya-city-live`;
+- `takayama-miyagawa-current-image`;
+- `jungfrau-region`;
+- `chidori-sakura`.
+
+### Next autonomous lane
+
+1. Keep the remaining four exact-current research gaps fail-closed unless fresh target/currentness evidence resolves them.
+2. Prefer genuinely new countries/territories and provider diversity over alternate IDs or duplicate representations.
+3. Continue high-fit destination-family activation from already-active partner programs only where exact current inventory genuinely matches healthy ERN places.
+4. Prefer one useful action per coherent destination family rather than per-camera affiliate density.
+5. Continue source-health / recency maintenance and architecture deduplication before raw volume growth.
+6. Prioritize visitor re-entry, discovery usefulness and traffic growth over raw affiliate-link count.
+7. Keep revenue-readiness counts synchronized with the computed public offer layer in the same tranche.
+8. Require matching successful Pages + Operations on the same content SHA before the next canonical production checkpoint.
+
+### Protected invariants
+
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no fake LIVE, paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; commercial value cannot alter Earth truth/currentness/health/ranking; clicks are not bookings; existing lean/performance ceilings remain enforced.
