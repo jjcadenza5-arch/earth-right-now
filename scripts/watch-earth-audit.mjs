@@ -17,11 +17,16 @@ const rows=auditMoments.map(now=>{
   const ids=items.map(s=>s.id),uniqueIds=new Set(ids),eligible=items.filter(s=>watchEarthEligible(s,{now})).length;
   const previews=items.filter(s=>s.truth==="PREVIEW").length;
   const sequence=watchEarthSequenceDiagnostics(items);
-  return{utc:now.toISOString(),actualNow:Math.abs(Date.now()-now.getTime())<60000,...snap,...sequence,target:20,shortfall:Math.max(0,20-items.length),eligible,duplicateIds:ids.length-uniqueIds.size,previews,titles:items.map(s=>s.title)};
+  const weakFirstEight=items.slice(0,8).filter(s=>(Number(s.quality)||0)<84||(Number(s.moment)||0)<80).map(s=>s.id);
+  return{utc:now.toISOString(),actualNow:Math.abs(Date.now()-now.getTime())<60000,...snap,...sequence,target:20,shortfall:Math.max(0,20-items.length),eligible,duplicateIds:ids.length-uniqueIds.size,previews,weakFirstEight,titles:items.map(s=>s.title)};
 });
 const violations=[];
 for(const row of rows){
   if(row.count<1)violations.push(`${row.utc}: no Watch Earth windows`);if(row.actualNow&&row.count<8)violations.push(`${row.utc}: actual-current Watch Earth below production floor (8)`);
+  if(row.actualNow&&row.count>=8&&row.countries<5)violations.push(`${row.utc}: actual-current Watch Earth country breadth below first-impression floor (5)`);
+  if(row.actualNow&&row.count>=8&&row.providers<5)violations.push(`${row.utc}: actual-current Watch Earth provider breadth below first-impression floor (5)`);
+  if(row.actualNow&&row.count>=8&&row.dominantProviderShare>.4)violations.push(`${row.utc}: actual-current Watch Earth provider concentration above first-impression ceiling (40%)`);
+  if(row.actualNow&&row.weakFirstEight.length)violations.push(`${row.utc}: weak first-impression window(s): ${row.weakFirstEight.join(", ")}`);
   if(row.eligible!==row.count)violations.push(`${row.utc}: ${row.count-row.eligible} ineligible window(s)`);
   if(row.duplicateIds)violations.push(`${row.utc}: ${row.duplicateIds} duplicate source id(s)`);
   if(row.previews)violations.push(`${row.utc}: ${row.previews} PREVIEW item(s) leaked into Watch Earth`);
