@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T14:33:00Z",
+  "generatedAt": "2026-10-07T15:42:27Z",
   "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
   "currentSearchableHealthyPlaces": 751,
   "unlockTargets": [
@@ -104,7 +104,7 @@
     }
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
-  "note": "Catalog scale is no longer the bottleneck. Public product, destination planning telemetry and traffic collection are being reconciled against live production. Traffic metric semantics v2 separates destination opens, external-source opens, commercial opens and shares; clean destination ranking begins at the v2 deployment boundary. Traffic never overrides source truth/currentness and traffic-gated partner thresholds remain private.",
+  "note": "Catalog scale is no longer the bottleneck. Public product, destination planning telemetry and traffic collection are reconciled against live production. Traffic metric semantics v2 separates destination opens, external-source opens, commercial opens and shares; clean destination/share rankings begin at the v2 deployment boundary. Traffic never overrides source truth/currentness and traffic-gated partner thresholds remain private.",
   "milestone": "751_HEALTHY_SEARCHABLE_PLACES_REALITY_AND_TRAFFIC_RECONCILED",
   "currentBusinessCoverage": {
     "healthyPlaces": 751,
@@ -120,13 +120,13 @@
   },
   "unlockReadiness": "data/travelpayouts-unlock-readiness.json",
   "latestObservedTraffic": {
-    "observedAt": "2026-10-07T14:32:48Z",
+    "observedAt": "2026-10-07T15:42:27Z",
     "windowDays": 30,
     "approximateUniqueVisitors": 53,
-    "pageViews": 330,
+    "pageViews": 333,
     "googleFamilyReferrals": 18,
     "facebookFamilyReferrals": 32,
-    "earthSearches": 83,
+    "earthSearches": 84,
     "zeroResultSearches": 36,
     "windowOpens": 284,
     "externalSourceOpens": 79,
@@ -134,7 +134,7 @@
     "topSearches": [
       {
         "value": "taitung jinzun",
-        "count": 5
+        "count": 6
       },
       {
         "value": "arches",
@@ -175,9 +175,11 @@
         "count": 16
       }
     ],
-    "interpretationBoundary": "Aggregate privacy-preserving evidence only. Page views, searches, external-source opens and travel-option opens remain valid event totals. The listed topPlaces ranking is legacy pre-v2 mixed place activity; clean destination-open and share-by-place rankings begin after the v2 analytics deployment at 2026-10-07T14:55:03Z. No counts identify individual visitors or prove channel causation, bookings, conversions or revenue.",
-    "metricSemanticsAtObservation": "LEGACY_V1_MIXED_PLACE_DIMENSION",
-    "topPlacesInterpretation": "Legacy pre-v2 place activity: placeId-bearing events could include destination/window opens plus some external-source/share activity. Preserve as historical context only; do not treat this ranking as clean destination opens."
+    "interpretationBoundary": "Aggregate privacy-preserving evidence only. Traffic metric semantics v2 is active. Rolling event totals still include pre-v2 history where applicable; clean v2 destination-open and share-by-place dimensions currently contain no recorded rows. The retained topPlaces list is legacy pre-v2 source/place activity for historical context only. No counts identify individual visitors or prove channel causation, bookings, conversions or revenue.",
+    "metricSemanticsAtObservation": "V2_ACTIVE_WITH_LEGACY_WINDOW_TOTALS",
+    "topPlacesInterpretation": "Legacy pre-v2 source/place activity retained only as historical context. Clean v2 destination-open ranking is currently empty and begins only with post-2026-10-07T14:55:03Z destination-open events.",
+    "cleanV2DestinationOpens": [],
+    "cleanV2DestinationShares": []
   },
   "trafficMetricSemanticsVersion": 2,
   "cleanDestinationAttributionStartsAt": "2026-10-07T14:55:03Z"
