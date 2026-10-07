@@ -1,9 +1,10 @@
 const base=(process.argv[2]||"https://earthrightnow.app/").replace(/\/$/,"");
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
-async function get(url,tries=6){let last;for(let i=0;i<tries;i++){try{const r=await fetch(url+"?ernReality="+Date.now(),{redirect:"follow",headers:{"cache-control":"no-cache"}});if(r.ok)return r;last=new Error(url+" -> "+r.status)}catch(e){last=e}await wait(3000)}throw last}
-const home=await (await get(base+"/")).text();
-if(!home.includes("app-lite.js?v=20261007c"))throw new Error("production home is not serving the reconciled app revision");
-const app=await (await get(base+"/src/app-lite.js")).text();
+async function fetchFresh(url){const join=url.includes("?")?"&":"?";return fetch(url+join+"ernReality="+Date.now(),{redirect:"follow",headers:{"cache-control":"no-cache"}})}
+async function waitText(url,predicate,label,tries=18){let last="no response";for(let i=0;i<tries;i++){try{const r=await fetchFresh(url);const t=await r.text();last=r.status+" "+t.slice(0,120);if(r.ok&&predicate(t))return t}catch(e){last=String(e)}await wait(5000)}throw new Error(label+" did not reach expected production state: "+last)}
+async function get(url,tries=8){let last;for(let i=0;i<tries;i++){try{const r=await fetchFresh(url);if(r.ok)return r;last=new Error(url+" -> "+r.status)}catch(e){last=e}await wait(4000)}throw last}
+const home=await waitText(base+"/",t=>t.includes("app-lite.js?v=20261007c"),"production home");
+const app=await waitText(base+"/src/app-lite.js?v=20261007c",t=>t.includes("setTimeout(()=>loadSearchExtra(initialQ),0)"),"production app");
 for(const marker of ["setTimeout(()=>loadSearchExtra(initialQ),0)","const dc=()=>state.sources.concat(state.sx)","renderDiscoveryProof();renderWander();renderLocalEarth();renderSaved()"])if(!app.includes(marker))throw new Error("production app missing reality-sync marker: "+marker);
 const core=await (await get(base+"/data/sources.json")).json();
 const extra=await (await get(base+"/data/search-supplemental.json")).json();
