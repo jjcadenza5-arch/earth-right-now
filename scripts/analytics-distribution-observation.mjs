@@ -19,6 +19,7 @@ const current={
  windowOpens:eventCount("window_opened"),
  externalSourceOpens:eventCount("external_source_opened"),
  travelOptionOpens:eventCount("travel_option_opened"),
+ shareClicks:eventCount("share_clicked"),
  topSearches:(x.searches||[]).slice(0,5),
  topPlaces:(x.places||[]).slice(0,5)
 };
@@ -31,6 +32,7 @@ const intensityFor=m=>({
  windowOpensPerApproxVisitor:ratio(m.windowOpens,m.approximateUniqueVisitors),
  externalSourceOpensPerApproxVisitor:ratio(m.externalSourceOpens,m.approximateUniqueVisitors),
  travelOptionOpensPerApproxVisitor:ratio(m.travelOptionOpens,m.approximateUniqueVisitors),
+ shareClicksPerApproxVisitor:ratio(m.shareClicks,m.approximateUniqueVisitors),
  zeroResultSearchRate:ratio(m.zeroResultSearches,m.earthSearches)
 });
 const currentIntensity=intensityFor(current);
@@ -79,7 +81,8 @@ const out={
      zeroResultSearches:deltaMetric("zeroResultSearches"),
      windowOpens:deltaMetric("windowOpens"),
      externalSourceOpens:deltaMetric("externalSourceOpens"),
-     travelOptionOpens:deltaMetric("travelOptionOpens")
+     travelOptionOpens:deltaMetric("travelOptionOpens"),
+     shareClicks:deltaMetric("shareClicks")
    }
  },
  exploration:{
