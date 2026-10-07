@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-07T01:50:02Z",
+  "purpose": "Make ERN monetization truth explicit: distinguish research coverage from links that can actually earn affiliate commission.",
+  "earningRule": "ERN can earn only when a visitor follows a valid tracked affiliate link (or other approved tracked affiliate surface) and completes an eligible transaction under that partner's attribution and commission rules.",
+  "states": {
+    "RESEARCH_ONLY": "Program/destination looks useful, but no owner-approved tracked link exists. Clicks should not be treated as revenue-producing.",
+    "ACCOUNT_AVAILABLE": "Owner account/program can generate links, but the exact destination link still needs generation and verification.",
+    "TRACKED_LINK_VERIFIED": "Exact tracked link has been generated and manually verified. It may be revenue-producing when publicly placed with disclosure.",
+    "PUBLIC_REVENUE_ACTIVE": "Tracked link is actually exposed to visitors in an approved ERN commercial surface. Eligible attributed purchases can earn commission.",
+    "REJECTED_OR_UNAVAILABLE": "Do not place or imply an active commercial relationship."
+  },
+  "currentVerifiedEvidence": {
+    "viator": {
+      "relationshipState": "ACTIVE_TRACKED_LINK_CREATED",
+      "relationshipActive": true,
+      "firstTrackedLinkTarget": "Auckland — Hobbiton Movie Set and Waitomo Glowworm Caves Day Trip",
+      "note": "Viator partner relationship and tracked-link capability are active. Destination placement must still use an exact verified partner URL and remain editorially downstream from Earth discovery."
+    },
+    "travelpayouts": {
+      "verifiedDestinationLinks": 11,
+      "byProgram": {
+        "klook": 8,
+        "tiqets": 2,
+        "welcome-pickups": 1
+      },
+      "links": [
+        {
+          "program": "klook",
+          "destination": "auckland",
+          "trackingUrl": "https://klook.tpo.mx/kZmdWsAo",
+          "placeIds": [],
+          "verifiedAt": "2026-09-28T13:45:00Z"
+        },
+        {
+          "program": "klook",
+          "destination": "new-york",
+          "trackingUrl": "https://klook.tpo.mx/9ofY8SDC",
+          "placeIds": [
+            "nyc-skyline-jersey-city-earthcam",
+            "statue-liberty-earthcam",
+            "statue-liberty-harbor-earthcam"
+          ],
+          "verifiedAt": "2026-09-28T14:02:00Z"
+        },
+        {
+          "program": "klook",
+          "destination": "tokyo",
+          "trackingUrl": "https://klook.tpo.mx/RHEyOza2",
+          "placeIds": [
+            "chidori-sakura"
+          ],
+          "verifiedAt": "2026-09-28T14:10:00Z"
+        },
+        {
+          "program": "klook",
+          "destination": "sydney",
+          "trackingUrl": "https://klook.tpo.mx/1tpoK4dK",
+          "placeIds": [
+            "coogee-randwick-beaches"
+          ],
+          "verifiedAt": "2026-09-28T14:18:00Z"
+        },
+        {
+          "program": "klook",
+          "destination": "honolulu",
+          "trackingUrl": "https://klook.tpo.mx/D2fGjnFI",
+          "placeIds": [
+            "waikiki-beach"
+          ],
+          "verifiedAt": "2026-09-28T14:22:00Z"
+        },
+        {
+          "program": "klook",
+          "destination": "kyoto",
+          "trackingUrl": "https://klook.tpo.mx/R6eK3qEH",
+          "placeIds": [
+            "kyoto-fushimi-inari",
+            "kyoto-kifune-shrine",
+            "kyoto-kiyomizuzaka",
+            "kyoto-hanamikoji",
+            "kyoto-nishiki-market"
+          ],
+          "verifiedAt": "2026-10-02T00:00:00Z"
+        },
+        {
+          "program": "klook",
+          "destination": "seoul",
+          "trackingUrl": "https://klook.tpo.mx/fJJX7vjK",
+          "placeIds": [
+            "seoul-plaza"
+          ],
+          "verifiedAt": "2026-10-02T00:00:00Z"
+        },
+        {
+          "program": "klook",
+          "destination": "rovaniemi",
+          "trackingUrl": "https://klook.tpo.mx/6p7bRKjH",
+          "placeIds": [
+            "rovaniemi-santa-claus-village"
+          ],
+          "verifiedAt": "2026-10-02T00:00:00Z"
+        },
+        {
+          "program": "tiqets",
+          "destination": "statue-of-liberty",
+          "trackingUrl": "https://tiqets.tpo.mx/cCt55uo7",
+          "placeIds": [
+            "statue-liberty-earthcam",
+            "statue-liberty-harbor-earthcam"
+          ],
+          "verifiedAt": "2026-09-28T13:52:00Z"
+        },
+        {
+          "program": "tiqets",
+          "destination": "rome",
+          "trackingUrl": "https://tiqets.tpo.mx/K9PVIj61",
+          "placeIds": [
+            "rome-spanish-steps"
+          ],
+          "verifiedAt": "2026-10-02T00:00:00Z"
+        },
+        {
+          "program": "welcome-pickups",
+          "destination": "auckland",
+          "trackingUrl": "https://tpo.mx/VxEEARBO",
+          "placeIds": [
+            "auckland-viaduct-harbour"
+          ],
+          "verifiedAt": "2026-09-28T13:58:00Z"
+        }
+      ],
+      "note": "These links have human verification evidence in affiliate-activation.json. Revenue still depends on actual public placement, click attribution, an eligible purchase, and partner rules."
+    }
+  },
+  "safeguards": {
+    "researchOpportunityDoesNotEqualRevenueActive": true,
+    "exactTrackedLinkRequired": true,
+    "manualVerificationRequired": true,
+    "disclosureRequired": true,
+    "automaticLinkRewriting": false,
+    "automaticAffiliatePlacement": false,
+    "commissionCannotAffectEarthRanking": true,
+    "doNotPromiseCommissionOnEveryPurchase": true
+  },
+  "nextAutonomousWork": [
+    "Keep expanding useful commercial coverage, but label every opportunity by revenue-readiness state.",
+    "Prefer converting a small number of high-fit existing partner opportunities into verified exact links over accumulating undifferentiated partner names.",
+    "Do not activate direct partner programs until owner approval/account acceptance is real.",
+    "Preserve one-best-provider-per-user-need presentation and keep alternative programs as fallback research."
+  ]
+}
