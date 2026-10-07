@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import {searchEarth} from "../src/search-engine.js";
+import {foldEarthSearchText} from "../src/earth-intent.js";
 const analyticsPath=process.argv[2];
 if(!analyticsPath)throw new Error("usage: analytics-search-gap-triage <analytics.json>");
 const analytics=JSON.parse(fs.readFileSync(analyticsPath,"utf8"));
@@ -9,8 +10,9 @@ const aliases=JSON.parse(fs.readFileSync("data/place-search-aliases.json","utf8"
 const pool=[...sources,...supplemental].map(s=>({...s,aliases:[...(s.aliases||[]),...(aliases[s.placeId||s.id]||[])]}));
 const rows=(analytics.searchGaps||[]).map(g=>{
  const query=String(g.value||"").trim(),matches=searchEarth(pool,query,{now:new Date()});
- const compact=[...new Map(matches.map(s=>[s.placeId||s.id,{placeId:s.placeId||s.id,title:s.title,country:s.country||null}])).values()].slice(0,5);
- const normalized=query.normalize("NFKC").replace(/\s+/g," ").trim();
+ const normalized=query.normalize("NFKC").replace(/\s+/g," ").trim(),terms=foldEarthSearchText(normalized).split(/\s+/).filter(Boolean);
+ const strict=matches.filter(s=>{if(terms.length<=1)return true;const hay=foldEarthSearchText([s.title,s.placeId,s.city,s.state,s.region,s.country,s.provider,s.story,...(s.categories||[]),...(s.tags||[]),...(s.aliases||[])].filter(Boolean).join(" "));return terms.every(t=>hay.includes(t))});
+ const resolved=terms.length>1?strict:matches,compact=[...new Map(resolved.map(s=>[s.placeId||s.id,{placeId:s.placeId||s.id,title:s.title,country:s.country||null}])).values()].slice(0,5);
  const latin=/^[\x00-\x7F]+$/.test(normalized),lowConfidencePartial=latin&&normalized.replace(/[^a-z0-9]/gi,"").length<=3;
  return{
    query,count:Number(g.count)||0,
