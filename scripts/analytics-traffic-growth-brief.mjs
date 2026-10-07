@@ -40,6 +40,8 @@ Window: ${x.windowDays||30} days
 ## Strongest destination demand
 ${placeLines}
 
+Destination ranking uses clean v2 place-open attribution; older mixed legacy place counters are excluded.
+
 ## Search demand
 ${searchLines}
 
