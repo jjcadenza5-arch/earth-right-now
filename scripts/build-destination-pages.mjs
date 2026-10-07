@@ -19,7 +19,7 @@ const travelOffers=JSON.parse(fs.readFileSync("data/travel-offers.json","utf8"))
 const localDirectory=JSON.parse(fs.readFileSync("data/local-directory.json","utf8"));
 const affiliatePartners=JSON.parse(fs.readFileSync("data/affiliate-partners.json","utf8"));
 const base="https://earthrightnow.app/";
-const analyticsScript='<script type="module" src="'+base+'src/analytics-runtime.js"></script>';
+const analyticsScript='<script type="module" src="'+base+'src/analytics-runtime.js"></script><script type="module" src="'+base+'src/commercial-attribution-runtime.js"></script>';
 const localizedDiscoverUrl=(locale,id="")=>locale==="en"?base+"discover/"+(id?id+"/":""):base+locale+"/discover/"+(id?id+"/":"");
 const discoveryAlternates=id=>DISCOVERY_LOCALES.map(locale=>'<link rel="alternate" hreflang="'+locale+'" href="'+localizedDiscoverUrl(locale,id)+'">').join("")+'<link rel="alternate" hreflang="x-default" href="'+localizedDiscoverUrl("en",id)+'">';
 const staticLastmod="2026-09-29";
@@ -167,7 +167,7 @@ for(const [id,items] of map){
 
   const offers=currentItems.length?offerForPlace(id):[];
   const locals=(currentItems.length||scheduledClosedItems.length)?localForPlace(id):[];
-  const planningHtml=offers.length?'<h2>Plan after looking</h2><p class="ern-note">Optional planning links shown only after the Earth view is selected. Affiliate availability never affects ERN source ranking.</p><ul>'+offers.slice(0,3).map(o=>'<li><a href="'+esc(safe(o.url))+'" rel="sponsored noopener noreferrer">'+esc(o.title||("Plan with "+o.provider))+'</a> — '+esc(o.provider||"Partner")+' · Affiliate link</li>').join("")+'</ul>':"";
+  const planningHtml=offers.length?'<h2>Plan after looking</h2><p class="ern-note">Optional planning links shown only after the Earth view is selected. Affiliate availability never affects ERN source ranking.</p><ul>'+offers.slice(0,3).map(o=>'<li><a href="'+esc(safe(o.url))+'" data-offer-id="'+esc(o.id)+'" rel="sponsored noopener noreferrer">'+esc(o.title||("Plan with "+o.provider))+'</a> — '+esc(o.provider||"Partner")+' · Affiliate link</li>').join("")+'</ul>':"";
   const localHtml=locals.length?'<h2>Reviewed local places</h2><p class="ern-note">Reviewed local places are shown for visitor usefulness. These entries are not paid placements.</p><ul>'+locals.slice(0,4).map(x=>'<li><a href="'+esc(safe(x.url))+'" rel="noopener noreferrer">'+esc(x.name)+'</a> — '+esc(x.summary||x.type||"Local place")+(x.address?' · '+esc(x.address):'')+'</li>').join("")+'</ul>':"";
   const coordinateText=Number.isFinite(lat)&&Number.isFinite(lon)?((preferred.coordinateBasis?"Map reference":"Coordinates")+": "+lat+", "+lon):null;
   const coordinateNote=preferred.coordinateNote?'<p class="ern-note">'+esc(preferred.coordinateNote)+'</p>':"";
