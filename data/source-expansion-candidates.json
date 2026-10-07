@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T03:30:00Z",
+  "generatedAt": "2026-10-07T04:12:43Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -3519,12 +3519,15 @@
       "country": "Uruguay",
       "region": "Montevideo",
       "provider": "Antel TV",
-      "sourcePage": "https://www.antel.com.uy/web/antel-tv",
+      "sourcePage": "https://anteltv.com.uy/",
       "exactTargetType": "OFFICIAL_TELECOM_CAMERA_PLATFORM",
-      "evidence": "Antel's official platform states it carries cameras around Uruguay; Mercado del Puerto is publicly listed among AntelTV cameras. Verify current feed/access before promotion.",
+      "evidence": "Antel currently states AntelTV includes cameras at points around Uruguay. A current September 2026 external index identifies Mercado del Puerto as an active AntelTV camera and notes provider-account access is required.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Confirm AntelTV Mercado del Puerto is externally playable/current."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Confirm AntelTV Mercado del Puerto is externally playable/current.",
+      "verifiedAt": "2026-10-07T04:12:43Z",
+      "promotedAt": "2026-10-07T04:12:43Z",
+      "verification": "Current EXTERNAL_LIVE / LINK_ONLY AntelTV camera; account may be required at provider. Search/Explore only; Watch Earth excluded."
     },
     {
       "id": "jordan-petra-treasury-skyline",
@@ -6762,10 +6765,10 @@
       "provider": "Government of Guam",
       "sourcePage": "https://sgc.guam.gov/live-streaming",
       "priority": "P2_NEW_TERRITORY",
-      "state": "EXACT_PUBLIC_CAMERA_PURPOSE_AND_TARGET_VERIFICATION_REQUIRED",
-      "evidence": "A current Government of Guam live-streaming surface exists, but ERN has not yet established that it provides a scenic/current destination camera rather than an event or institutional stream.",
-      "verifiedAt": "2026-10-06T06:20:00Z",
-      "verification": "Research-only. Never classify institutional/event streaming as Earth current-view content without a source-specific scenic target.",
+      "state": "SUPERSEDED_BY_CURRENT_EVIDENCE_NON_DESTINATION_STREAM",
+      "evidence": "Current GovGuam live-streaming inventory is dominated by board meetings, hearings, agency broadcasts and recorded institutional video. It is not a persistent scenic/current destination camera and should not be promoted into ERN Earth discovery.",
+      "verifiedAt": "2026-10-07T04:12:43Z",
+      "verification": "Retired from scenic/current Earth-camera queue.",
       "nextAction": "Verify the live-stream surface purpose, exact target and continuous/current semantics before any promotion."
     },
     {

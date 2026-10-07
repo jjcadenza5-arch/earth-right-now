@@ -11861,5 +11861,36 @@
     "searchSupplemental": true,
     "rightsBasis": "Africam provider-hosted live stream; ERN links externally and does not infer embed or redistribution rights.",
     "freshnessEvidence": "Africam's current Serengeti Explorer page explicitly presents the Serengeti Explorer Live Stream and Africam's current location directory lists it under Tanzania."
+  },
+  {
+    "id": "uruguay-montevideo-mercado-del-puerto-live",
+    "placeId": "uruguay-montevideo-mercado-del-puerto",
+    "title": "Montevideo — Mercado del Puerto",
+    "provider": "Antel TV",
+    "country": "Uruguay",
+    "region": "Montevideo / Ciudad Vieja",
+    "categories": [
+      "Cities & Streets",
+      "Markets & Squares",
+      "South America",
+      "Useful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://anteltv.com.uy/",
+    "attribution": "Antel TV",
+    "checkedAt": "2026-10-07T04:12:43Z",
+    "lastSuccessfulCheck": "2026-10-07T04:12:43Z",
+    "quality": 92,
+    "freshness": 97,
+    "moment": 93,
+    "story": "Current external camera overlooking the square at the entrance to Mercado del Puerto in Montevideo's Ciudad Vieja.",
+    "featuredHold": true,
+    "watchHold": true,
+    "rightsBasis": "AntelTV hosts the camera; ERN links externally and does not restream.",
+    "freshnessEvidence": "Antel's current platform explicitly includes cameras around Uruguay, and a current September 2026 external camera index identifies Mercado del Puerto as available through AntelTV with account access required.",
+    "searchSupplemental": true
   }
 ]

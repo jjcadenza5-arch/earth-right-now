@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T03:15:00Z",
+  "generatedAt": "2026-10-07T04:12:43Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -3377,18 +3377,18 @@
     },
     {
       "id": "viator-montevideo-future",
-      "destination": "Montevideo",
+      "destination": "Montevideo / Ciudad Vieja",
       "placeIds": [
-        "uruguay-montevideo-pocitos",
-        "uruguay-montevideo-plaza-independencia",
         "uruguay-montevideo-mercado-del-puerto"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P2",
-      "reason": "If at least one Montevideo camera is promoted, Viator can provide a useful downstream city/activity path without affecting Earth ranking.",
-      "state": "SOURCE_VERIFICATION_REQUIRED_BEFORE_EXACT_LINK",
-      "nextAction": "After source promotion, generate one city-level Montevideo Viator partner link and reuse it across verified Montevideo places."
+      "reason": "Current 2026 Viator Montevideo inventory is broad and includes city tours, walking tours, cruise excursions and airport/hotel transfer options. Commercial placement remains post-discovery only.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "nextAction": "Generate one exact owner-side Montevideo tracked link only after confirming owner-account availability and attribution.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Montevideo/d4515-ttd",
+      "publicInventoryEvidence": "Viator's current 2026 Montevideo destination inventory shows 100+ results across city, historical, cultural, walking and transfer categories."
     },
     {
       "id": "klook-maolin-kaohsiung",
