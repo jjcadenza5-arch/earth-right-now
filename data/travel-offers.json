@@ -3159,7 +3159,8 @@
     "verificationEvidenceUrl": "https://www.viator.com/Monte-Carlo/d50269-ttd",
     "manualOpenVerified": false,
     "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
-    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified."
+    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+    "verificationBatch": "2026-10-07-destination-family-batch-b"
   },
   {
     "id": "viator-monaco-public--monaco-monte-carlo-beach",
@@ -3199,7 +3200,8 @@
     "verificationEvidenceUrl": "https://www.viator.com/Koh-Samui/d347-ttd",
     "manualOpenVerified": false,
     "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
-    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified."
+    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+    "verificationBatch": "2026-10-07-destination-family-batch-b"
   },
   {
     "id": "viator-koh-samui-public--thailand-koh-samui-lipa-noi-mandarin",
@@ -3239,7 +3241,8 @@
     "verificationEvidenceUrl": "https://www.viator.com/Jasper/d5421-ttd",
     "manualOpenVerified": false,
     "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
-    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified."
+    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+    "verificationBatch": "2026-10-07-destination-family-batch-b"
   },
   {
     "id": "viator-jasper-public--canada-maligne-lake",
@@ -3279,7 +3282,8 @@
     "verificationEvidenceUrl": "https://www.viator.com/Budapest/d499-ttd",
     "manualOpenVerified": false,
     "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
-    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified."
+    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+    "verificationBatch": "2026-10-07-destination-family-batch-b"
   },
   {
     "id": "viator-zanzibar-public",
@@ -3299,7 +3303,8 @@
     "verificationEvidenceUrl": "https://www.viator.com/Zanzibar/d5590-ttd",
     "manualOpenVerified": false,
     "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
-    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified."
+    "evidence": "Current Viator 2026 destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+    "verificationBatch": "2026-10-07-destination-family-batch-b"
   },
   {
     "id": "viator-zanzibar-public--zanzibar-kiwengwa",
