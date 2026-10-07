@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T16:35:00Z",
+  "generatedAt": "2026-10-07T11:50:00Z",
   "purpose": "Convert the highest-value already-healthy ERN destinations using active partners, without overwhelming the owner with the full backlog.",
   "activePartners": [
     "viator",
@@ -8,12 +8,29 @@
     "tiqets",
     "welcome-pickups"
   ],
-  "totalExactLinkBacklog": 169,
-  "currentlyActionableHealthyExactLinkOpportunities": 169,
+  "totalExactLinkBacklog": 178,
+  "currentlyActionableHealthyExactLinkOpportunities": 178,
   "batchSize": 15,
   "batch": [
     {
       "rank": 1,
+      "id": "klook-taitung",
+      "destination": "Taitung",
+      "partner": "klook",
+      "intent": "activities",
+      "healthyPlaceIds": [
+        "taitung-jinzun",
+        "taiwan-torik-park"
+      ],
+      "priority": "P1_ANALYTICS_REPRIORITIZED",
+      "score": 130,
+      "publicInventoryEvidenceUrl": "https://www.klook.com/zh-TW/destination/c47-taitung/1-things-to-do/",
+      "ownerAction": "Generate one Taitung destination-level Klook tracked link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
+      "publicActivationAllowed": false,
+      "reprioritizationEvidence": "Taitung Jinzun is currently the third-most-opened ERN destination in the 30-day aggregate traffic window (19 opens) and has no verified public travel offer yet."
+    },
+    {
+      "rank": 2,
       "id": "viator-panama-canal-future",
       "destination": "Panama Canal",
       "partner": "viator",
@@ -32,7 +49,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 2,
+      "rank": 3,
       "id": "viator-santorini-future",
       "destination": "Santorini",
       "partner": "viator",
@@ -47,7 +64,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 3,
+      "rank": 4,
       "id": "tiqets-brussels",
       "destination": "Brussels",
       "partner": "tiqets",
@@ -63,7 +80,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 4,
+      "rank": 5,
       "id": "klook-hong-kong",
       "destination": "Hong Kong",
       "partner": "klook",
@@ -80,7 +97,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 5,
+      "rank": 6,
       "id": "viator-reunion-island",
       "destination": "La Réunion",
       "partner": "viator",
@@ -98,7 +115,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 6,
+      "rank": 7,
       "id": "klook-mayon",
       "destination": "Mayon / Albay",
       "partner": "klook",
@@ -113,7 +130,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 7,
+      "rank": 8,
       "id": "viator-plitvice",
       "destination": "Plitvice Lakes National Park",
       "partner": "viator",
@@ -128,7 +145,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": "viator-popocatepetl",
       "destination": "Popocatépetl / Mexico City",
       "partner": "viator",
@@ -143,7 +160,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "klook-sun-moon-lake",
       "destination": "Sun Moon Lake",
       "partner": "klook",
@@ -158,7 +175,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 10,
+      "rank": 11,
       "id": "viator-flam",
       "destination": "Flåm / Aurlandsfjord",
       "partner": "viator",
@@ -173,7 +190,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 11,
+      "rank": 12,
       "id": "viator-meads-bay",
       "destination": "Meads Bay / Anguilla",
       "partner": "viator",
@@ -188,7 +205,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 12,
+      "rank": 13,
       "id": "viator-dresden",
       "destination": "Dresden / Radebeul",
       "partner": "viator",
@@ -204,7 +221,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 13,
+      "rank": 14,
       "id": "viator-dubrovnik-future",
       "destination": "Dubrovnik",
       "partner": "viator",
@@ -219,7 +236,7 @@
       "publicActivationAllowed": false
     },
     {
-      "rank": 14,
+      "rank": 15,
       "id": "viator-everest-future",
       "destination": "Everest / Khumbu",
       "partner": "viator",
@@ -232,25 +249,12 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/collections/Mt-Everest-Tours-from-Kathmandu/c28285",
       "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
       "publicActivationAllowed": false
-    },
-    {
-      "rank": 15,
-      "id": "klook-hehuanshan-wuling",
-      "destination": "Hehuanshan / Wuling Pass",
-      "partner": "klook",
-      "intent": "activities",
-      "healthyPlaceIds": [
-        "taiwan-hehuanshan-wuling"
-      ],
-      "priority": "P1",
-      "score": 128.5,
-      "publicInventoryEvidenceUrl": "https://www.klook.com/activity/54696-nantou-hehuanshan-sunrise-tour-half-day-join-tour/",
-      "ownerAction": "Generate one exact tracked destination/product link in the existing partner account, open it, confirm destination + tracking, then return it to ERN.",
-      "publicActivationAllowed": false
     }
   ],
   "completionRule": "Do not open the next batch until this batch is substantially verified or analytics show a reason to reprioritize.",
   "noInventedLinks": true,
   "noCommissionRanking": true,
-  "note": "300-place baseline. Current top batch remains intentionally stable until substantially verified or analytics justify reprioritization; newly added Taiwan/New Zealand paths remain in the broader worksheet."
+  "note": "Current top batch is analytics-aware but still owner-link-gated. Taitung moved into the batch because of observed aggregate destination demand; no tracked link, conversion or commission was invented.",
+  "reprioritizedFromAnalyticsAt": "2026-10-07T11:22:01Z",
+  "reprioritizationReason": "Aggregate ERN demand now provides a concrete reason to move Taitung into the first exact-link batch. This changes only owner-side conversion work priority; it does not change Earth ranking, source prominence or public placement."
 }

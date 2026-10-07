@@ -7413,3 +7413,87 @@ Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources remain ou
 6. Prioritize visitor re-entry, discovery usefulness and traffic growth over raw affiliate-link count.
 7. Keep affiliate-revenue readiness counts synchronized with the computed public-offer layer in the same atomic tranche.
 8. Require matching successful Pages + Operations on the same content SHA before the next canonical checkpoint.
+
+
+## Watch Earth + traffic-strengthening canonical checkpoint — 2026-10-07 11:50 UTC
+
+### Canonical public content validation
+- Validated content SHA: `e87269224eec7a216c8fe25ca15d6137a9e540d7`.
+- **Deploy ERN to GitHub Pages #2758** (run 37616344358): SUCCESS.
+- **ERN Operations Check #1530** (run 37616344313): SUCCESS.
+- **ERN JavaScript Syntax Check #1093**: SUCCESS.
+- Pages and Operations validated the same content SHA.
+- Earlier intermediate performance failures were reconciled rather than bypassed: pretty-printed core source data and initial share telemetry exceeded the existing lean ceiling; compact source serialization, compact telemetry and tighter hero copy restored the hard performance budget without raising thresholds.
+
+### Watch Earth first-impression audit and repair
+User-requested first-impression review was completed before broader continuation.
+- Revalidated current in-ERN playback for Takayama Miyagawa/Kaji Bridge plus Kyoto Fushimi Inari and Kifune using current provider evidence.
+- Revalidated three existing La Palma embedded live sources — Caldera de Taburiente, Aridane Valley and Volcán Tajogaite — after current provider pages explicitly showed live 24/7 operation and embed permission.
+- Added `watch-earth:audit` directly to the Pages release path so future production deploys fail closed if Watch Earth collapses.
+- The audit now requires, on the actual current clock:
+  - at least 8 truthful in-ERN windows;
+  - at least 5 countries;
+  - at least 5 providers;
+  - dominant provider share <= 40%;
+  - no first-eight item below quality 84 / moment 80;
+  - existing no-preview, eligibility, distinct-place and provider-resilience rules remain.
+
+Actual production audit at 2026-10-07 11:47 UTC:
+- **12 current Watch Earth windows**
+- **12 distinct places**
+- **6 countries**
+- **7 providers**
+- **100% in-ERN playback**
+- **dominant provider share 33.3%**
+- **provider resilience: DIVERSE**
+- **0 weak first-eight windows**
+- **0 PREVIEW leaks**
+- **0 duplicate source IDs**
+- opening/current mix includes Rovaniemi, La Palma, Kyoto, Yellowstone, Mount Ruapehu, Taitung and Auckland.
+
+This materially improves the visitor impression versus the earlier 9-window / 5-country / 6-provider state and reduces Kyoto/provider concentration without weakening source truth.
+
+### Traffic / discovery strengthening
+Latest 30-day aggregate observation used for product decisions:
+- approx. unique visitors: **53**
+- page views: **314**
+- Google-family referrals: **18**
+- Facebook-family referrals: **32**
+- Earth searches: **30**
+- window/place opens: **272**
+- external-source opens: **76**
+- travel-option opens: **8**
+- zero-result search share improved versus the prior baseline.
+These remain aggregate correlation signals only; ERN does not infer individual visitor identity, social reach, bookings, revenue or channel causation.
+
+Traffic work landed:
+- Main in-app destination sharing now emits privacy-safe aggregate `share_clicked` only after a successful native share/copy action.
+- Existing crawlable destination-page share measurement remains intact.
+- Added traffic workstreams for share-measurement closure and demand-led zero-result research.
+- Search-gap triage identified `chiangmai` as a genuine current gap.
+- Official Chiang Mai PAO Smart City CCTV was researched and recorded as a **research-only** candidate; all four current public slots are STANDBY / WAITING FOR FEED, so ERN intentionally did **not** fabricate Chiang Mai live coverage.
+- IndexNow, sitemap, country hubs, recent-update feed, deep destination URLs and existing AI-search discovery surfaces remain preserved.
+
+### Business-side reprioritization
+- Existing verified offers remain downstream from Earth discovery and independent of ranking.
+- Aggregate demand now gives a concrete reason to move **Klook Taitung** into the first exact-link conversion batch: Taitung Jinzun recorded 19 opens and currently has no verified public travel offer.
+- This is owner-account exact-link work only; no tracked link or partner activation was invented.
+- The rest of the commercial conversion backlog remains preserved.
+
+### Protected invariants
+- Watch Earth remains in-ERN-playback-only.
+- LINK_ONLY / EXTERNAL sources remain Search/Explore-only.
+- IMAGE_REFRESH remains natural-schedule-only.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- Commercial payout cannot affect source truth, currentness, health, ranking or editorial prominence.
+- No paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation.
+- Existing lean-core / performance ceilings remain enforced.
+
+### Next autonomous lane
+1. Keep Watch Earth above the new first-impression floor by revalidating provider-diverse in-ERN sources before expiry; prefer new countries/providers over more same-provider windows.
+2. Continue traffic growth through destination/country deep links, search-gap closure, shareability, IndexNow/freshness and qualified planning actions rather than thin page growth.
+3. Revisit Chiang Mai only when an official/public current visual feed actually recovers.
+4. Use aggregate destination demand to reprioritize exact-link backlog while keeping commercial value separate from editorial ranking.
+5. Continue unresolved new-country/current-source research conservatively (Montserrat, New Caledonia and other verified gaps) and preserve fail-closed states where freshness cannot be proved.
+6. Require matching successful Pages + Operations on the same public-content SHA before the next canonical production checkpoint.
