@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T05:35:00Z",
+  "updatedAt": "2026-10-07T05:52:00Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -481,7 +481,6 @@
     ],
     "moldova-chisinau-roadcam": [
       "Chișinău",
-      "Chisinau",
       "Kishinev",
       "Moldova capital"
     ],
