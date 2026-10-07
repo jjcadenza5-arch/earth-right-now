@@ -6,7 +6,7 @@ async function waitText(url,predicate,label,tries=18){let last="no response";for
 async function get(url,tries=8){let last;for(let i=0;i<tries;i++){try{const r=await fetchFresh(url);if(r.ok)return r;last=new Error(url+" -> "+r.status)}catch(e){last=e}await wait(4000)}throw last}
 const home=await waitText(base+"/",t=>t.includes("app-lite.js?v="+build),"production home");
 const app=await waitText(base+"/src/app-lite.js?v="+build,t=>t.includes("setTimeout(()=>loadSearchExtra(initialQ),0)"),"production app");
-for(const marker of ["setTimeout(()=>loadSearchExtra(initialQ),0)","const dc=()=>state.sources.concat(state.sx),ds=s=>","renderDiscoveryProof();renderWander();renderLocalEarth();renderSaved()","Math.min(8,setLimit)","note=$(\"#atlasBeyondNote\"),cat=dc()"])if(!app.includes(marker))throw new Error("production app missing reality-sync marker: "+marker);
+for(const marker of ["setTimeout(()=>loadSearchExtra(initialQ),0)","const dc=()=>state.sources.concat(state.sx),ds=s=>","renderDiscoveryProof();renderWander();renderLocalEarth();renderSaved()","Math.min(8,setLimit)","(providers.get(r)||0)>=2||(countries.get(c)||0)>=2","countries.set(c,(countries.get(c)||0)+1)","note=$(\"#atlasBeyondNote\"),cat=dc()"])if(!app.includes(marker))throw new Error("production app missing reality-sync marker: "+marker);
 const core=await (await get(base+"/data/sources.json")).json();
 const extra=await (await get(base+"/data/search-supplemental.json")).json();
 if(!Array.isArray(core)||!Array.isArray(extra))throw new Error("production catalogs are not arrays");
