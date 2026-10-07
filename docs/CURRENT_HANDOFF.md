@@ -7899,3 +7899,68 @@ Interpretation boundary:
 5. Preserve Jinzun as a benchmark for live quality + useful downstream planning, without pinning commercial value to editorial prominence.
 6. Do not resume raw catalog-count expansion as a primary goal; expand only for real geographic/provider/visitor utility gaps.
 7. Continue traffic-gated partner monitoring event-driven only; do not invent thresholds or force applications.
+
+
+## Unified public-product + traffic reality checkpoint — 2026-10-07 15:50 UTC
+
+### Canonical production state
+- Final shared content SHA: `d8f628e1faefa3566d71a669bc706b08bcb4011f`.
+- **Deploy ERN to GitHub Pages #2819** (run 37646672517): SUCCESS.
+- **ERN Operations Check #1587** (run 37646672518): SUCCESS.
+- Both workflows validated the exact same SHA.
+- Post-deploy production reality verification on `earthrightnow.app`: SUCCESS.
+- IndexNow submission: SUCCESS for 56 recently updated URLs. Acceptance does not imply indexing or ranking.
+
+### Production reality verified
+The live production verifier confirmed:
+- home revision `d8f628e1faef`;
+- core records: **328**;
+- supplemental records: **432**;
+- combined public discovery universe: **760**;
+- healthy searchable distinct places: **751**;
+- healthy country / territory labels: **130**;
+- Taitung Jinzun benchmark present;
+- Jinzun commission-capable Viator offer present and valid;
+- Jinzun planning action truthfully playback-gated when the live playback proof is outside the current proof window, rather than shown as if the Earth source were currently reverified;
+- first-party analytics live and healthy;
+- traffic metric semantics **v2** active;
+- traffic-growth baseline deployed and reconciled;
+- destination commercial telemetry active;
+- observed demand terms `chicago`, `arches`, and `new york` resolve against the unified searchable catalog;
+- Watch Earth source-backed visual pool: **9** current inside-ERN source images from **6** providers.
+
+### Traffic reality synchronized with production
+Current clean operating baseline remains privacy-preserving aggregate evidence:
+- approximately **53 unique visitors** in the rolling 30-day view;
+- **333 page views**;
+- **84 Earth searches**;
+- **36 zero-result searches**;
+- **284 place/window opens**;
+- **79 external-source opens**;
+- **8 verified travel-option opens**;
+- Google-family referral views: **18**;
+- Facebook-family referral views: **32**.
+
+Traffic metric semantics v2 is active. Historical rolling totals can still contain pre-v2 activity, but new destination-open and share attribution begins from the clean v2 boundary and must not be mixed with older source/place activity as if it were one homogeneous metric.
+
+### Canonical interpretation rules
+- A public-product checkpoint is complete only after repository tests, Pages, Operations on the same SHA, and post-deploy live-domain reality verification all pass.
+- Traffic evidence may guide research and product priorities but cannot override source truth, rights, health, currentness, playback proof or editorial ranking.
+- A commercial offer may be ready in data but must remain hidden when the Earth/source-currentness gate for that destination is not satisfied.
+- Successful deploy is not enough by itself; the intended visitor-visible behavior must be verified on production.
+
+### Catch-up status
+The major repository/public-site split identified from the owner's screenshots is now substantially reconciled:
+- unified discovery is actually deployed;
+- public breadth counts are tied to the unified catalog;
+- Watch Earth source-backed visual quality is guarded in production;
+- Living Atlas/unmapped discovery semantics are reconciled;
+- Jinzun benchmark + commercial readiness are present with truthful gating;
+- analytics and traffic baseline are deployment-coupled and production-verified.
+
+### Remaining autonomous refinement lane
+1. Keep checking the first 30 seconds of Home / Watch Earth for weak illustrative fallback and replace only with trustworthy current source imagery.
+2. Continue production checks for Explore/Search, destination pages, Living Atlas and My Earth whenever changes touch those surfaces.
+3. Let clean v2 traffic accumulate before drawing conclusions from destination-open/share rankings.
+4. Resolve repeated real zero-result demand only when an independently truthful current source exists.
+5. Do not return to count-driven catalog growth; prioritize visitor utility, source/provider diversity and qualified organic discovery.
