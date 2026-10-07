@@ -60,8 +60,15 @@ export class AnalyticsState{
       this.bump(day,"referrer",ctx.referrerHost||"direct");
       if(data.route)this.bump(day,"route",data.route);
     }
-    if(data.placeId)this.bump(day,name==="travel_option_opened"?"commercial_place":"place",data.placeId);
-    if(data.sourceId)this.bump(day,name==="external_source_opened"?"external_source":"source",data.sourceId);
+    if(data.placeId){
+      if(name==="travel_option_opened")this.bump(day,"commercial_place",data.placeId);
+      else if(name==="share_clicked")this.bump(day,"share_place",data.placeId);
+      else if(name==="window_opened"||name==="place_opened")this.bump(day,"place_clean",data.placeId);
+    }
+    if(data.sourceId){
+      if(name==="external_source_opened")this.bump(day,"external_source",data.sourceId);
+      else if(name==="window_opened")this.bump(day,"source",data.sourceId);
+    }
     if(data.offerId)this.bump(day,"offer",data.offerId);
     if((name==="earth_search"||name==="earth_search_zero")&&data.query)this.bump(day,name==="earth_search_zero"?"search_zero":"search",data.query);
     return{ok:true,visitorStatus};
@@ -89,11 +96,11 @@ export class AnalyticsState{
       visitors:{approxUnique:uniqueVisitors,new:newVisitors,returningApprox:Math.max(0,uniqueVisitors-newVisitors),dailyUniqueSum:dailyUnique,pageViews},
       daily:[...byDay.values()],
       devices:this.top("device",sinceDay,8),countries:this.top("country",sinceDay,30),regions:this.top("region",sinceDay,30),
-      referrers:this.top("referrer",sinceDay,20),places:this.top("place",sinceDay,30),sources:this.top("source",sinceDay,30),
+      referrers:this.top("referrer",sinceDay,20),places:this.top("place_clean",sinceDay,30),legacyPlaces:this.top("place",sinceDay,30),sources:this.top("source",sinceDay,30),
       searches:this.top("search",sinceDay,50),searchGaps:this.top("search_zero",sinceDay,50),
       commercialOffers:this.top("offer",sinceDay,30),commercialPlaces:this.top("commercial_place",sinceDay,30),
-      externalSources:this.top("external_source",sinceDay,30),
-      events:this.top("event",sinceDay,30),
+      externalSources:this.top("external_source",sinceDay,30),sharePlaces:this.top("share_place",sinceDay,30),
+      events:this.top("event",sinceDay,30),metricSemantics:{version:2,placeRanking:"window_opened/place_opened only",legacyPlaceRankingMayMixOlderEventTypes:true},
       privacy:{rawIpStored:false,preciseLocationStored:false,eventRowsStored:false,searchesAggregated:true,retentionDays:MAX_DAYS}
     };
   }
