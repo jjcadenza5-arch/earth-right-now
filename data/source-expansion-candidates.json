@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T11:17:13Z",
+  "generatedAt": "2026-10-07T11:20:00Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -7563,6 +7563,20 @@
       "verifiedAt": "2026-10-07T11:17:13Z",
       "promotedAt": "2026-10-07T11:17:13Z",
       "verification": "Current EXTERNAL_LIVE / LINK_ONLY AntelTV camera; Search/Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "thailand-chiang-mai-pao-cctv",
+      "title": "Chiang Mai — Provincial Smart City CCTV",
+      "country": "Thailand",
+      "region": "Chiang Mai",
+      "provider": "Chiang Mai Provincial Administrative Organization",
+      "sourcePage": "https://www.chiangmaipao.go.th/all_cctv.php",
+      "priority": "P1_SEARCH_DEMAND_GAP",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "evidence": "Official Chiang Mai PAO Smart City currently exposes a four-camera real-time CCTV center, but all four public slots are presently marked STANDBY / WAITING FOR FEED. ERN must not promote a live/current Chiang Mai place until at least one destination-useful public feed is actually active and its target/currentness is verified.",
+      "nextAction": "RECHECK_OFFICIAL_CCTV_ONLY_AFTER_FEED_RECOVERY_AND_VERIFY_DESTINATION_USEFUL_TARGET",
+      "searchDemandEvidence": "Aggregate ERN zero-result triage currently contains a genuine 'chiangmai' search gap. Demand evidence does not override source truth.",
+      "publicPromotionAllowed": false
     }
   ],
   "notes": [

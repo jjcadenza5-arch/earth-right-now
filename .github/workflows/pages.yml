@@ -167,6 +167,7 @@ on:
       - "src/participation-public-config.js"
       - "src/bounded-json-body.js"
       - "scripts/featured-curation-preflight.mjs"
+      - "scripts/watch-earth-audit.mjs"
       - "scripts/guide-see-before-go-preflight.mjs"
       - "scripts/source-research-priority-status.mjs"
       - "scripts/search-supplemental-status.mjs"
@@ -237,6 +238,8 @@ jobs:
         run: npm --silent run participation:media-status
       - name: Featured curation preflight
         run: node scripts/featured-curation-preflight.mjs
+      - name: Watch Earth first-impression audit
+        run: npm --silent run watch-earth:audit
       - name: Catalog metadata completeness
         run: node scripts/catalog-metadata-status.mjs
       - name: Local Earth directory integrity

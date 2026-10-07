@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T09:40:00Z",
+  "generatedAt": "2026-10-07T11:20:00Z",
   "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
   "currentSearchableHealthyPlaces": 733,
   "unlockTargets": [
@@ -89,6 +89,18 @@
       "priority": "P1",
       "action": "Favor destination and country deep links in manual organic sharing rather than repeatedly sharing only the homepage, so social visitors land on a specific useful Earth view and can continue through related places.",
       "successSignal": "Referral traffic spreads across destination pages and generates more multi-place exploration."
+    },
+    {
+      "id": "share-measurement-closure",
+      "priority": "P1",
+      "action": "Count only successful native-share or copy-link actions from both crawlable destination pages and the main ERN viewer. Use aggregate destination/share data to learn which Earth views visitors naturally pass along; never infer private social reach.",
+      "successSignal": "Reliable aggregate share/copy counts across destination-page and in-app viewing surfaces."
+    },
+    {
+      "id": "demand-led-search-gaps",
+      "priority": "P1",
+      "action": "Use privacy-safe aggregate zero-result triage to research real visitor demand. A query such as Chiang Mai may open a source-research lane, but no destination becomes public until source truth, currentness, rights and target identity independently pass ERN gates.",
+      "successSignal": "Repeated genuine visitor search gaps shrink through truthful source resolution rather than aliases or fabricated coverage."
     }
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
@@ -106,5 +118,19 @@
     "publicVerifiedTravelOfferMappings": 31,
     "searchableUniverseWithSupplemental": 733
   },
-  "unlockReadiness": "data/travelpayouts-unlock-readiness.json"
+  "unlockReadiness": "data/travelpayouts-unlock-readiness.json",
+  "latestObservedTraffic": {
+    "observedAt": "2026-10-07T11:22:01Z",
+    "windowDays": 30,
+    "approximateUniqueVisitors": 53,
+    "pageViews": 314,
+    "googleFamilyReferrals": 18,
+    "facebookFamilyReferrals": 32,
+    "earthSearches": 30,
+    "zeroResultSearches": 7,
+    "windowOpens": 272,
+    "externalSourceOpens": 76,
+    "travelOptionOpens": 8,
+    "interpretationBoundary": "Aggregate correlation evidence only. These counts do not identify individual visitors or prove channel causation, bookings, conversions or revenue."
+  }
 }
