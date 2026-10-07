@@ -9,3 +9,4 @@ Disallow: /review/
 Disallow: /release-verification.html
 
 Sitemap: https://earthrightnow.app/sitemap.xml
+Sitemap: https://earthrightnow.app/updates.xml

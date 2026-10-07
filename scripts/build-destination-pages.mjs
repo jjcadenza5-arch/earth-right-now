@@ -23,6 +23,7 @@ const localizedDiscoverUrl=(locale,id="")=>locale==="en"?base+"discover/"+(id?id
 const discoveryAlternates=id=>DISCOVERY_LOCALES.map(locale=>'<link rel="alternate" hreflang="'+locale+'" href="'+localizedDiscoverUrl(locale,id)+'">').join("")+'<link rel="alternate" hreflang="x-default" href="'+localizedDiscoverUrl("en",id)+'">';
 const staticLastmod="2026-09-29";
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+const xmlEsc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&apos;");
 const slug=s=>String(s).replace(/[^a-zA-Z0-9_-]/g,"-");
 const countrySlug=s=>String(s??"").normalize("NFKD").replace(/\p{Diacritic}/gu,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
 const safe=u=>{try{const x=new URL(u);return /^https?:$/.test(x.protocol)?x.toString():""}catch{return""}};
@@ -317,4 +318,16 @@ const staticUrls=[
 ];
 const xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+[...staticUrls,...urls].map(u=>'  <url><loc>'+u.loc.replace(/&/g,"&amp;")+'</loc>'+(u.lastmod?'<lastmod>'+u.lastmod+'</lastmod>':'')+'</url>').join("\n")+'\n</urlset>\n';
 fs.writeFileSync("sitemap.xml",xml);
+const recentFeedRows=structuredRows.filter(p=>p.lastmod).sort((a,b)=>String(b.lastmod).localeCompare(String(a.lastmod))||a.title.localeCompare(b.title)).slice(0,50);
+const feedUpdated=(recentFeedRows[0]?.lastmod||staticLastmod)+"T00:00:00Z";
+const atom='<?xml version="1.0" encoding="UTF-8"?>\n<feed xmlns="http://www.w3.org/2005/Atom">\n'
+ +'<title>Earth Right Now — recent place updates</title>\n'
+ +'<id>'+base+'updates.xml</id>\n'
+ +'<updated>'+feedUpdated+'</updated>\n'
+ +'<link rel="self" href="'+base+'updates.xml"/>\n'
+ +'<link rel="alternate" href="'+base+'"/>\n'
+ +'<subtitle>Recently updated crawlable Earth Right Now destination pages with truthful current-source status.</subtitle>\n'
+ +recentFeedRows.map(p=>'<entry><title>'+xmlEsc(p.title)+'</title><id>'+base+'places/'+encodeURIComponent(p.id)+'/</id><link href="'+base+'places/'+encodeURIComponent(p.id)+'/"/><updated>'+p.lastmod+'T00:00:00Z</updated><summary>'+xmlEsc(p.story)+'</summary></entry>').join("\n")
+ +'\n</feed>\n';
+fs.writeFileSync("updates.xml",atom);
 const referenceOnlyCount=placeRows.filter(p=>!p.indexable).length;console.log("Generated "+urls.length+" indexable destination pages + "+referenceOnlyCount+" reference-only noindex pages plus /places/, "+countryRows.length+" substantial country hubs, and "+discoverRows.length+" /discover/ category pages");
