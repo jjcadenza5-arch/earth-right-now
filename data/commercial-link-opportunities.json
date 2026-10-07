@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T02:34:31Z",
+  "generatedAt": "2026-10-07T02:37:27Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -7398,6 +7398,38 @@
       "publicInventoryEvidenceUrl": "https://www.airalo.com/namibia-esim",
       "publicInventoryEvidence": "Current Airalo Namibia page offers country-specific data packages.",
       "nextAction": "Verify Airalo availability in the ERN owner project and generate one Namibia tracked link only if available; never let connectivity affect discovery ranking."
+    },
+    {
+      "id": "viator-serengeti-tanzania",
+      "destination": "Serengeti National Park / Tanzania",
+      "placeIds": [
+        "tanzania-serengeti-explorer"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Current Viator inventory contains extensive Serengeti safari and wildlife products, creating a strong exact planning bridge after discovery.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Serengeti/d27084-ttd",
+      "publicInventoryEvidence": "Current 2026 Viator Serengeti inventory includes safaris, wildlife tours, 4WD tours and other park activities.",
+      "nextAction": "Generate one owner-side Serengeti destination/search tracked link and verify attribution before activation; do not imply pickup from Elewana Explorer unless an exact chosen product states it."
+    },
+    {
+      "id": "airalo-tanzania-connectivity",
+      "destination": "Tanzania connectivity utility",
+      "placeIds": [
+        "tanzania-serengeti-explorer",
+        "zanzibar-paje-white-sand",
+        "zanzibar-kiwengwa"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P1_UTILITY",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Airalo currently exposes Tanzania-specific eSIM inventory; useful as an optional post-discovery utility for mainland safari and Zanzibar trips.",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/Tanzania-esim",
+      "publicInventoryEvidence": "Current Airalo Tanzania page offers Tanzania-specific data packages.",
+      "nextAction": "Verify Airalo availability in the ERN owner project and generate one Tanzania tracked link only if available; connectivity must never affect Earth ranking."
     }
   ]
 }

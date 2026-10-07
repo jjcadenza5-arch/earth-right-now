@@ -11830,5 +11830,36 @@
     "searchSupplemental": true,
     "rightsBasis": "Africam provider-hosted live stream; ERN links externally and does not infer embed or redistribution rights.",
     "freshnessEvidence": "Africam's current Onguma page explicitly identifies the Onguma live stream and shows recent September 2026 wildlife highlights."
+  },
+  {
+    "id": "tanzania-serengeti-explorer-live",
+    "placeId": "tanzania-serengeti-explorer",
+    "title": "Serengeti — Elewana Explorer Live Stream",
+    "provider": "Africam / Elewana Serengeti Explorer",
+    "country": "Tanzania",
+    "region": "Serengeti",
+    "categories": [
+      "Wildlife",
+      "Safari",
+      "Parks",
+      "Beautiful Earth"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://africam.com/lodge/serengeti/",
+    "attribution": "Africam / Elewana Serengeti Explorer",
+    "checkedAt": "2026-10-07T02:37:27Z",
+    "lastSuccessfulCheck": "2026-10-07T02:37:27Z",
+    "quality": 98,
+    "freshness": 99,
+    "moment": 99,
+    "story": "Live wildlife window from Elewana Serengeti Explorer in Tanzania's Serengeti.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "Africam provider-hosted live stream; ERN links externally and does not infer embed or redistribution rights.",
+    "freshnessEvidence": "Africam's current Serengeti Explorer page explicitly presents the Serengeti Explorer Live Stream and Africam's current location directory lists it under Tanzania."
   }
 ]

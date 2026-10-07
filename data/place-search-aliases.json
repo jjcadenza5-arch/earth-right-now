@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T02:34:31Z",
+  "updatedAt": "2026-10-07T02:37:27Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -415,6 +415,12 @@
       "Onguma The Fort",
       "Onguma Namibia",
       "Onguma Etosha"
+    ],
+    "tanzania-serengeti-explorer": [
+      "Serengeti Explorer",
+      "Elewana Serengeti Explorer",
+      "Serengeti Tanzania",
+      "Serengeti National Park"
     ]
   }
 }
