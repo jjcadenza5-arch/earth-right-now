@@ -6138,3 +6138,74 @@ Revenue truth remains conservative:
 3. Continue current/live Earth expansion only where exact evidence is strong; unresolved Uruguay, Montserrat, New Caledonia/Kuto, Mauritius, Zambia/Shenton and Guam candidates remain fail-closed.
 4. Continue source-health / dedupe maintenance and preserve the Pattaya false-recovery guardrail.
 5. Require matching successful Pages + Operations on the same content SHA before the next canonical checkpoint.
+
+## Affiliate conversion-first checkpoint — 2026-10-07 03:14 UTC
+
+Canonical validated content:
+- Content commit: `0a9380af9dbee0cab94e54432019bee2f2b5c943`.
+- **Deploy ERN to GitHub Pages #2693** (run 37565610101): SUCCESS.
+- **ERN Operations Check #1474** (run 37565610059): SUCCESS.
+- The immediately preceding conversion commit `d2913b002a563e2194c2221a55ba3c9602609770` also passed Pages #2692 and Operations #1473.
+- Pages and Operations therefore validated the same final content SHA before this handoff-only commit.
+
+### Strategy shift: conversion over research accumulation
+This checkpoint intentionally did **not** increase the commercial research registry. It remains **462 opportunities**.
+
+Instead, **18 high-fit existing Viator opportunities** were converted from exact-link-gated research into real tracked destination links using ERN's already owner-verified Viator partner identity (`pid=P00322254`, `mcid=42383`) on exact Viator destination routes whose current 2026 inventory was independently rechecked.
+
+Converted destinations:
+- Zermatt / Matterhorn
+- Dubrovnik
+- Aruba
+- Santorini
+- Chamonix / Mont Blanc
+- Madeira
+- Grand Canyon National Park
+- Faroe Islands / Tórshavn
+- Etosha National Park
+- São Miguel, Azores
+- Istanbul
+- Bergen
+- Nuuk
+- St. John's, Newfoundland
+- Shetland Islands / Lerwick
+- Swakopmund
+- Innsbruck / Tyrol
+- Windhoek
+
+### Revenue-capable layer after conversion
+`data/affiliate-revenue-readiness.json` and `data/travel-offers.json` are synchronized at:
+- **49 current public revenue-capable affiliate offer rows**
+- **44 unique ERN places**
+- program split: **24 Viator, 17 Klook, 5 Tiqets, 3 Welcome Pickups**
+- unique tracked URLs: **23 Viator, 11 Klook, 4 Tiqets, 3 Welcome Pickups**
+
+Before this conversion-first batch, the public revenue-capable layer was 31 offers and Viator represented 6 offer rows. The gain came from conversion of existing researched destinations, not from expanding the 462-row opportunity queue.
+
+### Verification truth
+For the newly converted Viator destinations:
+- current destination/activity inventory was manually reviewed against current 2026 Viator search/index evidence;
+- the exact destination path was already present in ERN's researched opportunity record or independently revalidated;
+- the affiliate query parameters reuse the same active ERN Viator identity already owner-verified on earlier Auckland, Dublin, Cape Town, Petra and Muscat links;
+- each opportunity and offer records this verification method explicitly;
+- `manualOpenVerified:false` is retained on these newly composed destination links so ERN does **not** falsely claim that the owner personally clicked every exact URL in this batch.
+
+This distinction is intentional: these are real ERN tracked URLs built from an already verified partner identity and current exact destination routes, but a separate owner click-through is not fabricated.
+
+### Commercial architecture preserved
+- Commercial research opportunity count remains 462.
+- No Klook, Tiqets or other Travelpayouts short URL was invented. Those programs still require a real generated short link from the owner project before new activation.
+- No automatic tracked-link rewriting or automatic affiliate placement was introduced.
+- Commercial value still cannot affect Earth source truth, currentness, health, ranking or editorial prominence.
+- One useful destination-level action is preferred over multiple near-duplicate commercial buttons.
+- Commission remains contingent on valid attribution, eligible purchase and partner rules; no earnings guarantee is implied.
+
+### Next autonomous lane
+1. Continue conversion-first work: prioritize strong existing Viator opportunities with exact destination routes and current inventory rather than increasing the 462 opportunity count.
+2. For Klook/Tiqets/other Travelpayouts programs, convert only when a genuine owner-project tracking URL exists; never synthesize short links.
+3. Watch real outbound/click evidence and favor destinations actually drawing visitor interest.
+4. Consolidate duplicate commercial actions rather than increasing button density.
+5. Keep public-revenue counts synchronized with `data/travel-offers.json` and current partner verification horizons.
+6. Continue Earth/source maintenance independently, but do not use new source expansion as a reason to inflate commercial research volume.
+7. Require matching successful Pages + Operations on the same content SHA before the next canonical production checkpoint.
+
