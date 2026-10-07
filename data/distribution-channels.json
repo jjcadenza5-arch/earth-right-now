@@ -10,16 +10,47 @@
     "robotsPublished": true,
     "sitemapPublished": true,
     "oaiSearchBotAllowed": true,
-    "structuredSiteIdentity": true
+    "structuredSiteIdentity": true,
+    "indexNowPublished": true,
+    "indexNowKeyLocation": "https://earthrightnow.app/indexnow-key.txt",
+    "indexNowScope": "recently-updated-crawlable-urls"
   },
   "channels": [
-    {"id":"instagram","state":"NOT_CONNECTED","automaticPostingAllowed":false},
-    {"id":"whatsapp","state":"NOT_CONNECTED","automaticPostingAllowed":false},
-    {"id":"line","state":"NOT_CONNECTED","automaticPostingAllowed":false},
-    {"id":"tiktok","state":"NOT_CONNECTED","automaticPostingAllowed":false},
-    {"id":"youtube","state":"NOT_CONNECTED","automaticPostingAllowed":false},
-    {"id":"facebook","state":"NOT_CONNECTED","automaticPostingAllowed":false},
-    {"id":"x","state":"NOT_CONNECTED","automaticPostingAllowed":false}
+    {
+      "id": "instagram",
+      "state": "NOT_CONNECTED",
+      "automaticPostingAllowed": false
+    },
+    {
+      "id": "whatsapp",
+      "state": "NOT_CONNECTED",
+      "automaticPostingAllowed": false
+    },
+    {
+      "id": "line",
+      "state": "NOT_CONNECTED",
+      "automaticPostingAllowed": false
+    },
+    {
+      "id": "tiktok",
+      "state": "NOT_CONNECTED",
+      "automaticPostingAllowed": false
+    },
+    {
+      "id": "youtube",
+      "state": "NOT_CONNECTED",
+      "automaticPostingAllowed": false
+    },
+    {
+      "id": "facebook",
+      "state": "NOT_CONNECTED",
+      "automaticPostingAllowed": false
+    },
+    {
+      "id": "x",
+      "state": "NOT_CONNECTED",
+      "automaticPostingAllowed": false
+    }
   ],
   "safety": {
     "inventAccountClaimsAllowed": false,
