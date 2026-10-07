@@ -10,7 +10,8 @@ writeFileSync(a,JSON.stringify({
  searchGaps:[
   {value:"new york",count:1},
   {value:"纽约",count:1},
-  {value:"chiangmai",count:1}
+  {value:"chiangmai",count:1},
+  {value:"civic opera",count:1}
  ]
 }));
 const r=spawnSync(process.execPath,["scripts/analytics-search-gap-triage.mjs",a],{encoding:"utf8"});
@@ -20,6 +21,7 @@ const by=q=>x.rows.find(v=>v.query===q);
 assert.equal(by("new york").state,"CURRENTLY_RESOLVES");
 assert.equal(by("纽约").state,"CURRENTLY_RESOLVES");
 assert.equal(by("chiangmai").state,"GENUINE_CURRENT_GAP");
+assert.equal(by("civic opera").state,"GENUINE_CURRENT_GAP");
 assert.equal(x.safety.automaticCatalogMutationAllowed,false);
 assert.equal(x.safety.automaticAliasMutationAllowed,false);
 console.log("Search-gap triage distinguishes resolved historical gaps from genuine current gaps");
