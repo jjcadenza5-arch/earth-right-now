@@ -1612,5 +1612,39 @@
     "verifiedAt": "2026-10-07T03:15:00Z",
     "expiresAt": "2027-01-05T03:15:00Z",
     "evidence": "Reuses the already-verified ERN Viator Shetland Islands / Lerwick destination link for another ERN place inside the same destination scope. Partner tracking parameters are unchanged; no new URL or program approval was invented."
+  },
+  {
+    "id": "klook-singapore-woodlands-causeway",
+    "title": "Explore Singapore activities",
+    "placeId": "singapore-woodlands-causeway",
+    "provider": "Klook",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "klook",
+    "destinationScope": "Singapore",
+    "url": "https://klook.tpo.mx/QmJPVYKH",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-07T05:10:00Z",
+    "expiresAt": "2026-12-31T00:00:00Z",
+    "evidence": "Reuses the owner-verified Travelpayouts/Klook Singapore destination link for ERN's Woodlands Causeway place in the same Singapore destination scope. Klook's current 2026 Singapore destination inventory was rechecked before propagation; no new tracked URL or program approval was invented."
+  },
+  {
+    "id": "klook-fiji-castaway-island",
+    "title": "Explore Fiji activities",
+    "placeId": "fiji-castaway-island-live",
+    "provider": "Klook",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "klook",
+    "destinationScope": "Fiji / Mamanuca Islands",
+    "url": "https://klook.tpo.mx/DjkpjcEv",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-07T05:10:00Z",
+    "expiresAt": "2027-01-02T04:30:00Z",
+    "evidence": "Reuses the owner-verified Travelpayouts/Klook Fiji destination link for Castaway Island, which official Fiji/Outrigger sources place in the Mamanuca Islands. Klook's current 2026 Fiji inventory was rechecked before propagation; no new tracked URL or program approval was invented."
   }
 ]
