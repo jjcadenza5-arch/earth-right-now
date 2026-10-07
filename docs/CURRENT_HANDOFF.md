@@ -5733,3 +5733,74 @@ Continue from this checkpoint by:
 3. continuing Viator + Travelpayouts-compatible diversification only after real destination utility is established;
 4. performing source-health / dedupe maintenance before additional volume growth;
 5. requiring matching successful Pages + Operations validation on the same content SHA before declaring the next canonical checkpoint.
+
+
+## Autonomous exact-route resolution checkpoint — 2026-10-07 00:58 UTC
+
+Canonical validated content:
+- Content commit: `4d5bd03ca5544a01991da68e43fca9b8c6f20ae1`.
+- **Deploy ERN to GitHub Pages #2682** (run 37554355189): SUCCESS.
+- **ERN Operations Check #1463** (run 37554355192): SUCCESS.
+- Pages and Operations validated the same content SHA before this handoff-only commit.
+- The first Everest/Tórshavn release attempt (#2679) failed only on normalization-equivalent aliases (`Tórshavn` / `Torshavn`); the redundant alias was removed before the final validated release.
+
+### Search / Explore expansion
+Added **5 genuinely new healthy searchable places**:
+- **Hotel Everest View — Khumbu Panorama, Nepal** — current external live Himalayan panorama operated by Webcam Nepal Live.
+- **Tórshavn — Faroe Islands Live** — current provider-hosted live city feed.
+- **Pasikudah — Sun Siyam Live Weather View, Sri Lanka** — exact 24-hour resort live-weather webcam route resolved.
+- **St. Peter's Square — Vatican Media Live, Vatican City** — current official Vatican Media live feed surfaced externally.
+- **Azura — Bermuda South Shore** — exact current live-webcam endpoint resolved directly from Azura's own public site.
+
+All five remain HEALTHY + LINK_ONLY + EXTERNAL playback with Featured/Watch hold. Watch Earth impact remains **0**.
+
+### Research / architecture reconciliation
+- `cayman-port-authority-webcams` was reconciled to the already-existing canonical `cayman-george-town-port-current` record rather than adding a duplicate.
+- The unresolved research queue fell from **14 to 8**.
+- The Vatican Governorate redesign route was **not** falsely marked solved: its research item was superseded only because a distinct, separately verified official Vatican Media feed now covers St. Peter's Square.
+
+### Commercial / utility diversification
+- Existing Viator Everest / Khumbu research now includes Hotel Everest View.
+- Existing Viator Faroe Islands research now includes Tórshavn; Airalo Faroe connectivity research was added.
+- Sri Lanka Pasikudah was folded into existing Viator / QEEQ / Kiwitaxi / Airalo planning paths.
+- Added Tiqets Vatican City research based on current Vatican Museums / St. Peter's inventory.
+- Existing Bermuda and Caribbean connectivity paths now include Azura and the canonical Cayman port record where relevant.
+- All new or expanded commercial actions remain owner-project availability + exact tracked-link gated. No public activation, automatic placement, commission-based ranking, link rewriting, or inferred partner availability was introduced.
+
+### Current validated catalog
+- **703 healthy distinct searchable places**
+- **708 healthy source records**
+- **384 supplemental Search/Explore records**
+- **454 commercial opportunity records**
+- **79 utility-routing clusters**
+- **481 source-research candidates**
+- **8 unresolved research candidates**
+- **12 source-maintenance priority records**
+- Four degraded fail-closed core records remain unchanged: `pattaya-city-live`, `takayama-miyagawa-current-image`, `jungfrau-region`, and `chidori-sakura`.
+
+### Remaining conservative research queue
+Keep unresolved until exact current evidence is strong enough:
+- Montevideo / Pocitos Beach, Plaza Independencia, and Mercado del Puerto — Antel confirms camera capability but exact current public playback remains unresolved.
+- Montserrat / Soufrière Hills — MVO confirms active 24-hour remote monitoring, but public still-image freshness remains unresolved.
+- New Caledonia / Kuto — tourism-office image endpoint is known and the destination is current, but reliable public timestamp/freshness remains unresolved.
+- Mauritius official tourism webcam network — the current official site still advertises 13 webcams, but its current Watch Now handoff resolves to a dead route; do not promote.
+- Zambia / Mwamba–Kaingo — current Shenton Safaris operations are active, but no durable current public webcam route has been resolved.
+- Guam government live-streaming surface — current government page exists, but ERN has not established that it is a scenic/current destination camera rather than an event/institutional stream.
+
+### Protected invariants
+- Watch Earth remains in-ERN-playback-only.
+- LINK_ONLY / EXTERNAL sources remain outside Watch Earth.
+- IMAGE_REFRESH remains natural-schedule-only.
+- Public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- Commercial value cannot affect source truth, currentness, health, ranking, or editorial prominence.
+- No paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting, or unverified partner activation.
+- Existing lean-core / performance ceilings remain enforced.
+
+### Next autonomous lane
+Continue from this checkpoint by:
+1. resolving the remaining 8 research candidates only where exact current/live evidence is strong enough;
+2. prioritizing genuinely new countries/territories and provider diversity over alternate IDs;
+3. continuing Viator + Travelpayouts-compatible diversification only after real destination utility is established;
+4. performing source-health and dedupe maintenance before additional volume growth;
+5. requiring matching successful Pages + Operations validation on the same content SHA before declaring the next canonical checkpoint.
