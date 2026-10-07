@@ -94,6 +94,7 @@ await cp(new URL("../src/travel-bridge.js",import.meta.url),new URL("src/travel-
 await cp(new URL("../data/affiliate-partners.json",import.meta.url),new URL("data/affiliate-partners.json",dist));
 await cp(new URL("../data/analytics-deployment.json",import.meta.url),new URL("data/analytics-deployment.json",dist));
 await cp(new URL("../data/traffic-growth-priorities.json",import.meta.url),new URL("data/traffic-growth-priorities.json",dist));
+await cp(new URL("../data/business-growth-signals.json",import.meta.url),new URL("data/business-growth-signals.json",dist));
 await cp(new URL("../for-places.html",import.meta.url),new URL("for-places.html",dist));
 await cp(new URL("../release-verification.html",import.meta.url),new URL("release-verification.html",dist));
 await cp(new URL("../src/release-verification-console.js",import.meta.url),new URL("src/release-verification-console.js",dist));
