@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T10:42:00Z",
-  "objective": "Use first-party aggregate behavior to decide when ERN should revisit traffic-gated affiliate programs. Do not invent program unlock thresholds.",
-  "currentMilestone": "FIRST_ELIGIBLE_TRANSACTION_AND_REPEAT_TRIP_PLANNING_USAGE",
+  "generatedAt": "2026-10-07T03:45:00Z",
+  "objective": "Balance visitor value, organic audience growth and sustainable commission funding. Use first-party aggregate behavior and partner-confirmed evidence; never let commercial value change Earth ranking, source truth or currentness.",
+  "currentMilestone": "GROW_ORGANIC_VISITORS_REPEAT_USE_AND_USEFUL_TRIP_PLANNING_WHILE_SEEKING_FIRST_PARTNER_CONFIRMED_COMMISSION",
   "signals": [
     {
       "id": "travel-option-clicks",
@@ -72,5 +72,40 @@
     "noBookingInference": true,
     "noPaidRanking": true,
     "noAutomaticProgramActivation": true
-  }
+  },
+  "currentOperatingEvidence": {
+    "evidenceSource": "ERN Operations #1459 aggregate analytics snapshot",
+    "windowDays": 30,
+    "observedAt": "2026-10-06T15:08:23Z",
+    "approximateUniqueVisitors": 52,
+    "pageViews": 294,
+    "returningVisitorsApprox": 0,
+    "googleReferralViews": 17,
+    "facebookReferralViews": 32,
+    "earthSearches": 25,
+    "zeroResultSearches": 6,
+    "windowOpens": 261,
+    "externalSourceOpens": 72,
+    "travelOptionOpens": 2,
+    "interpretation": "ERN is demonstrating real discovery use, but audience scale and repeat usage are currently a larger constraint than affiliate-program count. Improve the discover → explore → plan path before broadening commercial density.",
+    "caveat": "This is a time-bounded aggregate operating snapshot, not a promise of current traffic, reach, conversion or revenue."
+  },
+  "balanceRules": [
+    "Visitor value comes first within each experience: show the truthful Earth window before planning actions.",
+    "Audience growth is a first-class operating goal: improve crawlable destination sharing, search discovery, useful return paths and organic distribution.",
+    "Funding is a first-class sustainability goal: expose only verified, contextually useful affiliate actions after destination interest is established.",
+    "Do not add commercial buttons merely to raise offer counts.",
+    "Commission rate, partner status or payout cannot affect Earth ranking, source health, currentness or editorial prominence.",
+    "Use travel_option_opened as planning-intent evidence only; never treat it as a booking or commission.",
+    "Use partner-dashboard evidence for conversions and commission.",
+    "Prefer converting existing active-program coverage over opening more programs until traffic and planning demand justify them."
+  ],
+  "nextOperatingPriorities": [
+    "Increase qualified organic visitors from search, social sharing, AI search and useful deep destination links.",
+    "Make destination shares resolve to crawlable place pages with destination-specific social metadata.",
+    "Improve repeat utility through current-place discovery, saved/recent places and trustworthy source maintenance.",
+    "Surface existing verified activities, culture and transport options naturally after a place is viewed.",
+    "Measure planning clicks by destination and provider; focus future commercial work on demonstrated visitor intent.",
+    "Revisit traffic-gated stay, transport and activity programs only when real audience/planning evidence or partner invitations justify it."
+  ]
 }

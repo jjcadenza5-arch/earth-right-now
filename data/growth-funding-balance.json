@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-07T03:45:00Z",
+  "name": "ERN Growth & Funding Balance",
+  "purpose": "Keep Earth Right Now useful enough to deserve repeat visits and financially sustainable enough to continue operating and expanding.",
+  "operatingModel": {
+    "visitorValue": {
+      "weight": "EQUAL_PRIORITY",
+      "goal": "Give people truthful current windows that are useful before travel or simply rewarding to visit virtually.",
+      "signals": [
+        "healthy current places",
+        "window opens",
+        "search use",
+        "external-source use",
+        "saved/recent return behavior"
+      ]
+    },
+    "audienceGrowth": {
+      "weight": "EQUAL_PRIORITY",
+      "goal": "Grow qualified organic discovery and repeat use without spam or misleading promotion.",
+      "signals": [
+        "approximate unique visitors",
+        "returning use",
+        "organic search referrals",
+        "social referrals",
+        "AI/search discoverability",
+        "destination-page sharing"
+      ]
+    },
+    "sustainableFunding": {
+      "weight": "EQUAL_PRIORITY",
+      "goal": "Earn commissions from genuinely useful post-discovery planning actions so ERN can maintain and expand the service.",
+      "signals": [
+        "travel_option_opened",
+        "revenue-eligible healthy places",
+        "partner-confirmed conversions",
+        "partner-confirmed commissions"
+      ]
+    }
+  },
+  "funnel": [
+    "Discover ERN",
+    "Search or wander Earth",
+    "Open a truthful current place",
+    "Decide whether the place matters",
+    "Use an optional verified planning action",
+    "Partner confirms eligible transaction if one occurs"
+  ],
+  "currentSnapshot": {
+    "source": "ERN Operations #1459",
+    "windowDays": 30,
+    "observedAt": "2026-10-06T15:08:23Z",
+    "approximateUniqueVisitors": 52,
+    "pageViews": 294,
+    "returningVisitorsApprox": 0,
+    "organicSignals": {
+      "googleReferralViews": 17,
+      "facebookReferralViews": 32
+    },
+    "engagement": {
+      "earthSearches": 25,
+      "windowOpens": 261,
+      "externalSourceOpens": 72,
+      "travelOptionOpens": 2
+    },
+    "conclusion": "The immediate leverage is audience growth and discover-to-plan conversion, not more affiliate-program volume."
+  },
+  "fundingPrinciples": [
+    "Earth discovery remains useful without clicking any commercial link.",
+    "Planning actions appear only after destination interest and are clearly disclosed when affiliate or sponsored.",
+    "Only current verified links tied to eligible healthy ERN places may count as revenue-capable.",
+    "One useful action per need is better than button density.",
+    "Commercial performance may prioritize business research effort, never Earth ranking.",
+    "No booking, sale, commission or revenue is inferred from a click."
+  ],
+  "growthPrinciples": [
+    "Prefer canonical crawlable destination URLs for sharing and search discovery.",
+    "Use destination-specific metadata where possible; avoid generic previews when a place page exists.",
+    "Grow through helpful content and real current windows, not automated social spam.",
+    "Track aggregate referral and destination demand while preserving ERN privacy rules.",
+    "Use repeated search gaps and place interest to guide source expansion."
+  ],
+  "nextUnlockLogic": [
+    "First partner-confirmed commission is stronger evidence than raw page views.",
+    "Sustained planning clicks across multiple destinations can justify broader partner applications.",
+    "Meaningful growth in organic visitors and repeat use can justify revisiting stay and transport programs.",
+    "No numeric unlock threshold is invented unless a partner explicitly provides one."
+  ],
+  "protectedInvariants": [
+    "Watch Earth in-ERN playback only.",
+    "LINK_ONLY and EXTERNAL sources do not enter Watch Earth merely because they are healthy.",
+    "Public generative Guide remains OFF.",
+    "Public Now Moments remains OFF.",
+    "No paid ranking or automatic affiliate placement.",
+    "No automatic tracked-link rewriting.",
+    "No unverified partner activation.",
+    "Commission cannot affect source truth, currentness, health or editorial ranking."
+  ]
+}
