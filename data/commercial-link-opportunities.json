@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T15:03:38Z",
+  "generatedAt": "2026-10-07T00:45:41Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -828,18 +828,19 @@
     },
     {
       "id": "viator-everest-future",
-      "destination": "Everest / Khumbu",
+      "destination": "Everest / Khumbu / Hotel Everest View",
       "placeIds": [
-        "khumbu-glacier-everest"
+        "khumbu-glacier-everest",
+        "nepal-hotel-everest-view"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
-      "reason": "Viator currently has a dedicated Mt. Everest collection spanning scenic flights, helicopter tours and Everest Base Camp treks; this is a natural planning layer after a verified Everest-region live/current view.",
+      "reason": "Viator has Everest/Khumbu planning inventory; include Hotel Everest View only when an exact relevant owner-side tracked product or destination link is available.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/collections/Mt-Everest-Tours-from-Kathmandu/c28285",
       "publicInventoryEvidence": "Viator currently lists multiple Mt. Everest products from Kathmandu, including scenic flights, helicopter tours and multi-day trekking.",
-      "nextAction": "Generate one Everest/Khumbu Viator partner link and verify it manually before public placement.",
+      "nextAction": "Search the owner account for exact Everest/Khumbu inventory relevant to Hotel Everest View and activate only one verified tracked link.",
       "sourceGateResolvedAt": "2026-10-03T05:00:00Z",
       "sourceGateNote": "Corresponding ERN destination is now searchable as clearly labeled quasi-live/current-image content; exact tracked-link verification remains mandatory."
     },
@@ -2120,16 +2121,17 @@
         "faroe-klaksvik",
         "faroe-gjaarskard",
         "faroe-hvalba",
-        "tvoroyri-port"
+        "tvoroyri-port",
+        "faroe-torshavn"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has five healthy Faroese current-image places. One destination-level Viator Faroe Islands link can serve trip planning across the family without duplicating affiliate density.",
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/Torshavn/d4191-ttd",
-      "nextAction": "Generate one Faroe Islands destination-level Viator tracked link and use it only where the visitor has chosen Faroe trip planning; do not attach it to unrelated cameras.",
-      "publicInventoryEvidence": "Viator currently exposes a Tórshavn/Faroe Islands destination page with current boat, cultural and island sightseeing inventory.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Torshavn/d4191-ttd",
+      "nextAction": "Generate one exact owner-side Tórshavn or Faroe Islands tracked activity link and manually verify attribution before activation.",
+      "publicInventoryEvidence": "Current Viator Tórshavn inventory shows active 2026 Faroe Islands tours and boat experiences departing from the capital.",
       "preparedTrackedUrlCandidate": "https://www.viator.com/Torshavn/d4191-ttd?pid=P00322254&mcid=42383&medium=link",
       "candidateStatus": "PREPARED_NOT_OWNER_VERIFIED"
     },
@@ -7251,6 +7253,27 @@
       "publicInventoryEvidenceUrl": "https://www.airalo.com/kenya-esim",
       "publicInventoryEvidence": "Current Airalo Kenya country page exposes Kenya-specific eSIM packages.",
       "nextAction": "Verify Airalo availability in the owner project and create one Kenya tracked connectivity link only if available; keep post-discovery."
+    },
+    {
+      "id": "airalo-faroe-connectivity",
+      "destination": "Faroe Islands connectivity utility",
+      "placeIds": [
+        "faroe-torshavn",
+        "vagar-airport-faroe",
+        "faroe-mykines",
+        "faroe-klaksvik",
+        "faroe-gjaarskard",
+        "faroe-hvalba",
+        "tvoroyri-port"
+      ],
+      "partnerCandidate": "airalo",
+      "intent": "connectivity",
+      "priority": "P1_UTILITY",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "reason": "Airalo currently exposes Faroe Islands-specific eSIM inventory.",
+      "publicInventoryEvidenceUrl": "https://www.airalo.com/faroe-islands-esim/kallur-digital-30days-10gb",
+      "publicInventoryEvidence": "Current Airalo Faroe Islands page lists country-specific data packages using FT Samskifti.",
+      "nextAction": "Verify Airalo availability in the owner project and generate one Faroe Islands tracked connectivity link only if available; keep post-discovery."
     }
   ]
 }

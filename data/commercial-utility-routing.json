@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T15:03:38Z",
+  "generatedAt": "2026-10-07T00:45:41Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1711,6 +1711,39 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_DESTINATION_AND_TRACKED_LINK_REQUIRED",
       "rule": "After a user chooses Nairobi National Park, show at most one exact safari activity and one Kenya connectivity utility. Commercial availability never affects source ranking, truth or health."
+    },
+    {
+      "id": "faroe-islands-planning",
+      "intent": "multi-utility",
+      "preferredProgramCandidates": [
+        "viator",
+        "airalo",
+        "kiwi-com"
+      ],
+      "placeIds": [
+        "faroe-torshavn",
+        "vagar-airport-faroe",
+        "faroe-mykines",
+        "faroe-klaksvik",
+        "faroe-gjaarskard",
+        "faroe-hvalba",
+        "tvoroyri-port"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_DESTINATION_OR_ROUTE_AND_TRACKED_LINK_REQUIRED",
+      "rule": "After a Faroe Islands destination is chosen, show at most one exact activity, one connectivity utility, and only a genuinely useful flight-planning action. Commercial availability never affects Earth ranking."
+    },
+    {
+      "id": "everest-khumbu-planning",
+      "intent": "destination-research",
+      "preferredProgramCandidates": [
+        "viator"
+      ],
+      "placeIds": [
+        "nepal-hotel-everest-view",
+        "khumbu-glacier-everest"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_KHUMBU_DESTINATION_AND_TRACKED_LINK_REQUIRED",
+      "rule": "Use only after Everest/Khumbu is selected. One exact relevant activity or planning action maximum; do not infer trekking permits, flights, lodging, guide availability, altitude safety, or route access from affiliate inventory."
     }
   ],
   "islandTravelClusters": [

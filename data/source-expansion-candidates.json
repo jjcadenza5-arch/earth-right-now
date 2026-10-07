@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T15:03:38Z",
+  "generatedAt": "2026-10-07T00:45:41Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -1312,14 +1312,17 @@
       "country": "Nepal",
       "region": "Solukhumbu",
       "provider": "Webcam Nepal",
-      "sourcePage": "https://www.geowebcams.com/en/webcam/himalayan-panorama-from-hotel-everest-view",
+      "sourcePage": "https://www.geowebcams.com/en/webcam/mount-everest-panorama-from-hotel-everest-view",
       "exactTargetUrl": "https://www.geowebcams.com/en/webcam/himalayan-panorama-from-hotel-everest-view",
       "exactTargetType": "LIVE_WEBCAM_AGGREGATOR_WITH_OPERATOR_ATTRIBUTION",
-      "evidence": "GeoWebcams identifies a live Himalayan panorama from Hotel Everest View operated by Webcam Nepal Live, showing Everest, Lhotse and Ama Dablam.",
+      "evidence": "GeoWebcams currently marks the Hotel Everest View Himalayan panorama Online and live, identifies Webcam Nepal Live as the operator, and provides current real-time playback metadata.",
       "researchEvidence": "Webcam Nepal describes a broader 24/7 live-camera network across Everest/Khumbu, Annapurna, Mustang, Manang, Dolpo and Humla.",
       "priority": "P1",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Open the Hotel Everest View live page and confirm the image/video is current before ERN promotes it."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Open the Hotel Everest View live page and confirm the image/video is current before ERN promotes it.",
+      "verifiedAt": "2026-10-07T00:45:41Z",
+      "promotedAt": "2026-10-07T00:45:41Z",
+      "verification": "Current external live page verified; EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
     },
     {
       "id": "khumbu-glacier-nco-p",
@@ -2679,14 +2682,17 @@
       "country": "Faroe Islands",
       "region": "Multiple islands",
       "provider": "Faroe Islands Live",
-      "sourcePage": "https://www.faroeislandslive.com/",
+      "sourcePage": "https://www.faroeislandslive.com/?id=21",
       "exactTargetUrl": "https://www.faroeislandslive.com/",
       "exactTargetType": "LIVE_CAMERA_NETWORK",
-      "evidence": "Faroe Islands Live currently exposes village/town webcams and a location map; its 2026 app listing describes live feeds across Faroese villages and towns.",
+      "evidence": "Faroe Islands Live currently exposes Tórshavn as an active live-feed page within its webcam network, with live-image controls and current location/weather context.",
       "researchEvidence": "Useful discovery family for future exact-place extraction, but ERN should add specific villages individually rather than one generic network entry.",
       "priority": "P2",
-      "state": "HUMAN_PLAYBACK_REQUIRED",
-      "humanCheckHint": "Use the live map to choose one visually strong village camera; promote exact places individually rather than the network."
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "humanCheckHint": "Use the live map to choose one visually strong village camera; promote exact places individually rather than the network.",
+      "verifiedAt": "2026-10-07T00:45:41Z",
+      "promotedAt": "2026-10-07T00:45:41Z",
+      "verification": "Resolved to current Tórshavn live page; EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
     },
     {
       "id": "shetland-lerwick-town-hall",
