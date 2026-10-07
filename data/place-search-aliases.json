@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T08:20:00Z",
+  "updatedAt": "2026-10-07T11:17:13Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -533,6 +533,16 @@
     "faroe-nolsoy": [
       "Nólsoy",
       "Nólsoy Faroe Islands"
+    ],
+    "uruguay-montevideo-teatro-solis": [
+      "Teatro Solis",
+      "Teatro Solís Montevideo",
+      "Solis Theatre",
+      "Ciudad Vieja Montevideo"
+    ],
+    "uruguay-montevideo-antel-arena": [
+      "Antel Arena",
+      "Antel Arena Montevideo"
     ]
   }
 }

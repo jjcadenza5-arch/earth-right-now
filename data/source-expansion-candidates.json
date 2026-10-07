@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T08:20:00Z",
+  "generatedAt": "2026-10-07T11:17:13Z",
   "purpose": "Internal research queue for expanding ERN from the current healthy searchable catalog toward 150–200 useful places. Nothing in this file is public/current until source-specific playback verification is completed.",
   "publicActivationAllowed": false,
   "rules": {
@@ -7533,6 +7533,36 @@
       "verifiedAt": "2026-10-07T08:20:00Z",
       "promotedAt": "2026-10-07T08:20:00Z",
       "verification": "EXTERNAL_LIVE / LINK_ONLY / Search-Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "montevideo-teatro-solis",
+      "title": "Montevideo — Teatro Solís",
+      "country": "Uruguay",
+      "region": "Montevideo / Ciudad Vieja",
+      "provider": "Antel TV",
+      "sourcePage": "https://anteltv.com.uy/",
+      "exactTargetType": "OFFICIAL_TELECOM_CAMERA_PLATFORM",
+      "evidence": "Antel's current platform confirms public cameras around Uruguay; a current September 2026 external index identifies Teatro Solís as an active AntelTV live camera with a current timestamp.",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "verifiedAt": "2026-10-07T11:17:13Z",
+      "promotedAt": "2026-10-07T11:17:13Z",
+      "verification": "Current EXTERNAL_LIVE / LINK_ONLY AntelTV camera; Search/Explore only; Watch Earth excluded."
+    },
+    {
+      "id": "montevideo-antel-arena",
+      "title": "Montevideo — Antel Arena",
+      "country": "Uruguay",
+      "region": "Montevideo / Villa Española",
+      "provider": "Antel TV",
+      "sourcePage": "https://anteltv.com.uy/",
+      "exactTargetType": "OFFICIAL_TELECOM_CAMERA_PLATFORM",
+      "evidence": "Antel's current platform confirms public cameras around Uruguay; a current September 2026 external index identifies Antel Arena as an active AntelTV live camera with a current timestamp.",
+      "priority": "P2",
+      "state": "PROMOTED_TO_SEARCHABLE_QUASI_LIVE",
+      "verifiedAt": "2026-10-07T11:17:13Z",
+      "promotedAt": "2026-10-07T11:17:13Z",
+      "verification": "Current EXTERNAL_LIVE / LINK_ONLY AntelTV camera; Search/Explore only; Watch Earth excluded."
     }
   ],
   "notes": [

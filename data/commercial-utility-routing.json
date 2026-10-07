@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T08:20:00Z",
+  "generatedAt": "2026-10-07T11:17:13Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1878,6 +1878,21 @@
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_DESTINATION_AND_TRACKED_LINK_REQUIRED",
       "rule": "Use Chișinău activity inventory only for genuinely relevant Moldova planning; expose at most one activity and one connectivity action after destination choice. Do not infer tours or transfers for other road-camera towns from capital-city inventory."
+    },
+    {
+      "id": "montevideo-city-planning",
+      "intent": "multi-utility",
+      "preferredProgramCandidates": [
+        "viator",
+        "airalo"
+      ],
+      "placeIds": [
+        "uruguay-montevideo-mercado-del-puerto",
+        "uruguay-montevideo-teatro-solis",
+        "uruguay-montevideo-antel-arena"
+      ],
+      "activationGate": "OWNER_PROJECT_AVAILABILITY_AND_EXACT_TRACKED_LINK_REQUIRED",
+      "rule": "After Montevideo is chosen, expose at most one destination-level activity action and one Uruguay connectivity utility. Do not create per-camera commercial duplication and never let commercial value affect Earth ranking."
     }
   ],
   "islandTravelClusters": [
