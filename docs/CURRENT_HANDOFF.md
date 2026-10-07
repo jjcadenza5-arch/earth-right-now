@@ -6532,3 +6532,115 @@ Current rechecks still do not justify promotion:
 
 ### Protected invariants
 Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL sources remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
+
+
+## India + Moldova public-sector discovery checkpoint — 2026-10-07 05:58 UTC
+
+Canonical validated content:
+- Content SHA: `d6ad38e81dec48a6641d7ac3283d9f4bb4adc344`.
+- **Deploy ERN to GitHub Pages #2715** (run 37578602413): SUCCESS.
+- **ERN Operations Check #1492** (run 37578602378): SUCCESS.
+- Pages and Operations validated the same content SHA before this handoff-only commit.
+
+### Search / Explore expansion
+Added **12 healthy public-sector current/live discovery places across two newly represented countries**.
+
+**India — 6**
+- Varanasi — Kashi Vishwanath Live Darshan;
+- Mumbai — Siddhivinayak Ganpati Live Darshan;
+- Ujjain — Mahakaleshwar Temple Live Darshan;
+- Tirupati — Tirumala Live Darshan;
+- Bhuj — Swaminarayan Temple Live Darshan;
+- Jaipur — Govind Devji Live Darshan.
+
+Provider/source truth:
+- Ministry of Tourism, Government of India / Utsav Live Darshan;
+- current Ministry directory exposes 75 Live Darshan results with published operating hours;
+- all ERN records remain `EXTERNAL_LIVE` + `LINK_ONLY` + Search/Explore-only;
+- ERN does not restream devotional footage and Watch Earth impact is zero.
+
+**Moldova — 6**
+- Chișinău — M1 current road view;
+- Bălți — R8 current road view;
+- Soroca — R8 current road view;
+- Cahul — M21 current road view;
+- Briceni — M1 current road view;
+- Ialoveni — R3 current road view.
+
+Provider/source truth:
+- S.A. Administrația Națională a Drumurilor / National Road Administration of Moldova;
+- current official page reports 16 available road cameras and recent-image viewing;
+- all six ERN records remain `LIVE_IMAGE` + `LINK_ONLY` + Search/Explore-only;
+- ERN does not rehost the road imagery and Watch Earth impact is zero.
+
+### Search / AI retrieval
+Added crawl/search aliases for all 12 new places, including local-script / common-name variants where appropriate.
+
+The first Pages attempt (#2712 on `ee303724...`) was stopped by the multilingual alias guard because `Chișinău` and `Chisinau` normalize to the same alias.
+- Fixed by retaining one normalized alias plus distinct useful alternatives.
+- No alias rule was relaxed.
+- The later final SHA passed multilingual alias integrity, SEO indexing, AI-search discovery, public discoverability and all other release guards.
+
+### Commercial / planning research
+Added **8 owner-link-gated research opportunities**:
+- Viator: Mumbai, Jaipur, Varanasi, Chișinău;
+- Klook: Mumbai, Jaipur;
+- Airalo: India connectivity, Moldova connectivity.
+
+Added **2 utility-routing clusters**:
+- `india-live-darshan-planning`;
+- `moldova-road-and-city-planning`.
+
+All remain post-discovery and owner-project availability + exact tracked-link gated.
+No tracked URL, partner approval, payout state, automatic affiliate placement, ranking boost or destination relevance was invented.
+The India routing rule explicitly forbids commercializing the devotional stream itself; Moldova routing does not infer Chișinău tours/transfers for other road-camera towns.
+
+### Architecture / health
+Current canonical state:
+- core source records: **328**
+- supplemental Search/Explore records: **408**
+- combined source records: **736**
+- healthy source records: **732**
+- healthy distinct searchable places: **727**
+- commercial research opportunities: **474**
+- utility-routing clusters: **86**
+- source-research candidates: **504**
+- unresolved exact-current research queue: **4**
+- source-maintenance priority records: **20**
+- travel-offer registry remains **97 verified offers**
+- no duplicate source IDs;
+- no cross-core/supplemental title duplicates.
+
+The four degraded/fail-closed core records remain unchanged:
+- `pattaya-city-live`;
+- `takayama-miyagawa-current-image`;
+- `jungfrau-region`;
+- `chidori-sakura`.
+
+Fresh rechecks still support fail-closed handling:
+- Pattaya City CCTV currently exposes the 600-camera inventory but the public Live View reports **0 active cameras**;
+- Jungfrau's official webcam collection currently reports all listed webcams offline even though some individual historical/recent image endpoints exist;
+- do not mark either HEALTHY without current exact playback/current-image proof.
+
+### Remaining unresolved exact-current research
+Keep these four unresolved until exact current/playback or reliable freshness evidence is strong enough:
+- Montevideo / Pocitos Beach;
+- Montevideo / Plaza Independencia;
+- Soufrière Hills / Montserrat;
+- Île des Pins / Kuto, New Caledonia.
+
+Current rechecks still do not justify promotion:
+- Antel confirms camera content exists on Antel TV and older official material identifies Playa Pocitos Panorámica, but fresh exact external playback for the named targets remains unresolved;
+- MVO confirms continuous 24-hour remote-camera monitoring, but ERN still lacks a stable public freshness timestamp/current-image endpoint;
+- Kuto's tourism-office webcam endpoint remains referenced by current destination material, but direct image freshness is not independently verified.
+
+### Next autonomous lane
+1. Continue qualified audience / repeat-use / destination re-entry improvements before increasing commercial density.
+2. Expand into genuinely new countries/providers only where first-party or strongly attributable current/live evidence is clear.
+3. Prefer existing active-program destination reuse and exact relevance before generating new tracked URLs or opening new partner programs.
+4. Continue source-health / dedupe maintenance and resolve the remaining four exact-current candidates conservatively.
+5. Keep Pattaya and Jungfrau fail-closed until current exact playback/current-image evidence is independently confirmed.
+6. Require matching successful Pages + Operations validation on the same content SHA before the next canonical production checkpoint.
+
+### Protected invariants
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
