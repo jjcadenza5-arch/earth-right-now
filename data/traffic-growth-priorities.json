@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T06:38:40Z",
+  "generatedAt": "2026-10-07T09:40:00Z",
   "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
   "currentSearchableHealthyPlaces": 733,
   "unlockTargets": [
@@ -24,6 +24,12 @@
     "noNumericUnlockThresholdInvented": true
   },
   "workstreams": [
+    {
+      "id": "indexnow-freshness",
+      "priority": "P1",
+      "action": "Notify IndexNow after successful production deploys using only the recently updated crawlable destination feed plus core discovery URLs. Keep Google on sitemap/Search Console; do not treat submission as guaranteed indexing.",
+      "successSignal": "Faster Bing/participating-engine discovery of genuinely updated ERN destination pages."
+    },
     {
       "id": "destination-depth",
       "priority": "P1",
@@ -77,10 +83,16 @@
       "priority": "P2",
       "action": "Recheck traffic-gated Travelpayouts programs only after a platform status change, first affiliate conversion, sustained qualified outbound activity, or material organic traffic growth.",
       "successSignal": "A previously locked program exposes usable/approved link-generation controls."
+    },
+    {
+      "id": "share-to-deep-link",
+      "priority": "P1",
+      "action": "Favor destination and country deep links in manual organic sharing rather than repeatedly sharing only the homepage, so social visitors land on a specific useful Earth view and can continue through related places.",
+      "successSignal": "Referral traffic spreads across destination pages and generates more multi-place exploration."
     }
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
-  "note": "Catalog scale is no longer the bottleneck. Primary growth objective is qualified organic discovery, country/category re-entry, destination sharing, repeat use and real planning clicks/conversions; traffic-gated partner thresholds remain private and must not be invented.",
+  "note": "Catalog scale is no longer the bottleneck. Primary growth objective is qualified organic discovery, destination-level sharing, search/AI freshness, repeat use and real planning clicks/conversions; traffic-gated partner thresholds remain private and must not be invented.",
   "milestone": "733_HEALTHY_SEARCHABLE_PLACES_COUNTRY_HUB_TRAFFIC_LAYER",
   "currentBusinessCoverage": {
     "healthyPlaces": 733,
