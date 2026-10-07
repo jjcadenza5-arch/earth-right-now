@@ -8015,3 +8015,87 @@ The major repository / public-site / traffic split identified from owner screens
 3. Resolve repeated genuine zero-result demand only when a truthful current source independently passes ERN gates.
 4. Improve related-place / return-visitor journeys when production evidence shows a real friction point.
 5. Continue autonomous source-health maintenance and provider diversity work without returning to count-driven expansion.
+
+
+## Search + traffic reality catch-up checkpoint — 2026-10-07 17:27 UTC
+
+### Canonical production state
+- Final validated content SHA: `704f57ed17891c8731fb44b7c4215340fd1188b2`.
+- **Deploy ERN to GitHub Pages #2838** (run 37658673639): SUCCESS.
+- **ERN Operations Check #1602** (run 37658673961): SUCCESS.
+- Both validated the exact same SHA.
+- The release smoke suite, lean/performance gate, whole-product guard, source-research integrity, public launch checks, commercial checks and post-deploy visitor reality verification all passed.
+- The production verifier confirmed the real `earthrightnow.app` runtime contains the reconciled search behavior; this stage is not counted from repository state alone.
+
+### Public search catch-up realized
+- Zero-result visitor copy now truthfully says there is no current match rather than implying a hidden result.
+- The observed typo `museaum` now normalizes to `museum` in both the public runtime and shared search engine.
+- Production reality verification explicitly checks for the public typo-normalization marker and truthful zero-result copy.
+- Traffic search-gap triage was tightened so multi-term historical queries are not declared “resolved” merely because one loose token matches an unrelated destination.
+- Regression coverage now protects both the typo normalization and partial-term false-positive behavior.
+
+### Research / maintenance baselines reconciled
+Old internal baselines that could pull future autonomous work backward were corrected:
+- combined catalog: **760 records**
+- healthy source records: **756**
+- healthy searchable distinct places: **751**
+- healthy country / territory labels: **130**
+- degraded records: **4**
+- offline records: **0**
+
+The old 91-place geography snapshot is explicitly superseded and must not drive count-chasing. The source-maintenance and source-research priority files now use the current production reality. Current degraded debt remains heterogeneous: Pattaya exact-playback evidence, Takayama stale companion image, Jungfrau provider-offline state and Chidori seasonal off-season state.
+
+### Traffic search-gap interpretation
+The stricter aggregate triage is intentionally conservative. At the latest Operations observation:
+- historical zero-result events replayed: **34**
+- currently resolving under strict matching: **7**
+- genuine current gaps: **25**
+- low-confidence partial terms: **2**
+
+The high gap count is not an instruction to add 25 destinations: the current observed gaps are mostly single-occurrence terms. Traffic may prioritize research only when repeated or clearly useful. Current explicit queue treatment:
+- `chiangmai`: genuine destination-current-view research gap; continue truthful research.
+- `museaum`: closed by product normalization, no catalog mutation.
+- `outlet` / `outlet malls`: monitor as one generic retail-place gap; do not invent a source.
+- `symphony orchestra`: ambiguous generic/non-destination demand; monitor only unless repeated with a place/venue.
+
+### Latest synchronized traffic reality
+Traffic/business baseline now reflects Operations #1601/#1602 clean-v2 evidence:
+- approximate unique visitors: **53**
+- page views: **340**
+- Earth searches: **87**
+- zero-result searches: **36**
+- place/window opens: **300**
+- external-source opens: **80**
+- verified travel-option opens: **9**
+- Facebook-family referral views: **32**
+- destination shares/copies: **0** at this observation
+
+Top aggregate search demand:
+1. `taitung jinzun` — 9
+2. `arches` — 2
+3. `chicago` — 2
+4. `new` — 2
+5. `new york` — 2
+
+Clean v2 destination-open attribution is now non-empty:
+1. `nz-ruapehu` — 2
+2. `addo-elephant-national-park` — 1
+3. `barbados-paynes-bay` — 1
+4. `cape-verde-santa-maria-bay` — 1
+5. `denpasar-city-live` — 1
+
+This sample is still too small for ranking conclusions. It is directional aggregate evidence only.
+
+### Protected interpretation
+- No traffic signal may override source truth, currentness, rights, health, playback proof or editorial ranking.
+- Travel-option clicks do not prove booking, conversion, commission or revenue.
+- No new partner unlock threshold is invented.
+- Do not resume count-driven source expansion.
+- Production completion still requires matching Pages + Operations on one SHA plus the live-domain reality check.
+
+### Remaining autonomous lane
+1. Continue first-30-seconds Watch Earth refinement only when stronger trustworthy current imagery is available.
+2. Let clean-v2 destination/share evidence accumulate before making demand/ranking changes.
+3. Research repeated genuine search gaps rather than reacting to one-off generic terms.
+4. Improve related-place / return-visitor journeys only where production evidence shows friction.
+5. Continue source-health maintenance and provider/geographic diversity without count chasing.
