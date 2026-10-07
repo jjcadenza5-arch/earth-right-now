@@ -7,7 +7,7 @@ if(!html.includes('data-guide="see before i go"'))fail.push("missing See before 
 if(!html.includes('data-i18n="guideBeforeGo"'))fail.push("missing localized Guide chip key");
 if(!app.includes("planning:has("))fail.push("missing planning intent");
 if(!app.includes("function guideEligible(s){return featureEligible(s)&&currentTruthClaim(s)}"))fail.push("Guide current-truth gate missing");
-if(!app.includes("state.sources.filter(guideEligible)"))fail.push("Guide result pool may bypass current-truth gate");
+if(!app.includes("dc().filter(guideEligible)"))fail.push("Guide result pool may bypass unified current-truth gate");
 if(!app.includes('t("guidePlanningPrompt")'))fail.push("missing planning prompt response");
 if(!app.includes('t("guidePlanningFound")'))fail.push("missing destination planning response");
 if(((app+i18n).match(/guidePlanningPrompt:/g)||[]).length<7)fail.push("planning prompt not localized to seven languages");
