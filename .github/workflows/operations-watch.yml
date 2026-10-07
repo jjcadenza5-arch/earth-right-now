@@ -139,6 +139,8 @@ jobs:
           cat ern-ops/analytics-owner-report.md >> "$GITHUB_STEP_SUMMARY"
           npm --silent run analytics:distribution-observation -- ern-ops/analytics-private.json data/organic-distribution-events.json | tee ern-ops/organic-distribution-observation.json
           npm --silent run analytics:search-gap-triage -- ern-ops/analytics-private.json | tee ern-ops/search-gap-triage.json
+          npm --silent run analytics:traffic-growth-brief -- ern-ops/analytics-private.json data/organic-distribution-events.json ern-ops/traffic-growth-brief.md
+          cat ern-ops/traffic-growth-brief.md >> "$GITHUB_STEP_SUMMARY"
       - name: Compare operations trend
         if: always()
         run: |
