@@ -1377,12 +1377,12 @@
       ],
       "partnerCandidate": "klook",
       "intent": "activities",
-      "priority": "P1",
-      "reason": "ERN already has a healthy Taitung Pacific Coast place and Klook currently lists dozens of Taitung activities spanning coastal tours, parks, hot springs and cultural experiences.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "priority": "P3_OPTIONAL_SECOND_PROVIDER",
+      "reason": "Jinzun now has an active Viator planning/commission path. Klook still has strong Taitung inventory, but a second provider is optional and should not add commercial density unless visitor utility or conversion evidence justifies it.",
+      "state": "OPTIONAL_SECOND_PROVIDER_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.klook.com/zh-TW/destination/c47-taitung/1-things-to-do/",
       "publicInventoryEvidence": "Klook currently exposes a broad Taitung destination inventory with 70+ activities and strong local booking history.",
-      "nextAction": "Generate one Taitung destination-level Klook tracked link and verify it manually; keep commercial action downstream from live discovery."
+      "nextAction": "Do not ask the owner for a Klook Taitung link during reality reconciliation. Revisit only if analytics show a useful second-provider need."
     },
     {
       "id": "klook-toyama",
