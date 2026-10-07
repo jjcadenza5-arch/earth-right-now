@@ -6923,3 +6923,79 @@ No unresolved source was promoted merely to create traffic.
 ### Protected invariants
 
 Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
+
+
+## Exact Viator destination activation checkpoint — 2026-10-07 07:40 UTC
+
+Canonical validated content:
+- Content SHA: `660c6abf8eeb1461f4529f543ea90797dc09e223`.
+- **Deploy ERN to GitHub Pages #2727** (run 37588532854): SUCCESS.
+- **ERN Operations Check #1502** (run 37588532737): SUCCESS.
+- Pages and Operations validated the same final content SHA before this handoff-only commit.
+
+### Revenue activation
+
+Activated exact current Viator destination coverage for **5 destination families / 6 healthy ERN places**:
+- Nuremberg — 1 place;
+- Plitvice Lakes National Park — 1;
+- Dresden / Radebeul — 2;
+- Garmisch-Partenkirchen / Farchant / Zugspitze — 1;
+- Brașov / Poiana Brașov — 1.
+
+Each activation uses ERN's already owner-verified Viator affiliate identity `pid=P00322254 / mcid=42383 / medium=link` on an independently rechecked exact destination page.
+- `exactDestinationPageVerified: true` is recorded on the corresponding commercial opportunity rows.
+- `manualOpenVerified: false` remains explicit for these newly reused exact destination URLs.
+- `verificationMethod: CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE` is recorded on the primary public offer rows.
+- Exact destination evidence URLs are persisted in both the commercial opportunity and primary travel-offer records.
+- No separate owner click-through, booking, price, conversion, or new partner-account state is falsely claimed.
+
+### Public revenue-active state
+
+After this tranche the canonical readiness summary and computed public layer agree on:
+- **183 public revenue-active offers**
+- **178 healthy ERN places** with an active offer
+- by program:
+  - Viator: **154**
+  - Klook: **21**
+  - Tiqets: **5**
+  - Welcome Pickups: **3**
+- distinct active tracked URLs:
+  - Viator: **58**
+  - Klook: **10**
+  - Tiqets: **4**
+  - Welcome Pickups: **3**
+- travel-offer registry total: **184** records.
+
+The one-record difference between total registry and public revenue-active count remains intentional: the Tokyo/Chidori Klook offer stays fail-closed while its underlying ERN source is degraded/off-season.
+
+### Release-guard catch and repair
+
+The first release attempt correctly failed commercial Phase 10 readiness because the canonical revenue-readiness summary still described the preceding **177 offers / 172 places / 148 Viator offers / 53 Viator URLs** state.
+- The new offers themselves were current and structurally valid.
+- The release guard detected **public-active revenue-readiness count drift** rather than allowing a stale business-state summary into production.
+- `data/affiliate-revenue-readiness.json` was synchronized to the true post-batch state.
+- Exact verification provenance was strengthened before the replacement release.
+- No guard, verification horizon, commercial-neutrality rule, or fail-closed boundary was weakened.
+
+The replacement content SHA `660c6ab...` then passed the current release smoke suite, Phase 10 production/business audits, all later Pages predeploy checks, deployment, social-preview verification, and Operations.
+
+### Source-truth state
+
+This batch changed commercial coverage only; it did not promote unresolved Earth sources or change source ranking.
+- Healthy distinct searchable-place/source truth remains inherited from the preceding validated catalog state.
+- The four degraded/fail-closed core records remain unchanged: `pattaya-city-live`, `takayama-miyagawa-current-image`, `jungfrau-region`, and `chidori-sakura`.
+- The unresolved exact-current queue remains fail-closed unless fresh evidence resolves exact target/currentness requirements.
+
+### Next autonomous lane
+
+1. Continue exact destination-level activation from already-active partner programs only where healthy ERN place scope and current partner inventory genuinely match.
+2. Prefer one useful destination-level action across a coherent place cluster rather than per-camera affiliate density.
+3. Continue traffic/re-entry improvements so commercial growth follows visitor utility rather than link volume.
+4. Continue trustworthy geography/provider expansion only from strong live/current evidence; keep unresolved candidates fail-closed.
+5. Keep revenue-readiness summaries synchronized with the computed public offer layer in the same tranche so count drift cannot recur.
+6. Preserve exact verification provenance and distinguish independently rechecked destination inventory from owner-click verification.
+7. Require matching successful Pages + Operations on the same content SHA before the next canonical production checkpoint.
+
+### Protected invariants
+
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; clicks are not bookings; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
