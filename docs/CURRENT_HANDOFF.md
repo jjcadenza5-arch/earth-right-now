@@ -6209,3 +6209,90 @@ This distinction is intentional: these are real ERN tracked URLs built from an a
 6. Continue Earth/source maintenance independently, but do not use new source expansion as a reason to inflate commercial research volume.
 7. Require matching successful Pages + Operations on the same content SHA before the next canonical production checkpoint.
 
+## Revenue activation + source-reconciliation checkpoint — 2026-10-07 03:40 UTC
+
+Canonical validated content:
+- Content commit: `b96ad14e05d2eb115acac9793d12e1cdedc00b1a`.
+- **Deploy ERN to GitHub Pages #2695** (run 37566864310): SUCCESS.
+- **ERN Operations Check #1476** (run 37566864307): SUCCESS.
+- **ERN JavaScript Syntax Check #1071** (run 37566864331): SUCCESS.
+- Pages, Operations and syntax validation passed on the same content SHA before this handoff-only commit.
+- The preceding Pages #2694 / Operations #1475 failure on `f3860785...` is superseded. Its cause was a commercial-readiness count drift after four new verified placements; the product code itself passed syntax. The readiness model was repaired and then passed the full release suite.
+
+### Business / commission side
+ERN now distinguishes clearly between research coverage and genuinely revenue-capable placement.
+
+Current verified affiliate inventory:
+- **53 verified current affiliate offers** in the offer registry.
+- **52 offers across 47 currently HEALTHY ERN places are revenue-eligible today** after source-health gating.
+- Program mix for currently revenue-eligible placements:
+  - Viator: **26**
+  - Klook: **18**
+  - Tiqets: **5**
+  - Welcome Pickups: **3**
+- The 53rd verified offer is Tokyo / Chidori-ga-fuchi. It remains fail-closed because that Earth source is currently DEGRADED / off-season.
+- Existing unique tracked-link identities remain unchanged; no affiliate URL was invented.
+
+Four additional placements were activated by reusing owner-verified destination-level links only for genuinely same-destination ERN places:
+- Ounasvaara → verified Klook Rovaniemi destination link;
+- Sentosa Gateway → verified Klook Singapore destination link;
+- Dublin Port → verified Viator Dublin destination link;
+- Camps Bay → verified Viator Cape Town destination link.
+
+Commercial architecture improvements:
+- commercial attribution/source eligibility now includes both canonical core and supplemental Search/Explore catalogs;
+- Travel Bridge affiliate links now carry the offer ID expected by ERN first-party aggregate outbound-click telemetry;
+- commercial inventory status now evaluates supplemental revenue-capable places correctly;
+- Travelpayouts state explicitly allows deliberate manually verified tracked links while Drive/automatic monetization and automatic link rewriting remain OFF;
+- public placement permission is scoped only to exact verified destination links;
+- release preflight now requires a currently HEALTHY `LIVE_VIDEO`, `LIVE_IMAGE` or `EXTERNAL_LIVE` source before an affiliate offer counts as public revenue-active.
+
+This does **not** claim that every click or purchase earns commission. Actual revenue still depends on visitor click attribution, eligible purchase completion and each partner's rules.
+
+### Search / Explore and architecture side
+Current catalog:
+- core sources: **328**
+- supplemental Search/Explore sources: **393**
+- combined source records: **721**
+- healthy source records: **717**
+- healthy distinct searchable places: **712**
+- commercial research opportunities: **462**
+- utility-routing clusters: **84**
+- source-research candidates: **490**
+- source-maintenance priority records: **12**
+
+Research reconciliation:
+- **62 previously promoted research candidates** were reconciled to their already-existing canonical core records instead of remaining as false unresolved work.
+- Provenance remains preserved; no public place/source coverage was removed.
+- Examples include Vienna, Finland, Istanbul, Denpasar, multiple volcano-monitoring networks, Hong Kong, Iceland, Madeira, Taiwan, Peru, Kuredu, Barbados, Cape Verde, Petra, Muscat and Fiji.
+
+The genuinely unresolved exact-current queue is now only **8**:
+- Montevideo / Pocitos Beach;
+- Montevideo / Plaza Independencia;
+- Montevideo / Mercado del Puerto;
+- Soufrière Hills / Montserrat;
+- Île des Pins / Kuto, New Caledonia;
+- Mauritius official tourism webcam network;
+- South Luangwa / Shenton Safaris, Zambia;
+- Government of Guam live-streaming surface.
+
+Keep these fail-closed until exact current/playback truth is resolved.
+
+Four degraded core sources remain intentionally fail-closed:
+- `pattaya-city-live`;
+- `takayama-miyagawa-current-image`;
+- `jungfrau-region`;
+- `chidori-sakura`.
+
+### Funding-oriented next autonomous lane
+1. Prefer converting high-fit opportunities from **already active/available programs** into exact verified tracked links over simply adding more commercial research rows.
+2. Reuse an existing verified destination link only when the ERN place is genuinely within the same destination scope; never stretch city/region meaning just to increase monetization.
+3. For Travelpayouts short links, do not invent URLs. New Klook/Tiqets/Welcome Pickups/Airalo/etc. links still require generation through the owner Earthrightnow Project and manual verification before activation.
+4. Continue Viator conversion only where an exact useful destination/product path and ERN affiliate attribution can be verified conservatively.
+5. Maintain aggregate outbound-click telemetry as click evidence only; never infer booking/revenue without partner evidence.
+6. Continue broad trustworthy Earth expansion and exact-current source repair in parallel, with source quality and visitor utility always independent of commission.
+7. Require same-content SHA successful Pages + Operations validation for the next canonical production checkpoint.
+
+### Protected invariants
+Watch Earth remains in-ERN-playback-only; LINK_ONLY / EXTERNAL additions remain outside Watch Earth; IMAGE_REFRESH remains natural-schedule-only; public generative Guide and Now Moments remain OFF; no paid ranking, automatic affiliate placement, automatic tracked-link rewriting, automatic social posting or unverified partner activation; commission cannot affect source truth, health, currentness or editorial ranking; existing lean/performance ceilings remain enforced.
+
