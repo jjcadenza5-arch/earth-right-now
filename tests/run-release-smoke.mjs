@@ -93,6 +93,7 @@ const releaseTests=[
   "guide-place-intent.smoke.js",
   "guide-ai-deployment-readiness.smoke.js",
   "destination-page-builder.smoke.js",
+  "destination-deeplink-analytics.smoke.js",
   "public-trust-discovery.smoke.js",
   "navigation-controls.smoke.js",
   "return-visitor-reentry.smoke.js",
