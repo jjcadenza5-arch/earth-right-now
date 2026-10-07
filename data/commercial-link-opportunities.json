@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T08:50:00Z",
+  "generatedAt": "2026-10-07T09:50:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1809,10 +1809,14 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has a one-minute official CENAPRED Popocatépetl current-image source and Viator currently sells Mexico City volcano treks and Puebla/Cholula day trips with Popocatépetl views.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Mexico-City/Trekking-Through-The-Volcanoes/d628-147652P8",
       "publicInventoryEvidence": "Current Viator Mexico City inventory includes trekking in the Popocatépetl/Iztaccíhuatl area and Puebla/Cholula day trips with Popocatépetl viewpoints.",
-      "nextAction": "Generate a suitable Mexico City/Popocatépetl Viator partner link and verify it manually before activation."
+      "nextAction": "Generate a suitable Mexico City/Popocatépetl Viator partner link and verify it manually before activation.",
+      "trackingUrl": "https://www.viator.com/tours/Mexico-City/Trekking-Through-The-Volcanoes/d628-147652P8?pid=P00322254&mcid=42383&medium=link",
+      "lastVerifiedAt": "2026-10-07T09:50:00Z",
+      "verificationEvidenceUrl": "https://www.viator.com/tours/Mexico-City/Trekking-Through-The-Volcanoes/d628-147652P8",
+      "activationNote": "Demand-led activation after current 2026 Viator inventory recheck; exact tracked URL uses ERN's existing owner-verified Viator partner identity."
     },
     {
       "id": "tiqets-tallinn",
@@ -2522,8 +2526,12 @@
       "intent": "activities",
       "priority": "P2",
       "reason": "Mountain resort with clear seasonal activity intent.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Check exact Verbier inventory before generating any tracked link."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Check exact Verbier inventory before generating any tracked link.",
+      "trackingUrl": "https://www.viator.com/tours/Swiss-Alps/6-Day-Gold-Ski-and-Boots-Package/d5015-28882P2?pid=P00322254&mcid=42383&medium=link",
+      "lastVerifiedAt": "2026-10-07T09:50:00Z",
+      "verificationEvidenceUrl": "https://www.viator.com/tours/Swiss-Alps/6-Day-Gold-Ski-and-Boots-Package/d5015-28882P2",
+      "activationNote": "Demand-led activation after current 2026 Viator inventory recheck; exact tracked URL uses ERN's existing owner-verified Viator partner identity."
     },
     {
       "id": "viator-dolomiti-superski",
@@ -2721,8 +2729,12 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Island/volcano discovery pairs naturally with hiking and nature activity planning.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Search La Palma island inventory and use one island-level link across both places if useful."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Search La Palma island inventory and use one island-level link across both places if useful.",
+      "trackingUrl": "https://www.viator.com/tours/La-Palma/Following-the-footprint-of-the-Tajogaite-volcano/d4487-280910P2?pid=P00322254&mcid=42383&medium=link",
+      "lastVerifiedAt": "2026-10-07T09:50:00Z",
+      "verificationEvidenceUrl": "https://www.viator.com/tours/La-Palma/Following-the-footprint-of-the-Tajogaite-volcano/d4487-280910P2",
+      "activationNote": "Demand-led activation after current 2026 Viator inventory recheck; exact tracked URL uses ERN's existing owner-verified Viator partner identity."
     },
     {
       "id": "klook-farm-tomita",
