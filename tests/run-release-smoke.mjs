@@ -95,6 +95,7 @@ const releaseTests=[
   "destination-page-builder.smoke.js",
   "public-trust-discovery.smoke.js",
   "navigation-controls.smoke.js",
+  "return-visitor-reentry.smoke.js",
   "first-impression-visuals.smoke.js",
   "distribution-readiness.smoke.js",
   "local-directory-status.smoke.js",
