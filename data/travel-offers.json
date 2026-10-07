@@ -3462,5 +3462,25 @@
     "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
     "evidence": "Current Viator 2026 Montevideo destination inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
     "verificationBatch": "2026-10-07-destination-family-batch-c"
+  },
+  {
+    "id": "viator-faroe-islands-public--faroe-nolsoy",
+    "title": "Explore Faroe Islands / Tórshavn tours & activities",
+    "placeId": "faroe-nolsoy",
+    "provider": "Viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "viator",
+    "destinationScope": "Faroe Islands / Tórshavn",
+    "url": "https://www.viator.com/en-GB/Torshavn/d4191-ttd?pid=P00322254&mcid=42383&medium=link",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-07T08:20:00Z",
+    "expiresAt": "2027-01-05T03:00:00Z",
+    "verificationEvidenceUrl": "https://www.viator.com/en-GB/Torshavn/d4191-ttd",
+    "manualOpenVerified": false,
+    "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+    "evidence": "Reuses ERN's current verified Faroe Islands / Tórshavn Viator destination link for healthy Nólsoy. Tracking parameters are unchanged."
   }
 ]

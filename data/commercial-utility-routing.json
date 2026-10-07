@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T05:53:00Z",
+  "generatedAt": "2026-10-07T08:20:00Z",
   "publicActivationAllowed": false,
   "principle": "Utility routing is post-discovery only. It never changes source ranking, featured-camera selection or Search relevance.",
   "programs": {
@@ -1731,7 +1731,8 @@
         "faroe-klaksvik",
         "faroe-gjaarskard",
         "faroe-hvalba",
-        "tvoroyri-port"
+        "tvoroyri-port",
+        "faroe-nolsoy"
       ],
       "activationGate": "OWNER_PROJECT_AVAILABILITY_EXACT_DESTINATION_OR_ROUTE_AND_TRACKED_LINK_REQUIRED",
       "rule": "After a Faroe Islands destination is chosen, show at most one exact activity, one connectivity utility, and only a genuinely useful flight-planning action. Commercial availability never affects Earth ranking."

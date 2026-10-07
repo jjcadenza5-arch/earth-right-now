@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T08:10:00Z",
+  "generatedAt": "2026-10-07T08:20:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -2364,7 +2364,8 @@
         "faroe-gjaarskard",
         "faroe-hvalba",
         "tvoroyri-port",
-        "faroe-torshavn"
+        "faroe-torshavn",
+        "faroe-nolsoy"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -2372,16 +2373,16 @@
       "reason": "ERN now has five healthy Faroese current-image places. One destination-level Viator Faroe Islands link can serve trip planning across the family without duplicating affiliate density.",
       "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-GB/Torshavn/d4191-ttd",
-      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "nextAction": "Keep one exact Faroe Islands destination action current across the coherent place family; avoid camera-specific duplicate commercial density.",
       "publicInventoryEvidence": "Current Viator Tórshavn inventory shows active 2026 Faroe Islands tours and boat experiences departing from the capital.",
       "preparedTrackedUrlCandidate": "https://www.viator.com/Torshavn/d4191-ttd?pid=P00322254&mcid=42383&medium=link",
       "candidateStatus": "PREPARED_NOT_OWNER_VERIFIED",
       "trackingUrl": "https://www.viator.com/en-GB/Torshavn/d4191-ttd?pid=P00322254&mcid=42383&medium=link",
-      "verifiedAt": "2026-10-07T03:00:00Z",
+      "verifiedAt": "2026-10-07T08:20:00Z",
       "exactDestinationPageVerified": true,
       "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
       "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
-      "verificationEvidence": "Current Viator 2026 Tórshavn/Faroe Islands inventory was rechecked; active island and waterfall tours are indexed.",
+      "verificationEvidence": "Current Tórshavn/Faroe Islands Viator inventory remains active; the existing tracked destination link is reused for Nólsoy without creating a new destination URL.",
       "manualOpenVerified": false
     },
     {
@@ -7750,7 +7751,8 @@
         "faroe-klaksvik",
         "faroe-gjaarskard",
         "faroe-hvalba",
-        "tvoroyri-port"
+        "tvoroyri-port",
+        "faroe-nolsoy"
       ],
       "partnerCandidate": "airalo",
       "intent": "connectivity",
