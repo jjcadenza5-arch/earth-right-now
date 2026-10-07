@@ -3,7 +3,7 @@ import {affiliatePartner,activeAffiliatePartner} from "../src/affiliate-partners
 import {currentTravelOffer} from "../src/travel-offer-verification.js";
 
 const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
-const partners=read("data/affiliate-partners.json"),offers=read("data/travel-offers.json"),platforms=read("data/affiliate-platform-research.json"),opportunities=read("data/commercial-link-opportunities.json"),business=read("data/business-readiness.json"),index=fs.readFileSync("index.html","utf8"),destinationBuilder=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
+const partners=read("data/affiliate-partners.json"),offers=read("data/travel-offers.json"),platforms=read("data/affiliate-platform-research.json"),opportunities=read("data/commercial-link-opportunities.json"),business=read("data/business-readiness.json"),activation=read("data/affiliate-activation.json"),revenueReadiness=read("data/affiliate-revenue-readiness.json"),index=fs.readFileSync("index.html","utf8"),destinationBuilder=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
 const now=Date.now(),fail=[],warn=[],partnerMap=new Map();
 for(const raw of partners){
   const p=affiliatePartner(raw);
@@ -38,6 +38,23 @@ if(opportunities.publicActivationAllowed!==false)fail.push("commercial opportuni
 if(opportunities.principles?.automaticPlacementAllowed!==false)fail.push("commercial opportunity queue automatic placement must remain disabled");
 if(opportunities.principles?.automaticLinkRewritingAllowed!==false)fail.push("commercial opportunity queue automatic link rewriting must remain disabled");
 if(opportunities.principles?.commissionMayNotAffectEditorialRanking!==true)fail.push("commercial queue must preserve editorial ranking independence");
+if(!revenueReadiness?.earningRule)fail.push("affiliate revenue readiness earning rule missing");
+if(revenueReadiness?.safeguards?.researchOpportunityDoesNotEqualRevenueActive!==true)fail.push("affiliate readiness must distinguish research from revenue-active");
+if(revenueReadiness?.safeguards?.exactTrackedLinkRequired!==true)fail.push("affiliate readiness exact tracked-link gate missing");
+if(revenueReadiness?.safeguards?.manualVerificationRequired!==true)fail.push("affiliate readiness manual verification gate missing");
+if(revenueReadiness?.safeguards?.automaticLinkRewriting!==false||revenueReadiness?.safeguards?.automaticAffiliatePlacement!==false)fail.push("affiliate readiness may not enable automatic monetization");
+if(revenueReadiness?.safeguards?.commissionCannotAffectEarthRanking!==true)fail.push("affiliate readiness must preserve ranking independence");
+const verifiedTpByProgram={};
+for(const [program,p] of Object.entries(activation?.travelpayoutsVerifiedPrograms||{})){
+  verifiedTpByProgram[program]=Object.values(p?.destinationLinks||{}).filter(d=>String(d?.state||"").includes("VERIFIED")&&d?.publicPlacementAllowed===true).length;
+}
+const verifiedTpTotal=Object.values(verifiedTpByProgram).reduce((a,b)=>a+b,0);
+if(revenueReadiness?.currentVerifiedEvidence?.travelpayouts?.verifiedDestinationLinks!==verifiedTpTotal)fail.push("affiliate revenue readiness Travelpayouts verified-link count drift");
+for(const [program,count] of Object.entries(verifiedTpByProgram)){
+  if(revenueReadiness?.currentVerifiedEvidence?.travelpayouts?.byProgram?.[program]!==count)fail.push("affiliate revenue readiness program count drift: "+program);
+}
+const activationViator=(activation?.waves||[]).flatMap(w=>w?.programs||[]).find(p=>p?.id==="viator");
+if(revenueReadiness?.currentVerifiedEvidence?.viator?.relationshipActive!==(activationViator?.state==="ACTIVE_TRACKED_LINK_CREATED"))fail.push("affiliate revenue readiness Viator state drift");
 for(const x of opportunities.opportunities||[]){
   if(!x?.id||!x?.destination||!x?.partnerCandidate||!x?.state)fail.push("invalid commercial opportunity record");
   if(x?.url||x?.trackedUrl||x?.public===true)fail.push("planning opportunity contains public/tracked placement data: "+String(x?.id||"unknown"));
