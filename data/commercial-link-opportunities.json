@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T10:20:00Z",
+  "generatedAt": "2026-10-07T10:30:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -683,10 +683,18 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN has a healthy Torres del Paine Río Serrano place and Viator currently sells Torres del Paine sightseeing trips from Punta Arenas and Puerto Natales.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Punta-Arenas/Full-Day-Torres-del-Paine/d4416-225783P1",
-      "publicInventoryEvidence": "Current Viator inventory includes a full-day Torres del Paine viewpoints tour covering Lake Sarmiento, Lake Pehoé and Lake Grey with pickup from Punta Arenas or Puerto Natales.",
-      "nextAction": "Prefer a clean Torres del Paine or Puerto Natales destination-level partner link over a single-product link; verify manually before public activation."
+      "state": "VERIFIED_LINK_ADDED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Puerto-Natales/Full-Day-Panoramic-Torres-Del-Paine/d23619-5504032P1",
+      "publicInventoryEvidence": "Current Viator inventory includes an active full-day Torres del Paine panoramic tour from Puerto Natales covering major park viewpoints.",
+      "nextAction": "Maintain one useful destination-family action; do not add camera-specific duplicate offers unless visitor utility clearly requires it.",
+      "trackingUrl": "https://www.viator.com/tours/Puerto-Natales/Full-Day-Panoramic-Torres-Del-Paine/d23619-5504032P1?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T10:30:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's already owner-verified Viator affiliate identity P00322254 / mcid 42383 on an independently rechecked exact destination or active inventory page.",
+      "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Torres del Paine inventory was rechecked; the full-day panoramic park tour from Puerto Natales remains active with current bookings and park viewpoints in the itinerary. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact product URL was not separately owner-click-verified.",
+      "verificationEvidenceUrl": "https://www.viator.com/tours/Puerto-Natales/Full-Day-Panoramic-Torres-Del-Paine/d23619-5504032P1",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-ushuaia-future",
@@ -1841,8 +1849,18 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Lake Bled is now a healthy searchable ERN place and Viator has broad Bled sightseeing/day-trip inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate and manually verify one Bled destination-level Viator link."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Maintain one useful destination-family action; do not add camera-specific duplicate offers unless visitor utility clearly requires it.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Bled/7-ALPINE-WONDERS/d22044-67715P2",
+      "publicInventoryEvidence": "Current Viator Bled inventory includes an active Triglav National Park & Soča Valley tour departing Bled, with 2026 reviews and recent bookings.",
+      "trackingUrl": "https://www.viator.com/tours/Bled/7-ALPINE-WONDERS/d22044-67715P2?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T10:30:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's already owner-verified Viator affiliate identity P00322254 / mcid 42383 on an independently rechecked exact destination or active inventory page.",
+      "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Bled inventory was rechecked; the Triglav National Park & Soča Valley tour from Bled remains active and highly booked. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact product URL was not separately owner-click-verified.",
+      "verificationEvidenceUrl": "https://www.viator.com/tours/Bled/7-ALPINE-WONDERS/d22044-67715P2",
+      "manualOpenVerified": false
     },
     {
       "id": "tiqets-salzburg",
@@ -2513,8 +2531,18 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Strong Alpine destination where sightseeing and mountain activities are natural post-discovery actions.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Search Viator account for St. Moritz / Engadin coverage and generate one destination-level link only if inventory is strong."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Maintain one useful destination-family action; do not add camera-specific duplicate offers unless visitor utility clearly requires it.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/tours/St-Moritz/Explore-St-Moritz-in-60-minutes-with-a-Local/d5013-76545P95",
+      "publicInventoryEvidence": "Current Viator St. Moritz inventory includes an active 60-minute local walking experience passing Lake St. Moritz and central landmarks.",
+      "trackingUrl": "https://www.viator.com/tours/St-Moritz/Explore-St-Moritz-in-60-minutes-with-a-Local/d5013-76545P95?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T10:30:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's already owner-verified Viator affiliate identity P00322254 / mcid 42383 on an independently rechecked exact destination or active inventory page.",
+      "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 St. Moritz inventory was rechecked; the active local walking experience covers Lake St. Moritz and central landmarks. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact product URL was not separately owner-click-verified.",
+      "verificationEvidenceUrl": "https://www.viator.com/tours/St-Moritz/Explore-St-Moritz-in-60-minutes-with-a-Local/d5013-76545P95",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-verbier",
@@ -2628,8 +2656,18 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Coastal current-image source pairs naturally with whale-watching and marine-wildlife planning.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Search Kaikōura tours/whale-watching inventory and generate one destination link if strong."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Maintain one useful destination-family action; do not add camera-specific duplicate offers unless visitor utility clearly requires it.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-AU/tours/Kaikoura/Kaikoura-Swim-with-Dolphins-Tour-from-Christchurch/d34937-2950CLT09",
+      "publicInventoryEvidence": "Current Viator Kaikōura inventory includes an active dolphin-swim / marine-wildlife day tour with 2026 availability and recent bookings.",
+      "trackingUrl": "https://www.viator.com/en-AU/tours/Kaikoura/Kaikoura-Swim-with-Dolphins-Tour-from-Christchurch/d34937-2950CLT09?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T10:30:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's already owner-verified Viator affiliate identity P00322254 / mcid 42383 on an independently rechecked exact destination or active inventory page.",
+      "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Kaikōura inventory was rechecked; the active marine-wildlife day tour includes dolphin swimming in Kaikōura and coastal wildlife viewing. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact product URL was not separately owner-click-verified.",
+      "verificationEvidenceUrl": "https://www.viator.com/en-AU/tours/Kaikoura/Kaikoura-Swim-with-Dolphins-Tour-from-Christchurch/d34937-2950CLT09",
+      "manualOpenVerified": false
     },
     {
       "id": "kkday-kaohsiung",
@@ -2680,8 +2718,18 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Major beach destination with broad water, culture and island-tour planning demand.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one Honolulu/Waikiki destination link after exact inventory check."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Maintain one useful destination-family action; do not add camera-specific duplicate offers unless visitor utility clearly requires it.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Honolulu/d59070-ttd",
+      "publicInventoryEvidence": "Current Viator Honolulu destination inventory shows 400+ results and multiple active Waikiki-based experiences.",
+      "trackingUrl": "https://www.viator.com/Honolulu/d59070-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T10:30:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's already owner-verified Viator affiliate identity P00322254 / mcid 42383 on an independently rechecked exact destination or active inventory page.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Honolulu inventory was rechecked and shows 400+ tours, including multiple Waikiki-based cruises, snorkel trips, island tours and Pearl Harbor departures. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383; this exact destination URL was not separately owner-click-verified.",
+      "verificationEvidenceUrl": "https://www.viator.com/Honolulu/d59070-ttd",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-boston-harbor",
