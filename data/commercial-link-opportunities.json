@@ -1004,7 +1004,8 @@
       "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
       "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
       "verificationEvidence": "Current Viator 2026 Brașov destination inventory was independently rechecked on the exact destination page.",
-      "manualOpenVerified": false
+      "manualOpenVerified": false,
+      "verificationEvidenceUrl": "https://www.viator.com/Brasov/d23067-ttd"
     },
     {
       "id": "viator-flam",
@@ -3008,7 +3009,8 @@
       "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
       "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
       "verificationEvidence": "Current Viator 2026 Nuremberg destination inventory was independently rechecked on the exact destination page.",
-      "manualOpenVerified": false
+      "manualOpenVerified": false,
+      "verificationEvidenceUrl": "https://www.viator.com/Nuremberg/d5628-ttd"
     },
     {
       "id": "viator-cannes",
@@ -3050,7 +3052,8 @@
       "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
       "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
       "verificationEvidence": "Current Viator 2026 Plitvice Lakes National Park destination inventory was independently rechecked on the exact destination page.",
-      "manualOpenVerified": false
+      "manualOpenVerified": false,
+      "verificationEvidenceUrl": "https://www.viator.com/Plitvice-Lakes-National-Park/d27086-ttd"
     },
     {
       "id": "viator-aalborg",
@@ -3086,7 +3089,8 @@
       "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
       "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
       "verificationEvidence": "Current Viator 2026 Dresden destination inventory was independently rechecked on the exact destination page.",
-      "manualOpenVerified": false
+      "manualOpenVerified": false,
+      "verificationEvidenceUrl": "https://www.viator.com/Dresden/d22375-ttd"
     },
     {
       "id": "viator-garmisch-farchant",
@@ -3107,7 +3111,8 @@
       "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
       "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
       "verificationEvidence": "Current Viator 2026 Garmisch-Partenkirchen destination inventory was independently rechecked on the exact destination page.",
-      "manualOpenVerified": false
+      "manualOpenVerified": false,
+      "verificationEvidenceUrl": "https://www.viator.com/Garmisch-Partenkirchen/d22133-ttd"
     },
     {
       "id": "viator-aruba-island",
