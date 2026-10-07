@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T06:40:00Z",
+  "generatedAt": "2026-10-07T07:10:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -994,14 +994,17 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has a healthy Poiana Brașov searchable place. Viator currently lists multiple Brașov/Poiana Brașov and Transylvania day tours, so source verification is no longer the blocker.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Brasov/d23067-ttd",
       "publicInventoryEvidence": "Current Viator Brașov inventory includes tours that explicitly visit Poiana Brașov as well as broader Transylvania and mountain experiences.",
-      "nextAction": "Batch with other direct Viator candidate links for owner open/redirect verification; do not activate publicly before confirmation.",
-      "candidateTrackedUrl": "https://www.viator.com/Brasov/d23067-ttd?pid=P00322254&mcid=42383&medium=link",
-      "candidateTrackedUrlPreparedAt": "2026-10-03T11:45:00Z",
-      "candidateTrackedUrlEvidence": "Clean public Viator destination URL confirmed in ERN research; existing owner-confirmed Viator pid/mcid/medium pattern applied. This remains a non-public candidate until owner opens and verifies the redirect/destination.",
-      "ownerVerificationRequired": true
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Brasov/d23067-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T07:10:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Brașov destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-flam",
@@ -2996,9 +2999,16 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has an official Nuremberg real-time panorama and Viator has broad Nuremberg Old Town/history/sightseeing inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Nuremberg/d5628-ttd",
-      "nextAction": "Generate one Nuremberg destination-level Viator partner link and manually verify it before public activation."
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Nuremberg/d5628-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T07:10:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Nuremberg destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-cannes",
@@ -3031,9 +3041,16 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has an official Plitvice Lakes livestream discovery place and Viator has dedicated park admission and guided-tour inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Plitvice-Lakes-National-Park/d27086-ttd",
-      "nextAction": "Generate one Plitvice Lakes destination-level Viator partner link and manually verify it before public activation."
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Plitvice-Lakes-National-Park/d27086-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T07:10:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Plitvice Lakes National Park destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-aalborg",
@@ -3060,9 +3077,16 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has two official Dresden Elbland current views and Viator has substantial Dresden sightseeing/day-trip inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Dresden/d22375-ttd",
-      "nextAction": "Generate one Dresden destination-level Viator link; reuse it across the two related ERN places if it cleanly serves both."
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Dresden/d22375-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T07:10:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Dresden destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-garmisch-farchant",
@@ -3074,9 +3098,16 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "ERN now has an official Farchant/Zugspitze-region current view and Viator has dedicated Garmisch-Partenkirchen/Zugspitze activity inventory.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "state": "VERIFIED_LINK_ADDED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/Garmisch-Partenkirchen/d22133-ttd",
-      "nextAction": "Generate one Garmisch-Partenkirchen destination-level Viator link only if it cleanly serves the Farchant/Zugspitze discovery context."
+      "nextAction": "Keep this exact destination-level link current and observe aggregate outbound clicks; do not add duplicate commercial density unless visitor utility warrants it.",
+      "trackingUrl": "https://www.viator.com/Garmisch-Partenkirchen/d22133-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-07T07:10:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Garmisch-Partenkirchen destination inventory was independently rechecked on the exact destination page.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-aruba-island",
