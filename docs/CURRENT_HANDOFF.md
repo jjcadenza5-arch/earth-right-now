@@ -6099,3 +6099,42 @@ Continue from this checkpoint by:
 4. continuing source-health and dedupe maintenance before raw volume growth;
 5. treating the Pattaya incident as a permanent guardrail: collection inventory or portal reachability alone does not prove playable live output;
 6. requiring matching successful Pages + Operations on the same content SHA before the next canonical production checkpoint.
+
+
+## Public affiliate revenue-truth reconciliation checkpoint — 2026-10-07 02:56 UTC
+
+Canonical validated content:
+- Content commit: `ca73e640b0f82c37bc4288271ce7e76bfbce2226`.
+- **ERN JavaScript Syntax Check #1069**: SUCCESS.
+- **Deploy ERN to GitHub Pages #2691**: SUCCESS.
+- **ERN Operations Check #1472**: SUCCESS.
+- Syntax, Pages and Operations validated the same content SHA before this handoff-only commit.
+
+### Commercial truth now explicit
+ERN now distinguishes the public revenue-active offer layer from the broader commercial research registry:
+- **31 current verified affiliate offers** are active in `data/travel-offers.json` and backed by enabled/current affiliate partners.
+- Program split: **17 Klook, 6 Viator, 5 Tiqets, 3 Welcome Pickups**.
+- These 31 public offer rows cover 31 ERN places. Some destination-level links are intentionally shared across multiple relevant place pages, so unique tracked URLs are lower: Viator 5, Klook 11, Tiqets 4, Welcome Pickups 3.
+- The broader commercial research registry contains **462 opportunities**. Research-only / exact-link-gated rows are not counted as revenue-active.
+
+`data/affiliate-revenue-readiness.json` now carries a `currentPublicRevenueActive` snapshot and definition. `scripts/commercial-placement-preflight.mjs` now fails release if the reported public-active offer count or by-program counts drift from the actual current verified offer layer and enabled partner state.
+
+Revenue truth remains conservative:
+- a public revenue-active offer means a current verified tracked affiliate offer is exposed through ERN's approved offer layer;
+- commission is never guaranteed and still depends on valid click attribution, an eligible purchase and partner rules;
+- commercial state never affects Earth source truth, health, currentness, ranking or editorial prominence;
+- no automatic affiliate placement, tracked-link rewriting, paid ranking or unverified partner activation was introduced.
+
+### Architecture check
+- Commercial registry checked for exact partner + destination + place-set duplicate opportunity groups: none found.
+- Existing public generative Guide remains OFF.
+- Public Now Moments remains OFF.
+- Watch Earth remains in-ERN-playback-only.
+- LINK_ONLY / EXTERNAL sources remain Search/Explore-only unless independently eligible for in-ERN playback.
+
+### Next autonomous lane
+1. Keep the 31-offer public revenue-active layer synchronized with verified links and partner verification horizons.
+2. Prefer conversion of high-fit existing opportunities into exact verified links over accumulating more program names.
+3. Continue current/live Earth expansion only where exact evidence is strong; unresolved Uruguay, Montserrat, New Caledonia/Kuto, Mauritius, Zambia/Shenton and Guam candidates remain fail-closed.
+4. Continue source-health / dedupe maintenance and preserve the Pattaya false-recovery guardrail.
+5. Require matching successful Pages + Operations on the same content SHA before the next canonical checkpoint.
