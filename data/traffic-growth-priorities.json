@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T06:33:03Z",
+  "generatedAt": "2026-10-07T06:38:40Z",
   "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
   "currentSearchableHealthyPlaces": 733,
   "unlockTargets": [
@@ -35,6 +35,12 @@
       "priority": "P1",
       "action": "Publish substantial crawlable country hubs only where ERN has at least six current or schedule-verified destinations. Link destination pages back to the country hub and keep payment irrelevant to inclusion.",
       "successSignal": "More qualified country-level search/social landings that continue into multiple ERN destination pages."
+    },
+    {
+      "id": "recent-update-feed",
+      "priority": "P1",
+      "action": "Publish a bounded Atom feed of recently updated crawlable destination pages and advertise it from robots.txt and the homepage. Keep source-derived last-modified dates authoritative.",
+      "successSignal": "Search/feed crawlers can discover meaningful recent destination changes without repeated full-site rediscovery."
     },
     {
       "id": "long-tail-geography",

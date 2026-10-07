@@ -1,0 +1,10 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const b=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
+const r=fs.readFileSync("robots.txt","utf8");
+const h=fs.readFileSync("index.html","utf8");
+assert.match(b,/recentFeedRows=.*slice\(0,50\)/);
+assert.match(b,/updates\.xml/);
+assert.match(r,/Sitemap: https:\/\/earthrightnow\.app\/updates\.xml/);
+assert.match(h,/type="application\/atom\+xml"/);
+console.log("Recent ERN destination updates feed is bounded, advertised and discoverable");

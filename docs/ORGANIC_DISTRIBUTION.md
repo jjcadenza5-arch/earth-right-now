@@ -34,3 +34,10 @@ Country hubs:
 - must not be multiplied into thin city/keyword doorway pages.
 
 Destination pages also expose a native share/copy-link action and, when eligible, a country-hub route. These are visitor utility and organic distribution features, not evidence that any external social account exists.
+
+
+## Recent destination update feed
+
+ERN publishes `/updates.xml` as a bounded Atom feed containing up to 50 recently updated, crawlable destination pages. It is advertised from `robots.txt` as an additional sitemap-compatible discovery surface and from the homepage with an Atom alternate link.
+
+The feed is generated from the same source-derived destination `lastmod` evidence as the main sitemap. It is not a fake news stream, does not manufacture freshness, and never includes a destination merely because it has commercial value.
