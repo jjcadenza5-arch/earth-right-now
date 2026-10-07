@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T11:20:00Z",
+  "generatedAt": "2026-10-07T14:33:00Z",
   "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
-  "currentSearchableHealthyPlaces": 733,
+  "currentSearchableHealthyPlaces": 751,
   "unlockTargets": [
     "trip-com",
     "hotels-com",
@@ -104,11 +104,11 @@
     }
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
-  "note": "Catalog scale is no longer the bottleneck. Primary growth objective is qualified organic discovery, destination-level sharing, search/AI freshness, repeat use and real planning clicks/conversions; traffic-gated partner thresholds remain private and must not be invented.",
-  "milestone": "733_HEALTHY_SEARCHABLE_PLACES_COUNTRY_HUB_TRAFFIC_LAYER",
+  "note": "Catalog scale is no longer the bottleneck. The Oct. 7 reality-reconciliation connected the unified public discovery catalog to production and aligned the traffic lane to the same operating state. Primary growth objective is now qualified organic discovery, better Watch Earth first impression, lower genuine search-gap rate, destination-level sharing, repeat use and real planning clicks. Traffic never overrides source truth/currentness and traffic-gated partner thresholds remain private.",
+  "milestone": "751_HEALTHY_SEARCHABLE_PLACES_REALITY_AND_TRAFFIC_RECONCILED",
   "currentBusinessCoverage": {
-    "healthyPlaces": 733,
-    "placesWithCommercialPath": 275,
+    "healthyPlaces": 751,
+    "placesWithCommercialPath": 217,
     "intentionallyEditorialPlaces": 38,
     "unclassifiedHealthyPlaces": 0,
     "verifiedLinkPlaces": 163,
@@ -116,21 +116,65 @@
     "conversionShortlistSize": 15,
     "conversionShortlist": "data/commercial-conversion-shortlist.json",
     "publicVerifiedTravelOfferMappings": 31,
-    "searchableUniverseWithSupplemental": 733
+    "searchableUniverseWithSupplemental": 751
   },
   "unlockReadiness": "data/travelpayouts-unlock-readiness.json",
   "latestObservedTraffic": {
-    "observedAt": "2026-10-07T11:22:01Z",
+    "observedAt": "2026-10-07T14:32:48Z",
     "windowDays": 30,
     "approximateUniqueVisitors": 53,
-    "pageViews": 314,
+    "pageViews": 330,
     "googleFamilyReferrals": 18,
     "facebookFamilyReferrals": 32,
-    "earthSearches": 30,
-    "zeroResultSearches": 7,
-    "windowOpens": 272,
-    "externalSourceOpens": 76,
+    "earthSearches": 83,
+    "zeroResultSearches": 36,
+    "windowOpens": 284,
+    "externalSourceOpens": 79,
     "travelOptionOpens": 8,
+    "topSearches": [
+      {
+        "value": "taitung jinzun",
+        "count": 5
+      },
+      {
+        "value": "arches",
+        "count": 2
+      },
+      {
+        "value": "chicago",
+        "count": 2
+      },
+      {
+        "value": "new",
+        "count": 2
+      },
+      {
+        "value": "new york",
+        "count": 2
+      }
+    ],
+    "topPlaces": [
+      {
+        "value": "kyoto-hanamikoji",
+        "count": 33
+      },
+      {
+        "value": "rovaniemi-santa-claus-village",
+        "count": 32
+      },
+      {
+        "value": "taitung-jinzun",
+        "count": 20
+      },
+      {
+        "value": "auckland-viaduct-harbour",
+        "count": 18
+      },
+      {
+        "value": "kyoto-kiyomizuzaka",
+        "count": 16
+      }
+    ],
     "interpretationBoundary": "Aggregate correlation evidence only. These counts do not identify individual visitors or prove channel causation, bookings, conversions or revenue."
   }
 }
