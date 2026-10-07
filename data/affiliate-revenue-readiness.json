@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T06:10:00Z",
+  "generatedAt": "2026-10-07T06:35:00Z",
   "purpose": "Make ERN monetization truth explicit: distinguish research coverage from links that can actually earn affiliate commission.",
   "earningRule": "ERN can earn only when a visitor follows a valid tracked affiliate link (or other approved tracked affiliate surface) and completes an eligible transaction under that partner's attribution and commission rules.",
   "states": {
@@ -151,21 +151,21 @@
     "Preserve one-best-provider-per-user-need presentation and commission-neutral Earth ranking."
   ],
   "currentPublicRevenueActive": {
-    "offerCount": 153,
-    "uniquePlaceCount": 148,
+    "offerCount": 168,
+    "uniquePlaceCount": 163,
     "byProgram": {
-      "viator": 124,
+      "viator": 139,
       "klook": 21,
       "tiqets": 5,
       "welcome-pickups": 3
     },
     "uniqueTrackedUrlsByProgram": {
-      "viator": 39,
+      "viator": 46,
       "klook": 10,
       "tiqets": 4,
       "welcome-pickups": 3
     },
     "definition": "Verified current affiliate offers exposed through ERN's public travel-offer layer, backed by an enabled current affiliate partner, and attached to a currently HEALTHY LIVE_VIDEO / LIVE_IMAGE / EXTERNAL_LIVE ERN place across core or supplemental discovery.",
-    "note": "Expanded exact destination-level Viator revenue coverage across Barbados, Bermuda, St. Maarten, Cyprus, Gibraltar, Queenstown and Great Smoky Mountains/Gatlinburg using ERN's already owner-verified Viator affiliate identity. Counts are reconciled against the same current-offer, active-partner and healthy-source rules used by release preflight. Commercial placement remains downstream from Earth discovery and commission-neutral for ranking."
+    "note": "Expanded exact destination-level Viator revenue coverage across Lucerne, Cancún, Yellowstone National Park, Mykonos, Ushuaia, Longyearbyen/Svalbard and Kruger National Park using ERN's already owner-verified Viator affiliate identity. Each exact destination page was independently rechecked; manualOpenVerified remains false for these newly reused direct-partner URLs. Commercial placement remains downstream from Earth discovery and commission-neutral for ranking."
   }
 }
