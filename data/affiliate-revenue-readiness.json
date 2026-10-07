@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T01:50:02Z",
+  "generatedAt": "2026-10-07T02:51:50Z",
   "purpose": "Make ERN monetization truth explicit: distinguish research coverage from links that can actually earn affiliate commission.",
   "earningRule": "ERN can earn only when a visitor follows a valid tracked affiliate link (or other approved tracked affiliate surface) and completes an eligible transaction under that partner's attribution and commission rules.",
   "states": {
@@ -144,9 +144,27 @@
     "doNotPromiseCommissionOnEveryPurchase": true
   },
   "nextAutonomousWork": [
-    "Keep expanding useful commercial coverage, but label every opportunity by revenue-readiness state.",
+    "Keep the public revenue-active count synchronized with current verified travel offers and enabled partners.",
     "Prefer converting a small number of high-fit existing partner opportunities into verified exact links over accumulating undifferentiated partner names.",
     "Do not activate direct partner programs until owner approval/account acceptance is real.",
     "Preserve one-best-provider-per-user-need presentation and keep alternative programs as fallback research."
-  ]
+  ],
+  "currentPublicRevenueActive": {
+    "offerCount": 31,
+    "uniquePlaceCount": 31,
+    "byProgram": {
+      "viator": 6,
+      "klook": 17,
+      "tiqets": 5,
+      "welcome-pickups": 3
+    },
+    "uniqueTrackedUrlsByProgram": {
+      "viator": 5,
+      "klook": 11,
+      "tiqets": 4,
+      "welcome-pickups": 3
+    },
+    "definition": "Verified current affiliate offers exposed through ERN's public travel-offer layer and backed by an enabled, current affiliate partner.",
+    "note": "This is the public revenue-capable offer count, not the commercial research-opportunity count. Eligible commission still depends on click attribution, an eligible purchase and partner rules."
+  }
 }

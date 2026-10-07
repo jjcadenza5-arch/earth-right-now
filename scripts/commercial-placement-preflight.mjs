@@ -55,6 +55,13 @@ for(const [program,count] of Object.entries(verifiedTpByProgram)){
 }
 const activationViator=(activation?.waves||[]).flatMap(w=>w?.programs||[]).find(p=>p?.id==="viator");
 if(revenueReadiness?.currentVerifiedEvidence?.viator?.relationshipActive!==(activationViator?.state==="ACTIVE_TRACKED_LINK_CREATED"))fail.push("affiliate revenue readiness Viator state drift");
+const publicRevenueActiveOffers=offers.filter(o=>o?.affiliate&&currentTravelOffer(o,{now})&&partnerMap.get(o.partnerId)?.active);
+const publicRevenueActiveByProgram={};
+for(const o of publicRevenueActiveOffers)publicRevenueActiveByProgram[o.partnerId]=(publicRevenueActiveByProgram[o.partnerId]||0)+1;
+if(revenueReadiness?.currentPublicRevenueActive?.offerCount!==publicRevenueActiveOffers.length)fail.push("affiliate revenue readiness public-active offer count drift");
+for(const [program,count] of Object.entries(publicRevenueActiveByProgram)){
+  if(revenueReadiness?.currentPublicRevenueActive?.byProgram?.[program]!==count)fail.push("affiliate revenue readiness public-active program count drift: "+program);
+}
 for(const x of opportunities.opportunities||[]){
   if(!x?.id||!x?.destination||!x?.partnerCandidate||!x?.state)fail.push("invalid commercial opportunity record");
   if(x?.url||x?.trackedUrl||x?.public===true)fail.push("planning opportunity contains public/tracked placement data: "+String(x?.id||"unknown"));
