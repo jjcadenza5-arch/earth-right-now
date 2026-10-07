@@ -10,5 +10,5 @@ const extra=await (await get(base+"/data/search-supplemental.json")).json();
 if(!Array.isArray(core)||!Array.isArray(extra))throw new Error("production catalogs are not arrays");
 if(extra.length<400)throw new Error("production supplemental catalog unexpectedly small: "+extra.length);
 const ids=new Set([...core,...extra].map(x=>x?.id).filter(Boolean));
-for(const id of ["taiwan-taitung-jinzun-live","norway-oslo-port-live","iceland-akureyri-port-live","germany-helgoland-harbor-live","south-africa-kruger-orpen-live"])if(!ids.has(id))throw new Error("production catalog missing expected reconciled source: "+id);
-console.log(JSON.stringify({ok:true,homeRevision:"20261007c",core:core.length,supplemental:extra.length,combined:core.length+extra.length,checked:[...ids].filter(id=>["taiwan-taitung-jinzun-live","norway-oslo-port-live","iceland-akureyri-port-live","germany-helgoland-harbor-live","south-africa-kruger-orpen-live"].includes(id))},null,2));
+for(const id of ["taitung-jinzun","norway-oslo-port-live","iceland-akureyri-port-live","germany-helgoland-harbor-live","south-africa-kruger-orpen-live"])if(!ids.has(id))throw new Error("production catalog missing expected reconciled source: "+id);
+console.log(JSON.stringify({ok:true,homeRevision:"20261007c",core:core.length,supplemental:extra.length,combined:core.length+extra.length,checked:[...ids].filter(id=>["taitung-jinzun","norway-oslo-port-live","iceland-akureyri-port-live","germany-helgoland-harbor-live","south-africa-kruger-orpen-live"].includes(id))},null,2));
