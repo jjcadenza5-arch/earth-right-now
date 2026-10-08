@@ -8597,3 +8597,35 @@ The source-backed Watch Earth visual floor was raised from 12 to 15 while preser
 4. Continue repeated genuine zero-result research without promoting standby, stale or context-only pages as live.
 5. Continue qualified organic discovery and deep-link sharing work using real analytics; do not claim sharing growth until successful share/copy events occur.
 6. Preserve the strict 575 KB ceiling and same-SHA Pages + Operations + production-domain verification rule for every substantial visitor-facing checkpoint.
+
+
+## Viewer fidelity repair checkpoint — 2026-10-08 03:44 UTC
+
+### Owner-visible issue repaired
+Owner screenshots exposed two visitor-facing viewer problems:
+- CURRENT IMAGE sources could appear visually over-cropped/oversized in Safari instead of preserving the full provider frame.
+- **Nearby on Earth** and **More like this** could repeat the same places, reducing discovery value.
+
+### Production fix
+- CURRENT IMAGE viewer media now uses an explicit whole-frame image class with `width/height:auto`, bounded `max-width/max-height:100%`, and `object-fit:contain`.
+- This rule applies only to refreshable current images; live-video behavior is unchanged.
+- Related-place selection now excludes every place already shown in **Nearby on Earth**.
+- The second row therefore adds genuinely different continuation options instead of repeating the first row.
+
+### Performance discipline
+- Initial implementations correctly failed ERN's strict app-size guard at 100106 bytes, then 100041 bytes, then 100003 bytes.
+- The 100 KB app ceiling was never raised.
+- The repair was compacted by shortening internal-only names and removing one unused local value; no visitor behavior, accessibility semantics, truth logic or safeguard was removed.
+- Final candidate passed the existing release gate at or below the strict app budget.
+
+### Canonical validated production state
+- Production content SHA: `9bc459a3704201117cc0bf70c6b5eb76b389a6b7`.
+- **Deploy ERN to GitHub Pages #2883**: SUCCESS.
+- **ERN Operations Check #1643**: SUCCESS.
+- **ERN JavaScript Syntax Check #1172**: SUCCESS.
+- Pages and Operations validated the same content SHA.
+- Pages completed **Verify deployed visitor reality sync** successfully against `earthrightnow.app`.
+- Production reality verification now also checks the whole-frame current-image CSS contract and recommendation deduplication markers.
+
+### Next autonomous lane
+Resume the prior quality/business/traffic expansion path only after preserving this viewer fidelity contract.
