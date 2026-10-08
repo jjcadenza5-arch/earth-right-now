@@ -8629,3 +8629,80 @@ Owner screenshots exposed two visitor-facing viewer problems:
 
 ### Next autonomous lane
 Resume the prior quality/business/traffic expansion path only after preserving this viewer fidelity contract.
+
+
+## Kīlauea current-view + planning utility checkpoint — 2026-10-08 04:14 UTC
+
+### Production-validated content state
+- Validated production content SHA: `164575b8107c6afa496c98e91c0601792c8b0a2d`.
+- **Deploy ERN to GitHub Pages #2886**: SUCCESS.
+- **ERN Operations Check #1647**: SUCCESS.
+- **ERN JavaScript Syntax Check #1175**: SUCCESS.
+- Pages and Operations validated the exact same content SHA.
+- Pages **Verify deployed visitor reality sync**: SUCCESS against `earthrightnow.app`.
+- Pages **Verify deployed social preview metadata**: SUCCESS.
+- This supersedes the prior validated production content SHA `9bc459a3704201117cc0bf70c6b5eb76b389a6b7`.
+
+### Visitor-side expansion
+Existing `kilauea-summit` was upgraded in place from an external-live handoff to an inside-ERN provider-authorized **LIVE_IMAGE** current view:
+- source: USGS / Hawaiian Volcano Observatory V3cam
+- exact current image: `https://volcanoes.usgs.gov/cams/V3cam/images/M.jpg`
+- official evidence page: `https://www.usgs.gov/media/webcams/v3cam-kilauea-volcano-hawaii-south-halemaumau-crater`
+- permission basis: **USGS Public Domain**
+- playback: `IMAGE_REFRESH`
+- no duplicate destination/source row was created
+- existing whole-frame CURRENT IMAGE viewer fidelity contract is preserved
+
+Independent recheck before promotion confirmed the V3cam current image was live and timestamped 2026-10-07 17:09 HST, matching the current production window.
+
+### Business-side utility paired downstream
+Added one optional, current Viator planning action for `kilauea-summit`:
+- offer id: `viator-kilauea-volcanoes-national-park-public`
+- destination scope: Kīlauea / Hawaiʻi Volcanoes National Park
+- current product evidence: Viator Volcanoes National Park Tour
+- tracked URL reuses ERN's already owner-verified Viator identity `P00322254 / mcid 42383`
+- `manualOpenVerified=false` remains explicit
+- commercial availability cannot affect Earth ranking or source inclusion
+
+Production verification now requires the Kīlauea current-image binding and the Kīlauea planning path with the ranking-independence disclosure.
+
+### Revenue-readiness reconciliation
+Adding the Kīlauea source-eligible offer correctly triggered ERN's commercial bookkeeping guard. Canonical revenue-readiness was recomputed from the actual current catalog:
+- public revenue-active offers: **226**
+- eligible places covered: **220**
+- Viator offers: **197**
+- Viator unique tracked URLs: **91**
+- Klook: 21 offers / 10 unique tracked URLs
+- Tiqets: 5 offers / 4 unique tracked URLs
+- Welcome Pickups: 3 offers / 3 unique tracked URLs
+
+The guard was not bypassed.
+
+### Provider staging safety preserved
+A first evidence-registry mutation was rejected by Operations because it set staging flags as though that registry itself could authorize promotion.
+Correction:
+- provider-generated/current-image staging remains fail-closed
+- `promotionAllowed=false`
+- `catalogMutationAllowed=false`
+- `automaticGenerationAllowed=false`
+- review evidence is recorded separately from editorial catalog mutation
+- Operations #1646 validated the corrected staging contract before the final same-SHA release
+
+### Real traffic signal
+Latest Operations observation shows current-image destinations are receiving clean-v2 opens:
+- Ruapehu: 8
+- Taranaki Maunga: 6
+- Yellowstone Biscuit Basin: 4
+- Denpasar: 3
+- Kyoto Kifune Shrine: 3
+
+This supports continuing source-backed current-image quality/depth rather than indiscriminate catalog-count growth. Treat these as aggregate directional evidence only, not causal attribution or conversion evidence.
+
+### Next autonomous lane
+1. Continue provider-authorized current-image expansion only where exact live/current endpoint + rights/attribution are independently verified.
+2. Prefer upgrades of existing catalog rows to preserve lean-core headroom.
+3. Use clean-v2 destination opens and repeated zero-result clusters to choose visitor/business expansion targets.
+4. Continue qualified organic traffic work through useful crawlable destination/collection/country paths, internal continuation and real sharing behavior.
+5. Do not claim social/share growth until successful share/copy events appear.
+6. Keep affiliate/program unlocks event-driven and no paid ranking.
+7. Preserve same-SHA Pages + Operations + production-domain verification for every substantial visitor-facing checkpoint.
