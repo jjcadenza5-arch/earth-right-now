@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T01:50:00Z",
+  "generatedAt": "2026-10-08T01:58:00Z",
   "publicActivationAllowed": false,
-  "healthySearchablePlaceBaseline": 314,
+  "healthySearchablePlaceBaseline": 751,
   "programs": [
     {
       "program": "kiwitaxi",
@@ -236,9 +236,17 @@
   ],
   "safeguards": [
     "No place is commercially activated from this matrix.",
-    "Exact tracked link and current destination coverage must be manually verified.",
+    "Exact tracked link and current destination coverage must be manually or independently verified under the program-specific ERN rules.",
     "One useful option per intent is preferred before adding duplicates.",
     "Commercial candidacy never changes ERN source ranking or truth.",
-    "Traffic-gated stay programs remain excluded from this matrix until Travelpayouts unlocks them."
-  ]
+    "Traffic-gated stay programs remain excluded from this matrix until the partner exposes usable access.",
+    "The 751-place production baseline supersedes the historical 314-place snapshot; program lists are selective candidates, not a complete coverage census.",
+    "Clean aggregate destination demand may raise review priority but cannot bypass source, partner, disclosure or currentness gates."
+  ],
+  "productionReality": {
+    "healthySearchablePlaces": 751,
+    "countryTerritoryLabels": 130,
+    "mode": "DEMAND_LED_UTILITY_MATRIX",
+    "rule": "This matrix is a private candidate-coverage aid only. Do not infer public activation from list membership. Prioritize destinations with observed visitor intent or a clearly useful planning gap; never return to catalog-count expansion."
+  }
 }
