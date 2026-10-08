@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T07:36:00Z",
+  "generatedAt": "2026-10-08T07:37:00Z",
   "objective": "Balance visitor value, organic audience growth and sustainable funding. Preserve Open Live Source as an honest source handoff; monetize only around useful planning and voluntary source-owner partnerships, never by changing Earth ranking, source truth or currentness.",
   "currentMilestone": "GROW_ORGANIC_VISITORS_REPEAT_USE_AND_USEFUL_TRIP_PLANNING_WHILE_SEEKING_FIRST_PARTNER_CONFIRMED_COMMISSION",
   "signals": [
@@ -117,6 +117,7 @@
     "Do not treat Travelpayouts promotional earnings examples as ERN forecasts."
   ],
   "nextOperatingPriorities": [
+    "Expand globally from strong first-party/public-authority current sources rather than repeatedly revisiting weak unresolved gaps.",
     "Grow qualified entry traffic through crawlable destination, collection and country paths chosen from actual search/open demand.",
     "Use the new Thailand discovery collection as a demand-led organic/AI-search entry path without changing source eligibility.",
     "Rotate selective manual social sharing toward deep destination/collection links instead of only the homepage; compare aggregate referral behavior without inferring causation.",
@@ -148,5 +149,13 @@
     "openLiveSourceRewritingAllowed": false,
     "futureControlledExperimentOnly": true,
     "principle": "Funding may grow through explicit planning utility, but Drive must not turn ERN into an affiliate-first travel site."
+  },
+  "globalExpansion": {
+    "currentMode": "STRONG_SOURCE_FIRST",
+    "principle": "Expand toward places with trustworthy current sources instead of repeatedly forcing unresolved gaps.",
+    "newestNetwork": "Tokyo Metropolitan Government Izu/Ogasawara port live cameras",
+    "newestPlaces": 5,
+    "commercialTreatment": "PUBLIC_AUTHORITY_TRAFFIC_ONLY_BY_DEFAULT",
+    "planningRule": "Add commercial planning only where a real useful downstream option exists; a new Earth source does not require monetization."
   }
 }
