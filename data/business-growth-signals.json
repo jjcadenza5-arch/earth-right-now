@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T17:21:08Z",
+  "generatedAt": "2026-10-08T02:05:00Z",
   "objective": "Balance visitor value, organic audience growth and sustainable commission funding. Use first-party aggregate behavior and partner-confirmed evidence; never let commercial value change Earth ranking, source truth or currentness.",
   "currentMilestone": "GROW_ORGANIC_VISITORS_REPEAT_USE_AND_USEFUL_TRIP_PLANNING_WHILE_SEEKING_FIRST_PARTNER_CONFIRMED_COMMISSION",
   "signals": [
@@ -74,11 +74,11 @@
     "noAutomaticProgramActivation": true
   },
   "currentOperatingEvidence": {
-    "evidenceSource": "ERN Operations #1601 aggregate analytics snapshot / traffic semantics v2 production checkpoint",
+    "evidenceSource": "ERN Operations #1612 aggregate analytics snapshot / traffic semantics v2 production checkpoint",
     "windowDays": 30,
-    "observedAt": "2026-10-07T17:21:08Z",
-    "approximateUniqueVisitors": 53,
-    "pageViews": 340,
+    "observedAt": "2026-10-08T01:29:29Z",
+    "approximateUniqueVisitors": 54,
+    "pageViews": 344,
     "googleReferralViews": 18,
     "facebookReferralViews": 32,
     "earthSearches": 87,
@@ -88,8 +88,9 @@
     "travelOptionOpens": 9,
     "metricSemanticsVersion": 2,
     "cleanDestinationAttributionStartsAt": "2026-10-07T14:55:03Z",
-    "interpretation": "ERN has real discovery and planning activity. Clean v2 destination-open attribution is now non-empty, but the sample remains small; continue using it only as aggregate directional evidence while prioritizing visitor utility, repeat exploration and trustworthy source maintenance.",
-    "caveat": "Privacy-preserving rolling aggregate evidence only. Clicks do not prove bookings, conversions, commission or revenue; destination ranking cannot use commercial value."
+    "interpretation": "ERN has real discovery and planning activity. Clean v2 destination-open attribution remains non-empty, while successful share/copy activity is still zero at this snapshot. Continue treating destination ranking and commercial planning signals as aggregate directional evidence only; prioritize visitor utility, repeat exploration and trustworthy source maintenance.",
+    "caveat": "Privacy-preserving rolling aggregate evidence only. Clicks do not prove bookings, conversions, commission or revenue; destination ranking cannot use commercial value.",
+    "shareClicks": 0
   },
   "balanceRules": [
     "Visitor value comes first within each experience: show the truthful Earth window before planning actions.",
