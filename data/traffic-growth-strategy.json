@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T07:18:00Z",
+  "generatedAt": "2026-10-08T07:41:00Z",
   "objective": "Increase qualified ERN discovery traffic while preserving source truth, privacy, lean-core limits and commercial-neutral ranking.",
   "evidenceBaseline": {
     "source": "ERN Operations #1672",
@@ -75,7 +75,8 @@
     "Does the 1500 ms settle window reduce progressive typing-fragment zero results in future windows?",
     "Does the new Phuket source convert prior Phuket zero-result demand into successful place/source opens?",
     "Which unresolved destination clusters repeat enough to justify deeper source research?",
-    "Which source owners accumulate repeated outbound value plus a concrete visitor benefit sufficient for human partnership review?"
+    "Which source owners accumulate repeated outbound value plus a concrete visitor benefit sufficient for human partnership review?",
+    "Can qualified traffic and planning intent grow under explicit manual monetization before any Drive experiment is needed?"
   ],
   "searchMeasurement": {
     "rawZeroResultCountsPreserved": true,
@@ -92,5 +93,14 @@
     "principle": "Raw zero-result analytics remain historical evidence, but source-research priority must distinguish destination gaps from typing progress, venue/utility intent and already-resolved terms.",
     "destinationResearchClustering": true,
     "clusterPrinciple": "Multiple spellings/languages for one destination count as one research intention while every raw aggregate search term remains preserved."
+  },
+  "monetizationControl": {
+    "travelpayoutsDriveState": "HOLD_SITE_WIDE_AUTOMATION",
+    "explicitPlanningLinksRemainAllowed": true,
+    "automaticLinkRewritingAllowed": false,
+    "automaticPlacementAllowed": false,
+    "targetedOffersAllowed": false,
+    "futureExperimentRequiresOwnerApproval": true,
+    "reason": "Protect live-discovery identity and keep traffic-quality measurement interpretable."
   }
 }
