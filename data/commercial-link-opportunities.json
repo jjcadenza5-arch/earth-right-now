@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T04:47:00Z",
+  "generatedAt": "2026-10-08T05:52:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -827,9 +827,16 @@
       "intent": "activities",
       "priority": "P2",
       "reason": "A verified Karakol mountain/ski camera would create a strong Central Asia trip-planning bridge; Viator account inventory must be checked before activation.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one Karakol/Issyk-Kul Viator destination-level tracked link and verify it manually before public activation.",
-      "unlockedBySourceAt": "2026-10-03T12:45:00Z"
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate planning clicks and keep the action downstream from Earth discovery; do not add duplicate commercial density without visitor evidence.",
+      "unlockedBySourceAt": "2026-10-03T12:45:00Z",
+      "trackingUrl": "https://www.viator.com/tours/Bishkek/The-ultimate-5-days-voyage-around-Issyk-Kul-lake/d50202-185368P11?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-08T05:52:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's owner-verified Viator partner ID P00322254 / mcid 42383.",
+      "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current 2026 Issyk-Kul inventory independently rechecked; itinerary explicitly includes Karakol and Karakol Ski Base.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-ala-archa-future",
@@ -2712,8 +2719,15 @@
       "intent": "activities",
       "priority": "P2",
       "reason": "High-value scenic destination with hiking/mountain visitor intent.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Check Kandersteg/Oeschinensee inventory; do not substitute generic Switzerland results."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate planning clicks and keep the action downstream from Earth discovery; do not add duplicate commercial density without visitor evidence.",
+      "trackingUrl": "https://www.viator.com/tours/Interlaken/BLUELAKE-Blausee-with-Thunlake-photostop-morning-tour/d5011-33924P2?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-08T05:52:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's owner-verified Viator partner ID P00322254 / mcid 42383.",
+      "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current 2026 Kander Valley inventory independently rechecked; active tour references the Oeschinensee gondola and Kandersteg area.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-waikiki",

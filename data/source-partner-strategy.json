@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:47:00Z",
+  "generatedAt": "2026-10-08T05:52:00Z",
   "title": "ERN Source Partner Strategy",
   "productPrinciple": "See Live → trust the source → discover the place → optionally plan or buy.",
   "sourceButtonInvariant": "Open Live Source must remain the genuine provider handoff. It is not a disguised ad, affiliate redirect or paid-ranking mechanism.",
@@ -40,11 +40,11 @@
     "Every commercial relationship must be disclosed where a visitor could reasonably interpret it as commercial."
   ],
   "currentEvidence": {
-    "observationSource": "ERN Operations #1651 / 30-day aggregate analytics",
-    "observedAt": "2026-10-08T04:38:56Z",
+    "observationSource": "ERN Operations #1655 / rolling aggregate analytics",
+    "observedAt": "2026-10-08T05:06:00Z",
     "externalSourceOpens": 81,
     "travelOptionOpens": 10,
-    "caveat": "Aggregate directional evidence only; clicks do not prove source playback, bookings, endorsement or revenue."
+    "caveat": "Aggregate directional evidence only. Source opens and planning clicks do not prove bookings, revenue, endorsement or source-owner interest."
   },
   "initialObservedCandidates": [
     {
@@ -68,16 +68,16 @@
       "provider": "Karakol Ski Base",
       "sourceOwnerType": "mountain_resort",
       "observedSourceOpens": 2,
-      "state": "OBSERVE",
-      "reason": "Direct place/source fit; future lift, stay, lesson or visitor-benefit partnership is plausible after traffic matures."
+      "state": "OBSERVE_WITH_PLANNING_UTILITY",
+      "reason": "Observed source demand plus a current Karakol/Issyk-Kul planning path now creates a measurable See Live → Decide → Go bridge. Still no source-owner partnership claim."
     },
     {
       "sourceId": "oeschinensee-official",
       "provider": "Oeschinensee",
       "sourceOwnerType": "destination_attraction",
       "observedSourceOpens": 2,
-      "state": "OBSERVE",
-      "reason": "Direct destination operator relationship could support tickets/transport/visitor benefits without changing Earth ranking."
+      "state": "OBSERVE_WITH_PLANNING_UTILITY",
+      "reason": "Observed source demand plus a current Kandersteg/Oeschinensee planning path creates a measurable visitor-utility bridge. Partnership outreach remains premature."
     },
     {
       "sourceId": "cancun-live-aqua-beach",
@@ -120,7 +120,7 @@
       "reason": "Strong outbound engagement, but source-platform traffic alone does not imply a local visitor-benefit partnership. Keep source handoff honest and qualify separately."
     }
   ],
-  "notOutreachReadyReason": "ERN now has useful source-specific demand evidence and 10 aggregate planning opens, but the traffic base is still early. Continue qualification; do not begin broad outreach until repeated source-owner value and a clear visitor benefit are visible.",
+  "notOutreachReadyReason": "A few source-owner candidates now have both real outbound demand and useful downstream planning paths, but ERN traffic remains early. Continue measuring repeated value before any broad outreach.",
   "next": [
     "Keep source-specific outbound analytics active.",
     "Add provider/source-owner classification to future private business reports.",
