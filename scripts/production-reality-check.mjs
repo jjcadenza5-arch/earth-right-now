@@ -53,12 +53,15 @@ const jinzunOffer=Array.isArray(travelOffers)?travelOffers.find(o=>o?.id==="viat
 const ruapehuOffer=Array.isArray(travelOffers)?travelOffers.find(o=>o?.id==="viator-ruapehu-sky-waka-public"):null;
 const kilaueaOffer=Array.isArray(travelOffers)?travelOffers.find(o=>o?.id==="viator-kilauea-volcanoes-national-park-public"):null;
 const mahoOffer=Array.isArray(travelOffers)?travelOffers.find(o=>o?.id==="viator-maho-beach-public"):null,yehliuOffer=Array.isArray(travelOffers)?travelOffers.find(o=>o?.id==="viator-yehliu-geopark-public"):null;
+const karakolOffer=Array.isArray(travelOffers)?travelOffers.find(o=>o?.id==="viator-karakol-issyk-kul-public"):null,oeschOffer=Array.isArray(travelOffers)?travelOffers.find(o=>o?.id==="viator-oeschinensee-kandersteg-public"):null;
 const denpasarOffer=Array.isArray(travelOffers)?travelOffers.find(o=>o?.id==="viator-denpasar-city-temples-public"):null;
 if(!jinzunOffer||jinzunOffer.verified!==true||jinzunOffer.affiliate!==true||jinzunOffer.partnerId!=="viator"||!String(jinzunOffer.url||"").includes("pid=P00322254"))throw new Error("production Jinzun commission-capable offer is not ready");
 if(!ruapehuOffer||ruapehuOffer.verified!==true||ruapehuOffer.affiliate!==true||ruapehuOffer.partnerId!=="viator"||!String(ruapehuOffer.url||"").includes("41075P14"))throw new Error("production Ruapehu demand-led planning offer is not ready");
 if(!kilaueaOffer||kilaueaOffer.verified!==true||kilaueaOffer.affiliate!==true||kilaueaOffer.partnerId!=="viator"||!String(kilaueaOffer.url||"").includes("196601P1"))throw new Error("production Kilauea planning offer is not ready");
 if(!mahoOffer||mahoOffer.verified!==true||mahoOffer.partnerId!=="viator"||!String(mahoOffer.url||"").includes("198496P3"))throw new Error("production Maho planning offer is not ready");
 if(!yehliuOffer||yehliuOffer.verified!==true||yehliuOffer.partnerId!=="viator"||!String(yehliuOffer.url||"").includes("174468P7"))throw new Error("production Yehliu planning offer is not ready");
+if(!karakolOffer||karakolOffer.verified!==true||karakolOffer.partnerId!=="viator"||!String(karakolOffer.url||"").includes("185368P11"))throw new Error("production Karakol planning offer is not ready");
+if(!oeschOffer||oeschOffer.verified!==true||oeschOffer.partnerId!=="viator"||!String(oeschOffer.url||"").includes("33924P2"))throw new Error("production Oeschinensee planning offer is not ready");
 if(!denpasarOffer||denpasarOffer.verified!==true||denpasarOffer.affiliate!==true||denpasarOffer.partnerId!=="viator"||!String(denpasarOffer.url||"").includes("71852P16"))throw new Error("production Denpasar demand-led planning offer is not ready");
 const ruapehuPage=await waitText(base+"/places/nz-ruapehu/",t=>t.includes("Mount Ruapehu"),"Ruapehu destination page");
 if(!ruapehuPage.includes('data-offer-id="viator-ruapehu-sky-waka-public"')||!ruapehuPage.includes("Affiliate availability never affects ERN source ranking"))throw new Error("production Ruapehu page is missing the demand-led planning path or neutral-ranking disclosure");
@@ -70,6 +73,10 @@ const yehliuSource=all.find(s=>s?.id==="taiwan-yehliu-live"),yehliuPlaybackAge=y
 const yehliuPage=await waitText(base+"/places/taiwan-yehliu/",t=>t.includes("Yehliu"),"Yehliu destination page");
 if(yehliuPageCurrent&&!yehliuPage.includes('data-offer-id="viator-yehliu-geopark-public"'))throw new Error("production current Yehliu page is missing its planning action");
 if(!yehliuPageCurrent&&yehliuPage.includes('data-offer-id="viator-yehliu-geopark-public"'))throw new Error("production playback-stale Yehliu page must suppress its planning action");
+const karakolPage=await waitText(base+"/places/karakol-ski-base/",t=>t.includes("Karakol"),"Karakol destination page");
+if(!karakolPage.includes('data-offer-id="viator-karakol-issyk-kul-public"'))throw new Error("production Karakol page is missing its planning action");
+const oeschPage=await waitText(base+"/places/oeschinensee/",t=>t.includes("Oeschinensee"),"Oeschinensee destination page");
+if(!oeschPage.includes('data-offer-id="viator-oeschinensee-kandersteg-public"'))throw new Error("production Oeschinensee page is missing its planning action");
 const kilaueaPage=await waitText(base+"/places/kilauea-summit/",t=>t.includes("Kīlauea"),"Kilauea destination page");
 if(!kilaueaPage.includes('data-offer-id="viator-kilauea-volcanoes-national-park-public"')||!kilaueaPage.includes("Affiliate availability never affects ERN source ranking"))throw new Error("production Kilauea page is missing its planning path or neutral-ranking disclosure");
 const denpasarPage=await waitText(base+"/places/denpasar-city-live/",t=>t.includes("Denpasar"),"Denpasar destination page");
