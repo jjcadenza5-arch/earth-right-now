@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-08T04:33:00Z",
+  "purpose": "Preserve detailed rights/currentness evidence outside ERN's lean startup catalog. Runtime source rows retain concise non-empty evidence markers; this file is audit evidence and is not a source of automatic permission or promotion.",
+  "items": [
+    {
+      "id": "pattaya-city-live",
+      "rightsBasisDetail": "Official Pattaya City public CCTV streaming surface; ERN remains LINK_ONLY / EXTERNAL and does not restream.",
+      "freshnessEvidenceDetail": "Pattaya City's official CCTV portal is reachable again and lists 600 public cameras, including multiple Pattaya Beach/Jomtien targets. Exact individual-camera public playback could not be independently verified in this pass, so ERN remains fail-closed.",
+      "checkedAt": "2026-10-07T04:40:43Z",
+      "playbackVerifiedAt": null,
+      "sourceUrl": "https://livestream.pattaya.go.th/",
+      "officialUrl": null,
+      "embedUrl": null
+    },
+    {
+      "id": "verbier",
+      "rightsBasisDetail": "Evidence on file.",
+      "freshnessEvidenceDetail": "Official Verbier tourism webcam page currently confirms live, continuously updated mountain and village views.",
+      "checkedAt": "2026-10-07T13:38:00Z",
+      "playbackVerifiedAt": "2026-10-05T02:11:49.173Z",
+      "sourceUrl": "https://www.verbier.ch/en/practice/live/webcams/",
+      "officialUrl": "https://www.verbier.ch/en/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag"
+    },
+    {
+      "id": "taitung-jinzun",
+      "rightsBasisDetail": "Evidence on file.",
+      "freshnessEvidenceDetail": "Official Jinzun page confirms 24-hour live camera; human playback proof 2026-10-02T00:45Z.",
+      "checkedAt": "2026-10-07T14:07:00Z",
+      "playbackVerifiedAt": "2026-10-02T00:45:00Z",
+      "sourceUrl": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+      "officialUrl": null,
+      "embedUrl": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw"
+    },
+    {
+      "id": "taiwan-yehliu-live",
+      "rightsBasisDetail": "Official Tourism Administration live-camera page with exact standard YouTube embed; preserve provider/YouTube branding and do not restream.",
+      "freshnessEvidenceDetail": "Official North Coast Tourism Administration site continues to list Yehliu Geopark as a live camera; exact deployed player was human-confirmed current on 2026-10-05.",
+      "checkedAt": "2026-10-08T04:22:00Z",
+      "playbackVerifiedAt": "2026-10-05T10:05:03.929Z",
+      "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007411",
+      "officialUrl": "https://www.northguan-nsa.gov.tw/user/main.aspx?Lang=2",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/ZjuY4qKaj40"
+    },
+    {
+      "id": "taiwan-heping-island-live",
+      "rightsBasisDetail": "Official Tourism Administration live-camera page with exact standard YouTube embed; preserve provider/YouTube branding and do not restream.",
+      "freshnessEvidenceDetail": "Official North Coast Tourism Administration site continues to list Heping Island Geopark as a live camera; exact deployed player was human-confirmed current on 2026-10-05.",
+      "checkedAt": "2026-10-08T04:22:00Z",
+      "playbackVerifiedAt": "2026-10-05T10:40:42.619Z",
+      "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007412",
+      "officialUrl": "https://www.northguan-nsa.gov.tw/user/main.aspx?Lang=2",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/g-T8NbF9xlQ"
+    }
+  ]
+}
