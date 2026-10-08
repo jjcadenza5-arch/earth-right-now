@@ -179,5 +179,53 @@
       "outreach": "NO_UNAPPROVED_OUTREACH",
       "publication": "DO_NOT_PUBLISH_UNVERIFIED_OFFERS"
     }
+  },
+  "destinationPlanningQualification": {
+    "status": "PRIVATE_QUALIFICATION_NOT_PUBLIC_OFFERS",
+    "priority": "P1",
+    "regions": [
+      {
+        "name": "Tokyo Islands",
+        "places": [
+          "japan-izu-oshima",
+          "japan-hachijojima",
+          "japan-aogashima",
+          "japan-chichijima",
+          "japan-hahajima"
+        ],
+        "strategy": "Traffic-first for official port webcams; research voluntary boat/transit and accommodation planning only after relevant visitor intent",
+        "activeOffersAdded": 0
+      },
+      {
+        "name": "Chile and Patagonia",
+        "places": [
+          "chile-puerto-natales",
+          "chile-punta-arenas",
+          "chile-rapa-nui-mataveri"
+        ],
+        "strategy": "Check existing approved partner accounts for exact relevant activities, never generic destination monetization",
+        "activeOffersAdded": 0
+      },
+      {
+        "name": "African wildlife",
+        "places": [
+          "namibia-okaukuejo-waterhole",
+          "south-africa-kruger-orpen",
+          "south-africa-kruger-olifants"
+        ],
+        "strategy": "Government or conservation sources traffic-first; visitor planning limited to independently verified partner activity deep links",
+        "activeOffersAdded": 0
+      }
+    ],
+    "requirements": [
+      "verified exact tracked link in already-approved partner account",
+      "actual destination alignment",
+      "clear user-selected planning surface, separate from source handoff",
+      "source availability remains independent of monetization",
+      "owner approval before any new partner terms or outreach"
+    ],
+    "travelpayoutsDrive": "SITEWIDE_OFF_HOLD",
+    "automaticPlacement": false,
+    "automaticRewriting": false
   }
 }
