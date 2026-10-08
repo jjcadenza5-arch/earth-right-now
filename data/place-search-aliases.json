@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T16:14:00+07:00",
+  "updatedAt": "2026-10-08T16:51:00+07:00",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -598,7 +598,6 @@
       "伊豆大島",
       "大島",
       "Izu Ōshima",
-      "Izu Oshima",
       "Oshima Island",
       "大島港"
     ],
@@ -694,12 +693,10 @@
     ],
     "chile-vina-del-mar": [
       "Viña del Mar",
-      "Vina del Mar",
       "Ciudad Jardín Chile"
     ],
     "chile-pucon": [
       "Pucón",
-      "Pucon",
       "Araucanía Chile"
     ],
     "chile-puerto-natales": [
@@ -736,7 +733,6 @@
     ],
     "nz-taupo-lakefront": [
       "Taupō",
-      "Taupo",
       "Lake Taupo",
       "Taupō New Zealand"
     ],
@@ -772,7 +768,6 @@
     ],
     "new-zealand-lake-pukaki-lakestone": [
       "Lake Pūkaki",
-      "Lake Pukaki",
       "Aoraki Mount Cook",
       "Mackenzie Basin"
     ],
