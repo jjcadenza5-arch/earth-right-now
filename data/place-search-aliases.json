@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T08:22:00Z",
+  "updatedAt": "2026-10-08T09:18:00Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -630,6 +630,55 @@
       "Haha-jima",
       "Oki Port",
       "Ogasawara Hahajima"
+    ],
+    "antarctica-casey-station": [
+      "Casey Station",
+      "Casey Antarctic Station",
+      "Casey Research Station",
+      "Australian Antarctica Casey",
+      "ケーシー基地"
+    ],
+    "antarctica-davis-station": [
+      "Davis Station",
+      "Davis Antarctic Station",
+      "Davis Research Station",
+      "Australian Antarctica Davis",
+      "デービス基地"
+    ],
+    "antarctica-mawson-station": [
+      "Mawson Station",
+      "Mawson Antarctic Station",
+      "Mawson Research Station",
+      "Australian Antarctica Mawson",
+      "モーソン基地"
+    ],
+    "antarctica-macquarie-island": [
+      "Macquarie Island",
+      "Macquarie Island Station",
+      "Subantarctic Macquarie Island",
+      "マッコーリー島"
+    ],
+    "kilauea-summit": [
+      "Kīlauea",
+      "Kilauea Volcano",
+      "Halemaʻumaʻu",
+      "Halemaumau",
+      "Hawaiʻi Volcanoes National Park",
+      "キラウエア火山"
+    ],
+    "us-crater-lake-national-park": [
+      "Crater Lake",
+      "Sinnott Overlook",
+      "Crater Lake Oregon",
+      "Crater Lake webcam",
+      "クレーターレイク"
+    ],
+    "us-grand-canyon-yavapai": [
+      "Grand Canyon Yavapai",
+      "Yavapai Point",
+      "Yavapai Observation Station",
+      "Grand Canyon South Rim",
+      "グランドキャニオン"
     ]
   }
 }
