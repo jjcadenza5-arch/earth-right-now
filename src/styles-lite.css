@@ -7,3 +7,7 @@
 /* Editorial cards: visible keyboard focus, restrained reduced-motion behavior */
 .world-shelf-card:focus-visible,.window-card:focus-visible{outline:3px solid #84ded0;outline-offset:3px;z-index:3}
 @media(prefers-reduced-motion:reduce){.world-shelf-card,.window-card,.card-visual img{transition:none!important}.window-card:hover,.window-card:hover .card-visual img{transform:none}}
+
+/* Keep discovery-card text legible over varied licensed photography */
+.world-shelf-card h3,.world-shelf-card>small{text-shadow:0 1px 5px rgba(0,19,17,.5)}
+.world-shelf-links a:focus-visible{outline:3px solid #16766b;outline-offset:4px;border-radius:3px}
