@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:33:00Z",
+  "generatedAt": "2026-10-08T07:00:00Z",
   "purpose": "Increase qualified organic discovery, repeat exploration, deep-link sharing and useful downstream planning intent from the production-reconciled ERN catalog.",
   "currentSearchableHealthyPlaces": 752,
   "unlockTargets": [
@@ -99,8 +99,8 @@
     {
       "id": "demand-led-search-gaps",
       "priority": "P1",
-      "action": "Use privacy-safe aggregate zero-result triage to research real visitor demand. A query such as Chiang Mai may open a source-research lane, but no destination becomes public until source truth, currentness, rights and target identity independently pass ERN gates.",
-      "successSignal": "Repeated genuine visitor search gaps shrink through truthful source resolution rather than aliases or fabricated coverage."
+      "action": "Preserve raw privacy-safe zero-result counts, but use schema-v2 read-only triage to separate genuine destination gaps from progressive typing fragments, venue/utility intent, low-confidence partials and historical terms that now resolve. Only research-qualified destination demand may open a source-research lane.",
+      "successSignal": "Research effort increasingly targets repeated genuine destination gaps, while typing-progress noise and non-destination intent no longer inflate the source-gap backlog."
     },
     {
       "id": "first-30-seconds",
@@ -122,7 +122,7 @@
     }
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
-  "note": "Catalog scale is no longer the bottleneck. The traffic strategy now starts from 751 healthy searchable places and prioritizes first-impression quality, deep destination entry, repeat exploration, shareable place URLs, genuine repeated search gaps and useful downstream planning. Traffic never overrides source truth/currentness.",
+  "note": "Catalog scale is no longer the bottleneck. Traffic growth prioritizes first-impression quality, deep destination entry, repeat exploration, shareable URLs and research-qualified search gaps. Search analytics now waits 1500 ms before recording and preserves raw zero-result evidence while separating typing/venue noise from destination-source research. Traffic never overrides source truth/currentness.",
   "milestone": "752_PLACE_REALITY_RECONCILED_TRAFFIC_GROWTH",
   "currentBusinessCoverage": {
     "healthyPlaces": 752,
@@ -224,8 +224,10 @@
     "currentGapSummary": {
       "historicalZeroResultEvents": 39,
       "currentlyResolves": 8,
-      "genuineCurrentGaps": 29,
-      "lowConfidencePartial": 2
+      "previousUnqualifiedGenuineGapCount": 29,
+      "lowConfidencePartial": 2,
+      "status": "RECLASSIFICATION_ACTIVE_FROM_NEXT_OPERATIONS_PACKET",
+      "note": "The older 29-gap number mixed destination demand with progressive typing and venue/utility queries. Schema-v2 triage will report the qualified categories separately without rewriting raw history."
     }
   },
   "trafficMetricSemanticsVersion": 2,
@@ -241,7 +243,8 @@
       "Allow large image/snippet/video previews on generated indexable discovery pages to improve search-result presentation where engines choose to use them.",
       "Preserve multilingual Discover hreflang coverage with human-written collection labels rather than automatic translation.",
       "Continue Google Search Console + sitemap observation as the authoritative Google indexing feedback loop; IndexNow remains supplemental discovery submission and is never treated as proof of Google indexing.",
-      "Use the demand-led Thailand Live & Current Views collection as a truthful crawlable entry path while keeping the six-place country-hub threshold unchanged."
+      "Use the demand-led Thailand Live & Current Views collection as a truthful crawlable entry path while keeping the six-place country-hub threshold unchanged.",
+      "Use research-qualified destination gaps rather than raw zero-result count alone; exclude progressive typing fragments and non-destination/venue intent from automatic SEO/source expansion decisions."
     ],
     "avoid": [
       "Do not mass-produce thin city pages from keywords.",
