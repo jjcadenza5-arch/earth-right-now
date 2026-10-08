@@ -74,6 +74,15 @@ export const EDITORIAL_COLLECTION_LOCALES=Object.freeze({
   zh:{title:"泰国实时与当前视图",description:"浏览泰国各地经 ERN 验证的当前视图。"},
   es:{title:"Tailandia en directo y ahora",description:"Vistas ERN actuales y verificadas en Tailandia."}
  },
+ "tokyo-islands-live":{
+  en:{title:"Tokyo Islands Live",description:"Official live harbor windows across the Izu and Ogasawara islands."},
+  th:{title:"หมู่เกาะโตเกียวแบบสด",description:"ชมภาพท่าเรือสดอย่างเป็นทางการจากหมู่เกาะอิซุและโอกาซาวาระ"},
+  de:{title:"Tokios Inseln live",description:"Offizielle Live-Hafenansichten von den Izu- und Ogasawara-Inseln."},
+  fr:{title:"Îles de Tokyo en direct",description:"Vues officielles en direct des ports des îles Izu et Ogasawara."},
+  ja:{title:"東京の島々ライブ",description:"伊豆諸島・小笠原諸島の公式港湾ライブ映像。"},
+  zh:{title:"东京群岛直播",description:"来自伊豆群岛与小笠原群岛的官方港口直播视图。"},
+  es:{title:"Islas de Tokio en directo",description:"Vistas oficiales en directo de puertos en las islas Izu y Ogasawara."}
+ },
  "parks-protected-places":{
   en:{title:"Parks & Protected Places",description:"National parks, scenic areas, geoparks, reserves and protected landscapes."},
   th:{title:"อุทยานและพื้นที่คุ้มครอง",description:"อุทยานแห่งชาติ เขตทัศนียภาพ อุทยานธรณี เขตสงวน และภูมิประเทศที่ได้รับการคุ้มครอง"},
