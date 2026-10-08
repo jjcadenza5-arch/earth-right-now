@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T07:23:00Z",
+  "generatedAt": "2026-10-08T07:36:00Z",
   "objective": "Balance visitor value, organic audience growth and sustainable funding. Preserve Open Live Source as an honest source handoff; monetize only around useful planning and voluntary source-owner partnerships, never by changing Earth ranking, source truth or currentness.",
   "currentMilestone": "GROW_ORGANIC_VISITORS_REPEAT_USE_AND_USEFUL_TRIP_PLANNING_WHILE_SEEKING_FIRST_PARTNER_CONFIRMED_COMMISSION",
   "signals": [
@@ -81,7 +81,7 @@
     "noAutomaticProgramActivation": true
   },
   "currentOperatingEvidence": {
-    "evidenceSource": "ERN Operations #1670 aggregate analytics snapshot",
+    "evidenceSource": "ERN Operations #1688 aggregate analytics snapshot",
     "windowDays": 30,
     "observedAt": "2026-10-08T06:32:51Z",
     "approximateUniqueVisitors": 54,
@@ -112,7 +112,9 @@
     "Use travel_option_opened as planning-intent evidence only; never treat it as a booking or commission.",
     "Use partner-dashboard evidence for conversions and commission.",
     "Prefer converting existing active-program coverage over opening more programs until traffic and planning demand justify them.",
-    "Demand-led planning expansion should prioritize places with real source/destination engagement plus a current useful exact product; it must not influence Earth ranking."
+    "Demand-led planning expansion should prioritize places with real source/destination engagement plus a current useful exact product; it must not influence Earth ranking.",
+    "Travelpayouts Drive remains site-wide OFF; any future experiment must be planning-surface-only, owner-approved, reversible and must never rewrite Open Live Source.",
+    "Do not treat Travelpayouts promotional earnings examples as ERN forecasts."
   ],
   "nextOperatingPriorities": [
     "Grow qualified entry traffic through crawlable destination, collection and country paths chosen from actual search/open demand.",
@@ -135,5 +137,16 @@
     "rankingAffectedByCommercialValue": false,
     "bookingOrRevenueInferred": false,
     "evidence": "Reconciled from the same commercial-placement gates used by Operations after Phuket/Karon activation."
+  },
+  "travelpayoutsDrive": {
+    "state": "HOLD_SITE_WIDE_AUTOMATION",
+    "ownerObservedAt": "2026-10-08T07:20:00Z",
+    "automaticLinkRewritingAllowed": false,
+    "automaticPlacementAllowed": false,
+    "targetedOffersAllowed": false,
+    "keywordMonetizationAllowed": false,
+    "openLiveSourceRewritingAllowed": false,
+    "futureControlledExperimentOnly": true,
+    "principle": "Funding may grow through explicit planning utility, but Drive must not turn ERN into an affiliate-first travel site."
   }
 }
