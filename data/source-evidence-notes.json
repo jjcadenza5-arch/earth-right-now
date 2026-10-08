@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:33:00Z",
-  "purpose": "Preserve detailed rights/currentness evidence outside ERN's lean startup catalog. Runtime source rows retain concise non-empty evidence markers; this file is audit evidence and is not a source of automatic permission or promotion.",
+  "generatedAt": "2026-10-08T04:38:00Z",
+  "purpose": "Preserve detailed source/evidence prose outside ERN's lean startup catalog. Runtime rows retain concise visitor copy and non-empty evidence markers; this sidecar is audit evidence only and cannot authorize permission, truth, health or promotion.",
   "items": [
     {
       "id": "pattaya-city-live",
@@ -52,6 +52,186 @@
       "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007412",
       "officialUrl": "https://www.northguan-nsa.gov.tw/user/main.aspx?Lang=2",
       "embedUrl": "https://www.youtube-nocookie.com/embed/g-T8NbF9xlQ"
+    },
+    {
+      "id": "queenstown-airport-alps",
+      "storyDetail": "A beautiful arrival-window into Queenstown that also helps travelers see current visibility around the airport and mountains.",
+      "checkedAt": "2026-09-28T17:16:00Z",
+      "sourceUrl": "https://www.queenstownairport.co.nz/webcams-weather/"
+    },
+    {
+      "id": "roque-observatory",
+      "storyDetail": "Current view from Roque de los Muchachos Observatory, published by Instituto de Astrofísica de Canarias / Gran Telescopio CANARIAS.",
+      "checkedAt": "2026-10-03T09:50:00Z",
+      "sourceUrl": "https://www.gtc.iac.es/multimedia/webcams.php"
+    },
+    {
+      "id": "cijin-beach-kaohsiung",
+      "storyDetail": "A live beach-and-harbour window from Cijin Island, useful for seeing current coastal conditions before crossing from central Kaohsiung.",
+      "checkedAt": "2026-09-29T10:29:35Z",
+      "sourceUrl": "https://khh.travel/en/live-camera/14/"
+    },
+    {
+      "id": "cancun-live-aqua-beach",
+      "storyDetail": "A resort-operated real-time beach and waterfront window at Punta NIZUC for checking sea, sky and beach conditions before heading out in Cancún.",
+      "checkedAt": "2026-09-29T05:58:00Z",
+      "sourceUrl": "https://www.nizuc.com/live-cam/"
+    },
+    {
+      "id": "nyc-skyline-jersey-city-earthcam",
+      "storyDetail": "A wide live New York City skyline view from Jersey City — a strong wall-screen window for changing daylight, weather, sunset and city lights.",
+      "checkedAt": "2026-09-28T16:36:00Z",
+      "sourceUrl": "https://www.earthcam.com/usa/newyork/skyline/?cam=hyatthd"
+    },
+    {
+      "id": "statue-liberty-harbor-earthcam",
+      "storyDetail": "Live New York Harbor perspective around the Statue of Liberty, useful for atmosphere, visibility and beautiful changing light.",
+      "checkedAt": "2026-09-29T01:18:00Z",
+      "sourceUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_hd"
+    },
+    {
+      "id": "statue-liberty-earthcam",
+      "storyDetail": "A live close perspective on the Statue of Liberty and surrounding harbor, offering another truthful window choice for New York.",
+      "checkedAt": "2026-09-29T01:40:00Z",
+      "sourceUrl": "https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_str"
+    },
+    {
+      "id": "iss-planet-earth",
+      "storyDetail": "A live view of Earth from an external camera on the International Space Station; signal handovers can temporarily show a blue screen.",
+      "checkedAt": "2026-09-28T16:52:00Z",
+      "sourceUrl": "https://www.earthcam.com/cams/earth/space/?cam=nasa_iss"
+    },
+    {
+      "id": "bergen-ulriken",
+      "storyDetail": "A mountain-and-city perspective from Bergen’s Ulriken area, connecting fjord-side urban scenery with the surrounding highlands.",
+      "checkedAt": "2026-09-29T10:29:35Z",
+      "sourceUrl": "https://ulriken643.no/en/webcam"
+    },
+    {
+      "id": "boulders-penguins-sanparks",
+      "storyDetail": "Official SANParks video from the Boulders African Penguin Colony; the provider notes that playback may trail real time by about ten minutes for stability.",
+      "checkedAt": "2026-09-28T16:46:00Z",
+      "sourceUrl": "https://www.sanparks.org/travel/webcams/video/boulders"
+    },
+    {
+      "id": "sanparks-orpen-video",
+      "storyDetail": "An official SANParks wildlife video window from Orpen in Kruger National Park, where open plains and water attract changing animal activity.",
+      "checkedAt": "2026-09-28T16:46:00Z",
+      "sourceUrl": "https://www.sanparks.org/travel/webcams/video/orpen"
+    },
+    {
+      "id": "kyoto-nishiki-market-live",
+      "storyDetail": "A scheduled live window into Kyoto's Nishiki Market, useful for seeing real-time visitor conditions before deciding when to go.",
+      "checkedAt": "2026-09-28T15:15:00Z",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/"
+    },
+    {
+      "id": "helsinki-market-square-south-harbour",
+      "storyDetail": "A real-time view across Helsinki Market Square and the South Harbour from Visit Finland's official live-camera collection.",
+      "checkedAt": "2026-10-02T16:50:00Z",
+      "sourceUrl": "https://www.visitfinland.com/en/practical-tips/live-from-finland/"
+    },
+    {
+      "id": "vagar-airport-faroe",
+      "storyDetail": "Official Vágar Airport current images across the Faroese gateway; the airport states the pictures update every 30 seconds.",
+      "checkedAt": "2026-10-03T12:00:00Z",
+      "sourceUrl": "https://www.fae.fo/en/about-vagar-airport/information/webcam"
+    },
+    {
+      "id": "swakopmund-current-images",
+      "storyDetail": "Frequently refreshed Swakopmund webcam images from the Atlantic coast and city; the provider states selected images update every five seconds.",
+      "checkedAt": "2026-10-03T12:20:00Z",
+      "sourceUrl": "https://skpnamibia.de/webcams/"
+    },
+    {
+      "id": "windhoek-current-images",
+      "storyDetail": "Frequently refreshed current images from Namibia's capital, published alongside the provider's Swakopmund camera network.",
+      "checkedAt": "2026-10-03T12:20:00Z",
+      "sourceUrl": "https://skpnamibia.de/webcams/"
+    },
+    {
+      "id": "prague-petrin-tower",
+      "storyDetail": "Prague City Tourism's official Prague Towers page directly links the Petřín live camera to the Prague Visitor Pass Panomax 360 endpoint. Owner previously…",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://pvp.panomax.com/"
+    },
+    {
+      "id": "prague-old-town-hall",
+      "storyDetail": "Official Prague City Tourism page directly links Old Town Hall under 'our cameras look live around Prague' to YouTube video Agep3Ts7hpI.",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=Agep3Ts7hpI"
+    },
+    {
+      "id": "karakol-ski-base",
+      "storyDetail": "KG Camera exposes a direct Karakol Ski Base camera page at the lower lift and states its video surveillance runs without archiving with a 20-second delay.…",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://kg.camera/en/camera/Karakol_LyzhBaza_25_11_2019_cam1"
+    },
+    {
+      "id": "osh-sulaiman-too",
+      "storyDetail": "KG Camera exposes a direct camera at the foot of Sulaiman-Too in Osh and states its video surveillance is unarchived with about a 20-second delay.",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://kg.camera/en/camera/Osh-Sulaiman-Too"
+    },
+    {
+      "id": "naryn-central-square",
+      "storyDetail": "KG Camera describes the camera as the central square of Naryn and applies its network-wide unarchived, short-delay live-surveillance policy.",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://kg.camera/en/camera/Naryn"
+    },
+    {
+      "id": "too-ashu-north",
+      "storyDetail": "This is a high-altitude road/mountain camera on the Bishkek–Osh route; KG Camera states its surveillance feeds are unarchived and delayed by about 20 seconds.",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://kg.camera/en/camera/Too-Ashu_Tunnel_North"
+    },
+    {
+      "id": "suusamyr-valley",
+      "storyDetail": "The Suusamyr page identifies a high-elevation valley camera; the network states its surveillance feeds are unarchived with a short delay.",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://kg.camera/en/camera/Suusamyr"
+    },
+    {
+      "id": "balykchy-north-entry",
+      "storyDetail": "The Balykchy camera covers the roundabout at the city's entrance and can serve as a current gateway/road condition view for Issyk-Kul.",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://kg.camera/en/camera/Balykchi"
+    },
+    {
+      "id": "bishkek-ala-too-square",
+      "storyDetail": "The network identifies this as the central square of Kyrgyzstan's capital and applies the same unarchived short-delay live-surveillance policy.",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://kg.camera/en/camera/Bishkek_Ala-Too_Square"
+    },
+    {
+      "id": "mauritius-saint-felix",
+      "storyDetail": "Current official tourism family plus MTPA annual-report evidence supports Saint-Félix as a named Mauritius Live camera location; current playback still…",
+      "checkedAt": "2026-10-03T12:20:00Z",
+      "sourceUrl": "https://mauritiusnow.com/things-to-do-in-mauritius/"
+    },
+    {
+      "id": "bansko-pirin-current",
+      "storyDetail": "Official Bansko Ski current webcam network covering Bansko and the Pirin ski area; ERN groups the camera family as one Bansko destination.",
+      "checkedAt": "2026-10-03T16:40:00Z",
+      "sourceUrl": "https://www.banskoski.com/en/webcam/bansko"
+    },
+    {
+      "id": "kopaonik-serbia-current",
+      "storyDetail": "Official Ski Resorts of Serbia camera network for Kopaonik; refreshed camera images cover multiple points across the mountain.",
+      "checkedAt": "2026-10-03T16:40:00Z",
+      "sourceUrl": "https://www.skijalistasrbije.rs/en/web-cams-kopaonik"
+    },
+    {
+      "id": "jasna-chopok-current",
+      "storyDetail": "Official Jasná resort webcam family across Chopok and the Low Tatras; ERN groups multiple camera angles as one searchable mountain destination.",
+      "checkedAt": "2026-10-04T01:45:00Z",
+      "sourceUrl": "https://www.jasna.sk/en/resort/resort-info/webcameras"
+    },
+    {
+      "id": "kekesteto-matra-current",
+      "storyDetail": "Official Kékestető webcam page covering Hungary's highest mountain area, including the South Ski Resort and Tower Lookout.",
+      "checkedAt": "2026-10-04T01:45:00Z",
+      "sourceUrl": "https://kekesteto.hu/webcam/?lang=en"
     }
   ]
 }
