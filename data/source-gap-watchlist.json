@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T07:18:00Z",
+  "generatedAt": "2026-10-08T07:38:00Z",
   "publicActivationAllowed": false,
   "gaps": [
     {
@@ -119,8 +119,8 @@
       ],
       "whyImportant": "ERN aggregate search telemetry recorded a Chiang Mai search with no result. A trustworthy current city or scenic window would close a real observed visitor-discovery gap.",
       "researchEvidence": [
-        "Fresh 2026-10-08 recheck of Chiang Mai Provincial Administrative Organization CCTV surfaces still showed visible camera cards in STANDBY / WAITING FOR FEED, so they remain unsuitable for ERN current promotion.",
-        "Tourism Authority of Thailand provides authoritative Chiang Mai destination context but not a verified current scenic camera on the destination page.",
+        "Fresh 2026-10-08 public recheck of Chiang Mai Provincial Administrative Organization Smart City still shows visible CCTV cards in STANDBY / WAITING FOR FEED, including pedestrian/public-space and city/river wide-angle cameras; this remains unsuitable for ERN promotion.",
+        "Tourism Authority of Thailand remains useful destination context but does not provide a verified current scenic Chiang Mai source on the referenced destination surface.",
         "No weak directory, prerecorded video or generic weather view is an acceptable substitute for a verified current Chiang Mai window."
       ],
       "officialReferenceUrls": [
@@ -137,7 +137,7 @@
         "Check official university, park, airport, river/traffic and attraction sources for a source-specific current view.",
         "Prefer one strong canonical Chiang Mai place rather than many traffic-camera records."
       ],
-      "lastResearchedAt": "2026-10-08T06:58:00Z"
+      "lastResearchedAt": "2026-10-08T07:38:00Z"
     },
     {
       "id": "thailand-gulf-current-window-demand",
@@ -153,9 +153,9 @@
       "whyImportant": "ERN aggregate search telemetry recorded Hua Hin and repeated Dolphin Bay / Thailand zero-result searches. This is a real visitor-demand cluster, not an editorial guess.",
       "researchEvidence": [
         "Hua Hin remains resolved by the first-party Centara Grand live webcam, cataloged conservatively as EXTERNAL_LIVE / LINK_ONLY.",
-        "Fresh 2026-10-08 recheck of Dolphin Bay Resort and surrounding Sam Roi Yot sources still did not establish a trustworthy source-specific scenic current feed suitable for ERN.",
-        "Current Viator Hua Hin / Pranburi / Sam Roi Yot planning inventory remains separate downstream utility and cannot affect source truth or ranking.",
-        "Thailand Department of Highways and other generic camera surfaces remain disallowed as substitutes unless an exact destination-specific current feed is independently verified."
+        "Fresh 2026-10-08 recheck of Dolphin Bay Resort confirms the beachfront Sam Roi Yot destination and active resort utility, but the public first-party site still does not expose a trustworthy source-specific scenic current feed suitable for ERN promotion.",
+        "Current planning/stay inventory is business utility only and cannot be used as evidence that a current Earth source exists.",
+        "Generic camera directories, booking photography and unrelated highway cameras remain disallowed as substitutes."
       ],
       "officialReferenceUrls": [
         "https://www.youtube.com/watch?v=PPJ55qdY3pw",
@@ -174,7 +174,7 @@
         "Continue checking Dolphin Bay Resort, Sam Roi Yot/Khao Sam Roi Yot sources, municipalities, marine/weather/harbour and resort operators for a stable current view.",
         "Prefer one strong canonical Dolphin Bay / Sam Roi Yot source over weak traffic-camera substitutes."
       ],
-      "lastResearchedAt": "2026-10-08T06:58:00Z",
+      "lastResearchedAt": "2026-10-08T07:38:00Z",
       "resolvedPlaces": [
         "Hua Hin Beach — Centara Grand"
       ]
