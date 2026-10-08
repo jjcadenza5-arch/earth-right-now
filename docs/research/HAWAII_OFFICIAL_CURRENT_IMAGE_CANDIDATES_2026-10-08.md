@@ -29,3 +29,8 @@ Traffic: if actually promoted, add a substantial Hawaiʻi volcano current-views 
 No change to Travelpayouts Drive HOLD, open-source handoff, truthful currentness, source permission rules, or 575 KB startup ceiling.
 
 This note intentionally does not change docs/CURRENT_HANDOFF.md: no substantial production-validated release checkpoint has occurred.
+
+## 2026-10-08 reconciliation against the actual public catalogs
+The canonical `data/sources.json` and `data/search-supplemental.json` already contain **Kīlauea Summit** (`kilauea-summit`) and **Mauna Loa — Current View** (`mauna-loa-current-image`, place `mauna-loa-volcano`). Do **not** count this NPS camera research as two new destinations or replace the existing USGS source indiscriminately. The correct task is source-image recency, view quality and handoff comparison as a possible upgrade to existing records. Same review caught existing Crater Lake, Grand Canyon and Australian Antarctic camera destinations. The new machine-readable cross-lane register is `data/strong-source-three-lane-reconciliation-2026-10-08.json`.
+
+**Review conclusion:** 0 net-new healthy/searchable destinations from this research; no public release. Research note saved only. Event-driven holds (Chiang Mai, Dolphin Bay, Beijing) remain parked. 
