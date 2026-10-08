@@ -4,7 +4,6 @@
 /* ERN editorial restraint: quieter rhythm without hiding destinations */
 .section-head h2,.world-shelf-head h2{letter-spacing:-.026em;line-height:1.09}.section-head{row-gap:12px}.window-grid{gap:14px}.window-card{box-shadow:0 3px 16px rgba(0,28,24,.09)}.world-shelf-card{background-position:center;transition:filter .18s ease}.world-shelf-card:hover{filter:brightness(1.05)}@media(max-width:600px){.section-head h2,.world-shelf-head h2{font-size:clamp(29px,7.1vw,35px);line-height:1.13}.window-grid{gap:12px}.world-shelf-card{min-height:148px}.window-card{box-shadow:none}}
 
-/* Editorial cards: visible keyboard focus, restrained reduced-motion behavior */
 .world-shelf-card:focus-visible,.window-card:focus-visible{outline:3px solid #84ded0;outline-offset:3px;z-index:3}
 @media(prefers-reduced-motion:reduce){.world-shelf-card,.window-card,.card-visual img{transition:none!important}.window-card:hover,.window-card:hover .card-visual img{transform:none}}
 
