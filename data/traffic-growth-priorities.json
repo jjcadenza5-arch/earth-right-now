@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T02:42:00Z",
+  "generatedAt": "2026-10-08T03:04:00Z",
   "purpose": "Increase qualified organic discovery, repeat exploration, deep-link sharing and useful downstream planning intent from the production-reconciled 751-place ERN catalog.",
   "currentSearchableHealthyPlaces": 751,
   "unlockTargets": [
@@ -229,5 +229,26 @@
     }
   },
   "trafficMetricSemanticsVersion": 2,
-  "cleanDestinationAttributionStartsAt": "2026-10-07T14:55:03Z"
+  "cleanDestinationAttributionStartsAt": "2026-10-07T14:55:03Z",
+  "seoGrowth": {
+    "mode": "PEOPLE_FIRST_CURRENT_EARTH_DISCOVERY",
+    "primaryGoal": "Increase qualified organic landings on useful destination and editorial discovery pages, then lead visitors into additional truthful ERN exploration.",
+    "currentActions": [
+      "Keep only current/schedule-verified destination pages indexable; stale/recheck pages remain noindex,follow.",
+      "Expand crawlable editorial collections only where ERN has substantial useful coverage; current batch adds Volcanoes & Earth Science and Parks & Protected Places.",
+      "Use internal links from collections, countries and related-place sections into destination pages; commercial value never changes those links.",
+      "Expose accurate lastmod values, sitemap entries, breadcrumbs, Place/CollectionPage/ItemList structured data and the recent-updates Atom feed.",
+      "Allow large image/snippet/video previews on generated indexable discovery pages to improve search-result presentation where engines choose to use them.",
+      "Preserve multilingual Discover hreflang coverage with human-written collection labels rather than automatic translation.",
+      "Continue Google Search Console + sitemap observation as the authoritative Google indexing feedback loop; IndexNow remains supplemental discovery submission and is never treated as proof of Google indexing."
+    ],
+    "avoid": [
+      "Do not mass-produce thin city pages from keywords.",
+      "Do not create pages for one-off zero-result queries without a truthful current ERN source.",
+      "Do not change dates merely to simulate freshness.",
+      "Do not inflate page copy for word-count targets.",
+      "Do not let affiliate offers determine crawlability, internal-link prominence or collection membership."
+    ],
+    "nextEvidence": "Watch Search Console impressions/clicks and ERN clean-v2 referral/destination landings after the new collection pages are deployed and crawled; expand only from real query/landing evidence."
+  }
 }
