@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:04:00Z",
+  "generatedAt": "2026-10-08T06:32:00Z",
   "purpose": "Preserve detailed source/evidence prose outside ERN's lean startup catalog. Runtime rows retain concise visitor copy and non-empty evidence markers; this sidecar is audit evidence only and cannot authorize permission, truth, health or promotion.",
   "items": [
     {
@@ -11,7 +11,8 @@
       "playbackVerifiedAt": null,
       "sourceUrl": "https://livestream.pattaya.go.th/",
       "officialUrl": null,
-      "embedUrl": null
+      "embedUrl": null,
+      "storyDetail": "Official Pattaya City CCTV streaming for checking beachfront, city and travel conditions at the provider source."
     },
     {
       "id": "verbier",
@@ -213,25 +214,29 @@
       "id": "bansko-pirin-current",
       "storyDetail": "Official Bansko Ski current webcam network covering Bansko and the Pirin ski area; ERN groups the camera family as one Bansko destination.",
       "checkedAt": "2026-10-03T16:40:00Z",
-      "sourceUrl": "https://www.banskoski.com/en/webcam/bansko"
+      "sourceUrl": "https://www.banskoski.com/en/webcam/bansko",
+      "rightsBasisDetail": "Official resort webcam page; link-only in ERN."
     },
     {
       "id": "kopaonik-serbia-current",
       "storyDetail": "Official Ski Resorts of Serbia camera network for Kopaonik; refreshed camera images cover multiple points across the mountain.",
       "checkedAt": "2026-10-03T16:40:00Z",
-      "sourceUrl": "https://www.skijalistasrbije.rs/en/web-cams-kopaonik"
+      "sourceUrl": "https://www.skijalistasrbije.rs/en/web-cams-kopaonik",
+      "rightsBasisDetail": "Official Ski Resorts of Serbia webcam page; link-only in ERN."
     },
     {
       "id": "jasna-chopok-current",
       "storyDetail": "Official Jasná resort webcam family across Chopok and the Low Tatras; ERN groups multiple camera angles as one searchable mountain destination.",
       "checkedAt": "2026-10-04T01:45:00Z",
-      "sourceUrl": "https://www.jasna.sk/en/resort/resort-info/webcameras"
+      "sourceUrl": "https://www.jasna.sk/en/resort/resort-info/webcameras",
+      "rightsBasisDetail": "Official resort webcam page; ERN links externally and does not infer restream rights."
     },
     {
       "id": "kekesteto-matra-current",
       "storyDetail": "Official Kékestető webcam page covering Hungary's highest mountain area, including the South Ski Resort and Tower Lookout.",
       "checkedAt": "2026-10-04T01:45:00Z",
-      "sourceUrl": "https://kekesteto.hu/webcam/?lang=en"
+      "sourceUrl": "https://kekesteto.hu/webcam/?lang=en",
+      "rightsBasisDetail": "Official destination webcam page; ERN links externally and does not infer restream rights."
     },
     {
       "id": "us-mount-st-helens-current-image",
@@ -240,6 +245,590 @@
       "checkedAt": "2026-10-08T05:04:00Z",
       "sourceUrl": "https://volcanoes.usgs.gov/vsc/captures/st_helens/jro-webcam.jpg",
       "officialUrl": "https://www.usgs.gov/media/webcams/johnston-ridge-observatory-mount-st-helens"
+    },
+    {
+      "id": "glenelg-sa",
+      "checkedAt": "2026-10-03T09:50:00Z",
+      "sourceUrl": "https://www.marinesafety.sa.gov.au/web-cameras/glenelg-beach-algal-bloom-web-camera",
+      "storyDetail": "Current view from Glenelg Beach — South Australia, published by Government of South Australia — Marine Safety."
+    },
+    {
+      "id": "brighton-sa",
+      "checkedAt": "2026-10-03T09:50:00Z",
+      "sourceUrl": "https://www.marinesafety.sa.gov.au/web-cameras/brighton-beach-algal-bloom-web-camera",
+      "storyDetail": "Current view from Brighton Beach — South Australia, published by Government of South Australia — Marine Safety."
+    },
+    {
+      "id": "mpala-watering-hole",
+      "checkedAt": "2026-09-29T04:54:00Z",
+      "sourceUrl": "https://mpala.org/mpala-live/",
+      "storyDetail": "A wildlife window onto the Mpala watering hole in Laikipia, useful for catching animal activity when conditions line up."
+    },
+    {
+      "id": "kijihiki-plateau",
+      "checkedAt": "2026-09-29T05:28:00Z",
+      "sourceUrl": "https://www.city.hokuto.hokkaido.jp/docs/1967.html",
+      "storyDetail": "An official Hokuto City live window from Kijihiki Plateau for checking mountain weather and views before heading up."
+    },
+    {
+      "id": "dolomiti-superski",
+      "checkedAt": "2026-09-28T17:02:00Z",
+      "sourceUrl": "https://www.dolomitisuperski.com/en/live-info/webcam",
+      "storyDetail": "Browse current views across twelve Dolomites regions before choosing where to ski, hike or sightsee."
+    },
+    {
+      "id": "ski-arlberg",
+      "checkedAt": "2026-09-28T17:02:00Z",
+      "sourceUrl": "https://www.skiarlberg.at/en/live-info/webcams",
+      "storyDetail": "Webcams sit beside live lift, weather, parking and getting-here information—a complete current-condition decision page."
+    },
+    {
+      "id": "yellowstone-national-park",
+      "checkedAt": "2026-09-28T16:36:00Z",
+      "sourceUrl": "https://www.nps.gov/yell/learn/photosmultimedia/webcams.htm",
+      "storyDetail": "Watch Old Faithful and check current entrance, weather and park views before choosing when to visit."
+    },
+    {
+      "id": "san-diego-zoo",
+      "checkedAt": "2026-09-28T16:36:00Z",
+      "sourceUrl": "https://zoo.sandiegozoo.org/live-cameras",
+      "storyDetail": "See live animal activity across multiple Zoo and Safari Park cameras before deciding when to visit."
+    },
+    {
+      "id": "zermatt-matterhorn",
+      "checkedAt": "2026-09-28T17:02:00Z",
+      "sourceUrl": "https://zermatt.swiss/en/info/webcams",
+      "storyDetail": "See the Matterhorn and surrounding mountains live before heading up; village cameras operate during daytime."
+    },
+    {
+      "id": "chamonix-mont-blanc",
+      "checkedAt": "2026-09-28T16:36:00Z",
+      "sourceUrl": "https://www.chamonix.com/webcams",
+      "storyDetail": "Compare current valley and high-mountain views from Chamonix town to Aiguille du Midi before going up."
+    },
+    {
+      "id": "georgia-aquarium",
+      "checkedAt": "2026-09-28T17:02:00Z",
+      "sourceUrl": "https://www.georgiaaquarium.org/webcam/ocean-voyager/",
+      "storyDetail": "Watch current marine-animal activity through Georgia Aquarium's official webcam network before planning a visit."
+    },
+    {
+      "id": "lajes-pico-harbour",
+      "checkedAt": "2026-09-29T05:28:00Z",
+      "sourceUrl": "https://espacotalassa.com/en/webcam/",
+      "storyDetail": "A provider-direct live view from Lajes do Pico for checking harbour, sea and island conditions."
+    },
+    {
+      "id": "takayama-miyagawa-current-image",
+      "checkedAt": "2026-10-03T09:50:00Z",
+      "sourceUrl": "https://takayama-live.com/",
+      "storyDetail": "Current view from Takayama — Miyagawa Current Images, published by Hida-Takayama Live Camera."
+    },
+    {
+      "id": "meads-bay-anguilla",
+      "checkedAt": "2026-09-28T16:52:00Z",
+      "sourceUrl": "https://www.earthcam.com/world/anguilla/meadsbay/?cam=meadsbay_hd",
+      "storyDetail": "A calm Caribbean beachfront window with turquoise water and changing sunrise-to-sunset light."
+    },
+    {
+      "id": "druif-beach-aruba",
+      "checkedAt": "2026-09-28T16:52:00Z",
+      "sourceUrl": "https://www.earthcam.com/world/aruba/druifbeach/?cam=casadelmar2",
+      "storyDetail": "A live oceanfront Caribbean view from Aruba, strong for daylight, beach conditions and evening light."
+    },
+    {
+      "id": "dublin-temple-bar",
+      "checkedAt": "2026-09-28T16:52:00Z",
+      "sourceUrl": "https://www.earthcam.com/world/ireland/dublin/?cam=templebar",
+      "storyDetail": "A lively street-level window into Dublin's Temple Bar, especially strong for evening atmosphere and events."
+    },
+    {
+      "id": "tbilisi-mtkvari-river",
+      "checkedAt": "2026-09-29T07:32:00Z",
+      "sourceUrl": "https://www.earthcam.com/world/georgia/tbilisi/mtkvaririver/?cam=mtkvaririver",
+      "storyDetail": "A high scenic view over the Mtkvari River, Narikala fortress and Tbilisi's historic landscape."
+    },
+    {
+      "id": "flam-fjord-official",
+      "checkedAt": "2026-09-28T16:52:00Z",
+      "sourceUrl": "https://www.norwaysbest.com/en/flam/flam-webcam",
+      "storyDetail": "Official real-time views across Flåm, Aurland and the fjord landscape, including downtown and vessel perspectives."
+    },
+    {
+      "id": "amden-walensee-official",
+      "checkedAt": "2026-10-03T09:50:00Z",
+      "sourceUrl": "https://www.amden-weesen.ch/en/plan-your-trip/webcams",
+      "storyDetail": "Official current views over Lake Walensee, Weesen harbour, Amden village and the Glarner Alps."
+    },
+    {
+      "id": "lake-lucerne-official",
+      "checkedAt": "2026-10-03T09:50:00Z",
+      "sourceUrl": "https://webshop.lakelucerne.ch/en/pages/webcams",
+      "storyDetail": "Current view from Lake Lucerne — Lake & Mountain Views, published by Lake Lucerne Navigation Company."
+    },
+    {
+      "id": "perdido-key-beach",
+      "checkedAt": "2026-10-03T09:50:00Z",
+      "sourceUrl": "https://www.nps.gov/media/webcam/view.htm?id=81B4662E-1DD8-B71B-0B01D8503D5C98F4",
+      "storyDetail": "Current view from Perdido Key — Gulf Beach, published by U.S. National Park Service / Gulf Islands National Seashore."
+    },
+    {
+      "id": "sasagawa-nagare",
+      "checkedAt": "2026-09-29T05:38:00Z",
+      "sourceUrl": "https://www.city.murakami.lg.jp/site/live-camera/",
+      "storyDetail": "A municipal live-camera route for checking current conditions along the Sasagawa Nagare coast before a drive or visit."
+    },
+    {
+      "id": "ponte-di-legno-adamello",
+      "checkedAt": "2026-09-29T10:29:35Z",
+      "sourceUrl": "https://www.pontedilegnotonale.com/en/pontedilegno-tonale-booking/webcams-pontedilegno-tonale/",
+      "storyDetail": "An alpine window around Ponte di Legno and the Adamello area for mountain, snow and weather atmosphere."
+    },
+    {
+      "id": "pleasant-beach-lake-ontario",
+      "checkedAt": "2026-09-29T05:28:00Z",
+      "sourceUrl": "https://www.pleasantbeach.com/about-pleasant-beach-hotel",
+      "storyDetail": "A hotel-direct live view over Little Sodus Bay near Lake Ontario for checking waterfront conditions."
+    },
+    {
+      "id": "maui-hale-pau-hana",
+      "checkedAt": "2026-09-29T05:10:00Z",
+      "sourceUrl": "https://www.thehalepauhana.com/live-at-the-hale-pau-hana",
+      "storyDetail": "A real-time South Maui beach window from Hale Pau Hana for checking surf, sky and beach activity before heading out."
+    },
+    {
+      "id": "waikiki-south-shore",
+      "checkedAt": "2026-09-29T05:10:00Z",
+      "sourceUrl": "https://www.waikikiaquarium.org/webcams/",
+      "storyDetail": "An official Waikīkī Aquarium live view toward the South Shore for checking surf, coastal weather and beach conditions."
+    },
+    {
+      "id": "cold-lake-marina",
+      "checkedAt": "2026-09-29T05:10:00Z",
+      "sourceUrl": "https://www.coldlake.com/play/live-webcams/",
+      "storyDetail": "A municipal live window onto Cold Lake Marina for checking lake, weather and waterfront conditions before a visit."
+    },
+    {
+      "id": "st-johns-harbour",
+      "checkedAt": "2026-09-29T05:58:00Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=3x04ElCJNxg",
+      "storyDetail": "A harbour-city window in St. John’s, Newfoundland and Labrador, for waterfront activity, sky and coastal atmosphere."
+    },
+    {
+      "id": "metung-gippsland-lakes",
+      "checkedAt": "2026-09-29T05:10:00Z",
+      "sourceUrl": "https://www.metunghotel.com.au/",
+      "storyDetail": "See the waterfront atmosphere at Metung on the Gippsland Lakes from the hotel's own current live-stream surface."
+    },
+    {
+      "id": "coogee-randwick-beaches",
+      "checkedAt": "2026-09-28T16:36:00Z",
+      "sourceUrl": "https://www.randwick.nsw.gov.au/facilities-and-recreation/explore-randwick-city/beach-cams",
+      "storyDetail": "Check live beach conditions and crowd levels across Coogee and other Randwick beaches before choosing where to go."
+    },
+    {
+      "id": "chidori-sakura",
+      "checkedAt": "2026-09-29T07:32:00Z",
+      "sourceUrl": "https://visit-chiyoda.tokyo/en/sakura/",
+      "storyDetail": "Check the official Chidori-ga-fuchi live camera and current Green Way conditions before visiting."
+    },
+    {
+      "id": "volcan-tajogaite",
+      "checkedAt": "2026-10-07T11:46:00Z",
+      "sourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/",
+      "storyDetail": "See the current Tajogaite volcano view across the Aridane Valley before exploring La Palma."
+    },
+    {
+      "id": "reykjavik-metoffice",
+      "checkedAt": "2026-10-03T09:50:00Z",
+      "sourceUrl": "https://en.vedur.is/weather/observations/webcams/reykjavik/",
+      "storyDetail": "Current view from Reykjavík — Icelandic Met Office Webcams, published by Icelandic Meteorological Office."
+    },
+    {
+      "id": "cape-town-earthtv",
+      "checkedAt": "2026-09-29T01:05:00Z",
+      "sourceUrl": "https://www.earthtv.com/en/webcam/cape-town-table-mountain",
+      "storyDetail": "A Cape Town live-stream view combining Table Mountain, Lion’s Head and V&A Waterfront harbour activity."
+    },
+    {
+      "id": "london-savoy-place-live",
+      "checkedAt": "2026-09-28T15:02:00Z",
+      "sourceUrl": "https://www.theiet.org/about/our-venues/iet-london-savoy-place-webcam",
+      "storyDetail": "A current sweep of central London's skyline from St Paul's toward Westminster before heading into the city."
+    },
+    {
+      "id": "london-abbey-road-crossing-live",
+      "checkedAt": "2026-09-28T15:02:00Z",
+      "sourceUrl": "https://www.abbeyroad.com/crossing?mode=live",
+      "storyDetail": "See the famous Abbey Road zebra crossing live before visiting—and whether a crowd is already forming."
+    },
+    {
+      "id": "bangkok-sukhumvit-skylinewebcams",
+      "checkedAt": "2026-09-28T15:50:00Z",
+      "sourceUrl": "https://www.skylinewebcams.com/en/webcam/thailand/central-thailand/bangkok/sukhumvit-road.html",
+      "storyDetail": "See the traffic, pedestrians and everyday rhythm of Sukhumvit Road before heading into Bangkok."
+    },
+    {
+      "id": "singapore-port-skylinewebcams",
+      "checkedAt": "2026-09-28T15:50:00Z",
+      "sourceUrl": "https://www.skylinewebcams.com/en/webcam/republic-of-singapore/singapore/singapore/singapore.html",
+      "storyDetail": "A current look across Singapore's port and part of the city skyline before exploring the waterfront."
+    },
+    {
+      "id": "rome-spanish-steps-skylinewebcams",
+      "checkedAt": "2026-09-28T15:58:00Z",
+      "sourceUrl": "https://www.skylinewebcams.com/webcam/italia/lazio/roma/chiesa-trinita-dei-monti.html",
+      "storyDetail": "See the Spanish Steps and the real visitor atmosphere in Piazza di Spagna before heading there."
+    },
+    {
+      "id": "rovaniemi-santa-claus-village-live",
+      "checkedAt": "2026-10-01T13:41:26.310Z",
+      "sourceUrl": "https://santaclausvillage.info/live-video-webcam/",
+      "storyDetail": "See the Arctic Circle square and Santa Claus Village as it looks now before a Lapland visit."
+    },
+    {
+      "id": "yellowstone-old-faithful-live",
+      "checkedAt": "2026-09-28T16:05:00Z",
+      "sourceUrl": "https://www.nps.gov/media/webcam/view.htm?id=AF555E5C-BE40-FE91-52E98E0EDD833B68",
+      "storyDetail": "Watch Old Faithful and the Upper Geyser Basin live before choosing when to visit the geyser area."
+    },
+    {
+      "id": "vienna-city-hall-ringstrasse",
+      "checkedAt": "2026-10-02T16:50:00Z",
+      "sourceUrl": "https://www.wien.info/en/see-do/discover-vienna/webcam-379930",
+      "storyDetail": "Official Vienna live panorama looking across central Vienna landmarks around City Hall and the Ringstrasse."
+    },
+    {
+      "id": "koli-lake-pielinen",
+      "checkedAt": "2026-10-02T16:50:00Z",
+      "sourceUrl": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
+      "storyDetail": "A scenic live view from Koli over Lake Pielinen and the surrounding North Karelian landscape."
+    },
+    {
+      "id": "ecuador-reventador-monitoring",
+      "checkedAt": "2026-10-03T03:30:00Z",
+      "sourceUrl": "https://igepn.edu.ec/camaras/content/16-reventador",
+      "storyDetail": "Current view from El Reventador Volcano — Monitoring Views, published by Instituto Geofísico EPN."
+    },
+    {
+      "id": "mauna-loa-current-image",
+      "checkedAt": "2026-10-03T03:30:00Z",
+      "sourceUrl": "https://www.usgs.gov/volcanoes/mauna-loa/webcams",
+      "storyDetail": "Current view from Mauna Loa — Current View, published by U.S. Geological Survey / Hawaiian Volcano Observatory."
+    },
+    {
+      "id": "ecuador-tungurahua-current-image",
+      "checkedAt": "2026-10-03T03:30:00Z",
+      "sourceUrl": "https://www.igepn.edu.ec/tungurahua-camaras",
+      "storyDetail": "Current view from Tungurahua Volcano — Current Views, published by Instituto Geofísico EPN."
+    },
+    {
+      "id": "colombia-nevado-del-ruiz-current-image",
+      "checkedAt": "2026-10-03T03:30:00Z",
+      "sourceUrl": "https://amenazas.sgc.gov.co/ovsm/camaras/",
+      "storyDetail": "Current view from Nevado del Ruiz — Current Views, published by Servicio Geológico Colombiano."
+    },
+    {
+      "id": "colombia-galeras-current-image",
+      "checkedAt": "2026-10-03T03:30:00Z",
+      "sourceUrl": "https://www2.sgc.gov.co/sgc/volcanes/VolcanGaleras/Paginas/imagenes-en-linea.aspx",
+      "storyDetail": "Current view from Galeras Volcano — Current Views, published by Servicio Geológico Colombiano."
+    },
+    {
+      "id": "madeira-porto-moniz-current-image",
+      "checkedAt": "2026-10-03T03:30:00Z",
+      "sourceUrl": "https://visitmadeira.com/en/travel-info/useful-information/weather-in-madeira/",
+      "storyDetail": "Official Madeira tourism live-image coverage for Porto Moniz and its dramatic northwest coast."
+    },
+    {
+      "id": "taiwan-kenting-forest-current-image",
+      "checkedAt": "2026-10-03T03:30:00Z",
+      "sourceUrl": "https://www.forest.gov.tw/0010159/0010159",
+      "storyDetail": "Official real-time view from the Ocean View Tower in Kenting National Forest Recreation Area."
+    },
+    {
+      "id": "taiwan-sun-moon-lake-current-image",
+      "checkedAt": "2026-10-03T03:30:00Z",
+      "sourceUrl": "https://www.sunmoonlake.gov.tw/EN/attractions/Livecams?a=22",
+      "storyDetail": "Current view from Sun Moon Lake — Taiwan, published by Sun Moon Lake National Scenic Area Administration."
+    },
+    {
+      "id": "peru-ubinas-current-image",
+      "checkedAt": "2026-10-03T03:30:00Z",
+      "sourceUrl": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/imagenes-en-tiempo-real/ubinas",
+      "storyDetail": "Official one-minute real-time monitoring images of Ubinas, one of Peru's most active volcanoes."
+    },
+    {
+      "id": "peru-coropuna-current-image",
+      "checkedAt": "2026-10-03T03:30:00Z",
+      "sourceUrl": "https://www.igp.gob.pe/servicios/centro-vulcanologico-nacional/volcanes-monitoreados/",
+      "storyDetail": "Official CENVUL real-time monitoring imagery for Coropuna, Peru's massive ice-capped volcano."
+    },
+    {
+      "id": "mexico-popocatepetl-current-image",
+      "checkedAt": "2026-10-03T03:30:00Z",
+      "sourceUrl": "https://www1.cenapred.unam.mx/volcan/popocatepetl/imagen/tlamacas_hd.html",
+      "storyDetail": "Official one-minute current monitoring image of Popocatépetl from the Tlamacas HD camera."
+    },
+    {
+      "id": "mauritius-grand-baie-current-page",
+      "checkedAt": "2026-10-03T05:05:00Z",
+      "sourceUrl": "https://mauritiusnow.com/things-to-do-in-mauritius/",
+      "storyDetail": "Current view from Grand Baie — Mauritius, published by Mauritius Tourism Promotion Authority / Mauritius Now."
+    },
+    {
+      "id": "mauritius-pointe-desny-current-page",
+      "checkedAt": "2026-10-03T05:05:00Z",
+      "sourceUrl": "https://mauritiusnow.com/things-to-do-in-mauritius/",
+      "storyDetail": "Current view from Pointe d’Esny — Mauritius, published by Mauritius Tourism Promotion Authority / Mauritius Now."
+    },
+    {
+      "id": "rotorua-current-page",
+      "checkedAt": "2026-10-03T05:05:00Z",
+      "sourceUrl": "https://conference.rotoruanz.com/en-NZ/visit/Weather-Webcams",
+      "storyDetail": "Current view from Rotorua — City, Gardens & Lake, published by Rotorua NZ / Rotorua Lakes Council / Skyline Rotorua."
+    },
+    {
+      "id": "shymbulak-current-page",
+      "checkedAt": "2026-10-03T05:05:00Z",
+      "sourceUrl": "https://shymbulak.com/live",
+      "storyDetail": "Official Shymbulak Mountain Resort current-camera page for the Trans-Ili Alatau above Almaty."
+    },
+    {
+      "id": "kilpisjarvi-saana-current-page",
+      "checkedAt": "2026-10-03T05:00:00Z",
+      "sourceUrl": "https://www.visitfinland.com/en/practical-tips/live-from-finland/",
+      "storyDetail": "Visit Finland current webcam collection includes Kilpisjärvi with Saana Fell and Arctic sky."
+    },
+    {
+      "id": "innsbruck-nordkette-current-page",
+      "checkedAt": "2026-10-03T05:00:00Z",
+      "sourceUrl": "https://www.innsbruck.info/en/destinations/webcams/webcams-region.html",
+      "storyDetail": "Official Innsbruck Tourism current camera for the Nordkette mountain range above the city."
+    },
+    {
+      "id": "maho-beach-current-page",
+      "checkedAt": "2026-10-03T05:00:00Z",
+      "sourceUrl": "https://www.visitstmaarten.com/your-top-three-caribbean-live-webcams-2/",
+      "storyDetail": "Current view from Maho Beach — St. Maarten, published by Visit St. Maarten / ShowMe Caribbean."
+    },
+    {
+      "id": "great-bay-current-page",
+      "checkedAt": "2026-10-03T05:00:00Z",
+      "sourceUrl": "https://www.visitstmaarten.com/areas/philipsburg/",
+      "storyDetail": "Current view from Great Bay & Philipsburg Boardwalk — St. Maarten, published by Visit St. Maarten / ShowMe Caribbean."
+    },
+    {
+      "id": "santorini-caldera-current-page",
+      "checkedAt": "2026-10-03T05:00:00Z",
+      "sourceUrl": "https://www.santorini.net/live_webcam/",
+      "storyDetail": "Current Santorini caldera camera page from Imerovigli with views toward Oia and Thirassia."
+    },
+    {
+      "id": "erliao-sunrise-current",
+      "checkedAt": "2026-10-03T05:30:00Z",
+      "sourceUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10021&sNo=0042331",
+      "storyDetail": "Official Taiwan Tourism current image from Erliao, known for sunrise views over layered hills."
+    },
+    {
+      "id": "jingzaijiao-salt-current",
+      "checkedAt": "2026-10-03T05:30:00Z",
+      "sourceUrl": "https://www.taiwan.net.tw/m1.aspx?keystring=10021&sNo=0042331",
+      "storyDetail": "Official Taiwan Tourism current image of the historic Jingzaijiao tile-paved salt fields."
+    },
+    {
+      "id": "istanbul-sultanahmet-official",
+      "checkedAt": "2026-10-03T09:50:00Z",
+      "sourceUrl": "https://istanbuluseyret.ibb.istanbul/en/touristic-camera/sultanahmet",
+      "storyDetail": "Official live view from Sultanahmet, Istanbul's historic core around the Hippodrome, Blue Mosque and Hagia Sophia area."
+    },
+    {
+      "id": "reunion-roches-noires-current",
+      "checkedAt": "2026-10-03T11:20:00Z",
+      "sourceUrl": "https://www.reunion.fr/organisez/webcams/webcam-plage-des-roches-noires/",
+      "storyDetail": "Current view from Roches Noires Beach — La Réunion, published by Île de la Réunion Tourisme."
+    },
+    {
+      "id": "reunion-piton-fournaise-current",
+      "checkedAt": "2026-10-03T11:20:00Z",
+      "sourceUrl": "https://www.reunion.fr/organisez/webcams/webcam-volcan-piton-de-la-fournaise/",
+      "storyDetail": "Current view from Piton de la Fournaise — Current Volcano View, published by Île de la Réunion Tourisme / IPGP-OVPF."
+    },
+    {
+      "id": "nuuk-arcticomm",
+      "checkedAt": "2026-10-03T12:00:00Z",
+      "sourceUrl": "https://arcticomm.gl/arcticomm-webcam/",
+      "storyDetail": "Current Nuuk webcam from local Greenland provider ArctiComm; the source states the image updates every five minutes."
+    },
+    {
+      "id": "faroe-mykines-landsverk",
+      "checkedAt": "2026-10-03T12:15:00Z",
+      "sourceUrl": "https://www.landsverk.fo/?id=1",
+      "storyDetail": "Official Landsverk weather-camera view for Mykines — Faroe Islands; used by ERN as a current-image discovery source."
+    },
+    {
+      "id": "faroe-klaksvik-landsverk",
+      "checkedAt": "2026-10-03T12:15:00Z",
+      "sourceUrl": "https://www.landsverk.fo/?id=1",
+      "storyDetail": "Official Landsverk weather-camera view for Klaksvík — Faroe Islands; used by ERN as a current-image discovery source."
+    },
+    {
+      "id": "faroe-gjaarskard-landsverk",
+      "checkedAt": "2026-10-03T12:15:00Z",
+      "sourceUrl": "https://www.landsverk.fo/?id=1",
+      "storyDetail": "Official Landsverk weather-camera view for Gjáarskarð — Faroe Islands; used by ERN as a current-image discovery source."
+    },
+    {
+      "id": "faroe-hvalba-landsverk",
+      "checkedAt": "2026-10-03T12:15:00Z",
+      "sourceUrl": "https://www.landsverk.fo/?id=1",
+      "storyDetail": "Official Landsverk weather-camera view for Hvalba — Faroe Islands; used by ERN as a current-image discovery source."
+    },
+    {
+      "id": "prague-old-town-bridge-tower",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=1zRzcYmipMs",
+      "storyDetail": "Official Prague City Tourism page links the Old Town Bridge Tower camera via CamStreamer to YouTube video 1zRzcYmipMs."
+    },
+    {
+      "id": "prague-powder-tower",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=07U63AB60g4",
+      "storyDetail": "Official Prague City Tourism page directly links Powder Tower to YouTube video 07U63AB60g4."
+    },
+    {
+      "id": "prague-st-nicholas-bell-tower",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=kfygpyeJHRg",
+      "storyDetail": "Official Prague City Tourism page directly links St. Nicholas Bell Tower to YouTube video kfygpyeJHRg."
+    },
+    {
+      "id": "prague-lesser-town-bridge-tower",
+      "checkedAt": "2026-10-03T12:25:00Z",
+      "sourceUrl": "https://www.youtube.com/watch?v=RLvNkbRLrIA",
+      "storyDetail": "Official Prague City Tourism page directly links Lesser Town Bridge Tower to YouTube video RLvNkbRLrIA."
+    },
+    {
+      "id": "zandvoort-current",
+      "checkedAt": "2026-10-03T13:25:00Z",
+      "sourceUrl": "https://visitzandvoort.com/circuit/webcam/",
+      "storyDetail": "Visit Zandvoort publishes year-round webcam views from Circuit Zandvoort and the beach resort."
+    },
+    {
+      "id": "heidelberg-current",
+      "checkedAt": "2026-10-03T13:25:00Z",
+      "sourceUrl": "https://www.heidelberg-marketing.de/planen/wetter-und-webcams",
+      "storyDetail": "Heidelberg Marketing publishes current webcam views of the Old Town panorama and Königstuhl."
+    },
+    {
+      "id": "cannes-current",
+      "checkedAt": "2026-10-03T13:25:00Z",
+      "sourceUrl": "https://en.cannes-france.com/",
+      "storyDetail": "The official Cannes tourism site offers live webcam and weather information for planning a visit."
+    },
+    {
+      "id": "plitvice-lakes-current",
+      "checkedAt": "2026-10-03T13:25:00Z",
+      "sourceUrl": "https://np-plitvicka-jezera.hr/en/plitvice-lakes-national-park/",
+      "storyDetail": "The official Plitvice Lakes National Park site provides a livestream alongside its visitor information."
+    },
+    {
+      "id": "denmark-klitmoller-current",
+      "checkedAt": "2026-10-03T13:25:00Z",
+      "sourceUrl": "https://www.visitdenmark.com/denmark/things-do/livestreams",
+      "storyDetail": "VisitDenmark's live collection shows the surf and coastline at Klitmøller near Thy National Park."
+    },
+    {
+      "id": "heidelberg-konigstuhl-current",
+      "checkedAt": "2026-10-03T13:30:00Z",
+      "sourceUrl": "https://www.heidelberg-marketing.de/planen/wetter-und-webcams",
+      "storyDetail": "Heidelberg Marketing publishes a current panorama from Königstuhl over Heidelberg and the surrounding region."
+    },
+    {
+      "id": "radebeul-wackerbarth-current",
+      "checkedAt": "2026-10-03T13:30:00Z",
+      "sourceUrl": "https://www.visit-dresden-elbland.de/en/weathercam-dresden-elbland/",
+      "storyDetail": "Dresden Elbland Tourism publishes a live weathercam over the vineyards of Schloss Wackerbarth in Radebeul."
+    },
+    {
+      "id": "farchant-zugspitze-current",
+      "checkedAt": "2026-10-03T13:30:00Z",
+      "sourceUrl": "https://www.farchant.de/en/live-up-to-date/webcam",
+      "storyDetail": "Farchant's official destination site publishes live webcams toward Garmisch-Partenkirchen and the Zugspitze region."
+    },
+    {
+      "id": "aitutaki-lagoon-current",
+      "checkedAt": "2026-10-03T15:30:00Z",
+      "sourceUrl": "https://cookislandsairports.com/webcam-pir1/",
+      "storyDetail": "Current Aitutaki Lagoon image from Piraki, with multiple time-of-day images published by Cook Islands Airports."
+    },
+    {
+      "id": "aitutaki-tamanu-beach-current",
+      "checkedAt": "2026-10-03T15:30:00Z",
+      "sourceUrl": "https://cookislandsairports.com/webcam-ait/",
+      "storyDetail": "Current Tamanu Beach view on Aitutaki with recent daypart images from the official Cook Islands Airports webcam page."
+    },
+    {
+      "id": "rarotonga-airport-current",
+      "checkedAt": "2026-10-03T15:30:00Z",
+      "sourceUrl": "https://cookislandsairports.com/webcam-rar/",
+      "storyDetail": "Current ramp image from Rarotonga International Airport, useful for seeing conditions and airport activity before travel."
+    },
+    {
+      "id": "kuredu-maldives-live",
+      "checkedAt": "2026-10-03T15:55:00Z",
+      "sourceUrl": "https://www.kuredu.com/webcams/",
+      "storyDetail": "Official Kuredu Island live webcam collection with beach, sandbank, watersports-centre and main-pool views.",
+      "rightsBasisDetail": "Official resort live-webcam page; ERN links to the provider and does not restream."
+    },
+    {
+      "id": "barbados-paynes-bay-live",
+      "checkedAt": "2026-10-03T15:55:00Z",
+      "sourceUrl": "https://www.beachviewbarbados.com/live-webcam/",
+      "rightsBasisDetail": "Provider-published live webcam; ERN remains link-only."
+    },
+    {
+      "id": "cape-verde-santa-maria-bay-live",
+      "checkedAt": "2026-10-03T15:55:00Z",
+      "sourceUrl": "https://odjodagua.cv/webcam/",
+      "rightsBasisDetail": "Hotel-published live webcam; ERN remains link-only."
+    },
+    {
+      "id": "longyearbyen-unis-current",
+      "checkedAt": "2026-10-03T16:25:00Z",
+      "sourceUrl": "https://www.unis.no/facilities/web-camera/",
+      "storyDetail": "UNIS publishes a roof-mounted web-camera handoff for current Longyearbyen and Adventfjorden conditions."
+    },
+    {
+      "id": "borovets-rila-current",
+      "checkedAt": "2026-10-03T16:40:00Z",
+      "sourceUrl": "https://www.borovets-bg.com/en/webcams",
+      "storyDetail": "Official Borovets resort webcam family across the Rila mountain ski area; ERN counts it as one Borovets destination.",
+      "rightsBasisDetail": "Official Borovets resort webcam page; link-only in ERN."
+    },
+    {
+      "id": "latvia-valmiera-old-town",
+      "checkedAt": "2026-10-04T01:50:00Z",
+      "sourceUrl": "https://www.latvia.travel/en/sight/valmiera-old-town",
+      "storyDetail": "Latvia's official tourism portal directs visitors to watch city life in historic Valmiera on the webcam."
+    },
+    {
+      "id": "montenegro-kolasin-1600",
+      "checkedAt": "2026-10-04T01:50:00Z",
+      "sourceUrl": "https://skijalista.me/",
+      "storyDetail": "Official Ski Resorts of Montenegro live-camera family for Kolašin 1600 and the Bjelasica slopes."
+    },
+    {
+      "id": "bosnia-jahorina-olympic-center",
+      "checkedAt": "2026-10-04T01:50:00Z",
+      "sourceUrl": "https://www.oc-jahorina.com/en/",
+      "storyDetail": "Official Olympic Center Jahorina live-camera surface for the Sarajevo Olympic mountain resort."
+    },
+    {
+      "id": "jordan-petra-visitor-center-live",
+      "checkedAt": "2026-10-06T13:10:00Z",
+      "sourceUrl": "https://visitpetra.jo/en",
+      "rightsBasisDetail": "Official Visit Petra Live Cam surface; link-only."
     }
   ]
 }
