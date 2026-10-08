@@ -179,7 +179,7 @@ for(const [id,items] of map){
   const breadcrumb='<nav class="ern-breadcrumb" aria-label="Breadcrumb"><a href="'+base+'">Earth Right Now</a><span>›</span><a href="'+base+'places/">Places</a><span>›</span><span aria-current="page">'+esc(title)+'</span></nav>';
 
   const primaryCta=currentItems.length
-    ?'<a class="ern-cta" href="'+base+'#place='+encodeURIComponent(id)+'">See '+esc(title)+' in Earth Right Now →</a>'
+    ?'<a class="ern-cta" href="'+base+'?q='+encodeURIComponent(title)+'#view='+encodeURIComponent(currentItems[0].id)+'">See '+esc(title)+' in Earth Right Now →</a>'
     :'<a class="ern-cta" href="'+base+'?q='+encodeURIComponent(title)+'">Explore current ERN windows →</a>';
   const trustLinks='<p class="ern-note"><a href="'+base+'how-ern-works.html">How ERN works</a> · <a href="'+base+'source-policy.html">Live & current source policy</a> · <a href="'+base+'editorial-principles.html">Editorial principles</a></p>';
 
