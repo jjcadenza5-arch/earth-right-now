@@ -8955,3 +8955,87 @@ The 575 KB ceiling was not raised and no source/rights/truth/currentness/attribu
 5. Revalidate stale source/playback evidence naturally; never refresh timestamps from page reachability alone.
 6. Continue qualified organic-discovery work and internal continuation; share growth must remain unclaimed until real share/copy events appear.
 7. Require same-SHA Pages + Operations + production-domain verification at each substantial visitor-facing checkpoint.
+
+
+## Karakol + Oeschinensee demand-led utility checkpoint — 2026-10-08 05:56 UTC
+
+### Canonical validated production state
+- Production content SHA: `ab124a0aecf4a07708c793e47bb06ddcf37ebc5f`.
+- **Deploy ERN to GitHub Pages #2897**: SUCCESS.
+- **ERN Operations Check #1658**: SUCCESS.
+- Same-SHA Pages + Operations completed successfully.
+- **Verify deployed visitor reality sync** against `earthrightnow.app`: SUCCESS.
+- **Verify deployed social preview metadata**: SUCCESS.
+- **Performance preflight**: SUCCESS.
+- **Lean launch preflight**: SUCCESS.
+- **IndexNow recent URL notification**: SUCCESS.
+- This supersedes validated production content SHA `50c143d3a59f651793835363f077ddc8c0aa81e4`.
+
+### Visitor + business utility expansion
+Two real-demand source destinations now have current, useful downstream Viator planning actions:
+
+1. **Karakol Ski Base / Issyk-Kul**
+   - ERN source: `karakol-ski-base`
+   - current source recheck: official `kg.camera` public live-camera index still lists the camera at the beginning of the lower lift at Karakol Ski Base and states public camera retransmission uses a 20-second delay.
+   - planning offer: `viator-karakol-issyk-kul-public`
+   - exact current 2026 inventory rechecked: active Issyk-Kul itinerary explicitly includes Karakol and a Karakol Ski Base day.
+   - tracked URL reuses ERN's owner-verified Viator identity `P00322254 / mcid 42383`.
+   - `manualOpenVerified=false` remains explicit.
+
+2. **Oeschinensee / Kandersteg**
+   - ERN source: `oeschinensee-official`
+   - current source recheck: official Oeschinensee webcam page on 2026-10-08 explicitly reports live/latest webcam images and current operating information.
+   - planning offer: `viator-oeschinensee-kandersteg-public`
+   - exact current 2026 inventory rechecked: active Kander Valley / Blausee product references the Oeschinensee gondola and Kandersteg area.
+   - tracked URL reuses ERN's owner-verified Viator identity.
+   - `manualOpenVerified=false` remains explicit.
+
+Both actions remain downstream from Earth discovery and cannot affect ranking, truth, currentness, source inclusion or permission.
+
+### Source-currentness discipline
+The first release candidate correctly failed because the source recheck timestamps were a few minutes ahead of the GitHub runner clock.
+- Featured-curation guard rejected both future-dated verification timestamps.
+- No guard was weakened.
+- Timestamps were corrected to the actual completed recheck time.
+- The corrected same-SHA release then passed Pages + Operations.
+
+### Revenue-readiness state
+Canonical public revenue-ready coverage now reconciles to:
+- **230** current affiliate offers
+- **224** eligible places
+- Viator: **201** offers / **95** unique tracked URLs
+- Klook: 21 offers / 10 unique tracked URLs
+- Tiqets: 5 offers / 4 unique tracked URLs
+- Welcome Pickups: 3 offers / 3 unique tracked URLs
+
+These are eligible planning links, not bookings, conversions or revenue.
+
+### Source-partner qualification
+Karakol Ski Base and Oeschinensee remain source-owner **OBSERVE** candidates, now with a useful downstream planning bridge:
+- source opens qualify interest;
+- planning actions demonstrate visitor utility;
+- neither constitutes a partnership or endorsement;
+- no outreach should begin until repeated source-owner value and a clear visitor benefit are established.
+
+### Real production verification
+The production release artifact contains:
+- `places/karakol-ski-base/`
+- `places/oeschinensee/`
+- `viator-karakol-issyk-kul-public`
+- `viator-oeschinensee-kandersteg-public`
+
+The deployed visitor-reality verifier passed against the actual production domain.
+
+### Lean-core state
+- startup core: **573,751 bytes**
+- protected ceiling: **575,000 bytes**
+- remaining headroom: **1,249 bytes**
+- ceiling was not raised.
+
+### Next autonomous lane
+1. Continue large-batch visitor + business work together.
+2. Prefer demand-led utility where real source/place engagement and exact current inventory overlap.
+3. Continue source-owner qualification without premature outreach.
+4. Keep searching Chiang Mai + Hua Hin/Dolphin Bay for trustworthy current sources; no static/prerecorded/generic-camera substitutes.
+5. Continue dedupe and evidence-sidecar work to recover durable lean-core headroom before uncontrolled core expansion.
+6. Preserve source-currentness gating and same-SHA Pages + Operations + production-domain verification for substantial visitor-facing checkpoints.
