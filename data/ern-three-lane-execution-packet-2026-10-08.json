@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-08",
+  "status": "PRIVATE_EXECUTION_PACKET_NOT_PUBLISHED",
+  "productionBaselineSha": "f4642689116203925ce3e16a30a35f465bf212ff",
+  "visitor": {
+    "existingSourceAudit": [
+      {
+        "placeId": "kilauea-summit",
+        "sourceId": "kilauea-summit",
+        "alternativeOfficialDirectory": "https://www.nps.gov/havo/learn/photosmultimedia/webcams.htm",
+        "provider": "USGS Hawaiian Volcano Observatory via NPS",
+        "action": "Compare V2 east-rim, V1 west-vent and current original; check actual image recency, live-label honesty and day/night/thermal visibility; preserve original provider handoff",
+        "classification": "EXISTING_PLACE_SOURCE_REVIEW",
+        "activation": "NO"
+      },
+      {
+        "placeId": "mauna-loa-volcano",
+        "sourceId": "mauna-loa-current-image",
+        "alternativeOfficialDirectory": "https://www.nps.gov/havo/learn/photosmultimedia/webcams.htm",
+        "provider": "USGS Hawaiian Volcano Observatory via NPS",
+        "action": "Compare MKcam with incumbent current-image route; require timestamp, unique usefulness and source-specific handoff",
+        "classification": "EXISTING_PLACE_SOURCE_REVIEW",
+        "activation": "NO"
+      }
+    ],
+    "sourceHealthDecisionTable": [
+      {
+        "evidence": "Page loads only; no verifiable image timestamp or refresh",
+        "action": "RECHECK_DUE",
+        "publicPromise": "Do not assert CURRENT based on HTTP response"
+      },
+      {
+        "evidence": "Fresh still image and precise place attribution; video not established",
+        "action": "LIVE_IMAGE",
+        "publicPromise": "Current image, not live video"
+      },
+      {
+        "evidence": "Clouds, darkness or temporarily low visibility with valid fresh capture",
+        "action": "CURRENT_BUT_VISIBILITY_LIMITED",
+        "publicPromise": "Keep truthful currentness; describe limited visible conditions without inventing weather"
+      },
+      {
+        "evidence": "Camera inactive/stale/broken or reused historical frame",
+        "action": "FAIL_CLOSED",
+        "publicPromise": "Do not feature as current; preserve source provider access where appropriate"
+      },
+      {
+        "evidence": "Embedding/rebroadcast not explicitly permitted",
+        "action": "EXTERNAL_SOURCE_ONLY",
+        "publicPromise": "Open Live Source to original provider"
+      }
+    ],
+    "newNetworkScreening": {
+      "countryNovelty": "Prefer underrepresented geography after full catalog dedupe",
+      "minimumChecks": [
+        "first-party/current source URL",
+        "source-specific location",
+        "recent capture/playback evidence",
+        "permission",
+        "different placeId and meaningful visitor experience"
+      ],
+      "noNamedGapChasing": true
+    }
+  },
+  "business": {
+    "opportunityTiers": [
+      {
+        "tier": "PUBLIC_INTEREST_SOURCE",
+        "condition": "government/scientific/park operator",
+        "action": "Traffic-first. Do not assume outreach, payment or embedding rights."
+      },
+      {
+        "tier": "OBSERVED_PRIVATE_SOURCE_OWNER",
+        "condition": "private source with actual aggregate handoff demand and verified ownership/contact",
+        "action": "Prepare owner review, no automatic outreach; potential destination-related visitor benefit"
+      },
+      {
+        "tier": "EXACT_PLANNING_OFFER",
+        "condition": "existing approved affiliate relationship, destination-match and human-verified tracked deep link",
+        "action": "Offer only after voluntary planning intent; do not mix with source button"
+      },
+      {
+        "tier": "NEW_COMMERCIAL_PROVIDER",
+        "condition": "different partner, new terms or account",
+        "action": "HOLD_OWNER_APPROVAL"
+      }
+    ],
+    "qualificationFields": [
+      "sourceId",
+      "placeId",
+      "provider",
+      "commercialOrPublicInterest",
+      "permissionEvidence",
+      "verifiedContactRoute",
+      "lastSourceCheck",
+      "aggregateSourceOpens",
+      "relevantLocalVisitorBenefit",
+      "possiblePartnerModel",
+      "ownerApproval",
+      "outreachStatus"
+    ],
+    "publisherGuard": {
+      "travelpayoutsDriveSitewide": "OFF_HOLD",
+      "automaticKeywordLinks": false,
+      "automaticPlacement": false,
+      "sourceButtonRewriting": false,
+      "commissionRanking": false,
+      "autoOutreach": false,
+      "noRevenueInference": true
+    }
+  },
+  "traffic": {
+    "campaignStatus": "EDITORIAL_READY_NOT_PUBLISHED",
+    "organicWaves": [
+      {
+        "id": "tokyo-islands-network",
+        "collection": "https://earthrightnow.app/discover/tokyo-islands-live/",
+        "audience": "island/coastal travel curiosity",
+        "storyHook": "Five remote islands, five official live port views — see how different the coast looks right now.",
+        "visitorAction": "Open the collection; continue into one or more genuine provider feeds.",
+        "measurement": "landing -> selected island -> other island / source outbound",
+        "guard": "Check real production routing and source health before sharing"
+      },
+      {
+        "id": "tokyo-islands-ja",
+        "collection": "https://earthrightnow.app/ja/discover/tokyo-islands-live/",
+        "audience": "Japanese-language island discovery",
+        "storyHook": "東京の島々の港を現在の映像から探す。",
+        "visitorAction": "Visit localized collection; follow official source handoff.",
+        "measurement": "localized landing -> outbound and secondary views",
+        "guard": "Verify Japanese route/title/canonical and actual present sources before sharing"
+      }
+    ],
+    "repeatUseExperiment": {
+      "id": "island-branching",
+      "question": "Does a thematic multi-place collection produce more second-place opens than generic homepage entry?",
+      "design": "Compare aggregate cohort-level collection landing counts and second-place opens against comparable homepage landings in successive windows; no visitor profiling",
+      "minimumEvidence": [
+        "eligible landings",
+        "multiple place opens",
+        "provider handoffs",
+        "return/referral trends"
+      ],
+      "suppressFragmentNoise": true,
+      "doNotClaimCausation": true
+    },
+    "measurementContract": {
+      "baseline30d": {
+        "approxUniqueVisitors": 54,
+        "pageViews": 359,
+        "searches": 108,
+        "externalSourceOpens": 82,
+        "travelOptionOpens": 10
+      },
+      "metrics": [
+        "qualified landings",
+        "secondPlaceOpens",
+        "externalSourceOpens",
+        "searchZeroResultsAfterSettle",
+        "explicitTravelOptionOpens",
+        "successfulShareCopy"
+      ],
+      "notes": "Directional, not conversion/revenue"
+    }
+  },
+  "release": {
+    "publicMutation": false,
+    "handoffUpdate": false,
+    "requires": [
+      "successful Pages Operations Syntax same content SHA",
+      "actual earthrightnow.app source and collection verification",
+      "startup core <= 575000 bytes",
+      "no stale or duplicated healthy place inflation",
+      "tracked links exact and verified"
+    ],
+    "noProductionClaim": true
+  }
+}
