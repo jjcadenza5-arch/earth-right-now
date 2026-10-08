@@ -8840,3 +8840,118 @@ Latest aggregate Operations evidence remains directional only:
 4. Keep qualifying source-owner partnership candidates from real aggregate outbound demand, without outreach until the evidence and visitor benefit are meaningful.
 5. Continue demand-led planning/affiliate utility separately from the honest Open Live Source button.
 6. Keep same-SHA Pages + Operations + production-domain verification for every substantial visitor-facing checkpoint.
+
+
+## Large demand-led visitor + business expansion checkpoint — 2026-10-08 05:06 UTC
+
+### Canonical validated production state
+- Production content SHA: `50c143d3a59f651793835363f077ddc8c0aa81e4`.
+- **Deploy ERN to GitHub Pages #2894**: SUCCESS.
+- **ERN Operations Check #1655**: SUCCESS.
+- **ERN JavaScript Syntax Check #1180**: SUCCESS.
+- Pages and Operations validated the same content SHA.
+- **Verify deployed visitor reality sync**: SUCCESS against `earthrightnow.app`.
+- **Verify deployed social preview metadata**: SUCCESS.
+- **IndexNow recent URL notification**: SUCCESS.
+- This supersedes production content SHA `b2e32a4d909ab01ee6ff93d499fdff3fce0176f5`.
+
+### Visitor-side expansion — Mount St. Helens
+The existing supplemental **Mount St. Helens — Johnston Ridge** record was promoted into the core catalog as an inside-ERN provider-authorized CURRENT IMAGE:
+- source id: `us-mount-st-helens-current-image`
+- provider: U.S. Geological Survey / Cascades Volcano Observatory
+- exact current image: `https://volcanoes.usgs.gov/vsc/captures/st_helens/jro-webcam.jpg`
+- official evidence page: `https://www.usgs.gov/media/webcams/johnston-ridge-observatory-mount-st-helens`
+- truth: `LIVE_IMAGE`
+- permission: `EMBED_ALLOWED`
+- playback: `IMAGE_REFRESH`
+- refresh cadence: 5 minutes
+- rights basis: USGS Public Domain
+- discovery card uses the exact source image
+- whole-frame CURRENT IMAGE viewer contract remains in force
+
+Two overlapping supplemental Mount St. Helens rows were removed during promotion rather than retaining duplicate representations.
+
+USGS independently documents that the Johnston Ridge research-camera image refreshes every five minutes and is Public Domain.
+
+### Demand-led planning/business expansion
+Two exact Viator planning offers were added after fresh 2026 inventory checks:
+1. **Maho Beach / St. Maarten**
+   - offer id: `viator-maho-beach-public`
+   - exact current Maho Beach product: `198496P3`
+   - reuses ERN's owner-verified Viator identity `P00322254 / mcid 42383`
+   - `manualOpenVerified=false`
+2. **Yehliu Geopark / Taiwan North Coast**
+   - offer id: `viator-yehliu-geopark-public`
+   - exact current Yehliu/Jiufen/Shifen product: `174468P7`
+   - reuses the same owner-verified Viator identity
+   - `manualOpenVerified=false`
+
+Both remain downstream planning utilities only. Commercial value cannot affect Earth ranking.
+
+### Source-currentness gating correctly preserved
+Real production verification exposed an important boundary:
+- Maho's current-image source is currently outside the stricter destination-page freshness window.
+- Yehliu's underlying source is current, but its destination page requires embed playback proof no older than 24 hours; the last human playback proof is older than that.
+- Therefore both planning offers remain catalog/business-ready but their static destination pages correctly suppress the affiliate action until the corresponding Earth view satisfies the page-currentness gate again.
+
+The production verifier now explicitly requires this behavior:
+- if a source/page is current, its verified planning action must appear;
+- if source/playback proof is stale, the commercial action must stay hidden.
+
+Do not weaken this rule. A commercially ready offer never makes an Earth view current.
+
+### Analytics baseline reconciliation
+Canonical business-growth and traffic-growth files now share the Operations #1651 aggregate snapshot:
+- approximate unique visitors: **54**
+- page views: **358**
+- searches: **106**
+- zero-result searches: **41**
+- place/window opens: **334**
+- external-source opens: **81**
+- verified planning-option opens: **10**
+- shares/copies: **0**
+
+Top clean-v2 destination opens:
+- Ruapehu: 8
+- Taranaki Maunga: 6
+- Yellowstone Biscuit Basin: 4
+- Denpasar: 3
+- Kyoto Kifune Shrine: 3
+
+This is aggregate directional evidence only; no causal, booking, commission or revenue inference is permitted.
+
+### Source-partner qualification expanded
+The permanent source-partner lane was refreshed from real external-source demand.
+New/updated candidates include:
+- Maho Beach / Visit St. Maarten / ShowMe Caribbean — OBSERVE
+- Little Bay / EarthCam — TRAFFIC_ONLY_OBSERVE
+
+The existing hospitality/resort/destination OBSERVE set remains in place. No automatic outreach or partner claim is permitted. Current traffic remains early; repeated value plus a clear visitor benefit is required before outreach readiness.
+
+### Thailand demand gap expanded honestly
+Search telemetry now shows a Thailand demand cluster beyond the existing Chiang Mai gap:
+- Hua Hin
+- Dolphin Bay / Sam Roi Yot
+- Prachuap Khiri Khan coast
+
+Added `thailand-gulf-current-window-demand` to the source-gap watchlist.
+Fresh research found official destination/traffic context but no trustworthy source-specific scenic current feed suitable for promotion. Static tourism imagery, generic highway cameras and prerecorded beach videos remain disallowed substitutes.
+
+### Lean-core state
+- `data/sources.json`: **291,781 bytes**
+- startup lean core: **573,638 bytes**
+- enforced ceiling: **575,000 bytes**
+- remaining headroom: **1,362 bytes**
+- core catalog: **329**
+- supplemental catalog: **430**
+
+The 575 KB ceiling was not raised and no source/rights/truth/currentness/attribution safeguard was weakened.
+
+### Next autonomous lane
+1. Continue large-batch visitor-side expansion where exact current playback/image rights are verified.
+2. Continue business-side planning/source-partner expansion from real aggregate demand, but preserve source-currentness gating.
+3. Prefer dedupe/promote-in-place and sidecar evidence over uncontrolled core growth.
+4. Continue searching the Chiang Mai and Hua Hin/Dolphin Bay demand gaps without weak substitutes.
+5. Revalidate stale source/playback evidence naturally; never refresh timestamps from page reachability alone.
+6. Continue qualified organic-discovery work and internal continuation; share growth must remain unclaimed until real share/copy events appear.
+7. Require same-SHA Pages + Operations + production-domain verification at each substantial visitor-facing checkpoint.
