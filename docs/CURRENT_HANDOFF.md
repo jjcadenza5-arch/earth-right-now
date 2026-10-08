@@ -8513,11 +8513,11 @@ Production verifier at this checkpoint reports:
 
 This is a good handoff point for continuing ERN in a fresh ChatGPT thread.
 
-Latest validated production checkpoint remains:
-- production content SHA: `17372bdc9195d03d297fd6da0acad8c5052390c3`
-- Pages #2861: SUCCESS
-- Operations #1624: SUCCESS
-- live-domain production reality verifier: `ok: true`
+Latest validated production checkpoint at the time of that note was later superseded. Do not use the historical SHA below as canonical:
+- historical production content SHA: `17372bdc9195d03d297fd6da0acad8c5052390c3`
+- historical Pages #2861: SUCCESS
+- historical Operations #1624: SUCCESS
+- historical live-domain production reality verifier: `ok: true`
 
 Important nuance discovered after that checkpoint:
 - The public `LIVE HERE` label and Operations playback-renewal queue use different horizons by design.
@@ -8533,3 +8533,67 @@ Next technical priority before further current-image expansion:
 - After headroom is created, continue editorial current-image expansion from already staged provider-authorized candidates (USGS/GeoNet first), then visitor/business/traffic growth.
 - Maintain the same completion rule: matching successful Pages + Operations on one SHA plus live-domain verification before calling a substantial visitor-facing checkpoint complete.
 
+
+
+## Reconciliation + GeoNet current-image expansion checkpoint — 2026-10-08 03:30 UTC
+
+### Canonical reconciliation
+- GitHub `main` was reconciled against Actions and the existing handoff.
+- The prior final new-chat continuity note incorrectly pointed back to historical production SHA `17372bdc9195d03d297fd6da0acad8c5052390c3` even though later production checkpoints already existed.
+- The last validated production state before this batch was `5e3e85d171119d3e8378d27a51917985183eb263` with matching Pages #2878 / Operations #1638 / Syntax #1167 success and live-domain production reality verification.
+- Documentation-only commits after that checkpoint did not have Pages or Operations runs and therefore were never treated as a newer validated production content SHA.
+
+### New validated production content state
+- Production content SHA: `c9d61b2566a8140707e33e2277b5ff84baaf9dc8`.
+- **Deploy ERN to GitHub Pages #2879**: SUCCESS.
+- **ERN Operations Check #1639**: SUCCESS.
+- **ERN JavaScript Syntax Check #1168**: SUCCESS.
+- Pages and Operations validated the exact same content SHA.
+- Pages step **Verify deployed visitor reality sync**: SUCCESS against `earthrightnow.app`.
+- This satisfies the required completion rule: same-SHA Pages + Operations success plus production-domain verification.
+
+### Durable lean-core discipline preserved
+- The strict 575 KB lean-core ceiling was not raised.
+- `sources.json` remains compactly serialized.
+- No truth, rights, currentness, source, search or attribution safeguards were removed.
+- The current-image expansion was done by upgrading existing source rows rather than creating duplicate catalog rows.
+
+### Provider-authorized current-image expansion realized
+Three already-staged GeoNet targets were promoted from link-only current-image references to provider-authorized refreshable current images using GeoNet's documented latest-image contract:
+- **Mount Ngauruhoe** — `https://images.geonet.org.nz/volcano/cameras/latest/ngauruhoe.jpg`
+- **Tongariro** — `https://images.geonet.org.nz/volcano/cameras/latest/tongariro.jpg`
+- **Whakaari / White Island (Te Kaha camera)** — `https://images.geonet.org.nz/volcano/cameras/latest/tekaha.jpg`
+
+Preserved safeguards:
+- `LIVE_IMAGE` truth semantics only; no false live-video claim.
+- `EMBED_ALLOWED` only because GeoNet documents latest-image access and requires attribution.
+- `IMAGE_REFRESH` playback with 10-minute refresh cadence.
+- Exact source image is used as the discovery-card visual.
+- GeoNet / Earth Sciences New Zealand attribution is retained.
+- Existing place IDs were reused; no duplicate destination inflation.
+
+GeoNet's own current camera documentation confirms:
+- latest images are available through stable camera-ID URLs;
+- images update when new photographs arrive, typically every 10 minutes;
+- Ngauruhoe, Tongariro and Te Kaha are current documented camera IDs;
+- webcam images should be cited appropriately.
+
+### Production reality contract strengthened
+Production verification now explicitly requires seven provider-authorized current-image cards:
+- Mount Ruapehu
+- Yellowstone Biscuit Basin
+- Yellowstone Lake
+- Taranaki Maunga
+- Mount Ngauruhoe
+- Tongariro
+- Whakaari / White Island
+
+The source-backed Watch Earth visual floor was raised from 12 to 15 while preserving the provider-diversity floor.
+
+### Next autonomous lane
+1. Continue provider-authorized current-image expansion only where exact current endpoints and reuse/attribution terms are documented.
+2. Prefer zero-bloat upgrades of existing destinations over duplicate source rows.
+3. Continue visitor-side + business-side utility from real clean-v2 behavior, avoiding duplicate partner coverage.
+4. Continue repeated genuine zero-result research without promoting standby, stale or context-only pages as live.
+5. Continue qualified organic discovery and deep-link sharing work using real analytics; do not claim sharing growth until successful share/copy events occur.
+6. Preserve the strict 575 KB ceiling and same-SHA Pages + Operations + production-domain verification rule for every substantial visitor-facing checkpoint.
