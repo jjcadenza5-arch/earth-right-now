@@ -8754,3 +8754,89 @@ Initial future partnership candidates include:
 Do not contact or claim relationships automatically. Promote to outreach-ready only after repeated aggregate source-specific value plus verified ownership and a clear visitor benefit.
 
 This becomes a permanent ERN business lane alongside affiliate planning, future disclosed sponsorship/business utility and qualified organic traffic growth.
+
+
+## Source-partner + Taiwan inside-live expansion checkpoint — 2026-10-08 04:39 UTC
+
+### Canonical validated production state
+- Production content SHA: `b2e32a4d909ab01ee6ff93d499fdff3fce0176f5`.
+- **Deploy ERN to GitHub Pages #2890**: SUCCESS.
+- **ERN Operations Check #1651**: SUCCESS.
+- Pages and Operations validated the same content SHA.
+- **Verify deployed visitor reality sync**: SUCCESS against `earthrightnow.app`.
+- **Verify deployed social preview metadata**: SUCCESS.
+- **IndexNow recent URL notification**: SUCCESS.
+- This supersedes production content SHA `164575b8107c6afa496c98e91c0601792c8b0a2d`.
+
+### Source-partner business lane is now canonical
+Owner approved a permanent business principle for external source traffic:
+- **Open Live Source remains the real provider/source handoff.**
+- Never convert it silently into an affiliate redirect or paid placement.
+- Monetization can happen around the source relationship: referral/booking commission, destination affiliate agreement, ERN visitor benefit/discount, reciprocal/co-marketing, disclosed business utility, or a neutral source/destination partnership.
+- Preferred model: visitor benefit + qualified ERN traffic for the source owner + optional ERN referral/commission value.
+- Partner/payment status can never affect Earth ranking, truth, currentness, permission or source inclusion.
+
+Machine-readable strategy:
+- `data/source-partner-strategy.json`
+- business signal integration: `data/business-growth-signals.json`
+
+Initial OBSERVE-only candidates from real source-specific outbound demand include:
+- Santorini.net / Altana Heritage Suites
+- Skeikampen
+- Karakol Ski Base
+- Oeschinensee
+- NIZUC Resort & Spa
+- Beach View Hotel, Barbados
+- Odjo d'Água Hotel, Cape Verde
+
+No automatic outreach or relationship claim is allowed. Current click counts are qualification evidence only.
+
+### Taiwan inside-ERN live expansion
+Two existing official Taiwan Tourism Administration sources were upgraded from external-only handoffs to inside-ERN live playback:
+- **Yehliu Geopark — Taiwan North Coast**
+- **Heping Island Park — Keelung**
+
+Evidence:
+- North Coast & Guanyinshan National Scenic Area's official site currently lists both destinations in its live-camera collection.
+- ERN already held exact official-page YouTube player targets and deployed human playback confirmation from 2026-10-05.
+- Standard YouTube no-cookie embeds are used.
+- Provider/YouTube branding is preserved; ERN does not restream.
+- Official source links remain available.
+
+Production verification explicitly requires both source IDs to remain:
+- `LIVE_VIDEO`
+- `EMBED_ALLOWED`
+- `EMBED`
+- exact `youtube-nocookie.com/embed/` playback targets
+
+### Durable lean-core headroom
+The first Taiwan promotion candidate correctly failed the strict 575 KB budget at **575,980 bytes**.
+The ceiling was not raised.
+
+Repair strategy:
+- verbose audit/evidence prose was moved into `data/source-evidence-notes.json`, which is not part of the startup core;
+- runtime source rows retain concise, non-empty rights/currentness markers;
+- 30 overly technical source stories were shortened into cleaner visitor-facing copy;
+- the original detailed story/evidence prose remains preserved in the audit sidecar.
+
+Final validated performance:
+- `data/sources.json`: **290,581 bytes**
+- lean startup core: **572,438 bytes**
+- enforced ceiling: **575,000 bytes**
+- recovered headroom: **2,562 bytes**
+
+No rights, truth, currentness, source, attribution or release safeguard was removed.
+
+### Current traffic/business interpretation
+Latest aggregate Operations evidence remains directional only:
+- external source opens are a useful future partnership qualification signal;
+- source-specific click counts are not bookings, conversions, endorsements or revenue;
+- commercial-property/resort source candidates remain OBSERVE-only while ERN traffic is still early.
+
+### Next autonomous lane
+1. Preserve the new source-partner strategy as a permanent business lane.
+2. Continue inside-ERN promotion where exact official playback/permission evidence exists.
+3. Continue provider-authorized current-image expansion using the recovered lean-core headroom.
+4. Keep qualifying source-owner partnership candidates from real aggregate outbound demand, without outreach until the evidence and visitor benefit are meaningful.
+5. Continue demand-led planning/affiliate utility separately from the honest Open Live Source button.
+6. Keep same-SHA Pages + Operations + production-domain verification for every substantial visitor-facing checkpoint.
