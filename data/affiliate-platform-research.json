@@ -188,7 +188,12 @@
     "manualToolsOnly": true,
     "automaticLinkRewritingAllowed": false,
     "automaticPlacementAllowed": false,
-    "rankingAffectedByCommission": false
+    "rankingAffectedByCommission": false,
+    "ownerDriveObservedAt": "2026-10-08T07:20:00Z",
+    "ownerDriveObservedState": "SETUP_PROMPT_VISIBLE_DRIVE_NOT_WORKING",
+    "ownerDriveDecision": "HOLD_SITE_WIDE_DRIVE_AUTOMATION",
+    "ownerDriveEvidence": "Owner screenshots show Travelpayouts Drive setup prompt plus Content Analytics, Targeted Offers, Switch Links, Link Relevant Keywords, Insert Recommendations and Display Smart Previews. ERN intentionally keeps Drive automation off.",
+    "driveFutureExperiment": "Only on explicit planning surfaces after material traffic growth and separate owner approval; never rewrite Open Live Source."
   },
   {
     "id": "hotels-com",
