@@ -13,7 +13,7 @@ const blockers=[];
 if(Number(phase.phaseNumber)<8)blockers.push("CANONICAL_PHASE_BEFORE_8");
 if(status.entryApproved!==true||status.separateFeatureGatesRemainOff!==true)blockers.push("PHASE8_OPERATING_BOUNDARY");
 if(!html.includes('id="editorialCollections"'))blockers.push("HOMEPAGE_COLLECTIONS_MISSING");
-for(const id of ["beaches-water","mountains-snow","cities-streets","wildlife-nature","calm-scenic"])if(!html.includes("./discover/"+id+"/"))blockers.push("HOMEPAGE_COLLECTION_LINK_"+id);
+for(const q of ["Beaches","Mountains","Cities","Wildlife","Nature"])if(!html.includes("./?q="+q+"#search"))blockers.push("HOMEPAGE_DISCOVERY_SEARCH_LINK_"+q);
 if(!builder.includes("EDITORIAL_COLLECTIONS")||!builder.includes("editorialCollectionRows"))blockers.push("SHARED_COLLECTION_ENGINE_NOT_WIRED");
 if(!builder.includes("Share this collection"))blockers.push("COLLECTION_SHAREABILITY_MISSING");
 for(const key of ["collectionsHeading","collectionWater","collectionMountains","collectionCities","collectionWildlife","collectionCalm"])if(!i18n.includes(key))blockers.push("MULTILINGUAL_COLLECTION_COPY_"+key);
