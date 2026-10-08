@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:58:00Z",
+  "generatedAt": "2026-10-08T07:12:00Z",
   "title": "ERN Source Partner Strategy",
   "productPrinciple": "See Live → trust the source → discover the place → optionally plan or buy.",
   "sourceButtonInvariant": "Open Live Source must remain the genuine provider handoff. It is not a disguised ad, affiliate redirect or paid-ranking mechanism.",
@@ -126,6 +126,14 @@
       "observedSourceOpens": 0,
       "state": "OBSERVE_NEW_SOURCE_WITH_PLANNING_UTILITY",
       "reason": "First-party hospitality live source plus a useful Hua Hin planning path creates a future visitor-benefit/referral candidate. No source-specific outbound demand has accumulated yet, so outreach would be premature."
+    },
+    {
+      "sourceId": "phuket-karon-marina-live",
+      "provider": "Marina Phuket Resort",
+      "sourceOwnerType": "hospitality",
+      "observedSourceOpens": 0,
+      "state": "OBSERVE_NEW_SOURCE_WITH_PLANNING_UTILITY",
+      "reason": "First-party resort live source plus a verified downstream Phuket activity path creates a natural future visitor-benefit/referral candidate. No source-specific outbound demand has accumulated yet, so outreach is premature."
     }
   ],
   "notOutreachReadyReason": "Source-specific outbound evidence is now reconciled to Operations #1672. Several commercial-fit owners have repeated opens, but counts remain small and no candidate yet has enough repeated value plus a concrete visitor benefit to justify broad outreach. Public/science sources remain traffic-only by default.",
