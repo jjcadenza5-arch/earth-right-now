@@ -8099,3 +8099,94 @@ This sample is still too small for ranking conclusions. It is directional aggreg
 3. Research repeated genuine search gaps rather than reacting to one-off generic terms.
 4. Improve related-place / return-visitor journeys only where production evidence shows friction.
 5. Continue source-health maintenance and provider/geographic diversity without count chasing.
+
+## Reality catch-up → quality/traffic expansion checkpoint — 2026-10-08 01:34 UTC
+
+### Canonical production state
+- Validated production content SHA: `f2a4f20a730d8e46464cdf845b82bc661e69c110`.
+- **Deploy ERN to GitHub Pages #2848** (run 37713016785): SUCCESS.
+- **ERN Operations Check #1612** (run 37713016793): SUCCESS.
+- **ERN JavaScript Syntax Check #1155**: SUCCESS.
+- Pages and Operations validated the exact same content SHA.
+- The post-deploy production reality verifier passed against the real `earthrightnow.app` domain.
+- IndexNow accepted 56 recently updated URLs; this is submission evidence only, not guaranteed indexing/ranking.
+
+### Remaining catch-up debt closed
+- `data/focused-expansion-plan.json` no longer treats the old 319-place / 350–400 target as the operating reality.
+- The operating baseline is now **751 healthy searchable distinct places across 130 country/territory labels**.
+- Catalog count is explicitly no longer a primary milestone. Expansion is now judged by visitor utility, truthful source quality, provider/geographic diversity, repeat exploration, genuine demand gaps and useful downstream planning.
+- Supplemental discovery is treated as part of the unified public discovery universe rather than as an old hidden/search-only scale target.
+- Internal operating/business strategy files remain private; production verification checks the intended public behavior rather than publishing internal plans merely to make a verifier pass.
+
+### Traffic-growth strategy advanced
+The traffic model now prioritizes the visitor loop:
+**qualified discovery → strong first 30 seconds → open another place → share a destination deep link → useful planning → return**.
+
+Production now verifies destination share attribution in the main viewer:
+- successful viewer share/copy events carry the destination/place ID;
+- homepage sharing remains separate and does not contaminate destination attribution;
+- clean-v2 destination sharing can therefore become useful aggregate evidence once real visitors use it.
+- The lean/performance budget was preserved; an intermediate version correctly failed for exceeding the app/core ceiling and was trimmed instead of raising the threshold.
+
+Latest Operations #1612 aggregate observation:
+- approximate unique visitors: **54**
+- page views: **344**
+- Earth searches: **87**
+- zero-result searches: **36**
+- place/window opens: **300**
+- external-source opens: **80**
+- Facebook-family referral views: **32**
+- destination share/copy events: **0** at this observation
+- Watch Earth: **14 strong current / 14 inside ERN**, status BALANCED.
+
+Interpretation remains privacy-safe and non-causal. Clean share/destination signals are directional only; they do not identify individuals or prove referral causation, bookings, conversion, commission or revenue.
+
+### Demand-led business expansion realized on production
+- Clean-v2 destination activity identified **Mount Ruapehu** as the strongest early destination-open signal.
+- The GeoNet / Earth Sciences New Zealand Ruapehu current-image source was freshly revalidated and remains HEALTHY.
+- One exact, current downstream planning utility was added: **Ride the Mt Ruapehu Sky Waka** via Viator.
+- The tracked URL reuses ERN's already owner-verified Viator identity; this exact URL is recorded truthfully as not separately owner-click-verified.
+- Affiliate revenue-readiness counts were synchronized to the added source-eligible public offer.
+- The real production verifier confirms `ruapehuPlanningPathVisible: true`.
+- Commercial value remains downstream from Earth discovery and cannot influence ranking/source truth.
+
+### Production verifier — real website
+The live-domain check returned:
+- `homeRevision: f2a4f20a730d`
+- core records: **328**
+- supplemental records: **432**
+- combined public discovery records: **760**
+- healthy searchable places: **751**
+- healthy country/territory labels: **130**
+- Taitung Jinzun benchmark: present
+- Jinzun commission-capable offer: ready
+- Jinzun commercial path: hidden while playback proof is aged
+- Jinzun truthful playback gate: active
+- analytics: live
+- traffic semantics: v2
+- traffic/business baselines: reconciled
+- destination commercial telemetry: active
+- destination share attribution: active
+- public expansion reality: reconciled
+- Ruapehu demand-led planning path: visible
+- observed search terms `chicago`, `arches`, `new york`: resolve
+- Watch Earth source-backed visuals: **9**
+- Watch Earth visual providers: **6**
+
+### Lessons from failed intermediate candidates
+The release contract worked as intended:
+1. one intermediate candidate failed the lean budget after share-attribution code increased `app-lite.js`; implementation was trimmed without raising the budget;
+2. another failed commercial consistency because the Ruapehu verification time was mistakenly future-dated and revenue-readiness totals drifted; the evidence timestamp and counts were corrected rather than weakening the gate;
+3. another deployed but failed the post-deploy verifier because it tried to require a private strategy file on the public website; the verifier was corrected to keep private plans private and verify their intended public result instead.
+
+No failed candidate is canonical.
+
+### Next autonomous expansion lane
+1. Continue first-30-seconds Watch Earth improvements only with trustworthy current source-backed visuals.
+2. Use clean-v2 traffic to prioritize destination journey improvements and repeated genuine search gaps; do not chase one-off generic queries.
+3. Increase qualified organic traffic through destination deep links, search/AI discoverability, destination sharing and related-place continuation.
+4. Expand verified planning/business utility only where real visitor intent and current source truth justify it.
+5. Keep traffic-gated programs event-driven; do not invent thresholds or force applications.
+6. Keep Jinzun as the quality benchmark and Ruapehu as the first clean-v2 demand-led expansion example.
+7. Preserve matching successful Pages + Operations on the same SHA plus live-domain verification as the completion rule for future substantial visitor-facing checkpoints.
+
