@@ -55,6 +55,24 @@ export const EDITORIAL_COLLECTION_LOCALES=Object.freeze({
   ja:{title:"静かで美しい地球",description:"ゆっくり眺めたくなる穏やかで美しい窓。"},
   zh:{title:"宁静与风景地球",description:"值得停留片刻的安静、美丽窗口。"},
   es:{title:"Tierra tranquila y escénica",description:"Ventanas serenas y hermosas para mirar un poco más."}
+ },
+ "volcanoes-earth-science":{
+  en:{title:"Volcanoes & Earth Science",description:"Volcanoes, craters, geothermal places and Earth-science monitoring."},
+  th:{title:"ภูเขาไฟและวิทยาศาสตร์โลก",description:"ภูเขาไฟ ปล่องภูเขาไฟ พื้นที่ความร้อนใต้พิภพ และการติดตามทางวิทยาศาสตร์โลก"},
+  de:{title:"Vulkane & Geowissenschaften",description:"Vulkane, Krater, Geothermalgebiete und geowissenschaftliche Beobachtung."},
+  fr:{title:"Volcans & sciences de la Terre",description:"Volcans, cratères, sites géothermiques et suivi scientifique de la Terre."},
+  ja:{title:"火山と地球科学",description:"火山、火口、地熱地帯、地球科学の観測。"},
+  zh:{title:"火山与地球科学",description:"火山、火山口、地热区域与地球科学监测。"},
+  es:{title:"Volcanes y ciencias de la Tierra",description:"Volcanes, cráteres, zonas geotérmicas y observación científica de la Tierra."}
+ },
+ "parks-protected-places":{
+  en:{title:"Parks & Protected Places",description:"National parks, scenic areas, geoparks, reserves and protected landscapes."},
+  th:{title:"อุทยานและพื้นที่คุ้มครอง",description:"อุทยานแห่งชาติ เขตทัศนียภาพ อุทยานธรณี เขตสงวน และภูมิประเทศที่ได้รับการคุ้มครอง"},
+  de:{title:"Parks & Schutzgebiete",description:"Nationalparks, Landschaftsgebiete, Geoparks, Reservate und geschützte Landschaften."},
+  fr:{title:"Parcs & espaces protégés",description:"Parcs nationaux, sites paysagers, géoparcs, réserves et paysages protégés."},
+  ja:{title:"公園と保護地域",description:"国立公園、景勝地、ジオパーク、保護区、保護された景観。"},
+  zh:{title:"公园与保护地",description:"国家公园、风景区、地质公园、保护区与受保护景观。"},
+  es:{title:"Parques y espacios protegidos",description:"Parques nacionales, áreas escénicas, geoparques, reservas y paisajes protegidos."}
  }
 });
 
