@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T01:18:00Z",
+  "generatedAt": "2026-10-08T02:05:00Z",
   "purpose": "Increase qualified organic discovery, repeat exploration, deep-link sharing and useful downstream planning intent from the production-reconciled 751-place ERN catalog.",
   "currentSearchableHealthyPlaces": 751,
   "unlockTargets": [
@@ -138,10 +138,10 @@
   },
   "unlockReadiness": "data/travelpayouts-unlock-readiness.json",
   "latestObservedTraffic": {
-    "observedAt": "2026-10-07T17:21:08Z",
+    "observedAt": "2026-10-08T01:29:29Z",
     "windowDays": 30,
-    "approximateUniqueVisitors": 53,
-    "pageViews": 340,
+    "approximateUniqueVisitors": 54,
+    "pageViews": 344,
     "googleFamilyReferrals": 18,
     "facebookFamilyReferrals": 32,
     "earthSearches": 87,
@@ -193,7 +193,7 @@
         "count": 1
       }
     ],
-    "interpretationBoundary": "Aggregate privacy-preserving evidence only. Traffic metric semantics v2 is active. Rolling totals still contain historical window activity, while destination ranking now uses clean v2 place-open attribution. No counts identify individual visitors or prove channel causation, bookings, conversions or revenue.",
+    "interpretationBoundary": "Aggregate privacy-preserving evidence only. Traffic metric semantics v2 is active. Rolling totals still contain historical window activity, while destination ranking now uses clean v2 place-open attribution. No counts identify individual visitors or prove channel causation, bookings, conversions or revenue. Share actions are zero at this observation; instrumentation is live but no organic share behavior is yet claimed.",
     "metricSemanticsAtObservation": "V2_ACTIVE_WITH_LEGACY_WINDOW_TOTALS",
     "topPlacesInterpretation": "Clean v2 destination-open attribution is now non-empty. Current ranking begins after the 2026-10-07T14:55:03Z attribution boundary and should remain separate from older legacy place counters.",
     "cleanV2DestinationOpens": [
@@ -218,7 +218,8 @@
         "count": 1
       }
     ],
-    "cleanV2DestinationShares": []
+    "cleanV2DestinationShares": [],
+    "shareClicks": 0
   },
   "trafficMetricSemanticsVersion": 2,
   "cleanDestinationAttributionStartsAt": "2026-10-07T14:55:03Z"
