@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T16:51:00+07:00",
+  "updatedAt": "2026-10-08T17:05:00+07:00",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -815,6 +815,67 @@
       "野沢温泉",
       "野沢温泉スキー場",
       "Nozawa Onsen Nagano"
+    ],
+    "chile-antarctica-rodolfo-marsh": [
+      "Base Presidente Eduardo Frei Montalva",
+      "Teniente Rodolfo Marsh",
+      "Aeródromo Teniente Rodolfo Marsh",
+      "Isla Rey Jorge"
+    ],
+    "south-africa-kwa-maritane-waterhole": [
+      "Kwa Maritane Bush Lodge",
+      "Pilanesberg National Park",
+      "Kwa Maritane Waterhole"
+    ],
+    "south-africa-kruger-shalati-bridge": [
+      "Kruger Shalati",
+      "Selati Bridge",
+      "Sabie River",
+      "Train on the Bridge"
+    ],
+    "japan-shiga-kogen": [
+      "志賀高原",
+      "志賀高原スキー場",
+      "Shiga Kogen Nagano"
+    ],
+    "japan-yuzawa-kogen": [
+      "湯沢高原",
+      "湯沢高原スキー場",
+      "Yuzawa Kogen Niigata"
+    ],
+    "japan-togakushi-ski": [
+      "戸隠スキー場",
+      "戸隠",
+      "Togakushi Nagano"
+    ],
+    "chile-valle-nevado": [
+      "Valle Nevado Chile",
+      "Valle Nevado Ski",
+      "Cordillera de los Andes"
+    ],
+    "chile-nevados-chillan": [
+      "Nevados de Chillán",
+      "Termas de Chillán"
+    ],
+    "chile-el-colorado": [
+      "El Colorado Ski",
+      "El Colorado Chile",
+      "Farellones"
+    ],
+    "chile-portillo": [
+      "Ski Portillo",
+      "Laguna del Inca",
+      "Portillo Chile"
+    ],
+    "south-africa-kruger-orpen": [
+      "Orpen Rest Camp",
+      "Kruger Orpen Gate",
+      "Orpen Wildlife Cam"
+    ],
+    "south-africa-kruger-olifants": [
+      "Olifants Rest Camp",
+      "Olifants River",
+      "Kruger Olifants Camera"
     ]
   }
 }
