@@ -1,3 +1,4 @@
+// traffic snapshot reconciled 2026-10-08 04:54
 // Kilauea fail-closed staging reconciled 2026-10-08
 // Kilauea readiness counts reconciled 2026-10-08
 const base=(process.argv[2]||"https://earthrightnow.app/").replace(/\/$/,""),build=String(process.env.GITHUB_SHA||"").slice(0,12);
