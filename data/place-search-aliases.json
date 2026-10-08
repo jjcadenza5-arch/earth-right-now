@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T17:05:00+07:00",
+  "updatedAt": "2026-10-08T17:18:00+07:00",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -876,6 +876,136 @@
       "Olifants Rest Camp",
       "Olifants River",
       "Kruger Olifants Camera"
+    ],
+    "taiwan-wanggong-fishing-port": [
+      "王功漁港",
+      "Wanggong Fishing Harbor",
+      "Wanggong Changhua"
+    ],
+    "changhua-white-dolphin-house": [
+      "白海豚屋",
+      "Changhua White Dolphin House",
+      "彰化白海豚"
+    ],
+    "changhua-baguashan-great-buddha": [
+      "八卦山大佛",
+      "Baguashan Buddha",
+      "彰化八卦山"
+    ],
+    "taiwan-emei-lake": [
+      "峨眉湖",
+      "Emei Lake Hsinchu",
+      "新竹峨眉湖"
+    ],
+    "taiwan-deji-reservoir": [
+      "德基水庫",
+      "Deji Dam",
+      "Lishan Reservoir"
+    ],
+    "ushuaia-harbour-municipal": [
+      "Puerto de Ushuaia",
+      "Canal Beagle Ushuaia",
+      "Tierra del Fuego Ushuaia"
+    ],
+    "namibia-okaukuejo-waterhole": [
+      "Okaukuejo",
+      "Etosha Waterhole",
+      "Etosha National Park Namibia"
+    ],
+    "el-salvador-santa-ana-volcano": [
+      "Volcán de Santa Ana",
+      "Ilamatepec",
+      "Santa Ana Volcano El Salvador"
+    ],
+    "el-salvador-san-miguel-volcano": [
+      "Volcán de San Miguel",
+      "Chaparrastique",
+      "San Miguel El Salvador"
+    ],
+    "ecuador-guagua-pichincha": [
+      "Volcán Guagua Pichincha",
+      "Guagua Pichincha Ecuador",
+      "Pichincha Volcano"
+    ],
+    "peru-sara-sara-volcano": [
+      "Volcán Sara Sara",
+      "Sara Sara Ayacucho",
+      "Sara Sara Peru"
+    ],
+    "colombia-purace-volcano": [
+      "Volcán Puracé",
+      "Puracé Cauca",
+      "Parque Nacional Natural Puracé"
+    ],
+    "colombia-nevado-del-huila": [
+      "Nevado del Huila",
+      "Volcán Nevado del Huila",
+      "Huila Colombia"
+    ],
+    "colombia-cerro-machin": [
+      "Cerro Machín",
+      "Volcán Machín",
+      "Tolima Machín"
+    ],
+    "colombia-sotara-volcano": [
+      "Volcán Sotará",
+      "Sotará Cauca",
+      "Sotará Colombia"
+    ],
+    "colombia-cumbal-volcano": [
+      "Volcán Cumbal",
+      "Cumbal Nariño",
+      "Cumbal Colombia"
+    ],
+    "colombia-nevado-del-tolima": [
+      "Nevado del Tolima",
+      "Volcán Nevado del Tolima",
+      "Tolima Colombia"
+    ],
+    "indonesia-mount-merapi": [
+      "Gunung Merapi",
+      "Merapi Volcano Java",
+      "Gunung Merapi Jawa"
+    ],
+    "italy-mount-etna": [
+      "Etna",
+      "Monte Etna",
+      "Vulcano Etna Sicilia"
+    ],
+    "italy-stromboli-volcano": [
+      "Stromboli Volcano",
+      "Vulcano Stromboli",
+      "Isole Eolie Stromboli"
+    ],
+    "vanuatu-yasur-volcano": [
+      "Mount Yasur",
+      "Yasur Tanna Island",
+      "Yasur Volcano Vanuatu"
+    ],
+    "san-marino-piazza-liberta": [
+      "Piazza della Libertà",
+      "Palazzo Pubblico San Marino",
+      "San Marino Liberty Square"
+    ],
+    "madeira-camara-de-lobos": [
+      "Câmara de Lobos",
+      "Camara de Lobos Madeira",
+      "Baía de Câmara de Lobos"
+    ],
+    "madeira-ponta-do-sol": [
+      "Ponta do Sol Madeira",
+      "Ponta do Sol Portugal",
+      "Ponta do Sol Webcam"
+    ],
+    "madeira-pico-do-areeiro": [
+      "Pico do Arieiro",
+      "Pico do Areeiro Madeira",
+      "Pico Arieiro"
+    ],
+    "liechtenstein-malbun-sareis": [
+      "Sareis",
+      "Malbun Sareis",
+      "Sareis Liechtenstein"
     ]
   }
 }
