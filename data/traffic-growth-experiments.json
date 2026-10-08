@@ -74,6 +74,38 @@
         "organic/referral/search behavior under manual explicit monetization only"
       ],
       "boundary": "Future Drive test requires separate owner approval and planning-surface-only scope."
+    },
+    {
+      "id": "multilingual-strong-source-collections-2026-10-08",
+      "priority": "P1",
+      "status": "READY_FOR_PRODUCTION_VALIDATED_OBSERVATION",
+      "source": "185 existing searchable destination alias groups; Pages #2942 and #2943 owner-confirmed green",
+      "hypothesis": "Destination-specific searches in Japanese, Traditional Chinese, Spanish and romanized place names lead to more qualified Earth opens than generic homepage entry.",
+      "candidateClusters": [
+        "Tokyo island ports",
+        "Taiwan coastal places",
+        "Chile and Patagonia",
+        "African wildlife",
+        "New Zealand scenic mountains"
+      ],
+      "metrics": [
+        "settled search success by query group",
+        "destination landing views",
+        "second-place opens",
+        "genuine source handoffs",
+        "explicit travel planning actions"
+      ],
+      "releaseConditions": [
+        "Verify Pages Operations Syntax matching content SHA",
+        "Verify real domain Search/Explore and source handoff",
+        "Preserve source ranking neutrality and freshness",
+        "No external social posting without checking target routes"
+      ],
+      "guardrails": [
+        "No affiliate attribution to Earth/source buttons",
+        "No claimed conversion from aggregate clicks",
+        "No fabricated traffic or source freshness"
+      ]
     }
   ],
   "successDefinition": "More qualified destination entry and continued Earth exploration, with source truth and visitor trust preserved.",
