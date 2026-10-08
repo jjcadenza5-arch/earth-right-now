@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import {spawnSync} from "node:child_process";
 const r=spawnSync(process.execPath,["scripts/phase8-exit-review.mjs"],{encoding:"utf8"});
-assert.equal(r.status,0,r.stderr);
+assert.equal(r.status,0,`Phase 8 exit diagnostics:\n${r.stdout}\n${r.stderr}`);
 const x=JSON.parse(r.stdout);
 assert.equal(x.phase,8);
 assert.equal(x.ready,true);
