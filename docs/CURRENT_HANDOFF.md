@@ -9141,3 +9141,156 @@ Existing source-owner candidates remain evidence-led. Aggregate external-source 
 5. Continue analytics-led source-owner qualification from real aggregate outbound demand without premature outreach.
 6. Continue qualified organic discovery and zero-result replay; do not claim share growth while share/copy events remain zero.
 7. Preserve the same-SHA Pages + Operations + production-domain verification requirement for every substantial visitor-facing checkpoint.
+
+
+## Large visitor + business + traffic-growth checkpoint — 2026-10-08 06:43 UTC
+
+### Canonical validated production state
+- Production content SHA: `e4b12fff8011ab08740c075be22330eee4beb69a`.
+- **Deploy ERN to GitHub Pages #2910**: SUCCESS.
+- **ERN Operations Check #1672**: SUCCESS.
+- **ERN JavaScript Syntax Check #1189**: SUCCESS.
+- Pages, Operations and Syntax validated the same content SHA.
+- **Verify deployed visitor reality sync** against the actual `earthrightnow.app`: SUCCESS.
+- **Verify deployed social preview metadata**: SUCCESS.
+- **IndexNow recent URL notification**: SUCCESS.
+- This supersedes validated production content SHA `bcb13bd27df8ac9d384bf8475731834d800efc29`.
+
+### Durable lean-core headroom recovery
+ERN had only 223 bytes of protected startup-core headroom after the Hua Hin checkpoint, so the next large batch began by recovering space without deleting source evidence.
+
+Implementation:
+- 102 runtime source rows with overly long visitor/evidence prose were compacted.
+- Detailed original story/rights prose was preserved in `data/source-evidence-notes.json` as audit-sidecar evidence.
+- Runtime rows retain concise visitor-facing copy plus non-empty evidence markers.
+- Truth, permission, currentness, health, attribution and release gates were not weakened.
+
+Validated performance from Pages #2910:
+- `data/sources.json`: **287,508 bytes** (down from 292,920; **5,412 bytes recovered**)
+- startup lean core: **569,365 bytes**
+- protected ceiling: **575,000 bytes**
+- remaining headroom: **5,635 bytes**
+- startup JS: **159,173 / 160,000 bytes**
+- eager homepage iframes: **0**
+
+The recovered space is growth capacity, not permission for uncontrolled catalog count. Continue preferring dedupe, in-place upgrades and sidecars.
+
+### Demand-led Thailand organic / AI discovery expansion
+A new editorial collection is now production-live:
+- route: `/discover/thailand-live-now/`
+- title: **Thailand Live & Current Views**
+- localized across all seven ERN discovery locales, including Thai: **มุมมองสดและปัจจุบันในประเทศไทย**
+- all localized collection routes are in the generated sitemap / hreflang system.
+
+The collection deliberately uses the same currentness gates as the rest of ERN.
+At this checkpoint it truthfully includes current Thailand entries such as:
+- Hua Hin Beach — Centara Grand
+- Koh Samui — Crystal Bay / Silver Beach
+- Koh Samui — Lipa Noi Beach
+
+**Bangkok — Sukhumvit Road is correctly excluded** because its source evidence is outside the active currentness window. Pattaya remains degraded and is also not forced into the collection.
+
+The six-place threshold for automatic country hubs was **not lowered**. The Thailand collection is a focused editorial discovery path built from real demand and truthful currently eligible sources, not a thin SEO page.
+
+A release candidate initially failed because the new eighth editorial collection had not yet been registered in the Phase 9 localized-discovery registry. The registry was reconciled; no test was bypassed. A later production verifier initially required stale Bangkok, and that verifier was corrected to preserve the currentness gate rather than forcing stale content into the collection.
+
+### Traffic-growth strategy is now canonical
+A dedicated machine-readable strategy now lives at:
+- `data/traffic-growth-strategy.json`
+
+Its four operating loops are:
+1. search + AI discovery;
+2. deep-link social distribution;
+3. source-owner referral loop;
+4. visitor utility + return exploration.
+
+The private traffic-growth brief was also strengthened to expose zero-result count/rate and to recommend repeated genuine gap research when the gap rate is materially high.
+
+Current growth principles:
+- favor destination and editorial-collection deep links over repeated homepage-only sharing;
+- rotate destinations/countries so aggregate referral quality can be compared;
+- preserve Search Console/sitemap as the Google feedback loop and IndexNow as supplemental discovery only;
+- do not interpret submission as proof of indexing;
+- use real zero-result replay before adding content;
+- never create a weak source merely to capture a search term;
+- wait for real successful share/copy events before claiming visitor sharing growth.
+
+A fresh external search check during this batch still did not surface ERN pages for the tested ERN/Hua Hin/Koh Samui queries. Treat indexing propagation as **unproven**, not as failure or success. Continue crawlability, internal linking, sitemap/Search Console observation and qualified deep-link distribution.
+
+### Latest real operating evidence
+Operations #1672 reports the same reconciled 30-day aggregate baseline now stored across traffic/business growth layers:
+- approximate unique visitors: **54**
+- page views: **359**
+- Facebook-family referral views: **32** (**8.91%** of page views)
+- searches: **108**
+- zero-result searches: **41** (**37.96%**)
+- place/window opens: **338**
+- external-source opens: **82**
+- travel-option opens: **10**
+- successful share/copy actions: **0**
+
+Since the captured baseline, Operations reports:
+- +11 approximate visitors
+- +102 page views
+- +86 searches
+- +145 place/window opens
+- +44 external-source opens
+
+Top current aggregate searches:
+- Taitung Jinzun: 9
+- New: 3
+- New York: 3
+- Arches: 2
+- Chicago: 2
+
+Top clean-v2 destination opens:
+- Ruapehu: 8
+- Taranaki Maunga: 6
+- Rovaniemi Santa Claus Village: 4
+- Yellowstone Biscuit Basin: 4
+- Denpasar: 3
+
+Search-gap replay:
+- historical zero-result events: **39**
+- currently resolved: **8**
+- genuine current gaps: **29**
+- low-confidence partials: **2**
+- **Dolphin Bay remains a genuine current gap.**
+
+All metrics remain aggregate directional evidence only; no causal, booking, conversion, commission or revenue inference is allowed.
+
+### Business / source-owner lane
+The source-partner strategy was refreshed to the current aggregate evidence:
+- external-source opens: **82**
+- travel-option opens: **10**
+
+**Centara Grand Beach Resort Hua Hin** is now explicitly tracked as a new hospitality source-owner observation candidate with a useful downstream Hua Hin planning path.
+- state: `OBSERVE_NEW_SOURCE_WITH_PLANNING_UTILITY`
+- source-specific observed outbound opens at addition: 0
+- no outreach-ready claim
+- no relationship or endorsement claim
+
+Operations independently stages Centara only for:
+- `RESEARCH_PROVIDER_TERMS_AND_BRANDED_EMBED_PATH`
+
+Permission, branded/embed compatibility and fresh human playback proof remain separate gates. The current Hua Hin source therefore stays `EXTERNAL_LIVE / LINK_ONLY` until those gates genuinely pass.
+
+Existing source-owner candidates remain evidence-led. Aggregate traffic alone is not enough for broad outreach.
+
+### Thailand and Chiang Mai gaps
+- **Hua Hin:** resolved with a first-party current source.
+- **Dolphin Bay / Sam Roi Yot:** still unresolved; no trustworthy current scenic source has passed ERN gates.
+- **Chiang Mai:** still unresolved; the official PAO CCTV surface remains standby / waiting-for-feed rather than a reliable scenic current window.
+
+No static tourism imagery, prerecorded video, generic road CCTV or unrelated nearby source has been substituted.
+
+### Next autonomous lane
+1. Use the recovered ~5.6 KB startup-core headroom selectively for high-value visitor utility, not indiscriminate count growth.
+2. Continue provider-authorized current-image and inside-ERN playback upgrades where exact permission/currentness/playback evidence exists.
+3. Continue Dolphin Bay / Sam Roi Yot and Chiang Mai source research without weak substitutes.
+4. Research Centara provider terms and branded/embed pathway; keep the source external-only until separately proven.
+5. Observe the new Thailand collection through Search Console/referral/deep-link behavior before multiplying country/thematic pages.
+6. Continue destination/collection deep-link distribution and compare aggregate continuation behavior; do not claim share growth while successful share/copy events remain zero.
+7. Continue source-owner qualification from real source-specific outbound traffic and visitor-benefit fit; no premature outreach.
+8. Keep planning/affiliate utility downstream from Earth discovery and commercial-neutral.
+9. Preserve same-SHA Pages + Operations + production-domain verification for every substantial visitor-facing checkpoint.
