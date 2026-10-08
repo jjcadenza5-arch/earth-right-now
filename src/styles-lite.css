@@ -33,3 +33,11 @@ body{padding-bottom:calc(92px + env(safe-area-inset-bottom))}
 
 /* Editorial Fuji variation, licensed image: Ajaykumar Kannan, Unsplash photo ZasJ7-YIK5Q. Not a live image. */
 body.ern-hero-fuji-alternate .hero-live{background-image:url("https://images.unsplash.com/photo-1743996902640-dad8216729f4?auto=format&fit=crop&fm=jpg&q=80&w=2200"),url("../assets/ern-fuji-mockup-hero.jpg?v=20261004k");background-position:center 48%}
+
+/* Licensed editorial category photography (not live/current camera feeds). Gradients remain fallbacks. */
+.world-shelf-card.mountains{background-image:linear-gradient(0deg,rgba(4,28,24,.40),rgba(4,28,24,.07)),url("https://images.unsplash.com/photo-1784536424390-b6e653809373?auto=format&fit=crop&fm=jpg&q=75&w=960");background-size:cover;background-position:center}
+.world-shelf-card.water{background-image:linear-gradient(0deg,rgba(4,28,24,.40),rgba(4,28,24,.07)),url("https://images.unsplash.com/photo-1771945484043-3a17fbf57a4b?auto=format&fit=crop&fm=jpg&q=75&w=960");background-size:cover;background-position:center}
+.world-shelf-card.cities{background-image:linear-gradient(0deg,rgba(4,28,24,.40),rgba(4,28,24,.07)),url("https://images.unsplash.com/photo-1767749505538-23e71d1af2c5?auto=format&fit=crop&fm=jpg&q=75&w=960");background-size:cover;background-position:center}
+.world-shelf-card.wildlife{background-image:linear-gradient(0deg,rgba(4,28,24,.40),rgba(4,28,24,.07)),url("https://images.unsplash.com/photo-1759128312246-0a18fae0d46a?auto=format&fit=crop&fm=jpg&q=75&w=960");background-size:cover;background-position:center}
+.world-shelf-card.calm{background-image:linear-gradient(0deg,rgba(4,28,24,.40),rgba(4,28,24,.07)),url("https://images.unsplash.com/photo-1546019116-2f6179dc3965?auto=format&fit=crop&fm=jpg&q=75&w=960");background-size:cover;background-position:center}
+.world-shelf-card::after{content:"EDITORIAL PHOTO";position:absolute;right:11px;top:11px;font-family:system-ui,sans-serif;font-size:8px;font-weight:700;letter-spacing:.12em;color:#fff;background:rgba(3,32,28,.68);padding:5px 6px;border-radius:20px;pointer-events:none}
