@@ -178,9 +178,15 @@ for(const [id,items] of map){
   const countryHtml=countryHubEligible(preferred.country)?'<p class="ern-note">Country guide: <a href="'+base+'countries/'+countrySlug(preferred.country)+'/">See current ERN places in '+esc(preferred.country)+'</a></p>':"";
   const breadcrumb='<nav class="ern-breadcrumb" aria-label="Breadcrumb"><a href="'+base+'">Earth Right Now</a><span>›</span><a href="'+base+'places/">Places</a><span>›</span><span aria-current="page">'+esc(title)+'</span></nav>';
 
-  const primaryCta=currentItems.length
-    ?'<a class="ern-cta" href="'+base+'?q='+encodeURIComponent(title)+'#view='+encodeURIComponent(currentItems[0].id)+'">See '+esc(title)+' in Earth Right Now →</a>'
-    :'<a class="ern-cta" href="'+base+'?q='+encodeURIComponent(title)+'">Explore current ERN windows →</a>';
+  // A provider-hosted window should open in one click, without an unnecessary ERN viewer hop.
+  // Embedded and refreshable views still belong in the ERN viewer.
+  const directSource=currentItems.find(s=>s.playback==="EXTERNAL"&&safe(s.officialUrl||s.sourceUrl));
+  const internalSource=currentItems.find(s=>s.playback!=="EXTERNAL");
+  const primaryCta=directSource
+    ?'<a class="ern-cta" href="'+esc(safe(directSource.officialUrl||directSource.sourceUrl))+'" rel="noopener noreferrer">See the live place at its source ↗</a>'
+    :internalSource
+      ?'<a class="ern-cta" href="'+base+'?q='+encodeURIComponent(title)+'#view='+encodeURIComponent(internalSource.id)+'">See '+esc(title)+' live in ERN →</a>'
+      :'<a class="ern-cta" href="'+base+'?q='+encodeURIComponent(title)+'">Explore current ERN windows →</a>';
   const trustLinks='<p class="ern-note"><a href="'+base+'how-ern-works.html">How ERN works</a> · <a href="'+base+'source-policy.html">Live & current source policy</a> · <a href="'+base+'editorial-principles.html">Editorial principles</a></p>';
 
   const shareButton='<button class="ern-cta ern-share" id="sharePlace" type="button">Share this place</button>';
