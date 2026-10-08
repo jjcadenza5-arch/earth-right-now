@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T07:37:00Z",
+  "generatedAt": "2026-10-08T09:57:00Z",
   "objective": "Balance visitor value, organic audience growth and sustainable funding. Preserve Open Live Source as an honest source handoff; monetize only around useful planning and voluntary source-owner partnerships, never by changing Earth ranking, source truth or currentness.",
   "currentMilestone": "GROW_ORGANIC_VISITORS_REPEAT_USE_AND_USEFUL_TRIP_PLANNING_WHILE_SEEKING_FIRST_PARTNER_CONFIRMED_COMMISSION",
   "signals": [
@@ -156,6 +156,28 @@
     "newestNetwork": "Tokyo Metropolitan Government Izu/Ogasawara port live cameras",
     "newestPlaces": 5,
     "commercialTreatment": "PUBLIC_AUTHORITY_TRAFFIC_ONLY_BY_DEFAULT",
-    "planningRule": "Add commercial planning only where a real useful downstream option exists; a new Earth source does not require monetization."
+    "planningRule": "Add commercial planning only where a real useful downstream option exists; a new Earth source does not require monetization.",
+    "nextCommercialWorkstream": {
+      "id": "source-to-planning-qualified-utility",
+      "status": "OPERATE_EXISTING_APPROVED_PARTNERS_ONLY",
+      "reason": "Prioritize direct optional visitor planning after demonstrable place/source interest, rather than automatic monetization or commercial-ranking pressure.",
+      "networks": [
+        "Tokyo Islands",
+        "Chile / Patagonia",
+        "New Zealand nature and snow",
+        "South Africa wildlife and Cape Town"
+      ],
+      "requiredForOffer": [
+        "Healthy source/place status verified independently",
+        "Destination-matching first-party partner inventory",
+        "Owner/account-generated exact affiliate destination link verified",
+        "Planning placement separate from Open Live Source",
+        "Aggregate downstream clicks observed without inferring bookings"
+      ],
+      "publicAuthorityTreatment": "TRAFFIC_FIRST_NO_ASSUMED_COMMERCIAL_PARTNERSHIP",
+      "driveAutomation": "SITE_WIDE_OFF_HOLD",
+      "outreach": "NO_UNAPPROVED_OUTREACH",
+      "publication": "DO_NOT_PUBLISH_UNVERIFIED_OFFERS"
+    }
   }
 }
