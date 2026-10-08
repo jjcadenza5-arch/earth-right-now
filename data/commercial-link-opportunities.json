@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T05:52:00Z",
+  "generatedAt": "2026-10-08T07:12:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -8307,6 +8307,29 @@
       "publicInventoryEvidenceUrl": "https://www.viator.com/en-AU/tours/Taipei/Yehliu-and-Jiufen-and-Shifen-Day-Tour-Departure-from-Ximending/d5262-174468P7",
       "manualOpenVerified": false,
       "nextAction": "Observe aggregate Yehliu planning clicks; do not add duplicate North Coast commercial density without visitor evidence."
+    },
+    {
+      "id": "viator-phuket",
+      "destination": "Phuket, Thailand",
+      "placeIds": [
+        "thailand-phuket-karon"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "ERN now has a truthful first-party Phuket/Karon live source and Viator has deep current Phuket activity inventory. One island-level planning action creates a See Live → Decide → Go bridge without affecting Earth ranking.",
+      "state": "VERIFIED_LINK_ADDED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Phuket/d349-ttd",
+      "publicInventoryEvidence": "Current 2026 Viator Phuket inventory exposes 1,000+ tours and excursions spanning islands, cruises, sightseeing, water activities and cultural experiences.",
+      "nextAction": "Keep this one destination-level planning link current; observe aggregate clicks and avoid duplicate Phuket commercial density.",
+      "trackingUrl": "https://www.viator.com/Phuket/d349-ttd?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-08T07:12:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "ERN owner-verified Viator partner ID P00322254 / mcid 42383 reused from existing manually verified ERN Viator links.",
+      "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Phuket destination inventory was independently rechecked on the exact destination page.",
+      "verificationEvidenceUrl": "https://www.viator.com/Phuket/d349-ttd",
+      "manualOpenVerified": false
     }
   ]
 }
