@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:52:00Z",
+  "generatedAt": "2026-10-08T06:36:00Z",
   "objective": "Balance visitor value, organic audience growth and sustainable funding. Preserve Open Live Source as an honest source handoff; monetize only around useful planning and voluntary source-owner partnerships, never by changing Earth ranking, source truth or currentness.",
   "currentMilestone": "GROW_ORGANIC_VISITORS_REPEAT_USE_AND_USEFUL_TRIP_PLANNING_WHILE_SEEKING_FIRST_PARTNER_CONFIRMED_COMMISSION",
   "signals": [
@@ -81,21 +81,21 @@
     "noAutomaticProgramActivation": true
   },
   "currentOperatingEvidence": {
-    "evidenceSource": "ERN Operations #1655 aggregate analytics snapshot",
+    "evidenceSource": "ERN Operations #1662 aggregate analytics snapshot",
     "windowDays": 30,
-    "observedAt": "2026-10-08T05:06:00Z",
+    "observedAt": "2026-10-08T06:19:00Z",
     "approximateUniqueVisitors": 54,
-    "pageViews": 358,
+    "pageViews": 359,
     "googleReferralViews": 18,
     "facebookReferralViews": 32,
-    "earthSearches": 106,
+    "earthSearches": 108,
     "zeroResultSearches": 41,
-    "windowOpens": 334,
-    "externalSourceOpens": 81,
+    "windowOpens": 338,
+    "externalSourceOpens": 82,
     "travelOptionOpens": 10,
     "metricSemanticsVersion": 2,
     "cleanDestinationAttributionStartsAt": "2026-10-07T14:55:03Z",
-    "interpretation": "ERN has real discovery, source-handoff and planning activity. Use source-specific opens to qualify future partner outreach and travel-option opens as planning intent only; neither proves conversion or revenue.",
+    "interpretation": "ERN has real discovery, source-handoff and planning activity. Search volume and window opens are rising, while share activity remains unproven. Use destination demand and unresolved search gaps to choose growth work; use source-specific opens for future partner qualification only.",
     "caveat": "Privacy-preserving rolling aggregate evidence only. Clicks do not prove bookings, conversions, commission or revenue; destination ranking cannot use commercial value.",
     "shareClicks": 0
   },
@@ -115,11 +115,11 @@
     "Demand-led planning expansion should prioritize places with real source/destination engagement plus a current useful exact product; it must not influence Earth ranking."
   ],
   "nextOperatingPriorities": [
-    "Increase qualified organic visitors from search, social sharing, AI search and useful deep destination links.",
-    "Make destination shares resolve to crawlable place pages with destination-specific social metadata.",
+    "Grow qualified entry traffic through crawlable destination, collection and country paths chosen from actual search/open demand.",
+    "Use the new Thailand discovery collection as a demand-led organic/AI-search entry path without changing source eligibility.",
+    "Rotate selective manual social sharing toward deep destination/collection links instead of only the homepage; compare aggregate referral behavior without inferring causation.",
     "Improve repeat utility through current-place discovery, saved/recent places and trustworthy source maintenance.",
-    "Surface existing verified activities, culture and transport options naturally after a place is viewed.",
-    "Measure planning clicks by destination and provider; focus future commercial work on demonstrated visitor intent.",
-    "Revisit traffic-gated stay, transport and activity programs only when real audience/planning evidence or partner invitations justify it."
+    "Keep verified planning actions downstream from place interest and measure travel_option_opened by destination/provider.",
+    "Qualify source-owner outreach only after repeated source-specific outbound value plus a clear visitor benefit."
   ]
 }
