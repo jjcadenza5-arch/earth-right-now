@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T02:05:00Z",
+  "generatedAt": "2026-10-08T02:42:00Z",
   "objective": "Balance visitor value, organic audience growth and sustainable commission funding. Use first-party aggregate behavior and partner-confirmed evidence; never let commercial value change Earth ranking, source truth or currentness.",
   "currentMilestone": "GROW_ORGANIC_VISITORS_REPEAT_USE_AND_USEFUL_TRIP_PLANNING_WHILE_SEEKING_FIRST_PARTNER_CONFIRMED_COMMISSION",
   "signals": [
@@ -74,11 +74,11 @@
     "noAutomaticProgramActivation": true
   },
   "currentOperatingEvidence": {
-    "evidenceSource": "ERN Operations #1612 aggregate analytics snapshot / traffic semantics v2 production checkpoint",
+    "evidenceSource": "ERN Operations #1624 aggregate analytics snapshot / traffic semantics v2 production checkpoint",
     "windowDays": 30,
-    "observedAt": "2026-10-08T01:29:29Z",
+    "observedAt": "2026-10-08T02:23:47Z",
     "approximateUniqueVisitors": 54,
-    "pageViews": 344,
+    "pageViews": 350,
     "googleReferralViews": 18,
     "facebookReferralViews": 32,
     "earthSearches": 87,
