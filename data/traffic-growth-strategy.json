@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T07:00:00Z",
+  "generatedAt": "2026-10-08T07:18:00Z",
   "objective": "Increase qualified ERN discovery traffic while preserving source truth, privacy, lean-core limits and commercial-neutral ranking.",
   "evidenceBaseline": {
     "source": "ERN Operations #1672",
@@ -26,7 +26,7 @@
         "Keep sitemap, hreflang, structured data, IndexNow and crawlable provider/source context current.",
         "Preserve raw zero-result counts while triaging genuine destination gaps separately from typing fragments, venue/utility intent and terms that now resolve."
       ],
-      "currentBatch": "Search measurement now uses a longer 1500 ms settle window and schema-v2 read-only gap triage. Current Thailand research priorities include Chiang Mai, Dolphin Bay/Sam Roi Yot and Phuket; secondary Northern Thailand demand is tracked separately."
+      "currentBatch": "Phuket demand is now truthfully resolved with Marina Phuket Resort's first-party Karon Beach live view. Remaining source research is prioritized by destination cluster rather than raw phrase count; Beijing joins Chiang Mai, Dolphin Bay/Sam Roi Yot and Northern Thailand targets as unresolved lanes."
     },
     {
       "id": "deep-link-social-distribution",
@@ -71,11 +71,11 @@
     "Do not exceed the 575 KB lean-core ceiling."
   ],
   "nextMeasurementQuestions": [
-    "Does the longer search settle window reduce progressive typing-fragment zero results in future aggregate windows?",
-    "Which research-qualified destination gaps repeat after noise classification?",
-    "Do Thailand collection/deep-link entries generate qualified page, search, source-open or planning activity?",
-    "Which destination deep links attract referral traffic that continues into multiple place/window opens?",
-    "Which source owners accumulate repeated outbound value sufficient for human partnership review?"
+    "How many genuine destination clusters remain after current catalog replay, rather than how many raw phrases remain?",
+    "Does the 1500 ms settle window reduce progressive typing-fragment zero results in future windows?",
+    "Does the new Phuket source convert prior Phuket zero-result demand into successful place/source opens?",
+    "Which unresolved destination clusters repeat enough to justify deeper source research?",
+    "Which source owners accumulate repeated outbound value plus a concrete visitor benefit sufficient for human partnership review?"
   ],
   "searchMeasurement": {
     "rawZeroResultCountsPreserved": true,
@@ -89,6 +89,8 @@
       "LOW_CONFIDENCE_PARTIAL",
       "CURRENTLY_RESOLVES"
     ],
-    "principle": "Raw zero-result analytics remain historical evidence, but source-research priority must distinguish destination gaps from typing progress, venue/utility intent and already-resolved terms."
+    "principle": "Raw zero-result analytics remain historical evidence, but source-research priority must distinguish destination gaps from typing progress, venue/utility intent and already-resolved terms.",
+    "destinationResearchClustering": true,
+    "clusterPrinciple": "Multiple spellings/languages for one destination count as one research intention while every raw aggregate search term remains preserved."
   }
 }
