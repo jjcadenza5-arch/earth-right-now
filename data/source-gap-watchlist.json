@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:04:00Z",
+  "generatedAt": "2026-10-08T06:58:00Z",
   "publicActivationAllowed": false,
   "gaps": [
     {
@@ -119,9 +119,9 @@
       ],
       "whyImportant": "ERN aggregate search telemetry recorded a Chiang Mai search with no result. A trustworthy current city or scenic window would close a real observed visitor-discovery gap.",
       "researchEvidence": [
-        "Fresh public research found Chiang Mai Provincial Administrative Organization real-time CCTV surfaces, but the visible camera cards were in STANDBY / WAITING FOR FEED and therefore are not suitable for ERN current promotion.",
-        "Tourism Authority of Thailand provides authoritative Chiang Mai destination context but not a current scenic camera on the destination page.",
-        "No weak directory, prerecorded video or generic weather view should be substituted for a verified current Chiang Mai window."
+        "Fresh 2026-10-08 recheck of Chiang Mai Provincial Administrative Organization CCTV surfaces still showed visible camera cards in STANDBY / WAITING FOR FEED, so they remain unsuitable for ERN current promotion.",
+        "Tourism Authority of Thailand provides authoritative Chiang Mai destination context but not a verified current scenic camera on the destination page.",
+        "No weak directory, prerecorded video or generic weather view is an acceptable substitute for a verified current Chiang Mai window."
       ],
       "officialReferenceUrls": [
         "https://chiangmaipao.go.th/all_cctv.php",
@@ -137,7 +137,7 @@
         "Check official university, park, airport, river/traffic and attraction sources for a source-specific current view.",
         "Prefer one strong canonical Chiang Mai place rather than many traffic-camera records."
       ],
-      "lastResearchedAt": "2026-10-04T14:30:00Z"
+      "lastResearchedAt": "2026-10-08T06:58:00Z"
     },
     {
       "id": "thailand-gulf-current-window-demand",
@@ -152,10 +152,10 @@
       ],
       "whyImportant": "ERN aggregate search telemetry recorded Hua Hin and repeated Dolphin Bay / Thailand zero-result searches. This is a real visitor-demand cluster, not an editorial guess.",
       "researchEvidence": [
-        "A first-party Hua Hin live webcam was found on the official Centara Grand Beach Resort Hua Hin YouTube channel and is now cataloged by ERN as EXTERNAL_LIVE / LINK_ONLY.",
-        "Current Viator 2026 Hua Hin inventory independently confirms substantial downstream destination utility, but commercial coverage does not affect source truth or ranking.",
-        "Fresh research still did not establish a trustworthy source-specific scenic current feed for Dolphin Bay / Sam Roi Yot suitable for ERN promotion.",
-        "Thailand Department of Highways and other generic camera surfaces remain disallowed as substitutes unless an exact destination-specific current feed is verified."
+        "Hua Hin remains resolved by the first-party Centara Grand live webcam, cataloged conservatively as EXTERNAL_LIVE / LINK_ONLY.",
+        "Fresh 2026-10-08 recheck of Dolphin Bay Resort and surrounding Sam Roi Yot sources still did not establish a trustworthy source-specific scenic current feed suitable for ERN.",
+        "Current Viator Hua Hin / Pranburi / Sam Roi Yot planning inventory remains separate downstream utility and cannot affect source truth or ranking.",
+        "Thailand Department of Highways and other generic camera surfaces remain disallowed as substitutes unless an exact destination-specific current feed is independently verified."
       ],
       "officialReferenceUrls": [
         "https://www.youtube.com/watch?v=PPJ55qdY3pw",
@@ -174,10 +174,71 @@
         "Continue checking Dolphin Bay Resort, Sam Roi Yot/Khao Sam Roi Yot sources, municipalities, marine/weather/harbour and resort operators for a stable current view.",
         "Prefer one strong canonical Dolphin Bay / Sam Roi Yot source over weak traffic-camera substitutes."
       ],
-      "lastResearchedAt": "2026-10-08T06:04:00Z",
+      "lastResearchedAt": "2026-10-08T06:58:00Z",
       "resolvedPlaces": [
         "Hua Hin Beach — Centara Grand"
       ]
+    },
+    {
+      "id": "phuket-current-window-demand",
+      "region": "Phuket",
+      "country": "Thailand",
+      "priority": "P1",
+      "state": "ANALYTICS_DEMAND_CURRENT_SOURCE_GAP",
+      "targetPlaces": [
+        "Phuket beaches",
+        "Patong / Kata / Karon coast",
+        "Phuket Old Town",
+        "Phuket harbour / marina"
+      ],
+      "whyImportant": "ERN aggregate zero-result telemetry includes both Phuket and Phuket, Thailand. This is real destination demand and should be researched as a source gap, not filled by generic webcam directories.",
+      "researchEvidence": [
+        "Fresh 2026-10-08 research found authoritative Tourism Authority of Thailand destination context and multiple generic/third-party webcam results, but did not establish a sufficiently trustworthy first-party or rights-clear current scenic Phuket source for ERN promotion.",
+        "No source was promoted merely because Phuket is commercially valuable or heavily searched."
+      ],
+      "officialReferenceUrls": [
+        "https://www.tourismthailand.org/Destinations/Provinces/Phuket/350"
+      ],
+      "disallowedShortcuts": [
+        "Do not use generic webcam directories as proof of a trustworthy current source.",
+        "Do not use static resort/tourism marketing imagery as CURRENT IMAGE.",
+        "Do not use prerecorded Phuket travel video as LIVE."
+      ],
+      "nextResearch": [
+        "Check official port/marina, airport, municipality, marine/weather, beach-management and first-party resort sources for source-specific current imagery.",
+        "Prefer one strong canonical Phuket current window over a large set of weak or directory-derived cameras."
+      ],
+      "lastResearchedAt": "2026-10-08T06:58:00Z"
+    },
+    {
+      "id": "north-thailand-secondary-demand",
+      "region": "Northern Thailand beyond Chiang Mai",
+      "country": "Thailand",
+      "priority": "P2",
+      "state": "ANALYTICS_DEMAND_RESEARCH_CLUSTER",
+      "targetPlaces": [
+        "Mae Hong Son",
+        "Chiang Rai / Wat Rong Khun (White Temple)"
+      ],
+      "whyImportant": "Aggregate zero-result telemetry contains Mae Hong Sorn and multiple White Temple / Chiang Rai searches. These are destination-demand signals, but each still needs independent current-source evidence.",
+      "researchEvidence": [
+        "Tourism Authority of Thailand and other official destination surfaces provide authoritative Mae Hong Son and Chiang Rai / Wat Rong Khun context, but fresh 2026-10-08 research did not establish a suitable rights-clear current scenic source for either target.",
+        "Search demand alone does not authorize a catalog record."
+      ],
+      "officialReferenceUrls": [
+        "https://www.tourismthailand.org/Destinations/Provinces/Mae-Hong-Son/105",
+        "https://www.tourismthailand.org/Attraction/wat-rong-khun"
+      ],
+      "disallowedShortcuts": [
+        "Do not convert official static tourism photography into CURRENT IMAGE.",
+        "Do not use prerecorded attraction videos as live coverage.",
+        "Do not broaden a nearby Chiang Mai or generic Northern Thailand source to masquerade as the requested place."
+      ],
+      "nextResearch": [
+        "Check official airport, municipality, park, road/weather and first-party attraction/hospitality sources for exact current imagery.",
+        "Keep Mae Hong Son and Chiang Rai/White Temple separate at promotion time even though they share a research cluster."
+      ],
+      "lastResearchedAt": "2026-10-08T06:58:00Z"
     }
   ]
 }
