@@ -98,12 +98,12 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   }
   if(searchGapTriage){
     lines.push("## Search-gap triage");
-    lines.push(`- Historical zero-result events: ${searchGapTriage.totalZeroResultEvents||0}; currently resolves: ${searchGapTriage.currentlyResolves||0}; genuine current gaps: ${searchGapTriage.genuineCurrentGaps||0}; low-confidence partials: ${searchGapTriage.lowConfidencePartial||0}.`);
+    lines.push(`- Historical zero-result events: ${searchGapTriage.totalZeroResultEvents||0}; currently resolves: ${searchGapTriage.currentlyResolves||0}; genuine destination gaps: ${searchGapTriage.genuineCurrentGaps||0}; subplace/venue gaps: ${searchGapTriage.subplaceOrVenueGaps||0}; non-destination/venue queries: ${searchGapTriage.nonDestinationOrVenueQueries||0}; typing fragments: ${searchGapTriage.progressiveQueryFragments||0}; low-confidence partials: ${searchGapTriage.lowConfidencePartial||0}.`);
     for(const item of (searchGapTriage.rows||[]).slice(0,8)){
       const matches=(item.matches||[]).slice(0,2).map(x=>x.title||x.placeId).join(", ");
       lines.push(`- "${item.query}" ×${item.count||0} — ${item.state}${matches?" → "+matches:""}.`);
     }
-    lines.push("- Read-only triage only: historical zero results that resolve today do not justify new catalog entries or aliases automatically.","");
+    lines.push("- Read-only triage only: raw zero-result counts remain intact, but typing fragments and venue/utility intent are separated from destination-source research. No class may auto-create a source or alias.","");
   }
   if(providerGeneratedTargets?.items?.length){
     lines.push("## Provider-generated target staging");
