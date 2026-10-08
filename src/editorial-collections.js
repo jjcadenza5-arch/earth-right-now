@@ -3,7 +3,9 @@ export const EDITORIAL_COLLECTIONS=Object.freeze([
   {id:"mountains-snow",title:"Mountains & Snow",description:"Explore current and schedule-verified mountain, alpine, snow, ski and volcano places on ERN.",terms:["mountain","snow","ski","volcano","alps","alpine"],query:"mountains"},
   {id:"cities-streets",title:"Cities & Streets",description:"Explore current and schedule-verified city, street, skyline, square and urban places on ERN.",terms:["city","cities","street","urban","skyline","square","harbour","harbor","culture"],query:"cities"},
   {id:"wildlife-nature",title:"Wildlife & Nature",description:"Explore current and schedule-verified wildlife, animal, zoo, aquarium, forest, park and nature places on ERN.",terms:["wildlife","animal","zoo","aquarium","bird","forest","park","nature"],query:"wildlife"},
-  {id:"calm-scenic",title:"Calm & Scenic Earth",description:"Explore current and schedule-verified scenic, peaceful, nature, mountain, beach and water places on ERN.",terms:["beautiful","scenic","nature","mountain","beach","water","park","forest","island"],query:"somewhere peaceful"}
+  {id:"calm-scenic",title:"Calm & Scenic Earth",description:"Explore current and schedule-verified scenic, peaceful, nature, mountain, beach and water places on ERN.",terms:["beautiful","scenic","nature","mountain","beach","water","park","forest","island"],query:"somewhere peaceful"},
+  {id:"volcanoes-earth-science",title:"Volcanoes & Earth Science",description:"Explore current and schedule-verified volcano, crater, geothermal and Earth-science monitoring places on ERN.",terms:["volcano","volcán","crater","geothermal","seismic","eruption","volcanic"],query:"volcanoes"},
+  {id:"parks-protected-places",title:"Parks & Protected Places",description:"Explore current and schedule-verified national parks, scenic areas, geoparks, reserves and protected landscapes on ERN.",terms:["national park","scenic area","geopark","reserve","protected","forest park","nature park"],query:"parks"}
 ]);
 
 const fold=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
