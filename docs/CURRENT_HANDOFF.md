@@ -9294,3 +9294,156 @@ No static tourism imagery, prerecorded video, generic road CCTV or unrelated nea
 7. Continue source-owner qualification from real source-specific outbound traffic and visitor-benefit fit; no premature outreach.
 8. Keep planning/affiliate utility downstream from Earth discovery and commercial-neutral.
 9. Preserve same-SHA Pages + Operations + production-domain verification for every substantial visitor-facing checkpoint.
+
+
+## Qualified-demand traffic + Thailand research checkpoint — 2026-10-08 07:03 UTC
+
+### Canonical validated production state
+- Production content SHA: `f3da5d9f1412641b04181e7335bf48e713025f06`.
+- **Deploy ERN to GitHub Pages #2915**: SUCCESS.
+- **ERN Operations Check #1679**: SUCCESS.
+- **ERN JavaScript Syntax Check #1196**: SUCCESS.
+- Pages, Operations and Syntax validated the same content SHA.
+- **Verify deployed visitor reality sync** against actual `earthrightnow.app`: SUCCESS.
+- **Verify deployed social preview metadata**: SUCCESS.
+- **IndexNow recent URL notification**: SUCCESS.
+- This supersedes production content SHA `e4b12fff8011ab08740c075be22330eee4beb69a`.
+
+### Search analytics quality improved without rewriting history
+The raw 30-day analytics remain unchanged:
+- 108 searches
+- 41 zero-result searches
+- raw zero-result share 37.96%
+- 39 distinct historical zero-result events in the private search-gap replay
+
+However, the previous triage treated too many different behaviors as equivalent source gaps. Examples included progressive typing fragments such as `outlet mall i` / `outlet mall illi...`, venue/utility intent such as Chicago Symphony / outlet mall, and real destination gaps such as Phuket / Chiang Mai.
+
+Changes:
+- public search analytics settle/debounce increased from **900 ms to 1500 ms** to reduce future search-as-you-type fragment noise;
+- raw aggregate counts remain preserved and auditable;
+- search-gap triage upgraded to schema v2 with separate read-only states:
+  - `CURRENTLY_RESOLVES`
+  - `GENUINE_CURRENT_GAP`
+  - `SUBPLACE_OR_VENUE_GAP`
+  - `NON_DESTINATION_OR_VENUE_QUERY`
+  - `PROGRESSIVE_QUERY_FRAGMENT`
+  - `LOW_CONFIDENCE_PARTIAL`
+- no class may automatically add a catalog source or alias;
+- no demand forecast is inferred.
+
+Operations #1679 now reports the historical 39 zero-result terms as:
+- currently resolves: **8**
+- genuine destination gaps: **9**
+- subplace / venue gaps: **3**
+- non-destination / venue queries: **7**
+- progressive typing fragments: **10**
+- low-confidence partials: **2**
+
+This materially improves traffic-growth research efficiency: ERN can preserve the raw demand record while focusing source research on the 9 genuine destination gaps rather than treating 29 heterogeneous rows as equal source gaps.
+
+The production verifier now explicitly requires:
+- 1500 ms settled search analytics;
+- search-gap triage schema v2;
+- raw-zero preservation;
+- automatic catalog and alias mutation disabled.
+
+### Demand-led Thailand source research expanded
+The source-gap watchlist now includes two additional analytics-led lanes without adding weak public content.
+
+#### Phuket — P1
+Observed zero-result demand includes:
+- `phuket`
+- `phuket, thailand`
+
+Fresh research found authoritative destination context and generic/third-party webcam results, but did **not** establish a sufficiently trustworthy first-party or rights-clear current scenic source for ERN promotion.
+
+State: `ANALYTICS_DEMAND_CURRENT_SOURCE_GAP`.
+
+Disallowed shortcuts remain explicit:
+- no generic webcam directory as proof of source quality;
+- no static tourism/resort marketing image as CURRENT IMAGE;
+- no prerecorded travel video as LIVE.
+
+Next research favors official port/marina, airport, municipality, marine/weather, beach-management and first-party resort sources.
+
+#### Northern Thailand secondary demand — P2
+Observed zero-result demand also includes:
+- Mae Hong Son / spelling variants;
+- Chiang Rai / Wat Rong Khun / White Temple queries.
+
+Official tourism context exists, but no rights-clear current scenic source passed ERN gates in the fresh research pass.
+
+State: `ANALYTICS_DEMAND_RESEARCH_CLUSTER`.
+
+Mae Hong Son and Chiang Rai / White Temple remain separate promotion targets even though they share one research cluster.
+
+#### Existing Thailand gaps rechecked
+- **Chiang Mai:** official PAO CCTV surfaces still showed STANDBY / WAITING FOR FEED; no promotion.
+- **Dolphin Bay / Sam Roi Yot:** first-party resort and surrounding source research still did not establish a trustworthy source-specific scenic current feed; no substitute promoted.
+- **Hua Hin:** remains resolved by the first-party Centara live source, external-only / link-only.
+
+### Business / source-partner evidence reconciled
+Source-owner qualification is now explicitly bound to Operations #1672/#1679-era source-specific outbound evidence.
+
+Commercial-fit OBSERVE examples remain small but real:
+- Santorini / Altana: 2 external-source opens
+- Skeikampen: 2
+- Karakol Ski Base: 2
+- Oeschinensee: 2
+- Maho Beach: 2
+- Little Bay / EarthCam: 3
+- NIZUC Cancún: 1
+- Beach View Barbados: 1
+- Cape Verde / Odjo d’Água: 1
+- Centara Hua Hin: 0 at the captured source-specific baseline
+
+No candidate is promoted to outreach-ready merely from these counts.
+
+The strategy now also explicitly distinguishes high-use public/science sources from commercial candidates. Examples:
+- Yellowstone Lake current image: 3 external-source opens
+- Popocatépetl current image: 4 external-source opens
+
+These may deserve discovery/maintenance attention, but remain **traffic-only by default**, not commercial-partner leads.
+
+### Traffic-growth operating model updated
+The canonical traffic strategy and priorities now require research-qualified demand instead of raw zero-result count alone.
+
+The traffic loop now asks:
+1. Does the longer 1500 ms settle window reduce typing-fragment zero results in future windows?
+2. Which genuine destination gaps repeat after classification?
+3. Do Thailand collection/deep-link entries lead to qualified exploration or planning actions?
+4. Which deep links lead visitors into multiple ERN place opens?
+5. Which source owners accumulate repeated outbound value plus a concrete visitor benefit sufficient for human outreach review?
+
+This remains people-first growth:
+- no thin keyword pages;
+- no source invented because a term is popular;
+- no affiliate-driven ranking;
+- no automatic source-owner outreach.
+
+### Lean-core state
+Validated Pages #2915 performance:
+- `data/sources.json`: **287,508 bytes**
+- startup lean core: **569,366 / 575,000 bytes**
+- remaining protected headroom: **5,634 bytes**
+- startup JS: **159,173 / 160,000 bytes**
+- `app-lite.js`: **100,000 bytes**
+- eager homepage iframes: **0**
+
+The one-byte core increase is the analytics debounce change (900 → 1500 ms). The 575 KB ceiling was not raised.
+
+### Release-guard findings handled safely
+Two intermediate guards correctly blocked acceptance during this batch:
+1. Operations rejected the new analytical states until the packet-integrity registry explicitly recognized them. The validator was updated to accept the new **read-only** states while preserving all mutation prohibitions.
+2. Production verification initially tried to fetch private `traffic-growth-strategy.json`, which is intentionally not deployed. The public-verifiable measurement contract was moved into already-deployed `traffic-growth-priorities.json`; the private strategy sidecar remains private.
+
+No guard was bypassed or weakened.
+
+### Next autonomous lane
+1. Use the 9 genuine destination gaps—not the raw 29 old classification—as the primary source-research queue.
+2. Continue Phuket, Chiang Mai, Dolphin Bay / Sam Roi Yot and qualified Northern Thailand research without weak substitutes.
+3. Continue provider-authorized current-image / inside-ERN upgrades where exact source-level rights and playback evidence can be proven.
+4. Keep source-owner partnership qualification based on repeated source-specific outbound value plus concrete visitor benefit; public/science sources remain traffic-only by default.
+5. Observe whether the 1500 ms search settle window lowers progressive-fragment noise in future aggregate windows.
+6. Continue qualified organic discovery and destination/collection deep-link distribution; do not claim share growth until successful share/copy events are non-zero.
+7. Preserve 575 KB lean-core ceiling and same-SHA Pages + Operations + real-domain verification for every substantial visitor-facing checkpoint.
