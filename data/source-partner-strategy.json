@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:36:00Z",
+  "generatedAt": "2026-10-08T06:58:00Z",
   "title": "ERN Source Partner Strategy",
   "productPrinciple": "See Live → trust the source → discover the place → optionally plan or buy.",
   "sourceButtonInvariant": "Open Live Source must remain the genuine provider handoff. It is not a disguised ad, affiliate redirect or paid-ranking mechanism.",
@@ -40,8 +40,8 @@
     "Every commercial relationship must be disclosed where a visitor could reasonably interpret it as commercial."
   ],
   "currentEvidence": {
-    "observationSource": "ERN Operations #1662 / rolling aggregate analytics",
-    "observedAt": "2026-10-08T06:19:00Z",
+    "observationSource": "ERN Operations #1672 / rolling aggregate analytics",
+    "observedAt": "2026-10-08T06:43:09Z",
     "externalSourceOpens": 82,
     "travelOptionOpens": 10,
     "caveat": "Aggregate directional evidence only. Source opens and planning clicks do not prove bookings, revenue, endorsement or source-owner interest."
@@ -128,12 +128,24 @@
       "reason": "First-party hospitality live source plus a useful Hua Hin planning path creates a future visitor-benefit/referral candidate. No source-specific outbound demand has accumulated yet, so outreach would be premature."
     }
   ],
-  "notOutreachReadyReason": "ERN now has a broader set of source-owner candidates and 82 aggregate external-source opens, but source-specific repeated demand remains too early for broad outreach. Continue measuring repeated value plus visitor benefit before any relationship claim.",
+  "notOutreachReadyReason": "Source-specific outbound evidence is now reconciled to Operations #1672. Several commercial-fit owners have repeated opens, but counts remain small and no candidate yet has enough repeated value plus a concrete visitor benefit to justify broad outreach. Public/science sources remain traffic-only by default.",
   "next": [
     "Keep source-specific outbound analytics active.",
     "Add provider/source-owner classification to future private business reports.",
     "Promote candidates to outreach-ready only after repeated aggregate demand plus verified source ownership and a clear visitor benefit.",
     "When outreach begins, lead with measured ERN traffic and visitor value, not paid ranking.",
     "Prefer a visitor benefit + referral/commission structure where appropriate."
+  ],
+  "publicInterestTrafficOnlyExamples": [
+    {
+      "sourceId": "yellowstone-lake-current-image",
+      "observedSourceOpens": 3,
+      "reason": "Government/science current-image source; outbound use is visitor utility, not a commercial-partner signal by default."
+    },
+    {
+      "sourceId": "mexico-popocatepetl-current-image",
+      "observedSourceOpens": 4,
+      "reason": "Public/science monitoring source; strong outbound interest should improve discovery/maintenance priority, not trigger commercial outreach."
+    }
   ]
 }
