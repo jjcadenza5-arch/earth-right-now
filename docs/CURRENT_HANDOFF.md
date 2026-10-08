@@ -8706,3 +8706,51 @@ This supports continuing source-backed current-image quality/depth rather than i
 5. Do not claim social/share growth until successful share/copy events appear.
 6. Keep affiliate/program unlocks event-driven and no paid ranking.
 7. Preserve same-SHA Pages + Operations + production-domain verification for every substantial visitor-facing checkpoint.
+
+
+## Source Partner business principle — 2026-10-08 04:20 UTC
+
+Owner approved a new long-term ERN business lane: derive value from the many honest **Open Live Source** handoffs without compromising the Live Discovery Engine.
+
+Canonical principle:
+- **Open Live Source remains the genuine source/provider handoff.**
+- Never silently replace it with an affiliate redirect or paid destination.
+- Monetize around the relationship, not by corrupting the source button.
+
+Future source-owner value models may include:
+- referral/booking commission;
+- destination-specific affiliate relationship;
+- ERN visitor discount or benefit;
+- reciprocal link/co-marketing;
+- clearly labeled sponsored business utility outside Earth ranking;
+- fixed source/destination partnership only when editorial neutrality remains intact.
+
+Preferred win-win:
+**visitor gets a useful benefit → source owner gets qualified ERN traffic → ERN may earn commission/referral value.**
+
+Protected invariants:
+- commission/payment never changes Watch Earth ranking;
+- partner status never upgrades truth/currentness/permission;
+- a paid source cannot displace a more truthful/useful Earth source;
+- source clicks are aggregate demand evidence only, never proof of bookings, revenue, endorsement or playback;
+- government/science/public-interest sources may remain non-commercial traffic-only sources indefinitely.
+
+A new canonical machine-readable strategy is stored in `data/source-partner-strategy.json`.
+
+Latest aggregate evidence at adoption:
+- 81 live-source outbound opens in the 30-day analytics window;
+- early source-specific demand includes Popocatépetl 4, Addo 3, Little Bay 3, Yellowstone Lake 3, plus several commercial hospitality/resort sources with 1–2 opens.
+- Commercial-property/source candidates are OBSERVE-only for now; current counts are too small for broad outreach.
+
+Initial future partnership candidates include:
+- Santorini / Altana Heritage Suites;
+- Skeikampen;
+- Karakol Ski Base;
+- Oeschinensee;
+- NIZUC Resort & Spa;
+- Beach View Hotel, Barbados;
+- Odjo d'Água Hotel, Cape Verde.
+
+Do not contact or claim relationships automatically. Promote to outreach-ready only after repeated aggregate source-specific value plus verified ownership and a clear visitor benefit.
+
+This becomes a permanent ERN business lane alongside affiliate planning, future disclosed sponsorship/business utility and qualified organic traffic growth.

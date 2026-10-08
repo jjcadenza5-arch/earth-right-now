@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-08T04:20:00Z",
+  "title": "ERN Source Partner Strategy",
+  "productPrinciple": "See Live → trust the source → discover the place → optionally plan or buy.",
+  "sourceButtonInvariant": "Open Live Source must remain the genuine provider handoff. It is not a disguised ad, affiliate redirect or paid-ranking mechanism.",
+  "partnerLifecycle": [
+    "TRAFFIC_ONLY_SOURCE",
+    "OBSERVED_PARTNERSHIP_CANDIDATE",
+    "OUTREACH_READY",
+    "SOURCE_PARTNER_AGREED",
+    "VERIFIED_ERN_SOURCE_PARTNER"
+  ],
+  "possibleValueModels": [
+    "referral or booking commission",
+    "destination-specific affiliate relationship",
+    "ERN visitor discount or benefit",
+    "reciprocal link / co-marketing",
+    "clearly labeled sponsored business utility separate from Earth ranking",
+    "fixed source-partner or destination-partner fee only when editorial neutrality is preserved"
+  ],
+  "visitorBenefitExamples": [
+    "discounted admission or activity",
+    "hotel/resort booking benefit",
+    "free cancellation or small upgrade",
+    "transfer/activity discount code",
+    "useful source-owner offer connected to the exact place"
+  ],
+  "evidenceRules": [
+    "Use aggregate external_source_opened counters by source ID.",
+    "Do not identify individual visitors.",
+    "Do not infer bookings, sales, source playback, or provider endorsement from outbound clicks.",
+    "Do not invent traffic thresholds; use repeated meaningful evidence plus source-owner fit.",
+    "Government/science/public-interest sources can remain traffic-only indefinitely."
+  ],
+  "commercialNeutrality": [
+    "Commission cannot affect Watch Earth ranking.",
+    "Partner status cannot upgrade truth/currentness/permission.",
+    "Paid sources cannot displace a more useful or more truthful Earth source.",
+    "Every commercial relationship must be disclosed where a visitor could reasonably interpret it as commercial."
+  ],
+  "currentEvidence": {
+    "observationSource": "ERN Operations #1647 / 30-day aggregate analytics",
+    "observedAt": "2026-10-08T04:13:52Z",
+    "externalSourceOpens": 81,
+    "caveat": "Aggregate directional evidence only; the current traffic base is still small and this is a learning/qualification stage."
+  },
+  "initialObservedCandidates": [
+    {
+      "sourceId": "santorini-caldera-current-page",
+      "provider": "Santorini.net / Altana Heritage Suites",
+      "sourceOwnerType": "hospitality",
+      "observedSourceOpens": 2,
+      "state": "OBSERVE",
+      "reason": "Commercial hospitality source with direct destination relevance; useful future stay/visitor-benefit partnership candidate."
+    },
+    {
+      "sourceId": "skeikampen-ski",
+      "provider": "Skeikampen",
+      "sourceOwnerType": "mountain_resort",
+      "observedSourceOpens": 2,
+      "state": "OBSERVE",
+      "reason": "Resort source can naturally support lift/activity/stay utility if a future partner path is agreed."
+    },
+    {
+      "sourceId": "karakol-ski-base",
+      "provider": "Karakol Ski Base",
+      "sourceOwnerType": "mountain_resort",
+      "observedSourceOpens": 2,
+      "state": "OBSERVE",
+      "reason": "Direct place/source fit; future lift, stay, lesson or visitor-benefit partnership is plausible after traffic matures."
+    },
+    {
+      "sourceId": "oeschinensee-official",
+      "provider": "Oeschinensee",
+      "sourceOwnerType": "destination_attraction",
+      "observedSourceOpens": 2,
+      "state": "OBSERVE",
+      "reason": "Direct destination operator relationship could support tickets/transport/visitor benefits without changing Earth ranking."
+    },
+    {
+      "sourceId": "cancun-live-aqua-beach",
+      "provider": "NIZUC Resort & Spa",
+      "sourceOwnerType": "hospitality",
+      "observedSourceOpens": 1,
+      "state": "OBSERVE",
+      "reason": "Direct resort-operated live source; potential future stay/referral/visitor-benefit relationship."
+    },
+    {
+      "sourceId": "barbados-paynes-bay-live",
+      "provider": "Beach View Hotel",
+      "sourceOwnerType": "hospitality",
+      "observedSourceOpens": 1,
+      "state": "OBSERVE",
+      "reason": "Hotel-operated source with natural stay/referral fit."
+    },
+    {
+      "sourceId": "cape-verde-santa-maria-bay-live",
+      "provider": "Odjo d'Água Hotel",
+      "sourceOwnerType": "hospitality",
+      "observedSourceOpens": 1,
+      "state": "OBSERVE",
+      "reason": "Hotel-operated live source with natural stay/referral or visitor-benefit fit."
+    }
+  ],
+  "notOutreachReadyReason": "Current counts are useful qualification evidence but still too small to justify broad partner outreach. Continue measuring, improve qualified traffic, and promote only when repeated source-specific value becomes meaningful.",
+  "next": [
+    "Keep source-specific outbound analytics active.",
+    "Add provider/source-owner classification to future private business reports.",
+    "Promote candidates to outreach-ready only after repeated aggregate demand plus verified source ownership and a clear visitor benefit.",
+    "When outreach begins, lead with measured ERN traffic and visitor value, not paid ranking.",
+    "Prefer a visitor benefit + referral/commission structure where appropriate."
+  ]
+}

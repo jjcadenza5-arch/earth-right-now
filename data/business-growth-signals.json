@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T02:42:00Z",
-  "objective": "Balance visitor value, organic audience growth and sustainable commission funding. Use first-party aggregate behavior and partner-confirmed evidence; never let commercial value change Earth ranking, source truth or currentness.",
+  "generatedAt": "2026-10-08T04:20:00Z",
+  "objective": "Balance visitor value, organic audience growth and sustainable funding. Preserve Open Live Source as an honest source handoff; monetize only around useful planning and voluntary source-owner partnerships, never by changing Earth ranking, source truth or currentness.",
   "currentMilestone": "GROW_ORGANIC_VISITORS_REPEAT_USE_AND_USEFUL_TRIP_PLANNING_WHILE_SEEKING_FIRST_PARTNER_CONFIRMED_COMMISSION",
   "signals": [
     {
@@ -13,8 +13,15 @@
     {
       "id": "external-source-engagement",
       "event": "external_source_opened",
-      "meaning": "Visitors find source handoffs useful; supports overall discovery utility but is weaker commercial evidence.",
-      "unlockRelevance": "LOW"
+      "meaning": "Visitors find source handoffs useful. Aggregate source-specific outbound opens can support future source-owner partnership outreach, but clicks do not imply endorsement, permission, conversion or revenue.",
+      "unlockRelevance": "MEDIUM"
+    },
+    {
+      "id": "source-partner-opportunity",
+      "event": "SOURCE_OWNER_PARTNERSHIP_REVIEW",
+      "meaning": "A source owner with a genuine ERN traffic relationship and clear visitor utility may become a future referral, benefit, affiliate or verified-source partner after separate human outreach and agreement.",
+      "unlockRelevance": "HIGH",
+      "firstPartyEvent": false
     },
     {
       "id": "search-demand",
@@ -93,6 +100,10 @@
     "shareClicks": 0
   },
   "balanceRules": [
+    "Open Live Source always remains an honest path to the genuine provider/source; it is never silently replaced by an affiliate or paid destination.",
+    "Source owners may later become ERN partners, referral partners or visitor-benefit partners, but payment cannot change Earth ranking, truth, currentness or source inclusion.",
+    "Prefer win-win partner structures: useful visitor benefit or planning utility + measurable referral value + optional ERN commission, rather than intrusive advertising.",
+    "Aggregate external_source_opened evidence may prioritize outreach, but small click counts are observation evidence only and do not justify relationship claims.",
     "Visitor value comes first within each experience: show the truthful Earth window before planning actions.",
     "Audience growth is a first-class operating goal: improve crawlable destination sharing, search discovery, useful return paths and organic distribution.",
     "Funding is a first-class sustainability goal: expose only verified, contextually useful affiliate actions after destination interest is established.",
