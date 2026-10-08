@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T09:18:00Z",
+  "updatedAt": "2026-10-08T16:14:00+07:00",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -679,6 +679,147 @@
       "Yavapai Observation Station",
       "Grand Canyon South Rim",
       "グランドキャニオン"
+    ],
+    "chile-rapa-nui-mataveri": [
+      "Rapa Nui",
+      "Easter Island",
+      "Isla de Pascua",
+      "Mataveri Airport",
+      "Hanga Roa"
+    ],
+    "chile-arica-chacalluta": [
+      "Arica Chile",
+      "Chacalluta",
+      "Aeropuerto Chacalluta"
+    ],
+    "chile-vina-del-mar": [
+      "Viña del Mar",
+      "Vina del Mar",
+      "Ciudad Jardín Chile"
+    ],
+    "chile-pucon": [
+      "Pucón",
+      "Pucon",
+      "Araucanía Chile"
+    ],
+    "chile-puerto-natales": [
+      "Puerto Natales",
+      "Patagonia Chile",
+      "Última Esperanza"
+    ],
+    "chile-punta-arenas": [
+      "Punta Arenas",
+      "Magallanes Chile",
+      "Strait of Magellan",
+      "Estrecho de Magallanes"
+    ],
+    "chile-puerto-williams": [
+      "Puerto Williams",
+      "Beagle Channel",
+      "Canal Beagle",
+      "Isla Navarino"
+    ],
+    "south-africa-madikwe-tau": [
+      "Madikwe Game Reserve",
+      "Tau Game Lodge",
+      "Madikwe Waterhole"
+    ],
+    "south-africa-klaserie-waterside": [
+      "Klaserie Private Nature Reserve",
+      "Simbavati Waterside",
+      "Greater Kruger"
+    ],
+    "south-africa-camps-bay": [
+      "Camps Bay",
+      "Cape Town South Africa",
+      "Kampsbaai"
+    ],
+    "nz-taupo-lakefront": [
+      "Taupō",
+      "Taupo",
+      "Lake Taupo",
+      "Taupō New Zealand"
+    ],
+    "japan-inawashiro-ski": [
+      "猪苗代スキー場",
+      "猪苗代",
+      "Inawashiro Fukushima"
+    ],
+    "japan-ishiuchi-maruyama": [
+      "石打丸山",
+      "石打丸山スキー場",
+      "Ishiuchi Maruyama Niigata"
+    ],
+    "japan-togari-onsen": [
+      "戸狩温泉",
+      "戸狩温泉スキー場",
+      "Togari Onsen Nagano"
+    ],
+    "costa-rica-punta-leona": [
+      "Punta Leona",
+      "Playa Blanca Costa Rica",
+      "Punta Leona Costa Rica"
+    ],
+    "panama-las-lajas-beach": [
+      "Playa Las Lajas",
+      "Las Lajas Chiriquí",
+      "Las Lajas Panama"
+    ],
+    "panama-camaroncito-beach": [
+      "Camaroncito Beach",
+      "Playa Camaroncito",
+      "Panama Caribbean"
+    ],
+    "new-zealand-lake-pukaki-lakestone": [
+      "Lake Pūkaki",
+      "Lake Pukaki",
+      "Aoraki Mount Cook",
+      "Mackenzie Basin"
+    ],
+    "new-zealand-glentanner-aoraki": [
+      "Glentanner",
+      "Glentanner Park",
+      "Aoraki Mount Cook"
+    ],
+    "new-zealand-hermitage-mount-cook-village": [
+      "Aoraki Mount Cook Village",
+      "The Hermitage Mount Cook",
+      "Mount Cook Village"
+    ],
+    "nz-coronet-peak": [
+      "Coronet Peak",
+      "Queenstown Ski",
+      "Coronet Peak New Zealand"
+    ],
+    "nz-remarkables": [
+      "The Remarkables",
+      "Remarkables Ski Area",
+      "Queenstown New Zealand"
+    ],
+    "nz-mt-hutt": [
+      "Mount Hutt",
+      "Mt Hutt",
+      "Canterbury Ski Area"
+    ],
+    "nz-whakapapa": [
+      "Whakapapa",
+      "Mount Ruapehu",
+      "Mt Ruapehu Ski"
+    ],
+    "japan-rusutsu": [
+      "ルスツ",
+      "ルスツリゾート",
+      "Rusutsu Hokkaido"
+    ],
+    "japan-furano-ski": [
+      "富良野",
+      "富良野スキー場",
+      "Furano Hokkaido"
+    ],
+    "japan-nozawa-onsen": [
+      "野沢温泉",
+      "野沢温泉スキー場",
+      "Nozawa Onsen Nagano"
     ]
   }
 }
