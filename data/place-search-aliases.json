@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T12:02:12Z",
+  "updatedAt": "2026-10-08T08:22:00Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -593,6 +593,43 @@
       "Subaru-Asahi StarCam",
       "Maunakea star cam",
       "Subaru Telescope webcam"
+    ],
+    "japan-izu-oshima": [
+      "伊豆大島",
+      "大島",
+      "Izu Ōshima",
+      "Izu Oshima",
+      "Oshima Island",
+      "大島港"
+    ],
+    "japan-hachijojima": [
+      "八丈島",
+      "八丈島港",
+      "Hachijōjima",
+      "Hachijo Island",
+      "Hachijojima Tokyo"
+    ],
+    "japan-aogashima": [
+      "青ヶ島",
+      "青ヶ島港",
+      "Aogashima Island",
+      "Aogashima Tokyo"
+    ],
+    "japan-chichijima": [
+      "父島",
+      "二見港",
+      "小笠原諸島 父島",
+      "Chichi-jima",
+      "Futami Port",
+      "Ogasawara Chichijima"
+    ],
+    "japan-hahajima": [
+      "母島",
+      "沖港",
+      "小笠原諸島 母島",
+      "Haha-jima",
+      "Oki Port",
+      "Ogasawara Hahajima"
     ]
   }
 }
