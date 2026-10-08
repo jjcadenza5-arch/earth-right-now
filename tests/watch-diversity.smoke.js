@@ -5,11 +5,11 @@ const start=app.indexOf("function buildWatch("),end=app.indexOf("function genera
 const body=app.slice(start,end);
 assert.ok(start>=0&&end>start,"curated Watch Earth builder exists");
 assert.match(body,/sources\.filter\(s=>watchEligible\(s\)&&currentInside\(s\)&&cleanUrl\(s\.thumbnailUrl\)\)/,"Featured windows must be eligible, current, playable in ERN, and carry authentic imagery");
-assert.match(body,/limit=6/,"Watch Earth must keep the six-window cap");
+assert.match(body,/limit=5/,"Watch Earth must keep the five-window cap");
 assert.match(body,/places\.has\(id\)/,"Watch Earth must avoid repeating a destination");
 assert.match(body,/countries\.get\(c\)/,"Watch Earth must consider country diversity");
 assert.match(body,/providers\.get\(p\)/,"Watch Earth must consider provider diversity");
 assert.match(body,/state\.setOffset/,"Featured windows should rotate on request");
 assert.match(app,/Math\.floor\(Date\.now\(\)\/3600000\)/,"Moment-led automatic profile should rotate hourly");
 assert.doesNotMatch(body,/affiliate|sponsored|travelOffer|commission/i,"Watch Earth ranking must remain commercial-neutral");
-console.log("Watch Earth six-window quality, truth, playability, rotation and geographic/provider diversity checks passed");
+console.log("Watch Earth five-window quality, truth, playability, rotation and geographic/provider diversity checks passed");
