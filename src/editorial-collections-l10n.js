@@ -65,6 +65,15 @@ export const EDITORIAL_COLLECTION_LOCALES=Object.freeze({
   zh:{title:"火山与地球科学",description:"火山、火山口、地热区域与地球科学监测。"},
   es:{title:"Volcanes y ciencias de la Tierra",description:"Volcanes, cráteres, zonas geotérmicas y observación científica de la Tierra."}
  },
+ "thailand-live-now":{
+  en:{title:"Thailand Live & Current Views",description:"Current and schedule-verified ERN views across Thailand."},
+  th:{title:"มุมมองสดและปัจจุบันในประเทศไทย",description:"มุมมอง ERN ที่เป็นปัจจุบันและตรวจสอบแล้วทั่วประเทศไทย"},
+  de:{title:"Thailand live & aktuell",description:"Aktuelle und verifizierte ERN-Ansichten aus Thailand."},
+  fr:{title:"Thaïlande en direct & maintenant",description:"Vues ERN actuelles et vérifiées en Thaïlande."},
+  ja:{title:"タイのライブ・現在映像",description:"タイ各地の確認済み現在映像を ERN で探索。"},
+  zh:{title:"泰国实时与当前视图",description:"浏览泰国各地经 ERN 验证的当前视图。"},
+  es:{title:"Tailandia en directo y ahora",description:"Vistas ERN actuales y verificadas en Tailandia."}
+ },
  "parks-protected-places":{
   en:{title:"Parks & Protected Places",description:"National parks, scenic areas, geoparks, reserves and protected landscapes."},
   th:{title:"อุทยานและพื้นที่คุ้มครอง",description:"อุทยานแห่งชาติ เขตทัศนียภาพ อุทยานธรณี เขตสงวน และภูมิประเทศที่ได้รับการคุ้มครอง"},
