@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T07:38:00Z",
+  "generatedAt": "2026-10-08T07:36:00Z",
   "publicActivationAllowed": false,
   "gaps": [
     {
@@ -108,8 +108,8 @@
       "id": "chiang-mai-current-window",
       "region": "Chiang Mai",
       "country": "Thailand",
-      "priority": "P1",
-      "state": "ANALYTICS_DEMAND_CURRENT_SOURCE_GAP",
+      "priority": "P3_EVENT_DRIVEN",
+      "state": "HOLD_EVENT_DRIVEN_RECHECK",
       "targetPlaces": [
         "Chiang Mai Old City",
         "Tha Phae Gate",
@@ -133,9 +133,9 @@
         "Do not use a city-information page without current imagery as a camera source."
       ],
       "nextResearch": [
-        "Recheck Chiang Mai PAO/municipal smart-city camera surfaces for an actually moving or reliably refreshed public feed.",
-        "Check official university, park, airport, river/traffic and attraction sources for a source-specific current view.",
-        "Prefer one strong canonical Chiang Mai place rather than many traffic-camera records."
+        "Do not spend repeated autonomous cycles on this unresolved gap.",
+        "Recheck only after a credible provider/source change, a new first-party lead, or materially stronger visitor demand.",
+        "Never fill the gap with a weak substitute."
       ],
       "lastResearchedAt": "2026-10-08T07:38:00Z"
     },
@@ -143,8 +143,8 @@
       "id": "thailand-gulf-current-window-demand",
       "region": "Hua Hin / Dolphin Bay / Prachuap Khiri Khan",
       "country": "Thailand",
-      "priority": "P1",
-      "state": "PARTIALLY_RESOLVED_HUA_HIN_FIRST_PARTY_LIVE_FOUND",
+      "priority": "P3_EVENT_DRIVEN",
+      "state": "HUA_HIN_RESOLVED_DOLPHIN_BAY_HOLD_EVENT_DRIVEN",
       "targetPlaces": [
         "Dolphin Bay / Sam Roi Yot",
         "Khao Takiab",
@@ -170,9 +170,9 @@
         "Do not use prerecorded beach video as LIVE."
       ],
       "nextResearch": [
-        "Keep the new first-party Hua Hin source external-only until fresh embed/playback evidence justifies inside-ERN playback.",
-        "Continue checking Dolphin Bay Resort, Sam Roi Yot/Khao Sam Roi Yot sources, municipalities, marine/weather/harbour and resort operators for a stable current view.",
-        "Prefer one strong canonical Dolphin Bay / Sam Roi Yot source over weak traffic-camera substitutes."
+        "Keep Hua Hin maintained as the resolved first-party source.",
+        "Park Dolphin Bay / Sam Roi Yot until a credible new first-party/current source appears or demand materially strengthens.",
+        "Do not substitute generic road cameras, static resort imagery or prerecorded video."
       ],
       "lastResearchedAt": "2026-10-08T07:38:00Z",
       "resolvedPlaces": [
@@ -220,8 +220,8 @@
       "id": "north-thailand-secondary-demand",
       "region": "Northern Thailand beyond Chiang Mai",
       "country": "Thailand",
-      "priority": "P2",
-      "state": "ANALYTICS_DEMAND_RESEARCH_CLUSTER",
+      "priority": "P3_EVENT_DRIVEN",
+      "state": "HOLD_EVENT_DRIVEN_RECHECK",
       "targetPlaces": [
         "Mae Hong Son",
         "Chiang Rai / Wat Rong Khun (White Temple)"
@@ -241,8 +241,9 @@
         "Do not broaden a nearby Chiang Mai or generic Northern Thailand source to masquerade as the requested place."
       ],
       "nextResearch": [
-        "Check official airport, municipality, park, road/weather and first-party attraction/hospitality sources for exact current imagery.",
-        "Keep Mae Hong Son and Chiang Rai/White Temple separate at promotion time even though they share a research cluster."
+        "Do not spend repeated autonomous cycles on this unresolved gap.",
+        "Recheck only after a credible provider/source change, a new first-party lead, or materially stronger visitor demand.",
+        "Never fill the gap with a weak substitute."
       ],
       "lastResearchedAt": "2026-10-08T06:58:00Z"
     },
@@ -250,8 +251,8 @@
       "id": "beijing-current-window-demand",
       "region": "Beijing",
       "country": "China",
-      "priority": "P2",
-      "state": "ANALYTICS_DEMAND_CURRENT_SOURCE_GAP",
+      "priority": "P3_EVENT_DRIVEN",
+      "state": "HOLD_EVENT_DRIVEN_RECHECK",
       "targetPlaces": [
         "Beijing skyline / Central Axis",
         "Tian'anmen / central Beijing",
@@ -273,10 +274,12 @@
         "Do not use an unrelated third-party city webcam merely to close a spelling-driven search gap."
       ],
       "nextResearch": [
-        "Check official municipality, traffic/public-space, park, observatory, tourism-attraction and first-party hospitality sources for exact current imagery.",
-        "Prefer one strong canonical Beijing window over weak directory-derived camera lists."
+        "Do not spend repeated autonomous cycles on this unresolved gap.",
+        "Recheck only after a credible provider/source change, a new first-party lead, or materially stronger visitor demand.",
+        "Never fill the gap with a weak substitute."
       ],
       "lastResearchedAt": "2026-10-08T07:18:00Z"
     }
-  ]
+  ],
+  "researchCadencePrinciple": "Do not let difficult unresolved gaps consume repeated autonomous cycles. After strong first-party research fails, park the gap and move to other places with better current-source opportunities; revisit only on a material signal."
 }
