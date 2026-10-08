@@ -254,5 +254,12 @@
       "Do not let affiliate offers determine crawlability, internal-link prominence or collection membership."
     ],
     "nextEvidence": "Watch Search Console impressions/clicks and ERN clean-v2 referral/destination landings after the Thailand collection and other current discovery pages are deployed and crawled; expand only from real query/landing evidence."
+  },
+  "searchMeasurementContract": {
+    "searchAnalyticsDebounceMs": 1500,
+    "triageSchemaVersion": 2,
+    "rawZeroResultCountsPreserved": true,
+    "automaticCatalogMutationAllowed": false,
+    "automaticAliasMutationAllowed": false
   }
 }
