@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T07:12:00Z",
+  "generatedAt": "2026-10-08T07:37:00Z",
   "title": "ERN Source Partner Strategy",
   "productPrinciple": "See Live → trust the source → discover the place → optionally plan or buy.",
   "sourceButtonInvariant": "Open Live Source must remain the genuine provider handoff. It is not a disguised ad, affiliate redirect or paid-ranking mechanism.",
@@ -142,7 +142,8 @@
     "Add provider/source-owner classification to future private business reports.",
     "Promote candidates to outreach-ready only after repeated aggregate demand plus verified source ownership and a clear visitor benefit.",
     "When outreach begins, lead with measured ERN traffic and visitor value, not paid ranking.",
-    "Prefer a visitor benefit + referral/commission structure where appropriate."
+    "Prefer a visitor benefit + referral/commission structure where appropriate.",
+    "Use strong public-authority source networks to expand ERN globally without forcing a commercial relationship onto every source."
   ],
   "publicInterestTrafficOnlyExamples": [
     {
@@ -154,6 +155,31 @@
       "sourceId": "mexico-popocatepetl-current-image",
       "observedSourceOpens": 4,
       "reason": "Public/science monitoring source; strong outbound interest should improve discovery/maintenance priority, not trigger commercial outreach."
+    },
+    {
+      "sourceId": "japan-izu-oshima-port-live",
+      "observedSourceOpens": 0,
+      "reason": "Tokyo Metropolitan Government public live-camera source. Treat as visitor utility/traffic evidence, not a commercial partnership lead by default."
+    },
+    {
+      "sourceId": "japan-hachijojima-port-live",
+      "observedSourceOpens": 0,
+      "reason": "Tokyo Metropolitan Government public live-camera source. Maintain source attribution and traffic-only status."
+    },
+    {
+      "sourceId": "japan-aogashima-port-live",
+      "observedSourceOpens": 0,
+      "reason": "Public-authority remote-island source; valuable for discovery, not a paid-ranking or commercial-outreach signal."
+    },
+    {
+      "sourceId": "japan-chichijima-futami-port-live",
+      "observedSourceOpens": 0,
+      "reason": "Public-authority Ogasawara source; traffic-only unless a separate public-information collaboration reason emerges."
+    },
+    {
+      "sourceId": "japan-hahajima-oki-port-live",
+      "observedSourceOpens": 0,
+      "reason": "Public-authority Ogasawara source; traffic-only by default."
     }
   ]
 }
