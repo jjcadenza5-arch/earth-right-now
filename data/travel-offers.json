@@ -4003,5 +4003,26 @@
     "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
     "evidence": "Current 2026 Viator inventory was rechecked at the recorded verification time: the Sky Waka gondola experience is specifically at Mt Ruapehu / Whakapapa in Tongariro National Park. The tracked URL reuses ERN's owner-verified Viator identity P00322254 / mcid 42383. This is optional downstream planning utility and cannot influence Earth ranking.",
     "verificationBatch": "2026-10-08-demand-led-expansion"
+  },
+  {
+    "id": "viator-denpasar-city-temples-public",
+    "title": "Explore Denpasar city & temples",
+    "placeId": "denpasar-city-live",
+    "provider": "Viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "viator",
+    "destinationScope": "Denpasar, Bali",
+    "url": "https://www.viator.com/tours/Seminyak/Denpasar-City-and-Tanah-Lot-Temple-Tour/d34198-71852P16?pid=P00322254&mcid=42383&medium=link",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-08T01:58:00Z",
+    "expiresAt": "2026-12-27T01:58:00Z",
+    "verificationEvidenceUrl": "https://www.viator.com/tours/Seminyak/Denpasar-City-and-Tanah-Lot-Temple-Tour/d34198-71852P16",
+    "manualOpenVerified": false,
+    "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+    "evidence": "Current 2026 Viator inventory was rechecked: this experience explicitly covers Denpasar city highlights including Badung Traditional Market, Jagatnatha Temple and Bajra Sandhi Monument. The tracked URL reuses ERN's owner-verified Viator identity P00322254 / mcid 42383. This exact URL is not separately owner-click-verified, and the option remains downstream from Earth discovery.",
+    "verificationBatch": "2026-10-08-clean-v2-demand-led-expansion"
   }
 ]
