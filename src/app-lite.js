@@ -1,17 +1,5 @@
 (() => {
 "use strict";
-/* One editorial Fuji photo per visit/refresh; never present a photograph as a live feed. */
-(function chooseEditorialFuji(){
-  try {
-    const key="ern-fuji-editorial-next-v1";
-    const next=Number(localStorage.getItem(key)||"0")===1?1:0;
-    localStorage.setItem(key,String(1-next));
-    if(!next)return;
-    const image=new Image();
-    image.onload=()=>document.body?.classList.add("ern-hero-fuji-alternate");
-    image.src="https://images.unsplash.com/photo-1743996902640-dad8216729f4?auto=format&fit=crop&fm=jpg&q=80&w=2200";
-  }catch(_error){/* keep the current editorial Fuji background */ }
-})();
 const $=s=>document.querySelector(s);const featuredHold=s=>s?.featuredHold===true
 function readSavedSet(key){try{return new Set(JSON.parse(localStorage.getItem(key)||"[]"))}catch{return new Set()}}
 function readSavedText(key,fallback){try{return localStorage.getItem(key)||fallback}catch{return fallback}}
@@ -143,7 +131,7 @@ b.innerHTML=`<span class="truth"></span><strong></strong><small></small><span cl
 else{b.innerHTML=`<div class="card-visual"></div><div class="card-body"><div class="card-kicker"><span></span><span></span></div><strong></strong><small></small><span class="card-favorite" aria-hidden="true">${state.favorites.has(s.id)?"♥":"♡"}</span></div>`;const v=b.querySelector(".card-visual");v.style.background=generatedBackground(s);v.innerHTML=posterMarkup(s);const posterImg=v.querySelector("img");v.dataset.visualKind=posterImg?"source":"illustrative";if(posterImg)installVisualFallback(posterImg,v,s);else v.append(scenicPoster(s));b.dataset.truth=truthTone(s);b.querySelector(".card-kicker span:first-child").textContent=publicTruth(s);b.querySelector(".card-kicker span:last-child").textContent=[momentSignal(s).label,localTime(s)].filter(Boolean).join(" · ");b.querySelector("strong").textContent=s.title;b.querySelector("small").textContent=[s.region,s.country].filter(Boolean).join(", ")}
 b.onclick=()=>openViewer(s);return b;}
 function renderModeChips(){document.querySelectorAll(".mode-chip").forEach(b=>b.classList.toggle("active",b.dataset.mode===state.mode))}
-function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map((s,i)=>card(s,false,i)));$("#watchCount").textContent=state.watch.length;const context=$("#watchSubhead");if(context){context.title=state.mode==="night"?"Night Lights selection":state.mode==="auto"?"Current selection":`Selected mode: ${state.mode}`;context.setAttribute("aria-label",`${state.watch.length} current windows in ${state.mode==="auto"?"the current selection":state.mode==="night"?"Night Lights":state.mode} mode. ${context.textContent||""}`);}const empty=$("#watchEmpty");empty.hidden=state.watch.length>0;empty.style.display=state.watch.length?"none":"";renderModeChips();state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(heroPool()[0]||state.watch[0])}
+function renderWatch(){state.watch=buildWatch(state.sources);$("#watchGrid").replaceChildren(...state.watch.map((s,i)=>card(s,false,i)));$("#watchCount").textContent=state.watch.length;const empty=$("#watchEmpty");empty.hidden=state.watch.length>0;empty.style.display=state.watch.length?"none":"";renderModeChips();state.watchIndex=Math.min(state.watchIndex,Math.max(0,state.watch.length-1));if(state.watch.length&&!state.selected)renderHero(heroPool()[0]||state.watch[0])}
 function placeCard(group){
 const best=[...group].sort((a,b)=>(guideEligible(b)?1:0)-(guideEligible(a)?1:0)||baseScore(b)-baseScore(a))[0];const b=card(best,true);b.classList.add("place-card");const count=group.length;if(count>1){
 const badge=document.createElement("span");badge.className="view-count";badge.textContent=`${count} views`;b.append(badge);b.setAttribute("aria-label",`${best.title}, ${count} available views`);}
