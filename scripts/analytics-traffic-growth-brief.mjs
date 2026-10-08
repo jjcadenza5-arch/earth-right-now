@@ -11,14 +11,16 @@ const facebook=refCount(v=>v==="facebook.com"||v.endsWith(".facebook.com")||v===
 const topPlaces=(x.places||[]).slice(0,6),topSearches=(x.searches||[]).slice(0,6),gaps=(x.searchGaps||[]).slice(0,5);
 const direct=(x.referrers||[]).find(r=>r.value==="direct")?.count||0;
 const shares=eventCount("share_clicked"),planning=eventCount("travel_option_opened");
+const searches=eventCount("earth_search"),zeros=eventCount("earth_search_zero"),zeroRate=searches?zeros/searches:0;
 const latest=[...(d.events||[])].sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")))[0]||null;
 const placeLines=topPlaces.length?topPlaces.map((r,i)=>`${i+1}. \`${r.value}\` — ${n(r.count)} opens`).join("\n"):"No destination-open data yet.";
 const searchLines=topSearches.length?topSearches.map((r,i)=>`${i+1}. \`${r.value}\` — ${n(r.count)} searches`).join("\n"):"No search data yet.";
 const gapLines=gaps.length?gaps.map(r=>`- \`${r.value}\` — ${n(r.count)} zero-result searches`).join("\n"):"- No repeated search gaps in this window.";
 const actions=[];
 if(topPlaces.length)actions.push("Use destination-specific deep links for the strongest current places rather than repeatedly sharing only the homepage.");
+if(zeroRate>=0.25)actions.push("Zero-result search share is materially high; prioritize repeated genuine gaps for source research, but never publish weak substitutes merely to capture search traffic.");
 if(google>0)actions.push("Protect crawlable place/country pages and source-derived freshness; Google is already sending measurable referrals.");
-if(facebook>0)actions.push("Continue selective manual social sharing, but rotate destinations and countries so referral traffic can be compared across entry pages.");
+if(facebook>0)actions.push("Continue selective manual social sharing, rotating destination and editorial-collection deep links so aggregate referral quality can be compared across entry pages.");
 if(shares===0)actions.push("Share instrumentation is newly enabled; wait for genuine visitor actions before inferring which pages are naturally shareable.");
 else actions.push("Use aggregate share counts together with place opens to identify pages that people actively pass along.");
 if(planning>0)actions.push("Keep planning links downstream from Earth discovery; outbound planning intent exists, so optimize relevance before increasing commercial density.");
@@ -33,7 +35,8 @@ Window: ${x.windowDays||30} days
 - Google-family referrals: **${google}**
 - Facebook-family referrals: **${facebook}**
 - Direct/unknown referrals: **${n(direct)}**
-- Earth searches: **${eventCount("earth_search")}**
+- Earth searches: **${searches}**
+- Zero-result searches: **${zeros}** (${(zeroRate*100).toFixed(1)}%)
 - Destination shares/copies: **${shares}**
 - Travel-option opens: **${planning}**
 
