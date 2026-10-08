@@ -9447,3 +9447,168 @@ No guard was bypassed or weakened.
 5. Observe whether the 1500 ms search settle window lowers progressive-fragment noise in future aggregate windows.
 6. Continue qualified organic discovery and destination/collection deep-link distribution; do not claim share growth until successful share/copy events are non-zero.
 7. Preserve 575 KB lean-core ceiling and same-SHA Pages + Operations + real-domain verification for every substantial visitor-facing checkpoint.
+
+
+## Phuket resolution + clustered traffic/business checkpoint — 2026-10-08 07:27 UTC
+
+### Canonical validated production state
+- Production content SHA: `cf4f370b0f52e39c33295418594b8f20fb84f548`.
+- **Deploy ERN to GitHub Pages #2924**: SUCCESS.
+- **ERN Operations Check #1688**: SUCCESS.
+- **ERN JavaScript Syntax Check #1202**: SUCCESS.
+- Pages, Operations and Syntax validated the same content SHA.
+- Actual `earthrightnow.app` visitor-reality sync: SUCCESS.
+- Deployed social-preview verification: SUCCESS.
+- IndexNow recent-URL notification: SUCCESS.
+- This supersedes production content SHA `f3da5d9f1412641b04181e7335bf48e713025f06`.
+
+### Important interpretation of the 39 zero-result terms
+The **39 historical zero-result events/terms are not 39 distinct visitors**. They are privacy-safe aggregate search terms/events that returned zero results during the rolling analytics window. One visitor can perform multiple searches, and multiple spelling/language variants can describe the same destination intention.
+
+Current 30-day aggregate remains:
+- approximate unique visitors: **54**
+- page views: **359**
+- Earth searches: **108**
+- raw zero-result searches: **41**
+- historical distinct zero-result terms in replay: **39**
+- place/window opens: **338**
+- external-source opens: **82**
+- Facebook-family referral views: **32**
+
+This is encouraging evidence of genuine use—visitors are searching, opening destinations and following source handoffs—but none of these counts alone proves bookings, revenue or channel causation.
+
+### Destination-demand clustering now operational
+Raw search history remains untouched, but ERN no longer treats every phrase as a separate source opportunity.
+
+Operations #1688 now classifies the 39 historical zero-result terms as:
+- currently resolves: **10**
+- genuine destination terms: **7**
+- genuine destination research clusters: **5**
+- subplace / venue gaps: **3**
+- non-destination / venue queries: **7**
+- typing + low-confidence fragments: **12**
+
+The five current genuine destination research clusters are:
+1. **Beijing** — 1 genuine term
+2. **Chiang Mai** — 1
+3. **Dolphin Bay / Sam Roi Yot** — 1
+4. **Mae Hong Son** — 1
+5. **Chiang Rai / Wat Rong Khun / White Temple** — 3 language/wording variants
+
+Important cleanup:
+- `bejin` is recognized as a progressive typing fragment while `bejing` maps into the Beijing cluster.
+- `deep` is now LOW_CONFIDENCE_PARTIAL rather than a destination-source research target.
+- White Temple English/expanded/Thai variants are one Chiang Rai research intention, not three separate source gaps.
+- The 1500 ms search settle/debounce remains active to reduce future typing-progress noise.
+
+### Phuket demand gap resolved truthfully
+Fresh first-party research found **Marina Phuket Resort — Phuket Live View**, providing a live Karon Beach view.
+
+ERN added:
+- source id: `phuket-karon-marina-live`
+- place id: `thailand-phuket-karon`
+- visitor title: **Phuket — Karon Beach**
+- provider: **Marina Phuket Resort**
+- truth: `EXTERNAL_LIVE`
+- permission: `LINK_ONLY`
+- playback: `EXTERNAL`
+- health: `HEALTHY`
+
+Rights boundary remains conservative:
+- a first-party live page proves a useful source exists;
+- the site's iframe/player does **not** automatically grant ERN commercial third-party embed/reuse rights;
+- therefore the source stays external/link-only unless exact permission is later documented.
+
+The prior Phuket source-gap state is now `RESOLVED_FIRST_PARTY_EXTERNAL_LIVE_FOUND`. Historical Phuket zero-result queries now replay as `CURRENTLY_RESOLVES` instead of being rewritten or deleted from analytics history.
+
+### Phuket See Live → Decide → Go bridge added
+Because ERN now has a truthful current Phuket Earth source, one downstream planning action was added through the already-active Viator relationship:
+- offer id: `viator-phuket-public`
+- destination scope: Phuket
+- place: `thailand-phuket-karon`
+- exact current Viator Phuket destination inventory independently rechecked
+- existing owner-verified ERN Viator affiliate identity reused
+- exact Phuket URL is marked `manualOpenVerified: false` rather than implying a separate owner click-through
+- affiliate disclosure required
+- Earth/source ranking remains commission-neutral
+
+Commercial placement preflight passes.
+
+Current reconciled commercial coverage:
+- active partners: **4**
+- current verified source-eligible offers: **232**
+- current covered places: **226**
+- current Viator offers: **203**
+- Klook: **21**
+- Tiqets: **5**
+- Welcome Pickups: **3**
+- source-ineligible verified offers held fail-closed: **1**
+- broader verified public offer registry entries: **233**
+
+The distinction between 233 verified registry entries and 232 current source-eligible offers is intentional: commercial inventory fails closed when the associated ERN source is not currently eligible.
+
+### Source-owner partnership side
+Marina Phuket Resort is now staged only as:
+- `OBSERVE_NEW_SOURCE_WITH_PLANNING_UTILITY`
+- hospitality source owner
+- source-specific outbound opens at creation: **0**
+
+No outreach-ready or partnership claim is made yet. The intended progression remains: truthful source → actual ERN visitor value → repeated source-specific outbound evidence → concrete visitor benefit → human outreach/review.
+
+Public/science sources remain traffic-only by default unless a genuine partnership reason separately emerges.
+
+### Beijing gap added without weak substitution
+The observed `bejing` term is now tracked as the **Beijing** destination-demand cluster.
+
+Fresh research found authoritative Beijing government/tourism/digital-map context but did not establish a sufficiently trustworthy exact current scenic camera suitable for ERN promotion.
+
+State: `ANALYTICS_DEMAND_CURRENT_SOURCE_GAP`.
+
+ERN explicitly rejects these shortcuts:
+- official promotional destination video labeled as LIVE;
+- digital map/satellite imagery treated as a current camera;
+- unrelated third-party city cameras added merely to satisfy a misspelled search.
+
+Next research favors official municipality, public-space/traffic, park, observatory, attraction and first-party hospitality sources.
+
+### Remaining demand-led source work
+Current genuine clusters after Phuket resolution:
+- Beijing
+- Chiang Mai
+- Dolphin Bay / Sam Roi Yot
+- Mae Hong Son
+- Chiang Rai / White Temple
+
+Chiang Mai's official PAO CCTV surfaces still showed STANDBY / WAITING FOR FEED during the fresh research pass. Dolphin Bay / Sam Roi Yot and the Northern Thailand targets also remain unresolved rather than being filled with weak substitutes.
+
+### Public search/discovery count
+The new Phuket place raises the public fallback count to **753 healthy searchable places**. The browser still derives live counts from the unified catalog at runtime; the fallback is kept synchronized for initial render / no-JS resilience.
+
+### Lean-core state
+Validated Pages #2924 performance remains:
+- `data/sources.json`: **287,508 bytes**
+- startup lean core: **569,366 / 575,000 bytes**
+- remaining protected headroom: **5,634 bytes**
+- startup JS: **159,173 / 160,000 bytes**
+- `app-lite.js`: **100,000 bytes**
+- eager homepage iframes: **0**
+
+The new Phuket source remains in the lazy supplemental discovery catalog, preserving the startup-core ceiling.
+
+### Guard findings handled without weakening boundaries
+Several intermediate runs correctly blocked acceptance during this batch:
+1. commercial placement detected that affiliate revenue-readiness counts had not yet been reconciled after adding Phuket; counts were corrected rather than bypassing the check;
+2. the production verifier initially attempted to fetch private `affiliate-revenue-readiness.json`; that private sidecar remains private, and only aggregate commercial coverage was exposed through already-public `business-growth-signals.json` for real-domain verification;
+3. the first destination-cluster matcher escaped its Beijing regex incorrectly; the matcher was fixed and Operations confirmed Beijing is now one of five genuine research clusters.
+
+No private operations artifact was exposed and no safety/monetization guard was relaxed.
+
+### Next autonomous large-batch lanes
+1. Continue source research against the **five genuine destination clusters**, not the 39 raw terms.
+2. Observe whether historical/current Phuket searches now lead to Phuket/Karon place opens, source opens and optional planning clicks.
+3. Continue first-party and rights-safe source expansion, especially Chiang Mai, Dolphin Bay/Sam Roi Yot and Northern Thailand; no weak substitutes.
+4. Continue business utility on places with truthful current sources, using one-best-useful downstream action and commission-neutral ranking.
+5. Continue source-owner qualification from aggregate source-specific outbound evidence; no broad outreach until repeated value + visitor benefit are clear.
+6. Continue organic traffic work through destination/collection deep links, crawlable discovery, Google/AI-search readiness and selective social distribution; successful share/copy actions remain the required direct sharing signal.
+7. Observe whether the 1500 ms settle window reduces typing-fragment noise in later analytics windows.
+8. Preserve the 575 KB startup-core ceiling and same-SHA Pages + Operations + Syntax + real-domain verification for substantial visitor-facing releases.
