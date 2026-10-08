@@ -1,5 +1,18 @@
 (() => {
-"use strict";const $=s=>document.querySelector(s);const featuredHold=s=>s?.featuredHold===true
+"use strict";
+/* One editorial Fuji photo per visit/refresh; never present a photograph as a live feed. */
+(function chooseEditorialFuji(){
+  try {
+    const key="ern-fuji-editorial-next-v1";
+    const next=Number(localStorage.getItem(key)||"0")===1?1:0;
+    localStorage.setItem(key,String(1-next));
+    if(!next)return;
+    const image=new Image();
+    image.onload=()=>document.body?.classList.add("ern-hero-fuji-alternate");
+    image.src="https://images.unsplash.com/photo-1743996902640-dad8216729f4?auto=format&fit=crop&fm=jpg&q=80&w=2200";
+  }catch(_error){/* keep the current editorial Fuji background */ }
+})();
+const $=s=>document.querySelector(s);const featuredHold=s=>s?.featuredHold===true
 function readSavedSet(key){try{return new Set(JSON.parse(localStorage.getItem(key)||"[]"))}catch{return new Set()}}
 function readSavedText(key,fallback){try{return localStorage.getItem(key)||fallback}catch{return fallback}}
 function writeSaved(key,value){try{localStorage.setItem(key,value)}catch{}}
