@@ -12997,5 +12997,43 @@
     "rightsBasis": "Official SANParks webcam surface; ERN links externally and does not restream.",
     "freshnessEvidence": "SANParks currently publishes Olifants as a live webcam video and states that its local video-file cache produces an approximately ten-minute time difference from current time.",
     "searchSupplemental": true
+  },
+  {
+    "id": "phuket-karon-marina-live",
+    "placeId": "thailand-phuket-karon",
+    "title": "Phuket — Karon Beach",
+    "provider": "Marina Phuket Resort",
+    "country": "Thailand",
+    "region": "Phuket",
+    "city": "Karon",
+    "aliases": [
+      "Phuket",
+      "Phuket Thailand",
+      "Karon",
+      "Karon Beach",
+      "Karon Phuket"
+    ],
+    "categories": [
+      "Beaches & Coasts",
+      "Islands",
+      "Resorts"
+    ],
+    "truth": "EXTERNAL_LIVE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.marinaphuket.com/en/live",
+    "attribution": "Marina Phuket Resort",
+    "checkedAt": "2026-10-08T07:12:00Z",
+    "lastSuccessfulCheck": "2026-10-08T07:12:00Z",
+    "quality": 97,
+    "freshness": 99,
+    "moment": 98,
+    "story": "First-party live Karon Beach view from Marina Phuket Resort on Phuket's west coast.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "Official Marina Phuket Resort live-view page. Conservatively link-only; the existence of an iframe/player does not by itself establish ERN embed/reuse permission.",
+    "freshnessEvidence": "Official Marina Phuket Resort page currently labels the page 'Phuket Live View' and exposes a Karon Beach live player."
   }
 ]
