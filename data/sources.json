@@ -3916,7 +3916,9 @@
     "rightsBasis": "See source evidence.",
     "freshnessEvidence": "OK",
     "refreshMs": 600000,
-    "failureReason": null
+    "failureReason": null,
+    "thumbnailUrl": "https://images.geonet.org.nz/volcano/cameras/latest/ruapehunorth.jpg",
+    "thumbnailEvidence": "Current source image reused directly as ERN card/preview visual under the source's existing EMBED_ALLOWED permission; no separate illustrative image substituted."
   },
   {
     "id": "nz-ngauruhoe-current-image",
@@ -4146,7 +4148,9 @@
     "rightsBasis": "See source evidence.",
     "freshnessEvidence": "OK",
     "refreshMs": 900000,
-    "failureReason": null
+    "failureReason": null,
+    "thumbnailUrl": "https://volcview.wr.usgs.gov/ashcam-api/images/webcams/ys-bbsn2/current.jpg",
+    "thumbnailEvidence": "Current source image reused directly as ERN card/preview visual under the source's existing EMBED_ALLOWED permission; no separate illustrative image substituted."
   },
   {
     "id": "yellowstone-lake-current-image",
