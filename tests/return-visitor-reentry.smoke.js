@@ -6,5 +6,5 @@ console.assert(app.includes('const recents=recentSearches().slice(0,2)'),"quick-
 console.assert(app.includes('rememberSearch(raw);renderQuickSearches()'),"explicit searches should refresh quick-return chips");
 console.assert(app.includes('affinity=s=>baseScore(s)+8*')&&app.includes('p.categories?.[c]'),"Continue exploring should use browser-local country/category affinity");
 console.assert(app.includes('writeSaved("ern:recent-searches:v1","[]")')&&app.includes('renderQuickSearches();renderWatch();renderWander();renderSaved();'),"Reset local suggestions should clear search re-entry memory");
-console.assert(index.includes('./src/app-lite.js?v=20261007c'),"home should request the return-visitor app revision");
+console.assert(index.includes('./src/app-lite.js?v=20261008-curated'),"home should request the return-visitor app revision");
 console.log("ERN return-visitor re-entry checks passed");
