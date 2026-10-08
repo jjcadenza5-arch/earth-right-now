@@ -9612,3 +9612,125 @@ No private operations artifact was exposed and no safety/monetization guard was 
 6. Continue organic traffic work through destination/collection deep links, crawlable discovery, Google/AI-search readiness and selective social distribution; successful share/copy actions remain the required direct sharing signal.
 7. Observe whether the 1500 ms settle window reduces typing-fragment noise in later analytics windows.
 8. Preserve the 575 KB startup-core ceiling and same-SHA Pages + Operations + Syntax + real-domain verification for substantial visitor-facing releases.
+
+
+## Drive hold + traffic-control checkpoint — 2026-10-08 07:46 UTC
+
+### Canonical validated production state
+- Production content SHA: `1bd34496d5f2c15937031cbe24392c4ab0078930`.
+- **Deploy ERN to GitHub Pages #2928**: SUCCESS.
+- **ERN Operations Check #1691**: SUCCESS.
+- **ERN JavaScript Syntax Check #1203**: SUCCESS.
+- Pages, Operations and Syntax validated the same content SHA.
+- Actual `earthrightnow.app` visitor-reality sync: SUCCESS.
+- Deployed social-preview verification: SUCCESS.
+- IndexNow recent-URL notification: SUCCESS.
+- This supersedes production content SHA `cf4f370b0f52e39c33295418594b8f20fb84f548`.
+
+### Travelpayouts Drive decision is now canonical and guarded
+Owner screenshots on 2026-10-08 showed the Earthrightnow Travelpayouts project prompting to set up/fix **Drive** and exposing Drive features including:
+- Content Analytics
+- Targeted Offers
+- Switch Links
+- Link Relevant Keywords
+- Insert Recommendations
+- Display Smart Previews
+
+The owner and ERN decision is now formally recorded as:
+- `HOLD_SITE_WIDE_DRIVE_AUTOMATION`
+- do **not** fix the Drive setup warning merely to activate monetization;
+- keep automatic keyword monetization OFF;
+- keep automatic recommendations OFF;
+- keep Targeted Offers OFF;
+- keep automatic link rewriting OFF;
+- keep automatic placement OFF;
+- **Open Live Source rewriting is NEVER allowed**.
+
+A dedicated private policy now exists at:
+- `data/travelpayouts-drive-policy.json`
+
+The owner-observed Drive state is also recorded in:
+- `data/affiliate-platform-research.json`
+- `data/travelpayouts-unlock-readiness.json`
+- `data/business-growth-signals.json`
+
+The existing commercial-placement preflight already enforces:
+- `driveAutomationAllowed=false`
+- `manualToolsOnly=true`
+- `automaticLinkRewritingAllowed=false`
+- `automaticPlacementAllowed=false`
+- commission cannot affect ranking
+- no Drive bootstrap may return to the public homepage.
+
+Production verification now additionally checks the public business-growth state for the Drive hold contract on the real domain.
+
+### Future Drive experimentation boundary
+Drive is not permanently forbidden, but any future test must be a **controlled planning-surface experiment**, not a site-wide activation.
+
+Required gates:
+- material qualified traffic growth;
+- separate owner approval;
+- explicit planning-page-only scope;
+- easy rollback;
+- before/after visitor-quality measurement;
+- no Earth-ranking/source-truth/currentness impact;
+- no rewriting of source/provider handoffs.
+
+Travelpayouts promotional earnings examples remain marketing examples, not ERN revenue forecasts.
+
+### Traffic-growth experiment framework added
+A new private control file now exists:
+- `data/traffic-growth-experiments.json`
+
+It records planned—not fabricated—experiments across four loops:
+1. **Destination deep-link wave** — future organic sharing should favor a small rotation of destination/collection deep links instead of homepage-only sharing. Current example entry types include Ruapehu, Thailand Live & Current Views and Phuket/Karon.
+2. **Search-gap resolution loop** — measure whether previously missing destination clusters become successful searches after truthful source resolution; Phuket is the current resolved example.
+3. **Source → planning quality** — measure explicit planning actions after truthful Earth engagement without booking/revenue inference.
+4. **Drive-hold control** — keep automatic monetization off so traffic-quality changes remain interpretable during this growth phase.
+
+No automatic posting, paid-traffic assumption, weak-source substitution or automatic affiliate placement is introduced.
+
+### Traffic state reconciled to 753 healthy searchable places
+`data/traffic-growth-priorities.json` is now reconciled to:
+- **753 healthy searchable places**
+- milestone: `753_PLACE_REALITY_RECONCILED_TRAFFIC_GROWTH`
+
+The traffic strategy explicitly preserves the Drive hold while continuing:
+- destination/collection deep-link growth;
+- qualified organic/search/AI discovery;
+- research-qualified zero-result clusters;
+- repeat exploration;
+- explicit downstream planning only after Earth interest.
+
+### Fresh Thailand source-gap rechecks
+#### Chiang Mai
+Fresh public recheck still shows the Chiang Mai PAO Smart City CCTV cards in **STANDBY / WAITING FOR FEED**, including public-space and city/river camera labels. This remains fail-closed; no current Chiang Mai source was promoted.
+
+#### Dolphin Bay / Sam Roi Yot
+Fresh first-party Dolphin Bay Resort recheck confirms an active beachfront destination/business and useful visitor planning context, but the public resort site still does not expose a trustworthy source-specific scenic current feed suitable for ERN promotion.
+
+Therefore:
+- Dolphin Bay remains a genuine current-source gap;
+- booking/stay photography does not become CURRENT IMAGE;
+- commercial inventory does not prove a live/current Earth source exists;
+- no generic camera/road substitute was added.
+
+### Lean-core state
+Validated Pages #2928 performance:
+- `data/sources.json`: **287,508 bytes**
+- startup lean core: **569,366 / 575,000 bytes**
+- remaining protected headroom: **5,634 bytes**
+- startup JS: **159,173 / 160,000 bytes**
+- `app-lite.js`: **100,000 bytes**
+- eager homepage iframes: **0**
+
+No core-size increase was caused by this batch.
+
+### Next autonomous large-batch lanes
+1. Continue the five genuine destination source clusters: Beijing, Chiang Mai, Dolphin Bay / Sam Roi Yot, Mae Hong Son and Chiang Rai / White Temple.
+2. Observe Phuket/Karon as the newest truthful search-gap resolution and future source-owner candidate.
+3. Continue provider-authorized current-image and inside-ERN upgrades where exact permission/currentness/playback evidence exists.
+4. Keep Travelpayouts Drive site-wide OFF and continue explicit destination-level affiliate utility only.
+5. Continue traffic growth through crawlable destination/collection deep links, Search/AI readiness, referral observation and selective future organic sharing.
+6. Use real source-specific outbound evidence for partner qualification; do not promote candidates merely because they are commercial hospitality sources.
+7. Preserve the 575 KB startup-core ceiling and same-SHA Pages + Operations + Syntax + real-domain verification for substantial visitor-facing releases.
