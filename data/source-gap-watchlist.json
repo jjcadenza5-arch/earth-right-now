@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:58:00Z",
+  "generatedAt": "2026-10-08T07:12:00Z",
   "publicActivationAllowed": false,
   "gaps": [
     {
@@ -184,7 +184,7 @@
       "region": "Phuket",
       "country": "Thailand",
       "priority": "P1",
-      "state": "ANALYTICS_DEMAND_CURRENT_SOURCE_GAP",
+      "state": "RESOLVED_FIRST_PARTY_EXTERNAL_LIVE_FOUND",
       "targetPlaces": [
         "Phuket beaches",
         "Patong / Kata / Karon coast",
@@ -193,11 +193,13 @@
       ],
       "whyImportant": "ERN aggregate zero-result telemetry includes both Phuket and Phuket, Thailand. This is real destination demand and should be researched as a source gap, not filled by generic webcam directories.",
       "researchEvidence": [
-        "Fresh 2026-10-08 research found authoritative Tourism Authority of Thailand destination context and multiple generic/third-party webcam results, but did not establish a sufficiently trustworthy first-party or rights-clear current scenic Phuket source for ERN promotion.",
-        "No source was promoted merely because Phuket is commercially valuable or heavily searched."
+        "Fresh 2026-10-08 research found Marina Phuket Resort's official first-party 'Phuket Live View' page with a Karon Beach live player.",
+        "ERN catalogs the source conservatively as EXTERNAL_LIVE / LINK_ONLY. The visible player does not by itself establish ERN embed or media-reuse permission.",
+        "Generic webcam directories and static tourism/resort marketing imagery remain disallowed as substitutes."
       ],
       "officialReferenceUrls": [
-        "https://www.tourismthailand.org/Destinations/Provinces/Phuket/350"
+        "https://www.marinaphuket.com/en/live",
+        "https://www.marinaphuket.com/"
       ],
       "disallowedShortcuts": [
         "Do not use generic webcam directories as proof of a trustworthy current source.",
@@ -205,10 +207,14 @@
         "Do not use prerecorded Phuket travel video as LIVE."
       ],
       "nextResearch": [
-        "Check official port/marina, airport, municipality, marine/weather, beach-management and first-party resort sources for source-specific current imagery.",
-        "Prefer one strong canonical Phuket current window over a large set of weak or directory-derived cameras."
+        "Observe the first-party source for continuity and visitor demand.",
+        "Research source-specific branded/embed permission separately; do not infer it from the site's iframe/player.",
+        "Prefer this canonical first-party Karon source over adding weaker Phuket directory cameras."
       ],
-      "lastResearchedAt": "2026-10-08T06:58:00Z"
+      "lastResearchedAt": "2026-10-08T07:12:00Z",
+      "resolvedPlaces": [
+        "Phuket — Karon Beach"
+      ]
     },
     {
       "id": "north-thailand-secondary-demand",
