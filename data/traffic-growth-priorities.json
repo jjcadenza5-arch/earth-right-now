@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T02:05:00Z",
+  "generatedAt": "2026-10-08T02:42:00Z",
   "purpose": "Increase qualified organic discovery, repeat exploration, deep-link sharing and useful downstream planning intent from the production-reconciled 751-place ERN catalog.",
   "currentSearchableHealthyPlaces": 751,
   "unlockTargets": [
@@ -138,10 +138,10 @@
   },
   "unlockReadiness": "data/travelpayouts-unlock-readiness.json",
   "latestObservedTraffic": {
-    "observedAt": "2026-10-08T01:29:29Z",
+    "observedAt": "2026-10-08T02:23:47Z",
     "windowDays": 30,
     "approximateUniqueVisitors": 54,
-    "pageViews": 344,
+    "pageViews": 350,
     "googleFamilyReferrals": 18,
     "facebookFamilyReferrals": 32,
     "earthSearches": 87,
@@ -219,7 +219,14 @@
       }
     ],
     "cleanV2DestinationShares": [],
-    "shareClicks": 0
+    "shareClicks": 0,
+    "zeroResultShare": 0.4138,
+    "currentGapSummary": {
+      "historicalZeroResultEvents": 34,
+      "currentlyResolves": 7,
+      "genuineCurrentGaps": 25,
+      "lowConfidencePartial": 2
+    }
   },
   "trafficMetricSemanticsVersion": 2,
   "cleanDestinationAttributionStartsAt": "2026-10-07T14:55:03Z"
