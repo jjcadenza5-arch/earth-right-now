@@ -8509,3 +8509,27 @@ Production verifier at this checkpoint reports:
 - do not connect/post to official social accounts without owner action;
 - preserve the same-SHA Pages + Operations + live-domain verification rule.
 
+## New-chat continuity note — 2026-10-08 03:23 UTC
+
+This is a good handoff point for continuing ERN in a fresh ChatGPT thread.
+
+Latest validated production checkpoint remains:
+- production content SHA: `17372bdc9195d03d297fd6da0acad8c5052390c3`
+- Pages #2861: SUCCESS
+- Operations #1624: SUCCESS
+- live-domain production reality verifier: `ok: true`
+
+Important nuance discovered after that checkpoint:
+- The public `LIVE HERE` label and Operations playback-renewal queue use different horizons by design.
+- Public embedded-live truth remains fail-closed at the app's 168-hour playback-proof window.
+- Operations intentionally raises renewal/reprove debt earlier/stricter, so an item can be due for operator renewal while still truthfully eligible for `LIVE HERE` publicly.
+- Do not interpret Operations renewal debt by itself as evidence that the public label is false.
+- Jinzun commercial planning remains stricter and can stay hidden while its live view still qualifies publicly.
+
+Next technical priority before further current-image expansion:
+- Preserve the 575 KB lean-core ceiling.
+- The last passing build has almost no byte headroom, so create durable runtime headroom before adding more provider-authorized current-image bindings.
+- Prefer removing or normalizing redundant runtime metadata without weakening rights, source, health, truth, search or attribution checks.
+- After headroom is created, continue editorial current-image expansion from already staged provider-authorized candidates (USGS/GeoNet first), then visitor/business/traffic growth.
+- Maintain the same completion rule: matching successful Pages + Operations on one SHA plus live-domain verification before calling a substantial visitor-facing checkpoint complete.
+
