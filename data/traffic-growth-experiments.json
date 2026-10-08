@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-08T07:40:00Z",
+  "status": "PLANNED_NOT_EXECUTED",
+  "objective": "Increase qualified ERN entry traffic and continuation without changing source truth, ranking or monetization pressure.",
+  "baseline": {
+    "approximateUniqueVisitors": 54,
+    "pageViews": 359,
+    "facebookFamilyReferralViews": 32,
+    "googleReferralViews": 18,
+    "earthSearches": 108,
+    "windowOpens": 338,
+    "externalSourceOpens": 82,
+    "travelOptionOpens": 10,
+    "successfulShareCopyActions": 0
+  },
+  "experiments": [
+    {
+      "id": "destination-deep-link-wave",
+      "priority": "P1",
+      "action": "When the owner next shares ERN organically, use a small rotation of destination-specific links rather than only the homepage.",
+      "candidateEntryTypes": [
+        "high-engagement current destination",
+        "Thailand current collection",
+        "newly resolved demand destination"
+      ],
+      "currentExamples": [
+        "Ruapehu",
+        "Thailand Live & Current Views",
+        "Phuket — Karon Beach"
+      ],
+      "measure": [
+        "referral page views",
+        "place/window opens",
+        "external-source opens",
+        "multi-place continuation"
+      ],
+      "boundary": "No claim of causation from one wave; no paid promotion implied."
+    },
+    {
+      "id": "search-gap-resolution-loop",
+      "priority": "P1",
+      "action": "Track whether previously missing destination clusters become successful searches after truthful sources are added.",
+      "currentResolvedExample": "Phuket",
+      "currentUnresolvedClusters": [
+        "Beijing",
+        "Chiang Mai",
+        "Dolphin Bay / Sam Roi Yot",
+        "Mae Hong Son",
+        "Chiang Rai / White Temple"
+      ],
+      "measure": [
+        "CURRENTLY_RESOLVES count",
+        "genuine destination cluster count",
+        "place opens after matching searches"
+      ],
+      "boundary": "Never add a weak source to improve the metric."
+    },
+    {
+      "id": "source-to-planning-quality",
+      "priority": "P2",
+      "action": "Measure whether explicit planning links are used after visitors engage with a truthful Earth source.",
+      "measure": [
+        "travel_option_opened by destination/provider",
+        "external_source_opened by source"
+      ],
+      "boundary": "No booking/revenue inference; commercial value cannot affect source ranking."
+    },
+    {
+      "id": "drive-hold-control",
+      "priority": "P1",
+      "action": "Keep Travelpayouts Drive site-wide OFF so traffic-quality changes can be measured without automatic keyword/link/recommendation monetization confounding the visitor experience.",
+      "measure": [
+        "organic/referral/search behavior under manual explicit monetization only"
+      ],
+      "boundary": "Future Drive test requires separate owner approval and planning-surface-only scope."
+    }
+  ],
+  "successDefinition": "More qualified destination entry and continued Earth exploration, with source truth and visitor trust preserved.",
+  "safeguards": {
+    "paidTrafficAssumed": false,
+    "automaticPostingAllowed": false,
+    "automaticAffiliatePlacementAllowed": false,
+    "driveAutomationAllowed": false,
+    "weakSourceSubstitutionAllowed": false
+  }
+}
