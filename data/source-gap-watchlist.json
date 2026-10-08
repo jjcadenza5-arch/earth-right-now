@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T07:12:00Z",
+  "generatedAt": "2026-10-08T07:18:00Z",
   "publicActivationAllowed": false,
   "gaps": [
     {
@@ -245,6 +245,38 @@
         "Keep Mae Hong Son and Chiang Rai/White Temple separate at promotion time even though they share a research cluster."
       ],
       "lastResearchedAt": "2026-10-08T06:58:00Z"
+    },
+    {
+      "id": "beijing-current-window-demand",
+      "region": "Beijing",
+      "country": "China",
+      "priority": "P2",
+      "state": "ANALYTICS_DEMAND_CURRENT_SOURCE_GAP",
+      "targetPlaces": [
+        "Beijing skyline / Central Axis",
+        "Tian'anmen / central Beijing",
+        "Great Wall / Beijing municipality"
+      ],
+      "whyImportant": "ERN aggregate zero-result telemetry includes the misspelled destination query 'bejing'. This is a plausible Beijing destination-intent signal, but it still requires an exact trustworthy current source.",
+      "researchEvidence": [
+        "Fresh 2026-10-08 research found authoritative Beijing government tourism/service pages, an updated official homepage city video and official digital-map services, but no sufficiently clear source-specific public live/current scenic camera suitable for ERN promotion.",
+        "Official destination videos and map imagery are useful context but are not LIVE/current-camera evidence."
+      ],
+      "officialReferenceUrls": [
+        "https://english.beijing.gov.cn/",
+        "https://www.visitbeijing.com.cn/",
+        "https://beijing.tianditu.gov.cn/"
+      ],
+      "disallowedShortcuts": [
+        "Do not label Beijing government promotional video as LIVE.",
+        "Do not treat digital map/satellite imagery as a current scenic camera.",
+        "Do not use an unrelated third-party city webcam merely to close a spelling-driven search gap."
+      ],
+      "nextResearch": [
+        "Check official municipality, traffic/public-space, park, observatory, tourism-attraction and first-party hospitality sources for exact current imagery.",
+        "Prefer one strong canonical Beijing window over weak directory-derived camera lists."
+      ],
+      "lastResearchedAt": "2026-10-08T07:18:00Z"
     }
   ]
 }
