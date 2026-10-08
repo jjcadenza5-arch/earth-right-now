@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T17:15:00Z",
+  "generatedAt": "2026-10-08T02:45:00Z",
   "mission": "See before you go",
   "productTest": "Would this current view help someone understand the place better before deciding whether, when, or how to go?",
   "hardGates": [
@@ -110,7 +110,7 @@
   },
   "searchDemandGaps": {
     "principle": "Use aggregate zero-result demand to prioritize research, but never auto-create a source. A candidate must still pass truth, currentness, permission, attribution and quality gates. Generic or ambiguous terms are not automatically destination gaps.",
-    "observedFrom": "ERN Operations #1591 aggregate search-gap triage, reconciled with stricter multi-term matching and the public museum typo fix",
+    "observedFrom": "ERN Operations #1624 aggregate search-gap triage; 34 historical zero-result events replayed against current search metadata",
     "items": [
       {
         "query": "chiangmai",
@@ -121,8 +121,8 @@
           "observedWindowDays": 30
         },
         "priority": "RESEARCH_NOW",
-        "status": "RESEARCH_ONLY_NO_HEALTHY_DESTINATION_CAMERA_CONFIRMED",
-        "nextAction": "Continue research for one truthful Chiang Mai current-view source; never promote standby CCTV or weather radar as a destination camera."
+        "status": "OFFICIAL_PROVINCIAL_CCTV_FOUND_BUT_FEEDS_STANDBY_NOT_PROMOTABLE",
+        "nextAction": "Recheck Chiang Mai Provincial Administrative Organization real-time CCTV only after a real feed is visibly active and source identity/currentness can be verified. Standby/waiting feeds must not become ERN live windows."
       },
       {
         "query": "museaum",
@@ -171,7 +171,44 @@
         "priority": "MONITOR_ONLY",
         "status": "NOT_ENOUGH_EVIDENCE_FOR_DESTINATION_RESEARCH",
         "nextAction": "Do not interpret one generic arts query as a demand mandate. Revisit only if repeated searches identify a place or venue."
+      },
+      {
+        "query": "dolphin bay thailand",
+        "normalizedPlace": "Dolphin Bay / Sam Roi Yot area, Thailand",
+        "evidence": {
+          "zeroResultCount": 3,
+          "triageState": "REPEATED_GENUINE_CURRENT_GAP_GROUPED_FROM_VARIANTS",
+          "observedWindowDays": 30,
+          "variants": [
+            "dolphin bay",
+            "dolphin bay,",
+            "dolphin bay, thailand"
+          ]
+        },
+        "priority": "RESEARCH_NOW",
+        "status": "REPEATED_VISITOR_DEMAND_NO_TRUTHFUL_CURRENT_SOURCE_CONFIRMED",
+        "nextAction": "Research one official/provider current view for Dolphin Bay / Sam Roi Yot. Do not substitute generic Hua Hin, resort marketing video or archival beach footage."
+      },
+      {
+        "query": "hua hin thailand",
+        "normalizedPlace": "Hua Hin, Thailand",
+        "evidence": {
+          "zeroResultCount": 1,
+          "triageState": "GENUINE_CURRENT_GAP",
+          "observedWindowDays": 30
+        },
+        "priority": "RESEARCH_NOW",
+        "status": "OFFICIAL_DESTINATION_INFORMATION_FOUND_NO_CURRENT_LIVE_SOURCE_CONFIRMED",
+        "nextAction": "Continue source research for a truthful current Hua Hin view. Tourism destination pages alone are not live-source evidence."
       }
-    ]
+    ],
+    "currentTriageSummary": {
+      "historicalZeroResultEvents": 34,
+      "currentlyResolves": 7,
+      "genuineCurrentGaps": 25,
+      "lowConfidencePartial": 2,
+      "zeroResultShareOfSearches": 0.4138
+    },
+    "researchRule": "Prioritize repeated or place-specific genuine gaps, but never publish from search demand alone. Traffic chooses the research question; source truth, permission, currentness and quality decide publication."
   }
 }
