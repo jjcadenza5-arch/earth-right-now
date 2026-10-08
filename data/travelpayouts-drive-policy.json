@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-08T07:35:00Z",
+  "ownerObservation": {
+    "observedAt": "2026-10-08T07:20:00Z",
+    "source": "Owner screenshots of Travelpayouts Drive for the Earthrightnow project",
+    "projectStateShown": "Drive is not working / setup prompt visible",
+    "visibleFeatures": [
+      "Content analytics",
+      "Targeted Offers",
+      "Switch Links",
+      "Link Relevant Keywords",
+      "Insert Recommendations",
+      "Display Smart Previews"
+    ],
+    "promotionalEstimateShown": "~$250/mo example based on Drive partners with ~10,000 monthly visitors",
+    "interpretationBoundary": "Promotional example only; not an ERN revenue forecast or traffic threshold."
+  },
+  "decision": "HOLD_SITE_WIDE_DRIVE_AUTOMATION",
+  "rationale": [
+    "ERN is a live-discovery engine, not a travel-content blog; automated monetization must not reshape the core product.",
+    "Open Live Source must remain the genuine provider handoff and must never be rewritten into an affiliate path.",
+    "Automatic keyword monetization, recommendations or targeted offers could blur source truth, visitor intent and editorial neutrality.",
+    "ERN already has explicit destination-level planning links with stronger control and disclosure."
+  ],
+  "featurePolicy": {
+    "contentAnalytics": "RESEARCH_ONLY_NOT_REQUIRED_FOR_ERN_CORE",
+    "switchLinks": "FUTURE_CONTROLLED_EXPERIMENT_ONLY_ON_EXPLICIT_PLANNING_SURFACES",
+    "displaySmartPreviews": "FUTURE_CONTROLLED_EXPERIMENT_ONLY",
+    "linkRelevantKeywords": "OFF",
+    "insertRecommendations": "OFF",
+    "targetedOffers": "OFF",
+    "homepageBootstrap": "OFF",
+    "openLiveSourceRewriting": "NEVER"
+  },
+  "futureExperimentGate": [
+    "material qualified traffic growth",
+    "clear planning-page-only scope",
+    "manual owner approval",
+    "before/after visitor-quality measurement",
+    "no impact on Earth ranking/source truth/currentness",
+    "easy rollback",
+    "no automatic rewriting of source/provider links"
+  ],
+  "currentAction": "Do not fix the Drive setup warning. Continue manual, explicit, destination-specific affiliate utility only.",
+  "safeguards": {
+    "automaticLinkRewritingAllowed": false,
+    "automaticPlacementAllowed": false,
+    "targetedOffersAllowed": false,
+    "keywordMonetizationAllowed": false,
+    "sourceHandoffRewritingAllowed": false,
+    "paidRankingAllowed": false
+  }
+}
