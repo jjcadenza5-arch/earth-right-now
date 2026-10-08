@@ -1,12 +1,13 @@
 import assert from "node:assert/strict";
 import {spawnSync} from "node:child_process";
+import {EDITORIAL_COLLECTIONS} from "../src/editorial-collections.js";
 const r=spawnSync(process.execPath,["scripts/phase9-localized-discovery-status.mjs"],{encoding:"utf8"});
 assert.equal(r.status,0,r.stderr);
 const x=JSON.parse(r.stdout);
 assert.equal(x.phase,9);
 assert.equal(x.valid,true);
 assert.equal(x.localeCount,7);
-assert.equal(x.collectionCount,5);
+assert.equal(x.collectionCount,EDITORIAL_COLLECTIONS.length);
 assert.equal(x.defaultLocale,"en");
 assert.equal(x.xDefaultLocale,"en");
 assert.equal(x.issues.length,0);
