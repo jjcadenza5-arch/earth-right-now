@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T07:00:00Z",
+  "generatedAt": "2026-10-08T07:18:00Z",
   "purpose": "Increase qualified organic discovery, repeat exploration, deep-link sharing and useful downstream planning intent from the production-reconciled ERN catalog.",
   "currentSearchableHealthyPlaces": 752,
   "unlockTargets": [
@@ -99,8 +99,8 @@
     {
       "id": "demand-led-search-gaps",
       "priority": "P1",
-      "action": "Preserve raw privacy-safe zero-result counts, but use schema-v2 read-only triage to separate genuine destination gaps from progressive typing fragments, venue/utility intent, low-confidence partials and historical terms that now resolve. Only research-qualified destination demand may open a source-research lane.",
-      "successSignal": "Research effort increasingly targets repeated genuine destination gaps, while typing-progress noise and non-destination intent no longer inflate the source-gap backlog."
+      "action": "Preserve raw privacy-safe zero-result counts, but group repeated spellings/languages into destination research clusters and separate genuine destination demand from progressive typing fragments, venue/utility intent, low-confidence partials and terms that now resolve. Only research-qualified destination clusters may open source-research lanes.",
+      "successSignal": "Destination clusters shrink when ERN truthfully resolves demand (for example Phuket), while raw historical search evidence remains intact and typing/venue noise does not inflate the source backlog."
     },
     {
       "id": "first-30-seconds",
@@ -223,11 +223,10 @@
     "zeroResultShare": 0.3796,
     "currentGapSummary": {
       "historicalZeroResultEvents": 39,
+      "latestValidatedTriage": "Operations #1679 before Phuket source addition",
       "currentlyResolves": 8,
-      "previousUnqualifiedGenuineGapCount": 29,
-      "lowConfidencePartial": 2,
-      "status": "RECLASSIFICATION_ACTIVE_FROM_NEXT_OPERATIONS_PACKET",
-      "note": "The older 29-gap number mixed destination demand with progressive typing and venue/utility queries. Schema-v2 triage will report the qualified categories separately without rewriting raw history."
+      "genuineDestinationTermsBeforeThisBatch": 9,
+      "note": "This batch adds destination clustering, reclassifies unresolved <=4-character single-token fragments more cautiously, and adds a first-party Phuket source. The next successful Operations packet is authoritative for the new cluster count."
     }
   },
   "trafficMetricSemanticsVersion": 2,
@@ -260,6 +259,7 @@
     "triageSchemaVersion": 2,
     "rawZeroResultCountsPreserved": true,
     "automaticCatalogMutationAllowed": false,
-    "automaticAliasMutationAllowed": false
+    "automaticAliasMutationAllowed": false,
+    "destinationResearchClustering": true
   }
 }
