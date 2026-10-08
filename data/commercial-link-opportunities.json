@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T11:17:13Z",
+  "generatedAt": "2026-10-08T04:47:00Z",
   "publicActivationAllowed": false,
   "principles": {
     "visitorUtilityFirst": true,
@@ -1949,8 +1949,15 @@
       "intent": "activities",
       "priority": "P1",
       "reason": "Maho Beach is now searchable in ERN and aligns with St. Maarten island tours/airport-beach visitor interest.",
-      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
-      "nextAction": "Generate one St. Maarten/Maho-relevant Viator link and verify it before activation."
+      "state": "VERIFIED_LINK_ADDED",
+      "nextAction": "Observe aggregate Maho planning clicks; keep the commercial action downstream from Earth discovery and independent of source ranking.",
+      "trackingUrl": "https://www.viator.com/tours/St-Maarten/St-Maarten-Maho-beach-tour/d728-198496P3?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-08T04:47:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's owner-verified Viator partner ID P00322254 / mcid 42383.",
+      "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current 2026 Maho Beach product inventory independently rechecked; exact tracked URL added to ERN's public planning layer.",
+      "manualOpenVerified": false
     },
     {
       "id": "viator-innsbruck",
@@ -8265,6 +8272,27 @@
       "publicInventoryEvidenceUrl": "https://www.airalo.com/uruguay-esim",
       "publicInventoryEvidence": "Current Airalo Uruguay page exposes country-specific fixed-data and unlimited eSIM packages.",
       "nextAction": "Verify Airalo availability in the ERN owner project and generate one Uruguay tracked link only if available; connectivity remains optional and post-discovery."
+    },
+    {
+      "id": "viator-yehliu-geopark",
+      "destination": "Yehliu Geopark / Taiwan North Coast",
+      "placeIds": [
+        "taiwan-yehliu"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Yehliu is now an inside-ERN official live view with observed source engagement; an exact current Yehliu day-tour product creates a useful See Live → Decide → Go bridge.",
+      "state": "VERIFIED_LINK_ADDED",
+      "trackingUrl": "https://www.viator.com/en-AU/tours/Taipei/Yehliu-and-Jiufen-and-Shifen-Day-Tour-Departure-from-Ximending/d5262-174468P7?pid=P00322254&mcid=42383&medium=link",
+      "verifiedAt": "2026-10-08T04:47:00Z",
+      "exactDestinationPageVerified": true,
+      "affiliateIdentityBasis": "Uses ERN's owner-verified Viator partner ID P00322254 / mcid 42383.",
+      "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+      "verificationEvidence": "Current Viator 2026 Yehliu/Jiufen/Shifen product inventory independently rechecked; exact tracked URL added to the public planning layer.",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/en-AU/tours/Taipei/Yehliu-and-Jiufen-and-Shifen-Day-Tour-Departure-from-Ximending/d5262-174468P7",
+      "manualOpenVerified": false,
+      "nextAction": "Observe aggregate Yehliu planning clicks; do not add duplicate North Coast commercial density without visitor evidence."
     }
   ]
 }

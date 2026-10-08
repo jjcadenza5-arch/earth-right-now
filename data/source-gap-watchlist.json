@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T14:30:00Z",
+  "generatedAt": "2026-10-08T04:47:00Z",
   "publicActivationAllowed": false,
   "gaps": [
     {
@@ -138,6 +138,40 @@
         "Prefer one strong canonical Chiang Mai place rather than many traffic-camera records."
       ],
       "lastResearchedAt": "2026-10-04T14:30:00Z"
+    },
+    {
+      "id": "thailand-gulf-current-window-demand",
+      "region": "Hua Hin / Dolphin Bay / Prachuap Khiri Khan",
+      "country": "Thailand",
+      "priority": "P1",
+      "state": "ANALYTICS_DEMAND_CURRENT_SOURCE_GAP",
+      "targetPlaces": [
+        "Hua Hin Beach",
+        "Dolphin Bay / Sam Roi Yot",
+        "Khao Takiab",
+        "Prachuap Khiri Khan coast"
+      ],
+      "whyImportant": "ERN aggregate search telemetry recorded Hua Hin and repeated Dolphin Bay / Thailand zero-result searches. This is a real visitor-demand cluster, not an editorial guess.",
+      "researchEvidence": [
+        "Tourism Authority of Thailand currently provides authoritative Hua Hin destination and beach information.",
+        "Fresh research did not establish a trustworthy source-specific current scenic camera for Hua Hin or Dolphin Bay suitable for ERN promotion.",
+        "Thailand Department of Highways exposes current traffic/CCTV infrastructure, but a scenic destination-specific Hua Hin/Dolphin Bay public feed was not verified."
+      ],
+      "officialReferenceUrls": [
+        "https://www.tourismthailand.org/Destinations/Provinces/Hua-Hin/240",
+        "https://www.tourismthailand.org/Attraction/hat-hua-hin",
+        "https://highwaytraffic.go.th/"
+      ],
+      "disallowedShortcuts": [
+        "Do not use static tourism images as CURRENT IMAGE.",
+        "Do not substitute a generic highway camera for a scenic destination unless the exact place and current feed are verified.",
+        "Do not use prerecorded beach video as LIVE."
+      ],
+      "nextResearch": [
+        "Check official municipality, harbour, resort, beach-safety, marine, weather and attraction sources for a stable Hua Hin or Dolphin Bay current view.",
+        "Prefer one strong canonical destination source over many low-value traffic feeds."
+      ],
+      "lastResearchedAt": "2026-10-08T04:47:00Z"
     }
   ]
 }
