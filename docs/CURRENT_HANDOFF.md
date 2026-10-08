@@ -9734,3 +9734,167 @@ No core-size increase was caused by this batch.
 5. Continue traffic growth through crawlable destination/collection deep links, Search/AI readiness, referral observation and selective future organic sharing.
 6. Use real source-specific outbound evidence for partner qualification; do not promote candidates merely because they are commercial hospitality sources.
 7. Preserve the 575 KB startup-core ceiling and same-SHA Pages + Operations + Syntax + real-domain verification for substantial visitor-facing releases.
+
+
+## Strong-source global expansion checkpoint — 2026-10-08 08:08 UTC
+
+### Canonical validated production state
+- Production content SHA: `f4642689116203925ce3e16a30a35f465bf212ff`.
+- **Deploy ERN to GitHub Pages #2935**: SUCCESS.
+- **ERN Operations Check #1698**: SUCCESS.
+- **ERN JavaScript Syntax Check #1208**: SUCCESS.
+- Pages, Operations and Syntax validated the same content SHA.
+- Actual `earthrightnow.app` visitor-reality sync: SUCCESS.
+- Deployed social-preview verification: SUCCESS.
+- IndexNow recent-URL notification: SUCCESS.
+- This supersedes production content SHA `1bd34496d5f2c15937031cbe24392c4ab0078930`.
+
+### Research cadence changed: strong sources first
+The owner explicitly clarified that ERN should not keep pushing stubborn unresolved places when good feeds cannot be found. There are many other places in the world with strong current-source opportunities.
+
+The autonomous source-research policy is therefore now:
+- after a strong first-party research pass fails, move the unresolved gap to **event-driven hold**;
+- do not spend repeated cycles rechecking the same weak source landscape;
+- revisit only when a credible provider/source changes, a new first-party lead appears, or visitor demand materially strengthens;
+- never lower ERN's truth/currentness/permission standards merely to close a named gap.
+
+Current event-driven holds include:
+- Chiang Mai current-window gap;
+- Dolphin Bay / Sam Roi Yot portion of the Hua Hin/Prachuap cluster;
+- Beijing current-window gap;
+- Northern Thailand secondary-demand cluster.
+
+Hua Hin remains resolved and maintained. These holds remain searchable research records but are no longer the default autonomous work queue.
+
+### Five strong official Tokyo-island live sources added
+The next expansion batch used the official **Tokyo Metropolitan Government — Bureau of Port and Harbor** island-camera network instead of a weak source directory.
+
+New Search/Explore places:
+1. **Izu Oshima — Port Live**
+   - source id: `japan-izu-oshima-port-live`
+   - place id: `japan-izu-oshima`
+2. **Hachijojima — Port Live**
+   - source id: `japan-hachijojima-port-live`
+   - place id: `japan-hachijojima`
+3. **Aogashima — Remote Island Port**
+   - source id: `japan-aogashima-port-live`
+   - place id: `japan-aogashima`
+4. **Chichijima — Futami Port**
+   - source id: `japan-chichijima-futami-port-live`
+   - place id: `japan-chichijima`
+5. **Hahajima — Oki Port**
+   - source id: `japan-hahajima-oki-port-live`
+   - place id: `japan-hahajima`
+
+All five are conservatively cataloged as:
+- `EXTERNAL_LIVE`
+- `LINK_ONLY`
+- `HEALTHY`
+- `playback=EXTERNAL`
+- official Tokyo Metropolitan Government attribution
+- Search Supplemental / lazy-load catalog entries
+
+ERN links to the official Tokyo-government/YouTube live surfaces rather than restreaming or inferring a broader reuse right.
+
+### Tokyo Islands Live discovery path
+A new crawlable editorial collection is now production-live:
+- `/discover/tokyo-islands-live/`
+- title: **Tokyo Islands Live**
+
+It is localized across all seven ERN discovery languages and registered in the Phase 9 localized-discovery system. Japanese route/title verification passed in production:
+- `/ja/discover/tokyo-islands-live/`
+- **東京の島々ライブ**
+
+The collection is in sitemap/hreflang generation and passes the same indexability, rich-preview and structured-data checks as the other ERN discovery collections.
+
+### Business-side treatment: public authority = traffic-first
+The Tokyo island network is explicitly classified as **public-interest / traffic-only by default** in the source-partner strategy.
+
+That means:
+- source opens can help ERN learn which island views are valuable;
+- strong engagement can improve maintenance/discovery attention;
+- the government camera network is **not** automatically treated as a commercial partnership lead;
+- no affiliate or paid-ranking pressure is attached merely because a source is popular.
+
+The business-growth state now records:
+- current mode: `STRONG_SOURCE_FIRST`
+- newest network: Tokyo Metropolitan Government Izu/Ogasawara port live cameras
+- newest places: **5**
+- commercial treatment: `PUBLIC_AUTHORITY_TRAFFIC_ONLY_BY_DEFAULT`
+- new Earth sources do not require monetization; planning utility is added only where there is a real useful downstream option.
+
+Travelpayouts Drive remains unchanged:
+- site-wide automation OFF;
+- automatic link rewriting OFF;
+- automatic placement OFF;
+- Targeted Offers OFF;
+- keyword monetization OFF;
+- Open Live Source rewriting NEVER allowed.
+
+### Traffic-growth strategy moved with the product
+Traffic-growth state now uses the milestone:
+- `758_PLACE_GLOBAL_STRONG_SOURCE_EXPANSION`
+
+The current strategy is no longer “keep filling every historical gap.” It is:
+1. find strong truthful current-source opportunities around the world;
+2. create crawlable destination/collection paths around useful clusters;
+3. observe qualified search/referral/AI entry traffic;
+4. measure continuation into additional ERN places and genuine source handoffs;
+5. add planning/business utility only after place interest and only when useful.
+
+The new traffic workstream is **strong-source-global-expansion**. First measurement questions are whether Tokyo-island destination/collection pages attract qualified landings and whether visitors continue from one island into another or broader Japan discovery.
+
+### Current aggregate traffic evidence
+Operations #1698 preserves the current 30-day aggregate baseline:
+- approximate unique visitors: **54**
+- page views: **359**
+- Facebook-family referral views: **32** (8.91%)
+- searches: **108**
+- zero-result searches: **41**
+- place/window opens: **338**
+- external-source opens: **82**
+- travel-option opens: **10**
+
+Current exploration intensity per approximate visitor:
+- searches: **2.00**
+- place/window opens: **6.26**
+- external-source opens: **1.52**
+- travel-option opens: **0.19**
+
+Historical search-gap replay remains:
+- 39 historical zero-result terms/events;
+- 10 now resolve;
+- 7 genuine destination terms;
+- 5 genuine destination clusters;
+- 3 subplace/venue gaps;
+- 7 non-destination/venue queries;
+- 12 typing/low-confidence fragments.
+
+These counts remain aggregate directional evidence only; they do not identify people or prove bookings/revenue/causation.
+
+### Lean-core state preserved
+Validated Pages #2935 performance:
+- `data/sources.json`: **287,508 bytes**
+- startup lean core: **569,366 / 575,000 bytes**
+- remaining protected headroom: **5,634 bytes**
+- startup JS: **159,173 / 160,000 bytes**
+- `app-lite.js`: **100,000 bytes**
+- eager homepage iframes: **0**
+
+The five new Tokyo island sources live in the lazy Search Supplemental catalog, so this expansion did **not** increase startup-core size.
+
+### Release guard behaved correctly
+An intermediate Pages run (#2934) deployed but failed the production reality check because the verifier still contained an older superseded `753` place-count guard while the new strong-source milestone had moved to `758`.
+
+The stale old guard was removed; the new explicit `758_PLACE_GLOBAL_STRONG_SOURCE_EXPANSION` guard remains active. No product invariant or quality threshold was weakened.
+
+### Next autonomous large-batch direction
+1. Keep moving globally toward **strong first-party/public-authority/provider current sources**, rather than repeatedly chasing parked gaps.
+2. Expand Search/Explore with geographically distinctive places and source networks that genuinely answer “See before you go.”
+3. Build crawlable collection/country/discovery paths only when they are substantial and useful, not thin SEO pages.
+4. Continue business/planning utility where exact visitor value exists, but do not require monetization for every Earth source.
+5. Keep public/science/government source networks traffic-first by default; commercial source-owner qualification remains evidence-led.
+6. Continue provider-authorized current-image and inside-ERN upgrades where permission/playback evidence is exact.
+7. Continue organic/search/AI/referral traffic growth and deep-link measurement from the stronger global inventory.
+8. Keep Travelpayouts Drive site-wide OFF.
+9. Preserve 575 KB startup-core ceiling and same-SHA Pages + Operations + Syntax + real-domain verification for substantial visitor-facing releases.
