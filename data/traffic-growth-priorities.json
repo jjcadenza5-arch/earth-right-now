@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T07:38:00Z",
+  "generatedAt": "2026-10-08T09:55:00Z",
   "purpose": "Increase qualified organic discovery, repeat exploration, deep-link sharing and useful downstream planning intent from the production-reconciled ERN catalog.",
   "currentSearchableHealthyPlaces": 758,
   "unlockTargets": [
@@ -125,6 +125,13 @@
       "priority": "P1",
       "action": "Prefer new places backed by strong first-party/public-authority current sources over repeated research on stubborn unresolved gaps. Current batch adds five official Tokyo island live destinations and a dedicated crawlable collection.",
       "successSignal": "More qualified global discovery landings and place/source opens from strong new destinations without lowering source standards."
+    },
+    {
+      "id": "multilingual-existing-destination-retrieval",
+      "priority": "P1",
+      "action": "Use the 147 current place-alias groups for truthful multilingual Search/Explore retrieval, including Tokyo islands, Chile/Patagonia, Oceania, South Africa and national park/Antarctica cameras. Before declaring traffic impact, verify actual earthrightnow.app searches and measure settled queries that become successful destination opens; aliases do not increase the number of places.",
+      "successSignal": "Verified Japanese, Spanish and romanized searches open their intended existing destinations with no source/ranking/permission changes.",
+      "deploymentEvidence": "Pages #2939 green in owner screenshot on 2026-10-08; same-content-SHA Operations + Syntax and independent domain test still not confirmed."
     }
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
