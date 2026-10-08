@@ -107,7 +107,7 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(!Array.isArray(searchGapTriage.rows))issues.push({file:"search-gap-triage.json",code:"SEARCH_GAP_TRIAGE_ROWS_INVALID"});
     for(const row of searchGapTriage.rows||[]){
       if(row?.automaticCatalogMutationAllowed!==false)issues.push({file:"search-gap-triage.json",code:"SEARCH_GAP_TRIAGE_ITEM_MUTATION_BOUNDARY_VIOLATION",query:row?.query||null});
-      if(!["CURRENTLY_RESOLVES","LOW_CONFIDENCE_PARTIAL","GENUINE_CURRENT_GAP"].includes(row?.state))issues.push({file:"search-gap-triage.json",code:"SEARCH_GAP_TRIAGE_STATE_INVALID",query:row?.query||null});
+      if(!["CURRENTLY_RESOLVES","LOW_CONFIDENCE_PARTIAL","GENUINE_CURRENT_GAP","PROGRESSIVE_QUERY_FRAGMENT","SUBPLACE_OR_VENUE_GAP","NON_DESTINATION_OR_VENUE_QUERY"].includes(row?.state))issues.push({file:"search-gap-triage.json",code:"SEARCH_GAP_TRIAGE_STATE_INVALID",query:row?.query||null});
     }
   }
 
