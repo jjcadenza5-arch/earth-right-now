@@ -84,7 +84,7 @@ if(!kilaueaPage.includes('data-offer-id="viator-kilauea-volcanoes-national-park-
 const denpasarPage=await waitText(base+"/places/denpasar-city-live/",t=>t.includes("Denpasar"),"Denpasar destination page");
 const volcanoDiscover=await waitText(base+"/discover/volcanoes-earth-science/",t=>t.includes("Volcanoes & Earth Science"),"volcano discovery page");
 const parksDiscover=await waitText(base+"/discover/parks-protected-places/",t=>t.includes("Parks & Protected Places"),"parks discovery page");
-const thailandDiscover=await waitText(base+"/discover/thailand-live-now/",t=>t.includes("Thailand Live & Current Views")&&t.includes("Hua Hin Beach")&&t.includes("Bangkok")&&t.includes("Koh Samui"),"Thailand demand-led discovery page");
+const thailandDiscover=await waitText(base+"/discover/thailand-live-now/",t=>t.includes("Thailand Live & Current Views")&&t.includes("Hua Hin Beach")&&t.includes("Koh Samui")&&!t.includes("Bangkok — Sukhumvit Road"),"Thailand demand-led discovery page");
 const thailandTh=await waitText(base+"/th/discover/thailand-live-now/",t=>t.includes("มุมมองสดและปัจจุบันในประเทศไทย"),"Thai Thailand discovery page");
 const seoSitemap=await waitText(base+"/sitemap.xml",t=>t.includes("/discover/volcanoes-earth-science/")&&t.includes("/discover/parks-protected-places/")&&t.includes("/discover/thailand-live-now/"),"SEO sitemap");
 for(const locale of ["th","de","fr","ja","zh","es"]){
