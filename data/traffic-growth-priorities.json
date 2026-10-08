@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:54:00Z",
-  "purpose": "Increase qualified organic discovery, repeat exploration, deep-link sharing and useful downstream planning intent from the production-reconciled 751-place ERN catalog.",
-  "currentSearchableHealthyPlaces": 751,
+  "generatedAt": "2026-10-08T06:33:00Z",
+  "purpose": "Increase qualified organic discovery, repeat exploration, deep-link sharing and useful downstream planning intent from the production-reconciled ERN catalog.",
+  "currentSearchableHealthyPlaces": 752,
   "unlockTargets": [
     "trip-com",
     "hotels-com",
@@ -123,9 +123,9 @@
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
   "note": "Catalog scale is no longer the bottleneck. The traffic strategy now starts from 751 healthy searchable places and prioritizes first-impression quality, deep destination entry, repeat exploration, shareable place URLs, genuine repeated search gaps and useful downstream planning. Traffic never overrides source truth/currentness.",
-  "milestone": "751_PLACE_REALITY_RECONCILED_TRAFFIC_GROWTH",
+  "milestone": "752_PLACE_REALITY_RECONCILED_TRAFFIC_GROWTH",
   "currentBusinessCoverage": {
-    "healthyPlaces": 751,
+    "healthyPlaces": 752,
     "placesWithCommercialPath": 217,
     "intentionallyEditorialPlaces": 38,
     "unclassifiedHealthyPlaces": 0,
@@ -134,20 +134,20 @@
     "conversionShortlistSize": 15,
     "conversionShortlist": "data/commercial-conversion-shortlist.json",
     "publicVerifiedTravelOfferMappings": 31,
-    "searchableUniverseWithSupplemental": 751
+    "searchableUniverseWithSupplemental": 752
   },
   "unlockReadiness": "data/travelpayouts-unlock-readiness.json",
   "latestObservedTraffic": {
-    "observedAt": "2026-10-08T04:38:56Z",
+    "observedAt": "2026-10-08T06:32:51Z",
     "windowDays": 30,
     "approximateUniqueVisitors": 54,
-    "pageViews": 358,
+    "pageViews": 359,
     "googleFamilyReferrals": 18,
     "facebookFamilyReferrals": 32,
-    "earthSearches": 106,
+    "earthSearches": 108,
     "zeroResultSearches": 41,
-    "windowOpens": 334,
-    "externalSourceOpens": 81,
+    "windowOpens": 338,
+    "externalSourceOpens": 82,
     "travelOptionOpens": 10,
     "topSearches": [
       {
@@ -155,19 +155,19 @@
         "count": 9
       },
       {
+        "value": "new",
+        "count": 3
+      },
+      {
+        "value": "new york",
+        "count": 3
+      },
+      {
         "value": "arches",
         "count": 2
       },
       {
         "value": "chicago",
-        "count": 2
-      },
-      {
-        "value": "new",
-        "count": 2
-      },
-      {
-        "value": "new york",
         "count": 2
       }
     ],
@@ -181,15 +181,15 @@
         "count": 6
       },
       {
+        "value": "rovaniemi-santa-claus-village",
+        "count": 4
+      },
+      {
         "value": "yellowstone-biscuit-basin",
         "count": 4
       },
       {
         "value": "denpasar-city-live",
-        "count": 3
-      },
-      {
-        "value": "kyoto-kifune-shrine",
         "count": 3
       }
     ],
@@ -206,25 +206,25 @@
         "count": 6
       },
       {
+        "value": "rovaniemi-santa-claus-village",
+        "count": 4
+      },
+      {
         "value": "yellowstone-biscuit-basin",
         "count": 4
       },
       {
         "value": "denpasar-city-live",
         "count": 3
-      },
-      {
-        "value": "kyoto-kifune-shrine",
-        "count": 3
       }
     ],
     "cleanV2DestinationShares": [],
     "shareClicks": 0,
-    "zeroResultShare": 0.3868,
+    "zeroResultShare": 0.3796,
     "currentGapSummary": {
       "historicalZeroResultEvents": 39,
-      "currentlyResolves": 7,
-      "genuineCurrentGaps": 30,
+      "currentlyResolves": 8,
+      "genuineCurrentGaps": 29,
       "lowConfidencePartial": 2
     }
   },
@@ -240,7 +240,8 @@
       "Expose accurate lastmod values, sitemap entries, breadcrumbs, Place/CollectionPage/ItemList structured data and the recent-updates Atom feed.",
       "Allow large image/snippet/video previews on generated indexable discovery pages to improve search-result presentation where engines choose to use them.",
       "Preserve multilingual Discover hreflang coverage with human-written collection labels rather than automatic translation.",
-      "Continue Google Search Console + sitemap observation as the authoritative Google indexing feedback loop; IndexNow remains supplemental discovery submission and is never treated as proof of Google indexing."
+      "Continue Google Search Console + sitemap observation as the authoritative Google indexing feedback loop; IndexNow remains supplemental discovery submission and is never treated as proof of Google indexing.",
+      "Use the demand-led Thailand Live & Current Views collection as a truthful crawlable entry path while keeping the six-place country-hub threshold unchanged."
     ],
     "avoid": [
       "Do not mass-produce thin city pages from keywords.",
@@ -249,6 +250,6 @@
       "Do not inflate page copy for word-count targets.",
       "Do not let affiliate offers determine crawlability, internal-link prominence or collection membership."
     ],
-    "nextEvidence": "Watch Search Console impressions/clicks and ERN clean-v2 referral/destination landings after the new collection pages are deployed and crawled; expand only from real query/landing evidence."
+    "nextEvidence": "Watch Search Console impressions/clicks and ERN clean-v2 referral/destination landings after the Thailand collection and other current discovery pages are deployed and crawled; expand only from real query/landing evidence."
   }
 }
