@@ -3982,5 +3982,26 @@
     "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
     "evidence": "Current Viator 2026 inventory was rechecked: the active 5-day Taiwan tour includes Taitung and the East Coast National Scenic Area, with current bookings and 2026 traveler reviews. The tracked URL reuses ERN's owner-verified Viator identity P00322254 / mcid 42383. It is an optional downstream planning action and does not imply that the itinerary visits Jinzun specifically.",
     "verificationBatch": "2026-10-07-reality-reconciliation"
+  },
+  {
+    "id": "viator-ruapehu-sky-waka-public",
+    "title": "Ride the Mt Ruapehu Sky Waka",
+    "placeId": "nz-ruapehu",
+    "provider": "Viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "viator",
+    "destinationScope": "Mount Ruapehu / Whakapapa, Tongariro National Park",
+    "url": "https://www.viator.com/tours/Tongariro-National-Park/Mt-Ruapehu-Whakapapa-Sky-Waka-Gondola-return-trip/d33378-41075P14?pid=P00322254&mcid=42383&medium=link",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-08T01:24:00Z",
+    "expiresAt": "2026-12-27T01:24:00Z",
+    "verificationEvidenceUrl": "https://www.viator.com/tours/Tongariro-National-Park/Mt-Ruapehu-Whakapapa-Sky-Waka-Gondola-return-trip/d33378-41075P14",
+    "manualOpenVerified": false,
+    "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+    "evidence": "Current 2026 Viator inventory was rechecked: the Sky Waka gondola experience is specifically at Mt Ruapehu / Whakapapa in Tongariro National Park. The tracked URL reuses ERN's owner-verified Viator identity P00322254 / mcid 42383. This is optional downstream planning utility and cannot influence Earth ranking.",
+    "verificationBatch": "2026-10-08-demand-led-expansion"
   }
 ]
