@@ -69,3 +69,16 @@ body.ern-hero-fuji-alternate .hero-live{background-image:url("https://images.uns
   .section-head h2,.world-shelf-head h2{font-size:clamp(28px,7.1vw,34px)}
   .world-shelf-card{padding:11px}
 }
+
+/* Atlas focus and touch affordances: never imply unverified map coordinates. */
+.map-pin:focus-visible{z-index:15;outline:3px solid #092f29;outline-offset:5px;box-shadow:0 0 0 7px rgba(255,255,255,.92),0 8px 20px rgba(7,42,34,.35)}
+.map-pin:active{z-index:14;transform:translate(-50%,-50%) scale(1.35)}
+@media(max-width:600px){
+  .atlas{min-height:360px;border-radius:21px}
+  .map-pin{width:16px;height:16px}
+  .map-pin.reference{opacity:.6}
+  .map-pin:focus-visible{transform:translate(-50%,-50%) scale(1.5)}
+  .atlas-section .section-head{gap:10px}
+  .atlas-section .section-head h2{font-size:clamp(29px,7.2vw,36px);line-height:1.1}
+  .atlas-section .map-note{font-size:12px;line-height:1.55}
+}
