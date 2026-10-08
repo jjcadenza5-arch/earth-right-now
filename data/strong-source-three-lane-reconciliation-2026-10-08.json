@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-08",
+  "status": "PRIVATE_RECONCILIATION_NO_PUBLIC_MUTATION",
+  "baseProductionContentSha": "f4642689116203925ce3e16a30a35f465bf212ff",
+  "baseline": {
+    "healthySearchablePlaces": 758,
+    "source": "docs/CURRENT_HANDOFF.md strong-source global checkpoint",
+    "coreBytes": 569366,
+    "coreCeilingBytes": 575000
+  },
+  "catalogFindings": [
+    {
+      "cluster": "Hawaii volcanoes",
+      "existing": [
+        {
+          "id": "kilauea-summit",
+          "placeId": "kilauea-summit"
+        },
+        {
+          "id": "mauna-loa-current-image",
+          "placeId": "mauna-loa-volcano"
+        }
+      ],
+      "decision": "UPGRADE_EXISTING_NOT_NEW_PLACE",
+      "verification": "Compare NPS HVO per-angle still images with existing USGS feed; preserve deduplication and freshness. Separate alternate views from destination count.",
+      "providers": [
+        "NPS",
+        "USGS HVO"
+      ]
+    },
+    {
+      "cluster": "Crater Lake",
+      "existing": [
+        {
+          "id": "us-crater-lake-live",
+          "placeId": "us-crater-lake-national-park"
+        },
+        {
+          "id": "us-crater-lake-annie-spring-current",
+          "placeId": "us-crater-lake-annie-spring"
+        },
+        {
+          "id": "us-crater-lake-steel-center-current",
+          "placeId": "us-crater-lake-steel-center"
+        }
+      ],
+      "decision": "MAINTAIN_EXISTING",
+      "verification": "NPS says lake view may be cloud-blocked; verify capture freshness, not just an active page."
+    },
+    {
+      "cluster": "Grand Canyon",
+      "existing": [
+        {
+          "id": "grand-canyon-national-park",
+          "placeId": "grand-canyon-national-park"
+        },
+        {
+          "id": "us-grand-canyon-yavapai-current",
+          "placeId": "us-grand-canyon-yavapai"
+        },
+        {
+          "id": "us-grand-canyon-kolb-current",
+          "placeId": "us-grand-canyon-kolb-studio"
+        }
+      ],
+      "decision": "MAINTAIN_EXISTING",
+      "verification": "Check timestamp visible on official image; prefer scenic views over entrance traffic unless traveler utility is explicit."
+    },
+    {
+      "cluster": "Australian Antarctic stations",
+      "existing": [
+        "antarctica-casey-station",
+        "antarctica-davis-station",
+        "antarctica-mawson-station",
+        "antarctica-macquarie-island"
+      ],
+      "decision": "MAINTAIN_EXISTING",
+      "verification": "Official station still images, not continuous video; no duplicate site growth."
+    }
+  ],
+  "threeLanes": {
+    "visitor": [
+      "Audit existing live-image timestamps/visual content and distinguish current still from video",
+      "Prefer new countries/provider networks to more angles at the same place",
+      "Retain genuine provider handoff and link-only when reuse is not approved"
+    ],
+    "business": [
+      "Keep governmental/scientific sources public-interest traffic-first",
+      "Qualify source owners on observed source openings and actual contact permission only; no unsolicited outreach",
+      "Explore optional explicit destination planning links only after intent signals, verified account attribution and owner approvals",
+      "Travelpayouts Drive site-wide HOLD; never rewrite Open Live Source"
+    ],
+    "growth": [
+      "Use existing rich destinations and substantial region collections rather than thin duplicate URLs",
+      "Select deep-link tests using analytics-led interest; log source -> second-view -> optional planning as separate events",
+      "Track no-result search terms with the settle-window filter and refrain from counting typing fragments as demand",
+      "Compare 30-day aggregate trend to baseline with no claims of conversion or bookings"
+    ]
+  },
+  "releaseGate": {
+    "publicActivation": false,
+    "needs": [
+      "Exact dedupe and source-specific capture freshness checks",
+      "Permission and handoff checks",
+      "Actual production SHA Pages Operations Syntax all SUCCESS",
+      "Real-domain visitor and canonical/sitemap/schema checks",
+      "Startup core <=575000 bytes"
+    ],
+    "handoffUpdateOnlyAfterValidatedProduction": true
+  }
+}
