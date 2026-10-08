@@ -1,14 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T14:24:00Z",
-  "mode": "QUALITY_FIRST_AND_BUSINESS_EXPANSION",
+  "generatedAt": "2026-10-08T01:15:00Z",
+  "mode": "REALITY_RECONCILED_QUALITY_UTILITY_TRAFFIC_EXPANSION",
   "visitorLane": {
-    "currentHealthyDistinctPlaceBaseline": 319,
-    "targetRange": [
-      350,
-      400
-    ],
-    "strategy": "Quality-led expansion toward 350–400 distinct searchable places. Prefer underrepresented countries/regions, official current-image/quasi-live sources, and unusually strong live views; do not add places merely to increase the count.",
+    "currentHealthyDistinctPlaceBaseline": 751,
+    "targetRange": null,
+    "strategy": "Post-reconciliation expansion is utility-led, not count-led. Protect the 751 healthy searchable-place baseline while improving first-impression live quality, provider/geographic diversity, destination depth, related-place journeys and repeated genuine demand gaps. Add new places only when they independently improve visitor value.",
     "nextHumanCheckBatch": [
       "ala-archa-natural-park",
       "denpasar-city-live",
@@ -23,7 +20,7 @@
       "everest-khumbu-hotel-view",
       "mauritius-grand-baie"
     ],
-    "researchBacklogPolicy": "Research can expand autonomously; public live/current state remains fail-closed.",
+    "researchBacklogPolicy": "Research may continue autonomously, but public promotion remains fail-closed and no catalog-count milestone may drive promotion.",
     "researchCandidateCount": 235,
     "playbackGatedCandidateCount": 14,
     "centralAsia": {
@@ -77,12 +74,10 @@
     "quasiLivePromotedCount": 102,
     "currentHealthyLiveImageCount": 171,
     "progressToTarget": {
-      "minimumTarget": 300,
-      "current": 319,
-      "remainingToMinimum": 0,
-      "stretchTarget": 350,
-      "remainingToStretch": 11,
-      "status": "QUALITY_FIRST_POST_300_RUNTIME_NEAR_CEILING"
+      "status": "CATALOG_SCALE_NO_LONGER_PRIMARY_GOAL",
+      "currentHealthyDistinctPlaces": 751,
+      "currentCountryTerritoryLabels": 130,
+      "rule": "No new numeric place-count target. Expansion is judged by visitor utility, source quality, geographic/provider diversity, repeat exploration and truthful planning paths."
     },
     "recentExpansionFamilies": [
       "La Réunion — four official tourism/scientific current webcam places",
@@ -93,7 +88,7 @@
       "Western/Northern Europe quality batch — Brussels, Zandvoort, Darmstadt, Heidelberg/Königstuhl, Nuremberg, Cannes, Plitvice, Denmark live-view family, Dresden/Radebeul and Farchant/Zugspitze"
     ],
     "catalogScaleStrategy": "Core data/sources.json remains below the strict 300 KB ceiling. New scale uses a separately deployed, lazy-on-search supplemental catalog; do not raise the core ceiling.",
-    "nextMode": "QUALITY_EXPANSION_VIA_SUPPLEMENTAL_SEARCH_PLUS_CORE_MAINTENANCE",
+    "nextMode": "QUALITY_PROVIDER_DIVERSITY_DEMAND_LED_GAPS_AND_DESTINATION_JOURNEY_EXPANSION",
     "currentHealthyTruth": {
       "LIVE_VIDEO": 13,
       "EXTERNAL_LIVE": 72,
@@ -105,27 +100,27 @@
       "SUPERSEDED_BY_QUASI_LIVE_PROMOTION": 8,
       "HUMAN_PLAYBACK_REQUIRED": 14
     },
-    "currentHealthyCountryCount": 79,
-    "remainingTo350": 11,
-    "remainingTo400": 61,
+    "currentHealthyCountryCount": 130,
+    "remainingTo350": 0,
+    "remainingTo400": 0,
     "remainingHumanPlaybackQueue": 14,
     "currentPriorityGaps": [
-      "Middle East / North Africa",
-      "South Pacific islands",
-      "Africa beyond current coverage",
-      "Caribbean capitals/harbours",
-      "South America civic/coastal"
+      "Watch Earth first-30-seconds source-backed visual quality",
+      "Underrepresented geography/provider families where a genuinely strong current source exists",
+      "Repeated genuine zero-result destination demand",
+      "Destination-to-related-place continuation",
+      "Current playback proof renewal for benchmark/high-value live destinations"
     ],
-    "searchableUniverseWithSupplemental": 339,
+    "searchableUniverseWithSupplemental": 751,
     "searchSupplementalCatalog": {
       "file": "data/search-supplemental.json",
-      "places": 20,
-      "loadMode": "LAZY_ON_NONEMPTY_SEARCH",
+      "places": 432,
+      "loadMode": "UNIFIED_PUBLIC_DISCOVERY_RUNTIME",
       "watchEarthEligible": false,
       "featuredEligible": false,
-      "atlasEligible": false,
-      "startupPayloadImpact": "NONE_UNTIL_SEARCH",
-      "rule": "Supplemental places must remain HEALTHY, LINK_ONLY, featuredHold=true and watchHold=true. They expand Search without entering Watch Earth or first-screen ranking."
+      "atlasEligible": "ONLY_WHEN_COORDINATES_ARE_TRUTHFULLY_PRESENT",
+      "startupPayloadImpact": "CONTROLLED_BY_EXISTING_LEAN_RUNTIME",
+      "rule": "Supplemental records are part of unified public discovery. They must not be treated as a hidden search-only side catalog, and coordinates must never be fabricated."
     }
   },
   "businessLane": {
@@ -200,8 +195,8 @@
       "trip-com"
     ],
     "accommodationRule": "Research-only until owner-project availability is confirmed.",
-    "verifiedOpportunityCount": 16,
-    "exactLinkQueueCount": 187,
+    "verifiedOpportunityCount": 163,
+    "exactLinkQueueCount": 178,
     "sourceGatedQueueCount": 8,
     "sourceGapBlockedCount": 2,
     "sourceGatedOpportunityCount": 31,
@@ -243,22 +238,23 @@
     "etoshaNote": "Official Namibia Wildlife Resorts evidence supports an Okaukuejo live-camera candidate, but ERN keeps it research-only until exact target playback is human-confirmed.",
     "trafficGrowthPlan": "data/traffic-growth-priorities.json",
     "ownerActionPacket": "data/owner-action-packet.json",
-    "currentOpportunityCount": 213,
+    "currentOpportunityCount": 341,
     "utilityExpansionPlan": "data/utility-link-opportunities.json",
     "ownerWorksheet": "data/exact-link-generation-worksheet.json",
-    "nextMode": "QUALITY_MAINTENANCE_TRAFFIC_GROWTH_BATCHED_LINK_CONVERSION_AND_UNLOCK_READINESS",
+    "nextMode": "DEMAND_LED_VERIFIED_PLANNING_UTILITY_AND_TRAFFIC_UNLOCK_READINESS",
     "businessPlaceExpansionMatrix": "data/business-place-expansion-matrix.json",
-    "healthyPlacesWithCommercialPath": 275,
+    "healthyPlacesWithCommercialPath": 217,
     "healthyPlacesWithoutCommercialPath": 38,
-    "verifiedLinkHealthyPlaces": 19,
+    "verifiedLinkHealthyPlaces": 163,
     "editorialOnlyRegistry": "data/commercial-editorial-only.json",
     "intentionallyEditorialPlaces": 38,
     "unclassifiedHealthyPlaces": 0,
     "trafficUnlockWatchlist": "data/travelpayouts-traffic-unlock-watchlist.json",
     "currentNowStrategy": {
-      "primary": "Use existing verified links and already owner-account-link-generation-capable programs where they add real visitor utility.",
-      "secondary": "Convert the highest-fit existing-partner destination opportunities in batches.",
-      "avoid": "Do not design ERN around locked programs or repeatedly ask the owner to check them."
+      "primary": "Use existing verified destination-level offers and utilities only after Earth discovery, prioritizing places with demonstrated visitor intent.",
+      "secondary": "Convert high-fit existing-partner opportunities in batches where the visitor need is clear; do not increase button density for its own sake.",
+      "traffic": "Increase qualified organic discovery, repeat exploration, deep-link sharing and planning intent before chasing traffic-gated partner programs.",
+      "avoid": "No paid ranking, no automatic link rewriting, no owner interruption for speculative one-off links, and no return to offer-count or catalog-count expansion."
     },
     "conversionShortlist": "data/commercial-conversion-shortlist.json",
     "tripComStatus": "VISIBLE_NOT_UNLOCKED_WAIT_FOR_TRAFFIC",
@@ -272,7 +268,7 @@
       "getyourguide",
       "booking-com"
     ],
-    "rule": "Use active/available programs now; do not chase traffic-gated programs until material traffic or account eligibility changes."
+    "rule": "Expand business utility only where it follows real destination interest and verified coverage. Traffic and commission signals never change source truth, currentness or editorial prominence."
   },
   "safeguards": {
     "automaticPlacement": false,
@@ -280,6 +276,7 @@
     "paidRanking": false,
     "unverifiedLivePromotion": false,
     "publicGenerativeGuide": false,
-    "publicNowMoments": false
+    "publicNowMoments": false,
+    "productionCompletionRule": "Visitor-facing expansion is complete only after matching successful Pages + Operations on the same content SHA and post-deploy production verification."
   }
 }
