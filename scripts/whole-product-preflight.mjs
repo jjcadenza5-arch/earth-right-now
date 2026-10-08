@@ -29,7 +29,7 @@ must(requireExists("src/travel-planning-client.js")&&read("src/travel-planning-c
 must(read("src/travel-planning-client.js").includes("partnerCurrent")&&read("src/travel-planning-client.js").includes("sourceEligible"),"Public travel offer gate must enforce active-partner and source-eligibility boundaries");
 must(app.includes("function watchEligible(")&&app.includes('s.truth!=="PREVIEW"')&&app.includes('s.playback!=="PREVIEW"'),"Watch Earth must reject PREVIEW-only sources");
 must(app.includes("sources.filter(s=>watchEligible(s)&&currentInside(s)&&cleanUrl(s.thumbnailUrl))"),"Watch Earth must require current in-ERN playback and genuine source imagery");
-must(app.includes("limit=6")&&app.includes("places.has(id)")&&app.includes("countries.get(c)")&&app.includes("providers.get(p)"),"Watch Earth must curate at most six distinct places with country/provider diversity");
+must(app.includes("limit=5")&&app.includes("places.has(id)")&&app.includes("countries.get(c)")&&app.includes("providers.get(p)"),"Watch Earth must curate at most five distinct places with country/provider diversity");
 must(app.includes("function provenWatchHere(s)")&&app.includes('recentPlaybackProof(s)')&&app.includes('s.playback==="IMAGE_REFRESH"'),"Proven in-ERN playback remains bounded by current playback or image proof");
 must(app.includes("function atlasEligible(s)")&&app.includes("state.sources.filter(atlasEligible)"),"Living Atlas lost broader truthful mapped-catalog coverage");
 must(app.includes("localDirectoryMatch(")&&app.includes("localDirectoryCard("),"reviewed local-place search plumbing missing");
