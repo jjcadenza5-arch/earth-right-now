@@ -690,36 +690,6 @@
     "freshnessEvidence": "Badan Geologi currently lists 'Merapi Activity Live Streaming' for seismic and visual CCTV monitoring of Mount Merapi."
   },
   {
-    "id": "us-mount-st-helens-current-image",
-    "placeId": "us-mount-st-helens",
-    "title": "Mount St. Helens — Johnston Ridge",
-    "provider": "U.S. Geological Survey / Cascades Volcano Observatory",
-    "country": "United States",
-    "region": "Washington",
-    "categories": [
-      "Volcanoes & Earth",
-      "Mountains",
-      "Scientific Earth"
-    ],
-    "truth": "LIVE_IMAGE",
-    "permission": "LINK_ONLY",
-    "health": "HEALTHY",
-    "playback": "EXTERNAL",
-    "sourceUrl": "https://www.usgs.gov/media/webcams/johnston-ridge-observatory-mount-st-helens",
-    "attribution": "U.S. Geological Survey / Cascades Volcano Observatory",
-    "checkedAt": "2026-10-05T13:50:00Z",
-    "lastSuccessfulCheck": "2026-10-05T13:50:00Z",
-    "quality": 98,
-    "freshness": 99,
-    "moment": 98,
-    "story": "Official USGS current view into the Mount St. Helens crater from Johnston Ridge.",
-    "featuredHold": true,
-    "watchHold": true,
-    "searchSupplemental": true,
-    "rightsBasis": "Official USGS webcam page; Search/Explore link-only.",
-    "freshnessEvidence": "USGS states the Johnston Ridge research camera image refreshes every five minutes."
-  },
-  {
     "id": "alaska-pavlof-current-image",
     "placeId": "alaska-pavlof-volcano",
     "title": "Pavlof Volcano — Alaska",
@@ -1138,36 +1108,6 @@
     "searchSupplemental": true,
     "rightsBasis": "Official Alaska Volcano Observatory webcam network; link-only.",
     "freshnessEvidence": "AVO currently lists Semisopochnoi cameras with Oct 5, 2026 UTC timestamps."
-  },
-  {
-    "id": "washington-mount-st-helens-current-image",
-    "placeId": "washington-mount-st-helens",
-    "title": "Mount St. Helens — Washington",
-    "provider": "U.S. Geological Survey / Cascades Volcano Observatory",
-    "country": "United States",
-    "region": "Washington",
-    "categories": [
-      "Volcanoes & Earth",
-      "Mountains",
-      "Scientific Earth"
-    ],
-    "truth": "LIVE_IMAGE",
-    "permission": "LINK_ONLY",
-    "health": "HEALTHY",
-    "playback": "EXTERNAL",
-    "sourceUrl": "https://www.usgs.gov/observatories/cvo/mount-st-helens-webcam",
-    "attribution": "U.S. Geological Survey / Cascades Volcano Observatory",
-    "checkedAt": "2026-10-05T13:48:00Z",
-    "lastSuccessfulCheck": "2026-10-05T13:48:00Z",
-    "quality": 97,
-    "freshness": 99,
-    "moment": 97,
-    "story": "Official current webcam view of Mount St. Helens.",
-    "featuredHold": true,
-    "watchHold": true,
-    "searchSupplemental": true,
-    "rightsBasis": "Official USGS/CVO webcam page; link-only.",
-    "freshnessEvidence": "USGS states the Mount St. Helens webcam refreshes every five minutes."
   },
   {
     "provider": "Alaska Volcano Observatory",

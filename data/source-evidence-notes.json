@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:38:00Z",
+  "generatedAt": "2026-10-08T05:04:00Z",
   "purpose": "Preserve detailed source/evidence prose outside ERN's lean startup catalog. Runtime rows retain concise visitor copy and non-empty evidence markers; this sidecar is audit evidence only and cannot authorize permission, truth, health or promotion.",
   "items": [
     {
@@ -232,6 +232,14 @@
       "storyDetail": "Official Kékestető webcam page covering Hungary's highest mountain area, including the South Ski Resort and Tower Lookout.",
       "checkedAt": "2026-10-04T01:45:00Z",
       "sourceUrl": "https://kekesteto.hu/webcam/?lang=en"
+    },
+    {
+      "id": "us-mount-st-helens-current-image",
+      "rightsBasisDetail": "USGS identifies the Johnston Ridge Observatory image as a Cascades Volcano Observatory research camera, states that the image refreshes every five minutes, and marks Sources/Usage as Public Domain.",
+      "freshnessEvidenceDetail": "Exact current image target resolved from the official USGS webcam page to https://volcanoes.usgs.gov/vsc/captures/st_helens/jro-webcam.jpg and independently retrieved on 2026-10-08.",
+      "checkedAt": "2026-10-08T05:04:00Z",
+      "sourceUrl": "https://volcanoes.usgs.gov/vsc/captures/st_helens/jro-webcam.jpg",
+      "officialUrl": "https://www.usgs.gov/media/webcams/johnston-ridge-observatory-mount-st-helens"
     }
   ]
 }
