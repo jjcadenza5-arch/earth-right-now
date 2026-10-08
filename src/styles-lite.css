@@ -30,3 +30,6 @@ body{padding-bottom:calc(92px + env(safe-area-inset-bottom))}
 .mobile-dock{bottom:max(10px,env(safe-area-inset-bottom))!important}
 .window-grid .window-card{min-height:200px}
 }
+
+/* Editorial Fuji variation, licensed image: Ajaykumar Kannan, Unsplash photo ZasJ7-YIK5Q. Not a live image. */
+body.ern-hero-fuji-alternate .hero-live{background-image:url("https://images.unsplash.com/photo-1743996902640-dad8216729f4?auto=format&fit=crop&fm=jpg&q=80&w=2200"),url("../assets/ern-fuji-mockup-hero.jpg?v=20261004k");background-position:center 48%}
