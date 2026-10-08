@@ -5,20 +5,50 @@
   "defaultLocale": "en",
   "xDefaultLocale": "en",
   "locales": [
-    {"code":"en","languageName":"English","pathPrefix":""},
-    {"code":"th","languageName":"ไทย","pathPrefix":"th"},
-    {"code":"de","languageName":"Deutsch","pathPrefix":"de"},
-    {"code":"fr","languageName":"Français","pathPrefix":"fr"},
-    {"code":"ja","languageName":"日本語","pathPrefix":"ja"},
-    {"code":"zh","languageName":"中文","pathPrefix":"zh"},
-    {"code":"es","languageName":"Español","pathPrefix":"es"}
+    {
+      "code": "en",
+      "languageName": "English",
+      "pathPrefix": ""
+    },
+    {
+      "code": "th",
+      "languageName": "ไทย",
+      "pathPrefix": "th"
+    },
+    {
+      "code": "de",
+      "languageName": "Deutsch",
+      "pathPrefix": "de"
+    },
+    {
+      "code": "fr",
+      "languageName": "Français",
+      "pathPrefix": "fr"
+    },
+    {
+      "code": "ja",
+      "languageName": "日本語",
+      "pathPrefix": "ja"
+    },
+    {
+      "code": "zh",
+      "languageName": "中文",
+      "pathPrefix": "zh"
+    },
+    {
+      "code": "es",
+      "languageName": "Español",
+      "pathPrefix": "es"
+    }
   ],
   "collections": [
     "beaches-water",
     "mountains-snow",
     "cities-streets",
     "wildlife-nature",
-    "calm-scenic"
+    "calm-scenic",
+    "volcanoes-earth-science",
+    "parks-protected-places"
   ],
   "routing": {
     "englishRoot": "/discover/",
