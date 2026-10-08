@@ -12,7 +12,7 @@ const home=await waitText(base+"/",t=>t.includes("app-lite.js?v="+build),"produc
 const app=await waitText(base+"/src/app-lite.js?v="+build,t=>t.includes("setTimeout(()=>loadSearchExtra(initialQ),0)"),"production app");
 const liteCss=await waitText(base+"/src/styles-lite.css",t=>t.includes(".viewer-stage .c"),"production current-image viewer CSS");
 const analyticsCfg=await waitText(base+"/src/analytics-config.js",t=>t.includes('provider:"ERN_FIRST_PARTY"')&&t.includes("enabled:true")&&t.includes("ern-analytics-api"),"production analytics config");
-const analyticsRuntime=await waitText(base+"/src/analytics-runtime.js",t=>t.includes("ERN_SEARCH_ANALYTICS")&&t.includes("page_view")&&t.includes("globalPrivacyControl"),"production analytics runtime");
+const analyticsRuntime=await waitText(base+"/src/analytics-runtime.js",t=>t.includes("ERN_SEARCH_ANALYTICS")&&t.includes("page_view")&&t.includes("globalPrivacyControl")&&t.includes("},1500);"),"production analytics runtime");
 const commercialRuntime=await waitText(base+"/src/commercial-attribution-runtime.js",t=>t.includes('"/data/travel-offers.json"')&&t.includes("travelOption"),"production commercial attribution runtime");
 const analyticsDeployment=await (await get(base+"/data/analytics-deployment.json")).json();
 const trafficGrowth=await (await get(base+"/data/traffic-growth-priorities.json")).json();
