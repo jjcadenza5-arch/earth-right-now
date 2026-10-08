@@ -8299,3 +8299,126 @@ Final candidate passed the strict pre-deploy performance and launch suite.
 6. Revisit traffic-gated partner programs only after a real partner status change, first confirmed conversion/commission, sustained planning activity, or material organic growth.
 7. Preserve matching successful Pages + Operations on one SHA plus live-domain verification as the completion rule for substantial visitor-facing work.
 
+## Current-image expansion + demand-led traffic research checkpoint — 2026-10-08 02:47 UTC
+
+### Canonical production state
+- Validated production content SHA: `2b6bed9d0d9c6a06087d6a9997bb8a213cddfed9`.
+- **Deploy ERN to GitHub Pages #2868**: SUCCESS.
+- **ERN Operations Check #1629**: SUCCESS.
+- Pages and Operations validated the exact same content SHA.
+- Live-domain production reality verifier against `earthrightnow.app`: `ok: true`.
+- IndexNow accepted 56 recently updated URLs; submission is discovery evidence only, never proof of crawl/index/ranking.
+
+### Durable performance headroom created
+The prior validated build was effectively sitting on the 575 KB lean-core ceiling.
+- 318 important source records repeated the generic runtime marker `See source evidence.`.
+- The marker was compacted to `Evidence on file.` while preserving a non-empty `rightsBasis` on every important source, so the production rights-basis invariant remains enforced.
+- This creates durable expansion headroom rather than repeatedly shaving a few bytes from each new destination.
+- The 575 KB budget was not raised.
+
+### Current-image pilot expanded after observation + editorial review
+Operations reported the current-image pilot observation requirement met and expansion-ready subject to editorial review.
+
+Two already-staged provider-authorized current images were independently revalidated and promoted:
+
+1. **Yellowstone Lake — USGS/YVO**
+   - official USGS current camera is operating in the 2026 reinstalled configuration;
+   - exact current image endpoint: `https://volcanoes.usgs.gov/vsc/captures/yellowstone/current_ylake.jpg`;
+   - USGS identifies the media as Public Domain;
+   - ERN state: HEALTHY / LIVE_IMAGE / EMBED_ALLOWED / IMAGE_REFRESH;
+   - current source image is also the discovery-card visual;
+   - refreshed at 2026-10-08T02:47:00Z.
+
+2. **Taranaki Maunga — GeoNet / Earth Sciences New Zealand**
+   - GeoNet page showed timestamped current images on 2026-10-08, updating at 10-minute intervals;
+   - exact documented latest-image endpoint: `https://images.geonet.org.nz/volcano/cameras/latest/taranaki.jpg`;
+   - GeoNet attribution preserved;
+   - ERN state: HEALTHY / LIVE_IMAGE / EMBED_ALLOWED / IMAGE_REFRESH;
+   - current source image is also the discovery-card visual;
+   - refreshed at 2026-10-08T02:47:00Z.
+
+Production current-image contract now explicitly verifies:
+- Mount Ruapehu
+- Yellowstone Biscuit Basin
+- Yellowstone Lake
+- Taranaki Maunga
+
+Actual production result:
+- **13 source-backed Watch Earth visuals**
+- **8 visual provider families**
+- minimum source-backed visual floor: **12**
+- all four named current-image cards use their exact permitted source visual.
+
+### Traffic/business evidence synchronized
+Operations #1624 / current traffic evidence:
+- approximate unique visitors: **54**
+- page views: **350**
+- Google referral views: **18**
+- Facebook-family referral views: **32**
+- Earth searches: **87**
+- zero-result searches: **36**
+- place/window opens: **300**
+- external-source opens: **80**
+- travel-option opens: **9**
+- successful share/copy events: **0**
+- zero-result share of searches: **41.38%**
+
+Historical zero-result replay:
+- 34 historical zero-result events
+- 7 now resolve
+- 25 genuine current gaps
+- 2 low-confidence partials
+
+Commercial readiness remains on the stricter source-eligible definition:
+- **225** current affiliate offers
+- **219** eligible ERN places
+- 196 Viator / 21 Klook / 5 Tiqets / 3 Welcome Pickups
+- Operations' broader 226-offer inventory count is not used as the stricter public-revenue readiness number.
+
+### Demand-led source research — no blind catalog expansion
+Search demand now drives private research questions, never automatic catalog publication.
+
+Active lanes:
+- **Chiang Mai, Thailand**
+  - genuine current zero-result gap;
+  - official Chiang Mai Provincial Administrative Organization real-time CCTV surface exists;
+  - current retrievable state showed all four feeds in STANDBY / WAITING FOR FEED;
+  - status: research only; do not publish standby feeds as live.
+
+- **Dolphin Bay / Thailand**
+  - grouped from three related historical zero-result variants: `dolphin bay`, `dolphin bay,`, `dolphin bay, thailand`;
+  - this is treated as one repeated demand signal rather than three destinations;
+  - no truthful current source confirmed yet;
+  - status: RESEARCH_NOW.
+
+- **Hua Hin, Thailand**
+  - genuine place-specific zero-result gap;
+  - official Tourism Authority destination information exists but is not a current-view source;
+  - status: RESEARCH_NOW; do not promote destination-information pages as live cameras.
+
+Rule:
+**Traffic chooses the research question; source truth, permission, currentness and quality decide publication.**
+
+### Clarification: public LIVE HERE vs Operations renewal debt
+Operations #1624 showed 0/5 playback proofs inside its stricter renewal target and listed several embedded sources for re-proof.
+This does **not** mean the public current claim was already false.
+
+Public runtime contract:
+- embedded LIVE_VIDEO playback proof is accepted for up to **168 hours (7 days)**;
+- once outside that window, `currentTruthClaim` fails closed and the public label becomes `RECHECK DUE`.
+
+Operations contract:
+- intentionally starts renewal/re-proof work earlier and reports a stricter freshness debt;
+- therefore a source may be “renewal expired/due” operationally while still truthfully inside the public 168-hour window.
+
+Commercial planning may use an even stricter playback gate. This is why Jinzun can remain a truthful live/current Earth view while its commission-capable planning path stays hidden pending fresher playback proof.
+
+### Next autonomous lane
+1. Continue current-image expansion only from already-authorized/staged exact targets after current endpoint + attribution review.
+2. Continue improving real source-backed first impressions while maintaining provider/geographic diversity.
+3. Research repeated/place-specific zero-result demand (Dolphin Bay, Hua Hin, Chiang Mai) without publishing weak or standby sources.
+4. Use clean-v2 destination opens to add business utility only where an actual downstream planning gap exists; do not duplicate existing Addo/Barbados/Cape Verde coverage.
+5. Continue qualified traffic growth through crawlable destination/country deep links, search/AI discovery and destination sharing; successful share/copy remains zero, so no sharing-growth claim yet.
+6. Keep traffic-gated affiliate programs event-driven.
+7. Preserve strict 575 KB performance budget, matching Pages + Operations on one SHA, and live-domain production verification as checkpoint requirements.
+
