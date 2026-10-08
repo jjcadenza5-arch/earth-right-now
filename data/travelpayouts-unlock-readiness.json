@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T02:02:00Z",
-  "searchableHealthyPlaces": 313,
+  "generatedAt": "2026-10-08T07:36:00Z",
+  "searchableHealthyPlaces": 753,
   "strategy": "EVENT_DRIVEN_TRAFFIC_UNLOCK",
   "currentDecision": "DO_NOT_RECHECK_LOCKED_PROGRAMS_YET",
   "firstFutureProgram": "trip-com",
@@ -42,7 +42,9 @@
     "calendar-based repeated account checking",
     "invented traffic thresholds",
     "owner/test clicks as evidence of market traction",
-    "opening duplicate direct affiliate accounts merely to bypass a Travelpayouts traffic gate"
+    "opening duplicate direct affiliate accounts merely to bypass a Travelpayouts traffic gate",
+    "Travelpayouts Drive automatic keyword/link rewriting as a shortcut to monetization",
+    "Targeted Offers or automatic recommendation injection on ERN core discovery surfaces"
   ],
   "lockedPriority": [
     "trip-com",
@@ -61,6 +63,16 @@
     "convert high-fit Viator/Klook/Tiqets/Welcome Pickups destination opportunities",
     "use currently link-generation-capable utilities only where visitor utility is clear",
     "grow qualified organic discovery and destination-page depth",
-    "measure genuine travel-planning intent separately from owner testing"
-  ]
+    "measure genuine travel-planning intent separately from owner testing",
+    "continue explicit destination-specific planning links with affiliate disclosure and source-neutral ranking",
+    "grow qualified organic traffic before reconsidering any controlled Drive experiment"
+  ],
+  "driveDecision": {
+    "state": "HOLD_SITE_WIDE_DRIVE_AUTOMATION",
+    "observedAt": "2026-10-08T07:20:00Z",
+    "reason": "Drive automation is not a substitute for traffic/program unlocks and could over-monetize ERN's live-discovery experience.",
+    "allowedNow": false,
+    "futureControlledExperimentOnly": true,
+    "openLiveSourceRewritingAllowed": false
+  }
 }
