@@ -15,13 +15,13 @@ const geography=[...new Set(pool.flatMap(s=>[s.city,s.state,s.region,s.country,.
 const venueOrUtility=/\b(museum|opera|symphony|orchestra|concert hall|theatre|theater|outlet|mall|shopping|restaurant|cafe|hotel|resort)\b/i;
 const researchClusterKey=query=>{
  const q=folded(query);
- if(/\\b(bejin|bejing|beijing)\\b/.test(q))return"beijing";
+ if(/\b(bejin|bejing|beijing)\b/.test(q))return"beijing";
  if(q.includes("chiangmai")||q.includes("chiang mai"))return"chiang-mai";
  if(q.includes("dolphin bay"))return"dolphin-bay-sam-roi-yot";
  if(q.includes("mae hong sorn")||q.includes("mae hong son"))return"mae-hong-son";
  if(q.includes("phuket"))return"phuket";
  if(q.includes("wat rong khun")||q.includes("white temple")||q.includes("วัดร่องขุ่น"))return"chiang-rai-white-temple";
- return q.replace(/[^\\p{L}\\p{N}]+/gu,"-").replace(/^-+|-+$/g,"")||null;
+ return q.replace(/[^\p{L}\p{N}]+/gu,"-").replace(/^-+|-+$/g,"")||null;
 };
 const rows=rawGaps.map(g=>{
  const query=g.query,matches=searchEarth(pool,query,{now:new Date()});
