@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-08T06:36:00Z",
+  "objective": "Increase qualified ERN discovery traffic while preserving source truth, privacy, lean-core limits and commercial-neutral ranking.",
+  "evidenceBaseline": {
+    "source": "ERN Operations #1662",
+    "windowDays": 30,
+    "approximateUniqueVisitors": 54,
+    "pageViews": 359,
+    "earthSearches": 108,
+    "zeroResultSearches": 41,
+    "windowOpens": 338,
+    "externalSourceOpens": 82,
+    "travelOptionOpens": 10,
+    "shareClicks": 0,
+    "googleReferralViews": 18,
+    "facebookReferralViews": 32
+  },
+  "growthLoops": [
+    {
+      "id": "search-and-ai-discovery",
+      "priority": "P1",
+      "actions": [
+        "Maintain indexable destination pages only while current/scheduled truth is valid.",
+        "Create demand-led editorial collection paths when multiple truthful current places support a real observed theme; never create thin pages for unresolved gaps.",
+        "Keep sitemap, hreflang, structured data, IndexNow and crawlable provider/source context current.",
+        "Use zero-result replay to distinguish historical resolved terms from genuine current gaps before adding content."
+      ],
+      "currentBatch": "Thailand Live & Current Views collection because Thailand demand exists and four healthy Thailand sources now support a truthful crawlable collection."
+    },
+    {
+      "id": "deep-link-social-distribution",
+      "priority": "P1",
+      "actions": [
+        "Prefer destination and collection deep links over repeated homepage-only sharing.",
+        "Rotate places/countries so aggregate referral behavior can be compared.",
+        "Do not claim reach or causation from manual posting; use aggregate referrals and downstream exploration only.",
+        "Wait for genuine share/copy events before optimizing around visitor sharing."
+      ],
+      "currentSignal": "32 Facebook-family referral views; share_clicked remains 0."
+    },
+    {
+      "id": "source-owner-referral-loop",
+      "priority": "P2",
+      "actions": [
+        "Keep Open Live Source as the genuine provider handoff.",
+        "Measure aggregate source-specific outbound opens.",
+        "Only promote a source owner to outreach-ready after repeated value, verified ownership and a concrete visitor benefit.",
+        "Prefer reciprocal/co-marketing, visitor benefit or referral structures over paid ranking."
+      ],
+      "currentSignal": "82 aggregate external-source opens; evidence still too early for broad outreach."
+    },
+    {
+      "id": "visitor-utility-and-return",
+      "priority": "P1",
+      "actions": [
+        "Protect fast search, related-place continuation and useful currentness labels.",
+        "Use planning actions only after a truthful current Earth view is selected.",
+        "Research repeated zero-result terms as product gaps rather than filling them with weak substitutes.",
+        "Preserve saved/recent/current-place utility to support repeat visits."
+      ],
+      "currentSignal": "338 place/window opens and 108 searches; zero-result share remains material."
+    }
+  ],
+  "protectedRules": [
+    "Traffic goals never override source truth, currentness, permission or health.",
+    "Commercial value never affects Earth ranking or editorial prominence.",
+    "Do not publish weak substitutes merely to capture search traffic.",
+    "Do not store raw IP addresses or per-person histories.",
+    "Do not claim bookings, conversion, revenue, endorsement or causal attribution without direct evidence.",
+    "Do not exceed the 575 KB lean-core ceiling."
+  ],
+  "nextMeasurementQuestions": [
+    "Do Thailand collection/deep-link entries generate qualified page, search, source-open or planning activity?",
+    "Which destination deep links attract referral traffic that continues into multiple place/window opens?",
+    "Which zero-result clusters repeat enough to justify new source research?",
+    "Which source owners accumulate repeated outbound value sufficient for human partnership review?"
+  ]
+}
