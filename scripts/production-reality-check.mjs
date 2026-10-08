@@ -84,11 +84,12 @@ if(!kilaueaPage.includes('data-offer-id="viator-kilauea-volcanoes-national-park-
 const denpasarPage=await waitText(base+"/places/denpasar-city-live/",t=>t.includes("Denpasar"),"Denpasar destination page");
 const volcanoDiscover=await waitText(base+"/discover/volcanoes-earth-science/",t=>t.includes("Volcanoes & Earth Science"),"volcano discovery page");
 const parksDiscover=await waitText(base+"/discover/parks-protected-places/",t=>t.includes("Parks & Protected Places"),"parks discovery page");
-const seoSitemap=await waitText(base+"/sitemap.xml",t=>t.includes("/discover/volcanoes-earth-science/")&&t.includes("/discover/parks-protected-places/"),"SEO sitemap");
+const thailandDiscover=await waitText(base+"/discover/thailand-live-now/",t=>t.includes("Thailand Live & Current Views")&&t.includes("Hua Hin Beach"),"Thailand demand-led discovery page");
+const seoSitemap=await waitText(base+"/sitemap.xml",t=>t.includes("/discover/volcanoes-earth-science/")&&t.includes("/discover/parks-protected-places/")&&t.includes("/discover/thailand-live-now/"),"SEO sitemap");
 for(const locale of ["th","de","fr","ja","zh","es"]){
-  if(!seoSitemap.includes("/"+locale+"/discover/volcanoes-earth-science/")||!seoSitemap.includes("/"+locale+"/discover/parks-protected-places/"))throw new Error("production sitemap is missing localized SEO collection routes for "+locale);
+  if(!seoSitemap.includes("/"+locale+"/discover/volcanoes-earth-science/")||!seoSitemap.includes("/"+locale+"/discover/parks-protected-places/")||!seoSitemap.includes("/"+locale+"/discover/thailand-live-now/"))throw new Error("production sitemap is missing localized SEO collection routes for "+locale);
 }
-for(const [name,html] of [["volcano",volcanoDiscover],["parks",parksDiscover]]){
+for(const [name,html] of [["volcano",volcanoDiscover],["parks",parksDiscover],["thailand",thailandDiscover]]){
   if(!html.includes('meta name="robots" content="index,follow"'))throw new Error("production "+name+" discovery page is not indexable");
   if(!html.includes('meta name="googlebot" content="max-image-preview:large,max-snippet:-1,max-video-preview:-1"'))throw new Error("production "+name+" discovery page is missing rich-preview directives");
   if(!html.includes('type="application/atom+xml"')||!html.includes("/updates.xml"))throw new Error("production "+name+" discovery page is missing ERN updates feed discovery");
