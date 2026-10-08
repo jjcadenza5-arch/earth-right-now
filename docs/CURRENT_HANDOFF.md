@@ -8190,3 +8190,112 @@ No failed candidate is canonical.
 6. Keep Jinzun as the quality benchmark and Ruapehu as the first clean-v2 demand-led expansion example.
 7. Preserve matching successful Pages + Operations on the same SHA plus live-domain verification as the completion rule for future substantial visitor-facing checkpoints.
 
+## Quality/business/traffic expansion checkpoint — 2026-10-08 02:23 UTC
+
+### Canonical production state
+- Validated production content SHA: `17372bdc9195d03d297fd6da0acad8c5052390c3`.
+- **Deploy ERN to GitHub Pages #2861**: SUCCESS.
+- **ERN Operations Check #1624**: SUCCESS.
+- Pages and Operations validated the exact same content SHA.
+- Live-domain production reality verifier: `ok: true`.
+- IndexNow accepted 56 recently updated URLs; acceptance is discovery submission only, not proof of indexing/ranking.
+
+### Remaining catch-up debt closed
+- `data/business-place-expansion-matrix.json` was still anchored to the historical 314-place baseline. It is now reconciled to **751 healthy searchable places / 130 country-territory labels** and explicitly treated as a selective private utility matrix rather than a count-expansion target.
+- Public traffic/business evidence was synchronized from Operations #1612:
+  - approximate unique visitors: **54**
+  - page views: **344**
+  - Google referral views: **18**
+  - Facebook-family referral views: **32**
+  - Earth searches: **87**
+  - zero-result searches: **36**
+  - place/window opens: **300**
+  - external-source opens: **80**
+  - travel-option opens: **9**
+  - successful share/copy events: **0**
+- Clean-v2 destination attribution remains the only basis for new destination-level behavior prioritization; historical aggregate counters remain separate.
+
+### Visitor-side quality expansion realized
+The owner screenshots revealed that some truthful current-image sources were still rendered with illustrative posters even though ERN already had safe reusable current images.
+
+Two safe cases were found and fixed:
+- **Mount Ruapehu — GeoNet current image**
+- **Yellowstone — Biscuit Basin — USGS/YVO current image**
+
+Both are:
+- HEALTHY
+- LIVE_IMAGE
+- IMAGE_REFRESH
+- EMBED_ALLOWED
+- now using the exact current source image as `thumbnailUrl`.
+
+Production verification now requires:
+- at least **10** trustworthy source-backed Watch Earth visuals;
+- at least **5** visual provider families;
+- Ruapehu and Yellowstone current-image records must use their permitted source image rather than an illustrative replacement.
+
+Actual production result:
+- **11 source-backed Watch Earth visuals**
+- **8 visual providers**
+- Ruapehu current-image discovery card: verified
+- Yellowstone Biscuit Basin current-image discovery card: verified
+
+This directly improves first-impression trust and retention without stock imagery or a new rights assumption.
+
+### Demand-led business expansion realized
+Clean-v2 destination opens after Ruapehu included Addo, Paynes Bay, Santa Maria Bay / Cape Verde and Denpasar.
+
+Existing verified coverage was preserved rather than duplicated:
+- Addo Elephant National Park already has a verified Viator safari path.
+- Paynes Bay / Barbados already has a verified Viator activities path.
+- Santa Maria Bay / Sal, Cape Verde already has a verified Viator activities path.
+
+The genuine gap was **Denpasar**:
+- official ATCS Kota Denpasar source rechecked on 2026-10-08;
+- official page confirms real-time public CCTV monitoring / live streaming;
+- source timestamp refreshed truthfully;
+- one current Viator Denpasar city-and-temples planning option added using ERN's existing owner-verified Viator identity;
+- exact URL remains truthfully recorded as `manualOpenVerified: false`;
+- affiliate availability remains downstream from Earth discovery and cannot affect ranking.
+
+Production verifier result:
+- `ruapehuPlanningPathVisible: true`
+- `denpasarPlanningPathVisible: true`
+- Jinzun offer ready but visitor path still playback-gated as intended.
+
+Public revenue-active readiness is synchronized after Denpasar:
+- offer count: **225**
+- unique source-eligible places with active offers: **219**
+- Viator offers: **196**
+- unique Viator tracked URLs: **90**
+
+### Traffic-growth direction
+Current operating loop remains:
+**qualified discovery → strong first 30 seconds → open another place → share a destination deep link → useful planning → return**
+
+This batch strengthened three parts of that loop:
+1. first impression: more real source visuals;
+2. planning utility: a demand-led Denpasar path;
+3. measurement baseline: current traffic/business snapshot synchronized, with share events still honestly at zero.
+
+Continue to treat search/referral/share/planning metrics as aggregate directional evidence only. Do not infer individual identity, booking, conversion or commission.
+
+### Performance discipline
+Several intermediate candidates correctly failed ERN's strict **575 KB lean-core** ceiling after the two real image URLs and Denpasar evidence were added.
+- The limit was not raised.
+- `sources.json` was restored to compact serialization.
+- visitor-loaded travel-offer data was compacted.
+- redundant runtime verification metadata and null failure markers were removed.
+- redundant aliases/text were trimmed without removing truth, rights, source, URL, timestamps, image refresh behavior or planning functionality.
+
+Final candidate passed the strict pre-deploy performance and launch suite.
+
+### Next autonomous lane
+1. Continue increasing real source-backed first-impression visuals where existing rights safely allow it; do not replace truthful illustrative fallbacks with unauthorized imagery.
+2. Use clean-v2 destination behavior to choose the next visitor/business utility improvements; avoid duplicate partner coverage.
+3. Keep resolving repeated genuine zero-result demand through source research, not fabricated aliases.
+4. Strengthen destination/country deep-link organic discovery and sharing; share count is currently zero, so do not claim a sharing loop until real visitor behavior appears.
+5. Continue IndexNow + sitemap/search readiness, but never treat submission as indexing/ranking.
+6. Revisit traffic-gated partner programs only after a real partner status change, first confirmed conversion/commission, sustained planning activity, or material organic growth.
+7. Preserve matching successful Pages + Operations on one SHA plus live-domain verification as the completion rule for substantial visitor-facing work.
+
