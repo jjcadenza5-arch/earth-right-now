@@ -9039,3 +9039,105 @@ The deployed visitor-reality verifier passed against the actual production domai
 4. Keep searching Chiang Mai + Hua Hin/Dolphin Bay for trustworthy current sources; no static/prerecorded/generic-camera substitutes.
 5. Continue dedupe and evidence-sidecar work to recover durable lean-core headroom before uncontrolled core expansion.
 6. Preserve source-currentness gating and same-SHA Pages + Operations + production-domain verification for substantial visitor-facing checkpoints.
+
+
+## Hua Hin first-party live + demand-led utility checkpoint — 2026-10-08 06:19 UTC
+
+### Canonical validated production state
+- Production content SHA: `bcb13bd27df8ac9d384bf8475731834d800efc29`.
+- **Deploy ERN to GitHub Pages #2902**: SUCCESS.
+- **ERN Operations Check #1662**: SUCCESS.
+- Pages and Operations validated the same content SHA.
+- **Verify deployed visitor reality sync** against the actual `earthrightnow.app`: SUCCESS.
+- **Verify deployed social preview metadata**: SUCCESS.
+- **IndexNow recent URL notification**: SUCCESS.
+- This supersedes validated production content SHA `ab124a0aecf4a07708c793e47bb06ddcf37ebc5f`.
+
+### Hua Hin demand gap partially resolved with a first-party source
+Fresh demand-led research found a first-party current webcam on the official **Centara Grand Beach Resort Hua Hin** YouTube channel.
+
+ERN now includes:
+- source id: `hua-hin-centara-live`
+- place id: `hua-hin-centara-live`
+- title: **Hua Hin Beach — Centara Grand**
+- provider: **Centara Grand Beach Resort Hua Hin**
+- truth: `EXTERNAL_LIVE`
+- permission: `LINK_ONLY`
+- playback: `EXTERNAL`
+- exact source: `https://www.youtube.com/watch?v=PPJ55qdY3pw`
+- official resort reference: `https://www.centarahotelsresorts.com/centaragrand/CHBR`
+
+The conservative external-only state is intentional. ERN has first-party source/currentness evidence, but not a fresh independent playback/permission proof strong enough to claim `EMBED_ALLOWED`. **Open Live Source remains the genuine Centara/YouTube handoff.**
+
+The Thailand Gulf source gap is now **partially resolved**:
+- Hua Hin: resolved by the first-party Centara live source.
+- Dolphin Bay / Sam Roi Yot: still a genuine current-source gap.
+- Khao Takiab / wider Prachuap coast: still research targets.
+- No static tourism image, prerecorded beach video or generic road CCTV was used as a substitute.
+
+Chiang Mai remains intentionally unresolved. The official Chiang Mai PAO camera surface still exposes standby / waiting-for-feed states rather than a trustworthy scenic current window, so no weak substitute was promoted.
+
+### Visitor + business utility
+A downstream Hua Hin Viator planning action was added separately from the source handoff:
+- offer id: `viator-hua-hin-public`
+- destination: Hua Hin / Prachuap Khiri Khan
+- current Viator 2026 destination inventory was independently rechecked and includes substantial Hua Hin / Pranburi / Sam Roi Yot activity inventory.
+- tracked URL reuses ERN's owner-verified Viator identity `P00322254 / mcid 42383`.
+- `manualOpenVerified=false` remains explicit.
+
+Revenue-readiness accounting after the addition:
+- public affiliate offers: **231**
+- eligible places covered: **225**
+- Viator offers: **202**
+- Viator unique tracked URLs: **96**
+- Klook: 21 offers / 10 unique tracked URLs
+- Tiqets: 5 offers / 4 unique tracked URLs
+- Welcome Pickups: 3 offers / 3 unique tracked URLs
+
+These are eligible planning links, not bookings, conversions, commissions or revenue. Commercial value remains prohibited from affecting Earth ranking, truth, currentness, permission or source inclusion.
+
+### Lean-core safeguard and headroom
+The first Hua Hin source write accidentally expanded `data/sources.json` through pretty-print serialization. The resulting bloat was caught before accepting the checkpoint.
+
+The ceiling was not raised. The source catalog was restored to the existing compact serialization while preserving the new source.
+
+Final validated performance from Pages #2902:
+- `data/sources.json`: **292,920 bytes**
+- startup lean core: **574,777 bytes**
+- protected ceiling: **575,000 bytes**
+- remaining headroom: **223 bytes**
+- startup JS: **159,173 / 160,000 bytes**
+
+This makes further uncontrolled core growth inappropriate. Prefer dedupe, promote-in-place, compact metadata and evidence sidecars before adding more startup-core records.
+
+### Latest aggregate operating evidence
+Operations #1662 reports a 30-day aggregate snapshot of:
+- approximate unique visitors: **54**
+- page views: **359**
+- searches: **108**
+- zero-result searches: **41**
+- place/window opens: **338**
+- external-source opens: **82**
+- travel-option opens: **10**
+- share clicks: **0**
+- Facebook-family referral views: **32** (~8.91% of page views)
+
+Since the captured baseline, the operator brief reports +11 approximate visitors, +102 page views, +86 searches, +145 place/window opens and +44 external-source opens. These are aggregate directional signals only; no causal attribution, booking, conversion or revenue inference is permitted.
+
+Search-gap replay now recognizes historical **Hua Hin** zero-result demand as resolved by the new current catalog entry while **Dolphin Bay** remains a genuine current gap. This is exactly the intended analytics-led behavior: resolve with a truthful source when one exists; otherwise preserve the gap.
+
+### Source-partner qualification
+The new Centara source is a natural future source-owner research candidate because it is a first-party hospitality source, but it is **not outreach-ready** merely because ERN now links to it.
+
+Operations has staged the provider family for `RESEARCH_PROVIDER_TERMS_AND_BRANDED_EMBED_PATH` only. Permission, embed compatibility and human playback proof remain unknown. Do not claim a partnership or inside-ERN playback until separately verified.
+
+Existing source-owner candidates remain evidence-led. Aggregate external-source opens increased from 81 to 82; this is useful directional traffic evidence but still too early for broad outreach or any partnership claim.
+
+### Next autonomous lane
+1. Recover durable lean-core headroom before another core expansion; prioritize dedupe, compact metadata and evidence sidecars.
+2. Continue searching **Dolphin Bay / Sam Roi Yot** and **Chiang Mai** without weak substitutes.
+3. Research Centara provider terms / branded embed path, but keep Hua Hin external-only until permission and playback are genuinely proven.
+4. Continue provider-authorized current-image and inside-ERN upgrades where exact rights/currentness/playback evidence exists.
+5. Continue analytics-led source-owner qualification from real aggregate outbound demand without premature outreach.
+6. Continue qualified organic discovery and zero-result replay; do not claim share growth while share/copy events remain zero.
+7. Preserve the same-SHA Pages + Operations + production-domain verification requirement for every substantial visitor-facing checkpoint.
