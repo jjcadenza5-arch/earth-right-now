@@ -8422,3 +8422,90 @@ Commercial planning may use an even stricter playback gate. This is why Jinzun c
 6. Keep traffic-gated affiliate programs event-driven.
 7. Preserve strict 575 KB performance budget, matching Pages + Operations on one SHA, and live-domain production verification as checkpoint requirements.
 
+## SEO / qualified-traffic growth checkpoint — 2026-10-08 03:12 UTC
+
+### Canonical production state
+- Validated production content SHA: `5e3e85d171119d3e8378d27a51917985183eb263`.
+- **Deploy ERN to GitHub Pages #2878**: SUCCESS.
+- **ERN Operations Check #1638**: SUCCESS.
+- **ERN JavaScript Syntax Check #1167**: SUCCESS.
+- Pages and Operations validated the exact same content SHA.
+- Post-deploy production reality verifier on `earthrightnow.app`: `ok: true`.
+
+### SEO / organic discovery expansion realized
+ERN's crawlable Discover layer gained two substantial people-first search-intent collections:
+- **Volcanoes & Earth Science** — `/discover/volcanoes-earth-science/`
+- **Parks & Protected Places** — `/discover/parks-protected-places/`
+
+These collections:
+- derive only from current/schedule-verified ERN destinations;
+- use the existing deterministic editorial collection engine;
+- do not change source truth, playback eligibility or paid ranking;
+- expose CollectionPage + ItemList + BreadcrumbList structured data;
+- are included in the production sitemap;
+- expose canonical and hreflang relationships;
+- have hand-written discovery labels/descriptions in EN, TH, DE, FR, JA, ZH and ES;
+- expose the ERN recent-updates Atom feed for crawler/feed discovery;
+- retain `robots=index,follow` and separately allow Google rich-preview controls with `max-image-preview:large`, `max-snippet:-1`, and `max-video-preview:-1`.
+
+The Phase 9 localized discovery registry and exit checks were updated to follow the shared collection registry dynamically instead of assuming the historical five-collection count.
+
+Production verifier confirms:
+- `seoGrowthCollectionsLive`: volcanoes-earth-science + parks-protected-places
+- `localizedSeoCollectionsInSitemap: true`
+- `localizedSeoHreflang: true`
+- `richSearchPreviewDirectives: true`
+- `updatesFeedDiscovery: true`
+
+### Search/SEO strategy
+Traffic growth remains people-first:
+1. useful current destination pages;
+2. strong crawlable collection/country/internal-link paths;
+3. accurate currentness + provider attribution;
+4. truthful lastmod/sitemap/update-feed signaling;
+5. deep-link sharing when visitors actually use it;
+6. business planning only after Earth discovery.
+
+Do not:
+- mass-create thin keyword/city pages;
+- mutate the catalog from one-off zero-result terms;
+- change dates solely to simulate freshness;
+- chase word-count targets;
+- let affiliate value affect crawlability or internal-link prominence.
+
+Google Search Console + sitemap observation remains the authoritative Google indexing feedback loop. IndexNow acceptance is supplemental submission evidence only and is not proof of Google indexing/ranking.
+
+### Latest Operations #1638 aggregate observation
+- approximate unique visitors: **54**
+- page views: **352**
+- Earth searches: **90**
+- zero-result searches: **37**
+- place/window opens: **306**
+- external-source opens: **81**
+- Facebook-family referral views: **32**
+- travel-option opens: approximately **9**
+- successful share/copy events: **0**
+- zero-result share: **41.11%**
+- top clean-v2 destination opens: **Denpasar 3, Yellowstone Biscuit Basin 3, Ruapehu 2, Turku 2, Addo 1**
+
+Interpretation remains aggregate/directional only. Do not infer individual behavior, causal channel attribution, bookings, conversions or revenue.
+
+### Production quality also preserved
+Production verifier at this checkpoint reports:
+- 751 healthy searchable places
+- 130 country/territory labels
+- 13 source-backed Watch Earth visuals
+- 8 visual provider families
+- Ruapehu, Yellowstone Biscuit Basin, Yellowstone Lake and Taranaki current-image card visuals verified
+- Ruapehu and Denpasar planning paths visible
+- Jinzun commercial path remains playback-gated
+
+### Next autonomous traffic lane
+- observe Search Console/query/referral evidence after crawl/index latency;
+- deepen useful collection/internal-link coverage only where ERN already has substantial trustworthy content;
+- use repeated genuine zero-result clusters, not isolated terms, to guide source research;
+- improve source-backed first impressions and destination continuation;
+- keep building demand-led planning coverage only when a real visitor-intent gap appears;
+- do not connect/post to official social accounts without owner action;
+- preserve the same-SHA Pages + Operations + live-domain verification rule.
+
