@@ -58,7 +58,8 @@ for(const locale of ["th","de","fr","ja","zh","es"]){
   if(!seoSitemap.includes("/"+locale+"/discover/volcanoes-earth-science/")||!seoSitemap.includes("/"+locale+"/discover/parks-protected-places/"))throw new Error("production sitemap is missing localized SEO collection routes for "+locale);
 }
 for(const [name,html] of [["volcano",volcanoDiscover],["parks",parksDiscover]]){
-  if(!html.includes('meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"'))throw new Error("production "+name+" discovery page is missing rich index directives");
+  if(!html.includes('meta name="robots" content="index,follow"'))throw new Error("production "+name+" discovery page is not indexable");
+  if(!html.includes('meta name="googlebot" content="max-image-preview:large,max-snippet:-1,max-video-preview:-1"'))throw new Error("production "+name+" discovery page is missing rich-preview directives");
   if(!html.includes('type="application/atom+xml"')||!html.includes("/updates.xml"))throw new Error("production "+name+" discovery page is missing ERN updates feed discovery");
   if(!html.includes('"@type":"ItemList"')||!html.includes('"@type":"BreadcrumbList"'))throw new Error("production "+name+" discovery page is missing collection structured data");
 }
