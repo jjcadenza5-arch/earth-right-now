@@ -40,7 +40,7 @@ if(analyticsReady()&&!DNT()){
       if(signature===lastSearchSignature)return;lastSearchSignature=signature;
       globalThis.ERN_EVENT("earth_search",{query:q,resultCount});
       if(resultCount===0)globalThis.ERN_EVENT("earth_search_zero",{query:q,resultCount:0});
-    },900);
+    },1500);
     return true;
   };
   const queued=Array.isArray(globalThis.ERN_EVENT_QUEUE)?globalThis.ERN_EVENT_QUEUE.splice(0):[];for(const [name,data] of queued)globalThis.ERN_EVENT(name,data);
