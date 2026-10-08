@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T17:21:08Z",
-  "purpose": "Grow qualified ERN discovery traffic and downstream planning intent so traffic-gated Travelpayouts programs can become unlockable naturally.",
+  "generatedAt": "2026-10-08T01:18:00Z",
+  "purpose": "Increase qualified organic discovery, repeat exploration, deep-link sharing and useful downstream planning intent from the production-reconciled 751-place ERN catalog.",
   "currentSearchableHealthyPlaces": 751,
   "unlockTargets": [
     "trip-com",
@@ -33,8 +33,8 @@
     {
       "id": "destination-depth",
       "priority": "P1",
-      "action": "Maintain 300 strong searchable places with crawlable destination pages, aliases, country/region, source type, currentness, related ERN places and useful planning context. Prefer stronger sources and freshness over mechanical count growth.",
-      "successSignal": "More non-owner organic search/AI discovery landing directly on destination pages."
+      "action": "Maintain the 751-place production-reconciled discovery universe with crawlable destination pages, aliases, geography, source type, currentness, related ERN places and useful planning context. Improve depth and freshness before adding count.",
+      "successSignal": "More non-owner organic/AI landings that continue into additional ERN places."
     },
     {
       "id": "country-hubs",
@@ -51,7 +51,7 @@
     {
       "id": "long-tail-geography",
       "priority": "P1",
-      "action": "Use the 300-place catalog to deepen long-tail search and AI discovery across countries, islands, cities, mountains, parks, wildlife and current-condition queries while preserving the runtime budget.",
+      "action": "Use the 751-place catalog to deepen long-tail search and AI discovery across countries, islands, cities, mountains, parks, wildlife and current-condition queries. Add new places only for demonstrated geographic/provider/visitor utility gaps.",
       "successSignal": "Broader search-query coverage across place names, islands, mountains, parks and current-condition searches."
     },
     {
@@ -101,11 +101,29 @@
       "priority": "P1",
       "action": "Use privacy-safe aggregate zero-result triage to research real visitor demand. A query such as Chiang Mai may open a source-research lane, but no destination becomes public until source truth, currentness, rights and target identity independently pass ERN gates.",
       "successSignal": "Repeated genuine visitor search gaps shrink through truthful source resolution rather than aliases or fabricated coverage."
+    },
+    {
+      "id": "first-30-seconds",
+      "priority": "P1",
+      "action": "Treat Home + Watch Earth opening quality as traffic retention infrastructure: prioritize truthful source-backed imagery, provider/geographic variety and fast continuation into another place.",
+      "successSignal": "Referral and search visitors open more than one place and fewer first impressions depend on illustrative fallback."
+    },
+    {
+      "id": "deep-link-sharing-loop",
+      "priority": "P1",
+      "action": "Promote sharing of destination-specific URLs from the viewer and crawlable destination pages, then use aggregate successful share/copy events only as a directional signal. Never infer private social reach.",
+      "successSignal": "Clean v2 destination share/copy events become non-zero and referral landings distribute across place pages instead of only the homepage."
+    },
+    {
+      "id": "benchmark-to-network",
+      "priority": "P1",
+      "action": "Use Taitung Jinzun as the quality benchmark: a strong truthful Earth source, clear source status, useful related-place continuation and optional downstream planning only while playback/currentness gates are satisfied.",
+      "successSignal": "More high-value destinations reach the same source-truth + continuation + planning quality without commercial influence on ranking."
     }
   ],
   "nextReviewTrigger": "EVENT_DRIVEN_NOT_CALENDAR",
-  "note": "Catalog scale is no longer the bottleneck. Public product, traffic collection and metric semantics v2 are production-reconciled. Clean v2 destination-open attribution is now accumulating; use it only as aggregate directional evidence and never let traffic override source truth/currentness.",
-  "milestone": "751_HEALTHY_SEARCHABLE_PLACES_REALITY_AND_TRAFFIC_RECONCILED",
+  "note": "Catalog scale is no longer the bottleneck. The traffic strategy now starts from 751 healthy searchable places and prioritizes first-impression quality, deep destination entry, repeat exploration, shareable place URLs, genuine repeated search gaps and useful downstream planning. Traffic never overrides source truth/currentness.",
+  "milestone": "751_PLACE_REALITY_RECONCILED_TRAFFIC_GROWTH",
   "currentBusinessCoverage": {
     "healthyPlaces": 751,
     "placesWithCommercialPath": 217,
