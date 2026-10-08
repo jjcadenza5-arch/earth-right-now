@@ -1,3 +1,4 @@
+// Kilauea readiness counts reconciled 2026-10-08
 const base=(process.argv[2]||"https://earthrightnow.app/").replace(/\/$/,""),build=String(process.env.GITHUB_SHA||"").slice(0,12);
 if(!build)throw new Error("GITHUB_SHA is required for production reality verification");
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
