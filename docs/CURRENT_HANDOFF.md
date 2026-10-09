@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-09 — Owner reiteration: fifth beautiful camera / world breadth
+- Current production **remains** certified Pages #3013 code `21d7f8908f024f6c8b177ce4c816fa486b1e91be`; latest docs-only head `31653b57c235d15356a88b15cc8249d43069212d`. Owner explicitly prefers an excellent five-camera rotating global showcase, with NYC illuminated skylines and Taiwan where genuinely eligible, plus the simple static numbered Atlas list already restored. **Do not regress Atlas to zoom**, do not pad Watch Earth to five with weak/unverified footage.
+- Reconciled `data/sources.json` catalog of 15 LIVE_VIDEO records; not 20 verified playable videos. NYC Jersey City EarthCam remains LINK_ONLY/EXTERNAL_LIVE; Heping/Verbier holds and expired proofs are unchanged. Official EarthCam NYC Times Square/Midtown candidates and aged Taitung/Auckland/Rovaniemi entries moved to owner-private evidence-first research queue: `docs/WATCH_EARTH_FIVE_CAMERA_EXPANSION_2026-10-09.md`.
+- No camera playback verification, permission upgrade, provider URL mutation or release performed. Research-only documentation; no added GitHub Actions.
+
+
 ## VERIFIED — 2026-10-09 Simple numbered Atlas, owner-preferred restoration
 - **Actual deployed code SHA:** `21d7f8908f024f6c8b177ce4c816fa486b1e91be`. Same SHA: **Pages #3013 SUCCESS**, **Operations #1756 SUCCESS**, **Syntax #1263 SUCCESS**. Pages deployed, verified social preview and live-domain visitor-reality sync `ok:true`, `homeRevision:21d7f8908f02`, 756 healthy searchable places and 130 countries. All smoke, accessibility, whole-product, source-truth, SEO and performance gates passed.
 - **Owner's explicit UX choice supersedes #3011 Atlas zoom:** static Natural Earth world map with numbered markers; click a number to open an accessible scrollable list of the exact underlying places (live/current source choices ordered first), click a name to open its original truthful source. No zoom controls, automatic region zoom, pan, invisible marker clusters or duplicate map interaction layers. Kept source coordinate provenance, all filtered mapped places, unmapped place disclosure, search, destination discovery and open-provider permissions. Lazy module `src/atlas-marker-groups.js` shrank from 14,332 to 8,037 source characters, no new external map dependency.
