@@ -20,3 +20,8 @@ assert.match(planning,/function localFor\(/,"travel-planning module owns exact-p
 
 assert.ok(app.includes("TP.applyPlan("),"viewer planning buttons should use the modular planning renderer");
 assert.match(planning,/function applyPlan\(/,"travel-planning module owns planning-link rendering");
+
+// Attribution state must remain mutually exclusive as planning links change between local and affiliate routes.
+assert.match(planning,/if\(o\)\{delete el\.dataset\.localPlaceId;/,"affiliate transition must clear previous reviewed-local attribution");
+assert.match(planning,/else\{delete el\.dataset\.offerId;delete el\.dataset\.offerKind;/,"local or generic transition must clear previous affiliate attribution");
+assert.match(planning,/else\{delete el\.dataset\.localPlaceId;el\.removeAttribute\("title"\)/,"generic fallback must clear previous reviewed-local attribution");
