@@ -10,6 +10,7 @@ Rules:
 - Five is the target when five good qualified streams exist, but never use broken, stale, blank, gray or clearly weak footage just to reach five.
 - Keep known bad scenes on explicit holds until they improve.
 - Keep all other truthful sources searchable in Search, Explore, Destinations and Living Atlas.
+- **Catalog-wide inside-ERN preference:** when a livestream is technically embeddable, permitted, healthy and current, prefer playing it inside ERN. Use **Open Live Source** only as the honest fallback when the provider blocks embedding, permission/evidence is insufficient, or the live player cannot reliably run inside ERN.
 - Commercial relationships never affect selection.
 
 That is the methodology. Do not add daylight formulas or extra curation machinery unless a real product problem requires it.

@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-09 — Catalog-wide inside-ERN playback preference + #3014 test fix
+- Owner clarified that Watch Earth is only the premium five-card showcase; **other livestreams should also play inside ERN whenever they can**. `Open Live Source` is a fallback, not the preferred experience.
+- Preserve truthful provider boundaries: promote a source to inside-ERN only when embedding is technically supported, permitted, healthy/current and playback evidence is sufficient. Do not proxy, restream, scrape around provider restrictions or label stale imagery as live.
+- Pages #3014 failed before deployment because one regression test still hard-coded the old `top 7` rotation pool after the intentional change to `top 10`. The run log showed **118/119 release smoke tests passed** and only `tests/premium-watch-atlas-drilldown.smoke.js` failed on that stale expectation. The test is updated to match the approved rotation behavior.
+- No Atlas behavior change.
+
+
 ## 2026-10-09 — Watch Earth simplified to the owner's actual intent
 - Owner clarified the product: **five beautiful or interesting livestreams, from different places on Earth, not concentrated in one country, rotating over time**.
 - Removed the 08:00–16:59 daylight requirement from the visual gate. Night is no longer disfavored by rule; a stream qualifies visually from quality/interest scores unless it has an explicit `watchHold` / `featuredHold`. This lets illuminated city, harbour, cultural and other compelling night scenes participate naturally.
