@@ -133,50 +133,12 @@ for(const x of mappableLocal){
 const lat=Number(x.lat),lon=Number(x.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;if(state.mapFilter!=="all"&&state.mapFilter!=="local")continue;const p=document.createElement("a");p.className="map-pin local";p.href=safeExternalUrl(x.url);p.target="_blank";p.rel="noopener noreferrer";p.title=x.name+" — reviewed local place";p.setAttribute("aria-label",p.title);p.style.left=((lon+180)/360*100)+"%";p.style.top=((90-lat)/180*100)+"%";markers.push({node:p,lat,lon,name:x.name,label:"Reviewed local place"});count++;localCount++;}
 // Group nearby map markers at the *current display size*. The underlying
 // place list is unchanged; each group's accessible drawer retains every item.
-const cols=Math.max(12,Math.floor((a.clientWidth||1000)/42));
-const rows=Math.max(8,Math.floor((a.clientHeight||520)/42));
-const cells=new Map();
-for(const marker of markers){
- const x=Math.min(cols-1,Math.max(0,Math.floor(((marker.lon+180)/360)*cols)));
- const y=Math.min(rows-1,Math.max(0,Math.floor(((90-marker.lat)/180)*rows)));
- const key=x+":"+y;if(!cells.has(key))cells.set(key,[]);cells.get(key).push(marker);
-}
-function showMapGroup(entries,pin){
- a.querySelector(".map-cluster-panel")?.remove();
- const panel=document.createElement("div");panel.className="map-cluster-panel";panel.setAttribute("role","dialog");
- panel.setAttribute("aria-label",entries.length+" mapped places");
- const x=entries.reduce((n,m)=>n+(m.lon+180)/360*100,0)/entries.length;
- const y=entries.reduce((n,m)=>n+(90-m.lat)/180*100,0)/entries.length;
- panel.style.left=Math.min(82,Math.max(18,x))+"%";panel.style.top=Math.min(51,Math.max(6,y))+"%";
- const heading=document.createElement("div");heading.className="map-cluster-heading";
- const title=document.createElement("strong");title.textContent=entries.length+" places to explore";
- const close=document.createElement("button");close.type="button";close.textContent="Close";close.setAttribute("aria-label","Close map group");close.onclick=()=>{panel.remove();pin.focus()};
- heading.append(title,close);panel.append(heading);
- const list=document.createElement("div");list.className="map-cluster-list";
- for(const entry of entries){
-  const option=document.createElement("button");option.type="button";option.className="map-cluster-choice";
-  const name=document.createElement("strong");name.textContent=entry.name;
-  const label=document.createElement("small");label.textContent=entry.label;
-  option.append(name,label);option.onclick=()=>{panel.remove();entry.node.click()};list.append(option);
- }
- panel.append(list);panel.onkeydown=e=>{if(e.key==="Escape"){e.preventDefault();panel.remove();pin.focus()}};
- a.append(panel);close.focus();
-}
-for(const group of cells.values()){
- if(group.length===1){a.append(group[0].node);continue}
- const pin=document.createElement("button");pin.type="button";
- pin.className="map-pin cluster"+(group.every(x=>x.node.classList.contains("external"))?" external":"");
- const left=group.reduce((n,x)=>n+(x.lon+180)/360*100,0)/group.length;
- const top=group.reduce((n,x)=>n+(90-x.lat)/180*100,0)/group.length;
- pin.style.left=left+"%";pin.style.top=top+"%";pin.textContent=String(group.length);
- pin.title=group.length+" mapped places — choose a place";
- pin.setAttribute("aria-label",pin.title);pin.setAttribute("aria-haspopup","dialog");
- pin.onclick=()=>showMapGroup(group,pin);a.append(pin);
-}
-if(!a.dataset.mapClusterDismiss){a.addEventListener("click",e=>{
- if(!e.target.closest(".map-pin,.map-cluster-panel"))a.querySelector(".map-cluster-panel")?.remove();
- });a.dataset.mapClusterDismiss="true";}
-document.querySelectorAll(".atlas-filter").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter===state.mapFilter));const mc=state.sources.filter(atlasEligible),bc=mc.filter(s=>s.coordinateBasis).length,cc=mc.filter(guideEligible).length,rc=mc.filter(atlasRef).length,ctx=state.category!=="all"&&state.category!=="random"?` · ${state.category}`:"";$("#mapNote").textContent=`${count} mapped places in ${cells.size} uncluttered markers${ctx} · ${cc} current · ${rc} reference-only handoff${rc===1?"":"s"} · ${insideCount} play here · ${externalCount} source views${localCount?" · "+localCount+" reviewed local":""} · ${bc} with coordinate provenance.${!mappableLocal.length&&approvedLocalPlaces().length?" Reviewed local places remain searchable but are not pinned until exact coordinates are verified.":""}`;renderAtlasBeyond();}function renderMapStable(){renderMap();requestAnimationFrame(renderMap)}function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}function distanceKm(a,b){
+let markerGroupsCount=markers.length;
+if(globalThis.ERNAtlasGroups)markerGroupsCount=globalThis.ERNAtlasGroups(a,markers);
+else{for(const marker of markers)a.append(marker.node);
+if(!state.atlasGroupsLoading){state.atlasGroupsLoading=true;
+import("./atlas-marker-groups.js").then(m=>{globalThis.ERNAtlasGroups=m.renderAtlasMarkerGroups;renderMap()}).catch(()=>{state.atlasGroupsLoading=false})}}
+document.querySelectorAll(".atlas-filter").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter===state.mapFilter));const mc=state.sources.filter(atlasEligible),bc=mc.filter(s=>s.coordinateBasis).length,cc=mc.filter(guideEligible).length,rc=mc.filter(atlasRef).length,ctx=state.category!=="all"&&state.category!=="random"?` · ${state.category}`:"";$("#mapNote").textContent=`${count} mapped places in ${markerGroupsCount} map markers${ctx} · ${cc} current · ${rc} reference-only handoff${rc===1?"":"s"} · ${insideCount} play here · ${externalCount} source views${localCount?" · "+localCount+" reviewed local":""} · ${bc} with coordinate provenance.${!mappableLocal.length&&approvedLocalPlaces().length?" Reviewed local places remain searchable but are not pinned until exact coordinates are verified.":""}`;renderAtlasBeyond();}function renderMapStable(){renderMap();requestAnimationFrame(renderMap)}function saveFavorites(){writeSaved("ern-favorites",JSON.stringify([...state.favorites]))}function distanceKm(a,b){
 const lat1=Number(a.lat),lon1=Number(a.lon),lat2=Number(b.lat),lon2=Number(b.lon);if(![lat1,lon1,lat2,lon2].every(Number.isFinite))return Infinity;const rad=Math.PI/180,dlat=(lat2-lat1)*rad,dlon=(lon2-lon1)*rad;const q=Math.sin(dlat/2)**2+Math.cos(lat1*rad)*Math.cos(lat2*rad)*Math.sin(dlon/2)**2;return 12742*Math.asin(Math.min(1,Math.sqrt(q)));}function renderContext(s){
 const box=$("#viewerContext"),story=$("#viewerStory"),tags=$("#viewerTags"),near=$("#nearbyList"),related=$("#relatedList");const current=currentTruthClaim(s);story.textContent=s.story||(current?"A current window onto this place.":"A provider source for this place, currently awaiting ERN recheck.");const ms=momentSignal(s);$("#viewerMomentWhy").textContent=current?("Look now · "+ms.reason):"Reference only · ERN is not treating this source as current.";tags.replaceChildren();const tagValues=[momentLabel(s),publicTruth(s),...(s.categories||[]).slice(0,3)];const confidence=$("#sourceConfidence");confidence.textContent=[verificationLabel(s),playbackProofLabel(s),s.provider?("Source: "+s.provider):"",s.health==="HEALTHY"?"Catalog health: healthy":"Catalog health: "+String(s.health||"unknown").toLowerCase()].filter(Boolean).join(" · ");confidence.classList.toggle("stale",!currentTruthClaim(s));for(const value of tagValues){const tag=document.createElement("span");tag.textContent=value;tags.append(tag)}
 near.replaceChildren();const nearby=state.sources.filter(x=>x.id!==s.id&&guideEligible(x)&&(x.placeId||x.id)!==(s.placeId||s.id)).map(x=>({s:x,d:distanceKm(s,x)})).filter(x=>Number.isFinite(x.d)).sort((a,b)=>a.d-b.d).slice(0,3),n=new Set(nearby.map(x=>x.s.placeId||x.s.id));for(const item of nearby){const b=document.createElement("button");b.type="button";b.className="nearby-item";const label=document.createElement("strong");label.textContent=item.s.title;const meta=document.createElement("small");meta.textContent=item.d<1?"Nearby":Math.round(item.d)+" km";b.append(label,meta);b.onclick=()=>openViewer(item.s);near.append(b)}

@@ -1,3 +1,5 @@
+- Performance fix: on-demand `src/atlas-marker-groups.js` now owns the map's group logic and Atlas-only styling, shipped in the immutable artifact. Base pins remain independently clickable if optional code fails. This preserves the existing strict 575 KB homepage core and 160 KB startup JS budgets without increasing either budget.
+
 ## 2026-10-09 — Screenshot-driven first-impression work (awaiting release checks)
 - Owner-provided Safari screenshots confirmed strong Fuji editorial hero and Explore photography but exposed Watch Earth preview friction (Yehliu and La Palma illustrative, Verbier low-contrast foggy poster) and excessive overlapping Atlas pins.
 - Watch Earth keeps exactly five VERIFIED moving-video sources and user-click playback; video cards now give a clear Watch live action, with optional provider-video-specific YouTube still posters when an approved embed ID exists (not falsely labeled live). Remote poster failures retain explicit illustrative fallback. No new camera/permission/health/recency claim and no eager homepage player.

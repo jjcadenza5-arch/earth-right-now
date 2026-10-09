@@ -26,6 +26,7 @@ await cp(new URL("../src/home-i18n.js",import.meta.url),new URL("src/home-i18n.j
 await cp(new URL("../src/fullscreen-continuity.js",import.meta.url),new URL("src/fullscreen-continuity.js",dist));
 await cp(new URL("../src/travel-planning-client.js",import.meta.url),new URL("src/travel-planning-client.js",dist));
 await cp(new URL("../src/app-lite.js",import.meta.url),new URL("src/app-lite.js",dist));
+await cp(new URL("../src/atlas-marker-groups.js",import.meta.url),new URL("src/atlas-marker-groups.js",dist));
 await cp(new URL("../src/styles-lite.css",import.meta.url),new URL("src/styles-lite.css",dist));
 await cp(new URL("../src/participation-public-config.js",import.meta.url),new URL("src/participation-public-config.js",dist));
 await cp(new URL("../src/earth-signal-client.js",import.meta.url),new URL("src/earth-signal-client.js",dist));
