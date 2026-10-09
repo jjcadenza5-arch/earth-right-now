@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
 const app=readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
-const css=readFileSync(new URL("../src/styles-lite.css",import.meta.url),"utf8");
+const css=readFileSync(new URL("../src/styles-lite.css",import.meta.url),"utf8")+readFileSync(new URL("../src/premium-cards.css",import.meta.url),"utf8");
 assert.match(app,/function wanderCard\(s\)[\s\S]*const img=watchPosterUrl\(s\)[\s\S]*installVisualFallback\(el,v,s\)/,"wander cards should use the best safe poster then fall back");
 assert.match(app,/else v\.append\(scenicPoster\(s\)\)/,"wander cards without usable posters need truthful illustrative fallback");
 assert.match(css,/grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/,"mobile feeling/place cards should stay compact in two columns");

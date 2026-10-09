@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-09 — Premium destination CSS modularized for release budget
+- To preserve the strict 575 KB certified core without weakening visual quality, moved only the new **More places** full-bleed premium card rules from `src/styles-lite.css` into `src/premium-cards.css`.
+- The stylesheet is loaded explicitly by the homepage; visitor appearance is unchanged. The core stylesheet retains the exact mobile one-column invariant required by release preflight.
+- Visual smoke now validates the combined core + premium stylesheet. No source truth, playback, Atlas, affiliate or public-OFF behavior changed.
+
+
 ## 2026-10-09 — #3018 final release-gate repair
 - Pages #3018 passed Syntax and Operations but release smoke still found two exact launch gates: the mobile checker requires the literal one-column destination rule, and lean core was only **1,177 bytes** over the 575 KB ceiling.
 - Added the exact mobile one-column invariant without changing the premium card appearance.
