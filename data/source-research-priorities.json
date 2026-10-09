@@ -121,8 +121,11 @@
           "observedWindowDays": 30
         },
         "priority": "RESEARCH_NOW",
-        "status": "OFFICIAL_PROVINCIAL_CCTV_FOUND_BUT_FEEDS_STANDBY_NOT_PROMOTABLE",
-        "nextAction": "Recheck Chiang Mai Provincial Administrative Organization real-time CCTV only after a real feed is visibly active and source identity/currentness can be verified. Standby/waiting feeds must not become ERN live windows."
+        "status": "OFFICIAL_CCTV_STILL_STANDBY_2026_10_09_NOT_PROMOTABLE",
+        "nextAction": "Official Chiang Mai PAO CCTV control room (https://chiangmaipao.go.th/all_cctv.php) currently lists CAM-01 through CAM-04 as STANDBY / WAITING FOR FEED. Do not add or promote as live until rendered camera feed, provider identity, permission and currentness are separately confirmed.",
+        "lastSourceRecheck": "2026-10-09",
+        "sourceEvidenceUrl": "https://chiangmaipao.go.th/all_cctv.php",
+        "renderedPlaybackVerified": false
       },
       {
         "query": "museaum",
@@ -186,8 +189,10 @@
           ]
         },
         "priority": "RESEARCH_NOW",
-        "status": "REPEATED_VISITOR_DEMAND_NO_TRUTHFUL_CURRENT_SOURCE_CONFIRMED",
-        "nextAction": "Research one official/provider current view for Dolphin Bay / Sam Roi Yot. Do not substitute generic Hua Hin, resort marketing video or archival beach footage."
+        "status": "REPEATED_DEMAND_CURRENT_VIEW_NOT_VERIFIED_2026_10_09",
+        "nextAction": "Target Dolphin Bay / Sam Roi Yot official or provider camera; broad web discovery did not establish an actual currently rendering live feed. Hold publication until exact source, permission and rendered playback/currentness evidence exist; do not substitute resort promotional footage.",
+        "lastResearchRecheck": "2026-10-09",
+        "renderedPlaybackVerified": false
       },
       {
         "query": "hua hin thailand",
