@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-09 — #3018 final release-gate repair
+- Pages #3018 passed Syntax and Operations but release smoke still found two exact launch gates: the mobile checker requires the literal one-column destination rule, and lean core was only **1,177 bytes** over the 575 KB ceiling.
+- Added the exact mobile one-column invariant without changing the premium card appearance.
+- Removed redundant/overridden card CSS and nonessential animation bytes instead of relaxing the performance budget or reverting the new visual system.
+- No source data, Watch Earth truth logic, Takayama hold, Atlas behavior, monetization, or public-OFF gates changed.
+
+
 ## 2026-10-09 — #3017 release-gate repair
 - Pages #3017 passed JavaScript syntax but stopped in release smoke because two production gates failed: mobile destination cards were changed to a two-column stack, and `data/sources.json` had been unintentionally pretty-printed, inflating the lean core beyond budget.
 - Restored the required **single-column mobile destination stack** while keeping the new premium full-bleed card design.
