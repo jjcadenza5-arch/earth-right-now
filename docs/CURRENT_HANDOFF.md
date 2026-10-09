@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-09 — Planning-link transition regression coverage
+- Added static regression assertions in `tests/guide-planning-boundary.smoke.js` verifying that all three planning states clear stale attribution metadata when moving between verified affiliate, approved local place and generic fallback. Commit `b3baa02c84dd67981f1e57d4cc57070c1b410041`.
+- No new cameras, verified playback events, affiliate activations, customer bookings or local listings were introduced. No performance ceilings or feature gates changed.
+- Await the actual GitHub release checks before certifying this test update. Continue from verified `main` without resetting the handoff or turning research candidates into live claims.
+
+
 ## 2026-10-09 — Travel-planning attribution-state correction
 - Inspected actual GitHub main and current 21-entry Local Earth directory and identified a client-side state transition defect in `src/travel-planning-client.js`: `applyPlan` cleared affiliate attribution fields when switching to a local/external fallback, but did not clear `data-local-place-id` when switching back to a verified affiliate offer.
 - Corrected only that stale metadata transition (`delete el.dataset.localPlaceId` in the offer branch). Commit `f935971417671b11a3f17cf8c3ed5a0a865d061d`.
