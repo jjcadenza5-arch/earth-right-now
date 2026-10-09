@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-09 — #3017 release-gate repair
+- Pages #3017 passed JavaScript syntax but stopped in release smoke because two production gates failed: mobile destination cards were changed to a two-column stack, and `data/sources.json` had been unintentionally pretty-printed, inflating the lean core beyond budget.
+- Restored the required **single-column mobile destination stack** while keeping the new premium full-bleed card design.
+- Re-serialized `data/sources.json` compactly with identical data/content, preserving the Takayama playback-failure record while removing formatting bloat.
+- No Watch Earth logic, source truth, Atlas behavior, affiliate behavior or public-OFF gates changed in this repair.
+
+
 ## 2026-10-09 — #3016 preflight correction
 - Pages #3016 stopped in JavaScript syntax preflight because two smoke-test edits contained literal `\\n` sequences from the automated patch. Product runtime files were not deployed.
 - Corrected only the two affected tests to use real line breaks; no card/playback behavior rollback.
