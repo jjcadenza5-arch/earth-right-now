@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-09 — #3027 visual smoke file repaired cleanly
+- Pages #3027 stopped in syntax preflight because a prior automated text replacement corrupted many regular expressions inside `tests/first-impression-visuals.smoke.js`.
+- Replaced that test with a clean compact version covering the same intended guarantees: safe poster fallback, scenic-family propagation, premium card layouts, truthful ILLUSTRATIVE/VIDEO POSTER labels, bright place-specific scenic art, release inclusion of `premium-cards.css`, and the local Mount Fuji hero.
+- No visitor-facing runtime or styling changed in this repair.
+
+
 ## 2026-10-09 — #3026 45-byte performance overage repaired
 - Pages #3026 failed only because `src/app-lite.js` measured **100,045 bytes**, 45 bytes above the hard 100,000-byte ceiling. The downstream Phase 10 production/launch audits failed only because of that performance preflight.
 - Compacted the new scenic-fallback scene propagation by shortening local variable names and removing an unreachable `|| "earth"` fallback (the scenic renderer always assigns a scene). Behavior is unchanged while runtime size is reduced.
