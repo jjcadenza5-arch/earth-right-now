@@ -1,3 +1,10 @@
+## 2026-10-09 — Screenshot-driven first-impression work (awaiting release checks)
+- Owner-provided Safari screenshots confirmed strong Fuji editorial hero and Explore photography but exposed Watch Earth preview friction (Yehliu and La Palma illustrative, Verbier low-contrast foggy poster) and excessive overlapping Atlas pins.
+- Watch Earth keeps exactly five VERIFIED moving-video sources and user-click playback; video cards now give a clear Watch live action, with optional provider-video-specific YouTube still posters when an approved embed ID exists (not falsely labeled live). Remote poster failures retain explicit illustrative fallback. No new camera/permission/health/recency claim and no eager homepage player.
+- Existing mapped place markers are collected, then spatially grouped by display size; cluster counts open an accessible, keyboard-dismissible list retaining every underlying place/source action. No coordinate mutation, source deletion or extra remote mapping dependency; Search and full destination inventory unchanged.
+- Added regression smoke for poster truth, source-specific URL gating, Atlas grouped selection and keyboard access. No new public Guide, payouts, social media, Moment, Partner Pilot features or paid ranking.
+- Do not certify until Pages + Operations + Syntax and actual-domain production checks pass on same content SHA.
+
 ## VERIFIED — 2026-10-09 Watch Earth five live-camera-only release
 - Verified production content SHA: `febdbfd46591eecd633f705fa9cd44f0ff07df6f` on `https://earthrightnow.app`.
 - Same-SHA GitHub checks: **Pages #3005 SUCCESS**, **Operations #1748 SUCCESS**, **Syntax #1255 SUCCESS**. Pages passed smoke/whole-product/curation/Watch Earth first-impression audit, deployment, real-domain visitor-reality check, social preview and IndexNow.
