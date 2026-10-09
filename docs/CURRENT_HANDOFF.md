@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-09 — #3026 45-byte performance overage repaired
+- Pages #3026 failed only because `src/app-lite.js` measured **100,045 bytes**, 45 bytes above the hard 100,000-byte ceiling. The downstream Phase 10 production/launch audits failed only because of that performance preflight.
+- Compacted the new scenic-fallback scene propagation by shortening local variable names and removing an unreachable `|| "earth"` fallback (the scenic renderer always assigns a scene). Behavior is unchanged while runtime size is reduced.
+- Performance budget remains strict; no limit was relaxed.
+
+
 ## 2026-10-09 — Visible scenic fallback safety net + Watch Earth pool truth
 - Owner screenshots after #3025 showed some More Places / Local Earth cards still reading as flat dark panels even though the nested scenic renderer was present.
 - Card visual containers now inherit the exact scenic family (`water`, `island`, `mountain`, `snow`, `volcano`, `city`, `wildlife`, `farm`, `science`, `earth`) and receive a matching bright background directly. This is a safety net beneath the richer nested ERN illustration, so the card cannot collapse back to a flat generic panel.
