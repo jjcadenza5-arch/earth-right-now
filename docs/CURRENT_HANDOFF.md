@@ -1,5 +1,10 @@
 # Current ERN handoff
 
+## 2026-10-09 — #3030 planning smoke syntax corrected
+- Pages #3030 stopped in JavaScript syntax preflight because four newly added planning assertions in `tests/guide-planning-boundary.smoke.js` contained literal `\\n` text instead of real line breaks.
+- Corrected the test file only. No ERN runtime, source data, affiliate behavior, local-directory behavior, Watch Earth logic or Atlas behavior changed.
+
+
 ## 2026-10-09 — Before You Go local-first fallback + source continuity refresh
 - **Before You Go** now resolves planning links in this order: verified affiliate offer → exact-place approved ERN local directory entry → generic external search. Commercial availability still never affects source/search/Watch Earth ranking.
 - Local fallbacks are explicitly labeled **ERN reviewed local place**, keep `paidPlacement:false` / `affiliate:false`, and do not emit affiliate attribution events.
