@@ -25,3 +25,25 @@ assert.match(planning,/function applyPlan\(/,"travel-planning module owns planni
 assert.match(planning,/if\(o\)\{delete el\.dataset\.localPlaceId;/,"affiliate transition must clear previous reviewed-local attribution");
 assert.match(planning,/else\{delete el\.dataset\.offerId;delete el\.dataset\.offerKind;/,"local or generic transition must clear previous affiliate attribution");
 assert.match(planning,/else\{delete el\.dataset\.localPlaceId;el\.removeAttribute\("title"\)/,"generic fallback must clear previous reviewed-local attribution");
+
+// Exercise the actual browser planning helper rather than relying solely on text markers.
+const {runInNewContext}=await import("node:vm");
+const browser={URL,globalThis:{}};runInNewContext(planning,browser);
+const plan=browser.globalThis.ERNTravelPlanning;
+const link={dataset:{},href:"",rel:"",title:"",attrs:{},setAttribute(k,v){this.attrs[k]=v},removeAttribute(k){delete this.attrs[k]}};
+const local={id:"local-test",name:"Reviewed local option",url:"https://example.org/local"};
+const offer={id:"offer-test",provider:"Example Partner",url:"https://example.org/offer",affiliate:true,sponsored:false};
+plan.applyPlan(link,null,local,"Where to stay");
+assert.equal(link.dataset.localPlaceId,"local-test");
+assert.equal(link.dataset.offerId,undefined);
+plan.applyPlan(link,offer,"https://example.org/fallback","Where to stay");
+assert.equal(link.dataset.localPlaceId,undefined);
+assert.equal(link.dataset.offerId,"offer-test");
+assert.equal(link.dataset.offerKind,"affiliate");
+assert.match(link.rel,/sponsored/);
+plan.applyPlan(link,null,"https://example.org/search","Where to stay");
+assert.equal(link.dataset.offerId,undefined);
+assert.equal(link.dataset.offerKind,undefined);
+assert.equal(link.dataset.localPlaceId,undefined);
+assert.equal(link.attrs["aria-label"],"Where to stay");
+assert.equal(link.rel,"noopener noreferrer");
