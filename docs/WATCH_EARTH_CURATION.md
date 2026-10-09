@@ -1,18 +1,17 @@
 # Watch Earth curation
 
-**Owner direction — 2026-10-09:** Less is more. Watch Earth shows **up to five** outstanding moving livestreams. Five is a ceiling, never a quota.
+**Owner direction — 2026-10-09:** Watch Earth should simply show **five beautiful or interesting livestreams from different places on Earth and rotate them**.
 
-A Watch Earth source must be:
-- truthful `LIVE_VIDEO`;
-- `EMBED` + `EMBED_ALLOWED`;
-- healthy/current enough for ERN to stand behind the claim;
-- backed by current playback evidence;
-- not held for a known bad scene or playback failure.
+Rules:
+- Use genuine playable livestreams that ERN is allowed to embed.
+- Choose beautiful **or interesting** scenes; strong night views are welcome.
+- Prefer five different countries/regions when the qualified pool allows it, and never repeat the same place in one set.
+- Rotate through a broader top-quality pool so Watch Earth changes over time.
+- Five is the target when five good qualified streams exist, but never use broken, stale, blank, gray or clearly weak footage just to reach five.
+- Keep known bad scenes on explicit holds until they improve.
+- Keep all other truthful sources searchable in Search, Explore, Destinations and Living Atlas.
+- Commercial relationships never affect selection.
 
-Among sources that pass those gates, choose the most beautiful current scenes and prefer geographic/provider variety. Do not feature dark, gray, blank, broken, stale or visually weak views merely to fill a slot. If only four are good, show four. Commercial relationships never affect selection.
+That is the methodology. Do not add daylight formulas or extra curation machinery unless a real product problem requires it.
 
-All other truthful sources stay searchable through Search, Explore, Destinations and Living Atlas under their actual labels. Watch Earth curation must never delete or downgrade the wider catalog.
-
-Do not turn beauty curation into a large methodology. A small number of explicit editorial holds plus source/playback evidence is enough. Day/night context can inform selection, but it is not a substitute for seeing whether a scene is actually worth featuring.
-
-Playback happens in the existing ERN viewer. Keep the shared viewer, accessibility, performance limits, SEO, affiliate transparency, and all protected public-OFF feature gates unchanged.
+Preserve the existing viewer, accessibility, SEO, performance limits, affiliate transparency and all protected public-OFF feature gates.

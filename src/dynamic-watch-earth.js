@@ -16,7 +16,7 @@ export function buildDynamicWatchEarth(sources,{limit=5,now=new Date()}={}){
   const candidatePool=immersive.length>=Math.min(limit,8)?immersive:[...immersive,...healthy.filter(s=>!immersive.includes(s))];
   const ranked=buildWatchEarth(candidatePool,{
     limit:Math.min(5,limit),
-    maxPerCountry:2,
+    maxPerCountry:1,
     maxPerPlace:1,
     now
   });

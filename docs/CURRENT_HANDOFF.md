@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-09 — Watch Earth simplified to the owner's actual intent
+- Owner clarified the product: **five beautiful or interesting livestreams, from different places on Earth, not concentrated in one country, rotating over time**.
+- Removed the 08:00–16:59 daylight requirement from the visual gate. Night is no longer disfavored by rule; a stream qualifies visually from quality/interest scores unless it has an explicit `watchHold` / `featuredHold`. This lets illuminated city, harbour, cultural and other compelling night scenes participate naturally.
+- Selection now prefers **one country per slot on the first pass** and relaxes only when the qualified pool lacks enough country breadth. Duplicate places remain forbidden. Browser rotation expands from the top 7 to the **top 10** qualified streams and keeps the existing hourly rotation + Surprise Me offset.
+- Truth/playback protections remain unchanged: `LIVE_VIDEO`, `EMBED`, `EMBED_ALLOWED`, healthy/current status, current playback proof, usable embed URL and no known playback-failure hold. Taitung Jinzun remains awaiting fresh rendered-playback proof; no timestamp was fabricated.
+- Living Atlas and all other mature ERN surfaces are untouched.
+
+
 ## 2026-10-09 — Less-is-more reconciliation; Taitung diagnosed, not falsely renewed
 - Reconciled the owner direction into one short Watch Earth rule in `docs/WATCH_EARTH_CURATION.md`: **up to five**, hard truth/permission/current-playback gates, beauty-first editorial selection, geographic/provider variety where possible, fewer than five rather than weak filler, all other truthful sources remain searchable. This supersedes accumulated daylight/night methodology as product guidance without weakening source truth.
 - **Taitung Jinzun root cause:** the registry is still `LIVE_VIDEO / EMBED / EMBED_ALLOWED / HEALTHY` and points to YouTube ID `ZdqHgQwvZOw`, but `playbackVerifiedAt=2026-10-02T00:45:00Z` exceeded ERN's 168-hour playback-proof horizon. `currentTruthClaim()` therefore fails and the viewer correctly falls back to the official source instead of presenting stale proof as current.

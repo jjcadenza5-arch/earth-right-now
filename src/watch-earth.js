@@ -20,9 +20,9 @@ function rankedPool(sources,now){
   .sort((a,b)=>(watchEarthBeautyScore(b,now)+watchEarthExperienceScore(b)*.35)-
                 (watchEarthBeautyScore(a,now)+watchEarthExperienceScore(a)*.35));
 }
-// Five truthful, playable moving-camera streams. Never pad with still images,
-// provider-only pages, stale recordings or duplicate destinations.
-export function buildWatchEarth(sources,{limit=5,maxPerCountry=2,maxPerPlace=1,now=new Date()}={}){
+// Up to five truthful, playable moving-camera streams from distinct places.
+// Prefer one country per slot before relaxing diversity; never pad with weak or stale sources.
+export function buildWatchEarth(sources,{limit=5,maxPerCountry=1,maxPerPlace=1,now=new Date()}={}){
  const pool=rankedPool(sources,now),ceiling=Math.min(5,Math.max(0,Number(limit)||0));
  const countries=new Map(),places=new Map(),out=[];
  for(const pass of [0,1]){
