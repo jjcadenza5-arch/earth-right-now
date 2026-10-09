@@ -2,7 +2,7 @@ import { buildDynamicWatchEarth } from "./dynamic-watch-earth.js";
 import { watchEarthSnapshot } from "./watch-earth.js";
 import { recencyState } from "./source-recency.js";
 
-export function watchEarthLiveNowStatus(sources=[],{now=new Date(),limit=20,minCurated=5}={}){
+export function watchEarthLiveNowStatus(sources=[],{now=new Date(),limit=5,minCurated=5}={}){
  const moment=now instanceof Date?now:new Date(now);
  const items=buildDynamicWatchEarth(sources,{limit,now:moment});
  const snap=watchEarthSnapshot(items,{limit,now:moment});
@@ -27,6 +27,6 @@ export function watchEarthLiveNowStatus(sources=[],{now=new Date(),limit=20,minC
   nightCities:snap.nightCities,
   ids:items.map(s=>s.id),
   staleOrExpiredCatalogSources:stale.length,
-  note:"Watch Earth target is a ceiling, not a quota. Five excellent diverse current views are healthier than filling to twenty with repetitive or weaker sources. This report uses the actual current clock and does not replace HUMAN_PLAYBACK or release evidence."
+  note:"Watch Earth target is a ceiling, not a quota. If fewer than five verified live streams remain, report the shortfall instead of inserting still images, external-only sources or unverified feeds. This report uses the actual current clock and does not replace HUMAN_PLAYBACK or release evidence."
  };
 }

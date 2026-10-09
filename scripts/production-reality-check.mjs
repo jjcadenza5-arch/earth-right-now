@@ -41,6 +41,9 @@ const places=new Set(searchable.map(x=>x.placeId||x.id)),countries=new Set(searc
 const now=Date.now(),windowHours=s=>s?.truth==="LIVE_IMAGE"||s?.playback==="IMAGE_REFRESH"?72:s?.playback==="EMBED"?168:s?.truth==="EXTERNAL_LIVE"||s?.truth==="PARTNER"?168:336;
 const ageHours=s=>{const t=Date.parse(s?.lastSuccessfulCheck||s?.checkedAt||"");return Number.isFinite(t)?Math.max(0,(now-t)/36e5):Infinity};
 const playbackFresh=s=>s?.playback!=="EMBED"||(()=>{const t=Date.parse(s?.playbackVerifiedAt||"");return Number.isFinite(t)&&(now-t)/36e5<=168&&(now-t)>=-5/60})();
+const liveCameraCandidates=core.filter(s=>s.truth==="LIVE_VIDEO"&&s.playback==="EMBED"&&s.permission==="EMBED_ALLOWED"&&s.health==="HEALTHY"&&!s.featuredHold&&!s.watchHold&&ageHours(s)<=168&&playbackFresh(s));
+if(liveCameraCandidates.length<5)throw new Error("Production Watch Earth has fewer than five current, playback-proven LIVE_VIDEO candidates: "+liveCameraCandidates.length);
+if(!home.includes('data-i18n="currentWindows">live camera streams.')||!app.includes('s.truth==="LIVE_VIDEO"&&s.playback==="EMBED"&&s.permission==="EMBED_ALLOWED"&&recentPlaybackProof(s)'))throw new Error("Production Watch Earth five-live-stream-only browser contract lost");
 const sourceVisuals=core.filter(s=>s?.health==="HEALTHY"&&!s.featuredHold&&!s.watchHold&&Number(s.quality)>=80&&Number(s.moment)>=70&&ageHours(s)<=windowHours(s)&&playbackFresh(s)&&["EMBED","IMAGE_REFRESH"].includes(s.playback)&&String(s.thumbnailUrl||"").startsWith("https://"));
 const visualProviders=new Set(sourceVisuals.map(s=>s.provider).filter(Boolean));
 if(sourceVisuals.length<5||visualProviders.size<3)throw new Error("Watch Earth source-image reality floor failed: "+sourceVisuals.length+" visuals / "+visualProviders.size+" providers");

@@ -27,10 +27,7 @@ const eligible=rows.filter(source=>
   source.playback!=="PREVIEW"&&
   fresh(source)
 );
-const inside=eligible.filter(source=>
-  (source.playback==="EMBED"&&source.embedUrl)||
-  (source.playback==="IMAGE_REFRESH"&&source.sourceUrl)
-);
+const inside=eligible.filter(source=>source.truth==="LIVE_VIDEO"&&source.playback==="EMBED"&&source.permission==="EMBED_ALLOWED"&&source.embedUrl&&Number.isFinite(Date.parse(source.playbackVerifiedAt||""))&&now-Date.parse(source.playbackVerifiedAt)>=-300000&&now-Date.parse(source.playbackVerifiedAt)<=168*3600000&&!source.watchHold);
 const countries=new Set(eligible.map(source=>source.country).filter(Boolean));
 const providers=new Set(eligible.map(source=>source.provider).filter(Boolean));
 const truth=new Set(eligible.map(source=>source.truth));
@@ -42,7 +39,9 @@ for(const source of futureDated){
   fail.push("future-dated verification timestamp: "+source.id+" ("+(source.lastSuccessfulCheck||source.checkedAt)+")");
 }
 must(eligible.length>=20,`fewer than 20 fresh non-preview Watch Earth candidates: ${eligible.length}`);
-must(inside.length>=5,`fewer than 5 fresh inside-ERN candidates: ${inside.length}`);
+must(inside.length>=5,`fewer than 5 verified inside-ERN LIVE_VIDEO cameras: ${inside.length}`);
+must(new Set(inside.map(s=>s.country)).size>=3,"live-camera country diversity fell below three");
+must(new Set(inside.map(s=>s.provider)).size>=3,"live-camera provider diversity fell below three");
 must(countries.size>=10,`Watch Earth candidate geography too narrow: ${countries.size} countries`);
 must(providers.size>=8,`Watch Earth provider diversity too narrow: ${providers.size} providers`);
 for(const type of ["LIVE_VIDEO","LIVE_IMAGE","EXTERNAL_LIVE"]){

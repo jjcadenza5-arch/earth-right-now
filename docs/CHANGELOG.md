@@ -1,3 +1,11 @@
+## 2026-10-09 — Watch Earth five LIVE_VIDEO camera streams only (release pending)
+- Owner confirmed the five Watch Earth choices must be true moving live camera streams, not current still images or provider-only sources. Other truthful views remain discoverable in Search/Explore/Destinations and Living Atlas.
+- Implemented identical browser and shared selector gates: LIVE_VIDEO + EMBED + EMBED_ALLOWED, healthy/current, no editorial holds, actual recent embed playback evidence and approved playable source, with quality/moment threshold. Each chosen view is a distinct destination; hard five-stream ceiling. Never fill a shortfall with stills, PREVIEW, EXTERNAL_LIVE, source-only links, or stale/unverified video.
+- Removed a thumbnail-availability blocker from the *video eligibility* filter: an independently approved, verified live camera may have an explicitly illustrative card placeholder instead of silently disappearing. Thumbnail/poster still never proves motion or live playback.
+- Updated seven-language homepage stream-count language, existing five-camera visitor narrative, empty states and truthful preview notice. Broad full-catalog search, source attribution, editorial photo licensing, Atlas and manual affiliate routing remain unchanged.
+- Shifted shared Watch Earth telemetry from historical 20-target to five-stream ceiling; tightened source curation audit, preflight, exact-live camera product balance, fixed-time release smoke, real-domain deployed contract. Any future shortage reports truthfully without lowering the eligibility floor.
+- This is an implementation snapshot, not a declaration of a verified deployed release. Require same-SHA Pages + Operations + Syntax + domain production check before certifying.
+
 ## Verified ERN release — 2026-10-09 02:03 UTC
 - Production content SHA: `214b161837162b389abacf69a0654ff184a8259b`.
 - **Pages #3002 attempt 2: SUCCESS**; **Operations #1745: SUCCESS**; **Syntax #1252: SUCCESS**, all on the same content SHA.

@@ -13,23 +13,26 @@ const anchor=new Date(Math.max(...checks)),day=anchor.toISOString().slice(0,10);
 const hours=[0,6,12,18];
 const auditMoments=[new Date(),...hours.map(hour=>new Date(`${day}T${String(hour).padStart(2,"0")}:00:00Z`))];
 const rows=auditMoments.map(now=>{
-  const items=buildDynamicWatchEarth(sources,{limit:20,now}),snap=watchEarthSnapshot(items,{limit:20,now});
+  const items=buildDynamicWatchEarth(sources,{limit:5,now}),snap=watchEarthSnapshot(items,{limit:5,now});
   const ids=items.map(s=>s.id),uniqueIds=new Set(ids),eligible=items.filter(s=>watchEarthEligible(s,{now})).length;
   const previews=items.filter(s=>s.truth==="PREVIEW").length;
+  const nonLiveVideo=items.filter(s=>s.truth!=="LIVE_VIDEO"||s.playback!=="EMBED"||s.permission!=="EMBED_ALLOWED").map(s=>s.id);
   const sequence=watchEarthSequenceDiagnostics(items);
-  const weakFirstEight=items.slice(0,8).filter(s=>(Number(s.quality)||0)<84||(Number(s.moment)||0)<80).map(s=>s.id);
-  return{utc:now.toISOString(),actualNow:Math.abs(Date.now()-now.getTime())<60000,...snap,...sequence,target:20,shortfall:Math.max(0,20-items.length),eligible,duplicateIds:ids.length-uniqueIds.size,previews,weakFirstEight,titles:items.map(s=>s.title)};
+  const weakFirstFive=items.slice(0,5).filter(s=>(Number(s.quality)||0)<84||(Number(s.moment)||0)<80).map(s=>s.id);
+  return{utc:now.toISOString(),actualNow:Math.abs(Date.now()-now.getTime())<60000,...snap,...sequence,target:5,shortfall:Math.max(0,5-items.length),eligible,duplicateIds:ids.length-uniqueIds.size,previews,nonLiveVideo,weakFirstFive,titles:items.map(s=>s.title)};
 });
 const violations=[];
 for(const row of rows){
-  if(row.count<1)violations.push(`${row.utc}: no Watch Earth windows`);if(row.actualNow&&row.count<8)violations.push(`${row.utc}: actual-current Watch Earth below production floor (8)`);
-  if(row.actualNow&&row.count>=8&&row.countries<5)violations.push(`${row.utc}: actual-current Watch Earth country breadth below first-impression floor (5)`);
-  if(row.actualNow&&row.count>=8&&row.providers<5)violations.push(`${row.utc}: actual-current Watch Earth provider breadth below first-impression floor (5)`);
-  if(row.actualNow&&row.count>=8&&row.dominantProviderShare>.4)violations.push(`${row.utc}: actual-current Watch Earth provider concentration above first-impression ceiling (40%)`);
-  if(row.actualNow&&row.weakFirstEight.length)violations.push(`${row.utc}: weak first-impression window(s): ${row.weakFirstEight.join(", ")}`);
+  if(row.count<1)violations.push(`${row.utc}: no Watch Earth windows`);if(row.actualNow&&row.count<5)violations.push(`${row.utc}: actual-current Watch Earth below five eligible live cameras`);
+  if(row.actualNow&&row.count>=5&&row.countries<3)violations.push(`${row.utc}: actual-current Watch Earth live-camera country breadth below (3)`);
+  if(row.actualNow&&row.count>=5&&row.providers<3)violations.push(`${row.utc}: actual-current Watch Earth live-camera provider breadth below (3)`);
+  if(row.actualNow&&row.count>=5&&row.dominantProviderShare>.6)violations.push(`${row.utc}: actual-current Watch Earth provider concentration above first-impression ceiling (60%)`);
+  if(row.actualNow&&row.weakFirstFive.length)violations.push(`${row.utc}: weak first-impression window(s): ${row.weakFirstFive.join(", ")}`);
   if(row.eligible!==row.count)violations.push(`${row.utc}: ${row.count-row.eligible} ineligible window(s)`);
   if(row.duplicateIds)violations.push(`${row.utc}: ${row.duplicateIds} duplicate source id(s)`);
   if(row.previews)violations.push(`${row.utc}: ${row.previews} PREVIEW item(s) leaked into Watch Earth`);
+  if(row.nonLiveVideo.length)violations.push(`${row.utc}: non-stream source(s) leaked into Watch Earth: ${row.nonLiveVideo.join(", ")}`);
+  if(row.count>5)violations.push(`${row.utc}: more than five Watch Earth items`);
   if(row.places!==row.count)violations.push(`${row.utc}: journey repeats a place before reaching its available breadth`);
   if(row.count>=3&&row.resilience==="LIMITED")violations.push(`${row.utc}: provider resilience diagnostics unexpectedly limited for a full journey`);
 }

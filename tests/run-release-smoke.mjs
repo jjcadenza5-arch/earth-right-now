@@ -25,6 +25,7 @@ const releaseTests=[
   "autonomous-work-status.smoke.js",
   "whole-product-external-status.smoke.js",
   "watch-diversity.smoke.js",
+  "watch-earth-five-live-video.smoke.js",
   "operator-review-queue.smoke.js",
   "review-evidence-proposals-safety.smoke.js",
   "playback-proof-application-plan.smoke.js",

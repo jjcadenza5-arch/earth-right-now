@@ -6,94 +6,42 @@ import { solarMoment } from "./solar-moment.js";
 import { watchEarthExperienceEligible,watchEarthExperienceScore } from "./watch-earth-experience.js";
 import { nearNowEvidence } from "./now-evidence.js";
 import { embedPlaybackCurrent } from "./embed-playback-current.js";
-import { adaptiveWatchEarthLimit } from "./watch-earth-balance-policy.js";
 
-export function watchEarthEligible(s,{now=new Date()}={}) {
-  return !!s &&
-    sourceStatus(s,{now}).live &&
-    nearNowEvidence(s,{now}) &&
-    s.health === "HEALTHY" &&
-    s.featuredHold !== true &&
-    s.permission !== "UNKNOWN" &&
-    recencyState(s,{now}) === "CURRENT_CHECK" &&
-    embedPlaybackCurrent(s,{now}) &&
-    playbackCapability(s,{now}).action === "PLAY" &&
-    watchEarthExperienceEligible(s);
+export function watchEarthEligible(s,{now=new Date()}={}){
+ return !!s&&s.truth==="LIVE_VIDEO"&&s.playback==="EMBED"&&s.permission==="EMBED_ALLOWED"&&
+  s.watchHold!==true&&s.featuredHold!==true&&s.health==="HEALTHY"&&
+  sourceStatus(s,{now}).live&&nearNowEvidence(s,{now})&&
+  recencyState(s,{now})==="CURRENT_CHECK"&&embedPlaybackCurrent(s,{now})&&
+  playbackCapability(s,{now}).action==="PLAY"&&watchEarthExperienceEligible(s);
 }
-
-function rankedPool(sources, now) {
-  return (sources || [])
-    .filter(s=>watchEarthEligible(s,{now}))
-    .sort((a, b) => {
-      const insideA = playbackCapability(a,{now}).action === "PLAY" ? 6 : 0;
-      const insideB = playbackCapability(b,{now}).action === "PLAY" ? 6 : 0;
-      return (watchEarthBeautyScore(b, now) + watchEarthExperienceScore(b)*.35 + insideB) -
-        (watchEarthBeautyScore(a, now) + watchEarthExperienceScore(a)*.35 + insideA);
-    });
+function rankedPool(sources,now){
+ return(sources||[]).filter(s=>watchEarthEligible(s,{now}))
+  .sort((a,b)=>(watchEarthBeautyScore(b,now)+watchEarthExperienceScore(b)*.35)-
+                (watchEarthBeautyScore(a,now)+watchEarthExperienceScore(a)*.35));
 }
-
-export function buildWatchEarth(
-  sources,
-  { limit = 20, maxPerCountry = 3, maxPerPlace = 1, now = new Date() } = {}
-) {
-  const pool = rankedPool(sources, now);
-  const countries = new Map();
-  const places = new Map();
-  const out = [];
-  const insideCount=pool.filter(source=>playbackCapability(source,{now}).action==="PLAY").length;
-  const externalCount=pool.filter(source=>playbackCapability(source,{now}).action==="EXTERNAL").length;
-  const effectiveLimit=adaptiveWatchEarthLimit({insideCount,externalCount,target:limit,preferredInside:5,externalSoftCap:12});
-
-  // Watch Earth is an in-ERN viewing product. Only sources that can actually
-  // play/render inside ERN are eligible; external-only sources belong in
-  // Search/Explore and must never be used merely to fill the journey.
-  const insidePool=pool.filter(source=>playbackCapability(source,{now}).action==="PLAY");
-  for(const source of insidePool){
-    if(out.length>=Math.min(5,effectiveLimit))break;
-    const country=source.country||"Unknown",place=source.placeId||source.id;
-    if((countries.get(country)||0)>=maxPerCountry)continue;
-    if((places.get(place)||0)>=maxPerPlace)continue;
-    out.push(source);
-    countries.set(country,(countries.get(country)||0)+1);
-    places.set(place,(places.get(place)||0)+1);
+// Five truthful, playable moving-camera streams. Never pad with still images,
+// provider-only pages, stale recordings or duplicate destinations.
+export function buildWatchEarth(sources,{limit=5,maxPerCountry=3,maxPerPlace=1,now=new Date()}={}){
+ const pool=rankedPool(sources,now),ceiling=Math.min(5,Math.max(0,Number(limit)||0));
+ const countries=new Map(),places=new Map(),out=[];
+ for(const pass of [0,1]){
+  for(const source of pool){
+   if(out.length>=ceiling)break;
+   if(out.includes(source))continue;
+   const country=source.country||"Unknown",place=source.placeId||source.id;
+   if((places.get(place)||0)>=maxPerPlace)continue;
+   if(pass===0&&(countries.get(country)||0)>=maxPerCountry)continue;
+   out.push(source);
+   countries.set(country,(countries.get(country)||0)+1);
+   places.set(place,(places.get(place)||0)+1);
   }
-
-  for (const source of pool) {
-    const country = source.country || "Unknown";
-    const place = source.placeId || source.id;
-    if ((countries.get(country) || 0) >= maxPerCountry) continue;
-    if ((places.get(place) || 0) >= maxPerPlace) continue;
-    out.push(source);
-    countries.set(country, (countries.get(country) || 0) + 1);
-    places.set(place, (places.get(place) || 0) + 1);
-    if (out.length >= effectiveLimit) return out;
-  }
-
-  // First relax country concentration while preserving distinct places.
-  for (const source of pool) {
-    if (out.includes(source)) continue;
-    const place = source.placeId || source.id;
-    if ((places.get(place) || 0) >= maxPerPlace) continue;
-    out.push(source);
-    places.set(place, (places.get(place) || 0) + 1);
-    if (out.length >= effectiveLimit) return out;
-  }
-
-  // Only if the truthful current catalog is still smaller than the journey do we
-  // allow another window from an already represented place.
-  for (const source of pool) {
-    if (out.includes(source)) continue;
-    out.push(source);
-    if (out.length >= effectiveLimit) break;
-  }
-  return out;
+ }
+ return out;
 }
-
-export function watchEarthFallback(sources, { limit = 20, now = new Date() } = {}) {
-  return buildWatchEarth(sources, { limit, now });
+export function watchEarthFallback(sources,{limit=5,now=new Date()}={}){
+ return buildWatchEarth(sources,{limit,now});
 }
-
-export function watchEarthSnapshot(sources,{limit=20,now=new Date()}={}){
+export function watchEarthSnapshot(sources,{limit=5,now=new Date()}={}){
  const items=buildWatchEarth(sources,{limit,now});
  const phases=new Map();let inside=0,nightCities=0,daylight=0,golden=0,unknownLight=0;
  for(const s of items){const phase=solarMoment(s,now).phase;phases.set(phase,(phases.get(phase)||0)+1);if(playbackCapability(s,{now}).action==="PLAY")inside++;if(phase==="NIGHT"&&/(Cities|Harbour|Skyline|Urban|Streets|Landmarks)/i.test((s.categories||[]).join(" ")))nightCities++;if(phase==="DAY")daylight++;if(["SUNRISE","SUNSET","MORNING_GOLDEN","EVENING_GOLDEN"].includes(phase))golden++;if(phase==="UNKNOWN")unknownLight++}
