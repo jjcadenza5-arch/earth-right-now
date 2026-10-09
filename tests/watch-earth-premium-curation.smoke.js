@@ -23,7 +23,7 @@ const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
 assert.match(app,/function premiumVisual\(s\)\{return!!\(s&&s\.watchHold!==true&&s\.featuredHold!==true&&\+s\.quality>=84&&\+s\.moment>=80\)\}/);
 assert.doesNotMatch(app,/premiumVisual\(s\).*h>=8&&h<17/);
 assert.match(app,/&&premiumVisual\(s\)}/);
-assert.match(app,/const elite=sorted\.slice\(0,20\)/,"Rotation uses a broader top-quality pool");
+assert.match(app,/const elite=sorted;/,"Rotation searches the whole qualified premium pool for geographic diversity");
 assert.match(app,/const offset=Math\.floor\(Date\.now\(\)\/3600000\)\+\(state\.setOffset\|\|0\)/,"Watch Earth rotates hourly");
 assert.doesNotMatch(app.slice(app.indexOf("function buildWatch("),app.indexOf("function generatedBackground(")),/affiliate|commission|sponsored/i);
 console.log("Watch Earth: beauty/interest without daylight lock, explicit holds, broad rotation and five-stream ceiling passed");

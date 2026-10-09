@@ -12,3 +12,75 @@
 .my-earth .result-card>.truth,.my-earth .result-card>strong,.my-earth .result-card>small,.my-earth .result-card>.verify-mini,.search-section .result-card>.truth,.search-section .result-card>strong,.search-section .result-card>small,.search-section .result-card>.verify-mini{margin-left:14px;margin-right:14px}
 .my-earth .result-card>strong,.search-section .result-card>strong{font-family:Georgia,serif;font-size:19px;line-height:1.12;margin-top:7px;margin-bottom:5px}
 @media(max-width:620px){.my-earth .result-grid,.search-section .result-grid{grid-template-columns:1fr 1fr}.my-earth .result-card>.result-visual,.search-section .result-card>.result-visual{height:112px;flex-basis:112px}.my-earth .result-card>strong,.search-section .result-card>strong{font-size:16px}}
+
+/* ERN-drawn scenic fallback v2: vivid place-specific editorial art, never presented as live. */
+.wander-visual[data-visual-kind="illustrative"] .scenic-poster,
+.result-visual[data-visual-kind="illustrative"] .scenic-poster{filter:saturate(1.08) contrast(1.04)}
+.wander-visual[data-visual-kind="illustrative"] .scenic-poster:after,
+.result-visual[data-visual-kind="illustrative"] .scenic-poster:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.08),transparent 40%,rgba(2,20,18,.08));mix-blend-mode:screen}
+
+.scenic-poster[data-scene="earth"]{background:
+radial-gradient(circle at 72% 18%,rgba(255,220,146,.82) 0 4%,rgba(255,220,146,.20) 10%,transparent 22%),
+linear-gradient(180deg,#8fc8c2 0%,#6ba99d 42%,#315f52 100%)}
+.scenic-poster[data-scene="earth"] .scene-back{background:#477d69;clip-path:polygon(0 76%,11% 58%,21% 68%,34% 39%,47% 65%,60% 48%,73% 70%,86% 51%,100% 66%,100% 100%,0 100%)}
+.scenic-poster[data-scene="earth"] .scene-front{background:#173f35;clip-path:polygon(0 78%,15% 63%,29% 73%,44% 52%,58% 75%,74% 57%,88% 69%,100% 61%,100% 100%,0 100%)}
+
+.scenic-poster[data-scene="water"]{background:
+radial-gradient(circle at 74% 16%,rgba(255,226,151,.92) 0 4%,rgba(255,226,151,.24) 11%,transparent 23%),
+linear-gradient(180deg,#8ed3e4 0 43%,#2d98b5 44%,#0d6178 72%,#073b4b 100%)}
+.scenic-poster[data-scene="water"] .scene-back{bottom:20%;height:16%;background:rgba(238,249,246,.56);clip-path:polygon(0 70%,14% 58%,28% 72%,43% 51%,57% 67%,72% 49%,86% 65%,100% 53%,100% 100%,0 100%)}
+.scenic-poster[data-scene="water"] .scene-front{bottom:-3%;height:24%;background:#0a4c5b;clip-path:polygon(0 44%,16% 55%,31% 40%,48% 57%,64% 42%,80% 54%,100% 36%,100% 100%,0 100%)}
+
+.scenic-poster[data-scene="island"]{background:
+radial-gradient(circle at 72% 17%,rgba(255,229,158,.94) 0 4%,rgba(255,229,158,.25) 11%,transparent 22%),
+linear-gradient(180deg,#8edbea 0 46%,#35a5bf 47%,#08738a 100%)}
+.scenic-poster[data-scene="island"] .scene-back{bottom:10%;height:31%;background:#3b8c6d;clip-path:polygon(0 76%,16% 68%,25% 50%,38% 61%,51% 36%,61% 56%,72% 47%,85% 65%,100% 58%,100% 100%,0 100%)}
+.scenic-poster[data-scene="island"] .scene-front{bottom:-8%;height:23%;background:#0a665f;clip-path:polygon(0 40%,20% 55%,42% 44%,64% 61%,82% 45%,100% 57%,100% 100%,0 100%)}
+
+.scenic-poster[data-scene="mountain"]{background:
+radial-gradient(circle at 76% 17%,rgba(255,220,149,.88) 0 4%,rgba(255,220,149,.21) 11%,transparent 24%),
+linear-gradient(180deg,#a8c8cf 0%,#789b9d 49%,#3d5f59 100%)}
+.scenic-poster[data-scene="mountain"] .scene-back{background:#6b8e88;clip-path:polygon(0 84%,13% 66%,24% 73%,39% 23%,53% 70%,64% 47%,77% 73%,90% 53%,100% 68%,100% 100%,0 100%)}
+.scenic-poster[data-scene="mountain"] .scene-front{background:#294d45;clip-path:polygon(0 79%,16% 61%,31% 74%,48% 48%,64% 72%,80% 52%,100% 67%,100% 100%,0 100%)}
+
+.scenic-poster[data-scene="snow"]{background:
+radial-gradient(circle at 75% 16%,rgba(255,244,210,.94) 0 4%,rgba(255,244,210,.22) 12%,transparent 24%),
+linear-gradient(180deg,#c9e0e9 0%,#9cbecb 50%,#627f89 100%)}
+.scenic-poster[data-scene="snow"] .scene-back{background:#eaf2f2;clip-path:polygon(0 83%,15% 64%,27% 72%,42% 19%,56% 68%,67% 42%,82% 72%,92% 51%,100% 66%,100% 100%,0 100%)}
+.scenic-poster[data-scene="snow"] .scene-front{background:#668389;clip-path:polygon(0 80%,19% 61%,37% 75%,52% 48%,67% 72%,83% 54%,100% 65%,100% 100%,0 100%)}
+
+.scenic-poster[data-scene="volcano"]{background:
+radial-gradient(circle at 70% 17%,rgba(255,205,137,.67) 0 4%,rgba(255,205,137,.16) 12%,transparent 24%),
+linear-gradient(180deg,#aab7bc 0%,#77878b 45%,#504744 100%)}
+.scenic-poster[data-scene="volcano"] .scene-back{background:#6d6059;clip-path:polygon(0 83%,17% 74%,31% 68%,47% 28%,57% 51%,68% 63%,83% 70%,100% 62%,100% 100%,0 100%)}
+.scenic-poster[data-scene="volcano"] .scene-front{background:#332f2d;clip-path:polygon(0 80%,20% 66%,40% 73%,58% 56%,75% 71%,100% 60%,100% 100%,0 100%)}
+
+.scenic-poster[data-scene="city"]{background:
+radial-gradient(circle at 75% 16%,rgba(255,191,112,.82) 0 3%,rgba(255,191,112,.18) 10%,transparent 21%),
+linear-gradient(180deg,#7899ad 0%,#486c81 48%,#193744 100%)}
+.scenic-poster[data-scene="city"] .scene-back{height:53%;background:#214755;box-shadow:0 -1px 0 rgba(255,255,255,.15) inset}
+.scenic-poster[data-scene="city"] .scene-front{height:27%;bottom:-7%;background:
+repeating-linear-gradient(90deg,#102c35 0 9%,#173942 9% 13%,#102c35 13% 22%);clip-path:none}
+.scenic-poster[data-scene="city"] .scene-front:before{content:"";position:absolute;inset:18% 4% 25%;background:radial-gradient(circle,#e8c37b 0 1px,transparent 1.4px);background-size:17px 13px;opacity:.6}
+
+.scenic-poster[data-scene="wildlife"]{background:
+radial-gradient(circle at 73% 18%,rgba(255,221,145,.80) 0 4%,rgba(255,221,145,.18) 11%,transparent 23%),
+linear-gradient(180deg,#b9c28e 0%,#7f9363 50%,#3d593d 100%)}
+.scenic-poster[data-scene="wildlife"] .scene-back{background:#5f794e;clip-path:polygon(0 78%,9% 57%,17% 72%,25% 49%,34% 72%,42% 40%,51% 70%,60% 48%,70% 73%,80% 44%,90% 68%,100% 50%,100% 100%,0 100%)}
+.scenic-poster[data-scene="wildlife"] .scene-front{background:#28452f;clip-path:polygon(0 75%,13% 55%,26% 72%,39% 48%,55% 74%,68% 52%,83% 71%,100% 54%,100% 100%,0 100%)}
+
+.scenic-poster[data-scene="farm"]{background:
+radial-gradient(circle at 73% 17%,rgba(255,225,150,.86) 0 4%,rgba(255,225,150,.20) 11%,transparent 23%),
+linear-gradient(180deg,#bfd1a5 0%,#91ad76 49%,#55724c 100%)}
+.scenic-poster[data-scene="farm"] .scene-back{background:#77935e;clip-path:polygon(0 68%,16% 60%,31% 67%,49% 49%,65% 62%,82% 52%,100% 61%,100% 100%,0 100%)}
+.scenic-poster[data-scene="farm"] .scene-front{background:repeating-linear-gradient(165deg,#3e673b 0 9px,#557b45 9px 18px);clip-path:polygon(0 57%,100% 38%,100% 100%,0 100%)}
+
+.scenic-poster[data-scene="science"]{background:
+radial-gradient(circle at 74% 16%,rgba(193,224,255,.72) 0 3%,rgba(193,224,255,.13) 12%,transparent 23%),
+linear-gradient(180deg,#728ca3 0%,#4a687d 50%,#233c4c 100%)}
+.scenic-poster[data-scene="science"] .scene-back{background:#35586d}
+.scenic-poster[data-scene="science"] .scene-front{background:#1b3543}
+
+.scenic-poster[data-night="true"]{filter:saturate(.9) brightness(.82) contrast(1.07)}
+.scenic-poster[data-night="true"] .scene-sun{background:radial-gradient(circle,rgba(247,248,224,.95) 0 13%,rgba(205,222,226,.28) 35%,transparent 72%)}
+.wander-visual[data-visual-kind="illustrative"] .wander-copy{background:linear-gradient(0deg,rgba(3,24,21,.91) 0,rgba(3,24,21,.24) 48%,rgba(3,24,21,0) 76%)}

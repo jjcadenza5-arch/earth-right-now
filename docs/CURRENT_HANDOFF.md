@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-09 — ERN-drawn scenic fallback v2 + full-pool Watch Earth diversity
+- Implemented the owner's "draw ourselves" idea as **programmatic ERN editorial art** for cards that lack a usable source image. Water, island, mountain, snow, volcano, city, wildlife, farm, science and general Earth scenes now have brighter place-specific skies, horizons, silhouettes and subtle detail instead of reading as flat dark-green panels.
+- These visuals remain explicitly labeled **ILLUSTRATIVE** and are never represented as the live/current feed.
+- More Places, Local Earth, Search and My Earth automatically benefit because they already share the same truthful fallback renderer.
+- Watch Earth now rotates across the **entire qualified premium live pool** rather than an arbitrary top-20 subset. Quality, permission, current-playback and explicit-hold gates remain unchanged; the first selection pass still permits only one stream per country/provider, so five-country diversity is used whenever five qualified countries exist.
+- Atlas unchanged.
+
+
 ## 2026-10-09 — #3022 stale Watch Earth regression corrected
 - Pages #3022 reached the 119-test release suite; **118/119 passed**.
 - The sole failure was `tests/watch-earth-premium-curation.smoke.js` still expecting the prior `top 10` Watch Earth rotation pool after the approved expansion to `top 20`.

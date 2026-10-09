@@ -12,6 +12,9 @@ assert.match(css,/content:"ILLUSTRATIVE"/,"illustrative card artwork must be lab
 assert.match(css,/\.wander-card\{position:relative;display:block;min-height:210px/,"More places cards should use premium image-led composition");
 assert.match(css,/\.my-earth \.result-card>\.result-visual,.search-section \.result-card>\.result-visual\{width:100%;height:150px/,"Search and saved cards should use editorial image-led composition");
 assert.match(css,/content:"VIDEO POSTER"/,"derived video posters must be labeled as posters");
+assert.match(css,/scenic-poster\[data-scene="island"\]/,"fallback art should have a distinct island scene");
+assert.match(css,/scenic-poster\[data-scene="city"\][\s\S]*radial-gradient\(circle,#e8c37b/,"city fallback art should include visible light detail");
+assert.match(css,/scenic-poster\[data-scene="water"\][\s\S]*#8ed3e4/,"water fallback art should be visibly brighter than a flat panel");
 assert.match(build,/premium-cards\.css/,"static release must include premium card stylesheet");
 assert.match(css,/ern-fuji-mockup-hero\.jpg/,"approved photographic Mount Fuji hero image must remain active");
 assert.doesNotMatch(css,/commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\/FujiSunriseKawaguchiko2025WP/,"hero must not depend on a remote image URL");
