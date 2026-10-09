@@ -26,6 +26,7 @@ const releaseTests=[
   "whole-product-external-status.smoke.js",
   "watch-diversity.smoke.js",
   "watch-earth-five-live-video.smoke.js",
+  "watch-earth-premium-curation.smoke.js",
   "screenshot-first-impression.smoke.js",
   "atlas-zoom-and-playback-report.smoke.js",
   "operator-review-queue.smoke.js",

@@ -6,13 +6,14 @@ import { solarMoment } from "./solar-moment.js";
 import { watchEarthExperienceEligible,watchEarthExperienceScore } from "./watch-earth-experience.js";
 import { nearNowEvidence } from "./now-evidence.js";
 import { embedPlaybackCurrent } from "./embed-playback-current.js";
+import { premiumVisualEligible } from "./watch-earth-visual-gate.js";
 
 export function watchEarthEligible(s,{now=new Date()}={}){
  return !!s&&s.truth==="LIVE_VIDEO"&&s.playback==="EMBED"&&s.permission==="EMBED_ALLOWED"&&
   s.watchHold!==true&&s.featuredHold!==true&&s.health==="HEALTHY"&&
   sourceStatus(s,{now}).live&&nearNowEvidence(s,{now})&&
   recencyState(s,{now})==="CURRENT_CHECK"&&embedPlaybackCurrent(s,{now})&&
-  playbackCapability(s,{now}).action==="PLAY"&&watchEarthExperienceEligible(s);
+  playbackCapability(s,{now}).action==="PLAY"&&watchEarthExperienceEligible(s)&&premiumVisualEligible(s,{now});
 }
 function rankedPool(sources,now){
  return(sources||[]).filter(s=>watchEarthEligible(s,{now}))
