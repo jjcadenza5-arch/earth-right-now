@@ -14,3 +14,9 @@ Guardrails:
 - Empty is acceptable. It is better to show no local-business result than fabricate one.
 
 The registry starts empty intentionally. The website plumbing is active; real entries can be added after review without rebuilding the search architecture.
+
+## Operating expansion — 2026-10-09
+
+The initial ten-entry editorial pilot is now intentionally expanded only where a current ERN destination has materially useful, current, first-party or official destination evidence. The operating directory now includes additional reviewed local utility for **Verbier, Hua Hin, Yellowstone / Old Faithful, and Caldera de Taburiente**.
+
+Expansion rules remain unchanged: entries are unpaid, non-affiliate, manually reviewed, tied to a known ERN `placeId`, and expire from current status after the bounded review horizon. Commercial relationships never alter source/search/Watch Earth ranking. Before You Go may use a reviewed exact-place entry only after a verified affiliate option is unavailable, and before generic external search.

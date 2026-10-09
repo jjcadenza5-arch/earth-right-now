@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-09 — Local Earth operating expansion to 17 reviewed entries
+- Expanded the reviewed, unpaid/non-affiliate local directory from **10 to 17** entries around destinations already useful in ERN: **Verbier, Hua Hin, Yellowstone / Old Faithful, and Caldera de Taburiente**.
+- Added W Verbier, Verbier 4Vallées, Centara Grand Hua Hin, COAST Beach Club & Bistro, Yellowstone National Park Lodges, Old Faithful Snow Lodge, and La Palma Free Tours from current first-party/official destination evidence.
+- All entries remain `paidPlacement:false`, `affiliate:false`, manually reviewed, bound to known ERN `placeId` values and subject to the 90-day review horizon.
+- This directly strengthens the already-deployed Before You Go order: verified affiliate → reviewed exact-place local utility → generic external search.
+- No ranking, Watch Earth, Atlas, source-truth or public-OFF behavior changed.
+
+
 ## 2026-10-09 — #3033 modular test boundaries aligned
 - Syntax #1277 and Pages #3033 did not expose a parser defect. Both failures came from regression tests still assuming commercial/planning attribution rendering lived inside `app-lite.js`.
 - Updated `commercial-attribution-truth.smoke.js` and `guide-planning-boundary.smoke.js` to inspect `travel-planning-client.js`, which now owns `dataset.offerId` and the **ERN reviewed local place** disclosure.
