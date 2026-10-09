@@ -29,6 +29,7 @@ const releaseTests=[
   "watch-earth-premium-curation.smoke.js",
   "screenshot-first-impression.smoke.js",
   "atlas-zoom-and-playback-report.smoke.js",
+  "premium-watch-atlas-drilldown.smoke.js",
   "operator-review-queue.smoke.js",
   "review-evidence-proposals-safety.smoke.js",
   "playback-proof-application-plan.smoke.js",

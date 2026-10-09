@@ -1,0 +1,18 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
+const map=fs.readFileSync(new URL("../src/atlas-marker-groups.js",import.meta.url),"utf8");
+const html=fs.readFileSync(new URL("../index.html",import.meta.url),"utf8");
+const selected=app.slice(app.indexOf("function buildWatch("),app.indexOf("function generatedBackground",app.indexOf("function buildWatch(")));
+assert.match(selected,/const elite=sorted.slice\(0,7\)/);
+assert.match(selected,/const offset=Math.floor\(Date.now\(\)\/3600000\)\+\(state.setOffset\|\|0\)/);
+assert.match(selected,/out.length>=limit/);
+assert.match(app,/&&premiumVisual\(s\)/);
+assert.ok(!html.includes("atlas-zoom.js?v="),"No legacy zoom controller can conflict with the main one");
+assert.match(map,/function focusMapGroup\(entries\)/);
+assert.match(map,/repaint\?\.\(\)/);
+assert.match(map,/atlasView.scale<3.5\?focusMapGroup\(group\):showMapGroup\(group,pin\)/);
+assert.match(map,/clusterSize=atlasView.scale<1.6\?96:/);
+assert.match(map,/atlasView.scale>=3.5\)pin.setAttribute\("aria-haspopup","dialog"\)/);
+assert.match(map,/world.append\(pin\)/,"Cluster retains real geography and underlying sources");
+console.log("Premium map drill-in, single zoom, and best-tier hourly Watch Earth rotation passed");

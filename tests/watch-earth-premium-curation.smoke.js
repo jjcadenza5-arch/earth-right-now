@@ -30,5 +30,6 @@ assert.match(app,/h>=8&&h<17/);
 assert.match(app,/s.nightVisualReview==="VISUALLY_COMPELLING"/);
 assert.match(app,/&&premiumVisual\(s\)}/);
 assert.match(app,/const elite=sorted.slice\(0,7\)/,"Rotation must stay within a bounded upper tier");
+assert.match(app,/const offset=Math.floor\(Date.now\(\)\/3600000\)\+\(state.setOffset\|\|0\)/,"Watch Earth must rotate hourly within its approved beauty tier");
 assert.doesNotMatch(app.slice(app.indexOf("function buildWatch("),app.indexOf("function generatedBackground(")),/affiliate|commission|sponsored/i);
 console.log("Premium Watch Earth: honest day/night scene gate, visual holds, bounded rotation and underfilled set passed");
