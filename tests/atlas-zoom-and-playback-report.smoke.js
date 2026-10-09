@@ -14,7 +14,7 @@ assert.match(source,/entry\.node\.click\(\)/,"List retains original source actio
 assert.match(source,/role","dialog"/,"Place list is a dialog");
 assert.match(source,/aria-haspopup","dialog"/,"Cluster announces its list");
 assert.match(source,/Escape/,"Escape closes a group");
-assert.match(source,/liveFirst/,"Playable sources appear first in large place lists");
+assert.match(source,/entries=\[\.\.\.entries\]\.sort/,"Current sources appear first in large place lists");
 for(const phrase of ["atlasZoomTransform","ZOOM_STYLES","ensureAtlasZoom","focusMapGroup","atlasView.scale","pointermove","wheel","World view"])assert.ok(!source.includes(phrase),"Removed unwanted map complexity: "+phrase);
 assert.ok(!index.includes("atlas-zoom.js?v="),"No legacy second zoom controller");
 assert.ok(app.includes('import("./atlas-marker-groups.js")'),"Simple groups still load on demand");

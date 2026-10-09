@@ -36,8 +36,8 @@ export function renderAtlasMarkerGroups(a,markers){
   close.onclick=()=>{panel.remove();pin.focus()};
   heading.append(title,close);panel.append(heading);
   const list=document.createElement("div");list.className="map-cluster-list";
-  const liveFirst=[...entries].sort((a,b)=>(/LIVE HERE|CURRENT IMAGE/.test(b.label)?1:0)-(/LIVE HERE|CURRENT IMAGE/.test(a.label)?1:0)||a.name.localeCompare(b.name));
-  for(const entry of liveFirst){
+  entries=[...entries].sort((a,b)=>(/LIVE HERE|CURRENT IMAGE/.test(b.label)?1:0)-(/LIVE HERE|CURRENT IMAGE/.test(a.label)?1:0)||a.name.localeCompare(b.name));
+  for(const entry of entries){
    const option=document.createElement("button");option.type="button";option.className="map-cluster-choice";
    const name=document.createElement("strong");name.textContent=entry.name;
    const label=document.createElement("small");label.textContent=entry.label;
