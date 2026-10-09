@@ -47,3 +47,16 @@ assert.equal(link.dataset.offerKind,undefined);
 assert.equal(link.dataset.localPlaceId,undefined);
 assert.equal(link.attrs["aria-label"],"Where to stay");
 assert.equal(link.rel,"noopener noreferrer");
+
+// Local Earth should not silently re-enable stale, paid or unsafe fallback listings.
+const localSrc={placeId:"sample-place"};
+const baseLocal={id:"sample-local",placeId:"sample-place",type:"hotel",tags:["stay"],status:"APPROVED",url:"https://example.org/stay",verifiedAt:new Date().toISOString(),paidPlacement:false,affiliate:false};
+assert.equal(plan.localFor([baseLocal],localSrc,/hotel/).id,"sample-local");
+for(const bad of [
+ {...baseLocal,verifiedAt:"2020-01-01T00:00:00Z"},
+ {...baseLocal,verifiedAt:"bad"},
+ {...baseLocal,paidPlacement:true},
+ {...baseLocal,affiliate:true},
+ {...baseLocal,url:"javascript:alert(1)"},
+ {...baseLocal,status:"PENDING"}
+]) assert.equal(plan.localFor([bad],localSrc,/hotel/),null);
