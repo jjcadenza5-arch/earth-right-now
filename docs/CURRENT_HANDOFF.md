@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-09 — Travel-planning attribution-state correction
+- Inspected actual GitHub main and current 21-entry Local Earth directory and identified a client-side state transition defect in `src/travel-planning-client.js`: `applyPlan` cleared affiliate attribution fields when switching to a local/external fallback, but did not clear `data-local-place-id` when switching back to a verified affiliate offer.
+- Corrected only that stale metadata transition (`delete el.dataset.localPlaceId` in the offer branch). Commit `f935971417671b11a3f17cf8c3ed5a0a865d061d`.
+- This preserves visitor-visible text, exact tracked URLs, link disclosures, offer selection, commercial ranking neutrality, analytics safeguards and existing reviewed local lists. No affiliate or local listing count changed; no camera/playback fields changed.
+- New GitHub Actions results and post-deployment browser behavior have not yet been verified for this commit; do not mark public release certified until checks pass.
+
+
 ## 2026-10-09 — Local Earth destination-depth batch: 17 → 21 reviewed entries
 - Added four **non-affiliate, unpaid** reviewed local-directory entries in `data/local-directory-supplemental.json`, bringing the directory to **10 core + 11 supplemental = 21 entries**. The new entries are Santa Claus Office, Santa Claus' Main Post Office (Santa Claus Village / Rovaniemi) and Soul Bar & Bistro, Bivacco (Auckland Viaduct Harbour).
 - Used the current first-party Santa Claus Village operator directory/activity and opening-hours pages, and the official Viaduct Harbour dining directory as evidence. The Auckland entries deliberately link to the **directory**, not an unverified merchant booking path. Do not imply booking availability or restaurant reservations.
