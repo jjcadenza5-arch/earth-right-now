@@ -1,3 +1,13 @@
+## Verified ERN release — 2026-10-09 02:03 UTC
+- Production content SHA: `214b161837162b389abacf69a0654ff184a8259b`.
+- **Pages #3002 attempt 2: SUCCESS**; **Operations #1745: SUCCESS**; **Syntax #1252: SUCCESS**, all on the same content SHA.
+- Pages #3002 attempt 1 passed all predeployment tests but was cancelled while GitHub Pages remained in `updating_pages` beyond the job timeout. One controlled retry of exactly the same job/SHA succeeded; no new code, extra pilot approvals or alternate deployment route was used.
+- Successful production verifier output: `ok:true`, `homeRevision:"214b16183716"`. Post-deploy social-preview verification, live-domain visitor-reality checks and IndexNow submission also succeeded.
+- The verifier now directly requests public `https://earthrightnow.app/contact.html`, requires `mailto:jjcadenza6@gmail.com`, canonical URL, visible homepage link and affiliate-transparency language. The newly packaged Contact page passed this production verification; the generated sitemap now contains its canonical URL.
+- Operations and Syntax passed independently on the same SHA. Healthy searchable places observed by live verifier: 757 across 130 countries / territories (source status can change); 330 core and 436 supplemental source records. These metrics are observational, not artificial release targets.
+- **Current Image Pilot Renewal #4 remains a recorded failed historical run.** Previous outdated LINK_ONLY assumptions were corrected and exact two-source post-renewal diff guards committed. Do not certify the renewal repair from Pages alone: require the next actual renewal run to confirm only Yellowstone Biscuit Basin and Ruapehu evidence is renewed and no unrelated source or policy field changes.
+- This handoff checkpoint is a documentation-only commit following the verified content SHA and should not trigger an unnecessary Pages deployment. Keep five carefully curated Watch Earth windows, wider honest discovery, progressive Atlas, editorial clarity, no paid rankings, and protected public feature gates unchanged.
+
 ## 2026-10-09 — Real Contact route and exact pilot renewal guard
 - Diagnosed actual-domain /contact.html 404 after green Pages #3001. Contact source file and navigation existed, but dist snapshot omitted the file and generated sitemap overwrote the hand-edited contact entry.
 - Added Contact to artifact and generated sitemap; strengthened source, release and live-domain trust checks (canonical, schema, approved email, index link, affiliate clarity) so omission blocks promotion.
