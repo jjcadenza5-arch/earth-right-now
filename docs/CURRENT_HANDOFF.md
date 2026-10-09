@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-09 — Pages #3047 two-byte startup budget failure repaired
+- Inspected the actual failed Pages #3047 run `37953115294`. The release smoke failure was the strict **160,000-byte homepage startup JavaScript gate**, measured at **160,002 bytes**, surfaced by the Phase 10 production and launch audits. Syntax and Operations were green.
+- Removed eight bytes of redundant runtime text from `src/travel-planning-client.js` without changing selection, HTTPS validation, offer disclosure, affiliate gates, 90-day Local Earth reviews or release limits. Commits `1772e35efb61866a1989ee74174b6a7acda4ba18` and `ace58933f9495add08ce621103baa90fa6402fb3`.
+- Expected total: approximately 159,994 startup JS bytes, conditional on no other concurrent changes. This remains **uncertified until the new Pages release checks pass**; no new live playback evidence or commercial activation occurred.
+- Future code should avoid spending remaining startup headroom and move substantial functions to lazy modules.
+
+
 ## 2026-10-09 — Pages #3044 strict startup-JS budget repair
 - Inspected exact Pages #3044 run `37951598577`, failed release smoke tests `phase10-production-audit.smoke.js` and `phase10-launch-review.smoke.js`. Both exposed the **same actual performance blocker**: homepage startup JavaScript **160,191 bytes** exceeded the hard **160,000-byte** limit by 191 bytes.
 - Tightened new reviewed-local 90-day eligibility remained fully enforced. Compacted that helper (`42da0c0`) and then non-behavior-changing planning helper internals (`7216a92`, `f60bfcf`) to remove about 192 bytes from `src/travel-planning-client.js`, keeping null-safe partner and offer handling. No budgets or release tests disabled, and no catalog/playback/Atlas/affiliate activation changes.
