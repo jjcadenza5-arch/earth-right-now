@@ -96,3 +96,54 @@ linear-gradient(180deg,#728ca3 0%,#4a687d 50%,#233c4c 100%)}
 .wander-visual[data-visual-kind="illustrative"][data-scene="farm"],.result-visual[data-visual-kind="illustrative"][data-scene="farm"]{background:linear-gradient(180deg,#bfd1a5,#91ad76 49%,#55724c)!important}
 .wander-visual[data-visual-kind="illustrative"][data-scene="science"],.result-visual[data-visual-kind="illustrative"][data-scene="science"]{background:linear-gradient(180deg,#728ca3,#4a687d 50%,#233c4c)!important}
 .wander-visual[data-visual-kind="illustrative"][data-scene="earth"],.result-visual[data-visual-kind="illustrative"][data-scene="earth"]{background:linear-gradient(180deg,#8fc8c2,#6ba99d 42%,#315f52)!important}
+
+/* Editorial-photo fallback covers: same visual language as "Where do you want Earth to take you?". */
+.card-visual[data-visual-kind="illustrative"] .scenic-poster,
+.wander-visual[data-visual-kind="illustrative"] .scenic-poster,
+.result-visual[data-visual-kind="illustrative"] .scenic-poster{display:none}
+
+.card-visual[data-visual-kind="illustrative"],
+.wander-visual[data-visual-kind="illustrative"],
+.result-visual[data-visual-kind="illustrative"]{
+  background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important
+}
+.card-visual[data-visual-kind="illustrative"][data-scene="water"],
+.card-visual[data-visual-kind="illustrative"][data-scene="island"],
+.wander-visual[data-visual-kind="illustrative"][data-scene="water"],
+.wander-visual[data-visual-kind="illustrative"][data-scene="island"],
+.result-visual[data-visual-kind="illustrative"][data-scene="water"],
+.result-visual[data-visual-kind="illustrative"][data-scene="island"]{
+  background-image:linear-gradient(0deg,rgba(4,28,24,.34),rgba(4,28,24,.03)),url("https://images.unsplash.com/photo-1771945484043-3a17fbf57a4b?auto=format&fit=crop&fm=jpg&q=75&w=960")!important
+}
+.card-visual[data-visual-kind="illustrative"][data-scene="mountain"],
+.card-visual[data-visual-kind="illustrative"][data-scene="snow"],
+.card-visual[data-visual-kind="illustrative"][data-scene="volcano"],
+.wander-visual[data-visual-kind="illustrative"][data-scene="mountain"],
+.wander-visual[data-visual-kind="illustrative"][data-scene="snow"],
+.wander-visual[data-visual-kind="illustrative"][data-scene="volcano"],
+.result-visual[data-visual-kind="illustrative"][data-scene="mountain"],
+.result-visual[data-visual-kind="illustrative"][data-scene="snow"],
+.result-visual[data-visual-kind="illustrative"][data-scene="volcano"]{
+  background-image:linear-gradient(0deg,rgba(4,28,24,.34),rgba(4,28,24,.03)),url("https://images.unsplash.com/photo-1784536424390-b6e653809373?auto=format&fit=crop&fm=jpg&q=75&w=960")!important
+}
+.card-visual[data-visual-kind="illustrative"][data-scene="city"],
+.card-visual[data-visual-kind="illustrative"][data-scene="science"],
+.wander-visual[data-visual-kind="illustrative"][data-scene="city"],
+.wander-visual[data-visual-kind="illustrative"][data-scene="science"],
+.result-visual[data-visual-kind="illustrative"][data-scene="city"],
+.result-visual[data-visual-kind="illustrative"][data-scene="science"]{
+  background-image:linear-gradient(0deg,rgba(4,28,24,.34),rgba(4,28,24,.03)),url("https://images.unsplash.com/photo-1767749505538-23e71d1af2c5?auto=format&fit=crop&fm=jpg&q=75&w=960")!important
+}
+.card-visual[data-visual-kind="illustrative"][data-scene="wildlife"],
+.card-visual[data-visual-kind="illustrative"][data-scene="farm"],
+.wander-visual[data-visual-kind="illustrative"][data-scene="wildlife"],
+.wander-visual[data-visual-kind="illustrative"][data-scene="farm"],
+.result-visual[data-visual-kind="illustrative"][data-scene="wildlife"],
+.result-visual[data-visual-kind="illustrative"][data-scene="farm"]{
+  background-image:linear-gradient(0deg,rgba(4,28,24,.34),rgba(4,28,24,.03)),url("https://images.unsplash.com/photo-1759128312246-0a18fae0d46a?auto=format&fit=crop&fm=jpg&q=75&w=960")!important
+}
+.card-visual[data-visual-kind="illustrative"][data-scene="earth"],
+.wander-visual[data-visual-kind="illustrative"][data-scene="earth"],
+.result-visual[data-visual-kind="illustrative"][data-scene="earth"]{
+  background-image:linear-gradient(0deg,rgba(4,28,24,.34),rgba(4,28,24,.03)),url("https://images.unsplash.com/photo-1546019116-2f6179dc3965?auto=format&fit=crop&fm=jpg&q=75&w=960")!important
+}

@@ -21,8 +21,10 @@ assert.match(css,/scenic-poster\[data-scene="city"\][\s\S]*#e8c37b/,
   "city fallback art should include visible light detail");
 assert.match(css,/scenic-poster\[data-scene="water"\][\s\S]*#8ed3e4/,
   "water fallback art should be visibly brighter than a flat panel");
-assert.match(css,/wander-visual\[data-visual-kind="illustrative"\]\[data-scene="water"\][\s\S]*!important/,
-  "container-level scenic fallback must stay visible");
+assert.match(css,/photo-1771945484043-3a17fbf57a4b/,"water/island fallback should use the approved editorial beach photo");
+assert.match(css,/photo-1784536424390-b6e653809373/,"mountain/snow/volcano fallback should use the approved editorial mountain photo");
+assert.match(css,/photo-1767749505538-23e71d1af2c5/,"city/science fallback should use the approved editorial city photo");
+assert.match(css,/photo-1759128312246-0a18fae0d46a/,"wildlife/farm fallback should use the approved editorial nature photo");
 assert.match(build,/premium-cards\.css/,"static release must include premium card stylesheet");
 assert.match(css,/ern-fuji-mockup-hero\.jpg/,"approved Mount Fuji hero image must remain active");
 assert.doesNotMatch(css,/commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\/FujiSunriseKawaguchiko2025WP/,

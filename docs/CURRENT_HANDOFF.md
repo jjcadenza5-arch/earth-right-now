@@ -1,5 +1,18 @@
 # Current ERN handoff
 
+## 2026-10-09 — Editorial-photo fallback replaces abstract card art
+- Owner correctly observed that the CSS scenic illustrations still did not look materially better than the prior dark/abstract cards.
+- Changed strategy: normal `ILLUSTRATIVE` card covers now reuse ERN's already-approved editorial photo families from **Where do you want Earth to take you?**:
+  - water/island → Beaches & Water
+  - mountain/snow/volcano → Mountains & Snow
+  - city/science → Cities & Streets
+  - wildlife/farm → Wildlife & Nature
+  - general Earth → Calm & Scenic
+- The old programmatic scenic art remains underneath only as a last-resort fallback. Card truth labels remain `ILLUSTRATIVE`; these images are never presented as live/current media.
+- Applies automatically to Watch Earth fallback cards, More Places, Local Earth, Search and My Earth.
+- Atlas and source truth unchanged.
+
+
 ## 2026-10-09 — #3027 visual smoke file repaired cleanly
 - Pages #3027 stopped in syntax preflight because a prior automated text replacement corrupted many regular expressions inside `tests/first-impression-visuals.smoke.js`.
 - Replaced that test with a clean compact version covering the same intended guarantees: safe poster fallback, scenic-family propagation, premium card layouts, truthful ILLUSTRATIVE/VIDEO POSTER labels, bright place-specific scenic art, release inclusion of `premium-cards.css`, and the local Mount Fuji hero.
