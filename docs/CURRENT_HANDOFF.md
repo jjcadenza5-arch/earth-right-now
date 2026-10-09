@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-09 — Premium cards everywhere + Takayama visitor-failure protection
+- Owner approved using the polished **“Where do you want Earth to take you?”** image-led card language across ERN where practical. Search/saved/place cards are now image-led instead of text-first; **More places worth a look** becomes full-bleed editorial-style cards with the same calm premium hierarchy.
+- Card media now uses the best honest visual available in this order: explicit source thumbnail, safe derivable YouTube video poster, then ERN's own programmatic scenic illustration. Video posters and illustrations remain explicitly labeled; neither is presented as the live feed.
+- Owner Safari capture at 2026-10-09 13:48 Bangkok showed **Takayama — Miyagawa & Kaji Bridge** failing inside ERN with a YouTube playback error. Recorded this as `playbackFailureObservedAt=2026-10-09T06:48:00Z`, `watchHold:true`, and `VISITOR_PLAYBACK_REJECTED`. Browser current-truth logic now rejects a playback failure that is newer than the last successful playback proof, so the source cannot continue to claim `LIVE HERE` or return to Watch Earth until a fresh successful rendered playback check supersedes the failure.
+- This is visitor evidence, not a claim that the provider itself is offline. The wider source remains discoverable with truthful fallback behavior.
+- Atlas behavior remains unchanged.
+
+
 ## 2026-10-09 — Catalog-wide inside-ERN playback preference + #3014 test fix
 - Owner clarified that Watch Earth is only the premium five-card showcase; **other livestreams should also play inside ERN whenever they can**. `Open Live Source` is a fallback, not the preferred experience.
 - Preserve truthful provider boundaries: promote a source to inside-ERN only when embedding is technically supported, permitted, healthy/current and playback evidence is sufficient. Do not proxy, restream, scrape around provider restrictions or label stale imagery as live.

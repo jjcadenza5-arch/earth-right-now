@@ -7,9 +7,9 @@ const sources=JSON.parse(fs.readFileSync(new URL("../data/sources.json",import.m
 const now=new Date("2026-10-09T02:03:00Z");
 const eligible=sources.filter(s=>watchEarthEligible(s,{now}));
 assert.ok(eligible.length>=3,"Current daylight sample needs several premium live cameras");
-assert.ok(!eligible.some(s=>s.id==="verbier"||s.id==="taiwan-heping-island-live"),"Human-rejected/weak views stay outside Watch Earth");
+assert.ok(!eligible.some(s=>["verbier","taiwan-heping-island-live","takayama-miyagawa-stream"].includes(s.id)),"Human-rejected, failed or weak views stay outside Watch Earth");
 assert.ok(eligible.some(s=>!s.thumbnailUrl),"Do not depend on an optional thumbnail for live eligibility");
-const seed=eligible[0];
+const takayama=sources.find(s=>s.id==="takayama-miyagawa-stream");\nassert.equal(takayama.watchHold,true);\nassert.match(takayama.failureReason,/VISITOR_PLAYBACK_REJECTED/);\nconst seed=eligible[0];
 const bait=[
  {...seed,id:"not-video-still",placeId:"not-video-still",quality:100,moment:100,truth:"LIVE_IMAGE",playback:"IMAGE_REFRESH"},
  {...seed,id:"provider-only",placeId:"provider-only",quality:100,moment:100,truth:"EXTERNAL_LIVE",playback:"EXTERNAL",permission:"LINK_ONLY"},
