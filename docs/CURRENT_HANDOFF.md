@@ -1,5 +1,15 @@
 # Current ERN handoff
 
+## 2026-10-09 — Evidence-first source and visitor-demand operating batch
+- Confirmed owner-reported green release after the production-reality verifier adjustment; no new rendered playback proof implied.
+- Examined source-research queue, traffic-growth and business-growth aggregate snapshots, local-directory supplemental registry and affiliate opportunity matrix on GitHub main. Existing 17 reviewed local businesses and 232 source-eligible public affiliate placements retained unchanged.
+- Rechecked Chiang Mai PAO official CCTV control room: four cameras still show STANDBY / WAITING FOR FEED. No LIVE promotion, embed permission assumption or playback timestamp change.
+- Rechecked repeated Dolphin Bay / Sam Roi Yot search need (three grouped historical searches); no evidence of a verified, presently rendered, authorized camera emerged. Kept this a research gap, not a published source. Recorded status in `data/source-research-priorities.json` in commit `72bcdb11777c187c389eb8e654b3fe8537005fad`.
+- Last recorded 30-day traffic snapshot (observed 2026-10-08): ~54 visitors, 359 page views, 108 searches, 41 zero-result searches, 338 window opens, 82 external-source opens and 10 travel-option opens. These are historical aggregate observations, not live/current counters, bookings or partner conversions.
+- Follow-up operating order: (1) obtain actual rendered playback proof for already-permitted inside-ERN candidates (especially expired-proof locations) before promoting, (2) source-specific first-party candidate research for repeated visitor-demand destinations, (3) exact-match approved local business usefulness on healthy places, (4) turn already-active affiliate programs' queued exact-link opportunities into real verified URLs through required owner/partner evidence only, (5) use updated aggregate search-gap evidence without auto-mutating catalog, (6) keep release guard and performance budget unchanged.
+- Do not record external source-page health as rendered playback. No public-OFF gates, Atlas numbering, commercial ranking or performance thresholds altered.
+
+
 ## 2026-10-09 — Pages #3037 post-deploy verifier repaired; owner reports all green
 - Pages #3037 (commit `54d367d25ed59ff1cb39825d2ca30ae1e308502c`) passed all functional, budget, release-build and deployment steps, and GitHub Pages reported a successful deployment; social preview returned HTTP 200 and passed. The workflow failed only at step 48, `Verify deployed visitor reality sync`.
 - Exact cause: `scripts/production-reality-check.mjs` required the obsolete literal `setTimeout(()=>loadSearchExtra(initialQ),0)`, while the current `src/app-lite.js` intentionally includes the asynchronous supplemental Local Earth fetch in that timer callback. Checking the whole runtime marker list found only this obsolete literal unmatched.
