@@ -31,6 +31,7 @@ assert.ok(actual.every(s=>!bait.some(b=>b.id===s.id)));
 const dynamic=buildDynamicWatchEarth(sources,{limit:20,now});
 assert.equal(dynamic.length,5);
 assertTruth(dynamic);
+assert.ok(new Set(dynamic.map(s=>s.country)).size>=3,"Curated streams should include 3 countries when approved sources are available");
 const sparse=buildWatchEarth([...eligible.slice(0,4),...bait],{limit:20,now});
 assert.equal(sparse.length,4,"Do not pad five with unverified or nonvideo sources");
 assertTruth(sparse);

@@ -21,7 +21,7 @@ function rankedPool(sources,now){
 }
 // Five truthful, playable moving-camera streams. Never pad with still images,
 // provider-only pages, stale recordings or duplicate destinations.
-export function buildWatchEarth(sources,{limit=5,maxPerCountry=3,maxPerPlace=1,now=new Date()}={}){
+export function buildWatchEarth(sources,{limit=5,maxPerCountry=2,maxPerPlace=1,now=new Date()}={}){
  const pool=rankedPool(sources,now),ceiling=Math.min(5,Math.max(0,Number(limit)||0));
  const countries=new Map(),places=new Map(),out=[];
  for(const pass of [0,1]){
