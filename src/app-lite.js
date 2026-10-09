@@ -134,7 +134,7 @@ const lat=Number(x.lat),lon=Number(x.lon);if(!Number.isFinite(lat)||!Number.isFi
 // Group nearby map markers at the *current display size*. The underlying
 // place list is unchanged; each group's accessible drawer retains every item.
 let markerGroupsCount=markers.length;
-if(globalThis.ERNAtlasGroups)markerGroupsCount=globalThis.ERNAtlasGroups(a,markers);
+if(globalThis.ERNAtlasGroups)markerGroupsCount=globalThis.ERNAtlasGroups(a,markers,renderMap);
 else{for(const marker of markers)a.append(marker.node);
 if(!state.atlasGroupsLoading){state.atlasGroupsLoading=true;
 import("./atlas-marker-groups.js").then(m=>{globalThis.ERNAtlasGroups=m.renderAtlasMarkerGroups;renderMap()}).catch(()=>{state.atlasGroupsLoading=false})}}
