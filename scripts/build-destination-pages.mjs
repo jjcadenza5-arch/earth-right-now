@@ -321,6 +321,7 @@ const staticUrls=[
   ...discoverRows.map(x=>({loc:x.url,lastmod:x.lastmod})),
   ...localizedDiscoverRows,
   {loc:base+"about.html",lastmod:staticLastmod},
+  {loc:base+"contact.html",lastmod:staticLastmod},
   {loc:base+"how-ern-works.html",lastmod:staticLastmod},
   {loc:base+"source-policy.html",lastmod:staticLastmod},
   {loc:base+"editorial-principles.html",lastmod:staticLastmod},

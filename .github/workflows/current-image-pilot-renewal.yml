@@ -28,6 +28,7 @@ jobs:
           set -euo pipefail
           node tests/current-image-pilot.smoke.js
           node tests/current-image-pilot-renewal.smoke.js
+          node tests/current-image-pilot-diff.smoke.js
           git diff -- data/sources.json data/current-image-pilot-observations.json
       - name: Commit renewed evidence when changed
         run: |

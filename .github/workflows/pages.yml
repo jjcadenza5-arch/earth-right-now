@@ -89,6 +89,7 @@ on:
       - "scripts/provider-family-research-status.mjs"
       - "assets/**"
       - "about.html"
+      - "contact.html"
       - "press.html"
       - "data/public-brand-facts.json"
       - "privacy.html"

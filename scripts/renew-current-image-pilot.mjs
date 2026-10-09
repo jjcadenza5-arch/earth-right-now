@@ -17,7 +17,7 @@ if(Number(observationLedger.requiredSuccessfulRenewalDates)!==2)throw new Error(
 if(JSON.stringify(allowedLedgerIds)!==JSON.stringify(expectedLedgerIds))throw new Error("Pilot observation ledger allowed source ids mismatch");
 if(!Array.isArray(observationLedger.observations))throw new Error("Pilot observation ledger observations must be an array");
 const pilotTargets=targets.filter(t=>pilotIds.has(t.sourceId));
-if(pilotTargets.length!==2)throw new Error("Expected exactly two controlled current-image pilot targets");
+if(pilotTargets.length!==2||new Set(pilotTargets.map(t=>t.sourceId)).size!==2||pilotTargets.some(t=>!pilotIds.has(t.sourceId)))throw new Error("Expected exactly two distinct controlled current-image pilot targets");
 
 async function getImage(url){
  const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),8000);

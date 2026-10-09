@@ -1,5 +1,14 @@
 # Current ERN handoff
 
+## 2026-10-09 — Pilot smoke diagnosis and Contact publication repair (release validation pending)
+- Scheduled Current Image Pilot Renewal #4 failed after both Yellowstone Biscuit Basin and Ruapehu freshness probes succeeded. Its legacy smoke incorrectly required independently approved IMAGE_REFRESH sources to remain LINK_ONLY. Main commits 7bb67766 and 2d0ce59c fixed that stale assertion without broadening the two-source renewal.
+- Pages #3001 passed on main 2d0ce59c, but live /contact.html returned HTTP 404. The source page existed and homepage/About linked it; the immutable artifact builder omitted contact.html, and destination-page generation overwrote manually edited sitemap.xml, dropping Contact.
+- This reliability batch copies Contact into the immutable Pages artifact, emits it in generated sitemap, enforces Contact in discoverability/structured-trust/release checks, adds a direct push trigger and validates the real-domain route and approved public address jjcadenza6@gmail.com after deploy.
+- New post-renewal Git-diff guard proves every non-pilot source stays identical, original pilots change only their three allowed evidence fields, and the ledger only appends one exact-two-source observation without altering policy. Duplicate pilot target IDs fail closed. Rights, playback and ranking boundaries remain unchanged.
+- Authoring state is pending new same-SHA Pages/Operations verification and a future actual pilot renewal; DO NOT interpret #4 as successful or green Pages #3001 as proof Contact was live.
+- Preserve five selected Watch Earth windows, broad honest global Search/Explore, progressive Atlas, editorial photography/navigation, manual affiliate disclosure, core-size ceilings and all launch-stage public-OFF gates.
+
+
 Use `docs/ERN_SOFT_LAUNCH_STAGE1_HANDOFF_2026-10-02.md` as the canonical Soft Launch continuity point and `docs/AFFILIATE_COVERAGE_EXPANSION_2026-10-02.md` as the current commercial coverage audit.
 
 Current operating state:

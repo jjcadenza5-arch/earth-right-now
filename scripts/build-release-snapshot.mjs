@@ -100,6 +100,7 @@ await cp(new URL("../release-verification.html",import.meta.url),new URL("releas
 await cp(new URL("../src/release-verification-console.js",import.meta.url),new URL("src/release-verification-console.js",dist));
 await cp(new URL("../src/candidate-evidence-binding.js",import.meta.url),new URL("src/candidate-evidence-binding.js",dist));
 await cp(new URL("../about.html",import.meta.url),new URL("about.html",dist));
+await cp(new URL("../contact.html",import.meta.url),new URL("contact.html",dist));
 await cp(new URL("../how-ern-works.html",import.meta.url),new URL("how-ern-works.html",dist));
 await cp(new URL("../source-policy.html",import.meta.url),new URL("source-policy.html",dist));
 await cp(new URL("../editorial-principles.html",import.meta.url),new URL("editorial-principles.html",dist));

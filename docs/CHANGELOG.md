@@ -1,3 +1,8 @@
+## 2026-10-09 — Publish Contact and protect two-source renewal scope
+- Include contact.html in immutable Pages artifact, generated sitemap and real-domain verification, with required accessible public email and trust metadata; include Contact edits in Pages triggers.
+- Protect pilot renewal via exact before/after source diff and ledger observation guard, plus distinct-ID target check. Never change unrelated sources or independently approved embeds.
+- Diagnose Renewal #4 as obsolete assertion, not source-probe failure; leave feature, permission, ranking, payments and Drive limits unchanged.
+
 ## 2026-09-29 — Confirm Travelpayouts platform and publish scheduled Nishiki
 - Recorded the operator-confirmed green/active Earthrightnow Travelpayouts project with 26 available programs and payout method still pending.
 - Strengthened commercial preflight around manual-only affiliate operation and ranking independence.

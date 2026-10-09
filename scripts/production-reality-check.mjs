@@ -9,6 +9,9 @@ async function fetchFresh(url){const join=url.includes("?")?"&":"?";return fetch
 async function waitText(url,predicate,label,tries=18){let last="no response";for(let i=0;i<tries;i++){try{const r=await fetchFresh(url);const t=await r.text();last=r.status+" "+t.slice(0,120);if(r.ok&&predicate(t))return t}catch(e){last=String(e)}await wait(5000)}throw new Error(label+" did not reach expected production state: "+last)}
 async function get(url,tries=8){let last;for(let i=0;i<tries;i++){try{const r=await fetchFresh(url);if(r.ok)return r;last=new Error(url+" -> "+r.status)}catch(e){last=e}await wait(4000)}throw last}
 const home=await waitText(base+"/",t=>t.includes("app-lite.js?v="+build),"production home");
+if(!home.includes('href="./contact.html"'))throw new Error("production homepage missing Contact navigation");
+const contact=await waitText(base+"/contact.html",t=>t.includes("mailto:jjcadenza6@gmail.com")&&t.includes('rel="canonical" href="https://earthrightnow.app/contact.html"'),"public Contact page");
+if(!/affiliate/i.test(contact))throw new Error("production Contact page missing affiliate transparency");
 const app=await waitText(base+"/src/app-lite.js?v="+build,t=>t.includes("setTimeout(()=>loadSearchExtra(initialQ),0)"),"production app");
 const liteCss=await waitText(base+"/src/styles-lite.css",t=>t.includes(".viewer-stage .c"),"production current-image viewer CSS");
 const analyticsCfg=await waitText(base+"/src/analytics-config.js",t=>t.includes('provider:"ERN_FIRST_PARTY"')&&t.includes("enabled:true")&&t.includes("ern-analytics-api"),"production analytics config");

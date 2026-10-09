@@ -1,3 +1,9 @@
+## 2026-10-09 — Real Contact route and exact pilot renewal guard
+- Diagnosed actual-domain /contact.html 404 after green Pages #3001. Contact source file and navigation existed, but dist snapshot omitted the file and generated sitemap overwrote the hand-edited contact entry.
+- Added Contact to artifact and generated sitemap; strengthened source, release and live-domain trust checks (canonical, schema, approved email, index link, affiliate clarity) so omission blocks promotion.
+- Renewal #4's two image probes passed; obsolete test expected non-pilot separately approved image sources to be LINK_ONLY. This was corrected on main. Added complete post-run two-source changed-field diff guard and duplicate renewal-target protection without changing their approval/permission/ranking.
+- New release and the next scheduled actual renewal must be independently validated before declaring both recovered.
+
 ## 2026-09-29 — Travelpayouts active confirmed; Nishiki safely published
 - Operator screenshot confirms the Earthrightnow Travelpayouts project is active/green with 26 available programs.
 - Payout method is still not configured; ERN records this as payout-readiness work, not a reason to block verified affiliate links or editorial/product work.
