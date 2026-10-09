@@ -14,7 +14,7 @@ function partnerCurrent(p,now=Date.now()){
 }
 function sourceEligible(s){return !!s&&s.health==="HEALTHY"&&["LIVE_VIDEO","LIVE_IMAGE","EXTERNAL_LIVE"].includes(s.truth)}
 function offerFor(a,s,i,p=[],n=Date.now()){const id=s?.placeId||s?.id;if(!id||!sourceEligible(s))return null;const ps=new Set((p||[]).filter(x=>partnerCurrent(x,n)).map(x=>String(x.id)));return(a||[]).filter(o=>o?.placeId===id&&o.intent===i&&current(o,n)&&ps.has(String(o.partnerId||""))).sort((x,y)=>Date.parse(y.verifiedAt)-Date.parse(x.verifiedAt)||String(x.id).localeCompare(String(y.id)))[0]||null}
-const disclosure=o=>o?.sponsored?"Sponsored":o?.affiliate?"Affiliate link":"External travel link";
+const disclosure=o=>o.sponsored?"Sponsored":o.affiliate?"Affiliate link":"External travel link";
 function guideOffers(a,s,p=[],n=Date.now()){const seen=new Set;return["activities","culture","transport","stay","eat"].map(i=>offerFor(a,s,i,p,n)).filter(o=>o&&!seen.has(o.id)&&(seen.add(o.id),1)).slice(0,3)}
 function guideLink(o){const a=document.createElement("a");a.className="guide-result guide-result-link";a.href=safe(o.url);a.target="_blank";a.rel=o.affiliate||o.sponsored?"noopener noreferrer sponsored":"noopener noreferrer";a.textContent=o.title+" · "+o.provider+" · "+disclosure(o)+" →";return a}
 function localFor(rows,s,re){const id=s?.placeId||s?.id,n=Date.now();return(rows||[]).find(x=>{const t=Date.parse(x?.verifiedAt||"");return x?.status==="APPROVED"&&!x.paidPlacement&&!x.affiliate&&safe(x.url)&&Number.isFinite(t)&&t<=n+3e5&&n-t<=7776e6&&x.placeId===id&&re.test(String(x.type||"")+" "+(x.tags||[]).join(" "))})||null}
