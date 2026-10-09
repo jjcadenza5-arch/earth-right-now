@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-09 — Fail-closed Local Earth review expiry and neutral-planning gate
+- Audited 41 visitor-source research candidates and 18 embedding research records; historical failed-playback candidates remain blocked and were not promoted. This audit does **not** establish new rendered playback or live camera eligibility.
+- Tightened `ERNTravelPlanning.localFor` in the lazy travel-planning module: a local fallback now requires approved status, exact source place, valid HTTPS link, non-affiliate/unpaid flags, and a finite review timestamp within 90 days (with five-minute future-skew tolerance). A stale or unreviewed local business falls back to generic planning instead of appearing as currently ERN-reviewed.
+- Added execution-based regression coverage for fresh/approved listings and rejection of expired, malformed, paid, affiliate, unsafe-URL and pending listings. Commits `32f42191be9cee82ef6441a5e7c08aa9bd8dea24` and `eb40853630e2bf40dbee00b73139bddbd6e05725`.
+- No new local listings or affiliate offers were activated; inventory remains 21 reviewed local records and 232 recorded eligible affiliate placements, with actual display gated by eligibility. No core CSS, Atlas, media permission, source health, Watch Earth ranking or performance ceiling changed.
+- Verify actual GitHub release checks and deployed visitor reality before marking the new safeguard publicly certified.
+
+
 ## 2026-10-09 — Real execution check for affiliate/local planning transitions
 - Strengthened `tests/guide-planning-boundary.smoke.js` by executing the actual `src/travel-planning-client.js` in a sandboxed Node VM and exercising local → affiliate → generic fallback on one link object. Asserts mutually exclusive `data-local-place-id`, `data-offer-id`, `data-offer-kind`, link disclosure `rel` and generic accessibility label.
 - This supplements static source-marker assertions with behavior verification and guards against a regression of the previously repaired attribution-state bug.
