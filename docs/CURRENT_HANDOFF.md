@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-09 — Local Earth destination-depth batch: 17 → 21 reviewed entries
+- Added four **non-affiliate, unpaid** reviewed local-directory entries in `data/local-directory-supplemental.json`, bringing the directory to **10 core + 11 supplemental = 21 entries**. The new entries are Santa Claus Office, Santa Claus' Main Post Office (Santa Claus Village / Rovaniemi) and Soul Bar & Bistro, Bivacco (Auckland Viaduct Harbour).
+- Used the current first-party Santa Claus Village operator directory/activity and opening-hours pages, and the official Viaduct Harbour dining directory as evidence. The Auckland entries deliberately link to the **directory**, not an unverified merchant booking path. Do not imply booking availability or restaurant reservations.
+- All four records remain `APPROVED`, `paidPlacement:false`, `affiliate:false`, have an exact ERN `placeId`, evidence URL and review timestamp, and stay under the existing 90-day recheck horizon. Core `data/local-directory.json` is unchanged; supplemental loading remains asynchronous.
+- No changes to live-camera claims, `playbackVerifiedAt`, embedding rights, source health, commercial ranking, Watch Earth, Atlas, startup core, or public-OFF gates. Affiliate inventory still reports 232 eligible placements; local businesses are separate.
+- GitHub commits: `8b4f8b25475a06fec75d8ffb29bd446340fb1e72` added entries; `fb642153d8310c8d703fa20d9453e8ad6cb71174` corrected review-time metadata. Check Pages/Syntax/Operations before treating the expanded public directory as certified.
+
+
 ## 2026-10-09 — Evidence-first source and visitor-demand operating batch
 - Confirmed owner-reported green release after the production-reality verifier adjustment; no new rendered playback proof implied.
 - Examined source-research queue, traffic-growth and business-growth aggregate snapshots, local-directory supplemental registry and affiliate opportunity matrix on GitHub main. Existing 17 reviewed local businesses and 232 source-eligible public affiliate placements retained unchanged.
