@@ -8,7 +8,7 @@ assert.ok(app.includes('...(result.offers||[]).map(TP.guideLink)'),"Guide planni
 assert.ok(app.includes('offer=i=>current?TP.offerFor(state.travelOffers,s,i,state.affiliatePartners):null'),"reference-only viewer must gate every commercial offer behind current source truth");
 assert.ok(app.includes('TP.localFor(approvedLocalPlaces(),s,re)'),"Before You Go should support reviewed local-place fallback through the travel-planning module");
 assert.ok(app.includes('lp(/hotel|resort|chalet|guesthouse|hostel|stay|accommodation/)'),"Stay should prefer an approved exact-place local option before generic search");
-assert.ok(app.includes('ERN reviewed local place'),"local planning fallback should be disclosed as ERN reviewed, not affiliate");
+assert.ok(planning.includes('ERN reviewed local place'),"local planning fallback should be disclosed as ERN reviewed, not affiliate");
 assert.match(planning,/expires<=now/,"browser travel offer gate must enforce explicit expiry");
 assert.match(planning,/partnerCurrent/,"browser travel offer gate must require an active partner");
 assert.match(planning,/sourceEligible/,"browser travel offer gate must require a currently eligible ERN source");

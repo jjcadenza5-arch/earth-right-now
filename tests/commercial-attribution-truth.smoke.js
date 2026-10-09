@@ -13,6 +13,6 @@ assert(runtime.includes("currentTravelOffer(offer"));
 assert(runtime.includes("currentPartner(partner)"));
 assert(runtime.includes("sourceEligible(source)"));
 assert(runtime.includes("events.travelOption(offer)"));
-const app=fs.readFileSync("src/app-lite.js","utf8");
-assert(app.includes("data.offerId")||app.includes("dataset.offerId"));
+const planning=fs.readFileSync("src/travel-planning-client.js","utf8");
+assert(planning.includes("data.offerId")||planning.includes("dataset.offerId"));
 console.log("Stage P commercial attribution remains bounded, verified-offer-only and default-off");

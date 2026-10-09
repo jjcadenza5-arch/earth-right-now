@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-09 — #3033 modular test boundaries aligned
+- Syntax #1277 and Pages #3033 did not expose a parser defect. Both failures came from regression tests still assuming commercial/planning attribution rendering lived inside `app-lite.js`.
+- Updated `commercial-attribution-truth.smoke.js` and `guide-planning-boundary.smoke.js` to inspect `travel-planning-client.js`, which now owns `dataset.offerId` and the **ERN reviewed local place** disclosure.
+- Production runtime, planning behavior, performance repair, source data, Watch Earth and Atlas are unchanged.
+
+
 ## 2026-10-09 — #3031 final performance repair: planning renderer modularized
 - Pages #3031 failed only the performance preflight: `app-lite.js` was 100,730 bytes and lean core was 575,070 bytes.
 - Moved the full planning-link renderer out of `app-lite.js` into `travel-planning-client.js`, where offer/local/external planning presentation belongs.
