@@ -17,17 +17,12 @@ for(const id of pilotIds){
 const ruapehu=rows.find(x=>x.id==="nz-ruapehu-current-image");
 assert.match(ruapehu.attribution,/GeoNet.*NHC.*ESNZ.*LINZ.*NEMA.*MBIE/i);
 
-const nonPilotReviewReady=[
- "yellowstone-lake-current-image",
- "nz-taranaki-current-image",
- "nz-ngauruhoe-current-image",
- "nz-tongariro-current-image",
- "nz-whakaari-current-image"
-];
-for(const id of nonPilotReviewReady){
-  const s=rows.find(x=>x.id===id);
-  assert.ok(s,id);
-  assert.equal(s.permission,"LINK_ONLY");
-  assert.equal(s.playback,"EXTERNAL");
+// Other reviewed current-image sources may be approved independently.
+// The controlled renewal workflow must keep its two original pilots valid,
+// without downgrading separately approved providers.
+for(const source of rows.filter(x=>x.playback==="IMAGE_REFRESH")){
+  assert.equal(source.permission,"EMBED_ALLOWED",source.id);
+  assert.match(source.sourceUrl,/^https:\/\//,source.id);
+  assert.ok(Number(source.refreshMs)>=600000,source.id);
 }
-console.log("Two-source current-image pilot stays scoped, attributed and fail-closed elsewhere");
+console.log("Two protected pilot sources retain their contract; independently approved current-image sources remain valid");
