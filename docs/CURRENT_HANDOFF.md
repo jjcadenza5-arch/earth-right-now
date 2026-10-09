@@ -1,5 +1,14 @@
 # Current ERN handoff
 
+## 2026-10-09 — Pages #3037 post-deploy verifier repaired; owner reports all green
+- Pages #3037 (commit `54d367d25ed59ff1cb39825d2ca30ae1e308502c`) passed all functional, budget, release-build and deployment steps, and GitHub Pages reported a successful deployment; social preview returned HTTP 200 and passed. The workflow failed only at step 48, `Verify deployed visitor reality sync`.
+- Exact cause: `scripts/production-reality-check.mjs` required the obsolete literal `setTimeout(()=>loadSearchExtra(initialQ),0)`, while the current `src/app-lite.js` intentionally includes the asynchronous supplemental Local Earth fetch in that timer callback. Checking the whole runtime marker list found only this obsolete literal unmatched.
+- Repaired only that verifier assertion in commit `786a98a739155566c60b80c8dea9209f4a078171` to match the real supplemental loader. No application runtime, catalogs, budget, ranking, Atlas, source-health or public-OFF gates were changed.
+- Owner reports subsequent GitHub Actions all green (2026-10-09). This is owner-confirmed status; exact passing Pages run number and fresh public rendered-browser verification were not independently captured in this session. Do not claim new playback proof from this release.
+- Local Earth registry has 10 core + 7 supplemental reviewed, unpaid/non-affiliate entries. Revenue-readiness snapshot: 232 public revenue-active offer placements on 226 eligible places; commercial matrix carries 183 exact-link opportunities queued and 8 source-gated opportunities. These are separate from the 17 reviewed local businesses.
+- Continue operating batches only: genuine playable-source evidence, source recency and fail-closed holds, destination/local-business depth, high-fit affiliate usefulness, search-gap/analytics triage and stable releases. Never loosen the 575,000-byte lean-core ceiling or public-OFF gates.
+
+
 ## 2026-10-09 — #3036 lean-core repair without budget relaxation
 - Pages #3036 passed functional checks but failed the strict lean-core performance gate at **575,160 bytes**, only 160 bytes above the 575,000-byte ceiling.
 - Removed redundant nonessential tag metadata from the ten core Local Earth directory rows (retaining a minimal activity tag where type matching benefits from it). Names, URLs, place IDs, review provenance, addresses, approval state, unpaid/non-affiliate safeguards and visitor utility are unchanged.
