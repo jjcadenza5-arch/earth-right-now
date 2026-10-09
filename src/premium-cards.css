@@ -84,3 +84,15 @@ linear-gradient(180deg,#728ca3 0%,#4a687d 50%,#233c4c 100%)}
 .scenic-poster[data-night="true"]{filter:saturate(.9) brightness(.82) contrast(1.07)}
 .scenic-poster[data-night="true"] .scene-sun{background:radial-gradient(circle,rgba(247,248,224,.95) 0 13%,rgba(205,222,226,.28) 35%,transparent 72%)}
 .wander-visual[data-visual-kind="illustrative"] .wander-copy{background:linear-gradient(0deg,rgba(3,24,21,.91) 0,rgba(3,24,21,.24) 48%,rgba(3,24,21,0) 76%)}
+
+/* Container-level scenic safety net: guarantees visible fallback art even if nested layers are suppressed. */
+.wander-visual[data-visual-kind="illustrative"][data-scene="water"],.result-visual[data-visual-kind="illustrative"][data-scene="water"]{background:linear-gradient(180deg,#8ed3e4 0 43%,#2d98b5 44%,#0d6178 72%,#073b4b 100%)!important}
+.wander-visual[data-visual-kind="illustrative"][data-scene="island"],.result-visual[data-visual-kind="illustrative"][data-scene="island"]{background:linear-gradient(180deg,#8edbea 0 46%,#35a5bf 47%,#08738a 100%)!important}
+.wander-visual[data-visual-kind="illustrative"][data-scene="mountain"],.result-visual[data-visual-kind="illustrative"][data-scene="mountain"]{background:linear-gradient(180deg,#a8c8cf,#789b9d 49%,#3d5f59)!important}
+.wander-visual[data-visual-kind="illustrative"][data-scene="snow"],.result-visual[data-visual-kind="illustrative"][data-scene="snow"]{background:linear-gradient(180deg,#c9e0e9,#9cbecb 50%,#627f89)!important}
+.wander-visual[data-visual-kind="illustrative"][data-scene="volcano"],.result-visual[data-visual-kind="illustrative"][data-scene="volcano"]{background:linear-gradient(180deg,#aab7bc,#77878b 45%,#504744)!important}
+.wander-visual[data-visual-kind="illustrative"][data-scene="city"],.result-visual[data-visual-kind="illustrative"][data-scene="city"]{background:linear-gradient(180deg,#7899ad,#486c81 48%,#193744)!important}
+.wander-visual[data-visual-kind="illustrative"][data-scene="wildlife"],.result-visual[data-visual-kind="illustrative"][data-scene="wildlife"]{background:linear-gradient(180deg,#b9c28e,#7f9363 50%,#3d593d)!important}
+.wander-visual[data-visual-kind="illustrative"][data-scene="farm"],.result-visual[data-visual-kind="illustrative"][data-scene="farm"]{background:linear-gradient(180deg,#bfd1a5,#91ad76 49%,#55724c)!important}
+.wander-visual[data-visual-kind="illustrative"][data-scene="science"],.result-visual[data-visual-kind="illustrative"][data-scene="science"]{background:linear-gradient(180deg,#728ca3,#4a687d 50%,#233c4c)!important}
+.wander-visual[data-visual-kind="illustrative"][data-scene="earth"],.result-visual[data-visual-kind="illustrative"][data-scene="earth"]{background:linear-gradient(180deg,#8fc8c2,#6ba99d 42%,#315f52)!important}

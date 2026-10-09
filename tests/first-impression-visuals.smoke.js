@@ -3,8 +3,8 @@ import {readFileSync} from "node:fs";
 const app=readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
 const css=readFileSync(new URL("../src/styles-lite.css",import.meta.url),"utf8")+readFileSync(new URL("../src/premium-cards.css",import.meta.url),"utf8");
 const build=readFileSync(new URL("../scripts/build-release-snapshot.mjs",import.meta.url),"utf8");
-assert.match(app,/function wanderCard\(s\)[\s\S]*const img=watchPosterUrl\(s\)[\s\S]*installVisualFallback\(el,v,s\)/,"wander cards should use the best safe poster then fall back");
-assert.match(app,/else v\.append\(scenicPoster\(s\)\)/,"wander cards without usable posters need truthful illustrative fallback");
+assert.match(app,/function wanderCard\(s\)[\s\S]*const img=watchPosterUrl\(s\)[\s\S]*installVisualFallback\(el,v,s\)[\s\S]*v\.dataset\.scene=art\.dataset\.scene/,"wander cards should use the best safe poster then assign a visible scenic fallback family");
+assert.match(app,/v\.dataset\.scene=art\.dataset\.scene\|\|"earth"/,"visual containers should inherit the fallback scene family");
 assert.match(css,/grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/,"mobile feeling/place cards should stay compact in two columns");
 assert.match(css,/\.mobile-dock\{[^}]*display:flex!important/s,"mobile dock should use flex layout on small screens");
 assert.match(css,/flex-wrap:nowrap!important/,"mobile dock should stay on one compact four-item row");
@@ -15,6 +15,7 @@ assert.match(css,/content:"VIDEO POSTER"/,"derived video posters must be labeled
 assert.match(css,/scenic-poster\[data-scene="island"\]/,"fallback art should have a distinct island scene");
 assert.match(css,/scenic-poster\[data-scene="city"\][\s\S]*radial-gradient\(circle,#e8c37b/,"city fallback art should include visible light detail");
 assert.match(css,/scenic-poster\[data-scene="water"\][\s\S]*#8ed3e4/,"water fallback art should be visibly brighter than a flat panel");
+assert.match(css,/wander-visual\[data-visual-kind="illustrative"\]\[data-scene="water"\][\s\S]*!important/,"container-level fallback must stay visible even if nested art is suppressed");
 assert.match(build,/premium-cards\.css/,"static release must include premium card stylesheet");
 assert.match(css,/ern-fuji-mockup-hero\.jpg/,"approved photographic Mount Fuji hero image must remain active");
 assert.doesNotMatch(css,/commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\/FujiSunriseKawaguchiko2025WP/,"hero must not depend on a remote image URL");

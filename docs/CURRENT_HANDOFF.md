@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-09 — Visible scenic fallback safety net + Watch Earth pool truth
+- Owner screenshots after #3025 showed some More Places / Local Earth cards still reading as flat dark panels even though the nested scenic renderer was present.
+- Card visual containers now inherit the exact scenic family (`water`, `island`, `mountain`, `snow`, `volcano`, `city`, `wildlife`, `farm`, `science`, `earth`) and receive a matching bright background directly. This is a safety net beneath the richer nested ERN illustration, so the card cannot collapse back to a flat generic panel.
+- Image-error fallback now also stamps the scene family before drawing the ERN illustration.
+- Current Watch Earth truth audit at 2026-10-09 07:49Z: only **7 qualified embedded streams across 3 countries** (Spain, Japan, Taiwan). Therefore a five-stream set must repeat two countries today; selector still uses all three countries before any repeat. Do not fabricate wider diversity by admitting stale or unverified playback.
+- All fallback visuals remain explicitly ILLUSTRATIVE; Atlas unchanged.
+
+
 ## 2026-10-09 — #3024 stale full-pool regression corrected
 - Pages #3024 reached the 119-test release suite; **118/119 passed**.
 - The sole failure was `tests/premium-watch-atlas-drilldown.smoke.js` still expecting the prior `top 20` Watch Earth pool after the approved full-qualified-pool change.
