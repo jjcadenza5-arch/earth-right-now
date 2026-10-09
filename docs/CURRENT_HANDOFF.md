@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-09 — #3024 stale full-pool regression corrected
+- Pages #3024 reached the 119-test release suite; **118/119 passed**.
+- The sole failure was `tests/premium-watch-atlas-drilldown.smoke.js` still expecting the prior `top 20` Watch Earth pool after the approved full-qualified-pool change.
+- Updated that single stale expectation only. No visitor-facing code, scenic art, source data, Atlas behavior or truth logic changed.
+
+
 ## 2026-10-09 — ERN-drawn scenic fallback v2 + full-pool Watch Earth diversity
 - Implemented the owner's "draw ourselves" idea as **programmatic ERN editorial art** for cards that lack a usable source image. Water, island, mountain, snow, volcano, city, wildlife, farm, science and general Earth scenes now have brighter place-specific skies, horizons, silhouettes and subtle detail instead of reading as flat dark-green panels.
 - These visuals remain explicitly labeled **ILLUSTRATIVE** and are never represented as the live/current feed.

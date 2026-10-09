@@ -4,7 +4,7 @@ const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
 const map=fs.readFileSync(new URL("../src/atlas-marker-groups.js",import.meta.url),"utf8");
 const html=fs.readFileSync(new URL("../index.html",import.meta.url),"utf8");
 const selected=app.slice(app.indexOf("function buildWatch("),app.indexOf("function generatedBackground",app.indexOf("function buildWatch(")));
-assert.match(selected,/const elite=sorted.slice\(0,20\)/,"Rotation uses a broader qualified premium pool");
+assert.match(selected,/const elite=sorted;/,"Rotation searches the whole qualified premium pool");
 assert.match(selected,/const offset=Math.floor\(Date.now\(\)\/3600000\)\+\(state.setOffset\|\|0\)/,"Rotation changes hourly and on request");
 assert.match(selected,/out.length>=limit/,"At most five live-video sources");
 assert.match(app,/&&premiumVisual\(s\)/,"Watch Earth preserves the quality/interest gate");
