@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-09 — #3022 stale Watch Earth regression corrected
+- Pages #3022 reached the 119-test release suite; **118/119 passed**.
+- The sole failure was `tests/watch-earth-premium-curation.smoke.js` still expecting the prior `top 10` Watch Earth rotation pool after the approved expansion to `top 20`.
+- Updated that one stale expectation only. No visitor-facing code, source data, card styling, Atlas behavior or truth logic changed in this correction.
+
+
 ## 2026-10-09 — Visual QA repair from owner screenshots
 - Owner screenshots after Pages #3021 exposed that `src/premium-cards.css` was referenced by `index.html` but omitted from the static release artifact. This caused **More places** and **Local Earth** card markup to render without its premium layout.
 - Static release builder now copies and cache-busts `premium-cards.css`; release smoke explicitly guards this.
