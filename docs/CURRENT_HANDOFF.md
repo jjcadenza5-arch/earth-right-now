@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-09 — #3036 lean-core repair without budget relaxation
+- Pages #3036 passed functional checks but failed the strict lean-core performance gate at **575,160 bytes**, only 160 bytes above the 575,000-byte ceiling.
+- Removed redundant nonessential tag metadata from the ten core Local Earth directory rows (retaining a minimal activity tag where type matching benefits from it). Names, URLs, place IDs, review provenance, addresses, approval state, unpaid/non-affiliate safeguards and visitor utility are unchanged.
+- The seven newer reviewed local entries remain in `data/local-directory-supplemental.json`, outside the lean-core budget.
+- No performance limits were relaxed.
+
+
 ## 2026-10-09 — Local directory split restores lean-core budget
 - Pages #3035 failed only the strict lean-core performance gate after the reviewed local directory grew from 10 to 17 entries.
 - Preserved the original 10-entry pilot in `data/local-directory.json` and moved the 7 new operating entries into `data/local-directory-supplemental.json`.
