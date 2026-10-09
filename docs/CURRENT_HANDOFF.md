@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-09 — Pages #3044 strict startup-JS budget repair
+- Inspected exact Pages #3044 run `37951598577`, failed release smoke tests `phase10-production-audit.smoke.js` and `phase10-launch-review.smoke.js`. Both exposed the **same actual performance blocker**: homepage startup JavaScript **160,191 bytes** exceeded the hard **160,000-byte** limit by 191 bytes.
+- Tightened new reviewed-local 90-day eligibility remained fully enforced. Compacted that helper (`42da0c0`) and then non-behavior-changing planning helper internals (`7216a92`, `f60bfcf`) to remove about 192 bytes from `src/travel-planning-client.js`, keeping null-safe partner and offer handling. No budgets or release tests disabled, and no catalog/playback/Atlas/affiliate activation changes.
+- Startup total is expected to be under the fixed cap, but this estimate is **not** a certified release result; confirm the latest Pages, Syntax and Operations runs and fix only any exact remaining blocker. Avoid further startup additions without headroom.
+
+
 ## 2026-10-09 — Fail-closed Local Earth review expiry and neutral-planning gate
 - Audited 41 visitor-source research candidates and 18 embedding research records; historical failed-playback candidates remain blocked and were not promoted. This audit does **not** establish new rendered playback or live camera eligibility.
 - Tightened `ERNTravelPlanning.localFor` in the lazy travel-planning module: a local fallback now requires approved status, exact source place, valid HTTPS link, non-affiliate/unpaid flags, and a finite review timestamp within 90 days (with five-minute future-skew tolerance). A stale or unreviewed local business falls back to generic planning instead of appearing as currently ERN-reviewed.
