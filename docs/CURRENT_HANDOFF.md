@@ -1,5 +1,10 @@
 # Current ERN handoff
 
+## 2026-10-09 — #3016 preflight correction
+- Pages #3016 stopped in JavaScript syntax preflight because two smoke-test edits contained literal `\\n` sequences from the automated patch. Product runtime files were not deployed.
+- Corrected only the two affected tests to use real line breaks; no card/playback behavior rollback.
+
+
 ## 2026-10-09 — Premium cards everywhere + Takayama visitor-failure protection
 - Owner approved using the polished **“Where do you want Earth to take you?”** image-led card language across ERN where practical. Search/saved/place cards are now image-led instead of text-first; **More places worth a look** becomes full-bleed editorial-style cards with the same calm premium hierarchy.
 - Card media now uses the best honest visual available in this order: explicit source thumbnail, safe derivable YouTube video poster, then ERN's own programmatic scenic illustration. Video posters and illustrations remain explicitly labeled; neither is presented as the live feed.

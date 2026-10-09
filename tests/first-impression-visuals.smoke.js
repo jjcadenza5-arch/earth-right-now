@@ -7,7 +7,10 @@ assert.match(app,/else v\.append\(scenicPoster\(s\)\)/,"wander cards without usa
 assert.match(css,/grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/,"mobile feeling/place cards should stay compact in two columns");
 assert.match(css,/\.mobile-dock\{[^}]*display:flex!important/s,"mobile dock should use flex layout on small screens");
 assert.match(css,/flex-wrap:nowrap!important/,"mobile dock should stay on one compact four-item row");
-assert.match(css,/content:"ILLUSTRATIVE"/,"illustrative card artwork must be labeled");\nassert.match(css,/\.wander-card\{position:relative;display:block;min-height:210px/,"More places cards should use premium image-led composition");\nassert.match(css,/\.result-card>\.result-visual\{width:100%;height:138px/,"Search and saved cards should use image-led composition");\nassert.match(css,/content:"VIDEO POSTER"/,"derived video posters must be labeled as posters");
+assert.match(css,/content:"ILLUSTRATIVE"/,"illustrative card artwork must be labeled");
+assert.match(css,/\.wander-card\{position:relative;display:block;min-height:210px/,"More places cards should use premium image-led composition");
+assert.match(css,/\.result-card>\.result-visual\{width:100%;height:138px/,"Search and saved cards should use image-led composition");
+assert.match(css,/content:"VIDEO POSTER"/,"derived video posters must be labeled as posters");
 assert.match(css,/ern-fuji-mockup-hero\.jpg/,"approved photographic Mount Fuji hero image must remain active");
 assert.doesNotMatch(css,/commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\/FujiSunriseKawaguchiko2025WP/,"hero must not depend on a remote image URL");
 assert.match(app,/data\.scene="snow"|dataset\.scene="snow"/,"fallback card system should retain snow visual family");
