@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-09 — Real execution check for affiliate/local planning transitions
+- Strengthened `tests/guide-planning-boundary.smoke.js` by executing the actual `src/travel-planning-client.js` in a sandboxed Node VM and exercising local → affiliate → generic fallback on one link object. Asserts mutually exclusive `data-local-place-id`, `data-offer-id`, `data-offer-kind`, link disclosure `rel` and generic accessibility label.
+- This supplements static source-marker assertions with behavior verification and guards against a regression of the previously repaired attribution-state bug.
+- Test-only GitHub commit: `2224d5e6593d2aa3d14fd07e3cefff643a9ec8c3`. No visitor-facing code, catalogs, ranking, affiliate counts, source records, rendered playback claims, Atlas or performance gates altered.
+- Latest Actions outcomes and fresh browser-release validation are not yet independently confirmed. Keep the 21 local-reviewed places and 232 recorded eligible affiliate placements distinct.
+
+
 ## 2026-10-09 — Planning-link transition regression coverage
 - Added static regression assertions in `tests/guide-planning-boundary.smoke.js` verifying that all three planning states clear stale attribution metadata when moving between verified affiliate, approved local place and generic fallback. Commit `b3baa02c84dd67981f1e57d4cc57070c1b410041`.
 - No new cameras, verified playback events, affiliate activations, customer bookings or local listings were introduced. No performance ceilings or feature gates changed.
