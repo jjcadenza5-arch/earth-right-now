@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-09 — Less-is-more reconciliation; Taitung diagnosed, not falsely renewed
+- Reconciled the owner direction into one short Watch Earth rule in `docs/WATCH_EARTH_CURATION.md`: **up to five**, hard truth/permission/current-playback gates, beauty-first editorial selection, geographic/provider variety where possible, fewer than five rather than weak filler, all other truthful sources remain searchable. This supersedes accumulated daylight/night methodology as product guidance without weakening source truth.
+- **Taitung Jinzun root cause:** the registry is still `LIVE_VIDEO / EMBED / EMBED_ALLOWED / HEALTHY` and points to YouTube ID `ZdqHgQwvZOw`, but `playbackVerifiedAt=2026-10-02T00:45:00Z` exceeded ERN's 168-hour playback-proof horizon. `currentTruthClaim()` therefore fails and the viewer correctly falls back to the official source instead of presenting stale proof as current.
+- Fresh public authority evidence on 2026-10-09: the East Coast National Scenic Area's current Jinzun attraction page still describes a **24-hour live image** and links the same YouTube ID. This supports source continuity, but it is **not** a rendered playback check and does not justify changing `playbackVerifiedAt`. No Taitung data/source mutation or Watch Earth promotion was made.
+- Living Atlas remains the owner-approved simple numbered-marker map/list from production code `21d7f8908f024f6c8b177ce4c816fa486b1e91be`; no zoom system was reintroduced. This is documentation-only and should not trigger a product release.
+
+
 ## 2026-10-09 — Owner reiteration: fifth beautiful camera / world breadth
 - Current production **remains** certified Pages #3013 code `21d7f8908f024f6c8b177ce4c816fa486b1e91be`; latest docs-only head `31653b57c235d15356a88b15cc8249d43069212d`. Owner explicitly prefers an excellent five-camera rotating global showcase, with NYC illuminated skylines and Taiwan where genuinely eligible, plus the simple static numbered Atlas list already restored. **Do not regress Atlas to zoom**, do not pad Watch Earth to five with weak/unverified footage.
 - Reconciled `data/sources.json` catalog of 15 LIVE_VIDEO records; not 20 verified playable videos. NYC Jersey City EarthCam remains LINK_ONLY/EXTERNAL_LIVE; Heping/Verbier holds and expired proofs are unchanged. Official EarthCam NYC Times Square/Midtown candidates and aged Taitung/Auckland/Rovaniemi entries moved to owner-private evidence-first research queue: `docs/WATCH_EARTH_FIVE_CAMERA_EXPANSION_2026-10-09.md`.

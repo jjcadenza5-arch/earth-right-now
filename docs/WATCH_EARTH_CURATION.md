@@ -1,14 +1,18 @@
-# Watch Earth curation — five live video streams only
+# Watch Earth curation
 
-**Approved 2026-10-09:** The public Watch Earth panel selects at most **five true moving camera streams**. Each must be `LIVE_VIDEO`, `EMBED_ALLOWED`, `EMBED`, healthy, genuinely current, source-specific, playback-proof-current, inside-ERN playable, and not editorially held. `LIVE_IMAGE`, `IMAGE_REFRESH`, `EXTERNAL_LIVE`, `LINK_ONLY`, previews, unverified feeds, provider-only handoffs and illustrative static images are **never** substitute Watch Earth slots. These remain searchable or available in the wider destination/Atlas catalog under their original truthful labels.
+**Owner direction — 2026-10-09:** Less is more. Watch Earth shows **up to five** outstanding moving livestreams. Five is a ceiling, never a quota.
 
-Editorial ranking among eligible streams may consider beauty, atmosphere, Earth's changing light, geographic/provider diversity and owner-approved personalization. Prefer no more than two cameras per country before relaxing a geographic cap, so an available qualified third country does not disappear behind several same-country feeds. Commercial commission/ranking is never an input. The normal set shows five different places when five qualify; stricter visitor filters may show fewer. If fewer than five genuinely qualify, show the shortfall instead of filling with stills or stale streams. A missing `thumbnailUrl` is not an exclusion reason when a camera itself is genuinely eligible; its fallback poster must remain explicitly illustrative until the real video is opened. A valid preview poster is never playback proof.
+A Watch Earth source must be:
+- truthful `LIVE_VIDEO`;
+- `EMBED` + `EMBED_ALLOWED`;
+- healthy/current enough for ERN to stand behind the claim;
+- backed by current playback evidence;
+- not held for a known bad scene or playback failure.
 
-Playback happens in the clicked viewer, not by forcing a scroll to the Hero. Keep the shared viewer, no forced audible autoplay, robust error handling, local favorites, and all protected public-OFF gates.
+Among sources that pass those gates, choose the most beautiful current scenes and prefer geographic/provider variety. Do not feature dark, gray, blank, broken, stale or visually weak views merely to fill a slot. If only four are good, show four. Commercial relationships never affect selection.
 
-Operations and Pages audits use a five-live-stream ceiling, check current playback/permission evidence, and distinguish source health from actual human playback proof. Preserve the broad Search/Explore/Destinations inventory, Living Atlas, source-owner attribution, permissions, accessible navigation, SEO and manual-only affiliate links. Only update evidence from real provider checks.
+All other truthful sources stay searchable through Search, Explore, Destinations and Living Atlas under their actual labels. Watch Earth curation must never delete or downgrade the wider catalog.
 
-**Editorial instruction:** Keep only what is beautiful, trustworthy, useful, and necessary. Less is more.
+Do not turn beauty curation into a large methodology. A small number of explicit editorial holds plus source/playback evidence is enough. Day/night context can inform selection, but it is not a substitute for seeing whether a scene is actually worth featuring.
 
-## Beauty-first rule — 9 Oct 2026
-Show at most five of the very best actual LIVE_VIDEO feeds, never five by obligation. The live-source proof gate remains essential but is not proof that a *scene* is beautiful. Apply quality≥84, moment≥80, source-local daytime 08:00–16:59, or explicit recently human-approved compelling illuminated night footage (≤72h, with written evidence). Treat time as a conservative proxy, not as proof of brightness. Known black, blank, fog-gray, unplayable or stale scenes receive editorial holds for Watch Earth; clearing a hold requires fresh affirmative visual/playback evidence. Commercial rewards never rank Earth views. Rotate only within a bounded best-quality tier and leave other truthful views in Search, Explore, Destinations and Atlas. Never loosen the threshold to fill an empty slot.
+Playback happens in the existing ERN viewer. Keep the shared viewer, accessibility, performance limits, SEO, affiliate transparency, and all protected public-OFF feature gates unchanged.
