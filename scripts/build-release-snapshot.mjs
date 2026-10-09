@@ -43,6 +43,7 @@ await cp(new URL("../data/sources.json",import.meta.url),new URL("data/sources.j
 await cp(new URL("../data/search-supplemental.json",import.meta.url),new URL("data/search-supplemental.json",dist));
 await cp(new URL("../data/place-search-aliases.json",import.meta.url),new URL("data/place-search-aliases.json",dist));
 await cp(new URL("../data/local-directory.json",import.meta.url),new URL("data/local-directory.json",dist));
+await cp(new URL("../data/local-directory-supplemental.json",import.meta.url),new URL("data/local-directory-supplemental.json",dist));
 await cp(new URL("../data/travel-offers.json",import.meta.url),new URL("data/travel-offers.json",dist));
 await cp(new URL("../data/viator-api-deployment.json",import.meta.url),new URL("data/viator-api-deployment.json",dist));
 await cp(new URL("../data/viator-destination-map.json",import.meta.url),new URL("data/viator-destination-map.json",dist));

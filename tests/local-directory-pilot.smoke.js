@@ -1,5 +1,5 @@
 import fs from "node:fs";import assert from "node:assert/strict";import {localDirectoryStatus} from "../src/local-directory-status.js";
-const rows=JSON.parse(fs.readFileSync("data/local-directory.json","utf8"));
+const rows=[...JSON.parse(fs.readFileSync("data/local-directory.json","utf8")),...JSON.parse(fs.readFileSync("data/local-directory-supplemental.json","utf8"))];
 const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
 const known=[...new Set(sources.map(s=>String(s.placeId||s.id||"")).filter(Boolean))];
 const r=localDirectoryStatus(rows,{knownPlaceIds:known,targetApproved:10,now:new Date("2026-09-25T15:30:00Z")});

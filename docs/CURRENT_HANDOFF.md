@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-09 — Local directory split restores lean-core budget
+- Pages #3035 failed only the strict lean-core performance gate after the reviewed local directory grew from 10 to 17 entries.
+- Preserved the original 10-entry pilot in `data/local-directory.json` and moved the 7 new operating entries into `data/local-directory-supplemental.json`.
+- The supplemental directory loads asynchronously after startup and merges into Local Earth / planning / saved-place utility without delaying the homepage core.
+- All 17 reviewed entries remain available to visitors. No performance limit was relaxed.
+
+
 ## 2026-10-09 — Local Earth operating expansion to 17 reviewed entries
 - Expanded the reviewed, unpaid/non-affiliate local directory from **10 to 17** entries around destinations already useful in ERN: **Verbier, Hua Hin, Yellowstone / Old Faithful, and Caldera de Taburiente**.
 - Added W Verbier, Verbier 4Vallées, Centara Grand Hua Hin, COAST Beach Club & Bistro, Yellowstone National Park Lodges, Old Faithful Snow Lodge, and La Palma Free Tours from current first-party/official destination evidence.
