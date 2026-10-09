@@ -1,5 +1,5 @@
 (()=>{"use strict";
-const safe=v=>{try{const u=new URL(String(v||"").trim());return u.protocol==="https:"&&!u.username&&!u.password&&u.hostname?u.toString():""}catch{return""}};
+const safe=v=>{try{const u=new URL(String(v||"").trim());return u.protocol==="https:"&&!u.username&&!u.password&&u.hostname?u.href:""}catch{return""}};
 function current(o,now=Date.now()){
  if(!o||o.verified!==true||!o.id||!o.title||!o.provider||!o.placeId||!o.intent||!safe(o.url))return false;
  const t=Date.parse(o.verifiedAt||"");if(!Number.isFinite(t)||t>now+300000)return false;
