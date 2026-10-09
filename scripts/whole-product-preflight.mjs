@@ -2,6 +2,9 @@ import fs from "node:fs";
 const read=p=>fs.readFileSync(p,"utf8");
 const index=read("index.html"),app=read("src/app-lite.js"),css=read("src/styles-lite.css"),places=read("for-places.html"),moments=read("now-moments.html"),placesJs=read("src/for-places-page.js"),momentsJs=read("src/now-moments-page.js"),strategy=read("docs/CRISPY_PORK_SKIN_STRATEGY.md"),guide=read("docs/ERN_GUIDE_VISION.md"),destinationBuilder=read("scripts/build-destination-pages.mjs"),sources=JSON.parse(read("data/sources.json")),localDirectory=JSON.parse(read("data/local-directory.json"));
 const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)},requireExists=p=>fs.existsSync(p);
+const atlasDeferred="src/atlas-marker-groups.js",atlasAssetsReady=requireExists(atlasDeferred)&&app.includes('import("./atlas-marker-groups.js")')&&read("scripts/build-release-snapshot.mjs").includes('new URL("../src/atlas-marker-groups.js"');
+const atlasStyles=atlasAssetsReady?read(atlasDeferred):"";
+const atlasStylePresent=selector=>css.includes(selector)||(atlasAssetsReady&&atlasStyles.includes(selector));
 if(!app.includes("const dc=()=>state.sources.concat(state.sx),ds=s=>")||!app.includes("de=s=>ds(s)&&currentTruthClaim(s)"))fail.push("current discovery surfaces may bypass availability truth");
 
 for(const id of ["watch","search","map","localEarth","participate","saved","guideLauncher","guidePanel"])must(index.includes(`id="${id}"`),`whole-product surface missing: ${id}`);
@@ -41,10 +44,10 @@ must(app.includes("mappableLocal")&&app.includes("not pinned until exact coordin
 must(app.includes('mount.dataset.visualKind="reference"')&&app.includes('Source recheck due')&&app.includes('Live view unavailable')&&app.includes('Open source'),"Atlas recheck media must fail closed to an actionable truthful reference handoff");
 must(app.includes('Live stream available at the source')&&app.includes('Open live source'),"Verified external live streams must use positive intentional handoff wording");
 must(app.includes('b.querySelector("small").textContent=publicTruth(alt)'),"Viewer alternates must use currentness-aware truth labels");
-must(index.includes('id="atlasBeyond"')&&app.includes("renderAtlasBeyond(")&&css.includes(".atlas-beyond"),"Living Atlas lost honest unmapped-place discovery");
+must(index.includes('id="atlasBeyond"')&&app.includes("renderAtlasBeyond(")&&atlasStylePresent(".atlas-beyond"),"Living Atlas lost honest unmapped-place discovery");
 must(app.includes('note=$("#atlasBeyondNote"),cat=dc()')&&app.includes("unmapped=cat.filter(s=>de(s)"),"Living Atlas beyond-pins layer is not reconciled with unified public discovery");
 must(app.includes('DYNAMIC_UNPINNED'),"Living Atlas must distinguish dynamic Earth views from missing-coordinate places");
-must(index.includes("atlas-legend")&&app.includes("coordinate provenance")&&css.includes(".atlas-legend"),"Living Atlas lost coordinate-honesty cues");
+must(index.includes("atlas-legend")&&app.includes("coordinate provenance")&&atlasStylePresent(".atlas-legend"),"Living Atlas lost coordinate-honesty cues");
 must(app.includes("renderWatch();renderWander();renderMap()")&&app.includes("categoryMatch(s,state.category)"),"Living Atlas no longer follows the visitor category context");
 must(css.includes(".guide-panel"),"ERN Guide visual doorway missing");
 must(index.includes('src/guide-ai-client.js')&&requireExists("src/guide-ai-client.js")&&requireExists("src/guide-ai-routing.js"),"public deterministic-first Guide AI bridge missing");

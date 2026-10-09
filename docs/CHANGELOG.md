@@ -1,3 +1,4 @@
+- Resolved the obsolete whole-product CSS-location assertion: the guard now checks the same truthful Atlas beyond-pins experience in its deployed, dynamically imported stylesheet module, including verified release packaging and runtime import. Coordinate-honesty cues and all source actions remain required. Homepage performance limits remain unchanged.
 - Performance fix: on-demand `src/atlas-marker-groups.js` now owns the map's group logic and Atlas-only styling, shipped in the immutable artifact. Base pins remain independently clickable if optional code fails. This preserves the existing strict 575 KB homepage core and 160 KB startup JS budgets without increasing either budget.
 
 ## 2026-10-09 — Screenshot-driven first-impression work (awaiting release checks)

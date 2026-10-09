@@ -5,6 +5,7 @@ const css=readFileSync(new URL("../src/styles-lite.css",import.meta.url),"utf8")
 const start=app.indexOf("function renderMap(){"),end=app.indexOf("function renderMapStable()",start);
 const map=app.slice(start,end);
 const lazy=readFileSync(new URL("../src/atlas-marker-groups.js",import.meta.url),"utf8");
+const snapshot=readFileSync(new URL("../scripts/build-release-snapshot.mjs",import.meta.url),"utf8");
 assert.ok(start>0&&end>start);
 assert.match(map,/const markers=\[\]/,"Map must retain all source markers before visual grouping");
 assert.match(lazy,/for\(const marker of markers\)/,"Map must group existing mapped entries, not silently delete them");
@@ -14,6 +15,9 @@ assert.match(lazy,/aria-haspopup/,"Grouped markers must disclose their interacti
 assert.match(lazy,/Escape/,"Map groups must be dismissible by keyboard");
 assert.match(lazy,/\.map-pin\.cluster\{/,"Cluster count styling must be present");
 assert.match(lazy,/\.map-cluster-panel\{/,"Grouped places need visible, scrollable drawer");
+assert.match(lazy,/\.atlas-beyond\{/,"Unmapped-place discovery styling must accompany the lazily loaded Atlas");
+assert.match(lazy,/\.atlas-legend\{/,"Coordinate-honesty styling must accompany Atlas");
+assert.ok(snapshot.includes('new URL("../src/atlas-marker-groups.js"'),"Lazy Atlas asset must be packaged with each immutable deployment");
 const preview=app.slice(app.indexOf("function watchPosterUrl("),app.indexOf("function createMediaFrame(",app.indexOf("function watchPosterUrl(")));
 assert.match(preview,/s\?\.truth!=="LIVE_VIDEO"\|\|s\?\.playback!=="EMBED"\|\|s\?\.permission!=="EMBED_ALLOWED"/);
 assert.match(preview,/https:\/\/i\.ytimg\.com\/vi\//);
