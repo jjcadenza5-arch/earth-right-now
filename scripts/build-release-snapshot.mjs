@@ -13,6 +13,7 @@ const ERN_BUILD_CACHE_BUST=String(process.env.GITHUB_SHA||process.env.ERN_COMMIT
   let html=await readFile(indexPath,"utf8");
   html=html
     .replace(/(\.\/src\/styles-lite\.css)(?:\?v=[^"']*)?/g,`$1?v=${ERN_BUILD_CACHE_BUST}`)
+    .replace(/(\.\/src\/premium-cards\.css)(?:\?v=[^"']*)?/g,`$1?v=${ERN_BUILD_CACHE_BUST}`)
     .replace(/(\.\/src\/app-lite\.js)(?:\?v=[^"']*)?/g,`$1?v=${ERN_BUILD_CACHE_BUST}`);
   await writeFile(indexPath,html);
 }
@@ -28,6 +29,7 @@ await cp(new URL("../src/travel-planning-client.js",import.meta.url),new URL("sr
 await cp(new URL("../src/app-lite.js",import.meta.url),new URL("src/app-lite.js",dist));
 await cp(new URL("../src/atlas-marker-groups.js",import.meta.url),new URL("src/atlas-marker-groups.js",dist));
 await cp(new URL("../src/styles-lite.css",import.meta.url),new URL("src/styles-lite.css",dist));
+await cp(new URL("../src/premium-cards.css",import.meta.url),new URL("src/premium-cards.css",dist));
 await cp(new URL("../src/participation-public-config.js",import.meta.url),new URL("src/participation-public-config.js",dist));
 await cp(new URL("../src/earth-signal-client.js",import.meta.url),new URL("src/earth-signal-client.js",dist));
 await cp(new URL("../src/earth-signals.js",import.meta.url),new URL("src/earth-signals.js",dist));

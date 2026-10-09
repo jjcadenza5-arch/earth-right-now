@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
 const app=readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
 const css=readFileSync(new URL("../src/styles-lite.css",import.meta.url),"utf8")+readFileSync(new URL("../src/premium-cards.css",import.meta.url),"utf8");
+const build=readFileSync(new URL("../scripts/build-release-snapshot.mjs",import.meta.url),"utf8");
 assert.match(app,/function wanderCard\(s\)[\s\S]*const img=watchPosterUrl\(s\)[\s\S]*installVisualFallback\(el,v,s\)/,"wander cards should use the best safe poster then fall back");
 assert.match(app,/else v\.append\(scenicPoster\(s\)\)/,"wander cards without usable posters need truthful illustrative fallback");
 assert.match(css,/grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/,"mobile feeling/place cards should stay compact in two columns");
@@ -9,8 +10,9 @@ assert.match(css,/\.mobile-dock\{[^}]*display:flex!important/s,"mobile dock shou
 assert.match(css,/flex-wrap:nowrap!important/,"mobile dock should stay on one compact four-item row");
 assert.match(css,/content:"ILLUSTRATIVE"/,"illustrative card artwork must be labeled");
 assert.match(css,/\.wander-card\{position:relative;display:block;min-height:210px/,"More places cards should use premium image-led composition");
-assert.match(css,/\.result-card>\.result-visual\{width:100%;height:138px/,"Search and saved cards should use image-led composition");
+assert.match(css,/\.my-earth \.result-card>\.result-visual,.search-section \.result-card>\.result-visual\{width:100%;height:150px/,"Search and saved cards should use editorial image-led composition");
 assert.match(css,/content:"VIDEO POSTER"/,"derived video posters must be labeled as posters");
+assert.match(build,/premium-cards\.css/,"static release must include premium card stylesheet");
 assert.match(css,/ern-fuji-mockup-hero\.jpg/,"approved photographic Mount Fuji hero image must remain active");
 assert.doesNotMatch(css,/commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\/FujiSunriseKawaguchiko2025WP/,"hero must not depend on a remote image URL");
 assert.match(app,/data\.scene="snow"|dataset\.scene="snow"/,"fallback card system should retain snow visual family");

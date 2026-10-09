@@ -1,5 +1,14 @@
 # Current ERN handoff
 
+## 2026-10-09 — Visual QA repair from owner screenshots
+- Owner screenshots after Pages #3021 exposed that `src/premium-cards.css` was referenced by `index.html` but omitted from the static release artifact. This caused **More places** and **Local Earth** card markup to render without its premium layout.
+- Static release builder now copies and cache-busts `premium-cards.css`; release smoke explicitly guards this.
+- Premium card layer now also gives **My Earth / Search** result cards a full-width image-led editorial composition instead of narrow/tall data-row layout.
+- Local Earth receives the same full-bleed truthful visual treatment while retaining source labels.
+- Watch Earth: removed the leftover daylight-only restriction from **Beautiful Earth** and expanded the qualified rotation pool from top 10 to top 20 so one-country repetition is less likely while the quality/playback gates remain unchanged.
+- Atlas remains unchanged.
+
+
 ## 2026-10-09 — Premium destination CSS modularized for release budget
 - To preserve the strict 575 KB certified core without weakening visual quality, moved only the new **More places** full-bleed premium card rules from `src/styles-lite.css` into `src/premium-cards.css`.
 - The stylesheet is loaded explicitly by the homepage; visitor appearance is unchanged. The core stylesheet retains the exact mobile one-column invariant required by release preflight.
