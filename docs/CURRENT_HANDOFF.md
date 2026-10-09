@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-09 — #3031 final performance repair: planning renderer modularized
+- Pages #3031 failed only the performance preflight: `app-lite.js` was 100,730 bytes and lean core was 575,070 bytes.
+- Moved the full planning-link renderer out of `app-lite.js` into `travel-planning-client.js`, where offer/local/external planning presentation belongs.
+- This reduces the monolithic app runtime while preserving the exact visitor behavior and disclosure rules.
+- No performance limits were relaxed; affiliate neutrality, local-reviewed fallback order, Watch Earth, Atlas, and source truth remain unchanged.
+
+
 ## 2026-10-09 — #3031 performance repair by modularizing local planning
 - Pages #3031 passed syntax and functional checks but failed the strict performance gate: `app-lite.js` was 100,730 bytes and lean core was 575,070 bytes.
 - Moved exact-place local planning selection out of `app-lite.js` into the existing `travel-planning-client.js` module, where commercial/local planning logic belongs.

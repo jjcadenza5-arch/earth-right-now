@@ -17,3 +17,6 @@ assert.doesNotMatch(scoreBody,/travelOffer|affiliate|sponsored|provider/,"commer
 console.log("Guide planning is post-ranking, current-only and commercial-neutral");
 
 assert.match(planning,/function localFor\(/,"travel-planning module owns exact-place local matching");
+
+assert.ok(app.includes("TP.applyPlan("),"viewer planning buttons should use the modular planning renderer");
+assert.match(planning,/function applyPlan\(/,"travel-planning module owns planning-link rendering");
