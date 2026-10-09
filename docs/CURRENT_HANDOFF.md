@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-09 — Before You Go local-first fallback + source continuity refresh
+- **Before You Go** now resolves planning links in this order: verified affiliate offer → exact-place approved ERN local directory entry → generic external search. Commercial availability still never affects source/search/Watch Earth ranking.
+- Local fallbacks are explicitly labeled **ERN reviewed local place**, keep `paidPlacement:false` / `affiliate:false`, and do not emit affiliate attribution events.
+- Refreshed **official source continuity** for Auckland Viaduct Harbour, Taitung Jinzun and Rovaniemi Santa Claus Village from their current official pages. This updates source-page freshness only.
+- Crucially, **`playbackVerifiedAt` was not changed** for any of the three; they still require genuine rendered playback evidence before returning to current inside-ERN/Watch Earth eligibility.
+- Atlas and Watch Earth selection logic unchanged.
+
+
 ## 2026-10-09 — Editorial-photo fallback replaces abstract card art
 - Owner correctly observed that the CSS scenic illustrations still did not look materially better than the prior dark/abstract cards.
 - Changed strategy: normal `ILLUSTRATIVE` card covers now reuse ERN's already-approved editorial photo families from **Where do you want Earth to take you?**:
