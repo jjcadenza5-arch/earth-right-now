@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-09 — #3031 performance repair by modularizing local planning
+- Pages #3031 passed syntax and functional checks but failed the strict performance gate: `app-lite.js` was 100,730 bytes and lean core was 575,070 bytes.
+- Moved exact-place local planning selection out of `app-lite.js` into the existing `travel-planning-client.js` module, where commercial/local planning logic belongs.
+- Visitor behavior is unchanged: verified affiliate → ERN-reviewed exact-place local option → generic search.
+- Performance budgets remain unchanged; no limits relaxed.
+
+
 ## 2026-10-09 — #3030 planning smoke syntax corrected
 - Pages #3030 stopped in JavaScript syntax preflight because four newly added planning assertions in `tests/guide-planning-boundary.smoke.js` contained literal `\\n` text instead of real line breaks.
 - Corrected the test file only. No ERN runtime, source data, affiliate behavior, local-directory behavior, Watch Earth logic or Atlas behavior changed.

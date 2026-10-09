@@ -25,5 +25,6 @@ function guideOffers(offers,s,partners=[],now=Date.now()){
 function guideLink(o){
  const a=document.createElement("a");a.className="guide-result guide-result-link";a.href=safe(o.url);a.target="_blank";a.rel=o.affiliate||o.sponsored?"noopener noreferrer sponsored":"noopener noreferrer";a.textContent=o.title+" · "+o.provider+" · "+disclosure(o)+" →";return a
 }
-globalThis.ERNTravelPlanning=Object.freeze({current,partnerCurrent,sourceEligible,offerFor,disclosure,guideOffers,guideLink});
+function localFor(rows,s,re){const id=s?.placeId||s?.id;return(rows||[]).find(x=>x&&x.status==="APPROVED"&&x.placeId===id&&re.test(String(x.type||"")+" "+(x.tags||[]).join(" ")))||null}
+globalThis.ERNTravelPlanning=Object.freeze({current,partnerCurrent,sourceEligible,offerFor,disclosure,guideOffers,guideLink,localFor});
 })();
