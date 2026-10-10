@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-10 — Five exact-batch human embedded-playback reviews accepted
+- Owner supplied an ERN operator-review evidence packet generated `2026-10-10T03:02:32.157Z` from `https://earthrightnow.app/review/inside-ern.html`, with `reviewBatch:184b21d9a48c8d2c`, `catalogMutationAllowed:false`, and network status `UNKNOWN_NOT_RECORDED`. Owner's screenshot of deployed `/review/current.json` independently confirms **that exact batch ID** and the five primaryInside source IDs; review file generated `2026-10-10T02:44:43.823Z`.
+- The five `HUMAN_PLAYBACK_CONFIRMED` records match their canonical source IDs and **exact embed URLs**, with observation times: Rovaniemi Santa Claus Village `03:01:52.308Z`; Taitung Jinzun `03:01:57.857Z`; Auckland Viaduct Harbour `03:02:08.457Z`; Kyoto Hanamikoji `03:02:19.141Z`; Kyoto Kiyomizuzaka `03:02:23.992Z`.
+- Updated only these five `playbackVerifiedAt` properties in `data/sources.json` from the owner-supplied, batch-matched human-review observations; commit `dd675467d178df67178a73ba8e8c632e057d8ade`. Did not manufacture HTTP/network evidence or alter source truth, permission, health, source URLs, holds, editorial ranking, affiliate logic or feature gates.
+- These time-bounded observations are **not permanent playback guarantees**. Existing 24-hour proof expiry, source recency, provider schedule and production gating still apply. Future visitors must see fail-closed/recheck states after expiry until a new human review is completed.
+- GitHub release checks and rendered behavior after this commit remain to be validated; do not claim public success until Pages passes. The operator evidence was supplied in conversation and is not stored as an immutable signed file in the repository.
+
+
 ## 2026-10-10 — Demand-led seven-destination search and playback-proof triage
 - Used the recorded 2026-10-08 privacy-preserving traffic snapshot (108 searches; leading queries Taitung Jinzun, New York, Arches, Chicago; leading place opens Ruapehu, Taranaki, Rovaniemi, Biscuit Basin, Denpasar) to prioritize genuine existing ERN destination matching rather than fabricating new cameras.
 - Added 27 English/local-language aliases across seven existing place IDs: `taitung-jinzun`, `nz-ruapehu`, `nz-taranaki-maunga`, `yellowstone-biscuit-basin`, `rovaniemi-santa-claus-village`, `denpasar-city-live`, `us-arches-national-park`. Alias-only commit `54acaf7274870a58fa48e73d06d1c46e2761edc9`. Lazy lookup only; no media/ranking/commercial/source status changes.
