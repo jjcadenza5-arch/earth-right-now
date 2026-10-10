@@ -23,3 +23,9 @@ assert.equal(editorialCollectionMatches(city,lakes),false);
 const {DISCOVERY_LOCALES,localizedCollection}=await import('../src/editorial-collections-l10n.js');
 for(const locale of DISCOVERY_LOCALES){const copy=localizedCollection(lakes.id,locale);assert.ok(copy?.title&&copy?.description,locale+' requires collection copy');}
 console.log('Lakes/waterfalls/fjords matching and all seven language entries passed');
+
+const harbours=editorialCollectionById("harbours-waterfronts");
+assert.ok(harbours);
+for(const title of ["Dublin Port", "Auckland Viaduct Harbour", "Nida Marina", "Waterfront city view"])assert.equal(editorialCollectionMatches({title},harbours),true,title);
+for(const title of ["Queenstown Airport", "Passport office", "Sports centre"])assert.equal(editorialCollectionMatches({title},harbours),false,title);
+for(const locale of DISCOVERY_LOCALES){const copy=localizedCollection(harbours.id,locale);assert.ok(copy?.title&&copy?.description,locale);}

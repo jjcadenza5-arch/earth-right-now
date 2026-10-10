@@ -685,5 +685,105 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.zellamsee-kaprun.com/en/service/arrival"
+  },
+  {
+    "id": "local-karon-centara-grand",
+    "name": "Centara Grand Beach Resort Phuket",
+    "type": "hotel",
+    "place": "Karon Beach",
+    "country": "Thailand",
+    "placeId": "thailand-phuket-karon",
+    "url": "https://www.centarahotelsresorts.com/centaragrand/cpbr",
+    "summary": "Beachfront resort at Karon Beach with accommodation and guest-service information on its official property page. Check current room availability and services directly; this local stay option is not an assertion about the camera location.",
+    "verifiedAt": "2026-10-10T08:57:03Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.centarahotelsresorts.com/centaragrand/cpbr"
+  },
+  {
+    "id": "local-karon-centara-dining",
+    "name": "Centara Grand Phuket — restaurants and bars",
+    "type": "restaurant",
+    "place": "Karon Beach",
+    "country": "Thailand",
+    "placeId": "thailand-phuket-karon",
+    "url": "https://www.centarahotelsresorts.com/centaragrand/cpbr/restaurants-and-bars",
+    "summary": "Official dining overview for the Karon Beach resort, including Mare, The Cove and COAST. Check current menus, reservation arrangements and access for non-resident diners with the venue before going.",
+    "verifiedAt": "2026-10-10T08:57:03Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.centarahotelsresorts.com/centaragrand/cpbr/restaurants-and-bars"
+  },
+  {
+    "id": "local-karon-tat-guide",
+    "name": "Karon Beach — official destination guide",
+    "type": "visitor information",
+    "place": "Karon Beach",
+    "country": "Thailand",
+    "placeId": "thailand-phuket-karon",
+    "url": "https://www.tourismthailand.org/attraction/hat-karon",
+    "summary": "Tourism Authority of Thailand background information for Hat Karon on Phuket. Use it to orient your visit and check local notices before entering the water; a scenic camera view does not establish safe swimming conditions.",
+    "verifiedAt": "2026-10-10T08:57:03Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.tourismthailand.org/attraction/hat-karon"
+  },
+  {
+    "id": "local-tofino-pacific-sands",
+    "name": "Pacific Sands Beach Resort",
+    "type": "hotel",
+    "place": "Tofino — Cox Bay",
+    "country": "Canada",
+    "placeId": "canada-tofino-cox-bay",
+    "url": "https://www.pacificsands.com/resort-life/",
+    "summary": "Oceanfront resort on Cox Bay in Tofino, with official accommodation and resort-activity information. Confirm current availability and guest arrangements directly; this is an unpaid local stay option rather than an ERN partnership.",
+    "verifiedAt": "2026-10-10T08:57:03Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.pacificsands.com/resort-life/"
+  },
+  {
+    "id": "local-tofino-arrival",
+    "name": "Tofino — official getting-here guide",
+    "type": "visitor information",
+    "place": "Tofino — Cox Bay",
+    "country": "Canada",
+    "placeId": "canada-tofino-cox-bay",
+    "url": "https://tourismtofino.com/plan-your-trip/getting-here/",
+    "summary": "Official Tourism Tofino guidance for reaching the west coast of Vancouver Island by road, ferry or air. Check the linked transport operators and current road notices before traveling; the Cox Bay view does not confirm route access or ferry availability.",
+    "verifiedAt": "2026-10-10T08:57:03Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://tourismtofino.com/plan-your-trip/getting-here/"
   }
 ]
