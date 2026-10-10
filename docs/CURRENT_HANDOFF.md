@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-10 — Auckland Viaduct visitor arrival context
+- Following owner-confirmed green Pages, improved two existing reviewed Auckland Viaduct Harbour local dining summaries (`local-soul-bar-auckland`, `local-bivacco-auckland`) with meaningful travel context grounded in first-party `https://www.viaduct.co.nz/getting-here` and `https://www.viaduct.co.nz/accessibility`: walkable downtown ferry/train/bus connections, nearby parking and accessible-route guidance. Existing venue URLs still take visitors to their exact listings for current details.
+- Commit `8085e4851a85d7d2a5ae234601f9786e32f546c6` affects only the summaries in `data/local-directory-supplemental.json`; no new listings, imagery rights, source URLs, camera claims, review timestamps, affiliate offers, ranking, startup scripts or design changes.
+- The intent is practical Search → See Live → Discover → Decide → Go information, not claims that any table is bookable now. Do not claim a fresh new playable stream. Pages release result is pending confirmation.
+
+
 ## 2026-10-10 — My Earth compact-card preview fallback strengthened
 - Owner's 11:08 Thailand-time Safari screenshots confirm Watch Earth remains visually consistent, but My Earth Recent and Continue exploring cards display some broad illustrative placeholders; Local Earth external sources also lack camera-supplied thumbnails. Neither condition proves provider playback failure.
 - Inspected the shared `compactVisual(s)` renderer in `src/app-lite.js`; it was still adding `scenicPoster(s)` only if there was no image URL (or an error occurred), unlike the already-updated Wander card renderer.
