@@ -274,6 +274,29 @@
       "inspectedPreviewSha256": "cd44d54a5773d114b698a36c574c0feb659039f4c6e580cd048e747f862566ff",
       "inspectedPreviewBytes": 157006,
       "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Cathedral_Square,_Vilnius,_Lithuania.jpg&oldid=1118386617"
+    },
+    {
+      "placeId": "madeira-camara-de-lobos",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Camara_de_Lobos,_Madeira.jpg",
+      "creator": "Otto Domes",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "Wikimedia Commons",
+      "dateTaken": "2018-04-13",
+      "status": "APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY",
+      "note": "Exact file description, creator and license reviewed; downloaded preview visually inspected for destination match. Archival editorial photo, not camera playback or current weather/crowd evidence. No endorsement implied.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Camara_de_Lobos%2C_Madeira.jpg/960px-Camara_de_Lobos%2C_Madeira.jpg",
+      "imageWidth": 960,
+      "imageHeight": 640,
+      "alt": "Church, town buildings and coastline in Câmara de Lobos, Madeira",
+      "publicActivationAllowed": true,
+      "homepageActivationAllowed": true,
+      "licenseRecheckedAt": "2026-10-10T15:11:35Z",
+      "attributionChanges": "Unmodified by ERN; scaled at original aspect ratio on destination pages.",
+      "homepageAttributionChanges": "Display crop using object-fit: cover; archival editorial photo, not live. Original source and CC BY-SA 4.0 linked beside card.",
+      "inspectedPreviewSha256": "85b5ab2727251990761594c5600e5bc83d58aa6a8d6b84c0c688edd4abd5a7e6",
+      "inspectedPreviewBytes": 295282,
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Camara_de_Lobos,_Madeira.jpg&oldid=1111127172"
     }
   ],
   "homepageActivationAllowed": true

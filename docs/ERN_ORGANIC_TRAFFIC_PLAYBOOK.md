@@ -45,6 +45,16 @@ Alternatives for a later owner-managed post; source status and visual reuse righ
 | Mauritius room-view curiosity | https://earthrightnow.app/places/mauritius-shanti-maurice/ | Which view would you choose for a stay? Open the coastal source, then compare the operator’s suite/villa view map and check the exact room category, dining plan and arrival arrangements. |
 | Beau Vallon beyond the beach | https://earthrightnow.app/places/seychelles-beau-vallon/ | What would you want to know before spending a day here? Explore the source, then the reviewed accommodation, restaurant and airport-pickup guidance. A beach view does not establish room or dining availability. |
 
+## Kite Beach follow-up theme
+
+An alternative for later owner-managed promotion, with an immediate source-status and visual-rights check before publishing. The ERN destination leads to the provider-hosted source.
+
+| Theme | Entry page | Invitation and useful next step |
+| --- | --- | --- |
+| A beach view to a practical first lesson | https://earthrightnow.app/places/cape-verde-kitesurf-beach/ | What would you need to know before trying kitesurfing here? Open the source, then check the reviewed school, lesson-versus-rental terms and arrival enquiry guide. Ask the operator to confirm the actual centre and conditions for your visit. |
+
+Use only footage you own or have permission to publish. Do not promise suitable wind, a lesson slot or equipment availability. An enquiry is not a confirmed booking. The separate Câmara de Lobos photograph is credited to Otto Domes and dates from 13 April 2018; it must remain archival. Madeira source checks are expired, so these pages are not prepared for a current-view campaign or active local-planning promotion.
+
 On Facebook, put the relevant ERN destination or collection URL in the post. On Instagram, make that relevant URL the profile link for the current campaign, or use a Story link where your account offers it. A caption URL should not be treated as a guaranteed clickable link. Linking the accounts does not establish that posts are cross-published; check what actually appeared on each profile.
 
 Keep the canonical domain visible. Suggested cautious profile wording: “Earth Right Now — The Live Discovery Engine. Discover real places through live views and official sources. See before you go.” This describes the current bridge to sources without promising universal live weather, present playback at every destination, or gated features.

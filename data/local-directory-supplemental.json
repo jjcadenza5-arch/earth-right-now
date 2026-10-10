@@ -1967,5 +1967,71 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.chezlorna.com/reservation-direct-no-commission/"
+  },
+  {
+    "id": "local-sal-kitebeach-center",
+    "name": "Kite Beach Water Sports Center",
+    "type": "water sports school",
+    "place": "Kite Beach, Sal",
+    "country": "Cape Verde",
+    "placeId": "cape-verde-kitesurf-beach",
+    "url": "https://www.kitebeachcaboverde.com/",
+    "summary": "First-party water sports school at Kite Beach on Sal. Confirm the actual lesson location, instructor and equipment availability directly; the operator also has centres at Santa Maria Bay, so not every activity takes place at this beach. A beach source does not establish a lesson slot or suitable conditions.",
+    "verifiedAt": "2026-10-10T15:19:03Z",
+    "status": "APPROVED",
+    "tags": [
+      "kitesurf",
+      "Kite Beach",
+      "Sal",
+      "local activities"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kitebeachcaboverde.com/"
+  },
+  {
+    "id": "local-sal-kitebeach-lessons",
+    "name": "Kite Beach — lessons and equipment planning",
+    "type": "visitor information",
+    "place": "Kite Beach, Sal",
+    "country": "Cape Verde",
+    "placeId": "cape-verde-kitesurf-beach",
+    "url": "https://www.kitebeachcaboverde.com/kite-surf/",
+    "summary": "Operator guide distinguishes beginner and advanced lessons from equipment rental. Confirm your ability level, equipment inclusions, hotel transport and current terms: lesson and rental arrangements differ, including treatment of low-wind days. Published packages and rental terms do not promise present wind, availability or a refund for every service.",
+    "verifiedAt": "2026-10-10T15:19:03Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "kitesurf lessons",
+      "equipment rental",
+      "Kite Beach"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kitebeachcaboverde.com/kite-surf/"
+  },
+  {
+    "id": "local-sal-kitebeach-arrival",
+    "name": "Kite Beach — enquiry and arrival planning",
+    "type": "visitor information",
+    "place": "Kite Beach, Sal",
+    "country": "Cape Verde",
+    "placeId": "cape-verde-kitesurf-beach",
+    "url": "https://www.kitebeachcaboverde.com/booking/",
+    "summary": "First-party enquiry form asks for dates, accommodation and the requested lesson or rental service. Confirm the correct centre, meeting point or pickup, equipment needs, current price and cancellation terms directly. A submitted enquiry is not a confirmed booking or guaranteed availability; the form requires JavaScript and lists a direct email alternative.",
+    "verifiedAt": "2026-10-10T15:19:03Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "arrival",
+      "booking enquiries",
+      "Kite Beach"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kitebeachcaboverde.com/booking/"
   }
 ]
