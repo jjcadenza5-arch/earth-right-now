@@ -254,5 +254,49 @@
     "addressBasis": "OFFICIAL_VIADUCT_HARBOUR_VENUE_PAGE",
     "addressSourceUrl": "https://www.viaduct.co.nz/eat-and-drink/bivacco",
     "address": "115 Customs Street West, Auckland CBD, New Zealand"
+  },
+  {
+    "id": "local-kifune-shrine-access",
+    "name": "Kifune Shrine — official transport and access",
+    "type": "visitor information",
+    "place": "Kyoto — Kifune Shrine",
+    "country": "Japan",
+    "summary": "The shrine recommends public transport because parking is limited. Its official English access page links Eizan Railway and subway route guidance, Kyoto Bus timetables and parking information; check the current timetable and access notices before setting out.",
+    "url": "https://kifunejinja.jp/en/access/",
+    "verifiedAt": "2026-10-10T05:12:24Z",
+    "status": "APPROVED",
+    "placeId": "kyoto-kifune-shrine",
+    "tags": [
+      "official visitor information",
+      "transport",
+      "rail",
+      "bus",
+      "kifune",
+      "access"
+    ],
+    "paidPlacement": false,
+    "affiliate": false
+  },
+  {
+    "id": "local-santa-claus-village-access",
+    "name": "Santa Claus Village — official arrival guide",
+    "type": "visitor information",
+    "place": "Rovaniemi — Santa Claus Village",
+    "country": "Finland",
+    "summary": "The village’s official arrival guide links the route for local bus 8 from central Rovaniemi, plus rail, airport and taxi information. Shuttle services may be seasonal; check the operators’ current timetables and the village map before travelling.",
+    "url": "https://santaclausvillage.info/info-and-tips/getting-here-and-moving-around/",
+    "verifiedAt": "2026-10-10T05:12:24Z",
+    "status": "APPROVED",
+    "placeId": "rovaniemi-santa-claus-village",
+    "tags": [
+      "official visitor information",
+      "transport",
+      "bus",
+      "arrival",
+      "rovaniemi",
+      "arctic circle"
+    ],
+    "paidPlacement": false,
+    "affiliate": false
   }
 ]
