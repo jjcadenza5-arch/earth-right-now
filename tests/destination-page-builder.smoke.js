@@ -101,6 +101,8 @@ try{
   assert.ok(!lakeCollection.includes('places/fixture-stale/'),'stale sources must stay out of collection');
   assert.ok(!lakeCollection.includes('places/fixture-security-hold/'),'held sources must stay out of collection');
   assert.ok(lakeCollection.includes('hreflang="th"'),'new collection must offer reciprocal existing-language routes');
+  assert.ok(lakeCollection.includes('share_clicked'),'English collections must include the successful-share event');
+  assert.ok(fs.readFileSync(join(fixture,'th/discover/lakes-waterfalls-fjords/index.html'),'utf8').includes('share_clicked'),'localized collections must use the same successful-share event');
 
   for(const text of ['Paolo Sgarbanti','2021-06-30','Oeschinensee_lake.jpg','width="960" height="525"','EDITORIAL PHOTO · NOT LIVE'])assert.ok(lakeHtml.includes(text),'matched lake photo must expose '+text);
   assert.ok(!lakeHtml.includes('Santa_Claus_Village_11.jpg'),'lake page must not inherit another destination photo');
@@ -150,3 +152,25 @@ input.value='<script> & nowhere';handlers.input();
 assert.equal(empty.hidden,false);assert.ok(more.href.endsWith(encodeURIComponent(input.value)),'fallback search uses an encoded query');
 input.value='';handlers.input();assert.equal(empty.hidden,true);assert.ok(rows.every(r=>!r.hidden),'clearing query restores all rows');
 console.log('Places directory accent/token search, availability gates, Thai marks and empty recovery passed');
+
+const {collectionShareScript}=await import('../scripts/collection-share-runtime.mjs');
+async function exerciseCollectionShare(navigator, {tracking=true}={}){
+  let click;const events=[],timers=[];const button={textContent:'แชร์คอลเลกชันนี้',addEventListener:(name,fn)=>{assert.equal(name,'click');click=fn}};
+  const context={document:{title:'ERN collection',querySelector:()=>button},location:{href:'https://earthrightnow.app/th/discover/harbours-waterfronts/',pathname:'/th/discover/harbours-waterfronts/'},navigator,setTimeout:fn=>timers.push(fn)};
+  if(tracking)context.ERN_EVENT=(name,data)=>events.push({name,data});
+  const html=collectionShareScript('คัดลอกแล้ว','Explore these ERN places.');
+  runInNewContext(html.slice(8,-9),context);await click();return {events,button,timers};
+}
+let nativePayload;const native=await exerciseCollectionShare({share:async p=>{nativePayload=p}});
+assert.equal(nativePayload.url,'https://earthrightnow.app/th/discover/harbours-waterfronts/');
+assert.equal(native.events.length,1);assert.equal(native.events[0].name,'share_clicked');
+assert.equal(native.events[0].data.route,'/th/discover/harbours-waterfronts/');
+assert.equal('placeId' in native.events[0].data,false,'collections must not fabricate a destination ID');
+let copiedUrl;const copied=await exerciseCollectionShare({clipboard:{writeText:async url=>{copiedUrl=url}}});
+assert.equal(copiedUrl,nativePayload.url);assert.equal(copied.events.length,1);assert.equal(copied.button.textContent,'คัดลอกแล้ว');copied.timers[0]();assert.equal(copied.button.textContent,'แชร์คอลเลกชันนี้');
+assert.equal((await exerciseCollectionShare({share:async()=>{throw new Error('AbortError')}})).events.length,0,'cancelled native shares must not be counted');
+assert.equal((await exerciseCollectionShare({clipboard:{writeText:async()=>{throw new Error('denied')}}})).events.length,0,'failed copies must not be counted');
+assert.equal((await exerciseCollectionShare({})).events.length,0,'unsupported sharing must not be counted');
+assert.equal((await exerciseCollectionShare({share:async()=>{}},{tracking:false})).events.length,0,'sharing works when the privacy-gated event hook is absent');
+assert.equal((collectionShareScript('</script>','x').match(/<\/script>/g)||[]).length,1,'serialized labels must not terminate inline scripts');
+console.log('Collection native/copy success, cancellation, localized feedback and privacy boundaries passed');

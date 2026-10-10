@@ -1045,5 +1045,85 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.visitsanmarino.com/pub1/VisitSM/en/contenuto/Vivi/Parcheggi_a_San_Marino.html"
+  },
+  {
+    "id": "local-yehliu-inhouse",
+    "name": "Inhouse Hotel Yehliu",
+    "type": "hotel",
+    "place": "Yehliu",
+    "country": "Taiwan",
+    "placeId": "taiwan-yehliu",
+    "url": "https://yehliu.inhousehotel.com/en/",
+    "summary": "Hotel in Wanli near Yehliu Geopark and the north-coast attractions. Check the official property page for current accommodation and guest facilities; this local stay option is not the geopark camera location or an ERN partnership.",
+    "verifiedAt": "2026-10-10T10:13:10Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://yehliu.inhousehotel.com/en/"
+  },
+  {
+    "id": "local-yehliu-ocean-world",
+    "name": "Yehliu Ocean World",
+    "type": "attraction",
+    "place": "Yehliu",
+    "country": "Taiwan",
+    "placeId": "taiwan-yehliu",
+    "url": "https://www.oceanworld.com.tw/en/",
+    "summary": "Separate visitor attraction near Yehliu Geopark. Consult its official announcements, current programme and admission details before visiting; programmes may be suspended, and the geopark camera does not show conditions or operations inside Ocean World.",
+    "verifiedAt": "2026-10-10T10:13:10Z",
+    "status": "APPROVED",
+    "tags": [
+      "attraction",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.oceanworld.com.tw/en/"
+  },
+  {
+    "id": "local-yehliu-arrival",
+    "name": "Yehliu Geopark — official visitor and arrival guide",
+    "type": "visitor information",
+    "place": "Yehliu",
+    "country": "Taiwan",
+    "placeId": "taiwan-yehliu",
+    "url": "https://eng.taiwan.net.tw/m1.aspx?id=155&sno=0002091",
+    "summary": "Taiwan Tourism Administration guidance for Yehliu Geopark, with public-transport and visitor-information links. Check current routes, park notices and coastal access before traveling rather than treating the geological camera view as an access guarantee.",
+    "verifiedAt": "2026-10-10T10:13:10Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://eng.taiwan.net.tw/m1.aspx?id=155&sno=0002091"
+  },
+  {
+    "id": "local-yehliu-shuttle",
+    "name": "Yehliu — official Crown Northern Coast shuttle guide",
+    "type": "visitor information",
+    "place": "Yehliu",
+    "country": "Taiwan",
+    "placeId": "taiwan-yehliu",
+    "url": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007092",
+    "summary": "Official regional guide to the Crown Northern Coast shuttle connecting the Tamsui area and Yehliu. Use its current timetable and operator links to confirm service, stops and accessibility arrangements before setting out; no departure time or fare is guaranteed here.",
+    "verifiedAt": "2026-10-10T10:13:10Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007092"
   }
 ]
