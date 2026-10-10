@@ -122,8 +122,8 @@
     "type": "hotel",
     "place": "Old Faithful",
     "country": "United States",
-    "summary": "Full-service Yellowstone lodge and cabins in Old Faithful Village, with dining and direct access to the geyser basin area.",
-    "url": "https://www.yellowstonenationalparklodges.com/connect/yellowstone-hot-spot/lodging/old-faithful/",
+    "summary": "Official Old Faithful Snow Lodge information, including seasonal operating dates, lodging details and winter over-snow access requirements. Check current dates and transport before traveling.",
+    "url": "https://www.yellowstonenationalparklodges.com/lodgings/hotel/",
     "verifiedAt": "2026-10-09T13:35:00Z",
     "status": "APPROVED",
     "placeId": "yellowstone-old-faithful",
@@ -137,8 +137,8 @@
     "paidPlacement": false,
     "affiliate": false,
     "address": "2051 Snow Lodge Ave, Yellowstone National Park, WY 82190, United States",
-    "addressBasis": "OFFICIAL_LODGING_PAGE",
-    "addressSourceUrl": "https://www.yellowstonenationalparklodges.com/connect/yellowstone-hot-spot/lodging/old-faithful/"
+    "addressBasis": "OFFICIAL_CONCESSIONER_LODGING_PAGE",
+    "addressSourceUrl": "https://www.yellowstonenationalparklodges.com/lodgings/hotel/"
   },
   {
     "id": "local-la-palma-free-tours",
