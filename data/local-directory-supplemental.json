@@ -1413,5 +1413,94 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://sabarock.com/getting-here"
+  },
+  {
+    "id": "local-grand-hotel-vilnius",
+    "name": "Grand Hotel Vilnius, Curio Collection by Hilton",
+    "type": "hotel",
+    "place": "Cathedral Square, Vilnius",
+    "country": "Lithuania",
+    "placeId": "lithuania-vilnius-cathedral-square",
+    "url": "https://www.hilton.com/en/hotels/vnodeqq-grand-hotel-vilnius/",
+    "summary": "Accommodation across from Cathedral Square at Universiteto Street 14, near the cathedral and Old Town. Check current rooms, access requirements and arrival arrangements directly; the square camera does not establish room availability or access to hotel facilities.",
+    "verifiedAt": "2026-10-10T13:36:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "Cathedral Square",
+      "Vilnius",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hilton.com/en/hotels/vnodeqq-grand-hotel-vilnius/"
+  },
+  {
+    "id": "local-telegrafas-vilnius",
+    "name": "Telegrafas at Grand Hotel Vilnius",
+    "type": "restaurant",
+    "place": "Cathedral Square, Vilnius",
+    "country": "Lithuania",
+    "placeId": "lithuania-vilnius-cathedral-square",
+    "url": "https://www.hilton.com/en/hotels/vnodeqq-grand-hotel-vilnius/dining/",
+    "summary": "Restaurant overlooking Cathedral Square, with seasonal modern European dining; the official page also describes Dukes Lounge and Bar. Confirm the current menu, reservations and non-resident dining arrangements with the venue before visiting.",
+    "verifiedAt": "2026-10-10T13:36:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "Cathedral Square",
+      "Vilnius",
+      "local food"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hilton.com/en/hotels/vnodeqq-grand-hotel-vilnius/dining/"
+  },
+  {
+    "id": "local-vilnius-cathedral-guide",
+    "name": "Go Vilnius — official cathedral visitor guide",
+    "type": "visitor information",
+    "place": "Cathedral Square, Vilnius",
+    "country": "Lithuania",
+    "placeId": "lithuania-vilnius-cathedral-square",
+    "url": "https://www.govilnius.lt/visit-vilnius/places/the-cathedral-basilica-of-st-stanislaus-and-st-ladislaus",
+    "summary": "City tourism guide to the cathedral beside the square. Cathedral catacomb visits are arranged through the Church Heritage Museum; check current visitor hours, services and separate tower or catacomb admission rather than assuming the outdoor square view includes indoor access.",
+    "verifiedAt": "2026-10-10T13:36:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "cathedral",
+      "catacombs",
+      "Cathedral Square"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.govilnius.lt/visit-vilnius/places/the-cathedral-basilica-of-st-stanislaus-and-st-ladislaus"
+  },
+  {
+    "id": "local-judu-vilnius-visitor-guide",
+    "name": "JUDU — Vilnius public transport for visitors",
+    "type": "visitor information",
+    "place": "Cathedral Square, Vilnius",
+    "country": "Lithuania",
+    "placeId": "lithuania-vilnius-cathedral-square",
+    "url": "https://judu.lt/en/welcome/",
+    "summary": "Official visitor guide covering routes, timetables, tickets and connections from the airport, bus station and railway station. Use its current planner and ticket instructions for your journey to Cathedral Square, including ticket activation or validation requirements; check service changes before travel.",
+    "verifiedAt": "2026-10-10T13:36:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "public transport",
+      "airport connection",
+      "arrival",
+      "Vilnius"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://judu.lt/en/welcome/"
   }
 ]
