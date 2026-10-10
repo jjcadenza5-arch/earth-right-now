@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-10 — Chicago demand-led search-to-view improvement
+- Continued after owner-confirmed green recovery from the Pages #3054 compact-source regression. Used the existing privacy-safe `data/traffic-growth-priorities.json` top-search data (`chicago`: 2 observed searches in recorded 30-day window) and found an existing core `chicago-field-skyline` source with place ID `chicago-lakefront` but no lazy discovery aliases for that place.
+- Added seven specific Chicago skyline/lakefront/city synonyms to the existing `chicago-lakefront` key in `data/place-search-aliases.json`, commit `feb50a28f9e77a4342deabef8d08e26195d7c916`. No new source, media verification, affiliate, ranking or playback date change; no added startup JavaScript and no relaxation of core budgets.
+- Do not infer that the current Chicago provider is newly verified playable inside ERN; source permissions and evidence gates remain authoritative. GitHub Pages verification of this alias update has not yet been observed.
+
+
 ## 2026-10-10 — Pages #3054 red: serialization-only core size regression fixed
 - Owner screenshot confirmed Pages #3054 RED at commit `dd675467d178df67178a73ba8e8c632e057d8ade`; Operations #1783 GREEN. Read the actual Pages job `114116979475` in run `38019457864`: JavaScript syntax passed, but the 119-test release suite failed 2 audits due exclusively to performance caps: source JSON **356,330 bytes** (above source budget) and lean core **642,045 bytes** (above 575,000).
 - Root cause: our previous five-timestamp GitHub update used `JSON.stringify(rows,null,2)`, expanding source-file whitespace and exceeding the enforced release size limits. No playback permission/URL/observed-time failure appeared in those audit results.
