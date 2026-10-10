@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-10 — Second five-camera human playback batch accepted with Verbier hold retained
+- Owner supplied the ERN review-lab packet `reviewBatch: edeb4345f3368fcf`, generated `2026-10-10T04:01:24.308Z`, with five `HUMAN_PLAYBACK_CONFIRMED` items, and a screenshot of deployed `/review/current.json` confirming the **exact matching batch ID**, generated `2026-10-10T03:52:51.671Z`, and the same five `primaryInside` IDs.
+- Exact canonical source IDs and embed URLs all match. Recorded only `playbackVerifiedAt` from the original user evidence: Nishiki Market `04:00:58.428Z`, Verbier `04:01:03.725Z`, Yehliu Geopark `04:01:09.259Z`, Kifune Shrine `04:01:15.608Z`, Fushimi Inari `04:01:21.010Z`. Source catalog commit `c17c655e54216f0543fbcb3a9c6235600b947606`.
+- Kept `verbier.watchHold===true` and any other editorial hold untouched; human playback confirmation is **not** permission to lift an independent hold. No source health, permission, attribution, truth labels, URLs, ranking, or site gates changed. Network status remains `UNKNOWN_NOT_RECORDED`.
+- Preserved compact `data/sources.json` formatting (approximately 287,827 bytes after edit) to protect the strict 575,000-byte lean-core budget; no additional source catalog entries. Playback proof remains time-limited (24-hour window), not perpetual freshness. New Pages workflow outcome has not yet been observed.
+
+
 ## 2026-10-10 — Verbier live lift-condition planning link
 - Following owner-confirmed green Pages after the screenshot-led destination-card fallback improvement, reviewed official `verbier4vallees.ch` visitor information. The ski area's first-party live-opening page `https://verbier4vallees.ch/en/useful-information/live-information-summer` provides status and hours for mountain lifts, destination sectors and seasonal activities; it also links to winter 2026/27 opening hours.
 - Improved the existing unpaid, non-affiliate Local Earth `local-verbier-4vallees` listing at exact `verbier` place ID to open that operational page directly, and described checking lift status and access **before** travel. Commit `04883c5069c4102a057cd03b085c9df58386699b`. Did not claim any particular lift is currently open and did not add a new live camera.
