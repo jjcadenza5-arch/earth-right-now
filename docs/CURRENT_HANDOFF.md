@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-10 — Scheduled current-image renewal #5 failure diagnosed and test contract repaired
+- Scheduled run `38011307566` completed actual two-source image probes successfully (USGS Yellowstone Biscuit Basin: image evidence 13.7 minutes old; GeoNet Ruapehu: 7.7 minutes old), but failed in `tests/current-image-pilot.smoke.js` before committing renewal evidence.
+- Failure was the generic assertion `refreshMs >= 600000` applied to all independently approved `IMAGE_REFRESH` cameras, including Mount St. Helens (`us-mount-st-helens-current-image`), whose catalog contract specifies a documented 300,000 ms / five-minute USGS refresh. The original two controlled pilot cameras retain their 600,000 ms minimum.
+- Repaired only the regression-test assertion with a source-specific exception requiring Mount St. Helens' existing `USGS Public Domain.` rights basis and five-minute freshness evidence. Commit `5593ed3872272593913605b8358339de4ea9fe19`. No source metadata, timestamps, images, playback, permissions, ranking, refresh budget or publication was changed.
+- Pages #3049 was owner-observed green. This scheduled-worker test-only fix has **not** yet passed a subsequent renewal run; because the failed run did not reach the commit step, the observed 2026-10-10 renewal data were not persisted into the canonical source/observation files. Next scheduled or manually dispatched renewal must re-probe actual fresh image evidence, then validate and commit only if truly current. Never backfill unpersisted timestamps.
+- The Node/Ubuntu runner migration notice was informational, not the failure.
+
+
 ## 2026-10-09 — Pages #3047 two-byte startup budget failure repaired
 - Inspected the actual failed Pages #3047 run `37953115294`. The release smoke failure was the strict **160,000-byte homepage startup JavaScript gate**, measured at **160,002 bytes**, surfaced by the Phase 10 production and launch audits. Syntax and Operations were green.
 - Removed eight bytes of redundant runtime text from `src/travel-planning-client.js` without changing selection, HTTPS validation, offer disclosure, affiliate gates, 90-day Local Earth reviews or release limits. Commits `1772e35efb61866a1989ee74174b6a7acda4ba18` and `ace58933f9495add08ce621103baa90fa6402fb3`.
