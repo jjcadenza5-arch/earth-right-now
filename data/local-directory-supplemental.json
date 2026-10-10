@@ -2461,5 +2461,182 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.nps.gov/grte/planyourvisit/hours.htm"
+  },
+  {
+    "id": "local-calabash-stay",
+    "name": "Calabash Cove Resort & Spa — suites and cottages",
+    "type": "hotel",
+    "place": "Marisule, Gros Islet",
+    "country": "Saint Lucia",
+    "placeId": "st-lucia-calabash-cove",
+    "url": "https://www.calabashcove.com/suites-and-cottages",
+    "summary": "Adults-only resort offering Water’s Edge cottages, Swim-Up Junior Suites and Sunset Ocean View Junior Suites. Confirm your actual category, private versus shared pool access, guest eligibility and booked stay plan; a coastal camera does not establish room availability or your room’s view.",
+    "verifiedAt": "2026-10-10T16:56:05Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "adults only",
+      "cottages",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.calabashcove.com/suites-and-cottages"
+  },
+  {
+    "id": "local-calabash-windsong",
+    "name": "Windsong Restaurant — Calabash Cove",
+    "type": "restaurant",
+    "place": "Marisule, Gros Islet",
+    "country": "Saint Lucia",
+    "placeId": "st-lucia-calabash-cove",
+    "url": "https://www.calabashcove.com/dining",
+    "summary": "Resort restaurant serving breakfast, lunch and dinner, with a separate C-Bar and pool bar. Check the current menu, table reservations, outside-guest access and your booked meal-plan entitlements directly; a resort view does not guarantee a table or included dining.",
+    "verifiedAt": "2026-10-10T16:56:05Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "Windsong",
+      "reservations",
+      "local food"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.calabashcove.com/dining"
+  },
+  {
+    "id": "local-calabash-meal-plan",
+    "name": "Calabash Cove — meal and stay-plan comparison",
+    "type": "visitor information",
+    "place": "Marisule, Gros Islet",
+    "country": "Saint Lucia",
+    "placeId": "st-lucia-calabash-cove",
+    "url": "https://www.calabashcove.com/offers/unconditional-all-inclusive",
+    "summary": "Compare the operator’s current all-inclusive offer with your actual booked stay plan. Confirm included meals, drinks and room service, cancellation terms and any direct-booking or minimum-stay conditions for transfer benefits; promotional discounts and airport transfers are not universal entitlements.",
+    "verifiedAt": "2026-10-10T16:56:05Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "meal plans",
+      "booking conditions"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.calabashcove.com/offers/unconditional-all-inclusive"
+  },
+  {
+    "id": "local-calabash-arrival",
+    "name": "Calabash Cove — airport and location planning",
+    "type": "visitor information",
+    "place": "Marisule, Gros Islet",
+    "country": "Saint Lucia",
+    "placeId": "st-lucia-calabash-cove",
+    "url": "https://www.calabashcove.com/",
+    "summary": "The resort is at Bonaire Estate, Marisule, Gros Islet, Saint Lucia; this is not the Caribbean island of Bonaire. Distinguish Hewanorra (UVF) from George F. L. Charles (SLU) and confirm pickup, current transfer price and arrival directions for your actual flight. Published journey estimates do not guarantee arrival time.",
+    "verifiedAt": "2026-10-10T16:56:05Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "airport transfers",
+      "UVF",
+      "SLU",
+      "arrival"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.calabashcove.com/"
+  },
+  {
+    "id": "local-veligandu-stay",
+    "name": "Veligandu Maldives Resort Island — villas",
+    "type": "hotel",
+    "place": "Veligandu Island",
+    "country": "Maldives",
+    "placeId": "maldives-veligandu",
+    "url": "https://veligandu.com/villas/",
+    "summary": "Compare beach and overwater villas, sunset categories and options with or without a private pool. Confirm actual occupancy, guest-age eligibility and room inclusions for your chosen category; an island camera does not establish a particular villa’s view, availability or suitability.",
+    "verifiedAt": "2026-10-10T16:56:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "beach villas",
+      "overwater villas",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://veligandu.com/villas/"
+  },
+  {
+    "id": "local-veligandu-dhonveli",
+    "name": "Dhonveli Restaurant — Veligandu",
+    "type": "restaurant",
+    "place": "Veligandu Island",
+    "country": "Maldives",
+    "placeId": "maldives-veligandu",
+    "url": "https://veligandu.com/wine-and-dine/",
+    "summary": "The resort’s dining guide distinguishes Dhonveli buffet dining from its other à-la-carte restaurants. Confirm your meal-plan inclusions, current menus, dress guidance and restaurant-specific reservations before booking; not every restaurant or dining experience is included in every plan.",
+    "verifiedAt": "2026-10-10T16:56:17Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "Dhonveli",
+      "meal plans",
+      "local food"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://veligandu.com/wine-and-dine/"
+  },
+  {
+    "id": "local-veligandu-transfer",
+    "name": "Veligandu — transfer and arrival planning",
+    "type": "visitor information",
+    "place": "Veligandu Island",
+    "country": "Maldives",
+    "placeId": "maldives-veligandu",
+    "url": "https://veligandu.com/facilities/arrivals-and-transfers-getting-to-veligandu/",
+    "summary": "Official arrival guide covers prearranged seaplane and boat transfer options. Confirm the route for your actual international flight, daylight restrictions, baggage allowance, price and meeting instructions; ask about missed connections or an overnight stay in Malé rather than assuming a same-day island connection.",
+    "verifiedAt": "2026-10-10T16:56:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "seaplane",
+      "boat transfers",
+      "baggage",
+      "arrival"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://veligandu.com/facilities/arrivals-and-transfers-getting-to-veligandu/"
+  },
+  {
+    "id": "local-veligandu-enquiries",
+    "name": "Veligandu — direct stay and dining enquiries",
+    "type": "visitor information",
+    "place": "Veligandu Island",
+    "country": "Maldives",
+    "placeId": "maldives-veligandu",
+    "url": "https://veligandu.com/contact/",
+    "summary": "Use the resort’s official contact channel to confirm dates, villa category, guest eligibility, meal inclusions, restaurant arrangements and cancellation terms before committing. An enquiry is not a confirmed room, table or island transfer; obtain confirmation for the arrangements you need.",
+    "verifiedAt": "2026-10-10T16:56:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "direct enquiries",
+      "booking conditions",
+      "dining"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://veligandu.com/contact/"
   }
 ]

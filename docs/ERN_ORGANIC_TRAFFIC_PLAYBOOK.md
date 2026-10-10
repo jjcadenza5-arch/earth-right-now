@@ -78,6 +78,11 @@ Optional owner-managed ideas after a fresh source-status and visual-permission c
 
 Pearl Harbor is a place of remembrance. If sharing its ERN page, use respectful context and the official reservations/visitor-centre guides; never suggest that a harbor view guarantees a memorial ticket, boat departure or access to the military base. No provider footage or hotel photograph is cleared for reuse by these link-only planning entries.
 
+Optional owner-managed destination themes added 2026-10-10:
+
+- Veligandu: “Beach villa or overwater villa—and can your flight connect?” Link https://earthrightnow.app/places/maldives-veligandu/ and invite viewers to compare categories, dining and the transfer guide. Recheck the source immediately before calling a view live; use only separately permission-cleared visuals.
+- Calabash Cove: “A Saint Lucia coast view, then the practical questions.” Link https://earthrightnow.app/places/st-lucia-calabash-cove/ and point to adults-only accommodation, Windsong dining and the correct arrival airport. Confirm any offer with the operator; do not promise transfers, availability or meal inclusions.
+
 On Facebook, put the relevant ERN destination or collection URL in the post. On Instagram, make that relevant URL the profile link for the current campaign, or use a Story link where your account offers it. A caption URL should not be treated as a guaranteed clickable link. Linking the accounts does not establish that posts are cross-published; check what actually appeared on each profile.
 
 Keep the canonical domain visible. Suggested cautious profile wording: “Earth Right Now — The Live Discovery Engine. Discover real places through live views and official sources. See before you go.” This describes the current bridge to sources without promising universal live weather, present playback at every destination, or gated features.
