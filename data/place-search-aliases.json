@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T00:00:00+07:00",
+  "updatedAt": "2026-10-10",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -94,7 +94,10 @@
     "rovaniemi-santa-claus-village": [
       "Rovaniemi Suomi",
       "Joulupukin Pajakylä",
-      "Santa Claus Village Finland"
+      "Santa Claus Village Finland",
+      "Santa Claus Village",
+      "Santa Village Rovaniemi",
+      "Arctic Circle Rovaniemi"
     ],
     "istanbul-sultanahmet": [
       "İstanbul",
@@ -1021,6 +1024,42 @@
       "Sareis",
       "Malbun Sareis",
       "Sareis Liechtenstein"
+    ],
+    "taitung-jinzun": [
+      "Jinzun Beach",
+      "Jinzun Taitung",
+      "金樽",
+      "台東金樽",
+      "Taitung East Coast"
+    ],
+    "nz-ruapehu": [
+      "Mount Ruapehu",
+      "Mt Ruapehu",
+      "Ruapehu volcano",
+      "Tongariro Ruapehu"
+    ],
+    "nz-taranaki-maunga": [
+      "Mount Taranaki",
+      "Mt Taranaki",
+      "Taranaki Maunga",
+      "Egmont volcano"
+    ],
+    "yellowstone-biscuit-basin": [
+      "Biscuit Basin Yellowstone",
+      "Black Diamond Pool",
+      "Yellowstone Biscuit Basin"
+    ],
+    "denpasar-city-live": [
+      "Denpasar Bali",
+      "Denpasar city traffic",
+      "Kota Denpasar",
+      "Denpasar streets"
+    ],
+    "us-arches-national-park": [
+      "Arches National Park",
+      "Arches Utah",
+      "Moab Arches",
+      "Arches entrance"
     ]
   }
 }
