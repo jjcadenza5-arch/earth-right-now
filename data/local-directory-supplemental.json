@@ -74,8 +74,8 @@
     "type": "restaurant",
     "place": "Hua Hin",
     "country": "Thailand",
-    "summary": "Beachside restaurant at Centara Grand Hua Hin serving grilled dishes and seafood with sea views.",
-    "url": "https://prod.centarahotelsresorts.com/centaragrand/chbr/restaurants-and-bars",
+    "summary": "Beachfront dining at Centara Grand Hua Hin. The official COAST page provides menus, published opening hours and reservation contact; check the page for current details.",
+    "url": "https://www.centarahotelsresorts.com/centaragrand/chbr/coast-beach-club-bistro",
     "verifiedAt": "2026-10-09T13:35:00Z",
     "status": "APPROVED",
     "placeId": "hua-hin-centara-live",
@@ -89,8 +89,8 @@
     "paidPlacement": false,
     "affiliate": false,
     "address": "1 Damnernkasem Road, Hua Hin, Prachuap Khiri Khan 77110, Thailand",
-    "addressBasis": "OFFICIAL_RESORT_DINING_PAGE",
-    "addressSourceUrl": "https://prod.centarahotelsresorts.com/centaragrand/chbr/restaurants-and-bars"
+    "addressBasis": "FIRST_PARTY_RESORT_RESTAURANT_PAGE",
+    "addressSourceUrl": "https://www.centarahotelsresorts.com/centaragrand/chbr/coast-beach-club-bistro"
   },
   {
     "id": "local-yellowstone-lodges",
