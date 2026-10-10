@@ -87,6 +87,9 @@ try{
   assert.ok(html.includes('Santa_Claus_Village_11.jpg'),'exact source file must be linked');
   assert.ok(html.includes('Supplemental visitor help'),'approved supplemental help must reach the generated destination');
   assert.ok(html.includes('Local listing reviewed <time datetime='),'local business listings must disclose their editorial review date');
+  assert.ok(html.includes('href="#local-places"')&&html.includes('id="local-places"'),'destination navigation must reach eligible local listings');
+  assert.ok(!html.includes('href="#planning-links"'),'no offer must mean no dangling optional-planning link');
+  assert.ok(html.includes('with Earth Right Now — See before you go.'),'current destination sharing should name the place without an unsupported moving-video claim');
   assert.ok(html.includes('id="before-you-go"'),'arrival guidance must have a reachable section');
   assert.ok(html.includes('Official arrival help'),'arrival information must survive the venue display limit');
   assert.ok(html.includes('href="#before-you-go"'),'destination navigation must lead to arrival advice');
@@ -108,6 +111,9 @@ try{
   const staleHtml=readFileSync(join(fixture,'places','fixture-stale','index.html'),'utf8');
   assert.ok(!staleHtml.includes('EDITORIAL PHOTO · NOT LIVE'),'unrelated destination must not inherit another place photo');
   assert.ok(!staleHtml.includes('Stale source local help'),'stale source pages must not activate local planning');
+  assert.ok(!staleHtml.includes('href="#local-places"'),'stale-only page cannot advertise local listing navigation');
+  assert.ok(staleHtml.includes('and its ERN source status.'),'reference-only share must describe source status rather than current availability');
+  assert.ok(!staleHtml.includes('See this current Earth Right Now place'),'reference share must not call the source current');
   const photoInput=inputs['destination-photo-rights-candidates.json'];
   for(const change of [{publicActivationAllowed:false},{status:'PENDING'},{license:'UNVERIFIED'}]){
     const held={...photoInput,candidates:photoInput.candidates.map(p=>({...p,...change}))};

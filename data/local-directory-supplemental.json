@@ -505,5 +505,105 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.hyatt.com/park-hyatt/en-US/aklph-park-hyatt-auckland"
+  },
+  {
+    "id": "local-lake-louise-fairmont",
+    "name": "Fairmont Chateau Lake Louise",
+    "type": "hotel",
+    "place": "Lake Louise",
+    "country": "Canada",
+    "placeId": "canada-banff-lake-louise-lakeshore",
+    "url": "https://www.fairmont.com/en/hotels/lake-louise/fairmont-chateau-lake-louise.html",
+    "summary": "Hotel at Lake Louise in Banff National Park. The official property page covers accommodation, guest services and seasonal activities; confirm current availability and access with the hotel and Parks Canada before planning a stay.",
+    "verifiedAt": "2026-10-10T08:18:48Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.fairmont.com/en/hotels/lake-louise/fairmont-chateau-lake-louise.html"
+  },
+  {
+    "id": "local-lake-louise-arrival",
+    "name": "Lake Louise — Parks Canada visit planning",
+    "type": "visitor information",
+    "place": "Lake Louise",
+    "country": "Canada",
+    "placeId": "canada-banff-lake-louise-lakeshore",
+    "url": "https://parks.canada.ca/pn-np/ab/banff/visit/les10-top10/louise",
+    "summary": "Official Lake Louise and Moraine Lake planning guidance, with links to transit, shuttles, parking and seasonal notices. Review the current access and reservation information before traveling; the Lake Louise camera does not establish access to Moraine Lake.",
+    "verifiedAt": "2026-10-10T08:18:48Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://parks.canada.ca/pn-np/ab/banff/visit/les10-top10/louise"
+  },
+  {
+    "id": "local-taupo-hilton",
+    "name": "Hilton Lake Taupo",
+    "type": "hotel",
+    "place": "Taupō",
+    "country": "New Zealand",
+    "placeId": "nz-taupo-lakefront",
+    "url": "https://www.hilton.com/en/hotels/akllthi-hilton-lake-taupo/",
+    "summary": "Hotel on Napier Road near Lake Taupō, with lake-view dining and accommodation information on the official property page. This is a local stay option, not the lakefront camera location; check current room and guest-service details directly.",
+    "verifiedAt": "2026-10-10T08:18:48Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hilton.com/en/hotels/akllthi-hilton-lake-taupo/"
+  },
+  {
+    "id": "local-taupo-chris-jolly",
+    "name": "Chris Jolly Outdoors — Lake Taupō experiences",
+    "type": "tour operator",
+    "place": "Taupō",
+    "country": "New Zealand",
+    "placeId": "nz-taupo-lakefront",
+    "url": "https://chrisjolly.co.nz/experience/lake-experiences/",
+    "summary": "Taupō operator offering lake cruises and private boat experiences. Check the official trip details, departure arrangements and availability before booking; boat operation depends on the operator and lake conditions.",
+    "verifiedAt": "2026-10-10T08:18:48Z",
+    "status": "APPROVED",
+    "tags": [
+      "tour operator",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://chrisjolly.co.nz/experience/lake-experiences/"
+  },
+  {
+    "id": "local-taupo-arrival",
+    "name": "Taupō — official arrival and local transport guide",
+    "type": "visitor information",
+    "place": "Taupō",
+    "country": "New Zealand",
+    "placeId": "nz-taupo-lakefront",
+    "url": "https://www.lovetaupo.com/en/plan/getting-here-around/",
+    "summary": "Regional tourism guidance for getting to and around Taupō, including road, air and local transport links. Use the linked operators for current routes and services before setting out rather than relying on the lakefront view for travel conditions.",
+    "verifiedAt": "2026-10-10T08:18:48Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lovetaupo.com/en/plan/getting-here-around/"
   }
 ]
