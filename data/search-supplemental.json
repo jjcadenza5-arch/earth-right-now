@@ -11910,7 +11910,7 @@
     ],
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.utsav.gov.in/livedarshan",
     "attribution": "Ministry of Tourism, Government of India / Utsav",
@@ -11924,7 +11924,11 @@
     "watchHold": true,
     "rightsBasis": "Government tourism live-stream directory; ERN links externally and does not restream devotional footage.",
     "freshnessEvidence": "Utsav currently lists Kashi Vishwanath Live Darshan in Varanasi with daily live viewing hours. The current Ministry of Tourism Live Darshan directory exposes 75 live results, reinforcing that the service is actively maintained.",
-    "searchSupplemental": true
+    "searchSupplemental": true,
+    "sourceLinkHold": true,
+    "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
+    "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
   },
   {
     "id": "india-mumbai-siddhivinayak-live",
@@ -11941,7 +11945,7 @@
     ],
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.utsav.gov.in/livedarshan",
     "attribution": "Ministry of Tourism, Government of India / Utsav",
@@ -11955,7 +11959,11 @@
     "watchHold": true,
     "rightsBasis": "Government tourism live-stream directory; ERN links externally and does not restream devotional footage.",
     "freshnessEvidence": "Utsav currently lists Shri Siddhivinayak Ganpati Darshan in Mumbai with live viewing hours. The current Ministry of Tourism Live Darshan directory exposes 75 live results, reinforcing that the service is actively maintained.",
-    "searchSupplemental": true
+    "searchSupplemental": true,
+    "sourceLinkHold": true,
+    "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
+    "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
   },
   {
     "id": "india-ujjain-mahakaleshwar-live",
@@ -11971,7 +11979,7 @@
     ],
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.utsav.gov.in/livedarshan",
     "attribution": "Ministry of Tourism, Government of India / Utsav",
@@ -11985,7 +11993,11 @@
     "watchHold": true,
     "rightsBasis": "Government tourism live-stream directory; ERN links externally and does not restream devotional footage.",
     "freshnessEvidence": "Utsav currently lists Shree Mahakaleshwar Temple Live Darshan in Ujjain with published live hours. The current Ministry of Tourism Live Darshan directory exposes 75 live results, reinforcing that the service is actively maintained.",
-    "searchSupplemental": true
+    "searchSupplemental": true,
+    "sourceLinkHold": true,
+    "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
+    "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
   },
   {
     "id": "india-tirupati-tirumala-live",
@@ -12001,7 +12013,7 @@
     ],
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.utsav.gov.in/livedarshan",
     "attribution": "Ministry of Tourism, Government of India / Utsav",
@@ -12015,7 +12027,11 @@
     "watchHold": true,
     "rightsBasis": "Government tourism live-stream directory; ERN links externally and does not restream devotional footage.",
     "freshnessEvidence": "Utsav currently lists Tirumala Tirupati as a Live Darshan with published live hours. The current Ministry of Tourism Live Darshan directory exposes 75 live results, reinforcing that the service is actively maintained.",
-    "searchSupplemental": true
+    "searchSupplemental": true,
+    "sourceLinkHold": true,
+    "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
+    "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
   },
   {
     "id": "india-bhuj-swaminarayan-live",
@@ -12031,7 +12047,7 @@
     ],
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.utsav.gov.in/livedarshan",
     "attribution": "Ministry of Tourism, Government of India / Utsav",
@@ -12045,7 +12061,11 @@
     "watchHold": true,
     "rightsBasis": "Government tourism live-stream directory; ERN links externally and does not restream devotional footage.",
     "freshnessEvidence": "Utsav currently exposes Bhuj Dham Live Darshan with an explicit Watch Live Streaming action and daily live hours. The current Ministry of Tourism Live Darshan directory exposes 75 live results, reinforcing that the service is actively maintained.",
-    "searchSupplemental": true
+    "searchSupplemental": true,
+    "sourceLinkHold": true,
+    "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
+    "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
   },
   {
     "id": "india-jaipur-govind-devji-live",
@@ -12062,7 +12082,7 @@
     ],
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.utsav.gov.in/livedarshan",
     "attribution": "Ministry of Tourism, Government of India / Utsav",
@@ -12076,7 +12096,11 @@
     "watchHold": true,
     "rightsBasis": "Government tourism live-stream directory; ERN links externally and does not restream devotional footage.",
     "freshnessEvidence": "Utsav currently lists Shree Govind Devji in Jaipur with published live viewing hours. The current Ministry of Tourism Live Darshan directory exposes 75 live results, reinforcing that the service is actively maintained.",
-    "searchSupplemental": true
+    "searchSupplemental": true,
+    "sourceLinkHold": true,
+    "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
+    "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
   },
   {
     "id": "moldova-chisinau-roadcam",
@@ -12274,7 +12298,7 @@
     ],
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.utsav.gov.in/livedarshan",
     "attribution": "Ministry of Tourism, Government of India / Utsav",
@@ -12288,7 +12312,11 @@
     "watchHold": true,
     "rightsBasis": "Official Government of India live-darshan directory; ERN links externally and does not restream devotional footage.",
     "freshnessEvidence": "Utsav currently lists Maa Bamleshwari Mandir, Dongargarh as Live Darshan with near-full-day published viewing hours. The current Ministry of Tourism directory exposes 75 Live Darshan results, indicating the service remains actively maintained.",
-    "searchSupplemental": true
+    "searchSupplemental": true,
+    "sourceLinkHold": true,
+    "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
+    "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
   },
   {
     "id": "india-kolhapur-ambabai-live",
@@ -12304,7 +12332,7 @@
     ],
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.utsav.gov.in/livedarshan",
     "attribution": "Ministry of Tourism, Government of India / Utsav",
@@ -12318,7 +12346,11 @@
     "watchHold": true,
     "rightsBasis": "Official Government of India live-darshan directory; ERN links externally and does not restream devotional footage.",
     "freshnessEvidence": "Utsav currently lists Shree Karveer Niwasini Ambabai Temple, Kolhapur with published live viewing hours. The current Ministry of Tourism directory exposes 75 Live Darshan results, indicating the service remains actively maintained.",
-    "searchSupplemental": true
+    "searchSupplemental": true,
+    "sourceLinkHold": true,
+    "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
+    "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
   },
   {
     "id": "india-pandharpur-vitthal-live",
@@ -12334,7 +12366,7 @@
     ],
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.utsav.gov.in/livedarshan",
     "attribution": "Ministry of Tourism, Government of India / Utsav",
@@ -12348,7 +12380,11 @@
     "watchHold": true,
     "rightsBasis": "Official Government of India live-darshan directory; ERN links externally and does not restream devotional footage.",
     "freshnessEvidence": "Utsav currently lists Shri Vitthal Rukmini Temple Pandharpur with published live viewing hours. The current Ministry of Tourism directory exposes 75 Live Darshan results, indicating the service remains actively maintained.",
-    "searchSupplemental": true
+    "searchSupplemental": true,
+    "sourceLinkHold": true,
+    "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
+    "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
   },
   {
     "id": "india-vijayawada-kanaka-durga-live",
@@ -12364,7 +12400,7 @@
     ],
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.utsav.gov.in/livedarshan",
     "attribution": "Ministry of Tourism, Government of India / Utsav",
@@ -12378,7 +12414,11 @@
     "watchHold": true,
     "rightsBasis": "Official Government of India live-darshan directory; ERN links externally and does not restream devotional footage.",
     "freshnessEvidence": "The current Ministry Live Darshan directory lists Sri Kanakadurga Temple in Andhra Pradesh with a Live Darshan schedule. The current Ministry of Tourism directory exposes 75 Live Darshan results, indicating the service remains actively maintained.",
-    "searchSupplemental": true
+    "searchSupplemental": true,
+    "sourceLinkHold": true,
+    "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
+    "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
   },
   {
     "id": "india-puttaparthi-sathya-sai-live",
@@ -12394,7 +12434,7 @@
     ],
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.utsav.gov.in/livedarshan",
     "attribution": "Ministry of Tourism, Government of India / Utsav",
@@ -12408,7 +12448,11 @@
     "watchHold": true,
     "rightsBasis": "Official Government of India live-darshan directory; ERN links externally and does not restream devotional footage.",
     "freshnessEvidence": "The current Ministry Live Darshan directory lists Sri Sathya Sai temple in Andhra Pradesh as a live-darshan destination. The current Ministry of Tourism directory exposes 75 Live Darshan results, indicating the service remains actively maintained.",
-    "searchSupplemental": true
+    "searchSupplemental": true,
+    "sourceLinkHold": true,
+    "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
+    "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
   },
   {
     "id": "india-nashik-trimbakeshwar-live",
@@ -12424,7 +12468,7 @@
     ],
     "truth": "EXTERNAL_LIVE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.utsav.gov.in/livedarshan",
     "attribution": "Ministry of Tourism, Government of India / Utsav",
@@ -12438,7 +12482,11 @@
     "watchHold": true,
     "rightsBasis": "Official Government of India live-darshan directory; ERN links externally and does not restream devotional footage.",
     "freshnessEvidence": "The current Ministry Live Darshan directory lists Trimbakeshwar Devasthan Trust in Nashik with published live viewing hours. The current Ministry of Tourism directory exposes 75 Live Darshan results, indicating the service remains actively maintained.",
-    "searchSupplemental": true
+    "searchSupplemental": true,
+    "sourceLinkHold": true,
+    "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
+    "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
   },
   {
     "id": "faroe-nolsoy-live",

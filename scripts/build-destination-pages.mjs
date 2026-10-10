@@ -147,14 +147,14 @@ for(const [id,items] of map){
     :"";
 
   const cardFor=s=>{
-    const href=safe(s.officialUrl||s.sourceUrl);
+    const href=s.sourceLinkHold===true?null:safe(s.officialUrl||s.sourceUrl);
     const checked=date(s.lastSuccessfulCheck||s.checkedAt);
     const fresh=checked?' · ERN checked <time datetime="'+esc(checked)+'">'+esc(checked.slice(0,10))+'</time>':" · verification time unavailable";
     const playbackChecked=s.playback==="EMBED"?date(s.playbackVerifiedAt):null;
     const playback=playbackChecked?' · Playback checked <time datetime="'+esc(playbackChecked)+'">'+esc(playbackChecked.slice(0,10))+'</time>':"";
     const externalCurrent=pageCurrentSource(s,buildNow)&&s.playback==="EXTERNAL";
     const mode=s.playback==="EMBED"?"Playback: embedded in ERN":externalCurrent?"Playback: live stream available at source":s.playback==="IMAGE_REFRESH"?"Playback: refreshed current image":"Playback: provider source";
-    const link=href?' · <a href="'+esc(href)+'" rel="noopener noreferrer">'+(externalCurrent?"Open live source":"Provider source")+'</a>':"";
+    const link=s.sourceLinkHold===true?' · Provider link paused pending security review':href?' · <a href="'+esc(href)+'" rel="noopener noreferrer">'+(externalCurrent?"Open live source":"Provider source")+'</a>':"";
     const availability=sourceAvailabilityState(s,{now:buildNow});
     const playbackFresh=embedPlaybackProofCurrent(s,{now:buildNow});
     const truth=!playbackFresh&&s.playback==="EMBED"?"PLAYBACK RECHECK DUE":availability.restricted&&!availability.open?"OUTSIDE LIVE HOURS":currentWindowEyebrow(s,{now:buildNow});
