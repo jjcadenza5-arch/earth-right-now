@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-10 — Old Faithful Snow Lodge direct visitor-planning improvement
+- Replaced the broad Old Faithful lodging listing URL with the operator's exact Snow Lodge page in `data/local-directory-supplemental.json` (commit `a86840a552cf4a20428fc2ea014a38fd5bf53301`).
+- The first-party concessioner page includes the 2051 Snow Lodge Ave check-in address, operating dates, and winter oversnow-transport caveat. Updated the local description to direct visitors to check dates and transport instead of assuming year-round drive-in access. National Park Service confirms the Snow Lodge's winter access needs commercial snowcoach/snowmobile.
+- Existing exact `yellowstone-old-faithful` place binding, unpaid/non-affiliate nature, approval state and original review timestamp retained. No new source or playback claim, booking availability, commission, ranking, map, or startup code change.
+- This is a visitor-facing link and explanation improvement; GitHub Actions and live visitor click behavior for this commit are not yet independently confirmed.
+
+
 ## 2026-10-10 — Kyoto exact-destination search improvement and official camera research
 - Added 15 meaningful Japanese/English destination-name aliases across existing Kyoto Fushimi Inari, Kifune, Kiyomizuzaka, Gion Hanamikoji and Nishiki Market place IDs in `data/place-search-aliases.json`; commit `e8411739e5aec1e1950621b9ee0da426635c9627`. This improves search-to-discovery retrieval without changing source records, editorial ranking or commercial placements.
 - Rechecked the official Kyoto tourism congestion live-camera network at `https://global.kyoto.travel/en/comfort/` and DMO Kyoto's streams pointer `https://www.youtube.com/@DMOKYOTO/streams`. Updated the existing Kyoto research candidate only (commit `e1964587062d95509deb5e16cc4098e681b2780b`). Selected live-camera coverage exists, but exact individually authorized playback inside ERN was **not** verified. No LIVE promotion, embed permission, or `playbackVerifiedAt` change.
