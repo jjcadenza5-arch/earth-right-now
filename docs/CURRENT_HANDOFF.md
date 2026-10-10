@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-10 — My Earth compact-card preview fallback strengthened
+- Owner's 11:08 Thailand-time Safari screenshots confirm Watch Earth remains visually consistent, but My Earth Recent and Continue exploring cards display some broad illustrative placeholders; Local Earth external sources also lack camera-supplied thumbnails. Neither condition proves provider playback failure.
+- Inspected the shared `compactVisual(s)` renderer in `src/app-lite.js`; it was still adding `scenicPoster(s)` only if there was no image URL (or an error occurred), unlike the already-updated Wander card renderer.
+- Commit `08190d17ad6d9f2d7eae877e0a594a6f755784cb` draws ERN's existing clearly-labelled illustrative scenery behind the optional image in compact result/My Earth cards from first paint. It keeps source thumbnails on top when they load, and preserves the existing failed-image event, truth labelling, click destinations and existing card layout. No new images, source permissions, media traffic, playback evidence, startup dependency or redesign. Five source-code characters fewer than before.
+- Remote providers without permitted thumbnail content retain honest illustrative backgrounds. Do not claim the new fallback gives those cards real photos; source-verified imagery requires separate permissions/provenance.
+- GitHub Pages and deployed Safari rendering of this commit are not yet confirmed. Do not change source health or playback proof from static preview screenshots.
+
+
 ## 2026-10-10 — Second five-camera human playback batch accepted with Verbier hold retained
 - Owner supplied the ERN review-lab packet `reviewBatch: edeb4345f3368fcf`, generated `2026-10-10T04:01:24.308Z`, with five `HUMAN_PLAYBACK_CONFIRMED` items, and a screenshot of deployed `/review/current.json` confirming the **exact matching batch ID**, generated `2026-10-10T03:52:51.671Z`, and the same five `primaryInside` IDs.
 - Exact canonical source IDs and embed URLs all match. Recorded only `playbackVerifiedAt` from the original user evidence: Nishiki Market `04:00:58.428Z`, Verbier `04:01:03.725Z`, Yehliu Geopark `04:01:09.259Z`, Kifune Shrine `04:01:15.608Z`, Fushimi Inari `04:01:21.010Z`. Source catalog commit `c17c655e54216f0543fbcb3a9c6235600b947606`.
