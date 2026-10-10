@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-10 — Verbier live lift-condition planning link
+- Following owner-confirmed green Pages after the screenshot-led destination-card fallback improvement, reviewed official `verbier4vallees.ch` visitor information. The ski area's first-party live-opening page `https://verbier4vallees.ch/en/useful-information/live-information-summer` provides status and hours for mountain lifts, destination sectors and seasonal activities; it also links to winter 2026/27 opening hours.
+- Improved the existing unpaid, non-affiliate Local Earth `local-verbier-4vallees` listing at exact `verbier` place ID to open that operational page directly, and described checking lift status and access **before** travel. Commit `04883c5069c4102a057cd03b085c9df58386699b`. Did not claim any particular lift is currently open and did not add a new live camera.
+- This change affects one supplemental data listing only: no changes to ERN interface, source truth, approved camera/playback evidence, other venue reviews, ranking, affiliate status, startup JS or core budgets. Original verifiedAt retained. Next Pages status and deployed click-through still require confirmation.
+
+
 ## 2026-10-10 — Screenshot-led Wander / Local Earth thumbnail resilience
 - Owner shared Safari screenshots of the live public site: Watch Earth previews showed several recognizable camera posters; Keep Wandering and Local Earth also showed several almost-empty dark cards for external/current image destinations. No evidence of any video failing was supplied; do not infer provider playback health from missing card art.
 - Inspected `wanderCard()` in `src/app-lite.js`: before this change, the existing `scenicPoster(s)` fallback was appended **only** when no thumbnail URL was present or after an actual `error` event. An unresolved image with a URL could therefore lack a scenic underlay until its request failed.
