@@ -28,6 +28,7 @@ on:
       - "src/styles-lite.css"
       - "data/sources.json"
       - "data/search-supplemental.json"
+      - "data/destination-photo-rights-candidates.json"
       - "data/place-search-aliases.json"
       - "scripts/place-search-alias-status.mjs"
       - "data/source-research-priorities.json"

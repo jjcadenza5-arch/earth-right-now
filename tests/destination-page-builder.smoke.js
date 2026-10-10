@@ -72,16 +72,29 @@ try{
   const stale={...current,id:'fixture-stale',placeId:'fixture-stale',checkedAt:'2025-01-01T00:00:00Z',lastSuccessfulCheck:'2025-01-01T00:00:00Z',playbackVerifiedAt:'2025-01-01T00:00:00Z'};
   const good=JSON.parse(readFileSync(new URL('../data/local-directory-supplemental.json',import.meta.url),'utf8')).find(x=>x.id==='local-santa-claus-office');
   const row=(id,changes={})=>({...good,id,name:id,...changes});
-  const inputs={'sources.json':[current,stale],'search-supplemental.json':[],'place-search-aliases.json':{places:{}},'travel-offers.json':[],'affiliate-partners.json':[],'destination-photo-rights-candidates.json':{publicActivationAllowed:false,candidates:[]},'local-directory.json':[], 'local-directory-supplemental.json':[row('Supplemental visitor help'),row('Expired local help',{verifiedAt:'2025-01-01T00:00:00Z'}),row('Paid local help',{paidPlacement:true}),row('Affiliate local help',{affiliate:true}),row('Unapproved local help',{status:'PENDING'}),row('Wrong destination help',{placeId:'elsewhere'}),row('Stale source local help',{placeId:'fixture-stale'})]};
+  const inputs={'sources.json':[current,stale],'search-supplemental.json':[],'place-search-aliases.json':{places:{}},'travel-offers.json':[],'affiliate-partners.json':[],'destination-photo-rights-candidates.json':JSON.parse(readFileSync(new URL('../data/destination-photo-rights-candidates.json',import.meta.url),'utf8')),'local-directory.json':[], 'local-directory-supplemental.json':[row('Supplemental visitor help'),row('Expired local help',{verifiedAt:'2025-01-01T00:00:00Z'}),row('Paid local help',{paidPlacement:true}),row('Affiliate local help',{affiliate:true}),row('Unapproved local help',{status:'PENDING'}),row('Wrong destination help',{placeId:'elsewhere'}),row('Stale source local help',{placeId:'fixture-stale'})]};
   for(const [name,value]of Object.entries(inputs))writeFileSync(join(fixture,'data',name),JSON.stringify(value));
   const builderPath=fileURLToPath(new URL('../scripts/build-destination-pages.mjs',import.meta.url));
   const code=`const NativeDate=Date;globalThis.Date=class extends NativeDate{constructor(...a){super(...(a.length?a:['2026-10-10T05:00:00Z']))}static now(){return NativeDate.parse('2026-10-10T05:00:00Z')}};await import(${JSON.stringify(builderPath)});`;
   const result=spawnSync(process.execPath,['--input-type=module','-e',code],{cwd:fixture,encoding:'utf8'});
   assert.equal(result.status,0,result.stderr);
   const html=readFileSync(join(fixture,'places',current.placeId,'index.html'),'utf8');
+  assert.ok(html.includes('EDITORIAL PHOTO · NOT LIVE'),'approved matched photo must keep a truthful editorial label');
+  assert.ok(html.includes('Moskenes'),'photographer attribution must be visible');
+  assert.ok(html.includes('https://creativecommons.org/licenses/by-sa/4.0/'),'license link must be visible');
+  assert.ok(html.includes('Santa_Claus_Village_11.jpg'),'exact source file must be linked');
   assert.ok(html.includes('Supplemental visitor help'),'approved supplemental help must reach the generated destination');
   for(const name of ['Expired local help','Paid local help','Affiliate local help','Unapproved local help','Wrong destination help'])assert.ok(!html.includes(name),name+' must stay excluded');
   const staleHtml=readFileSync(join(fixture,'places','fixture-stale','index.html'),'utf8');
+  assert.ok(!staleHtml.includes('EDITORIAL PHOTO · NOT LIVE'),'unrelated destination must not inherit another place photo');
   assert.ok(!staleHtml.includes('Stale source local help'),'stale source pages must not activate local planning');
+  const photoInput=inputs['destination-photo-rights-candidates.json'];
+  for(const change of [{publicActivationAllowed:false},{status:'PENDING'},{license:'UNVERIFIED'}]){
+    const held={...photoInput,candidates:photoInput.candidates.map(p=>({...p,...change}))};
+    writeFileSync(join(fixture,'data','destination-photo-rights-candidates.json'),JSON.stringify(held));
+    const rerun=spawnSync(process.execPath,['--input-type=module','-e',code],{cwd:fixture,encoding:'utf8'});
+    assert.equal(rerun.status,0,rerun.stderr);
+    assert.ok(!readFileSync(join(fixture,'places',current.placeId,'index.html'),'utf8').includes('EDITORIAL PHOTO · NOT LIVE'),'held or unverified photo must not render');
+  }
   console.log('Generated destination HTML includes supplemental help while preserving review, place and source gates');
 }finally{rmSync(fixture,{recursive:true,force:true});}

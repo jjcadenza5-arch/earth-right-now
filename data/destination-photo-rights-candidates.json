@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "reviewDate": "2026-10-10",
   "publicActivationAllowed": true,
-  "purpose": "Two individually verified CC BY-SA 4.0 editorial photos for matching ERN destination pages only. Photos are not live previews or camera verification evidence.",
+  "purpose": "Individually verified CC BY-SA 4.0 editorial photos for matching ERN destination pages only. Photos are not live previews or camera verification evidence.",
   "requirements": {
     "recheckFilePageLicenseAtUse": true,
     "checkLicenseAttributionAuthorSourceAndAdaptation": true,
@@ -40,6 +40,48 @@
       "publicActivationAllowed": true,
       "licenseRecheckedAt": "2026-10-10",
       "attributionChanges": "Displayed at original aspect ratio; browser scales down responsively; no editorial alteration"
+    },
+    {
+      "placeId": "auckland-viaduct-harbour",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Viaduct_Harbour.jpg",
+      "creator": "Nurg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "Wikimedia Commons",
+      "dateTaken": "2021-12-20",
+      "status": "APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY",
+      "note": "Exact source file page and license reviewed; downloaded thumbnail visually inspected for destination match. Historical editorial photo, not a camera frame or evidence of present conditions. No endorsement implied.",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Viaduct_Harbour.jpg/960px-Viaduct_Harbour.jpg",
+      "imageWidth": 960,
+      "imageHeight": 720,
+      "alt": "Boats and waterfront buildings at Auckland Viaduct Harbour",
+      "publicActivationAllowed": true,
+      "licenseRecheckedAt": "2026-10-10",
+      "attributionChanges": "Displayed at original aspect ratio; browser scales down responsively; no editorial alteration",
+      "inspectedPreviewSha256": "da0ac90ea9ee06f0fc3816c241332aeb3f4c258541fe095f203c3da7f1cfeeec",
+      "inspectedPreviewBytes": 211815,
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Viaduct_Harbour.jpg&oldid=1225423461"
+    },
+    {
+      "placeId": "kyoto-kifune-shrine",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Kifune-jinja_Shint%C3%B4_Shrine_-_Stone_steps.jpg",
+      "creator": "Yanajin33",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "Wikimedia Commons",
+      "dateTaken": "2014-11-23",
+      "status": "APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY",
+      "note": "Exact source file page and license reviewed; downloaded thumbnail visually inspected for destination match. Historical editorial photo, not a camera frame or evidence of present conditions. No endorsement implied.",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Kifune-jinja_Shint%C3%B4_Shrine_-_Stone_steps.jpg/500px-Kifune-jinja_Shint%C3%B4_Shrine_-_Stone_steps.jpg",
+      "imageWidth": 500,
+      "imageHeight": 667,
+      "alt": "Visitors on the stone steps between red lanterns at Kyoto Kifune Shrine",
+      "publicActivationAllowed": true,
+      "licenseRecheckedAt": "2026-10-10",
+      "attributionChanges": "Displayed at original aspect ratio; browser scales down responsively; no editorial alteration",
+      "inspectedPreviewSha256": "7892f6716e89ba8cef7fe54b37e6971e1e18b66d94b62cfe4a05510009137f73",
+      "inspectedPreviewBytes": 131109,
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Kifune-jinja_Shint%C3%B4_Shrine_-_Stone_steps.jpg&oldid=1119290401"
     }
   ]
 }
