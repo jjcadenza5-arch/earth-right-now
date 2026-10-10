@@ -16,7 +16,7 @@ const placeSearchAliases=JSON.parse(fs.readFileSync("data/place-search-aliases.j
 const placeAliases=id=>Array.isArray(placeSearchAliases?.places?.[id])?placeSearchAliases.places[id]:[];
 const sources=[...coreSources,...searchSupplemental];
 const travelOffers=JSON.parse(fs.readFileSync("data/travel-offers.json","utf8"));
-const localDirectory=JSON.parse(fs.readFileSync("data/local-directory.json","utf8"));
+const localDirectory=[...JSON.parse(fs.readFileSync("data/local-directory.json","utf8")),...JSON.parse(fs.readFileSync("data/local-directory-supplemental.json","utf8"))];
 const affiliatePartners=JSON.parse(fs.readFileSync("data/affiliate-partners.json","utf8"));
 const editorialPhotos=JSON.parse(fs.readFileSync("data/destination-photo-rights-candidates.json","utf8"));
 const editorialFor=id=>editorialPhotos.publicActivationAllowed?editorialPhotos.candidates.find(p=>p.placeId===id&&p.publicActivationAllowed===true&&p.status==="APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY"&&p.license==="CC BY-SA 4.0"&&p.imageUrl?.startsWith("https://")&&p.filePage?.startsWith("https://commons.wikimedia.org/")&&p.licenseUrl==="https://creativecommons.org/licenses/by-sa/4.0/"):null;
