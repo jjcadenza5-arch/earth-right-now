@@ -36,6 +36,15 @@ These are alternatives for a later owner-managed post, not additional scheduled 
 | Sorobon windsurf curiosity | https://earthrightnow.app/places/bonaire-sorobon-lac-bay/ | Would you watch from shore or learn to windsurf? Open the provider view, then compare the lesson, stay and dining information and check STINAPA activity-zone guidance. |
 | A sanctuary visit | https://earthrightnow.app/places/bonaire-donkey-sanctuary/ | What would you want to know before visiting these donkeys? Explore the provider webcams, then check the operator's arrival, last-entry and animal-care guidance. A webcam does not promise a particular animal encounter. |
 
+## Indian Ocean follow-up themes
+
+Alternatives for a later owner-managed post; source status and visual reuse rights still need an immediate check before publishing. These destinations link to provider-hosted sources. Keep camera footage and room-view planning photographs clearly distinct.
+
+| Theme | Entry page | Invitation and useful next step |
+| --- | --- | --- |
+| Mauritius room-view curiosity | https://earthrightnow.app/places/mauritius-shanti-maurice/ | Which view would you choose for a stay? Open the coastal source, then compare the operator’s suite/villa view map and check the exact room category, dining plan and arrival arrangements. |
+| Beau Vallon beyond the beach | https://earthrightnow.app/places/seychelles-beau-vallon/ | What would you want to know before spending a day here? Explore the source, then the reviewed accommodation, restaurant and airport-pickup guidance. A beach view does not establish room or dining availability. |
+
 On Facebook, put the relevant ERN destination or collection URL in the post. On Instagram, make that relevant URL the profile link for the current campaign, or use a Story link where your account offers it. A caption URL should not be treated as a guaranteed clickable link. Linking the accounts does not establish that posts are cross-published; check what actually appeared on each profile.
 
 Keep the canonical domain visible. Suggested cautious profile wording: “Earth Right Now — The Live Discovery Engine. Discover real places through live views and official sources. See before you go.” This describes the current bridge to sources without promising universal live weather, present playback at every destination, or gated features.
