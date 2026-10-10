@@ -785,5 +785,145 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://tourismtofino.com/plan-your-trip/getting-here/"
+  },
+  {
+    "id": "local-rusutsu-resort-hotel",
+    "name": "Rusutsu Resort Hotel & Convention",
+    "type": "hotel",
+    "place": "Rusutsu",
+    "country": "Japan",
+    "placeId": "japan-rusutsu",
+    "url": "https://rusutsu.com/en/rusutsu-resort-hotel-and-convention/",
+    "summary": "Official resort hotel information for stays at Rusutsu in Hokkaido. Check its operating-period notices and current room availability before planning a stay: seasonal transition closures can affect accommodation and facilities.",
+    "verifiedAt": "2026-10-10T09:06:24Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://rusutsu.com/en/rusutsu-resort-hotel-and-convention/"
+  },
+  {
+    "id": "local-rusutsu-dining",
+    "name": "Rusutsu Resort — official dining guide",
+    "type": "restaurant",
+    "place": "Rusutsu",
+    "country": "Japan",
+    "placeId": "japan-rusutsu",
+    "url": "https://rusutsu.com/en/dining/",
+    "summary": "Official overview of dining across Rusutsu Resort. Check each venue’s current opening status, reservation arrangements and seasonal availability directly; a mountain view does not establish that a restaurant is open.",
+    "verifiedAt": "2026-10-10T09:06:24Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://rusutsu.com/en/dining/"
+  },
+  {
+    "id": "local-rusutsu-airport-bus",
+    "name": "Rusutsu — New Chitose Airport bus planning",
+    "type": "visitor information",
+    "place": "Rusutsu",
+    "country": "Japan",
+    "placeId": "japan-rusutsu",
+    "url": "https://rusutsu.com/en/access-shuttle-bus-new-chitose-airport/",
+    "summary": "Operator guidance for the airport–Rusutsu bus, with booking, boarding and seasonal service details. Check the current timetable, reservation deadlines and luggage arrangements before traveling rather than relying on the resort view for transport availability.",
+    "verifiedAt": "2026-10-10T09:06:24Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://rusutsu.com/en/access-shuttle-bus-new-chitose-airport/"
+  },
+  {
+    "id": "local-furano-shin-prince",
+    "name": "Shin Furano Prince Hotel",
+    "type": "hotel",
+    "place": "Furano",
+    "country": "Japan",
+    "placeId": "japan-furano-ski",
+    "url": "https://www.princehotels.com/shinfurano/",
+    "summary": "Hotel in the Furano resort area with official accommodation and facility information. Review current maintenance-closure notices, seasonal facilities and room availability before making plans; the ski-area camera does not establish hotel or lift operation.",
+    "verifiedAt": "2026-10-10T09:06:24Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.princehotels.com/shinfurano/"
+  },
+  {
+    "id": "local-furano-hotel-arrival",
+    "name": "Furano — Shin Furano Prince Hotel arrival guide",
+    "type": "visitor information",
+    "place": "Furano",
+    "country": "Japan",
+    "placeId": "japan-furano-ski",
+    "url": "https://www.princehotels.com/shinfurano/map-direction/",
+    "summary": "Official directions to the hotel from Furano Station, Asahikawa Airport and New Chitose Airport, with road and bus options. This guide is specific to the hotel rather than every ski-area entrance; check linked operators for current routes and services.",
+    "verifiedAt": "2026-10-10T09:06:24Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.princehotels.com/shinfurano/map-direction/"
+  },
+  {
+    "id": "local-oshima-tokyo-guide",
+    "name": "Izu Oshima — official Tokyo visitor and arrival guide",
+    "type": "visitor information",
+    "place": "Izu Oshima",
+    "country": "Japan",
+    "placeId": "japan-izu-oshima",
+    "url": "https://www.gotokyo.org/en/destinations/izu-and-ogasawara-islands/oshima-island/index.html",
+    "summary": "GO TOKYO island guidance covering access by boat or air and local points of interest. Confirm the current service, departure terminal and arrival port with the operator before traveling; the port camera does not guarantee a sailing or flight.",
+    "verifiedAt": "2026-10-10T09:06:24Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.gotokyo.org/en/destinations/izu-and-ogasawara-islands/oshima-island/index.html"
+  },
+  {
+    "id": "local-hachijojima-access",
+    "name": "Hachijojima — official island transport guide",
+    "type": "visitor information",
+    "place": "Hachijojima",
+    "country": "Japan",
+    "placeId": "japan-hachijojima",
+    "url": "https://www.islandaccess.metro.tokyo.lg.jp/en/island/hachijojima/",
+    "summary": "Tokyo’s island transport guide links passenger-ship, air and helicopter access information for Hachijojima. Check current operations and the arrival port before setting out; a harbour image does not confirm ferry service or onward island connections.",
+    "verifiedAt": "2026-10-10T09:06:24Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.islandaccess.metro.tokyo.lg.jp/en/island/hachijojima/"
   }
 ]
