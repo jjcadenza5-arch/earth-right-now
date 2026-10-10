@@ -7,7 +7,7 @@ export function eligibleVisual(card){
   return card.querySelector('.result-visual[data-visual-kind="illustrative"],.wander-visual[data-visual-kind="illustrative"]');
 }
 function credit(photo){
-  const p=document.createElement("p");p.className="photo-credit";p.append("Photo: ");
+  const p=document.createElement("p");p.className="photo-credit";p.append(photo.dateTaken?`Photo dated ${photo.dateTaken} · `:"Archival photo · ","Photo: ");
   for(const [label,url] of [[photo.creator,photo.filePage],[photo.license,photo.licenseUrl]]){
     const a=document.createElement("a");a.textContent=label;a.href=url;a.target="_blank";a.rel="noopener noreferrer";p.append(a," · ");
   }

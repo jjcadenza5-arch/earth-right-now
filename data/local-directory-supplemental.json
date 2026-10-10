@@ -363,5 +363,27 @@
     "paidPlacement": false,
     "affiliate": false,
     "reviewBasis": "OFFICIAL_DESTINATION_VISITOR_PAGE"
+  },
+  {
+    "id": "local-oeschinensee-visitor-faq",
+    "name": "Oeschinensee — official arrival and visit planning",
+    "type": "visitor information",
+    "place": "Oeschinensee / Kandersteg",
+    "country": "Switzerland",
+    "placeId": "oeschinensee",
+    "summary": "Check the operator’s official FAQ for arrival by public transport, cable-car reservations, parking and mobility support. Review the linked operating status and route notices before setting out; a lake photograph does not establish trail access or current conditions.",
+    "url": "https://www.oeschinensee.ch/en/faq/",
+    "verifiedAt": "2026-10-10T07:24:59Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "tags": [
+      "official visitor information",
+      "transport",
+      "access",
+      "cable car",
+      "kandersteg"
+    ],
+    "reviewBasis": "OFFICIAL_DESTINATION_VISITOR_PAGE"
   }
 ]
