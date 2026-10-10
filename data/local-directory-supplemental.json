@@ -239,7 +239,7 @@
     "place": "Auckland Viaduct Harbour",
     "country": "New Zealand",
     "summary": "Italian waterfront dining venue listed in the official Viaduct Harbour hospitality directory.",
-    "url": "https://www.barziti.co.nz/bivacco",
+    "url": "https://www.viaduct.co.nz/eat-and-drink/bivacco",
     "verifiedAt": "2026-10-09T14:00:00Z",
     "status": "APPROVED",
     "placeId": "auckland-viaduct-harbour",
@@ -251,8 +251,8 @@
     ],
     "paidPlacement": false,
     "affiliate": false,
-    "addressBasis": "FIRST_PARTY_RESTAURANT_PAGE",
-    "addressSourceUrl": "https://www.barziti.co.nz/bivacco",
+    "addressBasis": "OFFICIAL_VIADUCT_HARBOUR_VENUE_PAGE",
+    "addressSourceUrl": "https://www.viaduct.co.nz/eat-and-drink/bivacco",
     "address": "115 Customs Street West, Auckland CBD, New Zealand"
   }
 ]
