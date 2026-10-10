@@ -33,9 +33,12 @@
         "Philosopher's Path",
         "Kyoto Station"
       ],
-      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "state": "OFFICIAL_CAMERA_INDEX_CONFIRMED_PER_CAMERA_PLAYBACK_UNVERIFIED",
       "why": "Official tourism cameras are explicitly used to show real-time visitor conditions and congestion before/during visits; exceptionally close match to ERN mission.",
-      "next": "Resolve durable per-camera URLs, truth type, permission/link-only behavior, currentness and playback."
+      "next": "Official Kyoto Travel Comfort Map documents selected real-time cameras and the Kyoto Tourist Information FAQ points to DMO KYOTO streams. Find exact individual stream IDs, permitted embedding and fresh rendered playback evidence before any inside-ERN promotion. Seasonal portable festival streams must not be presented as persistent live.",
+      "officialIndexEvidence": "https://global.kyoto.travel/en/comfort/",
+      "officialStreamListing": "https://www.youtube.com/@DMOKYOTO/streams",
+      "lastAuthorityReviewDate": "2026-10-10"
     },
     {
       "id": "london-official-tourism-webcams",
