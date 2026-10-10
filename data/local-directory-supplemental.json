@@ -1260,5 +1260,158 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://malolocat.com/transfers/bus-connections/"
+  },
+  {
+    "id": "local-beach-view-barbados",
+    "name": "Beach View Barbados",
+    "type": "hotel",
+    "place": "Paynes Bay, St. James",
+    "country": "Barbados",
+    "placeId": "barbados-paynes-bay",
+    "url": "https://www.beachviewbarbados.com/",
+    "summary": "Hotel with rooms, suites and villas across the road from Paynes Bay. Check current accommodation and guest arrangements directly; the bay camera does not establish room availability or access to hotel facilities.",
+    "verifiedAt": "2026-10-10T12:17:29Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "Paynes Bay",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.beachviewbarbados.com/"
+  },
+  {
+    "id": "local-sugar-apple-cafe",
+    "name": "Sugar Apple Café at Beach View",
+    "type": "restaurant",
+    "place": "Paynes Bay, St. James",
+    "country": "Barbados",
+    "placeId": "barbados-paynes-bay",
+    "url": "https://www.beachviewbarbados.com/our-hotel/",
+    "summary": "Poolside café within Beach View, with a shaded terrace and breakfast, lunch and dinner options. Confirm current menus, opening times and non-resident dining arrangements with the hotel before visiting.",
+    "verifiedAt": "2026-10-10T12:17:29Z",
+    "status": "APPROVED",
+    "tags": [
+      "café",
+      "Paynes Bay",
+      "local food"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.beachviewbarbados.com/our-hotel/"
+  },
+  {
+    "id": "local-paynes-bay-location-guide",
+    "name": "Beach View — Paynes Bay location guide",
+    "type": "visitor information",
+    "place": "Paynes Bay, St. James",
+    "country": "Barbados",
+    "placeId": "barbados-paynes-bay",
+    "url": "https://www.beachviewbarbados.com/where-we-are/",
+    "summary": "The hotel’s local guide places Paynes Bay across the road and describes nearby west-coast dining and Holetown. Plan your actual beach access and road crossing, and check sea conditions locally before swimming; the camera cannot establish safe access or swimming conditions.",
+    "verifiedAt": "2026-10-10T12:17:29Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "beach access",
+      "Paynes Bay",
+      "Holetown"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.beachviewbarbados.com/where-we-are/"
+  },
+  {
+    "id": "local-barbados-transport-routes",
+    "name": "Barbados Transport Authority — routes and schedules",
+    "type": "visitor information",
+    "place": "Paynes Bay, St. James",
+    "country": "Barbados",
+    "placeId": "barbados-paynes-bay",
+    "url": "https://ta.gov.bb/routes/",
+    "summary": "Official route and schedule resources for Transport Board buses, minibuses and route taxis. Check the route, operator, current stops and onward connection for your Paynes Bay trip before travel rather than assuming every service follows the same timetable.",
+    "verifiedAt": "2026-10-10T12:17:29Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "bus routes",
+      "arrival",
+      "Barbados"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://ta.gov.bb/routes/"
+  },
+  {
+    "id": "local-saba-rock-stay",
+    "name": "Saba Rock — rooms and suites",
+    "type": "hotel",
+    "place": "Saba Rock, North Sound, Virgin Gorda",
+    "country": "British Virgin Islands",
+    "placeId": "bvi-saba-rock",
+    "url": "https://sabarock.com/stay",
+    "summary": "Island accommodation in North Sound off Virgin Gorda. Check current rooms, booking terms and boat arrival arrangements with the property; Saba Rock in the British Virgin Islands is distinct from the Dutch Caribbean island of Saba.",
+    "verifiedAt": "2026-10-10T12:17:29Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "Saba Rock",
+      "Virgin Gorda",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://sabarock.com/stay"
+  },
+  {
+    "id": "local-saba-rock-dining",
+    "name": "Saba Rock — restaurant and bars",
+    "type": "restaurant",
+    "place": "Saba Rock, North Sound, Virgin Gorda",
+    "country": "British Virgin Islands",
+    "placeId": "bvi-saba-rock",
+    "url": "https://sabarock.com/eat-and-drink",
+    "summary": "Official dining overview for the island restaurant and bars, including the Sunset Bar. Consult current menus and table or day-visitor arrangements, and plan your return boat connection before visiting.",
+    "verifiedAt": "2026-10-10T12:17:29Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "Saba Rock",
+      "North Sound",
+      "local food"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://sabarock.com/eat-and-drink"
+  },
+  {
+    "id": "local-saba-rock-arrival",
+    "name": "Saba Rock — official arrival guide",
+    "type": "visitor information",
+    "place": "Saba Rock, North Sound, Virgin Gorda",
+    "country": "British Virgin Islands",
+    "placeId": "bvi-saba-rock",
+    "url": "https://sabarock.com/getting-here",
+    "summary": "Property arrival guide for North Sound, including onward boat connections from Virgin Gorda and guest ferry arrangements from Gun Creek. Confirm current flights, pickup point, guest eligibility, boat timing and weather with the front desk before travel.",
+    "verifiedAt": "2026-10-10T12:17:29Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "island transfers",
+      "Gun Creek",
+      "Virgin Gorda",
+      "arrival"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://sabarock.com/getting-here"
   }
 ]
