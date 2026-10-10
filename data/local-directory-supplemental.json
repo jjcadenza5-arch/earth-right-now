@@ -171,7 +171,7 @@
     "place": "Santa Claus Village, Rovaniemi",
     "country": "Finland",
     "summary": "Year-round Santa Claus meeting attraction at the Arctic Circle; check the official opening-hours page before visiting.",
-    "url": "https://santaclausvillage.info/activities/santa-claus-office/",
+    "url": "https://santaclausoffice.com/location/",
     "verifiedAt": "2026-10-09T14:00:00Z",
     "status": "APPROVED",
     "placeId": "rovaniemi-santa-claus-village",
@@ -183,8 +183,9 @@
     ],
     "paidPlacement": false,
     "affiliate": false,
-    "addressBasis": "OFFICIAL_VILLAGE_ACTIVITY_PAGE",
-    "addressSourceUrl": "https://santaclausvillage.info/activities/santa-claus-office/"
+    "addressBasis": "FIRST_PARTY_OFFICIAL_LOCATION",
+    "addressSourceUrl": "https://santaclausoffice.com/location/",
+    "address": "Joulumaantie 1, 96930 Arctic Circle, Rovaniemi, Finland"
   },
   {
     "id": "local-santa-post-office",
@@ -193,7 +194,7 @@
     "place": "Santa Claus Village, Rovaniemi",
     "country": "Finland",
     "summary": "Arctic Circle postal attraction with seasonally listed visiting hours; consult the official Santa Claus Village schedule.",
-    "url": "https://santaclausvillage.info/info-and-tips/opening-hours-and-dates/",
+    "url": "https://my.posti.fi/en/santa-claus-main-post-office",
     "verifiedAt": "2026-10-09T14:00:00Z",
     "status": "APPROVED",
     "placeId": "rovaniemi-santa-claus-village",
@@ -205,8 +206,9 @@
     ],
     "paidPlacement": false,
     "affiliate": false,
-    "addressBasis": "OFFICIAL_VILLAGE_OPENING_HOURS",
-    "addressSourceUrl": "https://santaclausvillage.info/info-and-tips/opening-hours-and-dates/"
+    "addressBasis": "FIRST_PARTY_POSTAL_OPERATOR",
+    "addressSourceUrl": "https://my.posti.fi/en/santa-claus-main-post-office",
+    "address": "Tähtikuja 1, 96930 Arctic Circle, Rovaniemi, Finland"
   },
   {
     "id": "local-soul-bar-auckland",
@@ -215,7 +217,7 @@
     "place": "Auckland Viaduct Harbour",
     "country": "New Zealand",
     "summary": "Waterfront restaurant and bistro listed in the official Viaduct Harbour dining directory.",
-    "url": "https://www.viaduct.co.nz/eat-and-drink",
+    "url": "https://soulbar.co.nz/about-us/",
     "verifiedAt": "2026-10-09T14:00:00Z",
     "status": "APPROVED",
     "placeId": "auckland-viaduct-harbour",
@@ -226,8 +228,9 @@
     ],
     "paidPlacement": false,
     "affiliate": false,
-    "addressBasis": "OFFICIAL_VIADUCT_HARBOUR_DIRECTORY",
-    "addressSourceUrl": "https://www.viaduct.co.nz/eat-and-drink"
+    "addressBasis": "FIRST_PARTY_RESTAURANT_CONTACT",
+    "addressSourceUrl": "https://soulbar.co.nz/about-us/",
+    "address": "18 Lower Hobson Street, Auckland Central 1010, New Zealand"
   },
   {
     "id": "local-bivacco-auckland",
@@ -236,7 +239,7 @@
     "place": "Auckland Viaduct Harbour",
     "country": "New Zealand",
     "summary": "Italian waterfront dining venue listed in the official Viaduct Harbour hospitality directory.",
-    "url": "https://www.viaduct.co.nz/eat-and-drink",
+    "url": "https://www.barziti.co.nz/bivacco",
     "verifiedAt": "2026-10-09T14:00:00Z",
     "status": "APPROVED",
     "placeId": "auckland-viaduct-harbour",
@@ -248,7 +251,8 @@
     ],
     "paidPlacement": false,
     "affiliate": false,
-    "addressBasis": "OFFICIAL_VIADUCT_HARBOUR_DIRECTORY",
-    "addressSourceUrl": "https://www.viaduct.co.nz/eat-and-drink"
+    "addressBasis": "FIRST_PARTY_RESTAURANT_PAGE",
+    "addressSourceUrl": "https://www.barziti.co.nz/bivacco",
+    "address": "115 Customs Street West, Auckland CBD, New Zealand"
   }
 ]
