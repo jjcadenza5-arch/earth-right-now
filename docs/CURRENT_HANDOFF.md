@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-10 — Screenshot-led Wander / Local Earth thumbnail resilience
+- Owner shared Safari screenshots of the live public site: Watch Earth previews showed several recognizable camera posters; Keep Wandering and Local Earth also showed several almost-empty dark cards for external/current image destinations. No evidence of any video failing was supplied; do not infer provider playback health from missing card art.
+- Inspected `wanderCard()` in `src/app-lite.js`: before this change, the existing `scenicPoster(s)` fallback was appended **only** when no thumbnail URL was present or after an actual `error` event. An unresolved image with a URL could therefore lack a scenic underlay until its request failed.
+- Commit `a4bba7c6f3eccb33cbf1c2c82e5a3f178aa4650d` always renders the existing categorized illustrative scenery behind any optional thumbnail, while keeping the original thumbnail, `installVisualFallback`, truth labels, source links, order, card layout and click behavior. The edit **reduces** app-lite source by five characters and introduces no new assets or network requests.
+- This is fallback resilience, not proof the remote thumbnails are valid or that an actual stream plays. Confirm the next Pages release and visually verify affected cards in Safari after deployment; do not claim the screenshots are repaired until seen. No camera source record, health status, permission or review timestamp changed.
+
+
 ## 2026-10-10 — Hua Hin COAST visitor planning link improved
 - After owner-confirmed green Pages recovery, checked the approved Local Earth supplemental COAST Beach Club & Bistro listing at exact ERN place `hua-hin-centara-live`. Its prior URL led to a broad resort restaurant directory.
 - The resort's current first-party specific venue page `https://www.centarahotelsresorts.com/centaragrand/chbr/coast-beach-club-bistro` offers menus, published hours, telephone details and a reservation action. Replaced the generic URL with this first-party venue page, refreshed address-source provenance to that page and described information visitors can actually consult. Commit `d6b09dc6548b2ddee515661bc69d67f816f40f67`.
