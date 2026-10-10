@@ -2033,5 +2033,181 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.kitebeachcaboverde.com/booking/"
+  },
+  {
+    "id": "local-avila-stay",
+    "name": "Avila Beach Hotel — rooms and apartments",
+    "type": "hotel",
+    "place": "Avila Beach, Willemstad",
+    "country": "Curaçao",
+    "placeId": "curacao-avila-beach",
+    "url": "https://www.avilabeachhotel.com/rooms-apartments/",
+    "summary": "First-party accommodation guide distinguishes garden or partial-ocean rooms from full-ocean and beachfront categories, including adults-only Oceanfront Blues rooms. Confirm the exact wing, view, occupancy and meal inclusions for your chosen category; the waterfront source does not establish a room allocation or vacancy.",
+    "verifiedAt": "2026-10-10T15:31:01Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "Avila Beach",
+      "Willemstad",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.avilabeachhotel.com/rooms-apartments/"
+  },
+  {
+    "id": "local-avila-pen",
+    "name": "The Pen Restaurant & Terrace",
+    "type": "restaurant",
+    "place": "Avila Beach, Willemstad",
+    "country": "Curaçao",
+    "placeId": "curacao-avila-beach",
+    "url": "https://www.avilabeachhotel.com/discover-avila/restaurants-bars/the-pen-restaurant-terrace/",
+    "summary": "Open-air restaurant and terrace at Avila Beach Hotel with first-party breakfast, lunch and dinner menus and table enquiries. Check current service times, menus, special events, reservation and outside-guest arrangements directly; no table availability or meal-plan inclusion is established by the beach view.",
+    "verifiedAt": "2026-10-10T15:31:01Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "Avila Beach",
+      "local food",
+      "The Pen"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.avilabeachhotel.com/discover-avila/restaurants-bars/the-pen-restaurant-terrace/"
+  },
+  {
+    "id": "local-avila-stay-guide",
+    "name": "Avila — stay, payment and access planning",
+    "type": "visitor information",
+    "place": "Avila Beach, Willemstad",
+    "country": "Curaçao",
+    "placeId": "curacao-avila-beach",
+    "url": "https://www.avilabeachhotel.com/plan-your-stay/faqs/",
+    "summary": "Operator FAQ covers check-in, special room requests, payment arrangements, cancellation options and accessibility. Confirm the exact room and route suitability for your needs, outlet-specific payment methods and your booked rate terms directly; a special request is not a guaranteed room or early check-in.",
+    "verifiedAt": "2026-10-10T15:31:01Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "accessibility",
+      "payment",
+      "Avila Beach"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.avilabeachhotel.com/plan-your-stay/faqs/"
+  },
+  {
+    "id": "local-avila-arrival",
+    "name": "Avila — location and arrival directions",
+    "type": "visitor information",
+    "place": "Avila Beach, Willemstad",
+    "country": "Curaçao",
+    "placeId": "curacao-avila-beach",
+    "url": "https://www.avilabeachhotel.com/about-avila/location/",
+    "summary": "Official location guide identifies the Pietermaai setting and Penstraat 130 hotel entrance, with driving directions and a resort guide. Confirm the actual airport pickup, agreed taxi fare or rental-car route for your visit. Published journey estimates and maps do not establish present traffic, beach access or a transfer inclusion.",
+    "verifiedAt": "2026-10-10T15:31:01Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "arrival",
+      "Pietermaai",
+      "Avila Beach"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.avilabeachhotel.com/about-avila/location/"
+  },
+  {
+    "id": "local-lionsdive-stay",
+    "name": "LionsDive Beach Resort — rooms and apartments",
+    "type": "hotel",
+    "place": "LionsDive / Mambo Beach, Willemstad",
+    "country": "Curaçao",
+    "placeId": "curacao-lionsdive-mambo-beach",
+    "url": "https://www.lionsdive.com/rooms-apartments/",
+    "summary": "First-party accommodation guide distinguishes garden, partial-ocean, oceanfront and beachfront categories, plus apartments with pool views. Confirm the exact view, occupancy, balcony and kitchen arrangements for your selected category; not every room shares the beach camera view and no vacancy is implied.",
+    "verifiedAt": "2026-10-10T15:31:01Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "LionsDive",
+      "Mambo Beach",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lionsdive.com/rooms-apartments/"
+  },
+  {
+    "id": "local-lionsdive-hemingway",
+    "name": "Hemingway Beach Bar & Restaurant",
+    "type": "restaurant",
+    "place": "LionsDive / Mambo Beach, Willemstad",
+    "country": "Curaçao",
+    "placeId": "curacao-lionsdive-mambo-beach",
+    "url": "https://www.lionsdive.com/restaurants-bars/hemingway/",
+    "summary": "Beach restaurant at LionsDive with breakfast, lunch and dinner information plus menu and reservation links. Confirm current service, events, meal-plan eligibility and outside-guest access directly; published happy-hour or music schedules are not a promise for your chosen date, and the source does not establish a table vacancy.",
+    "verifiedAt": "2026-10-10T15:31:01Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "Hemingway",
+      "Mambo Beach",
+      "local food"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lionsdive.com/restaurants-bars/hemingway/"
+  },
+  {
+    "id": "local-lionsdive-stay-guide",
+    "name": "LionsDive — check-in, meals and payment planning",
+    "type": "visitor information",
+    "place": "LionsDive / Mambo Beach, Willemstad",
+    "country": "Curaçao",
+    "placeId": "curacao-lionsdive-mambo-beach",
+    "url": "https://www.lionsdive.com/faqs/",
+    "summary": "Operator FAQ distinguishes early-arrival requests from room readiness, occupancy-dependent paid late checkout, full-stay meal plans and outlet-specific cash/card arrangements. Confirm your booked benefits, transfer eligibility, meal plan and cancellation terms directly; advertised direct-booking extras are not universal entitlements.",
+    "verifiedAt": "2026-10-10T15:31:01Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "check-in",
+      "meal plans",
+      "LionsDive"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lionsdive.com/faqs/"
+  },
+  {
+    "id": "local-lionsdive-arrival",
+    "name": "LionsDive — Mambo Beach location and arrival",
+    "type": "visitor information",
+    "place": "LionsDive / Mambo Beach, Willemstad",
+    "country": "Curaçao",
+    "placeId": "curacao-lionsdive-mambo-beach",
+    "url": "https://www.lionsdive.com/the-resort/location/",
+    "summary": "First-party location guide places the resort in Bapor Kibra beside Mambo Beach Boulevard and the Curaçao Sea Aquarium. Confirm your actual arrival route, airport meeting point and any transfer booking directly; quoted drive times do not establish current traffic, transport availability or access to private resort facilities.",
+    "verifiedAt": "2026-10-10T15:31:01Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "arrival",
+      "Bapor Kibra",
+      "Mambo Beach"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lionsdive.com/the-resort/location/"
   }
 ]
