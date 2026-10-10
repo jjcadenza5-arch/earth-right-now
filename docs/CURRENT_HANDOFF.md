@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-10 — Pages #3060/#3061 red; exact lean-core regression repaired
+- Owner screenshots showed two failed Pages runs, #3060 (run `38024673811`) and #3061 (run `38025170591`). Inspected actual #3061 deploy job `114134374844`: release smoke suite failed phase10-production-audit and phase10-launch-review because **lean core was 575,252 bytes**, 252 above the hard 575,000-byte cap. JavaScript Syntax and Operations checks were green; the Ubuntu 26 migration notice is informational.
+- Latest canonical `main` already contains approved, credited editorial photo records and exact matching destination-photo publication commits (`d23c9c58...`, `620fe265...`), which must remain intact; no license or playback gate was relaxed.
+- Removed the **nonessential 672-byte compact illustration styling appendage only** from `src/styles-lite.css`, restoring its previous fallback behavior. Commit `b3e9db5e4ba2f390fe82cd6945573c57e6c3b824`. Based on #3061 measured payload and this reduction, expect lean core about **574,580 bytes**; this estimate is **not** proof of a green release. Maintained 575,000-byte limit.
+- Next Pages release / post-deployment checks must confirm pass; do not declare the new photo deployment live until successful. Neither camera catalog timestamps nor playback evidence were changed in this repair.
+
+
 ## 2026-10-10 — Two licensed, attributed editorial destination photos wired into ERN
 - Continued **in the original ERN project and chat**; a new chat is not required to work through the GitHub connector.
 - Independently opened the exact Wikimedia Commons file pages and 960px image previews. Santa Claus Village 11: photographer **Moskenes**, photo taken 2025-02-10, file page `https://commons.wikimedia.org/wiki/File:Santa_Claus_Village_11.jpg`. Kyoto Fushimi Inari red torii among trees: photographer **Josep M. Gracia**, photographed August 2015, file page `https://commons.wikimedia.org/wiki/File:FUS_-_Torii_gates_among_trees_at_Fushimi_Inari-taisha,_Kyoto,_Japan,_2015.jpg`. Both file pages explicitly license CC BY-SA 4.0. Exact visual composition corresponds to the real destination, but **not current conditions**.
