@@ -23,7 +23,7 @@ for(const locale of ["th","de","fr","ja","zh","es"]){
   assert.ok(fs.existsSync(locale+"/discover/index.html"),"missing localized Discover root "+locale);
   assert.ok(sitemap.includes("https://earthrightnow.app/"+locale+"/discover/"),"sitemap missing "+locale+" Discover root");
 }
-for(const id of ["beaches-water","mountains-snow","cities-streets","wildlife-nature","calm-scenic"]){
+for(const id of ["islands-coastal-escapes","beaches-water","mountains-snow","cities-streets","wildlife-nature","calm-scenic"]){
   assert.ok(sitemap.includes("https://earthrightnow.app/discover/"+id+"/"),"sitemap missing English collection "+id);
   for(const locale of ["th","de","fr","ja","zh","es"])assert.ok(sitemap.includes("https://earthrightnow.app/"+locale+"/discover/"+id+"/"),"sitemap missing "+locale+" collection "+id);
 }

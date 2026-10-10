@@ -19,7 +19,15 @@
     "socialCard": "https://earthrightnow.app/assets/ern-social-card.png",
     "icon512": "https://earthrightnow.app/assets/ern-icon-512.png"
   },
-  "socialAccountClaims": [],
+  "socialAccountClaims": [
+    {
+      "channel": "facebook",
+      "url": "https://www.facebook.com/profile.php?id=61595445832978",
+      "ownerVerified": true,
+      "verificationBasis": "OWNER_REPORT_AND_SCREENSHOT",
+      "verifiedAt": "2026-10-10T12:00:13Z"
+    }
+  ],
   "contactClaimed": false,
   "commercialRankingAffected": false,
   "category": "The Live Discovery Engine",

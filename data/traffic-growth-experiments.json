@@ -106,6 +106,22 @@
         "No claimed conversion from aggregate clicks",
         "No fabricated traffic or source freshness"
       ]
+    },
+    {
+      "id": "owner-facebook-page-island-collection-2026-10-10",
+      "priority": "P1",
+      "status": "IMPLEMENTED_OBSERVATION_READY",
+      "action": "Owner-created ERN Facebook Page is linked from About and Media Kit after exact identity review. Shareable island collection provides a focused destination for future owner-managed posts.",
+      "entryUrl": "https://earthrightnow.app/discover/islands-coastal-escapes/",
+      "localizedEntryUrl": "https://earthrightnow.app/th/discover/islands-coastal-escapes/",
+      "measure": [
+        "Facebook-family referral views",
+        "destination landing views",
+        "window/source opens",
+        "successful collection share/copy events",
+        "explicit travel-option clicks"
+      ],
+      "boundary": "Page presence and owner sharing are verified observations, not posting-integration activation. No campaign causation, reach, bookings or earnings inferred. No automatic posts, ads or submissions."
     }
   ],
   "successDefinition": "More qualified destination entry and continued Earth exploration, with source truth and visitor trust preserved.",

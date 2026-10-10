@@ -29,3 +29,8 @@ assert.ok(harbours);
 for(const title of ["Dublin Port", "Auckland Viaduct Harbour", "Nida Marina", "Waterfront city view"])assert.equal(editorialCollectionMatches({title},harbours),true,title);
 for(const title of ["Queenstown Airport", "Passport office", "Sports centre"])assert.equal(editorialCollectionMatches({title},harbours),false,title);
 for(const locale of DISCOVERY_LOCALES){const copy=localizedCollection(harbours.id,locale);assert.ok(copy?.title&&copy?.description,locale);}
+
+const islands=editorialCollectionById("islands-coastal-escapes");
+for(const title of ["Malolo Lailai — Mamanuca Islands","Izu Oshima Island","Ogasawara harbour"])assert.equal(editorialCollectionMatches({title},islands),true,title);
+for(const title of ["Iceland city skyline","Mainland station","Highland ski area"])assert.equal(editorialCollectionMatches({title},islands),false,title);
+for(const locale of DISCOVERY_LOCALES)assert.ok(localizedCollection(islands.id,locale)?.description);

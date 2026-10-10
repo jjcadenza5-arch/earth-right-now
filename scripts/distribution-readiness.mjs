@@ -20,6 +20,7 @@ const report={
   aiSearchReady,
   indexNowReady,
   connectedChannels:connected.map(x=>x.id),
+  ownerManagedPublicChannels:(x.channels||[]).filter(c=>c.publicAccount?.ownerVerified===true).map(c=>c.id),
   externalConnectionRequired:pending.map(x=>x.id),
   safety:x.safety,
   next:pending.length?"HUMAN_GATE_SOCIAL_CONNECTION_DEFERRED_WEBSITE_AND_AI_SEARCH_READY":"OPERATE_CONNECTED_CHANNELS",

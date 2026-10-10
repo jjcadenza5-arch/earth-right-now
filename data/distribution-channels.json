@@ -44,7 +44,14 @@
     {
       "id": "facebook",
       "state": "NOT_CONNECTED",
-      "automaticPostingAllowed": false
+      "automaticPostingAllowed": false,
+      "publicAccount": {
+        "url": "https://www.facebook.com/profile.php?id=61595445832978",
+        "ownerVerified": true,
+        "verificationBasis": "OWNER_REPORT_AND_SCREENSHOT",
+        "verifiedAt": "2026-10-10T12:00:13Z"
+      },
+      "note": "Owner created the ERN Facebook Page and manually posted/shared videos. Public identity confirmed by owner report and supplied Page screenshots; no posting integration or automation connected."
     },
     {
       "id": "x",

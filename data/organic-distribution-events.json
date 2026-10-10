@@ -87,6 +87,46 @@
         72,
         168
       ]
+    },
+    {
+      "id": "2026-10-10-owner-facebook-page-video-wave",
+      "date": "2026-10-10",
+      "reportedAt": "2026-10-10T12:00:13Z",
+      "channel": "facebook-and-personal-instagram",
+      "method": "owner-manual-page-video-and-group-sharing",
+      "destination": "https://earthrightnow.app/",
+      "publicPageUrl": "https://www.facebook.com/profile.php?id=61595445832978",
+      "userReported": true,
+      "paid": false,
+      "automaticPosting": false,
+      "privacy": {
+        "groupNamesStored": false,
+        "memberDataStored": false,
+        "postContentStored": false,
+        "personalContactDetailsStored": false
+      },
+      "note": "Owner reported creating ERN Facebook Page, posting a video, and sharing videos to digital-nomad/travel-guide groups plus personal Facebook and Instagram. Supplied screenshots confirm Page identity and website-linked post, not group reach or conversions. Personal Instagram is not claimed as an ERN account.",
+      "baseline": {
+        "observedAt": "2026-10-10T11:54:37.561Z",
+        "analyticsWindowDays": 30,
+        "approximateUniqueVisitors": 72,
+        "pageViews": 559,
+        "facebookReferralViews": 39,
+        "googleReferralViews": 23,
+        "travelOptionOpens": 10,
+        "note": "After-sharing aggregate observation, not a pre-campaign control. Owner/test traffic unseparated; does not prove campaign causation.",
+        "earthSearches": 129,
+        "zeroResultSearches": 46,
+        "windowOpens": 432,
+        "externalSourceOpens": 90,
+        "shareClicks": 0,
+        "facebookReferralShareOfPageViews": 0.0698
+      },
+      "observationWindowsHours": [
+        24,
+        72,
+        168
+      ]
     }
   ]
 }
