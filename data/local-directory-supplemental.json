@@ -298,5 +298,70 @@
     ],
     "paidPlacement": false,
     "affiliate": false
+  },
+  {
+    "id": "local-fushimi-inari-access",
+    "name": "Fushimi Inari Taisha — official arrival guide",
+    "type": "visitor information",
+    "place": "Kyoto — Fushimi Inari Taisha",
+    "country": "Japan",
+    "summary": "Plan your arrival using the shrine’s official access page, which identifies the JR Inari and Keihan Fushimi-inari stations and recommends public transport. Check the current route and service information before travelling.",
+    "url": "https://inari.jp/en/access/",
+    "verifiedAt": "2026-10-10T06:56:15Z",
+    "status": "APPROVED",
+    "placeId": "kyoto-fushimi-inari",
+    "tags": [
+      "official visitor information",
+      "transport",
+      "rail",
+      "arrival",
+      "kyoto"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "OFFICIAL_DESTINATION_VISITOR_PAGE"
+  },
+  {
+    "id": "local-viaduct-harbour-access",
+    "name": "Viaduct Harbour — official arrival guide",
+    "type": "visitor information",
+    "place": "Auckland Viaduct Harbour",
+    "country": "New Zealand",
+    "summary": "The precinct’s arrival page links bus, train and ferry planning, nearby parking operators, cycling routes and drop-off guidance. Check current services and parking details with the linked operators before setting out.",
+    "url": "https://www.viaduct.co.nz/getting-here",
+    "verifiedAt": "2026-10-10T06:56:15Z",
+    "status": "APPROVED",
+    "placeId": "auckland-viaduct-harbour",
+    "tags": [
+      "official visitor information",
+      "transport",
+      "ferry",
+      "arrival",
+      "auckland"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "OFFICIAL_DESTINATION_VISITOR_PAGE"
+  },
+  {
+    "id": "local-viaduct-harbour-accessibility",
+    "name": "Viaduct Harbour — official accessibility guide",
+    "type": "visitor information",
+    "place": "Auckland Viaduct Harbour",
+    "country": "New Zealand",
+    "summary": "Review the precinct’s accessibility guide for arrival, mobility access and venue-specific information about entrances, moving around and bathrooms. Confirm the route and any assistance needed with the venue; a waterfront camera cannot establish accessibility.",
+    "url": "https://www.viaduct.co.nz/accessibility",
+    "verifiedAt": "2026-10-10T06:56:15Z",
+    "status": "APPROVED",
+    "placeId": "auckland-viaduct-harbour",
+    "tags": [
+      "official visitor information",
+      "accessibility",
+      "mobility",
+      "auckland"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "OFFICIAL_DESTINATION_VISITOR_PAGE"
   }
 ]
