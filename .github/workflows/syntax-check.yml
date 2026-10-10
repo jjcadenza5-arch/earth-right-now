@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "data/local-directory-supplemental.json"
+      - "data/source-security-holds.json"
       - "data/destination-photo-rights-candidates.json"
       - "src/**"
       - "scripts/**"

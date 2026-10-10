@@ -21,6 +21,7 @@ on:
       - "data/guide-ai-deployment.json"
       - "data/local-directory.json"
       - "data/local-directory-supplemental.json"
+      - "data/source-security-holds.json"
       - "src/**"
       - "scripts/**"
       - "package.json"

@@ -42,6 +42,7 @@ on:
       - "docs/SEE_BEFORE_YOU_GO_STANDARD.md"
       - "data/local-directory.json"
       - "data/local-directory-supplemental.json"
+      - "data/source-security-holds.json"
       - "data/travel-offers.json"
       - "travel-worker/**"
       - "src/viator-destination-match.js"
