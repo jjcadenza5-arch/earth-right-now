@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-10 — Visitor link health repair: Auckland Bivacco
+- Audited the four recently improved Local Earth direct links. Santa Claus Office, Santa Claus' Main Post Office and Soul Bar & Bistro were accessible on current direct checks. Bivacco's prior direct path `https://www.barziti.co.nz/bivacco` returned HTTP 404 in a fresh request despite indexed search descriptions.
+- Replaced the broken link and address provenance with the **working official Viaduct Harbour Bivacco venue page** `https://www.viaduct.co.nz/eat-and-drink/bivacco` (venue details, address, opening information and onward menu/reservation information). Fix commit: `dc7c8d60a568e02b0780e6ffd9465521adc436fb`.
+- No new local businesses, affiliate activations, cameras, playback evidence or core code changes. Local directory remains 21 reviewed entries. This is a genuine visitor-facing broken-link repair, not an assertion of restaurant booking availability.
+- The new GitHub Pages run and deployed-browser click path still require validation; do not claim release green merely from the saved commit.
+
+
 ## 2026-10-10 — Visitor-facing Local Earth direct-link improvement
 - Following owner-confirmed green Pages #3049 and image-renewal repair, improved real visitor journeys instead of adding new camera or affiliate counts.
 - Rechecked first-party/official pages for Santa Claus Office (Rovaniemi), Santa Claus' Main Post Office (Finland's Posti), Soul Bar & Bistro (Auckland) and Bivacco (Auckland). Replaced four generic tourism/directory links with direct first-party venue/operator pages, and added their officially documented postal addresses and address-source provenance.
