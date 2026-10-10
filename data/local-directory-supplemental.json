@@ -605,5 +605,85 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.lovetaupo.com/en/plan/getting-here-around/"
+  },
+  {
+    "id": "local-bohinj-jezero",
+    "name": "Hotel Jezero",
+    "type": "hotel",
+    "place": "Lake Bohinj",
+    "country": "Slovenia",
+    "placeId": "slovenia-bohinj-lake-colnarna",
+    "url": "https://www.hotel-jezero.si/en/",
+    "summary": "Hotel in Ribčev Laz, Bohinj, with accommodation, dining and wellness information on its official page. Check current room availability and guest services directly; this local stay option is not a claim about the camera location.",
+    "verifiedAt": "2026-10-10T08:32:52Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hotel-jezero.si/en/"
+  },
+  {
+    "id": "local-bohinj-arrival",
+    "name": "Bohinj — official parking and public transport",
+    "type": "visitor information",
+    "place": "Lake Bohinj",
+    "country": "Slovenia",
+    "placeId": "slovenia-bohinj-lake-colnarna",
+    "url": "https://www.bohinj.si/en/information/parking-and-public-transport/",
+    "summary": "Official destination guidance for marked parking, road closures, regular buses and seasonal transfers around Bohinj. Follow its linked traffic and timetable services for current arrangements before traveling; lake imagery does not confirm road access or shuttle operation.",
+    "verifiedAt": "2026-10-10T08:32:52Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.bohinj.si/en/information/parking-and-public-transport/"
+  },
+  {
+    "id": "local-zell-grand-hotel",
+    "name": "Grand Hotel Zell am See",
+    "type": "hotel",
+    "place": "Zell am See",
+    "country": "Austria",
+    "placeId": "austria-zell-am-see-kaprun",
+    "url": "https://www.grandhotel-zellamsee.at/en/",
+    "summary": "Lakeside hotel in Zell am See with accommodation and dining information on its official property page. Confirm current availability and guest-service details directly; this unpaid local listing is not an endorsement or the camera location.",
+    "verifiedAt": "2026-10-10T08:32:52Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.grandhotel-zellamsee.at/en/"
+  },
+  {
+    "id": "local-zell-arrival",
+    "name": "Zell am See-Kaprun — official arrival guide",
+    "type": "visitor information",
+    "place": "Zell am See",
+    "country": "Austria",
+    "placeId": "austria-zell-am-see-kaprun",
+    "url": "https://www.zellamsee-kaprun.com/en/service/arrival",
+    "summary": "Regional tourism guidance for arrival by rail, road and air, with onward transport and mobility information. Consult the linked operators for current services and any guest-ticket conditions before making plans; the lake view does not establish travel conditions.",
+    "verifiedAt": "2026-10-10T08:32:52Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.zellamsee-kaprun.com/en/service/arrival"
   }
 ]

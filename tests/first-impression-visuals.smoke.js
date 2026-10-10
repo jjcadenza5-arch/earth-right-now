@@ -27,8 +27,9 @@ assert.match(css,/\.wander-card>\.wander-visual\{position:absolute;inset:0\}/,"f
 assert.match(build,/editorial-card-photos\.js/,"lazy photo module must ship in release");
 const {approvedPhotos,eligibleVisual}=await import("../src/editorial-card-photos.js");
 const register=JSON.parse(readFileSync(new URL("../data/destination-photo-rights-candidates.json",import.meta.url),"utf8"));
-assert.equal(approvedPhotos(register).size,6);
+assert.equal(approvedPhotos(register).size,8);
 assert.ok(approvedPhotos(register).has("oeschinensee")&&approvedPhotos(register).has("flam-aurlandsfjord"));
+assert.ok(approvedPhotos(register).has("slovenia-bohinj-lake-colnarna")&&approvedPhotos(register).has("austria-zell-am-see-kaprun"));
 assert.equal(approvedPhotos({...register,homepageActivationAllowed:false}).size,0);
 assert.equal(approvedPhotos({...register,candidates:[{...register.candidates[0],imageUrl:"https://example.com/photo.jpg"}]}).size,0);
 assert.equal(approvedPhotos(register).has("unrelated-place"),false);
