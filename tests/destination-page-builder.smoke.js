@@ -111,3 +111,29 @@ try{
   }
   console.log('Generated destination HTML includes supplemental help while preserving review, place and source gates');
 }finally{rmSync(fixture,{recursive:true,force:true});}
+
+// Run the exact serialized directory code with visitor inputs, not source-text assertions.
+const {runInNewContext}=await import('node:vm');
+const {placeDirectoryRuntime}=await import('../scripts/place-directory-runtime.mjs');
+const handlers={};
+const input={value:'',addEventListener:(name,fn)=>handlers[name]=fn};
+const availability={value:'all',addEventListener:(name,fn)=>handlers[name]=fn};
+const status={},empty={},more={};
+const rows=[
+ {dataset:{search:'Flåm Aurlandsfjord Norway',viewState:'current'}},
+ {dataset:{search:'Oeschinensee Switzerland',viewState:'scheduled'}},
+ {dataset:{search:'เชียงใหม่ Thailand',viewState:'reference'}},
+ {dataset:{search:'เชยงใหม Thailand',viewState:'current'}}
+];
+const elements={placeFilter:input,placeAvailability:availability,placeFilterStatus:status,placeFilterEmpty:empty,placeSearchMore:more};
+runInNewContext('('+placeDirectoryRuntime.toString()+')()',{URLSearchParams,location:{search:'?q=Norway%20Flam&availability=current'},document:{getElementById:id=>elements[id],querySelectorAll:()=>rows}});
+assert.equal(rows[0].hidden,false,'accentless reordered words must match the destination');
+assert.equal(rows[1].hidden,true);assert.match(status.textContent,/1 matching place · 1 current/);
+input.value='';availability.value='verified';handlers.change();
+assert.deepEqual(rows.map(r=>r.hidden),[false,false,true,false],'verified filter includes schedules but excludes reference-only rows');
+input.value='เชียงใหม่';availability.value='all';handlers.input();
+assert.deepEqual(rows.map(r=>r.hidden),[true,true,false,true],'Thai marks must distinguish different search text');
+input.value='<script> & nowhere';handlers.input();
+assert.equal(empty.hidden,false);assert.ok(more.href.endsWith(encodeURIComponent(input.value)),'fallback search uses an encoded query');
+input.value='';handlers.input();assert.equal(empty.hidden,true);assert.ok(rows.every(r=>!r.hidden),'clearing query restores all rows');
+console.log('Places directory accent/token search, availability gates, Thai marks and empty recovery passed');
