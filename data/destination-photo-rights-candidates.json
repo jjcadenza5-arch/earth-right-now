@@ -297,6 +297,29 @@
       "inspectedPreviewSha256": "85b5ab2727251990761594c5600e5bc83d58aa6a8d6b84c0c688edd4abd5a7e6",
       "inspectedPreviewBytes": 295282,
       "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Camara_de_Lobos,_Madeira.jpg&oldid=1111127172"
+    },
+    {
+      "placeId": "us-grand-teton-national-park",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Grand_Teton_National_Park,_Wyoming.jpg",
+      "creator": "Clément Bardot",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "Wikimedia Commons",
+      "dateTaken": "2013-08-25",
+      "status": "APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY",
+      "note": "Exact file description, creator and license reviewed; downloaded preview visually inspected for national-park destination match. Archival editorial photo, not the webcam angle, camera playback or current weather/crowd evidence. No endorsement implied.",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Grand_Teton_National_Park%2C_Wyoming.jpg/960px-Grand_Teton_National_Park%2C_Wyoming.jpg",
+      "imageWidth": 960,
+      "imageHeight": 636,
+      "alt": "Teton mountains reflected in water beside wooded banks in Grand Teton National Park",
+      "publicActivationAllowed": true,
+      "homepageActivationAllowed": true,
+      "licenseRecheckedAt": "2026-10-10T15:42:09Z",
+      "attributionChanges": "Unmodified by ERN; scaled at original aspect ratio on destination pages.",
+      "homepageAttributionChanges": "Display crop using object-fit: cover; archival editorial photo, not live. Original source and CC BY-SA 4.0 linked beside card.",
+      "inspectedPreviewSha256": "bcfe7265a6913ab83f0191adf8580afb41d3e32d50c0f88c42481aaf58d43fb2",
+      "inspectedPreviewBytes": 215838,
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Grand_Teton_National_Park,_Wyoming.jpg&oldid=1277134891"
     }
   ],
   "homepageActivationAllowed": true

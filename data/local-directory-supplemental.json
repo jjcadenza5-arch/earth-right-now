@@ -2209,5 +2209,257 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.lionsdive.com/the-resort/location/"
+  },
+  {
+    "id": "local-s-montego-stay",
+    "name": "S Hotel Montego Bay — rooms and suites",
+    "type": "hotel",
+    "place": "Montego Bay",
+    "country": "Jamaica",
+    "placeId": "jamaica-montego-bay-s-hotel",
+    "url": "https://www.shotelsjamaica.com/s-hotel-montego-bay/rooms-suites",
+    "summary": "First-party room guide distinguishes Mini King categories without sea views or balconies from ocean-view rooms and suites. Confirm your selected category, actual occupancy and stay inclusions directly; the beach source does not establish the view from every room or a vacancy.",
+    "verifiedAt": "2026-10-10T15:42:09Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local stay",
+      "Montego Bay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.shotelsjamaica.com/s-hotel-montego-bay/rooms-suites"
+  },
+  {
+    "id": "local-s-montego-rocksteady",
+    "name": "Rocksteady — S Hotel Montego Bay",
+    "type": "restaurant",
+    "place": "Montego Bay",
+    "country": "Jamaica",
+    "placeId": "jamaica-montego-bay-s-hotel",
+    "url": "https://www.shotelsjamaica.com/s-hotel-montego-bay/dining",
+    "summary": "Operator dining guide identifies Rocksteady as adults-only dinner with reservations required and selected operating days. Check current service, menu, meal-plan and outside-guest arrangements directly; this is the Montego Bay restaurant, distinct from the same-named venue in Kingston.",
+    "verifiedAt": "2026-10-10T15:42:09Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "local food",
+      "Montego Bay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.shotelsjamaica.com/s-hotel-montego-bay/dining"
+  },
+  {
+    "id": "local-s-montego-faq",
+    "name": "S Hotel Montego Bay — guest and stay planning",
+    "type": "visitor information",
+    "place": "Montego Bay",
+    "country": "Jamaica",
+    "placeId": "jamaica-montego-bay-s-hotel",
+    "url": "https://www.shotelsjamaica.com/s-hotel-montego-bay/faqs",
+    "summary": "Operator FAQ publishes a minimum guest age of eight and requires at least one check-in party member aged 21 or older. Confirm current guest eligibility, room requirements, check-in and facility access before booking; a camera view does not establish admission or included services.",
+    "verifiedAt": "2026-10-10T15:42:09Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "visit planning",
+      "Montego Bay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.shotelsjamaica.com/s-hotel-montego-bay/faqs"
+  },
+  {
+    "id": "local-s-montego-arrival",
+    "name": "S Hotel Montego Bay — airport and arrival planning",
+    "type": "visitor information",
+    "place": "Montego Bay",
+    "country": "Jamaica",
+    "placeId": "jamaica-montego-bay-s-hotel",
+    "url": "https://www.shotelsjamaica.com/s-hotel-montego-bay/getting-here",
+    "summary": "First-party arrival guide distinguishes Sangster (MBJ) from Kingston’s Norman Manley (KIN) airport and recommends advance transfer arrangements. Confirm your flight, meeting instructions, transfer price and any optional VIP service directly; quoted journey times and a dated airport-expansion notice are not current arrival guarantees.",
+    "verifiedAt": "2026-10-10T15:42:09Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "visit planning",
+      "Montego Bay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.shotelsjamaica.com/s-hotel-montego-bay/getting-here"
+  },
+  {
+    "id": "local-s-kingston-stay",
+    "name": "S Hotel Kingston — rooms and suites",
+    "type": "hotel",
+    "place": "New Kingston",
+    "country": "Jamaica",
+    "placeId": "jamaica-kingston-s-hotel",
+    "url": "https://www.shotelsjamaica.com/s-hotel-kingston/rooms-suites",
+    "summary": "First-party accommodation guide lists city hotel rooms and suites, including a Standard King Limited View category. Confirm your actual view, bed configuration, occupancy and inclusions directly; this New Kingston accommodation is distinct from S Hotel’s Montego Bay beachfront property.",
+    "verifiedAt": "2026-10-10T15:42:09Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local stay",
+      "New Kingston"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.shotelsjamaica.com/s-hotel-kingston/rooms-suites"
+  },
+  {
+    "id": "local-s-kingston-rocksteady",
+    "name": "Rocksteady — S Hotel Kingston",
+    "type": "restaurant",
+    "place": "New Kingston",
+    "country": "Jamaica",
+    "placeId": "jamaica-kingston-s-hotel",
+    "url": "https://www.shotelsjamaica.com/s-hotel-kingston/dining",
+    "summary": "Restaurant at S Hotel Kingston with first-party breakfast, lunch and dinner information and a menu link. Confirm current service, reservations, outside-guest access and meal inclusions; the same-named Montego Bay restaurant has different arrangements, which should not be applied to this venue.",
+    "verifiedAt": "2026-10-10T15:42:09Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "local food",
+      "New Kingston"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.shotelsjamaica.com/s-hotel-kingston/dining"
+  },
+  {
+    "id": "local-s-kingston-faq",
+    "name": "S Hotel Kingston — facilities and transfer planning",
+    "type": "visitor information",
+    "place": "New Kingston",
+    "country": "Jamaica",
+    "placeId": "jamaica-kingston-s-hotel",
+    "url": "https://www.shotelsjamaica.com/s-hotel-kingston/faqs",
+    "summary": "Operator FAQ covers guest parking, accessible features, concierge help and airport transfers requested directly from the hotel. Confirm your precise accessibility needs, transfer quote and booking, parking and included facilities; drive estimates do not establish current traffic or a confirmed pickup.",
+    "verifiedAt": "2026-10-10T15:42:09Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "visit planning",
+      "New Kingston"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.shotelsjamaica.com/s-hotel-kingston/faqs"
+  },
+  {
+    "id": "local-s-kingston-contact",
+    "name": "S Hotel Kingston — location and direct enquiries",
+    "type": "visitor information",
+    "place": "New Kingston",
+    "country": "Jamaica",
+    "placeId": "jamaica-kingston-s-hotel",
+    "url": "https://www.shotelsjamaica.com/s-hotel-kingston/contact-us",
+    "summary": "Official contact page identifies 1 St Lucia Avenue in Kingston and provides operator enquiry channels. Use the correct property when confirming room, dining and arrival requirements; an enquiry or form submission is not a booking confirmation or a promise of availability.",
+    "verifiedAt": "2026-10-10T15:42:09Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "visit planning",
+      "New Kingston"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.shotelsjamaica.com/s-hotel-kingston/contact-us"
+  },
+  {
+    "id": "local-pearl-visit",
+    "name": "Pearl Harbor — memorial reservations and visit planning",
+    "type": "visitor information",
+    "place": "Pearl Harbor, Honolulu",
+    "country": "United States",
+    "placeId": "us-pearl-harbor-uss-arizona",
+    "url": "https://www.nps.gov/perl/planyourvisit/basicinfo.htm",
+    "summary": "National Park Service guidance distinguishes free visitor-centre museums and grounds from USS Arizona program reservations and separately ticketed nearby attractions. Check current reservation, standby, operating, accessibility and bag rules before going; a harbor source does not confirm a boat departure, ticket or entry entitlement.",
+    "verifiedAt": "2026-10-10T15:42:09Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "visit planning",
+      "Pearl Harbor, Honolulu"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/perl/planyourvisit/basicinfo.htm"
+  },
+  {
+    "id": "local-pearl-arrival",
+    "name": "Pearl Harbor — visitor-centre directions and transport",
+    "type": "visitor information",
+    "place": "Pearl Harbor, Honolulu",
+    "country": "United States",
+    "placeId": "us-pearl-harbor-uss-arizona",
+    "url": "https://www.nps.gov/perl/planyourvisit/directions.htm",
+    "summary": "Official directions identify the visitor centre at 1 Arizona Memorial Place and warn against being routed to the military base. Check the current route, transport, parking payment and arrival margin for your reserved program; quoted drive times are estimates, not a guarantee through Honolulu traffic.",
+    "verifiedAt": "2026-10-10T15:42:09Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "visit planning",
+      "Pearl Harbor, Honolulu"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/perl/planyourvisit/directions.htm"
+  },
+  {
+    "id": "local-teton-roads",
+    "name": "Grand Teton — road and construction planning",
+    "type": "visitor information",
+    "place": "Grand Teton National Park, Wyoming",
+    "country": "United States",
+    "placeId": "us-grand-teton-national-park",
+    "url": "https://www.nps.gov/grte/planyourvisit/roads.htm",
+    "summary": "National Park Service road guide explains its status map, construction information and WYDOT road references. Map updates can be delayed and short-term closures may be absent, so check current responsible-authority information before travel; a mountain view does not establish an open route or suitable driving conditions.",
+    "verifiedAt": "2026-10-10T15:42:09Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "visit planning",
+      "Grand Teton National Park, Wyoming"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/grte/planyourvisit/roads.htm"
+  },
+  {
+    "id": "local-teton-seasons",
+    "name": "Grand Teton — seasonal facilities and visit planning",
+    "type": "visitor information",
+    "place": "Grand Teton National Park, Wyoming",
+    "country": "United States",
+    "placeId": "us-grand-teton-national-park",
+    "url": "https://www.nps.gov/grte/planyourvisit/hours.htm",
+    "summary": "Official seasonal guide distinguishes year-round park access from date-specific visitor centres, campsites, lodges, boat services and road access. Published seasonal dates are subject to change; check the relevant facility and current alerts for your actual visit rather than assuming all services operate whenever the mountain source is visible.",
+    "verifiedAt": "2026-10-10T15:42:09Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "visit planning",
+      "Grand Teton National Park, Wyoming"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/grte/planyourvisit/hours.htm"
   }
 ]

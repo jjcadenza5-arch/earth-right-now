@@ -66,6 +66,18 @@ Optional owner-managed campaigns after checking the current ERN page and visual 
 
 The 30-day aggregate observed 2026-10-10T15:24:46.638Z remains 72 approximate visitors / 561 page views, including 39 Facebook-family and 23 Google referral views, with ten affiliate-option events. It is unchanged from the 14:28 snapshot. Owner/test activity remains mixed, so no independent audience growth or uplift from new Instagram/Facebook sharing is established. Obtain a fresh dated baseline when publishing; do not present these totals as a campaign result or sales.
 
+## Jamaica and thoughtful park planning themes
+
+Optional owner-managed ideas after a fresh source-status and visual-permission check. Keep place names exact, including the two different Rocksteady restaurants.
+
+| Theme | Entry page | Invitation and useful next step |
+| --- | --- | --- |
+| The view and the room are separate choices | https://earthrightnow.app/places/jamaica-montego-bay-s-hotel/ | Would you choose a room with a sea view? Explore the provider-hosted source, then compare actual room categories, guest eligibility, dining and airport arrangements. |
+| Kingston beyond the city view | https://earthrightnow.app/places/jamaica-kingston-s-hotel/ | What would you explore from New Kingston? Check the source, then the reviewed accommodation, Rocksteady dining and direct-enquiry guidance. |
+| A mountain view needs a seasonal plan | https://earthrightnow.app/places/us-grand-teton-national-park/ | Which services would you need for this visit? Compare the source with official seasonal facilities and road guidance. The credited Clément Bardot photograph is from 25 August 2013 and must remain archival. |
+
+Pearl Harbor is a place of remembrance. If sharing its ERN page, use respectful context and the official reservations/visitor-centre guides; never suggest that a harbor view guarantees a memorial ticket, boat departure or access to the military base. No provider footage or hotel photograph is cleared for reuse by these link-only planning entries.
+
 On Facebook, put the relevant ERN destination or collection URL in the post. On Instagram, make that relevant URL the profile link for the current campaign, or use a Story link where your account offers it. A caption URL should not be treated as a guaranteed clickable link. Linking the accounts does not establish that posts are cross-published; check what actually appeared on each profile.
 
 Keep the canonical domain visible. Suggested cautious profile wording: “Earth Right Now — The Live Discovery Engine. Discover real places through live views and official sources. See before you go.” This describes the current bridge to sources without promising universal live weather, present playback at every destination, or gated features.
