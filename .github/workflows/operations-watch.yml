@@ -20,6 +20,7 @@ on:
       - "data/earth-signal-deployment.json"
       - "data/guide-ai-deployment.json"
       - "data/local-directory.json"
+      - "data/local-directory-supplemental.json"
       - "src/**"
       - "scripts/**"
       - "package.json"

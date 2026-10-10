@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
     paths:
+      - "data/local-directory-supplemental.json"
+      - "data/destination-photo-rights-candidates.json"
       - "src/**"
       - "scripts/**"
       - "tests/earth-signal-*.smoke.js"
