@@ -1593,5 +1593,159 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.kuredu.com/booking-policy-resort-guide/"
+  },
+  {
+    "id": "local-sorobon-beach-resort",
+    "name": "Sorobon Luxury Beach Resort",
+    "type": "resort",
+    "place": "Sorobon / Lac Bay",
+    "country": "Bonaire",
+    "placeId": "bonaire-sorobon-lac-bay",
+    "url": "https://www.sorobonbeachresort.com/",
+    "summary": "Beach houses and other accommodation at Sorobon beside Lac Bay. Check the actual room category, resort access, meal inclusions and airport-to-resort arrangements directly; the beach camera does not establish vacancies or guest entitlements.",
+    "verifiedAt": "2026-10-10T14:37:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "resort",
+      "Sorobon",
+      "Lac Bay",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.sorobonbeachresort.com/"
+  },
+  {
+    "id": "local-sorobon-reef-bar",
+    "name": "Reef Bar at Sorobon",
+    "type": "restaurant",
+    "place": "Sorobon / Lac Bay",
+    "country": "Bonaire",
+    "placeId": "bonaire-sorobon-lac-bay",
+    "url": "https://www.sorobonbeachresort.com/reefbar/",
+    "summary": "Seaside dining at Sorobon with an official food-and-drink menu and table-reservation contact. Confirm current service, menu, table availability and arrangements for visitors staying elsewhere; a beach view does not establish restaurant opening or beach-bed access.",
+    "verifiedAt": "2026-10-10T14:37:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "Sorobon",
+      "Lac Bay",
+      "local food"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.sorobonbeachresort.com/reefbar/"
+  },
+  {
+    "id": "local-sorobon-dunkerbeck",
+    "name": "Dunkerbeck Pro Center",
+    "type": "windsurf school",
+    "place": "Sorobon / Lac Bay",
+    "country": "Bonaire",
+    "placeId": "bonaire-sorobon-lac-bay",
+    "url": "https://dunkerbeckprocenter.com/dunkerbeck-procenter/",
+    "summary": "Windsurf equipment rental, introductory instruction and private lessons inside Sorobon Luxury Beach Resort. Ask the operator about suitable instruction, current equipment and booking terms, and check STINAPA activity zones before choosing a session; camera conditions do not guarantee a session can run.",
+    "verifiedAt": "2026-10-10T14:37:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "windsurfing",
+      "lessons",
+      "equipment rental",
+      "Sorobon"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://dunkerbeckprocenter.com/dunkerbeck-procenter/"
+  },
+  {
+    "id": "local-sorobon-lac-bay-guide",
+    "name": "STINAPA — Lac Bay visitor context",
+    "type": "visitor information",
+    "place": "Sorobon / Lac Bay",
+    "country": "Bonaire",
+    "placeId": "bonaire-sorobon-lac-bay",
+    "url": "https://stinapabonaire.org/bonaire-national-marine-park/lac-bay/",
+    "summary": "Marine-park manager’s guide to Lac Bay, its reef, seagrass and mangroves. Use STINAPA’s current notices and Nature Fee guidance when planning water activities, and confirm the relevant access and conservation requirements rather than treating the bay as unrestricted resort grounds.",
+    "verifiedAt": "2026-10-10T14:37:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "marine park",
+      "Lac Bay",
+      "conservation"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://stinapabonaire.org/bonaire-national-marine-park/lac-bay/"
+  },
+  {
+    "id": "local-sorobon-water-sports-guide",
+    "name": "STINAPA — kite and windsurf activity guidance",
+    "type": "visitor information",
+    "place": "Sorobon / Lac Bay",
+    "country": "Bonaire",
+    "placeId": "bonaire-sorobon-lac-bay",
+    "url": "https://stinapabonaire.org/rules-and-regulations/kite-and-windsurfing/",
+    "summary": "Official guidance distinguishes Lac Bay windsurfing from the Atlantis kite entry-and-exit zone. Check current zoning, foiling updates and activity permissions with STINAPA and your operator; a windsurf lesson listing is not blanket permission for every water sport or location.",
+    "verifiedAt": "2026-10-10T14:37:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "windsurfing",
+      "activity zones",
+      "Lac Bay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://stinapabonaire.org/rules-and-regulations/kite-and-windsurfing/"
+  },
+  {
+    "id": "local-bonaire-donkey-visit",
+    "name": "Donkey Sanctuary Bonaire — plan your visit",
+    "type": "visitor information",
+    "place": "Kralendijk, Bonaire",
+    "country": "Bonaire",
+    "placeId": "bonaire-donkey-sanctuary",
+    "url": "https://www.donkeysanctuary.org/en/bezoekhetpark",
+    "summary": "Operator’s visit guide covers arrival, admissions, permitted ways to explore and the care meadow’s on-foot access. Check the current opening notice and last-entry time before setting out, including dated exceptions; confirm tickets and payment options and follow staff instructions for animal contact and feeding.",
+    "verifiedAt": "2026-10-10T14:37:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "donkey sanctuary",
+      "arrival",
+      "animal care"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.donkeysanctuary.org/en/bezoekhetpark"
+  },
+  {
+    "id": "local-bonaire-donkey-care",
+    "name": "Donkey Sanctuary Bonaire — care and education",
+    "type": "visitor information",
+    "place": "Kralendijk, Bonaire",
+    "country": "Bonaire",
+    "placeId": "bonaire-donkey-sanctuary",
+    "url": "https://www.donkeysanctuary.org/en/wat-we-doen",
+    "summary": "First-party context for the sanctuary’s care of sick, injured and orphaned donkeys and its education work. Understand the purpose of the place before visiting and follow its care-area guidance; webcam animals and scenes do not promise a particular encounter or access to every enclosure.",
+    "verifiedAt": "2026-10-10T14:37:16Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "donkey sanctuary",
+      "education",
+      "animal care"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.donkeysanctuary.org/en/wat-we-doen"
   }
 ]

@@ -27,6 +27,15 @@ Start with two owner-managed posts per week for two weeks, only if comfortable. 
 | Vilnius square | https://earthrightnow.app/places/lithuania-vilnius-cathedral-square/ | What would you explore around this square? Find the source, cathedral visitor guide and nearby options. |
 | Kuredu arrival planning | https://earthrightnow.app/places/kuredu-island-maldives/ | A beautiful island view raises another question: how would you get there? Check the resort's transfer and meal-plan guidance. |
 
+## Bonaire follow-up themes
+
+These are alternatives for a later owner-managed post, not additional scheduled posts. Recheck source status and visual reuse rights immediately before publishing; both destinations currently lead to provider-hosted sources rather than guaranteed playback inside ERN.
+
+| Theme | Entry page | Invitation and useful next step |
+| --- | --- | --- |
+| Sorobon windsurf curiosity | https://earthrightnow.app/places/bonaire-sorobon-lac-bay/ | Would you watch from shore or learn to windsurf? Open the provider view, then compare the lesson, stay and dining information and check STINAPA activity-zone guidance. |
+| A sanctuary visit | https://earthrightnow.app/places/bonaire-donkey-sanctuary/ | What would you want to know before visiting these donkeys? Explore the provider webcams, then check the operator's arrival, last-entry and animal-care guidance. A webcam does not promise a particular animal encounter. |
+
 On Facebook, put the relevant ERN destination or collection URL in the post. On Instagram, make that relevant URL the profile link for the current campaign, or use a Story link where your account offers it. A caption URL should not be treated as a guaranteed clickable link. Linking the accounts does not establish that posts are cross-published; check what actually appeared on each profile.
 
 Keep the canonical domain visible. Suggested cautious profile wording: “Earth Right Now — The Live Discovery Engine. Discover real places through live views and official sources. See before you go.” This describes the current bridge to sources without promising universal live weather, present playback at every destination, or gated features.
