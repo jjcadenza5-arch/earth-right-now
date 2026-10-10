@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-10 — Screenshot-led compact illustrated preview refinement
+- Owner supplied six fresh Safari screenshots (~11:34–11:35 Thailand time). The responsive Watch Earth preview/cards and editorial collection imagery are intact. The specific unfinished issue is the visibly abstract My Earth compact illustrations, including large circular/dark shapes that do not resemble destination scenery; several Local Earth external-live cards have no provider-approved thumbnail and stay a plain dark fallback.
+- Inspected the original `scenicPoster(s)` renderer and `src/styles-lite.css`. Existing compact cards intentionally use `data-visual-kind="illustrative"` when no approved thumbnail exists; generated scene geometry is not a real photo or playable video. Added narrowly scoped CSS overrides for **illustrative compact result cards only**, yielding quieter sun and landscape silhouettes and a neutral earth gradient without modifying source-supplied photos, video posters or media playback. Commit `976f6f6acaef3f569f177c8e7f223902bec9f0e7`; 673 CSS characters added, no new network requests.
+- Preserve explicit ILLUSTRATIVE label, source type/currentness, no misrepresentation of live feed or photo rights, and unchanged layout, ranking, source approvals, all five+five historical operator checks, fees, affiliate functionality and public-OFF gates.
+- This limited CSS refinement is **not** a substitute for properly licensed provenance-backed place photography; Local Earth external entries without rights-approved thumbnails remain honest. New Pages workflow and Safari visual outcome still unconfirmed.
+
+
 ## 2026-10-10 — Auckland Viaduct visitor arrival context
 - Following owner-confirmed green Pages, improved two existing reviewed Auckland Viaduct Harbour local dining summaries (`local-soul-bar-auckland`, `local-bivacco-auckland`) with meaningful travel context grounded in first-party `https://www.viaduct.co.nz/getting-here` and `https://www.viaduct.co.nz/accessibility`: walkable downtown ferry/train/bus connections, nearby parking and accessible-route guidance. Existing venue URLs still take visitors to their exact listings for current details.
 - Commit `8085e4851a85d7d2a5ae234601f9786e32f546c6` affects only the summaries in `data/local-directory-supplemental.json`; no new listings, imagery rights, source URLs, camera claims, review timestamps, affiliate offers, ranking, startup scripts or design changes.
