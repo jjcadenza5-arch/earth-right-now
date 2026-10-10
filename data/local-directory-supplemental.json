@@ -1502,5 +1502,96 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://judu.lt/en/welcome/"
+  },
+  {
+    "id": "local-kuredu-main-area",
+    "name": "Kuredu Island Resort & Spa — main-area accommodation",
+    "type": "resort",
+    "place": "Kuredu Island, Lhaviyani Atoll",
+    "country": "Maldives",
+    "placeId": "kuredu-island-maldives",
+    "url": "https://www.kuredu.com/accommodation/main-area/",
+    "summary": "Resort villas and bungalows in the island’s main area welcome guests of all ages. Other resort areas and facilities have age and meal-plan restrictions; confirm your actual room category, included facilities and arrival arrangements before booking. A beach camera does not establish room availability.",
+    "verifiedAt": "2026-10-10T14:21:34Z",
+    "status": "APPROVED",
+    "tags": [
+      "resort",
+      "Kuredu",
+      "Lhaviyani Atoll",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kuredu.com/accommodation/main-area/"
+  },
+  {
+    "id": "local-kuredu-dining",
+    "name": "Kuredu — restaurants and meal plans",
+    "type": "restaurant",
+    "place": "Kuredu Island, Lhaviyani Atoll",
+    "country": "Maldives",
+    "placeId": "kuredu-island-maldives",
+    "url": "https://www.kuredu.com/wine-dine/",
+    "summary": "Official dining guide covering Francos, The Far East, The Beach and the allocated buffet restaurants. Sangu facilities are for guests 15+ and O facilities for guests 12+; confirm your room and meal-plan entitlements, reservations and additional charges rather than assuming every restaurant is included.",
+    "verifiedAt": "2026-10-10T14:21:34Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "Kuredu",
+      "meal plans",
+      "age restrictions",
+      "local food"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kuredu.com/wine-dine/"
+  },
+  {
+    "id": "local-kuredu-transfer-guide",
+    "name": "Kuredu — official transfer and island essentials",
+    "type": "visitor information",
+    "place": "Kuredu Island, Lhaviyani Atoll",
+    "country": "Maldives",
+    "placeId": "kuredu-island-maldives",
+    "url": "https://www.kuredu.com/essesntials-kuredu/",
+    "summary": "Official arrival guide explains transfers arranged with the resort or travel agent, flight-detail coordination and baggage rules. Confirm your actual transfer mode, international-flight connection, luggage handling and late-arrival or late-departure arrangements before travel; the beach camera does not prove a viable connection.",
+    "verifiedAt": "2026-10-10T14:21:34Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "island transfers",
+      "seaplane",
+      "baggage",
+      "arrival"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kuredu.com/essesntials-kuredu/"
+  },
+  {
+    "id": "local-kuredu-booking-guide",
+    "name": "Kuredu — booking and resort planning guide",
+    "type": "visitor information",
+    "place": "Kuredu Island, Lhaviyani Atoll",
+    "country": "Maldives",
+    "placeId": "kuredu-island-maldives",
+    "url": "https://www.kuredu.com/booking-policy-resort-guide/",
+    "summary": "Resort guide to booking conditions, meal-plan requirements, airport coordination and island time. Check the current cancellation and delayed-flight terms and which clock your transfer uses; Kuredu’s island time is one hour ahead of local Maldives time.",
+    "verifiedAt": "2026-10-10T14:21:34Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "booking conditions",
+      "island time",
+      "meal plans",
+      "arrival"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kuredu.com/booking-policy-resort-guide/"
   }
 ]

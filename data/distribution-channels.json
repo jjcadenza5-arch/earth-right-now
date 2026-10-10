@@ -19,7 +19,15 @@
     {
       "id": "instagram",
       "state": "NOT_CONNECTED",
-      "automaticPostingAllowed": false
+      "automaticPostingAllowed": false,
+      "publicAccount": {
+        "url": "https://www.instagram.com/earthrightnowapp/",
+        "ownerVerified": true,
+        "verificationBasis": "OWNER_REPORT_AND_SCREENSHOT",
+        "verifiedAt": "2026-10-10T14:21:34Z"
+      },
+      "ownerReportedFacebookLink": true,
+      "note": "Owner created the ERN Instagram account and reports linking it to the ERN Facebook Page. Supplied profile screenshot confirms the exact handle, Earth Right Now identity, website link and owner editing controls; cross-platform linkage is owner-reported, not independently inspected. No posting integration or automation connected."
     },
     {
       "id": "whatsapp",

@@ -26,6 +26,13 @@
       "ownerVerified": true,
       "verificationBasis": "OWNER_REPORT_AND_SCREENSHOT",
       "verifiedAt": "2026-10-10T12:00:13Z"
+    },
+    {
+      "channel": "instagram",
+      "url": "https://www.instagram.com/earthrightnowapp/",
+      "ownerVerified": true,
+      "verificationBasis": "OWNER_REPORT_AND_SCREENSHOT",
+      "verifiedAt": "2026-10-10T14:21:34Z"
     }
   ],
   "contactClaimed": false,
