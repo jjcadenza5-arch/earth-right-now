@@ -1125,5 +1125,140 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=03007092"
+  },
+  {
+    "id": "local-santa-holiday-village",
+    "name": "Santa Claus Holiday Village",
+    "type": "hotel",
+    "place": "Santa Claus Village, Rovaniemi",
+    "country": "Finland",
+    "placeId": "rovaniemi-santa-claus-village",
+    "url": "https://www.santaclausholidayvillage.fi/",
+    "summary": "Cottage and suite accommodation within Santa Claus Village. Check the operator’s current room choices, guest arrangements and availability; the village camera does not show a particular room or confirm that accommodation or seasonal activities are available.",
+    "verifiedAt": "2026-10-10T10:29:44Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "cottages",
+      "suites",
+      "Rovaniemi",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.santaclausholidayvillage.fi/"
+  },
+  {
+    "id": "local-three-elves",
+    "name": "Three Elves Restaurant",
+    "type": "restaurant",
+    "place": "Santa Claus Village, Rovaniemi",
+    "country": "Finland",
+    "placeId": "rovaniemi-santa-claus-village",
+    "url": "https://www.santaclausholidayvillage.fi/restaurants/three-elves-restaurant",
+    "summary": "Evening restaurant in the main building of Santa Claus Holiday Village. The operator publishes a seasonal operating period and separate reservations for glass-igloo dining; check the current menu, opening period and table arrangements before visiting.",
+    "verifiedAt": "2026-10-10T10:29:44Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "seasonal dining",
+      "Rovaniemi",
+      "local food"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.santaclausholidayvillage.fi/restaurants/three-elves-restaurant"
+  },
+  {
+    "id": "local-plantation-island-resort",
+    "name": "Plantation Island Resort",
+    "type": "resort",
+    "place": "Malolo Lailai, Mamanuca Islands",
+    "country": "Fiji",
+    "placeId": "fiji-malolo-lailai",
+    "url": "https://www.plantationisland.com/our-paradise/",
+    "summary": "Island accommodation on Malolo Lailai in the Mamanuca Islands. Consult the resort for current rooms, guest facilities and visit arrangements; the coastline camera does not establish room availability, sea conditions or access to resort facilities.",
+    "verifiedAt": "2026-10-10T10:29:44Z",
+    "status": "APPROVED",
+    "tags": [
+      "resort",
+      "Malolo Lailai",
+      "Mamanuca Islands",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.plantationisland.com/our-paradise/"
+  },
+  {
+    "id": "local-plantation-island-dining",
+    "name": "Plantation Island Resort — dining options",
+    "type": "restaurant",
+    "place": "Malolo Lailai, Mamanuca Islands",
+    "country": "Fiji",
+    "placeId": "fiji-malolo-lailai",
+    "url": "https://www.plantationisland.com/dining/",
+    "summary": "Official overview of the resort’s restaurants and meal plans, including Copra, Black Coral Grill and Tavola. Check current menus, reservations and guest or day-visitor dining arrangements directly; a beachfront view does not confirm that a table or meal plan is available.",
+    "verifiedAt": "2026-10-10T10:29:44Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "meal plans",
+      "Malolo Lailai",
+      "local food"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.plantationisland.com/dining/"
+  },
+  {
+    "id": "local-plantation-island-arrival",
+    "name": "Plantation Island Resort — official island-transfer guide",
+    "type": "visitor information",
+    "place": "Malolo Lailai, Mamanuca Islands",
+    "country": "Fiji",
+    "placeId": "fiji-malolo-lailai",
+    "url": "https://www.plantationisland.com/our-paradise/fiji-tours-transfers/",
+    "summary": "Resort arrival guide covering transfers from Port Denarau to Malolo Lailai and onward connections from Nadi. Confirm the current operator timetable, flight-to-ferry connection, check-in requirements and baggage or surfboard rules; do not infer a viable connection or operating ferry from the camera.",
+    "verifiedAt": "2026-10-10T10:29:44Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "island transfers",
+      "Port Denarau",
+      "arrival",
+      "baggage"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.plantationisland.com/our-paradise/fiji-tours-transfers/"
+  },
+  {
+    "id": "local-malolo-cat-coach",
+    "name": "Malolo Cat — Nadi coach connections",
+    "type": "visitor information",
+    "place": "Malolo Lailai, Mamanuca Islands",
+    "country": "Fiji",
+    "placeId": "fiji-malolo-lailai",
+    "url": "https://malolocat.com/transfers/bus-connections/",
+    "summary": "The ferry operator’s coach guide explains airport and hotel connections to Port Denarau. Hotel pickup requires advance booking; confirm your actual pickup point, ferry connection and luggage arrangements with the operator before travel rather than assuming a walk-up coach will stop.",
+    "verifiedAt": "2026-10-10T10:29:44Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "airport connection",
+      "coach",
+      "Port Denarau",
+      "advance booking"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://malolocat.com/transfers/bus-connections/"
   }
 ]
