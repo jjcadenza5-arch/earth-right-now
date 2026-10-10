@@ -14,3 +14,12 @@ assert.equal(EDITORIAL_COLLECTION_SAFETY.paidRankingAllowed,false);
 assert.equal(EDITORIAL_COLLECTION_SAFETY.requiresAnalytics,false);
 assert.equal(EDITORIAL_COLLECTION_SAFETY.requiresSocialAccount,false);
 console.log("Phase 8 editorial collections are deterministic and truth-neutral");
+
+const lakes=editorialCollectionById('lakes-waterfalls-fjords');
+assert.ok(lakes);
+for(const title of ['Oeschinensee — Mountain & Lake Views','Niagara Falls waterfall','Flåm & Aurlandsfjord'])assert.equal(editorialCollectionMatches({title},lakes),true,title);
+assert.equal(editorialCollectionMatches({title:'City of Lakewood',categories:['city']},lakes),false,'lake substring alone must not classify a city as a lake');
+assert.equal(editorialCollectionMatches(city,lakes),false);
+const {DISCOVERY_LOCALES,localizedCollection}=await import('../src/editorial-collections-l10n.js');
+for(const locale of DISCOVERY_LOCALES){const copy=localizedCollection(lakes.id,locale);assert.ok(copy?.title&&copy?.description,locale+' requires collection copy');}
+console.log('Lakes/waterfalls/fjords matching and all seven language entries passed');

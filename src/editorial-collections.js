@@ -1,5 +1,6 @@
 export const EDITORIAL_COLLECTIONS=Object.freeze([
   {id:"beaches-water",title:"Beaches & Water",description:"Explore current and schedule-verified ERN places by the sea, coast, beach, harbour and water.",terms:["beach","water","sea","coast","surf","harbour","harbor","island"],query:"beaches & water"},
+  {id:"lakes-waterfalls-fjords",title:"Lakes, Waterfalls & Fjords",description:"Explore current and schedule-verified ERN views of lakes, waterfalls and fjords. Look at the Earth view, then check local access before planning a visit.",terms:["waterfall","fjord","fiord"],wordTerms:["lake","lakes"],query:"lakes waterfalls fjords"},
   {id:"mountains-snow",title:"Mountains & Snow",description:"Explore current and schedule-verified mountain, alpine, snow, ski and volcano places on ERN.",terms:["mountain","snow","ski","volcano","alps","alpine"],query:"mountains"},
   {id:"cities-streets",title:"Cities & Streets",description:"Explore current and schedule-verified city, street, skyline, square and urban places on ERN.",terms:["city","cities","street","urban","skyline","square","harbour","harbor","culture"],query:"cities"},
   {id:"wildlife-nature",title:"Wildlife & Nature",description:"Explore current and schedule-verified wildlife, animal, zoo, aquarium, forest, park and nature places on ERN.",terms:["wildlife","animal","zoo","aquarium","bird","forest","park","nature"],query:"wildlife"},
@@ -19,7 +20,7 @@ export function editorialCollectionById(id){
 export function editorialCollectionMatches(item,definition){
   if(!item||!definition)return false;
   const hay=fold([...(item.categories||[]),item.title,item.story,item.region,item.country].filter(Boolean).join(" "));
-  return (definition.terms||[]).some(term=>hay.includes(fold(term)));
+  return (definition.terms||[]).some(term=>hay.includes(fold(term)))||(definition.wordTerms||[]).some(term=>hay.split(/[^a-z0-9]+/).includes(fold(term)));
 }
 
 export function editorialCollectionRows(rows,definition){

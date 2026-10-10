@@ -385,5 +385,125 @@
       "kandersteg"
     ],
     "reviewBasis": "OFFICIAL_DESTINATION_VISITOR_PAGE"
+  },
+  {
+    "id": "local-ruapehu-sky-waka",
+    "name": "Sky Waka gondola at Whakapapa",
+    "type": "mountain activity",
+    "place": "Mount Ruapehu",
+    "country": "New Zealand",
+    "summary": "Official Whakapapa sightseeing information for the Sky Waka gondola on Mount Ruapehu. Offers are seasonal; check the operator’s current mountain report and available passes before planning a ride.",
+    "url": "https://www.whakapapa.com/summer/summer-sightseeing",
+    "verifiedAt": "2026-10-10T08:06:29Z",
+    "status": "APPROVED",
+    "placeId": "nz-ruapehu",
+    "tags": [
+      "mountain activity",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.whakapapa.com/summer/summer-sightseeing"
+  },
+  {
+    "id": "local-ruapehu-knoll-ridge",
+    "name": "Knoll Ridge Chalet",
+    "type": "restaurant",
+    "place": "Mount Ruapehu",
+    "country": "New Zealand",
+    "summary": "Mountain dining at Whakapapa reached by the Sky Waka gondola. Check current gondola operation, dining availability and seasonal offers with the operator before setting out; an Earth image does not confirm access.",
+    "url": "https://www.whakapapa.com/summer/knoll-ridge-chalet",
+    "verifiedAt": "2026-10-10T08:06:29Z",
+    "status": "APPROVED",
+    "placeId": "nz-ruapehu",
+    "tags": [
+      "restaurant",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.whakapapa.com/summer/knoll-ridge-chalet"
+  },
+  {
+    "id": "local-ruapehu-arrival",
+    "name": "Whakapapa — official arrival and mountain planning",
+    "type": "visitor information",
+    "place": "Mount Ruapehu",
+    "country": "New Zealand",
+    "summary": "Use the operator’s arrival guide for road-status checks, parking, shuttle information and mountain preparation. Follow its daily mountain report for current weather, lift and road notices rather than inferring access from a monitoring image.",
+    "url": "https://www.whakapapa.com/plan-ahead",
+    "verifiedAt": "2026-10-10T08:06:29Z",
+    "status": "APPROVED",
+    "placeId": "nz-ruapehu",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.whakapapa.com/plan-ahead"
+  },
+  {
+    "id": "local-taranaki-visitor-centre",
+    "name": "North Taranaki Visitor Centre — official visit guidance",
+    "type": "visitor information",
+    "place": "Taranaki Maunga",
+    "country": "New Zealand",
+    "summary": "Department of Conservation visitor guidance for the Egmont Road gateway to Te Papa-Kura-o-Taranaki. Check the linked page for road conditions, parking and visitor-centre notices, and ask staff about current tracks and safety information before exploring.",
+    "url": "https://www.doc.govt.nz/footer-links/contact-us/visitor-centres/taranakiegmont-national-park-visitor-centre/",
+    "verifiedAt": "2026-10-10T08:06:29Z",
+    "status": "APPROVED",
+    "placeId": "nz-taranaki-maunga",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.doc.govt.nz/footer-links/contact-us/visitor-centres/taranakiegmont-national-park-visitor-centre/"
+  },
+  {
+    "id": "local-oeschinensee-dining",
+    "name": "Oeschinensee — lakeside and mountain dining",
+    "type": "restaurant",
+    "place": "Oeschinensee",
+    "country": "Switzerland",
+    "summary": "Official overview of dining around Oeschinen Lake and the mountain station. Options and access vary by season; check the operator’s current restaurant and cable-car information before making plans.",
+    "url": "https://www.oeschinensee.ch/en/essen-und-trinken/",
+    "verifiedAt": "2026-10-10T08:06:29Z",
+    "status": "APPROVED",
+    "placeId": "oeschinensee",
+    "tags": [
+      "restaurant",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.oeschinensee.ch/en/essen-und-trinken/"
+  },
+  {
+    "id": "local-park-hyatt-auckland",
+    "name": "Park Hyatt Auckland",
+    "type": "hotel",
+    "place": "Auckland Viaduct Harbour",
+    "country": "New Zealand",
+    "summary": "Waterfront hotel in Auckland’s Wynyard Quarter overlooking the Lighter Basin and Waitematā Harbour, near the Viaduct precinct. Use the hotel’s official page for accommodation and current guest-service details.",
+    "url": "https://www.hyatt.com/park-hyatt/en-US/aklph-park-hyatt-auckland",
+    "verifiedAt": "2026-10-10T08:06:29Z",
+    "status": "APPROVED",
+    "placeId": "auckland-viaduct-harbour",
+    "tags": [
+      "hotel",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hyatt.com/park-hyatt/en-US/aklph-park-hyatt-auckland"
   }
 ]

@@ -11,6 +11,7 @@ export const DISCOVERY_LOCALE_COPY=Object.freeze({
 });
 
 export const EDITORIAL_COLLECTION_LOCALES=Object.freeze({
+ "lakes-waterfalls-fjords":{"en": {"title": "Lakes, Waterfalls & Fjords", "description": "Current lake, waterfall and fjord views. Check local access before going."}, "th": {"title": "ทะเลสาบ น้ำตก และฟยอร์ด", "description": "มุมมองปัจจุบันของทะเลสาบ น้ำตก และฟยอร์ด ตรวจสอบการเข้าถึงพื้นที่ก่อนเดินทาง"}, "de": {"title": "Seen, Wasserfälle & Fjorde", "description": "Aktuelle Ansichten von Seen, Wasserfällen und Fjorden. Zugang vor dem Besuch prüfen."}, "fr": {"title": "Lacs, cascades & fjords", "description": "Vues actuelles de lacs, cascades et fjords. Vérifiez les accès avant de partir."}, "ja": {"title": "湖・滝・フィヨルド", "description": "湖、滝、フィヨルドの現在の景色。訪問前に現地へのアクセスを確認しましょう。"}, "zh": {"title": "湖泊、瀑布与峡湾", "description": "湖泊、瀑布和峡湾的当前视图。出发前请确认当地通行情况。"}, "es": {"title": "Lagos, cascadas y fiordos", "description": "Vistas actuales de lagos, cascadas y fiordos. Comprueba el acceso antes de viajar."}},
  "beaches-water":{
   en:{title:"Beaches & Water",description:"Coasts, seas, harbours, islands and surf."},
   th:{title:"ชายหาดและสายน้ำ",description:"ชายฝั่ง ทะเล ท่าเรือ เกาะ และคลื่น"},

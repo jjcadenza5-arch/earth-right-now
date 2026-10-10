@@ -70,8 +70,8 @@ try{
   assert.ok(original,'fixture destination must exist');
   const current={...original,checkedAt:'2026-10-10T03:00:00Z',lastSuccessfulCheck:'2026-10-10T03:00:00Z',playbackVerifiedAt:'2026-10-10T03:01:00Z'};
   const lake={...realSources.find(s=>s.placeId==='oeschinensee'),checkedAt:current.checkedAt,lastSuccessfulCheck:current.lastSuccessfulCheck};
-  const held={...current,id:'fixture-security-hold',placeId:'fixture-security-hold',health:'DEGRADED',sourceLinkHold:true,sourceUrl:'https://www.utsav.gov.in/livedarshan',officialUrl:undefined};
-  const stale={...current,id:'fixture-stale',placeId:'fixture-stale',checkedAt:'2025-01-01T00:00:00Z',lastSuccessfulCheck:'2025-01-01T00:00:00Z',playbackVerifiedAt:'2025-01-01T00:00:00Z'};
+  const held={...current,id:'fixture-security-hold',placeId:'fixture-security-hold',title:'Fixture Fjord — held source',health:'DEGRADED',sourceLinkHold:true,sourceUrl:'https://www.utsav.gov.in/livedarshan',officialUrl:undefined};
+  const stale={...current,id:'fixture-stale',placeId:'fixture-stale',title:'Fixture Lake — stale source',checkedAt:'2025-01-01T00:00:00Z',lastSuccessfulCheck:'2025-01-01T00:00:00Z',playbackVerifiedAt:'2025-01-01T00:00:00Z'};
   const good=JSON.parse(readFileSync(new URL('../data/local-directory-supplemental.json',import.meta.url),'utf8')).find(x=>x.id==='local-santa-claus-office');
   const row=(id,changes={})=>({...good,id,name:id,...changes});
   const inputs={'sources.json':[current,stale,lake],'source-security-holds.json':[held],'search-supplemental.json':[],'place-search-aliases.json':{places:{}},'travel-offers.json':[],'affiliate-partners.json':[],'destination-photo-rights-candidates.json':JSON.parse(readFileSync(new URL('../data/destination-photo-rights-candidates.json',import.meta.url),'utf8')),'local-directory.json':[], 'local-directory-supplemental.json':[row('Supplemental visitor help'),...Array.from({length:5},(_,i)=>row('Venue '+i)),row('Official arrival help',{type:'visitor information'}),row('Expired arrival help',{type:'visitor information',verifiedAt:'2025-01-01T00:00:00Z'}),row('Expired local help',{verifiedAt:'2025-01-01T00:00:00Z'}),row('Paid local help',{paidPlacement:true}),row('Affiliate local help',{affiliate:true}),row('Unapproved local help',{status:'PENDING'}),row('Wrong destination help',{placeId:'elsewhere'}),row('Stale source local help',{placeId:'fixture-stale'})]};
@@ -86,12 +86,19 @@ try{
   assert.ok(html.includes('https://creativecommons.org/licenses/by-sa/4.0/'),'license link must be visible');
   assert.ok(html.includes('Santa_Claus_Village_11.jpg'),'exact source file must be linked');
   assert.ok(html.includes('Supplemental visitor help'),'approved supplemental help must reach the generated destination');
+  assert.ok(html.includes('Local listing reviewed <time datetime='),'local business listings must disclose their editorial review date');
   assert.ok(html.includes('id="before-you-go"'),'arrival guidance must have a reachable section');
   assert.ok(html.includes('Official arrival help'),'arrival information must survive the venue display limit');
   assert.ok(html.includes('href="#before-you-go"'),'destination navigation must lead to arrival advice');
   assert.ok(html.includes('Visitor information reviewed'),'visitor review date must be distinguished from playback verification');
   for(const name of ['Expired arrival help','Expired local help','Paid local help','Affiliate local help','Unapproved local help','Wrong destination help'])assert.ok(!html.includes(name),name+' must stay excluded');
   const lakeHtml=readFileSync(join(fixture,'places','oeschinensee','index.html'),'utf8');
+  const lakeCollection=readFileSync(join(fixture,'discover','lakes-waterfalls-fjords','index.html'),'utf8');
+  assert.ok(lakeCollection.includes('places/oeschinensee/'),'current lake must be discoverable');
+  assert.ok(!lakeCollection.includes('places/fixture-stale/'),'stale sources must stay out of collection');
+  assert.ok(!lakeCollection.includes('places/fixture-security-hold/'),'held sources must stay out of collection');
+  assert.ok(lakeCollection.includes('hreflang="th"'),'new collection must offer reciprocal existing-language routes');
+
   for(const text of ['Paolo Sgarbanti','2021-06-30','Oeschinensee_lake.jpg','width="960" height="525"','EDITORIAL PHOTO · NOT LIVE'])assert.ok(lakeHtml.includes(text),'matched lake photo must expose '+text);
   assert.ok(!lakeHtml.includes('Santa_Claus_Village_11.jpg'),'lake page must not inherit another destination photo');
   const heldHtml=readFileSync(join(fixture,'places','fixture-security-hold','index.html'),'utf8');
