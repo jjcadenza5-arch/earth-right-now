@@ -95,6 +95,14 @@ try{
   assert.ok(html.includes('href="#before-you-go"'),'destination navigation must lead to arrival advice');
   assert.ok(html.includes('Visitor information reviewed'),'visitor review date must be distinguished from playback verification');
   for(const name of ['Expired arrival help','Expired local help','Paid local help','Affiliate local help','Unapproved local help','Wrong destination help'])assert.ok(!html.includes(name),name+' must stay excluded');
+  const directoryHtml=readFileSync(join(fixture,'places','index.html'),'utf8');
+  assert.ok(directoryHtml.includes('id="placeResources"'),'directory exposes visitor-resource filtering');
+  assert.ok(directoryHtml.includes('data-guide-count="1" data-local-count="4"'),'directory resource counts match actual capped destination sections');
+  assert.ok(directoryHtml.includes('places/'+current.placeId+'/#before-you-go'),'directory guide link reaches destination section');
+  assert.ok(directoryHtml.includes('places/'+current.placeId+'/#local-places'),'directory local link reaches destination section');
+  assert.ok(directoryHtml.includes('official arrival help'),'reviewed guide names become searchable');
+  assert.ok(directoryHtml.includes('supplemental visitor help'),'displayed local names become searchable');
+  for(const name of ['Expired arrival help','Expired local help','Paid local help','Affiliate local help','Unapproved local help','Wrong destination help','Stale source local help','Venue 3','Venue 4'])assert.ok(!directoryHtml.toLowerCase().includes(name.toLowerCase()),name+' must not be promoted or searchable in directory');
   const lakeHtml=readFileSync(join(fixture,'places','oeschinensee','index.html'),'utf8');
   const lakeCollection=readFileSync(join(fixture,'discover','lakes-waterfalls-fjords','index.html'),'utf8');
   assert.ok(lakeCollection.includes('places/oeschinensee/'),'current lake must be discoverable');
@@ -152,6 +160,37 @@ input.value='<script> & nowhere';handlers.input();
 assert.equal(empty.hidden,false);assert.ok(more.href.endsWith(encodeURIComponent(input.value)),'fallback search uses an encoded query');
 input.value='';handlers.input();assert.equal(empty.hidden,true);assert.ok(rows.every(r=>!r.hidden),'clearing query restores all rows');
 console.log('Places directory accent/token search, availability gates, Thai marks and empty recovery passed');
+// Compose real search, source-status and visitor-resource filters in serialized code.
+function resourceDirectory(search=''){
+  const callbacks={};
+  const control=(id,value)=>({value,addEventListener:(event,fn)=>{callbacks[id+':'+event]=fn}});
+  const input=control('query',''),availability=control('availability','all'),resources=control('resources','all');
+  const status={},empty={},more={};
+  const rows=[
+    {dataset:{search:'Sorobon Bonaire Dunkerbeck Pro Center Reef Bar',viewState:'current',guideCount:'2',localCount:'3'}},
+    {dataset:{search:'Bonaire Donkey Sanctuary',viewState:'scheduled',guideCount:'2',localCount:'0'}},
+    {dataset:{search:'Reference island',viewState:'reference',guideCount:'0',localCount:'0'}},
+    {dataset:{search:'Current square',viewState:'current',guideCount:'0',localCount:'0'}}
+  ];
+  const elements={placeFilter:input,placeAvailability:availability,placeResources:resources,placeFilterStatus:status,placeFilterEmpty:empty,placeSearchMore:more};
+  runInNewContext('('+placeDirectoryRuntime.toString()+')()',{URLSearchParams,location:{search},document:{getElementById:id=>elements[id],querySelectorAll:()=>rows}});
+  return {input,availability,resources,status,empty,more,rows,callbacks};
+}
+const resourceSearch=resourceDirectory('?q=Center%20Dunkerbeck&resources=local&availability=verified');
+assert.deepEqual(resourceSearch.rows.map(r=>r.hidden),[false,true,true,true],'business name search composes with current/source and resource filters');
+resourceSearch.input.value='';resourceSearch.resources.value='guides';resourceSearch.callbacks['resources:change']();
+assert.deepEqual(resourceSearch.rows.map(r=>r.hidden),[false,false,true,true],'scheduled sources retain eligible visitor guides');
+resourceSearch.availability.value='current';resourceSearch.callbacks['availability:change']();
+assert.deepEqual(resourceSearch.rows.map(r=>r.hidden),[false,true,true,true],'current filter still excludes scheduled sources even with guides');
+resourceSearch.resources.value='local';resourceSearch.input.value='Donkey';resourceSearch.callbacks['query:input']();
+assert.equal(resourceSearch.empty.hidden,false,'guide-only destination does not claim local venues');
+resourceSearch.input.value='';resourceSearch.resources.value='any';resourceSearch.availability.value='all';resourceSearch.callbacks['resources:change']();
+assert.deepEqual(resourceSearch.rows.map(r=>r.hidden),[false,false,true,true],'either resource filter excludes sources without reviewed resources');
+const unknownResource=resourceDirectory('?resources=unsupported&availability=unsupported');
+assert.equal(unknownResource.resources.value,'all');assert.equal(unknownResource.availability.value,'all');
+assert.ok(unknownResource.rows.every(r=>!r.hidden),'unsupported query filters keep safe default directory state');
+console.log('Directory business discovery and composed guide/local/source filters passed');
+
 
 const {collectionShareScript}=await import('../scripts/collection-share-runtime.mjs');
 async function exerciseCollectionShare(navigator, {tracking=true}={}){

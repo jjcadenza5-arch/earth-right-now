@@ -4,13 +4,16 @@ export function placeDirectoryRuntime(){
   if(!input||!availability||!status)return;
   // Fold Latin accents only: Thai and other scripts retain meaningful marks.
   const fold=value=>String(value||"").normalize("NFC").toLowerCase().split(/(\s+)/).map(token=>/[a-zÀ-ž]/i.test(token)?token.normalize("NFD").replace(/[\u0300-\u036f]/g,"").normalize("NFC"):token).join("");
+  const resources=document.getElementById("placeResources");
   const rows=[...document.querySelectorAll("#placeGrid>li")].map(row=>({row,text:fold(row.dataset.search)}));
   const run=()=>{
-    const q=input.value.trim(),tokens=fold(q).split(/\s+/).filter(Boolean),mode=availability.value;
+    const q=input.value.trim(),tokens=fold(q).split(/\s+/).filter(Boolean),mode=availability.value,resourceMode=resources?.value||"all";
     let shown=0,current=0,scheduled=0,reference=0;
     for(const {row,text}of rows){
       const state=row.dataset.viewState;
-      const ok=tokens.every(t=>text.includes(t))&&(mode==="current"?state==="current":mode==="verified"?state==="current"||state==="scheduled":true);
+      const guides=Number(row.dataset.guideCount)||0,locals=Number(row.dataset.localCount)||0;
+      const hasResources=resourceMode==="guides"?guides>0:resourceMode==="local"?locals>0:resourceMode==="any"?guides+locals>0:true;
+      const ok=hasResources&&tokens.every(t=>text.includes(t))&&(mode==="current"?state==="current":mode==="verified"?state==="current"||state==="scheduled":true);
       row.hidden=!ok;
       if(ok){shown++;if(state==="current")current++;else if(state==="scheduled")scheduled++;else reference++;}
     }
@@ -22,5 +25,8 @@ export function placeDirectoryRuntime(){
   input.value=params.get("q")||"";
   const mode=params.get("availability");
   if(["all","current","verified"].includes(mode))availability.value=mode;
+  const resourceMode=params.get("resources");
+  if(resources&&["all","guides","local","any"].includes(resourceMode))resources.value=resourceMode;
+  resources?.addEventListener("change",run);
   input.addEventListener("input",run);availability.addEventListener("change",run);run();
 }
