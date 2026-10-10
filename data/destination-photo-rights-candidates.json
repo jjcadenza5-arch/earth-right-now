@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "reviewDate": "2026-10-10",
-  "publicActivationAllowed": false,
-  "purpose": "Exact-file photography candidates for editorial destination previews, not live-source evidence. A candidate may only go live after a rights and attribution review and correctly labeled presentation.",
+  "publicActivationAllowed": true,
+  "purpose": "Two individually verified CC BY-SA 4.0 editorial photos for matching ERN destination pages only. Photos are not live previews or camera verification evidence.",
   "requirements": {
     "recheckFilePageLicenseAtUse": true,
     "checkLicenseAttributionAuthorSourceAndAdaptation": true,
@@ -20,18 +20,26 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "source": "Wikimedia Commons",
       "dateTaken": "2025-02-10",
-      "status": "RIGHTS_DOCUMENTED_PENDING_ASSET_AND_DISPLAY_REVIEW",
-      "note": "Image represents Santa Claus Village, not a current camera frame; author credit and share-alike requirements apply to adaptations."
+      "status": "APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY",
+      "note": "Image represents Santa Claus Village, not a current camera frame; author credit and share-alike requirements apply to adaptations.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Santa_Claus_Village_11.jpg/960px-Santa_Claus_Village_11.jpg",
+      "publicActivationAllowed": true,
+      "licenseRecheckedAt": "2026-10-10",
+      "attributionChanges": "Displayed at original aspect ratio; browser scales down responsively; no editorial alteration"
     },
     {
       "placeId": "kyoto-fushimi-inari",
       "filePage": "https://commons.wikimedia.org/wiki/File:FUS_-_Torii_gates_among_trees_at_Fushimi_Inari-taisha,_Kyoto,_Japan,_2015.jpg",
-      "creator": "JosepMGracia",
+      "creator": "Josep M. Gracia",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "source": "Wikimedia Commons",
-      "status": "RIGHTS_DOCUMENTED_PENDING_ASSET_AND_DISPLAY_REVIEW",
-      "note": "File page dates, creator/attribution wording and image itself must be rechecked before publication; never present as live."
+      "status": "APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY",
+      "note": "File page dates, creator/attribution wording and image itself must be rechecked before publication; never present as live.",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/FUS_-_Torii_gates_among_trees_at_Fushimi_Inari-taisha%2C_Kyoto%2C_Japan%2C_2015.jpg/960px-FUS_-_Torii_gates_among_trees_at_Fushimi_Inari-taisha%2C_Kyoto%2C_Japan%2C_2015.jpg",
+      "publicActivationAllowed": true,
+      "licenseRecheckedAt": "2026-10-10",
+      "attributionChanges": "Displayed at original aspect ratio; browser scales down responsively; no editorial alteration"
     }
   ]
 }
