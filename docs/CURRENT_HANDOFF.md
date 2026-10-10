@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-10 — Hua Hin COAST visitor planning link improved
+- After owner-confirmed green Pages recovery, checked the approved Local Earth supplemental COAST Beach Club & Bistro listing at exact ERN place `hua-hin-centara-live`. Its prior URL led to a broad resort restaurant directory.
+- The resort's current first-party specific venue page `https://www.centarahotelsresorts.com/centaragrand/chbr/coast-beach-club-bistro` offers menus, published hours, telephone details and a reservation action. Replaced the generic URL with this first-party venue page, refreshed address-source provenance to that page and described information visitors can actually consult. Commit `d6b09dc6548b2ddee515661bc69d67f816f40f67`.
+- Preserved original 2026-10-09 review timestamp, `APPROVED` status, unpaid/non-affiliate status, existing address and place binding. No claim of an available table, tracked sale or live video; no changes to camera playback evidence, source status, source count, ranked catalog, JS bundles, user experience layout or performance limits.
+- Existing human playback proof for the five owner-reviewed cameras remains time-bounded to 2026-10-10 03:01-03:02 UTC. No fresh rendered playback was obtained in this batch; do not renew those timestamps without new operator review.
+- Next Pages/deployed link outcome is still unconfirmed for this data-only improvement.
+
+
 ## 2026-10-10 — Chicago demand-led search-to-view improvement
 - Continued after owner-confirmed green recovery from the Pages #3054 compact-source regression. Used the existing privacy-safe `data/traffic-growth-priorities.json` top-search data (`chicago`: 2 observed searches in recorded 30-day window) and found an existing core `chicago-field-skyline` source with place ID `chicago-lakefront` but no lazy discovery aliases for that place.
 - Added seven specific Chicago skyline/lakefront/city synonyms to the existing `chicago-lakefront` key in `data/place-search-aliases.json`, commit `feb50a28f9e77a4342deabef8d08e26195d7c916`. No new source, media verification, affiliate, ranking or playback date change; no added startup JavaScript and no relaxation of core budgets.
