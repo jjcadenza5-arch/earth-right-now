@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-10 — Visitor-facing Local Earth direct-link improvement
+- Following owner-confirmed green Pages #3049 and image-renewal repair, improved real visitor journeys instead of adding new camera or affiliate counts.
+- Rechecked first-party/official pages for Santa Claus Office (Rovaniemi), Santa Claus' Main Post Office (Finland's Posti), Soul Bar & Bistro (Auckland) and Bivacco (Auckland). Replaced four generic tourism/directory links with direct first-party venue/operator pages, and added their officially documented postal addresses and address-source provenance.
+- Updated **only** `data/local-directory-supplemental.json` in commit `cbbb67f26330a0862f8a1131b4dc4147f9c6a046`; all four stay approved, unpaid and non-affiliate with exact existing ERN place IDs, within the existing review horizon. ERN shows information links, **not** promises of available reservations, prices or commission.
+- No startup JavaScript, Watch Earth, inside-ERN playback proof, LIVE labels, numbered Atlas, commercial ranking or public-OFF gates changed. Reviewed Local Earth count remains 21, recorded revenue-eligible affiliate placement count remains 232.
+- The latest Pages run has not yet been checked for this data-only commit. Keep release result separate from official-site evidence.
+
+
 ## 2026-10-10 — Scheduled current-image renewal #5 failure diagnosed and test contract repaired
 - Scheduled run `38011307566` completed actual two-source image probes successfully (USGS Yellowstone Biscuit Basin: image evidence 13.7 minutes old; GeoNet Ruapehu: 7.7 minutes old), but failed in `tests/current-image-pilot.smoke.js` before committing renewal evidence.
 - Failure was the generic assertion `refreshMs >= 600000` applied to all independently approved `IMAGE_REFRESH` cameras, including Mount St. Helens (`us-mount-st-helens-current-image`), whose catalog contract specifies a documented 300,000 ms / five-minute USGS refresh. The original two controlled pilot cameras retain their 600,000 ms minimum.
