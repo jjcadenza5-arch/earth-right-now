@@ -32,7 +32,14 @@
     "sourceLinkHold": true,
     "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
     "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
-    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied.",
+    "searchAliases": [
+      "Varanasi",
+      "Banaras",
+      "Benares",
+      "Kashi Vishwanath",
+      "काशी विश्वनाथ"
+    ]
   },
   {
     "id": "india-mumbai-siddhivinayak-live",
@@ -67,7 +74,13 @@
     "sourceLinkHold": true,
     "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
     "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
-    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied.",
+    "searchAliases": [
+      "Mumbai Siddhivinayak",
+      "Shree Siddhivinayak",
+      "Prabhadevi Mumbai",
+      "मुंबई सिद्धिविनायक"
+    ]
   },
   {
     "id": "india-ujjain-mahakaleshwar-live",
@@ -101,7 +114,13 @@
     "sourceLinkHold": true,
     "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
     "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
-    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied.",
+    "searchAliases": [
+      "Ujjain",
+      "Mahakaleshwar",
+      "Mahakal",
+      "उज्जैन महाकालेश्वर"
+    ]
   },
   {
     "id": "india-tirupati-tirumala-live",
@@ -135,7 +154,13 @@
     "sourceLinkHold": true,
     "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
     "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
-    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied.",
+    "searchAliases": [
+      "Tirupati",
+      "Tirumala",
+      "Tirumala Tirupati",
+      "तिरुपति"
+    ]
   },
   {
     "id": "india-bhuj-swaminarayan-live",
@@ -169,7 +194,13 @@
     "sourceLinkHold": true,
     "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
     "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
-    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied.",
+    "searchAliases": [
+      "Bhuj",
+      "Bhuj Dham",
+      "Swaminarayan Bhuj",
+      "Kutch Bhuj"
+    ]
   },
   {
     "id": "india-jaipur-govind-devji-live",
@@ -204,7 +235,13 @@
     "sourceLinkHold": true,
     "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
     "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
-    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied.",
+    "searchAliases": [
+      "Jaipur",
+      "Govind Dev Ji",
+      "Govind Devji",
+      "जयपुर"
+    ]
   },
   {
     "id": "india-dongargarh-bamleshwari-live",
@@ -238,7 +275,12 @@
     "sourceLinkHold": true,
     "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
     "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
-    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied.",
+    "searchAliases": [
+      "Dongargarh Bambleshwari",
+      "Maa Bamleshwari",
+      "Bambleshwari Temple"
+    ]
   },
   {
     "id": "india-kolhapur-ambabai-live",
@@ -272,7 +314,12 @@
     "sourceLinkHold": true,
     "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
     "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
-    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied.",
+    "searchAliases": [
+      "Kolhapur Ambabai",
+      "Karveer Niwasini Ambabai",
+      "Mahalakshmi Temple Kolhapur"
+    ]
   },
   {
     "id": "india-pandharpur-vitthal-live",
@@ -306,7 +353,12 @@
     "sourceLinkHold": true,
     "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
     "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
-    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied.",
+    "searchAliases": [
+      "Pandharpur Vitthal Rukmini",
+      "Vitthal Temple Pandharpur",
+      "Vithoba Temple"
+    ]
   },
   {
     "id": "india-vijayawada-kanaka-durga-live",
@@ -340,7 +392,12 @@
     "sourceLinkHold": true,
     "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
     "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
-    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied.",
+    "searchAliases": [
+      "Vijayawada Kanaka Durga",
+      "Kanaka Durga Temple",
+      "Indrakeeladri"
+    ]
   },
   {
     "id": "india-puttaparthi-sathya-sai-live",
@@ -374,7 +431,12 @@
     "sourceLinkHold": true,
     "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
     "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
-    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied.",
+    "searchAliases": [
+      "Puttaparthi Sathya Sai",
+      "Prasanthi Nilayam",
+      "Sri Sathya Sai Temple"
+    ]
   },
   {
     "id": "india-nashik-trimbakeshwar-live",
@@ -408,6 +470,11 @@
     "sourceLinkHold": true,
     "failureReason": "Provider link paused: owner Safari screenshot shows a certificate/privacy warning on the shared Utsav URL; independent retrieval failed. Security review required before restoring.",
     "sourceLinkHoldObservedAt": "2026-10-10T07:04:27Z",
-    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied."
+    "sourceLinkHoldEvidence": "Owner screenshots 2026-10-10 13:55 Asia/Bangkok: Puttaparthi handoff then Safari privacy warning for www.utsav.gov.in. All 12 entries share this identical directory URL; no per-camera playback observation implied.",
+    "searchAliases": [
+      "Nashik Trimbakeshwar",
+      "Trimbakeshwar Temple",
+      "Trimbakeshwar Jyotirlinga"
+    ]
   }
 ]
