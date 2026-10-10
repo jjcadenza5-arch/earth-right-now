@@ -30,6 +30,8 @@ await cp(new URL("../src/app-lite.js",import.meta.url),new URL("src/app-lite.js"
 await cp(new URL("../src/atlas-marker-groups.js",import.meta.url),new URL("src/atlas-marker-groups.js",dist));
 await cp(new URL("../src/styles-lite.css",import.meta.url),new URL("src/styles-lite.css",dist));
 await cp(new URL("../src/premium-cards.css",import.meta.url),new URL("src/premium-cards.css",dist));
+await cp(new URL("../src/editorial-card-photos.js",import.meta.url),new URL("src/editorial-card-photos.js",dist));
+await cp(new URL("../data/destination-photo-rights-candidates.json",import.meta.url),new URL("data/destination-photo-rights-candidates.json",dist));
 await cp(new URL("../src/participation-public-config.js",import.meta.url),new URL("src/participation-public-config.js",dist));
 await cp(new URL("../src/earth-signal-client.js",import.meta.url),new URL("src/earth-signal-client.js",dist));
 await cp(new URL("../src/earth-signals.js",import.meta.url),new URL("src/earth-signals.js",dist));

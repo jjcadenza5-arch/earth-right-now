@@ -21,10 +21,18 @@ assert.match(css,/scenic-poster\[data-scene="city"\][\s\S]*#e8c37b/,
   "city fallback art should include visible light detail");
 assert.match(css,/scenic-poster\[data-scene="water"\][\s\S]*#8ed3e4/,
   "water fallback art should be visibly brighter than a flat panel");
-assert.match(css,/photo-1771945484043-3a17fbf57a4b/,"water/island fallback should use the approved editorial beach photo");
-assert.match(css,/photo-1784536424390-b6e653809373/,"mountain/snow/volcano fallback should use the approved editorial mountain photo");
-assert.match(css,/photo-1767749505538-23e71d1af2c5/,"city/science fallback should use the approved editorial city photo");
-assert.match(css,/photo-1759128312246-0a18fae0d46a/,"wildlife/farm fallback should use the approved editorial nature photo");
+assert.doesNotMatch(readFileSync(new URL("../src/premium-cards.css",import.meta.url),"utf8"),/photo-(1771945484043|1784536424390|1767749505538|1759128312246)/,"generic remote photos must not stand in for unrelated destinations");
+assert.match(css,/right:auto;bottom:auto/,"badges must clear inherited opposite edges");
+assert.match(css,/\.wander-card>\.wander-visual\{position:absolute;inset:0\}/,"fallback layer must retain full-card positioning");
+assert.match(build,/editorial-card-photos\.js/,"lazy photo module must ship in release");
+const {approvedPhotos,eligibleVisual}=await import("../src/editorial-card-photos.js");
+const register=JSON.parse(readFileSync(new URL("../data/destination-photo-rights-candidates.json",import.meta.url),"utf8"));
+assert.equal(approvedPhotos(register).size,4);
+assert.equal(approvedPhotos({...register,homepageActivationAllowed:false}).size,0);
+assert.equal(approvedPhotos({...register,candidates:[{...register.candidates[0],imageUrl:"https://example.com/photo.jpg"}]}).size,0);
+assert.equal(approvedPhotos(register).has("unrelated-place"),false);
+let selector;eligibleVisual({querySelector:s=>{selector=s;return null}});
+assert.equal(selector,'.result-visual[data-visual-kind="illustrative"],.wander-visual[data-visual-kind="illustrative"]',"source and video posters cannot be overwritten");
 assert.match(build,/premium-cards\.css/,"static release must include premium card stylesheet");
 assert.match(css,/ern-fuji-mockup-hero\.jpg/,"approved Mount Fuji hero image must remain active");
 assert.doesNotMatch(css,/commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\/FujiSunriseKawaguchiko2025WP/,

@@ -25,6 +25,8 @@ on:
       - "src/travel-planning-client.js"
       - "src/affiliate-partners.js"
       - "scripts/local-directory-status.mjs"
+      - "src/editorial-card-photos.js"
+      - "src/premium-cards.css"
       - "src/styles-lite.css"
       - "data/sources.json"
       - "data/search-supplemental.json"

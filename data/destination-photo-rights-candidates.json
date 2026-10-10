@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "reviewDate": "2026-10-10",
   "publicActivationAllowed": true,
-  "purpose": "Individually verified CC BY-SA 4.0 editorial photos for matching ERN destination pages only. Photos are not live previews or camera verification evidence.",
+  "purpose": "Individually verified CC BY-SA 4.0 editorial photos for exact matching destination pages and explicitly approved homepage illustration cards. Photos are not live previews or camera verification evidence.",
   "requirements": {
     "recheckFilePageLicenseAtUse": true,
     "checkLicenseAttributionAuthorSourceAndAdaptation": true,
@@ -25,7 +25,9 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Santa_Claus_Village_11.jpg/960px-Santa_Claus_Village_11.jpg",
       "publicActivationAllowed": true,
       "licenseRecheckedAt": "2026-10-10",
-      "attributionChanges": "Displayed at original aspect ratio; browser scales down responsively; no editorial alteration"
+      "attributionChanges": "Displayed at original aspect ratio; browser scales down responsively; no editorial alteration",
+      "homepageActivationAllowed": true,
+      "homepageAttributionChanges": "Display crop using object-fit: cover; archival editorial photo, not live. Original source and CC BY-SA 4.0 linked beside card."
     },
     {
       "placeId": "kyoto-fushimi-inari",
@@ -39,7 +41,9 @@
       "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/FUS_-_Torii_gates_among_trees_at_Fushimi_Inari-taisha%2C_Kyoto%2C_Japan%2C_2015.jpg/960px-FUS_-_Torii_gates_among_trees_at_Fushimi_Inari-taisha%2C_Kyoto%2C_Japan%2C_2015.jpg",
       "publicActivationAllowed": true,
       "licenseRecheckedAt": "2026-10-10",
-      "attributionChanges": "Displayed at original aspect ratio; browser scales down responsively; no editorial alteration"
+      "attributionChanges": "Displayed at original aspect ratio; browser scales down responsively; no editorial alteration",
+      "homepageActivationAllowed": true,
+      "homepageAttributionChanges": "Display crop using object-fit: cover; archival editorial photo, not live. Original source and CC BY-SA 4.0 linked beside card."
     },
     {
       "placeId": "auckland-viaduct-harbour",
@@ -60,7 +64,9 @@
       "attributionChanges": "Displayed at original aspect ratio; browser scales down responsively; no editorial alteration",
       "inspectedPreviewSha256": "da0ac90ea9ee06f0fc3816c241332aeb3f4c258541fe095f203c3da7f1cfeeec",
       "inspectedPreviewBytes": 211815,
-      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Viaduct_Harbour.jpg&oldid=1225423461"
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Viaduct_Harbour.jpg&oldid=1225423461",
+      "homepageActivationAllowed": true,
+      "homepageAttributionChanges": "Display crop using object-fit: cover; archival editorial photo, not live. Original source and CC BY-SA 4.0 linked beside card."
     },
     {
       "placeId": "kyoto-kifune-shrine",
@@ -81,7 +87,10 @@
       "attributionChanges": "Displayed at original aspect ratio; browser scales down responsively; no editorial alteration",
       "inspectedPreviewSha256": "7892f6716e89ba8cef7fe54b37e6971e1e18b66d94b62cfe4a05510009137f73",
       "inspectedPreviewBytes": 131109,
-      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Kifune-jinja_Shint%C3%B4_Shrine_-_Stone_steps.jpg&oldid=1119290401"
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Kifune-jinja_Shint%C3%B4_Shrine_-_Stone_steps.jpg&oldid=1119290401",
+      "homepageActivationAllowed": true,
+      "homepageAttributionChanges": "Display crop using object-fit: cover; archival editorial photo, not live. Original source and CC BY-SA 4.0 linked beside card."
     }
-  ]
+  ],
+  "homepageActivationAllowed": true
 }
