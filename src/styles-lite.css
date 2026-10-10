@@ -24,9 +24,3 @@
 
 @media(max-width:620px){.wander-grid{grid-template-columns:1fr}}
 
-/* Compact illustrative previews: quiet destination silhouettes, never live-image claims. */
-.result-visual[data-visual-kind="illustrative"] .scenic-poster{inset:0;isolation:isolate}
-.result-visual[data-visual-kind="illustrative"] .scene-sun{width:22%;right:12%;top:10%;filter:none;opacity:.75}
-.result-visual[data-visual-kind="illustrative"] .scene-back{bottom:-5%;height:50%;border-radius:0;transform:none}
-.result-visual[data-visual-kind="illustrative"] .scene-front{bottom:-10%;height:35%;border-radius:0;transform:none}
-.result-visual[data-visual-kind="illustrative"] .scenic-poster[data-scene="earth"]{background:linear-gradient(160deg,#8bbcb9,#4d929a 56%,#215662)}
