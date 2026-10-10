@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T17:18:00+07:00",
+  "updatedAt": "2026-10-10T00:00:00+07:00",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -15,33 +15,48 @@
       "京都市",
       "伏見稲荷",
       "伏見稲荷大社",
-      "Kyoto Japan"
+      "Kyoto Japan",
+      "Fushimi Inari Shrine",
+      "Fushimi Inari Taisha",
+      "伏見稲荷神社"
     ],
     "kyoto-kifune-shrine": [
       "京都",
       "貴船神社",
       "Kifune Jinja",
-      "Kyoto Japan"
+      "Kyoto Japan",
+      "Kifune Shrine",
+      "Kibune Shrine",
+      "貴船"
     ],
     "kyoto-kiyomizuzaka": [
       "京都",
       "清水坂",
       "清水寺",
       "Kiyomizu-dera",
-      "Kyoto Japan"
+      "Kyoto Japan",
+      "Kiyomizu Slope",
+      "Kiyomizu-zaka",
+      "清水寺参道"
     ],
     "kyoto-hanamikoji": [
       "京都",
       "花見小路",
       "祇園",
       "Gion",
-      "Kyoto Japan"
+      "Kyoto Japan",
+      "Hanamikoji Street",
+      "Gion Hanamikoji",
+      "花見小路通"
     ],
     "kyoto-nishiki-market": [
       "京都",
       "錦市場",
       "Nishiki Ichiba",
-      "Kyoto Japan"
+      "Kyoto Japan",
+      "Nishiki Market Kyoto",
+      "Kyoto Nishiki Market",
+      "錦市場商店街"
     ],
     "seoul-plaza": [
       "서울",
