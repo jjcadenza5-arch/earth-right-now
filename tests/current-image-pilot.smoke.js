@@ -23,6 +23,7 @@ assert.match(ruapehu.attribution,/GeoNet.*NHC.*ESNZ.*LINZ.*NEMA.*MBIE/i);
 for(const source of rows.filter(x=>x.playback==="IMAGE_REFRESH")){
   assert.equal(source.permission,"EMBED_ALLOWED",source.id);
   assert.match(source.sourceUrl,/^https:\/\//,source.id);
-  assert.ok(Number(source.refreshMs)>=600000,source.id);
+  const minRefreshMs=source.id==="us-mount-st-helens-current-image"&&source.rightsBasis==="USGS Public Domain."&&/every 5 minutes/i.test(source.freshnessEvidence||"")?300000:600000;
+  assert.ok(Number(source.refreshMs)>=minRefreshMs,source.id);
 }
 console.log("Two protected pilot sources retain their contract; independently approved current-image sources remain valid");
