@@ -1,5 +1,12 @@
 # Current ERN handoff
 
+## 2026-10-10 — Pages #3054 red: serialization-only core size regression fixed
+- Owner screenshot confirmed Pages #3054 RED at commit `dd675467d178df67178a73ba8e8c632e057d8ade`; Operations #1783 GREEN. Read the actual Pages job `114116979475` in run `38019457864`: JavaScript syntax passed, but the 119-test release suite failed 2 audits due exclusively to performance caps: source JSON **356,330 bytes** (above source budget) and lean core **642,045 bytes** (above 575,000).
+- Root cause: our previous five-timestamp GitHub update used `JSON.stringify(rows,null,2)`, expanding source-file whitespace and exceeding the enforced release size limits. No playback permission/URL/observed-time failure appeared in those audit results.
+- Rewrote `data/sources.json` as compact valid JSON **without changing the parsed 330 source objects or any five verified `playbackVerifiedAt` timestamps** (commit `18863236e9d0c951577657998fce047db4dee39e`). Predicted resulting core size ~**573,534 bytes**, based on observed failed-build measures and byte reduction; this prediction is NOT a passed release check. The source's compact payload is ~287,819 bytes. All actual performance thresholds remain unchanged.
+- Require next Pages release job success and production verification before declaring recovery. Network metadata remains `UNKNOWN_NOT_RECORDED`, freshness expiry continues, and owner evidence batch `184b21d9a48c8d2c` remains authoritative.
+
+
 ## 2026-10-10 — Five exact-batch human embedded-playback reviews accepted
 - Owner supplied an ERN operator-review evidence packet generated `2026-10-10T03:02:32.157Z` from `https://earthrightnow.app/review/inside-ern.html`, with `reviewBatch:184b21d9a48c8d2c`, `catalogMutationAllowed:false`, and network status `UNKNOWN_NOT_RECORDED`. Owner's screenshot of deployed `/review/current.json` independently confirms **that exact batch ID** and the five primaryInside source IDs; review file generated `2026-10-10T02:44:43.823Z`.
 - The five `HUMAN_PLAYBACK_CONFIRMED` records match their canonical source IDs and **exact embed URLs**, with observation times: Rovaniemi Santa Claus Village `03:01:52.308Z`; Taitung Jinzun `03:01:57.857Z`; Auckland Viaduct Harbour `03:02:08.457Z`; Kyoto Hanamikoji `03:02:19.141Z`; Kyoto Kiyomizuzaka `03:02:23.992Z`.
