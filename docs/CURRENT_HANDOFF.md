@@ -1,5 +1,13 @@
 # Current ERN handoff
 
+## 2026-10-10 — Demand-led seven-destination search and playback-proof triage
+- Used the recorded 2026-10-08 privacy-preserving traffic snapshot (108 searches; leading queries Taitung Jinzun, New York, Arches, Chicago; leading place opens Ruapehu, Taranaki, Rovaniemi, Biscuit Basin, Denpasar) to prioritize genuine existing ERN destination matching rather than fabricating new cameras.
+- Added 27 English/local-language aliases across seven existing place IDs: `taitung-jinzun`, `nz-ruapehu`, `nz-taranaki-maunga`, `yellowstone-biscuit-basin`, `rovaniemi-santa-claus-village`, `denpasar-city-live`, `us-arches-national-park`. Alias-only commit `54acaf7274870a58fa48e73d06d1c46e2761edc9`. Lazy lookup only; no media/ranking/commercial/source status changes.
+- Checked existing core camera records: Auckland Viaduct Harbour, Taitung Jinzun and Rovaniemi Santa Claus Village embedded playback proofs remain dated **2026-10-02T00:45:00Z**. The old records must not be treated as fresh rendered playback. Revalidation requires current actual player render and evidence under the established permission, freshness and proof gates. No camera was promoted and no playback timestamps were refreshed.
+- This commit does not resolve genuine missing-camera demand such as Dolphin Bay / Sam Roi Yot or standby Chiang Mai CCTV. Continue first-party source research but fail closed until a real view qualifies.
+- Public deployment and browser search result behavior after this change remain to be checked via GitHub Actions and a visitor smoke check; do not claim release passed from the commit alone. All numbered Atlas, five-camera editorial constraint, startup caps, source labels, affiliate neutrality and public-OFF gates preserved.
+
+
 ## 2026-10-10 — Old Faithful Snow Lodge direct visitor-planning improvement
 - Replaced the broad Old Faithful lodging listing URL with the operator's exact Snow Lodge page in `data/local-directory-supplemental.json` (commit `a86840a552cf4a20428fc2ea014a38fd5bf53301`).
 - The first-party concessioner page includes the 2051 Snow Lodge Ave check-in address, operating dates, and winter oversnow-transport caveat. Updated the local description to direct visitors to check dates and transport instead of assuming year-round drive-in access. National Park Service confirms the Snow Lodge's winter access needs commercial snowcoach/snowmobile.
