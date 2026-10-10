@@ -925,5 +925,125 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.islandaccess.metro.tokyo.lg.jp/en/island/hachijojima/"
+  },
+  {
+    "id": "local-crystal-bay-resort",
+    "name": "Crystal Bay Beach Resort",
+    "type": "hotel",
+    "place": "Koh Samui — Crystal Bay",
+    "country": "Thailand",
+    "placeId": "thailand-koh-samui-crystal-bay",
+    "url": "https://crystalbaysamui.com/beachresort/",
+    "summary": "Beachfront hotel on Silver Beach, also known as Crystal Bay, between Chaweng and Lamai on Koh Samui. Check the official property page for current room availability and guest arrangements; beach imagery does not confirm a room or swimming conditions.",
+    "verifiedAt": "2026-10-10T09:22:07Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://crystalbaysamui.com/beachresort/"
+  },
+  {
+    "id": "local-crystal-bay-beach-club",
+    "name": "Crystal Bay Beach Club",
+    "type": "restaurant",
+    "place": "Koh Samui — Crystal Bay",
+    "country": "Thailand",
+    "placeId": "thailand-koh-samui-crystal-bay",
+    "url": "https://crystalbaysamui.com/beachclub/",
+    "summary": "Dining and beach-bar option at Crystal Bay on Koh Samui. Confirm current menus, reservations, visitor access and any event schedule with the venue before going; this is an unpaid local listing rather than an ERN partnership.",
+    "verifiedAt": "2026-10-10T09:22:07Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://crystalbaysamui.com/beachclub/"
+  },
+  {
+    "id": "local-camps-bay-hotel",
+    "name": "The Bay Hotel",
+    "type": "hotel",
+    "place": "Cape Town — Camps Bay",
+    "country": "South Africa",
+    "placeId": "south-africa-camps-bay",
+    "url": "https://thebayhotel.com/location/",
+    "summary": "Hotel on the Camps Bay beachfront strip in Cape Town. The official location page provides property directions; consult the hotel for current accommodation and guest arrangements rather than inferring availability from the coastal view.",
+    "verifiedAt": "2026-10-10T09:22:07Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://thebayhotel.com/location/"
+  },
+  {
+    "id": "local-camps-bay-bistro",
+    "name": "Bistro @ The Bay",
+    "type": "restaurant",
+    "place": "Cape Town — Camps Bay",
+    "country": "South Africa",
+    "placeId": "south-africa-camps-bay",
+    "url": "https://thebayhotel.com/restaurants/bistro/",
+    "summary": "Dining venue beside The Bay Hotel pool and deck overlooking Camps Bay. Check the venue’s current menu, reservation and non-resident access arrangements before visiting; the listing does not guarantee service or a table.",
+    "verifiedAt": "2026-10-10T09:22:07Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://thebayhotel.com/restaurants/bistro/"
+  },
+  {
+    "id": "local-san-marino-cablecar",
+    "name": "San Marino — official cable-car visitor guide",
+    "type": "visitor information",
+    "place": "San Marino — cableway",
+    "country": "San Marino",
+    "placeId": "san-marino-cableway",
+    "url": "https://www.visitsanmarino.com/pub1/VisitSM/en/contenuto/Vivi/Funivia.html",
+    "summary": "Official guidance for the cable car linking Borgo Maggiore and the Old Town, with station locations, parking and service information. Check current hours, testing-closure notices and passenger regulations before traveling; a camera view does not confirm operation.",
+    "verifiedAt": "2026-10-10T09:22:07Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.visitsanmarino.com/pub1/VisitSM/en/contenuto/Vivi/Funivia.html"
+  },
+  {
+    "id": "local-san-marino-parking",
+    "name": "San Marino Old Town — official parking guide",
+    "type": "visitor information",
+    "place": "San Marino — Piazza della Libertà",
+    "country": "San Marino",
+    "placeId": "san-marino-piazza-liberta",
+    "url": "https://www.visitsanmarino.com/pub1/VisitSM/en/contenuto/Vivi/Parcheggi_a_San_Marino.html",
+    "summary": "Official parking guidance for visiting San Marino’s Old Town, with car-park locations, payment methods and seasonal arrangements. Check the linked current details and onward access before going; the square image does not establish parking availability.",
+    "verifiedAt": "2026-10-10T09:22:07Z",
+    "status": "APPROVED",
+    "tags": [
+      "visitor information",
+      "local planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.visitsanmarino.com/pub1/VisitSM/en/contenuto/Vivi/Parcheggi_a_San_Marino.html"
   }
 ]
