@@ -1,5 +1,11 @@
 # Current ERN handoff
 
+## 2026-10-10 — Kyoto exact-destination search improvement and official camera research
+- Added 15 meaningful Japanese/English destination-name aliases across existing Kyoto Fushimi Inari, Kifune, Kiyomizuzaka, Gion Hanamikoji and Nishiki Market place IDs in `data/place-search-aliases.json`; commit `e8411739e5aec1e1950621b9ee0da426635c9627`. This improves search-to-discovery retrieval without changing source records, editorial ranking or commercial placements.
+- Rechecked the official Kyoto tourism congestion live-camera network at `https://global.kyoto.travel/en/comfort/` and DMO Kyoto's streams pointer `https://www.youtube.com/@DMOKYOTO/streams`. Updated the existing Kyoto research candidate only (commit `e1964587062d95509deb5e16cc4098e681b2780b`). Selected live-camera coverage exists, but exact individually authorized playback inside ERN was **not** verified. No LIVE promotion, embed permission, or `playbackVerifiedAt` change.
+- All source holds, five-camera Watch Earth eligibility, numbered Living Atlas, public-OFF gates and strict performance budgets remain unchanged. The newly modified alias/research files require GitHub Actions release validation before public deployment is certified.
+
+
 ## 2026-10-10 — Visitor link health repair: Auckland Bivacco
 - Audited the four recently improved Local Earth direct links. Santa Claus Office, Santa Claus' Main Post Office and Soul Bar & Bistro were accessible on current direct checks. Bivacco's prior direct path `https://www.barziti.co.nz/bivacco` returned HTTP 404 in a fresh request despite indexed search descriptions.
 - Replaced the broken link and address provenance with the **working official Viaduct Harbour Bivacco venue page** `https://www.viaduct.co.nz/eat-and-drink/bivacco` (venue details, address, opening information and onward menu/reservation information). Fix commit: `dc7c8d60a568e02b0780e6ffd9465521adc436fb`.
