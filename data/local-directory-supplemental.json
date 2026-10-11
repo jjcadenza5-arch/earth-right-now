@@ -2638,5 +2638,94 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://veligandu.com/contact/"
+  },
+  {
+    "id": "local-cayman-sunshine-stay",
+    "name": "The Sunshine Hotel & Suites — rooms and suites",
+    "type": "hotel",
+    "place": "Seven Mile Beach, Grand Cayman",
+    "country": "Cayman Islands",
+    "placeId": "cayman-seven-mile-beach",
+    "url": "https://sunshinesuites.com/suites-overview/",
+    "summary": "Compare studios, one-bedroom and connecting family suites near Seven Mile Beach. Kitchenettes are not all equipped with a cooktop; confirm your category, bedding, occupancy, access and total charges. The beachfront camera is at a sister property and does not establish a beachfront room or room availability at Sunshine.",
+    "verifiedAt": "2026-10-11T02:14:08Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "suites",
+      "kitchenettes",
+      "family rooms",
+      "local stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://sunshinesuites.com/suites-overview/"
+  },
+  {
+    "id": "local-cayman-sunshine-grill",
+    "name": "Sunshine Grill — Grand Cayman",
+    "type": "restaurant",
+    "place": "Seven Mile Beach, Grand Cayman",
+    "country": "Cayman Islands",
+    "placeId": "cayman-seven-mile-beach",
+    "url": "https://sunshinesuites.com/sunshine-grill/",
+    "summary": "The hotel’s own dining page identifies Sunshine Grill and links its restaurant website and reservations. Check current menus, dietary needs, opening times and table availability directly; sister-property dining access does not mean meals are included in your room rate.",
+    "verifiedAt": "2026-10-11T02:14:08Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "Sunshine Grill",
+      "reservations",
+      "local food"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://sunshinesuites.com/sunshine-grill/"
+  },
+  {
+    "id": "local-cayman-sunshine-inclusions",
+    "name": "Sunshine — resort charges and sister-property access",
+    "type": "visitor information",
+    "place": "Seven Mile Beach, Grand Cayman",
+    "country": "Cayman Islands",
+    "placeId": "cayman-seven-mile-beach",
+    "url": "https://sunshinesuites.com/resort-charge-inclusions/",
+    "summary": "Official guide distinguishes hotel amenities from beach, pool and selected spa facilities at the neighboring sister property. Confirm the current mandatory resort charge, taxes and booked entitlements; laundry, spa treatments and other services may cost extra. Access privileges do not establish current facility availability.",
+    "verifiedAt": "2026-10-11T02:14:08Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "resort charges",
+      "beach access",
+      "booking conditions"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://sunshinesuites.com/resort-charge-inclusions/"
+  },
+  {
+    "id": "local-cayman-sunshine-arrival",
+    "name": "Sunshine — location and direct arrival enquiries",
+    "type": "visitor information",
+    "place": "Seven Mile Beach, Grand Cayman",
+    "country": "Cayman Islands",
+    "placeId": "cayman-seven-mile-beach",
+    "url": "https://sunshinesuites.com/contact/",
+    "summary": "The hotel’s official address is 1465 Esterley Tibbetts Highway, Seven Mile Beach, Grand Cayman. Use the appropriate hotel or grill contact to confirm driving directions, airport transport and booking arrangements; an enquiry is not a confirmed room, table or transfer. Verify current flight routes separately rather than relying on older airline text on the contact page.",
+    "verifiedAt": "2026-10-11T02:14:08Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "arrival",
+      "location",
+      "direct enquiries"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://sunshinesuites.com/contact/"
   }
 ]
