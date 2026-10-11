@@ -7,6 +7,12 @@
 - Catedral: seasonal pedestrian activities, ticket/lift/weather conditions and base-area arrival; Del Lago, Hans and Hotel Catedral are in Villa Cerro Catedral rather than central Bariloche. Outside-agency transfers, actual unit/rate conditions and separate mountain passes remain explicit. No operational lift, current snow, bundled activity or room availability inferred from the cover.
 - Added two optional destination-specific owner-managed sharing themes. No external post, account edit, advertisement, campaign scheduling or traffic-growth claim. No cameras added or playback/source permission/freshness timestamps renewed. Validation and release evidence follow.
 - Validation: all 119 release smoke tests and all 40 build/release/preflight commands passed. Directory 191 valid / zero invalid across 64 destinations. Four exact cleared image URLs and credits plus all twelve exact reviewed summaries/URLs verified on generated destination pages. Core 573042/575000 bytes; startup JS 159977/160000; app-lite 99811/100000; zero eager iframes. No budget raised; whitespace and unpaid flags checked.
+- Deployed Wang Gong desktop search loaded the exact 960×540 image and below-card credit, but a single-result panoramic crop showed mostly sky. Added a bounded per-photo vertical focal position in the deferred photo module and set Wang Gong to 78% so its harbour remains visible without changing card geometry. Invalid/out-of-range values leave default cropping. This is display cropping already disclosed, not image alteration or new source verification.
+- Initial expansion release bf8c923cb71bf7ed882a9925c62b5a1d8380a25e is GREEN: Pages 38121840225, Operations 38121840133 and Syntax 38121840156. Production manifest generated 2026-10-11T07:36:41.175Z; nine exact served hashes matched, including four photo pages, both registers, deferred module, homepage and Places directory. Deployed desktop browser confirmed Petra 500×750, Catedral 960×720, Glacier 960×637 and Wang Gong search cover 960×540 loaded, plus visible creator/date/license credits, Petra four-guide/two-business and Catedral three-guide/three-business sections. Hala Hala search returned its newly reviewed Wadi Musa business without retyping. This is rendering/search evidence, not moving playback or mobile validation. Crop follow-up evidence follows.
+- Crop follow-up: all 119 release smoke tests and all 40 build/release/preflight commands passed again; original performance budgets and zero eager iframes retained.
+
+
+
 
 
 ## 2026-10-11 — Glacier and Yellowstone practical discovery expansion

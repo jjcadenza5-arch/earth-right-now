@@ -28,6 +28,7 @@ async function start(){
       if(!photo||!visual||attempted.has(visual))return;
       attempted.add(visual);
       const img=new Image();img.alt=photo.alt||`Editorial photograph of ${photo.placeId.replaceAll("-"," ")}`;img.decoding="async";
+      if(Number.isFinite(photo.homepageFocusY)&&photo.homepageFocusY>=0&&photo.homepageFocusY<=100)img.style.objectPosition=`50% ${photo.homepageFocusY}%`;
       img.onload=()=>{
         if(!card.isConnected||!eligibleVisual(card))return;
         const wrapper=document.createElement("div");wrapper.className="editorial-card";
