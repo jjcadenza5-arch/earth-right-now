@@ -1,3 +1,8 @@
+## 2026-10-11 — Wengen and Denpasar planning themes (owner-managed)
+- Wengen: “The train gets you to the village; the summit is another journey.” Pair rail-arrival and station information with the distinction between accessible cableway stations and uphill trails. Check current operating dates and hotel closures; a historical village photo is not today’s mountain weather.
+- Denpasar: “City markets or a Sanur beach day?” Help viewers choose between central heritage/markets and coastal dining/stays. Link to the relevant ERN search or an eligible generated destination page; a city-camera collection does not show every venue.
+- Optional owner-managed ideas only; no posts or traffic increase claimed. Compare dated aggregate visits, searches and information opens using the existing workflow. No paid traffic activation.
+
 ## 2026-10-11 — Coogee and Waikīkī practical discovery themes (owner-managed)
 - Coogee: pair the council’s source view with a useful decision: beach wheelchair support and booking, picnic facilities, or the difference between bar-adjacent and rear hotel rooms. Search Coogee to open reviewed information.
 - Waikīkī: show that several beach sections make up the shoreline. Pair a source view with beach-section planning, transport or an aquarium stop. Estimated jellyfish dates are planning information, never an all-clear or a current view.

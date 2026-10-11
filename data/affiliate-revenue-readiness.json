@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T07:06:08.590Z",
+  "generatedAt": "2026-10-11T13:47:44.636Z",
   "purpose": "Make ERN monetization truth explicit: distinguish research coverage from links that can actually earn affiliate commission.",
   "earningRule": "ERN can earn only when a visitor follows a valid tracked affiliate link (or other approved tracked affiliate surface) and completes an eligible transaction under that partner's attribution and commission rules.",
   "states": {
@@ -151,21 +151,21 @@
     "Preserve one-best-provider-per-user-need presentation and commission-neutral Earth ranking."
   ],
   "currentPublicRevenueActive": {
-    "offerCount": 229,
-    "uniquePlaceCount": 223,
+    "offerCount": 227,
+    "uniquePlaceCount": 222,
     "byProgram": {
-      "viator": 200,
-      "klook": 21,
+      "viator": 199,
+      "klook": 20,
       "tiqets": 5,
       "welcome-pickups": 3
     },
     "uniqueTrackedUrlsByProgram": {
-      "viator": 94,
+      "viator": 93,
       "klook": 10,
       "tiqets": 4,
       "welcome-pickups": 3
     },
     "definition": "Verified current affiliate offers exposed through ERN's public travel-offer layer, backed by an enabled current affiliate partner, and attached to a currently HEALTHY LIVE_VIDEO / LIVE_IMAGE / EXTERNAL_LIVE ERN place across core or supplemental discovery.",
-    "note": "Coverage reconciled after the shared Utsav provider URL was security-held following an owner Safari privacy warning. Held sources cannot qualify for public affiliate coverage. Existing partner/link verifications are unchanged; this timestamp is count reconciliation, not renewed link or camera verification."
+    "note": "Source-eligible coverage reconciled after the official Waikīkī Aquarium south-shore player reported not live during browser review. DEGRADED sources do not qualify. Existing security-held sources remain excluded. Partner, offer and link verification dates are unchanged; generatedAt records count reconciliation, not renewed link/camera proof or measured revenue."
   }
 }

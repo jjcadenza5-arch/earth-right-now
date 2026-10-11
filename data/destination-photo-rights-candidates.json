@@ -695,6 +695,29 @@
       "homepageAttributionChanges": "Display crop using object-fit: cover; historical destination photograph. Source, creator, date and license linked below card.",
       "inspectedPreviewSha256": "f981e61ea62cb5f7e36aac5286676d5b6e98ec26c1d4dabda13ea876f2713050",
       "inspectedPreviewBytes": 273870
+    },
+    {
+      "placeId": "wengen-bellevue",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Wengen_viewed_from_Isenfluh.jpg",
+      "creator": "Parchaco",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dateTaken": "2024-11-03",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Wengen_viewed_from_Isenfluh.jpg/960px-Wengen_viewed_from_Isenfluh.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Wengen_viewed_from_Isenfluh.jpg&oldid=1229578983",
+      "alt": "Wengen village and green mountain slopes viewed across the valley from Isenfluh",
+      "source": "Wikimedia Commons",
+      "status": "APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY",
+      "note": "Historical Wengen destination photograph from Isenfluh, not the Bellevue camera viewpoint or current weather, trail or visitor-access evidence.",
+      "imageWidth": 960,
+      "imageHeight": 640,
+      "publicActivationAllowed": true,
+      "homepageActivationAllowed": true,
+      "licenseRecheckedAt": "2026-10-11T13:45:46.592912+00:00",
+      "attributionChanges": "Unmodified by ERN; scaled at original aspect ratio on destination pages.",
+      "homepageAttributionChanges": "Display crop using object-fit: cover; historical destination photograph. Source, creator, date and license linked below card.",
+      "inspectedPreviewSha256": "0845fe188b220bf95d17e31836771fb0357e424739ff5f911a633c4ec8d66439",
+      "inspectedPreviewBytes": 225755
     }
   ],
   "homepageActivationAllowed": true
