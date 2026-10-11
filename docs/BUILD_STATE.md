@@ -12,6 +12,8 @@
 - Crop follow-up: all 119 release smoke tests and all 40 build/release/preflight commands passed again; original performance budgets and zero eager iframes retained.
 - Crop release 32889df7e0c77d0fcaa2eef6df58c7c42b680882 is GREEN: Pages 38122201620, Operations 38122201611, Syntax 38122201602. Production manifest generated 2026-10-11T07:42:21.934Z and nine served hashes matched. Deployed browser reload loaded the new versioned module but retained the prior unversioned photo register, leaving crop at 50%. Corrected register URL construction to carry the module’s release query; regression executes the actual URL construction. No false crop success claimed for this intermediate release; final cache-corrected evidence follows.
 - Cache correction validation: all 119 release smoke tests and all 40 build/release/preflight commands passed again, including the actual register-URL regression. Core/startup budgets unchanged.
+- Final cache-corrected release 26bbf853571f9fb918242fe6a101d812976ff158 is GREEN: Pages 38122503913, Operations 38122503931, Syntax 38122503893. Production manifest generated 2026-10-11T07:48:03.363Z; all nine served artifact hashes matched again. Fresh deployed browser reload confirmed module version 26bbf853571f and Wang Gong image natural dimensions 960×540 with computed object-position 50% 78%; harbour buildings/boats now visible in the unchanged wide card and author/date/CC BY 4.0 credit remains below it. Screenshot ern-wanggong-published-1791704968121.jpg records this bounded desktop result. No moving playback, mobile interaction, new camera, traffic growth or earnings claimed. Canonical handoff and build/change logs saved with final release evidence.
+
 
 
 
