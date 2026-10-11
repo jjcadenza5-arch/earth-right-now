@@ -3318,5 +3318,299 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.norwaysbest.com/en/flam/luggage-storage-in-flam"
+  },
+  {
+    "id": "local-glacier-arrival",
+    "name": "Glacier — entrances, roads and vehicle planning",
+    "type": "visitor information",
+    "placeId": "glacier-national-park",
+    "place": "Glacier National Park",
+    "country": "United States",
+    "url": "https://www.nps.gov/glac/planyourvisit/directions.htm",
+    "summary": "Choose the entrance for your intended valley and check the official road map before setting out. Seasonal roads, vehicle-size restrictions and full parking areas can change the route. Fuel before entering: there are no filling stations inside the park. A webcam view does not establish road access.",
+    "tags": [
+      "official visitor information",
+      "arrival",
+      "road conditions"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/glac/planyourvisit/directions.htm",
+    "verifiedAt": "2026-10-11T06:53:40.813555+00:00"
+  },
+  {
+    "id": "local-glacier-mobility",
+    "name": "Glacier — mobility access by valley",
+    "type": "visitor information",
+    "placeId": "glacier-national-park",
+    "place": "Glacier National Park",
+    "country": "United States",
+    "url": "https://www.nps.gov/glac/planyourvisit/physical-mobility.htm",
+    "summary": "Compare accessible routes, restrooms and parking by valley rather than assuming all historic facilities meet current standards. The official guide describes paved Apgar paths and individual visitor facilities. Confirm the specific trail, building and assistance you need before choosing a route.",
+    "tags": [
+      "official visitor information",
+      "accessible arrival",
+      "Apgar"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/glac/planyourvisit/physical-mobility.htm",
+    "verifiedAt": "2026-10-11T06:53:49.240017+00:00"
+  },
+  {
+    "id": "local-glacier-logan-shuttle",
+    "name": "Glacier — Logan Pass seasonal shuttle planning",
+    "type": "visitor information",
+    "placeId": "glacier-national-park",
+    "place": "Glacier National Park",
+    "country": "United States",
+    "url": "https://www.nps.gov/glac/planyourvisit/shuttle-service-2026.htm",
+    "summary": "The official 2026 Logan Pass service was ticketed and seasonal, with its listed season ending September 7. Use the park page to check the applicable season, assigned boarding location and ticket rules before relying on a shuttle. Plan your return and last departure; do not assume year-round service or a seat.",
+    "tags": [
+      "official visitor information",
+      "Logan Pass",
+      "shuttle"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/glac/planyourvisit/shuttle-service-2026.htm",
+    "verifiedAt": "2026-10-11T06:54:01.350405+00:00"
+  },
+  {
+    "id": "local-glacier-hiking",
+    "name": "Glacier — day walks and trail closures",
+    "type": "visitor information",
+    "placeId": "glacier-national-park",
+    "place": "Glacier National Park",
+    "country": "United States",
+    "url": "https://www.nps.gov/glac/planyourvisit/hikingthetrails.htm",
+    "summary": "Compare official area maps by distance and elevation gain, then check current trail closures and weather with the park. Save route information before leaving connected areas. Prepare for changing weather and wildlife; a scenic camera view does not establish that a hiking route is open or suitable.",
+    "tags": [
+      "official visitor information",
+      "hiking",
+      "trail planning"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/glac/planyourvisit/hikingthetrails.htm",
+    "verifiedAt": "2026-10-11T06:54:09.819332+00:00"
+  },
+  {
+    "id": "local-glacier-maps",
+    "name": "Glacier — official maps for offline planning",
+    "type": "visitor information",
+    "placeId": "glacier-national-park",
+    "place": "Glacier National Park",
+    "country": "United States",
+    "url": "https://www.nps.gov/glac/planyourvisit/maps.htm",
+    "summary": "Use the official brochure and downloadable park maps to identify valleys, entrances and facilities before travel. Save a map for use without mobile coverage. Check current road and shuttle pages separately: a mapped road or stop does not guarantee seasonal access or service.",
+    "tags": [
+      "official visitor information",
+      "maps",
+      "offline planning"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/glac/planyourvisit/maps.htm",
+    "verifiedAt": "2026-10-11T06:54:18.948457+00:00"
+  },
+  {
+    "id": "local-glacier-russells",
+    "name": "Russell’s Fireside Dining Room — Lake McDonald",
+    "type": "restaurant",
+    "placeId": "glacier-national-park",
+    "place": "Glacier National Park",
+    "country": "United States",
+    "url": "https://www.glaciernationalparklodges.com/dining/lake-mcdonald-lodge/russells-fireside-dining-room/",
+    "summary": "A Lake McDonald Lodge dining option listed by the operator for breakfast, lunch and dinner. The reviewed page describes first-come seating without reservations. Confirm seasonal operation, today’s meal service and dietary needs before travelling; no available table or year-round opening is implied.",
+    "tags": [
+      "restaurant",
+      "Lake McDonald",
+      "seasonal dining"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.glaciernationalparklodges.com/dining/lake-mcdonald-lodge/russells-fireside-dining-room/",
+    "verifiedAt": "2026-10-11T06:54:29.472871+00:00"
+  },
+  {
+    "id": "local-glacier-ptarmigan",
+    "name": "Ptarmigan Dining Room — Many Glacier Hotel",
+    "type": "restaurant",
+    "placeId": "glacier-national-park",
+    "place": "Glacier National Park",
+    "country": "United States",
+    "url": "https://www.glaciernationalparklodges.com/dining/many-glacier-hotel/the-ptarmigan-dining-room/",
+    "summary": "Dining at Many Glacier Hotel beside Swiftcurrent Lake, in a different valley from Lake McDonald. The operator describes first-come seating without reservations. Check seasonal road access, current meal service and dietary requirements before making the journey; a listed venue is not an available table.",
+    "tags": [
+      "restaurant",
+      "Many Glacier",
+      "seasonal dining"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.glaciernationalparklodges.com/dining/many-glacier-hotel/the-ptarmigan-dining-room/",
+    "verifiedAt": "2026-10-11T06:54:39.214826+00:00"
+  },
+  {
+    "id": "local-yellowstone-roads",
+    "name": "Yellowstone — entrance and seasonal road planning",
+    "type": "visitor information",
+    "placeId": "yellowstone-biscuit-basin",
+    "place": "Yellowstone / Old Faithful area",
+    "country": "United States",
+    "url": "https://www.nps.gov/yell/planyourvisit/parkroads.htm",
+    "summary": "Check the intended entrance and every road segment on the official status map before setting out. Most roads close to ordinary vehicles in winter; the northern year-round route does not establish access to Old Faithful or Biscuit Basin. Allow for construction, weather and closures that may not yet appear on the map.",
+    "tags": [
+      "official visitor information",
+      "arrival",
+      "road conditions"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/yell/planyourvisit/parkroads.htm",
+    "verifiedAt": "2026-10-11T06:54:51.626312+00:00"
+  },
+  {
+    "id": "local-yellowstone-services",
+    "name": "Yellowstone — seasonal facilities and meal planning",
+    "type": "visitor information",
+    "placeId": "yellowstone-biscuit-basin",
+    "place": "Yellowstone / Old Faithful area",
+    "country": "United States",
+    "url": "https://www.nps.gov/yell/planyourvisit/operating-dates.htm",
+    "summary": "Compare the official operating dates for your chosen visitor center, food service, lodging and fuel stop. A park that remains open does not mean all facilities are open: services are limited in the colder months. Dates can change and daily hours need a separate check.",
+    "tags": [
+      "official visitor information",
+      "seasonal services",
+      "trip planning"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/yell/planyourvisit/operating-dates.htm",
+    "verifiedAt": "2026-10-11T06:55:00.076542+00:00"
+  },
+  {
+    "id": "local-yellowstone-biscuit-closures",
+    "name": "Biscuit Basin — closure and alternative-route checks",
+    "type": "visitor information",
+    "placeId": "yellowstone-biscuit-basin",
+    "place": "Yellowstone / Old Faithful area",
+    "country": "United States",
+    "url": "https://www.nps.gov/yell/planyourvisit/situationreport.htm",
+    "summary": "At this review, the park report lists Biscuit Basin Trailhead closed due to thermal activity. Check the latest report and ranger advice before selecting an alternative route. The monitoring camera is a remote view, not evidence of visitor access; do not enter closed areas or use old trail directions.",
+    "tags": [
+      "official visitor information",
+      "Biscuit Basin",
+      "trail closures"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/yell/planyourvisit/situationreport.htm",
+    "verifiedAt": "2026-10-11T06:55:08.401350+00:00"
+  },
+  {
+    "id": "local-yellowstone-thermal-safety",
+    "name": "Yellowstone — thermal-area and wildlife guidance",
+    "type": "visitor information",
+    "placeId": "yellowstone-biscuit-basin",
+    "place": "Yellowstone / Old Faithful area",
+    "country": "United States",
+    "url": "https://www.nps.gov/yell/planyourvisit/safety.htm",
+    "summary": "Read the park’s thermal-area and wildlife guidance before visiting a geyser basin. Stay on designated boardwalks and trails, keep children close and do not touch thermal water or runoff. Follow current closures and wildlife-distance rules; a quiet camera scene does not establish safe access.",
+    "tags": [
+      "official visitor information",
+      "thermal areas",
+      "visitor guidance"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/yell/planyourvisit/safety.htm",
+    "verifiedAt": "2026-10-11T06:55:16.839699+00:00"
+  },
+  {
+    "id": "local-yellowstone-access",
+    "name": "Yellowstone — access needs and visitor facilities",
+    "type": "visitor information",
+    "placeId": "yellowstone-biscuit-basin",
+    "place": "Yellowstone / Old Faithful area",
+    "country": "United States",
+    "url": "https://www.nps.gov/yell/planyourvisit/accessibility.htm",
+    "summary": "Compare the official area-specific accessibility descriptions for routes, restrooms and visitor centers. Historic facilities and wilderness terrain can present barriers. Download NPS accessibility information before travel and arrange needed program assistance in advance; a general accessible listing does not describe every route.",
+    "tags": [
+      "official visitor information",
+      "accessible arrival",
+      "visitor facilities"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/yell/planyourvisit/accessibility.htm",
+    "verifiedAt": "2026-10-11T06:55:25.426394+00:00"
+  },
+  {
+    "id": "local-yellowstone-canyon-eatery",
+    "name": "Canyon Lodge Eatery — Yellowstone",
+    "type": "restaurant",
+    "placeId": "yellowstone-biscuit-basin",
+    "place": "Yellowstone / Old Faithful area",
+    "country": "United States",
+    "url": "https://www.yellowstonenationalparklodges.com/restaurant/canyon-lodge-eatery/",
+    "summary": "A seasonal food-hall option at Canyon Village, a separate park area from Biscuit Basin. The operator lists first-come seating and warns that dates, menus and hours can change. Check current road access and actual service for your visit; do not assume every counter or nearby café is open.",
+    "tags": [
+      "restaurant",
+      "Canyon Village",
+      "seasonal dining"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.yellowstonenationalparklodges.com/restaurant/canyon-lodge-eatery/",
+    "verifiedAt": "2026-10-11T06:55:33.623099+00:00"
+  },
+  {
+    "id": "local-yellowstone-snow-lodge",
+    "name": "Old Faithful Snow Lodge — stay and winter-arrival planning",
+    "type": "lodging",
+    "placeId": "yellowstone-biscuit-basin",
+    "place": "Yellowstone / Old Faithful area",
+    "country": "United States",
+    "url": "https://www.nps.gov/places/000/old-faithful-snow-lodge.htm",
+    "summary": "The official park listing describes this concessioner-operated stay near the Upper Geyser Basin. Winter access is by commercially operated snowcoach or snowmobile, not an ordinary drive-in arrival. Confirm season dates, transport booking and the specific room’s accessibility with the operator; no room or transfer is included or guaranteed.",
+    "tags": [
+      "lodging",
+      "Old Faithful",
+      "winter transport"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/places/000/old-faithful-snow-lodge.htm",
+    "verifiedAt": "2026-10-11T06:55:43.226828+00:00"
   }
 ]

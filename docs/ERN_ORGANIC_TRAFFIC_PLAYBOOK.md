@@ -128,3 +128,12 @@ The owner reports changing Facebook, Instagram and TikTok profile images to the 
 | Fjord or railway? | https://earthrightnow.app/places/flam-aurlandsfjord/ | Would you explore by train or boat? Compare date-specific departures, return transport, luggage storage and a food stop. Confirm source eligibility before advertising a current view. |
 
 These are optional themes for the owner’s Facebook, Instagram or TikTok, not scheduled campaigns or evidence of traffic growth. Each video should invite one destination visit. Use cleared imagery or the owner’s own footage; ERN camera links do not grant footage reuse rights.
+
+## Owner-managed national-park discovery themes — 11 October 2026
+
+| Theme | Entry page | Useful invitation |
+| --- | --- | --- |
+| Glacier: choose a valley before choosing a walk | https://earthrightnow.app/places/glacier-national-park/ | Compare the official view with entrance, seasonal road, mobility and dining guidance. Check source status before describing a current view. The 2026 Logan Pass shuttle season has ended; do not promote it as available today. |
+| Biscuit Basin: a remote view is different from visitor access | https://earthrightnow.app/places/yellowstone-biscuit-basin/ | Explore the monitoring view, then consult official closures, thermal-area guidance and seasonal service information. The reviewed NPS report lists the Biscuit Basin trailhead closed. Nearby Old Faithful and Canyon services are separate locations, not businesses inside Biscuit Basin. |
+
+Optional owner-managed themes only: no post, ad or scheduled campaign created. Use owner footage or individually cleared images; a camera link grants no footage reuse rights. Obtain a dated traffic baseline before sharing, record the exact entry URL/channel/post time and compare subsequent landings and useful exploration. No camera count, search ranking or traffic growth is inferred from publishing these resources.
