@@ -12,3 +12,12 @@ const grouping=app.slice(app.indexOf("const matches=catalogMatches.filter"),app.
 const rows=[{country:"Japan",id:"j1"},{country:"Japan",id:"j2"},{country:"Canada",id:"c1"},{country:"Taiwan",id:"t1"}];
 const result=runInNewContext(grouping+"ag.map(g=>g[0].id)",{x:"",catalogMatches:rows,localIntent:false,guideEligible:()=>true,groupByPlace:items=>items.map(item=>[item]),baseScore:()=>0});
 assert.deepEqual(Array.from(result),["j1","c1","t1","j2"],"empty search must interleave countries without throwing or dropping destinations");
+
+// Execute the actual late-directory callback against a query changed while loading.
+const directoryStart=app.indexOf('state.localDirectory.push(...x);');
+const directoryEnd=app.indexOf('}}).catch',directoryStart);
+assert.ok(directoryStart>=0&&directoryEnd>directoryStart);
+const refreshed=[],directoryState={localDirectory:[]};
+runInNewContext(app.slice(directoryStart,directoryEnd),{x:[{id:'late-reviewed-business'}],state:directoryState,renderLocalEarth(){},renderQuickSearches(){},renderSaved(){},$:()=>({value:'Flam Bakery'}),search:q=>refreshed.push(q)});
+assert.equal(directoryState.localDirectory[0].id,'late-reviewed-business');
+assert.deepEqual(refreshed,['Flam Bakery'],'late reviewed entries must refresh the latest typed query');
