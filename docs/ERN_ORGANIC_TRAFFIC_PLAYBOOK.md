@@ -174,3 +174,10 @@ Use the existing destination or search URL that matches the video. Confirm the v
 - Rovaniemi: what does the Arctic Circle look like today? Check current evidence, then compare company opening dates. Aurora and snow remain natural possibilities rather than promises.
 - Kibune: compare summer riverside dining with the season visible today; the official May-to-September season has ended.
 Link to the exact existing destination or search result matching the video. Keep historical mountain cover images dated in promotional content. Use a dated traffic baseline and tagged owner-managed links when measuring visits and outbound clicks; no post, paid campaign or growth result is implied.
+
+
+## Optional fjord-and-lake planning themes — 2026-10-11
+- Flåm: what would you do between a train and a fjord departure? Compare coffee, meals, luggage and the actual onward timetable. Distinguish summer lunch from autumn dinner and individual walk-in service from group booking.
+- Bohinj: see the lake, then choose a valley-town food stop and the correct seasonal bus. Lake-shore access and Bohinjska Bistrica are separate locations; protected mountain waters are not ordinary swimming stops.
+- Zell am See: could you explore without a car? Compare station-to-lake walks, overnight-guest public transport and separately ticketed mountain lifts. Confirm arrival-day ticket issue with the accommodation.
+Use the exact matching existing search or destination link after checking the visible source state. Historical covers and dated footage need truthful dates in promotional content. Establish a dated analytics baseline before measuring a tagged owner-managed post; these themes do not claim publication or new traffic.
