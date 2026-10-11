@@ -137,3 +137,12 @@ These are optional themes for the owner’s Facebook, Instagram or TikTok, not s
 | Biscuit Basin: a remote view is different from visitor access | https://earthrightnow.app/places/yellowstone-biscuit-basin/ | Explore the monitoring view, then consult official closures, thermal-area guidance and seasonal service information. The reviewed NPS report lists the Biscuit Basin trailhead closed. Nearby Old Faithful and Canyon services are separate locations, not businesses inside Biscuit Basin. |
 
 Optional owner-managed themes only: no post, ad or scheduled campaign created. Use owner footage or individually cleared images; a camera link grants no footage reuse rights. Obtain a dated traffic baseline before sharing, record the exact entry URL/channel/post time and compare subsequent landings and useful exploration. No camera count, search ranking or traffic growth is inferred from publishing these resources.
+
+## Owner-managed Petra and Catedral discovery themes — 11 October 2026
+
+| Theme | Entry page | Useful invitation |
+| --- | --- | --- |
+| Petra: the view is only the beginning of the walk | https://earthrightnow.app/places/jordan-petra/ | Explore the destination, then compare day tickets, seasonal hours and the Main Trail return walk. The Treasury cover is a historical 27 March 2016 photograph, not the Visitor Center camera angle. |
+| Catedral: summer mountain outing or winter visit? | https://earthrightnow.app/places/bariloche-cerro-catedral/ | Check the source and operator’s seasonal pedestrian activities, ticket conditions, return lift and base-area dining/stay guidance. The cover shows summer slopes on 28 February 2018, not today’s snow or lift status. |
+
+Optional owner-managed themes only. Before sharing, verify that the linked source and planning sections are currently eligible, use owner footage or correctly attributed rights-cleared photography, and obtain a dated traffic baseline. Record the exact destination link, channel and post time; compare useful exploration across equal windows. No posting, account editing, scheduled campaign, footage-reuse permission, traffic growth or ranking is established by this document.

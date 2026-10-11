@@ -3612,5 +3612,257 @@
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.nps.gov/places/000/old-faithful-snow-lodge.htm",
     "verifiedAt": "2026-10-11T06:55:43.226828+00:00"
+  },
+  {
+    "id": "local-petra-tickets",
+    "name": "Petra — ticket and pass comparison",
+    "type": "visitor information",
+    "placeId": "jordan-petra",
+    "place": "Petra / Wadi Musa",
+    "country": "Jordan",
+    "url": "https://visitpetra.jo/en/Petrafees",
+    "summary": "Check the official ticket category and required identification before purchase. Multi-day admission uses consecutive days; Jordan Pass and daytime entry do not include Petra by Night. The reviewed page requires a valid daytime ticket as well as the separate night ticket. Confirm current rules and transport charges rather than assuming a pass includes everything.",
+    "tags": [
+      "official visitor information",
+      "tickets",
+      "Jordan Pass"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://visitpetra.jo/en/Petrafees",
+    "verifiedAt": "2026-10-11T07:30:11.754740+00:00"
+  },
+  {
+    "id": "local-petra-hours",
+    "name": "Petra — seasonal hours and visitor-center help",
+    "type": "visitor information",
+    "placeId": "jordan-petra",
+    "place": "Petra / Wadi Musa",
+    "country": "Jordan",
+    "url": "https://www.visitpetra.jo/en/Openinghours",
+    "summary": "Check the applicable seasonal hours for the archaeological site, Visitor Center and Little Petra ticket office separately. Leave time for the return walk before closing. The Visitor Center provides maps, guide arrangements and assistance; an opening-hours listing does not establish that every trail is accessible that day.",
+    "tags": [
+      "official visitor information",
+      "arrival",
+      "seasonal hours"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.visitpetra.jo/en/Openinghours",
+    "verifiedAt": "2026-10-11T07:30:11.081853+00:00"
+  },
+  {
+    "id": "local-petra-main-trail",
+    "name": "Petra — Main Trail and return planning",
+    "type": "visitor information",
+    "placeId": "jordan-petra",
+    "place": "Petra / Wadi Musa",
+    "country": "Jordan",
+    "url": "https://www.visitpetra.jo/en/Trail/1",
+    "summary": "The official Main Trail runs one way from the Visitor Center through the Siq and Treasury to Qasr al-Bint. Plan the return as well as time for stops; the listed duration is non-stop, not a complete sightseeing visit. Confirm terrain, assistance and current access with the Visitor Center rather than interpreting an easy-route rating as universal wheelchair access.",
+    "tags": [
+      "official visitor information",
+      "Siq",
+      "walking route"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.visitpetra.jo/en/Trail/1",
+    "verifiedAt": "2026-10-11T07:30:11.293351+00:00"
+  },
+  {
+    "id": "local-petra-visit-faq",
+    "name": "Petra — packing, overnight stays and visit questions",
+    "type": "visitor information",
+    "placeId": "jordan-petra",
+    "place": "Petra / Wadi Musa",
+    "country": "Jordan",
+    "url": "https://visitpetra.jo/en/FAQS",
+    "summary": "The official guide recommends water, sun protection and comfortable shoes. Overnight stays are outside the archaeological site, in nearby accommodation such as Wadi Musa. Check current night-event arrangements and permissions separately; older FAQ event schedules should not be treated as today’s timetable.",
+    "tags": [
+      "official visitor information",
+      "visit preparation",
+      "Wadi Musa"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://visitpetra.jo/en/FAQS",
+    "verifiedAt": "2026-10-11T07:30:11.655850+00:00"
+  },
+  {
+    "id": "local-petra-hala-hala",
+    "name": "Hala Hala Arabic Restaurant — Petra Marriott",
+    "type": "restaurant",
+    "placeId": "jordan-petra",
+    "place": "Petra / Wadi Musa",
+    "country": "Jordan",
+    "url": "https://www.marriott.com/en-us/dining/restaurant-bar/mpqmc-petra-marriott-hotel/81220-hala-hala-arabic-restaurant.mi",
+    "summary": "The operator lists Jordanian dining at Petra Marriott Hotel in Wadi Musa, outside the archaeological site. Check reservations, current service, dietary needs and transport back to your accommodation. The hotel’s reviewed dining notice describes ongoing construction and limited parking; a venue listing does not promise a table or unobstructed view.",
+    "tags": [
+      "restaurant",
+      "Jordanian cuisine",
+      "Wadi Musa"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.marriott.com/en-us/dining/restaurant-bar/mpqmc-petra-marriott-hotel/81220-hala-hala-arabic-restaurant.mi",
+    "verifiedAt": "2026-10-11T07:30:19.727816+00:00"
+  },
+  {
+    "id": "local-petra-aretas",
+    "name": "Aretas Bar & Lounge — Petra Marriott",
+    "type": "café",
+    "placeId": "jordan-petra",
+    "place": "Petra / Wadi Musa",
+    "country": "Jordan",
+    "url": "https://www.marriott.com/en-us/hotels/mpqmc-petra-marriott-hotel/dining/",
+    "summary": "A hotel lounge option in Wadi Musa for drinks, coffee and snacks, separate from Petra’s walking routes. Confirm outside-guest access, current service and dietary needs. The reviewed property notice says construction affects some views and parking is limited; do not assume the separately listed Al Matal Tent is open.",
+    "tags": [
+      "café",
+      "coffee",
+      "Wadi Musa"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.marriott.com/en-us/hotels/mpqmc-petra-marriott-hotel/dining/",
+    "verifiedAt": "2026-10-11T07:30:20.054820+00:00"
+  },
+  {
+    "id": "local-catedral-pedestrian-planning",
+    "name": "Cerro Catedral — pedestrian lift and activity planning",
+    "type": "visitor information",
+    "placeId": "bariloche-cerro-catedral",
+    "place": "Villa Cerro Catedral / Bariloche",
+    "country": "Argentina",
+    "url": "https://catedralaltapatagonia.com/actividades-peatones/",
+    "summary": "Compare the operator’s pedestrian outings with the activities actually available for your season. A summer panorama or a ski camera does not guarantee an operating lift or snow activity. Check the chosen route, weather, age/equipment requirements and return descent with staff before travelling.",
+    "tags": [
+      "official visitor information",
+      "pedestrian lifts",
+      "seasonal activities"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://catedralaltapatagonia.com/actividades-peatones/",
+    "verifiedAt": "2026-10-11T07:30:17.733271+00:00"
+  },
+  {
+    "id": "local-catedral-ticket-planning",
+    "name": "Cerro Catedral — lift ticket and extra-cost checks",
+    "type": "visitor information",
+    "placeId": "bariloche-cerro-catedral",
+    "place": "Villa Cerro Catedral / Bariloche",
+    "country": "Argentina",
+    "url": "https://catedralaltapatagonia.com/tarifas/",
+    "summary": "Check the current product conditions rather than assuming every activity is bundled with a lift ticket. The operator lists weather, capacity and operational limits, separate charges for the ChipCard and parking, and some activities requiring a separately paid ascent. Confirm which lifts are authorised for pedestrians and the return descent.",
+    "tags": [
+      "official visitor information",
+      "tickets",
+      "trip costs"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://catedralaltapatagonia.com/tarifas/",
+    "verifiedAt": "2026-10-11T07:30:18.062168+00:00"
+  },
+  {
+    "id": "local-catedral-arrival-faq",
+    "name": "Cerro Catedral — accommodation and arrival questions",
+    "type": "visitor information",
+    "placeId": "bariloche-cerro-catedral",
+    "place": "Villa Cerro Catedral / Bariloche",
+    "country": "Argentina",
+    "url": "https://www.hotelcatedralpatagonia.com/en/faq",
+    "summary": "Hotel Catedral is in Villa Cerro Catedral, outside central Bariloche. The hotel says lift passes are managed by the mountain operator and airport transfers are arranged through an outside agency rather than provided directly. Check the specific rate’s cancellation rules and breakfast terms, including the timeshare exception, before booking.",
+    "tags": [
+      "official visitor information",
+      "arrival",
+      "accommodation planning"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hotelcatedralpatagonia.com/en/faq",
+    "verifiedAt": "2026-10-11T07:30:24.049271+00:00"
+  },
+  {
+    "id": "local-catedral-del-lago",
+    "name": "Del Lago Restaurant — Hotel Catedral",
+    "type": "restaurant",
+    "placeId": "bariloche-cerro-catedral",
+    "place": "Villa Cerro Catedral / Bariloche",
+    "country": "Argentina",
+    "url": "https://www.hotelcatedralpatagonia.com/en/del-lago-restaurante",
+    "summary": "A Hotel Catedral dining option at the mountain base, listed for breakfast, lunch and dinner. Confirm current seasonal service, reservations, dietary needs and whether non-staying visitors can dine. A meal, table, lift ride or ski activity is not included by this unpaid listing.",
+    "tags": [
+      "restaurant",
+      "mountain base",
+      "Villa Cerro Catedral"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hotelcatedralpatagonia.com/en/del-lago-restaurante",
+    "verifiedAt": "2026-10-11T07:30:24.168820+00:00"
+  },
+  {
+    "id": "local-catedral-hans",
+    "name": "Hans Restaurant — Hotel Catedral",
+    "type": "restaurant",
+    "placeId": "bariloche-cerro-catedral",
+    "place": "Villa Cerro Catedral / Bariloche",
+    "country": "Argentina",
+    "url": "https://www.hotelcatedralpatagonia.com/en/hans-restaurante",
+    "summary": "An operator-listed restaurant at Hotel Catedral in Villa Cerro Catedral. Review the current menu and confirm seasonal operation, reservations, dietary requirements and outside-guest access directly. Its mountain location does not establish that lifts, snow activities or a table are available.",
+    "tags": [
+      "restaurant",
+      "Patagonian dining",
+      "Villa Cerro Catedral"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hotelcatedralpatagonia.com/en/hans-restaurante",
+    "verifiedAt": "2026-10-11T07:30:25.143313+00:00"
+  },
+  {
+    "id": "local-catedral-hotel",
+    "name": "Hotel Catedral — mountain-base stay",
+    "type": "lodging",
+    "placeId": "bariloche-cerro-catedral",
+    "place": "Villa Cerro Catedral / Bariloche",
+    "country": "Argentina",
+    "url": "https://www.hotelcatedralpatagonia.com/en",
+    "summary": "Rooms, suites and apartments at the base of Cerro Catedral, distinct from a stay in central Bariloche. Compare the actual unit, meal terms, rate cancellation rules and transfer arrangement with the operator before booking. Lift passes and an available room are not included or guaranteed by the directory entry.",
+    "tags": [
+      "lodging",
+      "mountain base",
+      "Villa Cerro Catedral"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hotelcatedralpatagonia.com/en",
+    "verifiedAt": "2026-10-11T07:30:25.618098+00:00"
   }
 ]
