@@ -31,6 +31,7 @@ async function sendEnvelope(event){
 if(analyticsReady()&&!DNT()){
   globalThis.ERN_TELEMETRY=event=>{void sendEnvelope(event);return true};
   globalThis.ERN_EVENT=(name,data={})=>{const e=telemetryEnvelope(name,data);if(!e)return false;void sendEnvelope(e);return true};
+  document.addEventListener("click",e=>{const a=e.target.closest?.("a.local-directory-card[data-id]");if(a)globalThis.ERN_EVENT("place_opened",{placeId:a.dataset.id})});
   let searchTimer=null,lastSearchSignature="";
   globalThis.ERN_SEARCH_ANALYTICS=(query,resultCount)=>{
     clearTimeout(searchTimer);

@@ -1,3 +1,4 @@
+import {visitorDemandTriage} from "../src/visitor-demand-triage.js";
 import fs from "node:fs";
 import {searchEarth} from "../src/search-engine.js";
 import {foldEarthSearchText} from "../src/earth-intent.js";
@@ -38,7 +39,8 @@ const rows=rawGaps.map(g=>{
 const countState=s=>rows.filter(x=>x.state===s).length;
 const researchClusters=[...new Map(rows.filter(x=>x.state==="GENUINE_CURRENT_GAP"&&x.researchClusterKey).map(x=>[x.researchClusterKey,{key:x.researchClusterKey,queries:rows.filter(r=>r.state==="GENUINE_CURRENT_GAP"&&r.researchClusterKey===x.researchClusterKey).map(r=>r.query),eventCount:rows.filter(r=>r.state==="GENUINE_CURRENT_GAP"&&r.researchClusterKey===x.researchClusterKey).reduce((n,r)=>n+r.count,0)}])).values()];
 const out={
- schemaVersion:2,
+ schemaVersion:3,
+ visitorDemand:visitorDemandTriage(analytics,{sources:pool,locals:[...JSON.parse(fs.readFileSync("data/local-directory.json","utf8")),...JSON.parse(fs.readFileSync("data/local-directory-supplemental.json","utf8"))],research:JSON.parse(fs.readFileSync("data/source-research-priorities.json","utf8"))}),
  generatedAt:analytics.generatedAt||new Date().toISOString(),
  analyticsWindowDays:analytics.windowDays||null,
  totalZeroResultEvents:rows.reduce((n,x)=>n+x.count,0),

@@ -99,3 +99,8 @@ They must never:
 **See before you go. You see. You decide.**
 
 ERN shows the best truthful current window it can find, then offers practical next steps only when they genuinely fit the place.
+
+
+## Visitor demand includes successful information searches
+Review the existing aggregate search-gap triage's visitorDemand section alongside zero-result terms. A reviewed place or business result can satisfy an immediate information need while the exact place lacks a verified current view. Keep LOCAL PLACE/type/editorial-date labels distinct from live/refreshed and reference source states. Reconcile independent aggregate searches and local-information opens; historical search replays describe today's catalog, not historical result states or unique people.
+Match normalized terms and exact information IDs to existing research first. Prioritize repeated place-specific interest and credible official/provider leads. Perform one reasonable targeted pass, record unresolved status in the existing research record and hold until a material new camera, rendered-state or permission lead appears. Repetition alone is not a mandate for endless retries. Verify exact location, currentness, reliability, attribution and link/embed permission before activation; ordinary photographs never establish current camera truth. Public submissions remain OFF; paid traffic remains HOLD.

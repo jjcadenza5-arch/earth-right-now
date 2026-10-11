@@ -98,6 +98,8 @@ export function operationsOperatorBrief({snapshot,delta,availability,recovery,re
   }
   if(searchGapTriage){
     lines.push("## Search-gap triage");
+    const demand=searchGapTriage.visitorDemand;
+    if(demand){lines.push(`- Information-only demand: ${demand.informationOnlySearchEvents||0} aggregate searches replayed against the current catalog; opens and searches are independent signals, not unique visitors or historical result-state proof.`);for(const t of (demand.items||[]).slice(0,8))lines.push(`- Demand target ${t.key}: ${t.searchCount} searches, ${t.resultOpens} information opens — ${t.action}; exact-place camera review required.`)}
     lines.push(`- Historical zero-result events: ${searchGapTriage.totalZeroResultEvents||0}; currently resolves: ${searchGapTriage.currentlyResolves||0}; genuine destination terms: ${searchGapTriage.genuineCurrentGaps||0}; genuine destination clusters: ${searchGapTriage.genuineDestinationClusters??searchGapTriage.genuineCurrentGaps??0}; subplace/venue gaps: ${searchGapTriage.subplaceOrVenueGaps||0}; non-destination/venue queries: ${searchGapTriage.nonDestinationOrVenueQueries||0}; typing/low-confidence fragments: ${(searchGapTriage.progressiveQueryFragments||0)+(searchGapTriage.lowConfidencePartial||0)}.`);
     if((searchGapTriage.researchClusters||[]).length)lines.push(`- Research clusters: ${(searchGapTriage.researchClusters||[]).map(x=>`${x.key} (${x.eventCount||0})`).join(", ")}.`);
     for(const item of (searchGapTriage.rows||[]).slice(0,8)){
