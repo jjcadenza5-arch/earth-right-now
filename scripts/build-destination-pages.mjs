@@ -47,7 +47,7 @@ const latestTimestamp=items=>{
   return times[0]?new Date(times[0]).toISOString():null;
 };
 const latestDate=items=>latestTimestamp(items)?.slice(0,10)||null;
-const playbackMode=s=>s.playback==="EMBED"?"embedded in ERN":s.playback==="EXTERNAL"?"provider-hosted external live source":s.playback==="IMAGE_REFRESH"?"refreshed current image":"provider source";
+const playbackMode=s=>s.playback==="EXTERNAL"&&s.truth==="LIVE_IMAGE"?"provider-hosted refreshed image":s.playback==="EMBED"?"embedded in ERN":s.playback==="EXTERNAL"?"provider-hosted external live source":s.playback==="IMAGE_REFRESH"?"refreshed current image":"provider source";
 
 const map=new Map();
 for(const s of sources){
@@ -152,14 +152,15 @@ for(const [id,items] of map){
     :"";
 
   const cardFor=s=>{
-    const href=s.sourceLinkHold===true?null:safe(s.officialUrl||s.sourceUrl);
+    const externalCurrent=pageCurrentSource(s,buildNow)&&s.playback==="EXTERNAL";
+    const externalImage=externalCurrent&&s.truth==="LIVE_IMAGE";
+    const href=s.sourceLinkHold===true?null:safe(externalImage?(s.sourceUrl||s.officialUrl):(s.officialUrl||s.sourceUrl));
     const checked=date(s.lastSuccessfulCheck||s.checkedAt);
     const fresh=checked?' · ERN checked <time datetime="'+esc(checked)+'">'+esc(checked.slice(0,10))+'</time>':" · verification time unavailable";
     const playbackChecked=s.playback==="EMBED"?date(s.playbackVerifiedAt):null;
     const playback=playbackChecked?' · Playback checked <time datetime="'+esc(playbackChecked)+'">'+esc(playbackChecked.slice(0,10))+'</time>':"";
-    const externalCurrent=pageCurrentSource(s,buildNow)&&s.playback==="EXTERNAL";
-    const mode=s.playback==="EMBED"?"Playback: embedded in ERN":externalCurrent?"Playback: live stream available at source":s.playback==="IMAGE_REFRESH"?"Playback: refreshed current image":"Playback: provider source";
-    const link=s.sourceLinkHold===true?' · Provider link paused pending security review':href?' · <a href="'+esc(href)+'" rel="noopener noreferrer">'+(externalCurrent?"Open live source":"Provider source")+'</a>':"";
+    const mode=s.playback==="EMBED"?"Playback: embedded in ERN":externalImage?"Playback: refreshed current image at source":externalCurrent?"Playback: live stream available at source":s.playback==="IMAGE_REFRESH"?"Playback: refreshed current image":"Playback: provider source";
+    const link=s.sourceLinkHold===true?' · Provider link paused pending security review':href?' · <a href="'+esc(href)+'" rel="noopener noreferrer">'+(externalImage?"Open current image source":externalCurrent?"Open live source":"Provider source")+'</a>':"";
     const availability=sourceAvailabilityState(s,{now:buildNow});
     const playbackFresh=embedPlaybackProofCurrent(s,{now:buildNow});
     const truth=!playbackFresh&&s.playback==="EMBED"?"PLAYBACK RECHECK DUE":availability.restricted&&!availability.open?"OUTSIDE LIVE HOURS":currentWindowEyebrow(s,{now:buildNow});

@@ -21,3 +21,13 @@ const refreshed=[],directoryState={localDirectory:[]};
 runInNewContext(app.slice(directoryStart,directoryEnd),{x:[{id:'late-reviewed-business'}],state:directoryState,renderLocalEarth(){},renderQuickSearches(){},renderSaved(){},$:()=>({value:'Flam Bakery'}),search:q=>refreshed.push(q)});
 assert.equal(directoryState.localDirectory[0].id,'late-reviewed-business');
 assert.deepEqual(refreshed,['Flam Bakery'],'late reviewed entries must refresh the latest typed query');
+
+// Search currentness counts source evidence independently of featured/watch curation holds.
+const currentClaim=app.match(/function currentTruthClaim\(s\)\{[^}]+\}/)[0];
+const eligibility=app.match(/ds=s=>[^;]+,de=s=>[^;]+;/)[0];
+const currentCount=app.match(/cp=ag\.filter[^,]+/)[0];
+const source=(id,changes={})=>({id,truth:'LIVE_IMAGE',health:'HEALTHY',sourceUrl:'https://provider.example.test/view',age:1,window:72,featuredHold:true,watchHold:true,...changes});
+const fresh=source('held-current'),stale=source('stale',{age:80}),failed=source('failed',{failure:true}),preview=source('preview',{truth:'PREVIEW'}),closed=source('closed',{availabilitySchedule:{},open:false}),offline=source('offline',{health:'OFFLINE'});
+const count=runInNewContext(currentClaim+'const '+eligibility+'const '+currentCount+';cp',{ag:[[fresh],[stale],[failed],[preview],[closed],[offline],[source('other-current'),fresh]],safeExternalUrl:u=>u,currentTruthClaim:undefined,activePlaybackFailure:s=>!!s.failure,verificationAgeHours:s=>s.age,verificationWindowHours:s=>s.window,embedPlaybackCurrent:()=>true,scheduledNow:s=>s.open===true});
+assert.equal(count,2,'fresh curated-out views count once per place, while stale, failed, preview, closed and offline views do not');
+console.log('Search current-view counts preserve evidence gates and ignore presentation holds');
