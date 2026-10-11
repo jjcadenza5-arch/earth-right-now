@@ -55,3 +55,7 @@ for(const license of ["CC BY-SA 4.0","CC BY-SA 2.0","CC BY 2.0"]){
 }
 assert.equal(approvedPhotoLicense({license:"CC BY-NC 4.0",licenseUrl:"https://creativecommons.org/licenses/by-nc/4.0/"}),false);
 assert.equal(approvedPhotoLicense({license:"toString",licenseUrl:"anything"}),false);
+
+assert.match(build,/editorial-card-photos\\.js|editorial-card-photos\.js/,"release must retain deferred cover module");
+const releaseHtml=readFileSync(new URL("../dist/index.html",import.meta.url),"utf8");
+assert.match(releaseHtml,/import\("\.\/src\/editorial-card-photos\.js\?v=[^"\s]+"\)/,"each release must invalidate cached photographic module imports");
