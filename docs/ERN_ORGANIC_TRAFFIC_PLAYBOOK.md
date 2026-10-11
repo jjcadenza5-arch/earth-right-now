@@ -1,3 +1,9 @@
+## 2026-10-11 — Three planning-led sharing themes (owner-managed)
+- Levi: choose the actual lift and season before choosing a fell outing; contrast summer route maps with winter family transport.
+- Plitvice: pick an entrance and a route before buying a time-slot ticket; distinguish park opening from last return services and mobility limitations.
+- Brussels: arrive at the pedestrian centre, then choose a branch, meal or heritage route; central location is not a guaranteed square view.
+- Link an owner-created post to the relevant ERN search or currently eligible destination page. Use the existing aggregate searches and independent information opens for a dated comparison; no traffic increase, external posting or paid activation claimed.
+
 ## 2026-10-11 — Wengen and Denpasar planning themes (owner-managed)
 - Wengen: “The train gets you to the village; the summit is another journey.” Pair rail-arrival and station information with the distinction between accessible cableway stations and uphill trails. Check current operating dates and hotel closures; a historical village photo is not today’s mountain weather.
 - Denpasar: “City markets or a Sanur beach day?” Help viewers choose between central heritage/markets and coastal dining/stays. Link to the relevant ERN search or an eligible generated destination page; a city-camera collection does not show every venue.
