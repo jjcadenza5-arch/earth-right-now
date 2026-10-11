@@ -167,3 +167,10 @@ Optional owner-managed ideas only, with one relevant ERN link and cleared or own
 - Alpe d’Huez: a mountain day without skiing; choose eligible pedestrian lifts and a dining stop, with future winter dates made clear.
 - La Palma: choose a viewpoint or interior walk, check park staff guidance and La Cumbrecita parking arrangements.
 Use the existing destination or search URL that matches the video. Confirm the visible source state before sharing and label any historical photograph or dated footage truthfully in the post. Measure destination visits and outbound clicks against a dated baseline. These are owner-managed options, not published posts or measured growth.
+
+
+## Optional waterfront, Arctic and seasonal dining themes — 2026-10-11
+- Auckland: look at the harbour, then compare seafood, coffee and a dining stop for the actual day of the week.
+- Rovaniemi: what does the Arctic Circle look like today? Check current evidence, then compare company opening dates. Aurora and snow remain natural possibilities rather than promises.
+- Kibune: compare summer riverside dining with the season visible today; the official May-to-September season has ended.
+Link to the exact existing destination or search result matching the video. Keep historical mountain cover images dated in promotional content. Use a dated traffic baseline and tagged owner-managed links when measuring visits and outbound clicks; no post, paid campaign or growth result is implied.
