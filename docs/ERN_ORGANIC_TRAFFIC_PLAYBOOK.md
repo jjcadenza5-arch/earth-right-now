@@ -146,3 +146,12 @@ Optional owner-managed themes only: no post, ad or scheduled campaign created. U
 | Catedral: summer mountain outing or winter visit? | https://earthrightnow.app/places/bariloche-cerro-catedral/ | Check the source and operator’s seasonal pedestrian activities, ticket conditions, return lift and base-area dining/stay guidance. The cover shows summer slopes on 28 February 2018, not today’s snow or lift status. |
 
 Optional owner-managed themes only. Before sharing, verify that the linked source and planning sections are currently eligible, use owner footage or correctly attributed rights-cleared photography, and obtain a dated traffic baseline. Record the exact destination link, channel and post time; compare useful exploration across equal windows. No posting, account editing, scheduled campaign, footage-reuse permission, traffic growth or ranking is established by this document.
+
+## Owner-managed coast and mountain planning themes — 11 October 2026
+
+| Theme | Entry page | Useful invitation |
+| --- | --- | --- |
+| Pattaya: where would you go after looking at the bay? | https://earthrightnow.app/places/pattaya-city-live/ | Check source status, then search ERN for Dusit Gourmet or The Bay to explore the reviewed businesses and consult the coach operator for airport/Jomtien arrival planning. Current camera proof is stale and destination planning is withheld; do not promote it as currently public. A bus seat, meal or sea-view room needs separate confirmation. |
+| Nordkette: which station would make your visit work? | https://earthrightnow.app/places/innsbruck-nordkette/ | Search ERN for Seegrube or Top of Innsbruck to explore the reviewed businesses. Check arrival, station access, lift maintenance and final descent directly with the operator. The current camera check is stale; do not advertise a freshly verified view or withheld destination planning. |
+
+Optional owner-managed ideas only, with one relevant ERN link and cleared or owner footage. Obtain a dated traffic baseline before posting, record channel/link/time and compare useful exploration over equal windows. No post, advertisement, account edit, scheduled campaign or traffic growth is claimed.

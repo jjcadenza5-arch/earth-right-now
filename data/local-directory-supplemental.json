@@ -3864,5 +3864,257 @@
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.hotelcatedralpatagonia.com/en",
     "verifiedAt": "2026-10-11T07:30:25.618098+00:00"
+  },
+  {
+    "id": "local-nordkette-arrival",
+    "name": "Nordkette — arrival and parking validation",
+    "type": "visitor information",
+    "placeId": "innsbruck-nordkette",
+    "place": "Nordkette / Innsbruck",
+    "country": "Austria",
+    "url": "https://nordkette.com/en/service/approach/",
+    "summary": "Start at the Altstadt station on Rennweg rather than assuming every lift begins in the city centre. The operator explains public-transport approaches and a parking-validation process with eligibility exceptions. Confirm the applicable garage, validation desk and time window before parking; a ticket or pass does not automatically include a discounted parking space.",
+    "tags": [
+      "official visitor information",
+      "arrival",
+      "parking"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://nordkette.com/en/service/approach/",
+    "verifiedAt": "2026-10-11T09:08:20.378798+00:00"
+  },
+  {
+    "id": "local-nordkette-access",
+    "name": "Nordkette — station and restaurant access",
+    "type": "visitor information",
+    "placeId": "innsbruck-nordkette",
+    "place": "Nordkette / Innsbruck",
+    "country": "Austria",
+    "url": "https://nordkette.com/en/accessibility/",
+    "summary": "The operator describes elevator access to the Hungerburgbahn, a signposted wheelchair entrance at Seegrubenbahn, accessible Hafelekarbahn and station restrooms. Confirm the entrance and assistance you need directly. Accessible railway stations and restaurants do not establish that every summit path or mountain activity is step-free.",
+    "tags": [
+      "official visitor information",
+      "accessibility",
+      "cable car"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://nordkette.com/en/accessibility/",
+    "verifiedAt": "2026-10-11T09:08:20.376699+00:00"
+  },
+  {
+    "id": "local-nordkette-timetable",
+    "name": "Nordkette — separate lift and return times",
+    "type": "visitor information",
+    "placeId": "innsbruck-nordkette",
+    "place": "Nordkette / Innsbruck",
+    "country": "Austria",
+    "url": "https://nordkette.com/en/facilities-/-timetable/",
+    "summary": "Check Hungerburgbahn, Seegrubenbahn and Hafelekarbahn separately: their operating times differ. Leave a margin for the final descent and the journey back to town. The reviewed timetable lists seasonal maintenance periods, including November; check the actual travel date rather than assuming year-round access or copying an event-night schedule onto a normal day.",
+    "tags": [
+      "official visitor information",
+      "last descent",
+      "maintenance"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://nordkette.com/en/facilities-/-timetable/",
+    "verifiedAt": "2026-10-11T09:08:20.385026+00:00"
+  },
+  {
+    "id": "local-nordkette-visit-faq",
+    "name": "Nordkette — visit length, passes and dog rules",
+    "type": "visitor information",
+    "placeId": "innsbruck-nordkette",
+    "place": "Nordkette / Innsbruck",
+    "country": "Austria",
+    "url": "https://nordkette.com/en/faq/",
+    "summary": "Allow time for the view and stops as well as the lift journey. Compare the actual ticket or pass conditions and confirm current operation. The operator requires dogs to be leashed and muzzled on the railways, while the Alpenzoo does not allow dogs. Mountain access, zoo admission and a dining reservation are separate arrangements.",
+    "tags": [
+      "official visitor information",
+      "passes",
+      "dogs"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://nordkette.com/en/faq/",
+    "verifiedAt": "2026-10-11T09:08:20.402627+00:00"
+  },
+  {
+    "id": "local-nordkette-seegrube",
+    "name": "Restaurant Seegrube by DoN",
+    "type": "restaurant",
+    "placeId": "innsbruck-nordkette",
+    "place": "Nordkette / Seegrube",
+    "country": "Austria",
+    "url": "https://seegrube.at/en/",
+    "summary": "A Tyrolean dining stop at Seegrube, reached via the Nordkettenbahnen rather than a city-centre restaurant. Compare normal dining with separately bookable breakfast, brunch or picnic packages and confirm whether the selected package includes the railway ride. Check reservations, dietary needs and the last descent; dated event listings are not a promise of service today.",
+    "tags": [
+      "mountain dining",
+      "Tyrolean cuisine",
+      "Seegrube"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://seegrube.at/en/",
+    "verifiedAt": "2026-10-11T09:08:30.436168+00:00"
+  },
+  {
+    "id": "local-nordkette-top-restaurant",
+    "name": "Restaurant Top of Innsbruck — Hafelekar",
+    "type": "restaurant",
+    "placeId": "innsbruck-nordkette",
+    "place": "Nordkette / Hafelekar",
+    "country": "Austria",
+    "url": "https://nordkette.com/en/gastronomy/restaurant-top-of-innsbruck/",
+    "summary": "A restaurant in the Hafelekar station building, higher up the route than Seegrube. The operator ties service to lift operating hours and lists Tyrolean dishes and strudels. Confirm seasonal service, reservations and dietary needs before ascending, and plan the return lift; a restaurant listing does not guarantee a table or a clear panorama.",
+    "tags": [
+      "mountain dining",
+      "Hafelekar",
+      "Tyrolean cuisine"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://nordkette.com/en/gastronomy/restaurant-top-of-innsbruck/",
+    "verifiedAt": "2026-10-11T09:08:25.745828+00:00"
+  },
+  {
+    "id": "local-pattaya-airport-route",
+    "name": "Pattaya — Suvarnabhumi to Jomtien coach planning",
+    "type": "visitor information",
+    "placeId": "pattaya-city-live",
+    "place": "Pattaya / Jomtien",
+    "country": "Thailand",
+    "url": "https://airportpattayabus.com/airport-jomtien/",
+    "summary": "Compare the airport-to-Jomtien route in both directions and identify the actual boarding station before buying. Jomtien and North Pattaya are different arrival areas, so plan onward transport to your accommodation. Check current departures, ticket conditions and required boarding time, allowing for traffic, immigration and baggage rather than treating a listed journey time as a guaranteed flight connection.",
+    "tags": [
+      "official transport information",
+      "Suvarnabhumi",
+      "Jomtien"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://airportpattayabus.com/airport-jomtien/",
+    "verifiedAt": "2026-10-11T09:08:27.367304+00:00"
+  },
+  {
+    "id": "local-pattaya-coach-faq",
+    "name": "Pattaya — coach tickets, baggage and flight delays",
+    "type": "visitor information",
+    "placeId": "pattaya-city-live",
+    "place": "Pattaya / Jomtien",
+    "country": "Thailand",
+    "url": "https://airportpattayabus.com/faq/",
+    "summary": "The operator explains airport and Pattaya/Jomtien pickup points, mobile booking confirmation, missed-departure handling and non-refundable tickets. Confirm baggage allowances and extra charges for your actual service; the reviewed FAQ contains both allowance text and a fee table, so do not assume every bag travels free. Leave check-in and airport-processing margins and confirm accessibility needs with the operator.",
+    "tags": [
+      "official transport information",
+      "baggage",
+      "airport connection"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://airportpattayabus.com/faq/",
+    "verifiedAt": "2026-10-11T09:08:27.589739+00:00"
+  },
+  {
+    "id": "local-pattaya-dusit-gourmet",
+    "name": "Dusit Gourmet — North Pattaya",
+    "type": "café",
+    "placeId": "pattaya-city-live",
+    "place": "Pattaya / North Pattaya",
+    "country": "Thailand",
+    "url": "https://www.dusit.com/dusitthani-pattaya/dining/dusit-gourmet/",
+    "summary": "A bakery, tea and coffee stop near the main lobby at Dusit Thani Pattaya, at the northern end of Pattaya Bay. Compare a simple drink with the separately offered afternoon tea. Confirm current service, reservations, dietary needs and non-staying-guest access; a hotel venue listing does not include a meal or guarantee a table.",
+    "tags": [
+      "coffee",
+      "bakery",
+      "North Pattaya"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.dusit.com/dusitthani-pattaya/dining/dusit-gourmet/",
+    "verifiedAt": "2026-10-11T09:08:30.933260+00:00"
+  },
+  {
+    "id": "local-pattaya-cascade",
+    "name": "The Cascade Restaurant — Dusit Thani Pattaya",
+    "type": "restaurant",
+    "placeId": "pattaya-city-live",
+    "place": "Pattaya / North Pattaya",
+    "country": "Thailand",
+    "url": "https://www.dusit.com/dusitthani-pattaya/dining/cascade-restaurant-pattaya/",
+    "summary": "An atrium restaurant in North Pattaya offering buffet breakfast and all-day Thai and international dining. Confirm the chosen meal service, current menu, reservations and dietary requirements. Breakfast hours and inclusions can differ by day and booking; the garden setting is not a beachside table, and this unpaid listing promises no available seat.",
+    "tags": [
+      "Thai food",
+      "international food",
+      "North Pattaya"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.dusit.com/dusitthani-pattaya/dining/cascade-restaurant-pattaya/",
+    "verifiedAt": "2026-10-11T09:08:30.998453+00:00"
+  },
+  {
+    "id": "local-pattaya-the-bay",
+    "name": "The Bay — North Pattaya Mediterranean dining",
+    "type": "restaurant",
+    "placeId": "pattaya-city-live",
+    "place": "Pattaya / North Pattaya",
+    "country": "Thailand",
+    "url": "https://www.dusit.com/dusitthani-pattaya/dining/the-bay-restaurant/",
+    "summary": "Mediterranean dining at Dusit Thani Pattaya beside Pattaya Bay, separate from the hotel’s atrium restaurant. Check current meal service, reservations, dietary needs and outside-guest access directly. Brunches and special events have their own booking conditions; an oceanfront setting does not guarantee a sea-view table, available event ticket or meal included in a stay.",
+    "tags": [
+      "Mediterranean food",
+      "Pattaya Bay",
+      "North Pattaya"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.dusit.com/dusitthani-pattaya/dining/the-bay-restaurant/",
+    "verifiedAt": "2026-10-11T09:08:31.038712+00:00"
+  },
+  {
+    "id": "local-pattaya-dusit-stay",
+    "name": "Dusit Thani Pattaya — room and view comparison",
+    "type": "lodging",
+    "placeId": "pattaya-city-live",
+    "place": "Pattaya / North Pattaya",
+    "country": "Thailand",
+    "url": "https://www.dusit.com/dusitthani-pattaya/accommodation/",
+    "summary": "Compare Deluxe, Premium Garden View, Premium Sea View and suite categories rather than assuming all rooms look over Pattaya Bay. Check the actual room, occupancy, meal and club benefits, rate cancellation rules and requested access needs before booking. This North Pattaya stay listing does not guarantee a room, sea view, breakfast or beach conditions.",
+    "tags": [
+      "lodging",
+      "room comparison",
+      "North Pattaya"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.dusit.com/dusitthani-pattaya/accommodation/",
+    "verifiedAt": "2026-10-11T09:08:38.791299+00:00"
   }
 ]
