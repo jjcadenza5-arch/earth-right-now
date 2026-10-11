@@ -18,7 +18,9 @@ function credit(photo){
   p.append("Display crop");return p;
 }
 async function start(){
-  const response=await fetch(new URL("../data/destination-photo-rights-candidates.json",import.meta.url));
+  const registerUrl=new URL("../data/destination-photo-rights-candidates.json",import.meta.url);
+  registerUrl.search=new URL(import.meta.url).search;
+  const response=await fetch(registerUrl);
   if(!response.ok)return;
   const photos=approvedPhotos(await response.json()),attempted=new WeakSet();let queued=false;
   const scan=()=>{

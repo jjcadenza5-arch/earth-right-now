@@ -10,6 +10,10 @@
 - Deployed Wang Gong desktop search loaded the exact 960×540 image and below-card credit, but a single-result panoramic crop showed mostly sky. Added a bounded per-photo vertical focal position in the deferred photo module and set Wang Gong to 78% so its harbour remains visible without changing card geometry. Invalid/out-of-range values leave default cropping. This is display cropping already disclosed, not image alteration or new source verification.
 - Initial expansion release bf8c923cb71bf7ed882a9925c62b5a1d8380a25e is GREEN: Pages 38121840225, Operations 38121840133 and Syntax 38121840156. Production manifest generated 2026-10-11T07:36:41.175Z; nine exact served hashes matched, including four photo pages, both registers, deferred module, homepage and Places directory. Deployed desktop browser confirmed Petra 500×750, Catedral 960×720, Glacier 960×637 and Wang Gong search cover 960×540 loaded, plus visible creator/date/license credits, Petra four-guide/two-business and Catedral three-guide/three-business sections. Hala Hala search returned its newly reviewed Wadi Musa business without retyping. This is rendering/search evidence, not moving playback or mobile validation. Crop follow-up evidence follows.
 - Crop follow-up: all 119 release smoke tests and all 40 build/release/preflight commands passed again; original performance budgets and zero eager iframes retained.
+- Crop release 32889df7e0c77d0fcaa2eef6df58c7c42b680882 is GREEN: Pages 38122201620, Operations 38122201611, Syntax 38122201602. Production manifest generated 2026-10-11T07:42:21.934Z and nine served hashes matched. Deployed browser reload loaded the new versioned module but retained the prior unversioned photo register, leaving crop at 50%. Corrected register URL construction to carry the module’s release query; regression executes the actual URL construction. No false crop success claimed for this intermediate release; final cache-corrected evidence follows.
+- Cache correction validation: all 119 release smoke tests and all 40 build/release/preflight commands passed again, including the actual register-URL regression. Core/startup budgets unchanged.
+
+
 
 
 

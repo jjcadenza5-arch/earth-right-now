@@ -64,3 +64,9 @@ assert.match(releaseHtml,/import\("\.\/src\/editorial-card-photos\.js\?v=[^"\s]+
 
 assert.equal(approvedPhotoLicense({license:"CC BY 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/"}),false);
 assert.equal(approvedPhotoLicense({license:"CC BY-SA 2.5",licenseUrl:"https://creativecommons.org/licenses/by-sa/2.0/"}),false);
+
+// Exercise the actual URL construction so a cached previous register cannot hide new metadata.
+const photoModule=readFileSync(new URL("../src/editorial-card-photos.js",import.meta.url),"utf8");
+const registerUrlCode=photoModule.match(/const registerUrl=new URL[\s\S]*?registerUrl\.search=new URL\(import\.meta\.url\)\.search;/)[0];
+const registerRequest=runInNewContext(registerUrlCode.replaceAll("import.meta.url","moduleUrl")+"registerUrl.href",{URL,moduleUrl:"https://earthrightnow.app/src/editorial-card-photos.js?v=release123"});
+assert.equal(registerRequest,"https://earthrightnow.app/data/destination-photo-rights-candidates.json?v=release123");
