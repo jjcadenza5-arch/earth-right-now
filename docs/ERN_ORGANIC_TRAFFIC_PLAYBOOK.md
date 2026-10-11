@@ -85,6 +85,13 @@ Optional owner-managed destination themes added 2026-10-10:
 
 Optional owner-managed Grand Cayman theme added 2026-10-11: “That Seven Mile Beach view—where would you actually stay?” Link https://earthrightnow.app/places/cayman-seven-mile-beach/ and invite viewers to compare Sunshine suites, dining, charges and sister-property beach access. Recheck the source before calling a view live and use only permission-cleared visuals; do not imply the webcam is the hotel room view or that all facilities/meals are included.
 
+Optional owner-managed themes added 2026-10-11:
+
+- My Khe Beach: “A Da Nang coast view—what would make your stay work?” Link https://earthrightnow.app/places/vietnam-da-nang-my-khe/ and invite viewers to compare actual room views, breakfast and airport-transfer arrangements. The credited Jpatokal cover is from 25 June 2022, not present beach conditions or a hotel room view.
+- Nólsoy: “An island village view—can you plan the return ferry?” Link https://earthrightnow.app/places/faroe-nolsoy/ and point to route 90 and the official Borðan walking guide. Check current sailings, route access and weather; the credited Alexandar Vujadinovic photograph is from 29 June 2018 and cannot establish today’s trail conditions.
+
+Recheck each viewing source immediately before describing it as live. Share only independently permission-cleared visuals; these first-party planning links do not clear provider footage or hotel photography for reuse. These are optional owner-managed themes, not posts or scheduled campaigns.
+
 On Facebook, put the relevant ERN destination or collection URL in the post. On Instagram, make that relevant URL the profile link for the current campaign, or use a Story link where your account offers it. A caption URL should not be treated as a guaranteed clickable link. Linking the accounts does not establish that posts are cross-published; check what actually appeared on each profile.
 
 Keep the canonical domain visible. Suggested cautious profile wording: “Earth Right Now — The Live Discovery Engine. Discover real places through live views and official sources. See before you go.” This describes the current bridge to sources without promising universal live weather, present playback at every destination, or gated features.

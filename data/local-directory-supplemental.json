@@ -2727,5 +2727,111 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://sunshinesuites.com/contact/"
+  },
+  {
+    "id": "local-danang-tms-suites",
+    "name": "TMS Hotel Da Nang Beach — room categories",
+    "type": "hotel",
+    "place": "My Khe Beach, Da Nang",
+    "country": "Vietnam",
+    "placeId": "vietnam-da-nang-my-khe",
+    "url": "https://tmshotel.vn/suites/",
+    "summary": "Compare the hotel’s city-view, partial-ocean and ocean-front categories rather than assuming every room faces My Khe Beach. Confirm actual bedding, occupancy, accessibility and total price for your dates; the destination photograph and beach camera do not establish your room view or availability.",
+    "verifiedAt": "2026-10-11T03:11:18Z",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "room categories",
+      "beach stay"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://tmshotel.vn/suites/"
+  },
+  {
+    "id": "local-danang-savour",
+    "name": "Savour Restaurant — TMS breakfast dining",
+    "type": "restaurant",
+    "place": "My Khe Beach, Da Nang",
+    "country": "Vietnam",
+    "placeId": "vietnam-da-nang-my-khe",
+    "url": "https://tmshotel.vn/dining/savour-restaurant/",
+    "summary": "The hotel’s dining page describes an international breakfast buffet with indoor and terrace seating. Check current service times, menus, dietary requirements and outside-guest access directly; confirm whether breakfast is included in your booked rate.",
+    "verifiedAt": "2026-10-11T03:11:18Z",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "breakfast",
+      "dietary needs"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://tmshotel.vn/dining/savour-restaurant/"
+  },
+  {
+    "id": "local-danang-tms-arrival",
+    "name": "TMS — airport transfers and stay questions",
+    "type": "visitor information",
+    "place": "My Khe Beach, Da Nang",
+    "country": "Vietnam",
+    "placeId": "vietnam-da-nang-my-khe",
+    "url": "https://tmshotel.vn/faq/",
+    "summary": "The official FAQ says airport transfers can be arranged on request for an additional charge, and parking is limited and subject to availability. Confirm the transfer quote, meeting arrangements, parking and any cot or accessibility needs before arrival; an enquiry is not a confirmed booking.",
+    "verifiedAt": "2026-10-11T03:11:18Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "airport transfer",
+      "parking"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://tmshotel.vn/faq/"
+  },
+  {
+    "id": "local-nolsoy-bordan",
+    "name": "Nólsoy to Borðan — official walking guide",
+    "type": "visitor information",
+    "place": "Nólsoy",
+    "country": "Faroe Islands",
+    "placeId": "faroe-nolsoy",
+    "url": "https://visitfaroeislands.com/en/whatson/hiking/hikeplain/nolsoy-bordan",
+    "summary": "Official route guidance describes a difficult walk with steep and wet terrain and cairns that can be hard to spot. Check current route access, maintenance, local weather and suitable preparation before setting out; maintenance material on the guide is not a current closure notice, and a village camera does not establish trail conditions.",
+    "verifiedAt": "2026-10-11T03:11:14Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "hiking",
+      "route access"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://visitfaroeislands.com/en/whatson/hiking/hikeplain/nolsoy-bordan"
+  },
+  {
+    "id": "local-nolsoy-ferry",
+    "name": "Route 90 — Tórshavn to Nólsoy ferry",
+    "type": "visitor information",
+    "place": "Nólsoy",
+    "country": "Faroe Islands",
+    "placeId": "faroe-nolsoy",
+    "url": "https://www.ssl.fo/en/timetable/ferry/90-torshavn-nolsoy/",
+    "summary": "Use the transport operator’s route 90 timetable to plan both outward and return sailings. Check your travel date, holiday exceptions, current service information and ticket and boarding requirements; leave a return margin rather than assuming the last ferry will suit a walk. A village view does not confirm a sailing.",
+    "verifiedAt": "2026-10-11T03:11:14Z",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "ferry",
+      "arrival",
+      "return journey"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ssl.fo/en/timetable/ferry/90-torshavn-nolsoy/"
   }
 ]
