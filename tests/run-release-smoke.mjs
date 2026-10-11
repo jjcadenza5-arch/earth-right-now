@@ -105,6 +105,7 @@ const releaseTests=[
   "first-impression-visuals.smoke.js",
   "distribution-readiness.smoke.js",
   "local-directory-status.smoke.js",
+  "grand-place-local-search.smoke.js",
   "travel-offer-expiry.smoke.js",
   "affiliate-platform-project-status.smoke.js",
   "travel-bridge.smoke.js",
