@@ -6436,5 +6436,211 @@
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.visit.brussels/en/visitors/plan-your-trip/Historical-centre-attractions-cult-caf%C3%A9s-rainbow-colours",
     "verifiedAt": "2026-10-11T16:11:06.921754+00:00"
+  },
+  {
+    "id": "local-hiedanranta-tehtaan-terassi",
+    "placeId": "finland-tampere-hiedanranta",
+    "place": "Hiedanranta / Tampere",
+    "country": "Finland",
+    "name": "Tehtaan Terassi — seasonal courtyard dining",
+    "type": "restaurant",
+    "url": "https://hiedanranta.fi/en/for-visitors/restaurants-and-cafes/tehtaan-terassi/",
+    "summary": "Three food vendors share an outdoor terrace in the former pulp-mill courtyard. The operator describes summer service and summer events; confirm the next season and individual vendor hours before travelling. October opening or a current concert is not established by this page.",
+    "tags": [
+      "Hiedanranta",
+      "Tampere",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://hiedanranta.fi/en/for-visitors/restaurants-and-cafes/tehtaan-terassi/",
+    "verifiedAt": "2026-10-11T17:11:41.867651+00:00"
+  },
+  {
+    "id": "local-hiedanranta-sauna",
+    "placeId": "finland-tampere-hiedanranta",
+    "place": "Hiedanranta / Tampere",
+    "country": "Finland",
+    "name": "Tehdasaukion sauna — private hire",
+    "type": "sauna",
+    "url": "https://hiedanranta.fi/en/for-visitors/destinations/hiedanranta-sauna/",
+    "summary": "Wood-heated courtyard sauna with capacity for ten. The published summer public sessions do not continue year-round: from August the operator describes private hire only. Reserve directly and confirm seasonal facilities, access and availability.",
+    "tags": [
+      "Hiedanranta",
+      "Tampere",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://hiedanranta.fi/en/for-visitors/destinations/hiedanranta-sauna/",
+    "verifiedAt": "2026-10-11T17:11:41.867651+00:00"
+  },
+  {
+    "id": "local-hiedanranta-katutaso",
+    "placeId": "finland-tampere-hiedanranta",
+    "place": "Hiedanranta / Tampere",
+    "country": "Finland",
+    "name": "Katutaso — local craft shop and gallery",
+    "type": "shop",
+    "url": "https://hiedanranta.fi/en/for-visitors/destinations/katutaso-shop/",
+    "summary": "Craft, art and design from the Hiedanrannan Paja community. The district operator describes a year-round shop but its dated summer timetable does not establish October hours. Confirm the current opening time before visiting.",
+    "tags": [
+      "Hiedanranta",
+      "Tampere",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://hiedanranta.fi/en/for-visitors/destinations/katutaso-shop/",
+    "verifiedAt": "2026-10-11T17:11:41.867651+00:00"
+  },
+  {
+    "id": "local-hiedanranta-arrival",
+    "placeId": "finland-tampere-hiedanranta",
+    "place": "Hiedanranta / Tampere",
+    "country": "Finland",
+    "name": "Hiedanranta — tram arrival and construction access",
+    "type": "visitor information",
+    "url": "https://hiedanranta.fi/en/for-visitors/arriving-in-hiedanranta/",
+    "summary": "Use the Hiedanranta or Tehdas tram stops and the Nysse journey planner. Building works affect access; follow marked walking routes. Parking changed in June 2026: check the posted tariff and payment instructions rather than assuming unrestricted free parking.",
+    "tags": [
+      "Hiedanranta",
+      "Tampere",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://hiedanranta.fi/en/for-visitors/arriving-in-hiedanranta/",
+    "verifiedAt": "2026-10-11T17:11:41.867651+00:00"
+  },
+  {
+    "id": "local-hiedanranta-street-art",
+    "placeId": "finland-tampere-hiedanranta",
+    "place": "Hiedanranta / Tampere",
+    "country": "Finland",
+    "name": "Hiedanranta — street art park",
+    "type": "visitor information",
+    "url": "https://hiedanranta.fi/en/for-visitors/culture-and-art/street-art-park/",
+    "summary": "The container-based street art park is on the south side of the former factory near Tehdas tram stop. View commissioned murals and legal graffiti walls. Painting is restricted to marked free-painting surfaces; commissioned works and historic buildings are protected.",
+    "tags": [
+      "Hiedanranta",
+      "Tampere",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://hiedanranta.fi/en/for-visitors/culture-and-art/street-art-park/",
+    "verifiedAt": "2026-10-11T17:11:41.867651+00:00"
+  },
+  {
+    "id": "local-hiedanranta-manor",
+    "placeId": "finland-tampere-hiedanranta",
+    "place": "Hiedanranta / Tampere",
+    "country": "Finland",
+    "name": "Lielahti Manor — culture and lakeside grounds",
+    "type": "visitor information",
+    "url": "https://hiedanranta.fi/en/for-visitors/destinations/lielahti-manor/",
+    "summary": "City-owned heritage manor beside Lake Näsijärvi with cultural activities and nearby park grounds. Consult the current programme for exhibitions and indoor access; the district overview does not establish a particular event date or universal step-free access.",
+    "tags": [
+      "Hiedanranta",
+      "Tampere",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://hiedanranta.fi/en/for-visitors/destinations/lielahti-manor/",
+    "verifiedAt": "2026-10-11T17:11:41.867651+00:00"
+  },
+  {
+    "id": "local-lappeenranta-wolkoff",
+    "placeId": "finland-lappeenranta-vesitorni",
+    "place": "Lappeenranta",
+    "country": "Finland",
+    "name": "Wolkoff — restaurant and cellar",
+    "type": "restaurant",
+    "url": "https://wolkoff.fi/en/",
+    "summary": "Restaurant at Kauppakatu 26 and a separate wine-and-beer cellar entrance at Ainonkatu 5 in central Lappeenranta. Book directly and confirm the current menu and service hours. Summer courtyard dining and old holiday notices do not establish today’s availability.",
+    "tags": [
+      "Lappeenranta",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://wolkoff.fi/en/",
+    "verifiedAt": "2026-10-11T17:11:41.867651+00:00"
+  },
+  {
+    "id": "local-lappeenranta-rakuuna",
+    "placeId": "finland-lappeenranta-vesitorni",
+    "place": "Lappeenranta",
+    "country": "Finland",
+    "name": "Hotel Rakuuna — historic barracks stay",
+    "type": "hotel",
+    "url": "https://www.rakuunahotelli.fi/en/book-a-room/",
+    "summary": "Accommodation in the Rakuunamäki district with rooms for different group sizes. The operator states there are two floors and no elevator, so complete accessibility is not guaranteed. Confirm room access before booking; included sauna and spa use is during guest opening hours.",
+    "tags": [
+      "Lappeenranta",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.rakuunahotelli.fi/en/book-a-room/",
+    "verifiedAt": "2026-10-11T17:11:41.867651+00:00"
+  },
+  {
+    "id": "local-lappeenranta-tower-access",
+    "placeId": "finland-lappeenranta-vesitorni",
+    "place": "Lappeenranta",
+    "country": "Finland",
+    "name": "Water tower — seasonal observation deck",
+    "type": "visitor information",
+    "url": "https://visitlappeenranta.fi/fi/Nae-ja-koe/Nahtavyydet-ja-historia/Vesitornin-nakoalatasanne",
+    "summary": "The tourism authority’s published 2026 visitor season ended on 30 September. Do not assume the deck is open in October because its camera is available. Recheck the next season before going: access is via 160 steps with no elevator, at Valtakatu 55.",
+    "tags": [
+      "Lappeenranta",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://visitlappeenranta.fi/fi/Nae-ja-koe/Nahtavyydet-ja-historia/Vesitornin-nakoalatasanne",
+    "verifiedAt": "2026-10-11T17:11:41.867651+00:00"
+  },
+  {
+    "id": "local-lappeenranta-rantaraitti",
+    "placeId": "finland-lappeenranta-vesitorni",
+    "place": "Lappeenranta",
+    "country": "Finland",
+    "name": "Rantaraitti — lakeside route choices",
+    "type": "visitor information",
+    "url": "https://visitlappeenranta.fi/fi/Nae-ja-koe/Rantaraitti-%E2%80%93-kaikkien-raitti",
+    "summary": "Choose a short lakeside walk or a longer Saimaa route using the tourism authority’s maps. The western route has paved and stone-dust sections; the eastern network includes harder terrain and stairs. Neither side has winter maintenance. Confirm your section’s surface and conditions; city-camera visibility does not prove trail safety.",
+    "tags": [
+      "Lappeenranta",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://visitlappeenranta.fi/fi/Nae-ja-koe/Rantaraitti-%E2%80%93-kaikkien-raitti",
+    "verifiedAt": "2026-10-11T17:11:41.867651+00:00"
   }
 ]

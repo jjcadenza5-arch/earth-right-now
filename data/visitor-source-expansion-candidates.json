@@ -271,7 +271,20 @@
           "mode": "EXTERNAL_LIVE",
           "promotionState": "PROMOTED_LINK_ONLY"
         }
-      ]
+      ],
+      "latestResearchAt": "2026-10-11T17:11:41.867651+00:00",
+      "boundedPlaybackReview": {
+        "targets": [
+          "Helsinki Market Square",
+          "Koli",
+          "Turku",
+          "Levi",
+          "Kilpisjärvi"
+        ],
+        "outcome": "UNRESOLVED_NO_DECODED_VIDEO_IN_REVIEW_BROWSER",
+        "evidence": "Clicked each exact YouTube player from the official guide; currentTime 0, readyState 0, width/height 0. No fresh playback success or source-verification renewal inferred.",
+        "next": "Hold this pass. Revisit after material provider evidence or a fresh playable browser observation; no retry loop."
+      }
     },
     {
       "id": "yellowstone-old-faithful-official-live",
@@ -919,6 +932,44 @@
       "evidenceUrls": [
         "https://izle.kayseri.bel.tr/kategori/erciyes"
       ]
+    },
+    {
+      "id": "finland-official-panorama-network",
+      "priority": "P1",
+      "placeGroup": "Tampere, Lappeenranta and Rovaniemi",
+      "country": "Finland",
+      "provider": "Municipal and district operators / Flycam",
+      "candidateType": "OFFICIAL_CURRENT_PANORAMA_NETWORK",
+      "state": "PARTIALLY_RESOLVED_REFRESHED_IMAGES_WITH_OUTAGE_HOLDS",
+      "evidenceUrls": [
+        "https://www.tampere.fi/en/city-and-decision-making/information-on-tampere/web-cameras-tampere",
+        "https://hiedanranta.fi/en/",
+        "https://www.lappeenrannanenergia.fi/ajankohtaista/vesitornin-uudesta-verkkokamerasta-panoraamakuvaa-ympari-vuorokauden",
+        "https://www.visitrovaniemi.fi/plan/rovaniemi-webcam/",
+        "https://helsinkishipyard.fi/helsinki/"
+      ],
+      "why": "First-party linked panoramas give place-matched visual context; timestamps and rights require individual review.",
+      "next": "Maintain the three reviewed external refreshed views. Koivusaari and Helsinki Shipyard remain on hold until provider outage messages clear and a recent location-matched image is observed. No ordinary promotional photos qualify.",
+      "reviewedAt": "2026-10-11T17:11:41.867651+00:00",
+      "resolvedCatalogIds": [
+        "finland-tampere-hiedanranta-current",
+        "finland-lappeenranta-vesitorni-current",
+        "finland-ounasvaara-webcam"
+      ],
+      "heldTargets": [
+        {
+          "name": "Rovaniemi Koivusaari",
+          "sourceUrl": "https://flycam.roundshot.com/rovaniemi-2/",
+          "reason": "Provider explicitly Camera offline / out of service; last displayed image 2026-07-31 16:15."
+        },
+        {
+          "name": "Helsinki Shipyard",
+          "sourceUrl": "https://helsinkishipyard.panomax.com/",
+          "reason": "Provider explicitly reports a network issue; no current dated image established."
+        }
+      ],
+      "permission": "LINK_ONLY; no camera imagery copied or embedding permission inferred",
+      "selectionBasis": "Editorial coverage with credible first-party leads; no measured visitor demand asserted"
     }
   ],
   "guardrails": {
