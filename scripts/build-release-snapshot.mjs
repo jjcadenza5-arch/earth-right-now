@@ -15,7 +15,8 @@ const ERN_BUILD_CACHE_BUST=String(process.env.GITHUB_SHA||process.env.ERN_COMMIT
     .replace(/(\.\/src\/styles-lite\.css)(?:\?v=[^"']*)?/g,`$1?v=${ERN_BUILD_CACHE_BUST}`)
     .replace(/(\.\/src\/premium-cards\.css)(?:\?v=[^"']*)?/g,`$1?v=${ERN_BUILD_CACHE_BUST}`)
     .replace(/(\.\/src\/app-lite\.js)(?:\?v=[^"']*)?/g,`$1?v=${ERN_BUILD_CACHE_BUST}`)
-    .replace(/(\.\/src\/editorial-card-photos\.js)(?:\?v=[^"']*)?/g,`$1?v=${ERN_BUILD_CACHE_BUST}`);
+    .replace(/(\.\/src\/editorial-card-photos\.js)(?:\?v=[^"']*)?/g,`$1?v=${ERN_BUILD_CACHE_BUST}`)
+    .replace(/((?:\.)?\/assets\/ern-(?:mark\.svg|icon-\d+\.png))(?:\?v=[^"']*)?/g,`$1?v=${ERN_BUILD_CACHE_BUST}`);
   await writeFile(indexPath,html);
 }
 await mkdir(new URL("src/",dist),{recursive:true});
