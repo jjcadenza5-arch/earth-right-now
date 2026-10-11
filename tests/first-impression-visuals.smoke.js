@@ -38,7 +38,7 @@ assert.equal(approvedPhotos({...register,homepageActivationAllowed:false}).size,
 assert.equal(approvedPhotos({...register,candidates:[{...register.candidates[0],imageUrl:"https://example.com/photo.jpg"}]}).size,0);
 assert.equal(approvedPhotos(register).has("unrelated-place"),false);
 let selector;eligibleVisual({querySelector:s=>{selector=s;return null}});
-assert.equal(selector,'.result-visual[data-visual-kind="illustrative"],.wander-visual[data-visual-kind="illustrative"]',"source and video posters cannot be overwritten");
+assert.equal(selector,'.result-visual[data-visual-kind]:not([data-visual-kind="editorial"]),.wander-visual[data-visual-kind]:not([data-visual-kind="editorial"])',"approved photos can cover static discovery posters without selecting viewer or Watch media");
 assert.match(build,/premium-cards\.css/,"static release must include premium card stylesheet");
 assert.match(css,/ern-fuji-mockup-hero\.jpg/,"approved Mount Fuji hero image must remain active");
 assert.doesNotMatch(css,/commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\/FujiSunriseKawaguchiko2025WP/,

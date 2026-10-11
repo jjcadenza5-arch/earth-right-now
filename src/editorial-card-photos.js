@@ -1,10 +1,10 @@
-// Destination-matched archival photos enhance illustrations only; source posters stay primary.
+// Approved exact-place photographs cover discovery cards; viewers keep their source media.
 export function approvedPhotos(register){
   if(register?.publicActivationAllowed!==true||register.homepageActivationAllowed!==true)return new Map();
   return new Map((register.candidates||[]).filter(p=>p.publicActivationAllowed===true&&p.homepageActivationAllowed===true&&p.status==="APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY"&&p.placeId&&p.creator&&p.license==="CC BY-SA 4.0"&&p.licenseUrl==="https://creativecommons.org/licenses/by-sa/4.0/"&&/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(p.filePage)&&/^https:\/\/(upload|thumb)\.wikimedia\.org\//.test(p.imageUrl)).map(p=>[p.placeId,p]));
 }
 export function eligibleVisual(card){
-  return card.querySelector('.result-visual[data-visual-kind="illustrative"],.wander-visual[data-visual-kind="illustrative"]');
+  return card.querySelector('.result-visual[data-visual-kind]:not([data-visual-kind="editorial"]),.wander-visual[data-visual-kind]:not([data-visual-kind="editorial"])');
 }
 function credit(photo){
   const p=document.createElement("p");p.className="photo-credit";p.append(photo.dateTaken?`Photo dated ${photo.dateTaken} · `:"Archival photo · ","Photo: ");
@@ -30,7 +30,7 @@ async function start(){
         card.before(wrapper);wrapper.append(card,credit(photo));
         visual.querySelectorAll("img").forEach(old=>old.remove());visual.append(img);visual.dataset.visualKind="editorial";
       };
-      // An unavailable photo leaves the existing labeled illustration untouched.
+      // An unavailable photo leaves the existing cover untouched.
       img.onerror=()=>{};img.src=photo.imageUrl;
     });
   };
