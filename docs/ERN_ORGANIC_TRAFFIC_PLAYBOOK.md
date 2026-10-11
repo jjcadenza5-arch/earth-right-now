@@ -1,3 +1,8 @@
+## 2026-10-11 — Coogee and Waikīkī practical discovery themes (owner-managed)
+- Coogee: pair the council’s source view with a useful decision: beach wheelchair support and booking, picnic facilities, or the difference between bar-adjacent and rear hotel rooms. Search Coogee to open reviewed information.
+- Waikīkī: show that several beach sections make up the shoreline. Pair a source view with beach-section planning, transport or an aquarium stop. Estimated jellyfish dates are planning information, never an all-clear or a current view.
+- Optional owner post ideas only; no posts, outreach, account changes or traffic claims made. Use a destination link only when its generated page is eligible and accurately represents source freshness; otherwise use ERN search. Compare dated aggregate visits, searches and information opens before claiming growth. Paid traffic stays on hold.
+
 ## 2026-10-11 — Lake and coast planning themes (owner-managed)
 - Oeschinensee: “The station and the lake are different stops.” Pair an actual checked view with train-to-gondola planning, boarding/parking distinctions and Bergstübli versus lakeshore dining. Confirm date-specific reservations directly because operator pages disagree. Search Bergstuebli to discover the new mountain-station listing.
 - Yehliu: “What would make a coastal day easier?” Link discovery with ramped-route planning, luggage retrieval, visitor-centre advice and 野站咖啡 / Yezhan Coffee. Confirm actual services; equipment and trail access are not guaranteed.
