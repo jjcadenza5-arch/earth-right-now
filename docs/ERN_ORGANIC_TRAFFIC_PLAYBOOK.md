@@ -160,3 +160,10 @@ Optional owner-managed themes only. Before sharing, verify that the linked sourc
 | Nordkette: which station would make your visit work? | https://earthrightnow.app/places/innsbruck-nordkette/ | Search ERN for Seegrube or Top of Innsbruck to explore the reviewed businesses. Check arrival, station access, lift maintenance and final descent directly with the operator. The current camera check is stale; do not advertise a freshly verified view or withheld destination planning. |
 
 Optional owner-managed ideas only, with one relevant ERN link and cleared or owner footage. Obtain a dated traffic baseline before posting, record channel/link/time and compare useful exploration over equal windows. No post, advertisement, account edit, scheduled campaign or traffic growth is claimed.
+
+
+## Optional mountain planning themes — 2026-10-11
+- Ischgl: compare mountain dining stops and accessible boarding, then check the actual seasonal transport and return.
+- Alpe d’Huez: a mountain day without skiing; choose eligible pedestrian lifts and a dining stop, with future winter dates made clear.
+- La Palma: choose a viewpoint or interior walk, check park staff guidance and La Cumbrecita parking arrangements.
+Use the existing destination or search URL that matches the video. Confirm the visible source state before sharing and label any historical photograph or dated footage truthfully in the post. Measure destination visits and outbound clicks against a dated baseline. These are owner-managed options, not published posts or measured growth.
