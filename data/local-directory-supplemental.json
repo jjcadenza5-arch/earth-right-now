@@ -371,9 +371,9 @@
     "place": "Oeschinensee / Kandersteg",
     "country": "Switzerland",
     "placeId": "oeschinensee",
-    "summary": "Check the operator’s official FAQ for arrival by public transport, cable-car reservations, parking and mobility support. Review the linked operating status and route notices before setting out; a lake photograph does not establish trail access or current conditions.",
+    "summary": "Check the operator’s current ascent time-slot rules as well as your cable-car ticket: a third-party ticket may not include the required reservation. Parking is separate and capacity limited. Confirm public-transport arrival, mobility support and the last downhill service directly; a lake photograph does not establish trail access.",
     "url": "https://www.oeschinensee.ch/en/faq/",
-    "verifiedAt": "2026-10-10T07:24:59Z",
+    "verifiedAt": "2026-10-11T05:45:40.359556+00:00",
     "status": "APPROVED",
     "paidPlacement": false,
     "affiliate": false,
@@ -384,7 +384,8 @@
       "cable car",
       "kandersteg"
     ],
-    "reviewBasis": "OFFICIAL_DESTINATION_VISITOR_PAGE"
+    "reviewBasis": "OFFICIAL_DESTINATION_VISITOR_PAGE",
+    "reviewSourceUrl": "https://www.oeschinensee.ch/en/sommer/"
   },
   {
     "id": "local-ruapehu-sky-waka",
@@ -3128,5 +3129,194 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://eng.taiwan.net.tw/m1.aspx?id=746&sNo=0000208&t=1"
+  },
+  {
+    "id": "local-oeschinensee-mountain-restaurant",
+    "name": "Oeschinensee Mountain Restaurant",
+    "type": "restaurant",
+    "placeId": "oeschinensee",
+    "place": "Oeschinensee / Kandersteg",
+    "country": "Switzerland",
+    "url": "https://restaurant-oeschinensee.ch/en/restaurant-oeschinensee-2/",
+    "summary": "Lakeshore self-service restaurant with Swiss and regional dishes. Check the current menu, dietary requirements and service before walking down from the mountain station; group table arrangements are separate from cable-car reservations. A lake view does not confirm restaurant access or opening.",
+    "tags": [
+      "restaurant",
+      "lakeshore",
+      "food"
+    ],
+    "verifiedAt": "2026-10-11T05:44:04.457297+00:00",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://restaurant-oeschinensee.ch/en/restaurant-oeschinensee-2/"
+  },
+  {
+    "id": "local-oeschinensee-cafebar",
+    "name": "Oeschinensee Café-Bar",
+    "type": "café",
+    "placeId": "oeschinensee",
+    "place": "Oeschinensee / Kandersteg",
+    "country": "Switzerland",
+    "url": "https://restaurant-oeschinensee.ch/en/cafebar/",
+    "summary": "Lakeshore café-bar offering ice cream and quick snacks. Confirm seasonal service and dietary suitability directly; do not assume a meal is included in a cable-car ticket or that the lakeshore is accessible whenever a camera image is visible.",
+    "tags": [
+      "cafe",
+      "snacks",
+      "ice cream"
+    ],
+    "verifiedAt": "2026-10-11T05:44:13.837997+00:00",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://restaurant-oeschinensee.ch/en/cafebar/"
+  },
+  {
+    "id": "local-oeschinensee-hiking",
+    "name": "Oeschinensee — choose a walking route",
+    "type": "visitor information",
+    "placeId": "oeschinensee",
+    "place": "Oeschinensee / Kandersteg",
+    "country": "Switzerland",
+    "url": "https://www.oeschinensee.ch/en/wandern/",
+    "summary": "Compare the mountain-station lake walk with the more demanding Heuberg and alpine routes. Check the operator’s route status, equipment guidance and return cable-car service for your visit date. Stroller suitability on selected paths does not establish wheelchair access throughout the area; photographs cannot establish trail safety.",
+    "tags": [
+      "official visitor information",
+      "hiking",
+      "route status"
+    ],
+    "verifiedAt": "2026-10-11T05:44:24.043347+00:00",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.oeschinensee.ch/en/wandern/"
+  },
+  {
+    "id": "local-oeschinensee-rowing",
+    "name": "Oeschinensee — rowing-boat planning",
+    "type": "visitor information",
+    "placeId": "oeschinensee",
+    "place": "Oeschinensee / Kandersteg",
+    "country": "Switzerland",
+    "url": "https://www.oeschinensee.ch/en/ruderboote/",
+    "summary": "The operator says rowing boats cannot be reserved and rental closes in fog, strong winds or bad weather. Check current operation, capacity, age rules and life-jacket guidance before visiting the lakeshore; a calm-looking cover photograph does not establish boating conditions.",
+    "tags": [
+      "official visitor information",
+      "rowing",
+      "weather"
+    ],
+    "verifiedAt": "2026-10-11T05:44:33.902564+00:00",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.oeschinensee.ch/en/ruderboote/"
+  },
+  {
+    "id": "local-flam-bakery",
+    "name": "Flåm Bakery",
+    "type": "bakery",
+    "placeId": "flam-aurlandsfjord",
+    "place": "Flåm / Aurlandsfjord",
+    "country": "Norway",
+    "url": "https://www.norwaysbest.com/en/flam/food-and-drinks/flam-bakery",
+    "summary": "Quayside bakery near Flåm Railway station offering breads, sandwiches, pastries and takeaway pizza. Check current opening, dietary suitability and ordering arrangements before a train or fjord departure; food and service availability are not established by the harbour camera.",
+    "tags": [
+      "bakery",
+      "food",
+      "station"
+    ],
+    "verifiedAt": "2026-10-11T05:44:42.616781+00:00",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.norwaysbest.com/en/flam/food-and-drinks/flam-bakery"
+  },
+  {
+    "id": "local-flam-arven",
+    "name": "Restaurant Arven at Fretheim Hotel",
+    "type": "restaurant",
+    "placeId": "flam-aurlandsfjord",
+    "place": "Flåm / Aurlandsfjord",
+    "country": "Norway",
+    "url": "https://www.norwaysbest.com/en/flam/food-and-drinks/restaurant-arven",
+    "summary": "Fretheim Hotel’s second-floor restaurant serves breakfast and dinner with seasonal Norwegian ingredients. Buffet service varies by season; lunch is offered to pre-booked groups. Confirm tables, dietary needs, access and any meal inclusion with the operator rather than assuming hotel or tour tickets include dining.",
+    "tags": [
+      "restaurant",
+      "seasonal menu",
+      "fretheim"
+    ],
+    "verifiedAt": "2026-10-11T05:44:52.182760+00:00",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.norwaysbest.com/en/flam/food-and-drinks/restaurant-arven"
+  },
+  {
+    "id": "local-flam-railway-planning",
+    "name": "Flåm Railway — departure and connection planning",
+    "type": "visitor information",
+    "placeId": "flam-aurlandsfjord",
+    "place": "Flåm / Aurlandsfjord",
+    "country": "Norway",
+    "url": "https://www.norwaysbest.com/en/flam/things-to-do/the-flam-railway-round-trip",
+    "summary": "Use the operator’s date-specific timetable and meet at Flåm Station. Distinguish a Flåm–Myrdal round trip from a one-way connection to the Bergen Railway; check the appropriate ticket and onward connection separately. Sold-out departures are not guaranteed by contacting customer service.",
+    "tags": [
+      "official visitor information",
+      "railway",
+      "transport"
+    ],
+    "verifiedAt": "2026-10-11T05:45:00.804742+00:00",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.norwaysbest.com/en/flam/things-to-do/the-flam-railway-round-trip"
+  },
+  {
+    "id": "local-flam-fjord-planning",
+    "name": "Nærøyfjord — cruise and return planning",
+    "type": "visitor information",
+    "placeId": "flam-aurlandsfjord",
+    "place": "Flåm / Aurlandsfjord",
+    "country": "Norway",
+    "url": "https://www.norwaysbest.com/en/flam/things-to-do/fjord-cruise-naeroyfjord",
+    "summary": "Check your sailing direction, quay and return bus or boat before booking a Flåm–Gudvangen cruise. Intermediate stops require advance booking. Winter route changes and vessel substitutions can affect the itinerary and accessibility; confirm the actual vessel and assistance needed rather than relying on a general accessible-ship description.",
+    "tags": [
+      "official visitor information",
+      "fjord cruise",
+      "accessible arrival"
+    ],
+    "verifiedAt": "2026-10-11T05:45:07.230629+00:00",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.norwaysbest.com/en/flam/things-to-do/fjord-cruise-naeroyfjord"
+  },
+  {
+    "id": "local-flam-luggage",
+    "name": "Flåm — luggage storage between journeys",
+    "type": "visitor information",
+    "placeId": "flam-aurlandsfjord",
+    "place": "Flåm / Aurlandsfjord",
+    "country": "Norway",
+    "url": "https://www.norwaysbest.com/en/flam/luggage-storage-in-flam",
+    "summary": "The operator lists self-service lockers beside Flåm’s station and Customer Center, with different sizes and card payment. Check current charges, rental limits and posted instructions at the lockers. A listed storage service does not guarantee an available box for your bag or departure time.",
+    "tags": [
+      "official visitor information",
+      "luggage",
+      "station"
+    ],
+    "verifiedAt": "2026-10-11T05:45:15.703339+00:00",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.norwaysbest.com/en/flam/luggage-storage-in-flam"
   }
 ]

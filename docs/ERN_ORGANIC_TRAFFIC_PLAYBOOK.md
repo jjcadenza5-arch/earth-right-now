@@ -7,6 +7,7 @@ Prepared 10 October 2026 for owner-managed promotion. This is a proposed experim
 - Website: https://earthrightnow.app/
 - Facebook: https://www.facebook.com/profile.php?id=61595445832978
 - Instagram: https://www.instagram.com/earthrightnowapp/
+- TikTok: @earthrightnowapp (owner report and supplied profile screenshot, 11 October 2026; public profile not independently verified).
 
 Owner report and supplied profile screenshots confirm the accounts. The owner reports linking Instagram and Facebook; that linkage has not been independently inspected. Website records distinguish these owner-managed profiles from an agent posting integration, which remains unconnected. No automatic posting, ads, outreach or account changes are authorized by this document.
 
@@ -116,3 +117,14 @@ Measure referred landings, searches, zero-result searches, window/source opens, 
 Repeat the theme that produces useful exploration, not simply the largest view count. If people arrive but do not explore, check the entry page and invitation. If searches fail, prioritize real destination/alias coverage without inventing cameras. If a source is stale or blocked, repair or label it honestly before promoting it again. Affiliate clicks are interest signals; partner dashboards, not website events, determine eligible bookings and commissions.
 
 Google discovery is a longer-running path: keep useful sourced destination pages, titles, canonical links, sitemap and previews accurate; inspect Search Console rather than claiming rankings from a technical audit. No guaranteed reach, indexing, revenue or market-leading position is implied.
+
+## Owner-managed brand and mountain/fjord follow-up — 11 October 2026
+
+The owner reports changing Facebook, Instagram and TikTok profile images to the approved ERN icon. The icon suits circular profile crops; the full-logo banner is a separate downloadable promotional asset. This report does not authorize account editing or posting.
+
+| Theme | Entry page | Invitation and useful next step |
+| --- | --- | --- |
+| Lake or mountain path? | https://earthrightnow.app/places/oeschinensee/ | Which route would you choose? Check source status, then the operator’s trail, cable-car reservation and weather-dependent boat guidance. Historical cover photography does not establish present access. |
+| Fjord or railway? | https://earthrightnow.app/places/flam-aurlandsfjord/ | Would you explore by train or boat? Compare date-specific departures, return transport, luggage storage and a food stop. Confirm source eligibility before advertising a current view. |
+
+These are optional themes for the owner’s Facebook, Instagram or TikTok, not scheduled campaigns or evidence of traffic growth. Each video should invite one destination visit. Use cleared imagery or the owner’s own footage; ERN camera links do not grant footage reuse rights.
