@@ -181,3 +181,9 @@ Link to the exact existing destination or search result matching the video. Keep
 - Bohinj: see the lake, then choose a valley-town food stop and the correct seasonal bus. Lake-shore access and Bohinjska Bistrica are separate locations; protected mountain waters are not ordinary swimming stops.
 - Zell am See: could you explore without a car? Compare station-to-lake walks, overnight-guest public transport and separately ticketed mountain lifts. Confirm arrival-day ticket issue with the accommodation.
 Use the exact matching existing search or destination link after checking the visible source state. Historical covers and dated footage need truthful dates in promotional content. Establish a dated analytics baseline before measuring a tagged owner-managed post; these themes do not claim publication or new traffic.
+
+
+## Optional mountain-village and valley discovery themes — 2026-10-11
+- Amden: where would you stop after looking across Walensee? Compare cash-only mountain dining, seasonal hut hosts and a shorter viewpoint walk with the longer mixed-surface family loop.
+- Aridane: what would you explore after watching the valley? Compare town street art, archaeology, a bookable banana-farm visit and dining in nearby Tazacorte. Check coastal access and return transport separately.
+Use the existing destination or exact search result that matches the owner's video, checking current source status before sharing. Historical photographic covers retain their dates and required credits. Record channel, link and post time against a dated analytics baseline; these are optional owner-managed ideas, not published posts or measured growth.
