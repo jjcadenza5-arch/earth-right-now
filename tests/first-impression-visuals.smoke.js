@@ -14,8 +14,8 @@ assert.match(css,/\.wander-card\{position:relative;display:block;min-height:210p
   "More places cards should keep premium image-led composition");
 assert.match(css,/\.my-earth \.result-card>\.result-visual,.search-section \.result-card>\.result-visual\{width:100%;height:150px/,
   "Search and saved cards should keep editorial image-led composition");
-assert.match(css,/content:"ARTWORK"/,"illustrative artwork must remain labeled");
-assert.match(css,/content:"VIDEO POSTER"/,"derived video posters must remain labeled");
+assert.doesNotMatch(css,/content:"(?:ARTWORK|PHOTO|VIDEO POSTER)"/,"card images should remain free of media-type badges");
+
 assert.match(css,/scenic-poster\[data-scene="island"\]/,"island fallback art should exist");
 assert.match(css,/scenic-poster\[data-scene="city"\][\s\S]*#e8c37b/,
   "city fallback art should include visible light detail");
