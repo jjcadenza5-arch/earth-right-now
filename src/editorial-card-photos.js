@@ -11,7 +11,7 @@ function credit(photo){
   for(const [label,url] of [[photo.creator,photo.filePage],[photo.license,photo.licenseUrl]]){
     const a=document.createElement("a");a.textContent=label;a.href=url;a.target="_blank";a.rel="noopener noreferrer";p.append(a," · ");
   }
-  p.append("Display crop · Not live");return p;
+  p.append("Display crop");return p;
 }
 async function start(){
   const response=await fetch(new URL("../data/destination-photo-rights-candidates.json",import.meta.url));
