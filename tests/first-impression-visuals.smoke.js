@@ -1,3 +1,4 @@
+import {runInNewContext} from "node:vm";
 import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
 
@@ -57,5 +58,6 @@ assert.equal(approvedPhotoLicense({license:"CC BY-NC 4.0",licenseUrl:"https://cr
 assert.equal(approvedPhotoLicense({license:"toString",licenseUrl:"anything"}),false);
 
 assert.match(build,/editorial-card-photos\\.js|editorial-card-photos\.js/,"release must retain deferred cover module");
-const releaseHtml=readFileSync(new URL("../dist/index.html",import.meta.url),"utf8");
+const versioning=build.match(/html=html[\s\S]*?;\n/)[0];
+const releaseHtml=runInNewContext(`${versioning}html`,{html:readFileSync(new URL("../index.html",import.meta.url),"utf8"),ERN_BUILD_CACHE_BUST:"regression123"});
 assert.match(releaseHtml,/import\("\.\/src\/editorial-card-photos\.js\?v=[^"\s]+"\)/,"each release must invalidate cached photographic module imports");
