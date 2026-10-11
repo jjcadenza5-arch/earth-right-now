@@ -1,3 +1,4 @@
+import { approvedPhotoLicense } from "../src/editorial-card-photos.js";
 import { collectionShareScript } from "./collection-share-runtime.mjs";
 import { placeDirectoryRuntime } from "./place-directory-runtime.mjs";
 import { currentWindowEyebrow } from "../src/current-window-label.js";
@@ -23,7 +24,7 @@ const travelOffers=JSON.parse(fs.readFileSync("data/travel-offers.json","utf8"))
 const localDirectory=[...JSON.parse(fs.readFileSync("data/local-directory.json","utf8")),...JSON.parse(fs.readFileSync("data/local-directory-supplemental.json","utf8"))];
 const affiliatePartners=JSON.parse(fs.readFileSync("data/affiliate-partners.json","utf8"));
 const editorialPhotos=JSON.parse(fs.readFileSync("data/destination-photo-rights-candidates.json","utf8"));
-const editorialFor=id=>editorialPhotos.publicActivationAllowed?editorialPhotos.candidates.find(p=>p.placeId===id&&p.publicActivationAllowed===true&&p.status==="APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY"&&p.license==="CC BY-SA 4.0"&&p.imageUrl?.startsWith("https://")&&p.filePage?.startsWith("https://commons.wikimedia.org/")&&p.licenseUrl==="https://creativecommons.org/licenses/by-sa/4.0/"):null;
+const editorialFor=id=>editorialPhotos.publicActivationAllowed?editorialPhotos.candidates.find(p=>p.placeId===id&&p.publicActivationAllowed===true&&p.status==="APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY"&&approvedPhotoLicense(p)&&p.imageUrl?.startsWith("https://")&&p.filePage?.startsWith("https://commons.wikimedia.org/")):null;
 const base="https://earthrightnow.app/";
 const analyticsScript='<script type="module" src="'+base+'src/analytics-runtime.js"></script><script type="module" src="'+base+'src/commercial-attribution-runtime.js"></script>';
 const feedAlternate='<link rel="alternate" type="application/atom+xml" title="Earth Right Now recent updates" href="'+base+'updates.xml">';
@@ -173,7 +174,7 @@ for(const [id,items] of map){
   const viewsHtml='<section id="earth-views" aria-label="Earth views">'+currentSection+scheduledSection+waitingSection+'</section>';
   const editorial=editorialFor(id);
   const editorialSize=editorial&&Number.isInteger(editorial.imageWidth)&&Number.isInteger(editorial.imageHeight)&&editorial.imageWidth>0&&editorial.imageHeight>0?' width="'+editorial.imageWidth+'" height="'+editorial.imageHeight+'"':'';
-  const editorialHtml=editorial?'<figure style="margin:20px 0;max-width:760px"><img loading="lazy" decoding="async"'+editorialSize+' style="display:block;width:100%;height:auto;border-radius:12px" src="'+esc(editorial.imageUrl)+'" alt="'+esc(editorial.alt||pageName)+' — editorial destination photograph, not a live camera view"><figcaption style="font-size:12px;line-height:1.5;margin-top:8px">EDITORIAL PHOTO · NOT LIVE · '+esc(editorial.dateTaken||"historical photograph")+' · Photo: <a href="'+esc(editorial.filePage)+'" rel="noopener noreferrer">'+esc(editorial.creator)+'</a> / Wikimedia Commons · <a href="'+esc(editorial.licenseUrl)+'" rel="noopener noreferrer">CC BY-SA 4.0</a> · Unmodified photograph; scaled for display.</figcaption></figure>':'';
+  const editorialHtml=editorial?'<figure style="margin:20px 0;max-width:760px"><img loading="lazy" decoding="async"'+editorialSize+' style="display:block;width:100%;height:auto;border-radius:12px" src="'+esc(editorial.imageUrl)+'" alt="'+esc(editorial.alt||pageName)+' — editorial destination photograph, not a live camera view"><figcaption style="font-size:12px;line-height:1.5;margin-top:8px">EDITORIAL PHOTO · NOT LIVE · '+esc(editorial.dateTaken||"historical photograph")+' · Photo: <a href="'+esc(editorial.filePage)+'" rel="noopener noreferrer">'+esc(editorial.creator)+'</a> / Wikimedia Commons · <a href="'+esc(editorial.licenseUrl)+'" rel="noopener noreferrer">'+esc(editorial.license)+'</a> · Unmodified photograph; scaled for display.</figcaption></figure>':'';
 
 
   const offers=currentItems.length?offerForPlace(id):[];

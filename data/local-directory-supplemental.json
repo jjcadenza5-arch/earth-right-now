@@ -2833,5 +2833,300 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.ssl.fo/en/timetable/ferry/90-torshavn-nolsoy/"
+  },
+  {
+    "id": "local-takayama-hida-plaza",
+    "name": "Hida Hotel Plaza — Japanese and Western rooms",
+    "type": "hotel",
+    "place": "Takayama",
+    "country": "Japan",
+    "placeId": "takayama-miyagawa",
+    "url": "https://www.hida-hotelplaza.co.jp/lg_en/",
+    "summary": "The hotel’s English page describes Japanese- and Western-style room categories and in-house hot spring baths near Takayama Station. Confirm bedding, room accessibility, meal plan and total price for your dates; the Miyagawa photograph and river camera do not establish a room view or availability.",
+    "verifiedAt": "2026-10-11T03:25:25.883898+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "room categories",
+      "hot springs"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hida-hotelplaza.co.jp/lg_en/"
+  },
+  {
+    "id": "local-takayama-bonjour",
+    "name": "Restaurant Bonjour — Hida Hotel Plaza",
+    "type": "restaurant",
+    "place": "Takayama",
+    "country": "Japan",
+    "placeId": "takayama-miyagawa",
+    "url": "https://www.hida-hotelplaza.co.jp/meal/bonjour/",
+    "summary": "The hotel identifies Bonjour as its Western/French restaurant with seasonal local ingredients, lunch and other menu choices. Check your visit date, closures, current menus, dietary requirements and reservations directly; the monthly menu is not a year-round promise, and dining is not automatically included with a room.",
+    "verifiedAt": "2026-10-11T03:25:25.869547+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "local ingredients",
+      "reservations"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hida-hotelplaza.co.jp/meal/bonjour/"
+  },
+  {
+    "id": "local-takayama-hida-arrival",
+    "name": "Hida Hotel Plaza — station and arrival directions",
+    "type": "visitor information",
+    "place": "Takayama",
+    "country": "Japan",
+    "placeId": "takayama-miyagawa",
+    "url": "https://www.hida-hotelplaza.co.jp/access/",
+    "summary": "Official arrival guidance distinguishes regional rail, bus and driving routes and gives walking directions from Takayama Station’s east exit. Confirm current connections, winter road conditions and parking arrangements; published journey estimates do not guarantee your travel time. Hotel guest parking terms do not establish parking for all visitors.",
+    "verifiedAt": "2026-10-11T03:25:26.129182+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "station",
+      "arrival"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hida-hotelplaza.co.jp/access/"
+  },
+  {
+    "id": "local-takayama-hida-faq",
+    "name": "Hida Hotel Plaza — bathing and accessibility questions",
+    "type": "visitor information",
+    "place": "Takayama",
+    "country": "Japan",
+    "placeId": "takayama-miyagawa",
+    "url": "https://www.hida-hotelplaza.co.jp/faq/",
+    "summary": "The hotel FAQ says it does not offer day-use bathing and describes cleaning periods and bathing restrictions. Confirm current bath access, any specific room or mobility assistance and dietary needs before booking; available facilities and the winter river photograph do not guarantee present snow or unrestricted bathing.",
+    "verifiedAt": "2026-10-11T03:25:26.337571+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "hot springs",
+      "accessibility"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hida-hotelplaza.co.jp/faq/"
+  },
+  {
+    "id": "local-whistler-chateau-stay",
+    "name": "Fairmont Chateau Whistler — rooms and suites",
+    "type": "hotel",
+    "place": "Whistler",
+    "country": "Canada",
+    "placeId": "whistler-blackcomb",
+    "url": "https://www.chateau-whistler.com/stay/",
+    "summary": "Compare guest rooms, suites and the distinct Fairmont Gold offering at the base of Blackcomb Mountain. Confirm the actual view, bedding, accessibility, rate inclusions and dates directly; a Whistler Village cover or mountain camera is not evidence of your hotel room view, snow conditions or lift access.",
+    "verifiedAt": "2026-10-11T03:25:27.523172+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "hotel",
+      "room categories",
+      "Blackcomb"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.chateau-whistler.com/stay/"
+  },
+  {
+    "id": "local-whistler-wildflower",
+    "name": "The Wildflower — current dining location",
+    "type": "restaurant",
+    "place": "Whistler",
+    "country": "Canada",
+    "placeId": "whistler-blackcomb",
+    "url": "https://www.chateau-whistler.com/dine/the-wildflower/",
+    "summary": "The restaurant’s page currently says Wildflower breakfast and dinner are being served in a dedicated area within Mallard Lounge. Confirm the present venue, menu, dietary needs and table availability before visiting. Parking validation excludes breakfast, and family dining offers have eligibility conditions; do not assume either is included.",
+    "verifiedAt": "2026-10-11T03:25:27.040017+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "breakfast",
+      "dinner",
+      "current location"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.chateau-whistler.com/dine/the-wildflower/"
+  },
+  {
+    "id": "local-whistler-chateau-arrival",
+    "name": "Chateau Whistler — airport and driving arrival",
+    "type": "visitor information",
+    "place": "Whistler",
+    "country": "Canada",
+    "placeId": "whistler-blackcomb",
+    "url": "https://www.chateau-whistler.com/getting-here/",
+    "summary": "Official arrival guidance identifies the hotel at 4599 Chateau Boulevard and outlines travel from Vancouver International Airport. Check current transport reservations, road and weather conditions and parking charges before setting out; published drive-time estimates are not a guaranteed connection or transfer booking.",
+    "verifiedAt": "2026-10-11T03:25:27.701890+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "airport",
+      "arrival"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.chateau-whistler.com/getting-here/"
+  },
+  {
+    "id": "local-whistler-chateau-access",
+    "name": "Chateau Whistler — accessible rooms and equipment",
+    "type": "visitor information",
+    "place": "Whistler",
+    "country": "Canada",
+    "placeId": "whistler-blackcomb",
+    "url": "https://www.chateau-whistler.com/stay/accessibility/",
+    "summary": "The hotel describes accessible entrances and facilities plus equipment and adaptive arrangements available by request. Discuss your exact room, bathroom, transfer and assistance needs directly. Additional equipment can involve charges and requires confirmation of availability and delivery; an accessible category does not guarantee every activity suits your needs.",
+    "verifiedAt": "2026-10-11T03:25:26.988638+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "accessibility",
+      "equipment requests"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.chateau-whistler.com/stay/accessibility/"
+  },
+  {
+    "id": "local-addo-main-camp",
+    "name": "Addo Rest Camp — official accommodation",
+    "type": "rest camp",
+    "place": "Addo Elephant National Park",
+    "country": "South Africa",
+    "placeId": "addo-elephant-national-park",
+    "url": "https://www.sanparks.org/parks/addo-elephant/camps/addo",
+    "summary": "SANParks identifies Main Camp as a base for accommodation and visitor facilities. Check the actual unit, self-catering facilities, accessibility, conservation charges and dates with the park. Overnight-only pool access is distinct from day visits; the historical elephant cover and waterhole camera do not guarantee wildlife sightings.",
+    "verifiedAt": "2026-10-11T03:25:38.673532+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "accommodation",
+      "rest camp",
+      "wildlife"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.sanparks.org/parks/addo-elephant/camps/addo"
+  },
+  {
+    "id": "local-addo-mugg-bean",
+    "name": "Mugg ’n Bean — temporary Addo dining",
+    "type": "restaurant",
+    "place": "Addo Elephant National Park",
+    "country": "South Africa",
+    "placeId": "addo-elephant-national-park",
+    "url": "https://www.sanparks.org/parks/addo-elephant/what-to-do/facilities/restaurants",
+    "summary": "The dedicated SANParks dining page announces Mugg ’n Bean from 1 October 2026, serving a limited menu from the Lapa across from the shop/restaurant during construction. Confirm current location, menu, dietary needs and operating arrangements directly; older camp overview text still naming Cattle Baron should not determine your dining plan.",
+    "verifiedAt": "2026-10-11T03:26:10.651384+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "restaurant",
+      "temporary location",
+      "limited menu"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.sanparks.org/parks/addo-elephant/what-to-do/facilities/restaurants"
+  },
+  {
+    "id": "local-addo-visit-documents",
+    "name": "Addo — entry documents and day-visit rules",
+    "type": "visitor information",
+    "place": "Addo Elephant National Park",
+    "country": "South Africa",
+    "placeId": "addo-elephant-national-park",
+    "url": "https://www.sanparks.org/parks/addo-elephant/useful-information/vital-information",
+    "summary": "SANParks lists documentation requirements for entering and leaving, including identification and vehicle documents. Check the current rules, organised-activity arrangements and admission charges before travel. Day visits and overnight stays have different facility access; a camera view does not establish entry entitlement or a booked activity.",
+    "verifiedAt": "2026-10-11T03:25:39.338965+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "entry requirements",
+      "day visits"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.sanparks.org/parks/addo-elephant/useful-information/vital-information"
+  },
+  {
+    "id": "local-addo-gates",
+    "name": "Addo — entrance gates and game-area access",
+    "type": "visitor information",
+    "place": "Addo Elephant National Park",
+    "country": "South Africa",
+    "placeId": "addo-elephant-national-park",
+    "url": "https://www.sanparks.org/parks/addo-elephant/travel/entrance-gates",
+    "summary": "Choose the appropriate entrance gate and check its current entry and exit times with the park. SANParks distinguishes camp entrance gates from seasonal game-area gates and asks visitors to prepare registration documents. Arrange late arrival directly rather than assuming access; reaching a camp gate does not establish access to every game-viewing area.",
+    "verifiedAt": "2026-10-11T03:25:37.409728+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "entrance gates",
+      "arrival"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.sanparks.org/parks/addo-elephant/travel/entrance-gates"
+  },
+  {
+    "id": "local-jinzun-coast-guide",
+    "name": "Jinzun — viewpoint and beach restrictions",
+    "type": "visitor information",
+    "place": "Jinzun, Taitung",
+    "country": "Taiwan",
+    "placeId": "taitung-jinzun",
+    "url": "https://www.eastcoast-nsa.gov.tw/en/attractions/detail/76/",
+    "summary": "The official scenic-area guide describes the coastal viewpoint and steps to the beach, and explicitly prohibits swimming because of the steep beach slope. Check current access, local warnings and weather before visiting; a calm-looking camera or historical photograph does not establish safe swimming or an open path.",
+    "verifiedAt": "2026-10-11T03:25:39.372968+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "viewpoint",
+      "beach restrictions"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.eastcoast-nsa.gov.tw/en/attractions/detail/76/"
+  },
+  {
+    "id": "local-jinzun-transport",
+    "name": "Jinzun — rail, bus and accessible arrival",
+    "type": "visitor information",
+    "place": "Jinzun, Taitung",
+    "country": "Taiwan",
+    "placeId": "taitung-jinzun",
+    "url": "https://eng.taiwan.net.tw/m1.aspx?id=746&sNo=0000208&t=1",
+    "summary": "The tourism authority outlines connections from Taitung station or bus station, with different Jinzun and Jinzun Recreation Area stops. Check current routes, return departures, seat reservations and the actual vehicle’s accessibility; low-floor service information does not guarantee every departure or step-free access down to the beach.",
+    "verifiedAt": "2026-10-11T03:25:40.119644+00:00",
+    "status": "APPROVED",
+    "tags": [
+      "official visitor information",
+      "public transport",
+      "accessible arrival"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://eng.taiwan.net.tw/m1.aspx?id=746&sNo=0000208&t=1"
   }
 ]

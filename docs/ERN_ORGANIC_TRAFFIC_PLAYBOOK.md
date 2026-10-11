@@ -92,6 +92,17 @@ Optional owner-managed themes added 2026-10-11:
 
 Recheck each viewing source immediately before describing it as live. Share only independently permission-cleared visuals; these first-party planning links do not clear provider footage or hotel photography for reuse. These are optional owner-managed themes, not posts or scheduled campaigns.
 
+Optional owner-managed four-destination themes added 2026-10-11:
+
+| Curiosity | Destination entry | Useful next step |
+| --- | --- | --- |
+| A Takayama river view—what kind of stay would you choose? | https://earthrightnow.app/places/takayama-miyagawa/ | Compare room styles, Bonjour dining and station/bathing guidance. The snowy cover is dated 23 January 2015. |
+| A beautiful Jinzun coast—what should you check before going down? | https://earthrightnow.app/places/taitung-jinzun/ | Read the official swimming restriction, viewpoint access and return-bus guidance. The coast cover is dated 2 August 2015. |
+| Whistler beyond the mountain view—what would make your visit work? | https://earthrightnow.app/places/whistler-blackcomb/ | Compare stay categories, current Wildflower venue, airport arrival and requested accessibility equipment. Village cover dated 19 July 2012. |
+| An Addo elephant view—how would you plan the actual visit? | https://earthrightnow.app/places/addo-elephant-national-park/ | Check Main Camp, temporary dining, documents and the right gates; never promise wildlife sightings. Elephant cover dated 25 July 2018. |
+
+Recheck viewing sources and current practical notices immediately before promotion; retain each photograph’s creator, exact license and historical context when reusing a cleared image. Provider footage, hotel images and a wildlife sighting are not cleared or guaranteed by these directory links. These themes create no external post or scheduled campaign.
+
 On Facebook, put the relevant ERN destination or collection URL in the post. On Instagram, make that relevant URL the profile link for the current campaign, or use a Story link where your account offers it. A caption URL should not be treated as a guaranteed clickable link. Linking the accounts does not establish that posts are cross-published; check what actually appeared on each profile.
 
 Keep the canonical domain visible. Suggested cautious profile wording: “Earth Right Now — The Live Discovery Engine. Discover real places through live views and official sources. See before you go.” This describes the current bridge to sources without promising universal live weather, present playback at every destination, or gated features.

@@ -25,9 +25,9 @@ assert.doesNotMatch(readFileSync(new URL("../src/premium-cards.css",import.meta.
 assert.match(css,/right:auto;bottom:auto/,"badges must clear inherited opposite edges");
 assert.match(css,/\.wander-card>\.wander-visual\{position:absolute;inset:0\}/,"fallback layer must retain full-card positioning");
 assert.match(build,/editorial-card-photos\.js/,"lazy photo module must ship in release");
-const {approvedPhotos,eligibleVisual}=await import("../src/editorial-card-photos.js");
+const {approvedPhotos,eligibleVisual,approvedPhotoLicense}=await import("../src/editorial-card-photos.js");
 const register=JSON.parse(readFileSync(new URL("../data/destination-photo-rights-candidates.json",import.meta.url),"utf8"));
-assert.equal(approvedPhotos(register).size,16);
+assert.equal(approvedPhotos(register).size,20);
 assert.ok(approvedPhotos(register).has("oeschinensee")&&approvedPhotos(register).has("flam-aurlandsfjord"));
 assert.ok(approvedPhotos(register).has("slovenia-bohinj-lake-colnarna")&&approvedPhotos(register).has("austria-zell-am-see-kaprun"));
 assert.ok(approvedPhotos(register).has("south-africa-camps-bay")&&approvedPhotos(register).has("san-marino-piazza-liberta"));
@@ -47,3 +47,11 @@ assert.match(app,/data\.scene="snow"|dataset\.scene="snow"/,
   "fallback system should retain the snow family");
 
 console.log("ERN premium image-led cards, safe posters and scenic fallbacks passed");
+
+for(const license of ["CC BY-SA 4.0","CC BY-SA 2.0","CC BY 2.0"]){
+ const photo=register.candidates.find(p=>p.license===license);assert.ok(photo&&approvedPhotoLicense(photo));
+ assert.equal(approvedPhotoLicense({...photo,licenseUrl:"https://creativecommons.org/licenses/by-nc/4.0/"}),false);
+ assert.equal(approvedPhotos({...register,candidates:[{...photo,status:"PENDING"}]}).size,0);
+}
+assert.equal(approvedPhotoLicense({license:"CC BY-NC 4.0",licenseUrl:"https://creativecommons.org/licenses/by-nc/4.0/"}),false);
+assert.equal(approvedPhotoLicense({license:"toString",licenseUrl:"anything"}),false);

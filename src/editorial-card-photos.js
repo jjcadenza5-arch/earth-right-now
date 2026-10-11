@@ -1,7 +1,11 @@
 // Approved exact-place photographs cover discovery cards; viewers keep their source media.
+export function approvedPhotoLicense(photo){
+  const licenses={"CC BY-SA 4.0":"https://creativecommons.org/licenses/by-sa/4.0/","CC BY-SA 2.0":"https://creativecommons.org/licenses/by-sa/2.0/","CC BY 2.0":"https://creativecommons.org/licenses/by/2.0/"};
+  return Object.hasOwn(licenses,photo?.license)&&licenses[photo.license]===photo.licenseUrl;
+}
 export function approvedPhotos(register){
   if(register?.publicActivationAllowed!==true||register.homepageActivationAllowed!==true)return new Map();
-  return new Map((register.candidates||[]).filter(p=>p.publicActivationAllowed===true&&p.homepageActivationAllowed===true&&p.status==="APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY"&&p.placeId&&p.creator&&p.license==="CC BY-SA 4.0"&&p.licenseUrl==="https://creativecommons.org/licenses/by-sa/4.0/"&&/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(p.filePage)&&/^https:\/\/(upload|thumb)\.wikimedia\.org\//.test(p.imageUrl)).map(p=>[p.placeId,p]));
+  return new Map((register.candidates||[]).filter(p=>p.publicActivationAllowed===true&&p.homepageActivationAllowed===true&&p.status==="APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY"&&p.placeId&&p.creator&&approvedPhotoLicense(p)&&/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(p.filePage)&&/^https:\/\/(upload|thumb)\.wikimedia\.org\//.test(p.imageUrl)).map(p=>[p.placeId,p]));
 }
 export function eligibleVisual(card){
   return card.querySelector('.result-visual[data-visual-kind]:not([data-visual-kind="editorial"]),.wander-visual[data-visual-kind]:not([data-visual-kind="editorial"]),.card-visual[data-visual-kind]:not([data-visual-kind="editorial"])');
