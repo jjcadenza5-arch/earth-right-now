@@ -4116,5 +4116,155 @@
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.dusit.com/dusitthani-pattaya/accommodation/",
     "verifiedAt": "2026-10-11T09:08:38.791299+00:00"
+  },
+  {
+    "id": "local-oeschinensee-station-arrival",
+    "placeId": "oeschinensee",
+    "place": "Oeschinensee / Kandersteg",
+    "country": "Switzerland",
+    "name": "Oeschinensee — train, parking and boarding planning",
+    "type": "visitor information",
+    "url": "https://www.oeschinensee.ch/en/anreise/",
+    "summary": "Allow for the walk from Kandersteg station to the gondola and check seasonal connecting buses. Confirm the time-slot rules for your specific ticket: a transport ticket, boarding reservation and parking space are separate arrangements. Published reservation periods differ between operator pages, so confirm your travel date directly. Larger vehicles need suitable village parking; direct lake access by car is not available.",
+    "tags": [
+      "arrival",
+      "Kandersteg",
+      "parking",
+      "time slots"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.oeschinensee.ch/en/anreise/",
+    "verifiedAt": "2026-10-11T09:22:34.615393+00:00"
+  },
+  {
+    "id": "local-oeschinensee-bergstuebli",
+    "placeId": "oeschinensee",
+    "place": "Oeschinensee / mountain station",
+    "country": "Switzerland",
+    "name": "Bergstübli — Oeschinensee mountain-station restaurant",
+    "type": "restaurant",
+    "url": "https://restaurant-oeschinensee.ch/en/",
+    "summary": "A self-service restaurant at the gondola mountain station, distinct from the Oeschinensee Mountain Restaurant at the lakeshore. Choose this stop around the lift journey rather than assuming it is beside the lake. Check seasonal service, menu, dietary needs and the last descent directly; an operator status listing does not guarantee a table or current opening.",
+    "tags": [
+      "Bergstübli",
+      "Bergstuebli",
+      "mountain dining"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://restaurant-oeschinensee.ch/en/",
+    "verifiedAt": "2026-10-11T09:22:34.615406+00:00"
+  },
+  {
+    "id": "local-yehliu-access-map",
+    "placeId": "taiwan-yehliu",
+    "place": "Yehliu Geopark / Wanli",
+    "country": "Taiwan",
+    "name": "Yehliu — accessible routes and equipment",
+    "type": "visitor information",
+    "url": "https://ylgeopark.org.tw/ServeAndShopView/Accessibility",
+    "summary": "Use the park’s accessibility map to plan ramped routes from the entrance through the first and second areas, including the Queen’s Head vicinity. The operator lists accessible toilets, wheelchair borrowing and family facilities. Confirm equipment availability, identification requirements and the route suited to your needs; these facilities do not make every coastal trail step-free.",
+    "tags": [
+      "accessibility",
+      "wheelchair",
+      "Queen’s Head"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://ylgeopark.org.tw/ServeAndShopView/Accessibility",
+    "verifiedAt": "2026-10-11T09:22:34.615409+00:00"
+  },
+  {
+    "id": "local-yehliu-visit-rules",
+    "placeId": "taiwan-yehliu",
+    "place": "Yehliu Geopark / Wanli",
+    "country": "Taiwan",
+    "name": "Yehliu — coastal visit rules and luggage planning",
+    "type": "visitor information",
+    "url": "https://www.ylgeopark.org.tw/VisitInformationView/CommonProblem?language=TW",
+    "summary": "Plan the first two geological areas separately from the longer third-area trail. Check current announcements and allow time to collect stored luggage before the visitor-centre service closes. The operator prohibits water play, bicycles and scooters, and requires authorization for drone filming. Keep pets leashed and confirm equipment loans directly; a coastal camera view does not establish safe access.",
+    "tags": [
+      "luggage",
+      "pets",
+      "coastal paths",
+      "visit rules"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ylgeopark.org.tw/VisitInformationView/CommonProblem?language=TW",
+    "verifiedAt": "2026-10-11T09:22:34.615412+00:00"
+  },
+  {
+    "id": "local-yehliu-visitor-centre",
+    "placeId": "taiwan-yehliu",
+    "place": "Yehliu Geopark / Wanli",
+    "country": "Taiwan",
+    "name": "Yehliu — visitor centre and practical services",
+    "type": "visitor information",
+    "url": "https://ylgeopark.org.tw/ServeAndShopView/VisitorCenter",
+    "summary": "Start at the visitor centre for geological information, multilingual resources, travel advice, Wi-Fi, luggage storage and wheelchair assistance. Check service arrangements with staff, including retrieval times and availability. Outside food is prohibited inside the centre; educational activities can take priority in the upstairs space. These services do not guarantee a guide or borrowed equipment on arrival.",
+    "tags": [
+      "visitor centre",
+      "Wi-Fi",
+      "travel advice"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://ylgeopark.org.tw/ServeAndShopView/VisitorCenter",
+    "verifiedAt": "2026-10-11T09:22:34.615413+00:00"
+  },
+  {
+    "id": "local-yehliu-visitor-centre-coffee",
+    "placeId": "taiwan-yehliu",
+    "place": "Yehliu Geopark / visitor centre",
+    "country": "Taiwan",
+    "name": "Yezhan Coffee — Yehliu visitor-centre stop",
+    "type": "café",
+    "url": "https://www.ylgeopark.org.tw/ServeAndShopView/ShopsAndShops",
+    "summary": "The park’s official shop directory locates 野站咖啡 (Yezhan Coffee) at the visitor centre, alongside the Yehliu gift shop. The Queen’s Bookstore is in the second area, so these are different stops. Confirm today’s menu, dietary needs, service and any entry requirements on site; the directory does not promise a meal, available seat or specific stock.",
+    "tags": [
+      "Yezhan",
+      "野站咖啡",
+      "coffee",
+      "visitor centre"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ylgeopark.org.tw/ServeAndShopView/ShopsAndShops",
+    "verifiedAt": "2026-10-11T09:22:34.615415+00:00"
+  },
+  {
+    "id": "local-oeschinensee-outdoor-care",
+    "placeId": "oeschinensee",
+    "place": "Oeschinensee / Kandersteg",
+    "country": "Switzerland",
+    "name": "Oeschinensee — trail etiquette and protected areas",
+    "type": "visitor information",
+    "url": "https://www.oeschinensee.ch/en/outdoor-guidelines/",
+    "summary": "Stay on marked trails, check difficulty and current hazards, and respect protected areas. Keep dogs leashed, leave wildlife undisturbed and use designated waste stations. The operator prohibits wild camping and drone flights; a device’s geofencing map is not permission to fly. Check posted guidance and current restrictions before setting out.",
+    "tags": [
+      "trail etiquette",
+      "dogs",
+      "protected areas"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.oeschinensee.ch/en/outdoor-guidelines/",
+    "verifiedAt": "2026-10-11T09:22:34.615417+00:00"
   }
 ]

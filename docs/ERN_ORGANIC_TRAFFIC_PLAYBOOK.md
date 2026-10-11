@@ -1,3 +1,8 @@
+## 2026-10-11 — Lake and coast planning themes (owner-managed)
+- Oeschinensee: “The station and the lake are different stops.” Pair an actual checked view with train-to-gondola planning, boarding/parking distinctions and Bergstübli versus lakeshore dining. Confirm date-specific reservations directly because operator pages disagree. Search Bergstuebli to discover the new mountain-station listing.
+- Yehliu: “What would make a coastal day easier?” Link discovery with ramped-route planning, luggage retrieval, visitor-centre advice and 野站咖啡 / Yezhan Coffee. Confirm actual services; equipment and trail access are not guaranteed.
+- Oeschinensee remains STALE_CHECK; Yehliu remains CURRENT_CHECK under source policy. Neither generated page exposes the new planning section. Do not describe either view as newly verified by this batch. Use independent directory search until source eligibility permits destination planning. These are optional owner post ideas, not posts made or traffic earned. Compare dated external visits, searches and meaningful onward clicks before claiming growth; paid promotion remains deferred.
+
 # ERN organic traffic playbook
 
 Prepared 10 October 2026 for owner-managed promotion. This is a proposed experiment, not a posting schedule or evidence of growth.
