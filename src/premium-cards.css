@@ -106,3 +106,5 @@ linear-gradient(180deg,#728ca3 0%,#4a687d 50%,#233c4c 100%)}
 .editorial-card>.photo-credit{margin:5px 3px 8px;font:10px/1.4 system-ui;color:inherit}
 .photo-credit a{color:inherit;text-decoration:underline}
 [data-visual-kind="editorial"]>.scenic-poster{visibility:hidden}
+
+.window-grid>.editorial-card{min-width:0}.editorial-card>.window-card{width:100%;min-height:230px}@media(max-width:700px){.window-grid>.editorial-card{flex:0 0 80vw}.editorial-card>.window-card{min-height:245px}}

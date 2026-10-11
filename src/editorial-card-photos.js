@@ -4,7 +4,7 @@ export function approvedPhotos(register){
   return new Map((register.candidates||[]).filter(p=>p.publicActivationAllowed===true&&p.homepageActivationAllowed===true&&p.status==="APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY"&&p.placeId&&p.creator&&p.license==="CC BY-SA 4.0"&&p.licenseUrl==="https://creativecommons.org/licenses/by-sa/4.0/"&&/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(p.filePage)&&/^https:\/\/(upload|thumb)\.wikimedia\.org\//.test(p.imageUrl)).map(p=>[p.placeId,p]));
 }
 export function eligibleVisual(card){
-  return card.querySelector('.result-visual[data-visual-kind]:not([data-visual-kind="editorial"]),.wander-visual[data-visual-kind]:not([data-visual-kind="editorial"])');
+  return card.querySelector('.result-visual[data-visual-kind]:not([data-visual-kind="editorial"]),.wander-visual[data-visual-kind]:not([data-visual-kind="editorial"]),.card-visual[data-visual-kind]:not([data-visual-kind="editorial"])');
 }
 function credit(photo){
   const p=document.createElement("p");p.className="photo-credit";p.append(photo.dateTaken?`Photo dated ${photo.dateTaken} · `:"Archival photo · ","Photo: ");
@@ -19,7 +19,7 @@ async function start(){
   const photos=approvedPhotos(await response.json()),attempted=new WeakSet();let queued=false;
   const scan=()=>{
     queued=false;
-    document.querySelectorAll(".result-card[data-place],.wander-card[data-place]").forEach(card=>{
+    document.querySelectorAll(".result-card[data-place],.wander-card[data-place],.window-card[data-place]").forEach(card=>{
       const photo=photos.get(card.dataset.place),visual=eligibleVisual(card);
       if(!photo||!visual||attempted.has(visual))return;
       attempted.add(visual);
