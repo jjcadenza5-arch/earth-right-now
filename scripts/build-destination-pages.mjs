@@ -94,7 +94,7 @@ for(const [id,items] of map){
     ?("See "+destinationName+" now with Earth Right Now. "+story).slice(0,220)
     :scheduledClosedItems.length
       ?("ERN has a recently verified source for "+title+", but it is outside the provider's published live hours right now. Check the published schedule or return when the source is open.").slice(0,220)
-      :("ERN currently has provider source information for "+title+", but no active current-source verification is available right now. Explore reviewed visitor information below or check back after ERN revalidates a current view.").slice(0,220);
+      :("Explore "+destinationName+" with reviewed place information. ERN has no verified current view right now; check back after source review.").slice(0,220);
   const url=base+"places/"+encodeURIComponent(id)+"/";
   const lat=Number(preferred.lat),lon=Number(preferred.lon);
   const lastChecked=latestTimestamp(items);
