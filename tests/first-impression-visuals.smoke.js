@@ -28,7 +28,7 @@ assert.match(css,/\.wander-card>\.wander-visual\{position:absolute;inset:0\}/,"f
 assert.match(build,/editorial-card-photos\.js/,"lazy photo module must ship in release");
 const {approvedPhotos,eligibleVisual,approvedPhotoLicense}=await import("../src/editorial-card-photos.js");
 const register=JSON.parse(readFileSync(new URL("../data/destination-photo-rights-candidates.json",import.meta.url),"utf8"));
-assert.equal(approvedPhotos(register).size,37);
+assert.equal(approvedPhotos(register).size,40);
 assert.ok(approvedPhotos(register).has("wengen-bellevue"));
 for(const id of ["levi-ski-resort","plitvice-lakes","brussels-grand-place"])assert.ok(approvedPhotos(register).has(id));
 assert.ok(approvedPhotos(register).has("oeschinensee")&&approvedPhotos(register).has("flam-aurlandsfjord"));

@@ -35,7 +35,9 @@
       "truth": "EXTERNAL_LIVE",
       "failureReason": "OFFICIAL_COLLECTION_WEBCAMS_OFFLINE_2026-09-28",
       "action": "DO_NOT_RUSH_REPAIR_NEARBY_STRONG_SWISS_PLACES_NOW_COVER_REGION",
-      "blocks250Milestone": false
+      "blocks250Milestone": false,
+      "lastReviewAt": "2026-10-12T05:43:26.625550+00:00",
+      "reviewOutcome": "All ten official collection cameras explicitly Offline; wait for recovery evidence, no healthy/current promotion."
     },
     {
       "id": "chidori-sakura",

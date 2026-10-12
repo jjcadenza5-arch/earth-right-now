@@ -7020,5 +7020,383 @@
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://yllas.fi/en/activity/hiking-and-trekking/",
     "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
+  },
+  {
+    "id": "local-lucerne-central-stay",
+    "placeId": "lake-lucerne",
+    "place": "Lake Lucerne / Weggis",
+    "country": "Switzerland",
+    "name": "Hotel Central am See — lakeside stay",
+    "type": "hotel",
+    "url": "https://central-am-see.ch/",
+    "summary": "Hotel at Seestrasse 25 in Weggis, directly beside Lake Lucerne, with several room categories and an on-site restaurant. Confirm the chosen room, arrival arrangements and any step-free requirements directly. A lakeside location or promotional photo does not establish current weather, swimming access or a camera view.",
+    "tags": [
+      "Lake Lucerne",
+      "Switzerland",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://central-am-see.ch/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-lucerne-central-dining",
+    "placeId": "lake-lucerne",
+    "place": "Lake Lucerne / Weggis",
+    "country": "Switzerland",
+    "name": "Restaurant Central — Weggis lakefront dining",
+    "type": "restaurant",
+    "url": "https://central-am-see.ch/unsere-raeume/",
+    "summary": "Restaurant at Hotel Central am See with a winter garden, lakeside terrace and regional seasonal menus. Reserve a table directly and confirm current service times, dietary needs and terrace availability. Outdoor dining depends on weather and operation; the hotel room booking is a separate service.",
+    "tags": [
+      "Lake Lucerne",
+      "Switzerland",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://central-am-see.ch/unsere-raeume/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-lucerne-sgv-dining",
+    "placeId": "lake-lucerne",
+    "place": "Lake Lucerne",
+    "country": "Switzerland",
+    "name": "SGV — on-board restaurants and bistro service",
+    "type": "restaurant",
+    "url": "https://www.lakelucerne.ch/en/culinary/gastronomy-lake-lucerne/",
+    "summary": "Match the exact sailing to its catering symbol before planning a meal: some services have a restaurant, while others offer only bistro snacks or drinks. The operator lists separate autumn menus through 18 October 2026 and winter menus from 19 October. Table reservations and the boat ticket are distinct arrangements.",
+    "tags": [
+      "Lake Lucerne",
+      "Switzerland",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lakelucerne.ch/en/culinary/gastronomy-lake-lucerne/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-lucerne-timetable-guide",
+    "placeId": "lake-lucerne",
+    "place": "Lake Lucerne",
+    "country": "Switzerland",
+    "name": "Lake Lucerne — seasonal timetable and departure piers",
+    "type": "visitor information",
+    "url": "https://www.lakelucerne.ch/en/information/timetable/",
+    "summary": "Use the sailing timetable for your actual travel date: the autumn schedule ends on 18 October 2026 and winter service begins on 19 October. Departures use different Lucerne piers for Weggis/Vitznau, Alpnachstad, Küssnacht and Bürgenstock. Check the exact course, pier and ticket validity; future draft timetables are not confirmed service.",
+    "tags": [
+      "Lake Lucerne",
+      "Switzerland",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lakelucerne.ch/en/information/timetable/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-lucerne-disruption-guide",
+    "placeId": "lake-lucerne",
+    "place": "Lake Lucerne",
+    "country": "Switzerland",
+    "name": "Lake Lucerne — service notices and October disruptions",
+    "type": "visitor information",
+    "url": "https://www.lakelucerne.ch/en/information/operating-information/",
+    "summary": "Check SGV operating notices before departure. Lucerne Bahnhofplatz works change bus stops through 12 December 2026 while access from the railway station to boat piers remains available. On 25 October, scheduled boats do not serve Verkehrshaus-Lido from 07:00 to 16:30 during the marathon; special shuttle, pier and brunch arrangements apply.",
+    "tags": [
+      "Lake Lucerne",
+      "Switzerland",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lakelucerne.ch/en/information/operating-information/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-lucerne-access-guide",
+    "placeId": "lake-lucerne",
+    "place": "Lake Lucerne",
+    "country": "Switzerland",
+    "name": "Lake Lucerne — boat-specific accessibility",
+    "type": "visitor information",
+    "url": "https://www.lakelucerne.ch/en/information/accessibility/",
+    "summary": "SGV reports wheelchair access and accessible toilets on its vessels except the small electric Rütli. Deck and first-class access differ by vessel; Diamant has an upper-deck lift, while other boats have different arrangements. Check the assigned boat’s detailed accessibility record and boarding needs directly rather than assuming every deck is accessible.",
+    "tags": [
+      "Lake Lucerne",
+      "Switzerland",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lakelucerne.ch/en/information/accessibility/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-jungfrau-belvedere-stay",
+    "placeId": "jungfrau-region",
+    "place": "Jungfrau Region / Grindelwald",
+    "country": "Switzerland",
+    "name": "Hotel Belvedere Grindelwald — valley accommodation",
+    "type": "hotel",
+    "url": "https://www.belvedere-grindelwald.ch/en/",
+    "summary": "Grindelwald hotel with double, family and suite room options, restaurants and a spa. The operator describes railway-station pickup on arrival and departure and a private morning ski bus during winter. Confirm these arrangements for your stay; a valley hotel booking does not include or guarantee mountain-railway access.",
+    "tags": [
+      "Jungfrau Region",
+      "Switzerland",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.belvedere-grindelwald.ch/en/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-jungfrau-belvedere-dining",
+    "placeId": "jungfrau-region",
+    "place": "Jungfrau Region / Grindelwald",
+    "country": "Switzerland",
+    "name": "Restaurant Belvedere — Grindelwald dining",
+    "type": "restaurant",
+    "url": "https://www.belvedere-grindelwald.ch/en/restaurant/restaurant-belvedere/",
+    "summary": "Hotel restaurant welcoming external breakfast and dinner guests, with a required table reservation. The operator reports all Belvedere restaurants closed on the evening of 31 October 2026 for a private event. Confirm current service, dietary needs and the selected restaurant; terrace dining depends on weather.",
+    "tags": [
+      "Jungfrau Region",
+      "Switzerland",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.belvedere-grindelwald.ch/en/restaurant/restaurant-belvedere/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-jungfrau-buri-rental",
+    "placeId": "jungfrau-region",
+    "place": "Jungfrau Region / Grindelwald",
+    "country": "Switzerland",
+    "name": "Buri Sport — Grindelwald equipment rental",
+    "type": "equipment rental",
+    "url": "https://burisport.ch/en/",
+    "summary": "Sports rental and service operator with separate village, railway/Terminal-area and First cable-car locations. The main shop is at Dorfstrasse 160. Confirm the pickup branch, opening hours and equipment needed for your activity; equipment hire does not confirm that a ski area, lift or trail is operating.",
+    "tags": [
+      "Jungfrau Region",
+      "Switzerland",
+      "equipment rental"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://burisport.ch/en/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-jungfrau-arrival-guide",
+    "placeId": "jungfrau-region",
+    "place": "Jungfrau Region",
+    "country": "Switzerland",
+    "name": "Jungfraujoch — routes, reservations and boarding",
+    "type": "visitor information",
+    "url": "https://www.jungfrau.ch/en-gb/arriving/",
+    "summary": "Compare the Eiger Express route via Grindelwald Terminal with the railway route via Kleine Scheidegg. The operator requires a timed seat reservation from 1 May through 31 October 2026, in addition to the travel ticket. Follow the boarding colour and reach the Jungfrau Railway turnstiles at least ten minutes before departure; check the return connection too.",
+    "tags": [
+      "Jungfrau Region",
+      "Switzerland",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.jungfrau.ch/en-gb/arriving/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-jungfrau-access-guide",
+    "placeId": "jungfrau-region",
+    "place": "Jungfrau Region",
+    "country": "Switzerland",
+    "name": "Jungfrau Region — destination-specific accessibility",
+    "type": "visitor information",
+    "url": "https://www.jungfrau.ch/en-gb/accessibility/",
+    "summary": "Use the operator’s separate accessibility information for Jungfraujoch, First, Schynige Platte, Harder Kulm and other destinations. Some journeys require advance telephone arrangements. Confirm your route, boarding assistance and on-site access directly; accessible transport does not establish that every mountain activity or outdoor path is accessible.",
+    "tags": [
+      "Jungfrau Region",
+      "Switzerland",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.jungfrau.ch/en-gb/accessibility/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-jungfrau-schynige-guide",
+    "placeId": "jungfrau-region",
+    "place": "Jungfrau Region / Wilderswil",
+    "country": "Switzerland",
+    "name": "Schynige Platte — railway access and hiking choices",
+    "type": "visitor information",
+    "url": "https://www.jungfrau.ch/en-gb/schynige-platte/",
+    "summary": "The historic railway starts at Wilderswil, with an approximately one-hour journey to Schynige Platte. The operator distinguishes short station-area walks from the roughly six-hour high-altitude route towards First. Check the current seasonal train timetable, return departure and trail conditions; a summer-pass validity date does not guarantee that each mountain railway is running.",
+    "tags": [
+      "Jungfrau Region",
+      "Switzerland",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.jungfrau.ch/en-gb/schynige-platte/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-zermatt-schweizerhof-stay",
+    "placeId": "zermatt-matterhorn",
+    "place": "Zermatt",
+    "country": "Switzerland",
+    "name": "Schweizerhof Zermatt — village accommodation",
+    "type": "hotel",
+    "url": "https://www.schweizerhofzermatt.ch/en/the-hotel/",
+    "summary": "Hotel at Bahnhofstrasse 5 in central Zermatt, offering room and suite categories, restaurants and spa facilities. Confirm the booked room, seasonal services and the final transfer from the station. Matterhorn-view rooms are a specific category; not every room or booking includes that view or mountain transport.",
+    "tags": [
+      "Zermatt",
+      "Switzerland",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.schweizerhofzermatt.ch/en/the-hotel/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-zermatt-schweizerhof-dining",
+    "placeId": "zermatt-matterhorn",
+    "place": "Zermatt",
+    "country": "Switzerland",
+    "name": "Schweizerhof Kitchen — village dining",
+    "type": "restaurant",
+    "url": "https://www.schweizerhofzermatt.ch/en/restaurants-bars/the-schweizerhof-kitchen/",
+    "summary": "Main restaurant at Schweizerhof Zermatt, with an open show kitchen, grilled dishes and pizzas. The first-party page currently lists daily service from noon to 22:00 and direct table booking. Confirm the latest menu, opening times and dietary requirements; other restaurants at the hotel follow their own schedules.",
+    "tags": [
+      "Zermatt",
+      "Switzerland",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.schweizerhofzermatt.ch/en/restaurants-bars/the-schweizerhof-kitchen/",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-zermatt-julen-rental",
+    "placeId": "zermatt-matterhorn",
+    "place": "Zermatt",
+    "country": "Switzerland",
+    "name": "Julen Sport — ski and snowboard equipment",
+    "type": "equipment rental",
+    "url": "https://www.julensport.ch/bookings-new",
+    "summary": "Zermatt ski and snowboard rental with advance online equipment selection followed by fitting and payment in the shop. Delivery is described for partner hotels after fitting and payment, rather than every accommodation. Confirm pickup, sizing and return arrangements; rental availability is separate from open pistes and lift operation.",
+    "tags": [
+      "Zermatt",
+      "Switzerland",
+      "equipment rental"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.julensport.ch/bookings-new",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-zermatt-arrival-guide",
+    "placeId": "zermatt-matterhorn",
+    "place": "Zermatt",
+    "country": "Switzerland",
+    "name": "Zermatt — car-free arrival via Täsch",
+    "type": "visitor information",
+    "url": "https://zermatt.swiss/en/plan-book/arrival",
+    "summary": "Private cars stop at Täsch rather than entering Zermatt. Park there and continue by shuttle train or an authorised transfer; the tourism authority describes a twelve-minute train journey. Check the current train and local e-bus timetable, luggage arrangements and accommodation transfer before arriving.",
+    "tags": [
+      "Zermatt",
+      "Switzerland",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://zermatt.swiss/en/plan-book/arrival",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-zermatt-lift-guide",
+    "placeId": "zermatt-matterhorn",
+    "place": "Zermatt",
+    "country": "Switzerland",
+    "name": "Zermatt — daily lifts, pistes and separate railway times",
+    "type": "visitor information",
+    "url": "https://zermatt.swiss/en/info/lifts-pistes",
+    "summary": "Consult current lift and piste information and the dated summer or winter timetable for the route you intend to take. Gornergrat Railway times are published separately by its operator. Check the panorama map for open paths and runs; a mountain webcam or a resort package does not establish that every lift, crossing or trail is open.",
+    "tags": [
+      "Zermatt",
+      "Switzerland",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://zermatt.swiss/en/info/lifts-pistes",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-zermatt-access-guide",
+    "placeId": "zermatt-matterhorn",
+    "place": "Zermatt",
+    "country": "Switzerland",
+    "name": "Zermatt — mobility access and station-area limits",
+    "type": "visitor information",
+    "url": "https://zermatt.swiss/en/info/accessible-travel",
+    "summary": "The tourism authority describes accessible access to Gornergrat and Matterhorn Glacier Paradise viewing platforms and gondola access to Rothorn, but warns that only limited barrier-free paths exist around the stations. Check the specific venue’s Ginto record and transport assistance; mountain-station access does not mean unrestricted access to surrounding trails.",
+    "tags": [
+      "Zermatt",
+      "Switzerland",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://zermatt.swiss/en/info/accessible-travel",
+    "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
   }
 ]

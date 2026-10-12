@@ -298,7 +298,12 @@
       "id": "zermatt-matterhorn",
       "checkedAt": "2026-09-28T17:02:00Z",
       "sourceUrl": "https://zermatt.swiss/en/info/webcams",
-      "storyDetail": "See the Matterhorn and surrounding mountains live before heading up; village cameras operate during daytime."
+      "storyDetail": "See the Matterhorn and surrounding mountains live before heading up; village cameras operate during daytime.",
+      "boundedBrowserReview": {
+        "reviewedAt": "2026-10-12T05:43:26.625550+00:00",
+        "evidence": "Official Zermatt page links Zermatterhof and Schönegg panoramas and states village cameras operate in daytime. Exact Zermatterhof viewer displayed 12.10.2026 07:20 but remained on loading screen without a decoded panorama. Timestamp alone insufficient; no successful-check renewal.",
+        "next": "Hold unresolved currentness; revisit after material provider evidence or fresh decoded, dated frames. No retry loop, embedding permission or copied imagery inferred."
+      }
     },
     {
       "id": "chamonix-mont-blanc",
@@ -364,7 +369,12 @@
       "id": "lake-lucerne-official",
       "checkedAt": "2026-10-03T09:50:00Z",
       "sourceUrl": "https://webshop.lakelucerne.ch/en/pages/webcams",
-      "storyDetail": "Current view from Lake Lucerne — Lake & Mountain Views, published by Lake Lucerne Navigation Company."
+      "storyDetail": "Current view from Lake Lucerne — Lake & Mountain Views, published by Lake Lucerne Navigation Company.",
+      "boundedBrowserReview": {
+        "reviewedAt": "2026-10-12T05:43:26.625550+00:00",
+        "evidence": "Official SGV page exposes Pier 3, Stadt Luzern, Weggis and Flüelen images. Pier 3 decoded 2232×450 night panorama, but no capture timestamp was visible, so no source successful-check renewal.",
+        "next": "Hold unresolved currentness; revisit after material provider evidence or fresh decoded, dated frames. No retry loop, embedding permission or copied imagery inferred."
+      }
     },
     {
       "id": "perdido-key-beach",
@@ -829,6 +839,14 @@
       "checkedAt": "2026-10-06T13:10:00Z",
       "sourceUrl": "https://visitpetra.jo/en",
       "rightsBasisDetail": "Official Visit Petra Live Cam surface; link-only."
+    },
+    {
+      "id": "jungfrau-region",
+      "boundedBrowserReview": {
+        "reviewedAt": "2026-10-12T05:43:26.625550+00:00",
+        "evidence": "Official collection shows all ten cameras Offline / No connection. DEGRADED and null successful check retained; checkedAt and failed-check date record this actual negative review.",
+        "next": "Hold unresolved currentness; revisit after material provider evidence or fresh decoded, dated frames. No retry loop, embedding permission or copied imagery inferred."
+      }
     }
   ]
 }

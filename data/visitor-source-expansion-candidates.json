@@ -991,6 +991,25 @@
       ],
       "permission": "LINK_ONLY; no camera imagery copied or embedding permission inferred",
       "selectionBasis": "Editorial coverage with credible first-party leads; no measured visitor demand asserted"
+    },
+    {
+      "id": "weggis-central-lake-live-camera",
+      "priority": "P2",
+      "placeGroup": "Weggis / Lake Lucerne",
+      "country": "Switzerland",
+      "provider": "Hotel Central am See",
+      "candidateType": "FIRST_PARTY_HOTEL_LAKE_CAMERA",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "state": "HOLD_NO_DECODED_VIDEO_IN_REVIEW_BROWSER",
+      "evidenceUrls": [
+        "https://central-am-see.ch/impressum/webcam-hotel-central-am-see/"
+      ],
+      "why": "Hotel directly publishes an exact lake-facing CamStreamer player relevant to Weggis visits; location and first-party linking are credible but current playback remains unverified.",
+      "reviewedAt": "2026-10-12T05:43:26.625550+00:00",
+      "browserEvidence": "Exact operator iframe https://camstreamer.com/embed/E8mWnRnim4dSXZXctteSENxTssKBK89o0kTwQteV; video currentTime 0, readyState 0, width/height 0 and black player after closing promotional modal. No bot-block diagnosis, successful playback or new source inferred.",
+      "next": "Keep research-only. Revisit after new provider evidence or decoded current frames; independently verify reliability, attribution and link/embed rights before catalog addition.",
+      "selectionBasis": "Editorial credible first-party lead; no private aggregate demand export or repeated visitor-interest claim."
     }
   ],
   "guardrails": {
