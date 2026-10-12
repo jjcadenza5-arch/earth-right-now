@@ -6642,5 +6642,131 @@
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://visitlappeenranta.fi/fi/Nae-ja-koe/Rantaraitti-%E2%80%93-kaikkien-raitti",
     "verifiedAt": "2026-10-11T17:11:41.867651+00:00"
+  },
+  {
+    "id": "local-ounasvaara-sky-stay",
+    "placeId": "finland-ounasvaara",
+    "place": "Ounasvaara / Rovaniemi",
+    "country": "Finland",
+    "name": "Lapland Hotels Sky Ounasvaara — summit stay",
+    "type": "hotel",
+    "url": "https://www.laplandhotels.com/en/hotels-and-destinations/rovaniemi/lapland-hotels-sky-ounasvaara",
+    "summary": "Summit accommodation with different room types near Ounasvaara trails. The operator currently reports entrance renovation through October, with occasional closure of the main entrance and a signed alternative on the left. Confirm the arrival route and room accessibility directly; proximity to slopes does not establish that skiing is operating.",
+    "tags": [
+      "Ounasvaara",
+      "Rovaniemi",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.laplandhotels.com/en/hotels-and-destinations/rovaniemi/lapland-hotels-sky-ounasvaara",
+    "verifiedAt": "2026-10-12T00:32:38.840594+00:00"
+  },
+  {
+    "id": "local-ounasvaara-sky-dining",
+    "placeId": "finland-ounasvaara",
+    "place": "Ounasvaara / Rovaniemi",
+    "country": "Finland",
+    "name": "Sky Kitchen & View — panorama dining",
+    "type": "restaurant",
+    "url": "https://www.laplandhotels.com/en/hotels-and-destinations/rovaniemi/lapland-hotels-sky-ounasvaara/restaurants",
+    "summary": "Restaurant at Sky Ounasvaara offering breakfast and dinner overlooking the hill landscape. Non-staying visitors can reserve breakfast directly. Confirm current service times, dietary needs and table availability. Rooftop refreshments are described for hotel or restaurant guests; a free public rooftop visit is not established.",
+    "tags": [
+      "Ounasvaara",
+      "Rovaniemi",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.laplandhotels.com/en/hotels-and-destinations/rovaniemi/lapland-hotels-sky-ounasvaara/restaurants",
+    "verifiedAt": "2026-10-12T00:32:38.840594+00:00"
+  },
+  {
+    "id": "local-ounasvaara-chalets-stay",
+    "placeId": "finland-ounasvaara",
+    "place": "Ounasvaara / Rovaniemi",
+    "country": "Finland",
+    "name": "Lapland Hotels Ounasvaara Chalets — riverside apartments",
+    "type": "hotel",
+    "url": "https://www.laplandhotels.com/en/hotels-and-destinations/rovaniemi/lapland-hotels-ounasvaara-chalets",
+    "summary": "Cabins and holiday apartments between the Kemijoki River and the ski resort, with a kitchen and private sauna according to the operator. Reception is at Mustinpolku 4, formerly Antinmukka 4; apartments lie on both sides of Pallarintie. Confirm the assigned apartment and check-in route. Seasonal sauna, swimming and snow activities have separate availability.",
+    "tags": [
+      "Ounasvaara",
+      "Rovaniemi",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.laplandhotels.com/en/hotels-and-destinations/rovaniemi/lapland-hotels-ounasvaara-chalets",
+    "verifiedAt": "2026-10-12T00:32:38.840594+00:00"
+  },
+  {
+    "id": "local-ounasvaara-nature-trail",
+    "placeId": "finland-ounasvaara",
+    "place": "Ounasvaara / Rovaniemi",
+    "country": "Finland",
+    "name": "Ounasvaara — snow-free nature trail",
+    "type": "visitor information",
+    "url": "https://www.visitrovaniemi.fi/attraction/ounasvaara-nature-trail/",
+    "summary": "Tourism guidance describes a 4.9 km circular nature trail for the snow-free May–October season. Moderate terrain includes roots, rocks and wooden boardwalks; waterproof footwear is recommended in spring and autumn. Check actual snow and wet-surface conditions before setting out. A city panorama does not establish trail safety or step-free access.",
+    "tags": [
+      "Ounasvaara",
+      "Rovaniemi",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.visitrovaniemi.fi/attraction/ounasvaara-nature-trail/",
+    "verifiedAt": "2026-10-12T00:32:38.840594+00:00"
+  },
+  {
+    "id": "local-ounasvaara-winter-walk",
+    "placeId": "finland-ounasvaara",
+    "place": "Ounasvaara / Rovaniemi",
+    "country": "Finland",
+    "name": "Ounasvaara — year-round walking route",
+    "type": "visitor information",
+    "url": "https://www.visitrovaniemi.fi/attraction/ounasvaaran-year-round-winter-trail/",
+    "summary": "The walking route and its connecting paths total about 6 km, with separate markings from the nature trail, lean-tos and an observation tower. The tourism authority describes snowmobile grooming at the start of winter. Check the current route map and maintenance before walking; all-year listing does not guarantee an ice-free surface or tower access.",
+    "tags": [
+      "Ounasvaara",
+      "Rovaniemi",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.visitrovaniemi.fi/attraction/ounasvaaran-year-round-winter-trail/",
+    "verifiedAt": "2026-10-12T00:32:38.840594+00:00"
+  },
+  {
+    "id": "local-ounasvaara-ski-arrival",
+    "placeId": "finland-ounasvaara",
+    "place": "Ounasvaara / Rovaniemi",
+    "country": "Finland",
+    "name": "Ounasvaara ski resort — arrival and seasonal access",
+    "type": "visitor information",
+    "url": "https://ounasvaara.fi/en/frequently-asked-questions/",
+    "summary": "The resort is at Taunontie 14, roughly 4 km from central Rovaniemi; consult Linkkari for public transport. The published winter season is 11 November 2026–17 April 2027, subject to snow and operational conditions, so it does not establish October skiing. The operator prohibits sledding in the ski-resort area and distinguishes Rendi Park tubing from sledding.",
+    "tags": [
+      "Ounasvaara",
+      "Rovaniemi",
+      "Finland"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://ounasvaara.fi/en/frequently-asked-questions/",
+    "verifiedAt": "2026-10-12T00:32:38.840594+00:00"
   }
 ]
