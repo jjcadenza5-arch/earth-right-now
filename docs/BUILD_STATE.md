@@ -6,6 +6,10 @@
 - Extended the existing Finland research candidate with bounded outcomes and material-evidence revisit criteria. No duplicate analytics/research queue; existing aggregate zero-result plus information-only search/open demand workflow retained. Editorial leads chosen without a new private demand export. No measured traffic, affiliate click, conversion or social publication claim.
 - Existing design/deployment, numbered Living Atlas, neutrality, public submissions OFF, paid traffic HOLD, strict performance and rollback protections retained. Organic opportunity: owner-managed autumn resort planning story linking to these destination pages, with refreshed images distinguished from seasonal service information. Release validation pending.
 - Release validation completed: all 120 smoke tests and all 40 build/preflight commands passed. Directory 328 valid / zero invalid / 81 destinations; approved photographs remain 37. Core 573509/575000 bytes, startup JS 159966/160000, zero eager iframes. Accessibility, mobile, source truth, public-OFF and rollback checks passed. Deployment validation follows.
+- Generated-page review caught incorrect new guide types; corrected all six to the established visitor information schema. Repaired the static builder so independently reviewed visitor information remains reachable/searchable when a camera needs rechecking. Currentness gates for business sections, affiliate offers and camera collections remain unchanged. Added executed stale-camera visitor-information regression, including exclusion of expired advice. Final validation rerun follows.
+- Corrected final implementation passed all 120 smoke tests and all 40 build/preflight commands again. Generated Ruka page now exposes three independently reviewed visitor guides while retaining its camera-recheck and business/offer gates; Ylläs exposes three visitor guides and three businesses. Budgets unchanged. Final deployed validation pending.
+
+
 
 
 ## 2026-10-12 — Finnish photography and Ounasvaara deployed validation
