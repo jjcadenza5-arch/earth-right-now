@@ -1,8 +1,13 @@
-## 2026-10-12 — Useful answers while camera coverage is on hold
-- Progreso: compare ocean-view, pool-view and interior rooms, then plan the Malecón. Link to the destination page; current camera playback is unavailable, so do not advertise a working live stream.
-- Sultanahmet: plan T1 arrival, accessibility and the separate Ayasofya history museum. The municipal page currently serves a recorded clip; do not call it live.
-- Kolhapur and Dongargarh: link to reviewed temple visitor information and distinguish the correct shrine, festivals and last-mile arrival. Camera links remain under security holds.
-- Use existing aggregate searches, information opens and outbound clicks to assess repeated interest; isolated Search Console clicks are early leads. Publish only through owner-managed accounts when the owner chooses; paid traffic stays on hold.
+## 2026-10-12 — Prepared Facebook / Instagram / TikTok themes
+These themes use destinations reviewed in this batch. Use an ERN page screen recording or your own original footage; keep the page’s actual source state visible. Identity: Earth Right Now — The Live Discovery Engine. Closing invitation: See before you go.
+
+| Theme / opening question | Instagram Reel / TikTok sequence | Facebook destination link |
+| --- | --- | --- |
+| Progreso: “Beach day or overnight stay?” | Open Progreso in ERN; compare ocean-view, pool-view and interior room descriptions; finish with Malecón facilities. Current camera is unavailable, so present this as trip planning. | https://earthrightnow.app/places/mexico-progreso-yucatan/ |
+| Sultanahmet: “What would make your first hour in Istanbul easier?” | Show T1 arrival, accessibility information and the separate Ayasofya history museum; invite viewers to choose their first stop. The municipal clip is recorded, not a live scene. | https://earthrightnow.app/places/istanbul-sultanahmet/ |
+| Temple visit: “Which shrine, which route, which day?” | Choose one destination per video: Ambabai darshan/festival planning, or hilltop versus lower Bamleshwari. End on independently reviewed arrival information; camera security holds remain visible. | https://earthrightnow.app/places/india-kolhapur-ambabai/ or https://earthrightnow.app/places/india-dongargarh-bamleshwari/ |
+
+For Facebook, pair the opening question with the relevant link and invite a planning choice. For Instagram/TikTok, keep the question, two useful decisions and ERN’s name readable in a short vertical video; direct viewers to the matching destination. Publish only through owner-managed accounts when the owner chooses. Assess existing aggregate searches, information opens and onward clicks after a suitable observation window, keeping owner/test activity and rolling snapshots distinct. Paid traffic stays on hold; no posts, new tracker, booking or income claim.
 
 ## 2026-10-12 — Destination-search interest: owner-managed next stories
 Observed evidence: owner Search Console rolling-24h screenshot shows one click each for Flåm, Gudauri and Crystal Bay, alongside other destinations. This is an early lead, not repeated-demand proof or attribution to a social campaign.
