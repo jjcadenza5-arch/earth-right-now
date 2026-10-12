@@ -107,5 +107,24 @@
   ],
   "newEditorialPhotographs": 0,
   "newAffiliateRelationships": 0,
-  "finalPositiveRecheckAt": "2026-10-12T16:59:01.845536Z"
+  "finalPositiveRecheckAt": "2026-10-12T16:59:01.845536Z",
+  "postReleaseObservations": {
+    "observedAt": "2026-10-12T17:20:52.112621Z",
+    "standaloneBoatPlayer": {
+      "url": "https://widget.coastalcoms.com/video/d8e1284c-4f35-4b45-bd10-940a0860df2c",
+      "width": 1280,
+      "height": 720,
+      "readyState": 4,
+      "paused": false,
+      "currentTime": 88.425775,
+      "duration": "Infinity"
+    },
+    "bridgeCaptureLabels": [
+      "OCT 13 Tuesday 03:36:38 AM",
+      "OCT 13 Tuesday 04:06:29 AM"
+    ],
+    "oneObservedCaptureIntervalSeconds": 1791,
+    "steadyRefreshGuarantee": false,
+    "sourceSuccessfulTimestampsRenewed": false
+  }
 }

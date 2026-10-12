@@ -12990,7 +12990,7 @@
     "quality": 65,
     "freshness": 95,
     "moment": 60,
-    "story": "Live boat-ramp panel linked by NSW Government. Rain on the lens reduced night visibility during review; the separate harbour-entrance feed did not play.",
+    "story": "Live boat-ramp panel linked by NSW Government. Lens obstruction reduced night visibility during review; the separate harbour-entrance feed did not play.",
     "featuredHold": true,
     "watchHold": true,
     "searchSupplemental": true,
@@ -12998,8 +12998,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "NSW Government explicitly welcomes external links opened in a new window without framing or implied endorsement. The exact public boat-ramp widget is linked on its official page. LINK_ONLY; no third-party video reuse, ERN embedding or logo permission inferred.",
     "rightsSourceUrl": "https://www.nsw.gov.au/nsw-government/about-website/copyright",
-    "freshnessEvidence": "Browser-rendered boat-ramp video decoded 1280x720, readyState 4, playing with time advancing from 112.959068 to 150.484398 seconds and Infinity duration. Official provider identifies this exact panel as live Coffs Harbour Boat Ramp vision. Night water/reflections and quay inspected; no duration-based prerecorded claim.",
-    "coordinateNote": "Camera position not independently verified; no map pin or invented coordinates."
+    "freshnessEvidence": "Browser-rendered boat-ramp video decoded 1280x720, readyState 4, playing with time advancing from 112.959068 to 150.484398 seconds and Infinity duration. Official provider identifies this exact panel as live Coffs Harbour Boat Ramp vision. Night water/reflections and quay inspected; no duration-based prerecorded claim."
   },
   {
     "id": "australia-nana-glen-edward-sharp-current",
@@ -13040,7 +13039,6 @@
     "searchSupplemental": true,
     "externalWindowRequired": true,
     "rightsBasis": "Council publishes and directly links this public camera image. ERN links to the council context page only; no imagery download, thumbnail reuse, hotlinking, framing or embedding permission inferred.",
-    "freshnessEvidence": "Council-linked image decoded 3840x2160. Visible clock: OCT 13 Tuesday 03:36:38 AM, matching the reviewed New South Wales local day/time within the council-reported thirty-minute cadence. Year and timezone are not printed on the image; no full capture timestamp invented. Night bridge/road scene and council/location caption inspected.",
-    "coordinateNote": "Council identifies Grafton Street, Nana Glen. Camera position not independently verified; no map pin or invented coordinates."
+    "freshnessEvidence": "Council-linked image decoded 3840x2160. Visible clock: OCT 13 Tuesday 03:36:38 AM, matching the reviewed New South Wales local day/time within the council-reported thirty-minute cadence. Year and timezone are not printed on the image; no full capture timestamp invented. Night bridge/road scene and council/location caption inspected."
   }
 ]
