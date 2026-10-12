@@ -7398,5 +7398,383 @@
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://zermatt.swiss/en/info/accessible-travel",
     "verifiedAt": "2026-10-12T05:43:26.625550+00:00"
+  },
+  {
+    "id": "local-nz-lakestone-stay",
+    "placeId": "new-zealand-lake-pukaki-lakestone",
+    "place": "Lake Pukaki",
+    "country": "New Zealand",
+    "name": "Lakestone Lodge and Pūkaki Family Apartments",
+    "type": "hotel",
+    "url": "https://www.lakestonelodge.co.nz/accommodation",
+    "summary": "Choose lake-facing lodge rooms or separate self-contained family apartments. Apartment views and access to lodge facilities differ; confirm the accommodation and inclusions directly.",
+    "tags": [
+      "Lake Pukaki",
+      "New Zealand",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lakestonelodge.co.nz/accommodation",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-lakestone-dining",
+    "placeId": "new-zealand-lake-pukaki-lakestone",
+    "place": "Lake Pukaki",
+    "country": "New Zealand",
+    "name": "Lakestone Lodge — hosted dining",
+    "type": "restaurant",
+    "url": "https://www.lakestonelodge.co.nz/activities/dining",
+    "summary": "Hosted breakfast and evening dining at the lodge. Apartment dining depends on capacity and age policy; confirm eligibility, dietary needs and arrival time directly before relying on a meal.",
+    "tags": [
+      "Lake Pukaki",
+      "New Zealand",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lakestonelodge.co.nz/activities/dining",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-lakestone-bikes",
+    "placeId": "new-zealand-lake-pukaki-lakestone",
+    "place": "Lake Pukaki",
+    "country": "New Zealand",
+    "name": "Lakestone Lodge — bikes and e-bikes",
+    "type": "bike rental",
+    "url": "https://www.lakestonelodge.co.nz/activities/biking",
+    "summary": "Guest bicycle and e-bike options for exploring the Pukaki foreshore and Twizel area. Apartment hire is separate; confirm eligibility, equipment and route conditions with the lodge.",
+    "tags": [
+      "Lake Pukaki",
+      "New Zealand",
+      "bike rental"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lakestonelodge.co.nz/activities/biking",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-pukaki-arrival",
+    "placeId": "new-zealand-lake-pukaki-lakestone",
+    "place": "Lake Pukaki",
+    "country": "New Zealand",
+    "name": "Lake Pukaki — arrival and village distances",
+    "type": "visitor information",
+    "url": "https://www.lakestonelodge.co.nz/contact/location",
+    "summary": "Lakestone is above State Highway 8 on the southern shore of Lake Pukaki, away from Mount Cook Village. Plan the onward drive separately and check road and weather conditions before departure.",
+    "tags": [
+      "Lake Pukaki",
+      "New Zealand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lakestonelodge.co.nz/contact/location",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-pukaki-supplies",
+    "placeId": "new-zealand-lake-pukaki-lakestone",
+    "place": "Lake Pukaki",
+    "country": "New Zealand",
+    "name": "Lake Pukaki — rural stay and supplies",
+    "type": "visitor information",
+    "url": "https://www.lakestonelodge.co.nz/contact/faqs",
+    "summary": "The lodge reports no shops or restaurants within walking distance. Arrange supplies in Twizel and confirm transport and meals before arriving at this rural lakeside base.",
+    "tags": [
+      "Lake Pukaki",
+      "New Zealand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lakestonelodge.co.nz/contact/faqs",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-pukaki-trail",
+    "placeId": "new-zealand-lake-pukaki-lakestone",
+    "place": "Lake Pukaki",
+    "country": "New Zealand",
+    "name": "Lake Pukaki — Alps 2 Ocean trail notices",
+    "type": "visitor information",
+    "url": "https://www.alps2ocean.com/trail-conditions/latest-trail-information",
+    "summary": "Use the trail operator’s current notices for Pukaki Flats and surrounding sections. Its October update suspends the temporary diversion; logging movements and future changes still require checking before riding.",
+    "tags": [
+      "Lake Pukaki",
+      "New Zealand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.alps2ocean.com/trail-conditions/latest-trail-information",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-glentanner-stay",
+    "placeId": "new-zealand-glentanner-aoraki",
+    "place": "Glentanner",
+    "country": "New Zealand",
+    "name": "Glentanner Park Centre — cabins and campsites",
+    "type": "holiday park",
+    "url": "https://www.glentanner.co.nz/accommodation-2/",
+    "summary": "Choose self-contained units, basic accommodation or powered and unpowered sites. Bathroom and kitchen arrangements vary by category; confirm the selected unit or campsite before booking.",
+    "tags": [
+      "Glentanner",
+      "New Zealand",
+      "holiday park"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.glentanner.co.nz/accommodation-2/",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-glentanner-cafe",
+    "placeId": "new-zealand-glentanner-aoraki",
+    "place": "Glentanner",
+    "country": "New Zealand",
+    "name": "Tasman Delta Café — confirm opening days",
+    "type": "cafe",
+    "url": "https://www.glentanner.co.nz/mt-cook-experience/tasman-delta-cafe/",
+    "summary": "Daytime café at Glentanner, operated by The Helicopter Line. The café and facilities pages give conflicting opening days; confirm current service directly and arrange an alternative meal if needed.",
+    "tags": [
+      "Glentanner",
+      "New Zealand",
+      "cafe"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.glentanner.co.nz/mt-cook-experience/tasman-delta-cafe/",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-glentanner-helihike",
+    "placeId": "new-zealand-glentanner-aoraki",
+    "place": "Glentanner",
+    "country": "New Zealand",
+    "name": "Glentanner High Country Heli Hike",
+    "type": "guided activity",
+    "url": "https://www.glentanner.co.nz/mt-cook-activities/high-country-heli-hike/",
+    "summary": "Helicopter access followed by a guided walk on private Glentanner Station land. Own transport to reception is required; confirm check-in time, weather operation and fitness requirements with the operator.",
+    "tags": [
+      "Glentanner",
+      "New Zealand",
+      "guided activity"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.glentanner.co.nz/mt-cook-activities/high-country-heli-hike/",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-glentanner-arrival",
+    "placeId": "new-zealand-glentanner-aoraki",
+    "place": "Glentanner",
+    "country": "New Zealand",
+    "name": "Glentanner — location and own transport",
+    "type": "visitor information",
+    "url": "https://www.glentanner.co.nz/contact-location/our-location/",
+    "summary": "Glentanner is on State Highway 80 at a working sheep station, outside the national park and separate from Mount Cook Village. Plan your own arrival and check conditions along the approach road.",
+    "tags": [
+      "Glentanner",
+      "New Zealand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.glentanner.co.nz/contact-location/our-location/",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-glentanner-crossing",
+    "placeId": "new-zealand-glentanner-aoraki",
+    "place": "Glentanner",
+    "country": "New Zealand",
+    "name": "Glentanner — Alps 2 Ocean river crossing",
+    "type": "visitor information",
+    "url": "https://www.glentanner.co.nz/mt-cook-activities/alps-2-ocean-cycle-way/",
+    "summary": "The Mount Cook start of Alps 2 Ocean requires a helicopter crossing of the Tasman River. Confirm crossing reservations, bicycle carriage and weather availability with the operator before committing to that route.",
+    "tags": [
+      "Glentanner",
+      "New Zealand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.glentanner.co.nz/mt-cook-activities/alps-2-ocean-cycle-way/",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-glentanner-facilities",
+    "placeId": "new-zealand-glentanner-aoraki",
+    "place": "Glentanner",
+    "country": "New Zealand",
+    "name": "Glentanner — camping facilities and supplies",
+    "type": "visitor information",
+    "url": "https://www.glentanner.co.nz/holiday-park-facilities/",
+    "summary": "Shared cooking facilities, hot showers and coin-operated laundry are listed. There is no grocery store or dump station on site; obtain supplies and charge an EV before travelling to Glentanner.",
+    "tags": [
+      "Glentanner",
+      "New Zealand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.glentanner.co.nz/holiday-park-facilities/",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-hermitage-stay",
+    "placeId": "new-zealand-hermitage-mount-cook-village",
+    "place": "Aoraki / Mount Cook Village",
+    "country": "New Zealand",
+    "name": "Hermitage Hotel and Mount Cook Lodge — compare buildings",
+    "type": "hotel",
+    "url": "https://www.hermitage.co.nz/stay",
+    "summary": "Compare the upper-village Hermitage Hotel with the separate lodge and motels in the lower village. Building, room category and views differ; confirm your actual accommodation rather than assuming the webcam outlook.",
+    "tags": [
+      "Aoraki / Mount Cook Village",
+      "New Zealand",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hermitage.co.nz/stay",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-hermitage-dinner",
+    "placeId": "new-zealand-hermitage-mount-cook-village",
+    "place": "Aoraki / Mount Cook Village",
+    "country": "New Zealand",
+    "name": "Alpine Restaurant — dinner reservations",
+    "type": "restaurant",
+    "url": "https://www.hermitage.co.nz/dine/alpine-restaurant-dinner",
+    "summary": "Buffet dinner at the Hermitage with a cashless payment policy. Reserve a dining time and confirm current hours, menu and dietary suitability directly with the restaurant.",
+    "tags": [
+      "Aoraki / Mount Cook Village",
+      "New Zealand",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hermitage.co.nz/dine/alpine-restaurant-dinner",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-hermitage-stargazing",
+    "placeId": "new-zealand-hermitage-mount-cook-village",
+    "place": "Aoraki / Mount Cook Village",
+    "country": "New Zealand",
+    "name": "Big Sky Stargazing",
+    "type": "guided activity",
+    "url": "https://www.hermitage.co.nz/experience/big-sky-stargazing",
+    "summary": "Guided night-sky viewing with a shuttle to the nearby observing base. Outdoor sessions are weather dependent and have a minimum age of eight; confirm departure time and the cloudy-weather alternative.",
+    "tags": [
+      "Aoraki / Mount Cook Village",
+      "New Zealand",
+      "guided activity"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hermitage.co.nz/experience/big-sky-stargazing",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-mountcook-visitorcentre",
+    "placeId": "new-zealand-hermitage-mount-cook-village",
+    "place": "Aoraki / Mount Cook Village",
+    "country": "New Zealand",
+    "name": "Aoraki / Mount Cook — DOC Visitor Centre",
+    "type": "visitor information",
+    "url": "https://www.doc.govt.nz/footer-links/contact-us/visitor-centres/aoraki-mount-cook-national-park-visitor-centre/",
+    "summary": "Free-entry DOC visitor centre at 1 Larch Grove in Mount Cook Village, with park interpretation and local contacts. Check its seasonal opening hours and consult DOC for current park information.",
+    "tags": [
+      "Aoraki / Mount Cook Village",
+      "New Zealand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.doc.govt.nz/footer-links/contact-us/visitor-centres/aoraki-mount-cook-national-park-visitor-centre/",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-mountcook-hooker",
+    "placeId": "new-zealand-hermitage-mount-cook-village",
+    "place": "Aoraki / Mount Cook Village",
+    "country": "New Zealand",
+    "name": "Hooker Valley — track and parking planning",
+    "type": "visitor information",
+    "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/aoraki-mount-cook-national-park/things-to-do/tracks/hooker-valley-track/",
+    "summary": "Check DOC’s current track alerts before walking from White Horse Hill. The route includes gravel, steps and swing bridges; parking beyond 20 minutes requires payment on arrival using a card.",
+    "tags": [
+      "Aoraki / Mount Cook Village",
+      "New Zealand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/aoraki-mount-cook-national-park/things-to-do/tracks/hooker-valley-track/",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-nz-mountcook-camping",
+    "placeId": "new-zealand-hermitage-mount-cook-village",
+    "place": "Aoraki / Mount Cook Village",
+    "country": "New Zealand",
+    "name": "White Horse Hill — campsite bookings and facilities",
+    "type": "visitor information",
+    "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/aoraki-mount-cook-national-park/things-to-do/white-horse-hill-campground/",
+    "summary": "Book a campsite in advance; DOC does not provide unreserved walk-in spaces. The campground has no power or showers, so plan equipment, supplies and use of separate village facilities before arrival.",
+    "tags": [
+      "Aoraki / Mount Cook Village",
+      "New Zealand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/aoraki-mount-cook-national-park/things-to-do/white-horse-hill-campground/",
+    "verifiedAt": "2026-10-12T06:13:56.216888Z"
   }
 ]

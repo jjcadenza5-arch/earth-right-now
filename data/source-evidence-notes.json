@@ -847,6 +847,30 @@
         "evidence": "Official collection shows all ten cameras Offline / No connection. DEGRADED and null successful check retained; checkedAt and failed-check date record this actual negative review.",
         "next": "Hold unresolved currentness; revisit after material provider evidence or fresh decoded, dated frames. No retry loop, embedding permission or copied imagery inferred."
       }
+    },
+    {
+      "id": "new-zealand-lake-pukaki-lakestone",
+      "boundedBrowserReview": {
+        "reviewedAt": "2026-10-12T06:13:56.216888Z",
+        "evidence": "Official Lakestone webcam page embeds Windy image player. Location-matched lake/mountain image decoded at 960 x 540; visible day/time Mon 18:54 during Monday 12 October 2026 evening NZDT. Provider states daytime five-minute updates. Bounded refreshed-image evidence only; no continuous video or republication permission inferred.",
+        "next": "Keep LINK_ONLY, EXTERNAL and existing promotion holds. Revisit only with new dated camera evidence; no ordinary promotional photo as current view."
+      }
+    },
+    {
+      "id": "new-zealand-glentanner-aoraki",
+      "boundedBrowserReview": {
+        "reviewedAt": "2026-10-12T06:13:56.216888Z",
+        "evidence": "Official Glentanner page embeds Immerse camera. Image decoded at 900 x 675 with visible Glentanner 12 October 2026 7:00pm overlay, location-matched Aoraki view. No video element; play control not treated as continuous live video evidence.",
+        "next": "Keep LINK_ONLY, EXTERNAL and existing promotion holds. Revisit only with new dated camera evidence; no ordinary promotional photo as current view."
+      }
+    },
+    {
+      "id": "new-zealand-hermitage-mount-cook-village",
+      "boundedBrowserReview": {
+        "reviewedAt": "2026-10-12T06:13:56.216888Z",
+        "evidence": "Official page labels Now playing but browser showed an ordinary static promotional image, no capture timestamp and no camera/video element. No current camera evidence established; previous successful verification date retained.",
+        "next": "Keep LINK_ONLY, EXTERNAL and existing promotion holds. Revisit only with new dated camera evidence; no ordinary promotional photo as current view."
+      }
     }
   ]
 }
