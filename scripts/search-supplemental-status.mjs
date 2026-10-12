@@ -8,7 +8,7 @@ for(const s of extra){
  must(!!s?.id&&!!s?.title,"supplemental rows require id/title");
  must(!ids.has(s.id),"duplicate supplemental id: "+s.id);ids.add(s.id);
  must(!coreIds.has(s.id),"supplemental id duplicates core: "+s.id);
- must(s.health==="HEALTHY","supplemental row must be HEALTHY: "+s.id);
+ must(s.health==="HEALTHY"||(s.health==="DEGRADED"&&String(s.failureReason||"").trim()&&Number.isFinite(Date.parse(s.lastFailedCheck))&&s.lastFailedCheck===s.checkedAt&&Date.parse(s.lastFailedCheck)<=Date.now()+300000),"supplemental row requires HEALTHY or documented negative review: "+s.id);
  must(s.featuredHold===true&&s.watchHold===true,"supplemental row must be held from featured/watch: "+s.id);
  must(s.permission==="LINK_ONLY","supplemental row must remain LINK_ONLY: "+s.id);
  must(/^https:\/\//.test(String(s.sourceUrl||"")),"supplemental sourceUrl must be https: "+s.id);

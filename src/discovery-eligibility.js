@@ -11,6 +11,6 @@ export function discoverableSource(source){
  if(source.playback==="IMAGE_REFRESH")return!!safeHttpUrl(source.sourceUrl);
  return!!external;
 }
-export function currentSource(source,options={}){return discoverableSource(source)&&source.health==="HEALTHY"&&source.permission!=="UNKNOWN"&&recencyState(source,options)==="CURRENT_CHECK"&&sourceAvailableNow(source,options)}
+export function currentSource(source,options={}){return discoverableSource(source)&&source.truth!=="PREVIEW"&&source.playback!=="PREVIEW"&&source.health==="HEALTHY"&&source.permission!=="UNKNOWN"&&recencyState(source,options)==="CURRENT_CHECK"&&sourceAvailableNow(source,options)}
 export function discoveryPool(sources){return sources.filter(discoverableSource)}
 export function currentDiscoveryPool(sources,options={}){return sources.filter(source=>currentSource(source,options))}

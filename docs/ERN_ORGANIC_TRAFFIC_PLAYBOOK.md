@@ -1,3 +1,9 @@
+## 2026-10-12 — Useful answers while camera coverage is on hold
+- Progreso: compare ocean-view, pool-view and interior rooms, then plan the Malecón. Link to the destination page; current camera playback is unavailable, so do not advertise a working live stream.
+- Sultanahmet: plan T1 arrival, accessibility and the separate Ayasofya history museum. The municipal page currently serves a recorded clip; do not call it live.
+- Kolhapur and Dongargarh: link to reviewed temple visitor information and distinguish the correct shrine, festivals and last-mile arrival. Camera links remain under security holds.
+- Use existing aggregate searches, information opens and outbound clicks to assess repeated interest; isolated Search Console clicks are early leads. Publish only through owner-managed accounts when the owner chooses; paid traffic stays on hold.
+
 ## 2026-10-12 — Destination-search interest: owner-managed next stories
 Observed evidence: owner Search Console rolling-24h screenshot shows one click each for Flåm, Gudauri and Crystal Bay, alongside other destinations. This is an early lead, not repeated-demand proof or attribution to a social campaign.
 

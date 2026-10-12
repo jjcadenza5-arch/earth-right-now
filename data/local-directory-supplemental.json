@@ -8154,5 +8154,320 @@
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://crystalbaysamui.com/beachresort/getting-here.php",
     "verifiedAt": "2026-10-12T10:51:56.753165Z"
+  },
+  {
+    "id": "local-demand-progreso-hotel",
+    "placeId": "mexico-progreso-yucatan",
+    "place": "Progreso",
+    "country": "Mexico",
+    "name": "Progreso Beach Hotel",
+    "type": "hotel",
+    "url": "https://www.progreso-beach.com/es",
+    "summary": "Progreso hotel opposite the Meteorite Museum, with suites and two-bedroom apartment categories. Compare the actual room category and location before booking; the destination is on the Gulf of Mexico coast.",
+    "tags": [
+      "Progreso",
+      "Mexico",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.progreso-beach.com/es",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-progreso-domani",
+    "placeId": "mexico-progreso-yucatan",
+    "place": "Progreso",
+    "country": "Mexico",
+    "name": "Hotel Domani Suites",
+    "type": "hotel",
+    "url": "https://www.hoteldomanisuites.com/",
+    "summary": "Malecón hotel facing Progreso beach. The operator distinguishes ocean-view, pool-view and interior rooms; choose the advertised category rather than assuming every room has the camera’s waterfront view.",
+    "tags": [
+      "Progreso",
+      "Mexico",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hoteldomanisuites.com/",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-progreso-eladios",
+    "placeId": "mexico-progreso-yucatan",
+    "place": "Progreso",
+    "country": "Mexico",
+    "name": "Eladio’s Bar — Progreso branch",
+    "type": "restaurant",
+    "url": "https://www.eladiosbar.com/ubicaciones",
+    "summary": "The Progreso branch is at Calle 80 and 19 in the centre. The operator provides a separate Progreso menu and reservation contact; select this branch rather than one of its Mérida locations.",
+    "tags": [
+      "Progreso",
+      "Mexico",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.eladiosbar.com/ubicaciones",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-progreso-coast",
+    "placeId": "mexico-progreso-yucatan",
+    "place": "Progreso",
+    "country": "Mexico",
+    "name": "Progreso — coast and Mérida orientation",
+    "type": "visitor information",
+    "url": "https://yucatan.travel/en/sun-and-beach/progreso/",
+    "summary": "Yucatán’s official destination guide places Progreso north of Mérida and identifies waterfront dining and coastal activities. Use it to plan the area; a beach description is not a current swimming-condition assessment.",
+    "tags": [
+      "Progreso",
+      "Mexico",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://yucatan.travel/en/sun-and-beach/progreso/",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-progreso-malecon",
+    "placeId": "mexico-progreso-yucatan",
+    "place": "Progreso",
+    "country": "Mexico",
+    "name": "Progreso — International Boardwalk planning",
+    "type": "visitor information",
+    "url": "https://yucatan.travel/en/experience/337-hiking-along-the-international-boardwalk-in-progreso/",
+    "summary": "The tourism authority describes Malecón landmarks, maps at the ends of the boardwalk, restaurants, restrooms and showers. Locate facilities before a beach outing and confirm current services directly.",
+    "tags": [
+      "Progreso",
+      "Mexico",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://yucatan.travel/en/experience/337-hiking-along-the-international-boardwalk-in-progreso/",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-sultanahmet-hotel",
+    "placeId": "istanbul-sultanahmet",
+    "place": "Sultanahmet, Istanbul",
+    "country": "Türkiye",
+    "name": "Seven Hills Hotel — Sultanahmet",
+    "type": "hotel",
+    "url": "https://sevenhillshotel.com/",
+    "summary": "Boutique hotel in historic Sultanahmet with economy, superior, deluxe and suite categories. Rooftop restaurant views are distinct from room views; airport pickup is available on request, subject to confirmation.",
+    "tags": [
+      "Sultanahmet, Istanbul",
+      "Türkiye",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://sevenhillshotel.com/",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-sultanahmet-dining",
+    "placeId": "istanbul-sultanahmet",
+    "place": "Sultanahmet, Istanbul",
+    "country": "Türkiye",
+    "name": "Seven Hills Restaurant",
+    "type": "restaurant",
+    "url": "https://www.sevenhillsrestaurant.com/Location.html",
+    "summary": "Rooftop seafood restaurant at Tevkifhane Sokak 8 in Sultanahmet, with views toward Hagia Sophia and the Blue Mosque. Consult the operator’s menu and reservation page for current seating and arrangements.",
+    "tags": [
+      "Sultanahmet, Istanbul",
+      "Türkiye",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.sevenhillsrestaurant.com/Location.html",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-sultanahmet-tram",
+    "placeId": "istanbul-sultanahmet",
+    "place": "Sultanahmet, Istanbul",
+    "country": "Türkiye",
+    "name": "Sultanahmet — T1 tram route",
+    "type": "visitor information",
+    "url": "https://www.metro.istanbul/Hatlarimiz/HatDetay?hat=T1",
+    "summary": "Metro Istanbul’s Kabataş–Bağcılar T1 route includes Sultanahmet. Check the operator’s route and service information before travelling; reaching an airport requires a separate onward connection.",
+    "tags": [
+      "Sultanahmet, Istanbul",
+      "Türkiye",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.metro.istanbul/Hatlarimiz/HatDetay?hat=T1",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-sultanahmet-access",
+    "placeId": "istanbul-sultanahmet",
+    "place": "Sultanahmet, Istanbul",
+    "country": "Türkiye",
+    "name": "Istanbul rail — accessibility planning",
+    "type": "visitor information",
+    "url": "https://www.metro.istanbul/en/content/accessibility-services",
+    "summary": "Metro Istanbul explains station ramps, lifts, tactile guidance and staff assistance. Check the relevant station and equipment notices for your journey rather than assuming every connection is step-free.",
+    "tags": [
+      "Sultanahmet, Istanbul",
+      "Türkiye",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.metro.istanbul/en/content/accessibility-services",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-sultanahmet-museum",
+    "placeId": "istanbul-sultanahmet",
+    "place": "Sultanahmet, Istanbul",
+    "country": "Türkiye",
+    "name": "Ayasofya History and Experience Museum — visitor details",
+    "type": "visitor information",
+    "url": "https://muze.gov.tr/muze-detay?DistId=MRK&SectionId=YSM01",
+    "summary": "The ministry lists this separate museum at At Meydanı Sokak 10 in Sultanahmet, with immersive historical displays. Its admission and closing times are separate from visiting Hagia Sophia itself; consult the official listing before going.",
+    "tags": [
+      "Sultanahmet, Istanbul",
+      "Türkiye",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://muze.gov.tr/muze-detay?DistId=MRK&SectionId=YSM01",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-kolhapur-darshan",
+    "placeId": "india-kolhapur-ambabai",
+    "place": "Kolhapur — Ambabai Temple",
+    "country": "India",
+    "name": "Hotel Darshan Executive",
+    "type": "hotel",
+    "url": "https://www.darshanexecutive.com/",
+    "summary": "Hotel near Mahalaxmi / Ambabai Temple with air-conditioned and non-air-conditioned room categories for different party sizes. Confirm the chosen room’s capacity, parking access and arrival arrangements directly.",
+    "tags": [
+      "Kolhapur — Ambabai Temple",
+      "India",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.darshanexecutive.com/",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-kolhapur-darshan-times",
+    "placeId": "india-kolhapur-ambabai",
+    "place": "Kolhapur — Ambabai Temple",
+    "country": "India",
+    "name": "Ambabai / Mahalaxmi — darshan planning",
+    "type": "visitor information",
+    "url": "https://www.incredibleindia.gov.in/en/maharashtra/kolhapur/mahalaxmi-temple",
+    "summary": "Incredible India publishes opening, darshan and evening aarti information for Kolhapur’s Mahalaxmi Temple, also known as Ambabai. Check the published schedule and confirm festival arrangements before travelling; this is visitor information, not a current view.",
+    "tags": [
+      "Kolhapur — Ambabai Temple",
+      "India",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.incredibleindia.gov.in/en/maharashtra/kolhapur/mahalaxmi-temple",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-kolhapur-season",
+    "placeId": "india-kolhapur-ambabai",
+    "place": "Kolhapur — Ambabai Temple",
+    "country": "India",
+    "name": "Kolhapur — temple festivals and arrival planning",
+    "type": "visitor information",
+    "url": "https://maharashtratourism.gov.in/temple/mahalaxmi/",
+    "summary": "Maharashtra Tourism describes Navratri, Kiranotsav and arrival via Kolhapur’s airport, railway station and roads. Allow for festival queues and arrange the last-mile journey; published distances vary, so confirm your actual route.",
+    "tags": [
+      "Kolhapur — Ambabai Temple",
+      "India",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://maharashtratourism.gov.in/temple/mahalaxmi/",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-kolhapur-city",
+    "placeId": "india-kolhapur-ambabai",
+    "place": "Kolhapur — Ambabai Temple",
+    "country": "India",
+    "name": "Kolhapur — city sights and local orientation",
+    "type": "visitor information",
+    "url": "https://web.kolhapurcorporation.gov.in/paryantanSthale",
+    "summary": "The municipal guide, in Marathi, identifies Ambabai Temple in the city centre, local rickshaw access and nearby options including Rankala Lake and New Palace Museum. These are separate outings; confirm access and opening arrangements individually.",
+    "tags": [
+      "Kolhapur — Ambabai Temple",
+      "India",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://web.kolhapurcorporation.gov.in/paryantanSthale",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
+  },
+  {
+    "id": "local-demand-dongargarh-temples",
+    "placeId": "india-dongargarh-bamleshwari",
+    "place": "Dongargarh — Maa Bamleshwari",
+    "country": "India",
+    "name": "Dongargarh — hilltop and lower Bamleshwari temples",
+    "type": "visitor information",
+    "url": "https://rajnandgaon.nic.in/en/tourist-place/maa-bamleshwari-temple/",
+    "summary": "The district administration distinguishes the hilltop Maa Bamleshwari shrine from nearby Chhoti Bamleshwari and notes Navratri pilgrim interest. Identify the correct shrine and confirm hill access and onward transport locally; the district’s travel section describes Rajnandgaon, not a doorstep transfer to Dongargarh.",
+    "tags": [
+      "Dongargarh — Maa Bamleshwari",
+      "India",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://rajnandgaon.nic.in/en/tourist-place/maa-bamleshwari-temple/",
+    "verifiedAt": "2026-10-12T14:58:18.271627Z"
   }
 ]

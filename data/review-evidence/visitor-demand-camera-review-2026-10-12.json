@@ -1,0 +1,60 @@
+{
+  "reviewedAt": "2026-10-12T14:58:18.271627Z",
+  "basis": "Fresh provider-browser inspection; isolated owner Search Console interest is a lead, not repeated-demand proof.",
+  "sources": [
+    {
+      "id": "istanbul-sultanahmet-official",
+      "placeId": "istanbul-sultanahmet",
+      "sourceUrl": "https://istanbuluseyret.ibb.istanbul/en/touristic-camera/sultanahmet",
+      "checkedAt": "2026-10-12T14:58:18.271627Z",
+      "outcome": "NO_CURRENT_VIEW",
+      "reason": "Provider currently serves a finite 610.944-second MP4; no live/current camera established.",
+      "lastSuccessfulCheckPreserved": "2026-10-03T09:50:00Z",
+      "permission": "LINK_ONLY",
+      "observation": {
+        "durationSeconds": 610.944,
+        "decodedWidth": 1920,
+        "decodedHeight": 1080,
+        "sourceType": "video/mp4"
+      },
+      "truthAfterReview": "PREVIEW",
+      "playbackAfterReview": "EXTERNAL"
+    },
+    {
+      "id": "mexico-progreso-yucatan-live",
+      "placeId": "mexico-progreso-yucatan",
+      "sourceUrl": "https://webcamsdemexico.com/webcam/progreso/",
+      "checkedAt": "2026-10-12T14:58:18.271627Z",
+      "outcome": "NO_CURRENT_VIEW",
+      "reason": "Exact provider player TxRIMEy6Sz8 states This live stream recording is not available; no current playback established.",
+      "lastSuccessfulCheckPreserved": "2026-10-05T20:35:00Z",
+      "permission": "LINK_ONLY",
+      "observation": {
+        "playerId": "TxRIMEy6Sz8",
+        "visibleMessage": "This live stream recording is not available."
+      }
+    }
+  ],
+  "securityHoldsPreserved": [
+    "india-kolhapur-ambabai-live",
+    "india-dongargarh-bamleshwari-live"
+  ],
+  "addedLocalRecords": [
+    "local-demand-progreso-hotel",
+    "local-demand-progreso-domani",
+    "local-demand-progreso-eladios",
+    "local-demand-progreso-coast",
+    "local-demand-progreso-malecon",
+    "local-demand-sultanahmet-hotel",
+    "local-demand-sultanahmet-dining",
+    "local-demand-sultanahmet-tram",
+    "local-demand-sultanahmet-access",
+    "local-demand-sultanahmet-museum",
+    "local-demand-kolhapur-darshan",
+    "local-demand-kolhapur-darshan-times",
+    "local-demand-kolhapur-season",
+    "local-demand-kolhapur-city",
+    "local-demand-dongargarh-temples"
+  ],
+  "excludedBusiness": "Yashada lodging page contains unfinished placeholder room descriptions; not admitted."
+}

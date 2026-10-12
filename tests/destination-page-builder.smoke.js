@@ -131,6 +131,10 @@ try{
   assert.ok(!lakeHtml.includes('Santa_Claus_Village_11.jpg'),'lake page must not inherit another destination photo');
   const heldHtml=readFileSync(join(fixture,'places','fixture-security-hold','index.html'),'utf8');
   assert.ok(heldHtml.includes('Provider link paused pending security review'));
+  assert.ok(heldHtml.includes('Place Information | Earth Right Now'));
+  assert.ok(heldHtml.includes('— place information</h1>'));
+  assert.ok(!heldHtml.includes('Live View | Earth Right Now'));
+  assert.ok(!heldHtml.includes('Open the provider source directly'),'held pages must not invite a security-held handoff');
   assert.ok(!heldHtml.includes('href="https://www.utsav.gov.in/livedarshan"'),'security-held provider URL must not be clickable');
   assert.ok(heldHtml.includes('noindex,follow'),'security-held source cannot produce an indexable current page');
   const staleHtml=readFileSync(join(fixture,'places','fixture-stale','index.html'),'utf8');

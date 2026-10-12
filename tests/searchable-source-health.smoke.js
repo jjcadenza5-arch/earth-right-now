@@ -1,6 +1,11 @@
 import assert from "node:assert/strict";
 import {buildSearchableCoveragePlan,runSearchableSourceHealth} from "../src/searchable-source-health.js";
 
+import {currentSource} from "../src/discovery-eligibility.js";
+const failedReview={id:"failed-camera",truth:"EXTERNAL_LIVE",permission:"LINK_ONLY",playback:"EXTERNAL",health:"DEGRADED",sourceUrl:"https://example.test/camera",checkedAt:"2026-10-12T14:58:00Z",lastFailedCheck:"2026-10-12T14:58:00Z",lastSuccessfulCheck:"2026-10-05T20:35:00Z",failureReason:"Provider recording unavailable"};
+assert.equal(currentSource(failedReview,{now:new Date(failedReview.checkedAt)}),false,"a fresh negative review must not create current-source eligibility");
+assert.equal(currentSource({...failedReview,truth:"PREVIEW",health:"HEALTHY",lastSuccessfulCheck:failedReview.checkedAt},{now:new Date(failedReview.checkedAt)}),false,"even freshly checked recorded reference footage must not become current camera coverage");
+
 const now=new Date("2026-10-05T00:00:00Z");
 const core=[
  {id:"a",title:"A",provider:"P",health:"HEALTHY",sourceUrl:"https://example.com/shared"},

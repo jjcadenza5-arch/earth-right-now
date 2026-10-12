@@ -249,6 +249,26 @@
       "lastReviewAt": "2026-10-12T10:49:24.160550Z",
       "action": "HOLD_UNTIL_NEW_CURRENT_LOCATION_MATCHED_PLAYBACK_EVIDENCE",
       "reviewOutcome": "Shared source page is unavailable in bounded deployed-browser review; no blanket Gudauri/Kobi camera promotion."
+    },
+    {
+      "id": "istanbul-sultanahmet-official",
+      "placeId": "istanbul-sultanahmet",
+      "health": "DEGRADED",
+      "truth": "PREVIEW",
+      "failureReason": "Provider currently serves a finite 610.944-second MP4; no live/current camera established.",
+      "lastReviewAt": "2026-10-12T14:58:18.271627Z",
+      "action": "HOLD_UNTIL_NEW_CURRENT_LOCATION_MATCHED_PLAYBACK_EVIDENCE",
+      "reviewOutcome": "No successful renewal; historical success and link-only permissions preserved."
+    },
+    {
+      "id": "mexico-progreso-yucatan-live",
+      "placeId": "mexico-progreso-yucatan",
+      "health": "DEGRADED",
+      "truth": "EXTERNAL_LIVE",
+      "failureReason": "Exact provider player TxRIMEy6Sz8 states This live stream recording is not available; no current playback established.",
+      "lastReviewAt": "2026-10-12T14:58:18.271627Z",
+      "action": "HOLD_UNTIL_NEW_CURRENT_LOCATION_MATCHED_PLAYBACK_EVIDENCE",
+      "reviewOutcome": "No successful renewal; historical success and link-only permissions preserved."
     }
   ],
   "currentReality": {
