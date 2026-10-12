@@ -272,7 +272,7 @@
           "promotionState": "PROMOTED_LINK_ONLY"
         }
       ],
-      "latestResearchAt": "2026-10-11T17:11:41.867651+00:00",
+      "latestResearchAt": "2026-10-12T01:22:59.457334+00:00",
       "boundedPlaybackReview": {
         "targets": [
           "Helsinki Market Square",
@@ -284,6 +284,27 @@
         "outcome": "UNRESOLVED_NO_DECODED_VIDEO_IN_REVIEW_BROWSER",
         "evidence": "Clicked each exact YouTube player from the official guide; currentTime 0, readyState 0, width/height 0. No fresh playback success or source-verification renewal inferred.",
         "next": "Hold this pass. Revisit after material provider evidence or a fresh playable browser observation; no retry loop."
+      },
+      "resortMaintenanceReview": {
+        "reviewedAt": "2026-10-12T01:22:59.457334+00:00",
+        "resolvedCatalogIds": [
+          "finland-yllas-webcams"
+        ],
+        "evidence": "Ylläs Resort North decoded 1920×1080 current still, timestamp 2026-10-12 04:20:57 Europe/Helsinki; operator five-minute refresh. LINK_ONLY / LIVE_IMAGE / EXTERNAL retained. No source added or video upgrade.",
+        "heldTargets": [
+          {
+            "name": "Ruka Top panorama",
+            "sourceUrl": "https://ruka7.panocloud.webcam/en",
+            "reason": "Officially linked viewer showed 12.10.2026 04:20 but rendered blank and reported HTML5 browser with WebGL or CSS3D required. No successful-check renewal or bot-block diagnosis."
+          },
+          {
+            "name": "Ylläs chair-lift video",
+            "sourceUrl": "https://ski.yllas.fi/en/about-us/webcams/",
+            "reason": "Chair-lift player reports live-stream recording unavailable. Other videos not playback verified; current still network remains usable."
+          }
+        ],
+        "next": "Revisit held players after material provider evidence or a fresh decoded browser frame; no retry loop or duplicate research queue.",
+        "selectionBasis": "Editorial first-party leads; no new private aggregate demand export or measured visitor-interest claim."
       }
     },
     {

@@ -6768,5 +6768,257 @@
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://ounasvaara.fi/en/frequently-asked-questions/",
     "verifiedAt": "2026-10-12T00:32:38.840594+00:00"
+  },
+  {
+    "id": "local-ruka-valley-stay",
+    "placeId": "finland-ruka",
+    "place": "Ruka / Kuusamo",
+    "country": "Finland",
+    "name": "Ski-Inn RukaValley — rooms and apartments",
+    "type": "hotel",
+    "url": "https://www.ruka.fi/en/skiresort/accommodation/rukavalley",
+    "summary": "Hotel rooms and apartments beside the Vuosseli and Family Park slopes, with a restaurant and rental shop in the building. Confirm the room type, check-in arrangements and seasonal services with Ski-Inn; proximity to a lift does not establish that every slope is open.",
+    "tags": [
+      "Ruka",
+      "Finland",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ruka.fi/en/skiresort/accommodation/rukavalley",
+    "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
+  },
+  {
+    "id": "local-ruka-camp-dining",
+    "placeId": "finland-ruka",
+    "place": "Ruka / Kuusamo",
+    "country": "Finland",
+    "name": "Camp Kitchen & Bar — Ruka Valley dining",
+    "type": "restaurant",
+    "url": "https://www.campkitchen.fi/",
+    "summary": "Restaurant at Bistrotie 2 in Ruka Valley. The operator currently lists 11–18 October service from noon to 20:00, a kitchen-renovation closure from 19 October to 17 November, and winter reopening on 19 November. Check the latest hours and reserve directly before travelling.",
+    "tags": [
+      "Ruka",
+      "Finland",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.campkitchen.fi/",
+    "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
+  },
+  {
+    "id": "local-ruka-piste-rental",
+    "placeId": "finland-ruka",
+    "place": "Ruka / Kuusamo",
+    "country": "Finland",
+    "name": "Piste — equipment rental and ski service",
+    "type": "equipment rental",
+    "url": "https://www.ruka.fi/en/skiresort/rental-shops",
+    "summary": "Rental and ski-service branch at Rukankyläntie 17 in Ruka village, with equipment, lift passes and lockers. Nordic ski equipment is offered at Piste and Vuosselinportti, rather than every branch. Confirm branch hours and equipment availability; reserve ahead during busy periods.",
+    "tags": [
+      "Ruka",
+      "Finland",
+      "equipment rental"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ruka.fi/en/skiresort/rental-shops",
+    "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
+  },
+  {
+    "id": "local-ruka-bus-planning",
+    "placeId": "finland-ruka",
+    "place": "Ruka / Kuusamo",
+    "country": "Finland",
+    "name": "Ruka — airport and local bus planning",
+    "type": "visitor guide",
+    "url": "https://www.ruka.fi/en/travelling-to-kuusamo/getting-around/buses",
+    "summary": "Check your exact airport transfer and village stop before arrival. The operator recommends booking airport-bus tickets at least 24 hours ahead; walk-on travel depends on space and charter flights are excluded from that booking service. The page also contains expired 2025–26 SkiBus schedules and summer trail buses ending 30 September 2026: confirm the timetable for your actual date.",
+    "tags": [
+      "Ruka",
+      "Finland",
+      "visitor guide"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ruka.fi/en/travelling-to-kuusamo/getting-around/buses",
+    "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
+  },
+  {
+    "id": "local-ruka-shopping-planning",
+    "placeId": "finland-ruka",
+    "place": "Ruka / Kuusamo",
+    "country": "Finland",
+    "name": "Ruka — groceries and autumn shopping changes",
+    "type": "visitor guide",
+    "url": "https://www.ruka.fi/en/travelling-to-kuusamo/shopping",
+    "summary": "Sale Ruka is closed for renovation from 5 October through 23 November 2026; Ruka Alko is also closed through 23 November. The tourism authority points visitors to K-Market Rukankylä and Kuusamo town-centre shops during the closure. Check individual opening hours before stocking a self-catering stay.",
+    "tags": [
+      "Ruka",
+      "Finland",
+      "visitor guide"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ruka.fi/en/travelling-to-kuusamo/shopping",
+    "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
+  },
+  {
+    "id": "local-ruka-lift-planning",
+    "placeId": "finland-ruka",
+    "place": "Ruka / Kuusamo",
+    "country": "Finland",
+    "name": "Ruka — daily slopes, lifts and gondola status",
+    "type": "visitor guide",
+    "url": "https://www.ruka.fi/en/skiresort/slopes",
+    "summary": "Use the operator’s slope map for the actual lifts and runs open on your visit. The 2026–27 ski season began on 2 October, but early-season skiing does not mean the full network is operating. Gondola, Coaster and night skiing have separate schedules; wind, severe cold and storms can close lifts.",
+    "tags": [
+      "Ruka",
+      "Finland",
+      "visitor guide"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ruka.fi/en/skiresort/slopes",
+    "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
+  },
+  {
+    "id": "local-yllas-saaga-stay",
+    "placeId": "finland-yllas",
+    "place": "Ylläs / Ylläsjärvi",
+    "country": "Finland",
+    "name": "Lapland Hotels Saaga — seasonal apartment stays",
+    "type": "hotel",
+    "url": "https://www.laplandhotels.com/en/hotels-and-destinations/yllas/lapland-hotels-saaga",
+    "summary": "Accommodation at the southern Ylläs slopes. Through 24 November 2026 the operator offers apartments without breakfast, with reception and gym Monday–Friday 09:00–16:00; restaurants and spa are closed. The full hotel is scheduled to reopen on 25 November. Confirm the booked accommodation and arrival arrangements directly.",
+    "tags": [
+      "Ylläs",
+      "Finland",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.laplandhotels.com/en/hotels-and-destinations/yllas/lapland-hotels-saaga",
+    "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
+  },
+  {
+    "id": "local-yllas-saaga-dining",
+    "placeId": "finland-yllas",
+    "place": "Ylläs / Ylläsjärvi",
+    "country": "Finland",
+    "name": "Lapland Hotels Saaga — restaurant season planning",
+    "type": "restaurant",
+    "url": "https://www.laplandhotels.com/en/hotels-and-destinations/yllas/lapland-hotels-saaga/restaurants",
+    "summary": "Saaga’s restaurant page lists separate seasonal service for Biegga, Bistro and Tsohka. Breakfast is not served through 24 November 2026; Biegga is closed through 27 November, Bistro through 24 November, and Tsohka through 30 January 2027. Confirm the specific venue’s latest opening date and reserve directly; a hotel booking does not imply dining is available.",
+    "tags": [
+      "Ylläs",
+      "Finland",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.laplandhotels.com/en/hotels-and-destinations/yllas/lapland-hotels-saaga/restaurants",
+    "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
+  },
+  {
+    "id": "local-yllas-saaga-rental",
+    "placeId": "finland-yllas",
+    "place": "Ylläs / Ylläsjärvi",
+    "country": "Finland",
+    "name": "Saaga Ski Rental — Ylläsjärvi equipment",
+    "type": "equipment rental",
+    "url": "https://ski.yllas.fi/en/equipment-rental/yllasjarvi/",
+    "summary": "Ski-equipment rental and lift-ticket service at Lapland Hotels Saaga, Iso-Ylläksentie 42. The operator currently expects this branch to open near the beginning of December 2026, with hours tied to lift operation. Advance equipment booking is available; confirm the branch and pickup date rather than assuming autumn availability.",
+    "tags": [
+      "Ylläs",
+      "Finland",
+      "equipment rental"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://ski.yllas.fi/en/equipment-rental/yllasjarvi/",
+    "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
+  },
+  {
+    "id": "local-yllas-arrival-planning",
+    "placeId": "finland-yllas",
+    "place": "Ylläs / Lapland",
+    "country": "Finland",
+    "name": "Ylläs — arrival and choosing the correct village",
+    "type": "visitor guide",
+    "url": "https://ski.yllas.fi/en/about-us/arrival/",
+    "summary": "Plan arrival via Kittilä Airport or Kolari railway station and confirm the connecting transfer for your flight or train. Ylläsjärvi and Äkäslompolo lie on opposite sides of the fell, about 15 km apart by road. Match accommodation, rental branch and transfer stop to the correct village before booking.",
+    "tags": [
+      "Ylläs",
+      "Finland",
+      "visitor guide"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://ski.yllas.fi/en/about-us/arrival/",
+    "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
+  },
+  {
+    "id": "local-yllas-lift-planning",
+    "placeId": "finland-yllas",
+    "place": "Ylläs / Lapland",
+    "country": "Finland",
+    "name": "Ylläs — winter opening hours and daily slope map",
+    "type": "visitor guide",
+    "url": "https://ski.yllas.fi/en/slopes-and-lifts/opening-hours/",
+    "summary": "The operator expects the 2026–27 ski season to begin in November, with the exact start dependent on snow and weather. Lifts and slopes open progressively when ready; the slope map gives current operation and target dates. A working webcam or published winter timetable does not mean skiing or gondola access is available today.",
+    "tags": [
+      "Ylläs",
+      "Finland",
+      "visitor guide"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://ski.yllas.fi/en/slopes-and-lifts/opening-hours/",
+    "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
+  },
+  {
+    "id": "local-yllas-trail-planning",
+    "placeId": "finland-yllas",
+    "place": "Ylläs / Lapland",
+    "country": "Finland",
+    "name": "Ylläs — hiking routes and outdoor etiquette",
+    "type": "visitor guide",
+    "url": "https://yllas.fi/en/activity/hiking-and-trekking/",
+    "summary": "Compare routes on the correct side of the fell: the tourism authority describes the 8 km Pirunkurun ponnistus with a steep gorge ascent near Äkäslompolo and the 6 km Tuomikurun loop from the south ski resort. Use the outdoor map, check restrictions and current conditions, and carry water, food and warm layers. Summer route descriptions and webcam views do not establish safe autumn or winter passage.",
+    "tags": [
+      "Ylläs",
+      "Finland",
+      "visitor guide"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://yllas.fi/en/activity/hiking-and-trekking/",
+    "verifiedAt": "2026-10-12T01:22:59.457334+00:00"
   }
 ]
