@@ -269,6 +269,17 @@
       "lastReviewAt": "2026-10-12T14:58:18.271627Z",
       "action": "HOLD_UNTIL_NEW_CURRENT_LOCATION_MATCHED_PLAYBACK_EVIDENCE",
       "reviewOutcome": "No successful renewal; historical success and link-only permissions preserved."
+    },
+    {
+      "id": "taitung-jinzun",
+      "placeId": "taitung-jinzun",
+      "title": "Taitung Jinzun — Pacific Coast",
+      "country": "Taiwan",
+      "truth": "LIVE_VIDEO",
+      "health": "HEALTHY",
+      "lastReviewAt": "2026-10-12T16:54:40.342370Z",
+      "action": "HOLD_RENEWAL_UNTIL_DECODED_CURRENT_LOCATION_MATCHED_PLAYBACK",
+      "reviewOutcome": "INCONCLUSIVE: exact approved iframe loaded in deployed ERN review lab; Play video pressed, but two observations remained width/height/time zero and readyState zero. Historical success and playback verification unchanged; no provider-wide outage claim."
     }
   ],
   "currentReality": {

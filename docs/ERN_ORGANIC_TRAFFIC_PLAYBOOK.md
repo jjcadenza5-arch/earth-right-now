@@ -1,3 +1,7 @@
+## 2026-10-12 — Coast or valley: two different windows
+- Opening question: “Would you start by the water, or inland among the flowers?” Pair Coffs Harbour’s real boat-ramp video with Nana Glen’s explicitly refreshed bridge image, then let viewers choose waterfront dining/berthing or a seasonal flower-farm visit. The bridge camera does not show farm blooms; confirm those with the operator.
+- Use the new destination links only after deployment acceptance. Show actual source type and capture clock, not a historical/promotional image as a current scene. Night/rain review limits remain visible. Prepare an owner-created vertical ERN screen recording or original footage for Instagram/TikTok; Facebook can link directly to the chosen place with the question. No provider stream clips, posts, paid traffic or new campaign tracker. Assess the existing aggregate search/information-open procedure; no visitor demand or growth inferred from this editorial first-party lead.
+
 ## 2026-10-12 — Prepared Facebook / Instagram / TikTok themes
 These themes use destinations reviewed in this batch. Use an ERN page screen recording or your own original footage; keep the page’s actual source state visible. Identity: Earth Right Now — The Live Discovery Engine. Closing invitation: See before you go.
 
