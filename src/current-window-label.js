@@ -5,7 +5,7 @@ import { embedPlaybackProofCurrent } from "./playback-proof.js";
 
 export function currentWindowEyebrow(source,{now=new Date()}={}){
  if(!source)return"SOURCE";
- if(source.truth==="PREVIEW"||source.playback==="PREVIEW")return"REFERENCE IMAGE";
+ if(source.truth==="PREVIEW"||source.playback==="PREVIEW")return source.referenceMediaType==="VIDEO"?"REFERENCE VIDEO":"REFERENCE IMAGE";
  if(!currentSource(source,{now}))return source.health==="UNKNOWN"?"SOURCE CHECK":source.health==="DEGRADED"?"LIMITED SOURCE":"SOURCE";
  if(source.playback==="EMBED"&&!embedPlaybackProofCurrent(source,{now}))return"PLAYBACK RECHECK DUE";
  if(source.truth==="LIVE_IMAGE")return nowEvidenceClass(source,{now}).nearNow?"NEAR-NOW IMAGE":"IMAGE SOURCE";
@@ -17,7 +17,7 @@ export function currentWindowEyebrow(source,{now=new Date()}={}){
 export function currentWindowAction(source,{now=new Date()}={}){
  const cap=playbackCapability(source,{now});
  if(cap.action==="UNAVAILABLE")return"Unavailable";
- if(source?.truth==="PREVIEW"||source?.playback==="PREVIEW")return"View reference image";
+ if(source?.truth==="PREVIEW"||source?.playback==="PREVIEW")return source.referenceMediaType==="VIDEO"?"View reference video":"View reference image";
  if(!currentSource(source,{now}))return cap.action==="EXTERNAL"?"Open source":"View source";
  if(source.playback==="EMBED"&&!embedPlaybackProofCurrent(source,{now}))return"View source";
  if(cap.action==="EXTERNAL")return nowEvidenceClass(source,{now}).nearNow?"Open near-now source":"Open source";

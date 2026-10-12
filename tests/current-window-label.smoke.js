@@ -1,3 +1,4 @@
+import assert from "node:assert/strict";
 import { currentWindowEyebrow,currentWindowAction } from "../src/current-window-label.js";
 const now=new Date();
 const iso=now.toISOString();
@@ -13,3 +14,8 @@ const staleProof={...freshEmbed,playbackVerifiedAt:new Date(now.getTime()-25*36e
 console.assert(currentWindowEyebrow(staleProof,{now})==="PLAYBACK RECHECK DUE");
 console.assert(currentWindowAction(staleProof,{now})==="View source");
 console.log("ERN current window labels fail closed when embed playback proof expires");
+
+const recorded={...external,truth:"PREVIEW",referenceMediaType:"VIDEO"};
+assert.equal(currentWindowEyebrow(recorded,{now}),"REFERENCE VIDEO");
+assert.equal(currentWindowAction(recorded,{now}),"View reference video");
+assert.equal(currentWindowEyebrow({...recorded,referenceMediaType:"IMAGE"},{now}),"REFERENCE IMAGE");
