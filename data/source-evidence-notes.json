@@ -357,7 +357,12 @@
       "id": "flam-fjord-official",
       "checkedAt": "2026-09-28T16:52:00Z",
       "sourceUrl": "https://www.norwaysbest.com/en/flam/flam-webcam",
-      "storyDetail": "Official real-time views across Flåm, Aurland and the fjord landscape, including downtown and vessel perspectives."
+      "storyDetail": "Official real-time views across Flåm, Aurland and the fjord landscape, including downtown and vessel perspectives.",
+      "boundedBrowserReview": {
+        "reviewedAt": "2026-10-12T10:49:24.160550Z",
+        "evidence": "Flåm Downtown Webcam modal decoded location-matched 1920x1080 JPG from webcam.flam.no/flam/flam15.jpg. No capture timestamp or continuous moving video established. Historical successful date retained; do not infer video truth from live heading.",
+        "next": "Hold current-view promotion; revisit on new dated/reliable actual-playback evidence, preserving LINK_ONLY and EXTERNAL permissions."
+      }
     },
     {
       "id": "amden-walensee-official",
@@ -870,6 +875,30 @@
         "reviewedAt": "2026-10-12T06:13:56.216888Z",
         "evidence": "Official page labels Now playing but browser showed an ordinary static promotional image, no capture timestamp and no camera/video element. No current camera evidence established; previous successful verification date retained.",
         "next": "Keep LINK_ONLY, EXTERNAL and existing promotion holds. Revisit only with new dated camera evidence; no ordinary promotional photo as current view."
+      }
+    },
+    {
+      "id": "gudauri-current-page",
+      "boundedBrowserReview": {
+        "reviewedAt": "2026-10-12T10:49:24.160550Z",
+        "evidence": "Shared Gudauri.com page renders YouTube OdcZdWKQ6u0 Video unavailable; zero videoWidth/currentTime/readyState. Header snow report is not camera evidence.",
+        "next": "Hold current-view promotion; revisit on new dated/reliable actual-playback evidence, preserving LINK_ONLY and EXTERNAL permissions."
+      }
+    },
+    {
+      "id": "kobi-current-page",
+      "boundedBrowserReview": {
+        "reviewedAt": "2026-10-12T10:49:24.160550Z",
+        "evidence": "Same catalog sourceUrl as Gudauri; shared provider page explicitly Video unavailable. No separate Kobi view was established, and no nearby-view substitution made.",
+        "next": "Hold current-view promotion; revisit on new dated/reliable actual-playback evidence, preserving LINK_ONLY and EXTERNAL permissions."
+      }
+    },
+    {
+      "id": "thailand-koh-samui-crystal-bay-live",
+      "boundedBrowserReview": {
+        "reviewedAt": "2026-10-12T10:49:24.160550Z",
+        "evidence": "Official resort Explore tab / Play the live beach cam opens YouTube Fw9hgttWzIg but rendered black; videoWidth 0, readyState 0, currentTime 0 in bounded review. No successful playback renewal; no bot block or global outage inferred. Direct provider-linked YouTube watch page Fw9hgttWzIg identified The Real Samui Webcam and watching-now metadata, but Play still left a black player with zero decoded dimensions/currentTime/readyState. Metadata alone is not successful playback.",
+        "next": "Hold current-view promotion; revisit on new dated/reliable actual-playback evidence, preserving LINK_ONLY and EXTERNAL permissions."
       }
     }
   ]

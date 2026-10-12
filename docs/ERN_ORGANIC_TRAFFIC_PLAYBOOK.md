@@ -1,3 +1,12 @@
+## 2026-10-12 — Destination-search interest: owner-managed next stories
+Observed evidence: owner Search Console rolling-24h screenshot shows one click each for Flåm, Gudauri and Crystal Bay, alongside other destinations. This is an early lead, not repeated-demand proof or attribution to a social campaign.
+
+- Flåm: “A fjord stop, or a longer stay?” Link https://earthrightnow.app/places/flam-aurlandsfjord/ and help viewers compare room views, port arrivals and seasonal bicycle availability. October 9 was the last published bike-rental opening date; confirm future operation before suggesting a ride.
+- Silver Beach: “Same bay, three different ways to visit.” Link https://earthrightnow.app/places/thailand-koh-samui-crystal-bay/ and distinguish beachfront rooms, hillside villas, dining and arrival advice. Historical cover is not today’s sea-condition evidence.
+- Gudauri: “What would you plan before going up into the mountains?” Link https://earthrightnow.app/places/gudauri-ski-area/ for hotel, dining, rental, transfer and seasonal guidance. Camera source is currently unavailable in ERN’s bounded review; do not promote it as a working live stream.
+
+Use the owner’s existing Facebook/Instagram/TikTok accounts only when the owner chooses to publish. No post or outreach made, no paid traffic, no new campaign tracker. Review existing aggregate result opens/searches and outbound-source clicks over the next suitable observation window; repeated interest plus credible current-camera evidence can raise research priority. Do not infer conversion from outbound clicks.
+
 ## 2026-10-11 — Three planning-led sharing themes (owner-managed)
 - Levi: choose the actual lift and season before choosing a fell outing; contrast summer route maps with winter family transport.
 - Plitvice: pick an entrance and a route before buying a time-slot ticket; distinguish park opening from last return services and mobility limitations.

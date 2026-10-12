@@ -225,6 +225,30 @@
       "failureReason": "AUTOMATED_HEALTH_REPEATED_ACCESS_BLOCK_BUT_OFFICIAL_VISITMALTA_LIVE_CAM_GATEWAY_CURRENTLY_CONFIRMED",
       "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
       "blocksBaseline": false
+    },
+    {
+      "id": "gudauri-current-page",
+      "placeId": "gudauri-ski-area",
+      "title": "Gudauri — Ski Area",
+      "country": "Georgia",
+      "truth": "LIVE_IMAGE",
+      "health": "DEGRADED",
+      "failureReason": "Shared provider page YouTube OdcZdWKQ6u0 explicitly Video unavailable; no current view established.",
+      "lastReviewAt": "2026-10-12T10:49:24.160550Z",
+      "action": "HOLD_UNTIL_NEW_CURRENT_LOCATION_MATCHED_PLAYBACK_EVIDENCE",
+      "reviewOutcome": "Shared source page is unavailable in bounded deployed-browser review; no blanket Gudauri/Kobi camera promotion."
+    },
+    {
+      "id": "kobi-current-page",
+      "placeId": "gudauri-kobi",
+      "title": "Kobi — Greater Caucasus",
+      "country": "Georgia",
+      "truth": "LIVE_IMAGE",
+      "health": "DEGRADED",
+      "failureReason": "Shared provider page YouTube OdcZdWKQ6u0 explicitly Video unavailable; no current view established.",
+      "lastReviewAt": "2026-10-12T10:49:24.160550Z",
+      "action": "HOLD_UNTIL_NEW_CURRENT_LOCATION_MATCHED_PLAYBACK_EVIDENCE",
+      "reviewOutcome": "Shared source page is unavailable in bounded deployed-browser review; no blanket Gudauri/Kobi camera promotion."
     }
   ],
   "currentReality": {

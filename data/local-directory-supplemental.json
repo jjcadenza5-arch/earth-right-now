@@ -7776,5 +7776,383 @@
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/aoraki-mount-cook-national-park/things-to-do/white-horse-hill-campground/",
     "verifiedAt": "2026-10-12T06:13:56.216888Z"
+  },
+  {
+    "id": "local-interest-carpediem-stay",
+    "placeId": "gudauri-ski-area",
+    "place": "Gudauri",
+    "country": "Georgia",
+    "name": "Hotel Carpe Diem — Gudauri stay",
+    "type": "hotel",
+    "url": "https://carpediem.ge/ourhotel/",
+    "summary": "Mountain hotel with several room categories, ski storage and an on-site rental shop. Confirm the selected room, meal inclusions and seasonal services directly; a snowy photograph does not establish that lifts are operating.",
+    "tags": [
+      "Gudauri",
+      "Georgia",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://carpediem.ge/ourhotel/",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-carpediem-montis",
+    "placeId": "gudauri-ski-area",
+    "place": "Gudauri",
+    "country": "Georgia",
+    "name": "Montis at Hotel Carpe Diem",
+    "type": "restaurant",
+    "url": "https://carpediem.ge/restaurant/",
+    "summary": "Georgian and European dining at Hotel Carpe Diem. The restaurant publishes a menu and separate breakfast, restaurant and bar hours; confirm current service and table availability before travelling.",
+    "tags": [
+      "Gudauri",
+      "Georgia",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://carpediem.ge/restaurant/",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-carpediem-rental",
+    "placeId": "gudauri-ski-area",
+    "place": "Gudauri",
+    "country": "Georgia",
+    "name": "Carpe Diem — ski rental and instruction",
+    "type": "ski rental activity",
+    "url": "https://carpediem.ge/ski-rental/",
+    "summary": "Ski and snowboard equipment, boots and helmets, with instructor enquiries through the rental department. Confirm seasonal opening, equipment fit and lesson arrangements; rentals do not establish current slope access.",
+    "tags": [
+      "Gudauri",
+      "Georgia",
+      "ski rental activity"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://carpediem.ge/ski-rental/",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-carpediem-transfer",
+    "placeId": "gudauri-ski-area",
+    "place": "Gudauri",
+    "country": "Georgia",
+    "name": "Carpe Diem — Tbilisi airport transfer",
+    "type": "transport",
+    "url": "https://carpediem.ge/transfer-service/",
+    "summary": "Airport transfers offered to hotel guests, with vehicle sizes and separate booking contact on the operator page. Confirm pickup, luggage capacity and the current quote directly rather than treating approximate published rates as a guarantee.",
+    "tags": [
+      "Gudauri",
+      "Georgia",
+      "transport"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://carpediem.ge/transfer-service/",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-gudauri-arrival",
+    "placeId": "gudauri-ski-area",
+    "place": "Gudauri",
+    "country": "Georgia",
+    "name": "Gudauri — mountain-road arrival planning",
+    "type": "visitor information",
+    "url": "https://georgia.travel/resorts/gudauri",
+    "summary": "Georgia’s tourism guide describes the approach from Tbilisi through the Georgian Military Road and into the mountains. Allow for the winding final ascent and confirm route conditions before leaving; quoted travel times are estimates.",
+    "tags": [
+      "Gudauri",
+      "Georgia",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://georgia.travel/resorts/gudauri",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-gudauri-winter",
+    "placeId": "gudauri-ski-area",
+    "place": "Gudauri",
+    "country": "Georgia",
+    "name": "Gudauri — winter trip preparation",
+    "type": "visitor information",
+    "url": "https://georgia.travel/gudauri-in-winter",
+    "summary": "Plan winter transport and activities using the national tourism guide. Snow and weather can change road and mountain access; check local operating information and warnings rather than inferring conditions from a destination cover.",
+    "tags": [
+      "Gudauri",
+      "Georgia",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://georgia.travel/gudauri-in-winter",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-gudauri-lifts",
+    "placeId": "gudauri-ski-area",
+    "place": "Gudauri",
+    "country": "Georgia",
+    "name": "Gudauri and Kobi — seasonal lift information",
+    "type": "visitor information",
+    "url": "https://mta.ski/en/presscenter/SummerGudauri26_ENG",
+    "summary": "The lift operator’s July 2026 announcement identifies the summer Gudauri and Kobi services. It is a seasonal planning reference, not proof of October operation; confirm the current schedule with MTA before buying tickets or travelling.",
+    "tags": [
+      "Gudauri",
+      "Georgia",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://mta.ski/en/presscenter/SummerGudauri26_ENG",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-fretheim-stay",
+    "placeId": "flam-aurlandsfjord",
+    "place": "Flåm",
+    "country": "Norway",
+    "name": "Fretheim Hotel — compare room views",
+    "type": "hotel",
+    "url": "https://www.norwaysbest.com/en/flam/accommodation/fretheim-hotel",
+    "summary": "Historic hotel near the railway terminus with several room categories. Standard and family rooms can face the mountains or cultural park rather than the fjord; confirm the selected room and view before booking.",
+    "tags": [
+      "Flåm",
+      "Norway",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.norwaysbest.com/en/flam/accommodation/fretheim-hotel",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-flam-sauna",
+    "placeId": "flam-aurlandsfjord",
+    "place": "Flåm",
+    "country": "Norway",
+    "name": "Floating Fjordsauna in Flåm",
+    "type": "activity",
+    "url": "https://www.norwaysbest.com/en/flam/things-to-do/fjordsauna-flam",
+    "summary": "Book a shared or private session by the quay, a short walk from the station. The operator lists a minimum age of twelve and adult accompaniment under eighteen; bring swimwear and towels and check session availability.",
+    "tags": [
+      "Flåm",
+      "Norway",
+      "activity"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.norwaysbest.com/en/flam/things-to-do/fjordsauna-flam",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-flam-bike",
+    "placeId": "flam-aurlandsfjord",
+    "place": "Flåm",
+    "country": "Norway",
+    "name": "Flåm Bike Rental — seasonal availability",
+    "type": "bike rental activity",
+    "url": "https://www.norwaysbest.com/en/flam/things-to-do/flam-bike-rental",
+    "summary": "Village bicycle and e-bike rental with helmets. The published 2026 opening schedule ends October 9; confirm any later availability directly. Taking a bike on the Flåm Railway requires a separate bike ticket.",
+    "tags": [
+      "Flåm",
+      "Norway",
+      "bike rental activity"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.norwaysbest.com/en/flam/things-to-do/flam-bike-rental",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-flam-port-facilities",
+    "placeId": "flam-aurlandsfjord",
+    "place": "Flåm",
+    "country": "Norway",
+    "name": "Flåm — cruise-quay facilities and distances",
+    "type": "visitor information",
+    "url": "https://www.flamport.no/cruise",
+    "summary": "The port lists restrooms in the pier area, public transport and a short distance to the village centre. Allow time for your own ship’s disembarkation or tender process and onward transport; no universal shuttle is promised.",
+    "tags": [
+      "Flåm",
+      "Norway",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.flamport.no/cruise",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-flam-port-arrivals",
+    "placeId": "flam-aurlandsfjord",
+    "place": "Flåm",
+    "country": "Norway",
+    "name": "Flåm — port arrival calendar",
+    "type": "visitor information",
+    "url": "https://www.flamport.no/arrival-list",
+    "summary": "Consult the port’s Ship Arrivals 2026 page when planning a harbour visit or shore excursion. Reconfirm arrangements with the port or your cruise operator; a camera photograph does not establish today’s ship movements.",
+    "tags": [
+      "Flåm",
+      "Norway",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.flamport.no/arrival-list",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-samui-yachtclub",
+    "placeId": "thailand-koh-samui-crystal-bay",
+    "place": "Silver Beach / Crystal Bay",
+    "country": "Thailand",
+    "name": "Crystal Bay Yacht Club — villas above the bay",
+    "type": "hotel",
+    "url": "https://crystalbaysamui.com/yachtclub/",
+    "summary": "Compare hillside garden villas, sea-view rooms and beachfront categories at this separate property above Silver Beach. Walking routes and room position vary; confirm access and the selected villa rather than assuming every room is directly on the sand.",
+    "tags": [
+      "Silver Beach / Crystal Bay",
+      "Thailand",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://crystalbaysamui.com/yachtclub/",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-samui-saffron",
+    "placeId": "thailand-koh-samui-crystal-bay",
+    "place": "Silver Beach / Crystal Bay",
+    "country": "Thailand",
+    "name": "Saffron at Banyan Tree Samui — nearby dining",
+    "type": "restaurant",
+    "url": "https://www.banyantree.com/thailand/samui/dining/saffron",
+    "summary": "Thai dinner restaurant at the separate Banyan Tree Samui property in Maret, outside the Crystal Bay resort. The operator lists smart-casual dress and a minimum age of seven; confirm reservations and transport directly.",
+    "tags": [
+      "Silver Beach / Crystal Bay",
+      "Thailand",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.banyantree.com/thailand/samui/dining/saffron",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-samui-airport",
+    "placeId": "thailand-koh-samui-crystal-bay",
+    "place": "Silver Beach / Crystal Bay",
+    "country": "Thailand",
+    "name": "Crystal Bay Beach Resort — airport transfer enquiries",
+    "type": "transport",
+    "url": "https://crystalbaysamui.com/beachresort/airport-transfer.php",
+    "summary": "Arrange a private transfer from Samui Airport through the resort. The operator requests at least twenty-four hours’ notice and email confirmation; confirm vehicle capacity, luggage and the current price before travelling.",
+    "tags": [
+      "Silver Beach / Crystal Bay",
+      "Thailand",
+      "transport"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://crystalbaysamui.com/beachresort/airport-transfer.php",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-samui-location",
+    "placeId": "thailand-koh-samui-crystal-bay",
+    "place": "Silver Beach / Crystal Bay",
+    "country": "Thailand",
+    "name": "Silver Beach — location and property addresses",
+    "type": "visitor information",
+    "url": "https://crystalbaysamui.com/beachresort/contact.php",
+    "summary": "Silver Beach lies between Chaweng and Lamai along Route 4169. Beach Resort and Yacht Club have different addresses and reception arrangements; identify your property and confirm late arrival before setting out.",
+    "tags": [
+      "Silver Beach / Crystal Bay",
+      "Thailand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://crystalbaysamui.com/beachresort/contact.php",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-samui-access",
+    "placeId": "thailand-koh-samui-crystal-bay",
+    "place": "Silver Beach / Crystal Bay",
+    "country": "Thailand",
+    "name": "Crystal Bay — hillside access and beach names",
+    "type": "visitor information",
+    "url": "https://crystalbaysamui.com/yachtclub/about.php",
+    "summary": "Crystal Bay, Silver Beach and Thong Takhian name the same cove. Yacht Club accommodation is spread on the hillside above it; ask about walking gradients and shuttle arrangements for your room, especially if step-free access matters.",
+    "tags": [
+      "Silver Beach / Crystal Bay",
+      "Thailand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://crystalbaysamui.com/yachtclub/about.php",
+    "verifiedAt": "2026-10-12T10:49:24.160550Z"
+  },
+  {
+    "id": "local-interest-samui-ferry",
+    "placeId": "thailand-koh-samui-crystal-bay",
+    "place": "Silver Beach / Crystal Bay",
+    "country": "Thailand",
+    "name": "Silver Beach — mainland ferry arrival planning",
+    "type": "visitor information",
+    "url": "https://crystalbaysamui.com/beachresort/getting-here.php",
+    "summary": "Surat Thani Airport is on the mainland and requires an onward ferry journey to Koh Samui. The resort states that it does not meet arriving ferries; arrange your own pier-to-resort transport and confirm the correct arrival pier.",
+    "tags": [
+      "Silver Beach / Crystal Bay",
+      "Thailand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://crystalbaysamui.com/beachresort/getting-here.php",
+    "verifiedAt": "2026-10-12T10:51:56.753165Z"
   }
 ]
