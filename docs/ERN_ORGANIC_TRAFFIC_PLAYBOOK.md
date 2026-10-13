@@ -1,3 +1,7 @@
+## 2026-10-13 — River street or mountain walk? (owner-managed theme)
+
+Hook: “Would you stay by Takayama’s river, or plan a mountain day trip?” Use an original ERN navigation recording showing the refreshed-image label, then the reviewed city transport and separate Kamikochi planning links. The Takayama camera does not show Kamikochi. Link to the Takayama ERN destination after release acceptance. Facebook: destination link and question; Instagram/TikTok: a short navigation recording with the question and profile-link invitation. Do not copy provider camera footage or the permission-held lodge image. Review existing aggregate searches/result opens; no new tracking, posts, paid campaign or attribution claim.
+
 ## 2026-10-13 — Choose your window (owner-managed theme)
 
 Hook: “Would you watch motion, or pause on a refreshed view?” Show ERN’s Places availability choices, then open a relevant destination and its clearly labelled provider source. Use an original ERN navigation recording; do not copy provider-stream footage. Link to https://earthrightnow.app/places/ . Live video and refreshed images are distinct, and visitor information can remain useful while a current source awaits review. Facebook: a question with the directory link; Instagram/TikTok: brief screen recording with the same question and profile-link invitation. Assess through existing aggregate searches/result opens, without claiming unique outside visitors or campaign attribution. Prepared only; no social post or paid campaign sent.

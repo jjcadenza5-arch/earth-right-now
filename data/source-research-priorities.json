@@ -79,7 +79,7 @@
     }
   },
   "currentStaleDebt": {
-    "total": 3,
+    "total": 2,
     "principle": "Use the current 760-record / 751-place production baseline. Degraded debt is heterogeneous; repair only when it adds unique visitor value and never promote without current evidence.",
     "items": [
       {
@@ -89,12 +89,6 @@
         "action": "Independently verify exact public camera playback before any health/currentness promotion."
       },
       {
-        "id": "takayama-miyagawa-current-image",
-        "class": "STALE_COMPANION_IMAGE",
-        "priority": "LOW",
-        "action": "Keep degraded; the healthy Takayama live stream already covers the place. Repair only if the image source becomes truly current again."
-      },
-      {
         "id": "chidori-sakura",
         "class": "SEASONAL_OFF_SEASON",
         "priority": "LOW_UNTIL_SEASON_OR_MATERIAL_CHANGE",
@@ -102,9 +96,9 @@
       }
     ],
     "latestReconciliation": {
-      "reviewedAt": "2026-10-12T05:43:26.625550+00:00",
-      "id": "jungfrau-region",
-      "outcome": "Fresh negative provider review resolves overdue-check classification only; cameras remain offline/DEGRADED with null successful check. Outage hold remains in source-maintenance-priority.json and evidence sidecar."
+      "reviewedAt": "2026-10-13T03:01:26.518239Z",
+      "id": "takayama-miyagawa-current-image",
+      "outcome": "Current-image recovery verified with two decoded dated images; removed only resolved persistent stale-image debt. Separate video rejection/renewal hold remains unchanged."
     }
   },
   "searchDemandGaps": {

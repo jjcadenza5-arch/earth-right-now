@@ -20,11 +20,12 @@
       "placeId": "takayama-miyagawa",
       "title": "Takayama — Miyagawa Current Images",
       "country": "Japan",
-      "health": "DEGRADED",
+      "health": "HEALTHY",
       "truth": "LIVE_IMAGE",
-      "failureReason": "Provider page rechecked on 2026-10-03, but latest visible Miyagawa images were dated 2026-09-21 rather than current.",
-      "action": "KEEP_DEGRADED_COMPANION_ONLY_LIVE_STREAM_ALREADY_COVERS_PLACE",
-      "blocks250Milestone": false
+      "action": "MAINTAIN_VERIFIED_LINK_ONLY_REFRESHED_IMAGE; STREAM_RENEWAL_REQUIRES_SEPARATE_PLAYBACK",
+      "blocks250Milestone": false,
+      "lastReviewAt": "2026-10-13T03:01:26.518239Z",
+      "reviewOutcome": "1920x1440 decoded bridge image changed from 2026-10-13 11:54 to 11:57 Japan local time; successful current-image recovery, not video playback."
     },
     {
       "id": "jungfrau-region",

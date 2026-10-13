@@ -1,0 +1,39 @@
+{
+  "reviewedAt": "2026-10-13T03:01:26.518239Z",
+  "basis": "ASSISTANT_BROWSER_RENDERED_OBSERVATIONS; not owner-reported acceptance",
+  "restoredSource": "takayama-miyagawa-current-image",
+  "truth": "LIVE_IMAGE",
+  "permission": "LINK_ONLY",
+  "playback": "EXTERNAL",
+  "sourceUrl": "https://takayama-live.com/",
+  "samples": [
+    {
+      "width": 1920,
+      "height": 1440,
+      "complete": true,
+      "captureLabel": "2026年10月13日 11時54分",
+      "imagePath": "/livecam/cam01/26_1013_1154.jpg"
+    },
+    {
+      "width": 1920,
+      "height": 1440,
+      "complete": true,
+      "captureLabel": "2026年10月13日 11時57分",
+      "imagePath": "/livecam/cam01/26_1013_1157.jpg"
+    }
+  ],
+  "observation": "Actual dated image update observed; bridge traffic visibly changed. Existing first-party location identifies Miyagawa/Kaji Bridge. Asia/Tokyo inferred from the Japanese location; provider labels have minute precision. No capture seconds invented.",
+  "permissionBasis": "Existing LINK_ONLY retained; first-party public camera context and About page reviewed, no embedding or image redistribution permission inferred.",
+  "providerCadence": "Three minutes reported; one observed three-minute label increment. Reload required.",
+  "streamRenewed": false,
+  "newCameras": 0,
+  "newPhotographs": 0,
+  "newAffiliateRelationships": 0,
+  "localRecordsAdded": 10,
+  "businessesAdded": 4,
+  "visitorGuidesAdded": 6,
+  "holds": [
+    "japan-kamikochi-gosenjaku-live",
+    "japan-kamikochi-nishiitoya-current"
+  ]
+}

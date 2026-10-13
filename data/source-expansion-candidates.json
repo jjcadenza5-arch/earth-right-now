@@ -7811,6 +7811,36 @@
       "holdReason": "Bounded browser review showed media could not be loaded and provider technical-issues wording; zero decoded video. This does not establish a global outage.",
       "nextReviewTrigger": "MATERIAL_PROVIDER_OR_PLAYER_CHANGE",
       "automaticPromotionAllowed": false
+    },
+    {
+      "id": "japan-kamikochi-gosenjaku-live",
+      "title": "Kamikochi — Gosenjaku Hotel / Kappa Bridge",
+      "country": "Japan",
+      "region": "Kamikochi / Nagano",
+      "provider": "Gosenjaku Hotel",
+      "sourcePage": "https://www.gosenjaku.co.jp/english/live-camera/",
+      "priority": "P1_FIRST_PARTY_CURRENT_VIEW",
+      "state": "HUMAN_PLAYBACK_REQUIRED",
+      "researchHold": true,
+      "lastReviewedAt": "2026-10-13T03:01:26.518239Z",
+      "holdReason": "Official page explicitly permits links attributed to Gosenjaku Hotel, but exact CamStreamer video stayed black: width/height/time/readyState zero; duration 3600 is not live proof. Promotional videos excluded.",
+      "nextReviewTrigger": "MATERIAL_PROVIDER_OR_PLAYER_CHANGE",
+      "automaticPromotionAllowed": false
+    },
+    {
+      "id": "japan-kamikochi-nishiitoya-current",
+      "title": "Kamikochi — Nishi-ito-ya Hotaka Image",
+      "country": "Japan",
+      "region": "Kamikochi / Nagano",
+      "provider": "Kamikochi Nishi-ito-ya Mountain Lodge",
+      "sourcePage": "https://www.nishiitoya.com/en/camera/",
+      "priority": "P1_FIRST_PARTY_CURRENT_VIEW",
+      "state": "PERMISSION_REQUIRED",
+      "researchHold": true,
+      "lastReviewedAt": "2026-10-13T03:01:26.518239Z",
+      "holdReason": "1920x1080 decoded camera image with current 2026-10-13 11:51:08 capture, but published English terms prohibit links in principle and specifically commercial/profit-purpose links. No public source, business link, hotlink or photo reuse admitted.",
+      "nextReviewTrigger": "EXPLICIT_PROVIDER_LINKING_PERMISSION",
+      "automaticPromotionAllowed": false
     }
   ],
   "notes": [
