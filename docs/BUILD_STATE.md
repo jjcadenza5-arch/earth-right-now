@@ -1,3 +1,12 @@
+## 2026-10-13 — Source-type discovery release accepted
+
+- Published release **5f3174f7f2203765d9a5bfd5f7db734bb138669b**. Exact-SHA Pages **38333863432**, JavaScript Syntax **38333863403** and Operations **38333863381** all **SUCCESS**. All **120 smoke files + 40 local build/preflight commands PASS**, including source truth, SEO, accessibility, mobile, performance, commercial neutrality, public-OFF and rollback.
+- Production manifest **2026-10-13T01:50:17.788Z**; **10 served artifact hashes PASS** at **2026-10-13T01:51:27.363630Z**. Core/supplemental source catalogs and local directory equal the committed data; camera and business counts are unchanged. Scheduled current-image pilot renewal from b5ac73ec preserved.
+- Deployed browser confirmed nine refreshed-image destinations in the new image filter; Nana Glen plus visitor guides resolves to one current-image destination, with Current Image page title/heading. Coffs Harbour live-video query plus guides resolves to one live-video destination; switching to refreshed images gives truthful empty recovery. Kolhapur plus awaiting-verification/guides resolves to useful information with zero current views. Shareable availability/query/resource inputs initialize correctly. No provider playback or verification date renewed by these interface checks.
+- Image-only page title, heading, Open Graph/Twitter previews and WebPage schema distinguish refreshed images; verified live-video titles and information-only titles retain their respective wording. Filters use existing source currentness/schedule gates, not directory records as camera evidence. Current totals remain time-dependent as existing verification ages, rather than new count claims.
+- Directory **407 reviewed records / 94 destinations**, approved photos **42**, **zero new cameras or affiliate relationships** in this interface batch. Existing design, numbered Atlas, original deployment, strict budgets, rollback protections and ranking preserved; no new homepage dependency, tracker or research queue. Public submissions/gated features OFF; paid traffic HOLD.
+- Organic playbook includes the owner-managed “Choose your window” theme. No social post, paid campaign, traffic-growth, booking or revenue claim.
+
 ## 2026-10-13 — Source-type discovery and sharing batch
 
 - Resumed from verified GitHub main b5ac73ec22325d140768a1dc8bd8bafef6f6d171; preserved the scheduled current-image pilot renewal and all prior source evidence.
