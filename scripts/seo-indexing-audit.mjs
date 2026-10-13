@@ -85,7 +85,7 @@ for(const rel of files){
     if(isIndexable)indexedDestinations++;
     if(isIndexable&&!inSitemap)issues.push({code:"INDEXABLE_DESTINATION_NOT_IN_SITEMAP",rel,canonical});
     if(noindex&&inSitemap)issues.push({code:"NOINDEX_DESTINATION_IN_SITEMAP",rel,canonical});
-    if(isIndexable&&!/Live Now \| Earth Right Now<\/title>/i.test(html)&&!/Live View \| Earth Right Now<\/title>/i.test(html))issues.push({code:"DESTINATION_TITLE_PATTERN_WEAK",rel,title});
+    if(isIndexable&&!/Live Now \| Earth Right Now<\/title>/i.test(html)&&!/(?:Live View|Current Image) \| Earth Right Now<\/title>/i.test(html))issues.push({code:"DESTINATION_TITLE_PATTERN_WEAK",rel,title});
     if(isIndexable&&!/"@type":"Place"/.test(html))issues.push({code:"DESTINATION_PLACE_SCHEMA_MISSING",rel});
     if(isIndexable&&!/ERN source status/.test(html))issues.push({code:"DESTINATION_STATUS_SCHEMA_MISSING",rel});
     if(isIndexable&&!/Provider source/.test(html))warnings.push({code:"DESTINATION_PROVIDER_ATTRIBUTION_NOT_VISIBLE",rel});

@@ -13,7 +13,7 @@ export function placeDirectoryRuntime(){
       const state=row.dataset.viewState;
       const guides=Number(row.dataset.guideCount)||0,locals=Number(row.dataset.localCount)||0;
       const hasResources=resourceMode==="guides"?guides>0:resourceMode==="local"?locals>0:resourceMode==="any"?guides+locals>0:true;
-      const ok=hasResources&&tokens.every(t=>text.includes(t))&&(mode==="current"?state==="current":mode==="verified"?state==="current"||state==="scheduled":true);
+      const ok=hasResources&&tokens.every(t=>text.includes(t))&&(mode==="current"?state==="current":mode==="verified"?state==="current"||state==="scheduled":mode==="reference"?state==="reference":mode==="video"?state==="current"&&Number(row.dataset.videoCount)>0:mode==="image"?state==="current"&&Number(row.dataset.imageCount)>0:true);
       row.hidden=!ok;
       if(ok){shown++;if(state==="current")current++;else if(state==="scheduled")scheduled++;else reference++;}
     }
@@ -24,7 +24,7 @@ export function placeDirectoryRuntime(){
   const params=new URLSearchParams(location.search);
   input.value=params.get("q")||"";
   const mode=params.get("availability");
-  if(["all","current","verified"].includes(mode))availability.value=mode;
+  if(["all","current","verified","reference","video","image"].includes(mode))availability.value=mode;
   const resourceMode=params.get("resources");
   if(resources&&["all","guides","local","any"].includes(resourceMode))resources.value=resourceMode;
   resources?.addEventListener("change",run);

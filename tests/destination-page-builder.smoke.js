@@ -87,12 +87,16 @@ try{
   const html=readFileSync(join(fixture,'places',current.placeId,'index.html'),'utf8');
   const imageHtml=readFileSync(join(fixture,'places',externalImage.placeId,'index.html'),'utf8');
   assert.ok(imageHtml.includes('Playback: refreshed current image at source'));
+  assert.ok(imageHtml.includes(' Current Image | Earth Right Now</title>'));
+  assert.ok(imageHtml.includes(' — current image</h1>'));
+  assert.ok(!imageHtml.slice(0,imageHtml.indexOf('</head>')).includes(' Live Now'),'image-only title and share previews must not promise live video');
   assert.ok(imageHtml.includes('href="https://camera.example.test/panorama/" rel="noopener noreferrer">Open current image source'));
   assert.ok(!imageHtml.includes('live stream available at source'),'a refreshed panorama must not become a continuous-live claim');
   assert.ok(!imageHtml.includes('>Open live source</a>'));
   assert.ok(imageHtml.includes('provider-hosted refreshed image'),'structured playback facts must preserve image truth');
   const externalHtml=readFileSync(join(fixture,'places',externalVideo.placeId,'index.html'),'utf8');
   assert.ok(externalHtml.includes('Playback: live stream available at source'));
+  assert.ok(externalHtml.includes(' Live Now | Earth Right Now</title>'),'verified live video keeps its live title');
   assert.ok(externalHtml.includes('href="https://operator.example.test/cameras/" rel="noopener noreferrer">Open live source'));
   const verifiedHtml=readFileSync(join(fixture,'places',verifiedVideo.placeId,'index.html'),'utf8');
   assert.ok(verifiedHtml.includes('<a target="_blank" href="https://camera.example.test/panorama/" rel="noopener noreferrer">Open live source'),'explicitly verified current source handoff must reach the reviewed player without framing');
@@ -194,10 +198,10 @@ function resourceDirectory(search=''){
   const input=control('query',''),availability=control('availability','all'),resources=control('resources','all');
   const status={},empty={},more={};
   const rows=[
-    {dataset:{search:'Sorobon Bonaire Dunkerbeck Pro Center Reef Bar',viewState:'current',guideCount:'2',localCount:'3'}},
+    {dataset:{search:'Sorobon Bonaire Dunkerbeck Pro Center Reef Bar',viewState:'current',videoCount:'1',imageCount:'0',guideCount:'2',localCount:'3'}},
     {dataset:{search:'Bonaire Donkey Sanctuary',viewState:'scheduled',guideCount:'2',localCount:'0'}},
     {dataset:{search:'Reference island',viewState:'reference',guideCount:'0',localCount:'0'}},
-    {dataset:{search:'Current square',viewState:'current',guideCount:'0',localCount:'0'}}
+    {dataset:{search:'Current square',viewState:'current',videoCount:'0',imageCount:'1',guideCount:'0',localCount:'0'}}
   ];
   const elements={placeFilter:input,placeAvailability:availability,placeResources:resources,placeFilterStatus:status,placeFilterEmpty:empty,placeSearchMore:more};
   runInNewContext('('+placeDirectoryRuntime.toString()+')()',{URLSearchParams,location:{search},document:{getElementById:id=>elements[id],querySelectorAll:()=>rows}});
@@ -240,3 +244,16 @@ assert.equal((await exerciseCollectionShare({})).events.length,0,'unsupported sh
 assert.equal((await exerciseCollectionShare({share:async()=>{}},{tracking:false})).events.length,0,'sharing works when the privacy-gated event hook is absent');
 assert.equal((collectionShareScript('</script>','x').match(/<\/script>/g)||[]).length,1,'serialized labels must not terminate inline scripts');
 console.log('Collection native/copy success, cancellation, localized feedback and privacy boundaries passed');
+
+const referenceSearch=resourceDirectory('?availability=reference');
+assert.deepEqual(referenceSearch.rows.map(r=>r.hidden),[true,true,false,true],'awaiting-verification filter excludes both current and schedule-verified sources');
+assert.equal(referenceSearch.availability.value,'reference','shareable query initializes the awaiting-verification filter');
+referenceSearch.resources.value='guides';referenceSearch.callbacks['resources:change']();
+assert.equal(referenceSearch.empty.hidden,false,'source-state filter composes with independently reviewed visitor guides');
+
+const videoSearch=resourceDirectory('?availability=video');
+assert.deepEqual(videoSearch.rows.map(r=>r.hidden),[false,true,true,true],'live-video filter excludes images, reference sources and outside-hours sources');
+const imageSearch=resourceDirectory('?availability=image');
+assert.deepEqual(imageSearch.rows.map(r=>r.hidden),[true,true,true,false],'image filter distinguishes refreshed views from playable video');
+imageSearch.resources.value='guides';imageSearch.callbacks['resources:change']();
+assert.equal(imageSearch.empty.hidden,false,'image resource filter retains truthful empty recovery');

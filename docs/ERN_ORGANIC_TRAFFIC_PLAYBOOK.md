@@ -1,3 +1,7 @@
+## 2026-10-13 — Choose your window (owner-managed theme)
+
+Hook: “Would you watch motion, or pause on a refreshed view?” Show ERN’s Places availability choices, then open a relevant destination and its clearly labelled provider source. Use an original ERN navigation recording; do not copy provider-stream footage. Link to https://earthrightnow.app/places/ . Live video and refreshed images are distinct, and visitor information can remain useful while a current source awaits review. Facebook: a question with the directory link; Instagram/TikTok: brief screen recording with the same question and profile-link invitation. Assess through existing aggregate searches/result opens, without claiming unique outside visitors or campaign attribution. Prepared only; no social post or paid campaign sent.
+
 ## Coast or valley — accepted destination links (2026-10-12 UTC)
 
 Production browser and artifact acceptance PASS. Owner posting theme: “Would you start by the water, or inland among flowers? See before you go.” Link to https://earthrightnow.app/places/australia-coffs-harbour/ or https://earthrightnow.app/places/australia-nana-glen/ . Distinguish the boat-ramp live video from the refreshed bridge image; the bridge camera does not show the flower farm. Check the farm operator for seasonal blooms and visiting arrangements. Use original footage or ERN navigation recordings, not copied provider-stream clips. No post was sent and paid traffic remains on hold.

@@ -1,3 +1,11 @@
+## 2026-10-13 — Source-type discovery and sharing batch
+
+- Resumed from verified GitHub main b5ac73ec22325d140768a1dc8bd8bafef6f6d171; preserved the scheduled current-image pilot renewal and all prior source evidence.
+- Image-only current destinations now say Current Image in their page title, heading, Open Graph/Twitter previews and structured WebPage name. Genuine current live-video destinations retain Live Now; no-current destinations retain Place Information. No verification date, source permission or source truth changed.
+- Extended the existing Places availability control with Current live video, Current refreshed images and Awaiting current-view verification. These compose with existing name/country/local-resource filters and shareable query inputs. Published-hours sources remain separate; information resources do not imply a current view. No new tracker, research queue or design surface.
+- Executed regressions cover video/image metadata, exact serialized source-type filters, schedule/reference exclusion and empty-result recovery. SEO audit recognizes the source-specific Current Image title alongside existing live title forms. All 120 smoke files and all 40 local build/preflight commands passed. Deployed acceptance follows.
+- Counts unchanged: 407 reviewed local records / 94 destinations, 42 approved photographs; zero new cameras, affiliate relationships or provider footage reuse. Original design, numbered Living Atlas, performance limits, rollback and commercial neutrality preserved. Public submissions and other gated features OFF; paid traffic HOLD.
+
 ## NSW current-view batch — final release acceptance (2026-10-12 UTC)
 
 Published code: `7e21dd28ab85ea4c1bd520034a3ffe8f3e00c0df` (initial expansion `b880bf4ad2294034e204f34ec69f76e72e7c2af8`; evidence/copy cleanup `237b434793b6e2d450218db4620164134b81a861`).
