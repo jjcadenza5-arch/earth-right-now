@@ -28,7 +28,7 @@ assert.match(css,/\.wander-card>\.wander-visual\{position:absolute;inset:0\}/,"f
 assert.match(build,/editorial-card-photos\.js/,"lazy photo module must ship in release");
 const {approvedPhotos,eligibleVisual,approvedPhotoLicense}=await import("../src/editorial-card-photos.js");
 const register=JSON.parse(readFileSync(new URL("../data/destination-photo-rights-candidates.json",import.meta.url),"utf8"));
-assert.equal(approvedPhotos(register).size,42);
+assert.equal(approvedPhotos(register).size,43);
 assert.ok(approvedPhotos(register).has("wengen-bellevue"));
 for(const id of ["levi-ski-resort","plitvice-lakes","brussels-grand-place"])assert.ok(approvedPhotos(register).has(id));
 assert.ok(approvedPhotos(register).has("oeschinensee")&&approvedPhotos(register).has("flam-aurlandsfjord"));
@@ -38,6 +38,8 @@ assert.ok(approvedPhotos(register).has("taiwan-yehliu")&&approvedPhotos(register
 assert.ok(approvedPhotos(register).has("madeira-camara-de-lobos"));
 assert.ok(approvedPhotos(register).has("us-grand-teton-national-park"));
 for(const id of ["gudauri-ski-area","thailand-koh-samui-crystal-bay"])assert.ok(approvedPhotos(register).has(id));
+assert.ok(approvedPhotos(register).has("canada-tofino-mackenzie-beach"));
+assert.equal(approvedPhotos(register).has("canada-tofino-north-chesterman"),false,"whole-beach photo must not imply verified North section");
 assert.equal(approvedPhotos({...register,homepageActivationAllowed:false}).size,0);
 assert.equal(approvedPhotos({...register,candidates:[{...register.candidates[0],imageUrl:"https://example.com/photo.jpg"}]}).size,0);
 assert.equal(approvedPhotos(register).has("unrelated-place"),false);

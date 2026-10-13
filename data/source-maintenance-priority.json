@@ -281,6 +281,30 @@
       "lastReviewAt": "2026-10-12T16:54:40.342370Z",
       "action": "HOLD_RENEWAL_UNTIL_DECODED_CURRENT_LOCATION_MATCHED_PLAYBACK",
       "reviewOutcome": "INCONCLUSIVE: exact approved iframe loaded in deployed ERN review lab; Play video pressed, but two observations remained width/height/time zero and readyState zero. Historical success and playback verification unchanged; no provider-wide outage claim."
+    },
+    {
+      "id": "canada-tofino-chesterman-live",
+      "placeId": "canada-tofino-north-chesterman",
+      "title": "Tofino — North Chesterman Beach",
+      "country": "Canada",
+      "health": "HEALTHY",
+      "truth": "EXTERNAL_LIVE",
+      "lastReviewAt": "2026-10-13T03:51:14.913053Z",
+      "reviewOutcome": "Exact operator context reviewed. North Chesterman YouTube title matched; after Play, video width/height, readyState and time remained zero. Finite 3600 duration is inconclusive. No successful-check or playback date renewed; no global outage conclusion. Revisit on material player evidence.",
+      "action": "HOLD_PLAYBACK_RENEWAL_UNTIL_EXACT_OPERATOR_PLAYER_DECODES_CURRENT_VIDEO",
+      "blocks250Milestone": false
+    },
+    {
+      "id": "canada-tofino-mackenzie-live",
+      "placeId": "canada-tofino-mackenzie-beach",
+      "title": "Tofino — Mackenzie Beach",
+      "country": "Canada",
+      "health": "HEALTHY",
+      "truth": "EXTERNAL_LIVE",
+      "lastReviewAt": "2026-10-13T03:51:14.913053Z",
+      "reviewOutcome": "Exact operator context reviewed. Mackenzie Beach heading matched; exact CamStreamer wrapper remained blank, with no decoded video observed. No successful-check or playback date renewed; no global outage conclusion. Revisit on material player evidence.",
+      "action": "HOLD_PLAYBACK_RENEWAL_UNTIL_EXACT_OPERATOR_PLAYER_DECODES_CURRENT_VIDEO",
+      "blocks250Milestone": false
     }
   ],
   "currentReality": {

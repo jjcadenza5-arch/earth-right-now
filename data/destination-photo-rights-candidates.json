@@ -977,6 +977,29 @@
       "note": "Exact location, creator, file date and individual image licence reviewed; 960px source decoded, inspected and hashed. Historical destination photograph, not current snow, water conditions or camera playback. No endorsement implied.",
       "attributionChanges": "Unmodified by ERN; scaled at original aspect ratio on destination pages.",
       "homepageAttributionChanges": "Display crop using object-fit: cover; historical photograph under the linked original licence. Creator, source, date and licence credited below the card."
+    },
+    {
+      "placeId": "canada-tofino-mackenzie-beach",
+      "filePage": "https://commons.wikimedia.org/wiki/File:MacKenzie_Beach,_Tofino,_British_Columbia_(5108704595).jpg",
+      "creator": "Aaron Carlson",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "dateTaken": "2010-05-12",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/MacKenzie_Beach%2C_Tofino%2C_British_Columbia_%285108704595%29.jpg/960px-MacKenzie_Beach%2C_Tofino%2C_British_Columbia_%285108704595%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:MacKenzie_Beach,_Tofino,_British_Columbia_(5108704595).jpg&oldid=1181440982",
+      "alt": "Historical view across the water toward Mackenzie Beach in Tofino, with forested shore and mountains",
+      "imageWidth": 960,
+      "imageHeight": 643,
+      "inspectedPreviewSha256": "acc727fb896c66ae3b9882ee5f2d5762974555cb5456fe7c15861cf4fe116ffb",
+      "inspectedPreviewBytes": 150784,
+      "source": "Wikimedia Commons",
+      "status": "APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY",
+      "publicActivationAllowed": true,
+      "homepageActivationAllowed": true,
+      "licenseRecheckedAt": "2026-10-13T03:51:14.913053Z",
+      "note": "Individual file location, creator, 2010 photograph date and CC BY-SA 2.0 licence reviewed. Decoded 960px preview inspected and hashed. Historical beach context, not the exact live-camera angle or evidence of current conditions. No endorsement implied.",
+      "attributionChanges": "Unmodified by ERN; scaled at original aspect ratio on destination pages.",
+      "homepageAttributionChanges": "Display crop using object-fit: cover; historical photograph under the linked original licence. Creator, source, date and licence credited below the card."
     }
   ],
   "homepageActivationAllowed": true
