@@ -15,49 +15,49 @@ export const EDITORIAL_COLLECTION_LOCALES=Object.freeze({
  "harbours-waterfronts":{"en": {"title": "Harbours & Waterfronts", "description": "Current and schedule-verified harbour, marina and port views. Check local transport and access before visiting."}, "th": {"title": "ท่าเรือและริมน้ำ", "description": "มุมมองท่าเรือและริมน้ำที่ตรวจสอบความเป็นปัจจุบันหรือตารางแล้ว ตรวจสอบการเดินทางและการเข้าถึงก่อนเยี่ยมชม"}, "de": {"title": "Häfen & Ufer", "description": "Aktuelle und zeitplanbestätigte Ansichten von Häfen und Ufern. Anreise und Zugang vor dem Besuch prüfen."}, "fr": {"title": "Ports et fronts de mer", "description": "Vues de ports et de marinas vérifiées comme actuelles ou selon leurs horaires. Vérifiez les transports et les accès avant de partir."}, "ja": {"title": "港とウォーターフロント", "description": "現在の状況または配信時間を確認した港やマリーナの景色。訪問前に交通と現地へのアクセスを確認しましょう。"}, "zh": {"title": "港口与滨水景观", "description": "已核实当前状态或直播时段的港口与码头视图。到访前请确认交通与当地通行情况。"}, "es": {"title": "Puertos y paseos junto al agua", "description": "Vistas de puertos y marinas verificadas como actuales o según sus horarios. Comprueba el transporte y el acceso antes de visitar."}},
  "lakes-waterfalls-fjords":{"en": {"title": "Lakes, Waterfalls & Fjords", "description": "Current lake, waterfall and fjord views. Check local access before going."}, "th": {"title": "ทะเลสาบ น้ำตก และฟยอร์ด", "description": "มุมมองปัจจุบันของทะเลสาบ น้ำตก และฟยอร์ด ตรวจสอบการเข้าถึงพื้นที่ก่อนเดินทาง"}, "de": {"title": "Seen, Wasserfälle & Fjorde", "description": "Aktuelle Ansichten von Seen, Wasserfällen und Fjorden. Zugang vor dem Besuch prüfen."}, "fr": {"title": "Lacs, cascades & fjords", "description": "Vues actuelles de lacs, cascades et fjords. Vérifiez les accès avant de partir."}, "ja": {"title": "湖・滝・フィヨルド", "description": "湖、滝、フィヨルドの現在の景色。訪問前に現地へのアクセスを確認しましょう。"}, "zh": {"title": "湖泊、瀑布与峡湾", "description": "湖泊、瀑布和峡湾的当前视图。出发前请确认当地通行情况。"}, "es": {"title": "Lagos, cascadas y fiordos", "description": "Vistas actuales de lagos, cascadas y fiordos. Comprueba el acceso antes de viajar."}},
  "beaches-water":{
-  en:{title:"Beaches & Water",description:"Coasts, seas, harbours, islands and surf."},
-  th:{title:"ชายหาดและสายน้ำ",description:"ชายฝั่ง ทะเล ท่าเรือ เกาะ และคลื่น"},
-  de:{title:"Strände & Wasser",description:"Küsten, Meere, Häfen, Inseln und Brandung."},
-  fr:{title:"Plages & eau",description:"Côtes, mers, ports, îles et vagues."},
-  ja:{title:"ビーチと水辺",description:"海岸、海、港、島、波。"},
-  zh:{title:"海滩与水域",description:"海岸、海洋、港口、岛屿与海浪。"},
-  es:{title:"Playas y agua",description:"Costas, mares, puertos, islas y oleaje."}
+  en:{title:"Beaches & Water",description:"Explore current and schedule-verified views of beaches, coasts, islands and harbours. Open the source, then check local access before you go."},
+  th:{title:"ชายหาดและสายน้ำ",description:"สำรวจมุมมองปัจจุบันหรือแหล่งภาพที่ตรวจสอบตารางแล้วของชายหาด ชายฝั่ง เกาะ และท่าเรือ เปิดแหล่งภาพและตรวจสอบการเข้าถึงก่อนเดินทาง"},
+  de:{title:"Strände & Wasser",description:"Entdecke aktuelle und zeitlich bestätigte Ansichten von Stränden, Küsten, Inseln und Häfen. Öffne die Quelle und prüfe den Zugang vor der Reise."},
+  fr:{title:"Plages & eau",description:"Explorez des vues actuelles ou aux horaires vérifiés de plages, côtes, îles et ports. Ouvrez la source et vérifiez les accès avant de partir."},
+  ja:{title:"ビーチと水辺",description:"海岸、島、港の現在の景色や配信時間を確認した映像を探せます。情報源を開き、訪問前に現地へのアクセスも確認しましょう。"},
+  zh:{title:"海滩与水域",description:"探索海滩、海岸、岛屿和港口的当前视图或已确认直播时段的来源。打开来源查看，并在出发前确认当地通行情况。"},
+  es:{title:"Playas y agua",description:"Explora vistas actuales o con horarios verificados de playas, costas, islas y puertos. Abre la fuente y comprueba el acceso antes de viajar."}
  },
  "mountains-snow":{
-  en:{title:"Mountains & Snow",description:"Alpine views, snow, ski areas and volcanoes."},
-  th:{title:"ภูเขาและหิมะ",description:"วิวภูเขา หิมะ พื้นที่สกี และภูเขาไฟ"},
-  de:{title:"Berge & Schnee",description:"Alpenblicke, Schnee, Skigebiete und Vulkane."},
-  fr:{title:"Montagnes & neige",description:"Paysages alpins, neige, domaines skiables et volcans."},
-  ja:{title:"山と雪",description:"山岳風景、雪、スキーエリア、火山。"},
-  zh:{title:"山脉与雪景",description:"高山景色、雪地、滑雪区与火山。"},
-  es:{title:"Montañas y nieve",description:"Vistas alpinas, nieve, zonas de esquí y volcanes."}
+  en:{title:"Mountains & Snow",description:"Explore current mountain, ski-area and volcano views, with source types and live schedules kept distinct. Check weather and access before going."},
+  th:{title:"ภูเขาและหิมะ",description:"สำรวจมุมมองปัจจุบันของภูเขา พื้นที่สกี และภูเขาไฟ โดยแยกประเภทแหล่งภาพและเวลาถ่ายทอดสด ตรวจสอบอากาศและการเข้าถึงก่อนเดินทาง"},
+  de:{title:"Berge & Schnee",description:"Entdecke aktuelle Berg-, Skigebiets- und Vulkanansichten mit klaren Quellentypen und Live-Zeiten. Prüfe Wetter und Zugang vor dem Besuch."},
+  fr:{title:"Montagnes & neige",description:"Explorez des vues actuelles de montagnes, domaines skiables et volcans, avec leurs types de sources et horaires. Vérifiez météo et accès."},
+  ja:{title:"山と雪",description:"山、スキー場、火山の現在の景色を探せます。映像の種類と配信時間を区別し、訪問前に天気や現地へのアクセスを確認しましょう。"},
+  zh:{title:"山脉与雪景",description:"探索山地、滑雪场和火山的当前视图，明确区分来源类型与直播时段。到访前请另行确认天气和当地通行情况。"},
+  es:{title:"Montañas y nieve",description:"Explora vistas actuales de montañas, zonas de esquí y volcanes, con tipos de fuente y horarios claros. Comprueba el tiempo y los accesos."}
  },
  "cities-streets":{
-  en:{title:"Cities & Streets",description:"Urban movement, streets, skylines and squares."},
-  th:{title:"เมืองและถนน",description:"ความเคลื่อนไหวในเมือง ถนน เส้นขอบฟ้า และจัตุรัส"},
-  de:{title:"Städte & Straßen",description:"Stadtleben, Straßen, Skylines und Plätze."},
-  fr:{title:"Villes & rues",description:"Mouvement urbain, rues, horizons et places."},
-  ja:{title:"都市とストリート",description:"都市の動き、通り、スカイライン、広場。"},
-  zh:{title:"城市与街道",description:"城市流动、街道、天际线与广场。"},
-  es:{title:"Ciudades y calles",description:"Movimiento urbano, calles, horizontes y plazas."}
+  en:{title:"Cities & Streets",description:"Discover current streets, squares and skyline views. Open each verified source, explore related places and check practical visitor information."},
+  th:{title:"เมืองและถนน",description:"ค้นพบมุมมองปัจจุบันของถนน จัตุรัส และเส้นขอบฟ้าเมือง เปิดแหล่งภาพที่ตรวจสอบแล้ว สำรวจสถานที่ที่เกี่ยวข้องและข้อมูลที่ช่วยวางแผนเยี่ยมชม"},
+  de:{title:"Städte & Straßen",description:"Entdecke aktuelle Straßen-, Platz- und Skylineansichten. Öffne verifizierte Quellen, erkunde verwandte Orte und prüfe praktische Reisehinweise."},
+  fr:{title:"Villes & rues",description:"Découvrez des vues actuelles de rues, places et panoramas urbains. Ouvrez les sources vérifiées, explorez les lieux liés et préparez votre visite."},
+  ja:{title:"都市とストリート",description:"通り、広場、街の景観の現在の様子を探せます。確認済みの情報源を開き、関連する場所や訪問に役立つ情報も調べましょう。"},
+  zh:{title:"城市与街道",description:"发现街道、广场与城市天际线的当前视图。打开经过核实的来源，探索相关地点，并查看实用的到访信息。"},
+  es:{title:"Ciudades y calles",description:"Descubre vistas actuales de calles, plazas y panoramas urbanos. Abre fuentes verificadas, explora lugares relacionados y prepara tu visita."}
  },
  "wildlife-nature":{
-  en:{title:"Wildlife & Nature",description:"Animals, parks, forests and natural places."},
-  th:{title:"สัตว์ป่าและธรรมชาติ",description:"สัตว์ สวน ป่า และพื้นที่ธรรมชาติ"},
-  de:{title:"Tierwelt & Natur",description:"Tiere, Parks, Wälder und Naturräume."},
-  fr:{title:"Faune & nature",description:"Animaux, parcs, forêts et espaces naturels."},
-  ja:{title:"野生動物と自然",description:"動物、公園、森、自然の場所。"},
-  zh:{title:"野生动物与自然",description:"动物、公园、森林与自然地点。"},
-  es:{title:"Fauna y naturaleza",description:"Animales, parques, bosques y lugares naturales."}
+  en:{title:"Wildlife & Nature",description:"Explore current wildlife, park and forest views. Check the source and published viewing hours; animal sightings and visitor access are not guaranteed."},
+  th:{title:"สัตว์ป่าและธรรมชาติ",description:"สำรวจมุมมองปัจจุบันของสัตว์ป่า สวน และป่าไม้ ตรวจสอบแหล่งภาพและเวลาที่ประกาศ การพบสัตว์และการเข้าพื้นที่ไม่ได้รับการรับประกัน"},
+  de:{title:"Tierwelt & Natur",description:"Entdecke aktuelle Tier-, Park- und Waldansichten. Prüfe Quelle und veröffentlichte Zeiten; Tiersichtungen und Besucherzugang sind nicht garantiert."},
+  fr:{title:"Faune & nature",description:"Explorez des vues actuelles de faune, parcs et forêts. Vérifiez la source et ses horaires ; observations animales et accès ne sont pas garantis."},
+  ja:{title:"野生動物と自然",description:"動物、公園、森の現在の景色を探せます。情報源と公開された配信時間を確認してください。動物との遭遇や現地への入場は保証されません。"},
+  zh:{title:"野生动物与自然",description:"探索动物、公园与森林的当前视图。请确认来源与公布的观看时段；动物出现和游客入场均无法保证。"},
+  es:{title:"Fauna y naturaleza",description:"Explora vistas actuales de fauna, parques y bosques. Comprueba la fuente y sus horarios; no se garantizan avistamientos ni acceso para visitantes."}
  },
  "calm-scenic":{
-  en:{title:"Calm & Scenic Earth",description:"Quiet, beautiful windows worth lingering with."},
-  th:{title:"โลกที่สงบและงดงาม",description:"มุมมองเงียบสงบและสวยงามที่ชวนให้มองนานขึ้น"},
-  de:{title:"Ruhige & schöne Erde",description:"Stille, schöne Fenster zum Verweilen."},
-  fr:{title:"Terre calme & pittoresque",description:"Des fenêtres calmes et belles où s’attarder."},
-  ja:{title:"静かで美しい地球",description:"ゆっくり眺めたくなる穏やかで美しい窓。"},
-  zh:{title:"宁静与风景地球",description:"值得停留片刻的安静、美丽窗口。"},
-  es:{title:"Tierra tranquila y escénica",description:"Ventanas serenas y hermosas para mirar un poco más."}
+  en:{title:"Calm & Scenic Earth",description:"Find quiet, scenic current views worth pausing with. Open verified sources and explore related destinations before choosing where to go."},
+  th:{title:"โลกที่สงบและงดงาม",description:"ค้นหามุมมองปัจจุบันที่เงียบสงบและชวนหยุดมอง เปิดแหล่งภาพที่ตรวจสอบแล้วและสำรวจจุดหมายที่เกี่ยวข้องก่อนเลือกว่าจะเดินทางไปที่ไหน"},
+  de:{title:"Ruhige & schöne Erde",description:"Finde ruhige, schöne aktuelle Ansichten zum Verweilen. Öffne verifizierte Quellen und erkunde verwandte Ziele, bevor du deine Reise planst."},
+  fr:{title:"Terre calme & pittoresque",description:"Trouvez des vues actuelles, calmes et panoramiques où faire une pause. Ouvrez les sources vérifiées et explorez les destinations liées."},
+  ja:{title:"静かで美しい地球",description:"ひと息ついて眺めたくなる静かな現在の景色を探せます。確認済みの情報源を開き、関連する旅先も調べてから行き先を選びましょう。"},
+  zh:{title:"宁静与风景地球",description:"寻找值得停留片刻的宁静当前风景。打开经过核实的来源，探索相关目的地，再选择想去的地方。"},
+  es:{title:"Tierra tranquila y escénica",description:"Encuentra vistas actuales, serenas y panorámicas para detenerte un momento. Abre fuentes verificadas y explora destinos relacionados."}
  },
  "volcanoes-earth-science":{
   en:{title:"Volcanoes & Earth Science",description:"Volcanoes, craters, geothermal places and Earth-science monitoring."},
@@ -69,13 +69,13 @@ export const EDITORIAL_COLLECTION_LOCALES=Object.freeze({
   es:{title:"Volcanes y ciencias de la Tierra",description:"Volcanes, cráteres, zonas geotérmicas y observación científica de la Tierra."}
  },
  "thailand-live-now":{
-  en:{title:"Thailand Live & Current Views",description:"Current and schedule-verified ERN views across Thailand."},
-  th:{title:"มุมมองสดและปัจจุบันในประเทศไทย",description:"มุมมอง ERN ที่เป็นปัจจุบันและตรวจสอบแล้วทั่วประเทศไทย"},
-  de:{title:"Thailand live & aktuell",description:"Aktuelle und verifizierte ERN-Ansichten aus Thailand."},
-  fr:{title:"Thaïlande en direct & maintenant",description:"Vues ERN actuelles et vérifiées en Thaïlande."},
-  ja:{title:"タイのライブ・現在映像",description:"タイ各地の確認済み現在映像を ERN で探索。"},
-  zh:{title:"泰国实时与当前视图",description:"浏览泰国各地经 ERN 验证的当前视图。"},
-  es:{title:"Tailandia en directo y ahora",description:"Vistas ERN actuales y verificadas en Tailandia."}
+  en:{title:"Thailand Live & Current Views",description:"Explore current and schedule-verified Thailand views, from city streets to beaches. Compare source types and check visitor information before going."},
+  th:{title:"มุมมองสดและปัจจุบันในประเทศไทย",description:"สำรวจมุมมองปัจจุบันหรือแหล่งภาพที่ตรวจสอบตารางแล้วในประเทศไทย ตั้งแต่ถนนในเมืองถึงชายหาด เปรียบเทียบประเภทแหล่งภาพและข้อมูลก่อนเดินทาง"},
+  de:{title:"Thailand live & aktuell",description:"Entdecke aktuelle und zeitlich bestätigte Thailand-Ansichten, von Stadtstraßen bis zu Stränden. Vergleiche Quellentypen und Reisehinweise."},
+  fr:{title:"Thaïlande en direct & maintenant",description:"Explorez des vues de Thaïlande actuelles ou aux horaires vérifiés, des rues aux plages. Comparez les sources et préparez votre visite."},
+  ja:{title:"タイのライブ・現在映像",description:"タイの街や海辺の現在の景色、配信時間を確認した映像を探せます。情報源の種類を比べ、訪問に役立つ情報も確認しましょう。"},
+  zh:{title:"泰国实时与当前视图",description:"探索泰国城市街道与海滩的当前视图或已确认直播时段的来源。比较来源类型，并在出发前查看实用到访信息。"},
+  es:{title:"Tailandia en directo y ahora",description:"Explora vistas de Tailandia actuales o con horarios verificados, de calles a playas. Compara las fuentes y consulta información para tu visita."}
  },
  "tokyo-islands-live":{
   en:{title:"Tokyo Islands Live",description:"Official live harbor windows across the Izu and Ogasawara islands."},

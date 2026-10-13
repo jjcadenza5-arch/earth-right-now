@@ -41,7 +41,7 @@ if(sitemapDup.length)issues.push({code:"SITEMAP_DUPLICATE_URLS",urls:[...new Set
 for(const url of sitemapUrls){const rel=routeForCanonical(url);if(!rel||!(await exists(rel)))issues.push({code:"SITEMAP_ROUTE_MISSING",url,rel})}
 
 const files=await walk(),canonicalMap=new Map(),titleMap=new Map(),descMap=new Map();
-let indexable=0,destinations=0,indexedDestinations=0;
+let indexable=0,destinations=0,indexEligibleDestinations=0;
 for(const rel of files){
   if(rel==="release-verification.html"||rel.startsWith("review/")||rel==="offline.html")continue;
   const html=await read(rel),robotsMeta=tag(html,/<meta name="robots" content="([^"]+)"/i);
@@ -82,13 +82,14 @@ for(const rel of files){
   if(rel.startsWith("places/")&&rel!=="places/index.html"){
     destinations++;
     const inSitemap=canonical&&sitemapUrls.includes(canonical);
-    if(isIndexable)indexedDestinations++;
+    if(isIndexable)indexEligibleDestinations++;
     if(isIndexable&&!inSitemap)issues.push({code:"INDEXABLE_DESTINATION_NOT_IN_SITEMAP",rel,canonical});
     if(noindex&&inSitemap)issues.push({code:"NOINDEX_DESTINATION_IN_SITEMAP",rel,canonical});
     if(isIndexable&&!/Live Now \| Earth Right Now<\/title>/i.test(html)&&!/(?:Live View|Current Image) \| Earth Right Now<\/title>/i.test(html))issues.push({code:"DESTINATION_TITLE_PATTERN_WEAK",rel,title});
     if(isIndexable&&!/"@type":"Place"/.test(html))issues.push({code:"DESTINATION_PLACE_SCHEMA_MISSING",rel});
     if(isIndexable&&!/ERN source status/.test(html))issues.push({code:"DESTINATION_STATUS_SCHEMA_MISSING",rel});
-    if(isIndexable&&!/Provider source/.test(html))warnings.push({code:"DESTINATION_PROVIDER_ATTRIBUTION_NOT_VISIBLE",rel});
+    const providerCredit=visibleText(html).match(/\bProvider:\s*([^·]+?)\s*·\s*Source type:/)?.[1]?.trim();
+    if(isIndexable&&(!providerCredit||providerCredit==="Provider"))warnings.push({code:"DESTINATION_PROVIDER_ATTRIBUTION_NOT_VISIBLE",rel});
     if(isIndexable&&!/Explore related places/.test(html))warnings.push({code:"DESTINATION_RELATED_LINKS_EMPTY",rel});
     if(isIndexable&&!/Earth Right Now · See before you go\./.test(html))issues.push({code:"DESTINATION_BRAND_CONTEXT_MISSING",rel});
   }
@@ -101,5 +102,5 @@ if(!sitemapSet.has(base+"places/"))issues.push({code:"PLACES_MISSING_FROM_SITEMA
 if(!sitemapSet.has(base+"countries/"))issues.push({code:"COUNTRIES_MISSING_FROM_SITEMAP"});
 if(!sitemapSet.has(base+"discover/"))issues.push({code:"DISCOVER_MISSING_FROM_SITEMAP"});
 
-const report={schemaVersion:1,checkedAt:new Date().toISOString(),root,ready:issues.length===0,filesChecked:files.length,indexablePages:indexable,destinationPages:destinations,indexedDestinations,sitemapUrls:sitemapUrls.length,issueCount:issues.length,warningCount:warnings.length,issues,warnings,boundaries:{sourceTruthChanged:false,paidRankingChanged:false,thinPageExpansionAllowed:false,accountActionPerformed:false}};
+const report={schemaVersion:2,checkedAt:new Date().toISOString(),root,ready:issues.length===0,filesChecked:files.length,indexablePages:indexable,destinationPages:destinations,indexEligibleDestinations,indexingEvidence:"Local robots and sitemap eligibility; confirmed search-engine indexing and rankings are not measured.",sitemapUrls:sitemapUrls.length,issueCount:issues.length,warningCount:warnings.length,issues,warnings,boundaries:{sourceTruthChanged:false,paidRankingChanged:false,thinPageExpansionAllowed:false,accountActionPerformed:false}};
 console.log(JSON.stringify(report,null,2));if(!report.ready)process.exitCode=1;
