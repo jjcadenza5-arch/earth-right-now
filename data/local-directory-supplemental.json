@@ -9176,5 +9176,203 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://tourismtofino.com/plan-your-trip/getting-around/"
+  },
+  {
+    "id": "local-jordan-pond-dining",
+    "placeId": "us-acadia-jordan-pond",
+    "place": "Jordan Pond",
+    "country": "United States",
+    "name": "Jordan Pond House — tea, popovers and dining",
+    "type": "restaurant",
+    "url": "https://jordanpondhouse.com/jordan-pond-house/",
+    "summary": "Compare the restaurant’s menu, tea and popover options beside Jordan Pond. Reservations are limited and walk-in arrangements vary; confirm seasonal hours and availability with the operator.",
+    "tags": [
+      "Jordan Pond",
+      "Acadia",
+      "Maine",
+      "Mount Desert Island"
+    ],
+    "verifiedAt": "2026-10-13T05:20:30.093947Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://jordanpondhouse.com/jordan-pond-house/"
+  },
+  {
+    "id": "local-jordan-pond-carryout",
+    "placeId": "us-acadia-jordan-pond",
+    "place": "Jordan Pond",
+    "country": "United States",
+    "name": "Carriage Road Carry Out — quick meals",
+    "type": "cafe",
+    "url": "https://jordanpondhouse.com/carriage-road/",
+    "summary": "A separate quick-service option on Jordan Pond House’s second level, with sandwiches, salads, soups and café choices. Check the operator’s seasonal hours and current menu before planning a stop.",
+    "tags": [
+      "Jordan Pond",
+      "Acadia",
+      "Maine",
+      "Mount Desert Island"
+    ],
+    "verifiedAt": "2026-10-13T05:20:30.093947Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://jordanpondhouse.com/carriage-road/"
+  },
+  {
+    "id": "local-jordan-pond-visit",
+    "placeId": "us-acadia-jordan-pond",
+    "place": "Jordan Pond",
+    "country": "United States",
+    "name": "NPS — visiting Jordan Pond",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/acad/planyourvisit/jordan-pond.htm",
+    "summary": "Plan the Park Loop Road approach, pond access and accessible paths using the official destination guide. Check posted restrictions and closures; a camera view does not establish trail access.",
+    "tags": [
+      "Jordan Pond",
+      "Acadia",
+      "Maine",
+      "Mount Desert Island"
+    ],
+    "verifiedAt": "2026-10-13T05:20:30.093947Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/acad/planyourvisit/jordan-pond.htm"
+  },
+  {
+    "id": "local-jordan-pond-hikes",
+    "placeId": "us-acadia-jordan-pond",
+    "place": "Jordan Pond",
+    "country": "United States",
+    "name": "NPS — hikes around Jordan Pond",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/acad/planyourvisit/hikes-jordan-pond.htm",
+    "summary": "Compare the pond-side paths and more strenuous mountain walks, with different starting points at the boat launch, carriage roads and Bubbles parking area. Choose a route that fits your group and check conditions.",
+    "tags": [
+      "Jordan Pond",
+      "Acadia",
+      "Maine",
+      "Mount Desert Island"
+    ],
+    "verifiedAt": "2026-10-13T05:20:30.093947Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/acad/planyourvisit/hikes-jordan-pond.htm"
+  },
+  {
+    "id": "local-jordan-pond-parking",
+    "placeId": "us-acadia-jordan-pond",
+    "place": "Jordan Pond",
+    "country": "United States",
+    "name": "NPS — Jordan Pond parking and passes",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/acad/parking.htm",
+    "summary": "Review the Jordan Pond North lot and boat-launch parking information, including accessible spaces and park-pass requirements. Follow actual signs and rangers; camera imagery is not a live parking-space guarantee.",
+    "tags": [
+      "Jordan Pond",
+      "Acadia",
+      "Maine",
+      "Mount Desert Island"
+    ],
+    "verifiedAt": "2026-10-13T05:20:30.093947Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/acad/parking.htm"
+  },
+  {
+    "id": "local-jordan-pond-bus",
+    "placeId": "us-acadia-jordan-pond",
+    "place": "Jordan Pond",
+    "country": "United States",
+    "name": "NPS — seasonal Island Explorer transport",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/acad/planyourvisit/island-explorer.htm",
+    "summary": "Explore the fare-free shuttle and its accessible buses, bike limits and park-pass requirements. Service is seasonal; check the linked operator timetable for your exact travel date rather than relying on an old season-end date.",
+    "tags": [
+      "Jordan Pond",
+      "Acadia",
+      "Maine",
+      "Mount Desert Island"
+    ],
+    "verifiedAt": "2026-10-13T05:20:30.093947Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/acad/planyourvisit/island-explorer.htm"
+  },
+  {
+    "id": "local-jordan-pond-boating",
+    "placeId": "us-acadia-jordan-pond",
+    "place": "Jordan Pond",
+    "country": "United States",
+    "name": "NPS — Jordan Pond watercraft restrictions",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/acad/planyourvisit/boating.htm",
+    "summary": "Check the park’s pond-specific watercraft and drinking-water protections before launching. Jordan Pond has different rules from nearby lakes; do not assume swimming or paddleboarding is available because water looks inviting.",
+    "tags": [
+      "Jordan Pond",
+      "Acadia",
+      "Maine",
+      "Mount Desert Island"
+    ],
+    "verifiedAt": "2026-10-13T05:20:30.093947Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/acad/planyourvisit/boating.htm"
+  },
+  {
+    "id": "local-jordan-pond-carriage",
+    "placeId": "us-acadia-jordan-pond",
+    "place": "Jordan Pond",
+    "country": "United States",
+    "name": "NPS — carriage roads and shared routes",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/acad/planyourvisit/carriage-roads.htm",
+    "summary": "Use the official guide to connect a Jordan Pond visit with carriage-road walking or cycling. These motor-free routes are shared with other users; check maps, permitted equipment and current route notices.",
+    "tags": [
+      "Jordan Pond",
+      "Acadia",
+      "Maine",
+      "Mount Desert Island"
+    ],
+    "verifiedAt": "2026-10-13T05:20:30.093947Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/acad/planyourvisit/carriage-roads.htm"
+  },
+  {
+    "id": "local-asama-advisories",
+    "placeId": "japan-mount-asama",
+    "place": "Mount Asama",
+    "country": "Japan",
+    "name": "JMA — Mount Asama activity information",
+    "type": "visitor information",
+    "url": "https://www.data.jma.go.jp/vois/data/report/activity_info/306.html",
+    "summary": "Read the official Mount Asama activity information and follow local access instructions before planning a mountain visit. A visible ridge, cloud or monitoring image does not establish an eruption state or safe access.",
+    "tags": [
+      "Mount Asama",
+      "Asamayama",
+      "Nagano",
+      "Gunma"
+    ],
+    "verifiedAt": "2026-10-13T05:20:30.093947Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.data.jma.go.jp/vois/data/report/activity_info/306.html"
   }
 ]

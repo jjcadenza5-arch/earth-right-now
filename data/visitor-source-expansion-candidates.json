@@ -1065,6 +1065,45 @@
       "currentObservedState": "Tourism page city-hall SOt3wKdf7KM and highlands W7XRxcH05DI explicitly recording unavailable; Honmaru mXWEvcvMRvE private. Kuromon w1x2kIMp5OQ after Play stayed width0/height0/ready0/time0, pausedfalse, finite3600: inconclusive, not successful playback or proof prerecorded.",
       "next": "Revisit when official exact player links or playback evidence materially change; no camera/date promotion, no authentication or alternate-route probing.",
       "why": "Official city cameras offer strong castle and highland visitor value only when exact player currentness and playback are verified."
+    },
+    {
+      "id": "jma-asama-official-current-images",
+      "priority": "P1",
+      "placeGroup": "Mount Asama",
+      "country": "Japan",
+      "provider": "Japan Meteorological Agency",
+      "candidateType": "OFFICIAL_REFRESHED_IMAGE_CAMERA",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=30602",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=30601",
+        "https://www.jma.go.jp/jma/kishou/info/coment.html"
+      ],
+      "state": "RESOLVED_PROMOTED_LINK_ONLY_CURRENT_IMAGE",
+      "why": "Distinct mountain destination with exact first-party dated current image and explicit attributed-link permission. Oiwake showed a usable ridge; Onioshi was more cloud-obscured. Two angles are not two destinations.",
+      "next": "Maintain exact Oiwake page; keep Watch/featured holds and review daylight visibility. Never infer eruption state or trail access from imagery.",
+      "lastRecheckedAt": "2026-10-13T05:20:30.093947Z",
+      "resolvedTarget": {
+        "catalogId": "japan-asama-oiwake-current",
+        "placeId": "japan-mount-asama",
+        "mode": "LIVE_IMAGE"
+      },
+      "currentObservedState": "640x360 decoded, capture stamp 2026-10-13 14:11:56 Japan local, page slot14:12; ridge/trees/clouds visible."
+    },
+    {
+      "id": "jma-kusatsu-shirane-ainomine-current",
+      "priority": "P2",
+      "placeGroup": "Kusatsu-Shirane",
+      "country": "Japan",
+      "provider": "Japan Meteorological Agency",
+      "candidateType": "OFFICIAL_REFRESHED_IMAGE_CAMERA",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=30502"
+      ],
+      "state": "HOLD_FOG_OBSCURES_DESTINATION",
+      "why": "Decoded recent monitoring image has a valid dated capture but fog hides the destination. Freshness alone does not establish useful visual coverage.",
+      "next": "Revisit after material visibility improvement; do not add a camera or successful public source date while the reviewed view is unusable.",
+      "lastRecheckedAt": "2026-10-13T05:20:30.093947Z",
+      "currentObservedState": "640x360 decoded, visible2026-10-13 14:11:55 Japan stamp; almost entire frame fog with only a twig visible."
     }
   ],
   "guardrails": {
