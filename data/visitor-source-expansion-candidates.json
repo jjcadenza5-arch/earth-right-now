@@ -1239,6 +1239,27 @@
           "reason": "Decoded2560x1440 wide and1920x1080 zoom, but no capture date/clock or independently observed frame progression in this pass. Ten-second page text/cache-buster alone not sufficient."
         }
       ]
+    },
+    {
+      "id": "greenland-public-camera-maintenance",
+      "priority": "P1_MAINTENANCE",
+      "placeGroup": "Nuuk city and Greenland airport views",
+      "country": "Greenland",
+      "provider": "ArctiComm / Søren Labansen; Greenland Airports",
+      "candidateType": "CURRENT_IMAGE_RENEWAL_AND_PUBLIC_VIDEO_FAILURE_REVIEW",
+      "evidenceUrls": [
+        "https://arcticomm.gl/arcticomm-webcam/",
+        "https://www.airports.gl/en/airport/ilulissat-airport/",
+        "https://www.airports.gl/en/airport/kangerlussuaq-airport/",
+        "https://www.airports.gl/en/airport/kulusuk-airport/",
+        "https://www.airports.gl/en/airport/qaarsut-airport/",
+        "https://www.airports.gl/kl-gl/airport/sisimiut/",
+        "https://www.airports.gl/en/airport/nuuk/"
+      ],
+      "state": "CITY_IMAGE_RENEWED_FIVE_EXISTING_AIRPORT_HANDOFFS_HELD",
+      "reviewedAt": "2026-10-13T12:18:39Z",
+      "why": "Nuuk city image decoded and capture advanced. Independently inspected public airport players are private/unavailable; provider live headings and decorative photographs cannot establish playback. Last success dates retained. New Nuuk airport candidate also private; no new camera records. Aasiaat/Maniitsoq/Qaanaaq pages did not supply a credible public camera lead.",
+      "next": "Revisit held airport views only after new public-playback evidence. Keep useful place/business information searchable. No login or private-video access request; no provider-wide outage inference."
     }
   ],
   "guardrails": {

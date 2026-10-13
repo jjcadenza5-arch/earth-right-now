@@ -356,6 +356,77 @@
       "action": "HOLD_RENEWAL_UNTIL_ACTUAL_PANORAMA_RENDERS",
       "lastReviewAt": "2026-10-13T11:06:00.989567Z",
       "reviewOutcome": "Exact first-party Front slopes PanoCloud dated13Oct2026 13:50 but WebGL/CSS3D unsupported. No decoded panorama; original successful date6Oct09:45UTC retained. Not a provider outage."
+    },
+    {
+      "id": "nuuk-arcticomm",
+      "placeId": "nuuk-greenland",
+      "title": "Nuuk — Current Arctic View",
+      "country": "Greenland",
+      "truth": "LIVE_IMAGE",
+      "health": "HEALTHY",
+      "lastReviewAt": "2026-10-13T12:18:39Z",
+      "reviewOutcome": "1920x1080 decoded Nuuk Qinngorput scene with burned-in 13Oct2026 11:06→11:11 local capture; creator copyright visible, no reuse or five-minute cadence guarantee.",
+      "action": "MAINTAIN_DATED_LINK_ONLY_CURRENT_IMAGE"
+    },
+    {
+      "id": "greenland-ilulissat-airport-live",
+      "placeId": "greenland-ilulissat-airport",
+      "title": "Ilulissat — Airport Live View",
+      "country": "Greenland",
+      "truth": "EXTERNAL_LIVE",
+      "health": "DEGRADED",
+      "lastReviewAt": "2026-10-13T12:18:39Z",
+      "reviewOutcome": "North nT9QtAbaLg4 and south EI27YpsNzSQ players both report private video.",
+      "action": "HOLD_UNTIL_PUBLIC_CURRENT_PLAYBACK_RECOVERS",
+      "failureReason": "PUBLIC_CAMERA_PLAYERS_PRIVATE_OR_UNAVAILABLE"
+    },
+    {
+      "id": "greenland-kangerlussuaq-airport-live",
+      "placeId": "greenland-kangerlussuaq-airport",
+      "title": "Kangerlussuaq — Airport Live View",
+      "country": "Greenland",
+      "truth": "EXTERNAL_LIVE",
+      "health": "DEGRADED",
+      "lastReviewAt": "2026-10-13T12:18:39Z",
+      "reviewOutcome": "East KWJD89He7v0 reports private video; west dG4pb20EqJc reports live stream recording unavailable.",
+      "action": "HOLD_UNTIL_PUBLIC_CURRENT_PLAYBACK_RECOVERS",
+      "failureReason": "PUBLIC_CAMERA_PLAYERS_PRIVATE_OR_UNAVAILABLE"
+    },
+    {
+      "id": "greenland-kulusuk-airport-live",
+      "placeId": "greenland-kulusuk-airport",
+      "title": "Kulusuk — East Greenland Airport Live View",
+      "country": "Greenland",
+      "truth": "EXTERNAL_LIVE",
+      "health": "DEGRADED",
+      "lastReviewAt": "2026-10-13T12:18:39Z",
+      "reviewOutcome": "East fpaqR1d_K0g and west zlnqZxsAXOU both report private video.",
+      "action": "HOLD_UNTIL_PUBLIC_CURRENT_PLAYBACK_RECOVERS",
+      "failureReason": "PUBLIC_CAMERA_PLAYERS_PRIVATE_OR_UNAVAILABLE"
+    },
+    {
+      "id": "greenland-qaarsut-airport-live",
+      "placeId": "greenland-qaarsut-airport",
+      "title": "Qaarsut — Airport Live View",
+      "country": "Greenland",
+      "truth": "EXTERNAL_LIVE",
+      "health": "DEGRADED",
+      "lastReviewAt": "2026-10-13T12:18:39Z",
+      "reviewOutcome": "jrns0KIOU14 reports video unavailable.",
+      "action": "HOLD_UNTIL_PUBLIC_CURRENT_PLAYBACK_RECOVERS",
+      "failureReason": "PUBLIC_CAMERA_PLAYERS_PRIVATE_OR_UNAVAILABLE"
+    },
+    {
+      "id": "greenland-sisimiut-airport-live",
+      "placeId": "greenland-sisimiut-airport",
+      "title": "Sisimiut — Airport Live View",
+      "country": "Greenland",
+      "truth": "EXTERNAL_LIVE",
+      "health": "DEGRADED",
+      "lastReviewAt": "2026-10-13T12:18:39Z",
+      "reviewOutcome": "Southeast FW417sPHDOc and southwest uR_XJZ6L0PI both report private video.",
+      "action": "HOLD_UNTIL_PUBLIC_CURRENT_PLAYBACK_RECOVERS",
+      "failureReason": "PUBLIC_CAMERA_PLAYERS_PRIVATE_OR_UNAVAILABLE"
     }
   ],
   "currentReality": {
