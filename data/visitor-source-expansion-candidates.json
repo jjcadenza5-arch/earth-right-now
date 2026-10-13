@@ -1010,6 +1010,61 @@
       "browserEvidence": "Exact operator iframe https://camstreamer.com/embed/E8mWnRnim4dSXZXctteSENxTssKBK89o0kTwQteV; video currentTime 0, readyState 0, width/height 0 and black player after closing promotional modal. No bot-block diagnosis, successful playback or new source inferred.",
       "next": "Keep research-only. Revisit after new provider evidence or decoded current frames; independently verify reliability, attribution and link/embed rights before catalog addition.",
       "selectionBasis": "Editorial credible first-party lead; no private aggregate demand export or repeated visitor-interest claim."
+    },
+    {
+      "id": "acadia-jordan-pond-official-current",
+      "priority": "P1",
+      "placeGroup": "Acadia — Jordan Pond",
+      "country": "United States",
+      "provider": "U.S. National Park Service / Dawnland LLC",
+      "candidateType": "OFFICIAL_REFRESHED_IMAGE_CAMERA",
+      "evidenceUrls": [
+        "https://www.nps.gov/acad/learn/photosmultimedia/webcams.htm",
+        "https://www.nps.gov/media/webcam/view.htm?id=A483238F-BAE9-C9E2-BE362FE8240C5E7F&r=/acad/learn/photosmultimedia/webcams.htm"
+      ],
+      "state": "RESOLVED_PROMOTED_LINK_ONLY_CURRENT_IMAGE",
+      "resolvedTarget": {
+        "catalogId": "us-acadia-jordan-pond-current",
+        "placeId": "us-acadia-jordan-pond",
+        "mode": "LIVE_IMAGE"
+      },
+      "lastRecheckedAt": "2026-10-13T04:10:52.669039Z",
+      "currentObservedState": "1920x1080 decoded; visible captures 00:06:26 to 00:08:26 on 2026-10-13 Eastern, foreground changed.",
+      "next": "Maintain exact NPS context; daytime quality may support future review, but keep Watch/featured holds and no image reuse.",
+      "why": "Distinct pond destination with official provider context and independently observed refreshed imagery, unlike the existing Frenchman Bay camera."
+    },
+    {
+      "id": "acadia-mcfarland-hill-official-current",
+      "priority": "P2",
+      "placeGroup": "Acadia — McFarland Hill",
+      "country": "United States",
+      "provider": "U.S. National Park Service",
+      "candidateType": "OFFICIAL_REFRESHED_IMAGE_CAMERA",
+      "evidenceUrls": [
+        "https://www.nps.gov/subjects/air/webcams.htm?site=acad"
+      ],
+      "state": "HOLD_LOW_VISUAL_VALUE_AT_NIGHT",
+      "lastRecheckedAt": "2026-10-13T04:10:52.669039Z",
+      "currentObservedState": "Decoded 640x360 and source Updated 10/12/2026 11:45 PM EDT, but noise obscured the scene. No current camera admission or successful date generated.",
+      "next": "Revisit in daylight or when material visibility evidence improves. Air-quality values alone do not establish visual quality.",
+      "why": "Distinct official view merits daylight research, but a current timestamp cannot overcome the observed low visual value."
+    },
+    {
+      "id": "matsumoto-official-camera-network",
+      "priority": "P1",
+      "placeGroup": "Matsumoto Castle / Utsukushigahara",
+      "country": "Japan",
+      "provider": "Matsumoto City / Visit Matsumoto",
+      "candidateType": "OFFICIAL_TOURISM_CAMERA_NETWORK",
+      "evidenceUrls": [
+        "https://visitmatsumoto.com/en/livecamera/",
+        "https://www.city.matsumoto.nagano.jp/soshiki/216/52945.html"
+      ],
+      "state": "HOLD_UNAVAILABLE_PRIVATE_OR_UNDECODED_EXACT_PLAYERS",
+      "lastRecheckedAt": "2026-10-13T04:10:52.669039Z",
+      "currentObservedState": "Tourism page city-hall SOt3wKdf7KM and highlands W7XRxcH05DI explicitly recording unavailable; Honmaru mXWEvcvMRvE private. Kuromon w1x2kIMp5OQ after Play stayed width0/height0/ready0/time0, pausedfalse, finite3600: inconclusive, not successful playback or proof prerecorded.",
+      "next": "Revisit when official exact player links or playback evidence materially change; no camera/date promotion, no authentication or alternate-route probing.",
+      "why": "Official city cameras offer strong castle and highland visitor value only when exact player currentness and playback are verified."
     }
   ],
   "guardrails": {

@@ -13042,5 +13042,46 @@
     "externalWindowRequired": true,
     "rightsBasis": "Council publishes and directly links this public camera image. ERN links to the council context page only; no imagery download, thumbnail reuse, hotlinking, framing or embedding permission inferred.",
     "freshnessEvidence": "Council-linked image decoded 3840x2160. Visible clock: OCT 13 Tuesday 03:36:38 AM, matching the reviewed New South Wales local day/time within the council-reported thirty-minute cadence. Year and timezone are not printed on the image; no full capture timestamp invented. Night bridge/road scene and council/location caption inspected."
+  },
+  {
+    "id": "us-acadia-jordan-pond-current",
+    "placeId": "us-acadia-jordan-pond",
+    "title": "Acadia — Jordan Pond",
+    "city": "Mount Desert Island",
+    "provider": "U.S. National Park Service / Dawnland LLC",
+    "country": "United States",
+    "region": "Maine / Acadia National Park",
+    "timeZone": "America/New_York",
+    "aliases": [
+      "Jordan Pond",
+      "Jordan Pond House",
+      "Mount Desert Island",
+      "Acadia National Park"
+    ],
+    "categories": [
+      "Parks",
+      "Lakes",
+      "Nature",
+      "Beautiful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.nps.gov/media/webcam/view.htm?id=A483238F-BAE9-C9E2-BE362FE8240C5E7F&r=/acad/learn/photosmultimedia/webcams.htm",
+    "officialUrl": "https://www.nps.gov/media/webcam/view.htm?id=A483238F-BAE9-C9E2-BE362FE8240C5E7F&r=/acad/learn/photosmultimedia/webcams.htm",
+    "attribution": "U.S. National Park Service / Dawnland LLC — Jordan Pond House camera",
+    "checkedAt": "2026-10-13T04:10:52.669039Z",
+    "lastSuccessfulCheck": "2026-10-13T04:10:52.669039Z",
+    "quality": 65,
+    "freshness": 95,
+    "moment": 60,
+    "story": "Refreshed Jordan Pond House camera published by Acadia National Park. Night infrared shows the foreground; lake and mountain visibility varies. Open the source for the latest image.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "NPS publishes this public camera context page and identifies its Dawnland LLC partnership. ERN provides an attributed external link only; third-party image copyright is not assumed public domain, and no embedding, hotlinking or footage reuse permission is inferred.",
+    "rightsSourceUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+    "freshnessEvidence": "Actual deployed-browser image decoded 1920x1080. Visible source captures advanced from 2026-10-13 00:06:26 to 00:08:26 Eastern local time, with foreground plant positions changing. The NPS page polls at 60 seconds; one observed capture difference is two minutes, not a guaranteed cadence. Night infrared foreground inspected; no continuous-video claim."
   }
 ]
