@@ -1,3 +1,9 @@
+## 2026-10-13 — Water-collection relevance correction
+
+- Deployed SEO-copy release e4a1da65d1f9949a016e190216a5ab3c947da7b5 passed all three workflows. Thai collection review exposed an existing classification bug: the substring sea also matched seasonal/research, pulling unrelated Big Meadows into Beaches & Water. Sea/seas and familiar coastal compounds now use the existing whole-word matching path. Genuine beaches, waterholes, coasts and sea views remain eligible; source truth, playback gates and neutral ranking are unchanged. The correction improves collection membership and destination category links across languages, rather than adding pages or keyword padding.
+- Added meaningful negative seasonal/research fixtures and positive sea/coast/water cases to the existing collection smoke test. Full local release validation follows; no camera timestamps, catalog counts, photography, affiliate relationships or public feature gates changed.
+- Production-file verification initially included a build-only locale module, which correctly returned404 because it is not shipped as a public asset. Corrected the verification target to the generated Thai Discover index; no site defect or network/security workaround. Final validation checks12 actual public manifest paths, including robots/sitemap, home/runtime/catalog and six language collection pages.
+
 ## 2026-10-13 — SEO clarity and localized collection improvement
 
 - Resumed verified GitHub main00fd1b00ed76de9e5db1b91f5e5b21c1b8fc8e42 and accepted production5b5a3fb0587c4a90226bcd0c8d20cbadcc8de794. Baseline technical SEO audit:880 HTML files checked,173 locally index-eligible pages/sitemap URLs,65 eligible destination pages, zero blocking errors. These are robots/sitemap eligibility counts, **not confirmed Google-indexed page counts or rankings**. Eligibility remains source/currentness/schedule gated; no mass noindex removal or thin-page expansion.

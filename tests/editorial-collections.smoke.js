@@ -34,3 +34,8 @@ const islands=editorialCollectionById("islands-coastal-escapes");
 for(const title of ["Malolo Lailai — Mamanuca Islands","Izu Oshima Island","Ogasawara harbour"])assert.equal(editorialCollectionMatches({title},islands),true,title);
 for(const title of ["Iceland city skyline","Mainland station","Highland ski area"])assert.equal(editorialCollectionMatches({title},islands),false,title);
 for(const locale of DISCOVERY_LOCALES)assert.ok(localizedCollection(islands.id,locale)?.description);
+
+const waters=editorialCollectionById('beaches-water');
+for(const title of ['Seasonal mountain meadow','Research observatory','Seasonal services near a park'])assert.equal(editorialCollectionMatches({title,categories:['Parks','Nature']},waters),false,'sea substring must not classify unrelated places: '+title);
+for(const title of ['North Sea camera','Seaside promenade','Seafront camera','Beach conditions','Freshwater waterhole'])assert.equal(editorialCollectionMatches({title},waters),true,'genuine water context remains discoverable: '+title);
+console.log('Water collections reject seasonal/research substring matches and preserve genuine sea/coast views');
