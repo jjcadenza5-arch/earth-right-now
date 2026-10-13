@@ -1,3 +1,8 @@
+## 2026-10-13 — Collection context and readable excerpts
+
+- Deployed check of96bca470159322b0985bba6e634303d02c2f380b exposed the second cause: a220-character SEO description cut seasonal to seas, which then matched the new whole-word rule. Collection membership now uses the original full source story, independently of shortened display/SEO text. Preview excerpts end at word boundaries; display text and geography no longer contaminate each other. Genuine coastal context beyond a short preview remains discoverable. No source truth/ranking/date changes.
+- Added rendered-page regressions for an inland meadow with a clipped seasonal preview, a genuine coastal viewpoint whose water context falls beyond the preview, and consistent results across six localized collection pages. Builder smoke PASS; all40 release/preflight checks PASS. Local rendered Thai water collection now excludes Big Meadows while its wildlife/park context remains valid. Final deployed acceptance follows.
+
 ## 2026-10-13 — Water-collection relevance correction
 
 - Deployed SEO-copy release e4a1da65d1f9949a016e190216a5ab3c947da7b5 passed all three workflows. Thai collection review exposed an existing classification bug: the substring sea also matched seasonal/research, pulling unrelated Big Meadows into Beaches & Water. Sea/seas and familiar coastal compounds now use the existing whole-word matching path. Genuine beaches, waterholes, coasts and sea views remain eligible; source truth, playback gates and neutral ranking are unchanged. The correction improves collection membership and destination category links across languages, rather than adding pages or keyword padding.

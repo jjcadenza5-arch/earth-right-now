@@ -21,7 +21,7 @@ export function editorialCollectionById(id){
 
 export function editorialCollectionMatches(item,definition){
   if(!item||!definition)return false;
-  const hay=fold([...(item.categories||[]),item.title,item.story,item.region,item.country].filter(Boolean).join(" "));
+  const hay=fold([...(item.categories||[]),item.title,item.sourceStory??item.story,item.region,item.country].filter(Boolean).join(" "));
   return (definition.terms||[]).some(term=>hay.includes(fold(term)))||(definition.wordTerms||[]).some(term=>hay.split(/[^a-z0-9]+/).includes(fold(term)));
 }
 

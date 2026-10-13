@@ -39,6 +39,7 @@ const safe=u=>{try{const x=new URL(u);return /^https?:$/.test(x.protocol)?x.toSt
 const date=s=>{const d=new Date(s);return Number.isNaN(d.getTime())?"":d.toISOString()};
 const pageCurrentSource=(s,now)=>currentSource(s,{now})&&embedPlaybackProofCurrent(s,{now});
 const commonAlias=s=>(s.aliases||[]).find(a=>a&&a.length>=3&&!/^(st|mt)\.?\s/i.test(a))||"";
+const excerpt=value=>{const text=String(value||"");return text.length<=220?text:text.slice(0,219).replace(/\s+\S*$/,"").trimEnd()+"…";};
 const seoName=s=>s.seoName||s.city||(s.region&&!/[\/,]/.test(s.region)&&String(s.title||"").toLowerCase().startsWith(String(s.region).toLowerCase())?s.region:"")||commonAlias(s)||String(s.title||"").split(" — ")[0]||s.title;
 const sourceKind=s=>s.truth==="LIVE_VIDEO"?"live video":s.truth==="LIVE_IMAGE"?"current image":s.truth==="EXTERNAL_LIVE"?"official external live source":s.truth==="PARTNER"?"partner source":"reference source";
 
@@ -93,7 +94,7 @@ for(const [id,items] of map){
   const where=[city,state||preferred.region,preferred.country].filter(Boolean).join(", ");
   const story=(preferred.story||("Available Earth Right Now views for "+title)).slice(0,220);
   const desc=currentItems.length
-    ?("See "+destinationName+" now with Earth Right Now. "+story).slice(0,220)
+    ?(excerpt("See "+destinationName+" now with Earth Right Now. "+story))
     :scheduledClosedItems.length
       ?("ERN has a recently verified source for "+title+", but it is outside the provider's published live hours right now. Check the published schedule or return when the source is open.").slice(0,220)
       :("Explore "+destinationName+" with reviewed place information. ERN has no verified current view right now; check back after source review.").slice(0,220);
@@ -214,7 +215,7 @@ for(const [id,items] of map){
   fs.writeFileSync(dir+"/index.html",html);
 
   if(indexable)urls.push({loc:url,lastmod});
-  placeRows.push({id,title,destinationName,aliases,city,state,country:preferred.country||"",region:preferred.region||"",story:desc,lastmod,videoCount:currentItems.filter(s=>s.truth==="LIVE_VIDEO"||s.truth==="EXTERNAL_LIVE").length,imageCount:currentItems.filter(s=>s.truth==="LIVE_IMAGE").length,current:currentItems.length>0,scheduled:scheduledClosedItems.length>0,indexable,visitorNames:visitorInfo.map(x=>x.name),localNames:venues.slice(0,4).map(x=>x.name),categories:[...(preferred.categories||[])]});
+  placeRows.push({id,title,destinationName,aliases,city,state,country:preferred.country||"",region:preferred.region||"",story:desc,sourceStory:preferred.story||"",lastmod,videoCount:currentItems.filter(s=>s.truth==="LIVE_VIDEO"||s.truth==="EXTERNAL_LIVE").length,imageCount:currentItems.filter(s=>s.truth==="LIVE_IMAGE").length,current:currentItems.length>0,scheduled:scheduledClosedItems.length>0,indexable,visitorNames:visitorInfo.map(x=>x.name),localNames:venues.slice(0,4).map(x=>x.name),categories:[...(preferred.categories||[])]});
 }
 
 placeRows.sort((a,b)=>Number(b.indexable)-Number(a.indexable)||a.country.localeCompare(b.country)||a.title.localeCompare(b.title));
