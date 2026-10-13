@@ -1,6 +1,6 @@
 ## 2026-10-13 — River street or mountain walk? (owner-managed theme)
 
-Hook: “Would you stay by Takayama’s river, or plan a mountain day trip?” Use an original ERN navigation recording showing the refreshed-image label, then the reviewed city transport and separate Kamikochi planning links. The Takayama camera does not show Kamikochi. Link to the Takayama ERN destination after release acceptance. Facebook: destination link and question; Instagram/TikTok: a short navigation recording with the question and profile-link invitation. Do not copy provider camera footage or the permission-held lodge image. Review existing aggregate searches/result opens; no new tracking, posts, paid campaign or attribution claim.
+Hook: “Would you stay by Takayama’s river, or plan a mountain day trip?” Use an original ERN navigation recording showing the refreshed-image label, then the reviewed city transport and separate Kamikochi planning links. The Takayama camera does not show Kamikochi. Accepted destination link: https://earthrightnow.app/places/takayama-miyagawa/ . Production browser/card/handoff acceptance passed on 2026-10-13; the separate stream remains unrenewed. Facebook: destination link and question; Instagram/TikTok: a short navigation recording with the question and profile-link invitation. Do not copy provider camera footage or the permission-held lodge image. Review existing aggregate searches/result opens; no new tracking, posts, paid campaign or attribution claim.
 
 ## 2026-10-13 — Choose your window (owner-managed theme)
 
