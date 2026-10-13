@@ -7785,17 +7785,18 @@
     "playback": "EXTERNAL",
     "sourceUrl": "https://mandarinbeachvilla.com/live-beach-webcam-koh-samui/",
     "attribution": "Mandarin Beach Villa",
-    "checkedAt": "2026-10-06T07:08:00Z",
-    "lastSuccessfulCheck": "2026-10-06T07:08:00Z",
+    "checkedAt": "2026-10-13T11:06:00.989567Z",
+    "lastSuccessfulCheck": "2026-10-13T11:06:00.989567Z",
     "quality": 95,
     "freshness": 99,
     "moment": 95,
-    "story": "First-party live beachfront view from Lipa Noi on Koh Samui, showing sea, tide, weather and sunset conditions.",
+    "story": "First-party live video of the beachfront directly in front of Mandarin Beach Villa on Lipa Noi. The fixed view covers this frontage, not all of Lipa Noi; imagery does not establish swimming safety or property access.",
     "featuredHold": true,
     "watchHold": true,
     "rightsBasis": "First-party villa live-webcam page; ERN links externally and does not infer embed/restream permission.",
-    "freshnessEvidence": "The provider describes a real public first-party live view of the beachfront and explicitly states visitors can see conditions as they are today.",
-    "searchSupplemental": true
+    "freshnessEvidence": "Browser decoded 640x360 moving video, readyState4 and unpaused. Camera clock advanced on2026-10-13 from17:57:12 to17:59:31 Thailand time with changed water/sky. Media currentTime15.531→57.839→273.984; finite HLS buffer duration18.52→66.52→282.8 advanced rather than remaining a fixed recording. Separate daily MP4 time-lapse remains historical and was not used as live proof.",
+    "searchSupplemental": true,
+    "timeZone": "Asia/Bangkok"
   },
   {
     "id": "greenland-tasiilaq-live-views",
@@ -13164,5 +13165,43 @@
     "rightsBasis": "JMA permits attributed links to individual pages except specifically restricted pages. Exact public camera context reviewed; LINK_ONLY, no image reuse, embedding, official endorsement or eruption-state inference.",
     "rightsSourceUrl": "https://www.jma.go.jp/jma/kishou/info/coment.html",
     "freshnessEvidence": "Browser-decoded 640x360 image, visible capture2026-10-13 16:07:54 Japan; page slot16:08 and filename160800 are distinct. Mountain and bay visible despite summit cloud. Dated current image, not continuous video; no refresh interval measured."
+  },
+  {
+    "id": "us-acadia-mcfarland-hill-current",
+    "placeId": "us-acadia-mcfarland-hill",
+    "title": "Acadia — McFarland Hill",
+    "provider": "U.S. National Park Service",
+    "country": "United States",
+    "region": "Maine / Acadia National Park",
+    "timeZone": "America/New_York",
+    "aliases": [
+      "McFarland Hill",
+      "Acadia National Park",
+      "Mount Desert Island"
+    ],
+    "categories": [
+      "Parks",
+      "Nature",
+      "Beautiful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.nps.gov/subjects/air/webcams.htm?site=acad",
+    "officialUrl": "https://www.nps.gov/subjects/air/webcams.htm?site=acad",
+    "attribution": "U.S. National Park Service — McFarland Hill northeast camera",
+    "checkedAt": "2026-10-13T11:06:00.989567Z",
+    "lastSuccessfulCheck": "2026-10-13T11:06:00.989567Z",
+    "quality": 80,
+    "freshness": 95,
+    "moment": 75,
+    "story": "Official refreshed northeast view from McFarland Hill across Acadia’s wooded landscape. Check the provider’s capture time and separate weather, air-quality and visitor-access information before planning a visit.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "NPS publishes this public camera context. Attributed external link only; no camera-image reuse, hotlink, embedding, logo use or third-party copyright assumption.",
+    "rightsSourceUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+    "freshnessEvidence": "Rendered 640x360 dawn view: trees, wooded hills and bright horizon visible. Source Updated 10/13/2026 06:45 AM EDT, inspected in browser on October13. Previous night-noise hold resolved by changed daylight evidence. Official article describes 15-minute images; no independent refresh interval measured, continuous-video claim or access guarantee."
   }
 ]

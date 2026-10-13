@@ -272,7 +272,7 @@
           "promotionState": "PROMOTED_LINK_ONLY"
         }
       ],
-      "latestResearchAt": "2026-10-12T01:22:59.457334+00:00",
+      "latestResearchAt": "2026-10-13T11:06:00.989567Z",
       "boundedPlaybackReview": {
         "targets": [
           "Helsinki Market Square",
@@ -305,6 +305,25 @@
         ],
         "next": "Revisit held players after material provider evidence or a fresh decoded browser frame; no retry loop or duplicate research queue.",
         "selectionBasis": "Editorial first-party leads; no new private aggregate demand export or measured visitor-interest claim."
+      },
+      "latestTargetedMaintenance": {
+        "reviewedAt": "2026-10-13T11:06:00.989567Z",
+        "resolvedCatalogIds": [
+          "levi-ski-resort"
+        ],
+        "evidence": "Official Levi-linked Tuikku panorama rendered, selected13Oct2026 13:55 Europe/Helsinki. LINK_ONLY/LIVE_IMAGE retained, exact source action improved.",
+        "heldTargets": [
+          {
+            "name": "Levi Zero Point video",
+            "reason": "Play produced0x0, currentTime0, readyState0; no video/date promotion."
+          },
+          {
+            "name": "Ruka Village / Front slopes",
+            "sourceUrl": "https://ruka5.panocloud.webcam/en",
+            "reason": "Timestamp13Oct13:50 present but WebGL/CSS3D renderer unavailable. Original source check retained."
+          }
+        ],
+        "next": "Revisit held players only after useful new evidence; no duplicate research queue or retry loop."
       }
     },
     {
@@ -1043,11 +1062,12 @@
       "evidenceUrls": [
         "https://www.nps.gov/subjects/air/webcams.htm?site=acad"
       ],
-      "state": "HOLD_LOW_VISUAL_VALUE_AT_NIGHT",
-      "lastRecheckedAt": "2026-10-13T04:10:52.669039Z",
-      "currentObservedState": "Decoded 640x360 and source Updated 10/12/2026 11:45 PM EDT, but noise obscured the scene. No current camera admission or successful date generated.",
-      "next": "Revisit in daylight or when material visibility evidence improves. Air-quality values alone do not establish visual quality.",
-      "why": "Distinct official view merits daylight research, but a current timestamp cannot overcome the observed low visual value."
+      "state": "RESOLVED_PROMOTED_LINK_ONLY_CURRENT_IMAGE",
+      "lastRecheckedAt": "2026-10-13T11:06:00.989567Z",
+      "currentObservedState": "640x360 dawn landscape decoded and inspected; source Updated13Oct2026 06:45AM EDT. Woodland/hills and horizon now visible. Previous night-noise hold resolved by changed visibility evidence.",
+      "next": "Maintain date/visibility checks. Do not infer public access to the camera site or promote promotional images as current.",
+      "why": "Distinct official view merits daylight research, but a current timestamp cannot overcome the observed low visual value.",
+      "catalogId": "us-acadia-mcfarland-hill-current"
     },
     {
       "id": "matsumoto-official-camera-network",

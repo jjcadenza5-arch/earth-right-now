@@ -317,6 +317,42 @@
       "reviewOutcome": "Switzerland Tourism page selected13Oct2026 09:00 but did not render panorama due WebGL support. Exact hotel-linked Roundshot rendered a village/valley panorama at13Oct2026 09:10 Europe/Zurich. Hotel copyright retained, no reuse. Existing source renewal, not a new camera; direct handoff approved.",
       "action": "MAINTAIN_EXACT_OPERATOR_LINK_ONLY_CURRENT_IMAGE",
       "blocks250Milestone": false
+    },
+    {
+      "id": "levi-ski-resort",
+      "placeId": "levi-ski-resort",
+      "title": "Levi Ski Resort",
+      "country": "Finland",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "blocks250Milestone": false,
+      "action": "MAINTAIN_EXACT_TUIKKU_PANORAMA; VIDEO_REQUIRES_SEPARATE_DECODED_PLAYBACK",
+      "lastReviewAt": "2026-10-13T11:06:00.989567Z",
+      "reviewOutcome": "Official Levi-linked Tuikku panorama rendered, archive13Oct2026 13:55. Zero Point YouTube Play yielded0x0, currentTime0, readyState0; no video renewal or promotion."
+    },
+    {
+      "id": "thailand-koh-samui-lipa-noi-mandarin",
+      "placeId": "thailand-koh-samui-lipa-noi-mandarin",
+      "title": "Koh Samui — Lipa Noi Beach",
+      "country": "Thailand",
+      "health": "HEALTHY",
+      "truth": "EXTERNAL_LIVE",
+      "blocks250Milestone": false,
+      "action": "MAINTAIN_ATTRIBUTED_LINK_ONLY_LIVE_VIDEO; KEEP_ARCHIVE_SEPARATE",
+      "lastReviewAt": "2026-10-13T11:06:00.989567Z",
+      "reviewOutcome": "640x360 live video with advancing dated camera clock and moving HLS duration/currentTime. Night visibility remains limited; no area-wide conditions inference."
+    },
+    {
+      "id": "finland-ruka-webcams",
+      "placeId": "finland-ruka",
+      "title": "Ruka — Kuusamo",
+      "country": "Finland",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "blocks250Milestone": false,
+      "action": "HOLD_RENEWAL_UNTIL_ACTUAL_PANORAMA_RENDERS",
+      "lastReviewAt": "2026-10-13T11:06:00.989567Z",
+      "reviewOutcome": "Exact first-party Front slopes PanoCloud dated13Oct2026 13:50 but WebGL/CSS3D unsupported. No decoded panorama; original successful date6Oct09:45UTC retained. Not a provider outage."
     }
   ],
   "currentReality": {

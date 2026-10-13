@@ -9628,5 +9628,299 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.bellevue-wengen.ch/en/kontakt/"
+  },
+  {
+    "id": "local-mcfarland-visitors",
+    "placeId": "us-acadia-mcfarland-hill",
+    "place": "Acadia / Bar Harbor",
+    "country": "United States",
+    "name": "NPS — seasonal visitor centers and accessible arrival",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/acad/planyourvisit/visitor-centers-contact-stations.htm",
+    "summary": "Choose the correct seasonal visitor contact station. Hulls Cove has a separate accessible entrance; winter visitor information moves into Bar Harbor. Check current dates and transport before going; the camera is not a visitor-center access promise.",
+    "tags": [
+      "Acadia / Bar Harbor",
+      "United States",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/acad/planyourvisit/visitor-centers-contact-stations.htm",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-mcfarland-weather",
+    "placeId": "us-acadia-mcfarland-hill",
+    "place": "Acadia / Bar Harbor",
+    "country": "United States",
+    "name": "NPS — Acadia weather and fall planning",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/acad/planyourvisit/weather.htm",
+    "summary": "Prepare for changing coastal and mountain weather. Use the park’s linked forecasts and seasonal guidance; one dawn camera view does not predict your whole visit or establish peak fall color everywhere.",
+    "tags": [
+      "Acadia / Bar Harbor",
+      "United States",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/acad/planyourvisit/weather.htm",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-mcfarland-air",
+    "placeId": "us-acadia-mcfarland-hill",
+    "place": "Acadia / Bar Harbor",
+    "country": "United States",
+    "name": "NPS — understanding Acadia air quality",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/articles/000/acadia-air-quality.htm",
+    "summary": "Read the park’s explanation of visibility, haze and separately measured air pollutants. A clear-looking image alone does not establish healthy air, and the camera and instrument data can have different update times.",
+    "tags": [
+      "Acadia / Bar Harbor",
+      "United States",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/articles/000/acadia-air-quality.htm",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-mcfarland-conditions",
+    "placeId": "us-acadia-mcfarland-hill",
+    "place": "Acadia / Bar Harbor",
+    "country": "United States",
+    "name": "NPS — current conditions and facility notices",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/acad/planyourvisit/conditions.htm",
+    "summary": "Check park notices, facility dates and linked weather before selecting roads, trails or beaches. Older storm-history text provides context, not proof of today’s closure or reopening. The McFarland Hill camera does not grant access to its monitoring site.",
+    "tags": [
+      "Acadia / Bar Harbor",
+      "United States",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/acad/planyourvisit/conditions.htm",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-mcfarland-passes",
+    "placeId": "us-acadia-mcfarland-hill",
+    "place": "Acadia / Bar Harbor",
+    "country": "United States",
+    "name": "NPS — entrance passes and separate vehicle reservations",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/acad/planyourvisit/fees.htm",
+    "summary": "Distinguish the park entrance pass from the separate Cadillac Summit Road vehicle reservation. Check current eligibility, nonresident fees and cashless payment arrangements directly; save confirmations before entering areas with limited mobile reception.",
+    "tags": [
+      "Acadia / Bar Harbor",
+      "United States",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/acad/planyourvisit/fees.htm",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-mcfarland-geddys",
+    "placeId": "us-acadia-mcfarland-hill",
+    "place": "Acadia / Bar Harbor",
+    "country": "United States",
+    "name": "Geddy’s — downtown Bar Harbor dining",
+    "type": "restaurant",
+    "url": "https://geddys.com/geddys-menus/",
+    "summary": "Compare seafood, pizza and other dining choices at this separate Bar Harbor restaurant. Ask about current service, reservations and dietary needs directly. It is a local planning option, not a venue at the camera’s monitoring site.",
+    "tags": [
+      "Acadia / Bar Harbor",
+      "United States",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://geddys.com/geddys-menus/",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-mcfarland-inn",
+    "placeId": "us-acadia-mcfarland-hill",
+    "place": "Acadia / Bar Harbor",
+    "country": "United States",
+    "name": "Bar Harbor Inn — bay-view and garden-view stays",
+    "type": "hotel",
+    "url": "https://barharborinn.com/",
+    "summary": "Compare the inn’s downtown waterfront, bay-view and garden-view room categories. Confirm seasonal dates and the actual booked room; this separate Bar Harbor property is not located at the McFarland Hill camera.",
+    "tags": [
+      "Acadia / Bar Harbor",
+      "United States",
+      "hotel"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://barharborinn.com/",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-levi-tuikku",
+    "placeId": "levi-ski-resort",
+    "place": "Levi",
+    "country": "Finland",
+    "name": "Tuikku — mountain restaurant and seasonal access",
+    "type": "restaurant",
+    "url": "https://www.levi.fi/en/services/panoramic-restaurant-tuikku/",
+    "summary": "Review the official destination listing for this restaurant near Levi’s summit. Its page includes older summer hours; confirm current opening and a suitable route directly. A running panorama does not prove the restaurant or lift is open.",
+    "tags": [
+      "Levi",
+      "Finland",
+      "restaurant"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.levi.fi/en/services/panoramic-restaurant-tuikku/",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-levi-zero-rental",
+    "placeId": "levi-ski-resort",
+    "place": "Levi",
+    "country": "Finland",
+    "name": "Zero Point — seasonal equipment rental",
+    "type": "equipment rental",
+    "url": "https://www.levi.fi/en/services/zero-point-rental/",
+    "summary": "Compare winter ski equipment with summer and autumn bicycle or walking equipment at Zero Point in Levi village. Confirm stock, fit, collection and current opening times; other activity-park rental locations have different seasons.",
+    "tags": [
+      "Levi",
+      "Finland",
+      "equipment rental"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.levi.fi/en/services/zero-point-rental/",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-levi-ski-school",
+    "placeId": "levi-ski-resort",
+    "place": "Levi",
+    "country": "Finland",
+    "name": "Levi Ski School — future winter lessons",
+    "type": "guided activity",
+    "url": "https://www.levi.fi/en/ski/ski-school/",
+    "summary": "Plan lessons by age, skill level and discipline. The operator lists the 2026–2027 winter course period from 30 November to 1 May, while early-season lessons depend on snow and slope conditions. Confirm equipment and pass requirements separately; booking availability is not current lesson operation.",
+    "tags": [
+      "Levi",
+      "Finland",
+      "guided activity"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.levi.fi/en/ski/ski-school/",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-levi-ski-bus",
+    "placeId": "levi-ski-resort",
+    "place": "Levi",
+    "country": "Finland",
+    "name": "Levi — Ski Bus dates and ticket coverage",
+    "type": "visitor information",
+    "url": "https://www.levi.fi/en/ski/levi-ski-resort-services/ski-bus/",
+    "summary": "The published 2026–2027 timetable begins on 30 October, with frequency varying later in the season. Ski passes and family-area tickets include bus travel; scenic cabin-lift tickets do not. Check your date and route rather than assuming service is running today.",
+    "tags": [
+      "Levi",
+      "Finland",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.levi.fi/en/ski/levi-ski-resort-services/ski-bus/",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-lipa-noi-mandarin",
+    "placeId": "thailand-koh-samui-lipa-noi-mandarin",
+    "place": "Lipa Noi / Koh Samui",
+    "country": "Thailand",
+    "name": "Mandarin Beach Villa — private-estate stays",
+    "type": "accommodation",
+    "url": "https://mandarinbeachvilla.com/",
+    "summary": "Review this private beachfront estate’s room layout and guest arrangements, then confirm dates and accessibility directly. Historical occupancy figures are not a live availability feed. The public beach and private villa have different access arrangements.",
+    "tags": [
+      "Lipa Noi / Koh Samui",
+      "Thailand",
+      "accommodation"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://mandarinbeachvilla.com/",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-lipa-noi-camera-scope",
+    "placeId": "thailand-koh-samui-lipa-noi-mandarin",
+    "place": "Lipa Noi / Koh Samui",
+    "country": "Thailand",
+    "name": "Lipa Noi — what this camera actually covers",
+    "type": "visitor information",
+    "url": "https://mandarinbeachvilla.com/live-beach-webcam-koh-samui/#camera-scope",
+    "summary": "Understand the fixed frontage visible in Mandarin’s camera before comparing locations. The view does not establish conditions outside another property or across all of Lipa Noi, and cannot establish swimming safety or water quality.",
+    "tags": [
+      "Lipa Noi / Koh Samui",
+      "Thailand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://mandarinbeachvilla.com/live-beach-webcam-koh-samui/#camera-scope",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
+  },
+  {
+    "id": "local-lipa-noi-record-method",
+    "placeId": "thailand-koh-samui-lipa-noi-mandarin",
+    "place": "Lipa Noi / Koh Samui",
+    "country": "Thailand",
+    "name": "Mandarin — hourly observations and record limits",
+    "type": "visitor information",
+    "url": "https://mandarinbeachvilla.com/beach-observations/how-monitoring-works/",
+    "summary": "Distinguish moving live video from the operator’s sampled hourly daylight reports and historical time-lapse. Check each report’s date and coverage; automated interpretations are owner-operated and are not independently certified conditions or bathing-water tests.",
+    "tags": [
+      "Lipa Noi / Koh Samui",
+      "Thailand",
+      "visitor information"
+    ],
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://mandarinbeachvilla.com/beach-observations/how-monitoring-works/",
+    "verifiedAt": "2026-10-13T11:06:00.989567Z"
   }
 ]
