@@ -1193,6 +1193,52 @@
       "next": "Revisit on material visibility or image-quality improvement; no public camera/date admission from this pass.",
       "lastRecheckedAt": "2026-10-13T07:30:12.732558Z",
       "currentObservedState": "640x480 decoded, capture16:00:00 Japan; strong block artefacts/cloud prevent a useful mountain view."
+    },
+    {
+      "id": "shenandoah-big-meadows-official-live",
+      "priority": "P1",
+      "placeGroup": "Shenandoah — Big Meadows",
+      "country": "United States",
+      "provider": "NPS / Shenandoah National Park Association / HDOnTap",
+      "candidateType": "OFFICIAL_PARTNER_SUPPORTED_LIVE_VIDEO",
+      "evidenceUrls": [
+        "https://www.nps.gov/shen/learn/photosmultimedia/bigmeadows_livecam.htm",
+        "https://www.nps.gov/media/webcam/view.htm?id=81B46B99-1DD8-B71B-0B124A40CC3384CE"
+      ],
+      "state": "RESOLVED_PROMOTED_LINK_ONLY_LIVE_VIDEO",
+      "lastRecheckedAt": "2026-10-13T11:39:31.482411Z",
+      "catalogId": "us-shenandoah-big-meadows-live",
+      "why": "Verified moving first-party meadow view can support seasonal park planning without relying on promotional photographs.",
+      "next": "Maintain external live video. Old static-image0x0 endpoint stays on hold until real decoded current evidence; Active text and polling countdown are insufficient.",
+      "currentObservedState": "3840x2160 moving video, LIVE label, current dated player clock and advancing rolling media duration/currentTime. Separate static-image endpoint failed to decode."
+    },
+    {
+      "id": "guernsey-yacht-club-location-maintenance",
+      "priority": "P1",
+      "placeGroup": "St Peter Port harbour / Havelet Bay",
+      "country": "Guernsey",
+      "provider": "Guernsey Yacht Club LBG",
+      "candidateType": "FIRST_PARTY_REFRESHED_CAMERA_MAINTENANCE",
+      "evidenceUrls": [
+        "https://www.gyc.org.gg/the-clubhouse/webcams/"
+      ],
+      "state": "PARTIALLY_RESOLVED_HARBOUR_RENEWED_HAVELET_HELD",
+      "lastRecheckedAt": "2026-10-13T11:39:31.482411Z",
+      "why": "Distinct named camera views require their own location/currentness evidence; the shared provider page is not a blanket verification.",
+      "next": "Keep dated harbour camera. Revisit Havelet after location reconfirmation; From Castle Cornet views need independent currentness evidence, not a refreshed URL alone. No duplicate queue or retry loop.",
+      "resolvedCatalogIds": [
+        "guernsey-harbour-live"
+      ],
+      "heldTargets": [
+        {
+          "name": "Havelet Bay label",
+          "reason": "Reviewed image labelled GYC North West shows inner harbour; expected bay/fortress view not independently reconfirmed. Existing successful date retained, source-specific public link held."
+        },
+        {
+          "name": "From Castle Cornet wide/zoom",
+          "reason": "Decoded2560x1440 wide and1920x1080 zoom, but no capture date/clock or independently observed frame progression in this pass. Ten-second page text/cache-buster alone not sufficient."
+        }
+      ]
     }
   ],
   "guardrails": {

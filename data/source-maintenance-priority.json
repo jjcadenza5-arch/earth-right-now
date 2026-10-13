@@ -102,20 +102,23 @@
       "country": "Guernsey",
       "health": "HEALTHY",
       "truth": "LIVE_IMAGE",
-      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_FIRST_PARTY_WEBCAM_PAGE_INDEPENDENTLY_CONFIRMED_ACTIVE",
-      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
-      "blocks562Baseline": false
+      "action": "MAINTAIN_DATED_DECODED_HARBOUR_IMAGE; EXACT_CAMERA_ANCHOR",
+      "blocks562Baseline": false,
+      "lastReviewAt": "2026-10-13T11:39:31.482411Z",
+      "reviewOutcome": "3840x2160 decoded harbour entrance, burned-in13Oct2026 12:25:22→12:25:52. Existing successful source renewed;10-second operator claim not independently measured as a guaranteed cadence."
     },
     {
       "id": "guernsey-havelet-bay-live",
       "placeId": "guernsey-havelet-bay",
       "title": "Guernsey — Havelet Bay & Castle Cornet",
       "country": "Guernsey",
-      "health": "HEALTHY",
+      "health": "DEGRADED",
       "truth": "LIVE_IMAGE",
-      "failureReason": "AUTOMATED_HEALTH_REPEATED_NETWORK_OR_SERVER_FAILURE_BUT_FIRST_PARTY_WEBCAM_PAGE_INDEPENDENTLY_CONFIRMED_ACTIVE",
-      "action": "KEEP_SOURCE_TRUTH_RECHECK_PROVIDER_ACCESS_PATTERN_AND_NEXT_ROTATING_COHORT",
-      "blocks562Baseline": false
+      "failureReason": "CAMERA_VIEW_LOCATION_RECONFIRMATION_REQUIRED",
+      "action": "HOLD_LOCATION_SPECIFIC_HANDOFF_UNTIL_HAVELET_VIEW_RECONFIRMED",
+      "blocks562Baseline": false,
+      "lastReviewAt": "2026-10-13T11:39:31.482411Z",
+      "reviewOutcome": "Page caption says Havelet Bay, but3840x2160 reviewed scene is labelled GYC North West and shows inner harbour. Last successful6Oct01:20UTC retained; no current renewal or claim of provider-wide outage."
     },
     {
       "id": "brazil-aguas-lindoia-live",
