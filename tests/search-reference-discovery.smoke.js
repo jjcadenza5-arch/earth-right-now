@@ -4,7 +4,7 @@ assert.ok(app.includes("s.title,s.placeId,s.city,s.state,s.region,s.country,s.pr
 assert.ok(app.includes("function sst("),"browser search must use the shared searchable destination document");
 assert.ok(app.includes('matches=catalogMatches.filter(s=>guideEligible(s)||(s.health==="HEALTHY"&&!!safeExternalUrl(s.sourceUrl||s.officialUrl)))'),"known healthy destinations must remain discoverable when current verification lapses");
 assert.ok(app.includes('reference-only'),"search status must disclose reference-only fallback");
-assert.ok(app.includes("(guideEligible(b)?1:0)-(guideEligible(a)?1:0)"),"current source must win within a mixed destination group");
+assert.ok(app.includes("(de(b)?1:0)-(de(a)?1:0)"),"current source must win within a mixed destination group");
 console.log("ERN browser search preserves destination discovery without faking currentness");
 
 const {runInNewContext}=await import("node:vm");
@@ -31,3 +31,26 @@ const fresh=source('held-current'),stale=source('stale',{age:80}),failed=source(
 const count=runInNewContext(currentClaim+'const '+eligibility+'const '+currentCount+';cp',{ag:[[fresh],[stale],[failed],[preview],[closed],[offline],[source('other-current'),fresh]],safeExternalUrl:u=>u,currentTruthClaim:undefined,activePlaybackFailure:s=>!!s.failure,verificationAgeHours:s=>s.age,verificationWindowHours:s=>s.window,embedPlaybackCurrent:()=>true,scheduledNow:s=>s.open===true});
 assert.equal(count,2,'fresh curated-out views count once per place, while stale, failed, preview, closed and offline views do not');
 console.log('Search current-view counts preserve evidence gates and ignore presentation holds');
+
+// Execute grouped-card choice with the same currentness predicates as production.
+const cardStart=app.indexOf('function placeCard(group){'),cardEnd=app.indexOf('function groupByPlace',cardStart);
+assert.ok(cardStart>=0&&cardEnd>cardStart);
+let opened;
+const choose=runInNewContext(currentClaim+'const '+eligibility+'('+app.slice(cardStart,cardEnd).trim()+')',{
+ safeExternalUrl:u=>u,activePlaybackFailure:s=>!!s.failure,
+ verificationAgeHours:s=>s.age,verificationWindowHours:s=>s.window,
+ embedPlaybackCurrent:()=>true,scheduledNow:s=>s.open===true,
+ guideEligible:()=>{throw Error('featured eligibility must not choose a discovery card')},
+ baseScore:s=>s.id==='held-current'?-500:400,
+ card:s=>({source:s,classList:{add(){}},append(){},setAttribute(){}}),
+ document:{createElement:()=>({})},openViewer:s=>opened=s
+});
+for(const noncurrent of [stale,failed,preview,closed,offline]){
+ const card=choose([noncurrent,fresh]);
+ assert.equal(card.source.id,'held-current','a verified, featured-held image must beat every noncurrent source');
+ card.onclick();assert.equal(opened.id,'held-current','grouped-card click opens the verified image');
+}
+assert.equal(choose([stale]).source.id,'stale','reference-only places remain discoverable without promoting source truth');
+const video=source('current-video',{truth:'LIVE_VIDEO',featuredHold:false});
+assert.equal(choose([fresh,video]).source.id,'current-video','quality/context score still ranks among verified current choices');
+console.log('Grouped discovery selection and click targets preserve currentness independently of featured curation');
