@@ -1000,6 +1000,29 @@
       "note": "Individual file location, creator, 2010 photograph date and CC BY-SA 2.0 licence reviewed. Decoded 960px preview inspected and hashed. Historical beach context, not the exact live-camera angle or evidence of current conditions. No endorsement implied.",
       "attributionChanges": "Unmodified by ERN; scaled at original aspect ratio on destination pages.",
       "homepageAttributionChanges": "Display crop using object-fit: cover; historical photograph under the linked original licence. Creator, source, date and licence credited below the card."
+    },
+    {
+      "placeId": "japan-sakurajima",
+      "filePage": "https://commons.wikimedia.org/wiki/File:View_of_Sakurajima_from_Sengan-en_1.jpg",
+      "creator": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dateTaken": "2018-09-25",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/View_of_Sakurajima_from_Sengan-en_1.jpg/960px-View_of_Sakurajima_from_Sengan-en_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20201205201338",
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:View_of_Sakurajima_from_Sengan-en_1.jpg&oldid=1130236049",
+      "alt": "Historical view of Sakurajima beyond the gardens at Sengan-en in Kagoshima",
+      "imageWidth": 960,
+      "imageHeight": 720,
+      "inspectedPreviewSha256": "fe09ac561fc1b908e4213b5f9a6c58494f3d922b680aa847dd95b4b2cd6501d6",
+      "inspectedPreviewBytes": 187615,
+      "source": "Wikimedia Commons",
+      "status": "APPROVED_EDITORIAL_DESTINATION_PAGE_ONLY",
+      "publicActivationAllowed": true,
+      "homepageActivationAllowed": true,
+      "licenseRecheckedAt": "2026-10-13T07:30:12.732558Z",
+      "note": "Exact volcano destination, Sengan-en viewpoint, creator,2018 date and individual CC BY-SA4.0 licence reviewed.960px image decoded, visually inspected and hashed. Historical context from a different viewpoint, not the current JMA camera angle or eruption/weather evidence. No endorsement implied.",
+      "attributionChanges": "Unmodified by ERN; scaled at original aspect ratio on destination pages.",
+      "homepageAttributionChanges": "Display crop using object-fit: cover; historical photograph under the linked original licence. Creator, source, date and licence credited below the card."
     }
   ],
   "homepageActivationAllowed": true

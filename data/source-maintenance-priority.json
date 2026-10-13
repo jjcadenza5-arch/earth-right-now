@@ -305,6 +305,18 @@
       "reviewOutcome": "Exact operator context reviewed. Mackenzie Beach heading matched; exact CamStreamer wrapper remained blank, with no decoded video observed. No successful-check or playback date renewed; no global outage conclusion. Revisit on material player evidence.",
       "action": "HOLD_PLAYBACK_RENEWAL_UNTIL_EXACT_OPERATOR_PLAYER_DECODES_CURRENT_VIDEO",
       "blocks250Milestone": false
+    },
+    {
+      "id": "wengen-bellevue",
+      "placeId": "wengen-bellevue",
+      "title": "Wengen — Bellevue",
+      "country": "Switzerland",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "lastReviewAt": "2026-10-13T07:30:12.732558Z",
+      "reviewOutcome": "Switzerland Tourism page selected13Oct2026 09:00 but did not render panorama due WebGL support. Exact hotel-linked Roundshot rendered a village/valley panorama at13Oct2026 09:10 Europe/Zurich. Hotel copyright retained, no reuse. Existing source renewal, not a new camera; direct handoff approved.",
+      "action": "MAINTAIN_EXACT_OPERATOR_LINK_ONLY_CURRENT_IMAGE",
+      "blocks250Milestone": false
     }
   ],
   "currentReality": {

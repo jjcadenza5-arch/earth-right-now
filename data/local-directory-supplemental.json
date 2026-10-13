@@ -9374,5 +9374,259 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.data.jma.go.jp/vois/data/report/activity_info/306.html"
+  },
+  {
+    "id": "local-sakurajima-bike",
+    "placeId": "japan-sakurajima",
+    "place": "Sakurajima",
+    "country": "Japan",
+    "name": "Sakurajima Bike Rental — bicycles and e-bikes",
+    "type": "equipment rental",
+    "url": "https://cycling-sakurajima.com/home-english/",
+    "summary": "Compare the operator’s bicycle and e-bike options around Sakurajima. Confirm collection location, equipment, route suitability and availability directly; a distant camera view does not establish road conditions.",
+    "tags": [
+      "Sakurajima",
+      "Kagoshima",
+      "Japan"
+    ],
+    "verifiedAt": "2026-10-13T07:30:12.732558Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://cycling-sakurajima.com/home-english/"
+  },
+  {
+    "id": "local-sakurajima-tours",
+    "placeId": "japan-sakurajima",
+    "place": "Sakurajima",
+    "country": "Japan",
+    "name": "Volcano Life Journey — guided cycling experiences",
+    "type": "guided activity",
+    "url": "https://volcano-life-journey.com/tours/",
+    "summary": "Compare guided Sakurajima e-bike experiences, from half-day outings to longer routes. Confirm the actual itinerary, language, fitness requirements and permitted access with the guide before booking.",
+    "tags": [
+      "Sakurajima",
+      "Kagoshima",
+      "Japan"
+    ],
+    "verifiedAt": "2026-10-13T07:30:12.732558Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://volcano-life-journey.com/tours/"
+  },
+  {
+    "id": "local-sakurajima-ferry",
+    "placeId": "japan-sakurajima",
+    "place": "Sakurajima",
+    "country": "Japan",
+    "name": "Official guide — getting to Sakurajima",
+    "type": "visitor information",
+    "url": "https://www.kagoshima-kankou.com/for/highlights/spcial_sakurajima/access1",
+    "summary": "Compare the ferry approach from Kagoshima with road access from the Osumi Peninsula. Check current operator departures and service notices for your travel date rather than treating a camera as transport confirmation.",
+    "tags": [
+      "Sakurajima",
+      "Kagoshima",
+      "Japan"
+    ],
+    "verifiedAt": "2026-10-13T07:30:12.732558Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kagoshima-kankou.com/for/highlights/spcial_sakurajima/access1"
+  },
+  {
+    "id": "local-sakurajima-local-bus",
+    "placeId": "japan-sakurajima",
+    "place": "Sakurajima",
+    "country": "Japan",
+    "name": "Official guide — getting around Sakurajima",
+    "type": "visitor information",
+    "url": "https://www.kagoshima-kankou.com/for/highlights/spcial_sakurajima/access3",
+    "summary": "Compare loop buses, local buses, bicycles and taxis for island stops. Routes have different coverage; ask at the ferry-terminal information center and confirm current schedules before setting out.",
+    "tags": [
+      "Sakurajima",
+      "Kagoshima",
+      "Japan"
+    ],
+    "verifiedAt": "2026-10-13T07:30:12.732558Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kagoshima-kankou.com/for/highlights/spcial_sakurajima/access3"
+  },
+  {
+    "id": "local-sakurajima-passes",
+    "placeId": "japan-sakurajima",
+    "place": "Sakurajima",
+    "country": "Japan",
+    "name": "Official guide — CUTE transport pass coverage",
+    "type": "visitor information",
+    "url": "https://www.kagoshima-kankou.com/for/highlights/CUTE-Pass",
+    "summary": "Review which Kagoshima and Sakurajima transport services are covered by the pass and which require separate payment. Check the current validity, sales arrangements and coverage before buying.",
+    "tags": [
+      "Sakurajima",
+      "Kagoshima",
+      "Japan"
+    ],
+    "verifiedAt": "2026-10-13T07:30:12.732558Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kagoshima-kankou.com/for/highlights/CUTE-Pass"
+  },
+  {
+    "id": "local-sakurajima-visitor-center",
+    "placeId": "japan-sakurajima",
+    "place": "Sakurajima",
+    "country": "Japan",
+    "name": "Sakurajima Visitor Center — orientation and exhibits",
+    "type": "visitor information",
+    "url": "https://www.kagoshima-kankou.com/for/attractions/10569",
+    "summary": "Start with the official visitor-center information for local orientation and volcano-history exhibits. Check opening arrangements and ask staff about current local routes; educational displays are separate from ERN’s current camera.",
+    "tags": [
+      "Sakurajima",
+      "Kagoshima",
+      "Japan"
+    ],
+    "verifiedAt": "2026-10-13T07:30:12.732558Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kagoshima-kankou.com/for/attractions/10569"
+  },
+  {
+    "id": "local-sakurajima-sabo",
+    "placeId": "japan-sakurajima",
+    "place": "Sakurajima",
+    "country": "Japan",
+    "name": "Sakurajima Sabo Center — volcano and erosion exhibits",
+    "type": "visitor information",
+    "url": "https://www.kagoshima-kankou.com/for/attractions/70567",
+    "summary": "Explore the center’s volcano-history and erosion-control exhibits. Check the correct bus course and current opening arrangements; its recorded VR presentation is not a live camera or permission to enter restricted areas.",
+    "tags": [
+      "Sakurajima",
+      "Kagoshima",
+      "Japan"
+    ],
+    "verifiedAt": "2026-10-13T07:30:12.732558Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kagoshima-kankou.com/for/attractions/70567"
+  },
+  {
+    "id": "local-sakurajima-overview",
+    "placeId": "japan-sakurajima",
+    "place": "Sakurajima",
+    "country": "Japan",
+    "name": "Kagoshima City — Sakurajima visitor overview",
+    "type": "visitor information",
+    "url": "https://www.kagoshima-yokanavi.jp/en/spot/10021",
+    "summary": "Use the city’s destination overview to connect ferry arrival with visitor facilities, viewpoints and local stops. Confirm current access at each place and keep the bay camera’s viewpoint distinct from island facilities.",
+    "tags": [
+      "Sakurajima",
+      "Kagoshima",
+      "Japan"
+    ],
+    "verifiedAt": "2026-10-13T07:30:12.732558Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kagoshima-yokanavi.jp/en/spot/10021"
+  },
+  {
+    "id": "local-sakurajima-loop",
+    "placeId": "japan-sakurajima",
+    "place": "Sakurajima",
+    "country": "Japan",
+    "name": "Kagoshima City — loop-bus day-trip itinerary",
+    "type": "visitor information",
+    "url": "https://www.kagoshima-yokanavi.jp/en/itinerary/islandview",
+    "summary": "Compare the suggested stops on a Sakurajima loop-bus day trip, including viewpoints and visitor facilities. It is a planning itinerary; check today’s transport and opening notices before following it.",
+    "tags": [
+      "Sakurajima",
+      "Kagoshima",
+      "Japan"
+    ],
+    "verifiedAt": "2026-10-13T07:30:12.732558Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.kagoshima-yokanavi.jp/en/itinerary/islandview"
+  },
+  {
+    "id": "local-sakurajima-advisories",
+    "placeId": "japan-sakurajima",
+    "place": "Sakurajima",
+    "country": "Japan",
+    "name": "JMA — Sakurajima activity information",
+    "type": "visitor information",
+    "url": "https://www.data.jma.go.jp/vois/data/report/activity_info/506.html",
+    "summary": "Read official Sakurajima activity information and follow local access instructions before visiting. A mountain outline, cloud or camera image does not establish eruption status or safe access.",
+    "tags": [
+      "Sakurajima",
+      "Kagoshima",
+      "Japan"
+    ],
+    "verifiedAt": "2026-10-13T07:30:12.732558Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.data.jma.go.jp/vois/data/report/activity_info/506.html"
+  },
+  {
+    "id": "local-wengen-bellevue-rooms",
+    "placeId": "wengen-bellevue",
+    "place": "Wengen",
+    "country": "Switzerland",
+    "name": "Hotel Bellevue Wengen — room categories",
+    "type": "hotel",
+    "url": "https://www.bellevue-wengen.ch/en/zimmer/",
+    "summary": "Compare south-facing panorama rooms with north-facing rooms and suites. Views and layouts differ by category; confirm your dates and seasonal availability directly. The hotel’s current contact page lists winter opening from 19 December 2026.",
+    "tags": [
+      "Wengen",
+      "Bellevue",
+      "Jungfrau",
+      "Switzerland"
+    ],
+    "verifiedAt": "2026-10-13T07:30:12.732558Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.bellevue-wengen.ch/en/zimmer/"
+  },
+  {
+    "id": "local-wengen-bellevue-hotel-arrival",
+    "placeId": "wengen-bellevue",
+    "place": "Wengen",
+    "country": "Switzerland",
+    "name": "Hotel Bellevue — rail arrival and seasonal dates",
+    "type": "visitor information",
+    "url": "https://www.bellevue-wengen.ch/en/kontakt/",
+    "summary": "Plan arrival via Lauterbrunnen and Wengen’s railway station, then arrange the hotel’s luggage collection if needed. Check live timetables and the hotel’s published season dates; it lists winter 19 December 2026 to 21 March 2027.",
+    "tags": [
+      "Wengen",
+      "Bellevue",
+      "Jungfrau",
+      "Switzerland"
+    ],
+    "verifiedAt": "2026-10-13T07:30:12.732558Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.bellevue-wengen.ch/en/kontakt/"
   }
 ]

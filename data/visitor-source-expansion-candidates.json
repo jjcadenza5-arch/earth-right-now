@@ -1104,6 +1104,75 @@
       "next": "Revisit after material visibility improvement; do not add a camera or successful public source date while the reviewed view is unusable.",
       "lastRecheckedAt": "2026-10-13T05:20:30.093947Z",
       "currentObservedState": "640x360 decoded, visible2026-10-13 14:11:55 Japan stamp; almost entire frame fog with only a twig visible."
+    },
+    {
+      "id": "jma-sakurajima-bay-current",
+      "priority": "P1",
+      "placeGroup": "Sakurajima",
+      "country": "Japan",
+      "provider": "Japan Meteorological Agency",
+      "candidateType": "OFFICIAL_REFRESHED_IMAGE_CAMERA",
+      "evidenceUrls": [
+        "https://ds.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50602"
+      ],
+      "state": "RESOLVED_PROMOTED_LINK_ONLY_CURRENT_IMAGE",
+      "why": "Exact official current-image research; date, decoding and useful scene quality are separate admission gates.",
+      "next": "Maintain attributed link-only context; keep out of Watch/featured.",
+      "lastRecheckedAt": "2026-10-13T07:30:12.732558Z",
+      "currentObservedState": "640x360 decoded, mountain/bay visible, capture2026-10-13 16:07:54 Japan, slot16:08.",
+      "resolvedTarget": {
+        "catalogId": "japan-sakurajima-bay-current",
+        "placeId": "japan-sakurajima",
+        "mode": "LIVE_IMAGE"
+      }
+    },
+    {
+      "id": "jma-aso-kurumagaeri-current",
+      "priority": "P2",
+      "placeGroup": "Mount Aso",
+      "country": "Japan",
+      "provider": "Japan Meteorological Agency",
+      "candidateType": "OFFICIAL_REFRESHED_IMAGE_CAMERA",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50302"
+      ],
+      "state": "HOLD_LOW_VISUAL_VALUE",
+      "why": "Exact official current-image research; date, decoding and useful scene quality are separate admission gates.",
+      "next": "Revisit on material visibility or image-quality improvement; no public camera/date admission from this pass.",
+      "lastRecheckedAt": "2026-10-13T07:30:12.732558Z",
+      "currentObservedState": "640x360 decoded, capture15:57:58 Japan, slot15:58; heavy cloud obscures the destination."
+    },
+    {
+      "id": "jma-unzen-nodake-current",
+      "priority": "P2",
+      "placeGroup": "Mount Unzen",
+      "country": "Japan",
+      "provider": "Japan Meteorological Agency",
+      "candidateType": "OFFICIAL_REFRESHED_IMAGE_CAMERA",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50401"
+      ],
+      "state": "HOLD_LOW_VISUAL_VALUE",
+      "why": "Exact official current-image research; date, decoding and useful scene quality are separate admission gates.",
+      "next": "Revisit on material visibility or image-quality improvement; no public camera/date admission from this pass.",
+      "lastRecheckedAt": "2026-10-13T07:30:12.732558Z",
+      "currentObservedState": "640x360 decoded, capture15:57:54 Japan, slot15:58; fog hides the mountain."
+    },
+    {
+      "id": "jma-iwate-nagayama-current",
+      "priority": "P2",
+      "placeGroup": "Mount Iwate",
+      "country": "Japan",
+      "provider": "Japan Meteorological Agency",
+      "candidateType": "OFFICIAL_REFRESHED_IMAGE_CAMERA",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=20703"
+      ],
+      "state": "HOLD_LOW_VISUAL_VALUE",
+      "why": "Exact official current-image research; date, decoding and useful scene quality are separate admission gates.",
+      "next": "Revisit on material visibility or image-quality improvement; no public camera/date admission from this pass.",
+      "lastRecheckedAt": "2026-10-13T07:30:12.732558Z",
+      "currentObservedState": "640x480 decoded, capture16:00:00 Japan; strong block artefacts/cloud prevent a useful mountain view."
     }
   ],
   "guardrails": {

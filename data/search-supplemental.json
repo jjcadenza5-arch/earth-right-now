@@ -13123,5 +13123,46 @@
     "rightsBasis": "JMA explicitly permits links to individual pages without permission or contact, except pages carrying specific restrictions, and requires identification as JMA. Exact camera context reviewed; attributed LINK_ONLY handoff. No ERN imagery reuse, framing, embedding, official endorsement or forecast/eruption assessment inferred.",
     "rightsSourceUrl": "https://www.jma.go.jp/jma/kishou/info/coment.html",
     "freshnessEvidence": "Deployed browser decoded the official Oiwake image at 640x360. Visible capture stamp 2026/10/13 14:11:56 Japan local; page selects 2026-10-13 14:12, image URL has 20261013141200. These are distinct capture/display/file times. Mountain ridge, trees and clouds inspected. Current dated image evidence, not continuous video; no independent update interval promised."
+  },
+  {
+    "id": "japan-sakurajima-bay-current",
+    "placeId": "japan-sakurajima",
+    "title": "Sakurajima — Bay View",
+    "provider": "Japan Meteorological Agency (JMA)",
+    "country": "Japan",
+    "region": "Kagoshima / Kyushu",
+    "timeZone": "Asia/Tokyo",
+    "aliases": [
+      "Sakurajima",
+      "桜島",
+      "Kagoshima",
+      "Kinko Bay",
+      "Chuo Koshincho"
+    ],
+    "categories": [
+      "Mountains",
+      "Beaches & Water",
+      "Nature",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://ds.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50602",
+    "officialUrl": "https://ds.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50602",
+    "attribution": "Japan Meteorological Agency (JMA) — Sakurajima, Chuo Koshincho camera",
+    "checkedAt": "2026-10-13T07:30:12.732558Z",
+    "lastSuccessfulCheck": "2026-10-13T07:30:12.732558Z",
+    "quality": 70,
+    "freshness": 95,
+    "moment": 70,
+    "story": "Official JMA refreshed image across the bay toward Sakurajima. The mountain outline and water were visible during review, with cloud around the summit. Check official information before planning access.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "rightsBasis": "JMA permits attributed links to individual pages except specifically restricted pages. Exact public camera context reviewed; LINK_ONLY, no image reuse, embedding, official endorsement or eruption-state inference.",
+    "rightsSourceUrl": "https://www.jma.go.jp/jma/kishou/info/coment.html",
+    "freshnessEvidence": "Browser-decoded 640x360 image, visible capture2026-10-13 16:07:54 Japan; page slot16:08 and filename160800 are distinct. Mountain and bay visible despite summit cloud. Dated current image, not continuous video; no refresh interval measured."
   }
 ]
