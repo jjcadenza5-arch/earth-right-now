@@ -20,3 +20,18 @@ assert.equal(TP.offerFor(offers,source,"transport",[{...partner,enabled:false}],
 assert.deepEqual(TP.guideOffers(offers,source,[partner],now).map(x=>x.id),["a","b"]);
 assert.equal(TP.disclosure({...base,affiliate:true}),"Affiliate link");
 console.log("Travel planning client keeps offer, active-partner, source-currentness and disclosure boundaries");
+
+// Exercise the viewer's actual dining selector against geographic false positives.
+const {readFileSync}=await import("node:fs");
+const runtime=readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
+const eatMatch=runtime.match(/\$\("#planEat"\).*?lp\(\/([^/]+)\/\)/);
+assert.ok(eatMatch,"viewer dining selector must exist");
+const eatPattern=new RegExp(eatMatch[1]);
+const local={id:"guide",placeId:"place",status:"APPROVED",type:"visitor information",tags:["svalbard"],url:"https://example.test/guide",verifiedAt:new Date().toISOString(),paidPlacement:false,affiliate:false};
+const restaurant={...local,id:"dining",type:"restaurant",url:"https://example.test/restaurant"};
+assert.equal(TP.localFor([local,restaurant],source,eatPattern).id,"dining");
+assert.equal(TP.localFor([{...local,tags:["barbados"]}],source,eatPattern),null);
+assert.equal(TP.localFor([{...local,type:"wine bar",id:"bar"}],source,eatPattern).id,"bar");
+assert.equal(TP.localFor([local,{...restaurant,paidPlacement:true}],source,eatPattern),null);
+assert.equal(TP.localFor([local,{...restaurant,verifiedAt:"2020-01-01T00:00:00Z"}],source,eatPattern),null);
+console.log("Dining links match actual food venues without geographic bar-substring matches");
