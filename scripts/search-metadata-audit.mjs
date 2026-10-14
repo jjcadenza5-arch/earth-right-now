@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import {searchEarth} from "../src/search-engine.js";
-import {foldEarthSearchText} from "../src/earth-intent.js";
+import {foldEarthSearchText,interpretEarthIntent} from "../src/earth-intent.js";
 
 const core=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
 const supplemental=JSON.parse(fs.readFileSync("data/search-supplemental.json","utf8"));
@@ -24,9 +24,13 @@ for(const s of rows){
     if(!n){issues.push({id:s.id,code:"EMPTY_ALIAS"});continue}
     if(seen.has(n))issues.push({id:s.id,code:"DUPLICATE_ALIAS",alias:a});
     seen.add(n);
-    const hits=searchEarth(rows,a,{now});
+    // Alias metadata must remain testable after real camera evidence expires.
+    // Current-intent words are policy filters, not destination identifiers.
+    const currentWords=new Set((interpretEarthIntent(a).currentTerms||[]).flatMap(x=>x.split(" ")));
+    const metadataQuery=norm(a).split(/\s+/).filter(t=>!currentWords.has(t)).join(" ");
+    const hits=searchEarth(rows,metadataQuery||a,{now});
     const ok=hits.some(x=>(x.placeId||x.id)===(s.placeId||s.id));
-    aliasChecks.push({id:s.id,alias:a,ok});
+    aliasChecks.push({id:s.id,alias:a,metadataQuery:metadataQuery||a,ok});
     if(!ok)issues.push({id:s.id,code:"ALIAS_NOT_SEARCHABLE",alias:a});
   }
 }
