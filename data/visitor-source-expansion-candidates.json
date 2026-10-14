@@ -1343,10 +1343,13 @@
         "https://www.stv.jp/webcam/kitahiroshima/index.html",
         "https://www.stv.jp/webcam/shinchitose2/index.html",
         "https://www.stv.jp/webcam/ohdori4/index.html",
-        "https://www.stv.jp/webcam/live/kitahiroshima.html"
+        "https://www.stv.jp/webcam/live/kitahiroshima.html",
+        "https://www.stv.jp/webcam/shiretoko/index.html",
+        "https://www.stv.jp/webcam/jrsapporosta/index.html",
+        "https://www.stv.jp/webcam/okurayama/index.html"
       ],
-      "state": "SIXTEEN_NEW_PLACES_ADDED_CLOCK_AND_VIDEO_HOLDS",
-      "reviewedAt": "2026-10-14T07:17:56.386277Z",
+      "state": "NINETEEN_NEW_PLACES_ADDED_CLOCK_AND_VIDEO_HOLDS",
+      "reviewedAt": "2026-10-14T08:11:08Z",
       "resolvedCatalogIds": [
         "japan-otaru-stv-current",
         "japan-hakodate-stv-current",
@@ -1363,9 +1366,12 @@
         "japan-asahikawa-stv-current",
         "japan-kitahiroshima-stv-current",
         "japan-shinchitose2-stv-current",
-        "japan-ohdori4-stv-current"
+        "japan-ohdori4-stv-current",
+        "japan-shiretoko-stv-current",
+        "japan-jrsapporosta-stv-current",
+        "japan-okurayama-stv-current"
       ],
-      "why": "Sixteen distinct destination cameras individually decoded and visually reviewed with14October2026 burned-in captures. Fifteen960x540 and Kiroro320x240; no high-definition claim for the latter. STV explicit separate-window link policy; no copied or embedded media. Source-led editorial expansion, not measured repeated visitor demand.",
+      "why": "Nineteen distinct destination-camera records admitted in two stages, with per-source completed checks and14October burned-in captures; the latest three are Utoro Harbour, Sapporo Station and Okurayama stadium. Original sixteen timestamps are unchanged. Separate sites, not duplicate city/airport angles. Explicit separate-window link policy, no provider media copied/embedded. Source-led editorial expansion; unresolved Rebun clock and Kitahiroshima video remain held.",
       "next": "Maintain admitted targets. Research other independently useful towns in bounded passes with individual dated image/playback and rights evidence. Revisit Rebun only when its capture clock is reconciled or unambiguous newer evidence appears.",
       "heldTargets": [
         {
@@ -1420,6 +1426,35 @@
           "reason": "Exact official YouTube5VoO4DGb3K4 embed clicked Play; black buffering view, videoWidth0/videoHeight0/readyState0/currentTime0. No decoded playback; no global outage claim."
         }
       ]
+    },
+    {
+      "id": "central-switzerland-first-party-panorama-expansion",
+      "priority": "P1_CAMERA_COVERAGE",
+      "placeGroup": "Nidwalden / Lake Lucerne / Engelberg",
+      "country": "Switzerland",
+      "provider": "Nidwalden Tourism / venue operators / Roundshot / Yellow.camera",
+      "candidateType": "FIRST_PARTY_PUBLISHED_REFRESHED_PANORAMAS",
+      "evidenceUrls": [
+        "https://www.nidwalden.com/en/weather-webcam",
+        "https://www.fuerenalp.ch/en/",
+        "https://villa-honegg.ch/en/webcam/",
+        "https://airportbuochs.ch/",
+        "https://pilgerhaus-maria-rickenbach.roundshot.com/",
+        "https://buochs.roundshot.com/",
+        "https://villa-honegg.ch/en/webcam/",
+        "https://backend.roundshot.com/cams/abc4ee68c2c79d3ed086c9acdd82e5831/medium"
+      ],
+      "state": "FOUR_NEW_CAMERA_PLACES_EXISTING_FUERENALP_RENEWED",
+      "reviewedAt": "2026-10-14T08:28:24Z",
+      "resolvedCatalogIds": [
+        "swiss-maria-rickenbach-current",
+        "swiss-buochs-airport-current",
+        "swiss-villa-honegg-current",
+        "swiss-stans-hospital-panorama-current",
+        "engelberg-fuerenalp"
+      ],
+      "why": "Four individually rendered current panoramas at different sites; dated14October2026 10:00/10:10/10:01 captures. Fürenalp already existed, so renewed/repaired rather than inflated as a fifth new place. Raw Stans image decoded3449x450 through the exact published dynamic endpoint; provider capture filename establishes date. Links only; no source images copied or embedded.",
+      "next": "Maintain exact targets with fresh dated rendered evidence. Do not count panorama rotation as streaming video or camera availability as travel/access/flight clearance. Use existing visitor-demand signals; source-led admissions do not claim repeated visitor interest."
     }
   ],
   "guardrails": {

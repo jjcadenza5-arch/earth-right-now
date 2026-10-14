@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T17:06:00Z",
+  "generatedAt": "2026-10-14T08:46:50Z",
   "healthyDistinctBaseline": 751,
-  "strategy": "Post-reconciliation maintenance: protect the 751 healthy searchable-place baseline, repair degraded sources only when they add unique visitor value, and never inflate counts mechanically.",
+  "strategy": "Camera-first maintenance and evidence-gated expansion. Protect genuine usable coverage; distinguish catalog inventory from current eligibility and never inflate counts mechanically.",
   "items": [
     {
       "id": "pattaya-city-live",
@@ -438,14 +438,68 @@
       "lastReviewAt": "2026-10-14T03:32:33.633379Z",
       "reviewOutcome": "Actual rendered roof panorama identified by UNIS official external-provider link.14Oct2026 capture advanced05:00→05:15 local after reload; landscape inspected. Attribution now distinguishes UNIS host from Borealis Panorama/Kystnor provider. Link-only; no footage reuse or exact camera coordinates.",
       "action": "MAINTAIN_DATED_EXTERNAL_PANORAMA_WITH_SOURCE_SPECIFIC_EVIDENCE"
+    },
+    {
+      "id": "farm-tomita",
+      "placeId": "farm-tomita",
+      "title": "Farm Tomita",
+      "country": "Japan",
+      "truth": "LIVE_IMAGE",
+      "health": "HEALTHY",
+      "lastReviewAt": "2026-10-14T08:11:08Z",
+      "action": "MAINTAIN_FIRST_PARTY_CHANGING_REFRESHED_IMAGE_WITHOUT_CAPTURE_CLOCK_INFERENCE",
+      "reviewOutcome": "Official English home publishes its640x480 camera.farm-tomita.co.jp webcam. Actual decoded/browser-rendered autumn field scene changed substantially after reload, including sky/cloud/light. Independent file observations Last-Modified14Oct08:05:00UTC and08:08:00UTC with changed SHA256 b0b5e78b6eb0aa744e8930d9aaf2e8a33e18951f9e1afa32edf581093cb49023→d91a7832595fd4208ef6663f4b3412cfcc1724036bd74f3744c1f49af45f62ed. No burned-in capture clock or EXIF date; HTTP modification is explicitly file metadata, not an invented capture timestamp. Together first-party live designation, changing decoded scenes and fresh file updates justify actual current-image renewal. Main operator page remains external source; no hotlink, image reuse or video claim. Opening hours remain an operator check, not inferred from the image."
+    },
+    {
+      "id": "engelberg-fuerenalp",
+      "placeId": "engelberg-fuerenalp",
+      "title": "Engelberg — Fürenalp",
+      "country": "Switzerland",
+      "truth": "LIVE_IMAGE",
+      "health": "HEALTHY",
+      "lastReviewAt": "2026-10-14T08:28:24Z",
+      "action": "MAINTAIN_OPERATOR_LINKED_DATED_PANORAMA_NOT_A_NEW_PLACE",
+      "previousSourceUrl": "https://www.myswitzerland.com/en-us/destinations/panoramas/fuerenalp/",
+      "sourceUrl": "https://fuerenalp.roundshot.com/",
+      "officialEvidenceUrl": "https://www.fuerenalp.ch/en/",
+      "reviewOutcome": "Exact Live Webcam link on the first-party cableway/restaurant homepage points to fuerenalp.roundshot.com. Browser default latest panorama14Oct2026 10:10 Europe/Zurich rendered restaurant buildings, alpine pasture and mountains; latest/next controls disabled. Main capture visually inspected; decorative brochure/hotspot photograph is not camera evidence. Renewed existing source/place identity, corrected operator/platform attribution and replaced broad tourism handoff with exact operator-published target. LINK_ONLY/EXTERNAL retained, no embedding/reuse or access guarantee. Existing destination reference coordinates retained as references, not an exact camera pin."
+    },
+    {
+      "id": "japan-rusutsu-live-mountain",
+      "placeId": "japan-rusutsu",
+      "title": "Rusutsu — Hokkaido",
+      "country": "Japan",
+      "truth": "LIVE_IMAGE",
+      "health": "HEALTHY",
+      "lastReviewAt": "2026-10-14T08:42:18Z",
+      "previousSourceUrl": "https://rusutsu.com/en/snow-and-weather-report/",
+      "sourceUrl": "https://rusutsu.com/en/live-mountain-cams/",
+      "action": "MAINTAIN_EXIF_DATED_OPERATOR_REFRESHED_IMAGE_NOT_VIDEO",
+      "reviewOutcome": "Completed actual browser/editorial review2026-10-14T08:42:18Z. Official per-camera row14October2026 17:30; West Mountain image decoded1920x1440 and eventually visibly rendered nighttime resort/illumination scene after initial image loading. Exact publicly published Powdercam JPEG inspected independently: camera EXIF DateTime2026:10:14 17:36:07, RaspberryPi/RP_imx219; HTTP Date14Oct08:36:12UTC, SHA2563d5dfe02d5fe65a6a93012e197f9f850655c6bba4d02caef613de7981af33eeb. EXIF field is DateTime, not asserted DateTimeOriginal. These corroborated current-image evidence; never renewed solely from the page label or weather date. Refreshed image only, no video proof; other views and archived snowfall widget not independently admitted."
+    },
+    {
+      "id": "japan-furano-ski-live",
+      "placeId": "japan-furano-ski",
+      "title": "Furano Ski Resort — Hokkaido",
+      "country": "Japan",
+      "truth": "EXTERNAL_LIVE",
+      "health": "HEALTHY",
+      "lastReviewAt": "2026-10-14T08:46:50Z",
+      "action": "HOLD_RENEWAL_PENDING_USEFUL_NEW_CURRENT_FRAME_AND_TARGET_MATCH",
+      "reviewOutcome": "Bounded actual browser review of both exact Prince Hotels SKIDAY iframe targets. Garden-labelled865036042047983 decoded1280x960 image filename l_20261014173012.jpg, but IR foliage close-up dominated and widget caption identifies a snow-measurement image, not confidently matched Garden view. Summit869223040349118 decoded1280x960 daylight landscape filename20261014132221.jpg; latest slider maximum34 selected, with browser-local11:22 display corresponding to13:22 Japan capture, several hours before17:45+ Japan review. No source cadence/currentness assumption from Live Camera labels, play button or browser-time offset. No video decoded/tested. Existing source checkedAt/lastSuccessfulCheck/health left unchanged; no source-outage claim. Revisit only on useful newer rendered/capture evidence and clarified exact target identity."
     }
   ],
   "currentReality": {
-    "combinedSourceRecords": 760,
-    "healthySourceRecords": 756,
-    "healthyDistinctPlaces": 751,
-    "healthyCountryTerritoryLabels": 130,
-    "degradedRecords": 4,
-    "offlineRecords": 0
-  }
+    "combinedSourceRecords": 789,
+    "healthySourceRecords": 774,
+    "healthyDistinctPlaces": 766,
+    "healthyCountryTerritoryLabels": 129,
+    "degradedRecords": 15,
+    "offlineRecords": 0,
+    "currentEligibilityAuditedAt": "2026-10-14T08:46:50.138Z",
+    "cameraTypePlaceIds": 780,
+    "currentEligibleSources": 85,
+    "currentEligiblePlaces": 83
+  },
+  "baselineRecordedAt": "2026-10-07T17:06:00Z"
 }
