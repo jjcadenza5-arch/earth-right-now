@@ -15,6 +15,7 @@ const releaseTests=[
   "search-alias-metadata.smoke.js",
   "place-search-aliases.smoke.js",
   "search-reference-discovery.smoke.js",
+  "search-supplemental-alternates.smoke.js",
   "research-review-queue.smoke.js",
   "embed-research-preflight.smoke.js",
   "provider-family-research.smoke.js",

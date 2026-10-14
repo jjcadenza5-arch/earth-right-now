@@ -324,7 +324,15 @@
           }
         ],
         "next": "Revisit held players only after useful new evidence; no duplicate research queue or retry loop."
-      }
+      },
+      "heldTargets": [
+        {
+          "name": "Suomen Latu Kiilopää trail stream",
+          "sourceUrl": "https://www.kiilopaa.fi/en/kiilopaa-webcams",
+          "reviewedAt": "2026-10-14T03:32:33.633379Z",
+          "reason": "Exact official embedded YouTube eOPMSOYzIvo and its public watch page inspected. Play attempted; both video paths remained0x0/readyState0/time0, without decoded footage. Watching-now/start text is not playback proof. No camera added; revisit only on changed playback evidence. Operator reports30Sept–14Nov autumn service break; no booking/service activation."
+        }
+      ]
     },
     {
       "id": "yellowstone-old-faithful-official-live",
@@ -1260,6 +1268,54 @@
       "reviewedAt": "2026-10-13T12:18:39Z",
       "why": "Nuuk city image decoded and capture advanced. Independently inspected public airport players are private/unavailable; provider live headings and decorative photographs cannot establish playback. Last success dates retained. New Nuuk airport candidate also private; no new camera records. Aasiaat/Maniitsoq/Qaanaaq pages did not supply a credible public camera lead.",
       "next": "Revisit held airport views only after new public-playback evidence. Keep useful place/business information searchable. No login or private-video access request; no provider-wide outage inference."
+    },
+    {
+      "id": "svalbard-longyearbyen-panorama-expansion",
+      "priority": "P1",
+      "placeGroup": "Longyearbyen / Adventfjorden",
+      "country": "Svalbard",
+      "provider": "UNIS / LNS Spitsbergen / Port Longyear / Borealis Panorama (Kystnor)",
+      "candidateType": "FIRST_PARTY_REFRESHED_PANORAMA_NETWORK",
+      "evidenceUrls": [
+        "https://www.unis.no/facilities/web-camera/",
+        "https://lnss.no/",
+        "https://portlongyear.no/services/resources-and-links/",
+        "https://nyalesundresearch.no/infrastructures/tools/"
+      ],
+      "state": "TWO_DISTINCT_CAMERAS_ADDED_EXISTING_UNIS_RENEWED",
+      "reviewedAt": "2026-10-14T03:32:33.633379Z",
+      "resolvedCatalogIds": [
+        "longyearbyen-lns-harbour-current",
+        "longyearbyen-port-current",
+        "longyearbyen-unis-current"
+      ],
+      "why": "Individually dated and visually rendered harbour, waterfront and UNIS panoramas. Two new camera records share the existing destination; not two new places. Public first-party external handoffs only. New Zeppelin candidate remains stale.",
+      "next": "Maintain these exact targets. Revisit Ny-Ålesund only after newer capture evidence; no retry loop or ordinary photo substitution.",
+      "heldTargets": [
+        {
+          "name": "Ny-Ålesund Zeppelin camera",
+          "sourceUrl": "https://beta.data.npolar.no/-/zeppelin/latest",
+          "reason": "Decoded3840x2160 image burns in2026-10-06 21:59:57UTC during14October review.Official NPI/BAS/KingsBay links and claimed10-minute cadence do not overcome stale capture. Not added."
+        }
+      ]
+    },
+    {
+      "id": "norway-nordkapp-official-panorama",
+      "priority": "P1",
+      "placeGroup": "Nordkapp / North Cape plateau",
+      "country": "Norway",
+      "provider": "Nordkapphallen / PANOMAX",
+      "candidateType": "FIRST_PARTY_REFRESHED_PANORAMA",
+      "evidenceUrls": [
+        "https://nordkapphallen.no/",
+        "https://www.nordkapp.no/practical-info/",
+        "https://nordkapp.panomax.com/"
+      ],
+      "state": "PROMOTED_LINK_ONLY_CURRENT_IMAGE",
+      "reviewedAt": "2026-10-14T03:45:49.525179Z",
+      "resolvedCatalogId": "norway-nordkapp-current-image",
+      "why": "New distinct destination. Actual rendered dated14October05:35 panorama, globe/plateau and sea/cliff scene inspected, with two first-party links. Capture proof is separate from archival Best Shots and the untested LIVEVIDEO menu.",
+      "next": "Maintain dated current panorama and independently checked E69/visitor information. No embed/imagery reuse, aurora guarantee or date renewal without new evidence."
     }
   ],
   "guardrails": {

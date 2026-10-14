@@ -427,6 +427,17 @@
       "reviewOutcome": "Southeast FW417sPHDOc and southwest uR_XJZ6L0PI both report private video.",
       "action": "HOLD_UNTIL_PUBLIC_CURRENT_PLAYBACK_RECOVERS",
       "failureReason": "PUBLIC_CAMERA_PLAYERS_PRIVATE_OR_UNAVAILABLE"
+    },
+    {
+      "id": "longyearbyen-unis-current",
+      "placeId": "longyearbyen-adventfjorden",
+      "title": "Longyearbyen — Adventfjorden",
+      "country": "Svalbard",
+      "truth": "LIVE_IMAGE",
+      "health": "HEALTHY",
+      "lastReviewAt": "2026-10-14T03:32:33.633379Z",
+      "reviewOutcome": "Actual rendered roof panorama identified by UNIS official external-provider link.14Oct2026 capture advanced05:00→05:15 local after reload; landscape inspected. Attribution now distinguishes UNIS host from Borealis Panorama/Kystnor provider. Link-only; no footage reuse or exact camera coordinates.",
+      "action": "MAINTAIN_DATED_EXTERNAL_PANORAMA_WITH_SOURCE_SPECIFIC_EVIDENCE"
     }
   ],
   "currentReality": {
