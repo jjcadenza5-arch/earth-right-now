@@ -1316,6 +1316,110 @@
       "resolvedCatalogId": "norway-nordkapp-current-image",
       "why": "New distinct destination. Actual rendered dated14October05:35 panorama, globe/plateau and sea/cliff scene inspected, with two first-party links. Capture proof is separate from archival Best Shots and the untested LIVEVIDEO menu.",
       "next": "Maintain dated current panorama and independently checked E69/visitor information. No embed/imagery reuse, aurora guarantee or date renewal without new evidence."
+    },
+    {
+      "id": "hokkaido-stv-first-party-current-images",
+      "priority": "P1_CAMERA_COVERAGE",
+      "placeGroup": "Hokkaido coastal and river towns",
+      "country": "Japan",
+      "provider": "STV Sapporo Television",
+      "candidateType": "FIRST_PARTY_REFRESHED_IMAGE_NETWORK",
+      "evidenceUrls": [
+        "https://www.stv.jp/webcam/otaru/index.html",
+        "https://www.stv.jp/webcam/hakodate/index.html",
+        "https://www.stv.jp/webcam/obihiro/index.html",
+        "https://www.stv.jp/webcam/kushiro/index.html",
+        "https://www.stv.jp/webcam/wakkanai/index.html",
+        "https://www.stv.jp/webcam/muroran/index.html",
+        "https://www.stv.jp/webcam/nemuro/index.html",
+        "https://www.stv.jp/webcam/abashiri/index.html",
+        "https://www.stv.jp/webcam/rumoi/index.html",
+        "https://www.stv.jp/webcam/esashi/index.html",
+        "https://www.stv.jp/webcam/urakawa/index.html",
+        "https://www.stv.jp/info/copyright/index.html",
+        "https://www.stv.jp/webcam/rebun/index.html",
+        "https://www.stv.jp/webcam/akaigawa/index.html",
+        "https://www.stv.jp/webcam/asahikawa/index.html",
+        "https://www.stv.jp/webcam/kitahiroshima/index.html",
+        "https://www.stv.jp/webcam/shinchitose2/index.html",
+        "https://www.stv.jp/webcam/ohdori4/index.html",
+        "https://www.stv.jp/webcam/live/kitahiroshima.html"
+      ],
+      "state": "SIXTEEN_NEW_PLACES_ADDED_CLOCK_AND_VIDEO_HOLDS",
+      "reviewedAt": "2026-10-14T07:17:56.386277Z",
+      "resolvedCatalogIds": [
+        "japan-otaru-stv-current",
+        "japan-hakodate-stv-current",
+        "japan-obihiro-stv-current",
+        "japan-kushiro-stv-current",
+        "japan-wakkanai-stv-current",
+        "japan-muroran-stv-current",
+        "japan-nemuro-stv-current",
+        "japan-abashiri-stv-current",
+        "japan-rumoi-stv-current",
+        "japan-esashi-stv-current",
+        "japan-urakawa-stv-current",
+        "japan-akaigawa-stv-current",
+        "japan-asahikawa-stv-current",
+        "japan-kitahiroshima-stv-current",
+        "japan-shinchitose2-stv-current",
+        "japan-ohdori4-stv-current"
+      ],
+      "why": "Sixteen distinct destination cameras individually decoded and visually reviewed with14October2026 burned-in captures. Fifteen960x540 and Kiroro320x240; no high-definition claim for the latter. STV explicit separate-window link policy; no copied or embedded media. Source-led editorial expansion, not measured repeated visitor demand.",
+      "next": "Maintain admitted targets. Research other independently useful towns in bounded passes with individual dated image/playback and rights evidence. Revisit Rebun only when its capture clock is reconciled or unambiguous newer evidence appears.",
+      "heldTargets": [
+        {
+          "name": "Rebun Island town camera",
+          "sourceUrl": "https://www.stv.jp/webcam/rebun/index.html",
+          "reason": "Actual320x240 image decoded; burned-in2026/10/14 15:47:59 is ahead of the approximately13:30 Japan review time. Low-resolution obscured waterfront. No admission or currentness assumption until clock/current capture evidence is reconciled."
+        },
+        {
+          "name": "Kitahiroshima optional streaming video",
+          "sourceUrl": "https://www.stv.jp/webcam/live/kitahiroshima.html",
+          "reason": "Exact official YouTube nbtzTBRBuzM autoplay player remainedblack: videoWidth0/videoHeight0/readyState0/currentTime0,pausedfalse. The individually dated still was admitted; streaming-video promotion held until genuine decoded current playback evidence. Not a global outage claim."
+        }
+      ]
+    },
+    {
+      "id": "northern-norway-port-camera-bounded-review",
+      "priority": "P1_CAMERA_COVERAGE",
+      "placeGroup": "Hammerfest / Honningsvag / Skjervoy",
+      "country": "Norway",
+      "provider": "Port operators / Borealis Panorama (Kystnor)",
+      "candidateType": "FIRST_PARTY_PORT_CURRENT_VIEW_RESEARCH",
+      "evidenceUrls": [
+        "https://www.kystnor.no/",
+        "https://porthammerfest.kystnor.no/",
+        "https://porthonningsvag.kystnor.no/",
+        "https://weathercam.kystnor.no/port-of-skjervoy",
+        "https://hammerfesthavn.no/"
+      ],
+      "state": "HOLD_NO_VERIFIED_CURRENT_VIEW",
+      "reviewedAt": "2026-10-14T04:34:55.866068Z",
+      "why": "Bounded actual browser review found no admissible current view. Old operator directory links alone cannot establish currentness or playback.",
+      "next": "Hold after this pass; revisit only on a new operator target, restored capture or independently decoded current playback. No repeat loops, inferred timestamps or count increase.",
+      "heldTargets": [
+        {
+          "name": "Hammerfest legacy panorama",
+          "sourceUrl": "https://porthammerfest.kystnor.no/",
+          "reason": "Embedded porthammerfest.roundshot.com returned404 Not Found."
+        },
+        {
+          "name": "Honningsvag panorama",
+          "sourceUrl": "https://porthonningsvag.kystnor.no/",
+          "reason": "Rendered WEBCAM DISCONNECTED / Back soon with JUL07 2022 20:45 capture."
+        },
+        {
+          "name": "Skjervoy panorama",
+          "sourceUrl": "https://weathercam.kystnor.no/port-of-skjervoy",
+          "reason": "Rendered WEBCAM DISCONNECTED / Back soon with OCT15 2025 06:00 capture."
+        },
+        {
+          "name": "Hammerfest official port video",
+          "sourceUrl": "https://hammerfesthavn.no/",
+          "reason": "Exact official YouTube5VoO4DGb3K4 embed clicked Play; black buffering view, videoWidth0/videoHeight0/readyState0/currentTime0. No decoded playback; no global outage claim."
+        }
+      ]
     }
   ],
   "guardrails": {
