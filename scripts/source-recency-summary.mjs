@@ -1,8 +1,10 @@
 import {readFile} from "node:fs/promises";
 import {ageHours as sourceAgeHours,recencyState,verificationWindowHours} from "../src/source-recency.js";
 import {recencyProviderDebt} from "../src/recency-provider-debt.js";
+import {cameraCoverage} from "./camera-coverage.mjs";
 
 const rows=JSON.parse(await readFile(new URL("../data/sources.json",import.meta.url),"utf8"));
+const supplemental=JSON.parse(await readFile(new URL("../data/search-supplemental.json",import.meta.url),"utf8"));
 const now=new Date();
 const stateOf=s=>recencyState(s,{now});
 const current=rows.filter(s=>stateOf(s)==="CURRENT_CHECK");
@@ -28,6 +30,7 @@ const expiredEmbedDebt=recencyProviderDebt(outsideItems.filter(s=>s.playback==="
 const report={
   generatedAt:now.toISOString(),
   total:rows.length,
+  cameraCoverage:cameraCoverage([...rows,...supplemental],{now}),
   current:{total:current.length,healthy:healthy(current).length,degraded:degraded(current).length,embeds:embeds(healthy(current)).length},
   recheckDue:{total:stale.length,healthy:healthy(stale).length,degraded:degraded(stale).length,persistentDebt:persistentDebtItems,routine:routineRecheckItems,items:recheckItems},
   outsideCurrentOrRecheck:{total:other.length,healthy:healthy(other).length,degraded:degraded(other).length,items:outsideItems},
