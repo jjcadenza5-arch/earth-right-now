@@ -13432,7 +13432,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected canal warehouses, harbour and hills. Burned-in capture 2026/10/14 13:22 Asia/Tokyo. STV identifies the camera at Hotel Nord Otaru. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred."
+    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected canal warehouses, harbour and hills. Burned-in capture 2026/10/14 13:22 Asia/Tokyo. STV identifies the camera at Hotel Nord Otaru. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred.",
+    "externalWindowRequired": true,
+    "seoName": "Otaru"
   },
   {
     "id": "japan-hakodate-stv-current",
@@ -13471,7 +13473,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected city peninsula, harbour and observation terraces. Burned-in capture 2026/10/14 13:20 Asia/Tokyo. STV identifies the camera at STV transmitter on Mount Hakodate. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred."
+    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected city peninsula, harbour and observation terraces. Burned-in capture 2026/10/14 13:20 Asia/Tokyo. STV identifies the camera at STV transmitter on Mount Hakodate. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred.",
+    "externalWindowRequired": true,
+    "seoName": "Hakodate"
   },
   {
     "id": "japan-obihiro-stv-current",
@@ -13510,7 +13514,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected cable-stayed bridge, river and riverside greenery. Burned-in capture 2026/10/14 13:25 Asia/Tokyo. STV identifies the camera at Higashi 1-jo Kita 2-chome, Obihiro. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred."
+    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected cable-stayed bridge, river and riverside greenery. Burned-in capture 2026/10/14 13:25 Asia/Tokyo. STV identifies the camera at Higashi 1-jo Kita 2-chome, Obihiro. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred.",
+    "externalWindowRequired": true,
+    "seoName": "Obihiro"
   },
   {
     "id": "japan-kushiro-stv-current",
@@ -13549,7 +13555,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected nusamai bridge, river and city streets. Burned-in capture 2026/10/14 13:25 Asia/Tokyo. STV identifies the camera at Nusamai area, Kushiro. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred."
+    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected nusamai bridge, river and city streets. Burned-in capture 2026/10/14 13:25 Asia/Tokyo. STV identifies the camera at Nusamai area, Kushiro. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred.",
+    "externalWindowRequired": true,
+    "seoName": "Kushiro"
   },
   {
     "id": "japan-wakkanai-stv-current",
@@ -13588,7 +13596,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected harbour, city and wooded hills under low cloud. Burned-in capture 2026/10/14 13:26 Asia/Tokyo. STV identifies the camera at Wakkanai Centennial Memorial Tower. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred."
+    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected harbour, city and wooded hills under low cloud. Burned-in capture 2026/10/14 13:26 Asia/Tokyo. STV identifies the camera at Wakkanai Centennial Memorial Tower. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred.",
+    "externalWindowRequired": true,
+    "seoName": "Wakkanai"
   },
   {
     "id": "japan-muroran-stv-current",
@@ -13627,7 +13637,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected harbour bridge, town and cloud-covered mountains. Burned-in capture 2026/10/14 13:26 Asia/Tokyo. STV identifies the camera at Mount Sokuryo observation site. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred."
+    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected harbour bridge, town and cloud-covered mountains. Burned-in capture 2026/10/14 13:26 Asia/Tokyo. STV identifies the camera at Mount Sokuryo observation site. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred.",
+    "externalWindowRequired": true,
+    "seoName": "Muroran"
   },
   {
     "id": "japan-nemuro-stv-current",
@@ -13666,7 +13678,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected fishing vessels, harbour basins and waterfront. Burned-in capture 2026/10/14 13:25 Asia/Tokyo. STV identifies the camera at Hanasaki Port, Nemuro. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred."
+    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected fishing vessels, harbour basins and waterfront. Burned-in capture 2026/10/14 13:25 Asia/Tokyo. STV identifies the camera at Hanasaki Port, Nemuro. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred.",
+    "externalWindowRequired": true,
+    "seoName": "Nemuro"
   },
   {
     "id": "japan-abashiri-stv-current",
@@ -13705,7 +13719,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected river mouth, coastal city and cloudy sea horizon. Burned-in capture 2026/10/14 13:25 Asia/Tokyo. STV identifies the camera at Abashiri Kosei Hospital, Kita 6-jo Nishi 1-chome. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred."
+    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected river mouth, coastal city and cloudy sea horizon. Burned-in capture 2026/10/14 13:25 Asia/Tokyo. STV identifies the camera at Abashiri Kosei Hospital, Kita 6-jo Nishi 1-chome. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred.",
+    "externalWindowRequired": true,
+    "seoName": "Abashiri"
   },
   {
     "id": "japan-rumoi-stv-current",
@@ -13744,7 +13760,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected town rooftops and bright coastal water; visible lens droplets. Burned-in capture 2026/10/14 13:26 Asia/Tokyo. STV identifies the camera at Rumoi City Hall. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred."
+    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected town rooftops and bright coastal water; visible lens droplets. Burned-in capture 2026/10/14 13:26 Asia/Tokyo. STV identifies the camera at Rumoi City Hall. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred.",
+    "externalWindowRequired": true,
+    "seoName": "Rumoi"
   },
   {
     "id": "japan-esashi-stv-current",
@@ -13783,7 +13801,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected fishing boats, waterfront road and waves at the breakwater. Burned-in capture 2026/10/14 13:26 Asia/Tokyo. STV identifies the camera at Taiokan community hall, Esashi. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred."
+    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected fishing boats, waterfront road and waves at the breakwater. Burned-in capture 2026/10/14 13:26 Asia/Tokyo. STV identifies the camera at Taiokan community hall, Esashi. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred.",
+    "externalWindowRequired": true,
+    "seoName": "Esashi"
   },
   {
     "id": "japan-urakawa-stv-current",
@@ -13822,7 +13842,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected harbour, town buildings and cloudy coastal sky. Burned-in capture 2026/10/14 13:26 Asia/Tokyo. STV identifies the camera at Urakawa Town Hall, Tsukiji 1-chome. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred."
+    "freshnessEvidence": "Actual browser review completed 2026-10-14T04:34:55.866068Z: provider camera image decoded 960x540; visually inspected harbour, town buildings and cloudy coastal sky. Burned-in capture 2026/10/14 13:26 Asia/Tokyo. STV identifies the camera at Urakawa Town Hall, Tsukiji 1-chome. This is a refreshed still, not verified streaming video; no guaranteed update interval or future availability inferred.",
+    "externalWindowRequired": true,
+    "seoName": "Urakawa"
   },
   {
     "id": "japan-akaigawa-stv-current",
@@ -13862,7 +13884,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Editorial admission review completed 2026-10-14T07:17:56.386277Z: earlier14October browser pass observed provider camera image decoded 320x240; visually inspected resort buildings, open slopes and wooded mountains. Burned-in capture2026/10/14 13:33 Asia/Tokyo. STV identifies the camera at Kiroro Resort Mountain Center, Akaigawa. Refreshed still only; no streaming-video or guaranteed cadence claim. Low-resolution320x240 source; resort slopes and buildings remain discernible, not a high-definition claim."
+    "freshnessEvidence": "Editorial admission review completed 2026-10-14T07:17:56.386277Z: earlier14October browser pass observed provider camera image decoded 320x240; visually inspected resort buildings, open slopes and wooded mountains. Burned-in capture2026/10/14 13:33 Asia/Tokyo. STV identifies the camera at Kiroro Resort Mountain Center, Akaigawa. Refreshed still only; no streaming-video or guaranteed cadence claim. Low-resolution320x240 source; resort slopes and buildings remain discernible, not a high-definition claim.",
+    "externalWindowRequired": true,
+    "seoName": "Akaigawa"
   },
   {
     "id": "japan-asahikawa-stv-current",
@@ -13901,7 +13925,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Editorial admission review completed 2026-10-14T07:17:56.386277Z: earlier14October browser pass observed provider camera image decoded 960x540; visually inspected river bridge, city streets and distant hills. Burned-in capture2026/10/14 13:31 Asia/Tokyo. STV identifies the camera at 9-Jodori 1-Chome, Asahikawa. Refreshed still only; no streaming-video or guaranteed cadence claim."
+    "freshnessEvidence": "Editorial admission review completed 2026-10-14T07:17:56.386277Z: earlier14October browser pass observed provider camera image decoded 960x540; visually inspected river bridge, city streets and distant hills. Burned-in capture2026/10/14 13:31 Asia/Tokyo. STV identifies the camera at 9-Jodori 1-Chome, Asahikawa. Refreshed still only; no streaming-video or guaranteed cadence claim.",
+    "externalWindowRequired": true,
+    "seoName": "Asahikawa"
   },
   {
     "id": "japan-kitahiroshima-stv-current",
@@ -13940,7 +13966,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Editorial admission review completed 2026-10-14T07:17:56.386277Z: earlier14October browser pass observed provider camera image decoded 960x540; visually inspected railway, city rooftops and wooded surroundings. Burned-in capture2026/10/14 13:32 Asia/Tokyo. STV identifies the camera at Kitahiroshima City Hall, Chuo4-chome2-1. Refreshed still only; no streaming-video or guaranteed cadence claim. Separate official Kitahiroshima live-page nbtzTBRBuzM video remained0x0/readyState0/time0, pausedfalse with black frame in browser review; not admitted as LIVE VIDEO."
+    "freshnessEvidence": "Editorial admission review completed 2026-10-14T07:17:56.386277Z: earlier14October browser pass observed provider camera image decoded 960x540; visually inspected railway, city rooftops and wooded surroundings. Burned-in capture2026/10/14 13:32 Asia/Tokyo. STV identifies the camera at Kitahiroshima City Hall, Chuo4-chome2-1. Refreshed still only; no streaming-video or guaranteed cadence claim. Separate official Kitahiroshima live-page nbtzTBRBuzM video remained0x0/readyState0/time0, pausedfalse with black frame in browser review; not admitted as LIVE VIDEO.",
+    "externalWindowRequired": true,
+    "seoName": "Kitahiroshima"
   },
   {
     "id": "japan-shinchitose2-stv-current",
@@ -13982,7 +14010,9 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Editorial admission review completed 2026-10-14T07:17:56.386277Z: earlier14October browser pass observed provider camera image decoded 960x540; visually inspected runway, airport grounds and terminal skyline. Burned-in capture2026/10/14 13:32 Asia/Tokyo. STV identifies the camera at East side of New Chitose Airport runway. Refreshed still only; no streaming-video or guaranteed cadence claim."
+    "freshnessEvidence": "Editorial admission review completed 2026-10-14T07:17:56.386277Z: earlier14October browser pass observed provider camera image decoded 960x540; visually inspected runway, airport grounds and terminal skyline. Burned-in capture2026/10/14 13:32 Asia/Tokyo. STV identifies the camera at East side of New Chitose Airport runway. Refreshed still only; no streaming-video or guaranteed cadence claim.",
+    "externalWindowRequired": true,
+    "seoName": "New Chitose Airport"
   },
   {
     "id": "japan-ohdori4-stv-current",
@@ -14024,6 +14054,8 @@
     "searchSupplemental": true,
     "rightsBasis": "STV link policy permits links in a separate window. External provider page only: no embedding, hotlinking, copying, image thumbnail reuse or footage reuse authorized.",
     "rightsSourceUrl": "https://www.stv.jp/info/copyright/index.html",
-    "freshnessEvidence": "Editorial admission review completed 2026-10-14T07:17:56.386277Z: earlier14October browser pass observed provider camera image decoded 960x540; visually inspected odori park, tv tower and city streets. Burned-in capture2026/10/14 13:32 Asia/Tokyo. STV identifies the camera at Meiji Yasuda Life Sapporo Odori Building, Odori Nishi3-chome. Refreshed still only; no streaming-video or guaranteed cadence claim."
+    "freshnessEvidence": "Editorial admission review completed 2026-10-14T07:17:56.386277Z: earlier14October browser pass observed provider camera image decoded 960x540; visually inspected odori park, tv tower and city streets. Burned-in capture2026/10/14 13:32 Asia/Tokyo. STV identifies the camera at Meiji Yasuda Life Sapporo Odori Building, Odori Nishi3-chome. Refreshed still only; no streaming-video or guaranteed cadence claim.",
+    "externalWindowRequired": true,
+    "seoName": "Sapporo"
   }
 ]
