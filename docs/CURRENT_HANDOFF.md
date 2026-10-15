@@ -1,3 +1,12 @@
+## 2026-10-15 — Antarctic maintenance release accepted
+
+- Production release: `53c81f446e5ebdb6b585b6b8c336138c120605d4`. Pages workflow 38671994430 and Operations workflow 38671994406 both completed SUCCESS for that exact commit. This data/docs release did not trigger the standalone Syntax workflow; Pages included its own preflight.
+- All 121 local release smoke tests passed, along with catalog, expansion-integrity, performance and diff checks. Core remains 574,971/575,000 bytes; startup 159,976/160,000; app 99,810/100,000. No budget increase.
+- Production manifest generated 2026-10-15T02:39:46.962Z; all 14 served-file SHA checks passed at 2026-10-15T02:40:59.716441Z, including the four Antarctic destination pages.
+- Fresh deployed-browser verification loaded app revision 53c81f446e5e: Casey, Davis and Mawson each displayed CURRENT IMAGE with verification within 24h. Macquarie Island remained RECHECK DUE with its previous verification date unchanged. Casey's viewer retained Australian Antarctic Program attribution and the exact official current-image page in a new tab with noopener noreferrer.
+- This bounded batch restored three existing current-image places and added ZERO inventory places. Snapshot at 2026-10-15T02:36:14.011Z: 786 distinct camera-type inventory places, 67 current-eligible places, 719 without a current-eligible source. The 786 inventory total is not a claim of 786 currently verified live views. New Nagano leads remain on hold in the existing research workflow.
+- Existing external-only permissions, truthful source labels, original deployment/design, numbered Living Atlas, neutral ranking, rollback protections, public-OFF gates and paid-traffic HOLD remain preserved. No additional research or deployment is required to close this usage-bounded batch.
+
 ## 2026-10-15 — Bounded reliable-coverage maintenance
 
 - Resumed GitHub maine60ba94c /accepted productione83c21dc. Owner requested continued camera priority with careful usage; bounded pass, no new runtime/infrastructure, no duplicate research/analytics queues, one combined publication.
