@@ -1,3 +1,10 @@
+## 2026-10-15 — Source expansion served; freshness-aware release audit repair
+
+- e9fc6fe990c00870ea2611ad5266fc25ca313fee deployed all four additions. Operations38689590028 SUCCESS. Pages38689590124 passed build/deployment/social previews, then FAILED visitor-reality assertion for Thailand. Do not label that workflow green.
+- Independent14/14 served SHA/catalog checks PASS at2026-10-15T06:00:42.734143Z; manifest05:59:39.386Z. Deployed browser revisione9fc6fe990c0 found all four new destinations as CURRENT IMAGE, verified within24h. Exact Nelson and Boí Taüll official source links open_blank/noopener/noreferrer with named attribution; Boí Taüll closure/access caveat visible.
+- Failure reproduced: Hua Hin existing check2026-10-08T05:58Z expired at its unchanged seven-day horizon during deployment. Thailand collection correctly omitted Hua Hin while retaining eligible Koh Samui; audit wrongly required Hua Hin unconditionally. Only that expectation now uses existing currentSource and embedPlaybackProofCurrent at deployed manifest build time, matching the already time-aware Koh Samui check. No runtime, dates, source gates, five-stream floor or recency window changed.
+- Meaningful boundary verification PASS: Hua Hin eligible15Oct05:57:59Z, ineligible05:59:00Z with original source record unchanged. Script syntax PASS; full corrected production-reality check PASS against actually served e9fc6fe9 (exit0). Original121 release smoke tests still cover the unchanged source/runtime batch; corrected exact-SHA CI required before acceptance. One corrective release justified by observed failure, no additional source research.
+
 ## 2026-10-15 — Four new first-party current-image places
 
 - Resumed verified GitHub maine88338cd / accepted productionfa78cef8. Owner requested continued camera expansion with careful usage. One bounded batch: FOUR new distinct visitor destinations, four LIVE_IMAGE/LINK_ONLY/EXTERNAL sources, no source-date bulk renewal or runtime/design changes.
