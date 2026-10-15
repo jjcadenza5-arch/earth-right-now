@@ -10940,5 +10940,98 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://nordkapphallen.no/north-cape-visitor-center/food-and-drinks/"
+  },
+  {
+    "id": "local-us-big-bend-panther-junction-conditions",
+    "name": "Big Bend — official park conditions",
+    "type": "visitor information",
+    "place": "Big Bend",
+    "country": "United States",
+    "summary": "Check official road closures and facility updates before setting out. Primitive dirt roads require suitable high-clearance four-wheel-drive vehicles; the desert camera does not establish river-crossing or road safety.",
+    "url": "https://www.nps.gov/bibe/planyourvisit/conditions.htm",
+    "verifiedAt": "2026-10-15T14:01:54.857385Z",
+    "status": "APPROVED",
+    "placeId": "us-big-bend-panther-junction",
+    "tags": [
+      "Big Bend National Park",
+      "Panther Junction",
+      "Chihuahuan Desert",
+      "visitor information",
+      "visitor planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/bibe/planyourvisit/conditions.htm"
+  },
+  {
+    "id": "local-us-bryce-yovimpa-point-conditions",
+    "name": "Bryce Canyon — official park conditions",
+    "type": "visitor information",
+    "place": "Bryce Canyon",
+    "country": "United States",
+    "summary": "Check park alerts for road closures, the visitor center for current trail conditions and the linked forecast for weather. A clear Yovimpa camera does not establish the condition of amphitheater trails or backcountry routes.",
+    "url": "https://www.nps.gov/brca/planyourvisit/conditions.htm",
+    "verifiedAt": "2026-10-15T14:01:54.857385Z",
+    "status": "APPROVED",
+    "placeId": "us-bryce-yovimpa-point",
+    "tags": [
+      "Bryce Canyon National Park",
+      "Yovimpa Point",
+      "Bryce Canyon",
+      "visitor information",
+      "visitor planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/brca/planyourvisit/conditions.htm"
+  },
+  {
+    "id": "local-us-joshua-tree-belle-mountain-conditions",
+    "name": "Joshua Tree — official park conditions",
+    "type": "visitor information",
+    "place": "Joshua Tree",
+    "country": "United States",
+    "summary": "Use the official closure map for roads, trails, campgrounds and backcountry zones. Weather varies substantially with elevation and location; the Belle Mountain view does not establish campsite availability or safe hiking conditions.",
+    "url": "https://www.nps.gov/jotr/planyourvisit/conditions.htm",
+    "verifiedAt": "2026-10-15T14:01:54.857385Z",
+    "status": "APPROVED",
+    "placeId": "us-joshua-tree-belle-mountain",
+    "tags": [
+      "Joshua Tree National Park",
+      "Belle Mountain",
+      "Pinto Basin",
+      "Eagle Mountains",
+      "visitor information",
+      "visitor planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/jotr/planyourvisit/conditions.htm"
+  },
+  {
+    "id": "local-us-theodore-roosevelt-painted-canyon-conditions",
+    "name": "Theodore Roosevelt — official park conditions",
+    "type": "visitor information",
+    "place": "Theodore Roosevelt",
+    "country": "United States",
+    "summary": "Read official road, trail and facility updates before a badlands visit. A visible landscape is not confirmation that a particular park unit, trail or visitor facility is open; follow current park guidance around wildlife.",
+    "url": "https://www.nps.gov/thro/planyourvisit/conditions.htm",
+    "verifiedAt": "2026-10-15T14:01:54.857385Z",
+    "status": "APPROVED",
+    "placeId": "us-theodore-roosevelt-painted-canyon",
+    "tags": [
+      "Theodore Roosevelt National Park",
+      "Painted Canyon",
+      "North Dakota Badlands",
+      "visitor information",
+      "visitor planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/thro/planyourvisit/conditions.htm"
   }
 ]

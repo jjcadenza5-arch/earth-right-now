@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10",
+  "updatedAt": "2026-10-15T14:01:54.857385Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -1047,6 +1047,27 @@
       "Junior chairlift",
       "Vall de Boí",
       "Alta Ribagorça"
+    ],
+    "us-big-bend-panther-junction": [
+      "Big Bend National Park",
+      "Panther Junction",
+      "Chihuahuan Desert"
+    ],
+    "us-bryce-yovimpa-point": [
+      "Bryce Canyon National Park",
+      "Yovimpa Point",
+      "Bryce Canyon"
+    ],
+    "us-joshua-tree-belle-mountain": [
+      "Joshua Tree National Park",
+      "Belle Mountain",
+      "Pinto Basin",
+      "Eagle Mountains"
+    ],
+    "us-theodore-roosevelt-painted-canyon": [
+      "Theodore Roosevelt National Park",
+      "Painted Canyon",
+      "North Dakota Badlands"
     ]
   }
 }
