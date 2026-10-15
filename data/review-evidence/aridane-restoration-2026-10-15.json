@@ -1,0 +1,54 @@
+{
+  "reviewedAt": "2026-10-15T16:25:11Z",
+  "basis": "ASSISTANT_BROWSER_RENDERED_OBSERVATIONS; not owner-reported acceptance",
+  "origin": "https://earthrightnow.app/review/inside-ern.html",
+  "release": "1d3c8bf01f8e28d69d9da3734854d28608f5be56",
+  "reviewBatch": "e2611de70a48f90d",
+  "sourceId": "la-palma-aridane-valley",
+  "sourceUrl": "https://webcam-lapalma.de/webcam-aridane-tal/",
+  "embedUrl": "https://webcam-lapalma.de/embed/aridane/",
+  "verdict": "HUMAN_PLAYBACK_CONFIRMED",
+  "videoSamples": [
+    {
+      "currentTime": 31.276053,
+      "width": 2304,
+      "height": 864,
+      "readyState": 4,
+      "paused": false
+    },
+    {
+      "currentTime": 47.631995,
+      "width": 2304,
+      "height": 864,
+      "readyState": 4,
+      "paused": false
+    }
+  ],
+  "captureLabel": "15/10/2026 17:24:34 THU",
+  "captureTimezone": "Atlantic/Canary",
+  "scene": "Wide valley, vegetated slope, town and fields, mountain ridge, cloud layers and blue sky; ocean/hazy horizon at right. LIVE Aridane-Tal player label.",
+  "attribution": "webcam-lapalma.de visible inside player and linked below frame",
+  "permissionBasis": "Existing EMBED_ALLOWED retained. First-party https://webcam-lapalma.de/webcam-einbetten/ explicitly permits free embedding conditional on visible webcam-lapalma.de link. No photo reuse rights inferred.",
+  "otherChecks": [
+    {
+      "id": "rovaniemi-santa-claus-village-live",
+      "verdict": "INCONCLUSIVE",
+      "observation": "After one Play video click, time remained 0, dimensions 0x0, readyState 0, black player. No decoded scene; no date renewal or outage inference."
+    },
+    {
+      "id": "la-palma-caldera-taburiente",
+      "verdict": "INCONCLUSIVE",
+      "observation": "Video metadata decoded 1920x1080; insufficient separate dated visual progression review in this pass. Existing dates unchanged."
+    },
+    {
+      "id": "volcan-tajogaite",
+      "verdict": "INCONCLUSIVE",
+      "observation": "No decoded video in sampled state. Existing dates unchanged; not proof of provider outage."
+    }
+  ],
+  "newCameras": 0,
+  "cameraBackedPlaces": 798,
+  "newPhotographs": 0,
+  "newAffiliateRelationships": 0,
+  "timestampBasis": "reviewedAt is the actual local Playing & current review action, rendered 10/15/2026 11:25:11 PM Bangkok; capture label is separately recorded. No later sample used to claim continuous reliability."
+}
