@@ -929,21 +929,27 @@
     },
     {
       "id": "spain-fgc-vallter-webcam",
-      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "state": "RESOLVED_PROMOTED_LINK_ONLY_CURRENT_IMAGE",
       "why": "FGC Turisme confirms Vallter as one of its six active mountain resorts and its ecosystem uses webcams/current conditions, but this pass did not resolve a sufficiently explicit public webcam route.",
-      "next": "Resolve Vallter's exact first-party webcam URL/current target before Search/Explore promotion.",
+      "next": "Maintain dated primary image, seasonal-access caveat and external-only permissions; do not count other camera angles as new places.",
       "evidenceUrls": [
         "https://www.turismefgc.cat/en/actualitat/noticies/ferrocarrils-caser-test-with-ski-system-safety-slopes/"
-      ]
+      ],
+      "reviewedAt": "2026-10-15T05:54:30Z",
+      "resolvedCatalogId": "spain-vallter-les-marmotes-current",
+      "currentObservedState": "Interactive browser review completed 2026-10-15T05:54:30Z. Official page publishes exact nested https://fgc.roundshot.com/marmotes. Actual panorama fully rendered in1363x936 canvas and visually inspected rocky ridge, mountain building and lift structures under dawn sky; viewer15.10.2026 07:40 Europe/Madrid, latest/next disabled. Initial loading blur resolved to detailed scene. Promotional snowy hero, teaser video, rotation and weather widget were not current-image proof."
     },
     {
       "id": "spain-fgc-boi-taull-webcam",
-      "state": "EXACT_TARGET_RESEARCH_REQUIRED",
+      "state": "RESOLVED_PROMOTED_LINK_ONLY_CURRENT_IMAGE",
       "why": "FGC Turisme confirms Boí Taüll as an active FGC mountain resort, but this pass did not resolve a sufficiently explicit stable first-party webcam URL.",
-      "next": "Resolve the exact Boí Taüll webcam/current-view route before promotion.",
+      "next": "Maintain dated primary image, seasonal-access caveat and external-only permissions; do not count other camera angles as new places.",
       "evidenceUrls": [
         "https://www.turismefgc.cat/en/actualitat/noticies/ferrocarrils-caser-test-with-ski-system-safety-slopes/"
-      ]
+      ],
+      "reviewedAt": "2026-10-15T05:54:30Z",
+      "resolvedCatalogId": "spain-boi-taull-pla-vaques-current",
+      "currentObservedState": "Interactive browser review completed 2026-10-15T05:54:30Z. Official page labels Pla de Vaques2020 Junior CHL View. Actual published Base_Junior image opened from that page, decoded1024x576 and visually inspected monochrome mountain ridge, lift and base structures; burned-in07:50:05 2026-10-15 Europe/Madrid. Page thumbnail474x267 not confused with primary resolution. Express modal remained blank and its undated snowy thumbnail was not accepted; Cap de Vaques image0x0 was not proof. No live-video admission."
     },
     {
       "id": "chile-corralco-exact-camera",
@@ -1519,6 +1525,42 @@
       ],
       "why": "Exact official Matsumoto Castle3pfpRzVgtoE and UtsukushigaharaW7kZdoqGfTg players were clicked, then remained0x0/readyState0/time0. No playable-camera admission from live headings. Three castle angles would count as one place if verified. TV Matsumoto policy explicitly asks for homepage links and rejects framing; no camera-page deep link or image reuse admitted. No network-wide outage claim.",
       "next": "Hold after bounded pass; revisit on decoded current source playback or an approved exact handoff. Reuse existing demand/maintenance workflow, no duplicate queue or routine retry."
+    },
+    {
+      "id": "nz-nelson-harbour-official-current",
+      "priority": "P1_CAMERA_COVERAGE",
+      "placeGroup": "Nelson — Harbour & Tasman Bay",
+      "country": "New Zealand",
+      "provider": "Nelson City Council / Harbourmaster",
+      "candidateType": "OFFICIAL_COUNCIL_REFRESHED_IMAGES",
+      "evidenceUrls": [
+        "https://harbours.nelson.govt.nz/cams/",
+        "https://www.nelson.govt.nz/terms-conditions/copyright"
+      ],
+      "state": "RESOLVED_PROMOTED_LINK_ONLY_CURRENT_IMAGE",
+      "reviewedAt": "2026-10-15T05:54:30Z",
+      "resolvedCatalogId": "nz-nelson-harbour-current",
+      "currentObservedState": "Interactive browser review completed 2026-10-15T05:54:30Z. Actual primary Harbour South image decoded1920x1080, visually inspected boats, island shoreline, water and evening sunlight; burned-inThu15/10/2026 18:46 New Zealand local, page/image alt18:47:39. Capture clock distinguished from page retrieval time. North/south angles count as one destination. Provider foreground privacy masking retained at source.",
+      "why": "New destination with useful independently decoded and dated current imagery. Source-led coverage expansion, not a claim of repeated measured visitor demand.",
+      "next": "Maintain source capture dates and attribution. No navigation/safety clearance inferred; no source media reuse."
+    },
+    {
+      "id": "nz-wellington-harbour-entrance-official-current",
+      "priority": "P1_CAMERA_COVERAGE",
+      "placeGroup": "Wellington — Harbour Entrance",
+      "country": "New Zealand",
+      "provider": "Greater Wellington Regional Council / Beacon Hill Signal Station",
+      "candidateType": "OFFICIAL_COUNCIL_REFRESHED_IMAGES",
+      "evidenceUrls": [
+        "https://www.gw.govt.nz/environment/harbours-and-coasts/wellington-harbour-entrance-webcams-and-radio/",
+        "https://www.gw.govt.nz/your-council/legal/"
+      ],
+      "state": "RESOLVED_PROMOTED_LINK_ONLY_CURRENT_IMAGE",
+      "reviewedAt": "2026-10-15T05:54:30Z",
+      "resolvedCatalogId": "nz-wellington-harbour-entrance-current",
+      "currentObservedState": "Interactive browser review completed 2026-10-15T05:54:30Z. Official page names Beacon Hill Signal Station. Actual second primary camera decoded2048x1536, visually inspected harbour water, rocky coast and headlands; burned-in15.10.2026 18:44:58 New Zealand local. Four angles count as one entrance place. First mostly-foliage angle is not the qualifying scene; August page-update date does not date the images.",
+      "why": "New destination with useful independently decoded and dated current imagery. Source-led coverage expansion, not a claim of repeated measured visitor demand.",
+      "next": "Maintain source capture dates and attribution. No navigation/safety clearance inferred; no source media reuse."
     }
   ],
   "guardrails": {
