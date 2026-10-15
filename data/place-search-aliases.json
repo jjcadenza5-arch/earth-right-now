@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T14:01:54.857385Z",
+  "updatedAt": "2026-10-15T14:40:45.770400Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -1068,6 +1068,28 @@
       "Theodore Roosevelt National Park",
       "Painted Canyon",
       "North Dakota Badlands"
+    ],
+    "us-point-reyes-beach": [
+      "Point Reyes National Seashore",
+      "Point Reyes Beach",
+      "Point Reyes"
+    ],
+    "us-north-cascades-newhalem": [
+      "North Cascades National Park",
+      "Newhalem",
+      "Picket Range",
+      "North Cascades Visitor Center"
+    ],
+    "us-mammoth-cave-green-river": [
+      "Mammoth Cave National Park",
+      "Green River Valley",
+      "Green River Bluffs Overlook"
+    ],
+    "us-dinosaur-west-entrance": [
+      "Dinosaur National Monument",
+      "Dinosaur Quarry",
+      "Quarry Entrance",
+      "Dinosaur West Entrance"
     ]
   }
 }

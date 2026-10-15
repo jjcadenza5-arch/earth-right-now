@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T14:01:54.857385Z",
+  "generatedAt": "2026-10-15T14:40:45.770400Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -1644,6 +1644,70 @@
           "captureLabel": "10/15/2026 07:45 AM MDT",
           "decoded": "640x360",
           "scene": "Sunlit golden eroded badlands and foreground vegetation beneath a blue-grey cloud deck.",
+          "truth": "LIVE_IMAGE",
+          "permission": "LINK_ONLY"
+        }
+      ],
+      "why": "Distinct park landscape windows add destination coverage and useful light/visibility context, without duplicating camera angles or claiming visitor-demand counts.",
+      "next": "Maintain exact source capture evidence and official conditions links. Current images are refreshed stills, not continuous video or access/safety clearance. No media reuse or automatic verification renewal."
+    },
+    {
+      "id": "us-nps-coast-forest-quarry-oct15-current-images",
+      "priority": "P1",
+      "placeGroup": "Point Reyes / North Cascades / Mammoth Cave / Dinosaur",
+      "country": "United States",
+      "provider": "U.S. National Park Service / Air Resources Division",
+      "candidateType": "OFFICIAL_REFRESHED_CAMERA_NETWORK",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "activities",
+        "transport",
+        "services"
+      ],
+      "evidenceUrls": [
+        "https://www.nps.gov/subjects/air/webcams.htm?site=pore",
+        "https://www.nps.gov/subjects/air/webcams.htm?site=noca",
+        "https://www.nps.gov/subjects/air/webcams.htm?site=maca",
+        "https://www.nps.gov/subjects/air/webcams.htm?site=dino",
+        "https://www.nps.gov/aboutus/disclaimer.htm"
+      ],
+      "state": "FOUR_DISTINCT_CAMERA_PLACES_ADMITTED_LINK_ONLY",
+      "latestResearchAt": "2026-10-15T14:40:45.770400Z",
+      "reviewedTargets": [
+        {
+          "placeId": "us-point-reyes-beach",
+          "officialUrl": "https://www.nps.gov/subjects/air/webcams.htm?site=pore",
+          "captureLabel": "10/15/2026 07:30 AM PDT",
+          "decoded": "640x360",
+          "scene": "Long curving beach and ocean, foreground coastal headland and clear pastel morning horizon.",
+          "truth": "LIVE_IMAGE",
+          "permission": "LINK_ONLY"
+        },
+        {
+          "placeId": "us-north-cascades-newhalem",
+          "officialUrl": "https://www.nps.gov/subjects/air/webcams.htm?site=noca",
+          "captureLabel": "10/15/2026 07:30 AM PDT",
+          "decoded": "640x360",
+          "scene": "Orange morning light on sharp mountain peaks framed by forested slopes and evergreen trees.",
+          "truth": "LIVE_IMAGE",
+          "permission": "LINK_ONLY"
+        },
+        {
+          "placeId": "us-mammoth-cave-green-river",
+          "officialUrl": "https://www.nps.gov/subjects/air/webcams.htm?site=maca",
+          "captureLabel": "10/15/2026 09:30 AM CDT",
+          "decoded": "640x360",
+          "scene": "Wooded valley with green and autumn foliage, a visible river bend and cloudy morning sky.",
+          "truth": "LIVE_IMAGE",
+          "permission": "LINK_ONLY"
+        },
+        {
+          "placeId": "us-dinosaur-west-entrance",
+          "officialUrl": "https://www.nps.gov/subjects/air/webcams.htm?site=dino",
+          "captureLabel": "10/15/2026 08:30 AM MDT",
+          "decoded": "640x360",
+          "scene": "Sunlit tan eroded ridges with green valley, river or water in the distance and a blue sky.",
           "truth": "LIVE_IMAGE",
           "permission": "LINK_ONLY"
         }

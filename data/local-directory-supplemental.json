@@ -11033,5 +11033,99 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.nps.gov/thro/planyourvisit/conditions.htm"
+  },
+  {
+    "id": "local-us-point-reyes-beach-conditions",
+    "name": "Point Reyes — official park conditions",
+    "type": "visitor information",
+    "place": "Point Reyes",
+    "country": "United States",
+    "summary": "Check official road alerts, trail reports and annual wildlife closures before a coastal visit. Use the linked weather and tides guidance; clear camera visibility does not establish safe surf or access to every beach.",
+    "url": "https://www.nps.gov/pore/planyourvisit/conditions.htm",
+    "verifiedAt": "2026-10-15T14:40:45.770400Z",
+    "status": "APPROVED",
+    "placeId": "us-point-reyes-beach",
+    "tags": [
+      "Point Reyes National Seashore",
+      "Point Reyes Beach",
+      "Point Reyes",
+      "visitor information",
+      "visitor planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/pore/planyourvisit/conditions.htm"
+  },
+  {
+    "id": "local-us-north-cascades-newhalem-conditions",
+    "name": "North Cascades — official park conditions",
+    "type": "visitor information",
+    "place": "North Cascades",
+    "country": "United States",
+    "summary": "Choose the official road, trail, lake and river, climbing and fire-closure reports for your route. The visitor-center camera covers a valley viewpoint and cannot confirm conditions on a distant alpine trail.",
+    "url": "https://www.nps.gov/noca/planyourvisit/conditions.htm",
+    "verifiedAt": "2026-10-15T14:40:45.770400Z",
+    "status": "APPROVED",
+    "placeId": "us-north-cascades-newhalem",
+    "tags": [
+      "North Cascades National Park",
+      "Newhalem",
+      "Picket Range",
+      "North Cascades Visitor Center",
+      "visitor information",
+      "visitor planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/noca/planyourvisit/conditions.htm"
+  },
+  {
+    "id": "local-us-mammoth-cave-green-river-conditions",
+    "name": "Mammoth Cave — official park conditions",
+    "type": "visitor information",
+    "place": "Mammoth Cave",
+    "country": "United States",
+    "summary": "Check official park conditions and current road and Green River Ferry status before travel; operations may change without notice. Use the separate cave-tour link to plan an underground visit, and consult the linked water-level service before a river trip.",
+    "url": "https://www.nps.gov/maca/planyourvisit/conditions.htm",
+    "verifiedAt": "2026-10-15T14:40:45.770400Z",
+    "status": "APPROVED",
+    "placeId": "us-mammoth-cave-green-river",
+    "tags": [
+      "Mammoth Cave National Park",
+      "Green River Valley",
+      "Green River Bluffs Overlook",
+      "visitor information",
+      "visitor planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/maca/planyourvisit/conditions.htm"
+  },
+  {
+    "id": "local-us-dinosaur-west-entrance-conditions",
+    "name": "Dinosaur — official park conditions",
+    "type": "visitor information",
+    "place": "Dinosaur",
+    "country": "United States",
+    "summary": "Read the official conditions page for the specific monument area you plan to visit. Rainfall can affect roads and trails; seasonal campgrounds and water services change around mid-October. A sunny west-entrance camera does not confirm those facilities are open.",
+    "url": "https://www.nps.gov/dino/planyourvisit/conditions.htm",
+    "verifiedAt": "2026-10-15T14:40:45.770400Z",
+    "status": "APPROVED",
+    "placeId": "us-dinosaur-west-entrance",
+    "tags": [
+      "Dinosaur National Monument",
+      "Dinosaur Quarry",
+      "Quarry Entrance",
+      "Dinosaur West Entrance",
+      "visitor information",
+      "visitor planning"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/dino/planyourvisit/conditions.htm"
   }
 ]
