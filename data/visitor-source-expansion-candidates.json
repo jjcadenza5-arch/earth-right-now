@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T06:55:00Z",
+  "generatedAt": "2026-10-15T00:59:54Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -1455,6 +1455,43 @@
       ],
       "why": "Four individually rendered current panoramas at different sites; dated14October2026 10:00/10:10/10:01 captures. Fürenalp already existed, so renewed/repaired rather than inflated as a fifth new place. Raw Stans image decoded3449x450 through the exact published dynamic endpoint; provider capture filename establishes date. Links only; no source images copied or embedded.",
       "next": "Maintain exact targets with fresh dated rendered evidence. Do not count panorama rotation as streaming video or camera availability as travel/access/flight clearance. Use existing visitor-demand signals; source-led admissions do not claim repeated visitor interest."
+    },
+    {
+      "id": "us-nps-glacier-lassen-sequoia-oct15-current-images",
+      "priority": "P1",
+      "placeIds": [
+        "us-glacier-lake-mcdonald",
+        "us-glacier-logan-pass",
+        "us-glacier-two-medicine",
+        "us-glacier-apgar-lookout",
+        "us-lassen-kohm-yah-mah-nee",
+        "us-sequoia-giant-forest"
+      ],
+      "sourceType": "FIRST_PARTY_REFRESHED_IMAGES",
+      "state": "SIX_DISTINCT_VISITOR_SITES_ADMITTED_LINK_ONLY",
+      "reviewedAt": "2026-10-15T00:59:54Z",
+      "resolvedCatalogIds": [
+        "us-glacier-lake-mcdonald-current",
+        "us-glacier-logan-pass-current",
+        "us-glacier-two-medicine-current",
+        "us-glacier-apgar-lookout-current",
+        "us-lassen-kohm-yah-mah-nee-current",
+        "us-sequoia-giant-forest-current"
+      ],
+      "evidenceUrls": [
+        "https://www.nps.gov/media/webcam/view.htm?id=81B4690A-1DD8-B71B-0B2D069E1CB02E6A",
+        "https://www.nps.gov/media/webcam/view.htm?id=325AE6AF-BAEB-F65D-EF3D638BF683E78E",
+        "https://www.nps.gov/media/webcam/view.htm?id=29CE45EA-EF1D-13A4-9C8E92F1FBFED9C7",
+        "https://www.nps.gov/media/webcam/view.htm?id=81B4691B-1DD8-B71B-0BB9DBEE21A59335",
+        "https://www.nps.gov/media/webcam/view.htm?id=9DFC6A5A-04A9-4982-806C-26C2B9FEC6D4",
+        "https://www.nps.gov/subjects/air/webcams.htm?site=seki",
+        "https://www.nps.gov/glac/learn/photosmultimedia/webcams.htm",
+        "https://www.nps.gov/lavo/learn/photosmultimedia/webcams.htm",
+        "https://www.nps.gov/seki/learn/photosmultimedia/webcams.htm",
+        "https://www.nps.gov/aboutus/disclaimer.htm"
+      ],
+      "why": "Six individually decoded, dated scenes. Lake McDonald lakeshore, Apgar summit, Logan Pass and Two Medicine are distinct visitor sites, not multiple angles at one place. All extra Logan/McDonald/Two Medicine angles excluded from counts. Existing broad Glacier and Many Glacier records not re-added or renewed. Source-led expansion, not a claim of repeated measured demand.",
+      "next": "Maintain actual dated scene evidence, not Active badge alone. St. Mary target AE7C9B53-910E-6D3A-D6133266826C6977 is HOLD: official page says inactive/wind turned camera upside down despite Active badge. Manzanita Lake HOLD: official lightning damage/indefinite offline notice. Canadian Glacier collection unavailable notices remain research-only, not usable cameras. Mineral King legacy operator says migrated to mkwebcam.com; unresolved current target on hold after bounded pass, no source admitted. Revisit holds on new evidence; use existing aggregate demand and maintenance workflows."
     }
   ],
   "guardrails": {
