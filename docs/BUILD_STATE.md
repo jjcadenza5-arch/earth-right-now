@@ -1,3 +1,10 @@
+## 2026-10-15 — Accent-folded alias deduplication before promotion
+
+- Candidate477940d5ef6868694597e8eef5fbf951ce47240e Pages38704085756 failed BEFORE deployment at multilingual alias integrity: Boí Taüll and Boi Taull normalize to the same alias. Production stilla88702cb. Earlier combined local command continued after that validator's nonzero exit; this was missed and is corrected, not called a PASS.
+- Removed only the redundant ASCII alias from the canonical sidecar; existing accent-insensitive search already matches either spelling. Source records, verification dates, part registration, camera count, eligibility rules and alias coverage floor unchanged.
+- Repeated fail-fast local checks: canonical aliases PASS, rebuilt artifact AI-search readiness PASS (15 alias pages), SEO indexing PASS, public module integrity PASS, performance PASS, diff checks PASS. All checks' actual JSON readiness flags were inspected. Final corrected-SHA CI and deployed verification required before acceptance.
+- This is a release metadata repair within the same bounded capacity stage, not new camera research or inventory. Prior122-test source/code suite and successful Syntax/Operations evidence remain documented; no final success inferred from those earlier runs.
+
 ## 2026-10-15 — Capacity release held before deploy; canonical alias coverage repaired
 
 - Candidate39878aa593957d4da3e355a4901e0dc556d85be8: Syntax38703317512 SUCCESS, Operations38703317482 SUCCESS. Pages38703317582 passed122 release tests and build/preflights, then FAILED AI-search readiness before deployment. Accepted production remaineda88702cb; no failed candidate promoted.
