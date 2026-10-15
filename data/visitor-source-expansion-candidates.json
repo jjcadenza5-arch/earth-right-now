@@ -1377,14 +1377,28 @@
         {
           "name": "Rebun Island town camera",
           "sourceUrl": "https://www.stv.jp/webcam/rebun/index.html",
-          "reason": "Actual320x240 image decoded; burned-in2026/10/14 15:47:59 is ahead of the approximately13:30 Japan review time. Low-resolution obscured waterfront. No admission or currentness assumption until clock/current capture evidence is reconciled."
+          "reason": "Decoded320x240 coastal scene, but burned-in2026/10/15 15:23:04 is ahead of actual approximately13:07 Japan review time. Existing clock hold retained; provider heading13:00 is not image capture proof. No source admitted.",
+          "lastRecheckedAt": "2026-10-15T04:07:21Z"
         },
         {
           "name": "Kitahiroshima optional streaming video",
           "sourceUrl": "https://www.stv.jp/webcam/live/kitahiroshima.html",
           "reason": "Exact official YouTube nbtzTBRBuzM autoplay player remainedblack: videoWidth0/videoHeight0/readyState0/currentTime0,pausedfalse. The individually dated still was admitted; streaming-video promotion held until genuine decoded current playback evidence. Not a global outage claim."
         }
-      ]
+      ],
+      "maintenanceReviewedAt": "2026-10-15T04:07:21Z",
+      "maintenanceObservation": {
+        "renewedCatalogIds": [
+          "japan-otaru-stv-current",
+          "japan-hakodate-stv-current",
+          "japan-wakkanai-stv-current",
+          "japan-asahikawa-stv-current"
+        ],
+        "evidence": "Four actual decoded960x540 daylight images inspected. Burned-in15October2026: Otaru13:02, Hakodate13:00, Wakkanai13:01, Asahikawa13:01 Japan time. No new inventory places. Other admitted STV dates unchanged.",
+        "rebunHold": "Decoded320x240 coastal scene, but burned-in2026/10/15 15:23:04 is ahead of actual approximately13:07 Japan review time. Existing clock hold retained; provider heading13:00 is not image capture proof. No source admitted.",
+        "atvHold": "Search-resolved new.atv.jp/camera/index.php returned502 certificate hostname mismatch in this browser. No bypass, provider outage claim or source admission.",
+        "rights": "Re-read https://www.stv.jp/info/copyright/index.html: links generally free, required separate window, no copying or retransmission rights inferred."
+      }
     },
     {
       "id": "northern-norway-port-camera-bounded-review",
