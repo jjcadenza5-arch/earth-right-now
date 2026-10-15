@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T08:46:50Z",
+  "generatedAt": "2026-10-15T00:54:22.027617+00:00",
   "healthyDistinctBaseline": 751,
   "strategy": "Camera-first maintenance and evidence-gated expansion. Protect genuine usable coverage; distinguish catalog inventory from current eligibility and never inflate counts mechanically.",
   "items": [
@@ -487,6 +487,28 @@
       "lastReviewAt": "2026-10-14T08:46:50Z",
       "action": "HOLD_RENEWAL_PENDING_USEFUL_NEW_CURRENT_FRAME_AND_TARGET_MATCH",
       "reviewOutcome": "Bounded actual browser review of both exact Prince Hotels SKIDAY iframe targets. Garden-labelled865036042047983 decoded1280x960 image filename l_20261014173012.jpg, but IR foliage close-up dominated and widget caption identifies a snow-measurement image, not confidently matched Garden view. Summit869223040349118 decoded1280x960 daylight landscape filename20261014132221.jpg; latest slider maximum34 selected, with browser-local11:22 display corresponding to13:22 Japan capture, several hours before17:45+ Japan review. No source cadence/currentness assumption from Live Camera labels, play button or browser-time offset. No video decoded/tested. Existing source checkedAt/lastSuccessfulCheck/health left unchanged; no source-outage claim. Revisit only on useful newer rendered/capture evidence and clarified exact target identity."
+    },
+    {
+      "id": "la-palma-caldera-taburiente",
+      "placeId": "la-palma-caldera-taburiente",
+      "title": "La Palma — Caldera de Taburiente",
+      "country": "Spain",
+      "health": "HEALTHY",
+      "truth": "LIVE_VIDEO",
+      "lastReviewAt": "2026-10-15T00:53:26Z",
+      "action": "MAINTAIN_EXISTING_APPROVED_EMBED_WITH_REAL_DEPLOYED_PLAYBACK_REVIEW",
+      "reviewOutcome": "Existing deployed ERN review batch ed4f415dfb35f337. Exact provider iframe https://webcam-lapalma.de/embed/caldera/. Decoded 1920x1080, readyState4, unpaused, time11.185110 to19.227685; night fog/condensation limits landscape visibility. Visible 15Oct2026 ~01:52 Atlantic/Canary burned-in clock advanced during review, matching current local date/time. Original source-specific embed permission and required visible webcam-lapalma.de attribution retained; no new rights inference. Actual interactive deployed-browser evidence, not owner-reported acceptance."
+    },
+    {
+      "id": "volcan-tajogaite",
+      "placeId": "volcan-tajogaite",
+      "title": "Volcán Tajogaite",
+      "country": "Spain",
+      "health": "HEALTHY",
+      "truth": "LIVE_VIDEO",
+      "lastReviewAt": "2026-10-15T00:53:27Z",
+      "action": "MAINTAIN_EXISTING_APPROVED_EMBED_WITH_REAL_DEPLOYED_PLAYBACK_REVIEW",
+      "reviewOutcome": "Existing deployed ERN review batch ed4f415dfb35f337. Exact provider iframe https://webcam-lapalma.de/embed/vulkan/. Decoded 640x360, readyState4, unpaused, time8.737248 to16.363509; visible town lights/night skyline. Visible 15Oct2026 ~01:52 Atlantic/Canary burned-in clock advanced during review, matching current local date/time. Original source-specific embed permission and required visible webcam-lapalma.de attribution retained; no new rights inference. Actual interactive deployed-browser evidence, not owner-reported acceptance."
     }
   ],
   "currentReality": {
