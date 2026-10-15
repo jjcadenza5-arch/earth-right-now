@@ -119,7 +119,8 @@ const kohSamuiCurrent=all.some(s=>["thailand-koh-samui-crystal-bay","thailand-ko
 const huaHinCurrent=all.some(s=>s.id==="hua-hin-centara-live"&&currentSource(s,{now:collectionBuildNow})&&embedPlaybackProofCurrent(s,{now:collectionBuildNow}));
 const thailandDiscover=await waitText(base+"/discover/thailand-live-now/",t=>t.includes("Thailand Live & Current Views")&&t.includes("Hua Hin Beach")===huaHinCurrent&&t.includes("Koh Samui")===kohSamuiCurrent&&!t.includes("Bangkok — Sukhumvit Road"),"Thailand demand-led discovery page");
 const thailandTh=await waitText(base+"/th/discover/thailand-live-now/",t=>t.includes("มุมมองสดและปัจจุบันในประเทศไทย"),"Thai Thailand discovery page");
-const tokyoIslandsDiscover=await waitText(base+"/discover/tokyo-islands-live/",t=>t.includes("Tokyo Islands Live")&&t.includes("Aogashima")&&t.includes("Chichijima")&&t.includes("Hahajima"),"Tokyo Islands live discovery page");
+const tokyoIslandStates=["japan-aogashima","japan-chichijima","japan-hahajima"].map(place=>({place,current:all.some(s=>(s.placeId||s.id)===place&&currentSource(s,{now:collectionBuildNow})&&embedPlaybackProofCurrent(s,{now:collectionBuildNow}))}));
+const tokyoIslandsDiscover=await waitText(base+"/discover/tokyo-islands-live/",t=>t.includes("Tokyo Islands Live")&&tokyoIslandStates.every(x=>t.includes("/places/"+x.place+"/")===x.current),"Tokyo Islands live discovery page");
 const tokyoIslandsJa=await waitText(base+"/ja/discover/tokyo-islands-live/",t=>t.includes("東京の島々ライブ"),"Japanese Tokyo Islands discovery page");
 const seoSitemap=await waitText(base+"/sitemap.xml",t=>t.includes("/discover/volcanoes-earth-science/")&&t.includes("/discover/parks-protected-places/")&&t.includes("/discover/thailand-live-now/")&&t.includes("/discover/tokyo-islands-live/"),"SEO sitemap");
 for(const locale of ["th","de","fr","ja","zh","es"]){
