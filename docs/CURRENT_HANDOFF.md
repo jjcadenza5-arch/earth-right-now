@@ -1,3 +1,10 @@
+## 2026-10-15 — Four-view STV maintenance accepted
+
+- Production commit `fa78cef8a1b0a7d2e1eb112beb006341266250f0`: Pages38679989866 SUCCESS and Operations38679989884 SUCCESS for the exact SHA. Data/docs-only scope did not trigger standalone Syntax; Pages preflights passed.
+- All121 local release smoke tests and metadata/expansion/supplemental/performance/diff checks PASS. Production manifest2026-10-15T04:11:39.995Z;14/14 served-file SHA checks PASS at2026-10-15T04:12:55.158765Z, including all four maintained destination pages and exact served catalog equality.
+- Deployed browser app revisionfa78cef8a1b0: Otaru, Hakodate, Wakkanai, Asahikawa each displayed CURRENT IMAGE and Source verified within24h. Asahikawa retained visible STV attribution and exact official source https://www.stv.jp/webcam/asahikawa/index.html with target_blank and noopener noreferrer. Existing Furano arrival information appeared distinctly as LOCAL PLACE beside Asahikawa results, not as camera footage.
+- Four existing-source renewals; ZERO new inventory or current-eligible-count increase. Latest audit remains786 camera-type inventory places /67 current-eligible places at04:08:12UTC. Rebun clock hold retained. Bounded batch complete; no further deployment or research required for acceptance. Existing design, numbered Atlas, budgets, rollback, permissions and public-OFF/paid-HOLD protections preserved.
+
 ## 2026-10-15 — Bounded STV maintenance, four genuine reviews
 
 - Resumed verified main23d4fd0e / accepted production53c81f44. Owner requested continued work with careful usage. One limited source-maintenance pass, no runtime/design changes or duplicate queues.
@@ -6,7 +13,7 @@
 - STV copyright/link policy re-read: links generally allowed in a separate window; copyright reserved. Existing exact LINK_ONLY/EXTERNAL targets, visible named attribution, separate-window behavior and Watch/featured holds retained. No source media embedded, hotlinked, copied or reused as covers.
 - ZERO new places. Snapshot2026-10-15T04:08:12.292Z:795 sources/787 catalog places;794 camera-type records/786 distinct camera-type places;69 sources/67 current-eligible places,719 without a current-eligible source. These four renewals maintain coverage; they do not increase today's eligible count. Known inventory gap214/current-eligible gap933 to1,000. Inventory is not current-live coverage.
 - All121 local release smoke tests, catalog metadata, supplemental integrity, expansion integrity, performance and diff checks PASS. Core574,971/575,000; startup159,976/160,000; app99,810/100,000; supplemental465/500. No budget or proof-window increase. No new business/photo/affiliate record. Original design, numbered Atlas, neutral ranking, deployment and rollback protections preserved; public gatesOFF, paid trafficHOLD.
-- Release acceptance pending exact-SHA CI and served verification; this entry records actual local/source evidence only.
+- Release acceptance completed; exact-SHA CI, served and deployed-browser results are recorded above.
 
 ## 2026-10-15 — Antarctic maintenance release accepted
 
