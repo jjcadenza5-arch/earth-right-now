@@ -1,10 +1,11 @@
+import {readSearchSupplemental} from "./read-search-supplemental.mjs";
 import {readFile} from "node:fs/promises";
 import {ageHours as sourceAgeHours,recencyState,verificationWindowHours} from "../src/source-recency.js";
 import {recencyProviderDebt} from "../src/recency-provider-debt.js";
 import {cameraCoverage} from "./camera-coverage.mjs";
 
 const rows=JSON.parse(await readFile(new URL("../data/sources.json",import.meta.url),"utf8"));
-const supplemental=JSON.parse(await readFile(new URL("../data/search-supplemental.json",import.meta.url),"utf8"));
+const supplemental=readSearchSupplemental();
 const now=new Date();
 const stateOf=s=>recencyState(s,{now});
 const current=rows.filter(s=>stateOf(s)==="CURRENT_CHECK");

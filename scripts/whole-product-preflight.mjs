@@ -13,7 +13,7 @@ for(const fn of ["function search(","function renderMap(","function renderLocalE
 must(index.includes("src/travel-planning-client.js")&&app.includes("const TP=globalThis.ERNTravelPlanning"),"travel planning helper is not wired before app runtime");
 must(destinationBuilder.includes("src/commercial-attribution-runtime.js")&&destinationBuilder.includes("data-offer-id="),"crawlable destination planning links are not wired to commercial attribution telemetry");
 const commercialRuntime=read("src/commercial-attribution-runtime.js");
-must(commercialRuntime.includes('"/data/travel-offers.json"')&&commercialRuntime.includes('"/data/affiliate-partners.json"')&&commercialRuntime.includes('"/data/search-supplemental.json"'),"commercial attribution runtime must use root-relative data paths on destination routes");
+must(commercialRuntime.includes('"/data/travel-offers.json"')&&commercialRuntime.includes('"/data/affiliate-partners.json"')&&commercialRuntime.includes('m.loadSupplemental(fetch,"/data/")'),"commercial attribution runtime must use root-relative data paths on destination routes");
 must(!/Real conditions/i.test(index),"Homepage must not imply independent real-condition telemetry while public context is OFF");
 must(app.includes("guidePlaceMatches(")&&app.includes('params.get("guide")'),"ERN Guide place/deep-link routing missing");
 must(app.includes("return dc().filter(guideEligible).filter(s=>{const hay=sst(s);")&&app.includes('items:dc().filter(guideEligible).filter(s=>localPlaceSignals(s).worth)'),"ERN Guide still contains core-only discovery paths");

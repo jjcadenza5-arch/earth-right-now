@@ -1,8 +1,9 @@
+import {readSearchSupplemental} from "./read-search-supplemental.mjs";
 import {readFile} from "node:fs/promises";
 import {commercialInventoryStatus} from "../src/commercial-inventory-status.js";
 const read=async url=>JSON.parse(await readFile(url,"utf8"));
 const coreSources=await read(new URL("../data/sources.json",import.meta.url));
-const supplementalSources=await read(new URL("../data/search-supplemental.json",import.meta.url));
+const supplementalSources=readSearchSupplemental();
 const sources=[...(Array.isArray(coreSources)?coreSources:[]),...(Array.isArray(supplementalSources)?supplementalSources:[])];
 const partners=await read(new URL("../data/affiliate-partners.json",import.meta.url));
 const offers=await read(new URL("../data/travel-offers.json",import.meta.url));

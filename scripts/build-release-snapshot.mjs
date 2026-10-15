@@ -45,6 +45,8 @@ await cp(new URL("../src/for-places-page.js",import.meta.url),new URL("src/for-p
 await mkdir(new URL("data/",dist),{recursive:true});
 await cp(new URL("../data/sources.json",import.meta.url),new URL("data/sources.json",dist));
 await cp(new URL("../data/search-supplemental.json",import.meta.url),new URL("data/search-supplemental.json",dist));
+await cp(new URL("../data/search-supplemental-2.json",import.meta.url),new URL("data/search-supplemental-2.json",dist));
+await cp(new URL("../src/search-extra-catalog.js",import.meta.url),new URL("src/search-extra-catalog.js",dist));
 await cp(new URL("../data/place-search-aliases.json",import.meta.url),new URL("data/place-search-aliases.json",dist));
 await cp(new URL("../data/local-directory.json",import.meta.url),new URL("data/local-directory.json",dist));
 await cp(new URL("../data/local-directory-supplemental.json",import.meta.url),new URL("data/local-directory-supplemental.json",dist));

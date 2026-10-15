@@ -1561,6 +1561,31 @@
       "currentObservedState": "Interactive browser review completed 2026-10-15T05:54:30Z. Official page names Beacon Hill Signal Station. Actual second primary camera decoded2048x1536, visually inspected harbour water, rocky coast and headlands; burned-in15.10.2026 18:44:58 New Zealand local. Four angles count as one entrance place. First mostly-foliage angle is not the qualifying scene; August page-update date does not date the images.",
       "why": "New destination with useful independently decoded and dated current imagery. Source-led coverage expansion, not a claim of repeated measured visitor demand.",
       "next": "Maintain source capture dates and attribution. No navigation/safety clearance inferred; no source media reuse."
+    },
+    {
+      "id": "appenzell-tourism-webcam-network-permission-hold",
+      "priority": "P1_CAMERA_COVERAGE",
+      "country": "Switzerland",
+      "provider": "Appenzellerland Tourismus AI / independent camera operators",
+      "candidateType": "OFFICIAL_TOURISM_CAMERA_NETWORK",
+      "state": "HOLD_WRITTEN_LINK_PERMISSION_REQUIRED",
+      "reviewedAt": "2026-10-15T08:00:10.642988+00:00",
+      "evidenceUrls": [
+        "https://www.appenzell.ch/en/footer/news/webcams.html",
+        "https://www.appenzell.ch/en/meta/disclaimer.html"
+      ],
+      "observedTargets": [
+        "Appenzell",
+        "Gonten",
+        "Ebenalp",
+        "Hoher Kasten",
+        "Kronberg",
+        "Säntisgipfel",
+        "Ruhesitz"
+      ],
+      "why": "Official disclaimer expressly requires prior written consent for linking/use for public or commercial purposes. No public appenzell.ch camera handoffs or source records admitted. Camera previews or accessible third-party embeds do not override publisher terms.",
+      "boundedObservations": "Hoher Kasten3072x1728 refreshed Rheintal scene decoded, separate Feratel09:30 dated clip not accepted as continuous live proof. Ruhesitz1920x1080 valley scene and15October09:53:17CEST camera clock observed; hourly update text alone is not freshness proof. Kronberg summit/base and Ebenalp Roundshot exact targets resolved, but independent operator linking/media permissions and full current scene review not completed. No source check date created or renewed.",
+      "next": "Hold tourism-page handoffs until written link permission or changed terms. Independently published operator sources may be assessed only on their own permission/currentness evidence; no workaround or inherited permission. No routine retry loop."
     }
   ],
   "guardrails": {

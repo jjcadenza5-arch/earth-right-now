@@ -1,3 +1,4 @@
+import {SUPPLEMENTAL_FILES,mergeSupplementalParts} from "../src/search-extra-catalog.js";
 import {currentSource} from "../src/discovery-eligibility.js";
 import {embedPlaybackProofCurrent} from "../src/playback-proof.js";
 // Mount St Helens current-image promotion 2026-10-08
@@ -34,7 +35,7 @@ if(analyticsHealth?.ok!==true||analyticsHealth?.analyticsEnabled!==true||analyti
 for(const marker of ["function buildWatch(sources){","className=\"c\"","n=new Set(nearby.map(x=>x.s.placeId||x.s.id))","!n.has(x.placeId||x.id)","setTimeout(()=>{loadSearchExtra(initialQ);fetch(","const dc=()=>state.sources.concat(state.sx),ds=s=>","renderDiscoveryProof();renderWander();renderLocalEarth();renderQuickSearches();renderSaved()","note=$(\"#atlasBeyondNote\"),cat=dc()","let pool=placeMatches.length?[...placeMatches]:dc().filter(guideEligible)","return dc().filter(guideEligible).filter(s=>{const hay=sst(s);","[\"museaum\",\"museum\"]","No current match yet.","globalThis.ERN_EVENT?.(\"share_clicked\",{placeId:s.placeId||s.id})"])if(!app.includes(marker))throw new Error("production app missing reality-sync marker: "+marker);
 if(!liteCss.includes("width:auto!important")||!liteCss.includes("max-width:100%!important")||!liteCss.includes("max-height:100%!important"))throw new Error("production current-image viewer lost whole-frame fit contract");
 const core=await (await get(base+"/data/sources.json")).json();
-const extra=await (await get(base+"/data/search-supplemental.json")).json();
+const extra=mergeSupplementalParts(await Promise.all(SUPPLEMENTAL_FILES.map(async file=>(await get(base+"/data/"+file)).json())));
 if(!Array.isArray(core)||!Array.isArray(extra))throw new Error("production catalogs are not arrays");
 if(extra.length<400)throw new Error("production supplemental catalog unexpectedly small: "+extra.length);
 const all=[...core,...extra],ids=new Set(all.map(x=>x?.id).filter(Boolean));

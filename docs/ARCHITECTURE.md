@@ -31,3 +31,9 @@ Generative Guide flow:
 7. Fall back to the deterministic Guide on transport, model, truth, safety or cost failure.
 
 Model/API credentials must remain server-side. The generative layer stays disabled until its production deployment evidence, privacy notice, observability and hard cost ceiling all pass. Local code, test adapters and browser configuration never count as activation evidence.
+
+### Bounded lazy camera catalog parts (2026-10-15)
+
+`src/search-extra-catalog.js` registers two supplemental JSON parts, each limited to 500 records. This module is imported dynamically by Search after the existing initial render and by commercial attribution only when needed; it is not an eager homepage dependency. `scripts/read-search-supplemental.mjs` reads the same registered parts for destination builds, recency/operations, demand triage, source maintenance and commercial audits. Add new reviewed sources to a part with capacity, preserving unique source/place identities and existing truth/permission/currentness rules. Never increase a part limit or core/startup byte budget to fit expansion.
+
+Both files and the lazy module are included in release artifacts and manifest hashes. The supplemental validator rejects cross-part duplicate IDs, over-limit parts and existing source-policy violations. A transport failure can retain successfully loaded parts; missing evidence cannot create current coverage. Counts must combine both parts and core, then deduplicate place IDs. Moving a record between files does not renew verification or add a place. The 1,000-place goal still requires independently verified camera coverage.

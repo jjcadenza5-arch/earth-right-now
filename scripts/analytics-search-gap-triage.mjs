@@ -1,3 +1,4 @@
+import {readSearchSupplemental} from "./read-search-supplemental.mjs";
 import {visitorDemandTriage} from "../src/visitor-demand-triage.js";
 import fs from "node:fs";
 import {searchEarth} from "../src/search-engine.js";
@@ -6,7 +7,7 @@ const analyticsPath=process.argv[2];
 if(!analyticsPath)throw new Error("usage: analytics-search-gap-triage <analytics.json>");
 const analytics=JSON.parse(fs.readFileSync(analyticsPath,"utf8"));
 const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
-const supplemental=JSON.parse(fs.readFileSync("data/search-supplemental.json","utf8"));
+const supplemental=readSearchSupplemental();
 const aliases=JSON.parse(fs.readFileSync("data/place-search-aliases.json","utf8"))?.places||{};
 const pool=[...sources,...supplemental].map(s=>({...s,aliases:[...(s.aliases||[]),...(aliases[s.placeId||s.id]||[])]}));
 const rawGaps=(analytics.searchGaps||[]).map(g=>({query:String(g.value||"").trim(),count:Number(g.count)||0}));

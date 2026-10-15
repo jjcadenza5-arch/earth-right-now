@@ -1,9 +1,10 @@
+import {readSearchSupplemental} from "./read-search-supplemental.mjs";
 import fs from "node:fs";
 import {affiliatePartner,activeAffiliatePartner} from "../src/affiliate-partners.js";
 import {currentTravelOffer} from "../src/travel-offer-verification.js";
 
 const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
-const partners=read("data/affiliate-partners.json"),offers=read("data/travel-offers.json"),coreSources=read("data/sources.json"),supplementalSources=read("data/search-supplemental.json"),platforms=read("data/affiliate-platform-research.json"),opportunities=read("data/commercial-link-opportunities.json"),business=read("data/business-readiness.json"),activation=read("data/affiliate-activation.json"),revenueReadiness=read("data/affiliate-revenue-readiness.json"),index=fs.readFileSync("index.html","utf8"),destinationBuilder=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
+const partners=read("data/affiliate-partners.json"),offers=read("data/travel-offers.json"),coreSources=read("data/sources.json"),supplementalSources=readSearchSupplemental(),platforms=read("data/affiliate-platform-research.json"),opportunities=read("data/commercial-link-opportunities.json"),business=read("data/business-readiness.json"),activation=read("data/affiliate-activation.json"),revenueReadiness=read("data/affiliate-revenue-readiness.json"),index=fs.readFileSync("index.html","utf8"),destinationBuilder=fs.readFileSync("scripts/build-destination-pages.mjs","utf8");
 const now=Date.now(),fail=[],warn=[],partnerMap=new Map();
 for(const raw of partners){
   const p=affiliatePartner(raw);

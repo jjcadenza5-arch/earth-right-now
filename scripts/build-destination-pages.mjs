@@ -1,3 +1,4 @@
+import {readSearchSupplemental} from "./read-search-supplemental.mjs";
 import { approvedPhotoLicense } from "../src/editorial-card-photos.js";
 import { collectionShareScript } from "./collection-share-runtime.mjs";
 import { placeDirectoryRuntime } from "./place-directory-runtime.mjs";
@@ -14,7 +15,7 @@ import fs from "node:fs";
 
 const discoverDefinitions=EDITORIAL_COLLECTIONS;
 const coreSources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
-const searchSupplemental=JSON.parse(fs.readFileSync("data/search-supplemental.json","utf8"));
+const searchSupplemental=readSearchSupplemental();
 const placeSearchAliases=JSON.parse(fs.readFileSync("data/place-search-aliases.json","utf8"));
 const placeAliases=id=>Array.isArray(placeSearchAliases?.places?.[id])?placeSearchAliases.places[id]:(securityHolds.find(s=>s.placeId===id)?.searchAliases||[]);
 const securityHolds=fs.existsSync("data/source-security-holds.json")?JSON.parse(fs.readFileSync("data/source-security-holds.json","utf8")).filter(s=>s.sourceLinkHold===true&&s.health==="DEGRADED"):[];

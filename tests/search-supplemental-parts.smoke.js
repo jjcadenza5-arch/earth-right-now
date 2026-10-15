@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {mkdtempSync,mkdirSync,writeFileSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {mergeSupplementalParts,loadSearchExtras,SUPPLEMENTAL_FILES} from '../src/search-extra-catalog.js';
+import {readSearchSupplemental} from '../scripts/read-search-supplemental.mjs';
+const row=id=>({id,title:id});
+assert.equal(mergeSupplementalParts([Array.from({length:500},(_,i)=>row('a'+i)),[row('second')]]).length,501);
+assert.throws(()=>mergeSupplementalParts([Array.from({length:501},(_,i)=>row('a'+i)),[]]));
+assert.throws(()=>mergeSupplementalParts([[row('same')],[row('same')]]));
+assert.throws(()=>mergeSupplementalParts([{},[]]));
+const calls=[];
+const fake=async path=>{calls.push(path);return {ok:true,json:async()=>path.includes('aliases')?{places:{second:['alternate']}}:path.endsWith('-2.json')?[row('second')]:[row('first')]};};
+const [rows,aliases]=await loadSearchExtras(fake);assert.deepEqual(rows.map(x=>x.id),['first','second']);assert.deepEqual(aliases.places.second,['alternate']);assert.equal(calls.length,3);
+const [partial]=await loadSearchExtras(async path=>{if(path.endsWith('-2.json'))throw Error('network unavailable');return fake(path)});assert.deepEqual(partial.map(x=>x.id),['first']);
+const root=mkdtempSync(join(tmpdir(),'ern-catalog-parts-'));
+try{mkdirSync(join(root,'data'));SUPPLEMENTAL_FILES.forEach((file,i)=>writeFileSync(join(root,'data',file),JSON.stringify([row('part'+i)])));assert.deepEqual(readSearchSupplemental(join(root,'data')).map(s=>s.id),['part0','part1']);}finally{rmSync(root,{recursive:true,force:true});}
+const app=fs.readFileSync('src/app-lite.js','utf8');assert(app.includes('import("./search-extra-catalog.js")'));assert(!app.includes('from "./search-extra-catalog.js"'));assert(!fs.readFileSync('index.html','utf8').includes('search-extra-catalog.js'));
+console.log('Bounded catalog parts, cross-part identities, alias loading, partial network failure and lazy-only loading passed');

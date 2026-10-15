@@ -1,6 +1,7 @@
+import {readSearchSupplemental,readSupplementalParts} from "./read-search-supplemental.mjs";
 import fs from "node:fs";
 const core=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
-const extra=JSON.parse(fs.readFileSync("data/search-supplemental.json","utf8"));
+const parts=readSupplementalParts(),extra=readSearchSupplemental();
 const fail=[],must=(ok,msg)=>{if(!ok)fail.push(msg)};
 must(Array.isArray(extra),"supplemental catalog must be an array");
 const coreIds=new Set(core.map(x=>x.id)),corePlaces=new Set(core.map(x=>x.placeId||x.id)),ids=new Set(),places=new Set();
@@ -22,6 +23,6 @@ for(const s of extra){
   must(!!String(s.attribution||"").trim()&&!!String(s.rightsBasis||"").trim()&&!!String(s.freshnessEvidence||"").trim()&&Number.isFinite(Date.parse(s.lastSuccessfulCheck)),"supplemental alternative requires attributed permission and successful-view evidence: "+s.id);
  }else must(!s.alternateOfSourceId,"supplemental alternative anchor must share an existing core place: "+s.id);
 }
-must(extra.length<=500,"supplemental catalog exceeds 500 rows");
+must(parts.every(p=>p.length<=500),"supplemental catalog part exceeds 500 rows");
 if(fail.length){console.error(JSON.stringify({ok:false,fail,count:extra.length},null,2));process.exit(1)}
-console.log(JSON.stringify({ok:true,count:extra.length,distinctPlaces:places.size,corePlaces:corePlaces.size,combinedSearchablePlaces:new Set([...corePlaces,...places]).size,existingPlaceAlternates:extra.filter(s=>corePlaces.has(s.placeId||s.id)).length,watchEarthImpact:0,firstPaintImpact:"lazy-on-search"},null,2));
+console.log(JSON.stringify({ok:true,partCounts:parts.map(p=>p.length),perPartLimit:500,count:extra.length,distinctPlaces:places.size,corePlaces:corePlaces.size,combinedSearchablePlaces:new Set([...corePlaces,...places]).size,existingPlaceAlternates:extra.filter(s=>corePlaces.has(s.placeId||s.id)).length,watchEarthImpact:0,firstPaintImpact:"lazy-on-search"},null,2));

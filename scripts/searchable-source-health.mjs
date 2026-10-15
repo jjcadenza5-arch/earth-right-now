@@ -1,3 +1,4 @@
+import {readSearchSupplemental} from "./read-search-supplemental.mjs";
 import {readFile,writeFile,mkdir} from "node:fs/promises";
 import {runSearchableSourceHealth} from "../src/searchable-source-health.js";
 
@@ -6,7 +7,7 @@ const read=async p=>JSON.parse(await readFile(p,"utf8"));
 const optional=async p=>{try{return await read(p)}catch(e){if(e?.code==="ENOENT"||e instanceof SyntaxError)return{};throw e}};
 const [core,supplemental,previousState]=await Promise.all([
   read(new URL("../data/sources.json",import.meta.url)),
-  read(new URL("../data/search-supplemental.json",import.meta.url)),
+  Promise.resolve(readSearchSupplemental()),
   optional(statePath)
 ]);
 const report=await runSearchableSourceHealth(core,supplemental,{previousState,now:new Date(),cycleDays:7,concurrency:6,timeoutMs:7000});

@@ -1,9 +1,10 @@
+import {readSearchSupplemental} from "./read-search-supplemental.mjs";
 import fs from "node:fs";
 import {searchEarth} from "../src/search-engine.js";
 import {foldEarthSearchText,interpretEarthIntent} from "../src/earth-intent.js";
 
 const core=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
-const supplemental=JSON.parse(fs.readFileSync("data/search-supplemental.json","utf8"));
+const supplemental=readSearchSupplemental();
 const aliasDoc=JSON.parse(fs.readFileSync("data/place-search-aliases.json","utf8"));
 const placeAliases=aliasDoc?.places&&typeof aliasDoc.places==="object"?aliasDoc.places:{};
 const rows=[...core,...supplemental].map(s=>{const seen=new Set();return{...s,aliases:[...(s.aliases||[]),...(placeAliases[s.placeId||s.id]||[])].filter(x=>{const n=foldEarthSearchText(x);if(!n||seen.has(n))return false;seen.add(n);return true})}});

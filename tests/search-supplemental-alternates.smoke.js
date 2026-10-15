@@ -9,7 +9,7 @@ const script=fileURLToPath(new URL('../scripts/search-supplemental-status.mjs',i
 const core={id:'roof',placeId:'town',title:'Town',sourceUrl:'https://institution.example/camera'};
 const alternative={id:'port',placeId:'town',title:'Port',sourceUrl:'https://port.example/panorama',alternateOfSourceId:'roof',health:'HEALTHY',featuredHold:true,watchHold:true,permission:'LINK_ONLY',truth:'LIVE_IMAGE',attribution:'Port camera',rightsBasis:'Official external handoff only',freshnessEvidence:'Dated rendered capture inspected',lastSuccessfulCheck:'2026-10-14T03:32:33Z'};
 try{
- mkdirSync(join(root,'data'));
+ mkdirSync(join(root,'data'));writeFileSync(join(root,'data/search-supplemental-2.json'),'[]');
  const run=extra=>{writeFileSync(join(root,'data/sources.json'),JSON.stringify([core]));writeFileSync(join(root,'data/search-supplemental.json'),JSON.stringify(extra));return spawnSync(process.execPath,[script],{cwd:root,encoding:'utf8'});};
  const good=run([alternative]);assert.equal(good.status,0,good.stderr);const report=JSON.parse(good.stdout);assert.equal(report.combinedSearchablePlaces,1);assert.equal(report.existingPlaceAlternates,1);
  for(const patch of [{alternateOfSourceId:undefined},{alternateOfSourceId:'other'},{sourceUrl:core.sourceUrl},{placeId:'elsewhere'},{truth:'PREVIEW'},{freshnessEvidence:''},{permission:'EMBED_ALLOWED'},{id:'roof'}]){

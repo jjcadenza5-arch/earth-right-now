@@ -1,6 +1,7 @@
+import {readSearchSupplemental} from "./read-search-supplemental.mjs";
 import fs from "node:fs";
 const core=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
-const supplemental=JSON.parse(fs.readFileSync("data/search-supplemental.json","utf8"));
+const supplemental=readSearchSupplemental();
 const doc=JSON.parse(fs.readFileSync("data/place-search-aliases.json","utf8"));
 const ids=new Set([...core,...supplemental].map(s=>String(s.placeId||s.id||"")).filter(Boolean));
 const issues=[],rows=doc?.places&&typeof doc.places==="object"?doc.places:{};
