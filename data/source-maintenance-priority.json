@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T00:54:22.027617+00:00",
+  "generatedAt": "2026-10-15T02:35:53Z",
   "healthyDistinctBaseline": 751,
   "strategy": "Camera-first maintenance and evidence-gated expansion. Protect genuine usable coverage; distinguish catalog inventory from current eligibility and never inflate counts mechanically.",
   "items": [
@@ -509,6 +509,54 @@
       "lastReviewAt": "2026-10-15T00:53:27Z",
       "action": "MAINTAIN_EXISTING_APPROVED_EMBED_WITH_REAL_DEPLOYED_PLAYBACK_REVIEW",
       "reviewOutcome": "Existing deployed ERN review batch ed4f415dfb35f337. Exact provider iframe https://webcam-lapalma.de/embed/vulkan/. Decoded 640x360, readyState4, unpaused, time8.737248 to16.363509; visible town lights/night skyline. Visible 15Oct2026 ~01:52 Atlantic/Canary burned-in clock advanced during review, matching current local date/time. Original source-specific embed permission and required visible webcam-lapalma.de attribution retained; no new rights inference. Actual interactive deployed-browser evidence, not owner-reported acceptance."
+    },
+    {
+      "id": "antarctica-casey-station",
+      "placeId": "antarctica-casey-station",
+      "title": "Casey Research Station — Antarctica",
+      "country": "Antarctica",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "lastReviewAt": "2026-10-15T02:35:53Z",
+      "action": "MAINTAIN_LINK_ONLY_REFRESHED_IMAGE",
+      "reviewOutcome": "704x564 actual decoded snowy station/red buildings, dated15Oct2026 10:27 CAST, file C2610150227s.jpg (02:27UTC).",
+      "reviewContext": "Interactive official-source browser review. AAP FAQ explicitly describes three-minute stills and time-lapse assembly, not live video; actual current image kept distinct from time-lapse/skycam and sidebar preview photographs. Existing public page links only, attribution retained; no media copied/hotlinked/embedded or commercial reuse permission inferred. Copyright page reserves commercialisation/retransmission and traffic-building uses; any future media/marketing use stays permission-gated. Camera view does not grant station access."
+    },
+    {
+      "id": "antarctica-davis-station",
+      "placeId": "antarctica-davis-station",
+      "title": "Davis Research Station — Antarctica",
+      "country": "Antarctica",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "lastReviewAt": "2026-10-15T02:35:53Z",
+      "action": "MAINTAIN_LINK_ONLY_REFRESHED_IMAGE",
+      "reviewOutcome": "704x564 actual decoded green station building, snow and coastal landscape, dated15Oct2026 09:25 DAVT, file D2610150225s.jpg (02:25UTC).",
+      "reviewContext": "Interactive official-source browser review. AAP FAQ explicitly describes three-minute stills and time-lapse assembly, not live video; actual current image kept distinct from time-lapse/skycam and sidebar preview photographs. Existing public page links only, attribution retained; no media copied/hotlinked/embedded or commercial reuse permission inferred. Copyright page reserves commercialisation/retransmission and traffic-building uses; any future media/marketing use stays permission-gated. Camera view does not grant station access."
+    },
+    {
+      "id": "antarctica-mawson-station",
+      "placeId": "antarctica-mawson-station",
+      "title": "Mawson Research Station — Antarctica",
+      "country": "Antarctica",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "lastReviewAt": "2026-10-15T02:35:53Z",
+      "action": "MAINTAIN_LINK_ONLY_REFRESHED_IMAGE",
+      "reviewOutcome": "704x564 actual decoded station, rocky foreground and ice-covered bay, dated15Oct2026 07:25 MAWT, file M2610150225s.jpg (02:25UTC). Asynchronous image initially blank, then actually decoded and inspected.",
+      "reviewContext": "Interactive official-source browser review. AAP FAQ explicitly describes three-minute stills and time-lapse assembly, not live video; actual current image kept distinct from time-lapse/skycam and sidebar preview photographs. Existing public page links only, attribution retained; no media copied/hotlinked/embedded or commercial reuse permission inferred. Copyright page reserves commercialisation/retransmission and traffic-building uses; any future media/marketing use stays permission-gated. Camera view does not grant station access."
+    },
+    {
+      "id": "antarctica-macquarie-island",
+      "placeId": "antarctica-macquarie-island",
+      "title": "Macquarie Island — Sub-Antarctic Station",
+      "country": "Australia",
+      "health": "HEALTHY",
+      "truth": "LIVE_IMAGE",
+      "lastReviewAt": "2026-10-15T02:35:53Z",
+      "action": "HOLD_RENEWAL_UNTIL_NEW_CURRENT_CAPTURE",
+      "reviewOutcome": "Official latest station image caption9Oct2026 09:42 local, not current15October; last successful source date left unchanged. No outage or fresh capture inferred from page update time.",
+      "reviewContext": "Interactive official-source browser review. AAP FAQ explicitly describes three-minute stills and time-lapse assembly, not live video; actual current image kept distinct from time-lapse/skycam and sidebar preview photographs. Existing public page links only, attribution retained; no media copied/hotlinked/embedded or commercial reuse permission inferred. Copyright page reserves commercialisation/retransmission and traffic-building uses; any future media/marketing use stays permission-gated. Camera view does not grant station access."
     }
   ],
   "currentReality": {

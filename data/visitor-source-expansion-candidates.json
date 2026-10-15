@@ -1492,6 +1492,19 @@
       ],
       "why": "Six individually decoded, dated scenes. Lake McDonald lakeshore, Apgar summit, Logan Pass and Two Medicine are distinct visitor sites, not multiple angles at one place. All extra Logan/McDonald/Two Medicine angles excluded from counts. Existing broad Glacier and Many Glacier records not re-added or renewed. Source-led expansion, not a claim of repeated measured demand.",
       "next": "Maintain actual dated scene evidence, not Active badge alone. St. Mary target AE7C9B53-910E-6D3A-D6133266826C6977 is HOLD: official page says inactive/wind turned camera upside down despite Active badge. Manzanita Lake HOLD: official lightning damage/indefinite offline notice. Canadian Glacier collection unavailable notices remain research-only, not usable cameras. Mineral King legacy operator says migrated to mkwebcam.com; unresolved current target on hold after bounded pass, no source admitted. Revisit holds on new evidence; use existing aggregate demand and maintenance workflows."
+    },
+    {
+      "id": "nagano-first-party-camera-bounded-pass",
+      "priority": "P1",
+      "state": "HOLD_NO_DECODED_VIDEO_AND_DEEP_LINK_RESTRICTION",
+      "reviewedAt": "2026-10-15T02:35:53Z",
+      "evidenceUrls": [
+        "https://visitmatsumoto.com/livecamera/",
+        "https://www.tvm.ne.jp/livecamera/",
+        "https://www.tvm.ne.jp/siteinfo/"
+      ],
+      "why": "Exact official Matsumoto Castle3pfpRzVgtoE and UtsukushigaharaW7kZdoqGfTg players were clicked, then remained0x0/readyState0/time0. No playable-camera admission from live headings. Three castle angles would count as one place if verified. TV Matsumoto policy explicitly asks for homepage links and rejects framing; no camera-page deep link or image reuse admitted. No network-wide outage claim.",
+      "next": "Hold after bounded pass; revisit on decoded current source playback or an approved exact handoff. Reuse existing demand/maintenance workflow, no duplicate queue or routine retry."
     }
   ],
   "guardrails": {
