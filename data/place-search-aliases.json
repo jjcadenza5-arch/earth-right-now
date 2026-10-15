@@ -1002,6 +1002,52 @@
       "Lake Michigan Chicago",
       "Windy City",
       "Chicago city view"
+    ],
+    "us-glacier-two-medicine": [
+      "Two Medicine",
+      "Sinopah Mountain"
+    ],
+    "us-glacier-apgar-lookout": [
+      "Apgar Mountain",
+      "Apgar Lookout"
+    ],
+    "us-lassen-kohm-yah-mah-nee": [
+      "Lassen Volcanic National Park",
+      "Kohm Yah mah nee"
+    ],
+    "us-sequoia-giant-forest": [
+      "Giant Forest",
+      "Sequoia National Park"
+    ],
+    "nz-nelson-harbour": [
+      "Nelson Harbour",
+      "Nelson Harbor",
+      "Whakatū",
+      "Tasman Bay",
+      "Haulashore Island"
+    ],
+    "nz-wellington-harbour-entrance": [
+      "Wellington Harbour",
+      "Wellington Harbor",
+      "Beacon Hill",
+      "Cook Strait",
+      "Te Whanganui-a-Tara"
+    ],
+    "spain-vallter-les-marmotes": [
+      "Vallter",
+      "Vallter 2000",
+      "Les Marmotes",
+      "Pla de Morens",
+      "Setcases",
+      "Camprodon"
+    ],
+    "spain-boi-taull-pla-vaques": [
+      "Boí Taüll",
+      "Boi Taull",
+      "Pla de Vaques",
+      "Junior chairlift",
+      "Vall de Boí",
+      "Alta Ribagorça"
     ]
   }
 }

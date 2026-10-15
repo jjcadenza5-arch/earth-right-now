@@ -1,3 +1,11 @@
+## 2026-10-15 — Capacity release held before deploy; canonical alias coverage repaired
+
+- Candidate39878aa593957d4da3e355a4901e0dc556d85be8: Syntax38703317512 SUCCESS, Operations38703317482 SUCCESS. Pages38703317582 passed122 release tests and build/preflights, then FAILED AI-search readiness before deployment. Accepted production remaineda88702cb; no failed candidate promoted.
+- Failure was PLACE_ALIAS_INDEXABLE_COVERAGE_TOO_SMALL:7 current indexable pages represented in canonical alias sidecar versus unchanged minimum10 as older evidence aged. All sampled page attribution, schema, source type, playback, timestamp, location, related links and policy checks passed. No catalog-part loading or source-currentness failure.
+- Registered existing already source-backed aliases for the eight moved destinations in data/place-search-aliases.json. These names already exist on their reviewed source records; no invented local-language aliases, source dates or camera count. This strengthens canonical search/SEO metadata coverage for the recent destinations. No alias floor reduced, source renewed or stale page forced indexable.
+- Rebuilt artifact: AI-search readiness PASS with15 current alias pages and58 indexable destinations, no issues; SEO indexing audit PASS. Focused alias and AI-readiness smoke tests PASS; performance unchanged. Full122 release suite previously passed locally and on first candidate CI; final corrected-SHA CI must pass before acceptance.
+- One corrective candidate is justified by the observed release gate. No further camera research, interface redesign, feature activation or performance cap change.
+
 ## 2026-10-15 — Bounded lazy catalog capacity for the 1,000-place goal
 
 - Resumed verified GitHub maind7a3c001 /accepted productiona88702cb. Existing469/500 supplemental rows left31 slots, insufficient for the remaining210 camera-backed places. Implemented TWO explicitly registered lazy catalog parts with an unchanged500-record limit PER PART. Fixed two-file registration, not an arbitrary remote manifest or unlimited loader. Core575KB/startup160KB/app100KB caps unchanged. No public UI/design change.
