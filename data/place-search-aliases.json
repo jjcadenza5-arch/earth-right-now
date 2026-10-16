@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T06:06:36.990366Z",
+  "updatedAt": "2026-10-16T08:40:51.024000Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -1145,6 +1145,24 @@
       "Karakunidake",
       "霧島山",
       "韓国岳"
+    ],
+    "swiss-ardez-village": [
+      "Ardez",
+      "Ardez Engadin",
+      "Ardez Lower Engadine",
+      "Ardez Unterengadin"
+    ],
+    "swiss-sent-village": [
+      "Sent",
+      "Sent Engadin",
+      "Sent Lower Engadine",
+      "Sent Unterengadin"
+    ],
+    "swiss-ftan-village": [
+      "Ftan",
+      "Ftan Engadin",
+      "Ftan Lower Engadine",
+      "Ftan Unterengadin"
     ]
   }
 }

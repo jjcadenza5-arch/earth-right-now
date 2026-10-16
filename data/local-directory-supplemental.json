@@ -11308,5 +11308,77 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.data.jma.go.jp/vois/data/report/activity_info/505.html"
+  },
+  {
+    "id": "local-swiss-ardez-village-official-guide",
+    "name": "Ardez — official village visitor guide",
+    "type": "visitor information",
+    "place": "Ardez",
+    "country": "Switzerland",
+    "summary": "Plan a village walk among Engadin houses and sgraffito-decorated facades, with the Steinsberg ruins above Ardez. Check transport, route conditions and local access separately; a broad panorama does not establish that a path or building is open.",
+    "url": "https://www.engadin.com/de/das-unterengadin/ferienorte/ardez",
+    "verifiedAt": "2026-10-16T08:40:51.024000Z",
+    "status": "APPROVED",
+    "placeId": "swiss-ardez-village",
+    "tags": [
+      "Ardez",
+      "Ardez Engadin",
+      "Ardez Lower Engadine",
+      "Ardez Unterengadin",
+      "visitor information",
+      "village walk"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.engadin.com/de/das-unterengadin/ferienorte/ardez"
+  },
+  {
+    "id": "local-swiss-sent-village-official-guide",
+    "name": "Sent — official village visitor guide",
+    "type": "visitor information",
+    "place": "Sent",
+    "country": "Switzerland",
+    "summary": "Explore the Romansh village, local crafts and walks toward the surrounding valleys. Sur En near Sent is a distinct lower location with seasonal recreation; the village camera does not show that every trail, rope park or winter ice trail is operating. Check current access and operator information.",
+    "url": "https://www.engadin.com/en/das-unterengadin/ferienorte/sent",
+    "verifiedAt": "2026-10-16T08:40:51.024000Z",
+    "status": "APPROVED",
+    "placeId": "swiss-sent-village",
+    "tags": [
+      "Sent",
+      "Sent Engadin",
+      "Sent Lower Engadine",
+      "Sent Unterengadin",
+      "visitor information",
+      "village walk"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.engadin.com/en/das-unterengadin/ferienorte/sent"
+  },
+  {
+    "id": "local-swiss-ftan-village-official-guide",
+    "name": "Ftan — official village visitor guide",
+    "type": "visitor information",
+    "place": "Ftan",
+    "country": "Switzerland",
+    "summary": "Use the official village guide for walking ideas toward Val Tasna and Alp Laret, village maps and seasonal activities. Confirm route, lake and transport conditions separately; a sunny panorama does not confirm summer facilities, cross-country trails or mountain services are open.",
+    "url": "https://www.engadin.com/en/the-lower-engadin/holiday-resorts/ftan",
+    "verifiedAt": "2026-10-16T08:40:51.024000Z",
+    "status": "APPROVED",
+    "placeId": "swiss-ftan-village",
+    "tags": [
+      "Ftan",
+      "Ftan Engadin",
+      "Ftan Lower Engadine",
+      "Ftan Unterengadin",
+      "visitor information",
+      "village walk"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.engadin.com/en/the-lower-engadin/holiday-resorts/ftan"
   }
 ]

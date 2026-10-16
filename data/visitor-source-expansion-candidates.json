@@ -1846,6 +1846,72 @@
       ],
       "why": "Distinct destination camera coverage with individually decoded current dated scenes. Source-led editorial selection, not a claim of measured repeated visitor demand. Camera network angles do not count as separate places.",
       "next": "Maintain seven exact current-image handoffs and attribution. Three weather-limited sources remain research-only on hold; revisit on materially clearer current evidence, no routine retry or new duplicate queue. No camera image reuse or automatic verification renewal."
+    },
+    {
+      "id": "lower-engadin-village-panorama-oct16",
+      "priority": "P1_CAMERA_COVERAGE",
+      "placeGroup": "Ardez / Sent / Ftan",
+      "country": "Switzerland",
+      "provider": "Cumün da Scuol / Engadin Tourism — Roundshot",
+      "candidateType": "OFFICIAL_REFRESHED_PANORAMA_NETWORK",
+      "state": "THREE_DISTINCT_VILLAGES_ADMITTED_LINK_ONLY_WITH_BOUNDED_HOLDS",
+      "reviewedAt": "2026-10-16T08:40:51.024000Z",
+      "evidenceUrls": [
+        "https://www.engadin.com/en/webcams-engadin",
+        "https://www.engadin.com/en/node/2520"
+      ],
+      "reviewedTargets": [
+        {
+          "placeId": "swiss-ardez-village",
+          "sourceId": "swiss-ardez-village-current",
+          "url": "https://engadin.roundshot.com/ardez/",
+          "capture": "16.10.2026 10:30 Europe/Zurich",
+          "decodedCurrentImage": "5267x1024",
+          "scene": "Village roofs, church spire, a hilltop ruined tower, autumn trees and sunlit hillside under clear blue sky.",
+          "guideUrl": "https://www.engadin.com/de/das-unterengadin/ferienorte/ardez"
+        },
+        {
+          "placeId": "swiss-sent-village",
+          "sourceId": "swiss-sent-village-current",
+          "url": "https://engadin.roundshot.com/sent/",
+          "capture": "16.10.2026 10:30 Europe/Zurich",
+          "decodedCurrentImage": "3832x1024",
+          "scene": "Village rooftops, church tower, yellow autumn trees and a mountain wall under clear blue sky.",
+          "guideUrl": "https://www.engadin.com/en/das-unterengadin/ferienorte/sent"
+        },
+        {
+          "placeId": "swiss-ftan-village",
+          "sourceId": "swiss-ftan-village-current",
+          "url": "https://engadin.roundshot.com/ftan/",
+          "capture": "16.10.2026 10:30 Europe/Zurich",
+          "decodedCurrentImage": "5862x1024",
+          "scene": "Church and village houses above green meadows, autumn trees and a broad mountain ridge; some sunlight glare.",
+          "guideUrl": "https://www.engadin.com/en/the-lower-engadin/holiday-resorts/ftan"
+        }
+      ],
+      "holds": [
+        {
+          "id": "tarasp-roundshot",
+          "url": "https://engadin.roundshot.com/tarasp/",
+          "state": "HOLD_PROVIDER_OFFLINE_STALE_CAPTURE",
+          "observation": "Actual viewer explicitly showed KAMERA OFFLINE and a23.09.2026 17:00 capture; sunny scenery was stale, not accepted as current."
+        },
+        {
+          "id": "samedan-engadin-airport",
+          "url": "https://www.engadin-airport.ch/en/webcam/",
+          "state": "HOLD_WRITTEN_LINK_CONSENT_REQUIRED",
+          "rightsUrl": "https://www.engadin-airport.ch/en/data-protection/",
+          "observation": "Terms expressly prohibit linking/public or commercial use without prior written consent. No camera admission or current-view claim; no alternative route used to avoid restriction."
+        },
+        {
+          "id": "davos-official-camera-network",
+          "url": "https://www.davos.ch/en/information/news/livecams",
+          "state": "HOLD_EXACT_CURRENT_VIEW_REVIEW_INCOMPLETE",
+          "observation": "Official network and legal notice reviewed. Initial Feratel player showed10/16/26 10:22AM clip selection; no suitable separately verified refreshed still or continuous live playback completed in this bounded pass. Not a provider outage; no admission or broad live claim."
+        }
+      ],
+      "why": "Distinct village windows support discovery beyond large resorts. Source-led editorial coverage, not claimed repeated measured outside demand. Duplicate Sent entries and multiple rotation angles count as one place.",
+      "next": "Maintain exact link-only views and capture dates. Revisit held candidates only on changed permission/provider state or genuinely new decoded evidence, using this existing queue. No routine retries or duplicate research queue."
     }
   ],
   "guardrails": {
