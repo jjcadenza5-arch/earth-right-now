@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T14:40:45.770400Z",
+  "updatedAt": "2026-10-16T06:06:36.990366Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -1090,6 +1090,63 @@
       "Dinosaur Quarry",
       "Quarry Entrance",
       "Dinosaur West Entrance"
+    ],
+    "japan-mount-fuji": [
+      "Mount Fuji",
+      "Fujisan",
+      "Fuji-san",
+      "富士山",
+      "Hagiwara",
+      "萩原"
+    ],
+    "japan-hakone-owakudani": [
+      "Hakone",
+      "Owakudani",
+      "Ōwakudani",
+      "箱根山",
+      "大涌谷",
+      "Hakoneyama"
+    ],
+    "japan-mount-aso": [
+      "Mount Aso",
+      "Asosan",
+      "Aso Volcano",
+      "Kusasenri",
+      "阿蘇山",
+      "草千里"
+    ],
+    "japan-mount-unzen": [
+      "Mount Unzen",
+      "Unzendake",
+      "Unzen Volcano",
+      "Nodake",
+      "雲仙岳",
+      "野岳"
+    ],
+    "japan-mount-usu": [
+      "Mount Usu",
+      "Usuzan",
+      "Usu Volcano",
+      "有珠山",
+      "東湖畔"
+    ],
+    "japan-kuju-mountains": [
+      "Kuju Mountains",
+      "Kujusan",
+      "Kuju",
+      "Kujū",
+      "Hosshozan",
+      "Hossho",
+      "九重山",
+      "星生山北尾根"
+    ],
+    "japan-kirishima-mountains": [
+      "Kirishima",
+      "Kirishimayama",
+      "Kirishima Mountains",
+      "Karakunidake",
+      "霧島山",
+      "韓国岳"
     ]
   }
 }

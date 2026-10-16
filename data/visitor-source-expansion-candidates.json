@@ -1714,6 +1714,138 @@
       ],
       "why": "Distinct park landscape windows add destination coverage and useful light/visibility context, without duplicating camera angles or claiming visitor-demand counts.",
       "next": "Maintain exact source capture evidence and official conditions links. Current images are refreshed stills, not continuous video or access/safety clearance. No media reuse or automatic verification renewal."
+    },
+    {
+      "id": "japan-jma-mountain-windows-oct16",
+      "priority": "P1_CAMERA_COVERAGE",
+      "placeGroup": "Fuji / Hakone / Aso / Unzen / Usu / Kuju / Kirishima",
+      "country": "Japan",
+      "provider": "Japan Meteorological Agency (JMA)",
+      "candidateType": "OFFICIAL_REFRESHED_CAMERA_NETWORK",
+      "state": "SEVEN_DISTINCT_CAMERA_PLACES_ADMITTED_LINK_ONLY_THREE_WEATHER_HOLDS",
+      "reviewedAt": "2026-10-16T06:06:36.990366Z",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php",
+        "https://www.jma.go.jp/jma/kishou/info/coment.html"
+      ],
+      "reviewedTargets": [
+        {
+          "placeId": "japan-mount-fuji",
+          "sourceId": "japan-mount-fuji-jma-current",
+          "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31401",
+          "advisoryUrl": "https://www.data.jma.go.jp/vois/data/report/activity_info/314.html",
+          "captureLabel": "2026/10/16 14:57:54",
+          "captureTimezone": "Asia/Tokyo",
+          "imageFileSlot": "20261016145800",
+          "decoded": "640x360",
+          "scene": "Mountain silhouette clearly visible beneath layered grey clouds, with a small cloud band on the lower left slope.",
+          "truth": "LIVE_IMAGE",
+          "permission": "LINK_ONLY"
+        },
+        {
+          "placeId": "japan-hakone-owakudani",
+          "sourceId": "japan-hakone-owakudani-jma-current",
+          "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31502",
+          "advisoryUrl": "https://www.data.jma.go.jp/vois/data/report/activity_info/315.html",
+          "captureLabel": "2026/10/16 14:56:05",
+          "captureTimezone": "Asia/Tokyo",
+          "imageFileSlot": "20261016145605",
+          "decoded": "640x480",
+          "scene": "Detailed bare volcanic slope, pipes and railings, with white vapour visible.",
+          "truth": "LIVE_IMAGE",
+          "permission": "LINK_ONLY"
+        },
+        {
+          "placeId": "japan-mount-aso",
+          "sourceId": "japan-mount-aso-jma-current",
+          "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50301",
+          "advisoryUrl": "https://www.data.jma.go.jp/vois/data/report/activity_info/503.html",
+          "captureLabel": "2026/10/16 14:55:57",
+          "captureTimezone": "Asia/Tokyo",
+          "imageFileSlot": "20261016145601",
+          "decoded": "640x360",
+          "scene": "Broad volcanic ridgeline and foreground slopes beneath broken cloud, with a white plume visible near the middle.",
+          "truth": "LIVE_IMAGE",
+          "permission": "LINK_ONLY"
+        },
+        {
+          "placeId": "japan-mount-unzen",
+          "sourceId": "japan-mount-unzen-jma-current",
+          "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50401",
+          "advisoryUrl": "https://www.data.jma.go.jp/vois/data/report/activity_info/504.html",
+          "captureLabel": "2026/10/16 14:57:54",
+          "captureTimezone": "Asia/Tokyo",
+          "imageFileSlot": "20261016145800",
+          "decoded": "640x360",
+          "scene": "Dark rugged mountain crest above wooded foreground slopes beneath broken grey and blue sky.",
+          "truth": "LIVE_IMAGE",
+          "permission": "LINK_ONLY"
+        },
+        {
+          "placeId": "japan-mount-usu",
+          "sourceId": "japan-mount-usu-jma-current",
+          "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=11201",
+          "advisoryUrl": "https://www.data.jma.go.jp/vois/data/report/activity_info/112.html",
+          "captureLabel": "2026/10/16 14:55:58",
+          "captureTimezone": "Asia/Tokyo",
+          "imageFileSlot": "20261016145601",
+          "decoded": "640x360",
+          "scene": "Distinct mountain ridge and dark forest foreground under dramatic sunlit clouds; some glare present.",
+          "truth": "LIVE_IMAGE",
+          "permission": "LINK_ONLY"
+        },
+        {
+          "placeId": "japan-kuju-mountains",
+          "sourceId": "japan-kuju-mountains-jma-current",
+          "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50202",
+          "advisoryUrl": "https://www.data.jma.go.jp/vois/data/report/activity_info/502.html",
+          "captureLabel": "2026/10/16 14:58:00",
+          "captureTimezone": "Asia/Tokyo",
+          "imageFileSlot": "20261016145800",
+          "decoded": "640x480",
+          "scene": "Clearly resolved rugged pale volcanic valley and ridge, sparse vegetation and dark overcast sky.",
+          "truth": "LIVE_IMAGE",
+          "permission": "LINK_ONLY"
+        },
+        {
+          "placeId": "japan-kirishima-mountains",
+          "sourceId": "japan-kirishima-mountains-jma-current",
+          "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50504",
+          "advisoryUrl": "https://www.data.jma.go.jp/vois/data/report/activity_info/505.html",
+          "captureLabel": "2026/10/16 15:01:59",
+          "captureTimezone": "Asia/Tokyo",
+          "imageFileSlot": "20261016150200",
+          "decoded": "640x360",
+          "scene": "Layered volcanic ridges with a white plume, wooded foreground and small roof structures under broken clouds; slight left-edge obstruction.",
+          "truth": "LIVE_IMAGE",
+          "permission": "LINK_ONLY"
+        }
+      ],
+      "holds": [
+        {
+          "camera": "Daisetsuzan — Asahidake Sugatami2",
+          "vc": "10702",
+          "capture": "2026/10/16 14:56:00",
+          "decoded": "640x480",
+          "reason": "Almost uniformly grey fog; no useful destination scene visible."
+        },
+        {
+          "camera": "Tokachidake — Shirogane farm",
+          "vc": "10801",
+          "capture": "2026/10/16 14:55:55",
+          "decoded": "640x360",
+          "reason": "Low cloud hides most of the mountain; lower slope alone did not meet this admission pass."
+        },
+        {
+          "camera": "Zao — Togatta Onsen",
+          "vc": "21201",
+          "capture": "2026/10/16 14:59:56",
+          "decoded": "640x360",
+          "reason": "Cloud/fog obscures the mountain, only foreground trees visible."
+        }
+      ],
+      "why": "Distinct destination camera coverage with individually decoded current dated scenes. Source-led editorial selection, not a claim of measured repeated visitor demand. Camera network angles do not count as separate places.",
+      "next": "Maintain seven exact current-image handoffs and attribution. Three weather-limited sources remain research-only on hold; revisit on materially clearer current evidence, no routine retry or new duplicate queue. No camera image reuse or automatic verification renewal."
     }
   ],
   "guardrails": {
