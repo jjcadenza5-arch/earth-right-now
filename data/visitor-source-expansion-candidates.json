@@ -1912,6 +1912,87 @@
       ],
       "why": "Distinct village windows support discovery beyond large resorts. Source-led editorial coverage, not claimed repeated measured outside demand. Duplicate Sent entries and multiple rotation angles count as one place.",
       "next": "Maintain exact link-only views and capture dates. Revisit held candidates only on changed permission/provider state or genuinely new decoded evidence, using this existing queue. No routine retries or duplicate research queue."
+    },
+    {
+      "id": "swiss-alpine-panorama-maintenance-oct16",
+      "priority": "P1_CAMERA_COVERAGE_AND_MAINTENANCE",
+      "placeGroup": "Splügen / Turtmanntal / Fiesch; existing Randa maintenance",
+      "country": "Switzerland",
+      "candidateType": "FIRST_PARTY_REFRESHED_PANORAMAS",
+      "state": "THREE_DISTINCT_PLACES_ADMITTED_AND_ONE_EXISTING_OFFLINE_CORRECTION",
+      "reviewedAt": "2026-10-16T09:14:57Z",
+      "reviewedTargets": [
+        {
+          "placeId": "swiss-splugen-tanatzhohi",
+          "sourceId": "swiss-splugen-tanatzhohi-current",
+          "url": "https://spluegen.roundshot.com/",
+          "capture": "16.10.2026 11:00 Europe/Zurich",
+          "scene": "Blue alpine lake, dry autumn meadow, mountain ridges and a small red-roof building under clear sky.",
+          "decodedCurrentImage": "7456x1024",
+          "observedImageUrl": "https://storage2.roundshot.com/53ce5a7155c4f4.57507300/2026-10-16/11-00-00/2026-10-16-11-00-00_half.jpg",
+          "guideUrl": "https://www.spluegen.ch/en/bergbahnen/angebot/langlauf.html",
+          "rightsBasis": "Exact first-party viewer links to the operator and exposes camera-link sharing. Legal panel credits images by Splügen Bergbahnen, Seitz Phototechnik technology, all rights reserved. Attributed LINK_ONLY handoff; no special linking prohibition observed. No panorama, thumbnail, tile, logo, footage or iframe reused and no embedding permission inferred."
+        },
+        {
+          "placeId": "swiss-turtmanntal-reservoir",
+          "sourceId": "swiss-turtmanntal-reservoir-current",
+          "url": "https://turtmanntal.roundshot.com/",
+          "capture": "16.10.2026 11:00 Europe/Zurich",
+          "scene": "Turquoise reservoir and curved dam, autumn slopes and rocky mountain skyline with strong sunlight glare.",
+          "decodedCurrentImage": "4032x1024",
+          "observedImageUrl": "https://storage4.roundshot.com/6298bb52c4c5b0.31683475/2026-10-16/11-00-00/2026-10-16-11-00-00_half.jpg",
+          "guideUrl": "https://turtmanntal.ch/turtmannhuette-sac/",
+          "rightsBasis": "Exact first-party viewer links to the operator and exposes camera-link sharing. Legal panel credits images by Turtmann Unterems Tourismus, Seitz Phototechnik technology, all rights reserved. Attributed LINK_ONLY handoff; no special linking prohibition observed. No panorama, thumbnail, tile, logo, footage or iframe reused and no embedding permission inferred."
+        },
+        {
+          "placeId": "swiss-fiesch-hub",
+          "sourceId": "swiss-fiesch-hub-current",
+          "url": "https://fiesch.roundshot.com/",
+          "capture": "16.10.2026 11:00 Europe/Zurich",
+          "scene": "Fiesch houses, church, autumn trees and mountain slopes; substantial sunlight glare reduces detail in part of the panorama.",
+          "decodedCurrentImage": "5717x1024",
+          "observedImageUrl": "https://storage4.roundshot.com/620a18d3ba0c48.30991609/2026-10-16/11-00-00/2026-10-16-11-00-00_half.jpg",
+          "guideUrl": "https://www.aletscharena.ch/en/about-the-region/poi/public-transport-hub-fiesch",
+          "rightsBasis": "Exact first-party viewer links to the operator and exposes camera-link sharing. Legal panel credits images by Gemeinde Fiesch, Seitz Phototechnik technology, all rights reserved. Attributed LINK_ONLY handoff; no special linking prohibition observed. No panorama, thumbnail, tile, logo, footage or iframe reused and no embedding permission inferred."
+        }
+      ],
+      "maintenance": [
+        {
+          "sourceId": "randa-valais",
+          "url": "https://randa.roundshot.com/",
+          "state": "CONFIRMED_OFFLINE",
+          "capture": "07.01.2026 19:00 Europe/Zurich",
+          "observation": "Exact provider viewer explicitly Kamera offline / Camera is offline; existing lastSuccessfulCheck preserved. No permanent shutdown reason inferred from conflicting search excerpt."
+        }
+      ],
+      "holds": [
+        {
+          "id": "mayon-recheck-oct16",
+          "url": "https://volcano.phivolcs.dost.gov.ph/monitor/instruments?volcano=mvo",
+          "state": "INCONCLUSIVE_BROWSER_CERTIFICATE_TRANSPORT_FAILURE",
+          "observation": "Browser returned502 Certificate verify failed: unable to get local issuer certificate. No target camera outage or fresh view inferred; no dates/health changed."
+        },
+        {
+          "id": "zernez-guidle-oct16",
+          "url": "https://www.guidle.com/de/webcams/zernez/blick-richtung-oberengadin-vom-kirchturm-zernez_AsCdc1v?relatedCrId=F6hUWf&forceOfferType=WEBCAM_PLAYER",
+          "state": "INCONCLUSIVE_CONNECTION_FAILURE",
+          "observation": "Browser returned502 connection refused. No provider outage inferred; no camera admitted."
+        },
+        {
+          "id": "grandvalira-recheck-oct16",
+          "url": "https://www.grandvalira.com/en/resort/live-webcams",
+          "state": "HOLD_EXACT_CURRENT_VIEW_EVIDENCE_INCOMPLETE",
+          "observation": "Official camera tabs and Feratel targets listed, but no exact current still or genuine continuous playback established. Existing dates/health unchanged."
+        }
+      ],
+      "why": "Source-led editorial expansion, not claimed repeated outside demand. Maintain rather than duplicate existing Randa; only three distinct destinations count, not angles or information links.",
+      "next": "Maintain exact link-only sources. Keep unresolved targets held after this bounded pass and revisit on new evidence, without duplicate tracking or routine retries.",
+      "evidenceUrls": [
+        "https://spluegen.roundshot.com/",
+        "https://turtmanntal.roundshot.com/",
+        "https://fiesch.roundshot.com/",
+        "https://www.randa.ch/aktuelles/webcam/"
+      ]
     }
   ],
   "guardrails": {

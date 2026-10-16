@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T08:40:51.024000Z",
+  "updatedAt": "2026-10-16T09:14:57Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -1163,6 +1163,23 @@
       "Ftan Engadin",
       "Ftan Lower Engadine",
       "Ftan Unterengadin"
+    ],
+    "swiss-splugen-tanatzhohi": [
+      "Splügen",
+      "Splugen Tambo",
+      "Tanatzhöhi"
+    ],
+    "swiss-turtmanntal-reservoir": [
+      "Turtmanntal",
+      "Turtmann Valley",
+      "Turtmann Reservoir",
+      "Turtmannhütte"
+    ],
+    "swiss-fiesch-hub": [
+      "Fiesch",
+      "Fiesch ÖV Hub",
+      "Fiesch Transport Hub",
+      "Fiesch Village"
     ]
   }
 }

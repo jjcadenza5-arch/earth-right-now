@@ -1424,8 +1424,10 @@
     },
     "randa-valais": {
       "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",
-      "rightsBasis": "Provider-published live/current camera source; ERN links externally and does not infer image reuse, embed or restream rights.",
-      "freshnessEvidence": "Switzerland Tourism currently publishes this HD Live panorama."
+      "rightsBasis": "Municipality publishes exact Roundshot source. ERN remains attributed LINK_ONLY, no image reuse or embedding permission inferred.",
+      "freshnessEvidence": "Interactive review 2026-10-16T09:14:57Z: municipality webcam page embeds exact https://randa.roundshot.com/ . Viewer explicitly displays Kamera offline / Camera is offline and latest selected capture07.01.2026 19:00. This is provider-offline evidence, not an inferred outage from transport failure. checkedAt records this failed review; lastSuccessfulCheck remains2026-10-03T12:25:00Z. Search excerpt contained a discontinuation/privacy notice absent from the loaded municipal page; do not assert a shutdown reason or permanent closure.",
+      "reviewSourceUrl": "https://www.randa.ch/aktuelles/webcam/",
+      "reviewedAt": "2026-10-16T09:14:57Z"
     },
     "celerina-engadin": {
       "coordinateNote": "Reference coordinates identify the destination/place for ERN discovery and are not claimed as the exact camera position.",

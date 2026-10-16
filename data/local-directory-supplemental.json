@@ -11380,5 +11380,73 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.engadin.com/en/the-lower-engadin/holiday-resorts/ftan"
+  },
+  {
+    "id": "local-swiss-splugen-tanatzhohi-official-guide",
+    "name": "Splügen — official visitor information",
+    "type": "visitor information",
+    "place": "Splügen",
+    "country": "Switzerland",
+    "summary": "The operator describes mountain and valley cross-country skiing options. Check the current season, lift status and trail reports before travelling; the autumn panorama does not show an operating ski area.",
+    "url": "https://www.spluegen.ch/en/bergbahnen/angebot/langlauf.html",
+    "verifiedAt": "2026-10-16T09:14:57Z",
+    "status": "APPROVED",
+    "placeId": "swiss-splugen-tanatzhohi",
+    "tags": [
+      "Splügen",
+      "Splugen Tambo",
+      "Tanatzhöhi",
+      "visitor information"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.spluegen.ch/en/bergbahnen/angebot/langlauf.html"
+  },
+  {
+    "id": "local-swiss-turtmanntal-reservoir-official-guide",
+    "name": "Turtmanntal — official visitor information",
+    "type": "visitor information",
+    "place": "Turtmanntal",
+    "country": "Switzerland",
+    "summary": "Use the tourism guide for the Turtmannhütte and onward official hut information. Confirm seasonal staffing, access and mountain-route conditions separately; this reservoir panorama does not prove that the hut or an alpine route is open.",
+    "url": "https://turtmanntal.ch/turtmannhuette-sac/",
+    "verifiedAt": "2026-10-16T09:14:57Z",
+    "status": "APPROVED",
+    "placeId": "swiss-turtmanntal-reservoir",
+    "tags": [
+      "Turtmanntal",
+      "Turtmann Valley",
+      "Turtmann Reservoir",
+      "Turtmannhütte",
+      "visitor information"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://turtmanntal.ch/turtmannhuette-sac/"
+  },
+  {
+    "id": "local-swiss-fiesch-hub-official-guide",
+    "name": "Fiesch — official visitor information",
+    "type": "visitor information",
+    "place": "Fiesch",
+    "country": "Switzerland",
+    "summary": "The official guide explains the connection between train, bus and the gondola to car-free Fiescheralp. Check timetables, seasonal maintenance and onward connections with the operators; the village panorama does not establish that a service is running.",
+    "url": "https://www.aletscharena.ch/en/about-the-region/poi/public-transport-hub-fiesch",
+    "verifiedAt": "2026-10-16T09:14:57Z",
+    "status": "APPROVED",
+    "placeId": "swiss-fiesch-hub",
+    "tags": [
+      "Fiesch",
+      "Fiesch ÖV Hub",
+      "Fiesch Transport Hub",
+      "Fiesch Village",
+      "visitor information"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.aletscharena.ch/en/about-the-region/poi/public-transport-hub-fiesch"
   }
 ]

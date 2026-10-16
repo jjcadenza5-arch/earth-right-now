@@ -151,10 +151,10 @@
     "Preserve one-best-provider-per-user-need presentation and commission-neutral Earth ranking."
   ],
   "currentPublicRevenueActive": {
-    "offerCount": 225,
-    "uniquePlaceCount": 220,
+    "offerCount": 224,
+    "uniquePlaceCount": 219,
     "byProgram": {
-      "viator": 197,
+      "viator": 196,
       "klook": 20,
       "tiqets": 5,
       "welcome-pickups": 3
@@ -166,6 +166,8 @@
       "welcome-pickups": 3
     },
     "definition": "Verified current affiliate offers exposed through ERN's public travel-offer layer, backed by an enabled current affiliate partner, and attached to a currently HEALTHY LIVE_VIDEO / LIVE_IMAGE / EXTERNAL_LIVE ERN place across core or supplemental discovery.",
-    "note": "Source-eligible counts reconciled after fresh Sultanahmet recorded-footage and Progreso unavailable-player review. Both DEGRADED sources are excluded; all link, partner and historical camera verification dates remain unchanged. This is eligibility accounting, not measured traffic or revenue."
+    "note": "Source-eligible counts reconciled after fresh Sultanahmet recorded-footage and Progreso unavailable-player review. Both DEGRADED sources are excluded; all link, partner and historical camera verification dates remain unchanged. This is eligibility accounting, not measured traffic or revenue.",
+    "sourceEligibilityReviewedAt": "2026-10-16T09:17:10.921Z",
+    "sourceEligibilityNote": "Randa municipal panorama explicitly offline at16Oct browser review. Existing source-health gate excludes its offer; tracked links and relationship verification dates unchanged. Counts are source-eligible placements, not bookings or income."
   }
 }
