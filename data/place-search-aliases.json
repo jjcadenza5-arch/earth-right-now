@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T09:14:57Z",
+  "updatedAt": "2026-10-16T10:49:01Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -1180,6 +1180,27 @@
       "Fiesch ÖV Hub",
       "Fiesch Transport Hub",
       "Fiesch Village"
+    ],
+    "swiss-morschach-holiday-park": [
+      "Morschach",
+      "Swiss Holiday Park",
+      "Morschach Webcam"
+    ],
+    "swiss-wil-tower": [
+      "Wil",
+      "Wil SG",
+      "Wiler Turm",
+      "Hofberg"
+    ],
+    "swiss-lutry-harbour": [
+      "Lutry",
+      "Port de Lutry",
+      "Lutry Harbour"
+    ],
+    "swiss-winterthur-roter-turm": [
+      "Winterthur",
+      "Roter Turm",
+      "Winterthur Panorama"
     ]
   }
 }

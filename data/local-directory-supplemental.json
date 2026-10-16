@@ -11448,5 +11448,94 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.aletscharena.ch/en/about-the-region/poi/public-transport-hub-fiesch"
+  },
+  {
+    "id": "local-swiss-morschach-holiday-park-official-guide",
+    "name": "Morschach — official visitor information",
+    "type": "visitor information",
+    "place": "Morschach",
+    "country": "Switzerland",
+    "summary": "Use the operator’s activity-specific hours, seasonal breaks and weather restrictions before visiting. A sunny resort panorama does not confirm that the water park, rope park, trial park or every other activity is open.",
+    "url": "https://swissholidaypark.ch/en/guest-info/opening-hours",
+    "verifiedAt": "2026-10-16T10:49:01Z",
+    "status": "APPROVED",
+    "placeId": "swiss-morschach-holiday-park",
+    "tags": [
+      "Morschach",
+      "Swiss Holiday Park",
+      "Morschach Webcam",
+      "visitor information"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://swissholidaypark.ch/en/guest-info/opening-hours"
+  },
+  {
+    "id": "local-swiss-wil-tower-official-guide",
+    "name": "Wil — official visitor information",
+    "type": "visitor information",
+    "place": "Wil",
+    "country": "Switzerland",
+    "summary": "The tower approach is on foot; the official guide explains signed walking routes from the Langegg / Turm Hofberg bus stop and from Wil station. There is no direct car access to the tower. Check current access notices and transport times separately; the panorama does not prove that tower access is open.",
+    "url": "https://www.wilerleben.ch/wiler-turm-webcam/anfahrt/",
+    "verifiedAt": "2026-10-16T10:49:01Z",
+    "status": "APPROVED",
+    "placeId": "swiss-wil-tower",
+    "tags": [
+      "Wil",
+      "Wil SG",
+      "Wiler Turm",
+      "Hofberg",
+      "visitor information"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.wilerleben.ch/wiler-turm-webcam/anfahrt/"
+  },
+  {
+    "id": "local-swiss-lutry-harbour-official-guide",
+    "name": "Lutry — official visitor information",
+    "type": "visitor information",
+    "place": "Lutry",
+    "country": "Switzerland",
+    "summary": "Explore the medieval streets and lakeside using the official destination guide. Check public transport, boat timetables and access separately; a harbour panorama is not a swimming, sailing or lake-safety assessment.",
+    "url": "https://www.montreuxriviera.com/en/P5311/medieval-market-town-of-lutry",
+    "verifiedAt": "2026-10-16T10:49:01Z",
+    "status": "APPROVED",
+    "placeId": "swiss-lutry-harbour",
+    "tags": [
+      "Lutry",
+      "Port de Lutry",
+      "Lutry Harbour",
+      "visitor information"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.montreuxriviera.com/en/P5311/medieval-market-town-of-lutry"
+  },
+  {
+    "id": "local-swiss-winterthur-roter-turm-official-guide",
+    "name": "Winterthur — official visitor information",
+    "type": "visitor information",
+    "place": "Winterthur",
+    "country": "Switzerland",
+    "summary": "The city mobility guide links to public transport, taxis and shared transport options. Use current operator timetables and service notices for a visit; the broad station-area panorama does not confirm a train departure, building access or an attraction’s opening hours.",
+    "url": "https://stadt.winterthur.ch/themen/mobilitaet/oev-taxi-sharing",
+    "verifiedAt": "2026-10-16T10:49:01Z",
+    "status": "APPROVED",
+    "placeId": "swiss-winterthur-roter-turm",
+    "tags": [
+      "Winterthur",
+      "Roter Turm",
+      "Winterthur Panorama",
+      "visitor information"
+    ],
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://stadt.winterthur.ch/themen/mobilitaet/oev-taxi-sharing"
   }
 ]

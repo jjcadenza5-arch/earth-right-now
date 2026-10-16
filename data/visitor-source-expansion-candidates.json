@@ -1993,6 +1993,84 @@
         "https://fiesch.roundshot.com/",
         "https://www.randa.ch/aktuelles/webcam/"
       ]
+    },
+    {
+      "id": "swiss-town-lakeside-family-windows-oct16",
+      "priority": "P1_CAMERA_COVERAGE",
+      "placeGroup": "Morschach / Wil / Lutry / Winterthur",
+      "country": "Switzerland",
+      "provider": "Swiss Holiday Park / Wil erleben / Commune de Lutry / Stadt Winterthur",
+      "candidateType": "FIRST_PARTY_REFRESHED_PANORAMAS",
+      "state": "FOUR_DISTINCT_PLACES_ADMITTED_LINK_ONLY_WITH_BOUNDED_HOLDS",
+      "reviewedAt": "2026-10-16T10:49:01Z",
+      "evidenceUrls": [
+        "https://shp.roundshot.com/",
+        "https://wilerturm.roundshot.com/",
+        "https://lutry.roundshot.com/",
+        "https://winterthur.roundshot.com/roterturm/"
+      ],
+      "reviewedTargets": [
+        {
+          "placeId": "swiss-morschach-holiday-park",
+          "sourceId": "swiss-morschach-holiday-park-current",
+          "url": "https://shp.roundshot.com/",
+          "capture": "16.10.2026 12:40 Europe/Zurich",
+          "decodedCurrentImage": "4032x1024",
+          "observedImageUrl": "https://storage2.roundshot.com/53ce6f2ee70be4.71396917/2026-10-16/12-40-00/2026-10-16-12-40-00_half.jpg",
+          "scene": "Resort buildings and outdoor pool, green meadow, autumn woodland and Fronalpstock ridge in sunlight. Provider privacy blurring remains visible.",
+          "guideUrl": "https://swissholidaypark.ch/en/guest-info/opening-hours",
+          "rightsBasis": "First-party viewer links to operator and offers camera-link sharing. Exact legal panel credits images by Swiss Holiday Park, Seitz Phototechnik technology, all rights reserved. Attributed LINK_ONLY handoff; no special link prohibition observed. No image, thumbnail, tile, logo, video or iframe reused, and no embedding or restreaming permission inferred."
+        },
+        {
+          "placeId": "swiss-wil-tower",
+          "sourceId": "swiss-wil-tower-current",
+          "url": "https://wilerturm.roundshot.com/",
+          "capture": "16.10.2026 12:40 Europe/Zurich",
+          "decodedCurrentImage": "6866x1024",
+          "observedImageUrl": "https://storage4.roundshot.com/545b7dcf9cedf1.10734711/2026-10-16/12-40-00/2026-10-16-12-40-00_half.jpg",
+          "scene": "City buildings beyond green fields and autumn woodland, with a hazy distant mountain skyline and part of the tower structure. Provider privacy blurring remains visible.",
+          "guideUrl": "https://www.wilerleben.ch/wiler-turm-webcam/anfahrt/",
+          "rightsBasis": "First-party viewer links to operator and offers camera-link sharing. Exact legal panel credits images by Wil erleben, Seitz Phototechnik technology, all rights reserved. Attributed LINK_ONLY handoff; no special link prohibition observed. No image, thumbnail, tile, logo, video or iframe reused, and no embedding or restreaming permission inferred."
+        },
+        {
+          "placeId": "swiss-lutry-harbour",
+          "sourceId": "swiss-lutry-harbour-current",
+          "url": "https://lutry.roundshot.com/",
+          "capture": "16.10.2026 12:40 Europe/Zurich",
+          "decodedCurrentImage": "7004x1024",
+          "observedImageUrl": "https://storage2.roundshot.com/62d037f2cea5e4.95260690/2026-10-16/12-40-00/2026-10-16-12-40-00_half.jpg",
+          "scene": "Harbour sailboats and rooftops in the foreground, Lake Geneva, a distant mountain ridge and layered clouds.",
+          "guideUrl": "https://www.montreuxriviera.com/en/P5311/medieval-market-town-of-lutry",
+          "rightsBasis": "First-party viewer links to operator and offers camera-link sharing. Exact legal panel credits images by Commune de Lutry, Seitz Phototechnik technology, all rights reserved. Attributed LINK_ONLY handoff; no special link prohibition observed. No image, thumbnail, tile, logo, video or iframe reused, and no embedding or restreaming permission inferred."
+        },
+        {
+          "placeId": "swiss-winterthur-roter-turm",
+          "sourceId": "swiss-winterthur-roter-turm-current",
+          "url": "https://winterthur.roundshot.com/roterturm/",
+          "capture": "16.10.2026 12:40 Europe/Zurich",
+          "decodedCurrentImage": "3588x1024",
+          "observedImageUrl": "https://storage4.roundshot.com/5ab0d9701bb178.05395983/2026-10-16/12-40-00/2026-10-16-12-40-00_half.jpg",
+          "scene": "Broad city rooftops, railway platforms and tracks, building cranes, autumn trees and wooded hills under mixed cloud.",
+          "guideUrl": "https://stadt.winterthur.ch/themen/mobilitaet/oev-taxi-sharing",
+          "rightsBasis": "First-party viewer links to operator and offers camera-link sharing. Exact legal panel credits images by Stadt Winterthur, Seitz Phototechnik technology, all rights reserved. Attributed LINK_ONLY handoff; no special link prohibition observed. No image, thumbnail, tile, logo, video or iframe reused, and no embedding or restreaming permission inferred."
+        }
+      ],
+      "holds": [
+        {
+          "id": "chur-roundshot-oct16",
+          "url": "https://churtourismus.roundshot.com/",
+          "state": "HOLD_NO_RENDERED_SCENE_IN_BROWSER",
+          "observation": "Viewer showed12:40 label but screenshot retained Chur logo/loading bar; legal panel/current-image thumbnail did not become available in bounded pass. No admission, provider outage or currentness claimed from timestamp alone."
+        },
+        {
+          "id": "neuchatel-roundshot-oct16",
+          "url": "https://neuchatel.roundshot.com/",
+          "state": "HOLD_VIEWER_UNAVAILABLE_IN_REVIEW_BROWSER",
+          "observation": "Visible Site Unavailable / Unable to access this site. No camera scene or admission; no permanent outage or cause inferred."
+        }
+      ],
+      "why": "Source-led editorial coverage of distinct visitor destinations, not claimed repeated measured outside visitor demand. Source camera, information records and businesses remain separate counts.",
+      "next": "Maintain exact link-only views. Leave held candidates unresolved after bounded research; revisit only on materially new evidence through existing workflow, no duplicate queue or routine retries."
     }
   ],
   "guardrails": {
