@@ -1,3 +1,9 @@
+## 2026-10-16 — Release acceptance recovery from current main
+
+- Inspected GitHub main f2858998e91159e404f81352d818c9202595e29f and canonical handoff before editing. Scheduled current-image pilot renewal f2858998 (Yellowstone Biscuit Basin / Ruapehu) retained; no manual source dates changed. Camera-backed inventory remains798/1,000, gap202. No new cameras, directory records, photos or affiliate relationships in this recovery stage.
+- Prior Pages38769685696 attempt1 cancelled while updating_pages; attempt2 failed at Deploy with Deployment cancelled. Both completed predeploy checks but skipped production acceptance audits. Direct production manifest inspection now finds c1c39591616bfa7d3bb24c75f6a40c05c2ce272f generated2026-10-15T16:33:28.918Z, despite unsuccessful workflow conclusion. Served revision and a green workflow are distinct evidence; do not infer full acceptance from manifest alone.
+- Corrected a bounded CI timeout mismatch only: Pages job limit8→20 minutes, allowing preflights, the existing bounded10-minute deploy action and postdeploy audits/cleanup. No action timeout, assertion, permission, concurrency setting, truth window, byte budget, floor or rollback protection weakened. This does not renew evidence or change public design. All public gatesOFF; paid trafficHOLD. Validation and exact-SHA acceptance will be recorded after the recovery deployment.
+
 ## 2026-10-15 — Aridane restoration SAVED; production acceptance pending
 
 - Continued from accepted production c9de1f76 / canonical handoff9c767372. Maintenance batch adds ZERO cameras; inventory remains798 distinct camera-backed places toward1,000, gap202. Existing aggregate Aridane interest helped prioritize maintenance; owner/test influence remains unknown. No duplicate tracking or research queue.
