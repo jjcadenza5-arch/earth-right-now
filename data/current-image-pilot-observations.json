@@ -187,6 +187,24 @@
           "evidenceAgeMinutes": 0.8
         }
       ]
+    },
+    {
+      "observedAt": "2026-10-18T01:12:09.179Z",
+      "utcDate": "2026-10-18",
+      "event": "schedule",
+      "state": "RENEWED",
+      "items": [
+        {
+          "id": "yellowstone-biscuit-basin-current-image",
+          "evidenceTimestamp": "Sun, 18 Oct 2026 01:00:06 GMT",
+          "evidenceAgeMinutes": 12.1
+        },
+        {
+          "id": "nz-ruapehu-current-image",
+          "evidenceTimestamp": "Sun, 18 Oct 2026 01:11:02 GMT",
+          "evidenceAgeMinutes": 1.1
+        }
+      ]
     }
   ]
 }
