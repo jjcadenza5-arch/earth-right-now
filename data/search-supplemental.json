@@ -8883,11 +8883,11 @@
     ],
     "truth": "LIVE_IMAGE",
     "permission": "LINK_ONLY",
-    "health": "HEALTHY",
+    "health": "DEGRADED",
     "playback": "EXTERNAL",
     "sourceUrl": "https://flycam.roundshot.com/rovaniemi-1/",
     "attribution": "City of Rovaniemi / Flycam Oy",
-    "checkedAt": "2026-10-11T17:11:41.867651+00:00",
+    "checkedAt": "2026-10-23T23:42:33Z",
     "lastSuccessfulCheck": "2026-10-11T17:11:41.867651+00:00",
     "quality": 94,
     "freshness": 98,
@@ -8896,14 +8896,16 @@
     "featuredHold": true,
     "watchHold": true,
     "rightsBasis": "Visit Rovaniemi links this exact City of Rovaniemi / Flycam public viewer. ERN links externally with attribution; no image reuse or embed permission inferred.",
-    "freshnessEvidence": "Actual browser-rendered city/river panorama visually inspected; latest capture 2026-10-11 18:00 Europe/Helsinki. About Camera identifies Ounasvaara and Flycam, coordinates 66.504122721147,25.753815642895. Refreshed/delayed still, not live-video proof.",
+    "freshnessEvidence": "Interactive first-party browser review completed 2026-10-23T23:42:33Z. Outcome OFFLINE. Actual rendered scene visually inspected: Provider explicitly states CAMERA OFFLINE / The camera is offline. You can still view images from the archive. Archived city/river/forest scene renders; it is not current coverage. Provider suggests its distinct Koivusaari camera, which was not reviewed or substituted. Default latest display showed 13.10.2026 12:00; catalog timezone Europe/Helsinki, not printed beside capture label. No archive or best-shot selection made. Capture time is distinct from review time. Rotation moves around a captured still, not continuous live video. No independently measured refresh cadence or continuous reliability guarantee. Attributed external link only; no media copied or embedding permission inferred.",
     "searchSupplemental": true,
     "officialUrl": "https://www.visitrovaniemi.fi/plan/rovaniemi-webcam/",
     "lat": 66.504122721147,
     "lon": 25.753815642895,
     "timeZone": "Europe/Helsinki",
     "coordinateBasis": "CAMERA_EXACT",
-    "coordinateSourceUrl": "https://flycam.roundshot.com/rovaniemi-1/#/about-camera"
+    "coordinateSourceUrl": "https://flycam.roundshot.com/rovaniemi-1/#/about-camera",
+    "lastFailedCheck": "2026-10-23T23:42:33Z",
+    "failureReason": "PROVIDER_REPORTS_CAMERA_OFFLINE"
   },
   {
     "id": "finland-pyha-webcams",
@@ -12926,8 +12928,8 @@
     "sourceUrl": "https://skyviewlive.roundshot.com/hiedanranta/",
     "officialUrl": "https://hiedanranta.fi/en/",
     "attribution": "Hiedanrannan Kehitys Oy / Flycam Oy",
-    "checkedAt": "2026-10-11T17:11:41.867651+00:00",
-    "lastSuccessfulCheck": "2026-10-11T17:11:41.867651+00:00",
+    "checkedAt": "2026-10-23T23:42:33Z",
+    "lastSuccessfulCheck": "2026-10-23T23:42:33Z",
     "quality": 88,
     "freshness": 90,
     "moment": 75,
@@ -12941,7 +12943,7 @@
     "watchHold": true,
     "searchSupplemental": true,
     "rightsBasis": "First-party public camera linked externally with attribution. Flycam copyright retained; no imagery reuse or ERN embedding permission inferred.",
-    "freshnessEvidence": "Browser-rendered panorama visually inspected with latest capture 2026-10-11 19:40 Europe/Helsinki. Image is delayed/refreshed, not continuous video. No refresh interval independently measured."
+    "freshnessEvidence": "Interactive first-party browser review completed 2026-10-23T23:42:33Z. Outcome SUCCESS. Actual rendered scene visually inspected: Illuminated industrial buildings, lake and distant city lights beneath low clouds; visible droplets/glare reduce some detail. Default latest display showed 24.10.2026 02:20; catalog timezone Europe/Helsinki, not printed beside capture label. No archive or best-shot selection made. Capture time is distinct from review time. Rotation moves around a captured still, not continuous live video. No independently measured refresh cadence or continuous reliability guarantee. Attributed external link only; no media copied or embedding permission inferred."
   },
   {
     "id": "finland-lappeenranta-vesitorni-current",
@@ -12968,8 +12970,8 @@
     "sourceUrl": "https://skyviewlive.roundshot.com/lappeenranta/",
     "officialUrl": "https://www.lappeenrannanenergia.fi/ajankohtaista/vesitornin-uudesta-verkkokamerasta-panoraamakuvaa-ympari-vuorokauden",
     "attribution": "Lappeenrannan Energia Oy / Flycam Oy",
-    "checkedAt": "2026-10-11T17:11:41.867651+00:00",
-    "lastSuccessfulCheck": "2026-10-11T17:11:41.867651+00:00",
+    "checkedAt": "2026-10-23T23:42:33Z",
+    "lastSuccessfulCheck": "2026-10-23T23:42:33Z",
     "quality": 88,
     "freshness": 90,
     "moment": 75,
@@ -12983,7 +12985,7 @@
     "watchHold": true,
     "searchSupplemental": true,
     "rightsBasis": "First-party public camera linked externally with attribution. Flycam copyright retained; no imagery reuse or ERN embedding permission inferred.",
-    "freshnessEvidence": "Browser-rendered panorama visually inspected with latest capture 2026-10-11 19:00 Europe/Helsinki. Image is delayed/refreshed, not continuous video. No refresh interval independently measured."
+    "freshnessEvidence": "Interactive first-party browser review completed 2026-10-23T23:42:33Z. Outcome SUCCESS. Actual rendered scene visually inspected: City roofs, streets, trees and distant lights beneath a cloudy night sky; foreground floodlights strongly overexposed. Capture is approximately 2 hours 40 minutes older than review, a delayed still, not an instant view. Default latest display showed 24.10.2026 00:00; catalog timezone Europe/Helsinki, not printed beside capture label. No archive or best-shot selection made. Capture time is distinct from review time. Rotation moves around a captured still, not continuous live video. No independently measured refresh cadence or continuous reliability guarantee. Attributed external link only; no media copied or embedding permission inferred."
   },
   {
     "id": "australia-coffs-harbour-boat-ramp-live",
@@ -14263,7 +14265,7 @@
     "sourceUrl": "https://buochs.roundshot.com/",
     "officialUrl": "https://airportbuochs.ch/",
     "attribution": "Airport Buochs / Roundshot",
-    "checkedAt": "2026-10-14T08:28:24Z",
+    "checkedAt": "2026-10-23T23:42:33Z",
     "lastSuccessfulCheck": "2026-10-14T08:28:24Z",
     "quality": 85,
     "freshness": 90,
@@ -14275,7 +14277,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "Official tourism/venue publication links or embeds this public camera. ERN uses attributed external links only. No permission inferred for embedding, hotlinking, thumbnails, screenshots or footage reuse.",
     "rightsSourceUrl": "https://airportbuochs.ch/",
-    "freshnessEvidence": "Actual browser/editorial review completed2026-10-14T08:28:24Z. Official tourism/venue publication identifies this exact source; dated14October2026 10:10 panorama visually rendered and inspected. Visible runway, green airfield and surrounding mountains. Refreshed panorama/image, not continuous-video playback; no guaranteed cadence, weather or access claim."
+    "freshnessEvidence": "Interactive first-party browser review completed 2026-10-23T23:42:33Z. Outcome INCONCLUSIVE. Actual rendered scene visually inspected: Very dark airfield and mountain silhouettes render, with moon and scattered lights. Latest displayed capture is almost 7 hours older than review; no overnight capture schedule verified. Prior successful date retained; not a proven outage or near-now renewal. Airport status overlays do not establish camera freshness or flight clearance. Default latest display showed 23.10.2026 18:45; catalog timezone Europe/Zurich, not printed beside capture label. No archive or best-shot selection made. Capture time is distinct from review time. Rotation moves around a captured still, not continuous live video. No independently measured refresh cadence or continuous reliability guarantee. Attributed external link only; no media copied or embedding permission inferred."
   },
   {
     "id": "swiss-villa-honegg-current",
