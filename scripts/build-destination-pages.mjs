@@ -171,7 +171,7 @@ for(const [id,items] of map){
     const link=s.sourceLinkHold===true?' · Provider link paused pending '+holdReason:href?' · <a '+(s.externalWindowRequired===true?'target="_blank" ':'')+'href="'+esc(href)+'" rel="noopener noreferrer">'+(externalImage?"Open current image source":externalCurrent?"Open live source":"Provider source")+'</a>':"";
     const availability=sourceAvailabilityState(s,{now:buildNow});
     const playbackFresh=embedPlaybackProofCurrent(s,{now:buildNow});
-    const truth=!playbackFresh&&s.playback==="EMBED"?"PLAYBACK RECHECK DUE":availability.restricted&&!availability.open?"OUTSIDE LIVE HOURS":currentWindowEyebrow(s,{now:buildNow});
+    const truth=s.health==="DEGRADED"&&s.failureReason==="STREAM_UNAVAILABLE"?"PLAYBACK FAILURE REPORTED":!playbackFresh&&s.playback==="EMBED"?"PLAYBACK RECHECK DUE":availability.restricted&&!availability.open?"OUTSIDE LIVE HOURS":currentWindowEyebrow(s,{now:buildNow});
     return '<li><strong>'+esc(s.title)+'</strong> — '+esc(truth)+' · Provider: '+esc(s.provider||"Provider")+' · Source type: '+esc(sourceKind(s))+' · '+esc(mode)+fresh+review+playback+link+'</li>';
   };
   const currentCards=currentItems.map(cardFor).join("");
