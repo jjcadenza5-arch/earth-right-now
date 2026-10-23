@@ -1,3 +1,20 @@
+## 2026-10-23 — Urgent Watch Earth empty-state maintenance PREPARED
+
+Expansion remains PAUSED. Base main 19ab836dcf34a29043ff0018cf65cf8c5cc95eab; latest canonical accepted release remains dabb0434. Newer main contains image-pilot renewals, not a new accepted website release. Recovered source after workspace cleanup; earlier ERN_66784a4_recovery.zip remains the separate persistent exact-commit backup and is not included in this maintenance patch.
+
+Production browser confirmed zero Watch Earth choices. This patch changes only the empty paragraph: distinguishes expired verification from confirmed failure, offers destination search and two attributed original-provider links labelled not reverified. Plain same-tab links remain keyboard accessible. Removed the paragraph translation replacement hook so translated text cannot erase its links; this small fallback is explicitly lang=en. Removed two CSS comments only (157 bytes) to keep existing strict core budget; CSS rules and JS unchanged. Catalog, timestamps, holds, truth labels, privacy/public-OFF gates unchanged.
+
+Bounded deployed-origin review of Auckland Viaduct and Taitung Jinzun in existing playbackReview mode: provider player title loaded, Play clicked once each, but no rendered scene appeared; later screenshots remained black. INCONCLUSIVE for this browser, not proof of global failure or successful playback. No HUMAN_PLAYBACK or dates renewed. Smallest useful camera batch: these two distinct places/providers, pending owner evidence. One success can restore a choice; no five-camera quota.
+
+Owner review URLs:
+https://earthrightnow.app/?playbackReview=1&sourceId=auckland-viaduct-harbour#view=auckland-viaduct-harbour
+https://earthrightnow.app/?playbackReview=1&sourceId=taitung-jinzun#view=taitung-jinzun
+For each: press Play, watch 20–30 seconds, report date/time/timezone/browser; describe visible motion and live/current clock or indicator; screenshot if possible. Report an exact error or black/still result separately. If only provider Source link works, state that; it does not prove ERN embed playback. Never renew evidence from a title/thumbnail alone.
+
+Validation: performance preflight PASS (core574970/575000, startup159898/160000, app99677/100000); syntax and diff whitespace PASS; five-live-video, search-reference-discovery and source-surface-truth smoke checks PASS. An additional legacy watch-earth-adaptive-public smoke file fails because it expects adaptiveWatchLimit, already absent in unchanged base app-lite.js; not a new regression, no test relaxed. No broad suite or workflow dispatch run. Release workflow retains its required gates.
+
+Publishing status: PREPARED, not deployed. Workspace has no gh executable or configured Git credential helper; no repeat CLI push. If supported connector publication is denied/unavailable, remaining step is apply this patch against fresh main in the original authenticated repository environment, commit and publish main through existing Pages workflow, then verify exact release SHA, served empty-state HTML and unchanged inventory. Do not publish paused expansion incidentally. Update this same canonical handoff with actual outcome.
+
 ## 2026-10-16 — Four town/lakeside camera destinations ACCEPTED
 
 - Accepted production **dabb04346660cc6d1e14f73df461a62c47702f7f** adds FOUR distinct refreshed-image camera places: Morschach–Swiss Holiday Park, Wil–Wiler Turm, Lutry harbour and Winterthur–Roter Turm. Camera-backed inventory **815/1,000**, remaining185; this includes historical/offline records and is not815 currently independently playing views. Four separate official visitor-information records, zero photographs/new affiliate relationships/ERN embeds/unverified map pins.
