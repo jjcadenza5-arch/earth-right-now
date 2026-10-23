@@ -4,11 +4,12 @@ import {watchEarthEligible,buildWatchEarth} from "../src/watch-earth.js";
 import {buildDynamicWatchEarth} from "../src/dynamic-watch-earth.js";
 import {watchEarthLiveNowStatus} from "../src/watch-earth-live-now-status.js";
 const sources=JSON.parse(fs.readFileSync(new URL("../data/sources.json",import.meta.url),"utf8"));
-const now=new Date("2026-10-09T02:03:00Z");
+// Anchor catalog invariants to its latest evidence; the release preflight separately uses the actual clock.
+const now=new Date(Math.max(...sources.map(s=>Date.parse(s.lastSuccessfulCheck||s.checkedAt||"" )).filter(Number.isFinite)));
 const eligible=sources.filter(s=>watchEarthEligible(s,{now}));
 assert.ok(eligible.length>=3,"Current daylight sample needs several premium live cameras");
 assert.ok(!eligible.some(s=>["verbier","taiwan-heping-island-live","takayama-miyagawa-stream"].includes(s.id)),"Human-rejected, failed or weak views stay outside Watch Earth");
-assert.ok(eligible.some(s=>!s.thumbnailUrl),"Do not depend on an optional thumbnail for live eligibility");
+assert.equal(watchEarthEligible({...eligible[0],thumbnailUrl:undefined},{now}),true,"Do not depend on an optional thumbnail for live eligibility");
 const takayama=sources.find(s=>s.id==="takayama-miyagawa-stream");
 assert.equal(takayama.watchHold,true);
 assert.match(takayama.failureReason,/VISITOR_PLAYBACK_REJECTED/);
