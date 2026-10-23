@@ -68,7 +68,9 @@ if(exists("data/place-search-aliases.json")){
     must(visibleAliases.length>0,"DESTINATION_VISIBLE_ALIAS_MISSING",{rel,placeId});
   }
 }
-must(aliasPlacesChecked>=10,"PLACE_ALIAS_INDEXABLE_COVERAGE_TOO_SMALL",{aliasPlacesChecked});
+// Audit the available indexable set; expired sources must never be promoted to satisfy an SEO sample quota.
+const requiredAliasPlaces=Math.min(10,indexable);
+must(aliasPlacesChecked>=requiredAliasPlaces,"PLACE_ALIAS_INDEXABLE_COVERAGE_TOO_SMALL",{aliasPlacesChecked,requiredAliasPlaces});
 const sitemap=read("sitemap.xml");
 for(const rel of ["how-ern-works.html","source-policy.html","editorial-principles.html","faq.html"])must(sitemap.includes("https://earthrightnow.app/"+rel),"AI_GUIDE_NOT_IN_SITEMAP",{rel});
 const report={schemaVersion:1,checkedAt:new Date().toISOString(),ready:issues.length===0,indexableDestinations:indexable,aliasPlacesChecked,representative,issues,warnings,boundaries:{publicGenerativeGuideActivated:false,publicNowMomentsActivated:false,privatePathsExposed:false,llmsTxtAuthoritative:false}};
