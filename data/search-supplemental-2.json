@@ -270,7 +270,7 @@
     "sourceUrl": "https://pirineu365.cat/en/vallter/live/webcams/",
     "officialUrl": "https://pirineu365.cat/en/vallter/live/webcams/",
     "attribution": "FGC Turisme / Vallter / Roundshot",
-    "checkedAt": "2026-10-15T05:54:30Z",
+    "checkedAt": "2026-10-24T12:01:44Z",
     "lastSuccessfulCheck": "2026-10-15T05:54:30Z",
     "quality": 80,
     "freshness": 90,
@@ -282,7 +282,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "Official external webcam page only. FGC copyright reserves content and commercial reuse; no media, text extracts, brands, embeds, thumbnails or hotlinks reused. Link-only handoff, no wider rights inferred.",
     "rightsSourceUrl": "https://www.fgc.cat/en/legal-advise/",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-15T05:54:30Z. Official page publishes exact nested https://fgc.roundshot.com/marmotes. Actual panorama fully rendered in1363x936 canvas and visually inspected rocky ridge, mountain building and lift structures under dawn sky; viewer15.10.2026 07:40 Europe/Madrid, latest/next disabled. Initial loading blur resolved to detailed scene. Promotional snowy hero, teaser video, rotation and weather widget were not current-image proof."
+    "freshnessEvidence": "Interactive first-party/provider-linked browser review completed 2026-10-24T12:01:44Z. Outcome INCONCLUSIVE. Visible capture: No capture timestamp established. Catalog timezone Europe/Madrid; not printed beside capture label. Actual rendered scene: Official page identifies Webcam360 Marmotes2535m and warns website undergoing updates with potentially outdated information. Its rendered storage.roundshot Marmotes preview shows rocky mountain slopes, lift apparatus/fencing and cloud, but no visible capture date. Dynamic query value is not evidence of image capture. No successful renewal; prior15Oct success/health preserved. Reviewed viewer https://pirineu365.cat/en/vallter/live/webcams/. Capture time differs from review completion. No continuous availability/cadence or access/ski/lift-operation guarantee. Panorama rotation is not video proof. Attributed external link only; no media copied or permission expansion."
   },
   {
     "id": "spain-boi-taull-pla-vaques-current",
@@ -670,7 +670,7 @@
     "sourceUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31401",
     "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31401",
     "attribution": "Japan Meteorological Agency (JMA) — Mount Fuji — Hagiwara View",
-    "checkedAt": "2026-10-16T06:06:36.990366Z",
+    "checkedAt": "2026-10-24T12:01:44Z",
     "lastSuccessfulCheck": "2026-10-16T06:06:36.990366Z",
     "quality": 75,
     "freshness": 95,
@@ -682,7 +682,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "JMA permits clearly attributed links to individual pages except specifically restricted pages. Exact official camera context reviewed. LINK_ONLY: no image reuse, hotlink, framing, embedding, JMA endorsement or eruption-state assessment inferred.",
     "rightsSourceUrl": "https://www.jma.go.jp/jma/kishou/info/coment.html",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-16T06:06:36.990366Z. Official current image decoded640x360; burned-in capture2026/10/16 14:57:54 Japan local, latest image file slot20261016145800. Visually inspected: Mountain silhouette clearly visible beneath layered grey clouds, with a small cloud band on the lower left slope. Capture, page selection and filename times are distinct. Refreshed image, not continuous live video or an archive animation. Provider warns images may stop during maintenance; no uninterrupted reliability or precise refresh interval promised."
+    "freshnessEvidence": "Interactive first-party/provider-linked browser review completed 2026-10-24T12:01:44Z. Outcome INCONCLUSIVE. Visible capture: 2026/10/24 20:47:53 image; control20:48. Catalog timezone Asia/Tokyo; not printed beside capture label. Actual rendered scene: JMA Fuji Hagiwara latest31/31 image carries a current timestamp, but rendered frame is opaque grey with no identifiable mountain/landscape. This browser observation is insufficient for useful scene verification; no successful renewal, failure or eruption inferred. Prior16Oct success/health preserved. Reviewed viewer https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31401. Capture time differs from review completion. No continuous availability/cadence or access/ski/lift-operation guarantee. Panorama rotation is not video proof. Attributed external link only; no media copied or permission expansion."
   },
   {
     "id": "japan-hakone-owakudani-jma-current",
