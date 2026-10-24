@@ -352,8 +352,8 @@
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.nps.gov/subjects/air/webcams.htm?site=bibe",
     "attribution": "U.S. National Park Service / Air Resources Division",
-    "checkedAt": "2026-10-15T14:01:54.857385Z",
-    "lastSuccessfulCheck": "2026-10-15T14:01:54.857385Z",
+    "checkedAt": "2026-10-24T13:30:01Z",
+    "lastSuccessfulCheck": "2026-10-24T13:30:01Z",
     "quality": 80,
     "freshness": 90,
     "moment": 78,
@@ -364,7 +364,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "Link only to official public NPS camera page. No camera image, reference illustration, widget, insignia or footage copied, embedded or hotlinked; no endorsement or blanket third-party media rights inferred.",
     "rightsUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-15T14:01:54.857385Z. Official current Camera tab decoded640x360 image; page capture heading Updated10/15/2026 08:45 AM CDT. Visually inspected: North-facing desert plain, scrub and distant flat-topped mountain under layered morning clouds. Current image was distinguished from Clear/Hazy, Landmarks, Map It reference images and unrelated hourly air/weather readings. The official network states images update every15 minutes. No continuous video, image reuse or all-weather reliability inferred."
+    "freshnessEvidence": "Interactive first-party NPS browser review completed 2026-10-24T13:30:01Z. Outcome SUCCESS. Actual rendered default webcam image inspected, not clear/hazy example, landmark graphic, archive or hero photograph. Camera-specific heading Updated 10/24/2026 08:15 AM CDT; timezone explicitly printed by NPS. Scene: View from Panther Junction Area, looking north: desert scrub, a dark rocky mesa and distant ridges in low morning light. Camera date kept separate from adjacent weather/air-quality/visibility observations, which were not used as camera freshness or visitor-safety evidence. Capture time differs from review time. Refreshed image only, not continuous-video proof or a guaranteed cadence. Existing attributed external link; no media copied, rights expansion or access/opening claim."
   },
   {
     "id": "us-bryce-yovimpa-point-current",
@@ -391,7 +391,7 @@
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.nps.gov/subjects/air/webcams.htm?site=brda",
     "attribution": "U.S. National Park Service / Air Resources Division",
-    "checkedAt": "2026-10-15T14:01:54.857385Z",
+    "checkedAt": "2026-10-24T13:30:01Z",
     "lastSuccessfulCheck": "2026-10-15T14:01:54.857385Z",
     "quality": 80,
     "freshness": 90,
@@ -403,7 +403,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "Link only to official public NPS camera page. No camera image, reference illustration, widget, insignia or footage copied, embedded or hotlinked; no endorsement or blanket third-party media rights inferred.",
     "rightsUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-15T14:01:54.857385Z. Official current Camera tab decoded640x360 image; page capture heading Updated10/15/2026 07:45 AM MDT. Visually inspected: Sunrise glare at the left edge, layered distant plateaus and dark forested slopes clearly visible. Current image was distinguished from Clear/Hazy, Landmarks, Map It reference images and unrelated hourly air/weather readings. The official network states images update every15 minutes. No continuous video, image reuse or all-weather reliability inferred."
+    "freshnessEvidence": "Interactive first-party NPS browser review completed 2026-10-24T13:30:01Z. Outcome INCONCLUSIVE. Actual rendered default webcam image inspected, not clear/hazy example, landmark graphic, archive or hero photograph. Camera-specific heading Updated 10/24/2026 07:15 AM MDT; timezone explicitly printed by NPS. Scene: Yovimpa Point looking east: rendered image is mostly noisy grey obscuration with foreground branch silhouette and no useful identifiable distant landscape. Recent timestamp alone is insufficient. No outage inferred; prior15Oct successful date and health retained. Camera date kept separate from adjacent weather/air-quality/visibility observations, which were not used as camera freshness or visitor-safety evidence. Capture time differs from review time. Refreshed image only, not continuous-video proof or a guaranteed cadence. Existing attributed external link; no media copied, rights expansion or access/opening claim."
   },
   {
     "id": "us-joshua-tree-belle-mountain-current",
@@ -470,8 +470,8 @@
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.nps.gov/subjects/air/webcams.htm?site=thro",
     "attribution": "U.S. National Park Service / Air Resources Division",
-    "checkedAt": "2026-10-15T14:01:54.857385Z",
-    "lastSuccessfulCheck": "2026-10-15T14:01:54.857385Z",
+    "checkedAt": "2026-10-24T13:30:01Z",
+    "lastSuccessfulCheck": "2026-10-24T13:30:01Z",
     "quality": 80,
     "freshness": 90,
     "moment": 78,
@@ -482,7 +482,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "Link only to official public NPS camera page. No camera image, reference illustration, widget, insignia or footage copied, embedded or hotlinked; no endorsement or blanket third-party media rights inferred.",
     "rightsUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-15T14:01:54.857385Z. Official current Camera tab decoded640x360 image; page capture heading Updated10/15/2026 07:45 AM MDT. Visually inspected: Sunlit golden eroded badlands and foreground vegetation beneath a blue-grey cloud deck. Current image was distinguished from Clear/Hazy, Landmarks, Map It reference images and unrelated hourly air/weather readings. The official network states images update every15 minutes. No continuous video, image reuse or all-weather reliability inferred."
+    "freshnessEvidence": "Interactive first-party NPS browser review completed 2026-10-24T13:30:01Z. Outcome SUCCESS. Actual rendered default webcam image inspected, not clear/hazy example, landmark graphic, archive or hero photograph. Camera-specific heading Updated 10/24/2026 07:15 AM MDT; timezone explicitly printed by NPS. Scene: Painted Canyon looking north-northwest: identifiable layered badland ridges and scrub beneath overcast morning sky; subdued light. Camera date kept separate from adjacent weather/air-quality/visibility observations, which were not used as camera freshness or visitor-safety evidence. Capture time differs from review time. Refreshed image only, not continuous-video proof or a guaranteed cadence. Existing attributed external link; no media copied, rights expansion or access/opening claim."
   },
   {
     "id": "us-point-reyes-beach-current",
@@ -588,8 +588,8 @@
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.nps.gov/subjects/air/webcams.htm?site=maca",
     "attribution": "U.S. National Park Service / Air Resources Division",
-    "checkedAt": "2026-10-15T14:40:45.770400Z",
-    "lastSuccessfulCheck": "2026-10-15T14:40:45.770400Z",
+    "checkedAt": "2026-10-24T13:30:01Z",
+    "lastSuccessfulCheck": "2026-10-24T13:30:01Z",
     "quality": 80,
     "freshness": 90,
     "moment": 78,
@@ -600,7 +600,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "Link only to official public NPS camera page. No camera image, reference illustration, widget, insignia or footage copied, embedded or hotlinked; no endorsement or blanket third-party media rights inferred.",
     "rightsUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-15T14:40:45.770400Z. Official current Camera tab decoded640x360 image; page capture heading Updated10/15/2026 09:30 AM CDT. Visually inspected: Wooded valley with green and autumn foliage, a visible river bend and cloudy morning sky. Current image was distinguished from Clear/Hazy, Landmarks, Map It reference images and unrelated hourly air/weather readings. The official network states images update every15 minutes. No continuous video, image reuse or all-weather reliability inferred."
+    "freshnessEvidence": "Interactive first-party NPS browser review completed 2026-10-24T13:30:01Z. Outcome SUCCESS. Actual rendered default webcam image inspected, not clear/hazy example, landmark graphic, archive or hero photograph. Camera-specific heading Updated 10/24/2026 08:15 AM CDT; timezone explicitly printed by NPS. Scene: Green River Valley looking north-northwest: autumn trees, wooded valley slope and a small visible river bend; foreground shade limits some detail. Camera date kept separate from adjacent weather/air-quality/visibility observations, which were not used as camera freshness or visitor-safety evidence. Capture time differs from review time. Refreshed image only, not continuous-video proof or a guaranteed cadence. Existing attributed external link; no media copied, rights expansion or access/opening claim."
   },
   {
     "id": "us-dinosaur-west-entrance-current",
@@ -628,8 +628,8 @@
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.nps.gov/subjects/air/webcams.htm?site=dino",
     "attribution": "U.S. National Park Service / Air Resources Division",
-    "checkedAt": "2026-10-15T14:40:45.770400Z",
-    "lastSuccessfulCheck": "2026-10-15T14:40:45.770400Z",
+    "checkedAt": "2026-10-24T13:30:01Z",
+    "lastSuccessfulCheck": "2026-10-24T13:30:01Z",
     "quality": 80,
     "freshness": 90,
     "moment": 78,
@@ -640,7 +640,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "Link only to official public NPS camera page. No camera image, reference illustration, widget, insignia or footage copied, embedded or hotlinked; no endorsement or blanket third-party media rights inferred.",
     "rightsUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-15T14:40:45.770400Z. Official current Camera tab decoded640x360 image; page capture heading Updated10/15/2026 08:30 AM MDT. Visually inspected: Sunlit tan eroded ridges with green valley, river or water in the distance and a blue sky. Current image was distinguished from Clear/Hazy, Landmarks, Map It reference images and unrelated hourly air/weather readings. The official network states images update every15 minutes. No continuous video, image reuse or all-weather reliability inferred."
+    "freshnessEvidence": "Interactive first-party NPS browser review completed 2026-10-24T13:30:01Z. Outcome SUCCESS. Actual rendered default webcam image inspected, not clear/hazy example, landmark graphic, archive or hero photograph. Camera-specific heading Updated 10/24/2026 07:15 AM MDT; timezone explicitly printed by NPS. Scene: West Entrance looking southwest: rocky ridge and green valley below, with low mist or haze and pale morning sky reducing distant detail. Camera date kept separate from adjacent weather/air-quality/visibility observations, which were not used as camera freshness or visitor-safety evidence. Capture time differs from review time. Refreshed image only, not continuous-video proof or a guaranteed cadence. Existing attributed external link; no media copied, rights expansion or access/opening claim."
   },
   {
     "id": "japan-mount-fuji-jma-current",
