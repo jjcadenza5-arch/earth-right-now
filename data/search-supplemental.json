@@ -14222,8 +14222,8 @@
     "sourceUrl": "https://pilgerhaus-maria-rickenbach.roundshot.com/",
     "officialUrl": "https://www.nidwalden.com/en/weather-webcam",
     "attribution": "Pilgerhaus Maria-Rickenbach / Roundshot",
-    "checkedAt": "2026-10-14T08:28:24Z",
-    "lastSuccessfulCheck": "2026-10-14T08:28:24Z",
+    "checkedAt": "2026-10-24T10:21:36Z",
+    "lastSuccessfulCheck": "2026-10-24T10:21:36Z",
     "quality": 85,
     "freshness": 90,
     "moment": 75,
@@ -14234,7 +14234,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "Official tourism/venue publication links or embeds this public camera. ERN uses attributed external links only. No permission inferred for embedding, hotlinking, thumbnails, screenshots or footage reuse.",
     "rightsSourceUrl": "https://www.nidwalden.com/en/weather-webcam",
-    "freshnessEvidence": "Actual browser/editorial review completed2026-10-14T08:28:24Z. Official tourism/venue publication identifies this exact source; dated14October2026 10:00 panorama visually rendered and inspected. Visible pilgerhaus, village chapel, alpine pasture and mountain skyline. Refreshed panorama/image, not continuous-video playback; no guaranteed cadence, weather or access claim."
+    "freshnessEvidence": "Batch evidence review completed 2026-10-24T10:21:36Z. Actual first-party browser-rendered scene inspected: Church, village roofs and green hillside, snow-dusted forested ridge beneath low cloud; provider privacy pixelation on some buildings. Default latest capture showed24.10.2026 10:50; catalog timezone Europe/Zurich, not printed beside label. Capture time differs from review time. No archive/best-shot selection. Rotation is around a still, not live-video evidence; no measured cadence or uninterrupted availability guarantee. External attributed link only; no media copied. Source visits approximately09:00–09:05 UTC; exact per-visit seconds were not recorded. checkedAt is batch evidence-review completion."
   },
   {
     "id": "swiss-buochs-airport-current",
@@ -14265,8 +14265,8 @@
     "sourceUrl": "https://buochs.roundshot.com/",
     "officialUrl": "https://airportbuochs.ch/",
     "attribution": "Airport Buochs / Roundshot",
-    "checkedAt": "2026-10-23T23:42:33Z",
-    "lastSuccessfulCheck": "2026-10-14T08:28:24Z",
+    "checkedAt": "2026-10-24T10:21:36Z",
+    "lastSuccessfulCheck": "2026-10-24T10:21:36Z",
     "quality": 85,
     "freshness": 90,
     "moment": 75,
@@ -14277,7 +14277,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "Official tourism/venue publication links or embeds this public camera. ERN uses attributed external links only. No permission inferred for embedding, hotlinking, thumbnails, screenshots or footage reuse.",
     "rightsSourceUrl": "https://airportbuochs.ch/",
-    "freshnessEvidence": "Interactive first-party browser review completed 2026-10-23T23:42:33Z. Outcome INCONCLUSIVE. Actual rendered scene visually inspected: Very dark airfield and mountain silhouettes render, with moon and scattered lights. Latest displayed capture is almost 7 hours older than review; no overnight capture schedule verified. Prior successful date retained; not a proven outage or near-now renewal. Airport status overlays do not establish camera freshness or flight clearance. Default latest display showed 23.10.2026 18:45; catalog timezone Europe/Zurich, not printed beside capture label. No archive or best-shot selection made. Capture time is distinct from review time. Rotation moves around a captured still, not continuous live video. No independently measured refresh cadence or continuous reliability guarantee. Attributed external link only; no media copied or embedding permission inferred."
+    "freshnessEvidence": "Batch evidence review completed 2026-10-24T10:21:36Z. Actual first-party browser-rendered scene inspected: Daylight runway, taxiways and green airfield framed by mountain slopes beneath clouds. Airport overlays do not establish flight clearance or operating status. Default latest capture showed24.10.2026 10:55; catalog timezone Europe/Zurich, not printed beside label. Capture time differs from review time. No archive/best-shot selection. Rotation is around a still, not live-video evidence; no measured cadence or uninterrupted availability guarantee. External attributed link only; no media copied. Source visits approximately09:00–09:05 UTC; exact per-visit seconds were not recorded. checkedAt is batch evidence-review completion."
   },
   {
     "id": "swiss-villa-honegg-current",
