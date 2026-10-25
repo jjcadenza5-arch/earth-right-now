@@ -1462,7 +1462,7 @@
     "freshnessEvidence": "Interactive first-party browser review completed 2026-10-25T06:41:40Z. Four actual images each decoded640x360. North wharf25/10/2026 19:26:23 and south19:26:16 show harbour water, shore buildings and wharf structures; Mauao19:27:57 shows the mountain silhouette and water under pink clouds; container-terminal19:31:01 shows cranes and harbour with strong sunset glare. Low-light/distant detail limits noted. Pacific/Auckland inferred from location, not printed in overlay. Four angles count once; no measured refresh cadence, vessel schedule, facility access or safety inference."
   },
   {
-    "provider": "Hawke’s Bay Regional Council",
+    "provider": "Hawke's Bay Regional Council",
     "country": "New Zealand",
     "region": "Hawke’s Bay",
     "timeZone": "Pacific/Auckland",
@@ -1503,7 +1503,7 @@
     "freshnessEvidence": "Review completed 2026-10-25T07:05:45Z. Capture label 25/10/2026 18:00:05. Browser-rendered full-size1920x1440 image visually inspected: broad blue estuary water, long shingle bar, ocean horizon and foreground rocks. Some small distant shoreline detail is indistinct. Pacific/Auckland inferred from council location, not printed in image clock. Provider page inline image metadata failed or remained Loading in this browser; its explicitly published View larger image link supplied the usable external target. No capture date inferred from HTTP retrieval, measured hourly cadence, continuous video or global outage claimed. Council describes daylight-dependent operation; retained image may precede review by hours."
   },
   {
-    "provider": "Hawke’s Bay Regional Council",
+    "provider": "Hawke's Bay Regional Council",
     "country": "New Zealand",
     "region": "Hawke’s Bay",
     "timeZone": "Pacific/Auckland",
@@ -1544,7 +1544,7 @@
     "freshnessEvidence": "Review completed 2026-10-25T07:05:45Z. Capture label 25/10/2026 19:00:05. Officially linked full-size image retrieved for read-only local inspection and decoded1920x1440. Actual broad estuary, long pale shingle spit, ocean horizon and foreground plants/rocks inspected; sky occupies much of frame and distant detail is limited. Browser image-title loaded but screenshot calls timed out, so this is not claimed as successful browser screenshot evidence. Pacific/Auckland inferred from council location, not printed in image clock. Provider page inline image metadata failed or remained Loading in this browser; its explicitly published View larger image link supplied the usable external target. No capture date inferred from HTTP retrieval, measured hourly cadence, continuous video or global outage claimed. Council describes daylight-dependent operation; retained image may precede review by hours."
   },
   {
-    "provider": "Hawke’s Bay Regional Council",
+    "provider": "Hawke's Bay Regional Council",
     "country": "New Zealand",
     "region": "Hawke’s Bay",
     "timeZone": "Pacific/Auckland",

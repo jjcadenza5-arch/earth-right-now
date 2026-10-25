@@ -1,3 +1,13 @@
+## 2026-10-25 Bangkok — Batch 4: business resources and bounded camera holds
+
+Continue from accepted main2c340413 / production08237318. No camera admitted from poor visual evidence: Rangitīkei River Mouth and Ākitio images lacked an identifiable usable scene; Hīmatangi was heavily noisy/dark. Actual public image files inspected once; holds recorded in the existing research queue without altering existing source dates or health. Coverage remains821/1,000 distinct camera-backed places,179 remaining;830 records/822 catalog places.
+
+Five public unpaid resources for existing Foxton Beach and Whanganui Coast places: three businesses (holiday park, city motel, city riverboat museum), official regional visitor guide and P.S. Waimarie refit advisory. Operator explicitly says the steamer is not operational until end2026; no cruise availability/reopening guaranteed. City/inland resources clearly separate from the coast camera. Directory expected547 valid. No public affiliate activation/account action or earnings claim.
+
+Canonicalized provider spelling on only the three previous Hawke’s Bay additions to existing "Hawke's Bay Regional Council", avoiding split provider concentration counts. No source URLs, evidence dates, holds or truth/playback fields changed. All other827 source records, five-camera ledger,232 public affiliate offers, site design and publicOFF gates preserved. No extra startup payload or new feature.
+
+Evidence: docs/ERN_EXPANSION_BATCH4_2026-10-25.md. Scoped directory/supplemental/commercial validations PASS; all122 required release smoke tests PASS; preservation checks PASS. Normal deployment/served acceptance pending. Continue focused usage-aware batches; no routine retry loops or manual workflow dispatch.
+
 ## 2026-10-25 Bangkok — Hawke’s Bay batch 3 deployed and accepted
 
 Production commit: 08237318ade4ebc70d612f2f487f71471ca4cd5f. Pages run 40171653842 SUCCESS, including all 122 current release smoke tests. Operations run 40171653849 SUCCESS: packet valid, zero issues. Three new distinct camera-backed places: Tukituki Estuary, Waitangi Estuary and Esk River Mouth. Totals: 830 sources, 822 catalog places, 821 camera-backed places toward 1,000 (179 remaining); 542 valid local-directory rows. Added three unpaid business listings and one visitor-information resource. Extended the existing private Hawke’s Bay affiliate opportunity; no new public affiliate activation or revenue claim.

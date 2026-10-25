@@ -11749,5 +11749,105 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_REGIONAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.hawkesbaynz.com/visit/us/waitangi-wetlands"
+  },
+  {
+    "id": "local-foxton-beach-holiday-park",
+    "placeId": "nz-foxton-beach",
+    "place": "Foxton Beach",
+    "country": "New Zealand",
+    "name": "Foxton Beach Holiday Park",
+    "type": "holiday park",
+    "url": "https://www.foxtonbeach.info/",
+    "summary": "Compare cabins, villas and camping options near the Manawatū estuary. Confirm availability, facilities and arrival arrangements with the park; camera views do not establish swimming or river safety.",
+    "tags": [
+      "Foxton Beach",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T11:54:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_REGIONAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.foxtonbeach.info/"
+  },
+  {
+    "id": "local-whanganui-riverside-motel",
+    "placeId": "nz-whanganui-coast",
+    "place": "Whanganui Coast",
+    "country": "New Zealand",
+    "name": "Riverside Motel — Whanganui city base",
+    "type": "motel",
+    "url": "https://www.riversidemotel.nz/",
+    "summary": "A Whanganui city accommodation option across the road from the river. This is a city base, not accommodation at the coastal camera. Check room facilities and availability directly with the operator.",
+    "tags": [
+      "Whanganui Coast",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T11:54:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_REGIONAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.riversidemotel.nz/"
+  },
+  {
+    "id": "local-whanganui-riverboat-centre",
+    "placeId": "nz-whanganui-coast",
+    "place": "Whanganui Coast",
+    "country": "New Zealand",
+    "name": "Riverboat Centre & Museum",
+    "type": "museum",
+    "url": "https://www.waimarie.co.nz/riverboat-center",
+    "summary": "Explore riverboat history at the Whanganui city museum and coffee bar. Confirm current opening arrangements. The museum is separate from paddle-steamer cruises, which the operator says are suspended during the 2026 refit.",
+    "tags": [
+      "Whanganui Coast",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T11:54:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_REGIONAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.waimarie.co.nz/riverboat-center"
+  },
+  {
+    "id": "local-whanganui-discovery-guide",
+    "placeId": "nz-whanganui-coast",
+    "place": "Whanganui Coast",
+    "country": "New Zealand",
+    "name": "Discover Whanganui — official visitor guide",
+    "type": "visitor information",
+    "url": "https://discoverwhanganui.nz/visit/official-discovery-guide/",
+    "summary": "Plan city and regional visits with the official tourism guide. City attractions and inland river journeys are separate from the coastal camera; verify routes, current access and operator arrangements before travel.",
+    "tags": [
+      "Whanganui Coast",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T11:54:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_REGIONAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://discoverwhanganui.nz/visit/official-discovery-guide/"
+  },
+  {
+    "id": "local-whanganui-waimarie-refit-advisory",
+    "placeId": "nz-whanganui-coast",
+    "place": "Whanganui Coast",
+    "country": "New Zealand",
+    "name": "P.S. Waimarie — refit notice",
+    "type": "visitor information",
+    "url": "https://www.waimarie.co.nz/experiences",
+    "summary": "Before planning a paddle-steamer trip, read the operator’s refit notice: P.S. Waimarie is not operational until the end of 2026. This is a dated operator estimate, not a confirmed reopening or available cruise. Check directly for updates.",
+    "tags": [
+      "Whanganui Coast",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T11:54:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_REGIONAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.waimarie.co.nz/experiences"
   }
 ]

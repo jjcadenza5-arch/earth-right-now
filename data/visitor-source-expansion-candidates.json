@@ -2168,6 +2168,37 @@
       ],
       "why": "Three distinct named river-mouth destinations; duplicate opposite angles excluded. Actual dated full-size images inspected. Inline provider metadata issue is documented, and only the exact publicly linked larger-image target is used as an external browser hyperlink. No media copied to ERN, no UI workaround or new embed.",
       "next": "Maintain actual capture dates and useful visibility; allow daylight gaps and never infer safe access/water/navigation from camera scenes. Preserve existing Te Awanga and Wairoa records without incidental renewal."
+    },
+    {
+      "id": "horizons-coastal-three-bounded-review-oct25",
+      "priority": "P1_CAMERA_COVERAGE",
+      "country": "New Zealand",
+      "placeGroup": "Rangitīkei River Mouth / Ākitio Beach / Hīmatangi Beach",
+      "state": "HOLD_INSUFFICIENT_USABLE_CURRENT_SCENE",
+      "reviewedAt": "2026-10-25T11:54:00Z",
+      "evidenceUrls": [
+        "https://www.horizons.govt.nz/webcams",
+        "https://www.horizons.govt.nz/terms-and-conditions/"
+      ],
+      "reviewedTargets": [
+        {
+          "url": "https://www.horizons.govt.nz/media/webcam/RangitikeiBar_latest_photo.jpg",
+          "overlay": "25-10-2026 23:40:51 NZST",
+          "observation": "1920x1080 decoded still; near-black noisy scene, no identifiable river-mouth view. Printed NZST time corresponds to11:40:51Z, about13 minutes before review; timestamp alone does not establish usable imagery."
+        },
+        {
+          "url": "https://www.horizons.govt.nz/media/webcam/Akitio_latest_photo.jpg?v=2",
+          "overlay": "26/10/2026 00:51:54",
+          "observation": "2048x1152 decoded still; grey/black obscured scene and no identifiable coastline. Clock consistent with Pacific/Auckland daylight time inferred from location, not printed offset; no admission from timestamp alone."
+        },
+        {
+          "url": "https://www.horizons.govt.nz/media/webcam/Himatangi_latest_photo.jpg",
+          "overlay": "Tiny capture-clock text not reliably transcribed in this review",
+          "observation": "2048x768 split still; coastal horizon and foreground poles faintly visible but severe noise, glare and dark detail limit visitor usefulness. No admission from clock alone."
+        }
+      ],
+      "why": "Three actual published public image files visually inspected locally. No camera admitted, freshness renewed or global provider outage inferred. Terms allow personal/business site use but restrict substantial copying; no media reused or embedding permission inferred.",
+      "next": "Revisit only with usable daylight imagery and inspect the capture time then. No repeated night-image retry loop; use this queue rather than duplicate candidates."
     }
   ],
   "guardrails": {
