@@ -1,3 +1,10 @@
+## 2026-10-25 Bangkok — Operations affiliate terms repair PREPARED
+
+- Resumed exactly from main 1f09c831. Reviewed current official Viator Partner Program agreement/affiliate-links page and Skyscanner affiliate eligibility/restrictions; bounded evidence in docs/AFFILIATE_TERMS_REVIEW_2026-10-25.md. Updated only two records' terms URL/date/evidence/scope and commission wording. Prior 24Sep review dates retained in evidence document; all other 42 records unchanged.
+- Current affiliate research 44/44 valid, zero invalid; readiness and public commercial-placement preflight PASS. Existing 30-day validator unchanged; explicit +31-day check still rejects both reviews as stale. Viator active owner evidence retained; Skyscanner remains inactive/deferred. Public-document review does not establish current account commission, good standing, private contract acceptance or payout verification.
+- All camera/source/ledger records and website code/assets unchanged. Five owner renewals retain 25Oct11:00Bangkok evidence, 26Oct11:00 LIVE HERE / 1Nov11:00 WatchEarth limits, subject to later failures. Expansion PAUSED; 815 distinct camera-backed places, all known holds and public OFF gates preserved. Scheduled two-image pilot 41b2a73 retained; no CLI push, manual dispatch/rerun or alternate site.
+- All 122 current release smoke tests PASS; scoped commercial research/depth and business control PASS. Test-generated sitemap reverted to preserve existing website. Next: publish this bounded repair through expected-head connector/main path, inspect the actually triggered Operations and Pages results, then record acceptance. Do not label Operations repaired until packet integrity succeeds.
+
 - Intervening scheduled image-pilot commit 41b2a73bd9c209635f79faefa0e1426c34743626 at05:12Z renews only Yellowstone BiscuitBasin and Ruapehu; preserved when saving this handoff. Latest observed production manifest remains5afabdcd at final handoff check. This pilot does not verify other cameras. Unattached docs commit c8e5fa4 was not used after expected-head update errored; no force push.
 
 ## 2026-10-25 Bangkok — Five-camera maintenance DEPLOYED; Operations follow-up remains

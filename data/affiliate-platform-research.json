@@ -117,12 +117,12 @@
       "tickets"
     ],
     "programUrl": "https://partnerresources.viator.com/",
-    "termsUrl": "https://partnerresources.viator.com/travel-content/links/",
+    "termsUrl": "https://partners.viator.com/static/docs/Viator-Partner-Program-Terms-en_EN.pdf",
     "programStatus": "ACTIVE_PARTNER_VERIFIED",
     "applicationRequired": false,
     "networkOrAccount": "Viator Partner Program",
-    "commissionEvidence": "Current official Viator partner materials state 8% commission on completed experience bookings attributed within a 30-day cookie window.",
-    "termsReviewedAt": "2026-09-24T16:18:00Z",
+    "commissionEvidence": "Official public affiliate-links page advertises 8% and a 30-day booking window. Partner Program terms B-3 make actual commission account-specific, net of cancellations/refunds and subject to attribution exclusions; no account rate or earnings verified in this review.",
+    "termsReviewedAt": "2026-10-25T05:42:02Z",
     "relationshipActive": true,
     "credentialsConfigured": true,
     "publicActivationAllowed": true,
@@ -137,7 +137,9 @@
     "automaticPlacementAllowed": false,
     "rankingAffectedByCommission": false,
     "payoutMethodConfigured": true,
-    "payoutReadiness": "OWNER_CONFIRMED_CONFIGURED_2026-10-02"
+    "payoutReadiness": "OWNER_CONFIRMED_CONFIGURED_2026-10-02",
+    "termsReviewEvidence": "docs/AFFILIATE_TERMS_REVIEW_2026-10-25.md",
+    "termsReviewScope": "PUBLIC_PROGRAM_TERMS_ONLY; no account login, contract acceptance, payout verification or new activation"
   },
   {
     "id": "skyscanner",
@@ -146,17 +148,19 @@
       "transport"
     ],
     "programUrl": "https://www.partners.skyscanner.net/",
-    "termsUrl": "https://www.partners.skyscanner.net/",
+    "termsUrl": "https://www.partners.skyscanner.net/product/affiliates",
     "programStatus": "AVAILABLE_APPLICATION_REQUIRED",
     "applicationRequired": true,
     "networkOrAccount": "Skyscanner Partners",
-    "commissionEvidence": "Current official Skyscanner Partners site confirms an affiliate program with competitive commission on referred traffic; no fixed rate is assumed.",
-    "termsReviewedAt": "2026-09-24T16:18:00Z",
+    "commissionEvidence": "Official affiliate page describes performance-based commission on qualifying bookings, 30-day referral data and application via Impact. No fixed rate or ERN acceptance is assumed.",
+    "termsReviewedAt": "2026-10-25T05:42:02Z",
     "relationshipActive": false,
     "credentialsConfigured": false,
     "publicActivationAllowed": false,
     "trackedLinksAllowed": false,
-    "paidRankingAllowed": false
+    "paidRankingAllowed": false,
+    "termsReviewEvidence": "docs/AFFILIATE_TERMS_REVIEW_2026-10-25.md",
+    "termsReviewScope": "PUBLIC_PROGRAM_TERMS_ONLY; no account login, contract acceptance, payout verification or new activation"
   },
   {
     "id": "travelpayouts",
