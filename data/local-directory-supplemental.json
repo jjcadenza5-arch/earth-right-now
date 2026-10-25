@@ -12049,5 +12049,85 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_MUNICIPAL_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.vevey.ch/placedumarche"
+  },
+  {
+    "id": "local-solothurn-pier11",
+    "name": "Pier 11 — harbour restaurant",
+    "type": "restaurant",
+    "url": "https://camping.tcs.ch/de/restaurant/restaurant-pier-11/",
+    "summary": "Dining information for the Aare harbour restaurant at TCS Camping Solothurn. Confirm current opening, kitchen service and reservations directly with the operator; opening indicators can change and do not guarantee a table.",
+    "placeId": "swiss-solothurn-harbour",
+    "place": "Solothurn",
+    "country": "Switzerland",
+    "tags": [
+      "Solothurn",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:19:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://camping.tcs.ch/de/restaurant/restaurant-pier-11/"
+  },
+  {
+    "id": "local-solothurn-tcs-camping",
+    "name": "TCS Camping Solothurn",
+    "type": "campsite",
+    "url": "https://camping.tcs.ch/en/campsites/tcs-camping-solothurn/facilities-and-infrastructure/",
+    "summary": "Review the harbour-area campsite’s facilities, pitch and accommodation information. Confirm travel-date availability, seasonal services and arrival arrangements with TCS; the restaurant has its own opening schedule.",
+    "placeId": "swiss-solothurn-harbour",
+    "place": "Solothurn",
+    "country": "Switzerland",
+    "tags": [
+      "Solothurn",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:19:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://camping.tcs.ch/en/campsites/tcs-camping-solothurn/facilities-and-infrastructure/"
+  },
+  {
+    "id": "local-solothurn-la-couronne",
+    "name": "La Couronne — old-town hotel",
+    "type": "hotel",
+    "url": "https://lacouronne-solothurn.ch/en/rooms/boutique-rooms/",
+    "summary": "An old-town Solothurn accommodation option, separate from the harbour camera position. Review room choices and confirm availability and facilities directly with the hotel; no waterfront room view or promotional offer is guaranteed.",
+    "placeId": "swiss-solothurn-harbour",
+    "place": "Solothurn",
+    "country": "Switzerland",
+    "tags": [
+      "Solothurn",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:19:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://lacouronne-solothurn.ch/en/rooms/boutique-rooms/"
+  },
+  {
+    "id": "local-solothurn-visitor-guide",
+    "name": "Solothurn — official visitor information",
+    "type": "visitor information",
+    "url": "https://www.solothurn-city.ch/en/information",
+    "summary": "Use the official tourism information for city visits, arrival options and local contacts. Check current service and attraction details separately; the harbour image does not confirm boat departures or tourist-office opening.",
+    "placeId": "swiss-solothurn-harbour",
+    "place": "Solothurn",
+    "country": "Switzerland",
+    "tags": [
+      "Solothurn",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:19:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.solothurn-city.ch/en/information"
   }
 ]

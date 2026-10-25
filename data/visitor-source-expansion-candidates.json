@@ -2255,6 +2255,23 @@
       ],
       "why": "Two distinct municipal destinations, actual rendered dated scenes14:00 25Oct. Rotation/angles count once per town. Vevey construction context retained; Aigle distant mountains mist-obscured. Original text/external links only, no copied media or inference of attractions open.",
       "next": "Maintain exact capture-time evidence and link-only rights scope. Date construction/market notices and confirm future access from official updates. No automatic renewal, archive-frame substitution or angle count inflation."
+    },
+    {
+      "id": "swiss-solothurn-batch8-oct25",
+      "country": "Switzerland",
+      "priority": "P1_CAMERA_COVERAGE",
+      "state": "ONE_DISTINCT_CAMERA_PLACE_ADMITTED_LINK_ONLY",
+      "reviewedAt": "2026-10-25T13:19:00Z",
+      "resolvedCatalogIds": [
+        "swiss-solothurn-harbour-current"
+      ],
+      "evidenceUrls": [
+        "https://solothurntourismus.roundshot.com/hafen/#/",
+        "https://www.solothurn-city.ch/de/informieren/webcams-wetter",
+        "https://www.solothurn-city.ch/en/legal-notice"
+      ],
+      "why": "Actual rendered dated Aare harbour scene, one distinct destination. City/harbour angles would not create extra places. Original descriptions/external links only; provider privacy blur respected, no media copied.",
+      "next": "Maintain dated link-only evidence; review current restaurant/transport operations independently. No automatic source renewal or claimed measured visitor demand."
     }
   ],
   "guardrails": {

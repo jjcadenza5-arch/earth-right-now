@@ -1747,5 +1747,46 @@
     "rightsBasis": "Municipal public webcam page identifies commune camera; exact viewer logo links to Aigle municipality and exposes camera sharing. Public municipal copyright/all-rights-reserved notice reviewed; ordinary attributed external hyperlink only, no special linking prohibition observed on reviewed page. No panorama, tile, logo, thumbnail, video, iframe or prose copied/embedded. Viewer legal control did not expose readable panel text; no complete legal-panel verification, embedding or media-reuse licence claimed.",
     "story": "Explore the castle, vineyard rows and town surroundings through Aigle’s municipal captured panorama. Cloud and mist may hide distant mountains. Check the castle operator for seasonal opening, tickets and access; a camera scene does not establish that an attraction is open. Rotation is still-image navigation, not continuous video.",
     "freshnessEvidence": "Browser visually inspected actual rendered scene25.10.2026 14:00: castle towers at left of centre, vineyard rows, village roofs, curving rail tracks/road and misty wooded hill under grey cloud; distant mountain detail obscured. Latest dated view, no archive navigation. Europe/Zurich inferred from location; following today’s DST change14:00 corresponds to13:00Z, eight minutes before review. No original decoded image dimensions, refresh cadence, rail-service status, attraction opening or route safety inferred. Reviewed 2026-10-25T13:08:00Z."
+  },
+  {
+    "id": "swiss-solothurn-harbour-current",
+    "placeId": "swiss-solothurn-harbour",
+    "title": "Solothurn — Aare Harbour Panorama",
+    "seoName": "Solothurn — Aare Harbour Panorama",
+    "provider": "Region Solothurn Tourismus — Roundshot",
+    "country": "Switzerland",
+    "region": "Solothurn / Aare",
+    "timeZone": "Europe/Zurich",
+    "categories": [
+      "Cities & Streets",
+      "Nature",
+      "Useful Earth"
+    ],
+    "aliases": [
+      "Solothurn",
+      "Solothurn Hafen",
+      "Solothurn Harbour",
+      "Aare Solothurn"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://solothurntourismus.roundshot.com/hafen/#/",
+    "officialUrl": "https://www.solothurn-city.ch/de/informieren/webcams-wetter",
+    "attribution": "Region Solothurn Tourismus — Roundshot harbour panorama",
+    "checkedAt": "2026-10-25T13:19:00Z",
+    "lastSuccessfulCheck": "2026-10-25T13:19:00Z",
+    "quality": 80,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "story": "See the Aare waterfront, harbour and opposite wooded bank through the official tourism panorama. Rotation moves within a captured still, not continuous video. Harbour and city angles count as one Solothurn destination. Check local openings and boat operations separately; the view does not establish safe swimming, navigation or open services.",
+    "rightsSourceUrl": "https://www.solothurn-city.ch/en/legal-notice",
+    "rightsBasis": "Official tourism webcam page and branded viewer with camera-link sharing reviewed. Legal notice reserves image/text rights and requires written consent for reuse; no special ordinary-link prohibition observed. Original ERN summary and attributed external hyperlink only: no panorama, tiles, image, thumbnail, logo, footage, iframe or provider prose copied/embedded. No media-reuse or embedding licence inferred.",
+    "freshnessEvidence": "Browser review completed 2026-10-25T13:19:00Z. Actual rendered scene inspected: Aare water, moored boat and harbour paving with provider privacy blurring, autumn trees, grassy opposite bank, wooded hillside and power poles under overcast sky. Visible capture25.10.2026 14:10. Europe/Zurich inferred from location, not printed beside capture clock; today’s DST change makes14:10 equal13:10Z, about nine minutes before review. No archive image selected, decoded original dimensions, measured refresh cadence, boat-service availability or safety clearance claimed."
   }
 ]

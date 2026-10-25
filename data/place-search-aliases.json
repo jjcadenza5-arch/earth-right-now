@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25T13:08:00Z",
+  "updatedAt": "2026-10-25T13:19:00Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -1272,6 +1272,12 @@
       "Château d’Aigle",
       "Aigle Castle",
       "Aigle Vineyards"
+    ],
+    "swiss-solothurn-harbour": [
+      "Solothurn",
+      "Solothurn Hafen",
+      "Solothurn Harbour",
+      "Aare Solothurn"
     ]
   }
 }

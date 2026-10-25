@@ -1,3 +1,10 @@
+## 2026-10-25 Bangkok — Solothurn batch 8 prepared
+
+Baseline main92b33b1d / productionce0154fa. One new Solothurn Aare harbour panorama, actual rendered25Oct14:10 scene inspected; Europe/Zurich inferred and DST change accounted for. LIVE_IMAGE/LINK_ONLY/EXTERNAL, Watch/featured held. Harbour/city angles count one destination, no video/media reuse or safe navigation claim. Official tourism legal notice reviewed; image/text reuse restricted, ordinary attributed external link only.
+
+Three unpaid business listings: Pier11 restaurant, TCS Camping Solothurn, La Couronne old-town hotel; one official visitor guide. A cached search extract showed Pier11 closed/Wednesday, but the fresh interactive operator page showed Restaurant geöffnet. Fresh browser state takes precedence; public summary asks visitors to confirm current service and does not repeat the stale closure. No public affiliate activation or income claim.
+
+Expected835 sources/827 catalog places/826 distinct camera-backed places toward1,000 (174 remaining),561 directory rows. All834 prior sources,232 affiliate offers,five-camera ledger,design/publicOFF gates unchanged. Evidence docs/ERN_EXPANSION_BATCH8_2026-10-25.md. Scoped supplemental/aliases/directory/commercial/performance validations PASS; all122 required release smoke tests PASS. Normal deployment acceptance pending.
 ## 2026-10-25 Bangkok — Vevey/Aigle batch 7 deployed and accepted
 
 Productionce0154fa18625acb44329bf84efaf88f43a4704b. Pages40196547016 SUCCESS/all122 current release tests; Operations40196547125 SUCCESS/valid packet/zero issues. Exact served manifest and12 SHA256 checks PASS including home/app/styles/core/both lazy source parts/renewal ledger/offers/aliases/directory/two new destinations. Actual browser verified current-image destination/provider links, all four business resources and Vevey Before you go works/market-relocation advisory.
