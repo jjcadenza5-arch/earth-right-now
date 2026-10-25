@@ -1,3 +1,11 @@
+## 2026-10-25 Bangkok — Romanshorn/Nyon batch 9 deployed and accepted
+
+Production2aaf025c6efaa94366496efef94fc16fd1df2182. Pages40198036719 SUCCESS/all122 current release tests; Operations40198036692 SUCCESS/valid packet/zero issues. Exact served manifest and12 SHA256 checks PASS including home/app/styles/core/both lazy source parts/renewal ledger/offers/aliases/directory/two destinations. Actual browser verified both current-image source links, four businesses and Nyon regional guide.
+
+Coverage828/1,000 distinct camera-backed places (172 remaining);837 sources/829 catalog places,566 valid directory rows. Exactly two new places, captured panoramas not continuous video. Romanshorn one-reload loading recovery and Nyon mid-distance blur limits recorded. Original descriptions/external hyperlinks only; copyright limits reviewed and no media/embedding licence inferred. Four unpaid businesses/one guide; schedules remain provider-confirmed and separate from camera health. No affiliate activation or earnings claim.
+
+All835 prior sources, five-camera evidence/ledger,232 public affiliate offers,design/publicOFF gates unchanged. Evidence docs/ERN_EXPANSION_BATCH9_2026-10-25.md. Continue focused usage-aware expansion from this accepted checkpoint; no owner action required.
+
 ## 2026-10-25 Bangkok — Romanshorn/Nyon batch 9 prepared
 
 Baseline mainebf1cd45 / production5edcaab8. Two distinct dated rendered panoramas,25Oct14:20: Romanshorn harbour and Nyon lakefront. Europe/Zurich inferred, DST change accounted for. Romanshorn rendered after one reload; optional video thumbnail not played/admitted. Nyon broad mid-distance blur recorded without cause inference; foreground roofs/lakeside identifiable. LINK_ONLY/LIVE_IMAGE/EXTERNAL and Watch/featured held, no copied media. Municipal/tourism copyright limits reviewed; no media/embedding licence inferred.
