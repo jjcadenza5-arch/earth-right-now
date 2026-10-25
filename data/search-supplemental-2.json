@@ -1330,5 +1330,48 @@
     "rightsBasis": "First-party viewer links to operator and offers camera-link sharing. Exact legal panel credits images by Stadt Winterthur, Seitz Phototechnik technology, all rights reserved. Attributed LINK_ONLY handoff; no special link prohibition observed. No image, thumbnail, tile, logo, video or iframe reused, and no embedding or restreaming permission inferred.",
     "rightsSourceUrl": "https://winterthur.roundshot.com/roterturm/#/legal",
     "freshnessEvidence": "Interactive first-party browser review completed 2026-10-23T23:26:24Z. Visible capture label 24.10.2026 01:20; existing catalog timezone Europe/Zurich (timezone not printed beside capture label). Actual scene inspected: Illuminated city rooftops, railway platforms/tracks, construction cranes and wooded hills beneath a cloudy night sky. Some station lights are strongly overexposed. Latest-view next and last controls disabled. Video teaser not played or admitted as live. Panorama rotation is movement around a captured still, not live video. No media reused, measured refresh cadence or uninterrupted reliability asserted."
+  },
+  {
+    "id": "australia-kunanyi-summit-current",
+    "placeId": "australia-kunanyi-mount-wellington",
+    "title": "kunanyi / Mount Wellington — Summit",
+    "seoName": "kunanyi / Mount Wellington — Summit",
+    "provider": "City of Hobart",
+    "country": "Australia",
+    "region": "Hobart / Tasmania",
+    "timeZone": "Australia/Hobart",
+    "categories": [
+      "Mountains",
+      "Nature",
+      "Beautiful Earth",
+      "Useful Earth"
+    ],
+    "aliases": [
+      "kunanyi",
+      "Mount Wellington",
+      "Mt Wellington",
+      "Hobart",
+      "Tasmania",
+      "Pinnacle summit"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.hobartcity.com.au/Things-To-Do/Kunanyi-Mt-Wellington/Kunanyi-Mt-Wellington-webcams",
+    "attribution": "City of Hobart — summit webcams",
+    "checkedAt": "2026-10-25T06:27:33Z",
+    "lastSuccessfulCheck": "2026-10-25T06:27:33Z",
+    "quality": 80,
+    "freshness": 90,
+    "moment": 75,
+    "story": "Inspect the refreshed summit image before planning a mountain visit from Hobart. The rocky summit and path can be visible when cloud hides the distant city view. Check the official Pinnacle Road status, weather and mountain guidance separately. These are still images; the camera does not confirm access or safe conditions. Both official camera angles belong to this one summit destination.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsBasis": "Attributed link to the public City of Hobart camera page only. Website disclaimer and expanded Copyright panel reviewed: personal-use licence and written consent required for reproducing content in another website. No link prohibition observed. ERN copies no image, thumbnail, logo or provider prose; no frame, hotlink or media-reuse permission inferred. ERN description is original.",
+    "rightsSourceUrl": "https://www.hobartcity.com.au/Council/About-Council/Governance-and-transparency/Website-disclaimer",
+    "freshnessEvidence": "Interactive first-party browser review on 25 October 2026. Exact summit image decoded 1920x1080; burned-in capture 25-10-2026 17:24:02, provider City of Hobart summit caption. Actual rocky outcrops, low shrubs, paved path and railings visible; sky/horizon fogged. Observation-deck image decoded 3648x2052 at the same capture time, foreground rocks/path visible but Hobart/Derwent hidden by cloud; this second angle is not another place. Timezone Australia/Hobart inferred from official location, not printed beside capture clock. Review completion 2026-10-25T06:27:33Z. No timelapse admitted or refresh cadence measured."
   }
 ]

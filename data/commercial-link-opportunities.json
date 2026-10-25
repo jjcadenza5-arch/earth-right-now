@@ -8330,6 +8330,24 @@
       "verificationEvidence": "Current Viator 2026 Phuket destination inventory was independently rechecked on the exact destination page.",
       "verificationEvidenceUrl": "https://www.viator.com/Phuket/d349-ttd",
       "manualOpenVerified": false
+    },
+    {
+      "id": "viator-kunanyi-hobart",
+      "destination": "kunanyi / Mount Wellington / Hobart, Tasmania",
+      "placeIds": [
+        "australia-kunanyi-mount-wellington"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "One new verified summit window creates a useful post-discovery Hobart planning path. Official Viator Hobart inventory includes Mount Wellington options; camera visibility is not an access or tour-availability promise.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Hobart/d379-ttd",
+      "publicInventoryEvidence": "Official Hobart destination page reviewed 25 October 2026; Mount Wellington landmark and tour inventory present. No price, departure, account rate or conversion assumed.",
+      "reviewedAt": "2026-10-25T06:27:33Z",
+      "publicActivationAllowed": false,
+      "manualOpenVerified": false,
+      "nextAction": "Generate and verify one exact destination-appropriate tracked link under existing manual policy before any public affiliate offer. Do not duplicate regional activity links or alter Earth ranking."
     }
   ]
 }

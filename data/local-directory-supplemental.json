@@ -11537,5 +11537,49 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://stadt.winterthur.ch/themen/mobilitaet/oev-taxi-sharing"
+  },
+  {
+    "id": "local-kunanyi-explorer-bus",
+    "placeId": "australia-kunanyi-mount-wellington",
+    "place": "kunanyi / Mount Wellington / Hobart",
+    "country": "Australia",
+    "name": "kunanyi / Mt Wellington Explorer Bus",
+    "type": "transport",
+    "url": "https://mtwellingtonexplorer.com.au/",
+    "summary": "Compare return and one-way mountain shuttle options from Hobart with the operator. Check the current timetable, pickup point, accessibility and booking conditions directly; the summit camera does not confirm that a service will run.",
+    "tags": [
+      "Hobart",
+      "Tasmania",
+      "kunanyi",
+      "transport"
+    ],
+    "verifiedAt": "2026-10-25T06:27:33Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://mtwellingtonexplorer.com.au/"
+  },
+  {
+    "id": "local-hobart-hadleys-orient",
+    "placeId": "australia-kunanyi-mount-wellington",
+    "place": "kunanyi / Mount Wellington / Hobart",
+    "country": "Australia",
+    "name": "Hadley’s Orient Hotel — Hobart base",
+    "type": "hotel",
+    "url": "https://www.hadleyshotel.com.au/",
+    "summary": "A central Hobart accommodation option for a wider Tasmania visit, separate from the mountain summit. Review room choices, location and booking terms directly; transport to kunanyi / Mount Wellington is a separate arrangement.",
+    "tags": [
+      "Hobart",
+      "Tasmania",
+      "kunanyi",
+      "hotel"
+    ],
+    "verifiedAt": "2026-10-25T06:27:33Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hadleyshotel.com.au/"
   }
 ]

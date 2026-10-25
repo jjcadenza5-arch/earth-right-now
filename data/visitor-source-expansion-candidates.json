@@ -2071,6 +2071,36 @@
       ],
       "why": "Source-led editorial coverage of distinct visitor destinations, not claimed repeated measured outside visitor demand. Source camera, information records and businesses remain separate counts.",
       "next": "Maintain exact link-only views. Leave held candidates unresolved after bounded research; revisit only on materially new evidence through existing workflow, no duplicate queue or routine retries."
+    },
+    {
+      "id": "australia-kunanyi-bounded-expansion-oct25",
+      "priority": "P1_CAMERA_COVERAGE",
+      "country": "Australia",
+      "placeGroup": "kunanyi / Mount Wellington summit",
+      "state": "ONE_DISTINCT_CAMERA_PLACE_ADMITTED_LINK_ONLY",
+      "reviewedAt": "2026-10-25T06:27:33Z",
+      "resolvedCatalogIds": [
+        "australia-kunanyi-summit-current"
+      ],
+      "evidenceUrls": [
+        "https://www.hobartcity.com.au/Things-To-Do/Kunanyi-Mt-Wellington/Kunanyi-Mt-Wellington-webcams",
+        "https://www.hobartcity.com.au/Council/About-Council/Governance-and-transparency/Website-disclaimer"
+      ],
+      "why": "One current dated rendered summit scene with explicit provider attribution. Two summit angles count once; distant-view fog acknowledged. Source-led coverage, not measured visitor demand.",
+      "next": "Maintain dated actual camera evidence; no copied media, continuous-video label, access clearance or automatic timestamp renewal."
+    },
+    {
+      "id": "australia-busselton-jetty-bounded-review-oct25",
+      "priority": "P1_CAMERA_COVERAGE",
+      "country": "Australia",
+      "placeGroup": "Busselton Jetty",
+      "state": "HOLD_NO_VERIFIED_CURRENT_PLAYBACK",
+      "reviewedAt": "2026-10-25T06:27:33Z",
+      "evidenceUrls": [
+        "https://busseltonjetty.com.au/live-webcams/"
+      ],
+      "why": "Official page publishes South72vmq0Q3ueE, North4jB7YQpLvwo and jettyRh5q9tKwS0k players. One South Play attempt did not establish an identifiable moving scene; visible player region remained black. No successful playback/date marker, health downgrade, source admission or global outage inferred. Separate meteor video is a dated timelapse and was excluded.",
+      "next": "Hold after bounded pass; revisit only with material provider or owner playback evidence, not a retry loop. Two underwater angles would count one place."
     }
   ],
   "guardrails": {
