@@ -2,7 +2,13 @@ import fs from "node:fs";import assert from "node:assert/strict";import {commerc
 const sources=JSON.parse(fs.readFileSync("data/sources.json","utf8"));
 const rows=JSON.parse(fs.readFileSync("data/commercial-research-candidates.json","utf8"));
 const known=[...new Set(sources.map(s=>String(s.placeId||s.id||"")).filter(Boolean))];
-const r=commercialResearchStatus(rows,{knownPlaceIds:known,now:Date.parse("2026-09-25T14:46:00Z")});
+const archive=JSON.parse(fs.readFileSync("docs/research-archive/commercial-research-expired-2026-10-25.json","utf8"));
+const active=commercialResearchStatus(rows,{knownPlaceIds:known,now:Date.parse("2026-10-25T04:10:00Z")});
+assert.equal(active.total,54);assert.equal(active.invalid,0);assert.equal(archive.publicActivationAllowed,false);assert.equal(archive.entries.length,5);
+assert.ok(archive.entries.every(x=>x.verifiedAt==="2026-09-24T16:05:00Z"&&x.publicActivationAllowed===false));
+const expired=commercialResearchStatus(archive.entries,{knownPlaceIds:known,now:Date.parse("2026-10-25T04:10:00Z")});
+assert.equal(expired.invalid,5);assert.ok(expired.issues.every(x=>x.reason==="RESEARCH_EVIDENCE_STALE"));
+const r=commercialResearchStatus([...rows,...archive.entries],{knownPlaceIds:known,now:Math.max(...[...rows,...archive.entries].map(x=>Date.parse(x.verifiedAt)))});
 assert.equal(r.total,59);assert.equal(r.valid,59);assert.equal(r.invalid,0);assert.equal(r.placeCoverage,30);assert.equal(r.byIntent.stay,27);assert.equal(r.byIntent.tickets,8);assert.equal(r.byIntent.activities,24);
 assert.equal(r.publicActivationAllowed,false);assert.equal(r.safety.automaticAffiliateActivationAllowed,false);assert.equal(r.safety.automaticPublicVisibilityAllowed,false);assert.equal(r.safety.paidRankingAllowed,false);assert.equal(r.safety.demandForecast,false);assert.equal(r.safety.revenueForecast,false);
 assert.equal(r.byPlace["chicago-lakefront"].total,3);assert.equal(r.byPlace["chicago-lakefront"].intents.stay,1);assert.equal(r.byPlace["chicago-lakefront"].intents.tickets,1);assert.equal(r.byPlace["chicago-lakefront"].intents.activities,1);assert.ok(r.byPlace["chicago-lakefront"].missingIntents.includes("eat"));
