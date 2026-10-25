@@ -1,3 +1,11 @@
+## 2026-10-25 Bangkok — Hawke’s Bay batch 3 deployed and accepted
+
+Production commit: 08237318ade4ebc70d612f2f487f71471ca4cd5f. Pages run 40171653842 SUCCESS, including all 122 current release smoke tests. Operations run 40171653849 SUCCESS: packet valid, zero issues. Three new distinct camera-backed places: Tukituki Estuary, Waitangi Estuary and Esk River Mouth. Totals: 830 sources, 822 catalog places, 821 camera-backed places toward 1,000 (179 remaining); 542 valid local-directory rows. Added three unpaid business listings and one visitor-information resource. Extended the existing private Hawke’s Bay affiliate opportunity; no new public affiliate activation or revenue claim.
+
+Live release manifest matched production commit; all 13 served-file SHA-256 checks passed, including all three new destination pages, homepage, app/style, core/supplemental data, renewal ledger and public offers. New pages expose index/follow and current-image labels. 
+
+All 827 prior source records, 232 public affiliate offers, five-camera renewal ledger and existing design preserved. New council images are ordinary external links only, with provenance and dated visual review; no copied media, embedding permission or safety/access clearance claimed. Review evidence and limits: docs/ERN_EXPANSION_BATCH3_2026-10-25.md. Continue in focused batches within usage limits. Minor future cleanup: council provider spelling uses a curly apostrophe on these three rows versus a straight apostrophe on earlier rows; domain concentration remains shared and these rows remain held from Watch/featured promotion. No urgent owner action.
+
 ## 2026-10-25 Bangkok — Hawke’s Bay expansion batch3 PREPARED
 
 - Continue from accepted main89c32bcd / productionccc25615. Three genuinely distinct estuaries: Tukituki near Haumoana, Waitangi/Ngaruroro near Clive, and Esk at Bay View. Actual1920x1440 full-size council images inspected, capture25Oct18:00:05 /19:00:05 /19:00:05 respectively. Browser screenshot proves Tukituki; Ngaruroro/Esk exact published image files retrieved and visually inspected locally after browser screenshot timeouts, not misrepresented as browser playback. Review2026-10-25T07:05:45Z; timezone inferred from place, not printed beside clocks.
