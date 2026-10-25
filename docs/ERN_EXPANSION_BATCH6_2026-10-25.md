@@ -1,3 +1,11 @@
+## 2026-10-25 Bangkok — Wasserfallen batch 6 deployed and accepted
+
+Production5798072d7617414ed3107d4046313786d0562e62. Pages40195763393 SUCCESS/all122 current release tests; Operations40195763438 SUCCESS/valid packet/zero issues. Exact served manifest and11 SHA256 checks PASS including home/app/styles/core/both lazy source parts/renewal ledger/offers/aliases/directory/new destination. Actual browser verified current-image source link, Before you go storm notice and both local business resources.
+
+Coverage823/1,000 distinct camera-backed places (177 remaining);832 sources/824 catalog places,552 valid directory rows. One distinct Wasserfallen mountain place; panorama rotation/angles do not add places. Two unpaid businesses plus explicitly dated25Oct storm advisory. Camera health is independent of the reported cable-car closure; no reopening, trail safety or activity operation inferred.
+
+All831 previous source records, five-camera evidence/ledger,232 public affiliate offers,design and publicOFF gates unchanged. No media copied/embedded or new affiliate activation/income claimed. Rights/evidence limits: docs/ERN_EXPANSION_BATCH6_2026-10-25.md. Continue focused usage-aware expansion from this accepted checkpoint; no owner action required.
+
 # ERN Wasserfallen expansion — 25 October 2026 Bangkok
 
 ## 2026-10-25 Bangkok — Wasserfallen batch 6 prepared
