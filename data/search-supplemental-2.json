@@ -670,7 +670,7 @@
     "sourceUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31401",
     "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31401",
     "attribution": "Japan Meteorological Agency (JMA) — Mount Fuji — Hagiwara View",
-    "checkedAt": "2026-10-24T12:01:44Z",
+    "checkedAt": "2026-10-25T00:24:00Z",
     "lastSuccessfulCheck": "2026-10-16T06:06:36.990366Z",
     "quality": 75,
     "freshness": 95,
@@ -682,7 +682,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "JMA permits clearly attributed links to individual pages except specifically restricted pages. Exact official camera context reviewed. LINK_ONLY: no image reuse, hotlink, framing, embedding, JMA endorsement or eruption-state assessment inferred.",
     "rightsSourceUrl": "https://www.jma.go.jp/jma/kishou/info/coment.html",
-    "freshnessEvidence": "Interactive first-party/provider-linked browser review completed 2026-10-24T12:01:44Z. Outcome INCONCLUSIVE. Visible capture: 2026/10/24 20:47:53 image; control20:48. Catalog timezone Asia/Tokyo; not printed beside capture label. Actual rendered scene: JMA Fuji Hagiwara latest31/31 image carries a current timestamp, but rendered frame is opaque grey with no identifiable mountain/landscape. This browser observation is insufficient for useful scene verification; no successful renewal, failure or eruption inferred. Prior16Oct success/health preserved. Reviewed viewer https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31401. Capture time differs from review completion. No continuous availability/cadence or access/ski/lift-operation guarantee. Panorama rotation is not video proof. Attributed external link only; no media copied or permission expansion."
+    "freshnessEvidence": "Interactive first-party JMA browser review completed 2026-10-25T00:24:00Z. Outcome INCONCLUSIVE. Actual default latest rendered camera image inspected. Visible image overlay 2026/10/25 09:17:55; control09:18,31/31, separate from review time. Catalog timezone Asia/Tokyo, not printed beside overlay; not independently measured camera clock. Scene: Fuji Hagiwara daylight recheck after prior evening obscuration. Rendered frame remains opaque grey with no identifiable landscape. Timestamp alone insufficient;16Oct successful date/health retained. Latest counter30/30 or31/31 as recorded; no earlier-frame/archive/time-lapse playback selected. Refreshed still only, not continuous-video evidence. No outage/eruption/safe-access/air-quality/alert-level conclusion from appearance alone; use official JMA notices and local instructions. Existing attributed external handoff only, no image/media reuse, embedding or rights expansion."
   },
   {
     "id": "japan-hakone-owakudani-jma-current",
@@ -711,7 +711,7 @@
     "sourceUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31502",
     "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31502",
     "attribution": "Japan Meteorological Agency (JMA) — Hakone — Owakudani View",
-    "checkedAt": "2026-10-16T06:06:36.990366Z",
+    "checkedAt": "2026-10-25T00:24:00Z",
     "lastSuccessfulCheck": "2026-10-16T06:06:36.990366Z",
     "quality": 75,
     "freshness": 95,
@@ -723,7 +723,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "JMA permits clearly attributed links to individual pages except specifically restricted pages. Exact official camera context reviewed. LINK_ONLY: no image reuse, hotlink, framing, embedding, JMA endorsement or eruption-state assessment inferred.",
     "rightsSourceUrl": "https://www.jma.go.jp/jma/kishou/info/coment.html",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-16T06:06:36.990366Z. Official current image decoded640x480; burned-in capture2026/10/16 14:56:05 Japan local, latest image file slot20261016145605. Visually inspected: Detailed bare volcanic slope, pipes and railings, with white vapour visible. Capture, page selection and filename times are distinct. Refreshed image, not continuous live video or an archive animation. Provider warns images may stop during maintenance; no uninterrupted reliability or precise refresh interval promised."
+    "freshnessEvidence": "Interactive first-party JMA browser review completed 2026-10-25T00:24:00Z. Outcome INCONCLUSIVE. Actual default latest rendered camera image inspected. Visible image overlay 2026/10/25 09:18:00; control09:18,31/31, separate from review time. Catalog timezone Asia/Tokyo, not printed beside overlay; not independently measured camera clock. Scene: Hakone Owakudani rendered image heavily grey-obscured with no useful identifiable volcanic landscape;16Oct success/health retained. Latest counter30/30 or31/31 as recorded; no earlier-frame/archive/time-lapse playback selected. Refreshed still only, not continuous-video evidence. No outage/eruption/safe-access/air-quality/alert-level conclusion from appearance alone; use official JMA notices and local instructions. Existing attributed external handoff only, no image/media reuse, embedding or rights expansion."
   },
   {
     "id": "japan-mount-aso-jma-current",
@@ -753,8 +753,8 @@
     "sourceUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50301",
     "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50301",
     "attribution": "Japan Meteorological Agency (JMA) — Mount Aso — Kusasenri View",
-    "checkedAt": "2026-10-16T06:06:36.990366Z",
-    "lastSuccessfulCheck": "2026-10-16T06:06:36.990366Z",
+    "checkedAt": "2026-10-25T00:24:00Z",
+    "lastSuccessfulCheck": "2026-10-25T00:24:00Z",
     "quality": 75,
     "freshness": 95,
     "moment": 70,
@@ -765,7 +765,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "JMA permits clearly attributed links to individual pages except specifically restricted pages. Exact official camera context reviewed. LINK_ONLY: no image reuse, hotlink, framing, embedding, JMA endorsement or eruption-state assessment inferred.",
     "rightsSourceUrl": "https://www.jma.go.jp/jma/kishou/info/coment.html",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-16T06:06:36.990366Z. Official current image decoded640x360; burned-in capture2026/10/16 14:55:57 Japan local, latest image file slot20261016145601. Visually inspected: Broad volcanic ridgeline and foreground slopes beneath broken cloud, with a white plume visible near the middle. Capture, page selection and filename times are distinct. Refreshed image, not continuous live video or an archive animation. Provider warns images may stop during maintenance; no uninterrupted reliability or precise refresh interval promised."
+    "freshnessEvidence": "Interactive first-party JMA browser review completed 2026-10-25T00:24:00Z. Outcome SUCCESS. Actual default latest rendered camera image inspected. Visible image overlay 2026/10/25 09:15:55; control09:16,30/30, separate from review time. Catalog timezone Asia/Tokyo, not printed beside overlay; not independently measured camera clock. Scene: Aso Kusasenri: identifiable dark volcanic ridgeline, grassy foreground and white plume beneath textured cloud. No eruption/steam composition/alert-level inference. Latest counter30/30 or31/31 as recorded; no earlier-frame/archive/time-lapse playback selected. Refreshed still only, not continuous-video evidence. No outage/eruption/safe-access/air-quality/alert-level conclusion from appearance alone; use official JMA notices and local instructions. Existing attributed external handoff only, no image/media reuse, embedding or rights expansion."
   },
   {
     "id": "japan-mount-unzen-jma-current",
@@ -795,7 +795,7 @@
     "sourceUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50401",
     "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50401",
     "attribution": "Japan Meteorological Agency (JMA) — Mount Unzen — Nodake View",
-    "checkedAt": "2026-10-16T06:06:36.990366Z",
+    "checkedAt": "2026-10-25T00:24:00Z",
     "lastSuccessfulCheck": "2026-10-16T06:06:36.990366Z",
     "quality": 75,
     "freshness": 95,
@@ -807,7 +807,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "JMA permits clearly attributed links to individual pages except specifically restricted pages. Exact official camera context reviewed. LINK_ONLY: no image reuse, hotlink, framing, embedding, JMA endorsement or eruption-state assessment inferred.",
     "rightsSourceUrl": "https://www.jma.go.jp/jma/kishou/info/coment.html",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-16T06:06:36.990366Z. Official current image decoded640x360; burned-in capture2026/10/16 14:57:54 Japan local, latest image file slot20261016145800. Visually inspected: Dark rugged mountain crest above wooded foreground slopes beneath broken grey and blue sky. Capture, page selection and filename times are distinct. Refreshed image, not continuous live video or an archive animation. Provider warns images may stop during maintenance; no uninterrupted reliability or precise refresh interval promised."
+    "freshnessEvidence": "Interactive first-party JMA browser review completed 2026-10-25T00:24:00Z. Outcome INCONCLUSIVE. Actual default latest rendered camera image inspected. Visible image overlay 2026/10/25 09:17:55; control09:18,31/31, separate from review time. Catalog timezone Asia/Tokyo, not printed beside overlay; not independently measured camera clock. Scene: Unzen Nodake rendered frame remains opaque grey, no identifiable mountain;16Oct success/health retained. Latest counter30/30 or31/31 as recorded; no earlier-frame/archive/time-lapse playback selected. Refreshed still only, not continuous-video evidence. No outage/eruption/safe-access/air-quality/alert-level conclusion from appearance alone; use official JMA notices and local instructions. Existing attributed external handoff only, no image/media reuse, embedding or rights expansion."
   },
   {
     "id": "japan-mount-usu-jma-current",
@@ -836,8 +836,8 @@
     "sourceUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=11201",
     "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=11201",
     "attribution": "Japan Meteorological Agency (JMA) — Mount Usu — East Lakeshore View",
-    "checkedAt": "2026-10-16T06:06:36.990366Z",
-    "lastSuccessfulCheck": "2026-10-16T06:06:36.990366Z",
+    "checkedAt": "2026-10-25T00:24:00Z",
+    "lastSuccessfulCheck": "2026-10-25T00:24:00Z",
     "quality": 75,
     "freshness": 95,
     "moment": 70,
@@ -848,7 +848,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "JMA permits clearly attributed links to individual pages except specifically restricted pages. Exact official camera context reviewed. LINK_ONLY: no image reuse, hotlink, framing, embedding, JMA endorsement or eruption-state assessment inferred.",
     "rightsSourceUrl": "https://www.jma.go.jp/jma/kishou/info/coment.html",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-16T06:06:36.990366Z. Official current image decoded640x360; burned-in capture2026/10/16 14:55:58 Japan local, latest image file slot20261016145601. Visually inspected: Distinct mountain ridge and dark forest foreground under dramatic sunlit clouds; some glare present. Capture, page selection and filename times are distinct. Refreshed image, not continuous live video or an archive animation. Provider warns images may stop during maintenance; no uninterrupted reliability or precise refresh interval promised."
+    "freshnessEvidence": "Interactive first-party JMA browser review completed 2026-10-25T00:24:00Z. Outcome SUCCESS. Actual default latest rendered camera image inspected. Visible image overlay 2026/10/25 09:15:54; control09:16,30/30, separate from review time. Catalog timezone Asia/Tokyo, not printed beside overlay; not independently measured camera clock. Scene: Usu east-lakeside camera: identifiable dark multi-peaked mountain ridge and foreground trees under overcast sky; subdued contrast and haze limit detail. Latest counter30/30 or31/31 as recorded; no earlier-frame/archive/time-lapse playback selected. Refreshed still only, not continuous-video evidence. No outage/eruption/safe-access/air-quality/alert-level conclusion from appearance alone; use official JMA notices and local instructions. Existing attributed external handoff only, no image/media reuse, embedding or rights expansion."
   },
   {
     "id": "japan-kuju-mountains-jma-current",
@@ -879,8 +879,8 @@
     "sourceUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50202",
     "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50202",
     "attribution": "Japan Meteorological Agency (JMA) — Kuju Mountains — Hosshozan View",
-    "checkedAt": "2026-10-16T06:06:36.990366Z",
-    "lastSuccessfulCheck": "2026-10-16T06:06:36.990366Z",
+    "checkedAt": "2026-10-25T00:24:00Z",
+    "lastSuccessfulCheck": "2026-10-25T00:24:00Z",
     "quality": 75,
     "freshness": 95,
     "moment": 70,
@@ -891,7 +891,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "JMA permits clearly attributed links to individual pages except specifically restricted pages. Exact official camera context reviewed. LINK_ONLY: no image reuse, hotlink, framing, embedding, JMA endorsement or eruption-state assessment inferred.",
     "rightsSourceUrl": "https://www.jma.go.jp/jma/kishou/info/coment.html",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-16T06:06:36.990366Z. Official current image decoded640x480; burned-in capture2026/10/16 14:58:00 Japan local, latest image file slot20261016145800. Visually inspected: Clearly resolved rugged pale volcanic valley and ridge, sparse vegetation and dark overcast sky. Capture, page selection and filename times are distinct. Refreshed image, not continuous live video or an archive animation. Provider warns images may stop during maintenance; no uninterrupted reliability or precise refresh interval promised."
+    "freshnessEvidence": "Interactive first-party JMA browser review completed 2026-10-25T00:24:00Z. Outcome SUCCESS. Actual default latest rendered camera image inspected. Visible image overlay 2026/10/25 09:16:00; control09:16,30/30, separate from review time. Catalog timezone Asia/Tokyo, not printed beside overlay; not independently measured camera clock. Scene: Kuju Hosshozan north ridge camera: identifiable rocky volcanic bowl, bare ridges and brown vegetation beneath grey sky; image graininess/limited resolution acknowledged. Latest counter30/30 or31/31 as recorded; no earlier-frame/archive/time-lapse playback selected. Refreshed still only, not continuous-video evidence. No outage/eruption/safe-access/air-quality/alert-level conclusion from appearance alone; use official JMA notices and local instructions. Existing attributed external handoff only, no image/media reuse, embedding or rights expansion."
   },
   {
     "id": "japan-kirishima-mountains-jma-current",
@@ -921,7 +921,7 @@
     "sourceUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50504",
     "officialUrl": "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50504",
     "attribution": "Japan Meteorological Agency (JMA) — Kirishima — Karakunidake Camera",
-    "checkedAt": "2026-10-16T06:06:36.990366Z",
+    "checkedAt": "2026-10-25T00:24:00Z",
     "lastSuccessfulCheck": "2026-10-16T06:06:36.990366Z",
     "quality": 75,
     "freshness": 95,
@@ -933,7 +933,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "JMA permits clearly attributed links to individual pages except specifically restricted pages. Exact official camera context reviewed. LINK_ONLY: no image reuse, hotlink, framing, embedding, JMA endorsement or eruption-state assessment inferred.",
     "rightsSourceUrl": "https://www.jma.go.jp/jma/kishou/info/coment.html",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-16T06:06:36.990366Z. Official current image decoded640x360; burned-in capture2026/10/16 15:01:59 Japan local, latest image file slot20261016150200. Visually inspected: Layered volcanic ridges with a white plume, wooded foreground and small roof structures under broken clouds; slight left-edge obstruction. Capture, page selection and filename times are distinct. Refreshed image, not continuous live video or an archive animation. Provider warns images may stop during maintenance; no uninterrupted reliability or precise refresh interval promised."
+    "freshnessEvidence": "Interactive first-party JMA browser review completed 2026-10-25T00:24:00Z. Outcome INCONCLUSIVE. Actual default latest rendered camera image inspected. Visible image overlay 2026/10/25 09:17:59; control09:18,31/31, separate from review time. Catalog timezone Asia/Tokyo, not printed beside overlay; not independently measured camera clock. Scene: Kirishima Karakunidake: foreground roof and tree-lined slope visible, but target mountain/background lost in dense grey obscuration. Insufficient useful view of target landscape;16Oct success/health retained, no outage inferred. Latest counter30/30 or31/31 as recorded; no earlier-frame/archive/time-lapse playback selected. Refreshed still only, not continuous-video evidence. No outage/eruption/safe-access/air-quality/alert-level conclusion from appearance alone; use official JMA notices and local instructions. Existing attributed external handoff only, no image/media reuse, embedding or rights expansion."
   },
   {
     "id": "swiss-ardez-village-current",
