@@ -50,4 +50,4 @@ First-party pages and official tourism page read. Waimarie experiences page has 
 
 ## Verification
 
-Directory547 valid/zero invalid; supplemental/commercial preflights PASS; all122 required release smoke tests PASS; preservation checks PASS. Original-path deployment pending. Expected547 valid directory rows,821 camera-backed places unchanged.
+Directory547 valid/zero invalid; supplemental/commercial preflights PASS; all122 required release smoke tests PASS; preservation checks PASS. Production3368e5fe accepted: Pages40190930825 SUCCESS/all122; Operations40190930877 SUCCESS/valid/zero issues. Exact served manifest and11 served-file SHA256 checks passed; both destination pages contain new resources, refit notice and index/follow. Expected547 valid directory rows,821 camera-backed places unchanged.

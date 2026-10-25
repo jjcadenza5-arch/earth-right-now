@@ -1,3 +1,11 @@
+## 2026-10-25 Bangkok — Batch 4 deployed and accepted
+
+Production3368e5fe7cabc2869031612b605ea2a5a530ad14. Pages40190930825 SUCCESS, all122 current release smoke tests. Operations40190930877 SUCCESS, valid packet/zero issues. Served release manifest matches exact production commit;11 SHA256 checks passed including homepage, app/styles, core/supplementals, renewal ledger, public offers, local directory and both affected destination pages. Actual served HTML contains new businesses, guide and Waimarie refit warning with index/follow.
+
+Three unpaid businesses, one official visitor guide and one current operator refit advisory published for existing Foxton Beach/Whanganui Coast places;547 valid directory rows. Existing232 affiliate offers unchanged; no new activation or income claim. Camera count remains821/1,000 (179 remaining),830 source records/822 catalog places. Three new candidates held for unusable dark/noisy views, not admitted from timestamps. Provider spelling on only the three Hawke’s Bay batch3 sources canonicalized; evidence dates/holds/truth/URLs untouched. All other827 source records, five-camera ledger, website design and publicOFF gates preserved.
+
+Evidence and limits: docs/ERN_EXPANSION_BATCH4_2026-10-25.md. Continue focused batches; revisit held cameras when daylight makes the actual scene useful, without retry loops. No owner action needed.
+
 ## 2026-10-25 Bangkok — Batch 4: business resources and bounded camera holds
 
 Continue from accepted main2c340413 / production08237318. No camera admitted from poor visual evidence: Rangitīkei River Mouth and Ākitio images lacked an identifiable usable scene; Hīmatangi was heavily noisy/dark. Actual public image files inspected once; holds recorded in the existing research queue without altering existing source dates or health. Coverage remains821/1,000 distinct camera-backed places,179 remaining;830 records/822 catalog places.
