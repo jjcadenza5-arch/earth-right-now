@@ -2101,6 +2101,53 @@
       ],
       "why": "Official page publishes South72vmq0Q3ueE, North4jB7YQpLvwo and jettyRh5q9tKwS0k players. One South Play attempt did not establish an identifiable moving scene; visible player region remained black. No successful playback/date marker, health downgrade, source admission or global outage inferred. Separate meteor video is a dated timelapse and was excluded.",
       "next": "Hold after bounded pass; revisit only with material provider or owner playback evidence, not a retry loop. Two underwater angles would count one place."
+    },
+    {
+      "id": "nz-lake-tekapo-mt-john-current-batch2-oct25",
+      "country": "New Zealand",
+      "placeGroup": "Lake Tekapo — Mt John Panorama",
+      "priority": "P1_CAMERA_COVERAGE",
+      "state": "ONE_DISTINCT_CAMERA_PLACE_ADMITTED_LINK_ONLY",
+      "reviewedAt": "2026-10-25T06:41:40Z",
+      "resolvedCatalogIds": [
+        "nz-lake-tekapo-mt-john-current"
+      ],
+      "evidenceUrls": [
+        "https://tekapotourism.nz/webcam/north.html",
+        "https://tekapotourism.nz/about_us.html"
+      ],
+      "why": "Interactive browser review completed 2026-10-25T06:41:40Z. Full-size actual North-view image decoded1920x1080, burned-in2026-10-25 18:30:48. Visually inspected blue lake, shoreline grassland, winding road, layered ranges and snow-tipped peaks under mixed cloud. Capture is roughly one hour before review, not the page-retrieval time. Pacific/Auckland inferred from place, not printed beside image clock. Parent describes15/30-minute refreshed views, but cadence was not measured or guaranteed. Sponsor slideshow, page banner, timelapses and the separate unverified Ranginui stream were not counted.",
+      "next": "Maintain actual dated scene evidence without automatic renewal, media reuse or angle-count inflation; keep independent access guidance separate."
+    },
+    {
+      "id": "nz-tauranga-harbour-current-batch2-oct25",
+      "country": "New Zealand",
+      "placeGroup": "Tauranga — Harbour & Mauao Views",
+      "priority": "P1_CAMERA_COVERAGE",
+      "state": "ONE_DISTINCT_CAMERA_PLACE_ADMITTED_LINK_ONLY",
+      "reviewedAt": "2026-10-25T06:41:40Z",
+      "resolvedCatalogIds": [
+        "nz-tauranga-harbour-current"
+      ],
+      "evidenceUrls": [
+        "https://www.port-tauranga.co.nz/operations/web-cams/",
+        "https://www.port-tauranga.co.nz/disclaimer/"
+      ],
+      "why": "Interactive first-party browser review completed 2026-10-25T06:41:40Z. Four actual images each decoded640x360. North wharf25/10/2026 19:26:23 and south19:26:16 show harbour water, shore buildings and wharf structures; Mauao19:27:57 shows the mountain silhouette and water under pink clouds; container-terminal19:31:01 shows cranes and harbour with strong sunset glare. Low-light/distant detail limits noted. Pacific/Auckland inferred from location, not printed in overlay. Four angles count once; no measured refresh cadence, vessel schedule, facility access or safety inference.",
+      "next": "Maintain actual dated scene evidence without automatic renewal, media reuse or angle-count inflation; keep independent access guidance separate."
+    },
+    {
+      "id": "ranginui-tekapo-video-batch2-oct25",
+      "country": "New Zealand",
+      "placeGroup": "Lake Tekapo — Ranginui",
+      "priority": "P1_CAMERA_COVERAGE",
+      "state": "HOLD_NO_VERIFIED_CURRENT_PLAYBACK",
+      "reviewedAt": "2026-10-25T06:41:40Z",
+      "evidenceUrls": [
+        "https://ranginui.nz/tekapo-webcam/"
+      ],
+      "why": "Official host publishes YouTubeX3LSEpl8Y_A. One Play attempt did not establish identifiable moving scenery or live-clock evidence in this browser. No source admission, renewal or global-outage claim. Hotel business page remains independently reviewable.",
+      "next": "Hold video; revisit only on material provider/owner playback evidence. Independently verified Tekapo Tourism still image does not verify this video or grant embed permission."
     }
   ],
   "guardrails": {

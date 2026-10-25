@@ -11581,5 +11581,89 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.hadleyshotel.com.au/"
+  },
+  {
+    "id": "local-tekapo-ranginui",
+    "placeId": "nz-lake-tekapo",
+    "place": "Lake Tekapo",
+    "country": "New Zealand",
+    "name": "Ranginui at Lake Tekapo",
+    "type": "hotel",
+    "url": "https://ranginui.nz/guest-suites/",
+    "summary": "Review the operator’s three guest-suite choices for a Lake Tekapo stay. Confirm availability, facilities and booking terms directly. This accommodation listing is separate from ERN’s Tekapo Tourism camera source.",
+    "tags": [
+      "Lake Tekapo",
+      "New Zealand",
+      "hotel"
+    ],
+    "verifiedAt": "2026-10-25T06:41:40Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_COUNCIL_PAGE_REVIEW",
+    "reviewSourceUrl": "https://ranginui.nz/guest-suites/"
+  },
+  {
+    "id": "local-tekapo-air-safaris",
+    "placeId": "nz-lake-tekapo",
+    "place": "Lake Tekapo",
+    "country": "New Zealand",
+    "name": "Air Safaris — Lake Tekapo scenic flights",
+    "type": "activity",
+    "url": "https://airsafaris.co.nz/",
+    "summary": "Explore the operator’s Lake Tekapo scenic-flight choices and departure arrangements. Confirm weather, availability and booking conditions directly. The company sponsors the camera network; this unpaid listing does not influence ERN camera selection or ranking.",
+    "tags": [
+      "Lake Tekapo",
+      "New Zealand",
+      "activity"
+    ],
+    "verifiedAt": "2026-10-25T06:41:40Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_COUNCIL_PAGE_REVIEW",
+    "reviewSourceUrl": "https://airsafaris.co.nz/"
+  },
+  {
+    "id": "local-tauranga-oceanside",
+    "placeId": "nz-tauranga-harbour",
+    "place": "Tauranga / Mount Maunganui",
+    "country": "New Zealand",
+    "name": "Oceanside Resort & Twin Towers",
+    "type": "hotel",
+    "url": "https://www.oceanside.co.nz/stay/",
+    "summary": "Compare the operator’s Mount Maunganui accommodation choices. Confirm current access, room availability and booking conditions directly, and check council updates about nearby restricted areas before travelling. A camera scene does not certify access or safety.",
+    "tags": [
+      "Tauranga / Mount Maunganui",
+      "New Zealand",
+      "hotel"
+    ],
+    "verifiedAt": "2026-10-25T06:41:40Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_COUNCIL_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.oceanside.co.nz/stay/"
+  },
+  {
+    "id": "local-tauranga-mauao-access-advisory",
+    "placeId": "nz-tauranga-harbour",
+    "place": "Tauranga / Mount Maunganui",
+    "country": "New Zealand",
+    "name": "Mauao — official access and recovery updates",
+    "type": "visitor information",
+    "url": "https://www.tauranga.govt.nz/council/mauao-landslide/mauao-landslide-frequently-asked-questions",
+    "summary": "Consult Tauranga City Council’s current Mauao recovery and access information. The reviewed guidance describes continuing landslide closures and affected nearby facilities. Follow the latest official notices and onsite restrictions; camera visibility does not establish public access.",
+    "tags": [
+      "Tauranga / Mount Maunganui",
+      "New Zealand",
+      "visitor information"
+    ],
+    "verifiedAt": "2026-10-25T06:41:40Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_COUNCIL_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.tauranga.govt.nz/council/mauao-landslide/mauao-landslide-frequently-asked-questions"
   }
 ]

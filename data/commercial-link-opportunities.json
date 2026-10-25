@@ -8348,6 +8348,42 @@
       "publicActivationAllowed": false,
       "manualOpenVerified": false,
       "nextAction": "Generate and verify one exact destination-appropriate tracked link under existing manual policy before any public affiliate offer. Do not duplicate regional activity links or alter Earth ranking."
+    },
+    {
+      "id": "viator-lake-tekapo-batch2",
+      "destination": "Lake Tekapo, New Zealand",
+      "placeIds": [
+        "nz-lake-tekapo"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Useful post-discovery planning for newly reviewed camera coverage; no effect on camera truth or editorial ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Lake-Tekapo/d51201-ttd",
+      "publicInventoryEvidence": "Exact Lake Tekapo destination inventory includes astronomy, sightseeing and local travel options. Christchurch-based attraction listings were distinguished from departure-local inventory; no departure, price, availability or account commission verified.",
+      "reviewedAt": "2026-10-25T06:41:40Z",
+      "publicActivationAllowed": false,
+      "manualOpenVerified": false,
+      "nextAction": "Prepare one destination-appropriate tracked link manually and verify exact destination/attribution before public placement. For Tauranga exclude closed Mauao/Hot Pools experiences unless current official and operator evidence supports them."
+    },
+    {
+      "id": "viator-tauranga-batch2",
+      "destination": "Tauranga, New Zealand",
+      "placeIds": [
+        "nz-tauranga-harbour"
+      ],
+      "partnerCandidate": "viator",
+      "intent": "activities",
+      "priority": "P1",
+      "reason": "Useful post-discovery planning for newly reviewed camera coverage; no effect on camera truth or editorial ranking.",
+      "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
+      "publicInventoryEvidenceUrl": "https://www.viator.com/Tauranga/d4761-ttd",
+      "publicInventoryEvidence": "Official Tauranga destination inventory includes shore excursions and transport-oriented tours. Any exact offer needs current route/access review against Mauao restrictions; no access guarantee or itinerary approval inferred.",
+      "reviewedAt": "2026-10-25T06:41:40Z",
+      "publicActivationAllowed": false,
+      "manualOpenVerified": false,
+      "nextAction": "Prepare one destination-appropriate tracked link manually and verify exact destination/attribution before public placement. For Tauranga exclude closed Mauao/Hot Pools experiences unless current official and operator evidence supports them."
     }
   ]
 }
