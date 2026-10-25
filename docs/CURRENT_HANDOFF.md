@@ -1,3 +1,11 @@
+## 2026-10-25 Bangkok — Vevey/Aigle batch 7 deployed and accepted
+
+Productionce0154fa18625acb44329bf84efaf88f43a4704b. Pages40196547016 SUCCESS/all122 current release tests; Operations40196547125 SUCCESS/valid packet/zero issues. Exact served manifest and12 SHA256 checks PASS including home/app/styles/core/both lazy source parts/renewal ledger/offers/aliases/directory/two new destinations. Actual browser verified current-image destination/provider links, all four business resources and Vevey Before you go works/market-relocation advisory.
+
+Coverage825/1,000 distinct camera-backed places (175 remaining);834 sources/826 catalog places,557 valid directory rows. Exactly two distinct municipal camera places, not rotation angles. Four unpaid businesses and one municipal advisory; no new affiliate offers or income claim. Initial local release test caught Grande Place wording entering Brussels results; explicit Vevey Place du Marché wording repaired it, focused check and full122 then PASS before publication. No runtime or test weakening.
+
+All832 old source records, five-camera ledger/evidence,232 public affiliate offers,design and publicOFF gates preserved. Link-only/no copied media; exact viewer legal-panel limitation retained transparently, no embedding/media licence claimed. Evidence docs/ERN_EXPANSION_BATCH7_2026-10-25.md. Continue focused usage-aware expansion from this accepted checkpoint. No owner action required.
+
 ## 2026-10-25 Bangkok — Vevey/Aigle batch 7 prepared
 
 Baseline mainc7f15848 / production5798072d. Two genuinely distinct municipal current-image panoramas: Vevey Place du Marché/lakefront and Aigle castle/vineyards. Actual rendered25Oct14:00 scenes inspected; Europe/Zurich inferred and today’s DST change accounted for. LINK_ONLY/LIVE_IMAGE/EXTERNAL, held from Watch/featured, no copied media or video claim. Rights scope limited to ordinary attributed links; public provenance/copyright notices checked, exact viewer legal text not available in this browser, no full panel/media licence claimed.
