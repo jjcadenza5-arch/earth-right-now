@@ -1,3 +1,11 @@
+## 2026-10-25 Bangkok — Heiden batch 5 deployed and accepted
+
+Production3f16c408530ec2dd816cce255474fa31dbff1a9a. Pages40195038734 SUCCESS/all122 required release smoke tests. Operations40195038731 SUCCESS/packet valid/zero issues. Exact served manifest matched;11 deployed-file SHA256 checks PASS including homepage/app/styles/core/both lazy source parts/renewal ledger/offers/aliases/directory/new Heiden page. Actual browser verified new current-image destination, external provider link, Hotel Heiden and Museum Henry Dunant with21Dec2026–31Jan2027 planned closure.
+
+Coverage822/1,000 distinct camera-backed places (178 remaining);831 source records/823 catalog places,549 valid directory rows. Heiden is one municipal captured panorama, not live video; no media copied, Watch/featured holds retained. Troistorrents rendered scene remains permission-held because operator explicitly requires written authorisation for hyperlinking; no public alternative-domain workaround. Existing830 source records, five-camera evidence/ledger,232 affiliate offers,design and publicOFF gates unchanged.
+
+Evidence and rights limits: docs/ERN_EXPANSION_BATCH5_2026-10-25.md. Continue focused usage-aware camera/business expansion from this accepted checkpoint. No owner action needed.
+
 ## 2026-10-25 Bangkok — Swiss batch 5 prepared
 
 Baseline main8b86884f / production3368e5fe. Added one distinct Heiden municipal current-image panorama, latest25Oct13:00 Europe/Zurich (timezone inferred, daylight-saving change accounted for), green hills/houses/autumn woodland. One rendered still panorama, not live video; external link only, held from Watch/featured, no copied media or lake-visibility promise. Municipal livecam redirects to viewer; copyright/reproduction restrictions reviewed, no special link prohibition observed. Exact viewer legal controls did not yield readable text; limitation recorded, not claimed verified.
