@@ -28,4 +28,4 @@ One new distinct camera-backed place, two public unpaid resources and one privat
 
 ## Validation
 
-Scoped supplemental, aliases, local-directory, commercial-placement and performance checks passed. All 122 current release smoke tests passed; exact comparison confirmed all existing824 camera/source records unchanged and existing public offers untouched. Release/Operations/served acceptance pending.
+Scoped supplemental, aliases, local-directory, commercial-placement and performance checks passed. All 122 current release smoke tests passed; exact comparison confirmed all existing824 camera/source records unchanged and existing public offers untouched. Published d6022717; Pages40169308964 and Operations40169308918 SUCCESS, packet valid with zero issues. Eleven served SHA256 checks passed. Actual browser confirms indexable current-image destination and both public unpaid business resources. Coverage816/1,000;184 remaining.
