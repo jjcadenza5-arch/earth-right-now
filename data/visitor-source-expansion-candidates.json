@@ -2148,6 +2148,26 @@
       ],
       "why": "Official host publishes YouTubeX3LSEpl8Y_A. One Play attempt did not establish identifiable moving scenery or live-clock evidence in this browser. No source admission, renewal or global-outage claim. Hotel business page remains independently reviewable.",
       "next": "Hold video; revisit only on material provider/owner playback evidence. Independently verified Tekapo Tourism still image does not verify this video or grant embed permission."
+    },
+    {
+      "id": "hbrc-three-distinct-estuaries-batch3-oct25",
+      "priority": "P1_CAMERA_COVERAGE",
+      "country": "New Zealand",
+      "state": "THREE_DISTINCT_CAMERA_PLACES_ADMITTED_LINK_ONLY",
+      "reviewedAt": "2026-10-25T07:05:45Z",
+      "resolvedCatalogIds": [
+        "nz-tukituki-estuary-current",
+        "nz-waitangi-estuary-current",
+        "nz-esk-river-mouth-current"
+      ],
+      "evidenceUrls": [
+        "https://www.hbrc.govt.nz/webcams/tukituki-north-east/",
+        "https://www.hbrc.govt.nz/webcams/ngaruroro-webcam/",
+        "https://www.hbrc.govt.nz/webcams/esk-north-webcam/",
+        "https://www.hbrc.govt.nz/our-council/about-this-site/copyright-and-privacy"
+      ],
+      "why": "Three distinct named river-mouth destinations; duplicate opposite angles excluded. Actual dated full-size images inspected. Inline provider metadata issue is documented, and only the exact publicly linked larger-image target is used as an external browser hyperlink. No media copied to ERN, no UI workaround or new embed.",
+      "next": "Maintain actual capture dates and useful visibility; allow daylight gaps and never infer safe access/water/navigation from camera scenes. Preserve existing Te Awanga and Wairoa records without incidental renewal."
     }
   ],
   "guardrails": {

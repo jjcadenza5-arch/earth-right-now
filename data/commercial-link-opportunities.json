@@ -3510,7 +3510,10 @@
       "id": "viator-hawkes-bay",
       "destination": "Hawke's Bay / Te Awanga",
       "placeIds": [
-        "nz-te-awanga-coast"
+        "nz-te-awanga-coast",
+        "nz-tukituki-estuary",
+        "nz-waitangi-estuary",
+        "nz-esk-river-mouth"
       ],
       "partnerCandidate": "viator",
       "intent": "activities",
@@ -3519,7 +3522,12 @@
       "state": "ACCOUNT_SEARCH_AND_EXACT_LINK_REQUIRED",
       "publicInventoryEvidenceUrl": "https://www.viator.com/tours/Napier/Hawkes-Bay-Morning-Wine-Tour-Te-Mata-Peak-and-Winery-Lunch/d4760-184165P7",
       "publicInventoryEvidence": "Viator currently lists Hawke's Bay experiences from the Napier/Hastings area, including Te Mata Peak and winery tours.",
-      "nextAction": "Generate a Hawke's Bay or Napier destination-level Viator tracked link only if it cleanly supports Te Awanga visitors; avoid a mismatched generic New Zealand link."
+      "nextAction": "Generate a Hawke's Bay or Napier destination-level Viator tracked link only if it cleanly supports Te Awanga visitors; avoid a mismatched generic New Zealand link.",
+      "regionalExpansionReviewedAt": "2026-10-25T07:05:45Z",
+      "regionalExpansionEvidenceUrl": "https://www.viator.com/Napier/d4760-ttd",
+      "regionalExpansionEvidence": "Existing regional opportunity extended to three distinct estuary camera places. Official Napier inventory includes regional sightseeing, cycle and winery options; no offer promises a visit to the exact camera, departure availability or current route access. Original product research retained; no new duplicate regional opportunity.",
+      "publicActivationAllowed": false,
+      "manualOpenVerified": false
     },
     {
       "id": "tiqets-krakow",

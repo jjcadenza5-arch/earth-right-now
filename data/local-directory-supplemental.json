@@ -11665,5 +11665,89 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_COUNCIL_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.tauranga.govt.nz/council/mauao-landslide/mauao-landslide-frequently-asked-questions"
+  },
+  {
+    "id": "local-tukituki-bay-cycles",
+    "placeId": "nz-tukituki-estuary",
+    "place": "Haumoana / Te Awanga",
+    "country": "New Zealand",
+    "name": "Bay Cycles — Te Awanga e-bike hire",
+    "type": "bike rental",
+    "url": "https://www.baycycles.co.nz/find-us",
+    "summary": "A regional e-bike hire option based in Te Awanga, separate from the estuary camera location. Confirm pickup, bike availability, route suitability and current trail access directly with the operator before planning a coastal ride.",
+    "tags": [
+      "Haumoana / Te Awanga",
+      "Hawke’s Bay",
+      "bike rental"
+    ],
+    "verifiedAt": "2026-10-25T07:05:45Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_REGIONAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.baycycles.co.nz/find-us"
+  },
+  {
+    "id": "local-waitangi-clive-cottages",
+    "placeId": "nz-waitangi-estuary",
+    "place": "East Clive / Waitangi Estuary",
+    "country": "New Zealand",
+    "name": "Clive Colonial Cottages",
+    "type": "accommodation",
+    "url": "https://www.clivecolonialcottages.co.nz/the-cottages",
+    "summary": "Compare the operator’s self-catering cottages as an East Clive base. Review room facilities, access needs, availability and booking conditions directly; a nearby estuary image does not confirm accommodation or trail availability.",
+    "tags": [
+      "East Clive / Waitangi Estuary",
+      "Hawke’s Bay",
+      "accommodation"
+    ],
+    "verifiedAt": "2026-10-25T07:05:45Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_REGIONAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.clivecolonialcottages.co.nz/the-cottages"
+  },
+  {
+    "id": "local-esk-crab-farm",
+    "placeId": "nz-esk-river-mouth",
+    "place": "Bay View / Esk River Mouth",
+    "country": "New Zealand",
+    "name": "Crab Farm Winery — restaurant",
+    "type": "restaurant",
+    "url": "https://www.crabfarmwinery.co.nz/restaurant",
+    "summary": "A Bay View restaurant option for a wider coastal visit. Consult the operator’s current menu, service days and reservation arrangements directly; the restaurant is separate from the river-mouth viewpoint.",
+    "tags": [
+      "Bay View / Esk River Mouth",
+      "Hawke’s Bay",
+      "restaurant"
+    ],
+    "verifiedAt": "2026-10-25T07:05:45Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_REGIONAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.crabfarmwinery.co.nz/restaurant"
+  },
+  {
+    "id": "local-waitangi-estuary-guide",
+    "placeId": "nz-waitangi-estuary",
+    "place": "Waitangi Estuary",
+    "country": "New Zealand",
+    "name": "Waitangi Estuary — regional visitor guide",
+    "type": "visitor information",
+    "url": "https://www.hawkesbaynz.com/visit/us/waitangi-wetlands",
+    "summary": "Read the regional tourism guide for the wetland, birdlife and walking or cycling context. Check the council’s current park and access information before travelling; the camera does not establish safe water conditions or open routes.",
+    "tags": [
+      "Waitangi Estuary",
+      "Hawke’s Bay",
+      "visitor information"
+    ],
+    "verifiedAt": "2026-10-25T07:05:45Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_REGIONAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hawkesbaynz.com/visit/us/waitangi-wetlands"
   }
 ]
